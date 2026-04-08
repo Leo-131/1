@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
-<title>Flextail Outreach Dashboard v0.2.1</title>
+<title>Flextail Outreach Dashboard v0.3.0</title>
 <style>
 * { margin: 0; padding: 0; box-sizing: border-box; }
 :root { --primary: #4ade80; --accent: #3b82f6; --warning: #f59e0b; --danger: #ef4444; --bg: #0f1117; --card: #1a1d27; --border: #2a2f3e; --text: #e4e8f0; --muted: #7a8299; }
@@ -204,7 +204,7 @@ body { font-family: 'Segoe UI', Arial, sans-serif; background: var(--bg); color:
       <p style="font-size:13px;color:var(--muted);margin-top:4px">Vercel 云端 · 实时同步 · 自动化优化 · 智能话术</p>
     </div>
     <div class="meta">
-      <div><span class="badge badge-sync">🟢 实时同步</span><span class="badge badge-v">v0.2.0</span><span class="badge badge-live">每日目标 100</span></div>
+      <div><span class="badge badge-sync">🟢 实时同步</span><span class="badge badge-v">v0.3.0</span><span class="badge badge-live">每日目标 100</span></div>
       <div id="clock" style="margin-top:4px"></div>
     </div>
   </div>
@@ -255,6 +255,11 @@ body { font-family: 'Segoe UI', Arial, sans-serif; background: var(--bg); color:
       <div class="num">0</div>
       <div class="lbl">本周</div>
       <div class="sub">目标 500</div>
+    </div>
+    <div class="stat-card blue">
+      <div class="num">0</div>
+      <div class="lbl">本月</div>
+      <div class="sub">目标 2000</div>
     </div>
   </div>
 
@@ -338,56 +343,43 @@ body { font-family: 'Segoe UI', Arial, sans-serif; background: var(--bg); color:
             <div class="filter-btn">已接受</div>
           </div>
           <div class="contact-list" id="contactList">
-            <div class="contact-item">
-              <div class="avatar">L</div>
-              <div class="info">
-                <div class="name">Lealand Blum<span class="tag">KA</span></div>
-                <div class="meta">Amazon · Vendor Manager</div>
-              </div>
-              <div class="right">
-                <div class="status pending">⏳ Pending</div>
-              </div>
-            </div>
-            <div class="contact-item">
-              <div class="avatar">P</div>
-              <div class="info">
-                <div class="name">Peter Whitcomb<span class="tag">KA</span></div>
-                <div class="meta">TERSUS Solutions · CEO</div>
-              </div>
-              <div class="right">
-                <div class="status pending">⏳ Pending</div>
-              </div>
-            </div>
-            <div class="contact-item">
-              <div class="avatar">T</div>
-              <div class="info">
-                <div class="name">Tom Bielek<span class="tag">KA</span></div>
-                <div class="meta">Yixiang International USA · VP Sales</div>
-              </div>
-              <div class="right">
-                <div class="status pending">⏳ Pending</div>
-              </div>
-            </div>
-            <div class="contact-item">
-              <div class="avatar">M</div>
-              <div class="info">
-                <div class="name">Mike Patterson</div>
-                <div class="meta">Bass Pro Shops · Category Manager</div>
-              </div>
-              <div class="right">
-                <div class="status pending">⏳ Pending</div>
-              </div>
-            </div>
-            <div class="contact-item">
-              <div class="avatar">S</div>
-              <div class="info">
-                <div class="name">Sarah Chen</div>
-                <div class="meta">Cabela's · Senior Buyer</div>
-              </div>
-              <div class="right">
-                <div class="status pending">⏳ Pending</div>
-              </div>
-            </div>
+            <div class="contact-item"><div class="avatar">L</div><div class="info"><div class="name">Lealand Blum<span class="tag">KA</span></div><div class="meta">Amazon · Vendor Manager</div></div><div class="right"><div class="status pending">⏳ Pending</div><div style="font-size:10px;color:var(--muted)">ka</div></div></div>
+            <div class="contact-item"><div class="avatar">P</div><div class="info"><div class="name">Peter Whitcomb<span class="tag">KA</span></div><div class="meta">TERSUS Solutions · CEO</div></div><div class="right"><div class="status pending">⏳ Pending</div><div style="font-size:10px;color:var(--muted)">ka</div></div></div>
+            <div class="contact-item"><div class="avatar">T</div><div class="info"><div class="name">Tom Bielek<span class="tag">KA</span></div><div class="meta">Yixiang International USA · VP Sales</div></div><div class="right"><div class="status pending">⏳ Pending</div><div style="font-size:10px;color:var(--muted)">ka</div></div></div>
+            <div class="contact-item"><div class="avatar">J</div><div class="info"><div class="name">Justin Hartwig<span class="tag">KA</span></div><div class="meta">Camping World · Senior Buyer</div></div><div class="right"><div class="status pending">⏳ Pending</div><div style="font-size:10px;color:var(--muted)">rv</div></div></div>
+            <div class="contact-item"><div class="avatar">P</div><div class="info"><div class="name">Peter Jelinek<span class="tag">KA</span></div><div class="meta">VP Merchandising-Officer · VP</div></div><div class="right"><div class="status pending">⏳ Pending</div><div style="font-size:10px;color:var(--muted)">rv</div></div></div>
+            <div class="contact-item"><div class="avatar">D</div><div class="info"><div class="name">Dan Murphy<span class="tag">KA</span></div><div class="meta">AutoZone · Senior Buyer</div></div><div class="right"><div class="status pending">⏳ Pending</div><div style="font-size:10px;color:var(--muted)">auto</div></div></div>
+            <div class="contact-item"><div class="avatar">T</div><div class="info"><div class="name">Tom Bradley<span class="tag">KA</span></div><div class="meta">NAPA Auto Parts · Director</div></div><div class="right"><div class="status pending">⏳ Pending</div><div style="font-size:10px;color:var(--muted)">auto</div></div></div>
+            <div class="contact-item"><div class="avatar">G</div><div class="info"><div class="name">George Martinez<span class="tag">KA</span></div><div class="meta">Discount Tire · VP Merchandising</div></div><div class="right"><div class="status pending">⏳ Pending</div><div style="font-size:10px;color:var(--muted)">auto</div></div></div>
+            <div class="contact-item"><div class="avatar">J</div><div class="info"><div class="name">James Wilson<span class="tag">KA</span></div><div class="meta">Walmart · Senior Buyer</div></div><div class="right"><div class="status pending">⏳ Pending</div><div style="font-size:10px;color:var(--muted)">retail</div></div></div>
+            <div class="contact-item"><div class="avatar">M</div><div class="info"><div class="name">Michael Park<span class="tag">KA</span></div><div class="meta">Target · Senior Buyer</div></div><div class="right"><div class="status pending">⏳ Pending</div><div style="font-size:10px;color:var(--muted)">retail</div></div></div>
+            <div class="contact-item"><div class="avatar">H</div><div class="info"><div class="name">Hans Mueller<span class="tag">KA</span></div><div class="meta">Intersport · Head of Purchasing</div></div><div class="right"><div class="status pending">⏳ Pending</div><div style="font-size:10px;color:var(--muted)">intl</div></div></div>
+            <div class="contact-item"><div class="avatar">M</div><div class="info"><div class="name">Mike Patterson</div><div class="meta">Bass Pro Shops · Category Manager</div></div><div class="right"><div class="status pending">⏳ Pending</div><div style="font-size:10px;color:var(--muted)">camping</div></div></div>
+            <div class="contact-item"><div class="avatar">S</div><div class="info"><div class="name">Sarah Chen</div><div class="meta">Cabela's · Senior Buyer</div></div><div class="right"><div class="status pending">⏳ Pending</div><div style="font-size:10px;color:var(--muted)">camping</div></div></div>
+            <div class="contact-item"><div class="avatar">D</div><div class="info"><div class="name">David Martinez</div><div class="meta">Dick's Sporting Goods · Director</div></div><div class="right"><div class="status pending">⏳ Pending</div><div style="font-size:10px;color:var(--muted)">camping</div></div></div>
+            <div class="contact-item"><div class="avatar">J</div><div class="info"><div class="name">Jennifer Walsh</div><div class="meta">Backcountry · Head of Buying</div></div><div class="right"><div class="status pending">⏳ Pending</div><div style="font-size:10px;color:var(--muted)">camping</div></div></div>
+            <div class="contact-item"><div class="avatar">P</div><div class="info"><div class="name">Pierre Dubois</div><div class="meta">Decathlon USA · Sourcing Manager</div></div><div class="right"><div class="status pending">⏳ Pending</div><div style="font-size:10px;color:var(--muted)">camping</div></div></div>
+            <div class="contact-item"><div class="avatar">W</div><div class="info"><div class="name">Whitney La Ruffa</div><div class="meta">Black Dog Outdoors · Founder</div></div><div class="right"><div class="status pending">⏳ Pending</div><div style="font-size:10px;color:var(--muted)">camping</div></div></div>
+            <div class="contact-item"><div class="avatar">T</div><div class="info"><div class="name">Tom Connell</div><div class="meta">Gear Coop · Retail Executive</div></div><div class="right"><div class="status pending">⏳ Pending</div><div style="font-size:10px;color:var(--muted)">camping</div></div></div>
+            <div class="contact-item"><div class="avatar">S</div><div class="info"><div class="name">Sam Read</div><div class="meta">BETA OUTDOOR SPORTS · MD</div></div><div class="right"><div class="status pending">⏳ Pending</div><div style="font-size:10px;color:var(--muted)">camping</div></div></div>
+            <div class="contact-item"><div class="avatar">M</div><div class="info"><div class="name">Marc Knight</div><div class="meta">River Dogs Outfitters · Owner</div></div><div class="right"><div class="status pending">⏳ Pending</div><div style="font-size:10px;color:var(--muted)">camping</div></div></div>
+            <div class="contact-item"><div class="avatar">T</div><div class="info"><div class="name">Thomas Lange</div><div class="meta">Independent · Intl Commercial Exec</div></div><div class="right"><div class="status pending">⏳ Pending</div><div style="font-size:10px;color:var(--muted)">agent</div></div></div>
+            <div class="contact-item"><div class="avatar">C</div><div class="info"><div class="name">Carlos Jativa</div><div class="meta">Plumdrop · Operations Manager</div></div><div class="right"><div class="status pending">⏳ Pending</div><div style="font-size:10px;color:var(--muted)">camping</div></div></div>
+            <div class="contact-item"><div class="avatar">K</div><div class="info"><div class="name">Kevin Kaiser</div><div class="meta">EzyPath Consulting · Founder</div></div><div class="right"><div class="status pending">⏳ Pending</div><div style="font-size:10px;color:var(--muted)">camping</div></div></div>
+            <div class="contact-item"><div class="avatar">I</div><div class="info"><div class="name">Ian Pund</div><div class="meta">Altrec.com · Global Strategic Sales</div></div><div class="right"><div class="status pending">⏳ Pending</div><div style="font-size:10px;color:var(--muted)">camping</div></div></div>
+            <div class="contact-item"><div class="avatar">M</div><div class="info"><div class="name">Morgan Harman</div><div class="meta">Technical Sales · Outside Sales</div></div><div class="right"><div class="status pending">⏳ Pending</div><div style="font-size:10px;color:var(--muted)">camping</div></div></div>
+            <div class="contact-item"><div class="avatar">J</div><div class="info"><div class="name">Johanna Mills</div><div class="meta">E-Commerce & Retail · Director</div></div><div class="right"><div class="status pending">⏳ Pending</div><div style="font-size:10px;color:var(--muted)">rv</div></div></div>
+            <div class="contact-item"><div class="avatar">T</div><div class="info"><div class="name">Terry Graham</div><div class="meta">Procurement Manager · Parts & Service</div></div><div class="right"><div class="status pending">⏳ Pending</div><div style="font-size:10px;color:var(--muted)">rv</div></div></div>
+            <div class="contact-item"><div class="avatar">R</div><div class="info"><div class="name">Renee Gillis</div><div class="meta">Product Manager / RV Consultant</div></div><div class="right"><div class="status pending">⏳ Pending</div><div style="font-size:10px;color:var(--muted)">rv</div></div></div>
+            <div class="contact-item"><div class="avatar">M</div><div class="info"><div class="name">Mark Thompson</div><div class="meta">REI Co-op · Senior Buyer</div></div><div class="right"><div class="status pending">⏳ Pending</div><div style="font-size:10px;color:var(--muted)">camping</div></div></div>
+            <div class="contact-item"><div class="avatar">L</div><div class="info"><div class="name">Lisa Wang</div><div class="meta">REI Co-op · Product Manager</div></div><div class="right"><div class="status pending">⏳ Pending</div><div style="font-size:10px;color:var(--muted)">camping</div></div></div>
+            <div class="contact-item"><div class="avatar">B</div><div class="info"><div class="name">Brian O'Connor</div><div class="meta">L.L.Bean · Senior Buyer</div></div><div class="right"><div class="status pending">⏳ Pending</div><div style="font-size:10px;color:var(--muted)">camping</div></div></div>
+            <div class="contact-item"><div class="avatar">C</div><div class="info"><div class="name">Chris Hoffman</div><div class="meta">Eastern Mountain Sports · Director</div></div><div class="right"><div class="status pending">⏳ Pending</div><div style="font-size:10px;color:var(--muted)">camping</div></div></div>
+            <div class="contact-item"><div class="avatar">A</div><div class="info"><div class="name">Amy Foster</div><div class="meta">Moosejaw · Senior Outdoor Buyer</div></div><div class="right"><div class="status pending">⏳ Pending</div><div style="font-size:10px;color:var(--muted)">camping</div></div></div>
+            <div class="contact-item"><div class="avatar">R</div><div class="info"><div class="name">Rachel Kim</div><div class="meta">AutoZone · Category Manager</div></div><div class="right"><div class="status pending">⏳ Pending</div><div style="font-size:10px;color:var(--muted)">auto</div></div></div>
+            <div class="contact-item"><div class="avatar">S</div><div class="info"><div class="name">Samantha Lee</div><div class="meta">NAPA Auto Parts · Senior Buyer</div></div><div class="right"><div class="status pending">⏳ Pending</div><div style="font-size:10px;color:var(--muted)">auto</div></div></div>
+            <div class="contact-item"><div class="avatar">E</div><div class="info"><div class="name">Emily Chen</div><div class="meta">Walmart · Buyer</div></div><div class="right"><div class="status pending">⏳ Pending</div><div style="font-size:10px;color:var(--muted)">retail</div></div></div>
+            <div class="contact-item"><div class="avatar">J</div><div class="info"><div class="name">Jason Brooks</div><div class="meta">Best Buy · Senior Buyer</div></div><div class="right"><div class="status pending">⏳ Pending</div><div style="font-size:10px;color:var(--muted)">retail</div></div></div>
           </div>
           <div class="export-btns">
             <button class="export-btn">📥 导出 CSV</button>
@@ -766,7 +758,7 @@ function stopDragVLog() {
   document.removeEventListener('mouseup', stopDragVLog);
 }
 
-console.log('✅ v0.2.1 loaded');
+console.log('✅ v0.3.0 loaded - 完整37人客户数据');
 </script>
 </body>
 </html>
