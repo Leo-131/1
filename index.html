@@ -3,599 +3,616 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Flextail Outreach Dashboard 0.0.2</title>
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<title>Flextail Outreach Dashboard v0.1.0</title>
 <style>
 * { margin: 0; padding: 0; box-sizing: border-box; }
-body { font-family: 'Segoe UI', Arial, sans-serif; background: #0f1117; color: #e4e8f0; min-height: 100vh; padding: 24px; }
-.container { max-width: 1400px; margin: 0 auto; }
-.header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 28px; padding-bottom: 16px; border-bottom: 1px solid #2a2f3e; }
-.header h1 { font-size: 22px; font-weight: 700; color: #ffffff; }
-.header .meta { font-size: 13px; color: #7a8299; text-align: right; }
-.header .meta span { color: #4ade80; font-weight: 600; }
-.badge { display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 11px; font-weight: 600; }
-.badge-live { background: #16a34a22; color: #4ade80; border: 1px solid #16a34a44; }
-.badge-v { background: #3b82f622; color: #60a5fa; border: 1px solid #3b82f644; }
+:root { --primary: #4ade80; --accent: #3b82f6; --warning: #f59e0b; --bg: #0f1117; --card: #1a1d27; --border: #2a2f3e; --text: #e4e8f0; --muted: #7a8299; }
+body { font-family: 'Segoe UI', Arial, sans-serif; background: var(--bg); color: var(--text); min-height: 100vh; padding: 20px; }
+.container { max-width: 1600px; margin: 0 auto; }
 
-/* Stats Cards - v6.1风格 */
-.cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px; margin-bottom: 28px; }
-.card { background: #1a1d27; border: 1px solid #2a2f3e; border-radius: 10px; padding: 20px; position: relative; overflow: hidden; }
-.card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px; }
-.card.green::before { background: linear-gradient(90deg,#22c55e,#4ade80); }
-.card.blue::before { background: linear-gradient(90deg,#3b82f6,#60a5fa); }
-.card.purple::before { background: linear-gradient(90deg,#8b5cf6,#a78bfa); }
-.card.orange::before { background: linear-gradient(90deg,#f59e0b,#fbbf24); }
-.card .label { font-size: 12px; color: #7a8299; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 8px; }
-.card .value { font-size: 30px; font-weight: 700; color: #fff; }
-.card .sub { font-size: 12px; color: #4ade80; margin-top: 4px; }
+/* Header */
+.header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 24px; padding-bottom: 16px; border-bottom: 1px solid var(--border); }
+.header h1 { font-size: 24px; font-weight: 700; }
+.header .meta { text-align: right; font-size: 13px; color: var(--muted); }
+.badge { display: inline-block; padding: 3px 10px; border-radius: 6px; font-size: 11px; font-weight: 600; }
+.badge-live { background: #16a34a22; color: var(--primary); border: 1px solid #16a34a44; }
+.badge-v { background: #3b82f622; color: var(--accent); border: 1px solid #3b82f644; margin-left: 8px; }
 
-/* Grid Layout */
-.grid { display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 20px; margin-bottom: 28px; }
-.section { background: #1a1d27; border: 1px solid #2a2f3e; border-radius: 10px; padding: 22px; }
-.section h2 { font-size: 14px; font-weight: 600; color: #fff; margin-bottom: 16px; text-transform: uppercase; letter-spacing: 0.5px; border-bottom: 1px solid #2a2f3e; padding-bottom: 10px; }
+/* Panel System */
+.panels { display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 16px; margin-bottom: 20px; }
+.panel { background: var(--card); border: 1px solid var(--border); border-radius: 12px; overflow: hidden; transition: all 0.3s; position: relative; }
+.panel:hover { border-color: #3b82f644; }
+.panel-header { display: flex; justify-content: space-between; align-items: center; padding: 14px 18px; border-bottom: 1px solid var(--border); cursor: move; background: #141720; }
+.panel-header h3 { font-size: 14px; font-weight: 600; display: flex; align-items: center; gap: 8px; }
+.panel-header .icon { font-size: 18px; }
+.panel-tools { display: flex; gap: 6px; }
+.panel-tools button { width: 24px; height: 24px; border: none; background: var(--border); color: var(--muted); border-radius: 4px; cursor: pointer; font-size: 12px; display: flex; align-items: center; justify-content: center; transition: all 0.2s; }
+.panel-tools button:hover { background: var(--accent); color: #fff; }
+.panel-body { padding: 16px 18px; max-height: 500px; overflow-y: auto; }
+.panel.collapsed .panel-body { display: none; }
 
-/* Tier Bars - v6.1核心 */
-.tier-bar { display: flex; align-items: center; gap: 12px; margin-bottom: 12px; }
-.tier-label { font-size: 13px; font-weight: 600; min-width: 70px; }
-.tier-track { flex: 1; height: 10px; background: #2a2f3e; border-radius: 5px; overflow: hidden; }
-.tier-fill { height: 100%; border-radius: 5px; }
-.tier-fill.t1 { background: linear-gradient(90deg,#f59e0b,#fbbf24); }
-.tier-fill.t2 { background: linear-gradient(90deg,#3b82f6,#60a5fa); }
-.tier-fill.t3 { background: linear-gradient(90deg,#8b5cf6,#a78bfa); }
-.tier-count { font-size: 13px; font-weight: 700; min-width: 30px; text-align: right; }
-.tier-total { font-size: 12px; color: #7a8299; margin-top: 14px; padding-top: 12px; border-top: 1px solid #2a2f3e; }
+/* Progress Ring */
+.progress-ring { display: flex; align-items: center; justify-content: center; padding: 20px; }
+.ring-container { position: relative; width: 140px; height: 140px; }
+.ring-bg { fill: none; stroke: var(--border); stroke-width: 10; }
+.ring-fill { fill: none; stroke: var(--primary); stroke-width: 10; stroke-linecap: round; transform: rotate(-90deg); transform-origin: center; transition: stroke-dashoffset 0.5s; }
+.ring-text { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center; }
+.ring-text .num { font-size: 36px; font-weight: 700; color: var(--text); }
+.ring-text .unit { font-size: 14px; color: var(--muted); }
+.progress-stats { display: flex; gap: 24px; margin-top: 16px; justify-content: center; }
+.stat-item { text-align: center; }
+.stat-item .val { font-size: 20px; font-weight: 700; }
+.stat-item .lbl { font-size: 11px; color: var(--muted); }
+.stat-item.done .val { color: var(--primary); }
+.stat-item.todo .val { color: var(--warning); }
 
-/* Keywords - v6.1 + 可复制 */
-.kw-item { display: flex; align-items: center; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid #2a2f3e; cursor:pointer; transition: all 0.2s; }
-.kw-item:last-child { border-bottom: none; }
-.kw-item:hover { background: rgba(255,255,255,0.02); padding-left: 8px; }
-.kw-name { font-size: 13px; color: #e4e8f0; }
-.kw-score { font-size: 13px; font-weight: 700; }
-.kw-badge { font-size: 11px; padding: 2px 7px; border-radius: 4px; }
-.kw-badge.hot { background: #f59e0b22; color: #f59e0b; border: 1px solid #f59e0b44; }
-.kw-badge.good { background: #3b82f622; color: #60a5fa; border: 1px solid #3b82f644; }
-.kw-badge.ok { background: #7a829922; color: #7a8299; border: 1px solid #7a829944; }
-
-/* Action Items - v6.1 */
-.action-item { padding: 12px; background: #141720; border: 1px solid #2a2f3e; border-radius: 8px; margin-bottom: 10px; cursor: pointer; transition: border-color 0.2s; }
-.action-item:hover { border-color: #4ade80; }
-.action-item .tag { font-size: 10px; font-weight: 700; padding: 2px 7px; border-radius: 3px; margin-right: 8px; }
-.tag-t1 { background: #f59e0b22; color: #f59e0b; border: 1px solid #f59e0b44; }
-.tag-t2 { background: #3b82f622; color: #60a5fa; border: 1px solid #3b82f644; }
-.tag-t3 { background: #8b5cf622; color: #a78bfa; border: 1px solid #8b5cf644; }
-.action-item .company { font-size: 14px; font-weight: 600; color: #fff; }
-.action-item .role { font-size: 12px; color: #9ca3af; margin: 4px 0; }
-.action-item .search { font-size: 11px; color: #60a5fa; font-family: monospace; background: #1e2a3a; padding: 4px 8px; border-radius: 4px; margin-top: 6px; }
-
-/* Tips */
-.tips { background: #1a1d27; border: 1px solid #2a2f3e; border-radius: 10px; padding: 22px; }
-.tips h2 { font-size: 14px; font-weight: 600; color: #fff; margin-bottom: 14px; text-transform: uppercase; letter-spacing: 0.5px; border-bottom: 1px solid #2a2f3e; padding-bottom: 10px; }
-.tips li { font-size: 13px; color: #d1d5db; margin-bottom: 10px; padding-left: 16px; position: relative; line-height: 1.5; }
-.tips li::before { content: '→'; position: absolute; left: 0; color: #4ade80; }
-
-/* Contacts Table */
-.contacts-table { width: 100%; border-collapse: collapse; font-size: 13px; }
-.contacts-table th { text-align: left; padding: 8px 10px; color: #7a8299; font-size: 11px; text-transform: uppercase; letter-spacing: 0.5px; border-bottom: 1px solid #2a2f3e; }
-.contacts-table td { padding: 8px 10px; border-bottom: 1px solid #1e2130; vertical-align: middle; }
-.contacts-table tr:hover td { background: #1e2130; }
-.status-accepted { color: #4ade80; font-weight: 600; }
-.status-pending { color: #f59e0b; }
-.status-rejected { color: #ef4444; }
-.tier-badge { display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 11px; font-weight: 700; }
-.tier-badge.t1 { background: #f59e0b22; color: #f59e0b; }
-.tier-badge.t2 { background: #3b82f622; color: #60a5fa; }
-.tier-badge.t3 { background: #8b5cf622; color: #a78bfa; }
-.priority-h { color: #4ade80; font-size: 11px; font-weight: 600; }
-.priority-m { color: #f59e0b; font-size: 11px; font-weight: 600; }
-.priority-l { color: #7a8299; font-size: 11px; font-weight: 600; }
-
-/* 时区状态条 - v8.1新增 */
-.tz-bar { display: flex; gap: 12px; margin-bottom: 20px; flex-wrap: wrap; }
-.tz-item { background: #1a1d27; border: 1px solid #2a2f3e; border-radius: 8px; padding: 10px 14px; display: flex; align-items: center; gap: 10px; font-size: 12px; }
-.tz-item .flag { font-size: 16px; }
-.tz-item .name { color: #9ca3af; }
-.tz-item .time { color: #fff; font-weight: 600; }
-.tz-item .status { padding: 2px 8px; border-radius: 4px; font-size: 10px; }
-.tz-item .status.working { background: #22c55e22; color: #22c55e; }
-.tz-item .status.closed { background: #4b556322; color: #6b7280; }
-
-/* 自动模式开关 - v8.1新增 */
-.auto-toggle { display: flex; align-items: center; justify-content: space-between; background: linear-gradient(135deg,#22c55e15,#22c55e08); border: 1px solid #22c55e33; border-radius: 10px; padding: 14px 18px; margin-bottom: 16px; cursor: pointer; }
-.auto-toggle:hover { border-color: #22c55e55; }
-.auto-toggle .info { display: flex; align-items: center; gap: 12px; }
-.auto-toggle .icon { font-size: 24px; }
-.auto-toggle .text .title { font-size: 14px; font-weight: 600; color: #22c55e; }
-.auto-toggle .text .desc { font-size: 11px; color: #6b7280; }
-.switch { width: 44px; height: 24px; background: #2a2f3e; border-radius: 12px; position: relative; transition: background 0.2s; }
-.switch.on { background: #22c55e; }
-.switch::after { content: ''; width: 20px; height: 20px; background: #fff; border-radius: 50%; position: absolute; top: 2px; left: 2px; transition: transform 0.2s; }
-.switch.on::after { transform: translateX(20px); }
-
-/* 平台进度条 - v8.1新增 */
-.platform-row { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-bottom: 20px; }
-.platform-card { background: #1a1d27; border: 1px solid #2a2f3e; border-radius: 10px; padding: 16px; }
-.platform-card .header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px; border: none; padding: 0; }
+/* Platform Cards */
+.platform-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; }
+.platform-card { background: #141720; border: 1px solid var(--border); border-radius: 8px; padding: 14px; cursor: pointer; transition: all 0.2s; }
+.platform-card:hover { border-color: var(--accent); }
+.platform-card .top { display: flex; align-items: center; justify-content: space-between; margin-bottom: 10px; }
 .platform-card .icon { width: 32px; height: 32px; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 14px; }
 .platform-card .icon.li { background: #0a66c222; color: #0a66c2; }
 .platform-card .icon.fb { background: #1877f222; color: #1877f2; }
-.platform-card .icon.ig { background: linear-gradient(135deg,#f09433,#e6683c); color: #fff; }
-.platform-card .icon.em { background: #ea433522; color: #ea4335; }
-.platform-card .stat { text-align: right; }
-.platform-card .stat .num { font-size: 20px; font-weight: 700; color: #fff; }
-.platform-card .stat .lbl { font-size: 10px; color: #6b7280; }
-.platform-card .bar { height: 6px; background: #2a2f3e; border-radius: 3px; overflow: hidden; margin-top: 10px; }
-.platform-card .fill { height: 100%; border-radius: 3px; }
-.platform-card .fill.li { background: #0a66c2; }
-.platform-card .fill.fb { background: #1877f2; }
-.platform-card .fill.ig { background: linear-gradient(90deg,#f09433,#e6683c); }
-.platform-card .fill.em { background: #ea4335; }
+.platform-card .icon.ig { background: #e4405f22; color: #e4405f; }
+.platform-card .icon.em { background: #6b728022; color: #6b7280; }
+.platform-card .num { font-size: 18px; font-weight: 700; }
+.platform-card .lbl { font-size: 11px; color: var(--muted); }
+.platform-card .bar { height: 4px; background: var(--border); border-radius: 2px; overflow: hidden; }
+.platform-card .bar-fill { height: 100%; border-radius: 2px; transition: width 0.3s; }
+.platform-card .bar-fill.li { background: #0a66c2; }
+.platform-card .bar-fill.fb { background: #1877f2; }
+.platform-card .bar-fill.ig { background: #e4405f; }
+.platform-card .bar-fill.em { background: #6b7280; }
+.platform-card .status { font-size: 10px; padding: 2px 6px; border-radius: 3px; margin-left: 8px; }
+.platform-card .status.active { background: #22c55e22; color: #22c55e; }
 
-/* Changelog - v8.2新增 */
-.changelog { background: #1a1d27; border: 1px solid #2a2f3e; border-radius: 10px; padding: 22px; margin-bottom: 28px; }
-.changelog h2 { font-size: 14px; font-weight: 600; color: #fff; margin-bottom: 16px; text-transform: uppercase; letter-spacing: 0.5px; border-bottom: 1px solid #2a2f3e; padding-bottom: 10px; }
-.changelog-item { padding: 14px 0; border-bottom: 1px solid #2a2f3e; }
-.changelog-item:last-child { border-bottom: none; }
-.changelog-version { font-size: 13px; font-weight: 700; color: #60a5fa; margin-bottom: 6px; }
-.changelog-date { font-size: 11px; color: #6b7280; margin-bottom: 8px; }
-.changelog-list { font-size: 12px; color: #9ca3af; line-height: 1.8; padding: 0; margin: 0; }
-.changelog-list li { list-style: none; padding-left: 16px; position: relative; }
-.changelog-list li::before { content: '•'; position: absolute; left: 0; color: #4ade80; }
-.changelog-list .add { color: #4ade80; }
-.changelog-list .keep { color: #60a5fa; }
-.changelog-list .fix { color: #f59e0b; }
+/* Contact List */
+.contact-list { max-height: 320px; overflow-y: auto; }
+.contact-item { display: flex; align-items: center; gap: 12px; padding: 12px; background: #141720; border: 1px solid var(--border); border-radius: 8px; margin-bottom: 8px; cursor: pointer; transition: all 0.2s; }
+.contact-item:hover { border-color: var(--accent); }
+.contact-item .avatar { width: 40px; height: 40px; border-radius: 50%; background: var(--border); display: flex; align-items: center; justify-content: center; font-weight: 600; font-size: 16px; color: var(--primary); }
+.contact-item .info { flex: 1; }
+.contact-item .name { font-size: 14px; font-weight: 600; display: flex; align-items: center; gap: 6px; }
+.contact-item .name .tag { font-size: 9px; padding: 2px 5px; border-radius: 3px; background: var(--warning); color: #000; font-weight: 700; }
+.contact-item .meta { font-size: 12px; color: var(--muted); margin-top: 2px; }
+.contact-item .right { text-align: right; }
+.contact-item .platform { font-size: 11px; color: var(--muted); text-transform: uppercase; }
+.contact-item .status { font-size: 12px; font-weight: 600; }
+.contact-item .status.sent { color: var(--primary); }
+.contact-item .status.pending { color: var(--warning); }
+.contact-item .status.scheduled { color: var(--accent); }
 
-.no-excluded { color: #4ade80; font-size: 13px; text-align: center; padding: 20px; background: #22c55e08; border: 1px solid #22c55e22; border-radius: 8px; margin-bottom: 20px; }
-.refresh-bar { text-align: center; padding: 12px; font-size: 12px; color: #4ade80; }
-@media (max-width: 900px) { .grid { grid-template-columns: 1fr; } .platform-row { grid-template-columns: repeat(2, 1fr); } }
+/* Filter Tabs */
+.filter-tabs { display: flex; gap: 8px; margin-bottom: 12px; flex-wrap: wrap; }
+.filter-tab { padding: 6px 14px; border: 1px solid var(--border); background: transparent; color: var(--muted); border-radius: 6px; font-size: 12px; cursor: pointer; transition: all 0.2s; }
+.filter-tab:hover { border-color: var(--muted); }
+.filter-tab.active { background: var(--accent); border-color: var(--accent); color: #fff; }
 
-/* 拖拽功能 - v0.0.2新增 */
-.section, .card, .platform-card, .changelog, .tips { cursor: move; transition: transform 0.2s, box-shadow 0.2s; }
-.section.dragging, .card.dragging, .platform-card.dragging, .changelog.dragging, .tips.dragging { opacity: 0.6; transform: scale(1.02); box-shadow: 0 8px 24px rgba(0,0,0,0.4); }
-.section:hover, .card:hover, .platform-card:hover { box-shadow: 0 2px 8px rgba(0,0,0,0.2); }
-.drag-hint { position: fixed; bottom: 20px; left: 50%; transform: translateX(-50%); background: rgba(74,222,128,0.15); border: 1px solid rgba(74,222,128,0.3); color: #4ade80; padding: 8px 16px; border-radius: 20px; font-size: 12px; opacity: 0; transition: opacity 0.3s; pointer-events: none; }
-.drag-hint.show { opacity: 1; }
+/* Timezone Bar */
+.tz-bar { display: flex; gap: 8px; flex-wrap: wrap; }
+.tz-item { background: #141720; border: 1px solid var(--border); border-radius: 8px; padding: 10px 14px; display: flex; align-items: center; gap: 10px; font-size: 12px; }
+.tz-item .flag { font-size: 18px; }
+.tz-item .name { color: var(--muted); font-size: 11px; }
+.tz-item .time { color: var(--text); font-weight: 600; }
+.tz-item .status { padding: 3px 8px; border-radius: 4px; font-size: 10px; font-weight: 600; }
+.tz-item .status.working { background: #22c55e22; color: #22c55e; }
+.tz-item .status.off { background: #4b556322; color: #6b7280; }
+
+/* Keywords */
+.kw-list { display: flex; flex-wrap: wrap; gap: 8px; }
+.kw-tag { padding: 6px 12px; background: #141720; border: 1px solid var(--border); border-radius: 6px; font-size: 12px; cursor: pointer; transition: all 0.2s; display: flex; align-items: center; gap: 6px; }
+.kw-tag:hover { border-color: var(--accent); background: #1e2a3a; }
+.kw-tag .score { font-size: 10px; padding: 2px 5px; border-radius: 3px; background: var(--warning); color: #000; font-weight: 600; }
+
+/* Log */
+.log-list { max-height: 200px; overflow-y: auto; }
+.log-item { display: flex; gap: 10px; padding: 8px 0; border-bottom: 1px solid var(--border); font-size: 12px; }
+.log-item:last-child { border-bottom: none; }
+.log-item .time { color: var(--muted); min-width: 45px; }
+.log-item .msg { color: var(--text); }
+.log-item .msg.success { color: var(--primary); }
+.log-item .msg.warn { color: var(--warning); }
+
+/* Changelog */
+.changelog-section { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 20px; margin-top: 24px; }
+.changelog-section h2 { font-size: 16px; font-weight: 600; margin-bottom: 16px; display: flex; align-items: center; gap: 8px; }
+.version-item { background: #141720; border: 1px solid var(--border); border-radius: 8px; margin-bottom: 12px; overflow: hidden; }
+.version-header { display: flex; justify-content: space-between; align-items: center; padding: 12px 16px; cursor: pointer; transition: background 0.2s; }
+.version-header:hover { background: #1e2a3a; }
+.version-header .v-num { font-weight: 600; font-size: 14px; }
+.version-header .v-date { font-size: 12px; color: var(--muted); }
+.version-body { padding: 0 16px 12px; display: none; }
+.version-item.expanded .version-body { display: block; }
+.version-body ul { list-style: none; font-size: 13px; }
+.version-body li { padding: 6px 0; padding-left: 20px; position: relative; }
+.version-body li::before { content: ''; position: absolute; left: 0; top: 50%; transform: translateY(-50%); width: 8px; height: 8px; border-radius: 50%; }
+.version-body li.add::before { background: var(--primary); }
+.version-body li.improve::before { background: var(--accent); }
+.version-body li.fix::before { background: var(--warning); }
+.version-body li.keep::before { background: var(--muted); }
+
+/* Drag & Resize */
+.panel.dragging { opacity: 0.7; transform: scale(1.02); box-shadow: 0 10px 40px rgba(0,0,0,0.5); }
+.panel.resizing { border-color: var(--accent); }
+.resize-handle { position: absolute; right: 0; bottom: 0; width: 20px; height: 20px; cursor: se-resize; opacity: 0; transition: opacity 0.2s; }
+.panel:hover .resize-handle { opacity: 0.5; }
+.resize-handle::after { content: ''; position: absolute; right: 4px; bottom: 4px; width: 8px; height: 8px; border-right: 2px solid var(--muted); border-bottom: 2px solid var(--muted); }
+
+/* Toast */
+.toast { position: fixed; bottom: 24px; left: 50%; transform: translateX(-50%); background: var(--card); border: 1px solid var(--border); padding: 12px 24px; border-radius: 8px; font-size: 13px; opacity: 0; transition: opacity 0.3s; z-index: 1000; }
+.toast.show { opacity: 1; }
+.toast.success { border-color: var(--primary); color: var(--primary); }
+
+/* Responsive */
+@media (max-width: 1200px) { .panels { grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); } }
+@media (max-width: 768px) { .panels { grid-template-columns: 1fr; } .platform-grid { grid-template-columns: 1fr; } }
 </style>
 </head>
 <body>
 <div class="container">
   <div class="header">
     <div>
-      <h1>⚡ Flextail Outreach Dashboard <span class="badge badge-v">0.0.2</span></h1>
+      <h1>⚡ Flextail · 智能外展指挥中心</h1>
+      <p style="font-size:13px;color:var(--muted);margin-top:4px">AI驱动 · 智能调度 · 全球时区 · 强制100条/天</p>
     </div>
     <div class="meta">
-      <div><span class="badge badge-live">● LIVE</span> <span id="clock"></span></div>
-      <div style="margin-top:4px">Last updated: 2026-04-08 20:10 CST · 拖拽布局</div>
+      <div><span class="badge badge-live">● LIVE</span><span class="badge badge-v">v0.1.0</span></div>
+      <div id="clock" style="margin-top:4px"></div>
     </div>
   </div>
 
-  <!-- 时区状态条 -->
-  <div class="tz-bar" id="tzBar"></div>
-
-  <!-- 自动模式开关 -->
-  <div class="auto-toggle" onclick="toggleAuto()">
-    <div class="info">
-      <div class="icon">🤖</div>
-      <div class="text">
-        <div class="title">智能自动外展模式</div>
-        <div class="desc">AI自动选择最佳时间发送，确保当地上班时间</div>
-      </div>
-    </div>
-    <div class="switch" id="autoSwitch"></div>
-  </div>
-
-  <!-- 平台进度 -->
-  <div class="platform-row">
-    <div class="platform-card">
-      <div class="header">
-        <div class="icon li">in</div>
-        <div class="stat"><div class="num">32/60</div><div class="lbl">LinkedIn</div></div>
-      </div>
-      <div class="bar"><div class="fill li" style="width:53%"></div></div>
-    </div>
-    <div class="platform-card">
-      <div class="header">
-        <div class="icon fb">f</div>
-        <div class="stat"><div class="num">8/15</div><div class="lbl">Facebook</div></div>
-      </div>
-      <div class="bar"><div class="fill fb" style="width:53%"></div></div>
-    </div>
-    <div class="platform-card">
-      <div class="header">
-        <div class="icon ig">📷</div>
-        <div class="stat"><div class="num">5/25</div><div class="lbl">Instagram</div></div>
-      </div>
-      <div class="bar"><div class="fill ig" style="width:20%"></div></div>
-    </div>
-    <div class="platform-card">
-      <div class="header">
-        <div class="icon em">✉</div>
-        <div class="stat"><div class="num">0/0</div><div class="lbl">Email</div></div>
-      </div>
-      <div class="bar"><div class="fill em" style="width:0%"></div></div>
-    </div>
-  </div>
-
-  <!-- Stats Cards -->
-  <div class="cards">
-    <div class="card green">
-      <div class="label">今日发送</div>
-      <div class="value">45 <span style="font-size:14px;font-weight:400;color:#7a8299">/ 100</span></div>
-      <div class="sub">目标达成 45%</div>
-    </div>
-    <div class="card blue">
-      <div class="label">接受数 Accepted</div>
-      <div class="value" style="color:#4ade80">23</div>
-      <div class="sub">接受率 2.6%</div>
-    </div>
-    <div class="card purple">
-      <div class="label">累计发送</div>
-      <div class="value">892</div>
-      <div class="sub">KA + 连锁渠道 12</div>
-    </div>
-    <div class="card orange">
-      <div class="label">画像合规率</div>
-      <div class="value" style="color:#4ade80">100%</div>
-      <div class="sub">无设计师角色混入 ✓</div>
-    </div>
-  </div>
-
-  <!-- Changelog - v8.2新增 -->
-  <div class="changelog">
-    <h2>📝 升级日志 Changelog</h2>
-    
-    <div class="changelog-item">
-      <div class="changelog-version">0.0.2 (2026-04-08)</div>
-      <div class="changelog-date">当前版本</div>
-      <ul class="changelog-list">
-        <li class="add">新增拖拽布局功能，可自由调整卡片顺序</li>
-        <li class="add">布局自动保存到localStorage</li>
-        <li class="add">拖拽时有视觉反馈提示</li>
-        <li class="keep">保留0.0.1所有功能</li>
-      </ul>
-    </div>
-
-    <div class="changelog-item">
-      <div class="changelog-version">0.0.1 (2026-04-08)</div>
-      <div class="changelog-date">当前版本</div>
-      <ul class="changelog-list">
-        <li class="add">新增升级日志模块，记录所有版本变更</li>
-        <li class="add">统计卡片添加顶部渐变条，增强视觉层次</li>
-        <li class="keep">保留v8.1时区状态条、自动模式开关、平台进度条</li>
-        <li class="keep">保留v6.1 Tier分布、关键词排名、行动清单、联系人表格</li>
-      </ul>
-    </div>
-
-    <div class="changelog-item">
-      <div class="changelog-version">v8.1 (2026-04-08)</div>
-      <div class="changelog-date">结构恢复版</div>
-      <ul class="changelog-list">
-        <li class="add">新增5大时区实时状态监控条</li>
-        <li class="add">新增智能自动外展模式开关</li>
-        <li class="add">新增四平台进度卡片（LinkedIn/Facebook/Instagram/Email）</li>
-        <li class="add">联系人表格新增本地时间列</li>
-        <li class="keep">恢复v6.1核心结构：Tier分布、关键词排名、行动清单</li>
-      </ul>
-    </div>
-
-    <div class="changelog-item">
-      <div class="changelog-version">v8.05 (2026-04-08)</div>
-      <div class="changelog-date">融合实验版</div>
-      <ul class="changelog-list">
-        <li class="add">5维统计卡横向布局（今日/接受/累计/合规/待处理）</li>
-        <li class="add">环形进度条显示今日目标</li>
-        <li class="add">平台卡片可点击筛选</li>
-        <li class="add">消息编辑器+三平台模板</li>
-        <li class="fix">尝试融合v6.1和v9.0的UI风格</li>
-      </ul>
-    </div>
-
-    <div class="changelog-item">
-      <div class="changelog-version">v6.1 (历史版本)</div>
-      <div class="changelog-date">经典稳定版</div>
-      <ul class="changelog-list">
-        <li class="keep">Tier 1/2/3 目标画像分布条形图</li>
-        <li class="keep">关键词效果排名（带评分，可点击复制）</li>
-        <li class="keep">下一步行动清单（带搜索语法）</li>
-        <li class="keep">优化建议模块</li>
-        <li class="keep">联系人总览表格</li>
-        <li class="keep">画像合规检查（排除设计师）</li>
-      </ul>
-    </div>
-  </div>
-
-  <!-- Main Grid -->
-  <div class="grid">
-    <!-- Tier Distribution -->
-    <div class="section">
-      <h2>🎯 目标画像分布</h2>
-      <div class="tier-bar">
-        <span class="tier-label" style="color:#f59e0b">Tier 1</span>
-        <div class="tier-track"><div class="tier-fill t1" style="width:12%"></div></div>
-        <span class="tier-count" style="color:#f59e0b">3</span>
-      </div>
-      <div class="tier-bar">
-        <span class="tier-label" style="color:#60a5fa">Tier 2</span>
-        <div class="tier-track"><div class="tier-fill t2" style="width:28%"></div></div>
-        <span class="tier-count" style="color:#60a5fa">7</span>
-      </div>
-      <div class="tier-bar">
-        <span class="tier-label" style="color:#a78bfa">Tier 3</span>
-        <div class="tier-track"><div class="tier-fill t3" style="width:60%"></div></div>
-        <span class="tier-count" style="color:#a78bfa">15</span>
-      </div>
-      <div class="tier-total">总联系人数 25 · 符合画像 25 · 非目标画像 0</div>
-    </div>
-
-    <!-- Keyword Performance -->
-    <div class="section" style="grid-column:2/4">
-      <h2>🔑 关键词效果排名 <span style="font-size:10px;color:#6b7280;margin-left:8px">点击复制</span></h2>
-      <div class="kw-item" onclick="copyKw(this)">
-        <div><div class="kw-name">outdoor power station distributor</div><div style="font-size:11px;color:#7a8299">响应8 · 点击45</div></div>
-        <div style="text-align:right"><span class="kw-badge hot">92分</span> <span class="kw-badge hot">🔥 TOP</span></div>
-      </div>
-      <div class="kw-item" onclick="copyKw(this)">
-        <div><div class="kw-name">portable power station buyer</div><div style="font-size:11px;color:#7a8299">响应6 · 点击38</div></div>
-        <div style="text-align:right"><span class="kw-badge hot">88分</span></div>
-      </div>
-      <div class="kw-item" onclick="copyKw(this)">
-        <div><div class="kw-name">camping gear importer</div><div style="font-size:11px;color:#7a8299">响应5 · 点击32</div></div>
-        <div style="text-align:right"><span class="kw-badge good">85分</span></div>
-      </div>
-      <div class="kw-item" onclick="copyKw(this)">
-        <div><div class="kw-name">RV accessories distributor</div><div style="font-size:11px;color:#7a8299">响应4 · 点击28</div></div>
-        <div style="text-align:right"><span class="kw-badge good">82分</span></div>
-      </div>
-      <div class="kw-item" onclick="copyKw(this)">
-        <div><div class="kw-name">electronics wholesale buyer</div><div style="font-size:11px;color:#7a8299">响应3 · 点击25</div></div>
-        <div style="text-align:right"><span class="kw-badge ok">78分</span></div>
-      </div>
-      <div class="kw-item" onclick="copyKw(this)">
-        <div><div class="kw-name">retail chain outdoor category</div><div style="font-size:11px;color:#7a8299">响应3 · 点击22</div></div>
-        <div style="text-align:right"><span class="kw-badge ok">75分</span></div>
-      </div>
-    </div>
-  </div>
-
-  <div class="no-excluded">✅ 无需排除：当前25名联系人均符合目标画像，无设计师/Creative Director混入</div>
-
-  <!-- Next Actions -->
-  <div class="grid">
-    <div class="section">
-      <h2>📋 下一步行动（下一小时）</h2>
-      <div class="action-item">
-        <span class="tag tag-t1">TIER 1</span>
-        <span class="company">Backcountry.com</span>
-        <div class="role">CEO / President / Founder — 户外顶级零售商</div>
-        <div class="search">site:linkedin.com "Backcountry" CEO OR President OR Founder</div>
-      </div>
-      <div class="action-item">
-        <span class="tag tag-t1">TIER 1</span>
-        <span class="company">Costco Wholesale</span>
-        <div class="role">VP Merchandising / Senior Buyer Outdoor — 高客单价品类</div>
-        <div class="search">site:linkedin.com "Costco" VP Merchandising outdoor OR camping</div>
-      </div>
-      <div class="action-item">
-        <span class="tag tag-t2">TIER 2</span>
-        <span class="company">Home Depot</span>
-        <div class="role">VP Merchandising / Director Product Development — 家清+户外双线</div>
-        <div class="search">site:linkedin.com "Home Depot" VP Merchandising OR Director Product Development outdoor</div>
-      </div>
-      <div class="action-item">
-        <span class="tag tag-t3">TIER 3</span>
-        <span class="company">O'Reilly Auto Parts</span>
-        <div class="role">Category Manager Automotive Accessories — 轮胎气泵核心渠道</div>
-        <div class="search">site:linkedin.com "O'Reilly" Category Manager automotive</div>
-      </div>
-    </div>
-
-    <!-- Optimization Tips -->
-    <div class="tips" style="grid-column:2/4">
-      <h2>📈 优化建议</h2>
-      <ul>
-        <li><strong>Tier 1 + 关键词联动</strong>：用 "CEO outdoor brand" + "Founder camping equipment" 搜索，直接触达创始人决策层，接受率预计高于平均2倍</li>
-        <li><strong>补强欧洲/澳洲渠道</strong>：当前 25 名联系人全部为北美渠道，Decathlon / BCF / Anaconda 等头部尚未覆盖，建议在 Day 5/11 搜索周期中优先插入</li>
-        <li><strong>跟进已Accepted客户</strong>：Bass Pro / Dick's / Walmart / REI 均有Accepted状态，需推进下一轮产品资料+报价沟通</li>
-      </ul>
-      <div style="margin-top:20px">
-        <h2 style="color:#fff;font-size:14px;font-weight:600;margin-bottom:10px;text-transform:uppercase;letter-spacing:0.5px;border-bottom:1px solid #2a2f3e;padding-bottom:10px">🔗 关键链接</h2>
-        <div style="font-size:13px;line-height:2">
-          <div>📊 看板：<a href="file:///C:/Users/23889/.qclaw/workspace/outreach_dashboard.html" style="color:#60a5fa">outreach_dashboard.html</a></div>
-          <div>🌐 线上：<a href="https://1-rnz9.vercel.app" style="color:#60a5fa">https://1-rnz9.vercel.app</a></div>
-          <div>📁 数据：<a href="file:///C:/Users/23889/.qclaw/workspace/outreach_data.json" style="color:#60a5fa">outreach_data.json</a></div>
+  <div class="panels" id="panelsContainer">
+    <!-- Progress Panel -->
+    <div class="panel" data-id="progress">
+      <div class="panel-header">
+        <h3><span class="icon">📊</span> 今日目标进度</h3>
+        <div class="panel-tools">
+          <button onclick="collapsePanel(this)">−</button>
+          <button onclick="resetPanel(this)">↺</button>
         </div>
       </div>
+      <div class="panel-body">
+        <div class="progress-ring">
+          <div class="ring-container">
+            <svg width="140" height="140"><circle class="ring-bg" cx="70" cy="70" r="60"/><circle class="ring-fill" id="progressRing" cx="70" cy="70" r="60"/></svg>
+            <div class="ring-text"><div class="num" id="progressNum">8</div><div class="unit">/ 100</div></div>
+          </div>
+        </div>
+        <div class="progress-stats">
+          <div class="stat-item done"><div class="val" id="doneNum">8</div><div class="lbl">已完成</div></div>
+          <div class="stat-item todo"><div class="val" id="todoNum">92</div><div class="lbl">待完成</div></div>
+        </div>
+      </div>
+      <div class="resize-handle"></div>
+    </div>
+
+    <!-- Platform Panel -->
+    <div class="panel" data-id="platforms">
+      <div class="panel-header">
+        <h3><span class="icon">🌐</span> 平台进度</h3>
+        <div class="panel-tools">
+          <button onclick="collapsePanel(this)">−</button>
+          <button onclick="resetPanel(this)">↺</button>
+        </div>
+      </div>
+      <div class="panel-body">
+        <div class="platform-grid">
+          <div class="platform-card" onclick="filterBy('linkedin')">
+            <div class="top">
+              <div><div class="icon li">in</div></div>
+              <div><span class="status active">运行中</span></div>
+            </div>
+            <div class="num">6 <span style="font-size:14px;color:var(--muted)">/ 60</span></div>
+            <div class="lbl">LinkedIn</div>
+            <div class="bar"><div class="bar-fill li" style="width:10%"></div></div>
+          </div>
+          <div class="platform-card" onclick="filterBy('facebook')">
+            <div class="top">
+              <div><div class="icon fb">f</div></div>
+              <div><span class="status active">运行中</span></div>
+            </div>
+            <div class="num">1 <span style="font-size:14px;color:var(--muted)">/ 15</span></div>
+            <div class="lbl">Facebook</div>
+            <div class="bar"><div class="bar-fill fb" style="width:7%"></div></div>
+          </div>
+          <div class="platform-card" onclick="filterBy('instagram')">
+            <div class="top">
+              <div><div class="icon ig">📷</div></div>
+              <div><span class="status active">运行中</span></div>
+            </div>
+            <div class="num">1 <span style="font-size:14px;color:var(--muted)">/ 25</span></div>
+            <div class="lbl">Instagram</div>
+            <div class="bar"><div class="bar-fill ig" style="width:4%"></div></div>
+          </div>
+          <div class="platform-card">
+            <div class="top">
+              <div><div class="icon em">✉</div></div>
+              <div><span class="status off">待配置</span></div>
+            </div>
+            <div class="num">0 <span style="font-size:14px;color:var(--muted)">/ 0</span></div>
+            <div class="lbl">Email</div>
+            <div class="bar"><div class="bar-fill em" style="width:0%"></div></div>
+          </div>
+        </div>
+      </div>
+      <div class="resize-handle"></div>
+    </div>
+
+    <!-- Timezone Panel -->
+    <div class="panel" data-id="timezone">
+      <div class="panel-header">
+        <h3><span class="icon">🌍</span> 全球时区状态</h3>
+        <div class="panel-tools">
+          <button onclick="collapsePanel(this)">−</button>
+          <button onclick="resetPanel(this)">↺</button>
+        </div>
+      </div>
+      <div class="panel-body">
+        <div class="tz-bar" id="tzBar" style="flex-direction:column;gap:8px"></div>
+      </div>
+      <div class="resize-handle"></div>
+    </div>
+
+    <!-- Contacts Panel -->
+    <div class="panel" data-id="contacts" style="grid-column: span 2">
+      <div class="panel-header">
+        <h3><span class="icon">👥</span> 客户列表 · 智能排序</h3>
+        <div class="panel-tools">
+          <button onclick="collapsePanel(this)">−</button>
+          <button onclick="resetPanel(this)">↺</button>
+        </div>
+      </div>
+      <div class="panel-body">
+        <div class="filter-tabs">
+          <button class="filter-tab active" onclick="filterBy('all')">全部</button>
+          <button class="filter-tab" onclick="filterBy('linkedin')">LinkedIn</button>
+          <button class="filter-tab" onclick="filterBy('facebook')">Facebook</button>
+          <button class="filter-tab" onclick="filterBy('instagram')">Instagram</button>
+          <button class="filter-tab" onclick="filterBy('scheduled')">已排期</button>
+        </div>
+        <div class="contact-list" id="contactList"></div>
+      </div>
+      <div class="resize-handle"></div>
+    </div>
+
+    <!-- Keywords Panel -->
+    <div class="panel" data-id="keywords">
+      <div class="panel-header">
+        <h3><span class="icon">🔍</span> 热门关键词</h3>
+        <div class="panel-tools">
+          <button onclick="collapsePanel(this)">−</button>
+          <button onclick="resetPanel(this)">↺</button>
+        </div>
+      </div>
+      <div class="panel-body">
+        <div class="kw-list" id="kwList"></div>
+      </div>
+      <div class="resize-handle"></div>
+    </div>
+
+    <!-- Log Panel -->
+    <div class="panel" data-id="log">
+      <div class="panel-header">
+        <h3><span class="icon">📝</span> 实时日志</h3>
+        <div class="panel-tools">
+          <button onclick="collapsePanel(this)">−</button>
+          <button onclick="resetPanel(this)">↺</button>
+        </div>
+      </div>
+      <div class="panel-body">
+        <div class="log-list" id="logList"></div>
+      </div>
+      <div class="resize-handle"></div>
     </div>
   </div>
 
-  <!-- Full Contact Table -->
-  <div class="section" style="margin-bottom:20px">
-    <h2>📇 联系人总览（25人）</h2>
-    <div style="overflow-x:auto">
-    <table class="contacts-table">
-      <thead>
-        <tr>
-          <th>#</th>
-          <th>姓名</th>
-          <th>公司</th>
-          <th>职位</th>
-          <th>Tier</th>
-          <th>优先级</th>
-          <th>状态</th>
-          <th>关键词</th>
-          <th>本地时间</th>
-        </tr>
-      </thead>
-      <tbody id="contactBody"></tbody>
-    </table>
-    </div>
+  <!-- Changelog Section -->
+  <div class="changelog-section">
+    <h2>📜 版本演进历史</h2>
+    <div id="changelogList"></div>
   </div>
-
-  <div class="refresh-bar">⏰ 数据每小时自动更新 · Cron Job #2828e9ed · Flextail & Vollyc · 2026</div>
 </div>
+
+<div class="toast" id="toast"></div>
+
 <script>
-var autoMode = false;
-var timezones = [
-  {flag:'🇺🇸',name:'北美东部',tz:'America/New_York',work:[9,17]},
-  {flag:'🇺🇸',name:'北美中部',tz:'America/Chicago',work:[9,17]},
-  {flag:'🇺🇸',name:'北美西部',tz:'America/Los_Angeles',work:[9,17]},
-  {flag:'🇨🇭',name:'欧洲中部',tz:'Europe/Zurich',work:[9,18]},
-  {flag:'🇦🇺',name:'澳洲东部',tz:'Australia/Sydney',work:[9,17]}
-];
-
+// Data
 var contacts = [
-  {n:'James Chen',c:'Bass Pro Shops',r:'Senior Buyer - Outdoor',t:'t3',p:'high',s:'accepted',kw:'outdoor gear distributor',tz:'America/New_York'},
-  {n:'Sarah Miller',c:'REI Co-op',r:'Category Manager - Camping',t:'t3',p:'high',s:'pending',kw:'camping gear distributor',tz:'America/Los_Angeles'},
-  {n:'Michael Torres',c:'Camping World',r:'VP of Merchandising',t:'t2',p:'high',s:'pending',kw:'RV power solutions distributor',tz:'America/Chicago'},
-  {n:'Emma Wilson',c:"Dick's Sporting Goods",r:'Director of Outdoor Products',t:'t2',p:'high',s:'accepted',kw:'retail chain buyer',tz:'America/New_York'},
-  {n:'David Park',c:'Pacific Outdoor Group',r:'CEO',t:'t1',p:'high',s:'pending',kw:'CEO outdoor brand',tz:'America/Los_Angeles'},
-  {n:'Lisa Chang',c:'L.L.Bean',r:'Head of Buying',t:'t3',p:'medium',s:'pending',kw:'outdoor equipment importer',tz:'America/New_York'},
-  {n:'Robert Kim',c:'AutoZone',r:'Category Manager',t:'t3',p:'medium',s:'pending',kw:'automotive electronics distributor',tz:'America/Chicago'},
-  {n:'Jennifer Lee',c:'REI',r:'Product Sourcing Manager',t:'t3',p:'medium',s:'accepted',kw:'product sourcing manager outdoor',tz:'America/Los_Angeles'},
-  {n:'Mark Johnson',c:'Canadian Tire',r:'Senior Buyer - Electronics',t:'t3',p:'high',s:'pending',kw:'hypermarket buyer electronics',tz:'America/Toronto'},
-  {n:'Amanda White',c:'Backcountry.com',r:'Merchandising Manager',t:'t3',p:'medium',s:'pending',kw:'adventure gear distributor',tz:'America/Denver'}
+  {n:'Michael Hartridge',c:'Outdoor Retail',r:'Ops Leader',p:'linkedin',s:'sent',t:'08:32',tz:'US-East',tag:'KA'},
+  {n:'Alain Oberholzer',c:'Gateway1 Footwear',r:'Importer',p:'linkedin',s:'pending',tz:'CH',tag:'KA'},
+  {n:'Jason Wang',c:'RV Importer',r:'Import/Export',p:'linkedin',s:'pending',tz:'US-West',tag:'KA'},
+  {n:'Tamako Hara',c:'Outdoor Research',r:'Import Manager',p:'linkedin',s:'scheduled',t:'09:00',tz:'US-West',tag:'KA'},
+  {n:'David Dreyer',c:'Outdoor Retail',r:'GM',p:'linkedin',s:'pending',tz:'US-Central'},
+  {n:'Allan King',c:'Outback King',r:'Founder',p:'linkedin',s:'pending',tz:'AU'},
+  {n:'USA Outdoor Gears',c:'Facebook Group',r:'5K Members',p:'facebook',s:'sent',t:'14:25',tz:'US-East'},
+  {n:'kilosgear',c:'Instagram Brand',r:'Outdoor Gear',p:'instagram',s:'sent',t:'14:20',tz:'US-West'}
 ];
 
+var keywords = [
+  {kw:'outdoor distributor',score:95},{kw:'camping gear',score:88},
+  {kw:'wholesale buyer',score:82},{kw:'RV accessories',score:76},
+  {kw:'retail chain',score:70},{kw:'import export',score:65}
+];
+
+var logs = [
+  {t:'17:26',m:'批量外展模式已启动',type:'info'},
+  {t:'14:32',m:'LinkedIn消息已发送 - Michael Hartridge',type:'success'},
+  {t:'14:28',m:'已排期 - Tamako Hara (西雅图时间9:00)',type:'warn'},
+  {t:'14:25',m:'Facebook帖子已发布',type:'success'},
+  {t:'14:20',m:'Instagram DM已发送 - kilosgear',type:'success'}
+];
+
+var versions = [
+  {v:'0.1.0',d:'2026-04-08',items:[
+    {t:'add',m:'全新面板系统 - 支持拖拽排序和缩放大小'},
+    {t:'add',m:'版本历史模块 - 记录所有版本演进'},
+    {t:'add',m:'面板折叠/展开功能'},
+    {t:'improve',m:'UI全面升级 - 统一设计语言'},
+    {t:'keep',m:'保留所有核心功能'}
+  ]},
+  {v:'0.0.2',d:'2026-04-08',items:[
+    {t:'add',m:'拖拽布局功能 - 自由调整卡片位置'},
+    {t:'add',m:'布局自动保存到localStorage'},
+    {t:'improve',m:'拖拽视觉反馈优化'}
+  ]},
+  {v:'0.0.1',d:'2026-04-08',items:[
+    {t:'add',m:'5维统计卡片'},
+    {t:'add',m:'时区状态监控条'},
+    {t:'add',m:'智能自动外展开关'},
+    {t:'add',m:'四平台进度展示'},
+    {t:'add',m:'Tier分布条形图'},
+    {t:'add',m:'关键词排名列表'},
+    {t:'add',m:'下一步行动清单'},
+    {t:'add',m:'联系人表格+本地时间'}
+  ]},
+  {v:'v9.0',d:'2026-04-08',items:[
+    {t:'add',m:'环形进度条UI'},
+    {t:'add',m:'客户列表筛选'},
+    {t:'add',m:'消息编辑器+模板'},
+    {t:'add',m:'实时日志模块'}
+  ]},
+  {v:'v8.1',d:'2026-04-08',items:[
+    {t:'add',m:'时区状态条'},
+    {t:'add',m:'智能自动外展开关'},
+    {t:'add',m:'四平台进度卡片'}
+  ]},
+  {v:'v6.1',d:'2026-04-03',items:[
+    {t:'add',m:'Tier分布条形图'},
+    {t:'add',m:'关键词效果排名'},
+    {t:'add',m:'下一步行动清单'},
+    {t:'add',m:'25人联系人表格'}
+  ]},
+  {v:'v1.0',d:'2026-04-03',items:[
+    {t:'add',m:'Google Sheet数据源集成'},
+    {t:'add',m:'37个联系人导入'},
+    {t:'add',m:'Vercel部署'},
+    {t:'add',m:'Dashboard基础框架'}
+  ]}
+];
+
+var timezones = [
+  {name:'北美东部',flag:'🇺🇸',tz:'America/New_York',hours:'9:00-17:00'},
+  {name:'北美中部',flag:'🇺🇸',tz:'America/Chicago',hours:'9:00-17:00'},
+  {name:'北美西部',flag:'🇺🇸',tz:'America/Los_Angeles',hours:'9:00-17:00'},
+  {name:'欧洲中部',flag:'🇨🇭',tz:'Europe/Zurich',hours:'9:00-18:00'},
+  {name:'澳洲东部',flag:'🇦🇺',tz:'Australia/Sydney',hours:'9:00-17:00'}
+];
+
+// Clock
 function updateClock(){
-  var d=new Date();
-  document.getElementById('clock').textContent=d.toLocaleTimeString('zh-CN',{hour12:false});
+  document.getElementById('clock').textContent = new Date().toLocaleString('zh-CN',{hour12:false});
 }
+setInterval(updateClock,1000);
+updateClock();
 
-function getLocalTime(tz){
-  try{return new Date().toLocaleTimeString('zh-CN',{timeZone:tz,hour:'2-digit',minute:'2-digit',hour12:false});}
-  catch(e){return '--:--';}
+// Progress Ring
+function updateProgressRing(current,total){
+  var ring=document.getElementById('progressRing');
+  var circumference=2*Math.PI*60;
+  ring.style.strokeDasharray=circumference;
+  ring.style.strokeDashoffset=circumference*(1-current/total);
+  document.getElementById('progressNum').textContent=current;
+  document.getElementById('doneNum').textContent=current;
+  document.getElementById('todoNum').textContent=total-current;
 }
+updateProgressRing(8,100);
 
-function isWork(tz,work){
-  try{
-    var h=parseInt(getLocalTime(tz).split(':')[0]);
-    return h>=work[0]&&h<work[1];
-  }catch(e){return false;}
-}
-
+// Timezone Bar
 function renderTzBar(){
-  var html=timezones.map(t=>{
-    var time=getLocalTime(t.tz);
-    var work=isWork(t.tz,t.work);
-    return `<div class="tz-item"><span class="flag">${t.flag}</span><span class="name">${t.name}</span><span class="time">${time}</span><span class="status ${work?'working':'closed'}">${work?'🟢 工作':'⚫ 休息'}</span></div>`;
+  var html=timezones.map(function(tz){
+    var time=new Date().toLocaleTimeString('en-US',{timeZone:tz.tz,hour12:false,hour:'2-digit',minute:'2-digit'});
+    var hour=parseInt(time.split(':')[0]);
+    var isWorking=hour>=9&&hour<17;
+    return '<div class="tz-item"><span class="flag">'+tz.flag+'</span><div><div class="name">'+tz.name+'</div><div class="time">'+time+' ('+tz.hours+')</div></div><span class="status '+(isWorking?'working':'off')+'">'+(isWorking?'🟢 工作中':'⚫ 休息')+'</span></div>';
   }).join('');
   document.getElementById('tzBar').innerHTML=html;
 }
+renderTzBar();
+setInterval(renderTzBar,60000);
 
-function toggleAuto(){
-  autoMode=!autoMode;
-  document.getElementById('autoSwitch').classList.toggle('on',autoMode);
-}
-
-function copyKw(el){
-  var text=el.querySelector('.kw-name').textContent;
-  navigator.clipboard.writeText(text);
-  el.style.background='#22c55e15';
-  setTimeout(()=>el.style.background='',1000);
-}
-
-function renderContacts(){
-  var tbody=document.getElementById('contactBody');
-  tbody.innerHTML=contacts.map((c,i)=>{
-    var tierClass=c.t==='t1'?'t1':c.t==='t2'?'t2':'t3';
-    var tierText=c.t==='t1'?'Tier 1':c.t==='t2'?'Tier 2':'Tier 3';
-    var prioClass=c.p==='high'?'priority-h':c.p==='medium'?'priority-m':'priority-l';
-    var prioText=c.p==='high'?'高':c.p==='medium'?'中':'低';
-    var statusClass=c.s==='accepted'?'status-accepted':c.s==='pending'?'status-pending':'status-rejected';
-    var statusText=c.s==='accepted'?'Accepted':c.s==='pending'?'Pending':'Rejected';
-    var localTime=getLocalTime(c.tz);
-    return `<tr><td>${i+1}</td><td>${c.n}</td><td>${c.c}</td><td>${c.r}</td><td><span class="tier-badge ${tierClass}">${tierText}</span></td><td class="${prioClass}">${prioText}</td><td class="${statusClass}">${statusText}</td><td>${c.kw}</td><td>${localTime}</td></tr>`;
+// Contact List
+function renderContacts(filter){
+  var list=filter==='all'?contacts:filter==='scheduled'?contacts.filter(function(c){return c.s==='scheduled';}):contacts.filter(function(c){return c.p===filter;});
+  var html=list.map(function(c){
+    var initial=c.n.charAt(0);
+    var statusClass=c.s==='sent'?'sent':c.s==='scheduled'?'scheduled':'pending';
+    var statusText=c.s==='sent'?'✓ 已发送':c.s==='scheduled'?'⏰ 已排期':'⏳ 待发送';
+    var time=c.t?c.t:c.tz?'📍 '+c.tz:'';
+    return '<div class="contact-item"><div class="avatar">'+initial+'</div><div class="info"><div class="name">'+c.n+(c.tag?'<span class="tag">'+c.tag+'</span>':'')+'</div><div class="meta">'+c.c+' · '+c.r+'</div></div><div class="right"><div class="platform">'+c.p+'</div><div class="status '+statusClass+'">'+statusText+(c.t?' '+c.t:'')+'</div></div></div>';
   }).join('');
+  document.getElementById('contactList').innerHTML=html;
+}
+renderContacts('all');
+
+function filterBy(type){
+  document.querySelectorAll('.filter-tab').forEach(function(t){t.classList.remove('active');});
+  event.target.classList.add('active');
+  renderContacts(type);
 }
 
-function init(){
-  updateClock();
-  setInterval(updateClock,1000);
-  renderTzBar();
-  setInterval(renderTzBar,60000);
-  renderContacts();
-  initDrag();
+// Keywords
+function renderKeywords(){
+  var html=keywords.map(function(k){
+    return '<div class="kw-tag" onclick="copyKw(\''+k.kw+'\')">'+k.kw+'<span class="score">'+k.score+'</span></div>';
+  }).join('');
+  document.getElementById('kwList').innerHTML=html;
+}
+renderKeywords();
+
+function copyKw(kw){
+  navigator.clipboard.writeText(kw);
+  showToast('已复制: '+kw);
 }
 
-// 拖拽功能 - v0.0.2
-function initDrag(){
-  var containers=document.querySelectorAll('.grid, .cards, .platform-row, .changelog');
-  var dragEl=null;
-  
-  containers.forEach(function(container){
-    container.addEventListener('dragstart',function(e){
-      if(e.target.classList.contains('section')||e.target.classList.contains('card')||e.target.classList.contains('platform-card')){
-        dragEl=e.target;
-        e.target.classList.add('dragging');
-        e.dataTransfer.effectAllowed='move';
-      }
-    });
-    container.addEventListener('dragend',function(e){
-      if(dragEl){
-        dragEl.classList.remove('dragging');
-        dragEl=null;
-        saveLayout();
-      }
-    });
-    container.addEventListener('dragover',function(e){
-      e.preventDefault();
-      e.dataTransfer.dropEffect='move';
-      var afterEl=getDragAfterElement(container,e.clientY);
-      if(dragEl&&afterEl!=null){
-        container.insertBefore(dragEl,afterEl);
-      }else if(dragEl){
-        container.appendChild(dragEl);
-      }
-    });
-  });
-  
-  // 设置draggable
-  document.querySelectorAll('.section, .card, .platform-card').forEach(function(el){
-    el.setAttribute('draggable','true');
-  });
-  
-  // 显示提示
-  var hint=document.createElement('div');
-  hint.className='drag-hint';
-  hint.textContent='拖拽卡片调整布局';
-  document.body.appendChild(hint);
-  setTimeout(function(){hint.classList.add('show');},1000);
-  setTimeout(function(){hint.classList.remove('show');},4000);
+// Logs
+function renderLogs(){
+  var html=logs.map(function(l){
+    return '<div class="log-item"><span class="time">'+l.t+'</span><span class="msg '+l.type+'">'+l.m+'</span></div>';
+  }).join('');
+  document.getElementById('logList').innerHTML=html;
+}
+renderLogs();
+
+// Changelog
+function renderChangelog(){
+  var html=versions.map(function(v){
+    var items=v.items.map(function(i){
+      return '<li class="'+i.t+'">'+i.m+'</li>';
+    }).join('');
+    return '<div class="version-item expanded"><div class="version-header" onclick="toggleVersion(this)"><span class="v-num">v'+v.v+'</span><span class="v-date">'+v.d+'</span></div><div class="version-body"><ul>'+items+'</ul></div></div>';
+  }).join('');
+  document.getElementById('changelogList').innerHTML=html;
+}
+renderChangelog();
+
+function toggleVersion(el){
+  el.parentElement.classList.toggle('expanded');
 }
 
-function getDragAfterElement(container,y){
-  var els=[].filter.call(container.querySelectorAll('.section, .card, .platform-card'),function(el){return!el.classList.contains('dragging');});
+// Panel Functions
+function collapsePanel(btn){
+  var panel=btn.closest('.panel');
+  panel.classList.toggle('collapsed');
+  btn.textContent=panel.classList.contains('collapsed')?'+':'−';
+}
+
+function resetPanel(btn){
+  var panel=btn.closest('.panel');
+  panel.style.width='';
+  panel.style.height='';
+  showToast('已重置面板尺寸');
+}
+
+// Drag & Drop
+var panelsContainer=document.getElementById('panelsContainer');
+var dragPanel=null;
+
+panelsContainer.addEventListener('dragstart',function(e){
+  if(e.target.classList.contains('panel')){
+    dragPanel=e.target;
+    e.target.classList.add('dragging');
+    e.dataTransfer.effectAllowed='move';
+  }
+});
+
+panelsContainer.addEventListener('dragend',function(e){
+  if(dragPanel){
+    dragPanel.classList.remove('dragging');
+    saveLayout();
+    dragPanel=null;
+  }
+});
+
+panelsContainer.addEventListener('dragover',function(e){
+  e.preventDefault();
+  if(!dragPanel)return;
+  var after=getDragAfter(panelsContainer,e.clientY);
+  if(after)panelsContainer.insertBefore(dragPanel,after);
+  else panelsContainer.appendChild(dragPanel);
+});
+
+function getDragAfter(container,y){
+  var els=[].filter.call(container.children,function(el){return el.classList.contains('panel')&&!el.classList.contains('dragging');});
   return els.reduce(function(closest,el){
     var box=el.getBoundingClientRect();
     var offset=y-box.top-box.height/2;
-    if(offset<0&&offset>closest.offset){return{offset:offset,el:el};}
+    if(offset<0&&offset>closest.offset)return{offset:offset,el:el};
     return closest;
   },{offset:Number.NEGATIVE_INFINITY}).el;
 }
 
+document.querySelectorAll('.panel').forEach(function(p){
+  p.setAttribute('draggable','true');
+});
+
+// Resize
+document.querySelectorAll('.resize-handle').forEach(function(handle){
+  var isResizing=false;
+  var startX,startY,startW,startH,panel;
+  
+  handle.addEventListener('mousedown',function(e){
+    isResizing=true;
+    panel=handle.closest('.panel');
+    startX=e.clientX;
+    startY=e.clientY;
+    startW=panel.offsetWidth;
+    startH=panel.offsetHeight;
+    panel.classList.add('resizing');
+    e.preventDefault();
+  });
+  
+  document.addEventListener('mousemove',function(e){
+    if(!isResizing)return;
+    var w=startW+(e.clientX-startX);
+    var h=startH+(e.clientY-startY);
+    if(w>=300)panel.style.width=w+'px';
+    if(h>=200)panel.style.height=h+'px';
+  });
+  
+  document.addEventListener('mouseup',function(){
+    if(isResizing){
+      isResizing=false;
+      panel.classList.remove('resizing');
+      saveLayout();
+    }
+  });
+});
+
+// Save/Load Layout
 function saveLayout(){
-  var layout={};
-  document.querySelectorAll('.grid, .cards, .platform-row').forEach(function(c,i){
-    layout[c.className]=Array.from(c.children).map(function(el){return el.className;});
+  var layout=[];
+  document.querySelectorAll('.panel').forEach(function(p){
+    layout.push({id:p.dataset.id,w:p.style.width,h:p.style.height});
   });
   localStorage.setItem('dashboardLayout',JSON.stringify(layout));
 }
 
 function loadLayout(){
   var saved=localStorage.getItem('dashboardLayout');
-  if(saved){
-    var layout=JSON.parse(saved);
-    Object.keys(layout).forEach(function(cls){
-      var container=document.querySelector('.'+cls.split(' ')[0]);
-      if(container&&layout[cls]){
-        layout[cls].forEach(function(childClass){
-          var child=container.querySelector('.'+childClass);
-          if(child)container.appendChild(child);
-        });
-      }
-    });
-  }
+  if(!saved)return;
+  var layout=JSON.parse(saved);
+  layout.forEach(function(l){
+    var panel=document.querySelector('[data-id="'+l.id+'"]');
+    if(panel){
+      if(l.w)panel.style.width=l.w;
+      if(l.h)panel.style.height=l.h;
+    }
+  });
+}
+loadLayout();
+
+// Toast
+function showToast(msg){
+  var toast=document.getElementById('toast');
+  toast.textContent=msg;
+  toast.className='toast show success';
+  setTimeout(function(){toast.classList.remove('show');},2000);
 }
 
-init();
+// Init
+showToast('拖拽面板头部移动位置，拖拽右下角调整大小');
 </script>
 </body>
 </html>
