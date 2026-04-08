@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
-<title>Flextail Outreach Dashboard v0.2.0</title>
+<title>Flextail Outreach Dashboard v0.2.1</title>
 <style>
 * { margin: 0; padding: 0; box-sizing: border-box; }
 :root { --primary: #4ade80; --accent: #3b82f6; --warning: #f59e0b; --danger: #ef4444; --bg: #0f1117; --card: #1a1d27; --border: #2a2f3e; --text: #e4e8f0; --muted: #7a8299; }
@@ -175,6 +175,15 @@ body { font-family: 'Segoe UI', Arial, sans-serif; background: var(--bg); color:
 .resize-handle { position: absolute; right: 0; bottom: 0; width: 20px; height: 20px; cursor: se-resize; opacity: 0; transition: opacity 0.2s; }
 .panel:hover .resize-handle { opacity: 0.5; }
 .resize-handle::after { content: ''; position: absolute; right: 4px; bottom: 4px; width: 8px; height: 8px; border-right: 2px solid var(--muted); border-bottom: 2px solid var(--muted); }
+
+/* Version Log - Compact Draggable */
+.version-log { position: fixed; bottom: 20px; right: 20px; width: 200px; background: var(--card); border: 1px solid var(--border); border-radius: 8px; font-size: 11px; z-index: 100; box-shadow: 0 4px 12px rgba(0,0,0,0.3); }
+.vlog-header { padding: 8px 12px; background: #141720; border-radius: 8px 8px 0 0; cursor: move; font-weight: 600; display: flex; justify-content: space-between; align-items: center; }
+.vlog-header::after { content: '▼'; font-size: 8px; }
+.vlog-body { max-height: 200px; overflow-y: auto; padding: 8px; }
+.vlog-item { padding: 4px 0; border-bottom: 1px solid var(--border); }
+.vlog-item:last-child { border-bottom: none; }
+.vlog-item .v { font-weight: 600; color: var(--accent); }
 
 /* Toast */
 .toast { position: fixed; bottom: 24px; left: 50%; transform: translateX(-50%); background: var(--card); border: 1px solid var(--border); padding: 12px 24px; border-radius: 8px; font-size: 13px; opacity: 0; transition: opacity 0.3s; z-index: 1000; }
@@ -483,9 +492,10 @@ body { font-family: 'Segoe UI', Arial, sans-serif; background: var(--bg); color:
     </div>
   </div>
 
-  <!-- Changelog Section -->
-  <div class="changelog-section">
-    <h2>📜 版本演进历史</h2>
+  <!-- Version Log - Compact Draggable -->
+  <div class="version-log" id="versionLog">
+    <div class="vlog-header" onmousedown="startDragVLog(event)">📜 版本日志</div>
+    <div class="vlog-body" id="vlogBody" style="display:none">
     <div class="version-item expanded">
       <div class="version-header" onclick="toggleVersion(this)">
         <div class="v-num">v0.2.0</div>
@@ -586,7 +596,7 @@ body { font-family: 'Segoe UI', Arial, sans-serif; background: var(--bg); color:
       </div>
     </div>
   </div>
-</div>
+  </div>
 
 <div class="toast" id="toast"></div>
 
@@ -724,7 +734,39 @@ document.querySelectorAll('.resize-handle').forEach(handle => {
   }
 });
 
-console.log('✅ Flextail Outreach Dashboard v0.2.0 loaded');
+// Toggle version log
+document.querySelector('.vlog-header').addEventListener('click', function(e) {
+  if (e.target === this) {
+    const body = document.getElementById('vlogBody');
+    body.style.display = body.style.display === 'none' ? 'block' : 'none';
+  }
+});
+
+// Drag version log
+let vlogDragging = false, vlogX, vlogY;
+function startDragVLog(e) {
+  const vlog = document.getElementById('versionLog');
+  vlogDragging = true;
+  vlogX = e.clientX - vlog.offsetLeft;
+  vlogY = e.clientY - vlog.offsetTop;
+  document.addEventListener('mousemove', dragVLog);
+  document.addEventListener('mouseup', stopDragVLog);
+}
+function dragVLog(e) {
+  if (!vlogDragging) return;
+  const vlog = document.getElementById('versionLog');
+  vlog.style.left = (e.clientX - vlogX) + 'px';
+  vlog.style.top = (e.clientY - vlogY) + 'px';
+  vlog.style.right = 'auto';
+  vlog.style.bottom = 'auto';
+}
+function stopDragVLog() {
+  vlogDragging = false;
+  document.removeEventListener('mousemove', dragVLog);
+  document.removeEventListener('mouseup', stopDragVLog);
+}
+
+console.log('✅ v0.2.1 loaded');
 </script>
 </body>
 </html>
