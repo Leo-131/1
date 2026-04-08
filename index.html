@@ -3,10 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
-<meta http-equiv="Pragma" content="no-cache">
-<meta http-equiv="Expires" content="0">
-<title>Flextail Outreach Dashboard 0.0.1</title>
+<title>Flextail Outreach Dashboard 0.0.2</title>
 <style>
 * { margin: 0; padding: 0; box-sizing: border-box; }
 body { font-family: 'Segoe UI', Arial, sans-serif; background: #0f1117; color: #e4e8f0; min-height: 100vh; padding: 24px; }
@@ -47,7 +44,7 @@ body { font-family: 'Segoe UI', Arial, sans-serif; background: #0f1117; color: #
 .tier-count { font-size: 13px; font-weight: 700; min-width: 30px; text-align: right; }
 .tier-total { font-size: 12px; color: #7a8299; margin-top: 14px; padding-top: 12px; border-top: 1px solid #2a2f3e; }
 
-/* Keywords - v6.1 + 可复�?*/
+/* Keywords - v6.1 + 可复制 */
 .kw-item { display: flex; align-items: center; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid #2a2f3e; cursor:pointer; transition: all 0.2s; }
 .kw-item:last-child { border-bottom: none; }
 .kw-item:hover { background: rgba(255,255,255,0.02); padding-left: 8px; }
@@ -73,7 +70,7 @@ body { font-family: 'Segoe UI', Arial, sans-serif; background: #0f1117; color: #
 .tips { background: #1a1d27; border: 1px solid #2a2f3e; border-radius: 10px; padding: 22px; }
 .tips h2 { font-size: 14px; font-weight: 600; color: #fff; margin-bottom: 14px; text-transform: uppercase; letter-spacing: 0.5px; border-bottom: 1px solid #2a2f3e; padding-bottom: 10px; }
 .tips li { font-size: 13px; color: #d1d5db; margin-bottom: 10px; padding-left: 16px; position: relative; line-height: 1.5; }
-.tips li::before { content: '�?; position: absolute; left: 0; color: #4ade80; }
+.tips li::before { content: '→'; position: absolute; left: 0; color: #4ade80; }
 
 /* Contacts Table */
 .contacts-table { width: 100%; border-collapse: collapse; font-size: 13px; }
@@ -101,7 +98,7 @@ body { font-family: 'Segoe UI', Arial, sans-serif; background: #0f1117; color: #
 .tz-item .status.working { background: #22c55e22; color: #22c55e; }
 .tz-item .status.closed { background: #4b556322; color: #6b7280; }
 
-/* 自动模式开�?- v8.1新增 */
+/* 自动模式开关 - v8.1新增 */
 .auto-toggle { display: flex; align-items: center; justify-content: space-between; background: linear-gradient(135deg,#22c55e15,#22c55e08); border: 1px solid #22c55e33; border-radius: 10px; padding: 14px 18px; margin-bottom: 16px; cursor: pointer; }
 .auto-toggle:hover { border-color: #22c55e55; }
 .auto-toggle .info { display: flex; align-items: center; gap: 12px; }
@@ -113,7 +110,7 @@ body { font-family: 'Segoe UI', Arial, sans-serif; background: #0f1117; color: #
 .switch::after { content: ''; width: 20px; height: 20px; background: #fff; border-radius: 50%; position: absolute; top: 2px; left: 2px; transition: transform 0.2s; }
 .switch.on::after { transform: translateX(20px); }
 
-/* 平台进度�?- v8.1新增 */
+/* 平台进度条 - v8.1新增 */
 .platform-row { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-bottom: 20px; }
 .platform-card { background: #1a1d27; border: 1px solid #2a2f3e; border-radius: 10px; padding: 16px; }
 .platform-card .header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px; border: none; padding: 0; }
@@ -141,7 +138,7 @@ body { font-family: 'Segoe UI', Arial, sans-serif; background: #0f1117; color: #
 .changelog-date { font-size: 11px; color: #6b7280; margin-bottom: 8px; }
 .changelog-list { font-size: 12px; color: #9ca3af; line-height: 1.8; padding: 0; margin: 0; }
 .changelog-list li { list-style: none; padding-left: 16px; position: relative; }
-.changelog-list li::before { content: '�?; position: absolute; left: 0; color: #4ade80; }
+.changelog-list li::before { content: '•'; position: absolute; left: 0; color: #4ade80; }
 .changelog-list .add { color: #4ade80; }
 .changelog-list .keep { color: #60a5fa; }
 .changelog-list .fix { color: #f59e0b; }
@@ -149,16 +146,23 @@ body { font-family: 'Segoe UI', Arial, sans-serif; background: #0f1117; color: #
 .no-excluded { color: #4ade80; font-size: 13px; text-align: center; padding: 20px; background: #22c55e08; border: 1px solid #22c55e22; border-radius: 8px; margin-bottom: 20px; }
 .refresh-bar { text-align: center; padding: 12px; font-size: 12px; color: #4ade80; }
 @media (max-width: 900px) { .grid { grid-template-columns: 1fr; } .platform-row { grid-template-columns: repeat(2, 1fr); } }
+
+/* 拖拽功能 - v0.0.2新增 */
+.section, .card, .platform-card, .changelog, .tips { cursor: move; transition: transform 0.2s, box-shadow 0.2s; }
+.section.dragging, .card.dragging, .platform-card.dragging, .changelog.dragging, .tips.dragging { opacity: 0.6; transform: scale(1.02); box-shadow: 0 8px 24px rgba(0,0,0,0.4); }
+.section:hover, .card:hover, .platform-card:hover { box-shadow: 0 2px 8px rgba(0,0,0,0.2); }
+.drag-hint { position: fixed; bottom: 20px; left: 50%; transform: translateX(-50%); background: rgba(74,222,128,0.15); border: 1px solid rgba(74,222,128,0.3); color: #4ade80; padding: 8px 16px; border-radius: 20px; font-size: 12px; opacity: 0; transition: opacity 0.3s; pointer-events: none; }
+.drag-hint.show { opacity: 1; }
 </style>
 </head>
 <body>
 <div class="container">
   <div class="header">
     <div>
-      <h1>�?Flextail Outreach Dashboard <span class="badge badge-v">0.0.1</span></h1>
+      <h1>⚡ Flextail Outreach Dashboard <span class="badge badge-v">0.0.2</span></h1>
     </div>
     <div class="meta">
-      <div><span class="badge badge-live">�?LIVE</span> <span id="clock"></span></div>
+      <div><span class="badge badge-live">● LIVE</span> <span id="clock"></span></div>
       <div style="margin-top:4px">Last updated: 2026-04-08 17:35 CST</div>
     </div>
   </div>
@@ -166,7 +170,7 @@ body { font-family: 'Segoe UI', Arial, sans-serif; background: #0f1117; color: #
   <!-- 时区状态条 -->
   <div class="tz-bar" id="tzBar"></div>
 
-  <!-- 自动模式开�?-->
+  <!-- 自动模式开关 -->
   <div class="auto-toggle" onclick="toggleAuto()">
     <div class="info">
       <div class="icon">🤖</div>
@@ -203,7 +207,7 @@ body { font-family: 'Segoe UI', Arial, sans-serif; background: #0f1117; color: #
     </div>
     <div class="platform-card">
       <div class="header">
-        <div class="icon em">�?/div>
+        <div class="icon em">✉</div>
         <div class="stat"><div class="num">0/0</div><div class="lbl">Email</div></div>
       </div>
       <div class="bar"><div class="fill em" style="width:0%"></div></div>
@@ -213,24 +217,24 @@ body { font-family: 'Segoe UI', Arial, sans-serif; background: #0f1117; color: #
   <!-- Stats Cards -->
   <div class="cards">
     <div class="card green">
-      <div class="label">今日发�?/div>
+      <div class="label">今日发送</div>
       <div class="value">45 <span style="font-size:14px;font-weight:400;color:#7a8299">/ 100</span></div>
       <div class="sub">目标达成 45%</div>
     </div>
     <div class="card blue">
-      <div class="label">接受�?Accepted</div>
+      <div class="label">接受数 Accepted</div>
       <div class="value" style="color:#4ade80">23</div>
-      <div class="sub">接受�?2.6%</div>
+      <div class="sub">接受率 2.6%</div>
     </div>
     <div class="card purple">
-      <div class="label">累计发�?/div>
+      <div class="label">累计发送</div>
       <div class="value">892</div>
       <div class="sub">KA + 连锁渠道 12</div>
     </div>
     <div class="card orange">
-      <div class="label">画像合规�?/div>
+      <div class="label">画像合规率</div>
       <div class="value" style="color:#4ade80">100%</div>
-      <div class="sub">无设计师角色混入 �?/div>
+      <div class="sub">无设计师角色混入 ✓</div>
     </div>
   </div>
 
@@ -239,10 +243,21 @@ body { font-family: 'Segoe UI', Arial, sans-serif; background: #0f1117; color: #
     <h2>📝 升级日志 Changelog</h2>
     
     <div class="changelog-item">
+      <div class="changelog-version">0.0.2 (2026-04-08)</div>
+      <div class="changelog-date">当前版本</div>
+      <ul class="changelog-list">
+        <li class="add">新增拖拽布局功能，可自由调整卡片顺序</li>
+        <li class="add">布局自动保存到localStorage</li>
+        <li class="add">拖拽时有视觉反馈提示</li>
+        <li class="keep">保留0.0.1所有功能</li>
+      </ul>
+    </div>
+
+    <div class="changelog-item">
       <div class="changelog-version">0.0.1 (2026-04-08)</div>
       <div class="changelog-date">当前版本</div>
       <ul class="changelog-list">
-        <li class="add">新增升级日志模块，记录所有版本变�?/li>
+        <li class="add">新增升级日志模块，记录所有版本变更</li>
         <li class="add">统计卡片添加顶部渐变条，增强视觉层次</li>
         <li class="keep">保留v8.1时区状态条、自动模式开关、平台进度条</li>
         <li class="keep">保留v6.1 Tier分布、关键词排名、行动清单、联系人表格</li>
@@ -251,33 +266,33 @@ body { font-family: 'Segoe UI', Arial, sans-serif; background: #0f1117; color: #
 
     <div class="changelog-item">
       <div class="changelog-version">v8.1 (2026-04-08)</div>
-      <div class="changelog-date">结构恢复�?/div>
+      <div class="changelog-date">结构恢复版</div>
       <ul class="changelog-list">
         <li class="add">新增5大时区实时状态监控条</li>
-        <li class="add">新增智能自动外展模式开�?/li>
-        <li class="add">新增四平台进度卡片（LinkedIn/Facebook/Instagram/Email�?/li>
+        <li class="add">新增智能自动外展模式开关</li>
+        <li class="add">新增四平台进度卡片（LinkedIn/Facebook/Instagram/Email）</li>
         <li class="add">联系人表格新增本地时间列</li>
-        <li class="keep">恢复v6.1核心结构：Tier分布、关键词排名、行动清�?/li>
+        <li class="keep">恢复v6.1核心结构：Tier分布、关键词排名、行动清单</li>
       </ul>
     </div>
 
     <div class="changelog-item">
       <div class="changelog-version">v8.05 (2026-04-08)</div>
-      <div class="changelog-date">融合实验�?/div>
+      <div class="changelog-date">融合实验版</div>
       <ul class="changelog-list">
-        <li class="add">5维统计卡横向布局（今�?接受/累计/合规/待处理）</li>
-        <li class="add">环形进度条显示今日目�?/li>
-        <li class="add">平台卡片可点击筛�?/li>
-        <li class="add">消息编辑�?三平台模�?/li>
+        <li class="add">5维统计卡横向布局（今日/接受/累计/合规/待处理）</li>
+        <li class="add">环形进度条显示今日目标</li>
+        <li class="add">平台卡片可点击筛选</li>
+        <li class="add">消息编辑器+三平台模板</li>
         <li class="fix">尝试融合v6.1和v9.0的UI风格</li>
       </ul>
     </div>
 
     <div class="changelog-item">
       <div class="changelog-version">v6.1 (历史版本)</div>
-      <div class="changelog-date">经典稳定�?/div>
+      <div class="changelog-date">经典稳定版</div>
       <ul class="changelog-list">
-        <li class="keep">Tier 1/2/3 目标画像分布条形�?/li>
+        <li class="keep">Tier 1/2/3 目标画像分布条形图</li>
         <li class="keep">关键词效果排名（带评分，可点击复制）</li>
         <li class="keep">下一步行动清单（带搜索语法）</li>
         <li class="keep">优化建议模块</li>
@@ -307,67 +322,67 @@ body { font-family: 'Segoe UI', Arial, sans-serif; background: #0f1117; color: #
         <div class="tier-track"><div class="tier-fill t3" style="width:60%"></div></div>
         <span class="tier-count" style="color:#a78bfa">15</span>
       </div>
-      <div class="tier-total">总联系人�?25 · 符合画像 25 · 非目标画�?0</div>
+      <div class="tier-total">总联系人数 25 · 符合画像 25 · 非目标画像 0</div>
     </div>
 
     <!-- Keyword Performance -->
     <div class="section" style="grid-column:2/4">
-      <h2>🔑 关键词效果排�?<span style="font-size:10px;color:#6b7280;margin-left:8px">点击复制</span></h2>
+      <h2>🔑 关键词效果排名 <span style="font-size:10px;color:#6b7280;margin-left:8px">点击复制</span></h2>
       <div class="kw-item" onclick="copyKw(this)">
         <div><div class="kw-name">outdoor power station distributor</div><div style="font-size:11px;color:#7a8299">响应8 · 点击45</div></div>
-        <div style="text-align:right"><span class="kw-badge hot">92�?/span> <span class="kw-badge hot">🔥 TOP</span></div>
+        <div style="text-align:right"><span class="kw-badge hot">92分</span> <span class="kw-badge hot">🔥 TOP</span></div>
       </div>
       <div class="kw-item" onclick="copyKw(this)">
         <div><div class="kw-name">portable power station buyer</div><div style="font-size:11px;color:#7a8299">响应6 · 点击38</div></div>
-        <div style="text-align:right"><span class="kw-badge hot">88�?/span></div>
+        <div style="text-align:right"><span class="kw-badge hot">88分</span></div>
       </div>
       <div class="kw-item" onclick="copyKw(this)">
         <div><div class="kw-name">camping gear importer</div><div style="font-size:11px;color:#7a8299">响应5 · 点击32</div></div>
-        <div style="text-align:right"><span class="kw-badge good">85�?/span></div>
+        <div style="text-align:right"><span class="kw-badge good">85分</span></div>
       </div>
       <div class="kw-item" onclick="copyKw(this)">
         <div><div class="kw-name">RV accessories distributor</div><div style="font-size:11px;color:#7a8299">响应4 · 点击28</div></div>
-        <div style="text-align:right"><span class="kw-badge good">82�?/span></div>
+        <div style="text-align:right"><span class="kw-badge good">82分</span></div>
       </div>
       <div class="kw-item" onclick="copyKw(this)">
         <div><div class="kw-name">electronics wholesale buyer</div><div style="font-size:11px;color:#7a8299">响应3 · 点击25</div></div>
-        <div style="text-align:right"><span class="kw-badge ok">78�?/span></div>
+        <div style="text-align:right"><span class="kw-badge ok">78分</span></div>
       </div>
       <div class="kw-item" onclick="copyKw(this)">
         <div><div class="kw-name">retail chain outdoor category</div><div style="font-size:11px;color:#7a8299">响应3 · 点击22</div></div>
-        <div style="text-align:right"><span class="kw-badge ok">75�?/span></div>
+        <div style="text-align:right"><span class="kw-badge ok">75分</span></div>
       </div>
     </div>
   </div>
 
-  <div class="no-excluded">�?无需排除：当�?5名联系人均符合目标画像，无设计师/Creative Director混入</div>
+  <div class="no-excluded">✅ 无需排除：当前25名联系人均符合目标画像，无设计师/Creative Director混入</div>
 
   <!-- Next Actions -->
   <div class="grid">
     <div class="section">
-      <h2>📋 下一步行动（下一小时�?/h2>
+      <h2>📋 下一步行动（下一小时）</h2>
       <div class="action-item">
         <span class="tag tag-t1">TIER 1</span>
         <span class="company">Backcountry.com</span>
-        <div class="role">CEO / President / Founder �?户外顶级零售�?/div>
+        <div class="role">CEO / President / Founder — 户外顶级零售商</div>
         <div class="search">site:linkedin.com "Backcountry" CEO OR President OR Founder</div>
       </div>
       <div class="action-item">
         <span class="tag tag-t1">TIER 1</span>
         <span class="company">Costco Wholesale</span>
-        <div class="role">VP Merchandising / Senior Buyer Outdoor �?高客单价品类</div>
+        <div class="role">VP Merchandising / Senior Buyer Outdoor — 高客单价品类</div>
         <div class="search">site:linkedin.com "Costco" VP Merchandising outdoor OR camping</div>
       </div>
       <div class="action-item">
         <span class="tag tag-t2">TIER 2</span>
         <span class="company">Home Depot</span>
-        <div class="role">VP Merchandising / Director Product Development �?家清+户外双线</div>
+        <div class="role">VP Merchandising / Director Product Development — 家清+户外双线</div>
         <div class="search">site:linkedin.com "Home Depot" VP Merchandising OR Director Product Development outdoor</div>
       </div>
       <div class="action-item">
         <span class="tag tag-t3">TIER 3</span>
         <span class="company">O'Reilly Auto Parts</span>
-        <div class="role">Category Manager Automotive Accessories �?轮胎气泵核心渠道</div>
+        <div class="role">Category Manager Automotive Accessories — 轮胎气泵核心渠道</div>
         <div class="search">site:linkedin.com "O'Reilly" Category Manager automotive</div>
       </div>
     </div>
@@ -376,16 +391,16 @@ body { font-family: 'Segoe UI', Arial, sans-serif; background: #0f1117; color: #
     <div class="tips" style="grid-column:2/4">
       <h2>📈 优化建议</h2>
       <ul>
-        <li><strong>Tier 1 + 关键词联�?/strong>：用 "CEO outdoor brand" + "Founder camping equipment" 搜索，直接触达创始人决策层，接受率预计高于平�?�?/li>
-        <li><strong>补强欧洲/澳洲渠道</strong>：当�?25 名联系人全部为北美渠道，Decathlon / BCF / Anaconda 等头部尚未覆盖，建议�?Day 5/11 搜索周期中优先插�?/li>
-        <li><strong>跟进已Accepted客户</strong>：Bass Pro / Dick's / Walmart / REI 均有Accepted状态，需推进下一轮产品资�?报价沟�?/li>
+        <li><strong>Tier 1 + 关键词联动</strong>：用 "CEO outdoor brand" + "Founder camping equipment" 搜索，直接触达创始人决策层，接受率预计高于平均2倍</li>
+        <li><strong>补强欧洲/澳洲渠道</strong>：当前 25 名联系人全部为北美渠道，Decathlon / BCF / Anaconda 等头部尚未覆盖，建议在 Day 5/11 搜索周期中优先插入</li>
+        <li><strong>跟进已Accepted客户</strong>：Bass Pro / Dick's / Walmart / REI 均有Accepted状态，需推进下一轮产品资料+报价沟通</li>
       </ul>
       <div style="margin-top:20px">
         <h2 style="color:#fff;font-size:14px;font-weight:600;margin-bottom:10px;text-transform:uppercase;letter-spacing:0.5px;border-bottom:1px solid #2a2f3e;padding-bottom:10px">🔗 关键链接</h2>
         <div style="font-size:13px;line-height:2">
-          <div>📊 看板�?a href="file:///C:/Users/23889/.qclaw/workspace/outreach_dashboard.html" style="color:#60a5fa">outreach_dashboard.html</a></div>
-          <div>🌐 线上�?a href="https://1-rnz9.vercel.app" style="color:#60a5fa">https://1-rnz9.vercel.app</a></div>
-          <div>📁 数据�?a href="file:///C:/Users/23889/.qclaw/workspace/outreach_data.json" style="color:#60a5fa">outreach_data.json</a></div>
+          <div>📊 看板：<a href="file:///C:/Users/23889/.qclaw/workspace/outreach_dashboard.html" style="color:#60a5fa">outreach_dashboard.html</a></div>
+          <div>🌐 线上：<a href="https://1-rnz9.vercel.app" style="color:#60a5fa">https://1-rnz9.vercel.app</a></div>
+          <div>📁 数据：<a href="file:///C:/Users/23889/.qclaw/workspace/outreach_data.json" style="color:#60a5fa">outreach_data.json</a></div>
         </div>
       </div>
     </div>
@@ -393,7 +408,7 @@ body { font-family: 'Segoe UI', Arial, sans-serif; background: #0f1117; color: #
 
   <!-- Full Contact Table -->
   <div class="section" style="margin-bottom:20px">
-    <h2>📇 联系人总览�?5人）</h2>
+    <h2>📇 联系人总览（25人）</h2>
     <div style="overflow-x:auto">
     <table class="contacts-table">
       <thead>
@@ -403,9 +418,9 @@ body { font-family: 'Segoe UI', Arial, sans-serif; background: #0f1117; color: #
           <th>公司</th>
           <th>职位</th>
           <th>Tier</th>
-          <th>优先�?/th>
-          <th>状�?/th>
-          <th>关键�?/th>
+          <th>优先级</th>
+          <th>状态</th>
+          <th>关键词</th>
           <th>本地时间</th>
         </tr>
       </thead>
@@ -414,7 +429,7 @@ body { font-family: 'Segoe UI', Arial, sans-serif; background: #0f1117; color: #
     </div>
   </div>
 
-  <div class="refresh-bar">�?数据每小时自动更�?· Cron Job #2828e9ed · Flextail & Vollyc · 2026</div>
+  <div class="refresh-bar">⏰ 数据每小时自动更新 · Cron Job #2828e9ed · Flextail & Vollyc · 2026</div>
 </div>
 <script>
 var autoMode = false;
@@ -460,7 +475,7 @@ function renderTzBar(){
   var html=timezones.map(t=>{
     var time=getLocalTime(t.tz);
     var work=isWork(t.tz,t.work);
-    return `<div class="tz-item"><span class="flag">${t.flag}</span><span class="name">${t.name}</span><span class="time">${time}</span><span class="status ${work?'working':'closed'}">${work?'🟢 工作':'�?休息'}</span></div>`;
+    return `<div class="tz-item"><span class="flag">${t.flag}</span><span class="name">${t.name}</span><span class="time">${time}</span><span class="status ${work?'working':'closed'}">${work?'🟢 工作':'⚫ 休息'}</span></div>`;
   }).join('');
   document.getElementById('tzBar').innerHTML=html;
 }
@@ -483,7 +498,7 @@ function renderContacts(){
     var tierClass=c.t==='t1'?'t1':c.t==='t2'?'t2':'t3';
     var tierText=c.t==='t1'?'Tier 1':c.t==='t2'?'Tier 2':'Tier 3';
     var prioClass=c.p==='high'?'priority-h':c.p==='medium'?'priority-m':'priority-l';
-    var prioText=c.p==='high'?'�?:c.p==='medium'?'�?:'�?;
+    var prioText=c.p==='high'?'高':c.p==='medium'?'中':'低';
     var statusClass=c.s==='accepted'?'status-accepted':c.s==='pending'?'status-pending':'status-rejected';
     var statusText=c.s==='accepted'?'Accepted':c.s==='pending'?'Pending':'Rejected';
     var localTime=getLocalTime(c.tz);
@@ -497,7 +512,89 @@ function init(){
   renderTzBar();
   setInterval(renderTzBar,60000);
   renderContacts();
+  initDrag();
 }
+
+// 拖拽功能 - v0.0.2
+function initDrag(){
+  var containers=document.querySelectorAll('.grid, .cards, .platform-row, .changelog');
+  var dragEl=null;
+  
+  containers.forEach(function(container){
+    container.addEventListener('dragstart',function(e){
+      if(e.target.classList.contains('section')||e.target.classList.contains('card')||e.target.classList.contains('platform-card')){
+        dragEl=e.target;
+        e.target.classList.add('dragging');
+        e.dataTransfer.effectAllowed='move';
+      }
+    });
+    container.addEventListener('dragend',function(e){
+      if(dragEl){
+        dragEl.classList.remove('dragging');
+        dragEl=null;
+        saveLayout();
+      }
+    });
+    container.addEventListener('dragover',function(e){
+      e.preventDefault();
+      e.dataTransfer.dropEffect='move';
+      var afterEl=getDragAfterElement(container,e.clientY);
+      if(dragEl&&afterEl!=null){
+        container.insertBefore(dragEl,afterEl);
+      }else if(dragEl){
+        container.appendChild(dragEl);
+      }
+    });
+  });
+  
+  // 设置draggable
+  document.querySelectorAll('.section, .card, .platform-card').forEach(function(el){
+    el.setAttribute('draggable','true');
+  });
+  
+  // 显示提示
+  var hint=document.createElement('div');
+  hint.className='drag-hint';
+  hint.textContent='拖拽卡片调整布局';
+  document.body.appendChild(hint);
+  setTimeout(function(){hint.classList.add('show');},1000);
+  setTimeout(function(){hint.classList.remove('show');},4000);
+}
+
+function getDragAfterElement(container,y){
+  var els=[].filter.call(container.querySelectorAll('.section, .card, .platform-card'),function(el){return!el.classList.contains('dragging');});
+  return els.reduce(function(closest,el){
+    var box=el.getBoundingClientRect();
+    var offset=y-box.top-box.height/2;
+    if(offset<0&&offset>closest.offset){return{offset:offset,el:el};}
+    return closest;
+  },{offset:Number.NEGATIVE_INFINITY}).el;
+}
+
+function saveLayout(){
+  var layout={};
+  document.querySelectorAll('.grid, .cards, .platform-row').forEach(function(c,i){
+    layout[c.className]=Array.from(c.children).map(function(el){return el.className;});
+  });
+  localStorage.setItem('dashboardLayout',JSON.stringify(layout));
+}
+
+function loadLayout(){
+  var saved=localStorage.getItem('dashboardLayout');
+  if(saved){
+    var layout=JSON.parse(saved);
+    Object.keys(layout).forEach(function(cls){
+      var container=document.querySelector('.'+cls.split(' ')[0]);
+      if(container&&layout[cls]){
+        layout[cls].forEach(function(childClass){
+          var child=container.querySelector('.'+childClass);
+          if(child)container.appendChild(child);
+        });
+      }
+    });
+  }
+}
+
 init();
 </script>
 </body>

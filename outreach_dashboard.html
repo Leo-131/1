@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Flextail Outreach Dashboard 0.0.1</title>
+<title>Flextail Outreach Dashboard 0.0.2</title>
 <style>
 * { margin: 0; padding: 0; box-sizing: border-box; }
 body { font-family: 'Segoe UI', Arial, sans-serif; background: #0f1117; color: #e4e8f0; min-height: 100vh; padding: 24px; }
@@ -146,13 +146,20 @@ body { font-family: 'Segoe UI', Arial, sans-serif; background: #0f1117; color: #
 .no-excluded { color: #4ade80; font-size: 13px; text-align: center; padding: 20px; background: #22c55e08; border: 1px solid #22c55e22; border-radius: 8px; margin-bottom: 20px; }
 .refresh-bar { text-align: center; padding: 12px; font-size: 12px; color: #4ade80; }
 @media (max-width: 900px) { .grid { grid-template-columns: 1fr; } .platform-row { grid-template-columns: repeat(2, 1fr); } }
+
+/* 拖拽功能 - v0.0.2新增 */
+.section, .card, .platform-card, .changelog, .tips { cursor: move; transition: transform 0.2s, box-shadow 0.2s; }
+.section.dragging, .card.dragging, .platform-card.dragging, .changelog.dragging, .tips.dragging { opacity: 0.6; transform: scale(1.02); box-shadow: 0 8px 24px rgba(0,0,0,0.4); }
+.section:hover, .card:hover, .platform-card:hover { box-shadow: 0 2px 8px rgba(0,0,0,0.2); }
+.drag-hint { position: fixed; bottom: 20px; left: 50%; transform: translateX(-50%); background: rgba(74,222,128,0.15); border: 1px solid rgba(74,222,128,0.3); color: #4ade80; padding: 8px 16px; border-radius: 20px; font-size: 12px; opacity: 0; transition: opacity 0.3s; pointer-events: none; }
+.drag-hint.show { opacity: 1; }
 </style>
 </head>
 <body>
 <div class="container">
   <div class="header">
     <div>
-      <h1>⚡ Flextail Outreach Dashboard <span class="badge badge-v">0.0.1</span></h1>
+      <h1>⚡ Flextail Outreach Dashboard <span class="badge badge-v">0.0.2</span></h1>
     </div>
     <div class="meta">
       <div><span class="badge badge-live">● LIVE</span> <span id="clock"></span></div>
@@ -235,6 +242,17 @@ body { font-family: 'Segoe UI', Arial, sans-serif; background: #0f1117; color: #
   <div class="changelog">
     <h2>📝 升级日志 Changelog</h2>
     
+    <div class="changelog-item">
+      <div class="changelog-version">0.0.2 (2026-04-08)</div>
+      <div class="changelog-date">当前版本</div>
+      <ul class="changelog-list">
+        <li class="add">新增拖拽布局功能，可自由调整卡片顺序</li>
+        <li class="add">布局自动保存到localStorage</li>
+        <li class="add">拖拽时有视觉反馈提示</li>
+        <li class="keep">保留0.0.1所有功能</li>
+      </ul>
+    </div>
+
     <div class="changelog-item">
       <div class="changelog-version">0.0.1 (2026-04-08)</div>
       <div class="changelog-date">当前版本</div>
@@ -494,7 +512,89 @@ function init(){
   renderTzBar();
   setInterval(renderTzBar,60000);
   renderContacts();
+  initDrag();
 }
+
+// 拖拽功能 - v0.0.2
+function initDrag(){
+  var containers=document.querySelectorAll('.grid, .cards, .platform-row, .changelog');
+  var dragEl=null;
+  
+  containers.forEach(function(container){
+    container.addEventListener('dragstart',function(e){
+      if(e.target.classList.contains('section')||e.target.classList.contains('card')||e.target.classList.contains('platform-card')){
+        dragEl=e.target;
+        e.target.classList.add('dragging');
+        e.dataTransfer.effectAllowed='move';
+      }
+    });
+    container.addEventListener('dragend',function(e){
+      if(dragEl){
+        dragEl.classList.remove('dragging');
+        dragEl=null;
+        saveLayout();
+      }
+    });
+    container.addEventListener('dragover',function(e){
+      e.preventDefault();
+      e.dataTransfer.dropEffect='move';
+      var afterEl=getDragAfterElement(container,e.clientY);
+      if(dragEl&&afterEl!=null){
+        container.insertBefore(dragEl,afterEl);
+      }else if(dragEl){
+        container.appendChild(dragEl);
+      }
+    });
+  });
+  
+  // 设置draggable
+  document.querySelectorAll('.section, .card, .platform-card').forEach(function(el){
+    el.setAttribute('draggable','true');
+  });
+  
+  // 显示提示
+  var hint=document.createElement('div');
+  hint.className='drag-hint';
+  hint.textContent='拖拽卡片调整布局';
+  document.body.appendChild(hint);
+  setTimeout(function(){hint.classList.add('show');},1000);
+  setTimeout(function(){hint.classList.remove('show');},4000);
+}
+
+function getDragAfterElement(container,y){
+  var els=[].filter.call(container.querySelectorAll('.section, .card, .platform-card'),function(el){return!el.classList.contains('dragging');});
+  return els.reduce(function(closest,el){
+    var box=el.getBoundingClientRect();
+    var offset=y-box.top-box.height/2;
+    if(offset<0&&offset>closest.offset){return{offset:offset,el:el};}
+    return closest;
+  },{offset:Number.NEGATIVE_INFINITY}).el;
+}
+
+function saveLayout(){
+  var layout={};
+  document.querySelectorAll('.grid, .cards, .platform-row').forEach(function(c,i){
+    layout[c.className]=Array.from(c.children).map(function(el){return el.className;});
+  });
+  localStorage.setItem('dashboardLayout',JSON.stringify(layout));
+}
+
+function loadLayout(){
+  var saved=localStorage.getItem('dashboardLayout');
+  if(saved){
+    var layout=JSON.parse(saved);
+    Object.keys(layout).forEach(function(cls){
+      var container=document.querySelector('.'+cls.split(' ')[0]);
+      if(container&&layout[cls]){
+        layout[cls].forEach(function(childClass){
+          var child=container.querySelector('.'+childClass);
+          if(child)container.appendChild(child);
+        });
+      }
+    });
+  }
+}
+
 init();
 </script>
 </body>
