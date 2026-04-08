@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Flextail · 全渠道客户开发看板</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Segoe UI',-apple-system,sans-serif;background:#0f1117;color:#e2e8f0;min-height:100vh;padding:20px}
+.container{max-width:1600px;margin:0 auto}
+.header{display:flex;justify-content:space-between;align-items:center;margin-bottom:20px;padding-bottom:16px;border-bottom:1px solid rgba(255,255,255,0.06);flex-wrap:wrap;gap:10px}
+.header h1{font-size:1.5em;font-weight:700;background:linear-gradient(90deg,#60a5fa,#34d399);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.header p{font-size:0.8em;color:#64748b;margin-top:2px}
+.header-right{display:flex;gap:8px;flex-wrap:wrap}
+.pill{padding:4px 12px;border-radius:16px;font-size:0.72em;font-weight:600}
+.pill-blue{background:rgba(96,165,250,0.15);color:#60a5fa}
+.pill-orange{background:rgba(251,146,60,0.15);color:#fb923c}
+.pill-green{background:rgba(52,211,153,0.15);color:#34d399}
+.platform-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:20px}
+@media(max-width:1200px){.platform-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:600px){.platform-grid{grid-template-columns:1fr}}
+.platform-card{background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.06);border-radius:12px;padding:16px;transition:all .2s}
+.platform-card:hover{background:rgba(255,255,255,0.05);transform:translateY(-2px)}
+.platform-card.active{border-color:rgba(52,211,153,0.4);background:rgba(52,211,153,0.05)}
+.platform-header{display:flex;align-items:center;gap:10px;margin-bottom:12px}
+.platform-icon{width:36px;height:36px;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:1.2em}
+.platform-icon.linkedin{background:rgba(10,102,194,0.2);color:#0a66c2}
+.platform-icon.facebook{background:rgba(24,119,242,0.2);color:#1877f2}
+.platform-icon.instagram{background:linear-gradient(135deg,#f09433,#e6683c,#dc2743,#cc2366,#bc1888);color:#fff}
+.platform-icon.email{background:rgba(234,67,53,0.2);color:#ea4335}
+.platform-title{font-size:0.9em;font-weight:600}
+.platform-status{font-size:0.65em;padding:2px 8px;border-radius:10px}
+.platform-status.online{background:rgba(52,211,153,0.15);color:#34d399}
+.platform-status.pending{background:rgba(251,146,60,0.15);color:#fb923c}
+.platform-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-bottom:12px}
+.platform-stat{text-align:center;padding:8px;background:rgba(0,0,0,0.2);border-radius:6px}
+.platform-stat .val{font-size:1.2em;font-weight:700}
+.platform-stat .lbl{font-size:0.6em;color:#64748b;margin-top:2px}
+.v-green{color:#34d399}.v-blue{color:#60a5fa}.v-orange{color:#fb923c}
+.platform-actions{display:flex;gap:6px;flex-wrap:wrap}
+.platform-btn{flex:1;min-width:60px;padding:6px 10px;border:none;border-radius:6px;font-size:0.65em;font-weight:600;cursor:pointer;transition:all .2s}
+.platform-btn.primary{background:linear-gradient(135deg,#60a5fa,#3b82f6);color:#fff}
+.platform-btn.secondary{background:rgba(255,255,255,0.08);color:#94a3b8;border:1px solid rgba(255,255,255,0.1)}
+.workflow-section{background:rgba(255,255,255,0.02);border:1px solid rgba(255,255,255,0.06);border-radius:12px;padding:16px;margin-bottom:20px}
+.workflow-title{font-size:0.9em;font-weight:600;color:#94a3b8;margin-bottom:12px}
+.workflow-steps{display:flex;gap:8px;overflow-x:auto;padding-bottom:8px}
+.workflow-step{flex-shrink:0;width:140px;padding:12px;background:rgba(0,0,0,0.2);border-radius:8px;border:1px solid rgba(255,255,255,0.06)}
+.workflow-step.active{border-color:rgba(96,165,250,0.4);background:rgba(96,165,250,0.08)}
+.workflow-step.completed{border-color:rgba(52,211,153,0.4);background:rgba(52,211,153,0.08)}
+.step-num{width:20px;height:20px;border-radius:50%;background:rgba(255,255,255,0.1);display:flex;align-items:center;justify-content:center;font-size:0.65em;font-weight:700;margin-bottom:8px}
+.step-num.active{background:#60a5fa;color:#fff}
+.step-num.completed{background:#34d399;color:#fff}
+.step-name{font-size:0.72em;font-weight:600;margin-bottom:4px}
+.step-desc{font-size:0.6em;color:#64748b;line-height:1.4}
+.main-grid{display:grid;grid-template-columns:1fr 320px;gap:16px}
+@media(max-width:1000px){.main-grid{grid-template-columns:1fr}}
+.stats-bar{display:grid;grid-template-columns:repeat(5,1fr);gap:10px;margin-bottom:16px}
+@media(max-width:800px){.stats-bar{grid-template-columns:repeat(3,1fr)}}
+.stat-box{background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.07);border-radius:10px;padding:14px 16px}
+.stat-box .val{font-size:1.6em;font-weight:700}
+.stat-box .lbl{font-size:0.68em;color:#64748b;text-transform:uppercase;letter-spacing:.5px;margin-top:3px}
+.tab-bar{display:flex;gap:5px;margin-bottom:16px;flex-wrap:wrap}
+.tab{padding:7px 14px;border-radius:8px;font-size:0.78em;font-weight:600;cursor:pointer;transition:all .2s;background:rgba(255,255,255,0.05);color:#64748b;border:1px solid rgba(255,255,255,0.06)}
+.tab:hover{background:rgba(255,255,255,0.08);color:#94a3b8}
+.tab.active{background:rgba(96,165,250,0.15);color:#60a5fa;border-color:rgba(96,165,250,0.4)}
+.card{background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.06);border-radius:12px;padding:16px;margin-bottom:16px}
+.card-title{font-size:0.9em;font-weight:600;color:#94a3b8;margin-bottom:12px}
+.contact-list{display:flex;flex-direction:column;gap:6px;max-height:500px;overflow-y:auto}
+.contact-row{display:flex;align-items:center;gap:10px;padding:10px 12px;background:rgba(255,255,255,0.025);border-radius:8px;border:1px solid rgba(255,255,255,0.04);cursor:pointer}
+.contact-row:hover{background:rgba(255,255,255,0.05)}
+.avatar{width:32px;height:32px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:0.75em;font-weight:700;color:#fff;background:linear-gradient(135deg,#60a5fa,#34d399)}
+.name{font-size:0.82em;font-weight:600;color:#e2e8f0}
+.company{font-size:0.68em;color:#64748b}
+.platform-tag{font-size:0.55em;padding:1px 6px;border-radius:3px;font-weight:700}
+.platform-tag.linkedin{background:rgba(10,102,194,0.3);color:#60a5fa}
+.status-pill{font-size:0.6em;padding:2px 8px;border-radius:10px;font-weight:600}
+.status-pending{background:rgba(251,146,60,0.15);color:#fb923c}
+.status-sent{background:rgba(96,165,250,0.15);color:#60a5fa}
+.sidebar{display:flex;flex-direction:column;gap:12px}
+.progress-wrap{display:flex;align-items:center;gap:14px;padding:12px;background:rgba(255,255,255,0.025);border-radius:8px}
+.progress-wrap .title{font-size:0.8em;font-weight:600;color:#94a3b8}
+.template-item{padding:10px;background:rgba(0,0,0,0.2);border-radius:6px;border-left:3px solid #60a5fa;cursor:pointer;margin-bottom:8px}
+.template-item .title{font-size:0.72em;font-weight:600;color:#94a3b8}
+.template-item .preview{font-size:0.6em;color:#64748b}
+.kw-section{margin-bottom:12px}
+.kw-section-title{font-size:0.68em;font-weight:600;color:#60a5fa;margin-bottom:6px}
+.kw-tags{display:flex;flex-wrap:wrap;gap:4px}
+.kw-tag{display:inline-block;padding:3px 8px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.06);border-radius:4px;font-size:0.58em;color:#94a3b8;cursor:pointer}
+.action-item{display:flex;align-items:center;gap:6px;padding:7px 10px;background:rgba(255,255,255,0.02);border-radius:6px;border-left:2px solid #fb923c;margin-bottom:4px}
+.a-text{flex:1;font-size:0.72em;color:#94a3b8}
+.a-tag{font-size:0.58em;padding:1px 5px;border-radius:3px;background:rgba(251,146,60,0.15);color:#fb923c}
+.refresh-btn{display:block;width:100%;margin-top:10px;padding:10px 24px;background:linear-gradient(135deg,#34d399,#10b981);border:none;border-radius:8px;color:#fff;font-weight:600;cursor:pointer;font-size:0.8em}
+.footer{text-align:center;color:#334155;font-size:0.68em;margin-top:10px}
+</style>
+</head>
+<body>
+<div class="container">
+<div class="header">
+  <div>
+    <h1>Flextail · 全渠道客户开发看板</h1>
+    <p>LinkedIn + Facebook + Instagram · 自动化工作流 · <b style="color:#34d399">每日目标 100 条</b></p>
+  </div>
+  <div class="header-right">
+    <span class="pill pill-blue">v8.0 Multi-Platform</span>
+    <span class="pill pill-orange">目标 100/天</span>
+    <span class="pill pill-green">🟢 运行中</span>
+  </div>
+</div>
+
+<div class="platform-grid">
+  <div class="platform-card active">
+    <div class="platform-header">
+      <div class="platform-icon linkedin">in</div>
+      <div><div class="platform-title">LinkedIn</div><span class="platform-status online">● Leo Liu</span></div>
+    </div>
+    <div class="platform-stats">
+      <div class="platform-stat"><div class="val v-blue">9</div><div class="lbl">已发送</div></div>
+      <div class="platform-stat"><div class="val v-green">0</div><div class="lbl">已接受</div></div>
+      <div class="platform-stat"><div class="val v-orange">8</div><div class="lbl">Pending</div></div>
+    </div>
+    <div class="platform-actions">
+      <button class="platform-btn primary">🚀 开始外展</button>
+      <button class="platform-btn secondary">🔍 搜索</button>
+    </div>
+  </div>
+
+  <div class="platform-card active">
+    <div class="platform-header">
+      <div class="platform-icon facebook">f</div>
+      <div><div class="platform-title">Facebook</div><span class="platform-status online">● Leo Liu</span></div>
+    </div>
+    <div class="platform-stats">
+      <div class="platform-stat"><div class="val v-blue">3</div><div class="lbl">已加群组</div></div>
+      <div class="platform-stat"><div class="val v-green">0</div><div class="lbl">已发帖</div></div>
+      <div class="platform-stat"><div class="val v-orange">0</div><div class="lbl">已私信</div></div>
+    </div>
+    <div class="platform-actions">
+      <button class="platform-btn primary">🚀 群组外展</button>
+      <button class="platform-btn secondary">🔍 找群组</button>
+    </div>
+  </div>
+
+  <div class="platform-card active">
+    <div class="platform-header">
+      <div class="platform-icon instagram">📷</div>
+      <div><div class="platform-title">Instagram</div><span class="platform-status online">● flextail001</span></div>
+    </div>
+    <div class="platform-stats">
+      <div class="platform-stat"><div class="val v-blue">1</div><div class="lbl">标签搜索</div></div>
+      <div class="platform-stat"><div class="val v-green">0</div><div class="lbl">已私信</div></div>
+      <div class="platform-stat"><div class="val v-orange">0</div><div class="lbl">已关注</div></div>
+    </div>
+    <div class="platform-actions">
+      <button class="platform-btn primary">🚀 DM 外展</button>
+      <button class="platform-btn secondary">🔍 搜标签</button>
+    </div>
+  </div>
+
+  <div class="platform-card">
+    <div class="platform-header">
+      <div class="platform-icon email">✉</div>
+      <div><div class="platform-title">Email</div><span class="platform-status pending">○ 待配置</span></div>
+    </div>
+    <div class="platform-stats">
+      <div class="platform-stat"><div class="val v-blue">0</div><div class="lbl">已发送</div></div>
+      <div class="platform-stat"><div class="val v-green">0</div><div class="lbl">已打开</div></div>
+      <div class="platform-stat"><div class="val v-orange">0</div><div class="lbl">已回复</div></div>
+    </div>
+    <div class="platform-actions">
+      <button class="platform-btn secondary">⚙️ 配置邮箱</button>
+    </div>
+  </div>
+</div>
+
+<div class="workflow-section">
+  <div class="workflow-title">📊 外展工作流 (参考 SalesRobot)</div>
+  <div class="workflow-steps">
+    <div class="workflow-step completed"><div class="step-num completed">✓</div><div class="step-name">1. 目标筛选</div><div class="step-desc">搜索关键词<br>筛选优质线索</div></div>
+    <div class="workflow-step completed"><div class="step-num completed">✓</div><div class="step-name">2. 账号登录</div><div class="step-desc">三平台登录<br>验证账号状态</div></div>
+    <div class="workflow-step active"><div class="step-num active">3</div><div class="step-name">3. 批量外展</div><div class="step-desc">发送连接/DM<br>个性化消息</div></div>
+    <div class="workflow-step"><div class="step-num">4</div><div class="step-name">4. 跟进回复</div><div class="step-desc">监控消息<br>及时回复</div></div>
+    <div class="workflow-step"><div class="step-num">5</div><div class="step-name">5. 转化成交</div><div class="step-desc">预约会议<br>推进合作</div></div>
+  </div>
+</div>
+
+<div class="main-grid">
+<div>
+  <div class="stats-bar">
+    <div class="stat-box"><div class="val v-green">9</div><div class="lbl">今日总发送</div></div>
+    <div class="stat-box"><div class="val v-blue">9</div><div class="lbl">LinkedIn</div></div>
+    <div class="stat-box"><div class="val v-orange">0</div><div class="lbl">Facebook</div></div>
+    <div class="stat-box"><div class="val" style="color:#a78bfa">0</div><div class="lbl">Instagram</div></div>
+    <div class="stat-box"><div class="val" style="color:#f87171">91</div><div class="lbl">剩余目标</div></div>
+  </div>
+
+  <div class="tab-bar">
+    <div class="tab active">全部 <span class="tab-count">9</span></div>
+    <div class="tab">LinkedIn <span class="tab-count">9</span></div>
+    <div class="tab">Facebook <span class="tab-count">0</span></div>
+    <div class="tab">Instagram <span class="tab-count">0</span></div>
+  </div>
+
+  <div class="card">
+    <div class="card-title">📋 外展记录</div>
+    <div class="contact-list">
+      <div class="contact-row"><div class="avatar">W</div><div class="info"><div class="name">Whitney La Ruffa</div><div class="company">Black Dog Outdoors · Founder</div></div><div><span class="platform-tag linkedin">LinkedIn</span><span class="status-pill status-sent">✓ 已发送</span></div></div>
+      <div class="contact-row"><div class="avatar">K</div><div class="info"><div class="name">Kevin Kaiser</div><div class="company">EzyPath Consulting · Founder</div></div><div><span class="platform-tag linkedin">LinkedIn</span><span class="status-pill status-pending">⏳ Pending</span></div></div>
+      <div class="contact-row"><div class="avatar">T</div><div class="info"><div class="name">Thomas Lange</div><div class="company">Independent · Intl Commercial Exec</div></div><div><span class="platform-tag linkedin">LinkedIn</span><span class="status-pill status-pending">⏳ Pending</span></div></div>
+      <div class="contact-row"><div class="avatar">I</div><div class="info"><div class="name">Ian Atkinson</div><div class="company">GearJunkie · Writer</div></div><div><span class="platform-tag linkedin">LinkedIn</span><span class="status-pill status-pending">⏳ Pending</span></div></div>
+      <div class="contact-row"><div class="avatar">W</div><div class="info"><div class="name">Will Mott ⭐</div><div class="company">Fenix Outdoor · National Sales Manager</div></div><div><span class="platform-tag linkedin">LinkedIn</span><span class="status-pill status-pending">⏳ Pending</span></div></div>
+    </div>
+  </div>
+</div>
+
+<div class="sidebar">
+  <div class="card">
+    <div class="card-title">📊 今日进度</div>
+    <div class="progress-wrap">
+      <svg width="64" height="64" viewBox="0 0 64 64"><circle cx="32" cy="32" r="24" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="6"/><circle cx="32" cy="32" r="24" fill="none" stroke="#34d399" stroke-width="6" stroke-linecap="round" stroke-dasharray="150.8" stroke-dashoffset="136" transform="rotate(-90 32 32)"/></svg>
+      <div><div class="title">今日发送进度</div><div style="font-size:0.7em;color:#64748b">9 / 100 条</div><div style="color:#fb923c;font-weight:600;font-size:0.72em">还差 91 条</div></div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-title">💬 话术模板</div>
+    <div class="template-item"><div class="title">LinkedIn 连接请求</div><div class="preview">Hi [Name], I noticed your background in outdoor industry...</div></div>
+    <div class="template-item"><div class="title">Facebook 群组发帖</div><div class="preview">🎉 Looking for outdoor gear distributors! Flextail Gear...</div></div>
+    <div class="template-item"><div class="title">Instagram DM</div><div class="preview">Hey! Love your outdoor content 🏕️ We're Flextail Gear...</div></div>
+  </div>
+
+  <div class="card">
+    <div class="card-title">🔍 TOP 关键词</div>
+    <div class="kw-section"><div class="kw-section-title">分销商/代理商</div><div class="kw-tags"><span class="kw-tag">outdoor distributor</span><span class="kw-tag">camping gear</span><span class="kw-tag">wholesale</span></div></div>
+    <div class="kw-section"><div class="kw-section-title">采购/买手</div><div class="kw-tags"><span class="kw-tag">buyer outdoor</span><span class="kw-tag">purchasing manager</span></div></div>
+  </div>
+
+  <div class="card">
+    <div class="card-title">✅ 下一步行动</div>
+    <div class="action-item"><span class="a-text">LinkedIn 继续发 20 条</span><span class="a-tag">优先</span></div>
+    <div class="action-item"><span class="a-text">Facebook 群组发帖</span><span class="a-tag">进行中</span></div>
+    <div class="action-item"><span class="a-text">Instagram 私信 10 个</span><span class="a-tag">待开始</span></div>
+  </div>
+
+  <button class="refresh-btn">🔄 刷新数据</button>
+</div>
+</div>
+
+<div class="footer">Flextail 全渠道外展系统 · 最后更新: 2026-04-03 21:34</div>
+</div>
+</body>
+</html>

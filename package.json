@@ -1,0 +1,13 @@
+{
+  "name": "outreach-dashboard",
+  "version": "1.0.0",
+  "description": "Flextail & Vollyc 客户开发看板 - Vercel 部署版",
+  "type": "module",
+  "scripts": {
+    "dev": "vercel dev",
+    "deploy": "vercel --prod"
+  },
+  "keywords": ["dashboard", "outreach", "linkedin", "sales"],
+  "author": "Flextail",
+  "license": "MIT"
+}

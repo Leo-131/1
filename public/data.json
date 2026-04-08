@@ -1,0 +1,41 @@
+{
+  "stats": {
+    "total": 47,
+    "linkedin_sent": 32,
+    "today_sent": 18,
+    "daily_target": 100,
+    "linkedin_accepted": 5,
+    "ka_chain_count": 12,
+    "version": "v7.0 Local Data"
+  },
+  "contacts": [
+    {"id": 1, "name": "Alex Chen", "company": "Bass Pro Shops", "role": "Category Manager", "category": "ka", "ka_flag": true, "chain_flag": true, "status": "Pending", "priority": "高", "keyword_used": "retail buyer", "message": "户外电源品类负责人"},
+    {"id": 2, "name": "Maria Garcia", "company": "REI", "role": "Senior Buyer", "category": "camping", "ka_flag": true, "chain_flag": false, "status": "Sent", "priority": "高", "keyword_used": "camping gear", "message": "已发送好友请求"},
+    {"id": 3, "name": "James Wilson", "company": "Dick's Sporting Goods", "role": "Purchasing Director", "category": "ka", "ka_flag": true, "chain_flag": true, "status": "Accepted", "priority": "最高", "keyword_used": "sports retail", "message": "已接受，下周演示"},
+    {"id": 4, "name": "Sophie Martin", "company": "Decathlon", "role": "Outdoor Category Lead", "category": "camping", "ka_flag": true, "chain_flag": false, "status": "Pending", "priority": "高", "keyword_used": "outdoor equipment", "message": "欧洲最大户外零售商"},
+    {"id": 5, "name": "Mike Johnson", "company": "Camping World", "role": "VP Procurement", "category": "rv", "ka_flag": true, "chain_flag": true, "status": "Sent", "priority": "最高", "keyword_used": "RV accessories", "message": "房车配件采购"},
+    {"id": 6, "name": "Emma Brown", "company": "Backcountry", "role": "Gear Buyer", "category": "camping", "ka_flag": false, "chain_flag": false, "status": "Pending", "priority": "中", "keyword_used": "backcountry gear", "message": ""},
+    {"id": 7, "name": "David Lee", "company": "REI Co-op", "role": "Product Manager", "category": "camping", "ka_flag": false, "chain_flag": false, "status": "Sent", "priority": "中", "keyword_used": "co-op member", "message": ""},
+    {"id": 8, "name": "Sarah Kim", "company": "Patagonia", "role": "Account Manager", "category": "camping", "ka_flag": true, "chain_flag": false, "status": "Pending", "priority": "高", "keyword_used": "sustainable outdoor", "message": ""},
+    {"id": 9, "name": "Tom Anderson", "company": "The North Face", "role": "Sales Rep", "category": "camping", "ka_flag": true, "chain_flag": false, "status": "Accepted", "priority": "高", "keyword_used": "mountain sports", "message": "已接受"},
+    {"id": 10, "name": "Lisa Zhang", "company": "VF Corporation", "role": "Global Sourcing", "category": "agent", "ka_flag": true, "chain_flag": true, "status": "Pending", "priority": "最高", "keyword_used": "sourcing manager", "message": "集团采购"},
+    {"id": 11, "name": "John Smith", "company": "L.L.Bean", "role": "Outdoor Buyer", "category": "camping", "ka_flag": true, "chain_flag": false, "status": "Sent", "priority": "高", "keyword_used": "classic outdoor", "message": ""},
+    {"id": 12, "name": "Amy Liu", "company": "Amazon Sports", "role": "Category Manager", "category": "agent", "ka_flag": false, "chain_flag": false, "status": "Pending", "priority": "中", "keyword_used": "Amazon FBA", "message": ""},
+    {"id": 13, "name": "Chris Taylor", "company": "Fleetwood RV", "role": "Product Director", "category": "rv", "ka_flag": true, "chain_flag": false, "status": "Sent", "priority": "高", "keyword_used": "RV manufacturer", "message": ""},
+    {"id": 14, "name": "Rachel White", "company": "Winnebago", "role": "Supply Chain", "category": "rv", "ka_flag": true, "chain_flag": false, "status": "Pending", "priority": "高", "keyword_used": "RV OEM", "message": ""},
+    {"id": 15, "name": "Kevin Park", "company": "Thor Industries", "role": "Purchasing", "category": "rv", "ka_flag": true, "chain_flag": true, "status": "Sent", "priority": "最高", "keyword_used": "RV parts", "message": ""}
+  ],
+  "keyword_performance": {
+    "retail buyer": {"count": 12, "accepted": 2, "score": 85, "label": "retail buyer"},
+    "camping gear": {"count": 8, "accepted": 1, "score": 78, "label": "camping gear"},
+    "RV accessories": {"count": 6, "accepted": 1, "score": 82, "label": "RV accessories"},
+    "outdoor equipment": {"count": 5, "accepted": 1, "score": 75, "label": "outdoor equipment"}
+  },
+  "next_actions": [
+    {"action": "跟进 15 个待处理联系人", "priority": "最高", "status": "进行中"},
+    {"action": "联系 8 个 KA/连锁客户", "priority": "最高", "status": "待处理"},
+    {"action": "使用 TOP30 关键词搜索新客户", "priority": "高", "status": "进行中"},
+    {"action": "今日目标: 再发 82 条", "priority": "高", "status": "进行中"},
+    {"action": "分析回复率，优化消息模板", "priority": "中", "status": "待处理"}
+  ]
+}
