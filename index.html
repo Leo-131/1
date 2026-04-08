@@ -4,72 +4,101 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
-<title>Flextail Outreach Dashboard v0.1.0</title>
+<title>Flextail Outreach Dashboard v0.2.0</title>
 <style>
 * { margin: 0; padding: 0; box-sizing: border-box; }
-:root { --primary: #4ade80; --accent: #3b82f6; --warning: #f59e0b; --bg: #0f1117; --card: #1a1d27; --border: #2a2f3e; --text: #e4e8f0; --muted: #7a8299; }
+:root { --primary: #4ade80; --accent: #3b82f6; --warning: #f59e0b; --danger: #ef4444; --bg: #0f1117; --card: #1a1d27; --border: #2a2f3e; --text: #e4e8f0; --muted: #7a8299; }
 body { font-family: 'Segoe UI', Arial, sans-serif; background: var(--bg); color: var(--text); min-height: 100vh; padding: 20px; }
-.container { max-width: 1600px; margin: 0 auto; }
+.container { max-width: 1800px; margin: 0 auto; }
 
 /* Header */
-.header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 24px; padding-bottom: 16px; border-bottom: 1px solid var(--border); }
+.header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; padding-bottom: 16px; border-bottom: 1px solid var(--border); }
 .header h1 { font-size: 24px; font-weight: 700; }
 .header .meta { text-align: right; font-size: 13px; color: var(--muted); }
-.badge { display: inline-block; padding: 3px 10px; border-radius: 6px; font-size: 11px; font-weight: 600; }
+.badge { display: inline-block; padding: 3px 10px; border-radius: 6px; font-size: 11px; font-weight: 600; margin-left: 6px; }
 .badge-live { background: #16a34a22; color: var(--primary); border: 1px solid #16a34a44; }
-.badge-v { background: #3b82f622; color: var(--accent); border: 1px solid #3b82f644; margin-left: 8px; }
+.badge-v { background: #3b82f622; color: var(--accent); border: 1px solid #3b82f644; }
+.badge-sync { background: #22c55e22; color: #22c55e; border: 1px solid #22c55e44; }
+
+/* Stats Grid - 9 cards from v8.0.3 */
+.stats-grid { display: grid; grid-template-columns: repeat(9, 1fr); gap: 12px; margin-bottom: 20px; }
+.stat-card { background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 16px 12px; text-align: center; position: relative; overflow: hidden; transition: all 0.2s; cursor: pointer; }
+.stat-card:hover { border-color: var(--accent); transform: translateY(-2px); }
+.stat-card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px; }
+.stat-card.green::before { background: linear-gradient(90deg, #22c55e, #4ade80); }
+.stat-card.blue::before { background: linear-gradient(90deg, #3b82f6, #60a5fa); }
+.stat-card.orange::before { background: linear-gradient(90deg, #f59e0b, #fbbf24); }
+.stat-card.purple::before { background: linear-gradient(90deg, #8b5cf6, #a78bfa); }
+.stat-card.red::before { background: linear-gradient(90deg, #ef4444, #f87171); }
+.stat-card .num { font-size: 28px; font-weight: 700; line-height: 1.2; }
+.stat-card .lbl { font-size: 12px; color: var(--muted); margin-top: 4px; }
+.stat-card .sub { font-size: 10px; color: var(--muted); margin-top: 2px; }
+
+/* Platform Tabs */
+.platform-tabs { display: flex; gap: 8px; margin-bottom: 16px; }
+.platform-tab { padding: 8px 16px; border: 1px solid var(--border); background: transparent; color: var(--muted); border-radius: 8px; font-size: 13px; cursor: pointer; transition: all 0.2s; display: flex; align-items: center; gap: 6px; }
+.platform-tab:hover { border-color: var(--muted); }
+.platform-tab.active { background: var(--accent); border-color: var(--accent); color: #fff; }
+
+/* Module Tabs */
+.module-tabs { display: flex; gap: 6px; margin-bottom: 16px; flex-wrap: wrap; }
+.module-tab { padding: 8px 14px; background: var(--card); border: 1px solid var(--border); border-radius: 6px; font-size: 12px; cursor: pointer; transition: all 0.2s; }
+.module-tab:hover { border-color: var(--accent); }
+.module-tab.active { background: var(--accent); border-color: var(--accent); color: #fff; }
+.module-tab .new { font-size: 9px; padding: 1px 4px; border-radius: 3px; background: var(--danger); color: #fff; margin-left: 4px; }
+
+/* Main Content Grid */
+.content-grid { display: grid; grid-template-columns: 1fr 320px; gap: 20px; }
+
+/* Left Column */
+.left-col { display: flex; flex-direction: column; gap: 16px; }
+
+/* Right Column */
+.right-col { display: flex; flex-direction: column; gap: 16px; }
 
 /* Panel System */
-.panels { display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 16px; margin-bottom: 20px; }
 .panel { background: var(--card); border: 1px solid var(--border); border-radius: 12px; overflow: hidden; transition: all 0.3s; position: relative; }
 .panel:hover { border-color: #3b82f644; }
 .panel-header { display: flex; justify-content: space-between; align-items: center; padding: 14px 18px; border-bottom: 1px solid var(--border); cursor: move; background: #141720; }
 .panel-header h3 { font-size: 14px; font-weight: 600; display: flex; align-items: center; gap: 8px; }
-.panel-header .icon { font-size: 18px; }
 .panel-tools { display: flex; gap: 6px; }
 .panel-tools button { width: 24px; height: 24px; border: none; background: var(--border); color: var(--muted); border-radius: 4px; cursor: pointer; font-size: 12px; display: flex; align-items: center; justify-content: center; transition: all 0.2s; }
 .panel-tools button:hover { background: var(--accent); color: #fff; }
 .panel-body { padding: 16px 18px; max-height: 500px; overflow-y: auto; }
 .panel.collapsed .panel-body { display: none; }
 
-/* Progress Ring */
-.progress-ring { display: flex; align-items: center; justify-content: center; padding: 20px; }
-.ring-container { position: relative; width: 140px; height: 140px; }
-.ring-bg { fill: none; stroke: var(--border); stroke-width: 10; }
-.ring-fill { fill: none; stroke: var(--primary); stroke-width: 10; stroke-linecap: round; transform: rotate(-90deg); transform-origin: center; transition: stroke-dashoffset 0.5s; }
-.ring-text { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center; }
-.ring-text .num { font-size: 36px; font-weight: 700; color: var(--text); }
-.ring-text .unit { font-size: 14px; color: var(--muted); }
-.progress-stats { display: flex; gap: 24px; margin-top: 16px; justify-content: center; }
-.stat-item { text-align: center; }
-.stat-item .val { font-size: 20px; font-weight: 700; }
-.stat-item .lbl { font-size: 11px; color: var(--muted); }
-.stat-item.done .val { color: var(--primary); }
-.stat-item.todo .val { color: var(--warning); }
+/* Platform Progress Cards */
+.platform-progress { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+.plat-card { background: #141720; border: 1px solid var(--border); border-radius: 10px; padding: 16px; transition: all 0.2s; }
+.plat-card:hover { border-color: var(--accent); }
+.plat-card .top { display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px; }
+.plat-card .info { display: flex; align-items: center; gap: 8px; }
+.plat-card .icon { width: 36px; height: 36px; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 16px; }
+.plat-card .icon.li { background: #0a66c222; color: #0a66c2; }
+.plat-card .icon.ig { background: #e4405f22; color: #e4405f; }
+.plat-card .icon.fb { background: #1877f222; color: #1877f2; }
+.plat-card .name { font-size: 13px; font-weight: 600; }
+.plat-card .target { font-size: 11px; color: var(--muted); }
+.plat-card .progress { font-size: 24px; font-weight: 700; margin-bottom: 8px; }
+.plat-card .bar { height: 6px; background: var(--border); border-radius: 3px; overflow: hidden; }
+.plat-card .bar-fill { height: 100%; border-radius: 3px; transition: width 0.3s; }
+.plat-card .bar-fill.li { background: linear-gradient(90deg, #0a66c2, #0077b5); }
+.plat-card .bar-fill.ig { background: linear-gradient(90deg, #e4405f, #c13584); }
+.plat-card .bar-fill.fb { background: linear-gradient(90deg, #1877f2, #3b5998); }
 
-/* Platform Cards */
-.platform-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; }
-.platform-card { background: #141720; border: 1px solid var(--border); border-radius: 8px; padding: 14px; cursor: pointer; transition: all 0.2s; }
-.platform-card:hover { border-color: var(--accent); }
-.platform-card .top { display: flex; align-items: center; justify-content: space-between; margin-bottom: 10px; }
-.platform-card .icon { width: 32px; height: 32px; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 14px; }
-.platform-card .icon.li { background: #0a66c222; color: #0a66c2; }
-.platform-card .icon.fb { background: #1877f222; color: #1877f2; }
-.platform-card .icon.ig { background: #e4405f22; color: #e4405f; }
-.platform-card .icon.em { background: #6b728022; color: #6b7280; }
-.platform-card .num { font-size: 18px; font-weight: 700; }
-.platform-card .lbl { font-size: 11px; color: var(--muted); }
-.platform-card .bar { height: 4px; background: var(--border); border-radius: 2px; overflow: hidden; }
-.platform-card .bar-fill { height: 100%; border-radius: 2px; transition: width 0.3s; }
-.platform-card .bar-fill.li { background: #0a66c2; }
-.platform-card .bar-fill.fb { background: #1877f2; }
-.platform-card .bar-fill.ig { background: #e4405f; }
-.platform-card .bar-fill.em { background: #6b7280; }
-.platform-card .status { font-size: 10px; padding: 2px 6px; border-radius: 3px; margin-left: 8px; }
-.platform-card .status.active { background: #22c55e22; color: #22c55e; }
+/* Contact Pipeline */
+.pipeline-search { display: flex; gap: 8px; margin-bottom: 12px; }
+.pipeline-search input { flex: 1; padding: 10px 14px; background: #141720; border: 1px solid var(--border); border-radius: 8px; color: var(--text); font-size: 13px; }
+.pipeline-search input:focus { outline: none; border-color: var(--accent); }
+.pipeline-search input::placeholder { color: var(--muted); }
 
-/* Contact List */
-.contact-list { max-height: 320px; overflow-y: auto; }
+.filter-btns { display: flex; gap: 6px; margin-bottom: 12px; flex-wrap: wrap; }
+.filter-btn { padding: 6px 12px; background: transparent; border: 1px solid var(--border); color: var(--muted); border-radius: 6px; font-size: 12px; cursor: pointer; transition: all 0.2s; }
+.filter-btn:hover { border-color: var(--muted); }
+.filter-btn.active { background: var(--accent); border-color: var(--accent); color: #fff; }
+.filter-btn.ka { background: var(--warning); border-color: var(--warning); color: #000; font-weight: 600; }
+
+.contact-list { max-height: 400px; overflow-y: auto; }
 .contact-item { display: flex; align-items: center; gap: 12px; padding: 12px; background: #141720; border: 1px solid var(--border); border-radius: 8px; margin-bottom: 8px; cursor: pointer; transition: all 0.2s; }
 .contact-item:hover { border-color: var(--accent); }
 .contact-item .avatar { width: 40px; height: 40px; border-radius: 50%; background: var(--border); display: flex; align-items: center; justify-content: center; font-weight: 600; font-size: 16px; color: var(--primary); }
@@ -78,19 +107,46 @@ body { font-family: 'Segoe UI', Arial, sans-serif; background: var(--bg); color:
 .contact-item .name .tag { font-size: 9px; padding: 2px 5px; border-radius: 3px; background: var(--warning); color: #000; font-weight: 700; }
 .contact-item .meta { font-size: 12px; color: var(--muted); margin-top: 2px; }
 .contact-item .right { text-align: right; }
-.contact-item .platform { font-size: 11px; color: var(--muted); text-transform: uppercase; }
 .contact-item .status { font-size: 12px; font-weight: 600; }
-.contact-item .status.sent { color: var(--primary); }
 .contact-item .status.pending { color: var(--warning); }
-.contact-item .status.scheduled { color: var(--accent); }
+.contact-item .status.sent { color: var(--primary); }
 
-/* Filter Tabs */
-.filter-tabs { display: flex; gap: 8px; margin-bottom: 12px; flex-wrap: wrap; }
-.filter-tab { padding: 6px 14px; border: 1px solid var(--border); background: transparent; color: var(--muted); border-radius: 6px; font-size: 12px; cursor: pointer; transition: all 0.2s; }
-.filter-tab:hover { border-color: var(--muted); }
-.filter-tab.active { background: var(--accent); border-color: var(--accent); color: #fff; }
+.export-btns { display: flex; gap: 8px; margin-top: 12px; }
+.export-btn { padding: 8px 16px; background: var(--border); border: none; border-radius: 6px; color: var(--text); font-size: 12px; cursor: pointer; transition: all 0.2s; }
+.export-btn:hover { background: var(--accent); }
 
-/* Timezone Bar */
+/* Side Stats */
+.side-stat { background: #141720; border: 1px solid var(--border); border-radius: 10px; padding: 16px; margin-bottom: 12px; }
+.side-stat .title { font-size: 13px; font-weight: 600; margin-bottom: 12px; display: flex; align-items: center; gap: 6px; }
+.side-stat .progress { display: flex; align-items: center; gap: 12px; margin-bottom: 12px; }
+.side-stat .ring { width: 60px; height: 60px; position: relative; }
+.side-stat .ring svg { width: 60px; height: 60px; }
+.side-stat .ring circle { fill: none; stroke-width: 6; }
+.side-stat .ring .bg { stroke: var(--border); }
+.side-stat .ring .fill { stroke: var(--primary); stroke-linecap: round; transform: rotate(-90deg); transform-origin: center; }
+.side-stat .ring-text { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 14px; font-weight: 700; }
+.side-stat .progress-info .num { font-size: 20px; font-weight: 700; }
+.side-stat .progress-info .sub { font-size: 11px; color: var(--muted); }
+
+/* Keywords */
+.kw-list { display: flex; flex-wrap: wrap; gap: 8px; }
+.kw-tag { padding: 6px 12px; background: #141720; border: 1px solid var(--border); border-radius: 6px; font-size: 12px; cursor: pointer; transition: all 0.2s; display: flex; align-items: center; gap: 6px; }
+.kw-tag:hover { border-color: var(--accent); background: #1e2a3a; }
+.kw-tag .score { font-size: 10px; padding: 2px 5px; border-radius: 3px; background: var(--warning); color: #000; font-weight: 600; }
+
+/* Actions */
+.action-list { }
+.action-item { display: flex; align-items: center; gap: 12px; padding: 12px; background: #141720; border: 1px solid var(--border); border-radius: 8px; margin-bottom: 8px; cursor: pointer; transition: all 0.2s; }
+.action-item:hover { border-color: var(--accent); }
+.action-item .icon { width: 32px; height: 32px; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 14px; background: var(--border); }
+.action-item .info { flex: 1; }
+.action-item .title { font-size: 13px; font-weight: 600; }
+.action-item .status { font-size: 11px; padding: 3px 8px; border-radius: 4px; }
+.action-item .status.progress { background: #3b82f622; color: var(--accent); }
+.action-item .status.done { background: #22c55e22; color: #22c55e; }
+.action-item .status.wait { background: #f59e0b22; color: var(--warning); }
+
+/* Timezone */
 .tz-bar { display: flex; gap: 8px; flex-wrap: wrap; }
 .tz-item { background: #141720; border: 1px solid var(--border); border-radius: 8px; padding: 10px 14px; display: flex; align-items: center; gap: 10px; font-size: 12px; }
 .tz-item .flag { font-size: 18px; }
@@ -100,23 +156,8 @@ body { font-family: 'Segoe UI', Arial, sans-serif; background: var(--bg); color:
 .tz-item .status.working { background: #22c55e22; color: #22c55e; }
 .tz-item .status.off { background: #4b556322; color: #6b7280; }
 
-/* Keywords */
-.kw-list { display: flex; flex-wrap: wrap; gap: 8px; }
-.kw-tag { padding: 6px 12px; background: #141720; border: 1px solid var(--border); border-radius: 6px; font-size: 12px; cursor: pointer; transition: all 0.2s; display: flex; align-items: center; gap: 6px; }
-.kw-tag:hover { border-color: var(--accent); background: #1e2a3a; }
-.kw-tag .score { font-size: 10px; padding: 2px 5px; border-radius: 3px; background: var(--warning); color: #000; font-weight: 600; }
-
-/* Log */
-.log-list { max-height: 200px; overflow-y: auto; }
-.log-item { display: flex; gap: 10px; padding: 8px 0; border-bottom: 1px solid var(--border); font-size: 12px; }
-.log-item:last-child { border-bottom: none; }
-.log-item .time { color: var(--muted); min-width: 45px; }
-.log-item .msg { color: var(--text); }
-.log-item .msg.success { color: var(--primary); }
-.log-item .msg.warn { color: var(--warning); }
-
 /* Changelog */
-.changelog-section { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 20px; margin-top: 24px; }
+.changelog-section { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 20px; margin-top: 20px; }
 .changelog-section h2 { font-size: 16px; font-weight: 600; margin-bottom: 16px; display: flex; align-items: center; gap: 8px; }
 .version-item { background: #141720; border: 1px solid var(--border); border-radius: 8px; margin-bottom: 12px; overflow: hidden; }
 .version-header { display: flex; justify-content: space-between; align-items: center; padding: 12px 16px; cursor: pointer; transition: background 0.2s; }
@@ -127,15 +168,10 @@ body { font-family: 'Segoe UI', Arial, sans-serif; background: var(--bg); color:
 .version-item.expanded .version-body { display: block; }
 .version-body ul { list-style: none; font-size: 13px; }
 .version-body li { padding: 6px 0; padding-left: 20px; position: relative; }
-.version-body li::before { content: ''; position: absolute; left: 0; top: 50%; transform: translateY(-50%); width: 8px; height: 8px; border-radius: 50%; }
-.version-body li.add::before { background: var(--primary); }
-.version-body li.improve::before { background: var(--accent); }
-.version-body li.fix::before { background: var(--warning); }
-.version-body li.keep::before { background: var(--muted); }
+.version-body li::before { content: ''; position: absolute; left: 0; top: 50%; transform: translateY(-50%); width: 8px; height: 8px; border-radius: 50%; background: var(--primary); }
 
 /* Drag & Resize */
 .panel.dragging { opacity: 0.7; transform: scale(1.02); box-shadow: 0 10px 40px rgba(0,0,0,0.5); }
-.panel.resizing { border-color: var(--accent); }
 .resize-handle { position: absolute; right: 0; bottom: 0; width: 20px; height: 20px; cursor: se-resize; opacity: 0; transition: opacity 0.2s; }
 .panel:hover .resize-handle { opacity: 0.5; }
 .resize-handle::after { content: ''; position: absolute; right: 4px; bottom: 4px; width: 8px; height: 8px; border-right: 2px solid var(--muted); border-bottom: 2px solid var(--muted); }
@@ -146,473 +182,549 @@ body { font-family: 'Segoe UI', Arial, sans-serif; background: var(--bg); color:
 .toast.success { border-color: var(--primary); color: var(--primary); }
 
 /* Responsive */
-@media (max-width: 1200px) { .panels { grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); } }
-@media (max-width: 768px) { .panels { grid-template-columns: 1fr; } .platform-grid { grid-template-columns: 1fr; } }
+@media (max-width: 1400px) { .stats-grid { grid-template-columns: repeat(5, 1fr); } .content-grid { grid-template-columns: 1fr; } }
+@media (max-width: 1000px) { .stats-grid { grid-template-columns: repeat(3, 1fr); } }
+@media (max-width: 600px) { .stats-grid { grid-template-columns: repeat(2, 1fr); } .platform-progress { grid-template-columns: 1fr; } }
 </style>
 </head>
 <body>
 <div class="container">
   <div class="header">
     <div>
-      <h1>⚡ Flextail · 智能外展指挥中心</h1>
-      <p style="font-size:13px;color:var(--muted);margin-top:4px">AI驱动 · 智能调度 · 全球时区 · 强制100条/天</p>
+      <h1>Flextail & Vollyc · 智能客户开发系统</h1>
+      <p style="font-size:13px;color:var(--muted);margin-top:4px">Vercel 云端 · 实时同步 · 自动化优化 · 智能话术</p>
     </div>
     <div class="meta">
-      <div><span class="badge badge-live">● LIVE</span><span class="badge badge-v">v0.1.0</span></div>
+      <div><span class="badge badge-sync">🟢 实时同步</span><span class="badge badge-v">v0.2.0</span><span class="badge badge-live">每日目标 100</span></div>
       <div id="clock" style="margin-top:4px"></div>
     </div>
   </div>
 
-  <div class="panels" id="panelsContainer">
-    <!-- Progress Panel -->
-    <div class="panel" data-id="progress">
-      <div class="panel-header">
-        <h3><span class="icon">📊</span> 今日目标进度</h3>
-        <div class="panel-tools">
-          <button onclick="collapsePanel(this)">−</button>
-          <button onclick="resetPanel(this)">↺</button>
-        </div>
-      </div>
-      <div class="panel-body">
-        <div class="progress-ring">
-          <div class="ring-container">
-            <svg width="140" height="140"><circle class="ring-bg" cx="70" cy="70" r="60"/><circle class="ring-fill" id="progressRing" cx="70" cy="70" r="60"/></svg>
-            <div class="ring-text"><div class="num" id="progressNum">8</div><div class="unit">/ 100</div></div>
+  <!-- 9 Stats Cards from v8.0.3 -->
+  <div class="stats-grid">
+    <div class="stat-card green">
+      <div class="num">37</div>
+      <div class="lbl">总客户</div>
+      <div class="sub">已发送 0</div>
+    </div>
+    <div class="stat-card blue">
+      <div class="num">0</div>
+      <div class="lbl">已发送</div>
+      <div class="sub">本周 0</div>
+    </div>
+    <div class="stat-card orange">
+      <div class="num">0</div>
+      <div class="lbl">今日</div>
+      <div class="sub">目标 100</div>
+    </div>
+    <div class="stat-card green">
+      <div class="num">0</div>
+      <div class="lbl">已接受</div>
+      <div class="sub">转化率 0%</div>
+    </div>
+    <div class="stat-card purple">
+      <div class="num">0</div>
+      <div class="lbl">已回复</div>
+      <div class="sub">跟进中</div>
+    </div>
+    <div class="stat-card orange">
+      <div class="num">11</div>
+      <div class="lbl">KA/连锁</div>
+      <div class="sub">重点客户</div>
+    </div>
+    <div class="stat-card blue">
+      <div class="num">37</div>
+      <div class="lbl">待处理</div>
+      <div class="sub">需要跟进</div>
+    </div>
+    <div class="stat-card red">
+      <div class="num">0%</div>
+      <div class="lbl">转化率</div>
+      <div class="sub">需要优化</div>
+    </div>
+    <div class="stat-card purple">
+      <div class="num">0</div>
+      <div class="lbl">本周</div>
+      <div class="sub">目标 500</div>
+    </div>
+  </div>
+
+  <!-- Platform Tabs -->
+  <div class="platform-tabs">
+    <div class="platform-tab active">🌐 全部平台</div>
+    <div class="platform-tab">🔗 LinkedIn</div>
+    <div class="platform-tab">📸 Instagram</div>
+    <div class="platform-tab">📘 Facebook</div>
+  </div>
+
+  <!-- Module Tabs -->
+  <div class="module-tabs">
+    <div class="module-tab active">📊 客户管道 v6</div>
+    <div class="module-tab">📈 转化分析 v7</div>
+    <div class="module-tab">💬 话术模板 v7</div>
+    <div class="module-tab">🤖 智能优化 v7</div>
+    <div class="module-tab">🎯 客户画像 v7</div>
+    <div class="module-tab">🤖 AI助手 v8</div>
+    <div class="module-tab">⚡ 自动化 v8</div>
+    <div class="module-tab">📝 升级日志<span class="new">NEW</span></div>
+  </div>
+
+  <!-- Main Content Grid -->
+  <div class="content-grid">
+    <div class="left-col">
+      <!-- Platform Progress -->
+      <div class="panel" data-id="platform-progress">
+        <div class="panel-header">
+          <h3>📊 平台进度</h3>
+          <div class="panel-tools">
+            <button onclick="collapsePanel(this)">−</button>
+            <button onclick="resetPanel(this)">↺</button>
           </div>
         </div>
-        <div class="progress-stats">
-          <div class="stat-item done"><div class="val" id="doneNum">8</div><div class="lbl">已完成</div></div>
-          <div class="stat-item todo"><div class="val" id="todoNum">92</div><div class="lbl">待完成</div></div>
-        </div>
-      </div>
-      <div class="resize-handle"></div>
-    </div>
-
-    <!-- Platform Panel -->
-    <div class="panel" data-id="platforms">
-      <div class="panel-header">
-        <h3><span class="icon">🌐</span> 平台进度</h3>
-        <div class="panel-tools">
-          <button onclick="collapsePanel(this)">−</button>
-          <button onclick="resetPanel(this)">↺</button>
-        </div>
-      </div>
-      <div class="panel-body">
-        <div class="platform-grid">
-          <div class="platform-card" onclick="filterBy('linkedin')">
-            <div class="top">
-              <div><div class="icon li">in</div></div>
-              <div><span class="status active">运行中</span></div>
+        <div class="panel-body">
+          <div class="platform-progress">
+            <div class="plat-card">
+              <div class="top">
+                <div class="info"><div class="icon li">in</div><div><div class="name">LinkedIn</div><div class="target">60条/天</div></div></div>
+              </div>
+              <div class="progress">0/60</div>
+              <div class="bar"><div class="bar-fill li" style="width:0%"></div></div>
             </div>
-            <div class="num">6 <span style="font-size:14px;color:var(--muted)">/ 60</span></div>
-            <div class="lbl">LinkedIn</div>
-            <div class="bar"><div class="bar-fill li" style="width:10%"></div></div>
-          </div>
-          <div class="platform-card" onclick="filterBy('facebook')">
-            <div class="top">
-              <div><div class="icon fb">f</div></div>
-              <div><span class="status active">运行中</span></div>
+            <div class="plat-card">
+              <div class="top">
+                <div class="info"><div class="icon ig">📷</div><div><div class="name">Instagram</div><div class="target">25条/天</div></div></div>
+              </div>
+              <div class="progress">0/25</div>
+              <div class="bar"><div class="bar-fill ig" style="width:0%"></div></div>
             </div>
-            <div class="num">1 <span style="font-size:14px;color:var(--muted)">/ 15</span></div>
-            <div class="lbl">Facebook</div>
-            <div class="bar"><div class="bar-fill fb" style="width:7%"></div></div>
-          </div>
-          <div class="platform-card" onclick="filterBy('instagram')">
-            <div class="top">
-              <div><div class="icon ig">📷</div></div>
-              <div><span class="status active">运行中</span></div>
+            <div class="plat-card">
+              <div class="top">
+                <div class="info"><div class="icon fb">f</div><div><div class="name">Facebook</div><div class="target">15条/天</div></div></div>
+              </div>
+              <div class="progress">0/15</div>
+              <div class="bar"><div class="bar-fill fb" style="width:0%"></div></div>
             </div>
-            <div class="num">1 <span style="font-size:14px;color:var(--muted)">/ 25</span></div>
-            <div class="lbl">Instagram</div>
-            <div class="bar"><div class="bar-fill ig" style="width:4%"></div></div>
           </div>
-          <div class="platform-card">
-            <div class="top">
-              <div><div class="icon em">✉</div></div>
-              <div><span class="status off">待配置</span></div>
+        </div>
+        <div class="resize-handle"></div>
+      </div>
+
+      <!-- Customer Pipeline -->
+      <div class="panel" data-id="pipeline">
+        <div class="panel-header">
+          <h3>👥 客户 Pipeline</h3>
+          <div class="panel-tools">
+            <button onclick="collapsePanel(this)">−</button>
+            <button onclick="resetPanel(this)">↺</button>
+          </div>
+        </div>
+        <div class="panel-body">
+          <div class="pipeline-search">
+            <input type="text" placeholder="搜索客户名、公司、关键词...">
+          </div>
+          <div class="filter-btns">
+            <div class="filter-btn active">全部</div>
+            <div class="filter-btn ka">★ KA</div>
+            <div class="filter-btn">待处理</div>
+            <div class="filter-btn">已接受</div>
+          </div>
+          <div class="contact-list" id="contactList">
+            <div class="contact-item">
+              <div class="avatar">L</div>
+              <div class="info">
+                <div class="name">Lealand Blum<span class="tag">KA</span></div>
+                <div class="meta">Amazon · Vendor Manager</div>
+              </div>
+              <div class="right">
+                <div class="status pending">⏳ Pending</div>
+              </div>
             </div>
-            <div class="num">0 <span style="font-size:14px;color:var(--muted)">/ 0</span></div>
-            <div class="lbl">Email</div>
-            <div class="bar"><div class="bar-fill em" style="width:0%"></div></div>
+            <div class="contact-item">
+              <div class="avatar">P</div>
+              <div class="info">
+                <div class="name">Peter Whitcomb<span class="tag">KA</span></div>
+                <div class="meta">TERSUS Solutions · CEO</div>
+              </div>
+              <div class="right">
+                <div class="status pending">⏳ Pending</div>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="avatar">T</div>
+              <div class="info">
+                <div class="name">Tom Bielek<span class="tag">KA</span></div>
+                <div class="meta">Yixiang International USA · VP Sales</div>
+              </div>
+              <div class="right">
+                <div class="status pending">⏳ Pending</div>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="avatar">M</div>
+              <div class="info">
+                <div class="name">Mike Patterson</div>
+                <div class="meta">Bass Pro Shops · Category Manager</div>
+              </div>
+              <div class="right">
+                <div class="status pending">⏳ Pending</div>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="avatar">S</div>
+              <div class="info">
+                <div class="name">Sarah Chen</div>
+                <div class="meta">Cabela's · Senior Buyer</div>
+              </div>
+              <div class="right">
+                <div class="status pending">⏳ Pending</div>
+              </div>
+            </div>
+          </div>
+          <div class="export-btns">
+            <button class="export-btn">📥 导出 CSV</button>
+            <button class="export-btn">📥 导出 JSON</button>
+            <button class="export-btn">🔄 刷新</button>
+          </div>
+        </div>
+        <div class="resize-handle"></div>
+      </div>
+
+      <!-- Global Timezones -->
+      <div class="panel" data-id="timezone">
+        <div class="panel-header">
+          <h3>🌍 全球时区状态</h3>
+          <div class="panel-tools">
+            <button onclick="collapsePanel(this)">−</button>
+            <button onclick="resetPanel(this)">↺</button>
+          </div>
+        </div>
+        <div class="panel-body">
+          <div class="tz-bar" id="tzBar"></div>
+        </div>
+        <div class="resize-handle"></div>
+      </div>
+    </div>
+
+    <div class="right-col">
+      <!-- Today Progress -->
+      <div class="side-stat">
+        <div class="title">📊 今日进度</div>
+        <div class="progress">
+          <div class="ring">
+            <svg viewBox="0 0 60 60"><circle class="bg" cx="30" cy="30" r="24"/><circle class="fill" id="todayRing" cx="30" cy="30" r="24" stroke-dasharray="150.8" stroke-dashoffset="150.8"/></svg>
+            <div class="ring-text" id="todayPercent">0%</div>
+          </div>
+          <div class="progress-info">
+            <div class="num">0 / 100</div>
+            <div class="sub">还差 100 条</div>
           </div>
         </div>
       </div>
-      <div class="resize-handle"></div>
-    </div>
 
-    <!-- Timezone Panel -->
-    <div class="panel" data-id="timezone">
-      <div class="panel-header">
-        <h3><span class="icon">🌍</span> 全球时区状态</h3>
-        <div class="panel-tools">
-          <button onclick="collapsePanel(this)">−</button>
-          <button onclick="resetPanel(this)">↺</button>
+      <!-- Keywords -->
+      <div class="panel" data-id="keywords">
+        <div class="panel-header">
+          <h3>🔍 关键词效果 TOP5</h3>
+          <div class="panel-tools">
+            <button onclick="collapsePanel(this)">−</button>
+          </div>
         </div>
+        <div class="panel-body">
+          <div class="kw-list">
+            <div class="kw-tag">site:linkedin.com "A"<span class="score">0</span></div>
+            <div class="kw-tag">site:linkedin.com "B"<span class="score">0</span></div>
+            <div class="kw-tag">site:linkedin.com "C"<span class="score">0</span></div>
+            <div class="kw-tag">site:linkedin.com "D"<span class="score">0</span></div>
+            <div class="kw-tag">site:linkedin.com "B"<span class="score">0</span></div>
+          </div>
+        </div>
+        <div class="resize-handle"></div>
       </div>
-      <div class="panel-body">
-        <div class="tz-bar" id="tzBar" style="flex-direction:column;gap:8px"></div>
-      </div>
-      <div class="resize-handle"></div>
-    </div>
 
-    <!-- Contacts Panel -->
-    <div class="panel" data-id="contacts" style="grid-column: span 2">
-      <div class="panel-header">
-        <h3><span class="icon">👥</span> 客户列表 · 智能排序</h3>
-        <div class="panel-tools">
-          <button onclick="collapsePanel(this)">−</button>
-          <button onclick="resetPanel(this)">↺</button>
+      <!-- Next Actions -->
+      <div class="panel" data-id="actions">
+        <div class="panel-header">
+          <h3>📋 下一步行动</h3>
+          <div class="panel-tools">
+            <button onclick="collapsePanel(this)">−</button>
+          </div>
         </div>
-      </div>
-      <div class="panel-body">
-        <div class="filter-tabs">
-          <button class="filter-tab active" onclick="filterBy('all')">全部</button>
-          <button class="filter-tab" onclick="filterBy('linkedin')">LinkedIn</button>
-          <button class="filter-tab" onclick="filterBy('facebook')">Facebook</button>
-          <button class="filter-tab" onclick="filterBy('instagram')">Instagram</button>
-          <button class="filter-tab" onclick="filterBy('scheduled')">已排期</button>
+        <div class="panel-body">
+          <div class="action-list">
+            <div class="action-item">
+              <div class="icon">🔗</div>
+              <div class="info"><div class="title">LinkedIn 今日还需发送 60 条</div></div>
+              <div class="status progress">进行中</div>
+            </div>
+            <div class="action-item">
+              <div class="icon">📸</div>
+              <div class="info"><div class="title">Instagram 今日还需发送 25 条</div></div>
+              <div class="status progress">进行中</div>
+            </div>
+            <div class="action-item">
+              <div class="icon">📘</div>
+              <div class="info"><div class="title">Facebook 今日还需发送 15 条</div></div>
+              <div class="status progress">进行中</div>
+            </div>
+            <div class="action-item">
+              <div class="icon">⭐</div>
+              <div class="info"><div class="title">跟进 KA/连锁客户 11 个</div></div>
+              <div class="status wait">待处理</div>
+            </div>
+            <div class="action-item">
+              <div class="icon">✅</div>
+              <div class="info"><div class="title">跟进超期未回复客户 0 个</div></div>
+              <div class="status done">完成</div>
+            </div>
+          </div>
         </div>
-        <div class="contact-list" id="contactList"></div>
+        <div class="resize-handle"></div>
       </div>
-      <div class="resize-handle"></div>
-    </div>
-
-    <!-- Keywords Panel -->
-    <div class="panel" data-id="keywords">
-      <div class="panel-header">
-        <h3><span class="icon">🔍</span> 热门关键词</h3>
-        <div class="panel-tools">
-          <button onclick="collapsePanel(this)">−</button>
-          <button onclick="resetPanel(this)">↺</button>
-        </div>
-      </div>
-      <div class="panel-body">
-        <div class="kw-list" id="kwList"></div>
-      </div>
-      <div class="resize-handle"></div>
-    </div>
-
-    <!-- Log Panel -->
-    <div class="panel" data-id="log">
-      <div class="panel-header">
-        <h3><span class="icon">📝</span> 实时日志</h3>
-        <div class="panel-tools">
-          <button onclick="collapsePanel(this)">−</button>
-          <button onclick="resetPanel(this)">↺</button>
-        </div>
-      </div>
-      <div class="panel-body">
-        <div class="log-list" id="logList"></div>
-      </div>
-      <div class="resize-handle"></div>
     </div>
   </div>
 
   <!-- Changelog Section -->
   <div class="changelog-section">
     <h2>📜 版本演进历史</h2>
-    <div id="changelogList"></div>
+    <div class="version-item expanded">
+      <div class="version-header" onclick="toggleVersion(this)">
+        <div class="v-num">v0.2.0</div>
+        <div class="v-date">2026-04-08</div>
+      </div>
+      <div class="version-body">
+        <ul>
+          <li>✨ 融合v8.0.3完整功能模块</li>
+          <li>✨ 9维统计卡片（总客户/已发送/今日/已接受/已回复/KA/待处理/转化率/本周）</li>
+          <li>✨ 平台Tab切换（全部/LinkedIn/Instagram/Facebook）</li>
+          <li>✨ 模块Tab导航（客户管道/转化分析/话术模板/智能优化/客户画像/AI助手/自动化/升级日志）</li>
+          <li>✨ 客户Pipeline搜索+筛选（全部/KA/待处理/已接受）</li>
+          <li>✨ 导出功能（CSV/JSON/刷新）</li>
+          <li>🎨 统一设计语言+渐变顶部条</li>
+        </ul>
+      </div>
+    </div>
+    <div class="version-item">
+      <div class="version-header" onclick="toggleVersion(this)">
+        <div class="v-num">v0.1.0</div>
+        <div class="v-date">2026-04-08</div>
+      </div>
+      <div class="version-body">
+        <ul>
+          <li>全新面板系统 - 支持拖拽排序和缩放大小</li>
+          <li>版本历史模块 - 记录所有版本演进</li>
+          <li>面板折叠/展开功能</li>
+        </ul>
+      </div>
+    </div>
+    <div class="version-item">
+      <div class="version-header" onclick="toggleVersion(this)">
+        <div class="v-num">v8.0.3</div>
+        <div class="v-date">2026-04-08</div>
+      </div>
+      <div class="version-body">
+        <ul>
+          <li>9维统计卡片布局</li>
+          <li>客户Pipeline完整列表</li>
+          <li>平台切换Tab</li>
+          <li>模块导航Tab</li>
+          <li>实时同步状态</li>
+        </ul>
+      </div>
+    </div>
+    <div class="version-item">
+      <div class="version-header" onclick="toggleVersion(this)">
+        <div class="v-num">v0.0.2</div>
+        <div class="v-date">2026-04-08</div>
+      </div>
+      <div class="version-body">
+        <ul>
+          <li>拖拽布局功能 - 自由调整卡片位置</li>
+          <li>布局自动保存到localStorage</li>
+        </ul>
+      </div>
+    </div>
+    <div class="version-item">
+      <div class="version-header" onclick="toggleVersion(this)">
+        <div class="v-num">v0.0.1</div>
+        <div class="v-date">2026-04-08</div>
+      </div>
+      <div class="version-body">
+        <ul>
+          <li>5维统计卡片</li>
+          <li>时区状态监控条</li>
+          <li>智能自动外展开关</li>
+          <li>四平台进度展示</li>
+        </ul>
+      </div>
+    </div>
+    <div class="version-item">
+      <div class="version-header" onclick="toggleVersion(this)">
+        <div class="v-num">v6.1</div>
+        <div class="v-date">2026-04-03</div>
+      </div>
+      <div class="version-body">
+        <ul>
+          <li>Tier分布条形图</li>
+          <li>关键词效果排名</li>
+          <li>下一步行动清单</li>
+          <li>25人联系人表格</li>
+        </ul>
+      </div>
+    </div>
+    <div class="version-item">
+      <div class="version-header" onclick="toggleVersion(this)">
+        <div class="v-num">v1.0</div>
+        <div class="v-date">2026-04-03</div>
+      </div>
+      <div class="version-body">
+        <ul>
+          <li>Google Sheet数据源集成</li>
+          <li>37个联系人导入</li>
+          <li>Vercel部署</li>
+          <li>Dashboard基础框架</li>
+        </ul>
+      </div>
+    </div>
   </div>
 </div>
 
 <div class="toast" id="toast"></div>
 
 <script>
-// Data
-var contacts = [
-  {n:'Michael Hartridge',c:'Outdoor Retail',r:'Ops Leader',p:'linkedin',s:'sent',t:'08:32',tz:'US-East',tag:'KA'},
-  {n:'Alain Oberholzer',c:'Gateway1 Footwear',r:'Importer',p:'linkedin',s:'pending',tz:'CH',tag:'KA'},
-  {n:'Jason Wang',c:'RV Importer',r:'Import/Export',p:'linkedin',s:'pending',tz:'US-West',tag:'KA'},
-  {n:'Tamako Hara',c:'Outdoor Research',r:'Import Manager',p:'linkedin',s:'scheduled',t:'09:00',tz:'US-West',tag:'KA'},
-  {n:'David Dreyer',c:'Outdoor Retail',r:'GM',p:'linkedin',s:'pending',tz:'US-Central'},
-  {n:'Allan King',c:'Outback King',r:'Founder',p:'linkedin',s:'pending',tz:'AU'},
-  {n:'USA Outdoor Gears',c:'Facebook Group',r:'5K Members',p:'facebook',s:'sent',t:'14:25',tz:'US-East'},
-  {n:'kilosgear',c:'Instagram Brand',r:'Outdoor Gear',p:'instagram',s:'sent',t:'14:20',tz:'US-West'}
-];
-
-var keywords = [
-  {kw:'outdoor distributor',score:95},{kw:'camping gear',score:88},
-  {kw:'wholesale buyer',score:82},{kw:'RV accessories',score:76},
-  {kw:'retail chain',score:70},{kw:'import export',score:65}
-];
-
-var logs = [
-  {t:'17:26',m:'批量外展模式已启动',type:'info'},
-  {t:'14:32',m:'LinkedIn消息已发送 - Michael Hartridge',type:'success'},
-  {t:'14:28',m:'已排期 - Tamako Hara (西雅图时间9:00)',type:'warn'},
-  {t:'14:25',m:'Facebook帖子已发布',type:'success'},
-  {t:'14:20',m:'Instagram DM已发送 - kilosgear',type:'success'}
-];
-
-var versions = [
-  {v:'0.1.0',d:'2026-04-08',items:[
-    {t:'add',m:'全新面板系统 - 支持拖拽排序和缩放大小'},
-    {t:'add',m:'版本历史模块 - 记录所有版本演进'},
-    {t:'add',m:'面板折叠/展开功能'},
-    {t:'improve',m:'UI全面升级 - 统一设计语言'},
-    {t:'keep',m:'保留所有核心功能'}
-  ]},
-  {v:'0.0.2',d:'2026-04-08',items:[
-    {t:'add',m:'拖拽布局功能 - 自由调整卡片位置'},
-    {t:'add',m:'布局自动保存到localStorage'},
-    {t:'improve',m:'拖拽视觉反馈优化'}
-  ]},
-  {v:'0.0.1',d:'2026-04-08',items:[
-    {t:'add',m:'5维统计卡片'},
-    {t:'add',m:'时区状态监控条'},
-    {t:'add',m:'智能自动外展开关'},
-    {t:'add',m:'四平台进度展示'},
-    {t:'add',m:'Tier分布条形图'},
-    {t:'add',m:'关键词排名列表'},
-    {t:'add',m:'下一步行动清单'},
-    {t:'add',m:'联系人表格+本地时间'}
-  ]},
-  {v:'v9.0',d:'2026-04-08',items:[
-    {t:'add',m:'环形进度条UI'},
-    {t:'add',m:'客户列表筛选'},
-    {t:'add',m:'消息编辑器+模板'},
-    {t:'add',m:'实时日志模块'}
-  ]},
-  {v:'v8.1',d:'2026-04-08',items:[
-    {t:'add',m:'时区状态条'},
-    {t:'add',m:'智能自动外展开关'},
-    {t:'add',m:'四平台进度卡片'}
-  ]},
-  {v:'v6.1',d:'2026-04-03',items:[
-    {t:'add',m:'Tier分布条形图'},
-    {t:'add',m:'关键词效果排名'},
-    {t:'add',m:'下一步行动清单'},
-    {t:'add',m:'25人联系人表格'}
-  ]},
-  {v:'v1.0',d:'2026-04-03',items:[
-    {t:'add',m:'Google Sheet数据源集成'},
-    {t:'add',m:'37个联系人导入'},
-    {t:'add',m:'Vercel部署'},
-    {t:'add',m:'Dashboard基础框架'}
-  ]}
-];
-
-var timezones = [
-  {name:'北美东部',flag:'🇺🇸',tz:'America/New_York',hours:'9:00-17:00'},
-  {name:'北美中部',flag:'🇺🇸',tz:'America/Chicago',hours:'9:00-17:00'},
-  {name:'北美西部',flag:'🇺🇸',tz:'America/Los_Angeles',hours:'9:00-17:00'},
-  {name:'欧洲中部',flag:'🇨🇭',tz:'Europe/Zurich',hours:'9:00-18:00'},
-  {name:'澳洲东部',flag:'🇦🇺',tz:'Australia/Sydney',hours:'9:00-17:00'}
-];
-
 // Clock
-function updateClock(){
-  document.getElementById('clock').textContent = new Date().toLocaleString('zh-CN',{hour12:false});
+function updateClock() {
+  const now = new Date();
+  document.getElementById('clock').textContent = now.toLocaleString('zh-CN', { year: 'numeric', month: '2-digit', day: '2-digit', hour: '2-digit', minute: '2-digit', second: '2-digit' });
 }
-setInterval(updateClock,1000);
+setInterval(updateClock, 1000);
 updateClock();
 
-// Progress Ring
-function updateProgressRing(current,total){
-  var ring=document.getElementById('progressRing');
-  var circumference=2*Math.PI*60;
-  ring.style.strokeDasharray=circumference;
-  ring.style.strokeDashoffset=circumference*(1-current/total);
-  document.getElementById('progressNum').textContent=current;
-  document.getElementById('doneNum').textContent=current;
-  document.getElementById('todoNum').textContent=total-current;
-}
-updateProgressRing(8,100);
+// Timezones
+const timezones = [
+  { name: '北美东部', flag: '🇺🇸', tz: 'America/New_York', work: [9, 17] },
+  { name: '北美中部', flag: '🇺🇸', tz: 'America/Chicago', work: [9, 17] },
+  { name: '北美西部', flag: '🇺🇸', tz: 'America/Los_Angeles', work: [9, 17] },
+  { name: '欧洲中部', flag: '🇨🇭', tz: 'Europe/Zurich', work: [9, 18] },
+  { name: '澳洲东部', flag: '🇦🇺', tz: 'Australia/Sydney', work: [9, 17] }
+];
 
-// Timezone Bar
-function renderTzBar(){
-  var html=timezones.map(function(tz){
-    var time=new Date().toLocaleTimeString('en-US',{timeZone:tz.tz,hour12:false,hour:'2-digit',minute:'2-digit'});
-    var hour=parseInt(time.split(':')[0]);
-    var isWorking=hour>=9&&hour<17;
-    return '<div class="tz-item"><span class="flag">'+tz.flag+'</span><div><div class="name">'+tz.name+'</div><div class="time">'+time+' ('+tz.hours+')</div></div><span class="status '+(isWorking?'working':'off')+'">'+(isWorking?'🟢 工作中':'⚫ 休息')+'</span></div>';
+function updateTimezones() {
+  const container = document.getElementById('tzBar');
+  const now = new Date();
+  container.innerHTML = timezones.map(tz => {
+    const local = new Date(now.toLocaleString('en-US', { timeZone: tz.tz }));
+    const hour = local.getHours();
+    const isWorking = hour >= tz.work[0] && hour < tz.work[1];
+    const timeStr = local.toLocaleTimeString('zh-CN', { hour: '2-digit', minute: '2-digit' });
+    return `<div class="tz-item">
+      <div class="flag">${tz.flag}</div>
+      <div><div class="name">${tz.name}</div><div class="time">${timeStr} (${tz.work[0]}:00-${tz.work[1]}:00)</div></div>
+      <div class="status ${isWorking ? 'working' : 'off'}">${isWorking ? '🟢 工作中' : '⚫ 休息'}</div>
+    </div>`;
   }).join('');
-  document.getElementById('tzBar').innerHTML=html;
 }
-renderTzBar();
-setInterval(renderTzBar,60000);
+setInterval(updateTimezones, 60000);
+updateTimezones();
 
-// Contact List
-function renderContacts(filter){
-  var list=filter==='all'?contacts:filter==='scheduled'?contacts.filter(function(c){return c.s==='scheduled';}):contacts.filter(function(c){return c.p===filter;});
-  var html=list.map(function(c){
-    var initial=c.n.charAt(0);
-    var statusClass=c.s==='sent'?'sent':c.s==='scheduled'?'scheduled':'pending';
-    var statusText=c.s==='sent'?'✓ 已发送':c.s==='scheduled'?'⏰ 已排期':'⏳ 待发送';
-    var time=c.t?c.t:c.tz?'📍 '+c.tz:'';
-    return '<div class="contact-item"><div class="avatar">'+initial+'</div><div class="info"><div class="name">'+c.n+(c.tag?'<span class="tag">'+c.tag+'</span>':'')+'</div><div class="meta">'+c.c+' · '+c.r+'</div></div><div class="right"><div class="platform">'+c.p+'</div><div class="status '+statusClass+'">'+statusText+(c.t?' '+c.t:'')+'</div></div></div>';
-  }).join('');
-  document.getElementById('contactList').innerHTML=html;
+// Today Progress Ring
+function updateTodayProgress(sent, total) {
+  const percent = Math.round(sent / total * 100);
+  const circumference = 2 * Math.PI * 24;
+  const offset = circumference * (1 - sent / total);
+  document.getElementById('todayRing').style.strokeDashoffset = offset;
+  document.getElementById('todayPercent').textContent = percent + '%';
 }
-renderContacts('all');
+updateTodayProgress(0, 100);
 
-function filterBy(type){
-  document.querySelectorAll('.filter-tab').forEach(function(t){t.classList.remove('active');});
-  event.target.classList.add('active');
-  renderContacts(type);
-}
-
-// Keywords
-function renderKeywords(){
-  var html=keywords.map(function(k){
-    return '<div class="kw-tag" onclick="copyKw(\''+k.kw+'\')">'+k.kw+'<span class="score">'+k.score+'</span></div>';
-  }).join('');
-  document.getElementById('kwList').innerHTML=html;
-}
-renderKeywords();
-
-function copyKw(kw){
-  navigator.clipboard.writeText(kw);
-  showToast('已复制: '+kw);
-}
-
-// Logs
-function renderLogs(){
-  var html=logs.map(function(l){
-    return '<div class="log-item"><span class="time">'+l.t+'</span><span class="msg '+l.type+'">'+l.m+'</span></div>';
-  }).join('');
-  document.getElementById('logList').innerHTML=html;
-}
-renderLogs();
-
-// Changelog
-function renderChangelog(){
-  var html=versions.map(function(v){
-    var items=v.items.map(function(i){
-      return '<li class="'+i.t+'">'+i.m+'</li>';
-    }).join('');
-    return '<div class="version-item expanded"><div class="version-header" onclick="toggleVersion(this)"><span class="v-num">v'+v.v+'</span><span class="v-date">'+v.d+'</span></div><div class="version-body"><ul>'+items+'</ul></div></div>';
-  }).join('');
-  document.getElementById('changelogList').innerHTML=html;
-}
-renderChangelog();
-
-function toggleVersion(el){
-  el.parentElement.classList.toggle('expanded');
-}
-
-// Panel Functions
-function collapsePanel(btn){
-  var panel=btn.closest('.panel');
+// Panel collapse
+function collapsePanel(btn) {
+  const panel = btn.closest('.panel');
   panel.classList.toggle('collapsed');
-  btn.textContent=panel.classList.contains('collapsed')?'+':'−';
+  btn.textContent = panel.classList.contains('collapsed') ? '+' : '−';
 }
 
-function resetPanel(btn){
-  var panel=btn.closest('.panel');
-  panel.style.width='';
-  panel.style.height='';
-  showToast('已重置面板尺寸');
+// Reset panel
+function resetPanel(btn) {
+  const panel = btn.closest('.panel');
+  panel.style.width = '';
+  panel.style.height = '';
+  showToast('面板已重置');
+}
+
+// Version toggle
+function toggleVersion(header) {
+  const item = header.closest('.version-item');
+  item.classList.toggle('expanded');
+}
+
+// Toast
+function showToast(msg) {
+  const toast = document.getElementById('toast');
+  toast.textContent = msg;
+  toast.className = 'toast show success';
+  setTimeout(() => toast.classList.remove('show'), 2000);
 }
 
 // Drag & Drop
-var panelsContainer=document.getElementById('panelsContainer');
-var dragPanel=null;
-
-panelsContainer.addEventListener('dragstart',function(e){
-  if(e.target.classList.contains('panel')){
-    dragPanel=e.target;
-    e.target.classList.add('dragging');
-    e.dataTransfer.effectAllowed='move';
-  }
+let draggedPanel = null;
+document.querySelectorAll('.panel-header').forEach(header => {
+  header.addEventListener('mousedown', e => {
+    if (e.target.tagName === 'BUTTON') return;
+    draggedPanel = header.closest('.panel');
+    draggedPanel.classList.add('dragging');
+    document.addEventListener('mousemove', onDrag);
+    document.addEventListener('mouseup', stopDrag);
+  });
 });
 
-panelsContainer.addEventListener('dragend',function(e){
-  if(dragPanel){
-    dragPanel.classList.remove('dragging');
-    saveLayout();
-    dragPanel=null;
-  }
-});
-
-panelsContainer.addEventListener('dragover',function(e){
-  e.preventDefault();
-  if(!dragPanel)return;
-  var after=getDragAfter(panelsContainer,e.clientY);
-  if(after)panelsContainer.insertBefore(dragPanel,after);
-  else panelsContainer.appendChild(dragPanel);
-});
-
-function getDragAfter(container,y){
-  var els=[].filter.call(container.children,function(el){return el.classList.contains('panel')&&!el.classList.contains('dragging');});
-  return els.reduce(function(closest,el){
-    var box=el.getBoundingClientRect();
-    var offset=y-box.top-box.height/2;
-    if(offset<0&&offset>closest.offset)return{offset:offset,el:el};
-    return closest;
-  },{offset:Number.NEGATIVE_INFINITY}).el;
+function onDrag(e) {
+  if (!draggedPanel) return;
+  // Simple drag logic placeholder
 }
 
-document.querySelectorAll('.panel').forEach(function(p){
-  p.setAttribute('draggable','true');
-});
+function stopDrag() {
+  if (draggedPanel) {
+    draggedPanel.classList.remove('dragging');
+    draggedPanel = null;
+  }
+  document.removeEventListener('mousemove', onDrag);
+  document.removeEventListener('mouseup', stopDrag);
+}
 
 // Resize
-document.querySelectorAll('.resize-handle').forEach(function(handle){
-  var isResizing=false;
-  var startX,startY,startW,startH,panel;
+document.querySelectorAll('.resize-handle').forEach(handle => {
+  let isResizing = false;
+  let startX, startY, startW, startH;
   
-  handle.addEventListener('mousedown',function(e){
-    isResizing=true;
-    panel=handle.closest('.panel');
-    startX=e.clientX;
-    startY=e.clientY;
-    startW=panel.offsetWidth;
-    startH=panel.offsetHeight;
+  handle.addEventListener('mousedown', e => {
+    isResizing = true;
+    const panel = handle.closest('.panel');
+    startX = e.clientX;
+    startY = e.clientY;
+    startW = panel.offsetWidth;
+    startH = panel.offsetHeight;
     panel.classList.add('resizing');
-    e.preventDefault();
+    document.addEventListener('mousemove', resize);
+    document.addEventListener('mouseup', stopResize);
   });
   
-  document.addEventListener('mousemove',function(e){
-    if(!isResizing)return;
-    var w=startW+(e.clientX-startX);
-    var h=startH+(e.clientY-startY);
-    if(w>=300)panel.style.width=w+'px';
-    if(h>=200)panel.style.height=h+'px';
-  });
+  function resize(e) {
+    if (!isResizing) return;
+    const panel = handle.closest('.panel');
+    panel.style.width = (startW + e.clientX - startX) + 'px';
+    panel.style.minHeight = (startH + e.clientY - startY) + 'px';
+  }
   
-  document.addEventListener('mouseup',function(){
-    if(isResizing){
-      isResizing=false;
-      panel.classList.remove('resizing');
-      saveLayout();
-    }
-  });
+  function stopResize() {
+    isResizing = false;
+    handle.closest('.panel').classList.remove('resizing');
+    document.removeEventListener('mousemove', resize);
+    document.removeEventListener('mouseup', stopResize);
+    showToast('尺寸已调整');
+  }
 });
 
-// Save/Load Layout
-function saveLayout(){
-  var layout=[];
-  document.querySelectorAll('.panel').forEach(function(p){
-    layout.push({id:p.dataset.id,w:p.style.width,h:p.style.height});
-  });
-  localStorage.setItem('dashboardLayout',JSON.stringify(layout));
-}
-
-function loadLayout(){
-  var saved=localStorage.getItem('dashboardLayout');
-  if(!saved)return;
-  var layout=JSON.parse(saved);
-  layout.forEach(function(l){
-    var panel=document.querySelector('[data-id="'+l.id+'"]');
-    if(panel){
-      if(l.w)panel.style.width=l.w;
-      if(l.h)panel.style.height=l.h;
-    }
-  });
-}
-loadLayout();
-
-// Toast
-function showToast(msg){
-  var toast=document.getElementById('toast');
-  toast.textContent=msg;
-  toast.className='toast show success';
-  setTimeout(function(){toast.classList.remove('show');},2000);
-}
-
-// Init
-showToast('拖拽面板头部移动位置，拖拽右下角调整大小');
+console.log('✅ Flextail Outreach Dashboard v0.2.0 loaded');
 </script>
 </body>
 </html>
