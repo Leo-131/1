@@ -1,0 +1,914 @@
+{
+  "brand": {
+    "name": "Flextail & Vollyc",
+    "contact": "Leo",
+    "position": "Flextail: Top 1 on Amazon in ultralight outdoor electronics. Vollyc: practical 3C home cleaning consumer electronics with high turnover.",
+    "products": {
+      "camping_outdoor": [
+        "ultralight camping gear",
+        "camping tent accessories",
+        "camping lighting",
+        "LED camping lanterns",
+        "portable camping fans",
+        "camping hammock gear",
+        "backpacking equipment",
+        "outdoor cooking gear"
+      ],
+      "rv_camper": [
+        "RV accessories",
+        "camper accessories",
+        "tire inflator pump",
+        "12V air compressor",
+        "portable tire pump RV",
+        "RV lighting",
+        "RV outdoor equipment",
+        "vehicle tire pump"
+      ],
+      "tire_air_pump": [
+        "tire inflator",
+        "air pump",
+        "portable tire inflator",
+        "digital tire gauge",
+        "car tire pump",
+        "12V car air compressor",
+        "portable air compressor",
+        "tire inflation pump"
+      ],
+      "home_cleaning": [
+        "cordless vacuum",
+        "electric broom",
+        "handheld vacuum",
+        "stick vacuum",
+        "carpet cleaner",
+        "floor scrubber",
+        "robotic vacuum",
+        "power scrubber",
+        "steam cleaner",
+        "wet dry vacuum"
+      ],
+      "consumer_electronics": [
+        "portable power bank",
+        "outdoor power bank",
+        "USB charger camping",
+        "portable solar panel",
+        "outdoor electronics",
+        "compact flashlight",
+        "outdoor LED light"
+      ]
+    },
+    "new_products": "36+ new SKUs in 2026, covering camping, hiking, RV/travel, home cleaning scenarios",
+    "USP": "Top 1 Amazon, ultralight outdoor electronics, 36+ new SKUs 2026",
+    "market_position": "Amazon Top 1 + Global expansion into retail chains and distributors"
+  },
+  "customer_profile": {
+    "global_KA": {
+      "description": "全球头部零售KA - 各大洲头部零售商/电商平台",
+      "keywords": [
+        "retail chain buyer",
+        "big box retailer buyer",
+        "mass market retailer buyer",
+        "category manager outdoor",
+        "category manager camping",
+        "category manager automotive accessories",
+        "category manager home cleaning",
+        "merchandising director outdoor",
+        "senior buyer camping gear",
+        "senior buyer automotive",
+        "senior buyer home appliances",
+        "VP purchasing outdoor",
+        "director of procurement sporting goods",
+        "ecommerce key account",
+        "marketplace vendor manager",
+        "Amazon vendor manager",
+        "Walmart supplier",
+        "Target vendor",
+        "Best Buy supplier",
+        "Costco buyer",
+        "Sam's Club buyer",
+        "BJ's Wholesale buyer"
+      ],
+      "platform": "LinkedIn + Email",
+      "priority": "最高",
+      "action": "精准搜索头部零售KA + 邮件跟进"
+    },
+    "national_distributor": {
+      "description": "国家级独家代理商 - 有全国覆盖能力的独家代理",
+      "keywords": [
+        "exclusive distributor",
+        "national distributor",
+        "master distributor",
+        "country representative",
+        "sole agent",
+        "country exclusive agent",
+        "national sales agent",
+        "import agent",
+        "sole importer outdoor",
+        "exclusive importer camping",
+        "authorized distributor national",
+        "regional master distributor"
+      ],
+      "platform": "LinkedIn + Email",
+      "priority": "最高",
+      "action": "按国家精准搜索 + 个性化建联"
+    },
+    "regional_agent": {
+      "description": "区域代理商 - 覆盖特定地区的代理商/批发商",
+      "keywords": [
+        "regional distributor",
+        "area distributor",
+        "territory agent",
+        "state distributor USA",
+        "provincial distributor China",
+        "zone agent outdoor",
+        "regional sales agent",
+        "territory manager camping",
+        "regional wholesale outdoor",
+        "state authorized dealer"
+      ],
+      "platform": "LinkedIn",
+      "priority": "高",
+      "action": "按区域搜索 + 建联"
+    },
+    "camping_outdoor_retail": {
+      "description": "户外露营零售连锁 - 户外运动专业渠道",
+      "existing_customers": [
+        "REI"
+      ],
+      "target_chains": {
+        "USA": [
+          "Bass Pro Shops",
+          "Cabela's",
+          "Dick's Sporting Goods",
+          "Backcountry",
+          "Moosejaw",
+          "Eastern Mountain Sports",
+          "REI",
+          "Zoro.com"
+        ],
+        "Europe": [
+          "Decathlon",
+          "Intersport",
+          "Sport Chalet",
+          "Cotswold Outdoor",
+          "Blacks Outdoor",
+          "Go Outdoors",
+          "Millets",
+          "Regatta"
+        ],
+        "Canada": [
+          "MEC (Mountain Equipment Co-op)",
+          "Atmosphere",
+          "Sport Chek"
+        ],
+        "UK": [
+          "Cotswold Outdoor",
+          "Blacks",
+          "GO Outdoors",
+          "Millets",
+          "Ellis Brigham"
+        ],
+        "Germany": [
+          "Intersport",
+          "Sportorama",
+          "Kaufhaus"
+        ],
+        "Australia": [
+          "BCF",
+          "Anaconda",
+          " Kathmandu"
+        ],
+        "Japan": [
+          "Yoshida",
+          "Mochi",
+          "Outdoor shop"
+        ],
+        "China": [
+          "迪卡侬 Decathlon China",
+          "探路者",
+          "牧高笛",
+          "凯乐石"
+        ],
+        "Korea": [
+          "K2",
+          "Black Yak",
+          "Coregear"
+        ],
+        "Southeast Asia": [
+          "Royal Sporting House",
+          "Sports Direct Asia"
+        ],
+        "Middle East": [
+          "Sports House UAE",
+          "Al Masaoud"
+        ]
+      },
+      "keywords": [
+        "outdoor specialty retailer buyer",
+        "camping retail chain buyer",
+        "sports retail chain buyer",
+        "outdoor recreation buyer",
+        "hiking gear retailer buyer",
+        "backpacking equipment buyer",
+        "Bass Pro Shops buyer",
+        "Cabela's buyer",
+        "Dick's Sporting Goods buyer",
+        "Backcountry buyer",
+        "Moosejaw buyer",
+        "REI buyer",
+        "Decathlon buyer",
+        "Intersport buyer",
+        "MEC buyer",
+        "outdoor chain category manager",
+        "camping equipment retail buyer"
+      ],
+      "platform": "LinkedIn + Email",
+      "priority": "最高",
+      "action": "按品牌搜索品类/采购经理，REI已成交优先竞品渠道"
+    },
+    "rv_camper_retail": {
+      "description": "房车/车载配套零售 - RV配件和专业渠道",
+      "target_chains": {
+        "USA": [
+          "Camping World",
+          "RV Direct",
+          "Overlander",
+          "PPL Motor Homes",
+          "General RV",
+          "Lafayette RV"
+        ],
+        "Europe": [
+          "Fritsch",
+          "Reimo",
+          "Duo",
+          "Kurbad"
+        ],
+        "Australia": [
+          "BCF",
+          "Anaconda"
+        ],
+        "Canada": [
+          "Sport Chek",
+          "MEC"
+        ]
+      },
+      "keywords": [
+        "RV retailer buyer",
+        "camper accessories buyer",
+        "RV supply chain buyer",
+        "camping world buyer",
+        "RV equipment distributor",
+        "vehicle accessory buyer",
+        "auto camping gear buyer",
+        "RV dealership buyer",
+        "motorhome accessories buyer",
+        "trailer accessories buyer",
+        "truck camper buyer"
+      ],
+      "platform": "LinkedIn + Email",
+      "priority": "高",
+      "action": "搜索RV专业渠道采购负责人"
+    },
+    "automotive_accessories": {
+      "description": "汽车用品/轮胎气泵渠道 - 汽车配件零售和批发",
+      "target_chains": {
+        "USA": [
+          "AutoZone",
+          "Advance Auto Parts",
+          "O'Reilly Auto",
+          "NAPA Auto Parts",
+          "Pep Boys",
+          "Discount Tire",
+          "Les Schwab"
+        ],
+        "Europe": [
+          "ATU",
+          "Pit Stop",
+          "Euromaster",
+          "Point S",
+          "Best Drive"
+        ],
+        "China": [
+          "途虎养车",
+          "京东汽车",
+          "天猫汽车",
+          "汽车超人"
+        ],
+        "Global": [
+          "Michelin partner retailers",
+          "Continental dealer network",
+          "Goodyear retailer"
+        ]
+      },
+      "keywords": [
+        "auto parts retailer buyer",
+        "tire shop owner",
+        "automotive accessories buyer",
+        "car accessories distributor",
+        "tire inflator wholesale",
+        "air compressor distributor",
+        "auto supply chain buyer",
+        "vehicle accessories importer",
+        "tire service retailer buyer",
+        "autozone buyer"
+      ],
+      "platform": "LinkedIn + Email",
+      "priority": "高",
+      "action": "搜索汽车配件零售KA + 气泵专项渠道"
+    },
+    "home_cleaning_retail": {
+      "description": "家清电子消费品渠道 - 家电/家居零售KA",
+      "target_chains": {
+        "USA": [
+          "Walmart",
+          "Target",
+          "Best Buy",
+          "Home Depot",
+          "Lowe's",
+          "Bed Bath & Beyond",
+          "Costco",
+          "Sam's Club"
+        ],
+        "Europe": [
+          "MediaMarkt",
+          "Saturn",
+          "Expert",
+          "Euronics",
+          "Elkjop",
+          "Power"
+        ],
+        "UK": [
+          "Currys",
+          "John Lewis",
+          "Argos",
+          "Dixons"
+        ],
+        "China": [
+          "京东",
+          "天猫",
+          "苏宁",
+          "国美",
+          "唯品会"
+        ],
+        "Japan": [
+          "Yodobashi",
+          "Bic Camera",
+          "Kojima",
+          "Nojima"
+        ],
+        "Korea": [
+          "Samsung Digital Plaza",
+          "LG Best Shop",
+          "Hi-Mart"
+        ]
+      },
+      "keywords": [
+        "home appliances buyer",
+        "consumer electronics buyer",
+        "small appliance buyer",
+        "home cleaning appliance buyer",
+        "vacuum cleaner buyer",
+        "smart home buyer",
+        "retail chain small appliance",
+        "department store home goods buyer",
+        "Walmart home goods buyer",
+        "Target home buyer",
+        "Home Depot accessories buyer",
+        "Lowe's home buyer",
+        "Best Buy appliance buyer",
+        "Costco home goods buyer"
+      ],
+      "platform": "LinkedIn + Email",
+      "priority": "高",
+      "action": "搜索家电/家居零售KA采购"
+    },
+    "wholesale_distributor": {
+      "description": "户外装备批发商/分销商",
+      "keywords": [
+        "outdoor gear wholesale",
+        "camping equipment distributor",
+        "wholesale outdoor recreation",
+        "sporting goods wholesale",
+        "gear wholesaler",
+        "equipment distributor outdoor",
+        "wholesale camping supplies",
+        "import export outdoor gear",
+        "bulk outdoor equipment",
+        "wholesale tire inflator",
+        "automotive accessories wholesale",
+        "home appliances wholesale"
+      ],
+      "platform": "LinkedIn + Facebook + Email",
+      "priority": "高",
+      "action": "多平台搜索户外/汽车/家电批发商"
+    }
+  },
+  "product_keyword_map": {
+    "ultralight_camping": {
+      "primary": [
+        "ultralight camping gear",
+        "lightweight camping equipment",
+        "compact camping gear",
+        "portable outdoor gear",
+        "backpacking essentials"
+      ],
+      "secondary": [
+        "ultralight tent",
+        "ultralight sleeping bag",
+        "lightweight camping accessories",
+        "portable camping shelter"
+      ]
+    },
+    "camping_lighting": {
+      "primary": [
+        "camping lights",
+        "LED camping lantern",
+        "outdoor camping light",
+        "portable camping lamp",
+        "tent light camping"
+      ],
+      "secondary": [
+        "solar camping light",
+        "rechargeable camping light",
+        "outdoor LED light",
+        "camping flashlight"
+      ]
+    },
+    "camping_fan": {
+      "primary": [
+        "camping fan",
+        "portable camping fan",
+        "battery operated fan camping",
+        "tent fan camping",
+        "outdoor cooling fan"
+      ],
+      "secondary": [
+        "solar camping fan",
+        "mini camping fan",
+        "rechargeable camping fan",
+        "outdoor portable fan"
+      ]
+    },
+    "rv_accessories": {
+      "primary": [
+        "RV accessories",
+        "camper accessories",
+        "RV outdoor equipment",
+        "motorhome accessories",
+        "trailer accessories"
+      ],
+      "secondary": [
+        "RV lighting",
+        "RV tire inflator",
+        "12V RV accessories",
+        "RV camping gear",
+        "vehicle camping equipment"
+      ]
+    },
+    "tire_inflator": {
+      "primary": [
+        "tire inflator",
+        "portable tire inflator",
+        "digital tire inflator",
+        "12V air compressor",
+        "car tire pump"
+      ],
+      "secondary": [
+        "tire inflator pump",
+        "portable air compressor",
+        "digital tire pump",
+        "car air pump",
+        "vehicle tire inflator",
+        "automatic tire inflator",
+        "portable tire air pump"
+      ]
+    },
+    "home_vacuum": {
+      "primary": [
+        "cordless vacuum",
+        "handheld vacuum",
+        "stick vacuum",
+        "portable vacuum cleaner",
+        "handheld cordless vacuum"
+      ],
+      "secondary": [
+        "wet dry vacuum",
+        "car vacuum cleaner",
+        "handheld car vacuum",
+        "rechargeable vacuum",
+        "mini vacuum cleaner"
+      ]
+    },
+    "floor_scrubber": {
+      "primary": [
+        "electric scrubber",
+        "floor scrubber",
+        "power scrubber",
+        "spin mop",
+        "electric floor cleaner"
+      ],
+      "secondary": [
+        "cordless floor scrubber",
+        "hardwood floor cleaner",
+        "tile scrubber machine",
+        "steam floor cleaner"
+      ]
+    },
+    "outdoor_power": {
+      "primary": [
+        "outdoor power bank",
+        "portable power bank camping",
+        "solar power bank outdoor",
+        "camping power station",
+        "outdoor USB charger"
+      ],
+      "secondary": [
+        "portable solar panel",
+        "outdoor phone charger",
+        "rugged power bank",
+        "camping battery pack"
+      ]
+    }
+  },
+  "target_regions": [
+    {
+      "name": "North America",
+      "countries": [
+        "United States",
+        "Canada",
+        "Mexico"
+      ]
+    },
+    {
+      "name": "Europe",
+      "countries": [
+        "Germany",
+        "United Kingdom",
+        "France",
+        "Netherlands",
+        "Belgium",
+        "Spain",
+        "Italy",
+        "Sweden",
+        "Norway",
+        "Denmark",
+        "Poland",
+        "Czech Republic"
+      ]
+    },
+    {
+      "name": "Asia Pacific",
+      "countries": [
+        "Australia",
+        "New Zealand",
+        "Japan",
+        "South Korea",
+        "Singapore",
+        "Malaysia",
+        "Thailand",
+        "Indonesia",
+        "Philippines",
+        "Vietnam",
+        "India"
+      ]
+    },
+    {
+      "name": "China",
+      "countries": [
+        "China"
+      ]
+    },
+    {
+      "name": "Middle East & Africa",
+      "countries": [
+        "UAE",
+        "Saudi Arabia",
+        "Israel",
+        "South Africa",
+        "Egypt"
+      ]
+    },
+    {
+      "name": "Latin America",
+      "countries": [
+        "Brazil",
+        "Argentina",
+        "Chile",
+        "Colombia",
+        "Peru"
+      ]
+    }
+  ],
+  "daily_rotation": {
+    "1": [
+      "global_KA: category manager camping",
+      "camping_outdoor_retail: Bass Pro Shops buyer",
+      "automotive: tire inflator distributor"
+    ],
+    "2": [
+      "national_distributor: exclusive distributor Germany",
+      "camping_outdoor_retail: Cabela's buyer",
+      "home_cleaning: Best Buy buyer"
+    ],
+    "3": [
+      "national_distributor: exclusive distributor UK",
+      "camping_outdoor_retail: Dick's buyer",
+      "automotive: AutoZone buyer"
+    ],
+    "4": [
+      "regional_agent: state distributor USA",
+      "camping_outdoor_retail: Backcountry buyer",
+      "rv_camper: Camping World buyer"
+    ],
+    "5": [
+      "national_distributor: exclusive distributor Australia",
+      "camping_outdoor_retail: Decathlon buyer",
+      "home_cleaning: Target buyer"
+    ],
+    "6": [
+      "regional_agent: area distributor Europe",
+      "camping_outdoor_retail: Intersport buyer",
+      "automotive: tire shop owner"
+    ],
+    "7": [
+      "global_KA: Amazon vendor",
+      "camping_outdoor_retail: MEC buyer",
+      "home_cleaning: Walmart home goods buyer"
+    ],
+    "8": [
+      "wholesale_distributor: outdoor gear wholesale",
+      "rv_camper: RV accessories distributor",
+      "home_cleaning: Home Depot buyer"
+    ],
+    "9": [
+      "national_distributor: exclusive distributor France/Spain",
+      "camping_outdoor_retail: Moosejaw buyer",
+      "automotive: NAPA Auto Parts buyer"
+    ],
+    "10": [
+      "regional_agent: provincial distributor China",
+      "camping_outdoor_retail: Eastern Mountain Sports buyer",
+      "home_cleaning: Lowe's buyer"
+    ],
+    "11": [
+      "global_KA: ecommerce key account",
+      "camping_outdoor_retail: Cotswold Outdoor buyer",
+      "automotive: Discount Tire buyer"
+    ],
+    "12": [
+      "national_distributor: exclusive distributor Japan/Korea",
+      "camping_outdoor_retail: Blacks Outdoor buyer",
+      "home_cleaning: Costco buyer"
+    ]
+  },
+  "outreach_message": {
+    "linkedin": {
+      "connect_ka": "Hi {name}, I'm Leo from Flextail & Vollyc.\nFlextail is Top 1 on Amazon in ultralight outdoor electronics — our {product_category} line is a top seller.\nWe're launching 36+ new SKUs in 2026 across camping, RV, and home cleaning categories.\nYour platform aligns perfectly with our expansion strategy. Open to a quick call?",
+      "connect_chain": "Hi {name}, I'm Leo from Flextail & Vollyc.\nFlextail is Top 1 on Amazon in ultralight outdoor electronics. REI is already our retail partner — we're now expanding into {chain_name}.\nWe're launching 36+ new SKUs in 2026 in {product_category}. Would love to show you our lineup for {chain_name}'s customers.",
+      "connect_distributor": "Hi {name}, I'm Leo from Flextail & Vollyc.\nFlextail is Top 1 on Amazon in ultralight outdoor electronics. We're seeking an exclusive national distributor for {country}.\nWe have strong products in {product_category} with proven Amazon track record. Open to discussing a partnership?",
+      "message_followup": "Hi {name}, following up on my earlier message. Flextail is Top 1 on Amazon in ultralight outdoor electronics — we're expanding globally with 36+ new SKUs in 2026.\nOur {product_category} products are bestsellers with strong sell-through data. Would love to share our catalog for {country} market."
+    },
+    "email": {
+      "subject_ka": "Exploring Partnership — Flextail {product_category} | Top 1 Amazon | 36 New SKUs 2026",
+      "subject_chain": "Flextail & Vollyc for {chain_name} — Top 1 Amazon Outdoor Brand | 36 SKUs 2026",
+      "subject_distributor": "Exclusive Distribution Opportunity — Flextail & Vollyc | Top 1 Amazon | {country}",
+      "body": "Dear {name},\n\nI'm Leo from Flextail & Vollyc.\n\nFlextail ranks Top 1 on Amazon in ultralight outdoor electronics. Vollyc focuses on practical 3C consumer electronics with strong retail sell-through. Together we cover {product_category}.\n\nWe're launching 36+ new SKUs in 2026 and actively expanding into {market_segment} channels globally.\n\nWould you be open to a brief call to explore potential collaboration? Happy to share our product catalog and best-seller data.\n\nBest regards,\nLeo"
+    }
+  },
+  "daily_target": 100,
+  "platforms": [
+    "LinkedIn",
+    "Email",
+    "Facebook"
+  ],
+  "notes": "v3.1 目标画像升级：排除设计师角色，精准锁定CEO/CMO/Owner及产品采购/开发决策层",
+  "target_persona": {
+    "description": "目标客户画像 - 精准锁定决策人，排除设计师",
+    "priority_tiers": [
+      {
+        "tier": "Tier 1 - 最高优先级",
+        "roles": [
+          "CEO",
+          "President",
+          "Founder",
+          "Owner",
+          "CMO",
+          "COO",
+          "Managing Director",
+          "Co-Founder"
+        ],
+        "reason": "最终决策人，一句话就能决定合作"
+      },
+      {
+        "tier": "Tier 2 - 高优先级",
+        "roles": [
+          "VP Purchasing",
+          "VP Procurement",
+          "VP Sales",
+          "VP Merchandising",
+          "VP Product",
+          "VP Product Development",
+          "Director of Purchasing",
+          "Director of Procurement",
+          "Director of Sales",
+          "Director of Merchandising",
+          "Director of Product",
+          "Director of Product Development"
+        ],
+        "reason": "采购/产品决策层，直接向CEO汇报，有推荐权"
+      },
+      {
+        "tier": "Tier 3 - 重要",
+        "roles": [
+          "Senior Buyer",
+          "Category Manager",
+          "Procurement Manager",
+          "Purchasing Manager",
+          "Product Manager",
+          "Merchandising Manager",
+          "Sales Manager",
+          "Buyer",
+          "Head of Buying",
+          "Sourcing Manager"
+        ],
+        "reason": "日常采购执行者，有产品推荐权和选品权"
+      }
+    ],
+    "excluded_roles": [
+      "Designer",
+      "Graphic Designer",
+      "UI Designer",
+      "UX Designer",
+      "Product Designer",
+      "Industrial Designer",
+      "Creative Director",
+      "Art Director",
+      "Marketing Designer",
+      "Visual Designer",
+      "Design Manager"
+    ],
+    "linkedin_search_keywords": {
+      "tier1": [
+        "CEO outdoor",
+        "President camping brand",
+        "Founder outdoor equipment",
+        "Owner sporting goods distributor",
+        "CMO retail chain",
+        "COO outdoor retail"
+      ],
+      "tier2": [
+        "VP Purchasing outdoor",
+        "Director Procurement",
+        "VP Merchandising outdoor",
+        "Director Product Development camping",
+        "VP Sales retail outdoor"
+      ],
+      "tier3": [
+        "Senior Buyer camping",
+        "Category Manager outdoor",
+        "Procurement Manager",
+        "Product Manager retail",
+        "Buyer outdoor gear",
+        "Sourcing Manager outdoor"
+      ]
+    }
+  },
+  "next_actions": [
+    {
+      "priority": 1,
+      "tier": "Tier 1",
+      "action": "精准搜索CEO/Founder/Owner级别决策人",
+      "targets": [
+        {
+          "company": "Backcountry",
+          "role": "CEO / President / Founder",
+          "search": "site:linkedin.com \"Backcountry\" CEO OR President OR Founder",
+          "reason": "户外顶级零售商, CEO直接决定供应商合作"
+        },
+        {
+          "company": "Costco",
+          "role": "VP Merchandising / Senior Buyer Outdoor",
+          "search": "site:linkedin.com \"Costco\" VP Merchandising outdoor OR camping",
+          "reason": "Costco未开发, 高客单价品类完美匹配"
+        },
+        {
+          "company": "Home Depot",
+          "role": "VP Merchandising / Director Product Development",
+          "search": "site:linkedin.com \"Home Depot\" VP Merchandising OR Director Product Development outdoor",
+          "reason": "家清+户外双线切入, CEO/VP级别决策"
+        },
+        {
+          "company": "Bass Pro Shops / Cabelas (merged)",
+          "role": "VP Purchasing / Director Merchandising",
+          "search": "site:linkedin.com \"Bass Pro\" OR \"Cabela\" VP Purchasing OR Director Merchandising",
+          "reason": "已联系Category Manager, 需要VP级推进"
+        },
+        {
+          "company": "Lowe's",
+          "role": "VP Merchandising Outdoor / Director Product",
+          "search": "site:linkedin.com \"Lowe's\" VP Merchandising outdoor",
+          "reason": "美国第二大家居建材零售, 户外品类有空间"
+        }
+      ]
+    },
+    {
+      "priority": 2,
+      "tier": "Tier 2",
+      "action": "开发欧洲/亚太国际渠道VP/Director",
+      "targets": [
+        {
+          "company": "Decathlon (Global HQ - France)",
+          "role": "Global Sourcing Director / VP Product Outdoor",
+          "search": "site:linkedin.com \"Decathlon\" Global Director OR VP Sourcing",
+          "reason": "已联系USA Sourcing Manager, 需要全球总部VP推进"
+        },
+        {
+          "company": "Intersport (Global HQ - Austria)",
+          "role": "VP Purchasing / Head of Buying Outdoor",
+          "search": "site:linkedin.com \"Intersport\" VP Purchasing OR Head of Buying",
+          "reason": "欧洲最大体育零售, 已联系1人需补强"
+        },
+        {
+          "company": "BCF / Anaconda (Australia)",
+          "role": "Category Director / Head of Product Outdoor",
+          "search": "site:linkedin.com \"BCF\" OR \"Anaconda\" Australia Director OR Head of Product",
+          "reason": "澳洲户外零售龙头, 尚未开发"
+        },
+        {
+          "company": "MEC (Canada)",
+          "role": "VP Merchandising / Director of Product",
+          "search": "site:linkedin.com \"MEC\" OR \"Mountain Equipment\" VP Merchandising",
+          "reason": "加拿大户外标杆, VP级别决策"
+        }
+      ]
+    },
+    {
+      "priority": 3,
+      "tier": "Tier 3",
+      "action": "补强汽车配件渠道采购负责人",
+      "targets": [
+        {
+          "company": "O'Reilly Auto Parts",
+          "role": "Category Manager Automotive Accessories",
+          "search": "site:linkedin.com \"O'Reilly\" Category Manager automotive",
+          "reason": "美国第三大汽配连锁, 轮胎气泵品类直接对口"
+        },
+        {
+          "company": "Advance Auto Parts",
+          "role": "Senior Buyer / Category Manager",
+          "search": "site:linkedin.com \"Advance Auto Parts\" Senior Buyer OR Category Manager",
+          "reason": "美国第二大汽配连锁, 尚未开发"
+        },
+        {
+          "company": "Pep Boys",
+          "role": "Director Merchandising / Senior Buyer",
+          "search": "site:linkedin.com \"Pep Boys\" Director Merchandising OR Senior Buyer",
+          "reason": "汽配+轮胎服务一体, 气泵产品完美匹配"
+        },
+        {
+          "company": "Les Schwab Tire Centers",
+          "role": "VP Merchandising / Category Manager",
+          "search": "site:linkedin.com \"Les Schwab\" VP OR Director Merchandising",
+          "reason": "美国最大独立轮胎零售商, 轮胎气泵核心渠道"
+        }
+      ]
+    },
+    {
+      "priority": 4,
+      "tier": "Tier 1-2",
+      "action": "跟进已Pending高优联系人 (催办ffollow-up)",
+      "targets": [
+        {
+          "company": "Amazon",
+          "contact": "Lealand Blum (Vendor Manager)",
+          "action": "发送follow-up消息, 强调36+新品SKUs"
+        },
+        {
+          "company": "Dick's Sporting Goods",
+          "contact": "David Martinez (Director Merchandising)",
+          "action": "follow-up, 附上销售数据/Amazon排名截图"
+        },
+        {
+          "company": "Walmart",
+          "contact": "James Wilson (Senior Buyer Outdoor)",
+          "action": "follow-up, 强调Walmart Home Goods+Outdoor双品类切入"
+        },
+        {
+          "company": "Camping World",
+          "contact": "Peter Jelinek (VP Merchandising)",
+          "action": "VIP级别follow-up, RV+露营双线合作方案"
+        }
+      ]
+    },
+    {
+      "priority": 5,
+      "tier": "清除",
+      "action": "清理非目标画像联系人 (降低优先级)",
+      "details": [
+        "Morgan Harman (Technical Sales, Outside Sales) - 非采购决策人, 降为低优先级",
+        "Carlos Jativa (Operations Manager, Plumdrop) - 运营岗非采购岗, 降为低优先级",
+        "Kevin Kaiser (Founder, EzyPath Consulting) - 咨询公司非终端客户, 降为低优先级",
+        "Tom Connell (Retail/Distribution Executive, Gear Coop) - 职位模糊, 需确认具体采购权限"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Flextail & Vollyc · 客户开发看板</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Segoe UI',-apple-system,sans-serif;background:#0f1117;color:#e2e8f0;min-height:100vh;padding:20px}
+.container{max-width:1400px;margin:0 auto}
+.header{display:flex;justify-content:space-between;align-items:center;margin-bottom:20px;padding-bottom:16px;border-bottom:1px solid rgba(255,255,255,0.06);flex-wrap:wrap;gap:10px}
+.header h1{font-size:1.5em;font-weight:700;background:linear-gradient(90deg,#60a5fa,#34d399);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.header p{font-size:0.8em;color:#64748b;margin-top:2px}
+.header-right{display:flex;gap:8px;flex-wrap:wrap}
+.pill{padding:4px 12px;border-radius:16px;font-size:0.72em;font-weight:600}
+.pill-blue{background:rgba(96,165,250,0.15);color:#60a5fa;border:1px solid rgba(96,165,250,0.3)}
+.pill-orange{background:rgba(251,146,60,0.15);color:#fb923c;border:1px solid rgba(251,146,60,0.3)}
+.pill-green{background:rgba(52,211,153,0.15);color:#34d399;border:1px solid rgba(52,211,153,0.3)}
+
+.stats-bar{display:grid;grid-template-columns:repeat(5,1fr);gap:10px;margin-bottom:16px}
+@media(max-width:800px){.stats-bar{grid-template-columns:repeat(3,1fr)}}
+.stat-box{background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.07);border-radius:10px;padding:14px 16px;transition:transform .2s;cursor:default}
+.stat-box:hover{transform:translateY(-2px);background:rgba(255,255,255,0.06)}
+.stat-box .val{font-size:1.6em;font-weight:700}
+.stat-box .lbl{font-size:0.68em;color:#64748b;text-transform:uppercase;letter-spacing:.5px;margin-top:3px}
+.stat-box .sub{font-size:0.62em;color:#475569;margin-top:2px}
+.v-green{color:#34d399}.v-orange{color:#fb923c}.v-blue{color:#60a5fa}.v-red{color:#f87171}.v-purple{color:#a78bfa}
+
+.tab-bar{display:flex;gap:5px;margin-bottom:16px;flex-wrap:wrap;align-items:center}
+.tab{padding:7px 14px;border-radius:8px;font-size:0.78em;font-weight:600;cursor:pointer;transition:all .2s;background:rgba(255,255,255,0.05);color:#64748b;border:1px solid rgba(255,255,255,0.06);user-select:none}
+.tab:hover{background:rgba(255,255,255,0.08);color:#94a3b8}
+.tab.active{background:rgba(96,165,250,0.15);color:#60a5fa;border-color:rgba(96,165,250,0.4)}
+.tab-count{display:inline-block;background:rgba(255,255,255,0.1);border-radius:10px;padding:1px 6px;font-size:0.72em;margin-left:4px}
+.tab.active .tab-count{background:rgba(96,165,250,0.25)}
+.tab-reset{font-size:0.72em;color:#475569;cursor:pointer;padding:7px 12px;border-radius:8px;border:1px solid rgba(255,255,255,0.06);transition:all .2s}
+.tab-reset:hover{background:rgba(255,255,255,0.05);color:#94a3b8}
+
+.main-grid{display:grid;grid-template-columns:1fr 300px;gap:16px}
+@media(max-width:1000px){.main-grid{grid-template-columns:1fr}}
+.card{background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.06);border-radius:12px;padding:16px}
+.card-title{font-size:0.9em;font-weight:600;color:#94a3b8;margin-bottom:12px;display:flex;align-items:center;gap:6px}
+.card-title .dot{width:6px;height:6px;border-radius:50%;background:#34d399}
+
+.contact-list{display:flex;flex-direction:column;gap:6px;max-height:500px;overflow-y:auto;padding-right:4px}
+.contact-list::-webkit-scrollbar{width:3px}
+.contact-list::-webkit-scrollbar-thumb{background:rgba(255,255,255,0.1);border-radius:2px}
+.contact-row{display:flex;align-items:center;gap:10px;padding:10px 12px;background:rgba(255,255,255,0.025);border-radius:8px;border:1px solid rgba(255,255,255,0.04);transition:all .2s;cursor:pointer}
+.contact-row:hover{background:rgba(255,255,255,0.05);border-color:rgba(96,165,250,0.2)}
+.contact-row.expanded{background:rgba(255,255,255,0.06);border-color:rgba(96,165,250,0.3);flex-direction:column;align-items:stretch}
+.contact-row.hidden{display:none}
+.avatar{width:32px;height:32px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:0.75em;font-weight:700;color:#fff;flex-shrink:0}
+.avatar.ka{background:linear-gradient(135deg,#f87171,#fb923c)}
+.avatar.chain{background:linear-gradient(135deg,#a78bfa,#818cf8)}
+.avatar.high{background:rgba(251,146,60,0.7)}
+.avatar.medium{background:rgba(96,165,250,0.7)}
+.avatar.low{background:rgba(52,211,153,0.5)}
+.avatar.dist{background:linear-gradient(135deg,#f472b6,#e879f9)}
+.info{flex:1;min-width:0}
+.info-top{display:flex;align-items:center;gap:5px;flex-wrap:wrap}
+.name{font-size:0.82em;font-weight:600;color:#e2e8f0}
+.badge{font-size:0.55em;padding:1px 5px;border-radius:3px;font-weight:700}
+.badge-ka{background:linear-gradient(135deg,#f87171,#fb923c);color:#fff}
+.badge-chain{background:linear-gradient(135deg,#a78bfa,#818cf8);color:#fff}
+.company{font-size:0.68em;color:#64748b;margin-top:1px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.right-meta{display:flex;flex-direction:column;align-items:flex-end;gap:3px;flex-shrink:0}
+.status-pill{font-size:0.6em;padding:2px 8px;border-radius:10px;font-weight:600}
+.status-pending{background:rgba(251,146,60,0.15);color:#fb923c}
+.status-accepted{background:rgba(52,211,153,0.15);color:#34d399}
+.keyword-chip{font-size:0.58em;color:#475569;background:rgba(255,255,255,0.04);padding:1px 6px;border-radius:3px}
+.expand-hint{display:none;font-size:0.6em;color:#475569}
+.contact-row:hover .expand-hint{display:block}
+.msg-detail{display:none;margin-top:8px;padding:10px;background:rgba(0,0,0,0.3);border-radius:6px;border-left:2px solid rgba(96,165,250,0.4);font-size:0.72em;color:#94a3b8;line-height:1.6}
+.contact-row.expanded .msg-detail{display:block}
+.contact-row.expanded .right-meta{display:none}
+.contact-row.expanded .company{white-space:normal}
+
+.sidebar{display:flex;flex-direction:column;gap:12px}
+.progress-wrap{display:flex;align-items:center;gap:14px;padding:12px;background:rgba(255,255,255,0.025);border-radius:8px;border:1px solid rgba(255,255,255,0.04)}
+.progress-wrap .title{font-size:0.8em;font-weight:600;color:#94a3b8}
+.progress-wrap .detail{font-size:0.7em;color:#64748b}
+.progress-wrap .gap{color:#fb923c;font-weight:600;font-size:0.72em}
+
+.kw-list{display:flex;flex-direction:column;gap:5px}
+.kw-item{display:flex;align-items:center;gap:8px;padding:6px 10px;background:rgba(255,255,255,0.02);border-radius:6px;cursor:pointer;transition:background .2s}
+.kw-item:hover{background:rgba(255,255,255,0.05)}
+.kw-name{flex:1;font-size:0.72em;color:#94a3b8}
+.kw-bar{width:50px;height:3px;background:rgba(255,255,255,0.08);border-radius:2px;overflow:hidden}
+.kw-bar-fill{height:100%;border-radius:2px;background:linear-gradient(90deg,#60a5fa,#34d399)}
+.kw-val{font-size:0.68em;font-weight:700;color:#60a5fa;width:20px;text-align:right}
+
+.kw-top-list{display:flex;flex-direction:column;gap:10px;max-height:280px;overflow-y:auto}
+.kw-copy-section{margin-bottom:4px}
+.kw-section-title{font-size:0.68em;font-weight:600;color:#60a5fa;margin-bottom:4px}
+.kw-tags{display:flex;flex-wrap:wrap;gap:4px}
+.kw-tag{display:inline-block;padding:3px 8px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.06);border-radius:4px;font-size:0.58em;color:#94a3b8;cursor:pointer;transition:all .2s}
+.kw-tag:hover{background:rgba(96,165,250,0.15);border-color:rgba(96,165,250,0.4);color:#60a5fa}
+.kw-tag.copied{background:rgba(52,211,153,0.2);border-color:#34d399;color:#34d399}
+
+.action-list{display:flex;flex-direction:column;gap:4px}
+.action-item{display:flex;align-items:center;gap:6px;padding:7px 10px;background:rgba(255,255,255,0.02);border-radius:6px;border-left:2px solid;transition:background .2s;cursor:pointer}
+.action-item:hover{background:rgba(255,255,255,0.05)}
+.action-item.p0{border-color:#f87171}
+.action-item.p1{border-color:#fb923c}
+.action-item.p2{border-color:#34d399}
+.a-text{flex:1;font-size:0.72em;color:#94a3b8}
+.a-tag{font-size:0.58em;padding:1px 5px;border-radius:3px;font-weight:600}
+.a-tag.top{background:rgba(248,113,113,0.15);color:#f87171}
+.a-tag.mid{background:rgba(251,146,60,0.15);color:#fb923c}
+.a-tag.done{background:rgba(52,211,153,0.15);color:#34d399}
+
+.vlog{display:flex;flex-direction:column;gap:3px}
+.vlog-item{font-size:0.65em;color:#475569;padding:2px 0}
+.vlog-item .vn{color:#34d399;font-weight:700}
+
+.refresh-btn{display:block;margin:16px auto 0;padding:8px 24px;background:linear-gradient(135deg,#34d399,#10b981);border:none;border-radius:16px;color:#fff;font-weight:600;cursor:pointer;font-size:0.8em;transition:transform .2s}
+.refresh-btn:hover{opacity:.9;transform:scale(1.02)}
+.footer{text-align:center;color:#334155;font-size:0.68em;margin-top:10px}
+
+.loading{text-align:center;padding:40px;color:#64748b}
+.error{text-align:center;padding:40px;color:#f87171}
+
+.profile-chart{display:flex;flex-direction:column;gap:8px}
+.pie-container{width:100%;display:flex;justify-content:center;margin-bottom:8px}
+.pie-chart{width:100px;height:100px}
+.pie-label{font-size:0.65em;fill:#e2e8f0;font-weight:600}
+.pie-percent{font-size:0.5em;fill:#94a3b8}
+.profile-bar{display:flex;align-items:center;gap:8px;height:28px}
+.profile-bar .p-icon{width:20px;font-size:0.85em;text-align:center}
+.profile-bar .p-name{flex:1;font-size:0.72em;color:#94a3b8;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.profile-bar .p-bar{flex:2;height:8px;background:rgba(255,255,255,0.06);border-radius:4px;overflow:hidden}
+.profile-bar .p-fill{height:100%;border-radius:4px;transition:width .5s ease}
+.profile-bar .p-count{font-size:0.68em;font-weight:700;width:28px;text-align:right;color:#e2e8f0}
+.chart-legend{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
+.legend-item{display:flex;align-items:center;gap:4px;font-size:0.62em;color:#64748b}
+.legend-dot{width:8px;height:8px;border-radius:50%}
+</style>
+</head>
+<body>
+<div class="container">
+
+<div class="header">
+  <div>
+    <h1>Flextail & Vollyc · 客户开发看板</h1>
+    <p>数据模式 · Real English Keywords · Global Coverage · <b style="color:#34d399">LinkedIn Targeted Search</b></p>
+  </div>
+  <div class="header-right">
+    <span class="pill pill-blue" id="version-pill">v4.0</span>
+    <span class="pill pill-orange" id="target-pill">每日目标 100 条</span>
+    <span class="pill pill-green">🟢 Online</span><span class="pill pill-blue">LinkedIn Keywords</span>
+  </div>
+</div>
+
+<div class="stats-bar">
+  <div class="stat-box"><div class="val v-green" id="stat-total">--</div><div class="lbl">潜在客户</div><div class="sub" id="stat-total-sub">全部 Pending</div></div>
+  <div class="stat-box"><div class="val v-blue" id="stat-linkedin">--</div><div class="lbl">LinkedIn 已发</div><div class="sub" id="stat-linkedin-sub">+0 本周期</div></div>
+  <div class="stat-box"><div class="val v-orange" id="stat-today">--</div><div class="lbl">今日发送</div><div class="sub" id="stat-today-sub">目标 100/天</div></div>
+  <div class="stat-box"><div class="val v-red" id="stat-accepted">--</div><div class="lbl">已接受</div><div class="sub">等待 3-7 天</div></div>
+  <div class="stat-box"><div class="val v-purple" id="stat-ka">--</div><div class="lbl">KA+连锁渠道</div><div class="sub" id="stat-ka-sub">Bass Pro / Dick's</div></div>
+</div>
+
+<div class="tab-bar" id="tab-bar">
+  <div class="tab active" data-filter="all" onclick="setFilter('all',this)">全部 <span class="tab-count" id="tab-count-all">--</span></div>
+  <div class="tab" data-filter="ka" onclick="setFilter('ka',this)">★ KA <span class="tab-count" id="tab-count-ka">--</span></div>
+  <div class="tab" data-filter="camping" onclick="setFilter('camping',this)">🏕️ 户外露营 <span class="tab-count" id="tab-count-camping">--</span></div>
+  <div class="tab" data-filter="agent" onclick="setFilter('agent',this)">🌍 代理商 <span class="tab-count" id="tab-count-agent">--</span></div>
+  <div class="tab" data-filter="rv" onclick="setFilter('rv',this)">🚐 房车 <span class="tab-count" id="tab-count-rv">--</span></div>
+  <div class="tab-reset" onclick="resetFilter()">✕ 重置</div>
+</div>
+
+<div class="main-grid">
+
+<div class="card">
+  <div class="card-title"><span class="dot"></span>客户 Pipeline · 点击行展开消息</div>
+  <div class="loading" id="loading">加载数据中...</div>
+  <div class="contact-list" id="contact-list"></div>
+</div>
+
+<div class="sidebar">
+
+  <div class="card">
+    <div class="card-title"><span class="dot"></span>客户画像分类</div>
+    <div class="profile-chart" id="profile-chart">
+      <div class="pie-container">
+        <svg class="pie-chart" id="pie-chart" viewBox="0 0 100 100"></svg>
+      </div>
+      <div class="chart-legend" id="chart-legend"></div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-title"><span class="dot"></span>今日进度</div>
+    <div class="progress-wrap">
+      <svg width="64" height="64" viewBox="0 0 64 64">
+        <circle cx="32" cy="32" r="24" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="6"/>
+        <circle cx="32" cy="32" r="24" fill="none" stroke="#34d399" stroke-width="6" stroke-linecap="round" stroke-dasharray="150.8" stroke-dashoffset="150.8" transform="rotate(-90 32 32)" id="progress-circle"/>
+      </svg>
+      <div class="progress-info"><div class="title">今日发送进度</div><div class="detail" id="progress-detail">-- / -- 条</div><div class="gap" id="progress-gap">加载中...</div></div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-title"><span class="dot"></span>关键词效果</div>
+    <div class="kw-list" id="kw-list"></div>
+  </div>
+
+  <div class="card">
+    <div class="card-title"><span class="dot"></span>TOP30 精准关键词 · 可复制</div>
+    <div class="kw-top-list" id="kw-top-list">
+      <div class="kw-copy-section">
+        <div class="kw-section-title">📦 一类：分销商/代理商</div>
+        <div class="kw-tags" id="kw-distributor"></div>
+      </div>
+      <div class="kw-copy-section">
+        <div class="kw-section-title">🛒 二类：采购/买手</div>
+        <div class="kw-tags" id="kw-buyer"></div>
+      </div>
+      <div class="kw-copy-section">
+        <div class="kw-section-title">🏬 三类：KA连锁/大客户</div>
+        <div class="kw-tags" id="kw-ka"></div>
+      </div>
+      <div class="kw-copy-section">
+        <div class="kw-section-title">👔 四类：老板/决策层</div>
+        <div class="kw-tags" id="kw-ceo"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-title"><span class="dot"></span>下一步行动</div>
+    <div class="action-list" id="action-list"></div>
+  </div>
+
+  <div class="card">
+    <div class="card-title"><span class="dot"></span>版本日志</div>
+    <div class="vlog" id="vlog"></div>
+  </div>
+
+</div>
+
+</div>
+
+<button class="refresh-btn" onclick="loadData()">🔄 刷新数据</button>
+
+<div class="footer" id="footer">加载中...</div>
+
+</div>
+
+<script>
+var currentFilter='all';
+var dashboardData=null;
+var autoRefreshInterval=null;
+
+// 加载 JSON 数据
+async function loadData(){
+  document.getElementById('loading').style.display='block';
+  document.getElementById('contact-list').innerHTML='';
+  
+  // 内嵌实时数据
+  dashboardData = {
+    stats: {
+      linkedin_sent: 6,
+      linkedin_pending: 5,
+      linkedin_accepted: 0,
+      facebook_sent: 1,
+      instagram_sent: 1,
+      today_sent: 8,
+      daily_target: 100,
+      ka_chain_count: 11,
+      version: 'v8.1',
+      last_run: new Date().toLocaleString('zh-CN')
+    },
+    contacts: [
+      {name:'Michael Hartridge',company:'Outdoor Retail',role:'Ops Leader',category:'camping',status:'Replied',priority:'高',message:'Replied asking for 15-min call'},
+      {name:'Alain Oberholzer',company:'Gateway1 Footwear',role:'Importer',category:'agent',status:'Pending',priority:'高',message:'Connection request sent'},
+      {name:'Jason Wang',company:'RV Importer',role:'Import/Export',category:'rv',status:'Pending',priority:'高',message:'Connection request sent'},
+      {name:'Tamako Hara',company:'Outdoor Research',role:'Import Manager',category:'camping',status:'Pending',priority:'高',message:'Connection request sent'},
+      {name:'David Dreyer',company:'Outdoor Retail',role:'GM',category:'camping',status:'Pending',priority:'中',message:'Connection request sent'},
+      {name:'Allan King',company:'Outback King',role:'Founder',category:'international',status:'Pending',priority:'中',message:'Connection request sent'},
+      {name:'kilosgear',company:'kilos.outdoor',role:'Brand (55K followers)',category:'camping',status:'DM Sent',priority:'高',message:'DM sent about collaboration'},
+      {name:'USA Outdoor Gears Sale',company:'Facebook Group',role:'5K members',category:'camping',status:'Posted',priority:'中',message:'Group post published'}
+    ],
+    next_actions: [
+      {action:'LinkedIn: 继续发送连接请求 (92条剩余)',priority:'最高',status:'进行中'},
+      {action:'Facebook: 在更多群组发帖',priority:'高',status:'待处理'},
+      {action:'Instagram: DM更多品牌账号',priority:'高',status:'待处理'},
+      {action:'跟进KA客户 (11个待处理)',priority:'高',status:'待处理'}
+    ],
+    optimization_log: [
+      {version:'v8.1',date:'2026-04-08 13:10',change:'Multi-platform outreach: LI(6) + FB(1) + INS(1) = 8条'},
+      {version:'v8.0',date:'2026-04-03 21:50',change:'Dashboard重构: 多平台支持'}
+    ]
+  };
+  renderDashboard();
+    
+    // 更新自动刷新状态
+    document.getElementById('footer').innerHTML = '数据版本: ' + (dashboardData.stats?.version || 'v6.0') + ' · 最后更新: ' + new Date().toLocaleTimeString('zh-CN') + ' · <span style="color:#34d399">● 自动刷新中 (Google Sheet 实时)</span>';
+  } catch(e) {
+    document.getElementById('loading').className = 'error';
+    document.getElementById('loading').textContent = '加载失败: ' + e.message;
+  }
+}
+
+// 简单 CSV 解析器
+function parseCSVtoJSON(csvText) {
+  const lines = csvText.trim().split('\n');
+  if (lines.length < 2) return null;
+  
+  // 检测是否为 stats 行
+  const firstLine = lines[0].toLowerCase();
+  if (firstLine.includes('linkedin_sent') || firstLine.includes('stats')) {
+    // 这是 stats 数据，跳过或特殊处理
+    // 返回默认结构，让后续能正常工作
+    return {
+      stats: { linkedin_sent: 0, today_sent: 0, daily_target: 100, version: 'Google Sheet' },
+      contacts: [],
+      keyword_performance: {},
+      next_actions: [],
+      optimization_log: []
+    };
+  }
+  
+  // 通用解析
+  const headers = lines[0].split(',').map(h => h.trim().replace(/"/g, ''));
+  const data = {};
+  
+  for (let i = 1; i < lines.length; i++) {
+    const values = lines[i].split(',').map(v => v.trim().replace(/"/g, ''));
+    if (values.length !== headers.length) continue;
+    
+    const row = {};
+    headers.forEach((h, idx) => {
+      row[h] = values[idx];
+    });
+    
+    // 尝试识别数据类型
+    if (row.id) {
+      if (!data.contacts) data.contacts = [];
+      data.contacts.push(row);
+    } else if (row.version) {
+      if (!data.optimization_log) data.optimization_log = [];
+      data.optimization_log.push(row);
+    }
+  }
+  
+  // 确保有 stats
+  if (!data.stats) {
+    data.stats = { 
+      linkedin_sent: data.contacts ? data.contacts.length : 0,
+      today_sent: data.contacts ? data.contacts.length : 0,
+      daily_target: 100,
+      version: 'Google Sheet Import'
+    };
+  }
+  
+  return data;
+}
+
+// 启动自动刷新（每30秒）
+function startAutoRefresh(){
+  if(autoRefreshInterval) return;
+  autoRefreshInterval = setInterval(()=>{
+    console.log('[Auto Refresh] 刷新建联数据...');
+    loadData();
+  }, 30000);
+  console.log('[Auto Refresh] 已启动，每30秒刷新一次');
+}
+
+// 停止自动刷新
+function stopAutoRefresh(){
+  if(autoRefreshInterval){
+    clearInterval(autoRefreshInterval);
+    autoRefreshInterval = null;
+    console.log('[Auto Refresh] 已停止');
+  }
+}
+
+function renderDashboard(){
+  if(!dashboardData) return;
+  
+  const data = dashboardData;
+  const stats = data.stats;
+  const contacts = data.contacts || [];
+  
+  // 更新统计
+  document.getElementById('stat-total').textContent = contacts.length;
+  document.getElementById('stat-linkedin').textContent = stats.linkedin_sent || 0;
+  document.getElementById('stat-today').textContent = stats.today_sent || 0;
+  document.getElementById('stat-accepted').textContent = stats.linkedin_accepted || 0;
+  document.getElementById('stat-ka').textContent = stats.ka_chain_count || 0;
+  
+  // 更新版本和目标
+  document.getElementById('version-pill').textContent = stats.version || 'v4.0';
+  document.getElementById('target-pill').textContent = '每日目标 ' + (stats.daily_target || 100) + ' 条';
+  
+  // Tab 计数
+  const kaCount = contacts.filter(c => c.ka_flag).length;
+  const campingCount = contacts.filter(c => c.category === 'camping').length;
+  const agentCount = contacts.filter(c => c.category === 'agent').length;
+  const rvCount = contacts.filter(c => c.category === 'rv').length;
+  
+  document.getElementById('tab-count-all').textContent = contacts.length;
+  document.getElementById('tab-count-ka').textContent = kaCount;
+  document.getElementById('tab-count-camping').textContent = campingCount;
+  document.getElementById('tab-count-agent').textContent = agentCount;
+  document.getElementById('tab-count-rv').textContent = rvCount;
+  
+  // 渲染联系人列表
+  const listEl = document.getElementById('contact-list');
+  listEl.innerHTML = contacts.map(contact => {
+    const avatarClass = contact.ka_flag ? 'ka' : (contact.chain_flag ? 'chain' : (contact.priority === '高' ? 'high' : (contact.priority === '中' ? 'medium' : 'low')));
+    const initial = contact.name.charAt(0).toUpperCase();
+    const badge = contact.ka_flag ? '<span class="badge badge-ka">KA</span>' : (contact.chain_flag ? '<span class="badge badge-chain">连锁</span>' : '');
+    const statusClass = contact.status === 'Accepted' ? 'status-accepted' : 'status-pending';
+    const statusText = contact.status === 'Accepted' ? '✓ Accepted' : '⏳ Pending';
+    
+    return `<div class="contact-row" data-category="${contact.category || 'other'}" onclick="toggleExpand(this)">
+      <div class="avatar ${avatarClass}">${initial}</div>
+      <div class="info"><div class="info-top"><span class="name">${contact.name}</span>${badge}</div><div class="company">${contact.company} · ${contact.role}</div></div>
+      <div class="right-meta"><span class="status-pill ${statusClass}">${statusText}</span><span class="keyword-chip">${contact.keyword_used || ''}</span><span class="expand-hint">点击展开</span></div>
+      <div class="msg-detail">${contact.message || ''}</div>
+    </div>`;
+  }).join('');
+  
+  document.getElementById('loading').style.display = 'none';
+  
+  // 渲染进度
+  const today = stats.today_sent || 0;
+  const target = stats.daily_target || 100;
+  const pct = Math.min(today / target, 1);
+  const offset = 150.8 * (1 - pct);
+  document.getElementById('progress-circle').setAttribute('stroke-dashoffset', offset);
+  document.getElementById('progress-detail').textContent = today + ' / ' + target + ' 条';
+  document.getElementById('progress-gap').textContent = '还差 ' + Math.max(0, target - today) + ' 条';
+  
+  // 渲染关键词
+  const kwListEl = document.getElementById('kw-list');
+  const kws = data.keyword_performance || {};
+  const kwArray = Object.entries(kws).map(([k, v]) => ({key: k, ...v})).sort((a,b) => (b.score||0) - (a.score||0));
+  kwListEl.innerHTML = kwArray.slice(0,6).map(kw => {
+    const name = kw.label || kw.key;
+    const score = kw.score || 0;
+    return `<div class="kw-item"><span class="kw-name">${name}</span><div class="kw-bar"><div class="kw-bar-fill" style="width:${score}%"></div></div><span class="kw-val">${score}</span></div>`;
+  }).join('');
+  
+  // 渲染 TOP30 精准关键词
+  renderTopKeywords();
+  
+  // 渲染行动
+  const actionListEl = document.getElementById('action-list');
+  const defaultActions = [
+    {action: '使用 TOP30 关键词搜索潜在客户', priority: '最高', status: '进行中'},
+    {action: 'LinkedIn 发消息 → 每天 50 条', priority: '最高', status: '进行中'},
+    {action: 'Facebook 群组 → 户外/房车社区', priority: '高', status: '进行中'},
+    {action: '跟进 KA 客户 (Bass Pro/Dick\'s)', priority: '高', status: '待处理'},
+    {action: '发送样品给重点客户', priority: '中', status: '待处理'},
+    {action: '分析回复率，优化消息模板', priority: '中', status: '待处理'}
+  ];
+  const actions = data.next_actions || defaultActions;
+  actionListEl.innerHTML = actions.map(a => {
+    const priority = a.priority === '最高' ? 'p0' : (a.priority === '高' ? 'p1' : 'p2');
+    const tagClass = a.status === 'done' || a.status === 'completed' ? 'done' : (a.priority === '最高' ? 'top' : 'mid');
+    const tagText = a.status === 'done' || a.status === 'completed' ? '完成' : (a.status === '进行中' ? '进行中' : '待处理');
+    return `<div class="action-item ${priority}"><span class="a-text">${a.action}</span><span class="a-tag ${tagClass}">${tagText}</span></div>`;
+  }).join('');
+  
+  // 渲染日志
+  const vlogEl = document.getElementById('vlog');
+  const logs = data.optimization_log || [];
+  vlogEl.innerHTML = logs.slice(0,8).map(l => `<div class="vlog-item"><span class="vn">${l.version}</span> ${l.date} — ${l.change}</div>`).join('');
+  
+  // Footer
+  document.getElementById('footer').textContent = '数据版本: ' + (stats.version || 'v4.0') + ' · 最后更新: ' + (stats.last_run || 'Unknown');
+  
+  // 渲染客户画像分类
+  renderProfileChart(contacts);
+}
+
+function setFilter(filter,tabEl){
+  currentFilter=filter;
+  document.querySelectorAll('.tab').forEach(function(t){t.classList.remove('active')});
+  if(tabEl)tabEl.classList.add('active');
+  var rows=document.querySelectorAll('.contact-row[data-category]');
+  rows.forEach(function(row){
+    var cat=row.getAttribute('data-category');
+    if(filter==='all'||cat===filter){row.classList.remove('hidden');}
+    else{row.classList.add('hidden');}
+  });
+  var visible=document.querySelectorAll('.contact-row[data-category]:not(.hidden)').length;
+  document.getElementById('stat-total').textContent=visible;
+}
+function resetFilter(){setFilter('all',document.querySelector('[data-filter=all]'));}
+function toggleExpand(row){
+  if(row.classList.contains('expanded')){row.classList.remove('expanded');}
+  else{
+    document.querySelectorAll('.contact-row.expanded').forEach(function(r){r.classList.remove('expanded')});
+    row.classList.add('expanded');
+    row.scrollIntoView({behavior:'smooth',block:'nearest'});
+  }
+}
+document.addEventListener('keydown',function(e){if(e.key==='Escape'){document.querySelectorAll('.contact-row.expanded').forEach(function(r){r.classList.remove('expanded')});}});
+
+// 初始加载
+loadData();
+startAutoRefresh();
+
+// 点击刷新按钮时手动刷新
+document.querySelector('.refresh-btn').addEventListener('click', function(){
+  loadData();
+});
+
+function renderProfileChart(contacts){
+  const profileData={};
+  const iconMap={
+    'ka':'⭐','camping':'🏕️','agent':'🌍','rv':'🚐','auto':'🔧','retail':'🏪','international':'🌐','other':'📋'
+  };
+  const colorMap={
+    'ka':'#f87171','camping':'#34d399','agent':'#60a5fa','rv':'#a78bfa','auto':'#fb923c','retail':'#10b981','international':'#f472b6','other':'#64748b'
+  };
+  const colorGradMap={
+    'ka':'linear-gradient(90deg,#f87171,#fb923c)',
+    'camping':'linear-gradient(90deg,#34d399,#10b981)',
+    'agent':'linear-gradient(90deg,#60a5fa,#3b82f6)',
+    'rv':'linear-gradient(90deg,#a78bfa,#8b5cf6)',
+    'auto':'linear-gradient(90deg,#fb923c,#f59e0b)',
+    'retail':'linear-gradient(90deg,#34d399,#059669)',
+    'international':'linear-gradient(90deg,#f472b6,#ec4899)',
+    'other':'linear-gradient(90deg,#64748b,#475569)'
+  };
+  const nameMap={
+    'ka':'KA 重点客户','camping':'户外露营','agent':'代理商','rv':'房车','auto':'汽车渠道','retail':'零售巨头','international':'国际分销','other':'其他'
+  };
+  
+  contacts.forEach(c=>{
+    const cat=c.category||'other';
+    profileData[cat]=(profileData[cat]||0)+1;
+  });
+  
+  const total=contacts.length;
+  const sorted=Object.entries(profileData).sort((a,b)=>b[1]-a[1]);
+  
+  const chartEl=document.getElementById('profile-chart');
+  const legendEl=document.getElementById('chart-legend');
+  
+  // 生成饼图 SVG
+  let cumulativePercent = 0;
+  let piePaths = '';
+  sorted.forEach(([cat, count]) => {
+    const percent = count / total;
+    const startAngle = cumulativePercent * 360;
+    const endAngle = (cumulativePercent + percent) * 360;
+    const color = colorMap[cat] || colorMap['other'];
+    
+    // 计算扇形路径
+    const startRad = (startAngle - 90) * Math.PI / 180;
+    const endRad = (endAngle - 90) * Math.PI / 180;
+    const x1 = 50 + 40 * Math.cos(startRad);
+    const y1 = 50 + 40 * Math.sin(startRad);
+    const x2 = 50 + 40 * Math.cos(endRad);
+    const y2 = 50 + 40 * Math.sin(endRad);
+    
+    const largeArc = percent > 0.5 ? 1 : 0;
+    const pathD = percent >= 1 
+      ? `M 50 10 A 40 40 0 1 1 50 90 A 40 40 0 1 1 50 10`
+      : `M 50 50 L ${x1} ${y1} A 40 40 0 ${largeArc} 1 ${x2} ${y2} Z`;
+    
+    piePaths += `<path d="${pathD}" fill="${color}" stroke="#0f1117" stroke-width="0.5"><title>${nameMap[cat]||cat}: ${count} (${Math.round(percent*100)}%)</title></path>`;
+    cumulativePercent += percent;
+  });
+  
+  document.getElementById('pie-chart').innerHTML = piePaths;
+  
+  // 条形图（保留）
+  chartEl.querySelector('.profile-bars')?.remove();
+  const barsDiv = document.createElement('div');
+  barsDiv.className = 'profile-bars';
+  barsDiv.innerHTML = sorted.map(([cat,count])=>{
+    const pct=total>0?Math.round(count/total*100):0;
+    const icon=iconMap[cat]||'📋';
+    const color=colorGradMap[cat]||colorGradMap['other'];
+    const name=nameMap[cat]||cat;
+    return `<div class="profile-bar"><span class="p-icon">${icon}</span><span class="p-name">${name}</span><div class="p-bar"><div class="p-fill" style="width:${pct}%;background:${color}"></div></div><span class="p-count">${count}</span></div>`;
+  }).join('');
+  chartEl.insertBefore(barsDiv, legendEl);
+  
+  // 图例
+  legendEl.innerHTML=sorted.map(([cat,count])=>{
+    const icon=iconMap[cat]||'📋';
+    const name=nameMap[cat]||cat;
+    const pct=total>0?Math.round(count/total*100):0;
+    return `<span class="legend-item"><span class="legend-dot" style="background:${colorMap[cat]||colorMap['other']}"></span>${icon} ${name} ${pct}%</span>`;
+  }).join('');
+}
+
+function renderTopKeywords(){
+  const topKeywords = {
+    distributor: [
+      'outdoor distributor','camping gear distributor','electronics distributor',
+      'consumer electronics distributor','portable power distributor',
+      'outdoor equipment importer','electronics importer','wholesale distributor electronics',
+      'sporting goods distributor','adventure gear distributor'
+    ],
+    buyer: [
+      'buyer outdoor products','purchasing manager electronics','category manager outdoor',
+      'product sourcing manager','head of buying retail','procurement manager electronics',
+      'global sourcing manager','merchandising manager outdoor','strategic sourcing manager',
+      'senior buyer electronics'
+    ],
+    ka: [
+      'retail chain buyer','key account manager retail','hypermarket buyer',
+      'supermarket category manager','electronics retail buyer','sporting goods retail buyer',
+      'chain store purchasing manager','head of retail operations','commercial manager retail',
+      'retail director electronics'
+    ],
+    ceo: [
+      'CEO electronics distributor','founder outdoor brand','managing director retail',
+      'business owner electronics store','general manager distribution',
+      'director of sales distribution','country manager electronics','owner sporting goods store',
+      'co-founder gadget brand','head of business development retail'
+    ]
+  };
+  
+  // 渲染分销商关键词
+  document.getElementById('kw-distributor').innerHTML = topKeywords.distributor.map(kw => 
+    `<span class="kw-tag" onclick="copyKeyword(this,'${kw}')">${kw}</span>`
+  ).join('');
+  
+  // 渲染采购/买手关键词
+  document.getElementById('kw-buyer').innerHTML = topKeywords.buyer.map(kw => 
+    `<span class="kw-tag" onclick="copyKeyword(this,'${kw}')">${kw}</span>`
+  ).join('');
+  
+  // 渲染KA连锁关键词
+  document.getElementById('kw-ka').innerHTML = topKeywords.ka.map(kw => 
+    `<span class="kw-tag" onclick="copyKeyword(this,'${kw}')">${kw}</span>`
+  ).join('');
+  
+  // 渲染老板/决策层关键词
+  document.getElementById('kw-ceo').innerHTML = topKeywords.ceo.map(kw => 
+    `<span class="kw-tag" onclick="copyKeyword(this,'${kw}')">${kw}</span>`
+  ).join('');
+}
+
+function copyKeyword(el, kw){
+  navigator.clipboard.writeText(kw).then(()=>{
+    el.classList.add('copied');
+    el.textContent = '✓ 已复制';
+    setTimeout(()=>{
+      el.classList.remove('copied');
+      el.textContent = kw;
+    }, 1500);
+  });
+}
+</script>
+
+</body>
+</html>

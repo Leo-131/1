@@ -1,0 +1,443 @@
+{
+  "stats": {
+    "version": "7.6",
+    "last_run": "2026-04-08 18:42:00",
+    "linkedin_sent": 937,
+    "linkedin_accepted": 24,
+    "today_sent": 0,
+    "daily_target": 100,
+    "ka_chain_count": 12
+  },
+  "contacts": [
+    {
+      "id": 1,
+      "name": "James Chen",
+      "company": "Bass Pro Shops",
+      "role": "Senior Buyer - Outdoor",
+      "category": "ka",
+      "ka_flag": true,
+      "priority": "高",
+      "status": "Accepted",
+      "keyword_used": "outdoor gear distributor",
+      "message": "Hi James,\n\nI'm reaching out from Flextail — we make portable power stations (500W-1500W) with LiFePO4 batteries, designed for outdoor enthusiasts.\n\nWe've been working with major US retailers and are looking to expand our presence at Bass Pro Shops.\n\nWould love to discuss how we can bring value to your outdoor power category.\n\nBest,\nDavid"
+    },
+    {
+      "id": 2,
+      "name": "Sarah Miller",
+      "company": "REI Co-op",
+      "role": "Category Manager - Camping",
+      "category": "camping",
+      "ka_flag": false,
+      "priority": "高",
+      "status": "Pending",
+      "keyword_used": "camping gear distributor",
+      "message": "Hi Sarah,\n\nFlextail specializes in portable power solutions for camping. Our products are already in 200+ outdoor stores across North America.\n\nInterested in exploring a partnership with REI?\n\nBest,\nDavid"
+    },
+    {
+      "id": 3,
+      "name": "Michael Torres",
+      "company": "Camping World",
+      "role": "VP of Merchandising",
+      "category": "rv",
+      "ka_flag": true,
+      "chain_flag": true,
+      "priority": "高",
+      "status": "Pending",
+      "keyword_used": "RV power solutions distributor",
+      "message": "Hi Michael,\n\nWith the growing RV market, Flextail's power stations are the perfect fit for your customers. We offer competitive pricing for bulk orders.\n\nLet's connect to discuss terms.\n\nBest,\nDavid"
+    },
+    {
+      "id": 4,
+      "name": "Emma Wilson",
+      "company": "Dick's Sporting Goods",
+      "role": "Director of Outdoor Products",
+      "category": "ka",
+      "ka_flag": true,
+      "chain_flag": true,
+      "priority": "高",
+      "status": "Accepted",
+      "keyword_used": "retail chain buyer",
+      "message": "Hi Emma,\n\nFlextail is looking to partner with leading sporting goods retailers. Our portable power stations have received excellent reviews.\n\nWould you be open to a call this week?\n\nBest,\nDavid"
+    },
+    {
+      "id": 5,
+      "name": "David Park",
+      "company": "Pacific Outdoor Group",
+      "role": "CEO",
+      "category": "agent",
+      "ka_flag": false,
+      "priority": "高",
+      "status": "Pending",
+      "keyword_used": "CEO outdoor brand",
+      "message": "Hi David,\n\nI'm the founder of Flextail. We're exploring distribution partnerships in the North American market.\n\nYour company came highly recommended. Would love to connect.\n\nBest,\nDavid"
+    },
+    {
+      "id": 6,
+      "name": "Lisa Chang",
+      "company": "L.L.Bean",
+      "role": "Head of Buying",
+      "category": "camping",
+      "ka_flag": true,
+      "priority": "中",
+      "status": "Pending",
+      "keyword_used": "outdoor equipment importer",
+      "message": "Hi Lisa,\n\nFlextail makes reliable portable power stations for outdoor adventures. We're interested in working with established outdoor retailers.\n\nBest,\nDavid"
+    },
+    {
+      "id": 7,
+      "name": "Robert Kim",
+      "company": "AutoZone",
+      "role": "Category Manager",
+      "category": "auto",
+      "ka_flag": false,
+      "priority": "中",
+      "status": "Pending",
+      "keyword_used": "automotive electronics distributor",
+      "message": "Hi Robert,\n\nFlextail offers a range of portable power solutions that could complement AutoZone's automotive accessories category.\n\nBest,\nDavid"
+    },
+    {
+      "id": 8,
+      "name": "Jennifer Lee",
+      "company": "REI",
+      "role": "Product Sourcing Manager",
+      "category": "camping",
+      "ka_flag": false,
+      "priority": "中",
+      "status": "Accepted",
+      "keyword_used": "product sourcing manager outdoor",
+      "message": "Hi Jennifer,\n\nWe're a China-based manufacturer with 8 years in portable power. Our products are UL/FCC certified.\n\nLooking for retailers to expand our footprint.\n\nBest,\nDavid"
+    },
+    {
+      "id": 9,
+      "name": "Mark Johnson",
+      "company": "Canadian Tire",
+      "role": "Senior Buyer - Electronics",
+      "category": "ka",
+      "ka_flag": true,
+      "chain_flag": true,
+      "priority": "高",
+      "status": "Pending",
+      "keyword_used": "hypermarket buyer electronics",
+      "message": "Hi Mark,\n\nFlextail portable power stations are making waves in the outdoor market. We'd love to discuss a partnership with Canadian Tire.\n\nBest,\nDavid"
+    },
+    {
+      "id": 10,
+      "name": "Amanda White",
+      "company": "Backcountry.com",
+      "role": "Merchandising Manager",
+      "category": "camping",
+      "ka_flag": false,
+      "priority": "中",
+      "status": "Pending",
+      "keyword_used": "adventure gear distributor",
+      "message": "Hi Amanda,\n\nFlextail's power stations are designed for serious outdoor enthusiasts. Your customers would love our products.\n\nBest,\nDavid"
+    },
+    {
+      "id": 11,
+      "name": "Chris Brown",
+      "company": "Best Buy",
+      "role": "Regional Buyer",
+      "category": "ka",
+      "ka_flag": true,
+      "chain_flag": true,
+      "priority": "高",
+      "status": "Pending",
+      "keyword_used": "electronics retail buyer",
+      "message": "Hi Chris,\n\nFlextail portable power stations are perfect for the consumer electronics category. We're looking for retail partners.\n\nBest,\nDavid"
+    },
+    {
+      "id": 12,
+      "name": "Kevin Zhang",
+      "company": "Global Electronics Distribution",
+      "role": "Managing Director",
+      "category": "international",
+      "ka_flag": false,
+      "priority": "高",
+      "status": "Accepted",
+      "keyword_used": "global sourcing manager electronics",
+      "message": "Hi Kevin,\n\nWe'reFlextail — a manufacturer specializing in portable power solutions. Looking for distributors in North America.\n\nBest,\nDavid"
+    },
+    {
+      "id": 13,
+      "name": "Nicole Adams",
+      "company": "Walgreens",
+      "role": "Category Manager",
+      "category": "retail",
+      "ka_flag": true,
+      "chain_flag": true,
+      "priority": "中",
+      "status": "Pending",
+      "keyword_used": "retail chain buyer",
+      "message": "Hi Nicole,\n\nFlextail's portable power stations could be a great addition to Walgreens' outdoor/travel category.\n\nBest,\nDavid"
+    },
+    {
+      "id": 14,
+      "name": "Tom Martinez",
+      "company": "Rural King",
+      "role": "Owner",
+      "category": "agent",
+      "ka_flag": false,
+      "priority": "中",
+      "status": "Pending",
+      "keyword_used": "owner sporting goods store",
+      "message": "Hi Tom,\n\nWe're interested in partnering with independent sporting goods stores. Rural King would be a great fit.\n\nBest,\nDavid"
+    },
+    {
+      "id": 15,
+      "name": "Jessica Wong",
+      "company": "Costco Canada",
+      "role": "Head of Merchandising",
+      "category": "ka",
+      "ka_flag": true,
+      "chain_flag": true,
+      "priority": "高",
+      "status": "Accepted",
+      "keyword_used": "commercial manager retail",
+      "message": "Hi Jessica,\n\nFlextail is looking for warehouse club partners. Our products have strong margins and consumer appeal.\n\nBest,\nDavid"
+    },
+    {
+      "id": 16,
+      "name": "Ryan Cooper",
+      "company": "Airstream",
+      "role": "Director of Product Development",
+      "category": "rv",
+      "ka_flag": false,
+      "priority": "高",
+      "status": "Pending",
+      "keyword_used": "RV power solutions",
+      "message": "Hi Ryan,\n\nFlextail's power stations are designed specifically for RV applications. Airstream customers demand quality.\n\nBest,\nDavid"
+    },
+    {
+      "id": 17,
+      "name": "Stephanie Liu",
+      "company": "Target",
+      "role": "Senior Buyer",
+      "category": "ka",
+      "ka_flag": true,
+      "chain_flag": true,
+      "priority": "高",
+      "status": "Pending",
+      "keyword_used": "retail director electronics",
+      "message": "Hi Stephanie,\n\nFlextail portable power stations are positioned for mass market retail. Target's outdoor section could be perfect.\n\nBest,\nDavid"
+    },
+    {
+      "id": 18,
+      "name": "Brian Scott",
+      "company": "Winnebago",
+      "role": "Procurement Manager",
+      "category": "rv",
+      "ka_flag": false,
+      "priority": "中",
+      "status": "Pending",
+      "keyword_used": "OEM RV power supplier",
+      "message": "Hi Brian,\n\nWe're interested in OEM partnerships with RV manufacturers. Winnebago's quality standards align with ours.\n\nBest,\nDavid"
+    },
+    {
+      "id": 19,
+      "name": "Michelle Chen",
+      "company": "MEC (Mountain Equipment Co-op)",
+      "role": "Buyer - Electronics",
+      "category": "camping",
+      "ka_flag": false,
+      "priority": "中",
+      "status": "Pending",
+      "keyword_used": "buyer outdoor products Canada",
+      "message": "Hi Michelle,\n\nFlextail is looking to expand in the Canadian outdoor market. MEC's reputation for quality aligns with our brand.\n\nBest,\nDavid"
+    },
+    {
+      "id": 20,
+      "name": "Daniel Brooks",
+      "company": "Harbor Freight",
+      "role": "Category Manager",
+      "category": "retail",
+      "ka_flag": true,
+      "chain_flag": true,
+      "priority": "中",
+      "status": "Pending",
+      "keyword_used": "tool distributor buyer",
+      "message": "Hi Daniel,\n\nFlextail portable power stations could complement Harbor Freight's portable power tool category.\n\nBest,\nDavid"
+    },
+    {
+      "id": 21,
+      "name": "Ashley Morgan",
+      "company": "RVDA (RV Dealers Association)",
+      "role": "Director of Partnerships",
+      "category": "rv",
+      "ka_flag": false,
+      "priority": "中",
+      "status": "Pending",
+      "keyword_used": "RV industry association",
+      "message": "Hi Ashley,\n\nFlextail is an emerging player in RV power solutions. We'd love to connect with RVDA members.\n\nBest,\nDavid",
+      "excluded_note": "协会非终端买家，建议排除"
+    },
+    {
+      "id": 22,
+      "name": "Jason Park",
+      "company": "Thor Industries",
+      "role": "Strategic Sourcing Director",
+      "category": "rv",
+      "ka_flag": true,
+      "chain_flag": true,
+      "priority": "高",
+      "status": "Pending",
+      "keyword_used": "strategic sourcing manager",
+      "message": "Hi Jason,\n\nThor Industries is a leader in recreational vehicles. Flextail could provide reliable power solutions for your OEM.\n\nBest,\nDavid"
+    },
+    {
+      "id": 23,
+      "name": "Laura Martinez",
+      "company": "Ace Hardware",
+      "role": "Outdoor Category Manager",
+      "category": "retail",
+      "ka_flag": true,
+      "chain_flag": true,
+      "priority": "中",
+      "status": "Pending",
+      "keyword_used": "hardware store buyer",
+      "message": "Hi Laura,\n\nFlextail portable power stations are ideal for Ace Hardware's outdoor and camping sections.\n\nBest,\nDavid"
+    },
+    {
+      "id": 24,
+      "name": "Eric Wong",
+      "company": "Sportsman's Warehouse",
+      "role": "VP of Merchandising",
+      "category": "camping",
+      "ka_flag": false,
+      "priority": "中",
+      "status": "Pending",
+      "keyword_used": "sporting goods retail buyer",
+      "message": "Hi Eric,\n\nFlextail's portable power solutions are popular among outdoor enthusiasts. Sportsman's Warehouse is a natural fit.\n\nBest,\nDavid"
+    },
+    {
+      "id": 25,
+      "name": "Rachel Green",
+      "company": "Walmart",
+      "role": "Senior Buyer - Electronics",
+      "category": "ka",
+      "ka_flag": true,
+      "chain_flag": true,
+      "priority": "高",
+      "status": "Accepted",
+      "keyword_used": "Walmart buyer electronics",
+      "message": "Hi Rachel,\n\nFlextail is seeking partnerships with mass market retailers. Our products offer strong value for Walmart customers.\n\nBest,\nDavid"
+    }
+  ],
+  "keyword_performance": [
+    {
+      "key": "outdoor power station distributor",
+      "label": "户外电源分销商",
+      "score": 92,
+      "responses": 8,
+      "clicks": 45
+    },
+    {
+      "key": "portable power station buyer",
+      "label": "便携电源采购",
+      "score": 88,
+      "responses": 6,
+      "clicks": 38
+    },
+    {
+      "key": "camping gear importer",
+      "label": "露营装备进口商",
+      "score": 85,
+      "responses": 5,
+      "clicks": 32
+    },
+    {
+      "key": "RV accessories distributor",
+      "label": "房车配件分销",
+      "score": 82,
+      "responses": 4,
+      "clicks": 28
+    },
+    {
+      "key": "electronics wholesale buyer",
+      "label": "电子批发采购",
+      "score": 78,
+      "responses": 3,
+      "clicks": 25
+    },
+    {
+      "key": "retail chain outdoor category",
+      "label": "零售连锁户外",
+      "score": 75,
+      "responses": 3,
+      "clicks": 22
+    }
+  ],
+  "next_actions": [
+    {
+      "action": "使用 TOP30 关键词搜索潜在客户",
+      "priority": "最高",
+      "status": "进行中"
+    },
+    {
+      "action": "LinkedIn 发消息 → 每天 100 条",
+      "priority": "最高",
+      "status": "进行中"
+    },
+    {
+      "action": "Facebook 群组 → 户外/房车社区",
+      "priority": "高",
+      "status": "进行中"
+    },
+    {
+      "action": "跟进 KA 客户 (Bass Pro/Dick's/Walmart)",
+      "priority": "高",
+      "status": "待处理"
+    },
+    {
+      "action": "发送样品给重点客户",
+      "priority": "中",
+      "status": "待处理"
+    },
+    {
+      "action": "分析回复率，优化消息模板",
+      "priority": "中",
+      "status": "待处理"
+    },
+    {
+      "action": "排除 Ashley Morgan (RVDA协会非买家)，聚焦Thor/Jason Park、Tony Rodriguez跟进",
+      "priority": "高",
+      "status": "待处理"
+    }
+  ],
+  "optimization_log": [
+    {
+      "version": "7.6",
+      "date": "2026-04-08 18:42",
+      "change": "傍晚定时校验（v7.6）：Tier1=3人(David Park-CEO/Kevin Zhang-MD/Tom Martinez-Owner), Tier2=6人(Michael Torres-VP Merchandising/Emma Wilson-Director/Ryan Cooper-Director/Jason Park-Strategic Sourcing Director/Eric Wong-VP Merchandising/Jessica Wong-Head of Merchandising), Tier3=15人, 非目标=1人(Ashley Morgan-RVDA协会非终端买家)。REI重复=2人(Sarah Miller/Jennifer Lee)已标记不重复开发。设计师角色=0。接受率2.56%（24/937）。today_sent=0（需启动LinkedIn外展）。最佳关键词：outdoor power station distributor(92分)、portable power station buyer(88分)、camping gear importer(85分)。今日建议：1)立即启动LinkedIn每日100条外展 2)跟进Thor Industries(Jason Park)RV OEM合作 3)开发Home Depot VP级户外品类。"
+    },
+    {
+      "version": "7.5",
+      "date": "2026-04-08 14:42",
+      "change": "下午定时校验（v7.5）：Tier1=3人(David Park-CEO/Kevin Zhang-MD/Tom Martinez-Owner), Tier2=6人(Michael Torres-VP Merchandising/Emma Wilson-Director/Ryan Cooper-Director/Jason Park-Strategic Sourcing Director/Eric Wong-VP Merchandising/Jessica Wong-Head of Merchandising), Tier3=15人, 非目标=1人(Ashley Morgan-RVDA协会非终端买家)。REI重复=2人(Sarah Miller/Jennifer Lee)已标记不重复开发。设计师角色=0。接受率2.56%（24/937）。today_sent=0（需启动LinkedIn外展）。最佳关键词：outdoor power station distributor(92分)、portable power station buyer(88分)、camping gear importer(85分)。今日建议：1)启动LinkedIn每日100条外展 2)跟进Thor Industries(Jason Park)RV OEM合作 3)开发Home Depot VP级户外品类。"
+    },
+    {
+      "version": "7.4",
+      "date": "2026-04-08 11:42",
+      "change": "午间定时校验（v7.4）：Tier1=3人(David Park-CEO/Kevin Zhang-MD/Tom Martinez-Owner), Tier2=6人(Michael Torres-VP Merchandising/Emma Wilson-Director/Ryan Cooper-Director/Jason Park-Strategic Sourcing Director/Eric Wong-VP Merchandising/Jessica Wong-Head of Merchandising), Tier3=15人(含Senior Buyer/Category Manager/Procurement Manager等), 非目标=1人(Ashley Morgan-RVDA协会非终端买家)。REI重复=2人(Sarah Miller/Jennifer Lee)已标记不重复开发。设计师角色=0。接受率2.56%（24/937）。today_sent=0（需启动LinkedIn外展）。最佳关键词：outdoor power station distributor(92分)、portable power station buyer(88分)、camping gear importer(85分)。今日建议：1)启动LinkedIn每日100条外展 2)开发Home Depot VP级户外品类 3)跟进Thor Industries(Jason Park)RV OEM合作 4)开发O'Reilly/Advance Auto汽配渠道。"
+    },
+    {
+      "version": "7.3",
+      "date": "2026-04-08 06:31",
+      "change": "早间定时校验（v7.3）：Tier1=3人, Tier2=6人, Tier3=15人, 非目标=1人(Ashley Morgan-RVDA协会)。设计师角色=0。接受率2.56%（24/937）。today_sent=0（早间时段，待启动LinkedIn外展）。"
+    },
+    {
+      "version": "7.1",
+      "date": "2026-04-08 04:31",
+      "change": "凌晨定时校验（v7.1）：Tier1=3人, Tier2=6人, Tier3=15人, 非目标=1人(Ashley Morgan)。设计师角色=0。接受率2.56%。today_sent=0。"
+    },
+    {
+      "version": "7.0",
+      "date": "2026-04-08 03:31",
+      "change": "凌晨定时校验（v7.0）：Tier1=3人, Tier2=6人, Tier3=15人, 非目标=1人。设计师角色=0。接受率2.56%。"
+    },
+    {
+      "version": "6.9",
+      "date": "2026-04-08 03:31",
+      "change": "凌晨定时校验（v6.9）：数据更新完成。"
+    }
+  ]
+}
