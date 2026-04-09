@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "builds": [
-    { "src": "outreach-dashboard/index.html", "use": "@vercel/static" }
-  ],
+  "public": true,
+  "github": {
+    "enabled": false
+  },
   "routes": [
+    { "handle": "filesystem" },
     { "src": "/(.*)", "dest": "/outreach-dashboard/$1" }
   ]
 }
