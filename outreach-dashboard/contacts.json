@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "name": "Michael Hartridge",
+    "company": "Outdoor Retail",
+    "role": "Ops Leader",
+    "location": "US-East",
+    "timezone": "America/New_York",
+    "platform": "linkedin",
+    "status": "sent",
+    "priority": "high",
+    "sentTime": "2026-04-08T14:32:00Z"
+  },
+  {
+    "id": 2,
+    "name": "Alain Oberholzer",
+    "company": "Gateway1 Footwear",
+    "role": "Importer",
+    "location": "CH",
+    "timezone": "Europe/Zurich",
+    "platform": "linkedin",
+    "status": "scheduled",
+    "priority": "high",
+    "scheduledTime": "2026-04-08T08:09:40.934Z"
+  },
+  {
+    "id": 3,
+    "name": "Jason Wang",
+    "company": "RV Importer",
+    "role": "Import/Export",
+    "location": "US-West",
+    "timezone": "America/Los_Angeles",
+    "platform": "linkedin",
+    "status": "scheduled",
+    "priority": "high",
+    "scheduledTime": "2026-04-08T01:36:00.000Z"
+  },
+  {
+    "id": 4,
+    "name": "Tamako Hara",
+    "company": "Outdoor Research",
+    "role": "Import Manager",
+    "location": "US-West",
+    "timezone": "America/Los_Angeles",
+    "platform": "linkedin",
+    "status": "scheduled",
+    "priority": "high",
+    "scheduledTime": "2026-04-08T17:00:00Z"
+  },
+  {
+    "id": 5,
+    "name": "David Dreyer",
+    "company": "Outdoor Retail",
+    "role": "GM",
+    "location": "US-Central",
+    "timezone": "America/Chicago",
+    "platform": "linkedin",
+    "status": "scheduled",
+    "priority": "medium",
+    "scheduledTime": "2026-04-08T01:59:00.000Z"
+  },
+  {
+    "id": 6,
+    "name": "Allan King",
+    "company": "Outback King",
+    "role": "Founder",
+    "location": "AU",
+    "timezone": "Australia/Sydney",
+    "platform": "linkedin",
+    "status": "scheduled",
+    "priority": "medium",
+    "scheduledTime": "2026-04-09T01:25:00.000Z"
+  },
+  {
+    "id": 7,
+    "name": "USA Outdoor Gears Sale",
+    "company": "Facebook Group",
+    "role": "",
+    "location": "US-East",
+    "timezone": "America/New_York",
+    "platform": "facebook",
+    "status": "sent",
+    "priority": "medium",
+    "sentTime": "2026-04-08T14:25:00Z"
+  },
+  {
+    "id": 8,
+    "name": "kilosgear",
+    "company": "Instagram Brand",
+    "role": "",
+    "location": "US-West",
+    "timezone": "America/Los_Angeles",
+    "platform": "instagram",
+    "status": "sent",
+    "priority": "medium",
+    "sentTime": "2026-04-08T14:20:00Z"
+  },
+  {
+    "id": 9,
+    "name": "Sarah Johnson",
+    "company": "REI Co-op",
+    "role": "Senior Buyer",
+    "location": "US-West",
+    "timezone": "America/Los_Angeles",
+    "platform": "linkedin",
+    "status": "scheduled",
+    "priority": "high",
+    "scheduledTime": "2026-04-08T01:35:00.000Z"
+  },
+  {
+    "id": 10,
+    "name": "Markus Weber",
+    "company": "Outdoor Gear EU",
+    "role": "Distributor",
+    "location": "DE",
+    "timezone": "Europe/Berlin",
+    "platform": "linkedin",
+    "status": "scheduled",
+    "priority": "high",
+    "scheduledTime": "2026-04-08T08:11:40.934Z"
+  }
+]

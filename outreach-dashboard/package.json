@@ -1,0 +1,30 @@
+{
+  "name": "outreach-dashboard",
+  "version": "1.0.0",
+  "description": "Flextail & Vollyc 客户开发看板 - Vercel 部署版",
+  "type": "commonjs",
+  "scripts": {
+    "dev": "vercel dev",
+    "deploy": "vercel --prod"
+  },
+  "keywords": [
+    "dashboard",
+    "outreach",
+    "linkedin",
+    "sales"
+  ],
+  "author": "Flextail",
+  "license": "MIT",
+  "main": "scheduler.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/flextail/outreach-dashboard.git"
+  },
+  "bugs": {
+    "url": "https://github.com/flextail/outreach-dashboard/issues"
+  },
+  "homepage": "https://github.com/flextail/outreach-dashboard#readme",
+  "dependencies": {
+    "node-cron": "^4.2.1"
+  }
+}
