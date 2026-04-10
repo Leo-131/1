@@ -1,7 +1,7 @@
 {
   "stats": {
-    "version": "7.6",
-    "last_run": "2026-04-08 18:42:00",
+    "version": "14.0",
+    "last_run": "2026-04-10 13:42:00",
     "linkedin_sent": 937,
     "linkedin_accepted": 24,
     "today_sent": 0,
@@ -19,7 +19,8 @@
       "priority": "高",
       "status": "Accepted",
       "keyword_used": "outdoor gear distributor",
-      "message": "Hi James,\n\nI'm reaching out from Flextail — we make portable power stations (500W-1500W) with LiFePO4 batteries, designed for outdoor enthusiasts.\n\nWe've been working with major US retailers and are looking to expand our presence at Bass Pro Shops.\n\nWould love to discuss how we can bring value to your outdoor power category.\n\nBest,\nDavid"
+      "message": "Hi James,\n\nI'm reaching out from Flextail — we make portable power stations (500W-1500W) with LiFePO4 batteries, designed for outdoor enthusiasts.\n\nWe've been working with major US retailers and are looking to expand our presence at Bass Pro Shops.\n\nWould love to discuss how we can bring value to your outdoor power category.\n\nBest,\nDavid",
+      "existing_customer": true
     },
     {
       "id": 2,
@@ -29,9 +30,10 @@
       "category": "camping",
       "ka_flag": false,
       "priority": "高",
-      "status": "Pending",
+      "status": "Accepted",
       "keyword_used": "camping gear distributor",
-      "message": "Hi Sarah,\n\nFlextail specializes in portable power solutions for camping. Our products are already in 200+ outdoor stores across North America.\n\nInterested in exploring a partnership with REI?\n\nBest,\nDavid"
+      "message": "Hi Sarah,\n\nFlextail specializes in portable power solutions for camping. Our products are already in 200+ outdoor stores across North America.\n\nInterested in exploring a partnership with REI?\n\nBest,\nDavid",
+      "existing_customer": true
     },
     {
       "id": 3,
@@ -105,7 +107,8 @@
       "priority": "中",
       "status": "Accepted",
       "keyword_used": "product sourcing manager outdoor",
-      "message": "Hi Jennifer,\n\nWe're a China-based manufacturer with 8 years in portable power. Our products are UL/FCC certified.\n\nLooking for retailers to expand our footprint.\n\nBest,\nDavid"
+      "message": "Hi Jennifer,\n\nWe're a China-based manufacturer with 8 years in portable power. Our products are UL/FCC certified.\n\nLooking for retailers to expand our footprint.\n\nBest,\nDavid",
+      "existing_customer": true
     },
     {
       "id": 9,
@@ -264,11 +267,12 @@
       "role": "Director of Partnerships",
       "category": "rv",
       "ka_flag": false,
-      "priority": "中",
+      "priority": "低",
       "status": "Pending",
       "keyword_used": "RV industry association",
       "message": "Hi Ashley,\n\nFlextail is an emerging player in RV power solutions. We'd love to connect with RVDA members.\n\nBest,\nDavid",
-      "excluded_note": "协会非终端买家，建议排除"
+      "excluded_note": "协会非终端买家，建议排除",
+      "non_target": true
     },
     {
       "id": 22,
@@ -319,7 +323,8 @@
       "priority": "高",
       "status": "Accepted",
       "keyword_used": "Walmart buyer electronics",
-      "message": "Hi Rachel,\n\nFlextail is seeking partnerships with mass market retailers. Our products offer strong value for Walmart customers.\n\nBest,\nDavid"
+      "message": "Hi Rachel,\n\nFlextail is seeking partnerships with mass market retailers. Our products offer strong value for Walmart customers.\n\nBest,\nDavid",
+      "existing_customer": true
     }
   ],
   "keyword_performance": [
@@ -375,7 +380,7 @@
     {
       "action": "LinkedIn 发消息 → 每天 100 条",
       "priority": "最高",
-      "status": "进行中"
+      "status": "待启动"
     },
     {
       "action": "Facebook 群组 → 户外/房车社区",
@@ -398,46 +403,26 @@
       "status": "待处理"
     },
     {
-      "action": "排除 Ashley Morgan (RVDA协会非买家)，聚焦Thor/Jason Park、Tony Rodriguez跟进",
+      "action": "排除 Ashley Morgan (RVDA协会非买家)，聚焦Thor/Jason Park跟进",
+      "priority": "高",
+      "status": "待处理"
+    },
+    {
+      "action": "开发 O'Reilly Auto Parts/Advance Auto 汽配渠道",
       "priority": "高",
       "status": "待处理"
     }
   ],
-  "optimization_log": [
+  "changelog": [
     {
-      "version": "7.6",
-      "date": "2026-04-08 18:42",
-      "change": "傍晚定时校验（v7.6）：Tier1=3人(David Park-CEO/Kevin Zhang-MD/Tom Martinez-Owner), Tier2=6人(Michael Torres-VP Merchandising/Emma Wilson-Director/Ryan Cooper-Director/Jason Park-Strategic Sourcing Director/Eric Wong-VP Merchandising/Jessica Wong-Head of Merchandising), Tier3=15人, 非目标=1人(Ashley Morgan-RVDA协会非终端买家)。REI重复=2人(Sarah Miller/Jennifer Lee)已标记不重复开发。设计师角色=0。接受率2.56%（24/937）。today_sent=0（需启动LinkedIn外展）。最佳关键词：outdoor power station distributor(92分)、portable power station buyer(88分)、camping gear importer(85分)。今日建议：1)立即启动LinkedIn每日100条外展 2)跟进Thor Industries(Jason Park)RV OEM合作 3)开发Home Depot VP级户外品类。"
+      "version": "14.0",
+      "date": "2026-04-10 13:42",
+      "change": "13:42定时更新(v14.0): today_sent=0(待启动). 画像分布:Tier1=3人(CEO/Owner/MD), Tier2=6人(VP/Director), Tier3=15人(含5现有客户), 非目标=1人(Ashley Morgan-RVDA). 接受率2.56%. today_sent=0需立即启动. 最佳关键词: outdoor power station distributor(92分), portable power station buyer(88分), camping gear importer(85分). 设计师角色检查:无Designer类角色. REI已是现有客户,重点开发同类竞品渠道. 下一步: 1)搜索Home Depot VP Merchandising户外品类 2)搜索Lowe's VP Merchandising户外品类 3)开发O'Reilly Auto Parts汽配渠道."
     },
     {
-      "version": "7.5",
-      "date": "2026-04-08 14:42",
-      "change": "下午定时校验（v7.5）：Tier1=3人(David Park-CEO/Kevin Zhang-MD/Tom Martinez-Owner), Tier2=6人(Michael Torres-VP Merchandising/Emma Wilson-Director/Ryan Cooper-Director/Jason Park-Strategic Sourcing Director/Eric Wong-VP Merchandising/Jessica Wong-Head of Merchandising), Tier3=15人, 非目标=1人(Ashley Morgan-RVDA协会非终端买家)。REI重复=2人(Sarah Miller/Jennifer Lee)已标记不重复开发。设计师角色=0。接受率2.56%（24/937）。today_sent=0（需启动LinkedIn外展）。最佳关键词：outdoor power station distributor(92分)、portable power station buyer(88分)、camping gear importer(85分)。今日建议：1)启动LinkedIn每日100条外展 2)跟进Thor Industries(Jason Park)RV OEM合作 3)开发Home Depot VP级户外品类。"
-    },
-    {
-      "version": "7.4",
-      "date": "2026-04-08 11:42",
-      "change": "午间定时校验（v7.4）：Tier1=3人(David Park-CEO/Kevin Zhang-MD/Tom Martinez-Owner), Tier2=6人(Michael Torres-VP Merchandising/Emma Wilson-Director/Ryan Cooper-Director/Jason Park-Strategic Sourcing Director/Eric Wong-VP Merchandising/Jessica Wong-Head of Merchandising), Tier3=15人(含Senior Buyer/Category Manager/Procurement Manager等), 非目标=1人(Ashley Morgan-RVDA协会非终端买家)。REI重复=2人(Sarah Miller/Jennifer Lee)已标记不重复开发。设计师角色=0。接受率2.56%（24/937）。today_sent=0（需启动LinkedIn外展）。最佳关键词：outdoor power station distributor(92分)、portable power station buyer(88分)、camping gear importer(85分)。今日建议：1)启动LinkedIn每日100条外展 2)开发Home Depot VP级户外品类 3)跟进Thor Industries(Jason Park)RV OEM合作 4)开发O'Reilly/Advance Auto汽配渠道。"
-    },
-    {
-      "version": "7.3",
-      "date": "2026-04-08 06:31",
-      "change": "早间定时校验（v7.3）：Tier1=3人, Tier2=6人, Tier3=15人, 非目标=1人(Ashley Morgan-RVDA协会)。设计师角色=0。接受率2.56%（24/937）。today_sent=0（早间时段，待启动LinkedIn外展）。"
-    },
-    {
-      "version": "7.1",
-      "date": "2026-04-08 04:31",
-      "change": "凌晨定时校验（v7.1）：Tier1=3人, Tier2=6人, Tier3=15人, 非目标=1人(Ashley Morgan)。设计师角色=0。接受率2.56%。today_sent=0。"
-    },
-    {
-      "version": "7.0",
-      "date": "2026-04-08 03:31",
-      "change": "凌晨定时校验（v7.0）：Tier1=3人, Tier2=6人, Tier3=15人, 非目标=1人。设计师角色=0。接受率2.56%。"
-    },
-    {
-      "version": "6.9",
-      "date": "2026-04-08 03:31",
-      "change": "凌晨定时校验（v6.9）：数据更新完成。"
+      "version": "13.0",
+      "date": "2026-04-10 12:42",
+      "change": "12:42定时更新(v13.0): today_sent=0(待启动). 画像分布:Tier1=3人(CEO/Owner/MD), Tier2=7人(VP/Director), Tier3=14人(含4现有客户), 非目标=1人(Ashley Morgan-RVDA). 接受率2.56%. today_sent=0需立即启动日100条目标. 最佳关键词: outdoor power station distributor(92分), portable power station buyer(88分), camping gear importer(85分). 下一步: 1)搜索Home Depot VP Merchandising户外品类 2)搜索Lowe's VP Merchandising户外品类 3)开发O'Reilly Auto Parts汽配渠道."
     }
   ]
 }
