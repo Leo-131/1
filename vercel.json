@@ -1,0 +1,7 @@
+{
+  "version": 2,
+  "routes": [
+    { "src": "/outreach_dashboard", "dest": "/outreach_dashboard.html" },
+    { "src": "/", "dest": "/index.html" }
+  ]
+}
