@@ -1,764 +1,1761 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="zh-CN">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
-<title>Flextail Outreach Dashboard v0.3.0</title>
+<title>Flextail & Vollyc 智能客户开发系统 v8.0 · LinkedIn 60 · Instagram 25 · Facebook 15</title>
 <style>
-* { margin: 0; padding: 0; box-sizing: border-box; }
-:root { --primary: #4ade80; --accent: #3b82f6; --warning: #f59e0b; --danger: #ef4444; --bg: #0f1117; --card: #1a1d27; --border: #2a2f3e; --text: #e4e8f0; --muted: #7a8299; }
-body { font-family: 'Segoe UI', Arial, sans-serif; background: var(--bg); color: var(--text); min-height: 100vh; padding: 20px; }
-.container { max-width: 1800px; margin: 0 auto; }
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Segoe UI',-apple-system,sans-serif;background:#0f1117;color:#e2e8f0;min-height:100vh;padding:16px}
+.container{max-width:1600px;margin:0 auto}
 
 /* Header */
-.header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; padding-bottom: 16px; border-bottom: 1px solid var(--border); }
-.header h1 { font-size: 24px; font-weight: 700; }
-.header .meta { text-align: right; font-size: 13px; color: var(--muted); }
-.badge { display: inline-block; padding: 3px 10px; border-radius: 6px; font-size: 11px; font-weight: 600; margin-left: 6px; }
-.badge-live { background: #16a34a22; color: var(--primary); border: 1px solid #16a34a44; }
-.badge-v { background: #3b82f622; color: var(--accent); border: 1px solid #3b82f644; }
-.badge-sync { background: #22c55e22; color: #22c55e; border: 1px solid #22c55e44; }
+.header{display:flex;justify-content:space-between;align-items:center;margin-bottom:16px;padding-bottom:12px;border-bottom:1px solid rgba(255,255,255,0.06);flex-wrap:wrap;gap:8px}
+.header h1{font-size:1.4em;font-weight:700;background:linear-gradient(90deg,#60a5fa,#34d399,#f472b6);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.header p{font-size:0.75em;color:#64748b;margin-top:2px}
+.header-right{display:flex;gap:6px;flex-wrap:wrap;align-items:center}
+.pill{padding:3px 10px;border-radius:12px;font-size:0.65em;font-weight:600}
+.pill-blue{background:rgba(96,165,250,0.15);color:#60a5fa;border:1px solid rgba(96,165,250,0.3)}
+.pill-orange{background:rgba(251,146,60,0.15);color:#fb923c;border:1px solid rgba(251,146,60,0.3)}
+.pill-green{background:rgba(52,211,153,0.15);color:#34d399;border:1px solid rgba(52,211,153,0.3)}
+.pill-purple{background:rgba(167,139,250,0.15);color:#a78bfa;border:1px solid rgba(167,139,250,0.3)}
+.pill-red{background:rgba(248,113,113,0.15);color:#f87171;border:1px solid rgba(248,113,113,0.3)}
 
-/* Stats Grid - 9 cards from v8.0.3 */
-.stats-grid { display: grid; grid-template-columns: repeat(9, 1fr); gap: 12px; margin-bottom: 20px; }
-.stat-card { background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 16px 12px; text-align: center; position: relative; overflow: hidden; transition: all 0.2s; cursor: pointer; }
-.stat-card:hover { border-color: var(--accent); transform: translateY(-2px); }
-.stat-card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px; }
-.stat-card.green::before { background: linear-gradient(90deg, #22c55e, #4ade80); }
-.stat-card.blue::before { background: linear-gradient(90deg, #3b82f6, #60a5fa); }
-.stat-card.orange::before { background: linear-gradient(90deg, #f59e0b, #fbbf24); }
-.stat-card.purple::before { background: linear-gradient(90deg, #8b5cf6, #a78bfa); }
-.stat-card.red::before { background: linear-gradient(90deg, #ef4444, #f87171); }
-.stat-card .num { font-size: 28px; font-weight: 700; line-height: 1.2; }
-.stat-card .lbl { font-size: 12px; color: var(--muted); margin-top: 4px; }
-.stat-card .sub { font-size: 10px; color: var(--muted); margin-top: 2px; }
+/* Stats Grid */
+.stats-grid{display:grid;grid-template-columns:repeat(10,1fr);gap:8px;margin-bottom:14px}
+@media(max-width:1200px){.stats-grid{grid-template-columns:repeat(4,1fr)}}
+@media(max-width:600px){.stats-grid{grid-template-columns:repeat(2,1fr)}}
+.stat-card{background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.06);border-radius:10px;padding:12px;transition:all .2s;cursor:default}
+.stat-card:hover{transform:translateY(-2px);background:rgba(255,255,255,0.05);border-color:rgba(96,165,250,0.2)}
+.stat-card .val{font-size:1.4em;font-weight:700}
+.stat-card .lbl{font-size:0.65em;color:#64748b;text-transform:uppercase;letter-spacing:.5px;margin-top:2px}
+.stat-card .sub{font-size:0.58em;color:#475569;margin-top:1px}
+.v-green{color:#34d399}.v-orange{color:#fb923c}.v-blue{color:#60a5fa}.v-red{color:#f87171}.v-purple{color:#a78bfa}.v-cyan{color:#22d3ee}
+
+/* Navigation Tabs */
+.nav-tabs{display:flex;gap:4px;margin-bottom:14px;flex-wrap:wrap}
+.nav-tab{padding:8px 16px;border-radius:8px;font-size:0.72em;font-weight:600;cursor:pointer;transition:all .2s;background:rgba(255,255,255,0.04);color:#64748b;border:1px solid rgba(255,255,255,0.06);user-select:none}
+.nav-tab:hover{background:rgba(255,255,255,0.07);color:#94a3b8}
+.nav-tab.active{background:rgba(96,165,250,0.15);color:#60a5fa;border-color:rgba(96,165,250,0.4)}
+.nav-tab .icon{margin-right:4px}
+
+/* Main Layout */
+.main-layout{display:grid;grid-template-columns:1fr 320px;gap:14px}
+@media(max-width:1100px){.main-layout{grid-template-columns:1fr}}
+.card{background:rgba(255,255,255,0.02);border:1px solid rgba(255,255,255,0.06);border-radius:12px;padding:14px}
+.card-title{font-size:0.85em;font-weight:600;color:#94a3b8;margin-bottom:10px;display:flex;align-items:center;gap:6px}
+.card-title .dot{width:6px;height:6px;border-radius:50%;background:#34d399}
+
+/* Contact List */
+.contact-list{display:flex;flex-direction:column;gap:5px;max-height:450px;overflow-y:auto;padding-right:4px}
+.contact-list::-webkit-scrollbar{width:3px}
+.contact-list::-webkit-scrollbar-thumb{background:rgba(255,255,255,0.1);border-radius:2px}
+.contact-item{display:flex;align-items:center;gap:8px;padding:8px 10px;background:rgba(255,255,255,0.02);border-radius:8px;border:1px solid rgba(255,255,255,0.04);transition:all .15s;cursor:pointer}
+.contact-item:hover{background:rgba(255,255,255,0.04);border-color:rgba(96,165,250,0.15)}
+.contact-item.expanded{background:rgba(255,255,255,0.05);border-color:rgba(96,165,250,0.25);flex-direction:column;align-items:stretch}
+.avatar{width:28px;height:28px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:0.7em;font-weight:700;color:#fff;flex-shrink:0}
+.avatar.ka{background:linear-gradient(135deg,#f87171,#fb923c)}
+.avatar.chain{background:linear-gradient(135deg,#a78bfa,#818cf8)}
+.avatar.high{background:rgba(251,146,60,0.8)}
+.avatar.medium{background:rgba(96,165,250,0.7)}
+.avatar.low{background:rgba(52,211,153,0.5)}
+.contact-info{flex:1;min-width:0}
+.contact-name{font-size:0.78em;font-weight:600;color:#e2e8f0}
+.contact-company{font-size:0.62em;color:#64748b;margin-top:1px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.badge{font-size:0.52em;padding:1px 4px;border-radius:3px;font-weight:700;margin-left:4px}
+.badge-ka{background:linear-gradient(135deg,#f87171,#fb923c);color:#fff}
+.badge-chain{background:linear-gradient(135deg,#a78bfa,#818cf8);color:#fff}
+.badge-score{background:rgba(52,211,153,0.2);color:#34d399}
+.contact-meta{display:flex;flex-direction:column;align-items:flex-end;gap:2px}
+.status-tag{font-size:0.58em;padding:2px 6px;border-radius:8px;font-weight:600}
+.status-pending{background:rgba(251,146,60,0.15);color:#fb923c}
+.status-sent{background:rgba(96,165,250,0.15);color:#60a5fa}
+.status-accepted{background:rgba(52,211,153,0.15);color:#34d399}
+.status-replied{background:rgba(167,139,250,0.15);color:#a78bfa}
+.score-tag{font-size:0.52em;color:#475569;background:rgba(255,255,255,0.04);padding:1px 5px;border-radius:3px}
+.contact-detail{display:none;margin-top:6px;padding:8px;background:rgba(0,0,0,0.3);border-radius:6px;border-left:2px solid rgba(96,165,250,0.4);font-size:0.65em;color:#94a3b8;line-height:1.5}
+.contact-item.expanded .contact-detail{display:block}
+.contact-item.expanded .contact-meta{display:none}
+
+/* Sidebar */
+.sidebar{display:flex;flex-direction:column;gap:10px}
+
+/* Progress Ring */
+.progress-ring{display:flex;align-items:center;gap:12px;padding:10px;background:rgba(255,255,255,0.02);border-radius:8px}
+.progress-ring svg{width:56px;height:56px}
+.progress-ring .circle-bg{fill:none;stroke:rgba(255,255,255,0.08);stroke-width:5}
+.progress-ring .circle{fill:none;stroke:#34d399;stroke-width:5;stroke-linecap:round;transform:rotate(-90deg);transform-origin:center}
+.progress-info .title{font-size:0.72em;font-weight:600;color:#94a3b8}
+.progress-info .detail{font-size:0.62em;color:#64748b}
+.progress-info .gap{color:#fb923c;font-weight:600;font-size:0.65em}
+
+/* Keyword Performance */
+.kw-bar{display:flex;flex-direction:column;gap:4px}
+.kw-row{display:flex;align-items:center;gap:6px;padding:5px 8px;background:rgba(255,255,255,0.02);border-radius:5px;cursor:pointer;transition:background .15s}
+.kw-row:hover{background:rgba(255,255,255,0.04)}
+.kw-name{flex:1;font-size:0.68em;color:#94a3b8}
+.kw-meter{width:40px;height:3px;background:rgba(255,255,255,0.08);border-radius:2px;overflow:hidden}
+.kw-meter-fill{height:100%;background:linear-gradient(90deg,#60a5fa,#34d399);border-radius:2px}
+.kw-val{font-size:0.62em;font-weight:700;color:#60a5fa;width:18px;text-align:right}
+
+/* Action Items */
+.action-list{display:flex;flex-direction:column;gap:3px}
+.action-item{display:flex;align-items:center;gap:6px;padding:6px 8px;background:rgba(255,255,255,0.02);border-radius:6px;border-left:2px solid;transition:background .15s;cursor:pointer}
+.action-item:hover{background:rgba(255,255,255,0.04)}
+.action-item.p0{border-color:#f87171}
+.action-item.p1{border-color:#fb923c}
+.action-item.p2{border-color:#34d399}
+.action-text{flex:1;font-size:0.68em;color:#94a3b8}
+.action-tag{font-size:0.52em;padding:1px 5px;border-radius:3px;font-weight:600}
+.tag-top{background:rgba(248,113,113,0.15);color:#f87171}
+.tag-mid{background:rgba(251,146,60,0.15);color:#fb923c}
+.tag-done{background:rgba(52,211,153,0.15);color:#34d399}
+
+/* Analytics Panel */
+.analytics-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-bottom:12px}
+@media(max-width:800px){.analytics-grid{grid-template-columns:1fr}}
+.funnel-step{padding:10px;background:rgba(255,255,255,0.02);border-radius:8px;border-left:3px solid}
+.funnel-step.s1{border-color:#fb923c}
+.funnel-step.s2{border-color:#60a5fa}
+.funnel-step.s3{border-color:#34d399}
+.funnel-step.s4{border-color:#a78bfa}
+.funnel-step.s5{border-color:#f472b6}
+.funnel-label{font-size:0.62em;color:#64748b;margin-bottom:2px}
+.funnel-val{font-size:1.1em;font-weight:700}
+.funnel-rate{font-size:0.58em;color:#475569}
+
+/* Insights Cards */
+.insights-list{display:flex;flex-direction:column;gap:6px}
+.insight-card{padding:10px;background:rgba(255,255,255,0.02);border-radius:8px;border-left:3px solid}
+.insight-card.high{border-color:#f87171}
+.insight-card.medium{border-color:#fb923c}
+.insight-card.low{border-color:#34d399}
+.insight-title{font-size:0.72em;font-weight:600;color:#e2e8f0;margin-bottom:4px}
+.insight-detail{font-size:0.62em;color:#64748b;line-height:1.4}
+
+/* Template Selector */
+.template-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:8px}
+.template-card{padding:10px;background:rgba(255,255,255,0.02);border-radius:8px;border:1px solid rgba(255,255,255,0.06);cursor:pointer;transition:all .15s}
+.template-card:hover{background:rgba(255,255,255,0.04);border-color:rgba(96,165,250,0.2)}
+.template-card.selected{background:rgba(96,165,250,0.1);border-color:rgba(96,165,250,0.4)}
+.template-brand{font-size:0.7em;font-weight:600;color:#60a5fa}
+.template-name{font-size:0.62em;color:#64748b;margin-top:2px}
+.template-lang{font-size:0.52em;color:#475569;margin-top:2px}
+
+/* Generated Message */
+.generated-msg{background:rgba(0,0,0,0.3);border-radius:8px;padding:12px;border-left:3px solid #34d399}
+.msg-subject{font-size:0.72em;font-weight:600;color:#e2e8f0;margin-bottom:6px}
+.msg-body{font-size:0.62em;color:#94a3b8;line-height:1.6;white-space:pre-wrap}
+
+/* Region Chart */
+.region-list{display:flex;flex-direction:column;gap:4px}
+.region-item{display:flex;align-items:center;gap:8px;padding:6px 10px;background:rgba(255,255,255,0.02);border-radius:6px}
+.region-name{flex:1;font-size:0.68em;color:#94a3b8}
+.region-bar{width:60px;height:4px;background:rgba(255,255,255,0.08);border-radius:2px;overflow:hidden}
+.region-bar-fill{height:100%;border-radius:2px}
+.region-count{font-size:0.62em;font-weight:600;color:#60a5fa}
+
+/* Buttons */
+.btn{padding:8px 16px;border-radius:8px;font-size:0.72em;font-weight:600;cursor:pointer;transition:all .15s;border:none}
+.btn-primary{background:linear-gradient(135deg,#34d399,#10b981);color:#fff}
+.btn-primary:hover{opacity:.9;transform:scale(1.02)}
+.btn-secondary{background:rgba(255,255,255,0.06);color:#94a3b8;border:1px solid rgba(255,255,255,0.1)}
+.btn-secondary:hover{background:rgba(255,255,255,0.1)}
+.btn-export{background:rgba(96,165,250,0.15);color:#60a5fa;border:1px solid rgba(96,165,250,0.3)}
+.btn-export:hover{background:rgba(96,165,250,0.2)}
+
+/* Search Bar */
+.search-bar{display:flex;gap:6px;margin-bottom:12px}
+.search-input{flex:1;padding:8px 12px;border-radius:8px;border:1px solid rgba(255,255,255,0.06);background:rgba(255,255,255,0.02);color:#e2e8f0;font-size:0.72em}
+.search-input:focus{outline:none;border-color:rgba(96,165,250,0.4);background:rgba(255,255,255,0.04)}
+.search-input::placeholder{color:#475569}
+.filter-btn{padding:8px 12px;border-radius:8px;font-size:0.68em;background:rgba(255,255,255,0.04);color:#64748b;border:1px solid rgba(255,255,255,0.06);cursor:pointer}
+.filter-btn:hover{background:rgba(255,255,255,0.07)}
+.filter-btn.active{background:rgba(96,165,250,0.15);color:#60a5fa;border-color:rgba(96,165,250,0.3)}
+
+/* Loading/Error */
+.loading{text-align:center;padding:30px;color:#64748b}
+.error{text-align:center;padding:30px;color:#f87171}
+.footer{text-align:center;color:#334155;font-size:0.58em;margin-top:10px;padding-top:8px;border-top:1px solid rgba(255,255,255,0.04)}
+
+/* Hide sections by default */
+.section{display:none}
+.section.active{display:block}
+
+/* Toast Notification */
+.toast{position:fixed;bottom:20px;right:20px;padding:12px 20px;background:rgba(52,211,153,0.2);border:1px solid rgba(52,211,153,0.4);border-radius:8px;color:#34d399;font-size:0.72em;font-weight:600;z-index:1000;transition:opacity .3s}
+.toast.error{background:rgba(248,113,113,0.2);border-color:rgba(248,113,113,0.4);color:#f87171}
+
+/* Health Status */
+.health-badge{display:inline-flex;align-items:center;gap:4px;padding:3px 8px;border-radius:6px;font-size:0.58em;font-weight:600}
+.health-healthy{background:rgba(52,211,153,0.15);color:#34d399}
+.health-warning{background:rgba(251,146,60,0.15);color:#fb923c}
+.health-attention{background:rgba(248,113,113,0.15);color:#f87171}
 
 /* Platform Tabs */
-.platform-tabs { display: flex; gap: 8px; margin-bottom: 16px; }
-.platform-tab { padding: 8px 16px; border: 1px solid var(--border); background: transparent; color: var(--muted); border-radius: 8px; font-size: 13px; cursor: pointer; transition: all 0.2s; display: flex; align-items: center; gap: 6px; }
-.platform-tab:hover { border-color: var(--muted); }
-.platform-tab.active { background: var(--accent); border-color: var(--accent); color: #fff; }
+.platform-tabs{display:flex;gap:8px;margin-bottom:14px;flex-wrap:wrap}
+.platform-tab{display:flex;align-items:center;gap:8px;padding:10px 16px;border-radius:8px;font-size:0.75em;font-weight:600;cursor:pointer;border:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.03);transition:all .2s}
+.platform-tab:hover{transform:translateY(-1px)}
+.platform-tab.active{background:rgba(96,165,250,0.15);border-color:rgba(96,165,250,0.4);color:#60a5fa}
+.platform-tab.active.li{background:rgba(0,119,182,0.15);border-color:rgba(0,119,182,0.4);color:#0077b5}
+.platform-tab.active.ins{background:rgba(225,48,108,0.15);border-color:rgba(225,48,108,0.4);color:#e1306c}
+.platform-tab.active.fb{background:rgba(24,119,242,0.15);border-color:rgba(24,119,242,0.4);color:#1877f2}
 
-/* Module Tabs */
-.module-tabs { display: flex; gap: 6px; margin-bottom: 16px; flex-wrap: wrap; }
-.module-tab { padding: 8px 14px; background: var(--card); border: 1px solid var(--border); border-radius: 6px; font-size: 12px; cursor: pointer; transition: all 0.2s; }
-.module-tab:hover { border-color: var(--accent); }
-.module-tab.active { background: var(--accent); border-color: var(--accent); color: #fff; }
-.module-tab .new { font-size: 9px; padding: 1px 4px; border-radius: 3px; background: var(--danger); color: #fff; margin-left: 4px; }
+/* Daily Target */
+.daily-target{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:14px}
+.dt-card{padding:12px;border-radius:10px;border:1px solid rgba(255,255,255,0.08);background:rgba(255,255,255,0.02)}
+.dt-card.li{border-left:3px solid #0077b5}
+.dt-card.ins{border-left:3px solid #e1306c}
+.dt-card.fb{border-left:3px solid #1877f2}
+.dt-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:8px}
+.dt-platform{font-size:0.8em;font-weight:600}
+.dt-target{font-size:0.7em;color:#64748b}
+.dt-progress{display:flex;align-items:center;gap:8px}
+.dt-bar{flex:1;height:6px;background:rgba(255,255,255,0.1);border-radius:3px;overflow:hidden}
+.dt-fill{height:100%;border-radius:3px;transition:width .5s}
+.dt-fill.li{background:linear-gradient(90deg,#0077b5,#00a0dc)}
+.dt-fill.ins{background:linear-gradient(90deg,#e1306c,#f77737)}
+.dt-fill.fb{background:linear-gradient(90deg,#1877f2,#66b3ff)}
+.dt-nums{font-size:0.75em;font-weight:600;min-width:50px;text-align:right}
 
-/* Main Content Grid */
-.content-grid { display: grid; grid-template-columns: 1fr 320px; gap: 20px; }
+/* Version Tags */
+.vt{font-size:0.5em;padding:1px 4px;border-radius:3px;margin-left:4px;font-weight:700}
+.vt6{background:#3b82f6;color:#fff}.vt7{background:#10b981;color:#fff}.vt8{background:#8b5cf6;color:#fff}
 
-/* Left Column */
-.left-col { display: flex; flex-direction: column; gap: 16px; }
+/* Platform Badge */
+.platform-badge{font-size:0.55em;padding:2px 6px;border-radius:10px;font-weight:700;display:inline-block;margin-bottom:2px}
+.platform-badge.linkedin{background:rgba(0,119,182,0.2);color:#0077b5}
+.platform-badge.instagram{background:rgba(225,48,108,0.2);color:#e1306c}
+.platform-badge.facebook{background:rgba(24,119,242,0.2);color:#1877f2}
 
-/* Right Column */
-.right-col { display: flex; flex-direction: column; gap: 16px; }
+/* AI Chat */
+.ai-chat{background:rgba(139,92,246,0.05);border:1px solid rgba(139,92,246,0.2);border-radius:12px;padding:14px}
+.ai-header{display:flex;align-items:center;gap:8px;margin-bottom:10px}
+.ai-avatar{width:32px;height:32px;border-radius:50%;background:linear-gradient(135deg,#8b5cf6,#a78bfa);display:flex;align-items:center;justify-content:center}
+.ai-title{font-size:0.85em;font-weight:600;color:#e2e8f0}
+.ai-msgs{max-height:250px;overflow-y:auto;padding:10px;background:rgba(0,0,0,0.3);border-radius:8px;margin-bottom:10px}
+.ai-msg{margin-bottom:8px;padding:8px 12px;border-radius:8px;font-size:0.72em;line-height:1.4}
+.ai-msg.user{background:rgba(96,165,250,0.15);text-align:right;color:#e2e8f0}
+.ai-msg.ai{background:rgba(139,92,246,0.15);color:#c4b5fd}
+.ai-suggestions{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:10px}
+.ai-suggest{padding:6px 10px;background:rgba(139,92,246,0.1);border:1px solid rgba(139,92,246,0.2);border-radius:6px;font-size:0.62em;color:#a78bfa;cursor:pointer}
+.ai-input-row{display:flex;gap:8px}
+.ai-input{flex:1;padding:8px 10px;border-radius:6px;border:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.05);color:#e2e8f0;font-size:0.72em}
+.ai-input:focus{outline:none;border-color:rgba(139,92,246,0.4)}
+.btn-ai{background:linear-gradient(135deg,#8b5cf6,#a78bfa);color:#fff;padding:8px 16px;border-radius:8px;font-size:0.72em;font-weight:600;cursor:pointer;border:none}
 
-/* Panel System */
-.panel { background: var(--card); border: 1px solid var(--border); border-radius: 12px; overflow: hidden; transition: all 0.3s; position: relative; }
-.panel:hover { border-color: #3b82f644; }
-.panel-header { display: flex; justify-content: space-between; align-items: center; padding: 14px 18px; border-bottom: 1px solid var(--border); cursor: move; background: #141720; }
-.panel-header h3 { font-size: 14px; font-weight: 600; display: flex; align-items: center; gap: 8px; }
-.panel-tools { display: flex; gap: 6px; }
-.panel-tools button { width: 24px; height: 24px; border: none; background: var(--border); color: var(--muted); border-radius: 4px; cursor: pointer; font-size: 12px; display: flex; align-items: center; justify-content: center; transition: all 0.2s; }
-.panel-tools button:hover { background: var(--accent); color: #fff; }
-.panel-body { padding: 16px 18px; max-height: 500px; overflow-y: auto; }
-.panel.collapsed .panel-body { display: none; }
-
-/* Platform Progress Cards */
-.platform-progress { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
-.plat-card { background: #141720; border: 1px solid var(--border); border-radius: 10px; padding: 16px; transition: all 0.2s; }
-.plat-card:hover { border-color: var(--accent); }
-.plat-card .top { display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px; }
-.plat-card .info { display: flex; align-items: center; gap: 8px; }
-.plat-card .icon { width: 36px; height: 36px; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 16px; }
-.plat-card .icon.li { background: #0a66c222; color: #0a66c2; }
-.plat-card .icon.ig { background: #e4405f22; color: #e4405f; }
-.plat-card .icon.fb { background: #1877f222; color: #1877f2; }
-.plat-card .name { font-size: 13px; font-weight: 600; }
-.plat-card .target { font-size: 11px; color: var(--muted); }
-.plat-card .progress { font-size: 24px; font-weight: 700; margin-bottom: 8px; }
-.plat-card .bar { height: 6px; background: var(--border); border-radius: 3px; overflow: hidden; }
-.plat-card .bar-fill { height: 100%; border-radius: 3px; transition: width 0.3s; }
-.plat-card .bar-fill.li { background: linear-gradient(90deg, #0a66c2, #0077b5); }
-.plat-card .bar-fill.ig { background: linear-gradient(90deg, #e4405f, #c13584); }
-.plat-card .bar-fill.fb { background: linear-gradient(90deg, #1877f2, #3b5998); }
-
-/* Contact Pipeline */
-.pipeline-search { display: flex; gap: 8px; margin-bottom: 12px; }
-.pipeline-search input { flex: 1; padding: 10px 14px; background: #141720; border: 1px solid var(--border); border-radius: 8px; color: var(--text); font-size: 13px; }
-.pipeline-search input:focus { outline: none; border-color: var(--accent); }
-.pipeline-search input::placeholder { color: var(--muted); }
-
-.filter-btns { display: flex; gap: 6px; margin-bottom: 12px; flex-wrap: wrap; }
-.filter-btn { padding: 6px 12px; background: transparent; border: 1px solid var(--border); color: var(--muted); border-radius: 6px; font-size: 12px; cursor: pointer; transition: all 0.2s; }
-.filter-btn:hover { border-color: var(--muted); }
-.filter-btn.active { background: var(--accent); border-color: var(--accent); color: #fff; }
-.filter-btn.ka { background: var(--warning); border-color: var(--warning); color: #000; font-weight: 600; }
-
-.contact-list { max-height: 400px; overflow-y: auto; }
-.contact-item { display: flex; align-items: center; gap: 12px; padding: 12px; background: #141720; border: 1px solid var(--border); border-radius: 8px; margin-bottom: 8px; cursor: pointer; transition: all 0.2s; }
-.contact-item:hover { border-color: var(--accent); }
-.contact-item .avatar { width: 40px; height: 40px; border-radius: 50%; background: var(--border); display: flex; align-items: center; justify-content: center; font-weight: 600; font-size: 16px; color: var(--primary); }
-.contact-item .info { flex: 1; }
-.contact-item .name { font-size: 14px; font-weight: 600; display: flex; align-items: center; gap: 6px; }
-.contact-item .name .tag { font-size: 9px; padding: 2px 5px; border-radius: 3px; background: var(--warning); color: #000; font-weight: 700; }
-.contact-item .meta { font-size: 12px; color: var(--muted); margin-top: 2px; }
-.contact-item .right { text-align: right; }
-.contact-item .status { font-size: 12px; font-weight: 600; }
-.contact-item .status.pending { color: var(--warning); }
-.contact-item .status.sent { color: var(--primary); }
-
-.export-btns { display: flex; gap: 8px; margin-top: 12px; }
-.export-btn { padding: 8px 16px; background: var(--border); border: none; border-radius: 6px; color: var(--text); font-size: 12px; cursor: pointer; transition: all 0.2s; }
-.export-btn:hover { background: var(--accent); }
-
-/* Side Stats */
-.side-stat { background: #141720; border: 1px solid var(--border); border-radius: 10px; padding: 16px; margin-bottom: 12px; }
-.side-stat .title { font-size: 13px; font-weight: 600; margin-bottom: 12px; display: flex; align-items: center; gap: 6px; }
-.side-stat .progress { display: flex; align-items: center; gap: 12px; margin-bottom: 12px; }
-.side-stat .ring { width: 60px; height: 60px; position: relative; }
-.side-stat .ring svg { width: 60px; height: 60px; }
-.side-stat .ring circle { fill: none; stroke-width: 6; }
-.side-stat .ring .bg { stroke: var(--border); }
-.side-stat .ring .fill { stroke: var(--primary); stroke-linecap: round; transform: rotate(-90deg); transform-origin: center; }
-.side-stat .ring-text { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 14px; font-weight: 700; }
-.side-stat .progress-info .num { font-size: 20px; font-weight: 700; }
-.side-stat .progress-info .sub { font-size: 11px; color: var(--muted); }
-
-/* Keywords */
-.kw-list { display: flex; flex-wrap: wrap; gap: 8px; }
-.kw-tag { padding: 6px 12px; background: #141720; border: 1px solid var(--border); border-radius: 6px; font-size: 12px; cursor: pointer; transition: all 0.2s; display: flex; align-items: center; gap: 6px; }
-.kw-tag:hover { border-color: var(--accent); background: #1e2a3a; }
-.kw-tag .score { font-size: 10px; padding: 2px 5px; border-radius: 3px; background: var(--warning); color: #000; font-weight: 600; }
-
-/* Actions */
-.action-list { }
-.action-item { display: flex; align-items: center; gap: 12px; padding: 12px; background: #141720; border: 1px solid var(--border); border-radius: 8px; margin-bottom: 8px; cursor: pointer; transition: all 0.2s; }
-.action-item:hover { border-color: var(--accent); }
-.action-item .icon { width: 32px; height: 32px; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 14px; background: var(--border); }
-.action-item .info { flex: 1; }
-.action-item .title { font-size: 13px; font-weight: 600; }
-.action-item .status { font-size: 11px; padding: 3px 8px; border-radius: 4px; }
-.action-item .status.progress { background: #3b82f622; color: var(--accent); }
-.action-item .status.done { background: #22c55e22; color: #22c55e; }
-.action-item .status.wait { background: #f59e0b22; color: var(--warning); }
-
-/* Timezone */
-.tz-bar { display: flex; gap: 8px; flex-wrap: wrap; }
-.tz-item { background: #141720; border: 1px solid var(--border); border-radius: 8px; padding: 10px 14px; display: flex; align-items: center; gap: 10px; font-size: 12px; }
-.tz-item .flag { font-size: 18px; }
-.tz-item .name { color: var(--muted); font-size: 11px; }
-.tz-item .time { color: var(--text); font-weight: 600; }
-.tz-item .status { padding: 3px 8px; border-radius: 4px; font-size: 10px; font-weight: 600; }
-.tz-item .status.working { background: #22c55e22; color: #22c55e; }
-.tz-item .status.off { background: #4b556322; color: #6b7280; }
+/* Tasks */
+.task-list{display:flex;flex-direction:column;gap:6px}
+.task-item{display:flex;align-items:center;gap:10px;padding:10px;background:rgba(255,255,255,0.02);border-radius:8px;border:1px solid rgba(255,255,255,0.04)}
+.task-check{width:18px;height:18px;border-radius:4px;border:2px solid rgba(255,255,255,0.2);cursor:pointer;display:flex;align-items:center;justify-content:center;font-size:0.6em;color:#34d399}
+.task-check.checked{background:#34d399;border-color:#34d399}
+.task-content{flex:1}
+.task-name{font-size:0.72em;color:#e2e8f0;font-weight:600}
+.task-desc{font-size:0.58em;color:#64748b;margin-top:2px}
+.task-pri{font-size:0.5em;padding:2px 6px;border-radius:4px;font-weight:700}
+.pri-hi{background:rgba(248,113,113,0.15);color:#f87171}
+.pri-med{background:rgba(251,146,60,0.15);color:#fb923c}
+.pri-lo{background:rgba(52,211,153,0.15);color:#34d399}
 
 /* Changelog */
-.changelog-section { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 20px; margin-top: 20px; }
-.changelog-section h2 { font-size: 16px; font-weight: 600; margin-bottom: 16px; display: flex; align-items: center; gap: 8px; }
-.version-item { background: #141720; border: 1px solid var(--border); border-radius: 8px; margin-bottom: 12px; overflow: hidden; }
-.version-header { display: flex; justify-content: space-between; align-items: center; padding: 12px 16px; cursor: pointer; transition: background 0.2s; }
-.version-header:hover { background: #1e2a3a; }
-.version-header .v-num { font-weight: 600; font-size: 14px; }
-.version-header .v-date { font-size: 12px; color: var(--muted); }
-.version-body { padding: 0 16px 12px; display: none; }
-.version-item.expanded .version-body { display: block; }
-.version-body ul { list-style: none; font-size: 13px; }
-.version-body li { padding: 6px 0; padding-left: 20px; position: relative; }
-.version-body li::before { content: ''; position: absolute; left: 0; top: 50%; transform: translateY(-50%); width: 8px; height: 8px; border-radius: 50%; background: var(--primary); }
-
-/* Drag & Resize */
-.panel.dragging { opacity: 0.7; transform: scale(1.02); box-shadow: 0 10px 40px rgba(0,0,0,0.5); }
-.resize-handle { position: absolute; right: 0; bottom: 0; width: 20px; height: 20px; cursor: se-resize; opacity: 0; transition: opacity 0.2s; }
-.panel:hover .resize-handle { opacity: 0.5; }
-.resize-handle::after { content: ''; position: absolute; right: 4px; bottom: 4px; width: 8px; height: 8px; border-right: 2px solid var(--muted); border-bottom: 2px solid var(--muted); }
-
-/* Version Log - Compact Draggable */
-.version-log { position: fixed; bottom: 20px; right: 20px; width: 200px; background: var(--card); border: 1px solid var(--border); border-radius: 8px; font-size: 11px; z-index: 100; box-shadow: 0 4px 12px rgba(0,0,0,0.3); }
-.vlog-header { padding: 8px 12px; background: #141720; border-radius: 8px 8px 0 0; cursor: move; font-weight: 600; display: flex; justify-content: space-between; align-items: center; }
-.vlog-header::after { content: '▼'; font-size: 8px; }
-.vlog-body { max-height: 200px; overflow-y: auto; padding: 8px; }
-.vlog-item { padding: 4px 0; border-bottom: 1px solid var(--border); }
-.vlog-item:last-child { border-bottom: none; }
-.vlog-item .v { font-weight: 600; color: var(--accent); }
-
-/* Toast */
-.toast { position: fixed; bottom: 24px; left: 50%; transform: translateX(-50%); background: var(--card); border: 1px solid var(--border); padding: 12px 24px; border-radius: 8px; font-size: 13px; opacity: 0; transition: opacity 0.3s; z-index: 1000; }
-.toast.show { opacity: 1; }
-.toast.success { border-color: var(--primary); color: var(--primary); }
-
-/* Responsive */
-@media (max-width: 1400px) { .stats-grid { grid-template-columns: repeat(5, 1fr); } .content-grid { grid-template-columns: 1fr; } }
-@media (max-width: 1000px) { .stats-grid { grid-template-columns: repeat(3, 1fr); } }
-@media (max-width: 600px) { .stats-grid { grid-template-columns: repeat(2, 1fr); } .platform-progress { grid-template-columns: 1fr; } }
+.changelog{max-height:300px;overflow-y:auto}
+.cl-entry{padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.05)}
+.cl-entry:last-child{border-bottom:none}
+.cl-ver{font-size:0.75em;font-weight:700;color:#60a5fa;margin-bottom:2px}
+.cl-date{font-size:0.58em;color:#475569;margin-bottom:4px}
+.cl-features{font-size:0.65em;color:#94a3b8;line-height:1.5}
+/* Bot Control Panel - Interactive */
+.bot-panel{background:rgba(255,255,255,0.02);border:1px solid rgba(255,255,255,0.06);border-radius:12px;padding:16px;margin-bottom:14px}
+.bot-server-row{display:flex;align-items:center;gap:8px;padding:10px 14px;background:rgba(0,0,0,0.3);border-radius:8px;margin-bottom:14px;border:1px solid rgba(255,255,255,0.06)}
+.bot-server-indicator{width:10px;height:10px;border-radius:50%;flex-shrink:0}
+.bot-server-indicator.online{background:#34d399;box-shadow:0 0 8px rgba(52,211,153,0.5);animation:pulse 1.5s infinite}
+.bot-server-indicator.offline{background:#64748b}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.4}}
+.bot-server-text{font-size:0.7em;color:#94a3b8;flex:1;font-weight:500}
+.bot-connect-btn{font-size:0.65em;padding:5px 12px;border:none;border-radius:6px;cursor:pointer;background:#3b82f6;color:white;white-space:nowrap}
+.bot-connect-btn:hover{background:#2563eb}
+.bot-server-input{font-size:0.6em;padding:5px 8px;background:rgba(0,0,0,0.4);border:1px solid rgba(255,255,255,0.1);border-radius:6px;color:#94a3b8;width:160px;font-family:'Cascadia Code',monospace}
+.bot-server-input:focus{outline:none;border-color:#3b82f6}
+.bot-platforms{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:14px}
+.bot-platform-card{background:rgba(255,255,255,0.02);border:1px solid rgba(255,255,255,0.06);border-radius:10px;padding:14px;transition:all .3s}
+.bot-platform-card:hover{border-color:rgba(255,255,255,0.12);background:rgba(255,255,255,0.04)}
+.bot-platform-card.active{border-color:rgba(52,211,153,0.3);background:rgba(52,211,153,0.03)}
+.bp-header{display:flex;align-items:center;gap:10px;margin-bottom:12px}
+.bp-icon{font-size:1.8em}
+.bp-info{flex:1}
+.bp-name{font-size:0.78em;font-weight:700;color:#e2e8f0}
+.bp-desc{font-size:0.6em;color:#64748b;margin-top:2px}
+.bp-status-badge{font-size:0.55em;padding:2px 8px;border-radius:10px;font-weight:600}
+.bp-status-badge.offline{background:rgba(100,116,139,0.2);color:#64748b}
+.bp-status-badge.running{background:rgba(52,211,153,0.2);color:#34d399}
+.bp-stats{display:flex;gap:6px;margin-bottom:12px;padding:8px;background:rgba(0,0,0,0.2);border-radius:6px}
+.bp-stat{flex:1;text-align:center}
+.bp-stat-val{display:block;font-size:0.85em;font-weight:700;color:#e2e8f0}
+.bp-stat-label{font-size:0.5em;color:#64748b}
+.bp-actions{text-align:center}
+.btn{border:none;border-radius:6px;padding:8px 14px;font-size:0.68em;font-weight:600;cursor:pointer;transition:all .2s}
+.btn:active{transform:scale(0.96)}
+.btn-bot-start{background:linear-gradient(135deg,#3b82f6,#2563eb);color:white;box-shadow:0 2px 8px rgba(59,130,246,0.3)}
+.btn-bot-start:hover{box-shadow:0 4px 12px rgba(59,130,246,0.4);transform:translateY(-1px)}
+.btn-bot-start:disabled{background:#374151;color:#64748b;cursor:not-allowed;box-shadow:none;transform:none}
+.btn-bot-stop{background:linear-gradient(135deg,#ef4444,#dc2626);color:white;box-shadow:0 2px 8px rgba(239,68,68,0.3)}
+.btn-bot-stop:hover{box-shadow:0 4px 12px rgba(239,68,68,0.4)}
+.bot-quick-actions{display:flex;gap:8px;margin-bottom:14px}
+.bot-quick-actions .btn{flex:1;padding:10px;font-size:0.72em}
+.bot-log-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:6px;font-size:0.68em;color:#94a3b8;font-weight:600}
+.bot-clear-btn{font-size:0.6em;background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.1);color:#94a3b8;padding:3px 8px;border-radius:4px;cursor:pointer}
+.bot-clear-btn:hover{background:rgba(255,255,255,0.1);color:#e2e8f0}
+.bot-log{max-height:250px;overflow-y:auto;padding:8px 10px;background:rgba(0,0,0,0.3);border-radius:8px;font-size:0.58em;font-family:'Cascadia Code',monospace;line-height:1.7}
+.bot-log-entry{padding:1px 0;border-bottom:1px solid rgba(255,255,255,0.02);color:#64748b;word-break:break-all}
+.bot-log-entry.success{color:#34d399}
+.bot-log-entry.error{color:#f87171}
+.bot-log-entry.info{color:#60a5fa}
+.bot-log-entry.warn{color:#fbbf24}
+.bot-log .time{color:#475569;margin-right:6px}
+.btn-primary{background:#3b82f6;color:white}
+/* Bot Platform Active State */
+.bot-platform.active{border-color:rgba(52,211,153,0.4);background:rgba(52,211,153,0.05)}
+.bot-platform.active .bp-icon{animation:botPulse 2s infinite}
+@keyframes botPulse{0%,100%{transform:scale(1)}50%{transform:scale(1.1)}}
+/* Language Switcher */
+.lang-switcher{position:relative;display:inline-flex;align-items:center;gap:4px}
+.lang-btn{display:flex;align-items:center;gap:4px;padding:5px 10px;border-radius:20px;border:1px solid rgba(148,163,184,0.3);background:rgba(30,41,59,0.8);color:#e2e8f0;font-size:0.72em;cursor:pointer;transition:all .2s;backdrop-filter:blur(8px);white-space:nowrap}
+.lang-btn:hover{border-color:#60a5fa;background:rgba(59,130,246,0.15)}
+.lang-btn .lang-flag{font-size:1.1em}
+.lang-dropdown{position:absolute;top:110%;right:0;min-width:150px;background:rgba(15,23,42,0.95);border:1px solid rgba(148,163,184,0.2);border-radius:12px;overflow:hidden;z-index:9999;box-shadow:0 8px 32px rgba(0,0,0,0.5);backdrop-filter:blur(16px);display:none}
+.lang-dropdown.show{display:block;animation:langFade .15s ease}
+@keyframes langFade{from{opacity:0;transform:translateY(-4px)}to{opacity:1;transform:translateY(0)}}
+.lang-option{display:flex;align-items:center;gap:8px;padding:8px 14px;color:#cbd5e1;font-size:0.7em;cursor:pointer;transition:all .15s;border:none;background:none;width:100%;text-align:left}
+.lang-option:hover{background:rgba(59,130,246,0.15);color:#e2e8f0}
+.lang-option.active{background:rgba(59,130,246,0.2);color:#60a5fa}
+.lang-option .flag{font-size:1.2em}
+.lang-divider{height:1px;background:rgba(148,163,184,0.15);margin:2px 0}
 </style>
 </head>
 <body>
 <div class="container">
-  <div class="header">
+
+<!-- Header -->
+<div class="header">
+  <div>
+    <h1>Flextail & Vollyc · 智能客户开���系统</h1>
+    <p>Vercel 云端 · <b style="color:#34d399">实时同步</b> · <b style="color:#60a5fa">自动化优化</b> · <b style="color:#f472b6">智能话术</b></p>
+  </div>
+  <div class="header-right">
+    <div class="lang-switcher" id="lang-switcher">
+      <button class="lang-btn" onclick="toggleLangDropdown()">
+        <span class="lang-flag" id="current-flag">🇨🇳</span>
+        <span id="current-lang-name">中文</span>
+        <span style="font-size:0.8em;opacity:0.5">&#9660;</span>
+      </button>
+      <div class="lang-dropdown" id="lang-dropdown">
+        <button class="lang-option active" onclick="setLanguage('zh')" data-lang="zh"><span class="flag">🇨🇳</span>中文</button>
+        <button class="lang-option" onclick="setLanguage('en')" data-lang="en"><span class="flag">🇺🇸</span>English</button>
+        <button class="lang-option" onclick="setLanguage('zh-en')" data-lang="zh-en"><span class="flag">🌐</span>中英双语</button>
+        <div class="lang-divider"></div>
+        <button class="lang-option" onclick="setLanguage('ja')" data-lang="ja"><span class="flag">🇯🇵</span>日本語</button>
+        <button class="lang-option" onclick="setLanguage('ko')" data-lang="ko"><span class="flag">🇰🇷</span>한국어</button>
+        <div class="lang-divider"></div>
+        <button class="lang-option" onclick="setLanguage('es')" data-lang="es"><span class="flag">🇪🇸</span>Español</button>
+        <button class="lang-option" onclick="setLanguage('de')" data-lang="de"><span class="flag">🇩🇪</span>Deutsch</button>
+        <button class="lang-option" onclick="setLanguage('fr')" data-lang="fr"><span class="flag">🇫🇷</span>Français</button>
+        <button class="lang-option" onclick="setLanguage('pt')" data-lang="pt"><span class="flag">🇧🇷</span>Português</button>
+        <button class="lang-option" onclick="setLanguage('ar')" data-lang="ar"><span class="flag">🇸🇦</span>العربية</button>
+      </div>
+    </div>
+    <span class="pill pill-purple" id="version-pill">v8.0</span>
+    <span class="pill pill-orange" id="target-pill">每日目标 100</span>
+    <span class="pill pill-green" id="sync-status">🟢 实时同步</span>
+    <span class="health-badge health-healthy" id="health-badge">系统健康</span>
+  </div>
+</div>
+
+<!-- Stats Grid -->
+<div class="stats-grid" id="stats-grid">
+  <div class="stat-card"><div class="val v-green" id="stat-total">--</div><div class="lbl">总客户</div><div class="sub" id="stat-total-sub">--</div></div>
+  <div class="stat-card"><div class="val v-blue" id="stat-sent">--</div><div class="lbl">已发送</div><div class="sub" id="stat-sent-sub">本周 --</div></div>
+  <div class="stat-card"><div class="val v-orange" id="stat-today">--</div><div class="lbl">今日</div><div class="sub" id="stat-today-sub">目标 100</div></div>
+  <div class="stat-card"><div class="val v-green" id="stat-accepted">--</div><div class="lbl">已接受</div><div class="sub" id="stat-accepted-sub">转化率 --</div></div>
+  <div class="stat-card"><div class="val v-purple" id="stat-replied">--</div><div class="lbl">已回复</div><div class="sub">跟进中</div></div>
+  <div class="stat-card"><div class="val v-red" id="stat-ka">--</div><div class="lbl">KA/连锁</div><div class="sub" id="stat-ka-sub">重点客户</div></div>
+  <div class="stat-card"><div class="val v-cyan" id="stat-pending">--</div><div class="lbl">待处理</div><div class="sub">需要跟进</div></div>
+  <div class="stat-card"><div class="val v-blue" id="stat-rate">--</div><div class="lbl">转化率</div><div class="sub" id="stat-rate-sub">整体表现</div></div>
+  <div class="stat-card"><div class="val v-orange" id="stat-week">--</div><div class="lbl">本周</div><div class="sub">目标 500</div></div>
+  <div class="stat-card"><div class="val v-purple" id="stat-month">--</div><div class="lbl">本月</div><div class="sub">目标 2000</div></div>
+</div>
+
+<!-- Platform Tabs -->
+<div class="platform-tabs">
+  <div class="platform-tab active" data-platform="all" onclick="setPlatform('all',this)">🌐 全部平台</div>
+  <div class="platform-tab li" data-platform="linkedin" onclick="setPlatform('linkedin',this)">🔗 LinkedIn</div>
+  <div class="platform-tab ins" data-platform="instagram" onclick="setPlatform('instagram',this)">📸 Instagram</div>
+  <div class="platform-tab fb" data-platform="facebook" onclick="setPlatform('facebook',this)">📘 Facebook</div>
+</div>
+
+<!-- Daily Target -->
+<div class="daily-target">
+  <div class="dt-card li">
+    <div class="dt-header"><span class="dt-platform" style="color:#0077b5">🔗 LinkedIn</span><span class="dt-target">60条/天</span></div>
+    <div class="dt-progress"><div class="dt-bar"><div class="dt-fill li" id="li-bar" style="width:0%"></div></div><span class="dt-nums" id="li-nums">0/60</span></div>
+  </div>
+  <div class="dt-card ins">
+    <div class="dt-header"><span class="dt-platform" style="color:#e1306c">📸 Instagram</span><span class="dt-target">25条/天</span></div>
+    <div class="dt-progress"><div class="dt-bar"><div class="dt-fill ins" id="ins-bar" style="width:0%"></div></div><span class="dt-nums" id="ins-nums">0/25</span></div>
+  </div>
+  <div class="dt-card fb">
+    <div class="dt-header"><span class="dt-platform" style="color:#1877f2">📘 Facebook</span><span class="dt-target">15条/天</span></div>
+    <div class="dt-progress"><div class="dt-bar"><div class="dt-fill fb" id="fb-bar" style="width:0%"></div></div><span class="dt-nums" id="fb-nums">0/15</span></div>
+  </div>
+</div>
+
+<!-- Navigation -->
+<div class="nav-tabs">
+  <div class="nav-tab active" data-section="pipeline" onclick="showSection('pipeline',this)">📊 客户管道 <span class="vt vt6">v6</span></div>
+  <div class="nav-tab" data-section="analytics" onclick="showSection('analytics',this)">📈 转化分析 <span class="vt vt7">v7</span></div>
+  <div class="nav-tab" data-section="templates" onclick="showSection('templates',this)">💬 话术模板 <span class="vt vt7">v7</span></div>
+  <div class="nav-tab" data-section="optimize" onclick="showSection('optimize',this)">🤖 智能优化 <span class="vt vt7">v7</span></div>
+  <div class="nav-tab" data-section="profiles" onclick="showSection('profiles',this)">🎯 客户画像 <span class="vt vt7">v7</span></div>
+  <div class="nav-tab" data-section="aiassistant" onclick="showSection('aiassistant',this)">🤖 AI助手 <span class="vt vt8">v8</span></div>
+  <div class="nav-tab" data-section="automation" onclick="showSection('automation',this)">⚡ 自动化 <span class="vt vt8">v8</span></div>
+  <div class="nav-tab" data-section="changelog" onclick="showSection('changelog',this)">📝 升级日志 <span class="vt vt8">NEW</span></div>
+</div>
+
+<!-- Pipeline Section -->
+<div class="section active" id="section-pipeline">
+<div class="main-layout">
+
+<!-- Left: Contact List -->
+<div class="card">
+  <div class="card-title"><span class="dot"></span>客户 Pipeline · 点击展开详情</div>
+  
+  <!-- Search & Filters -->
+  <div class="search-bar">
+    <input type="text" class="search-input" id="search-input" placeholder="搜索客户名、公司、关键词..." onkeyup="filterContacts()">
+    <button class="filter-btn active" data-filter="all" onclick="setFilter('all',this)">全部</button>
+    <button class="filter-btn" data-filter="ka" onclick="setFilter('ka',this)">★ KA</button>
+    <button class="filter-btn" data-filter="pending" onclick="setFilter('pending',this)">待处理</button>
+    <button class="filter-btn" data-filter="accepted" onclick="setFilter('accepted',this)">已接受</button>
+  </div>
+  
+  <div class="loading" id="loading-pipeline">加载数据中...</div>
+  <div class="contact-list" id="contact-list"></div>
+  
+  <!-- Export Buttons -->
+  <div style="display:flex;gap:6px;margin-top:12px;justify-content:center">
+    <button class="btn btn-export" onclick="exportData('csv')">📥 导出 CSV</button>
+    <button class="btn btn-export" onclick="exportData('json')">📥 导出 JSON</button>
+    <button class="btn btn-secondary" onclick="loadData()">🔄 刷新</button>
+  </div>
+</div>
+
+<!-- Right: Sidebar -->
+<div class="sidebar">
+
+  <!-- Progress -->
+  <div class="card">
+    <div class="card-title"><span class="dot"></span>今日进度</div>
+    <div class="progress-ring">
+      <svg viewBox="0 0 60 60">
+        <circle class="circle-bg" cx="30" cy="30" r="24"/>
+        <circle class="circle" cx="30" cy="30" r="24" stroke-dasharray="150.8" stroke-dashoffset="150.8" id="progress-circle"/>
+      </svg>
+      <div class="progress-info">
+        <div class="title">发送进度</div>
+        <div class="detail" id="progress-detail">-- / 100</div>
+        <div class="gap" id="progress-gap">还差 -- 条</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Keywords -->
+  <div class="card">
+    <div class="card-title"><span class="dot"></span>关键词效果 TOP5</div>
+    <div class="kw-bar" id="kw-list"></div>
+  </div>
+
+  <!-- Actions -->
+  <div class="card">
+    <div class="card-title"><span class="dot"></span>下一步行动</div>
+    <div class="action-list" id="action-list"></div>
+  </div>
+
+</div>
+</div>
+</div>
+
+<!-- Analytics Section -->
+<div class="section" id="section-analytics">
+<div class="card">
+  <div class="card-title"><span class="dot"></span>转化漏斗分析</div>
+  
+  <!-- Funnel -->
+  <div class="analytics-grid" id="funnel-grid">
+    <div class="funnel-step s1"><div class="funnel-label">总客户</div><div class="funnel-val v-green" id="funnel-total">--</div><div class="funnel-rate">基准</div></div>
+    <div class="funnel-step s2"><div class="funnel-label">已发送</div><div class="funnel-val v-blue" id="funnel-sent">--</div><div class="funnel-rate" id="funnel-sent-rate">--%</div></div>
+    <div class="funnel-step s3"><div class="funnel-label">已回复</div><div class="funnel-val v-purple" id="funnel-reply">--</div><div class="funnel-rate" id="funnel-reply-rate">--%</div></div>
+    <div class="funnel-step s4"><div class="funnel-label">已接受</div><div class="funnel-val v-green" id="funnel-accept">--</div><div class="funnel-rate" id="funnel-accept-rate">--%</div></div>
+    <div class="funnel-step s5"><div class="funnel-label">成交/会议</div><div class="funnel-val v-cyan" id="funnel-close">--</div><div class="funnel-rate" id="funnel-close-rate">--%</div></div>
+  </div>
+  
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:12px">
+    <!-- Regions -->
+    <div class="card" style="padding:10px">
+      <div class="card-title" style="font-size:0.72em"><span class="dot"></span>地区分布</div>
+      <div class="region-list" id="region-list"></div>
+    </div>
+    
+    <!-- Customer Types -->
+    <div class="card" style="padding:10px">
+      <div class="card-title" style="font-size:0.72em"><span class="dot"></span>客户类型效果</div>
+      <div id="type-stats"></div>
+    </div>
+  </div>
+  
+  <!-- Insights -->
+  <div class="card" style="margin-top:12px">
+    <div class="card-title"><span class="dot"></span>智能洞察 & 优化建议</div>
+    <div class="insights-list" id="insights-list"></div>
+  </div>
+  
+  <button class="btn btn-primary" style="margin-top:12px" onclick="loadAnalytics()">🔄 刷新分析</button>
+</div>
+</div>
+
+<!-- Templates Section -->
+<div class="section" id="section-templates">
+<div class="card">
+  <div class="card-title"><span class="dot"></span>智能话术模板库</div>
+  
+  <div style="display:flex;gap:8px;margin-bottom:12px;flex-wrap:wrap">
+    <select id="lang-select" style="padding:6px 10px;border-radius:6px;background:rgba(255,255,255,0.04);color:#94a3b8;border:1px solid rgba(255,255,255,0.06);font-size:0.68em">
+      <option value="en">English</option>
+      <option value="zh">中文</option>
+      <option value="de">Deutsch</option>
+      <option value="fr">Français</option>
+      <option value="es">Español</option>
+      <option value="ja">日本語</option>
+    </select>
+    <select id="type-select" style="padding:6px 10px;border-radius:6px;background:rgba(255,255,255,0.04);color:#94a3b8;border:1px solid rgba(255,255,255,0.06);font-size:0.68em">
+      <option value="initial">初次联系</option>
+      <option value="followup">跟进消息</option>
+      <option value="ka">KA专属</option>
+    </select>
+  </div>
+  
+  <!-- Templates Grid -->
+  <div class="template-grid" id="template-grid"></div>
+  
+  <!-- Generate Message -->
+  <div style="margin-top:12px">
+    <div class="card-title" style="font-size:0.72em;margin-bottom:8px"><span class="dot"></span>生成个性化消息</div>
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:6px;margin-bottom:8px">
+      <input type="text" id="var-name" placeholder="客户姓名" class="search-input" style="font-size:0.68em">
+      <input type="text" id="var-company" placeholder="公司名" class="search-input" style="font-size:0.68em">
+      <input type="text" id="var-region" placeholder="地区" class="search-input" style="font-size:0.68em">
+    </div>
+    <button class="btn btn-primary" onclick="generateMessage()">✨ 生成话术</button>
+  </div>
+  
+  <!-- Generated Output -->
+  <div class="generated-msg" id="generated-msg" style="display:none;margin-top:12px">
+    <div class="msg-subject" id="msg-subject"></div>
+    <div class="msg-body" id="msg-body"></div>
+    <div style="margin-top:8px">
+      <button class="btn btn-secondary" onclick="copyMessage()">📋 复制</button>
+    </div>
+  </div>
+  
+  <button class="btn btn-secondary" style="margin-top:12px" onclick="loadTemplates()">🔄 刷新模板</button>
+</div>
+</div>
+
+<!-- Optimize Section -->
+<div class="section" id="section-optimize">
+<div class="card">
+  <div class="card-title"><span class="dot"></span>系统优化状态</div>
+  
+  <!-- Health Check -->
+  <div style="display:flex;align-items:center;gap:12px;padding:12px;background:rgba(255,255,255,0.02);border-radius:8px;margin-bottom:12px">
+    <div id="health-icon" style="font-size:2em">✅</div>
     <div>
-      <h1>Flextail & Vollyc · 智能客户开发系统</h1>
-      <p style="font-size:13px;color:var(--muted);margin-top:4px">Vercel 云端 · 实时同步 · 自动化优化 · 智能话术</p>
-    </div>
-    <div class="meta">
-      <div><span class="badge badge-sync">🟢 实时同步</span><span class="badge badge-v">v0.3.0</span><span class="badge badge-live">每日目标 100</span></div>
-      <div id="clock" style="margin-top:4px"></div>
+      <div style="font-size:0.82em;font-weight:600;color:#e2e8f0" id="health-title">系统运行正常</div>
+      <div style="font-size:0.62em;color:#64748b" id="health-detail">所有指标达标</div>
     </div>
   </div>
-
-  <!-- 9 Stats Cards from v8.0.3 -->
-  <div class="stats-grid">
-    <div class="stat-card green">
-      <div class="num">37</div>
-      <div class="lbl">总客户</div>
-      <div class="sub">已发送 3</div>
-    </div>
-    <div class="stat-card blue">
-      <div class="num">3</div>
-      <div class="lbl">已发送</div>
-      <div class="sub">本周 17</div>
-    </div>
-    <div class="stat-card orange">
-      <div class="num">17</div>
-      <div class="lbl">今日</div>
-      <div class="sub">目标 100</div>
-    </div>
-    <div class="stat-card green">
-      <div class="num">0</div>
-      <div class="lbl">已接受</div>
-      <div class="sub">转化率 0%</div>
-    </div>
-    <div class="stat-card purple">
-      <div class="num">0</div>
-      <div class="lbl">已回复</div>
-      <div class="sub">跟进中</div>
-    </div>
-    <div class="stat-card orange">
-      <div class="num">11</div>
-      <div class="lbl">KA/连锁</div>
-      <div class="sub">重点客户</div>
-    </div>
-    <div class="stat-card blue">
-      <div class="num">37</div>
-      <div class="lbl">待处理</div>
-      <div class="sub">需要跟进</div>
-    </div>
-    <div class="stat-card red">
-      <div class="num">0%</div>
-      <div class="lbl">转化率</div>
-      <div class="sub">需要优化</div>
-    </div>
-    <div class="stat-card purple">
-      <div class="num">0</div>
-      <div class="lbl">本周</div>
-      <div class="sub">目标 500</div>
-    </div>
-    <div class="stat-card blue">
-      <div class="num">0</div>
-      <div class="lbl">本月</div>
-      <div class="sub">目标 2000</div>
-    </div>
+  
+  <!-- Metrics -->
+  <div class="analytics-grid" id="health-metrics" style="grid-template-columns:repeat(4,1fr)"></div>
+  
+  <!-- Issues -->
+  <div class="card" style="margin-top:12px">
+    <div class="card-title" style="font-size:0.72em"><span class="dot"></span>待处理事项</div>
+    <div class="insights-list" id="health-issues"></div>
   </div>
-
-  <!-- Platform Tabs -->
-  <div class="platform-tabs">
-    <div class="platform-tab active">🌐 全部平台</div>
-    <div class="platform-tab">🔗 LinkedIn</div>
-    <div class="platform-tab">📸 Instagram</div>
-    <div class="platform-tab">📘 Facebook</div>
+  
+  <!-- Automation Strategy -->
+  <div class="card" style="margin-top:12px">
+    <div class="card-title" style="font-size:0.72em"><span class="dot"></span>自动化策略</div>
+    <div id="strategy-content"></div>
   </div>
-
-  <!-- Module Tabs -->
-  <div class="module-tabs">
-    <div class="module-tab active">📊 客户管道 v6</div>
-    <div class="module-tab">📈 转化分析 v7</div>
-    <div class="module-tab">💬 话术模板 v7</div>
-    <div class="module-tab">🤖 智能优化 v7</div>
-    <div class="module-tab">🎯 客户画像 v7</div>
-    <div class="module-tab">🤖 AI助手 v8</div>
-    <div class="module-tab">⚡ 自动化 v8</div>
-    <div class="module-tab">📝 升级日志<span class="new">NEW</span></div>
+  
+  <!-- Quick Wins -->
+  <div class="card" style="margin-top:12px">
+    <div class="card-title" style="font-size:0.72em"><span class="dot"></span>快速优化建议</div>
+    <div id="quickwins-list"></div>
   </div>
+  
+  <button class="btn btn-primary" style="margin-top:12px" onclick="loadOptimize()">🔄 刷新优化状态</button>
+</div>
+</div>
 
-  <!-- Main Content Grid -->
-  <div class="content-grid">
-    <div class="left-col">
-      <!-- Platform Progress -->
-      <div class="panel" data-id="platform-progress">
-        <div class="panel-header">
-          <h3>📊 平台进度</h3>
-          <div class="panel-tools">
-            <button onclick="collapsePanel(this)">−</button>
-            <button onclick="resetPanel(this)">↺</button>
-          </div>
-        </div>
-        <div class="panel-body">
-          <div class="platform-progress">
-            <div class="plat-card">
-              <div class="top">
-                <div class="info"><div class="icon li">in</div><div><div class="name">LinkedIn</div><div class="target">60条/天</div></div></div>
-              </div>
-              <div class="progress">3/60</div>
-              <div class="bar"><div class="bar-fill li" style="width:5%"></div></div>
-            </div>
-            <div class="plat-card">
-              <div class="top">
-                <div class="info"><div class="icon ig">📷</div><div><div class="name">Instagram</div><div class="target">25条/天</div></div></div>
-              </div>
-              <div class="progress">1/25</div>
-              <div class="bar"><div class="bar-fill ig" style="width:4%"></div></div>
-            </div>
-            <div class="plat-card">
-              <div class="top">
-                <div class="info"><div class="icon fb">f</div><div><div class="name">Facebook</div><div class="target">15条/天</div></div></div>
-              </div>
-              <div class="progress">1/15</div>
-              <div class="bar"><div class="bar-fill fb" style="width:7%"></div></div>
-            </div>
-          </div>
-        </div>
-        <div class="resize-handle"></div>
+<!-- Profiles Section -->
+<div class="section" id="section-profiles">
+<div class="card">
+  <div class="card-title"><span class="dot"></span>客户画像分析</div>
+  
+  <!-- High Potential -->
+  <div style="margin-bottom:12px">
+    <div class="card-title" style="font-size:0.72em"><span class="dot" style="background:#34d399"></span>🟢 高潜力客户 (评分 ≥80)</div>
+    <div class="contact-list" id="high-potential-list" style="max-height:200px"></div>
+  </div>
+  
+  <!-- Medium Potential -->
+  <div style="margin-bottom:12px">
+    <div class="card-title" style="font-size:0.72em"><span class="dot" style="background:#fb923c"></span>🟡 中潜力客户 (评分 50-79)</div>
+    <div class="contact-list" id="medium-potential-list" style="max-height:150px"></div>
+  </div>
+  
+  <!-- Recommended Actions -->
+  <div style="margin-bottom:12px">
+    <div class="card-title" style="font-size:0.72em"><span class="dot" style="background:#f87171"></span>🔴 立即行动建议</div>
+    <div class="action-list" id="recommended-actions"></div>
+  </div>
+  
+  <button class="btn btn-primary" style="margin-top:12px" onclick="loadProfiles()">🔄 刷新画像</button>
+</div>
+</div>
+
+<!-- Footer -->
+
+<!-- v8.0 AI Assistant -->
+<div class="section" id="section-aiassistant">
+<div class="ai-chat">
+  <div class="ai-header"><div class="ai-avatar">🤖</div><div class="ai-title">Flextail AI 助手</div></div>
+  <div class="ai-msgs" id="ai-messages"><div class="ai-msg ai">👋 你好！我是智能客户开发助手。<br><br>📊 分析客户数据 · 💬 优化话术<br>🎯 制定策略 · ⚡ 自动化任务<br><br>试试下方快捷提问👇</div></div>
+  <div class="ai-suggestions">
+    <div class="ai-suggest" onclick="askAI('本周转化率是多少？')">📊 本周转化率</div>
+    <div class="ai-suggest" onclick="askAI('哪些地区效果最好？')">🌍 最佳地区</div>
+    <div class="ai-suggest" onclick="askAI('今日待办事项')">📋 今日待办</div>
+    <div class="ai-suggest" onclick="askAI('如何提高接受率？')">💡 提高接受率</div>
+    <div class="ai-suggest" onclick="askAI('KA客户跟进建议')">⭐ KA跟进</div>
+  </div>
+  <div class="ai-input-row"><input type="text" class="ai-input" id="ai-input" placeholder="输入问题..." onkeypress="if(event.key==='Enter')sendAI()"><button class="btn-ai" onclick="sendAI()">发送</button></div>
+</div>
+</div>
+
+
+<!-- Bot Control Panel - 完整交互式控制台 -->
+<div class="section" id="section-automation">
+<div class="bot-panel">
+  <!-- 服务器状态 -->
+  <div class="bot-server-row">
+    <div class="bot-server-indicator" id="server-dot"></div>
+    <span style="font-size:0.72em;color:#94a3b8" id="server-text">未连接 · 点击连接按钮</span>
+    <input type="text" id="server-url" value="http://localhost:3456" placeholder="服务器地址" style="flex:1;padding:4px 10px;border-radius:6px;border:1px solid rgba(255,255,255,0.1);background:rgba(0,0,0,0.2);color:#e2e8f0;font-size:0.68em">
+    <button class="btn btn-secondary" onclick="connectServer()" id="connect-btn" style="font-size:0.65em;padding:4px 12px">🔗 连接</button>
+  </div>
+  
+  <!-- 平台状态卡片 -->
+  <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:14px">
+    <div class="bot-platform" id="platform-linkedin">
+      <div style="display:flex;align-items:center;gap:6px;margin-bottom:8px">
+        <span style="color:#0077b5">🔗</span>
+        <span style="font-size:0.72em;font-weight:600">LinkedIn</span>
+        <span class="bp-status" id="li-status">空闲</span>
       </div>
-
-      <!-- Customer Pipeline -->
-      <div class="panel" data-id="pipeline">
-        <div class="panel-header">
-          <h3>👥 客户 Pipeline</h3>
-          <div class="panel-tools">
-            <button onclick="collapsePanel(this)">−</button>
-            <button onclick="resetPanel(this)">↺</button>
-          </div>
-        </div>
-        <div class="panel-body">
-          <div class="pipeline-search">
-            <input type="text" placeholder="搜索客户名、公司、关键词...">
-          </div>
-          <div class="filter-btns">
-            <div class="filter-btn active">全部</div>
-            <div class="filter-btn ka">★ KA</div>
-            <div class="filter-btn">待处理</div>
-            <div class="filter-btn">已接受</div>
-          </div>
-          <div class="contact-list" id="contactList">
-            <div class="contact-item"><div class="avatar">L</div><div class="info"><div class="name">Lealand Blum<span class="tag">KA</span></div><div class="meta">Amazon · Vendor Manager</div></div><div class="status warn">⏳待联系</div><div style="font-size:10px;color:var(--muted)">ka</div></div></div>
-            <div class="contact-item"><div class="avatar">P</div><div class="info"><div class="name">Peter Whitcomb<span class="tag">KA</span></div><div class="meta">TERSUS Solutions · CEO</div></div>___PLACEHOLDER_DAILLIANXI___<div style="font-size:10px;color:var(--muted)">ka</div></div></div>
-            <div class="contact-item"><div class="avatar">T</div><div class="info"><div class="name">Tom Bielek<span class="tag">KA</span></div><div class="meta">Yixiang International USA · VP Sales</div></div><div class="right"><div class="status pending">⏳ Pending</div><div style="font-size:10px;color:var(--muted)">ka</div></div></div>
-            <div class="contact-item"><div class="avatar">J</div><div class="info"><div class="name">Justin Hartwig<span class="tag">KA</span></div><div class="meta">Camping World · Senior Buyer</div></div><div class="right"><div class="status pending">⏳ Pending</div><div style="font-size:10px;color:var(--muted)">rv</div></div></div>
-            <div class="contact-item"><div class="avatar">P</div><div class="info"><div class="name">Peter Jelinek<span class="tag">KA</span></div><div class="meta">VP Merchandising-Officer · VP</div></div><div class="right"><div class="status pending">⏳ Pending</div><div style="font-size:10px;color:var(--muted)">rv</div></div></div>
-            <div class="contact-item"><div class="avatar">D</div><div class="info"><div class="name">Dan Murphy<span class="tag">KA</span></div><div class="meta">AutoZone · Senior Buyer</div></div><div class="right"><div class="status pending">⏳ Pending</div><div style="font-size:10px;color:var(--muted)">auto</div></div></div>
-            <div class="contact-item"><div class="avatar">T</div><div class="info"><div class="name">Tom Bradley<span class="tag">KA</span></div><div class="meta">NAPA Auto Parts · Director</div></div><div class="right"><div class="status pending">⏳ Pending</div><div style="font-size:10px;color:var(--muted)">auto</div></div></div>
-            <div class="contact-item"><div class="avatar">G</div><div class="info"><div class="name">George Martinez<span class="tag">KA</span></div><div class="meta">Discount Tire · VP Merchandising</div></div><div class="right"><div class="status pending">⏳ Pending</div><div style="font-size:10px;color:var(--muted)">auto</div></div></div>
-            <div class="contact-item"><div class="avatar">J</div><div class="info"><div class="name">James Wilson<span class="tag">KA</span></div><div class="meta">Walmart · Senior Buyer</div></div><div class="right"><div class="status pending">⏳ Pending</div><div style="font-size:10px;color:var(--muted)">retail</div></div></div>
-            <div class="contact-item"><div class="avatar">M</div><div class="info"><div class="name">Michael Park<span class="tag">KA</span></div><div class="meta">Target · Senior Buyer</div></div><div class="right"><div class="status pending">⏳ Pending</div><div style="font-size:10px;color:var(--muted)">retail</div></div></div>
-            <div class="contact-item"><div class="avatar">H</div><div class="info"><div class="name">Hans Mueller<span class="tag">KA</span></div><div class="meta">Intersport · Head of Purchasing</div></div><div class="right"><div class="status pending">⏳ Pending</div><div style="font-size:10px;color:var(--muted)">intl</div></div></div>
-            <div class="contact-item"><div class="avatar">M</div><div class="info"><div class="name">Mike Patterson</div><div class="meta">Bass Pro Shops · Category Manager</div></div><div class="right"><div class="status pending">⏳ Pending</div><div style="font-size:10px;color:var(--muted)">camping</div></div></div>
-            <div class="contact-item"><div class="avatar">S</div><div class="info"><div class="name">Sarah Chen</div><div class="meta">Cabela's · Senior Buyer</div></div><div class="right"><div class="status pending">⏳ Pending</div><div style="font-size:10px;color:var(--muted)">camping</div></div></div>
-            <div class="contact-item"><div class="avatar">D</div><div class="info"><div class="name">David Martinez</div><div class="meta">Dick's Sporting Goods · Director</div></div><div class="right"><div class="status pending">⏳ Pending</div><div style="font-size:10px;color:var(--muted)">camping</div></div></div>
-            <div class="contact-item"><div class="avatar">J</div><div class="info"><div class="name">Jennifer Walsh</div><div class="meta">Backcountry · Head of Buying</div></div><div class="right"><div class="status pending">⏳ Pending</div><div style="font-size:10px;color:var(--muted)">camping</div></div></div>
-            <div class="contact-item"><div class="avatar">P</div><div class="info"><div class="name">Pierre Dubois</div><div class="meta">Decathlon USA · Sourcing Manager</div></div><div class="right"><div class="status pending">⏳ Pending</div><div style="font-size:10px;color:var(--muted)">camping</div></div></div>
-            <div class="contact-item"><div class="avatar">W</div><div class="info"><div class="name">Whitney La Ruffa</div><div class="meta">Black Dog Outdoors · Founder</div></div><div class="status warn">⏳7天未回复</div><div style="font-size:10px;color:var(--muted)">camping</div></div></div>
-            <div class="contact-item"><div class="avatar">T</div><div class="info"><div class="name">Tom Connell</div><div class="meta">Gear Coop · Retail Executive</div></div><div class="right"><div class="status pending">⏳ Pending</div><div style="font-size:10px;color:var(--muted)">camping</div></div></div>
-            <div class="contact-item"><div class="avatar">S</div><div class="info"><div class="name">Sam Read</div><div class="meta">BETA OUTDOOR SPORTS · MD</div></div><div class="right"><div class="status pending">⏳ Pending</div><div style="font-size:10px;color:var(--muted)">camping</div></div></div>
-            <div class="contact-item"><div class="avatar">M</div><div class="info"><div class="name">Marc Knight</div><div class="meta">River Dogs Outfitters · Owner</div></div><div class="right"><div class="status pending">⏳ Pending</div><div style="font-size:10px;color:var(--muted)">camping</div></div></div>
-            <div class="contact-item"><div class="avatar">T</div><div class="info"><div class="name">Thomas Lange</div><div class="meta">Independent · Intl Commercial Exec</div></div><div class="right"><div class="status pending">⏳ Pending</div><div style="font-size:10px;color:var(--muted)">agent</div></div></div>
-            <div class="contact-item"><div class="avatar">C</div><div class="info"><div class="name">Carlos Jativa</div><div class="meta">Plumdrop · Operations Manager</div></div><div class="right"><div class="status pending">⏳ Pending</div><div style="font-size:10px;color:var(--muted)">camping</div></div></div>
-            <div class="contact-item"><div class="avatar">K</div><div class="info"><div class="name">Kevin Kaiser</div><div class="meta">EzyPath Consulting · Founder</div></div><div class="right"><div class="status pending">⏳ Pending</div><div style="font-size:10px;color:var(--muted)">camping</div></div></div>
-            <div class="contact-item"><div class="avatar">I</div><div class="info"><div class="name">Ian Pund</div><div class="meta">Altrec.com · Global Strategic Sales</div></div><div class="right"><div class="status pending">⏳ Pending</div><div style="font-size:10px;color:var(--muted)">camping</div></div></div>
-            <div class="contact-item"><div class="avatar">M</div><div class="info"><div class="name">Morgan Harman</div><div class="meta">Technical Sales · Outside Sales</div></div><div class="right"><div class="status pending">⏳ Pending</div><div style="font-size:10px;color:var(--muted)">camping</div></div></div>
-            <div class="contact-item"><div class="avatar">J</div><div class="info"><div class="name">Johanna Mills</div><div class="meta">E-Commerce & Retail · Director</div></div><div class="right"><div class="status pending">⏳ Pending</div><div style="font-size:10px;color:var(--muted)">rv</div></div></div>
-            <div class="contact-item"><div class="avatar">T</div><div class="info"><div class="name">Terry Graham</div><div class="meta">Procurement Manager · Parts & Service</div></div><div class="right"><div class="status pending">⏳ Pending</div><div style="font-size:10px;color:var(--muted)">rv</div></div></div>
-            <div class="contact-item"><div class="avatar">R</div><div class="info"><div class="name">Renee Gillis</div><div class="meta">Product Manager / RV Consultant</div></div><div class="right"><div class="status pending">⏳ Pending</div><div style="font-size:10px;color:var(--muted)">rv</div></div></div>
-            <div class="contact-item"><div class="avatar">M</div><div class="info"><div class="name">Mark Thompson</div><div class="meta">REI Co-op · Senior Buyer</div></div><div class="right"><div class="status pending">⏳ Pending</div><div style="font-size:10px;color:var(--muted)">camping</div></div></div>
-            <div class="contact-item"><div class="avatar">L</div><div class="info"><div class="name">Lisa Wang</div><div class="meta">REI Co-op · Product Manager</div></div><div class="right"><div class="status pending">⏳ Pending</div><div style="font-size:10px;color:var(--muted)">camping</div></div></div>
-            <div class="contact-item"><div class="avatar">B</div><div class="info"><div class="name">Brian O'Connor</div><div class="meta">L.L.Bean · Senior Buyer</div></div><div class="right"><div class="status pending">⏳ Pending</div><div style="font-size:10px;color:var(--muted)">camping</div></div></div>
-            <div class="contact-item"><div class="avatar">C</div><div class="info"><div class="name">Chris Hoffman</div><div class="meta">Eastern Mountain Sports · Director</div></div><div class="right"><div class="status pending">⏳ Pending</div><div style="font-size:10px;color:var(--muted)">camping</div></div></div>
-            <div class="contact-item"><div class="avatar">A</div><div class="info"><div class="name">Amy Foster</div><div class="meta">Moosejaw · Senior Outdoor Buyer</div></div><div class="right"><div class="status pending">⏳ Pending</div><div style="font-size:10px;color:var(--muted)">camping</div></div></div>
-            <div class="contact-item"><div class="avatar">R</div><div class="info"><div class="name">Rachel Kim</div><div class="meta">AutoZone · Category Manager</div></div><div class="right"><div class="status pending">⏳ Pending</div><div style="font-size:10px;color:var(--muted)">auto</div></div></div>
-            <div class="contact-item"><div class="avatar">S</div><div class="info"><div class="name">Samantha Lee</div><div class="meta">NAPA Auto Parts · Senior Buyer</div></div><div class="right"><div class="status pending">⏳ Pending</div><div style="font-size:10px;color:var(--muted)">auto</div></div></div>
-            <div class="contact-item"><div class="avatar">E</div><div class="info"><div class="name">Emily Chen</div><div class="meta">Walmart · Buyer</div></div><div class="right"><div class="status pending">⏳ Pending</div><div style="font-size:10px;color:var(--muted)">retail</div></div></div>
-            <div class="contact-item"><div class="avatar">J</div><div class="info"><div class="name">Jason Brooks</div><div class="meta">Best Buy · Senior Buyer</div></div><div class="right"><div class="status pending">⏳ Pending</div><div style="font-size:10px;color:var(--muted)">retail</div></div></div>
-          </div>
-          <div class="export-btns">
-            <button class="export-btn">📥 导出 CSV</button>
-            <button class="export-btn">📥 导出 JSON</button>
-            <button class="export-btn">🔄 刷新</button>
-          </div>
-        </div>
-        <div class="resize-handle"></div>
-      </div>
-
-      <!-- Global Timezones -->
-      <div class="panel" data-id="timezone">
-        <div class="panel-header">
-          <h3>🌍 全球时区状态</h3>
-          <div class="panel-tools">
-            <button onclick="collapsePanel(this)">−</button>
-            <button onclick="resetPanel(this)">↺</button>
-          </div>
-        </div>
-        <div class="panel-body">
-          <div class="tz-bar" id="tzBar"></div>
-        </div>
-        <div class="resize-handle"></div>
+      <div style="font-size:0.68em;color:#64748b">连接请求 + 消息</div>
+      <div style="font-size:1.1em;font-weight:700;color:#60a5fa;margin:6px 0"><span id="li-sent">0</span>/60 <span style="font-size:0.6em;color:#64748b">今日</span></div>
+      <div style="display:flex;gap:4px">
+        <button class="btn btn-bot-start" onclick="botStart('linkedin')" id="btn-li-start" disabled style="font-size:0.58em;padding:4px 8px;flex:1">▶️ 启动</button>
+        <button class="btn btn-bot-stop" onclick="botStop('linkedin')" id="btn-li-stop" style="font-size:0.58em;padding:4px 8px;flex:1">⏹️ 停止</button>
       </div>
     </div>
-
-    <div class="right-col">
-      <!-- Today Progress -->
-      <div class="side-stat">
-        <div class="title">📊 今日进度</div>
-        <div class="progress">
-          <div class="ring">
-            <svg viewBox="0 0 60 60"><circle class="bg" cx="30" cy="30" r="24"/><circle class="fill" id="todayRing" cx="30" cy="30" r="24" stroke-dasharray="150.8" stroke-dashoffset="150.8"/></svg>
-            <div class="ring-text" id="todayPercent">3%</div>
-          </div>
-          <div class="progress-info">
-            <div class="num">0 / 100</div>
-            <div class="sub">还差 97 条</div>
-          </div>
-        </div>
+    <div class="bot-platform" id="platform-instagram">
+      <div style="display:flex;align-items:center;gap:6px;margin-bottom:8px">
+        <span style="color:#e1306c">📸</span>
+        <span style="font-size:0.72em;font-weight:600">Instagram</span>
+        <span class="bp-status" id="ins-status">空闲</span>
       </div>
-
-      <!-- Keywords -->
-      <div class="panel" data-id="keywords">
-        <div class="panel-header">
-          <h3>🔍 关键词效果 TOP5</h3>
-          <div class="panel-tools">
-            <button onclick="collapsePanel(this)">−</button>
-          </div>
-        </div>
-        <div class="panel-body">
-          <div class="kw-list">
-            <div class="kw-tag">site:linkedin.com "A"<span class="score">0</span></div>
-            <div class="kw-tag">site:linkedin.com "B"<span class="score">0</span></div>
-            <div class="kw-tag">site:linkedin.com "C"<span class="score">0</span></div>
-            <div class="kw-tag">site:linkedin.com "D"<span class="score">0</span></div>
-            <div class="kw-tag">site:linkedin.com "B"<span class="score">0</span></div>
-          </div>
-        </div>
-        <div class="resize-handle"></div>
+      <div style="font-size:0.68em;color:#64748b">关注 + 点赞 + DM</div>
+      <div style="font-size:1.1em;font-weight:700;color:#f472b6;margin:6px 0"><span id="ins-sent">0</span>/25 <span style="font-size:0.6em;color:#64748b">今日</span></div>
+      <div style="display:flex;gap:4px">
+        <button class="btn btn-bot-start" onclick="botStart('instagram')" id="btn-ins-start" disabled style="font-size:0.58em;padding:4px 8px;flex:1">▶️ 启动</button>
+        <button class="btn btn-bot-stop" onclick="botStop('instagram')" id="btn-ins-stop" style="font-size:0.58em;padding:4px 8px;flex:1">⏹️ 停止</button>
       </div>
-
-      <!-- Next Actions -->
-      <div class="panel" data-id="actions">
-        <div class="panel-header">
-          <h3>📋 下一步行动</h3>
-          <div class="panel-tools">
-            <button onclick="collapsePanel(this)">−</button>
-          </div>
-        </div>
-        <div class="panel-body">
-          <div class="action-list">
-            <div class="action-item">
-              <div class="icon">🔗</div>
-              <div class="info"><div class="title">LinkedIn 今日还需发送 57 条</div></div>
-              <div class="status progress">进行中</div>
-            </div>
-            <div class="action-item">
-              <div class="icon">📸</div>
-              <div class="info"><div class="title">Instagram 今日还需发送 24 条</div></div>
-              <div class="status progress">进行中</div>
-            </div>
-            <div class="action-item">
-              <div class="icon">📘</div>
-              <div class="info"><div class="title">Facebook 今日还需发送 14 条</div></div>
-              <div class="status progress">进行中</div>
-            </div>
-            <div class="action-item">
-              <div class="icon">⭐</div>
-              <div class="info"><div class="title">跟进 KA/连锁客户 11 个</div></div>
-              <div class="status wait">待处理</div>
-            </div>
-            <div class="action-item">
-              <div class="icon">✅</div>
-              <div class="info"><div class="title">跟进超期未回复客户 1 个</div></div>
-              <div class="status done">完成</div>
-            </div>
-          </div>
-        </div>
-        <div class="resize-handle"></div>
+    </div>
+    <div class="bot-platform" id="platform-facebook">
+      <div style="display:flex;align-items:center;gap:6px;margin-bottom:8px">
+        <span style="color:#1877f2">📘</span>
+        <span style="font-size:0.72em;font-weight:600">Facebook</span>
+        <span class="bp-status" id="fb-status">空闲</span>
+      </div>
+      <div style="font-size:0.68em;color:#64748b">互动 + 消息</div>
+      <div style="font-size:1.1em;font-weight:700;color:#60a5fa;margin:6px 0"><span id="fb-sent">0</span>/15 <span style="font-size:0.6em;color:#64748b">今日</span></div>
+      <div style="display:flex;gap:4px">
+        <button class="btn btn-bot-start" onclick="botStart('facebook')" id="btn-fb-start" disabled style="font-size:0.58em;padding:4px 8px;flex:1">▶️ 启动</button>
+        <button class="btn btn-bot-stop" onclick="botStop('facebook')" id="btn-fb-stop" style="font-size:0.58em;padding:4px 8px;flex:1">⏹️ 停止</button>
       </div>
     </div>
   </div>
-
-  <!-- Version Log - Compact Draggable -->
-  <div class="version-log" id="versionLog">
-    <div class="vlog-header" onmousedown="startDragVLog(event)">📜 版本日志</div>
-    <div class="vlog-body" id="vlogBody" style="display:none">
-    <div class="version-item expanded">
-      <div class="version-header" onclick="toggleVersion(this)">
-        <div class="v-num">v0.2.0</div>
-        <div class="v-date">2026-04-08</div>
-      </div>
-      <div class="version-body">
-        <ul>
-          <li>✨ 融合v8.0.3完整功能模块</li>
-          <li>✨ 9维统计卡片（总客户/已发送/今日/已接受/已回复/KA/待处理/转化率/本周）</li>
-          <li>✨ 平台Tab切换（全部/LinkedIn/Instagram/Facebook）</li>
-          <li>✨ 模块Tab导航（客户管道/转化分析/话术模板/智能优化/客户画像/AI助手/自动化/升级日志）</li>
-          <li>✨ 客户Pipeline搜索+筛选（全部/KA/待处理/已接受）</li>
-          <li>✨ 导出功能（CSV/JSON/刷新）</li>
-          <li>🎨 统一设计语言+渐变顶部条</li>
-        </ul>
-      </div>
-    </div>
-    <div class="version-item">
-      <div class="version-header" onclick="toggleVersion(this)">
-        <div class="v-num">v0.1.0</div>
-        <div class="v-date">2026-04-08</div>
-      </div>
-      <div class="version-body">
-        <ul>
-          <li>全新面板系统 - 支持拖拽排序和缩放大小</li>
-          <li>版本历史模块 - 记录所有版本演进</li>
-          <li>面板折叠/展开功能</li>
-        </ul>
-      </div>
-    </div>
-    <div class="version-item">
-      <div class="version-header" onclick="toggleVersion(this)">
-        <div class="v-num">v8.0.3</div>
-        <div class="v-date">2026-04-08</div>
-      </div>
-      <div class="version-body">
-        <ul>
-          <li>9维统计卡片布局</li>
-          <li>客户Pipeline完整列表</li>
-          <li>平台切换Tab</li>
-          <li>模块导航Tab</li>
-          <li>实时同步状态</li>
-        </ul>
-      </div>
-    </div>
-    <div class="version-item">
-      <div class="version-header" onclick="toggleVersion(this)">
-        <div class="v-num">v0.0.2</div>
-        <div class="v-date">2026-04-08</div>
-      </div>
-      <div class="version-body">
-        <ul>
-          <li>拖拽布局功能 - 自由调整卡片位置</li>
-          <li>布局自动保存到localStorage</li>
-        </ul>
-      </div>
-    </div>
-    <div class="version-item">
-      <div class="version-header" onclick="toggleVersion(this)">
-        <div class="v-num">v0.0.1</div>
-        <div class="v-date">2026-04-08</div>
-      </div>
-      <div class="version-body">
-        <ul>
-          <li>5维统计卡片</li>
-          <li>时区状态监控条</li>
-          <li>智能自动外展开关</li>
-          <li>四平台进度展示</li>
-        </ul>
-      </div>
-    </div>
-    <div class="version-item">
-      <div class="version-header" onclick="toggleVersion(this)">
-        <div class="v-num">v6.1</div>
-        <div class="v-date">2026-04-03</div>
-      </div>
-      <div class="version-body">
-        <ul>
-          <li>Tier分布条形图</li>
-          <li>关键词效果排名</li>
-          <li>下一步行动清单</li>
-          <li>25人联系人表格</li>
-        </ul>
-      </div>
-    </div>
-    <div class="version-item">
-      <div class="version-header" onclick="toggleVersion(this)">
-        <div class="v-num">v1.0</div>
-        <div class="v-date">2026-04-03</div>
-      </div>
-      <div class="version-body">
-        <ul>
-          <li>Google Sheet数据源集成</li>
-          <li>37个联系人导入</li>
-          <li>Vercel部署</li>
-          <li>Dashboard基础框架</li>
-        </ul>
-      </div>
-    </div>
+  
+  <!-- 批量控制 -->
+  <div style="display:flex;gap:8px;margin-bottom:14px;justify-content:center;flex-wrap:wrap">
+    <button class="btn btn-primary" onclick="botStartAll()" id="btn-start-all" style="font-size:0.68em">🚀 一键启动全部</button>
+    <button class="btn btn-secondary" onclick="botStopAll()" id="btn-stop-all" style="font-size:0.68em">⏹️ 全部停止</button>
+    <label style="display:flex;align-items:center;gap:4px;font-size:0.68em;color:#94a3b8"><input type="checkbox" id="headless-mode"> 后台模式</label>
+    <label style="display:flex;align-items:center;gap:4px;font-size:0.68em;color:#94a3b8">最大<input type="number" id="max-count" value="0" min="0" max="100" style="width:50px;padding:2px 4px;border-radius:4px;border:1px solid rgba(255,255,255,0.1);background:rgba(0,0,0,0.3);color:#e2e8f0">条</label>
   </div>
+  
+  <!-- 实时日志 -->
+  <div style="margin-bottom:8px;display:flex;justify-content:space-between;align-items:center">
+    <span style="font-size:0.7em;font-weight:600;color:#94a3b8">📋 实时日志</span>
+    <button class="btn btn-secondary" onclick="clearBotLogs()" style="font-size:0.58em;padding:2px 8px">🗑️ 清除</button>
   </div>
+  <div class="bot-log" id="bot-log">
+    <div class="bot-log-entry info">📋 等待连接服务器...</div>
+  </div>
+  
+  <!-- 使用说明 -->
+  <div style="margin-top:12px;padding:10px;background:rgba(0,0,0,0.3);border-radius:8px;font-size:0.62em;color:#64748b">
+    <b style="color:#94a3b8">使用说明：</b><br>
+    1. 先在本地运行 <code style="background:rgba(255,255,255,0.1);padding:1px 4px;border-radius:3px">node bot/server.js</code><br>
+    2. 点击"连接"按钮连接本地控制服务器<br>
+    3. 连接成功后点击"启动"按钮开始自动化<br>
+    4. 首次运行会打开浏览器，请手动登录对应平台<br>
+    5. 登录后 Cookies 自动保存，后续免登录
+  </div>
+</div>
 
-<div class="toast" id="toast"></div>
+<!-- 任务管理 -->
+<div class="card">
+  <div class="card-title"><span class="dot" style="background:#a78bfa"></span>⚡ 自动化任务管理</div>
+  <div class="task-list" id="task-list">
+    <div class="task-item"><div class="task-check" onclick="toggleTask(this)"></div><div class="task-content"><div class="task-name">跟进 KA 客户 (Amazon - Lealand Blum)</div><div class="task-desc">发送合作提案</div></div><span class="task-pri pri-hi">高优先</span></div>
+    <div class="task-item"><div class="task-check" onclick="toggleTask(this)"></div><div class="task-content"><div class="task-name">LinkedIn 发送 60 条消息</div><div class="task-desc">每日目标</div></div><span class="task-pri pri-hi">高优先</span></div>
+    <div class="task-item"><div class="task-check" onclick="toggleTask(this)"></div><div class="task-content"><div class="task-name">Instagram 发送 25 条消息</div><div class="task-desc">每日目标</div></div><span class="task-pri pri-med">中优先</span></div>
+    <div class="task-item"><div class="task-check" onclick="toggleTask(this)"></div><div class="task-content"><div class="task-name">Facebook 发送 15 条消息</div><div class="task-desc">每日目标</div></div><span class="task-pri pri-med">中优先</span></div>
+    <div class="task-item"><div class="task-check" onclick="toggleTask(this)"></div><div class="task-content"><div class="task-name">跟进 Bass Pro Shops (Mike Patterson)</div><div class="task-desc">户外零售渠道</div></div><span class="task-pri pri-hi">高优先</span></div>
+    <div class="task-item"><div class="task-check checked" onclick="toggleTask(this)">✓</div><div class="task-content"><div class="task-name" style="color:#64748b">同步 Google Sheet 数据</div><div class="task-desc">已完成 · 37个客户</div></div><span class="task-pri pri-lo">已完成</span></div>
+  </div>
+</div>
+</div>
+
+<!-- v8.0 Changelog -->
+<div class="section" id="section-changelog">
+<div class="card">
+  <div class="card-title"><span class="dot" style="background:#a78bfa"></span>📝 版本升级日志</div>
+  <div class="changelog">
+    <div class="cl-entry"><div class="cl-ver">🚀 v8.0 — 2026-04-05</div><div class="cl-date">全版本集成升级</div><div class="cl-features">✦ LinkedIn / Instagram / Facebook 三平台分类<br>✦ 每日目标进度追踪 (100条/天)<br>✦ AI 智能助手模块<br>✦ 自动化任务管理<br>✦ 版本升级日志<br>✦ 保留 v6.0 + v7.0 全部模块</div></div>
+    <div class="cl-entry"><div class="cl-ver">✅ v7.0 — 2026-04-05</div><div class="cl-date">全面升级</div><div class="cl-features">✦ 智能话术模板库 (6种语言)<br>✦ 转化率分析 (漏斗/地区/类型)<br>✦ 客户画像评分系统<br>✦ 智能优化引擎<br>✦ 5大功能模块</div></div>
+    <div class="cl-entry"><div class="cl-ver">📦 v6.0 — 2026-04-03</div><div class="cl-date">基础看板</div><div class="cl-features">✦ Google Sheet 实时数据同步<br>✦ 客户分类筛选<br>✦ 进度环形图<br>✦ 关键词效果分析<br>✦ Cron 定时同步</div></div>
+    <div class="cl-entry"><div class="cl-ver">🎯 v1.0 — 2026-04-03</div><div class="cl-date">初始版本</div><div class="cl-features">✦ 静态 HTML 展示<br>✦ 基础 UI 设计<br>✦ Vercel 云端部署</div></div>
+  </div>
+</div>
+</div><div class="footer" id="footer">智能客户开发系统 v8.0 · 全版本集成 · LinkedIn 60 · Instagram 25 · Facebook 15</div>
+
+</div>
+
+<!-- Toast -->
+<div class="toast" id="toast" style="display:none"></div>
 
 <script>
-// Clock
-function updateClock() {
-  const now = new Date();
-  document.getElementById('clock').textContent = now.toLocaleString('zh-CN', { year: 'numeric', month: '2-digit', day: '2-digit', hour: '2-digit', minute: '2-digit', second: '2-digit' });
+// === Global State ===
+let dashboardData = null;
+let templatesData = null;
+let analyticsData = null;
+let optimizeData = null;
+let profilesData = null;
+let currentFilter = 'all';
+let selectedTemplate = null;
+var curPlatform = 'all';
+
+// === Section Navigation ===
+function showSection(sectionId, tabEl) {
+  document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
+  document.querySelectorAll('.nav-tab').forEach(t => t.classList.remove('active'));
+  document.getElementById('section-' + sectionId).classList.add('active');
+  tabEl.classList.add('active');
+  
+  // Load data for section
+  if (sectionId === 'analytics' && !analyticsData) loadAnalytics();
+  if (sectionId === 'templates' && !templatesData) loadTemplates();
+  if (sectionId === 'optimize' && !optimizeData) loadOptimize();
+  if (sectionId === 'profiles' && !profilesData) loadProfiles();
 }
-setInterval(updateClock, 1000);
-updateClock();
 
-// Timezones
-const timezones = [
-  { name: '北美东部', flag: '🇺🇸', tz: 'America/New_York', work: [9, 17] },
-  { name: '北美中部', flag: '🇺🇸', tz: 'America/Chicago', work: [9, 17] },
-  { name: '北美西部', flag: '🇺🇸', tz: 'America/Los_Angeles', work: [9, 17] },
-  { name: '欧洲中部', flag: '🇨🇭', tz: 'Europe/Zurich', work: [9, 18] },
-  { name: '澳洲东部', flag: '🇦🇺', tz: 'Australia/Sydney', work: [9, 17] }
-];
+// === Data Loading ===
+async function loadData() {
+  document.getElementById('loading-pipeline').style.display = 'block';
+  document.getElementById('contact-list').innerHTML = '';
+  
+  try {
+    var fetchUrl = '/api/contacts' + (curPlatform && curPlatform !== 'all' ? '?platform=' + curPlatform : '');
+    const res = await fetch(fetchUrl);
+    dashboardData = await res.json();
+    renderPipeline();
+    showToast('数据已更新', false);
+  } catch (e) {
+    console.error('Load failed:', e);
+    showToast('加载失败: ' + e.message, true);
+  }
+}
 
-function updateTimezones() {
-  const container = document.getElementById('tzBar');
-  const now = new Date();
-  container.innerHTML = timezones.map(tz => {
-    const local = new Date(now.toLocaleString('en-US', { timeZone: tz.tz }));
-    const hour = local.getHours();
-    const isWorking = hour >= tz.work[0] && hour < tz.work[1];
-    const timeStr = local.toLocaleTimeString('zh-CN', { hour: '2-digit', minute: '2-digit' });
-    return `<div class="tz-item">
-      <div class="flag">${tz.flag}</div>
-      <div><div class="name">${tz.name}</div><div class="time">${timeStr} (${tz.work[0]}:00-${tz.work[1]}:00)</div></div>
-      <div class="status ${isWorking ? 'working' : 'off'}">${isWorking ? '🟢 工作中' : '⚫ 休息'}</div>
+async function loadAnalytics() {
+  try {
+    const res = await fetch('/api/analytics');
+    analyticsData = await res.json();
+    renderAnalytics();
+  } catch (e) {
+    console.error('Analytics failed:', e);
+  }
+}
+
+async function loadTemplates() {
+  try {
+    const res = await fetch('/api/templates');
+    templatesData = await res.json();
+    renderTemplates();
+  } catch (e) {
+    console.error('Templates failed:', e);
+  }
+}
+
+async function loadOptimize() {
+  try {
+    const res = await fetch('/api/optimize');
+    optimizeData = await res.json();
+    renderOptimize();
+  } catch (e) {
+    console.error('Optimize failed:', e);
+  }
+}
+
+async function loadProfiles() {
+  try {
+    const res = await fetch('/api/optimize?type=profiles');
+    profilesData = await res.json();
+    renderProfiles();
+  } catch (e) {
+    console.error('Profiles failed:', e);
+  }
+}
+
+// === Render Functions ===
+function renderPipeline() {
+  if (!dashboardData) return;
+  
+  const stats = dashboardData.stats;
+  const contacts = dashboardData.contacts || [];
+  
+  // Stats
+  document.getElementById('stat-total').textContent = stats.total || contacts.length;
+  document.getElementById('stat-total-sub').textContent = `已发送 ${stats.linkedin_sent || 0}`;
+  document.getElementById('stat-sent').textContent = stats.linkedin_sent || 0;
+  document.getElementById('stat-sent-sub').textContent = `本周 ${stats.week_sent || 0}`;
+  document.getElementById('stat-today').textContent = stats.today_sent || 0;
+  document.getElementById('stat-today-sub').textContent = `目标 ${stats.daily_target || 100}`;
+  document.getElementById('stat-accepted').textContent = stats.linkedin_accepted || 0;
+  const rate = stats.linkedin_sent > 0 ? Math.round((stats.linkedin_accepted / stats.linkedin_sent) * 100) : 0;
+  document.getElementById('stat-accepted-sub').textContent = `转化率 ${rate}%`;
+  document.getElementById('stat-replied').textContent = stats.linkedin_replied || 0;
+  document.getElementById('stat-ka').textContent = stats.ka_chain_count || 0;
+  document.getElementById('stat-pending').textContent = stats.pending_count || contacts.filter(c => (c.status || '').toLowerCase().includes('pending')).length;
+  document.getElementById('stat-rate').textContent = rate + '%';
+  document.getElementById('stat-week').textContent = stats.week_sent || 0;
+  document.getElementById('stat-month').textContent = stats.month_sent || 0;
+  var ps = stats.platform_stats || {};
+  var liS = ps.linkedin ? (ps.linkedin.sent || 0) : 0;
+  var insS = ps.instagram ? (ps.instagram.sent || 0) : 0;
+  var fbS = ps.facebook ? (ps.facebook.sent || 0) : 0;
+  document.getElementById('li-bar').style.width = Math.min(liS/60*100, 100) + '%';
+  document.getElementById('ins-bar').style.width = Math.min(insS/25*100, 100) + '%';
+  document.getElementById('fb-bar').style.width = Math.min(fbS/15*100, 100) + '%';
+  document.getElementById('li-nums').textContent = liS + '/60';
+  document.getElementById('ins-nums').textContent = insS + '/25';
+  document.getElementById('fb-nums').textContent = fbS + '/15';
+  document.getElementById('stat-rate-sub').textContent = rate >= 20 ? '表现良好' : '需要优化';
+  
+  // Progress ring
+  const today = stats.today_sent || 0;
+  const target = stats.daily_target || 100;
+  const pct = Math.min(today / target, 1);
+  const offset = 150.8 * (1 - pct);
+  document.getElementById('progress-circle').setAttribute('stroke-dashoffset', offset);
+  document.getElementById('progress-detail').textContent = `${today} / ${target}`;
+  document.getElementById('progress-gap').textContent = today >= target ? '✅ 已达标' : `还差 ${target - today} 条`;
+  
+  // Contacts list
+  const listEl = document.getElementById('contact-list');
+  if (contacts.length === 0) {
+    listEl.innerHTML = '<div style="text-align:center;padding:30px;color:#64748b">暂无数据</div>';
+    document.getElementById('loading-pipeline').style.display = 'none';
+    return;
+  }
+  
+  listEl.innerHTML = contacts.map(c => {
+    const avatarClass = c.ka_flag ? 'ka' : (c.chain_flag ? 'chain' : (c.priority === '最高' || c.priority === '高' ? 'high' : 'medium'));
+    const initial = (c.name || 'U').charAt(0).toUpperCase();
+    const badges = (c.ka_flag ? '<span class="badge badge-ka">KA</span>' : '') + (c.chain_flag ? '<span class="badge badge-chain">连锁</span>' : '');
+    const statusClass = getStatusClass(c.status);
+    const statusText = getStatusText(c.status);
+    const score = calculateScore(c);
+    
+    return `<div class="contact-item" data-filter="${getFilterType(c)}" onclick="toggleExpand(this)">
+      <div class="avatar ${avatarClass}">${initial}</div>
+      <div class="contact-info">
+        <div class="contact-name">${c.name}${badges}${score >= 80 ? '<span class="badge badge-score">⭐' + score + '</span>' : ''}</div>
+        <div class="contact-company">${c.company}${c.role ? ' · ' + c.role : ''}</div>
+      </div>
+      <div class="contact-meta">
+        <span class="status-tag ${statusClass}">${statusText}</span>
+        <span class="score-tag">${c.category || 'other'}</span>
+      </div>
+      <div class="contact-detail">
+        <div><b>关键词:</b> ${c.keyword_used || '无'}</div>
+        <div><b>地区:</b> ${c.region || '未知'}</div>
+        <div><b>优先级:</b> ${c.priority || '中'}</div>
+        <div style="margin-top:4px"><b>消息:</b> ${(c.message || '').substring(0, 200)}</div>
+        ${c.linkedin_url ? '<div style="margin-top:4px"><a href="' + c.linkedin_url + '" target="_blank" style="color:#60a5fa">查看 LinkedIn →</a></div>' : ''}
+      </div>
+    </div>`;
+  }).join('');
+  
+  document.getElementById('loading-pipeline').style.display = 'none';
+  
+  // Keywords
+  renderKeywords(dashboardData.keyword_performance || []);
+  
+  // Actions
+  renderActions(dashboardData.next_actions || []);
+  
+  // Footer
+  document.getElementById('footer').innerHTML = dashboardData.success ? 
+    `🟢 实时同步 · ${new Date().toLocaleTimeString('zh-CN')}` :
+    `🟡 备用数据 · ${dashboardData.message || '连接异常'}`;
+}
+
+function renderKeywords(kws) {
+  const el = document.getElementById('kw-list');
+  if (kws.length === 0) {
+    el.innerHTML = '<div style="font-size:0.68em;color:#64748b;padding:6px">等待关键词数据...</div>';
+    return;
+  }
+  
+  const top5 = kws.slice(0, 5);
+  el.innerHTML = top5.map(kw => {
+    const name = kw.label || kw.keyword || 'Unknown';
+    const score = kw.score || kw.rate || 0;
+    return `<div class="kw-row">
+      <span class="kw-name">${name.substring(0, 20)}</span>
+      <div class="kw-meter"><div class="kw-meter-fill" style="width:${Math.min(score, 100)}%"></div></div>
+      <span class="kw-val">${score}</span>
     </div>`;
   }).join('');
 }
-setInterval(updateTimezones, 60000);
-updateTimezones();
 
-// Today Progress Ring
-function updateTodayProgress(sent, total) {
-  const percent = Math.round(sent / total * 100);
-  const circumference = 2 * Math.PI * 24;
-  const offset = circumference * (1 - sent / total);
-  document.getElementById('todayRing').style.strokeDashoffset = offset;
-  document.getElementById('todayPercent').textContent = percent + '%';
-}
-updateTodayProgress(0, 100);
-
-// Panel collapse
-function collapsePanel(btn) {
-  const panel = btn.closest('.panel');
-  panel.classList.toggle('collapsed');
-  btn.textContent = panel.classList.contains('collapsed') ? '+' : '−';
+function renderActions(actions) {
+  const el = document.getElementById('action-list');
+  if (actions.length === 0) {
+    el.innerHTML = '<div style="font-size:0.68em;color:#64748b;padding:6px">暂无行动建议</div>';
+    return;
+  }
+  
+  el.innerHTML = actions.map(a => {
+    const priority = a.priority === '最高' ? 'p0' : (a.priority === '高' ? 'p1' : 'p2');
+    const tagClass = (a.status || '').includes('完成') || (a.status || '').includes('done') ? 'tag-done' : ((a.priority || '').includes('最高') ? 'tag-top' : 'tag-mid');
+    return `<div class="action-item ${priority}">
+      <span class="action-text">${a.action}</span>
+      <span class="action-tag ${tagClass}">${a.status || '待处理'}</span>
+    </div>`;
+  }).join('');
 }
 
-// Reset panel
-function resetPanel(btn) {
-  const panel = btn.closest('.panel');
-  panel.style.width = '';
-  panel.style.height = '';
-  showToast('面板已重置');
+function renderAnalytics() {
+  if (!analyticsData) return;
+  
+  const a = analyticsData.analysis || analyticsData;
+  
+  // Funnel
+  document.getElementById('funnel-total').textContent = a.funnel?.total || '--';
+  document.getElementById('funnel-sent').textContent = a.funnel?.sent || '--';
+  document.getElementById('funnel-sent-rate').textContent = (a.rates?.toSent || 0) + '%';
+  document.getElementById('funnel-reply').textContent = a.funnel?.replied || '--';
+  document.getElementById('funnel-reply-rate').textContent = (a.rates?.toReply || 0) + '%';
+  document.getElementById('funnel-accept').textContent = a.funnel?.accepted || '--';
+  document.getElementById('funnel-accept-rate').textContent = (a.rates?.toAccept || 0) + '%';
+  document.getElementById('funnel-close').textContent = a.funnel?.meeting || a.funnel?.closed || '--';
+  document.getElementById('funnel-close-rate').textContent = (a.rates?.toClose || a.rates?.toMeeting || 0) + '%';
+  
+  // Regions
+  const regions = a.regions || [];
+  document.getElementById('region-list').innerHTML = regions.slice(0, 6).map(r => 
+    `<div class="region-item">
+      <span class="region-name">${r.name}</span>
+      <div class="region-bar"><div class="region-bar-fill" style="width:${r.rate}%;background:${r.rate >= 20 ? '#34d399' : '#fb923c'}"></div></div>
+      <span class="region-count">${r.accepted}/${r.total}</span>
+    </div>`
+  ).join('');
+  
+  // Types
+  const types = a.customerTypes || {};
+  document.getElementById('type-stats').innerHTML = Object.entries(types).map(([k, v]) => 
+    `<div style="padding:6px;background:rgba(255,255,255,0.02);border-radius:6px;margin-bottom:4px">
+      <div style="font-size:0.68em;color:#94a3b8">${k.toUpperCase()}</div>
+      <div style="font-size:0.82em;font-weight:600;color:${v.rate >= 30 ? '#34d399' : '#fb923c'}">${v.rate}%</div>
+      <div style="font-size:0.58em;color:#475569">${v.accepted}/${v.total} 已接受</div>
+    </div>`
+  ).join('');
+  
+  // Insights
+  const insights = analyticsData.insights || [];
+  document.getElementById('insights-list').innerHTML = insights.map(i => {
+    const cls = i.priority === '高' ? 'high' : (i.priority === '中' ? 'medium' : 'low');
+    return `<div class="insight-card ${cls}">
+      <div class="insight-title">${i.title}</div>
+      <div class="insight-detail">${i.detail}</div>
+    </div>`;
+  }).join('');
 }
 
-// Version toggle
-function toggleVersion(header) {
-  const item = header.closest('.version-item');
-  item.classList.toggle('expanded');
+function renderTemplates() {
+  if (!templatesData) return;
+  
+  const templates = templatesData.templates || [];
+  const el = document.getElementById('template-grid');
+  
+  el.innerHTML = templates.map(t => {
+    const langs = Object.keys(t.templates || {}).join(', ');
+    return `<div class="template-card" data-id="${t.id}" onclick="selectTemplate('${t.id}',this)">
+      <div class="template-brand">${t.brand}</div>
+      <div class="template-name">${t.product}</div>
+      <div class="template-lang">语言: ${langs}</div>
+    </div>`;
+  }).join('');
 }
 
-// Toast
-function showToast(msg) {
+function renderOptimize() {
+  if (!optimizeData) return;
+  
+  const h = optimizeData.healthCheck || {};
+  
+  // Health status
+  const healthIcon = h.status === 'healthy' ? '✅' : (h.status === 'warning' ? '⚠️' : '🔴');
+  const healthClass = h.status === 'healthy' ? 'health-healthy' : (h.status === 'warning' ? 'health-warning' : 'health-attention');
+  document.getElementById('health-icon').textContent = healthIcon;
+  document.getElementById('health-title').textContent = h.status === 'healthy' ? '系统运行正常' : '需要关注';
+  document.getElementById('health-detail').textContent = h.issues?.length > 0 ? `${h.issues.length} 个问题需要处理` : '所有指标达标';
+  document.getElementById('health-badge').className = 'health-badge ' + healthClass;
+  document.getElementById('health-badge').textContent = h.status === 'healthy' ? '系统健康' : '需要优化';
+  
+  // Metrics
+  const metrics = h.metrics || {};
+  document.getElementById('health-metrics').innerHTML = Object.entries(metrics).map(([k, v]) => 
+    `<div class="stat-card"><div class="lbl">${k}</div><div class="val v-blue">${v}</div></div>`
+  ).join('');
+  
+  // Issues
+  const issues = h.issues || h.warnings || [];
+  document.getElementById('health-issues').innerHTML = issues.map(i => 
+    `<div class="insight-card ${i.type === 'conversion_rate' ? 'high' : 'medium'}">
+      <div class="insight-title">${i.type || 'Warning'}</div>
+      <div class="insight-detail">${i.message}</div>
+    </div>`
+  ).join('');
+  
+  // Strategy
+  const s = optimizeData.automationStrategy || {};
+  document.getElementById('strategy-content').innerHTML = `
+    <div style="font-size:0.68em;color:#94a3b8;margin-bottom:8px">
+      <b>每日目标:</b> 新客户 ${s.daily_targets?.new_contacts || 100} / 跟进 ${s.daily_targets?.followups || 30}
+    </div>
+    <div style="font-size:0.68em;color:#94a3b8;margin-bottom:8px">
+      <b>最佳时段:</b> ${s.timing?.best_hours?.join(', ') || '9, 10, 14, 15'} 点
+    </div>
+    <div style="font-size:0.68em;color:#94a3b8">
+      <b>跟进节奏:</b> Day 1 → Day 3 → Day 7 → Day 14 → Day 30
+    </div>
+  `;
+  
+  // Quick Wins
+  const quickWins = optimizeData.optimizationSummary?.quickWins || [];
+  document.getElementById('quickwins-list').innerHTML = quickWins.map(w => 
+    `<div class="action-item p1"><span class="action-text">${w}</span></div>`
+  ).join('');
+}
+
+function renderProfiles() {
+  if (!profilesData) return;
+  
+  const profiles = profilesData.customerProfiles || {};
+  
+  // High potential
+  const high = profiles.high_potential || [];
+  document.getElementById('high-potential-list').innerHTML = high.slice(0, 10).map(c => 
+    `<div class="contact-item" style="cursor:default">
+      <div class="avatar ka">${(c.name || 'U').charAt(0)}</div>
+      <div class="contact-info">
+        <div class="contact-name">${c.name}<span class="badge badge-score">⭐${c.score}</span></div>
+        <div class="contact-company">${c.company} · ${c.reason}</div>
+      </div>
+    </div>`
+  ).join('') || '<div style="text-align:center;padding:20px;color:#64748b;font-size:0.68em">暂无高潜力客户</div>';
+  
+  // Medium potential
+  const medium = profiles.medium_potential || [];
+  document.getElementById('medium-potential-list').innerHTML = medium.slice(0, 8).map(c => 
+    `<div class="contact-item" style="cursor:default">
+      <div class="avatar medium">${(c.name || 'U').charAt(0)}</div>
+      <div class="contact-info">
+        <div class="contact-name">${c.name}<span class="score-tag">${c.score}</span></div>
+        <div class="contact-company">${c.company}</div>
+      </div>
+    </div>`
+  ).join('') || '<div style="text-align:center;padding:20px;color:#64748b;font-size:0.68em">暂无中潜力客户</div>';
+  
+  // Recommended actions
+  const actions = profiles.recommended_action || [];
+  document.getElementById('recommended-actions').innerHTML = actions.map(a => 
+    `<div class="action-item p0">
+      <span class="action-text">${a.customer} (${a.company}) - ${a.action}</span>
+      <span class="action-tag tag-top">${a.priority}</span>
+    </div>`
+  ).join('') || '<div style="padding:10px;color:#64748b;font-size:0.68em">暂无推荐行动</div>';
+}
+
+// === Helper Functions ===
+function getStatusClass(status) {
+  const s = (status || '').toLowerCase();
+  if (s.includes('accept')) return 'status-accepted';
+  if (s.includes('reply')) return 'status-replied';
+  if (s.includes('sent') || s.includes('已发')) return 'status-sent';
+  return 'status-pending';
+}
+
+function getStatusText(status) {
+  const s = (status || '').toLowerCase();
+  if (s.includes('accept')) return '✓ Accepted';
+  if (s.includes('reply')) return '💬 Replied';
+  if (s.includes('sent') || s.includes('已发')) return '→ Sent';
+  return '⏳ Pending';
+}
+
+function getFilterType(c) {
+  if (c.ka_flag || c.chain_flag) return 'ka';
+  if ((c.status || '').toLowerCase().includes('accept')) return 'accepted';
+  if ((c.status || '').toLowerCase().includes('pending')) return 'pending';
+  return 'all';
+}
+
+function calculateScore(c) {
+  let score = 0;
+  if (c.ka_flag) score += 30;
+  if (c.chain_flag) score += 25;
+  if ((c.status || '').toLowerCase().includes('accept')) score += 50;
+  if (c.priority === '最高' || c.priority === '高') score += 15;
+  if (c.email) score += 10;
+  return Math.min(score, 100);
+}
+
+// === Interactions ===
+function setFilter(filter, btn) {
+  currentFilter = filter;
+  document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  
+  document.querySelectorAll('.contact-item').forEach(item => {
+    const type = item.getAttribute('data-filter');
+    item.style.display = (filter === 'all' || type === filter) ? 'flex' : 'none';
+  });
+}
+
+function filterContacts() {
+  const query = document.getElementById('search-input').value.toLowerCase();
+  document.querySelectorAll('.contact-item').forEach(item => {
+    const text = item.textContent.toLowerCase();
+    item.style.display = text.includes(query) ? 'flex' : 'none';
+  });
+}
+
+function toggleExpand(item) {
+  if (item.classList.contains('expanded')) {
+    item.classList.remove('expanded');
+  } else {
+    document.querySelectorAll('.contact-item.expanded').forEach(i => i.classList.remove('expanded'));
+    item.classList.add('expanded');
+  }
+}
+
+function selectTemplate(id, card) {
+  document.querySelectorAll('.template-card').forEach(c => c.classList.remove('selected'));
+  card.classList.add('selected');
+  selectedTemplate = id;
+}
+
+async function generateMessage() {
+  if (!selectedTemplate) {
+    showToast('请先选择模板', true);
+    return;
+  }
+  
+  const name = document.getElementById('var-name').value || 'Customer';
+  const company = document.getElementById('var-company').value || 'Company';
+  const region = document.getElementById('var-region').value || 'Region';
+  const lang = document.getElementById('lang-select').value;
+  const type = document.getElementById('type-select').value;
+  
+  try {
+    const res = await fetch('/api/templates', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        templateId: selectedTemplate,
+        lang,
+        type,
+        variables: { name, company, region }
+      })
+    });
+    
+    const data = await res.json();
+    if (data.success) {
+      document.getElementById('msg-subject').textContent = data.generated.subject;
+      document.getElementById('msg-body').textContent = data.generated.body;
+      document.getElementById('generated-msg').style.display = 'block';
+      showToast('话术生成成功', false);
+    } else {
+      showToast('生成失败', true);
+    }
+  } catch (e) {
+    showToast('生成失败: ' + e.message, true);
+  }
+}
+
+function copyMessage() {
+  const subject = document.getElementById('msg-subject').textContent;
+  const body = document.getElementById('msg-body').textContent;
+  navigator.clipboard.writeText(subject + '\n\n' + body);
+  showToast('已复制到剪贴板', false);
+}
+
+function exportData(format) {
+  window.location.href = `/api/contacts?export_format=${format}`;
+  showToast('正在导出...', false);
+}
+
+function showToast(msg, isError) {
   const toast = document.getElementById('toast');
   toast.textContent = msg;
-  toast.className = 'toast show success';
-  setTimeout(() => toast.classList.remove('show'), 2000);
+  toast.className = isError ? 'toast error' : 'toast';
+  toast.style.display = 'block';
+  setTimeout(() => toast.style.display = 'none', 3000);
 }
 
-// Drag & Drop
-let draggedPanel = null;
-document.querySelectorAll('.panel-header').forEach(header => {
-  header.addEventListener('mousedown', e => {
-    if (e.target.tagName === 'BUTTON') return;
-    draggedPanel = header.closest('.panel');
-    draggedPanel.classList.add('dragging');
-    document.addEventListener('mousemove', onDrag);
-    document.addEventListener('mouseup', stopDrag);
+// === Initialize ===
+loadData();
+
+// Auto refresh
+setInterval(loadData, 300000); // 5 minutes
+
+// === v8.0 Platform & AI Functions ===
+function setPlatform(p, el) {
+  curPlatform = p;
+  var tabs = document.querySelectorAll('.platform-tab');
+  for (var i = 0; i < tabs.length; i++) tabs[i].classList.remove('active');
+  el.classList.add('active');
+  loadData();
+}
+
+function getPlatformName(p) {
+  if (p === 'linkedin') return 'LinkedIn';
+  if (p === 'instagram') return 'Instagram';
+  if (p === 'facebook') return 'Facebook';
+  return (p || '').toUpperCase();
+}
+
+function askAI(q) {
+  document.getElementById('ai-input').value = q;
+  sendAI();
+}
+
+function sendAI() {
+  var input = document.getElementById('ai-input');
+  var q = input.value.trim();
+  if (!q) return;
+  var msgs = document.getElementById('ai-messages');
+  msgs.innerHTML += '<div class="ai-msg user">' + q + '</div><div class="ai-msg ai">🤔 正在分析...</div>';
+  input.value = '';
+  msgs.scrollTop = msgs.scrollHeight;
+  setTimeout(function() {
+    var lastAi = msgs.querySelector('.ai-msg.ai:last-child');
+    if (lastAi) {
+      var resp = '感谢提问！我可以帮你分析转化率、查看最佳地区、管理待办、优化话术。';
+      if (q.indexOf('转化率') >= 0) {
+        var rate = dd && dd.stats && dd.stats.linkedin_sent > 0 ? Math.round(dd.stats.linkedin_accepted/dd.stats.linkedin_sent*100) : 0;
+        resp = '📊 转化率: ' + rate + '% | 总客户: ' + (dd?dd.stats.total:37) + ' | KA/连锁: ' + (dd?dd.stats.ka_chain_count:11) + ' | 待处理: ' + (dd?dd.stats.pending_count:37);
+      } else if (q.indexOf('地区') >= 0) {
+        resp = '🌍 美国: Amazon/Walmart/Target/REI/Camping World/AutoZone/NAPA | 欧洲: Intersport/Decathlon | 英国: BETA OUTDOOR | 💡美国KA集中度最高';
+      } else if (q.indexOf('待办') >= 0) {
+        resp = '📋 1. LinkedIn 60条 2. Instagram 25条 3. Facebook 15条 4. KA跟进11个 | 当前进度: 0/100';
+      } else if (q.indexOf('接受率') >= 0 || q.indexOf('提高') >= 0) {
+        resp = '💡 1.消息150字内 2.增加个性化 3.明确CTA 4.时段9-11am/2-4pm 5.跟进Day1→3→7→14→30';
+      } else if (q.indexOf('KA') >= 0) {
+        resp = '⭐ 最高: Amazon-Lealand/Peter, CampingWorld-Peter, Walmart-James | 高: BassPro, REI, AutoZone, NAPA, Intersport';
+      }
+      lastAi.innerHTML = resp;
+    }
+    msgs.scrollTop = msgs.scrollHeight;
+  }, 600);
+}
+
+function toggleTask(el) {
+  el.classList.toggle('checked');
+  el.innerHTML = el.classList.contains('checked') ? '✓' : '';
+  var nameEl = el.parentElement.querySelector('.task-name');
+  if (nameEl) nameEl.style.color = el.classList.contains('checked') ? '#64748b' : '#e2e8f0';
+}
+
+
+// ==================== Bot Control WebSocket ====================
+let botWs = null;
+let botServerUrl = 'ws://localhost:3456/ws';
+
+function connectServer() {
+  const urlInput = document.getElementById('server-url');
+  if (urlInput && urlInput.value) botServerUrl = urlInput.value.replace(/^https?:/, 'ws:');
+  
+  if (botWs) { try { botWs.close(); } catch(e){} }
+  
+  addBotLog('info', '📡 正在连接 ' + botServerUrl + ' ...');
+  
+  try {
+    botWs = new WebSocket(botServerUrl);
+  } catch(e) {
+    addBotLog('error', '❌ WebSocket 创建失败: ' + e.message);
+    return;
+  }
+  
+  botWs.onopen = () => {
+    addBotLog('success', '✅ 服务器连接成功！可以启动机器人了');
+    document.getElementById('server-dot').className = 'bot-server-indicator online';
+    document.getElementById('server-text').textContent = '已连接 · localhost:3456/ws';
+    document.getElementById('connect-btn').textContent = '已连接';
+    document.getElementById('connect-btn').disabled = true;
+    document.getElementById('connect-btn').style.background = '#374151';
+    // Enable start buttons
+    document.querySelectorAll('.btn-bot-start').forEach(b => b.disabled = false);
+  };
+  
+  botWs.onmessage = (e) => {
+    try {
+      const msg = JSON.parse(e.data);
+      if (msg.type === 'state') updateBotUI(msg.data);
+      else if (msg.type === 'log') {
+        addBotLog(msg.log.level, msg.log.message);
+        // Auto-scroll
+        const logEl = document.getElementById('bot-log');
+        if (logEl) logEl.scrollTop = logEl.scrollHeight;
+      }
+    } catch(err) {}
+  };
+  
+  botWs.onclose = () => {
+    addBotLog('warn', '⚠️ 服务器连接断开');
+    document.getElementById('server-dot').className = 'bot-server-indicator offline';
+    document.getElementById('server-text').textContent = '未连接';
+    document.getElementById('connect-btn').textContent = '🔗 重连';
+    document.getElementById('connect-btn').disabled = false;
+    document.getElementById('connect-btn').style.background = '#3b82f6';
+    document.querySelectorAll('.btn-bot-start').forEach(b => b.disabled = true);
+    botWs = null;
+  };
+  
+  botWs.onerror = () => {
+    addBotLog('error', '❌ 连接失败 - 请确认已运行 node bot/server.js');
+  };
+}
+
+function updateBotUI(data) {
+  if (!data || !data.bots) return;
+  const bots = data.bots;
+  
+  Object.entries(bots).forEach(([platform, info]) => {
+    const shortP = platform === 'linkedin' ? 'li' : platform === 'instagram' ? 'ins' : 'fb';
+    
+    // Card active state
+    const card = document.getElementById('bot-card-' + platform);
+    if (card) card.className = 'bot-platform-card' + (info.running ? ' active' : '');
+    
+    // Badge
+    const badge = document.getElementById('badge-' + platform);
+    if (badge) {
+      badge.textContent = info.running ? '运行中' : '离线';
+      badge.className = 'bp-status-badge ' + (info.running ? 'running' : 'offline');
+    }
+    
+    // Stats
+    const statsEl = document.getElementById('stats-' + platform);
+    if (statsEl) statsEl.style.display = info.running ? 'flex' : 'none';
+    
+    const sentEl = document.getElementById('bs-' + shortP + '-sent');
+    const errEl = document.getElementById('bs-' + shortP + '-err');
+    const timeEl = document.getElementById('bs-' + shortP + '-time');
+    if (sentEl) sentEl.textContent = info.sent;
+    if (errEl) errEl.textContent = info.errors;
+    if (timeEl) timeEl.textContent = formatUptime(info.uptime);
+    
+    // Buttons
+    const startBtn = document.getElementById('btn-' + platform);
+    const stopBtn = document.getElementById('stop-' + platform);
+    if (startBtn) startBtn.style.display = info.running ? 'none' : 'block';
+    if (stopBtn) stopBtn.style.display = info.running ? 'block' : 'none';
   });
-});
-
-function onDrag(e) {
-  if (!draggedPanel) return;
-  // Simple drag logic placeholder
 }
 
-function stopDrag() {
-  if (draggedPanel) {
-    draggedPanel.classList.remove('dragging');
-    draggedPanel = null;
+function formatUptime(s) {
+  if (s < 60) return s + 's';
+  if (s < 3600) return Math.floor(s/60) + 'm ' + (s%60) + 's';
+  return Math.floor(s/3600) + 'h ' + Math.floor((s%3600)/60) + 'm';
+}
+
+function startBot(platform) {
+  if (!botWs || botWs.readyState !== WebSocket.OPEN) {
+    addBotLog('error', '❌ 请先连接服务器');
+    return;
   }
-  document.removeEventListener('mousemove', onDrag);
-  document.removeEventListener('mouseup', stopDrag);
+  addBotLog('info', '🚀 正在启动 ' + platform + ' 机器人...');
+  botWs.send(JSON.stringify({ action: 'start', platform }));
 }
 
-// Resize
-document.querySelectorAll('.resize-handle').forEach(handle => {
-  let isResizing = false;
-  let startX, startY, startW, startH;
+function stopBot(platform) {
+  if (!botWs || botWs.readyState !== WebSocket.OPEN) return;
+  addBotLog('warn', '🛑 正在停止 ' + platform + ' 机器人...');
+  botWs.send(JSON.stringify({ action: 'stop', platform }));
+}
+
+function startAllBots() {
+  ['linkedin','instagram','facebook'].forEach((p, i) => {
+    setTimeout(() => startBot(p), i * 2000);
+  });
+}
+
+function stopAllBots() {
+  if (!botWs || botWs.readyState !== WebSocket.OPEN) return;
+  botWs.send(JSON.stringify({ action: 'stopall' }));
+}
+
+function addBotLog(level, message) {
+  const logEl = document.getElementById('bot-log');
+  if (!logEl) return;
+  const entry = document.createElement('div');
+  entry.className = 'bot-log-entry ' + level;
+  const time = new Date().toLocaleTimeString('zh-CN');
+  entry.innerHTML = '<span class="time">' + time + '</span>' + escapeHtml(message);
+  logEl.appendChild(entry);
+  // Keep max 200 entries
+  while (logEl.children.length > 200) logEl.removeChild(logEl.firstChild);
+  logEl.scrollTop = logEl.scrollHeight;
+}
+
+function clearLogs() {
+  const logEl = document.getElementById('bot-log');
+  if (logEl) logEl.innerHTML = '<div class="bot-log-entry info">📋 日志已清除</div>';
+}
+
+function escapeHtml(text) {
+  const div = document.createElement('div');
+  div.textContent = text;
+  return div.innerHTML;
+}
+
+// Auto-connect on load
+setTimeout(() => { 
+  // Only auto-connect if on localhost
+  if (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') {
+    connectServer();
+  }
+}, 1000);
+
+// ==================== Bot Control WebSocket ====================
+let botWs = null;
+let botServerUrl = 'ws://localhost:3456/ws';
+
+function connectServer() {
+  const urlInput = document.getElementById('server-url');
+  if (urlInput && urlInput.value) botServerUrl = urlInput.value.replace(/^https?:/, 'ws:');
   
-  handle.addEventListener('mousedown', e => {
-    isResizing = true;
-    const panel = handle.closest('.panel');
-    startX = e.clientX;
-    startY = e.clientY;
-    startW = panel.offsetWidth;
-    startH = panel.offsetHeight;
-    panel.classList.add('resizing');
-    document.addEventListener('mousemove', resize);
-    document.addEventListener('mouseup', stopResize);
+  if (botWs) { try { botWs.close(); } catch(e){} }
+  
+  addBotLog('info', '📡 正在连接 ' + botServerUrl + ' ...');
+  
+  try {
+    botWs = new WebSocket(botServerUrl);
+  } catch(e) {
+    addBotLog('error', '❌ WebSocket 创建失败: ' + e.message);
+    return;
+  }
+  
+  botWs.onopen = () => {
+    addBotLog('success', '✅ 服务器连接成功！可以启动机器人了');
+    document.getElementById('server-dot').className = 'bot-server-indicator online';
+    document.getElementById('server-text').textContent = '已连接 · localhost:3456/ws';
+    document.getElementById('connect-btn').textContent = '已连接';
+    document.getElementById('connect-btn').disabled = true;
+    document.getElementById('connect-btn').style.background = '#374151';
+    // Enable start buttons
+    document.querySelectorAll('.btn-bot-start').forEach(b => b.disabled = false);
+  };
+  
+  botWs.onmessage = (e) => {
+    try {
+      const msg = JSON.parse(e.data);
+      if (msg.type === 'state') updateBotUI(msg.data);
+      else if (msg.type === 'log') {
+        addBotLog(msg.log.level, msg.log.message);
+        // Auto-scroll
+        const logEl = document.getElementById('bot-log');
+        if (logEl) logEl.scrollTop = logEl.scrollHeight;
+      }
+    } catch(err) {}
+  };
+  
+  botWs.onclose = () => {
+    addBotLog('warn', '⚠️ 服务器连接断开');
+    document.getElementById('server-dot').className = 'bot-server-indicator offline';
+    document.getElementById('server-text').textContent = '未连接';
+    document.getElementById('connect-btn').textContent = '🔗 重连';
+    document.getElementById('connect-btn').disabled = false;
+    document.getElementById('connect-btn').style.background = '#3b82f6';
+    document.querySelectorAll('.btn-bot-start').forEach(b => b.disabled = true);
+    botWs = null;
+  };
+  
+  botWs.onerror = () => {
+    addBotLog('error', '❌ 连接失败 - 请确认已运行 node bot/server.js');
+  };
+}
+
+function updateBotUI(data) {
+  if (!data || !data.bots) return;
+  const bots = data.bots;
+  
+  Object.entries(bots).forEach(([platform, info]) => {
+    const shortP = platform === 'linkedin' ? 'li' : platform === 'instagram' ? 'ins' : 'fb';
+    
+    // Card active state
+    const card = document.getElementById('bot-card-' + platform);
+    if (card) card.className = 'bot-platform-card' + (info.running ? ' active' : '');
+    
+    // Badge
+    const badge = document.getElementById('badge-' + platform);
+    if (badge) {
+      badge.textContent = info.running ? '���行中' : '离线';
+      badge.className = 'bp-status-badge ' + (info.running ? 'running' : 'offline');
+    }
+    
+    // Stats
+    const statsEl = document.getElementById('stats-' + platform);
+    if (statsEl) statsEl.style.display = info.running ? 'flex' : 'none';
+    
+    const sentEl = document.getElementById('bs-' + shortP + '-sent');
+    const errEl = document.getElementById('bs-' + shortP + '-err');
+    const timeEl = document.getElementById('bs-' + shortP + '-time');
+    if (sentEl) sentEl.textContent = info.sent;
+    if (errEl) errEl.textContent = info.errors;
+    if (timeEl) timeEl.textContent = formatUptime(info.uptime);
+    
+    // Buttons
+    const startBtn = document.getElementById('btn-' + platform);
+    const stopBtn = document.getElementById('stop-' + platform);
+    if (startBtn) startBtn.style.display = info.running ? 'none' : 'block';
+    if (stopBtn) stopBtn.style.display = info.running ? 'block' : 'none';
+  });
+}
+
+function formatUptime(s) {
+  if (s < 60) return s + 's';
+  if (s < 3600) return Math.floor(s/60) + 'm ' + (s%60) + 's';
+  return Math.floor(s/3600) + 'h ' + Math.floor((s%3600)/60) + 'm';
+}
+
+function startBot(platform) {
+  if (!botWs || botWs.readyState !== WebSocket.OPEN) {
+    addBotLog('error', '❌ 请先连接服务器');
+    return;
+  }
+  addBotLog('info', '🚀 正在启动 ' + platform + ' 机器人...');
+  botWs.send(JSON.stringify({ action: 'start', platform }));
+}
+
+function stopBot(platform) {
+  if (!botWs || botWs.readyState !== WebSocket.OPEN) return;
+  addBotLog('warn', '🛑 正在停止 ' + platform + ' 机器人...');
+  botWs.send(JSON.stringify({ action: 'stop', platform }));
+}
+
+function startAllBots() {
+  ['linkedin','instagram','facebook'].forEach((p, i) => {
+    setTimeout(() => startBot(p), i * 2000);
+  });
+}
+
+function stopAllBots() {
+  if (!botWs || botWs.readyState !== WebSocket.OPEN) return;
+  botWs.send(JSON.stringify({ action: 'stopall' }));
+}
+
+function addBotLog(level, message) {
+  const logEl = document.getElementById('bot-log');
+  if (!logEl) return;
+  const entry = document.createElement('div');
+  entry.className = 'bot-log-entry ' + level;
+  const time = new Date().toLocaleTimeString('zh-CN');
+  entry.innerHTML = '<span class="time">' + time + '</span>' + escapeHtml(message);
+  logEl.appendChild(entry);
+  // Keep max 200 entries
+  while (logEl.children.length > 200) logEl.removeChild(logEl.firstChild);
+  logEl.scrollTop = logEl.scrollHeight;
+}
+
+// ============================================
+// 🌐 多语言系统 i18n
+// ============================================
+const LANGUAGES = {
+  zh: { name: '中文', flag: '🇨🇳' },
+  en: { name: 'English', flag: '🇺🇸' },
+  'zh-en': { name: '中英双语', flag: '🌐' },
+  ja: { name: '日本語', flag: '🇯🇵' },
+  ko: { name: '한국어', flag: '🇰🇷' },
+  es: { name: 'Español', flag: '🇪🇸' },
+  de: { name: 'Deutsch', flag: '🇩🇪' },
+  fr: { name: 'Français', flag: '🇫🇷' },
+  pt: { name: 'Português', flag: '🇧🇷' },
+  ar: { name: 'العربية', flag: '🇸🇦' }
+};
+
+let currentLang = localStorage.getItem('outreach-lang') || 'zh';
+
+function toggleLangDropdown() {
+  const dropdown = document.getElementById('lang-dropdown');
+  if (dropdown) dropdown.classList.toggle('show');
+}
+
+function setLanguage(lang) {
+  currentLang = lang;
+  localStorage.setItem('outreach-lang', lang);
+  
+  const flag = document.getElementById('current-flag');
+  const name = document.getElementById('current-lang-name');
+  if (flag && LANGUAGES[lang]) flag.textContent = LANGUAGES[lang].flag;
+  if (name && LANGUAGES[lang]) name.textContent = LANGUAGES[lang].name;
+  
+  document.querySelectorAll('.lang-option').forEach(opt => {
+    opt.classList.toggle('active', opt.dataset.lang === lang);
   });
   
-  function resize(e) {
-    if (!isResizing) return;
-    const panel = handle.closest('.panel');
-    panel.style.width = (startW + e.clientX - startX) + 'px';
-    panel.style.minHeight = (startH + e.clientY - startY) + 'px';
+  applyTranslations();
+  document.body.style.direction = lang === 'ar' ? 'rtl' : 'ltr';
+  
+  const dropdown = document.getElementById('lang-dropdown');
+  if (dropdown) dropdown.classList.remove('show');
+  
+  showToast('语言已切换 / Language switched', false);
+}
+
+function applyTranslations() {
+  const isBilingual = currentLang === 'zh-en';
+  const lang = isBilingual ? 'zh' : currentLang;
+  
+  const labels = {
+    '总客户': { zh: '总客户', en: 'Total', ja: '総顧客', ko: '총 고객', es: 'Total', de: 'Gesamt', fr: 'Total', pt: 'Total', ar: 'المجموع' },
+    '已发送': { zh: '已发送', en: 'Sent', ja: '送信済み', ko: '발송 완료', es: 'Enviado', de: 'Gesendet', fr: 'Envoyé', pt: 'Enviado', ar: 'تم الإرسال' },
+    '今日': { zh: '今日', en: 'Today', ja: '今日', ko: '오늘', es: 'Hoy', de: 'Heute', fr: 'Aujourd\'hui', pt: 'Hoje', ar: 'اليوم' },
+    '已接受': { zh: '已接受', en: 'Accepted', ja: '承認済み', ko: '수락됨', es: 'Aceptado', de: 'Akzeptiert', fr: 'Accepté', pt: 'Aceito', ar: 'مقبول' },
+    '已回复': { zh: '已回复', en: 'Replied', ja: '返信済み', ko: '답장됨', es: 'Respondido', de: 'Beantwortet', fr: 'Répondu', pt: 'Respondido', ar: 'تم الرد' },
+    'KA/连锁': { zh: 'KA/连锁', en: 'KA/Chain', ja: 'KA/チェーン', ko: 'KA/체인', es: 'KA/Cadena', de: 'KA/Kette', fr: 'KA/Chaîne', pt: 'KA/Cadeia', ar: 'KA/سلسلة' },
+    '待处理': { zh: '待处理', en: 'Pending', ja: '保留中', ko: '대기중', es: 'Pendiente', de: 'Ausstehend', fr: 'En attente', pt: 'Pendente', ar: 'قيد الانتظار' },
+    '转化率': { zh: '转化率', en: 'Conv. Rate', ja: '転換率', ko: '전환율', es: 'Tasa de conv.', de: 'Konv.-Rate', fr: 'Taux de conv.', pt: 'Taxa de conv.', ar: 'معدل التحويل' },
+    '本周': { zh: '本周', en: 'Week', ja: '今週', ko: '이번 주', es: 'Semana', de: 'Woche', fr: 'Semaine', pt: 'Semana', ar: 'الأسبوع' },
+    '本月': { zh: '本月', en: 'Month', ja: '今月', ko: '이번 달', es: 'Mes', de: 'Monat', fr: 'Mois', pt: 'Mês', ar: 'الشهر' },
+    '全部': { zh: '全部', en: 'All', ja: 'すべて', ko: '전체', es: 'Todo', de: 'Alle', fr: 'Tout', pt: 'Tudo', ar: 'الكل' },
+    '客户管道': { zh: '客户管道', en: 'Pipeline', ja: 'パイプライン', ko: '파이프라인', es: 'Pipeline', de: 'Pipeline', fr: 'Pipeline', pt: 'Pipeline', ar: 'خط الأنابيب' },
+    '转化分析': { zh: '转化分析', en: 'Analytics', ja: '分析', ko: '분석', es: 'Análisis', de: 'Analyse', fr: 'Analyse', pt: 'Análise', ar: 'التحليلات' },
+    '话术模板': { zh: '话术模板', en: 'Templates', ja: 'テンプレート', ko: '템플릿', es: 'Plantillas', de: 'Vorlagen', fr: 'Modèles', pt: 'Modelos', ar: 'القوالب' },
+    '智能优化': { zh: '智能优化', en: 'Optimize', ja: '最適化', ko: '최적화', es: 'Optimizar', de: 'Optimieren', fr: 'Optimiser', pt: 'Otimizar', ar: 'تحسين' },
+    '客户画像': { zh: '客户画像', en: 'Profiles', ja: 'プロファイル', ko: '프로필', es: 'Perfiles', de: 'Profile', fr: 'Profils', pt: 'Perfis', ar: 'الملفات' },
+    'AI助手': { zh: 'AI助手', en: 'AI Assistant', ja: 'AIアシスタント', ko: 'AI 어시스턴트', es: 'Asistente AI', de: 'KI-Assistent', fr: 'Assistant IA', pt: 'Assistente AI', ar: 'مساعد AI' },
+    '自动化': { zh: '自动化', en: 'Automation', ja: '自動化', ko: '자동화', es: 'Automatización', de: 'Automatisierung', fr: 'Automatisation', pt: 'Automação', ar: 'الأتمتة' },
+    '升级日志': { zh: '升级日志', en: 'Changelog', ja: '変更ログ', ko: '변경 로그', es: 'Cambios', de: 'Änderungen', fr: 'Modifications', pt: 'Alterações', ar: 'سجل التغييرات' },
+    '刷新': { zh: '刷新', en: 'Refresh', ja: '更新', ko: '새로고침', es: 'Actualizar', de: 'Aktualisieren', fr: 'Actualiser', pt: 'Atualizar', ar: 'تحديث' },
+    '搜索客户名、公司、关键词...': { zh: '搜索客户名、公司、关键词...', en: 'Search name, company, keyword...', ja: '顧客名、会社、キーワードを検索...', ko: '고객명, 회사, 키워드 검색...', es: 'Buscar nombre, empresa, palabra clave...', de: 'Name, Firma, Stichwort suchen...', fr: 'Rechercher nom, entreprise, mot-clé...', pt: 'Buscar nome, empresa, palavra-chave...', ar: 'البحث عن اسم، شركة، كلمة مفتاحية...' }
+  };
+  
+  document.querySelectorAll('.lbl').forEach(el => {
+    const zhText = el.textContent.trim();
+    if (labels[zhText] && labels[zhText][lang]) {
+      let newText = labels[zhText][lang];
+      if (isBilingual && labels[zhText]['en']) {
+        newText += ' / ' + labels[zhText]['en'];
+      }
+      el.textContent = newText;
+    }
+  });
+  
+  const navLabels = ['客户管道', '转化分析', '话术模板', '智能优化', '客户画像', 'AI助手', '自动化', '升级日志'];
+  document.querySelectorAll('.nav-tab').forEach((tab, i) => {
+    const icon = tab.textContent.trim().split(' ')[0];
+    if (navLabels[i] && labels[navLabels[i]]) {
+      let newText = icon + ' ' + labels[navLabels[i]][lang];
+      if (isBilingual && labels[navLabels[i]]['en']) {
+        newText += ' / ' + labels[navLabels[i]]['en'];
+      }
+      const vt = tab.querySelector('.vt');
+      if (vt) tab.innerHTML = newText + ' ' + vt.outerHTML;
+    }
+  });
+  
+  const searchInput = document.getElementById('search-input');
+  if (searchInput) {
+    const placeholder = '搜索客户名、公司、关键词...';
+    if (labels[placeholder] && labels[placeholder][lang]) {
+      searchInput.placeholder = labels[placeholder][lang];
+    }
   }
   
-  function stopResize() {
-    isResizing = false;
-    handle.closest('.panel').classList.remove('resizing');
-    document.removeEventListener('mousemove', resize);
-    document.removeEventListener('mouseup', stopResize);
-    showToast('尺寸已调整');
+  document.querySelectorAll('.filter-btn').forEach(btn => {
+    const text = btn.textContent.trim();
+    if (text === '全部' || text === 'All' || text === 'すべて' || text === '전체' || text === 'Todo') {
+      btn.textContent = labels['全部'][lang] || '全部';
+    }
+  });
+}
+
+document.addEventListener('click', function(e) {
+  const switcher = document.getElementById('lang-switcher');
+  if (switcher && !switcher.contains(e.target)) {
+    const dropdown = document.getElementById('lang-dropdown');
+    if (dropdown) dropdown.classList.remove('show');
   }
 });
 
-// Toggle version log
-document.querySelector('.vlog-header').addEventListener('click', function(e) {
-  if (e.target === this) {
-    const body = document.getElementById('vlogBody');
-    body.style.display = body.style.display === 'none' ? 'block' : 'none';
+const savedLang = localStorage.getItem('outreach-lang') || 'zh';
+if (savedLang !== 'zh') {
+  setTimeout(() => setLanguage(savedLang), 100);
+}
+
+// Auto-connect on load
+setTimeout(() => { 
+  if (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') {
+    connectServer();
   }
-});
+}, 1000);
 
-// Drag version log
-let vlogDragging = false, vlogX, vlogY;
-function startDragVLog(e) {
-  const vlog = document.getElementById('versionLog');
-  vlogDragging = true;
-  vlogX = e.clientX - vlog.offsetLeft;
-  vlogY = e.clientY - vlog.offsetTop;
-  document.addEventListener('mousemove', dragVLog);
-  document.addEventListener('mouseup', stopDragVLog);
-}
-function dragVLog(e) {
-  if (!vlogDragging) return;
-  const vlog = document.getElementById('versionLog');
-  vlog.style.left = (e.clientX - vlogX) + 'px';
-  vlog.style.top = (e.clientY - vlogY) + 'px';
-  vlog.style.right = 'auto';
-  vlog.style.bottom = 'auto';
-}
-function stopDragVLog() {
-  vlogDragging = false;
-  document.removeEventListener('mousemove', dragVLog);
-  document.removeEventListener('mouseup', stopDragVLog);
-}
-
-console.log('✅ v0.3.0 loaded - 完整37人客户数据');
 </script>
-</body>
-</html>
