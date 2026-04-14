@@ -1,22 +1,14 @@
 {
-  "last_updated": "2026-04-08T13:10:00",
-  "today_outreach": [
-    {"id":1,"name":"Michael Hartridge","company":"Outdoor Retail","role":"Ops Leader","channel":"LinkedIn","status":"Replied","time":"13:02","type":"message"},
-    {"id":2,"name":"Alain Oberholzer","company":"Gateway1","role":"Importer","channel":"LinkedIn","status":"Pending","time":"13:05","type":"connection"},
-    {"id":3,"name":"Jason Wang","company":"RV Importer","role":"Import/Export","channel":"LinkedIn","status":"Pending","time":"13:06","type":"connection"},
-    {"id":4,"name":"Tamako Hara","company":"Outdoor Research","role":"Import Manager","channel":"LinkedIn","status":"Pending","time":"13:07","type":"connection"},
-    {"id":5,"name":"David Dreyer","company":"Outdoor Retail","role":"GM","channel":"LinkedIn","status":"Pending","time":"13:08","type":"connection"},
-    {"id":6,"name":"Allan King","company":"Outback King","role":"Founder","channel":"LinkedIn","status":"Pending","time":"13:09","type":"connection"},
-    {"id":7,"name":"FB Post 1","company":"USA Outdoor Gears Sale","role":"Group Post","channel":"Facebook","status":"Posted","time":"13:04","type":"group_post"},
-    {"id":8,"name":"kilosgear","company":"kilos.outdoor","role":"Brand","channel":"Instagram","status":"DM Sent","time":"13:10","type":"dm"}
-  ],
+  "last_updated": "2026-04-14T18:12:00",
+  "today_outreach": [],
   "daily_stats": {
-    "linkedin_messages": 1,
-    "linkedin_connections": 5,
-    "fb_posts": 1,
-    "ins_dms": 1,
-    "total_today": 8,
+    "linkedin_messages": 0,
+    "linkedin_connections": 0,
+    "fb_posts": 0,
+    "ins_dms": 0,
+    "total_today": 0,
     "target": 100,
-    "remaining": 92
-  }
+    "remaining": 100
+  },
+  "notes": "下午批次20条指令已生成，待执行"
 }
