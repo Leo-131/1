@@ -1,0 +1,11 @@
+const fs = require('fs');
+let c = fs.readFileSync('index.html', 'utf8');
+c = c.replace('stat-sent">1</div>', 'stat-sent">3</div>');
+c = c.replace('本周 14</div>', '本周 17</div>');
+c = c.replace('li-nums">1/60', 'li-nums">3/60');
+c = c.replace('width:2%', 'width:5%');
+c = c.replace('发送进度 1 / 100', '发送进度 3 / 100');
+c = c.replace('还需发送 59 条', '还需发送 97 条');
+c = c.replace('14/500', '17/500');
+fs.writeFileSync('index.html', c);
+console.log('done', c.length);

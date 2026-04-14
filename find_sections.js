@@ -1,0 +1,11 @@
+const fs = require('fs');
+const c = fs.readFileSync('outreach-dashboard/public/index.html', 'utf8');
+const tz = c.indexOf('时区状态');
+const pr = c.indexOf('进度条');
+const circ = c.indexOf('circular');
+const nextActions = c.indexOf('下一步行动');
+console.log('tz pos:', tz);
+console.log('progress pos:', pr);
+console.log('circular:', circ);
+console.log('nextActions pos:', nextActions);
+if (tz > 0) console.log('tz:', JSON.stringify(c.substring(tz - 20, tz + 100)));
