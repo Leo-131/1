@@ -1,0 +1,25 @@
+{
+  "id": "session-1775017323773-1k35q7",
+  "name": "更新SOUL.md",
+  "status": "active",
+  "createdAt": "2026-04-20T04:46:00.416Z",
+  "updatedAt": "2026-04-20T04:46:00.416Z",
+  "agents": [
+    {
+      "id": "agent_nkjeeq2i",
+      "name": "agent-dfeeb144",
+      "role": "assistant",
+      "status": "idle",
+      "createdAt": "2026-04-20T04:46:00.416Z",
+      "model": "unknown",
+      "systemPrompt": ""
+    }
+  ],
+  "summary": {
+    "id": "summary_n7yccm8g",
+    "title": "更新SOUL.md",
+    "createdAt": "2026-04-20T04:46:00.416Z",
+    "file": "summary_n7yccm8g.md"
+  },
+  "lastMessageCount": 6
+}

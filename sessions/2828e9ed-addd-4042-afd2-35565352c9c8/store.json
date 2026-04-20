@@ -1,0 +1,25 @@
+{
+  "id": "2828e9ed-addd-4042-afd2-35565352c9c8",
+  "name": "Outreach数据更新",
+  "status": "active",
+  "createdAt": "2026-04-20T04:56:09.180Z",
+  "updatedAt": "2026-04-20T04:56:09.180Z",
+  "agents": [
+    {
+      "id": "agent_h99vnx21",
+      "name": "Main Agent",
+      "role": "assistant",
+      "status": "idle",
+      "createdAt": "2026-04-20T04:56:09.180Z",
+      "model": "unknown",
+      "systemPrompt": ""
+    }
+  ],
+  "summary": {
+    "id": "summary_qutevd6y",
+    "title": "Outreach数据更新",
+    "createdAt": "2026-04-20T04:56:09.180Z",
+    "file": "summary_qutevd6y.md"
+  },
+  "lastMessageCount": 7
+}

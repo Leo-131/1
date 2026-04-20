@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
-<title>Flextail Outreach Dashboard v12.0</title>
+<title>Flextail Outreach Dashboard v15.0</title>
 <style>
 * { margin: 0; padding: 0; box-sizing: border-box; }
 :root { --primary: #4ade80; --accent: #3b82f6; --warning: #f59e0b; --danger: #ef4444; --bg: #0f1117; --card: #1a1d27; --border: #2a2f3e; --text: #e4e8f0; --muted: #7a8299; }
@@ -110,10 +110,10 @@ body { font-family: 'Segoe UI', Arial, sans-serif; background: var(--bg); color:
   <div class="header">
     <div>
       <h1>⚡ Flextail Outreach Dashboard</h1>
-      <p style="font-size:12px;color:var(--muted);margin-top:2px">v11.0 · 每小时自动更新 · 最后更新: <span id="lastUpdate"></span></p>
+      <p style="font-size:12px;color:var(--muted);margin-top:2px">v15.0 · 每小时自动更新 · 最后更新: <span id="lastUpdate">2026-04-20 12:55</span> · JSON: <span id="jsonUpdateTime">2026-04-20 04:42:06</span></p>
     </div>
     <div class="meta">
-      <div><span class="badge badge-live">● LIVE</span><span class="badge badge-v">v12.0</span></div>
+      <div><span class="badge badge-live">● LIVE</span><span class="badge badge-v">v15.0</span></div>
       <div id="clock" style="margin-top:4px"></div>
     </div>
   </div>
@@ -148,12 +148,12 @@ body { font-family: 'Segoe UI', Arial, sans-serif; background: var(--bg); color:
     <div class="stat-card">
       <div class="label">已接受连接</div>
       <div class="value" id="totalAccepted">24</div>
-      <div class="sub">待处理: <span id="pendingCount">0</span></div>
+      <div class="sub">总联系人: <span id="contactCount">25</span></div>
     </div>
     <div class="stat-card warning">
       <div class="label">KA连锁客户</div>
       <div class="value" id="kaCount">12</div>
-      <div class="sub">现有客户: <span id="existingCount">0</span></div>
+      <div class="sub">现有客户: <span id="existingCount">4</span></div>
     </div>
   </div>
 
@@ -172,14 +172,14 @@ body { font-family: 'Segoe UI', Arial, sans-serif; background: var(--bg); color:
           </div>
           <div class="tier-item">
             <span style="width:60px">Tier 2</span>
-            <div class="bar-bg"><div class="bar-fill" style="width:28%;background:var(--accent)"></div></div>
-            <span class="count" id="tier2Count">7</span>
+            <div class="bar-bg"><div class="bar-fill" id="tier2Bar" style="width:24%;background:var(--accent)"></div></div>
+            <span class="count" id="tier2Count">6</span>
             <span style="font-size:10px;color:var(--muted)">VP/Director</span>
           </div>
           <div class="tier-item">
             <span style="width:60px">Tier 3</span>
-            <div class="bar-bg"><div class="bar-fill" style="width:56%;background:var(--warning)"></div></div>
-            <span class="count" id="tier3Count">14</span>
+            <div class="bar-bg"><div class="bar-fill" id="tier3Bar" style="width:60%;background:var(--warning)"></div></div>
+            <span class="count" id="tier3Count">15</span>
             <span style="font-size:10px;color:var(--muted)">Manager/Buyer</span>
           </div>
           <div class="tier-item">
@@ -269,9 +269,12 @@ const data = {
     {kw:"retail chain outdoor category",score:75}
   ],
   actions: [
-    {company:"Home Depot",role:"VP Merchandising Outdoor",keyword:"Home Depot VP Merchandising outdoor"},
-    {company:"Lowe's",role:"VP Merchandising/Director Product",keyword:"Lowe's VP Merchandising outdoor"},
-    {company:"O'Reilly Auto Parts",role:"Category Manager Automotive Accessories",keyword:"O'Reilly Category Manager automotive"}
+    {company:"Backcountry",role:"CEO / President / Founder",keyword:'site:linkedin.com "Backcountry" CEO OR President OR Founder'},
+    {company:"Costco",role:"VP Merchandising / Senior Buyer Outdoor",keyword:'site:linkedin.com "Costco" VP Merchandising outdoor OR camping'},
+    {company:"Home Depot",role:"VP Merchandising / Director Product Development",keyword:'site:linkedin.com "Home Depot" VP Merchandising OR Director Product Development outdoor'},
+    {company:"Lowe's",role:"VP Merchandising Outdoor / Director Product",keyword:'site:linkedin.com "Lowe\'s" VP Merchandising outdoor'},
+    {company:"O'Reilly Auto Parts",role:"Category Manager Automotive Accessories",keyword:'site:linkedin.com "O\'Reilly" Category Manager automotive'},
+    {company:"Decathlon (Global HQ)",role:"Global Sourcing Director / VP Product Outdoor",keyword:'site:linkedin.com "Decathlon" Global Director OR VP Sourcing'}
   ]
 };
 
@@ -297,9 +300,8 @@ document.getElementById('totalAccepted').textContent = data.stats.linkedin_accep
 document.getElementById('acceptRate').textContent = ((data.stats.linkedin_accepted/data.stats.linkedin_sent)*100).toFixed(2) + '%';
 document.getElementById('kaCount').textContent = data.stats.ka_chain_count;
 document.getElementById('existingCount').textContent = existingCount;
-document.getElementById('contactCount').textContent = data.contacts.length;
 document.getElementById('pendingCount').textContent = pendingCount;
-try { document.getElementById('contactCount').textContent = data.contacts.length; } catch(e) {}
+document.getElementById('contactCount').textContent = data.contacts.length;
 document.getElementById('tier1Count').textContent = tier1Count;
 document.getElementById('tier2Count').textContent = tier2Count;
 document.getElementById('tier3Count').textContent = tier3Count;
