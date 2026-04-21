@@ -110,10 +110,10 @@ body { font-family: 'Segoe UI', Arial, sans-serif; background: var(--bg); color:
   <div class="header">
     <div>
       <h1>⚡ Flextail Outreach Dashboard</h1>
-      <p style="font-size:12px;color:var(--muted);margin-top:2px">v15.0 · 每小时自动更新 · 最后更新: <span id="lastUpdate">2026-04-20 12:55</span> · JSON: <span id="jsonUpdateTime">2026-04-20 04:42:06</span></p>
+      <p style="font-size:12px;color:var(--muted);margin-top:2px">v15.1 · 每小时自动更新 · 最后更新: <span id="lastUpdate">2026-04-20 15:34</span></p>
     </div>
     <div class="meta">
-      <div><span class="badge badge-live">● LIVE</span><span class="badge badge-v">v15.0</span></div>
+      <div><span class="badge badge-live">● LIVE</span><span class="badge badge-v">v15.1</span></div>
       <div id="clock" style="margin-top:4px"></div>
     </div>
   </div>
@@ -136,7 +136,7 @@ body { font-family: 'Segoe UI', Arial, sans-serif; background: var(--bg); color:
   <!-- Stats -->
   <div class="stats-grid">
     <div class="stat-card primary">
-      <div class="label">今日发送</div>
+      <div class="label">今日建联</div>
       <div class="value" id="todaySent2">0</div>
       <div class="sub">目标: 100 / 日</div>
     </div>
@@ -148,7 +148,7 @@ body { font-family: 'Segoe UI', Arial, sans-serif; background: var(--bg); color:
     <div class="stat-card">
       <div class="label">已接受连接</div>
       <div class="value" id="totalAccepted">24</div>
-      <div class="sub">总联系人: <span id="contactCount">25</span></div>
+      <div class="sub">外联已接受: <span id="contactCount">8</span></div>
     </div>
     <div class="stat-card warning">
       <div class="label">KA连锁客户</div>
@@ -203,9 +203,90 @@ body { font-family: 'Segoe UI', Arial, sans-serif; background: var(--bg); color:
     <!-- Contacts -->
     <div class="panel" style="grid-column: span 2">
       <div class="panel-header">
-        <h3>👥 客户列表 · 按优先级排序</h3>
+        <h3>👥 客户列表 · 全部25人</h3>
+        <span style="font-size:11px;color:var(--muted)">Tier 1 · 3人 | Tier 2 · 6人 | Tier 3 · 15人 | 非目标 · 1人</span>
       </div>
-      <div class="panel-body" id="contactList"></div>
+      <div class="panel-body" id="contactList">
+        <!-- TIER 1 -->
+        <div class="contact-item">
+          <div class="avatar">D</div><div class="info"><div class="name">David Park <span class="tag tier1">T1</span></div><div class="meta">Pacific Outdoor Group · CEO</div></div><span class="status pending">待跟进</span>
+        </div>
+        <div class="contact-item">
+          <div class="avatar">T</div><div class="info"><div class="name">Tom Martinez <span class="tag tier1">T1</span></div><div class="meta">Rural King · Owner</div></div><span class="status pending">待跟进</span>
+        </div>
+        <div class="contact-item">
+          <div class="avatar">K</div><div class="info"><div class="name">Kevin Zhang <span class="tag tier1">T1</span></div><div class="meta">Global Electronics Distribution · Managing Director</div></div><span class="status accepted">已接受</span>
+        </div>
+        <!-- TIER 2 -->
+        <div class="contact-item">
+          <div class="avatar">M</div><div class="info"><div class="name">Michael Torres <span class="tag tier2">T2</span></div><div class="meta">Camping World · VP of Merchandising</div></div><span class="status pending">待跟进</span>
+        </div>
+        <div class="contact-item">
+          <div class="avatar">E</div><div class="info"><div class="name">Emma Wilson <span class="tag tier2">T2</span></div><div class="meta">Dick's Sporting Goods · Director of Outdoor Products</div></div><span class="status accepted">已接受</span>
+        </div>
+        <div class="contact-item">
+          <div class="avatar">L</div><div class="info"><div class="name">Lisa Chang <span class="tag tier2">T2</span></div><div class="meta">L.L.Bean · Head of Buying</div></div><span class="status pending">待跟进</span>
+        </div>
+        <div class="contact-item">
+          <div class="avatar">J</div><div class="info"><div class="name">Jessica Wong <span class="tag tier2">T2</span></div><div class="meta">Costco Canada · Head of Merchandising</div></div><span class="status accepted">已接受</span>
+        </div>
+        <div class="contact-item">
+          <div class="avatar">R</div><div class="info"><div class="name">Ryan Cooper <span class="tag tier2">T2</span></div><div class="meta">Airstream · Director of Product Development</div></div><span class="status pending">待跟进</span>
+        </div>
+        <div class="contact-item">
+          <div class="avatar">J</div><div class="info"><div class="name">Jason Park <span class="tag tier2">T2</span></div><div class="meta">Thor Industries · Strategic Sourcing Director</div></div><span class="status pending">待跟进</span>
+        </div>
+        <div class="contact-item">
+          <div class="avatar">E</div><div class="info"><div class="name">Eric Wong <span class="tag tier2">T2</span></div><div class="meta">Sportsman's Warehouse · VP of Merchandising</div></div><span class="status pending">待跟进</span>
+        </div>
+        <!-- TIER 3 -->
+        <div class="contact-item">
+          <div class="avatar">J</div><div class="info"><div class="name">James Chen <span class="tag">T3</span></div><div class="meta">Bass Pro Shops · Senior Buyer - Outdoor</div></div><span class="status existing">现有客户</span>
+        </div>
+        <div class="contact-item">
+          <div class="avatar">S</div><div class="info"><div class="name">Sarah Miller <span class="tag">T3</span></div><div class="meta">REI Co-op · Category Manager - Camping</div></div><span class="status existing">现有客户</span>
+        </div>
+        <div class="contact-item">
+          <div class="avatar">R</div><div class="info"><div class="name">Robert Kim <span class="tag">T3</span></div><div class="meta">AutoZone · Category Manager</div></div><span class="status pending">待跟进</span>
+        </div>
+        <div class="contact-item">
+          <div class="avatar">J</div><div class="info"><div class="name">Jennifer Lee <span class="tag">T3</span></div><div class="meta">REI · Product Sourcing Manager</div></div><span class="status existing">现有客户</span>
+        </div>
+        <div class="contact-item">
+          <div class="avatar">M</div><div class="info"><div class="name">Mark Johnson <span class="tag">T3</span></div><div class="meta">Canadian Tire · Senior Buyer - Electronics</div></div><span class="status pending">待跟进</span>
+        </div>
+        <div class="contact-item">
+          <div class="avatar">A</div><div class="info"><div class="name">Amanda White <span class="tag">T3</span></div><div class="meta">Backcountry.com · Merchandising Manager</div></div><span class="status pending">待跟进</span>
+        </div>
+        <div class="contact-item">
+          <div class="avatar">C</div><div class="info"><div class="name">Chris Brown <span class="tag">T3</span></div><div class="meta">Best Buy · Regional Buyer</div></div><span class="status pending">待跟进</span>
+        </div>
+        <div class="contact-item">
+          <div class="avatar">N</div><div class="info"><div class="name">Nicole Adams <span class="tag">T3</span></div><div class="meta">Walgreens · Category Manager</div></div><span class="status pending">待跟进</span>
+        </div>
+        <div class="contact-item">
+          <div class="avatar">S</div><div class="info"><div class="name">Stephanie Liu <span class="tag">T3</span></div><div class="meta">Target · Senior Buyer</div></div><span class="status pending">待跟进</span>
+        </div>
+        <div class="contact-item">
+          <div class="avatar">B</div><div class="info"><div class="name">Brian Scott <span class="tag">T3</span></div><div class="meta">Winnebago · Procurement Manager</div></div><span class="status pending">待跟进</span>
+        </div>
+        <div class="contact-item">
+          <div class="avatar">M</div><div class="info"><div class="name">Michelle Chen <span class="tag">T3</span></div><div class="meta">MEC · Buyer - Electronics</div></div><span class="status pending">待跟进</span>
+        </div>
+        <div class="contact-item">
+          <div class="avatar">D</div><div class="info"><div class="name">Daniel Brooks <span class="tag">T3</span></div><div class="meta">Harbor Freight · Category Manager</div></div><span class="status pending">待跟进</span>
+        </div>
+        <div class="contact-item">
+          <div class="avatar">L</div><div class="info"><div class="name">Laura Martinez <span class="tag">T3</span></div><div class="meta">Ace Hardware · Outdoor Category Manager</div></div><span class="status pending">待跟进</span>
+        </div>
+        <div class="contact-item">
+          <div class="avatar">R</div><div class="info"><div class="name">Rachel Green <span class="tag">T3</span></div><div class="meta">Walmart · Senior Buyer - Electronics</div></div><span class="status existing">现有客户</span>
+        </div>
+        <!-- EXCLUDED -->
+        <div class="contact-item" style="opacity:0.5">
+          <div class="avatar">A</div><div class="info"><div class="name">Ashley Morgan <span class="tag" style="background:var(--danger)">EX</span></div><div class="meta">RVDA · Director of Partnerships</div></div><span class="status" style="background:#ef444422;color:var(--danger)">已排除</span>
+        </div>
+      </div>
     </div>
 
     <!-- Next Actions -->
@@ -217,12 +298,85 @@ body { font-family: 'Segoe UI', Arial, sans-serif; background: var(--bg); color:
     <!-- Daily Contact Details -->
     <div class="panel" style="grid-column: span 2">
       <div class="panel-header">
-        <h3>📅 今日建联明细</h3>
-        <span id="todayDate" style="font-size:11px;color:var(--muted)"></span>
+        <h3>📅 客户明细 · 全部外联记录</h3>
+        <span id="todayDate" style="font-size:11px;color:var(--muted)">累计: 25人 | 已接受: 8人 | 待跟进: 16人 | 排除: 1人</span>
       </div>
-      <div class="panel-body" id="dailyContacts" style="min-height:80px;">
-        <div id="dailyEmpty" style="text-align:center;color:var(--muted);padding:20px;font-size:12px;">
-          今日暂无建联记录<br><span style="font-size:11px">today_sent &gt; 0 时自动填充</span>
+      <div class="panel-body" id="dailyContacts">
+        <div class="daily-stat">已接受 <span>8</span> 人 · 待跟进 <span>16</span> 人 · 今日新增 <span>0</span> 人</div>
+        <div class="daily-row">
+          <span class="time">—</span><span class="name">James Chen</span><span class="company">Bass Pro Shops</span><span class="tier-badge t3">T3</span><span class="kw">outdoor gear distributor</span>
+        </div>
+        <div class="daily-row">
+          <span class="time">—</span><span class="name">Sarah Miller</span><span class="company">REI Co-op</span><span class="tier-badge t3">T3</span><span class="kw">camping gear distributor</span>
+        </div>
+        <div class="daily-row">
+          <span class="time">—</span><span class="name">Michael Torres</span><span class="company">Camping World</span><span class="tier-badge t2">T2</span><span class="kw">RV power solutions distributor</span>
+        </div>
+        <div class="daily-row">
+          <span class="time">—</span><span class="name">Emma Wilson</span><span class="company">Dick's Sporting Goods</span><span class="tier-badge t2">T2</span><span class="kw">retail chain buyer</span>
+        </div>
+        <div class="daily-row">
+          <span class="time">—</span><span class="name">David Park</span><span class="company">Pacific Outdoor Group</span><span class="tier-badge t1">T1</span><span class="kw">CEO outdoor brand</span>
+        </div>
+        <div class="daily-row">
+          <span class="time">—</span><span class="name">Lisa Chang</span><span class="company">L.L.Bean</span><span class="tier-badge t2">T2</span><span class="kw">outdoor equipment importer</span>
+        </div>
+        <div class="daily-row">
+          <span class="time">—</span><span class="name">Robert Kim</span><span class="company">AutoZone</span><span class="tier-badge t3">T3</span><span class="kw">automotive electronics distributor</span>
+        </div>
+        <div class="daily-row">
+          <span class="time">—</span><span class="name">Jennifer Lee</span><span class="company">REI</span><span class="tier-badge t3">T3</span><span class="kw">product sourcing manager outdoor</span>
+        </div>
+        <div class="daily-row">
+          <span class="time">—</span><span class="name">Mark Johnson</span><span class="company">Canadian Tire</span><span class="tier-badge t3">T3</span><span class="kw">hypermarket buyer electronics</span>
+        </div>
+        <div class="daily-row">
+          <span class="time">—</span><span class="name">Amanda White</span><span class="company">Backcountry.com</span><span class="tier-badge t3">T3</span><span class="kw">adventure gear distributor</span>
+        </div>
+        <div class="daily-row">
+          <span class="time">—</span><span class="name">Chris Brown</span><span class="company">Best Buy</span><span class="tier-badge t3">T3</span><span class="kw">electronics retail buyer</span>
+        </div>
+        <div class="daily-row">
+          <span class="time">—</span><span class="name">Kevin Zhang</span><span class="company">Global Electronics Distribution</span><span class="tier-badge t1">T1</span><span class="kw">global sourcing manager electronics</span>
+        </div>
+        <div class="daily-row">
+          <span class="time">—</span><span class="name">Nicole Adams</span><span class="company">Walgreens</span><span class="tier-badge t3">T3</span><span class="kw">retail chain buyer</span>
+        </div>
+        <div class="daily-row">
+          <span class="time">—</span><span class="name">Tom Martinez</span><span class="company">Rural King</span><span class="tier-badge t1">T1</span><span class="kw">owner sporting goods store</span>
+        </div>
+        <div class="daily-row">
+          <span class="time">—</span><span class="name">Jessica Wong</span><span class="company">Costco Canada</span><span class="tier-badge t2">T2</span><span class="kw">commercial manager retail</span>
+        </div>
+        <div class="daily-row">
+          <span class="time">—</span><span class="name">Ryan Cooper</span><span class="company">Airstream</span><span class="tier-badge t2">T2</span><span class="kw">RV power solutions</span>
+        </div>
+        <div class="daily-row">
+          <span class="time">—</span><span class="name">Stephanie Liu</span><span class="company">Target</span><span class="tier-badge t3">T3</span><span class="kw">retail director electronics</span>
+        </div>
+        <div class="daily-row">
+          <span class="time">—</span><span class="name">Brian Scott</span><span class="company">Winnebago</span><span class="tier-badge t3">T3</span><span class="kw">OEM RV power supplier</span>
+        </div>
+        <div class="daily-row">
+          <span class="time">—</span><span class="name">Michelle Chen</span><span class="company">MEC</span><span class="tier-badge t3">T3</span><span class="kw">buyer outdoor products Canada</span>
+        </div>
+        <div class="daily-row">
+          <span class="time">—</span><span class="name">Daniel Brooks</span><span class="company">Harbor Freight</span><span class="tier-badge t3">T3</span><span class="kw">tool distributor buyer</span>
+        </div>
+        <div class="daily-row">
+          <span class="time">—</span><span class="name">Ashley Morgan</span><span class="company">RVDA</span><span class="tier-badge" style="background:var(--danger);color:#fff">EX</span><span class="kw">RV industry association</span>
+        </div>
+        <div class="daily-row">
+          <span class="time">—</span><span class="name">Jason Park</span><span class="company">Thor Industries</span><span class="tier-badge t2">T2</span><span class="kw">strategic sourcing manager</span>
+        </div>
+        <div class="daily-row">
+          <span class="time">—</span><span class="name">Laura Martinez</span><span class="company">Ace Hardware</span><span class="tier-badge t3">T3</span><span class="kw">hardware store buyer</span>
+        </div>
+        <div class="daily-row">
+          <span class="time">—</span><span class="name">Eric Wong</span><span class="company">Sportsman's Warehouse</span><span class="tier-badge t2">T2</span><span class="kw">sporting goods retail buyer</span>
+        </div>
+        <div class="daily-row">
+          <span class="time">—</span><span class="name">Rachel Green</span><span class="company">Walmart</span><span class="tier-badge t3">T3</span><span class="kw">Walmart buyer electronics</span>
         </div>
       </div>
     </div>
@@ -500,6 +654,14 @@ function syncToSheet() {
       btn.textContent = '✓ 已同步（本地）';
       alert('✅ 数据已同步到本地存储\n\n📌 如需同步到 Google Sheet，请配置 CONFIG.webAppUrl\n（见看板源码中的 Apps Script 配置说明）');
     }, 800);
+  }
+}
+
+loadDailyContacts();
+</script>
+</body>
+</html>
+
   }
 }
 
