@@ -1,0 +1,25 @@
+{
+  "id": "o9cq800kdvjrggpfwuf33d4qcq8q@im.wechat",
+  "name": "广交会客户汇总",
+  "status": "active",
+  "createdAt": "2026-04-28T07:17:06.114Z",
+  "updatedAt": "2026-04-28T09:35:31.581Z",
+  "agents": [
+    {
+      "id": "agent_qc2hp24g",
+      "name": "Main Agent",
+      "role": "assistant",
+      "status": "idle",
+      "createdAt": "2026-04-28T07:17:06.114Z",
+      "model": "unknown",
+      "systemPrompt": ""
+    }
+  ],
+  "summary": {
+    "id": "summary_4m9hgg7n",
+    "title": "广交会客户汇总",
+    "createdAt": "2026-04-28T07:17:06.114Z",
+    "file": "summary_4m9hgg7n.md"
+  },
+  "lastMessageCount": 44
+}

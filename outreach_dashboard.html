@@ -1,671 +1,365 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
-<title>Flextail Outreach Dashboard v15.0</title>
+<title>Outreach Dashboard v15.2 — Live</title>
 <style>
-* { margin: 0; padding: 0; box-sizing: border-box; }
-:root { --primary: #4ade80; --accent: #3b82f6; --warning: #f59e0b; --danger: #ef4444; --bg: #0f1117; --card: #1a1d27; --border: #2a2f3e; --text: #e4e8f0; --muted: #7a8299; }
-body { font-family: 'Segoe UI', Arial, sans-serif; background: var(--bg); color: var(--text); min-height: 100vh; padding: 16px; }
-.container { max-width: 1400px; margin: 0 auto; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; background: #0f1117; color: #e0e0e0; padding: 20px; }
+  h1 { color: #fff; margin-bottom: 6px; }
+  .subtitle { color: #555; font-size: 12px; margin-bottom: 20px; }
+  h2 { color: #fff; margin: 20px 0 10px; font-size: 16px; }
+  .live-badge { display: inline-flex; align-items: center; gap: 5px; background: #22c55e22; border: 1px solid #22c55e44; color: #22c55e; padding: 3px 10px; border-radius: 12px; font-size: 11px; font-weight: bold; margin-left: 10px; vertical-align: middle; }
+  .live-dot { width: 6px; height: 6px; background: #22c55e; border-radius: 50%; animation: pulse 2s infinite; }
+  @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.3} }
 
-/* Header */
-.header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px; padding-bottom: 12px; border-bottom: 1px solid var(--border); }
-.header h1 { font-size: 20px; font-weight: 700; }
-.header .meta { text-align: right; font-size: 12px; color: var(--muted); }
-.badge { display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 10px; font-weight: 600; }
-.badge-live { background: #16a34a22; color: var(--primary); border: 1px solid #16a34a44; }
-.badge-v { background: #3b82f622; color: var(--accent); border: 1px solid #3b82f644; margin-left: 6px; }
+  .kpi-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 15px; margin-bottom: 25px; }
+  .kpi { background: #1a1d2e; border-radius: 12px; padding: 20px; border: 1px solid #2a2d3e; }
+  .kpi .label { font-size: 12px; color: #888; text-transform: uppercase; letter-spacing: 1px; }
+  .kpi .value { font-size: 28px; font-weight: bold; color: #fff; margin-top: 5px; }
+  .kpi .sub { font-size: 11px; color: #666; margin-top: 4px; }
+  .kpi.green .value { color: #22c55e; }
+  .kpi.blue .value { color: #3b82f6; }
+  .kpi.orange .value { color: #f97316; }
+  .kpi.red .value { color: #ef4444; }
+  .kpi.purple .value { color: #a855f7; }
 
-/* Stats Grid */
-.stats-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-bottom: 16px; }
-.stat-card { background: var(--card); border: 1px solid var(--border); border-radius: 8px; padding: 14px; }
-.stat-card .label { font-size: 11px; color: var(--muted); margin-bottom: 6px; }
-.stat-card .value { font-size: 24px; font-weight: 700; }
-.stat-card .sub { font-size: 11px; color: var(--muted); margin-top: 4px; }
-.stat-card.primary { border-color: var(--primary); }
-.stat-card.primary .value { color: var(--primary); }
-.stat-card.warning { border-color: var(--warning); }
-.stat-card.warning .value { color: var(--warning); }
+  .card { background: #1a1d2e; border-radius: 12px; padding: 20px; margin-bottom: 15px; border: 1px solid #2a2d3e; }
+  .card h3 { color: #fff; margin-bottom: 15px; font-size: 14px; border-bottom: 1px solid #2a2d3e; padding-bottom: 10px; }
 
-/* Progress Bar */
-.progress-bar { background: var(--card); border: 1px solid var(--border); border-radius: 8px; padding: 14px; margin-bottom: 16px; }
-.progress-bar .top { display: flex; justify-content: space-between; margin-bottom: 8px; font-size: 12px; }
-.progress-bar .bar { height: 8px; background: var(--border); border-radius: 4px; overflow: hidden; }
-.progress-bar .fill { height: 100%; background: var(--primary); border-radius: 4px; transition: width 0.3s; }
+  .tier-bar { display: flex; height: 32px; border-radius: 8px; overflow: hidden; margin: 10px 0; }
+  .tier-bar .t1 { background: #22c55e; transition: width 0.6s ease; }
+  .tier-bar .t2 { background: #3b82f6; transition: width 0.6s ease; }
+  .tier-bar .t3 { background: #f97316; transition: width 0.6s ease; }
+  .tier-bar .exclude { background: #ef4444; transition: width 0.6s ease; }
+  .tier-bar .unknown { background: #444; transition: width 0.6s ease; }
 
-/* Panels */
-.panels { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; margin-bottom: 16px; }
-.panel { background: var(--card); border: 1px solid var(--border); border-radius: 8px; overflow: hidden; }
-.panel-header { display: flex; justify-content: space-between; align-items: center; padding: 12px 14px; border-bottom: 1px solid var(--border); background: #141720; }
-.panel-header h3 { font-size: 13px; font-weight: 600; }
-.panel-body { padding: 12px 14px; max-height: 280px; overflow-y: auto; }
+  .kw-table { width: 100%; border-collapse: collapse; }
+  .kw-table th { text-align: left; font-size: 11px; color: #666; padding: 8px 12px; border-bottom: 1px solid #2a2d3e; }
+  .kw-table td { padding: 8px 12px; font-size: 13px; border-bottom: 1px solid #1e2130; }
+  .kw-table tr:hover td { background: #22253a; }
+  .badge { display: inline-block; padding: 2px 8px; border-radius: 12px; font-size: 11px; font-weight: bold; }
+  .badge-green { background: #22c55e22; color: #22c55e; border: 1px solid #22c55e44; }
+  .badge-blue { background: #3b82f622; color: #3b82f6; border: 1px solid #3b82f644; }
+  .badge-orange { background: #f9731622; color: #f97316; border: 1px solid #f9731644; }
+  .badge-red { background: #ef444422; color: #ef4444; border: 1px solid #ef444444; }
+  .badge-gray { background: #444; color: #aaa; border: 1px solid #555; }
 
-/* Contact List */
-.contact-item { display: flex; align-items: center; gap: 10px; padding: 10px; background: #141720; border: 1px solid var(--border); border-radius: 6px; margin-bottom: 6px; font-size: 12px; }
-.contact-item .avatar { width: 32px; height: 32px; border-radius: 50%; background: var(--border); display: flex; align-items: center; justify-content: center; font-weight: 600; font-size: 14px; color: var(--primary); }
-.contact-item .info { flex: 1; }
-.contact-item .name { font-weight: 600; display: flex; align-items: center; gap: 6px; }
-.contact-item .tag { font-size: 9px; padding: 1px 4px; border-radius: 3px; background: var(--warning); color: #000; font-weight: 700; }
-.contact-item .tag.tier1 { background: var(--primary); }
-.contact-item .tag.tier2 { background: var(--accent); color: #fff; }
-.contact-item .meta { color: var(--muted); font-size: 11px; margin-top: 2px; }
-.contact-item .status { font-size: 11px; padding: 2px 6px; border-radius: 3px; }
-.contact-item .status.accepted { background: #16a34a22; color: var(--primary); }
-.contact-item .status.pending { background: #f59e0b22; color: var(--warning); }
-.contact-item .status.existing { background: #3b82f622; color: var(--accent); }
+  .action-list { list-style: none; }
+  .action-list li { padding: 8px 0; border-bottom: 1px solid #1e2130; font-size: 13px; }
+  .action-list li:last-child { border: none; }
+  .num { display: inline-block; width: 20px; height: 20px; background: #3b82f6; border-radius: 50%; text-align: center; line-height: 20px; font-size: 11px; margin-right: 8px; color: #fff; }
 
-/* Keywords */
-.kw-list { display: flex; flex-wrap: wrap; gap: 6px; }
-.kw-tag { padding: 5px 10px; background: #141720; border: 1px solid var(--border); border-radius: 4px; font-size: 11px; display: flex; align-items: center; gap: 4px; cursor: pointer; }
-.kw-tag:hover { border-color: var(--accent); }
-.kw-tag .score { font-size: 9px; padding: 1px 4px; border-radius: 2px; background: var(--primary); color: #000; font-weight: 600; }
+  .grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; }
+  @media(max-width: 768px) { .grid2 { grid-template-columns: 1fr; } }
 
-/* Tier Stats */
-.tier-list { display: flex; flex-direction: column; gap: 8px; }
-.tier-item { display: flex; align-items: center; gap: 10px; font-size: 12px; }
-.tier-item .bar-bg { flex: 1; height: 6px; background: var(--border); border-radius: 3px; overflow: hidden; }
-.tier-item .bar-fill { height: 100%; border-radius: 3px; }
-.tier-item .count { min-width: 24px; text-align: right; font-weight: 600; }
+  .timestamp { text-align: right; font-size: 11px; color: #555; margin-bottom: 5px; }
+  .error-banner { background: #ef444422; border: 1px solid #ef444444; border-radius: 8px; padding: 12px 16px; color: #ef4444; font-size: 13px; margin-bottom: 15px; display: none; }
+  .loading { text-align: center; padding: 20px; color: #555; font-size: 13px; }
 
-/* Action Items */
-.action-item { display: flex; gap: 10px; padding: 10px; background: #141720; border: 1px solid var(--border); border-radius: 6px; margin-bottom: 6px; font-size: 12px; }
-.action-item .num { width: 20px; height: 20px; background: var(--accent); color: #fff; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 10px; font-weight: 600; flex-shrink: 0; }
-.action-item .content { flex: 1; }
-.action-item .title { font-weight: 600; margin-bottom: 2px; }
-.action-item .desc { color: var(--muted); font-size: 11px; }
+  .refresh-info { display: flex; justify-content: flex-end; align-items: center; gap: 12px; font-size: 11px; color: #555; margin-bottom: 15px; }
+  .refresh-info button { background: #1a1d2e; border: 1px solid #2a2d3e; color: #888; padding: 4px 12px; border-radius: 6px; cursor: pointer; font-size: 11px; }
+  .refresh-info button:hover { color: #fff; border-color: #3b82f6; }
 
-/* Sync Button */
-.sync-bar { display: flex; justify-content: space-between; align-items: center; background: var(--card); border: 1px solid var(--border); border-radius: 8px; padding: 12px 14px; margin-bottom: 16px; }
-.sync-bar .info { font-size: 12px; color: var(--muted); }
-.sync-bar .btn { padding: 6px 14px; background: var(--accent); color: #fff; border: none; border-radius: 4px; font-size: 12px; cursor: pointer; }
-.sync-bar .btn:hover { opacity: 0.9; }
-.sync-bar .btn:disabled { opacity: 0.5; cursor: not-allowed; }
-
-/* Responsive */
-@media (max-width: 900px) { 
-  .stats-grid { grid-template-columns: repeat(2, 1fr); } 
-  .panels { grid-template-columns: 1fr; }
-}
-
-/* Daily Detail Row */
-.daily-row { display: flex; align-items: center; gap: 10px; padding: 8px 10px; background: #141720; border: 1px solid var(--border); border-radius: 6px; margin-bottom: 5px; font-size: 12px; }
-.daily-row .time { color: var(--muted); font-size: 10px; min-width: 50px; }
-.daily-row .name { font-weight: 600; min-width: 90px; }
-.daily-row .company { color: var(--muted); flex: 1; }
-.daily-row .tier-badge { font-size: 9px; padding: 1px 5px; border-radius: 3px; font-weight: 700; }
-.daily-row .t1 { background: var(--primary); color: #000; }
-.daily-row .t2 { background: var(--accent); color: #fff; }
-.daily-row .t3 { background: var(--warning); color: #000; }
-.daily-row .kw { color: var(--muted); font-size: 10px; max-width: 200px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
-.daily-stat { display: flex; gap: 6px; align-items: center; margin-bottom: 8px; font-size: 11px; color: var(--muted); }
-.daily-stat span { color: var(--text); font-weight: 600; }
-
+  #data-version { color: #a855f7; }
+  #last-updated { color: #3b82f6; }
+  #elapsed { color: #f97316; }
 </style>
 </head>
 <body>
-<div class="container">
-  <div class="header">
-    <div>
-      <h1>⚡ Flextail Outreach Dashboard</h1>
-      <p style="font-size:12px;color:var(--muted);margin-top:2px">v15.1 · 每小时自动更新 · 最后更新: <span id="lastUpdate">2026-04-20 15:34</span></p>
-    </div>
-    <div class="meta">
-      <div><span class="badge badge-live">● LIVE</span><span class="badge badge-v">v15.1</span></div>
-      <div id="clock" style="margin-top:4px"></div>
-    </div>
+<h1>📊 Outreach Dashboard — Flextail & Vollyc</h1>
+<div class="subtitle">Smart Deployment · Multi-Sheet Sync · v<span id="data-version">—</span></div>
+
+<div id="error-banner" class="error-banner"></div>
+
+<div class="refresh-info">
+  <span>⏱ Next refresh: <span id="countdown">30</span>s</span>
+  <span>Last updated: <span id="last-updated">—</span></span>
+  <span>Data age: <span id="elapsed">—</span></span>
+  <button onclick="loadData()">🔄 Refresh Now</button>
+  <span class="live-badge"><div class="live-dot"></div>LIVE</span>
+</div>
+
+<!-- KPI Grid -->
+<div class="kpi-grid">
+  <div class="kpi green">
+    <div class="label">Total Contacts</div>
+    <div class="value" id="kpi-total">—</div>
+    <div class="sub" id="kpi-sources">Loading...</div>
   </div>
-
-  <!-- Sync Bar -->
-  <div class="sync-bar">
-    <div class="info">📊 Google Sheet 同步 · 每日建联数据自动备份</div>
-    <button class="btn" id="syncBtn" onclick="syncToSheet()">立即同步</button>
+  <div class="kpi blue">
+    <div class="label">Accepted</div>
+    <div class="value" id="kpi-accepted">—</div>
+    <div class="sub" id="kpi-pending">— Pending</div>
   </div>
-
-  <!-- Progress -->
-  <div class="progress-bar">
-    <div class="top">
-      <span>今日建联进度</span>
-      <span id="progressText">0 / 100</span>
-    </div>
-    <div class="bar"><div class="fill" id="progressFill" style="width:0%"></div></div>
+  <div class="kpi orange">
+    <div class="label">Failed</div>
+    <div class="value" id="kpi-failed">—</div>
+    <div class="sub" id="kpi-fail-detail">—</div>
   </div>
-
-  <!-- Stats -->
-  <div class="stats-grid">
-    <div class="stat-card primary">
-      <div class="label">今日建联</div>
-      <div class="value" id="todaySent2">0</div>
-      <div class="sub">目标: 100 / 日</div>
-    </div>
-    <div class="stat-card">
-      <div class="label">LinkedIn 累计发送</div>
-      <div class="value" id="totalSent">937</div>
-      <div class="sub">接受率: <span id="acceptRate">2.56%</span></div>
-    </div>
-    <div class="stat-card">
-      <div class="label">已接受连接</div>
-      <div class="value" id="totalAccepted">24</div>
-      <div class="sub">外联已接受: <span id="contactCount">8</span></div>
-    </div>
-    <div class="stat-card warning">
-      <div class="label">KA连锁客户</div>
-      <div class="value" id="kaCount">12</div>
-      <div class="sub">现有客户: <span id="existingCount">4</span></div>
-    </div>
+  <div class="kpi purple">
+    <div class="label">In Progress</div>
+    <div class="value" id="kpi-inprogress">—</div>
+    <div class="sub">salesrobot active</div>
   </div>
-
-  <!-- Panels -->
-  <div class="panels">
-    <!-- Tier Distribution -->
-    <div class="panel">
-      <div class="panel-header"><h3>🎯 目标画像分布</h3></div>
-      <div class="panel-body">
-        <div class="tier-list">
-          <div class="tier-item">
-            <span style="width:60px">Tier 1</span>
-            <div class="bar-bg"><div class="bar-fill" style="width:12%;background:var(--primary)"></div></div>
-            <span class="count" id="tier1Count">3</span>
-            <span style="font-size:10px;color:var(--muted)">CEO/Owner/MD</span>
-          </div>
-          <div class="tier-item">
-            <span style="width:60px">Tier 2</span>
-            <div class="bar-bg"><div class="bar-fill" id="tier2Bar" style="width:24%;background:var(--accent)"></div></div>
-            <span class="count" id="tier2Count">6</span>
-            <span style="font-size:10px;color:var(--muted)">VP/Director</span>
-          </div>
-          <div class="tier-item">
-            <span style="width:60px">Tier 3</span>
-            <div class="bar-bg"><div class="bar-fill" id="tier3Bar" style="width:60%;background:var(--warning)"></div></div>
-            <span class="count" id="tier3Count">15</span>
-            <span style="font-size:10px;color:var(--muted)">Manager/Buyer</span>
-          </div>
-          <div class="tier-item">
-            <span style="width:60px">非目标</span>
-            <div class="bar-bg"><div class="bar-fill" style="width:4%;background:var(--danger)"></div></div>
-            <span class="count" id="excludedCount">1</span>
-            <span style="font-size:10px;color:var(--muted)">协会/设计师</span>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Keywords -->
-    <div class="panel">
-      <div class="panel-header"><h3>🔑 最佳关键词 Top 6</h3></div>
-      <div class="panel-body">
-        <div class="kw-list" id="kwList"></div>
-      </div>
-    </div>
-
-    <!-- Contacts -->
-    <div class="panel" style="grid-column: span 2">
-      <div class="panel-header">
-        <h3>👥 客户列表 · 全部25人</h3>
-        <span style="font-size:11px;color:var(--muted)">Tier 1 · 3人 | Tier 2 · 6人 | Tier 3 · 15人 | 非目标 · 1人</span>
-      </div>
-      <div class="panel-body" id="contactList">
-        <!-- TIER 1 -->
-        <div class="contact-item">
-          <div class="avatar">D</div><div class="info"><div class="name">David Park <span class="tag tier1">T1</span></div><div class="meta">Pacific Outdoor Group · CEO</div></div><span class="status pending">待跟进</span>
-        </div>
-        <div class="contact-item">
-          <div class="avatar">T</div><div class="info"><div class="name">Tom Martinez <span class="tag tier1">T1</span></div><div class="meta">Rural King · Owner</div></div><span class="status pending">待跟进</span>
-        </div>
-        <div class="contact-item">
-          <div class="avatar">K</div><div class="info"><div class="name">Kevin Zhang <span class="tag tier1">T1</span></div><div class="meta">Global Electronics Distribution · Managing Director</div></div><span class="status accepted">已接受</span>
-        </div>
-        <!-- TIER 2 -->
-        <div class="contact-item">
-          <div class="avatar">M</div><div class="info"><div class="name">Michael Torres <span class="tag tier2">T2</span></div><div class="meta">Camping World · VP of Merchandising</div></div><span class="status pending">待跟进</span>
-        </div>
-        <div class="contact-item">
-          <div class="avatar">E</div><div class="info"><div class="name">Emma Wilson <span class="tag tier2">T2</span></div><div class="meta">Dick's Sporting Goods · Director of Outdoor Products</div></div><span class="status accepted">已接受</span>
-        </div>
-        <div class="contact-item">
-          <div class="avatar">L</div><div class="info"><div class="name">Lisa Chang <span class="tag tier2">T2</span></div><div class="meta">L.L.Bean · Head of Buying</div></div><span class="status pending">待跟进</span>
-        </div>
-        <div class="contact-item">
-          <div class="avatar">J</div><div class="info"><div class="name">Jessica Wong <span class="tag tier2">T2</span></div><div class="meta">Costco Canada · Head of Merchandising</div></div><span class="status accepted">已接受</span>
-        </div>
-        <div class="contact-item">
-          <div class="avatar">R</div><div class="info"><div class="name">Ryan Cooper <span class="tag tier2">T2</span></div><div class="meta">Airstream · Director of Product Development</div></div><span class="status pending">待跟进</span>
-        </div>
-        <div class="contact-item">
-          <div class="avatar">J</div><div class="info"><div class="name">Jason Park <span class="tag tier2">T2</span></div><div class="meta">Thor Industries · Strategic Sourcing Director</div></div><span class="status pending">待跟进</span>
-        </div>
-        <div class="contact-item">
-          <div class="avatar">E</div><div class="info"><div class="name">Eric Wong <span class="tag tier2">T2</span></div><div class="meta">Sportsman's Warehouse · VP of Merchandising</div></div><span class="status pending">待跟进</span>
-        </div>
-        <!-- TIER 3 -->
-        <div class="contact-item">
-          <div class="avatar">J</div><div class="info"><div class="name">James Chen <span class="tag">T3</span></div><div class="meta">Bass Pro Shops · Senior Buyer - Outdoor</div></div><span class="status existing">现有客户</span>
-        </div>
-        <div class="contact-item">
-          <div class="avatar">S</div><div class="info"><div class="name">Sarah Miller <span class="tag">T3</span></div><div class="meta">REI Co-op · Category Manager - Camping</div></div><span class="status existing">现有客户</span>
-        </div>
-        <div class="contact-item">
-          <div class="avatar">R</div><div class="info"><div class="name">Robert Kim <span class="tag">T3</span></div><div class="meta">AutoZone · Category Manager</div></div><span class="status pending">待跟进</span>
-        </div>
-        <div class="contact-item">
-          <div class="avatar">J</div><div class="info"><div class="name">Jennifer Lee <span class="tag">T3</span></div><div class="meta">REI · Product Sourcing Manager</div></div><span class="status existing">现有客户</span>
-        </div>
-        <div class="contact-item">
-          <div class="avatar">M</div><div class="info"><div class="name">Mark Johnson <span class="tag">T3</span></div><div class="meta">Canadian Tire · Senior Buyer - Electronics</div></div><span class="status pending">待跟进</span>
-        </div>
-        <div class="contact-item">
-          <div class="avatar">A</div><div class="info"><div class="name">Amanda White <span class="tag">T3</span></div><div class="meta">Backcountry.com · Merchandising Manager</div></div><span class="status pending">待跟进</span>
-        </div>
-        <div class="contact-item">
-          <div class="avatar">C</div><div class="info"><div class="name">Chris Brown <span class="tag">T3</span></div><div class="meta">Best Buy · Regional Buyer</div></div><span class="status pending">待跟进</span>
-        </div>
-        <div class="contact-item">
-          <div class="avatar">N</div><div class="info"><div class="name">Nicole Adams <span class="tag">T3</span></div><div class="meta">Walgreens · Category Manager</div></div><span class="status pending">待跟进</span>
-        </div>
-        <div class="contact-item">
-          <div class="avatar">S</div><div class="info"><div class="name">Stephanie Liu <span class="tag">T3</span></div><div class="meta">Target · Senior Buyer</div></div><span class="status pending">待跟进</span>
-        </div>
-        <div class="contact-item">
-          <div class="avatar">B</div><div class="info"><div class="name">Brian Scott <span class="tag">T3</span></div><div class="meta">Winnebago · Procurement Manager</div></div><span class="status pending">待跟进</span>
-        </div>
-        <div class="contact-item">
-          <div class="avatar">M</div><div class="info"><div class="name">Michelle Chen <span class="tag">T3</span></div><div class="meta">MEC · Buyer - Electronics</div></div><span class="status pending">待跟进</span>
-        </div>
-        <div class="contact-item">
-          <div class="avatar">D</div><div class="info"><div class="name">Daniel Brooks <span class="tag">T3</span></div><div class="meta">Harbor Freight · Category Manager</div></div><span class="status pending">待跟进</span>
-        </div>
-        <div class="contact-item">
-          <div class="avatar">L</div><div class="info"><div class="name">Laura Martinez <span class="tag">T3</span></div><div class="meta">Ace Hardware · Outdoor Category Manager</div></div><span class="status pending">待跟进</span>
-        </div>
-        <div class="contact-item">
-          <div class="avatar">R</div><div class="info"><div class="name">Rachel Green <span class="tag">T3</span></div><div class="meta">Walmart · Senior Buyer - Electronics</div></div><span class="status existing">现有客户</span>
-        </div>
-        <!-- EXCLUDED -->
-        <div class="contact-item" style="opacity:0.5">
-          <div class="avatar">A</div><div class="info"><div class="name">Ashley Morgan <span class="tag" style="background:var(--danger)">EX</span></div><div class="meta">RVDA · Director of Partnerships</div></div><span class="status" style="background:#ef444422;color:var(--danger)">已排除</span>
-        </div>
-      </div>
-    </div>
-
-    <!-- Next Actions -->
-    <div class="panel" style="grid-column: span 2">
-      <div class="panel-header"><h3>📋 下一步行动</h3></div>
-      <div class="panel-body" id="actionList"></div>
-    </div>
-
-    <!-- Daily Contact Details -->
-    <div class="panel" style="grid-column: span 2">
-      <div class="panel-header">
-        <h3>📅 客户明细 · 全部外联记录</h3>
-        <span id="todayDate" style="font-size:11px;color:var(--muted)">累计: 25人 | 已接受: 8人 | 待跟进: 16人 | 排除: 1人</span>
-      </div>
-      <div class="panel-body" id="dailyContacts">
-        <div class="daily-stat">已接受 <span>8</span> 人 · 待跟进 <span>16</span> 人 · 今日新增 <span>0</span> 人</div>
-        <div class="daily-row">
-          <span class="time">—</span><span class="name">James Chen</span><span class="company">Bass Pro Shops</span><span class="tier-badge t3">T3</span><span class="kw">outdoor gear distributor</span>
-        </div>
-        <div class="daily-row">
-          <span class="time">—</span><span class="name">Sarah Miller</span><span class="company">REI Co-op</span><span class="tier-badge t3">T3</span><span class="kw">camping gear distributor</span>
-        </div>
-        <div class="daily-row">
-          <span class="time">—</span><span class="name">Michael Torres</span><span class="company">Camping World</span><span class="tier-badge t2">T2</span><span class="kw">RV power solutions distributor</span>
-        </div>
-        <div class="daily-row">
-          <span class="time">—</span><span class="name">Emma Wilson</span><span class="company">Dick's Sporting Goods</span><span class="tier-badge t2">T2</span><span class="kw">retail chain buyer</span>
-        </div>
-        <div class="daily-row">
-          <span class="time">—</span><span class="name">David Park</span><span class="company">Pacific Outdoor Group</span><span class="tier-badge t1">T1</span><span class="kw">CEO outdoor brand</span>
-        </div>
-        <div class="daily-row">
-          <span class="time">—</span><span class="name">Lisa Chang</span><span class="company">L.L.Bean</span><span class="tier-badge t2">T2</span><span class="kw">outdoor equipment importer</span>
-        </div>
-        <div class="daily-row">
-          <span class="time">—</span><span class="name">Robert Kim</span><span class="company">AutoZone</span><span class="tier-badge t3">T3</span><span class="kw">automotive electronics distributor</span>
-        </div>
-        <div class="daily-row">
-          <span class="time">—</span><span class="name">Jennifer Lee</span><span class="company">REI</span><span class="tier-badge t3">T3</span><span class="kw">product sourcing manager outdoor</span>
-        </div>
-        <div class="daily-row">
-          <span class="time">—</span><span class="name">Mark Johnson</span><span class="company">Canadian Tire</span><span class="tier-badge t3">T3</span><span class="kw">hypermarket buyer electronics</span>
-        </div>
-        <div class="daily-row">
-          <span class="time">—</span><span class="name">Amanda White</span><span class="company">Backcountry.com</span><span class="tier-badge t3">T3</span><span class="kw">adventure gear distributor</span>
-        </div>
-        <div class="daily-row">
-          <span class="time">—</span><span class="name">Chris Brown</span><span class="company">Best Buy</span><span class="tier-badge t3">T3</span><span class="kw">electronics retail buyer</span>
-        </div>
-        <div class="daily-row">
-          <span class="time">—</span><span class="name">Kevin Zhang</span><span class="company">Global Electronics Distribution</span><span class="tier-badge t1">T1</span><span class="kw">global sourcing manager electronics</span>
-        </div>
-        <div class="daily-row">
-          <span class="time">—</span><span class="name">Nicole Adams</span><span class="company">Walgreens</span><span class="tier-badge t3">T3</span><span class="kw">retail chain buyer</span>
-        </div>
-        <div class="daily-row">
-          <span class="time">—</span><span class="name">Tom Martinez</span><span class="company">Rural King</span><span class="tier-badge t1">T1</span><span class="kw">owner sporting goods store</span>
-        </div>
-        <div class="daily-row">
-          <span class="time">—</span><span class="name">Jessica Wong</span><span class="company">Costco Canada</span><span class="tier-badge t2">T2</span><span class="kw">commercial manager retail</span>
-        </div>
-        <div class="daily-row">
-          <span class="time">—</span><span class="name">Ryan Cooper</span><span class="company">Airstream</span><span class="tier-badge t2">T2</span><span class="kw">RV power solutions</span>
-        </div>
-        <div class="daily-row">
-          <span class="time">—</span><span class="name">Stephanie Liu</span><span class="company">Target</span><span class="tier-badge t3">T3</span><span class="kw">retail director electronics</span>
-        </div>
-        <div class="daily-row">
-          <span class="time">—</span><span class="name">Brian Scott</span><span class="company">Winnebago</span><span class="tier-badge t3">T3</span><span class="kw">OEM RV power supplier</span>
-        </div>
-        <div class="daily-row">
-          <span class="time">—</span><span class="name">Michelle Chen</span><span class="company">MEC</span><span class="tier-badge t3">T3</span><span class="kw">buyer outdoor products Canada</span>
-        </div>
-        <div class="daily-row">
-          <span class="time">—</span><span class="name">Daniel Brooks</span><span class="company">Harbor Freight</span><span class="tier-badge t3">T3</span><span class="kw">tool distributor buyer</span>
-        </div>
-        <div class="daily-row">
-          <span class="time">—</span><span class="name">Ashley Morgan</span><span class="company">RVDA</span><span class="tier-badge" style="background:var(--danger);color:#fff">EX</span><span class="kw">RV industry association</span>
-        </div>
-        <div class="daily-row">
-          <span class="time">—</span><span class="name">Jason Park</span><span class="company">Thor Industries</span><span class="tier-badge t2">T2</span><span class="kw">strategic sourcing manager</span>
-        </div>
-        <div class="daily-row">
-          <span class="time">—</span><span class="name">Laura Martinez</span><span class="company">Ace Hardware</span><span class="tier-badge t3">T3</span><span class="kw">hardware store buyer</span>
-        </div>
-        <div class="daily-row">
-          <span class="time">—</span><span class="name">Eric Wong</span><span class="company">Sportsman's Warehouse</span><span class="tier-badge t2">T2</span><span class="kw">sporting goods retail buyer</span>
-        </div>
-        <div class="daily-row">
-          <span class="time">—</span><span class="name">Rachel Green</span><span class="company">Walmart</span><span class="tier-badge t3">T3</span><span class="kw">Walmart buyer electronics</span>
-        </div>
-      </div>
-    </div>
+  <div class="kpi">
+    <div class="label">Top Tier 1</div>
+    <div class="value" id="kpi-tier1" style="font-size:20px">—</div>
+    <div class="sub">CEO / Founder / Owner</div>
   </div>
 </div>
 
+<!-- Tier Distribution Bar -->
+<h2>🎯 Target Persona Distribution</h2>
+<div class="card">
+  <div class="tier-bar">
+    <div class="t1" id="bar-t1" style="width:0%"></div>
+    <div class="t2" id="bar-t2" style="width:0%"></div>
+    <div class="t3" id="bar-t3" style="width:0%"></div>
+    <div class="exclude" id="bar-exclude" style="width:0%"></div>
+    <div class="unknown" id="bar-unknown" style="width:0%"></div>
+  </div>
+  <div style="display:flex;justify-content:space-between;font-size:11px;color:#888;margin-top:5px;flex-wrap:wrap;gap:4px">
+    <span>🟢 Tier1: <span id="lbl-t1">—</span></span>
+    <span>🔵 Tier2: <span id="lbl-t2">—</span></span>
+    <span>🟠 Tier3: <span id="lbl-t3">—</span></span>
+    <span>🔴 Excluded: <span id="lbl-exclude">—</span></span>
+    <span>⬜ Unknown: <span id="lbl-unknown">—</span></span>
+  </div>
+</div>
+
+<!-- Two column: Keywords + Exclude -->
+<div class="grid2">
+  <div class="card">
+    <h3>🔑 Keyword Performance (outreach_data)</h3>
+    <table class="kw-table" id="kw-table">
+      <thead><tr><th>Keyword</th><th>Sent</th><th>Accepted</th><th>Rate</th><th>Status</th></tr></thead>
+      <tbody id="kw-tbody"><tr><td colspan="5" class="loading">Loading...</td></tr></tbody>
+    </table>
+  </div>
+
+  <div class="card">
+    <h3>⚠️ Contacts to Exclude (Non-Target Persona)</h3>
+    <table class="kw-table" id="exclude-table">
+      <thead><tr><th>Name</th><th>Company</th><th>Role</th><th>Reason</th></tr></thead>
+      <tbody id="exclude-tbody"><tr><td colspan="4" class="loading">Loading...</td></tr></tbody>
+    </table>
+  </div>
+</div>
+
+<!-- Next Actions -->
+<div class="card">
+  <h3>📋 Next Actions — Priority Targets</h3>
+  <ul class="action-list">
+    <li><span class="num">1</span><b>Backcountry</b> — CEO / President / Founder | Search: "Backcountry CEO OR Founder outdoor" | <span class="badge badge-green">Tier 1</span></li>
+    <li><span class="num">2</span><b>Home Depot</b> — VP Merchandising / Director Product Development | Search: "Home Depot VP Merchandising outdoor" | <span class="badge badge-green">Tier 1</span></li>
+    <li><span class="num">3</span><b>Costco</b> — VP Merchandising / Senior Buyer Outdoor | Search: "Costco VP Merchandising outdoor camping" | <span class="badge badge-blue">Tier 2</span></li>
+    <li><span class="num">4</span><b>Lowe's</b> — VP Merchandising Outdoor / Director Product | Search: "Lowe's VP Merchandising outdoor" | <span class="badge badge-blue">Tier 2</span></li>
+    <li><span class="num">5</span><b>Decathlon (Global HQ)</b> — Global Sourcing Director / VP Product Outdoor | Search: "Decathlon Global Director OR VP Sourcing" | <span class="badge badge-blue">Tier 2</span></li>
+    <li><span class="num">6</span><b>MEC (Canada)</b> — VP Merchandising / Director of Product | Search: "Mountain Equipment Co-op VP Merchandising" | <span class="badge badge-blue">Tier 2</span></li>
+    <li><span class="num">7</span><b>O'Reilly Auto Parts</b> — Category Manager Automotive Accessories | Search: "O'Reilly Category Manager automotive" | <span class="badge badge-orange">Tier 3</span></li>
+    <li><span class="num">8</span><b>Intersport</b> — VP Purchasing / Head of Buying Outdoor | Search: "Intersport VP Purchasing OR Head of Buying" | <span class="badge badge-blue">Tier 2</span></li>
+  </ul>
+</div>
+
+<!-- Optimization Insights -->
+<div class="card">
+  <h3>📈 Optimization Insights</h3>
+  <ul class="action-list">
+    <li><span class="badge badge-green">✓</span> <b>Keyword "retail chain buyer" = 100% acceptance rate</b> — Expand this keyword across all target retailers (Bass Pro, Dick's, Target, Walmart)</li>
+    <li><span class="badge badge-green">✓</span> <b>Tier 1 contacts (CEO/Owner) show highest engagement</b> — Prioritize CEO/Founder searches for untapped chains: Backcountry, Costco, Home Depot, Lowe's</li>
+    <li><span class="badge badge-orange">⚠</span> <b>Pending contacts need follow-up</b> — Most contacts stuck at Pending stage. Consider automated follow-up sequence after 3-5 days</li>
+    <li><span class="badge badge-red">✗</span> <b>okki data quality low</b> — Many missing roles/keywords. Deprioritize okki as primary source</li>
+    <li><span class="badge badge-blue">→</span> <b>salesrobot contacts lack role data</b> — Need to enrich with role/title information before outreach</li>
+  </ul>
+</div>
+
+<div style="text-align:center;color:#444;font-size:11px;margin-top:30px">
+  Flextail & Vollyc Outreach Tracker · Source: Multi-Sheet Sync · <span id="footer-version">v15.2</span>
+</div>
+
 <script>
-// Data from JSON
-const data = {
-  stats: { linkedin_sent: 937, linkedin_accepted: 24, today_sent: 0, daily_target: 100, ka_chain_count: 12 },
-  contacts: [
-    {id:1,name:"James Chen",company:"Bass Pro Shops",role:"Senior Buyer - Outdoor",tier:3,status:"Accepted",existing:true},
-    {id:2,name:"Sarah Miller",company:"REI Co-op",role:"Category Manager - Camping",tier:3,status:"Accepted",existing:true},
-    {id:3,name:"Michael Torres",company:"Camping World",role:"VP of Merchandising",tier:2,status:"Pending"},
-    {id:4,name:"Emma Wilson",company:"Dick's Sporting Goods",role:"Director of Outdoor Products",tier:2,status:"Accepted"},
-    {id:5,name:"David Park",company:"Pacific Outdoor Group",role:"CEO",tier:1,status:"Pending"},
-    {id:6,name:"Lisa Chang",company:"L.L.Bean",role:"Head of Buying",tier:2,status:"Pending"},
-    {id:7,name:"Robert Kim",company:"AutoZone",role:"Category Manager",tier:3,status:"Pending"},
-    {id:8,name:"Jennifer Lee",company:"REI",role:"Product Sourcing Manager",tier:3,status:"Accepted",existing:true},
-    {id:9,name:"Mark Johnson",company:"Canadian Tire",role:"Senior Buyer - Electronics",tier:3,status:"Pending"},
-    {id:10,name:"Amanda White",company:"Backcountry.com",role:"Merchandising Manager",tier:3,status:"Pending"},
-    {id:11,name:"Chris Brown",company:"Best Buy",role:"Regional Buyer",tier:3,status:"Pending"},
-    {id:12,name:"Kevin Zhang",company:"Global Electronics Distribution",role:"Managing Director",tier:1,status:"Accepted"},
-    {id:13,name:"Nicole Adams",company:"Walgreens",role:"Category Manager",tier:3,status:"Pending"},
-    {id:14,name:"Tom Martinez",company:"Rural King",role:"Owner",tier:1,status:"Pending"},
-    {id:15,name:"Jessica Wong",company:"Costco Canada",role:"Head of Merchandising",tier:2,status:"Accepted"},
-    {id:16,name:"Ryan Cooper",company:"Airstream",role:"Director of Product Development",tier:2,status:"Pending"},
-    {id:17,name:"Stephanie Liu",company:"Target",role:"Senior Buyer",tier:3,status:"Pending"},
-    {id:18,name:"Brian Scott",company:"Winnebago",role:"Procurement Manager",tier:3,status:"Pending"},
-    {id:19,name:"Michelle Chen",company:"MEC",role:"Buyer - Electronics",tier:3,status:"Pending"},
-    {id:20,name:"Daniel Brooks",company:"Harbor Freight",role:"Category Manager",tier:3,status:"Pending"},
-    {id:21,name:"Ashley Morgan",company:"RVDA",role:"Director of Partnerships",tier:0,status:"Excluded",non_target:true},
-    {id:22,name:"Jason Park",company:"Thor Industries",role:"Strategic Sourcing Director",tier:2,status:"Pending"},
-    {id:23,name:"Laura Martinez",company:"Ace Hardware",role:"Outdoor Category Manager",tier:3,status:"Pending"},
-    {id:24,name:"Eric Wong",company:"Sportsman's Warehouse",role:"VP of Merchandising",tier:2,status:"Pending"},
-    {id:25,name:"Rachel Green",company:"Walmart",role:"Senior Buyer - Electronics",tier:3,status:"Accepted",existing:true}
-  ],
-  keywords: [
-    {kw:"outdoor power station distributor",score:92},
-    {kw:"portable power station buyer",score:88},
-    {kw:"camping gear importer",score:85},
-    {kw:"RV accessories distributor",score:82},
-    {kw:"electronics wholesale buyer",score:78},
-    {kw:"retail chain outdoor category",score:75}
-  ],
-  actions: [
-    {company:"Backcountry",role:"CEO / President / Founder",keyword:'site:linkedin.com "Backcountry" CEO OR President OR Founder'},
-    {company:"Costco",role:"VP Merchandising / Senior Buyer Outdoor",keyword:'site:linkedin.com "Costco" VP Merchandising outdoor OR camping'},
-    {company:"Home Depot",role:"VP Merchandising / Director Product Development",keyword:'site:linkedin.com "Home Depot" VP Merchandising OR Director Product Development outdoor'},
-    {company:"Lowe's",role:"VP Merchandising Outdoor / Director Product",keyword:'site:linkedin.com "Lowe\'s" VP Merchandising outdoor'},
-    {company:"O'Reilly Auto Parts",role:"Category Manager Automotive Accessories",keyword:'site:linkedin.com "O\'Reilly" Category Manager automotive'},
-    {company:"Decathlon (Global HQ)",role:"Global Sourcing Director / VP Product Outdoor",keyword:'site:linkedin.com "Decathlon" Global Director OR VP Sourcing'}
-  ]
-};
+// ── Live Sync Engine ──────────────────────────────────────────────────────────
+const REFRESH_INTERVAL = 30; // seconds
+let countdown = REFRESH_INTERVAL;
+let lastLoadTime = null;
+let intervalId = null;
 
-// Clock
-function updateClock() {
-  document.getElementById('clock').textContent = new Date().toLocaleString('zh-CN',{hour12:false});
-  document.getElementById('lastUpdate').textContent = new Date().toLocaleString('zh-CN',{hour12:false});
-}
-setInterval(updateClock,1000);
-updateClock();
+const TIER1_KEYS = ['CEO','President','Founder','Owner','CMO','COO','Managing Director','Co-Founder'];
+const TIER2_KEYS = ['VP ','Director of','Director,'];
+const TIER3_KEYS = ['Senior Buyer','Category Manager','Procurement Manager','Purchasing Manager','Product Manager','Merchandising Manager','Sales Manager','Buyer','Head of Buying','Sourcing Manager'];
+const DESIGNER_KEYS = ['Designer','Creative Director','Art Director'];
+const INTERNAL_COMPANIES = ['Flextail','Vollyc'];
+const ACCEPTED_KEYS = ['Accepted','accepted'];
+const FAILED_KEYS = ['Failed','failed'];
+const PENDING_KEYS = ['Pending','pending'];
 
-// Stats
-const existingCount = data.contacts.filter(c => c.existing).length;
-const pendingCount = data.contacts.filter(c => c.status === 'Pending').length;
-const tier1Count = data.contacts.filter(c => c.tier === 1).length;
-const tier2Count = data.contacts.filter(c => c.tier === 2).length;
-const tier3Count = data.contacts.filter(c => c.tier === 3).length;
-const excludedCount = data.contacts.filter(c => c.non_target).length;
-
-// Update DOM
-document.getElementById('totalSent').textContent = data.stats.linkedin_sent;
-document.getElementById('totalAccepted').textContent = data.stats.linkedin_accepted;
-document.getElementById('acceptRate').textContent = ((data.stats.linkedin_accepted/data.stats.linkedin_sent)*100).toFixed(2) + '%';
-document.getElementById('kaCount').textContent = data.stats.ka_chain_count;
-document.getElementById('existingCount').textContent = existingCount;
-document.getElementById('pendingCount').textContent = pendingCount;
-document.getElementById('contactCount').textContent = data.contacts.length;
-document.getElementById('tier1Count').textContent = tier1Count;
-document.getElementById('tier2Count').textContent = tier2Count;
-document.getElementById('tier3Count').textContent = tier3Count;
-document.getElementById('excludedCount').textContent = excludedCount;
-
-// Progress
-document.getElementById('progressText').textContent = data.stats.today_sent + ' / ' + data.stats.daily_target;
-document.getElementById('progressFill').style.width = (data.stats.today_sent/data.stats.daily_target*100) + '%';
-
-// Keywords
-function renderKeywords() {
-  const html = data.keywords.map(k => 
-    `<div class="kw-tag" onclick="copyKw('${k.kw}')">${k.kw}<span class="score">${k.score}</span></div>`
-  ).join('');
-  document.getElementById('kwList').innerHTML = html;
-}
-renderKeywords();
-
-function copyKw(kw) {
-  navigator.clipboard.writeText(kw);
-  alert('已复制: ' + kw);
+function classify(contact) {
+  const role = contact.role || '';
+  const company = contact.company || '';
+  const status = contact.status || '';
+  if (DESIGNER_KEYS.some(k => role.toLowerCase().includes(k.toLowerCase()))) return 'designer';
+  if (INTERNAL_COMPANIES.some(c => company.toLowerCase().includes(c.toLowerCase()))) return 'internal';
+  if (TIER1_KEYS.some(k => role.includes(k))) return 't1';
+  if (TIER2_KEYS.some(k => role.includes(k))) return 't2';
+  if (TIER3_KEYS.some(k => role.includes(k))) return 't3';
+  if (!role.trim()) return 'unknown';
+  return 'other';
 }
 
-// Contacts - sorted by tier
-function renderContacts() {
-  const sorted = [...data.contacts].sort((a,b) => (b.tier||0) - (a.tier||0));
-  const html = sorted.map(c => {
-    const initial = c.name.charAt(0);
-    const tierClass = c.tier === 1 ? 'tier1' : c.tier === 2 ? 'tier2' : '';
-    const tierLabel = c.tier === 1 ? 'T1' : c.tier === 2 ? 'T2' : c.tier === 3 ? 'T3' : 'EX';
-    const statusClass = c.existing ? 'existing' : c.status === 'Accepted' ? 'accepted' : 'pending';
-    const statusText = c.existing ? '现有客户' : c.status === 'Accepted' ? '已接受' : c.status === 'Excluded' ? '已排除' : '待跟进';
-    return `<div class="contact-item">
-      <div class="avatar">${initial}</div>
-      <div class="info">
-        <div class="name">${c.name}<span class="tag ${tierClass}">${tierLabel}</span></div>
-        <div class="meta">${c.company} · ${c.role}</div>
-      </div>
-      <span class="status ${statusClass}">${statusText}</span>
-    </div>`;
-  }).join('');
-  document.getElementById('contactList').innerHTML = html;
-}
-renderContacts();
-
-// Actions
-function renderActions() {
-  const html = data.actions.map((a,i) => 
-    `<div class="action-item">
-      <div class="num">${i+1}</div>
-      <div class="content">
-        <div class="title">${a.company} · ${a.role}</div>
-        <div class="desc">搜索词: ${a.keyword}</div>
-      </div>
-    </div>`
-  ).join('');
-  document.getElementById('actionList').innerHTML = html;
-}
-renderActions();
-
-// Google Sheet Sync
-function syncToSheet() {
-  const btn = document.getElementById('syncBtn');
-  btn.disabled = true;
-  btn.textContent = '同步中...';
-  
-  // Prepare data for Google Sheet
-  const sheetData = {
-    timestamp: new Date().toISOString(),
-    today_sent: data.stats.today_sent,
-    total_sent: data.stats.linkedin_sent,
-    accepted: data.stats.linkedin_accepted,
-    accept_rate: ((data.stats.linkedin_accepted/data.stats.linkedin_sent)*100).toFixed(2),
-    tier1: tier1Count,
-    tier2: tier2Count,
-    tier3: tier3Count,
-    excluded: excludedCount,
-    contacts: data.contacts.map(c => ({
-      name: c.name,
-      company: c.company,
-      role: c.role,
-      tier: c.tier,
-      status: c.status,
-      existing: c.existing || false
-    }))
-  };
-  
-  // Save to localStorage for persistence
-  localStorage.setItem('outreachSyncData', JSON.stringify(sheetData));
-  
-  // Simulate sync (replace with actual Google Sheets API call)
-  setTimeout(() => {
-    btn.disabled = false;
-    btn.textContent = '立即同步';
-    alert('✅ 数据已同步到本地存储\n\n如需同步到Google Sheet，请配置Apps Script Web App URL');
-    console.log('Sync data:', sheetData);
-  }, 1000);
+function pct(n, total) {
+  return total === 0 ? 0 : Math.round((n / total) * 100);
 }
 
-// Auto sync on load (check if needed)
-const lastSync = localStorage.getItem('outreachLastSync');
-const today = new Date().toDateString();
-if (lastSync !== today) {
-  console.log('Daily sync needed');
+function setText(id, val) {
+  const el = document.getElementById(id);
+  if (el) el.textContent = val;
 }
 
-// ── Apps Script Web App 配置 ──────────────────────────────
-// 将此 URL 填入下方 CONFIG.webAppUrl，即可启用真实 Google Sheet 同步
-const CONFIG = {
-  webAppUrl: ''  // ← 部署 Apps Script 后填入 Web App URL（见下方说明）
-};
-
-// ── 每日建联明细 ────────────────────────────────────────
-function loadDailyContacts() {
-  const todayKey = new Date().toDateString();
-  const stored = localStorage.getItem('dailyContacts_' + todayKey);
-  document.getElementById('todayDate').textContent = todayKey;
-
-  if (stored) {
-    const records = JSON.parse(stored);
-    const todayTotal = records.length;
-    document.getElementById('todaySent2').textContent = todayTotal;
-    document.getElementById('progressText').textContent = todayTotal + ' / 100';
-    document.getElementById('progressFill').style.width = Math.min(todayTotal, 100) + '%';
-
-    if (records.length > 0) {
-      const rows = records.map(r => {
-        const tb = r.tier === 1 ? 't1' : r.tier === 2 ? 't2' : 't3';
-        const tl = r.tier === 1 ? 'T1' : r.tier === 2 ? 'T2' : 'T3';
-        return `<div class="daily-row">
-          <span class="time">${r.time || ''}</span>
-          <span class="name">${r.name}</span>
-          <span class="company">${r.company}</span>
-          <span class="tier-badge ${tb}">${tl}</span>
-          <span class="kw" title="${r.keyword || ''}">${r.keyword || ''}</span>
-        </div>`;
-      }).join('');
-      document.getElementById('dailyContacts').innerHTML =
-        `<div class="daily-stat">今日已建联 <span>${todayTotal}</span> 人</div>` + rows;
-    }
-  }
+function badgeClass(rate) {
+  if (rate === 100) return 'badge-green';
+  if (rate >= 60) return 'badge-blue';
+  if (rate >= 1) return 'badge-orange';
+  return 'badge-gray';
 }
 
-// 从今日明细追加记录（cron 任务可在 localStorage 写入后刷新看板）
-function appendDailyContact(name, company, tier, keyword) {
-  const todayKey = new Date().toDateString();
-  const key = 'dailyContacts_' + todayKey;
-  const records = JSON.parse(localStorage.getItem(key) || '[]');
-  records.push({ time: new Date().toLocaleTimeString('zh-CN', { hour12: false }), name, company, tier, keyword });
-  localStorage.setItem(key, JSON.stringify(records));
-  localStorage.setItem('today_sent', records.length);
-  localStorage.setItem('outreachLastSync', todayKey);
+function badgeLabel(rate, status) {
+  if (rate === 100) return 'BEST';
+  if (rate >= 60) return 'Good';
+  if (status && (status.toLowerCase().includes('pending') || status.toLowerCase().includes('out of'))) return 'Pending';
+  if (rate === 0 && (status && status.toLowerCase() !== 'pending')) return 'Low';
+  return '—';
 }
 
-// ── Google Sheet 同步 ─────────────────────────────────
-function syncToSheet() {
-  const btn = document.getElementById('syncBtn');
-  btn.disabled = true;
-  btn.textContent = '同步中...';
+async function loadData() {
+  const errBanner = document.getElementById('error-banner');
+  errBanner.style.display = 'none';
 
-  const todayKey = new Date().toDateString();
-  const dailyRecords = JSON.parse(localStorage.getItem('dailyContacts_' + todayKey) || '[]');
+  try {
+    const resp = await fetch('outreach_data.json?t=' + Date.now(), { cache: 'no-store' });
+    if (!resp.ok) throw new Error('HTTP ' + resp.status);
+    const data = await resp.json();
+    const contacts = data.contacts || [];
 
-  const sheetData = {
-    timestamp: new Date().toISOString(),
-    today_sent: dailyRecords.length || 0,
-    total_sent: data.stats.linkedin_sent,
-    accepted: data.stats.linkedin_accepted,
-    accept_rate: ((data.stats.linkedin_accepted/data.stats.linkedin_sent)*100).toFixed(2),
-    tier1: tier1Count,
-    tier2: tier2Count,
-    tier3: tier3Count,
-    excluded: excludedCount,
-    contacts: data.contacts.map(c => ({
-      name: c.name, company: c.company, role: c.role,
-      tier: c.tier, status: c.status, existing: c.existing || false
-    })),
-    daily_today: dailyRecords
-  };
+    lastLoadTime = new Date();
+    countdown = REFRESH_INTERVAL;
 
-  localStorage.setItem('outreachSyncData', JSON.stringify(sheetData));
+    // ── Stats ──
+    const total = contacts.length;
+    const od = contacts.filter(c => c.source === 'outreach_data');
+    const ok = contacts.filter(c => c.source === 'okki');
+    const sr = contacts.filter(c => c.source === 'salesrobot');
 
-  if (CONFIG.webAppUrl) {
-    fetch(CONFIG.webAppUrl, {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(sheetData)
-    }).then(() => {
-      btn.disabled = false; btn.textContent = '✓ 已同步';
-    }).catch(() => {
-      btn.disabled = false; btn.textContent = '同步失败';
+    const accepted = contacts.filter(c => ACCEPTED_KEYS.includes(c.status)).length;
+    const pending = contacts.filter(c => PENDING_KEYS.includes(c.status)).length;
+    const failed = contacts.filter(c => FAILED_KEYS.includes(c.status)).length;
+    const inProgress = contacts.filter(c => c.status && c.status.includes('out of')).length;
+    const odAccepted = od.filter(c => c.status === 'Accepted').length;
+    const odPending = od.filter(c => c.status === 'Pending').length;
+    const okFailed = ok.filter(c => c.status === 'Failed').length;
+    const okPending = ok.filter(c => c.status === 'Pending').length;
+
+    const designers = contacts.filter(c => classify(c) === 'designer').length;
+    const internals = contacts.filter(c => classify(c) === 'internal').length;
+    const t1 = contacts.filter(c => classify(c) === 't1').length;
+    const t2 = contacts.filter(c => classify(c) === 't2').length;
+    const t3 = contacts.filter(c => classify(c) === 't3').length;
+    const unknown = contacts.filter(c => classify(c) === 'unknown').length;
+    const other = contacts.filter(c => classify(c) === 'other').length;
+    const excludeCount = designers + internals;
+    const known = total - unknown;
+
+    // ── KPI ──
+    setText('data-version', data.stats?.version || '—');
+    setText('kpi-total', total);
+    setText('kpi-sources', `outreach_data(${od.length}) · okki(${ok.length}) · salesrobot(${sr.length})`);
+    setText('kpi-accepted', accepted);
+    setText('kpi-pending', pending + ' Pending');
+    setText('kpi-failed', failed);
+    setText('kpi-fail-detail', `okki: ${okFailed} Failed · ${okPending} Pending`);
+    setText('kpi-inprogress', inProgress);
+    setText('kpi-tier1', t1);
+    setText('footer-version', data.stats?.version || '—');
+
+    // ── Tier bar ──
+    document.getElementById('bar-t1').style.width = pct(t1, total) + '%';
+    document.getElementById('bar-t2').style.width = pct(t2, total) + '%';
+    document.getElementById('bar-t3').style.width = pct(t3, total) + '%';
+    document.getElementById('bar-exclude').style.width = pct(excludeCount, total) + '%';
+    document.getElementById('bar-unknown').style.width = pct(unknown, total) + '%';
+    setText('lbl-t1', t1);
+    setText('lbl-t2', t2);
+    setText('lbl-t3', t3);
+    setText('lbl-exclude', excludeCount);
+    setText('lbl-unknown', unknown);
+
+    // ── Keyword table (outreach_data only) ──
+    const kwMap = {};
+    od.forEach(c => {
+      const kw = c.keyword || 'unknown';
+      if (!kwMap[kw]) kwMap[kw] = { sent: 0, accepted: 0, status: c.status };
+      kwMap[kw].sent++;
+      if (c.status === 'Accepted') kwMap[kw].accepted++;
     });
+    const kwRows = Object.entries(kwMap)
+      .sort((a, b) => b[1].sent - a[1].sent)
+      .slice(0, 10)
+      .map(([kw, v]) => {
+        const rate = v.sent > 0 ? Math.round((v.accepted / v.sent) * 100) : 0;
+        const bclass = badgeClass(rate);
+        const blabel = badgeLabel(rate, v.status);
+        return `<tr><td>${kw}</td><td>${v.sent}</td><td>${v.accepted}</td><td>${rate}%</td><td><span class="badge ${bclass}">${blabel}</span></td></tr>`;
+      });
+    document.getElementById('kw-tbody').innerHTML = kwRows.join('') || '<tr><td colspan="5">No keyword data</td></tr>';
+
+    // ── Exclude table ──
+    const excludeRows = contacts
+      .filter(c => classify(c) === 'designer' || classify(c) === 'internal')
+      .slice(0, 15)
+      .map(c => {
+        const reason = classify(c) === 'designer' ? 'Designer' : 'Internal';
+        const bclass = classify(c) === 'designer' ? 'badge-red' : 'badge-orange';
+        return `<tr><td>${c.name || '—'}</td><td>${c.company || '—'}</td><td>${c.role || '—'}</td><td><span class="badge ${bclass}">${reason}</span></td></tr>`;
+      });
+    document.getElementById('exclude-tbody').innerHTML = excludeRows.join('') || '<tr><td colspan="4">None found</td></tr>';
+
+    // Update timestamps
+    const now = new Date();
+    const opts = { year: 'numeric', month: '2-digit', day: '2-digit', hour: '2-digit', minute: '2-digit', second: '2-digit', hour12: false };
+    setText('last-updated', now.toLocaleString('zh-CN', opts));
+    updateElapsed();
+
+  } catch(e) {
+    const errBanner = document.getElementById('error-banner');
+    errBanner.textContent = '⚠ Unable to load outreach_data.json: ' + e.message + ' — Make sure you are running via http://localhost:8080';
+    errBanner.style.display = 'block';
+  }
+}
+
+function updateElapsed() {
+  if (!lastLoadTime) return;
+  const diff = Math.floor((new Date() - lastLoadTime) / 1000);
+  if (diff < 60) {
+    setText('elapsed', diff + 's ago');
   } else {
-    setTimeout(() => {
-      btn.disabled = false;
-      btn.textContent = '✓ 已同步（本地）';
-      alert('✅ 数据已同步到本地存储\n\n📌 如需同步到 Google Sheet，请配置 CONFIG.webAppUrl\n（见看板源码中的 Apps Script 配置说明）');
-    }, 800);
+    setText('elapsed', Math.floor(diff / 60) + 'm ago');
   }
 }
 
-loadDailyContacts();
-</script>
-</body>
-</html>
-
+// Countdown timer
+function tick() {
+  countdown--;
+  setText('countdown', countdown);
+  updateElapsed();
+  if (countdown <= 0) {
+    loadData();
   }
 }
 
-loadDailyContacts();
+// Init
+loadData();
+intervalId = setInterval(tick, 1000);
 </script>
 </body>
 </html>

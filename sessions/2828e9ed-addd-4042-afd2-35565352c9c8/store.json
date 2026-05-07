@@ -1,9 +1,9 @@
 {
   "id": "2828e9ed-addd-4042-afd2-35565352c9c8",
-  "name": "Outreach更新",
+  "name": "Outreach数据同步",
   "status": "active",
   "createdAt": "2026-04-20T04:56:09.180Z",
-  "updatedAt": "2026-04-21T07:07:22.976Z",
+  "updatedAt": "2026-05-07T09:21:30.559Z",
   "agents": [
     {
       "id": "agent_h99vnx21",
@@ -17,9 +17,9 @@
   ],
   "summary": {
     "id": "summary_qutevd6y",
-    "title": "Outreach更新",
+    "title": "Outreach数据同步",
     "createdAt": "2026-04-20T04:56:09.180Z",
     "file": "summary_qutevd6y.md"
   },
-  "lastMessageCount": 21
+  "lastMessageCount": 17
 }

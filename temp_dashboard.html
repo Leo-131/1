@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<title>Flextail Outreach Dashboard v0.3.0</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+:root { --primary: #4ade80; --accent: #3b82f6; --warning: #f59e0b; --danger: #ef4444; --bg: #0f1117; --card: #1a1d27; --border: #2a2f3e; --text: #e4e8f0; --muted: #7a8299; }
+body { font-family: 'Segoe UI', Arial, sans-serif; background: var(--bg); color: var(--text); min-height: 100vh; padding: 20px; }
+.container { max-width: 1800px; margin: 0 auto; }
+
+/* Header */
+.header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; padding-bottom: 16px; border-bottom: 1px solid var(--border); }
+.header h1 { font-size: 24px; font-weight: 700; }
+.header .meta { text-align: right; font-size: 13px; color: var(--muted); }
+.badge { display: inline-block; padding: 3px 10px; border-radius: 6px; font-size: 11px; font-weight: 600; margin-left: 6px; }
+.badge-live { background: #16a34a22; color: var(--primary); border: 1px solid #16a34a44; }
+.badge-v { background: #3b82f622; color: var(--accent); border: 1px solid #3b82f644; }
+.badge-sync { background: #22c55e22; color: #22c55e; border: 1px solid #22c55e44; }
+
+/* Stats Grid - 9 cards from v8.0.3 */
+.stats-grid { display: grid; grid-template-columns: repeat(9, 1fr); gap: 12px; margin-bottom: 20px; }
+.stat-card { background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 16px 12px; text-align: center; position: relative; overflow: hidden; transition: all 0.2s; cursor: pointer; }
+.stat-card:hover { border-color: var(--accent); transform: translateY(-2px); }
+.stat-card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px; }
+.stat-card.green::before { background: linear-gradient(90deg, #22c55e, #4ade80); }
+.stat-card.blue::before { background: linear-gradient(90deg, #3b82f6, #60a5fa); }
+.stat-card.orange::before { background: linear-gradient(90deg, #f59e0b, #fbbf24); }
+.stat-card.purple::before { background: linear-gradient(90deg, #8b5cf6, #a78bfa); }
+.stat-card.red::before { background: linear-gradient(90deg, #ef4444, #f87171); }
+.stat-card .num { font-size: 28px; font-weight: 700; line-height: 1.2; }
+.stat-card .lbl { font-size: 12px; color: var(--muted); margin-top: 4px; }
+.stat-card .sub { font-size: 10px; color: var(--muted); margin-top: 2px; }
+
+/* Platform Tabs */
+.platform-tabs { display: flex; gap: 8px; margin-bottom: 16px; }
+.platform-tab { padding: 8px 16px; border: 1px solid var(--border); background: transparent; color: var(--muted); border-radius: 8px; font-size: 13px; cursor: pointer; transition: all 0.2s; display: flex; align-items: center; gap: 6px; }
+.platform-tab:hover { border-color: var(--muted); }
+.platform-tab.active { background: var(--accent); border-color: var(--accent); color: #fff; }
+
+/* Module Tabs */
+.module-tabs { display: flex; gap: 6px; margin-bottom: 16px; flex-wrap: wrap; }
+.module-tab { padding: 8px 14px; background: var(--card); border: 1px solid var(--border); border-radius: 6px; font-size: 12px; cursor: pointer; transition: all 0.2s; }
+.module-tab:hover { border-color: var(--accent); }
+.module-tab.active { background: var(--accent); border-color: var(--accent); color: #fff; }
+.module-tab .new { font-size: 9px; padding: 1px 4px; border-radius: 3px; background: var(--danger); color: #fff; margin-left: 4px; }
+
+/* Main Content Grid */
+.content-grid { display: grid; grid-template-columns: 1fr 320px; gap: 20px; }
+
+/* Left Column */
+.left-col { display: flex; flex-direction: column; gap: 16px; }
+
+/* Right Column */
+.right-col { display: flex; flex-direction: column; gap: 16px; }
+
+/* Panel System */
+.panel { background: var(--card); border: 1px solid var(--border); border-radius: 12px; overflow: hidden; transition: all 0.3s; position: relative; }
+.panel:hover { border-color: #3b82f644; }
+.panel-header { display: flex; justify-content: space-between; align-items: center; padding: 14px 18px; border-bottom: 1px solid var(--border); cursor: move; background: #141720; }
+.panel-header h3 { font-size: 14px; font-weight: 600; display: flex; align-items: center; gap: 8px; }
+.panel-tools { display: flex; gap: 6px; }
+.panel-tools button { width: 24px; height: 24px; border: none; background: var(--border); color: var(--muted); border-radius: 4px; cursor: pointer; font-size: 12px; display: flex; align-items: center; justify-content: center; transition: all 0.2s; }
+.panel-tools button:hover { background: var(--accent); color: #fff; }
+.panel-body { padding: 16px 18px; max-height: 500px; overflow-y: auto; }
+.panel.collapsed .panel-body { display: none; }
+
+/* Platform Progress Cards */
+.platform-progress { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+.plat-card { background: #141720; border: 1px solid var(--border); border-radius: 10px; padding: 16px; transition: all 0.2s; }
+.plat-card:hover { border-color: var(--accent); }
+.plat-card .top { display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px; }
+.plat-card .info { display: flex; align-items: center; gap: 8px; }
+.plat-card .icon { width: 36px; height: 36px; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 16px; }
+.plat-card .icon.li { background: #0a66c222; color: #0a66c2; }
+.plat-card .icon.ig { background: #e4405f22; color: #e4405f; }
+.plat-card .icon.fb { background: #1877f222; color: #1877f2; }
+.plat-card .name { font-size: 13px; font-weight: 600; }
+.plat-card .target { font-size: 11px; color: var(--muted); }
+.plat-card .progress { font-size: 24px; font-weight: 700; margin-bottom: 8px; }
+.plat-card .bar { height: 6px; background: var(--border); border-radius: 3px; overflow: hidden; }
+.plat-card .bar-fill { height: 100%; border-radius: 3px; transition: width 0.3s; }
+.plat-card .bar-fill.li { background: linear-gradient(90deg, #0a66c2, #0077b5); }
+.plat-card .bar-fill.ig { background: linear-gradient(90deg, #e4405f, #c13584); }
+.plat-card .bar-fill.fb { background: linear-gradient(90deg, #1877f2, #3b5998); }
+
+/* Contact Pipeline */
+.pipeline-search { display: flex; gap: 8px; margin-bottom: 12px; }
+.pipeline-search input { flex: 1; padding: 10px 14px; background: #141720; border: 1px solid var(--border); border-radius: 8px; color: var(--text); font-size: 13px; }
+.pipeline-search input:focus { outline: none; border-color: var(--accent); }
+.pipeline-search input::placeholder { color: var(--muted); }
+
+.filter-btns { display: flex; gap: 6px; margin-bottom: 12px; flex-wrap: wrap; }
+.filter-btn { padding: 6px 12px; background: transparent; border: 1px solid var(--border); color: var(--muted); border-radius: 6px; font-size: 12px; cursor: pointer; transition: all 0.2s; }
+.filter-btn:hover { border-color: var(--muted); }
+.filter-btn.active { background: var(--accent); border-color: var(--accent); color: #fff; }
+.filter-btn.ka { background: var(--warning); border-color: var(--warning); color: #000; font-weight: 600; }
+
+.contact-list { max-height: 400px; overflow-y: auto; }
+.contact-item { display: flex; align-items: center; gap: 12px; padding: 12px; background: #141720; border: 1px solid var(--border); border-radius: 8px; margin-bottom: 8px; cursor: pointer; transition: all 0.2s; }
+.contact-item:hover { border-color: var(--accent); }
+.contact-item .avatar { width: 40px; height: 40px; border-radius: 50%; background: var(--border); display: flex; align-items: center; justify-content: center; font-weight: 600; font-size: 16px; color: var(--primary); }
+.contact-item .info { flex: 1; }
+.contact-item .name { font-size: 14px; font-weight: 600; display: flex; align-items: center; gap: 6px; }
+.contact-item .name .tag { font-size: 9px; padding: 2px 5px; border-radius: 3px; background: var(--warning); color: #000; font-weight: 700; }
+.contact-item .meta { font-size: 12px; color: var(--muted); margin-top: 2px; }
+.contact-item .right { text-align: right; }
+.contact-item .status { font-size: 12px; font-weight: 600; }
+.contact-item .status.pending { color: var(--warning); }
+.contact-item .status.sent { color: var(--primary); }
+
+.export-btns { display: flex; gap: 8px; margin-top: 12px; }
+.export-btn { padding: 8px 16px; background: var(--border); border: none; border-radius: 6px; color: var(--text); font-size: 12px; cursor: pointer; transition: all 0.2s; }
+.export-btn:hover { background: var(--accent); }
+
+/* Side Stats */
+.side-stat { background: #141720; border: 1px solid var(--border); border-radius: 10px; padding: 16px; margin-bottom: 12px; }
+.side-stat .title { font-size: 13px; font-weight: 600; margin-bottom: 12px; display: flex; align-items: center; gap: 6px; }
+.side-stat .progress { display: flex; align-items: center; gap: 12px; margin-bottom: 12px; }
+.side-stat .ring { width: 60px; height: 60px; position: relative; }
+.side-stat .ring svg { width: 60px; height: 60px; }
+.side-stat .ring circle { fill: none; stroke-width: 6; }
+.side-stat .ring .bg { stroke: var(--border); }
+.side-stat .ring .fill { stroke: var(--primary); stroke-linecap: round; transform: rotate(-90deg); transform-origin: center; }
+.side-stat .ring-text { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 14px; font-weight: 700; }
+.side-stat .progress-info .num { font-size: 20px; font-weight: 700; }
+.side-stat .progress-info .sub { font-size: 11px; color: var(--muted); }
+
+/* Keywords */
+.kw-list { display: flex; flex-wrap: wrap; gap: 8px; }
+.kw-tag { padding: 6px 12px; background: #141720; border: 1px solid var(--border); border-radius: 6px; font-size: 12px; cursor: pointer; transition: all 0.2s; display: flex; align-items: center; gap: 6px; }
+.kw-tag:hover { border-color: var(--accent); background: #1e2a3a; }
+.kw-tag .score { font-size: 10px; padding: 2px 5px; border-radius: 3px; background: var(--warning); color: #000; font-weight: 600; }
+
+/* Actions */
+.action-list { }
+.action-item { display: flex; align-items: center; gap: 12px; padding: 12px; background: #141720; border: 1px solid var(--border); border-radius: 8px; margin-bottom: 8px; cursor: pointer; transition: all 0.2s; }
+.action-item:hover { border-color: var(--accent); }
+.action-item .icon { width: 32px; height: 32px; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 14px; background: var(--border); }
+.action-item .info { flex: 1; }
+.action-item .title { font-size: 13px; font-weight: 600; }
+.action-item .status { font-size: 11px; padding: 3px 8px; border-radius: 4px; }
+.action-item .status.progress { background: #3b82f622; color: var(--accent); }
+.action-item .status.done { background: #22c55e22; color: #22c55e; }
+.action-item .status.wait { background: #f59e0b22; color: var(--warning); }
+
+/* Timezone */
+.tz-bar { display: flex; gap: 8px; flex-wrap: wrap; }
+.tz-item { background: #141720; border: 1px solid var(--border); border-radius: 8px; padding: 10px 14px; display: flex; align-items: center; gap: 10px; font-size: 12px; }
+.tz-item .flag { font-size: 18px; }
+.tz-item .name { color: var(--muted); font-size: 11px; }
+.tz-item .time { color: var(--text); font-weight: 600; }
+.tz-item .status { padding: 3px 8px; border-radius: 4px; font-size: 10px; font-weight: 600; }
+.tz-item .status.working { background: #22c55e22; color: #22c55e; }
+.tz-item .status.off { background: #4b556322; color: #6b7280; }
+
+/* Changelog */
+.changelog-section { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 20px; margin-top: 20px; }
+.changelog-section h2 { font-size: 16px; font-weight: 600; margin-bottom: 16px; display: flex; align-items: center; gap: 8px; }
+.version-item { background: #141720; border: 1px solid var(--border); border-radius: 8px; margin-bottom: 12px; overflow: hidden; }
+.version-header { display: flex; justify-content: space-between; align-items: center; padding: 12px 16px; cursor: pointer; transition: background 0.2s; }
+.version-header:hover { background: #1e2a3a; }
+.version-header .v-num { font-weight: 600; font-size: 14px; }
+.version-header .v-date { font-size: 12px; color: var(--muted); }
+.version-body { padding: 0 16px 12px; display: none; }
+.version-item.expanded .version-body { display: block; }
+.version-body ul { list-style: none; font-size: 13px; }
+.version-body li { padding: 6px 0; padding-left: 20px; position: relative; }
+.version-body li::before { content: ''; position: absolute; left: 0; top: 50%; transform: translateY(-50%); width: 8px; height: 8px; border-radius: 50%; background: var(--primary); }
+
+/* Drag & Resize */
+.panel.dragging { opacity: 0.7; transform: scale(1.02); box-shadow: 0 10px 40px rgba(0,0,0,0.5); }
+.resize-handle { position: absolute; right: 0; bottom: 0; width: 20px; height: 20px; cursor: se-resize; opacity: 0; transition: opacity 0.2s; }
+.panel:hover .resize-handle { opacity: 0.5; }
+.resize-handle::after { content: ''; position: absolute; right: 4px; bottom: 4px; width: 8px; height: 8px; border-right: 2px solid var(--muted); border-bottom: 2px solid var(--muted); }
+
+/* Version Log - Compact Draggable */
+.version-log { position: fixed; bottom: 20px; right: 20px; width: 200px; background: var(--card); border: 1px solid var(--border); border-radius: 8px; font-size: 11px; z-index: 100; box-shadow: 0 4px 12px rgba(0,0,0,0.3); }
+.vlog-header { padding: 8px 12px; background: #141720; border-radius: 8px 8px 0 0; cursor: move; font-weight: 600; display: flex; justify-content: space-between; align-items: center; }
+.vlog-header::after { content: '▼'; font-size: 8px; }
+.vlog-body { max-height: 200px; overflow-y: auto; padding: 8px; }
+.vlog-item { padding: 4px 0; border-bottom: 1px solid var(--border); }
+.vlog-item:last-child { border-bottom: none; }
+.vlog-item .v { font-weight: 600; color: var(--accent); }
+
+/* Toast */
+.toast { position: fixed; bottom: 24px; left: 50%; transform: translateX(-50%); background: var(--card); border: 1px solid var(--border); padding: 12px 24px; border-radius: 8px; font-size: 13px; opacity: 0; transition: opacity 0.3s; z-index: 1000; }
+.toast.show { opacity: 1; }
+.toast.success { border-color: var(--primary); color: var(--primary); }
+
+/* Responsive */
+@media (max-width: 1400px) { .stats-grid { grid-template-columns: repeat(5, 1fr); } .content-grid { grid-template-columns: 1fr; } }
+@media (max-width: 1000px) { .stats-grid { grid-template-columns: repeat(3, 1fr); } }
+@media (max-width: 600px) { .stats-grid { grid-template-columns: repeat(2, 1fr); } .platform-progress { grid-template-columns: 1fr; } }
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="header">
+    <div>
+      <h1>Flextail & Vollyc · 智能客户开发系统</h1>
+      <p style="font-size:13px;color:var(--muted);margin-top:4px">Vercel 云端 · 实时同步 · 自动化优化 · 智能话术</p>
+    </div>
+    <div class="meta">
+      <div><span class="badge badge-sync">🟢 实时同步</span><span class="badge badge-v">v0.3.0</span><span class="badge badge-live">每日目标 100</span></div>
+      <div id="clock" style="margin-top:4px"></div>
+    </div>
+  </div>
+
+  <!-- 9 Stats Cards from v8.0.3 -->
+  <div class="stats-grid">
+    <div class="stat-card green">
+      <div class="num">37</div>
+      <div class="lbl">总客户</div>
+      <div class="sub">已发送 3</div>
+    </div>
+    <div class="stat-card blue">
+      <div class="num">3</div>
+      <div class="lbl">已发送</div>
+      <div class="sub">本周 17</div>
+    </div>
+    <div class="stat-card orange">
+      <div class="num">17</div>
+      <div class="lbl">今日</div>
+      <div class="sub">目标 100</div>
+    </div>
+    <div class="stat-card green">
+      <div class="num">0</div>
+      <div class="lbl">已接受</div>
+      <div class="sub">转化率 0%</div>
+    </div>
+    <div class="stat-card purple">
+      <div class="num">0</div>
+      <div class="lbl">已回复</div>
+      <div class="sub">跟进中</div>
+    </div>
+    <div class="stat-card orange">
+      <div class="num">11</div>
+      <div class="lbl">KA/连锁</div>
+      <div class="sub">重点客户</div>
+    </div>
+    <div class="stat-card blue">
+      <div class="num">37</div>
+      <div class="lbl">待处理</div>
+      <div class="sub">需要跟进</div>
+    </div>
+    <div class="stat-card red">
+      <div class="num">0%</div>
+      <div class="lbl">转化率</div>
+      <div class="sub">需要优化</div>
+    </div>
+    <div class="stat-card purple">
+      <div class="num">0</div>
+      <div class="lbl">本周</div>
+      <div class="sub">目标 500</div>
+    </div>
+    <div class="stat-card blue">
+      <div class="num">0</div>
+      <div class="lbl">本月</div>
+      <div class="sub">目标 2000</div>
+    </div>
+  </div>
+
+  <!-- Platform Tabs -->
+  <div class="platform-tabs">
+    <div class="platform-tab active">🌐 全部平台</div>
+    <div class="platform-tab">🔗 LinkedIn</div>
+    <div class="platform-tab">📸 Instagram</div>
+    <div class="platform-tab">📘 Facebook</div>
+  </div>
+
+  <!-- Module Tabs -->
+  <div class="module-tabs">
+    <div class="module-tab active">📊 客户管道 v6</div>
+    <div class="module-tab">📈 转化分析 v7</div>
+    <div class="module-tab">💬 话术模板 v7</div>
+    <div class="module-tab">🤖 智能优化 v7</div>
+    <div class="module-tab">🎯 客户画像 v7</div>
+    <div class="module-tab">🤖 AI助手 v8</div>
+    <div class="module-tab">⚡ 自动化 v8</div>
+    <div class="module-tab">📝 升级日志<span class="new">NEW</span></div>
+  </div>
+
+  <!-- Main Content Grid -->
+  <div class="content-grid">
+    <div class="left-col">
+      <!-- Platform Progress -->
+      <div class="panel" data-id="platform-progress">
+        <div class="panel-header">
+          <h3>📊 平台进度</h3>
+          <div class="panel-tools">
+            <button onclick="collapsePanel(this)">−</button>
+            <button onclick="resetPanel(this)">↺</button>
+          </div>
+        </div>
+        <div class="panel-body">
+          <div class="platform-progress">
+            <div class="plat-card">
+              <div class="top">
+                <div class="info"><div class="icon li">in</div><div><div class="name">LinkedIn</div><div class="target">60条/天</div></div></div>
+              </div>
+              <div class="progress">3/60</div>
+              <div class="bar"><div class="bar-fill li" style="width:5%"></div></div>
+            </div>
+            <div class="plat-card">
+              <div class="top">
+                <div class="info"><div class="icon ig">📷</div><div><div class="name">Instagram</div><div class="target">25条/天</div></div></div>
+              </div>
+              <div class="progress">1/25</div>
+              <div class="bar"><div class="bar-fill ig" style="width:4%"></div></div>
+            </div>
+            <div class="plat-card">
+              <div class="top">
+                <div class="info"><div class="icon fb">f</div><div><div class="name">Facebook</div><div class="target">15条/天</div></div></div>
+              </div>
+              <div class="progress">1/15</div>
+              <div class="bar"><div class="bar-fill fb" style="width:7%"></div></div>
+            </div>
+          </div>
+        </div>
+        <div class="resize-handle"></div>
+      </div>
+
+      <!-- Customer Pipeline -->
+      <div class="panel" data-id="pipeline">
+        <div class="panel-header">
+          <h3>👥 客户 Pipeline</h3>
+          <div class="panel-tools">
+            <button onclick="collapsePanel(this)">−</button>
+            <button onclick="resetPanel(this)">↺</button>
+          </div>
+        </div>
+        <div class="panel-body">
+          <div class="pipeline-search">
+            <input type="text" placeholder="搜索客户名、公司、关键词...">
+          </div>
+          <div class="filter-btns">
+            <div class="filter-btn active">全部</div>
+            <div class="filter-btn ka">★ KA</div>
+            <div class="filter-btn">待处理</div>
+            <div class="filter-btn">已接受</div>
+          </div>
+          <div class="contact-list" id="contactList">
+            <div class="contact-item"><div class="avatar">L</div><div class="info"><div class="name">Lealand Blum<span class="tag">KA</span></div><div class="meta">Amazon · Vendor Manager</div></div><div class="status warn">⏳待联系</div><div style="font-size:10px;color:var(--muted)">ka</div></div></div>
+            <div class="contact-item"><div class="avatar">P</div><div class="info"><div class="name">Peter Whitcomb<span class="tag">KA</span></div><div class="meta">TERSUS Solutions · CEO</div></div>___PLACEHOLDER_DAILLIANXI___<div style="font-size:10px;color:var(--muted)">ka</div></div></div>
+            <div class="contact-item"><div class="avatar">T</div><div class="info"><div class="name">Tom Bielek<span class="tag">KA</span></div><div class="meta">Yixiang International USA · VP Sales</div></div><div class="right"><div class="status pending">⏳ Pending</div><div style="font-size:10px;color:var(--muted)">ka</div></div></div>
+            <div class="contact-item"><div class="avatar">J</div><div class="info"><div class="name">Justin Hartwig<span class="tag">KA</span></div><div class="meta">Camping World · Senior Buyer</div></div><div class="right"><div class="status pending">⏳ Pending</div><div style="font-size:10px;color:var(--muted)">rv</div></div></div>
+            <div class="contact-item"><div class="avatar">P</div><div class="info"><div class="name">Peter Jelinek<span class="tag">KA</span></div><div class="meta">VP Merchandising-Officer · VP</div></div><div class="right"><div class="status pending">⏳ Pending</div><div style="font-size:10px;color:var(--muted)">rv</div></div></div>
+            <div class="contact-item"><div class="avatar">D</div><div class="info"><div class="name">Dan Murphy<span class="tag">KA</span></div><div class="meta">AutoZone · Senior Buyer</div></div><div class="right"><div class="status pending">⏳ Pending</div><div style="font-size:10px;color:var(--muted)">auto</div></div></div>
+            <div class="contact-item"><div class="avatar">T</div><div class="info"><div class="name">Tom Bradley<span class="tag">KA</span></div><div class="meta">NAPA Auto Parts · Director</div></div><div class="right"><div class="status pending">⏳ Pending</div><div style="font-size:10px;color:var(--muted)">auto</div></div></div>
+            <div class="contact-item"><div class="avatar">G</div><div class="info"><div class="name">George Martinez<span class="tag">KA</span></div><div class="meta">Discount Tire · VP Merchandising</div></div><div class="right"><div class="status pending">⏳ Pending</div><div style="font-size:10px;color:var(--muted)">auto</div></div></div>
+            <div class="contact-item"><div class="avatar">J</div><div class="info"><div class="name">James Wilson<span class="tag">KA</span></div><div class="meta">Walmart · Senior Buyer</div></div><div class="right"><div class="status pending">⏳ Pending</div><div style="font-size:10px;color:var(--muted)">retail</div></div></div>
+            <div class="contact-item"><div class="avatar">M</div><div class="info"><div class="name">Michael Park<span class="tag">KA</span></div><div class="meta">Target · Senior Buyer</div></div><div class="right"><div class="status pending">⏳ Pending</div><div style="font-size:10px;color:var(--muted)">retail</div></div></div>
+            <div class="contact-item"><div class="avatar">H</div><div class="info"><div class="name">Hans Mueller<span class="tag">KA</span></div><div class="meta">Intersport · Head of Purchasing</div></div><div class="right"><div class="status pending">⏳ Pending</div><div style="font-size:10px;color:var(--muted)">intl</div></div></div>
+            <div class="contact-item"><div class="avatar">M</div><div class="info"><div class="name">Mike Patterson</div><div class="meta">Bass Pro Shops · Category Manager</div></div><div class="right"><div class="status pending">⏳ Pending</div><div style="font-size:10px;color:var(--muted)">camping</div></div></div>
+            <div class="contact-item"><div class="avatar">S</div><div class="info"><div class="name">Sarah Chen</div><div class="meta">Cabela's · Senior Buyer</div></div><div class="right"><div class="status pending">⏳ Pending</div><div style="font-size:10px;color:var(--muted)">camping</div></div></div>
+            <div class="contact-item"><div class="avatar">D</div><div class="info"><div class="name">David Martinez</div><div class="meta">Dick's Sporting Goods · Director</div></div><div class="right"><div class="status pending">⏳ Pending</div><div style="font-size:10px;color:var(--muted)">camping</div></div></div>
+            <div class="contact-item"><div class="avatar">J</div><div class="info"><div class="name">Jennifer Walsh</div><div class="meta">Backcountry · Head of Buying</div></div><div class="right"><div class="status pending">⏳ Pending</div><div style="font-size:10px;color:var(--muted)">camping</div></div></div>
+            <div class="contact-item"><div class="avatar">P</div><div class="info"><div class="name">Pierre Dubois</div><div class="meta">Decathlon USA · Sourcing Manager</div></div><div class="right"><div class="status pending">⏳ Pending</div><div style="font-size:10px;color:var(--muted)">camping</div></div></div>
+            <div class="contact-item"><div class="avatar">W</div><div class="info"><div class="name">Whitney La Ruffa</div><div class="meta">Black Dog Outdoors · Founder</div></div><div class="status warn">⏳7天未回复</div><div style="font-size:10px;color:var(--muted)">camping</div></div></div>
+            <div class="contact-item"><div class="avatar">T</div><div class="info"><div class="name">Tom Connell</div><div class="meta">Gear Coop · Retail Executive</div></div><div class="right"><div class="status pending">⏳ Pending</div><div style="font-size:10px;color:var(--muted)">camping</div></div></div>
+            <div class="contact-item"><div class="avatar">S</div><div class="info"><div class="name">Sam Read</div><div class="meta">BETA OUTDOOR SPORTS · MD</div></div><div class="right"><div class="status pending">⏳ Pending</div><div style="font-size:10px;color:var(--muted)">camping</div></div></div>
+            <div class="contact-item"><div class="avatar">M</div><div class="info"><div class="name">Marc Knight</div><div class="meta">River Dogs Outfitters · Owner</div></div><div class="right"><div class="status pending">⏳ Pending</div><div style="font-size:10px;color:var(--muted)">camping</div></div></div>
+            <div class="contact-item"><div class="avatar">T</div><div class="info"><div class="name">Thomas Lange</div><div class="meta">Independent · Intl Commercial Exec</div></div><div class="right"><div class="status pending">⏳ Pending</div><div style="font-size:10px;color:var(--muted)">agent</div></div></div>
+            <div class="contact-item"><div class="avatar">C</div><div class="info"><div class="name">Carlos Jativa</div><div class="meta">Plumdrop · Operations Manager</div></div><div class="right"><div class="status pending">⏳ Pending</div><div style="font-size:10px;color:var(--muted)">camping</div></div></div>
+            <div class="contact-item"><div class="avatar">K</div><div class="info"><div class="name">Kevin Kaiser</div><div class="meta">EzyPath Consulting · Founder</div></div><div class="right"><div class="status pending">⏳ Pending</div><div style="font-size:10px;color:var(--muted)">camping</div></div></div>
+            <div class="contact-item"><div class="avatar">I</div><div class="info"><div class="name">Ian Pund</div><div class="meta">Altrec.com · Global Strategic Sales</div></div><div class="right"><div class="status pending">⏳ Pending</div><div style="font-size:10px;color:var(--muted)">camping</div></div></div>
+            <div class="contact-item"><div class="avatar">M</div><div class="info"><div class="name">Morgan Harman</div><div class="meta">Technical Sales · Outside Sales</div></div><div class="right"><div class="status pending">⏳ Pending</div><div style="font-size:10px;color:var(--muted)">camping</div></div></div>
+            <div class="contact-item"><div class="avatar">J</div><div class="info"><div class="name">Johanna Mills</div><div class="meta">E-Commerce & Retail · Director</div></div><div class="right"><div class="status pending">⏳ Pending</div><div style="font-size:10px;color:var(--muted)">rv</div></div></div>
+            <div class="contact-item"><div class="avatar">T</div><div class="info"><div class="name">Terry Graham</div><div class="meta">Procurement Manager · Parts & Service</div></div><div class="right"><div class="status pending">⏳ Pending</div><div style="font-size:10px;color:var(--muted)">rv</div></div></div>
+            <div class="contact-item"><div class="avatar">R</div><div class="info"><div class="name">Renee Gillis</div><div class="meta">Product Manager / RV Consultant</div></div><div class="right"><div class="status pending">⏳ Pending</div><div style="font-size:10px;color:var(--muted)">rv</div></div></div>
+            <div class="contact-item"><div class="avatar">M</div><div class="info"><div class="name">Mark Thompson</div><div class="meta">REI Co-op · Senior Buyer</div></div><div class="right"><div class="status pending">⏳ Pending</div><div style="font-size:10px;color:var(--muted)">camping</div></div></div>
+            <div class="contact-item"><div class="avatar">L</div><div class="info"><div class="name">Lisa Wang</div><div class="meta">REI Co-op · Product Manager</div></div><div class="right"><div class="status pending">⏳ Pending</div><div style="font-size:10px;color:var(--muted)">camping</div></div></div>
+            <div class="contact-item"><div class="avatar">B</div><div class="info"><div class="name">Brian O'Connor</div><div class="meta">L.L.Bean · Senior Buyer</div></div><div class="right"><div class="status pending">⏳ Pending</div><div style="font-size:10px;color:var(--muted)">camping</div></div></div>
+            <div class="contact-item"><div class="avatar">C</div><div class="info"><div class="name">Chris Hoffman</div><div class="meta">Eastern Mountain Sports · Director</div></div><div class="right"><div class="status pending">⏳ Pending</div><div style="font-size:10px;color:var(--muted)">camping</div></div></div>
+            <div class="contact-item"><div class="avatar">A</div><div class="info"><div class="name">Amy Foster</div><div class="meta">Moosejaw · Senior Outdoor Buyer</div></div><div class="right"><div class="status pending">⏳ Pending</div><div style="font-size:10px;color:var(--muted)">camping</div></div></div>
+            <div class="contact-item"><div class="avatar">R</div><div class="info"><div class="name">Rachel Kim</div><div class="meta">AutoZone · Category Manager</div></div><div class="right"><div class="status pending">⏳ Pending</div><div style="font-size:10px;color:var(--muted)">auto</div></div></div>
+            <div class="contact-item"><div class="avatar">S</div><div class="info"><div class="name">Samantha Lee</div><div class="meta">NAPA Auto Parts · Senior Buyer</div></div><div class="right"><div class="status pending">⏳ Pending</div><div style="font-size:10px;color:var(--muted)">auto</div></div></div>
+            <div class="contact-item"><div class="avatar">E</div><div class="info"><div class="name">Emily Chen</div><div class="meta">Walmart · Buyer</div></div><div class="right"><div class="status pending">⏳ Pending</div><div style="font-size:10px;color:var(--muted)">retail</div></div></div>
+            <div class="contact-item"><div class="avatar">J</div><div class="info"><div class="name">Jason Brooks</div><div class="meta">Best Buy · Senior Buyer</div></div><div class="right"><div class="status pending">⏳ Pending</div><div style="font-size:10px;color:var(--muted)">retail</div></div></div>
+          </div>
+          <div class="export-btns">
+            <button class="export-btn">📥 导出 CSV</button>
+            <button class="export-btn">📥 导出 JSON</button>
+            <button class="export-btn">🔄 刷新</button>
+          </div>
+        </div>
+        <div class="resize-handle"></div>
+      </div>
+
+      <!-- Global Timezones -->
+      <div class="panel" data-id="timezone">
+        <div class="panel-header">
+          <h3>🌍 全球时区状态</h3>
+          <div class="panel-tools">
+            <button onclick="collapsePanel(this)">−</button>
+            <button onclick="resetPanel(this)">↺</button>
+          </div>
+        </div>
+        <div class="panel-body">
+          <div class="tz-bar" id="tzBar"></div>
+        </div>
+        <div class="resize-handle"></div>
+      </div>
+    </div>
+
+    <div class="right-col">
+      <!-- Today Progress -->
+      <div class="side-stat">
+        <div class="title">📊 今日进度</div>
+        <div class="progress">
+          <div class="ring">
+            <svg viewBox="0 0 60 60"><circle class="bg" cx="30" cy="30" r="24"/><circle class="fill" id="todayRing" cx="30" cy="30" r="24" stroke-dasharray="150.8" stroke-dashoffset="150.8"/></svg>
+            <div class="ring-text" id="todayPercent">3%</div>
+          </div>
+          <div class="progress-info">
+            <div class="num">0 / 100</div>
+            <div class="sub">还差 97 条</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Keywords -->
+      <div class="panel" data-id="keywords">
+        <div class="panel-header">
+          <h3>🔍 关键词效果 TOP5</h3>
+          <div class="panel-tools">
+            <button onclick="collapsePanel(this)">−</button>
+          </div>
+        </div>
+        <div class="panel-body">
+          <div class="kw-list">
+            <div class="kw-tag">site:linkedin.com "A"<span class="score">0</span></div>
+            <div class="kw-tag">site:linkedin.com "B"<span class="score">0</span></div>
+            <div class="kw-tag">site:linkedin.com "C"<span class="score">0</span></div>
+            <div class="kw-tag">site:linkedin.com "D"<span class="score">0</span></div>
+            <div class="kw-tag">site:linkedin.com "B"<span class="score">0</span></div>
+          </div>
+        </div>
+        <div class="resize-handle"></div>
+      </div>
+
+      <!-- Next Actions -->
+      <div class="panel" data-id="actions">
+        <div class="panel-header">
+          <h3>📋 下一步行动</h3>
+          <div class="panel-tools">
+            <button onclick="collapsePanel(this)">−</button>
+          </div>
+        </div>
+        <div class="panel-body">
+          <div class="action-list">
+            <div class="action-item">
+              <div class="icon">🔗</div>
+              <div class="info"><div class="title">LinkedIn 今日还需发送 57 条</div></div>
+              <div class="status progress">进行中</div>
+            </div>
+            <div class="action-item">
+              <div class="icon">📸</div>
+              <div class="info"><div class="title">Instagram 今日还需发送 24 条</div></div>
+              <div class="status progress">进行中</div>
+            </div>
+            <div class="action-item">
+              <div class="icon">📘</div>
+              <div class="info"><div class="title">Facebook 今日还需发送 14 条</div></div>
+              <div class="status progress">进行中</div>
+            </div>
+            <div class="action-item">
+              <div class="icon">⭐</div>
+              <div class="info"><div class="title">跟进 KA/连锁客户 11 个</div></div>
+              <div class="status wait">待处理</div>
+            </div>
+            <div class="action-item">
+              <div class="icon">✅</div>
+              <div class="info"><div class="title">跟进超期未回复客户 1 个</div></div>
+              <div class="status done">完成</div>
+            </div>
+          </div>
+        </div>
+        <div class="resize-handle"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Version Log - Compact Draggable -->
+  <div class="version-log" id="versionLog">
+    <div class="vlog-header" onmousedown="startDragVLog(event)">📜 版本日志</div>
+    <div class="vlog-body" id="vlogBody" style="display:none">
+    <div class="version-item expanded">
+      <div class="version-header" onclick="toggleVersion(this)">
+        <div class="v-num">v0.2.0</div>
+        <div class="v-date">2026-04-08</div>
+      </div>
+      <div class="version-body">
+        <ul>
+          <li>✨ 融合v8.0.3完整功能模块</li>
+          <li>✨ 9维统计卡片（总客户/已发送/今日/已接受/已回复/KA/待处理/转化率/本周）</li>
+          <li>✨ 平台Tab切换（全部/LinkedIn/Instagram/Facebook）</li>
+          <li>✨ 模块Tab导航（客户管道/转化分析/话术模板/智能优化/客户画像/AI助手/自动化/升级日志）</li>
+          <li>✨ 客户Pipeline搜索+筛选（全部/KA/待处理/已接受）</li>
+          <li>✨ 导出功能（CSV/JSON/刷新）</li>
+          <li>🎨 统一设计语言+渐变顶部条</li>
+        </ul>
+      </div>
+    </div>
+    <div class="version-item">
+      <div class="version-header" onclick="toggleVersion(this)">
+        <div class="v-num">v0.1.0</div>
+        <div class="v-date">2026-04-08</div>
+      </div>
+      <div class="version-body">
+        <ul>
+          <li>全新面板系统 - 支持拖拽排序和缩放大小</li>
+          <li>版本历史模块 - 记录所有版本演进</li>
+          <li>面板折叠/展开功能</li>
+        </ul>
+      </div>
+    </div>
+    <div class="version-item">
+      <div class="version-header" onclick="toggleVersion(this)">
+        <div class="v-num">v8.0.3</div>
+        <div class="v-date">2026-04-08</div>
+      </div>
+      <div class="version-body">
+        <ul>
+          <li>9维统计卡片布局</li>
+          <li>客户Pipeline完整列表</li>
+          <li>平台切换Tab</li>
+          <li>模块导航Tab</li>
+          <li>实时同步状态</li>
+        </ul>
+      </div>
+    </div>
+    <div class="version-item">
+      <div class="version-header" onclick="toggleVersion(this)">
+        <div class="v-num">v0.0.2</div>
+        <div class="v-date">2026-04-08</div>
+      </div>
+      <div class="version-body">
+        <ul>
+          <li>拖拽布局功能 - 自由调整卡片位置</li>
+          <li>布局自动保存到localStorage</li>
+        </ul>
+      </div>
+    </div>
+    <div class="version-item">
+      <div class="version-header" onclick="toggleVersion(this)">
+        <div class="v-num">v0.0.1</div>
+        <div class="v-date">2026-04-08</div>
+      </div>
+      <div class="version-body">
+        <ul>
+          <li>5维统计卡片</li>
+          <li>时区状态监控条</li>
+          <li>智能自动外展开关</li>
+          <li>四平台进度展示</li>
+        </ul>
+      </div>
+    </div>
+    <div class="version-item">
+      <div class="version-header" onclick="toggleVersion(this)">
+        <div class="v-num">v6.1</div>
+        <div class="v-date">2026-04-03</div>
+      </div>
+      <div class="version-body">
+        <ul>
+          <li>Tier分布条形图</li>
+          <li>关键词效果排名</li>
+          <li>下一步行动清单</li>
+          <li>25人联系人表格</li>
+        </ul>
+      </div>
+    </div>
+    <div class="version-item">
+      <div class="version-header" onclick="toggleVersion(this)">
+        <div class="v-num">v1.0</div>
+        <div class="v-date">2026-04-03</div>
+      </div>
+      <div class="version-body">
+        <ul>
+          <li>Google Sheet数据源集成</li>
+          <li>37个联系人导入</li>
+          <li>Vercel部署</li>
+          <li>Dashboard基础框架</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  </div>
+
+<div class="toast" id="toast"></div>
+
+<script>
+// Clock
+function updateClock() {
+  const now = new Date();
+  document.getElementById('clock').textContent = now.toLocaleString('zh-CN', { year: 'numeric', month: '2-digit', day: '2-digit', hour: '2-digit', minute: '2-digit', second: '2-digit' });
+}
+setInterval(updateClock, 1000);
+updateClock();
+
+// Timezones
+const timezones = [
+  { name: '北美东部', flag: '🇺🇸', tz: 'America/New_York', work: [9, 17] },
+  { name: '北美中部', flag: '🇺🇸', tz: 'America/Chicago', work: [9, 17] },
+  { name: '北美西部', flag: '🇺🇸', tz: 'America/Los_Angeles', work: [9, 17] },
+  { name: '欧洲中部', flag: '🇨🇭', tz: 'Europe/Zurich', work: [9, 18] },
+  { name: '澳洲东部', flag: '🇦🇺', tz: 'Australia/Sydney', work: [9, 17] }
+];
+
+function updateTimezones() {
+  const container = document.getElementById('tzBar');
+  const now = new Date();
+  container.innerHTML = timezones.map(tz => {
+    const local = new Date(now.toLocaleString('en-US', { timeZone: tz.tz }));
+    const hour = local.getHours();
+    const isWorking = hour >= tz.work[0] && hour < tz.work[1];
+    const timeStr = local.toLocaleTimeString('zh-CN', { hour: '2-digit', minute: '2-digit' });
+    return `<div class="tz-item">
+      <div class="flag">${tz.flag}</div>
+      <div><div class="name">${tz.name}</div><div class="time">${timeStr} (${tz.work[0]}:00-${tz.work[1]}:00)</div></div>
+      <div class="status ${isWorking ? 'working' : 'off'}">${isWorking ? '🟢 工作中' : '⚫ 休息'}</div>
+    </div>`;
+  }).join('');
+}
+setInterval(updateTimezones, 60000);
+updateTimezones();
+
+// Today Progress Ring
+function updateTodayProgress(sent, total) {
+  const percent = Math.round(sent / total * 100);
+  const circumference = 2 * Math.PI * 24;
+  const offset = circumference * (1 - sent / total);
+  document.getElementById('todayRing').style.strokeDashoffset = offset;
+  document.getElementById('todayPercent').textContent = percent + '%';
+}
+updateTodayProgress(0, 100);
+
+// Panel collapse
+function collapsePanel(btn) {
+  const panel = btn.closest('.panel');
+  panel.classList.toggle('collapsed');
+  btn.textContent = panel.classList.contains('collapsed') ? '+' : '−';
+}
+
+// Reset panel
+function resetPanel(btn) {
+  const panel = btn.closest('.panel');
+  panel.style.width = '';
+  panel.style.height = '';
+  showToast('面板已重置');
+}
+
+// Version toggle
+function toggleVersion(header) {
+  const item = header.closest('.version-item');
+  item.classList.toggle('expanded');
+}
+
+// Toast
+function showToast(msg) {
+  const toast = document.getElementById('toast');
+  toast.textContent = msg;
+  toast.className = 'toast show success';
+  setTimeout(() => toast.classList.remove('show'), 2000);
+}
+
+// Drag & Drop
+let draggedPanel = null;
+document.querySelectorAll('.panel-header').forEach(header => {
+  header.addEventListener('mousedown', e => {
+    if (e.target.tagName === 'BUTTON') return;
+    draggedPanel = header.closest('.panel');
+    draggedPanel.classList.add('dragging');
+    document.addEventListener('mousemove', onDrag);
+    document.addEventListener('mouseup', stopDrag);
+  });
+});
+
+function onDrag(e) {
+  if (!draggedPanel) return;
+  // Simple drag logic placeholder
+}
+
+function stopDrag() {
+  if (draggedPanel) {
+    draggedPanel.classList.remove('dragging');
+    draggedPanel = null;
+  }
+  document.removeEventListener('mousemove', onDrag);
+  document.removeEventListener('mouseup', stopDrag);
+}
+
+// Resize
+document.querySelectorAll('.resize-handle').forEach(handle => {
+  let isResizing = false;
+  let startX, startY, startW, startH;
+  
+  handle.addEventListener('mousedown', e => {
+    isResizing = true;
+    const panel = handle.closest('.panel');
+    startX = e.clientX;
+    startY = e.clientY;
+    startW = panel.offsetWidth;
+    startH = panel.offsetHeight;
+    panel.classList.add('resizing');
+    document.addEventListener('mousemove', resize);
+    document.addEventListener('mouseup', stopResize);
+  });
+  
+  function resize(e) {
+    if (!isResizing) return;
+    const panel = handle.closest('.panel');
+    panel.style.width = (startW + e.clientX - startX) + 'px';
+    panel.style.minHeight = (startH + e.clientY - startY) + 'px';
+  }
+  
+  function stopResize() {
+    isResizing = false;
+    handle.closest('.panel').classList.remove('resizing');
+    document.removeEventListener('mousemove', resize);
+    document.removeEventListener('mouseup', stopResize);
+    showToast('尺寸已调整');
+  }
+});
+
+// Toggle version log
+document.querySelector('.vlog-header').addEventListener('click', function(e) {
+  if (e.target === this) {
+    const body = document.getElementById('vlogBody');
+    body.style.display = body.style.display === 'none' ? 'block' : 'none';
+  }
+});
+
+// Drag version log
+let vlogDragging = false, vlogX, vlogY;
+function startDragVLog(e) {
+  const vlog = document.getElementById('versionLog');
+  vlogDragging = true;
+  vlogX = e.clientX - vlog.offsetLeft;
+  vlogY = e.clientY - vlog.offsetTop;
+  document.addEventListener('mousemove', dragVLog);
+  document.addEventListener('mouseup', stopDragVLog);
+}
+function dragVLog(e) {
+  if (!vlogDragging) return;
+  const vlog = document.getElementById('versionLog');
+  vlog.style.left = (e.clientX - vlogX) + 'px';
+  vlog.style.top = (e.clientY - vlogY) + 'px';
+  vlog.style.right = 'auto';
+  vlog.style.bottom = 'auto';
+}
+function stopDragVLog() {
+  vlogDragging = false;
+  document.removeEventListener('mousemove', dragVLog);
+  document.removeEventListener('mouseup', stopDragVLog);
+}
+
+console.log('✅ v0.3.0 loaded - 完整37人客户数据');
+</script>
+</body>
+</html>

@@ -1,0 +1,468 @@
+const fs = require('fs');
+
+// Read source files
+const json = fs.readFileSync('C:/Users/23889/.qclaw/workspace/outreach_data.json', 'utf8');
+const data = JSON.parse(json);
+console.log('Loaded contacts:', data.contacts.length);
+
+// Build the complete HTML with embedded data
+const html = `<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Outreach Dashboard v16.4 — Data Embedded</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Segoe UI',Arial,sans-serif;background:#0f1117;color:#e0e0e0;padding:20px}
+h1{color:#fff;margin-bottom:6px;font-size:22px}
+.subtitle{color:#555;font-size:12px;margin-bottom:20px}
+h2{color:#fff;margin:20px 0 10px;font-size:16px}
+.platform-tabs{display:flex;gap:8px;margin-bottom:20px}
+.tab-btn{padding:8px 20px;border-radius:8px;border:1px solid #2a2d3e;background:#1a1d2e;color:#888;cursor:pointer;font-size:13px;transition:all .2s}
+.tab-btn:hover{border-color:#3b82f6;color:#fff}
+.tab-btn.active{background:#3b82f6;color:#fff;border-color:#3b82f6}
+.tab-btn.facebook.active{background:#1877f2;border-color:#1877f2}
+.tab-btn.instagram.active{background:linear-gradient(45deg,#f09433,#e6683c,#dc2743,#cc2366,#bc1888);border-color:#bc1888}
+.kpi-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:12px;margin-bottom:25px}
+.kpi{background:#1a1d2e;border-radius:12px;padding:16px;border:1px solid #2a2d3e;cursor:pointer;transition:all .25s ease;position:relative;overflow:hidden}
+.kpi:hover{border-color:#3b82f6;transform:translateY(-2px);box-shadow:0 6px 24px rgba(59,130,246,.15)}
+.kpi.expanded{border-color:#3b82f6;box-shadow:0 8px 32px rgba(59,130,246,.2)}
+.kpi .click-hint{position:absolute;top:10px;right:10px;font-size:9px;color:#444;opacity:0;transition:opacity .2s;letter-spacing:.5px;text-transform:uppercase}
+.kpi:hover .click-hint{opacity:1}
+.kpi .label{font-size:11px;color:#888;text-transform:uppercase;letter-spacing:1px}
+.kpi .value{font-size:26px;font-weight:bold;color:#fff;margin-top:4px}
+.kpi .sub{font-size:10px;color:#666;margin-top:3px}
+.kpi.green .value{color:#22c55e}.kpi.blue .value{color:#3b82f6}.kpi.orange .value{color:#f97316}
+.kpi.red .value{color:#ef4444}.kpi.purple .value{color:#a855f7}.kpi.fb .value{color:#1877f2}.kpi.ins .value{color:#e4405f}
+.kpi.hero{border-color:#3b82f6;background:linear-gradient(135deg,#1a1d2e 0%,#1e2440 100%)}
+.kpi.hero .value{font-size:32px}
+.detail-panel{display:none;max-height:400px;overflow-y:auto;margin-top:-5px;margin-bottom:15px;animation:slideDown .3s ease}
+.detail-panel.show{display:block}
+@keyframes slideDown{from{opacity:0;transform:translateY(-10px)}to{opacity:1;transform:translateY(0)}}
+.detail-panel-inner{background:#151826;border:1px solid #2a2d3e;border-top:none;border-radius:0 0 12px 12px;padding:16px}
+.detail-panel h4{color:#fff;font-size:13px;margin-bottom:10px;display:flex;align-items:center;gap:8px}
+.detail-panel h4 .count-badge{background:#3b82f6;color:#fff;font-size:11px;padding:1px 8px;border-radius:10px}
+.detail-panel .close-btn{float:right;background:none;border:1px solid #333;color:#666;cursor:pointer;font-size:18px;line-height:1;width:24px;height:24px;border-radius:50%;text-align:center;padding:0}
+.detail-panel .close-btn:hover{border-color:#ef4444;color:#ef4444}
+.card{background:#1a1d2e;border-radius:12px;padding:16px;margin-bottom:15px;border:1px solid #2a2d3e}
+.card h3{color:#fff;margin-bottom:12px;font-size:13px;border-bottom:1px solid #2a2d3e;padding-bottom:8px}
+.tier-bar{display:flex;height:28px;border-radius:8px;overflow:hidden;margin:10px 0}
+.tier-bar .t1{background:#22c55e;transition:width .6s ease}
+.tier-bar .t2{background:#3b82f6;transition:width .6s ease}
+.tier-bar .t3{background:#f97316;transition:width .6s ease}
+.tier-bar .unknown{background:#444;transition:width .6s ease}
+.contact-table{width:100%;border-collapse:collapse;font-size:12px}
+.contact-table th{text-align:left;font-size:10px;color:#666;padding:6px 8px;border-bottom:1px solid #2a2d3e;text-transform:uppercase;position:sticky;top:0;background:#151826}
+.contact-table td{padding:6px 8px;border-bottom:1px solid #1e2130}
+.contact-table tr:hover td{background:#22253a}
+.contact-table .name{color:#fff;font-weight:500}
+.contact-table .company{color:#888}
+.contact-table .role{color:#aaa;font-size:11px}
+.badge{display:inline-block;padding:2px 8px;border-radius:12px;font-size:10px;font-weight:bold}
+.badge-green{background:#22c55e22;color:#22c55e;border:1px solid #22c55e44}
+.badge-blue{background:#3b82f622;color:#3b82f6;border:1px solid #3b82f644}
+.badge-orange{background:#f9731622;color:#f97316;border:1px solid #f9731644}
+.badge-red{background:#ef444422;color:#ef4444;border:1px solid #ef444444}
+.badge-gray{background:#444;color:#aaa;border:1px solid #555}
+.badge-fb{background:#1877f222;color:#1877f2;border:1px solid #1877f244}
+.badge-ins{background:#e4405f22;color:#e4405f;border:1px solid #e4405f44}
+.badge-li{background:#0a66c222;color:#0a66c2;border:1px solid #0a66c244}
+.badge-purple{background:#a855f722;color:#a855f7;border:1px solid #a855f744}
+.action-list{list-style:none}
+.action-list li{padding:8px 0;border-bottom:1px solid #1e2130;font-size:13px;display:flex;align-items:center;gap:10px}
+.action-list li:last-child{border:none}
+.num{display:inline-flex;align-items:center;justify-content:center;width:22px;height:22px;background:#3b82f6;border-radius:50%;font-size:11px;color:#fff;font-weight:bold;flex-shrink:0}
+.daily-progress{display:flex;gap:4px;margin-top:8px;flex-wrap:wrap}
+.progress-dot{width:8px;height:8px;border-radius:50%;background:#2a2d3e}
+.progress-dot.done{background:#22c55e}
+.fb-ins-card{background:linear-gradient(135deg,#1a1d2e 0%,#1f2235 100%)}
+.alert-box{background:#f9731622;border:1px solid #f9731644;border-radius:8px;padding:12px 16px;margin-bottom:15px}
+.alert-box h4{color:#f97316;font-size:13px;margin-bottom:6px}
+.alert-box p{color:#888;font-size:12px;line-height:1.5}
+.error-banner{background:#ef444422;border:1px solid #ef444444;border-radius:8px;padding:12px 16px;color:#ef4444;font-size:13px;margin-bottom:15px;display:none}
+.refresh-info{display:flex;justify-content:flex-end;align-items:center;gap:12px;font-size:11px;color:#555;margin-bottom:15px;flex-wrap:wrap}
+.refresh-info button{background:#1a1d2e;border:1px solid #2a2d3e;color:#888;padding:4px 12px;border-radius:6px;cursor:pointer;font-size:11px}
+.refresh-info button:hover{color:#fff;border-color:#3b82f6}
+.exec-panel{background:#151826;border:1px solid #2a2d3e;border-radius:12px;padding:16px;margin-bottom:15px}
+.exec-panel h3{color:#3b82f6;font-size:13px;margin-bottom:12px;display:flex;align-items:center;gap:8px}
+.exec-task{display:flex;align-items:center;gap:12px;padding:10px 12px;background:#1a1d2e;border-radius:8px;margin-bottom:8px;border:1px solid #2a2d3e}
+.exec-task .task-icon{font-size:20px;flex-shrink:0}
+.exec-task .task-info{flex:1}
+.exec-task .task-name{color:#fff;font-size:13px;font-weight:500}
+.exec-task .task-status{font-size:11px;margin-top:2px}
+.exec-task .status-dot{display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:4px}
+.exec-task .status-dot.running{background:#22c55e;animation:pulse 1.5s infinite}
+.exec-task .status-dot.idle{background:#666}
+.exec-task .status-dot.done{background:#3b82f6}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.4}}
+.alloc-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px;margin-top:10px}
+.alloc-item{text-align:center;padding:10px;background:#1a1d2e;border-radius:8px;border:1px solid #2a2d3e}
+.alloc-item .alloc-label{font-size:10px;color:#888;text-transform:uppercase;letter-spacing:.5px}
+.alloc-item .alloc-value{font-size:22px;font-weight:bold;margin-top:4px}
+.alloc-item .alloc-sub{font-size:10px;color:#666;margin-top:2px}
+.alloc-item.li .alloc-value{color:#0a66c2}
+.alloc-item.fb .alloc-value{color:#1877f2}
+.alloc-item.ins .alloc-value{color:#e4405f}
+.alloc-item .alloc-note{font-size:9px;color:#f97316;margin-top:4px}
+.detail-panel::-webkit-scrollbar{width:5px}
+.detail-panel::-webkit-scrollbar-track{background:transparent}
+.detail-panel::-webkit-scrollbar-thumb{background:#333;border-radius:3px}
+.empty-state{text-align:center;color:#555;padding:30px;font-size:13px}
+</style>
+</head>
+<body>
+
+<h1>Outreach Dashboard — Flextail & Vollyc</h1>
+<div class="subtitle">v16.4 · Data Embedded (844 contacts) · <span id="today-date"></span></div>
+
+<div class="platform-tabs">
+  <button class="tab-btn active" onclick="setPlatform('all')">Total</button>
+  <button class="tab-btn linkedin" onclick="setPlatform('linkedin')">LinkedIn</button>
+  <button class="tab-btn facebook" onclick="setPlatform('facebook')">Facebook</button>
+  <button class="tab-btn instagram" onclick="setPlatform('instagram')">Instagram</button>
+</div>
+
+<div class="alert-box">
+  <h4>LinkedIn Connection Limit Reached — Smart Reallocation Active</h4>
+  <p>Free account weekly limit used. System redistributed 60 LinkedIn tasks to Facebook(+40) and Instagram(+20). <b>Current: FB 55 / INS 45</b></p>
+</div>
+
+<div id="error-banner" class="error-banner"></div>
+
+<div class="refresh-info">
+  <span>Last updated: <span id="last-updated"></span></span>
+  <button onclick="loadData()">Refresh</button>
+</div>
+
+<!-- Execution Status Panel -->
+<div class="exec-panel">
+  <h3>Execution Status</h3>
+  <div class="exec-task">
+    <div class="task-icon">&#x1F916;</div>
+    <div class="task-info">
+      <div class="task-name">AutoGLM Browser Task</div>
+      <div class="task-status"><span class="status-dot idle"></span><span id="task1-status">Idle</span></div>
+    </div>
+    <div style="font-size:11px;color:#888" id="task1-progress">&mdash;</div>
+  </div>
+  <div class="exec-task">
+    <div class="task-icon">&#x1F4CA;</div>
+    <div class="task-info">
+      <div class="task-name">Smart Task Allocation</div>
+      <div class="task-status"><span class="status-dot done"></span><span id="task2-status">Allocated</span></div>
+    </div>
+    <div style="font-size:11px;color:#888" id="task2-detail">LI=0 / FB=55 / INS=45</div>
+  </div>
+  <div class="alloc-grid">
+    <div class="alloc-item li"><div class="alloc-label">LinkedIn</div><div class="alloc-value" id="alloc-li">0</div><div class="alloc-sub">Was 60 - Limit Full</div><div class="alloc-note">Content only</div></div>
+    <div class="alloc-item fb"><div class="alloc-label">Facebook</div><div class="alloc-value" id="alloc-fb">55</div><div class="alloc-sub">Was 15 + 40</div></div>
+    <div class="alloc-item ins"><div class="alloc-label">Instagram</div><div class="alloc-value" id="alloc-ins">45</div><div class="alloc-sub">Was 25 + 20</div></div>
+  </div>
+</div>
+
+<!-- KPI Grid -->
+<div class="kpi-grid">
+  <div class="kpi hero orange" onclick="toggleDetail('today')" data-kpi="today"><span class="click-hint">Click to expand</span><div class="label">Today Target</div><div class="value" id="kpi-today-target">100</div><div class="sub" id="kpi-today-sub">FB 55 / INS 45</div></div>
+  <div class="kpi green" onclick="toggleDetail('total')" data-kpi="total"><span class="click-hint">Click to expand</span><div class="label">Total Contacts</div><div class="value" id="kpi-total">&mdash;</div><div class="sub" id="kpi-sources">Loading...</div></div>
+  <div class="kpi blue" onclick="toggleDetail('accepted')" data-kpi="accepted"><span class="click-hint">Click to expand</span><div class="label">Accepted</div><div class="value" id="kpi-accepted">&mdash;</div><div class="sub" id="kpi-pending">&mdash;</div></div>
+  <div class="kpi purple" onclick="toggleDetail('tier1')" data-kpi="tier1"><span class="click-hint">Click to expand</span><div class="label">TIER 1 Targets</div><div class="value" id="kpi-tier1">&mdash;</div><div class="sub">CEO/Founder/Owner</div></div>
+  <div class="kpi fb" onclick="toggleDetail('history')" data-kpi="history"><span class="click-hint">History</span><div class="label">History Total</div><div class="value" id="kpi-history">&mdash;</div><div class="sub" id="kpi-history-sub">All-time aggregate</div></div>
+  <div class="kpi ins" onclick="toggleDetail('ins')" data-kpi="ins"><span class="click-hint">Click to expand</span><div class="label">INSTAGRAM</div><div class="value" id="kpi-ins">&mdash;</div><div class="sub" id="kpi-ins-sub">Target 45</div></div>
+</div>
+
+<!-- Detail Panels -->
+<div class="detail-panel" id="panel-today"><div class="detail-panel-inner"><h4>Daily Progress (<span id="detail-today-date"></span>)<button class="close-btn" onclick="closeDetail('today')">&times;</button></h4><div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px;margin-top:12px;"><div><div style="font-size:13px;color:#888;margin-bottom:8px;">Facebook (Target: <span id="fb-target-detail">55</span>)</div><div class="daily-progress" id="fb-progress-detail"></div><div style="font-size:11px;color:#666;margin-top:6px;">Done: <span id="fb-done-detail">0</span>/<span id="fb-target-detail2">55</span></div></div><div><div style="font-size:13px;color:#888;margin-bottom:8px;">Instagram (Target: <span id="ins-target-detail">45</span>)</div><div class="daily-progress" id="ins-progress-detail"></div><div style="font-size:11px;color:#666;margin-top:6px;">Done: <span id="ins-done-detail">0</span>/<span id="ins-target-detail2">45</span></div></div><div><div style="font-size:13px;color:#888;margin-bottom:8px;">LinkedIn (Maintenance)</div><div style="font-size:11px;color:#888;padding:8px;background:#1a1d2e;border-radius:6px;">Weekly limit reached. Content interaction only (likes/comments on connected contacts' posts).</div></div></div></div></div>
+
+<div class="detail-panel" id="panel-total"><div class="detail-panel-inner"><h4><span class="count-badge" id="dp-total-count">0</span> All Contacts<button class="close-btn" onclick="closeDetail('total')">&times;</button></h4><table class="contact-table"><thead><tr><th>#</th><th>Name</th><th>Company</th><th>Role</th><th>Tier</th><th>Source</th><th>Status</th></tr></thead><tbody id="dp-total-body"><tr><td colspan="7" class="empty-state">Loading...</td></tr></tbody></table></div></div>
+
+<div class="detail-panel" id="panel-accepted"><div class="detail-panel-inner"><h4><span class="count-badge" id="dp-accepted-count">0</span> Accepted Contacts<button class="close-btn" onclick="closeDetail('accepted')">&times;</button></h4><table class="contact-table"><thead><tr><th>#</th><th>Name</th><th>Company</th><th>Role</th><th>Tier</th><th>Source</th><th>Status</th></tr></thead><tbody id="dp-accepted-body"><tr><td colspan="7" class="empty-state">Loading...</td></tr></tbody></table><h4 style="margin-top:16px;"><span class="count-badge" style="background:#f97316" id="dp-pending-count">0</span> Pending</h4><table class="contact-table"><thead><tr><th>#</th><th>Name</th><th>Company</th><th>Role</th><th>Tier</th><th>Source</th><th>Status</th></tr></thead><tbody id="dp-pending-body"><tr><td colspan="7" class="empty-state">Loading...</td></tr></tbody></table></div></div>
+
+<div class="detail-panel" id="panel-tier1"><div class="detail-panel-inner"><h4><span class="count-badge" style="background:#a855f7" id="dp-tier1-count">0</span> Tier 1 - CEO/Founder/Owner<button class="close-btn" onclick="closeDetail('tier1')">&times;</button></h4><table class="contact-table"><thead><tr><th>#</th><th>Name</th><th>Company</th><th>Role</th><th>Source</th><th>Status</th><th>LinkedIn</th></tr></thead><tbody id="dp-tier1-body"><tr><td colspan="7" class="empty-state">Loading...</td></tr></tbody></table></div></div>
+
+<div class="detail-panel" id="panel-fb"><div class="detail-panel-inner"><h4><span class="count-badge" style="background:#1877f2" id="dp-fb-count">0</span> Facebook Records<button class="close-btn" onclick="closeDetail('fb')">&times;</button></h4><button style="font-size:10px;padding:2px 10px;background:#1877f2;border:none;border-radius:4px;color:#fff;cursor:pointer;" onclick="addFBRecord()">+ Add Record</button><table class="contact-table"><thead><tr><th>#</th><th>Account</th><th>Page/Group</th><th>Type</th><th>Date</th><th>Status</th></tr></thead><tbody id="dp-fb-body"><tr><td colspan="6" class="empty-state">No records</td></tr></tbody></table></div></div>
+
+<div class="detail-panel" id="panel-ins"><div class="detail-panel-inner"><h4><span class="count-badge" style="background:#e4405f" id="dp-ins-count">0</span> Instagram DM Records<button class="close-btn" onclick="closeDetail('ins')">&times;</button></h4><button style="font-size:10px;padding:2px 10px;background:#e4405f;border:none;border-radius:4px;color:#fff;cursor:pointer;" onclick="addINSRecord()">+ Add Record</button><table class="contact-table"><thead><tr><th>#</th><th>Account</th><th>Name/Role</th><th>DM Summary</th><th>Date</th><th>Status</th></tr></thead><tbody id="dp-ins-body"><tr><td colspan="6" class="empty-state">No DM records</td></tr></tbody></table></div></div>
+
+<div class="detail-panel" id="panel-history"><div class="detail-panel-inner"><h4><span class="count-badge" style="background:#22c55e" id="dp-history-total">0</span> Historical Aggregate<button class="close-btn" onclick="closeDetail('history')">&times;</button></h4><div style="display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-bottom:16px;"><div style="text-align:center;padding:12px;background:#1a1d2e;border-radius:8px;border:1px solid #1877f2;"><div style="font-size:32px;font-weight:bold;color:#1877f2" id="hist-total-fb">0</div><div style="font-size:11px;color:#888;margin-top:4px;">Facebook Total</div></div><div style="text-align:center;padding:12px;background:#1a1d2e;border-radius:8px;border:1px solid #e4405f;"><div style="font-size:32px;font-weight:bold;color:#e4405f" id="hist-total-ins">0</div><div style="font-size:11px;color:#888;margin-top:4px;">Instagram Total</div></div></div><h4 style="margin-top:12px;">Daily History</h4><table class="contact-table"><thead><tr><th>Date</th><th>Facebook</th><th>Instagram</th><th>Total</th></tr></thead><tbody id="dp-history-body"><tr><td colspan="4" class="empty-state">No history</td></tr></tbody></table></div></div>
+
+<!-- Daily Progress Compact -->
+<div class="card"><h3>Daily Progress (<span id="compact-date"></span>)</h3><div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:20px;margin-top:12px;"><div><div style="font-size:12px;color:#888;margin-bottom:8px;">Facebook (Target: <span class="fb-target">55</span>)</div><div class="daily-progress" id="fb-progress"></div><div style="font-size:11px;color:#666;margin-top:6px;">Done: <span id="fb-done">0</span>/<span class="fb-target">55</span></div></div><div><div style="font-size:12px;color:#888;margin-bottom:8px;">Instagram (Target: <span class="ins-target">45</span>)</div><div class="daily-progress" id="ins-progress"></div><div style="font-size:11px;color:#666;margin-top:6px;">Done: <span id="ins-done">0</span>/<span class="ins-target">45</span></div></div><div><div style="font-size:12px;color:#888;margin-bottom:8px;">LinkedIn (Maintenance)</div><div style="font-size:11px;color:#888;">Weekly limit reset pending. Content interaction only.</div></div></div></div>
+
+<!-- Platform Content -->
+<div id="platform-content">
+<div id="all-platforms">
+<h2>Target Customer Distribution</h2>
+<div class="card"><div class="tier-bar"><div class="t1" id="bar-t1" style="width:0%"></div><div class="t2" id="bar-t2" style="width:0%"></div><div class="t3" id="bar-t3" style="width:0%"></div><div class="unknown" id="bar-unknown" style="width:0%"></div></div><div style="display:flex;justify-content:space-between;font-size:11px;color:#888;margin-top:5px;flex-wrap:wrap;gap:4px"><span>Tier1: <span id="lbl-t1">&mdash;</span></span><span>Tier2: <span id="lbl-t2">&mdash;</span></span><span>Tier3: <span id="lbl-t3">&mdash;</span></span><span>Unknown: <span id="lbl-unknown">&mdash;</span></span></div></div>
+<div class="card"><h3>Today's Priority Tasks - FB/INS Focus</h3><ul class="action-list"><li><span class="num">1</span><b>Facebook Public Post Engagement</b> - Search outdoor gear pages, like/comment 55 posts <span class="badge badge-fb">FB x55</span></li><li><span class="num">2</span><b>Instagram DM</b> - Send partnership DMs to 45 outdoor brand decision-makers <span class="badge badge-ins">INS x45</span></li><li><span class="num">3</span><b>LinkedIn Content Interaction</b> - Like/comment on connected contacts' posts (no quota cost) <span class="badge badge-li">LI Maintain</span></li><li><span class="num">4</span><b>Follow-up Pending</b> - Send follow-up messages to Pending status contacts</li><li><span class="num">5</span><b>Find New Leads</b> - Search Instagram for outdoor brand accounts, add to prospect list</li></ul></div>
+</div>
+
+<div id="facebook-platform" style="display:none;">
+<h2>Facebook Outreach</h2>
+<div class="card fb-ins-card"><h3>Target Pages (Groups restricted, using public pages)</h3><table class="contact-table"><thead><tr><th>Page Name</th><th>Type</th><th>Today</th><th>Status</th></tr></thead><tbody><tr><td class="name">Backcountry</td><td>Retailer</td><td>0</td><td><span class="badge badge-orange">Pending</span></td></tr><tr><td class="name">REI</td><td>Retailer</td><td>0</td><td><span class="badge badge-orange">Pending</span></td></tr><tr><td class="name">Bass Pro Shops</td><td>Retailer</td><td>0</td><td><span class="badge badge-orange">Pending</span></td></tr></tbody></table></div>
+<div class="card"><h3>FB Contact Records <button style="float:right;font-size:10px;padding:2px 8px;background:#22c55e;border:none;border-radius:4px;color:#fff;cursor:pointer;" onclick="addFBRecord()">+ Add</button></h3><table class="contact-table"><thead><tr><th>Name</th><th>Page/Group</th><th>Type</th><th>Date</th><th>Status</th></tr></thead><tbody id="fb-contacts-tbody"><tr><td colspan="5" style="color:#666;text-align:center;padding:12px;">No records</td></tr></tbody></table></div>
+</div>
+
+<div id="instagram-platform" style="display:none;">
+<h2>Instagram DM Management</h2>
+<div class="card fb-ins-card"><h3>Target Account Suggestions</h3><ul class="action-list" style="font-size:12px;"><li><span class="badge badge-ins">Brand</span> <b>@backcountry</b>, <b>@rei</b>, <b>@dickssportinggoods</b> - Find Buyer/Category Manager</li><li><span class="badge badge-ins">Retail</span> <b>@bassproshops</b>, <b>@cabelas</b>, <b>@sportsmanswarehouse</b> - Find Sourcing</li><li><span class="badge badge-ins">Distribution</span> Search "outdoor gear distributor" + "wholesale" tags</li><li><span class="badge badge-ins">KOL</span> Outdoor influencers may have connections or referrals</li></ul></div>
+<div class="card"><h3>INS DM Records <button style="float:right;font-size:10px;padding:2px 8px;background:#e4405f;border:none;border-radius:4px;color:#fff;cursor:pointer;" onclick="addINSRecord()">+ Add</button></h3><table class="contact-table"><thead><tr><th>Account</th><th>Name/Role</th><th>DM Summary</th><th>Date</th><th>Status</th></tr></thead><tbody id="ins-contacts-tbody"><tr><td class="name">camp4wheels</td><td>Poland rooftop tent importer</td><td>Partnership DM</td><td>2026-04-13</td><td><span class="badge badge-orange">Sent</span></td></tr></tbody></table></div>
+</div>
+
+<div id="linkedin-platform" style="display:none;">
+<h2>LinkedIn Status</h2>
+<div class="card"><div class="alert-box" style="margin-bottom:0;"><h4>Free Account Limitations</h4><p>- Weekly connection request limit exhausted<br>- Cannot send custom notes with invites<br>- Recommendation: Wait for weekly reset or upgrade to Premium</p></div></div>
+<div class="card"><h3>Active Conversations</h3><table class="contact-table"><thead><tr><th>Name</th><th>Company</th><th>Status</th><th>Last Action</th></tr></thead><tbody><tr><td class="name">Michael Hartridge</td><td>Ex-Ridge</td><td><span class="badge badge-green">Clarified</span></td><td>Awaiting reply</td></tr><tr><td class="name">Whitney La Ruffa</td><td>Black Dog Outdoors</td><td><span class="badge badge-orange">7 days no reply</span></td><td>Follow-up sent</td></tr><tr><td class="name">Travis Reill</td><td>Outdoor Creator</td><td><span class="badge badge-blue">Read</span></td><td>&mdash;</td></tr></tbody></table></div>
+<div class="card"><h3>Pending Connections (After Reset)</h3><ul class="action-list" style="font-size:12px;"><li>Dexter Levandoski, Candace Gallagher, Ben Classen, Mavrick Robbins</li><li>Nicole Lopez, Sadie Boyd, Eric Lombardo, Mathew Garbutt</li><li>Peter Metcalf, Matthew O'Connor...</li></ul></div>
+</div>
+</div>
+
+<div style="text-align:center;color:#444;font-size:11px;margin-top:30px">Flextail &amp; Vollyc Outreach Tracker v16.4 - Data Embedded</div>
+
+<script>
+// ========== EMBEDDED DATA (844 contacts) ==========
+const EMBEDDED_DATA = ${json};
+
+// ========== CONFIG & STATE ==========
+const NOW = new Date();
+const TODAY_STR = NOW.toISOString().split('T')[0];
+const TODAY_KEY = TODAY_STR.replace(/-/g, '');
+const LI_QUOTA_FULL = true;
+const ALLOC = { li: 0, fb: 55, ins: 45 };
+let contactsData = { stats: {}, contacts: [] };
+let currentOpenPanel = null;
+let fbRecords = JSON.parse(localStorage.getItem('fb_records') || '[]');
+let insRecords = JSON.parse(localStorage.getItem('ins_records') || '[]');
+let dailyProgress = JSON.parse(localStorage.getItem('daily_progress_' + TODAY_KEY) || '{"fb":0,"ins":0}');
+
+const STATIC_FB_RECORDS = [
+  {name:'Outdoor Gears Group',page:'Outdoor Gears, Stuff, Equipments Buy & Sell',type:'Post',date:'2026-04-13',status:'Done'}
+];
+const STATIC_INS_RECORDS = [
+  {account:'camp4wheels',name:'Poland rooftop tent importer',dm:'Partnership DM',date:'2026-04-13',status:'Sent'}
+];
+
+function getHistoricalProgress(){
+  const hist=[];
+  for(let i=localStorage.length-1;i>=0;i--){
+    const k=localStorage.key(i);
+    if(k && k.startsWith('daily_progress_')){
+      const dateStr=k.replace('daily_progress_','');
+      const data=JSON.parse(localStorage.getItem(k)||'{}');
+      if(dateStr !== TODAY_KEY && (data.fb || data.ins)) hist.push({date:dateStr,fb:data.fb||0,ins:data.ins||0});
+    }
+  }
+  return hist.sort((a,b)=>b.date.localeCompare(a.date));
+}
+const historicalProgress = getHistoricalProgress();
+
+function getTotals(){
+  let totalFB = fbRecords.length + STATIC_FB_RECORDS.length;
+  let totalINS = insRecords.length + STATIC_INS_RECORDS.length;
+  let totalAllDays = dailyProgress.fb + dailyProgress.ins;
+  historicalProgress.forEach(h => totalAllDays += h.fb + h.ins);
+  return {totalFB, totalINS, totalAllDays};
+}
+const totals = getTotals();
+
+const TIER1_KEYS = ['CEO','President','Founder','Owner','CMO','COO','Managing Director','Co-Founder'];
+const TIER2_KEYS = ['VP ','Director of','Director,'];
+const TIER3_KEYS = ['Senior Buyer','Category Manager','Procurement Manager','Purchasing Manager','Product Manager','Merchandising Manager','Sales Manager','Buyer','Head of Buying','Sourcing Manager'];
+
+function classify(c){const r=c.role||'';if(TIER1_KEYS.some(k=>r.includes(k)))return't1';if(TIER2_KEYS.some(k=>r.includes(k)))return't2';if(TIER3_KEYS.some(k=>r.includes(k)))return't3';return r.trim()?'other':'unknown'}
+function tierBadge(t){return{t1:'<span class="badge badge-green">T1</span>',t2:'<span class="badge badge-blue">T2</span>',t3:'<span class="badge badge-orange">T3</span>',unknown:'<span class="badge badge-gray">?</span>'}[t]||'<span class="badge badge-gray">'+t+'</span>'}
+function statusBadge(s){return{Accepted:'<span class="badge badge-green">Accepted</span>',Pending:'<span class="badge badge-orange">Pending</span>',Sent:'<span class="badge badge-blue">Sent</span>',Rejected:'<span class="badge badge-red">Rejected</span>'}[s]||'<span class="badge badge-gray">'+(s||'-')+'</span>'}
+function sourceBadge(s){return{outreach_data:'<span class="badge badge-green">outreach_data</span>',okki:'<span class="badge badge-blue">okki</span>',salesrobot:'<span class="badge badge-orange">salesrobot</span>'}[s]||'<span class="badge badge-gray">'+(s||'-')+'</span>'}
+function pct(n,t){return t===0?0:Math.round(n/t*100)}
+function setText(id,v){const e=document.getElementById(id);if(e)e.textContent=v}
+function esc(s){if(!s)return'';const d=document.createElement('div');d.textContent=s;return d.innerHTML}
+
+document.getElementById('today-date').textContent = TODAY_STR;
+document.getElementById('detail-today-date').textContent = TODAY_STR;
+document.getElementById('compact-date').textContent = TODAY_STR;
+
+// ========== DETAIL PANELS ==========
+function toggleDetail(key){
+  if(currentOpenPanel && currentOpenPanel!==key) closeDetail(currentOpenPanel);
+  const p=document.getElementById('panel-'+key),c=document.querySelector('[data-kpi="'+key+'"]');
+  if(!p.classList.contains('show')){p.classList.add('show');if(c)c.classList.add('expanded');currentOpenPanel=key;populateDetail(key)}
+  else closeDetail(key)
+}
+function closeDetail(key){const p=document.getElementById('panel-'+key),c=document.querySelector('[data-kpi="'+key+'"]');if(p)p.classList.remove('show');if(c)c.classList.remove('expanded');if(currentOpenPanel===key)currentOpenPanel=null}
+
+function populateDetail(key){
+  const cc=contactsData.contacts||[];
+  switch(key){
+  case'today':renderDailyProgressDetail();break;
+  case'total':
+    setText('dp-total-count',cc.length);
+    document.getElementById('dp-total-body').innerHTML=cc.length?cc.map((c,i)=>'<tr><td>'+(i+1)+'</td><td class="name">'+esc(c.name)+'</td><td class="company">'+esc(c.company||'-')+'</td><td class="role">'+esc(c.role||'-')+'</td><td>'+tierBadge(classify(c))+'</td><td>'+sourceBadge(c.source)+'</td><td>'+statusBadge(c.status)+'</td></tr>').join(''):'<tr><td colspan="7" class="empty-state">No data</td></tr>';break;
+  case'accepted':{
+    const a=cc.filter(c=>c.status==='Accepted'),p=cc.filter(c=>c.status==='Pending');
+    setText('dp-accepted-count',a.length);setText('dp-pending-count',p.length);
+    document.getElementById('dp-accepted-body').innerHTML=a.length?a.map((c,i)=>'<tr><td>'+(i+1)+'</td><td class="name">'+esc(c.name)+'</td><td class="company">'+esc(c.company||'-')+'</td><td class="role">'+esc(c.role||'-')+'</td><td>'+tierBadge(classify(c))+'</td><td>'+sourceBadge(c.source)+'</td><td>'+statusBadge(c.status)+'</td></tr>').join(''):'<tr><td colspan="7" class="empty-state">No accepted contacts</td></tr>';
+    document.getElementById('dp-pending-body').innerHTML=p.length?p.map((c,i)=>'<tr><td>'+(i+1)+'</td><td class="name">'+esc(c.name)+'</td><td class="company">'+esc(c.company||'-')+'</td><td class="role">'+esc(c.role||'-')+'</td><td>'+tierBadge(classify(c))+'</td><td>'+sourceBadge(c.source)+'</td><td>'+statusBadge(c.status)+'</td></tr>').join(''):'<tr><td colspan="7" class="empty-state">No pending contacts</td></tr>';break}
+  case'tier1':{
+    const t1=cc.filter(c=>classify(c)==='t1');setText('dp-tier1-count',t1.length);
+    document.getElementById('dp-tier1-body').innerHTML=t1.length?t1.map((c,i)=>'<tr><td>'+(i+1)+'</td><td class="name">'+esc(c.name)+'</td><td class="company">'+esc(c.company||'-')+'</td><td class="role">'+esc(c.role||'-')+'</td><td>'+sourceBadge(c.source)+'</td><td>'+statusBadge(c.status)+'</td><td>'+(c.linkedin?'<a href="'+esc(c.linkedin)+'" target="_blank" style="color:#3b82f6">Profile</a>':'-')+'</td></tr>').join(''):'<tr><td colspan="7" class="empty-state">No Tier 1 contacts</td></tr>';break}
+  case'fb':setText('dp-fb-count',fbRecords.length+STATIC_FB_RECORDS.length);renderFBDetailTable();break;
+  case'ins':setText('dp-ins-count',insRecords.length+STATIC_INS_RECORDS.length);renderINSDetailTable();break;
+  case'history':
+    setText('dp-history-total',totals.totalAllDays);
+    setText('hist-total-fb',totals.totalFB);
+    setText('hist-total-ins',totals.totalINS);
+    renderHistoryTable();break;
+  }
+}
+
+// ========== FB/INS TABLES ==========
+function renderFBDetailTable(){
+  const t=document.getElementById('dp-fb-body');
+  const allFB=[...STATIC_FB_RECORDS,...fbRecords];
+  t.innerHTML=allFB.length?allFB.map((r,i)=>'<tr><td>'+(i+1)+'</td><td class="name">'+esc(r.name)+'</td><td>'+esc(r.page||'-')+'</td><td>'+esc(r.type||'-')+'</td><td>'+(r.date||'-')+'</td><td><span class="badge badge-green">'+esc(r.status||'-')+'</span></td></tr>').join(''):'<tr><td colspan="6" class="empty-state">No records</td></tr>'
+}
+function renderINSDetailTable(){
+  const t=document.getElementById('dp-ins-body');
+  const allINS=[...STATIC_INS_RECORDS,...insRecords];
+  t.innerHTML=allINS.length?allINS.map((r,i)=>'<tr><td>'+(i+1)+'</td><td class="name">@'+esc(r.account)+'</td><td>'+esc(r.name||'-')+'</td><td>'+esc(r.dm||'-')+'</td><td>'+(r.date||'-')+'</td><td><span class="badge badge-orange">'+esc(r.status||'-')+'</span></td></tr>').join(''):'<tr><td colspan="6" class="empty-state">No records</td></tr>'
+}
+function renderFBRecords(){
+  const t=document.getElementById('fb-contacts-tbody');
+  const allFB=[...STATIC_FB_RECORDS,...fbRecords];
+  t.innerHTML=allFB.length?allFB.map(r=>'<tr><td class="name">'+esc(r.name)+'</td><td>'+esc(r.page||'-')+'</td><td>'+esc(r.type||'-')+'</td><td>'+(r.date||'-')+'</td><td><span class="badge badge-green">'+esc(r.status||'-')+'</span></td></tr>').join(''):'<tr><td colspan="5" style="color:#666;text-align:center;padding:12px;">No records</td></tr>'
+}
+function renderINSRecords(){
+  const t=document.getElementById('ins-contacts-tbody');
+  const allINS=[...STATIC_INS_RECORDS,...insRecords];
+  t.innerHTML=allINS.length?allINS.map(r=>'<tr><td class="name">@'+esc(r.account)+'</td><td>'+esc(r.name||'-')+'</td><td>'+esc(r.dm||'-')+'</td><td>'+(r.date||'-')+'</td><td><span class="badge badge-orange">'+esc(r.status||'-')+'</span></td></tr>').join(''):'<tr><td colspan="5" style="color:#666;text-align:center;padding:12px;">No DM records</td></tr>'
+}
+
+// ========== DAILY PROGRESS ==========
+function renderDots(containerId,done,total){
+  const c=document.getElementById(containerId);if(!c)return;c.innerHTML='';
+  for(let i=0;i<total;i++){const d=document.createElement('div');d.className='progress-dot'+(i<done?' done':'');c.appendChild(d)}
+}
+function renderDailyProgress(){
+  renderDots('fb-progress',dailyProgress.fb,ALLOC.fb);
+  renderDots('ins-progress',dailyProgress.ins,ALLOC.ins);
+  setText('fb-done',dailyProgress.fb);setText('ins-done',dailyProgress.ins)
+}
+function renderDailyProgressDetail(){
+  renderDots('fb-progress-detail',dailyProgress.fb,ALLOC.fb);
+  renderDots('ins-progress-detail',dailyProgress.ins,ALLOC.ins);
+  setText('fb-done-detail',dailyProgress.fb);setText('ins-done-detail',dailyProgress.ins)
+}
+function renderHistoryTable(){
+  const t=document.getElementById('dp-history-body');
+  let html='';
+  const todaySub=dailyProgress.fb+dailyProgress.ins;
+  if(todaySub>0||dailyProgress.fb>0||dailyProgress.ins>0){
+    html+='<tr style="background:#1e2440"><td><b>'+TODAY_STR+'</b> <span style="font-size:10px;color:#22c55e">(Today)</span></td><td>'+dailyProgress.fb+'</td><td>'+dailyProgress.ins+'</td><td><b>'+todaySub+'</b></td></tr>';
+  }
+  historicalProgress.forEach(h=>{
+    const ds=h.date.replace(/(\d{4})(\d{2})(\d{2})/,'$1-$2-$3');
+    const sub=h.fb+h.ins;
+    html+='<tr><td>'+ds+'</td><td>'+h.fb+'</td><td>'+h.ins+'</td><td><b>'+sub+'</b></td></tr>';
+  });
+  if(!html)html='<tr><td colspan="4" class="empty-state">No history</td></tr>';
+  t.innerHTML=html;
+}
+
+// ========== ADD RECORDS ==========
+function addFBRecord(){
+  const name=prompt('Account/Name:');if(!name)return;
+  const page=prompt('Page/Group name:');
+  const type=prompt('Interaction type (Post/Comment/DM):')||'Interaction';
+  fbRecords.push({name,page,type,date:TODAY_STR,status:'Done'});
+  dailyProgress.fb++;saveFB()
+}
+function addINSRecord(){
+  const account=prompt('Instagram account (no @):');if(!account)return;
+  const name=prompt('Name/Role:');
+  const dm=prompt('DM summary:');
+  insRecords.push({account,name,dm,date:TODAY_STR,status:'Sent'});
+  dailyProgress.ins++;saveINS()
+}
+function saveFB(){
+  localStorage.setItem('fb_records',JSON.stringify(fbRecords));
+  localStorage.setItem('daily_progress_'+TODAY_KEY,JSON.stringify(dailyProgress));
+  setText('kpi-fb',fbRecords.length+STATIC_FB_RECORDS.length);setText('dp-fb-count',fbRecords.length+STATIC_FB_RECORDS.length);
+  renderFBRecords();renderFBDetailTable();renderDailyProgress();renderDailyProgressDetail()
+}
+function saveINS(){
+  localStorage.setItem('ins_records',JSON.stringify(insRecords));
+  localStorage.setItem('daily_progress_'+TODAY_KEY,JSON.stringify(dailyProgress));
+  setText('kpi-ins',insRecords.length+STATIC_INS_RECORDS.length);setText('dp-ins-count',insRecords.length+STATIC_INS_RECORDS.length);
+  renderINSRecords();renderINSDetailTable();renderDailyProgress();renderDailyProgressDetail()
+}
+
+// ========== PLATFORM SWITCHING ==========
+function setPlatform(p){
+  document.querySelectorAll('.tab-btn').forEach(b=>b.classList.remove('active'));
+  document.querySelector('.tab-btn.'+(p==='all'?'active':p)).classList.add('active');
+  document.getElementById('all-platforms').style.display=p==='all'?'block':'none';
+  document.getElementById('facebook-platform').style.display=p==='facebook'?'block':'none';
+  document.getElementById('instagram-platform').style.display=p==='instagram'?'block':'none';
+  document.getElementById('linkedin-platform').style.display=p==='linkedin'?'block':'none'
+}
+
+// ========== DATA LOADING (v16.4: embedded) ==========
+function loadData(){
+  if(typeof EMBEDDED_DATA !== 'undefined' && EMBEDDED_DATA.contacts && EMBEDDED_DATA.contacts.length > 0){
+    contactsData = EMBEDDED_DATA;
+    document.getElementById('error-banner').style.display='none';
+  }else{
+    contactsData={stats:{version:'15.2',last_run:'2026-04-22',total_contacts:844},contacts:[]};
+    document.getElementById('error-banner').textContent='EMBEDDED DATA ERROR';
+    document.getElementById('error-banner').style.display='block'
+  }
+  renderDashboard()
+}
+
+function renderDashboard(){
+  const cc=contactsData.contacts||[],st=contactsData.stats||{};
+  setText('data-version',st.version||'-');
+  setText('kpi-total',cc.length);
+  setText('kpi-sources','outreach_data('+cc.filter(c=>c.source==='outreach_data').length+') okki('+cc.filter(c=>c.source==='okki').length+') salesrobot('+cc.filter(c=>c.source==='salesrobot').length+')');
+  const acc=cc.filter(c=>c.status==='Accepted').length,pen=cc.filter(c=>c.status==='Pending').length;
+  setText('kpi-accepted',acc);setText('kpi-pending',pen+' Pending');
+  setText('kpi-fb',fbRecords.length+STATIC_FB_RECORDS.length);
+  setText('kpi-ins',insRecords.length+STATIC_INS_RECORDS.length);
+  setText('kpi-history',totals.totalAllDays);
+  setText('kpi-history-sub','History '+(historicalProgress.length+1)+' days');
+  const t1=cc.filter(c=>classify(c)==='t1').length,t2=cc.filter(c=>classify(c)==='t2').length,t3=cc.filter(c=>classify(c)==='t3').length,unk=cc.filter(c=>classify(c)==='unknown').length,tot=cc.length;
+  setText('kpi-tier1',t1);
+  document.getElementById('bar-t1').style.width=pct(t1,tot)+'%';
+  document.getElementById('bar-t2').style.width=pct(t2,tot)+'%';
+  document.getElementById('bar-t3').style.width=pct(t3,tot)+'%';
+  document.getElementById('bar-unknown').style.width=pct(unk,tot)+'%';
+  setText('lbl-t1',t1);setText('lbl-t2',t2);setText('lbl-t3',t3);setText('lbl-unknown',unk);
+  renderDailyProgress();
+  setText('last-updated',new Date().toLocaleString('zh-CN'))
+}
+
+// ========== INIT ==========
+loadData();
+renderFBRecords();
+</script>
+</body>
+</html>`;
+
+fs.writeFileSync('C:/Users/23889/.qclaw/workspace/outreach_dashboard_v16.html', html, 'utf8');
+
+// Verify
+const result = fs.readFileSync('C:/Users/23889/.qclaw/workspace/outreach_dashboard_v16.html', 'utf8');
+const idRegex = /"id": \d+/g;
+let match;
+let count = 0;
+let lastId = '';
+while ((match = idRegex.exec(result)) !== null) {
+  count++;
+  lastId = match[0];
+}
+console.log('File size:', Math.round(result.length / 1024), 'KB');
+console.log('Contact IDs found:', count);
+console.log('Last ID:', lastId);
+console.log('Ends with </html>:', result.trimEnd().endsWith('</html>'));
+console.log('Has EMBEDDED_DATA:', result.includes('const EMBEDDED_DATA'));
+console.log('Has contactsData=EMBEDDED:', result.includes('contactsData = EMBEDDED_DATA'));

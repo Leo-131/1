@@ -1,0 +1,96 @@
+{
+  "version": 1,
+  "updatedAt": "2026-04-28T09:42:20.495Z",
+  "entries": {
+    "memory:memory/2026-04-09.md:1:14": {
+      "key": "memory:memory/2026-04-09.md:1:14",
+      "path": "memory/2026-04-09.md",
+      "startLine": 1,
+      "endLine": 14,
+      "source": "memory",
+      "snippet": "# 2026-04-09 Daily Log ## Outreach Cron 执行记录 ### 16:08 - Cron #4 (v12.0) - today_sent: 0（待启动） - linkedin_sent: 937, accepted: 24 - 画像分布：Tier1=3, Tier2=7, Tier3=14, 非目标=1 - 需排除：Ashley Morgan (RVDA协会非终端买家) - 现有客户：REI×2, Walmart, Bass Pro Shops - 最佳关键词：outdoor power station distributor(92分), portable power station buyer(88分), camping gear importer(85分) - 接受率：2.56% - 备注：today_sent=0未启动，需要立即开始执行",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "totalScore": 0.7604483848003228,
+      "maxScore": 0.7604483848003228,
+      "firstRecalledAt": "2026-04-28T09:42:20.495Z",
+      "lastRecalledAt": "2026-04-28T09:42:20.495Z",
+      "queryHashes": [
+        "b5a826e17578"
+      ],
+      "recallDays": [
+        "2026-04-28"
+      ],
+      "conceptTags": [
+        "v12.0",
+        "today-sent",
+        "linkedin-sent",
+        "2.56",
+        "log",
+        "outreach",
+        "cron",
+        "执行"
+      ]
+    },
+    "memory:memory/2026-04-26.md:68:90": {
+      "key": "memory:memory/2026-04-26.md:68:90",
+      "path": "memory/2026-04-26.md",
+      "startLine": 68,
+      "endLine": 90,
+      "source": "memory",
+      "snippet": "19. Jeff Boster — Vans — Global Footwear Designer-Color/Material/Trend/Graphics-Designer II > **注**: 上述联系人中，Mark Windsor (Founder/Industrial Designer) 和 Kathryn Scott (Founder) 虽然有 Founder 身份，但其核心职责仍为设计角色，按策略规则应排除。 --- ## 智能部署状态 - **smart-deploy.js**: ❌ 文件不存在 - **last-hash.json**: ❌ 无历史记录 - **当前 MD5 (outreach_data.json)**: `ca0f583b6c8a799453463db9381a18a0` **结论**: 智能部署工具未就位，无法执行文件内容对比。建议后续手动部署或配置 smart-deploy.js。 --- ## 下一步行动 1. **[需处理]** 配置 smart-deploy.js 以支持智能增量部署 2. **[高优]** 跟进 Pending 状态联系人 (77位) — 发送 follow-up 3. **[高优]** 清理 19 位设计师角色 — 从活跃列表中排除 4. **[中优]** 提升 salesrobot (737人) 中缺失 role 信息的补充 — 完善画像数据 5. **[持续]** 跟进 Failed 状态 (23位) — 验证邮箱或换渠道重试",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "totalScore": 0.6943773274895573,
+      "maxScore": 0.6943773274895573,
+      "firstRecalledAt": "2026-04-28T09:42:20.495Z",
+      "lastRecalledAt": "2026-04-28T09:42:20.495Z",
+      "queryHashes": [
+        "b5a826e17578"
+      ],
+      "recallDays": [
+        "2026-04-28"
+      ],
+      "conceptTags": [
+        "founder/industrial",
+        "smart-deploy.js",
+        "last-hash.json",
+        "outreach-data.json",
+        "follow-up",
+        "jeff",
+        "boster",
+        "vans"
+      ]
+    },
+    "memory:memory/2026-04-26.md:48:73": {
+      "key": "memory:memory/2026-04-26.md:48:73",
+      "path": "memory/2026-04-26.md",
+      "startLine": 48,
+      "endLine": 73,
+      "source": "memory",
+      "snippet": "共发现 **19** 位设计师角色，已标记为 [需排除]： 1. Kai Nevers — SAM — Freelance Designer 2. Aidan Oddløkken — XTRATUF — Jr. Footwear Designer/Developer 3. Carson Hawkes — Talon Tide — Freelance Industrial Designer 4. Sandra Salvas — Sandra Salvas Photography — Photographer & Creative Director 5. Jane Wallace-Bradley — JaneWB Brand Design — Principal Brand Designer & Founder 6. Michelle Maben — Freelance — Global Creative Director 7. Juliana Moskow — Stebbins Home Solutions — Interior Designer & 3D Visualization Specialist 8. Deborah Norman — Oui Productions — Freelance Creative Director 9. Jennifer Scruton — Vans — Creative Director 10. Kiryn Clay — Emptiful Design Studio — Creative Director 11. Paul Butterf",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "totalScore": 0.6198681373697199,
+      "maxScore": 0.6198681373697199,
+      "firstRecalledAt": "2026-04-28T09:42:20.495Z",
+      "lastRecalledAt": "2026-04-28T09:42:20.495Z",
+      "queryHashes": [
+        "b5a826e17578"
+      ],
+      "recallDays": [
+        "2026-04-28"
+      ],
+      "conceptTags": [
+        "designer/developer",
+        "wallace-bradley",
+        "发现",
+        "设计",
+        "角色",
+        "标记",
+        "排除",
+        "kai"
+      ]
+    }
+  }
+}

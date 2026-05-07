@@ -1,0 +1,25 @@
+{
+  "id": "main",
+  "name": "Google Sheets数据缺失",
+  "status": "active",
+  "createdAt": "2026-04-21T09:05:18.640Z",
+  "updatedAt": "2026-05-07T14:04:00.463Z",
+  "agents": [
+    {
+      "id": "agent_rz6sq1dc",
+      "name": "Main Agent",
+      "role": "assistant",
+      "status": "idle",
+      "createdAt": "2026-04-21T09:05:18.640Z",
+      "model": "unknown",
+      "systemPrompt": ""
+    }
+  ],
+  "summary": {
+    "id": "summary_4wtn1j0e",
+    "title": "Google Sheets数据缺失",
+    "createdAt": "2026-04-21T09:05:18.640Z",
+    "file": "summary_4wtn1j0e.md"
+  },
+  "lastMessageCount": 30
+}
