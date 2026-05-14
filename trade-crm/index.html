@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TradePilot CRM</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar" aria-label="主导航">
+        <a class="brand" href="#overview" aria-label="TradePilot CRM 首页">
+          <span class="brand-mark">TP</span>
+          <span>
+            <strong>TradePilot</strong>
+            <small>外贸 CRM</small>
+          </span>
+        </a>
+        <nav class="nav-list">
+          <a href="#overview" class="active">总览</a>
+          <a href="#customers">客户</a>
+          <a href="#pipeline">商机</a>
+          <a href="#followups">跟进</a>
+          <a href="#orders">订单</a>
+          <a href="#insights">洞察</a>
+        </nav>
+        <div class="team-card">
+          <span class="label">本月目标</span>
+          <strong>USD 260,000</strong>
+          <div class="progress-track" aria-hidden="true">
+            <span style="width: 62%"></span>
+          </div>
+        </div>
+      </aside>
+
+      <main class="workspace">
+        <header class="topbar">
+          <div>
+            <p class="section-kicker">Boss cockpit</p>
+            <h1>外贸增长 CRM 工作台</h1>
+          </div>
+          <div class="topbar-actions">
+            <label class="search-field">
+              <span class="visually-hidden">搜索客户</span>
+              <svg aria-hidden="true" viewBox="0 0 24 24">
+                <path d="M10.8 18.2a7.4 7.4 0 1 1 0-14.8 7.4 7.4 0 0 1 0 14.8Zm5.7-1.7 4.1 4.1" />
+              </svg>
+              <input id="account-search" type="search" placeholder="搜索客户、国家、负责人、标签" />
+            </label>
+            <button id="export-json" class="icon-button" type="button" title="导出数据" aria-label="导出数据">
+              <svg aria-hidden="true" viewBox="0 0 24 24">
+                <path d="M12 3v12m0 0 4-4m-4 4-4-4M5 19h14" />
+              </svg>
+            </button>
+            <button id="reset-data" class="ghost-button" type="button">重置演示数据</button>
+          </div>
+        </header>
+
+        <section id="overview" class="metric-grid" aria-label="经营指标">
+          <article class="metric-card">
+            <span>客户资产</span>
+            <strong id="metric-accounts">0</strong>
+            <small id="metric-top-tier">A 类客户 0 个</small>
+          </article>
+          <article class="metric-card">
+            <span>商机金额</span>
+            <strong id="metric-pipeline">$0</strong>
+            <small>未赢单/未输单商机</small>
+          </article>
+          <article class="metric-card">
+            <span>加权预测</span>
+            <strong id="metric-forecast">$0</strong>
+            <small>按阶段概率折算</small>
+          </article>
+          <article class="metric-card alert">
+            <span>逾期跟进</span>
+            <strong id="metric-overdue">0</strong>
+            <small id="metric-open-tasks">待办 0 项</small>
+          </article>
+        </section>
+
+        <section class="split-layout">
+          <article id="customers" class="panel customer-panel">
+            <div class="panel-header">
+              <div>
+                <p class="section-kicker">Customer asset</p>
+                <h2>客户池</h2>
+              </div>
+              <select id="status-filter" aria-label="客户状态筛选">
+                <option value="all">全部状态</option>
+                <option value="active">成交/活跃</option>
+                <option value="prospect">潜在客户</option>
+              </select>
+            </div>
+            <div id="account-list" class="account-list"></div>
+          </article>
+
+          <article class="panel detail-panel">
+            <div id="account-detail"></div>
+          </article>
+        </section>
+
+        <section id="pipeline" class="panel">
+          <div class="panel-header">
+            <div>
+              <p class="section-kicker">Sales pipeline</p>
+              <h2>商机推进</h2>
+            </div>
+            <span id="pipeline-summary" class="status-pill">0 个进行中商机</span>
+          </div>
+          <div id="pipeline-board" class="pipeline-board"></div>
+        </section>
+
+        <section class="two-column">
+          <article id="followups" class="panel">
+            <div class="panel-header">
+              <div>
+                <p class="section-kicker">Action center</p>
+                <h2>跟进任务</h2>
+              </div>
+            </div>
+            <form id="task-form" class="compact-form">
+              <input name="title" required placeholder="新增跟进事项" />
+              <input name="dueAt" required type="date" value="2026-05-15" />
+              <select name="priority" aria-label="优先级">
+                <option value="high">高</option>
+                <option value="medium" selected>中</option>
+                <option value="low">低</option>
+              </select>
+              <button type="submit">添加</button>
+            </form>
+            <div id="task-list" class="task-list"></div>
+          </article>
+
+          <article class="panel">
+            <div class="panel-header">
+              <div>
+                <p class="section-kicker">Communication</p>
+                <h2>沟通记录</h2>
+              </div>
+            </div>
+            <form id="activity-form" class="compact-form">
+              <select name="type" aria-label="沟通渠道">
+                <option value="email">邮件</option>
+                <option value="whatsapp">WhatsApp</option>
+                <option value="call">电话</option>
+                <option value="meeting">会议</option>
+              </select>
+              <input name="title" required placeholder="记录沟通重点" />
+              <button type="submit">记录</button>
+            </form>
+            <div id="activity-list" class="timeline"></div>
+          </article>
+        </section>
+
+        <section class="two-column">
+          <article id="orders" class="panel">
+            <div class="panel-header">
+              <div>
+                <p class="section-kicker">Order control</p>
+                <h2>订单与交付</h2>
+              </div>
+            </div>
+            <div class="table-wrap">
+              <table>
+                <thead>
+                  <tr>
+                    <th>订单</th>
+                    <th>客户</th>
+                    <th>金额</th>
+                    <th>状态</th>
+                    <th>交期</th>
+                    <th>毛利</th>
+                  </tr>
+                </thead>
+                <tbody id="order-table"></tbody>
+              </table>
+            </div>
+          </article>
+
+          <article id="insights" class="panel insight-panel">
+            <div class="panel-header">
+              <div>
+                <p class="section-kicker">AI-ready insight</p>
+                <h2>客户洞察</h2>
+              </div>
+            </div>
+            <div id="insight-list" class="insight-list"></div>
+          </article>
+        </section>
+      </main>
+    </div>
+
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>
