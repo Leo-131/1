@@ -1,22 +1,124 @@
 {
-  "last_updated": "2026-04-08T13:10:00",
+  "last_updated": "2026-05-15T05:48:43.010Z",
+  "version": "2605151345",
+  "date": "2026-05-14",
   "today_outreach": [
-    {"id":1,"name":"Michael Hartridge","company":"Outdoor Retail","role":"Ops Leader","channel":"LinkedIn","status":"Replied","time":"13:02","type":"message"},
-    {"id":2,"name":"Alain Oberholzer","company":"Gateway1","role":"Importer","channel":"LinkedIn","status":"Pending","time":"13:05","type":"connection"},
-    {"id":3,"name":"Jason Wang","company":"RV Importer","role":"Import/Export","channel":"LinkedIn","status":"Pending","time":"13:06","type":"connection"},
-    {"id":4,"name":"Tamako Hara","company":"Outdoor Research","role":"Import Manager","channel":"LinkedIn","status":"Pending","time":"13:07","type":"connection"},
-    {"id":5,"name":"David Dreyer","company":"Outdoor Retail","role":"GM","channel":"LinkedIn","status":"Pending","time":"13:08","type":"connection"},
-    {"id":6,"name":"Allan King","company":"Outback King","role":"Founder","channel":"LinkedIn","status":"Pending","time":"13:09","type":"connection"},
-    {"id":7,"name":"FB Post 1","company":"USA Outdoor Gears Sale","role":"Group Post","channel":"Facebook","status":"Posted","time":"13:04","type":"group_post"},
-    {"id":8,"name":"kilosgear","company":"kilos.outdoor","role":"Brand","channel":"Instagram","status":"DM Sent","time":"13:10","type":"dm"}
+    {
+      "id": 1,
+      "name": "Brian Threlkeld",
+      "company": "Maine Outdoor Brands",
+      "role": "Maine Outdoor Brands",
+      "channel": "LinkedIn",
+      "status": "Engaged",
+      "time": "16:05",
+      "type": "interaction",
+      "notes": "Liked+commented on First Tracks Northeast Snow Show post"
+    },
+    {
+      "id": 2,
+      "name": "K-F Outdoor",
+      "company": "KF Outdoor",
+      "handle": "@kfoutdoor",
+      "role": "Outdoor Retailer",
+      "channel": "Instagram",
+      "status": "DM Sent",
+      "time": "16:10",
+      "type": "dm",
+      "notes": "Jakarta, 33K followers"
+    },
+    {
+      "id": 3,
+      "name": "Otimos Outdoor Gear",
+      "company": "Otimos Outdoor Gear",
+      "handle": "@otimosoutdoorgear",
+      "role": "UK Wild Camping Store",
+      "channel": "Instagram",
+      "status": "DM Sent",
+      "time": "16:15",
+      "type": "dm",
+      "notes": "UK, 2.6K followers, custom pitch"
+    },
+    {
+      "id": 4,
+      "name": "Campmor",
+      "company": "Campmor",
+      "handle": "@campmor",
+      "role": "Outdoor Retailer",
+      "channel": "Instagram",
+      "status": "DM Sent",
+      "time": "16:20",
+      "type": "dm",
+      "notes": "NJ, 11K followers, 45yr family business"
+    },
+    {
+      "id": 5,
+      "name": "Cotswold Outdoor",
+      "company": "Cotswold Outdoor",
+      "handle": "@cotswoldoutdoor",
+      "role": "UK Leading Retailer",
+      "channel": "Instagram",
+      "status": "DM Sent (incomplete)",
+      "time": "16:25",
+      "type": "dm",
+      "notes": "UK, 97K followers - only sent greeting, needs follow-up"
+    },
+    {
+      "id": 6,
+      "name": "World of Camping",
+      "company": "World of Camping",
+      "handle": "@worldofcamping",
+      "role": "Online Retailer",
+      "channel": "Instagram",
+      "status": "DM Sent",
+      "time": "16:30",
+      "type": "dm",
+      "notes": "Cornwall UK, 5.8K followers"
+    },
+    {
+      "id": 7,
+      "name": "Monashee Outdoors",
+      "company": "Monashee Outdoors",
+      "handle": "@monasheeoutdoors",
+      "role": "Adventure Retailer",
+      "channel": "Instagram",
+      "status": "DM Sent",
+      "time": "17:00",
+      "type": "dm",
+      "notes": "BC Canada, 1.6K followers"
+    },
+    {
+      "id": 8,
+      "name": "MEC",
+      "company": "Mountain Equipment Company",
+      "handle": "@mec",
+      "role": "Leading Canadian Retailer",
+      "channel": "Instagram",
+      "status": "DM Sent",
+      "time": "19:30",
+      "type": "dm",
+      "notes": "Canada, 329K followers, founded 1971"
+    },
+    {
+      "id": 9,
+      "name": "Prago Outdoors",
+      "company": "Prago Outdoors",
+      "handle": "@prago.outdoors",
+      "role": "Wholesale Store",
+      "channel": "Instagram",
+      "status": "Pending",
+      "time": null,
+      "type": "dm",
+      "notes": "Delhi India, 22K followers, DM opened but credits exhausted"
+    }
   ],
   "daily_stats": {
-    "linkedin_messages": 1,
-    "linkedin_connections": 5,
-    "fb_posts": 1,
-    "ins_dms": 1,
-    "total_today": 8,
+    "date": "2026-05-14",
+    "total": 9,
+    "linkedin_interactions": 1,
+    "instagram_dms_sent": 7,
+    "instagram_dms_pending": 1,
+    "facebook_posts": 0,
     "target": 100,
-    "remaining": 92
+    "remaining": 91
   }
 }

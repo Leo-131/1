@@ -1,61 +1,12 @@
 {
-  "date": "2026-04-08",
-  "sent": 0,
-  "pending": 100,
+  "date": "2026-05-14",
+  "version": "2605151345",
+  "sent": 8,
+  "pending": 1,
   "byPlatform": {
-    "linkedin": 0,
+    "linkedin": 1,
     "facebook": 0,
-    "instagram": 0,
+    "instagram": 8,
     "email": 0
-  },
-  "scheduled": [
-    {
-      "id": 5,
-      "name": "David Dreyer",
-      "platform": "linkedin",
-      "timezone": "America/Chicago",
-      "scheduledTime": "2026-04-08T01:59:00.000Z",
-      "localTime": "20:59"
-    },
-    {
-      "id": 6,
-      "name": "Allan King",
-      "platform": "linkedin",
-      "timezone": "Australia/Sydney",
-      "scheduledTime": "2026-04-09T01:25:00.000Z",
-      "localTime": "11:25"
-    },
-    {
-      "id": 2,
-      "name": "Alain Oberholzer",
-      "platform": "linkedin",
-      "timezone": "Europe/Zurich",
-      "scheduledTime": "2026-04-08T08:09:40.934Z",
-      "localTime": "10:09"
-    },
-    {
-      "id": 10,
-      "name": "Markus Weber",
-      "platform": "linkedin",
-      "timezone": "Europe/Berlin",
-      "scheduledTime": "2026-04-08T08:11:40.934Z",
-      "localTime": "10:11"
-    },
-    {
-      "id": 3,
-      "name": "Jason Wang",
-      "platform": "linkedin",
-      "timezone": "America/Los_Angeles",
-      "scheduledTime": "2026-04-08T01:36:00.000Z",
-      "localTime": "18:36"
-    },
-    {
-      "id": 9,
-      "name": "Sarah Johnson",
-      "platform": "linkedin",
-      "timezone": "America/Los_Angeles",
-      "scheduledTime": "2026-04-08T01:35:00.000Z",
-      "localTime": "18:35"
-    }
-  ]
+  }
 }
