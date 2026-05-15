@@ -1,0 +1,22 @@
+{
+  "retailer": {
+    "name": "Outdoor Retailer / Store",
+    "template": "Hi {name}!\n\nI'm Leo from Flextail Gear — we're the #1 seller of ultra-light outdoor electronics on Amazon (portable fans, pumps, lights that fit in your pocket).\n\nI noticed {company} carries great outdoor gear and thought our products would be a perfect fit for your customers. They're ideal for camping, hiking, and overlanding — super compact, high quality, and competitively priced for wholesale.\n\nWould you be open to exploring a distribution partnership? Happy to send samples if you're interested.\n\nBest,\nLeo Liu\nFlextail Gear | Sales & Operations"
+  },
+  "distributor": {
+    "name": "Distributor / Wholesaler",
+    "template": "Hi {name}!\n\nI'm Leo from Flextail Gear. We specialize in ultra-lightweight outdoor electronics — portable fans, air pumps, camping lights — and we're the top seller in our category on Amazon.\n\nGiven {company}'s distribution network, I think there could be a strong partnership opportunity. Our products have proven demand (100K+ units sold) with excellent margins for wholesale partners.\n\nWould love to discuss potential distribution. Could we set up a quick call?\n\nBest,\nLeo Liu\nFlextail Gear | Sales & Operations"
+  },
+  "small_retailer": {
+    "name": "Small / Independent Retailer",
+    "template": "Hey {name}! 👋\n\nLove what you're doing at {company} — really great outdoor selection!\n\nI'm Leo from Flextail Gear. We make ultra-light outdoor electronics (tiny fans, pumps, lights) that are perfect for campers and hikers. We're the #1 seller in our niche on Amazon.\n\nThought your customers would love these — they're super portable and genuinely useful in the field. Would you be interested in checking out our catalog for wholesale?\n\nCheers,\nLeo"
+  },
+  "follow_up_1": {
+    "name": "Follow-up (Day 3-5)",
+    "template": "Hi {name}, just following up on my earlier message. Would love to connect about a potential partnership — let me know if you'd be interested in seeing some samples! 🏕️\n\nBest,\nLeo"
+  },
+  "follow_up_2": {
+    "name": "Follow-up (Day 7-10)",
+    "template": "Hi {name}, one last try here! If the timing isn't right, no worries at all. But if you're ever looking for innovative outdoor electronics for {company}, we'd love to work with you.\n\nBest,\nLeo Liu\nFlextail Gear"
+  }
+}

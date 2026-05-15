@@ -1,9 +1,9 @@
 {
   "id": "main",
-  "name": "Google Sheets数据缺失",
+  "name": "IG外展进展",
   "status": "active",
   "createdAt": "2026-04-21T09:05:18.640Z",
-  "updatedAt": "2026-05-07T14:04:00.463Z",
+  "updatedAt": "2026-05-15T13:12:25.177Z",
   "agents": [
     {
       "id": "agent_rz6sq1dc",
@@ -17,9 +17,9 @@
   ],
   "summary": {
     "id": "summary_4wtn1j0e",
-    "title": "Google Sheets数据缺失",
+    "title": "IG外展进展",
     "createdAt": "2026-04-21T09:05:18.640Z",
     "file": "summary_4wtn1j0e.md"
   },
-  "lastMessageCount": 30
+  "lastMessageCount": 75
 }

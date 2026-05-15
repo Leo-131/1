@@ -1,15 +1,23 @@
 ## 任务背景
-v16.3完成后用户指出仍有数据缺失，提供了Google Sheets作为数据源链接。
+老大进行Flextail Gear（超轻户外电子产品）Instagram DM营销，通过IG搜索户外零售商逐个发DM推广。
 
 ## 执行过程
-1. 尝试抓取Google Sheets数据→受限无法直接访问
-2. 尝试用浏览器工具打开→file://协议不支持，浏览器工具不可用
-3. 请用户截图或复制粘贴数据过来
+1. 尝试给KTP发DM失败
+2. DM按钮无反应换路径
+3. 走/direct/new/搜索
+4. KTP设了陌生人DM限制
+5. 搜索新目标全失败
+6. 6个账号不存在或关店
+7. 汇报进度和问题
+8. 追加记忆到日志文件
 
 ## 关键结果
-- ⚠️ Google Sheets无法直接访问：`https://docs.google.com/spreadsheets/d/16p8XtvsdI_yesMVjhKfDWOp95JdAtEEvelOw5_NOQ64/edit?gid=0`
-- 浏览器工具报错："Navigation blocked: unsupported protocol 'file:'"
-- 已请求用户手动提供数据内容
+- 今日仅成功发送1条DM（@triedandtroutsupply）
+- 6个目标失败：账号不存在/已关店/DM受限
+- 累计确认发送8条DM，收到6条回复待处理
+- MEC/Campmor/Cotswold为高优先级回复（都给了邮箱）
+- CfT浏览器DM功能不稳定：按钮无反应、hashtag搜索被重定向
+- 追加记录到 memory/2026-05-15.md
 
 ## 结论建议
-需用户截图或复制Google Sheets数据，对照看板补全缺失项。后续可考虑将Google Sheets作为看板数据源集成。
+建议转向处理已有邮箱回复（MEC/Campmor/Cotswold等），可能比继续盲目找新目标转化率更高。CfT浏览器DM功能需排查。

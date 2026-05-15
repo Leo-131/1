@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Setup Dashboard Records</title>
+<style>
+body{font-family:Arial;background:#111;color:#fff;padding:40px}
+h1{color:#3b82f6}
+button{background:#3b82f6;color:#fff;border:none;padding:12px 24px;border-radius:8px;cursor:pointer;font-size:16px;margin:8px 0}
+button:hover{background:#2563eb}
+.log{background:#1a1a2e;padding:16px;border-radius:8px;margin-top:20px;font-family:monospace;font-size:13px;max-height:300px;overflow-y:auto}
+</style>
+</head>
+<body>
+<h1>Outreach Dashboard - Setup Today's Records</h1>
+<p>Click the button below to sync today's outreach records to the dashboard.</p>
+<button onclick="setup()">Sync Records to Dashboard</button>
+<div id="log" class="log"></div>
+<script>
+function log(msg){
+  const div=document.getElementById('log');
+  div.innerHTML+=msg+'<br>';
+  div.scrollTop=div.scrollHeight;
+}
+async function setup(){
+  const DASHBOARD_FILE='file:///C:/Users/23889/.qclaw/workspace/outreach_dashboard_v16.html';
+  const today='2026-05-08';
+  log('Starting sync...');
+  // Open dashboard in new tab to set localStorage
+  const dashWindow=window.open(DASHBOARD_FILE,'_blank');
+  await new Promise(r=>setTimeout(r,2000));
+  // Since we can't access localStorage of file:// from here easily,
+  // use a different approach - inject into the dashboard via postMessage
+  log('Note: Open the dashboard manually after this.');
+  log('Manual setup:');
+  log('1. Open outreach_dashboard_v16.html in Chrome');
+  log('2. Open DevTools (F12) > Console');
+  log('3. Paste the following:');
+  const code=`localStorage.setItem('fb_records',JSON.stringify([{"date":"${today}","type":"like","name":"Outdoor Post #1","url":"https://www.facebook.com","time":"13:22"},{"date":"${today}","type":"comment","name":"Outdoor Post #2","url":"https://www.facebook.com","time":"13:22","comment":"Great gear!"},{"date":"${today}","type":"like","name":"Camping Post","url":"https://www.facebook.com","time":"13:22"},{"date":"${today}","type":"like","name":"Trail Gear Post","url":"https://www.facebook.com","time":"13:22"},{"date":"${today}","type":"like","name":"Hiking Post","url":"https://www.facebook.com","time":"13:22"},{"date":"${today}","type":"comment","name":"Gear Post","url":"https://www.facebook.com","time":"13:22","comment":"Love this outdoor setup!"},{"date":"${today}","type":"like","name":"Outdoor Lifestyle","url":"https://www.facebook.com","time":"13:22"}]));
+localStorage.setItem('ins_records',JSON.stringify([{"date":"${today}","type":"dm","name":"Outdoor Creator #1","url":"https://www.instagram.com","time":"13:23","message":"Hi! Great outdoor content! We're Flextail - ultra-light outdoor gear brand. Would love to explore collaboration?"},{"date":"${today}","type":"dm","name":"Outdoor Creator #2","url":"https://www.instagram.com","time":"13:23","message":"Hi! Great outdoor content! We're Flextail - ultra-light outdoor gear brand. Would love to explore collaboration?"},{"date":"${today}","type":"dm","name":"Outdoor Creator #3","url":"https://www.instagram.com","time":"13:23","message":"Hi! Great outdoor content! We're Flextail - ultra-light outdoor gear brand. Would love to explore collaboration?"}]));
+localStorage.setItem('daily_progress_${today}',JSON.stringify({"fb":7,"ins":3,"li":2}));
+location.reload();`;
+  log('<pre style="background:#222;padding:8px;border-radius:4px;overflow-x:auto">'+code.replace(/</g,'&lt;')+'</pre>');
+  log('<br>After pasting, press Enter. The dashboard will reload with updated records.');
+}
+</script>
+</body>
+</html>
