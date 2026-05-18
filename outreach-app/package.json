@@ -1,0 +1,17 @@
+{
+  "name": "outreach-dashboard",
+  "version": "17.0.0",
+  "description": "Flextail Gear Social Media Outreach Dashboard",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx serve .",
+    "build": "echo 'Static site - no build needed'",
+    "deploy": "vercel --prod"
+  },
+  "keywords": ["outreach", "dashboard", "flextail", "social-media"],
+  "author": "Leo Liu",
+  "license": "MIT",
+  "devDependencies": {
+    "serve": "^14.2.0"
+  }
+}

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Outreach Dashboard v17.0 — Flextail Gear</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#3b82f6">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect fill='%233b82f6' width='32' height='32' rx='6'/%3E%3Ctext x='16' y='22' text-anchor='middle' fill='white' font-size='18'%3E%E2%9A%A1%3C/text%3E%3C/svg%3E">
+</head>
+<body>
+<h1>⚡ Outreach Dashboard v17.0</h1>
+<p class="subtitle">Flextail Gear · Social Media Outreach System</p>
+
+<!-- Platform Tabs -->
+<div class="platform-tabs">
+  <button class="tab-btn active" onclick="setPlatform('all')">All</button>
+  <button class="tab-btn" onclick="setPlatform('linkedin')">LinkedIn</button>
+  <button class="tab-btn facebook" onclick="setPlatform('facebook')">Facebook</button>
+  <button class="tab-btn instagram" onclick="setPlatform('instagram')">Instagram</button>
+</div>
+
+<!-- KPI Grid -->
+<div class="kpi-grid">
+  <div class="kpi hero orange" onclick="toggleDetail('today')">
+    <span class="click-hint">Click</span>
+    <div class="label">Today's Progress</div>
+    <div class="value" id="kpi-today">0</div>
+    <div class="sub">of 100 target</div>
+  </div>
+  <div class="kpi blue" onclick="toggleDetail('total')">
+    <span class="click-hint">Click</span>
+    <div class="label">Total Outreach</div>
+    <div class="value" id="kpi-total">0</div>
+    <div class="sub">all time</div>
+  </div>
+  <div class="kpi green" onclick="toggleDetail('accepted')">
+    <span class="click-hint">Click</span>
+    <div class="label">Accepted</div>
+    <div class="value" id="kpi-accepted">0</div>
+    <div class="sub">connections</div>
+  </div>
+  <div class="kpi purple" onclick="toggleDetail('tier1')">
+    <span class="click-hint">Click</span>
+    <div class="label">Tier 1 Contacts</div>
+    <div class="value" id="kpi-tier1">0</div>
+    <div class="sub">high priority</div>
+  </div>
+</div>
+
+<!-- Automation Control Console -->
+<div class="bot-console" id="bot-console">
+  <h3>⚡ Automation Control Console <span style="font-size:10px;color:#64748b;font-weight:400">v17</span></h3>
+  <div class="bot-server-row">
+    <div class="bot-server-indicator" id="server-dot"></div>
+    <span style="font-size:11px;color:#94a3b8" id="server-text">Offline</span>
+    <input type="text" id="server-url" value="ws://localhost:3456" placeholder="ws://host:port" style="flex:1;padding:6px 10px;border-radius:6px;border:1px solid #2a2d3e;background:#0f1117;color:#e2e8f0;font-size:11px">
+    <button class="btn-sm btn-primary" onclick="botConnect()" id="btn-connect">🔗 Connect</button>
+  </div>
+  <div class="bot-platforms">
+    <div class="bot-platform-card" id="bp-li">
+      <div class="bp-header">
+        <span class="bp-icon">📡</span>
+        <span class="bp-name">LinkedIn</span>
+        <span class="bp-status-badge idle" id="bp-li-status">Idle</span>
+      </div>
+      <div class="bp-stats-row">
+        <div class="bp-stat"><div class="bp-stat-val" id="bp-li-sent">0</div><div class="bp-stat-lbl">Sent Today</div></div>
+        <div class="bp-stat"><div class="bp-stat-val" id="bp-li-target">0</div><div class="bp-stat-lbl">Target</div></div>
+      </div>
+      <div class="bp-actions">
+        <button class="btn-bot btn-bot-start" onclick="botStart('li')" id="bp-li-start">Start</button>
+        <button class="btn-bot btn-bot-stop" onclick="botStop('li')" id="bp-li-stop" disabled>Stop</button>
+      </div>
+    </div>
+    <div class="bot-platform-card" id="bp-ins">
+      <div class="bp-header">
+        <span class="bp-icon">📸</span>
+        <span class="bp-name">Instagram</span>
+        <span class="bp-status-badge idle" id="bp-ins-status">Idle</span>
+      </div>
+      <div class="bp-stats-row">
+        <div class="bp-stat"><div class="bp-stat-val" id="bp-ins-sent">0</div><div class="bp-stat-lbl">Sent Today</div></div>
+        <div class="bp-stat"><div class="bp-stat-val" id="bp-ins-target">25</div><div class="bp-stat-lbl">Target</div></div>
+      </div>
+      <div class="bp-actions">
+        <button class="btn-bot btn-bot-start" onclick="botStart('ins')" id="bp-ins-start">Start</button>
+        <button class="btn-bot btn-bot-stop" onclick="botStop('ins')" id="bp-ins-stop" disabled>Stop</button>
+      </div>
+    </div>
+    <div class="bot-platform-card" id="bp-fb">
+      <div class="bp-header">
+        <span class="bp-icon">👥</span>
+        <span class="bp-name">Facebook</span>
+        <span class="bp-status-badge idle" id="bp-fb-status">Idle</span>
+      </div>
+      <div class="bp-stats-row">
+        <div class="bp-stat"><div class="bp-stat-val" id="bp-fb-sent">0</div><div class="bp-stat-lbl">Sent Today</div></div>
+        <div class="bp-stat"><div class="bp-stat-val" id="bp-fb-target">15</div><div class="bp-stat-lbl">Target</div></div>
+      </div>
+      <div class="bp-actions">
+        <button class="btn-bot btn-bot-start" onclick="botStart('fb')" id="bp-fb-start">Start</button>
+        <button class="btn-bot btn-bot-stop" onclick="botStop('fb')" id="bp-fb-stop" disabled>Stop</button>
+      </div>
+    </div>
+  </div>
+  <div class="bot-batch-controls">
+    <button class="btn-sm btn-primary" onclick="botStartAll()">▶️ Start All</button>
+    <button class="btn-sm btn-secondary" onclick="botStopAll()">⏹️ Stop All</button>
+    <label style="font-size:11px;color:#64748b;margin-left:10px"><input type="checkbox" id="headless-mode" style="vertical-align:middle"> Headless</label>
+    <label style="font-size:11px;color:#64748b;margin-left:10px">Max: <input type="number" id="max-count" value="100" style="width:50px;padding:2px 6px"></label>
+  </div>
+  <div class="bot-log-area" id="bot-log">
+    <div class="bot-log-entry"><span class="bot-log-time">--:--:--</span><span class="bot-log-msg info">📁 Ready. Connect to server or use standalone mode.</span></div>
+  </div>
+  <button class="btn-sm" onclick="clearBotLog()" style="margin-top:8px;background:#1e293b;border:1px solid #334155;color:#64748b">🗑️ Clear Log</button>
+</div>
+
+<!-- Toolbar Sync -->
+<div class="toolbar-btns" id="toolbar-sync">
+  <button class="btn-sm btn-primary" onclick="showSyncModal()">🔄 Import JSON</button>
+  <button class="btn-sm btn-secondary" onclick="exportDailyData()">📥 Export Data</button>
+  <button class="btn-sm btn-secondary" onclick="openSetupTool()">⚡ Setup Tool</button>
+  <span style="font-size:11px;color:#555;margin-left:auto">Drag & drop contacts.json to import</span>
+</div>
+
+<!-- Drop Zone -->
+<div class="drop-zone" id="drop-zone" style="display:none">
+  <div class="drop-zone-icon">📎</div>
+  <div class="drop-zone-text">Drop JSON file here to import records</div>
+  <div class="drop-zone-hint">Supports: contacts.json, today-outreach.json, any JSON array</div>
+</div>
+
+<!-- Detail Panels -->
+<div id="detail-panels"></div>
+
+<!-- Platform Content -->
+<div id="platform-content"></div>
+
+<!-- Scripts -->
+<script src="js/data.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

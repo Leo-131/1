@@ -1,0 +1,16 @@
+{
+  "name": "Outreach Dashboard",
+  "short_name": "Outreach",
+  "description": "Flextail Gear Social Media Outreach Dashboard",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0f1117",
+  "theme_color": "#3b82f6",
+  "icons": [
+    {
+      "src": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 192 192'%3E%3Crect fill='%233b82f6' width='192' height='192' rx='24'/%3E%3Ctext x='96' y='120' text-anchor='middle' fill='white' font-size='80'%3E%E2%9A%A1%3C/text%3E%3C/svg%3E",
+      "sizes": "192x192",
+      "type": "image/svg+xml"
+    }
+  ]
+}

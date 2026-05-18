@@ -1,47 +1,287 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-CN">
 <head>
-<title>Setup Dashboard Records</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Outreach - Sync Records</title>
 <style>
-body{font-family:Arial;background:#111;color:#fff;padding:40px}
-h1{color:#3b82f6}
-button{background:#3b82f6;color:#fff;border:none;padding:12px 24px;border-radius:8px;cursor:pointer;font-size:16px;margin:8px 0}
-button:hover{background:#2563eb}
-.log{background:#1a1a2e;padding:16px;border-radius:8px;margin-top:20px;font-family:monospace;font-size:13px;max-height:300px;overflow-y:auto}
+* { margin: 0; padding: 0; box-sizing: border-box }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #0f172a; color: #e2e8f0; min-height: 100vh; padding: 20px }
+.container { max-width: 900px; margin: 0 auto }
+h1 { font-size: 24px; margin-bottom: 8px }
+.subtitle { color: #94a3b8; font-size: 14px; margin-bottom: 24px }
+.card { background: #1e293b; border-radius: 12px; padding: 20px; margin-bottom: 16px }
+.card h3 { font-size: 16px; margin-bottom: 12px; display: flex; align-items: center; gap: 8px }
+.card h3 .badge { font-size: 11px; padding: 2px 8px; border-radius: 99px; font-weight: 600 }
+.badge-blue { background: #3b82f6; color: #fff }
+.badge-pink { background: #ec4899; color: #fff }
+.row { display: grid; grid-template-columns: 2fr 2fr 1fr 1fr 80px 40px; gap: 8px; align-items: center; margin-bottom: 8px }
+.row.header { font-size: 12px; color: #64748b; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px }
+input, select, textarea { background: #334155; border: 1px solid #475569; color: #e2e8f0; padding: 8px 10px; border-radius: 6px; font-size: 13px; width: 100% }
+input:focus, select:focus, textarea:focus { outline: none; border-color: #3b82f6 }
+textarea { resize: vertical; min-height: 60px }
+.btn { padding: 10px 20px; border: none; border-radius: 8px; cursor: pointer; font-size: 14px; font-weight: 600; transition: all 0.2s }
+.btn-primary { background: #3b82f6; color: #fff }
+.btn-primary:hover { background: #2563eb; transform: translateY(-1px) }
+.btn-danger { background: #ef4444; color: #fff; padding: 4px 8px; font-size: 12px; border-radius: 4px }
+.btn-danger:hover { background: #dc2626 }
+.btn-sm { padding: 6px 12px; font-size: 12px }
+.btn-green { background: #22c55e; color: #fff; padding: 10px 24px; font-size: 16px; border-radius: 8px }
+.btn-green:hover { background: #16a34a; transform: translateY(-1px) }
+.actions { display: flex; gap: 12px; margin-top: 24px; align-items: center }
+.log { background: #0f172a; border: 1px solid #334155; border-radius: 8px; padding: 16px; margin-top: 16px; font-family: 'Cascadia Code', 'Fira Code', monospace; font-size: 13px; max-height: 400px; overflow-y: auto; display: none }
+.log.show { display: block }
+.log .ok { color: #22c55e }
+.log .err { color: #ef4444 }
+.log .info { color: #60a5fa }
+.today { color: #fbbf24; font-weight: 600 }
+.stats-bar { display: flex; gap: 16px; margin-bottom: 20px }
+.stat { background: #1e293b; border-radius: 8px; padding: 12px 20px; text-align: center; flex: 1 }
+.stat .num { font-size: 28px; font-weight: 700 }
+.stat .lbl { font-size: 12px; color: #64748b; margin-top: 4px }
+.fb-color { color: #3b82f6 }
+.ins-color { color: #ec4899 }
+.total-color { color: #fbbf24 }
 </style>
 </head>
 <body>
-<h1>Outreach Dashboard - Setup Today's Records</h1>
-<p>Click the button below to sync today's outreach records to the dashboard.</p>
-<button onclick="setup()">Sync Records to Dashboard</button>
-<div id="log" class="log"></div>
+<div class="container">
+  <h1>⚡ Outreach Sync Tool</h1>
+  <p class="subtitle">Add today's records and sync to <code>outreach_dashboard_v16.html</code></p>
+
+  <div class="stats-bar">
+    <div class="stat"><div class="num total-color" id="stat-total">0</div><div class="lbl">Total Today</div></div>
+    <div class="stat"><div class="num fb-color" id="stat-fb">0</div><div class="lbl">Facebook</div></div>
+    <div class="stat"><div class="num ins-color" id="stat-ins">0</div><div class="lbl">Instagram</div></div>
+  </div>
+
+  <!-- Facebook Records -->
+  <div class="card">
+    <h3>📘 Facebook <span class="badge badge-blue" id="fb-count">0 records</span></h3>
+    <div class="row header"><span>Account</span><span>Page/Group</span><span>Type</span><span>Date</span><span></span><span></span></div>
+    <div id="fb-records"></div>
+    <button class="btn btn-sm btn-primary" style="margin-top:12px" onclick="addFBRow()">+ Add Facebook Record</button>
+  </div>
+
+  <!-- Instagram Records -->
+  <div class="card">
+    <h3>📸 Instagram <span class="badge badge-pink" id="ins-count">0 records</span></h3>
+    <div class="row header"><span>Account</span><span>Name/Role</span><span>DM Summary</span><span>Date</span><span></span><span></span></div>
+    <div id="ins-records"></div>
+    <button class="btn btn-sm btn-primary" style="margin-top:12px" onclick="addINSRow()">+ Add Instagram Record</button>
+  </div>
+
+  <div class="actions">
+    <button class="btn btn-green" onclick="syncToDashboard()">🔄 Sync to Dashboard</button>
+    <button class="btn btn-primary" onclick="openDashboard()">📊 Open Dashboard</button>
+    <span id="sync-time" style="color:#64748b;font-size:13px"></span>
+  </div>
+
+  <div class="log" id="log"></div>
+</div>
+
 <script>
-function log(msg){
-  const div=document.getElementById('log');
-  div.innerHTML+=msg+'<br>';
-  div.scrollTop=div.scrollHeight;
+const DASHBOARD_PATH = 'C:\\Users\\23889\\.qclaw\\workspace\\outreach_dashboard_v16.html';
+let fbRows = [];
+let insRows = [];
+
+function today() { return new Date().toISOString().split('T')[0]; }
+
+function addFBRow(data) {
+  const row = data || { account: '', page: '', type: 'like', date: today(), status: 'Done' };
+  fbRows.push(row);
+  renderFB();
 }
-async function setup(){
-  const DASHBOARD_FILE='file:///C:/Users/23889/.qclaw/workspace/outreach_dashboard_v16.html';
-  const today='2026-05-08';
-  log('Starting sync...');
-  // Open dashboard in new tab to set localStorage
-  const dashWindow=window.open(DASHBOARD_FILE,'_blank');
-  await new Promise(r=>setTimeout(r,2000));
-  // Since we can't access localStorage of file:// from here easily,
-  // use a different approach - inject into the dashboard via postMessage
-  log('Note: Open the dashboard manually after this.');
-  log('Manual setup:');
-  log('1. Open outreach_dashboard_v16.html in Chrome');
-  log('2. Open DevTools (F12) > Console');
-  log('3. Paste the following:');
-  const code=`localStorage.setItem('fb_records',JSON.stringify([{"date":"${today}","type":"like","name":"Outdoor Post #1","url":"https://www.facebook.com","time":"13:22"},{"date":"${today}","type":"comment","name":"Outdoor Post #2","url":"https://www.facebook.com","time":"13:22","comment":"Great gear!"},{"date":"${today}","type":"like","name":"Camping Post","url":"https://www.facebook.com","time":"13:22"},{"date":"${today}","type":"like","name":"Trail Gear Post","url":"https://www.facebook.com","time":"13:22"},{"date":"${today}","type":"like","name":"Hiking Post","url":"https://www.facebook.com","time":"13:22"},{"date":"${today}","type":"comment","name":"Gear Post","url":"https://www.facebook.com","time":"13:22","comment":"Love this outdoor setup!"},{"date":"${today}","type":"like","name":"Outdoor Lifestyle","url":"https://www.facebook.com","time":"13:22"}]));
-localStorage.setItem('ins_records',JSON.stringify([{"date":"${today}","type":"dm","name":"Outdoor Creator #1","url":"https://www.instagram.com","time":"13:23","message":"Hi! Great outdoor content! We're Flextail - ultra-light outdoor gear brand. Would love to explore collaboration?"},{"date":"${today}","type":"dm","name":"Outdoor Creator #2","url":"https://www.instagram.com","time":"13:23","message":"Hi! Great outdoor content! We're Flextail - ultra-light outdoor gear brand. Would love to explore collaboration?"},{"date":"${today}","type":"dm","name":"Outdoor Creator #3","url":"https://www.instagram.com","time":"13:23","message":"Hi! Great outdoor content! We're Flextail - ultra-light outdoor gear brand. Would love to explore collaboration?"}]));
-localStorage.setItem('daily_progress_${today}',JSON.stringify({"fb":7,"ins":3,"li":2}));
-location.reload();`;
-  log('<pre style="background:#222;padding:8px;border-radius:4px;overflow-x:auto">'+code.replace(/</g,'&lt;')+'</pre>');
-  log('<br>After pasting, press Enter. The dashboard will reload with updated records.');
+
+function addINSRow(data) {
+  const row = data || { account: '', name: '', dm: '', date: today(), status: 'Sent' };
+  insRows.push(row);
+  renderINS();
 }
+
+function removeFB(i) { fbRows.splice(i, 1); renderFB(); }
+function removeINS(i) { insRows.splice(i, 1); renderINS(); }
+
+function updateFB(i, field, val) { fbRows[i][field] = val; }
+function updateINS(i, field, val) { insRows[i][field] = val; }
+
+function renderFB() {
+  const c = document.getElementById('fb-records');
+  c.innerHTML = fbRows.map((r, i) => `
+    <div class="row">
+      <input value="${esc(r.account)}" onchange="updateFB(${i},'account',this.value)" placeholder="@account or page name">
+      <input value="${esc(r.page)}" onchange="updateFB(${i},'page',this.value)" placeholder="Group/page name">
+      <select onchange="updateFB(${i},'type',this.value)">
+        <option ${r.type==='like'?'selected':''}>like</option>
+        <option ${r.type==='comment'?'selected':''}>comment</option>
+        <option ${r.type==='share'?'selected':''}>share</option>
+        <option ${r.type==='join'?'selected':''}>join</option>
+      </select>
+      <input type="date" value="${r.date}" onchange="updateFB(${i},'date',this.value)">
+      <select onchange="updateFB(${i},'status',this.value)">
+        <option ${r.status==='Done'?'selected':''}>Done</option>
+        <option ${r.status==='Pending'?'selected':''}>Pending</option>
+      </select>
+      <button class="btn btn-danger" onclick="removeFB(${i})">✕</button>
+    </div>
+  `).join('');
+  document.getElementById('fb-count').textContent = fbRows.length + ' records';
+  updateStats();
+}
+
+function renderINS() {
+  const c = document.getElementById('ins-records');
+  c.innerHTML = insRows.map((r, i) => `
+    <div class="row">
+      <input value="${esc(r.account)}" onchange="updateINS(${i},'account',this.value)" placeholder="@instagram_handle">
+      <input value="${esc(r.name)}" onchange="updateINS(${i},'name',this.value)" placeholder="Brand name / role">
+      <input value="${esc(r.dm)}" onchange="updateINS(${i},'dm',this.value)" placeholder="DM summary">
+      <input type="date" value="${r.date}" onchange="updateINS(${i},'date',this.value)">
+      <select onchange="updateINS(${i},'status',this.value)">
+        <option ${r.status==='Sent'?'selected':''}>Sent</option>
+        <option ${r.status==='Replied'?'selected':''}>Replied</option>
+        <option ${r.status==='Failed'?'selected':''}>Failed</option>
+        <option ${r.status==='Pending'?'selected':''}>Pending</option>
+      </select>
+      <button class="btn btn-danger" onclick="removeINS(${i})">✕</button>
+    </div>
+  `).join('');
+  document.getElementById('ins-count').textContent = insRows.length + ' records';
+  updateStats();
+}
+
+function updateStats() {
+  document.getElementById('stat-total').textContent = fbRows.length + insRows.length;
+  document.getElementById('stat-fb').textContent = fbRows.length;
+  document.getElementById('stat-ins').textContent = insRows.length;
+}
+
+function esc(s) { return (s||'').replace(/"/g, '&quot;').replace(/</g, '&lt;'); }
+
+function log(msg, type) {
+  const el = document.getElementById('log');
+  el.classList.add('show');
+  el.innerHTML += `<div class="${type||'info'}">${new Date().toLocaleTimeString()} ${msg}</div>`;
+  el.scrollTop = el.scrollHeight;
+}
+
+function syncToDashboard() {
+  const logEl = document.getElementById('log');
+  logEl.classList.add('show');
+  logEl.innerHTML = '';
+
+  if (fbRows.length === 0 && insRows.length === 0) {
+    log('⚠️ No records to sync. Add some records first.', 'err');
+    return;
+  }
+
+  log('🔄 Starting sync...', 'info');
+
+  try {
+    const fs = require('fs');
+    const path = require('path');
+
+    if (!fs.existsSync(DASHBOARD_PATH)) {
+      log(`❌ Dashboard not found: ${DASHBOARD_PATH}`, 'err');
+      return;
+    }
+
+    let html = fs.readFileSync(DASHBOARD_PATH, 'utf8');
+    const todayStr = today();
+
+    // Build STATIC_FB_RECORDS replacement
+    // Merge existing static records with new ones, keeping unique entries
+    const existingFBRaw = html.match(/STATIC_FB_RECORDS\s*=\s*\[([\s\S]*?)\];/);
+    let existingFB = [];
+    if (existingFBRaw) {
+      try { existingFB = JSON.parse('[' + existingFBRaw[1] + ']'); } catch(e) {}
+    }
+
+    // Build STATIC_INS_RECORDS replacement
+    const existingINSRaw = html.match(/STATIC_INS_RECORDS\s*=\s*\[([\s\S]*?)\];/);
+    let existingINS = [];
+    if (existingINSRaw) {
+      try { existingINS = JSON.parse('[' + existingINSRaw[1] + ']'); } catch(e) {}
+    }
+
+    // Add new records, avoiding duplicates by account+date
+    const existingFBKeys = new Set(existingFB.map(r => r.name + '|' + r.date));
+    const existingINSKeys = new Set(existingINS.map(r => r.account + '|' + r.date));
+
+    let fbAdded = 0;
+    fbRows.forEach(r => {
+      const key = r.account + '|' + r.date;
+      if (!existingFBKeys.has(key) && r.account) {
+        existingFB.push({ name: r.account, page: r.page, type: r.type, date: r.date, status: r.status });
+        existingFBKeys.add(key);
+        fbAdded++;
+      }
+    });
+
+    let insAdded = 0;
+    insRows.forEach(r => {
+      const key = r.account + '|' + r.date;
+      if (!existingINSKeys.has(key) && r.account) {
+        existingINS.push({ account: r.account, name: r.name, dm: r.dm, date: r.date, status: r.status });
+        existingINSKeys.add(key);
+        insAdded++;
+      }
+    });
+
+    // Generate replacement strings
+    const fbStr = 'STATIC_FB_RECORDS = ' + JSON.stringify(existingFB, null, 2) + ';';
+    const insStr = 'STATIC_INS_RECORDS = ' + JSON.stringify(existingINS, null, 2) + ';';
+
+    // Replace in HTML
+    html = html.replace(/STATIC_FB_RECORDS\s*=\s*\[[\s\S]*?\];/, fbStr);
+    html = html.replace(/STATIC_INS_RECORDS\s*=\s*\[[\s\S]*?\];/, insStr);
+
+    // Backup first
+    const backupPath = DASHBOARD_PATH.replace('.html', '_backup_' + todayStr.replace(/-/g, '') + '.html');
+    if (!fs.existsSync(backupPath)) {
+      fs.copyFileSync(DASHBOARD_PATH, backupPath);
+      log(`📦 Backup saved: ${path.basename(backupPath)}`, 'info');
+    }
+
+    // Write updated HTML
+    fs.writeFileSync(DASHBOARD_PATH, html, 'utf8');
+
+    log(`✅ Sync complete!`, 'ok');
+    log(`   Facebook: +${fbAdded} new records (${existingFB.length} total static)`, 'ok');
+    log(`   Instagram: +${insAdded} new records (${existingINS.length} total static)`, 'ok');
+    log(`   Dashboard updated: outreach_dashboard_v16.html`, 'ok');
+
+    document.getElementById('sync-time').textContent = 'Last sync: ' + new Date().toLocaleTimeString();
+
+    // Clear synced rows
+    fbRows = [];
+    insRows = [];
+    renderFB();
+    renderINS();
+
+  } catch(e) {
+    log('❌ Error: ' + e.message, 'err');
+    console.error(e);
+  }
+}
+
+function openDashboard() {
+  window.open('file:///' + DASHBOARD_PATH.replace(/\\/g, '/'), '_blank');
+}
+
+// Auto-restore from localStorage
+try {
+  const saved = JSON.parse(localStorage.getItem('sync_tool_state') || '{}');
+  if (saved.fb) saved.fb.forEach(r => addFBRow(r));
+  if (saved.ins) saved.ins.forEach(r => addINSRow(r));
+} catch(e) {}
+
+// Auto-save to localStorage on change
+const origAddFB = addFBRow;
+const origAddINS = addINSRow;
+setInterval(() => {
+  try { localStorage.setItem('sync_tool_state', JSON.stringify({ fb: fbRows, ins: insRows })); } catch(e) {}
+}, 3000);
 </script>
 </body>
 </html>
