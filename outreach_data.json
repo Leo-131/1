@@ -1,24 +1,13 @@
 {
   "stats": {
-    "version": "26051903",
-    "last_run": "2026-05-19 12:00:00",
+    "version": "15.2",
+    "last_run": "2026-05-19 04:15:09",
     "total_contacts": 844,
     "source": "Multi-Sheet Sync",
     "breakdown": {
       "outreach_data": 25,
       "okki": 82,
       "salesrobot": 737
-    },
-    "analysis": {
-      "accepted": 7,
-      "pending": 77,
-      "failed": 23,
-      "salesrobot_active": 737,
-      "tier1": 111,
-      "tier2": 11,
-      "tier3": 26,
-      "designer_excluded": 22,
-      "nontarget_roles": 696
     }
   },
   "contacts": [
@@ -348,7 +337,7 @@
       "source": "outreach_data"
     },
     {
-      "id": "sheet_1779163507671_c0ng53gc4",
+      "id": "sheet_1779164108259_6t4xj9nt2",
       "name": "John Mclauchlan",
       "company": "VIRESCO (UK)",
       "role": "",
@@ -362,7 +351,7 @@
       "source": "okki"
     },
     {
-      "id": "sheet_1779163507672_an527mxp4",
+      "id": "sheet_1779164108261_4pwsobgdf",
       "name": "Erik Bordin",
       "company": "LINDAB",
       "role": "",
@@ -376,7 +365,7 @@
       "source": "okki"
     },
     {
-      "id": "sheet_1779163507672_1x8x8759s",
+      "id": "sheet_1779164108261_xeoqebcn1",
       "name": "Erik Mueller",
       "company": "PLANK AND HIDE",
       "role": "",
@@ -390,7 +379,7 @@
       "source": "okki"
     },
     {
-      "id": "sheet_1779163507672_44m6t3uhf",
+      "id": "sheet_1779164108261_r18k0mpun",
       "name": "Dave Stegman",
       "company": "PLANK AND HIDE",
       "role": "",
@@ -404,7 +393,7 @@
       "source": "okki"
     },
     {
-      "id": "sheet_1779163507672_f5ggvrpvy",
+      "id": "sheet_1779164108261_8wb5x3b5n",
       "name": "Abhishek Arora",
       "company": "WHISPERING HOMES",
       "role": "",
@@ -418,7 +407,7 @@
       "source": "okki"
     },
     {
-      "id": "sheet_1779163507672_p0a6u24w3",
+      "id": "sheet_1779164108261_sjmurhqp4",
       "name": "Hari Shetty",
       "company": "KTM NORTH AMERICA",
       "role": "",
@@ -432,7 +421,7 @@
       "source": "okki"
     },
     {
-      "id": "sheet_1779163507672_na36u002p",
+      "id": "sheet_1779164108261_fed2ya9z8",
       "name": "Kal",
       "company": "OPTGSM",
       "role": "",
@@ -446,7 +435,7 @@
       "source": "okki"
     },
     {
-      "id": "sheet_1779163507672_kwwxw2m40",
+      "id": "sheet_1779164108261_rvlgeveol",
       "name": "Lauren Boonzaier",
       "company": "MOBIZ",
       "role": "",
@@ -460,7 +449,7 @@
       "source": "okki"
     },
     {
-      "id": "sheet_1779163507672_7cvhj96cq",
+      "id": "sheet_1779164108261_fd27tencz",
       "name": "Lauren Boonzaier",
       "company": "MOBIZ",
       "role": "",
@@ -474,7 +463,7 @@
       "source": "okki"
     },
     {
-      "id": "sheet_1779163507672_u8eqsx221",
+      "id": "sheet_1779164108261_tckmg9xs2",
       "name": "Kal",
       "company": "OPTGSM",
       "role": "",
@@ -488,7 +477,7 @@
       "source": "okki"
     },
     {
-      "id": "sheet_1779163507672_0gh0gd311",
+      "id": "sheet_1779164108261_n4pq94ks9",
       "name": "Naresh Kumar",
       "company": "WHISPERING HOMES",
       "role": "",
@@ -502,7 +491,7 @@
       "source": "okki"
     },
     {
-      "id": "sheet_1779163507672_5fg9pqle6",
+      "id": "sheet_1779164108261_tsjgyoii7",
       "name": "Fiona Mclauchlan",
       "company": "VIRESCO (UK)",
       "role": "",
@@ -516,7 +505,7 @@
       "source": "okki"
     },
     {
-      "id": "sheet_1779163507672_ig3lt4efv",
+      "id": "sheet_1779164108261_a15yjlxr8",
       "name": "Melina P.",
       "company": "KTM NORTH AMERICA",
       "role": "",
@@ -530,7 +519,7 @@
       "source": "okki"
     },
     {
-      "id": "sheet_1779163507672_np5t834q9",
+      "id": "sheet_1779164108261_d3cp09bu5",
       "name": "Martina Kreuzhuber",
       "company": "KTM NORTH AMERICA",
       "role": "",
@@ -544,7 +533,7 @@
       "source": "okki"
     },
     {
-      "id": "sheet_1779163507672_z3r07vyem",
+      "id": "sheet_1779164108261_1mmw4crwa",
       "name": "Joshua King",
       "company": "MCDERMOTT",
       "role": "",
@@ -558,7 +547,7 @@
       "source": "okki"
     },
     {
-      "id": "sheet_1779163507672_6erkxlqj9",
+      "id": "sheet_1779164108261_do0hxl7nn",
       "name": "Ryan Howland",
       "company": "ACADEMY",
       "role": "",
@@ -572,7 +561,7 @@
       "source": "okki"
     },
     {
-      "id": "sheet_1779163507672_hv839wod6",
+      "id": "sheet_1779164108261_lvqvytmsh",
       "name": "Avlisa Casals",
       "company": "RECHIC BOUTIQUE",
       "role": "",
@@ -586,7 +575,7 @@
       "source": "okki"
     },
     {
-      "id": "sheet_1779163507672_o9zvo00xm",
+      "id": "sheet_1779164108261_wfmx0z66q",
       "name": "Melissa Comeau",
       "company": "WALMART",
       "role": "",
@@ -600,7 +589,7 @@
       "source": "okki"
     },
     {
-      "id": "sheet_1779163507672_twkporpps",
+      "id": "sheet_1779164108261_98yda5ovf",
       "name": "Paula Milford",
       "company": "WALMART",
       "role": "",
@@ -614,7 +603,7 @@
       "source": "okki"
     },
     {
-      "id": "sheet_1779163507672_vjh7x0sz0",
+      "id": "sheet_1779164108261_rddc0w2rg",
       "name": "Ellen Karlsen",
       "company": "FAUNA OUTDOOR",
       "role": "",
@@ -628,7 +617,7 @@
       "source": "okki"
     },
     {
-      "id": "sheet_1779163507672_8rfkac7lr",
+      "id": "sheet_1779164108261_sob6m8t3n",
       "name": "Steffan Benson",
       "company": "MERLIN ARCHERY",
       "role": "",
@@ -642,7 +631,7 @@
       "source": "okki"
     },
     {
-      "id": "sheet_1779163507672_y8knz3j7p",
+      "id": "sheet_1779164108261_epv46z5xw",
       "name": "Sage Boyer",
       "company": "TAHOE SPORTS HUB",
       "role": "",
@@ -656,7 +645,7 @@
       "source": "okki"
     },
     {
-      "id": "sheet_1779163507672_0dkdw8jra",
+      "id": "sheet_1779164108261_kd4imkxhb",
       "name": "Pauline Fang",
       "company": "YESCOM USA",
       "role": "",
@@ -670,7 +659,7 @@
       "source": "okki"
     },
     {
-      "id": "sheet_1779163507672_y7u78pu2x",
+      "id": "sheet_1779164108261_x1dylvubn",
       "name": "Marco Cusani-Visconti",
       "company": "DHL GLOBAL FORWARDING",
       "role": "",
@@ -684,7 +673,7 @@
       "source": "okki"
     },
     {
-      "id": "sheet_1779163507672_2avzc2mjx",
+      "id": "sheet_1779164108261_5hi98vl5s",
       "name": "Martina Kreuzhuber",
       "company": "KTM NORTH AMERICA",
       "role": "",
@@ -698,7 +687,7 @@
       "source": "okki"
     },
     {
-      "id": "sheet_1779163507672_xfmuqyx5g",
+      "id": "sheet_1779164108261_4w3tob22e",
       "name": "Sara Wissman",
       "company": "LINDAB",
       "role": "",
@@ -712,7 +701,7 @@
       "source": "okki"
     },
     {
-      "id": "sheet_1779163507672_17qjo8qi5",
+      "id": "sheet_1779164108261_sis1ib6a2",
       "name": "H?kan Bergstr?m",
       "company": "LINDAB",
       "role": "",
@@ -726,7 +715,7 @@
       "source": "okki"
     },
     {
-      "id": "sheet_1779163507672_cyang4z53",
+      "id": "sheet_1779164108261_frznsy4jv",
       "name": "Lauren Boonzaier",
       "company": "MOBIZ",
       "role": "",
@@ -740,7 +729,7 @@
       "source": "okki"
     },
     {
-      "id": "sheet_1779163507672_z3d2r2dvc",
+      "id": "sheet_1779164108261_21vmkzn0d",
       "name": "Isabella Chan",
       "company": "YESCOM USA",
       "role": "",
@@ -754,7 +743,7 @@
       "source": "okki"
     },
     {
-      "id": "sheet_1779163507672_nw8ltbex4",
+      "id": "sheet_1779164108261_5vqh7rw7v",
       "name": "Gabriantik",
       "company": "L ARTE NEL TEMPO DI SIMAK GABRIELE",
       "role": "",
@@ -768,7 +757,7 @@
       "source": "okki"
     },
     {
-      "id": "sheet_1779163507672_v0pfedvs7",
+      "id": "sheet_1779164108261_21pqjhiow",
       "name": "Buck Nelson",
       "company": "BUCKTRACK",
       "role": "",
@@ -782,7 +771,7 @@
       "source": "okki"
     },
     {
-      "id": "sheet_1779163507672_w6spw0wlr",
+      "id": "sheet_1779164108261_36d6jzjkj",
       "name": "Faviola Lavini",
       "company": "INCHCAPE MOTORS PERU",
       "role": "",
@@ -796,7 +785,7 @@
       "source": "okki"
     },
     {
-      "id": "sheet_1779163507672_orpa90crg",
+      "id": "sheet_1779164108261_5n1r6dj95",
       "name": "Corey Champagne",
       "company": "TAHOE SPORTS HUB",
       "role": "",
@@ -810,7 +799,7 @@
       "source": "okki"
     },
     {
-      "id": "sheet_1779163507672_u1ez5ijhz",
+      "id": "sheet_1779164108261_rrynp1qie",
       "name": "Drew Abbott",
       "company": "HAMMACHER SCHLEMMER",
       "role": "",
@@ -824,7 +813,7 @@
       "source": "okki"
     },
     {
-      "id": "sheet_1779163507672_ra1w9pg27",
+      "id": "sheet_1779164108261_e4w0tbg18",
       "name": "Abhishek Arora",
       "company": "WHISPERING HOMES",
       "role": "",
@@ -838,7 +827,7 @@
       "source": "okki"
     },
     {
-      "id": "sheet_1779163507672_9vjny0ntb",
+      "id": "sheet_1779164108261_e067tevru",
       "name": "Melina P.",
       "company": "KTM NORTH AMERICA",
       "role": "",
@@ -852,7 +841,7 @@
       "source": "okki"
     },
     {
-      "id": "sheet_1779163507672_oqp9pxole",
+      "id": "sheet_1779164108261_8ch55t1yz",
       "name": "Wayne C. Babineaux",
       "company": "ACADEMY",
       "role": "",
@@ -866,7 +855,7 @@
       "source": "okki"
     },
     {
-      "id": "sheet_1779163507672_anm5bbwfi",
+      "id": "sheet_1779164108261_g9oqhjs4y",
       "name": "Gabriantik",
       "company": "L ARTE NEL TEMPO DI SIMAK GABRIELE",
       "role": "",
@@ -880,7 +869,7 @@
       "source": "okki"
     },
     {
-      "id": "sheet_1779163507672_cmcfoesth",
+      "id": "sheet_1779164108261_xeoza0pv9",
       "name": "Karen Hammons",
       "company": "HAMMACHER SCHLEMMER",
       "role": "",
@@ -894,7 +883,7 @@
       "source": "okki"
     },
     {
-      "id": "sheet_1779163507672_e4ynqhtku",
+      "id": "sheet_1779164108261_2d6w26b1i",
       "name": "Sage Boyer",
       "company": "TAHOE SPORTS HUB",
       "role": "",
@@ -908,7 +897,7 @@
       "source": "okki"
     },
     {
-      "id": "sheet_1779163507672_exu9pbiu9",
+      "id": "sheet_1779164108261_gk9wj0349",
       "name": "Lauren Boonzaier",
       "company": "MOBIZ",
       "role": "",
@@ -922,7 +911,7 @@
       "source": "okki"
     },
     {
-      "id": "sheet_1779163507672_yosdrxy76",
+      "id": "sheet_1779164108261_w83zv7tcn",
       "name": "Jerry Lester",
       "company": "MCDERMOTT",
       "role": "",
@@ -936,7 +925,7 @@
       "source": "okki"
     },
     {
-      "id": "sheet_1779163507672_yw48lczfb",
+      "id": "sheet_1779164108261_a707vlkhg",
       "name": "Sara Wissman",
       "company": "LINDAB",
       "role": "",
@@ -950,7 +939,7 @@
       "source": "okki"
     },
     {
-      "id": "sheet_1779163507672_w1pjg22dj",
+      "id": "sheet_1779164108261_5vlqgn63g",
       "name": "Jan Lindsten",
       "company": "JOHN DOYLE DISTRIBUTORS",
       "role": "",
@@ -964,7 +953,7 @@
       "source": "okki"
     },
     {
-      "id": "sheet_1779163507672_pkhkkbk30",
+      "id": "sheet_1779164108261_lsg6ebk9v",
       "name": "Erik Bordin",
       "company": "LINDAB",
       "role": "",
@@ -978,7 +967,7 @@
       "source": "okki"
     },
     {
-      "id": "sheet_1779163507672_lxsgf0oah",
+      "id": "sheet_1779164108261_f7187m4ha",
       "name": "Ashima Singla",
       "company": "WHISPERING HOMES",
       "role": "",
@@ -992,7 +981,7 @@
       "source": "okki"
     },
     {
-      "id": "sheet_1779163507672_ig4a1e73x",
+      "id": "sheet_1779164108261_z4bxn1caa",
       "name": "Dave Stegman",
       "company": "PLANK AND HIDE",
       "role": "",
@@ -1006,7 +995,7 @@
       "source": "okki"
     },
     {
-      "id": "sheet_1779163507672_7i9kle8q1",
+      "id": "sheet_1779164108261_e3b3yqlgg",
       "name": "Jim Mckay",
       "company": "WALMART",
       "role": "",
@@ -1020,7 +1009,7 @@
       "source": "okki"
     },
     {
-      "id": "sheet_1779163507672_kesytqvqb",
+      "id": "sheet_1779164108261_sdt0j0na6",
       "name": "Jan Lindsten",
       "company": "JOHN DOYLE DISTRIBUTORS",
       "role": "",
@@ -1034,7 +1023,7 @@
       "source": "okki"
     },
     {
-      "id": "sheet_1779163507672_u0zo7x62r",
+      "id": "sheet_1779164108261_e66sk326f",
       "name": "Jesse Ramirez",
       "company": "DHL GLOBAL FORWARDING",
       "role": "",
@@ -1048,7 +1037,7 @@
       "source": "okki"
     },
     {
-      "id": "sheet_1779163507672_g8c74uaex",
+      "id": "sheet_1779164108261_kbp9jhvg6",
       "name": "William Patterson",
       "company": "MCDERMOTT",
       "role": "",
@@ -1062,7 +1051,7 @@
       "source": "okki"
     },
     {
-      "id": "sheet_1779163507672_8lgso1479",
+      "id": "sheet_1779164108261_x9tkbsgs3",
       "name": "Jessica Zyvonoski",
       "company": "DHL GLOBAL FORWARDING",
       "role": "",
@@ -1076,7 +1065,7 @@
       "source": "okki"
     },
     {
-      "id": "sheet_1779163507672_1jqtmu2x3",
+      "id": "sheet_1779164108261_ijrbwg1pt",
       "name": "Terry Rohm",
       "company": "TINK S HUNTING PRODUCTS",
       "role": "",
@@ -1090,7 +1079,7 @@
       "source": "okki"
     },
     {
-      "id": "sheet_1779163507672_gv6qmakud",
+      "id": "sheet_1779164108261_fvyx36lwb",
       "name": "Erik Bordin",
       "company": "LINDAB",
       "role": "",
@@ -1104,7 +1093,7 @@
       "source": "okki"
     },
     {
-      "id": "sheet_1779163507672_ghmdiou0l",
+      "id": "sheet_1779164108261_s7w2zhbnx",
       "name": "H?kan Bergstr?m",
       "company": "LINDAB",
       "role": "",
@@ -1118,7 +1107,7 @@
       "source": "okki"
     },
     {
-      "id": "sheet_1779163507672_zgz7srew2",
+      "id": "sheet_1779164108261_45o6jc37m",
       "name": "Kal",
       "company": "OPTGSM",
       "role": "",
@@ -1132,7 +1121,7 @@
       "source": "okki"
     },
     {
-      "id": "sheet_1779163507672_kgya7wvtc",
+      "id": "sheet_1779164108261_x9me4mymn",
       "name": "John Mclauchlan",
       "company": "VIRESCO (UK)",
       "role": "",
@@ -1146,7 +1135,7 @@
       "source": "okki"
     },
     {
-      "id": "sheet_1779163507672_6dsxysdq3",
+      "id": "sheet_1779164108261_dx70jee3o",
       "name": "Mark Knaus",
       "company": "ARROW TIRE DISTRIBUTORS",
       "role": "",
@@ -1160,7 +1149,7 @@
       "source": "okki"
     },
     {
-      "id": "sheet_1779163507672_3zptdgwzj",
+      "id": "sheet_1779164108261_9m1lzbrin",
       "name": "William Whitsel",
       "company": "PLANK AND HIDE",
       "role": "",
@@ -1174,7 +1163,7 @@
       "source": "okki"
     },
     {
-      "id": "sheet_1779163507672_8fhx36a88",
+      "id": "sheet_1779164108261_96ljo4xy6",
       "name": "Gerry Conlon",
       "company": "ENEGIS",
       "role": "",
@@ -1188,7 +1177,7 @@
       "source": "okki"
     },
     {
-      "id": "sheet_1779163507672_kaipiaq02",
+      "id": "sheet_1779164108261_c8m7hpxoh",
       "name": "Lauren Boonzaier",
       "company": "MOBIZ",
       "role": "",
@@ -1202,7 +1191,7 @@
       "source": "okki"
     },
     {
-      "id": "sheet_1779163507672_9s85uhcxb",
+      "id": "sheet_1779164108261_3z3ozk3hb",
       "name": "Erik Mueller",
       "company": "PLANK AND HIDE",
       "role": "",
@@ -1216,7 +1205,7 @@
       "source": "okki"
     },
     {
-      "id": "sheet_1779163507672_crjtv4lfp",
+      "id": "sheet_1779164108261_zadpb4kpx",
       "name": "Allyson Shaw",
       "company": "ACADEMY",
       "role": "",
@@ -1230,7 +1219,7 @@
       "source": "okki"
     },
     {
-      "id": "sheet_1779163507672_cy9rfv2sk",
+      "id": "sheet_1779164108261_ez21n0inr",
       "name": "Ginno Curay",
       "company": "INCHCAPE MOTORS PERU",
       "role": "",
@@ -1244,7 +1233,7 @@
       "source": "okki"
     },
     {
-      "id": "sheet_1779163507672_e5jiqi5x5",
+      "id": "sheet_1779164108261_xfuhgszev",
       "name": "Maria Lola Cristina Brondi Marino",
       "company": "PRONOBEL",
       "role": "",
@@ -1258,7 +1247,7 @@
       "source": "okki"
     },
     {
-      "id": "sheet_1779163507672_9ktcgjxd9",
+      "id": "sheet_1779164108261_jmosn8yze",
       "name": "Terry Schell",
       "company": "ARROW TIRE DISTRIBUTORS",
       "role": "",
@@ -1272,7 +1261,7 @@
       "source": "okki"
     },
     {
-      "id": "sheet_1779163507672_quw2ygsg8",
+      "id": "sheet_1779164108261_aoye4x5qa",
       "name": "Melissa Guzman Tapia",
       "company": "PRONOBEL",
       "role": "",
@@ -1286,7 +1275,7 @@
       "source": "okki"
     },
     {
-      "id": "sheet_1779163507672_8p0op4rng",
+      "id": "sheet_1779164108261_c5zgitgwr",
       "name": "Fiona Mclauchlan",
       "company": "VIRESCO (UK)",
       "role": "",
@@ -1300,7 +1289,7 @@
       "source": "okki"
     },
     {
-      "id": "sheet_1779163507672_mxda1c3ui",
+      "id": "sheet_1779164108261_b0v3ywe5o",
       "name": "Shaun Larkin",
       "company": "HAMMACHER SCHLEMMER",
       "role": "",
@@ -1314,7 +1303,7 @@
       "source": "okki"
     },
     {
-      "id": "sheet_1779163507672_lsfddgsxg",
+      "id": "sheet_1779164108261_0904k0fel",
       "name": "Omar Chihuala",
       "company": "INCHCAPE MOTORS PERU",
       "role": "",
@@ -1328,7 +1317,7 @@
       "source": "okki"
     },
     {
-      "id": "sheet_1779163507672_ao9gmmj4v",
+      "id": "sheet_1779164108261_1433xdfy2",
       "name": "Isabella Chan",
       "company": "YESCOM USA",
       "role": "",
@@ -1342,7 +1331,7 @@
       "source": "okki"
     },
     {
-      "id": "sheet_1779163507672_4tqdfxajg",
+      "id": "sheet_1779164108261_xtc71a853",
       "name": "Amanda So",
       "company": "YESCOM USA",
       "role": "",
@@ -1356,7 +1345,7 @@
       "source": "okki"
     },
     {
-      "id": "sheet_1779163507672_96d4z7bws",
+      "id": "sheet_1779164108261_1qtp0e46k",
       "name": "Pauline Fang",
       "company": "YESCOM USA",
       "role": "",
@@ -1370,7 +1359,7 @@
       "source": "okki"
     },
     {
-      "id": "sheet_1779163507672_dkbb17o9c",
+      "id": "sheet_1779164108261_t4zhgse83",
       "name": "Alastair Ness",
       "company": "LOGANAIR",
       "role": "",
@@ -1384,7 +1373,7 @@
       "source": "okki"
     },
     {
-      "id": "sheet_1779163507672_og92tr35a",
+      "id": "sheet_1779164108261_q0fk6xswh",
       "name": "Diana Muller",
       "company": "LOGANAIR",
       "role": "",
@@ -1398,7 +1387,7 @@
       "source": "okki"
     },
     {
-      "id": "sheet_1779163507672_w5bndha3f",
+      "id": "sheet_1779164108261_w0smnyvtu",
       "name": "Gail Hancy",
       "company": "LOGANAIR",
       "role": "",
@@ -1412,7 +1401,7 @@
       "source": "okki"
     },
     {
-      "id": "sheet_1779163507672_l466w1q6d",
+      "id": "sheet_1779164108261_luvi3zkzb",
       "name": "Xavier Rivera",
       "company": "QUALITAS USA",
       "role": "",
@@ -1426,7 +1415,7 @@
       "source": "okki"
     },
     {
-      "id": "sheet_1779163507672_vy3cvui07",
+      "id": "sheet_1779164108261_inqpyqiz5",
       "name": "Donna Barker",
       "company": "MERLIN ARCHERY",
       "role": "",
@@ -1440,7 +1429,7 @@
       "source": "okki"
     },
     {
-      "id": "sheet_1779163507672_e7d5b3jk6",
+      "id": "sheet_1779164108261_aclxktwo6",
       "name": "Karoline Ryan",
       "company": "FAUNA OUTDOOR",
       "role": "",
@@ -1454,7 +1443,7 @@
       "source": "okki"
     },
     {
-      "id": "sheet_1779163507672_jbshuokvi",
+      "id": "sheet_1779164108261_xsjyx93u0",
       "name": "Tracy Prescott",
       "company": "MERLIN ARCHERY",
       "role": "",
@@ -1468,7 +1457,7 @@
       "source": "okki"
     },
     {
-      "id": "sheet_1779163507672_51eh5rwwa",
+      "id": "sheet_1779164108261_2cukccxxq",
       "name": "Steffan Benson",
       "company": "MERLIN ARCHERY",
       "role": "",
@@ -1482,7 +1471,7 @@
       "source": "okki"
     },
     {
-      "id": "sheet_1779163507672_ocf5wmsuq",
+      "id": "sheet_1779164108261_f8v7yku0q",
       "name": "Ellen Karlsen",
       "company": "FAUNA OUTDOOR",
       "role": "",
