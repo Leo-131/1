@@ -1,0 +1,1251 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TradePilot CRM 本地版</title>
+    <style>
+      :root {
+        color-scheme: light;
+        --bg: #f5f7fa;
+        --panel: #ffffff;
+        --panel-soft: #f0f5f5;
+        --ink: #172126;
+        --muted: #66747b;
+        --line: #dbe3e7;
+        --brand: #0f766e;
+        --brand-dark: #115e59;
+        --blue: #2563eb;
+        --red: #b42318;
+        --amber: #a16207;
+        --green: #15803d;
+        --shadow: 0 18px 42px rgba(22, 42, 52, 0.08);
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        background: var(--bg);
+        color: var(--ink);
+        font-family:
+          Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+          "Microsoft YaHei", sans-serif;
+        letter-spacing: 0;
+      }
+
+      button,
+      input,
+      select,
+      textarea {
+        font: inherit;
+      }
+
+      button {
+        cursor: pointer;
+      }
+
+      .app {
+        display: grid;
+        grid-template-columns: 238px minmax(0, 1fr);
+        min-height: 100vh;
+      }
+
+      .sidebar {
+        position: sticky;
+        top: 0;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        padding: 22px 16px;
+        background: #10262d;
+        color: #f8fbfb;
+      }
+
+      .brand {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+      }
+
+      .brand-mark {
+        display: grid;
+        width: 42px;
+        height: 42px;
+        place-items: center;
+        border-radius: 8px;
+        background: #14b8a6;
+        color: #08221f;
+        font-weight: 900;
+      }
+
+      .brand strong,
+      .brand span {
+        display: block;
+      }
+
+      .brand span {
+        margin-top: 2px;
+        color: rgba(248, 251, 251, 0.68);
+        font-size: 12px;
+      }
+
+      .nav {
+        display: grid;
+        gap: 6px;
+      }
+
+      .nav a {
+        padding: 10px 12px;
+        border-radius: 8px;
+        color: rgba(248, 251, 251, 0.72);
+        font-size: 14px;
+        text-decoration: none;
+      }
+
+      .nav a:hover,
+      .nav a.active {
+        background: rgba(255, 255, 255, 0.1);
+        color: #ffffff;
+      }
+
+      .goal {
+        margin-top: auto;
+        padding: 15px;
+        border: 1px solid rgba(255, 255, 255, 0.14);
+        border-radius: 8px;
+        background: rgba(255, 255, 255, 0.06);
+      }
+
+      .goal small,
+      .kicker {
+        display: block;
+        color: var(--muted);
+        font-size: 11px;
+        font-weight: 800;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+
+      .goal small {
+        color: rgba(248, 251, 251, 0.62);
+      }
+
+      .goal strong {
+        display: block;
+        margin: 7px 0 12px;
+      }
+
+      .bar {
+        height: 6px;
+        overflow: hidden;
+        border-radius: 999px;
+        background: rgba(255, 255, 255, 0.16);
+      }
+
+      .bar span {
+        display: block;
+        height: 100%;
+        border-radius: inherit;
+        background: #5eead4;
+      }
+
+      main {
+        display: grid;
+        gap: 20px;
+        width: 100%;
+        max-width: 1480px;
+        padding: 24px;
+      }
+
+      .topbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 16px;
+      }
+
+      h1,
+      h2,
+      h3,
+      p {
+        margin: 0;
+      }
+
+      h1 {
+        font-size: 28px;
+        line-height: 1.2;
+      }
+
+      h2 {
+        font-size: 18px;
+      }
+
+      h3 {
+        font-size: 15px;
+      }
+
+      .actions,
+      .row,
+      .panel-head {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 12px;
+      }
+
+      .search {
+        width: min(460px, 40vw);
+        min-height: 42px;
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        background: var(--panel);
+        padding: 0 12px;
+        outline: 0;
+      }
+
+      .button,
+      .ghost,
+      .select,
+      .input {
+        min-height: 38px;
+        border: 1px solid var(--line);
+        border-radius: 7px;
+        padding: 0 12px;
+        background: #ffffff;
+        color: var(--ink);
+        font-size: 13px;
+        font-weight: 700;
+      }
+
+      .button {
+        border-color: var(--brand);
+        background: var(--brand);
+        color: #ffffff;
+      }
+
+      .button:hover {
+        background: var(--brand-dark);
+      }
+
+      .metrics {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 14px;
+      }
+
+      .metric,
+      .panel {
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        background: var(--panel);
+        box-shadow: var(--shadow);
+      }
+
+      .metric {
+        padding: 18px;
+      }
+
+      .metric span,
+      .metric small {
+        color: var(--muted);
+        font-size: 13px;
+      }
+
+      .metric strong {
+        display: block;
+        margin: 8px 0 4px;
+        font-size: 28px;
+      }
+
+      .metric.danger strong {
+        color: var(--red);
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: minmax(340px, 0.9fr) minmax(0, 1.25fr);
+        gap: 20px;
+      }
+
+      .two {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+        gap: 20px;
+      }
+
+      .panel {
+        min-width: 0;
+        padding: 18px;
+      }
+
+      .panel-head {
+        margin-bottom: 15px;
+      }
+
+      .customer-list,
+      .task-list,
+      .timeline,
+      .insights {
+        display: grid;
+        gap: 10px;
+      }
+
+      .customer-list {
+        max-height: 590px;
+        overflow: auto;
+        padding-right: 4px;
+      }
+
+      .customer {
+        display: grid;
+        width: 100%;
+        gap: 9px;
+        padding: 13px;
+        border: 1px solid var(--line);
+        border-radius: 7px;
+        background: #ffffff;
+        color: inherit;
+        text-align: left;
+      }
+
+      .customer:hover,
+      .customer.active {
+        border-color: rgba(15, 118, 110, 0.45);
+        background: #f1faf8;
+      }
+
+      .muted {
+        color: var(--muted);
+        font-size: 12px;
+      }
+
+      .tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 6px;
+      }
+
+      .pill,
+      .tag {
+        display: inline-flex;
+        align-items: center;
+        min-height: 24px;
+        border-radius: 999px;
+        padding: 0 8px;
+        background: var(--panel-soft);
+        color: #39535a;
+        font-size: 12px;
+        font-weight: 800;
+      }
+
+      .green {
+        background: #dcfce7;
+        color: #166534;
+      }
+
+      .amber {
+        background: #fef3c7;
+        color: #92400e;
+      }
+
+      .red {
+        background: #fee2e2;
+        color: #991b1b;
+      }
+
+      .detail {
+        display: grid;
+        gap: 14px;
+      }
+
+      .stats {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 10px;
+      }
+
+      .stat,
+      .note {
+        border: 1px solid var(--line);
+        border-radius: 7px;
+        background: #f8fbfb;
+        padding: 12px;
+      }
+
+      .stat span {
+        display: block;
+        color: var(--muted);
+        font-size: 12px;
+      }
+
+      .stat strong {
+        display: block;
+        margin-top: 6px;
+        font-size: 18px;
+      }
+
+      .note {
+        border-left: 3px solid var(--brand);
+      }
+
+      .note p {
+        margin-top: 5px;
+        color: var(--muted);
+        font-size: 13px;
+      }
+
+      .pipeline {
+        display: grid;
+        grid-template-columns: repeat(5, minmax(190px, 1fr));
+        gap: 12px;
+        overflow-x: auto;
+      }
+
+      .stage {
+        display: grid;
+        align-content: start;
+        gap: 10px;
+        min-height: 250px;
+        border: 1px solid var(--line);
+        border-radius: 7px;
+        background: #f8fafb;
+        padding: 12px;
+      }
+
+      .opportunity {
+        display: grid;
+        gap: 10px;
+        border: 1px solid #dde5e8;
+        border-radius: 7px;
+        background: #ffffff;
+        padding: 12px;
+      }
+
+      .progress {
+        height: 5px;
+        overflow: hidden;
+        border-radius: 999px;
+        background: #e7edf0;
+      }
+
+      .progress span {
+        display: block;
+        height: 100%;
+        background: var(--blue);
+      }
+
+      .form {
+        display: grid;
+        grid-template-columns: 1fr auto auto auto;
+        gap: 8px;
+        margin-bottom: 14px;
+      }
+
+      .timeline-form {
+        grid-template-columns: auto 1fr auto;
+      }
+
+      .task,
+      .timeline-item,
+      .insight {
+        padding: 12px;
+        border: 1px solid var(--line);
+        border-radius: 7px;
+        background: #ffffff;
+      }
+
+      .task.done {
+        opacity: 0.58;
+      }
+
+      .done-button {
+        width: 34px;
+        height: 34px;
+        border: 1px solid var(--line);
+        border-radius: 7px;
+        background: #ffffff;
+        color: var(--green);
+        font-weight: 900;
+      }
+
+      .timeline-item {
+        border-left: 3px solid #94a3b8;
+        background: #f8fafb;
+      }
+
+      .timeline-item.email {
+        border-left-color: var(--blue);
+      }
+
+      .timeline-item.call {
+        border-left-color: var(--amber);
+      }
+
+      .timeline-item.whatsapp {
+        border-left-color: var(--green);
+      }
+
+      table {
+        width: 100%;
+        min-width: 620px;
+        border-collapse: collapse;
+      }
+
+      th,
+      td {
+        padding: 12px 10px;
+        border-bottom: 1px solid var(--line);
+        text-align: left;
+        font-size: 13px;
+      }
+
+      th {
+        color: var(--muted);
+        font-size: 12px;
+        font-weight: 900;
+      }
+
+      .table-wrap {
+        overflow-x: auto;
+      }
+
+      @media (max-width: 1120px) {
+        .app {
+          grid-template-columns: 1fr;
+        }
+
+        .sidebar {
+          position: static;
+          height: auto;
+          flex-direction: row;
+          align-items: center;
+          overflow-x: auto;
+        }
+
+        .nav {
+          display: flex;
+        }
+
+        .goal {
+          min-width: 210px;
+          margin-left: auto;
+          margin-top: 0;
+        }
+
+        .metrics,
+        .grid,
+        .two {
+          grid-template-columns: 1fr 1fr;
+        }
+
+        .detail-panel,
+        .pipeline-panel {
+          grid-column: 1 / -1;
+        }
+      }
+
+      @media (max-width: 760px) {
+        main {
+          padding: 16px;
+        }
+
+        .topbar,
+        .actions,
+        .sidebar {
+          align-items: stretch;
+          flex-direction: column;
+        }
+
+        .search {
+          width: 100%;
+        }
+
+        .metrics,
+        .grid,
+        .two,
+        .stats,
+        .form,
+        .timeline-form {
+          grid-template-columns: 1fr;
+        }
+
+        .pipeline {
+          grid-template-columns: minmax(220px, 1fr);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="app">
+      <aside class="sidebar">
+        <div class="brand">
+          <div class="brand-mark">TP</div>
+          <div>
+            <strong>TradePilot</strong>
+            <span>外贸 CRM 本地版</span>
+          </div>
+        </div>
+        <nav class="nav">
+          <a class="active" href="#overview">总览</a>
+          <a href="#customers">客户</a>
+          <a href="#pipeline">商机</a>
+          <a href="#tasks">跟进</a>
+          <a href="#orders">订单</a>
+        </nav>
+        <div class="goal">
+          <small>本月目标</small>
+          <strong>USD 260,000</strong>
+          <div class="bar"><span style="width: 62%"></span></div>
+        </div>
+      </aside>
+
+      <main>
+        <header class="topbar">
+          <div>
+            <span class="kicker">Local CRM cockpit</span>
+            <h1>外贸增长 CRM 工作台</h1>
+          </div>
+          <div class="actions">
+            <input id="search" class="search" type="search" placeholder="搜索客户、国家、负责人、标签" />
+            <button id="export" class="ghost" type="button">导出 JSON</button>
+            <button id="reset" class="ghost" type="button">重置数据</button>
+          </div>
+        </header>
+
+        <section id="overview" class="metrics">
+          <article class="metric">
+            <span>客户资产</span>
+            <strong id="metricAccounts">0</strong>
+            <small id="metricTier">A 类客户 0 个</small>
+          </article>
+          <article class="metric">
+            <span>商机金额</span>
+            <strong id="metricPipeline">$0</strong>
+            <small>进行中商机</small>
+          </article>
+          <article class="metric">
+            <span>加权预测</span>
+            <strong id="metricForecast">$0</strong>
+            <small>按阶段概率折算</small>
+          </article>
+          <article class="metric danger">
+            <span>逾期跟进</span>
+            <strong id="metricOverdue">0</strong>
+            <small id="metricTasks">待办 0 项</small>
+          </article>
+        </section>
+
+        <section class="grid">
+          <article id="customers" class="panel">
+            <div class="panel-head">
+              <div>
+                <span class="kicker">Customer asset</span>
+                <h2>客户池</h2>
+              </div>
+              <select id="statusFilter" class="select">
+                <option value="all">全部状态</option>
+                <option value="active">成交/活跃</option>
+                <option value="prospect">潜在客户</option>
+              </select>
+            </div>
+            <div id="customerList" class="customer-list"></div>
+          </article>
+
+          <article class="panel detail-panel">
+            <div id="detail" class="detail"></div>
+          </article>
+        </section>
+
+        <section id="pipeline" class="panel pipeline-panel">
+          <div class="panel-head">
+            <div>
+              <span class="kicker">Sales pipeline</span>
+              <h2>商机推进</h2>
+            </div>
+            <span id="pipelineSummary" class="pill">0 个进行中商机</span>
+          </div>
+          <div id="pipelineBoard" class="pipeline"></div>
+        </section>
+
+        <section class="two">
+          <article id="tasks" class="panel">
+            <div class="panel-head">
+              <div>
+                <span class="kicker">Action center</span>
+                <h2>跟进任务</h2>
+              </div>
+            </div>
+            <form id="taskForm" class="form">
+              <input class="input" name="title" required placeholder="新增跟进事项" />
+              <input class="input" name="dueAt" required type="date" value="2026-05-15" />
+              <select class="select" name="priority">
+                <option value="high">高</option>
+                <option value="medium" selected>中</option>
+                <option value="low">低</option>
+              </select>
+              <button class="button" type="submit">添加</button>
+            </form>
+            <div id="taskList" class="task-list"></div>
+          </article>
+
+          <article class="panel">
+            <div class="panel-head">
+              <div>
+                <span class="kicker">Communication</span>
+                <h2>沟通记录</h2>
+              </div>
+            </div>
+            <form id="activityForm" class="form timeline-form">
+              <select class="select" name="type">
+                <option value="email">邮件</option>
+                <option value="whatsapp">WhatsApp</option>
+                <option value="call">电话</option>
+                <option value="meeting">会议</option>
+              </select>
+              <input class="input" name="title" required placeholder="记录沟通重点" />
+              <button class="button" type="submit">记录</button>
+            </form>
+            <div id="activityList" class="timeline"></div>
+          </article>
+        </section>
+
+        <section class="two">
+          <article id="orders" class="panel">
+            <div class="panel-head">
+              <div>
+                <span class="kicker">Order control</span>
+                <h2>订单与交付</h2>
+              </div>
+            </div>
+            <div class="table-wrap">
+              <table>
+                <thead>
+                  <tr>
+                    <th>订单</th>
+                    <th>客户</th>
+                    <th>金额</th>
+                    <th>状态</th>
+                    <th>交期</th>
+                    <th>毛利</th>
+                  </tr>
+                </thead>
+                <tbody id="orderRows"></tbody>
+              </table>
+            </div>
+          </article>
+
+          <article class="panel">
+            <div class="panel-head">
+              <div>
+                <span class="kicker">AI-ready insight</span>
+                <h2>客户洞察</h2>
+              </div>
+            </div>
+            <div id="insights" class="insights"></div>
+          </article>
+        </section>
+      </main>
+    </div>
+
+    <script>
+      const TODAY = "2026-05-14";
+      const STORAGE_KEY = "tradepilot-crm-standalone-v1";
+      const STAGES = {
+        lead: { label: "线索", probability: 20, order: 1 },
+        qualified: { label: "已确认需求", probability: 38, order: 2 },
+        sample: { label: "寄样/方案", probability: 52, order: 3 },
+        quote: { label: "报价", probability: 68, order: 4 },
+        negotiation: { label: "谈判", probability: 82, order: 5 },
+        won: { label: "赢单", probability: 100, order: 6 },
+        lost: { label: "输单", probability: 0, order: 7 },
+      };
+      const activeStages = ["lead", "qualified", "sample", "quote", "negotiation"];
+      const seed = {
+        accounts: [
+          {
+            id: "acct-001",
+            name: "Atlas Industrial Supplies",
+            country: "United States",
+            city: "Houston",
+            owner: "Lina",
+            status: "active",
+            lifecycle: "复购客户",
+            industry: "机械设备",
+            annualValue: 186000,
+            lastContactAt: "2026-05-13",
+            tags: ["VIP", "Machinery", "ODM"],
+            risk: "低",
+            nextAction: "确认 6 月批量订单交期",
+            note: "采购节奏稳定，关注交付稳定性和售后响应速度。",
+            contact: "Mia Johnson · Sourcing Director · mia.johnson@example.com",
+          },
+          {
+            id: "acct-002",
+            name: "Nordstern Handel GmbH",
+            country: "Germany",
+            city: "Hamburg",
+            owner: "Chen",
+            status: "prospect",
+            lifecycle: "重点潜客",
+            industry: "建材家居",
+            annualValue: 74000,
+            lastContactAt: "2026-05-08",
+            tags: ["New", "EU", "Private Label"],
+            risk: "中",
+            nextAction: "补充 CE 认证与德语包装资料",
+            note: "首次询盘来自官网，偏好小批量试单和长期框架价。",
+            contact: "Jonas Weber · Import Manager · jonas.weber@example.de",
+          },
+          {
+            id: "acct-003",
+            name: "Sahara Renewables",
+            country: "United Arab Emirates",
+            city: "Dubai",
+            owner: "Maya",
+            status: "active",
+            lifecycle: "项目客户",
+            industry: "新能源",
+            annualValue: 132000,
+            lastContactAt: "2026-05-11",
+            tags: ["Energy", "Tender", "Arabic"],
+            risk: "中",
+            nextAction: "发送项目装箱方案与付款节点",
+            note: "项目决策链较长，需要持续同步技术、财务和物流信息。",
+            contact: "Noura Khalid · Project Buyer · noura.khalid@example.ae",
+          },
+          {
+            id: "acct-004",
+            name: "Pacifica Retail Group",
+            country: "Australia",
+            city: "Melbourne",
+            owner: "Leo",
+            status: "active",
+            lifecycle: "成长客户",
+            industry: "日用消费品",
+            annualValue: 98000,
+            lastContactAt: "2026-05-02",
+            tags: ["Retail", "Repeat", "Seasonal"],
+            risk: "低",
+            nextAction: "确认圣诞季备货 SKU 清单",
+            note: "季节性强，订单集中在 Q3，需要提前锁定产能。",
+            contact: "Oliver Smith · Category Manager · oliver.smith@example.au",
+          },
+          {
+            id: "acct-005",
+            name: "Andes Medical Partners",
+            country: "Chile",
+            city: "Santiago",
+            owner: "Nina",
+            status: "prospect",
+            lifecycle: "样品客户",
+            industry: "医疗器械",
+            annualValue: 52000,
+            lastContactAt: "2026-04-28",
+            tags: ["Medical", "Sample", "Spanish"],
+            risk: "高",
+            nextAction: "跟进样品反馈与注册文件",
+            note: "采购标准严格，注册资料完整度决定推进速度。",
+            contact: "Camila Rojas · Procurement Lead · camila.rojas@example.cl",
+          },
+        ],
+        opportunities: [
+          { id: "opp-001", accountId: "acct-001", title: "Packaging line renewal", product: "自动包装线配件", stage: "quote", value: 42000, probability: 68, expectedClose: "2026-06-08" },
+          { id: "opp-002", accountId: "acct-002", title: "Private-label starter order", product: "浴室五金套装", stage: "sample", value: 18500, probability: 52, expectedClose: "2026-06-18" },
+          { id: "opp-003", accountId: "acct-003", title: "Solar project phase one", product: "储能柜结构件", stage: "negotiation", value: 76000, probability: 82, expectedClose: "2026-05-30" },
+          { id: "opp-004", accountId: "acct-004", title: "Holiday season reorder", product: "家居收纳用品", stage: "qualified", value: 31000, probability: 38, expectedClose: "2026-07-02" },
+          { id: "opp-005", accountId: "acct-005", title: "Clinic sample validation", product: "一次性检测耗材", stage: "lead", value: 12800, probability: 20, expectedClose: "2026-06-25" },
+        ],
+        tasks: [
+          { id: "task-001", accountId: "acct-001", title: "发送修订后的 PI 和装箱单", owner: "Lina", dueAt: "2026-05-14", status: "open", priority: "high" },
+          { id: "task-002", accountId: "acct-002", title: "补充 CE 认证文件", owner: "Chen", dueAt: "2026-05-15", status: "open", priority: "medium" },
+          { id: "task-003", accountId: "acct-003", title: "确认项目付款节点", owner: "Maya", dueAt: "2026-05-13", status: "open", priority: "high" },
+        ],
+        activities: [
+          { id: "act-001", accountId: "acct-003", type: "email", title: "客户确认希望使用 FOB 深圳报价", createdAt: "2026-05-14T02:20:00.000Z" },
+          { id: "act-002", accountId: "acct-001", type: "call", title: "电话确认 6 月订单数量上调 15%", createdAt: "2026-05-13T09:45:00.000Z" },
+          { id: "act-003", accountId: "acct-002", type: "whatsapp", title: "买家要求补充德语安装说明", createdAt: "2026-05-12T15:10:00.000Z" },
+        ],
+        orders: [
+          { id: "ord-001", accountId: "acct-001", code: "SO-2026-0412", amount: 58200, status: "生产中", eta: "2026-06-05", margin: 23 },
+          { id: "ord-002", accountId: "acct-004", code: "SO-2026-0397", amount: 26400, status: "待收尾款", eta: "2026-05-28", margin: 19 },
+          { id: "ord-003", accountId: "acct-003", code: "SO-2026-0388", amount: 44800, status: "验货预约", eta: "2026-05-24", margin: 27 },
+        ],
+      };
+
+      let state = loadState();
+      let activeAccountId = state.accounts[0].id;
+      let filters = { query: "", status: "all" };
+
+      const $ = (selector) => document.querySelector(selector);
+      const nodes = {
+        search: $("#search"),
+        statusFilter: $("#statusFilter"),
+        customerList: $("#customerList"),
+        detail: $("#detail"),
+        pipelineBoard: $("#pipelineBoard"),
+        pipelineSummary: $("#pipelineSummary"),
+        taskForm: $("#taskForm"),
+        taskList: $("#taskList"),
+        activityForm: $("#activityForm"),
+        activityList: $("#activityList"),
+        orderRows: $("#orderRows"),
+        insights: $("#insights"),
+        reset: $("#reset"),
+        exportButton: $("#export"),
+        metricAccounts: $("#metricAccounts"),
+        metricTier: $("#metricTier"),
+        metricPipeline: $("#metricPipeline"),
+        metricForecast: $("#metricForecast"),
+        metricOverdue: $("#metricOverdue"),
+        metricTasks: $("#metricTasks"),
+      };
+
+      nodes.search.addEventListener("input", (event) => {
+        filters.query = event.target.value;
+        render();
+      });
+
+      nodes.statusFilter.addEventListener("change", (event) => {
+        filters.status = event.target.value;
+        render();
+      });
+
+      nodes.customerList.addEventListener("click", (event) => {
+        const item = event.target.closest("[data-account]");
+        if (!item) return;
+        activeAccountId = item.dataset.account;
+        render();
+      });
+
+      nodes.pipelineBoard.addEventListener("click", (event) => {
+        const button = event.target.closest("[data-move]");
+        if (!button) return;
+        const opportunity = state.opportunities.find((item) => item.id === button.dataset.move);
+        opportunity.stage = button.dataset.stage;
+        opportunity.probability = STAGES[button.dataset.stage].probability;
+        save();
+        render();
+      });
+
+      nodes.taskList.addEventListener("click", (event) => {
+        const button = event.target.closest("[data-done]");
+        if (!button) return;
+        const task = state.tasks.find((item) => item.id === button.dataset.done);
+        task.status = "done";
+        save();
+        render();
+      });
+
+      nodes.taskForm.addEventListener("submit", (event) => {
+        event.preventDefault();
+        const data = new FormData(event.currentTarget);
+        const account = activeAccount();
+        state.tasks.push({
+          id: `task-${Date.now()}`,
+          accountId: account.id,
+          title: data.get("title"),
+          owner: account.owner,
+          dueAt: data.get("dueAt"),
+          status: "open",
+          priority: data.get("priority"),
+        });
+        event.currentTarget.reset();
+        event.currentTarget.elements.dueAt.value = "2026-05-15";
+        event.currentTarget.elements.priority.value = "medium";
+        save();
+        render();
+      });
+
+      nodes.activityForm.addEventListener("submit", (event) => {
+        event.preventDefault();
+        const data = new FormData(event.currentTarget);
+        state.activities.unshift({
+          id: `act-${Date.now()}`,
+          accountId: activeAccount().id,
+          type: data.get("type"),
+          title: data.get("title"),
+          createdAt: new Date().toISOString(),
+        });
+        event.currentTarget.reset();
+        save();
+        render();
+      });
+
+      nodes.reset.addEventListener("click", () => {
+        state = clone(seed);
+        activeAccountId = state.accounts[0].id;
+        save();
+        render();
+      });
+
+      nodes.exportButton.addEventListener("click", () => {
+        const blob = new Blob([JSON.stringify(state, null, 2)], { type: "application/json" });
+        const url = URL.createObjectURL(blob);
+        const link = document.createElement("a");
+        link.href = url;
+        link.download = `tradepilot-crm-${TODAY}.json`;
+        link.click();
+        URL.revokeObjectURL(url);
+      });
+
+      render();
+
+      function render() {
+        const ranked = rankAccounts(state.accounts);
+        const visible = ranked
+          .filter((account) => matches(account, filters.query))
+          .filter((account) => filters.status === "all" || account.status === filters.status);
+        if (!visible.some((account) => account.id === activeAccountId)) {
+          activeAccountId = visible[0]?.id || ranked[0].id;
+        }
+        renderMetrics(ranked);
+        renderCustomers(visible);
+        renderDetail();
+        renderPipeline();
+        renderTasks();
+        renderActivities();
+        renderOrders();
+        renderInsights(ranked);
+      }
+
+      function renderMetrics(ranked) {
+        const openTasks = state.tasks.filter((task) => task.status !== "done");
+        const overdue = openTasks.filter((task) => task.dueAt < TODAY);
+        const openOpportunities = state.opportunities.filter((item) => !["won", "lost"].includes(item.stage));
+        const pipeline = openOpportunities.reduce((sum, item) => sum + item.value, 0);
+        const forecast = openOpportunities.reduce((sum, item) => sum + Math.round(item.value * item.probability / 100), 0);
+        nodes.metricAccounts.textContent = state.accounts.length;
+        nodes.metricTier.textContent = `A 类客户 ${ranked.filter((item) => item.tier === "A").length} 个`;
+        nodes.metricPipeline.textContent = money(pipeline);
+        nodes.metricForecast.textContent = money(forecast);
+        nodes.metricOverdue.textContent = overdue.length;
+        nodes.metricTasks.textContent = `待办 ${openTasks.length} 项`;
+      }
+
+      function renderCustomers(accounts) {
+        nodes.customerList.innerHTML = accounts
+          .map((account) => `
+            <button class="customer ${account.id === activeAccountId ? "active" : ""}" type="button" data-account="${account.id}">
+              <span class="row">
+                <strong>${escapeHtml(account.name)}</strong>
+                <span class="pill ${account.status === "active" ? "green" : "amber"}">${escapeHtml(account.lifecycle)}</span>
+              </span>
+              <span class="row muted">
+                <span>${escapeHtml(account.country)} · ${escapeHtml(account.owner)}</span>
+                <strong>${money(account.annualValue)}</strong>
+              </span>
+              <span class="tags">${account.tags.map((tag) => `<span class="tag">${escapeHtml(tag)}</span>`).join("")}</span>
+            </button>
+          `)
+          .join("");
+      }
+
+      function renderDetail() {
+        const account = activeAccount();
+        const opportunity = state.opportunities.find((item) => item.accountId === account.id);
+        const ranked = rankAccounts([account])[0];
+        const riskClass = account.risk === "高" ? "red" : account.risk === "中" ? "amber" : "green";
+        nodes.detail.innerHTML = `
+          <div class="row">
+            <div>
+              <span class="kicker">Selected account</span>
+              <h2>${escapeHtml(account.name)}</h2>
+              <p class="muted">${escapeHtml(account.city)}, ${escapeHtml(account.country)} · ${escapeHtml(account.industry)}</p>
+            </div>
+            <span class="pill ${riskClass}">风险 ${escapeHtml(account.risk)}</span>
+          </div>
+          <div class="stats">
+            <div class="stat"><span>客户评分</span><strong>${ranked.score}</strong></div>
+            <div class="stat"><span>年潜力</span><strong>${money(account.annualValue)}</strong></div>
+            <div class="stat"><span>最近联系</span><strong>${escapeHtml(account.lastContactAt)}</strong></div>
+          </div>
+          <div class="note">
+            <strong>${escapeHtml(account.contact)}</strong>
+            <p>${escapeHtml(account.note)}</p>
+          </div>
+          <div>
+            <span class="kicker">Next best action</span>
+            <h3>${escapeHtml(account.nextAction)}</h3>
+          </div>
+          ${opportunity ? `<div class="note"><strong>${escapeHtml(opportunity.title)}</strong><p>${STAGES[opportunity.stage].label} · ${money(opportunity.value)} · ${opportunity.probability}% 可能性</p></div>` : ""}
+        `;
+      }
+
+      function renderPipeline() {
+        const open = state.opportunities.filter((item) => !["won", "lost"].includes(item.stage));
+        nodes.pipelineSummary.textContent = `${open.length} 个进行中商机`;
+        nodes.pipelineBoard.innerHTML = activeStages
+          .map((stage) => {
+            const items = state.opportunities.filter((item) => item.stage === stage);
+            const total = items.reduce((sum, item) => sum + item.value, 0);
+            return `
+              <div class="stage">
+                <div class="row">
+                  <h3>${STAGES[stage].label}</h3>
+                  <span class="muted">${items.length} · ${money(total)}</span>
+                </div>
+                ${items.map(renderOpportunity).join("")}
+              </div>
+            `;
+          })
+          .join("");
+      }
+
+      function renderOpportunity(opportunity) {
+        const account = state.accounts.find((item) => item.id === opportunity.accountId);
+        const nextStage = activeStages[activeStages.indexOf(opportunity.stage) + 1];
+        return `
+          <article class="opportunity">
+            <div>
+              <h3>${escapeHtml(opportunity.title)}</h3>
+              <p class="muted">${escapeHtml(account?.name || "未知客户")} · ${escapeHtml(opportunity.product)}</p>
+            </div>
+            <div class="row"><strong>${money(opportunity.value)}</strong><strong>${opportunity.probability}%</strong></div>
+            <div class="progress"><span style="width:${opportunity.probability}%"></span></div>
+            ${nextStage ? `<button class="button" type="button" data-move="${opportunity.id}" data-stage="${nextStage}">推进到${STAGES[nextStage].label}</button>` : ""}
+          </article>
+        `;
+      }
+
+      function renderTasks() {
+        nodes.taskList.innerHTML = [...state.tasks]
+          .sort((a, b) => (a.status === b.status ? a.dueAt.localeCompare(b.dueAt) : a.status === "open" ? -1 : 1))
+          .map((task) => {
+            const account = state.accounts.find((item) => item.id === task.accountId);
+            const overdue = task.status !== "done" && task.dueAt < TODAY;
+            const pillClass = task.status === "done" ? "green" : overdue ? "red" : task.priority === "high" ? "red" : task.priority === "medium" ? "amber" : "green";
+            return `
+              <article class="task ${task.status === "done" ? "done" : ""}">
+                <div class="row">
+                  <div>
+                    <strong>${escapeHtml(task.title)}</strong>
+                    <p class="muted">${escapeHtml(account?.name || "未知客户")} · ${escapeHtml(task.owner)} · ${escapeHtml(task.dueAt)}</p>
+                  </div>
+                  <span class="pill ${pillClass}">${task.status === "done" ? "已完成" : overdue ? "逾期" : task.priority}</span>
+                  ${task.status === "done" ? "" : `<button class="done-button" type="button" data-done="${task.id}" title="完成">✓</button>`}
+                </div>
+              </article>
+            `;
+          })
+          .join("");
+      }
+
+      function renderActivities() {
+        nodes.activityList.innerHTML = state.activities
+          .slice(0, 8)
+          .map((activity) => {
+            const account = state.accounts.find((item) => item.id === activity.accountId);
+            return `
+              <article class="timeline-item ${escapeHtml(activity.type)}">
+                <strong>${escapeHtml(activity.title)}</strong>
+                <p class="muted">${escapeHtml(account?.name || "未知客户")} · ${escapeHtml(activity.type)} · ${formatDate(activity.createdAt)}</p>
+              </article>
+            `;
+          })
+          .join("");
+      }
+
+      function renderOrders() {
+        nodes.orderRows.innerHTML = state.orders
+          .map((order) => {
+            const account = state.accounts.find((item) => item.id === order.accountId);
+            return `
+              <tr>
+                <td><strong>${escapeHtml(order.code)}</strong></td>
+                <td>${escapeHtml(account?.name || "未知客户")}</td>
+                <td>${money(order.amount)}</td>
+                <td><span class="pill amber">${escapeHtml(order.status)}</span></td>
+                <td>${escapeHtml(order.eta)}</td>
+                <td>${order.margin}%</td>
+              </tr>
+            `;
+          })
+          .join("");
+      }
+
+      function renderInsights(ranked) {
+        const overdueAccounts = new Set(state.tasks.filter((task) => task.status !== "done" && task.dueAt < TODAY).map((task) => task.accountId));
+        nodes.insights.innerHTML = ranked
+          .slice(0, 4)
+          .map((account) => {
+            const text = overdueAccounts.has(account.id)
+              ? "存在逾期动作，建议今天优先跟进。"
+              : account.score > 220
+                ? "客户价值高且近期有互动，适合推进复购或框架协议。"
+                : "需要补充触达频次和采购背景，避免进入沉默周期。";
+            return `
+              <article class="insight">
+                <div class="row"><strong>${escapeHtml(account.name)}</strong><span class="pill">${account.score}</span></div>
+                <p class="muted">${escapeHtml(text)}</p>
+              </article>
+            `;
+          })
+          .join("");
+      }
+
+      function rankAccounts(accounts) {
+        const today = new Date(`${TODAY}T00:00:00.000Z`).getTime();
+        return accounts
+          .map((account) => {
+            const valueScore = Math.min(account.annualValue / 1000, 220);
+            const days = Math.max(0, Math.floor((today - new Date(`${account.lastContactAt}T00:00:00.000Z`).getTime()) / 86400000));
+            const recencyScore = Math.max(0, 90 - days * 3);
+            const score = Math.round(valueScore + recencyScore + (account.tags.includes("VIP") ? 80 : 0) + (account.status === "active" ? 35 : 0));
+            return { ...account, score, tier: score >= 220 ? "A" : score >= 130 ? "B" : "C" };
+          })
+          .sort((a, b) => b.score - a.score || b.annualValue - a.annualValue);
+      }
+
+      function matches(account, query) {
+        const terms = normalize(query).split(/\s+/).filter(Boolean);
+        const haystack = normalize([account.name, account.country, account.city, account.owner, account.status, account.lifecycle, account.industry, ...account.tags].join(" "));
+        return terms.every((term) => haystack.includes(term));
+      }
+
+      function activeAccount() {
+        return state.accounts.find((account) => account.id === activeAccountId) || state.accounts[0];
+      }
+
+      function loadState() {
+        try {
+          return JSON.parse(localStorage.getItem(STORAGE_KEY)) || clone(seed);
+        } catch {
+          return clone(seed);
+        }
+      }
+
+      function save() {
+        localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
+      }
+
+      function clone(value) {
+        return JSON.parse(JSON.stringify(value));
+      }
+
+      function normalize(value) {
+        return String(value || "").trim().toLowerCase();
+      }
+
+      function money(value) {
+        return new Intl.NumberFormat("en-US", { style: "currency", currency: "USD", maximumFractionDigits: 0 }).format(value || 0);
+      }
+
+      function formatDate(value) {
+        return new Intl.DateTimeFormat("zh-CN", { month: "2-digit", day: "2-digit", hour: "2-digit", minute: "2-digit" }).format(new Date(value));
+      }
+
+      function escapeHtml(value) {
+        return String(value || "")
+          .replaceAll("&", "&amp;")
+          .replaceAll("<", "&lt;")
+          .replaceAll(">", "&gt;")
+          .replaceAll('"', "&quot;")
+          .replaceAll("'", "&#039;");
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,32 @@
+{
+  "name": "Outreach Dashboard - Flextail & Vollyc",
+  "short_name": "Outreach",
+  "description": "Flextail and Vollyc outreach execution dashboard with embedded contact data.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#0f1117",
+  "theme_color": "#0f1117",
+  "orientation": "any",
+  "categories": ["business", "productivity"],
+  "icons": [
+    {
+      "src": "./icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Open Contacts",
+      "short_name": "Contacts",
+      "url": "./#contacts"
+    },
+    {
+      "name": "Daily Progress",
+      "short_name": "Progress",
+      "url": "./#progress"
+    }
+  ]
+}

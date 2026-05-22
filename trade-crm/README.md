@@ -15,7 +15,15 @@ TradePilot CRM 是一个面向外贸 B2B 团队的可运行 CRM V1 原型，覆�
 
 ## 本地运行
 
-在仓库根目录启动静态服务：
+最快方式：直接双击打开：
+
+```text
+trade-crm/standalone.html
+```
+
+这个文件是完整单页版，CSS、数据和交互都在同一个 HTML 文件里，不需要安装依赖，也不需要启动服务。
+
+如果要运行模块化版本，在仓库根目录启动静态服务：
 
 ```powershell
 node .\trade-crm\dev-server.mjs 5173
