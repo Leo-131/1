@@ -1,7 +1,7 @@
-﻿{
+{
     "stats":  {
-                  "version":  "26052103",
-                  "last_run":  "2026-05-21 16:34:17",
+                  "version":  "26052201",
+                  "last_run":  "2026-05-22 12:32:50",
                   "total_contacts":  844,
                   "source":  "Multi-Sheet Sync",
                   "breakdown":  {
@@ -9,9 +9,9 @@
                                     "okki":  82,
                                     "salesrobot":  737
                                 },
-                  "active_contacts":  825,
-                  "excluded_contacts":  19,
-                  "today_sent":  825,
+                  "active_contacts":  824,
+                  "excluded_contacts":  20,
+                  "today_sent":  824,
                   "status_breakdown":  {
                                            "accepted":  7,
                                            "pending":  77,
@@ -26,7 +26,7 @@
                                             "active_tier1":  107,
                                             "active_tier2":  8,
                                             "active_tier3":  26,
-                                            "designer_excluded":  19
+                                            "designer_excluded":  20
                                         }
               },
     "contacts":  [
