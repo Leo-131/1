@@ -1,9 +1,9 @@
 {
   "id": "main",
-  "name": "v17看板升级",
+  "name": "IG推广与Dashboard恢复",
   "status": "active",
   "createdAt": "2026-04-21T09:05:18.640Z",
-  "updatedAt": "2026-05-18T10:09:58.728Z",
+  "updatedAt": "2026-05-21T08:32:17.906Z",
   "agents": [
     {
       "id": "agent_rz6sq1dc",
@@ -17,9 +17,9 @@
   ],
   "summary": {
     "id": "summary_4wtn1j0e",
-    "title": "v17看板升级",
+    "title": "IG推广与Dashboard恢复",
     "createdAt": "2026-04-21T09:05:18.640Z",
     "file": "summary_4wtn1j0e.md"
   },
-  "lastMessageCount": 123
+  "lastMessageCount": 82
 }
