@@ -1,6 +1,9 @@
 ﻿{
+    "service_worker_js":  "716E1DA4EAAD89B70D77393ACDF7B26D",
+    "manifest_webmanifest":  "D4849DEF7BD30E6223E8EB35146877A7",
+    "enhancements_css":  "27A38D720D37E280A3F73D140E8CA4AE",
     "smart_deploy_js":  "01A0D82FB53F6173DE5BFC028611AE1D",
-    "timestamp":  "2026-05-23T18:00:00",
-    "index_html":  "1C641994E278F714846C5331F80A1DFD",
-    "fix_dashboard_js":  "F6F04CD25D0C35C15269543315E9DFEF"
+    "fix_dashboard_js":  "F6F04CD25D0C35C15269543315E9DFEF",
+    "timestamp":  "2026-05-25T00:00:00",
+    "index_html":  "09DBE411DA873B425EF5016DAB38C45E"
 }
