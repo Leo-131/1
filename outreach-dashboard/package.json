@@ -1,0 +1,44 @@
+{
+  "name": "outreach-dashboard",
+  "version": "17.6.0",
+  "description": "Flextail Gear Outreach Dashboard - B2B Customer Development",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder --win portable",
+    "build:nsis": "electron-builder --win nsis"
+  },
+  "author": "Flextail",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^33.4.11",
+    "electron-builder": "^26.8.1"
+  },
+  "build": {
+    "appId": "com.flextail.outreach-dashboard",
+    "productName": "Outreach Dashboard",
+    "directories": {
+      "output": "dist"
+    },
+    "files": [
+      "main.js",
+      "index.html",
+      "icon.svg",
+      "enhancements.css"
+    ],
+    "win": {
+      "target": [
+        {
+          "target": "portable",
+          "arch": [
+            "x64"
+          ]
+        }
+      ],
+      "icon": "icon.svg"
+    },
+    "portable": {
+      "artifactName": "Outreach-Dashboard-v${version}-Portable.exe"
+    }
+  }
+}
