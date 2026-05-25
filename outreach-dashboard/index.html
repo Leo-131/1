@@ -236,15 +236,15 @@ let contactsData = { stats: {}, contacts: [] };
 let currentOpenPanel = null;
 let fbRecords = JSON.parse(localStorage.getItem('fb_records') || '[]');
 let insRecords = JSON.parse(localStorage.getItem('ins_records') || '[]');
-let dailyProgress = (() => {
+let dailyProgress = {fb: 0, ins: 0};
+function initDailyProgress() {
     let dp = JSON.parse(localStorage.getItem('daily_progress_' + TODAY_KEY) || '{"fb":0,"ins":0}');
-    // Count today's IG records from static data (not in localStorage)
     const todayINS = STATIC_INS_RECORDS.filter(r => r.date === TODAY_STR).length;
     if(todayINS > dp.ins) dp.ins = todayINS;
     const todayFB = STATIC_FB_RECORDS.filter(r => r.date === TODAY_STR).length;
     if(todayFB > dp.fb) dp.fb = todayFB;
-    return dp;
-  })();
+    dailyProgress = dp;
+  }
 
 const STATIC_FB_RECORDS = [
   {name:'Outdoor Gears Group',page:'Outdoor Gears, Stuff, Equipments Buy & Sell',type:'Post',date:'2026-04-13',status:'Done'},
@@ -281,6 +281,7 @@ const STATIC_INS_RECORDS = [
   {account:'stoneycreeknz',name:'Stoney Creek NZ (23K followers, NZ outdoor clothing brand)',dm:'Sent co-branding/retail partnership proposal + followed',date:'2026-05-22',status:'Sent'},
   {account:'rebelsportnz',name:'Rebel Sport NZ (38K followers, verified, NZ #1 sporting goods retailer)',dm:'Sent wholesale partnership proposal + followed',date:'2026-05-22',status:'Sent'}
 ];
+initDailyProgress();
 
 function getHistoricalProgress(){
   const hist=[];
