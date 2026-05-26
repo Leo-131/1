@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Customer Automated Development System v18.0</title>
+<title>Customer Automated Development System v18.1</title>
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
 :root{
@@ -114,7 +114,7 @@ tbody tr:hover{background:var(--primary-light)}
 <div class="header">
   <div class="header-left">
     <h1>Customer Automated Development System</h1>
-    <span class="ver">v18.0</span>
+    <span class="ver">v18.1</span>
     <span class="brand flextail">Flextail</span>
     <span class="brand vollyc">Vollyc</span>
   </div>
@@ -188,7 +188,7 @@ tbody tr:hover{background:var(--primary-light)}
       </div>
       <div class="tab-bar" id="filter-tabs"></div>
       <div class="table-wrap">
-        <table><thead><tr><th>#</th><th>Name</th><th>Company</th><th>Role</th><th>Industry</th><th>Region</th><th>Tier</th><th>Status</th><th>Platform</th></tr></thead><tbody id="table-body"></tbody></table>
+        <table><thead><tr><th>#</th><th>Name</th><th>Company</th><th>Role</th><th>Industry</th><th>Region</th><th>Tier</th><th>Status</th><th>开发时间</th><th>Platform</th></tr></thead><tbody id="table-body"></tbody></table>
       </div>
       <div style="margin-top:6px;color:var(--muted);font-size:10px" id="table-info"></div>
     </div>
@@ -201,7 +201,7 @@ tbody tr:hover{background:var(--primary-light)}
   <div id="detail-content"></div>
 </div>
 
-<div class="footer">Customer Automated Development System v18.0 · Flextail + Vollyc · 2026-05-26</div>
+<div class="footer">Customer Automated Development System v18.1 · Flextail + Vollyc · 2026-05-26</div>
 
 <script>
 // === UTILS ===
@@ -477,8 +477,8 @@ function getFiltered(){
 function renderTable(){
   const list=getFiltered();
   document.getElementById('table-body').innerHTML=list.length?list.map((r,i)=>
-    '<tr><td>'+(i+1)+'</td><td>'+esc(r.name)+'</td><td>'+esc(r.company)+'</td><td title="'+esc(r.role)+'">'+esc((r.role||'').substring(0,40))+'</td><td>'+esc(r.industry)+'</td><td>'+esc(r.region)+'</td><td>'+badge(r.tier,tierLabel(r.tier))+'</td><td>'+badge(r.status.toLowerCase().replace(/\s+/g,''),r.status)+'</td><td>'+badge(r.platform,r.platform.toUpperCase())+'</td></tr>'
-  ).join(''):'<tr><td colspan="9" style="text-align:center;color:var(--muted);padding:20px">No matches</td></tr>';
+    '<tr><td>'+(i+1)+'</td><td>'+esc(r.name)+'</td><td>'+esc(r.company)+'</td><td title="'+esc(r.role)+'">'+esc((r.role||'').substring(0,40))+'</td><td>'+esc(r.industry)+'</td><td>'+esc(r.region)+'</td><td>'+badge(r.tier,tierLabel(r.tier))+'</td><td>'+badge(r.status.toLowerCase().replace(/\s+/g,''),r.status)+'</td><td style="color:var(--muted);font-size:10px">'+esc(r.date||'—')+'</td><td>'+badge(r.platform,r.platform.toUpperCase())+'</td></tr>'
+  ).join(''):'<tr><td colspan="10" style="text-align:center;color:var(--muted);padding:20px">No matches</td></tr>';
   document.getElementById('table-info').textContent='Showing '+list.length+' of '+allRecords.length;
 }
 renderTable();
