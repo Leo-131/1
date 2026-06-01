@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Customer Automated Development System v18.1</title>
+<title>Customer Automated Development System v19.0</title>
 <meta name="application-name" content="Customer Development System">
 <meta name="theme-color" content="#0d1117">
 <meta name="description" content="Flextail and Vollyc customer development app with LinkedIn, Facebook, and Instagram automation queues.">
@@ -135,15 +135,43 @@ tbody tr:hover{background:var(--primary-light)}
 .app-toast.show{opacity:1;transform:translateY(0)}
 
 /* Detail Panel */
-.detail-overlay{display:none;position:fixed;top:0;right:0;width:420px;height:100vh;background:var(--surface);box-shadow:-2px 0 16px rgba(0,0,0,0.5);z-index:100;overflow-y:auto;padding:20px}
+.detail-overlay{display:none;position:fixed;top:0;right:0;width:480px;height:100vh;background:var(--surface);box-shadow:-2px 0 16px rgba(0,0,0,0.5);z-index:100;overflow-y:auto;padding:20px}
 .detail-overlay.show{display:block}
 .detail-overlay h3{font-size:14px;margin-bottom:12px;display:flex;align-items:center;gap:8px}
 .detail-overlay .close-btn{margin-left:auto;cursor:pointer;font-size:16px;color:var(--muted)}
 .detail-overlay .close-btn:hover{color:var(--text)}
-.d-item{padding:10px;border:1px solid var(--border);border-radius:8px;margin-bottom:8px;font-size:11px}
+.d-item{padding:10px;border:1px solid var(--border);border-radius:8px;margin-bottom:8px;font-size:11px;transition:border-color .15s}
+.d-item:hover{border-color:var(--primary)}
 .d-item .d-name{font-weight:600;margin-bottom:2px}
 .d-item .d-sub{color:var(--muted);font-size:10px}
 .d-item .d-status{margin-top:4px}
+.d-item .d-actions{margin-top:8px;display:flex;gap:6px;flex-wrap:wrap}
+.d-item .d-actions .btn{font-size:10px;padding:3px 8px}
+
+/* Contact Row Actions */
+tr.contact-row{cursor:pointer;transition:background .1s}
+tr.contact-row:hover{background:var(--primary-light)!important}
+tr.contact-row .row-actions{display:none;gap:4px;margin-left:8px}
+tr.contact-row:hover .row-actions{display:inline-flex}
+.row-action-btn{padding:2px 6px;border-radius:4px;font-size:9px;cursor:pointer;border:1px solid var(--border);background:transparent;color:var(--muted);transition:all .12s}
+.row-action-btn:hover{border-color:var(--primary);color:var(--primary);background:var(--primary-light)}
+
+/* Action Panel */
+.action-panel{background:linear-gradient(135deg,#161b22,#0d1117);border:1px solid var(--border);border-radius:10px;padding:16px;margin-bottom:16px}
+.action-panel h4{font-size:13px;margin-bottom:10px;display:flex;align-items:center;gap:8px}
+.action-panel .action-stats{display:flex;gap:16px;margin-bottom:12px;font-size:11px;color:var(--muted)}
+.action-panel .action-stats b{color:var(--text)}
+.action-btn-group{display:flex;gap:8px;flex-wrap:wrap}
+.action-btn-group .btn{font-size:11px;padding:6px 14px}
+
+/* Status Change Dropdown */
+.status-dropdown{position:absolute;background:var(--surface);border:1px solid var(--border);border-radius:8px;padding:4px;z-index:200;box-shadow:0 8px 24px rgba(0,0,0,.4);min-width:120px}
+.status-dropdown div{padding:6px 10px;font-size:11px;cursor:pointer;border-radius:4px}
+.status-dropdown div:hover{background:var(--primary-light);color:var(--primary)}
+
+/* Pulse animation for execute buttons */
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.6}}
+.executing{animation:pulse 1s infinite}
 
 /* Footer */
 .footer{text-align:center;padding:12px;color:var(--muted);font-size:10px;border-top:1px solid var(--border);margin-top:20px}
@@ -159,7 +187,7 @@ tbody tr:hover{background:var(--primary-light)}
 <div class="header">
   <div class="header-left">
     <h1>Customer Automated Development System</h1>
-    <span class="ver">v18.1</span>
+    <span class="ver">v19.0</span>
     <span class="brand flextail">Flextail</span>
     <span class="brand vollyc">Vollyc</span>
   </div>
@@ -288,7 +316,7 @@ tbody tr:hover{background:var(--primary-light)}
   <div id="detail-content"></div>
 </div>
 
-<div class="footer">Customer Automated Development System v18.1 · Flextail + Vollyc · 2026-05-26</div>
+<div class="footer">Customer Automated Development System v19.0 · Flextail + Vollyc · 2026-06-01</div>
 
 <script>
 // === UTILS ===
@@ -572,9 +600,12 @@ const kpis = [
   {label:'Positive Signals',value:positive.length,sub:'Accepted + Replied',cls:'green',icon:'✅',key:'positive'},
   {label:'TIER 1',value:t1All.length,sub:'C-Level / VP / Director',cls:'purple',icon:'🎯',key:'t1'},
 ];
-function kpiAction(key){return key==='li'||key==='fb'||key==='ins'?'startAutomation(&quot;'+key+'&quot;)':'showDetail(&quot;'+key+'&quot;)'}
+function kpiAction(key){
+  // All KPI clicks now open the action detail panel
+  return 'openActionPanel("'+key+'")';
+}
 document.getElementById('kpi-row').innerHTML = kpis.map(k=>
-  '<div class="kpi '+k.cls+'" role="button" tabindex="0" onclick="'+kpiAction(k.key)+'" onkeydown="if(event.key===&quot;Enter&quot;||event.key===&quot; &quot;){event.preventDefault();this.click()}"><div class="kpi-label">'+k.label+'</div><div class="kpi-value">'+k.value+'</div><div class="kpi-sub">'+(k.key==='li'||k.key==='fb'||k.key==='ins'?'Click to start automation':k.sub)+'</div><div class="kpi-icon">'+k.icon+'</div></div>'
+  '<div class="kpi '+k.cls+'" role="button" tabindex="0" onclick="openActionPanel(\''+k.key+'\')" onkeydown="if(event.key===\'Enter\'||event.key===\' \'){event.preventDefault();this.click()}"><div class="kpi-label">'+k.label+'</div><div class="kpi-value">'+k.value+'</div><div class="kpi-sub">Click to develop →</div><div class="kpi-icon">'+k.icon+'</div></div>'
 ).join('');
 
 // === COLLAPSIBLE SECTIONS ===
@@ -680,15 +711,72 @@ function getFiltered(){
 function renderTable(){
   const list=getFiltered();
   document.getElementById('table-body').innerHTML=list.length?list.map((r,i)=>
-    '<tr><td>'+(i+1)+'</td><td>'+esc(r.name)+'</td><td>'+esc(r.company)+'</td><td title="'+esc(r.role)+'">'+esc((r.role||'').substring(0,40))+'</td><td>'+esc(r.industry)+'</td><td>'+esc(r.region)+'</td><td>'+badge(r.tier,tierLabel(r.tier))+'</td><td>'+badge(r.status.toLowerCase().replace(/\s+/g,''),r.status)+'</td><td style="color:var(--muted);font-size:10px">'+esc(r.date||'—')+'</td><td>'+badge(r.platform,r.platform.toUpperCase())+'</td></tr>'
+    '<tr class="contact-row" data-name="'+esc(r.name)+'" data-company="'+esc(r.company)+'" data-platform="'+r.platform+'" data-status="'+esc(r.status)+'" onclick="openContactActions(this)"><td>'+(i+1)+'</td><td>'+esc(r.name)+'<span class="row-actions"><button class="row-action-btn" onclick="event.stopPropagation();quickAction(\'dm\',this.parentElement.parentElement)">DM</button><button class="row-action-btn" onclick="event.stopPropagation();quickAction(\'email\',this.parentElement.parentElement)">Email</button><button class="row-action-btn" onclick="event.stopPropagation();quickAction(\'status\',this.parentElement.parentElement)">Status</button></span></td><td>'+esc(r.company)+'</td><td title="'+esc(r.role)+'">'+esc((r.role||'').substring(0,40))+'</td><td>'+esc(r.industry)+'</td><td>'+esc(r.region)+'</td><td>'+badge(r.tier,tierLabel(r.tier))+'</td><td>'+badge(r.status.toLowerCase().replace(/\s+/g,''),r.status)+'</td><td style="color:var(--muted);font-size:10px">'+esc(r.date||'—')+'</td><td>'+badge(r.platform,r.platform.toUpperCase())+'</td></tr>'
   ).join(''):'<tr><td colspan="10" style="text-align:center;color:var(--muted);padding:20px">No matches</td></tr>';
   document.getElementById('table-info').textContent='Showing '+list.length+' of '+allRecords.length;
+}
+
+// Quick action from table row
+function quickAction(action, tr){
+  const name = tr.dataset.name;
+  const company = tr.dataset.company;
+  const platform = tr.dataset.platform;
+  const status = tr.dataset.status;
+  if(action==='status'){
+    // Create inline dropdown
+    if(activeDropdown){activeDropdown.remove();activeDropdown=null}
+    const rect = tr.getBoundingClientRect();
+    const dropdown = document.createElement('div');
+    dropdown.className='status-dropdown';
+    dropdown.style.left=rect.left+200+'px';
+    dropdown.style.top=rect.bottom+'px';
+    ['Accepted','Replied','Sent','Pending','Done','Failed','Rejected'].forEach(s=>{
+      const div=document.createElement('div');div.textContent=s+(s===status?' ✓':'');
+      div.onclick=()=>{
+        tr.dataset.status=s;
+        const badge_td=tr.querySelectorAll('td')[7];
+        if(badge_td)badge_td.innerHTML=badge(s.toLowerCase().replace(/\s+/g,''),s);
+        saveStatusChange(name,s);
+        logAction(name+' — status → '+s);
+        dropdown.remove();activeDropdown=null;
+      };
+      dropdown.appendChild(div);
+    });
+    document.body.appendChild(dropdown);
+    activeDropdown=dropdown;
+    return;
+  }
+  const msg = action==='dm'
+    ? `Send DM to ${name} at ${company} (platform: ${platform}, status: ${status}). Execute now.`
+    : `Send follow-up email to ${name} at ${company} (status: ${status}). Execute now.`;
+  fetch('http://127.0.0.1:28789/api/agent/message',{
+    method:'POST',headers:{'Content-Type':'application/json','Authorization':'Bearer '+(window.OPENCLAW_TOKEN||'')},
+    body:JSON.stringify({message:msg,source:'outreach-dashboard'})
+  }).then(r=>r.json()).then(()=>{
+    showAppToast('✅ '+(action==='dm'?'DM':'Email')+' sent to '+name);
+    logAction(name+' — '+(action==='dm'?'DM':'Email')+' triggered');
+  }).catch(()=>{
+    navigator.clipboard.writeText(msg);
+    showAppToast('📋 Copied (agent offline)');
+  });
+}
+
+// Open detail panel when clicking a table row
+function openContactActions(tr){
+  const name=tr.dataset.name;
+  const company=tr.dataset.company;
+  const platform=tr.dataset.platform;
+  const status=tr.dataset.status;
+  openActionPanel(platform==='li'?'li':platform==='fb'?'fb':'ins');
 }
 renderTable();
 renderAutomation();
 
-// === DETAIL OVERLAY ===
-function showDetail(key){
+// === DETAIL OVERLAY WITH ACTIONS ===
+let activeDropdown = null;
+document.addEventListener('click',e=>{if(activeDropdown && !e.target.closest('.status-dropdown')){activeDropdown.remove();activeDropdown=null}});
+
+function openActionPanel(key){
   const panel=document.getElementById('detail-overlay');
   const title=document.getElementById('detail-title');
   const content=document.getElementById('detail-content');
@@ -701,19 +789,155 @@ function showDetail(key){
     case'positive':records=positive;label='Positive Signals ('+positive.length+')';break;
     case't1':records=t1All;label='TIER 1 ('+t1All.length+')';break;
   }
+  const platName=key==='li'?'LinkedIn':key==='fb'?'Facebook':key==='ins'?'Instagram':'All';
   title.innerHTML=label+' <span class="close-btn" onclick="closeDetail()">✕</span>';
+  
+  // Action panel at top
+  let actionHtml = '<div class="action-panel">';
+  actionHtml += '<h4>🚀 Quick Actions — '+esc(platName)+'</h4>';
+  const accepted=records.filter(r=>r.status==='Accepted').length;
+  const replied=records.filter(r=>r.status==='Replied').length;
+  const pending=records.filter(r=>r.status==='Pending').length;
+  const sent=records.filter(r=>r.status==='Sent').length;
+  actionHtml += '<div class="action-stats"><span>✅ Accepted: <b>'+accepted+'</b></span><span>💬 Replied: <b>'+replied+'</b></span><span>⏳ Pending: <b>'+pending+'</b></span><span>📤 Sent: <b>'+sent+'</b></span></div>';
+  actionHtml += '<div class="action-btn-group">';
+  if(key==='ins'||key==='total'){actionHtml+='<button class="btn ins" onclick="triggerAutomation(\'ins\',\'dm\')">📷 Send IG DMs</button>'}
+  if(key==='li'||key==='total'){actionHtml+='<button class="btn li" onclick="triggerAutomation(\'li\',\'connect\')">🔗 LI Connections</button>'}
+  if(key==='fb'||key==='total'){actionHtml+='<button class="btn fb" onclick="triggerAutomation(\'fb\',\'engage\')">📘 FB Engagement</button>'}
+  if(accepted+replied>0){actionHtml+='<button class="btn primary" onclick="triggerAutomation(\''+key+'\',\'followup\')">📧 Email Follow-ups</button>'}
+  actionHtml+='<button class="btn" onclick="startAutomation(\''+(key==='total'||key==='positive'||key==='t1'?'ins':key)+'\')">⚡ Build Queue</button>';
+  actionHtml += '</div></div>';
+  
+  // Contact list with per-item actions
   const byPlat={};records.forEach(r=>{if(!byPlat[r.platform])byPlat[r.platform]=[];byPlat[r.platform].push(r)});
   const pNames={li:'🔗 LinkedIn',fb:'📘 Facebook',ins:'📷 Instagram'};
   const sColors={Accepted:'#22c55e',Replied:'#22c55e',Sent:'#4f6ef7',Pending:'#ff7d00',Done:'#22c55e',Failed:'#f53f3f',Rejected:'#f53f3f',Excluded:'#8c95a6',Unknown:'#8c95a6'};
-  content.innerHTML=Object.entries(byPlat).map(([p,recs])=>
+  const listHtml=Object.entries(byPlat).map(([p,recs])=>
     '<h4 style="font-size:12px;margin:12px 0 8px">'+(pNames[p]||p)+' ('+recs.length+')</h4>'+
-    recs.map(r=>
-      '<div class="d-item"><div class="d-name">'+esc(r.name)+'</div><div class="d-sub">'+esc(r.company)+' · '+esc(r.industry)+' · '+esc(r.region)+'</div><div class="d-status">'+badge(r.status.toLowerCase().replace(/\s+/g,''),r.status)+' '+badge(r.platform,r.platform.toUpperCase())+'</div></div>'
+    recs.slice(0,50).map(r=>
+      '<div class="d-item" data-name="'+esc(r.name)+'" data-company="'+esc(r.company)+'" data-platform="'+r.platform+'" data-status="'+esc(r.status)+'"><div class="d-name">'+esc(r.name)+'</div><div class="d-sub">'+esc(r.company)+' · '+esc(r.industry)+' · '+esc(r.region)+'</div><div class="d-status">'+badge(r.status.toLowerCase().replace(/\s+/g,''),r.status)+' '+badge(r.platform,r.platform.toUpperCase())+'</div><div class="d-actions"><button class="btn primary" onclick="executeContactAction(this,\'dm\')">💬 DM</button><button class="btn" onclick="executeContactAction(this,\'email\')">📧 Email</button><button class="btn" onclick="showStatusMenu(event,this)">🔄 Status</button></div></div>'
     ).join('')
   ).join('');
+  
+  content.innerHTML=actionHtml+listHtml;
   panel.classList.add('show');
 }
+
 function closeDetail(){document.getElementById('detail-overlay').classList.remove('show')}
+
+// Execute a contact-level action via OpenClaw Gateway
+function executeContactAction(btn, actionType){
+  const item = btn.closest('.d-item');
+  const name = item.dataset.name;
+  const company = item.dataset.company;
+  const platform = item.dataset.platform;
+  const status = item.dataset.status;
+  btn.classList.add('executing');
+  btn.disabled = true;
+  btn.textContent = '⏳ Sending...';
+  
+  const payload = {
+    action: actionType,
+    contact: {name, company, platform, status},
+    timestamp: new Date().toISOString()
+  };
+  
+  // Call OpenClaw Gateway to trigger real automation
+  fetch('http://127.0.0.1:28789/api/agent/message', {
+    method: 'POST',
+    headers: {'Content-Type': 'application/json', 'Authorization': 'Bearer ' + (window.OPENCLAW_TOKEN||'')},
+    body: JSON.stringify({
+      message: `[Dashboard Action] ${actionType==='dm'?'Send DM':'Send email'} to ${name} at ${company} (platform: ${platform}, status: ${status}). Execute now.`,
+      source: 'outreach-dashboard'
+    })
+  }).then(r=>r.json()).then(data=>{
+    btn.classList.remove('executing');
+    btn.textContent = actionType==='dm'?'✅ DM Sent':'✅ Email Sent';
+    btn.style.background='var(--green)';btn.style.color='#fff';btn.style.borderColor='var(--green)';
+    logAction(name+' — '+(actionType==='dm'?'DM':'Email')+' sent via agent');
+  }).catch(err=>{
+    // Fallback: copy action instruction to clipboard
+    const instruction = actionType==='dm'
+      ? `Send Instagram DM to ${name} at ${company}. Current status: ${status}.`
+      : `Send follow-up email to ${name} at ${company}. Current status: ${status}.`;
+    navigator.clipboard.writeText(instruction).then(()=>{
+      btn.classList.remove('executing');
+      btn.textContent = '📋 Copied';
+      logAction(name+' — instruction copied (agent offline)');
+      setTimeout(()=>{btn.disabled=false;btn.textContent=actionType==='dm'?'💬 DM':'📧 Email';btn.style=''},3000);
+    }).catch(()=>{
+      btn.classList.remove('executing');
+      btn.textContent = actionType==='dm'?'💬 DM':'📧 Email';
+      btn.disabled=false;
+    });
+  });
+}
+
+// Show status change dropdown
+function showStatusMenu(event, btn){
+  event.stopPropagation();
+  if(activeDropdown){activeDropdown.remove();activeDropdown=null}
+  const item = btn.closest('.d-item');
+  const name = item.dataset.name;
+  const currentStatus = item.dataset.status;
+  const statuses = ['Accepted','Replied','Sent','Pending','Done','Failed','Rejected'];
+  const dropdown = document.createElement('div');
+  dropdown.className = 'status-dropdown';
+  dropdown.style.left = event.clientX+'px';
+  dropdown.style.top = event.clientY+'px';
+  statuses.forEach(s=>{
+    const div = document.createElement('div');
+    div.textContent = s + (s===currentStatus?' ✓':'');
+    div.style.color = s===currentStatus?'var(--primary)':'';
+    div.onclick = ()=>{
+      item.dataset.status = s;
+      const statusBadge = item.querySelector('.d-status .badge');
+      if(statusBadge){
+        statusBadge.className = 'badge '+s.toLowerCase();
+        statusBadge.textContent = s;
+      }
+      logAction(name+' — status changed to '+s);
+      dropdown.remove();activeDropdown=null;
+      saveStatusChange(name, s);
+    };
+    dropdown.appendChild(div);
+  });
+  document.body.appendChild(dropdown);
+  activeDropdown = dropdown;
+}
+
+// Save status changes to localStorage
+function saveStatusChange(name, newStatus){
+  const changes = JSON.parse(localStorage.getItem('status_changes')||'{}');
+  changes[name] = {status:newStatus, changedAt:new Date().toISOString()};
+  localStorage.setItem('status_changes', JSON.stringify(changes));
+}
+
+// Trigger batch automation via agent
+function triggerAutomation(platform, actionType){
+  const actionLabels = {dm:'IG DM Outreach',connect:'LinkedIn Connection Outreach',engage:'Facebook Engagement',followup:'Email Follow-up'};
+  const msg = `[Dashboard Automation] Start ${actionLabels[actionType]||actionType} for ${platform.toUpperCase()} contacts. Prioritize by score. Execute top 5 contacts now.`;
+  
+  fetch('http://127.0.0.1:28789/api/agent/message', {
+    method: 'POST',
+    headers: {'Content-Type': 'application/json', 'Authorization': 'Bearer ' + (window.OPENCLAW_TOKEN||'')},
+    body: JSON.stringify({message: msg, source: 'outreach-dashboard'})
+  }).then(r=>r.json()).then(data=>{
+    showAppToast('🚀 '+actionLabels[actionType]+' triggered for '+platform.toUpperCase());
+    logAction('Batch automation triggered: '+actionLabels[actionType]+' ('+platform.toUpperCase()+')');
+  }).catch(()=>{
+    showAppToast('📋 Instruction copied — agent offline');
+    navigator.clipboard.writeText(msg);
+    logAction('Agent offline — instruction copied for: '+actionLabels[actionType]);
+  });
+}
+
+function logAction(text){
+  const now = new Date().toLocaleString();
+  automationState.log = [{time:now,text},...automationState.log].slice(0,50);
+  saveAutomationState();
+  renderAutomation();
+}
 
 // === EXPORT ===
 function exportCSV(){
