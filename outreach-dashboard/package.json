@@ -1,7 +1,7 @@
 {
   "name": "outreach-dashboard",
-  "version": "17.6.0",
-  "description": "Flextail Gear Outreach Dashboard - B2B Customer Development",
+  "version": "18.1.1",
+  "description": "Flextail Gear Customer Automated Development System",
   "main": "main.js",
   "scripts": {
     "start": "electron .",
@@ -16,13 +16,16 @@
   },
   "build": {
     "appId": "com.flextail.outreach-dashboard",
-    "productName": "Outreach Dashboard",
+    "productName": "Customer Development System",
     "directories": {
       "output": "dist"
     },
     "files": [
       "main.js",
       "index.html",
+      "outreach-dashboard.html",
+      "manifest.webmanifest",
+      "service-worker.js",
       "icon.svg",
       "enhancements.css"
     ],
@@ -38,7 +41,7 @@
       "icon": "icon.svg"
     },
     "portable": {
-      "artifactName": "Outreach-Dashboard-v${version}-Portable.exe"
+      "artifactName": "Customer-Development-System-v${version}-Portable.exe"
     }
   }
 }

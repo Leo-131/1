@@ -1,106 +1,130 @@
 #!/usr/bin/env node
 /**
- * smart-deploy.js - Intelligent deployment checker for Outreach Dashboard
- * Only triggers Vercel deployment when actual file content changes are detected
- * 
- * Usage: node smart-deploy.js [--force] [--dry-run]
+ * Minimal production deploy guard for the customer development system.
+ *
+ * Default behavior:
+ * - Deploys only the latest online app files.
+ * - Skips deployment when app file content is unchanged.
+ * - Allows only 1 production deployment per local day unless --force is used.
+ *
+ * Usage:
+ *   node smart-deploy.js --dry-run
+ *   node smart-deploy.js
+ *   node smart-deploy.js --force
  */
 
-const fs = require('fs');
-const path = require('path');
-const crypto = require('crypto');
-const { execSync } = require('child_process');
+const fs = require("fs");
+const path = require("path");
+const crypto = require("crypto");
+const { spawnSync } = require("child_process");
 
-const DASHBOARD_DIR = __dirname;
-const HASH_FILE = path.join(process.env.HOME || process.env.USERPROFILE, '.qclaw', 'workspace', 'deploy_hashes.json');
-const FILES_TO_WATCH = ['index.html', 'enhancements.css', 'service-worker.js', 'manifest.webmanifest'];
+const ROOT = __dirname;
+const STATE_FILE = path.join(ROOT, ".deploy-state.json");
+const DAILY_LIMIT = Number(process.env.DAILY_DEPLOY_LIMIT || 1);
+const APP_FILES = [
+  "outreach-dashboard.html",
+  "index.html",
+  "manifest.webmanifest",
+  "service-worker.js",
+  "icon.svg",
+  "vercel.json",
+  "netlify.toml",
+];
 
-function getFileHash(filePath) {
-  if (!fs.existsSync(filePath)) return null;
-  const content = fs.readFileSync(filePath);
-  return crypto.createHash('md5').update(content).digest('hex');
+const args = new Set(process.argv.slice(2));
+const dryRun = args.has("--dry-run");
+const force = args.has("--force");
+
+function todayKey() {
+  return new Date().toISOString().slice(0, 10);
 }
 
-function loadHashes() {
-  if (fs.existsSync(HASH_FILE)) {
-    return JSON.parse(fs.readFileSync(HASH_FILE, 'utf8'));
+function hashFile(file) {
+  const fullPath = path.join(ROOT, file);
+  if (!fs.existsSync(fullPath)) {
+    throw new Error(`Required app file is missing: ${file}`);
   }
-  return {};
+  return crypto.createHash("sha256").update(fs.readFileSync(fullPath)).digest("hex");
 }
 
-function saveHashes(hashes) {
-  const dir = path.dirname(HASH_FILE);
-  if (!fs.existsSync(dir)) fs.mkdirSync(dir, { recursive: true });
-  fs.writeFileSync(HASH_FILE, JSON.stringify(hashes, null, 2));
+function hashApp() {
+  const hashes = {};
+  for (const file of APP_FILES) hashes[file] = hashFile(file);
+  const combined = APP_FILES.map((file) => `${file}:${hashes[file]}`).join("\n");
+  return {
+    digest: crypto.createHash("sha256").update(combined).digest("hex"),
+    files: hashes,
+  };
 }
 
-function checkChanges() {
-  const previous = loadHashes();
-  const current = {};
-  const changes = [];
-
-  for (const file of FILES_TO_WATCH) {
-    const fullPath = path.join(DASHBOARD_DIR, file);
-    const hash = getFileHash(fullPath);
-    current[file] = hash;
-    
-    if (!previous[file]) {
-      changes.push({ file, type: 'NEW' });
-    } else if (previous[file] !== hash) {
-      changes.push({ file, type: 'MODIFIED' });
-    }
+function loadState() {
+  if (!fs.existsSync(STATE_FILE)) {
+    return { deployments: {}, lastDigest: "", lastFiles: {} };
   }
-
-  return { previous, current, changes };
+  return JSON.parse(fs.readFileSync(STATE_FILE, "utf8"));
 }
 
-function deploy() {
-  try {
-    console.log('🚀 Starting deployment...');
-    execSync('git add -A', { cwd: DASHBOARD_DIR, stdio: 'inherit' });
-    const timestamp = new Date().toISOString().replace(/[:.]/g, '-').slice(0, 19);
-    execSync(`git commit -m "deploy: ${timestamp}"`, { cwd: DASHBOARD_DIR, stdio: 'inherit' });
-    execSync('git push', { cwd: DASHBOARD_DIR, stdio: 'inherit' });
-    console.log('✅ Deployment complete!');
-    return true;
-  } catch (e) {
-    console.error('❌ Deployment failed:', e.message);
-    return false;
+function saveState(state) {
+  fs.writeFileSync(STATE_FILE, `${JSON.stringify(state, null, 2)}\n`);
+}
+
+function run(command, commandArgs) {
+  const result = spawnSync(command, commandArgs, {
+    cwd: ROOT,
+    encoding: "utf8",
+    shell: process.platform === "win32",
+  });
+  if (result.stdout) process.stdout.write(result.stdout);
+  if (result.stderr) process.stderr.write(result.stderr);
+  if (result.status !== 0) {
+    throw new Error(`${command} ${commandArgs.join(" ")} failed with exit ${result.status}`);
   }
 }
 
-// Main
-const args = process.argv.slice(2);
-const force = args.includes('--force');
-const dryRun = args.includes('--dry-run');
+function changedFiles(previousFiles, currentFiles) {
+  return APP_FILES.filter((file) => previousFiles[file] !== currentFiles[file]);
+}
 
-console.log('=== Smart Deploy v1.0 ===');
-console.log(`Dashboard dir: ${DASHBOARD_DIR}`);
+console.log("=== Minimal Online App Deploy ===");
+console.log(`Mode: ${dryRun ? "dry-run" : "production"}${force ? " + force" : ""}`);
+console.log(`Daily deploy limit: ${DAILY_LIMIT}`);
 
-const { current, changes } = checkChanges();
+const state = loadState();
+const current = hashApp();
+const day = todayKey();
+const todaysCount = state.deployments[day] || 0;
+const changes = changedFiles(state.lastFiles || {}, current.files);
 
-if (changes.length === 0 && !force) {
-  console.log('✅ No file changes detected. Skipping deployment.');
-  console.log('Use --force to deploy anyway.');
+console.log(`Current app digest: ${current.digest.slice(0, 12)}`);
+console.log(`Deployments today: ${todaysCount}/${DAILY_LIMIT}`);
+
+if (changes.length === 0 && state.lastDigest === current.digest && !force) {
+  console.log("No app changes detected. Deployment skipped.");
   process.exit(0);
 }
 
 if (changes.length > 0) {
-  console.log('📋 Changes detected:');
-  changes.forEach(c => console.log(`  ${c.type}: ${c.file}`));
+  console.log("Changed app files:");
+  for (const file of changes) console.log(`- ${file}`);
 }
 
-if (dryRun) {
-  console.log('🏃 Dry run - would deploy but not actually pushing.');
+if (todaysCount >= DAILY_LIMIT && !force) {
+  console.log("Daily deployment limit reached locally. Deployment skipped.");
+  console.log("Use --force only when you intentionally want to spend another Vercel deployment.");
   process.exit(0);
 }
 
-if (force) {
-  console.log('⚡ Force mode enabled.');
+if (dryRun) {
+  console.log("Dry run complete. No Vercel deployment was created.");
+  process.exit(0);
 }
 
-const success = deploy();
-if (success) {
-  saveHashes(current);
-  console.log('💾 Hashes saved.');
-}
+run("vercel", ["deploy", "--prod", "--yes"]);
+
+state.lastDigest = current.digest;
+state.lastFiles = current.files;
+state.deployments[day] = todaysCount + 1;
+state.lastDeploymentAt = new Date().toISOString();
+saveState(state);
+
+console.log("Production deploy finished and local deploy state was updated.");

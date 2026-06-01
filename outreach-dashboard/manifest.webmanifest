@@ -1,8 +1,8 @@
 {
-  "name": "Outreach Dashboard - Flextail & Vollyc",
-  "short_name": "Outreach",
-  "description": "Flextail and Vollyc outreach execution dashboard with embedded contact data.",
-  "start_url": "./",
+  "name": "Customer Development System - Flextail & Vollyc",
+  "short_name": "Customer Dev",
+  "description": "Flextail and Vollyc customer development app with LinkedIn, Facebook, and Instagram automation queues.",
+  "start_url": "./outreach-dashboard.html",
   "scope": "./",
   "display": "standalone",
   "background_color": "#0f1117",
@@ -19,14 +19,14 @@
   ],
   "shortcuts": [
     {
-      "name": "Open Contacts",
-      "short_name": "Contacts",
-      "url": "./#contacts"
+      "name": "Open Customer System",
+      "short_name": "System",
+      "url": "./outreach-dashboard.html"
     },
     {
-      "name": "Daily Progress",
-      "short_name": "Progress",
-      "url": "./#progress"
+      "name": "Automation Center",
+      "short_name": "Automation",
+      "url": "./outreach-dashboard.html#automation-app"
     }
   ]
 }

@@ -4,6 +4,11 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Customer Automated Development System v18.1</title>
+<meta name="application-name" content="Customer Development System">
+<meta name="theme-color" content="#0d1117">
+<meta name="description" content="Flextail and Vollyc customer development app with LinkedIn, Facebook, and Instagram automation queues.">
+<link rel="manifest" href="./manifest.webmanifest">
+<link rel="icon" href="./icon.svg" type="image/svg+xml">
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
 :root{
@@ -93,6 +98,41 @@ tbody tr:hover{background:var(--primary-light)}
 .btn:hover{border-color:var(--primary)}
 .btn.primary{background:var(--primary);color:#fff;border-color:var(--primary)}
 .btn.primary:hover{opacity:.9}
+.btn.li{background:#0a66c2;color:#fff;border-color:#0a66c2}
+.btn.fb{background:#1877f2;color:#fff;border-color:#1877f2}
+.btn.ins{background:#e4405f;color:#fff;border-color:#e4405f}
+
+/* Automation App */
+.automation-panel{background:linear-gradient(135deg,#161b22 0%,#121923 100%);border:1px solid var(--border);border-radius:var(--radius);padding:16px;margin-bottom:20px}
+.automation-head{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;margin-bottom:14px}
+.automation-head h2{font-size:15px;font-weight:650;margin-bottom:4px}
+.automation-head p{font-size:11px;color:var(--muted);line-height:1.5}
+.automation-actions{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:14px}
+.automation-btn{min-height:78px;border:1px solid var(--border);border-radius:10px;padding:12px;text-align:left;color:#fff;cursor:pointer;transition:transform .15s,border-color .15s,box-shadow .15s;background:#1c2333}
+.automation-btn:hover{transform:translateY(-1px);box-shadow:0 8px 24px rgba(0,0,0,.18)}
+.automation-btn strong{display:block;font-size:14px;margin-bottom:5px}
+.automation-btn span{display:block;font-size:10px;line-height:1.45;opacity:.82}
+.automation-btn.linkedin{background:linear-gradient(135deg,#0a66c2,#123b70);border-color:#0a66c2}
+.automation-btn.facebook{background:linear-gradient(135deg,#1877f2,#184a91);border-color:#1877f2}
+.automation-btn.instagram{background:linear-gradient(135deg,#e4405f,#7c2d8e);border-color:#e4405f}
+.automation-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:12px}
+.automation-card{border:1px solid var(--border);border-radius:10px;background:#0d1117;padding:12px;min-height:128px}
+.automation-card h3{font-size:12px;margin-bottom:8px;display:flex;justify-content:space-between;gap:8px}
+.automation-status{font-size:10px;color:var(--muted)}
+.automation-status.running{color:var(--green)}
+.automation-status.paused{color:var(--orange)}
+.automation-task{display:grid;grid-template-columns:22px 1fr auto;gap:8px;align-items:center;padding:8px 0;border-bottom:1px solid #21262d;font-size:11px}
+.automation-task:last-child{border-bottom:0}
+.automation-task .num{width:22px;height:22px;border-radius:50%;display:grid;place-items:center;background:#1c2333;color:var(--primary);font-weight:700;font-size:10px}
+.automation-task .meta{color:var(--muted);font-size:10px;margin-top:2px}
+.automation-task .pill{font-size:9px;border:1px solid var(--border);border-radius:999px;padding:2px 6px;color:var(--muted)}
+.automation-log{max-height:180px;overflow:auto;font-size:10px;color:var(--muted);line-height:1.55}
+.automation-log div{padding:5px 0;border-bottom:1px solid #21262d}
+.automation-log b{color:var(--text)}
+.progress-line{height:7px;border-radius:999px;background:#21262d;overflow:hidden;margin:8px 0 10px}
+.progress-line span{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--primary),var(--green));transition:width .25s}
+.app-toast{position:fixed;right:18px;bottom:18px;z-index:200;border:1px solid var(--border);border-radius:10px;background:#161b22;color:var(--text);padding:10px 12px;font-size:11px;box-shadow:0 14px 36px rgba(0,0,0,.32);opacity:0;transform:translateY(8px);pointer-events:none;transition:opacity .2s,transform .2s}
+.app-toast.show{opacity:1;transform:translateY(0)}
 
 /* Detail Panel */
 .detail-overlay{display:none;position:fixed;top:0;right:0;width:420px;height:100vh;background:var(--surface);box-shadow:-2px 0 16px rgba(0,0,0,0.5);z-index:100;overflow-y:auto;padding:20px}
@@ -107,6 +147,11 @@ tbody tr:hover{background:var(--primary-light)}
 
 /* Footer */
 .footer{text-align:center;padding:12px;color:var(--muted);font-size:10px;border-top:1px solid var(--border);margin-top:20px}
+@media(max-width:900px){
+  .automation-actions,.automation-grid{grid-template-columns:1fr}
+  .automation-head{display:block}
+  .kpi-row{grid-template-columns:repeat(2,1fr)}
+}
 </style>
 </head>
 <body>
@@ -128,6 +173,48 @@ tbody tr:hover{background:var(--primary-light)}
 <div class="container">
   <!-- KPI Row -->
   <div class="kpi-row" id="kpi-row"></div>
+
+  <!-- Automation Command Center -->
+  <div class="automation-panel" id="automation-app">
+    <div class="automation-head">
+      <div>
+        <h2>Customer Development Automation</h2>
+        <p>Choose a platform to build a prioritized customer development queue. The system selects high-value contacts, creates action steps, and tracks progress in this browser.</p>
+      </div>
+      <button class="btn" type="button" onclick="resetAutomation()">Reset Workflow</button>
+    </div>
+    <div class="automation-actions">
+      <button class="automation-btn linkedin" type="button" onclick="startAutomation('li')">
+        <strong>LINKEDIN</strong>
+        <span>Start profile outreach queue, prioritize T1 decision makers, and prepare connection/message tasks.</span>
+      </button>
+      <button class="automation-btn facebook" type="button" onclick="startAutomation('fb')">
+        <strong>FACEBOOK</strong>
+        <span>Start group/page engagement queue, record posts/comments, and track completed development actions.</span>
+      </button>
+      <button class="automation-btn instagram" type="button" onclick="startAutomation('ins')">
+        <strong>INS</strong>
+        <span>Start DM development queue, focus on replied/sent accounts, and create follow-up actions.</span>
+      </button>
+    </div>
+    <div class="automation-grid">
+      <div class="automation-card">
+        <h3>
+          <span id="automation-title">Ready to start</span>
+          <span class="automation-status" id="automation-status">Idle</span>
+        </h3>
+        <div class="progress-line"><span id="automation-progress"></span></div>
+        <div id="automation-tasks"></div>
+      </div>
+      <div class="automation-card">
+        <h3>
+          <span>Activity Log</span>
+          <span class="automation-status" id="automation-count">0 tasks</span>
+        </h3>
+        <div class="automation-log" id="automation-log"></div>
+      </div>
+    </div>
+  </div>
 
   <!-- Platform Breakdown -->
   <div class="section">
@@ -361,6 +448,121 @@ const positive = allRecords.filter(r=>['Accepted','Replied'].includes(r.status))
 const t1All = allRecords.filter(r=>r.tier==='t1');
 const t2All = allRecords.filter(r=>r.tier==='t2');
 
+// === AUTOMATION WORKFLOW ===
+const AUTO_KEY = 'customer_development_automation_v18';
+let automationState = loadAutomationState();
+function loadAutomationState(){
+  try{
+    return JSON.parse(localStorage.getItem(AUTO_KEY) || '{"platform":"","status":"Idle","progress":0,"tasks":[],"log":[]}');
+  }catch(e){
+    return {platform:'',status:'Idle',progress:0,tasks:[],log:[]};
+  }
+}
+function saveAutomationState(){localStorage.setItem(AUTO_KEY,JSON.stringify(automationState))}
+function platformName(p){return p==='li'?'LINKEDIN':p==='fb'?'FACEBOOK':p==='ins'?'INS':'Platform'}
+function platformRecords(p){return p==='li'?liR:p==='fb'?fbR:insR}
+function scoreLead(r){
+  let score=0;
+  if(r.tier==='t1')score+=50;
+  if(r.tier==='t2')score+=25;
+  if(['Accepted','Replied'].includes(r.status))score+=35;
+  if(['Pending','Sent','0 out of 6','2 out of 6'].includes(r.status))score+=15;
+  if(r.company)score+=8;
+  if(r.region==='North America')score+=6;
+  if(r.industry==='Outdoor')score+=6;
+  return score;
+}
+function buildAutomationQueue(platform){
+  const list = platformRecords(platform)
+    .filter(r=>r && r.name)
+    .map(r=>({...r,autoScore:scoreLead(r)}))
+    .sort((a,b)=>b.autoScore-a.autoScore || String(a.company).localeCompare(String(b.company)))
+    .slice(0,12);
+  return list.map((r,i)=>({
+    id: platform+'-'+i+'-'+String(r.name).replace(/\W+/g,'').slice(0,12),
+    done: i<2,
+    name: r.name,
+    company: r.company || '-',
+    role: r.role || '-',
+    tier: tierLabel(r.tier),
+    status: r.status,
+    platform,
+    action: platform==='li'
+      ? (r.status==='Accepted'?'Send follow-up message':'Open profile and prepare connection note')
+      : platform==='fb'
+        ? 'Engage page/group and record touchpoint'
+        : (r.status==='Replied'?'Prepare warm follow-up DM':'Send targeted DM')
+  }));
+}
+function startAutomation(platform){
+  const tasks = buildAutomationQueue(platform);
+  automationState = {
+    platform,
+    status:'Running',
+    progress:tasks.length?Math.round(tasks.filter(t=>t.done).length/tasks.length*100):0,
+    tasks,
+    log:[
+      {time:new Date().toLocaleString(),text:platformName(platform)+' automation started with '+tasks.length+' prioritized contacts'},
+      ...automationState.log
+    ].slice(0,30)
+  };
+  saveAutomationState();
+  curPlat = platform;
+  curFilter = platform==='li'?'t1':platform==='fb'?'all':'positive';
+  syncPlatformTabs();
+  syncFilterTabs();
+  renderTable();
+  renderAutomation();
+  showAppToast(platformName(platform)+' customer development started');
+}
+function completeAutomationTask(id){
+  automationState.tasks = automationState.tasks.map(t=>t.id===id?{...t,done:true}:t);
+  const done = automationState.tasks.filter(t=>t.done).length;
+  automationState.progress = automationState.tasks.length?Math.round(done/automationState.tasks.length*100):0;
+  automationState.status = automationState.progress>=100?'Completed':'Running';
+  automationState.log = [{time:new Date().toLocaleString(),text:'Completed task '+done+' / '+automationState.tasks.length},...automationState.log].slice(0,30);
+  saveAutomationState();
+  renderAutomation();
+}
+function resetAutomation(){
+  automationState={platform:'',status:'Idle',progress:0,tasks:[],log:[{time:new Date().toLocaleString(),text:'Workflow reset'}]};
+  saveAutomationState();
+  renderAutomation();
+}
+function renderAutomation(){
+  const title=document.getElementById('automation-title');
+  const status=document.getElementById('automation-status');
+  const progress=document.getElementById('automation-progress');
+  const tasks=document.getElementById('automation-tasks');
+  const log=document.getElementById('automation-log');
+  const count=document.getElementById('automation-count');
+  if(!title)return;
+  const done=automationState.tasks.filter(t=>t.done).length;
+  title.textContent=automationState.platform?platformName(automationState.platform)+' automation queue':'Ready to start';
+  status.textContent=automationState.status;
+  status.className='automation-status '+(automationState.status==='Running'?'running':automationState.status==='Idle'?'':'paused');
+  progress.style.width=(automationState.progress||0)+'%';
+  count.textContent=done+' / '+automationState.tasks.length+' done';
+  tasks.innerHTML=automationState.tasks.length?automationState.tasks.map((t,i)=>
+    '<div class="automation-task"><div class="num">'+(i+1)+'</div><div><b>'+esc(t.name)+'</b><div class="meta">'+esc(t.company)+' · '+esc(t.tier)+' · '+esc(t.action)+'</div></div><button class="btn '+t.platform+'" type="button" '+(t.done?'disabled':'onclick="completeAutomationTask(&quot;'+esc(t.id)+'&quot;)"')+'>Done</button></div>'
+  ).join(''):'<div style="color:var(--muted);font-size:11px;line-height:1.6">Click LINKEDIN, FACEBOOK, or INS to generate a customer development workflow.</div>';
+  log.innerHTML=automationState.log.length?automationState.log.map(item=>'<div><b>'+esc(item.time)+'</b><br>'+esc(item.text)+'</div>').join(''):'<div>No automation activity yet.</div>';
+}
+function syncPlatformTabs(){
+  document.querySelectorAll('#platform-tabs .tab').forEach((tab,i)=>tab.classList.toggle('active',pTabs[i]&&pTabs[i][0]===curPlat));
+}
+function syncFilterTabs(){
+  document.querySelectorAll('#filter-tabs .tab').forEach((tab,i)=>tab.classList.toggle('active',fTabs[i]&&fTabs[i][0]===curFilter));
+}
+function showAppToast(msg){
+  let toast=document.getElementById('app-toast');
+  if(!toast){toast=document.createElement('div');toast.id='app-toast';toast.className='app-toast';document.body.appendChild(toast)}
+  toast.textContent=msg;
+  toast.classList.add('show');
+  clearTimeout(showAppToast.timer);
+  showAppToast.timer=setTimeout(()=>toast.classList.remove('show'),2200);
+}
+
 // === KPI ===
 const kpis = [
   {label:'Total Contacts',value:allRecords.length,sub:'All platforms',cls:'',icon:'👥',key:'total'},
@@ -370,8 +572,9 @@ const kpis = [
   {label:'Positive Signals',value:positive.length,sub:'Accepted + Replied',cls:'green',icon:'✅',key:'positive'},
   {label:'TIER 1',value:t1All.length,sub:'C-Level / VP / Director',cls:'purple',icon:'🎯',key:'t1'},
 ];
+function kpiAction(key){return key==='li'||key==='fb'||key==='ins'?'startAutomation(&quot;'+key+'&quot;)':'showDetail(&quot;'+key+'&quot;)'}
 document.getElementById('kpi-row').innerHTML = kpis.map(k=>
-  '<div class="kpi '+k.cls+'" onclick="showDetail(\''+k.key+'\')"><div class="kpi-label">'+k.label+'</div><div class="kpi-value">'+k.value+'</div><div class="kpi-sub">'+k.sub+'</div><div class="kpi-icon">'+k.icon+'</div></div>'
+  '<div class="kpi '+k.cls+'" role="button" tabindex="0" onclick="'+kpiAction(k.key)+'" onkeydown="if(event.key===&quot;Enter&quot;||event.key===&quot; &quot;){event.preventDefault();this.click()}"><div class="kpi-label">'+k.label+'</div><div class="kpi-value">'+k.value+'</div><div class="kpi-sub">'+(k.key==='li'||k.key==='fb'||k.key==='ins'?'Click to start automation':k.sub)+'</div><div class="kpi-icon">'+k.icon+'</div></div>'
 ).join('');
 
 // === COLLAPSIBLE SECTIONS ===
@@ -482,6 +685,7 @@ function renderTable(){
   document.getElementById('table-info').textContent='Showing '+list.length+' of '+allRecords.length;
 }
 renderTable();
+renderAutomation();
 
 // === DETAIL OVERLAY ===
 function showDetail(key){
@@ -515,9 +719,13 @@ function closeDetail(){document.getElementById('detail-overlay').classList.remov
 function exportCSV(){
   const list=getFiltered();
   const header='Name,Company,Role,Industry,Region,Tier,Status,Platform\n';
-  const rows=list.map(r=>'""'+(r.name||'')+'","'+(r.company||'')+'","'+(r.role||'')+'","'+(r.industry||'')+'","'+(r.region||'')+'","'+tierLabel(r.tier)+'","'+r.status+'","'+r.platform+'"').join('\n');
+  const cell=v=>'"'+String(v||'').replace(/"/g,'""')+'"';
+  const rows=list.map(r=>[r.name,r.company,r.role,r.industry,r.region,tierLabel(r.tier),r.status,r.platform].map(cell).join(',')).join('\n');
   const blob=new Blob([header+rows],{type:'text/csv;charset=utf-8;'});
   const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='customer-contacts-'+new Date().toISOString().slice(0,10)+'.csv';a.click();
+}
+if('serviceWorker' in navigator){
+  window.addEventListener('load',()=>navigator.serviceWorker.register('./service-worker.js').catch(()=>{}));
 }
 </script>
 </body>

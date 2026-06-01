@@ -7,7 +7,7 @@ function createWindow() {
     height: 900,
     minWidth: 1024,
     minHeight: 700,
-    title: 'Outreach Dashboard',
+    title: 'Customer Automated Development System',
     icon: path.join(__dirname, 'icon.svg'),
     webPreferences: {
       nodeIntegration: false,
@@ -15,7 +15,7 @@ function createWindow() {
     }
   });
 
-  win.loadFile('index.html');
+  win.loadFile('outreach-dashboard.html');
   win.setMenuBarVisibility(false);
 }
 

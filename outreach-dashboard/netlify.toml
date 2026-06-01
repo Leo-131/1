@@ -1,5 +1,6 @@
 [build]
   publish = "."
+  ignore = "node smart-deploy.js --dry-run"
 
 [[headers]]
   for = "/*"

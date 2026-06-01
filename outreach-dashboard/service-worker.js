@@ -1,7 +1,8 @@
-const CACHE_NAME = 'outreach-dashboard-v16-4-20260521';
+const CACHE_NAME = 'customer-development-system-v18-1-20260528';
 const APP_SHELL = [
   './',
   './index.html',
+  './outreach-dashboard.html',
   './enhancements.css',
   './manifest.webmanifest',
   './icon.svg'
