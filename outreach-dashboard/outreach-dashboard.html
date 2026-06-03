@@ -36,7 +36,8 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC',sans-
 /* KPI Row */
 .kpi-row{display:grid;grid-template-columns:repeat(6,1fr);gap:12px;margin-bottom:20px}
 .kpi{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:14px 16px;cursor:pointer;transition:all .15s;position:relative}
-.kpi:hover{border-color:var(--primary);box-shadow:0 2px 8px rgba(79,110,247,0.12)}
+.kpi:hover,.kpi.active{border-color:var(--primary);box-shadow:0 2px 8px rgba(79,110,247,0.12)}
+.kpi.active{background:#1c2333}
 .kpi .kpi-label{font-size:11px;color:var(--muted);margin-bottom:4px}
 .kpi .kpi-value{font-size:24px;font-weight:700}
 .kpi .kpi-sub{font-size:10px;color:var(--muted);margin-top:2px}
@@ -90,7 +91,8 @@ tbody tr:hover{background:var(--primary-light)}
 .badge.li{background:#1c2333;color:var(--li)}.badge.fb{background:#1c2333;color:var(--fb)}.badge.ins{background:#2a1525;color:var(--ins)}
 
 /* Search */
-.search{width:100%;max-width:320px;padding:6px 12px;border-radius:6px;border:1px solid var(--border);font-size:12px;outline:none;background:var(--surface)}
+.search-wrap{display:flex;align-items:center;gap:6px;flex:1;max-width:420px}
+.search{width:100%;padding:6px 12px;border-radius:6px;border:1px solid var(--border);font-size:12px;outline:none;background:var(--surface);color:var(--text)}
 .search:focus{border-color:var(--primary)}
 .toolbar{display:flex;align-items:center;gap:8px;margin-bottom:10px;flex-wrap:wrap}
 
@@ -121,6 +123,11 @@ tbody tr:hover{background:var(--primary-light)}
 .automation-status{font-size:10px;color:var(--muted)}
 .automation-status.running{color:var(--green)}
 .automation-status.paused{color:var(--orange)}
+.credential-strip{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-bottom:12px;padding:10px;border:1px solid var(--border);border-radius:8px;background:#0d1117}
+.credential-strip .label{font-size:10px;color:var(--muted);text-transform:uppercase;letter-spacing:.3px}
+.credential-pill{font-size:10px;border:1px solid var(--border);border-radius:999px;padding:3px 8px;color:var(--muted)}
+.credential-pill.ready{border-color:var(--green);color:var(--green);background:var(--green-light)}
+.credential-pill.missing{border-color:var(--orange);color:var(--orange);background:var(--orange-light)}
 .automation-task{display:grid;grid-template-columns:22px 1fr auto;gap:8px;align-items:center;padding:8px 0;border-bottom:1px solid #21262d;font-size:11px}
 .automation-task:last-child{border-bottom:0}
 .automation-task .num{width:22px;height:22px;border-radius:50%;display:grid;place-items:center;background:#1c2333;color:var(--primary);font-weight:700;font-size:10px}
@@ -135,7 +142,9 @@ tbody tr:hover{background:var(--primary-light)}
 .app-toast.show{opacity:1;transform:translateY(0)}
 
 /* Detail Panel */
-.detail-overlay{display:none;position:fixed;top:0;right:0;width:480px;height:100vh;background:var(--surface);box-shadow:-2px 0 16px rgba(0,0,0,0.5);z-index:100;overflow-y:auto;padding:20px}
+.detail-backdrop{display:none;position:fixed;inset:0;background:rgba(0,0,0,.35);z-index:90}
+.detail-backdrop.show{display:block}
+.detail-overlay{display:none;position:fixed;top:0;right:0;width:min(520px,100vw);height:100vh;background:var(--surface);box-shadow:-2px 0 16px rgba(0,0,0,0.5);z-index:100;overflow-y:auto;padding:20px}
 .detail-overlay.show{display:block}
 .detail-overlay h3{font-size:14px;margin-bottom:12px;display:flex;align-items:center;gap:8px}
 .detail-overlay .close-btn{margin-left:auto;cursor:pointer;font-size:16px;color:var(--muted)}
@@ -179,6 +188,11 @@ tr.contact-row:hover .row-actions{display:inline-flex}
   .automation-actions,.automation-grid{grid-template-columns:1fr}
   .automation-head{display:block}
   .kpi-row{grid-template-columns:repeat(2,1fr)}
+  .header{align-items:flex-start;gap:10px;flex-direction:column}
+  .header-right{flex-wrap:wrap}
+  .search-wrap{max-width:none;width:100%}
+  .toolbar{align-items:stretch}
+  .detail-overlay{width:100vw}
 }
 </style>
 </head>
@@ -212,6 +226,16 @@ tr.contact-row:hover .row-actions{display:inline-flex}
         <p>Choose a platform to build a prioritized customer development queue. The system selects high-value contacts, creates action steps, and tracks progress in this browser.</p>
       </div>
       <button class="btn" type="button" onclick="resetAutomation()">Reset Workflow</button>
+    </div>
+    <div class="credential-strip" id="credential-strip">
+      <span class="label">Credentials</span>
+      <span class="credential-pill missing" id="cred-li">LinkedIn missing</span>
+      <span class="credential-pill missing" id="cred-fb">Facebook missing</span>
+      <span class="credential-pill missing" id="cred-ins">Instagram missing</span>
+      <button class="btn" type="button" onclick="savePlatformCredential('li')">Save LI</button>
+      <button class="btn" type="button" onclick="savePlatformCredential('fb')">Save FB</button>
+      <button class="btn" type="button" onclick="savePlatformCredential('ins')">Save INS</button>
+      <button class="btn primary" type="button" onclick="unlockCredentialVault()">Unlock Vault</button>
     </div>
     <div class="automation-actions">
       <button class="automation-btn linkedin" type="button" onclick="startAutomation('li')">
@@ -282,6 +306,15 @@ tr.contact-row:hover .row-actions{display:inline-flex}
     <div class="section-body collapsed" id="industry-bars"></div>
   </div>
 
+  <!-- Country Market Distribution -->
+  <div class="section">
+    <div class="section-header" onclick="toggleSection(this)">
+      <h3>🌐 Country Market Priority</h3>
+      <span class="arrow">▼</span>
+    </div>
+    <div class="section-body" id="country-bars"></div>
+  </div>
+
   <!-- Top Companies -->
   <div class="section">
     <div class="section-header" onclick="toggleSection(this)">
@@ -300,12 +333,15 @@ tr.contact-row:hover .row-actions{display:inline-flex}
     <div class="section-body">
       <div class="toolbar">
         <div class="tab-bar" id="platform-tabs" style="margin-bottom:0"></div>
-        <input class="search" type="text" placeholder="Search..." id="search" oninput="renderTable()">
+        <div class="search-wrap">
+          <input class="search" type="search" placeholder="Search..." id="search" oninput="renderTable()">
+          <button class="btn" type="button" onclick="clearSearch()">Clear</button>
+        </div>
         <button class="btn primary" onclick="exportCSV()">Export CSV</button>
       </div>
       <div class="tab-bar" id="filter-tabs"></div>
       <div class="table-wrap">
-        <table><thead><tr><th>#</th><th>Name</th><th>Company</th><th>Role</th><th>Industry</th><th>Region</th><th>Tier</th><th>Status</th><th>Updated</th><th>Platform</th></tr></thead><tbody id="table-body"></tbody></table>
+        <table><thead><tr><th>#</th><th>Name</th><th>Company</th><th>Role</th><th>Country</th><th>Market</th><th>Industry</th><th>Tier</th><th>Status</th><th>Platform</th></tr></thead><tbody id="table-body"></tbody></table>
       </div>
       <div style="margin-top:6px;color:var(--muted);font-size:10px" id="table-info"></div>
     </div>
@@ -313,6 +349,7 @@ tr.contact-row:hover .row-actions{display:inline-flex}
 </div>
 
 <!-- Detail Overlay -->
+<div class="detail-backdrop" id="detail-backdrop" onclick="closeDetail()"></div>
 <div class="detail-overlay" id="detail-overlay">
   <h3 id="detail-title">Details <span class="close-btn" onclick="closeDetail()">✕</span></h3>
   <div id="detail-content"></div>
@@ -320,6 +357,7 @@ tr.contact-row:hover .row-actions{display:inline-flex}
 
 <div class="footer" id="system-footer">Customer Automated Development System</div>
 
+<script src="./country-market-data.js"></script>
 <script>
 // === UTILS ===
 const TIER1_KEYS=['CEO','President','Founder','Owner','Managing Director','VP','Vice President','Head','Director','Chief'];
@@ -380,7 +418,70 @@ function guessRegion(c) {
   return 'Unknown';
 }
 
-const APP_VERSION = '18.1.1';
+function marketData(){return window.COUNTRY_MARKET_DATA || {}}
+function countryAliases(){return window.COUNTRY_ALIASES || {}}
+function countrySignals(){return window.COUNTRY_SIGNALS || {}}
+function normalizeSearchText(value){return String(value||'').toLowerCase().replace(/[^a-z0-9\u4e00-\u9fff]+/g,' ').trim()}
+function detectCountry(record){
+  const text = normalizeSearchText([record.name,record.company,record.role,record.category,record.email,record.message,record.keyword_used].join(' '));
+  const email = String(record.email||'').toLowerCase();
+  const tldCountry = [
+    ['.co.uk','uk'],['.uk','uk'],['.de','germany'],['.fr','france'],['.it','italy'],['.nl','netherlands'],
+    ['.no','norway'],['.se','sweden'],['.dk','denmark'],['.fi','finland'],['.es','spain'],['.pt','portugal'],
+    ['.ca','canada'],['.com.au','australia'],['.au','australia'],['.co.nz','new zealand'],['.nz','new zealand'],
+    ['.sg','singapore'],['.my','malaysia'],['.co.id','indonesia'],['.id','indonesia'],['.co.jp','japan'],['.jp','japan'],
+    ['.co.kr','korea'],['.kr','korea'],['.co.za','south africa'],['.za','south africa'],['.com.br','brazil'],['.br','brazil'],
+    ['.mx','mexico'],['.pe','peru']
+  ];
+  for(const [suffix,alias] of tldCountry){
+    if(email.endsWith(suffix) && countryAliases()[alias]) return countryAliases()[alias];
+  }
+  for(const [signal,country] of Object.entries(countrySignals())){
+    if(country && text.includes(normalizeSearchText(signal))) return country;
+  }
+  const aliases = Object.entries(countryAliases()).sort((a,b)=>b[0].length-a[0].length);
+  for(const [alias,country] of aliases){
+    const key = normalizeSearchText(alias);
+    if(country && key && text.includes(key)) return country;
+  }
+  if(record.region==='North America') return countryAliases().usa || '';
+  if(record.region==='Europe') return '';
+  if(record.region==='Asia-Pacific') return '';
+  return '';
+}
+function agentBlocksMarket(info){
+  if(!info)return false;
+  const active = ['有效','临期'].some(key=>String(info.agentStatus||'').includes(key));
+  return active && String(info.agentNature||'').includes('独家');
+}
+function marketPriorityScore(info, record){
+  let score = Number(info && info.score) || 0;
+  if(info && info.tier==='重点') score += 1.2;
+  if(info && info.tier==='正常') score += .5;
+  if(agentBlocksMarket(info)) score -= 2.5;
+  if(record && ['Accepted','Replied'].includes(record.status)) score += 1;
+  if(record && record.tier==='t1') score += .8;
+  if(record && record.tier==='t2') score += .4;
+  return Math.max(0, Math.round(score*10)/10);
+}
+function enrichMarket(record){
+  const country = detectCountry(record);
+  const info = country ? marketData()[country] : null;
+  const marketScore = marketPriorityScore(info, record);
+  const status = agentBlocksMarket(info) ? '独代占用' : (info && info.agentStatus ? info.agentStatus : '可开拓');
+  return {
+    ...record,
+    country: country || 'Unknown',
+    countryEn: info && info.englishName || '',
+    marketScore,
+    marketTier: info && info.tier || '未识别',
+    marketRegion: info && (info.regionGroup || info.subRegion) || record.region,
+    marketStatus: status,
+    agentCompany: info && info.agentCompany || '',
+  };
+}
+
+const APP_VERSION = '18.4.0';
 const STATUS_CHANGES_KEY = 'customer_development_status_changes_v1';
 function formatDate(value){
   const input = String(value || '').trim();
@@ -495,6 +596,7 @@ STATIC_INS_RECORDS.forEach(r => {
   });
 });
 applySavedStatusChanges(allRecords);
+for(let i=0;i<allRecords.length;i++) allRecords[i] = enrichMarket(allRecords[i]);
 
 // === COMPUTED ===
 const liR = allRecords.filter(r=>r.platform==='li');
@@ -509,6 +611,10 @@ const replied = repliedRecords();
 const positive = positiveRecords();
 const t1All = tier1Records();
 const t2All = allRecords.filter(r=>r.tier==='t2');
+function findRecord(recordLike){
+  const key = recordKey(recordLike);
+  return allRecords.find(record=>recordKey(record)===key);
+}
 function latestDataDate(){
   const dates = [];
   if(embeddedData.stats && embeddedData.stats.last_run) dates.push(embeddedData.stats.last_run);
@@ -555,12 +661,36 @@ function sanitizeVisibleText(root=document.body){
   });
   const arrows = root.querySelectorAll ? root.querySelectorAll('.section-header .arrow') : [];
   arrows.forEach(arrow=>{arrow.textContent='v'});
-  const headers = root.querySelectorAll ? root.querySelectorAll('th') : [];
-  if(headers[8]) headers[8].textContent = 'Updated';
 }
 
 // === AUTOMATION WORKFLOW ===
 const AUTO_KEY = 'customer_development_automation_v18';
+const AUTOMATION_GATEWAY = 'http://127.0.0.1:28789/api/agent/message';
+const DAILY_PLATFORM_TARGET = 30;
+const TASK_STATE = {
+  pending: '待触达',
+  touched: '已触达',
+  contact: '已获取联系方式',
+  followup: '需跟进',
+  rejected: '已拒绝'
+};
+const PLATFORM_AUTOMATION = {
+  li: {
+    browserUrl: 'https://www.linkedin.com/search/results/people/?keywords=outdoor%20buyer%20camping%20gear',
+    fallbackLoginUrl: 'https://www.linkedin.com/login',
+    action: 'LinkedIn lead acquisition'
+  },
+  fb: {
+    browserUrl: 'https://www.facebook.com/search/groups/?q=outdoor%20gear%20camping%20retailer',
+    fallbackLoginUrl: 'https://www.facebook.com/login',
+    action: 'Facebook group/page lead acquisition'
+  },
+  ins: {
+    browserUrl: 'https://www.instagram.com/explore/search/keyword/?q=outdoor%20gear%20retailer',
+    fallbackLoginUrl: 'https://www.instagram.com/accounts/login/',
+    action: 'Instagram DM lead acquisition'
+  }
+};
 let automationState = loadAutomationState();
 function loadAutomationState(){
   try{
@@ -581,6 +711,10 @@ function scoreLead(r){
   if(r.company)score+=8;
   if(r.region==='North America')score+=6;
   if(r.industry==='Outdoor')score+=6;
+  score += Math.round((r.marketScore||0)*10);
+  if(r.marketTier==='重点')score+=18;
+  if(r.marketStatus==='独代占用')score-=35;
+  if(r.country==='Unknown')score-=8;
   return score;
 }
 function buildAutomationQueue(platform){
@@ -588,22 +722,156 @@ function buildAutomationQueue(platform){
     .filter(r=>r && r.name)
     .map(r=>({...r,autoScore:scoreLead(r)}))
     .sort((a,b)=>b.autoScore-a.autoScore || String(a.company).localeCompare(String(b.company)))
-    .slice(0,12);
+    .slice(0,DAILY_PLATFORM_TARGET);
   return list.map((r,i)=>({
     id: platform+'-'+i+'-'+String(r.name).replace(/\W+/g,'').slice(0,12),
-    done: i<2,
+    done: false,
     name: r.name,
     company: r.company || '-',
     role: r.role || '-',
     tier: tierLabel(r.tier),
     status: r.status,
+    state: TASK_STATE.pending,
+    contact: '',
+    country: r.country,
+    marketScore: r.marketScore,
+    marketTier: r.marketTier,
+    marketStatus: r.marketStatus,
     platform,
     action: platform==='li'
-      ? (r.status==='Accepted'?'Send follow-up message':'Open profile and prepare connection note')
+      ? (r.status==='Accepted'?'Ask for WhatsApp, WeChat, or email and schedule a call':'Open profile and request a short partnership call')
       : platform==='fb'
-        ? 'Engage page/group and record touchpoint'
-        : (r.status==='Replied'?'Prepare warm follow-up DM':'Send targeted DM')
+        ? 'Engage page/group and ask for buyer contact details'
+        : (r.status==='Replied'?'Ask for WhatsApp, WeChat, or email and schedule a call':'Send targeted DM for a short partnership call')
   }));
+}
+function platformLabelShort(platform){return platform==='li'?'LinkedIn':platform==='fb'?'Facebook':'Instagram'}
+async function refreshCredentialStatus(){
+  if(!window.customerDev || !window.customerDev.credentialStatus){
+    ['li','fb','ins'].forEach(platform=>{
+      const pill=document.getElementById('cred-'+platform);
+      if(pill){pill.textContent=platformLabelShort(platform)+' desktop only';pill.className='credential-pill missing'}
+    });
+    return;
+  }
+  try{
+    const status = await window.customerDev.credentialStatus();
+    if(status.securityFindings && status.securityFindings.length){
+      showAppToast('Security warning: plaintext credential file detected');
+    }
+    ['li','fb','ins'].forEach(platform=>{
+      const ready = status.statuses && status.statuses[platform];
+      const pill=document.getElementById('cred-'+platform);
+      if(!pill)return;
+      pill.textContent=platformLabelShort(platform)+' '+(ready?'ready':'missing');
+      pill.className='credential-pill '+(ready?'ready':'missing');
+    });
+  }catch(error){
+    showAppToast('Credential status unavailable');
+  }
+}
+async function savePlatformCredential(platform){
+  if(!window.customerDev || !window.customerDev.saveCredential){
+    showAppToast('Use the desktop app to save credentials');
+    return;
+  }
+  const username = prompt(platformLabelShort(platform)+' username/email:');
+  if(!username)return;
+  const password = prompt(platformLabelShort(platform)+' password:');
+  if(!password)return;
+  const masterPassword = prompt('Master password for portable encrypted vault (optional but recommended):') || '';
+  try{
+    await window.customerDev.saveCredential({platform,username,password,masterPassword});
+    showAppToast(platformLabelShort(platform)+' credential saved');
+    refreshCredentialStatus();
+  }catch(error){
+    showAppToast('Credential save failed');
+  }
+}
+async function unlockCredentialVault(){
+  if(!window.customerDev || !window.customerDev.unlockVault){
+    showAppToast('Use the desktop app to unlock vault');
+    return;
+  }
+  const masterPassword = prompt('Master password:');
+  if(!masterPassword)return;
+  try{
+    const result = await window.customerDev.unlockVault(masterPassword);
+    showAppToast('Vault unlocked: '+(result.platforms||[]).join(', ').toUpperCase());
+    refreshCredentialStatus();
+  }catch(error){
+    showAppToast('Vault unlock failed');
+  }
+}
+function topAutomationTargets(tasks){
+  return tasks.slice(0,5).map((task,index)=>
+    (index+1)+'. '+task.name+' | '+task.company+' | '+task.country+' | market '+task.marketScore+' '+task.marketTier+' | '+task.status+' | '+task.action
+  ).join('\n');
+}
+function openAcquisitionBrowser(platform){
+  const config = PLATFORM_AUTOMATION[platform];
+  const url = config ? config.browserUrl : PLATFORM_AUTOMATION.ins.browserUrl;
+  if(window.customerDev && typeof window.customerDev.openExternalUrl === 'function'){
+    return window.customerDev.openExternalUrl(url).catch(error=>{
+      window.open(url,'_blank','noopener');
+      return false;
+    });
+  }
+  const opened = window.open(url,'_blank','noopener');
+  if(!opened && config) window.location.href = config.fallbackLoginUrl;
+  return Promise.resolve(Boolean(opened));
+}
+function buildAcquisitionPrompt(platform,tasks){
+  const config = PLATFORM_AUTOMATION[platform] || PLATFORM_AUTOMATION.ins;
+  return [
+    '[Customer Development Automation]',
+    'Start browser-based '+config.action+' now.',
+    'Open URL: '+config.browserUrl,
+    'If the account is not logged in, open the login screen, wait for the user to complete login, then continue automatically.',
+    'Use the logged-in browser session to find and qualify prospects for Flextail / Vollyc.',
+    'Prioritize high-score countries, open/expired agency markets, and prospects likely to share WhatsApp / WeChat / email.',
+    'Prioritize these contacts from the dashboard queue:',
+    topAutomationTargets(tasks) || 'No queued contacts; search for outdoor/camping/RV retail decision makers.',
+    'Record each completed touchpoint back in the dashboard workflow when possible.'
+  ].join('\n');
+}
+function sendAutomationToAgent(platform,tasks){
+  const message = buildAcquisitionPrompt(platform,tasks);
+  return fetch(AUTOMATION_GATEWAY,{
+    method:'POST',
+    headers:{'Content-Type':'application/json','Authorization':'Bearer '+(window.OPENCLAW_TOKEN||'')},
+    body:JSON.stringify({message,source:'outreach-dashboard',platform})
+  }).then(r=>{
+    if(!r.ok) throw new Error('Agent gateway returned '+r.status);
+    return r.json().catch(()=>({ok:true}));
+  }).then(()=>{
+    automationState.log = [{time:new Date().toLocaleString(),text:'Browser agent accepted '+platformName(platform)+' acquisition task'},...automationState.log].slice(0,30);
+    saveAutomationState();
+    renderAutomation();
+  }).catch(()=>{
+    if(navigator.clipboard) navigator.clipboard.writeText(message).catch(()=>{});
+    automationState.log = [{time:new Date().toLocaleString(),text:'Agent offline - browser opened and acquisition instruction copied'},...automationState.log].slice(0,30);
+    saveAutomationState();
+    renderAutomation();
+  });
+}
+function launchCustomerAcquisition(platform,tasks){
+  if(window.customerDev && window.customerDev.launchPlatformAcquisition){
+    window.customerDev.launchPlatformAcquisition({platform}).then(result=>{
+      if(result && result.needsCredential){
+        showAppToast(platformName(platform)+' credential missing');
+        savePlatformCredential(platform);
+      }else{
+        showAppToast(platformName(platform)+' login browser started');
+      }
+      refreshCredentialStatus();
+    }).catch(()=>{
+      openAcquisitionBrowser(platform);
+    });
+  }else{
+    openAcquisitionBrowser(platform);
+  }
+  sendAutomationToAgent(platform,tasks);
 }
 function startAutomation(platform){
   const tasks = buildAutomationQueue(platform);
@@ -624,14 +892,29 @@ function startAutomation(platform){
   syncFilterTabs();
   renderTable();
   renderAutomation();
-  showAppToast(platformName(platform)+' customer development started');
+  launchCustomerAcquisition(platform,tasks);
+  showAppToast(platformName(platform)+' browser acquisition started');
 }
 function completeAutomationTask(id){
-  automationState.tasks = automationState.tasks.map(t=>t.id===id?{...t,done:true}:t);
-  const done = automationState.tasks.filter(t=>t.done).length;
+  automationState.tasks = automationState.tasks.map(t=>t.id===id?{...t,done:true,state:TASK_STATE.touched}:t);
+  const done = automationState.tasks.filter(t=>t.done || t.state===TASK_STATE.contact).length;
   automationState.progress = automationState.tasks.length?Math.round(done/automationState.tasks.length*100):0;
   automationState.status = automationState.progress>=100?'Completed':'Running';
   automationState.log = [{time:new Date().toLocaleString(),text:'Completed task '+done+' / '+automationState.tasks.length},...automationState.log].slice(0,30);
+  saveAutomationState();
+  renderAutomation();
+}
+function recordAutomationContact(id){
+  const contact = prompt('Record WhatsApp / WeChat / Email:');
+  if(!contact)return;
+  automationState.tasks = automationState.tasks.map(t=>t.id===id?{...t,done:true,state:TASK_STATE.contact,contact}:t);
+  automationState.log = [{time:new Date().toLocaleString(),text:'Captured contact: '+contact},...automationState.log].slice(0,30);
+  saveAutomationState();
+  renderAutomation();
+}
+function markAutomationFollowup(id){
+  automationState.tasks = automationState.tasks.map(t=>t.id===id?{...t,state:TASK_STATE.followup}:t);
+  automationState.log = [{time:new Date().toLocaleString(),text:'Marked task for follow-up'},...automationState.log].slice(0,30);
   saveAutomationState();
   renderAutomation();
 }
@@ -655,7 +938,7 @@ function renderAutomation(){
   progress.style.width=(automationState.progress||0)+'%';
   count.textContent=done+' / '+automationState.tasks.length+' done';
   tasks.innerHTML=automationState.tasks.length?automationState.tasks.map((t,i)=>
-    '<div class="automation-task"><div class="num">'+(i+1)+'</div><div><b>'+esc(t.name)+'</b><div class="meta">'+esc(t.company)+' - '+esc(t.tier)+' - '+esc(t.action)+'</div></div><button class="btn '+t.platform+'" type="button" '+(t.done?'disabled':'onclick="completeAutomationTask(&quot;'+esc(t.id)+'&quot;)"')+'>Done</button></div>'
+    '<div class="automation-task"><div class="num">'+(i+1)+'</div><div><b>'+esc(t.name)+'</b><div class="meta">'+esc(t.company)+' - '+esc(t.tier)+' - '+esc(t.action)+'</div><div class="meta">'+esc(t.state||TASK_STATE.pending)+(t.contact?' - '+esc(t.contact):'')+'</div></div><div style="display:flex;gap:4px;flex-wrap:wrap;justify-content:flex-end"><button class="btn '+t.platform+'" type="button" '+(t.done?'disabled':'onclick="completeAutomationTask(&quot;'+esc(t.id)+'&quot;)"')+'>Touch</button><button class="btn" type="button" onclick="recordAutomationContact(&quot;'+esc(t.id)+'&quot;)">Contact</button><button class="btn" type="button" onclick="markAutomationFollowup(&quot;'+esc(t.id)+'&quot;)">Follow</button></div></div>'
   ).join(''):'<div style="color:var(--muted);font-size:11px;line-height:1.6">Click LINKEDIN, FACEBOOK, or INS to generate a customer development workflow.</div>';
   log.innerHTML=automationState.log.length?automationState.log.map(item=>'<div><b>'+esc(item.time)+'</b><br>'+esc(item.text)+'</div>').join(''):'<div>No automation activity yet.</div>';
   sanitizeVisibleText(document.getElementById('automation-app'));
@@ -674,6 +957,9 @@ function showAppToast(msg){
   toast.classList.add('show');
   clearTimeout(showAppToast.timer);
   showAppToast.timer=setTimeout(()=>toast.classList.remove('show'),2200);
+}
+function setActiveKpi(key){
+  document.querySelectorAll('#kpi-row .kpi').forEach(card=>card.classList.toggle('active',card.dataset.kpiKey===key));
 }
 
 // === KPI ===
@@ -695,6 +981,7 @@ document.querySelectorAll('#kpi-row .kpi').forEach(card=>{
   });
 });
 function handleKpiCard(key){
+  setActiveKpi(key);
   if(key==='li'||key==='fb'||key==='ins') startAutomation(key);
   else openActionPanel(key);
 }
@@ -760,6 +1047,25 @@ Object.entries(byReg).sort((a,b)=>b[1]-a[1]).forEach(([k,v])=>{
 indHtml+='</div>';
 document.getElementById('industry-bars').innerHTML=indHtml;
 
+// Country market priority
+const byCountry={};
+allRecords.forEach(r=>{
+  const key=r.country || 'Unknown';
+  if(!byCountry[key]) byCountry[key]={count:0,score:0,tier:r.marketTier,status:r.marketStatus,records:[]};
+  byCountry[key].count+=1;
+  byCountry[key].score=Math.max(byCountry[key].score, r.marketScore||0);
+  byCountry[key].records.push(r);
+});
+const countryRows=Object.entries(byCountry)
+  .map(([country,item])=>({country,...item,priority:item.count*(item.score||.5)}))
+  .sort((a,b)=>(a.country==='Unknown')-(b.country==='Unknown') || b.priority-a.priority)
+  .slice(0,18);
+document.getElementById('country-bars').innerHTML=countryRows.map(item=>{
+  const label=item.country==='Unknown'?'Unknown':item.country+' · '+(item.tier||'未识别')+' · '+(item.status||'可开拓')+' · score '+(item.score||0);
+  const color=item.status==='独代占用'?'#8c95a6':item.tier==='重点'?'#22c55e':item.tier==='正常'?'#4f6ef7':'#ff7d00';
+  return bar(label,item.count,allRecords.length,color);
+}).join('');
+
 // Top Companies
 const byComp={};
 allRecords.filter(r=>r.company&&r.company.trim()).forEach(r=>{const co=r.company.trim();byComp[co]=(byComp[co]||0)+1});
@@ -782,6 +1088,13 @@ document.getElementById('filter-tabs').innerHTML=fTabs.map(([k,v])=>
 
 function setPlat(p,el){curPlat=p;el.parentElement.querySelectorAll('.tab').forEach(t=>t.classList.remove('active'));el.classList.add('active');renderTable()}
 function setFilter(f,el){curFilter=f;el.parentElement.querySelectorAll('.tab').forEach(t=>t.classList.remove('active'));el.classList.add('active');renderTable()}
+function clearSearch(){
+  const search = document.getElementById('search');
+  if(!search) return;
+  search.value = '';
+  renderTable();
+  search.focus();
+}
 
 function getFiltered(){
   let list=allRecords;
@@ -795,18 +1108,27 @@ function getFiltered(){
   else if(curFilter==='t1')list=list.filter(r=>r.tier==='t1');
   else if(curFilter==='positive')list=list.filter(r=>['Accepted','Replied'].includes(r.status));
   const q=(document.getElementById('search').value||'').toLowerCase();
-  if(q)list=list.filter(r=>r&&((r.name||'')+(r.company||'')+(r.role||'')+(r.industry||'')+(r.region||'')).toLowerCase().includes(q));
+  if(q)list=list.filter(r=>r&&((r.name||'')+(r.company||'')+(r.role||'')+(r.industry||'')+(r.region||'')+(r.country||'')+(r.countryEn||'')+(r.marketTier||'')+(r.marketStatus||'')).toLowerCase().includes(q));
   return list.filter(r=>r);
 }
 
 function renderTable(){
   const list=getFiltered();
   document.getElementById('table-body').innerHTML=list.length?list.map((r,i)=>
-    '<tr class="contact-row" data-name="'+esc(r.name)+'" data-company="'+esc(r.company)+'" data-platform="'+r.platform+'" data-status="'+esc(r.status)+'" onclick="openContactActions(this)"><td>'+(i+1)+'</td><td>'+esc(r.name)+'<span class="row-actions"><button class="row-action-btn" onclick="event.stopPropagation();quickAction(\'dm\',this.parentElement.parentElement)">DM</button><button class="row-action-btn" onclick="event.stopPropagation();quickAction(\'email\',this.parentElement.parentElement)">Email</button><button class="row-action-btn" onclick="event.stopPropagation();quickAction(\'status\',this.parentElement.parentElement)">Status</button></span></td><td>'+esc(r.company)+'</td><td title="'+esc(r.role)+'">'+esc((r.role||'').substring(0,40))+'</td><td>'+esc(r.industry)+'</td><td>'+esc(r.region)+'</td><td>'+badge(r.tier,tierLabel(r.tier))+'</td><td>'+badge(r.status.toLowerCase().replace(/\s+/g,''),r.status)+'</td><td style="color:var(--muted);font-size:10px">'+esc(r.date||'-')+'</td><td>'+badge(r.platform,r.platform.toUpperCase())+'</td></tr>'
+    '<tr class="contact-row" data-name="'+esc(r.name)+'" data-company="'+esc(r.company)+'" data-platform="'+r.platform+'" data-status="'+esc(r.status)+'" onclick="openContactActions(this)"><td>'+(i+1)+'</td><td>'+esc(r.name)+'<span class="row-actions"><button class="row-action-btn" onclick="event.stopPropagation();quickAction(\'dm\',this.parentElement.parentElement)">DM</button><button class="row-action-btn" onclick="event.stopPropagation();quickAction(\'email\',this.parentElement.parentElement)">Email</button><button class="row-action-btn" onclick="event.stopPropagation();quickAction(\'status\',this.parentElement.parentElement)">Status</button></span></td><td>'+esc(r.company)+'</td><td title="'+esc(r.role)+'">'+esc((r.role||'').substring(0,40))+'</td><td>'+esc(r.country)+'</td><td>'+badge(r.marketStatus==='独代占用'?'excluded':(r.marketTier==='重点'?'accepted':'sent'),(r.marketScore||0)+' '+r.marketTier)+'</td><td>'+esc(r.industry)+'</td><td>'+badge(r.tier,tierLabel(r.tier))+'</td><td>'+badge(r.status.toLowerCase().replace(/\s+/g,''),r.status)+'</td><td>'+badge(r.platform,r.platform.toUpperCase())+'</td></tr>'
   ).join(''):'<tr><td colspan="10" style="text-align:center;color:var(--muted);padding:20px">No matches</td></tr>';
   document.getElementById('table-info').textContent='Showing '+list.length+' of '+allRecords.length;
   sanitizeVisibleText(document.querySelector('.section'));
 }
+
+document.addEventListener('keydown',event=>{
+  if(event.key==='Escape') closeDetail();
+  if((event.ctrlKey || event.metaKey) && event.key.toLowerCase()==='k'){
+    event.preventDefault();
+    const search = document.getElementById('search');
+    if(search) search.focus();
+  }
+});
 
 // Quick action from table row
 function quickAction(action, tr){
@@ -855,15 +1177,17 @@ function quickAction(action, tr){
 
 // Open detail panel when clicking a table row
 function openContactActions(tr){
-  const name=tr.dataset.name;
-  const company=tr.dataset.company;
-  const platform=tr.dataset.platform;
-  const status=tr.dataset.status;
-  openActionPanel(platform==='li'?'li':platform==='fb'?'fb':'ins');
+  const record = findRecord({
+    name: tr.dataset.name,
+    company: tr.dataset.company,
+    platform: tr.dataset.platform
+  });
+  if(record) openContactPanel(record);
 }
 renderSystemInfo();
 renderTable();
 renderAutomation();
+refreshCredentialStatus();
 sanitizeVisibleText();
 
 // === DETAIL OVERLAY WITH ACTIONS ===
@@ -871,9 +1195,6 @@ let activeDropdown = null;
 document.addEventListener('click',e=>{if(activeDropdown && !e.target.closest('.status-dropdown')){activeDropdown.remove();activeDropdown=null}});
 
 function openActionPanel(key){
-  const panel=document.getElementById('detail-overlay');
-  const title=document.getElementById('detail-title');
-  const content=document.getElementById('detail-content');
   let records=[],label='';
   switch(key){
     case'total':records=allRecords;label='All Contacts ('+allRecords.length+')';break;
@@ -884,8 +1205,6 @@ function openActionPanel(key){
     case't1':records=t1All;label='TIER 1 ('+t1All.length+')';break;
   }
   const platName=key==='li'?'LinkedIn':key==='fb'?'Facebook':key==='ins'?'Instagram':'All';
-  title.innerHTML=label+' <span class="close-btn" onclick="closeDetail()">✕</span>';
-  
   // Action panel at top
   let actionHtml = '<div class="action-panel">';
   actionHtml += '<h4>Quick Actions - '+esc(platName)+'</h4>';
@@ -908,17 +1227,37 @@ function openActionPanel(key){
   const sColors={Accepted:'#22c55e',Replied:'#22c55e',Sent:'#4f6ef7',Pending:'#ff7d00',Done:'#22c55e',Failed:'#f53f3f',Rejected:'#f53f3f',Excluded:'#8c95a6',Unknown:'#8c95a6'};
   const listHtml=Object.entries(byPlat).map(([p,recs])=>
     '<h4 style="font-size:12px;margin:12px 0 8px">'+(pNames[p]||p)+' ('+recs.length+')</h4>'+
-    recs.slice(0,50).map(r=>
-      '<div class="d-item" data-name="'+esc(r.name)+'" data-company="'+esc(r.company)+'" data-platform="'+r.platform+'" data-status="'+esc(r.status)+'"><div class="d-name">'+esc(r.name)+'</div><div class="d-sub">'+esc(r.company)+' - '+esc(r.industry)+' - '+esc(r.region)+'</div><div class="d-status">'+badge(r.status.toLowerCase().replace(/\s+/g,''),r.status)+' '+badge(r.platform,r.platform.toUpperCase())+'</div><div class="d-actions"><button class="btn primary" onclick="executeContactAction(this,\'dm\')">DM</button><button class="btn" onclick="executeContactAction(this,\'email\')">Email</button><button class="btn" onclick="showStatusMenu(event,this)">Status</button></div></div>'
-    ).join('')
+    recs.slice(0,50).map(r=>contactCard(r)).join('')
   ).join('');
   
-  content.innerHTML=actionHtml+listHtml;
+  openDetailShell(label,actionHtml+listHtml);
+}
+
+function openDetailShell(titleHtml, bodyHtml){
+  const panel=document.getElementById('detail-overlay');
+  const backdrop=document.getElementById('detail-backdrop');
+  document.getElementById('detail-title').innerHTML=titleHtml+' <span class="close-btn" onclick="closeDetail()">x</span>';
+  document.getElementById('detail-content').innerHTML=bodyHtml;
+  if(backdrop) backdrop.classList.add('show');
   panel.classList.add('show');
   sanitizeVisibleText(panel);
 }
+function closeDetail(){
+  const panel=document.getElementById('detail-overlay');
+  const backdrop=document.getElementById('detail-backdrop');
+  if(panel) panel.classList.remove('show');
+  if(backdrop) backdrop.classList.remove('show');
+  setActiveKpi('');
+}
 
-function closeDetail(){document.getElementById('detail-overlay').classList.remove('show')}
+function contactCard(record){
+  return '<div class="d-item" data-name="'+esc(record.name)+'" data-company="'+esc(record.company)+'" data-platform="'+record.platform+'" data-status="'+esc(record.status)+'"><div class="d-name">'+esc(record.name)+'</div><div class="d-sub">'+esc(record.company)+' - '+esc(record.industry)+' - '+esc(record.country)+' - '+esc(record.marketTier)+' '+esc(record.marketScore)+'</div><div class="d-sub" style="margin-top:4px">'+esc(record.role||'No role captured')+'</div><div class="d-status">'+badge(record.status.toLowerCase().replace(/\s+/g,''),record.status)+' '+badge(record.platform,record.platform.toUpperCase())+' '+badge(record.tier,tierLabel(record.tier))+' '+badge(record.marketStatus==='独代占用'?'excluded':'sent',record.marketStatus)+'</div><div class="d-actions"><button class="btn primary" onclick="executeContactAction(this,\'dm\')">DM</button><button class="btn" onclick="executeContactAction(this,\'email\')">Email</button><button class="btn" onclick="showStatusMenu(event,this)">Status</button></div></div>';
+}
+
+function openContactPanel(record){
+  setActiveKpi(record.platform);
+  openDetailShell(esc(record.name),contactCard(record));
+}
 
 // Execute a contact-level action via OpenClaw Gateway
 function executeContactAction(btn, actionType){
@@ -1040,9 +1379,9 @@ function logAction(text){
 // === EXPORT ===
 function exportCSV(){
   const list=getFiltered();
-  const header='Name,Company,Role,Industry,Region,Tier,Status,Platform\n';
+  const header='Name,Company,Role,Country,CountryEN,MarketScore,MarketTier,MarketStatus,Industry,Region,Tier,Status,Platform\n';
   const cell=v=>'"'+String(v||'').replace(/"/g,'""')+'"';
-  const rows=list.map(r=>[r.name,r.company,r.role,r.industry,r.region,tierLabel(r.tier),r.status,r.platform].map(cell).join(',')).join('\n');
+  const rows=list.map(r=>[r.name,r.company,r.role,r.country,r.countryEn,r.marketScore,r.marketTier,r.marketStatus,r.industry,r.region,tierLabel(r.tier),r.status,r.platform].map(cell).join(',')).join('\n');
   const blob=new Blob([header+rows],{type:'text/csv;charset=utf-8;'});
   const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='customer-contacts-'+new Date().toISOString().slice(0,10)+'.csv';a.click();
 }

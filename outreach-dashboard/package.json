@@ -1,10 +1,12 @@
 {
   "name": "outreach-dashboard",
-  "version": "18.1.1",
+  "version": "18.4.0",
   "description": "Flextail Gear Customer Automated Development System",
   "main": "main.js",
   "scripts": {
     "start": "electron .",
+    "check": "node -c main.js && node -c preload.js && node -c smart-deploy.js && node -c build-portable-app.js && node -c service-worker.js && node -e \"const fs=require('fs'); const html=fs.readFileSync('outreach-dashboard.html','utf8'); const scripts=[...html.matchAll(/<script(?![^>]*src)[^>]*>([\\s\\S]*?)<\\/script>/gi)].map(m=>m[1]); for (const s of scripts) new Function(s); global.window=global; require('./country-market-data.js'); if(COUNTRY_ALIASES.usa!=='美国') throw new Error('country aliases failed'); console.log('checks ok')\"",
+    "deploy:dry-run": "node smart-deploy.js --dry-run",
     "build": "electron-builder --win portable",
     "build:nsis": "electron-builder --win nsis",
     "build:portable-folder": "node build-portable-app.js"
@@ -23,13 +25,17 @@
     },
     "files": [
       "main.js",
+      "preload.js",
       "build-portable-app.js",
       "index.html",
       "outreach-dashboard.html",
       "manifest.webmanifest",
       "service-worker.js",
       "icon.svg",
-      "enhancements.css"
+      "enhancements.css",
+      "country-market-data.js",
+      "credentials.vault.json",
+      "credentials.example.json"
     ],
     "win": {
       "target": [

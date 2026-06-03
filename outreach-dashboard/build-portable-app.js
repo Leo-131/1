@@ -13,6 +13,7 @@ const zipPath = path.join(outRoot, `${appName}-Portable.zip`);
 
 const appFiles = [
   "main.js",
+  "preload.js",
   "package.json",
   "outreach-dashboard.html",
   "index.html",
@@ -20,6 +21,9 @@ const appFiles = [
   "service-worker.js",
   "icon.svg",
   "enhancements.css",
+  "country-market-data.js",
+  "credentials.vault.json",
+  "credentials.example.json",
 ];
 
 function assertInside(parent, target) {
@@ -46,6 +50,14 @@ function sleep(ms) {
 }
 
 function createZipWithRetry() {
+  try {
+    const sevenZip = require("7zip-bin").path7za;
+    execFileSync(sevenZip, ["a", "-tzip", zipPath, appDir], { stdio: "inherit" });
+    return;
+  } catch (error) {
+    console.log("7zip archive failed; falling back to PowerShell Compress-Archive.");
+  }
+
   let lastError;
   for (let attempt = 1; attempt <= 5; attempt += 1) {
     try {
@@ -91,7 +103,7 @@ for (const file of appFiles) {
 
 const appPackage = {
   name: "customer-development-system",
-  version: "18.1.1",
+  version: "18.4.0",
   main: "main.js",
 };
 fs.writeFileSync(path.join(resourcesApp, "package.json"), `${JSON.stringify(appPackage, null, 2)}\n`);

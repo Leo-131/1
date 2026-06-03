@@ -24,13 +24,32 @@ const STATE_FILE = path.join(ROOT, ".deploy-state.json");
 const DAILY_LIMIT = Number(process.env.DAILY_DEPLOY_LIMIT || 1);
 const APP_FILES = [
   "outreach-dashboard.html",
+  "country-market-data.js",
   "index.html",
   "manifest.webmanifest",
   "service-worker.js",
   "icon.svg",
   "vercel.json",
   ".vercelignore",
+  ".netlifyignore",
   "netlify.toml",
+];
+const SENSITIVE_BLOCKLIST = [
+  "credentials.local.json",
+  "credentials.plain.json",
+  ".env",
+  ".env.local",
+  ".env.production",
+];
+const SCAN_FILES = [
+  "outreach-dashboard.html",
+  "country-market-data.js",
+  "index.html",
+  "main.js",
+  "preload.js",
+  "smart-deploy.js",
+  "build-portable-app.js",
+  "credentials.vault.json",
 ];
 
 const args = new Set(process.argv.slice(2));
@@ -111,6 +130,36 @@ function changedFiles(previousFiles, currentFiles) {
   return APP_FILES.filter((file) => previousFiles[file] !== currentFiles[file]);
 }
 
+function scanForSensitiveData() {
+  const findings = [];
+  for (const file of SENSITIVE_BLOCKLIST) {
+    if (fs.existsSync(path.join(ROOT, file))) {
+      findings.push(`Blocked plaintext credential file exists: ${file}`);
+    }
+  }
+  const suspicious = [
+    /['"](?:password|pass|pwd)['"]\s*:\s*['"][^'"]{6,}['"]/i,
+    /\b(?:password|pass|pwd)\s*=\s*['"][^'"]{6,}['"]/i,
+    /\b(?:access_token|secret|api_key)\s*=\s*['"][^'"]{12,}['"]/i,
+  ];
+  for (const file of SCAN_FILES) {
+    const fullPath = path.join(ROOT, file);
+    if (!fs.existsSync(fullPath)) continue;
+    const content = fs.readFileSync(fullPath, "utf8");
+    if (file === "credentials.vault.json") {
+      const vault = JSON.parse(content || "{}");
+      if (vault.username || vault.password || vault.li || vault.fb || vault.ins) {
+        findings.push("credentials.vault.json contains plaintext-shaped credential fields.");
+      }
+      continue;
+    }
+    for (const pattern of suspicious) {
+      if (pattern.test(content)) findings.push(`Suspicious secret-like content in ${file}: ${pattern}`);
+    }
+  }
+  return findings;
+}
+
 console.log("=== Minimal Online App Deploy ===");
 console.log(`Mode: ${dryRun ? "dry-run" : "production"}${force ? " + force" : ""}`);
 console.log(`Daily deploy limit: ${DAILY_LIMIT}`);
@@ -145,6 +194,13 @@ if (changes.length === 0 && state.lastDigest === current.digest && !force) {
 if (changes.length > 0) {
   console.log("Changed app files:");
   for (const file of changes) console.log(`- ${file}`);
+}
+
+const sensitiveFindings = scanForSensitiveData();
+if (sensitiveFindings.length > 0) {
+  console.log("Sensitive information scan failed:");
+  for (const finding of sensitiveFindings) console.log(`- ${finding}`);
+  process.exit(1);
 }
 
 if (todaysCount >= DAILY_LIMIT && !force) {
