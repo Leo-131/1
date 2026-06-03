@@ -6,7 +6,8 @@
   "scripts": {
     "start": "electron .",
     "build": "electron-builder --win portable",
-    "build:nsis": "electron-builder --win nsis"
+    "build:nsis": "electron-builder --win nsis",
+    "build:portable-folder": "node build-portable-app.js"
   },
   "author": "Flextail",
   "license": "MIT",
@@ -22,6 +23,7 @@
     },
     "files": [
       "main.js",
+      "build-portable-app.js",
       "index.html",
       "outreach-dashboard.html",
       "manifest.webmanifest",

@@ -28,6 +28,7 @@ const APP_FILES = [
   "service-worker.js",
   "icon.svg",
   "vercel.json",
+  ".vercelignore",
   "netlify.toml",
 ];
 

@@ -1,0 +1,9 @@
+node_modules
+dist
+*.zip
+*.exe
+package-lock.json
+Customer-Development-System-App.zip
+Outreach-Dashboard*
+.deploy-state.json
+.git
