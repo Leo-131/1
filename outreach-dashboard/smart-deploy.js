@@ -11,6 +11,7 @@
  *   node smart-deploy.js --dry-run
  *   node smart-deploy.js
  *   node smart-deploy.js --force
+ *   node smart-deploy.js --mark-rate-limited
  */
 
 const fs = require("fs");
@@ -35,6 +36,8 @@ const APP_FILES = [
 const args = new Set(process.argv.slice(2));
 const dryRun = args.has("--dry-run");
 const force = args.has("--force");
+const markRateLimited = args.has("--mark-rate-limited");
+const RATE_LIMIT_COOLDOWN_HOURS = Number(process.env.RATE_LIMIT_COOLDOWN_HOURS || 24);
 
 function todayKey() {
   return new Date().toISOString().slice(0, 10);
@@ -60,7 +63,7 @@ function hashApp() {
 
 function loadState() {
   if (!fs.existsSync(STATE_FILE)) {
-    return { deployments: {}, lastDigest: "", lastFiles: {} };
+    return { deployments: {}, lastDigest: "", lastFiles: {}, rateLimitedUntil: "" };
   }
   return JSON.parse(fs.readFileSync(STATE_FILE, "utf8"));
 }
@@ -78,8 +81,30 @@ function run(command, commandArgs) {
   if (result.stdout) process.stdout.write(result.stdout);
   if (result.stderr) process.stderr.write(result.stderr);
   if (result.status !== 0) {
-    throw new Error(`${command} ${commandArgs.join(" ")} failed with exit ${result.status}`);
+    const output = `${result.stdout || ""}\n${result.stderr || ""}`;
+    const error = new Error(`${command} ${commandArgs.join(" ")} failed with exit ${result.status}`);
+    error.output = output;
+    throw error;
   }
+}
+
+function markRateLimitCooldown(state, reason = "Vercel deployment rate limit") {
+  const until = new Date(Date.now() + RATE_LIMIT_COOLDOWN_HOURS * 60 * 60 * 1000).toISOString();
+  state.rateLimitedUntil = until;
+  state.rateLimitedReason = reason;
+  state.rateLimitedAt = new Date().toISOString();
+  saveState(state);
+  return until;
+}
+
+function isRateLimitError(error) {
+  const output = String(error && (error.output || error.message || ""));
+  return (
+    output.includes("429") ||
+    output.includes("Too Many Requests") ||
+    output.includes("api-deployments-free-per-day") ||
+    output.includes("Resource is limited")
+  );
 }
 
 function changedFiles(previousFiles, currentFiles) {
@@ -95,9 +120,22 @@ const current = hashApp();
 const day = todayKey();
 const todaysCount = state.deployments[day] || 0;
 const changes = changedFiles(state.lastFiles || {}, current.files);
+const rateLimitedUntil = state.rateLimitedUntil ? new Date(state.rateLimitedUntil) : null;
 
 console.log(`Current app digest: ${current.digest.slice(0, 12)}`);
 console.log(`Deployments today: ${todaysCount}/${DAILY_LIMIT}`);
+
+if (markRateLimited) {
+  const until = markRateLimitCooldown(state, "Manual 429 cooldown marker");
+  console.log(`Rate-limit cooldown recorded until ${until}. No Vercel request was made.`);
+  process.exit(0);
+}
+
+if (rateLimitedUntil && rateLimitedUntil > new Date() && !force) {
+  console.log(`Remote rate-limit cooldown is active until ${state.rateLimitedUntil}. Deployment skipped.`);
+  console.log("Use --force only when you intentionally want to test whether the Vercel limit has reset.");
+  process.exit(0);
+}
 
 if (changes.length === 0 && state.lastDigest === current.digest && !force) {
   console.log("No app changes detected. Deployment skipped.");
@@ -120,12 +158,24 @@ if (dryRun) {
   process.exit(0);
 }
 
-run("vercel", ["deploy", "--prod", "--yes"]);
+try {
+  run("vercel", ["deploy", "--prod", "--yes"]);
+} catch (error) {
+  if (isRateLimitError(error)) {
+    const until = markRateLimitCooldown(state, "Vercel 429 / deployments per day limit");
+    console.log(`Remote rate limit detected. Cooldown recorded until ${until}.`);
+    console.log("Deployment skipped for future runs during the cooldown window.");
+    process.exit(0);
+  }
+  throw error;
+}
 
 state.lastDigest = current.digest;
 state.lastFiles = current.files;
 state.deployments[day] = todaysCount + 1;
 state.lastDeploymentAt = new Date().toISOString();
+state.rateLimitedUntil = "";
+state.rateLimitedReason = "";
 saveState(state);
 
 console.log("Production deploy finished and local deploy state was updated.");
