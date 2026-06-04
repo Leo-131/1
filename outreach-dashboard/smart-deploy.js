@@ -25,6 +25,8 @@ const DAILY_LIMIT = Number(process.env.DAILY_DEPLOY_LIMIT || 1);
 const APP_FILES = [
   "outreach-dashboard.html",
   "country-market-data.js",
+  "daily-outreach-tasks.js",
+  "dashboard-local-server.js",
   "index.html",
   "manifest.webmanifest",
   "service-worker.js",
@@ -44,6 +46,8 @@ const SENSITIVE_BLOCKLIST = [
 const SCAN_FILES = [
   "outreach-dashboard.html",
   "country-market-data.js",
+  "daily-outreach-tasks.js",
+  "dashboard-local-server.js",
   "index.html",
   "main.js",
   "preload.js",

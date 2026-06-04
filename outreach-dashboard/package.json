@@ -5,7 +5,8 @@
   "main": "main.js",
   "scripts": {
     "start": "electron .",
-    "check": "node -c main.js && node -c preload.js && node -c smart-deploy.js && node -c build-portable-app.js && node -c service-worker.js && node -e \"const fs=require('fs'); const html=fs.readFileSync('outreach-dashboard.html','utf8'); const scripts=[...html.matchAll(/<script(?![^>]*src)[^>]*>([\\s\\S]*?)<\\/script>/gi)].map(m=>m[1]); for (const s of scripts) new Function(s); global.window=global; require('./country-market-data.js'); if(COUNTRY_ALIASES.usa!=='美国') throw new Error('country aliases failed'); console.log('checks ok')\"",
+    "serve": "node dashboard-local-server.js",
+    "check": "node -c main.js && node -c preload.js && node -c smart-deploy.js && node -c build-portable-app.js && node -c service-worker.js && node -c dashboard-local-server.js && node -c daily-outreach-tasks.js && node -e \"const fs=require('fs'); const html=fs.readFileSync('outreach-dashboard.html','utf8'); const scripts=[...html.matchAll(/<script(?![^>]*src)[^>]*>([\\s\\S]*?)<\\/script>/gi)].map(m=>m[1]); for (const s of scripts) new Function(s); global.window=global; require('./country-market-data.js'); require('./daily-outreach-tasks.js'); if(COUNTRY_ALIASES.usa!=='美国') throw new Error('country aliases failed'); if(!DAILY_OUTREACH_TASKS||DAILY_OUTREACH_TASKS.total!==60) throw new Error('daily outreach tasks failed'); console.log('checks ok')\"",
     "deploy:dry-run": "node smart-deploy.js --dry-run",
     "build": "electron-builder --win portable",
     "build:nsis": "electron-builder --win nsis",
@@ -27,6 +28,7 @@
       "main.js",
       "preload.js",
       "build-portable-app.js",
+      "dashboard-local-server.js",
       "index.html",
       "outreach-dashboard.html",
       "manifest.webmanifest",
@@ -34,6 +36,7 @@
       "icon.svg",
       "enhancements.css",
       "country-market-data.js",
+      "daily-outreach-tasks.js",
       "credentials.vault.json",
       "credentials.example.json"
     ],

@@ -298,7 +298,11 @@ ipcMain.handle('unlock-vault', async (_event, masterPassword) => {
 
 ipcMain.handle('launch-platform-acquisition', async (_event, payload) => {
   const platform = payload && payload.platform;
-  validatePlatform(platform);
+  const config = validatePlatform(platform);
+  if (payload && payload.externalBrowser) {
+    await shell.openExternal(config.targetUrl);
+    return { ok: true, externalBrowser: true };
+  }
   let credential = getCachedCredential(platform);
   if (!credential && payload && payload.masterPassword) {
     const credentials = decryptVault(readJson(vaultPath(), null), payload.masterPassword);

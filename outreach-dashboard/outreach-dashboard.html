@@ -95,6 +95,12 @@ tbody tr:hover{background:var(--primary-light)}
 .search{width:100%;padding:6px 12px;border-radius:6px;border:1px solid var(--border);font-size:12px;outline:none;background:var(--surface);color:var(--text)}
 .search:focus{border-color:var(--primary)}
 .toolbar{display:flex;align-items:center;gap:8px;margin-bottom:10px;flex-wrap:wrap}
+.filter-row{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-bottom:10px}
+.filter-select{min-width:128px;padding:6px 10px;border-radius:6px;border:1px solid var(--border);background:var(--surface);color:var(--text);font-size:11px;outline:none}
+.filter-select:focus{border-color:var(--primary)}
+th.sortable{cursor:pointer;user-select:none;white-space:nowrap}
+th.sortable:hover{color:var(--primary)}
+th.sortable .sort-indicator{margin-left:4px;color:var(--primary);font-size:9px}
 
 .btn{padding:5px 12px;border-radius:6px;font-size:11px;cursor:pointer;border:1px solid var(--border);background:var(--surface);color:var(--text);transition:all .15s}
 .btn:hover{border-color:var(--primary)}
@@ -133,6 +139,20 @@ tbody tr:hover{background:var(--primary-light)}
 .automation-task .num{width:22px;height:22px;border-radius:50%;display:grid;place-items:center;background:#1c2333;color:var(--primary);font-weight:700;font-size:10px}
 .automation-task .meta{color:var(--muted);font-size:10px;margin-top:2px}
 .automation-task .pill{font-size:9px;border:1px solid var(--border);border-radius:999px;padding:2px 6px;color:var(--muted)}
+.daily-plan-strip{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap;margin-bottom:12px;padding:10px;border:1px solid rgba(34,197,94,.35);border-radius:8px;background:rgba(34,197,94,.08)}
+.daily-plan-strip .title{font-size:11px;font-weight:700;color:var(--green)}
+.daily-plan-strip .meta{font-size:10px;color:var(--muted)}
+.daily-plan-list{display:none;margin-bottom:12px;border:1px solid var(--border);border-radius:8px;background:#0d1117;overflow:hidden}
+.daily-plan-list .head{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap;padding:10px 12px;border-bottom:1px solid var(--border)}
+.daily-plan-list .head b{font-size:12px}
+.daily-plan-list .head span{font-size:10px;color:var(--muted)}
+.daily-plan-list .rows{max-height:340px;overflow:auto}
+.daily-plan-row{display:grid;grid-template-columns:34px 86px 1fr 120px;gap:8px;align-items:center;padding:8px 12px;border-bottom:1px solid #21262d;font-size:11px}
+.daily-plan-row:last-child{border-bottom:0}
+.daily-plan-row .rank{font-weight:700;color:var(--primary)}
+.daily-plan-row .platform{font-size:10px;color:var(--green);text-transform:uppercase}
+.daily-plan-row .main b{display:block;margin-bottom:2px}
+.daily-plan-row .main span,.daily-plan-row .market{font-size:10px;color:var(--muted);line-height:1.45}
 .automation-log{max-height:180px;overflow:auto;font-size:10px;color:var(--muted);line-height:1.55}
 .automation-log div{padding:5px 0;border-bottom:1px solid #21262d}
 .automation-log b{color:var(--text)}
@@ -237,6 +257,23 @@ tr.contact-row:hover .row-actions{display:inline-flex}
       <button class="btn" type="button" onclick="savePlatformCredential('ins')">Save INS</button>
       <button class="btn primary" type="button" onclick="unlockCredentialVault()">Unlock Vault</button>
     </div>
+    <div class="daily-plan-strip" id="daily-plan-strip" style="display:none">
+      <div>
+        <div class="title" id="daily-plan-title">FB/INS Daily Outreach Plan</div>
+        <div class="meta" id="daily-plan-meta"></div>
+      </div>
+      <button class="btn green" type="button" onclick="loadDailyOutreachPlan()">Load Plan</button>
+    </div>
+    <div class="daily-plan-list" id="daily-plan-list">
+      <div class="head">
+        <div>
+          <b>Today's FB/INS List</b>
+          <span id="daily-plan-list-meta"></span>
+        </div>
+        <button class="btn green" type="button" onclick="loadDailyOutreachPlan()">Load All Into Queue</button>
+      </div>
+      <div class="rows" id="daily-plan-list-rows"></div>
+    </div>
     <div class="automation-actions">
       <button class="automation-btn linkedin" type="button" onclick="startAutomation('li')">
         <strong>LINKEDIN</strong>
@@ -340,8 +377,22 @@ tr.contact-row:hover .row-actions{display:inline-flex}
         <button class="btn primary" onclick="exportCSV()">Export CSV</button>
       </div>
       <div class="tab-bar" id="filter-tabs"></div>
+      <div class="filter-row">
+        <select class="filter-select" id="country-filter" onchange="renderTable()"></select>
+        <select class="filter-select" id="market-filter" onchange="renderTable()"></select>
+        <select class="filter-select" id="industry-filter" onchange="renderTable()"></select>
+        <select class="filter-select" id="source-filter" onchange="renderTable()"></select>
+        <select class="filter-select" id="touch-filter" onchange="renderTable()">
+          <option value="all">All touch states</option>
+          <option value="untouched">Untouched</option>
+          <option value="touched">Touched</option>
+          <option value="contact">Has contact</option>
+          <option value="followup">Needs follow-up</option>
+        </select>
+        <button class="btn" type="button" onclick="resetListFilters()">Reset Filters</button>
+      </div>
       <div class="table-wrap">
-        <table><thead><tr><th>#</th><th>Name</th><th>Company</th><th>Role</th><th>Country</th><th>Market</th><th>Industry</th><th>Tier</th><th>Status</th><th>Platform</th></tr></thead><tbody id="table-body"></tbody></table>
+        <table><thead><tr id="table-head"></tr></thead><tbody id="table-body"></tbody></table>
       </div>
       <div style="margin-top:6px;color:var(--muted);font-size:10px" id="table-info"></div>
     </div>
@@ -358,6 +409,7 @@ tr.contact-row:hover .row-actions{display:inline-flex}
 <div class="footer" id="system-footer">Customer Automated Development System</div>
 
 <script src="./country-market-data.js"></script>
+<script src="./daily-outreach-tasks.js"></script>
 <script>
 // === UTILS ===
 const TIER1_KEYS=['CEO','President','Founder','Owner','Managing Director','VP','Vice President','Head','Director','Chief'];
@@ -483,6 +535,7 @@ function enrichMarket(record){
 
 const APP_VERSION = '18.4.0';
 const STATUS_CHANGES_KEY = 'customer_development_status_changes_v1';
+const ACTIVITY_CHANGES_KEY = 'customer_development_activity_changes_v1';
 function formatDate(value){
   const input = String(value || '').trim();
   if(!input) return '';
@@ -500,11 +553,26 @@ function loadStatusChanges(){
     return {};
   }
 }
+function loadActivityChanges(){
+  try{
+    return JSON.parse(localStorage.getItem(ACTIVITY_CHANGES_KEY) || '{}');
+  }catch(error){
+    return {};
+  }
+}
 function applySavedStatusChanges(records){
   const changes = loadStatusChanges();
+  const activity = loadActivityChanges();
   records.forEach(record=>{
-    const saved = changes[recordKey(record)];
+    const key = recordKey(record);
+    const saved = changes[key];
     if(saved && saved.status) record.status = saved.status;
+    if(activity[key]){
+      record.lastTouch = activity[key].lastTouch || record.lastTouch || '';
+      record.contact = activity[key].contact || record.contact || '';
+      record.followUpAt = activity[key].followUpAt || record.followUpAt || '';
+      record.activityState = activity[key].state || record.activityState || '';
+    }
   });
 }
 
@@ -595,8 +663,36 @@ STATIC_INS_RECORDS.forEach(r => {
     date: String(r.date||'')
   });
 });
+if(window.DAILY_OUTREACH_TASKS && Array.isArray(window.DAILY_OUTREACH_TASKS.tasks)){
+  window.DAILY_OUTREACH_TASKS.tasks.forEach(task=>{
+    const platform = String(task.platform||'').toLowerCase().includes('facebook')?'fb':'ins';
+    allRecords.push({
+      name: String(task.name||''),
+      company: String(task.company||''),
+      role: String(task.role||task.action||''),
+      platform,
+      status: task.state || '待触达',
+      tier: String(task.tier||'T3').toLowerCase(),
+      source: 'daily-plan',
+      category: 'daily-outreach',
+      industry: platform==='fb'?'Social Engagement':guessIndustry({company:task.company,role:task.role,category:'instagram'}),
+      region: guessRegion({company:task.company,role:task.role,name:task.name}),
+      date: String(task.date||''),
+      country: task.country,
+      countryEn: task.countryEn,
+      marketScore: task.marketScore,
+      marketTier: task.marketTier,
+      marketStatus: task.marketStatus,
+      dailyPriority: task.priority,
+      action: task.action,
+      lastTouch: '',
+      contact: '',
+      followUpAt: ''
+    });
+  });
+}
 applySavedStatusChanges(allRecords);
-for(let i=0;i<allRecords.length;i++) allRecords[i] = enrichMarket(allRecords[i]);
+for(let i=0;i<allRecords.length;i++) allRecords[i] = allRecords[i].source==='daily-plan'?{...enrichMarket(allRecords[i]),country:allRecords[i].country||enrichMarket(allRecords[i]).country,countryEn:allRecords[i].countryEn||enrichMarket(allRecords[i]).countryEn,marketScore:allRecords[i].marketScore||enrichMarket(allRecords[i]).marketScore,marketTier:allRecords[i].marketTier||enrichMarket(allRecords[i]).marketTier,marketStatus:allRecords[i].marketStatus||enrichMarket(allRecords[i]).marketStatus}:enrichMarket(allRecords[i]);
 
 // === COMPUTED ===
 const liR = allRecords.filter(r=>r.platform==='li');
@@ -632,7 +728,7 @@ function renderSystemInfo(){
   const dataDate = latestDataDate();
   document.title = 'Customer Automated Development System v' + APP_VERSION;
   if(versionEl) versionEl.textContent = 'v' + APP_VERSION;
-  if(sourceEl) sourceEl.textContent = (stats.active_contacts || allRecords.length) + ' active / ' + (stats.total_contacts || allRecords.length) + ' total';
+  if(sourceEl) sourceEl.textContent = allRecords.length + ' active / ' + allRecords.length + ' total';
   if(freshnessEl) freshnessEl.textContent = 'Data ' + dataDate;
   if(updatedEl) updatedEl.textContent = 'Page ' + pageUpdated;
   if(footerEl) footerEl.textContent = 'Customer Automated Development System v' + APP_VERSION + '  · Flextail + Vollyc · data ' + dataDate + ' · page ' + pageUpdated;
@@ -641,6 +737,15 @@ function updateRecordStatus(recordLike, newStatus){
   const key = recordKey(recordLike);
   allRecords.forEach(record=>{
     if(recordKey(record)===key) record.status = newStatus;
+  });
+}
+function saveActivityChange(recordLike, patch){
+  const key = recordKey(recordLike);
+  const activity = loadActivityChanges();
+  activity[key] = {...(activity[key]||{}),...patch,updatedAt:new Date().toISOString()};
+  localStorage.setItem(ACTIVITY_CHANGES_KEY, JSON.stringify(activity));
+  allRecords.forEach(record=>{
+    if(recordKey(record)===key) Object.assign(record, patch);
   });
 }
 const UI_TEXT_REPLACEMENTS = [
@@ -700,7 +805,7 @@ function loadAutomationState(){
   }
 }
 function saveAutomationState(){localStorage.setItem(AUTO_KEY,JSON.stringify(automationState))}
-function platformName(p){return p==='li'?'LINKEDIN':p==='fb'?'FACEBOOK':p==='ins'?'INS':'Platform'}
+function platformName(p){return p==='li'?'LINKEDIN':p==='fb'?'FACEBOOK':p==='ins'?'INS':p==='social'?'FB/INS':'Platform'}
 function platformRecords(p){return p==='li'?liR:p==='fb'?fbR:insR}
 function scoreLead(r){
   let score=0;
@@ -811,6 +916,19 @@ function topAutomationTargets(tasks){
 function openAcquisitionBrowser(platform){
   const config = PLATFORM_AUTOMATION[platform];
   const url = config ? config.browserUrl : PLATFORM_AUTOMATION.ins.browserUrl;
+  if(location.hostname==='127.0.0.1' || location.hostname==='localhost'){
+    const endpoint = '/launch-chrome?platform='+encodeURIComponent(platform)+'&url='+encodeURIComponent(url);
+    return fetch(endpoint).then(response=>{
+      if(!response.ok) throw new Error('Chrome launcher unavailable');
+      return response.json();
+    }).then(result=>{
+      showAppToast('Chrome opened for '+platformName(platform));
+      return result && result.ok;
+    }).catch(()=>openAcquisitionBrowserFallback(url, config));
+  }
+  return openAcquisitionBrowserFallback(url, config);
+}
+function openAcquisitionBrowserFallback(url, config){
   if(window.customerDev && typeof window.customerDev.openExternalUrl === 'function'){
     return window.customerDev.openExternalUrl(url).catch(error=>{
       window.open(url,'_blank','noopener');
@@ -820,6 +938,22 @@ function openAcquisitionBrowser(platform){
   const opened = window.open(url,'_blank','noopener');
   if(!opened && config) window.location.href = config.fallbackLoginUrl;
   return Promise.resolve(Boolean(opened));
+}
+function platformSearchUrl(task){
+  const query = encodeURIComponent([task.company, task.name, task.country].filter(Boolean).join(' '));
+  if(task.platform==='fb') return 'https://www.facebook.com/search/top/?q='+query;
+  if(task.platform==='ins') return 'https://www.instagram.com/explore/search/keyword/?q='+query;
+  return PLATFORM_AUTOMATION.li.browserUrl;
+}
+function openTaskInChrome(task){
+  if(!task)return Promise.resolve(false);
+  const url = platformSearchUrl(task);
+  if(location.hostname==='127.0.0.1' || location.hostname==='localhost'){
+    return fetch('/launch-chrome?platform='+encodeURIComponent(task.platform)+'&url='+encodeURIComponent(url))
+      .then(response=>response.ok)
+      .catch(()=>openAcquisitionBrowserFallback(url, PLATFORM_AUTOMATION[task.platform]));
+  }
+  return openAcquisitionBrowserFallback(url, PLATFORM_AUTOMATION[task.platform]);
 }
 function buildAcquisitionPrompt(platform,tasks){
   const config = PLATFORM_AUTOMATION[platform] || PLATFORM_AUTOMATION.ins;
@@ -857,7 +991,7 @@ function sendAutomationToAgent(platform,tasks){
 }
 function launchCustomerAcquisition(platform,tasks){
   if(window.customerDev && window.customerDev.launchPlatformAcquisition){
-    window.customerDev.launchPlatformAcquisition({platform}).then(result=>{
+    window.customerDev.launchPlatformAcquisition({platform,externalBrowser:true}).then(result=>{
       if(result && result.needsCredential){
         showAppToast(platformName(platform)+' credential missing');
         savePlatformCredential(platform);
@@ -895,27 +1029,131 @@ function startAutomation(platform){
   launchCustomerAcquisition(platform,tasks);
   showAppToast(platformName(platform)+' browser acquisition started');
 }
+function dailyOutreachPlan(){return window.DAILY_OUTREACH_TASKS || null}
+function normalizeDailyTask(task){
+  const platform = String(task.platform||'').toLowerCase().includes('facebook')?'fb':'ins';
+  return {
+    id: 'daily-'+platform+'-'+task.priority+'-'+String(task.name||'').replace(/\W+/g,'').slice(0,12),
+    done: false,
+    name: task.name || '-',
+    company: task.company || '-',
+    role: task.role || '-',
+    tier: task.tier || 'T3',
+    status: task.originalStatus || task.state || 'Imported',
+    state: task.state || TASK_STATE.pending,
+    contact: '',
+    country: task.country || 'Unknown',
+    marketScore: task.marketScore || 0,
+    marketTier: task.marketTier || 'Unknown',
+    marketStatus: task.marketStatus || '可开拓',
+    platform,
+    priority: task.priority,
+    source: task.source || 'daily-plan',
+    action: task.action || (platform==='fb'?'Facebook outreach and buyer contact capture':'Instagram DM follow-up and contact capture')
+  };
+}
+function renderDailyPlanStrip(){
+  const plan = dailyOutreachPlan();
+  const strip = document.getElementById('daily-plan-strip');
+  if(!strip || !plan || !Array.isArray(plan.tasks) || !plan.tasks.length)return;
+  const fbCount = plan.tasks.filter(task=>String(task.platform||'').toLowerCase().includes('facebook')).length;
+  const insCount = plan.tasks.filter(task=>String(task.platform||'').toLowerCase().includes('instagram')).length;
+  document.getElementById('daily-plan-title').textContent = 'Today FB/INS Outreach Plan';
+  document.getElementById('daily-plan-meta').textContent = (plan.strategy||'Prioritize Facebook and Instagram')+' · Facebook '+fbCount+' · Instagram '+insCount+' · '+plan.total+' total';
+  strip.style.display = 'flex';
+}
+function renderDailyPlanList(){
+  const plan = dailyOutreachPlan();
+  const wrap = document.getElementById('daily-plan-list');
+  const rows = document.getElementById('daily-plan-list-rows');
+  if(!wrap || !rows || !plan || !Array.isArray(plan.tasks) || !plan.tasks.length)return;
+  const fbCount = plan.tasks.filter(task=>String(task.platform||'').toLowerCase().includes('facebook')).length;
+  const insCount = plan.tasks.filter(task=>String(task.platform||'').toLowerCase().includes('instagram')).length;
+  const meta = document.getElementById('daily-plan-list-meta');
+  if(meta) meta.textContent = ' · Facebook '+fbCount+' · Instagram '+insCount+' · '+plan.tasks.length+' total';
+  rows.innerHTML = plan.tasks.map(task=>{
+    const platform = String(task.platform||'').toLowerCase().includes('facebook')?'Facebook':'Instagram';
+    return '<div class="daily-plan-row">'
+      + '<div class="rank">#'+esc(task.priority)+'</div>'
+      + '<div class="platform">'+esc(platform)+'</div>'
+      + '<div class="main"><b>'+esc(task.name)+'</b><span>'+esc(task.company)+' · '+esc(task.role)+' · '+esc(task.action)+'</span></div>'
+      + '<div class="market">'+esc(task.country)+' · score '+esc(task.marketScore)+' · '+esc(task.marketTier)+'</div>'
+      + '</div>';
+  }).join('');
+  wrap.style.display = 'block';
+  sanitizeVisibleText(wrap);
+}
+function loadDailyOutreachPlan(options){
+  const opts = options || {};
+  const plan = dailyOutreachPlan();
+  if(!plan || !Array.isArray(plan.tasks) || !plan.tasks.length)return false;
+  if(opts.auto && automationState.tasks && automationState.tasks.length)return false;
+  const tasks = plan.tasks.map(normalizeDailyTask);
+  automationState = {
+    platform:'social',
+    status:'Running',
+    progress:0,
+    importedPlan: plan.generatedAt || new Date().toISOString(),
+    tasks,
+    log:[
+      {time:new Date().toLocaleString(),text:'Imported FB/INS daily outreach plan with '+tasks.length+' prioritized tasks'},
+      {time:new Date().toLocaleString(),text:plan.strategy || 'LinkedIn limited; prioritize Facebook and Instagram'},
+      ...automationState.log
+    ].slice(0,30)
+  };
+  curPlat = 'all';
+  curFilter = 'all';
+  saveAutomationState();
+  syncPlatformTabs();
+  syncFilterTabs();
+  renderTable();
+  renderAutomation();
+  openAcquisitionBrowser('fb');
+  openAcquisitionBrowser('ins');
+  showAppToast('FB/INS daily plan loaded: '+tasks.length+' tasks');
+  return true;
+}
 function completeAutomationTask(id){
-  automationState.tasks = automationState.tasks.map(t=>t.id===id?{...t,done:true,state:TASK_STATE.touched}:t);
+  const now = new Date().toLocaleString();
+  automationState.tasks = automationState.tasks.map(t=>{
+    if(t.id!==id)return t;
+    openTaskInChrome(t);
+    saveActivityChange(t,{status:TASK_STATE.touched,lastTouch:now,activityState:TASK_STATE.touched});
+    return {...t,done:true,state:TASK_STATE.touched,lastTouch:now};
+  });
   const done = automationState.tasks.filter(t=>t.done || t.state===TASK_STATE.contact).length;
   automationState.progress = automationState.tasks.length?Math.round(done/automationState.tasks.length*100):0;
   automationState.status = automationState.progress>=100?'Completed':'Running';
   automationState.log = [{time:new Date().toLocaleString(),text:'Completed task '+done+' / '+automationState.tasks.length},...automationState.log].slice(0,30);
   saveAutomationState();
+  renderTable();
   renderAutomation();
 }
 function recordAutomationContact(id){
   const contact = prompt('Record WhatsApp / WeChat / Email:');
   if(!contact)return;
-  automationState.tasks = automationState.tasks.map(t=>t.id===id?{...t,done:true,state:TASK_STATE.contact,contact}:t);
+  const now = new Date().toLocaleString();
+  automationState.tasks = automationState.tasks.map(t=>{
+    if(t.id!==id)return t;
+    saveActivityChange(t,{status:TASK_STATE.contact,lastTouch:now,contact,activityState:TASK_STATE.contact});
+    return {...t,done:true,state:TASK_STATE.contact,contact,lastTouch:now};
+  });
   automationState.log = [{time:new Date().toLocaleString(),text:'Captured contact: '+contact},...automationState.log].slice(0,30);
   saveAutomationState();
+  renderTable();
   renderAutomation();
 }
 function markAutomationFollowup(id){
-  automationState.tasks = automationState.tasks.map(t=>t.id===id?{...t,state:TASK_STATE.followup}:t);
+  const now = new Date().toLocaleString();
+  automationState.tasks = automationState.tasks.map(t=>{
+    if(t.id!==id)return t;
+    openTaskInChrome(t);
+    saveActivityChange(t,{status:TASK_STATE.followup,followUpAt:now,lastTouch:t.lastTouch||now,activityState:TASK_STATE.followup});
+    return {...t,state:TASK_STATE.followup,followUpAt:now,lastTouch:t.lastTouch||now};
+  });
   automationState.log = [{time:new Date().toLocaleString(),text:'Marked task for follow-up'},...automationState.log].slice(0,30);
   saveAutomationState();
+  renderTable();
   renderAutomation();
 }
 function resetAutomation(){
@@ -1009,8 +1247,8 @@ document.getElementById('platform-bars').innerHTML =
   bar('Instagram',insR.length,allRecords.length,'#e4405f',[['Replied',insR.filter(r=>r.status==='Replied').length,'#22c55e'],['Sent',insR.filter(r=>r.status==='Sent').length,'#4f6ef7'],['Rejected',insR.filter(r=>r.status==='Rejected').length,'#f53f3f']]);
 
 // Status
-const statusColor={Accepted:'#22c55e',Replied:'#22c55e',Sent:'#4f6ef7',Pending:'#ff7d00',Done:'#22c55e',Failed:'#f53f3f',Rejected:'#f53f3f',Excluded:'#8c95a6',Unknown:'#8c95a6'};
-const statusOrder=['Accepted','Replied','Sent','Pending','Done','Failed','Rejected','Excluded','Unknown'];
+const statusColor={Accepted:'#22c55e',Replied:'#22c55e',Sent:'#4f6ef7',Pending:'#ff7d00',Done:'#22c55e',Failed:'#f53f3f',Rejected:'#f53f3f',Excluded:'#8c95a6',Unknown:'#8c95a6','待触达':'#ff7d00','已触达':'#4f6ef7','已获取联系方式':'#22c55e','需跟进':'#ff7d00','已拒绝':'#f53f3f'};
+const statusOrder=['Accepted','Replied','已获取联系方式','已触达','需跟进','待触达','Sent','Pending','Done','Failed','Rejected','已拒绝','Excluded','Unknown'];
 const byStatus={};
 allRecords.forEach(r=>{byStatus[r.status]=(byStatus[r.status]||0)+1});
 let sHtml='';
@@ -1074,6 +1312,7 @@ document.getElementById('company-bars').innerHTML=top15.map(([k,v])=>bar(k,v,all
 
 // === TABLE ===
 let curPlat='all',curFilter='all';
+let sortState={key:'marketScore',dir:'desc'};
 const pTabs=[
   ['all','All ('+allRecords.length+')'],['li','LinkedIn ('+liR.length+')'],['fb','Facebook ('+fbR.length+')'],['ins','Instagram ('+insR.length+')']
 ];
@@ -1086,12 +1325,80 @@ document.getElementById('filter-tabs').innerHTML=fTabs.map(([k,v])=>
   '<div class="tab'+(k==='all'?' active':'')+'" onclick="setFilter(\''+k+'\',this)">'+v+'</div>'
 ).join('');
 
+const tableColumns=[
+  {key:'index',label:'#'},
+  {key:'name',label:'Name'},
+  {key:'company',label:'Company'},
+  {key:'role',label:'Role'},
+  {key:'country',label:'Country'},
+  {key:'marketScore',label:'Market'},
+  {key:'industry',label:'Industry'},
+  {key:'tier',label:'Tier'},
+  {key:'status',label:'Status'},
+  {key:'lastTouch',label:'Last Touch'},
+  {key:'contact',label:'Contact'},
+  {key:'platform',label:'Platform'}
+];
+function uniqueSorted(values){
+  return [...new Set(values.map(v=>String(v||'').trim()).filter(Boolean))].sort((a,b)=>a.localeCompare(b));
+}
+function populateSelect(id,label,values){
+  const el=document.getElementById(id);
+  if(!el)return;
+  const current=el.value || 'all';
+  el.innerHTML='<option value="all">'+label+'</option>'+uniqueSorted(values).map(value=>'<option value="'+esc(value)+'">'+esc(value)+'</option>').join('');
+  if([...el.options].some(option=>option.value===current)) el.value=current;
+}
+function populateListFilters(){
+  populateSelect('country-filter','All countries',allRecords.map(r=>r.country));
+  populateSelect('market-filter','All markets',allRecords.map(r=>r.marketTier));
+  populateSelect('industry-filter','All industries',allRecords.map(r=>r.industry));
+  populateSelect('source-filter','All sources',allRecords.map(r=>r.source));
+}
+function resetListFilters(){
+  ['country-filter','market-filter','industry-filter','source-filter','touch-filter'].forEach(id=>{const el=document.getElementById(id);if(el)el.value='all'});
+  sortState={key:'marketScore',dir:'desc'};
+  renderTable();
+}
+function getFilterValue(id){
+  const el=document.getElementById(id);
+  return el ? el.value : 'all';
+}
+function recordSortValue(record,key){
+  if(key==='index')return 0;
+  if(key==='marketScore')return Number(record.marketScore||0);
+  if(key==='tier')return ({t1:3,t2:2,t3:1}[record.tier]||0);
+  if(key==='lastTouch')return new Date(record.lastTouch||record.date||0).getTime()||0;
+  return String(record[key]||'').toLowerCase();
+}
+function sortRecords(list){
+  const dir=sortState.dir==='asc'?1:-1;
+  return [...list].sort((a,b)=>{
+    const av=recordSortValue(a,sortState.key);
+    const bv=recordSortValue(b,sortState.key);
+    if(typeof av==='number'&&typeof bv==='number') return (av-bv)*dir || String(a.name).localeCompare(String(b.name));
+    return String(av).localeCompare(String(bv))*dir || String(a.name).localeCompare(String(b.name));
+  });
+}
+function setSort(key){
+  if(key==='index')return;
+  sortState = sortState.key===key ? {key,dir:sortState.dir==='asc'?'desc':'asc'} : {key,dir:key==='marketScore'||key==='lastTouch'?'desc':'asc'};
+  renderTable();
+}
+function renderTableHead(){
+  document.getElementById('table-head').innerHTML = tableColumns.map(column=>{
+    const indicator = sortState.key===column.key ? '<span class="sort-indicator">'+(sortState.dir==='asc'?'▲':'▼')+'</span>' : '';
+    return '<th class="'+(column.key==='index'?'':'sortable')+'" onclick="setSort(\''+column.key+'\')">'+column.label+indicator+'</th>';
+  }).join('');
+}
+
 function setPlat(p,el){curPlat=p;el.parentElement.querySelectorAll('.tab').forEach(t=>t.classList.remove('active'));el.classList.add('active');renderTable()}
 function setFilter(f,el){curFilter=f;el.parentElement.querySelectorAll('.tab').forEach(t=>t.classList.remove('active'));el.classList.add('active');renderTable()}
 function clearSearch(){
   const search = document.getElementById('search');
   if(!search) return;
   search.value = '';
+  resetListFilters();
   renderTable();
   search.focus();
 }
@@ -1102,21 +1409,35 @@ function getFiltered(){
   if(curFilter==='accepted')list=list.filter(r=>r.status==='Accepted');
   else if(curFilter==='replied')list=list.filter(r=>r.status==='Replied');
   else if(curFilter==='sent')list=list.filter(r=>r.status==='Sent');
-  else if(curFilter==='pending')list=list.filter(r=>r.status==='Pending');
+  else if(curFilter==='pending')list=list.filter(r=>['Pending','待触达'].includes(r.status));
   else if(curFilter==='failed')list=list.filter(r=>r.status==='Failed');
   else if(curFilter==='rejected')list=list.filter(r=>r.status==='Rejected');
   else if(curFilter==='t1')list=list.filter(r=>r.tier==='t1');
-  else if(curFilter==='positive')list=list.filter(r=>['Accepted','Replied'].includes(r.status));
+  else if(curFilter==='positive')list=list.filter(r=>['Accepted','Replied','已获取联系方式'].includes(r.status));
+  const countryFilter=getFilterValue('country-filter');
+  const marketFilter=getFilterValue('market-filter');
+  const industryFilter=getFilterValue('industry-filter');
+  const sourceFilter=getFilterValue('source-filter');
+  const touchFilter=getFilterValue('touch-filter');
+  if(countryFilter!=='all')list=list.filter(r=>r.country===countryFilter);
+  if(marketFilter!=='all')list=list.filter(r=>r.marketTier===marketFilter);
+  if(industryFilter!=='all')list=list.filter(r=>r.industry===industryFilter);
+  if(sourceFilter!=='all')list=list.filter(r=>r.source===sourceFilter);
+  if(touchFilter==='untouched')list=list.filter(r=>!r.lastTouch&&!r.contact&&!r.followUpAt);
+  if(touchFilter==='touched')list=list.filter(r=>!!r.lastTouch);
+  if(touchFilter==='contact')list=list.filter(r=>!!r.contact);
+  if(touchFilter==='followup')list=list.filter(r=>r.status===TASK_STATE.followup||!!r.followUpAt);
   const q=(document.getElementById('search').value||'').toLowerCase();
   if(q)list=list.filter(r=>r&&((r.name||'')+(r.company||'')+(r.role||'')+(r.industry||'')+(r.region||'')+(r.country||'')+(r.countryEn||'')+(r.marketTier||'')+(r.marketStatus||'')).toLowerCase().includes(q));
-  return list.filter(r=>r);
+  return sortRecords(list.filter(r=>r));
 }
 
 function renderTable(){
+  renderTableHead();
   const list=getFiltered();
   document.getElementById('table-body').innerHTML=list.length?list.map((r,i)=>
-    '<tr class="contact-row" data-name="'+esc(r.name)+'" data-company="'+esc(r.company)+'" data-platform="'+r.platform+'" data-status="'+esc(r.status)+'" onclick="openContactActions(this)"><td>'+(i+1)+'</td><td>'+esc(r.name)+'<span class="row-actions"><button class="row-action-btn" onclick="event.stopPropagation();quickAction(\'dm\',this.parentElement.parentElement)">DM</button><button class="row-action-btn" onclick="event.stopPropagation();quickAction(\'email\',this.parentElement.parentElement)">Email</button><button class="row-action-btn" onclick="event.stopPropagation();quickAction(\'status\',this.parentElement.parentElement)">Status</button></span></td><td>'+esc(r.company)+'</td><td title="'+esc(r.role)+'">'+esc((r.role||'').substring(0,40))+'</td><td>'+esc(r.country)+'</td><td>'+badge(r.marketStatus==='独代占用'?'excluded':(r.marketTier==='重点'?'accepted':'sent'),(r.marketScore||0)+' '+r.marketTier)+'</td><td>'+esc(r.industry)+'</td><td>'+badge(r.tier,tierLabel(r.tier))+'</td><td>'+badge(r.status.toLowerCase().replace(/\s+/g,''),r.status)+'</td><td>'+badge(r.platform,r.platform.toUpperCase())+'</td></tr>'
-  ).join(''):'<tr><td colspan="10" style="text-align:center;color:var(--muted);padding:20px">No matches</td></tr>';
+    '<tr class="contact-row" data-name="'+esc(r.name)+'" data-company="'+esc(r.company)+'" data-platform="'+r.platform+'" data-status="'+esc(r.status)+'" onclick="openContactActions(this)"><td>'+(i+1)+'</td><td>'+esc(r.name)+'<span class="row-actions"><button class="row-action-btn" onclick="event.stopPropagation();quickAction(\'dm\',this.parentElement.parentElement)">DM</button><button class="row-action-btn" onclick="event.stopPropagation();quickAction(\'email\',this.parentElement.parentElement)">Email</button><button class="row-action-btn" onclick="event.stopPropagation();quickAction(\'status\',this.parentElement.parentElement)">Status</button></span></td><td>'+esc(r.company)+'</td><td title="'+esc(r.role)+'">'+esc((r.role||'').substring(0,40))+'</td><td>'+esc(r.country)+'</td><td>'+badge(r.marketStatus==='独代占用'?'excluded':(r.marketTier==='重点'?'accepted':'sent'),(r.marketScore||0)+' '+r.marketTier)+'</td><td>'+esc(r.industry)+'</td><td>'+badge(r.tier,tierLabel(r.tier))+'</td><td>'+badge(String(r.status||'').toLowerCase().replace(/\s+/g,''),r.status)+'</td><td>'+esc(r.lastTouch||r.date||'')+'</td><td>'+esc(r.contact||'')+'</td><td>'+badge(r.platform,r.platform.toUpperCase())+'</td></tr>'
+  ).join(''):'<tr><td colspan="12" style="text-align:center;color:var(--muted);padding:20px">No matches</td></tr>';
   document.getElementById('table-info').textContent='Showing '+list.length+' of '+allRecords.length;
   sanitizeVisibleText(document.querySelector('.section'));
 }
@@ -1185,7 +1506,11 @@ function openContactActions(tr){
   if(record) openContactPanel(record);
 }
 renderSystemInfo();
+populateListFilters();
 renderTable();
+renderDailyPlanStrip();
+renderDailyPlanList();
+loadDailyOutreachPlan({auto:true});
 renderAutomation();
 refreshCredentialStatus();
 sanitizeVisibleText();
@@ -1379,9 +1704,9 @@ function logAction(text){
 // === EXPORT ===
 function exportCSV(){
   const list=getFiltered();
-  const header='Name,Company,Role,Country,CountryEN,MarketScore,MarketTier,MarketStatus,Industry,Region,Tier,Status,Platform\n';
+  const header='Name,Company,Role,Country,CountryEN,MarketScore,MarketTier,MarketStatus,Industry,Region,Tier,Status,LastTouch,Contact,FollowUpAt,Platform\n';
   const cell=v=>'"'+String(v||'').replace(/"/g,'""')+'"';
-  const rows=list.map(r=>[r.name,r.company,r.role,r.country,r.countryEn,r.marketScore,r.marketTier,r.marketStatus,r.industry,r.region,tierLabel(r.tier),r.status,r.platform].map(cell).join(',')).join('\n');
+  const rows=list.map(r=>[r.name,r.company,r.role,r.country,r.countryEn,r.marketScore,r.marketTier,r.marketStatus,r.industry,r.region,tierLabel(r.tier),r.status,r.lastTouch,r.contact,r.followUpAt,r.platform].map(cell).join(',')).join('\n');
   const blob=new Blob([header+rows],{type:'text/csv;charset=utf-8;'});
   const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='customer-contacts-'+new Date().toISOString().slice(0,10)+'.csv';a.click();
 }

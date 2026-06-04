@@ -1,9 +1,10 @@
-const CACHE_NAME = 'customer-development-system-v18-4-0-20260603';
+const CACHE_NAME = 'customer-development-system-v18-4-0-20260604';
 const APP_SHELL = [
   './',
   './index.html',
   './outreach-dashboard.html',
   './country-market-data.js',
+  './daily-outreach-tasks.js',
   './enhancements.css',
   './manifest.webmanifest',
   './icon.svg'

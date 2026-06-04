@@ -15,6 +15,7 @@ const appFiles = [
   "main.js",
   "preload.js",
   "package.json",
+  "dashboard-local-server.js",
   "outreach-dashboard.html",
   "index.html",
   "manifest.webmanifest",
@@ -22,6 +23,7 @@ const appFiles = [
   "icon.svg",
   "enhancements.css",
   "country-market-data.js",
+  "daily-outreach-tasks.js",
   "credentials.vault.json",
   "credentials.example.json",
 ];
