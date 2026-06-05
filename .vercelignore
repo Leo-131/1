@@ -1,0 +1,17 @@
+*
+!outreach-dashboard/
+!outreach-dashboard/api/**
+!outreach-dashboard/public/**
+!outreach-dashboard/outreach-dashboard.html
+!outreach-dashboard/country-market-data.js
+!outreach-dashboard/daily-outreach-tasks.js
+!outreach-dashboard/service-worker.js
+!outreach-dashboard/manifest.webmanifest
+!outreach-dashboard/icon.svg
+!outreach-dashboard/package.json
+!outreach-dashboard/package-lock.json
+!outreach-dashboard/prepare-vercel-output.js
+!outreach-dashboard/vercel.json
+outreach-dashboard/node_modules/**
+outreach-dashboard/dist/**
+outreach-dashboard/*.zip
