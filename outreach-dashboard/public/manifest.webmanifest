@@ -1,0 +1,32 @@
+{
+  "name": "Customer Development System - Flextail & Vollyc",
+  "short_name": "Customer Dev",
+  "description": "Flextail and Vollyc customer development app with LinkedIn, Facebook, and Instagram automation queues.",
+  "start_url": "./outreach-dashboard.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#0f1117",
+  "theme_color": "#0f1117",
+  "orientation": "any",
+  "categories": ["business", "productivity"],
+  "icons": [
+    {
+      "src": "./icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Open Customer System",
+      "short_name": "System",
+      "url": "./outreach-dashboard.html"
+    },
+    {
+      "name": "Automation Center",
+      "short_name": "Automation",
+      "url": "./outreach-dashboard.html#automation-app"
+    }
+  ]
+}
