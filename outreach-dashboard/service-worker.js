@@ -1,4 +1,4 @@
-const CACHE_NAME = 'customer-development-system-v18-4-0-20260605-followup-data-fix';
+const CACHE_NAME = 'customer-development-system-v18-4-0-20260605-vercel-output-fix';
 const APP_SHELL = [
   './',
   './index.html',
