@@ -1,11 +1,12 @@
 const http = require('http');
 const fs = require('fs');
 const path = require('path');
+const os = require('os');
 const { spawn } = require('child_process');
 
 const root = __dirname;
 const port = Number(process.env.PORT || 4174);
-const host = '127.0.0.1';
+const host = process.env.HOST || '0.0.0.0';
 const types = {
   '.html': 'text/html; charset=utf-8',
   '.js': 'application/javascript; charset=utf-8',
@@ -43,9 +44,25 @@ function sendJson(res, status, payload) {
   res.end(JSON.stringify(payload));
 }
 
+function isLocalRequest(req) {
+  const address = req.socket.remoteAddress || '';
+  return address === '127.0.0.1' || address === '::1' || address === '::ffff:127.0.0.1';
+}
+
+function lanAddresses() {
+  return Object.values(os.networkInterfaces())
+    .flat()
+    .filter((item) => item && item.family === 'IPv4' && !item.internal)
+    .map((item) => item.address)
+    .filter((address) => !address.startsWith('169.254.') && !address.startsWith('198.18.'));
+}
+
 const server = http.createServer((req, res) => {
-  const parsed = new URL(req.url, `http://${host}:${port}`);
+  const parsed = new URL(req.url, `http://localhost:${port}`);
   if (parsed.pathname === '/launch-chrome') {
+    if (!isLocalRequest(req)) {
+      return sendJson(res, 403, { ok: false, error: 'Chrome launch is restricted to this computer' });
+    }
     const url = parsed.searchParams.get('url');
     if (!url || !/^https:\/\/(www\.)?(linkedin|facebook|instagram)\.com\//i.test(url)) {
       return sendJson(res, 400, { ok: false, error: 'Unsupported URL' });
@@ -72,5 +89,8 @@ const server = http.createServer((req, res) => {
 });
 
 server.listen(port, host, () => {
-  console.log(`http://${host}:${port}/outreach-dashboard.html`);
+  console.log(`Local: http://127.0.0.1:${port}/outreach-dashboard.html`);
+  for (const address of lanAddresses()) {
+    console.log(`LAN:   http://${address}:${port}/outreach-dashboard.html`);
+  }
 });
