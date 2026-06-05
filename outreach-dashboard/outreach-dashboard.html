@@ -106,6 +106,8 @@ th.sortable .sort-indicator{margin-left:4px;color:var(--primary);font-size:9px}
 .btn:hover{border-color:var(--primary)}
 .btn.primary{background:var(--primary);color:#fff;border-color:var(--primary)}
 .btn.primary:hover{opacity:.9}
+.btn.green{background:var(--green);color:#06120a;border-color:var(--green);font-weight:700}
+.btn.green:hover{filter:brightness(1.05)}
 .btn.li{background:#0a66c2;color:#fff;border-color:#0a66c2}
 .btn.fb{background:#1877f2;color:#fff;border-color:#1877f2}
 .btn.ins{background:#e4405f;color:#fff;border-color:#e4405f}
@@ -139,6 +141,14 @@ th.sortable .sort-indicator{margin-left:4px;color:var(--primary);font-size:9px}
 .automation-task .num{width:22px;height:22px;border-radius:50%;display:grid;place-items:center;background:#1c2333;color:var(--primary);font-weight:700;font-size:10px}
 .automation-task .meta{color:var(--muted);font-size:10px;margin-top:2px}
 .automation-task .pill{font-size:9px;border:1px solid var(--border);border-radius:999px;padding:2px 6px;color:var(--muted)}
+.current-lead-card{display:none;margin-bottom:12px;border:1px solid rgba(88,166,255,.38);border-radius:8px;background:linear-gradient(180deg,rgba(88,166,255,.12),rgba(13,17,23,.96));padding:12px}
+.current-lead-card.active{display:block}
+.current-lead-top{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;margin-bottom:8px}
+.current-lead-title{font-size:14px;font-weight:800}
+.current-lead-sub{font-size:10px;color:var(--muted);line-height:1.55;margin-top:3px}
+.current-lead-actions{display:flex;gap:6px;flex-wrap:wrap;justify-content:flex-end}
+.current-lead-msg{font-size:10px;line-height:1.55;color:var(--text);border:1px solid var(--border);border-radius:6px;background:#090d14;padding:8px;white-space:pre-wrap}
+.current-lead-score{display:flex;gap:6px;flex-wrap:wrap;margin-top:8px}
 .daily-plan-strip{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap;margin-bottom:12px;padding:10px;border:1px solid rgba(34,197,94,.35);border-radius:8px;background:rgba(34,197,94,.08)}
 .daily-plan-strip .title{font-size:11px;font-weight:700;color:var(--green)}
 .daily-plan-strip .meta{font-size:10px;color:var(--muted)}
@@ -259,33 +269,39 @@ tr.contact-row:hover .row-actions{display:inline-flex}
     </div>
     <div class="daily-plan-strip" id="daily-plan-strip" style="display:none">
       <div>
-        <div class="title" id="daily-plan-title">FB/INS Daily Outreach Plan</div>
+        <div class="title" id="daily-plan-title">Verified Instagram Follow-up Plan</div>
         <div class="meta" id="daily-plan-meta"></div>
       </div>
-      <button class="btn green" type="button" onclick="loadDailyOutreachPlan()">Load Plan</button>
+      <button class="btn green" type="button" onclick="loadDailyOutreachPlan()">Load Serial Queue</button>
+    </div>
+    <div class="daily-plan-strip" id="automation-mode-note">
+      <div>
+        <div class="title">Automation Mode</div>
+        <div class="meta">Auto Prepare opens prioritized customers, copies draft messages, records progress, and exports an authorized outreach queue. Publish, follow, like, comment, or send actions stay confirmation-based.</div>
+      </div>
     </div>
     <div class="daily-plan-list" id="daily-plan-list">
       <div class="head">
         <div>
-          <b>Today's FB/INS List</b>
+          <b>Today's Verified Follow-up List</b>
           <span id="daily-plan-list-meta"></span>
         </div>
-        <button class="btn green" type="button" onclick="loadDailyOutreachPlan()">Load All Into Queue</button>
+        <button class="btn green" type="button" onclick="loadDailyOutreachPlan()">Load Serial Queue</button>
       </div>
       <div class="rows" id="daily-plan-list-rows"></div>
     </div>
     <div class="automation-actions">
       <button class="automation-btn linkedin" type="button" onclick="startAutomation('li')">
         <strong>LINKEDIN</strong>
-        <span>Start profile outreach queue, prioritize T1 decision makers, and prepare connection/message tasks.</span>
+        <span>Prepare profile outreach queue, prioritize T1 decision makers, and copy connection/message drafts.</span>
       </button>
       <button class="automation-btn facebook" type="button" onclick="startAutomation('fb')">
         <strong>FACEBOOK</strong>
-        <span>Start group/page engagement queue, record posts/comments, and track completed development actions.</span>
+        <span>Prepare group/page development queue, open targets, copy drafts, and track progress.</span>
       </button>
       <button class="automation-btn instagram" type="button" onclick="startAutomation('ins')">
         <strong>INS</strong>
-        <span>Start DM development queue, focus on replied/sent accounts, and create follow-up actions.</span>
+        <span>Prepare DM development queue, focus on replied/sent accounts, and create follow-up actions.</span>
       </button>
     </div>
     <div class="automation-grid">
@@ -295,6 +311,7 @@ tr.contact-row:hover .row-actions{display:inline-flex}
           <span class="automation-status" id="automation-status">Idle</span>
         </h3>
         <div class="progress-line"><span id="automation-progress"></span></div>
+        <div class="current-lead-card" id="current-lead-card"></div>
         <div id="automation-tasks"></div>
       </div>
       <div class="automation-card">
@@ -381,6 +398,13 @@ tr.contact-row:hover .row-actions{display:inline-flex}
         <select class="filter-select" id="country-filter" onchange="renderTable()"></select>
         <select class="filter-select" id="market-filter" onchange="renderTable()"></select>
         <select class="filter-select" id="industry-filter" onchange="renderTable()"></select>
+        <select class="filter-select" id="fit-filter" onchange="renderTable()">
+          <option value="all">All ICP fit</option>
+          <option value="A">A fit</option>
+          <option value="B">B fit</option>
+          <option value="C">C fit</option>
+          <option value="D">D fit / exclude</option>
+        </select>
         <select class="filter-select" id="source-filter" onchange="renderTable()"></select>
         <select class="filter-select" id="touch-filter" onchange="renderTable()">
           <option value="all">All touch states</option>
@@ -408,8 +432,8 @@ tr.contact-row:hover .row-actions{display:inline-flex}
 
 <div class="footer" id="system-footer">Customer Automated Development System</div>
 
-<script src="./country-market-data.js"></script>
-<script src="./daily-outreach-tasks.js"></script>
+<script src="./country-market-data.js?v=20260604-icp-fit"></script>
+<script src="./daily-outreach-tasks.js?v=20260605-followup-data-fix"></script>
 <script>
 // === UTILS ===
 const TIER1_KEYS=['CEO','President','Founder','Owner','Managing Director','VP','Vice President','Head','Director','Chief'];
@@ -658,6 +682,8 @@ STATIC_INS_RECORDS.forEach(r => {
     tier: 't3',
     source: 'instagram',
     category: '',
+    instagramAccount: String(r.account||''),
+    socialPlatforms: ['fb','ins'],
     industry: guessIndustry(c),
     region: guessRegion(c),
     date: String(r.date||'')
@@ -675,6 +701,8 @@ if(window.DAILY_OUTREACH_TASKS && Array.isArray(window.DAILY_OUTREACH_TASKS.task
       tier: String(task.tier||'T3').toLowerCase(),
       source: 'daily-plan',
       category: 'daily-outreach',
+      instagramAccount: platform==='ins'?String(task.name||''):'',
+      socialPlatforms: ['fb','ins'],
       industry: platform==='fb'?'Social Engagement':guessIndustry({company:task.company,role:task.role,category:'instagram'}),
       region: guessRegion({company:task.company,role:task.role,name:task.name}),
       date: String(task.date||''),
@@ -693,6 +721,7 @@ if(window.DAILY_OUTREACH_TASKS && Array.isArray(window.DAILY_OUTREACH_TASKS.task
 }
 applySavedStatusChanges(allRecords);
 for(let i=0;i<allRecords.length;i++) allRecords[i] = allRecords[i].source==='daily-plan'?{...enrichMarket(allRecords[i]),country:allRecords[i].country||enrichMarket(allRecords[i]).country,countryEn:allRecords[i].countryEn||enrichMarket(allRecords[i]).countryEn,marketScore:allRecords[i].marketScore||enrichMarket(allRecords[i]).marketScore,marketTier:allRecords[i].marketTier||enrichMarket(allRecords[i]).marketTier,marketStatus:allRecords[i].marketStatus||enrichMarket(allRecords[i]).marketStatus}:enrichMarket(allRecords[i]);
+for(let i=0;i<allRecords.length;i++) allRecords[i] = attachCustomerFit(allRecords[i]);
 
 // === COMPUTED ===
 const liR = allRecords.filter(r=>r.platform==='li');
@@ -710,6 +739,41 @@ const t2All = allRecords.filter(r=>r.tier==='t2');
 function findRecord(recordLike){
   const key = recordKey(recordLike);
   return allRecords.find(record=>recordKey(record)===key);
+}
+function textBlob(record){return String([record.name,record.company,record.role,record.category,record.industry,record.source].join(' ')).toLowerCase()}
+function attachCustomerFit(record){
+  const text = textBlob(record);
+  let score = 20;
+  const reasons = [];
+  const goodSignals = [
+    ['retail / store / marketplace', /\b(retail|store|shop|marketplace|buyer|merchandis|category|purchasing|procurement|sourcing)\b/],
+    ['outdoor / camping / RV', /\b(outdoor|camp|camping|hiking|trail|backpack|rv|caravan|overland|fishing|hunting|sporting|gear)\b/],
+    ['distributor / wholesale / importer', /\b(distribut|wholesale|import|dealer|reseller|supplier)\b/],
+    ['known reply/contact signal', /\b(replied|email|whatsapp|wechat|requested|buyer|contact)\b/],
+    ['brand/verified/followers signal', /\b(verified|followers|largest|retailer|b corp|co-op)\b/]
+  ];
+  const badSignals = [
+    ['government/economic development', /\b(government|economic development|office of outdoor recreation|department|authority|municipal|public sector)\b/],
+    ['nonprofit/education/association', /\b(university|school|institute|foundation|conservation|association|501|community|nonprofit)\b/],
+    ['HR/design/marketing-only role', /\b(human resources|talent|designer|design director|creative director|brand marketing|community marketing|event associate)\b/],
+    ['agency/consulting/media', /\b(agency|consulting|media|advertising|billboard|marketing agency)\b/],
+    ['generic social group/page', /\b(enthusiasts|stories|life|lovers|family|explorers|community|group|hub)\b/]
+  ];
+  goodSignals.forEach(([label,regex])=>{if(regex.test(text)){score+=16;reasons.push(label)}});
+  badSignals.forEach(([label,regex])=>{if(regex.test(text)){score-=28;reasons.push('exclude: '+label)}});
+  if(record.tier==='t1')score+=8;
+  if(record.tier==='t2')score+=14;
+  if(record.marketTier==='重点')score+=8;
+  if(record.marketStatus==='独代占用')score-=20;
+  if(record.country==='Unknown')score-=10;
+  if(record.platform==='ins' && record.instagramAccount)score+=10;
+  if(record.status==='Rejected'||record.status==='Failed'||record.status==='Excluded')score-=35;
+  score=Math.max(0,Math.min(100,score));
+  const fitTier = score>=72?'A':score>=55?'B':score>=40?'C':'D';
+  return {...record,fitScore:score,fitTier,fitReasons:reasons.join('; ')};
+}
+function isQualifiedLead(record){
+  return record && record.fitScore>=55 && !String(record.fitReasons||'').includes('exclude: government/economic development') && !String(record.fitReasons||'').includes('exclude: nonprofit/education/association') && !String(record.fitReasons||'').includes('exclude: HR/design/marketing-only role');
 }
 function latestDataDate(){
   const dates = [];
@@ -772,8 +836,12 @@ function sanitizeVisibleText(root=document.body){
 const AUTO_KEY = 'customer_development_automation_v18';
 const AUTOMATION_GATEWAY = 'http://127.0.0.1:28789/api/agent/message';
 const DAILY_PLATFORM_TARGET = 30;
+const SERIAL_QUEUE_VERSION = '20260605-followup-data-fix';
+const AUTO_DEV_DELAY_MS = 90000;
+const AUTO_DEV_BATCH_LIMIT = 8;
 const TASK_STATE = {
   pending: '待触达',
+  opened: '已打开',
   touched: '已触达',
   contact: '已获取联系方式',
   followup: '需跟进',
@@ -797,9 +865,12 @@ const PLATFORM_AUTOMATION = {
   }
 };
 let automationState = loadAutomationState();
+let autoDevTimer = null;
 function loadAutomationState(){
   try{
-    return JSON.parse(localStorage.getItem(AUTO_KEY) || '{"platform":"","status":"Idle","progress":0,"tasks":[],"log":[]}');
+    const state = JSON.parse(localStorage.getItem(AUTO_KEY) || '{"platform":"","status":"Idle","progress":0,"tasks":[],"log":[]}');
+    state.autoRunning = false;
+    return state;
   }catch(e){
     return {platform:'',status:'Idle',progress:0,tasks:[],log:[]};
   }
@@ -809,8 +880,9 @@ function platformName(p){return p==='li'?'LINKEDIN':p==='fb'?'FACEBOOK':p==='ins
 function platformRecords(p){return p==='li'?liR:p==='fb'?fbR:insR}
 function scoreLead(r){
   let score=0;
-  if(r.tier==='t1')score+=50;
-  if(r.tier==='t2')score+=25;
+  score += r.fitScore || 0;
+  if(r.tier==='t1')score+=18;
+  if(r.tier==='t2')score+=28;
   if(['Accepted','Replied'].includes(r.status))score+=35;
   if(['Pending','Sent','0 out of 6','2 out of 6'].includes(r.status))score+=15;
   if(r.company)score+=8;
@@ -820,12 +892,28 @@ function scoreLead(r){
   if(r.marketTier==='重点')score+=18;
   if(r.marketStatus==='独代占用')score-=35;
   if(r.country==='Unknown')score-=8;
+  if(!isQualifiedLead(r))score-=80;
+  return score;
+}
+function customerPriorityScore(r){
+  let score = scoreLead(r);
+  const status = String(r.status||'').toLowerCase();
+  const role = String(r.role||'').toLowerCase();
+  const company = String(r.company||'').toLowerCase();
+  if(status.includes('replied') || status.includes('accepted')) score += 45;
+  if(status.includes('sent')) score += 18;
+  if(/buyer|buying|category|procurement|sourcing|merchandis|owner|founder|ceo|director|vp|head/.test(role)) score += 24;
+  if(/retail|store|shop|outdoor|camping|rv|caravan|distributor|wholesale|supplier|gear/.test(company+' '+role)) score += 22;
+  if(r.platform==='ins' && instagramHandle(r)) score += 12;
+  if(r.platform==='fb') score += 6;
+  if(String(r.country||'')==='Unknown') score -= 16;
+  if(String(r.marketStatus||'').includes('独代')) score -= 50;
   return score;
 }
 function buildAutomationQueue(platform){
   const list = platformRecords(platform)
-    .filter(r=>r && r.name)
-    .map(r=>({...r,autoScore:scoreLead(r)}))
+    .filter(r=>r && r.name && isQualifiedLead(r))
+    .map(r=>({...r,autoScore:customerPriorityScore(r)}))
     .sort((a,b)=>b.autoScore-a.autoScore || String(a.company).localeCompare(String(b.company)))
     .slice(0,DAILY_PLATFORM_TARGET);
   return list.map((r,i)=>({
@@ -842,6 +930,10 @@ function buildAutomationQueue(platform){
     marketScore: r.marketScore,
     marketTier: r.marketTier,
     marketStatus: r.marketStatus,
+    fitScore: r.fitScore,
+    fitTier: r.fitTier,
+    fitReasons: r.fitReasons,
+    autoScore: r.autoScore,
     platform,
     action: platform==='li'
       ? (r.status==='Accepted'?'Ask for WhatsApp, WeChat, or email and schedule a call':'Open profile and request a short partnership call')
@@ -939,21 +1031,247 @@ function openAcquisitionBrowserFallback(url, config){
   if(!opened && config) window.location.href = config.fallbackLoginUrl;
   return Promise.resolve(Boolean(opened));
 }
+function cleanSearchParts(record){
+  const values = record && record.platform === 'fb'
+    ? [record.verifiedFacebookName || record.company]
+    : [record.company, record.name];
+  return values
+    .map(value=>String(value||'').replace(/\([^)]*\)/g,'').replace(/\b(US|UK|AU|NZ|Canada|United States|United Kingdom)\b/gi,'').trim())
+    .filter(Boolean);
+}
+function instagramHandle(record){
+  const source = String(record.source || '').toLowerCase();
+  const verified = record.verifiedPlatform === 'instagram' || source === 'instagram';
+  const raw = String(record.instagramAccount || (record.platform==='ins' && verified ? record.name : '') || '').trim().replace(/^@/,'');
+  return /^[a-zA-Z0-9._]{2,30}$/.test(raw) ? raw : '';
+}
 function platformSearchUrl(task){
-  const query = encodeURIComponent([task.company, task.name, task.country].filter(Boolean).join(' '));
-  if(task.platform==='fb') return 'https://www.facebook.com/search/top/?q='+query;
-  if(task.platform==='ins') return 'https://www.instagram.com/explore/search/keyword/?q='+query;
+  const query = encodeURIComponent(cleanSearchParts(task).join(' '));
+  if(task.platform==='fb'){
+    if(task.facebookUrl) return task.facebookUrl;
+    return 'https://www.facebook.com/search/pages/?q='+query;
+  }
+  if(task.platform==='ins'){
+    const handle = instagramHandle(task);
+    return handle ? 'https://www.instagram.com/'+encodeURIComponent(handle)+'/' : 'https://www.instagram.com/explore/search/keyword/?q='+query;
+  }
   return PLATFORM_AUTOMATION.li.browserUrl;
+}
+function draftOutreachMessage(task){
+  const company = task.company || task.name || 'your team';
+  const market = task.country && task.country !== 'Unknown' ? ' in '+task.country : '';
+  const followup = task.followupMode || ['Replied','Sent'].includes(task.status);
+  const angle = followup
+    ? 'Following up from our previous touchpoint on your verified Instagram account'
+    : task.platform==='fb'
+    ? 'I found your Facebook page/group while mapping outdoor retail and distribution partners'
+    : 'I found your Instagram account while mapping outdoor retail and camping gear partners';
+  return [
+    'Hi '+(task.name||company)+',',
+    '',
+    angle+market+'. Flextail / Vollyc builds compact outdoor power and camping gear for retailers, distributors, and RV/outdoor customers.',
+    '',
+    followup
+      ? 'Could you share the best buyer or partnership contact so I can send the product and margin summary to the right person? WhatsApp, WeChat, or email is perfect.'
+      : 'Would you be open to sharing the best buyer or partnership contact? WhatsApp, WeChat, or email is perfect. I can also send a short product and margin summary first.',
+    '',
+    'Thanks, David'
+  ].join('\n');
+}
+function openUrlInChrome(url, platform){
+  if(location.hostname==='127.0.0.1' || location.hostname==='localhost'){
+    return fetch('/launch-chrome?platform='+encodeURIComponent(platform||'fb')+'&url='+encodeURIComponent(url))
+      .then(response=>response.ok)
+      .catch(()=>openAcquisitionBrowserFallback(url, PLATFORM_AUTOMATION[platform]));
+  }
+  return openAcquisitionBrowserFallback(url, PLATFORM_AUTOMATION[platform]);
 }
 function openTaskInChrome(task){
   if(!task)return Promise.resolve(false);
-  const url = platformSearchUrl(task);
-  if(location.hostname==='127.0.0.1' || location.hostname==='localhost'){
-    return fetch('/launch-chrome?platform='+encodeURIComponent(task.platform)+'&url='+encodeURIComponent(url))
-      .then(response=>response.ok)
-      .catch(()=>openAcquisitionBrowserFallback(url, PLATFORM_AUTOMATION[task.platform]));
+  if(navigator.clipboard) navigator.clipboard.writeText(draftOutreachMessage(task)).catch(()=>{});
+  return openUrlInChrome(platformSearchUrl(task), task.platform);
+}
+function currentTaskIndex(){
+  if(!automationState.tasks || !automationState.tasks.length) return -1;
+  const saved = Number(automationState.currentIndex||0);
+  if(saved>=0 && saved<automationState.tasks.length && !automationState.tasks[saved].done) return saved;
+  return automationState.tasks.findIndex(task=>!task.done);
+}
+function currentAutomationTask(){
+  const index = currentTaskIndex();
+  return index>=0 ? automationState.tasks[index] : null;
+}
+function updateAutomationProgress(){
+  const tasks = automationState.tasks || [];
+  const done = tasks.filter(t=>t.done || t.state===TASK_STATE.contact).length;
+  automationState.progress = tasks.length ? Math.round(done/tasks.length*100) : 0;
+  automationState.status = tasks.length && done>=tasks.length ? 'Completed' : (tasks.length?'Running':'Idle');
+  automationState.currentIndex = Math.max(0,currentTaskIndex());
+}
+function openCurrentAutomationTask(){
+  const task = currentAutomationTask();
+  if(!task){
+    showAppToast('No pending customer in the queue');
+    return Promise.resolve(false);
   }
-  return openAcquisitionBrowserFallback(url, PLATFORM_AUTOMATION[task.platform]);
+  const now = new Date().toLocaleString();
+  automationState.currentIndex = currentTaskIndex();
+  automationState.log = [{time:now,text:'Opened current lead: '+task.name+' | '+task.company+' | '+task.platform.toUpperCase()},...automationState.log].slice(0,30);
+  saveAutomationState();
+  renderAutomation();
+  showAppToast('Opening one Chrome window and copying message for '+task.name);
+  return openTaskInChrome(task);
+}
+function completeCurrentAndNext(){
+  const index = currentTaskIndex();
+  if(index<0){
+    showAppToast('Today queue is complete');
+    return;
+  }
+  const now = new Date().toLocaleString();
+  const task = automationState.tasks[index];
+  saveActivityChange(task,{status:TASK_STATE.touched,lastTouch:now,activityState:TASK_STATE.touched});
+  automationState.tasks[index] = {...task,done:true,state:TASK_STATE.touched,lastTouch:now};
+  automationState.currentIndex = automationState.tasks.findIndex((t,i)=>i>index && !t.done);
+  if(automationState.currentIndex<0) automationState.currentIndex = automationState.tasks.findIndex(t=>!t.done);
+  updateAutomationProgress();
+  automationState.log = [{time:now,text:'Completed '+task.name+' and moved to next lead'},...automationState.log].slice(0,30);
+  saveAutomationState();
+  renderTable();
+  renderAutomation();
+  if(automationState.status!=='Completed') openCurrentAutomationTask();
+}
+function startAutoDevelopment(limit){
+  const task = currentAutomationTask();
+  if(!task){
+    showAppToast('No pending customer in the queue');
+    return;
+  }
+  clearTimeout(autoDevTimer);
+  automationState.autoRunning = true;
+  automationState.autoBatchLimit = Number(limit || AUTO_DEV_BATCH_LIMIT);
+  automationState.autoBatchDone = 0;
+  automationState.autoDelayMs = AUTO_DEV_DELAY_MS;
+  automationState.log = [{time:new Date().toLocaleString(),text:'Auto prepare started: opens one lead, copies the message, and records prepared state every '+Math.round(AUTO_DEV_DELAY_MS/1000)+'s; batch limit '+automationState.autoBatchLimit},...automationState.log].slice(0,30);
+  saveAutomationState();
+  renderAutomation();
+  runAutoDevelopmentStep();
+}
+function startFullPrepareQueue(){
+  const remaining = (automationState.tasks || []).filter(task=>!task.done).length;
+  if(!remaining){
+    showAppToast('No pending customer in the queue');
+    return;
+  }
+  startAutoDevelopment(remaining);
+}
+function exportAutomationDrafts(){
+  const tasks = automationState.tasks || [];
+  if(!tasks.length){
+    showAppToast('Load the outreach queue first');
+    return;
+  }
+  const columns = ['rank','platform','name','company','country','marketScore','marketTier','fitScore','fitTier','priorityScore','url','state','draftMessage'];
+  const csvEscape = value => '"' + String(value ?? '').replace(/"/g,'""') + '"';
+  const rows = tasks.map((task,index)=>({
+    rank:index+1,
+    platform:task.platform,
+    name:task.name,
+    company:task.company,
+    country:task.country,
+    marketScore:task.marketScore,
+    marketTier:task.marketTier,
+    fitScore:task.fitScore,
+    fitTier:task.fitTier,
+    priorityScore:task.autoScore || customerPriorityScore(task),
+    url:platformSearchUrl(task),
+    state:task.state || TASK_STATE.pending,
+    draftMessage:draftOutreachMessage(task)
+  }));
+  const csv = [columns.join(','), ...rows.map(row=>columns.map(column=>csvEscape(row[column])).join(','))].join('\n');
+  const blob = new Blob([csv],{type:'text/csv;charset=utf-8'});
+  const url = URL.createObjectURL(blob);
+  const link = document.createElement('a');
+  link.href = url;
+  link.download = 'authorized-outreach-drafts-'+new Date().toISOString().slice(0,10)+'.csv';
+  document.body.appendChild(link);
+  link.click();
+  link.remove();
+  URL.revokeObjectURL(url);
+  automationState.log = [{time:new Date().toLocaleString(),text:'Exported authorized outreach draft queue: '+rows.length+' contacts'},...automationState.log].slice(0,30);
+  saveAutomationState();
+  renderAutomation();
+}
+function pauseAutoDevelopment(reason){
+  clearTimeout(autoDevTimer);
+  automationState.autoRunning = false;
+  automationState.log = [{time:new Date().toLocaleString(),text:reason || 'Auto development paused'},...automationState.log].slice(0,30);
+  saveAutomationState();
+  renderAutomation();
+  showAppToast(reason || 'Auto development paused');
+}
+function runAutoDevelopmentStep(){
+  if(!automationState.autoRunning)return;
+  const index = currentTaskIndex();
+  if(index<0){
+    pauseAutoDevelopment('Today prepare queue completed');
+    return;
+  }
+  const task = automationState.tasks[index];
+  const now = new Date().toLocaleString();
+  automationState.currentIndex = index;
+  openTaskInChrome(task);
+  saveActivityChange(task,{status:TASK_STATE.opened,lastTouch:now,activityState:TASK_STATE.opened});
+  automationState.tasks[index] = {...task,done:true,state:TASK_STATE.opened,lastTouch:now};
+  automationState.autoBatchDone = Number(automationState.autoBatchDone || 0) + 1;
+  automationState.currentIndex = automationState.tasks.findIndex((t,i)=>i>index && !t.done);
+  if(automationState.currentIndex<0) automationState.currentIndex = automationState.tasks.findIndex(t=>!t.done);
+  updateAutomationProgress();
+  automationState.log = [{time:now,text:'Auto prepared, not sent: '+task.name+' | '+task.company+' | '+task.platform.toUpperCase()},...automationState.log].slice(0,30);
+  saveAutomationState();
+  renderTable();
+  renderAutomation();
+  if(automationState.status==='Completed'){
+    pauseAutoDevelopment('Today prepare queue completed');
+    return;
+  }
+  if(Number(automationState.autoBatchDone || 0) >= Number(automationState.autoBatchLimit || AUTO_DEV_BATCH_LIMIT)){
+    pauseAutoDevelopment('Auto prepare batch complete: '+automationState.autoBatchDone+' leads opened and messages copied');
+    return;
+  }
+  autoDevTimer = setTimeout(runAutoDevelopmentStep, Number(automationState.autoDelayMs || AUTO_DEV_DELAY_MS));
+}
+function skipCurrentAndNext(){
+  const index = currentTaskIndex();
+  if(index<0)return;
+  const now = new Date().toLocaleString();
+  const task = automationState.tasks[index];
+  automationState.tasks[index] = {...task,done:true,state:'已跳过',lastTouch:task.lastTouch||''};
+  automationState.currentIndex = automationState.tasks.findIndex((t,i)=>i>index && !t.done);
+  updateAutomationProgress();
+  automationState.log = [{time:now,text:'Skipped low-confidence lead '+task.name},...automationState.log].slice(0,30);
+  saveAutomationState();
+  renderAutomation();
+  if(automationState.status!=='Completed') openCurrentAutomationTask();
+}
+function socialSearchTargets(record){
+  const query = encodeURIComponent(cleanSearchParts(record).join(' '));
+  if(record.platform==='li') return [{platform:'li',url:'https://www.linkedin.com/search/results/people/?keywords='+query}];
+  const targets = [{platform:'fb',url:'https://www.facebook.com/search/top/?q='+query}];
+  const handle = instagramHandle(record);
+  targets.push({platform:'ins',url:handle?'https://www.instagram.com/'+encodeURIComponent(handle)+'/':'https://www.instagram.com/explore/search/keyword/?q='+query});
+  return targets;
+}
+function openSocialDevelopment(record, actionType){
+  if(!record)return;
+  const now = new Date().toLocaleString();
+  socialSearchTargets(record).forEach(target=>openUrlInChrome(target.url,target.platform));
+  if(actionType==='dm'||actionType==='touch'){
+    saveActivityChange(record,{status:TASK_STATE.touched,lastTouch:now,activityState:TASK_STATE.touched});
+    logAction(record.name+' - opened '+socialSearchTargets(record).map(t=>t.platform.toUpperCase()).join('+')+' development pages');
+    renderTable();
+  }
+  showAppToast('Opened Chrome for '+record.name+' social development');
 }
 function buildAcquisitionPrompt(platform,tasks){
   const config = PLATFORM_AUTOMATION[platform] || PLATFORM_AUTOMATION.ins;
@@ -990,21 +1308,7 @@ function sendAutomationToAgent(platform,tasks){
   });
 }
 function launchCustomerAcquisition(platform,tasks){
-  if(window.customerDev && window.customerDev.launchPlatformAcquisition){
-    window.customerDev.launchPlatformAcquisition({platform,externalBrowser:true}).then(result=>{
-      if(result && result.needsCredential){
-        showAppToast(platformName(platform)+' credential missing');
-        savePlatformCredential(platform);
-      }else{
-        showAppToast(platformName(platform)+' login browser started');
-      }
-      refreshCredentialStatus();
-    }).catch(()=>{
-      openAcquisitionBrowser(platform);
-    });
-  }else{
-    openAcquisitionBrowser(platform);
-  }
+  openCurrentAutomationTask();
   sendAutomationToAgent(platform,tasks);
 }
 function startAutomation(platform){
@@ -1013,6 +1317,8 @@ function startAutomation(platform){
     platform,
     status:'Running',
     progress:tasks.length?Math.round(tasks.filter(t=>t.done).length/tasks.length*100):0,
+    currentIndex:0,
+    serialModeVersion:SERIAL_QUEUE_VERSION,
     tasks,
     log:[
       {time:new Date().toLocaleString(),text:platformName(platform)+' automation started with '+tasks.length+' prioritized contacts'},
@@ -1046,9 +1352,21 @@ function normalizeDailyTask(task){
     marketScore: task.marketScore || 0,
     marketTier: task.marketTier || 'Unknown',
     marketStatus: task.marketStatus || '可开拓',
+    fitScore: task.fitScore || 0,
+    fitTier: task.fitTier || '',
+    fitReasons: task.fitReasons || '',
     platform,
     priority: task.priority,
+    autoScore: task.autoScore || 0,
     source: task.source || 'daily-plan',
+    followupMode: Boolean(task.followupMode),
+    verifiedPlatform: task.verifiedPlatform || '',
+    facebookStatus: task.facebookStatus || '',
+    facebookUrl: task.facebookUrl || '',
+    verifiedFacebookName: task.verifiedFacebookName || '',
+    lastKnownTouch: task.lastKnownTouch || '',
+    instagramAccount: platform==='ins' && (task.verifiedPlatform==='instagram' || task.source==='instagram') ? String(task.name||'') : '',
+    socialPlatforms: platform==='ins' ? ['ins'] : ['fb'],
     action: task.action || (platform==='fb'?'Facebook outreach and buyer contact capture':'Instagram DM follow-up and contact capture')
   };
 }
@@ -1058,7 +1376,7 @@ function renderDailyPlanStrip(){
   if(!strip || !plan || !Array.isArray(plan.tasks) || !plan.tasks.length)return;
   const fbCount = plan.tasks.filter(task=>String(task.platform||'').toLowerCase().includes('facebook')).length;
   const insCount = plan.tasks.filter(task=>String(task.platform||'').toLowerCase().includes('instagram')).length;
-  document.getElementById('daily-plan-title').textContent = 'Today FB/INS Outreach Plan';
+  document.getElementById('daily-plan-title').textContent = fbCount ? 'Today Social Follow-up Plan' : 'Today Instagram Follow-up Plan';
   document.getElementById('daily-plan-meta').textContent = (plan.strategy||'Prioritize Facebook and Instagram')+' · Facebook '+fbCount+' · Instagram '+insCount+' · '+plan.total+' total';
   strip.style.display = 'flex';
 }
@@ -1087,16 +1405,22 @@ function loadDailyOutreachPlan(options){
   const opts = options || {};
   const plan = dailyOutreachPlan();
   if(!plan || !Array.isArray(plan.tasks) || !plan.tasks.length)return false;
-  if(opts.auto && automationState.tasks && automationState.tasks.length)return false;
-  const tasks = plan.tasks.map(normalizeDailyTask);
+  if(opts.auto && automationState.tasks && automationState.tasks.length && automationState.serialModeVersion===SERIAL_QUEUE_VERSION && automationState.importedPlan===plan.generatedAt)return false;
+  const tasks = plan.tasks.map(normalizeDailyTask)
+    .map(attachCustomerFit)
+    .filter(isQualifiedLead)
+    .map(task=>({...task,autoScore:customerPriorityScore(task)}))
+    .sort((a,b)=>b.autoScore-a.autoScore || (a.priority||99)-(b.priority||99) || String(a.company).localeCompare(String(b.company)));
   automationState = {
     platform:'social',
     status:'Running',
     progress:0,
+    currentIndex:0,
+    serialModeVersion:SERIAL_QUEUE_VERSION,
     importedPlan: plan.generatedAt || new Date().toISOString(),
     tasks,
     log:[
-      {time:new Date().toLocaleString(),text:'Imported FB/INS daily outreach plan with '+tasks.length+' prioritized tasks'},
+      {time:new Date().toLocaleString(),text:'Imported verified follow-up plan with '+tasks.length+' Instagram tasks'},
       {time:new Date().toLocaleString(),text:plan.strategy || 'LinkedIn limited; prioritize Facebook and Instagram'},
       ...automationState.log
     ].slice(0,30)
@@ -1108,9 +1432,8 @@ function loadDailyOutreachPlan(options){
   syncFilterTabs();
   renderTable();
   renderAutomation();
-  openAcquisitionBrowser('fb');
-  openAcquisitionBrowser('ins');
-  showAppToast('FB/INS daily plan loaded: '+tasks.length+' tasks');
+  openCurrentAutomationTask();
+  showAppToast('Verified follow-up queue loaded: '+tasks.length+' tasks');
   return true;
 }
 function completeAutomationTask(id){
@@ -1157,6 +1480,7 @@ function markAutomationFollowup(id){
   renderAutomation();
 }
 function resetAutomation(){
+  clearTimeout(autoDevTimer);
   automationState={platform:'',status:'Idle',progress:0,tasks:[],log:[{time:new Date().toLocaleString(),text:'Workflow reset'}]};
   saveAutomationState();
   renderAutomation();
@@ -1166,17 +1490,49 @@ function renderAutomation(){
   const status=document.getElementById('automation-status');
   const progress=document.getElementById('automation-progress');
   const tasks=document.getElementById('automation-tasks');
+  const currentCard=document.getElementById('current-lead-card');
   const log=document.getElementById('automation-log');
   const count=document.getElementById('automation-count');
   if(!title)return;
+  updateAutomationProgress();
   const done=automationState.tasks.filter(t=>t.done).length;
   title.textContent=automationState.platform?platformName(automationState.platform)+' automation queue':'Ready to start';
   status.textContent=automationState.status;
   status.className='automation-status '+(automationState.status==='Running'?'running':automationState.status==='Idle'?'':'paused');
   progress.style.width=(automationState.progress||0)+'%';
   count.textContent=done+' / '+automationState.tasks.length+' done';
+  const current = currentAutomationTask();
+  if(currentCard){
+    if(current){
+      const draft = draftOutreachMessage(current);
+      currentCard.className='current-lead-card active';
+      currentCard.innerHTML =
+        '<div class="current-lead-top"><div><div class="current-lead-title">'+esc(current.name)+'</div>'
+        + '<div class="current-lead-sub">'+esc(current.company)+' · '+esc(current.country)+' · '+esc(current.platform.toUpperCase())+' · priority '+esc(current.priority||'-')+'</div>'
+        + '<div class="current-lead-sub">'+esc(current.role||current.action||'')+'</div></div>'
+        + '<div class="current-lead-actions">'
+        + '<button class="btn green" type="button" onclick="startAutoDevelopment()">'+(automationState.autoRunning?'Auto Prepare On':'Start Auto Prepare')+'</button>'
+        + '<button class="btn green" type="button" onclick="startFullPrepareQueue()">Run Full Prepare Queue</button>'
+        + '<button class="btn" type="button" onclick="exportAutomationDrafts()">Export Drafts</button>'
+        + '<button class="btn" type="button" onclick="pauseAutoDevelopment()">Pause</button>'
+        + '<button class="btn '+current.platform+'" type="button" onclick="openCurrentAutomationTask()">Open Current</button>'
+        + '<button class="btn primary" type="button" onclick="completeCurrentAndNext()">Done + Next</button>'
+        + '<button class="btn" type="button" onclick="skipCurrentAndNext()">Skip</button>'
+        + '</div></div>'
+        + '<div class="current-lead-msg">'+esc(draft)+'</div>'
+        + '<div class="current-lead-score">'
+        + badge(current.fitTier==='A'||current.fitTier==='B'?'accepted':'sent','ICP '+(current.fitTier||'-')+' '+(current.fitScore||0))
+        + badge(current.marketTier==='重点'?'accepted':'sent','Market '+(current.marketScore||0)+' '+current.marketTier)
+        + badge(current.platform,current.platform.toUpperCase())
+        + badge('sent','Score '+(current.autoScore||0))
+        + '</div>';
+    }else{
+      currentCard.className='current-lead-card';
+      currentCard.innerHTML='';
+    }
+  }
   tasks.innerHTML=automationState.tasks.length?automationState.tasks.map((t,i)=>
-    '<div class="automation-task"><div class="num">'+(i+1)+'</div><div><b>'+esc(t.name)+'</b><div class="meta">'+esc(t.company)+' - '+esc(t.tier)+' - '+esc(t.action)+'</div><div class="meta">'+esc(t.state||TASK_STATE.pending)+(t.contact?' - '+esc(t.contact):'')+'</div></div><div style="display:flex;gap:4px;flex-wrap:wrap;justify-content:flex-end"><button class="btn '+t.platform+'" type="button" '+(t.done?'disabled':'onclick="completeAutomationTask(&quot;'+esc(t.id)+'&quot;)"')+'>Touch</button><button class="btn" type="button" onclick="recordAutomationContact(&quot;'+esc(t.id)+'&quot;)">Contact</button><button class="btn" type="button" onclick="markAutomationFollowup(&quot;'+esc(t.id)+'&quot;)">Follow</button></div></div>'
+    '<div class="automation-task" style="'+(current&&current.id===t.id?'background:rgba(88,166,255,.08);border-radius:6px;padding-left:6px;padding-right:6px':'')+'"><div class="num">'+(i+1)+'</div><div><b>'+esc(t.name)+'</b><div class="meta">'+esc(t.company)+' - '+esc(t.tier)+' - '+esc(t.action)+'</div><div class="meta">'+esc(t.state||TASK_STATE.pending)+(t.contact?' - '+esc(t.contact):'')+'</div></div><div style="display:flex;gap:4px;flex-wrap:wrap;justify-content:flex-end"><button class="btn '+t.platform+'" type="button" '+(t.done?'disabled':'onclick="automationState.currentIndex='+i+';saveAutomationState();openCurrentAutomationTask()"')+'>Open</button><button class="btn primary" type="button" '+(t.done?'disabled':'onclick="automationState.currentIndex='+i+';saveAutomationState();completeCurrentAndNext()"')+'>Done</button><button class="btn" type="button" onclick="recordAutomationContact(&quot;'+esc(t.id)+'&quot;)">Contact</button><button class="btn" type="button" onclick="markAutomationFollowup(&quot;'+esc(t.id)+'&quot;)">Follow</button></div></div>'
   ).join(''):'<div style="color:var(--muted);font-size:11px;line-height:1.6">Click LINKEDIN, FACEBOOK, or INS to generate a customer development workflow.</div>';
   log.innerHTML=automationState.log.length?automationState.log.map(item=>'<div><b>'+esc(item.time)+'</b><br>'+esc(item.text)+'</div>').join(''):'<div>No automation activity yet.</div>';
   sanitizeVisibleText(document.getElementById('automation-app'));
@@ -1334,6 +1690,7 @@ const tableColumns=[
   {key:'marketScore',label:'Market'},
   {key:'industry',label:'Industry'},
   {key:'tier',label:'Tier'},
+  {key:'fitScore',label:'ICP Fit'},
   {key:'status',label:'Status'},
   {key:'lastTouch',label:'Last Touch'},
   {key:'contact',label:'Contact'},
@@ -1356,7 +1713,7 @@ function populateListFilters(){
   populateSelect('source-filter','All sources',allRecords.map(r=>r.source));
 }
 function resetListFilters(){
-  ['country-filter','market-filter','industry-filter','source-filter','touch-filter'].forEach(id=>{const el=document.getElementById(id);if(el)el.value='all'});
+  ['country-filter','market-filter','industry-filter','fit-filter','source-filter','touch-filter'].forEach(id=>{const el=document.getElementById(id);if(el)el.value='all'});
   sortState={key:'marketScore',dir:'desc'};
   renderTable();
 }
@@ -1367,6 +1724,7 @@ function getFilterValue(id){
 function recordSortValue(record,key){
   if(key==='index')return 0;
   if(key==='marketScore')return Number(record.marketScore||0);
+  if(key==='fitScore')return Number(record.fitScore||0);
   if(key==='tier')return ({t1:3,t2:2,t3:1}[record.tier]||0);
   if(key==='lastTouch')return new Date(record.lastTouch||record.date||0).getTime()||0;
   return String(record[key]||'').toLowerCase();
@@ -1417,11 +1775,13 @@ function getFiltered(){
   const countryFilter=getFilterValue('country-filter');
   const marketFilter=getFilterValue('market-filter');
   const industryFilter=getFilterValue('industry-filter');
+  const fitFilter=getFilterValue('fit-filter');
   const sourceFilter=getFilterValue('source-filter');
   const touchFilter=getFilterValue('touch-filter');
   if(countryFilter!=='all')list=list.filter(r=>r.country===countryFilter);
   if(marketFilter!=='all')list=list.filter(r=>r.marketTier===marketFilter);
   if(industryFilter!=='all')list=list.filter(r=>r.industry===industryFilter);
+  if(fitFilter!=='all')list=list.filter(r=>r.fitTier===fitFilter);
   if(sourceFilter!=='all')list=list.filter(r=>r.source===sourceFilter);
   if(touchFilter==='untouched')list=list.filter(r=>!r.lastTouch&&!r.contact&&!r.followUpAt);
   if(touchFilter==='touched')list=list.filter(r=>!!r.lastTouch);
@@ -1436,8 +1796,8 @@ function renderTable(){
   renderTableHead();
   const list=getFiltered();
   document.getElementById('table-body').innerHTML=list.length?list.map((r,i)=>
-    '<tr class="contact-row" data-name="'+esc(r.name)+'" data-company="'+esc(r.company)+'" data-platform="'+r.platform+'" data-status="'+esc(r.status)+'" onclick="openContactActions(this)"><td>'+(i+1)+'</td><td>'+esc(r.name)+'<span class="row-actions"><button class="row-action-btn" onclick="event.stopPropagation();quickAction(\'dm\',this.parentElement.parentElement)">DM</button><button class="row-action-btn" onclick="event.stopPropagation();quickAction(\'email\',this.parentElement.parentElement)">Email</button><button class="row-action-btn" onclick="event.stopPropagation();quickAction(\'status\',this.parentElement.parentElement)">Status</button></span></td><td>'+esc(r.company)+'</td><td title="'+esc(r.role)+'">'+esc((r.role||'').substring(0,40))+'</td><td>'+esc(r.country)+'</td><td>'+badge(r.marketStatus==='独代占用'?'excluded':(r.marketTier==='重点'?'accepted':'sent'),(r.marketScore||0)+' '+r.marketTier)+'</td><td>'+esc(r.industry)+'</td><td>'+badge(r.tier,tierLabel(r.tier))+'</td><td>'+badge(String(r.status||'').toLowerCase().replace(/\s+/g,''),r.status)+'</td><td>'+esc(r.lastTouch||r.date||'')+'</td><td>'+esc(r.contact||'')+'</td><td>'+badge(r.platform,r.platform.toUpperCase())+'</td></tr>'
-  ).join(''):'<tr><td colspan="12" style="text-align:center;color:var(--muted);padding:20px">No matches</td></tr>';
+    '<tr class="contact-row" data-name="'+esc(r.name)+'" data-company="'+esc(r.company)+'" data-platform="'+r.platform+'" data-status="'+esc(r.status)+'" onclick="openContactActions(this)"><td>'+(i+1)+'</td><td>'+esc(r.name)+'<span class="row-actions"><button class="row-action-btn" onclick="event.stopPropagation();quickAction(\'dm\',this.parentElement.parentElement)">DM</button><button class="row-action-btn" onclick="event.stopPropagation();quickAction(\'email\',this.parentElement.parentElement)">Email</button><button class="row-action-btn" onclick="event.stopPropagation();quickAction(\'status\',this.parentElement.parentElement)">Status</button></span></td><td>'+esc(r.company)+'</td><td title="'+esc(r.role)+'">'+esc((r.role||'').substring(0,40))+'</td><td>'+esc(r.country)+'</td><td>'+badge(r.marketStatus==='独代占用'?'excluded':(r.marketTier==='重点'?'accepted':'sent'),(r.marketScore||0)+' '+r.marketTier)+'</td><td>'+esc(r.industry)+'</td><td>'+badge(r.tier,tierLabel(r.tier))+'</td><td title="'+esc(r.fitReasons)+'">'+badge(r.fitTier==='A'||r.fitTier==='B'?'accepted':(r.fitTier==='C'?'sent':'rejected'),(r.fitTier||'D')+' '+(r.fitScore||0))+'</td><td>'+badge(String(r.status||'').toLowerCase().replace(/\s+/g,''),r.status)+'</td><td>'+esc(r.lastTouch||r.date||'')+'</td><td>'+esc(r.contact||'')+'</td><td>'+badge(r.platform,r.platform.toUpperCase())+'</td></tr>'
+  ).join(''):'<tr><td colspan="13" style="text-align:center;color:var(--muted);padding:20px">No matches</td></tr>';
   document.getElementById('table-info').textContent='Showing '+list.length+' of '+allRecords.length;
   sanitizeVisibleText(document.querySelector('.section'));
 }
@@ -1484,6 +1844,12 @@ function quickAction(action, tr){
   const msg = action==='dm'
     ? `Send DM to ${name} at ${company} (platform: ${platform}, status: ${status}). Execute now.`
     : `Send follow-up email to ${name} at ${company} (status: ${status}). Execute now.`;
+  const record = findRecord({name,company,platform});
+  if(action==='dm' && record){
+    openSocialDevelopment(record,'dm');
+    if(navigator.clipboard) navigator.clipboard.writeText(msg).catch(()=>{});
+    return;
+  }
   fetch('http://127.0.0.1:28789/api/agent/message',{
     method:'POST',headers:{'Content-Type':'application/json','Authorization':'Bearer '+(window.OPENCLAW_TOKEN||'')},
     body:JSON.stringify({message:msg,source:'outreach-dashboard'})
@@ -1539,10 +1905,10 @@ function openActionPanel(key){
   const sent=records.filter(r=>r.status==='Sent').length;
   actionHtml += '<div class="action-stats"><span>Accepted: <b>'+accepted+'</b></span><span>Replied: <b>'+replied+'</b></span><span>Pending: <b>'+pending+'</b></span><span>Sent: <b>'+sent+'</b></span></div>';
   actionHtml += '<div class="action-btn-group">';
-  if(key==='ins'||key==='total'){actionHtml+='<button class="btn ins" onclick="triggerAutomation(\'ins\',\'dm\')">Send IG DMs</button>'}
-  if(key==='li'||key==='total'){actionHtml+='<button class="btn li" onclick="triggerAutomation(\'li\',\'connect\')">LI Connections</button>'}
-  if(key==='fb'||key==='total'){actionHtml+='<button class="btn fb" onclick="triggerAutomation(\'fb\',\'engage\')">FB Engagement</button>'}
-  if(accepted+replied>0){actionHtml+='<button class="btn primary" onclick="triggerAutomation(\''+key+'\',\'followup\')">Email Follow-ups</button>'}
+  if(key==='ins'||key==='total'){actionHtml+='<button class="btn ins" onclick="triggerAutomation(\'ins\',\'dm\')">Prepare IG DMs</button>'}
+  if(key==='li'||key==='total'){actionHtml+='<button class="btn li" onclick="triggerAutomation(\'li\',\'connect\')">Prepare LI Tasks</button>'}
+  if(key==='fb'||key==='total'){actionHtml+='<button class="btn fb" onclick="triggerAutomation(\'fb\',\'engage\')">Prepare FB Tasks</button>'}
+  if(accepted+replied>0){actionHtml+='<button class="btn primary" onclick="triggerAutomation(\''+key+'\',\'followup\')">Prepare Follow-ups</button>'}
   actionHtml+='<button class="btn" onclick="startAutomation(\''+(key==='total'||key==='positive'||key==='t1'?'ins':key)+'\')">Build Queue</button>';
   actionHtml += '</div></div>';
   
@@ -1576,7 +1942,9 @@ function closeDetail(){
 }
 
 function contactCard(record){
-  return '<div class="d-item" data-name="'+esc(record.name)+'" data-company="'+esc(record.company)+'" data-platform="'+record.platform+'" data-status="'+esc(record.status)+'"><div class="d-name">'+esc(record.name)+'</div><div class="d-sub">'+esc(record.company)+' - '+esc(record.industry)+' - '+esc(record.country)+' - '+esc(record.marketTier)+' '+esc(record.marketScore)+'</div><div class="d-sub" style="margin-top:4px">'+esc(record.role||'No role captured')+'</div><div class="d-status">'+badge(record.status.toLowerCase().replace(/\s+/g,''),record.status)+' '+badge(record.platform,record.platform.toUpperCase())+' '+badge(record.tier,tierLabel(record.tier))+' '+badge(record.marketStatus==='独代占用'?'excluded':'sent',record.marketStatus)+'</div><div class="d-actions"><button class="btn primary" onclick="executeContactAction(this,\'dm\')">DM</button><button class="btn" onclick="executeContactAction(this,\'email\')">Email</button><button class="btn" onclick="showStatusMenu(event,this)">Status</button></div></div>';
+  const socialHint = record.platform==='li' ? 'LinkedIn only' : 'FB + INS compatible search';
+  const handle = instagramHandle(record);
+  return '<div class="d-item" data-name="'+esc(record.name)+'" data-company="'+esc(record.company)+'" data-platform="'+record.platform+'" data-status="'+esc(record.status)+'"><div class="d-name">'+esc(record.name)+'</div><div class="d-sub">'+esc(record.company)+' - '+esc(record.industry)+' - '+esc(record.country)+' - '+esc(record.marketTier)+' '+esc(record.marketScore)+'</div><div class="d-sub" style="margin-top:4px">'+esc(record.role||'No role captured')+'</div><div class="d-sub" style="margin-top:4px">Social: '+esc(socialHint)+(handle?' · INS @'+esc(handle):'')+'</div><div class="d-status">'+badge(String(record.status||'').toLowerCase().replace(/\s+/g,''),record.status)+' '+badge(record.platform,record.platform.toUpperCase())+' '+badge(record.tier,tierLabel(record.tier))+' '+badge(record.marketStatus==='独代占用'?'excluded':'sent',record.marketStatus)+'</div><div class="d-actions"><button class="btn primary" onclick="executeContactAction(this,\'dm\')">DM</button><button class="btn" onclick="executeContactAction(this,\'email\')">Email</button><button class="btn" onclick="showStatusMenu(event,this)">Status</button></div></div>';
 }
 
 function openContactPanel(record){
@@ -1594,6 +1962,14 @@ function executeContactAction(btn, actionType){
   btn.classList.add('executing');
   btn.disabled = true;
   btn.textContent = 'Sending...';
+  const record = findRecord({name,company,platform});
+  if(actionType==='dm' && record){
+    openSocialDevelopment(record,'dm');
+    btn.classList.remove('executing');
+    btn.textContent = 'Opened';
+    btn.style.background='var(--green)';btn.style.color='#fff';btn.style.borderColor='var(--green)';
+    return;
+  }
   
   const payload = {
     action: actionType,
@@ -1678,7 +2054,7 @@ function saveStatusChange(recordLike, newStatus){
 // Trigger batch automation via agent
 function triggerAutomation(platform, actionType){
   const actionLabels = {dm:'IG DM Outreach',connect:'LinkedIn Connection Outreach',engage:'Facebook Engagement',followup:'Email Follow-up'};
-  const msg = `[Dashboard Automation] Start ${actionLabels[actionType]||actionType} for ${platform.toUpperCase()} contacts. Prioritize by score. Execute top 5 contacts now.`;
+  const msg = `[Dashboard Automation] Prepare ${actionLabels[actionType]||actionType} for ${platform.toUpperCase()} contacts. Prioritize by score. Open top contacts and copy draft messages; do not send without user confirmation.`;
   
   fetch('http://127.0.0.1:28789/api/agent/message', {
     method: 'POST',

@@ -25,7 +25,7 @@ function chromeCandidates() {
 }
 
 function openChrome(url) {
-  const args = ['--new-tab', url];
+  const args = ['--new-window', url];
   for (const candidate of chromeCandidates()) {
     try {
       const child = spawn(candidate, args, { detached: true, stdio: 'ignore' });
@@ -50,7 +50,8 @@ const server = http.createServer((req, res) => {
     if (!url || !/^https:\/\/(www\.)?(linkedin|facebook|instagram)\.com\//i.test(url)) {
       return sendJson(res, 400, { ok: false, error: 'Unsupported URL' });
     }
-    return sendJson(res, openChrome(url) ? 200 : 500, { ok: true, url });
+    const opened = openChrome(url);
+    return sendJson(res, opened ? 200 : 500, { ok: opened, url });
   }
 
   let pathname = decodeURIComponent(parsed.pathname);
