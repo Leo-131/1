@@ -1,0 +1,55 @@
+html,body{max-width:100%;overflow-x:hidden}
+body{padding-bottom:78px}
+button:focus-visible,input:focus-visible,select:focus-visible{outline:2px solid #60a5fa;outline-offset:2px}
+.platform-tabs{position:sticky;top:0;z-index:20;padding:8px 0;background:linear-gradient(180deg,#0f1117 70%,rgba(15,17,23,0))}
+.dashboard-toolbar{position:sticky;top:54px;z-index:19;display:grid;grid-template-columns:minmax(220px,1fr) repeat(5,auto);gap:8px;align-items:center;margin:0 0 16px;padding:10px;background:rgba(21,24,38,.94);border:1px solid #2a2d3e;border-radius:12px;backdrop-filter:blur(14px);box-shadow:0 12px 36px rgba(0,0,0,.22)}
+.dashboard-toolbar input,.dashboard-toolbar select{height:36px;border:1px solid #2a2d3e;border-radius:8px;background:#0f1117;color:#e5e7eb;padding:0 10px;font-size:12px}
+.dashboard-toolbar input::placeholder{color:#626b7b}
+.toolbar-button{height:36px;border:1px solid #2a2d3e;border-radius:8px;background:#1a1d2e;color:#d6d9e5;padding:0 12px;font-size:12px;font-weight:700}
+.toolbar-button:hover{border-color:#3b82f6;color:#fff;background:#202842}
+.toolbar-button.primary{background:#2563eb;border-color:#2563eb;color:#fff}
+.toolbar-button.primary:hover{background:#1d4ed8}
+.result-strip{display:flex;align-items:center;justify-content:space-between;gap:12px;margin:-4px 0 16px;color:#888;font-size:12px}
+.result-strip strong{color:#fff}
+.quick-filter-row{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:16px}
+.quick-filter{border:1px solid #2a2d3e;border-radius:999px;background:#151826;color:#a7adbd;padding:6px 10px;font-size:11px;cursor:pointer}
+.quick-filter:hover,.quick-filter.active{border-color:#3b82f6;color:#fff;background:#1d2742}
+.detail-panel.show{scroll-margin-top:112px}
+.detail-panel-inner{box-shadow:0 16px 42px rgba(0,0,0,.18)}
+.contact-table th[data-sort]{cursor:pointer;user-select:none}
+.contact-table th[data-sort]:hover{color:#fff}
+.contact-table th.sorted-asc::after{content:" ^";color:#3b82f6}
+.contact-table th.sorted-desc::after{content:" v";color:#3b82f6}
+.contact-link{color:#93c5fd;text-decoration:none;word-break:break-all}
+.contact-link:hover{color:#fff;text-decoration:underline}
+.muted-contact{color:#555}
+.toast{position:fixed;right:18px;bottom:18px;z-index:50;max-width:360px;padding:12px 14px;border:1px solid #2a2d3e;border-radius:10px;background:#151826;color:#fff;box-shadow:0 16px 42px rgba(0,0,0,.28);font-size:12px;opacity:0;transform:translateY(10px);pointer-events:none;transition:opacity .2s,transform .2s}
+.toast.show{opacity:1;transform:translateY(0)}
+.back-top{position:fixed;right:18px;bottom:70px;z-index:45;width:38px;height:38px;border-radius:50%;border:1px solid #2a2d3e;background:#1a1d2e;color:#fff;display:none;align-items:center;justify-content:center;font-size:18px;box-shadow:0 10px 30px rgba(0,0,0,.25)}
+.back-top.show{display:flex}
+.kpi{outline:none}
+.kpi:focus-visible{border-color:#60a5fa;box-shadow:0 0 0 3px rgba(96,165,250,.16)}
+.alert-box h4,.alert-box p,.exec-task,.card,.kpi{overflow-wrap:anywhere}
+.alert-box,.exec-panel,.card,.detail-panel,.dashboard-toolbar{max-width:100%}
+@media(max-width:900px){
+  body{padding:14px 12px 86px}
+  .dashboard-toolbar{top:50px;grid-template-columns:1fr 1fr}
+  .dashboard-toolbar input{grid-column:1/-1}
+  .result-strip{align-items:flex-start;flex-direction:column}
+}
+@media(max-width:640px){
+  h1{font-size:19px}
+  .subtitle{margin-bottom:12px}
+  .kpi-grid{grid-template-columns:1fr 1fr}
+  .platform-tabs{overflow-x:auto}
+  .tab-btn{white-space:nowrap;padding:8px 14px}
+  .dashboard-toolbar{position:static;grid-template-columns:1fr}
+  .platform-tabs,.alert-box,.refresh-info,.dashboard-toolbar,.quick-filter-row,.result-strip,.exec-panel,.kpi-grid,.card{width:calc(100vw - 24px)!important;max-width:calc(100vw - 24px)!important;min-width:0!important}
+  .alert-box{overflow:hidden}
+  .alert-box h4,.alert-box p{max-width:100%;white-space:normal!important;word-break:break-word}
+  .exec-task,.exec-task>*{min-width:0}
+  #task1-progress,#task2-detail{max-width:120px;text-align:right;overflow-wrap:anywhere}
+  .alloc-grid{grid-template-columns:1fr}
+  .contact-table{font-size:10px}
+  .contact-table th,.contact-table td{padding:5px}
+}

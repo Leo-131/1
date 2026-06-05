@@ -1,25 +1,24 @@
 {
-  "version": 2,
-  "public": true,
-  "github": {
-    "enabled": true
-  },
-  "functions": {
-    "api/*.js": {
-      "maxDuration": 10
-    }
-  },
-  "routes": [
+  "cleanUrls": true,
+  "outputDirectory": ".",
+  "headers": [
     {
-      "src": "/api/(.*)",
-      "dest": "/api/$1.js"
+      "source": "/service-worker.js",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "no-cache"
+        }
+      ]
     },
     {
-      "handle": "filesystem"
-    },
-    {
-      "src": "/(.*)",
-      "dest": "/index.html"
+      "source": "/index.html",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "no-cache"
+        }
+      ]
     }
   ]
 }

@@ -1,1 +1,10 @@
 .vercel
+node_modules
+dist/
+*.zip
+.deploy-state.json
+credentials.local.json
+credentials.plain.json
+.env
+.env.*
+!.env.example
