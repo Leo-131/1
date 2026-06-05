@@ -41,6 +41,10 @@ function credentialStorePath() {
   return path.join(app.getPath('userData'), 'credential-cache.json');
 }
 
+function glmStorePath() {
+  return path.join(app.getPath('userData'), 'glm-config.json');
+}
+
 function vaultPath() {
   return path.join(__dirname, 'credentials.vault.json');
 }
@@ -111,6 +115,30 @@ function setCachedCredential(platform, credential) {
     updatedAt: new Date().toISOString(),
   };
   saveCredentialCache(cache);
+}
+
+function loadGlmConfig() {
+  const config = readJson(glmStorePath(), null);
+  if (!config || !config.encryptedApiKey) return null;
+  try {
+    return {
+      baseUrl: config.baseUrl || 'https://open.bigmodel.cn/api/paas/v4',
+      model: config.model || 'glm-4-flash',
+      apiKey: decryptFromLocalCache(config.encryptedApiKey),
+    };
+  } catch {
+    return null;
+  }
+}
+
+function saveGlmConfig(config) {
+  writeJson(glmStorePath(), {
+    version: 1,
+    baseUrl: config.baseUrl || 'https://open.bigmodel.cn/api/paas/v4',
+    model: config.model || 'glm-4-flash',
+    encryptedApiKey: encryptForLocalCache(config.apiKey),
+    updatedAt: new Date().toISOString(),
+  });
 }
 
 function deriveVaultKey(masterPassword, salt) {
@@ -314,6 +342,52 @@ ipcMain.handle('launch-platform-acquisition', async (_event, payload) => {
   }
   createPlatformWindow(platform, credential);
   return { ok: true };
+});
+
+ipcMain.handle('glm-status', async () => {
+  const config = loadGlmConfig();
+  return { configured: Boolean(config && config.apiKey), model: config && config.model };
+});
+
+ipcMain.handle('save-glm-config', async (_event, payload) => {
+  const apiKey = payload && String(payload.apiKey || '').trim();
+  if (!apiKey) throw new Error('GLM API key is required.');
+  saveGlmConfig({
+    apiKey,
+    baseUrl: String((payload && payload.baseUrl) || 'https://open.bigmodel.cn/api/paas/v4').replace(/\/+$/, ''),
+    model: String((payload && payload.model) || 'glm-4-flash'),
+  });
+  return { ok: true };
+});
+
+ipcMain.handle('optimize-lead-with-glm', async (_event, payload) => {
+  const config = loadGlmConfig();
+  if (!config || !config.apiKey) return { ok: false, needsConfig: true };
+  const lead = payload && payload.lead;
+  if (!lead) throw new Error('Lead is required.');
+  const response = await fetch(`${config.baseUrl.replace(/\/+$/, '')}/chat/completions`, {
+    method: 'POST',
+    headers: {
+      'Authorization': `Bearer ${config.apiKey}`,
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify({
+      model: config.model,
+      temperature: 0.25,
+      messages: [
+        { role: 'system', content: 'You qualify B2B outdoor/camping/RV retail leads for Flextail/Vollyc. Return concise JSON only.' },
+        { role: 'user', content: JSON.stringify({
+          task: 'Score this lead, reject if mismatch/unreachable, and write a short compliant outreach draft. Do not automate sending.',
+          lead,
+          schema: { fitScore: '0-100', verdict: 'develop|recheck|skip', reason: 'short', draft: 'short English message', nextStep: 'short' },
+        }) },
+      ],
+    }),
+  });
+  if (!response.ok) throw new Error(`GLM request failed: ${response.status}`);
+  const data = await response.json();
+  const text = data && data.choices && data.choices[0] && data.choices[0].message && data.choices[0].message.content;
+  return { ok: true, text: text || '' };
 });
 
 app.whenReady().then(createWindow);

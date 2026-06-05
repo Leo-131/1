@@ -267,6 +267,31 @@ tr.contact-row:hover .row-actions{display:inline-flex}
       <button class="btn" type="button" onclick="savePlatformCredential('ins')">Save INS</button>
       <button class="btn primary" type="button" onclick="unlockCredentialVault()">Unlock Vault</button>
     </div>
+    <div class="credential-strip">
+      <span class="label">GLM</span>
+      <span class="credential-pill missing" id="glm-status">GLM not configured</span>
+      <button class="btn" type="button" onclick="saveGlmSettings()">Save GLM</button>
+      <button class="btn primary" type="button" onclick="optimizeCurrentLeadWithGlm()">Optimize Current Lead</button>
+    </div>
+    <div class="credential-strip">
+      <span class="label">Cloud</span>
+      <span class="credential-pill missing" id="cloud-status">Checking...</span>
+      <button class="btn" type="button" onclick="saveCloudState()">Save Cloud State</button>
+      <button class="btn" type="button" onclick="loadCloudState()">Load Cloud State</button>
+      <button class="btn" type="button" onclick="runCloudGlm()">Cloud GLM</button>
+    </div>
+    <div class="credential-strip">
+      <span class="label">OKKI</span>
+      <span class="credential-pill missing" id="okki-status">OKKI proxy</span>
+      <button class="btn" type="button" onclick="openOkkiModule('customers')">Customers</button>
+      <button class="btn" type="button" onclick="openOkkiModule('leads')">Leads</button>
+      <button class="btn" type="button" onclick="openOkkiModule('inquiries')">Inquiries</button>
+      <button class="btn" type="button" onclick="openOkkiModule('emails')">Emails</button>
+      <button class="btn" type="button" onclick="openOkkiModule('tasks')">Tasks</button>
+      <button class="btn" type="button" onclick="openOkkiModule('followups')">Followups</button>
+      <button class="btn" type="button" onclick="openOkkiModule('orders')">Orders</button>
+      <button class="btn" type="button" onclick="openOkkiModule('products')">Products</button>
+    </div>
     <div class="daily-plan-strip" id="daily-plan-strip" style="display:none">
       <div>
         <div class="title" id="daily-plan-title">Verified Instagram Follow-up Plan</div>
@@ -999,6 +1024,69 @@ async function unlockCredentialVault(){
   }catch(error){
     showAppToast('Vault unlock failed');
   }
+}
+async function refreshGlmStatus(){
+  const el=document.getElementById('glm-status'); if(!el)return;
+  if(!window.customerDev || !window.customerDev.glmStatus){el.textContent='GLM desktop only';el.className='credential-pill missing';return;}
+  try{const s=await window.customerDev.glmStatus();el.textContent=s.configured?'GLM ready · '+(s.model||'model'):'GLM not configured';el.className='credential-pill '+(s.configured?'ready':'missing');}
+  catch{el.textContent='GLM unavailable';el.className='credential-pill missing';}
+}
+async function saveGlmSettings(){
+  if(!window.customerDev || !window.customerDev.saveGlmConfig)return showAppToast('Open desktop app to save GLM');
+  const apiKey=prompt('GLM API Key:'); if(!apiKey)return;
+  const model=prompt('GLM model:','glm-4-flash')||'glm-4-flash';
+  const baseUrl=prompt('GLM base URL:','https://open.bigmodel.cn/api/paas/v4')||'https://open.bigmodel.cn/api/paas/v4';
+  try{await window.customerDev.saveGlmConfig({apiKey,model,baseUrl});showAppToast('GLM saved');refreshGlmStatus();}
+  catch{showAppToast('GLM save failed');}
+}
+async function optimizeCurrentLeadWithGlm(){
+  const lead=currentAutomationTask(); if(!lead)return showAppToast('No current lead');
+  if(!window.customerDev || !window.customerDev.optimizeLeadWithGlm)return showAppToast('Open desktop app to use GLM');
+  try{const r=await window.customerDev.optimizeLeadWithGlm({lead}); if(r.needsConfig)return saveGlmSettings();
+    if(navigator.clipboard)navigator.clipboard.writeText(r.text||'').catch(()=>{});
+    automationState.log=[{time:new Date().toLocaleString(),text:'GLM: '+(r.text||'').slice(0,180)},...automationState.log].slice(0,30);
+    saveAutomationState();renderAutomation();showAppToast('GLM result copied');
+  }catch{showAppToast('GLM optimize failed');}
+}
+async function refreshCloudStatus(){
+  const el=document.getElementById('cloud-status'); if(!el)return;
+  try{const r=await fetch('/api/health'); const s=await r.json();
+    el.textContent=s.ok?'Cloud '+(s.supabase?'DB':'no DB')+' · '+(s.glm?'GLM':'no GLM')+' · '+(s.okki?'OKKI':'no OKKI'):'Cloud offline';
+    el.className='credential-pill '+(s.supabase?'ready':'missing');
+  }catch{el.textContent='Local mode';el.className='credential-pill missing';}
+}
+function cloudPayload(){
+  return {automationState, statusChanges:readSavedStatusChanges(), activityChanges:readSavedActivityChanges(), savedAt:new Date().toISOString()};
+}
+async function saveCloudState(){
+  try{const r=await fetch('/api/sync',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({key:'dashboard-state',value:cloudPayload()})});
+    const s=await r.json(); showAppToast(s.ok?'Cloud state saved':'Cloud DB not configured');
+  }catch{showAppToast('Cloud save unavailable');}
+}
+async function loadCloudState(){
+  try{const r=await fetch('/api/sync?key=dashboard-state'); const s=await r.json();
+    if(!s.ok || !s.state)return showAppToast('No cloud state');
+    if(s.state.automationState){automationState=s.state.automationState;saveAutomationState();}
+    if(s.state.statusChanges)localStorage.setItem(STATUS_CHANGES_KEY,JSON.stringify(s.state.statusChanges));
+    if(s.state.activityChanges)localStorage.setItem(ACTIVITY_CHANGES_KEY,JSON.stringify(s.state.activityChanges));
+    renderAutomation();showAppToast('Cloud state loaded');
+  }catch{showAppToast('Cloud load unavailable');}
+}
+async function runCloudGlm(){
+  const lead=currentAutomationTask(); if(!lead)return showAppToast('No current lead');
+  try{const r=await fetch('/api/glm',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({lead})}); const s=await r.json();
+    const text=s.ok?JSON.stringify(s.data):s.error; if(navigator.clipboard)navigator.clipboard.writeText(text||'').catch(()=>{});
+    automationState.log=[{time:new Date().toLocaleString(),text:'Cloud GLM: '+String(text||'').slice(0,180)},...automationState.log].slice(0,30);
+    saveAutomationState();renderAutomation();showAppToast(s.ok?'Cloud GLM copied':'Cloud GLM not configured');
+  }catch{showAppToast('Cloud GLM unavailable');}
+}
+async function openOkkiModule(moduleName){
+  const el=document.getElementById('okki-status');
+  try{const r=await fetch('/api/okki?module='+encodeURIComponent(moduleName)); const s=await r.json();
+    if(el){el.textContent=s.ok?'OKKI '+moduleName+' ready':'OKKI config needed';el.className='credential-pill '+(s.ok?'ready':'missing');}
+    automationState.log=[{time:new Date().toLocaleString(),text:'OKKI '+moduleName+': '+JSON.stringify(s).slice(0,180)},...automationState.log].slice(0,30);
+    saveAutomationState();renderAutomation();showAppToast(s.ok?'OKKI '+moduleName+' loaded':'OKKI not configured');
+  }catch{if(el)el.textContent='OKKI unavailable';showAppToast('OKKI unavailable');}
 }
 function topAutomationTargets(tasks){
   return tasks.slice(0,5).map((task,index)=>
@@ -1854,8 +1942,8 @@ function quickAction(action, tr){
     method:'POST',headers:{'Content-Type':'application/json','Authorization':'Bearer '+(window.OPENCLAW_TOKEN||'')},
     body:JSON.stringify({message:msg,source:'outreach-dashboard'})
   }).then(r=>r.json()).then(()=>{
-    showAppToast('OK '+(action==='dm'?'DM':'Email')+' sent to '+name);
-    logAction(name+' - '+(action==='dm'?'DM':'Email')+' triggered');
+    showAppToast((action==='dm'?'DM':'Email')+' prepared for '+name);
+    logAction(name+' - '+(action==='dm'?'DM':'Email')+' prepared');
   }).catch(()=>{
     navigator.clipboard.writeText(msg);
     showAppToast('Copied (agent offline)');
@@ -1879,6 +1967,8 @@ renderDailyPlanList();
 loadDailyOutreachPlan({auto:true});
 renderAutomation();
 refreshCredentialStatus();
+refreshGlmStatus();
+refreshCloudStatus();
 sanitizeVisibleText();
 
 // === DETAIL OVERLAY WITH ACTIONS ===
