@@ -1,6 +1,6 @@
 {
   "cleanUrls": true,
-  "outputDirectory": ".",
+  "outputDirectory": "public",
   "headers": [
     {
       "source": "/service-worker.js",
