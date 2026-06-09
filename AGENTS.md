@@ -29,6 +29,18 @@ GitHub and `AGENT_HANDOFF.json` are the authority when Codex and Qclaw alternate
 - Use `--force` only after confirming the recorded owner is stale and no longer running.
 - Never write credentials, cookies, tokens, or private customer data into the handoff.
 
+## Social Outreach Safety
+
+Before Qclaw or Codex performs Instagram or Facebook outreach:
+
+- Use `tools/qclaw/prepare_verified_outreach.py`; never assign a platform by list position.
+- Require a verified platform-specific profile URL and an ICP fit score of at least 70.
+- Never search a person's name and click the first result.
+- Reject generic Facebook destinations such as `/profile.php`, reels, watch pages, and search pages.
+- Deduplicate by platform and exact target URL.
+- Run `safe_outreach_runner.py` first. Automated sending remains disabled until exact-profile and post-send confirmation are implemented and reviewed.
+- Treat the June 9 legacy result file as quarantined evidence, not valid outreach history.
+
 ## Memory
 
 You wake up fresh each session. These files are your continuity:
