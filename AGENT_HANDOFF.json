@@ -1,23 +1,29 @@
 {
   "schemaVersion": 1,
-  "task": "Repair Qclaw customer profiling and social outreach safety",
+  "task": "Execute verified Qclaw Instagram follow-ups and sync results",
   "status": "completed",
   "activeAgent": null,
   "lastAgent": "codex",
-  "updatedAt": "2026-06-09T14:12:07.484Z",
-  "summary": "Repaired Qclaw profiling: disabled blind person-name outreach, added verified-profile ICP gates, deduplication, quarantine, and dry-run-only execution.",
+  "updatedAt": "2026-06-09T14:32:48.055Z",
+  "summary": "Executed 7 exact-profile Instagram follow-ups through Qclaw and synchronized confirmed results into the customer development system.",
   "nextSteps": [],
   "verification": [
-    "Qclaw and repository safety suites: 6/6 passed each; 14 verified tasks approved, 2 rejected; dashboard npm check passed; legacy senders blocked"
+    "8/8 Qclaw sender safety tests passed; 7/7 sends confirmed by visible message and cleared input; npm.cmd run check and vercel-build passed"
   ],
   "git": {
     "branch": "main",
-    "commit": "441e010a684a7365b34a5e468dfb3cd99db822ce",
+    "commit": "da64b129ccade4f873d8085bb0eceb46e71adf2a",
     "changedFiles": [
-      ".gitignore",
-      "AGENTS.md",
       "AGENT_HANDOFF.json",
-      "tools/qclaw/"
+      "outreach-dashboard/daily-outreach-fb-ins-2026-06-03.json",
+      "outreach-dashboard/daily-outreach-tasks.js",
+      "outreach-dashboard/public/daily-outreach-tasks.js",
+      "outreach-dashboard/public/deploy-stamp.txt",
+      "tools/qclaw/test_outreach_safety.py",
+      "outreach-dashboard/today-automation-run-2026-06-09.csv",
+      "outreach-dashboard/today-automation-run-2026-06-09.json",
+      "tools/qclaw/sync_verified_results.js",
+      "tools/qclaw/verified_instagram_sender.py"
     ]
   }
 }

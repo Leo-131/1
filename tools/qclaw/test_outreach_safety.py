@@ -2,6 +2,7 @@ import unittest
 
 from outreach_safety import build_verified_tasks, validate_execution_target, validate_task
 from safe_outreach_runner import build_dry_run_report
+from verified_instagram_sender import build_followup_message, is_followup_eligible
 
 
 class OutreachSafetyTests(unittest.TestCase):
@@ -78,6 +79,22 @@ class OutreachSafetyTests(unittest.TestCase):
         }
         report = build_dry_run_report([task], pages=None, browser_error="CDP unavailable")
         self.assertEqual(report[0]["status"], "manual_review_required")
+
+    def test_only_replied_followups_are_eligible_for_live_send(self):
+        self.assertTrue(
+            is_followup_eligible({"followup_mode": True, "original_status": "Replied"})
+        )
+        self.assertFalse(
+            is_followup_eligible({"followup_mode": True, "original_status": "Sent"})
+        )
+
+    def test_followup_message_requests_a_business_contact_channel(self):
+        message = build_followup_message(
+            {"account_handle": "campmor", "company": "Campmor US"}
+        )
+        self.assertIn("following up", message.lower())
+        self.assertIn("buyer or partnership contact", message.lower())
+        self.assertIn("email", message.lower())
 
 
 if __name__ == "__main__":
