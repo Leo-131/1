@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "task": "Fix KPI card navigation and Codex-Qclaw continuity",
+  "status": "completed",
+  "activeAgent": null,
+  "lastAgent": "codex",
+  "updatedAt": "2026-06-09T04:42:03.903Z",
+  "summary": "Fixed KPI cards to open details in a new tab and added GitHub-backed Codex/Qclaw continuity with ownership protection.",
+  "nextSteps": [],
+  "verification": [
+    "npm.cmd run check passed; vercel-build passed; Playwright confirmed original tab remains and ?kpi=total opens with visible details"
+  ],
+  "git": {
+    "branch": "main",
+    "commit": "8bda4ee13ed9bd8e490fc93f3679a9cee6742834",
+    "changedFiles": [
+      ".gitignore",
+      "AGENTS.md",
+      "outreach-dashboard/check-dashboard.js",
+      "outreach-dashboard/outreach-dashboard.html",
+      "outreach-dashboard/package.json",
+      "outreach-dashboard/public/deploy-stamp.txt",
+      "outreach-dashboard/public/index.html",
+      "outreach-dashboard/public/outreach-dashboard.html",
+      "AGENT_HANDOFF.json",
+      "CONTINUITY.md",
+      "docs/",
+      "tests/",
+      "tools/"
+    ]
+  }
+}

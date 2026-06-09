@@ -1663,9 +1663,22 @@ document.querySelectorAll('#kpi-row .kpi').forEach(card=>{
   });
 });
 function handleKpiCard(key){
-  setActiveKpi(key);
-  if(key==='li'||key==='fb'||key==='ins') startAutomation(key);
-  else openActionPanel(key);
+  openKpiDetailPage(key);
+}
+function buildKpiDetailUrl(key){
+  const url=new URL(window.location.href);
+  url.searchParams.set('kpi',key);
+  url.hash='';
+  return url.toString();
+}
+function openKpiDetailPage(key){
+  const link=document.createElement('a');
+  link.href=buildKpiDetailUrl(key);
+  link.target='_blank';
+  link.rel='noopener noreferrer';
+  document.body.appendChild(link);
+  link.click();
+  link.remove();
 }
 
 // === COLLAPSIBLE SECTIONS ===
@@ -2167,6 +2180,13 @@ function logAction(text){
   renderAutomation();
 }
 
+function initializeKpiDetailPage(){
+  const key=new URLSearchParams(window.location.search).get('kpi');
+  if(!['total','li','fb','ins','positive','t1'].includes(key))return;
+  setActiveKpi(key);
+  openActionPanel(key);
+}
+
 // === EXPORT ===
 function exportCSV(){
   const list=getFiltered();
@@ -2179,6 +2199,7 @@ function exportCSV(){
 if('serviceWorker' in navigator){
   window.addEventListener('load',()=>navigator.serviceWorker.register('./service-worker.js').catch(()=>{}));
 }
+initializeKpiDetailPage();
 </script>
 </body>
 </html>

@@ -1,4 +1,5 @@
 .vercel
+.playwright-cli/
 .env
 .env.*
 !.env.example

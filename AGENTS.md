@@ -10,12 +10,24 @@ If `BOOTSTRAP.md` exists, that's your birth certificate. Follow it, figure out w
 
 Before doing anything else:
 
-1. Read `SOUL.md` — this is who you are
-2. Read `USER.md` — this is who you're helping
-3. Read `memory/YYYY-MM-DD.md` (today + yesterday) for recent context
-4. **If in MAIN SESSION** (direct chat with your human): Also read `MEMORY.md`
+1. Run `git status --short`, then `git pull --ff-only` when the worktree is clean
+2. Read `AGENT_HANDOFF.json` and `CONTINUITY.md` for the shared Codex/Qclaw task state
+3. Read `SOUL.md` — this is who you are
+4. Read `USER.md` — this is who you're helping
+5. Read `memory/YYYY-MM-DD.md` (today + yesterday) for recent context
+6. **If in MAIN SESSION** (direct chat with your human): Also read `MEMORY.md`
 
 Don't ask permission. Just do it.
+
+## Codex and Qclaw Handoff
+
+GitHub and `AGENT_HANDOFF.json` are the authority when Codex and Qclaw alternate or work from different computers.
+
+- Claim work with `node tools/agent-handoff.js claim <codex|qclaw> "<task>"`.
+- Do not overwrite another active agent. Stop, pull, and inspect its pushed handoff.
+- Before switching agents, run `checkpoint` or `complete`, then commit and push code and handoff state together.
+- Use `--force` only after confirming the recorded owner is stale and no longer running.
+- Never write credentials, cookies, tokens, or private customer data into the handoff.
 
 ## Memory
 
