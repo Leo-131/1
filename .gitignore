@@ -1,5 +1,6 @@
 .vercel
 .playwright-cli/
+.superpowers/
 tools/qclaw/output/
 __pycache__/
 *.pyc
