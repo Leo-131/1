@@ -1,6 +1,6 @@
 {
   "name": "outreach-dashboard",
-  "version": "18.4.0",
+  "version": "18.5.0",
   "description": "Flextail Gear Customer Automated Development System",
   "main": "main.js",
   "scripts": {
@@ -8,8 +8,8 @@
     "serve": "node dashboard-local-server.js",
     "vercel-build": "node prepare-vercel-output.js",
     "check:handoff": "node --test ../tests/agent-handoff.test.js",
-    "check:domain": "node --test ../tests/outreach-engine.test.js ../tests/outreach-analytics.test.js",
-    "check": "npm run check:domain && npm run check:handoff && node -c main.js && node -c preload.js && node -c smart-deploy.js && node -c build-portable-app.js && node -c prepare-vercel-output.js && node -c service-worker.js && node -c dashboard-local-server.js && node -c daily-outreach-tasks.js && node -c generate-serial-run.js && node -c rebuild-followup-plan.js && node -c check-dashboard.js && node check-dashboard.js",
+    "check:domain": "node --test ../tests/outreach-engine.test.js ../tests/outreach-analytics.test.js ../tests/command-center.test.js ../tests/sync-autonomous-results.test.js",
+    "check": "npm run check:domain && npm run check:handoff && node -c main.js && node -c preload.js && node -c smart-deploy.js && node -c build-portable-app.js && node -c prepare-vercel-output.js && node -c service-worker.js && node -c dashboard-local-server.js && node -c daily-outreach-tasks.js && node -c outreach-engine.js && node -c outreach-analytics.js && node -c autonomous-outreach-data.js && node -c command-center.js && node -c generate-serial-run.js && node -c rebuild-followup-plan.js && node -c check-dashboard.js && node check-dashboard.js",
     "deploy:dry-run": "node smart-deploy.js --dry-run",
     "build": "electron-builder --win portable",
     "build:nsis": "electron-builder --win nsis",
@@ -43,6 +43,12 @@
       "enhancements.css",
       "country-market-data.js",
       "daily-outreach-tasks.js",
+      "outreach-engine.js",
+      "outreach-analytics.js",
+      "autonomous-outreach-results.js",
+      "autonomous-outreach-data.js",
+      "command-center.css",
+      "command-center.js",
       "credentials.vault.json",
       "credentials.example.json"
     ],

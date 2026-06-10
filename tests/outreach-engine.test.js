@@ -119,7 +119,7 @@ test('null and empty trend indexes never become available zero values', () => {
 });
 
 test('open European countries receive the full market component', () => {
-  for (const region of ['Germany', 'Estonia', 'Iceland', 'DEU', 'EST', 'ISL']) {
+  for (const region of ['Germany', 'Estonia', 'Iceland', 'DEU', 'EST', 'ISL', '英国', '波兰']) {
     const result = calculateDevelopmentScore({
       region,
       marketStatus: 'open',

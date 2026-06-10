@@ -1,10 +1,16 @@
-const CACHE_NAME = 'customer-development-system-v18-4-0-20260605-followup-data-fix';
+const CACHE_NAME = 'customer-development-system-v18-5-0-20260610-autonomous';
 const APP_SHELL = [
   './',
   './index.html',
   './outreach-dashboard.html',
   './country-market-data.js',
   './daily-outreach-tasks.js',
+  './outreach-engine.js',
+  './outreach-analytics.js',
+  './autonomous-outreach-results.js',
+  './autonomous-outreach-data.js',
+  './command-center.css',
+  './command-center.js',
   './enhancements.css',
   './manifest.webmanifest',
   './icon.svg'
@@ -28,6 +34,18 @@ self.addEventListener('activate', (event) => {
 
 self.addEventListener('fetch', (event) => {
   if (event.request.method !== 'GET') return;
+  if (event.request.mode === 'navigate') {
+    event.respondWith(
+      fetch(event.request)
+        .then((response) => {
+          const copy = response.clone();
+          caches.open(CACHE_NAME).then((cache) => cache.put(event.request, copy));
+          return response;
+        })
+        .catch(() => caches.match(event.request).then((cached) => cached || caches.match('./outreach-dashboard.html')))
+    );
+    return;
+  }
   event.respondWith(
     caches.match(event.request).then((cached) => {
       if (cached) return cached;

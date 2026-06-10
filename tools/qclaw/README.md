@@ -22,3 +22,32 @@ E:\Python\python.exe tools\qclaw\safe_outreach_runner.py tools\qclaw\output\veri
 ```
 
 The runner is intentionally dry-run only. It does not send messages.
+
+## Autonomous like-follow-send workflow
+
+The autonomous runner accepts only `approved` tasks with an exact Instagram
+profile URL, a positive approval version, and the exact Codex-approved message.
+
+Dry run:
+
+```powershell
+E:\Python\python.exe tools\qclaw\autonomous_instagram_runner.py approved_tasks.json --dry-run --all-approved
+```
+
+One controlled canary:
+
+```powershell
+E:\Python\python.exe tools\qclaw\autonomous_instagram_runner.py approved_tasks.json --task-id TASK_ID --confirm-live-actions
+```
+
+Batch execution is permitted only after a confirmed canary:
+
+```powershell
+E:\Python\python.exe tools\qclaw\autonomous_instagram_runner.py approved_tasks.json --all-approved --confirm-live-actions
+```
+
+Synchronize append-only evidence into the app:
+
+```powershell
+node tools\qclaw\sync_autonomous_results.js autonomous_outreach_results.json outreach-dashboard\autonomous-outreach-results.js
+```

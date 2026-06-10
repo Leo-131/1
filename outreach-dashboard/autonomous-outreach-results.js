@@ -1,0 +1,2 @@
+window.AUTONOMOUS_OUTREACH_RESULTS = [];
+

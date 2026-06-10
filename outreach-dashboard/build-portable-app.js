@@ -24,6 +24,12 @@ const appFiles = [
   "enhancements.css",
   "country-market-data.js",
   "daily-outreach-tasks.js",
+  "outreach-engine.js",
+  "outreach-analytics.js",
+  "autonomous-outreach-results.js",
+  "autonomous-outreach-data.js",
+  "command-center.css",
+  "command-center.js",
   "credentials.vault.json",
   "credentials.example.json",
 ];
