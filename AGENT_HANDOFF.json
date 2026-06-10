@@ -1,24 +1,23 @@
 {
   "schemaVersion": 1,
-  "task": "Run v18.5 approved autonomous outreach workflow",
+  "task": "Deploy v18.5 and synchronize current QClaw progress",
   "status": "completed",
   "activeAgent": null,
   "lastAgent": "codex",
-  "updatedAt": "2026-06-10T04:13:17.090Z",
-  "summary": "Ran v18.5 autonomous qualification: 16 reviewed, 0 approved, no duplicate sends; hardened cooldown and reply gates",
+  "updatedAt": "2026-06-10T08:04:05.000Z",
+  "summary": "Synchronized QClaw main through b3d4fd1, retained cooldown and replied-only follow-up gates, and deployed v18.5.0 to Vercel production",
   "nextSteps": [],
   "verification": [
-    "31 domain tests, 6 handoff tests, 14 Python safety tests passed"
+    "31 domain tests, 6 handoff tests, 14 Python safety tests passed",
+    "Vercel deployment dpl_9cJHHTJGgHvswsvSDkJQpdbDcQhL is READY and aliased to outreach-dashboard-woad-three.vercel.app",
+    "Production browser rendered Customer Automated Development System v18.5.0 with Codex Decision and QClaw Execution workspace"
   ],
   "git": {
-    "branch": "vercel-main-sync",
-    "commit": "db068256bb52152be87864ffbd0fd321e0da3f5c",
+    "branch": "codex/autonomous-outreach-command-center",
+    "commit": "b3d4fd1c20f7ea963a2a769652f84b0f1f90954c",
     "changedFiles": [
       "AGENT_HANDOFF.json",
-      "outreach-dashboard/.gitignore",
-      "tools/qclaw/outreach_safety.py",
-      "tools/qclaw/test_outreach_safety.py",
-      "tools/qclaw/verified_instagram_sender.py"
+      "outreach-dashboard/public/deploy-stamp.txt"
     ]
   }
 }
