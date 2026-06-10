@@ -1,20 +1,24 @@
 {
   "schemaVersion": 1,
-  "task": "Implement autonomous outreach command center",
+  "task": "Run v18.5 approved autonomous outreach workflow",
   "status": "completed",
   "activeAgent": null,
   "lastAgent": "codex",
-  "updatedAt": "2026-06-10T03:37:15.433Z",
-  "summary": "Upgraded customer development system to v18.5.0 autonomous command center with Codex approval and constrained Qclaw execution",
+  "updatedAt": "2026-06-10T04:13:17.090Z",
+  "summary": "Ran v18.5 autonomous qualification: 16 reviewed, 0 approved, no duplicate sends; hardened cooldown and reply gates",
   "nextSteps": [],
   "verification": [
-    "31 Node tests, 12 Python tests, npm check, vercel build, desktop/mobile browser QA, localhost and LAN HTTP 200"
+    "31 domain tests, 6 handoff tests, 14 Python safety tests passed"
   ],
   "git": {
-    "branch": "codex/autonomous-outreach-command-center",
-    "commit": "18aeb9443de9f6eab6c25fd2b186a083c958d62a",
+    "branch": "vercel-main-sync",
+    "commit": "db068256bb52152be87864ffbd0fd321e0da3f5c",
     "changedFiles": [
-      "AGENT_HANDOFF.json"
+      "AGENT_HANDOFF.json",
+      "outreach-dashboard/.gitignore",
+      "tools/qclaw/outreach_safety.py",
+      "tools/qclaw/test_outreach_safety.py",
+      "tools/qclaw/verified_instagram_sender.py"
     ]
   }
 }

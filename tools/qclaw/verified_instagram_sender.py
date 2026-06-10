@@ -6,8 +6,6 @@ import urllib.request
 from datetime import datetime
 from pathlib import Path
 
-import websocket
-
 from outreach_safety import validate_execution_target, validate_task
 
 
@@ -31,6 +29,8 @@ def build_followup_message(task):
 
 class CDPPage:
     def __init__(self, ws_url):
+        import websocket
+
         self.ws = websocket.create_connection(ws_url, timeout=30)
         self.message_id = 1
 

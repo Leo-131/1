@@ -3,6 +3,7 @@ node_modules
 dist/
 *.zip
 .deploy-state.json
+.deploy-cooldown.json
 credentials.local.json
 credentials.plain.json
 .env

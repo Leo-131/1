@@ -49,6 +49,9 @@ def validate_task(task):
     target_url = normalize_url(task.get("target_url"))
     verified_platform = normalize_platform(task.get("verified_platform"))
     fit_score = task.get("fit_score")
+    automation_status = str(task.get("automation_status") or "").strip().lower()
+    followup_mode = bool(task.get("followup_mode"))
+    original_status = str(task.get("original_status") or "").strip().lower()
 
     if platform not in ALLOWED_PLATFORMS:
         reasons.append("unsupported platform")
@@ -63,6 +66,10 @@ def validate_task(task):
         reasons.append("facebook target is generic or non-profile")
     if fit_score is None or float(fit_score) < MIN_FIT_SCORE:
         reasons.append(f"fit score must be at least {MIN_FIT_SCORE}")
+    if automation_status == "sent_confirmed":
+        reasons.append("confirmed send is in cooldown")
+    if followup_mode and original_status != "replied":
+        reasons.append("follow-up requires a prior customer reply")
 
     return {"sendable": not reasons, "reasons": reasons}
 
@@ -80,6 +87,8 @@ def source_to_task(source):
         "original_status": source.get("originalStatus"),
         "state": source.get("state"),
         "action": source.get("action"),
+        "automation_status": source.get("automationStatus"),
+        "last_automation_at": source.get("lastAutomationAt"),
     }
 
     if platform == "instagram":

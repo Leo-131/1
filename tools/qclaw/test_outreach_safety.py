@@ -38,6 +38,7 @@ class OutreachSafetyTests(unittest.TestCase):
             "fitScore": 100,
             "fitTier": "A",
             "followupMode": True,
+            "originalStatus": "Replied",
         }
         tasks, rejected = build_verified_tasks([source])
         self.assertEqual(rejected, [])
@@ -54,6 +55,35 @@ class OutreachSafetyTests(unittest.TestCase):
         tasks, rejected = build_verified_tasks([source, dict(source)])
         self.assertEqual(len(tasks), 1)
         self.assertIn("duplicate", rejected[0]["reasons"])
+
+    def test_rejects_confirmed_previous_sends(self):
+        source = {
+            "platform": "Instagram",
+            "name": "campmor",
+            "company": "Campmor US",
+            "verifiedPlatform": "instagram",
+            "fitScore": 100,
+            "followupMode": True,
+            "originalStatus": "Replied",
+            "automationStatus": "sent_confirmed",
+        }
+        tasks, rejected = build_verified_tasks([source])
+        self.assertEqual(tasks, [])
+        self.assertIn("confirmed send is in cooldown", rejected[0]["reasons"])
+
+    def test_rejects_followup_without_customer_reply(self):
+        source = {
+            "platform": "Instagram",
+            "name": "anacondastores",
+            "company": "Anaconda Stores",
+            "verifiedPlatform": "instagram",
+            "fitScore": 85,
+            "followupMode": True,
+            "originalStatus": "Sent",
+        }
+        tasks, rejected = build_verified_tasks([source])
+        self.assertEqual(tasks, [])
+        self.assertIn("follow-up requires a prior customer reply", rejected[0]["reasons"])
 
     def test_execution_requires_exact_verified_profile(self):
         task = {
