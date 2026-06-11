@@ -583,7 +583,7 @@ function enrichMarket(record){
   };
 }
 
-const APP_VERSION = '18.5.0';
+const APP_VERSION = '18.5.1';
 const STATUS_CHANGES_KEY = 'customer_development_status_changes_v1';
 const ACTIVITY_CHANGES_KEY = 'customer_development_activity_changes_v1';
 function formatDate(value){
@@ -1521,7 +1521,7 @@ function loadDailyOutreachPlan(options){
   syncFilterTabs();
   renderTable();
   renderAutomation();
-  openCurrentAutomationTask();
+  if(!opts.auto) openCurrentAutomationTask();
   showAppToast('Verified follow-up queue loaded: '+tasks.length+' tasks');
   return true;
 }

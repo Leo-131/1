@@ -10,6 +10,7 @@ const appName = "Customer-Development-System";
 const appDir = path.join(outRoot, appName);
 const resourcesApp = path.join(appDir, "resources", "app");
 const zipPath = path.join(outRoot, `${appName}-Portable.zip`);
+const sourcePackage = JSON.parse(fs.readFileSync(path.join(root, "package.json"), "utf8"));
 
 const appFiles = [
   "main.js",
@@ -111,7 +112,7 @@ for (const file of appFiles) {
 
 const appPackage = {
   name: "customer-development-system",
-  version: "18.4.0",
+  version: sourcePackage.version,
   main: "main.js",
 };
 fs.writeFileSync(path.join(resourcesApp, "package.json"), `${JSON.stringify(appPackage, null, 2)}\n`);

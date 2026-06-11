@@ -6,6 +6,7 @@ const path = require('path');
 const root = path.join(__dirname, '..', 'outreach-dashboard');
 const html = fs.readFileSync(path.join(root, 'outreach-dashboard.html'), 'utf8');
 const js = fs.readFileSync(path.join(root, 'command-center.js'), 'utf8');
+const portableBuilder = fs.readFileSync(path.join(root, 'build-portable-app.js'), 'utf8');
 
 test('dashboard loads autonomous command center assets', () => {
   for (const asset of [
@@ -32,6 +33,17 @@ test('reporting center supports CSV export and browser print', () => {
   assert.ok(js.includes('exportCurrentReportCsv'));
   assert.ok(js.includes('text/csv;charset=utf-8'));
   assert.ok(js.includes('window.print()'));
+});
+
+test('silent daily-plan bootstrap never opens Instagram or another platform', () => {
+  assert.ok(html.includes('loadDailyOutreachPlan({auto:true})'));
+  assert.match(html, /function loadDailyOutreachPlan\(options\)[\s\S]*?if\(!opts\.auto\) openCurrentAutomationTask\(\);[\s\S]*?return true;/);
+  assert.match(html, /function launchCustomerAcquisition\(platform,tasks\)\{\s*openCurrentAutomationTask\(\);/);
+});
+
+test('portable desktop app inherits the package version', () => {
+  assert.ok(portableBuilder.includes('sourcePackage.version'));
+  assert.ok(!portableBuilder.includes('version: "18.4.0"'));
 });
 
 test('command center contains separated operational views', () => {

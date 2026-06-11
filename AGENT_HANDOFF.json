@@ -1,23 +1,28 @@
 {
   "schemaVersion": 1,
-  "task": "Harden Vercel deployment guard after Windows CLI hang",
+  "task": "Fix report-page Instagram auto-open and build desktop app v18.5.1",
   "status": "completed",
   "activeAgent": null,
   "lastAgent": "codex",
-  "updatedAt": "2026-06-11T09:02:46.176Z",
-  "summary": "Added bounded compressed Vercel upload, pre-request quota accounting, and complete reporting asset digest coverage; 41 domain tests pass",
+  "updatedAt": "2026-06-11T09:53:28.262Z",
+  "summary": "Silent daily-plan bootstrap no longer opens social platforms; report view verified at v18.5.1; portable app rebuilt; 43 domain tests pass",
   "nextSteps": [],
   "verification": [
-    "Use the guarded deploy on the next allowed production window"
+    "Use explicit customer or automation controls to open platforms"
   ],
   "git": {
     "branch": "vercel-main-sync",
-    "commit": "d81b8c85fd21bf6ef70f8b38ab402d01aa7a1e65",
+    "commit": "bd4cc8ca76a556f3f1b13975cdbbf984285e0e66",
     "changedFiles": [
       "AGENT_HANDOFF.json",
+      "outreach-dashboard/build-portable-app.js",
+      "outreach-dashboard/outreach-dashboard.html",
+      "outreach-dashboard/package-lock.json",
       "outreach-dashboard/package.json",
-      "outreach-dashboard/smart-deploy.js",
-      "tests/smart-deploy.test.js"
+      "outreach-dashboard/public/deploy-stamp.txt",
+      "outreach-dashboard/public/index.html",
+      "outreach-dashboard/public/outreach-dashboard.html",
+      "tests/command-center.test.js"
     ]
   }
 }
