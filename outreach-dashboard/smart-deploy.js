@@ -26,6 +26,12 @@ const APP_FILES = [
   "outreach-dashboard.html",
   "country-market-data.js",
   "daily-outreach-tasks.js",
+  "outreach-engine.js",
+  "outreach-analytics.js",
+  "autonomous-outreach-results.js",
+  "autonomous-outreach-data.js",
+  "command-center.css",
+  "command-center.js",
   "dashboard-local-server.js",
   "index.html",
   "manifest.webmanifest",
@@ -61,6 +67,7 @@ const dryRun = args.has("--dry-run");
 const force = args.has("--force");
 const markRateLimited = args.has("--mark-rate-limited");
 const RATE_LIMIT_COOLDOWN_HOURS = Number(process.env.RATE_LIMIT_COOLDOWN_HOURS || 24);
+const DEPLOY_TIMEOUT_MS = Number(process.env.DEPLOY_TIMEOUT_MS || 180000);
 
 function todayKey() {
   return new Date().toISOString().slice(0, 10);
@@ -96,13 +103,29 @@ function saveState(state) {
 }
 
 function run(command, commandArgs) {
-  const result = spawnSync(command, commandArgs, {
+  const executable = process.platform === "win32" && command === "vercel"
+    ? "vercel.cmd"
+    : command;
+  const result = spawnSync(executable, commandArgs, {
     cwd: ROOT,
     encoding: "utf8",
-    shell: process.platform === "win32",
+    shell: false,
+    timeout: DEPLOY_TIMEOUT_MS,
+    maxBuffer: 10 * 1024 * 1024,
+    env: {
+      ...process.env,
+      CI: "1",
+      NO_COLOR: "1",
+      VERCEL_TELEMETRY_DISABLED: "1",
+    },
   });
   if (result.stdout) process.stdout.write(result.stdout);
   if (result.stderr) process.stderr.write(result.stderr);
+  if (result.error) {
+    const error = new Error(`${command} ${commandArgs.join(" ")} failed: ${result.error.message}`);
+    error.output = `${result.stdout || ""}\n${result.stderr || ""}`;
+    throw error;
+  }
   if (result.status !== 0) {
     const output = `${result.stdout || ""}\n${result.stderr || ""}`;
     const error = new Error(`${command} ${commandArgs.join(" ")} failed with exit ${result.status}`);
@@ -218,8 +241,12 @@ if (dryRun) {
   process.exit(0);
 }
 
+state.deployments[day] = todaysCount + 1;
+state.lastDeploymentAttemptAt = new Date().toISOString();
+saveState(state);
+
 try {
-  run("vercel", ["deploy", "--prod", "--yes"]);
+  run("vercel", ["deploy", "--prod", "--yes", "--archive=tgz"]);
 } catch (error) {
   if (isRateLimitError(error)) {
     const until = markRateLimitCooldown(state, "Vercel 429 / deployments per day limit");
@@ -232,7 +259,6 @@ try {
 
 state.lastDigest = current.digest;
 state.lastFiles = current.files;
-state.deployments[day] = todaysCount + 1;
 state.lastDeploymentAt = new Date().toISOString();
 state.rateLimitedUntil = "";
 state.rateLimitedReason = "";
