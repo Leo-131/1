@@ -2,6 +2,11 @@ const { app, BrowserWindow, ipcMain, shell, safeStorage } = require('electron');
 const fs = require('fs');
 const path = require('path');
 const crypto = require('crypto');
+const { requestGlm } = require('./glm-service');
+const { runAutoGlmLead, validateLeadForExecution } = require('./autoglm-bridge');
+
+let glmAutomationRunning = false;
+let lastGlmAutomationAt = 0;
 
 const PLATFORM_CONFIG = {
   li: {
@@ -365,29 +370,38 @@ ipcMain.handle('optimize-lead-with-glm', async (_event, payload) => {
   if (!config || !config.apiKey) return { ok: false, needsConfig: true };
   const lead = payload && payload.lead;
   if (!lead) throw new Error('Lead is required.');
-  const response = await fetch(`${config.baseUrl.replace(/\/+$/, '')}/chat/completions`, {
-    method: 'POST',
-    headers: {
-      'Authorization': `Bearer ${config.apiKey}`,
-      'Content-Type': 'application/json',
-    },
-    body: JSON.stringify({
-      model: config.model,
-      temperature: 0.25,
-      messages: [
-        { role: 'system', content: 'You qualify B2B outdoor/camping/RV retail leads for Flextail/Vollyc. Return concise JSON only.' },
-        { role: 'user', content: JSON.stringify({
-          task: 'Score this lead, reject if mismatch/unreachable, and write a short compliant outreach draft. Do not automate sending.',
-          lead,
-          schema: { fitScore: '0-100', verdict: 'develop|recheck|skip', reason: 'short', draft: 'short English message', nextStep: 'short' },
-        }) },
-      ],
-    }),
-  });
-  if (!response.ok) throw new Error(`GLM request failed: ${response.status}`);
-  const data = await response.json();
-  const text = data && data.choices && data.choices[0] && data.choices[0].message && data.choices[0].message.content;
-  return { ok: true, text: text || '' };
+  return requestGlm({ ...config, lead });
+});
+
+ipcMain.handle('run-glm-direct-automation', async (_event, payload) => {
+  if (glmAutomationRunning) return { ok: false, busy: true, error: 'Another customer is running' };
+  if (Date.now() - lastGlmAutomationAt < 90000) {
+    return { ok: false, cooldown: true, error: 'Serial cooldown is active' };
+  }
+  const lead = payload && payload.lead;
+  const target = validateLeadForExecution(lead);
+  if (!target.ok) return target;
+  const config = loadGlmConfig();
+  if (!config || !config.apiKey) return { ok: false, needsConfig: true };
+
+  glmAutomationRunning = true;
+  try {
+    const glm = await requestGlm({ ...config, lead });
+    const decision = glm.result;
+    if (!decision || decision.verdict !== 'develop' || Number(decision.fitScore) < 70) {
+      return {
+        ok: false,
+        skipped: true,
+        decision,
+        error: decision?.reason || 'GLM did not approve this lead',
+      };
+    }
+    const execution = await runAutoGlmLead(lead, decision);
+    lastGlmAutomationAt = Date.now();
+    return { ...execution, decision, glmModel: glm.model };
+  } finally {
+    glmAutomationRunning = false;
+  }
 });
 
 app.whenReady().then(createWindow);

@@ -1,4 +1,4 @@
-const CACHE_NAME = 'customer-development-system-v18-5-0-20260610-autonomous';
+const CACHE_NAME = 'customer-development-system-v18-6-0-20260611-glm-direct';
 const APP_SHELL = [
   './',
   './index.html',

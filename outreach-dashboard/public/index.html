@@ -273,6 +273,7 @@ tr.contact-row:hover .row-actions{display:inline-flex}
       <span class="credential-pill missing" id="glm-status">GLM not configured</span>
       <button class="btn" type="button" onclick="saveGlmSettings()">Save GLM</button>
       <button class="btn primary" type="button" onclick="optimizeCurrentLeadWithGlm()">Optimize Current Lead</button>
+      <button class="btn success" type="button" onclick="runCurrentLeadWithGlm()">GLM Auto Develop</button>
     </div>
     <div class="credential-strip">
       <span class="label">Cloud</span>
@@ -583,7 +584,7 @@ function enrichMarket(record){
   };
 }
 
-const APP_VERSION = '18.5.1';
+const APP_VERSION = '18.6.0';
 const STATUS_CHANGES_KEY = 'customer_development_status_changes_v1';
 const ACTIVITY_CHANGES_KEY = 'customer_development_activity_changes_v1';
 function formatDate(value){
@@ -1028,8 +1029,13 @@ async function unlockCredentialVault(){
 }
 async function refreshGlmStatus(){
   const el=document.getElementById('glm-status'); if(!el)return;
-  if(!window.customerDev || !window.customerDev.glmStatus){el.textContent='GLM desktop only';el.className='credential-pill missing';return;}
-  try{const s=await window.customerDev.glmStatus();el.textContent=s.configured?'GLM ready · '+(s.model||'model'):'GLM not configured';el.className='credential-pill '+(s.configured?'ready':'missing');}
+  try{
+    const s=window.customerDev&&window.customerDev.glmStatus
+      ? await window.customerDev.glmStatus()
+      : await fetch('/api/health').then(r=>r.json()).then(r=>({configured:r.glm,model:r.glmModel}));
+    el.textContent=s.configured?'GLM ready · '+(s.model||'model'):'GLM not configured';
+    el.className='credential-pill '+(s.configured?'ready':'missing');
+  }
   catch{el.textContent='GLM unavailable';el.className='credential-pill missing';}
 }
 async function saveGlmSettings(){
@@ -1048,6 +1054,17 @@ async function optimizeCurrentLeadWithGlm(){
     automationState.log=[{time:new Date().toLocaleString(),text:'GLM: '+(r.text||'').slice(0,180)},...automationState.log].slice(0,30);
     saveAutomationState();renderAutomation();showAppToast('GLM result copied');
   }catch{showAppToast('GLM optimize failed');}
+}
+async function runCurrentLeadWithGlm(){
+  const lead=currentAutomationTask(); if(!lead)return showAppToast('No current lead');
+  if(!window.customerDev || !window.customerDev.runGlmDirectAutomation)return showAppToast('Use desktop APP for browser automation');
+  try{
+    showAppToast('GLM automation started');
+    const r=await window.customerDev.runGlmDirectAutomation({lead});
+    if(r.needsConfig)return saveGlmSettings();
+    automationState.log=[{time:new Date().toLocaleString(),text:r.ok?'GLM AutoGLM completed: '+(r.targetUrl||lead.name):'GLM skipped: '+(r.error||'not approved')},...automationState.log].slice(0,30);
+    saveAutomationState();renderAutomation();showAppToast(r.ok?'GLM automation completed':(r.error||'GLM automation skipped'));
+  }catch(error){showAppToast('GLM automation failed: '+(error.message||error));}
 }
 async function refreshCloudStatus(){
   const el=document.getElementById('cloud-status'); if(!el)return;
@@ -1076,7 +1093,7 @@ async function loadCloudState(){
 async function runCloudGlm(){
   const lead=currentAutomationTask(); if(!lead)return showAppToast('No current lead');
   try{const r=await fetch('/api/glm',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({lead})}); const s=await r.json();
-    const text=s.ok?JSON.stringify(s.data):s.error; if(navigator.clipboard)navigator.clipboard.writeText(text||'').catch(()=>{});
+    const text=s.ok?(s.text||JSON.stringify(s.result||{})):s.error; if(navigator.clipboard)navigator.clipboard.writeText(text||'').catch(()=>{});
     automationState.log=[{time:new Date().toLocaleString(),text:'Cloud GLM: '+String(text||'').slice(0,180)},...automationState.log].slice(0,30);
     saveAutomationState();renderAutomation();showAppToast(s.ok?'Cloud GLM copied':'Cloud GLM not configured');
   }catch{showAppToast('Cloud GLM unavailable');}

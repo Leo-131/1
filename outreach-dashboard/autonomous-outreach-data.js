@@ -15,19 +15,31 @@
     }
     return validTimestamp(plan && plan.generatedAt);
   }
+  function inferredTargetUrl(task) {
+    const explicit = task.verifiedTargetUrl || task.targetUrl || task.target_url || task.url || '';
+    if (explicit) return explicit;
+    const platform = String(task.verifiedPlatform || task.platform || '').toLowerCase();
+    const handle = String(task.accountHandle || task.name || '').trim().replace(/^@/, '');
+    if (platform === 'instagram' && /^[a-z0-9._]+$/i.test(handle)) {
+      return `https://www.instagram.com/${handle}/`;
+    }
+    return '';
+  }
   const tasks = daily.map((task, index) => {
     const eventTimestamp = taskTimestamp(task);
     const sentTimestamp = validTimestamp(task.lastTouch) || eventTimestamp;
+    const previouslyContacted = /sent|replied|accepted/i.test(String(task.originalStatus || ''))
+      || Boolean(task.lastKnownTouch);
     return ({
     taskId: `verified-${task.platform || 'social'}-${task.accountHandle || task.name || index}`,
     version: 1,
-    state: task.automationStatus === 'sent_confirmed' ? 'outcome_pending' : 'profile_scored',
+    state: task.automationStatus === 'sent_confirmed' || previouslyContacted ? 'outcome_pending' : 'profile_scored',
     name: task.name || task.accountHandle || 'Unknown',
     company: task.company || task.name || 'Unknown',
     role: task.role || '',
     platform: String(task.platform || '').toLowerCase(),
     country: task.country || '',
-    targetUrl: task.targetUrl || task.target_url || task.url || '',
+    targetUrl: inferredTargetUrl(task),
     accountHandle: task.accountHandle || task.account_handle || task.name || '',
     marketStatus: task.marketStatus || '开放',
     keyword: task.keyword || task.keyword_used || 'outdoor retail partnership',
@@ -42,6 +54,8 @@
     approvedAt: task.automationStatus === 'sent_confirmed' ? sentTimestamp : '',
     sentAt: task.automationStatus === 'sent_confirmed' ? sentTimestamp : '',
     sendStatus: task.automationStatus || '',
+    originalStatus: task.originalStatus || '',
+    previouslyContacted,
     repliedAt: task.originalStatus === 'Replied' ? validTimestamp(task.lastKnownTouch) : '',
     contactCapturedAt: task.contact ? sentTimestamp : '',
     autoSkippedAt: task.automationStatus === 'auto_skipped' ? eventTimestamp : '',
@@ -80,7 +94,7 @@
       id: [result.task_id, result.approval_version, result.status, result.timestamp || ''].join('-'),
       taskId: result.task_id,
       stage: result.status,
-      agent: 'qclaw',
+      agent: result.agent || 'autoglm',
       timestamp: result.timestamp || '',
       result: result.status,
       evidence: result.target_url || '',

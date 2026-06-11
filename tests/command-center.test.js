@@ -6,6 +6,7 @@ const path = require('path');
 const root = path.join(__dirname, '..', 'outreach-dashboard');
 const html = fs.readFileSync(path.join(root, 'outreach-dashboard.html'), 'utf8');
 const js = fs.readFileSync(path.join(root, 'command-center.js'), 'utf8');
+const analyticsJs = fs.readFileSync(path.join(root, 'outreach-analytics.js'), 'utf8');
 const portableBuilder = fs.readFileSync(path.join(root, 'build-portable-app.js'), 'utf8');
 
 test('dashboard loads autonomous command center assets', () => {
@@ -56,6 +57,21 @@ test('customer detail opens in a new tab without replacing the shell', () => {
   assert.match(js, /target="_blank"/);
   assert.match(js, /urlFor\('customer'/);
   assert.ok(js.includes('command-center-shell'));
+});
+
+test('SEO view exposes conversion evidence and high-intent keyword opportunities', () => {
+  assert.ok(js.includes('analytics.buildKeywordOpportunities'));
+  assert.ok(js.includes('keyword-opportunity'));
+  assert.ok(analyticsJs.includes('trends.google.com'));
+  assert.ok(js.includes('sampleSize'));
+});
+
+test('command center opens verified platform URLs and exposes GLM direct automation', () => {
+  assert.ok(js.includes('verifiedTargetUrl'));
+  assert.ok(js.includes('openVerifiedCustomer'));
+  assert.ok(js.includes('runGlmDirect'));
+  assert.ok(js.includes('GLM 自动开发'));
+  assert.ok(html.includes('GLM Auto Develop'));
 });
 
 test('trend unavailability is visible and not presented as a guessed number', () => {

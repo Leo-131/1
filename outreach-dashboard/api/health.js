@@ -7,6 +7,7 @@ module.exports = async function handler(req, res) {
     app: 'outreach-dashboard',
     supabase: Boolean(process.env.SUPABASE_URL && (process.env.SUPABASE_SERVICE_ROLE_KEY || process.env.SUPABASE_ANON_KEY)),
     glm: Boolean(process.env.GLM_API_KEY),
+    glmModel: process.env.GLM_MODEL || 'glm-4-flash',
     okki: Boolean(process.env.OKKI_API_KEY && process.env.OKKI_BASE_URL),
   });
 };

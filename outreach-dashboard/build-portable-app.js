@@ -15,6 +15,8 @@ const sourcePackage = JSON.parse(fs.readFileSync(path.join(root, "package.json")
 const appFiles = [
   "main.js",
   "preload.js",
+  "glm-service.js",
+  "autoglm-bridge.js",
   "package.json",
   "dashboard-local-server.js",
   "outreach-dashboard.html",

@@ -4,10 +4,41 @@ const test = require('node:test');
 const {
   normalizeTrendRecord,
   buildKeywordMetrics,
+  buildKeywordOpportunities,
   buildTemplateMetrics,
   getNaturalPeriod,
   buildPeriodReport,
 } = require('../outreach-dashboard/outreach-analytics.js');
+
+test('keyword opportunities prioritize transactional ICP phrases without inventing conversion data', () => {
+  const result = buildKeywordOpportunities([
+    {
+      keyword: 'outdoor retail partnership',
+      country: 'US',
+      state: 'sent_confirmed',
+      repliedAt: 'x',
+    },
+  ]);
+
+  assert.ok(result.length >= 12);
+  assert.equal(result[0].keyword, 'outdoor retail partnership');
+  assert.equal(result[0].source, 'observed');
+  assert.equal(result[0].sampleSize, 1);
+  assert.ok(result.some(item => item.keyword === 'camping gear wholesale'));
+  assert.ok(result.some(item => item.keyword === 'portable air pump distributor'));
+  assert.ok(result.every(item => ['transactional', 'commercial'].includes(item.intent)));
+  assert.ok(result.every(item => item.trendsUrl.includes('trends.google.com/trends/explore')));
+});
+
+test('keyword opportunities keep recommendations clearly separated from observed rates', () => {
+  const result = buildKeywordOpportunities([]);
+  const recommended = result.find(item => item.keyword === 'private label camping equipment');
+
+  assert.equal(recommended.source, 'recommended');
+  assert.equal(recommended.sampleSize, 0);
+  assert.equal(recommended.replyRate, null);
+  assert.ok(recommended.priorityScore > 0);
+});
 
 test('normalizes missing and legacy trend records without guessing', () => {
   assert.deepEqual(normalizeTrendRecord(null), {

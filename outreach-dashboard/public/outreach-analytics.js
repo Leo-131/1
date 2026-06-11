@@ -22,6 +22,26 @@
     ['opportunity', 'opportunityAt'],
     ['autoSkipped', 'autoSkippedAt'],
   ];
+  const HIGH_INTENT_KEYWORDS = [
+    ['camping gear wholesale', 'transactional', 96, 'Wholesale buyers'],
+    ['outdoor gear distributor', 'transactional', 95, 'Distributors'],
+    ['private label camping equipment', 'transactional', 94, 'OEM / private label'],
+    ['portable air pump distributor', 'transactional', 93, 'Product distributors'],
+    ['camping equipment importer', 'transactional', 92, 'Importers'],
+    ['outdoor equipment dealer', 'transactional', 91, 'Dealers'],
+    ['RV accessories distributor', 'transactional', 90, 'RV channel'],
+    ['camping accessories wholesale', 'transactional', 90, 'Wholesale buyers'],
+    ['OEM camping gear manufacturer', 'transactional', 89, 'OEM partners'],
+    ['rechargeable camping lantern wholesale', 'transactional', 88, 'Lighting buyers'],
+    ['ultralight camping gear supplier', 'transactional', 88, 'Specialty retail'],
+    ['sporting goods distributor', 'transactional', 87, 'Sporting goods'],
+    ['outdoor retail partnership', 'commercial', 86, 'Retail partnerships'],
+    ['camping gear supplier for retailers', 'transactional', 86, 'Retail buyers'],
+    ['outdoor products wholesale supplier', 'transactional', 85, 'Wholesale buyers'],
+    ['camping equipment bulk order', 'transactional', 84, 'Volume buyers'],
+    ['outdoor gear retail buyer', 'commercial', 83, 'Decision makers'],
+    ['camping products sourcing', 'commercial', 82, 'Sourcing teams'],
+  ];
 
   function clamp(value, minimum, maximum) {
     return Math.min(maximum, Math.max(minimum, value));
@@ -158,6 +178,92 @@
           opportunityRate: safeRate(funnel.opportunity, funnel.sent),
         },
       };
+    });
+  }
+
+  function countryToTrendsGeo(records) {
+    const aliases = {
+      'united states': 'US', usa: 'US', us: 'US', '美国': 'US',
+      'united kingdom': 'GB', uk: 'GB', '英国': 'GB',
+      canada: 'CA', '加拿大': 'CA', germany: 'DE', '德国': 'DE',
+      france: 'FR', '法国': 'FR', australia: 'AU', '澳大利亚': 'AU',
+      japan: 'JP', '日本': 'JP', italy: 'IT', '意大利': 'IT',
+      spain: 'ES', '西班牙': 'ES', netherlands: 'NL', '荷兰': 'NL',
+    };
+    const counts = new Map();
+    for (const record of Array.isArray(records) ? records : []) {
+      const raw = String(record && record.country || '').trim().toLowerCase();
+      const geo = aliases[raw] || (/^[a-z]{2}$/i.test(raw) ? raw.toUpperCase() : '');
+      if (geo) counts.set(geo, (counts.get(geo) || 0) + 1);
+    }
+    return Array.from(counts).sort((left, right) => right[1] - left[1])[0]?.[0] || 'US';
+  }
+
+  function buildTrendsUrl(keyword, geo) {
+    const params = new URLSearchParams({
+      date: 'today 12-m',
+      geo: geo || 'US',
+      q: keyword,
+    });
+    return `https://trends.google.com/trends/explore?${params.toString()}`;
+  }
+
+  function buildKeywordOpportunities(records, options) {
+    const source = Array.isArray(records) ? records : [];
+    const config = options && typeof options === 'object' ? options : {};
+    const metrics = buildKeywordMetrics(source);
+    const observed = new Map(metrics.map(item => [item.keyword, item]));
+    const geo = String(config.geo || countryToTrendsGeo(source)).toUpperCase();
+    const catalog = HIGH_INTENT_KEYWORDS.map(([keyword, intent, baseScore, audience]) => ({
+      keyword,
+      intent,
+      baseScore,
+      audience,
+    }));
+
+    for (const item of metrics) {
+      if (!catalog.some(entry => entry.keyword.toLowerCase() === item.keyword)) {
+        catalog.push({
+          keyword: item.keyword,
+          intent: /\b(wholesale|distributor|supplier|importer|dealer|bulk|oem)\b/i.test(item.keyword)
+            ? 'transactional'
+            : 'commercial',
+          baseScore: 78,
+          audience: 'Observed audience',
+        });
+      }
+    }
+
+    return catalog.map(entry => {
+      const metric = observed.get(entry.keyword.toLowerCase());
+      const sampleSize = metric ? metric.sampleSize : 0;
+      const replyRate = metric ? metric.rates.replyRate : null;
+      const contactCaptureRate = metric ? metric.rates.contactCaptureRate : null;
+      const opportunityRate = metric ? metric.rates.opportunityRate : null;
+      const evidenceLift = metric
+        ? Math.min(14, sampleSize * 2)
+          + Math.round(replyRate * 12)
+          + Math.round(contactCaptureRate * 10)
+          + Math.round(opportunityRate * 12)
+        : 0;
+      return {
+        keyword: entry.keyword,
+        intent: entry.intent,
+        audience: entry.audience,
+        source: metric ? 'observed' : 'recommended',
+        sampleSize,
+        replyRate,
+        contactCaptureRate,
+        opportunityRate,
+        priorityScore: clamp(entry.baseScore + evidenceLift, 0, 100),
+        geo,
+        trendsUrl: buildTrendsUrl(entry.keyword, geo),
+      };
+    }).sort((left, right) => {
+      if (left.source !== right.source) return left.source === 'observed' ? -1 : 1;
+      return right.priorityScore - left.priorityScore
+        || right.sampleSize - left.sampleSize
+        || left.keyword.localeCompare(right.keyword);
     });
   }
 
@@ -368,6 +474,7 @@
   return {
     normalizeTrendRecord,
     buildKeywordMetrics,
+    buildKeywordOpportunities,
     buildTemplateMetrics,
     getNaturalPeriod,
     buildPeriodReport,
