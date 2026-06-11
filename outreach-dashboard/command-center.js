@@ -7,6 +7,7 @@
   if (!engine || !analytics) return;
 
   const views = [
+    ['reports', '汇报中心'],
     ['workspace', '开发工作台'],
     ['queue', '今日队列'],
     ['customers', '客户附表'],
@@ -19,6 +20,7 @@
   const view = views.some(item => item[0] === query.get('view')) ? query.get('view') : 'workspace';
   const legacyRecords = typeof allRecords !== 'undefined' && Array.isArray(allRecords) ? allRecords : [];
   const tasks = data.tasks || [];
+  let currentReport = null;
 
   function esc(value) {
     return String(value == null ? '' : value)
@@ -66,6 +68,49 @@
   }
   function pageHead(title, subtitle) {
     return `<div class="cc-page-head"><div><h1>${title}</h1><p>${subtitle}</p></div><span class="cc-status">自动决策运行中</span></div>`;
+  }
+  function reportHref(type, anchor) {
+    return urlFor('reports', { report: type, period: anchor });
+  }
+  function shiftReportAnchor(type, anchor, direction) {
+    const parts = String(anchor).split('-').map(Number);
+    const date = new Date(Date.UTC(parts[0], (parts[1] || 1) - 1, parts[2] || 1));
+    if (type === 'monthly') date.setUTCMonth(date.getUTCMonth() + direction);
+    else date.setUTCDate(date.getUTCDate() + (direction * 7));
+    return date.toISOString().slice(0, 10);
+  }
+  function rate(value) {
+    return `${Math.round(Number(value || 0) * 100)}%`;
+  }
+  function reportBreakdown(title, rows) {
+    if (!rows.length) return `<section class="cc-panel"><div class="cc-panel-head"><h2>${title}</h2></div><div class="cc-empty">本周期暂无可统计数据</div></section>`;
+    return `<section class="cc-panel"><div class="cc-panel-head"><h2>${title}</h2></div><div class="cc-table-wrap"><table class="cc-table"><thead><tr><th>分类</th><th>发现</th><th>确认发送</th><th>回复</th><th>联系方式</th><th>机会</th><th>回复率</th></tr></thead><tbody>${rows.map(item => `<tr><td>${esc(item.label)}</td><td>${item.metrics.discovered}</td><td>${item.metrics.sent}</td><td>${item.metrics.replied}</td><td>${item.metrics.contactCaptured}</td><td>${item.metrics.opportunity}</td><td>${rate(item.rates.replyRate)}</td></tr>`).join('')}</tbody></table></div></section>`;
+  }
+  function reports() {
+    const type = query.get('report') === 'monthly' ? 'monthly' : 'weekly';
+    const report = analytics.buildPeriodReport(tasks, { type, anchor: query.get('period') || undefined });
+    currentReport = report;
+    const metricLabels = [
+      ['discovered', '发现客户'], ['profiled', '画像评分'], ['approved', '已批准'],
+      ['sent', '确认发送'], ['replied', '收到回复'], ['contactCaptured', '获得联系方式'],
+      ['opportunity', '成交机会'], ['autoSkipped', '自动跳过'],
+    ];
+    const funnelMetrics = metricLabels.slice(0, 7);
+    const previous = shiftReportAnchor(type, report.period.anchor, -1);
+    const next = shiftReportAnchor(type, report.period.anchor, 1);
+    const qualityTotal = report.dataQuality.missingTimestamps + report.dataQuality.invalidTimestamps;
+
+    return `${pageHead('汇报中心', '按自然周和自然月复盘客户开发结果，仅统计有时间证据的真实事件')}
+      <div class="cc-report-toolbar">
+        <div class="cc-report-tabs"><a data-report-type="weekly" class="${type === 'weekly' ? 'active' : ''}" href="${reportHref('weekly', report.period.anchor)}">周报</a><a data-report-type="monthly" class="${type === 'monthly' ? 'active' : ''}" href="${reportHref('monthly', report.period.anchor)}">月报</a></div>
+        <div class="cc-period-controls"><a class="cc-icon-button" href="${reportHref(type, previous)}" title="上一周期">‹</a><input id="report-period" type="date" value="${report.period.anchor}" aria-label="报告日期"><a class="cc-icon-button" href="${reportHref(type, next)}" title="下一周期">›</a></div>
+        <div class="cc-report-actions"><button type="button" onclick="exportCurrentReportCsv()" ${report.hasData ? '' : 'disabled'}>导出 CSV</button><button type="button" onclick="window.print()">打印/PDF</button></div>
+      </div>
+      <div class="cc-report-period"><b>${report.period.label}</b><span>Asia/Shanghai</span></div>
+      <div class="cc-kpis cc-report-kpis">${metricLabels.map(([key, label]) => `<div class="cc-kpi"><span>${label}</span><b>${report.metrics[key]}</b></div>`).join('')}</div>
+      <section class="cc-panel"><div class="cc-panel-head"><h2>转化漏斗</h2><span class="cc-sub">回复率 ${rate(report.rates.replyRate)} · 联系方式率 ${rate(report.rates.contactCaptureRate)} · 机会率 ${rate(report.rates.opportunityRate)}</span></div><div class="cc-panel-body"><div class="cc-funnel">${funnelMetrics.map(([key, label]) => `<div><span>${label}</span><b>${report.metrics[key]}</b></div>`).join('')}</div></div></section>
+      ${qualityTotal ? `<div class="cc-quality">数据质量：${report.dataQuality.missingTimestamps} 个应有时间缺失，${report.dataQuality.invalidTimestamps} 个时间无效；这些事件未计入周期结果。</div>` : ''}
+      ${report.hasData ? `<div class="cc-report-grid">${reportBreakdown('平台', report.breakdowns.platform)}${reportBreakdown('国家 / 市场', report.breakdowns.countryMarket)}${reportBreakdown('关键词', report.breakdowns.keyword)}${reportBreakdown('消息模板', report.breakdowns.template)}${reportBreakdown('ICP 层级', report.breakdowns.icpTier)}</div>` : '<div class="cc-empty cc-report-empty">本周期暂无带有效时间证据的开发记录</div>'}`;
   }
   function stageRoute(task) {
     const route = [
@@ -154,11 +199,54 @@
       <div class="cc-rail-section"><h2>QClaw 证据</h2><div class="cc-evidence">账号：${esc(task.targetUrl || '待核验')}<br>趋势：${esc(task.trend && task.trend.status || 'data_unavailable')}<br>发送：${esc(task.sendStatus || '待执行')}</div></div></aside>`;
   }
 
-  const renderers = { workspace, queue, customers, seo, experiments, audit, settings, customer };
+  function csvCell(value) {
+    return `"${String(value == null ? '' : value).replace(/"/g, '""')}"`;
+  }
+  function exportCurrentReportCsv() {
+    if (!currentReport || !currentReport.hasData) return;
+    const rows = [
+      ['report_type', currentReport.period.type],
+      ['period', currentReport.period.label],
+      [],
+      ['metric', 'value'],
+      ...Object.entries(currentReport.metrics),
+      [],
+      ['dimension', 'label', 'discovered', 'sent', 'replied', 'contacts', 'opportunities', 'reply_rate'],
+    ];
+    Object.entries(currentReport.breakdowns).forEach(([dimension, items]) => {
+      items.forEach(item => rows.push([
+        dimension,
+        item.label,
+        item.metrics.discovered,
+        item.metrics.sent,
+        item.metrics.replied,
+        item.metrics.contactCaptured,
+        item.metrics.opportunity,
+        rate(item.rates.replyRate),
+      ]));
+    });
+    const csv = rows.map(row => row.map(csvCell).join(',')).join('\r\n');
+    const blob = new Blob(['\ufeff', csv], { type: 'text/csv;charset=utf-8' });
+    const link = document.createElement('a');
+    link.href = URL.createObjectURL(blob);
+    link.download = `outreach-${currentReport.period.type}-${currentReport.period.key}.csv`;
+    link.click();
+    URL.revokeObjectURL(link.href);
+  }
+
+  window.exportCurrentReportCsv = exportCurrentReportCsv;
+  const renderers = { workspace, queue, customers, seo, experiments, reports, audit, settings, customer };
   document.body.classList.add('command-center-active');
   const shell = document.createElement('div');
   shell.className = 'cc-shell';
   shell.id = 'command-center-shell';
   shell.innerHTML = `${nav()}<main class="cc-main">${(renderers[view] || workspace)()}</main>${rail()}`;
   document.body.appendChild(shell);
+  const reportPeriod = document.getElementById('report-period');
+  if (reportPeriod) {
+    reportPeriod.addEventListener('change', event => {
+      const type = query.get('report') === 'monthly' ? 'monthly' : 'weekly';
+      location.href = reportHref(type, event.target.value);
+    });
+  }
 }());

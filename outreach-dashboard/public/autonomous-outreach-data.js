@@ -5,7 +5,20 @@
   const daily = plan && Array.isArray(plan.tasks)
     ? plan.tasks
     : [];
-  const tasks = daily.map((task, index) => ({
+  function validTimestamp(value) {
+    return typeof value === 'string' && value && Number.isFinite(Date.parse(value)) ? value : '';
+  }
+  function taskTimestamp(task) {
+    if (validTimestamp(task.generatedAt)) return task.generatedAt;
+    if (typeof task.date === 'string' && /^\d{4}-\d{2}-\d{2}$/.test(task.date)) {
+      return `${task.date}T09:00:00+08:00`;
+    }
+    return validTimestamp(plan && plan.generatedAt);
+  }
+  const tasks = daily.map((task, index) => {
+    const eventTimestamp = taskTimestamp(task);
+    const sentTimestamp = validTimestamp(task.lastTouch) || eventTimestamp;
+    return ({
     taskId: `verified-${task.platform || 'social'}-${task.accountHandle || task.name || index}`,
     version: 1,
     state: task.automationStatus === 'sent_confirmed' ? 'outcome_pending' : 'profile_scored',
@@ -19,17 +32,19 @@
     marketStatus: task.marketStatus || '开放',
     keyword: task.keyword || task.keyword_used || 'outdoor retail partnership',
     templateId: task.templateId || 'buyer-contact-v1',
+    icpTier: task.icpTier || task.tier || task.fitTier || '',
     fitScore: Number(task.fitScore || 0),
     approvalAttempts: 0,
     approvedMessage: task.approvedMessage || task.message || '',
     approvalVersion: 1,
-    discoveredAt: task.generatedAt || '',
-    profiledAt: task.generatedAt || '',
-    approvedAt: task.automationStatus === 'sent_confirmed' ? task.lastTouch || '' : '',
-    sentAt: task.automationStatus === 'sent_confirmed' ? task.lastTouch || '' : '',
+    discoveredAt: eventTimestamp,
+    profiledAt: eventTimestamp,
+    approvedAt: task.automationStatus === 'sent_confirmed' ? sentTimestamp : '',
+    sentAt: task.automationStatus === 'sent_confirmed' ? sentTimestamp : '',
     sendStatus: task.automationStatus || '',
-    repliedAt: task.originalStatus === 'Replied' ? task.lastKnownTouch || '' : '',
-    contactCapturedAt: task.contact ? task.lastTouch || '' : '',
+    repliedAt: task.originalStatus === 'Replied' ? validTimestamp(task.lastKnownTouch) : '',
+    contactCapturedAt: task.contact ? sentTimestamp : '',
+    autoSkippedAt: task.automationStatus === 'auto_skipped' ? eventTimestamp : '',
     trend: {
       status: 'data_unavailable',
       region: task.countryEn || task.country || '',
@@ -38,7 +53,8 @@
       index: null,
       direction: 'unknown',
     },
-  }));
+    });
+  });
   const audit = tasks
     .filter(task => task.sendStatus === 'sent_confirmed')
     .map(task => ({

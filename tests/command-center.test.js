@@ -20,6 +20,20 @@ test('dashboard loads autonomous command center assets', () => {
   }
 });
 
+test('command center exposes weekly and monthly reporting controls', () => {
+  assert.ok(js.includes("['reports', '汇报中心']"));
+  assert.ok(js.includes('analytics.buildPeriodReport'));
+  assert.ok(js.includes('data-report-type="weekly"'));
+  assert.ok(js.includes('data-report-type="monthly"'));
+  assert.ok(js.includes('report-period'));
+});
+
+test('reporting center supports CSV export and browser print', () => {
+  assert.ok(js.includes('exportCurrentReportCsv'));
+  assert.ok(js.includes('text/csv;charset=utf-8'));
+  assert.ok(js.includes('window.print()'));
+});
+
 test('command center contains separated operational views', () => {
   for (const label of ['开发工作台', '今日队列', '客户附表', 'SEO 趋势', '模板实验', '自动化审计', '系统设置']) {
     assert.ok(js.includes(label), label);
