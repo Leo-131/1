@@ -17,7 +17,8 @@
     ['settings', '系统设置'],
   ];
   const query = new URLSearchParams(location.search);
-  const view = views.some(item => item[0] === query.get('view')) ? query.get('view') : 'workspace';
+  const requestedView = query.get('view');
+  const view = requestedView === 'customer' || views.some(item => item[0] === requestedView) ? requestedView : 'workspace';
   const legacyRecords = typeof allRecords !== 'undefined' && Array.isArray(allRecords) ? allRecords : [];
   const tasks = data.tasks || [];
   let currentReport = null;
@@ -56,11 +57,7 @@
     });
   }
   function currentTask() {
-    const active = tasks.filter(task => task.identityVerified && !['outcome_pending', 'auto_skipped'].includes(task.state));
-    return active.sort((left, right) => scoreTask(right).total - scoreTask(left).total)[0]
-      || tasks.filter(task => task.identityVerified).sort((left, right) => scoreTask(right).total - scoreTask(left).total)[0]
-      || tasks.slice().sort((left, right) => scoreTask(right).total - scoreTask(left).total)[0]
-      || null;
+    return untouchedTasks().sort((left, right) => scoreTask(right).total - scoreTask(left).total)[0] || null;
   }
   function platformUrl(record) {
     const candidates = [
@@ -100,6 +97,33 @@
       && task.state !== 'outcome_pending'
       && !task.previouslyContacted
       && localStorage.getItem(`glm-direct-completed:${task.taskId}`) !== '1';
+  }
+  function untouchedTasks() {
+    return tasks.filter(task => task.identityVerified
+      && !task.previouslyContacted
+      && task.sendStatus !== 'sent_confirmed'
+      && task.automationStatus !== 'sent_confirmed'
+      && !['outcome_pending', 'auto_skipped'].includes(task.state));
+  }
+  function followupTasks() {
+    return tasks.filter(task => task.previouslyContacted
+      || task.sendStatus === 'sent_confirmed'
+      || task.automationStatus === 'sent_confirmed'
+      || task.state === 'outcome_pending');
+  }
+  function uniqueValues(records, key) {
+    return [...new Set(records.map(record => String(record[key] || '').trim()).filter(Boolean))]
+      .sort((left, right) => left.localeCompare(right));
+  }
+  function optionList(values, selected, allLabel) {
+    return `<option value="">${allLabel}</option>${values.map(value => `<option value="${esc(value)}" ${selected === value ? 'selected' : ''}>${esc(value)}</option>`).join('')}`;
+  }
+  function recordTouched(record) {
+    return Boolean(record.lastTouch || record.contact || record.followUpAt)
+      || /sent|replied|accepted|done|rejected|failed|已触达|已获取联系方式/i.test(String(record.status || ''));
+  }
+  function recordKey(record, index) {
+    return encodeURIComponent([record.platform, record.name, record.company, index].join('|'));
   }
   function nav() {
     return `<aside class="cc-sidebar"><div class="cc-brand"><b>Customer Development</b><span>Codex Decision · AutoClaw Execution</span></div>
@@ -164,37 +188,113 @@
   }
   function workspace() {
     const task = currentTask();
+    const untouched = untouchedTasks();
+    const followups = followupTasks();
     const confirmed = tasks.filter(item => item.sendStatus === 'sent_confirmed').length;
-    const skipped = tasks.filter(item => item.state === 'auto_skipped').length;
     const eligibleCount = tasks.filter(canRunGlm).length;
     const executionConnected = autoClawConnected();
-    if (!task) return pageHead('开发工作台', '暂无已验证任务') + '<div class="cc-empty">请先生成精确账号任务。</div>';
+    const metrics = `<div class="cc-kpis">
+      <a class="cc-kpi cc-kpi-link" href="${urlFor('queue', { queue: 'untouched' })}"><span>今日待开发</span><b>${untouched.length}</b></a>
+      <a class="cc-kpi cc-kpi-link" href="${urlFor('queue', { queue: 'followup' })}"><span>跟进中</span><b>${followups.length}</b></a>
+      <a class="cc-kpi cc-kpi-link" href="${urlFor('customers', { touch: 'untouched' })}"><span>候选客户池</span><b>${legacyRecords.filter(record => !recordTouched(record)).length}</b></a>
+      <a class="cc-kpi cc-kpi-link" href="${urlFor('queue', { queue: 'all' })}"><span>已确认发送</span><b>${confirmed}</b></a>
+    </div>`;
+    const connection = `<div class="cc-quality">${executionConnected ? 'AutoClaw 已连接：桌面执行层可用' : 'AutoClaw 未连接：当前是网页预览，请使用桌面 APP 执行；历史客户仍会因防重复规则保持禁用'}</div>`;
+    if (!task) {
+      return `${pageHead('开发工作台', 'Codex 负责决策与审批，AutoClaw 只执行未触达且已核验的新客户')}
+        ${metrics}${connection}
+        <section class="cc-panel"><div class="cc-panel-head"><h2>今日新开发</h2><a href="${urlFor('customers', { touch: 'untouched' })}">筛选候选客户</a></div>
+        <div class="cc-empty">当前没有符合“未触达 + 身份已核验”的新任务。历史客户已移入“跟进中”，不会重复发送。</div></section>
+        <section class="cc-panel"><div class="cc-panel-head"><h2>跟进优先</h2><a href="${urlFor('queue', { queue: 'followup' })}">查看 ${followups.length} 条</a></div>
+        <div class="cc-table-wrap">${taskTable(followups.slice(0, 8))}</div></section>`;
+    }
     const score = scoreTask(task);
     return `${pageHead('开发工作台', 'Codex 负责决策与审批，AutoClaw 按精确账号串行执行，GLM 辅助画像与文案')}
-      <div class="cc-kpis"><div class="cc-kpi"><span>今日队列</span><b>${tasks.length}</b></div><div class="cc-kpi"><span>已确认发送</span><b>${confirmed}</b></div><div class="cc-kpi"><span>可自动执行</span><b>${eligibleCount}</b></div><div class="cc-kpi"><span>等待回复</span><b>${tasks.filter(item => item.state === 'outcome_pending').length}</b></div></div>
-      <div class="cc-quality">${executionConnected ? 'AutoClaw 已连接：桌面执行层可用' : 'AutoClaw 未连接：当前是网页预览，请使用桌面 APP 执行；历史客户仍会因防重复规则保持禁用'}</div>
+      ${metrics}${connection}
       <section class="cc-panel"><div class="cc-panel-head"><h2>当前客户</h2><div class="cc-row-actions"><button class="primary" type="button" onclick="runGlmQueue()" ${eligibleCount ? '' : 'disabled'}>${eligibleCount ? '开始 AutoClaw 串行队列' : '暂无待开发客户'}</button><span class="cc-chip green">${stateLabel(task.state)}</span></div></div><div class="cc-panel-body">
         <div class="cc-current"><div><h3>${platformUrl(task) ? `<a href="${esc(platformUrl(task))}" target="_blank" rel="noopener">${esc(task.company)}</a>` : esc(task.company)}</h3><div class="cc-sub">${esc(task.role || '采购/合作负责人')} · ${esc(task.country || '区域待补全')} · ${esc(task.keyword)}</div><div class="cc-actions"><button type="button" onclick="openVerifiedCustomer('${esc(task.taskId)}')" ${platformUrl(task) ? '' : 'disabled'}>打开客户主页</button><button class="primary" type="button" title="${esc(autoClawAvailability(task).reason)}" onclick="runGlmDirect('${esc(task.taskId)}')" ${canRunGlm(task) ? '' : 'disabled'}>${esc(autoClawAvailability(task).label)}</button><a href="${urlFor('customer', { contact: task.taskId })}">查看系统档案</a></div></div><div class="cc-score"><strong>${score.total}</strong><span>综合开发分 / 100</span></div></div>
         ${stageRoute(task)}
         ${task.identityStatus === 'identity_mismatch' ? `<div class="cc-quality">身份不匹配：${esc(task.identityNote || '该账号与目标客户画像不一致，已禁止自动执行。')}</div>` : ''}
         <div class="cc-message">${esc(task.approvedMessage || 'Codex 将依据账号证据和客户画像审批，GLM 可辅助生成文案。')}</div>
       </div></section>
-      <section class="cc-panel"><div class="cc-panel-head"><h2>接下来</h2><a href="${urlFor('queue')}">查看全部</a></div><div class="cc-table-wrap">${taskTable(tasks.slice().sort((left, right) => scoreTask(right).total - scoreTask(left).total).slice(0, 8))}</div></section>`;
+      <section class="cc-panel"><div class="cc-panel-head"><h2>接下来</h2><a href="${urlFor('queue', { queue: 'untouched' })}">查看全部</a></div><div class="cc-table-wrap">${taskTable(untouched.slice().sort((left, right) => scoreTask(right).total - scoreTask(left).total).slice(0, 8))}</div></section>`;
   }
   function taskTable(list) {
-    return `<table class="cc-table"><thead><tr><th>客户</th><th>国家</th><th>关键词</th><th>状态</th><th>分数</th><th>操作</th></tr></thead><tbody>${list.map(task => `<tr><td>${platformUrl(task) ? `<a href="${esc(platformUrl(task))}" target="_blank" rel="noopener">${esc(task.company)}</a>` : esc(task.company)}${task.identityStatus === 'identity_mismatch' ? '<br><span class="cc-chip">身份不匹配</span>' : ''}</td><td>${esc(task.country)}</td><td>${esc(task.keyword)}</td><td><span class="cc-chip">${stateLabel(task.state)}</span></td><td>${scoreTask(task).total}</td><td><div class="cc-row-actions"><button type="button" onclick="openVerifiedCustomer('${esc(task.taskId)}')" ${platformUrl(task) ? '' : 'disabled'}>打开</button><button type="button" title="${esc(autoClawAvailability(task).reason)}" onclick="runGlmDirect('${esc(task.taskId)}')" ${canRunGlm(task) ? '' : 'disabled'}>${esc(autoClawAvailability(task).label)}</button></div></td></tr>`).join('')}</tbody></table>`;
+    if (!list.length) return '<div class="cc-empty">当前筛选下没有客户</div>';
+    return `<table class="cc-table"><thead><tr><th>客户</th><th>国家</th><th>关键词</th><th>状态</th><th>分数</th><th>操作</th></tr></thead><tbody>${list.map(task => `<tr><td><a href="${urlFor('customer', { contact: task.taskId })}">${esc(task.company)}</a>${task.identityStatus === 'identity_mismatch' ? '<br><span class="cc-chip red">身份不匹配</span>' : ''}</td><td>${esc(task.country)}</td><td>${esc(task.keyword)}</td><td><span class="cc-chip">${stateLabel(task.state)}</span></td><td>${scoreTask(task).total}</td><td><div class="cc-row-actions"><button type="button" onclick="openVerifiedCustomer('${esc(task.taskId)}')" ${platformUrl(task) ? '' : 'disabled'}>打开主页</button><button type="button" title="${esc(autoClawAvailability(task).reason)}" onclick="runGlmDirect('${esc(task.taskId)}')" ${canRunGlm(task) ? '' : 'disabled'}>${esc(autoClawAvailability(task).label)}</button></div></td></tr>`).join('')}</tbody></table>`;
   }
   function queue() {
-    return pageHead('今日队列', '每个任务最终进入发送、排期、换渠道或自动跳过') + `<div class="cc-table-wrap">${taskTable(tasks)}</div>`;
+    const mode = query.get('queue') || 'untouched';
+    const list = mode === 'followup' ? followupTasks() : mode === 'all' ? tasks : untouchedTasks();
+    const tabs = [
+      ['untouched', '今日待开发', untouchedTasks().length],
+      ['followup', '跟进中', followupTasks().length],
+      ['all', '全部任务', tasks.length],
+    ];
+    return `${pageHead('今日队列', '默认只显示未触达且身份核验通过的新客户，历史客户单独跟进')}
+      <div class="cc-view-tabs">${tabs.map(([key, label, count]) => `<a class="${mode === key ? 'active' : ''}" href="${urlFor('queue', { queue: key })}">${label} <b>${count}</b></a>`).join('')}</div>
+      <div class="cc-table-wrap">${taskTable(list)}</div>`;
   }
   function customers() {
-    const rows = legacyRecords.slice(0, 1000);
-    return `${pageHead('客户附表', `完整客户资料与筛选，当前载入 ${legacyRecords.length} 条`)}
-      <div class="cc-table-wrap"><table class="cc-table"><thead><tr><th>姓名</th><th>公司</th><th>职位</th><th>国家</th><th>平台</th><th>状态</th><th>ICP</th></tr></thead><tbody>${rows.map((record, index) => {
-        const key = encodeURIComponent([record.platform, record.name, record.company, index].join('|'));
-        const directUrl = platformUrl(record);
-        return `<tr><td>${directUrl ? `<a href="${esc(directUrl)}" target="_blank" rel="noopener">${esc(record.name)}</a>` : `<a href="${urlFor('customer', { contact: key })}">${esc(record.name)}</a>`}</td><td>${esc(record.company)}</td><td>${esc(record.role)}</td><td>${esc(record.country)}</td><td>${esc(record.platform)}</td><td>${esc(record.status)}</td><td>${esc(record.fitScore || '')}</td></tr>`;
-      }).join('')}</tbody></table></div>`;
+    const search = String(query.get('search') || '').trim().toLowerCase();
+    const platform = query.get('platform') || '';
+    const status = query.get('status') || '';
+    const country = query.get('country') || '';
+    const industry = query.get('industry') || '';
+    const source = query.get('source') || '';
+    const touch = query.get('touch') || '';
+    const sort = query.get('sort') || 'fitScore';
+    const direction = query.get('direction') === 'asc' ? 'asc' : 'desc';
+    const indexed = legacyRecords.map((record, index) => ({ record, index }));
+    const filtered = indexed.filter(({ record }) => {
+      const haystack = [record.name, record.company, record.role, record.country, record.industry, record.source].join(' ').toLowerCase();
+      if (search && !haystack.includes(search)) return false;
+      if (platform && String(record.platform || '') !== platform) return false;
+      if (status && String(record.status || '') !== status) return false;
+      if (country && String(record.country || '') !== country) return false;
+      if (industry && String(record.industry || '') !== industry) return false;
+      if (source && String(record.source || '') !== source) return false;
+      if (touch === 'untouched' && recordTouched(record)) return false;
+      if (touch === 'touched' && !recordTouched(record)) return false;
+      if (touch === 'contact' && !record.contact) return false;
+      if (touch === 'followup' && !record.followUpAt && !/follow|跟进/i.test(String(record.status || ''))) return false;
+      return true;
+    });
+    const sortableValue = record => {
+      if (sort === 'fitScore' || sort === 'marketScore') return Number(record[sort] || 0);
+      if (sort === 'lastTouch') return Date.parse(record.lastTouch || record.date || '') || 0;
+      return String(record[sort] || '').toLowerCase();
+    };
+    filtered.sort((left, right) => {
+      const a = sortableValue(left.record);
+      const b = sortableValue(right.record);
+      const result = typeof a === 'number' ? a - b : a.localeCompare(b);
+      return direction === 'asc' ? result : -result;
+    });
+    const rows = filtered.slice(0, 1000);
+    const sortHref = key => urlFor('customers', {
+      search: query.get('search') || '', platform, status, country, industry, source, touch,
+      sort: key, direction: sort === key && direction === 'desc' ? 'asc' : 'desc',
+    });
+    const head = (key, label) => `<th class="cc-sortable"><a href="${sortHref(key)}">${label}${sort === key ? (direction === 'asc' ? ' ↑' : ' ↓') : ''}</a></th>`;
+    return `${pageHead('客户附表', `18.4 筛选模式 · ${filtered.length} / ${legacyRecords.length} 条`)}
+      <form class="cc-filter-bar" onsubmit="applyCustomerFilters(event)">
+        <input type="hidden" name="view" value="customers">
+        <input id="customer-search" name="search" value="${esc(query.get('search') || '')}" placeholder="搜索姓名、公司、职位...">
+        <select id="customer-platform" name="platform">${optionList(uniqueValues(legacyRecords, 'platform'), platform, '全部平台')}</select>
+        <select id="customer-status" name="status">${optionList(uniqueValues(legacyRecords, 'status'), status, '全部状态')}</select>
+        <select id="customer-country" name="country">${optionList(uniqueValues(legacyRecords, 'country'), country, '全部国家')}</select>
+        <select id="customer-industry" name="industry">${optionList(uniqueValues(legacyRecords, 'industry'), industry, '全部行业')}</select>
+        <select id="customer-source" name="source">${optionList(uniqueValues(legacyRecords, 'source'), source, '全部来源')}</select>
+        <select id="customer-touch" name="touch"><option value="">全部触达状态</option><option value="untouched" ${touch === 'untouched' ? 'selected' : ''}>未触达</option><option value="touched" ${touch === 'touched' ? 'selected' : ''}>已触达</option><option value="contact" ${touch === 'contact' ? 'selected' : ''}>已获取联系方式</option><option value="followup" ${touch === 'followup' ? 'selected' : ''}>需跟进</option></select>
+        <select id="customer-sort" name="sort"><option value="fitScore" ${sort === 'fitScore' ? 'selected' : ''}>ICP 分数</option><option value="marketScore" ${sort === 'marketScore' ? 'selected' : ''}>市场分数</option><option value="lastTouch" ${sort === 'lastTouch' ? 'selected' : ''}>最近触达</option><option value="company" ${sort === 'company' ? 'selected' : ''}>公司</option></select>
+        <input type="hidden" name="direction" value="${direction}">
+        <button class="primary" type="submit">筛选</button><a class="cc-reset" href="${urlFor('customers')}">重置筛选</a>
+      </form>
+      <div class="cc-table-wrap"><table class="cc-table"><thead><tr>${head('name', '姓名')}${head('company', '公司')}<th>职位</th>${head('country', '国家')}<th>平台</th>${head('status', '状态')}${head('fitScore', 'ICP')}<th>最近触达</th></tr></thead><tbody>${rows.map(({ record, index }) => {
+        const key = recordKey(record, index);
+        return `<tr class="cc-click-row" onclick="location.href='${urlFor('customer', { contact: key })}'"><td><a href="${urlFor('customer', { contact: key })}">${esc(record.name)}</a></td><td>${esc(record.company)}</td><td>${esc(record.role)}</td><td>${esc(record.country)}</td><td>${esc(record.platform)}</td><td><span class="cc-chip">${esc(record.status)}</span></td><td>${esc(record.fitScore || '')}</td><td>${esc(record.lastTouch || record.date || '')}</td></tr>`;
+      }).join('')}</tbody></table>${rows.length ? '' : '<div class="cc-empty">没有匹配客户，请重置或调整筛选条件</div>'}</div>`;
   }
   function seo() {
     const metrics = analytics.buildKeywordMetrics(tasks);
@@ -249,6 +349,26 @@
 
   function csvCell(value) {
     return `"${String(value == null ? '' : value).replace(/"/g, '""')}"`;
+  }
+
+  function applyCustomerFilters(event) {
+    event.preventDefault();
+    const values = {};
+    [
+      ['search', 'customer-search'],
+      ['platform', 'customer-platform'],
+      ['status', 'customer-status'],
+      ['country', 'customer-country'],
+      ['industry', 'customer-industry'],
+      ['source', 'customer-source'],
+      ['touch', 'customer-touch'],
+      ['sort', 'customer-sort'],
+    ].forEach(([key, id]) => {
+      const value = document.getElementById(id)?.value || '';
+      if (value) values[key] = value;
+    });
+    values.direction = document.querySelector('.cc-filter-bar input[name="direction"]')?.value || 'desc';
+    location.href = urlFor('customers', values);
   }
   function exportCurrentReportCsv() {
     if (!currentReport || !currentReport.hasData) return;
@@ -357,6 +477,7 @@
   }
 
   window.exportCurrentReportCsv = exportCurrentReportCsv;
+  window.applyCustomerFilters = applyCustomerFilters;
   window.openVerifiedCustomer = openVerifiedCustomer;
   window.runGlmDirect = runGlmDirect;
   window.runGlmQueue = runGlmQueue;

@@ -1,4 +1,4 @@
-const CACHE_NAME = 'customer-development-system-v18-6-2-20260612-autoclaw-status';
+const CACHE_NAME = 'customer-development-system-v18-7-0-20260612-queue-filters';
 const APP_SHELL = [
   './',
   './index.html',

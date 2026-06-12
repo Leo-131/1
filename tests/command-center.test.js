@@ -57,6 +57,7 @@ test('command center contains separated operational views', () => {
 test('customer detail opens in a new tab without replacing the shell', () => {
   assert.match(js, /target="_blank"/);
   assert.match(js, /urlFor\('customer'/);
+  assert.ok(js.includes("requestedView === 'customer'"));
   assert.ok(js.includes('command-center-shell'));
 });
 
@@ -94,6 +95,36 @@ test('AutoClaw buttons explain desktop connection and duplicate-contact blocks',
   assert.ok(js.includes('需桌面 APP'));
   assert.ok(js.includes('AutoClaw 未连接'));
   assert.ok(js.includes('AutoClaw 已连接'));
+});
+
+test('today queue separates untouched work from historical follow-ups', () => {
+  assert.ok(js.includes('function untouchedTasks'));
+  assert.ok(js.includes('function followupTasks'));
+  assert.ok(js.includes("query.get('queue') || 'untouched'"));
+  assert.ok(js.includes('今日待开发'));
+  assert.ok(js.includes('跟进中'));
+});
+
+test('command center customer list restores 18.4 filtering and sorting controls', () => {
+  for (const token of [
+    'customer-search',
+    'customer-platform',
+    'customer-status',
+    'customer-country',
+    'customer-industry',
+    'customer-source',
+    'customer-touch',
+    'customer-sort',
+    'applyCustomerFilters',
+    '重置筛选',
+  ]) assert.ok(js.includes(token), token);
+});
+
+test('workspace metric cards navigate to matching filtered content', () => {
+  assert.ok(js.includes('cc-kpi-link'));
+  assert.ok(js.includes("urlFor('queue', { queue: 'untouched' })"));
+  assert.ok(js.includes("urlFor('queue', { queue: 'followup' })"));
+  assert.ok(js.includes("urlFor('customers', { touch: 'untouched' })"));
 });
 
 test('trend unavailability is visible and not presented as a guessed number', () => {
