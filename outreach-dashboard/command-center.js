@@ -73,8 +73,27 @@
     ];
     return candidates.find(value => /^https:\/\/(www\.)?(instagram|facebook|linkedin)\.com\//i.test(String(value || ''))) || '';
   }
+  function autoClawConnected() {
+    return Boolean(window.customerDev && window.customerDev.runGlmDirectAutomation);
+  }
+  function autoClawAvailability(task) {
+    if (!task || !platformUrl(task)) return { ready: false, label: '缺少主页', reason: '没有已核验的平台主页' };
+    if (task.identityStatus !== 'verified') return { ready: false, label: '身份不匹配', reason: task.identityNote || '客户身份未通过核验' };
+    if (task.sendStatus === 'sent_confirmed'
+      || task.automationStatus === 'sent_confirmed'
+      || task.state === 'outcome_pending'
+      || task.previouslyContacted) {
+      return { ready: false, label: '已触达', reason: '该客户已触达，正在等待回复，禁止重复发送' };
+    }
+    if (localStorage.getItem(`glm-direct-completed:${task.taskId}`) === '1') {
+      return { ready: false, label: '已完成', reason: '本机已记录该客户完成自动开发' };
+    }
+    if (!autoClawConnected()) return { ready: false, label: '需桌面 APP', reason: '当前为网页预览，未连接 AutoClaw 桌面执行层' };
+    return { ready: true, label: 'AutoClaw', reason: 'AutoClaw 已连接，可以执行' };
+  }
   function canRunGlm(task) {
-    return Boolean(platformUrl(task))
+    return autoClawAvailability(task).ready
+      && Boolean(platformUrl(task))
       && task.identityStatus === 'verified'
       && task.sendStatus !== 'sent_confirmed'
       && task.automationStatus !== 'sent_confirmed'
@@ -147,12 +166,15 @@
     const task = currentTask();
     const confirmed = tasks.filter(item => item.sendStatus === 'sent_confirmed').length;
     const skipped = tasks.filter(item => item.state === 'auto_skipped').length;
+    const eligibleCount = tasks.filter(canRunGlm).length;
+    const executionConnected = autoClawConnected();
     if (!task) return pageHead('开发工作台', '暂无已验证任务') + '<div class="cc-empty">请先生成精确账号任务。</div>';
     const score = scoreTask(task);
     return `${pageHead('开发工作台', 'Codex 负责决策与审批，AutoClaw 按精确账号串行执行，GLM 辅助画像与文案')}
-      <div class="cc-kpis"><div class="cc-kpi"><span>今日队列</span><b>${tasks.length}</b></div><div class="cc-kpi"><span>已确认发送</span><b>${confirmed}</b></div><div class="cc-kpi"><span>自动跳过</span><b>${skipped}</b></div><div class="cc-kpi"><span>等待回复</span><b>${tasks.filter(item => item.state === 'outcome_pending').length}</b></div></div>
-      <section class="cc-panel"><div class="cc-panel-head"><h2>当前客户</h2><div class="cc-row-actions"><button class="primary" type="button" onclick="runGlmQueue()">开始 AutoClaw 串行队列</button><span class="cc-chip green">${stateLabel(task.state)}</span></div></div><div class="cc-panel-body">
-        <div class="cc-current"><div><h3>${platformUrl(task) ? `<a href="${esc(platformUrl(task))}" target="_blank" rel="noopener">${esc(task.company)}</a>` : esc(task.company)}</h3><div class="cc-sub">${esc(task.role || '采购/合作负责人')} · ${esc(task.country || '区域待补全')} · ${esc(task.keyword)}</div><div class="cc-actions"><button type="button" onclick="openVerifiedCustomer('${esc(task.taskId)}')" ${platformUrl(task) ? '' : 'disabled'}>打开客户主页</button><button class="primary" type="button" onclick="runGlmDirect('${esc(task.taskId)}')" ${canRunGlm(task) ? '' : 'disabled'}>AutoClaw 自动开发</button><a href="${urlFor('customer', { contact: task.taskId })}">查看系统档案</a></div></div><div class="cc-score"><strong>${score.total}</strong><span>综合开发分 / 100</span></div></div>
+      <div class="cc-kpis"><div class="cc-kpi"><span>今日队列</span><b>${tasks.length}</b></div><div class="cc-kpi"><span>已确认发送</span><b>${confirmed}</b></div><div class="cc-kpi"><span>可自动执行</span><b>${eligibleCount}</b></div><div class="cc-kpi"><span>等待回复</span><b>${tasks.filter(item => item.state === 'outcome_pending').length}</b></div></div>
+      <div class="cc-quality">${executionConnected ? 'AutoClaw 已连接：桌面执行层可用' : 'AutoClaw 未连接：当前是网页预览，请使用桌面 APP 执行；历史客户仍会因防重复规则保持禁用'}</div>
+      <section class="cc-panel"><div class="cc-panel-head"><h2>当前客户</h2><div class="cc-row-actions"><button class="primary" type="button" onclick="runGlmQueue()" ${eligibleCount ? '' : 'disabled'}>${eligibleCount ? '开始 AutoClaw 串行队列' : '暂无待开发客户'}</button><span class="cc-chip green">${stateLabel(task.state)}</span></div></div><div class="cc-panel-body">
+        <div class="cc-current"><div><h3>${platformUrl(task) ? `<a href="${esc(platformUrl(task))}" target="_blank" rel="noopener">${esc(task.company)}</a>` : esc(task.company)}</h3><div class="cc-sub">${esc(task.role || '采购/合作负责人')} · ${esc(task.country || '区域待补全')} · ${esc(task.keyword)}</div><div class="cc-actions"><button type="button" onclick="openVerifiedCustomer('${esc(task.taskId)}')" ${platformUrl(task) ? '' : 'disabled'}>打开客户主页</button><button class="primary" type="button" title="${esc(autoClawAvailability(task).reason)}" onclick="runGlmDirect('${esc(task.taskId)}')" ${canRunGlm(task) ? '' : 'disabled'}>${esc(autoClawAvailability(task).label)}</button><a href="${urlFor('customer', { contact: task.taskId })}">查看系统档案</a></div></div><div class="cc-score"><strong>${score.total}</strong><span>综合开发分 / 100</span></div></div>
         ${stageRoute(task)}
         ${task.identityStatus === 'identity_mismatch' ? `<div class="cc-quality">身份不匹配：${esc(task.identityNote || '该账号与目标客户画像不一致，已禁止自动执行。')}</div>` : ''}
         <div class="cc-message">${esc(task.approvedMessage || 'Codex 将依据账号证据和客户画像审批，GLM 可辅助生成文案。')}</div>
@@ -160,7 +182,7 @@
       <section class="cc-panel"><div class="cc-panel-head"><h2>接下来</h2><a href="${urlFor('queue')}">查看全部</a></div><div class="cc-table-wrap">${taskTable(tasks.slice().sort((left, right) => scoreTask(right).total - scoreTask(left).total).slice(0, 8))}</div></section>`;
   }
   function taskTable(list) {
-    return `<table class="cc-table"><thead><tr><th>客户</th><th>国家</th><th>关键词</th><th>状态</th><th>分数</th><th>操作</th></tr></thead><tbody>${list.map(task => `<tr><td>${platformUrl(task) ? `<a href="${esc(platformUrl(task))}" target="_blank" rel="noopener">${esc(task.company)}</a>` : esc(task.company)}${task.identityStatus === 'identity_mismatch' ? '<br><span class="cc-chip">身份不匹配</span>' : ''}</td><td>${esc(task.country)}</td><td>${esc(task.keyword)}</td><td><span class="cc-chip">${stateLabel(task.state)}</span></td><td>${scoreTask(task).total}</td><td><div class="cc-row-actions"><button type="button" onclick="openVerifiedCustomer('${esc(task.taskId)}')" ${platformUrl(task) ? '' : 'disabled'}>打开</button><button type="button" onclick="runGlmDirect('${esc(task.taskId)}')" ${canRunGlm(task) ? '' : 'disabled'}>AutoClaw</button></div></td></tr>`).join('')}</tbody></table>`;
+    return `<table class="cc-table"><thead><tr><th>客户</th><th>国家</th><th>关键词</th><th>状态</th><th>分数</th><th>操作</th></tr></thead><tbody>${list.map(task => `<tr><td>${platformUrl(task) ? `<a href="${esc(platformUrl(task))}" target="_blank" rel="noopener">${esc(task.company)}</a>` : esc(task.company)}${task.identityStatus === 'identity_mismatch' ? '<br><span class="cc-chip">身份不匹配</span>' : ''}</td><td>${esc(task.country)}</td><td>${esc(task.keyword)}</td><td><span class="cc-chip">${stateLabel(task.state)}</span></td><td>${scoreTask(task).total}</td><td><div class="cc-row-actions"><button type="button" onclick="openVerifiedCustomer('${esc(task.taskId)}')" ${platformUrl(task) ? '' : 'disabled'}>打开</button><button type="button" title="${esc(autoClawAvailability(task).reason)}" onclick="runGlmDirect('${esc(task.taskId)}')" ${canRunGlm(task) ? '' : 'disabled'}>${esc(autoClawAvailability(task).label)}</button></div></td></tr>`).join('')}</tbody></table>`;
   }
   function queue() {
     return pageHead('今日队列', '每个任务最终进入发送、排期、换渠道或自动跳过') + `<div class="cc-table-wrap">${taskTable(tasks)}</div>`;

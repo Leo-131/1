@@ -88,6 +88,14 @@ test('sent tasks render a completed route ending in outcome pending', () => {
   assert.ok(js.includes('AutoClaw 执行证据'));
 });
 
+test('AutoClaw buttons explain desktop connection and duplicate-contact blocks', () => {
+  assert.ok(js.includes('function autoClawAvailability'));
+  assert.ok(js.includes('已触达'));
+  assert.ok(js.includes('需桌面 APP'));
+  assert.ok(js.includes('AutoClaw 未连接'));
+  assert.ok(js.includes('AutoClaw 已连接'));
+});
+
 test('trend unavailability is visible and not presented as a guessed number', () => {
   assert.ok(js.includes('data_unavailable'));
   assert.ok(js.includes('不显示猜测值'));

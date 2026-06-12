@@ -1,4 +1,4 @@
-const CACHE_NAME = 'customer-development-system-v18-6-1-20260612-profile-calibration';
+const CACHE_NAME = 'customer-development-system-v18-6-2-20260612-autoclaw-status';
 const APP_SHELL = [
   './',
   './index.html',
