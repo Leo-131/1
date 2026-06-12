@@ -5,6 +5,7 @@
   const daily = plan && Array.isArray(plan.tasks)
     ? plan.tasks
     : [];
+  const profiles = root.VERIFIED_PROFILE_REGISTRY || {};
   function validTimestamp(value) {
     return typeof value === 'string' && value && Number.isFinite(Date.parse(value)) ? value : '';
   }
@@ -15,17 +16,14 @@
     }
     return validTimestamp(plan && plan.generatedAt);
   }
-  function inferredTargetUrl(task) {
-    const explicit = task.verifiedTargetUrl || task.targetUrl || task.target_url || task.url || '';
-    if (explicit) return explicit;
-    const platform = String(task.verifiedPlatform || task.platform || '').toLowerCase();
-    const handle = String(task.accountHandle || task.name || '').trim().replace(/^@/, '');
-    if (platform === 'instagram' && /^[a-z0-9._]+$/i.test(handle)) {
-      return `https://www.instagram.com/${handle}/`;
-    }
-    return '';
+  function profileFor(task) {
+    const keys = [task.accountHandle, task.account_handle, task.name]
+      .map(value => String(value || '').trim().replace(/^@/, '').toLowerCase())
+      .filter(Boolean);
+    return keys.map(key => profiles[key]).find(Boolean) || null;
   }
   const tasks = daily.map((task, index) => {
+    const profile = profileFor(task);
     const eventTimestamp = taskTimestamp(task);
     const sentTimestamp = validTimestamp(task.lastTouch) || eventTimestamp;
     const previouslyContacted = /sent|replied|accepted/i.test(String(task.originalStatus || ''))
@@ -34,13 +32,19 @@
     taskId: `verified-${task.platform || 'social'}-${task.accountHandle || task.name || index}`,
     version: 1,
     state: task.automationStatus === 'sent_confirmed' || previouslyContacted ? 'outcome_pending' : 'profile_scored',
-    name: task.name || task.accountHandle || 'Unknown',
-    company: task.company || task.name || 'Unknown',
+    name: profile ? profile.handle : (task.name || task.accountHandle || 'Unknown'),
+    company: profile ? profile.company : (task.company || task.name || 'Unknown'),
+    sourceCompany: task.company || task.name || '',
     role: task.role || '',
     platform: String(task.platform || '').toLowerCase(),
-    country: task.country || '',
-    targetUrl: inferredTargetUrl(task),
-    accountHandle: task.accountHandle || task.account_handle || task.name || '',
+    country: profile && profile.country ? profile.country : (task.country || ''),
+    targetUrl: profile ? profile.url : (task.verifiedTargetUrl || ''),
+    accountHandle: profile ? profile.handle : (task.accountHandle || task.account_handle || task.name || ''),
+    identityStatus: profile ? profile.status : 'unverified',
+    identityVerified: Boolean(profile && profile.status === 'verified'),
+    identityNote: profile && profile.note ? profile.note : '',
+    identitySource: profile && profile.source ? profile.source : '',
+    identityVerifiedAt: profile && profile.verifiedAt ? profile.verifiedAt : '',
     marketStatus: task.marketStatus || '开放',
     keyword: task.keyword || task.keyword_used || 'outdoor retail partnership',
     templateId: task.templateId || 'buyer-contact-v1',
@@ -75,7 +79,7 @@
       id: `${task.taskId}-sent-${task.approvalVersion}`,
       taskId: task.taskId,
       stage: 'sent_confirmed',
-      agent: 'qclaw',
+      agent: 'autoclaw',
       timestamp: task.sentAt,
       result: 'sent_confirmed',
       evidence: task.targetUrl,

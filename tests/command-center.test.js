@@ -14,6 +14,7 @@ test('dashboard loads autonomous command center assets', () => {
     'outreach-engine.js',
     'outreach-analytics.js',
     'autonomous-outreach-results.js',
+    'verified-profile-registry.js',
     'autonomous-outreach-data.js',
     'command-center.css',
     'command-center.js',
@@ -66,12 +67,25 @@ test('SEO view exposes conversion evidence and high-intent keyword opportunities
   assert.ok(js.includes('sampleSize'));
 });
 
-test('command center opens verified platform URLs and exposes GLM direct automation', () => {
+test('command center opens verified platform URLs and exposes assisted automation', () => {
   assert.ok(js.includes('verifiedTargetUrl'));
   assert.ok(js.includes('openVerifiedCustomer'));
   assert.ok(js.includes('runGlmDirect'));
-  assert.ok(js.includes('GLM 自动开发'));
-  assert.ok(html.includes('GLM Auto Develop'));
+  assert.ok(js.includes('AutoClaw 自动开发'));
+  assert.ok(html.includes('Codex + AutoClaw'));
+});
+
+test('command center uses Codex decisions and AutoClaw execution on verified URLs', () => {
+  assert.ok(js.includes('Codex Decision'));
+  assert.ok(js.includes('AutoClaw Execution'));
+  assert.ok(js.includes("task.identityStatus === 'verified'"));
+  assert.ok(html.includes('Codex + AutoClaw'));
+});
+
+test('sent tasks render a completed route ending in outcome pending', () => {
+  assert.ok(js.includes("['outcome_pending'"));
+  assert.ok(js.includes("task.sendStatus === 'sent_confirmed'"));
+  assert.ok(js.includes('AutoClaw 执行证据'));
 });
 
 test('trend unavailability is visible and not presented as a guessed number', () => {

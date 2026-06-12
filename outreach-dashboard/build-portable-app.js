@@ -30,6 +30,7 @@ const appFiles = [
   "outreach-engine.js",
   "outreach-analytics.js",
   "autonomous-outreach-results.js",
+  "verified-profile-registry.js",
   "autonomous-outreach-data.js",
   "command-center.css",
   "command-center.js",

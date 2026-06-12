@@ -1,4 +1,4 @@
-const CACHE_NAME = 'customer-development-system-v18-6-0-20260611-glm-direct';
+const CACHE_NAME = 'customer-development-system-v18-6-1-20260612-profile-calibration';
 const APP_SHELL = [
   './',
   './index.html',
@@ -8,6 +8,7 @@ const APP_SHELL = [
   './outreach-engine.js',
   './outreach-analytics.js',
   './autonomous-outreach-results.js',
+  './verified-profile-registry.js',
   './autonomous-outreach-data.js',
   './command-center.css',
   './command-center.js',
