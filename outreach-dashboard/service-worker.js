@@ -1,4 +1,4 @@
-const CACHE_NAME = 'customer-development-system-v18-7-0-20260612-queue-filters';
+const CACHE_NAME = 'customer-development-system-v18-7-1-20260612-touch-time';
 const APP_SHELL = [
   './',
   './index.html',

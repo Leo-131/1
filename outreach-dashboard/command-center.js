@@ -243,6 +243,9 @@
     const industry = query.get('industry') || '';
     const source = query.get('source') || '';
     const touch = query.get('touch') || '';
+    const touchTime = query.get('touchTime') || '';
+    const touchFrom = query.get('touchFrom') || '';
+    const touchTo = query.get('touchTo') || '';
     const sort = query.get('sort') || 'fitScore';
     const direction = query.get('direction') === 'asc' ? 'asc' : 'desc';
     const indexed = legacyRecords.map((record, index) => ({ record, index }));
@@ -258,6 +261,18 @@
       if (touch === 'touched' && !recordTouched(record)) return false;
       if (touch === 'contact' && !record.contact) return false;
       if (touch === 'followup' && !record.followUpAt && !/follow|跟进/i.test(String(record.status || ''))) return false;
+      const touchValue = record.lastTouch || record.date || '';
+      const touchTimestamp = Date.parse(touchValue);
+      if (touchTime === 'none' && Number.isFinite(touchTimestamp)) return false;
+      if (['7', '30', '90'].includes(touchTime)) {
+        const cutoff = Date.now() - (Number(touchTime) * 86400000);
+        if (!Number.isFinite(touchTimestamp) || touchTimestamp < cutoff) return false;
+      }
+      if (touchTime === 'custom') {
+        const fromTimestamp = touchFrom ? Date.parse(`${touchFrom}T00:00:00`) : Number.NEGATIVE_INFINITY;
+        const toTimestamp = touchTo ? Date.parse(`${touchTo}T23:59:59`) : Number.POSITIVE_INFINITY;
+        if (!Number.isFinite(touchTimestamp) || touchTimestamp < fromTimestamp || touchTimestamp > toTimestamp) return false;
+      }
       return true;
     });
     const sortableValue = record => {
@@ -266,6 +281,16 @@
       return String(record[sort] || '').toLowerCase();
     };
     filtered.sort((left, right) => {
+      if (sort === 'lastTouch') {
+        const leftTouch = Date.parse(left.record.lastTouch || left.record.date || '');
+        const rightTouch = Date.parse(right.record.lastTouch || right.record.date || '');
+        const missingTouch = !Number.isFinite(leftTouch) || !Number.isFinite(rightTouch);
+        if (missingTouch) {
+          if (!Number.isFinite(leftTouch) && !Number.isFinite(rightTouch)) return 0;
+          return !Number.isFinite(leftTouch) ? 1 : -1;
+        }
+        return direction === 'asc' ? leftTouch - rightTouch : rightTouch - leftTouch;
+      }
       const a = sortableValue(left.record);
       const b = sortableValue(right.record);
       const result = typeof a === 'number' ? a - b : a.localeCompare(b);
@@ -274,6 +299,7 @@
     const rows = filtered.slice(0, 1000);
     const sortHref = key => urlFor('customers', {
       search: query.get('search') || '', platform, status, country, industry, source, touch,
+      touchTime, touchFrom, touchTo,
       sort: key, direction: sort === key && direction === 'desc' ? 'asc' : 'desc',
     });
     const head = (key, label) => `<th class="cc-sortable"><a href="${sortHref(key)}">${label}${sort === key ? (direction === 'asc' ? ' ↑' : ' ↓') : ''}</a></th>`;
@@ -287,11 +313,14 @@
         <select id="customer-industry" name="industry">${optionList(uniqueValues(legacyRecords, 'industry'), industry, '全部行业')}</select>
         <select id="customer-source" name="source">${optionList(uniqueValues(legacyRecords, 'source'), source, '全部来源')}</select>
         <select id="customer-touch" name="touch"><option value="">全部触达状态</option><option value="untouched" ${touch === 'untouched' ? 'selected' : ''}>未触达</option><option value="touched" ${touch === 'touched' ? 'selected' : ''}>已触达</option><option value="contact" ${touch === 'contact' ? 'selected' : ''}>已获取联系方式</option><option value="followup" ${touch === 'followup' ? 'selected' : ''}>需跟进</option></select>
+        <select id="customer-touch-time" name="touchTime"><option value="">全部触达时间</option><option value="none" ${touchTime === 'none' ? 'selected' : ''}>无触达时间</option><option value="7" ${touchTime === '7' ? 'selected' : ''}>最近 7 天</option><option value="30" ${touchTime === '30' ? 'selected' : ''}>最近 30 天</option><option value="90" ${touchTime === '90' ? 'selected' : ''}>最近 90 天</option><option value="custom" ${touchTime === 'custom' ? 'selected' : ''}>自定义日期</option></select>
+        <input id="customer-touch-from" name="touchFrom" type="date" value="${esc(touchFrom)}" title="最近触达开始日期">
+        <input id="customer-touch-to" name="touchTo" type="date" value="${esc(touchTo)}" title="最近触达结束日期">
         <select id="customer-sort" name="sort"><option value="fitScore" ${sort === 'fitScore' ? 'selected' : ''}>ICP 分数</option><option value="marketScore" ${sort === 'marketScore' ? 'selected' : ''}>市场分数</option><option value="lastTouch" ${sort === 'lastTouch' ? 'selected' : ''}>最近触达</option><option value="company" ${sort === 'company' ? 'selected' : ''}>公司</option></select>
         <input type="hidden" name="direction" value="${direction}">
         <button class="primary" type="submit">筛选</button><a class="cc-reset" href="${urlFor('customers')}">重置筛选</a>
       </form>
-      <div class="cc-table-wrap"><table class="cc-table"><thead><tr>${head('name', '姓名')}${head('company', '公司')}<th>职位</th>${head('country', '国家')}<th>平台</th>${head('status', '状态')}${head('fitScore', 'ICP')}<th>最近触达</th></tr></thead><tbody>${rows.map(({ record, index }) => {
+      <div class="cc-table-wrap"><table class="cc-table"><thead><tr>${head('name', '姓名')}${head('company', '公司')}<th>职位</th>${head('country', '国家')}<th>平台</th>${head('status', '状态')}${head('fitScore', 'ICP')}${head('lastTouch', '最近触达')}</tr></thead><tbody>${rows.map(({ record, index }) => {
         const key = recordKey(record, index);
         return `<tr class="cc-click-row" onclick="location.href='${urlFor('customer', { contact: key })}'"><td><a href="${urlFor('customer', { contact: key })}">${esc(record.name)}</a></td><td>${esc(record.company)}</td><td>${esc(record.role)}</td><td>${esc(record.country)}</td><td>${esc(record.platform)}</td><td><span class="cc-chip">${esc(record.status)}</span></td><td>${esc(record.fitScore || '')}</td><td>${esc(record.lastTouch || record.date || '')}</td></tr>`;
       }).join('')}</tbody></table>${rows.length ? '' : '<div class="cc-empty">没有匹配客户，请重置或调整筛选条件</div>'}</div>`;
@@ -362,6 +391,9 @@
       ['industry', 'customer-industry'],
       ['source', 'customer-source'],
       ['touch', 'customer-touch'],
+      ['touchTime', 'customer-touch-time'],
+      ['touchFrom', 'customer-touch-from'],
+      ['touchTo', 'customer-touch-to'],
       ['sort', 'customer-sort'],
     ].forEach(([key, id]) => {
       const value = document.getElementById(id)?.value || '';

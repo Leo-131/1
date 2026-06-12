@@ -127,6 +127,22 @@ test('workspace metric cards navigate to matching filtered content', () => {
   assert.ok(js.includes("urlFor('customers', { touch: 'untouched' })"));
 });
 
+test('recent-touch supports range filtering and ascending or descending sorting', () => {
+  for (const token of [
+    'customer-touch-time',
+    'customer-touch-from',
+    'customer-touch-to',
+    'touchTime',
+    'touchFrom',
+    'touchTo',
+    "head('lastTouch', '最近触达')",
+    '最近 7 天',
+    '自定义日期',
+  ]) assert.ok(js.includes(token), token);
+  assert.ok(js.includes("sort === 'lastTouch'"));
+  assert.ok(js.includes('missingTouch'));
+});
+
 test('trend unavailability is visible and not presented as a guessed number', () => {
   assert.ok(js.includes('data_unavailable'));
   assert.ok(js.includes('不显示猜测值'));
