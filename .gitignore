@@ -2,6 +2,8 @@
 .playwright-cli/
 .superpowers/
 tools/qclaw/output/
+openclaw-workspace/
+openclaw-zhipu.patch.json
 __pycache__/
 *.pyc
 .env

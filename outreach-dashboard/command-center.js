@@ -74,28 +74,23 @@
     return Boolean(window.customerDev && window.customerDev.runGlmDirectAutomation);
   }
   function autoClawAvailability(task) {
-    if (!task || !platformUrl(task)) return { ready: false, label: '缺少主页', reason: '没有已核验的平台主页' };
-    if (task.identityStatus !== 'verified') return { ready: false, label: '身份不匹配', reason: task.identityNote || '客户身份未通过核验' };
-    if (task.sendStatus === 'sent_confirmed'
+    if (!task || !platformUrl(task)) return { ready: false, label: 'Missing URL', reason: 'No verified platform homepage' };
+    if (task.identityStatus !== 'verified') return { ready: false, label: 'Identity mismatch', reason: task.identityNote || 'Lead identity is not verified' };
+    const followup = task.sendStatus === 'sent_confirmed'
       || task.automationStatus === 'sent_confirmed'
       || task.state === 'outcome_pending'
-      || task.previouslyContacted) {
-      return { ready: false, label: '已触达', reason: '该客户已触达，正在等待回复，禁止重复发送' };
-    }
+      || task.previouslyContacted;
     if (localStorage.getItem(`glm-direct-completed:${task.taskId}`) === '1') {
-      return { ready: false, label: '已完成', reason: '本机已记录该客户完成自动开发' };
+      return { ready: false, label: followup ? 'Prepared' : 'Done', reason: 'This lead was already prepared on this device' };
     }
-    if (!autoClawConnected()) return { ready: false, label: '需桌面 APP', reason: '当前为网页预览，未连接 AutoClaw 桌面执行层' };
-    return { ready: true, label: 'AutoClaw', reason: 'AutoClaw 已连接，可以执行' };
+    if (!autoClawConnected()) return { ready: false, label: 'Desktop app', reason: 'Use the desktop app to connect the execution layer' };
+    if (followup) return { ready: true, label: 'OpenClaw Followup', reason: 'Prepare follow-up only: open, verify, draft, and never duplicate-send' };
+    return { ready: true, label: 'AutoClaw', reason: 'Execution layer is connected' };
   }
   function canRunGlm(task) {
     return autoClawAvailability(task).ready
       && Boolean(platformUrl(task))
       && task.identityStatus === 'verified'
-      && task.sendStatus !== 'sent_confirmed'
-      && task.automationStatus !== 'sent_confirmed'
-      && task.state !== 'outcome_pending'
-      && !task.previouslyContacted
       && localStorage.getItem(`glm-direct-completed:${task.taskId}`) !== '1';
   }
   function untouchedTasks() {

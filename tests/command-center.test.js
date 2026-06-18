@@ -92,9 +92,15 @@ test('sent tasks render a completed route ending in outcome pending', () => {
 test('AutoClaw buttons explain desktop connection and duplicate-contact blocks', () => {
   assert.ok(js.includes('function autoClawAvailability'));
   assert.ok(js.includes('已触达'));
-  assert.ok(js.includes('需桌面 APP'));
-  assert.ok(js.includes('AutoClaw 未连接'));
-  assert.ok(js.includes('AutoClaw 已连接'));
+  assert.ok(js.includes('Desktop app'));
+  assert.ok(js.includes('Execution layer is connected'));
+});
+
+test('historical follow-up tasks can trigger safe OpenClaw preparation', () => {
+  assert.ok(js.includes('OpenClaw Followup'));
+  assert.ok(js.includes('Prepare follow-up only'));
+  const canRunBlock = js.slice(js.indexOf('function canRunGlm'), js.indexOf('function untouchedTasks'));
+  assert.ok(!canRunBlock.includes('&& !task.previouslyContacted'));
 });
 
 test('today queue separates untouched work from historical follow-ups', () => {

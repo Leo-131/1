@@ -1,6 +1,6 @@
 {
   "name": "outreach-dashboard",
-  "version": "18.7.1",
+  "version": "18.7.2",
   "description": "Flextail Gear Customer Automated Development System",
   "main": "main.js",
   "scripts": {

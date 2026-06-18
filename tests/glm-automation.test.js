@@ -1,5 +1,7 @@
 const test = require('node:test');
 const assert = require('node:assert/strict');
+const fs = require('fs');
+const path = require('path');
 
 const { parseJsonContent, requestGlm } = require('../outreach-dashboard/glm-service');
 const {
@@ -7,6 +9,8 @@ const {
   normalizeTarget,
   validateLeadForExecution,
 } = require('../outreach-dashboard/autoglm-bridge');
+
+const mainSource = fs.readFileSync(path.join(__dirname, '..', 'outreach-dashboard', 'main.js'), 'utf8');
 
 test('GLM response parser accepts fenced JSON', () => {
   assert.deepEqual(parseJsonContent('```json\n{"fitScore":88,"verdict":"develop"}\n```'), {
@@ -56,4 +60,11 @@ test('AutoGLM task preserves exact target and approved draft', () => {
   assert.match(task, /https:\/\/www\.instagram\.com\/campmor\//);
   assert.match(task, /Hello Campmor team/);
   assert.match(task, /Stop for login, CAPTCHA/);
+});
+
+test('desktop automation can use GLM env key and OpenClaw follow-up preparation', () => {
+  assert.ok(mainSource.includes('process.env.ZHIPUAI_API_KEY'));
+  assert.ok(mainSource.includes('runOpenClawLead'));
+  assert.ok(mainSource.includes('followup_prepare_no_duplicate_send'));
+  assert.ok(mainSource.includes("sendStatus: 'prepared_not_sent'"));
 });

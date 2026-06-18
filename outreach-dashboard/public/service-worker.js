@@ -1,4 +1,4 @@
-const CACHE_NAME = 'customer-development-system-v18-7-1-20260612-touch-time';
+const CACHE_NAME = 'customer-development-system-v18-7-2-20260618-openclaw-followup';
 const APP_SHELL = [
   './',
   './index.html',

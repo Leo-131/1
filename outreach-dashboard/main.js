@@ -2,8 +2,9 @@ const { app, BrowserWindow, ipcMain, shell, safeStorage } = require('electron');
 const fs = require('fs');
 const path = require('path');
 const crypto = require('crypto');
+const { execFile } = require('child_process');
 const { requestGlm } = require('./glm-service');
-const { runAutoGlmLead, validateLeadForExecution } = require('./autoglm-bridge');
+const { runAutoGlmLead, normalizeTarget, validateLeadForExecution } = require('./autoglm-bridge');
 
 let glmAutomationRunning = false;
 let lastGlmAutomationAt = 0;
@@ -124,12 +125,22 @@ function setCachedCredential(platform, credential) {
 
 function loadGlmConfig() {
   const config = readJson(glmStorePath(), null);
-  if (!config || !config.encryptedApiKey) return null;
+  if (!config || !config.encryptedApiKey) {
+    const envApiKey = process.env.ZHIPUAI_API_KEY || process.env.GLM_API_KEY;
+    if (!envApiKey) return null;
+    return {
+      baseUrl: 'https://open.bigmodel.cn/api/paas/v4',
+      model: process.env.GLM_MODEL || 'glm-5.2',
+      apiKey: envApiKey,
+      source: 'env',
+    };
+  }
   try {
     return {
       baseUrl: config.baseUrl || 'https://open.bigmodel.cn/api/paas/v4',
-      model: config.model || 'glm-4-flash',
+      model: config.model || 'glm-5.2',
       apiKey: decryptFromLocalCache(config.encryptedApiKey),
+      source: 'local-cache',
     };
   } catch {
     return null;
@@ -140,7 +151,7 @@ function saveGlmConfig(config) {
   writeJson(glmStorePath(), {
     version: 1,
     baseUrl: config.baseUrl || 'https://open.bigmodel.cn/api/paas/v4',
-    model: config.model || 'glm-4-flash',
+    model: config.model || 'glm-5.2',
     encryptedApiKey: encryptForLocalCache(config.apiKey),
     updatedAt: new Date().toISOString(),
   });
@@ -281,6 +292,100 @@ function createPlatformWindow(platform, credential) {
   return win;
 }
 
+function execFilePromise(file, args, options) {
+  return new Promise((resolve, reject) => {
+    execFile(file, args, options, (error, stdout, stderr) => {
+      if (error) {
+        error.stdout = stdout;
+        error.stderr = stderr;
+        reject(error);
+        return;
+      }
+      resolve({ stdout, stderr });
+    });
+  });
+}
+
+function validateLeadTargetForPreparation(lead) {
+  const targetUrl = normalizeTarget(lead);
+  let parsed;
+  try {
+    parsed = new URL(targetUrl);
+  } catch {
+    return { ok: false, error: 'Exact verified platform URL is required' };
+  }
+  if (parsed.protocol !== 'https:' || !ALLOWED_EXTERNAL_HOSTS.has(parsed.hostname.toLowerCase())) {
+    return { ok: false, error: 'Unsupported platform URL' };
+  }
+  if (lead?.identityStatus && lead.identityStatus !== 'verified') {
+    return { ok: false, error: 'Lead identity is not verified' };
+  }
+  return { ok: true, targetUrl: parsed.href };
+}
+
+function isFollowupLead(lead) {
+  return Boolean(lead?.previouslyContacted
+    || lead?.sendStatus === 'sent_confirmed'
+    || lead?.automationStatus === 'sent_confirmed'
+    || lead?.state === 'outcome_pending'
+    || /sent|replied|accepted/i.test(String(lead?.originalStatus || '')));
+}
+
+function buildOpenClawPrompt(lead, decision, targetUrl, mode) {
+  return [
+    'You are the execution layer for a B2B customer development system.',
+    `Mode: ${mode}.`,
+    `Exact verified target URL: ${targetUrl}.`,
+    `Customer: ${lead.company || lead.name || 'unknown'}.`,
+    `Country: ${lead.country || lead.countryEn || 'unknown'}.`,
+    `Role/context: ${lead.role || lead.keyword || ''}.`,
+    'Open or inspect only the exact target identity. Do not send a DM, comment, follow, like, or submit any form.',
+    'Prepare the next safe action and a short English follow-up draft.',
+    'Return concise JSON only with keys: verdict, evidence, nextAction, draft, sendStatus.',
+    `Suggested draft: ${decision?.draft || ''}`,
+  ].join('\n');
+}
+
+async function runOpenClawLead(lead, decision, options = {}) {
+  const target = validateLeadTargetForPreparation(lead);
+  if (!target.ok) return target;
+  const config = loadGlmConfig();
+  if (!config || !config.apiKey) return { ok: false, needsConfig: true, error: 'GLM API key is not configured' };
+  await shell.openExternal(target.targetUrl);
+  const sessionKey = `agent:main:outreach-${String(lead.taskId || lead.name || Date.now()).replace(/[^a-zA-Z0-9_.:-]/g, '-').slice(0, 80)}`;
+  const mode = isFollowupLead(lead) ? 'followup_prepare_no_duplicate_send' : 'new_lead_prepare_send_requires_confirmation';
+  const args = [
+    'agent',
+    '--local',
+    '--agent',
+    'main',
+    '--session-key',
+    sessionKey,
+    '--model',
+    `zhipu/${config.model || 'glm-5.2'}`,
+    '--message',
+    buildOpenClawPrompt(lead, decision, target.targetUrl, mode),
+    '--timeout',
+    String(options.timeoutSeconds || 180),
+  ];
+  const env = { ...process.env, ZHIPUAI_API_KEY: config.apiKey };
+  const result = await execFilePromise('openclaw.cmd', args, {
+    env,
+    windowsHide: true,
+    timeout: (options.timeoutSeconds || 180) * 1000,
+    maxBuffer: 8 * 1024 * 1024,
+  });
+  return {
+    ok: true,
+    engine: 'openclaw',
+    mode,
+    targetUrl: target.targetUrl,
+    externalBrowserOpened: true,
+    sendStatus: 'prepared_not_sent',
+    output: result.stdout.trim(),
+  };
+}
+
 ipcMain.handle('open-external-url', async (_event, url) => {
   const parsed = validateExternalUrl(url);
   await shell.openExternal(parsed.toString());
@@ -351,7 +456,7 @@ ipcMain.handle('launch-platform-acquisition', async (_event, payload) => {
 
 ipcMain.handle('glm-status', async () => {
   const config = loadGlmConfig();
-  return { configured: Boolean(config && config.apiKey), model: config && config.model };
+  return { configured: Boolean(config && config.apiKey), model: config && config.model, source: config && config.source };
 });
 
 ipcMain.handle('save-glm-config', async (_event, payload) => {
@@ -379,7 +484,8 @@ ipcMain.handle('run-glm-direct-automation', async (_event, payload) => {
     return { ok: false, cooldown: true, error: 'Serial cooldown is active' };
   }
   const lead = payload && payload.lead;
-  const target = validateLeadForExecution(lead);
+  const followup = isFollowupLead(lead);
+  const target = followup ? validateLeadTargetForPreparation(lead) : validateLeadForExecution(lead);
   if (!target.ok) return target;
   const config = loadGlmConfig();
   if (!config || !config.apiKey) return { ok: false, needsConfig: true };
@@ -388,7 +494,14 @@ ipcMain.handle('run-glm-direct-automation', async (_event, payload) => {
   try {
     const glm = await requestGlm({ ...config, lead });
     const decision = glm.result;
-    if (!decision || decision.verdict !== 'develop' || Number(decision.fitScore) < 70) {
+    const acceptedFollowup = followup
+      && decision
+      && ['develop', 'recheck'].includes(String(decision.verdict || ''))
+      && Number(decision.fitScore || 70) >= 50;
+    const acceptedNewLead = decision
+      && decision.verdict === 'develop'
+      && Number(decision.fitScore) >= 70;
+    if (!acceptedNewLead && !acceptedFollowup) {
       return {
         ok: false,
         skipped: true,
@@ -396,9 +509,17 @@ ipcMain.handle('run-glm-direct-automation', async (_event, payload) => {
         error: decision?.reason || 'GLM did not approve this lead',
       };
     }
-    const execution = await runAutoGlmLead(lead, decision);
+    let execution;
+    if (followup) {
+      execution = await runOpenClawLead(lead, decision);
+    } else {
+      execution = await runAutoGlmLead(lead, decision);
+      if (execution && execution.needsInstall) {
+        execution = await runOpenClawLead(lead, decision);
+      }
+    }
     lastGlmAutomationAt = Date.now();
-    return { ...execution, decision, glmModel: glm.model };
+    return { ...execution, decision, glmModel: glm.model, followup };
   } finally {
     glmAutomationRunning = false;
   }
