@@ -1,4 +1,4 @@
-const CACHE_NAME = 'customer-development-system-v18-7-2-20260618-openclaw-followup';
+const CACHE_NAME = 'customer-development-system-v18-7-5-20260618-icp-priority';
 const APP_SHELL = [
   './',
   './index.html',

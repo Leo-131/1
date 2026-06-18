@@ -1,0 +1,108 @@
+{
+  "generatedAt": "2026-06-18T10:09:35.863Z",
+  "mode": "real-browser-serial-single-tab",
+  "summary": {
+    "sent_confirmed": 8,
+    "email_priority": 6,
+    "no_message_button": 1,
+    "cooldown_duplicate_risk": 1
+  },
+  "results": [
+    {
+      "handle": "campmor",
+      "company": "Campmor US",
+      "status": "sent_confirmed",
+      "timestamp": "2026-06-18T10:09:35.863Z"
+    },
+    {
+      "handle": "worldofcamping",
+      "company": "World of Camping UK",
+      "status": "sent_confirmed",
+      "timestamp": "2026-06-18T10:09:35.863Z"
+    },
+    {
+      "handle": "otimosoutdoorgear",
+      "company": "Otimos UK",
+      "status": "sent_confirmed",
+      "timestamp": "2026-06-18T10:09:35.863Z"
+    },
+    {
+      "handle": "huntingandfishingnewzealand",
+      "company": "Hunting & Fishing NZ (46K followers, verified, NZ outdoor retail)",
+      "status": "sent_confirmed",
+      "timestamp": "2026-06-18T10:09:35.863Z"
+    },
+    {
+      "handle": "rebelsportnz",
+      "company": "Rebel Sport NZ (38K followers, verified, NZ #1 sporting goods retailer)",
+      "status": "sent_confirmed",
+      "timestamp": "2026-06-18T10:09:35.863Z"
+    },
+    {
+      "handle": "kfoutdoor",
+      "company": "KF Outdoor Jakarta",
+      "status": "sent_confirmed",
+      "timestamp": "2026-06-18T10:09:35.863Z"
+    },
+    {
+      "handle": "prago.outdoors",
+      "company": "Prago Outdoors",
+      "status": "sent_confirmed",
+      "timestamp": "2026-06-18T10:09:35.863Z"
+    },
+    {
+      "handle": "kathmandugear",
+      "company": "Kathmandu NZ/AU (12.3K followers, verified)",
+      "status": "sent_confirmed",
+      "timestamp": "2026-06-18T10:09:35.863Z"
+    },
+    {
+      "handle": "triedandtrout",
+      "company": "Tried & Trout Supply Co",
+      "status": "profile_valid_no_message_button",
+      "timestamp": "2026-06-18T10:09:35.863Z"
+    },
+    {
+      "handle": "ellisbrigham",
+      "company": "Ellis Brigham UK (33K followers, since 1933)",
+      "status": "email_priority",
+      "timestamp": "2026-06-18T10:09:35.863Z"
+    },
+    {
+      "handle": "anacondastores",
+      "company": "Anaconda Stores AU (60K followers, verified, largest outdoor retailer)",
+      "status": "email_priority",
+      "timestamp": "2026-06-18T10:09:35.863Z"
+    },
+    {
+      "handle": "mec",
+      "company": "MEC Canada",
+      "status": "email_priority",
+      "timestamp": "2026-06-18T10:09:35.863Z"
+    },
+    {
+      "handle": "camp4wheels",
+      "company": "Poland rooftop tent importer",
+      "status": "email_priority",
+      "timestamp": "2026-06-18T10:09:35.863Z"
+    },
+    {
+      "handle": "macpac",
+      "company": "Macpac NZ/AU (76K followers, verified, outdoor brand)",
+      "status": "email_priority",
+      "timestamp": "2026-06-18T10:09:35.863Z"
+    },
+    {
+      "handle": "stoneycreeknz",
+      "company": "Stoney Creek NZ (23K followers, NZ outdoor clothing brand)",
+      "status": "email_priority",
+      "timestamp": "2026-06-18T10:09:35.863Z"
+    },
+    {
+      "handle": "monasheeoutdoors",
+      "company": "Monashee Outdoors",
+      "status": "cooldown_duplicate_risk",
+      "timestamp": "2026-06-18T09:01:31.455Z"
+    }
+  ]
+}

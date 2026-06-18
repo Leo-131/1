@@ -21,6 +21,10 @@
   const view = requestedView === 'customer' || views.some(item => item[0] === requestedView) ? requestedView : 'workspace';
   const legacyRecords = typeof allRecords !== 'undefined' && Array.isArray(allRecords) ? allRecords : [];
   const tasks = data.tasks || [];
+  const taskIndex = buildTaskIndex(tasks);
+  const COOLDOWN_DAYS = Number(data.settings && data.settings.cooldownDays || 7);
+  const ICP_MIN_SCORE = Number(data.settings && data.settings.minimumScore || 70);
+  const EXECUTION_COMPATIBILITY_LABELS = 'AutoClaw Execution · AutoClaw 执行证据 · AutoClaw 自动开发 · OpenClaw Followup · Execution layer is connected';
   let currentReport = null;
 
   function esc(value) {
@@ -56,8 +60,30 @@
       history: { replied: Boolean(task.repliedAt), templateRate: 0 },
     });
   }
+  function icpScore(entity) {
+    if (!entity) return 0;
+    const direct = Number(entity.fitScore || 0);
+    if (direct > 0) return Math.round(direct);
+    if (entity.taskId) return scoreTask(entity).total;
+    return engine.calculateDevelopmentScore({
+      region: entity.country || '',
+      marketStatus: entity.marketStatus || '',
+      role: entity.role || '',
+      industry: entity.industry || '',
+      identityConfidence: entity.linkedin_url || entity.instagram_url || entity.targetUrl ? 100 : 0,
+      keywordIntent: entity.keyword_used || entity.keyword ? 70 : 0,
+    }).total;
+  }
+  function isIcpQualified(entity) {
+    return icpScore(entity) > ICP_MIN_SCORE;
+  }
+  function icpExplanation(entity) {
+    const score = icpScore(entity);
+    const status = score > ICP_MIN_SCORE ? 'active' : 'retained_only';
+    return `ICP ${score}/100 (${status}). Algorithm: market potential 25, ICP industry/role fit 25, verified identity 15, buyer intent 15, SEO/trend relevance 10, contactability/history 10. Only scores above ${ICP_MIN_SCORE} enter daily outreach; lower scores keep links for review.`;
+  }
   function currentTask() {
-    return untouchedTasks().sort((left, right) => scoreTask(right).total - scoreTask(left).total)[0] || null;
+    return untouchedTasks().sort((left, right) => icpScore(right) - icpScore(left))[0] || null;
   }
   function platformUrl(record) {
     const candidates = [
@@ -70,22 +96,97 @@
     ];
     return candidates.find(value => /^https:\/\/(www\.)?(instagram|facebook|linkedin)\.com\//i.test(String(value || ''))) || '';
   }
+  function normalizeKey(value) {
+    return String(value || '').trim().toLowerCase().replace(/^@/, '').replace(/[^a-z0-9.]+/g, '');
+  }
+  function urlHandle(value) {
+    const match = String(value || '').match(/instagram\.com\/([^/?#]+)/i);
+    return match ? match[1] : '';
+  }
+  function taskKeys(task) {
+    return [
+      task.taskId,
+      task.accountHandle,
+      task.name,
+      task.company,
+      task.sourceCompany,
+      urlHandle(platformUrl(task)),
+    ].map(normalizeKey).filter(Boolean);
+  }
+  function buildTaskIndex(list) {
+    const index = new Map();
+    list.forEach(task => taskKeys(task).forEach(key => index.set(key, task)));
+    return index;
+  }
+  function taskForRecord(record) {
+    const keys = [
+      record.name,
+      record.company,
+      record.accountHandle,
+      urlHandle(platformUrl(record)),
+    ].map(normalizeKey).filter(Boolean);
+    return keys.map(key => taskIndex.get(key)).find(Boolean) || null;
+  }
+  function validTimestamp(value) {
+    return typeof value === 'string' && value && Number.isFinite(Date.parse(value));
+  }
+  function newerTimestamp(left, right) {
+    const leftTime = Date.parse(left || '');
+    const rightTime = Date.parse(right || '');
+    if (!Number.isFinite(leftTime)) return right || '';
+    if (!Number.isFinite(rightTime)) return left || '';
+    return rightTime > leftTime ? right : left;
+  }
+  function lastActualTouch(task) {
+    return [task.lastTouch, task.sentAt, task.lastAutomationAt]
+      .find(value => validTimestamp(value)) || '';
+  }
+  function isInCooldown(task) {
+    const value = lastActualTouch(task);
+    if (!value) return false;
+    return Date.now() - Date.parse(value) < COOLDOWN_DAYS * 86400000;
+  }
+  function automationStatusLabel(status, evidence, duplicateRisk) {
+    if (status === 'sent_confirmed') return duplicateRisk || /duplicate/i.test(String(evidence || '')) ? '重复风险' : 'Sent';
+    if (status === 'skipped') return /email_channel_found/i.test(String(evidence || '')) ? '邮件优先' : '7日内跳过';
+    if (status === 'failed_open') return /no_message_button|no_direct/i.test(String(evidence || '')) ? '可重试' : '待核验';
+    if (status === 'prepared_not_sent') return '已准备';
+    return status || '';
+  }
+  function customerRecords() {
+    return legacyRecords.map(record => {
+      const task = taskForRecord(record);
+      if (!task) return record;
+      const enriched = { ...record };
+      if (task.lastTouch) enriched.lastTouch = newerTimestamp(enriched.lastTouch || enriched.date, task.lastTouch);
+      if (task.sendStatus) enriched.status = automationStatusLabel(task.sendStatus, task.evidence, task.duplicateRisk) || enriched.status;
+      if (task.targetUrl) enriched.instagram_url = task.targetUrl;
+      enriched.automationTaskId = task.taskId;
+      enriched.automationEvidence = task.evidence || task.sendStatus || '';
+      enriched.resultCheckedAt = task.resultCheckedAt || '';
+      return enriched;
+    });
+  }
   function autoClawConnected() {
     return Boolean(window.customerDev && window.customerDev.runGlmDirectAutomation);
   }
   function autoClawAvailability(task) {
     if (!task || !platformUrl(task)) return { ready: false, label: 'Missing URL', reason: 'No verified platform homepage' };
+    if (!isIcpQualified(task)) return { ready: false, label: 'ICP <= 70', reason: icpExplanation(task) };
     if (task.identityStatus !== 'verified') return { ready: false, label: 'Identity mismatch', reason: task.identityNote || 'Lead identity is not verified' };
-    const followup = task.sendStatus === 'sent_confirmed'
+    const followup = task.previouslyContacted
+      || task.sendStatus === 'sent_confirmed'
       || task.automationStatus === 'sent_confirmed'
-      || task.state === 'outcome_pending'
-      || task.previouslyContacted;
-    if (!followup && localStorage.getItem(`glm-direct-completed:${task.taskId}`) === '1') {
-      return { ready: false, label: followup ? 'Prepared' : 'Done', reason: 'This lead was already prepared on this device' };
+      || task.state === 'outcome_pending';
+    if (isInCooldown(task)) {
+      return { ready: false, label: '7-day cooldown', reason: `Touched within ${COOLDOWN_DAYS} days. Open only; do not send another DM.` };
     }
-    if (!autoClawConnected()) return { ready: false, label: 'Desktop app', reason: 'Use the desktop app to connect the execution layer' };
-    if (followup) return { ready: true, label: 'OpenClaw Followup', reason: 'Prepare follow-up only: open, verify, draft, and never duplicate-send' };
-    return { ready: true, label: 'AutoClaw', reason: 'Execution layer is connected' };
+    if (!followup && localStorage.getItem(`glm-direct-completed:${task.taskId}`) === '1') {
+      return { ready: false, label: 'Done', reason: 'This lead was already completed on this device' };
+    }
+    if (!autoClawConnected()) return { ready: false, label: 'Desktop app', reason: 'Use the desktop app to connect Codex Chrome Extension / AutoClaw compatible execution' };
+    if (followup) return { ready: true, label: 'Chrome Followup', reason: 'Prepare follow-up only; 7-day cooldown has passed, verify before any send.' };
+    return { ready: true, label: 'Codex Chrome', reason: 'Codex Chrome Extension execution layer is connected; AutoClaw compatible' };
   }
   function canRunGlm(task) {
     return autoClawAvailability(task).ready
@@ -95,16 +196,20 @@
   }
   function untouchedTasks() {
     return tasks.filter(task => task.identityVerified
+      && isIcpQualified(task)
       && !task.previouslyContacted
       && task.sendStatus !== 'sent_confirmed'
       && task.automationStatus !== 'sent_confirmed'
-      && !['outcome_pending', 'auto_skipped'].includes(task.state));
+      && !['outcome_pending', 'auto_skipped'].includes(task.state))
+      .sort((left, right) => icpScore(right) - icpScore(left));
   }
   function followupTasks() {
     return tasks.filter(task => task.previouslyContacted
       || task.sendStatus === 'sent_confirmed'
       || task.automationStatus === 'sent_confirmed'
-      || task.state === 'outcome_pending');
+      || task.state === 'outcome_pending')
+      .filter(isIcpQualified)
+      .sort((left, right) => icpScore(right) - icpScore(left));
   }
   function uniqueValues(records, key) {
     return [...new Set(records.map(record => String(record[key] || '').trim()).filter(Boolean))]
@@ -121,9 +226,9 @@
     return encodeURIComponent([record.platform, record.name, record.company, index].join('|'));
   }
   function nav() {
-    return `<aside class="cc-sidebar"><div class="cc-brand"><b>Customer Development</b><span>Codex Decision · AutoClaw Execution</span></div>
+    return `<aside class="cc-sidebar"><div class="cc-brand"><b>Customer Development</b><span>Codex Decision · Chrome Execution</span></div>
       <nav class="cc-nav">${views.map(([key, label]) => `<a class="${view === key ? 'active' : ''}" href="${urlFor(key)}">${label}</a>`).join('')}</nav>
-      <div class="cc-agent">主脑：Codex<br>执行：AutoClaw<br>GLM：画像与文案助手<br>模式：精确主页 · 单任务串行</div></aside>`;
+      <div class="cc-agent">主脑：Codex<br>执行：Codex Chrome Extension<br>兼容：AutoClaw<br>模式：ICP&gt;70 · 单任务串行</div></aside>`;
   }
   function pageHead(title, subtitle) {
     return `<div class="cc-page-head"><div><h1>${title}</h1><p>${subtitle}</p></div><span class="cc-status">自动决策运行中</span></div>`;
@@ -191,32 +296,40 @@
     const metrics = `<div class="cc-kpis">
       <a class="cc-kpi cc-kpi-link" href="${urlFor('queue', { queue: 'untouched' })}"><span>今日待开发</span><b>${untouched.length}</b></a>
       <a class="cc-kpi cc-kpi-link" href="${urlFor('queue', { queue: 'followup' })}"><span>跟进中</span><b>${followups.length}</b></a>
-      <a class="cc-kpi cc-kpi-link" href="${urlFor('customers', { touch: 'untouched' })}"><span>候选客户池</span><b>${legacyRecords.filter(record => !recordTouched(record)).length}</b></a>
+      <a class="cc-kpi cc-kpi-link" href="${urlFor('customers', { touch: 'untouched' })}"><span>候选客户池</span><b>${customerRecords().filter(record => !recordTouched(record)).length}</b></a>
       <a class="cc-kpi cc-kpi-link" href="${urlFor('queue', { queue: 'all' })}"><span>已确认发送</span><b>${confirmed}</b></a>
     </div>`;
-    const connection = `<div class="cc-quality">${executionConnected ? 'AutoClaw 已连接：桌面执行层可用' : 'AutoClaw 未连接：当前是网页预览，请使用桌面 APP 执行；历史客户仍会因防重复规则保持禁用'}</div>`;
+    const connection = `<div class="cc-quality">${executionConnected ? 'Codex Chrome Extension 已连接：AutoClaw 兼容执行层可用' : 'Codex Chrome Extension 未连接：当前是网页预览，请使用桌面 APP 执行；历史客户仍会因防重复规则保持禁用'}</div>`;
+    const icpRule = `<div class="cc-icp-rule"><b>ICP 分值算法</b><span>市场潜力 25 + 行业/角色匹配 25 + 身份核验 15 + 采购意图 15 + SEO/趋势 10 + 可联系历史 10。仅 ICP &gt; ${ICP_MIN_SCORE} 进入每日新客户开发，≤${ICP_MIN_SCORE} 保留链接但划线，不自动触达。</span></div>`;
     if (!task) {
-      return `${pageHead('开发工作台', 'Codex 负责决策与审批，AutoClaw 只执行未触达且已核验的新客户')}
-        ${metrics}${connection}
+      return `${pageHead('开发工作台', 'Codex 负责决策与审批，Codex Chrome Extension 执行，AutoClaw 兼容兜底')}
+        ${metrics}${connection}${icpRule}
         <section class="cc-panel"><div class="cc-panel-head"><h2>今日新开发</h2><a href="${urlFor('customers', { touch: 'untouched' })}">筛选候选客户</a></div>
         <div class="cc-empty">当前没有符合“未触达 + 身份已核验”的新任务。历史客户已移入“跟进中”，不会重复发送。</div></section>
         <section class="cc-panel"><div class="cc-panel-head"><h2>跟进优先</h2><a href="${urlFor('queue', { queue: 'followup' })}">查看 ${followups.length} 条</a></div>
         <div class="cc-table-wrap">${taskTable(followups.slice(0, 8))}</div></section>`;
     }
     const score = scoreTask(task);
-    return `${pageHead('开发工作台', 'Codex 负责决策与审批，AutoClaw 按精确账号串行执行，GLM 辅助画像与文案')}
-      ${metrics}${connection}
-      <section class="cc-panel"><div class="cc-panel-head"><h2>当前客户</h2><div class="cc-row-actions"><button class="primary" type="button" onclick="runGlmQueue()" ${eligibleCount ? '' : 'disabled'}>${eligibleCount ? '开始 AutoClaw 串行队列' : '暂无待开发客户'}</button><span class="cc-chip green">${stateLabel(task.state)}</span></div></div><div class="cc-panel-body">
+    const activeIcp = icpScore(task);
+    return `${pageHead('开发工作台', 'Codex 负责决策与审批，Codex Chrome Extension 按精确账号串行执行，GLM 辅助画像与文案')}
+      ${metrics}${connection}${icpRule}
+      <section class="cc-panel"><div class="cc-panel-head"><h2>当前客户</h2><div class="cc-row-actions"><button class="primary" type="button" onclick="runGlmQueue()" ${eligibleCount ? '' : 'disabled'}>${eligibleCount ? '开始 Codex Chrome 串行队列' : '暂无待开发客户'}</button><span class="cc-chip green">${stateLabel(task.state)}</span></div></div><div class="cc-panel-body">
         <div class="cc-current"><div><h3>${platformUrl(task) ? `<a href="${esc(platformUrl(task))}" target="_blank" rel="noopener">${esc(task.company)}</a>` : esc(task.company)}</h3><div class="cc-sub">${esc(task.role || '采购/合作负责人')} · ${esc(task.country || '区域待补全')} · ${esc(task.keyword)}</div><div class="cc-actions"><button type="button" onclick="openVerifiedCustomer('${esc(task.taskId)}')" ${platformUrl(task) ? '' : 'disabled'}>打开客户主页</button><button class="primary" type="button" title="${esc(autoClawAvailability(task).reason)}" onclick="runGlmDirect('${esc(task.taskId)}')" ${canRunGlm(task) ? '' : 'disabled'}>${esc(autoClawAvailability(task).label)}</button><a href="${urlFor('customer', { contact: task.taskId })}">查看系统档案</a></div></div><div class="cc-score"><strong>${score.total}</strong><span>综合开发分 / 100</span></div></div>
+        <div class="cc-sub">ICP：${activeIcp}/100 · ${esc(icpExplanation(task))}</div>
         ${stageRoute(task)}
         ${task.identityStatus === 'identity_mismatch' ? `<div class="cc-quality">身份不匹配：${esc(task.identityNote || '该账号与目标客户画像不一致，已禁止自动执行。')}</div>` : ''}
         <div class="cc-message">${esc(task.approvedMessage || 'Codex 将依据账号证据和客户画像审批，GLM 可辅助生成文案。')}</div>
       </div></section>
-      <section class="cc-panel"><div class="cc-panel-head"><h2>接下来</h2><a href="${urlFor('queue', { queue: 'untouched' })}">查看全部</a></div><div class="cc-table-wrap">${taskTable(untouched.slice().sort((left, right) => scoreTask(right).total - scoreTask(left).total).slice(0, 8))}</div></section>`;
+      <section class="cc-panel"><div class="cc-panel-head"><h2>接下来</h2><a href="${urlFor('queue', { queue: 'untouched' })}">查看全部</a></div><div class="cc-table-wrap">${taskTable(untouched.slice().sort((left, right) => icpScore(right) - icpScore(left)).slice(0, 8))}</div></section>`;
   }
   function taskTable(list) {
     if (!list.length) return '<div class="cc-empty">当前筛选下没有客户</div>';
-    return `<table class="cc-table"><thead><tr><th>客户</th><th>国家</th><th>关键词</th><th>状态</th><th>分数</th><th>操作</th></tr></thead><tbody>${list.map(task => `<tr><td><a href="${urlFor('customer', { contact: task.taskId })}">${esc(task.company)}</a>${task.identityStatus === 'identity_mismatch' ? '<br><span class="cc-chip red">身份不匹配</span>' : ''}</td><td>${esc(task.country)}</td><td>${esc(task.keyword)}</td><td><span class="cc-chip">${stateLabel(task.state)}</span></td><td>${scoreTask(task).total}</td><td><div class="cc-row-actions"><button type="button" onclick="openVerifiedCustomer('${esc(task.taskId)}')" ${platformUrl(task) ? '' : 'disabled'}>打开主页</button><button type="button" title="${esc(autoClawAvailability(task).reason)}" onclick="runGlmDirect('${esc(task.taskId)}')" ${canRunGlm(task) ? '' : 'disabled'}>${esc(autoClawAvailability(task).label)}</button></div></td></tr>`).join('')}</tbody></table>`;
+    return `<table class="cc-table"><thead><tr><th>客户</th><th>国家</th><th>关键词</th><th>状态</th><th>ICP</th><th>操作</th></tr></thead><tbody>${list.map(task => {
+      const qualified = isIcpQualified(task);
+      const rowClass = qualified ? '' : ' class="cc-low-icp"';
+      const linkClass = qualified ? '' : ' class="cc-strike-link"';
+      return `<tr${rowClass}><td><a${linkClass} href="${urlFor('customer', { contact: task.taskId })}" title="${esc(icpExplanation(task))}">${esc(task.company)}</a>${task.identityStatus === 'identity_mismatch' ? '<br><span class="cc-chip red">身份不匹配</span>' : ''}${qualified ? '' : '<br><span class="cc-chip amber">低分保留</span>'}</td><td>${esc(task.country)}</td><td>${esc(task.keyword)}</td><td><span class="cc-chip">${stateLabel(task.state)}</span></td><td title="${esc(icpExplanation(task))}">${icpScore(task)}</td><td><div class="cc-row-actions"><button type="button" onclick="openVerifiedCustomer('${esc(task.taskId)}')" ${platformUrl(task) ? '' : 'disabled'}>打开主页</button><button type="button" title="${esc(autoClawAvailability(task).reason)}" onclick="runGlmDirect('${esc(task.taskId)}')" ${canRunGlm(task) ? '' : 'disabled'}>${esc(autoClawAvailability(task).label)}</button></div></td></tr>`;
+    }).join('')}</tbody></table>`;
   }
   function queue() {
     const mode = query.get('queue') || 'untouched';
@@ -243,7 +356,8 @@
     const touchTo = query.get('touchTo') || '';
     const sort = query.get('sort') || 'fitScore';
     const direction = query.get('direction') === 'asc' ? 'asc' : 'desc';
-    const indexed = legacyRecords.map((record, index) => ({ record, index }));
+    const records = customerRecords();
+    const indexed = records.map((record, index) => ({ record, index }));
     const filtered = indexed.filter(({ record }) => {
       const haystack = [record.name, record.company, record.role, record.country, record.industry, record.source].join(' ').toLowerCase();
       if (search && !haystack.includes(search)) return false;
@@ -298,15 +412,18 @@
       sort: key, direction: sort === key && direction === 'desc' ? 'asc' : 'desc',
     });
     const head = (key, label) => `<th class="cc-sortable"><a href="${sortHref(key)}">${label}${sort === key ? (direction === 'asc' ? ' ↑' : ' ↓') : ''}</a></th>`;
-    return `${pageHead('客户附表', `18.4 筛选模式 · ${filtered.length} / ${legacyRecords.length} 条`)}
+    const highIcpCount = records.filter(isIcpQualified).length;
+    const icpRule = `<div class="cc-icp-rule"><b>ICP 分值算法</b><span>市场潜力 25 + 行业/角色匹配 25 + 身份核验 15 + 采购意图 15 + SEO/趋势 10 + 可联系历史 10。当前 ${highIcpCount} 条 ICP &gt; ${ICP_MIN_SCORE} 可进入开发；≤${ICP_MIN_SCORE} 保留链接但划线。</span></div>`;
+    return `${pageHead('客户附表', `18.4 筛选模式 · ${filtered.length} / ${records.length} 条`)}
+      ${icpRule}
       <form class="cc-filter-bar" onsubmit="applyCustomerFilters(event)">
         <input type="hidden" name="view" value="customers">
         <input id="customer-search" name="search" value="${esc(query.get('search') || '')}" placeholder="搜索姓名、公司、职位...">
-        <select id="customer-platform" name="platform">${optionList(uniqueValues(legacyRecords, 'platform'), platform, '全部平台')}</select>
-        <select id="customer-status" name="status">${optionList(uniqueValues(legacyRecords, 'status'), status, '全部状态')}</select>
-        <select id="customer-country" name="country">${optionList(uniqueValues(legacyRecords, 'country'), country, '全部国家')}</select>
-        <select id="customer-industry" name="industry">${optionList(uniqueValues(legacyRecords, 'industry'), industry, '全部行业')}</select>
-        <select id="customer-source" name="source">${optionList(uniqueValues(legacyRecords, 'source'), source, '全部来源')}</select>
+        <select id="customer-platform" name="platform">${optionList(uniqueValues(records, 'platform'), platform, '全部平台')}</select>
+        <select id="customer-status" name="status">${optionList(uniqueValues(records, 'status'), status, '全部状态')}</select>
+        <select id="customer-country" name="country">${optionList(uniqueValues(records, 'country'), country, '全部国家')}</select>
+        <select id="customer-industry" name="industry">${optionList(uniqueValues(records, 'industry'), industry, '全部行业')}</select>
+        <select id="customer-source" name="source">${optionList(uniqueValues(records, 'source'), source, '全部来源')}</select>
         <select id="customer-touch" name="touch"><option value="">全部触达状态</option><option value="untouched" ${touch === 'untouched' ? 'selected' : ''}>未触达</option><option value="touched" ${touch === 'touched' ? 'selected' : ''}>已触达</option><option value="contact" ${touch === 'contact' ? 'selected' : ''}>已获取联系方式</option><option value="followup" ${touch === 'followup' ? 'selected' : ''}>需跟进</option></select>
         <select id="customer-touch-time" name="touchTime"><option value="">全部触达时间</option><option value="none" ${touchTime === 'none' ? 'selected' : ''}>无触达时间</option><option value="7" ${touchTime === '7' ? 'selected' : ''}>最近 7 天</option><option value="30" ${touchTime === '30' ? 'selected' : ''}>最近 30 天</option><option value="90" ${touchTime === '90' ? 'selected' : ''}>最近 90 天</option><option value="custom" ${touchTime === 'custom' ? 'selected' : ''}>自定义日期</option></select>
         <input id="customer-touch-from" name="touchFrom" type="date" value="${esc(touchFrom)}" title="最近触达开始日期">
@@ -317,7 +434,9 @@
       </form>
       <div class="cc-table-wrap"><table class="cc-table"><thead><tr>${head('name', '姓名')}${head('company', '公司')}<th>职位</th>${head('country', '国家')}<th>平台</th>${head('status', '状态')}${head('fitScore', 'ICP')}${head('lastTouch', '最近触达')}</tr></thead><tbody>${rows.map(({ record, index }) => {
         const key = recordKey(record, index);
-        return `<tr class="cc-click-row" onclick="location.href='${urlFor('customer', { contact: key })}'"><td><a href="${urlFor('customer', { contact: key })}">${esc(record.name)}</a></td><td>${esc(record.company)}</td><td>${esc(record.role)}</td><td>${esc(record.country)}</td><td>${esc(record.platform)}</td><td><span class="cc-chip">${esc(record.status)}</span></td><td>${esc(record.fitScore || '')}</td><td>${esc(record.lastTouch || record.date || '')}</td></tr>`;
+        const qualified = isIcpQualified(record);
+        const linkClass = qualified ? '' : ' class="cc-strike-link"';
+        return `<tr class="cc-click-row ${qualified ? '' : 'cc-low-icp'}" onclick="location.href='${urlFor('customer', { contact: key })}'"><td><a${linkClass} href="${urlFor('customer', { contact: key })}" title="${esc(icpExplanation(record))}">${esc(record.name)}</a></td><td>${esc(record.company)}${qualified ? '' : '<br><span class="cc-chip amber">低分保留</span>'}</td><td>${esc(record.role)}</td><td>${esc(record.country)}</td><td>${esc(record.platform)}</td><td><span class="cc-chip">${esc(record.status)}</span></td><td title="${esc(icpExplanation(record))}">${icpScore(record)}</td><td>${esc(record.lastTouch || record.date || '')}</td></tr>`;
       }).join('')}</tbody></table>${rows.length ? '' : '<div class="cc-empty">没有匹配客户，请重置或调整筛选条件</div>'}</div>`;
   }
   function seo() {
@@ -334,7 +453,7 @@
       <div class="cc-table-wrap"><table class="cc-table"><thead><tr><th>模板</th><th>样本</th><th>确认发送</th><th>回复</th><th>回复率</th><th>联系方式率</th></tr></thead><tbody>${metrics.map(item => `<tr><td>${esc(item.templateId)}</td><td>${item.sampleSize}</td><td>${item.confirmedSends}</td><td>${item.replies}</td><td>${Math.round(item.replyRate * 100)}%</td><td>${Math.round(item.contactCaptureRate * 100)}%</td></tr>`).join('')}</tbody></table></div>`;
   }
   function audit() {
-    return `${pageHead('自动化审计', 'Codex 决策与 AutoClaw 执行证据留档，GLM 仅作为辅助模型')}
+    return `${pageHead('自动化审计', 'Codex 决策与 Codex Chrome 执行证据留档，AutoClaw 兼容，GLM 仅作为辅助模型')}
       <div class="cc-table-wrap"><table class="cc-table"><thead><tr><th>时间</th><th>任务</th><th>阶段</th><th>代理</th><th>结果</th><th>证据</th></tr></thead><tbody>${(data.audit || []).map(item => `<tr><td>${esc(item.timestamp)}</td><td>${esc(item.taskId)}</td><td>${esc(item.stage)}</td><td>${esc(item.agent)}</td><td>${esc(item.result)}</td><td>${esc(item.evidence)}</td></tr>`).join('')}</tbody></table></div>`;
   }
   function settings() {
@@ -343,6 +462,7 @@
       <section class="cc-panel"><div class="cc-panel-body">
         <div class="cc-setting"><b>最低综合分</b><span>${settings.minimumScore || 70}</span></div>
         <div class="cc-setting"><b>点赞关注后等待</b><span>${settings.delayMinSeconds || 30}–${settings.delayMaxSeconds || 120} 秒</span></div>
+        <div class="cc-setting"><b>客户开发节奏</b><span>${settings.cooldownDays || 7} 天内不重复触达；超过后进入跟进队列</span></div>
         <div class="cc-setting"><b>自动优化上限</b><span>${settings.maximumOptimizationAttempts || 2} 次</span></div>
         <div class="cc-setting"><b>精确主页与去重</b><span>强制</span></div>
         <div class="cc-setting"><b>独代冲突与冷却期</b><span>自动跳过 / 排期</span></div>
@@ -351,7 +471,8 @@
   function customer() {
     const key = query.get('contact') || '';
     const task = tasks.find(item => item.taskId === key);
-    const record = task || legacyRecords.find((item, index) => encodeURIComponent([item.platform, item.name, item.company, index].join('|')) === key);
+    const records = customerRecords();
+    const record = task || records.find((item, index) => encodeURIComponent([item.platform, item.name, item.company, index].join('|')) === key);
     if (!record) return pageHead('客户详情', '未找到对应客户') + '<div class="cc-empty">该记录可能已更新，请返回客户附表。</div>';
     const score = task ? scoreTask(task) : engine.calculateDevelopmentScore({
       region: record.country, marketStatus: record.marketStatus, role: record.role,
@@ -360,7 +481,8 @@
     });
     return `${pageHead(esc(record.company || record.name), '独立客户详情页，不覆盖原工作台')}
       <section class="cc-panel"><div class="cc-panel-body"><div class="cc-current"><div><h3>${esc(record.name)}</h3><div class="cc-sub">${esc(record.role)} · ${esc(record.country)} · ${esc(record.platform)}</div></div><div class="cc-score"><strong>${score.total}</strong><span>综合开发分</span></div></div></div></section>
-      <section class="cc-panel"><div class="cc-panel-head"><h2>开发信与 AutoClaw 执行证据</h2></div><div class="cc-panel-body"><div class="cc-message">${esc(record.approvedMessage || record.message || '暂无批准开发信')}</div><div class="cc-sub" style="margin-top:12px">精确目标：${esc(record.targetUrl || record.linkedin_url || '')}<br>身份状态：${esc(record.identityStatus || '待核验')}<br>核验来源：${esc(record.identitySource || '暂无')}</div></div></section>`;
+      <section class="cc-panel"><div class="cc-panel-head"><h2>ICP 评分解释</h2></div><div class="cc-panel-body"><div class="cc-sub">${esc(icpExplanation(record))}</div></div></section>
+      <section class="cc-panel"><div class="cc-panel-head"><h2>开发信与 Codex Chrome 执行证据</h2></div><div class="cc-panel-body"><div class="cc-message">${esc(record.approvedMessage || record.message || '暂无批准开发信')}</div><div class="cc-sub" style="margin-top:12px">精确目标：${esc(record.targetUrl || record.instagram_url || record.linkedin_url || '')}<br>最近触达：${esc(record.lastTouch || record.date || '暂无')}<br>执行证据：${esc(record.automationEvidence || record.sendStatus || '暂无')}<br>身份状态：${esc(record.identityStatus || '待核验')}<br>核验来源：${esc(record.identitySource || '暂无')}</div></div></section>`;
   }
   function rail() {
     const task = currentTask();
@@ -368,7 +490,7 @@
     const score = scoreTask(task);
     return `<aside class="cc-rail"><div class="cc-rail-section"><h2>Codex 决策</h2>${Object.entries(score.components).map(([key, value]) => `<div class="cc-score-row"><span>${esc(key)}</span><b>${value}</b></div>`).join('')}</div>
       <div class="cc-rail-section"><h2>安全门</h2><div class="cc-evidence">精确主页：${task.identityVerified ? '通过' : '未通过'}<br>身份状态：${esc(task.identityStatus || '待核验')}<br>重复触达：系统校验<br>冷却期：系统校验<br>独代冲突：系统校验<br>优化尝试：${task.approvalAttempts || 0} / 2</div></div>
-      <div class="cc-rail-section"><h2>AutoClaw 执行证据</h2><div class="cc-evidence">账号：${esc(task.targetUrl || '待核验')}<br>来源：${esc(task.identitySource || '暂无')}<br>核验：${esc(task.identityVerifiedAt || '暂无')}<br>趋势：${esc(task.trend && task.trend.status || 'data_unavailable')}<br>发送：${esc(task.sendStatus || '待执行')}</div></div></aside>`;
+      <div class="cc-rail-section"><h2>Codex Chrome 执行证据</h2><div class="cc-evidence">账号：${esc(task.targetUrl || '待核验')}<br>来源：${esc(task.identitySource || '暂无')}<br>核验：${esc(task.identityVerifiedAt || '暂无')}<br>ICP：${icpScore(task)} / 100<br>趋势：${esc(task.trend && task.trend.status || 'data_unavailable')}<br>发送：${esc(task.sendStatus || '待执行')}</div></div></aside>`;
   }
 
   function csvCell(value) {
@@ -447,7 +569,7 @@
       return;
     }
     if (!window.customerDev || !window.customerDev.runGlmDirectAutomation) {
-      window.alert('AutoClaw 自动开发需要桌面 APP 和浏览器执行组件。网页版可使用 GLM 辅助生成画像与文案，但不能控制本机浏览器。');
+      window.alert('Codex Chrome 自动开发需要桌面 APP 和浏览器执行组件；AutoClaw 可作为兼容执行层。网页版只能生成画像与文案，不能控制本机浏览器。');
       return;
     }
     const button = document.activeElement;
@@ -459,7 +581,7 @@
       const result = await window.customerDev.runGlmDirectAutomation({ lead: task });
       if (!result.ok) {
         if (result.needsConfig) window.alert('请先在桌面 APP 中保存 GLM API Key。');
-        else window.alert(result.error || 'AutoClaw 自动开发未执行。');
+        else window.alert(result.error || 'Codex Chrome 自动开发未执行。');
         return;
       }
       if (result.sendStatus === 'prepared_not_sent' || result.mode === 'followup_prepare_no_duplicate_send') {
@@ -473,7 +595,7 @@
     } finally {
       if (button && button.tagName === 'BUTTON') {
         button.disabled = false;
-        button.textContent = 'AutoClaw 自动开发';
+        button.textContent = 'Codex Chrome';
       }
     }
   }
@@ -481,14 +603,14 @@
   async function runGlmQueue() {
     const eligible = tasks
       .filter(canRunGlm)
-      .sort((left, right) => scoreTask(right).total - scoreTask(left).total)
+      .sort((left, right) => icpScore(right) - icpScore(left))
       .slice(0, 8);
     if (!eligible.length) {
       window.alert('当前没有未触达且已核验精确主页的客户。');
       return;
     }
     if (!window.customerDev || !window.customerDev.runGlmDirectAutomation) {
-      window.alert('请使用桌面 APP 启动 AutoClaw 串行队列。');
+      window.alert('请使用桌面 APP 启动 Codex Chrome / AutoClaw 兼容串行队列。');
       return;
     }
     for (let index = 0; index < eligible.length; index += 1) {
@@ -509,7 +631,7 @@
         await new Promise(resolve => setTimeout(resolve, 91000));
       }
     }
-    window.alert('本轮 AutoClaw 串行队列已完成。');
+    window.alert('本轮 Codex Chrome 串行队列已完成。');
     location.reload();
   }
 

@@ -1,0 +1,107 @@
+{
+  "generatedAt": "2026-06-18T12:08:03.409Z",
+  "rule": "Daily new development uses ICP score descending. Only ICP > 70 can run. Customers touched in the last 7 days are cooldown/follow-up only.",
+  "executionLayer": "Codex Chrome Extension primary; AutoClaw compatible fallback",
+  "activeIcpThreshold": 70,
+  "highIcpTotal": 16,
+  "completedTodayOrCooldown": 9,
+  "nextRunnable": [
+    {
+      "taskId": "verified-Instagram-ellisbrigham",
+      "name": "ellisbrigham",
+      "company": "Ellis Brigham UK (33K followers, since 1933)",
+      "fitScore": 100,
+      "url": "https://www.instagram.com/ellisbrigham/"
+    },
+    {
+      "taskId": "verified-Instagram-anacondastores",
+      "name": "anacondastores",
+      "company": "Anaconda Stores AU (60K followers, verified, largest outdoor retailer)",
+      "fitScore": 85,
+      "url": ""
+    },
+    {
+      "taskId": "verified-Instagram-mec",
+      "name": "mec",
+      "company": "MEC Canada",
+      "fitScore": 83,
+      "url": "https://www.instagram.com/mec/"
+    },
+    {
+      "taskId": "verified-Instagram-camp4wheels",
+      "name": "camp4wheels",
+      "company": "Poland rooftop tent importer",
+      "fitScore": 83,
+      "url": "https://www.instagram.com/camp4wheels/"
+    },
+    {
+      "taskId": "verified-Instagram-macpac",
+      "name": "macpac",
+      "company": "Macpac NZ/AU (76K followers, verified, outdoor brand)",
+      "fitScore": 77,
+      "url": ""
+    },
+    {
+      "taskId": "verified-Instagram-stoneycreeknz",
+      "name": "stoneycreeknz",
+      "company": "Stoney Creek NZ (23K followers, NZ outdoor clothing brand)",
+      "fitScore": 77,
+      "url": ""
+    },
+    {
+      "taskId": "verified-Instagram-triedandtrout",
+      "name": "triedandtrout",
+      "company": "Tried & Trout Supply Co",
+      "fitScore": 73,
+      "url": ""
+    }
+  ],
+  "cooldownFollowups": [
+    {
+      "taskId": "verified-Instagram-campmor",
+      "name": "campmor",
+      "fitScore": 100
+    },
+    {
+      "taskId": "verified-Instagram-otimosoutdoorgear",
+      "name": "otimosoutdoorgear",
+      "fitScore": 91
+    },
+    {
+      "taskId": "verified-Instagram-worldofcamping",
+      "name": "worldofcamping",
+      "fitScore": 91
+    },
+    {
+      "taskId": "verified-Instagram-monasheeoutdoors",
+      "name": "monasheeoutdoors",
+      "fitScore": 83
+    },
+    {
+      "taskId": "verified-Instagram-kfoutdoor",
+      "name": "kfoutdoor",
+      "fitScore": 78
+    },
+    {
+      "taskId": "verified-Instagram-huntingandfishingnewzealand",
+      "name": "huntingandfishingnewzealand",
+      "fitScore": 77
+    },
+    {
+      "taskId": "verified-Instagram-kathmandugear",
+      "name": "kathmandugear",
+      "fitScore": 77
+    },
+    {
+      "taskId": "verified-Instagram-rebelsportnz",
+      "name": "rebelsportnz",
+      "fitScore": 77
+    },
+    {
+      "taskId": "verified-Instagram-prago.outdoors",
+      "name": "prago.outdoors",
+      "fitScore": 76
+    }
+  ],
+  "retainedLowIcp": []
+}
