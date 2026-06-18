@@ -65,6 +65,8 @@ test('AutoGLM task preserves exact target and approved draft', () => {
 test('desktop automation can use GLM env key and OpenClaw follow-up preparation', () => {
   assert.ok(mainSource.includes('process.env.ZHIPUAI_API_KEY'));
   assert.ok(mainSource.includes('runOpenClawLead'));
+  assert.ok(mainSource.includes('function openClawCommand'));
   assert.ok(mainSource.includes('followup_prepare_no_duplicate_send'));
+  assert.ok(mainSource.includes("model: String((payload && payload.model) || 'glm-5.2')"));
   assert.ok(mainSource.includes("sendStatus: 'prepared_not_sent'"));
 });

@@ -99,8 +99,11 @@ test('AutoClaw buttons explain desktop connection and duplicate-contact blocks',
 test('historical follow-up tasks can trigger safe OpenClaw preparation', () => {
   assert.ok(js.includes('OpenClaw Followup'));
   assert.ok(js.includes('Prepare follow-up only'));
+  assert.ok(js.includes('glm-direct-prepared'));
   const canRunBlock = js.slice(js.indexOf('function canRunGlm'), js.indexOf('function untouchedTasks'));
   assert.ok(!canRunBlock.includes('&& !task.previouslyContacted'));
+  const availabilityBlock = js.slice(js.indexOf('function autoClawAvailability'), js.indexOf('function canRunGlm'));
+  assert.ok(availabilityBlock.includes('!followup && localStorage.getItem'));
 });
 
 test('today queue separates untouched work from historical follow-ups', () => {

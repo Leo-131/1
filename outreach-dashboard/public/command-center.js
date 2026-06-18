@@ -80,7 +80,7 @@
       || task.automationStatus === 'sent_confirmed'
       || task.state === 'outcome_pending'
       || task.previouslyContacted;
-    if (localStorage.getItem(`glm-direct-completed:${task.taskId}`) === '1') {
+    if (!followup && localStorage.getItem(`glm-direct-completed:${task.taskId}`) === '1') {
       return { ready: false, label: followup ? 'Prepared' : 'Done', reason: 'This lead was already prepared on this device' };
     }
     if (!autoClawConnected()) return { ready: false, label: 'Desktop app', reason: 'Use the desktop app to connect the execution layer' };
@@ -462,7 +462,11 @@
         else window.alert(result.error || 'AutoClaw 自动开发未执行。');
         return;
       }
-      localStorage.setItem(`glm-direct-completed:${task.taskId}`, '1');
+      if (result.sendStatus === 'prepared_not_sent' || result.mode === 'followup_prepare_no_duplicate_send') {
+        localStorage.setItem(`glm-direct-prepared:${task.taskId}`, new Date().toISOString());
+      } else {
+        localStorage.setItem(`glm-direct-completed:${task.taskId}`, '1');
+      }
       window.alert('当前客户自动开发已完成，执行证据已返回。');
     } catch (error) {
       window.alert(`自动开发失败：${error.message || error}`);
@@ -490,7 +494,13 @@
     for (let index = 0; index < eligible.length; index += 1) {
       const task = eligible[index];
       const result = await window.customerDev.runGlmDirectAutomation({ lead: task });
-      if (result.ok) localStorage.setItem(`glm-direct-completed:${task.taskId}`, '1');
+      if (result.ok) {
+        if (result.sendStatus === 'prepared_not_sent' || result.mode === 'followup_prepare_no_duplicate_send') {
+          localStorage.setItem(`glm-direct-prepared:${task.taskId}`, new Date().toISOString());
+        } else {
+          localStorage.setItem(`glm-direct-completed:${task.taskId}`, '1');
+        }
+      }
       if (result.needsConfig || result.busy || result.cooldown || result.needsInstall) {
         window.alert(result.error || '串行队列已暂停。');
         return;

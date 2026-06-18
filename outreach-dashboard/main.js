@@ -157,6 +157,15 @@ function saveGlmConfig(config) {
   });
 }
 
+function openClawCommand() {
+  const candidates = [
+    'openclaw.cmd',
+    process.env.APPDATA && path.join(process.env.APPDATA, 'npm', 'openclaw.cmd'),
+    process.env.USERPROFILE && path.join(process.env.USERPROFILE, 'AppData', 'Roaming', 'npm', 'openclaw.cmd'),
+  ].filter(Boolean);
+  return candidates.find((candidate) => candidate === 'openclaw.cmd' || fs.existsSync(candidate)) || 'openclaw.cmd';
+}
+
 function deriveVaultKey(masterPassword, salt) {
   return crypto.pbkdf2Sync(masterPassword, Buffer.from(salt, 'base64'), 210000, 32, 'sha256');
 }
@@ -369,7 +378,7 @@ async function runOpenClawLead(lead, decision, options = {}) {
     String(options.timeoutSeconds || 180),
   ];
   const env = { ...process.env, ZHIPUAI_API_KEY: config.apiKey };
-  const result = await execFilePromise('openclaw.cmd', args, {
+  const result = await execFilePromise(openClawCommand(), args, {
     env,
     windowsHide: true,
     timeout: (options.timeoutSeconds || 180) * 1000,
@@ -465,7 +474,7 @@ ipcMain.handle('save-glm-config', async (_event, payload) => {
   saveGlmConfig({
     apiKey,
     baseUrl: String((payload && payload.baseUrl) || 'https://open.bigmodel.cn/api/paas/v4').replace(/\/+$/, ''),
-    model: String((payload && payload.model) || 'glm-4-flash'),
+    model: String((payload && payload.model) || 'glm-5.2'),
   });
   return { ok: true };
 });
