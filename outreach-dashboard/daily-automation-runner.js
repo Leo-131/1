@@ -37,6 +37,11 @@ const ICP_THRESHOLD = Number(CONFIG.cadence.icpThreshold || 70);
 const COOLDOWN_DAYS = Number(CONFIG.cadence.cooldownDays || 7);
 const DEFAULT_DAILY_LIMIT = 12;
 const TOUCH_STATUSES = new Set(['sent_confirmed', 'post_liked', 'account_followed']);
+const PARTNER_COMPANIES = new Set([
+  'rei',
+  'rei co-op',
+  'rei coop',
+]);
 
 function loadConfig() {
   if (!fs.existsSync(CONFIG_PATH)) return DEFAULT_CONFIG;
@@ -190,6 +195,51 @@ function normalizeResultIndex(results) {
     }
   }
   return index;
+}
+
+function cleanKey(value) {
+  return String(value || '').trim().toLowerCase().replace(/^@/, '').replace(/[^a-z0-9]+/g, '');
+}
+
+function profileHandle(value) {
+  const match = String(value || '').match(/instagram\.com\/([^/?#]+)/i);
+  return match ? match[1] : '';
+}
+
+function leadKeys(item) {
+  return [
+    item.id,
+    item.name,
+    item.company,
+    item.handle,
+    item.accountHandle,
+    item.platformUrl,
+    item.url,
+    item.website,
+    profileHandle(item.platformUrl),
+    profileHandle(item.url),
+  ].map(cleanKey).filter(Boolean);
+}
+
+function knownTouchIndex(results, contacts) {
+  const touched = new Set();
+  const partners = new Set([...PARTNER_COMPANIES].map(cleanKey));
+  for (const result of results || []) {
+    if (!['sent_confirmed', 'skipped', 'prepared_not_sent', 'failed_open', 'account_followed', 'post_liked'].includes(result.status)) continue;
+    [
+      result.task_id,
+      result.target_url,
+      profileHandle(result.target_url),
+    ].map(cleanKey).filter(Boolean).forEach(key => touched.add(key));
+  }
+  for (const item of contacts || []) {
+    const status = String(item.status || '').toLowerCase();
+    const hasTouch = item.sentTime || item.lastTouch || item.scheduledTime || /sent|replied|accepted|scheduled|合作|partner/.test(status);
+    const isPartner = /partner|合作/.test(status) || PARTNER_COMPANIES.has(String(item.company || item.name || '').trim().toLowerCase());
+    if (isPartner) leadKeys(item).forEach(key => partners.add(key));
+    if (hasTouch || isPartner) leadKeys(item).forEach(key => touched.add(key));
+  }
+  return { touched, partners };
 }
 
 function classifyTask(task, context) {
@@ -394,10 +444,17 @@ function quotaPick(classified, cliLimit) {
   };
 }
 
-function discoveryQueue(limit) {
+function discoveryQueue(limit, context = {}) {
   const discovery = readJson('google-lead-discovery-latest.json', { leads: [] });
+  const contactsRaw = readJson('contacts.json', []);
+  const contacts = Array.isArray(contactsRaw) ? contactsRaw : (contactsRaw.contacts || []);
+  const history = knownTouchIndex(context.results || [], contacts);
   return (discovery.leads || [])
     .filter(item => Number(item.fitScore || 0) > ICP_THRESHOLD)
+    .filter(item => {
+      const keys = leadKeys(item);
+      return !keys.some(key => history.partners.has(key) || history.touched.has(key));
+    })
     .map(item => ({
       ...item,
       priorityScore: Number(item.fitScore || 0) + 30,
@@ -427,6 +484,7 @@ function main() {
     now,
     profiles,
     resultsByTask: normalizeResultIndex(results),
+    results,
   };
   const classified = (plan.tasks || [])
     .map(task => classifyTask(task, context))
@@ -437,7 +495,7 @@ function main() {
     ? actionable
     : actionable.filter(item => item.workingTime && item.workingTime.dueNow);
   const picked = quotaPick(dueClassified, limit);
-  const newDiscovery = discoveryQueue(Number(CONFIG.limits.develop || 10));
+  const newDiscovery = discoveryQueue(Number(CONFIG.limits.develop || 10), context);
   const remainingLimit = Math.max(0, picked.quota.total.target - newDiscovery.length);
   const dailyQueue = [...newDiscovery, ...picked.queue.slice(0, remainingLimit)];
   const scheduledLater = actionable

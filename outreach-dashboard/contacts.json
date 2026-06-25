@@ -103,9 +103,11 @@
     "location": "US-West",
     "timezone": "America/Los_Angeles",
     "platform": "linkedin",
-    "status": "scheduled",
+    "status": "partner",
     "priority": "high",
-    "scheduledTime": "2026-04-08T01:35:00.000Z"
+    "scheduledTime": "2026-04-08T01:35:00.000Z",
+    "partnerStatus": "active",
+    "notes": "Already partnered. Do not include in new outreach or repeated connection queue."
   },
   {
     "id": 10,

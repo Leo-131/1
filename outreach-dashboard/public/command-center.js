@@ -535,20 +535,79 @@
         <div class="cc-setting"><b>独代冲突与冷却期</b><span>自动跳过 / 排期</span></div>
       </div></section>`;
   }
+  function resultEventsFor(record) {
+    const keySet = new Set(taskKeys(record));
+    return (window.AUTONOMOUS_OUTREACH_RESULTS || [])
+      .filter(item => {
+        const keys = [
+          item.task_id,
+          item.target_url,
+          urlHandle(item.target_url),
+        ].map(normalizeKey).filter(Boolean);
+        return keys.some(key => keySet.has(key));
+      })
+      .map(item => ({
+        time: item.timestamp || '',
+        title: item.status || 'automation_event',
+        detail: item.evidence || item.agent || '',
+        agent: item.agent || '',
+      }));
+  }
+  function timelineFor(record) {
+    const events = [
+      ...resultEventsFor(record),
+      record.lastTouch ? { time: record.lastTouch, title: '最近触达', detail: record.status || '' } : null,
+      record.sentAt ? { time: record.sentAt, title: '已发送', detail: record.sendStatus || '' } : null,
+      record.sentTime ? { time: record.sentTime, title: '已发送', detail: record.status || '' } : null,
+      record.followUpAt ? { time: record.followUpAt, title: '跟进排期', detail: record.followUpStatus || '' } : null,
+      record.scheduledTime ? { time: record.scheduledTime, title: '已排期', detail: record.status || '' } : null,
+    ].filter(Boolean)
+      .filter(item => item.time || item.detail)
+      .sort((a, b) => (Date.parse(b.time || '') || 0) - (Date.parse(a.time || '') || 0));
+    const seen = new Set();
+    return events.filter(item => {
+      const key = `${item.time}|${item.title}|${item.detail}`;
+      if (seen.has(key)) return false;
+      seen.add(key);
+      return true;
+    });
+  }
+  function backgroundRows(record) {
+    return [
+      ['客户/公司', record.company || record.name],
+      ['国家/区域', record.country || record.countryEn || record.location],
+      ['平台主页', platformUrl(record)],
+      ['官网', record.website || record.companyWebsite || ''],
+      ['背调证据', record.evidenceUrl || record.query || record.automationEvidence || ''],
+      ['客户画像', record.background || record.notes || record.fitReasons || ''],
+      ['采购角色', record.buyerPersona || record.role || ''],
+      ['渠道状态', record.marketStatus || record.agencyState || ''],
+      ['身份状态', record.identityStatus || (record.identityVerified ? 'verified' : '')],
+      ['核验来源', record.identitySource || ''],
+    ].filter(([, value]) => value);
+  }
   function customer() {
     const key = query.get('contact') || '';
-    const task = tasks.find(item => item.taskId === key);
+    const task = findTaskById(key) || tasks.find(item => item.taskId === key);
     const records = customerRecords();
     const record = task || records.find((item, index) => encodeURIComponent([item.platform, item.name, item.company, index].join('|')) === key);
     if (!record) return pageHead('客户详情', '未找到对应客户') + '<div class="cc-empty">该记录可能已更新，请返回客户附表。</div>';
-    const score = task ? scoreTask(task) : engine.calculateDevelopmentScore({
+    const score = task && tasks.some(item => item.taskId === task.taskId) ? scoreTask(task) : engine.calculateDevelopmentScore({
       region: record.country, marketStatus: record.marketStatus, role: record.role,
       industry: record.industry, identityConfidence: record.linkedin_url || record.targetUrl ? 100 : 0,
       keywordIntent: record.keyword_used ? 70 : 0,
     });
+    const background = backgroundRows(record);
+    const timeline = timelineFor(record);
     return `${pageHead(esc(record.company || record.name), '独立客户详情页，不覆盖原工作台')}
       <section class="cc-panel"><div class="cc-panel-body"><div class="cc-current"><div><h3>${esc(record.name)}</h3><div class="cc-sub">${esc(record.role)} · ${esc(record.country)} · ${esc(record.platform)}</div></div><div class="cc-score"><strong>${score.total}</strong><span>综合开发分</span></div></div></div></section>
       <section class="cc-panel"><div class="cc-panel-head"><h2>ICP 评分解释</h2></div><div class="cc-panel-body"><div class="cc-sub">${esc(icpExplanation(record))}</div></div></section>
+      <section class="cc-panel"><div class="cc-panel-head"><h2>客户背调明细</h2></div><div class="cc-panel-body"><table class="cc-table"><tbody>${background.map(([label, value]) => {
+        const text = String(value || '');
+        const rendered = /^https?:\/\//i.test(text) ? `<a href="${esc(text)}" target="_blank" rel="noopener">${esc(text)}</a>` : esc(text);
+        return `<tr><th>${esc(label)}</th><td>${rendered}</td></tr>`;
+      }).join('')}</tbody></table></div></section>
+      <section class="cc-panel"><div class="cc-panel-head"><h2>触达时间线</h2></div><div class="cc-panel-body">${timeline.length ? `<div class="cc-timeline">${timeline.map(item => `<div class="cc-timeline-item"><b>${esc(item.time || '时间待补')}</b><span>${esc(item.title)}</span><p>${esc(item.detail || item.agent || '')}</p></div>`).join('')}</div>` : '<div class="cc-empty">暂无触达记录，可作为新客户候选；若已合作或已触达，请在客户状态中标记，系统会自动排除今日新开发。</div>'}</div></section>
       <section class="cc-panel"><div class="cc-panel-head"><h2>开发信与 Codex Chrome 执行证据</h2></div><div class="cc-panel-body"><div class="cc-message">${esc(record.approvedMessage || record.message || '暂无批准开发信')}</div><div class="cc-sub" style="margin-top:12px">精确目标：${esc(record.targetUrl || record.instagram_url || record.linkedin_url || '')}<br>最近触达：${esc(record.lastTouch || record.date || '暂无')}<br>执行证据：${esc(record.automationEvidence || record.sendStatus || '暂无')}<br>身份状态：${esc(record.identityStatus || '待核验')}<br>核验来源：${esc(record.identitySource || '暂无')}</div></div></section>`;
   }
   function rail() {
