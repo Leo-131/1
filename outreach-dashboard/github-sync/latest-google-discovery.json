@@ -1,4 +1,4 @@
-window.GOOGLE_LEAD_DISCOVERY_LATEST = {
+{
   "generatedAt": "2026-06-25T08:42:52.476Z",
   "mode": "google-concrete-customer-discovery",
   "objective": "convert Google discovery into concrete high-ICP customer profiles with official URLs and background notes",
@@ -433,4 +433,4 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       }
     }
   ]
-};
+}
