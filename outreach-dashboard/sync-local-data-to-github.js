@@ -1,0 +1,115 @@
+const fs = require('fs');
+const path = require('path');
+const { execFileSync } = require('child_process');
+
+const ROOT = __dirname;
+const OUT = path.join(ROOT, 'github-sync');
+const WATCH = process.argv.includes('--watch');
+const PUSH = !process.argv.includes('--no-push');
+const DEBOUNCE_MS = 30000;
+
+function readJson(file, fallback = null) {
+  try {
+    return JSON.parse(fs.readFileSync(file, 'utf8'));
+  } catch {
+    return fallback;
+  }
+}
+
+function redact(value) {
+  if (Array.isArray(value)) return value.map(redact);
+  if (!value || typeof value !== 'object') return value;
+  const blocked = /password|passwd|secret|token|api[_-]?key|credential|cookie|session/i;
+  return Object.fromEntries(Object.entries(value).map(([key, item]) => [
+    key,
+    blocked.test(key) ? '[REDACTED]' : redact(item),
+  ]));
+}
+
+function copyIfExists(from, to) {
+  if (!fs.existsSync(from)) return false;
+  fs.mkdirSync(path.dirname(to), { recursive: true });
+  fs.copyFileSync(from, to);
+  return true;
+}
+
+function git(args, options = {}) {
+  return execFileSync('git', args, {
+    cwd: ROOT,
+    encoding: 'utf8',
+    stdio: options.stdio || 'pipe',
+  }).trim();
+}
+
+function hasChanges(paths) {
+  const output = git(['status', '--short', '--', ...paths]);
+  return output.length > 0;
+}
+
+function syncOnce() {
+  fs.mkdirSync(OUT, { recursive: true });
+  const latest = redact(readJson(path.join(ROOT, 'daily-automation-latest.json'), {}));
+  const latestDate = latest.date || new Date().toISOString().slice(0, 10);
+  const latestRun = path.join(ROOT, 'daily-runs', `${latestDate}-daily-automation.json`);
+  const latestCsv = path.join(ROOT, 'daily-runs', `${latestDate}-daily-queue.csv`);
+
+  fs.writeFileSync(path.join(OUT, 'latest-daily-automation.json'), JSON.stringify(latest, null, 2));
+  fs.writeFileSync(path.join(OUT, 'README.md'), [
+    '# Local Outreach Sync',
+    '',
+    `Updated: ${new Date().toISOString()}`,
+    '',
+    'This folder is generated from local Codex automation data.',
+    'Sensitive keys, passwords, tokens, cookies, and credentials are redacted or excluded.',
+    '',
+    'Use this folder on another computer after `git pull` to inspect the latest local queue and execution summary.',
+    '',
+  ].join('\n'));
+  copyIfExists(latestRun, path.join(OUT, 'daily-run.json'));
+  copyIfExists(latestCsv, path.join(OUT, 'daily-queue.csv'));
+  copyIfExists(path.join(ROOT, 'autonomous-outreach-results.js'), path.join(OUT, 'autonomous-outreach-results.js'));
+
+  const paths = [
+    'github-sync',
+    'daily-automation-latest.js',
+    'sync-local-data-to-github.js',
+    'package.json',
+  ];
+  git(['add', '--', ...paths], { stdio: 'pipe' });
+  if (!hasChanges(paths)) {
+    console.log('github sync: no local data changes');
+    return false;
+  }
+  const message = `sync: local outreach data ${latestDate}`;
+  git(['commit', '-m', message], { stdio: 'inherit' });
+  if (PUSH) git(['push', 'origin', git(['branch', '--show-current'])], { stdio: 'inherit' });
+  console.log(`github sync: ${message}`);
+  return true;
+}
+
+let timer = null;
+function scheduleSync() {
+  clearTimeout(timer);
+  timer = setTimeout(() => {
+    try {
+      syncOnce();
+    } catch (error) {
+      console.error(`github sync failed: ${error.message || error}`);
+    }
+  }, DEBOUNCE_MS);
+}
+
+if (WATCH) {
+  syncOnce();
+  [
+    'daily-automation-latest.json',
+    'autonomous-outreach-results.js',
+    'daily-runs',
+  ].forEach((name) => {
+    const target = path.join(ROOT, name);
+    if (fs.existsSync(target)) fs.watch(target, { recursive: fs.statSync(target).isDirectory() }, scheduleSync);
+  });
+  console.log('github sync: watching local outreach data');
+} else {
+  syncOnce();
+}
