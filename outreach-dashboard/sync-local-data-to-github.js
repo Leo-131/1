@@ -34,11 +34,12 @@ function copyIfExists(from, to) {
 }
 
 function git(args, options = {}) {
-  return execFileSync('git', args, {
+  const output = execFileSync('git', args, {
     cwd: ROOT,
     encoding: 'utf8',
     stdio: options.stdio || 'pipe',
-  }).trim();
+  });
+  return typeof output === 'string' ? output.trim() : '';
 }
 
 function hasChanges(paths) {
