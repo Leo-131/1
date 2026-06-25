@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-25T18:04:33.586Z",
+  "generatedAt": "2026-06-25T21:01:08.684Z",
   "date": "2026-06-25",
   "mode": "daily-icp-first-automation-loop",
   "executionLayer": "Codex Chrome Extension primary; AutoClaw compatible",
@@ -8,23 +8,23 @@
     "quota": {
       "total": {
         "target": 20,
-        "planned": 4,
-        "gap": 16
+        "planned": 5,
+        "gap": 15
       },
       "develop": {
         "target": 10,
-        "planned": 2,
-        "gap": 8
+        "planned": 3,
+        "gap": 7
       },
       "email_priority": {
         "target": 5,
-        "planned": 1,
-        "gap": 4
+        "planned": 2,
+        "gap": 3
       },
       "retry_or_alternate_channel": {
         "target": 3,
-        "planned": 1,
-        "gap": 2
+        "planned": 0,
+        "gap": 3
       },
       "verify_target": {
         "target": 2,
@@ -46,9 +46,9 @@
     "totalLeads": 16,
     "highIcp": 16,
     "readyToDevelop": 17,
-    "dueNow": 12,
+    "dueNow": 13,
     "googleDiscovered": 8,
-    "scheduledLater": 11,
+    "scheduledLater": 10,
     "cooldown": 0,
     "emailPriority": 5,
     "openAgencyMarket": 15,
@@ -86,7 +86,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/26 02:04:33",
+        "localTime": "2026/6/26 05:01:08",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "priorityScore": 126
@@ -120,7 +120,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/26 02:04:33",
+        "localTime": "2026/6/26 05:01:08",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "priorityScore": 125
@@ -154,7 +154,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/26 02:04:33",
+        "localTime": "2026/6/26 05:01:08",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "priorityScore": 123
@@ -188,7 +188,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/26 02:04:33",
+        "localTime": "2026/6/26 05:01:08",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "priorityScore": 121
@@ -222,7 +222,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/26 02:04:33",
+        "localTime": "2026/6/26 05:01:08",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "priorityScore": 120
@@ -256,7 +256,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/26 02:04:33",
+        "localTime": "2026/6/26 05:01:08",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "priorityScore": 120
@@ -290,7 +290,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/26 02:04:33",
+        "localTime": "2026/6/26 05:01:08",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "priorityScore": 119
@@ -324,52 +324,24 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/26 02:04:33",
+        "localTime": "2026/6/26 05:01:08",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "priorityScore": 116
     },
     {
-      "id": "verified-Instagram-campmor",
-      "name": "campmor",
-      "company": "Campmor US",
+      "id": "verified-Instagram-macpac",
+      "name": "macpac",
+      "company": "Macpac NZ/AU (76K followers, verified, outdoor brand)",
       "platform": "instagram",
-      "country": "美国",
-      "countryEn": "United States",
-      "fitScore": 100,
+      "country": "新西兰",
+      "countryEn": "New Zealand",
+      "fitScore": 77,
       "fitTier": "A",
-      "marketScore": 4.4,
+      "marketScore": 3.9,
       "marketStatus": "可开拓",
       "agencyState": "open",
-      "url": "https://www.instagram.com/campmor/",
-      "lastStatus": "sent_confirmed",
-      "lastEvidence": "confirmed DM follow-up sent via logged-in Chrome session",
-      "lastTouch": "2026-06-18T10:09:35.863Z",
-      "action": "develop",
-      "reason": "high_icp_verified_ready",
-      "workingTime": {
-        "dueNow": true,
-        "timeZone": "America/New_York",
-        "localTime": "Thu 14:04",
-        "window": "afternoon",
-        "nextBest": "now",
-        "weight": 0.9
-      },
-      "priorityScore": 162
-    },
-    {
-      "id": "verified-Instagram-mec",
-      "name": "mec",
-      "company": "MEC Canada",
-      "platform": "instagram",
-      "country": "加拿大",
-      "countryEn": "Canada",
-      "fitScore": 83,
-      "fitTier": "A",
-      "marketScore": 3.7,
-      "marketStatus": "可开拓",
-      "agencyState": "open",
-      "url": "https://www.instagram.com/mec/",
+      "url": "https://www.instagram.com/macpac/",
       "lastStatus": "skipped",
       "lastEvidence": "email_channel_found",
       "lastTouch": "",
@@ -377,69 +349,125 @@
       "reason": "email_channel_found",
       "workingTime": {
         "dueNow": true,
-        "timeZone": "America/Toronto",
-        "localTime": "Thu 14:04",
-        "window": "afternoon",
+        "timeZone": "Pacific/Auckland",
+        "localTime": "Fri 09:01",
+        "window": "morning",
         "nextBest": "now",
-        "weight": 0.9
+        "weight": 1
       },
-      "priorityScore": 146
+      "priorityScore": 142
     },
     {
-      "id": "verified-Instagram-monasheeoutdoors",
-      "name": "monasheeoutdoors",
-      "company": "Monashee Outdoors",
+      "id": "verified-Instagram-stoneycreeknz",
+      "name": "stoneycreeknz",
+      "company": "Stoney Creek NZ (23K followers, NZ outdoor clothing brand)",
       "platform": "instagram",
-      "country": "加拿大",
-      "countryEn": "Canada",
-      "fitScore": 83,
+      "country": "新西兰",
+      "countryEn": "New Zealand",
+      "fitScore": 77,
       "fitTier": "A",
-      "marketScore": 3.7,
+      "marketScore": 3.9,
       "marketStatus": "可开拓",
       "agencyState": "open",
-      "url": "https://www.instagram.com/monasheeoutdoors/",
+      "url": "https://www.instagram.com/stoneycreeknz/",
+      "lastStatus": "skipped",
+      "lastEvidence": "email_channel_found",
+      "lastTouch": "",
+      "action": "email_priority",
+      "reason": "email_channel_found",
+      "workingTime": {
+        "dueNow": true,
+        "timeZone": "Pacific/Auckland",
+        "localTime": "Fri 09:01",
+        "window": "morning",
+        "nextBest": "now",
+        "weight": 1
+      },
+      "priorityScore": 142
+    },
+    {
+      "id": "verified-Instagram-huntingandfishingnewzealand",
+      "name": "huntingandfishingnewzealand",
+      "company": "Hunting & Fishing NZ (46K followers, verified, NZ outdoor retail)",
+      "platform": "instagram",
+      "country": "新西兰",
+      "countryEn": "New Zealand",
+      "fitScore": 77,
+      "fitTier": "A",
+      "marketScore": 3.9,
+      "marketStatus": "可开拓",
+      "agencyState": "open",
+      "url": "https://www.instagram.com/huntingandfishingnewzealand/",
       "lastStatus": "sent_confirmed",
-      "lastEvidence": "duplicate_risk: duplicate DM observed in Instagram chat; future sends locked",
-      "lastTouch": "2026-06-18T09:01:31.455Z",
+      "lastEvidence": "confirmed DM follow-up sent via logged-in Chrome session",
+      "lastTouch": "2026-06-18T10:09:35.863Z",
       "action": "develop",
       "reason": "high_icp_verified_ready",
       "workingTime": {
         "dueNow": true,
-        "timeZone": "America/Toronto",
-        "localTime": "Thu 14:04",
-        "window": "afternoon",
+        "timeZone": "Pacific/Auckland",
+        "localTime": "Fri 09:01",
+        "window": "morning",
         "nextBest": "now",
-        "weight": 0.9
+        "weight": 1
       },
-      "priorityScore": 138
+      "priorityScore": 134
     },
     {
-      "id": "verified-Instagram-triedandtrout",
-      "name": "triedandtrout",
-      "company": "Tried & Trout Supply Co",
+      "id": "verified-Instagram-kathmandugear",
+      "name": "kathmandugear",
+      "company": "Kathmandu NZ/AU (12.3K followers, verified)",
       "platform": "instagram",
-      "country": "美国",
-      "countryEn": "United States",
-      "fitScore": 73,
+      "country": "新西兰",
+      "countryEn": "New Zealand",
+      "fitScore": 77,
       "fitTier": "A",
-      "marketScore": 4.4,
+      "marketScore": 3.9,
       "marketStatus": "可开拓",
       "agencyState": "open",
-      "url": "https://www.instagram.com/triedandtroutsupply/",
-      "lastStatus": "failed_open",
-      "lastEvidence": "profile_valid_no_message_button",
-      "lastTouch": "",
-      "action": "retry_or_alternate_channel",
-      "reason": "profile_valid_no_message_button",
+      "url": "https://www.instagram.com/kathmandugear/",
+      "lastStatus": "sent_confirmed",
+      "lastEvidence": "confirmed DM follow-up sent via logged-in Chrome session",
+      "lastTouch": "2026-06-18T10:09:35.863Z",
+      "action": "develop",
+      "reason": "high_icp_verified_ready",
       "workingTime": {
         "dueNow": true,
-        "timeZone": "America/New_York",
-        "localTime": "Thu 14:04",
-        "window": "afternoon",
+        "timeZone": "Pacific/Auckland",
+        "localTime": "Fri 09:01",
+        "window": "morning",
         "nextBest": "now",
-        "weight": 0.9
+        "weight": 1
       },
-      "priorityScore": 135
+      "priorityScore": 134
+    },
+    {
+      "id": "verified-Instagram-rebelsportnz",
+      "name": "rebelsportnz",
+      "company": "Rebel Sport NZ (38K followers, verified, NZ #1 sporting goods retailer)",
+      "platform": "instagram",
+      "country": "新西兰",
+      "countryEn": "New Zealand",
+      "fitScore": 77,
+      "fitTier": "A",
+      "marketScore": 3.9,
+      "marketStatus": "可开拓",
+      "agencyState": "open",
+      "url": "https://www.instagram.com/rebelsportnz/",
+      "lastStatus": "sent_confirmed",
+      "lastEvidence": "confirmed DM follow-up sent via logged-in Chrome session",
+      "lastTouch": "2026-06-18T10:09:35.863Z",
+      "action": "develop",
+      "reason": "high_icp_verified_ready",
+      "workingTime": {
+        "dueNow": true,
+        "timeZone": "Pacific/Auckland",
+        "localTime": "Fri 09:01",
+        "window": "morning",
+        "nextBest": "now",
+        "weight": 1
+      },
+      "priorityScore": 134
     }
   ],
   "scheduledLater": [
@@ -464,12 +492,40 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/London",
-        "localTime": "Thu 19:04",
+        "localTime": "Thu 22:01",
         "window": "outside_work_hours",
         "nextBest": "Europe/London morning",
         "weight": 0
       },
       "priorityScore": 171
+    },
+    {
+      "id": "verified-Instagram-campmor",
+      "name": "campmor",
+      "company": "Campmor US",
+      "platform": "instagram",
+      "country": "美国",
+      "countryEn": "United States",
+      "fitScore": 100,
+      "fitTier": "A",
+      "marketScore": 4.4,
+      "marketStatus": "可开拓",
+      "agencyState": "open",
+      "url": "https://www.instagram.com/campmor/",
+      "lastStatus": "sent_confirmed",
+      "lastEvidence": "confirmed DM follow-up sent via logged-in Chrome session",
+      "lastTouch": "2026-06-18T10:09:35.863Z",
+      "action": "develop",
+      "reason": "high_icp_verified_ready",
+      "workingTime": {
+        "dueNow": false,
+        "timeZone": "America/New_York",
+        "localTime": "Thu 17:01",
+        "window": "outside_work_hours",
+        "nextBest": "America/New_York morning",
+        "weight": 0
+      },
+      "priorityScore": 162
     },
     {
       "id": "verified-Instagram-anacondastores",
@@ -492,7 +548,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Australia/Sydney",
-        "localTime": "Fri 04:04",
+        "localTime": "Fri 07:01",
         "window": "outside_work_hours",
         "nextBest": "Australia/Sydney morning",
         "weight": 0
@@ -520,7 +576,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/London",
-        "localTime": "Thu 19:04",
+        "localTime": "Thu 22:01",
         "window": "outside_work_hours",
         "nextBest": "Europe/London morning",
         "weight": 0
@@ -548,7 +604,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/London",
-        "localTime": "Thu 19:04",
+        "localTime": "Thu 22:01",
         "window": "outside_work_hours",
         "nextBest": "Europe/London morning",
         "weight": 0
@@ -556,18 +612,18 @@
       "priorityScore": 154
     },
     {
-      "id": "verified-Instagram-macpac",
-      "name": "macpac",
-      "company": "Macpac NZ/AU (76K followers, verified, outdoor brand)",
+      "id": "verified-Instagram-mec",
+      "name": "mec",
+      "company": "MEC Canada",
       "platform": "instagram",
-      "country": "新西兰",
-      "countryEn": "New Zealand",
-      "fitScore": 77,
+      "country": "加拿大",
+      "countryEn": "Canada",
+      "fitScore": 83,
       "fitTier": "A",
-      "marketScore": 3.9,
+      "marketScore": 3.7,
       "marketStatus": "可开拓",
       "agencyState": "open",
-      "url": "https://www.instagram.com/macpac/",
+      "url": "https://www.instagram.com/mec/",
       "lastStatus": "skipped",
       "lastEvidence": "email_channel_found",
       "lastTouch": "",
@@ -575,125 +631,69 @@
       "reason": "email_channel_found",
       "workingTime": {
         "dueNow": false,
-        "timeZone": "Pacific/Auckland",
-        "localTime": "Fri 06:04",
+        "timeZone": "America/Toronto",
+        "localTime": "Thu 17:01",
         "window": "outside_work_hours",
-        "nextBest": "Pacific/Auckland morning",
+        "nextBest": "America/Toronto morning",
         "weight": 0
       },
-      "priorityScore": 142
+      "priorityScore": 146
     },
     {
-      "id": "verified-Instagram-stoneycreeknz",
-      "name": "stoneycreeknz",
-      "company": "Stoney Creek NZ (23K followers, NZ outdoor clothing brand)",
+      "id": "verified-Instagram-monasheeoutdoors",
+      "name": "monasheeoutdoors",
+      "company": "Monashee Outdoors",
       "platform": "instagram",
-      "country": "新西兰",
-      "countryEn": "New Zealand",
-      "fitScore": 77,
+      "country": "加拿大",
+      "countryEn": "Canada",
+      "fitScore": 83,
       "fitTier": "A",
-      "marketScore": 3.9,
+      "marketScore": 3.7,
       "marketStatus": "可开拓",
       "agencyState": "open",
-      "url": "https://www.instagram.com/stoneycreeknz/",
-      "lastStatus": "skipped",
-      "lastEvidence": "email_channel_found",
+      "url": "https://www.instagram.com/monasheeoutdoors/",
+      "lastStatus": "sent_confirmed",
+      "lastEvidence": "duplicate_risk: duplicate DM observed in Instagram chat; future sends locked",
+      "lastTouch": "2026-06-18T09:01:31.455Z",
+      "action": "develop",
+      "reason": "high_icp_verified_ready",
+      "workingTime": {
+        "dueNow": false,
+        "timeZone": "America/Toronto",
+        "localTime": "Thu 17:01",
+        "window": "outside_work_hours",
+        "nextBest": "America/Toronto morning",
+        "weight": 0
+      },
+      "priorityScore": 138
+    },
+    {
+      "id": "verified-Instagram-triedandtrout",
+      "name": "triedandtrout",
+      "company": "Tried & Trout Supply Co",
+      "platform": "instagram",
+      "country": "美国",
+      "countryEn": "United States",
+      "fitScore": 73,
+      "fitTier": "A",
+      "marketScore": 4.4,
+      "marketStatus": "可开拓",
+      "agencyState": "open",
+      "url": "https://www.instagram.com/triedandtroutsupply/",
+      "lastStatus": "failed_open",
+      "lastEvidence": "profile_valid_no_message_button",
       "lastTouch": "",
-      "action": "email_priority",
-      "reason": "email_channel_found",
+      "action": "retry_or_alternate_channel",
+      "reason": "profile_valid_no_message_button",
       "workingTime": {
         "dueNow": false,
-        "timeZone": "Pacific/Auckland",
-        "localTime": "Fri 06:04",
+        "timeZone": "America/New_York",
+        "localTime": "Thu 17:01",
         "window": "outside_work_hours",
-        "nextBest": "Pacific/Auckland morning",
+        "nextBest": "America/New_York morning",
         "weight": 0
       },
-      "priorityScore": 142
-    },
-    {
-      "id": "verified-Instagram-huntingandfishingnewzealand",
-      "name": "huntingandfishingnewzealand",
-      "company": "Hunting & Fishing NZ (46K followers, verified, NZ outdoor retail)",
-      "platform": "instagram",
-      "country": "新西兰",
-      "countryEn": "New Zealand",
-      "fitScore": 77,
-      "fitTier": "A",
-      "marketScore": 3.9,
-      "marketStatus": "可开拓",
-      "agencyState": "open",
-      "url": "https://www.instagram.com/huntingandfishingnewzealand/",
-      "lastStatus": "sent_confirmed",
-      "lastEvidence": "confirmed DM follow-up sent via logged-in Chrome session",
-      "lastTouch": "2026-06-18T10:09:35.863Z",
-      "action": "develop",
-      "reason": "high_icp_verified_ready",
-      "workingTime": {
-        "dueNow": false,
-        "timeZone": "Pacific/Auckland",
-        "localTime": "Fri 06:04",
-        "window": "outside_work_hours",
-        "nextBest": "Pacific/Auckland morning",
-        "weight": 0
-      },
-      "priorityScore": 134
-    },
-    {
-      "id": "verified-Instagram-kathmandugear",
-      "name": "kathmandugear",
-      "company": "Kathmandu NZ/AU (12.3K followers, verified)",
-      "platform": "instagram",
-      "country": "新西兰",
-      "countryEn": "New Zealand",
-      "fitScore": 77,
-      "fitTier": "A",
-      "marketScore": 3.9,
-      "marketStatus": "可开拓",
-      "agencyState": "open",
-      "url": "https://www.instagram.com/kathmandugear/",
-      "lastStatus": "sent_confirmed",
-      "lastEvidence": "confirmed DM follow-up sent via logged-in Chrome session",
-      "lastTouch": "2026-06-18T10:09:35.863Z",
-      "action": "develop",
-      "reason": "high_icp_verified_ready",
-      "workingTime": {
-        "dueNow": false,
-        "timeZone": "Pacific/Auckland",
-        "localTime": "Fri 06:04",
-        "window": "outside_work_hours",
-        "nextBest": "Pacific/Auckland morning",
-        "weight": 0
-      },
-      "priorityScore": 134
-    },
-    {
-      "id": "verified-Instagram-rebelsportnz",
-      "name": "rebelsportnz",
-      "company": "Rebel Sport NZ (38K followers, verified, NZ #1 sporting goods retailer)",
-      "platform": "instagram",
-      "country": "新西兰",
-      "countryEn": "New Zealand",
-      "fitScore": 77,
-      "fitTier": "A",
-      "marketScore": 3.9,
-      "marketStatus": "可开拓",
-      "agencyState": "open",
-      "url": "https://www.instagram.com/rebelsportnz/",
-      "lastStatus": "sent_confirmed",
-      "lastEvidence": "confirmed DM follow-up sent via logged-in Chrome session",
-      "lastTouch": "2026-06-18T10:09:35.863Z",
-      "action": "develop",
-      "reason": "high_icp_verified_ready",
-      "workingTime": {
-        "dueNow": false,
-        "timeZone": "Pacific/Auckland",
-        "localTime": "Fri 06:04",
-        "window": "outside_work_hours",
-        "nextBest": "Pacific/Auckland morning",
-        "weight": 0
-      },
-      "priorityScore": 134
+      "priorityScore": 135
     },
     {
       "id": "verified-Instagram-kfoutdoor",
@@ -716,7 +716,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Asia/Jakarta",
-        "localTime": "Fri 01:04",
+        "localTime": "Fri 04:01",
         "window": "outside_work_hours",
         "nextBest": "Asia/Jakarta morning",
         "weight": 0
@@ -744,7 +744,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Asia/Kolkata",
-        "localTime": "Thu 23:34",
+        "localTime": "Fri 02:31",
         "window": "outside_work_hours",
         "nextBest": "Asia/Kolkata morning",
         "weight": 0

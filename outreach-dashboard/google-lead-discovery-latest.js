@@ -1,5 +1,5 @@
 window.GOOGLE_LEAD_DISCOVERY_LATEST = {
-  "generatedAt": "2026-06-25T18:04:33.419Z",
+  "generatedAt": "2026-06-25T21:01:08.481Z",
   "mode": "google-concrete-customer-discovery",
   "objective": "convert Google discovery into concrete high-ICP customer profiles with official URLs and background notes",
   "leads": [
@@ -32,7 +32,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/26 02:04:33",
+        "localTime": "2026/6/26 05:01:08",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       }
     },
@@ -65,7 +65,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/26 02:04:33",
+        "localTime": "2026/6/26 05:01:08",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       }
     },
@@ -98,7 +98,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/26 02:04:33",
+        "localTime": "2026/6/26 05:01:08",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       }
     },
@@ -131,7 +131,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/26 02:04:33",
+        "localTime": "2026/6/26 05:01:08",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       }
     },
@@ -164,7 +164,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/26 02:04:33",
+        "localTime": "2026/6/26 05:01:08",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       }
     },
@@ -197,7 +197,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/26 02:04:33",
+        "localTime": "2026/6/26 05:01:08",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       }
     },
@@ -230,7 +230,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/26 02:04:33",
+        "localTime": "2026/6/26 05:01:08",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       }
     },
@@ -263,7 +263,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/26 02:04:33",
+        "localTime": "2026/6/26 05:01:08",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       }
     },
@@ -296,7 +296,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/26 02:04:33",
+        "localTime": "2026/6/26 05:01:08",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       }
     },
@@ -329,7 +329,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/26 02:04:33",
+        "localTime": "2026/6/26 05:01:08",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       }
     },
@@ -362,7 +362,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/26 02:04:33",
+        "localTime": "2026/6/26 05:01:08",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       }
     },
@@ -395,7 +395,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/26 02:04:33",
+        "localTime": "2026/6/26 05:01:08",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       }
     },
@@ -428,7 +428,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/26 02:04:33",
+        "localTime": "2026/6/26 05:01:08",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       }
     }
