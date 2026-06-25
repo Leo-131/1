@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-25T12:06:25.287Z",
+  "generatedAt": "2026-06-25T15:02:25.711Z",
   "date": "2026-06-25",
   "mode": "daily-icp-first-automation-loop",
   "executionLayer": "Codex Chrome Extension primary; AutoClaw compatible",
@@ -8,23 +8,23 @@
     "quota": {
       "total": {
         "target": 20,
-        "planned": 0,
-        "gap": 20
+        "planned": 7,
+        "gap": 13
       },
       "develop": {
         "target": 10,
-        "planned": 0,
-        "gap": 10
+        "planned": 4,
+        "gap": 6
       },
       "email_priority": {
         "target": 5,
-        "planned": 0,
-        "gap": 5
+        "planned": 2,
+        "gap": 3
       },
       "retry_or_alternate_channel": {
         "target": 3,
-        "planned": 0,
-        "gap": 3
+        "planned": 1,
+        "gap": 2
       },
       "verify_target": {
         "target": 2,
@@ -34,9 +34,9 @@
     },
     "icpThreshold": 70,
     "cooldownDays": 7,
-    "singleBrowserPage": false,
-    "parallelTasks": true,
-    "parallelLimit": 3,
+    "singleBrowserPage": true,
+    "parallelTasks": false,
+    "parallelLimit": 1,
     "noDuplicateDm": true,
     "preferOpenAgencyMarkets": true,
     "skipExclusiveAgencyMarkets": true,
@@ -46,9 +46,9 @@
     "totalLeads": 16,
     "highIcp": 16,
     "readyToDevelop": 17,
-    "dueNow": 8,
+    "dueNow": 15,
     "googleDiscovered": 8,
-    "scheduledLater": 15,
+    "scheduledLater": 8,
     "cooldown": 0,
     "emailPriority": 5,
     "openAgencyMarket": 15,
@@ -86,7 +86,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/25 20:06:25",
+        "localTime": "2026/6/25 23:02:25",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "priorityScore": 126
@@ -120,7 +120,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/25 20:06:25",
+        "localTime": "2026/6/25 23:02:25",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "priorityScore": 125
@@ -154,7 +154,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/25 20:06:25",
+        "localTime": "2026/6/25 23:02:25",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "priorityScore": 123
@@ -188,7 +188,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/25 20:06:25",
+        "localTime": "2026/6/25 23:02:25",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "priorityScore": 121
@@ -222,7 +222,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/25 20:06:25",
+        "localTime": "2026/6/25 23:02:25",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "priorityScore": 120
@@ -256,7 +256,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/25 20:06:25",
+        "localTime": "2026/6/25 23:02:25",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "priorityScore": 120
@@ -290,7 +290,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/25 20:06:25",
+        "localTime": "2026/6/25 23:02:25",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "priorityScore": 119
@@ -324,13 +324,11 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/25 20:06:25",
+        "localTime": "2026/6/25 23:02:25",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "priorityScore": 116
-    }
-  ],
-  "scheduledLater": [
+    },
     {
       "id": "verified-Instagram-ellisbrigham",
       "name": "ellisbrigham",
@@ -350,12 +348,12 @@
       "action": "email_priority",
       "reason": "email_channel_found",
       "workingTime": {
-        "dueNow": false,
+        "dueNow": true,
         "timeZone": "Europe/London",
-        "localTime": "Thu 13:06",
-        "window": "outside_work_hours",
-        "nextBest": "Europe/London afternoon",
-        "weight": 0
+        "localTime": "Thu 16:02",
+        "window": "afternoon",
+        "nextBest": "now",
+        "weight": 0.9
       },
       "priorityScore": 171
     },
@@ -378,42 +376,14 @@
       "action": "develop",
       "reason": "high_icp_verified_ready",
       "workingTime": {
-        "dueNow": false,
+        "dueNow": true,
         "timeZone": "America/New_York",
-        "localTime": "Thu 08:06",
-        "window": "outside_work_hours",
-        "nextBest": "America/New_York morning",
-        "weight": 0
+        "localTime": "Thu 11:02",
+        "window": "morning",
+        "nextBest": "now",
+        "weight": 1
       },
       "priorityScore": 162
-    },
-    {
-      "id": "verified-Instagram-anacondastores",
-      "name": "anacondastores",
-      "company": "Anaconda Stores AU (60K followers, verified, largest outdoor retailer)",
-      "platform": "instagram",
-      "country": "澳大利亚",
-      "countryEn": "Australia",
-      "fitScore": 85,
-      "fitTier": "A",
-      "marketScore": 4.8,
-      "marketStatus": "可开拓",
-      "agencyState": "open",
-      "url": "https://www.instagram.com/anacondastores/",
-      "lastStatus": "skipped",
-      "lastEvidence": "email_channel_found",
-      "lastTouch": "",
-      "action": "email_priority",
-      "reason": "email_channel_found",
-      "workingTime": {
-        "dueNow": false,
-        "timeZone": "Australia/Sydney",
-        "localTime": "Thu 22:06",
-        "window": "outside_work_hours",
-        "nextBest": "Australia/Sydney morning",
-        "weight": 0
-      },
-      "priorityScore": 159
     },
     {
       "id": "verified-Instagram-otimosoutdoorgear",
@@ -434,12 +404,12 @@
       "action": "develop",
       "reason": "high_icp_verified_ready",
       "workingTime": {
-        "dueNow": false,
+        "dueNow": true,
         "timeZone": "Europe/London",
-        "localTime": "Thu 13:06",
-        "window": "outside_work_hours",
-        "nextBest": "Europe/London afternoon",
-        "weight": 0
+        "localTime": "Thu 16:02",
+        "window": "afternoon",
+        "nextBest": "now",
+        "weight": 0.9
       },
       "priorityScore": 154
     },
@@ -462,12 +432,12 @@
       "action": "develop",
       "reason": "high_icp_verified_ready",
       "workingTime": {
-        "dueNow": false,
+        "dueNow": true,
         "timeZone": "Europe/London",
-        "localTime": "Thu 13:06",
-        "window": "outside_work_hours",
-        "nextBest": "Europe/London afternoon",
-        "weight": 0
+        "localTime": "Thu 16:02",
+        "window": "afternoon",
+        "nextBest": "now",
+        "weight": 0.9
       },
       "priorityScore": 154
     },
@@ -490,14 +460,100 @@
       "action": "email_priority",
       "reason": "email_channel_found",
       "workingTime": {
-        "dueNow": false,
+        "dueNow": true,
         "timeZone": "America/Toronto",
-        "localTime": "Thu 08:06",
-        "window": "outside_work_hours",
-        "nextBest": "America/Toronto morning",
-        "weight": 0
+        "localTime": "Thu 11:02",
+        "window": "morning",
+        "nextBest": "now",
+        "weight": 1
       },
       "priorityScore": 146
+    },
+    {
+      "id": "verified-Instagram-monasheeoutdoors",
+      "name": "monasheeoutdoors",
+      "company": "Monashee Outdoors",
+      "platform": "instagram",
+      "country": "加拿大",
+      "countryEn": "Canada",
+      "fitScore": 83,
+      "fitTier": "A",
+      "marketScore": 3.7,
+      "marketStatus": "可开拓",
+      "agencyState": "open",
+      "url": "https://www.instagram.com/monasheeoutdoors/",
+      "lastStatus": "sent_confirmed",
+      "lastEvidence": "duplicate_risk: duplicate DM observed in Instagram chat; future sends locked",
+      "lastTouch": "2026-06-18T09:01:31.455Z",
+      "action": "develop",
+      "reason": "high_icp_verified_ready",
+      "workingTime": {
+        "dueNow": true,
+        "timeZone": "America/Toronto",
+        "localTime": "Thu 11:02",
+        "window": "morning",
+        "nextBest": "now",
+        "weight": 1
+      },
+      "priorityScore": 138
+    },
+    {
+      "id": "verified-Instagram-triedandtrout",
+      "name": "triedandtrout",
+      "company": "Tried & Trout Supply Co",
+      "platform": "instagram",
+      "country": "美国",
+      "countryEn": "United States",
+      "fitScore": 73,
+      "fitTier": "A",
+      "marketScore": 4.4,
+      "marketStatus": "可开拓",
+      "agencyState": "open",
+      "url": "https://www.instagram.com/triedandtroutsupply/",
+      "lastStatus": "failed_open",
+      "lastEvidence": "profile_valid_no_message_button",
+      "lastTouch": "",
+      "action": "retry_or_alternate_channel",
+      "reason": "profile_valid_no_message_button",
+      "workingTime": {
+        "dueNow": true,
+        "timeZone": "America/New_York",
+        "localTime": "Thu 11:02",
+        "window": "morning",
+        "nextBest": "now",
+        "weight": 1
+      },
+      "priorityScore": 135
+    }
+  ],
+  "scheduledLater": [
+    {
+      "id": "verified-Instagram-anacondastores",
+      "name": "anacondastores",
+      "company": "Anaconda Stores AU (60K followers, verified, largest outdoor retailer)",
+      "platform": "instagram",
+      "country": "澳大利亚",
+      "countryEn": "Australia",
+      "fitScore": 85,
+      "fitTier": "A",
+      "marketScore": 4.8,
+      "marketStatus": "可开拓",
+      "agencyState": "open",
+      "url": "https://www.instagram.com/anacondastores/",
+      "lastStatus": "skipped",
+      "lastEvidence": "email_channel_found",
+      "lastTouch": "",
+      "action": "email_priority",
+      "reason": "email_channel_found",
+      "workingTime": {
+        "dueNow": false,
+        "timeZone": "Australia/Sydney",
+        "localTime": "Fri 01:02",
+        "window": "outside_work_hours",
+        "nextBest": "Australia/Sydney morning",
+        "weight": 0
+      },
+      "priorityScore": 159
     },
     {
       "id": "verified-Instagram-macpac",
@@ -520,7 +576,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Pacific/Auckland",
-        "localTime": "Fri 00:06",
+        "localTime": "Fri 03:02",
         "window": "outside_work_hours",
         "nextBest": "Pacific/Auckland morning",
         "weight": 0
@@ -548,68 +604,12 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Pacific/Auckland",
-        "localTime": "Fri 00:06",
+        "localTime": "Fri 03:02",
         "window": "outside_work_hours",
         "nextBest": "Pacific/Auckland morning",
         "weight": 0
       },
       "priorityScore": 142
-    },
-    {
-      "id": "verified-Instagram-monasheeoutdoors",
-      "name": "monasheeoutdoors",
-      "company": "Monashee Outdoors",
-      "platform": "instagram",
-      "country": "加拿大",
-      "countryEn": "Canada",
-      "fitScore": 83,
-      "fitTier": "A",
-      "marketScore": 3.7,
-      "marketStatus": "可开拓",
-      "agencyState": "open",
-      "url": "https://www.instagram.com/monasheeoutdoors/",
-      "lastStatus": "sent_confirmed",
-      "lastEvidence": "duplicate_risk: duplicate DM observed in Instagram chat; future sends locked",
-      "lastTouch": "2026-06-18T09:01:31.455Z",
-      "action": "develop",
-      "reason": "high_icp_verified_ready",
-      "workingTime": {
-        "dueNow": false,
-        "timeZone": "America/Toronto",
-        "localTime": "Thu 08:06",
-        "window": "outside_work_hours",
-        "nextBest": "America/Toronto morning",
-        "weight": 0
-      },
-      "priorityScore": 138
-    },
-    {
-      "id": "verified-Instagram-triedandtrout",
-      "name": "triedandtrout",
-      "company": "Tried & Trout Supply Co",
-      "platform": "instagram",
-      "country": "美国",
-      "countryEn": "United States",
-      "fitScore": 73,
-      "fitTier": "A",
-      "marketScore": 4.4,
-      "marketStatus": "可开拓",
-      "agencyState": "open",
-      "url": "https://www.instagram.com/triedandtroutsupply/",
-      "lastStatus": "failed_open",
-      "lastEvidence": "profile_valid_no_message_button",
-      "lastTouch": "",
-      "action": "retry_or_alternate_channel",
-      "reason": "profile_valid_no_message_button",
-      "workingTime": {
-        "dueNow": false,
-        "timeZone": "America/New_York",
-        "localTime": "Thu 08:06",
-        "window": "outside_work_hours",
-        "nextBest": "America/New_York morning",
-        "weight": 0
-      },
-      "priorityScore": 135
     },
     {
       "id": "verified-Instagram-huntingandfishingnewzealand",
@@ -632,7 +632,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Pacific/Auckland",
-        "localTime": "Fri 00:06",
+        "localTime": "Fri 03:02",
         "window": "outside_work_hours",
         "nextBest": "Pacific/Auckland morning",
         "weight": 0
@@ -660,7 +660,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Pacific/Auckland",
-        "localTime": "Fri 00:06",
+        "localTime": "Fri 03:02",
         "window": "outside_work_hours",
         "nextBest": "Pacific/Auckland morning",
         "weight": 0
@@ -688,7 +688,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Pacific/Auckland",
-        "localTime": "Fri 00:06",
+        "localTime": "Fri 03:02",
         "window": "outside_work_hours",
         "nextBest": "Pacific/Auckland morning",
         "weight": 0
@@ -716,7 +716,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Asia/Jakarta",
-        "localTime": "Thu 19:06",
+        "localTime": "Thu 22:02",
         "window": "outside_work_hours",
         "nextBest": "Asia/Jakarta morning",
         "weight": 0
@@ -744,7 +744,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Asia/Kolkata",
-        "localTime": "Thu 17:36",
+        "localTime": "Thu 20:32",
         "window": "outside_work_hours",
         "nextBest": "Asia/Kolkata morning",
         "weight": 0
