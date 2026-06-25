@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-25T08:42:52.836Z",
+  "generatedAt": "2026-06-25T11:02:00.869Z",
   "date": "2026-06-25",
   "mode": "daily-icp-first-automation-loop",
   "executionLayer": "Codex Chrome Extension primary; AutoClaw compatible",
@@ -8,8 +8,8 @@
     "quota": {
       "total": {
         "target": 20,
-        "planned": 1,
-        "gap": 19
+        "planned": 0,
+        "gap": 20
       },
       "develop": {
         "target": 10,
@@ -18,8 +18,8 @@
       },
       "email_priority": {
         "target": 5,
-        "planned": 1,
-        "gap": 4
+        "planned": 0,
+        "gap": 5
       },
       "retry_or_alternate_channel": {
         "target": 3,
@@ -45,11 +45,11 @@
   "summary": {
     "totalLeads": 16,
     "highIcp": 16,
-    "readyToDevelop": 10,
-    "dueNow": 11,
-    "googleDiscovered": 10,
-    "scheduledLater": 5,
-    "cooldown": 9,
+    "readyToDevelop": 17,
+    "dueNow": 8,
+    "googleDiscovered": 8,
+    "scheduledLater": 15,
+    "cooldown": 0,
     "emailPriority": 5,
     "openAgencyMarket": 15,
     "exclusiveAgencySkipped": 1,
@@ -57,40 +57,6 @@
     "retainedLowIcp": 0
   },
   "dailyQueue": [
-    {
-      "id": "google-customer-rei-co-op",
-      "name": "REI Co-op",
-      "company": "REI Co-op",
-      "platform": "instagram",
-      "country": "United States",
-      "countryEn": "United States",
-      "fitScore": 98,
-      "fitTier": "A+",
-      "marketScore": 4.5,
-      "marketStatus": "open",
-      "agencyState": "open",
-      "keyword": "outdoor retail chain",
-      "role": "Category buyer / merchandising manager for camping, outdoor electronics, and accessories.",
-      "background": "Large US outdoor specialty retailer and co-op with camping, hiking, travel, and outdoor equipment categories.",
-      "buyerPersona": "Category buyer / merchandising manager for camping, outdoor electronics, and accessories.",
-      "website": "https://www.rei.com/",
-      "platformUrl": "https://www.instagram.com/rei/",
-      "url": "https://www.instagram.com/rei/",
-      "evidenceUrl": "https://www.google.com/search?q=%22REI%20Co-op%22%20%22outdoor%20retail%20chain%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "query": "https://www.google.com/search?q=%22REI%20Co-op%22%20%22outdoor%20retail%20chain%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "action": "develop",
-      "reason": "concrete_google_discovered_major_customer",
-      "source": "google_customer_discovery",
-      "identityStatus": "verified",
-      "identitySource": "official website/social profile + Google background query",
-      "workingTime": {
-        "dueNow": true,
-        "timeZone": "local-market",
-        "localTime": "2026/6/25 16:42:52",
-        "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
-      },
-      "priorityScore": 128
-    },
     {
       "id": "google-customer-bass-pro-shops",
       "name": "Bass Pro Shops",
@@ -120,7 +86,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/25 16:42:52",
+        "localTime": "2026/6/25 19:02:00",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "priorityScore": 126
@@ -154,44 +120,10 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/25 16:42:52",
+        "localTime": "2026/6/25 19:02:00",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "priorityScore": 125
-    },
-    {
-      "id": "google-customer-mec",
-      "name": "MEC",
-      "company": "MEC",
-      "platform": "instagram",
-      "country": "Canada",
-      "countryEn": "Canada",
-      "fitScore": 94,
-      "fitTier": "A+",
-      "marketScore": 4.5,
-      "marketStatus": "open",
-      "agencyState": "open",
-      "keyword": "outdoor retail chain",
-      "role": "Camping equipment / outdoor accessories category buyer.",
-      "background": "Canadian outdoor retail co-op focused on camping, hiking, climbing, travel, and outdoor gear.",
-      "buyerPersona": "Camping equipment / outdoor accessories category buyer.",
-      "website": "https://www.mec.ca/",
-      "platformUrl": "https://www.instagram.com/mec/",
-      "url": "https://www.instagram.com/mec/",
-      "evidenceUrl": "https://www.google.com/search?q=%22MEC%22%20%22outdoor%20retail%20chain%22%20%22Canada%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "query": "https://www.google.com/search?q=%22MEC%22%20%22outdoor%20retail%20chain%22%20%22Canada%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "action": "develop",
-      "reason": "concrete_google_discovered_major_customer",
-      "source": "google_customer_discovery",
-      "identityStatus": "verified",
-      "identitySource": "official website/social profile + Google background query",
-      "workingTime": {
-        "dueNow": true,
-        "timeZone": "local-market",
-        "localTime": "2026/6/25 16:42:52",
-        "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
-      },
-      "priorityScore": 124
     },
     {
       "id": "google-customer-go-outdoors",
@@ -222,44 +154,10 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/25 16:42:52",
+        "localTime": "2026/6/25 19:02:00",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "priorityScore": 123
-    },
-    {
-      "id": "google-customer-anaconda",
-      "name": "Anaconda",
-      "company": "Anaconda",
-      "platform": "instagram",
-      "country": "Australia",
-      "countryEn": "Australia",
-      "fitScore": 92,
-      "fitTier": "A+",
-      "marketScore": 4.5,
-      "marketStatus": "open",
-      "agencyState": "open",
-      "keyword": "outdoor retail chain",
-      "role": "Camping / 4WD / outdoor equipment buyer.",
-      "background": "Australian outdoor retailer for camping, hiking, fishing, 4WD, and outdoor lifestyle equipment.",
-      "buyerPersona": "Camping / 4WD / outdoor equipment buyer.",
-      "website": "https://www.anacondastores.com/",
-      "platformUrl": "https://www.instagram.com/anacondastores/",
-      "url": "https://www.instagram.com/anacondastores/",
-      "evidenceUrl": "https://www.google.com/search?q=%22Anaconda%22%20%22outdoor%20retail%20chain%22%20%22Australia%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "query": "https://www.google.com/search?q=%22Anaconda%22%20%22outdoor%20retail%20chain%22%20%22Australia%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "action": "develop",
-      "reason": "concrete_google_discovered_major_customer",
-      "source": "google_customer_discovery",
-      "identityStatus": "verified",
-      "identitySource": "official website/social profile + Google background query",
-      "workingTime": {
-        "dueNow": true,
-        "timeZone": "local-market",
-        "localTime": "2026/6/25 16:42:52",
-        "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
-      },
-      "priorityScore": 122
     },
     {
       "id": "google-customer-sail-outdoors",
@@ -290,44 +188,10 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/25 16:42:52",
+        "localTime": "2026/6/25 19:02:00",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "priorityScore": 121
-    },
-    {
-      "id": "google-customer-cotswold-outdoor",
-      "name": "Cotswold Outdoor",
-      "company": "Cotswold Outdoor",
-      "platform": "instagram",
-      "country": "United Kingdom",
-      "countryEn": "United Kingdom",
-      "fitScore": 90,
-      "fitTier": "A+",
-      "marketScore": 4.5,
-      "marketStatus": "open",
-      "agencyState": "open",
-      "keyword": "outdoor retail chain",
-      "role": "Outdoor product category buyer or partnership manager.",
-      "background": "UK specialty outdoor retailer for hiking, camping, travel, and technical outdoor products.",
-      "buyerPersona": "Outdoor product category buyer or partnership manager.",
-      "website": "https://www.cotswoldoutdoor.com/",
-      "platformUrl": "https://www.instagram.com/cotswoldoutdoor/",
-      "url": "https://www.instagram.com/cotswoldoutdoor/",
-      "evidenceUrl": "https://www.google.com/search?q=%22Cotswold%20Outdoor%22%20%22outdoor%20retail%20chain%22%20%22United%20Kingdom%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "query": "https://www.google.com/search?q=%22Cotswold%20Outdoor%22%20%22outdoor%20retail%20chain%22%20%22United%20Kingdom%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "action": "develop",
-      "reason": "concrete_google_discovered_major_customer",
-      "source": "google_customer_discovery",
-      "identityStatus": "verified",
-      "identitySource": "official website/social profile + Google background query",
-      "workingTime": {
-        "dueNow": true,
-        "timeZone": "local-market",
-        "localTime": "2026/6/25 16:42:52",
-        "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
-      },
-      "priorityScore": 120
     },
     {
       "id": "google-customer-decathlon-germany",
@@ -358,7 +222,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/25 16:42:52",
+        "localTime": "2026/6/25 19:02:00",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "priorityScore": 120
@@ -392,11 +256,81 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/25 16:42:52",
+        "localTime": "2026/6/25 19:02:00",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "priorityScore": 120
     },
+    {
+      "id": "google-customer-bcf",
+      "name": "BCF",
+      "company": "BCF",
+      "platform": "instagram",
+      "country": "Australia",
+      "countryEn": "Australia",
+      "fitScore": 89,
+      "fitTier": "A",
+      "marketScore": 4.5,
+      "marketStatus": "open",
+      "agencyState": "open",
+      "keyword": "outdoor retail chain",
+      "role": "Camping or outdoor accessories buyer.",
+      "background": "Australian boating, camping, and fishing retailer with strong fit for compact outdoor power and camping accessories.",
+      "buyerPersona": "Camping or outdoor accessories buyer.",
+      "website": "https://www.bcf.com.au/",
+      "platformUrl": "https://www.instagram.com/bcf.australia/",
+      "url": "https://www.instagram.com/bcf.australia/",
+      "evidenceUrl": "https://www.google.com/search?q=%22BCF%22%20%22outdoor%20retail%20chain%22%20%22Australia%22%20buyer%20OR%20wholesale%20OR%20contact",
+      "query": "https://www.google.com/search?q=%22BCF%22%20%22outdoor%20retail%20chain%22%20%22Australia%22%20buyer%20OR%20wholesale%20OR%20contact",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer",
+      "source": "google_customer_discovery",
+      "identityStatus": "verified",
+      "identitySource": "official website/social profile + Google background query",
+      "workingTime": {
+        "dueNow": true,
+        "timeZone": "local-market",
+        "localTime": "2026/6/25 19:02:00",
+        "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
+      },
+      "priorityScore": 119
+    },
+    {
+      "id": "google-customer-bever",
+      "name": "Bever",
+      "company": "Bever",
+      "platform": "instagram",
+      "country": "Netherlands",
+      "countryEn": "Netherlands",
+      "fitScore": 86,
+      "fitTier": "A",
+      "marketScore": 4.5,
+      "marketStatus": "open",
+      "agencyState": "open",
+      "keyword": "outdoor retail chain",
+      "role": "Outdoor equipment buyer or category manager.",
+      "background": "Dutch outdoor retailer for hiking, camping, travel, and outdoor apparel/equipment.",
+      "buyerPersona": "Outdoor equipment buyer or category manager.",
+      "website": "https://www.bever.nl/",
+      "platformUrl": "https://www.instagram.com/bever/",
+      "url": "https://www.instagram.com/bever/",
+      "evidenceUrl": "https://www.google.com/search?q=%22Bever%22%20%22outdoor%20retail%20chain%22%20%22Netherlands%22%20buyer%20OR%20wholesale%20OR%20contact",
+      "query": "https://www.google.com/search?q=%22Bever%22%20%22outdoor%20retail%20chain%22%20%22Netherlands%22%20buyer%20OR%20wholesale%20OR%20contact",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer",
+      "source": "google_customer_discovery",
+      "identityStatus": "verified",
+      "identitySource": "official website/social profile + Google background query",
+      "workingTime": {
+        "dueNow": true,
+        "timeZone": "local-market",
+        "localTime": "2026/6/25 19:02:00",
+        "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
+      },
+      "priorityScore": 116
+    }
+  ],
+  "scheduledLater": [
     {
       "id": "verified-Instagram-ellisbrigham",
       "name": "ellisbrigham",
@@ -416,17 +350,43 @@
       "action": "email_priority",
       "reason": "email_channel_found",
       "workingTime": {
-        "dueNow": true,
+        "dueNow": false,
         "timeZone": "Europe/London",
-        "localTime": "Thu 09:42",
-        "window": "morning",
-        "nextBest": "now",
-        "weight": 1
+        "localTime": "Thu 12:02",
+        "window": "outside_work_hours",
+        "nextBest": "Europe/London afternoon",
+        "weight": 0
       },
       "priorityScore": 171
-    }
-  ],
-  "scheduledLater": [
+    },
+    {
+      "id": "verified-Instagram-campmor",
+      "name": "campmor",
+      "company": "Campmor US",
+      "platform": "instagram",
+      "country": "美国",
+      "countryEn": "United States",
+      "fitScore": 100,
+      "fitTier": "A",
+      "marketScore": 4.4,
+      "marketStatus": "可开拓",
+      "agencyState": "open",
+      "url": "https://www.instagram.com/campmor/",
+      "lastStatus": "sent_confirmed",
+      "lastEvidence": "confirmed DM follow-up sent via logged-in Chrome session",
+      "lastTouch": "2026-06-18T10:09:35.863Z",
+      "action": "develop",
+      "reason": "high_icp_verified_ready",
+      "workingTime": {
+        "dueNow": false,
+        "timeZone": "America/New_York",
+        "localTime": "Thu 07:02",
+        "window": "outside_work_hours",
+        "nextBest": "America/New_York morning",
+        "weight": 0
+      },
+      "priorityScore": 162
+    },
     {
       "id": "verified-Instagram-anacondastores",
       "name": "anacondastores",
@@ -448,12 +408,68 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Australia/Sydney",
-        "localTime": "Thu 18:42",
+        "localTime": "Thu 21:02",
         "window": "outside_work_hours",
         "nextBest": "Australia/Sydney morning",
         "weight": 0
       },
       "priorityScore": 159
+    },
+    {
+      "id": "verified-Instagram-otimosoutdoorgear",
+      "name": "otimosoutdoorgear",
+      "company": "Otimos UK",
+      "platform": "instagram",
+      "country": "英国",
+      "countryEn": "United Kingdom",
+      "fitScore": 91,
+      "fitTier": "A",
+      "marketScore": 4.5,
+      "marketStatus": "可开拓",
+      "agencyState": "open",
+      "url": "https://www.instagram.com/otimosoutdoorgear/",
+      "lastStatus": "sent_confirmed",
+      "lastEvidence": "confirmed DM follow-up sent via logged-in Chrome session",
+      "lastTouch": "2026-06-18T10:09:35.863Z",
+      "action": "develop",
+      "reason": "high_icp_verified_ready",
+      "workingTime": {
+        "dueNow": false,
+        "timeZone": "Europe/London",
+        "localTime": "Thu 12:02",
+        "window": "outside_work_hours",
+        "nextBest": "Europe/London afternoon",
+        "weight": 0
+      },
+      "priorityScore": 154
+    },
+    {
+      "id": "verified-Instagram-worldofcamping",
+      "name": "worldofcamping",
+      "company": "World of Camping UK",
+      "platform": "instagram",
+      "country": "英国",
+      "countryEn": "United Kingdom",
+      "fitScore": 91,
+      "fitTier": "A",
+      "marketScore": 4.5,
+      "marketStatus": "可开拓",
+      "agencyState": "open",
+      "url": "https://www.instagram.com/worldofcamping/",
+      "lastStatus": "sent_confirmed",
+      "lastEvidence": "confirmed DM follow-up sent via logged-in Chrome session",
+      "lastTouch": "2026-06-18T10:09:35.863Z",
+      "action": "develop",
+      "reason": "high_icp_verified_ready",
+      "workingTime": {
+        "dueNow": false,
+        "timeZone": "Europe/London",
+        "localTime": "Thu 12:02",
+        "window": "outside_work_hours",
+        "nextBest": "Europe/London afternoon",
+        "weight": 0
+      },
+      "priorityScore": 154
     },
     {
       "id": "verified-Instagram-mec",
@@ -476,7 +492,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Thu 04:42",
+        "localTime": "Thu 07:02",
         "window": "outside_work_hours",
         "nextBest": "America/Toronto morning",
         "weight": 0
@@ -504,7 +520,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Pacific/Auckland",
-        "localTime": "Thu 20:42",
+        "localTime": "Thu 23:02",
         "window": "outside_work_hours",
         "nextBest": "Pacific/Auckland morning",
         "weight": 0
@@ -532,12 +548,40 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Pacific/Auckland",
-        "localTime": "Thu 20:42",
+        "localTime": "Thu 23:02",
         "window": "outside_work_hours",
         "nextBest": "Pacific/Auckland morning",
         "weight": 0
       },
       "priorityScore": 142
+    },
+    {
+      "id": "verified-Instagram-monasheeoutdoors",
+      "name": "monasheeoutdoors",
+      "company": "Monashee Outdoors",
+      "platform": "instagram",
+      "country": "加拿大",
+      "countryEn": "Canada",
+      "fitScore": 83,
+      "fitTier": "A",
+      "marketScore": 3.7,
+      "marketStatus": "可开拓",
+      "agencyState": "open",
+      "url": "https://www.instagram.com/monasheeoutdoors/",
+      "lastStatus": "sent_confirmed",
+      "lastEvidence": "duplicate_risk: duplicate DM observed in Instagram chat; future sends locked",
+      "lastTouch": "2026-06-18T09:01:31.455Z",
+      "action": "develop",
+      "reason": "high_icp_verified_ready",
+      "workingTime": {
+        "dueNow": false,
+        "timeZone": "America/Toronto",
+        "localTime": "Thu 07:02",
+        "window": "outside_work_hours",
+        "nextBest": "America/Toronto morning",
+        "weight": 0
+      },
+      "priorityScore": 138
     },
     {
       "id": "verified-Instagram-triedandtrout",
@@ -560,12 +604,152 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Thu 04:42",
+        "localTime": "Thu 07:02",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
       },
       "priorityScore": 135
+    },
+    {
+      "id": "verified-Instagram-huntingandfishingnewzealand",
+      "name": "huntingandfishingnewzealand",
+      "company": "Hunting & Fishing NZ (46K followers, verified, NZ outdoor retail)",
+      "platform": "instagram",
+      "country": "新西兰",
+      "countryEn": "New Zealand",
+      "fitScore": 77,
+      "fitTier": "A",
+      "marketScore": 3.9,
+      "marketStatus": "可开拓",
+      "agencyState": "open",
+      "url": "https://www.instagram.com/huntingandfishingnewzealand/",
+      "lastStatus": "sent_confirmed",
+      "lastEvidence": "confirmed DM follow-up sent via logged-in Chrome session",
+      "lastTouch": "2026-06-18T10:09:35.863Z",
+      "action": "develop",
+      "reason": "high_icp_verified_ready",
+      "workingTime": {
+        "dueNow": false,
+        "timeZone": "Pacific/Auckland",
+        "localTime": "Thu 23:02",
+        "window": "outside_work_hours",
+        "nextBest": "Pacific/Auckland morning",
+        "weight": 0
+      },
+      "priorityScore": 134
+    },
+    {
+      "id": "verified-Instagram-kathmandugear",
+      "name": "kathmandugear",
+      "company": "Kathmandu NZ/AU (12.3K followers, verified)",
+      "platform": "instagram",
+      "country": "新西兰",
+      "countryEn": "New Zealand",
+      "fitScore": 77,
+      "fitTier": "A",
+      "marketScore": 3.9,
+      "marketStatus": "可开拓",
+      "agencyState": "open",
+      "url": "https://www.instagram.com/kathmandugear/",
+      "lastStatus": "sent_confirmed",
+      "lastEvidence": "confirmed DM follow-up sent via logged-in Chrome session",
+      "lastTouch": "2026-06-18T10:09:35.863Z",
+      "action": "develop",
+      "reason": "high_icp_verified_ready",
+      "workingTime": {
+        "dueNow": false,
+        "timeZone": "Pacific/Auckland",
+        "localTime": "Thu 23:02",
+        "window": "outside_work_hours",
+        "nextBest": "Pacific/Auckland morning",
+        "weight": 0
+      },
+      "priorityScore": 134
+    },
+    {
+      "id": "verified-Instagram-rebelsportnz",
+      "name": "rebelsportnz",
+      "company": "Rebel Sport NZ (38K followers, verified, NZ #1 sporting goods retailer)",
+      "platform": "instagram",
+      "country": "新西兰",
+      "countryEn": "New Zealand",
+      "fitScore": 77,
+      "fitTier": "A",
+      "marketScore": 3.9,
+      "marketStatus": "可开拓",
+      "agencyState": "open",
+      "url": "https://www.instagram.com/rebelsportnz/",
+      "lastStatus": "sent_confirmed",
+      "lastEvidence": "confirmed DM follow-up sent via logged-in Chrome session",
+      "lastTouch": "2026-06-18T10:09:35.863Z",
+      "action": "develop",
+      "reason": "high_icp_verified_ready",
+      "workingTime": {
+        "dueNow": false,
+        "timeZone": "Pacific/Auckland",
+        "localTime": "Thu 23:02",
+        "window": "outside_work_hours",
+        "nextBest": "Pacific/Auckland morning",
+        "weight": 0
+      },
+      "priorityScore": 134
+    },
+    {
+      "id": "verified-Instagram-kfoutdoor",
+      "name": "kfoutdoor",
+      "company": "KF Outdoor Official (33K followers, outdoor & sporting goods)",
+      "platform": "instagram",
+      "country": "?????",
+      "countryEn": "Indonesia",
+      "fitScore": 78,
+      "fitTier": "A",
+      "marketScore": 3.4,
+      "marketStatus": "可开拓",
+      "agencyState": "open",
+      "url": "https://www.instagram.com/kfoutdoor/",
+      "lastStatus": "sent_confirmed",
+      "lastEvidence": "confirmed DM follow-up sent via logged-in Chrome session",
+      "lastTouch": "2026-06-18T10:09:35.863Z",
+      "action": "develop",
+      "reason": "high_icp_verified_ready",
+      "workingTime": {
+        "dueNow": false,
+        "timeZone": "Asia/Jakarta",
+        "localTime": "Thu 18:02",
+        "window": "outside_work_hours",
+        "nextBest": "Asia/Jakarta morning",
+        "weight": 0
+      },
+      "priorityScore": 130
+    },
+    {
+      "id": "verified-Instagram-prago.outdoors",
+      "name": "prago.outdoors",
+      "company": "Prago Outdoors (outdoor wholesale/retail account)",
+      "platform": "instagram",
+      "country": "??",
+      "countryEn": "India",
+      "fitScore": 76,
+      "fitTier": "A",
+      "marketScore": 3.2,
+      "marketStatus": "可开拓",
+      "agencyState": "open",
+      "url": "https://www.instagram.com/prago.outdoors/",
+      "lastStatus": "sent_confirmed",
+      "lastEvidence": "confirmed DM follow-up sent via logged-in Chrome session",
+      "lastTouch": "2026-06-18T10:09:35.863Z",
+      "action": "develop",
+      "reason": "high_icp_verified_ready",
+      "workingTime": {
+        "dueNow": false,
+        "timeZone": "Asia/Kolkata",
+        "localTime": "Thu 16:32",
+        "window": "outside_work_hours",
+        "nextBest": "Asia/Kolkata morning",
+        "weight": 0
+      },
+      "priorityScore": 126
     }
   ],
   "bugChecks": [
@@ -586,7 +770,7 @@
     ],
     "byAction": {
       "email_priority": 5,
-      "cooldown": 9,
+      "develop": 9,
       "retry_or_alternate_channel": 1,
       "skip_exclusive_agency": 1
     },
