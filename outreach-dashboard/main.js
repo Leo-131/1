@@ -317,13 +317,17 @@ function execFilePromise(file, args, options) {
   });
 }
 
-function httpJson(url, timeoutMs = 2000) {
+function httpJson(url, timeoutMs = 2000, method = 'GET') {
   return new Promise((resolve, reject) => {
-    const req = http.get(url, { timeout: timeoutMs }, (res) => {
+    const req = http.request(url, { timeout: timeoutMs, method }, (res) => {
       let body = '';
       res.setEncoding('utf8');
       res.on('data', chunk => { body += chunk; });
       res.on('end', () => {
+        if (res.statusCode >= 400) {
+          reject(new Error(body || `HTTP ${res.statusCode}: ${url}`));
+          return;
+        }
         try {
           resolve(JSON.parse(body));
         } catch (error) {
@@ -335,6 +339,7 @@ function httpJson(url, timeoutMs = 2000) {
       req.destroy(new Error(`Timeout: ${url}`));
     });
     req.on('error', reject);
+    req.end();
   });
 }
 
@@ -391,7 +396,7 @@ async function openWithCodexChrome(url) {
     await shell.openExternal(parsed.toString());
     return { ok: true, engine: 'shell-fallback', targetUrl: parsed.toString() };
   }
-  const opened = await httpJson(`http://127.0.0.1:${port}/json/new?${encodeURIComponent(parsed.toString())}`, 2500);
+  const opened = await httpJson(`http://127.0.0.1:${port}/json/new?${encodeURIComponent(parsed.toString())}`, 2500, 'PUT');
   return {
     ok: true,
     engine: 'codex-chrome-extension-cdp',
