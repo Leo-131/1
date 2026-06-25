@@ -21,6 +21,7 @@
   const view = requestedView === 'customer' || views.some(item => item[0] === requestedView) ? requestedView : 'workspace';
   const legacyRecords = typeof allRecords !== 'undefined' && Array.isArray(allRecords) ? allRecords : [];
   const tasks = data.tasks || [];
+  const latestRun = window.DAILY_AUTOMATION_LATEST || null;
   const taskIndex = buildTaskIndex(tasks);
   const COOLDOWN_DAYS = Number(data.settings && data.settings.cooldownDays || 7);
   const ICP_MIN_SCORE = Number(data.settings && data.settings.minimumScore || 70);
@@ -83,7 +84,57 @@
     return `ICP ${score}/100 (${status}). Algorithm: market potential 25, ICP industry/role fit 25, verified identity 15, buyer intent 15, SEO/trend relevance 10, contactability/history 10. Only scores above ${ICP_MIN_SCORE} enter daily outreach; lower scores keep links for review.`;
   }
   function currentTask() {
-    return untouchedTasks().sort((left, right) => icpScore(right) - icpScore(left))[0] || null;
+    return todayDevelopTasks().sort((left, right) => icpScore(right) - icpScore(left))[0] || null;
+  }
+  function latestQueueRows(source) {
+    if (!latestRun) return [];
+    const rows = source === 'scheduledLater'
+      ? (latestRun.scheduledLater || [])
+      : source === 'all'
+        ? [...(latestRun.dailyQueue || []), ...(latestRun.scheduledLater || [])]
+        : (latestRun.dailyQueue || []);
+    return rows.map((item, index) => {
+      const base = taskIndex.get(normalizeKey(item.id))
+        || taskIndex.get(normalizeKey(item.name))
+        || taskIndex.get(normalizeKey(item.company))
+        || {};
+      return {
+        ...base,
+        taskId: item.id || base.taskId || `daily-${index}`,
+        name: item.name || base.name || item.company,
+        company: item.company || item.name || base.company,
+        country: item.countryEn || item.country || base.country || '',
+        keyword: base.keyword || 'outdoor retail partnership',
+        platform: item.platform || base.platform || 'instagram',
+        targetUrl: item.url || base.targetUrl || base.verifiedTargetUrl || '',
+        verifiedTargetUrl: item.url || base.verifiedTargetUrl || '',
+        fitScore: Number(item.fitScore || base.fitScore || 0),
+        marketScore: item.marketScore || base.marketScore,
+        marketStatus: item.marketStatus || base.marketStatus,
+        action: item.action,
+        reason: item.reason,
+        workingTime: item.workingTime,
+        state: item.action === 'develop' ? 'target_verified'
+          : item.action === 'retry_or_alternate_channel' ? 'outcome_pending'
+            : item.action === 'email_priority' ? 'rerouted'
+              : item.action === 'verify_target' ? 'profile_scored'
+                : 'auto_skipped',
+        sendStatus: item.lastStatus || base.sendStatus || '',
+        identityStatus: base.identityStatus || (item.url ? 'verified' : 'pending'),
+        identityVerified: Boolean(item.url || base.identityVerified),
+        previouslyContacted: Boolean(base.previouslyContacted || item.action === 'retry_or_alternate_channel'),
+      };
+    });
+  }
+  function findTaskById(taskId) {
+    return latestQueueRows('all').find(item => item.taskId === taskId)
+      || tasks.find(item => item.taskId === taskId);
+  }
+  function todayDevelopTasks() {
+    return latestRun ? latestQueueRows('dailyQueue') : untouchedTasks();
+  }
+  function todayFollowupTasks() {
+    return latestRun ? latestQueueRows('scheduledLater') : followupTasks();
   }
   function platformUrl(record) {
     const candidates = [
@@ -94,7 +145,8 @@
       record && record.linkedin_url,
       record && record.url,
     ];
-    return candidates.find(value => /^https:\/\/(www\.)?(instagram|facebook|linkedin)\.com\//i.test(String(value || ''))) || '';
+    return candidates.find(value => /^https:\/\/(www\.)?(instagram|facebook|linkedin)\.com\//i.test(String(value || ''))
+      || /^https:\/\/www\.google\.com\/search/i.test(String(value || ''))) || '';
   }
   function normalizeKey(value) {
     return String(value || '').trim().toLowerCase().replace(/^@/, '').replace(/[^a-z0-9.]+/g, '');
@@ -226,9 +278,9 @@
     return encodeURIComponent([record.platform, record.name, record.company, index].join('|'));
   }
   function nav() {
-    return `<aside class="cc-sidebar"><div class="cc-brand"><b>Customer Development</b><span>Codex Decision · Chrome Execution</span></div>
+    return `<aside class="cc-sidebar"><div class="cc-brand"><b>Customer Development</b><span>Codex Decision - Codex Chrome Extension</span></div>
       <nav class="cc-nav">${views.map(([key, label]) => `<a class="${view === key ? 'active' : ''}" href="${urlFor(key)}">${label}</a>`).join('')}</nav>
-      <div class="cc-agent">主脑：Codex<br>执行：Codex Chrome Extension<br>兼容：AutoClaw<br>模式：ICP&gt;70 · 单任务串行</div></aside>`;
+      <div class="cc-agent">Brain: Codex<br>Executor: Codex Chrome Extension<br>Fallback: AutoClaw compatible<br>Mode: ICP&gt;70 - parallel batches</div></aside>`;
   }
   function pageHead(title, subtitle) {
     return `<div class="cc-page-head"><div><h1>${title}</h1><p>${subtitle}</p></div><span class="cc-status">自动决策运行中</span></div>`;
@@ -288,10 +340,10 @@
   }
   function workspace() {
     const task = currentTask();
-    const untouched = untouchedTasks();
-    const followups = followupTasks();
+    const untouched = todayDevelopTasks();
+    const followups = todayFollowupTasks();
     const confirmed = tasks.filter(item => item.sendStatus === 'sent_confirmed').length;
-    const eligibleCount = tasks.filter(canRunGlm).length;
+    const eligibleCount = (latestRun ? latestQueueRows('all') : tasks).filter(canRunGlm).length;
     const executionConnected = autoClawConnected();
     const metrics = `<div class="cc-kpis">
       <a class="cc-kpi cc-kpi-link" href="${urlFor('queue', { queue: 'untouched' })}"><span>今日待开发</span><b>${untouched.length}</b></a>
@@ -311,9 +363,9 @@
     }
     const score = scoreTask(task);
     const activeIcp = icpScore(task);
-    return `${pageHead('开发工作台', 'Codex 负责决策与审批，Codex Chrome Extension 按精确账号串行执行，GLM 辅助画像与文案')}
+    return `${pageHead('开发工作台', 'Codex 负责决策与审批，Codex Chrome Extension 按精确账号多任务并行执行，GLM 辅助画像与文案')}
       ${metrics}${connection}${icpRule}
-      <section class="cc-panel"><div class="cc-panel-head"><h2>当前客户</h2><div class="cc-row-actions"><button class="primary" type="button" onclick="runGlmQueue()" ${eligibleCount ? '' : 'disabled'}>${eligibleCount ? '开始 Codex Chrome 串行队列' : '暂无待开发客户'}</button><span class="cc-chip green">${stateLabel(task.state)}</span></div></div><div class="cc-panel-body">
+      <section class="cc-panel"><div class="cc-panel-head"><h2>当前客户</h2><div class="cc-row-actions"><button class="primary" type="button" onclick="runGlmQueue()" ${eligibleCount ? '' : 'disabled'}>${eligibleCount ? '开始 Codex Chrome 并行队列' : '暂无待开发客户'}</button><span class="cc-chip green">${stateLabel(task.state)}</span></div></div><div class="cc-panel-body">
         <div class="cc-current"><div><h3>${platformUrl(task) ? `<a href="${esc(platformUrl(task))}" target="_blank" rel="noopener">${esc(task.company)}</a>` : esc(task.company)}</h3><div class="cc-sub">${esc(task.role || '采购/合作负责人')} · ${esc(task.country || '区域待补全')} · ${esc(task.keyword)}</div><div class="cc-actions"><button type="button" onclick="openVerifiedCustomer('${esc(task.taskId)}')" ${platformUrl(task) ? '' : 'disabled'}>打开客户主页</button><button class="primary" type="button" title="${esc(autoClawAvailability(task).reason)}" onclick="runGlmDirect('${esc(task.taskId)}')" ${canRunGlm(task) ? '' : 'disabled'}>${esc(autoClawAvailability(task).label)}</button><a href="${urlFor('customer', { contact: task.taskId })}">查看系统档案</a></div></div><div class="cc-score"><strong>${score.total}</strong><span>综合开发分 / 100</span></div></div>
         <div class="cc-sub">ICP：${activeIcp}/100 · ${esc(icpExplanation(task))}</div>
         ${stageRoute(task)}
@@ -328,16 +380,22 @@
       const qualified = isIcpQualified(task);
       const rowClass = qualified ? '' : ' class="cc-low-icp"';
       const linkClass = qualified ? '' : ' class="cc-strike-link"';
-      return `<tr${rowClass}><td><a${linkClass} href="${urlFor('customer', { contact: task.taskId })}" title="${esc(icpExplanation(task))}">${esc(task.company)}</a>${task.identityStatus === 'identity_mismatch' ? '<br><span class="cc-chip red">身份不匹配</span>' : ''}${qualified ? '' : '<br><span class="cc-chip amber">低分保留</span>'}</td><td>${esc(task.country)}</td><td>${esc(task.keyword)}</td><td><span class="cc-chip">${stateLabel(task.state)}</span></td><td title="${esc(icpExplanation(task))}">${icpScore(task)}</td><td><div class="cc-row-actions"><button type="button" onclick="openVerifiedCustomer('${esc(task.taskId)}')" ${platformUrl(task) ? '' : 'disabled'}>打开主页</button><button type="button" title="${esc(autoClawAvailability(task).reason)}" onclick="runGlmDirect('${esc(task.taskId)}')" ${canRunGlm(task) ? '' : 'disabled'}>${esc(autoClawAvailability(task).label)}</button></div></td></tr>`;
+      const target = platformUrl(task);
+      const customerHref = target || urlFor('customer', { contact: task.taskId });
+      const customerLinkAttrs = target ? ` href="${esc(customerHref)}" target="_blank" rel="noopener"` : ` href="${customerHref}"`;
+      const archiveLink = target ? `<br><a class="cc-sub-link" href="${urlFor('customer', { contact: task.taskId })}">System profile</a>` : '';
+      return `<tr${rowClass}><td><a${linkClass}${customerLinkAttrs} title="Open verified customer platform; ${esc(icpExplanation(task))}">${esc(task.company)}</a>${archiveLink}${task.identityStatus === 'identity_mismatch' ? '<br><span class="cc-chip red">Identity mismatch</span>' : ''}${qualified ? '' : '<br><span class="cc-chip amber">Low ICP retained</span>'}</td><td>${esc(task.country)}</td><td>${esc(task.keyword)}</td><td><span class="cc-chip">${stateLabel(task.state)}</span></td><td title="Open verified customer platform; ${esc(icpExplanation(task))}">${icpScore(task)}</td><td><div class="cc-row-actions"><button type="button" onclick="openVerifiedCustomer('${esc(task.taskId)}')" ${target ? '' : 'disabled'}>Open profile</button><button type="button" title="${esc(autoClawAvailability(task).reason)}" onclick="runGlmDirect('${esc(task.taskId)}')" ${canRunGlm(task) ? '' : 'disabled'}>${esc(autoClawAvailability(task).label)}</button></div></td></tr>`;
     }).join('')}</tbody></table>`;
   }
   function queue() {
     const mode = query.get('queue') || 'untouched';
-    const list = mode === 'followup' ? followupTasks() : mode === 'all' ? tasks : untouchedTasks();
+    const list = latestRun
+      ? (mode === 'followup' ? todayFollowupTasks() : mode === 'all' ? latestQueueRows('all') : todayDevelopTasks())
+      : (mode === 'followup' ? followupTasks() : mode === 'all' ? tasks : untouchedTasks());
     const tabs = [
-      ['untouched', '今日待开发', untouchedTasks().length],
-      ['followup', '跟进中', followupTasks().length],
-      ['all', '全部任务', tasks.length],
+      ['untouched', '今日待开发', todayDevelopTasks().length],
+      ['followup', '跟进中', todayFollowupTasks().length],
+      ['all', '全部任务', latestRun ? latestQueueRows('all').length : tasks.length],
     ];
     return `${pageHead('今日队列', '默认只显示未触达且身份核验通过的新客户，历史客户单独跟进')}
       <div class="cc-view-tabs">${tabs.map(([key, label, count]) => `<a class="${mode === key ? 'active' : ''}" href="${urlFor('queue', { queue: key })}">${label} <b>${count}</b></a>`).join('')}</div>
@@ -436,7 +494,11 @@
         const key = recordKey(record, index);
         const qualified = isIcpQualified(record);
         const linkClass = qualified ? '' : ' class="cc-strike-link"';
-        return `<tr class="cc-click-row ${qualified ? '' : 'cc-low-icp'}" onclick="location.href='${urlFor('customer', { contact: key })}'"><td><a${linkClass} href="${urlFor('customer', { contact: key })}" title="${esc(icpExplanation(record))}">${esc(record.name)}</a></td><td>${esc(record.company)}${qualified ? '' : '<br><span class="cc-chip amber">低分保留</span>'}</td><td>${esc(record.role)}</td><td>${esc(record.country)}</td><td>${esc(record.platform)}</td><td><span class="cc-chip">${esc(record.status)}</span></td><td title="${esc(icpExplanation(record))}">${icpScore(record)}</td><td>${esc(record.lastTouch || record.date || '')}</td></tr>`;
+        const target = platformUrl(record);
+        const customerHref = target || urlFor('customer', { contact: key });
+        const customerLinkAttrs = target ? ` href="${esc(customerHref)}" target="_blank" rel="noopener"` : ` href="${customerHref}"`;
+        const archiveLink = target ? `<br><a class="cc-sub-link" href="${urlFor('customer', { contact: key })}">System profile</a>` : '';
+        return `<tr class="${qualified ? '' : 'cc-low-icp'}"><td><a${linkClass}${customerLinkAttrs} title="Open verified customer platform; ${esc(icpExplanation(record))}">${esc(record.name)}</a>${archiveLink}</td><td>${esc(record.company)}${qualified ? '' : '<br><span class="cc-chip amber">Low ICP retained</span>'}</td><td>${esc(record.role)}</td><td>${esc(record.country)}</td><td>${esc(record.platform)}</td><td><span class="cc-chip">${esc(record.status)}</span></td><td title="Open verified customer platform; ${esc(icpExplanation(record))}">${icpScore(record)}</td><td>${esc(record.lastTouch || record.date || '')}</td></tr>`;
       }).join('')}</tbody></table>${rows.length ? '' : '<div class="cc-empty">没有匹配客户，请重置或调整筛选条件</div>'}</div>`;
   }
   function seo() {
@@ -552,7 +614,7 @@
   }
 
   function openVerifiedCustomer(taskId) {
-    const task = tasks.find(item => item.taskId === taskId);
+    const task = findTaskById(taskId);
     const target = platformUrl(task);
     if (!target) return;
     if (window.customerDev && window.customerDev.openExternalUrl) {
@@ -563,7 +625,7 @@
   }
 
   async function runGlmDirect(taskId) {
-    const task = tasks.find(item => item.taskId === taskId);
+    const task = findTaskById(taskId);
     if (!task || !canRunGlm(task)) {
       window.alert('该客户缺少精确主页，或已经触达，系统不会重复发送。');
       return;
@@ -601,6 +663,31 @@
   }
 
   async function runGlmQueue() {
+    if (window.customerDev && window.customerDev.runDailyAutomationQueue) {
+      const button = document.activeElement;
+      if (button && button.tagName === 'BUTTON') {
+        button.disabled = true;
+        button.textContent = 'Daily queue running...';
+      }
+      try {
+        const result = await window.customerDev.runDailyAutomationQueue({ limit: 6, parallelLimit: 3 });
+        if (!result.ok) {
+          window.alert(`${result.error || 'Daily queue did not execute.'}\nSkipped: ${(result.skipped || []).length}`);
+          return;
+        }
+        window.alert(`Codex Chrome daily queue finished. Mode: ${result.mode || 'parallel-batches'}. Source: ${result.queueSource || 'dailyQueue'}. Executed: ${(result.executed || []).filter(item => item.ok).length}`);
+        location.reload();
+        return;
+      } catch (error) {
+        window.alert(`Daily queue failed: ${error.message || error}`);
+        return;
+      } finally {
+        if (button && button.tagName === 'BUTTON') {
+          button.disabled = false;
+          button.textContent = 'Codex Chrome Queue';
+        }
+      }
+    }
     const eligible = tasks
       .filter(canRunGlm)
       .sort((left, right) => icpScore(right) - icpScore(left))

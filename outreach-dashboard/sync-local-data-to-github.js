@@ -55,6 +55,8 @@ function syncOnce() {
   const latestCsv = path.join(ROOT, 'daily-runs', `${latestDate}-daily-queue.csv`);
 
   fs.writeFileSync(path.join(OUT, 'latest-daily-automation.json'), JSON.stringify(latest, null, 2));
+  const googleDiscovery = redact(readJson(path.join(ROOT, 'google-lead-discovery-latest.json'), {}));
+  fs.writeFileSync(path.join(OUT, 'latest-google-discovery.json'), JSON.stringify(googleDiscovery, null, 2));
   fs.writeFileSync(path.join(OUT, 'README.md'), [
     '# Local Outreach Sync',
     '',
@@ -68,11 +70,13 @@ function syncOnce() {
   ].join('\n'));
   copyIfExists(latestRun, path.join(OUT, 'daily-run.json'));
   copyIfExists(latestCsv, path.join(OUT, 'daily-queue.csv'));
+  copyIfExists(path.join(ROOT, 'google-lead-discovery-latest.csv'), path.join(OUT, 'google-discovery.csv'));
   copyIfExists(path.join(ROOT, 'autonomous-outreach-results.js'), path.join(OUT, 'autonomous-outreach-results.js'));
 
   const paths = [
     'github-sync',
     'daily-automation-latest.js',
+    'google-lead-discovery-latest.js',
     'sync-local-data-to-github.js',
     'package.json',
   ];

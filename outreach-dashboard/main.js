@@ -2,12 +2,14 @@ const { app, BrowserWindow, ipcMain, shell, safeStorage } = require('electron');
 const fs = require('fs');
 const path = require('path');
 const crypto = require('crypto');
+const http = require('http');
 const { execFile } = require('child_process');
 const { requestGlm } = require('./glm-service');
 const { runAutoGlmLead, normalizeTarget, validateLeadForExecution } = require('./autoglm-bridge');
 
 let glmAutomationRunning = false;
 let lastGlmAutomationAt = 0;
+let managedChromeStarted = false;
 
 const PLATFORM_CONFIG = {
   li: {
@@ -315,6 +317,91 @@ function execFilePromise(file, args, options) {
   });
 }
 
+function httpJson(url, timeoutMs = 2000) {
+  return new Promise((resolve, reject) => {
+    const req = http.get(url, { timeout: timeoutMs }, (res) => {
+      let body = '';
+      res.setEncoding('utf8');
+      res.on('data', chunk => { body += chunk; });
+      res.on('end', () => {
+        try {
+          resolve(JSON.parse(body));
+        } catch (error) {
+          reject(error);
+        }
+      });
+    });
+    req.on('timeout', () => {
+      req.destroy(new Error(`Timeout: ${url}`));
+    });
+    req.on('error', reject);
+  });
+}
+
+async function activeChromeDebugPort() {
+  for (const port of [9225, 9224, 9223, 9222]) {
+    try {
+      await httpJson(`http://127.0.0.1:${port}/json/version`, 1200);
+      return port;
+    } catch {
+      // Try the next known debugging port.
+    }
+  }
+  return 0;
+}
+
+function chromeExecutablePath() {
+  const candidates = [
+    'C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe',
+    'C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe',
+    process.env.LOCALAPPDATA && path.join(process.env.LOCALAPPDATA, 'Google', 'Chrome', 'Application', 'chrome.exe'),
+  ].filter(Boolean);
+  return candidates.find(candidate => fs.existsSync(candidate)) || candidates[0];
+}
+
+async function ensureCodexChromePort() {
+  const existing = await activeChromeDebugPort();
+  if (existing) return existing;
+  if (!managedChromeStarted) {
+    managedChromeStarted = true;
+    const profile = path.join(app.getPath('userData'), 'codex-chrome-profile');
+    fs.mkdirSync(profile, { recursive: true });
+    execFile(chromeExecutablePath(), [
+      '--remote-debugging-port=9224',
+      '--remote-allow-origins=*',
+      `--user-data-dir=${profile}`,
+      '--no-first-run',
+      '--no-default-browser-check',
+      '--new-window',
+      'about:blank',
+    ], { windowsHide: false }, () => {});
+  }
+  for (let i = 0; i < 10; i += 1) {
+    await sleep(700);
+    const port = await activeChromeDebugPort();
+    if (port) return port;
+  }
+  return 0;
+}
+
+async function openWithCodexChrome(url) {
+  const parsed = validateExternalUrl(url);
+  const port = await ensureCodexChromePort();
+  if (!port) {
+    await shell.openExternal(parsed.toString());
+    return { ok: true, engine: 'shell-fallback', targetUrl: parsed.toString() };
+  }
+  const opened = await httpJson(`http://127.0.0.1:${port}/json/new?${encodeURIComponent(parsed.toString())}`, 2500);
+  return {
+    ok: true,
+    engine: 'codex-chrome-extension-cdp',
+    port,
+    targetUrl: parsed.toString(),
+    tabId: opened.id || '',
+    title: opened.title || '',
+  };
+}
+
 function validateLeadTargetForPreparation(lead) {
   const targetUrl = normalizeTarget(lead);
   let parsed;
@@ -360,7 +447,7 @@ async function runOpenClawLead(lead, decision, options = {}) {
   if (!target.ok) return target;
   const config = loadGlmConfig();
   if (!config || !config.apiKey) return { ok: false, needsConfig: true, error: 'GLM API key is not configured' };
-  await shell.openExternal(target.targetUrl);
+  const chromeOpen = await openWithCodexChrome(target.targetUrl);
   const sessionKey = `agent:main:outreach-${String(lead.taskId || lead.name || Date.now()).replace(/[^a-zA-Z0-9_.:-]/g, '-').slice(0, 80)}`;
   const mode = isFollowupLead(lead) ? 'followup_prepare_no_duplicate_send' : 'new_lead_prepare_send_requires_confirmation';
   const args = [
@@ -387,18 +474,17 @@ async function runOpenClawLead(lead, decision, options = {}) {
   return {
     ok: true,
     engine: 'openclaw',
+    browserEngine: chromeOpen.engine,
     mode,
     targetUrl: target.targetUrl,
-    externalBrowserOpened: true,
+    chromeOpen,
     sendStatus: 'prepared_not_sent',
     output: result.stdout.trim(),
   };
 }
 
 ipcMain.handle('open-external-url', async (_event, url) => {
-  const parsed = validateExternalUrl(url);
-  await shell.openExternal(parsed.toString());
-  return true;
+  return openWithCodexChrome(url);
 });
 
 ipcMain.handle('credential-status', async () => {
@@ -447,8 +533,8 @@ ipcMain.handle('launch-platform-acquisition', async (_event, payload) => {
   const platform = payload && payload.platform;
   const config = validatePlatform(platform);
   if (payload && payload.externalBrowser) {
-    await shell.openExternal(config.targetUrl);
-    return { ok: true, externalBrowser: true };
+    const chromeOpen = await openWithCodexChrome(config.targetUrl);
+    return { ok: true, externalBrowser: true, chromeOpen };
   }
   let credential = getCachedCredential(platform);
   if (!credential && payload && payload.masterPassword) {
@@ -487,19 +573,22 @@ ipcMain.handle('optimize-lead-with-glm', async (_event, payload) => {
   return requestGlm({ ...config, lead });
 });
 
-ipcMain.handle('run-glm-direct-automation', async (_event, payload) => {
-  if (glmAutomationRunning) return { ok: false, busy: true, error: 'Another customer is running' };
-  if (Date.now() - lastGlmAutomationAt < 90000) {
+function sleep(ms) {
+  return new Promise((resolve) => setTimeout(resolve, ms));
+}
+
+async function executeLeadAutomation(lead, options = {}) {
+  if (!options.allowParallel && glmAutomationRunning) return { ok: false, busy: true, error: 'Another customer is running' };
+  if (!options.ignoreCooldown && Date.now() - lastGlmAutomationAt < 90000) {
     return { ok: false, cooldown: true, error: 'Serial cooldown is active' };
   }
-  const lead = payload && payload.lead;
   const followup = isFollowupLead(lead);
   const target = followup ? validateLeadTargetForPreparation(lead) : validateLeadForExecution(lead);
   if (!target.ok) return target;
   const config = loadGlmConfig();
   if (!config || !config.apiKey) return { ok: false, needsConfig: true };
 
-  glmAutomationRunning = true;
+  if (!options.allowParallel) glmAutomationRunning = true;
   try {
     const glm = await requestGlm({ ...config, lead });
     const decision = glm.result;
@@ -530,11 +619,102 @@ ipcMain.handle('run-glm-direct-automation', async (_event, payload) => {
     lastGlmAutomationAt = Date.now();
     return { ...execution, decision, glmModel: glm.model, followup };
   } finally {
-    glmAutomationRunning = false;
+    if (!options.allowParallel) glmAutomationRunning = false;
   }
+}
+
+function loadLatestDailyQueue() {
+  const latestPath = path.join(__dirname, 'daily-automation-latest.json');
+  if (!fs.existsSync(latestPath)) return null;
+  return readJson(latestPath, null);
+}
+
+function queueItemToLead(item) {
+  return {
+    ...item,
+    taskId: item.id,
+    name: item.name || item.company,
+    targetUrl: item.url,
+    verifiedTargetUrl: item.url,
+    fitScore: item.fitScore,
+    originalStatus: item.lastStatus || '',
+  };
+}
+
+ipcMain.handle('run-glm-direct-automation', async (_event, payload) => {
+  const lead = payload && payload.lead;
+  return executeLeadAutomation(lead);
 });
 
-app.whenReady().then(createWindow);
+async function runDailyAutomationQueue(payload = {}) {
+  const latest = loadLatestDailyQueue();
+  if (!latest || !Array.isArray(latest.dailyQueue)) {
+    return { ok: false, error: 'Daily automation queue is missing. Run npm run daily first.' };
+  }
+  const limit = Math.max(1, Math.min(Number(payload && payload.limit || 3), 8));
+  const parallelLimit = Math.max(1, Math.min(Number(payload && payload.parallelLimit || 3), 3));
+  const executableActions = new Set(['develop', 'retry_or_alternate_channel', 'discover_and_develop']);
+  const dueExecutable = latest.dailyQueue
+    .filter(item => executableActions.has(item.action))
+    .filter(item => item.url)
+    .slice(0, limit);
+  const scheduledExecutable = (latest.scheduledLater || [])
+    .filter(item => executableActions.has(item.action))
+    .filter(item => item.url)
+    .slice(0, limit);
+  const executable = dueExecutable.length ? dueExecutable : scheduledExecutable;
+  const queueSource = dueExecutable.length ? 'dailyQueue' : 'scheduledLater';
+  const skipped = [...latest.dailyQueue, ...(latest.scheduledLater || [])]
+    .filter(item => !executable.some(run => run.id === item.id))
+    .map(item => ({ id: item.id, company: item.company, action: item.action, reason: item.reason }));
+
+  if (!executable.length) {
+    return {
+      ok: false,
+      skippedOnly: true,
+      error: 'No social-executable tasks. Email-priority, cooldown, exclusive-agency, and verification tasks are not auto-DM executed.',
+      skipped,
+      summary: latest.summary || {},
+    };
+  }
+
+  const results = [];
+  for (let index = 0; index < executable.length; index += parallelLimit) {
+    const batch = executable.slice(index, index + parallelLimit);
+    const batchResults = await Promise.all(batch.map(async (item) => {
+      const chromeOpen = await openWithCodexChrome(item.url);
+      const result = await executeLeadAutomation(queueItemToLead(item), { ignoreCooldown: true, allowParallel: true });
+      return { id: item.id, company: item.company, action: item.action, ok: Boolean(result && result.ok), chromeOpen, result };
+    }));
+    results.push(...batchResults);
+    if (batchResults.some(item => item.result && (item.result.needsConfig || item.result.needsInstall))) break;
+    if (index + parallelLimit < executable.length) await sleep(Number(payload && payload.delayMs || 91000));
+  }
+
+  return {
+    ok: results.some(item => item.ok),
+    engine: 'Codex Chrome Extension queue bridge',
+    mode: 'parallel-batches',
+    parallelLimit,
+    queueDate: latest.date,
+    queueSource,
+    executed: results,
+    skipped,
+    summary: latest.summary || {},
+  };
+}
+
+ipcMain.handle('run-daily-automation-queue', async (_event, payload) => runDailyAutomationQueue(payload));
+
+app.whenReady().then(() => {
+  createWindow();
+  if (process.argv.includes('--auto-run-daily')) {
+    setTimeout(async () => {
+      const result = await runDailyAutomationQueue({ limit: 6, parallelLimit: 3, delayMs: 91000 });
+      console.log(JSON.stringify({ autoRunDaily: result }, null, 2));
+    }, 3000);
+  }
+});
 
 app.on('window-all-closed', () => {
   app.quit();
