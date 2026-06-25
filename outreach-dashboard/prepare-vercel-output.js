@@ -7,6 +7,8 @@ const files = [
   'outreach-dashboard.html',
   'country-market-data.js',
   'daily-outreach-tasks.js',
+  'google-lead-discovery-latest.js',
+  'daily-automation-latest.js',
   'outreach-engine.js',
   'outreach-analytics.js',
   'autonomous-outreach-results.js',

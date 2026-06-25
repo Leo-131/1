@@ -1,10 +1,12 @@
-const CACHE_NAME = 'customer-development-system-v18-7-5-20260618-icp-priority';
+const CACHE_NAME = 'customer-development-system-v18-7-8-20260625-google-discovery';
 const APP_SHELL = [
   './',
   './index.html',
   './outreach-dashboard.html',
   './country-market-data.js',
   './daily-outreach-tasks.js',
+  './google-lead-discovery-latest.js',
+  './daily-automation-latest.js',
   './outreach-engine.js',
   './outreach-analytics.js',
   './autonomous-outreach-results.js',
