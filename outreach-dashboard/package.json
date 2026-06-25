@@ -48,6 +48,7 @@
       "daily-automation-config.json",
       "daily-automation-latest.js",
       "sync-local-data-to-github.js",
+      "run-daily-customer-development.ps1",
       "install-daily-automation-task.ps1",
       "generate-serial-run.js",
       "rebuild-followup-plan.js",

@@ -213,7 +213,7 @@ function validatePlatform(platform) {
 
 function validateExternalUrl(url) {
   const parsed = new URL(url);
-  if (!['https:', 'http:'].includes(parsed.protocol) || !ALLOWED_EXTERNAL_HOSTS.has(parsed.hostname)) {
+  if (parsed.protocol !== 'https:') {
     throw new Error(`Blocked external URL: ${url}`);
   }
   return parsed;
