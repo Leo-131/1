@@ -5,7 +5,15 @@ const crypto = require('crypto');
 const http = require('http');
 const { execFile } = require('child_process');
 const { requestGlm } = require('./glm-service');
-const { runAutoGlmLead, normalizeTarget, validateLeadForExecution } = require('./autoglm-bridge');
+const { normalizeTarget, validateLeadForExecution } = require('./autoglm-bridge');
+
+for (const stream of [process.stdout, process.stderr]) {
+  if (stream && stream.on) {
+    stream.on('error', (error) => {
+      if (error && error.code !== 'EPIPE') throw error;
+    });
+  }
+}
 
 let glmAutomationRunning = false;
 let lastGlmAutomationAt = 0;
@@ -161,11 +169,11 @@ function saveGlmConfig(config) {
 
 function openClawCommand() {
   const candidates = [
-    'openclaw.cmd',
     process.env.APPDATA && path.join(process.env.APPDATA, 'npm', 'openclaw.cmd'),
     process.env.USERPROFILE && path.join(process.env.USERPROFILE, 'AppData', 'Roaming', 'npm', 'openclaw.cmd'),
+    'openclaw.cmd',
   ].filter(Boolean);
-  return candidates.find((candidate) => candidate === 'openclaw.cmd' || fs.existsSync(candidate)) || 'openclaw.cmd';
+  return candidates.find((candidate) => candidate !== 'openclaw.cmd' && fs.existsSync(candidate)) || 'openclaw.cmd';
 }
 
 function deriveVaultKey(masterPassword, salt) {
@@ -470,9 +478,11 @@ async function runOpenClawLead(lead, decision, options = {}) {
     String(options.timeoutSeconds || 180),
   ];
   const env = { ...process.env, ZHIPUAI_API_KEY: config.apiKey };
-  const result = await execFilePromise(openClawCommand(), args, {
+  const command = openClawCommand();
+  const result = await execFilePromise(command, args, {
     env,
     windowsHide: true,
+    shell: /\.cmd$/i.test(command),
     timeout: (options.timeoutSeconds || 180) * 1000,
     maxBuffer: 8 * 1024 * 1024,
   });
@@ -485,6 +495,28 @@ async function runOpenClawLead(lead, decision, options = {}) {
     chromeOpen,
     sendStatus: 'prepared_not_sent',
     output: result.stdout.trim(),
+  };
+}
+
+async function runCodexChromeLead(lead, decision, mode = 'codex_chrome_prepare') {
+  const target = validateLeadTargetForPreparation(lead);
+  if (!target.ok) return target;
+  const chromeOpen = await openWithCodexChrome(target.targetUrl);
+  return {
+    ok: true,
+    engine: 'codex-chrome-extension-cdp',
+    browserEngine: chromeOpen.engine,
+    mode,
+    targetUrl: target.targetUrl,
+    chromeOpen,
+    sendStatus: 'prepared_not_sent',
+    output: JSON.stringify({
+      verdict: 'prepared',
+      evidence: 'Exact verified customer profile opened through Codex Chrome bridge. No duplicate DM was sent by fallback mode.',
+      nextAction: 'Review the visible profile and send only if not previously contacted.',
+      draft: decision && decision.draft || '',
+      sendStatus: 'prepared_not_sent',
+    }),
   };
 }
 
@@ -614,12 +646,13 @@ async function executeLeadAutomation(lead, options = {}) {
     }
     let execution;
     if (followup) {
-      execution = await runOpenClawLead(lead, decision);
-    } else {
-      execution = await runAutoGlmLead(lead, decision);
-      if (execution && execution.needsInstall) {
+      try {
         execution = await runOpenClawLead(lead, decision);
+      } catch (error) {
+        execution = await runCodexChromeLead(lead, decision, `openclaw_fallback_${error.code || 'error'}`);
       }
+    } else {
+      execution = await runCodexChromeLead(lead, decision, 'codex_chrome_primary_no_autoglm');
     }
     lastGlmAutomationAt = Date.now();
     return { ...execution, decision, glmModel: glm.model, followup };
@@ -715,8 +748,7 @@ app.whenReady().then(() => {
   createWindow();
   if (process.argv.includes('--auto-run-daily')) {
     setTimeout(async () => {
-      const result = await runDailyAutomationQueue({ limit: 6, parallelLimit: 3, delayMs: 91000 });
-      console.log(JSON.stringify({ autoRunDaily: result }, null, 2));
+      await runDailyAutomationQueue({ limit: 6, parallelLimit: 3, delayMs: 91000 });
     }, 3000);
   }
 });
