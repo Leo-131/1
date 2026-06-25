@@ -106,8 +106,12 @@
         country: item.countryEn || item.country || base.country || '',
         keyword: base.keyword || 'outdoor retail partnership',
         platform: item.platform || base.platform || 'instagram',
-        targetUrl: item.url || base.targetUrl || base.verifiedTargetUrl || '',
-        verifiedTargetUrl: item.url || base.verifiedTargetUrl || '',
+        targetUrl: item.platformUrl || item.website || item.url || base.targetUrl || base.verifiedTargetUrl || '',
+        verifiedTargetUrl: item.platformUrl || item.website || item.url || base.verifiedTargetUrl || '',
+        website: item.website || base.website || '',
+        evidenceUrl: item.evidenceUrl || item.query || '',
+        background: item.background || base.background || '',
+        buyerPersona: item.buyerPersona || item.role || base.role || '',
         fitScore: Number(item.fitScore || base.fitScore || 0),
         marketScore: item.marketScore || base.marketScore,
         marketStatus: item.marketStatus || base.marketStatus,
@@ -143,10 +147,11 @@
       record && record.instagram_url,
       record && record.facebook_url,
       record && record.linkedin_url,
+      record && record.website,
       record && record.url,
     ];
-    return candidates.find(value => /^https:\/\/(www\.)?(instagram|facebook|linkedin)\.com\//i.test(String(value || ''))
-      || /^https:\/\/www\.google\.com\/search/i.test(String(value || ''))) || '';
+    return candidates.find(value => /^https?:\/\//i.test(String(value || ''))
+      && !/^https:\/\/www\.google\.com\/search/i.test(String(value || ''))) || '';
   }
   function normalizeKey(value) {
     return String(value || '').trim().toLowerCase().replace(/^@/, '').replace(/[^a-z0-9.]+/g, '');

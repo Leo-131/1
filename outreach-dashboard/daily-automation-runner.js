@@ -401,7 +401,7 @@ function discoveryQueue(limit) {
     .map(item => ({
       ...item,
       priorityScore: Number(item.fitScore || 0) + 30,
-      action: 'discover_and_develop',
+      action: item.action || 'develop',
       agencyState: item.agencyState || 'open',
       workingTime: item.workingTime || { dueNow: true },
     }))
