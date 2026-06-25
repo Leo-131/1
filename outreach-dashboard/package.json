@@ -37,6 +37,7 @@
     },
     "files": [
       "main.js",
+      "codex-chrome-driver.js",
       "preload.js",
       "glm-service.js",
       "autoglm-bridge.js",
