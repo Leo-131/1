@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-06-25T21:01:08.684Z",
-  "date": "2026-06-25",
+  "generatedAt": "2026-06-26T00:02:40.604Z",
+  "date": "2026-06-26",
   "mode": "daily-icp-first-automation-loop",
   "executionLayer": "Codex Chrome Extension primary; AutoClaw compatible",
   "limits": {
@@ -8,18 +8,18 @@
     "quota": {
       "total": {
         "target": 20,
-        "planned": 5,
-        "gap": 15
+        "planned": 1,
+        "gap": 19
       },
       "develop": {
         "target": 10,
-        "planned": 3,
-        "gap": 7
+        "planned": 0,
+        "gap": 10
       },
       "email_priority": {
         "target": 5,
-        "planned": 2,
-        "gap": 3
+        "planned": 1,
+        "gap": 4
       },
       "retry_or_alternate_channel": {
         "target": 3,
@@ -46,9 +46,9 @@
     "totalLeads": 16,
     "highIcp": 16,
     "readyToDevelop": 17,
-    "dueNow": 13,
+    "dueNow": 9,
     "googleDiscovered": 8,
-    "scheduledLater": 10,
+    "scheduledLater": 14,
     "cooldown": 0,
     "emailPriority": 5,
     "openAgencyMarket": 15,
@@ -86,7 +86,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/26 05:01:08",
+        "localTime": "2026/6/26 08:02:40",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "priorityScore": 126
@@ -120,7 +120,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/26 05:01:08",
+        "localTime": "2026/6/26 08:02:40",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "priorityScore": 125
@@ -154,7 +154,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/26 05:01:08",
+        "localTime": "2026/6/26 08:02:40",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "priorityScore": 123
@@ -188,7 +188,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/26 05:01:08",
+        "localTime": "2026/6/26 08:02:40",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "priorityScore": 121
@@ -222,7 +222,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/26 05:01:08",
+        "localTime": "2026/6/26 08:02:40",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "priorityScore": 120
@@ -256,7 +256,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/26 05:01:08",
+        "localTime": "2026/6/26 08:02:40",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "priorityScore": 120
@@ -290,7 +290,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/26 05:01:08",
+        "localTime": "2026/6/26 08:02:40",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "priorityScore": 119
@@ -324,24 +324,24 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/26 05:01:08",
+        "localTime": "2026/6/26 08:02:40",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "priorityScore": 116
     },
     {
-      "id": "verified-Instagram-macpac",
-      "name": "macpac",
-      "company": "Macpac NZ/AU (76K followers, verified, outdoor brand)",
+      "id": "verified-Instagram-anacondastores",
+      "name": "anacondastores",
+      "company": "Anaconda Stores AU (60K followers, verified, largest outdoor retailer)",
       "platform": "instagram",
-      "country": "新西兰",
-      "countryEn": "New Zealand",
-      "fitScore": 77,
+      "country": "澳大利亚",
+      "countryEn": "Australia",
+      "fitScore": 85,
       "fitTier": "A",
-      "marketScore": 3.9,
+      "marketScore": 4.8,
       "marketStatus": "可开拓",
       "agencyState": "open",
-      "url": "https://www.instagram.com/macpac/",
+      "url": "https://www.instagram.com/anacondastores/",
       "lastStatus": "skipped",
       "lastEvidence": "email_channel_found",
       "lastTouch": "",
@@ -349,125 +349,13 @@
       "reason": "email_channel_found",
       "workingTime": {
         "dueNow": true,
-        "timeZone": "Pacific/Auckland",
-        "localTime": "Fri 09:01",
+        "timeZone": "Australia/Sydney",
+        "localTime": "Fri 10:02",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
       },
-      "priorityScore": 142
-    },
-    {
-      "id": "verified-Instagram-stoneycreeknz",
-      "name": "stoneycreeknz",
-      "company": "Stoney Creek NZ (23K followers, NZ outdoor clothing brand)",
-      "platform": "instagram",
-      "country": "新西兰",
-      "countryEn": "New Zealand",
-      "fitScore": 77,
-      "fitTier": "A",
-      "marketScore": 3.9,
-      "marketStatus": "可开拓",
-      "agencyState": "open",
-      "url": "https://www.instagram.com/stoneycreeknz/",
-      "lastStatus": "skipped",
-      "lastEvidence": "email_channel_found",
-      "lastTouch": "",
-      "action": "email_priority",
-      "reason": "email_channel_found",
-      "workingTime": {
-        "dueNow": true,
-        "timeZone": "Pacific/Auckland",
-        "localTime": "Fri 09:01",
-        "window": "morning",
-        "nextBest": "now",
-        "weight": 1
-      },
-      "priorityScore": 142
-    },
-    {
-      "id": "verified-Instagram-huntingandfishingnewzealand",
-      "name": "huntingandfishingnewzealand",
-      "company": "Hunting & Fishing NZ (46K followers, verified, NZ outdoor retail)",
-      "platform": "instagram",
-      "country": "新西兰",
-      "countryEn": "New Zealand",
-      "fitScore": 77,
-      "fitTier": "A",
-      "marketScore": 3.9,
-      "marketStatus": "可开拓",
-      "agencyState": "open",
-      "url": "https://www.instagram.com/huntingandfishingnewzealand/",
-      "lastStatus": "sent_confirmed",
-      "lastEvidence": "confirmed DM follow-up sent via logged-in Chrome session",
-      "lastTouch": "2026-06-18T10:09:35.863Z",
-      "action": "develop",
-      "reason": "high_icp_verified_ready",
-      "workingTime": {
-        "dueNow": true,
-        "timeZone": "Pacific/Auckland",
-        "localTime": "Fri 09:01",
-        "window": "morning",
-        "nextBest": "now",
-        "weight": 1
-      },
-      "priorityScore": 134
-    },
-    {
-      "id": "verified-Instagram-kathmandugear",
-      "name": "kathmandugear",
-      "company": "Kathmandu NZ/AU (12.3K followers, verified)",
-      "platform": "instagram",
-      "country": "新西兰",
-      "countryEn": "New Zealand",
-      "fitScore": 77,
-      "fitTier": "A",
-      "marketScore": 3.9,
-      "marketStatus": "可开拓",
-      "agencyState": "open",
-      "url": "https://www.instagram.com/kathmandugear/",
-      "lastStatus": "sent_confirmed",
-      "lastEvidence": "confirmed DM follow-up sent via logged-in Chrome session",
-      "lastTouch": "2026-06-18T10:09:35.863Z",
-      "action": "develop",
-      "reason": "high_icp_verified_ready",
-      "workingTime": {
-        "dueNow": true,
-        "timeZone": "Pacific/Auckland",
-        "localTime": "Fri 09:01",
-        "window": "morning",
-        "nextBest": "now",
-        "weight": 1
-      },
-      "priorityScore": 134
-    },
-    {
-      "id": "verified-Instagram-rebelsportnz",
-      "name": "rebelsportnz",
-      "company": "Rebel Sport NZ (38K followers, verified, NZ #1 sporting goods retailer)",
-      "platform": "instagram",
-      "country": "新西兰",
-      "countryEn": "New Zealand",
-      "fitScore": 77,
-      "fitTier": "A",
-      "marketScore": 3.9,
-      "marketStatus": "可开拓",
-      "agencyState": "open",
-      "url": "https://www.instagram.com/rebelsportnz/",
-      "lastStatus": "sent_confirmed",
-      "lastEvidence": "confirmed DM follow-up sent via logged-in Chrome session",
-      "lastTouch": "2026-06-18T10:09:35.863Z",
-      "action": "develop",
-      "reason": "high_icp_verified_ready",
-      "workingTime": {
-        "dueNow": true,
-        "timeZone": "Pacific/Auckland",
-        "localTime": "Fri 09:01",
-        "window": "morning",
-        "nextBest": "now",
-        "weight": 1
-      },
-      "priorityScore": 134
+      "priorityScore": 159
     }
   ],
   "scheduledLater": [
@@ -492,7 +380,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/London",
-        "localTime": "Thu 22:01",
+        "localTime": "Fri 01:02",
         "window": "outside_work_hours",
         "nextBest": "Europe/London morning",
         "weight": 0
@@ -520,40 +408,12 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Thu 17:01",
+        "localTime": "Thu 20:02",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
       },
       "priorityScore": 162
-    },
-    {
-      "id": "verified-Instagram-anacondastores",
-      "name": "anacondastores",
-      "company": "Anaconda Stores AU (60K followers, verified, largest outdoor retailer)",
-      "platform": "instagram",
-      "country": "澳大利亚",
-      "countryEn": "Australia",
-      "fitScore": 85,
-      "fitTier": "A",
-      "marketScore": 4.8,
-      "marketStatus": "可开拓",
-      "agencyState": "open",
-      "url": "https://www.instagram.com/anacondastores/",
-      "lastStatus": "skipped",
-      "lastEvidence": "email_channel_found",
-      "lastTouch": "",
-      "action": "email_priority",
-      "reason": "email_channel_found",
-      "workingTime": {
-        "dueNow": false,
-        "timeZone": "Australia/Sydney",
-        "localTime": "Fri 07:01",
-        "window": "outside_work_hours",
-        "nextBest": "Australia/Sydney morning",
-        "weight": 0
-      },
-      "priorityScore": 159
     },
     {
       "id": "verified-Instagram-otimosoutdoorgear",
@@ -576,7 +436,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/London",
-        "localTime": "Thu 22:01",
+        "localTime": "Fri 01:02",
         "window": "outside_work_hours",
         "nextBest": "Europe/London morning",
         "weight": 0
@@ -604,7 +464,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/London",
-        "localTime": "Thu 22:01",
+        "localTime": "Fri 01:02",
         "window": "outside_work_hours",
         "nextBest": "Europe/London morning",
         "weight": 0
@@ -632,12 +492,68 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Thu 17:01",
+        "localTime": "Thu 20:02",
         "window": "outside_work_hours",
         "nextBest": "America/Toronto morning",
         "weight": 0
       },
       "priorityScore": 146
+    },
+    {
+      "id": "verified-Instagram-macpac",
+      "name": "macpac",
+      "company": "Macpac NZ/AU (76K followers, verified, outdoor brand)",
+      "platform": "instagram",
+      "country": "新西兰",
+      "countryEn": "New Zealand",
+      "fitScore": 77,
+      "fitTier": "A",
+      "marketScore": 3.9,
+      "marketStatus": "可开拓",
+      "agencyState": "open",
+      "url": "https://www.instagram.com/macpac/",
+      "lastStatus": "skipped",
+      "lastEvidence": "email_channel_found",
+      "lastTouch": "",
+      "action": "email_priority",
+      "reason": "email_channel_found",
+      "workingTime": {
+        "dueNow": false,
+        "timeZone": "Pacific/Auckland",
+        "localTime": "Fri 12:02",
+        "window": "outside_work_hours",
+        "nextBest": "Pacific/Auckland afternoon",
+        "weight": 0
+      },
+      "priorityScore": 142
+    },
+    {
+      "id": "verified-Instagram-stoneycreeknz",
+      "name": "stoneycreeknz",
+      "company": "Stoney Creek NZ (23K followers, NZ outdoor clothing brand)",
+      "platform": "instagram",
+      "country": "新西兰",
+      "countryEn": "New Zealand",
+      "fitScore": 77,
+      "fitTier": "A",
+      "marketScore": 3.9,
+      "marketStatus": "可开拓",
+      "agencyState": "open",
+      "url": "https://www.instagram.com/stoneycreeknz/",
+      "lastStatus": "skipped",
+      "lastEvidence": "email_channel_found",
+      "lastTouch": "",
+      "action": "email_priority",
+      "reason": "email_channel_found",
+      "workingTime": {
+        "dueNow": false,
+        "timeZone": "Pacific/Auckland",
+        "localTime": "Fri 12:02",
+        "window": "outside_work_hours",
+        "nextBest": "Pacific/Auckland afternoon",
+        "weight": 0
+      },
+      "priorityScore": 142
     },
     {
       "id": "verified-Instagram-monasheeoutdoors",
@@ -660,7 +576,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Thu 17:01",
+        "localTime": "Thu 20:02",
         "window": "outside_work_hours",
         "nextBest": "America/Toronto morning",
         "weight": 0
@@ -688,12 +604,96 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Thu 17:01",
+        "localTime": "Thu 20:02",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
       },
       "priorityScore": 135
+    },
+    {
+      "id": "verified-Instagram-huntingandfishingnewzealand",
+      "name": "huntingandfishingnewzealand",
+      "company": "Hunting & Fishing NZ (46K followers, verified, NZ outdoor retail)",
+      "platform": "instagram",
+      "country": "新西兰",
+      "countryEn": "New Zealand",
+      "fitScore": 77,
+      "fitTier": "A",
+      "marketScore": 3.9,
+      "marketStatus": "可开拓",
+      "agencyState": "open",
+      "url": "https://www.instagram.com/huntingandfishingnewzealand/",
+      "lastStatus": "sent_confirmed",
+      "lastEvidence": "confirmed DM follow-up sent via logged-in Chrome session",
+      "lastTouch": "2026-06-18T10:09:35.863Z",
+      "action": "develop",
+      "reason": "high_icp_verified_ready",
+      "workingTime": {
+        "dueNow": false,
+        "timeZone": "Pacific/Auckland",
+        "localTime": "Fri 12:02",
+        "window": "outside_work_hours",
+        "nextBest": "Pacific/Auckland afternoon",
+        "weight": 0
+      },
+      "priorityScore": 134
+    },
+    {
+      "id": "verified-Instagram-kathmandugear",
+      "name": "kathmandugear",
+      "company": "Kathmandu NZ/AU (12.3K followers, verified)",
+      "platform": "instagram",
+      "country": "新西兰",
+      "countryEn": "New Zealand",
+      "fitScore": 77,
+      "fitTier": "A",
+      "marketScore": 3.9,
+      "marketStatus": "可开拓",
+      "agencyState": "open",
+      "url": "https://www.instagram.com/kathmandugear/",
+      "lastStatus": "sent_confirmed",
+      "lastEvidence": "confirmed DM follow-up sent via logged-in Chrome session",
+      "lastTouch": "2026-06-18T10:09:35.863Z",
+      "action": "develop",
+      "reason": "high_icp_verified_ready",
+      "workingTime": {
+        "dueNow": false,
+        "timeZone": "Pacific/Auckland",
+        "localTime": "Fri 12:02",
+        "window": "outside_work_hours",
+        "nextBest": "Pacific/Auckland afternoon",
+        "weight": 0
+      },
+      "priorityScore": 134
+    },
+    {
+      "id": "verified-Instagram-rebelsportnz",
+      "name": "rebelsportnz",
+      "company": "Rebel Sport NZ (38K followers, verified, NZ #1 sporting goods retailer)",
+      "platform": "instagram",
+      "country": "新西兰",
+      "countryEn": "New Zealand",
+      "fitScore": 77,
+      "fitTier": "A",
+      "marketScore": 3.9,
+      "marketStatus": "可开拓",
+      "agencyState": "open",
+      "url": "https://www.instagram.com/rebelsportnz/",
+      "lastStatus": "sent_confirmed",
+      "lastEvidence": "confirmed DM follow-up sent via logged-in Chrome session",
+      "lastTouch": "2026-06-18T10:09:35.863Z",
+      "action": "develop",
+      "reason": "high_icp_verified_ready",
+      "workingTime": {
+        "dueNow": false,
+        "timeZone": "Pacific/Auckland",
+        "localTime": "Fri 12:02",
+        "window": "outside_work_hours",
+        "nextBest": "Pacific/Auckland afternoon",
+        "weight": 0
+      },
+      "priorityScore": 134
     },
     {
       "id": "verified-Instagram-kfoutdoor",
@@ -716,7 +716,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Asia/Jakarta",
-        "localTime": "Fri 04:01",
+        "localTime": "Fri 07:02",
         "window": "outside_work_hours",
         "nextBest": "Asia/Jakarta morning",
         "weight": 0
@@ -744,7 +744,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Asia/Kolkata",
-        "localTime": "Fri 02:31",
+        "localTime": "Fri 05:32",
         "window": "outside_work_hours",
         "nextBest": "Asia/Kolkata morning",
         "weight": 0
