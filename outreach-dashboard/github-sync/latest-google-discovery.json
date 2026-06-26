@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-26T05:21:38.136Z",
+  "generatedAt": "2026-06-26T06:10:03.495Z",
   "mode": "google-concrete-customer-discovery",
   "objective": "convert Google discovery into concrete high-ICP customer profiles with official URLs and background notes",
   "leads": [
@@ -26,7 +26,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/26 13:21:38",
+        "localTime": "2026/6/26 14:10:03",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -65,7 +65,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/26 13:21:38",
+        "localTime": "2026/6/26 14:10:03",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -78,6 +78,7 @@
         "facebook": "https://www.facebook.com/REI",
         "websiteContact": "https://www.rei.com/help"
       },
+      "invalidChannels": {},
       "facebookStatus": "verified_official_page_candidate",
       "identitySource": "official Facebook page candidate + official website + Google background query",
       "channelPriority": 2
@@ -105,7 +106,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/26 13:21:38",
+        "localTime": "2026/6/26 14:10:03",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -121,6 +122,7 @@
         "facebook": "https://www.facebook.com/REI",
         "websiteContact": "https://www.rei.com/help"
       },
+      "invalidChannels": {},
       "identitySource": "official website contact path + Google buyer/contact query",
       "channelPriority": 3
     },
@@ -147,7 +149,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/26 13:21:38",
+        "localTime": "2026/6/26 14:10:03",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -186,7 +188,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/26 13:21:38",
+        "localTime": "2026/6/26 14:10:03",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -199,6 +201,7 @@
         "facebook": "https://www.facebook.com/bassproshops",
         "websiteContact": "https://www.basspro.com/shop/en/contact-us"
       },
+      "invalidChannels": {},
       "facebookStatus": "verified_official_page_candidate",
       "identitySource": "official Facebook page candidate + official website + Google background query",
       "channelPriority": 2
@@ -226,7 +229,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/26 13:21:38",
+        "localTime": "2026/6/26 14:10:03",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -242,6 +245,7 @@
         "facebook": "https://www.facebook.com/bassproshops",
         "websiteContact": "https://www.basspro.com/shop/en/contact-us"
       },
+      "invalidChannels": {},
       "identitySource": "official website contact path + Google buyer/contact query",
       "channelPriority": 3
     },
@@ -268,7 +272,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/26 13:21:38",
+        "localTime": "2026/6/26 14:10:03",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -307,7 +311,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/26 13:21:38",
+        "localTime": "2026/6/26 14:10:03",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -320,6 +324,7 @@
         "facebook": "https://www.facebook.com/Cabelas",
         "websiteContact": "https://www.cabelas.com/shop/en/contact-us"
       },
+      "invalidChannels": {},
       "facebookStatus": "verified_official_page_candidate",
       "identitySource": "official Facebook page candidate + official website + Google background query",
       "channelPriority": 2
@@ -347,7 +352,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/26 13:21:38",
+        "localTime": "2026/6/26 14:10:03",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -363,6 +368,7 @@
         "facebook": "https://www.facebook.com/Cabelas",
         "websiteContact": "https://www.cabelas.com/shop/en/contact-us"
       },
+      "invalidChannels": {},
       "identitySource": "official website contact path + Google buyer/contact query",
       "channelPriority": 3
     },
@@ -389,7 +395,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/26 13:21:38",
+        "localTime": "2026/6/26 14:10:03",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -428,7 +434,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/26 13:21:38",
+        "localTime": "2026/6/26 14:10:03",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -441,6 +447,7 @@
         "facebook": "https://www.facebook.com/MountainEquipmentCoop",
         "websiteContact": "https://www.mec.ca/en/contact-us"
       },
+      "invalidChannels": {},
       "facebookStatus": "verified_official_page_candidate",
       "identitySource": "official Facebook page candidate + official website + Google background query",
       "channelPriority": 2
@@ -468,7 +475,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/26 13:21:38",
+        "localTime": "2026/6/26 14:10:03",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -484,6 +491,7 @@
         "facebook": "https://www.facebook.com/MountainEquipmentCoop",
         "websiteContact": "https://www.mec.ca/en/contact-us"
       },
+      "invalidChannels": {},
       "identitySource": "official website contact path + Google buyer/contact query",
       "channelPriority": 3
     },
@@ -510,7 +518,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/26 13:21:38",
+        "localTime": "2026/6/26 14:10:03",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -549,7 +557,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/26 13:21:38",
+        "localTime": "2026/6/26 14:10:03",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -562,6 +570,7 @@
         "facebook": "https://www.facebook.com/GOOutdoors",
         "websiteContact": "https://www.gooutdoors.co.uk/contact-us"
       },
+      "invalidChannels": {},
       "facebookStatus": "verified_official_page_candidate",
       "identitySource": "official Facebook page candidate + official website + Google background query",
       "channelPriority": 2
@@ -589,7 +598,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/26 13:21:38",
+        "localTime": "2026/6/26 14:10:03",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -605,6 +614,7 @@
         "facebook": "https://www.facebook.com/GOOutdoors",
         "websiteContact": "https://www.gooutdoors.co.uk/contact-us"
       },
+      "invalidChannels": {},
       "identitySource": "official website contact path + Google buyer/contact query",
       "channelPriority": 3
     },
@@ -631,7 +641,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/26 13:21:38",
+        "localTime": "2026/6/26 14:10:03",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -670,7 +680,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/26 13:21:38",
+        "localTime": "2026/6/26 14:10:03",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -683,6 +693,7 @@
         "facebook": "https://www.facebook.com/AnacondaStores",
         "websiteContact": "https://www.anacondastores.com/contact-us"
       },
+      "invalidChannels": {},
       "facebookStatus": "verified_official_page_candidate",
       "identitySource": "official Facebook page candidate + official website + Google background query",
       "channelPriority": 2
@@ -710,7 +721,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/26 13:21:38",
+        "localTime": "2026/6/26 14:10:03",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -726,47 +737,9 @@
         "facebook": "https://www.facebook.com/AnacondaStores",
         "websiteContact": "https://www.anacondastores.com/contact-us"
       },
+      "invalidChannels": {},
       "identitySource": "official website contact path + Google buyer/contact query",
       "channelPriority": 3
-    },
-    {
-      "id": "google-customer-sail-outdoors-instagram",
-      "name": "Sail Outdoors",
-      "company": "Sail Outdoors",
-      "country": "Canada",
-      "countryEn": "Canada",
-      "fitScore": 91,
-      "fitTier": "A+",
-      "marketScore": 4.5,
-      "marketStatus": "open",
-      "agencyState": "open",
-      "keyword": "outdoor retail chain",
-      "role": "Outdoor equipment buyer or merchandising lead.",
-      "background": "Canadian outdoor retailer for camping, fishing, hunting, apparel, and equipment.",
-      "buyerPersona": "Outdoor equipment buyer or merchandising lead.",
-      "website": "https://www.sail.ca/",
-      "evidenceUrl": "https://www.google.com/search?q=%22Sail%20Outdoors%22%20%22outdoor%20retail%20chain%22%20%22Canada%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "query": "https://www.google.com/search?q=%22Sail%20Outdoors%22%20%22outdoor%20retail%20chain%22%20%22Canada%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "source": "google_customer_discovery",
-      "identityStatus": "verified",
-      "workingTime": {
-        "dueNow": true,
-        "timeZone": "local-market",
-        "localTime": "2026/6/26 13:21:38",
-        "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
-      },
-      "platform": "instagram",
-      "platformUrl": "https://www.instagram.com/sailoutdoors/",
-      "url": "https://www.instagram.com/sailoutdoors/",
-      "action": "develop",
-      "reason": "concrete_google_discovered_major_customer_instagram",
-      "alternateChannels": {
-        "instagram": "https://www.instagram.com/sailoutdoors/",
-        "facebook": "https://www.facebook.com/SAILoutdoors",
-        "websiteContact": "https://www.sail.ca/en/contact-us"
-      },
-      "identitySource": "official website/social profile + Google background query",
-      "channelPriority": 1
     },
     {
       "id": "google-customer-sail-outdoors-facebook",
@@ -791,7 +764,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/26 13:21:38",
+        "localTime": "2026/6/26 14:10:03",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -800,9 +773,16 @@
       "action": "develop",
       "reason": "concrete_google_discovered_major_customer_facebook",
       "alternateChannels": {
-        "instagram": "https://www.instagram.com/sailoutdoors/",
+        "instagram": "",
         "facebook": "https://www.facebook.com/SAILoutdoors",
         "websiteContact": "https://www.sail.ca/en/contact-us"
+      },
+      "invalidChannels": {
+        "instagram": {
+          "url": "https://www.instagram.com/sailoutdoors/",
+          "status": "broken_profile_url",
+          "evidence": "Instagram reports this page is unavailable; use Facebook or official website contact instead."
+        }
       },
       "facebookStatus": "verified_official_page_candidate",
       "identitySource": "official Facebook page candidate + official website + Google background query",
@@ -831,7 +811,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/26 13:21:38",
+        "localTime": "2026/6/26 14:10:03",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -843,9 +823,16 @@
       "action": "email_priority",
       "reason": "official_website_contact_channel",
       "alternateChannels": {
-        "instagram": "https://www.instagram.com/sailoutdoors/",
+        "instagram": "",
         "facebook": "https://www.facebook.com/SAILoutdoors",
         "websiteContact": "https://www.sail.ca/en/contact-us"
+      },
+      "invalidChannels": {
+        "instagram": {
+          "url": "https://www.instagram.com/sailoutdoors/",
+          "status": "broken_profile_url",
+          "evidence": "Instagram reports this page is unavailable; use Facebook or official website contact instead."
+        }
       },
       "identitySource": "official website contact path + Google buyer/contact query",
       "channelPriority": 3
@@ -873,7 +860,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/26 13:21:38",
+        "localTime": "2026/6/26 14:10:03",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -912,7 +899,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/26 13:21:38",
+        "localTime": "2026/6/26 14:10:03",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -951,7 +938,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/26 13:21:38",
+        "localTime": "2026/6/26 14:10:03",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -990,7 +977,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/26 13:21:38",
+        "localTime": "2026/6/26 14:10:03",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -1003,6 +990,7 @@
         "facebook": "https://www.facebook.com/CotswoldOutdoor",
         "websiteContact": "https://www.cotswoldoutdoor.com/contact-us"
       },
+      "invalidChannels": {},
       "facebookStatus": "verified_official_page_candidate",
       "identitySource": "official Facebook page candidate + official website + Google background query",
       "channelPriority": 2
@@ -1030,7 +1018,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/26 13:21:38",
+        "localTime": "2026/6/26 14:10:03",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -1043,6 +1031,7 @@
         "facebook": "https://www.facebook.com/DecathlonDeutschland",
         "websiteContact": "https://www.decathlon.de/help/app/contact"
       },
+      "invalidChannels": {},
       "facebookStatus": "verified_official_page_candidate",
       "identitySource": "official Facebook page candidate + official website + Google background query",
       "channelPriority": 2
@@ -1070,7 +1059,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/26 13:21:38",
+        "localTime": "2026/6/26 14:10:03",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -1083,6 +1072,7 @@
         "facebook": "https://www.facebook.com/DecathlonFrance",
         "websiteContact": "https://www.decathlon.fr/help/app/contact"
       },
+      "invalidChannels": {},
       "facebookStatus": "verified_official_page_candidate",
       "identitySource": "official Facebook page candidate + official website + Google background query",
       "channelPriority": 2
@@ -1110,7 +1100,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/26 13:21:38",
+        "localTime": "2026/6/26 14:10:03",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -1126,6 +1116,7 @@
         "facebook": "https://www.facebook.com/CotswoldOutdoor",
         "websiteContact": "https://www.cotswoldoutdoor.com/contact-us"
       },
+      "invalidChannels": {},
       "identitySource": "official website contact path + Google buyer/contact query",
       "channelPriority": 3
     },
@@ -1152,7 +1143,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/26 13:21:38",
+        "localTime": "2026/6/26 14:10:03",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -1168,6 +1159,7 @@
         "facebook": "https://www.facebook.com/DecathlonDeutschland",
         "websiteContact": "https://www.decathlon.de/help/app/contact"
       },
+      "invalidChannels": {},
       "identitySource": "official website contact path + Google buyer/contact query",
       "channelPriority": 3
     },
@@ -1194,7 +1186,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/26 13:21:38",
+        "localTime": "2026/6/26 14:10:03",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -1210,6 +1202,7 @@
         "facebook": "https://www.facebook.com/DecathlonFrance",
         "websiteContact": "https://www.decathlon.fr/help/app/contact"
       },
+      "invalidChannels": {},
       "identitySource": "official website contact path + Google buyer/contact query",
       "channelPriority": 3
     },
@@ -1236,7 +1229,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/26 13:21:38",
+        "localTime": "2026/6/26 14:10:03",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -1275,7 +1268,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/26 13:21:38",
+        "localTime": "2026/6/26 14:10:03",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -1288,6 +1281,7 @@
         "facebook": "https://www.facebook.com/BCFAustralia",
         "websiteContact": "https://www.bcf.com.au/contact-us"
       },
+      "invalidChannels": {},
       "facebookStatus": "verified_official_page_candidate",
       "identitySource": "official Facebook page candidate + official website + Google background query",
       "channelPriority": 2
@@ -1315,7 +1309,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/26 13:21:38",
+        "localTime": "2026/6/26 14:10:03",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -1331,6 +1325,7 @@
         "facebook": "https://www.facebook.com/BCFAustralia",
         "websiteContact": "https://www.bcf.com.au/contact-us"
       },
+      "invalidChannels": {},
       "identitySource": "official website contact path + Google buyer/contact query",
       "channelPriority": 3
     },
@@ -1357,7 +1352,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/26 13:21:38",
+        "localTime": "2026/6/26 14:10:03",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -1396,7 +1391,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/26 13:21:38",
+        "localTime": "2026/6/26 14:10:03",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -1409,6 +1404,7 @@
         "facebook": "https://www.facebook.com/Kathmandu",
         "websiteContact": "https://www.kathmandu.co.nz/contact-us"
       },
+      "invalidChannels": {},
       "facebookStatus": "verified_official_page_candidate",
       "identitySource": "official Facebook page candidate + official website + Google background query",
       "channelPriority": 2
@@ -1436,7 +1432,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/26 13:21:38",
+        "localTime": "2026/6/26 14:10:03",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -1452,6 +1448,7 @@
         "facebook": "https://www.facebook.com/Kathmandu",
         "websiteContact": "https://www.kathmandu.co.nz/contact-us"
       },
+      "invalidChannels": {},
       "identitySource": "official website contact path + Google buyer/contact query",
       "channelPriority": 3
     },
@@ -1478,7 +1475,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/26 13:21:38",
+        "localTime": "2026/6/26 14:10:03",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -1517,7 +1514,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/26 13:21:38",
+        "localTime": "2026/6/26 14:10:03",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -1530,6 +1527,7 @@
         "facebook": "https://www.facebook.com/Bever",
         "websiteContact": "https://www.bever.nl/klantenservice/contact.html"
       },
+      "invalidChannels": {},
       "facebookStatus": "verified_official_page_candidate",
       "identitySource": "official Facebook page candidate + official website + Google background query",
       "channelPriority": 2
@@ -1557,7 +1555,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/26 13:21:38",
+        "localTime": "2026/6/26 14:10:03",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -1573,6 +1571,7 @@
         "facebook": "https://www.facebook.com/Bever",
         "websiteContact": "https://www.bever.nl/klantenservice/contact.html"
       },
+      "invalidChannels": {},
       "identitySource": "official website contact path + Google buyer/contact query",
       "channelPriority": 3
     }

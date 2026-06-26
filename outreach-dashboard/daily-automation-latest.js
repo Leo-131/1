@@ -1,5 +1,5 @@
 window.DAILY_AUTOMATION_LATEST = {
-  "generatedAt": "2026-06-26T05:21:38.482Z",
+  "generatedAt": "2026-06-26T06:10:03.687Z",
   "date": "2026-06-26",
   "mode": "daily-icp-first-automation-loop",
   "executionLayer": "Codex Chrome Extension primary; AutoClaw compatible",
@@ -8,13 +8,13 @@ window.DAILY_AUTOMATION_LATEST = {
     "quota": {
       "total": {
         "target": 100,
-        "planned": 2,
-        "gap": 98
+        "planned": 1,
+        "gap": 99
       },
       "develop": {
         "target": 70,
-        "planned": 1,
-        "gap": 69
+        "planned": 0,
+        "gap": 70
       },
       "email_priority": {
         "target": 15,
@@ -45,12 +45,12 @@ window.DAILY_AUTOMATION_LATEST = {
   "summary": {
     "totalLeads": 16,
     "highIcp": 16,
-    "readyToDevelop": 35,
-    "dueNow": 28,
-    "googleDiscovered": 26,
-    "facebookDiscovered": 8,
+    "readyToDevelop": 28,
+    "dueNow": 20,
+    "googleDiscovered": 19,
+    "facebookDiscovered": 4,
     "websiteContactDiscovered": 12,
-    "scheduledLater": 13,
+    "scheduledLater": 14,
     "cooldown": 0,
     "emailPriority": 5,
     "openAgencyMarket": 15,
@@ -82,7 +82,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/26 13:21:38",
+        "localTime": "2026/6/26 14:10:03",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -98,6 +98,7 @@ window.DAILY_AUTOMATION_LATEST = {
         "facebook": "https://www.facebook.com/bassproshops",
         "websiteContact": "https://www.basspro.com/shop/en/contact-us"
       },
+      "invalidChannels": {},
       "identitySource": "official website contact path + Google buyer/contact query",
       "channelPriority": 3,
       "priorityScore": 118
@@ -125,7 +126,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/26 13:21:38",
+        "localTime": "2026/6/26 14:10:03",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -141,50 +142,10 @@ window.DAILY_AUTOMATION_LATEST = {
         "facebook": "https://www.facebook.com/Cabelas",
         "websiteContact": "https://www.cabelas.com/shop/en/contact-us"
       },
+      "invalidChannels": {},
       "identitySource": "official website contact path + Google buyer/contact query",
       "channelPriority": 3,
       "priorityScore": 117
-    },
-    {
-      "id": "google-customer-mec-facebook",
-      "name": "MEC",
-      "company": "MEC",
-      "country": "Canada",
-      "countryEn": "Canada",
-      "fitScore": 94,
-      "fitTier": "A+",
-      "marketScore": 4.5,
-      "marketStatus": "open",
-      "agencyState": "open",
-      "keyword": "outdoor retail chain",
-      "role": "Camping equipment / outdoor accessories category buyer.",
-      "background": "Canadian outdoor retail co-op focused on camping, hiking, climbing, travel, and outdoor gear.",
-      "buyerPersona": "Camping equipment / outdoor accessories category buyer.",
-      "website": "https://www.mec.ca/",
-      "evidenceUrl": "https://www.google.com/search?q=%22MEC%22%20%22outdoor%20retail%20chain%22%20%22Canada%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "query": "https://www.google.com/search?q=%22MEC%22%20%22outdoor%20retail%20chain%22%20%22Canada%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "source": "google_customer_discovery",
-      "identityStatus": "verified",
-      "workingTime": {
-        "dueNow": true,
-        "timeZone": "local-market",
-        "localTime": "2026/6/26 13:21:38",
-        "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
-      },
-      "platform": "facebook",
-      "platformUrl": "https://www.facebook.com/MountainEquipmentCoop",
-      "url": "https://www.facebook.com/MountainEquipmentCoop",
-      "action": "develop",
-      "reason": "concrete_google_discovered_major_customer_facebook",
-      "alternateChannels": {
-        "instagram": "https://www.instagram.com/mec/",
-        "facebook": "https://www.facebook.com/MountainEquipmentCoop",
-        "websiteContact": "https://www.mec.ca/en/contact-us"
-      },
-      "facebookStatus": "verified_official_page_candidate",
-      "identitySource": "official Facebook page candidate + official website + Google background query",
-      "channelPriority": 2,
-      "priorityScore": 124
     },
     {
       "id": "google-customer-mec-website-contact",
@@ -209,7 +170,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/26 13:21:38",
+        "localTime": "2026/6/26 14:10:03",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -225,6 +186,7 @@ window.DAILY_AUTOMATION_LATEST = {
         "facebook": "https://www.facebook.com/MountainEquipmentCoop",
         "websiteContact": "https://www.mec.ca/en/contact-us"
       },
+      "invalidChannels": {},
       "identitySource": "official website contact path + Google buyer/contact query",
       "channelPriority": 3,
       "priorityScore": 116
@@ -252,7 +214,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/26 13:21:38",
+        "localTime": "2026/6/26 14:10:03",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -292,7 +254,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/26 13:21:38",
+        "localTime": "2026/6/26 14:10:03",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -305,6 +267,7 @@ window.DAILY_AUTOMATION_LATEST = {
         "facebook": "https://www.facebook.com/GOOutdoors",
         "websiteContact": "https://www.gooutdoors.co.uk/contact-us"
       },
+      "invalidChannels": {},
       "facebookStatus": "verified_official_page_candidate",
       "identitySource": "official Facebook page candidate + official website + Google background query",
       "channelPriority": 2,
@@ -333,7 +296,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/26 13:21:38",
+        "localTime": "2026/6/26 14:10:03",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -349,6 +312,7 @@ window.DAILY_AUTOMATION_LATEST = {
         "facebook": "https://www.facebook.com/GOOutdoors",
         "websiteContact": "https://www.gooutdoors.co.uk/contact-us"
       },
+      "invalidChannels": {},
       "identitySource": "official website contact path + Google buyer/contact query",
       "channelPriority": 3,
       "priorityScore": 115
@@ -376,7 +340,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/26 13:21:38",
+        "localTime": "2026/6/26 14:10:03",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -392,90 +356,10 @@ window.DAILY_AUTOMATION_LATEST = {
         "facebook": "https://www.facebook.com/AnacondaStores",
         "websiteContact": "https://www.anacondastores.com/contact-us"
       },
+      "invalidChannels": {},
       "identitySource": "official website contact path + Google buyer/contact query",
       "channelPriority": 3,
       "priorityScore": 114
-    },
-    {
-      "id": "google-customer-sail-outdoors-instagram",
-      "name": "Sail Outdoors",
-      "company": "Sail Outdoors",
-      "country": "Canada",
-      "countryEn": "Canada",
-      "fitScore": 91,
-      "fitTier": "A+",
-      "marketScore": 4.5,
-      "marketStatus": "open",
-      "agencyState": "open",
-      "keyword": "outdoor retail chain",
-      "role": "Outdoor equipment buyer or merchandising lead.",
-      "background": "Canadian outdoor retailer for camping, fishing, hunting, apparel, and equipment.",
-      "buyerPersona": "Outdoor equipment buyer or merchandising lead.",
-      "website": "https://www.sail.ca/",
-      "evidenceUrl": "https://www.google.com/search?q=%22Sail%20Outdoors%22%20%22outdoor%20retail%20chain%22%20%22Canada%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "query": "https://www.google.com/search?q=%22Sail%20Outdoors%22%20%22outdoor%20retail%20chain%22%20%22Canada%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "source": "google_customer_discovery",
-      "identityStatus": "verified",
-      "workingTime": {
-        "dueNow": true,
-        "timeZone": "local-market",
-        "localTime": "2026/6/26 13:21:38",
-        "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
-      },
-      "platform": "instagram",
-      "platformUrl": "https://www.instagram.com/sailoutdoors/",
-      "url": "https://www.instagram.com/sailoutdoors/",
-      "action": "develop",
-      "reason": "concrete_google_discovered_major_customer_instagram",
-      "alternateChannels": {
-        "instagram": "https://www.instagram.com/sailoutdoors/",
-        "facebook": "https://www.facebook.com/SAILoutdoors",
-        "websiteContact": "https://www.sail.ca/en/contact-us"
-      },
-      "identitySource": "official website/social profile + Google background query",
-      "channelPriority": 1,
-      "priorityScore": 121
-    },
-    {
-      "id": "google-customer-sail-outdoors-facebook",
-      "name": "Sail Outdoors",
-      "company": "Sail Outdoors",
-      "country": "Canada",
-      "countryEn": "Canada",
-      "fitScore": 91,
-      "fitTier": "A+",
-      "marketScore": 4.5,
-      "marketStatus": "open",
-      "agencyState": "open",
-      "keyword": "outdoor retail chain",
-      "role": "Outdoor equipment buyer or merchandising lead.",
-      "background": "Canadian outdoor retailer for camping, fishing, hunting, apparel, and equipment.",
-      "buyerPersona": "Outdoor equipment buyer or merchandising lead.",
-      "website": "https://www.sail.ca/",
-      "evidenceUrl": "https://www.google.com/search?q=%22Sail%20Outdoors%22%20%22outdoor%20retail%20chain%22%20%22Canada%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "query": "https://www.google.com/search?q=%22Sail%20Outdoors%22%20%22outdoor%20retail%20chain%22%20%22Canada%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "source": "google_customer_discovery",
-      "identityStatus": "verified",
-      "workingTime": {
-        "dueNow": true,
-        "timeZone": "local-market",
-        "localTime": "2026/6/26 13:21:38",
-        "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
-      },
-      "platform": "facebook",
-      "platformUrl": "https://www.facebook.com/SAILoutdoors",
-      "url": "https://www.facebook.com/SAILoutdoors",
-      "action": "develop",
-      "reason": "concrete_google_discovered_major_customer_facebook",
-      "alternateChannels": {
-        "instagram": "https://www.instagram.com/sailoutdoors/",
-        "facebook": "https://www.facebook.com/SAILoutdoors",
-        "websiteContact": "https://www.sail.ca/en/contact-us"
-      },
-      "facebookStatus": "verified_official_page_candidate",
-      "identitySource": "official Facebook page candidate + official website + Google background query",
-      "channelPriority": 2,
-      "priorityScore": 121
     },
     {
       "id": "google-customer-sail-outdoors-website-contact",
@@ -500,7 +384,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/26 13:21:38",
+        "localTime": "2026/6/26 14:10:03",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -512,175 +396,20 @@ window.DAILY_AUTOMATION_LATEST = {
       "action": "email_priority",
       "reason": "official_website_contact_channel",
       "alternateChannels": {
-        "instagram": "https://www.instagram.com/sailoutdoors/",
+        "instagram": "",
         "facebook": "https://www.facebook.com/SAILoutdoors",
         "websiteContact": "https://www.sail.ca/en/contact-us"
+      },
+      "invalidChannels": {
+        "instagram": {
+          "url": "https://www.instagram.com/sailoutdoors/",
+          "status": "broken_profile_url",
+          "evidence": "Instagram reports this page is unavailable; use Facebook or official website contact instead."
+        }
       },
       "identitySource": "official website contact path + Google buyer/contact query",
       "channelPriority": 3,
       "priorityScore": 113
-    },
-    {
-      "id": "google-customer-decathlon-germany-instagram",
-      "name": "Decathlon Germany",
-      "company": "Decathlon Germany",
-      "country": "Germany",
-      "countryEn": "Germany",
-      "fitScore": 90,
-      "fitTier": "A+",
-      "marketScore": 4.5,
-      "marketStatus": "open",
-      "agencyState": "open",
-      "keyword": "sporting goods retail chain",
-      "role": "Outdoor/camping category buyer or marketplace partnership lead.",
-      "background": "Large sporting goods retailer with camping, hiking, outdoor, and travel categories.",
-      "buyerPersona": "Outdoor/camping category buyer or marketplace partnership lead.",
-      "website": "https://www.decathlon.de/",
-      "evidenceUrl": "https://www.google.com/search?q=%22Decathlon%20Germany%22%20%22sporting%20goods%20retail%20chain%22%20%22Germany%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "query": "https://www.google.com/search?q=%22Decathlon%20Germany%22%20%22sporting%20goods%20retail%20chain%22%20%22Germany%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "source": "google_customer_discovery",
-      "identityStatus": "verified",
-      "workingTime": {
-        "dueNow": true,
-        "timeZone": "local-market",
-        "localTime": "2026/6/26 13:21:38",
-        "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
-      },
-      "platform": "instagram",
-      "platformUrl": "https://www.instagram.com/decathlondeutschland/",
-      "url": "https://www.instagram.com/decathlondeutschland/",
-      "action": "develop",
-      "reason": "concrete_google_discovered_major_customer_instagram",
-      "alternateChannels": {
-        "instagram": "https://www.instagram.com/decathlondeutschland/",
-        "facebook": "https://www.facebook.com/DecathlonDeutschland",
-        "websiteContact": "https://www.decathlon.de/help/app/contact"
-      },
-      "identitySource": "official website/social profile + Google background query",
-      "channelPriority": 1,
-      "priorityScore": 120
-    },
-    {
-      "id": "google-customer-decathlon-france-instagram",
-      "name": "Decathlon France",
-      "company": "Decathlon France",
-      "country": "France",
-      "countryEn": "France",
-      "fitScore": 90,
-      "fitTier": "A+",
-      "marketScore": 4.5,
-      "marketStatus": "open",
-      "agencyState": "open",
-      "keyword": "sporting goods retail chain",
-      "role": "Outdoor/camping category buyer or marketplace partnership lead.",
-      "background": "Large French sporting goods retailer with strong outdoor and camping category coverage.",
-      "buyerPersona": "Outdoor/camping category buyer or marketplace partnership lead.",
-      "website": "https://www.decathlon.fr/",
-      "evidenceUrl": "https://www.google.com/search?q=%22Decathlon%20France%22%20%22sporting%20goods%20retail%20chain%22%20%22France%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "query": "https://www.google.com/search?q=%22Decathlon%20France%22%20%22sporting%20goods%20retail%20chain%22%20%22France%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "source": "google_customer_discovery",
-      "identityStatus": "verified",
-      "workingTime": {
-        "dueNow": true,
-        "timeZone": "local-market",
-        "localTime": "2026/6/26 13:21:38",
-        "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
-      },
-      "platform": "instagram",
-      "platformUrl": "https://www.instagram.com/decathlonfrance/",
-      "url": "https://www.instagram.com/decathlonfrance/",
-      "action": "develop",
-      "reason": "concrete_google_discovered_major_customer_instagram",
-      "alternateChannels": {
-        "instagram": "https://www.instagram.com/decathlonfrance/",
-        "facebook": "https://www.facebook.com/DecathlonFrance",
-        "websiteContact": "https://www.decathlon.fr/help/app/contact"
-      },
-      "identitySource": "official website/social profile + Google background query",
-      "channelPriority": 1,
-      "priorityScore": 120
-    },
-    {
-      "id": "google-customer-decathlon-germany-facebook",
-      "name": "Decathlon Germany",
-      "company": "Decathlon Germany",
-      "country": "Germany",
-      "countryEn": "Germany",
-      "fitScore": 90,
-      "fitTier": "A+",
-      "marketScore": 4.5,
-      "marketStatus": "open",
-      "agencyState": "open",
-      "keyword": "sporting goods retail chain",
-      "role": "Outdoor/camping category buyer or marketplace partnership lead.",
-      "background": "Large sporting goods retailer with camping, hiking, outdoor, and travel categories.",
-      "buyerPersona": "Outdoor/camping category buyer or marketplace partnership lead.",
-      "website": "https://www.decathlon.de/",
-      "evidenceUrl": "https://www.google.com/search?q=%22Decathlon%20Germany%22%20%22sporting%20goods%20retail%20chain%22%20%22Germany%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "query": "https://www.google.com/search?q=%22Decathlon%20Germany%22%20%22sporting%20goods%20retail%20chain%22%20%22Germany%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "source": "google_customer_discovery",
-      "identityStatus": "verified",
-      "workingTime": {
-        "dueNow": true,
-        "timeZone": "local-market",
-        "localTime": "2026/6/26 13:21:38",
-        "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
-      },
-      "platform": "facebook",
-      "platformUrl": "https://www.facebook.com/DecathlonDeutschland",
-      "url": "https://www.facebook.com/DecathlonDeutschland",
-      "action": "develop",
-      "reason": "concrete_google_discovered_major_customer_facebook",
-      "alternateChannels": {
-        "instagram": "https://www.instagram.com/decathlondeutschland/",
-        "facebook": "https://www.facebook.com/DecathlonDeutschland",
-        "websiteContact": "https://www.decathlon.de/help/app/contact"
-      },
-      "facebookStatus": "verified_official_page_candidate",
-      "identitySource": "official Facebook page candidate + official website + Google background query",
-      "channelPriority": 2,
-      "priorityScore": 120
-    },
-    {
-      "id": "google-customer-decathlon-france-facebook",
-      "name": "Decathlon France",
-      "company": "Decathlon France",
-      "country": "France",
-      "countryEn": "France",
-      "fitScore": 90,
-      "fitTier": "A+",
-      "marketScore": 4.5,
-      "marketStatus": "open",
-      "agencyState": "open",
-      "keyword": "sporting goods retail chain",
-      "role": "Outdoor/camping category buyer or marketplace partnership lead.",
-      "background": "Large French sporting goods retailer with strong outdoor and camping category coverage.",
-      "buyerPersona": "Outdoor/camping category buyer or marketplace partnership lead.",
-      "website": "https://www.decathlon.fr/",
-      "evidenceUrl": "https://www.google.com/search?q=%22Decathlon%20France%22%20%22sporting%20goods%20retail%20chain%22%20%22France%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "query": "https://www.google.com/search?q=%22Decathlon%20France%22%20%22sporting%20goods%20retail%20chain%22%20%22France%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "source": "google_customer_discovery",
-      "identityStatus": "verified",
-      "workingTime": {
-        "dueNow": true,
-        "timeZone": "local-market",
-        "localTime": "2026/6/26 13:21:38",
-        "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
-      },
-      "platform": "facebook",
-      "platformUrl": "https://www.facebook.com/DecathlonFrance",
-      "url": "https://www.facebook.com/DecathlonFrance",
-      "action": "develop",
-      "reason": "concrete_google_discovered_major_customer_facebook",
-      "alternateChannels": {
-        "instagram": "https://www.instagram.com/decathlonfrance/",
-        "facebook": "https://www.facebook.com/DecathlonFrance",
-        "websiteContact": "https://www.decathlon.fr/help/app/contact"
-      },
-      "facebookStatus": "verified_official_page_candidate",
-      "identitySource": "official Facebook page candidate + official website + Google background query",
-      "channelPriority": 2,
-      "priorityScore": 120
     },
     {
       "id": "google-customer-cotswold-outdoor-website-contact",
@@ -705,7 +434,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/26 13:21:38",
+        "localTime": "2026/6/26 14:10:03",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -721,6 +450,7 @@ window.DAILY_AUTOMATION_LATEST = {
         "facebook": "https://www.facebook.com/CotswoldOutdoor",
         "websiteContact": "https://www.cotswoldoutdoor.com/contact-us"
       },
+      "invalidChannels": {},
       "identitySource": "official website contact path + Google buyer/contact query",
       "channelPriority": 3,
       "priorityScore": 112
@@ -748,7 +478,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/26 13:21:38",
+        "localTime": "2026/6/26 14:10:03",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -764,6 +494,7 @@ window.DAILY_AUTOMATION_LATEST = {
         "facebook": "https://www.facebook.com/DecathlonDeutschland",
         "websiteContact": "https://www.decathlon.de/help/app/contact"
       },
+      "invalidChannels": {},
       "identitySource": "official website contact path + Google buyer/contact query",
       "channelPriority": 3,
       "priorityScore": 112
@@ -791,7 +522,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/26 13:21:38",
+        "localTime": "2026/6/26 14:10:03",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -807,6 +538,7 @@ window.DAILY_AUTOMATION_LATEST = {
         "facebook": "https://www.facebook.com/DecathlonFrance",
         "websiteContact": "https://www.decathlon.fr/help/app/contact"
       },
+      "invalidChannels": {},
       "identitySource": "official website contact path + Google buyer/contact query",
       "channelPriority": 3,
       "priorityScore": 112
@@ -834,7 +566,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/26 13:21:38",
+        "localTime": "2026/6/26 14:10:03",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -874,7 +606,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/26 13:21:38",
+        "localTime": "2026/6/26 14:10:03",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -887,6 +619,7 @@ window.DAILY_AUTOMATION_LATEST = {
         "facebook": "https://www.facebook.com/BCFAustralia",
         "websiteContact": "https://www.bcf.com.au/contact-us"
       },
+      "invalidChannels": {},
       "facebookStatus": "verified_official_page_candidate",
       "identitySource": "official Facebook page candidate + official website + Google background query",
       "channelPriority": 2,
@@ -915,7 +648,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/26 13:21:38",
+        "localTime": "2026/6/26 14:10:03",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -931,6 +664,7 @@ window.DAILY_AUTOMATION_LATEST = {
         "facebook": "https://www.facebook.com/BCFAustralia",
         "websiteContact": "https://www.bcf.com.au/contact-us"
       },
+      "invalidChannels": {},
       "identitySource": "official website contact path + Google buyer/contact query",
       "channelPriority": 3,
       "priorityScore": 111
@@ -958,7 +692,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/26 13:21:38",
+        "localTime": "2026/6/26 14:10:03",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -971,6 +705,7 @@ window.DAILY_AUTOMATION_LATEST = {
         "facebook": "https://www.facebook.com/Kathmandu",
         "websiteContact": "https://www.kathmandu.co.nz/contact-us"
       },
+      "invalidChannels": {},
       "facebookStatus": "verified_official_page_candidate",
       "identitySource": "official Facebook page candidate + official website + Google background query",
       "channelPriority": 2,
@@ -999,7 +734,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/26 13:21:38",
+        "localTime": "2026/6/26 14:10:03",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -1015,6 +750,7 @@ window.DAILY_AUTOMATION_LATEST = {
         "facebook": "https://www.facebook.com/Kathmandu",
         "websiteContact": "https://www.kathmandu.co.nz/contact-us"
       },
+      "invalidChannels": {},
       "identitySource": "official website contact path + Google buyer/contact query",
       "channelPriority": 3,
       "priorityScore": 110
@@ -1042,7 +778,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/26 13:21:38",
+        "localTime": "2026/6/26 14:10:03",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -1082,7 +818,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/26 13:21:38",
+        "localTime": "2026/6/26 14:10:03",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -1095,6 +831,7 @@ window.DAILY_AUTOMATION_LATEST = {
         "facebook": "https://www.facebook.com/Bever",
         "websiteContact": "https://www.bever.nl/klantenservice/contact.html"
       },
+      "invalidChannels": {},
       "facebookStatus": "verified_official_page_candidate",
       "identitySource": "official Facebook page candidate + official website + Google background query",
       "channelPriority": 2,
@@ -1123,7 +860,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/26 13:21:38",
+        "localTime": "2026/6/26 14:10:03",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -1139,6 +876,7 @@ window.DAILY_AUTOMATION_LATEST = {
         "facebook": "https://www.facebook.com/Bever",
         "websiteContact": "https://www.bever.nl/klantenservice/contact.html"
       },
+      "invalidChannels": {},
       "identitySource": "official website contact path + Google buyer/contact query",
       "channelPriority": 3,
       "priorityScore": 108
@@ -1170,46 +908,12 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "Australia/Sydney",
-        "localTime": "Fri 15:21",
+        "localTime": "Fri 16:10",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
       },
       "priorityScore": 159
-    },
-    {
-      "id": "verified-Instagram-prago.outdoors",
-      "name": "prago.outdoors",
-      "company": "Prago Outdoors (outdoor wholesale/retail account)",
-      "platform": "instagram",
-      "country": "??",
-      "countryEn": "India",
-      "fitScore": 76,
-      "fitTier": "A",
-      "marketScore": 3.2,
-      "marketStatus": "可开拓",
-      "agencyState": "open",
-      "url": "https://www.instagram.com/prago.outdoors/",
-      "website": "",
-      "platformUrl": "https://www.instagram.com/prago.outdoors/",
-      "contactUrl": "",
-      "contactSearchUrl": "",
-      "emailFrom": "",
-      "alternateChannels": null,
-      "lastStatus": "sent_confirmed",
-      "lastEvidence": "confirmed DM follow-up sent via logged-in Chrome session",
-      "lastTouch": "2026-06-18T10:09:35.863Z",
-      "action": "develop",
-      "reason": "high_icp_verified_ready",
-      "workingTime": {
-        "dueNow": true,
-        "timeZone": "Asia/Kolkata",
-        "localTime": "Fri 10:51",
-        "window": "morning",
-        "nextBest": "now",
-        "weight": 1
-      },
-      "priorityScore": 126
     }
   ],
   "scheduledLater": [
@@ -1240,7 +944,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/London",
-        "localTime": "Fri 06:21",
+        "localTime": "Fri 07:10",
         "window": "outside_work_hours",
         "nextBest": "Europe/London morning",
         "weight": 0
@@ -1274,7 +978,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Fri 01:21",
+        "localTime": "Fri 02:10",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -1308,7 +1012,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/London",
-        "localTime": "Fri 06:21",
+        "localTime": "Fri 07:10",
         "window": "outside_work_hours",
         "nextBest": "Europe/London morning",
         "weight": 0
@@ -1342,7 +1046,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/London",
-        "localTime": "Fri 06:21",
+        "localTime": "Fri 07:10",
         "window": "outside_work_hours",
         "nextBest": "Europe/London morning",
         "weight": 0
@@ -1376,7 +1080,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Fri 01:21",
+        "localTime": "Fri 02:10",
         "window": "outside_work_hours",
         "nextBest": "America/Toronto morning",
         "weight": 0
@@ -1410,7 +1114,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Pacific/Auckland",
-        "localTime": "Fri 17:21",
+        "localTime": "Fri 18:10",
         "window": "outside_work_hours",
         "nextBest": "Pacific/Auckland morning",
         "weight": 0
@@ -1444,7 +1148,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Pacific/Auckland",
-        "localTime": "Fri 17:21",
+        "localTime": "Fri 18:10",
         "window": "outside_work_hours",
         "nextBest": "Pacific/Auckland morning",
         "weight": 0
@@ -1478,7 +1182,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Fri 01:21",
+        "localTime": "Fri 02:10",
         "window": "outside_work_hours",
         "nextBest": "America/Toronto morning",
         "weight": 0
@@ -1512,7 +1216,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Fri 01:21",
+        "localTime": "Fri 02:10",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -1546,7 +1250,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Pacific/Auckland",
-        "localTime": "Fri 17:21",
+        "localTime": "Fri 18:10",
         "window": "outside_work_hours",
         "nextBest": "Pacific/Auckland morning",
         "weight": 0
@@ -1580,7 +1284,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Pacific/Auckland",
-        "localTime": "Fri 17:21",
+        "localTime": "Fri 18:10",
         "window": "outside_work_hours",
         "nextBest": "Pacific/Auckland morning",
         "weight": 0
@@ -1614,7 +1318,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Pacific/Auckland",
-        "localTime": "Fri 17:21",
+        "localTime": "Fri 18:10",
         "window": "outside_work_hours",
         "nextBest": "Pacific/Auckland morning",
         "weight": 0
@@ -1648,12 +1352,46 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Asia/Jakarta",
-        "localTime": "Fri 12:21",
+        "localTime": "Fri 13:10",
         "window": "outside_work_hours",
         "nextBest": "Asia/Jakarta afternoon",
         "weight": 0
       },
       "priorityScore": 130
+    },
+    {
+      "id": "verified-Instagram-prago.outdoors",
+      "name": "prago.outdoors",
+      "company": "Prago Outdoors (outdoor wholesale/retail account)",
+      "platform": "instagram",
+      "country": "??",
+      "countryEn": "India",
+      "fitScore": 76,
+      "fitTier": "A",
+      "marketScore": 3.2,
+      "marketStatus": "可开拓",
+      "agencyState": "open",
+      "url": "https://www.instagram.com/prago.outdoors/",
+      "website": "",
+      "platformUrl": "https://www.instagram.com/prago.outdoors/",
+      "contactUrl": "",
+      "contactSearchUrl": "",
+      "emailFrom": "",
+      "alternateChannels": null,
+      "lastStatus": "sent_confirmed",
+      "lastEvidence": "confirmed DM follow-up sent via logged-in Chrome session",
+      "lastTouch": "2026-06-18T10:09:35.863Z",
+      "action": "develop",
+      "reason": "high_icp_verified_ready",
+      "workingTime": {
+        "dueNow": false,
+        "timeZone": "Asia/Kolkata",
+        "localTime": "Fri 11:40",
+        "window": "outside_work_hours",
+        "nextBest": "Asia/Kolkata afternoon",
+        "weight": 0
+      },
+      "priorityScore": 126
     }
   ],
   "bugChecks": [
@@ -1812,9 +1550,33 @@ window.DAILY_AUTOMATION_LATEST = {
       }
     ],
     "nextModelIteration": [
+      "Auto-reroute broken social profile URLs to Facebook, official website contact, or Google buyer/contact research before the next send attempt.",
+      "Expand every customer detail page into a sales research dossier: company facts, channel map, buyer persona, buying potential, risks, and next action.",
       "Boost leads with verified buyer/contact channel and real outdoor retail/distribution evidence.",
       "Downgrade generic community, government, HR, design-only, or no-contact profiles.",
       "Prefer decision-maker/channel terms: distributor, wholesale, retail buyer, importer, RV accessories, camping gear supplier."
-    ]
+    ],
+    "systemIteration": {
+      "targetBenchmark": "Build toward OKKI-level CRM coverage plus local AI automation: richer customer dossiers, safer execution, automatic bad-link routing, and measurable reply/contact-capture outcomes.",
+      "completedThisRun": [
+        "Queue is regenerated from verified high-ICP sources.",
+        "Bug checks run before execution artifacts are written.",
+        "Model optimization recommendations are persisted with each daily run."
+      ],
+      "recommendedNextBuild": [
+        "Add supplier/customer import templates and dedupe review UI.",
+        "Add reply classification and next-step playbook per pipeline stage.",
+        "Add contact-person enrichment fields for buyer, category manager, vendor portal, email, WhatsApp, and LinkedIn."
+      ],
+      "brokenChannels": [
+        {
+          "id": "verified-Instagram-triedandtrout",
+          "company": "Tried & Trout Supply Co",
+          "platform": "instagram",
+          "url": "https://www.instagram.com/triedandtroutsupply/",
+          "action": "reroute_to_verified_alternate_channel"
+        }
+      ]
+    }
   }
 };

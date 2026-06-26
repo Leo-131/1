@@ -179,5 +179,41 @@ window.AUTONOMOUS_OUTREACH_RESULTS = [
     "timestamp": "2026-06-26T05:25:31.460Z",
     "target_url": "https://www.instagram.com/sailoutdoors/",
     "evidence": "unavailable_profile_page: 很抱歉，无法访问此页面\n你点击的链接可能已损坏，或页面已被移除。返回 Instagram。\nMeta\n关于\n博客\n工作\n帮助\nAPI\n隐私设置\n条款\n地点\n热门\nInstagram Lite\nMeta AI\nThreads\n联系人上传和非用户\nMeta Verified\n中文(简体)\nAfrikaans\nالعربية\nČeština\nDansk\nDeuts"
+  },
+  {
+    "task_id": "google-customer-decathlon-france-instagram",
+    "approval_version": 1,
+    "status": "failed_open",
+    "agent": "codex-chrome-extension",
+    "timestamp": "2026-06-26T06:07:23.364Z",
+    "target_url": "https://www.instagram.com/decathlonfrance/",
+    "evidence": "unavailable_profile_page: 很抱歉，无法访问此页面\n你点击的链接可能已损坏，或页面已被移除。返回 Instagram。\nMeta\n关于\n博客\n工作\n帮助\nAPI\n隐私设置\n条款\n地点\n热门\nInstagram Lite\nMeta AI\nThreads\n联系人上传和非用户\nMeta Verified\n中文(简体)\nAfrikaans\nالعربية\nČeština\nDansk\nDeuts"
+  },
+  {
+    "task_id": "google-customer-decathlon-germany-facebook",
+    "approval_version": 1,
+    "status": "sent_confirmed",
+    "agent": "codex-chrome-extension",
+    "timestamp": "2026-06-26T06:08:17.009Z",
+    "target_url": "https://www.facebook.com/DecathlonDeutschland",
+    "evidence": "facebook_message_sent_confirmed_composer_cleared"
+  },
+  {
+    "task_id": "google-customer-decathlon-france-facebook",
+    "approval_version": 1,
+    "status": "sent_confirmed",
+    "agent": "codex-chrome-extension",
+    "timestamp": "2026-06-26T06:09:16.205Z",
+    "target_url": "https://www.facebook.com/DecathlonFrance",
+    "evidence": "facebook_message_sent_confirmed_composer_cleared"
+  },
+  {
+    "task_id": "google-customer-bcf-facebook",
+    "approval_version": 1,
+    "status": "sent_confirmed",
+    "agent": "codex-chrome-extension",
+    "timestamp": "2026-06-26T06:11:43.204Z",
+    "target_url": "https://www.facebook.com/BCFAustralia",
+    "evidence": "facebook_message_sent_confirmed_composer_cleared"
   }
 ];
