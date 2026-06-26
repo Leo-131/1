@@ -1,5 +1,5 @@
 window.DAILY_AUTOMATION_LATEST = {
-  "generatedAt": "2026-06-26T07:02:17.888Z",
+  "generatedAt": "2026-06-26T08:00:50.110Z",
   "date": "2026-06-26",
   "mode": "daily-icp-first-automation-loop",
   "executionLayer": "Codex Chrome Extension primary; AutoClaw compatible",
@@ -8,18 +8,18 @@ window.DAILY_AUTOMATION_LATEST = {
     "quota": {
       "total": {
         "target": 100,
-        "planned": 1,
-        "gap": 99
+        "planned": 4,
+        "gap": 96
       },
       "develop": {
         "target": 70,
-        "planned": 1,
-        "gap": 69
+        "planned": 3,
+        "gap": 67
       },
       "email_priority": {
         "target": 15,
-        "planned": 0,
-        "gap": 15
+        "planned": 1,
+        "gap": 14
       },
       "retry_or_alternate_channel": {
         "target": 10,
@@ -46,11 +46,11 @@ window.DAILY_AUTOMATION_LATEST = {
     "totalLeads": 16,
     "highIcp": 16,
     "readyToDevelop": 26,
-    "dueNow": 18,
+    "dueNow": 21,
     "googleDiscovered": 17,
     "facebookDiscovered": 3,
     "websiteContactDiscovered": 12,
-    "scheduledLater": 14,
+    "scheduledLater": 11,
     "cooldown": 0,
     "emailPriority": 5,
     "openAgencyMarket": 15,
@@ -108,7 +108,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/26 15:02:17",
+        "localTime": "2026/6/26 16:00:49",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -178,7 +178,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/26 15:02:17",
+        "localTime": "2026/6/26 16:00:49",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -248,7 +248,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/26 15:02:17",
+        "localTime": "2026/6/26 16:00:49",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -318,7 +318,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/26 15:02:17",
+        "localTime": "2026/6/26 16:00:49",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -384,7 +384,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/26 15:02:17",
+        "localTime": "2026/6/26 16:00:49",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -452,7 +452,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/26 15:02:17",
+        "localTime": "2026/6/26 16:00:49",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -523,7 +523,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/26 15:02:17",
+        "localTime": "2026/6/26 16:00:49",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -593,7 +593,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/26 15:02:17",
+        "localTime": "2026/6/26 16:00:49",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -669,7 +669,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/26 15:02:17",
+        "localTime": "2026/6/26 16:00:49",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -739,7 +739,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/26 15:02:17",
+        "localTime": "2026/6/26 16:00:49",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -809,7 +809,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/26 15:02:17",
+        "localTime": "2026/6/26 16:00:49",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -879,7 +879,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/26 15:02:17",
+        "localTime": "2026/6/26 16:00:49",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -949,7 +949,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/26 15:02:17",
+        "localTime": "2026/6/26 16:00:49",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -1017,7 +1017,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/26 15:02:17",
+        "localTime": "2026/6/26 16:00:49",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -1087,7 +1087,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/26 15:02:17",
+        "localTime": "2026/6/26 16:00:49",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -1153,7 +1153,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/26 15:02:17",
+        "localTime": "2026/6/26 16:00:49",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -1221,7 +1221,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/26 15:02:17",
+        "localTime": "2026/6/26 16:00:49",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -1241,6 +1241,135 @@ window.DAILY_AUTOMATION_LATEST = {
       "identitySource": "official website contact path + Google buyer/contact query",
       "channelPriority": 3,
       "priorityScore": 108
+    },
+    {
+      "id": "verified-Instagram-ellisbrigham",
+      "name": "ellisbrigham",
+      "company": "Ellis Brigham UK (33K followers, since 1933)",
+      "platform": "instagram",
+      "country": "英国",
+      "countryEn": "United Kingdom",
+      "fitScore": 100,
+      "fitTier": "A",
+      "marketScore": 4.5,
+      "marketStatus": "可开拓",
+      "agencyState": "open",
+      "url": "https://www.instagram.com/ellisbrigham/",
+      "website": "",
+      "platformUrl": "https://www.instagram.com/ellisbrigham/",
+      "contactUrl": "",
+      "contactSearchUrl": "",
+      "emailFrom": "",
+      "publicEmail": "",
+      "publicEmailStatus": "",
+      "contactPhone": "",
+      "vendorPortal": "",
+      "linkedinUrl": "",
+      "headquarters": "",
+      "founded": "",
+      "companyScale": "",
+      "dataSources": null,
+      "alternateChannels": null,
+      "lastStatus": "skipped",
+      "lastEvidence": "email_channel_found",
+      "lastTouch": "",
+      "action": "email_priority",
+      "reason": "email_channel_found",
+      "workingTime": {
+        "dueNow": true,
+        "timeZone": "Europe/London",
+        "localTime": "Fri 09:00",
+        "window": "morning",
+        "nextBest": "now",
+        "weight": 1
+      },
+      "priorityScore": 171
+    },
+    {
+      "id": "verified-Instagram-otimosoutdoorgear",
+      "name": "otimosoutdoorgear",
+      "company": "Otimos UK",
+      "platform": "instagram",
+      "country": "英国",
+      "countryEn": "United Kingdom",
+      "fitScore": 91,
+      "fitTier": "A",
+      "marketScore": 4.5,
+      "marketStatus": "可开拓",
+      "agencyState": "open",
+      "url": "https://www.instagram.com/otimosoutdoorgear/",
+      "website": "",
+      "platformUrl": "https://www.instagram.com/otimosoutdoorgear/",
+      "contactUrl": "",
+      "contactSearchUrl": "",
+      "emailFrom": "",
+      "publicEmail": "",
+      "publicEmailStatus": "",
+      "contactPhone": "",
+      "vendorPortal": "",
+      "linkedinUrl": "",
+      "headquarters": "",
+      "founded": "",
+      "companyScale": "",
+      "dataSources": null,
+      "alternateChannels": null,
+      "lastStatus": "sent_confirmed",
+      "lastEvidence": "confirmed DM follow-up sent via logged-in Chrome session",
+      "lastTouch": "2026-06-18T10:09:35.863Z",
+      "action": "develop",
+      "reason": "high_icp_verified_ready",
+      "workingTime": {
+        "dueNow": true,
+        "timeZone": "Europe/London",
+        "localTime": "Fri 09:00",
+        "window": "morning",
+        "nextBest": "now",
+        "weight": 1
+      },
+      "priorityScore": 154
+    },
+    {
+      "id": "verified-Instagram-worldofcamping",
+      "name": "worldofcamping",
+      "company": "World of Camping UK",
+      "platform": "instagram",
+      "country": "英国",
+      "countryEn": "United Kingdom",
+      "fitScore": 91,
+      "fitTier": "A",
+      "marketScore": 4.5,
+      "marketStatus": "可开拓",
+      "agencyState": "open",
+      "url": "https://www.instagram.com/worldofcamping/",
+      "website": "",
+      "platformUrl": "https://www.instagram.com/worldofcamping/",
+      "contactUrl": "",
+      "contactSearchUrl": "",
+      "emailFrom": "",
+      "publicEmail": "",
+      "publicEmailStatus": "",
+      "contactPhone": "",
+      "vendorPortal": "",
+      "linkedinUrl": "",
+      "headquarters": "",
+      "founded": "",
+      "companyScale": "",
+      "dataSources": null,
+      "alternateChannels": null,
+      "lastStatus": "sent_confirmed",
+      "lastEvidence": "confirmed DM follow-up sent via logged-in Chrome session",
+      "lastTouch": "2026-06-18T10:09:35.863Z",
+      "action": "develop",
+      "reason": "high_icp_verified_ready",
+      "workingTime": {
+        "dueNow": true,
+        "timeZone": "Europe/London",
+        "localTime": "Fri 09:00",
+        "window": "morning",
+        "nextBest": "now",
+        "weight": 1
+      },
+      "priorityScore": 154
     },
     {
       "id": "verified-Instagram-kfoutdoor",
@@ -1278,7 +1407,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "Asia/Jakarta",
-        "localTime": "Fri 14:02",
+        "localTime": "Fri 15:00",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
@@ -1287,49 +1416,6 @@ window.DAILY_AUTOMATION_LATEST = {
     }
   ],
   "scheduledLater": [
-    {
-      "id": "verified-Instagram-ellisbrigham",
-      "name": "ellisbrigham",
-      "company": "Ellis Brigham UK (33K followers, since 1933)",
-      "platform": "instagram",
-      "country": "英国",
-      "countryEn": "United Kingdom",
-      "fitScore": 100,
-      "fitTier": "A",
-      "marketScore": 4.5,
-      "marketStatus": "可开拓",
-      "agencyState": "open",
-      "url": "https://www.instagram.com/ellisbrigham/",
-      "website": "",
-      "platformUrl": "https://www.instagram.com/ellisbrigham/",
-      "contactUrl": "",
-      "contactSearchUrl": "",
-      "emailFrom": "",
-      "publicEmail": "",
-      "publicEmailStatus": "",
-      "contactPhone": "",
-      "vendorPortal": "",
-      "linkedinUrl": "",
-      "headquarters": "",
-      "founded": "",
-      "companyScale": "",
-      "dataSources": null,
-      "alternateChannels": null,
-      "lastStatus": "skipped",
-      "lastEvidence": "email_channel_found",
-      "lastTouch": "",
-      "action": "email_priority",
-      "reason": "email_channel_found",
-      "workingTime": {
-        "dueNow": false,
-        "timeZone": "Europe/London",
-        "localTime": "Fri 08:02",
-        "window": "outside_work_hours",
-        "nextBest": "Europe/London morning",
-        "weight": 0
-      },
-      "priorityScore": 171
-    },
     {
       "id": "verified-Instagram-campmor",
       "name": "campmor",
@@ -1366,7 +1452,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Fri 03:02",
+        "localTime": "Fri 04:00",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -1409,98 +1495,12 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Australia/Sydney",
-        "localTime": "Fri 17:02",
+        "localTime": "Fri 18:00",
         "window": "outside_work_hours",
         "nextBest": "Australia/Sydney morning",
         "weight": 0
       },
       "priorityScore": 159
-    },
-    {
-      "id": "verified-Instagram-otimosoutdoorgear",
-      "name": "otimosoutdoorgear",
-      "company": "Otimos UK",
-      "platform": "instagram",
-      "country": "英国",
-      "countryEn": "United Kingdom",
-      "fitScore": 91,
-      "fitTier": "A",
-      "marketScore": 4.5,
-      "marketStatus": "可开拓",
-      "agencyState": "open",
-      "url": "https://www.instagram.com/otimosoutdoorgear/",
-      "website": "",
-      "platformUrl": "https://www.instagram.com/otimosoutdoorgear/",
-      "contactUrl": "",
-      "contactSearchUrl": "",
-      "emailFrom": "",
-      "publicEmail": "",
-      "publicEmailStatus": "",
-      "contactPhone": "",
-      "vendorPortal": "",
-      "linkedinUrl": "",
-      "headquarters": "",
-      "founded": "",
-      "companyScale": "",
-      "dataSources": null,
-      "alternateChannels": null,
-      "lastStatus": "sent_confirmed",
-      "lastEvidence": "confirmed DM follow-up sent via logged-in Chrome session",
-      "lastTouch": "2026-06-18T10:09:35.863Z",
-      "action": "develop",
-      "reason": "high_icp_verified_ready",
-      "workingTime": {
-        "dueNow": false,
-        "timeZone": "Europe/London",
-        "localTime": "Fri 08:02",
-        "window": "outside_work_hours",
-        "nextBest": "Europe/London morning",
-        "weight": 0
-      },
-      "priorityScore": 154
-    },
-    {
-      "id": "verified-Instagram-worldofcamping",
-      "name": "worldofcamping",
-      "company": "World of Camping UK",
-      "platform": "instagram",
-      "country": "英国",
-      "countryEn": "United Kingdom",
-      "fitScore": 91,
-      "fitTier": "A",
-      "marketScore": 4.5,
-      "marketStatus": "可开拓",
-      "agencyState": "open",
-      "url": "https://www.instagram.com/worldofcamping/",
-      "website": "",
-      "platformUrl": "https://www.instagram.com/worldofcamping/",
-      "contactUrl": "",
-      "contactSearchUrl": "",
-      "emailFrom": "",
-      "publicEmail": "",
-      "publicEmailStatus": "",
-      "contactPhone": "",
-      "vendorPortal": "",
-      "linkedinUrl": "",
-      "headquarters": "",
-      "founded": "",
-      "companyScale": "",
-      "dataSources": null,
-      "alternateChannels": null,
-      "lastStatus": "sent_confirmed",
-      "lastEvidence": "confirmed DM follow-up sent via logged-in Chrome session",
-      "lastTouch": "2026-06-18T10:09:35.863Z",
-      "action": "develop",
-      "reason": "high_icp_verified_ready",
-      "workingTime": {
-        "dueNow": false,
-        "timeZone": "Europe/London",
-        "localTime": "Fri 08:02",
-        "window": "outside_work_hours",
-        "nextBest": "Europe/London morning",
-        "weight": 0
-      },
-      "priorityScore": 154
     },
     {
       "id": "verified-Instagram-mec",
@@ -1538,7 +1538,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Fri 03:02",
+        "localTime": "Fri 04:00",
         "window": "outside_work_hours",
         "nextBest": "America/Toronto morning",
         "weight": 0
@@ -1581,7 +1581,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Pacific/Auckland",
-        "localTime": "Fri 19:02",
+        "localTime": "Fri 20:00",
         "window": "outside_work_hours",
         "nextBest": "Pacific/Auckland morning",
         "weight": 0
@@ -1624,7 +1624,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Pacific/Auckland",
-        "localTime": "Fri 19:02",
+        "localTime": "Fri 20:00",
         "window": "outside_work_hours",
         "nextBest": "Pacific/Auckland morning",
         "weight": 0
@@ -1667,7 +1667,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Fri 03:02",
+        "localTime": "Fri 04:00",
         "window": "outside_work_hours",
         "nextBest": "America/Toronto morning",
         "weight": 0
@@ -1710,7 +1710,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Fri 03:02",
+        "localTime": "Fri 04:00",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -1753,7 +1753,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Pacific/Auckland",
-        "localTime": "Fri 19:02",
+        "localTime": "Fri 20:00",
         "window": "outside_work_hours",
         "nextBest": "Pacific/Auckland morning",
         "weight": 0
@@ -1796,7 +1796,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Pacific/Auckland",
-        "localTime": "Fri 19:02",
+        "localTime": "Fri 20:00",
         "window": "outside_work_hours",
         "nextBest": "Pacific/Auckland morning",
         "weight": 0
@@ -1839,7 +1839,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Pacific/Auckland",
-        "localTime": "Fri 19:02",
+        "localTime": "Fri 20:00",
         "window": "outside_work_hours",
         "nextBest": "Pacific/Auckland morning",
         "weight": 0
@@ -1882,7 +1882,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Asia/Kolkata",
-        "localTime": "Fri 12:32",
+        "localTime": "Fri 13:30",
         "window": "outside_work_hours",
         "nextBest": "Asia/Kolkata afternoon",
         "weight": 0
