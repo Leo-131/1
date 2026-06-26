@@ -215,5 +215,59 @@ window.AUTONOMOUS_OUTREACH_RESULTS = [
     "timestamp": "2026-06-26T06:11:43.204Z",
     "target_url": "https://www.facebook.com/BCFAustralia",
     "evidence": "facebook_message_sent_confirmed_composer_cleared"
+  },
+  {
+    "task_id": "google-customer-go-outdoors-instagram",
+    "approval_version": 1,
+    "status": "failed_open",
+    "agent": "codex-chrome-extension",
+    "timestamp": "2026-06-26T09:18:22.858Z",
+    "target_url": "https://www.instagram.com/gooutdoors/",
+    "evidence": "instagram_message_button_clicked_composer_not_found"
+  },
+  {
+    "task_id": "google-customer-go-outdoors-facebook",
+    "approval_version": 1,
+    "status": "failed_open",
+    "agent": "codex-chrome-extension",
+    "timestamp": "2026-06-26T09:19:13.859Z",
+    "target_url": "https://www.facebook.com/GOoutdoorsUK/",
+    "evidence": "driver_error: CDP timeout: Input.dispatchMouseEvent"
+  },
+  {
+    "task_id": "google-customer-kathmandu-facebook",
+    "approval_version": 1,
+    "status": "sent_confirmed",
+    "agent": "codex-chrome-extension",
+    "timestamp": "2026-06-26T09:20:15.501Z",
+    "target_url": "https://www.facebook.com/Kathmandu",
+    "evidence": "facebook_message_sent_confirmed_composer_cleared;follow_not_available;like_not_available"
+  },
+  {
+    "task_id": "google-customer-bever-instagram",
+    "approval_version": 1,
+    "status": "failed_open",
+    "agent": "codex-chrome-extension",
+    "timestamp": "2026-06-26T09:21:50.536Z",
+    "target_url": "https://www.instagram.com/bevernl/",
+    "evidence": "instagram_message_button_clicked_composer_not_found"
+  },
+  {
+    "task_id": "google-customer-bever-facebook",
+    "approval_version": 1,
+    "status": "sent_confirmed",
+    "agent": "codex-chrome-extension",
+    "timestamp": "2026-06-26T09:22:45.266Z",
+    "target_url": "https://www.facebook.com/BeverNL",
+    "evidence": "facebook_message_sent_confirmed_composer_cleared;follow_not_available;like_not_available"
+  },
+  {
+    "task_id": "google-customer-bever-facebook-force-visible-composer",
+    "approval_version": 1,
+    "status": "sent_confirmed",
+    "agent": "codex-chrome-extension-force-visible-composer",
+    "timestamp": "2026-06-26T09:45:19.435Z",
+    "target_url": "https://www.facebook.com/BeverNL",
+    "evidence": "facebook_message_sent_confirmed_composer_cleared;follow_not_available;like_not_available;user_requested_force_current_visible_composer"
   }
 ];
