@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-26T08:00:50.110Z",
+  "generatedAt": "2026-06-26T09:01:47.514Z",
   "date": "2026-06-26",
   "mode": "daily-icp-first-automation-loop",
   "executionLayer": "Codex Chrome Extension primary; AutoClaw compatible",
@@ -8,13 +8,13 @@
     "quota": {
       "total": {
         "target": 100,
-        "planned": 4,
-        "gap": 96
+        "planned": 5,
+        "gap": 95
       },
       "develop": {
         "target": 70,
-        "planned": 3,
-        "gap": 67
+        "planned": 4,
+        "gap": 66
       },
       "email_priority": {
         "target": 15,
@@ -46,11 +46,11 @@
     "totalLeads": 16,
     "highIcp": 16,
     "readyToDevelop": 26,
-    "dueNow": 21,
+    "dueNow": 22,
     "googleDiscovered": 17,
     "facebookDiscovered": 3,
     "websiteContactDiscovered": 12,
-    "scheduledLater": 11,
+    "scheduledLater": 10,
     "cooldown": 0,
     "emailPriority": 5,
     "openAgencyMarket": 15,
@@ -108,7 +108,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/26 16:00:49",
+        "localTime": "2026/6/26 17:01:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -178,7 +178,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/26 16:00:49",
+        "localTime": "2026/6/26 17:01:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -248,7 +248,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/26 16:00:49",
+        "localTime": "2026/6/26 17:01:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -318,7 +318,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/26 16:00:49",
+        "localTime": "2026/6/26 17:01:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -384,7 +384,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/26 16:00:49",
+        "localTime": "2026/6/26 17:01:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -452,7 +452,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/26 16:00:49",
+        "localTime": "2026/6/26 17:01:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -523,7 +523,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/26 16:00:49",
+        "localTime": "2026/6/26 17:01:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -593,7 +593,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/26 16:00:49",
+        "localTime": "2026/6/26 17:01:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -669,7 +669,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/26 16:00:49",
+        "localTime": "2026/6/26 17:01:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -739,7 +739,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/26 16:00:49",
+        "localTime": "2026/6/26 17:01:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -809,7 +809,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/26 16:00:49",
+        "localTime": "2026/6/26 17:01:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -879,7 +879,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/26 16:00:49",
+        "localTime": "2026/6/26 17:01:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -949,7 +949,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/26 16:00:49",
+        "localTime": "2026/6/26 17:01:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -1017,7 +1017,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/26 16:00:49",
+        "localTime": "2026/6/26 17:01:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -1087,17 +1087,17 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/26 16:00:49",
+        "localTime": "2026/6/26 17:01:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
-      "platformUrl": "https://www.instagram.com/bever/",
-      "url": "https://www.instagram.com/bever/",
+      "platformUrl": "https://www.instagram.com/bevernl/",
+      "url": "https://www.instagram.com/bevernl/",
       "action": "develop",
       "reason": "concrete_google_discovered_major_customer_instagram",
       "alternateChannels": {
-        "instagram": "https://www.instagram.com/bever/",
-        "facebook": "https://www.facebook.com/Bever",
+        "instagram": "https://www.instagram.com/bevernl/",
+        "facebook": "https://www.facebook.com/BeverNL",
         "websiteContact": "https://www.bever.nl/klantenservice/contact.html"
       },
       "identitySource": "official website/social profile + Google background query",
@@ -1153,17 +1153,17 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/26 16:00:49",
+        "localTime": "2026/6/26 17:01:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
-      "platformUrl": "https://www.facebook.com/Bever",
-      "url": "https://www.facebook.com/Bever",
+      "platformUrl": "https://www.facebook.com/BeverNL",
+      "url": "https://www.facebook.com/BeverNL",
       "action": "develop",
       "reason": "concrete_google_discovered_major_customer_facebook",
       "alternateChannels": {
-        "instagram": "https://www.instagram.com/bever/",
-        "facebook": "https://www.facebook.com/Bever",
+        "instagram": "https://www.instagram.com/bevernl/",
+        "facebook": "https://www.facebook.com/BeverNL",
         "websiteContact": "https://www.bever.nl/klantenservice/contact.html"
       },
       "invalidChannels": {},
@@ -1221,7 +1221,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/26 16:00:49",
+        "localTime": "2026/6/26 17:01:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -1233,8 +1233,8 @@
       "action": "email_priority",
       "reason": "official_website_contact_channel",
       "alternateChannels": {
-        "instagram": "https://www.instagram.com/bever/",
-        "facebook": "https://www.facebook.com/Bever",
+        "instagram": "https://www.instagram.com/bevernl/",
+        "facebook": "https://www.facebook.com/BeverNL",
         "websiteContact": "https://www.bever.nl/klantenservice/contact.html"
       },
       "invalidChannels": {},
@@ -1278,7 +1278,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/London",
-        "localTime": "Fri 09:00",
+        "localTime": "Fri 10:01",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -1321,7 +1321,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/London",
-        "localTime": "Fri 09:00",
+        "localTime": "Fri 10:01",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -1364,7 +1364,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/London",
-        "localTime": "Fri 09:00",
+        "localTime": "Fri 10:01",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -1407,12 +1407,55 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Asia/Jakarta",
-        "localTime": "Fri 15:00",
+        "localTime": "Fri 16:01",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
       },
       "priorityScore": 130
+    },
+    {
+      "id": "verified-Instagram-prago.outdoors",
+      "name": "prago.outdoors",
+      "company": "Prago Outdoors (outdoor wholesale/retail account)",
+      "platform": "instagram",
+      "country": "??",
+      "countryEn": "India",
+      "fitScore": 76,
+      "fitTier": "A",
+      "marketScore": 3.2,
+      "marketStatus": "可开拓",
+      "agencyState": "open",
+      "url": "https://www.instagram.com/prago.outdoors/",
+      "website": "",
+      "platformUrl": "https://www.instagram.com/prago.outdoors/",
+      "contactUrl": "",
+      "contactSearchUrl": "",
+      "emailFrom": "",
+      "publicEmail": "",
+      "publicEmailStatus": "",
+      "contactPhone": "",
+      "vendorPortal": "",
+      "linkedinUrl": "",
+      "headquarters": "",
+      "founded": "",
+      "companyScale": "",
+      "dataSources": null,
+      "alternateChannels": null,
+      "lastStatus": "sent_confirmed",
+      "lastEvidence": "confirmed DM follow-up sent via logged-in Chrome session",
+      "lastTouch": "2026-06-18T10:09:35.863Z",
+      "action": "develop",
+      "reason": "high_icp_verified_ready",
+      "workingTime": {
+        "dueNow": true,
+        "timeZone": "Asia/Kolkata",
+        "localTime": "Fri 14:31",
+        "window": "afternoon",
+        "nextBest": "now",
+        "weight": 0.9
+      },
+      "priorityScore": 126
     }
   ],
   "scheduledLater": [
@@ -1452,7 +1495,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Fri 04:00",
+        "localTime": "Fri 05:01",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -1495,7 +1538,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Australia/Sydney",
-        "localTime": "Fri 18:00",
+        "localTime": "Fri 19:01",
         "window": "outside_work_hours",
         "nextBest": "Australia/Sydney morning",
         "weight": 0
@@ -1538,7 +1581,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Fri 04:00",
+        "localTime": "Fri 05:01",
         "window": "outside_work_hours",
         "nextBest": "America/Toronto morning",
         "weight": 0
@@ -1581,7 +1624,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Pacific/Auckland",
-        "localTime": "Fri 20:00",
+        "localTime": "Fri 21:01",
         "window": "outside_work_hours",
         "nextBest": "Pacific/Auckland morning",
         "weight": 0
@@ -1624,7 +1667,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Pacific/Auckland",
-        "localTime": "Fri 20:00",
+        "localTime": "Fri 21:01",
         "window": "outside_work_hours",
         "nextBest": "Pacific/Auckland morning",
         "weight": 0
@@ -1667,7 +1710,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Fri 04:00",
+        "localTime": "Fri 05:01",
         "window": "outside_work_hours",
         "nextBest": "America/Toronto morning",
         "weight": 0
@@ -1710,7 +1753,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Fri 04:00",
+        "localTime": "Fri 05:01",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -1753,7 +1796,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Pacific/Auckland",
-        "localTime": "Fri 20:00",
+        "localTime": "Fri 21:01",
         "window": "outside_work_hours",
         "nextBest": "Pacific/Auckland morning",
         "weight": 0
@@ -1796,7 +1839,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Pacific/Auckland",
-        "localTime": "Fri 20:00",
+        "localTime": "Fri 21:01",
         "window": "outside_work_hours",
         "nextBest": "Pacific/Auckland morning",
         "weight": 0
@@ -1839,55 +1882,12 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Pacific/Auckland",
-        "localTime": "Fri 20:00",
+        "localTime": "Fri 21:01",
         "window": "outside_work_hours",
         "nextBest": "Pacific/Auckland morning",
         "weight": 0
       },
       "priorityScore": 134
-    },
-    {
-      "id": "verified-Instagram-prago.outdoors",
-      "name": "prago.outdoors",
-      "company": "Prago Outdoors (outdoor wholesale/retail account)",
-      "platform": "instagram",
-      "country": "??",
-      "countryEn": "India",
-      "fitScore": 76,
-      "fitTier": "A",
-      "marketScore": 3.2,
-      "marketStatus": "可开拓",
-      "agencyState": "open",
-      "url": "https://www.instagram.com/prago.outdoors/",
-      "website": "",
-      "platformUrl": "https://www.instagram.com/prago.outdoors/",
-      "contactUrl": "",
-      "contactSearchUrl": "",
-      "emailFrom": "",
-      "publicEmail": "",
-      "publicEmailStatus": "",
-      "contactPhone": "",
-      "vendorPortal": "",
-      "linkedinUrl": "",
-      "headquarters": "",
-      "founded": "",
-      "companyScale": "",
-      "dataSources": null,
-      "alternateChannels": null,
-      "lastStatus": "sent_confirmed",
-      "lastEvidence": "confirmed DM follow-up sent via logged-in Chrome session",
-      "lastTouch": "2026-06-18T10:09:35.863Z",
-      "action": "develop",
-      "reason": "high_icp_verified_ready",
-      "workingTime": {
-        "dueNow": false,
-        "timeZone": "Asia/Kolkata",
-        "localTime": "Fri 13:30",
-        "window": "outside_work_hours",
-        "nextBest": "Asia/Kolkata afternoon",
-        "weight": 0
-      },
-      "priorityScore": 126
     }
   ],
   "bugChecks": [
