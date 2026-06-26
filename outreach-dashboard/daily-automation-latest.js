@@ -1,5 +1,5 @@
 window.DAILY_AUTOMATION_LATEST = {
-  "generatedAt": "2026-06-26T17:02:39.391Z",
+  "generatedAt": "2026-06-26T18:01:49.079Z",
   "date": "2026-06-26",
   "mode": "daily-icp-first-automation-loop",
   "executionLayer": "Codex Chrome Extension primary; AutoClaw compatible",
@@ -8,8 +8,8 @@ window.DAILY_AUTOMATION_LATEST = {
     "quota": {
       "total": {
         "target": 100,
-        "planned": 0,
-        "gap": 100
+        "planned": 2,
+        "gap": 98
       },
       "develop": {
         "target": 70,
@@ -18,13 +18,13 @@ window.DAILY_AUTOMATION_LATEST = {
       },
       "email_priority": {
         "target": 15,
-        "planned": 0,
-        "gap": 15
+        "planned": 1,
+        "gap": 14
       },
       "retry_or_alternate_channel": {
         "target": 10,
-        "planned": 0,
-        "gap": 10
+        "planned": 1,
+        "gap": 9
       },
       "verify_target": {
         "target": 5,
@@ -46,11 +46,11 @@ window.DAILY_AUTOMATION_LATEST = {
     "totalLeads": 16,
     "highIcp": 16,
     "readyToDevelop": 12,
-    "dueNow": 12,
+    "dueNow": 14,
     "googleDiscovered": 12,
     "facebookDiscovered": 0,
     "websiteContactDiscovered": 12,
-    "scheduledLater": 6,
+    "scheduledLater": 4,
     "cooldown": 9,
     "emailPriority": 5,
     "openAgencyMarket": 15,
@@ -108,7 +108,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/27 01:02:39",
+        "localTime": "2026/6/27 02:01:48",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -178,7 +178,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/27 01:02:39",
+        "localTime": "2026/6/27 02:01:48",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -248,7 +248,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/27 01:02:39",
+        "localTime": "2026/6/27 02:01:48",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -318,7 +318,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/27 01:02:39",
+        "localTime": "2026/6/27 02:01:48",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -389,7 +389,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/27 01:02:39",
+        "localTime": "2026/6/27 02:01:48",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -459,7 +459,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/27 01:02:39",
+        "localTime": "2026/6/27 02:01:48",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -535,7 +535,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/27 01:02:39",
+        "localTime": "2026/6/27 02:01:48",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -605,7 +605,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/27 01:02:39",
+        "localTime": "2026/6/27 02:01:48",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -675,7 +675,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/27 01:02:39",
+        "localTime": "2026/6/27 02:01:48",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -745,7 +745,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/27 01:02:39",
+        "localTime": "2026/6/27 02:01:48",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -815,7 +815,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/27 01:02:39",
+        "localTime": "2026/6/27 02:01:48",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -885,7 +885,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/27 01:02:39",
+        "localTime": "2026/6/27 02:01:48",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -905,6 +905,92 @@ window.DAILY_AUTOMATION_LATEST = {
       "identitySource": "official website contact path + Google buyer/contact query",
       "channelPriority": 3,
       "priorityScore": 108
+    },
+    {
+      "id": "verified-Instagram-mec",
+      "name": "mec",
+      "company": "MEC Canada",
+      "platform": "instagram",
+      "country": "加拿大",
+      "countryEn": "Canada",
+      "fitScore": 83,
+      "fitTier": "A",
+      "marketScore": 3.7,
+      "marketStatus": "可开拓",
+      "agencyState": "open",
+      "url": "https://www.instagram.com/mec/",
+      "website": "",
+      "platformUrl": "https://www.instagram.com/mec/",
+      "contactUrl": "",
+      "contactSearchUrl": "",
+      "emailFrom": "",
+      "publicEmail": "",
+      "publicEmailStatus": "",
+      "contactPhone": "",
+      "vendorPortal": "",
+      "linkedinUrl": "",
+      "headquarters": "",
+      "founded": "",
+      "companyScale": "",
+      "dataSources": null,
+      "alternateChannels": null,
+      "lastStatus": "skipped",
+      "lastEvidence": "email_channel_found",
+      "lastTouch": "2026-06-18T10:09:35.863Z",
+      "action": "email_priority",
+      "reason": "email_channel_found",
+      "workingTime": {
+        "dueNow": true,
+        "timeZone": "America/Toronto",
+        "localTime": "Fri 14:01",
+        "window": "afternoon",
+        "nextBest": "now",
+        "weight": 0.9
+      },
+      "priorityScore": 146
+    },
+    {
+      "id": "verified-Instagram-triedandtrout",
+      "name": "triedandtrout",
+      "company": "Tried & Trout Supply Co",
+      "platform": "instagram",
+      "country": "美国",
+      "countryEn": "United States",
+      "fitScore": 73,
+      "fitTier": "A",
+      "marketScore": 4.4,
+      "marketStatus": "可开拓",
+      "agencyState": "open",
+      "url": "https://www.instagram.com/triedandtroutsupply/",
+      "website": "",
+      "platformUrl": "https://www.instagram.com/triedandtroutsupply/",
+      "contactUrl": "",
+      "contactSearchUrl": "",
+      "emailFrom": "",
+      "publicEmail": "",
+      "publicEmailStatus": "",
+      "contactPhone": "",
+      "vendorPortal": "",
+      "linkedinUrl": "",
+      "headquarters": "",
+      "founded": "",
+      "companyScale": "",
+      "dataSources": null,
+      "alternateChannels": null,
+      "lastStatus": "failed_open",
+      "lastEvidence": "profile_valid_no_message_button",
+      "lastTouch": "2026-06-18T10:09:35.863Z",
+      "action": "retry_or_alternate_channel",
+      "reason": "profile_valid_no_message_button",
+      "workingTime": {
+        "dueNow": true,
+        "timeZone": "America/New_York",
+        "localTime": "Fri 14:01",
+        "window": "afternoon",
+        "nextBest": "now",
+        "weight": 0.9
+      },
+      "priorityScore": 135
     }
   ],
   "scheduledLater": [
@@ -944,7 +1030,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/London",
-        "localTime": "Fri 18:02",
+        "localTime": "Fri 19:01",
         "window": "outside_work_hours",
         "nextBest": "Europe/London morning",
         "weight": 0
@@ -987,54 +1073,11 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Australia/Sydney",
-        "localTime": "Sat 03:02",
+        "localTime": "Sat 04:01",
         "window": "off_workday",
         "nextBest": "Australia/Sydney morning"
       },
       "priorityScore": 159
-    },
-    {
-      "id": "verified-Instagram-mec",
-      "name": "mec",
-      "company": "MEC Canada",
-      "platform": "instagram",
-      "country": "加拿大",
-      "countryEn": "Canada",
-      "fitScore": 83,
-      "fitTier": "A",
-      "marketScore": 3.7,
-      "marketStatus": "可开拓",
-      "agencyState": "open",
-      "url": "https://www.instagram.com/mec/",
-      "website": "",
-      "platformUrl": "https://www.instagram.com/mec/",
-      "contactUrl": "",
-      "contactSearchUrl": "",
-      "emailFrom": "",
-      "publicEmail": "",
-      "publicEmailStatus": "",
-      "contactPhone": "",
-      "vendorPortal": "",
-      "linkedinUrl": "",
-      "headquarters": "",
-      "founded": "",
-      "companyScale": "",
-      "dataSources": null,
-      "alternateChannels": null,
-      "lastStatus": "skipped",
-      "lastEvidence": "email_channel_found",
-      "lastTouch": "2026-06-18T10:09:35.863Z",
-      "action": "email_priority",
-      "reason": "email_channel_found",
-      "workingTime": {
-        "dueNow": false,
-        "timeZone": "America/Toronto",
-        "localTime": "Fri 13:02",
-        "window": "outside_work_hours",
-        "nextBest": "America/Toronto afternoon",
-        "weight": 0
-      },
-      "priorityScore": 146
     },
     {
       "id": "verified-Instagram-macpac",
@@ -1072,7 +1115,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Pacific/Auckland",
-        "localTime": "Sat 05:02",
+        "localTime": "Sat 06:01",
         "window": "off_workday",
         "nextBest": "Pacific/Auckland morning"
       },
@@ -1114,54 +1157,11 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Pacific/Auckland",
-        "localTime": "Sat 05:02",
+        "localTime": "Sat 06:01",
         "window": "off_workday",
         "nextBest": "Pacific/Auckland morning"
       },
       "priorityScore": 142
-    },
-    {
-      "id": "verified-Instagram-triedandtrout",
-      "name": "triedandtrout",
-      "company": "Tried & Trout Supply Co",
-      "platform": "instagram",
-      "country": "美国",
-      "countryEn": "United States",
-      "fitScore": 73,
-      "fitTier": "A",
-      "marketScore": 4.4,
-      "marketStatus": "可开拓",
-      "agencyState": "open",
-      "url": "https://www.instagram.com/triedandtroutsupply/",
-      "website": "",
-      "platformUrl": "https://www.instagram.com/triedandtroutsupply/",
-      "contactUrl": "",
-      "contactSearchUrl": "",
-      "emailFrom": "",
-      "publicEmail": "",
-      "publicEmailStatus": "",
-      "contactPhone": "",
-      "vendorPortal": "",
-      "linkedinUrl": "",
-      "headquarters": "",
-      "founded": "",
-      "companyScale": "",
-      "dataSources": null,
-      "alternateChannels": null,
-      "lastStatus": "failed_open",
-      "lastEvidence": "profile_valid_no_message_button",
-      "lastTouch": "2026-06-18T10:09:35.863Z",
-      "action": "retry_or_alternate_channel",
-      "reason": "profile_valid_no_message_button",
-      "workingTime": {
-        "dueNow": false,
-        "timeZone": "America/New_York",
-        "localTime": "Fri 13:02",
-        "window": "outside_work_hours",
-        "nextBest": "America/New_York afternoon",
-        "weight": 0
-      },
-      "priorityScore": 135
     }
   ],
   "bugChecks": [
