@@ -143,5 +143,23 @@ window.AUTONOMOUS_OUTREACH_RESULTS = [
     "target_url": "https://www.instagram.com/direct/t/119316006125925",
     "evidence": "duplicate_risk: duplicate DM observed in Instagram chat; future sends locked",
     "duplicateRisk": true
+  },
+  {
+    "task_id": "google-customer-bass-pro-shops",
+    "approval_version": 1,
+    "status": "sent_confirmed",
+    "agent": "codex-chrome-extension",
+    "timestamp": "2026-06-26T02:00:02.750Z",
+    "target_url": "https://www.instagram.com/bassproshops/",
+    "evidence": "instagram_message_sent_confirmed_composer_cleared"
+  },
+  {
+    "task_id": "google-customer-cabela-s",
+    "approval_version": 1,
+    "status": "sent_confirmed",
+    "agent": "codex-chrome-extension",
+    "timestamp": "2026-06-26T03:03:31.392Z",
+    "target_url": "https://www.instagram.com/cabelas/",
+    "evidence": "instagram_message_sent_confirmed_composer_cleared"
   }
 ];

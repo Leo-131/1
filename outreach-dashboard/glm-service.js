@@ -11,22 +11,108 @@ function parseJsonContent(text) {
   }
 }
 
+function cleanName(value) {
+  return String(value || '').replace(/\s*\([^)]*\)\s*/g, ' ').replace(/\s+/g, ' ').trim();
+}
+
+const SALES_COPY_REFERENCE = [
+  'Leo represents Flextail and Vollyc.',
+  'Flextail is the first and core brand: ultralight electric products for outdoor, travel and home use; currently Top 1 on Amazon with strong global sell-through and proven product-market fit.',
+  'Vollyc is the second brand for practical, high-rotation 3C electronics.',
+  'For outdoor and travel-oriented leads, anchor the message on Flextail fit first, then mention Vollyc only when relevant.',
+  'Use a professional B2B structure: nice to e-meet you, explain brand relevance, offer a brief brand/catalog introduction, mention 36+ new SKUs planned for 2026 across usage scenarios and price tiers, and ask for a short intro video meeting or the right buyer/category contact.',
+  'Do not claim an existing relationship unless the visible context or lead data proves prior contact.',
+].join(' ');
+
+function leadPersona(lead) {
+  const text = [
+    lead?.company,
+    lead?.name,
+    lead?.role,
+    lead?.buyerPersona,
+    lead?.keyword,
+    lead?.productCategory,
+    lead?.background,
+    lead?.category,
+  ].map(value => String(value || '').toLowerCase()).join(' ');
+  if (/distributor|distribution|importer|dealer|wholesale|agent|代理|进口|分销/.test(text)) {
+    return {
+      type: 'distributor/importer',
+      angle: 'regional sell-through, channel fit, margin-ready product line, and whether they cover outdoor/travel electronics buyers',
+      ask: 'the owner of distribution evaluation or the best time for a short intro video meeting',
+    };
+  }
+  if (/category|buyer|merchant|assortment|retail|chain|store|merchandising|采购|品类/.test(text)) {
+    return {
+      type: 'retail/category buyer',
+      angle: 'assortment fit, new SKU pipeline, price-tier coverage, and proven consumer demand',
+      ask: 'the category buyer or vendor-review owner for a short intro video meeting',
+    };
+  }
+  if (/brand|odm|oem|private label|product manager|sourcing|manufacturer|产品|开发/.test(text)) {
+    return {
+      type: 'brand/ODM or sourcing lead',
+      angle: 'co-development, ODM capability, usage-scenario expansion, and practical product roadmap fit',
+      ask: 'the product or sourcing lead for a short intro video meeting',
+    };
+  }
+  if (/3c|electronics|consumer electronics|gadget|tech|digital/.test(text)) {
+    return {
+      type: '3C/electronics channel',
+      angle: 'Vollyc 3C rotation plus Flextail travel electrics, with practical high-frequency consumer use cases',
+      ask: 'the electronics category owner for a short intro video meeting',
+    };
+  }
+  return {
+    type: 'outdoor/travel channel prospect',
+    angle: 'lightweight outdoor and travel-electric relevance, brand credibility, and 2026 SKU pipeline',
+    ask: 'the right buyer/category contact for a short intro video meeting',
+  };
+}
+
+function professionalSalesDraft(lead, draft) {
+  const original = String(draft || '').trim();
+  const company = cleanName(lead?.company || lead?.name || 'your team');
+  const category = cleanName(lead?.keyword || lead?.productCategory || 'camping and outdoor accessories');
+  const persona = leadPersona(lead);
+  const tooGeneric = !/flextail|supplier|wholesale|vendor|category|buyer|merchant|line sheet|distribution|assortment|sku|video meeting|product-market/i.test(original)
+    || /appreciate the breadth|love to learn|happy to share details|at your convenience/i.test(original)
+    || original.length > 620
+    || original.length < 120;
+  if (original && !tooGeneric) return original;
+  return [
+    `Hi ${company} team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand.`,
+    `For a ${persona.type}, the strongest fit is ${persona.angle}; your ${category} focus looks relevant to that direction.`,
+    `We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to ${persona.ask}?`,
+  ].join(' ');
+}
+
 function leadMessages(lead) {
   return [
     {
       role: 'system',
-      content: 'You qualify B2B outdoor, camping and RV retail leads. Return concise JSON only. Never invent identity, contact or trend evidence.',
+      content: [
+        'You qualify B2B outdoor, camping and RV retail leads for FLEXTAIL.',
+        'Return concise JSON only. Never invent identity, contact or trend evidence.',
+        'Draft like a senior global channel sales operator: specific, commercial, respectful, and low-pressure.',
+        SALES_COPY_REFERENCE,
+        'Every draft must be customized to the exact customer persona and concrete lead evidence. Optimize the message for the highest chance of a reply and a booked phone/video meeting, not for generic brand awareness.',
+        'Choose the conversion angle by persona: retail/category buyer = assortment fit, price tiers and vendor review; distributor/importer = regional sell-through, margins and channel coverage; brand/ODM/sourcing = co-development and product roadmap; 3C/electronics = Vollyc rotation plus Flextail travel electrics; outdoor/travel channel = lightweight use-case fit.',
+        'The outreach draft must be 55-90 English words, mention FLEXTAIL once, connect to the lead category, include either 36+ new SKUs in 2026 or brief brand/catalog intro, ask for a short intro video meeting or the right buyer/category/vendor-review contact, and avoid generic praise, emojis, hype, discounts, false partnerships, or "send catalog" spam.',
+      ].join(' '),
     },
     {
       role: 'user',
       content: JSON.stringify({
-        task: 'Assess the exact lead and prepare one compliant English outreach message.',
+        task: 'Assess the exact lead and prepare one compliant professional English B2B outreach message for manual review before sending.',
         lead,
+        inferredPersona: leadPersona(lead),
+        conversionObjective: 'maximize reply rate and conversion to a short phone/video meeting by using the lead-specific persona, category, channel, region, and current conversation context',
         schema: {
           fitScore: 'integer 0-100',
           verdict: 'develop|recheck|skip',
           reason: 'short factual reason',
-          draft: 'short personalized English message, no false claims',
+          draft: '55-90 words, customer-persona-specific professional channel-sales message based on the reference email, mentions FLEXTAIL once, asks for video meeting or buyer/category/vendor-review contact, no false claims',
           nextStep: 'like_follow_dm|open_profile|skip',
         },
       }),
@@ -62,15 +148,19 @@ async function requestGlm(options) {
       throw new Error(`GLM request failed: ${response.status}${detail ? ` ${detail}` : ''}`);
     }
     const text = data?.choices?.[0]?.message?.content || '';
+    const result = parseJsonContent(text);
+    if (result && result.draft) {
+      result.draft = professionalSalesDraft(config.lead || {}, result.draft);
+    }
     return {
       ok: true,
       model: data.model || config.model || 'glm-4-flash',
       text,
-      result: parseJsonContent(text),
+      result,
     };
   } finally {
     clearTimeout(timer);
   }
 }
 
-module.exports = { leadMessages, parseJsonContent, requestGlm };
+module.exports = { leadMessages, parseJsonContent, professionalSalesDraft, requestGlm };

@@ -5,7 +5,7 @@ const ROOT = __dirname;
 const RUN_DIR = path.join(ROOT, 'daily-runs');
 const CONFIG_PATH = path.join(ROOT, 'daily-automation-config.json');
 const DEFAULT_CONFIG = {
-  limits: { total: 20, develop: 10, emailPriority: 5, retryOrAlternate: 3, verifyTarget: 2 },
+  limits: { total: 100, develop: 70, emailPriority: 15, retryOrAlternate: 10, verifyTarget: 5 },
   cadence: {
     icpThreshold: 70,
     cooldownDays: 7,

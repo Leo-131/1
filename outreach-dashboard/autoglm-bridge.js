@@ -19,6 +19,19 @@ function normalizeTarget(lead) {
   return String(lead?.targetUrl || lead?.verifiedTargetUrl || lead?.url || '').trim();
 }
 
+function isBlockedFacebookTarget(parsed) {
+  if (!parsed || !/^(www\.)?facebook\.com$/i.test(parsed.hostname)) return false;
+  const pathname = String(parsed.pathname || '').toLowerCase();
+  return pathname === '/profile.php'
+    || pathname.startsWith('/search')
+    || pathname.startsWith('/reel')
+    || pathname.startsWith('/reels')
+    || pathname.startsWith('/watch')
+    || pathname.startsWith('/groups')
+    || pathname.startsWith('/events')
+    || pathname.startsWith('/marketplace');
+}
+
 function validateLeadForExecution(lead) {
   const targetUrl = normalizeTarget(lead);
   let parsed;
@@ -30,6 +43,9 @@ function validateLeadForExecution(lead) {
   if (parsed.protocol !== 'https:' || !ALLOWED_HOSTS.has(parsed.hostname.toLowerCase())) {
     return { ok: false, error: 'Unsupported platform URL' };
   }
+  if (isBlockedFacebookTarget(parsed)) {
+    return { ok: false, error: 'Facebook outreach requires an exact verified page/profile URL' };
+  }
   if (lead?.sendStatus === 'sent_confirmed'
     || lead?.automationStatus === 'sent_confirmed'
     || lead?.previouslyContacted
@@ -37,6 +53,24 @@ function validateLeadForExecution(lead) {
     return { ok: false, error: 'Lead was already contacted' };
   }
   return { ok: true, targetUrl: parsed.href };
+}
+
+function isUnavailableProfilePage(page = {}) {
+  const text = [
+    page.url,
+    page.title,
+    page.text,
+  ].map(value => String(value || '').toLowerCase()).join('\n');
+  return [
+    'sorry, this page isn',
+    'the link you followed may be broken',
+    'page may have been removed',
+    'this page isn',
+    'page not found',
+    '无法访问此页面',
+    '你点击的链接可能已损坏',
+    '页面已被移除',
+  ].some(marker => text.includes(marker));
 }
 
 function buildAutoGlmTask(lead, decision) {
@@ -121,6 +155,8 @@ async function runAutoGlmLead(lead, decision, options = {}) {
 
 module.exports = {
   buildAutoGlmTask,
+  isBlockedFacebookTarget,
+  isUnavailableProfilePage,
   normalizeTarget,
   resolveAutoGlmHome,
   runAutoGlmLead,

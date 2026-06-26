@@ -208,6 +208,10 @@
     if (status === 'skipped') return /email_channel_found/i.test(String(evidence || '')) ? '邮件优先' : '7日内跳过';
     if (status === 'failed_open') return /no_message_button|no_direct/i.test(String(evidence || '')) ? '可重试' : '待核验';
     if (status === 'prepared_not_sent') return '已准备';
+    if (status === 'draft_prepared') return '草稿待确认';
+    if (status === 'send_unconfirmed') return '发送待核验';
+    if (status === 'draft_already_present') return '已有草稿';
+    if (status === 'approval_pending') return '需人工继续';
     return status || '';
   }
   function customerRecords() {
@@ -285,7 +289,7 @@
   function nav() {
     return `<aside class="cc-sidebar"><div class="cc-brand"><b>Customer Development</b><span>Codex Decision - Codex Chrome Extension</span></div>
       <nav class="cc-nav">${views.map(([key, label]) => `<a class="${view === key ? 'active' : ''}" href="${urlFor(key)}">${label}</a>`).join('')}</nav>
-      <div class="cc-agent">Brain: Codex<br>Executor: Codex Chrome Extension<br>Fallback: AutoClaw compatible<br>Mode: ICP&gt;70 - parallel batches</div></aside>`;
+      <div class="cc-agent">Brain: Codex<br>Executor: Codex Chrome Extension<br>Fallback: AutoClaw compatible<br>Mode: ICP&gt;70 - one target at a time</div></aside>`;
   }
   function pageHead(title, subtitle) {
     return `<div class="cc-page-head"><div><h1>${title}</h1><p>${subtitle}</p></div><span class="cc-status">自动决策运行中</span></div>`;
@@ -370,7 +374,7 @@
     const activeIcp = icpScore(task);
     return `${pageHead('开发工作台', 'Codex 负责决策与审批，Codex Chrome Extension 按精确账号多任务并行执行，GLM 辅助画像与文案')}
       ${metrics}${connection}${icpRule}
-      <section class="cc-panel"><div class="cc-panel-head"><h2>当前客户</h2><div class="cc-row-actions"><button class="primary" type="button" onclick="runGlmQueue()" ${eligibleCount ? '' : 'disabled'}>${eligibleCount ? '开始 Codex Chrome 并行队列' : '暂无待开发客户'}</button><span class="cc-chip green">${stateLabel(task.state)}</span></div></div><div class="cc-panel-body">
+      <section class="cc-panel"><div class="cc-panel-head"><h2>当前客户</h2><div class="cc-row-actions"><button class="primary" type="button" onclick="runGlmQueue()" ${eligibleCount ? '' : 'disabled'}>${eligibleCount ? '执行当前最高优先级客户' : '暂无待开发客户'}</button><span class="cc-chip green">${stateLabel(task.state)}</span></div></div><div class="cc-panel-body">
         <div class="cc-current"><div><h3>${platformUrl(task) ? `<a href="${esc(platformUrl(task))}" target="_blank" rel="noopener">${esc(task.company)}</a>` : esc(task.company)}</h3><div class="cc-sub">${esc(task.role || '采购/合作负责人')} · ${esc(task.country || '区域待补全')} · ${esc(task.keyword)}</div><div class="cc-actions"><button type="button" onclick="openVerifiedCustomer('${esc(task.taskId)}')" ${platformUrl(task) ? '' : 'disabled'}>打开客户主页</button><button class="primary" type="button" title="${esc(autoClawAvailability(task).reason)}" onclick="runGlmDirect('${esc(task.taskId)}')" ${canRunGlm(task) ? '' : 'disabled'}>${esc(autoClawAvailability(task).label)}</button><a href="${urlFor('customer', { contact: task.taskId })}">查看系统档案</a></div></div><div class="cc-score"><strong>${score.total}</strong><span>综合开发分 / 100</span></div></div>
         <div class="cc-sub">ICP：${activeIcp}/100 · ${esc(icpExplanation(task))}</div>
         ${stageRoute(task)}
@@ -586,6 +590,130 @@
       ['核验来源', record.identitySource || ''],
     ].filter(([, value]) => value);
   }
+  function priorityTier(entity, score) {
+    const value = Math.round(Number(entity && entity.fitScore || score && score.total || 0));
+    if (value >= 90) return 'S / 战略客户';
+    if (value >= 80) return 'A / 重点开发';
+    if (value >= 70) return 'B / 持续跟进';
+    if (value >= 60) return 'C / 机会客户';
+    return 'D / 低优先级';
+  }
+  function businessModel(record) {
+    const text = [record.businessModel, record.keyword, record.background, record.company, record.role].join(' ').toLowerCase();
+    if (/distributor|dealer|importer|wholesale|分销|代理|进口/.test(text)) return 'Distributor / Importer';
+    if (/retail|store|chain|shop|buyer|merchant|零售|连锁/.test(text)) return 'Retail Chain';
+    if (/brand|manufacturer|official|品牌|制造/.test(text)) return 'Brand';
+    if (/e-?commerce|marketplace|online|电商/.test(text)) return 'E-commerce';
+    return '待补充';
+  }
+  function marketPosition(record, scoreValue) {
+    const text = [record.marketPosition, record.background, record.keyword].join(' ').toLowerCase();
+    if (/premium|leader|largest|major|verified|高端|头部|领先/.test(text) || scoreValue >= 90) return 'Premium / Market Leader';
+    if (scoreValue >= 75) return 'Mid-Market / Growth';
+    return 'Entry / Niche';
+  }
+  function coverage(record) {
+    const text = [record.coverage, record.background, record.countryEn, record.country].join(' ').toLowerCase();
+    if (/global|worldwide|international/.test(text)) return 'Global';
+    if (/sea|europe|north america|asia-pacific|regional/.test(text)) return 'Regional';
+    if (/chain|stores|national|largest|major/.test(text)) return 'National';
+    return record.country || record.countryEn ? 'Local / National' : '待补充';
+  }
+  function entryBarrier(record, scoreValue) {
+    const status = String(record.marketStatus || record.agencyState || '').toLowerCase();
+    if (/exclusive|reserved|blocked|独代/.test(status)) return 'High';
+    if (scoreValue >= 90) return 'Medium';
+    return 'Low / Medium';
+  }
+  function currentStatus(record) {
+    const status = String(record.status || record.sendStatus || record.action || '').trim();
+    if (/sent_confirmed|sent|contacted|已发送|已触达/i.test(status)) return 'Contacted';
+    if (/sample/i.test(status)) return 'Sample';
+    if (/quotation|quote/i.test(status)) return 'Quotation';
+    if (/negotiation/i.test(status)) return 'Negotiation';
+    if (/order|po/i.test(status)) return 'Order';
+    if (/email_priority|rerouted/i.test(status)) return 'Lead / Email Priority';
+    return status || 'Lead';
+  }
+  function addDaysLabel(value, days) {
+    const base = Date.parse(value || '') || Date.now();
+    return new Date(base + days * 86400000).toISOString().slice(0, 10);
+  }
+  function potentialByScore(scoreValue) {
+    if (scoreValue >= 90) return { first: 'USD30K+', annual: 'USD300K+', cycle: '30-60 Days' };
+    if (scoreValue >= 80) return { first: 'USD15K-30K', annual: 'USD150K+', cycle: '45-90 Days' };
+    if (scoreValue >= 70) return { first: 'USD8K-15K', annual: 'USD80K+', cycle: '60-120 Days' };
+    return { first: '待验证', annual: '待验证', cycle: '90+ Days' };
+  }
+  function globalCustomerDashboardRows(record, score) {
+    const scoreValue = Math.round(Number(record.fitScore || score.total || 0));
+    const potential = potentialByScore(scoreValue);
+    const nextAction = record.nextAction || record.reason || record.followUpStatus || 'Open verified profile, prepare outreach draft, then confirm next channel';
+    return [
+      ['Basic Info', 'Priority', priorityTier(record, score), '客户等级：S/A/B/C/D'],
+      ['Basic Info', 'Company', record.company || record.name || '待补充', '公司名称'],
+      ['Basic Info', 'Country', record.country || record.countryEn || record.location || '待补充', '国家/地区'],
+      ['Basic Info', 'Website', record.website || record.companyWebsite || '待补充', '官网'],
+      ['Basic Info', 'LinkedIn', record.linkedin_url || record.linkedin || '待补充', '公司主页'],
+      ['Basic Info', 'Founded', record.founded || '待补充', '成立时间'],
+      ['Business', 'Business Model', record.businessModel || businessModel(record), 'Distributor / Retail / Brand / Importer / E-commerce'],
+      ['Business', 'Company Scale', record.companyScale || record.scale || '待补充：Revenue / Employees / Stores', '收入 / 员工 / 门店'],
+      ['Business', 'Market Position', marketPosition(record, scoreValue), 'Premium / Mid / Entry'],
+      ['Business', 'Coverage', coverage(record), 'Local / National / Regional / Global'],
+      ['Channel', 'Main Brands', record.mainBrands || record.brands || '待补充', '已代理品牌'],
+      ['Channel', 'Product Category', record.productCategory || record.category || record.keyword || 'Outdoor / Camping Accessories', '主要经营品类'],
+      ['Channel', 'Sales Channel', record.salesChannel || 'Omni / Online + Social', 'Offline / Online / Omni'],
+      ['Channel', 'Buying Capability', record.buyingCapability || '待验证：Import Experience / Purchase Cycle', '采购能力'],
+      ['Sales Analysis', 'Product Fit', record.productFit || 'Tiny Pump / Max Pump / outdoor electronics accessories', '推荐 SKU'],
+      ['Sales Analysis', 'Decision Maker', record.decisionMaker || record.buyerPersona || record.role || 'Buyer / Category Manager', '采购决策人'],
+      ['Sales Analysis', 'Opportunity', record.opportunity || record.background || nextAction, '切入机会'],
+      ['Sales Analysis', 'Competition', record.competition || '待补充：Thermacell / Outin / local alternatives', '当前竞品'],
+      ['Sales Analysis', 'Entry Barrier', entryBarrier(record, scoreValue), '进入难度'],
+      ['Business Potential', 'First Order', record.firstOrder || potential.first, '预计首单'],
+      ['Business Potential', 'Annual Potential', record.annualPotential || potential.annual, '年销售潜力'],
+      ['Business Potential', 'Margin Model', record.marginModel || 'Distributor 20% / Retail 35%', '利润模型'],
+      ['Execution', 'Sales Strategy', record.salesStrategy || 'Instagram / LinkedIn -> Email -> Meeting -> Sample -> Quote', '开发路径'],
+      ['Execution', 'Current Status', currentStatus(record), 'Pipeline 阶段'],
+      ['Execution', 'Next Action', nextAction, '下一步动作'],
+      ['Execution', 'Owner', record.owner || 'Leo Liu', '负责人'],
+      ['Execution', 'Last Contact', record.lastTouch || record.sentAt || record.date || '暂无', '最后联系时间'],
+      ['Execution', 'Follow-up Date', record.followUpAt || addDaysLabel(record.lastTouch || record.date, 7), '下次跟进'],
+      ['Management', 'Overall Score', `${scoreValue}/100`, '综合评分'],
+      ['Management', 'Development Cycle', record.developmentCycle || potential.cycle, '预计成交周期'],
+    ];
+  }
+  function globalCustomerDashboard(record, score) {
+    const rows = globalCustomerDashboardRows(record, score);
+    const scoreRows = [
+      ['Market Size', 20], ['Channel Strength', 20], ['Brand Match', 15], ['Product Fit', 15],
+      ['Purchasing Power', 10], ['Competition Risk', 5], ['Entry Difficulty', 5], ['Annual Potential', 10],
+    ];
+    const pipeline = [
+      ['Lead', '已识别目标客户', '建立客户档案'],
+      ['Connected', '已建立联系', 'LinkedIn / Email / DM 回复'],
+      ['Qualified', '确认采购意向', '完成需求分析'],
+      ['Meeting', '已完成会议', '获取项目机会'],
+      ['Sample', '样品测试', '样品反馈通过'],
+      ['Quotation', '已报价', '商务谈判'],
+      ['Negotiation', '条款确认', 'MOQ / 价格 / 付款'],
+      ['PO', '收到订单', '首单成交'],
+      ['Repeat Order', '复购', '年度增长'],
+    ];
+    const kpis = [
+      ['New Leads / Week', '100'],
+      ['Qualified Customers / Month', '40'],
+      ['Meetings / Month', '20'],
+      ['Samples Sent / Month', '15'],
+      ['Quotations / Month', '10'],
+      ['New Orders / Month', '3-5'],
+      ['Repeat Orders / Quarter', '>=60%'],
+      ['Annual Revenue per Customer', 'USD100K+'],
+    ];
+    return `<section class="cc-panel"><div class="cc-panel-head"><h2>Global Customer Analysis Dashboard V3.0</h2><span class="cc-sub">回答：是否值得开发 / 怎么开发 / 潜力多大 / 下一步动作</span></div><div class="cc-table-wrap"><table class="cc-table"><thead><tr><th>模块</th><th>字段</th><th>当前值</th><th>说明</th></tr></thead><tbody>${rows.map(([module, field, value, note]) => `<tr><td>${esc(module)}</td><td><b>${esc(field)}</b></td><td>${/^https?:\/\//i.test(String(value || '')) ? `<a href="${esc(value)}" target="_blank" rel="noopener">${esc(value)}</a>` : esc(value)}</td><td>${esc(note)}</td></tr>`).join('')}</tbody></table></div></section>
+      <section class="cc-panel"><div class="cc-panel-head"><h2>客户评分模型</h2><span class="cc-sub">100 分制，90+ 为战略客户</span></div><div class="cc-table-wrap"><table class="cc-table"><thead><tr><th>维度</th><th>权重</th></tr></thead><tbody>${scoreRows.map(([label, weight]) => `<tr><td>${esc(label)}</td><td>${weight}</td></tr>`).join('')}</tbody></table></div></section>
+      <section class="cc-panel"><div class="cc-panel-head"><h2>CRM Pipeline</h2><span class="cc-sub">销售推进阶段与 KPI</span></div><div class="cc-table-wrap"><table class="cc-table"><thead><tr><th>Stage</th><th>Definition</th><th>KPI</th></tr></thead><tbody>${pipeline.map(([stage, definition, kpi]) => `<tr><td><b>${esc(stage)}</b></td><td>${esc(definition)}</td><td>${esc(kpi)}</td></tr>`).join('')}</tbody></table></div></section>
+      <section class="cc-panel"><div class="cc-panel-head"><h2>Dashboard KPI</h2><span class="cc-sub">销售总监视角的目标看板</span></div><div class="cc-table-wrap"><table class="cc-table"><thead><tr><th>KPI</th><th>Target</th></tr></thead><tbody>${kpis.map(([label, target]) => `<tr><td>${esc(label)}</td><td>${esc(target)}</td></tr>`).join('')}</tbody></table></div></section>`;
+  }
   function customer() {
     const key = query.get('contact') || '';
     const task = findTaskById(key) || tasks.find(item => item.taskId === key);
@@ -602,6 +730,7 @@
     return `${pageHead(esc(record.company || record.name), '独立客户详情页，不覆盖原工作台')}
       <section class="cc-panel"><div class="cc-panel-body"><div class="cc-current"><div><h3>${esc(record.name)}</h3><div class="cc-sub">${esc(record.role)} · ${esc(record.country)} · ${esc(record.platform)}</div></div><div class="cc-score"><strong>${score.total}</strong><span>综合开发分</span></div></div></div></section>
       <section class="cc-panel"><div class="cc-panel-head"><h2>ICP 评分解释</h2></div><div class="cc-panel-body"><div class="cc-sub">${esc(icpExplanation(record))}</div></div></section>
+      ${globalCustomerDashboard(record, score)}
       <section class="cc-panel"><div class="cc-panel-head"><h2>客户背调明细</h2></div><div class="cc-panel-body"><table class="cc-table"><tbody>${background.map(([label, value]) => {
         const text = String(value || '');
         const rendered = /^https?:\/\//i.test(text) ? `<a href="${esc(text)}" target="_blank" rel="noopener">${esc(text)}</a>` : esc(text);
@@ -710,12 +839,19 @@
         else window.alert(result.error || 'Codex Chrome 自动开发未执行。');
         return;
       }
-      if (result.sendStatus === 'prepared_not_sent' || result.mode === 'followup_prepare_no_duplicate_send') {
+      if (['prepared_not_sent', 'draft_prepared', 'draft_already_present', 'approval_pending', 'send_unconfirmed'].includes(result.sendStatus)
+        || result.mode === 'followup_prepare_no_duplicate_send') {
         localStorage.setItem(`glm-direct-prepared:${task.taskId}`, new Date().toISOString());
+      } else if (result.sendStatus === 'sent_confirmed') {
+        localStorage.setItem(`glm-direct-completed:${task.taskId}`, '1');
       } else {
         localStorage.setItem(`glm-direct-completed:${task.taskId}`, '1');
       }
-      window.alert('当前客户自动开发已完成，执行证据已返回。');
+      window.alert(result.sendStatus === 'draft_prepared'
+        ? '开发草稿已填入 Instagram 消息框，等待你人工确认发送。'
+        : result.sendStatus === 'sent_confirmed'
+          ? '开发消息已自动发送并确认，系统将进入等待回复。'
+        : '客户主页已打开，执行证据已返回；请按页面提示人工继续。');
     } catch (error) {
       window.alert(`自动开发失败：${error.message || error}`);
     } finally {
@@ -731,15 +867,17 @@
       const button = document.activeElement;
       if (button && button.tagName === 'BUTTON') {
         button.disabled = true;
-        button.textContent = 'Daily queue running...';
+        button.textContent = '当前客户执行中...';
       }
       try {
-        const result = await window.customerDev.runDailyAutomationQueue({ limit: 6, parallelLimit: 3 });
+        const result = await window.customerDev.runDailyAutomationQueue({ limit: 1, parallelLimit: 1 });
         if (!result.ok) {
           window.alert(`${result.error || 'Daily queue did not execute.'}\nSkipped: ${(result.skipped || []).length}`);
           return;
         }
-        window.alert(`Codex Chrome daily queue finished. Mode: ${result.mode || 'parallel-batches'}. Source: ${result.queueSource || 'dailyQueue'}. Executed: ${(result.executed || []).filter(item => item.ok).length}`);
+        const drafted = (result.executed || []).filter(item => item.result && item.result.sendStatus === 'draft_prepared').length;
+        const sent = (result.executed || []).filter(item => item.result && item.result.sendStatus === 'sent_confirmed').length;
+        window.alert(`Codex Chrome current target finished. Mode: ${result.mode || 'serial-single-target'}. Source: ${result.queueSource || 'dailyQueue'}. Sent confirmed: ${sent}. Drafts prepared: ${drafted}. Executed: ${(result.executed || []).filter(item => item.ok).length}`);
         location.reload();
         return;
       } catch (error) {
@@ -748,7 +886,7 @@
       } finally {
         if (button && button.tagName === 'BUTTON') {
           button.disabled = false;
-          button.textContent = 'Codex Chrome Queue';
+          button.textContent = '执行当前最高优先级客户';
         }
       }
     }
@@ -768,7 +906,8 @@
       const task = eligible[index];
       const result = await window.customerDev.runGlmDirectAutomation({ lead: task });
       if (result.ok) {
-        if (result.sendStatus === 'prepared_not_sent' || result.mode === 'followup_prepare_no_duplicate_send') {
+        if (['prepared_not_sent', 'draft_prepared', 'draft_already_present', 'approval_pending', 'send_unconfirmed'].includes(result.sendStatus)
+          || result.mode === 'followup_prepare_no_duplicate_send') {
           localStorage.setItem(`glm-direct-prepared:${task.taskId}`, new Date().toISOString());
         } else {
           localStorage.setItem(`glm-direct-completed:${task.taskId}`, '1');

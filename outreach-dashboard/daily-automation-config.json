@@ -1,0 +1,47 @@
+{
+  "dailyStartTime": "00:05",
+  "checkEveryMinutes": 30,
+  "limits": {
+    "total": 100,
+    "develop": 70,
+    "emailPriority": 15,
+    "retryOrAlternate": 10,
+    "verifyTarget": 5
+  },
+  "cadence": {
+    "cooldownDays": 7,
+    "icpThreshold": 70,
+    "singleBrowserPage": true,
+    "parallelTasks": false,
+    "parallelLimit": 1,
+    "noDuplicateDm": true,
+    "manualDeployOnly": true,
+    "respectTargetWorkingHours": true,
+    "preferOpenAgencyMarkets": true,
+    "skipExclusiveAgencyMarkets": true
+  },
+  "marketPriority": {
+    "openAgencyBonus": 18,
+    "exclusiveAgencyPenalty": 60,
+    "exclusiveStatuses": ["独代占用", "独家代理", "独家", "exclusive", "reserved", "blocked"],
+    "openStatuses": ["可开拓", "开放", "open", "available"]
+  },
+  "workingHours": {
+    "workdays": [1, 2, 3, 4, 5],
+    "windows": [
+      { "name": "morning", "start": "09:00", "end": "11:30", "weight": 1 },
+      { "name": "afternoon", "start": "14:00", "end": "16:30", "weight": 0.9 }
+    ],
+    "timeZones": {
+      "Australia": "Australia/Sydney",
+      "Canada": "America/Toronto",
+      "India": "Asia/Kolkata",
+      "Indonesia": "Asia/Jakarta",
+      "New Zealand": "Pacific/Auckland",
+      "Poland": "Europe/Warsaw",
+      "United Kingdom": "Europe/London",
+      "United States": "America/New_York",
+      "Unknown": "Asia/Shanghai"
+    }
+  }
+}

@@ -9,12 +9,25 @@ export default async function handler(req, res) {
   if (req.method === 'POST') {
     const { templateId, lang, type, variables } = req.body;
     const { name, company, region } = variables;
+    const recipientName = name || 'there';
+    const recipientCompany = company || 'your team';
+    const regionLine = region ? ` in ${region}` : '';
+    const signature = [
+      'Sincerely,',
+      'Leo Liu',
+      'Sales & Operations Director',
+      'Brand & ODM Department',
+      'SHANGHAI FLEXTAIL TECHNOLOGY CO., LTD.',
+      'Tel/WhatsApp: +86 17321028184',
+      'Email: Leo@flextailgear.com',
+      'https://www.flextail.com/ | https://vollyc.com/',
+    ].join('\n');
     
     const templates = {
       initial: {
         en: {
-          subject: `Partnership Opportunity - Flextail & ${company}`,
-          body: `Hi ${name},\n\nI'm Leo from Flextail. We're Top 1 on Amazon in ultralight outdoor electronics.\n\nWe're launching 36+ new SKUs in 2026 and looking for partners like ${company}.\n\nWould you be open to a quick 15-min call this week?\n\nBest,\nLeo Liu\nSales & Operations Director\nFlextail Gear`
+          subject: `Flextail & Vollyc introduction for ${recipientCompany}`,
+          body: `Dear ${recipientName},\n\nNice to e-meet you. I am Leo from Flextail & Vollyc.\n\nFlextail is our first and core brand, specializing in ultralight electric products for outdoor, travel, and home use. The brand is currently Top 1 on Amazon, with strong global sell-through and proven product-market fit.\n\nVollyc, our second brand, focuses on 3C electronics for practical, high-rotation consumer use cases.\n\nFrom our perspective, ${recipientCompany}'s platform and positioning are highly aligned with Flextail's product philosophy, especially in lightweight outdoor and travel-oriented electrics${regionLine}.\n\nWe are planning to launch over 36 new SKUs in 2026, covering multiple usage scenarios and price tiers. I would appreciate the opportunity to arrange a short introductory video meeting to present our brands and discuss potential collaboration opportunities.\n\n${signature}`
         },
         zh: {
           subject: `合作机会 - Flextail & ${company}`,
@@ -24,7 +37,7 @@ export default async function handler(req, res) {
       followup: {
         en: {
           subject: `Quick follow-up`,
-          body: `Hi ${name},\n\nJust following up on my previous message.\n\nI'd love to explore how Flextail can partner with ${company}.\n\nAre you available for a brief call this week?\n\nBest,\nLeo`
+          body: `Dear ${recipientName},\n\nJust following up on my previous note introducing Flextail & Vollyc.\n\nFlextail is focused on ultralight outdoor, travel, and home-use electric products, and we are preparing 36+ new SKUs for 2026 across different usage scenarios and price tiers.\n\nIf ${recipientCompany} is reviewing outdoor or travel-oriented electrics, could we arrange a short introductory video meeting, or could you point me to the right buyer/category contact?\n\n${signature}`
         },
         zh: {
           subject: `跟进`,
@@ -33,8 +46,8 @@ export default async function handler(req, res) {
       },
       ka: {
         en: {
-          subject: `Strategic Partnership - ${company} & Flextail`,
-          body: `Hi ${name},\n\nGiven your role at ${company}, I believe there's significant synergy with Flextail.\n\nWe're Amazon's #1 in ultralight outdoor electronics, launching 36+ SKUs in 2026.\n\nWould you have 20 minutes for a strategic discussion?\n\nBest,\nLeo Liu\nFlextail Gear`
+          subject: `Strategic brand introduction - ${recipientCompany} & Flextail`,
+          body: `Dear ${recipientName},\n\nNice to e-meet you. I am Leo from Flextail & Vollyc.\n\nFlextail is our first and core brand for ultralight electric products across outdoor, travel, and home use. It is currently Top 1 on Amazon, with strong global sell-through and proven product-market fit. Vollyc complements this with practical, high-rotation 3C electronics.\n\nGiven ${recipientCompany}'s assortment and positioning, I believe Flextail's lightweight outdoor and travel-oriented electrics could be relevant to your future category planning${regionLine}.\n\nWe are planning over 36 new SKUs in 2026 across multiple usage scenarios and price tiers. Would you be available for a short introductory video meeting so I can present our brands, current catalog, and potential collaboration options?\n\n${signature}`
         },
         zh: {
           subject: `战略合作 - ${company} & Flextail`,

@@ -61,6 +61,18 @@ test('customer detail opens in a new tab without replacing the shell', () => {
   assert.ok(js.includes('command-center-shell'));
 });
 
+test('customer detail includes global channel analysis template', () => {
+  for (const token of [
+    'Global Customer Analysis Dashboard V3.0',
+    'Annual Potential',
+    'CRM Pipeline',
+    'Dashboard KPI',
+    'New Leads / Week',
+    'Development Cycle',
+    'Sales Strategy',
+  ]) assert.ok(js.includes(token), token);
+});
+
 test('SEO view exposes conversion evidence and high-intent keyword opportunities', () => {
   assert.ok(js.includes('analytics.buildKeywordOpportunities'));
   assert.ok(js.includes('keyword-opportunity'));
@@ -73,14 +85,14 @@ test('command center opens verified platform URLs and exposes assisted automatio
   assert.ok(js.includes('openVerifiedCustomer'));
   assert.ok(js.includes('runGlmDirect'));
   assert.ok(js.includes('AutoClaw 自动开发'));
-  assert.ok(html.includes('Codex + AutoClaw'));
+  assert.ok(html.includes('Codex Chrome'));
 });
 
 test('command center uses Codex decisions and AutoClaw execution on verified URLs', () => {
   assert.ok(js.includes('Codex Decision'));
   assert.ok(js.includes('AutoClaw Execution'));
   assert.ok(js.includes("task.identityStatus === 'verified'"));
-  assert.ok(html.includes('Codex + AutoClaw'));
+  assert.ok(html.includes('Codex Chrome'));
 });
 
 test('sent tasks render a completed route ending in outcome pending', () => {

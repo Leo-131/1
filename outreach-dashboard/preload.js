@@ -10,4 +10,5 @@ contextBridge.exposeInMainWorld('customerDev', {
   saveGlmConfig: (payload) => ipcRenderer.invoke('save-glm-config', payload),
   optimizeLeadWithGlm: (payload) => ipcRenderer.invoke('optimize-lead-with-glm', payload),
   runGlmDirectAutomation: (payload) => ipcRenderer.invoke('run-glm-direct-automation', payload),
+  runDailyAutomationQueue: (payload) => ipcRenderer.invoke('run-daily-automation-queue', payload),
 });

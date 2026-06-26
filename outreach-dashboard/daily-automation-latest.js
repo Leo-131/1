@@ -1,35 +1,35 @@
 window.DAILY_AUTOMATION_LATEST = {
-  "generatedAt": "2026-06-26T03:02:24.945Z",
+  "generatedAt": "2026-06-26T03:05:56.584Z",
   "date": "2026-06-26",
   "mode": "daily-icp-first-automation-loop",
   "executionLayer": "Codex Chrome Extension primary; AutoClaw compatible",
   "limits": {
-    "dailyLimit": 20,
+    "dailyLimit": 100,
     "quota": {
       "total": {
-        "target": 20,
+        "target": 100,
         "planned": 6,
-        "gap": 14
+        "gap": 94
       },
       "develop": {
-        "target": 10,
+        "target": 70,
         "planned": 4,
-        "gap": 6
+        "gap": 66
       },
       "email_priority": {
-        "target": 5,
+        "target": 15,
         "planned": 2,
-        "gap": 3
+        "gap": 13
       },
       "retry_or_alternate_channel": {
-        "target": 3,
+        "target": 10,
         "planned": 0,
-        "gap": 3
+        "gap": 10
       },
       "verify_target": {
-        "target": 2,
+        "target": 5,
         "planned": 0,
-        "gap": 2
+        "gap": 5
       }
     },
     "icpThreshold": 70,
@@ -45,9 +45,9 @@ window.DAILY_AUTOMATION_LATEST = {
   "summary": {
     "totalLeads": 16,
     "highIcp": 16,
-    "readyToDevelop": 16,
-    "dueNow": 13,
-    "googleDiscovered": 7,
+    "readyToDevelop": 15,
+    "dueNow": 12,
+    "googleDiscovered": 6,
     "scheduledLater": 9,
     "cooldown": 0,
     "emailPriority": 5,
@@ -57,40 +57,6 @@ window.DAILY_AUTOMATION_LATEST = {
     "retainedLowIcp": 0
   },
   "dailyQueue": [
-    {
-      "id": "google-customer-cabela-s",
-      "name": "Cabela's",
-      "company": "Cabela's",
-      "platform": "instagram",
-      "country": "United States",
-      "countryEn": "United States",
-      "fitScore": 95,
-      "fitTier": "A+",
-      "marketScore": 4.5,
-      "marketStatus": "open",
-      "agencyState": "open",
-      "keyword": "outdoor retail chain",
-      "role": "Camping, hunting, or outdoor gear buyer.",
-      "background": "Outdoor retail brand under Bass Pro group, relevant for camping and outdoor accessory distribution.",
-      "buyerPersona": "Camping, hunting, or outdoor gear buyer.",
-      "website": "https://www.cabelas.com/",
-      "platformUrl": "https://www.instagram.com/cabelas/",
-      "url": "https://www.instagram.com/cabelas/",
-      "evidenceUrl": "https://www.google.com/search?q=%22Cabela's%22%20%22outdoor%20retail%20chain%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "query": "https://www.google.com/search?q=%22Cabela's%22%20%22outdoor%20retail%20chain%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "action": "develop",
-      "reason": "concrete_google_discovered_major_customer",
-      "source": "google_customer_discovery",
-      "identityStatus": "verified",
-      "identitySource": "official website/social profile + Google background query",
-      "workingTime": {
-        "dueNow": true,
-        "timeZone": "local-market",
-        "localTime": "2026/6/26 11:02:24",
-        "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
-      },
-      "priorityScore": 125
-    },
     {
       "id": "google-customer-go-outdoors",
       "name": "GO Outdoors",
@@ -120,7 +86,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/26 11:02:24",
+        "localTime": "2026/6/26 11:05:56",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "priorityScore": 123
@@ -154,7 +120,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/26 11:02:24",
+        "localTime": "2026/6/26 11:05:56",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "priorityScore": 121
@@ -188,7 +154,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/26 11:02:24",
+        "localTime": "2026/6/26 11:05:56",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "priorityScore": 120
@@ -222,7 +188,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/26 11:02:24",
+        "localTime": "2026/6/26 11:05:56",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "priorityScore": 120
@@ -256,7 +222,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/26 11:02:24",
+        "localTime": "2026/6/26 11:05:56",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "priorityScore": 119
@@ -290,7 +256,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/26 11:02:24",
+        "localTime": "2026/6/26 11:05:56",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "priorityScore": 116
@@ -316,7 +282,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "Pacific/Auckland",
-        "localTime": "Fri 15:02",
+        "localTime": "Fri 15:05",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
@@ -344,7 +310,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "Pacific/Auckland",
-        "localTime": "Fri 15:02",
+        "localTime": "Fri 15:05",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
@@ -372,7 +338,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "Pacific/Auckland",
-        "localTime": "Fri 15:02",
+        "localTime": "Fri 15:05",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
@@ -400,7 +366,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "Pacific/Auckland",
-        "localTime": "Fri 15:02",
+        "localTime": "Fri 15:05",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
@@ -428,7 +394,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "Pacific/Auckland",
-        "localTime": "Fri 15:02",
+        "localTime": "Fri 15:05",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
@@ -456,7 +422,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "Asia/Jakarta",
-        "localTime": "Fri 10:02",
+        "localTime": "Fri 10:05",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -486,7 +452,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/London",
-        "localTime": "Fri 04:02",
+        "localTime": "Fri 04:05",
         "window": "outside_work_hours",
         "nextBest": "Europe/London morning",
         "weight": 0
@@ -514,7 +480,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Thu 23:02",
+        "localTime": "Thu 23:05",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -542,7 +508,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Australia/Sydney",
-        "localTime": "Fri 13:02",
+        "localTime": "Fri 13:05",
         "window": "outside_work_hours",
         "nextBest": "Australia/Sydney afternoon",
         "weight": 0
@@ -570,7 +536,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/London",
-        "localTime": "Fri 04:02",
+        "localTime": "Fri 04:05",
         "window": "outside_work_hours",
         "nextBest": "Europe/London morning",
         "weight": 0
@@ -598,7 +564,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/London",
-        "localTime": "Fri 04:02",
+        "localTime": "Fri 04:05",
         "window": "outside_work_hours",
         "nextBest": "Europe/London morning",
         "weight": 0
@@ -626,7 +592,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Thu 23:02",
+        "localTime": "Thu 23:05",
         "window": "outside_work_hours",
         "nextBest": "America/Toronto morning",
         "weight": 0
@@ -654,7 +620,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Thu 23:02",
+        "localTime": "Thu 23:05",
         "window": "outside_work_hours",
         "nextBest": "America/Toronto morning",
         "weight": 0
@@ -682,7 +648,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Thu 23:02",
+        "localTime": "Thu 23:05",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -710,7 +676,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Asia/Kolkata",
-        "localTime": "Fri 08:32",
+        "localTime": "Fri 08:35",
         "window": "outside_work_hours",
         "nextBest": "Asia/Kolkata morning",
         "weight": 0

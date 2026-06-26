@@ -12,6 +12,19 @@ if (!html.includes('function openKpiDetailPage(key)')) {
   throw new Error('KPI cards must open their details in a new page');
 }
 
+const preload = fs.readFileSync('preload.js', 'utf8');
+const main = fs.readFileSync('main.js', 'utf8');
+const commandCenter = fs.readFileSync('command-center.js', 'utf8');
+if (!preload.includes('runDailyAutomationQueue') || !main.includes("run-daily-automation-queue")) {
+  throw new Error('Codex Chrome daily queue bridge is missing');
+}
+if (!main.includes('scheduledExecutable') || !main.includes('queueSource')) {
+  throw new Error('Codex Chrome daily queue must fallback to scheduledLater executable tasks');
+}
+if (!main.includes('parallelLimit') || !main.includes('parallel-batches') || !commandCenter.includes('并行队列')) {
+  throw new Error('Codex Chrome daily queue must use controlled parallel batches');
+}
+
 if (!html.includes("new URLSearchParams(window.location.search).get('kpi')")) {
   throw new Error('KPI detail pages must restore the selected card from the URL');
 }
@@ -27,6 +40,7 @@ if (handleKpiCard[1].includes('startAutomation(') || handleKpiCard[1].includes('
 global.window = global;
 require('./country-market-data.js');
 require('./daily-outreach-tasks.js');
+const dailyAutomation = require('./daily-automation-runner.js');
 
 if (COUNTRY_ALIASES.usa !== '美国') {
   throw new Error('country aliases failed');
@@ -38,6 +52,47 @@ if (!DAILY_OUTREACH_TASKS || DAILY_OUTREACH_TASKS.total < 10) {
 
 if ((DAILY_OUTREACH_TASKS.tasks || []).some(task => task.platform === 'Facebook' && task.facebookStatus === 'not_verified_do_not_use')) {
   throw new Error('unverified facebook task leaked');
+}
+
+const sampleContext = {
+  now: Date.now(),
+  profiles: {},
+  resultsByTask: new Map(),
+};
+const lowIcp = dailyAutomation.classifyTask({ platform: 'Instagram', name: 'low', fitScore: 70 }, sampleContext);
+if (lowIcp.action !== 'retain_low_icp') {
+  throw new Error('daily automation must retain ICP <= 70 instead of developing it');
+}
+
+const openMarket = dailyAutomation.classifyTask({
+  platform: 'Instagram',
+  name: 'open-market',
+  fitScore: 90,
+  marketScore: 4,
+  marketStatus: '可开拓',
+  verifiedTargetUrl: 'https://www.instagram.com/openmarket/',
+}, sampleContext);
+const exclusiveMarket = dailyAutomation.classifyTask({
+  platform: 'Instagram',
+  name: 'exclusive-market',
+  fitScore: 90,
+  marketScore: 4,
+  marketStatus: '独代占用',
+  verifiedTargetUrl: 'https://www.instagram.com/exclusivemarket/',
+}, sampleContext);
+if (openMarket.action !== 'develop' || exclusiveMarket.action !== 'skip_exclusive_agency') {
+  throw new Error('daily automation must prioritize open agency markets and skip exclusive agency regions');
+}
+if (openMarket.priorityScore <= exclusiveMarket.priorityScore) {
+  throw new Error('open agency markets must outrank exclusive agency regions');
+}
+
+if (!main.includes('openWithCodexChrome') || !main.includes('codex-chrome-extension-cdp')) {
+  throw new Error('Codex Chrome CDP bridge is missing');
+}
+
+if (!main.includes('const chromeOpen = await openWithCodexChrome(item.url)')) {
+  throw new Error('Daily automation queue must open exact targets through Codex Chrome');
 }
 
 console.log('checks ok');
