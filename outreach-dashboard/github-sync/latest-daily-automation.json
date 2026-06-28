@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-28T20:02:10.705Z",
+  "generatedAt": "2026-06-28T21:01:58.157Z",
   "date": "2026-06-28",
   "mode": "daily-icp-first-automation-loop",
   "executionLayer": "Codex Chrome Extension primary; AutoClaw compatible",
@@ -8,8 +8,8 @@
     "quota": {
       "total": {
         "target": 100,
-        "planned": 0,
-        "gap": 100
+        "planned": 2,
+        "gap": 98
       },
       "develop": {
         "target": 70,
@@ -18,8 +18,8 @@
       },
       "email_priority": {
         "target": 15,
-        "planned": 0,
-        "gap": 15
+        "planned": 2,
+        "gap": 13
       },
       "retry_or_alternate_channel": {
         "target": 10,
@@ -46,11 +46,11 @@
     "totalLeads": 16,
     "highIcp": 16,
     "readyToDevelop": 12,
-    "dueNow": 12,
+    "dueNow": 14,
     "googleDiscovered": 12,
     "facebookDiscovered": 0,
     "websiteContactDiscovered": 12,
-    "scheduledLater": 6,
+    "scheduledLater": 4,
     "cooldown": 9,
     "emailPriority": 5,
     "openAgencyMarket": 15,
@@ -108,7 +108,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/29 04:02:10",
+        "localTime": "2026/6/29 05:01:57",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -178,7 +178,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/29 04:02:10",
+        "localTime": "2026/6/29 05:01:57",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -248,7 +248,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/29 04:02:10",
+        "localTime": "2026/6/29 05:01:57",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -318,7 +318,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/29 04:02:10",
+        "localTime": "2026/6/29 05:01:57",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -389,7 +389,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/29 04:02:10",
+        "localTime": "2026/6/29 05:01:57",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -459,7 +459,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/29 04:02:10",
+        "localTime": "2026/6/29 05:01:57",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -535,7 +535,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/29 04:02:10",
+        "localTime": "2026/6/29 05:01:57",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -605,7 +605,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/29 04:02:10",
+        "localTime": "2026/6/29 05:01:57",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -675,7 +675,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/29 04:02:10",
+        "localTime": "2026/6/29 05:01:57",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -745,7 +745,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/29 04:02:10",
+        "localTime": "2026/6/29 05:01:57",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -815,7 +815,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/29 04:02:10",
+        "localTime": "2026/6/29 05:01:57",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -885,7 +885,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/29 04:02:10",
+        "localTime": "2026/6/29 05:01:57",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -905,6 +905,92 @@
       "identitySource": "official website contact path + Google buyer/contact query",
       "channelPriority": 3,
       "priorityScore": 108
+    },
+    {
+      "id": "verified-Instagram-macpac",
+      "name": "macpac",
+      "company": "Macpac NZ/AU (76K followers, verified, outdoor brand)",
+      "platform": "instagram",
+      "country": "新西兰",
+      "countryEn": "New Zealand",
+      "fitScore": 77,
+      "fitTier": "A",
+      "marketScore": 3.9,
+      "marketStatus": "可开拓",
+      "agencyState": "open",
+      "url": "https://www.instagram.com/macpac/",
+      "website": "",
+      "platformUrl": "https://www.instagram.com/macpac/",
+      "contactUrl": "",
+      "contactSearchUrl": "",
+      "emailFrom": "",
+      "publicEmail": "",
+      "publicEmailStatus": "",
+      "contactPhone": "",
+      "vendorPortal": "",
+      "linkedinUrl": "",
+      "headquarters": "",
+      "founded": "",
+      "companyScale": "",
+      "dataSources": null,
+      "alternateChannels": null,
+      "lastStatus": "skipped",
+      "lastEvidence": "email_channel_found",
+      "lastTouch": "2026-06-18T10:09:35.863Z",
+      "action": "email_priority",
+      "reason": "email_channel_found",
+      "workingTime": {
+        "dueNow": true,
+        "timeZone": "Pacific/Auckland",
+        "localTime": "Mon 09:01",
+        "window": "morning",
+        "nextBest": "now",
+        "weight": 1
+      },
+      "priorityScore": 142
+    },
+    {
+      "id": "verified-Instagram-stoneycreeknz",
+      "name": "stoneycreeknz",
+      "company": "Stoney Creek NZ (23K followers, NZ outdoor clothing brand)",
+      "platform": "instagram",
+      "country": "新西兰",
+      "countryEn": "New Zealand",
+      "fitScore": 77,
+      "fitTier": "A",
+      "marketScore": 3.9,
+      "marketStatus": "可开拓",
+      "agencyState": "open",
+      "url": "https://www.instagram.com/stoneycreeknz/",
+      "website": "",
+      "platformUrl": "https://www.instagram.com/stoneycreeknz/",
+      "contactUrl": "",
+      "contactSearchUrl": "",
+      "emailFrom": "",
+      "publicEmail": "",
+      "publicEmailStatus": "",
+      "contactPhone": "",
+      "vendorPortal": "",
+      "linkedinUrl": "",
+      "headquarters": "",
+      "founded": "",
+      "companyScale": "",
+      "dataSources": null,
+      "alternateChannels": null,
+      "lastStatus": "skipped",
+      "lastEvidence": "email_channel_found",
+      "lastTouch": "2026-06-18T10:09:35.863Z",
+      "action": "email_priority",
+      "reason": "email_channel_found",
+      "workingTime": {
+        "dueNow": true,
+        "timeZone": "Pacific/Auckland",
+        "localTime": "Mon 09:01",
+        "window": "morning",
+        "nextBest": "now",
+        "weight": 1
+      },
+      "priorityScore": 142
     }
   ],
   "scheduledLater": [
@@ -944,7 +1030,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/London",
-        "localTime": "Sun 21:02",
+        "localTime": "Sun 22:01",
         "window": "off_workday",
         "nextBest": "Europe/London morning"
       },
@@ -986,7 +1072,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Australia/Sydney",
-        "localTime": "Mon 06:02",
+        "localTime": "Mon 07:01",
         "window": "outside_work_hours",
         "nextBest": "Australia/Sydney morning",
         "weight": 0
@@ -1029,97 +1115,11 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Sun 16:02",
+        "localTime": "Sun 17:01",
         "window": "off_workday",
         "nextBest": "America/Toronto morning"
       },
       "priorityScore": 146
-    },
-    {
-      "id": "verified-Instagram-macpac",
-      "name": "macpac",
-      "company": "Macpac NZ/AU (76K followers, verified, outdoor brand)",
-      "platform": "instagram",
-      "country": "新西兰",
-      "countryEn": "New Zealand",
-      "fitScore": 77,
-      "fitTier": "A",
-      "marketScore": 3.9,
-      "marketStatus": "可开拓",
-      "agencyState": "open",
-      "url": "https://www.instagram.com/macpac/",
-      "website": "",
-      "platformUrl": "https://www.instagram.com/macpac/",
-      "contactUrl": "",
-      "contactSearchUrl": "",
-      "emailFrom": "",
-      "publicEmail": "",
-      "publicEmailStatus": "",
-      "contactPhone": "",
-      "vendorPortal": "",
-      "linkedinUrl": "",
-      "headquarters": "",
-      "founded": "",
-      "companyScale": "",
-      "dataSources": null,
-      "alternateChannels": null,
-      "lastStatus": "skipped",
-      "lastEvidence": "email_channel_found",
-      "lastTouch": "2026-06-18T10:09:35.863Z",
-      "action": "email_priority",
-      "reason": "email_channel_found",
-      "workingTime": {
-        "dueNow": false,
-        "timeZone": "Pacific/Auckland",
-        "localTime": "Mon 08:02",
-        "window": "outside_work_hours",
-        "nextBest": "Pacific/Auckland morning",
-        "weight": 0
-      },
-      "priorityScore": 142
-    },
-    {
-      "id": "verified-Instagram-stoneycreeknz",
-      "name": "stoneycreeknz",
-      "company": "Stoney Creek NZ (23K followers, NZ outdoor clothing brand)",
-      "platform": "instagram",
-      "country": "新西兰",
-      "countryEn": "New Zealand",
-      "fitScore": 77,
-      "fitTier": "A",
-      "marketScore": 3.9,
-      "marketStatus": "可开拓",
-      "agencyState": "open",
-      "url": "https://www.instagram.com/stoneycreeknz/",
-      "website": "",
-      "platformUrl": "https://www.instagram.com/stoneycreeknz/",
-      "contactUrl": "",
-      "contactSearchUrl": "",
-      "emailFrom": "",
-      "publicEmail": "",
-      "publicEmailStatus": "",
-      "contactPhone": "",
-      "vendorPortal": "",
-      "linkedinUrl": "",
-      "headquarters": "",
-      "founded": "",
-      "companyScale": "",
-      "dataSources": null,
-      "alternateChannels": null,
-      "lastStatus": "skipped",
-      "lastEvidence": "email_channel_found",
-      "lastTouch": "2026-06-18T10:09:35.863Z",
-      "action": "email_priority",
-      "reason": "email_channel_found",
-      "workingTime": {
-        "dueNow": false,
-        "timeZone": "Pacific/Auckland",
-        "localTime": "Mon 08:02",
-        "window": "outside_work_hours",
-        "nextBest": "Pacific/Auckland morning",
-        "weight": 0
-      },
-      "priorityScore": 142
     },
     {
       "id": "verified-Instagram-triedandtrout",
@@ -1157,7 +1157,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Sun 16:02",
+        "localTime": "Sun 17:01",
         "window": "off_workday",
         "nextBest": "America/New_York morning"
       },
