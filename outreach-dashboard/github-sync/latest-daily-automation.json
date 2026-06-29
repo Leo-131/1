@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-29T10:02:47.674Z",
+  "generatedAt": "2026-06-29T11:02:15.046Z",
   "date": "2026-06-29",
   "mode": "daily-icp-first-automation-loop",
   "executionLayer": "Codex Chrome Extension primary; AutoClaw compatible",
@@ -8,8 +8,8 @@
     "quota": {
       "total": {
         "target": 100,
-        "planned": 1,
-        "gap": 99
+        "planned": 0,
+        "gap": 100
       },
       "develop": {
         "target": 70,
@@ -18,8 +18,8 @@
       },
       "email_priority": {
         "target": 15,
-        "planned": 1,
-        "gap": 14
+        "planned": 0,
+        "gap": 15
       },
       "retry_or_alternate_channel": {
         "target": 10,
@@ -51,11 +51,11 @@
     "totalLeads": 16,
     "highIcp": 16,
     "readyToDevelop": 10,
-    "dueNow": 11,
+    "dueNow": 10,
     "googleDiscovered": 10,
     "facebookDiscovered": 0,
     "websiteContactDiscovered": 10,
-    "scheduledLater": 5,
+    "scheduledLater": 6,
     "cooldown": 9,
     "emailPriority": 5,
     "openAgencyMarket": 15,
@@ -113,7 +113,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/29 18:02:47",
+        "localTime": "2026/6/29 19:02:14",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -190,7 +190,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/29 18:02:47",
+        "localTime": "2026/6/29 19:02:14",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -267,7 +267,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/29 18:02:47",
+        "localTime": "2026/6/29 19:02:14",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -344,7 +344,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/29 18:02:47",
+        "localTime": "2026/6/29 19:02:14",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -421,7 +421,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/29 18:02:47",
+        "localTime": "2026/6/29 19:02:14",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -498,7 +498,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/29 18:02:47",
+        "localTime": "2026/6/29 19:02:14",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -575,7 +575,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/29 18:02:47",
+        "localTime": "2026/6/29 19:02:14",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -652,7 +652,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/29 18:02:47",
+        "localTime": "2026/6/29 19:02:14",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -685,56 +685,6 @@
       "contactChannelScore": 17,
       "dealProbabilityScore": 210,
       "priorityScore": 208
-    },
-    {
-      "id": "verified-Instagram-ellisbrigham",
-      "name": "ellisbrigham",
-      "company": "Ellis Brigham UK (33K followers, since 1933)",
-      "platform": "instagram",
-      "country": "英国",
-      "countryEn": "United Kingdom",
-      "fitScore": 100,
-      "fitTier": "A",
-      "marketScore": 4.5,
-      "marketStatus": "可开拓",
-      "agencyState": "open",
-      "url": "https://www.instagram.com/ellisbrigham/",
-      "website": "",
-      "platformUrl": "https://www.instagram.com/ellisbrigham/",
-      "contactUrl": "",
-      "contactSearchUrl": "",
-      "emailFrom": "",
-      "websiteContactSubject": "",
-      "websiteContactMessage": "",
-      "websiteContactFlow": "",
-      "publicEmail": "",
-      "publicEmailStatus": "",
-      "contactPhone": "",
-      "vendorPortal": "",
-      "linkedinUrl": "",
-      "headquarters": "",
-      "founded": "",
-      "companyScale": "",
-      "dataSources": null,
-      "alternateChannels": null,
-      "lastStatus": "skipped",
-      "lastEvidence": "email_channel_found",
-      "lastTouch": "2026-06-18T10:09:35.863Z",
-      "action": "email_priority",
-      "reason": "email_channel_found",
-      "workingTime": {
-        "dueNow": true,
-        "timeZone": "Europe/London",
-        "localTime": "Mon 11:02",
-        "window": "morning",
-        "nextBest": "now",
-        "weight": 1
-      },
-      "targetRegion": "europe",
-      "targetRegionScore": 32,
-      "contactChannelScore": 0,
-      "dealProbabilityScore": 204,
-      "priorityScore": 210
     },
     {
       "linkedinUrl": "https://sd.linkedin.com/company/kathmandu",
@@ -785,7 +735,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/29 18:02:47",
+        "localTime": "2026/6/29 19:02:14",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -862,7 +812,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/29 18:02:47",
+        "localTime": "2026/6/29 19:02:14",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -892,6 +842,56 @@
     }
   ],
   "scheduledLater": [
+    {
+      "id": "verified-Instagram-ellisbrigham",
+      "name": "ellisbrigham",
+      "company": "Ellis Brigham UK (33K followers, since 1933)",
+      "platform": "instagram",
+      "country": "英国",
+      "countryEn": "United Kingdom",
+      "fitScore": 100,
+      "fitTier": "A",
+      "marketScore": 4.5,
+      "marketStatus": "可开拓",
+      "agencyState": "open",
+      "url": "https://www.instagram.com/ellisbrigham/",
+      "website": "",
+      "platformUrl": "https://www.instagram.com/ellisbrigham/",
+      "contactUrl": "",
+      "contactSearchUrl": "",
+      "emailFrom": "",
+      "websiteContactSubject": "",
+      "websiteContactMessage": "",
+      "websiteContactFlow": "",
+      "publicEmail": "",
+      "publicEmailStatus": "",
+      "contactPhone": "",
+      "vendorPortal": "",
+      "linkedinUrl": "",
+      "headquarters": "",
+      "founded": "",
+      "companyScale": "",
+      "dataSources": null,
+      "alternateChannels": null,
+      "lastStatus": "skipped",
+      "lastEvidence": "email_channel_found",
+      "lastTouch": "2026-06-18T10:09:35.863Z",
+      "action": "email_priority",
+      "reason": "email_channel_found",
+      "workingTime": {
+        "dueNow": false,
+        "timeZone": "Europe/London",
+        "localTime": "Mon 12:02",
+        "window": "outside_work_hours",
+        "nextBest": "Europe/London afternoon",
+        "weight": 0
+      },
+      "targetRegion": "europe",
+      "targetRegionScore": 32,
+      "contactChannelScore": 0,
+      "dealProbabilityScore": 204,
+      "priorityScore": 210
+    },
     {
       "id": "verified-Instagram-mec",
       "name": "mec",
@@ -931,7 +931,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Mon 06:02",
+        "localTime": "Mon 07:02",
         "window": "outside_work_hours",
         "nextBest": "America/Toronto morning",
         "weight": 0
@@ -981,7 +981,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Mon 06:02",
+        "localTime": "Mon 07:02",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -1031,7 +1031,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Australia/Sydney",
-        "localTime": "Mon 20:02",
+        "localTime": "Mon 21:02",
         "window": "outside_work_hours",
         "nextBest": "Australia/Sydney morning",
         "weight": 0
@@ -1081,7 +1081,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Pacific/Auckland",
-        "localTime": "Mon 22:02",
+        "localTime": "Mon 23:02",
         "window": "outside_work_hours",
         "nextBest": "Pacific/Auckland morning",
         "weight": 0
@@ -1131,7 +1131,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Pacific/Auckland",
-        "localTime": "Mon 22:02",
+        "localTime": "Mon 23:02",
         "window": "outside_work_hours",
         "nextBest": "Pacific/Auckland morning",
         "weight": 0
