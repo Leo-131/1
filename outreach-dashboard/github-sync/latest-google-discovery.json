@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-29T03:02:39.109Z",
+  "generatedAt": "2026-06-29T03:44:12.413Z",
   "mode": "google-concrete-customer-discovery",
   "objective": "convert Google discovery into concrete high-ICP customer profiles with official URLs and background notes",
   "leads": [
@@ -52,7 +52,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/29 11:02:39",
+        "localTime": "2026/6/29 11:44:12",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -117,7 +117,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/29 11:02:39",
+        "localTime": "2026/6/29 11:44:12",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -184,7 +184,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/29 11:02:39",
+        "localTime": "2026/6/29 11:44:12",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -193,6 +193,9 @@
       "contactUrl": "https://www.rei.com/help",
       "contactSearchUrl": "https://www.google.com/search?q=site%3Awww.rei.com%20%22REI%20Co-op%22%20contact%20buyer%20wholesale%20email%20vendor",
       "emailFrom": "leo@flextailgear.com",
+      "websiteContactSubject": "Flextail & Vollyc collaboration inquiry for REI Co-op",
+      "websiteContactMessage": "Dear REI Co-op Team,\n\nNice to e-meet you.\nI am Leo, from Flextail & Vollyc.\n\nFlextail is our first and core brand, specializing in ultralight electric products for outdoor, travel, and home use. The brand is currently Top 1 on Amazon, with strong global sell-through and a proven product-market fit.\nVollyc, our second brand, focuses on 3C electronics, targeting practical, high-rotation consumer use cases.\n\nFrom our perspective, your platform and positioning are highly aligned with Flextail's product philosophy, especially in lightweight outdoor and travel-oriented electrics.\n\nWe have already contacted with your team, and we are now actively exploring opportunities in other regions.\nAttached, you will find a brief introduction to our brands and current product catalog for your reference.\n\nLooking ahead, we are planning to launch over 36 new SKUs in 2026, covering multiple usage scenarios and price tiers, which we believe could be of interest to your assortment strategy.\n\nIf you are available, I would greatly appreciate the opportunity to arrange a short introductory video meeting to present our brands and discuss potential collaboration opportunities.\n\nThank you for your time and consideration. I look forward to your reply.\n\nBest regards,\nLeo\nFlextail & Vollyc",
+      "websiteContactFlow": "open_official_contact_us_prepare_message_manual_submit",
       "action": "email_priority",
       "reason": "official_website_contact_channel",
       "alternateChannels": {
@@ -253,7 +256,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/29 11:02:39",
+        "localTime": "2026/6/29 11:44:12",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -318,7 +321,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/29 11:02:39",
+        "localTime": "2026/6/29 11:44:12",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -385,7 +388,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/29 11:02:39",
+        "localTime": "2026/6/29 11:44:12",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -394,6 +397,9 @@
       "contactUrl": "https://www.basspro.com/shop/en/contact-us",
       "contactSearchUrl": "https://www.google.com/search?q=site%3Awww.basspro.com%20%22Bass%20Pro%20Shops%22%20contact%20buyer%20wholesale%20email%20vendor",
       "emailFrom": "leo@flextailgear.com",
+      "websiteContactSubject": "Flextail & Vollyc collaboration inquiry for Bass Pro Shops",
+      "websiteContactMessage": "Dear Bass Pro Shops Team,\n\nNice to e-meet you.\nI am Leo, from Flextail & Vollyc.\n\nFlextail is our first and core brand, specializing in ultralight electric products for outdoor, travel, and home use. The brand is currently Top 1 on Amazon, with strong global sell-through and a proven product-market fit.\nVollyc, our second brand, focuses on 3C electronics, targeting practical, high-rotation consumer use cases.\n\nFrom our perspective, your platform and positioning are highly aligned with Flextail's product philosophy, especially in lightweight outdoor and travel-oriented electrics.\n\nWe have already contacted with your team, and we are now actively exploring opportunities in other regions.\nAttached, you will find a brief introduction to our brands and current product catalog for your reference.\n\nLooking ahead, we are planning to launch over 36 new SKUs in 2026, covering multiple usage scenarios and price tiers, which we believe could be of interest to your assortment strategy.\n\nIf you are available, I would greatly appreciate the opportunity to arrange a short introductory video meeting to present our brands and discuss potential collaboration opportunities.\n\nThank you for your time and consideration. I look forward to your reply.\n\nBest regards,\nLeo\nFlextail & Vollyc",
+      "websiteContactFlow": "open_official_contact_us_prepare_message_manual_submit",
       "action": "email_priority",
       "reason": "official_website_contact_channel",
       "alternateChannels": {
@@ -454,7 +460,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/29 11:02:39",
+        "localTime": "2026/6/29 11:44:12",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -519,7 +525,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/29 11:02:39",
+        "localTime": "2026/6/29 11:44:12",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -586,7 +592,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/29 11:02:39",
+        "localTime": "2026/6/29 11:44:12",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -595,6 +601,9 @@
       "contactUrl": "https://www.cabelas.com/shop/en/contact-us",
       "contactSearchUrl": "https://www.google.com/search?q=site%3Awww.cabelas.com%20%22Cabela's%22%20contact%20buyer%20wholesale%20email%20vendor",
       "emailFrom": "leo@flextailgear.com",
+      "websiteContactSubject": "Flextail & Vollyc collaboration inquiry for Cabela's",
+      "websiteContactMessage": "Dear Cabela's Team,\n\nNice to e-meet you.\nI am Leo, from Flextail & Vollyc.\n\nFlextail is our first and core brand, specializing in ultralight electric products for outdoor, travel, and home use. The brand is currently Top 1 on Amazon, with strong global sell-through and a proven product-market fit.\nVollyc, our second brand, focuses on 3C electronics, targeting practical, high-rotation consumer use cases.\n\nFrom our perspective, your platform and positioning are highly aligned with Flextail's product philosophy, especially in lightweight outdoor and travel-oriented electrics.\n\nWe have already contacted with your team, and we are now actively exploring opportunities in other regions.\nAttached, you will find a brief introduction to our brands and current product catalog for your reference.\n\nLooking ahead, we are planning to launch over 36 new SKUs in 2026, covering multiple usage scenarios and price tiers, which we believe could be of interest to your assortment strategy.\n\nIf you are available, I would greatly appreciate the opportunity to arrange a short introductory video meeting to present our brands and discuss potential collaboration opportunities.\n\nThank you for your time and consideration. I look forward to your reply.\n\nBest regards,\nLeo\nFlextail & Vollyc",
+      "websiteContactFlow": "open_official_contact_us_prepare_message_manual_submit",
       "action": "email_priority",
       "reason": "official_website_contact_channel",
       "alternateChannels": {
@@ -655,7 +664,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/29 11:02:39",
+        "localTime": "2026/6/29 11:44:12",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -720,7 +729,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/29 11:02:39",
+        "localTime": "2026/6/29 11:44:12",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -787,7 +796,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/29 11:02:39",
+        "localTime": "2026/6/29 11:44:12",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -796,6 +805,9 @@
       "contactUrl": "https://www.mec.ca/en/contact-us",
       "contactSearchUrl": "https://www.google.com/search?q=site%3Awww.mec.ca%20%22MEC%22%20contact%20buyer%20wholesale%20email%20vendor",
       "emailFrom": "leo@flextailgear.com",
+      "websiteContactSubject": "Flextail & Vollyc collaboration inquiry for MEC",
+      "websiteContactMessage": "Dear MEC Team,\n\nNice to e-meet you.\nI am Leo, from Flextail & Vollyc.\n\nFlextail is our first and core brand, specializing in ultralight electric products for outdoor, travel, and home use. The brand is currently Top 1 on Amazon, with strong global sell-through and a proven product-market fit.\nVollyc, our second brand, focuses on 3C electronics, targeting practical, high-rotation consumer use cases.\n\nFrom our perspective, your platform and positioning are highly aligned with Flextail's product philosophy, especially in lightweight outdoor and travel-oriented electrics.\n\nWe have already contacted with your team, and we are now actively exploring opportunities in other regions.\nAttached, you will find a brief introduction to our brands and current product catalog for your reference.\n\nLooking ahead, we are planning to launch over 36 new SKUs in 2026, covering multiple usage scenarios and price tiers, which we believe could be of interest to your assortment strategy.\n\nIf you are available, I would greatly appreciate the opportunity to arrange a short introductory video meeting to present our brands and discuss potential collaboration opportunities.\n\nThank you for your time and consideration. I look forward to your reply.\n\nBest regards,\nLeo\nFlextail & Vollyc",
+      "websiteContactFlow": "open_official_contact_us_prepare_message_manual_submit",
       "action": "email_priority",
       "reason": "official_website_contact_channel",
       "alternateChannels": {
@@ -856,7 +868,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/29 11:02:39",
+        "localTime": "2026/6/29 11:44:12",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -921,7 +933,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/29 11:02:39",
+        "localTime": "2026/6/29 11:44:12",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -988,7 +1000,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/29 11:02:39",
+        "localTime": "2026/6/29 11:44:12",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -997,6 +1009,9 @@
       "contactUrl": "https://www.gooutdoors.co.uk/contact-us",
       "contactSearchUrl": "https://www.google.com/search?q=site%3Awww.gooutdoors.co.uk%20%22GO%20Outdoors%22%20contact%20buyer%20wholesale%20email%20vendor",
       "emailFrom": "leo@flextailgear.com",
+      "websiteContactSubject": "Flextail & Vollyc collaboration inquiry for GO Outdoors",
+      "websiteContactMessage": "Dear GO Outdoors Team,\n\nNice to e-meet you.\nI am Leo, from Flextail & Vollyc.\n\nFlextail is our first and core brand, specializing in ultralight electric products for outdoor, travel, and home use. The brand is currently Top 1 on Amazon, with strong global sell-through and a proven product-market fit.\nVollyc, our second brand, focuses on 3C electronics, targeting practical, high-rotation consumer use cases.\n\nFrom our perspective, your platform and positioning are highly aligned with Flextail's product philosophy, especially in lightweight outdoor and travel-oriented electrics.\n\nWe have already contacted with your team, and we are now actively exploring opportunities in other regions.\nAttached, you will find a brief introduction to our brands and current product catalog for your reference.\n\nLooking ahead, we are planning to launch over 36 new SKUs in 2026, covering multiple usage scenarios and price tiers, which we believe could be of interest to your assortment strategy.\n\nIf you are available, I would greatly appreciate the opportunity to arrange a short introductory video meeting to present our brands and discuss potential collaboration opportunities.\n\nThank you for your time and consideration. I look forward to your reply.\n\nBest regards,\nLeo\nFlextail & Vollyc",
+      "websiteContactFlow": "open_official_contact_us_prepare_message_manual_submit",
       "action": "email_priority",
       "reason": "official_website_contact_channel",
       "alternateChannels": {
@@ -1058,7 +1073,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/29 11:02:39",
+        "localTime": "2026/6/29 11:44:12",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -1124,7 +1139,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/29 11:02:39",
+        "localTime": "2026/6/29 11:44:12",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -1192,7 +1207,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/29 11:02:39",
+        "localTime": "2026/6/29 11:44:12",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -1201,6 +1216,9 @@
       "contactUrl": "https://www.anacondastores.com/contact-us",
       "contactSearchUrl": "https://www.google.com/search?q=site%3Awww.anacondastores.com%20%22Anaconda%22%20contact%20buyer%20wholesale%20email%20vendor",
       "emailFrom": "leo@flextailgear.com",
+      "websiteContactSubject": "Flextail & Vollyc collaboration inquiry for Anaconda",
+      "websiteContactMessage": "Dear Anaconda Team,\n\nNice to e-meet you.\nI am Leo, from Flextail & Vollyc.\n\nFlextail is our first and core brand, specializing in ultralight electric products for outdoor, travel, and home use. The brand is currently Top 1 on Amazon, with strong global sell-through and a proven product-market fit.\nVollyc, our second brand, focuses on 3C electronics, targeting practical, high-rotation consumer use cases.\n\nFrom our perspective, your platform and positioning are highly aligned with Flextail's product philosophy, especially in lightweight outdoor and travel-oriented electrics.\n\nWe have already contacted with your team, and we are now actively exploring opportunities in other regions.\nAttached, you will find a brief introduction to our brands and current product catalog for your reference.\n\nLooking ahead, we are planning to launch over 36 new SKUs in 2026, covering multiple usage scenarios and price tiers, which we believe could be of interest to your assortment strategy.\n\nIf you are available, I would greatly appreciate the opportunity to arrange a short introductory video meeting to present our brands and discuss potential collaboration opportunities.\n\nThank you for your time and consideration. I look forward to your reply.\n\nBest regards,\nLeo\nFlextail & Vollyc",
+      "websiteContactFlow": "open_official_contact_us_prepare_message_manual_submit",
       "action": "email_priority",
       "reason": "official_website_contact_channel",
       "alternateChannels": {
@@ -1261,7 +1279,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/29 11:02:39",
+        "localTime": "2026/6/29 11:44:12",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -1334,7 +1352,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/29 11:02:39",
+        "localTime": "2026/6/29 11:44:12",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -1343,6 +1361,9 @@
       "contactUrl": "https://www.sail.ca/en/contact-us",
       "contactSearchUrl": "https://www.google.com/search?q=site%3Awww.sail.ca%20%22Sail%20Outdoors%22%20contact%20buyer%20wholesale%20email%20vendor",
       "emailFrom": "leo@flextailgear.com",
+      "websiteContactSubject": "Flextail & Vollyc collaboration inquiry for Sail Outdoors",
+      "websiteContactMessage": "Dear Sail Outdoors Team,\n\nNice to e-meet you.\nI am Leo, from Flextail & Vollyc.\n\nFlextail is our first and core brand, specializing in ultralight electric products for outdoor, travel, and home use. The brand is currently Top 1 on Amazon, with strong global sell-through and a proven product-market fit.\nVollyc, our second brand, focuses on 3C electronics, targeting practical, high-rotation consumer use cases.\n\nFrom our perspective, your platform and positioning are highly aligned with Flextail's product philosophy, especially in lightweight outdoor and travel-oriented electrics.\n\nWe have already contacted with your team, and we are now actively exploring opportunities in other regions.\nAttached, you will find a brief introduction to our brands and current product catalog for your reference.\n\nLooking ahead, we are planning to launch over 36 new SKUs in 2026, covering multiple usage scenarios and price tiers, which we believe could be of interest to your assortment strategy.\n\nIf you are available, I would greatly appreciate the opportunity to arrange a short introductory video meeting to present our brands and discuss potential collaboration opportunities.\n\nThank you for your time and consideration. I look forward to your reply.\n\nBest regards,\nLeo\nFlextail & Vollyc",
+      "websiteContactFlow": "open_official_contact_us_prepare_message_manual_submit",
       "action": "email_priority",
       "reason": "official_website_contact_channel",
       "alternateChannels": {
@@ -1409,7 +1430,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/29 11:02:39",
+        "localTime": "2026/6/29 11:44:12",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -1474,7 +1495,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/29 11:02:39",
+        "localTime": "2026/6/29 11:44:12",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -1539,7 +1560,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/29 11:02:39",
+        "localTime": "2026/6/29 11:44:12",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -1604,7 +1625,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/29 11:02:39",
+        "localTime": "2026/6/29 11:44:12",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -1671,7 +1692,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/29 11:02:39",
+        "localTime": "2026/6/29 11:44:12",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -1738,7 +1759,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/29 11:02:39",
+        "localTime": "2026/6/29 11:44:12",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -1805,7 +1826,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/29 11:02:39",
+        "localTime": "2026/6/29 11:44:12",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -1814,6 +1835,9 @@
       "contactUrl": "https://www.cotswoldoutdoor.com/contact-us",
       "contactSearchUrl": "https://www.google.com/search?q=site%3Awww.cotswoldoutdoor.com%20%22Cotswold%20Outdoor%22%20contact%20buyer%20wholesale%20email%20vendor",
       "emailFrom": "leo@flextailgear.com",
+      "websiteContactSubject": "Flextail & Vollyc collaboration inquiry for Cotswold Outdoor",
+      "websiteContactMessage": "Dear Cotswold Outdoor Team,\n\nNice to e-meet you.\nI am Leo, from Flextail & Vollyc.\n\nFlextail is our first and core brand, specializing in ultralight electric products for outdoor, travel, and home use. The brand is currently Top 1 on Amazon, with strong global sell-through and a proven product-market fit.\nVollyc, our second brand, focuses on 3C electronics, targeting practical, high-rotation consumer use cases.\n\nFrom our perspective, your platform and positioning are highly aligned with Flextail's product philosophy, especially in lightweight outdoor and travel-oriented electrics.\n\nWe have already contacted with your team, and we are now actively exploring opportunities in other regions.\nAttached, you will find a brief introduction to our brands and current product catalog for your reference.\n\nLooking ahead, we are planning to launch over 36 new SKUs in 2026, covering multiple usage scenarios and price tiers, which we believe could be of interest to your assortment strategy.\n\nIf you are available, I would greatly appreciate the opportunity to arrange a short introductory video meeting to present our brands and discuss potential collaboration opportunities.\n\nThank you for your time and consideration. I look forward to your reply.\n\nBest regards,\nLeo\nFlextail & Vollyc",
+      "websiteContactFlow": "open_official_contact_us_prepare_message_manual_submit",
       "action": "email_priority",
       "reason": "official_website_contact_channel",
       "alternateChannels": {
@@ -1874,7 +1898,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/29 11:02:39",
+        "localTime": "2026/6/29 11:44:12",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -1883,6 +1907,9 @@
       "contactUrl": "https://www.decathlon.de/help/app/contact",
       "contactSearchUrl": "https://www.google.com/search?q=site%3Awww.decathlon.de%20%22Decathlon%20Germany%22%20contact%20buyer%20wholesale%20email%20vendor",
       "emailFrom": "leo@flextailgear.com",
+      "websiteContactSubject": "Flextail & Vollyc collaboration inquiry for Decathlon Germany",
+      "websiteContactMessage": "Dear Decathlon Germany Team,\n\nNice to e-meet you.\nI am Leo, from Flextail & Vollyc.\n\nFlextail is our first and core brand, specializing in ultralight electric products for outdoor, travel, and home use. The brand is currently Top 1 on Amazon, with strong global sell-through and a proven product-market fit.\nVollyc, our second brand, focuses on 3C electronics, targeting practical, high-rotation consumer use cases.\n\nFrom our perspective, your platform and positioning are highly aligned with Flextail's product philosophy, especially in lightweight outdoor and travel-oriented electrics.\n\nWe have already contacted with your team, and we are now actively exploring opportunities in other regions.\nAttached, you will find a brief introduction to our brands and current product catalog for your reference.\n\nLooking ahead, we are planning to launch over 36 new SKUs in 2026, covering multiple usage scenarios and price tiers, which we believe could be of interest to your assortment strategy.\n\nIf you are available, I would greatly appreciate the opportunity to arrange a short introductory video meeting to present our brands and discuss potential collaboration opportunities.\n\nThank you for your time and consideration. I look forward to your reply.\n\nBest regards,\nLeo\nFlextail & Vollyc",
+      "websiteContactFlow": "open_official_contact_us_prepare_message_manual_submit",
       "action": "email_priority",
       "reason": "official_website_contact_channel",
       "alternateChannels": {
@@ -1943,7 +1970,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/29 11:02:39",
+        "localTime": "2026/6/29 11:44:12",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -1952,6 +1979,9 @@
       "contactUrl": "https://www.decathlon.fr/help/app/contact",
       "contactSearchUrl": "https://www.google.com/search?q=site%3Awww.decathlon.fr%20%22Decathlon%20France%22%20contact%20buyer%20wholesale%20email%20vendor",
       "emailFrom": "leo@flextailgear.com",
+      "websiteContactSubject": "Flextail & Vollyc collaboration inquiry for Decathlon France",
+      "websiteContactMessage": "Dear Decathlon France Team,\n\nNice to e-meet you.\nI am Leo, from Flextail & Vollyc.\n\nFlextail is our first and core brand, specializing in ultralight electric products for outdoor, travel, and home use. The brand is currently Top 1 on Amazon, with strong global sell-through and a proven product-market fit.\nVollyc, our second brand, focuses on 3C electronics, targeting practical, high-rotation consumer use cases.\n\nFrom our perspective, your platform and positioning are highly aligned with Flextail's product philosophy, especially in lightweight outdoor and travel-oriented electrics.\n\nWe have already contacted with your team, and we are now actively exploring opportunities in other regions.\nAttached, you will find a brief introduction to our brands and current product catalog for your reference.\n\nLooking ahead, we are planning to launch over 36 new SKUs in 2026, covering multiple usage scenarios and price tiers, which we believe could be of interest to your assortment strategy.\n\nIf you are available, I would greatly appreciate the opportunity to arrange a short introductory video meeting to present our brands and discuss potential collaboration opportunities.\n\nThank you for your time and consideration. I look forward to your reply.\n\nBest regards,\nLeo\nFlextail & Vollyc",
+      "websiteContactFlow": "open_official_contact_us_prepare_message_manual_submit",
       "action": "email_priority",
       "reason": "official_website_contact_channel",
       "alternateChannels": {
@@ -2012,7 +2042,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/29 11:02:39",
+        "localTime": "2026/6/29 11:44:12",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -2077,7 +2107,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/29 11:02:39",
+        "localTime": "2026/6/29 11:44:12",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -2144,7 +2174,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/29 11:02:39",
+        "localTime": "2026/6/29 11:44:12",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -2153,6 +2183,9 @@
       "contactUrl": "https://www.bcf.com.au/contact-us",
       "contactSearchUrl": "https://www.google.com/search?q=site%3Awww.bcf.com.au%20%22BCF%22%20contact%20buyer%20wholesale%20email%20vendor",
       "emailFrom": "leo@flextailgear.com",
+      "websiteContactSubject": "Flextail & Vollyc collaboration inquiry for BCF",
+      "websiteContactMessage": "Dear BCF Team,\n\nNice to e-meet you.\nI am Leo, from Flextail & Vollyc.\n\nFlextail is our first and core brand, specializing in ultralight electric products for outdoor, travel, and home use. The brand is currently Top 1 on Amazon, with strong global sell-through and a proven product-market fit.\nVollyc, our second brand, focuses on 3C electronics, targeting practical, high-rotation consumer use cases.\n\nFrom our perspective, your platform and positioning are highly aligned with Flextail's product philosophy, especially in lightweight outdoor and travel-oriented electrics.\n\nWe have already contacted with your team, and we are now actively exploring opportunities in other regions.\nAttached, you will find a brief introduction to our brands and current product catalog for your reference.\n\nLooking ahead, we are planning to launch over 36 new SKUs in 2026, covering multiple usage scenarios and price tiers, which we believe could be of interest to your assortment strategy.\n\nIf you are available, I would greatly appreciate the opportunity to arrange a short introductory video meeting to present our brands and discuss potential collaboration opportunities.\n\nThank you for your time and consideration. I look forward to your reply.\n\nBest regards,\nLeo\nFlextail & Vollyc",
+      "websiteContactFlow": "open_official_contact_us_prepare_message_manual_submit",
       "action": "email_priority",
       "reason": "official_website_contact_channel",
       "alternateChannels": {
@@ -2213,7 +2246,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/29 11:02:39",
+        "localTime": "2026/6/29 11:44:12",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -2278,7 +2311,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/29 11:02:39",
+        "localTime": "2026/6/29 11:44:12",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -2345,7 +2378,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/29 11:02:39",
+        "localTime": "2026/6/29 11:44:12",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -2354,6 +2387,9 @@
       "contactUrl": "https://www.kathmandu.co.nz/contact-us",
       "contactSearchUrl": "https://www.google.com/search?q=site%3Awww.kathmandu.co.nz%20%22Kathmandu%22%20contact%20buyer%20wholesale%20email%20vendor",
       "emailFrom": "leo@flextailgear.com",
+      "websiteContactSubject": "Flextail & Vollyc collaboration inquiry for Kathmandu",
+      "websiteContactMessage": "Dear Kathmandu Team,\n\nNice to e-meet you.\nI am Leo, from Flextail & Vollyc.\n\nFlextail is our first and core brand, specializing in ultralight electric products for outdoor, travel, and home use. The brand is currently Top 1 on Amazon, with strong global sell-through and a proven product-market fit.\nVollyc, our second brand, focuses on 3C electronics, targeting practical, high-rotation consumer use cases.\n\nFrom our perspective, your platform and positioning are highly aligned with Flextail's product philosophy, especially in lightweight outdoor and travel-oriented electrics.\n\nWe have already contacted with your team, and we are now actively exploring opportunities in other regions.\nAttached, you will find a brief introduction to our brands and current product catalog for your reference.\n\nLooking ahead, we are planning to launch over 36 new SKUs in 2026, covering multiple usage scenarios and price tiers, which we believe could be of interest to your assortment strategy.\n\nIf you are available, I would greatly appreciate the opportunity to arrange a short introductory video meeting to present our brands and discuss potential collaboration opportunities.\n\nThank you for your time and consideration. I look forward to your reply.\n\nBest regards,\nLeo\nFlextail & Vollyc",
+      "websiteContactFlow": "open_official_contact_us_prepare_message_manual_submit",
       "action": "email_priority",
       "reason": "official_website_contact_channel",
       "alternateChannels": {
@@ -2414,7 +2450,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/29 11:02:39",
+        "localTime": "2026/6/29 11:44:12",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -2479,7 +2515,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/29 11:02:39",
+        "localTime": "2026/6/29 11:44:12",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -2546,7 +2582,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/29 11:02:39",
+        "localTime": "2026/6/29 11:44:12",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -2555,6 +2591,9 @@
       "contactUrl": "https://www.bever.nl/klantenservice/contact.html",
       "contactSearchUrl": "https://www.google.com/search?q=site%3Awww.bever.nl%20%22Bever%22%20contact%20buyer%20wholesale%20email%20vendor",
       "emailFrom": "leo@flextailgear.com",
+      "websiteContactSubject": "Flextail & Vollyc collaboration inquiry for Bever",
+      "websiteContactMessage": "Dear Bever Team,\n\nNice to e-meet you.\nI am Leo, from Flextail & Vollyc.\n\nFlextail is our first and core brand, specializing in ultralight electric products for outdoor, travel, and home use. The brand is currently Top 1 on Amazon, with strong global sell-through and a proven product-market fit.\nVollyc, our second brand, focuses on 3C electronics, targeting practical, high-rotation consumer use cases.\n\nFrom our perspective, your platform and positioning are highly aligned with Flextail's product philosophy, especially in lightweight outdoor and travel-oriented electrics.\n\nWe have already contacted with your team, and we are now actively exploring opportunities in other regions.\nAttached, you will find a brief introduction to our brands and current product catalog for your reference.\n\nLooking ahead, we are planning to launch over 36 new SKUs in 2026, covering multiple usage scenarios and price tiers, which we believe could be of interest to your assortment strategy.\n\nIf you are available, I would greatly appreciate the opportunity to arrange a short introductory video meeting to present our brands and discuss potential collaboration opportunities.\n\nThank you for your time and consideration. I look forward to your reply.\n\nBest regards,\nLeo\nFlextail & Vollyc",
+      "websiteContactFlow": "open_official_contact_us_prepare_message_manual_submit",
       "action": "email_priority",
       "reason": "official_website_contact_channel",
       "alternateChannels": {
