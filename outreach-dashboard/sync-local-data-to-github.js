@@ -181,7 +181,7 @@ function syncOnce() {
   if (PUSH) {
     try {
       git(['push', 'origin', branch], { stdio: 'inherit' });
-      writeSyncStatus({ ok: true, pushed: true, branch, localCommit, remoteCommit, message });
+      writeSyncStatus({ ok: true, pushed: true, branch, localCommit, remoteCommit: localCommit, message });
     } catch (error) {
       writeSyncStatus({
         ok: false,
