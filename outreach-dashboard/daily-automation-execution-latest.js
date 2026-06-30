@@ -82,6 +82,12 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "reason": "official_website_contact_channel"
     },
     {
+      "id": "verified-Instagram-ellisbrigham",
+      "company": "Ellis Brigham UK (33K followers, since 1933)",
+      "action": "email_priority",
+      "reason": "email_channel_found"
+    },
+    {
       "id": "google-customer-anaconda-instagram",
       "company": "Anaconda",
       "action": "develop",
@@ -104,12 +110,6 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "company": "BCF",
       "action": "email_priority",
       "reason": "official_website_contact_channel"
-    },
-    {
-      "id": "verified-Instagram-ellisbrigham",
-      "company": "Ellis Brigham UK (33K followers, since 1933)",
-      "action": "email_priority",
-      "reason": "email_channel_found"
     },
     {
       "id": "verified-Instagram-mec",
@@ -146,11 +146,11 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     "totalLeads": 16,
     "highIcp": 16,
     "readyToDevelop": 8,
-    "dueNow": 17,
+    "dueNow": 18,
     "googleDiscovered": 17,
     "facebookDiscovered": 4,
     "websiteContactDiscovered": 9,
-    "scheduledLater": 6,
+    "scheduledLater": 5,
     "cooldown": 26,
     "emailPriority": 5,
     "openAgencyMarket": 15,
@@ -158,5 +158,5 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     "needsVerification": 0,
     "retainedLowIcp": 0
   },
-  "completedAt": "2026-06-30T07:02:14.850Z"
+  "completedAt": "2026-06-30T08:01:35.341Z"
 };
