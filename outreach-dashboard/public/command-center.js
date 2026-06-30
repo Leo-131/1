@@ -170,6 +170,54 @@
   function currentTask() {
     return executableDevelopmentTasks().sort(dealPriorityCompare)[0] || null;
   }
+  function executionResultKey(result) {
+    return normalizeKey(result && (result.id || result.taskId || result.automationTaskId || result.company || result.name));
+  }
+  function latestExecutionResultFor(item) {
+    const keys = [
+      item && item.id,
+      item && item.taskId,
+      item && item.automationTaskId,
+      item && item.company,
+      item && item.name,
+    ].map(normalizeKey).filter(Boolean);
+    return executionResults().find(result => keys.includes(executionResultKey(result)));
+  }
+  function executionResultRows() {
+    const completedAt = timestampOrEmpty(latestExecution && (latestExecution.completedAt || latestExecution.generatedAt));
+    return executionResults().map((result, index) => {
+      const base = findTaskById(result.id || result.taskId)
+        || taskIndex.get(normalizeKey(result.company))
+        || {};
+      const sendStatus = result.sendStatus || result.status || result.result && result.result.sendStatus || '';
+      const evidence = result.evidence || result.automationEvidence || result.result && result.result.evidence || '';
+      const targetUrl = result.targetUrl || result.url || result.result && result.result.targetUrl || base.targetUrl || base.verifiedTargetUrl || '';
+      return {
+        ...base,
+        ...result,
+        taskId: result.id || result.taskId || base.taskId || `execution-${index}`,
+        id: result.id || result.taskId || base.taskId || `execution-${index}`,
+        name: result.name || result.company || base.name || base.company,
+        company: result.company || result.name || base.company || base.name,
+        platform: result.platform || result.channel || base.platform || 'unknown',
+        targetUrl,
+        verifiedTargetUrl: targetUrl,
+        evidence,
+        sendStatus,
+        state: sendStatus === 'sent_confirmed' ? 'outcome_pending' : 'profile_scored',
+        lastTouch: sendStatus === 'sent_confirmed' ? completedAt : (result.lastTouch || base.lastTouch || completedAt),
+        resultCheckedAt: completedAt,
+        discoveredAt: completedAt || result.discoveredAt || base.discoveredAt || '',
+        profiledAt: completedAt || result.profiledAt || base.profiledAt || '',
+        approvedAt: sendStatus === 'sent_confirmed' ? completedAt : '',
+        sentAt: sendStatus === 'sent_confirmed' ? completedAt : '',
+        action: result.action || base.action || 'executed',
+        reason: result.reason || result.error || evidence || base.reason || 'latest_execution_result',
+        latestExecutionResult: true,
+        previouslyContacted: sendStatus === 'sent_confirmed' || Boolean(base.previouslyContacted),
+      };
+    });
+  }
   function latestQueueRows(source) {
     if (!latestRun) return [];
     const rows = source === 'scheduledLater'
@@ -185,6 +233,10 @@
         || taskIndex.get(normalizeKey(item.company))
         || {};
       const touch = confirmedTouchFor({ ...base, ...item });
+      const executionResult = latestExecutionResultFor(item);
+      const executionStatus = executionResult && (executionResult.sendStatus || executionResult.status || executionResult.result && executionResult.result.sendStatus);
+      const executionEvidence = executionResult && (executionResult.evidence || executionResult.automationEvidence || executionResult.result && executionResult.result.evidence);
+      const executionTime = timestampOrEmpty(latestExecution && (latestExecution.completedAt || latestExecution.generatedAt));
       return {
         ...base,
         ...item,
@@ -206,17 +258,20 @@
         action: item.action,
         reason: item.reason,
         workingTime: item.workingTime,
-        state: item.action === 'develop' ? 'target_verified'
+        state: executionStatus === 'sent_confirmed' ? 'outcome_pending'
+          : item.action === 'develop' ? 'target_verified'
           : item.action === 'retry_or_alternate_channel' ? 'outcome_pending'
             : item.action === 'email_priority' ? 'rerouted'
               : item.action === 'verify_target' ? 'profile_scored'
                 : 'auto_skipped',
-        sendStatus: touch ? 'sent_confirmed' : item.lastStatus || base.sendStatus || '',
-        lastTouch: touch ? touch.timestamp : item.lastTouch || base.lastTouch || '',
-        evidence: touch ? touch.evidence || base.evidence || '' : base.evidence || '',
+        sendStatus: executionStatus || (touch ? 'sent_confirmed' : item.lastStatus || base.sendStatus || ''),
+        lastTouch: executionStatus === 'sent_confirmed' && executionTime ? executionTime : (touch ? touch.timestamp : item.lastTouch || base.lastTouch || ''),
+        evidence: executionEvidence || (touch ? touch.evidence || base.evidence || '' : base.evidence || ''),
+        resultCheckedAt: executionResult && executionTime ? executionTime : item.resultCheckedAt || base.resultCheckedAt || '',
+        latestExecutionResult: Boolean(executionResult),
         identityStatus: base.identityStatus || (item.url ? 'verified' : 'pending'),
         identityVerified: Boolean(item.url || base.identityVerified),
-        previouslyContacted: Boolean(touch || base.previouslyContacted || item.action === 'retry_or_alternate_channel'),
+        previouslyContacted: Boolean(executionStatus === 'sent_confirmed' || touch || base.previouslyContacted || item.action === 'retry_or_alternate_channel'),
       };
     });
   }
@@ -244,7 +299,17 @@
   }
   function executionReportRecords(existingRecords) {
     const existingIds = new Set((existingRecords || []).map(item => item && item.taskId).filter(Boolean));
-    return (data.audit || [])
+    const completedAt = timestampOrEmpty(latestExecution && (latestExecution.completedAt || latestExecution.generatedAt));
+    const latestResults = executionResultRows()
+      .filter(item => !existingIds.has(item.taskId))
+      .map(item => ({
+        ...item,
+        templateId: item.templateId || 'daily-google-discovery',
+        approvedAt: item.sendStatus === 'sent_confirmed' ? completedAt : '',
+        sentAt: item.sendStatus === 'sent_confirmed' ? completedAt : '',
+        resultCheckedAt: completedAt,
+      }));
+    const auditResults = (data.audit || [])
       .filter(item => item && (item.result === 'sent_confirmed' || item.stage === 'sent_confirmed'))
       .filter(item => isValidTimestamp(item.timestamp) && !existingIds.has(item.taskId))
       .map(item => ({
@@ -260,6 +325,7 @@
         sentAt: item.timestamp,
         approvedAt: item.timestamp,
       }));
+    return [...latestResults, ...auditResults];
   }
   function findTaskById(taskId) {
     return latestQueueRows('all').find(item => item.taskId === taskId)
@@ -403,7 +469,16 @@
     ].map(canonicalLeadKey).filter(Boolean);
   }
   function latestCustomerRows() {
-    return latestRun ? latestQueueRows('all') : [];
+    if (!latestRun) return executionResultRows();
+    const rows = latestQueueRows('all');
+    const seen = new Set(rows.map(item => normalizeKey(item.taskId || item.id || item.company || item.name)).filter(Boolean));
+    const executionOnly = executionResultRows().filter(item => {
+      const key = normalizeKey(item.taskId || item.id || item.company || item.name);
+      if (!key || seen.has(key)) return false;
+      seen.add(key);
+      return true;
+    });
+    return [...executionOnly, ...rows];
   }
   function googleDiscoveryRows() {
     return latestGoogleDiscovery && Array.isArray(latestGoogleDiscovery.leads)
@@ -819,16 +894,26 @@
         ? `GitHub 已同步：${latestGithubSync.remoteCommit || latestGithubSync.localCommit || 'commit 已推送'}`
         : `GitHub 同步失败：${latestGithubSync.error || 'push 未完成'}`
       : 'GitHub 同步状态未加载';
-    const rows = system.dailyRows.slice(0, 12).map((item) => {
+    const resultIds = new Set();
+    const latestResultRows = executionResultRows().map((item) => {
+      resultIds.add(String(item.taskId || item.id || ''));
+      return item;
+    });
+    const detailRows = [
+      ...latestResultRows,
+      ...system.dailyRows.filter(item => !resultIds.has(String(item.taskId || item.id || ''))),
+    ];
+    const rows = detailRows.slice(0, 12).map((item) => {
       const skippedItem = skippedById.get(String(item.taskId || item.id || ''));
       const isGoogle = googleQueueItem(item);
-      const status = skippedItem ? actionLabel(skippedItem.action) : actionLabel(item.action);
+      const status = item.latestExecutionResult && item.sendStatus ? statusLabel(item.sendStatus) : (skippedItem ? actionLabel(skippedItem.action) : actionLabel(item.action));
       const reason = skippedItem ? humanSkipLabel(skippedItem.reason) : humanSkipLabel(item.reason);
+      const executionBadge = item.latestExecutionResult ? '<br><span class="cc-chip green">latest execution</span>' : '';
       return `<tr>
-        <td><b>${esc(item.company || item.name)}</b>${isGoogle ? '<br><span class="cc-chip green">Google discovered</span>' : ''}</td>
+        <td><b>${esc(item.company || item.name)}</b>${isGoogle ? '<br><span class="cc-chip green">Google discovered</span>' : ''}${executionBadge}</td>
         <td>${esc(item.country || item.countryEn || '')}</td>
         <td><span class="cc-chip ${item.action === 'email_priority' ? 'amber' : ''}">${esc(status)}</span></td>
-        <td>${esc(reason)}</td>
+        <td>${esc(item.evidence || reason)}</td>
         <td>${entryUrl(item) ? `<a href="${esc(entryUrl(item))}" target="_blank" rel="noopener">打开入口</a>` : '<span class="cc-sub">无入口</span>'}</td>
       </tr>`;
     }).join('');

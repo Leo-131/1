@@ -1,4 +1,4 @@
-﻿const CACHE_NAME = 'customer-development-system-v18-7-17-20260630-execution-visibility';
+﻿const CACHE_NAME = 'customer-development-system-v18-7-18-20260630-live-execution-refresh';
 const APP_SHELL = [
   './',
   './index.html',
