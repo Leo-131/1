@@ -277,6 +277,10 @@ test('daily execution is serial and can process a priority batch per run', () =>
 
 test('daily execution duplicate blocking is channel-aware', () => {
   assert.ok(mainSource.includes('function canonicalExactAutomationKey'));
+  assert.ok(mainSource.includes('SAME_DAY_DEVELOPMENT_STATUSES'));
+  assert.ok(mainSource.includes('sameDayAutomationCompanyKeys'));
+  assert.ok(mainSource.includes('same_day_customer_already_developed'));
+  assert.ok(mainSource.includes('const selectedCompanyKeys = new Set(sameDayCompanyKeys)'));
   assert.ok(mainSource.includes('function failedOpenResultShouldBlockRetry'));
   assert.ok(mainSource.includes('message_button_clicked_composer_not_found'));
   assert.ok(mainSource.includes("result.status !== 'failed_open' || failedOpenResultShouldBlockRetry(result)"));
@@ -286,4 +290,12 @@ test('daily execution duplicate blocking is channel-aware', () => {
   assert.ok(mainSource.includes('if (!itemPlatform || !resultPlatform || itemPlatform !== resultPlatform) return false'));
   assert.ok(mainSource.includes("const blocking = new Set(['sent_confirmed', 'failed_open', 'send_unconfirmed', 'account_followed', 'post_liked', 'website_contact_ready'])"));
   assert.ok(!mainSource.includes("'sent_confirmed', 'failed_open', 'send_unconfirmed', 'skipped'"));
+});
+
+test('daily queue generator blocks same-day repeat development by company', () => {
+  assert.ok(dailyRunnerSource.includes('SAME_DAY_DEVELOPMENT_STATUSES'));
+  assert.ok(dailyRunnerSource.includes('function companyLeadKeys'));
+  assert.ok(dailyRunnerSource.includes('sameDayDeveloped'));
+  assert.ok(dailyRunnerSource.includes('same_day_customer_already_developed'));
+  assert.ok(dailyRunnerSource.includes('context.sameDayByCompany'));
 });
