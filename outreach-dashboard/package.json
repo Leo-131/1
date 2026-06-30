@@ -47,6 +47,8 @@
       "google-lead-discovery-runner.js",
       "google-lead-discovery-latest.js",
       "daily-automation-execution-latest.js",
+      "system-visibility-latest.json",
+      "system-visibility-latest.js",
       "daily-automation-config.json",
       "daily-automation-latest.js",
       "github-sync/latest-status.js",

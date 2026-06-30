@@ -86,6 +86,8 @@ function syncOnce() {
   copyIfExists(latestRun, path.join(OUT, 'daily-run.json'));
   copyIfExists(latestCsv, path.join(OUT, 'daily-queue.csv'));
   copyIfExists(path.join(ROOT, 'google-lead-discovery-latest.csv'), path.join(OUT, 'google-discovery.csv'));
+  copyIfExists(path.join(ROOT, 'system-visibility-latest.json'), path.join(OUT, 'system-visibility-latest.json'));
+  copyIfExists(path.join(ROOT, 'system-visibility-latest.js'), path.join(OUT, 'system-visibility-latest.js'));
   copyIfExists(path.join(ROOT, 'autonomous-outreach-results.js'), path.join(OUT, 'autonomous-outreach-results.js'));
 
   const paths = [
@@ -93,6 +95,8 @@ function syncOnce() {
     'daily-automation-latest.js',
     'google-lead-discovery-latest.js',
     'daily-automation-execution-latest.js',
+    'system-visibility-latest.json',
+    'system-visibility-latest.js',
     'sync-local-data-to-github.js',
     'package.json',
   ];

@@ -16,20 +16,32 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "reason": "official_website_contact_channel"
     },
     {
+      "id": "google-customer-mec-instagram",
+      "company": "MEC",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_instagram"
+    },
+    {
       "id": "google-customer-mec-website-contact",
       "company": "MEC",
       "action": "email_priority",
       "reason": "official_website_contact_channel"
     },
     {
-      "id": "google-customer-decathlon-france-website-contact",
-      "company": "Decathlon France",
-      "action": "email_priority",
-      "reason": "official_website_contact_channel"
+      "id": "google-customer-cotswold-outdoor-instagram",
+      "company": "Cotswold Outdoor",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_instagram"
     },
     {
-      "id": "google-customer-decathlon-germany-website-contact",
-      "company": "Decathlon Germany",
+      "id": "google-customer-cotswold-outdoor-facebook",
+      "company": "Cotswold Outdoor",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_facebook"
+    },
+    {
+      "id": "google-customer-decathlon-france-website-contact",
+      "company": "Decathlon France",
       "action": "email_priority",
       "reason": "official_website_contact_channel"
     },
@@ -40,16 +52,46 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "reason": "official_website_contact_channel"
     },
     {
+      "id": "google-customer-go-outdoors-instagram",
+      "company": "GO Outdoors",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_instagram"
+    },
+    {
+      "id": "google-customer-go-outdoors-facebook",
+      "company": "GO Outdoors",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_facebook"
+    },
+    {
       "id": "google-customer-go-outdoors-website-contact",
       "company": "GO Outdoors",
       "action": "email_priority",
       "reason": "official_website_contact_channel"
     },
     {
+      "id": "google-customer-sail-outdoors-facebook",
+      "company": "Sail Outdoors",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_facebook"
+    },
+    {
       "id": "google-customer-sail-outdoors-website-contact",
       "company": "Sail Outdoors",
       "action": "email_priority",
       "reason": "official_website_contact_channel"
+    },
+    {
+      "id": "google-customer-anaconda-instagram",
+      "company": "Anaconda",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_instagram"
+    },
+    {
+      "id": "google-customer-anaconda-facebook",
+      "company": "Anaconda",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_facebook"
     },
     {
       "id": "google-customer-kathmandu-website-contact",
@@ -62,18 +104,6 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "company": "BCF",
       "action": "email_priority",
       "reason": "official_website_contact_channel"
-    },
-    {
-      "id": "verified-Instagram-macpac",
-      "company": "Macpac NZ/AU (76K followers, verified, outdoor brand)",
-      "action": "email_priority",
-      "reason": "email_channel_found"
-    },
-    {
-      "id": "verified-Instagram-stoneycreeknz",
-      "company": "Stoney Creek NZ (23K followers, NZ outdoor clothing brand)",
-      "action": "email_priority",
-      "reason": "email_channel_found"
     },
     {
       "id": "verified-Instagram-ellisbrigham",
@@ -94,8 +124,14 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "reason": "profile_valid_no_message_button"
     },
     {
-      "id": "verified-Instagram-anacondastores",
-      "company": "Anaconda Stores AU (60K followers, verified, largest outdoor retailer)",
+      "id": "verified-Instagram-macpac",
+      "company": "Macpac NZ/AU (76K followers, verified, outdoor brand)",
+      "action": "email_priority",
+      "reason": "email_channel_found"
+    },
+    {
+      "id": "verified-Instagram-stoneycreeknz",
+      "company": "Stoney Creek NZ (23K followers, NZ outdoor clothing brand)",
       "action": "email_priority",
       "reason": "email_channel_found"
     }
@@ -103,18 +139,18 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
   "summary": {
     "totalLeads": 16,
     "highIcp": 16,
-    "readyToDevelop": 10,
-    "dueNow": 12,
-    "googleDiscovered": 10,
-    "facebookDiscovered": 0,
-    "websiteContactDiscovered": 10,
-    "scheduledLater": 4,
-    "cooldown": 9,
+    "readyToDevelop": 8,
+    "dueNow": 17,
+    "googleDiscovered": 17,
+    "facebookDiscovered": 4,
+    "websiteContactDiscovered": 9,
+    "scheduledLater": 5,
+    "cooldown": 26,
     "emailPriority": 5,
     "openAgencyMarket": 15,
     "exclusiveAgencySkipped": 1,
     "needsVerification": 0,
     "retainedLowIcp": 0
   },
-  "completedAt": "2026-06-30T03:02:58.072Z"
+  "completedAt": "2026-06-30T05:35:01.086Z"
 };
