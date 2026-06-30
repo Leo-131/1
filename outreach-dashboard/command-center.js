@@ -739,9 +739,67 @@
   function googleQueueItem(item) {
     return item && (item.source === 'google_customer_discovery' || /^google-customer-/i.test(item.taskId || item.id || ''));
   }
+  function executionResults() {
+    return latestExecution ? (latestExecution.results || latestExecution.executed || []) : [];
+  }
+  function executionSkipped() {
+    return Array.isArray(latestExecution && latestExecution.skipped) ? latestExecution.skipped : [];
+  }
+  function humanSkipLabel(reason) {
+    const labels = {
+      official_website_contact_channel: '官网/邮件入口，需要人工或专用邮件流程',
+      email_channel_found: '已找到邮箱渠道，本轮不走 Chrome DM',
+      concrete_google_discovered_major_customer_instagram: 'Instagram 线索已入队，但安全门未放行',
+      concrete_google_discovered_major_customer_facebook: 'Facebook 线索已入队，但安全门未放行',
+      no_social_executable_tasks: '没有安全可执行的社媒任务',
+      cooldown_or_history: '冷却期或历史触达保护',
+      website_contact_ready_no_repeat: '官网/邮件已触达，不重复同渠道',
+      channel_already_touched: '该渠道已触达，防重复保护',
+      profile_valid_no_message_button: '主页有效，但没有可用 Message 按钮',
+    };
+    return labels[reason] || reasonLabel(reason);
+  }
+  function executionVisibilitySummary() {
+    const skipped = executionSkipped();
+    const results = executionResults();
+    const buckets = skipped.reduce((acc, item) => {
+      const key = item.reason || item.error || item.status || 'unknown';
+      acc[key] = (acc[key] || 0) + 1;
+      return acc;
+    }, {});
+    const bucketRows = Object.entries(buckets)
+      .sort((a, b) => b[1] - a[1])
+      .map(([reason, count]) => ({ reason, count, label: humanSkipLabel(reason) }));
+    const chromeEntered = results.some(item => item && (item.ok || item.status || item.evidence || item.automationEvidence));
+    const chromeStage = latestExecution && latestExecution.skippedOnly
+      ? 'Chrome 未进入执行阶段'
+      : chromeEntered
+        ? 'Chrome 已执行'
+        : latestExecution && latestExecution.pendingExecution
+          ? '等待执行'
+          : latestExecution
+            ? '未记录 Chrome 动作'
+            : '尚未加载执行结果';
+    const headline = latestExecution
+      ? latestExecution.pendingExecution
+        ? '队列已刷新，等待 daily:execute'
+        : latestExecution.skippedOnly
+          ? '本轮没有触达客户：全部被安全门跳过'
+          : latestExecution.ok
+            ? `本轮已执行 ${results.length} 条`
+            : `本轮执行失败：${latestExecution.error || '未知错误'}`
+      : '尚未加载 daily:execute 结果';
+    const nextAction = latestExecution && latestExecution.skippedOnly
+      ? '优先处理官网/邮件入口；社媒项需先满足身份、冷却、防重复和可发消息按钮条件。'
+      : latestExecution && latestExecution.ok
+        ? '查看下方执行证据与客户触达记录。'
+        : '等待下一次队列刷新或手动触发执行。';
+    return { skipped, results, bucketRows, chromeStage, headline, nextAction };
+  }
   function taskDetailPanel(system) {
     if (!latestRun) return '';
-    const skipped = Array.isArray(latestExecution && latestExecution.skipped) ? latestExecution.skipped : [];
+    const visibility = executionVisibilitySummary();
+    const skipped = visibility.skipped;
     const skippedById = new Map(skipped.map(item => [String(item.id || item.taskId || ''), item]));
     const generatedAt = latestExecution && (latestExecution.completedAt || latestExecution.generatedAt)
       ? new Date(latestExecution.completedAt || latestExecution.generatedAt).toLocaleString('zh-CN', { hour12: false })
@@ -764,7 +822,7 @@
       const skippedItem = skippedById.get(String(item.taskId || item.id || ''));
       const isGoogle = googleQueueItem(item);
       const status = skippedItem ? actionLabel(skippedItem.action) : actionLabel(item.action);
-      const reason = skippedItem ? reasonLabel(skippedItem.reason) : reasonLabel(item.reason);
+      const reason = skippedItem ? humanSkipLabel(skippedItem.reason) : humanSkipLabel(item.reason);
       return `<tr>
         <td><b>${esc(item.company || item.name)}</b>${isGoogle ? '<br><span class="cc-chip green">Google discovered</span>' : ''}</td>
         <td>${esc(item.country || item.countryEn || '')}</td>
@@ -773,6 +831,11 @@
         <td>${entryUrl(item) ? `<a href="${esc(entryUrl(item))}" target="_blank" rel="noopener">打开入口</a>` : '<span class="cc-sub">无入口</span>'}</td>
       </tr>`;
     }).join('');
+    const skipCards = visibility.bucketRows.length
+      ? visibility.bucketRows.map(item => `<div class="cc-skip-card"><b>${item.count}</b><span>${esc(item.label)}</span><em>${esc(item.reason)}</em></div>`).join('')
+      : '<div class="cc-skip-card"><b>0</b><span>没有跳过项</span><em>本轮可能已进入执行或仍待执行</em></div>';
+    const chromeNoteClass = latestExecution && latestExecution.skippedOnly ? ' cc-task-note-red' : '';
+    const chromeNote = `<div class="cc-task-note${chromeNoteClass}"><b>${esc(visibility.chromeStage)}</b><span>${esc(visibility.headline)}。${esc(visibility.nextAction)}</span></div>`;
     const cooldownRows = (system.cooldownRows || []).slice(0, 12).map(item => `<tr>
       <td><b>${esc(item.company || item.name)}</b>${item.lastStatus === 'website_contact_ready' ? '<br><span class="cc-chip amber">官网/邮件已触达</span>' : ''}</td>
       <td>${esc(item.country || item.countryEn || '')}</td>
@@ -788,6 +851,8 @@
           <div><span>本次执行</span><b>${latestExecution && (latestExecution.skippedOnly || latestExecution.pendingExecution) ? '0' : ((latestExecution && (latestExecution.results || latestExecution.executed || []).length) || 0)}</b><em>${esc(executionText)}</em></div>
           <div class="${latestGithubSync && !latestGithubSync.ok ? 'blocked' : ''}"><span>系统同步</span><b>${latestGithubSync && latestGithubSync.ok ? 'OK' : 'BLOCKED'}</b><em>${esc(syncText)}</em></div>
         </div>
+        ${chromeNote}
+        <div class="cc-skip-grid">${skipCards}</div>
         <div class="cc-task-note">${esc(executionText)}</div>
         <div class="cc-table-wrap"><table class="cc-table"><thead><tr><th>客户</th><th>国家</th><th>当前任务</th><th>为什么没有自动发送</th><th>入口</th></tr></thead><tbody>${rows}</tbody></table></div>
         ${cooldownRows ? `<div class="cc-panel-head cc-subhead"><h2>短期不重复 / 冷却中</h2><a href="${urlFor('queue', { queue: 'cooldown' })}">查看 ${system.cooldownRows.length} 条</a></div><div class="cc-table-wrap"><table class="cc-table"><thead><tr><th>客户</th><th>国家</th><th>状态</th><th>最近触达</th><th>规则</th></tr></thead><tbody>${cooldownRows}</tbody></table></div>` : ''}
