@@ -4,7 +4,7 @@
   "mode": "serial-single-target",
   "batchMode": "parallel-batches",
   "parallelLimit": 1,
-  "limit": 3,
+  "limit": 4,
   "queueDate": "2026-06-30",
   "queueSource": "dailyQueue",
   "executed": [
@@ -22,8 +22,8 @@
         "engine": "codex-chrome-extension-cdp",
         "port": 9224,
         "targetUrl": "https://www.basspro.com/shop/en/contact-us",
-        "tabId": "AB2117257B6A5FF30075DBA9954FDA54",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/AB2117257B6A5FF30075DBA9954FDA54",
+        "tabId": "DB79009D94038CA3C5DA90F93B0DFA53",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/DB79009D94038CA3C5DA90F93B0DFA53",
         "title": "Access Denied"
       },
       "result": {
@@ -37,8 +37,8 @@
           "engine": "codex-chrome-extension-cdp",
           "port": 9224,
           "targetUrl": "https://www.basspro.com/shop/en/contact-us",
-          "tabId": "AB2117257B6A5FF30075DBA9954FDA54",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/AB2117257B6A5FF30075DBA9954FDA54",
+          "tabId": "DB79009D94038CA3C5DA90F93B0DFA53",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/DB79009D94038CA3C5DA90F93B0DFA53",
           "title": "Access Denied"
         },
         "sendStatus": "approval_pending",
@@ -62,8 +62,8 @@
         "engine": "codex-chrome-extension-cdp",
         "port": 9224,
         "targetUrl": "https://www.cabelas.com/shop/en/contact-us",
-        "tabId": "1FF051924E35B53E21372000A0A8B123",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/1FF051924E35B53E21372000A0A8B123",
+        "tabId": "CC2890B0DE992B282164055881B0BA5B",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/CC2890B0DE992B282164055881B0BA5B",
         "title": "Access Denied"
       },
       "result": {
@@ -77,8 +77,8 @@
           "engine": "codex-chrome-extension-cdp",
           "port": 9224,
           "targetUrl": "https://www.cabelas.com/shop/en/contact-us",
-          "tabId": "1FF051924E35B53E21372000A0A8B123",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/1FF051924E35B53E21372000A0A8B123",
+          "tabId": "CC2890B0DE992B282164055881B0BA5B",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/CC2890B0DE992B282164055881B0BA5B",
           "title": "Access Denied"
         },
         "sendStatus": "approval_pending",
@@ -89,45 +89,85 @@
       }
     },
     {
-      "id": "google-customer-mec-instagram",
+      "id": "google-customer-mec-website-contact",
       "company": "MEC",
-      "action": "develop",
-      "platform": "instagram",
-      "targetUrl": "https://www.instagram.com/mec/",
-      "ok": true,
-      "sendStatus": "sent_confirmed",
-      "evidence": "instagram_message_sent_confirmed_composer_cleared;instagram_post_opened;post_like_not_available_or_already_active;comment_box_not_available;follow_clicked",
+      "action": "email_priority",
+      "platform": "email",
+      "targetUrl": "https://www.mec.ca/en/contact-us",
+      "ok": false,
+      "sendStatus": "approval_pending",
+      "evidence": "website_contact_entry_not_verified;no_contact_entry_control",
       "chromeOpen": {
         "ok": true,
         "engine": "codex-chrome-extension-cdp",
         "port": 9224,
-        "targetUrl": "https://www.instagram.com/mec/",
-        "tabId": "D83A7186B3D64828A8F6052F93AE6BCB",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/D83A7186B3D64828A8F6052F93AE6BCB",
-        "title": "Mountain Equipment Company (@mec) · Instagram 照片和视频"
+        "targetUrl": "https://www.mec.ca/en/contact-us",
+        "tabId": "C8B388841DDBC7098630C89062562E4F",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/C8B388841DDBC7098630C89062562E4F",
+        "title": "MEC"
+      },
+      "result": {
+        "ok": false,
+        "engine": "codex-chrome-extension-website-contact",
+        "browserEngine": "codex-chrome-extension-cdp",
+        "mode": "website_contact_prepare_manual_submit",
+        "targetUrl": "https://www.mec.ca/en/contact-us",
+        "chromeOpen": {
+          "ok": true,
+          "engine": "codex-chrome-extension-cdp",
+          "port": 9224,
+          "targetUrl": "https://www.mec.ca/en/contact-us",
+          "tabId": "C8B388841DDBC7098630C89062562E4F",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/C8B388841DDBC7098630C89062562E4F",
+          "title": "MEC"
+        },
+        "sendStatus": "approval_pending",
+        "subject": "Flextail & Vollyc | Lightweight Outdoor & 3C Electronics – Potential Cooperation",
+        "draft": "Dear MEC Team,\n\nNice to e-meet you.\nI am Leo, from Flextail & Vollyc.\n\nFlextail is our first and core brand, specializing in ultralight electric products for outdoor, travel, and home use. The brand is currently Top 1 on Amazon, with strong global sell-through and a proven product-market fit.\nVollyc, our second brand, focuses on 3C electronics, targeting practical, high-rotation consumer use cases.\n\nFrom our perspective, your platform and positioning are highly aligned with Flextail’s product philosophy, especially in lightweight outdoor and travel-oriented electrics.\n\nWe have already contacted with your team, and we are now actively exploring opportunities in other regions.\nAttached, you will find a brief introduction to our brands and current product catalog for your reference.\n\nLooking ahead, we are planning to launch over 36 new SKUs in 2026, covering multiple usage scenarios and price tiers, which we believe could be of interest to your assortment strategy.\n\nIf you are available, I would greatly appreciate the opportunity to arrange a short introductory video meeting to present our brands and discuss potential collaboration opportunities.\n\nThank you for your time and consideration. I look forward to your reply.\n\n[Flextail.com](https://www.flextail.com/), [vollyc.com](https://vollyc.com/)\n\n[Sincerely](https://wa.me/8617321028184)\n[Best Regard](https://wa.me/8617321028184)\n[Leo Liu](https://wa.me/8617321028184)\n[Sales](https://wa.me/8617321028184) [& Operations Director](https://wa.me/8617321028184)\n[Brand & ODM Department](https://wa.me/8617321028184)\n[Tel/whatsapp:  +86 17321028184](https://wa.me/8617321028184)\n\n[Email:  Leo@flextailgear.com](https://wa.me/8617321028184)\n[SHANGHAI FLEXTAIL TECHNOLOGY CO.,LTD.](https://wa.me/8617321028184)\n[Room103, Building No.6, No.1 Yanjiaqiao, Pudong District, ShangHai, China](https://wa.me/8617321028184)",
+        "evidence": "website_contact_entry_not_verified;no_contact_entry_control",
+        "output": "{\"verdict\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control\",\"nextAction\":\"Contact page opened, but no verified form, mailto link, vendor/business route, or clickable Contact Us path was detected. Continue manually before marking the lead ready.\",\"subject\":\"Flextail & Vollyc | Lightweight Outdoor & 3C Electronics – Potential Cooperation\",\"draft\":\"Dear MEC Team,\\n\\nNice to e-meet you.\\nI am Leo, from Flextail & Vollyc.\\n\\nFlextail is our first and core brand, specializing in ultralight electric products for outdoor, travel, and home use. The brand is currently Top 1 on Amazon, with strong global sell-through and a proven product-market fit.\\nVollyc, our second brand, focuses on 3C electronics, targeting practical, high-rotation consumer use cases.\\n\\nFrom our perspective, your platform and positioning are highly aligned with Flextail’s product philosophy, especially in lightweight outdoor and travel-oriented electrics.\\n\\nWe have already contacted with your team, and we are now actively exploring opportunities in other regions.\\nAttached, you will find a brief introduction to our brands and current product catalog for your reference.\\n\\nLooking ahead, we are planning to launch over 36 new SKUs in 2026, covering multiple usage scenarios and price tiers, which we believe could be of interest to your assortment strategy.\\n\\nIf you are available, I would greatly appreciate the opportunity to arrange a short introductory video meeting to present our brands and discuss potential collaboration opportunities.\\n\\nThank you for your time and consideration. I look forward to your reply.\\n\\n[Flextail.com](https://www.flextail.com/), [vollyc.com](https://vollyc.com/)\\n\\n[Sincerely](https://wa.me/8617321028184)\\n[Best Regard](https://wa.me/8617321028184)\\n[Leo Liu](https://wa.me/8617321028184)\\n[Sales](https://wa.me/8617321028184) [& Operations Director](https://wa.me/8617321028184)\\n[Brand & ODM Department](https://wa.me/8617321028184)\\n[Tel/whatsapp:  +86 17321028184](https://wa.me/8617321028184)\\n\\n[Email:  Leo@flextailgear.com](https://wa.me/8617321028184)\\n[SHANGHAI FLEXTAIL TECHNOLOGY CO.,LTD.](https://wa.me/8617321028184)\\n[Room103, Building No.6, No.1 Yanjiaqiao, Pudong District, ShangHai, China](https://wa.me/8617321028184)\",\"sendStatus\":\"approval_pending\"}"
+      }
+    },
+    {
+      "id": "google-customer-cotswold-outdoor-instagram",
+      "company": "Cotswold Outdoor",
+      "action": "develop",
+      "platform": "instagram",
+      "targetUrl": "https://www.instagram.com/cotswoldoutdoor/",
+      "ok": true,
+      "sendStatus": "sent_confirmed",
+      "evidence": "instagram_message_sent_confirmed_composer_cleared;instagram_post_opened;post_like_not_available_or_already_active;comment_box_not_available;follow_already_active",
+      "chromeOpen": {
+        "ok": true,
+        "engine": "codex-chrome-extension-cdp",
+        "port": 9224,
+        "targetUrl": "https://www.instagram.com/cotswoldoutdoor/",
+        "tabId": "BBC70DAE2F375EABA09482B5D7F4158D",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/BBC70DAE2F375EABA09482B5D7F4158D",
+        "title": "Cotswold Outdoor (@cotswoldoutdoor) · Instagram 照片和视频"
       },
       "result": {
         "ok": true,
         "engine": "codex-chrome-extension-cdp",
         "browserEngine": "codex-chrome-extension-cdp",
         "mode": "codex_chrome_primary_no_autoglm",
-        "targetUrl": "https://www.instagram.com/mec/",
+        "targetUrl": "https://www.instagram.com/cotswoldoutdoor/",
         "chromeOpen": {
           "ok": true,
           "engine": "codex-chrome-extension-cdp",
           "port": 9224,
-          "targetUrl": "https://www.instagram.com/mec/",
-          "tabId": "D83A7186B3D64828A8F6052F93AE6BCB",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/D83A7186B3D64828A8F6052F93AE6BCB",
-          "title": "Mountain Equipment Company (@mec) · Instagram 照片和视频"
+          "targetUrl": "https://www.instagram.com/cotswoldoutdoor/",
+          "tabId": "BBC70DAE2F375EABA09482B5D7F4158D",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/BBC70DAE2F375EABA09482B5D7F4158D",
+          "title": "Cotswold Outdoor (@cotswoldoutdoor) · Instagram 照片和视频"
         },
         "sendStatus": "sent_confirmed",
-        "output": "{\"verdict\":\"sent_confirmed\",\"evidence\":\"instagram_message_sent_confirmed_composer_cleared;instagram_post_opened;post_like_not_available_or_already_active;comment_box_not_available;follow_clicked\",\"nextAction\":\"Record outcome and monitor for reply.\",\"draft\":\"Hi MEC team, I'm Leo with FLEXTAIL — the top-selling ultralight outdoor electrics brand on Amazon. Our portable pumps, camping power, and lighting fit your camping and travel assortment well, with 36+ new SKUs coming for 2026. Could you connect me with your camping equipment category buyer for a short intro call?\",\"sendStatus\":\"sent_confirmed\"}",
+        "output": "{\"verdict\":\"sent_confirmed\",\"evidence\":\"instagram_message_sent_confirmed_composer_cleared;instagram_post_opened;post_like_not_available_or_already_active;comment_box_not_available;follow_already_active\",\"nextAction\":\"Record outcome and monitor for reply.\",\"draft\":\"Hi Cotswold Outdoor team — Leo from FLEXTAIL here. We're the top-selling ultralight outdoor electric brand on Amazon, with portable pumps, camping power, and lighting that fit your hiking and camping range. 36+ new SKUs are planned for 2026. Could you point me to the right category buyer for a brief brand intro?\",\"sendStatus\":\"sent_confirmed\"}",
         "decision": {
-          "fitScore": 94,
+          "fitScore": 90,
           "verdict": "develop",
-          "reason": "A+ Canadian outdoor retail co-op since 1971 with high buying capability and direct category fit for FLEXTAIL portable pumps, camping power, and lighting; general contact path available, buyer routing required.",
-          "draft": "Hi MEC team,\n\nNice to e-meet you. I'm Leo, representing FLEXTAIL — the top-selling ultralight outdoor electric brand on Amazon, with proven sell-through across portable pumps, camping power, and compact lighting that fit your camping and travel assortment.\n\nWe have 36+ new SKUs planned for 2026 across multiple price tiers and usage scenarios, which could complement your outdoor accessories range.\n\nCould you point me to the right camping equipment category buyer or vendor-review contact for a short intro video meeting?\n\nBest,\nLeo",
+          "reason": "A+ UK outdoor retail group with multi-brand stores and high category buying capability; FLEXTAIL portable pumps, camping power, and lighting directly fit their hiking and camping assortment.",
+          "draft": "Hi Cotswold Outdoor team,\n\nNice to e-meet you. I'm Leo from FLEXTAIL — the top-selling ultralight outdoor electric brand on Amazon, with proven sell-through across portable pumps, camping power, and lighting that fit your hiking and camping assortment.\n\nWe have 36+ new SKUs planned for 2026 across multiple price tiers and usage scenarios, and I'd welcome a brief brand and catalog introduction with your category team.\n\nCould you point me to the right outdoor equipment buyer or vendor-review contact for a short intro video meeting?\n\nBest,\nLeo",
           "nextStep": "open_profile"
         },
         "glmModel": "glm-5.2",
@@ -150,8 +190,8 @@
         "engine": "codex-chrome-extension-cdp",
         "port": 9224,
         "targetUrl": "https://www.basspro.com/shop/en/contact-us",
-        "tabId": "AB2117257B6A5FF30075DBA9954FDA54",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/AB2117257B6A5FF30075DBA9954FDA54",
+        "tabId": "DB79009D94038CA3C5DA90F93B0DFA53",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/DB79009D94038CA3C5DA90F93B0DFA53",
         "title": "Access Denied"
       },
       "result": {
@@ -165,8 +205,8 @@
           "engine": "codex-chrome-extension-cdp",
           "port": 9224,
           "targetUrl": "https://www.basspro.com/shop/en/contact-us",
-          "tabId": "AB2117257B6A5FF30075DBA9954FDA54",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/AB2117257B6A5FF30075DBA9954FDA54",
+          "tabId": "DB79009D94038CA3C5DA90F93B0DFA53",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/DB79009D94038CA3C5DA90F93B0DFA53",
           "title": "Access Denied"
         },
         "sendStatus": "approval_pending",
@@ -190,8 +230,8 @@
         "engine": "codex-chrome-extension-cdp",
         "port": 9224,
         "targetUrl": "https://www.cabelas.com/shop/en/contact-us",
-        "tabId": "1FF051924E35B53E21372000A0A8B123",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/1FF051924E35B53E21372000A0A8B123",
+        "tabId": "CC2890B0DE992B282164055881B0BA5B",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/CC2890B0DE992B282164055881B0BA5B",
         "title": "Access Denied"
       },
       "result": {
@@ -205,8 +245,8 @@
           "engine": "codex-chrome-extension-cdp",
           "port": 9224,
           "targetUrl": "https://www.cabelas.com/shop/en/contact-us",
-          "tabId": "1FF051924E35B53E21372000A0A8B123",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/1FF051924E35B53E21372000A0A8B123",
+          "tabId": "CC2890B0DE992B282164055881B0BA5B",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/CC2890B0DE992B282164055881B0BA5B",
           "title": "Access Denied"
         },
         "sendStatus": "approval_pending",
@@ -217,45 +257,85 @@
       }
     },
     {
-      "id": "google-customer-mec-instagram",
+      "id": "google-customer-mec-website-contact",
       "company": "MEC",
-      "action": "develop",
-      "platform": "instagram",
-      "targetUrl": "https://www.instagram.com/mec/",
-      "ok": true,
-      "sendStatus": "sent_confirmed",
-      "evidence": "instagram_message_sent_confirmed_composer_cleared;instagram_post_opened;post_like_not_available_or_already_active;comment_box_not_available;follow_clicked",
+      "action": "email_priority",
+      "platform": "email",
+      "targetUrl": "https://www.mec.ca/en/contact-us",
+      "ok": false,
+      "sendStatus": "approval_pending",
+      "evidence": "website_contact_entry_not_verified;no_contact_entry_control",
       "chromeOpen": {
         "ok": true,
         "engine": "codex-chrome-extension-cdp",
         "port": 9224,
-        "targetUrl": "https://www.instagram.com/mec/",
-        "tabId": "D83A7186B3D64828A8F6052F93AE6BCB",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/D83A7186B3D64828A8F6052F93AE6BCB",
-        "title": "Mountain Equipment Company (@mec) · Instagram 照片和视频"
+        "targetUrl": "https://www.mec.ca/en/contact-us",
+        "tabId": "C8B388841DDBC7098630C89062562E4F",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/C8B388841DDBC7098630C89062562E4F",
+        "title": "MEC"
+      },
+      "result": {
+        "ok": false,
+        "engine": "codex-chrome-extension-website-contact",
+        "browserEngine": "codex-chrome-extension-cdp",
+        "mode": "website_contact_prepare_manual_submit",
+        "targetUrl": "https://www.mec.ca/en/contact-us",
+        "chromeOpen": {
+          "ok": true,
+          "engine": "codex-chrome-extension-cdp",
+          "port": 9224,
+          "targetUrl": "https://www.mec.ca/en/contact-us",
+          "tabId": "C8B388841DDBC7098630C89062562E4F",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/C8B388841DDBC7098630C89062562E4F",
+          "title": "MEC"
+        },
+        "sendStatus": "approval_pending",
+        "subject": "Flextail & Vollyc | Lightweight Outdoor & 3C Electronics – Potential Cooperation",
+        "draft": "Dear MEC Team,\n\nNice to e-meet you.\nI am Leo, from Flextail & Vollyc.\n\nFlextail is our first and core brand, specializing in ultralight electric products for outdoor, travel, and home use. The brand is currently Top 1 on Amazon, with strong global sell-through and a proven product-market fit.\nVollyc, our second brand, focuses on 3C electronics, targeting practical, high-rotation consumer use cases.\n\nFrom our perspective, your platform and positioning are highly aligned with Flextail’s product philosophy, especially in lightweight outdoor and travel-oriented electrics.\n\nWe have already contacted with your team, and we are now actively exploring opportunities in other regions.\nAttached, you will find a brief introduction to our brands and current product catalog for your reference.\n\nLooking ahead, we are planning to launch over 36 new SKUs in 2026, covering multiple usage scenarios and price tiers, which we believe could be of interest to your assortment strategy.\n\nIf you are available, I would greatly appreciate the opportunity to arrange a short introductory video meeting to present our brands and discuss potential collaboration opportunities.\n\nThank you for your time and consideration. I look forward to your reply.\n\n[Flextail.com](https://www.flextail.com/), [vollyc.com](https://vollyc.com/)\n\n[Sincerely](https://wa.me/8617321028184)\n[Best Regard](https://wa.me/8617321028184)\n[Leo Liu](https://wa.me/8617321028184)\n[Sales](https://wa.me/8617321028184) [& Operations Director](https://wa.me/8617321028184)\n[Brand & ODM Department](https://wa.me/8617321028184)\n[Tel/whatsapp:  +86 17321028184](https://wa.me/8617321028184)\n\n[Email:  Leo@flextailgear.com](https://wa.me/8617321028184)\n[SHANGHAI FLEXTAIL TECHNOLOGY CO.,LTD.](https://wa.me/8617321028184)\n[Room103, Building No.6, No.1 Yanjiaqiao, Pudong District, ShangHai, China](https://wa.me/8617321028184)",
+        "evidence": "website_contact_entry_not_verified;no_contact_entry_control",
+        "output": "{\"verdict\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control\",\"nextAction\":\"Contact page opened, but no verified form, mailto link, vendor/business route, or clickable Contact Us path was detected. Continue manually before marking the lead ready.\",\"subject\":\"Flextail & Vollyc | Lightweight Outdoor & 3C Electronics – Potential Cooperation\",\"draft\":\"Dear MEC Team,\\n\\nNice to e-meet you.\\nI am Leo, from Flextail & Vollyc.\\n\\nFlextail is our first and core brand, specializing in ultralight electric products for outdoor, travel, and home use. The brand is currently Top 1 on Amazon, with strong global sell-through and a proven product-market fit.\\nVollyc, our second brand, focuses on 3C electronics, targeting practical, high-rotation consumer use cases.\\n\\nFrom our perspective, your platform and positioning are highly aligned with Flextail’s product philosophy, especially in lightweight outdoor and travel-oriented electrics.\\n\\nWe have already contacted with your team, and we are now actively exploring opportunities in other regions.\\nAttached, you will find a brief introduction to our brands and current product catalog for your reference.\\n\\nLooking ahead, we are planning to launch over 36 new SKUs in 2026, covering multiple usage scenarios and price tiers, which we believe could be of interest to your assortment strategy.\\n\\nIf you are available, I would greatly appreciate the opportunity to arrange a short introductory video meeting to present our brands and discuss potential collaboration opportunities.\\n\\nThank you for your time and consideration. I look forward to your reply.\\n\\n[Flextail.com](https://www.flextail.com/), [vollyc.com](https://vollyc.com/)\\n\\n[Sincerely](https://wa.me/8617321028184)\\n[Best Regard](https://wa.me/8617321028184)\\n[Leo Liu](https://wa.me/8617321028184)\\n[Sales](https://wa.me/8617321028184) [& Operations Director](https://wa.me/8617321028184)\\n[Brand & ODM Department](https://wa.me/8617321028184)\\n[Tel/whatsapp:  +86 17321028184](https://wa.me/8617321028184)\\n\\n[Email:  Leo@flextailgear.com](https://wa.me/8617321028184)\\n[SHANGHAI FLEXTAIL TECHNOLOGY CO.,LTD.](https://wa.me/8617321028184)\\n[Room103, Building No.6, No.1 Yanjiaqiao, Pudong District, ShangHai, China](https://wa.me/8617321028184)\",\"sendStatus\":\"approval_pending\"}"
+      }
+    },
+    {
+      "id": "google-customer-cotswold-outdoor-instagram",
+      "company": "Cotswold Outdoor",
+      "action": "develop",
+      "platform": "instagram",
+      "targetUrl": "https://www.instagram.com/cotswoldoutdoor/",
+      "ok": true,
+      "sendStatus": "sent_confirmed",
+      "evidence": "instagram_message_sent_confirmed_composer_cleared;instagram_post_opened;post_like_not_available_or_already_active;comment_box_not_available;follow_already_active",
+      "chromeOpen": {
+        "ok": true,
+        "engine": "codex-chrome-extension-cdp",
+        "port": 9224,
+        "targetUrl": "https://www.instagram.com/cotswoldoutdoor/",
+        "tabId": "BBC70DAE2F375EABA09482B5D7F4158D",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/BBC70DAE2F375EABA09482B5D7F4158D",
+        "title": "Cotswold Outdoor (@cotswoldoutdoor) · Instagram 照片和视频"
       },
       "result": {
         "ok": true,
         "engine": "codex-chrome-extension-cdp",
         "browserEngine": "codex-chrome-extension-cdp",
         "mode": "codex_chrome_primary_no_autoglm",
-        "targetUrl": "https://www.instagram.com/mec/",
+        "targetUrl": "https://www.instagram.com/cotswoldoutdoor/",
         "chromeOpen": {
           "ok": true,
           "engine": "codex-chrome-extension-cdp",
           "port": 9224,
-          "targetUrl": "https://www.instagram.com/mec/",
-          "tabId": "D83A7186B3D64828A8F6052F93AE6BCB",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/D83A7186B3D64828A8F6052F93AE6BCB",
-          "title": "Mountain Equipment Company (@mec) · Instagram 照片和视频"
+          "targetUrl": "https://www.instagram.com/cotswoldoutdoor/",
+          "tabId": "BBC70DAE2F375EABA09482B5D7F4158D",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/BBC70DAE2F375EABA09482B5D7F4158D",
+          "title": "Cotswold Outdoor (@cotswoldoutdoor) · Instagram 照片和视频"
         },
         "sendStatus": "sent_confirmed",
-        "output": "{\"verdict\":\"sent_confirmed\",\"evidence\":\"instagram_message_sent_confirmed_composer_cleared;instagram_post_opened;post_like_not_available_or_already_active;comment_box_not_available;follow_clicked\",\"nextAction\":\"Record outcome and monitor for reply.\",\"draft\":\"Hi MEC team, I'm Leo with FLEXTAIL — the top-selling ultralight outdoor electrics brand on Amazon. Our portable pumps, camping power, and lighting fit your camping and travel assortment well, with 36+ new SKUs coming for 2026. Could you connect me with your camping equipment category buyer for a short intro call?\",\"sendStatus\":\"sent_confirmed\"}",
+        "output": "{\"verdict\":\"sent_confirmed\",\"evidence\":\"instagram_message_sent_confirmed_composer_cleared;instagram_post_opened;post_like_not_available_or_already_active;comment_box_not_available;follow_already_active\",\"nextAction\":\"Record outcome and monitor for reply.\",\"draft\":\"Hi Cotswold Outdoor team — Leo from FLEXTAIL here. We're the top-selling ultralight outdoor electric brand on Amazon, with portable pumps, camping power, and lighting that fit your hiking and camping range. 36+ new SKUs are planned for 2026. Could you point me to the right category buyer for a brief brand intro?\",\"sendStatus\":\"sent_confirmed\"}",
         "decision": {
-          "fitScore": 94,
+          "fitScore": 90,
           "verdict": "develop",
-          "reason": "A+ Canadian outdoor retail co-op since 1971 with high buying capability and direct category fit for FLEXTAIL portable pumps, camping power, and lighting; general contact path available, buyer routing required.",
-          "draft": "Hi MEC team,\n\nNice to e-meet you. I'm Leo, representing FLEXTAIL — the top-selling ultralight outdoor electric brand on Amazon, with proven sell-through across portable pumps, camping power, and compact lighting that fit your camping and travel assortment.\n\nWe have 36+ new SKUs planned for 2026 across multiple price tiers and usage scenarios, which could complement your outdoor accessories range.\n\nCould you point me to the right camping equipment category buyer or vendor-review contact for a short intro video meeting?\n\nBest,\nLeo",
+          "reason": "A+ UK outdoor retail group with multi-brand stores and high category buying capability; FLEXTAIL portable pumps, camping power, and lighting directly fit their hiking and camping assortment.",
+          "draft": "Hi Cotswold Outdoor team,\n\nNice to e-meet you. I'm Leo from FLEXTAIL — the top-selling ultralight outdoor electric brand on Amazon, with proven sell-through across portable pumps, camping power, and lighting that fit your hiking and camping assortment.\n\nWe have 36+ new SKUs planned for 2026 across multiple price tiers and usage scenarios, and I'd welcome a brief brand and catalog introduction with your category team.\n\nCould you point me to the right outdoor equipment buyer or vendor-review contact for a short intro video meeting?\n\nBest,\nLeo",
           "nextStep": "open_profile"
         },
         "glmModel": "glm-5.2",
@@ -264,18 +344,6 @@
     }
   ],
   "skipped": [
-    {
-      "id": "google-customer-mec-website-contact",
-      "company": "MEC",
-      "action": "email_priority",
-      "reason": "official_website_contact_channel"
-    },
-    {
-      "id": "google-customer-cotswold-outdoor-instagram",
-      "company": "Cotswold Outdoor",
-      "action": "develop",
-      "reason": "concrete_google_discovered_major_customer_instagram"
-    },
     {
       "id": "google-customer-cotswold-outdoor-facebook",
       "company": "Cotswold Outdoor",
@@ -355,12 +423,6 @@
       "reason": "email_channel_found"
     },
     {
-      "id": "verified-Instagram-mec",
-      "company": "MEC Canada",
-      "action": "retry_or_alternate_channel",
-      "reason": "instagram_message_button_clicked_composer_not_found"
-    },
-    {
       "id": "verified-Instagram-triedandtrout",
       "company": "Tried & Trout Supply Co",
       "action": "retry_or_alternate_channel",
@@ -388,13 +450,13 @@
   "summary": {
     "totalLeads": 16,
     "highIcp": 16,
-    "readyToDevelop": 8,
-    "dueNow": 17,
-    "googleDiscovered": 17,
+    "readyToDevelop": 7,
+    "dueNow": 16,
+    "googleDiscovered": 16,
     "facebookDiscovered": 4,
     "websiteContactDiscovered": 9,
-    "scheduledLater": 6,
-    "cooldown": 26,
+    "scheduledLater": 5,
+    "cooldown": 28,
     "emailPriority": 4,
     "openAgencyMarket": 15,
     "exclusiveAgencySkipped": 1,
@@ -403,21 +465,21 @@
   },
   "systemRefresh": {
     "ok": true,
-    "stdout": "{\n  \"date\": \"2026-06-30\",\n  \"summary\": {\n    \"totalLeads\": 16,\n    \"highIcp\": 16,\n    \"readyToDevelop\": 7,\n    \"dueNow\": 16,\n    \"googleDiscovered\": 16,\n    \"facebookDiscovered\": 4,\n    \"websiteContactDiscovered\": 9,\n    \"scheduledLater\": 5,\n    \"cooldown\": 28,\n    \"emailPriority\": 4,\n    \"openAgencyMarket\": 15,\n    \"exclusiveAgencySkipped\": 1,\n    \"needsVerification\": 0,\n    \"retainedLowIcp\": 0\n  },\n  \"bugErrors\": 0,\n  \"queueFile\": \"E:\\\\New project\\\\outreach-dashboard\\\\daily-runs\\\\2026-06-30-daily-automation.json\",\n  \"csvFile\": \"E:\\\\New project\\\\outreach-dashboard\\\\daily-runs\\\\2026-06-30-daily-queue.csv\"\n}",
+    "stdout": "{\n  \"date\": \"2026-06-30\",\n  \"summary\": {\n    \"totalLeads\": 16,\n    \"highIcp\": 16,\n    \"readyToDevelop\": 5,\n    \"dueNow\": 14,\n    \"googleDiscovered\": 14,\n    \"facebookDiscovered\": 3,\n    \"websiteContactDiscovered\": 9,\n    \"scheduledLater\": 5,\n    \"cooldown\": 30,\n    \"emailPriority\": 4,\n    \"openAgencyMarket\": 15,\n    \"exclusiveAgencySkipped\": 1,\n    \"needsVerification\": 0,\n    \"retainedLowIcp\": 0\n  },\n  \"bugErrors\": 0,\n  \"queueFile\": \"E:\\\\New project\\\\outreach-dashboard\\\\daily-runs\\\\2026-06-30-daily-automation.json\",\n  \"csvFile\": \"E:\\\\New project\\\\outreach-dashboard\\\\daily-runs\\\\2026-06-30-daily-queue.csv\"\n}",
     "stderr": "",
     "error": "",
     "visibility": {
-      "updatedAt": "2026-06-30T12:42:02.886Z",
+      "updatedAt": "2026-06-30T12:47:21.185Z",
       "source": "main-refreshDailyAutomationArtifacts",
       "runDate": "2026-06-30",
-      "artifactGeneratedAt": "2026-06-30T12:42:02.160Z",
-      "executionGeneratedAt": "2026-06-30T12:37:37.552Z",
-      "githubSyncUpdatedAt": "2026-06-30T12:27:41.703Z",
+      "artifactGeneratedAt": "2026-06-30T12:47:20.424Z",
+      "executionGeneratedAt": "2026-06-30T12:42:03.260Z",
+      "githubSyncUpdatedAt": "2026-06-30T12:44:51.955Z",
       "counts": {
-        "dailyQueue": 16,
-        "googleDiscovered": 16,
+        "dailyQueue": 14,
+        "googleDiscovered": 14,
         "websiteContact": 9,
-        "cooldownQueue": 28,
+        "cooldownQueue": 30,
         "scheduledLater": 5
       },
       "visibleSections": [
@@ -458,5 +520,5 @@
       }
     }
   },
-  "completedAt": "2026-06-30T12:42:03.260Z"
+  "completedAt": "2026-06-30T12:47:21.524Z"
 }

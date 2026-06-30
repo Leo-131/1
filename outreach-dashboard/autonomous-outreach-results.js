@@ -454,5 +454,16 @@ window.AUTONOMOUS_OUTREACH_RESULTS = [
     "evidence": "instagram_message_sent_confirmed_composer_cleared;instagram_post_opened;post_like_not_available_or_already_active;comment_box_not_available;follow_clicked",
     "draft": "Hi MEC team, I'm Leo with FLEXTAIL — the top-selling ultralight outdoor electrics brand on Amazon. Our portable pumps, camping power, and lighting fit your camping and travel assortment well, with 36+ new SKUs coming for 2026. Could you connect me with your camping equipment category buyer for a short intro call?",
     "subject": ""
+  },
+  {
+    "task_id": "google-customer-cotswold-outdoor-instagram",
+    "approval_version": 1,
+    "status": "sent_confirmed",
+    "agent": "codex-chrome-extension",
+    "timestamp": "2026-06-30T12:47:20.213Z",
+    "target_url": "https://www.instagram.com/cotswoldoutdoor/",
+    "evidence": "instagram_message_sent_confirmed_composer_cleared;instagram_post_opened;post_like_not_available_or_already_active;comment_box_not_available;follow_already_active",
+    "draft": "Hi Cotswold Outdoor team — Leo from FLEXTAIL here. We're the top-selling ultralight outdoor electric brand on Amazon, with portable pumps, camping power, and lighting that fit your hiking and camping range. 36+ new SKUs are planned for 2026. Could you point me to the right category buyer for a brief brand intro?",
+    "subject": ""
   }
 ];

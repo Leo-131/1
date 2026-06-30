@@ -247,6 +247,7 @@ test('Codex Chrome execution can auto-send approved social outreach with confirm
   assert.ok(chromeDriverSource.includes('instagramCommentActionExpression'));
   assert.ok(chromeDriverSource.includes('instagram_post_opened'));
   assert.ok(chromeDriverSource.includes('post_liked'));
+  assert.ok(chromeDriverSource.includes('post_like_double_tap_attempted'));
   assert.ok(chromeDriverSource.includes('comment_submitted'));
   assert.ok(chromeDriverSource.includes("return `${kind}_already_active`"));
   assert.ok(chromeDriverSource.includes('followers|following|mutualonly'));

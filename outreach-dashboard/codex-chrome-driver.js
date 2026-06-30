@@ -301,11 +301,25 @@ function instagramPostTileExpression() {
   return `(() => {
     const visible = (el) => {
       const rect = el && el.getBoundingClientRect && el.getBoundingClientRect();
-      return Boolean(rect && rect.width > 80 && rect.height > 80 && rect.bottom > 0 && rect.top < window.innerHeight);
+      return Boolean(rect && rect.width > 80 && rect.height > 80);
     };
-    const links = Array.from(document.querySelectorAll('main a[href*="/p/"],main a[href*="/reel/"],main a[href*="/tv/"]'))
+    const mapLink = (el) => {
+      if (!visible(el)) return null;
+      el.scrollIntoView({ block: 'center', inline: 'center' });
+      const rect = el.getBoundingClientRect();
+      return {
+        x: Math.round(rect.left + rect.width / 2),
+        y: Math.round(rect.top + rect.height / 2),
+        href: el.href || '',
+        visible: true,
+      };
+    };
+    const preferred = Array.from(document.querySelectorAll('main a[href*="/p/"]')).map(mapLink).find(Boolean);
+    if (preferred) return JSON.stringify(preferred);
+    const links = Array.from(document.querySelectorAll('main a[href*="/reel/"],main a[href*="/tv/"]'))
       .filter(visible)
       .map((el) => {
+        el.scrollIntoView({ block: 'center', inline: 'center' });
         const rect = el.getBoundingClientRect();
         return {
           x: Math.round(rect.left + rect.width / 2),
@@ -578,7 +592,11 @@ async function submitInstagramPostEngagement(tab, text) {
     await sleep(700);
     evidence.push('post_liked');
   } else {
-    evidence.push('post_like_not_available_or_already_active');
+    await clickAt(tab, tile.x, tile.y).catch(() => null);
+    await sleep(120);
+    await clickAt(tab, tile.x, tile.y).catch(() => null);
+    await sleep(700);
+    evidence.push('post_like_double_tap_attempted');
   }
 
   const comment = String(text || '').trim();
