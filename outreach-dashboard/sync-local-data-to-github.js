@@ -133,6 +133,18 @@ function syncOnce() {
   copyIfExists(path.join(ROOT, 'system-visibility-latest.js'), path.join(OUT, 'system-visibility-latest.js'));
   copyIfExists(path.join(ROOT, 'autonomous-outreach-results.js'), path.join(OUT, 'autonomous-outreach-results.js'));
 
+  [
+    'daily-automation-latest.js',
+    'daily-automation-execution-latest.js',
+    'daily-automation-execution-latest.json',
+    'google-lead-discovery-latest.js',
+    'google-lead-discovery-latest.json',
+    'system-visibility-latest.js',
+    'system-visibility-latest.json',
+  ].forEach((name) => {
+    copyIfExists(path.join(ROOT, name), path.join(ROOT, 'public', name));
+  });
+
   const paths = [
     'github-sync',
     'public/github-sync',
