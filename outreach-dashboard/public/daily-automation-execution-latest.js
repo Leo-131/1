@@ -124,6 +124,12 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "reason": "profile_valid_no_message_button"
     },
     {
+      "id": "verified-Instagram-anacondastores",
+      "company": "Anaconda Stores AU (60K followers, verified, largest outdoor retailer)",
+      "action": "email_priority",
+      "reason": "email_channel_found"
+    },
+    {
       "id": "verified-Instagram-macpac",
       "company": "Macpac NZ/AU (76K followers, verified, outdoor brand)",
       "action": "email_priority",
@@ -144,7 +150,7 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     "googleDiscovered": 17,
     "facebookDiscovered": 4,
     "websiteContactDiscovered": 9,
-    "scheduledLater": 5,
+    "scheduledLater": 6,
     "cooldown": 26,
     "emailPriority": 5,
     "openAgencyMarket": 15,
@@ -152,5 +158,5 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     "needsVerification": 0,
     "retainedLowIcp": 0
   },
-  "completedAt": "2026-06-30T06:02:02.834Z"
+  "completedAt": "2026-06-30T07:02:14.850Z"
 };
