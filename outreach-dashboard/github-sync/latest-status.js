@@ -1,4 +1,4 @@
-﻿window.GITHUB_SYNC_LATEST = {
+window.GITHUB_SYNC_LATEST = {
     "updatedAt":  "2026-06-30T13:20:04.634Z",
     "ok":  true,
     "pushed":  true,
