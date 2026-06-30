@@ -66,6 +66,21 @@ function hasChanges(paths) {
   return output.length > 0;
 }
 
+function commitAndPushStatus(branch, latestDate) {
+  const statusPaths = [
+    'github-sync/latest-status.json',
+    'github-sync/latest-status.js',
+    'public/github-sync/latest-status.json',
+    'public/github-sync/latest-status.js',
+  ];
+  git(['add', '--', ...statusPaths], { stdio: 'pipe' });
+  if (!hasChanges(statusPaths)) return '';
+  git(['commit', '-m', `sync: github status ${latestDate}`], { stdio: 'inherit' });
+  const statusCommit = git(['rev-parse', 'HEAD']);
+  git(['push', 'origin', branch], { stdio: 'inherit' });
+  return statusCommit;
+}
+
 function remoteHead(branch) {
   return git(['ls-remote', 'origin', `refs/heads/${branch}`]).split(/\s+/)[0] || '';
 }
@@ -194,6 +209,7 @@ function syncOnce() {
     try {
       git(['push', 'origin', branch], { stdio: 'inherit' });
       writeSyncStatus({ ok: true, pushed: true, branch, localCommit, remoteCommit: localCommit, message });
+      commitAndPushStatus(branch, latestDate);
     } catch (error) {
       writeSyncStatus({
         ok: false,
