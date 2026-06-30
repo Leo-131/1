@@ -716,6 +716,7 @@ function discoveryQueue(limit, context = {}) {
   const history = knownTouchIndex(context.results || [], contacts);
   return (discovery.leads || [])
     .filter(item => Number(item.fitScore || 0) > ICP_THRESHOLD)
+    .filter(item => !item.doNotOutreach && item.action !== 'partner_account' && item.sendStatus !== 'partner_account')
     .filter(item => {
       const partnerKeys = leadKeys(item);
       const channelKeys = channelLeadKeys(item);
@@ -744,6 +745,7 @@ function discoveryCooldownQueue(limit, context = {}) {
   const history = knownTouchIndex(context.results || [], contacts);
   return (discovery.leads || [])
     .filter(item => Number(item.fitScore || 0) > ICP_THRESHOLD)
+    .filter(item => !item.doNotOutreach && item.action !== 'partner_account' && item.sendStatus !== 'partner_account')
     .filter(item => {
       const partnerKeys = leadKeys(item);
       if (partnerKeys.some(key => history.partners.has(key))) return false;
