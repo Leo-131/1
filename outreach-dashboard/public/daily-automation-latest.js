@@ -1,5 +1,5 @@
 window.DAILY_AUTOMATION_LATEST = {
-  "generatedAt": "2026-06-30T09:01:13.800Z",
+  "generatedAt": "2026-06-30T10:02:28.751Z",
   "date": "2026-06-30",
   "mode": "daily-icp-first-automation-loop",
   "executionLayer": "Codex Chrome Extension primary; AutoClaw compatible",
@@ -118,7 +118,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/30 17:01:13",
+        "localTime": "2026/6/30 18:02:28",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -200,7 +200,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/30 17:01:13",
+        "localTime": "2026/6/30 18:02:28",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -282,7 +282,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/30 17:01:13",
+        "localTime": "2026/6/30 18:02:28",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -357,7 +357,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/30 17:01:13",
+        "localTime": "2026/6/30 18:02:28",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -439,7 +439,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/30 17:01:13",
+        "localTime": "2026/6/30 18:02:28",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -514,7 +514,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/30 17:01:13",
+        "localTime": "2026/6/30 18:02:28",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -591,7 +591,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/30 17:01:13",
+        "localTime": "2026/6/30 18:02:28",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -673,7 +673,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/30 17:01:13",
+        "localTime": "2026/6/30 18:02:28",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -755,7 +755,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/30 17:01:13",
+        "localTime": "2026/6/30 18:02:28",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -830,7 +830,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/30 17:01:13",
+        "localTime": "2026/6/30 18:02:28",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -907,7 +907,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/30 17:01:13",
+        "localTime": "2026/6/30 18:02:28",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -989,7 +989,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/30 17:01:13",
+        "localTime": "2026/6/30 18:02:28",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -1072,7 +1072,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/30 17:01:13",
+        "localTime": "2026/6/30 18:02:28",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -1145,7 +1145,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/London",
-        "localTime": "Tue 10:01",
+        "localTime": "Tue 11:02",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -1211,7 +1211,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/30 17:01:13",
+        "localTime": "2026/6/30 18:02:28",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -1287,7 +1287,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/30 17:01:13",
+        "localTime": "2026/6/30 18:02:28",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -1364,7 +1364,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/30 17:01:13",
+        "localTime": "2026/6/30 18:02:28",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -1446,7 +1446,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/30 17:01:13",
+        "localTime": "2026/6/30 18:02:28",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -1515,7 +1515,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/London",
-        "localTime": "Tue 10:01",
+        "localTime": "Tue 11:02",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -1565,7 +1565,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/London",
-        "localTime": "Tue 10:01",
+        "localTime": "Tue 11:02",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -1575,56 +1575,6 @@ window.DAILY_AUTOMATION_LATEST = {
       "contactChannelScore": 0,
       "dealProbabilityScore": 195,
       "priorityScore": 195
-    },
-    {
-      "id": "verified-Instagram-kfoutdoor",
-      "name": "kfoutdoor",
-      "company": "KF Outdoor Official (33K followers, outdoor & sporting goods)",
-      "platform": "instagram",
-      "country": "?????",
-      "countryEn": "Indonesia",
-      "fitScore": 78,
-      "fitTier": "A",
-      "marketScore": 3.4,
-      "marketStatus": "可开拓",
-      "agencyState": "open",
-      "url": "https://www.instagram.com/kfoutdoor/",
-      "website": "",
-      "platformUrl": "https://www.instagram.com/kfoutdoor/",
-      "contactUrl": "",
-      "contactSearchUrl": "",
-      "emailFrom": "",
-      "websiteContactSubject": "",
-      "websiteContactMessage": "",
-      "websiteContactFlow": "",
-      "publicEmail": "",
-      "publicEmailStatus": "",
-      "contactPhone": "",
-      "vendorPortal": "",
-      "linkedinUrl": "",
-      "headquarters": "",
-      "founded": "",
-      "companyScale": "",
-      "dataSources": null,
-      "alternateChannels": null,
-      "lastStatus": "sent_confirmed",
-      "lastEvidence": "confirmed DM follow-up sent via logged-in Chrome session",
-      "lastTouch": "2026-06-18T10:09:35.863Z",
-      "action": "cooldown",
-      "reason": "previous_sent_confirmed_no_duplicate_dm",
-      "workingTime": {
-        "dueNow": true,
-        "timeZone": "Asia/Jakarta",
-        "localTime": "Tue 16:01",
-        "window": "afternoon",
-        "nextBest": "now",
-        "weight": 0.9
-      },
-      "targetRegion": "southeast_asia",
-      "targetRegionScore": 35,
-      "contactChannelScore": 0,
-      "dealProbabilityScore": 172,
-      "priorityScore": 172
     },
     {
       "id": "verified-Instagram-prago.outdoors",
@@ -1665,7 +1615,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "Asia/Kolkata",
-        "localTime": "Tue 14:31",
+        "localTime": "Tue 15:32",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
@@ -1715,7 +1665,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Tue 05:01",
+        "localTime": "Tue 06:02",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -1765,7 +1715,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Tue 05:01",
+        "localTime": "Tue 06:02",
         "window": "outside_work_hours",
         "nextBest": "America/Toronto morning",
         "weight": 0
@@ -1775,6 +1725,56 @@ window.DAILY_AUTOMATION_LATEST = {
       "contactChannelScore": 0,
       "dealProbabilityScore": 175,
       "priorityScore": 175
+    },
+    {
+      "id": "verified-Instagram-kfoutdoor",
+      "name": "kfoutdoor",
+      "company": "KF Outdoor Official (33K followers, outdoor & sporting goods)",
+      "platform": "instagram",
+      "country": "?????",
+      "countryEn": "Indonesia",
+      "fitScore": 78,
+      "fitTier": "A",
+      "marketScore": 3.4,
+      "marketStatus": "可开拓",
+      "agencyState": "open",
+      "url": "https://www.instagram.com/kfoutdoor/",
+      "website": "",
+      "platformUrl": "https://www.instagram.com/kfoutdoor/",
+      "contactUrl": "",
+      "contactSearchUrl": "",
+      "emailFrom": "",
+      "websiteContactSubject": "",
+      "websiteContactMessage": "",
+      "websiteContactFlow": "",
+      "publicEmail": "",
+      "publicEmailStatus": "",
+      "contactPhone": "",
+      "vendorPortal": "",
+      "linkedinUrl": "",
+      "headquarters": "",
+      "founded": "",
+      "companyScale": "",
+      "dataSources": null,
+      "alternateChannels": null,
+      "lastStatus": "sent_confirmed",
+      "lastEvidence": "confirmed DM follow-up sent via logged-in Chrome session",
+      "lastTouch": "2026-06-18T10:09:35.863Z",
+      "action": "cooldown",
+      "reason": "previous_sent_confirmed_no_duplicate_dm",
+      "workingTime": {
+        "dueNow": false,
+        "timeZone": "Asia/Jakarta",
+        "localTime": "Tue 17:02",
+        "window": "outside_work_hours",
+        "nextBest": "Asia/Jakarta morning",
+        "weight": 0
+      },
+      "targetRegion": "southeast_asia",
+      "targetRegionScore": 35,
+      "contactChannelScore": 0,
+      "dealProbabilityScore": 172,
+      "priorityScore": 172
     },
     {
       "id": "verified-Instagram-huntingandfishingnewzealand",
@@ -1815,7 +1815,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Pacific/Auckland",
-        "localTime": "Tue 21:01",
+        "localTime": "Tue 22:02",
         "window": "outside_work_hours",
         "nextBest": "Pacific/Auckland morning",
         "weight": 0
@@ -1865,7 +1865,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Pacific/Auckland",
-        "localTime": "Tue 21:01",
+        "localTime": "Tue 22:02",
         "window": "outside_work_hours",
         "nextBest": "Pacific/Auckland morning",
         "weight": 0
@@ -1915,7 +1915,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Pacific/Auckland",
-        "localTime": "Tue 21:01",
+        "localTime": "Tue 22:02",
         "window": "outside_work_hours",
         "nextBest": "Pacific/Auckland morning",
         "weight": 0
@@ -1980,7 +1980,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/30 17:01:13",
+        "localTime": "2026/6/30 18:02:28",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -2058,7 +2058,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/30 17:01:13",
+        "localTime": "2026/6/30 18:02:28",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -2138,7 +2138,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/30 17:01:13",
+        "localTime": "2026/6/30 18:02:28",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -2216,7 +2216,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/30 17:01:13",
+        "localTime": "2026/6/30 18:02:28",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -2296,7 +2296,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/30 17:01:13",
+        "localTime": "2026/6/30 18:02:28",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -2376,7 +2376,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/30 17:01:13",
+        "localTime": "2026/6/30 18:02:28",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -2461,7 +2461,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/30 17:01:13",
+        "localTime": "2026/6/30 18:02:28",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -2539,7 +2539,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/30 17:01:13",
+        "localTime": "2026/6/30 18:02:28",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -2619,7 +2619,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/30 17:01:13",
+        "localTime": "2026/6/30 18:02:28",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -2697,7 +2697,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/30 17:01:13",
+        "localTime": "2026/6/30 18:02:28",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -2777,7 +2777,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/30 17:01:13",
+        "localTime": "2026/6/30 18:02:28",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -2855,7 +2855,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/30 17:01:13",
+        "localTime": "2026/6/30 18:02:28",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -2936,7 +2936,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/30 17:01:13",
+        "localTime": "2026/6/30 18:02:28",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -3021,7 +3021,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/30 17:01:13",
+        "localTime": "2026/6/30 18:02:28",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -3099,7 +3099,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/30 17:01:13",
+        "localTime": "2026/6/30 18:02:28",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -3179,7 +3179,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/30 17:01:13",
+        "localTime": "2026/6/30 18:02:28",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -3257,7 +3257,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/30 17:01:13",
+        "localTime": "2026/6/30 18:02:28",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -3324,7 +3324,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Tue 05:01",
+        "localTime": "Tue 06:02",
         "window": "outside_work_hours",
         "nextBest": "America/Toronto morning",
         "weight": 0
@@ -3374,7 +3374,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Tue 05:01",
+        "localTime": "Tue 06:02",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -3424,7 +3424,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Australia/Sydney",
-        "localTime": "Tue 19:01",
+        "localTime": "Tue 20:02",
         "window": "outside_work_hours",
         "nextBest": "Australia/Sydney morning",
         "weight": 0
@@ -3474,7 +3474,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Pacific/Auckland",
-        "localTime": "Tue 21:01",
+        "localTime": "Tue 22:02",
         "window": "outside_work_hours",
         "nextBest": "Pacific/Auckland morning",
         "weight": 0
@@ -3524,7 +3524,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Pacific/Auckland",
-        "localTime": "Tue 21:01",
+        "localTime": "Tue 22:02",
         "window": "outside_work_hours",
         "nextBest": "Pacific/Auckland morning",
         "weight": 0
@@ -3558,8 +3558,8 @@ window.DAILY_AUTOMATION_LATEST = {
     "byAction": {
       "email_priority": 5,
       "cooldown": 9,
-      "skip_exclusive_agency": 1,
-      "retry_or_alternate_channel": 1
+      "retry_or_alternate_channel": 1,
+      "skip_exclusive_agency": 1
     },
     "keywordOpportunities": [
       {
