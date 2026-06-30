@@ -137,6 +137,10 @@ function canonicalLeadKey(value) {
     .replace(/[^a-z0-9.]+/g, '');
 }
 
+function automationLeadFamilyKey(value) {
+  return canonicalLeadKey(value);
+}
+
 function canonicalExactAutomationKey(value) {
   return String(value || '')
     .toLowerCase()
@@ -187,6 +191,9 @@ function automationCompanyKeys(value = {}) {
   return new Set([
     value.company,
     value.name,
+    automationLeadFamilyKey(value.id),
+    automationLeadFamilyKey(value.taskId),
+    automationLeadFamilyKey(value.task_id),
   ].map(canonicalLeadKey).filter(Boolean));
 }
 
@@ -215,6 +222,58 @@ function blockingAutomationResultFor(item) {
       if (!itemPlatform || !resultPlatform || itemPlatform !== resultPlatform) return false;
       return setsIntersect(companyKeys, automationCompanyKeys(result));
     }) || null;
+}
+
+const SAME_DAY_DEVELOPMENT_STATUSES = new Set([
+  'sent_confirmed',
+  'send_unconfirmed',
+  'approval_pending',
+  'draft_prepared',
+  'prepared_not_sent',
+  'website_contact_ready',
+  'account_followed',
+  'post_liked',
+]);
+
+function automationLocalDay(value, timeZone = 'Asia/Shanghai') {
+  const time = typeof value === 'number' ? value : Date.parse(value || '');
+  if (!Number.isFinite(time)) return '';
+  return new Intl.DateTimeFormat('en-CA', {
+    timeZone,
+    year: 'numeric',
+    month: '2-digit',
+    day: '2-digit',
+  }).format(new Date(time));
+}
+
+function isSameAutomationDay(value, now = Date.now()) {
+  const day = automationLocalDay(value);
+  return Boolean(day && day === automationLocalDay(now));
+}
+
+function sameDayDevelopmentResult(result = {}, now = Date.now()) {
+  return Boolean(result
+    && SAME_DAY_DEVELOPMENT_STATUSES.has(result.status)
+    && isSameAutomationDay(result.timestamp, now)
+    && isVerifiedSameDayWebsiteResult(result));
+}
+
+function isVerifiedSameDayWebsiteResult(result = {}) {
+  if (result.status !== 'website_contact_ready') return true;
+  return websiteContactResultIsVerified(result);
+}
+
+function sameDayAutomationCompanyKeys(results = [], now = Date.now()) {
+  const keys = new Set();
+  for (const result of results) {
+    if (!sameDayDevelopmentResult(result, now)) continue;
+    automationCompanyKeys(result).forEach(key => keys.add(key));
+  }
+  return keys;
+}
+
+function itemBlockedBySameDayCompany(item, companyKeys) {
+  return setsIntersect(automationCompanyKeys(item), companyKeys);
 }
 
 function failedOpenResultShouldBlockRetry(result = {}) {
@@ -2171,21 +2230,37 @@ async function runDailyAutomationQueue(payload = {}) {
   const limit = requestedLimit;
   const parallelLimit = 1;
   const executableActions = new Set(['develop', 'retry_or_alternate_channel', 'discover_and_develop', 'email_priority']);
-  const dueExecutable = latest.dailyQueue
+  const previousResults = readJsonScriptArray(path.join(__dirname, 'autonomous-outreach-results.js'), 'AUTONOMOUS_OUTREACH_RESULTS');
+  const sameDayCompanyKeys = sameDayAutomationCompanyKeys(previousResults);
+  const dueCandidates = latest.dailyQueue
     .filter(item => executableActions.has(item.action))
     .filter(item => item.url)
-    .filter(item => !blockingAutomationResultFor(item))
-    .slice(0, limit);
+    .filter(item => !blockingAutomationResultFor(item));
   const scheduledExecutable = (latest.scheduledLater || [])
     .filter(item => executableActions.has(item.action))
     .filter(item => item.url)
-    .filter(item => !blockingAutomationResultFor(item))
-    .slice(0, limit);
-  const executable = dueExecutable.length ? dueExecutable : scheduledExecutable;
-  const queueSource = dueExecutable.length ? 'dailyQueue' : 'scheduledLater';
-  const skipped = [...latest.dailyQueue, ...(latest.scheduledLater || [])]
+    .filter(item => !blockingAutomationResultFor(item));
+  const queueSource = dueCandidates.length ? 'dailyQueue' : 'scheduledLater';
+  const candidatePool = queueSource === 'dailyQueue' ? dueCandidates : scheduledExecutable;
+  const executable = [];
+  const skipped = [];
+  for (const item of candidatePool) {
+    if (itemBlockedBySameDayCompany(item, sameDayCompanyKeys)) {
+      skipped.push({
+        id: item.id,
+        company: item.company,
+        action: item.action,
+        reason: 'same_day_customer_already_developed',
+      });
+      continue;
+    }
+    executable.push(item);
+    if (executable.length >= limit) break;
+  }
+  [...latest.dailyQueue, ...(latest.scheduledLater || [])]
     .filter(item => !executable.some(run => run.id === item.id))
-    .map(item => ({ id: item.id, company: item.company, action: item.action, reason: item.reason }));
+    .filter(item => !skipped.some(run => run.id === item.id))
+    .forEach(item => skipped.push({ id: item.id, company: item.company, action: item.action, reason: item.reason }));
 
   if (!executable.length) {
     return {
@@ -2205,6 +2280,10 @@ async function runDailyAutomationQueue(payload = {}) {
       const result = await executeLeadAutomation(queueItemToLead(item), { ignoreCooldown: true, allowParallel: true });
       recordAutomationResult(item, result);
       const output = parseExecutionOutput(result && result.output);
+      const sendStatus = output.sendStatus || result.sendStatus || '';
+      if (SAME_DAY_DEVELOPMENT_STATUSES.has(sendStatus)) {
+        automationCompanyKeys(item).forEach(key => sameDayCompanyKeys.add(key));
+      }
       return {
         id: item.id,
         company: item.company,
@@ -2212,7 +2291,7 @@ async function runDailyAutomationQueue(payload = {}) {
         platform: item.platform,
         targetUrl: item.url,
         ok: Boolean(result && result.ok),
-        sendStatus: output.sendStatus || result.sendStatus || '',
+        sendStatus,
         evidence: output.evidence || result.evidence || '',
         chromeOpen: result && result.chromeOpen || null,
         result,

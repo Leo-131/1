@@ -37,6 +37,16 @@ const ICP_THRESHOLD = Number(CONFIG.cadence.icpThreshold || 70);
 const COOLDOWN_DAYS = Number(CONFIG.cadence.cooldownDays || 7);
 const DEFAULT_DAILY_LIMIT = 12;
 const TOUCH_STATUSES = new Set(['sent_confirmed', 'post_liked', 'account_followed', 'send_unconfirmed', 'website_contact_ready']);
+const SAME_DAY_DEVELOPMENT_STATUSES = new Set([
+  'sent_confirmed',
+  'send_unconfirmed',
+  'approval_pending',
+  'draft_prepared',
+  'prepared_not_sent',
+  'website_contact_ready',
+  'account_followed',
+  'post_liked',
+]);
 const WEBSITE_CONTACT_VERIFIED_EVIDENCE = 'contact_entry_verified';
 const PARTNER_COMPANIES = new Set([
   'rei',
@@ -295,6 +305,29 @@ function cleanKey(value) {
   return String(value || '').trim().toLowerCase().replace(/^@/, '').replace(/[^a-z0-9]+/g, '');
 }
 
+function leadFamilyKey(value) {
+  return cleanKey(String(value || '')
+    .replace(/^google-customer-/i, '')
+    .replace(/^verified-[a-z]+-/i, '')
+    .replace(/-(instagram|facebook|website-contact)$/i, ''));
+}
+
+function automationLocalDay(value, timeZone = 'Asia/Shanghai') {
+  const time = typeof value === 'number' ? value : Date.parse(value || '');
+  if (!Number.isFinite(time)) return '';
+  return new Intl.DateTimeFormat('en-CA', {
+    timeZone,
+    year: 'numeric',
+    month: '2-digit',
+    day: '2-digit',
+  }).format(new Date(time));
+}
+
+function sameAutomationDay(value, now = Date.now()) {
+  const day = automationLocalDay(value);
+  return Boolean(day && day === automationLocalDay(now));
+}
+
 function profileHandle(value) {
   const match = String(value || '').match(/(?:instagram|facebook)\.com\/([^/?#]+)/i);
   return match ? match[1] : '';
@@ -333,6 +366,13 @@ function isTouchResult(result = {}) {
   return Boolean(result && TOUCH_STATUSES.has(result.status) && isVerifiedWebsiteContactResult(result));
 }
 
+function isSameDayDevelopmentResult(result = {}, now = Date.now()) {
+  return Boolean(result
+    && SAME_DAY_DEVELOPMENT_STATUSES.has(result.status)
+    && sameAutomationDay(result.timestamp, now)
+    && isVerifiedWebsiteContactResult(result));
+}
+
 function channelLeadKeys(item) {
   const platform = cleanKey(item.platform || 'unknown');
   const handle = profileHandle(item.platformUrl || item.url);
@@ -355,6 +395,7 @@ function channelLeadKeys(item) {
 function leadKeys(item) {
   return [
     item.id,
+    leadFamilyKey(item.id || item.task_id),
     item.name,
     item.company,
     item.handle,
@@ -367,11 +408,33 @@ function leadKeys(item) {
   ].map(cleanKey).filter(Boolean);
 }
 
-function knownTouchIndex(results, contacts) {
+function companyLeadKeys(item) {
+  return [
+    item.id,
+    item.task_id,
+    leadFamilyKey(item.id || item.task_id),
+    item.name,
+    item.company,
+    hostnameKey(item.website || item.url || item.target_url),
+  ].map(cleanKey).filter(Boolean);
+}
+
+function knownTouchIndex(results, contacts, now = Date.now()) {
   const touched = new Set();
   const touchedDetails = new Map();
+  const sameDayDeveloped = new Set();
+  const sameDayDetails = new Map();
   const partners = new Set([...PARTNER_COMPANIES].map(cleanKey));
   for (const result of results || []) {
+    if (isSameDayDevelopmentResult(result, now)) {
+      for (const key of companyLeadKeys(result)) {
+        sameDayDeveloped.add(key);
+        const current = sameDayDetails.get(key);
+        if (!current || validDate(result.timestamp) >= validDate(current.timestamp)) {
+          sameDayDetails.set(key, result);
+        }
+      }
+    }
     if (!isTouchResult(result)) continue;
     const keys = [
       result.task_id,
@@ -394,7 +457,7 @@ function knownTouchIndex(results, contacts) {
     if (isPartner) leadKeys(item).forEach(key => partners.add(key));
     if (hasTouch || isPartner) leadKeys(item).forEach(key => touched.add(key));
   }
-  return { touched, touchedDetails, partners };
+  return { touched, touchedDetails, sameDayDeveloped, sameDayDetails, partners };
 }
 
 function classifyTask(task, context) {
@@ -411,6 +474,11 @@ function classifyTask(task, context) {
   const lastTouch = isTouchResult(result) ? result.timestamp : '';
   const cooldownActive = lastTouch && daysSince(lastTouch, context.now) < COOLDOWN_DAYS;
   const emailPriority = result && result.status === 'skipped' && /email_channel_found/i.test(String(result.evidence || ''));
+  const sameDayByCompany = context.sameDayByCompany || new Map();
+  const sameDayResult = companyLeadKeys(task)
+    .map(key => sameDayByCompany.get(key))
+    .filter(Boolean)
+    .sort((left, right) => validDate(right.timestamp) - validDate(left.timestamp))[0] || null;
   const isFacebook = String(task.platform || '').toLowerCase() === 'facebook';
   const isEmail = String(task.platform || '').toLowerCase() === 'email';
   const verified = Boolean(url) && !(isFacebook && String(task.facebookStatus || '').includes('not_verified_do_not_use'));
@@ -427,6 +495,9 @@ function classifyTask(task, context) {
   } else if (!verified) {
     action = 'verify_target';
     reason = 'missing_verified_profile_url';
+  } else if (sameDayResult && CONFIG.cadence.noDuplicateSameDayCustomer !== false) {
+    action = 'cooldown';
+    reason = 'same_day_customer_already_developed';
   } else if (result && result.status === 'sent_confirmed' && CONFIG.cadence.noDuplicateDm !== false) {
     action = 'cooldown';
     reason = 'previous_sent_confirmed_no_duplicate_dm';
@@ -475,9 +546,9 @@ function classifyTask(task, context) {
     companyScale: task.companyScale || task.scale || '',
     dataSources: task.dataSources || null,
     alternateChannels: task.alternateChannels || null,
-    lastStatus: result && result.status || '',
-    lastEvidence: result && result.evidence || '',
-    lastTouch,
+    lastStatus: sameDayResult && sameDayResult.status || result && result.status || '',
+    lastEvidence: sameDayResult && sameDayResult.evidence || result && result.evidence || '',
+    lastTouch: sameDayResult && sameDayResult.timestamp || lastTouch,
     action,
     reason,
     workingTime: workingTimeForTask(task, context.now),
@@ -713,7 +784,7 @@ function discoveryQueue(limit, context = {}) {
   const discovery = readJson('google-lead-discovery-latest.json', { leads: [] });
   const contactsRaw = readJson('contacts.json', []);
   const contacts = Array.isArray(contactsRaw) ? contactsRaw : (contactsRaw.contacts || []);
-  const history = knownTouchIndex(context.results || [], contacts);
+  const history = knownTouchIndex(context.results || [], contacts, context.now || Date.now());
   return (discovery.leads || [])
     .filter(item => Number(item.fitScore || 0) > ICP_THRESHOLD)
     .filter(item => !item.doNotOutreach && item.action !== 'partner_account' && item.sendStatus !== 'partner_account')
@@ -721,6 +792,7 @@ function discoveryQueue(limit, context = {}) {
       const partnerKeys = leadKeys(item);
       const channelKeys = channelLeadKeys(item);
       return !partnerKeys.some(key => history.partners.has(key))
+        && !companyLeadKeys(item).some(key => history.sameDayDeveloped.has(key))
         && !channelKeys.some(key => history.touched.has(key));
     })
     .map(item => ({
@@ -742,16 +814,21 @@ function discoveryCooldownQueue(limit, context = {}) {
   const discovery = readJson('google-lead-discovery-latest.json', { leads: [] });
   const contactsRaw = readJson('contacts.json', []);
   const contacts = Array.isArray(contactsRaw) ? contactsRaw : (contactsRaw.contacts || []);
-  const history = knownTouchIndex(context.results || [], contacts);
+  const history = knownTouchIndex(context.results || [], contacts, context.now || Date.now());
   return (discovery.leads || [])
     .filter(item => Number(item.fitScore || 0) > ICP_THRESHOLD)
     .filter(item => !item.doNotOutreach && item.action !== 'partner_account' && item.sendStatus !== 'partner_account')
     .filter(item => {
       const partnerKeys = leadKeys(item);
       if (partnerKeys.some(key => history.partners.has(key))) return false;
-      return channelLeadKeys(item).some(key => history.touched.has(key));
+      return companyLeadKeys(item).some(key => history.sameDayDeveloped.has(key))
+        || channelLeadKeys(item).some(key => history.touched.has(key));
     })
     .map(item => {
+      const sameDay = companyLeadKeys(item)
+        .map(key => history.sameDayDetails.get(key))
+        .filter(Boolean)
+        .sort((left, right) => validDate(right.timestamp) - validDate(left.timestamp))[0] || null;
       const touch = channelLeadKeys(item)
         .map(key => history.touchedDetails.get(key))
         .filter(Boolean)
@@ -764,13 +841,15 @@ function discoveryCooldownQueue(limit, context = {}) {
         dealProbabilityScore: dealProbabilityScore(item),
         priorityScore: dealProbabilityScore(item),
         action: 'cooldown',
-        reason: touch && touch.status === 'website_contact_ready'
+        reason: sameDay
+          ? 'same_day_customer_already_developed'
+          : touch && touch.status === 'website_contact_ready'
           ? 'website_contact_ready_no_repeat'
           : `${COOLDOWN_DAYS}_day_no_repeat_touch`,
         agencyState: item.agencyState || 'open',
-        lastStatus: touch && touch.status || '',
-        lastEvidence: touch && touch.evidence || '',
-        lastTouch: touch && touch.timestamp || '',
+        lastStatus: sameDay && sameDay.status || touch && touch.status || '',
+        lastEvidence: sameDay && sameDay.evidence || touch && touch.evidence || '',
+        lastTouch: sameDay && sameDay.timestamp || touch && touch.timestamp || '',
         workingTime: item.workingTime || { dueNow: false, reason: 'channel_already_touched' },
       };
     })
@@ -799,6 +878,8 @@ function main() {
     resultsByTask: normalizeResultIndex(results),
     results,
   };
+  const history = knownTouchIndex(results, [], now);
+  context.sameDayByCompany = history.sameDayDetails;
   const classified = (plan.tasks || [])
     .map(task => classifyTask(task, context))
     .sort(priorityCompare);
