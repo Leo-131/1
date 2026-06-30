@@ -1,14 +1,16 @@
 {
-  "updatedAt": "2026-06-30T15:01:06.976Z",
-  "source": "daily-automation-runner",
+  "updatedAt": "2026-06-30T16:04:21.045Z",
+  "source": "main-refreshDailyAutomationArtifacts",
   "runDate": "2026-06-30",
-  "artifactGeneratedAt": "2026-06-30T15:01:06.607Z",
+  "artifactGeneratedAt": "2026-06-30T16:04:19.713Z",
+  "executionGeneratedAt": "2026-06-30T15:01:30.574Z",
+  "githubSyncUpdatedAt": "2026-06-30T15:02:06.702Z",
   "counts": {
-    "dailyQueue": 1,
-    "googleDiscovered": 0,
-    "websiteContact": 0,
+    "dailyQueue": 8,
+    "googleDiscovered": 8,
+    "websiteContact": 8,
     "cooldownQueue": 30,
-    "scheduledLater": 0
+    "scheduledLater": 4
   },
   "visibleSections": [
     "workspace",
@@ -18,8 +20,16 @@
     "customerDetail",
     "seo",
     "automationAudit",
+    "settings",
     "rightRail",
     "githubSyncStatus"
+  ],
+  "refreshedArtifacts": [
+    "daily-automation-latest",
+    "daily-automation-execution-latest",
+    "google-lead-discovery-latest",
+    "github-sync/latest-status",
+    "system-visibility-latest"
   ],
   "contactEnrichment": {
     "enabled": true,
