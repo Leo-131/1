@@ -22,6 +22,10 @@
   const legacyRecords = typeof allRecords !== 'undefined' && Array.isArray(allRecords) ? allRecords : [];
   const tasks = data.tasks || [];
   const latestRun = window.DAILY_AUTOMATION_LATEST || null;
+  const latestExecution = window.DAILY_AUTOMATION_EXECUTION_LATEST || null;
+  const latestGithubSync = window.GITHUB_SYNC_LATEST || null;
+  const latestGoogleDiscovery = window.GOOGLE_LEAD_DISCOVERY_LATEST || null;
+  const latestSystemVisibility = window.SYSTEM_VISIBILITY_LATEST || null;
   const taskIndex = buildTaskIndex(tasks);
   const COOLDOWN_DAYS = Number(data.settings && data.settings.cooldownDays || 7);
   const ICP_MIN_SCORE = Number(data.settings && data.settings.minimumScore || 70);
@@ -43,7 +47,7 @@
   function stateLabel(state) {
     const labels = {
       profile_scored: '画像已评分', target_verified: '账号已核验', post_liked: '已点赞',
-      account_followed: '已关注', approval_pending: 'Codex 决策中', approved: '已批准',
+      account_followed: '已关注', approval_pending: '重大异常暂停', approved: '自动决策通过',
       sent_confirmed: '发送已确认', outcome_pending: '等待回复', scheduled: '已排期',
       rerouted: '已换渠道', auto_skipped: '自动跳过', send_unconfirmed: '发送未确认',
     };
@@ -75,31 +79,104 @@
       keywordIntent: entity.keyword_used || entity.keyword ? 70 : 0,
     }).total;
   }
+  function scoreForDisplay(entity) {
+    const calculated = scoreTask(entity || {});
+    const direct = Number(entity && entity.fitScore || 0);
+    return direct > 0 ? { ...calculated, total: Math.round(direct) } : calculated;
+  }
   function isIcpQualified(entity) {
     return icpScore(entity) > ICP_MIN_SCORE;
+  }
+  function executionRank(task) {
+    const platform = String(task && task.platform || '').toLowerCase();
+    const platformRank = platform === 'instagram' ? 30
+      : platform === 'facebook' ? 25
+        : platform === 'email' ? 10
+          : 0;
+    return dealProbabilityScore(task)
+      + (isIcpQualified(task) ? 1000 : 0)
+      + (task.identityStatus === 'verified' ? 500 : 0)
+      + platformRank;
+  }
+  function targetRegion(entity) {
+    const country = String(entity && (entity.countryEn || entity.country || entity.headquarters) || '').toLowerCase();
+    if (/brunei|cambodia|indonesia|laos|malaysia|myanmar|philippines|singapore|thailand|timor-leste|vietnam/.test(country)) return 'southeast_asia';
+    if (/austria|belgium|czech|denmark|finland|france|germany|ireland|italy|netherlands|norway|poland|portugal|spain|sweden|switzerland|united kingdom|\\buk\\b/.test(country)) return 'europe';
+    if (/argentina|brazil|canada|chile|colombia|mexico|peru|united states|\\busa\\b/.test(country)) return 'americas';
+    if (/australia|new zealand/.test(country)) return 'oceania';
+    return 'other';
+  }
+  function targetRegionScore(entity) {
+    return { southeast_asia: 35, europe: 32, americas: 30, oceania: 8, other: 0 }[targetRegion(entity)] || 0;
+  }
+  function contactChannelScore(entity) {
+    let score = 0;
+    if (entity && (entity.contactEmail || entity.publicEmail || entity.email)) score += 12;
+    if (entity && (entity.vendorPortal || entity.contactUrl)) score += 8;
+    if (entity && (entity.website || entity.targetUrl || entity.url || entity.platformUrl)) score += 5;
+    if (entity && entity.alternateChannels && (entity.alternateChannels.instagram || entity.alternateChannels.facebook)) score += 4;
+    return score;
+  }
+  function dealProbabilityScore(entity) {
+    if (!entity) return 0;
+    const direct = Number(entity.dealProbabilityScore || 0);
+    if (direct > 0) return Math.round(direct);
+    const openAgency = /open|available|可开拓|开放/i.test(String(entity.marketStatus || entity.agencyState || '')) ? 18 : 0;
+    return Math.round(icpScore(entity)
+      + Number(entity.marketScore || 0) * 12
+      + openAgency
+      + targetRegionScore(entity)
+      + contactChannelScore(entity));
+  }
+  function dealPriorityCompare(left, right) {
+    return dealProbabilityScore(right) - dealProbabilityScore(left)
+      || executionRank(right) - executionRank(left)
+      || String(left.company || left.name || '').localeCompare(String(right.company || right.name || ''));
   }
   function icpExplanation(entity) {
     const score = icpScore(entity);
     const status = score > ICP_MIN_SCORE ? 'active' : 'retained_only';
     return `ICP ${score}/100 (${status}). Algorithm: market potential 25, ICP industry/role fit 25, verified identity 15, buyer intent 15, SEO/trend relevance 10, contactability/history 10. Only scores above ${ICP_MIN_SCORE} enter daily outreach; lower scores keep links for review.`;
   }
+  function isAutoDevelopmentTask(task) {
+    return task
+      && ['develop', 'discover_and_develop'].includes(task.action)
+      && !['sent_confirmed', 'send_unconfirmed', 'failed_open', 'skipped'].includes(task.sendStatus)
+      && task.state === 'target_verified'
+      && platformUrl(task);
+  }
+  function executableDevelopmentTasks() {
+    const byCustomer = new Map();
+    for (const task of todayDevelopTasks().filter(isAutoDevelopmentTask)) {
+      const key = leadMatchKeys(task)[0] || normalizeKey(task.taskId || task.company || task.name);
+      const existing = byCustomer.get(key);
+      if (!existing || executionRank(task) > executionRank(existing)) {
+        byCustomer.set(key, task);
+      }
+    }
+    return Array.from(byCustomer.values());
+  }
   function currentTask() {
-    return todayDevelopTasks().sort((left, right) => icpScore(right) - icpScore(left))[0] || null;
+    return executableDevelopmentTasks().sort(dealPriorityCompare)[0] || null;
   }
   function latestQueueRows(source) {
     if (!latestRun) return [];
     const rows = source === 'scheduledLater'
       ? (latestRun.scheduledLater || [])
+      : source === 'cooldownQueue'
+        ? (latestRun.cooldownQueue || [])
       : source === 'all'
-        ? [...(latestRun.dailyQueue || []), ...(latestRun.scheduledLater || [])]
+        ? [...(latestRun.dailyQueue || []), ...(latestRun.scheduledLater || []), ...(latestRun.cooldownQueue || [])]
         : (latestRun.dailyQueue || []);
     return rows.map((item, index) => {
       const base = taskIndex.get(normalizeKey(item.id))
         || taskIndex.get(normalizeKey(item.name))
         || taskIndex.get(normalizeKey(item.company))
         || {};
+      const touch = confirmedTouchFor({ ...base, ...item });
       return {
         ...base,
+        ...item,
         taskId: item.id || base.taskId || `daily-${index}`,
         name: item.name || base.name || item.company,
         company: item.company || item.name || base.company,
@@ -123,12 +200,55 @@
             : item.action === 'email_priority' ? 'rerouted'
               : item.action === 'verify_target' ? 'profile_scored'
                 : 'auto_skipped',
-        sendStatus: item.lastStatus || base.sendStatus || '',
+        sendStatus: touch ? 'sent_confirmed' : item.lastStatus || base.sendStatus || '',
+        lastTouch: touch ? touch.timestamp : item.lastTouch || base.lastTouch || '',
+        evidence: touch ? touch.evidence || base.evidence || '' : base.evidence || '',
         identityStatus: base.identityStatus || (item.url ? 'verified' : 'pending'),
         identityVerified: Boolean(item.url || base.identityVerified),
-        previouslyContacted: Boolean(base.previouslyContacted || item.action === 'retry_or_alternate_channel'),
+        previouslyContacted: Boolean(touch || base.previouslyContacted || item.action === 'retry_or_alternate_channel'),
       };
     });
+  }
+  function timestampOrEmpty(value) {
+    return typeof value === 'string' && value && Number.isFinite(Date.parse(value)) ? value : '';
+  }
+  function latestReportRecords() {
+    if (!latestRun) return [];
+    const runTimestamp = timestampOrEmpty(latestRun.generatedAt)
+      || (latestRun.date ? `${latestRun.date}T09:00:00+08:00` : '');
+    return latestQueueRows('all').map((item) => {
+      const sentAt = item.sendStatus === 'sent_confirmed'
+        ? timestampOrEmpty(item.lastTouch) || runTimestamp
+        : '';
+      return {
+        ...item,
+        discoveredAt: timestampOrEmpty(item.discoveredAt) || runTimestamp,
+        profiledAt: timestampOrEmpty(item.profiledAt) || runTimestamp,
+        approvedAt: sentAt || timestampOrEmpty(item.approvedAt),
+        sentAt,
+        templateId: item.templateId || 'daily-google-discovery',
+        icpTier: item.icpTier || item.fitTier || '',
+      };
+    });
+  }
+  function executionReportRecords(existingRecords) {
+    const existingIds = new Set((existingRecords || []).map(item => item && item.taskId).filter(Boolean));
+    return (data.audit || [])
+      .filter(item => item && (item.result === 'sent_confirmed' || item.stage === 'sent_confirmed'))
+      .filter(item => isValidTimestamp(item.timestamp) && !existingIds.has(item.taskId))
+      .map(item => ({
+        taskId: item.taskId,
+        company: item.taskId,
+        platform: /facebook/i.test(String(item.evidence || item.taskId || '')) ? 'facebook'
+          : /instagram/i.test(String(item.evidence || item.taskId || '')) ? 'instagram'
+            : 'unknown',
+        keyword: 'outdoor retail partnership',
+        templateId: 'daily-google-discovery',
+        state: 'outcome_pending',
+        sendStatus: 'sent_confirmed',
+        sentAt: item.timestamp,
+        approvedAt: item.timestamp,
+      }));
   }
   function findTaskById(taskId) {
     return latestQueueRows('all').find(item => item.taskId === taskId)
@@ -153,8 +273,25 @@
     return candidates.find(value => /^https?:\/\//i.test(String(value || ''))
       && !/^https:\/\/www\.google\.com\/search/i.test(String(value || ''))) || '';
   }
+  function urlHost(value) {
+    try {
+      return new URL(String(value || '')).hostname.replace(/^www\./i, '');
+    } catch {
+      return '';
+    }
+  }
+  function emailHost(value) {
+    const match = String(value || '').match(/@([^@\s]+)$/);
+    return match ? match[1].replace(/^www\./i, '') : '';
+  }
   function normalizeKey(value) {
     return String(value || '').trim().toLowerCase().replace(/^@/, '').replace(/[^a-z0-9.]+/g, '');
+  }
+  function canonicalLeadKey(value) {
+    return normalizeKey(String(value || '')
+      .replace(/^google-customer-/i, '')
+      .replace(/^verified-[a-z]+-/i, '')
+      .replace(/-(instagram|facebook|website-contact)$/i, ''));
   }
   function urlHandle(value) {
     const match = String(value || '').match(/instagram\.com\/([^/?#]+)/i);
@@ -184,7 +321,26 @@
     ].map(normalizeKey).filter(Boolean);
     return keys.map(key => taskIndex.get(key)).find(Boolean) || null;
   }
-  function validTimestamp(value) {
+  function leadMatchKeys(record) {
+    return [
+      record && (record.taskId || record.id),
+      record && record.accountHandle,
+      record && record.name,
+      record && record.company,
+      record && record.sourceCompany,
+      record && urlHandle(platformUrl(record)),
+    ].map(canonicalLeadKey).filter(Boolean);
+  }
+  function confirmedTouchFor(record) {
+    const keys = new Set(leadMatchKeys(record));
+    if (!keys.size) return null;
+    return (data.audit || [])
+      .filter(item => item && (item.result === 'sent_confirmed' || item.stage === 'sent_confirmed'))
+      .filter(item => keys.has(canonicalLeadKey(item.taskId)))
+      .filter(item => isValidTimestamp(item.timestamp))
+      .sort((left, right) => Date.parse(right.timestamp) - Date.parse(left.timestamp))[0] || null;
+  }
+  function isValidTimestamp(value) {
     return typeof value === 'string' && value && Number.isFinite(Date.parse(value));
   }
   function newerTimestamp(left, right) {
@@ -196,7 +352,7 @@
   }
   function lastActualTouch(task) {
     return [task.lastTouch, task.sentAt, task.lastAutomationAt]
-      .find(value => validTimestamp(value)) || '';
+      .find(value => isValidTimestamp(value)) || '';
   }
   function isInCooldown(task) {
     const value = lastActualTouch(task);
@@ -209,30 +365,182 @@
     if (status === 'failed_open') return /no_message_button|no_direct/i.test(String(evidence || '')) ? '可重试' : '待核验';
     if (status === 'prepared_not_sent') return '已准备';
     if (status === 'draft_prepared') return '草稿待确认';
-    if (status === 'send_unconfirmed') return '发送待核验';
+    if (status === 'send_unconfirmed') return '重大异常待核验';
     if (status === 'draft_already_present') return '已有草稿';
-    if (status === 'approval_pending') return '需人工继续';
+    if (status === 'approval_pending') return '重大异常暂停';
     return status || '';
   }
+  function customerMatchKeys(record) {
+    return [
+      record && (record.automationTaskId || record.taskId || record.id),
+      record && record.name,
+      record && record.company,
+      record && record.sourceCompany,
+      record && urlHost(record.website || record.companyWebsite || record.contactUrl || record.targetUrl || record.url),
+      record && emailHost(record.publicEmail || record.contactEmail || record.email || record.contact),
+    ].map(canonicalLeadKey).filter(Boolean);
+  }
+  function latestCustomerRows() {
+    return latestRun ? latestQueueRows('all') : [];
+  }
+  function googleDiscoveryRows() {
+    return latestGoogleDiscovery && Array.isArray(latestGoogleDiscovery.leads)
+      ? latestGoogleDiscovery.leads
+      : [];
+  }
+  function contactEnrichmentRows() {
+    return [
+      ...latestCustomerRows(),
+      ...googleDiscoveryRows(),
+    ].filter(Boolean);
+  }
+  function enrichmentForRecord(record) {
+    const keys = new Set(customerMatchKeys(record));
+    if (!keys.size) return {};
+    const merged = {};
+    contactEnrichmentRows().forEach(source => {
+      if (!customerMatchKeys(source).some(key => keys.has(key))) return;
+      mergeContactEnrichment(merged, source);
+    });
+    return merged;
+  }
+  function mergeUrlField(target, key, value) {
+    if (!target[key] && /^https?:\/\//i.test(String(value || ''))) target[key] = value;
+  }
+  function mergeTextField(target, key, value) {
+    const text = String(value || '').trim();
+    if (text && !target[key]) target[key] = text;
+  }
+  function mergeContactEnrichment(target, source) {
+    if (!source) return target;
+    mergeTextField(target, 'publicEmail', source.publicEmail || source.contactEmail || source.emailFrom || source.email);
+    mergeTextField(target, 'contactEmail', source.contactEmail || source.publicEmail || source.emailFrom || source.email);
+    mergeTextField(target, 'publicEmailStatus', source.publicEmailStatus || (source.publicEmail || source.contactEmail ? 'Official/public contact email from Google discovery artifact.' : ''));
+    mergeTextField(target, 'contactPhone', source.contactPhone || source.phone);
+    mergeUrlField(target, 'vendorPortal', source.vendorPortal || source.contactUrl);
+    mergeUrlField(target, 'contactUrl', source.contactUrl || source.vendorPortal);
+    mergeUrlField(target, 'contactSearchUrl', source.contactSearchUrl || source.evidenceUrl);
+    mergeUrlField(target, 'website', source.website || source.companyWebsite || source.url);
+    mergeUrlField(target, 'targetUrl', source.targetUrl || source.url || source.platformUrl);
+    mergeUrlField(target, 'linkedin_url', source.linkedin_url || source.linkedinUrl || source.linkedinCompany || source.linkedin);
+    mergeTextField(target, 'websiteContactSubject', source.websiteContactSubject);
+    mergeTextField(target, 'websiteContactMessage', source.websiteContactMessage);
+    mergeTextField(target, 'contactNote', source.contactNote || source.publicEmailStatus);
+    mergeTextField(target, 'headquarters', source.headquarters);
+    mergeTextField(target, 'founded', source.founded);
+    mergeTextField(target, 'companyScale', source.companyScale || source.scale);
+    if (Array.isArray(source.dataSources) && source.dataSources.length && !target.dataSources) target.dataSources = source.dataSources;
+    if (source.alternateChannels) target.alternateChannels = { ...(target.alternateChannels || {}), ...source.alternateChannels };
+    if (source.invalidChannels) target.invalidChannels = { ...(target.invalidChannels || {}), ...source.invalidChannels };
+    return target;
+  }
+  function latestCustomerRecord(row) {
+    return {
+      id: row.taskId || row.id || row.company || row.name,
+      name: row.name || row.company,
+      company: row.company || row.name,
+      role: row.buyerPersona || row.role || '',
+      category: row.businessModel || row.productCategory || 'daily_automation',
+      country: row.countryEn || row.country || '',
+      countryEn: row.countryEn || row.country || '',
+      marketScore: row.marketScore || '',
+      marketTier: row.fitTier || '',
+      marketStatus: row.marketStatus || row.agencyState || '',
+      industry: row.productCategory || row.keyword || 'Outdoor retail',
+      region: row.countryEn || row.country || '',
+      targetRegion: row.targetRegion || targetRegion(row),
+      dealProbabilityScore: dealProbabilityScore(row),
+      tier: Number(row.fitScore || 0) >= 90 ? 't1' : 't2',
+      status: row.sendStatus ? automationStatusLabel(row.sendStatus, row.evidence, row.duplicateRisk)
+        : row.action === 'email_priority' ? 'Email priority'
+          : row.action === 'retry_or_alternate_channel' ? 'Needs alternate channel'
+            : 'Pending',
+      keyword_used: row.keyword || '',
+      approvedMessage: row.websiteContactMessage || row.approvedMessage || '',
+      message: row.websiteContactMessage || row.approvedMessage || row.background || row.opportunity || '',
+      websiteContactSubject: row.websiteContactSubject || '',
+      websiteContactMessage: row.websiteContactMessage || '',
+      publicEmail: row.publicEmail || row.contactEmail || '',
+      contactEmail: row.contactEmail || row.publicEmail || '',
+      publicEmailStatus: row.publicEmailStatus || '',
+      contactPhone: row.contactPhone || '',
+      vendorPortal: row.vendorPortal || '',
+      contactUrl: row.contactUrl || '',
+      contactNote: row.contactNote || row.publicEmailStatus || '',
+      email: row.contactEmail || row.publicEmail || '',
+      contact: row.contactEmail || row.publicEmail || row.contactUrl || row.website || '',
+      lastTouch: row.lastTouch || '',
+      followUpAt: '',
+      platform: row.platform || 'email',
+      source: row.source || 'daily_automation',
+      fitScore: Number(row.fitScore || 0),
+      fitTier: row.fitTier || '',
+      linkedin_url: row.linkedin_url || row.linkedin || row.linkedinCompany || '',
+      instagram_url: row.alternateChannels && row.alternateChannels.instagram || '',
+      facebook_url: row.alternateChannels && row.alternateChannels.facebook || '',
+      website: row.website || row.contactUrl || row.targetUrl || '',
+      targetUrl: row.targetUrl || row.url || row.contactUrl || row.website || '',
+      automationTaskId: row.taskId || row.id || '',
+      automationEvidence: row.reason || row.evidence || '',
+      resultCheckedAt: latestRun && latestRun.generatedAt || '',
+    };
+  }
   function customerRecords() {
-    return legacyRecords.map(record => {
+    const latestRows = latestCustomerRows();
+    const latestByKey = new Map();
+    latestRows.forEach(row => {
+      customerMatchKeys(row).forEach(key => {
+        if (!latestByKey.has(key)) latestByKey.set(key, row);
+      });
+    });
+    const seenKeys = new Set();
+    const records = legacyRecords.map(record => {
       const task = taskForRecord(record);
-      if (!task) return record;
+      const latest = customerMatchKeys(record).map(key => latestByKey.get(key)).find(Boolean);
+      customerMatchKeys(record).forEach(key => seenKeys.add(key));
+      const contactEnrichment = enrichmentForRecord(record);
+      if (!task && !latest && !Object.keys(contactEnrichment).length) return record;
+      const source = latest || task || {};
       const enriched = { ...record };
-      if (task.lastTouch) enriched.lastTouch = newerTimestamp(enriched.lastTouch || enriched.date, task.lastTouch);
-      if (task.sendStatus) enriched.status = automationStatusLabel(task.sendStatus, task.evidence, task.duplicateRisk) || enriched.status;
-      if (task.targetUrl) enriched.instagram_url = task.targetUrl;
-      enriched.automationTaskId = task.taskId;
-      enriched.automationEvidence = task.evidence || task.sendStatus || '';
-      enriched.resultCheckedAt = task.resultCheckedAt || '';
+      mergeContactEnrichment(enriched, contactEnrichment);
+      if (source.lastTouch) enriched.lastTouch = newerTimestamp(enriched.lastTouch || enriched.date, source.lastTouch);
+      if (source.sendStatus) enriched.status = automationStatusLabel(source.sendStatus, source.evidence, source.duplicateRisk) || enriched.status;
+      if (source.targetUrl && source.platform === 'instagram') enriched.instagram_url = source.targetUrl;
+      if (source.targetUrl && source.platform === 'facebook') enriched.facebook_url = source.targetUrl;
+      if (source.website || source.contactUrl) enriched.website = source.website || source.contactUrl;
+      mergeContactEnrichment(enriched, source);
+      if (source.websiteContactSubject) enriched.websiteContactSubject = source.websiteContactSubject;
+      if (source.websiteContactMessage) {
+        enriched.websiteContactMessage = source.websiteContactMessage;
+        enriched.approvedMessage = source.websiteContactMessage;
+        enriched.message = source.websiteContactMessage;
+      }
+      if (source.contactEmail || source.publicEmail) enriched.contact = source.contactEmail || source.publicEmail;
+      if (enriched.contactEmail || enriched.publicEmail) {
+        enriched.email = enriched.contactEmail || enriched.publicEmail;
+        enriched.contact = enriched.contactEmail || enriched.publicEmail;
+      }
+      enriched.automationTaskId = source.taskId || source.id || enriched.automationTaskId;
+      enriched.automationEvidence = source.reason || source.evidence || source.sendStatus || enriched.automationEvidence || '';
+      enriched.resultCheckedAt = source.resultCheckedAt || (latestRun && latestRun.generatedAt) || enriched.resultCheckedAt || '';
       return enriched;
     });
+    latestRows.forEach(row => {
+      const keys = customerMatchKeys(row);
+      if (keys.some(key => seenKeys.has(key))) return;
+      keys.forEach(key => seenKeys.add(key));
+      records.push(latestCustomerRecord(row));
+    });
+    return records;
   }
   function autoClawConnected() {
     return Boolean(window.customerDev && window.customerDev.runGlmDirectAutomation);
   }
   function autoClawAvailability(task) {
     if (!task || !platformUrl(task)) return { ready: false, label: 'Missing URL', reason: 'No verified platform homepage' };
+    if (String(task.platform || '').toLowerCase() === 'email' || task.action === 'email_priority') {
+      return { ready: true, label: 'Contact Us', reason: 'Open official website contact page, fill Leo website-contact message, attach the marketing file, and submit automatically.' };
+    }
     if (!isIcpQualified(task)) return { ready: false, label: 'ICP <= 70', reason: icpExplanation(task) };
     if (task.identityStatus !== 'verified') return { ready: false, label: 'Identity mismatch', reason: task.identityNote || 'Lead identity is not verified' };
     const followup = task.previouslyContacted
@@ -250,6 +558,10 @@
     return { ready: true, label: 'Codex Chrome', reason: 'Codex Chrome Extension execution layer is connected; AutoClaw compatible' };
   }
   function canRunGlm(task) {
+    if (task && (String(task.platform || '').toLowerCase() === 'email' || task.action === 'email_priority')) {
+      return Boolean(platformUrl(task))
+        && localStorage.getItem(`glm-direct-completed:${task.taskId}`) !== '1';
+    }
     return autoClawAvailability(task).ready
       && Boolean(platformUrl(task))
       && task.identityStatus === 'verified'
@@ -262,7 +574,7 @@
       && task.sendStatus !== 'sent_confirmed'
       && task.automationStatus !== 'sent_confirmed'
       && !['outcome_pending', 'auto_skipped'].includes(task.state))
-      .sort((left, right) => icpScore(right) - icpScore(left));
+      .sort(dealPriorityCompare);
   }
   function followupTasks() {
     return tasks.filter(task => task.previouslyContacted
@@ -270,7 +582,7 @@
       || task.automationStatus === 'sent_confirmed'
       || task.state === 'outcome_pending')
       .filter(isIcpQualified)
-      .sort((left, right) => icpScore(right) - icpScore(left));
+      .sort(dealPriorityCompare);
   }
   function uniqueValues(records, key) {
     return [...new Set(records.map(record => String(record[key] || '').trim()).filter(Boolean))]
@@ -313,10 +625,11 @@
   }
   function reports() {
     const type = query.get('report') === 'monthly' ? 'monthly' : 'weekly';
-    const report = analytics.buildPeriodReport(tasks, { type, anchor: query.get('period') || undefined });
+    const reportBase = [...tasks, ...latestReportRecords()];
+    const report = analytics.buildPeriodReport([...reportBase, ...executionReportRecords(reportBase)], { type, anchor: query.get('period') || undefined });
     currentReport = report;
     const metricLabels = [
-      ['discovered', '发现客户'], ['profiled', '画像评分'], ['approved', '已批准'],
+      ['discovered', '发现客户'], ['profiled', '画像评分'], ['approved', '自动决策'],
       ['sent', '确认发送'], ['replied', '收到回复'], ['contactCaptured', '获得联系方式'],
       ['opportunity', '成交机会'], ['autoSkipped', '自动跳过'],
     ];
@@ -339,21 +652,132 @@
   }
   function stageRoute(task) {
     const route = [
-      ['profile_scored', '画像'], ['target_verified', '核验'], ['post_liked', '点赞'],
-      ['account_followed', '关注'], ['approval_pending', '等待'], ['approved', '审批'],
-      ['sent_confirmed', '发送'], ['outcome_pending', '等待回复'],
+      { states: ['profile_scored'], label: '客户研究', note: '画像/采购假设' },
+      { states: ['target_verified'], label: '目标核验', note: '官方主页/身份' },
+      { states: ['rerouted'], label: '渠道匹配', note: '官网/社媒/供应商入口' },
+      { states: ['approval_pending'], label: '重大异常', note: '暂停并通知介入' },
+      { states: ['post_liked', 'account_followed'], label: '轻互动', note: '点赞/关注/铺垫' },
+      { states: ['approved'], label: '自动决策', note: '文案/安全门' },
+      { states: ['sent_confirmed'], label: '精准发送', note: '单客户单动作' },
+      { states: ['outcome_pending'], label: '跟进', note: '回复/联系方式' },
+      { states: ['contact_captured'], label: '机会推进', note: '样品/报价/会议' },
+      { states: ['closed'], label: '复盘沉淀', note: '模板/SEO/审计' },
     ];
     const effectiveState = task.sendStatus === 'sent_confirmed' ? 'outcome_pending' : task.state;
-    const index = route.findIndex(item => item[0] === effectiveState);
-    return `<div class="cc-route">${route.map((item, i) => `<div class="cc-stage ${i < index ? 'done' : i === index ? 'active' : ''}"><b>${item[1]}</b>${i < index ? '已完成' : i === index ? '当前阶段' : '待执行'}</div>`).join('')}</div>`;
+    let index = route.findIndex(item => item.states.includes(effectiveState));
+    if (index < 0 && task.identityStatus === 'verified') index = 2;
+    if (index < 0) index = 0;
+    return `<div class="cc-route">${route.map((item, i) => `<div class="cc-stage ${i < index ? 'done' : i === index ? 'active' : ''}"><b>${item.label}</b><span>${esc(item.note)}</span><em>${i < index ? '已完成' : i === index ? '当前阶段' : '待执行'}</em></div>`).join('')}</div>`;
+  }
+  function latestSystemSummary() {
+    const dailyRows = latestRun ? latestQueueRows('dailyQueue') : [];
+    const cooldownRows = latestRun ? latestQueueRows('cooldownQueue') : [];
+    const googleRows = dailyRows.filter(item => item.source === 'google_customer_discovery' || /^google-customer-/i.test(item.taskId || item.id || ''));
+    const websiteContactRows = googleRows.filter(item => item.reason === 'official_website_contact_channel' || /website-contact/i.test(item.taskId || item.id || ''));
+    const generatedAt = latestRun && latestRun.generatedAt
+      ? new Date(latestRun.generatedAt).toLocaleString('zh-CN', { hour12: false })
+      : '';
+    return { dailyRows, cooldownRows, googleRows, websiteContactRows, generatedAt };
+  }
+  function systemFreshnessNotice(system) {
+    if (!latestRun) return '<div class="cc-quality">系统尚未加载每日自动化 artifact；请先运行 npm run discover:daily。</div>';
+    const sync = latestGithubSync
+      ? ` · GitHub ${latestGithubSync.ok ? '已同步' : '同步失败'}${latestGithubSync.localCommit ? ` ${String(latestGithubSync.localCommit).slice(0, 10)}` : ''}`
+      : '';
+    const visibility = latestSystemVisibility
+      ? ` · visibleSections ${(latestSystemVisibility.visibleSections || []).length} · visibility ${latestSystemVisibility.updatedAt || ''}`
+      : '';
+    return `<div class="cc-quality">系统已更新：Latest artifact ${esc(system.generatedAt || latestRun.date || 'unknown')} · dailyQueue ${system.dailyRows.length} · googleDiscovered ${system.googleRows.length} · websiteContact ${system.websiteContactRows.length}${esc(visibility)}${esc(sync)}</div>`;
+  }
+  function actionLabel(action) {
+    const labels = {
+      develop: '可自动开发',
+      discover_and_develop: '发现并开发',
+      email_priority: '官网/邮件优先',
+      retry_or_alternate_channel: '候补渠道',
+      verify_target: '待核验',
+      skip_exclusive_agency: '独代跳过',
+      retain_low_icp: '低 ICP 保留',
+    };
+    return labels[action] || action || '待判断';
+  }
+  function reasonLabel(reason) {
+    const labels = {
+      official_website_contact_channel: '官方官网联系入口，需走网站/邮件安全门',
+      email_channel_found: '已找到邮箱渠道，优先邮件或人工确认',
+      no_social_executable_tasks: '没有安全可执行的社媒任务',
+      cooldown_or_history: '冷却期或历史触达保护',
+      concrete_google_discovered_major_customer: 'Google 发现的高 ICP 重点客户',
+      website_contact_ready_no_repeat: '官网/邮件已触达，短期内不重复同渠道',
+      channel_already_touched: '该渠道已触达，保留为冷却记录',
+    };
+    return labels[reason] || reason || '规则未给出原因';
+  }
+  function googleQueueItem(item) {
+    return item && (item.source === 'google_customer_discovery' || /^google-customer-/i.test(item.taskId || item.id || ''));
+  }
+  function taskDetailPanel(system) {
+    if (!latestRun) return '';
+    const skipped = Array.isArray(latestExecution && latestExecution.skipped) ? latestExecution.skipped : [];
+    const skippedById = new Map(skipped.map(item => [String(item.id || item.taskId || ''), item]));
+    const generatedAt = latestExecution && (latestExecution.completedAt || latestExecution.generatedAt)
+      ? new Date(latestExecution.completedAt || latestExecution.generatedAt).toLocaleString('zh-CN', { hour12: false })
+      : '尚未执行';
+    const executionText = latestExecution
+      ? latestExecution.pendingExecution
+        ? `待执行：${latestExecution.message || latestExecution.error || '队列已刷新，尚未执行发送'}`
+        : latestExecution.skippedOnly
+        ? `未发送：${latestExecution.error || '安全门没有放行任何任务'}`
+        : latestExecution.ok
+          ? `已执行：${(latestExecution.results || latestExecution.executed || []).length} 条`
+          : `执行失败：${latestExecution.error || '未知错误'}`
+      : '尚未加载 daily:execute 结果';
+    const syncText = latestGithubSync
+      ? latestGithubSync.ok
+        ? `GitHub 已同步：${latestGithubSync.remoteCommit || latestGithubSync.localCommit || 'commit 已推送'}`
+        : `GitHub 同步失败：${latestGithubSync.error || 'push 未完成'}`
+      : 'GitHub 同步状态未加载';
+    const rows = system.dailyRows.slice(0, 12).map((item) => {
+      const skippedItem = skippedById.get(String(item.taskId || item.id || ''));
+      const isGoogle = googleQueueItem(item);
+      const status = skippedItem ? actionLabel(skippedItem.action) : actionLabel(item.action);
+      const reason = skippedItem ? reasonLabel(skippedItem.reason) : reasonLabel(item.reason);
+      return `<tr>
+        <td><b>${esc(item.company || item.name)}</b>${isGoogle ? '<br><span class="cc-chip green">Google discovered</span>' : ''}</td>
+        <td>${esc(item.country || item.countryEn || '')}</td>
+        <td><span class="cc-chip ${item.action === 'email_priority' ? 'amber' : ''}">${esc(status)}</span></td>
+        <td>${esc(reason)}</td>
+        <td>${item.website || item.targetUrl ? `<a href="${esc(item.website || item.targetUrl)}" target="_blank" rel="noopener">打开入口</a>` : '<span class="cc-sub">无入口</span>'}</td>
+      </tr>`;
+    }).join('');
+    const cooldownRows = (system.cooldownRows || []).slice(0, 12).map(item => `<tr>
+      <td><b>${esc(item.company || item.name)}</b>${item.lastStatus === 'website_contact_ready' ? '<br><span class="cc-chip amber">官网/邮件已触达</span>' : ''}</td>
+      <td>${esc(item.country || item.countryEn || '')}</td>
+      <td><span class="cc-chip">短期不重复</span></td>
+      <td>${esc(item.lastTouch || '')}</td>
+      <td>${esc(reasonLabel(item.reason))}</td>
+    </tr>`).join('');
+    return `<section class="cc-panel cc-task-details"><div class="cc-panel-head"><h2>任务明细</h2><span class="cc-sub">执行时间 ${esc(generatedAt)}</span></div>
+      <div class="cc-panel-body">
+        <div class="cc-detail-grid">
+          <div><span>队列任务</span><b>${system.dailyRows.length}</b><em>今日 dueNow 队列</em></div>
+          <div><span>Google 发现</span><b>${system.googleRows.length}</b><em>高 ICP 官网/渠道线索</em></div>
+          <div><span>本次执行</span><b>${latestExecution && (latestExecution.skippedOnly || latestExecution.pendingExecution) ? '0' : ((latestExecution && (latestExecution.results || latestExecution.executed || []).length) || 0)}</b><em>${esc(executionText)}</em></div>
+          <div class="${latestGithubSync && !latestGithubSync.ok ? 'blocked' : ''}"><span>系统同步</span><b>${latestGithubSync && latestGithubSync.ok ? 'OK' : 'BLOCKED'}</b><em>${esc(syncText)}</em></div>
+        </div>
+        <div class="cc-task-note">${esc(executionText)}</div>
+        <div class="cc-table-wrap"><table class="cc-table"><thead><tr><th>客户</th><th>国家</th><th>当前任务</th><th>为什么没有自动发送</th><th>入口</th></tr></thead><tbody>${rows}</tbody></table></div>
+        ${cooldownRows ? `<div class="cc-panel-head cc-subhead"><h2>短期不重复 / 冷却中</h2><a href="${urlFor('queue', { queue: 'cooldown' })}">查看 ${system.cooldownRows.length} 条</a></div><div class="cc-table-wrap"><table class="cc-table"><thead><tr><th>客户</th><th>国家</th><th>状态</th><th>最近触达</th><th>规则</th></tr></thead><tbody>${cooldownRows}</tbody></table></div>` : ''}
+      </div></section>`;
   }
   function workspace() {
     const task = currentTask();
-    const untouched = todayDevelopTasks();
+    const untouched = executableDevelopmentTasks();
     const followups = todayFollowupTasks();
     const confirmed = tasks.filter(item => item.sendStatus === 'sent_confirmed').length;
-    const eligibleCount = (latestRun ? latestQueueRows('all') : tasks).filter(canRunGlm).length;
+    const eligibleCount = untouched.filter(canRunGlm).length;
     const executionConnected = autoClawConnected();
+    const system = latestSystemSummary();
     const metrics = `<div class="cc-kpis">
       <a class="cc-kpi cc-kpi-link" href="${urlFor('queue', { queue: 'untouched' })}"><span>今日待开发</span><b>${untouched.length}</b></a>
       <a class="cc-kpi cc-kpi-link" href="${urlFor('queue', { queue: 'followup' })}"><span>跟进中</span><b>${followups.length}</b></a>
@@ -363,29 +787,29 @@
     const connection = `<div class="cc-quality">${executionConnected ? 'Codex Chrome Extension 已连接：AutoClaw 兼容执行层可用' : 'Codex Chrome Extension 未连接：当前是网页预览，请使用桌面 APP 执行；历史客户仍会因防重复规则保持禁用'}</div>`;
     const icpRule = `<div class="cc-icp-rule"><b>ICP 分值算法</b><span>市场潜力 25 + 行业/角色匹配 25 + 身份核验 15 + 采购意图 15 + SEO/趋势 10 + 可联系历史 10。仅 ICP &gt; ${ICP_MIN_SCORE} 进入每日新客户开发，≤${ICP_MIN_SCORE} 保留链接但划线，不自动触达。</span></div>`;
     if (!task) {
-      return `${pageHead('开发工作台', 'Codex 负责决策与审批，Codex Chrome Extension 执行，AutoClaw 兼容兜底')}
-        ${metrics}${connection}${icpRule}
+      return `${pageHead('开发工作台', 'Codex 全自动接手开发，Codex Chrome Extension 执行；仅重大异常通知介入')}
+        ${metrics}${systemFreshnessNotice(system)}${connection}${icpRule}${taskDetailPanel(system)}
         <section class="cc-panel"><div class="cc-panel-head"><h2>今日新开发</h2><a href="${urlFor('customers', { touch: 'untouched' })}">筛选候选客户</a></div>
-        <div class="cc-empty">当前没有符合“未触达 + 身份已核验”的新任务。历史客户已移入“跟进中”，不会重复发送。</div></section>
+        <div class="cc-empty">本次没有可直接自动发送的社媒任务；队列里的 Google 线索主要是官网/邮件联系入口，已在上方任务明细中列出，需按官网联系安全门处理。</div></section>
         <section class="cc-panel"><div class="cc-panel-head"><h2>跟进优先</h2><a href="${urlFor('queue', { queue: 'followup' })}">查看 ${followups.length} 条</a></div>
         <div class="cc-table-wrap">${taskTable(followups.slice(0, 8))}</div></section>`;
     }
-    const score = scoreTask(task);
+    const score = scoreForDisplay(task);
     const activeIcp = icpScore(task);
-    return `${pageHead('开发工作台', 'Codex 负责决策与审批，Codex Chrome Extension 按精确账号多任务并行执行，GLM 辅助画像与文案')}
-      ${metrics}${connection}${icpRule}
+    return `${pageHead('开发工作台', 'Codex 全自动决策与执行，GLM 优化画像与文案；仅重大 bug 暂停通知')}
+      ${metrics}${systemFreshnessNotice(system)}${connection}${icpRule}${taskDetailPanel(system)}
       <section class="cc-panel"><div class="cc-panel-head"><h2>当前客户</h2><div class="cc-row-actions"><button class="primary" type="button" onclick="runGlmQueue()" ${eligibleCount ? '' : 'disabled'}>${eligibleCount ? '执行当前最高优先级客户' : '暂无待开发客户'}</button><span class="cc-chip green">${stateLabel(task.state)}</span></div></div><div class="cc-panel-body">
         <div class="cc-current"><div><h3>${platformUrl(task) ? `<a href="${esc(platformUrl(task))}" target="_blank" rel="noopener">${esc(task.company)}</a>` : esc(task.company)}</h3><div class="cc-sub">${esc(task.role || '采购/合作负责人')} · ${esc(task.country || '区域待补全')} · ${esc(task.keyword)}</div><div class="cc-actions"><button type="button" onclick="openVerifiedCustomer('${esc(task.taskId)}')" ${platformUrl(task) ? '' : 'disabled'}>打开客户主页</button><button class="primary" type="button" title="${esc(autoClawAvailability(task).reason)}" onclick="runGlmDirect('${esc(task.taskId)}')" ${canRunGlm(task) ? '' : 'disabled'}>${esc(autoClawAvailability(task).label)}</button><a href="${urlFor('customer', { contact: task.taskId })}">查看系统档案</a></div></div><div class="cc-score"><strong>${score.total}</strong><span>综合开发分 / 100</span></div></div>
         <div class="cc-sub">ICP：${activeIcp}/100 · ${esc(icpExplanation(task))}</div>
         ${stageRoute(task)}
         ${task.identityStatus === 'identity_mismatch' ? `<div class="cc-quality">身份不匹配：${esc(task.identityNote || '该账号与目标客户画像不一致，已禁止自动执行。')}</div>` : ''}
-        <div class="cc-message">${esc(task.approvedMessage || 'Codex 将依据账号证据和客户画像审批，GLM 可辅助生成文案。')}</div>
+        <div class="cc-message">${esc(task.approvedMessage || salesChampionNextStep(task))}</div>
       </div></section>
       <section class="cc-panel"><div class="cc-panel-head"><h2>接下来</h2><a href="${urlFor('queue', { queue: 'untouched' })}">查看全部</a></div><div class="cc-table-wrap">${taskTable(untouched.slice().sort((left, right) => icpScore(right) - icpScore(left)).slice(0, 8))}</div></section>`;
   }
   function taskTable(list) {
     if (!list.length) return '<div class="cc-empty">当前筛选下没有客户</div>';
-    return `<table class="cc-table"><thead><tr><th>客户</th><th>国家</th><th>关键词</th><th>状态</th><th>ICP</th><th>操作</th></tr></thead><tbody>${list.map(task => {
+    return `<table class="cc-table"><thead><tr><th>客户</th><th>国家</th><th>关键词</th><th>状态</th><th>成交分</th><th>区域</th><th>操作</th></tr></thead><tbody>${list.map(task => {
       const qualified = isIcpQualified(task);
       const rowClass = qualified ? '' : ' class="cc-low-icp"';
       const linkClass = qualified ? '' : ' class="cc-strike-link"';
@@ -393,17 +817,18 @@
       const customerHref = target || urlFor('customer', { contact: task.taskId });
       const customerLinkAttrs = target ? ` href="${esc(customerHref)}" target="_blank" rel="noopener"` : ` href="${customerHref}"`;
       const archiveLink = target ? `<br><a class="cc-sub-link" href="${urlFor('customer', { contact: task.taskId })}">System profile</a>` : '';
-      return `<tr${rowClass}><td><a${linkClass}${customerLinkAttrs} title="Open verified customer platform; ${esc(icpExplanation(task))}">${esc(task.company)}</a>${archiveLink}${task.identityStatus === 'identity_mismatch' ? '<br><span class="cc-chip red">Identity mismatch</span>' : ''}${qualified ? '' : '<br><span class="cc-chip amber">Low ICP retained</span>'}</td><td>${esc(task.country)}</td><td>${esc(task.keyword)}</td><td><span class="cc-chip">${stateLabel(task.state)}</span></td><td title="Open verified customer platform; ${esc(icpExplanation(task))}">${icpScore(task)}</td><td><div class="cc-row-actions"><button type="button" onclick="openVerifiedCustomer('${esc(task.taskId)}')" ${target ? '' : 'disabled'}>Open profile</button><button type="button" title="${esc(autoClawAvailability(task).reason)}" onclick="runGlmDirect('${esc(task.taskId)}')" ${canRunGlm(task) ? '' : 'disabled'}>${esc(autoClawAvailability(task).label)}</button></div></td></tr>`;
+      return `<tr${rowClass}><td><a${linkClass}${customerLinkAttrs} title="Open verified customer platform; ${esc(icpExplanation(task))}">${esc(task.company)}</a>${archiveLink}${task.identityStatus === 'identity_mismatch' ? '<br><span class="cc-chip red">Identity mismatch</span>' : ''}${qualified ? '' : '<br><span class="cc-chip amber">Low ICP retained</span>'}</td><td>${esc(task.country)}</td><td>${esc(task.keyword)}</td><td><span class="cc-chip">${stateLabel(task.state)}</span></td><td title="ICP ${icpScore(task)} + market/contact/region priority">${dealProbabilityScore(task)}</td><td><span class="cc-chip ${['southeast_asia', 'europe', 'americas'].includes(targetRegion(task)) ? 'green' : ''}">${esc(targetRegion(task))}</span></td><td><div class="cc-row-actions"><button type="button" onclick="openVerifiedCustomer('${esc(task.taskId)}')" ${target ? '' : 'disabled'}>Open profile</button><button type="button" title="${esc(autoClawAvailability(task).reason)}" onclick="runGlmDirect('${esc(task.taskId)}')" ${canRunGlm(task) ? '' : 'disabled'}>${esc(autoClawAvailability(task).label)}</button></div></td></tr>`;
     }).join('')}</tbody></table>`;
   }
   function queue() {
     const mode = query.get('queue') || 'untouched';
     const list = latestRun
-      ? (mode === 'followup' ? todayFollowupTasks() : mode === 'all' ? latestQueueRows('all') : todayDevelopTasks())
+      ? (mode === 'followup' ? todayFollowupTasks() : mode === 'cooldown' ? latestQueueRows('cooldownQueue') : mode === 'all' ? latestQueueRows('all') : executableDevelopmentTasks())
       : (mode === 'followup' ? followupTasks() : mode === 'all' ? tasks : untouchedTasks());
     const tabs = [
-      ['untouched', '今日待开发', todayDevelopTasks().length],
+      ['untouched', '可自动开发', executableDevelopmentTasks().length],
       ['followup', '跟进中', todayFollowupTasks().length],
+      ['cooldown', '短期不重复', latestRun ? latestQueueRows('cooldownQueue').length : 0],
       ['all', '全部任务', latestRun ? latestQueueRows('all').length : tasks.length],
     ];
     return `${pageHead('今日队列', '默认只显示未触达且身份核验通过的新客户，历史客户单独跟进')}
@@ -452,6 +877,7 @@
       return true;
     });
     const sortableValue = record => {
+      if (sort === 'dealProbabilityScore') return dealProbabilityScore(record);
       if (sort === 'fitScore' || sort === 'marketScore') return Number(record[sort] || 0);
       if (sort === 'lastTouch') return Date.parse(record.lastTouch || record.date || '') || 0;
       return String(record[sort] || '').toLowerCase();
@@ -495,7 +921,7 @@
         <select id="customer-touch-time" name="touchTime"><option value="">全部触达时间</option><option value="none" ${touchTime === 'none' ? 'selected' : ''}>无触达时间</option><option value="7" ${touchTime === '7' ? 'selected' : ''}>最近 7 天</option><option value="30" ${touchTime === '30' ? 'selected' : ''}>最近 30 天</option><option value="90" ${touchTime === '90' ? 'selected' : ''}>最近 90 天</option><option value="custom" ${touchTime === 'custom' ? 'selected' : ''}>自定义日期</option></select>
         <input id="customer-touch-from" name="touchFrom" type="date" value="${esc(touchFrom)}" title="最近触达开始日期">
         <input id="customer-touch-to" name="touchTo" type="date" value="${esc(touchTo)}" title="最近触达结束日期">
-        <select id="customer-sort" name="sort"><option value="fitScore" ${sort === 'fitScore' ? 'selected' : ''}>ICP 分数</option><option value="marketScore" ${sort === 'marketScore' ? 'selected' : ''}>市场分数</option><option value="lastTouch" ${sort === 'lastTouch' ? 'selected' : ''}>最近触达</option><option value="company" ${sort === 'company' ? 'selected' : ''}>公司</option></select>
+        <select id="customer-sort" name="sort"><option value="dealProbabilityScore" ${sort === 'dealProbabilityScore' ? 'selected' : ''}>成交概率</option><option value="fitScore" ${sort === 'fitScore' ? 'selected' : ''}>ICP 分数</option><option value="marketScore" ${sort === 'marketScore' ? 'selected' : ''}>市场分数</option><option value="lastTouch" ${sort === 'lastTouch' ? 'selected' : ''}>最近触达</option><option value="company" ${sort === 'company' ? 'selected' : ''}>公司</option></select>
         <input type="hidden" name="direction" value="${direction}">
         <button class="primary" type="submit">筛选</button><a class="cc-reset" href="${urlFor('customers')}">重置筛选</a>
       </form>
@@ -507,7 +933,7 @@
         const customerHref = target || urlFor('customer', { contact: key });
         const customerLinkAttrs = target ? ` href="${esc(customerHref)}" target="_blank" rel="noopener"` : ` href="${customerHref}"`;
         const archiveLink = target ? `<br><a class="cc-sub-link" href="${urlFor('customer', { contact: key })}">System profile</a>` : '';
-        return `<tr class="${qualified ? '' : 'cc-low-icp'}"><td><a${linkClass}${customerLinkAttrs} title="Open verified customer platform; ${esc(icpExplanation(record))}">${esc(record.name)}</a>${archiveLink}</td><td>${esc(record.company)}${qualified ? '' : '<br><span class="cc-chip amber">Low ICP retained</span>'}</td><td>${esc(record.role)}</td><td>${esc(record.country)}</td><td>${esc(record.platform)}</td><td><span class="cc-chip">${esc(record.status)}</span></td><td title="Open verified customer platform; ${esc(icpExplanation(record))}">${icpScore(record)}</td><td>${esc(record.lastTouch || record.date || '')}</td></tr>`;
+        return `<tr class="${qualified ? '' : 'cc-low-icp'}"><td><a${linkClass}${customerLinkAttrs} title="Open verified customer platform; ${esc(icpExplanation(record))}">${esc(record.name)}</a>${archiveLink}</td><td>${esc(record.company)}${qualified ? '' : '<br><span class="cc-chip amber">Low ICP retained</span>'}</td><td>${esc(record.role)}</td><td>${esc(record.country)}</td><td>${esc(record.platform)}</td><td><span class="cc-chip">${esc(record.status)}</span></td><td title="ICP ${icpScore(record)} + market/contact/region priority">${dealProbabilityScore(record)}</td><td>${esc(record.lastTouch || record.date || '')}</td></tr>`;
       }).join('')}</tbody></table>${rows.length ? '' : '<div class="cc-empty">没有匹配客户，请重置或调整筛选条件</div>'}</div>`;
   }
   function seo() {
@@ -590,6 +1016,39 @@
       ['核验来源', record.identitySource || ''],
     ].filter(([, value]) => value);
   }
+  function salesChampionNextStep(task) {
+    const channel = String(task.platform || '').toLowerCase() === 'email' ? '官网/供应商入口'
+      : String(task.platform || '').toLowerCase() === 'facebook' ? 'Facebook 官方主页'
+        : String(task.platform || '').toLowerCase() === 'instagram' ? 'Instagram 官方主页'
+          : '最佳可验证渠道';
+    const persona = task.buyerPersona || task.role || 'category buyer / partnership contact';
+    const reason = task.background || task.opportunity || task.reason || '户外零售品类匹配';
+    return `全球销冠流程：先用客户画像确认 ${persona}，通过 ${channel} 核验目标，再围绕 ${reason} 形成采购假设；只做一个精准动作，发送后进入跟进、联系方式捕获和机会复盘。`;
+  }
+  function firstUrl(...values) {
+    return values.flat().find(value => /^https?:\/\//i.test(String(value || ''))) || '';
+  }
+  function channelMatrixRows(record) {
+    const alternates = record.alternateChannels || {};
+    const invalid = record.invalidChannels || {};
+    const rows = [
+      ['Public Email', record.publicEmail || record.contactEmail || '', record.publicEmailStatus || 'Public email if verified; blank means no public buyer email found'],
+      ['Official Website', firstUrl(record.website, record.companyWebsite), 'Primary company verification and vendor/contact research'],
+      ['Website Contact', firstUrl(record.contactUrl, alternates.websiteContact), 'Preferred non-social route for buyer/vendor inquiry'],
+      ['Vendor Portal', firstUrl(record.vendorPortal), record.contactNote || 'Supplier or vendor onboarding/contact route'],
+      ['Instagram', firstUrl(record.instagram_url, record.platform === 'instagram' ? record.targetUrl : '', alternates.instagram), invalid.instagram ? invalid.instagram.status : 'Use only if profile opens and message composer is available'],
+      ['Facebook', firstUrl(record.facebook_url, record.platform === 'facebook' ? record.targetUrl : '', alternates.facebook), 'Use official page when Instagram is broken or unavailable'],
+      ['LinkedIn', firstUrl(record.linkedin_url, record.linkedin), 'Use for company and buyer role validation'],
+      ['Google Contact Search', firstUrl(record.contactSearchUrl, record.evidenceUrl, record.query), 'Find buyer, wholesale, vendor portal, or partnership contact'],
+    ];
+    return rows.filter(([, value, note]) => value || note);
+  }
+  function renderContactValue(value) {
+    const text = String(value || '');
+    if (/^https?:\/\//i.test(text)) return `<a href="${esc(text)}" target="_blank" rel="noopener">${esc(text)}</a>`;
+    if (/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(text)) return `<a href="mailto:${esc(text)}">${esc(text)}</a>`;
+    return esc(text || 'Pending');
+  }
   function priorityTier(entity, score) {
     const value = Math.round(Number(entity && entity.fitScore || score && score.total || 0));
     if (value >= 90) return 'S / 战略客户';
@@ -645,6 +1104,22 @@
     if (scoreValue >= 70) return { first: 'USD8K-15K', annual: 'USD80K+', cycle: '60-120 Days' };
     return { first: '待验证', annual: '待验证', cycle: '90+ Days' };
   }
+  function salesResearchRows(record, score) {
+    const scoreValue = Math.round(Number(record.fitScore || score.total || 0));
+    const potential = potentialByScore(scoreValue);
+    return [
+      ['Customer Type', businessModel(record)],
+      ['Market Coverage', coverage(record)],
+      ['Priority Tier', priorityTier(record, score)],
+      ['Buyer Persona', record.buyerPersona || record.role || 'Buyer / Category Manager / Vendor Review Contact'],
+      ['Likely Product Fit', record.productFit || 'FLEXTAIL portable pumps, outdoor power, camping lighting, and 2026 new SKU line'],
+      ['Recommended Opening', record.salesAngle || record.background || 'Lead with compact outdoor power and pump solutions for camping/accessory category expansion.'],
+      ['Estimated First Order', record.firstOrder || potential.first],
+      ['Annual Potential', record.annualPotential || potential.annual],
+      ['Entry Risk', entryBarrier(record, scoreValue)],
+      ['Next Action', record.nextAction || record.reason || 'Verify best buyer/contact channel, then send persona-specific outreach.'],
+    ];
+  }
   function globalCustomerDashboardRows(record, score) {
     const scoreValue = Math.round(Number(record.fitScore || score.total || 0));
     const potential = potentialByScore(scoreValue);
@@ -656,6 +1131,11 @@
       ['Basic Info', 'Website', record.website || record.companyWebsite || '待补充', '官网'],
       ['Basic Info', 'LinkedIn', record.linkedin_url || record.linkedin || '待补充', '公司主页'],
       ['Basic Info', 'Founded', record.founded || '待补充', '成立时间'],
+      ['Basic Info', 'Headquarters', record.headquarters || '待补充', '总部'],
+      ['Contact', 'Public Email', record.publicEmail || record.contactEmail || '未公开 / 待核验', record.publicEmailStatus || '公开邮箱；若未公开，不自动猜测个人邮箱'],
+      ['Contact', 'Phone', record.contactPhone || '未公开 / 待核验', '公开电话或客服入口'],
+      ['Contact', 'Vendor / Contact Portal', record.vendorPortal || record.contactUrl || record.website || '待补充', '供应商/客服/联系人入口'],
+      ['Contact', 'Contact Note', record.contactNote || '优先请求 buyer/category manager/vendor review contact', '销售使用说明'],
       ['Business', 'Business Model', record.businessModel || businessModel(record), 'Distributor / Retail / Brand / Importer / E-commerce'],
       ['Business', 'Company Scale', record.companyScale || record.scale || '待补充：Revenue / Employees / Stores', '收入 / 员工 / 门店'],
       ['Business', 'Market Position', marketPosition(record, scoreValue), 'Premium / Mid / Entry'],
@@ -673,6 +1153,7 @@
       ['Business Potential', 'Annual Potential', record.annualPotential || potential.annual, '年销售潜力'],
       ['Business Potential', 'Margin Model', record.marginModel || 'Distributor 20% / Retail 35%', '利润模型'],
       ['Execution', 'Sales Strategy', record.salesStrategy || 'Instagram / LinkedIn -> Email -> Meeting -> Sample -> Quote', '开发路径'],
+      ['Execution', 'Data Sources', Array.isArray(record.dataSources) ? record.dataSources.join(' / ') : (record.dataSources || '待补充'), '联网核验来源摘要'],
       ['Execution', 'Current Status', currentStatus(record), 'Pipeline 阶段'],
       ['Execution', 'Next Action', nextAction, '下一步动作'],
       ['Execution', 'Owner', record.owner || 'Leo Liu', '负责人'],
@@ -720,10 +1201,10 @@
     const records = customerRecords();
     const record = task || records.find((item, index) => encodeURIComponent([item.platform, item.name, item.company, index].join('|')) === key);
     if (!record) return pageHead('客户详情', '未找到对应客户') + '<div class="cc-empty">该记录可能已更新，请返回客户附表。</div>';
-    const score = task && tasks.some(item => item.taskId === task.taskId) ? scoreTask(task) : engine.calculateDevelopmentScore({
+    const score = task ? scoreForDisplay(task) : engine.calculateDevelopmentScore({
       region: record.country, marketStatus: record.marketStatus, role: record.role,
       industry: record.industry, identityConfidence: record.linkedin_url || record.targetUrl ? 100 : 0,
-      keywordIntent: record.keyword_used ? 70 : 0,
+      keywordIntent: record.keyword_used || record.keyword ? 70 : 0,
     });
     const background = backgroundRows(record);
     const timeline = timelineFor(record);
@@ -731,18 +1212,35 @@
       <section class="cc-panel"><div class="cc-panel-body"><div class="cc-current"><div><h3>${esc(record.name)}</h3><div class="cc-sub">${esc(record.role)} · ${esc(record.country)} · ${esc(record.platform)}</div></div><div class="cc-score"><strong>${score.total}</strong><span>综合开发分</span></div></div></div></section>
       <section class="cc-panel"><div class="cc-panel-head"><h2>ICP 评分解释</h2></div><div class="cc-panel-body"><div class="cc-sub">${esc(icpExplanation(record))}</div></div></section>
       ${globalCustomerDashboard(record, score)}
+      <section class="cc-panel"><div class="cc-panel-head"><h2>Sales Intelligence Dossier</h2><span class="cc-sub">Sales-ready customer facts, opportunity, risk, and next action</span></div><div class="cc-panel-body"><table class="cc-table"><tbody>${salesResearchRows(record, score).map(([label, value]) => `<tr><th>${esc(label)}</th><td>${esc(value)}</td></tr>`).join('')}</tbody></table></div></section>
+      <section class="cc-panel"><div class="cc-panel-head"><h2>Verified Channel Matrix</h2><span class="cc-sub">Broken social links are marked for reroute instead of blind retry</span></div><div class="cc-panel-body"><table class="cc-table"><thead><tr><th>Channel</th><th>URL / Contact</th><th>Sales Use</th></tr></thead><tbody>${channelMatrixRows(record).map(([channel, url, note]) => `<tr><td>${esc(channel)}</td><td>${renderContactValue(url)}</td><td>${esc(note)}</td></tr>`).join('')}</tbody></table></div></section>
       <section class="cc-panel"><div class="cc-panel-head"><h2>客户背调明细</h2></div><div class="cc-panel-body"><table class="cc-table"><tbody>${background.map(([label, value]) => {
         const text = String(value || '');
         const rendered = /^https?:\/\//i.test(text) ? `<a href="${esc(text)}" target="_blank" rel="noopener">${esc(text)}</a>` : esc(text);
         return `<tr><th>${esc(label)}</th><td>${rendered}</td></tr>`;
       }).join('')}</tbody></table></div></section>
       <section class="cc-panel"><div class="cc-panel-head"><h2>触达时间线</h2></div><div class="cc-panel-body">${timeline.length ? `<div class="cc-timeline">${timeline.map(item => `<div class="cc-timeline-item"><b>${esc(item.time || '时间待补')}</b><span>${esc(item.title)}</span><p>${esc(item.detail || item.agent || '')}</p></div>`).join('')}</div>` : '<div class="cc-empty">暂无触达记录，可作为新客户候选；若已合作或已触达，请在客户状态中标记，系统会自动排除今日新开发。</div>'}</div></section>
-      <section class="cc-panel"><div class="cc-panel-head"><h2>开发信与 Codex Chrome 执行证据</h2></div><div class="cc-panel-body"><div class="cc-message">${esc(record.approvedMessage || record.message || '暂无批准开发信')}</div><div class="cc-sub" style="margin-top:12px">精确目标：${esc(record.targetUrl || record.instagram_url || record.linkedin_url || '')}<br>最近触达：${esc(record.lastTouch || record.date || '暂无')}<br>执行证据：${esc(record.automationEvidence || record.sendStatus || '暂无')}<br>身份状态：${esc(record.identityStatus || '待核验')}<br>核验来源：${esc(record.identitySource || '暂无')}</div></div></section>`;
+      <section class="cc-panel"><div class="cc-panel-head"><h2>开发信与 Codex Chrome 执行证据</h2></div><div class="cc-panel-body"><div class="cc-message">${esc(record.approvedMessage || record.message || '暂无自动开发信')}</div><div class="cc-sub" style="margin-top:12px">精确目标：${esc(record.targetUrl || record.instagram_url || record.linkedin_url || '')}<br>最近触达：${esc(record.lastTouch || record.date || '暂无')}<br>执行证据：${esc(record.automationEvidence || record.sendStatus || '暂无')}<br>身份状态：${esc(record.identityStatus || '待核验')}<br>核验来源：${esc(record.identitySource || '暂无')}</div></div></section>`;
   }
   function rail() {
     const task = currentTask();
-    if (!task) return '<aside class="cc-rail"><h2>Codex 决策</h2><div class="cc-empty">暂无任务</div></aside>';
-    const score = scoreTask(task);
+    if (!task) {
+      const system = latestSystemSummary();
+      const executionText = latestExecution
+        ? latestExecution.pendingExecution
+          ? '多点触达队列已刷新，尚未执行发送。'
+          : latestExecution.skippedOnly
+          ? '本次执行没有发送，全部被安全门拦截。'
+          : latestExecution.ok
+            ? '本次执行已完成。'
+            : `本次执行失败：${latestExecution.error || '未知错误'}`
+        : '尚未加载执行结果。';
+      return `<aside class="cc-rail"><h2>Codex 决策</h2>
+        <div class="cc-rail-section"><h2>本次运行</h2><div class="cc-evidence">dailyQueue：${system.dailyRows.length}<br>Google discovered：${system.googleRows.length}<br>websiteContact：${system.websiteContactRows.length}<br>${esc(executionText)}</div></div>
+        <div class="cc-rail-section"><h2>下一步</h2><div class="cc-evidence">优先处理上方“任务明细”里的官网/邮件入口；当前没有符合自动社媒发送条件的客户。</div></div>
+      </aside>`;
+    }
+    const score = scoreForDisplay(task);
     return `<aside class="cc-rail"><div class="cc-rail-section"><h2>Codex 决策</h2>${Object.entries(score.components).map(([key, value]) => `<div class="cc-score-row"><span>${esc(key)}</span><b>${value}</b></div>`).join('')}</div>
       <div class="cc-rail-section"><h2>安全门</h2><div class="cc-evidence">精确主页：${task.identityVerified ? '通过' : '未通过'}<br>身份状态：${esc(task.identityStatus || '待核验')}<br>重复触达：系统校验<br>冷却期：系统校验<br>独代冲突：系统校验<br>优化尝试：${task.approvalAttempts || 0} / 2</div></div>
       <div class="cc-rail-section"><h2>Codex Chrome 执行证据</h2><div class="cc-evidence">账号：${esc(task.targetUrl || '待核验')}<br>来源：${esc(task.identitySource || '暂无')}<br>核验：${esc(task.identityVerifiedAt || '暂无')}<br>ICP：${icpScore(task)} / 100<br>趋势：${esc(task.trend && task.trend.status || 'data_unavailable')}<br>发送：${esc(task.sendStatus || '待执行')}</div></div></aside>`;
@@ -839,7 +1337,7 @@
         else window.alert(result.error || 'Codex Chrome 自动开发未执行。');
         return;
       }
-      if (['prepared_not_sent', 'draft_prepared', 'draft_already_present', 'approval_pending', 'send_unconfirmed'].includes(result.sendStatus)
+      if (['prepared_not_sent', 'draft_prepared', 'draft_already_present', 'approval_pending', 'send_unconfirmed', 'website_contact_ready'].includes(result.sendStatus)
         || result.mode === 'followup_prepare_no_duplicate_send') {
         localStorage.setItem(`glm-direct-prepared:${task.taskId}`, new Date().toISOString());
       } else if (result.sendStatus === 'sent_confirmed') {
@@ -848,10 +1346,11 @@
         localStorage.setItem(`glm-direct-completed:${task.taskId}`, '1');
       }
       window.alert(result.sendStatus === 'draft_prepared'
-        ? '开发草稿已填入 Instagram 消息框，等待你人工确认发送。'
+        ? '开发草稿已准备；系统将优先自动发送，若未发送说明触发了安全门。'
         : result.sendStatus === 'sent_confirmed'
           ? '开发消息已自动发送并确认，系统将进入等待回复。'
-        : '客户主页已打开，执行证据已返回；请按页面提示人工继续。');
+        : '自动开发未完成：系统已暂停以避免错误发送，仅重大异常需要介入。');
+      location.reload();
     } catch (error) {
       window.alert(`自动开发失败：${error.message || error}`);
     } finally {
@@ -867,10 +1366,10 @@
       const button = document.activeElement;
       if (button && button.tagName === 'BUTTON') {
         button.disabled = true;
-        button.textContent = '当前客户执行中...';
+        button.textContent = '并行队列执行中...';
       }
       try {
-        const result = await window.customerDev.runDailyAutomationQueue({ limit: 1, parallelLimit: 1 });
+        const result = await window.customerDev.runDailyAutomationQueue({ limit: Math.max(1, executableDevelopmentTasks().length), parallelLimit: 1, delayMs: 2500 });
         if (!result.ok) {
           window.alert(`${result.error || 'Daily queue did not execute.'}\nSkipped: ${(result.skipped || []).length}`);
           return;
@@ -906,7 +1405,7 @@
       const task = eligible[index];
       const result = await window.customerDev.runGlmDirectAutomation({ lead: task });
       if (result.ok) {
-        if (['prepared_not_sent', 'draft_prepared', 'draft_already_present', 'approval_pending', 'send_unconfirmed'].includes(result.sendStatus)
+        if (['prepared_not_sent', 'draft_prepared', 'draft_already_present', 'approval_pending', 'send_unconfirmed', 'website_contact_ready'].includes(result.sendStatus)
           || result.mode === 'followup_prepare_no_duplicate_send') {
           localStorage.setItem(`glm-direct-prepared:${task.taskId}`, new Date().toISOString());
         } else {

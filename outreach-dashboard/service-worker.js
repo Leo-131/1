@@ -1,4 +1,4 @@
-const CACHE_NAME = 'customer-development-system-v18-7-8-20260625-google-discovery';
+﻿const CACHE_NAME = 'customer-development-system-v18-7-15-20260630-contact-enrichment-flow';
 const APP_SHELL = [
   './',
   './index.html',
@@ -7,6 +7,9 @@ const APP_SHELL = [
   './daily-outreach-tasks.js',
   './google-lead-discovery-latest.js',
   './daily-automation-latest.js',
+  './daily-automation-execution-latest.js',
+  './system-visibility-latest.js',
+  './github-sync/latest-status.js',
   './outreach-engine.js',
   './outreach-analytics.js',
   './autonomous-outreach-results.js',
@@ -37,6 +40,30 @@ self.addEventListener('activate', (event) => {
 
 self.addEventListener('fetch', (event) => {
   if (event.request.method !== 'GET') return;
+  const requestUrl = new URL(event.request.url);
+  const realtimeFiles = [
+    'daily-automation-latest.js',
+    'daily-automation-execution-latest.js',
+    'system-visibility-latest.js',
+    'github-sync/latest-status.js',
+    'google-lead-discovery-latest.js',
+    'autonomous-outreach-results.js',
+    'autonomous-outreach-data.js',
+    'command-center.js',
+  ];
+  const isRealtimeFile = realtimeFiles.some((name) => requestUrl.pathname.endsWith(`/${name}`));
+  if (isRealtimeFile) {
+    event.respondWith(
+      fetch(event.request, { cache: 'no-store' })
+        .then((response) => {
+          const copy = response.clone();
+          caches.open(CACHE_NAME).then((cache) => cache.put(event.request, copy));
+          return response;
+        })
+        .catch(() => caches.match(event.request))
+    );
+    return;
+  }
   if (event.request.mode === 'navigate') {
     event.respondWith(
       fetch(event.request)
@@ -60,3 +87,7 @@ self.addEventListener('fetch', (event) => {
     })
   );
 });
+
+
+
+

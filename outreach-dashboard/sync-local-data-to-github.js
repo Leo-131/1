@@ -62,8 +62,47 @@ function hasChanges(paths) {
   return output.length > 0;
 }
 
+function remoteHead(branch) {
+  return git(['ls-remote', 'origin', `refs/heads/${branch}`]).split(/\s+/)[0] || '';
+}
+
+function localContains(ref) {
+  try {
+    git(['merge-base', '--is-ancestor', ref, 'HEAD']);
+    return true;
+  } catch {
+    return false;
+  }
+}
+
+function integrateRemoteBranch(branch) {
+  const remoteCommit = remoteHead(branch);
+  if (!remoteCommit) return '';
+  git(['fetch', 'origin', branch], { stdio: 'inherit' });
+  const remoteRef = `refs/remotes/origin/${branch}`;
+  if (localContains(remoteRef)) return remoteCommit;
+  try {
+    git(['merge', '--no-edit', '--no-ff', remoteRef], { stdio: 'inherit' });
+    return remoteCommit;
+  } catch (error) {
+    const localCommit = git(['rev-parse', 'HEAD']);
+    writeSyncStatus({
+      ok: false,
+      pushed: false,
+      branch,
+      localCommit,
+      remoteCommit,
+      message: 'Remote branch must be merged before push',
+      error: error.message || String(error),
+    });
+    throw error;
+  }
+}
+
 function syncOnce() {
   fs.mkdirSync(OUT, { recursive: true });
+  const branch = git(['branch', '--show-current']);
+  const remoteCommit = PUSH ? integrateRemoteBranch(branch) : remoteHead(branch);
   const latest = redact(readJson(path.join(ROOT, 'daily-automation-latest.json'), {}));
   const latestDate = latest.date || new Date().toISOString().slice(0, 10);
   const latestRun = path.join(ROOT, 'daily-runs', `${latestDate}-daily-automation.json`);
@@ -92,9 +131,28 @@ function syncOnce() {
 
   const paths = [
     'github-sync',
+    'public/github-sync',
+    'command-center.js',
+    'daily-automation-runner.js',
+    'main.js',
+    'outreach-dashboard.html',
+    'service-worker.js',
+    'public/command-center.js',
+    'public/outreach-dashboard.html',
+    'public/service-worker.js',
+    'public/daily-automation-latest.js',
+    'public/google-lead-discovery-latest.js',
+    'public/google-lead-discovery-latest.json',
+    'public/daily-automation-execution-latest.js',
+    'public/daily-automation-execution-latest.json',
+    'public/system-visibility-latest.js',
+    'public/system-visibility-latest.json',
     'daily-automation-latest.js',
     'google-lead-discovery-latest.js',
+    'google-lead-discovery-latest.json',
+    'google-lead-discovery-latest.csv',
     'daily-automation-execution-latest.js',
+    'daily-automation-execution-latest.json',
     'system-visibility-latest.json',
     'system-visibility-latest.js',
     'sync-local-data-to-github.js',
@@ -105,8 +163,9 @@ function syncOnce() {
     writeSyncStatus({
       ok: true,
       pushed: false,
-      branch: git(['branch', '--show-current']),
+      branch,
       localCommit: git(['rev-parse', 'HEAD']),
+      remoteCommit,
       message: 'No local data changes to sync',
     });
     console.log('github sync: no local data changes');
@@ -114,9 +173,7 @@ function syncOnce() {
   }
   const message = `sync: local outreach data ${latestDate}`;
   git(['commit', '-m', message], { stdio: 'inherit' });
-  const branch = git(['branch', '--show-current']);
   const localCommit = git(['rev-parse', 'HEAD']);
-  const remoteCommit = git(['ls-remote', 'origin', `refs/heads/${branch}`]).split(/\s+/)[0] || '';
   if (PUSH) {
     try {
       git(['push', 'origin', branch], { stdio: 'inherit' });

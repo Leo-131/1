@@ -1,14 +1,442 @@
-rank,id,company,country,fitScore,keyword,website,platformUrl,background,buyerPersona,evidenceUrl,action
-"1","google-customer-rei-co-op","REI Co-op","United States","98","outdoor retail chain","https://www.rei.com/","https://www.instagram.com/rei/","Large US outdoor specialty retailer and co-op with camping, hiking, travel, and outdoor equipment categories.","Category buyer / merchandising manager for camping, outdoor electronics, and accessories.","https://www.google.com/search?q=%22REI%20Co-op%22%20%22outdoor%20retail%20chain%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact","develop"
-"2","google-customer-bass-pro-shops","Bass Pro Shops","United States","96","outdoor retail chain","https://www.basspro.com/","https://www.instagram.com/bassproshops/","Major North American outdoor, fishing, hunting, camping, and boating retailer with strong channel fit.","Outdoor camping accessories buyer or category merchant.","https://www.google.com/search?q=%22Bass%20Pro%20Shops%22%20%22outdoor%20retail%20chain%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact","develop"
-"3","google-customer-cabela-s","Cabela's","United States","95","outdoor retail chain","https://www.cabelas.com/","https://www.instagram.com/cabelas/","Outdoor retail brand under Bass Pro group, relevant for camping and outdoor accessory distribution.","Camping, hunting, or outdoor gear buyer.","https://www.google.com/search?q=%22Cabela's%22%20%22outdoor%20retail%20chain%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact","develop"
-"4","google-customer-mec","MEC","Canada","94","outdoor retail chain","https://www.mec.ca/","https://www.instagram.com/mec/","Canadian outdoor retail co-op focused on camping, hiking, climbing, travel, and outdoor gear.","Camping equipment / outdoor accessories category buyer.","https://www.google.com/search?q=%22MEC%22%20%22outdoor%20retail%20chain%22%20%22Canada%22%20buyer%20OR%20wholesale%20OR%20contact","develop"
-"5","google-customer-go-outdoors","GO Outdoors","United Kingdom","93","outdoor retail chain","https://www.gooutdoors.co.uk/","https://www.instagram.com/gooutdoors/","UK outdoor retailer with camping, tents, hiking, cycling, and outdoor equipment categories.","Camping and outdoor accessories buyer.","https://www.google.com/search?q=%22GO%20Outdoors%22%20%22outdoor%20retail%20chain%22%20%22United%20Kingdom%22%20buyer%20OR%20wholesale%20OR%20contact","develop"
-"6","google-customer-anaconda","Anaconda","Australia","92","outdoor retail chain","https://www.anacondastores.com/","https://www.instagram.com/anacondastores/","Australian outdoor retailer for camping, hiking, fishing, 4WD, and outdoor lifestyle equipment.","Camping / 4WD / outdoor equipment buyer.","https://www.google.com/search?q=%22Anaconda%22%20%22outdoor%20retail%20chain%22%20%22Australia%22%20buyer%20OR%20wholesale%20OR%20contact","develop"
-"7","google-customer-sail-outdoors","Sail Outdoors","Canada","91","outdoor retail chain","https://www.sail.ca/","https://www.instagram.com/sailoutdoors/","Canadian outdoor retailer for camping, fishing, hunting, apparel, and equipment.","Outdoor equipment buyer or merchandising lead.","https://www.google.com/search?q=%22Sail%20Outdoors%22%20%22outdoor%20retail%20chain%22%20%22Canada%22%20buyer%20OR%20wholesale%20OR%20contact","develop"
-"8","google-customer-cotswold-outdoor","Cotswold Outdoor","United Kingdom","90","outdoor retail chain","https://www.cotswoldoutdoor.com/","https://www.instagram.com/cotswoldoutdoor/","UK specialty outdoor retailer for hiking, camping, travel, and technical outdoor products.","Outdoor product category buyer or partnership manager.","https://www.google.com/search?q=%22Cotswold%20Outdoor%22%20%22outdoor%20retail%20chain%22%20%22United%20Kingdom%22%20buyer%20OR%20wholesale%20OR%20contact","develop"
-"9","google-customer-decathlon-germany","Decathlon Germany","Germany","90","sporting goods retail chain","https://www.decathlon.de/","https://www.instagram.com/decathlondeutschland/","Large sporting goods retailer with camping, hiking, outdoor, and travel categories.","Outdoor/camping category buyer or marketplace partnership lead.","https://www.google.com/search?q=%22Decathlon%20Germany%22%20%22sporting%20goods%20retail%20chain%22%20%22Germany%22%20buyer%20OR%20wholesale%20OR%20contact","develop"
-"10","google-customer-decathlon-france","Decathlon France","France","90","sporting goods retail chain","https://www.decathlon.fr/","https://www.instagram.com/decathlonfrance/","Large French sporting goods retailer with strong outdoor and camping category coverage.","Outdoor/camping category buyer or marketplace partnership lead.","https://www.google.com/search?q=%22Decathlon%20France%22%20%22sporting%20goods%20retail%20chain%22%20%22France%22%20buyer%20OR%20wholesale%20OR%20contact","develop"
-"11","google-customer-bcf","BCF","Australia","89","outdoor retail chain","https://www.bcf.com.au/","https://www.instagram.com/bcf.australia/","Australian boating, camping, and fishing retailer with strong fit for compact outdoor power and camping accessories.","Camping or outdoor accessories buyer.","https://www.google.com/search?q=%22BCF%22%20%22outdoor%20retail%20chain%22%20%22Australia%22%20buyer%20OR%20wholesale%20OR%20contact","develop"
-"12","google-customer-kathmandu","Kathmandu","New Zealand","88","outdoor brand and retail chain","https://www.kathmandu.co.nz/","https://www.instagram.com/kathmandugear/","New Zealand outdoor brand and retailer with apparel, travel, hiking, and camping categories.","Partnership, wholesale, or retail category manager.","https://www.google.com/search?q=%22Kathmandu%22%20%22outdoor%20brand%20and%20retail%20chain%22%20%22New%20Zealand%22%20buyer%20OR%20wholesale%20OR%20contact","develop"
-"13","google-customer-bever","Bever","Netherlands","86","outdoor retail chain","https://www.bever.nl/","https://www.instagram.com/bever/","Dutch outdoor retailer for hiking, camping, travel, and outdoor apparel/equipment.","Outdoor equipment buyer or category manager.","https://www.google.com/search?q=%22Bever%22%20%22outdoor%20retail%20chain%22%20%22Netherlands%22%20buyer%20OR%20wholesale%20OR%20contact","develop"
+rank,id,company,platform,country,fitScore,keyword,website,platformUrl,contactUrl,contactSearchUrl,emailFrom,websiteContactSubject,websiteContactMessage,background,buyerPersona,evidenceUrl,action
+"1","google-customer-rei-co-op-instagram","REI Co-op","instagram","United States","98","outdoor retail chain","https://www.rei.com/","https://www.instagram.com/rei/","","","","","","Large US outdoor specialty retailer and co-op with camping, hiking, travel, and outdoor equipment categories.","Category buyer / merchandising manager for camping, outdoor electronics, and accessories.","https://www.google.com/search?q=%22REI%20Co-op%22%20%22outdoor%20retail%20chain%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact","develop"
+"2","google-customer-rei-co-op-facebook","REI Co-op","facebook","United States","98","outdoor retail chain","https://www.rei.com/","https://www.facebook.com/REI","","","","","","Large US outdoor specialty retailer and co-op with camping, hiking, travel, and outdoor equipment categories.","Category buyer / merchandising manager for camping, outdoor electronics, and accessories.","https://www.google.com/search?q=%22REI%20Co-op%22%20%22outdoor%20retail%20chain%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact","develop"
+"3","google-customer-rei-co-op-website-contact","REI Co-op","email","United States","98","outdoor retail chain","https://www.rei.com/","https://www.rei.com/help","https://www.rei.com/help","https://www.google.com/search?q=site%3Awww.rei.com%20%22REI%20Co-op%22%20contact%20buyer%20wholesale%20email%20vendor","leo@flextailgear.com","Flextail & Vollyc | Lightweight Outdoor & 3C Electronics – Potential Cooperation","Dear REI Co-op Team,
+
+Nice to e-meet you.
+I am Leo, from Flextail & Vollyc.
+
+Flextail is our first and core brand, specializing in ultralight electric products for outdoor, travel, and home use. The brand is currently Top 1 on Amazon, with strong global sell-through and a proven product-market fit.
+Vollyc, our second brand, focuses on 3C electronics, targeting practical, high-rotation consumer use cases.
+
+From our perspective, your platform and positioning are highly aligned with Flextail’s product philosophy, especially in lightweight outdoor and travel-oriented electrics.
+
+We have already contacted with your team, and we are now actively exploring opportunities in other regions.
+Attached, you will find a brief introduction to our brands and current product catalog for your reference.
+
+Looking ahead, we are planning to launch over 36 new SKUs in 2026, covering multiple usage scenarios and price tiers, which we believe could be of interest to your assortment strategy.
+
+If you are available, I would greatly appreciate the opportunity to arrange a short introductory video meeting to present our brands and discuss potential collaboration opportunities.
+
+Thank you for your time and consideration. I look forward to your reply.
+
+[Flextail.com](https://www.flextail.com/), [vollyc.com](https://vollyc.com/)
+
+[Sincerely](https://wa.me/8617321028184)
+[Best Regard](https://wa.me/8617321028184)
+[Leo Liu](https://wa.me/8617321028184)
+[Sales](https://wa.me/8617321028184) [& Operations Director](https://wa.me/8617321028184)
+[Brand & ODM Department](https://wa.me/8617321028184)
+[Tel/whatsapp:  +86 17321028184](https://wa.me/8617321028184)
+
+[Email:  Leo@flextailgear.com](https://wa.me/8617321028184)
+[SHANGHAI FLEXTAIL TECHNOLOGY CO.,LTD.](https://wa.me/8617321028184)
+[Room103, Building No.6, No.1 Yanjiaqiao, Pudong District, ShangHai, China](https://wa.me/8617321028184)
+","Large US outdoor specialty retailer and co-op with camping, hiking, travel, and outdoor equipment categories.","Category buyer / merchandising manager for camping, outdoor electronics, and accessories.","https://www.google.com/search?q=%22REI%20Co-op%22%20%22outdoor%20retail%20chain%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact","email_priority"
+"4","google-customer-bass-pro-shops-instagram","Bass Pro Shops","instagram","United States","96","outdoor retail chain","https://www.basspro.com/","https://www.instagram.com/bassproshops/","","","","","","Major North American outdoor, fishing, hunting, camping, and boating retailer with strong channel fit.","Outdoor camping accessories buyer or category merchant.","https://www.google.com/search?q=%22Bass%20Pro%20Shops%22%20%22outdoor%20retail%20chain%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact","develop"
+"5","google-customer-bass-pro-shops-facebook","Bass Pro Shops","facebook","United States","96","outdoor retail chain","https://www.basspro.com/","https://www.facebook.com/bassproshops","","","","","","Major North American outdoor, fishing, hunting, camping, and boating retailer with strong channel fit.","Outdoor camping accessories buyer or category merchant.","https://www.google.com/search?q=%22Bass%20Pro%20Shops%22%20%22outdoor%20retail%20chain%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact","develop"
+"6","google-customer-bass-pro-shops-website-contact","Bass Pro Shops","email","United States","96","outdoor retail chain","https://www.basspro.com/","https://www.basspro.com/shop/en/contact-us","https://www.basspro.com/shop/en/contact-us","https://www.google.com/search?q=site%3Awww.basspro.com%20%22Bass%20Pro%20Shops%22%20contact%20buyer%20wholesale%20email%20vendor","leo@flextailgear.com","Flextail & Vollyc | Lightweight Outdoor & 3C Electronics – Potential Cooperation","Dear Bass Pro Shops Team,
+
+Nice to e-meet you.
+I am Leo, from Flextail & Vollyc.
+
+Flextail is our first and core brand, specializing in ultralight electric products for outdoor, travel, and home use. The brand is currently Top 1 on Amazon, with strong global sell-through and a proven product-market fit.
+Vollyc, our second brand, focuses on 3C electronics, targeting practical, high-rotation consumer use cases.
+
+From our perspective, your platform and positioning are highly aligned with Flextail’s product philosophy, especially in lightweight outdoor and travel-oriented electrics.
+
+We have already contacted with your team, and we are now actively exploring opportunities in other regions.
+Attached, you will find a brief introduction to our brands and current product catalog for your reference.
+
+Looking ahead, we are planning to launch over 36 new SKUs in 2026, covering multiple usage scenarios and price tiers, which we believe could be of interest to your assortment strategy.
+
+If you are available, I would greatly appreciate the opportunity to arrange a short introductory video meeting to present our brands and discuss potential collaboration opportunities.
+
+Thank you for your time and consideration. I look forward to your reply.
+
+[Flextail.com](https://www.flextail.com/), [vollyc.com](https://vollyc.com/)
+
+[Sincerely](https://wa.me/8617321028184)
+[Best Regard](https://wa.me/8617321028184)
+[Leo Liu](https://wa.me/8617321028184)
+[Sales](https://wa.me/8617321028184) [& Operations Director](https://wa.me/8617321028184)
+[Brand & ODM Department](https://wa.me/8617321028184)
+[Tel/whatsapp:  +86 17321028184](https://wa.me/8617321028184)
+
+[Email:  Leo@flextailgear.com](https://wa.me/8617321028184)
+[SHANGHAI FLEXTAIL TECHNOLOGY CO.,LTD.](https://wa.me/8617321028184)
+[Room103, Building No.6, No.1 Yanjiaqiao, Pudong District, ShangHai, China](https://wa.me/8617321028184)
+","Major North American outdoor, fishing, hunting, camping, and boating retailer with strong channel fit.","Outdoor camping accessories buyer or category merchant.","https://www.google.com/search?q=%22Bass%20Pro%20Shops%22%20%22outdoor%20retail%20chain%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact","email_priority"
+"7","google-customer-cabela-s-instagram","Cabela's","instagram","United States","95","outdoor retail chain","https://www.cabelas.com/","https://www.instagram.com/cabelas/","","","","","","Outdoor retail brand under Bass Pro group, relevant for camping and outdoor accessory distribution.","Camping, hunting, or outdoor gear buyer.","https://www.google.com/search?q=%22Cabela's%22%20%22outdoor%20retail%20chain%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact","develop"
+"8","google-customer-cabela-s-facebook","Cabela's","facebook","United States","95","outdoor retail chain","https://www.cabelas.com/","https://www.facebook.com/Cabelas","","","","","","Outdoor retail brand under Bass Pro group, relevant for camping and outdoor accessory distribution.","Camping, hunting, or outdoor gear buyer.","https://www.google.com/search?q=%22Cabela's%22%20%22outdoor%20retail%20chain%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact","develop"
+"9","google-customer-cabela-s-website-contact","Cabela's","email","United States","95","outdoor retail chain","https://www.cabelas.com/","https://www.cabelas.com/shop/en/contact-us","https://www.cabelas.com/shop/en/contact-us","https://www.google.com/search?q=site%3Awww.cabelas.com%20%22Cabela's%22%20contact%20buyer%20wholesale%20email%20vendor","leo@flextailgear.com","Flextail & Vollyc | Lightweight Outdoor & 3C Electronics – Potential Cooperation","Dear Cabela's Team,
+
+Nice to e-meet you.
+I am Leo, from Flextail & Vollyc.
+
+Flextail is our first and core brand, specializing in ultralight electric products for outdoor, travel, and home use. The brand is currently Top 1 on Amazon, with strong global sell-through and a proven product-market fit.
+Vollyc, our second brand, focuses on 3C electronics, targeting practical, high-rotation consumer use cases.
+
+From our perspective, your platform and positioning are highly aligned with Flextail’s product philosophy, especially in lightweight outdoor and travel-oriented electrics.
+
+We have already contacted with your team, and we are now actively exploring opportunities in other regions.
+Attached, you will find a brief introduction to our brands and current product catalog for your reference.
+
+Looking ahead, we are planning to launch over 36 new SKUs in 2026, covering multiple usage scenarios and price tiers, which we believe could be of interest to your assortment strategy.
+
+If you are available, I would greatly appreciate the opportunity to arrange a short introductory video meeting to present our brands and discuss potential collaboration opportunities.
+
+Thank you for your time and consideration. I look forward to your reply.
+
+[Flextail.com](https://www.flextail.com/), [vollyc.com](https://vollyc.com/)
+
+[Sincerely](https://wa.me/8617321028184)
+[Best Regard](https://wa.me/8617321028184)
+[Leo Liu](https://wa.me/8617321028184)
+[Sales](https://wa.me/8617321028184) [& Operations Director](https://wa.me/8617321028184)
+[Brand & ODM Department](https://wa.me/8617321028184)
+[Tel/whatsapp:  +86 17321028184](https://wa.me/8617321028184)
+
+[Email:  Leo@flextailgear.com](https://wa.me/8617321028184)
+[SHANGHAI FLEXTAIL TECHNOLOGY CO.,LTD.](https://wa.me/8617321028184)
+[Room103, Building No.6, No.1 Yanjiaqiao, Pudong District, ShangHai, China](https://wa.me/8617321028184)
+","Outdoor retail brand under Bass Pro group, relevant for camping and outdoor accessory distribution.","Camping, hunting, or outdoor gear buyer.","https://www.google.com/search?q=%22Cabela's%22%20%22outdoor%20retail%20chain%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact","email_priority"
+"10","google-customer-mec-instagram","MEC","instagram","Canada","94","outdoor retail chain","https://www.mec.ca/","https://www.instagram.com/mec/","","","","","","Canadian outdoor retail co-op focused on camping, hiking, climbing, travel, and outdoor gear.","Camping equipment / outdoor accessories category buyer.","https://www.google.com/search?q=%22MEC%22%20%22outdoor%20retail%20chain%22%20%22Canada%22%20buyer%20OR%20wholesale%20OR%20contact","develop"
+"11","google-customer-mec-facebook","MEC","facebook","Canada","94","outdoor retail chain","https://www.mec.ca/","https://www.facebook.com/MountainEquipmentCoop","","","","","","Canadian outdoor retail co-op focused on camping, hiking, climbing, travel, and outdoor gear.","Camping equipment / outdoor accessories category buyer.","https://www.google.com/search?q=%22MEC%22%20%22outdoor%20retail%20chain%22%20%22Canada%22%20buyer%20OR%20wholesale%20OR%20contact","develop"
+"12","google-customer-mec-website-contact","MEC","email","Canada","94","outdoor retail chain","https://www.mec.ca/","https://www.mec.ca/en/contact-us","https://www.mec.ca/en/contact-us","https://www.google.com/search?q=site%3Awww.mec.ca%20%22MEC%22%20contact%20buyer%20wholesale%20email%20vendor","leo@flextailgear.com","Flextail & Vollyc | Lightweight Outdoor & 3C Electronics – Potential Cooperation","Dear MEC Team,
+
+Nice to e-meet you.
+I am Leo, from Flextail & Vollyc.
+
+Flextail is our first and core brand, specializing in ultralight electric products for outdoor, travel, and home use. The brand is currently Top 1 on Amazon, with strong global sell-through and a proven product-market fit.
+Vollyc, our second brand, focuses on 3C electronics, targeting practical, high-rotation consumer use cases.
+
+From our perspective, your platform and positioning are highly aligned with Flextail’s product philosophy, especially in lightweight outdoor and travel-oriented electrics.
+
+We have already contacted with your team, and we are now actively exploring opportunities in other regions.
+Attached, you will find a brief introduction to our brands and current product catalog for your reference.
+
+Looking ahead, we are planning to launch over 36 new SKUs in 2026, covering multiple usage scenarios and price tiers, which we believe could be of interest to your assortment strategy.
+
+If you are available, I would greatly appreciate the opportunity to arrange a short introductory video meeting to present our brands and discuss potential collaboration opportunities.
+
+Thank you for your time and consideration. I look forward to your reply.
+
+[Flextail.com](https://www.flextail.com/), [vollyc.com](https://vollyc.com/)
+
+[Sincerely](https://wa.me/8617321028184)
+[Best Regard](https://wa.me/8617321028184)
+[Leo Liu](https://wa.me/8617321028184)
+[Sales](https://wa.me/8617321028184) [& Operations Director](https://wa.me/8617321028184)
+[Brand & ODM Department](https://wa.me/8617321028184)
+[Tel/whatsapp:  +86 17321028184](https://wa.me/8617321028184)
+
+[Email:  Leo@flextailgear.com](https://wa.me/8617321028184)
+[SHANGHAI FLEXTAIL TECHNOLOGY CO.,LTD.](https://wa.me/8617321028184)
+[Room103, Building No.6, No.1 Yanjiaqiao, Pudong District, ShangHai, China](https://wa.me/8617321028184)
+","Canadian outdoor retail co-op focused on camping, hiking, climbing, travel, and outdoor gear.","Camping equipment / outdoor accessories category buyer.","https://www.google.com/search?q=%22MEC%22%20%22outdoor%20retail%20chain%22%20%22Canada%22%20buyer%20OR%20wholesale%20OR%20contact","email_priority"
+"13","google-customer-go-outdoors-instagram","GO Outdoors","instagram","United Kingdom","93","outdoor retail chain","https://www.gooutdoors.co.uk/","https://www.instagram.com/gooutdoors/","","","","","","UK outdoor retailer with camping, tents, hiking, cycling, and outdoor equipment categories.","Camping and outdoor accessories buyer.","https://www.google.com/search?q=%22GO%20Outdoors%22%20%22outdoor%20retail%20chain%22%20%22United%20Kingdom%22%20buyer%20OR%20wholesale%20OR%20contact","develop"
+"14","google-customer-go-outdoors-facebook","GO Outdoors","facebook","United Kingdom","93","outdoor retail chain","https://www.gooutdoors.co.uk/","https://www.facebook.com/GOoutdoorsUK/","","","","","","UK outdoor retailer with camping, tents, hiking, cycling, and outdoor equipment categories.","Camping and outdoor accessories buyer.","https://www.google.com/search?q=%22GO%20Outdoors%22%20%22outdoor%20retail%20chain%22%20%22United%20Kingdom%22%20buyer%20OR%20wholesale%20OR%20contact","develop"
+"15","google-customer-go-outdoors-website-contact","GO Outdoors","email","United Kingdom","93","outdoor retail chain","https://www.gooutdoors.co.uk/","https://www.gooutdoors.co.uk/contact-us","https://www.gooutdoors.co.uk/contact-us","https://www.google.com/search?q=site%3Awww.gooutdoors.co.uk%20%22GO%20Outdoors%22%20contact%20buyer%20wholesale%20email%20vendor","leo@flextailgear.com","Flextail & Vollyc | Lightweight Outdoor & 3C Electronics – Potential Cooperation","Dear GO Outdoors Team,
+
+Nice to e-meet you.
+I am Leo, from Flextail & Vollyc.
+
+Flextail is our first and core brand, specializing in ultralight electric products for outdoor, travel, and home use. The brand is currently Top 1 on Amazon, with strong global sell-through and a proven product-market fit.
+Vollyc, our second brand, focuses on 3C electronics, targeting practical, high-rotation consumer use cases.
+
+From our perspective, your platform and positioning are highly aligned with Flextail’s product philosophy, especially in lightweight outdoor and travel-oriented electrics.
+
+We have already contacted with your team, and we are now actively exploring opportunities in other regions.
+Attached, you will find a brief introduction to our brands and current product catalog for your reference.
+
+Looking ahead, we are planning to launch over 36 new SKUs in 2026, covering multiple usage scenarios and price tiers, which we believe could be of interest to your assortment strategy.
+
+If you are available, I would greatly appreciate the opportunity to arrange a short introductory video meeting to present our brands and discuss potential collaboration opportunities.
+
+Thank you for your time and consideration. I look forward to your reply.
+
+[Flextail.com](https://www.flextail.com/), [vollyc.com](https://vollyc.com/)
+
+[Sincerely](https://wa.me/8617321028184)
+[Best Regard](https://wa.me/8617321028184)
+[Leo Liu](https://wa.me/8617321028184)
+[Sales](https://wa.me/8617321028184) [& Operations Director](https://wa.me/8617321028184)
+[Brand & ODM Department](https://wa.me/8617321028184)
+[Tel/whatsapp:  +86 17321028184](https://wa.me/8617321028184)
+
+[Email:  Leo@flextailgear.com](https://wa.me/8617321028184)
+[SHANGHAI FLEXTAIL TECHNOLOGY CO.,LTD.](https://wa.me/8617321028184)
+[Room103, Building No.6, No.1 Yanjiaqiao, Pudong District, ShangHai, China](https://wa.me/8617321028184)
+","UK outdoor retailer with camping, tents, hiking, cycling, and outdoor equipment categories.","Camping and outdoor accessories buyer.","https://www.google.com/search?q=%22GO%20Outdoors%22%20%22outdoor%20retail%20chain%22%20%22United%20Kingdom%22%20buyer%20OR%20wholesale%20OR%20contact","email_priority"
+"16","google-customer-anaconda-instagram","Anaconda","instagram","Australia","92","outdoor retail chain","https://www.anacondastores.com/","https://www.instagram.com/anacondastores/","","","","","","Australian outdoor retailer for camping, hiking, fishing, 4WD, and outdoor lifestyle equipment.","Camping / 4WD / outdoor equipment buyer.","https://www.google.com/search?q=%22Anaconda%22%20%22outdoor%20retail%20chain%22%20%22Australia%22%20buyer%20OR%20wholesale%20OR%20contact","develop"
+"17","google-customer-anaconda-facebook","Anaconda","facebook","Australia","92","outdoor retail chain","https://www.anacondastores.com/","https://www.facebook.com/AnacondaStores","","","","","","Australian outdoor retailer for camping, hiking, fishing, 4WD, and outdoor lifestyle equipment.","Camping / 4WD / outdoor equipment buyer.","https://www.google.com/search?q=%22Anaconda%22%20%22outdoor%20retail%20chain%22%20%22Australia%22%20buyer%20OR%20wholesale%20OR%20contact","develop"
+"18","google-customer-anaconda-website-contact","Anaconda","email","Australia","92","outdoor retail chain","https://www.anacondastores.com/","https://www.anacondastores.com/contact-us","https://www.anacondastores.com/contact-us","https://www.google.com/search?q=site%3Awww.anacondastores.com%20%22Anaconda%22%20contact%20buyer%20wholesale%20email%20vendor","leo@flextailgear.com","Flextail & Vollyc | Lightweight Outdoor & 3C Electronics – Potential Cooperation","Dear Anaconda Team,
+
+Nice to e-meet you.
+I am Leo, from Flextail & Vollyc.
+
+Flextail is our first and core brand, specializing in ultralight electric products for outdoor, travel, and home use. The brand is currently Top 1 on Amazon, with strong global sell-through and a proven product-market fit.
+Vollyc, our second brand, focuses on 3C electronics, targeting practical, high-rotation consumer use cases.
+
+From our perspective, your platform and positioning are highly aligned with Flextail’s product philosophy, especially in lightweight outdoor and travel-oriented electrics.
+
+We have already contacted with your team, and we are now actively exploring opportunities in other regions.
+Attached, you will find a brief introduction to our brands and current product catalog for your reference.
+
+Looking ahead, we are planning to launch over 36 new SKUs in 2026, covering multiple usage scenarios and price tiers, which we believe could be of interest to your assortment strategy.
+
+If you are available, I would greatly appreciate the opportunity to arrange a short introductory video meeting to present our brands and discuss potential collaboration opportunities.
+
+Thank you for your time and consideration. I look forward to your reply.
+
+[Flextail.com](https://www.flextail.com/), [vollyc.com](https://vollyc.com/)
+
+[Sincerely](https://wa.me/8617321028184)
+[Best Regard](https://wa.me/8617321028184)
+[Leo Liu](https://wa.me/8617321028184)
+[Sales](https://wa.me/8617321028184) [& Operations Director](https://wa.me/8617321028184)
+[Brand & ODM Department](https://wa.me/8617321028184)
+[Tel/whatsapp:  +86 17321028184](https://wa.me/8617321028184)
+
+[Email:  Leo@flextailgear.com](https://wa.me/8617321028184)
+[SHANGHAI FLEXTAIL TECHNOLOGY CO.,LTD.](https://wa.me/8617321028184)
+[Room103, Building No.6, No.1 Yanjiaqiao, Pudong District, ShangHai, China](https://wa.me/8617321028184)
+","Australian outdoor retailer for camping, hiking, fishing, 4WD, and outdoor lifestyle equipment.","Camping / 4WD / outdoor equipment buyer.","https://www.google.com/search?q=%22Anaconda%22%20%22outdoor%20retail%20chain%22%20%22Australia%22%20buyer%20OR%20wholesale%20OR%20contact","email_priority"
+"19","google-customer-sail-outdoors-facebook","Sail Outdoors","facebook","Canada","91","outdoor retail chain","https://www.sail.ca/","https://www.facebook.com/SAILoutdoors","","","","","","Canadian outdoor retailer for camping, fishing, hunting, apparel, and equipment.","Outdoor equipment buyer or merchandising lead.","https://www.google.com/search?q=%22Sail%20Outdoors%22%20%22outdoor%20retail%20chain%22%20%22Canada%22%20buyer%20OR%20wholesale%20OR%20contact","develop"
+"20","google-customer-sail-outdoors-website-contact","Sail Outdoors","email","Canada","91","outdoor retail chain","https://www.sail.ca/","https://www.sail.ca/en/contact-us","https://www.sail.ca/en/contact-us","https://www.google.com/search?q=site%3Awww.sail.ca%20%22Sail%20Outdoors%22%20contact%20buyer%20wholesale%20email%20vendor","leo@flextailgear.com","Flextail & Vollyc | Lightweight Outdoor & 3C Electronics – Potential Cooperation","Dear Sail Outdoors Team,
+
+Nice to e-meet you.
+I am Leo, from Flextail & Vollyc.
+
+Flextail is our first and core brand, specializing in ultralight electric products for outdoor, travel, and home use. The brand is currently Top 1 on Amazon, with strong global sell-through and a proven product-market fit.
+Vollyc, our second brand, focuses on 3C electronics, targeting practical, high-rotation consumer use cases.
+
+From our perspective, your platform and positioning are highly aligned with Flextail’s product philosophy, especially in lightweight outdoor and travel-oriented electrics.
+
+We have already contacted with your team, and we are now actively exploring opportunities in other regions.
+Attached, you will find a brief introduction to our brands and current product catalog for your reference.
+
+Looking ahead, we are planning to launch over 36 new SKUs in 2026, covering multiple usage scenarios and price tiers, which we believe could be of interest to your assortment strategy.
+
+If you are available, I would greatly appreciate the opportunity to arrange a short introductory video meeting to present our brands and discuss potential collaboration opportunities.
+
+Thank you for your time and consideration. I look forward to your reply.
+
+[Flextail.com](https://www.flextail.com/), [vollyc.com](https://vollyc.com/)
+
+[Sincerely](https://wa.me/8617321028184)
+[Best Regard](https://wa.me/8617321028184)
+[Leo Liu](https://wa.me/8617321028184)
+[Sales](https://wa.me/8617321028184) [& Operations Director](https://wa.me/8617321028184)
+[Brand & ODM Department](https://wa.me/8617321028184)
+[Tel/whatsapp:  +86 17321028184](https://wa.me/8617321028184)
+
+[Email:  Leo@flextailgear.com](https://wa.me/8617321028184)
+[SHANGHAI FLEXTAIL TECHNOLOGY CO.,LTD.](https://wa.me/8617321028184)
+[Room103, Building No.6, No.1 Yanjiaqiao, Pudong District, ShangHai, China](https://wa.me/8617321028184)
+","Canadian outdoor retailer for camping, fishing, hunting, apparel, and equipment.","Outdoor equipment buyer or merchandising lead.","https://www.google.com/search?q=%22Sail%20Outdoors%22%20%22outdoor%20retail%20chain%22%20%22Canada%22%20buyer%20OR%20wholesale%20OR%20contact","email_priority"
+"21","google-customer-cotswold-outdoor-instagram","Cotswold Outdoor","instagram","United Kingdom","90","outdoor retail chain","https://www.cotswoldoutdoor.com/","https://www.instagram.com/cotswoldoutdoor/","","","","","","UK specialty outdoor retailer for hiking, camping, travel, and technical outdoor products.","Outdoor product category buyer or partnership manager.","https://www.google.com/search?q=%22Cotswold%20Outdoor%22%20%22outdoor%20retail%20chain%22%20%22United%20Kingdom%22%20buyer%20OR%20wholesale%20OR%20contact","develop"
+"22","google-customer-decathlon-germany-instagram","Decathlon Germany","instagram","Germany","90","sporting goods retail chain","https://www.decathlon.de/","https://www.instagram.com/decathlondeutschland/","","","","","","Large sporting goods retailer with camping, hiking, outdoor, and travel categories.","Outdoor/camping category buyer or marketplace partnership lead.","https://www.google.com/search?q=%22Decathlon%20Germany%22%20%22sporting%20goods%20retail%20chain%22%20%22Germany%22%20buyer%20OR%20wholesale%20OR%20contact","develop"
+"23","google-customer-decathlon-france-instagram","Decathlon France","instagram","France","90","sporting goods retail chain","https://www.decathlon.fr/","https://www.instagram.com/decathlonfrance/","","","","","","Large French sporting goods retailer with strong outdoor and camping category coverage.","Outdoor/camping category buyer or marketplace partnership lead.","https://www.google.com/search?q=%22Decathlon%20France%22%20%22sporting%20goods%20retail%20chain%22%20%22France%22%20buyer%20OR%20wholesale%20OR%20contact","develop"
+"24","google-customer-cotswold-outdoor-facebook","Cotswold Outdoor","facebook","United Kingdom","90","outdoor retail chain","https://www.cotswoldoutdoor.com/","https://www.facebook.com/CotswoldOutdoor","","","","","","UK specialty outdoor retailer for hiking, camping, travel, and technical outdoor products.","Outdoor product category buyer or partnership manager.","https://www.google.com/search?q=%22Cotswold%20Outdoor%22%20%22outdoor%20retail%20chain%22%20%22United%20Kingdom%22%20buyer%20OR%20wholesale%20OR%20contact","develop"
+"25","google-customer-decathlon-germany-facebook","Decathlon Germany","facebook","Germany","90","sporting goods retail chain","https://www.decathlon.de/","https://www.facebook.com/DecathlonDeutschland","","","","","","Large sporting goods retailer with camping, hiking, outdoor, and travel categories.","Outdoor/camping category buyer or marketplace partnership lead.","https://www.google.com/search?q=%22Decathlon%20Germany%22%20%22sporting%20goods%20retail%20chain%22%20%22Germany%22%20buyer%20OR%20wholesale%20OR%20contact","develop"
+"26","google-customer-decathlon-france-facebook","Decathlon France","facebook","France","90","sporting goods retail chain","https://www.decathlon.fr/","https://www.facebook.com/DecathlonFrance","","","","","","Large French sporting goods retailer with strong outdoor and camping category coverage.","Outdoor/camping category buyer or marketplace partnership lead.","https://www.google.com/search?q=%22Decathlon%20France%22%20%22sporting%20goods%20retail%20chain%22%20%22France%22%20buyer%20OR%20wholesale%20OR%20contact","develop"
+"27","google-customer-cotswold-outdoor-website-contact","Cotswold Outdoor","email","United Kingdom","90","outdoor retail chain","https://www.cotswoldoutdoor.com/","https://www.cotswoldoutdoor.com/contact-us","https://www.cotswoldoutdoor.com/contact-us","https://www.google.com/search?q=site%3Awww.cotswoldoutdoor.com%20%22Cotswold%20Outdoor%22%20contact%20buyer%20wholesale%20email%20vendor","leo@flextailgear.com","Flextail & Vollyc | Lightweight Outdoor & 3C Electronics – Potential Cooperation","Dear Cotswold Outdoor Team,
+
+Nice to e-meet you.
+I am Leo, from Flextail & Vollyc.
+
+Flextail is our first and core brand, specializing in ultralight electric products for outdoor, travel, and home use. The brand is currently Top 1 on Amazon, with strong global sell-through and a proven product-market fit.
+Vollyc, our second brand, focuses on 3C electronics, targeting practical, high-rotation consumer use cases.
+
+From our perspective, your platform and positioning are highly aligned with Flextail’s product philosophy, especially in lightweight outdoor and travel-oriented electrics.
+
+We have already contacted with your team, and we are now actively exploring opportunities in other regions.
+Attached, you will find a brief introduction to our brands and current product catalog for your reference.
+
+Looking ahead, we are planning to launch over 36 new SKUs in 2026, covering multiple usage scenarios and price tiers, which we believe could be of interest to your assortment strategy.
+
+If you are available, I would greatly appreciate the opportunity to arrange a short introductory video meeting to present our brands and discuss potential collaboration opportunities.
+
+Thank you for your time and consideration. I look forward to your reply.
+
+[Flextail.com](https://www.flextail.com/), [vollyc.com](https://vollyc.com/)
+
+[Sincerely](https://wa.me/8617321028184)
+[Best Regard](https://wa.me/8617321028184)
+[Leo Liu](https://wa.me/8617321028184)
+[Sales](https://wa.me/8617321028184) [& Operations Director](https://wa.me/8617321028184)
+[Brand & ODM Department](https://wa.me/8617321028184)
+[Tel/whatsapp:  +86 17321028184](https://wa.me/8617321028184)
+
+[Email:  Leo@flextailgear.com](https://wa.me/8617321028184)
+[SHANGHAI FLEXTAIL TECHNOLOGY CO.,LTD.](https://wa.me/8617321028184)
+[Room103, Building No.6, No.1 Yanjiaqiao, Pudong District, ShangHai, China](https://wa.me/8617321028184)
+","UK specialty outdoor retailer for hiking, camping, travel, and technical outdoor products.","Outdoor product category buyer or partnership manager.","https://www.google.com/search?q=%22Cotswold%20Outdoor%22%20%22outdoor%20retail%20chain%22%20%22United%20Kingdom%22%20buyer%20OR%20wholesale%20OR%20contact","email_priority"
+"28","google-customer-decathlon-germany-website-contact","Decathlon Germany","email","Germany","90","sporting goods retail chain","https://www.decathlon.de/","https://www.decathlon.de/help/app/contact","https://www.decathlon.de/help/app/contact","https://www.google.com/search?q=site%3Awww.decathlon.de%20%22Decathlon%20Germany%22%20contact%20buyer%20wholesale%20email%20vendor","leo@flextailgear.com","Flextail & Vollyc | Lightweight Outdoor & 3C Electronics – Potential Cooperation","Dear Decathlon Germany Team,
+
+Nice to e-meet you.
+I am Leo, from Flextail & Vollyc.
+
+Flextail is our first and core brand, specializing in ultralight electric products for outdoor, travel, and home use. The brand is currently Top 1 on Amazon, with strong global sell-through and a proven product-market fit.
+Vollyc, our second brand, focuses on 3C electronics, targeting practical, high-rotation consumer use cases.
+
+From our perspective, your platform and positioning are highly aligned with Flextail’s product philosophy, especially in lightweight outdoor and travel-oriented electrics.
+
+We have already contacted with your team, and we are now actively exploring opportunities in other regions.
+Attached, you will find a brief introduction to our brands and current product catalog for your reference.
+
+Looking ahead, we are planning to launch over 36 new SKUs in 2026, covering multiple usage scenarios and price tiers, which we believe could be of interest to your assortment strategy.
+
+If you are available, I would greatly appreciate the opportunity to arrange a short introductory video meeting to present our brands and discuss potential collaboration opportunities.
+
+Thank you for your time and consideration. I look forward to your reply.
+
+[Flextail.com](https://www.flextail.com/), [vollyc.com](https://vollyc.com/)
+
+[Sincerely](https://wa.me/8617321028184)
+[Best Regard](https://wa.me/8617321028184)
+[Leo Liu](https://wa.me/8617321028184)
+[Sales](https://wa.me/8617321028184) [& Operations Director](https://wa.me/8617321028184)
+[Brand & ODM Department](https://wa.me/8617321028184)
+[Tel/whatsapp:  +86 17321028184](https://wa.me/8617321028184)
+
+[Email:  Leo@flextailgear.com](https://wa.me/8617321028184)
+[SHANGHAI FLEXTAIL TECHNOLOGY CO.,LTD.](https://wa.me/8617321028184)
+[Room103, Building No.6, No.1 Yanjiaqiao, Pudong District, ShangHai, China](https://wa.me/8617321028184)
+","Large sporting goods retailer with camping, hiking, outdoor, and travel categories.","Outdoor/camping category buyer or marketplace partnership lead.","https://www.google.com/search?q=%22Decathlon%20Germany%22%20%22sporting%20goods%20retail%20chain%22%20%22Germany%22%20buyer%20OR%20wholesale%20OR%20contact","email_priority"
+"29","google-customer-decathlon-france-website-contact","Decathlon France","email","France","90","sporting goods retail chain","https://www.decathlon.fr/","https://www.decathlon.fr/help/app/contact","https://www.decathlon.fr/help/app/contact","https://www.google.com/search?q=site%3Awww.decathlon.fr%20%22Decathlon%20France%22%20contact%20buyer%20wholesale%20email%20vendor","leo@flextailgear.com","Flextail & Vollyc | Lightweight Outdoor & 3C Electronics – Potential Cooperation","Dear Decathlon France Team,
+
+Nice to e-meet you.
+I am Leo, from Flextail & Vollyc.
+
+Flextail is our first and core brand, specializing in ultralight electric products for outdoor, travel, and home use. The brand is currently Top 1 on Amazon, with strong global sell-through and a proven product-market fit.
+Vollyc, our second brand, focuses on 3C electronics, targeting practical, high-rotation consumer use cases.
+
+From our perspective, your platform and positioning are highly aligned with Flextail’s product philosophy, especially in lightweight outdoor and travel-oriented electrics.
+
+We have already contacted with your team, and we are now actively exploring opportunities in other regions.
+Attached, you will find a brief introduction to our brands and current product catalog for your reference.
+
+Looking ahead, we are planning to launch over 36 new SKUs in 2026, covering multiple usage scenarios and price tiers, which we believe could be of interest to your assortment strategy.
+
+If you are available, I would greatly appreciate the opportunity to arrange a short introductory video meeting to present our brands and discuss potential collaboration opportunities.
+
+Thank you for your time and consideration. I look forward to your reply.
+
+[Flextail.com](https://www.flextail.com/), [vollyc.com](https://vollyc.com/)
+
+[Sincerely](https://wa.me/8617321028184)
+[Best Regard](https://wa.me/8617321028184)
+[Leo Liu](https://wa.me/8617321028184)
+[Sales](https://wa.me/8617321028184) [& Operations Director](https://wa.me/8617321028184)
+[Brand & ODM Department](https://wa.me/8617321028184)
+[Tel/whatsapp:  +86 17321028184](https://wa.me/8617321028184)
+
+[Email:  Leo@flextailgear.com](https://wa.me/8617321028184)
+[SHANGHAI FLEXTAIL TECHNOLOGY CO.,LTD.](https://wa.me/8617321028184)
+[Room103, Building No.6, No.1 Yanjiaqiao, Pudong District, ShangHai, China](https://wa.me/8617321028184)
+","Large French sporting goods retailer with strong outdoor and camping category coverage.","Outdoor/camping category buyer or marketplace partnership lead.","https://www.google.com/search?q=%22Decathlon%20France%22%20%22sporting%20goods%20retail%20chain%22%20%22France%22%20buyer%20OR%20wholesale%20OR%20contact","email_priority"
+"30","google-customer-bcf-instagram","BCF","instagram","Australia","89","outdoor retail chain","https://www.bcf.com.au/","https://www.instagram.com/bcf.australia/","","","","","","Australian boating, camping, and fishing retailer with strong fit for compact outdoor power and camping accessories.","Camping or outdoor accessories buyer.","https://www.google.com/search?q=%22BCF%22%20%22outdoor%20retail%20chain%22%20%22Australia%22%20buyer%20OR%20wholesale%20OR%20contact","develop"
+"31","google-customer-bcf-facebook","BCF","facebook","Australia","89","outdoor retail chain","https://www.bcf.com.au/","https://www.facebook.com/BCFAustralia","","","","","","Australian boating, camping, and fishing retailer with strong fit for compact outdoor power and camping accessories.","Camping or outdoor accessories buyer.","https://www.google.com/search?q=%22BCF%22%20%22outdoor%20retail%20chain%22%20%22Australia%22%20buyer%20OR%20wholesale%20OR%20contact","develop"
+"32","google-customer-bcf-website-contact","BCF","email","Australia","89","outdoor retail chain","https://www.bcf.com.au/","https://www.bcf.com.au/contact-us","https://www.bcf.com.au/contact-us","https://www.google.com/search?q=site%3Awww.bcf.com.au%20%22BCF%22%20contact%20buyer%20wholesale%20email%20vendor","leo@flextailgear.com","Flextail & Vollyc | Lightweight Outdoor & 3C Electronics – Potential Cooperation","Dear BCF Team,
+
+Nice to e-meet you.
+I am Leo, from Flextail & Vollyc.
+
+Flextail is our first and core brand, specializing in ultralight electric products for outdoor, travel, and home use. The brand is currently Top 1 on Amazon, with strong global sell-through and a proven product-market fit.
+Vollyc, our second brand, focuses on 3C electronics, targeting practical, high-rotation consumer use cases.
+
+From our perspective, your platform and positioning are highly aligned with Flextail’s product philosophy, especially in lightweight outdoor and travel-oriented electrics.
+
+We have already contacted with your team, and we are now actively exploring opportunities in other regions.
+Attached, you will find a brief introduction to our brands and current product catalog for your reference.
+
+Looking ahead, we are planning to launch over 36 new SKUs in 2026, covering multiple usage scenarios and price tiers, which we believe could be of interest to your assortment strategy.
+
+If you are available, I would greatly appreciate the opportunity to arrange a short introductory video meeting to present our brands and discuss potential collaboration opportunities.
+
+Thank you for your time and consideration. I look forward to your reply.
+
+[Flextail.com](https://www.flextail.com/), [vollyc.com](https://vollyc.com/)
+
+[Sincerely](https://wa.me/8617321028184)
+[Best Regard](https://wa.me/8617321028184)
+[Leo Liu](https://wa.me/8617321028184)
+[Sales](https://wa.me/8617321028184) [& Operations Director](https://wa.me/8617321028184)
+[Brand & ODM Department](https://wa.me/8617321028184)
+[Tel/whatsapp:  +86 17321028184](https://wa.me/8617321028184)
+
+[Email:  Leo@flextailgear.com](https://wa.me/8617321028184)
+[SHANGHAI FLEXTAIL TECHNOLOGY CO.,LTD.](https://wa.me/8617321028184)
+[Room103, Building No.6, No.1 Yanjiaqiao, Pudong District, ShangHai, China](https://wa.me/8617321028184)
+","Australian boating, camping, and fishing retailer with strong fit for compact outdoor power and camping accessories.","Camping or outdoor accessories buyer.","https://www.google.com/search?q=%22BCF%22%20%22outdoor%20retail%20chain%22%20%22Australia%22%20buyer%20OR%20wholesale%20OR%20contact","email_priority"
+"33","google-customer-kathmandu-instagram","Kathmandu","instagram","New Zealand","88","outdoor brand and retail chain","https://www.kathmandu.co.nz/","https://www.instagram.com/kathmandugear/","","","","","","New Zealand outdoor brand and retailer with apparel, travel, hiking, and camping categories.","Partnership, wholesale, or retail category manager.","https://www.google.com/search?q=%22Kathmandu%22%20%22outdoor%20brand%20and%20retail%20chain%22%20%22New%20Zealand%22%20buyer%20OR%20wholesale%20OR%20contact","develop"
+"34","google-customer-kathmandu-facebook","Kathmandu","facebook","New Zealand","88","outdoor brand and retail chain","https://www.kathmandu.co.nz/","https://www.facebook.com/Kathmandu","","","","","","New Zealand outdoor brand and retailer with apparel, travel, hiking, and camping categories.","Partnership, wholesale, or retail category manager.","https://www.google.com/search?q=%22Kathmandu%22%20%22outdoor%20brand%20and%20retail%20chain%22%20%22New%20Zealand%22%20buyer%20OR%20wholesale%20OR%20contact","develop"
+"35","google-customer-kathmandu-website-contact","Kathmandu","email","New Zealand","88","outdoor brand and retail chain","https://www.kathmandu.co.nz/","https://www.kathmandu.co.nz/contact-us","https://www.kathmandu.co.nz/contact-us","https://www.google.com/search?q=site%3Awww.kathmandu.co.nz%20%22Kathmandu%22%20contact%20buyer%20wholesale%20email%20vendor","leo@flextailgear.com","Flextail & Vollyc | Lightweight Outdoor & 3C Electronics – Potential Cooperation","Dear Kathmandu Team,
+
+Nice to e-meet you.
+I am Leo, from Flextail & Vollyc.
+
+Flextail is our first and core brand, specializing in ultralight electric products for outdoor, travel, and home use. The brand is currently Top 1 on Amazon, with strong global sell-through and a proven product-market fit.
+Vollyc, our second brand, focuses on 3C electronics, targeting practical, high-rotation consumer use cases.
+
+From our perspective, your platform and positioning are highly aligned with Flextail’s product philosophy, especially in lightweight outdoor and travel-oriented electrics.
+
+We have already contacted with your team, and we are now actively exploring opportunities in other regions.
+Attached, you will find a brief introduction to our brands and current product catalog for your reference.
+
+Looking ahead, we are planning to launch over 36 new SKUs in 2026, covering multiple usage scenarios and price tiers, which we believe could be of interest to your assortment strategy.
+
+If you are available, I would greatly appreciate the opportunity to arrange a short introductory video meeting to present our brands and discuss potential collaboration opportunities.
+
+Thank you for your time and consideration. I look forward to your reply.
+
+[Flextail.com](https://www.flextail.com/), [vollyc.com](https://vollyc.com/)
+
+[Sincerely](https://wa.me/8617321028184)
+[Best Regard](https://wa.me/8617321028184)
+[Leo Liu](https://wa.me/8617321028184)
+[Sales](https://wa.me/8617321028184) [& Operations Director](https://wa.me/8617321028184)
+[Brand & ODM Department](https://wa.me/8617321028184)
+[Tel/whatsapp:  +86 17321028184](https://wa.me/8617321028184)
+
+[Email:  Leo@flextailgear.com](https://wa.me/8617321028184)
+[SHANGHAI FLEXTAIL TECHNOLOGY CO.,LTD.](https://wa.me/8617321028184)
+[Room103, Building No.6, No.1 Yanjiaqiao, Pudong District, ShangHai, China](https://wa.me/8617321028184)
+","New Zealand outdoor brand and retailer with apparel, travel, hiking, and camping categories.","Partnership, wholesale, or retail category manager.","https://www.google.com/search?q=%22Kathmandu%22%20%22outdoor%20brand%20and%20retail%20chain%22%20%22New%20Zealand%22%20buyer%20OR%20wholesale%20OR%20contact","email_priority"
+"36","google-customer-bever-instagram","Bever","instagram","Netherlands","86","outdoor retail chain","https://www.bever.nl/","https://www.instagram.com/bevernl/","","","","","","Dutch outdoor retailer for hiking, camping, travel, and outdoor apparel/equipment.","Outdoor equipment buyer or category manager.","https://www.google.com/search?q=%22Bever%22%20%22outdoor%20retail%20chain%22%20%22Netherlands%22%20buyer%20OR%20wholesale%20OR%20contact","develop"
+"37","google-customer-bever-facebook","Bever","facebook","Netherlands","86","outdoor retail chain","https://www.bever.nl/","https://www.facebook.com/BeverNL","","","","","","Dutch outdoor retailer for hiking, camping, travel, and outdoor apparel/equipment.","Outdoor equipment buyer or category manager.","https://www.google.com/search?q=%22Bever%22%20%22outdoor%20retail%20chain%22%20%22Netherlands%22%20buyer%20OR%20wholesale%20OR%20contact","develop"
+"38","google-customer-bever-website-contact","Bever","email","Netherlands","86","outdoor retail chain","https://www.bever.nl/","https://www.bever.nl/klantenservice/contact.html","https://www.bever.nl/klantenservice/contact.html","https://www.google.com/search?q=site%3Awww.bever.nl%20%22Bever%22%20contact%20buyer%20wholesale%20email%20vendor","leo@flextailgear.com","Flextail & Vollyc | Lightweight Outdoor & 3C Electronics – Potential Cooperation","Dear Bever Team,
+
+Nice to e-meet you.
+I am Leo, from Flextail & Vollyc.
+
+Flextail is our first and core brand, specializing in ultralight electric products for outdoor, travel, and home use. The brand is currently Top 1 on Amazon, with strong global sell-through and a proven product-market fit.
+Vollyc, our second brand, focuses on 3C electronics, targeting practical, high-rotation consumer use cases.
+
+From our perspective, your platform and positioning are highly aligned with Flextail’s product philosophy, especially in lightweight outdoor and travel-oriented electrics.
+
+We have already contacted with your team, and we are now actively exploring opportunities in other regions.
+Attached, you will find a brief introduction to our brands and current product catalog for your reference.
+
+Looking ahead, we are planning to launch over 36 new SKUs in 2026, covering multiple usage scenarios and price tiers, which we believe could be of interest to your assortment strategy.
+
+If you are available, I would greatly appreciate the opportunity to arrange a short introductory video meeting to present our brands and discuss potential collaboration opportunities.
+
+Thank you for your time and consideration. I look forward to your reply.
+
+[Flextail.com](https://www.flextail.com/), [vollyc.com](https://vollyc.com/)
+
+[Sincerely](https://wa.me/8617321028184)
+[Best Regard](https://wa.me/8617321028184)
+[Leo Liu](https://wa.me/8617321028184)
+[Sales](https://wa.me/8617321028184) [& Operations Director](https://wa.me/8617321028184)
+[Brand & ODM Department](https://wa.me/8617321028184)
+[Tel/whatsapp:  +86 17321028184](https://wa.me/8617321028184)
+
+[Email:  Leo@flextailgear.com](https://wa.me/8617321028184)
+[SHANGHAI FLEXTAIL TECHNOLOGY CO.,LTD.](https://wa.me/8617321028184)
+[Room103, Building No.6, No.1 Yanjiaqiao, Pudong District, ShangHai, China](https://wa.me/8617321028184)
+","Dutch outdoor retailer for hiking, camping, travel, and outdoor apparel/equipment.","Outdoor equipment buyer or category manager.","https://www.google.com/search?q=%22Bever%22%20%22outdoor%20retail%20chain%22%20%22Netherlands%22%20buyer%20OR%20wholesale%20OR%20contact","email_priority"

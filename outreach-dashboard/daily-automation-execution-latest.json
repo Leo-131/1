@@ -1,89 +1,127 @@
 {
-  "ok": true,
-  "engine": "Codex Chrome Extension queue bridge",
-  "mode": "serial-single-target",
-  "parallelLimit": 1,
-  "limit": 1,
-  "queueDate": "2026-06-26",
-  "queueSource": "dailyQueue",
-  "executed": [
-    {
-      "id": "google-customer-cabela-s",
-      "company": "Cabela's",
-      "action": "develop",
-      "ok": true,
-      "chromeOpen": {
-        "ok": true,
-        "engine": "codex-chrome-extension-cdp",
-        "port": 9224,
-        "targetUrl": "https://www.instagram.com/cabelas/",
-        "tabId": "75C299BAF7ED7422C35366C449924E80",
-        "title": "Cabela's (@cabelas) · Instagram 照片和视频"
-      },
-      "result": {
-        "ok": true,
-        "engine": "codex-chrome-extension-cdp",
-        "browserEngine": "codex-chrome-extension-cdp",
-        "mode": "codex_chrome_primary_no_autoglm",
-        "targetUrl": "https://www.instagram.com/cabelas/",
-        "chromeOpen": {
-          "ok": true,
-          "engine": "codex-chrome-extension-cdp",
-          "port": 9224,
-          "targetUrl": "https://www.instagram.com/cabelas/",
-          "tabId": "75C299BAF7ED7422C35366C449924E80",
-          "title": "Cabela's (@cabelas) · Instagram 照片和视频"
-        },
-        "sendStatus": "sent_confirmed",
-        "output": "{\"verdict\":\"sent_confirmed\",\"evidence\":\"instagram_message_sent_confirmed_composer_cleared\",\"nextAction\":\"Record outcome and monitor for reply.\",\"draft\":\"Hi Cabela's team — FLEXTAIL makes compact, lightweight outdoor power and pump solutions for camping and overland use. We'd like to share product specs and wholesale terms with your camping gear category buyer. Could you point us to the right contact for vendor evaluations? Thanks for your time.\",\"sendStatus\":\"sent_confirmed\"}",
-        "decision": {
-          "fitScore": 95,
-          "verdict": "develop",
-          "reason": "Verified major US outdoor retail chain under Bass Pro Group; A+ fit for FLEXTAIL camping and outdoor power accessories; market and agency state both open.",
-          "draft": "Hi Cabela's team — FLEXTAIL manufactures compact, lightweight outdoor power and pump solutions designed for camping and overland use. Given your camping and outdoor accessory assortment, we'd like to connect with the appropriate category buyer or vendor review contact to share product specifications and wholesale terms. Could you point us to the right person for camping gear vendor evaluations? Thank you for your time.",
-          "nextStep": "open_profile"
-        },
-        "glmModel": "glm-5.2",
-        "followup": false
-      }
-    }
-  ],
+  "ok": false,
+  "skippedOnly": true,
+  "error": "No executable tasks. Website-contact, social, cooldown, exclusive-agency, and verification safety gates left nothing safe to prepare.",
   "skipped": [
     {
-      "id": "google-customer-go-outdoors",
+      "id": "google-customer-bass-pro-shops-website-contact",
+      "company": "Bass Pro Shops",
+      "action": "email_priority",
+      "reason": "official_website_contact_channel"
+    },
+    {
+      "id": "google-customer-cabela-s-website-contact",
+      "company": "Cabela's",
+      "action": "email_priority",
+      "reason": "official_website_contact_channel"
+    },
+    {
+      "id": "google-customer-mec-instagram",
+      "company": "MEC",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_instagram"
+    },
+    {
+      "id": "google-customer-mec-website-contact",
+      "company": "MEC",
+      "action": "email_priority",
+      "reason": "official_website_contact_channel"
+    },
+    {
+      "id": "google-customer-cotswold-outdoor-instagram",
+      "company": "Cotswold Outdoor",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_instagram"
+    },
+    {
+      "id": "google-customer-cotswold-outdoor-facebook",
+      "company": "Cotswold Outdoor",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_facebook"
+    },
+    {
+      "id": "google-customer-decathlon-france-website-contact",
+      "company": "Decathlon France",
+      "action": "email_priority",
+      "reason": "official_website_contact_channel"
+    },
+    {
+      "id": "google-customer-bever-website-contact",
+      "company": "Bever",
+      "action": "email_priority",
+      "reason": "official_website_contact_channel"
+    },
+    {
+      "id": "google-customer-go-outdoors-instagram",
       "company": "GO Outdoors",
       "action": "develop",
-      "reason": "concrete_google_discovered_major_customer"
+      "reason": "concrete_google_discovered_major_customer_instagram"
     },
     {
-      "id": "google-customer-sail-outdoors",
+      "id": "google-customer-go-outdoors-facebook",
+      "company": "GO Outdoors",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_facebook"
+    },
+    {
+      "id": "google-customer-go-outdoors-website-contact",
+      "company": "GO Outdoors",
+      "action": "email_priority",
+      "reason": "official_website_contact_channel"
+    },
+    {
+      "id": "google-customer-sail-outdoors-facebook",
       "company": "Sail Outdoors",
       "action": "develop",
-      "reason": "concrete_google_discovered_major_customer"
+      "reason": "concrete_google_discovered_major_customer_facebook"
     },
     {
-      "id": "google-customer-decathlon-germany",
-      "company": "Decathlon Germany",
+      "id": "google-customer-sail-outdoors-website-contact",
+      "company": "Sail Outdoors",
+      "action": "email_priority",
+      "reason": "official_website_contact_channel"
+    },
+    {
+      "id": "google-customer-anaconda-instagram",
+      "company": "Anaconda",
       "action": "develop",
-      "reason": "concrete_google_discovered_major_customer"
+      "reason": "concrete_google_discovered_major_customer_instagram"
     },
     {
-      "id": "google-customer-decathlon-france",
-      "company": "Decathlon France",
+      "id": "google-customer-anaconda-facebook",
+      "company": "Anaconda",
       "action": "develop",
-      "reason": "concrete_google_discovered_major_customer"
+      "reason": "concrete_google_discovered_major_customer_facebook"
     },
     {
-      "id": "google-customer-bcf",
+      "id": "google-customer-kathmandu-website-contact",
+      "company": "Kathmandu",
+      "action": "email_priority",
+      "reason": "official_website_contact_channel"
+    },
+    {
+      "id": "google-customer-bcf-website-contact",
       "company": "BCF",
-      "action": "develop",
-      "reason": "concrete_google_discovered_major_customer"
+      "action": "email_priority",
+      "reason": "official_website_contact_channel"
     },
     {
-      "id": "google-customer-bever",
-      "company": "Bever",
-      "action": "develop",
-      "reason": "concrete_google_discovered_major_customer"
+      "id": "verified-Instagram-ellisbrigham",
+      "company": "Ellis Brigham UK (33K followers, since 1933)",
+      "action": "email_priority",
+      "reason": "email_channel_found"
+    },
+    {
+      "id": "verified-Instagram-mec",
+      "company": "MEC Canada",
+      "action": "email_priority",
+      "reason": "email_channel_found"
+    },
+    {
+      "id": "verified-Instagram-triedandtrout",
+      "company": "Tried & Trout Supply Co",
+      "action": "retry_or_alternate_channel",
+      "reason": "profile_valid_no_message_button"
     },
     {
       "id": "verified-Instagram-macpac",
@@ -96,99 +134,23 @@
       "company": "Stoney Creek NZ (23K followers, NZ outdoor clothing brand)",
       "action": "email_priority",
       "reason": "email_channel_found"
-    },
-    {
-      "id": "verified-Instagram-huntingandfishingnewzealand",
-      "company": "Hunting & Fishing NZ (46K followers, verified, NZ outdoor retail)",
-      "action": "develop",
-      "reason": "high_icp_verified_ready"
-    },
-    {
-      "id": "verified-Instagram-kathmandugear",
-      "company": "Kathmandu NZ/AU (12.3K followers, verified)",
-      "action": "develop",
-      "reason": "high_icp_verified_ready"
-    },
-    {
-      "id": "verified-Instagram-rebelsportnz",
-      "company": "Rebel Sport NZ (38K followers, verified, NZ #1 sporting goods retailer)",
-      "action": "develop",
-      "reason": "high_icp_verified_ready"
-    },
-    {
-      "id": "verified-Instagram-kfoutdoor",
-      "company": "KF Outdoor Official (33K followers, outdoor & sporting goods)",
-      "action": "develop",
-      "reason": "high_icp_verified_ready"
-    },
-    {
-      "id": "verified-Instagram-ellisbrigham",
-      "company": "Ellis Brigham UK (33K followers, since 1933)",
-      "action": "email_priority",
-      "reason": "email_channel_found"
-    },
-    {
-      "id": "verified-Instagram-campmor",
-      "company": "Campmor US",
-      "action": "develop",
-      "reason": "high_icp_verified_ready"
-    },
-    {
-      "id": "verified-Instagram-anacondastores",
-      "company": "Anaconda Stores AU (60K followers, verified, largest outdoor retailer)",
-      "action": "email_priority",
-      "reason": "email_channel_found"
-    },
-    {
-      "id": "verified-Instagram-otimosoutdoorgear",
-      "company": "Otimos UK",
-      "action": "develop",
-      "reason": "high_icp_verified_ready"
-    },
-    {
-      "id": "verified-Instagram-worldofcamping",
-      "company": "World of Camping UK",
-      "action": "develop",
-      "reason": "high_icp_verified_ready"
-    },
-    {
-      "id": "verified-Instagram-mec",
-      "company": "MEC Canada",
-      "action": "email_priority",
-      "reason": "email_channel_found"
-    },
-    {
-      "id": "verified-Instagram-monasheeoutdoors",
-      "company": "Monashee Outdoors",
-      "action": "develop",
-      "reason": "high_icp_verified_ready"
-    },
-    {
-      "id": "verified-Instagram-triedandtrout",
-      "company": "Tried & Trout Supply Co",
-      "action": "retry_or_alternate_channel",
-      "reason": "profile_valid_no_message_button"
-    },
-    {
-      "id": "verified-Instagram-prago.outdoors",
-      "company": "Prago Outdoors (outdoor wholesale/retail account)",
-      "action": "develop",
-      "reason": "high_icp_verified_ready"
     }
   ],
   "summary": {
     "totalLeads": 16,
     "highIcp": 16,
-    "readyToDevelop": 16,
-    "dueNow": 13,
-    "googleDiscovered": 7,
-    "scheduledLater": 9,
-    "cooldown": 0,
+    "readyToDevelop": 8,
+    "dueNow": 17,
+    "googleDiscovered": 17,
+    "facebookDiscovered": 4,
+    "websiteContactDiscovered": 9,
+    "scheduledLater": 5,
+    "cooldown": 26,
     "emailPriority": 5,
     "openAgencyMarket": 15,
     "exclusiveAgencySkipped": 1,
     "needsVerification": 0,
     "retainedLowIcp": 0
   },
-  "completedAt": "2026-06-26T03:03:31.453Z"
+  "completedAt": "2026-06-30T05:35:01.086Z"
 }

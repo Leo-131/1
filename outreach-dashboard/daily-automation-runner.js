@@ -36,7 +36,8 @@ const CONFIG = loadConfig();
 const ICP_THRESHOLD = Number(CONFIG.cadence.icpThreshold || 70);
 const COOLDOWN_DAYS = Number(CONFIG.cadence.cooldownDays || 7);
 const DEFAULT_DAILY_LIMIT = 12;
-const TOUCH_STATUSES = new Set(['sent_confirmed', 'post_liked', 'account_followed']);
+const TOUCH_STATUSES = new Set(['sent_confirmed', 'post_liked', 'account_followed', 'send_unconfirmed', 'website_contact_ready']);
+const WEBSITE_CONTACT_VERIFIED_EVIDENCE = 'contact_entry_verified';
 const PARTNER_COMPANIES = new Set([
   'rei',
   'rei co-op',
@@ -119,6 +120,85 @@ function marketAgencyScore(task) {
   return 0;
 }
 
+const REGION_PRIORITY = {
+  southeast_asia: {
+    weight: 35,
+    countries: ['brunei', 'cambodia', 'indonesia', 'laos', 'malaysia', 'myanmar', 'philippines', 'singapore', 'thailand', 'timor-leste', 'vietnam'],
+  },
+  europe: {
+    weight: 32,
+    countries: ['austria', 'belgium', 'czech republic', 'denmark', 'finland', 'france', 'germany', 'ireland', 'italy', 'netherlands', 'norway', 'poland', 'portugal', 'spain', 'sweden', 'switzerland', 'united kingdom', 'uk'],
+  },
+  americas: {
+    weight: 30,
+    countries: ['argentina', 'brazil', 'canada', 'chile', 'colombia', 'mexico', 'peru', 'united states', 'usa'],
+  },
+};
+
+function normalizedCountry(task) {
+  return String(task.countryEn || task.country || task.headquarters || '').trim().toLowerCase();
+}
+
+function targetRegion(task) {
+  const country = normalizedCountry(task);
+  for (const [region, config] of Object.entries(REGION_PRIORITY)) {
+    if (config.countries.some(item => country === item || country.includes(item))) return region;
+  }
+  if (/australia|new zealand/.test(country)) return 'oceania';
+  return 'other';
+}
+
+function targetRegionScore(task) {
+  const region = targetRegion(task);
+  return REGION_PRIORITY[region] ? REGION_PRIORITY[region].weight : 0;
+}
+
+function contactChannelScore(task) {
+  let score = 0;
+  if (task.contactEmail || task.publicEmail) score += 12;
+  if (task.vendorPortal || task.contactUrl) score += 8;
+  if (task.website || task.platformUrl || task.url) score += 5;
+  if (task.alternateChannels && (task.alternateChannels.instagram || task.alternateChannels.facebook)) score += 4;
+  return score;
+}
+
+function dealProbabilityScore(task) {
+  return Number(task.fitScore || 0)
+    + Math.round(Number(task.marketScore || 0) * 12)
+    + marketAgencyScore(task)
+    + targetRegionScore(task)
+    + contactChannelScore(task);
+}
+
+function priorityCompare(left, right) {
+  const dueDelta = Number(Boolean(right.workingTime && right.workingTime.dueNow)) - Number(Boolean(left.workingTime && left.workingTime.dueNow));
+  if (dueDelta) return dueDelta;
+  return Number(right.dealProbabilityScore || 0) - Number(left.dealProbabilityScore || 0)
+    || Number(right.priorityScore || 0) - Number(left.priorityScore || 0)
+    || String(left.company || left.name || '').localeCompare(String(right.company || right.name || ''));
+}
+
+function queueDedupeKey(item) {
+  const platform = cleanKey(item.platform || 'unknown');
+  const channelUrl = item.contactUrl || item.platformUrl || item.url || item.website || item.id;
+  const handle = profileHandle(channelUrl);
+  const host = hostnameKey(channelUrl);
+  if (handle) return `${platform}:profile:${cleanKey(handle)}`;
+  if (host) return `${platform}:host:${cleanKey(host)}`;
+  return `${platform}:${cleanKey(channelUrl || item.company || item.name)}`;
+}
+
+function dedupeQueueItems(items) {
+  const sorted = items.slice().sort(priorityCompare);
+  const seen = new Set();
+  return sorted.filter((item) => {
+    const key = queueDedupeKey(item);
+    if (seen.has(key)) return false;
+    seen.add(key);
+    return true;
+  });
+}
+
 function minutesOfDay(value) {
   const match = String(value || '').match(/^(\d{1,2}):(\d{2})$/);
   if (!match) return 0;
@@ -189,9 +269,20 @@ function targetUrl(task, profiles) {
 function normalizeResultIndex(results) {
   const index = new Map();
   for (const result of results) {
-    const current = index.get(result.task_id);
-    if (!current || validDate(result.timestamp) >= validDate(current.timestamp)) {
-      index.set(result.task_id, result);
+    const resultHandle = profileHandle(result.target_url);
+    const resultPlatform = String(result.platform || '').toLowerCase();
+    const keys = [
+      result.task_id,
+      result.target_url,
+      resultHandle ? `profile:${resultHandle}` : '',
+      hostKey(result.target_url),
+      resultPlatform && resultHandle ? `${resultPlatform}:${resultHandle}` : '',
+    ].map(cleanKey).filter(Boolean);
+    for (const key of keys) {
+      const current = index.get(key);
+      if (!current || validDate(result.timestamp) >= validDate(current.timestamp)) {
+        index.set(key, result);
+      }
     }
   }
   return index;
@@ -202,8 +293,60 @@ function cleanKey(value) {
 }
 
 function profileHandle(value) {
-  const match = String(value || '').match(/instagram\.com\/([^/?#]+)/i);
+  const match = String(value || '').match(/(?:instagram|facebook)\.com\/([^/?#]+)/i);
   return match ? match[1] : '';
+}
+
+function profileKey(value) {
+  const handle = profileHandle(value);
+  return handle ? `profile:${handle}` : '';
+}
+
+function hostnameKey(value) {
+  try {
+    const hostname = new URL(String(value || '')).hostname.toLowerCase();
+    const parts = hostname.replace(/^www\./, '').split('.');
+    return parts.length ? parts[0] : '';
+  } catch {
+    return '';
+  }
+}
+
+function hostKey(value) {
+  const host = hostnameKey(value);
+  return host ? `host:${host}` : '';
+}
+
+function isVerifiedWebsiteContactResult(result = {}) {
+  if (result.status !== 'website_contact_ready') return true;
+  const evidence = String(result.evidence || '').toLowerCase();
+  return evidence.includes(WEBSITE_CONTACT_VERIFIED_EVIDENCE)
+    || evidence.includes('contact_form_detected')
+    || evidence.includes('mailto_detected')
+    || evidence.includes('business_contact_route_detected');
+}
+
+function isTouchResult(result = {}) {
+  return Boolean(result && TOUCH_STATUSES.has(result.status) && isVerifiedWebsiteContactResult(result));
+}
+
+function channelLeadKeys(item) {
+  const platform = cleanKey(item.platform || 'unknown');
+  const handle = profileHandle(item.platformUrl || item.url);
+  const isWebsiteContact = platform === 'email' || /website-contact/i.test(String(item.id || item.url || item.contactUrl || ''));
+  const base = [
+    item.id,
+    item.platformUrl,
+    item.url,
+    item.contactUrl,
+    profileKey(item.platformUrl),
+    profileKey(item.url),
+    platform && handle ? `${platform}:${handle}` : '',
+  ];
+  if (isWebsiteContact) {
+    base.push(item.website, hostKey(item.website), hostKey(item.url), hostKey(item.contactUrl));
+  }
+  return base.map(cleanKey).filter(Boolean);
 }
 
 function leadKeys(item) {
@@ -223,14 +366,23 @@ function leadKeys(item) {
 
 function knownTouchIndex(results, contacts) {
   const touched = new Set();
+  const touchedDetails = new Map();
   const partners = new Set([...PARTNER_COMPANIES].map(cleanKey));
   for (const result of results || []) {
-    if (!['sent_confirmed', 'skipped', 'prepared_not_sent', 'failed_open', 'account_followed', 'post_liked'].includes(result.status)) continue;
-    [
+    if (!isTouchResult(result)) continue;
+    const keys = [
       result.task_id,
       result.target_url,
-      profileHandle(result.target_url),
-    ].map(cleanKey).filter(Boolean).forEach(key => touched.add(key));
+      profileKey(result.target_url),
+      hostKey(result.target_url),
+    ].map(cleanKey).filter(Boolean);
+    for (const key of keys) {
+      touched.add(key);
+      const current = touchedDetails.get(key);
+      if (!current || validDate(result.timestamp) >= validDate(current.timestamp)) {
+        touchedDetails.set(key, result);
+      }
+    }
   }
   for (const item of contacts || []) {
     const status = String(item.status || '').toLowerCase();
@@ -239,18 +391,25 @@ function knownTouchIndex(results, contacts) {
     if (isPartner) leadKeys(item).forEach(key => partners.add(key));
     if (hasTouch || isPartner) leadKeys(item).forEach(key => touched.add(key));
   }
-  return { touched, partners };
+  return { touched, touchedDetails, partners };
 }
 
 function classifyTask(task, context) {
   const id = taskId(task);
-  const result = context.resultsByTask.get(id);
+  const target = targetUrl(task, context.profiles);
+  const result = [id, target, profileKey(target)]
+    .map(cleanKey)
+    .filter(Boolean)
+    .map(key => context.resultsByTask.get(key))
+    .filter(Boolean)
+    .sort((left, right) => validDate(right.timestamp) - validDate(left.timestamp))[0] || null;
   const score = Number(task.fitScore || 0);
-  const url = targetUrl(task, context.profiles);
-  const lastTouch = result && TOUCH_STATUSES.has(result.status) ? result.timestamp : '';
+  const url = target;
+  const lastTouch = isTouchResult(result) ? result.timestamp : '';
   const cooldownActive = lastTouch && daysSince(lastTouch, context.now) < COOLDOWN_DAYS;
   const emailPriority = result && result.status === 'skipped' && /email_channel_found/i.test(String(result.evidence || ''));
   const isFacebook = String(task.platform || '').toLowerCase() === 'facebook';
+  const isEmail = String(task.platform || '').toLowerCase() === 'email';
   const verified = Boolean(url) && !(isFacebook && String(task.facebookStatus || '').includes('not_verified_do_not_use'));
   const agencyState = marketAgencyState(task);
 
@@ -265,12 +424,15 @@ function classifyTask(task, context) {
   } else if (!verified) {
     action = 'verify_target';
     reason = 'missing_verified_profile_url';
+  } else if (result && result.status === 'sent_confirmed' && CONFIG.cadence.noDuplicateDm !== false) {
+    action = 'cooldown';
+    reason = 'previous_sent_confirmed_no_duplicate_dm';
   } else if (cooldownActive) {
     action = 'cooldown';
     reason = `${COOLDOWN_DAYS}_day_no_repeat_touch`;
-  } else if (emailPriority) {
+  } else if (isEmail || emailPriority) {
     action = 'email_priority';
-    reason = 'email_channel_found';
+    reason = task.reason || 'email_channel_found';
   } else if (result && result.status === 'failed_open') {
     action = 'retry_or_alternate_channel';
     reason = result.evidence || 'previous_open_failed';
@@ -292,13 +454,35 @@ function classifyTask(task, context) {
     marketStatus: task.marketStatus || '',
     agencyState,
     url,
+    website: task.website || '',
+    platformUrl: task.platformUrl || url,
+    contactUrl: task.contactUrl || '',
+    contactSearchUrl: task.contactSearchUrl || '',
+    emailFrom: task.emailFrom || '',
+    websiteContactSubject: task.websiteContactSubject || '',
+    websiteContactMessage: task.websiteContactMessage || '',
+    websiteContactFlow: task.websiteContactFlow || '',
+    publicEmail: task.publicEmail || task.contactEmail || '',
+    publicEmailStatus: task.publicEmailStatus || '',
+    contactPhone: task.contactPhone || '',
+    vendorPortal: task.vendorPortal || '',
+    linkedinUrl: task.linkedinUrl || task.linkedin_url || '',
+    headquarters: task.headquarters || '',
+    founded: task.founded || '',
+    companyScale: task.companyScale || task.scale || '',
+    dataSources: task.dataSources || null,
+    alternateChannels: task.alternateChannels || null,
     lastStatus: result && result.status || '',
     lastEvidence: result && result.evidence || '',
     lastTouch,
     action,
     reason,
     workingTime: workingTimeForTask(task, context.now),
-    priorityScore: score + Math.round(Number(task.marketScore || 0) * 10) + marketAgencyScore(task) + (emailPriority ? 8 : 0),
+    targetRegion: targetRegion(task),
+    targetRegionScore: targetRegionScore(task),
+    contactChannelScore: contactChannelScore(task),
+    dealProbabilityScore: dealProbabilityScore({ ...task, fitScore: score }),
+    priorityScore: dealProbabilityScore({ ...task, fitScore: score }) + (emailPriority ? 6 : 0),
   };
 }
 
@@ -345,6 +529,15 @@ function buildBugChecks(plan, classified, results) {
 }
 
 function buildModelOptimizations(classified, analytics) {
+  const brokenChannels = classified
+    .filter(item => /failed_open|unavailable|broken|not available|无法访问|损坏|移除/i.test(`${item.lastStatus} ${item.lastEvidence}`))
+    .map(item => ({
+      id: item.id,
+      company: item.company,
+      platform: item.platform,
+      url: item.platformUrl || item.url || '',
+      action: 'reroute_to_verified_alternate_channel',
+    }));
   const highIntent = analytics.buildKeywordOpportunities(classified.map(item => ({
     keyword: 'outdoor retail partnership',
     country: item.country,
@@ -363,16 +556,35 @@ function buildModelOptimizations(classified, analytics) {
       `Only ICP > ${ICP_THRESHOLD} can enter daily development.`,
       `${COOLDOWN_DAYS}-day cooldown blocks repeat DMs and repeat follow-ups.`,
       'Email-priority leads are routed to email/contact research instead of another social DM.',
+      'Google-discovered customers can carry Instagram, Facebook, and official website contact channels; each channel is deduped separately unless the company is already a partner.',
       'Missing verified profile URLs become verification tasks, not outreach tasks.',
       'Exclusive-agency or reserved regions are skipped; open/no-exclusive markets receive a priority bonus.',
+      'Highest deal probability comes first: ICP, market strength, open agency market, verified contact channel, and target-region priority are combined.',
+      'Target-region priority favors Southeast Asia first, then Europe, then the Americas; other regions remain eligible but lower priority.',
     ],
     byAction,
     keywordOpportunities: highIntent,
     nextModelIteration: [
+      'Auto-reroute broken social profile URLs to Facebook, official website contact, or Google buyer/contact research before the next send attempt.',
+      'Expand every customer detail page into a sales research dossier: company facts, channel map, buyer persona, buying potential, risks, and next action.',
       'Boost leads with verified buyer/contact channel and real outdoor retail/distribution evidence.',
       'Downgrade generic community, government, HR, design-only, or no-contact profiles.',
       'Prefer decision-maker/channel terms: distributor, wholesale, retail buyer, importer, RV accessories, camping gear supplier.',
     ],
+    systemIteration: {
+      targetBenchmark: 'Build toward OKKI-level CRM coverage plus local AI automation: richer customer dossiers, safer execution, automatic bad-link routing, and measurable reply/contact-capture outcomes.',
+      completedThisRun: [
+        'Queue is regenerated from verified high-ICP sources.',
+        'Bug checks run before execution artifacts are written.',
+        'Model optimization recommendations are persisted with each daily run.',
+      ],
+      recommendedNextBuild: [
+        'Add supplier/customer import templates and dedupe review UI.',
+        'Add reply classification and next-step playbook per pipeline stage.',
+        'Add contact-person enrichment fields for buyer, category manager, vendor portal, email, WhatsApp, and LinkedIn.',
+      ],
+      brokenChannels,
+    },
   };
 }
 
@@ -381,7 +593,7 @@ function writeRunArtifacts(run) {
   const jsonPath = path.join(RUN_DIR, `${run.date}-daily-automation.json`);
   const csvPath = path.join(RUN_DIR, `${run.date}-daily-queue.csv`);
   fs.writeFileSync(jsonPath, JSON.stringify(run, null, 2));
-  const columns = ['rank', 'id', 'name', 'company', 'platform', 'country', 'marketStatus', 'agencyState', 'fitScore', 'priorityScore', 'action', 'dueNow', 'localTime', 'nextBest', 'reason', 'url'];
+  const columns = ['rank', 'id', 'name', 'company', 'platform', 'country', 'targetRegion', 'marketStatus', 'agencyState', 'fitScore', 'marketScore', 'dealProbabilityScore', 'priorityScore', 'contactChannelScore', 'targetRegionScore', 'action', 'dueNow', 'localTime', 'nextBest', 'reason', 'url', 'contactUrl', 'contactSearchUrl', 'emailFrom', 'publicEmail', 'websiteContactSubject', 'websiteContactMessage', 'contactPhone', 'vendorPortal', 'linkedinUrl', 'headquarters', 'founded', 'companyScale'];
   const rows = run.dailyQueue.map((item, index) => ({
     rank: index + 1,
     ...item,
@@ -392,7 +604,65 @@ function writeRunArtifacts(run) {
   fs.writeFileSync(csvPath, [columns.join(','), ...rows.map(row => columns.map(column => csvCell(row[column])).join(','))].join('\n'));
   fs.writeFileSync(path.join(ROOT, 'daily-automation-latest.json'), JSON.stringify(run, null, 2));
   fs.writeFileSync(path.join(ROOT, 'daily-automation-latest.js'), `window.DAILY_AUTOMATION_LATEST = ${JSON.stringify(run, null, 2)};\n`);
+  writeSystemVisibilityArtifact(run);
   return { jsonPath, csvPath };
+}
+
+function copyPublicArtifact(file) {
+  const from = path.join(ROOT, file);
+  const to = path.join(ROOT, 'public', file);
+  if (!fs.existsSync(from)) return false;
+  fs.mkdirSync(path.dirname(to), { recursive: true });
+  fs.copyFileSync(from, to);
+  return true;
+}
+
+function writeSystemVisibilityArtifact(run) {
+  const dailyRows = Array.isArray(run.dailyQueue) ? run.dailyQueue : [];
+  const cooldownRows = Array.isArray(run.cooldownQueue) ? run.cooldownQueue : [];
+  const googleRows = dailyRows.filter(item => item.source === 'google_customer_discovery' || /^google-customer-/i.test(item.id || item.taskId || ''));
+  const websiteContactRows = googleRows.filter(item => item.reason === 'official_website_contact_channel' || /website-contact/i.test(item.id || item.taskId || ''));
+  const visibility = {
+    updatedAt: new Date().toISOString(),
+    source: 'daily-automation-runner',
+    runDate: run.date,
+    artifactGeneratedAt: run.generatedAt,
+    counts: {
+      dailyQueue: dailyRows.length,
+      googleDiscovered: googleRows.length,
+      websiteContact: websiteContactRows.length,
+      cooldownQueue: cooldownRows.length,
+      scheduledLater: Array.isArray(run.scheduledLater) ? run.scheduledLater.length : 0,
+    },
+    visibleSections: [
+      'workspace',
+      'taskDetailPanel',
+      'todayQueue',
+      'customers',
+      'customerDetail',
+      'seo',
+      'automationAudit',
+      'rightRail',
+      'githubSyncStatus',
+    ],
+    contactEnrichment: {
+      enabled: true,
+      sources: ['dailyQueue', 'cooldownQueue', 'google-lead-discovery-latest'],
+      fields: ['publicEmail', 'contactEmail', 'contactPhone', 'vendorPortal', 'contactUrl', 'contactSearchUrl', 'website'],
+    },
+  };
+  fs.writeFileSync(path.join(ROOT, 'system-visibility-latest.json'), JSON.stringify(visibility, null, 2));
+  fs.writeFileSync(path.join(ROOT, 'system-visibility-latest.js'), `window.SYSTEM_VISIBILITY_LATEST = ${JSON.stringify(visibility, null, 2)};\n`);
+  [
+    'daily-automation-latest.json',
+    'daily-automation-latest.js',
+    'google-lead-discovery-latest.json',
+    'google-lead-discovery-latest.js',
+    'daily-automation-execution-latest.json',
+    'daily-automation-execution-latest.js',
+    'system-visibility-latest.json',
+    'system-visibility-latest.js',
+  ].forEach(copyPublicArtifact);
 }
 
 function quotaPick(classified, cliLimit) {
@@ -406,11 +676,7 @@ function quotaPick(classified, cliLimit) {
   ];
   const selected = [];
   const quota = {};
-  const prioritized = classified.slice().sort((left, right) => {
-    const dueDelta = Number(Boolean(right.workingTime && right.workingTime.dueNow)) - Number(Boolean(left.workingTime && left.workingTime.dueNow));
-    if (dueDelta) return dueDelta;
-    return right.priorityScore - left.priorityScore || String(left.company).localeCompare(String(right.company));
-  });
+  const prioritized = classified.slice().sort(priorityCompare);
   for (const [action, target] of buckets) {
     const rows = prioritized.filter(item => item.action === action).slice(0, Math.max(0, target));
     selected.push(...rows);
@@ -422,11 +688,7 @@ function quotaPick(classified, cliLimit) {
   }
   const deduped = [];
   const seen = new Set();
-  for (const item of selected.sort((left, right) => {
-    const dueDelta = Number(Boolean(right.workingTime && right.workingTime.dueNow)) - Number(Boolean(left.workingTime && left.workingTime.dueNow));
-    if (dueDelta) return dueDelta;
-    return right.priorityScore - left.priorityScore;
-  })) {
+  for (const item of selected.sort(priorityCompare)) {
     if (seen.has(item.id) || deduped.length >= totalLimit) continue;
     seen.add(item.id);
     deduped.push(item);
@@ -452,16 +714,62 @@ function discoveryQueue(limit, context = {}) {
   return (discovery.leads || [])
     .filter(item => Number(item.fitScore || 0) > ICP_THRESHOLD)
     .filter(item => {
-      const keys = leadKeys(item);
-      return !keys.some(key => history.partners.has(key) || history.touched.has(key));
+      const partnerKeys = leadKeys(item);
+      const channelKeys = channelLeadKeys(item);
+      return !partnerKeys.some(key => history.partners.has(key))
+        && !channelKeys.some(key => history.touched.has(key));
     })
     .map(item => ({
       ...item,
-      priorityScore: Number(item.fitScore || 0) + 30,
+      targetRegion: targetRegion(item),
+      targetRegionScore: targetRegionScore(item),
+      contactChannelScore: contactChannelScore(item),
+      dealProbabilityScore: dealProbabilityScore(item),
+      priorityScore: dealProbabilityScore(item) - (String(item.platform || '').toLowerCase() === 'email' ? 2 : 0),
       action: item.action || 'develop',
       agencyState: item.agencyState || 'open',
       workingTime: item.workingTime || { dueNow: true },
     }))
+    .sort(priorityCompare)
+    .slice(0, limit);
+}
+
+function discoveryCooldownQueue(limit, context = {}) {
+  const discovery = readJson('google-lead-discovery-latest.json', { leads: [] });
+  const contactsRaw = readJson('contacts.json', []);
+  const contacts = Array.isArray(contactsRaw) ? contactsRaw : (contactsRaw.contacts || []);
+  const history = knownTouchIndex(context.results || [], contacts);
+  return (discovery.leads || [])
+    .filter(item => Number(item.fitScore || 0) > ICP_THRESHOLD)
+    .filter(item => {
+      const partnerKeys = leadKeys(item);
+      if (partnerKeys.some(key => history.partners.has(key))) return false;
+      return channelLeadKeys(item).some(key => history.touched.has(key));
+    })
+    .map(item => {
+      const touch = channelLeadKeys(item)
+        .map(key => history.touchedDetails.get(key))
+        .filter(Boolean)
+        .sort((left, right) => validDate(right.timestamp) - validDate(left.timestamp))[0] || null;
+      return {
+        ...item,
+        targetRegion: targetRegion(item),
+        targetRegionScore: targetRegionScore(item),
+        contactChannelScore: contactChannelScore(item),
+        dealProbabilityScore: dealProbabilityScore(item),
+        priorityScore: dealProbabilityScore(item),
+        action: 'cooldown',
+        reason: touch && touch.status === 'website_contact_ready'
+          ? 'website_contact_ready_no_repeat'
+          : `${COOLDOWN_DAYS}_day_no_repeat_touch`,
+        agencyState: item.agencyState || 'open',
+        lastStatus: touch && touch.status || '',
+        lastEvidence: touch && touch.evidence || '',
+        lastTouch: touch && touch.timestamp || '',
+        workingTime: item.workingTime || { dueNow: false, reason: 'channel_already_touched' },
+      };
+    })
+    .sort(priorityCompare)
     .slice(0, limit);
 }
 
@@ -488,7 +796,7 @@ function main() {
   };
   const classified = (plan.tasks || [])
     .map(task => classifyTask(task, context))
-    .sort((left, right) => right.priorityScore - left.priorityScore || String(left.company).localeCompare(String(right.company)));
+    .sort(priorityCompare);
 
   const actionable = classified.filter(item => ['develop', 'retry_or_alternate_channel', 'verify_target', 'email_priority'].includes(item.action));
   const dueClassified = CONFIG.cadence.respectTargetWorkingHours === false
@@ -496,11 +804,18 @@ function main() {
     : actionable.filter(item => item.workingTime && item.workingTime.dueNow);
   const picked = quotaPick(dueClassified, limit);
   const newDiscovery = discoveryQueue(Number(CONFIG.limits.develop || 10), context);
+  const touchedDiscovery = discoveryCooldownQueue(20, context);
   const remainingLimit = Math.max(0, picked.quota.total.target - newDiscovery.length);
-  const dailyQueue = [...newDiscovery, ...picked.queue.slice(0, remainingLimit)];
+  const dailyQueue = dedupeQueueItems([...newDiscovery, ...picked.queue.slice(0, remainingLimit)]).sort(priorityCompare);
+  const cooldownQueue = [...classified
+    .filter(item => item.action === 'cooldown')
+    .sort(priorityCompare), ...touchedDiscovery]
+    .filter((item, index, list) => list.findIndex(other => other.id === item.id) === index)
+    .slice(0, 30);
   const scheduledLater = actionable
     .filter(item => !dailyQueue.some(queued => queued.id === item.id))
     .filter(item => CONFIG.cadence.respectTargetWorkingHours !== false && !(item.workingTime && item.workingTime.dueNow))
+    .sort(priorityCompare)
     .slice(0, 20);
   const run = {
     generatedAt: new Date(now).toISOString(),
@@ -518,16 +833,19 @@ function main() {
       noDuplicateDm: Boolean(CONFIG.cadence.noDuplicateDm),
       preferOpenAgencyMarkets: Boolean(CONFIG.cadence.preferOpenAgencyMarkets),
       skipExclusiveAgencyMarkets: Boolean(CONFIG.cadence.skipExclusiveAgencyMarkets),
+      targetRegionPriority: ['southeast_asia', 'europe', 'americas'],
       deploy: CONFIG.cadence.manualDeployOnly === false ? 'allowed_by_config' : 'manual_only',
     },
     summary: {
       totalLeads: classified.length,
       highIcp: classified.filter(item => item.fitScore > ICP_THRESHOLD).length,
-      readyToDevelop: newDiscovery.length + classified.filter(item => item.action === 'develop').length,
-      dueNow: newDiscovery.length + dueClassified.length,
-      googleDiscovered: newDiscovery.length,
+      readyToDevelop: dailyQueue.filter(item => ['develop', 'discover_and_develop'].includes(item.action)).length,
+      dueNow: dailyQueue.length,
+      googleDiscovered: dailyQueue.filter(item => item.source === 'google_customer_discovery' || /^google-customer-/i.test(item.id || '')).length,
+      facebookDiscovered: dailyQueue.filter(item => item.platform === 'facebook' && (item.source === 'google_customer_discovery' || /^google-customer-/i.test(item.id || ''))).length,
+      websiteContactDiscovered: dailyQueue.filter(item => item.platform === 'email' && (item.source === 'google_customer_discovery' || /^google-customer-/i.test(item.id || ''))).length,
       scheduledLater: scheduledLater.length,
-      cooldown: classified.filter(item => item.action === 'cooldown').length,
+      cooldown: cooldownQueue.length,
       emailPriority: classified.filter(item => item.action === 'email_priority').length,
       openAgencyMarket: classified.filter(item => item.agencyState === 'open').length,
       exclusiveAgencySkipped: classified.filter(item => item.action === 'skip_exclusive_agency').length,
@@ -535,6 +853,7 @@ function main() {
       retainedLowIcp: classified.filter(item => item.action === 'retain_low_icp').length,
     },
     dailyQueue,
+    cooldownQueue,
     scheduledLater,
     bugChecks: buildBugChecks(plan, classified, results),
     modelOptimization: buildModelOptimizations(classified, analytics),

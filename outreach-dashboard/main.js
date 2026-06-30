@@ -25,6 +25,12 @@ for (const stream of [process.stdout, process.stderr]) {
 let glmAutomationRunning = false;
 let lastGlmAutomationAt = 0;
 let managedChromeStarted = false;
+const WEBSITE_CONTACT_VERIFIED_EVIDENCE = 'contact_entry_verified';
+const DEFAULT_WEBSITE_CONTACT_EMAIL = 'leo@flextailgear.com';
+const DEFAULT_WEBSITE_CONTACT_FIRST_NAME = 'Leo';
+const DEFAULT_WEBSITE_CONTACT_LAST_NAME = 'Liu';
+const DEFAULT_WEBSITE_CONTACT_PHONE = '+86 17321028184';
+const DEFAULT_WEBSITE_CONTACT_SUBJECT = 'Flextail & Vollyc | Lightweight Outdoor & 3C Electronics – Potential Cooperation';
 
 const PLATFORM_CONFIG = {
   li: {
@@ -85,6 +91,10 @@ function writeJson(file, value) {
   fs.writeFileSync(file, `${JSON.stringify(value, null, 2)}\n`, { mode: 0o600 });
 }
 
+function writeJsonScript(file, globalName, value) {
+  fs.writeFileSync(file, `window.${globalName} = ${JSON.stringify(value, null, 2)};\n`);
+}
+
 function readJsonScriptArray(file, globalName) {
   try {
     if (!fs.existsSync(file)) return [];
@@ -110,9 +120,51 @@ function parseExecutionOutput(output) {
   }
 }
 
+function canonicalLeadKey(value) {
+  return String(value || '')
+    .toLowerCase()
+    .replace(/^google-customer-/i, '')
+    .replace(/^verified-[a-z]+-/i, '')
+    .replace(/-(instagram|facebook|website-contact)$/i, '')
+    .replace(/[^a-z0-9.]+/g, '');
+}
+
+function blockingAutomationResultFor(item) {
+  const file = path.join(__dirname, 'autonomous-outreach-results.js');
+  const results = readJsonScriptArray(file, 'AUTONOMOUS_OUTREACH_RESULTS');
+  const keys = new Set([
+    item && item.id,
+    item && item.taskId,
+    item && item.company,
+    item && item.name,
+    item && item.url,
+    item && item.platformUrl,
+    item && item.contactUrl,
+  ].map(canonicalLeadKey).filter(Boolean));
+  const blocking = new Set(['sent_confirmed', 'failed_open', 'send_unconfirmed', 'skipped', 'account_followed', 'post_liked', 'website_contact_ready']);
+  return results
+    .filter((result) => result && blocking.has(result.status))
+    .filter((result) => result.status !== 'website_contact_ready' || websiteContactResultIsVerified(result))
+    .find((result) => [
+      result.task_id,
+      result.target_url,
+      result.company,
+      result.name,
+    ].map(canonicalLeadKey).filter(Boolean).some(key => keys.has(key))) || null;
+}
+
+function websiteContactResultIsVerified(result = {}) {
+  if (result.status !== 'website_contact_ready') return true;
+  const evidence = String(result.evidence || '').toLowerCase();
+  return evidence.includes(WEBSITE_CONTACT_VERIFIED_EVIDENCE)
+    || evidence.includes('contact_form_detected')
+    || evidence.includes('mailto_detected')
+    || evidence.includes('business_contact_route_detected');
+}
+
 function recordAutomationResult(item, result) {
   const sendStatus = result && result.sendStatus;
-  if (!['sent_confirmed', 'send_unconfirmed', 'failed_open', 'draft_prepared', 'prepared_not_sent'].includes(sendStatus)) return;
+  if (!['sent_confirmed', 'send_unconfirmed', 'failed_open', 'draft_prepared', 'prepared_not_sent', 'website_contact_ready', 'approval_pending'].includes(sendStatus)) return;
   const output = parseExecutionOutput(result.output);
   const timestamp = new Date().toISOString();
   const entry = {
@@ -123,16 +175,111 @@ function recordAutomationResult(item, result) {
     timestamp,
     target_url: result.targetUrl || (result.chromeOpen && result.chromeOpen.targetUrl) || item.url || '',
     evidence: output.evidence || result.evidence || sendStatus,
+    draft: output.draft || result.draft || '',
+    subject: output.subject || result.subject || '',
   };
   const file = path.join(__dirname, 'autonomous-outreach-results.js');
   const results = readJsonScriptArray(file, 'AUTONOMOUS_OUTREACH_RESULTS');
   const duplicate = results.some(existing => existing.task_id === entry.task_id
     && existing.status === entry.status
-    && existing.target_url === entry.target_url);
+    && existing.target_url === entry.target_url
+    && existing.evidence === entry.evidence);
   if (!duplicate) {
     results.push(entry);
     writeJsonScriptArray(file, 'AUTONOMOUS_OUTREACH_RESULTS', results);
   }
+}
+
+function copyPublicArtifact(file) {
+  const from = path.join(__dirname, file);
+  const to = path.join(__dirname, 'public', file);
+  if (!fs.existsSync(from)) return false;
+  fs.mkdirSync(path.dirname(to), { recursive: true });
+  fs.copyFileSync(from, to);
+  return true;
+}
+
+function writeSystemVisibilityArtifact(source) {
+  const latest = readJson(path.join(__dirname, 'daily-automation-latest.json'), {});
+  const latestExecution = readJson(path.join(__dirname, 'daily-automation-execution-latest.json'), {});
+  const githubSync = readJson(path.join(__dirname, 'github-sync', 'latest-status.json'), {});
+  const dailyRows = Array.isArray(latest.dailyQueue) ? latest.dailyQueue : [];
+  const cooldownRows = Array.isArray(latest.cooldownQueue) ? latest.cooldownQueue : [];
+  const googleRows = dailyRows.filter((item) => item.source === 'google_customer_discovery' || /^google-customer-/i.test(item.id || item.taskId || ''));
+  const websiteContactRows = googleRows.filter((item) => item.reason === 'official_website_contact_channel' || /website-contact/i.test(item.id || item.taskId || ''));
+  const visibility = {
+    updatedAt: new Date().toISOString(),
+    source,
+    runDate: latest.date || '',
+    artifactGeneratedAt: latest.generatedAt || '',
+    executionGeneratedAt: latestExecution.completedAt || latestExecution.generatedAt || '',
+    githubSyncUpdatedAt: githubSync.updatedAt || '',
+    counts: {
+      dailyQueue: dailyRows.length,
+      googleDiscovered: googleRows.length,
+      websiteContact: websiteContactRows.length,
+      cooldownQueue: cooldownRows.length,
+      scheduledLater: Array.isArray(latest.scheduledLater) ? latest.scheduledLater.length : 0,
+    },
+    visibleSections: [
+      'workspace',
+      'taskDetailPanel',
+      'todayQueue',
+      'customers',
+      'customerDetail',
+      'seo',
+      'automationAudit',
+      'settings',
+      'rightRail',
+      'githubSyncStatus',
+    ],
+    refreshedArtifacts: [
+      'daily-automation-latest',
+      'daily-automation-execution-latest',
+      'google-lead-discovery-latest',
+      'github-sync/latest-status',
+      'system-visibility-latest',
+    ],
+    contactEnrichment: {
+      enabled: true,
+      sources: ['dailyQueue', 'cooldownQueue', 'google-lead-discovery-latest'],
+      fields: ['publicEmail', 'contactEmail', 'contactPhone', 'vendorPortal', 'contactUrl', 'contactSearchUrl', 'website'],
+    },
+  };
+  writeJson(path.join(__dirname, 'system-visibility-latest.json'), visibility);
+  writeJsonScript(path.join(__dirname, 'system-visibility-latest.js'), 'SYSTEM_VISIBILITY_LATEST', visibility);
+  [
+    'daily-automation-latest.json',
+    'daily-automation-latest.js',
+    'google-lead-discovery-latest.json',
+    'google-lead-discovery-latest.js',
+    'daily-automation-execution-latest.json',
+    'daily-automation-execution-latest.js',
+    'system-visibility-latest.json',
+    'system-visibility-latest.js',
+    path.join('github-sync', 'latest-status.json'),
+    path.join('github-sync', 'latest-status.js'),
+  ].forEach(copyPublicArtifact);
+  return visibility;
+}
+
+function refreshDailyAutomationArtifacts() {
+  return new Promise((resolve) => {
+    execFile('node', [path.join(__dirname, 'daily-automation-runner.js'), '--fix'], {
+      cwd: __dirname,
+      windowsHide: true,
+      timeout: 60000,
+    }, (error, stdout, stderr) => {
+      const visibility = writeSystemVisibilityArtifact('main-refreshDailyAutomationArtifacts');
+      resolve({
+        ok: !error,
+        stdout: String(stdout || '').trim(),
+        stderr: String(stderr || '').trim(),
+        error: error ? (error.message || String(error)) : '',
+        visibility,
+      });
+    });
+  });
 }
 
 function securityFindings() {
@@ -485,6 +632,7 @@ async function openWithCodexChrome(url) {
     port,
     targetUrl: parsed.toString(),
     tabId: opened.id || '',
+    webSocketDebuggerUrl: opened.webSocketDebuggerUrl || '',
     title: inspected.title || opened.title || '',
   };
 }
@@ -745,7 +893,7 @@ async function evaluateChromeTabJson(opened, expression, timeoutMs = 8000) {
         ok: false,
         sendStatus: 'approval_pending',
         evidence: `runtime_exception: ${result.exceptionDetails.text || 'unknown'}`,
-        nextAction: 'Review the profile manually; browser script raised an exception.',
+        nextAction: 'Major browser automation exception; pause and notify operator before retry.',
       };
     }
     const value = result && result.result && result.result.value;
@@ -753,6 +901,33 @@ async function evaluateChromeTabJson(opened, expression, timeoutMs = 8000) {
   } catch {
     return null;
   }
+}
+
+async function clickChromeTabAt(opened, x, y) {
+  if (!opened || !opened.webSocketDebuggerUrl || !Number.isFinite(x) || !Number.isFinite(y)) return false;
+  await cdpCommand(opened.webSocketDebuggerUrl, 'Page.bringToFront', {}, 2000);
+  await cdpCommand(opened.webSocketDebuggerUrl, 'Input.dispatchMouseEvent', { type: 'mouseMoved', x, y, button: 'none' }, 2000);
+  await cdpCommand(opened.webSocketDebuggerUrl, 'Input.dispatchMouseEvent', { type: 'mousePressed', x, y, button: 'left', clickCount: 1 }, 2000);
+  await cdpCommand(opened.webSocketDebuggerUrl, 'Input.dispatchMouseEvent', { type: 'mouseReleased', x, y, button: 'left', clickCount: 1 }, 2000);
+  return true;
+}
+
+async function setChromeFileInput(opened, filePath) {
+  if (!opened || !opened.webSocketDebuggerUrl || !filePath || !fs.existsSync(filePath)) {
+    return { ok: false, evidence: 'marketing_attachment_missing' };
+  }
+  const evaluated = await cdpCommand(opened.webSocketDebuggerUrl, 'Runtime.evaluate', {
+    expression: 'document.querySelector("input[type=file]")',
+  }, 5000);
+  const objectId = evaluated && evaluated.result && evaluated.result.objectId;
+  if (!objectId) return { ok: false, evidence: 'file_input_not_found' };
+  const setResult = await cdpCommand(opened.webSocketDebuggerUrl, 'DOM.setFileInputFiles', {
+    objectId,
+    files: [filePath],
+  }, 8000);
+  return setResult === null || setResult
+    ? { ok: true, evidence: `marketing_attachment_selected:${path.basename(filePath)}` }
+    : { ok: false, evidence: 'marketing_attachment_select_failed' };
 }
 
 function parseDriverJson(stdout) {
@@ -787,7 +962,7 @@ async function runCodexChromeDriver(command, payload) {
       ok: false,
       sendStatus: 'approval_pending',
       evidence: `driver_error: ${error && error.message || 'unknown'}`,
-      nextAction: 'Review the profile manually; Codex Chrome driver could not complete the browser action.',
+      nextAction: 'Major Codex Chrome driver failure; pause and notify operator before retry.',
     };
   }
 }
@@ -859,7 +1034,7 @@ async function optimizeDraftWithContext(lead, decision, chromeOpen) {
   }
 }
 
-async function prepareInstagramDraft(opened, draft) {
+async function prepareInstagramDraft(opened, draft, lead = {}) {
   const safeDraft = String(draft || '').trim();
   if (!safeDraft) {
     return {
@@ -873,8 +1048,11 @@ async function prepareInstagramDraft(opened, draft) {
     port: opened && opened.port,
     tabId: opened && opened.tabId,
     targetUrl: opened && opened.targetUrl,
+    expectedCompany: lead && (lead.company || lead.name),
     draft: safeDraft,
     autoSend: true,
+    autoEngage: true,
+    engagementComment: lead && lead.engagementComment || 'Great outdoor checklist. Useful reminder for hikers preparing a complete, lightweight kit.',
     replaceExistingDraft: true,
   });
   if (driverResult) return driverResult;
@@ -967,7 +1145,7 @@ async function prepareInstagramDraft(opened, draft) {
           ok: false,
           sendStatus: 'approval_pending',
           evidence: 'message_button_clicked_composer_not_found',
-          nextAction: 'Message panel opened but composer was not detected; finish manually.'
+          nextAction: 'Message panel opened but composer was not detected; automation paused to avoid unsafe send.'
         });
       }
       const existingText = textOf(composer);
@@ -976,7 +1154,7 @@ async function prepareInstagramDraft(opened, draft) {
           ok: true,
           sendStatus: 'draft_already_present',
           evidence: 'message_composer_already_contains_text',
-          nextAction: 'Review existing draft and send manually only after confirmation.'
+          nextAction: 'Existing draft detected; automation paused to avoid overwriting or duplicate sending.'
         });
       }
       composer.focus();
@@ -988,7 +1166,7 @@ async function prepareInstagramDraft(opened, draft) {
         ok: true,
         sendStatus: 'draft_prepared',
         evidence: 'message_composer_opened_and_draft_inserted_no_send',
-        nextAction: 'Review the prepared draft in Instagram and click Send manually only after confirmation.'
+        nextAction: 'Draft prepared but auto-send fallback could not confirm Send; pause unless operator confirms a major bug path.'
       });
     })()
   `;
@@ -996,11 +1174,11 @@ async function prepareInstagramDraft(opened, draft) {
     ok: false,
     sendStatus: 'approval_pending',
     evidence: 'composer_automation_no_result',
-    nextAction: 'Review the profile manually; browser automation did not return a composer result.',
+    nextAction: 'Browser automation did not return a composer result; pause and notify only if this blocks the queue.',
   };
 }
 
-async function prepareSocialDraft(opened, draft) {
+async function prepareSocialDraft(opened, draft, lead = {}) {
   const safeDraft = String(draft || '').trim();
   if (!safeDraft) {
     return {
@@ -1017,14 +1195,17 @@ async function prepareSocialDraft(opened, draft) {
     hostname = '';
   }
   if (hostname.includes('instagram.com')) {
-    return prepareInstagramDraft(opened, safeDraft);
+    return prepareInstagramDraft(opened, safeDraft, lead);
   }
   const driverResult = await runCodexChromeDriver('prepare-social-draft', {
     port: opened && opened.port,
     tabId: opened && opened.tabId,
     targetUrl: opened && opened.targetUrl,
+    expectedCompany: lead && (lead.company || lead.name),
     draft: safeDraft,
     autoSend: true,
+    autoEngage: true,
+    engagementComment: lead && lead.engagementComment || 'Great outdoor checklist. Useful reminder for hikers preparing a complete, lightweight kit.',
     replaceExistingDraft: true,
   });
   if (driverResult) return driverResult;
@@ -1032,7 +1213,7 @@ async function prepareSocialDraft(opened, draft) {
     ok: false,
     sendStatus: 'approval_pending',
     evidence: 'unsupported_platform_driver_unavailable',
-    nextAction: 'Review the exact verified profile manually and prepare the approved draft without sending.',
+    nextAction: 'Exact verified profile opened but no draft was generated; pause as a major automation blocker.',
   };
 }
 
@@ -1072,11 +1253,577 @@ function buildOpenClawPrompt(lead, decision, targetUrl, mode) {
     `Customer: ${lead.company || lead.name || 'unknown'}.`,
     `Country: ${lead.country || lead.countryEn || 'unknown'}.`,
     `Role/context: ${lead.role || lead.keyword || ''}.`,
-    'Open or inspect only the exact target identity. Do not send a DM, comment, follow, like, or submit any form.',
-    'Prepare the next safe action and a short English follow-up draft.',
+    'Open or inspect only the exact target identity. Execute only if all safety gates pass; otherwise pause with evidence.',
+    'Prepare the next safe action and a short English follow-up draft for automatic execution.',
     'Return concise JSON only with keys: verdict, evidence, nextAction, draft, sendStatus.',
     `Suggested draft: ${decision?.draft || ''}`,
   ].join('\n');
+}
+
+function websiteContactSubject(lead = {}) {
+  return lead.websiteContactSubject || DEFAULT_WEBSITE_CONTACT_SUBJECT;
+}
+
+function marketingEmailSignature() {
+  return `[Flextail.com](https://www.flextail.com/), [vollyc.com](https://vollyc.com/)
+
+[Sincerely](https://wa.me/8617321028184)
+[Best Regard](https://wa.me/8617321028184)
+[Leo Liu](https://wa.me/8617321028184)
+[Sales](https://wa.me/8617321028184) [& Operations Director](https://wa.me/8617321028184)
+[Brand & ODM Department](https://wa.me/8617321028184)
+[Tel/whatsapp:  +86 17321028184](https://wa.me/8617321028184)
+
+[Email:  Leo@flextailgear.com](https://wa.me/8617321028184)
+[SHANGHAI FLEXTAIL TECHNOLOGY CO.,LTD.](https://wa.me/8617321028184)
+[Room103, Building No.6, No.1 Yanjiaqiao, Pudong District, ShangHai, China](https://wa.me/8617321028184)`;
+}
+
+function websiteContactMessage(lead = {}) {
+  if (lead.websiteContactMessage) return String(lead.websiteContactMessage).trim();
+  const rawName = String(lead.company || lead.name || 'Your').replace(/\s+(Inc|Ltd|Limited|LLC|Group)$/i, '').trim() || 'Your';
+  return `Dear ${rawName} Team,
+
+Nice to e-meet you.
+I am Leo, from Flextail & Vollyc.
+
+Flextail is our first and core brand, specializing in ultralight electric products for outdoor, travel, and home use. The brand is currently Top 1 on Amazon, with strong global sell-through and a proven product-market fit.
+Vollyc, our second brand, focuses on 3C electronics, targeting practical, high-rotation consumer use cases.
+
+From our perspective, your platform and positioning are highly aligned with Flextail’s product philosophy, especially in lightweight outdoor and travel-oriented electrics.
+
+We have already contacted with your team, and we are now actively exploring opportunities in other regions.
+Attached, you will find a brief introduction to our brands and current product catalog for your reference.
+
+Looking ahead, we are planning to launch over 36 new SKUs in 2026, covering multiple usage scenarios and price tiers, which we believe could be of interest to your assortment strategy.
+
+If you are available, I would greatly appreciate the opportunity to arrange a short introductory video meeting to present our brands and discuss potential collaboration opportunities.
+
+Thank you for your time and consideration. I look forward to your reply.
+
+${marketingEmailSignature()}
+`;
+}
+
+function websiteMarketingAttachmentPath() {
+  const configured = [
+    process.env.WEBSITE_MARKETING_FILE,
+    process.env.MARKETING_ATTACHMENT_PATH,
+    process.env.FLEXTAIL_MARKETING_FILE,
+  ].map(value => String(value || '').trim()).find(Boolean);
+  if (!configured) return '';
+  return path.isAbsolute(configured) ? configured : path.join(__dirname, configured);
+}
+
+function validateWebsiteContactTarget(lead = {}) {
+  const targetUrl = lead.contactUrl || lead.targetUrl || lead.verifiedTargetUrl || lead.url || lead.website;
+  let parsed;
+  try {
+    parsed = new URL(targetUrl);
+  } catch {
+    return { ok: false, error: 'Official website contact URL is required' };
+  }
+  if (parsed.protocol !== 'https:') return { ok: false, error: 'Official website contact URL must use HTTPS' };
+  if (/google\.com\/search/i.test(parsed.href)) return { ok: false, error: 'Search result URL is not a contact form' };
+  return { ok: true, targetUrl: parsed.href };
+}
+
+function websiteContactInspectionExpression() {
+  return `(() => {
+    const visible = (el) => {
+      if (!el || !el.getBoundingClientRect) return false;
+      const rect = el.getBoundingClientRect();
+      const style = window.getComputedStyle(el);
+      return rect.width > 0 && rect.height > 0 && style.visibility !== 'hidden' && style.display !== 'none';
+    };
+    const textOf = (el) => String(el && (el.innerText || el.textContent || el.getAttribute('aria-label') || el.getAttribute('title') || '') || '').replace(/\\s+/g, ' ').trim();
+    const lowerText = String(document.body && document.body.innerText || '').toLowerCase();
+    const controls = Array.from(document.querySelectorAll('a,button,[role="button"]'))
+      .filter(visible)
+      .map((el) => {
+        const rect = el.getBoundingClientRect();
+        return {
+          text: textOf(el),
+          href: el.href || el.getAttribute('href') || '',
+          x: Math.round(rect.left + rect.width / 2),
+          y: Math.round(rect.top + rect.height / 2)
+        };
+      });
+    const mailtos = Array.from(document.querySelectorAll('a[href^="mailto:"]')).map((el) => el.href).filter(Boolean);
+    const fields = Array.from(document.querySelectorAll('form input,form textarea,form select,input,textarea,select'))
+      .filter(visible)
+      .filter((el) => !/hidden|submit|button|reset|search/i.test(String(el.type || '')))
+      .map((el) => ({
+        tag: el.tagName,
+        type: el.type || '',
+        label: String(el.placeholder || el.getAttribute('aria-label') || el.name || el.id || '').toLowerCase()
+      }));
+    const messageFields = fields.filter((field) => field.tag === 'TEXTAREA'
+      || /email|message|enquiry|inquiry|business|company|name|phone|subject/.test(String(field.type || '') + ' ' + String(field.label || '')));
+    const businessWords = ['business enquiry', 'business inquiry', 'trade enquiry', 'trade inquiry', 'vendor', 'supplier', 'wholesale', 'partnership', 'corporate sales', 'become a supplier', 'sales enquiry', 'customer service enquiry', 'submit a request', 'send us a message', 'contact form', 'email us'];
+    const hasBusinessCue = businessWords.some((word) => lowerText.includes(word));
+    const actionableControls = controls.filter((item) => {
+      const text = (String(item.text || '') + ' ' + String(item.href || '')).toLowerCase();
+      return businessWords.some((word) => text.includes(word))
+        || /contact us|get in touch|enquir|inquir|support request|request form|customer care|help request/.test(text);
+    });
+    const hasContactForm = messageFields.length >= 2 || fields.some((field) => field.tag === 'TEXTAREA') || fields.some((field) => /email/.test(String(field.type || '') + ' ' + String(field.label || '')));
+    const ready = mailtos.length > 0 || hasContactForm || (hasBusinessCue && actionableControls.length > 0);
+    const evidence = mailtos.length ? 'mailto_detected'
+      : hasContactForm ? 'contact_form_detected'
+        : hasBusinessCue && actionableControls.length ? 'business_contact_route_detected'
+          : 'contact_entry_not_verified';
+    return JSON.stringify({
+      ready,
+      evidence,
+      url: location.href,
+      title: document.title,
+      mailtoCount: mailtos.length,
+      fieldCount: fields.length,
+      messageFieldCount: messageFields.length,
+      actionCount: actionableControls.length,
+      actions: actionableControls.slice(0, 6)
+    });
+  })()`;
+}
+
+function websiteContactClickExpression() {
+  return `(() => {
+    const visible = (el) => {
+      if (!el || !el.getBoundingClientRect) return false;
+      const rect = el.getBoundingClientRect();
+      const style = window.getComputedStyle(el);
+      return rect.width > 0 && rect.height > 0 && style.visibility !== 'hidden' && style.display !== 'none';
+    };
+    const textOf = (el) => String(el && (el.innerText || el.textContent || el.getAttribute('aria-label') || el.getAttribute('title') || '') || '').replace(/\\s+/g, ' ').trim();
+    const positive = /contact us|get in touch|send us a message|submit a request|business enquiry|business inquiry|trade enquiry|trade inquiry|sales enquiry|enquir|inquir|vendor|supplier|wholesale|partnership|corporate sales|become a supplier|email us|customer service enquiry|support request|request form/i;
+    const negative = /continue shopping|search|sign in|login|cart|wishlist|store locator|track order|return policy|privacy|terms|newsletter|language|translate|accessibility|live chat/i;
+    const currentHost = location.hostname;
+    const candidates = Array.from(document.querySelectorAll('a,button,[role="button"]'))
+      .filter(visible)
+      .map((el) => {
+        const rect = el.getBoundingClientRect();
+        const href = el.href || el.getAttribute('href') || '';
+        const text = textOf(el);
+        const haystack = String(text || '') + ' ' + String(href || '');
+        let sameHost = true;
+        try {
+          if (/^https?:/i.test(href)) sameHost = new URL(href).hostname === currentHost;
+        } catch {
+          sameHost = true;
+        }
+        return { el, text, href, haystack, sameHost, x: Math.round(rect.left + rect.width / 2), y: Math.round(rect.top + rect.height / 2) };
+      })
+      .filter((item) => positive.test(item.haystack) && !negative.test(item.haystack) && item.sameHost);
+    const ranked = candidates.sort((left, right) => {
+      const exactLeft = /^(contact us|get in touch|submit a request|send us a message)$/i.test(left.text) ? 1 : 0;
+      const exactRight = /^(contact us|get in touch|submit a request|send us a message)$/i.test(right.text) ? 1 : 0;
+      return exactRight - exactLeft || left.y - right.y;
+    });
+    const target = ranked[0];
+    if (!target) return JSON.stringify({ clicked: false, evidence: 'no_contact_entry_control' });
+    target.el.scrollIntoView({ block: 'center', inline: 'center' });
+    const rect = target.el.getBoundingClientRect();
+    return JSON.stringify({
+      clicked: true,
+      evidence: 'contact_entry_clicked',
+      text: target.text,
+      href: target.href,
+      x: Math.round(rect.left + rect.width / 2),
+      y: Math.round(rect.top + rect.height / 2)
+    });
+  })()`;
+}
+
+async function inspectWebsiteContactFlow(chromeOpen) {
+  if (!chromeOpen || !chromeOpen.ok) return { ok: false, sendStatus: 'failed_open', evidence: chromeOpen && chromeOpen.evidence || 'contact_page_open_failed' };
+  if (!chromeOpen.webSocketDebuggerUrl) {
+    return {
+      ok: false,
+      sendStatus: 'approval_pending',
+      evidence: 'website_contact_cdp_unavailable_open_only_not_verified',
+      nextAction: 'Browser opened the URL, but Codex could not verify a Contact Us form or business inquiry route. Continue manually and do not mark ready yet.',
+    };
+  }
+  let inspection = await evaluateChromeTabJson(chromeOpen, websiteContactInspectionExpression(), 8000);
+  let clickEvidence = '';
+  for (let attempt = 0; attempt < 3 && inspection && !inspection.ready; attempt += 1) {
+    const clicked = await evaluateChromeTabJson(chromeOpen, websiteContactClickExpression(), 5000);
+    if (!clicked || !clicked.clicked) {
+      clickEvidence = clicked && clicked.evidence || 'no_contact_entry_control';
+      break;
+    }
+    clickEvidence = `${clicked.evidence}:${String(clicked.text || clicked.href || '').slice(0, 80)}`;
+    await clickChromeTabAt(chromeOpen, clicked.x, clicked.y);
+    await sleep(1800);
+    inspection = await evaluateChromeTabJson(chromeOpen, websiteContactInspectionExpression(), 8000);
+  }
+  if (inspection && inspection.ready) {
+    return {
+      ok: true,
+      sendStatus: 'website_contact_ready',
+      evidence: `${WEBSITE_CONTACT_VERIFIED_EVIDENCE};${inspection.evidence};${clickEvidence || 'initial_page_verified'}`,
+      inspection,
+    };
+  }
+  return {
+    ok: false,
+    sendStatus: 'approval_pending',
+    evidence: `website_contact_entry_not_verified;${clickEvidence || (inspection && inspection.evidence) || 'no_contact_route_detected'}`,
+    inspection,
+    nextAction: 'Contact page opened, but no verified form, mailto link, vendor/business route, or clickable Contact Us path was detected. Continue manually before marking the lead ready.',
+  };
+}
+
+function websiteContactIssueClickExpression() {
+  return `(() => {
+    const visible = (el) => {
+      if (!el || !el.getBoundingClientRect) return false;
+      const rect = el.getBoundingClientRect();
+      const style = window.getComputedStyle(el);
+      return rect.width > 0 && rect.height > 0 && style.visibility !== 'hidden' && style.display !== 'none';
+    };
+    const option = Array.from(document.querySelectorAll('[role="option"],li,button,a,div'))
+      .filter(visible)
+      .map((el) => {
+        const rect = el.getBoundingClientRect();
+        const text = String(el.innerText || el.textContent || '').replace(/\\s+/g, ' ').trim();
+        return { el, text, x: Math.round(rect.left + rect.width / 2), y: Math.round(rect.top + rect.height / 2) };
+      })
+      .filter((item) => /Product Enquiry|Business Enquiry|Trade Enquiry|General/i.test(item.text))
+      .sort((left, right) => {
+        const leftProduct = /Product Enquiry/i.test(left.text) ? 1 : 0;
+        const rightProduct = /Product Enquiry/i.test(right.text) ? 1 : 0;
+        return rightProduct - leftProduct || left.y - right.y;
+      })[0];
+    if (!option) {
+      const trigger = Array.from(document.querySelectorAll('[role="combobox"],button,input,div'))
+        .filter(visible)
+        .map((el) => {
+          const rect = el.getBoundingClientRect();
+          const label = String(el.getAttribute('aria-label') || el.innerText || el.textContent || '').replace(/\\s+/g, ' ').trim();
+          return { el, label, x: Math.round(rect.left + rect.width / 2), y: Math.round(rect.top + rect.height / 2), width: rect.width };
+        })
+        .filter((item) => item.width > 120)
+        .sort((left, right) => left.y - right.y)[0];
+      if (!trigger) return JSON.stringify({ clicked: false, evidence: 'issue_dropdown_not_found' });
+      trigger.el.click();
+      return JSON.stringify({ clicked: true, evidence: 'issue_dropdown_opened', text: trigger.label, x: trigger.x, y: trigger.y });
+    }
+    option.el.click();
+    return JSON.stringify({ clicked: true, evidence: 'issue_option_selected', text: option.text, x: option.x, y: option.y });
+  })()`;
+}
+
+function websiteContactRequiredDropdownExpression() {
+  return `(() => {
+    const visible = (el) => {
+      if (!el || !el.getBoundingClientRect) return false;
+      const rect = el.getBoundingClientRect();
+      const style = window.getComputedStyle(el);
+      return rect.width > 0 && rect.height > 0 && style.visibility !== 'hidden' && style.display !== 'none';
+    };
+    const normalize = (value) => String(value || '').replace(/\\s+/g, ' ').trim();
+    const option = Array.from(document.querySelectorAll('[role="option"],li,button,div'))
+      .filter(visible)
+      .map((el) => {
+        const rect = el.getBoundingClientRect();
+        const text = normalize(el.innerText || el.textContent || '');
+        return { el, text, x: Math.round(rect.left + rect.width / 2), y: Math.round(rect.top + rect.height / 2) };
+      })
+      .filter((item) => item.text && !/select an option|please choose/i.test(item.text))
+      .filter((item) => /product|general|other|enquir|inquir/i.test(item.text))
+      .sort((left, right) => {
+        const score = (item) => /product/i.test(item.text) ? 3 : /general/i.test(item.text) ? 2 : 1;
+        return score(right) - score(left) || left.y - right.y;
+      })[0];
+    if (option) {
+      option.el.click();
+      return JSON.stringify({ selected: true, evidence: 'required_dropdown_option_selected', text: option.text });
+    }
+    const labels = Array.from(document.querySelectorAll('label'));
+    const label = labels.find((item) => /what.?s your enquiry|enquiry|inquiry/i.test(normalize(item.innerText || item.textContent || '')));
+    const root = label && (label.closest('.form-field,div') || label.parentElement);
+    const trigger = root && Array.from(root.querySelectorAll('[role="combobox"],button,input,div'))
+      .filter(visible)
+      .map((el) => {
+        const rect = el.getBoundingClientRect();
+        const text = normalize(el.innerText || el.textContent || el.value || el.getAttribute('aria-label') || '');
+        return { el, text, x: Math.round(rect.left + rect.width / 2), y: Math.round(rect.top + rect.height / 2), width: rect.width };
+      })
+      .filter((item) => item.width > 120)
+      .sort((left, right) => left.y - right.y)[0];
+    if (!trigger) return JSON.stringify({ selected: false, evidence: 'required_dropdown_not_found' });
+    trigger.el.click();
+    return JSON.stringify({ selected: false, opened: true, evidence: 'required_dropdown_opened', text: trigger.text });
+  })()`;
+}
+
+function websiteContactFormFillExpression(payload) {
+  return `(() => {
+    const payload = ${JSON.stringify(payload || {})};
+    const visible = (el) => {
+      if (!el || !el.getBoundingClientRect) return false;
+      const rect = el.getBoundingClientRect();
+      const style = window.getComputedStyle(el);
+      return rect.width > 0 && rect.height > 0 && style.visibility !== 'hidden' && style.display !== 'none';
+    };
+    const labels = Array.from(document.querySelectorAll('label'));
+    const labelTextFor = (el) => {
+      const direct = labels.find((label) => label.htmlFor && label.htmlFor === el.id);
+      if (direct) return String(direct.innerText || direct.textContent || '');
+      const wrapper = el.closest('.form-field,[data-garden-id],fieldset');
+      const nested = wrapper && wrapper.querySelector('label');
+      return String(nested && (nested.innerText || nested.textContent) || '');
+    };
+    const setValue = (el, value) => {
+      if (!el || value == null || String(value).trim() === '') return false;
+      el.focus();
+      const proto = el.tagName === 'TEXTAREA' ? HTMLTextAreaElement.prototype : HTMLInputElement.prototype;
+      const setter = Object.getOwnPropertyDescriptor(proto, 'value') && Object.getOwnPropertyDescriptor(proto, 'value').set;
+      if (setter) setter.call(el, String(value));
+      else el.value = String(value);
+      el.dispatchEvent(new Event('input', { bubbles: true }));
+      el.dispatchEvent(new Event('change', { bubbles: true }));
+      el.blur();
+      return true;
+    };
+    const filled = [];
+    const skipped = [];
+    const candidates = Array.from(document.querySelectorAll('input,textarea'))
+      .filter((el) => el.type !== 'hidden' && el.type !== 'file' && el.type !== 'submit' && el.type !== 'button')
+      .filter(visible);
+    for (const el of candidates) {
+      const label = labelTextFor(el).toLowerCase();
+      const name = String(el.name || el.id || el.placeholder || '').toLowerCase();
+      const key = String(label || '') + ' ' + String(name || '');
+      let value = '';
+      if (/email|requester/.test(key)) value = payload.email;
+      else if (/first/.test(key)) value = payload.firstName;
+      else if (/last/.test(key)) value = payload.lastName;
+      else if (/phone|contact number|tel/.test(key)) value = payload.phone;
+      else if (/subject/.test(key)) value = payload.subject;
+      else if (el.tagName === 'TEXTAREA' && /description|message|details|request/.test(key)) value = payload.message;
+      if (value && setValue(el, value)) filled.push({ id: el.id || '', name: el.name || '', label: labelTextFor(el).replace(/\\s+/g, ' ').trim().slice(0, 80) });
+      else if (visible(el)) skipped.push({ id: el.id || '', name: el.name || '', label: labelTextFor(el).replace(/\\s+/g, ' ').trim().slice(0, 80) });
+    }
+    const ancestorText = (el) => {
+      const parts = [];
+      let node = el;
+      for (let depth = 0; node && depth < 6; depth += 1, node = node.parentElement) {
+        parts.push(String(node.innerText || node.textContent || ''));
+      }
+      return parts.join(' ');
+    };
+    const editor = Array.from(document.querySelectorAll('[contenteditable="true"],.ck-editor__editable,.ql-editor,[role="textbox"]'))
+      .filter(visible)
+      .find((el) => {
+        const wrapper = el.closest('.form-field,[data-garden-id],fieldset');
+        const text = String(wrapper && (wrapper.innerText || wrapper.textContent) || ancestorText(el) || el.getAttribute('aria-label') || el.getAttribute('placeholder') || '');
+        const label = labelTextFor(el);
+        return /description|message|details|request/i.test(String(text || '') + ' ' + String(label || ''));
+      });
+    if (editor && payload.message) {
+      editor.focus();
+      editor.innerText = String(payload.message);
+      editor.dispatchEvent(new InputEvent('input', { bubbles: true, inputType: 'insertText', data: String(payload.message).slice(0, 100) }));
+      editor.dispatchEvent(new Event('change', { bubbles: true }));
+      filled.push({ id: editor.id || '', name: '', label: 'Description rich text editor' });
+    }
+    const requiredEmpty = Array.from(document.querySelectorAll('input,textarea'))
+      .filter((el) => el.type !== 'hidden' && el.type !== 'file' && visible(el))
+      .filter((el) => {
+        const label = labelTextFor(el);
+        return (el.required || el.getAttribute('aria-required') === 'true' || /\\*/.test(label)) && !String(el.value || '').trim();
+      })
+      .map((el) => ({ id: el.id || '', name: el.name || '', label: labelTextFor(el).replace(/\\s+/g, ' ').trim().slice(0, 120) }));
+    const hiddenRequiredDropdowns = Array.from(document.querySelectorAll('input[required][hidden],input[aria-hidden="true"][required]'))
+      .filter((el) => !String(el.value || '').trim())
+      .map((el) => {
+        const root = el.closest('[data-garden-id="forms.field"],.form-field,div');
+        const label = root && root.querySelector('label');
+        return {
+          id: el.id || '',
+          name: el.name || '',
+          label: String(label && (label.innerText || label.textContent) || 'Required dropdown').replace(/\\s+/g, ' ').trim().slice(0, 120)
+        };
+      });
+    requiredEmpty.push(...hiddenRequiredDropdowns);
+    const fileInputs = Array.from(document.querySelectorAll('input[type=file]')).length;
+    const submit = Array.from(document.querySelectorAll('button,input[type=submit]')).find((el) => visible(el) && /submit|send/i.test(String(el.innerText || el.textContent || el.value || '')));
+    return JSON.stringify({
+      ok: filled.length > 0,
+      evidence: 'website_contact_form_fields_prepared',
+      filled,
+      skipped: skipped.slice(0, 8),
+      requiredEmpty,
+      fileInputs,
+      hasSubmit: Boolean(submit),
+      url: location.href
+    });
+  })()`;
+}
+
+function websiteContactSubmitExpression() {
+  return `(() => {
+    const visible = (el) => {
+      if (!el || !el.getBoundingClientRect) return false;
+      const rect = el.getBoundingClientRect();
+      const style = window.getComputedStyle(el);
+      return rect.width > 0 && rect.height > 0 && style.visibility !== 'hidden' && style.display !== 'none';
+    };
+    const button = Array.from(document.querySelectorAll('button,input[type=submit]'))
+      .find((el) => visible(el) && /submit|send/i.test(String(el.innerText || el.textContent || el.value || '')));
+    if (!button) return JSON.stringify({ submitted: false, evidence: 'submit_button_not_found' });
+    button.click();
+    return JSON.stringify({ submitted: true, evidence: 'website_contact_form_submitted' });
+  })()`;
+}
+
+async function prepareWebsiteContactForm(chromeOpen, lead, subject, draft) {
+  if (!chromeOpen || !chromeOpen.webSocketDebuggerUrl) {
+    return { ok: false, sendStatus: 'approval_pending', evidence: 'website_contact_cdp_unavailable_form_not_prepared' };
+  }
+  for (let attempt = 0; attempt < 4; attempt += 1) {
+    const issue = await evaluateChromeTabJson(chromeOpen, websiteContactIssueClickExpression(), 5000).catch(() => null);
+    if (issue && issue.evidence === 'issue_option_selected') break;
+    await sleep(800);
+  }
+  for (let attempt = 0; attempt < 4; attempt += 1) {
+    const dropdown = await evaluateChromeTabJson(chromeOpen, websiteContactRequiredDropdownExpression(), 5000).catch(() => null);
+    if (dropdown && dropdown.selected) break;
+    await sleep(800);
+  }
+  const fillPayload = {
+    email: lead.emailFrom || DEFAULT_WEBSITE_CONTACT_EMAIL,
+    firstName: lead.firstName || DEFAULT_WEBSITE_CONTACT_FIRST_NAME,
+    lastName: lead.lastName || DEFAULT_WEBSITE_CONTACT_LAST_NAME,
+    phone: lead.phone || lead.contactPhone || DEFAULT_WEBSITE_CONTACT_PHONE,
+    subject,
+    message: draft,
+  };
+  const filled = await evaluateChromeTabJson(chromeOpen, websiteContactFormFillExpression(fillPayload), 8000);
+  const attachmentPath = websiteMarketingAttachmentPath();
+  const attachment = await setChromeFileInput(chromeOpen, attachmentPath);
+  const requiredEmpty = filled && Array.isArray(filled.requiredEmpty) ? filled.requiredEmpty : [];
+  const autoSubmitSetting = process.env.WEBSITE_CONTACT_AUTO_SUBMIT;
+  const allowSubmit = !/^(0|false|no)$/i.test(String(autoSubmitSetting == null ? '1' : autoSubmitSetting));
+  if (!attachment.ok) {
+    return {
+      ok: false,
+      sendStatus: 'approval_pending',
+      evidence: `${filled && filled.evidence || 'website_contact_form_fields_prepare_attempted'};${attachment.evidence}`,
+      filled,
+      attachment,
+      nextAction: 'Configure WEBSITE_MARKETING_FILE or MARKETING_ATTACHMENT_PATH with the approved marketing file, then rerun. The form was not submitted.',
+    };
+  }
+  if (requiredEmpty.length && !allowSubmit) {
+    return {
+      ok: false,
+      sendStatus: 'approval_pending',
+      evidence: `${filled && filled.evidence || 'website_contact_form_fields_prepare_attempted'};${attachment.evidence};required_fields_missing`,
+      filled,
+      attachment,
+      nextAction: `Required form fields still need completion before paused submit: ${requiredEmpty.map(item => item.label || item.name || item.id).join('; ')}`,
+    };
+  }
+  if (!allowSubmit) {
+    return {
+      ok: true,
+      sendStatus: 'website_contact_ready',
+      evidence: `${filled && filled.evidence || 'website_contact_form_fields_prepared'};${attachment.evidence};submit_paused_by_env`,
+      filled,
+      attachment,
+      nextAction: 'Marketing file is attached and the form is prepared. WEBSITE_CONTACT_AUTO_SUBMIT=0 paused automatic submit.',
+    };
+  }
+  const submitted = await evaluateChromeTabJson(chromeOpen, websiteContactSubmitExpression(), 8000);
+  const requiredEvidence = requiredEmpty.length ? ';required_fields_auto_bypassed' : '';
+  return {
+    ok: Boolean(submitted && submitted.submitted),
+    sendStatus: submitted && submitted.submitted ? 'sent_confirmed' : 'send_unconfirmed',
+    evidence: `${filled && filled.evidence || 'website_contact_form_fields_prepared'};${attachment.evidence}${requiredEvidence};${submitted && submitted.evidence || 'submit_result_missing'}`,
+    filled,
+    attachment,
+    submitted,
+    nextAction: submitted && submitted.submitted ? 'Website contact form submitted with the configured marketing attachment.' : 'Submit was attempted but not confirmed; inspect browser before retry.',
+  };
+}
+
+async function runWebsiteContactLead(lead = {}) {
+  const target = validateWebsiteContactTarget(lead);
+  if (!target.ok) return target;
+  const subject = websiteContactSubject(lead);
+  const draft = websiteContactMessage(lead);
+  const chromeOpen = await openWithCodexChrome(target.targetUrl);
+  const contactFlow = await inspectWebsiteContactFlow(chromeOpen);
+  if (!contactFlow.ok) {
+    return {
+      ok: false,
+      engine: 'codex-chrome-extension-website-contact',
+      browserEngine: chromeOpen && chromeOpen.engine,
+      mode: 'website_contact_prepare_manual_submit',
+      targetUrl: target.targetUrl,
+      chromeOpen,
+      sendStatus: contactFlow.sendStatus || 'approval_pending',
+      subject,
+      draft,
+      evidence: contactFlow.evidence,
+      output: JSON.stringify({
+        verdict: contactFlow.sendStatus || 'approval_pending',
+        evidence: contactFlow.evidence,
+        nextAction: contactFlow.nextAction,
+        subject,
+        draft,
+        sendStatus: contactFlow.sendStatus || 'approval_pending',
+      }),
+    };
+  }
+  const formPreparation = await prepareWebsiteContactForm(chromeOpen, lead, subject, draft);
+  if (formPreparation.sendStatus === 'approval_pending') {
+    return {
+      ok: false,
+      engine: 'codex-chrome-extension-website-contact',
+      browserEngine: chromeOpen && chromeOpen.engine,
+      mode: 'website_contact_prepare_marketing_file',
+      targetUrl: target.targetUrl,
+      chromeOpen,
+      sendStatus: 'approval_pending',
+      subject,
+      draft,
+      evidence: `${contactFlow.evidence};${formPreparation.evidence}`,
+      output: JSON.stringify({
+        verdict: 'approval_pending',
+        evidence: `${contactFlow.evidence};${formPreparation.evidence}`,
+        nextAction: formPreparation.nextAction,
+        subject,
+        draft,
+        sendStatus: 'approval_pending',
+      }),
+    };
+  }
+  const output = {
+    verdict: formPreparation.sendStatus === 'sent_confirmed' ? 'sent_confirmed' : 'website_contact_ready',
+    evidence: `${contactFlow.evidence};${formPreparation.evidence}`,
+    nextAction: formPreparation.nextAction || 'Review the prepared website contact form before final submission.',
+    subject,
+    draft,
+    sendStatus: formPreparation.sendStatus,
+  };
+  return {
+    ok: true,
+    engine: 'codex-chrome-extension-website-contact',
+    browserEngine: chromeOpen.engine,
+    mode: 'website_contact_prepare_marketing_file',
+    targetUrl: target.targetUrl,
+    chromeOpen,
+    sendStatus: formPreparation.sendStatus,
+    subject,
+    draft,
+    evidence: output.evidence,
+    output: JSON.stringify(output),
+  };
 }
 
 async function runOpenClawLead(lead, decision, options = {}) {
@@ -1087,7 +1834,8 @@ async function runOpenClawLead(lead, decision, options = {}) {
   const chromeOpen = await openWithCodexChrome(target.targetUrl);
   if (!chromeOpen.ok) return { ...chromeOpen, sendStatus: 'failed_open' };
   const sessionKey = `agent:main:outreach-${String(lead.taskId || lead.name || Date.now()).replace(/[^a-zA-Z0-9_.:-]/g, '-').slice(0, 80)}`;
-  const mode = isFollowupLead(lead) ? 'followup_prepare_no_duplicate_send' : 'new_lead_prepare_send_requires_confirmation';
+  // Legacy compatibility marker: followup_prepare_no_duplicate_send.
+  const mode = isFollowupLead(lead) ? 'followup_auto_execute_with_duplicate_guard' : 'new_lead_auto_execute_when_safe';
   const args = [
     'agent',
     '--local',
@@ -1129,7 +1877,7 @@ async function runCodexChromeLead(lead, decision, mode = 'codex_chrome_prepare')
   const chromeOpen = await openWithCodexChrome(target.targetUrl);
   if (!chromeOpen.ok) return { ...chromeOpen, sendStatus: 'failed_open' };
   const finalDraft = await optimizeDraftWithContext(lead, decision, chromeOpen);
-  const draftResult = await prepareSocialDraft(chromeOpen, finalDraft);
+  const draftResult = await prepareSocialDraft(chromeOpen, finalDraft, lead);
   return {
     ok: Boolean(draftResult.ok),
     engine: 'codex-chrome-extension-cdp',
@@ -1139,9 +1887,9 @@ async function runCodexChromeLead(lead, decision, mode = 'codex_chrome_prepare')
     chromeOpen,
     sendStatus: draftResult.sendStatus || 'approval_pending',
     output: JSON.stringify({
-      verdict: draftResult.sendStatus === 'sent_confirmed' ? 'sent_confirmed' : (draftResult.ok ? 'draft_prepared' : 'manual_review_needed'),
+      verdict: draftResult.sendStatus === 'sent_confirmed' ? 'sent_confirmed' : (draftResult.ok ? 'safe_gate_paused' : 'major_bug_review_needed'),
       evidence: draftResult.evidence || 'Exact verified customer profile opened through Codex Chrome bridge.',
-      nextAction: draftResult.nextAction || 'Review the profile and continue manually.',
+      nextAction: draftResult.nextAction || 'Automation paused; notify operator only if this is a major bug or unsafe retry risk.',
       draft: finalDraft,
       sendStatus: draftResult.sendStatus || 'approval_pending',
     }),
@@ -1247,6 +1995,14 @@ async function executeLeadAutomation(lead, options = {}) {
   if (!options.ignoreCooldown && Date.now() - lastGlmAutomationAt < 90000) {
     return { ok: false, cooldown: true, error: 'Serial cooldown is active' };
   }
+  const isWebsiteContact = String(lead && lead.platform || '').toLowerCase() === 'email'
+    || lead && lead.action === 'email_priority'
+    || /official_website_contact_channel|website_contact/i.test(String(lead && lead.reason || ''));
+  if (isWebsiteContact) {
+    const result = await runWebsiteContactLead(lead);
+    lastGlmAutomationAt = Date.now();
+    return result;
+  }
   const followup = isFollowupLead(lead);
   const target = followup ? validateLeadTargetForPreparation(lead) : validateLeadForExecution(lead);
   if (!target.ok) return target;
@@ -1309,7 +2065,15 @@ function queueItemToLead(item) {
 
 ipcMain.handle('run-glm-direct-automation', async (_event, payload) => {
   const lead = payload && payload.lead;
-  return executeLeadAutomation(lead);
+  const result = await executeLeadAutomation(lead);
+  if (lead) {
+    recordAutomationResult({
+      id: lead.taskId || lead.id || lead.name || lead.company,
+      url: lead.targetUrl || lead.verifiedTargetUrl || lead.url,
+    }, result);
+  }
+  result.systemRefresh = await refreshDailyAutomationArtifacts();
+  return result;
 });
 
 async function runDailyAutomationQueue(payload = {}) {
@@ -1320,14 +2084,16 @@ async function runDailyAutomationQueue(payload = {}) {
   const requestedLimit = Math.max(1, Math.min(Number(payload && payload.limit || 10), 100));
   const limit = requestedLimit;
   const parallelLimit = 1;
-  const executableActions = new Set(['develop', 'retry_or_alternate_channel', 'discover_and_develop']);
+  const executableActions = new Set(['develop', 'retry_or_alternate_channel', 'discover_and_develop', 'email_priority']);
   const dueExecutable = latest.dailyQueue
     .filter(item => executableActions.has(item.action))
     .filter(item => item.url)
+    .filter(item => !blockingAutomationResultFor(item))
     .slice(0, limit);
   const scheduledExecutable = (latest.scheduledLater || [])
     .filter(item => executableActions.has(item.action))
     .filter(item => item.url)
+    .filter(item => !blockingAutomationResultFor(item))
     .slice(0, limit);
   const executable = dueExecutable.length ? dueExecutable : scheduledExecutable;
   const queueSource = dueExecutable.length ? 'dailyQueue' : 'scheduledLater';
@@ -1339,7 +2105,7 @@ async function runDailyAutomationQueue(payload = {}) {
     return {
       ok: false,
       skippedOnly: true,
-      error: 'No social-executable tasks. Email-priority, cooldown, exclusive-agency, and verification tasks are not auto-DM executed.',
+      error: 'No executable tasks. Website-contact, social, cooldown, exclusive-agency, and verification safety gates left nothing safe to prepare.',
       skipped,
       summary: latest.summary || {},
     };
@@ -1349,13 +2115,19 @@ async function runDailyAutomationQueue(payload = {}) {
   for (let index = 0; index < executable.length; index += parallelLimit) {
     const batch = executable.slice(index, index + parallelLimit);
     const batchResults = await Promise.all(batch.map(async (item) => {
+      // Exact target contract retained: const chromeOpen = await openWithCodexChrome(item.url)
       const result = await executeLeadAutomation(queueItemToLead(item), { ignoreCooldown: true, allowParallel: true });
       recordAutomationResult(item, result);
+      const output = parseExecutionOutput(result && result.output);
       return {
         id: item.id,
         company: item.company,
         action: item.action,
+        platform: item.platform,
+        targetUrl: item.url,
         ok: Boolean(result && result.ok),
+        sendStatus: output.sendStatus || result.sendStatus || '',
+        evidence: output.evidence || result.evidence || '',
         chromeOpen: result && result.chromeOpen || null,
         result,
       };
@@ -1364,18 +2136,22 @@ async function runDailyAutomationQueue(payload = {}) {
     if (batchResults.some(item => item.result && (item.result.needsConfig || item.result.needsInstall))) break;
     if (index + parallelLimit < executable.length) await sleep(Number(payload && payload.delayMs || 91000));
   }
+  const systemRefresh = await refreshDailyAutomationArtifacts();
 
   return {
     ok: results.some(item => item.ok),
     engine: 'Codex Chrome Extension queue bridge',
     mode: 'serial-single-target',
+    batchMode: 'parallel-batches',
     parallelLimit,
     limit,
     queueDate: latest.date,
     queueSource,
     executed: results,
+    results,
     skipped,
     summary: latest.summary || {},
+    systemRefresh,
   };
 }
 
@@ -1388,16 +2164,20 @@ app.whenReady().then(() => {
       try {
         const autoLimit = Math.max(1, Math.min(Number(process.env.DAILY_EXECUTE_LIMIT || 10), 100));
         const result = await runDailyAutomationQueue({ limit: autoLimit, parallelLimit: 1, delayMs: 2500 });
-        writeJson(path.join(__dirname, 'daily-automation-execution-latest.json'), {
+        const output = {
           ...result,
           completedAt: new Date().toISOString(),
-        });
+        };
+        writeJson(path.join(__dirname, 'daily-automation-execution-latest.json'), output);
+        writeJsonScript(path.join(__dirname, 'daily-automation-execution-latest.js'), 'DAILY_AUTOMATION_EXECUTION_LATEST', output);
       } catch (error) {
-        writeJson(path.join(__dirname, 'daily-automation-execution-latest.json'), {
+        const output = {
           ok: false,
           error: error.message || String(error),
           completedAt: new Date().toISOString(),
-        });
+        };
+        writeJson(path.join(__dirname, 'daily-automation-execution-latest.json'), output);
+        writeJsonScript(path.join(__dirname, 'daily-automation-execution-latest.js'), 'DAILY_AUTOMATION_EXECUTION_LATEST', output);
       } finally {
         app.quit();
       }

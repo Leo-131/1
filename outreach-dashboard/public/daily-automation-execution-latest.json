@@ -1,0 +1,28 @@
+{
+  "ok": false,
+  "pendingExecution": true,
+  "skippedOnly": false,
+  "generatedAt": "2026-06-30T05:26:47.227Z",
+  "message": "Multi-touch queue refreshed; execution not run yet. Social DM and official website/email channels are queued independently.",
+  "summary": {
+    "totalLeads": 16,
+    "highIcp": 16,
+    "readyToDevelop": 8,
+    "dueNow": 17,
+    "googleDiscovered": 17,
+    "facebookDiscovered": 4,
+    "websiteContactDiscovered": 9,
+    "scheduledLater": 5,
+    "cooldown": 26,
+    "emailPriority": 5,
+    "openAgencyMarket": 15,
+    "exclusiveAgencySkipped": 1,
+    "needsVerification": 0,
+    "retainedLowIcp": 0
+  },
+  "queue": {
+    "dailyQueue": 17,
+    "cooldownQueue": 26,
+    "scheduledLater": 5
+  }
+}
