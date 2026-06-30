@@ -263,7 +263,10 @@ function workingTimeForTask(task, now) {
 
 function targetUrl(task, profiles) {
   const profile = profiles[String(task.name || '').toLowerCase()];
-  return task.verifiedTargetUrl || (profile && profile.url) || '';
+  if (String(task.platform || '').toLowerCase() === 'email') {
+    return task.contactUrl || task.vendorPortal || task.verifiedTargetUrl || task.url || task.website || (profile && profile.url) || '';
+  }
+  return task.verifiedTargetUrl || task.url || (profile && profile.url) || '';
 }
 
 function normalizeResultIndex(results) {

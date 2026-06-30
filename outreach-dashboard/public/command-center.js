@@ -87,6 +87,16 @@
   function isIcpQualified(entity) {
     return icpScore(entity) > ICP_MIN_SCORE;
   }
+  function isGoogleHighValue(entity) {
+    return entity && (entity.source === 'google_customer_discovery' || /^google-customer-/i.test(entity.taskId || entity.id || entity.automationTaskId || ''))
+      && Number(entity.fitScore || 0) >= ICP_MIN_SCORE;
+  }
+  function shouldRetainWithoutStrike(entity) {
+    const text = [entity && entity.company, entity && entity.name, entity && entity.automationTaskId, entity && entity.taskId].join(' ').toLowerCase();
+    return isIcpQualified(entity)
+      || isGoogleHighValue(entity)
+      || (/cotswold\s*outdoor/.test(text) && Number(entity && entity.fitScore || 0) >= 80);
+  }
   function executionRank(task) {
     const platform = String(task && task.platform || '').toLowerCase();
     const platformRank = platform === 'instagram' ? 30
@@ -270,6 +280,14 @@
       record && record.website,
       record && record.url,
     ];
+    return candidates.find(value => /^https?:\/\//i.test(String(value || ''))
+      && !/^https:\/\/www\.google\.com\/search/i.test(String(value || ''))) || '';
+  }
+  function entryUrl(record) {
+    const platform = String(record && record.platform || '').toLowerCase();
+    const candidates = platform === 'email'
+      ? [record && record.contactUrl, record && record.vendorPortal, record && record.url, record && record.targetUrl, record && record.website]
+      : [record && record.url, record && record.targetUrl, record && record.platformUrl, record && record.contactUrl, record && record.vendorPortal, record && record.website];
     return candidates.find(value => /^https?:\/\//i.test(String(value || ''))
       && !/^https:\/\/www\.google\.com\/search/i.test(String(value || ''))) || '';
   }
@@ -752,7 +770,7 @@
         <td>${esc(item.country || item.countryEn || '')}</td>
         <td><span class="cc-chip ${item.action === 'email_priority' ? 'amber' : ''}">${esc(status)}</span></td>
         <td>${esc(reason)}</td>
-        <td>${item.website || item.targetUrl ? `<a href="${esc(item.website || item.targetUrl)}" target="_blank" rel="noopener">打开入口</a>` : '<span class="cc-sub">无入口</span>'}</td>
+        <td>${entryUrl(item) ? `<a href="${esc(entryUrl(item))}" target="_blank" rel="noopener">打开入口</a>` : '<span class="cc-sub">无入口</span>'}</td>
       </tr>`;
     }).join('');
     const cooldownRows = (system.cooldownRows || []).slice(0, 12).map(item => `<tr>
@@ -815,10 +833,10 @@
   function taskTable(list) {
     if (!list.length) return '<div class="cc-empty">当前筛选下没有客户</div>';
     return `<table class="cc-table"><thead><tr><th>客户</th><th>国家</th><th>关键词</th><th>状态</th><th>成交分</th><th>区域</th><th>操作</th></tr></thead><tbody>${list.map(task => {
-      const qualified = isIcpQualified(task);
+      const qualified = shouldRetainWithoutStrike(task);
       const rowClass = qualified ? '' : ' class="cc-low-icp"';
       const linkClass = qualified ? '' : ' class="cc-strike-link"';
-      const target = platformUrl(task);
+      const target = entryUrl(task) || platformUrl(task);
       const customerHref = target || urlFor('customer', { contact: task.taskId });
       const customerLinkAttrs = target ? ` href="${esc(customerHref)}" target="_blank" rel="noopener"` : ` href="${customerHref}"`;
       const archiveLink = target ? `<br><a class="cc-sub-link" href="${urlFor('customer', { contact: task.taskId })}">System profile</a>` : '';
@@ -933,9 +951,9 @@
       </form>
       <div class="cc-table-wrap"><table class="cc-table"><thead><tr>${head('name', '姓名')}${head('company', '公司')}<th>职位</th>${head('country', '国家')}<th>平台</th>${head('status', '状态')}${head('fitScore', 'ICP')}${head('latestUpdate', '最近更新 / 触达')}</tr></thead><tbody>${rows.map(({ record, index }) => {
         const key = recordKey(record, index);
-        const qualified = isIcpQualified(record);
+        const qualified = shouldRetainWithoutStrike(record);
         const linkClass = qualified ? '' : ' class="cc-strike-link"';
-        const target = platformUrl(record);
+        const target = entryUrl(record) || platformUrl(record);
         const customerHref = target || urlFor('customer', { contact: key });
         const customerLinkAttrs = target ? ` href="${esc(customerHref)}" target="_blank" rel="noopener"` : ` href="${customerHref}"`;
         const archiveLink = target ? `<br><a class="cc-sub-link" href="${urlFor('customer', { contact: key })}">System profile</a>` : '';
