@@ -350,6 +350,9 @@
     if (!Number.isFinite(rightTime)) return left || '';
     return rightTime > leftTime ? right : left;
   }
+  function recordUpdatedAt(record) {
+    return record && (record.lastTouch || record.resultCheckedAt || record.discoveredAt || record.profiledAt || record.date || '');
+  }
   function lastActualTouch(task) {
     return [task.lastTouch, task.sentAt, task.lastAutomationAt]
       .find(value => isValidTimestamp(value)) || '';
@@ -483,6 +486,7 @@
       automationTaskId: row.taskId || row.id || '',
       automationEvidence: row.reason || row.evidence || '',
       resultCheckedAt: latestRun && latestRun.generatedAt || '',
+      discoveredAt: latestRun && latestRun.generatedAt || '',
     };
   }
   function customerRecords() {
@@ -523,6 +527,7 @@
       enriched.automationTaskId = source.taskId || source.id || enriched.automationTaskId;
       enriched.automationEvidence = source.reason || source.evidence || source.sendStatus || enriched.automationEvidence || '';
       enriched.resultCheckedAt = source.resultCheckedAt || (latestRun && latestRun.generatedAt) || enriched.resultCheckedAt || '';
+      enriched.discoveredAt = source.discoveredAt || enriched.discoveredAt || enriched.resultCheckedAt || '';
       return enriched;
     });
     latestRows.forEach(row => {
