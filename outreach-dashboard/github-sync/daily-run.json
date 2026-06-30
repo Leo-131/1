@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-30T12:47:20.424Z",
+  "generatedAt": "2026-06-30T13:06:21.292Z",
   "date": "2026-06-30",
   "mode": "daily-icp-first-automation-loop",
   "executionLayer": "Codex Chrome Extension primary; AutoClaw compatible",
@@ -8,13 +8,13 @@
     "quota": {
       "total": {
         "target": 100,
-        "planned": 0,
-        "gap": 100
+        "planned": 2,
+        "gap": 98
       },
       "develop": {
         "target": 70,
-        "planned": 0,
-        "gap": 70
+        "planned": 1,
+        "gap": 69
       },
       "email_priority": {
         "target": 15,
@@ -23,8 +23,8 @@
       },
       "retry_or_alternate_channel": {
         "target": 10,
-        "planned": 0,
-        "gap": 10
+        "planned": 1,
+        "gap": 9
       },
       "verify_target": {
         "target": 5,
@@ -50,14 +50,14 @@
   "summary": {
     "totalLeads": 16,
     "highIcp": 16,
-    "readyToDevelop": 5,
+    "readyToDevelop": 4,
     "dueNow": 14,
-    "googleDiscovered": 14,
-    "facebookDiscovered": 3,
+    "googleDiscovered": 12,
+    "facebookDiscovered": 2,
     "websiteContactDiscovered": 9,
-    "scheduledLater": 5,
+    "scheduledLater": 3,
     "cooldown": 30,
-    "emailPriority": 4,
+    "emailPriority": 3,
     "openAgencyMarket": 15,
     "exclusiveAgencySkipped": 1,
     "needsVerification": 0,
@@ -118,7 +118,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/30 20:35:27",
+        "localTime": "2026/6/30 21:03:10",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -200,7 +200,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/30 20:35:27",
+        "localTime": "2026/6/30 21:03:10",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -282,7 +282,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/30 20:35:27",
+        "localTime": "2026/6/30 21:03:10",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -364,7 +364,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/30 20:35:27",
+        "localTime": "2026/6/30 21:03:10",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -446,7 +446,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/30 20:35:27",
+        "localTime": "2026/6/30 21:03:10",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -473,158 +473,6 @@
       "contactChannelScore": 29,
       "dealProbabilityScore": 219,
       "priorityScore": 217
-    },
-    {
-      "linkedinUrl": "https://uk.linkedin.com/company/go-outdoors-ltd",
-      "founded": "1969",
-      "headquarters": "Bury, Lancashire, United Kingdom",
-      "companyScale": "1,001-5,000 employees; major UK outdoor retail chain",
-      "coverage": "United Kingdom",
-      "mainBrands": "Camping equipment, outdoor clothing/footwear, cycling, fishing, caravanning, tents",
-      "salesChannel": "Stores and ecommerce",
-      "buyingCapability": "High; category buyer or JD Outdoors/GO Outdoors merchandising route",
-      "decisionMaker": "Camping equipment buyer, outdoor accessories category manager, vendor review contact",
-      "publicEmail": "",
-      "publicEmailStatus": "No public buyer email verified; use official contact page and LinkedIn category research.",
-      "contactPhone": "+44 330 008 1555",
-      "vendorPortal": "https://www.gooutdoors.co.uk/contact-us",
-      "linkedinCompany": "https://uk.linkedin.com/company/go-outdoors-ltd",
-      "contactNote": "Use official contact route and ask for camping/accessories buyer; validate any personal emails before use.",
-      "dataSources": [
-        "GO Outdoors LinkedIn",
-        "GO Outdoors public company/contact sources"
-      ],
-      "id": "google-customer-go-outdoors-instagram",
-      "name": "GO Outdoors",
-      "company": "GO Outdoors",
-      "country": "United Kingdom",
-      "countryEn": "United Kingdom",
-      "fitScore": 93,
-      "fitTier": "A+",
-      "marketScore": 4.5,
-      "marketStatus": "open",
-      "agencyState": "open",
-      "keyword": "outdoor retail chain",
-      "role": "Camping and outdoor accessories buyer.",
-      "background": "UK outdoor retailer with camping, tents, hiking, cycling, and outdoor equipment categories.",
-      "buyerPersona": "Camping and outdoor accessories buyer.",
-      "productCategory": "outdoor retail chain",
-      "businessModel": "Retail Chain",
-      "productFit": "FLEXTAIL portable pumps, outdoor power, camping lighting and compact camping accessories",
-      "opportunity": "UK outdoor retailer with camping, tents, hiking, cycling, and outdoor equipment categories.",
-      "linkedin_url": "https://uk.linkedin.com/company/go-outdoors-ltd",
-      "linkedin": "https://uk.linkedin.com/company/go-outdoors-ltd",
-      "contactEmail": "",
-      "website": "https://www.gooutdoors.co.uk/",
-      "evidenceUrl": "https://www.google.com/search?q=%22GO%20Outdoors%22%20%22outdoor%20retail%20chain%22%20%22United%20Kingdom%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "query": "https://www.google.com/search?q=%22GO%20Outdoors%22%20%22outdoor%20retail%20chain%22%20%22United%20Kingdom%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "source": "google_customer_discovery",
-      "identityStatus": "verified",
-      "partnershipStatus": "",
-      "doNotOutreach": false,
-      "automationStatus": "",
-      "partnerNote": "",
-      "sendStatus": "",
-      "workingTime": {
-        "dueNow": true,
-        "timeZone": "local-market",
-        "localTime": "2026/6/30 20:35:27",
-        "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
-      },
-      "platform": "instagram",
-      "platformUrl": "https://www.instagram.com/gooutdoors/",
-      "url": "https://www.instagram.com/gooutdoors/",
-      "action": "develop",
-      "reason": "concrete_google_discovered_major_customer_instagram",
-      "alternateChannels": {
-        "instagram": "https://www.instagram.com/gooutdoors/",
-        "facebook": "https://www.facebook.com/GOoutdoorsUK/",
-        "websiteContact": "https://www.gooutdoors.co.uk/contact-us"
-      },
-      "identitySource": "official website/social profile + Google background query",
-      "channelPriority": 1,
-      "targetRegion": "europe",
-      "targetRegionScore": 32,
-      "contactChannelScore": 17,
-      "dealProbabilityScore": 214,
-      "priorityScore": 214
-    },
-    {
-      "linkedinUrl": "https://uk.linkedin.com/company/go-outdoors-ltd",
-      "founded": "1969",
-      "headquarters": "Bury, Lancashire, United Kingdom",
-      "companyScale": "1,001-5,000 employees; major UK outdoor retail chain",
-      "coverage": "United Kingdom",
-      "mainBrands": "Camping equipment, outdoor clothing/footwear, cycling, fishing, caravanning, tents",
-      "salesChannel": "Stores and ecommerce",
-      "buyingCapability": "High; category buyer or JD Outdoors/GO Outdoors merchandising route",
-      "decisionMaker": "Camping equipment buyer, outdoor accessories category manager, vendor review contact",
-      "publicEmail": "",
-      "publicEmailStatus": "No public buyer email verified; use official contact page and LinkedIn category research.",
-      "contactPhone": "+44 330 008 1555",
-      "vendorPortal": "https://www.gooutdoors.co.uk/contact-us",
-      "linkedinCompany": "https://uk.linkedin.com/company/go-outdoors-ltd",
-      "contactNote": "Use official contact route and ask for camping/accessories buyer; validate any personal emails before use.",
-      "dataSources": [
-        "GO Outdoors LinkedIn",
-        "GO Outdoors public company/contact sources"
-      ],
-      "id": "google-customer-go-outdoors-facebook",
-      "name": "GO Outdoors",
-      "company": "GO Outdoors",
-      "country": "United Kingdom",
-      "countryEn": "United Kingdom",
-      "fitScore": 93,
-      "fitTier": "A+",
-      "marketScore": 4.5,
-      "marketStatus": "open",
-      "agencyState": "open",
-      "keyword": "outdoor retail chain",
-      "role": "Camping and outdoor accessories buyer.",
-      "background": "UK outdoor retailer with camping, tents, hiking, cycling, and outdoor equipment categories.",
-      "buyerPersona": "Camping and outdoor accessories buyer.",
-      "productCategory": "outdoor retail chain",
-      "businessModel": "Retail Chain",
-      "productFit": "FLEXTAIL portable pumps, outdoor power, camping lighting and compact camping accessories",
-      "opportunity": "UK outdoor retailer with camping, tents, hiking, cycling, and outdoor equipment categories.",
-      "linkedin_url": "https://uk.linkedin.com/company/go-outdoors-ltd",
-      "linkedin": "https://uk.linkedin.com/company/go-outdoors-ltd",
-      "contactEmail": "",
-      "website": "https://www.gooutdoors.co.uk/",
-      "evidenceUrl": "https://www.google.com/search?q=%22GO%20Outdoors%22%20%22outdoor%20retail%20chain%22%20%22United%20Kingdom%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "query": "https://www.google.com/search?q=%22GO%20Outdoors%22%20%22outdoor%20retail%20chain%22%20%22United%20Kingdom%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "source": "google_customer_discovery",
-      "identityStatus": "verified",
-      "partnershipStatus": "",
-      "doNotOutreach": false,
-      "automationStatus": "",
-      "partnerNote": "",
-      "sendStatus": "",
-      "workingTime": {
-        "dueNow": true,
-        "timeZone": "local-market",
-        "localTime": "2026/6/30 20:35:27",
-        "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
-      },
-      "platform": "facebook",
-      "platformUrl": "https://www.facebook.com/GOoutdoorsUK/",
-      "url": "https://www.facebook.com/GOoutdoorsUK/",
-      "action": "develop",
-      "reason": "concrete_google_discovered_major_customer_facebook",
-      "alternateChannels": {
-        "instagram": "https://www.instagram.com/gooutdoors/",
-        "facebook": "https://www.facebook.com/GOoutdoorsUK/",
-        "websiteContact": "https://www.gooutdoors.co.uk/contact-us"
-      },
-      "invalidChannels": {},
-      "facebookStatus": "verified_official_page_candidate",
-      "identitySource": "official Facebook page candidate + official website + Google background query",
-      "channelPriority": 2,
-      "targetRegion": "europe",
-      "targetRegionScore": 32,
-      "contactChannelScore": 17,
-      "dealProbabilityScore": 214,
-      "priorityScore": 214
     },
     {
       "linkedinUrl": "https://uk.linkedin.com/company/go-outdoors-ltd",
@@ -680,7 +528,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/30 20:35:27",
+        "localTime": "2026/6/30 21:03:10",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -762,7 +610,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/30 20:35:27",
+        "localTime": "2026/6/30 21:03:10",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -845,7 +693,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/30 20:35:27",
+        "localTime": "2026/6/30 21:03:10",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -878,6 +726,56 @@
       "contactChannelScore": 17,
       "dealProbabilityScore": 210,
       "priorityScore": 208
+    },
+    {
+      "id": "verified-Instagram-ellisbrigham",
+      "name": "ellisbrigham",
+      "company": "Ellis Brigham UK (33K followers, since 1933)",
+      "platform": "instagram",
+      "country": "英国",
+      "countryEn": "United Kingdom",
+      "fitScore": 100,
+      "fitTier": "A",
+      "marketScore": 4.5,
+      "marketStatus": "可开拓",
+      "agencyState": "open",
+      "url": "https://www.instagram.com/ellisbrigham/",
+      "website": "",
+      "platformUrl": "https://www.instagram.com/ellisbrigham/",
+      "contactUrl": "",
+      "contactSearchUrl": "",
+      "emailFrom": "",
+      "websiteContactSubject": "",
+      "websiteContactMessage": "",
+      "websiteContactFlow": "",
+      "publicEmail": "",
+      "publicEmailStatus": "",
+      "contactPhone": "",
+      "vendorPortal": "",
+      "linkedinUrl": "",
+      "headquarters": "",
+      "founded": "",
+      "companyScale": "",
+      "dataSources": null,
+      "alternateChannels": null,
+      "lastStatus": "approval_pending",
+      "lastEvidence": "website_contact_entry_not_verified;no_contact_entry_control",
+      "lastTouch": "",
+      "action": "develop",
+      "reason": "high_icp_verified_ready",
+      "workingTime": {
+        "dueNow": true,
+        "timeZone": "Europe/London",
+        "localTime": "Tue 14:06",
+        "window": "afternoon",
+        "nextBest": "now",
+        "weight": 0.9
+      },
+      "targetRegion": "europe",
+      "targetRegionScore": 32,
+      "contactChannelScore": 0,
+      "dealProbabilityScore": 204,
+      "priorityScore": 204
     },
     {
       "linkedinUrl": "https://au.linkedin.com/company/anaconda-group-pty-ltd",
@@ -934,7 +832,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/30 20:35:27",
+        "localTime": "2026/6/30 21:03:10",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -1010,7 +908,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/30 20:35:27",
+        "localTime": "2026/6/30 21:03:10",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -1087,7 +985,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/30 20:35:27",
+        "localTime": "2026/6/30 21:03:10",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -1169,7 +1067,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/30 20:35:27",
+        "localTime": "2026/6/30 21:03:10",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -1196,6 +1094,56 @@
       "contactChannelScore": 17,
       "dealProbabilityScore": 178,
       "priorityScore": 176
+    },
+    {
+      "id": "verified-Instagram-triedandtrout",
+      "name": "triedandtrout",
+      "company": "Tried & Trout Supply Co",
+      "platform": "instagram",
+      "country": "美国",
+      "countryEn": "United States",
+      "fitScore": 73,
+      "fitTier": "A",
+      "marketScore": 4.4,
+      "marketStatus": "可开拓",
+      "agencyState": "open",
+      "url": "https://www.instagram.com/triedandtroutsupply/",
+      "website": "",
+      "platformUrl": "https://www.instagram.com/triedandtroutsupply/",
+      "contactUrl": "",
+      "contactSearchUrl": "",
+      "emailFrom": "",
+      "websiteContactSubject": "",
+      "websiteContactMessage": "",
+      "websiteContactFlow": "",
+      "publicEmail": "",
+      "publicEmailStatus": "",
+      "contactPhone": "",
+      "vendorPortal": "",
+      "linkedinUrl": "",
+      "headquarters": "",
+      "founded": "",
+      "companyScale": "",
+      "dataSources": null,
+      "alternateChannels": null,
+      "lastStatus": "failed_open",
+      "lastEvidence": "profile_valid_no_message_button",
+      "lastTouch": "",
+      "action": "retry_or_alternate_channel",
+      "reason": "profile_valid_no_message_button",
+      "workingTime": {
+        "dueNow": true,
+        "timeZone": "America/New_York",
+        "localTime": "Tue 09:06",
+        "window": "morning",
+        "nextBest": "now",
+        "weight": 1
+      },
+      "targetRegion": "americas",
+      "targetRegionScore": 30,
+      "contactChannelScore": 0,
+      "dealProbabilityScore": 174,
+      "priorityScore": 174
     }
   ],
   "cooldownQueue": [
@@ -1236,12 +1184,12 @@
       "action": "cooldown",
       "reason": "previous_sent_confirmed_no_duplicate_dm",
       "workingTime": {
-        "dueNow": false,
+        "dueNow": true,
         "timeZone": "America/New_York",
-        "localTime": "Tue 08:47",
-        "window": "outside_work_hours",
-        "nextBest": "America/New_York morning",
-        "weight": 0
+        "localTime": "Tue 09:06",
+        "window": "morning",
+        "nextBest": "now",
+        "weight": 1
       },
       "targetRegion": "americas",
       "targetRegionScore": 30,
@@ -1286,12 +1234,12 @@
       "action": "cooldown",
       "reason": "previous_sent_confirmed_no_duplicate_dm",
       "workingTime": {
-        "dueNow": false,
+        "dueNow": true,
         "timeZone": "Europe/London",
-        "localTime": "Tue 13:47",
-        "window": "outside_work_hours",
-        "nextBest": "Europe/London afternoon",
-        "weight": 0
+        "localTime": "Tue 14:06",
+        "window": "afternoon",
+        "nextBest": "now",
+        "weight": 0.9
       },
       "targetRegion": "europe",
       "targetRegionScore": 32,
@@ -1336,12 +1284,12 @@
       "action": "cooldown",
       "reason": "previous_sent_confirmed_no_duplicate_dm",
       "workingTime": {
-        "dueNow": false,
+        "dueNow": true,
         "timeZone": "Europe/London",
-        "localTime": "Tue 13:47",
-        "window": "outside_work_hours",
-        "nextBest": "Europe/London afternoon",
-        "weight": 0
+        "localTime": "Tue 14:06",
+        "window": "afternoon",
+        "nextBest": "now",
+        "weight": 0.9
       },
       "targetRegion": "europe",
       "targetRegionScore": 32,
@@ -1386,12 +1334,12 @@
       "action": "cooldown",
       "reason": "previous_sent_confirmed_no_duplicate_dm",
       "workingTime": {
-        "dueNow": false,
+        "dueNow": true,
         "timeZone": "America/Toronto",
-        "localTime": "Tue 08:47",
-        "window": "outside_work_hours",
-        "nextBest": "America/Toronto morning",
-        "weight": 0
+        "localTime": "Tue 09:06",
+        "window": "morning",
+        "nextBest": "now",
+        "weight": 1
       },
       "targetRegion": "americas",
       "targetRegionScore": 30,
@@ -1436,12 +1384,12 @@
       "action": "cooldown",
       "reason": "previous_sent_confirmed_no_duplicate_dm",
       "workingTime": {
-        "dueNow": false,
+        "dueNow": true,
         "timeZone": "America/Toronto",
-        "localTime": "Tue 08:47",
-        "window": "outside_work_hours",
-        "nextBest": "America/Toronto morning",
-        "weight": 0
+        "localTime": "Tue 09:06",
+        "window": "morning",
+        "nextBest": "now",
+        "weight": 1
       },
       "targetRegion": "americas",
       "targetRegionScore": 30,
@@ -1488,7 +1436,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Asia/Jakarta",
-        "localTime": "Tue 19:47",
+        "localTime": "Tue 20:06",
         "window": "outside_work_hours",
         "nextBest": "Asia/Jakarta morning",
         "weight": 0
@@ -1538,7 +1486,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Pacific/Auckland",
-        "localTime": "Wed 00:47",
+        "localTime": "Wed 01:06",
         "window": "outside_work_hours",
         "nextBest": "Pacific/Auckland morning",
         "weight": 0
@@ -1588,7 +1536,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Pacific/Auckland",
-        "localTime": "Wed 00:47",
+        "localTime": "Wed 01:06",
         "window": "outside_work_hours",
         "nextBest": "Pacific/Auckland morning",
         "weight": 0
@@ -1638,7 +1586,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Pacific/Auckland",
-        "localTime": "Wed 00:47",
+        "localTime": "Wed 01:06",
         "window": "outside_work_hours",
         "nextBest": "Pacific/Auckland morning",
         "weight": 0
@@ -1688,7 +1636,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Asia/Kolkata",
-        "localTime": "Tue 18:17",
+        "localTime": "Tue 18:36",
         "window": "outside_work_hours",
         "nextBest": "Asia/Kolkata morning",
         "weight": 0
@@ -1753,7 +1701,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/30 20:35:27",
+        "localTime": "2026/6/30 21:03:10",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -1831,7 +1779,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/30 20:35:27",
+        "localTime": "2026/6/30 21:03:10",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -1911,7 +1859,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/30 20:35:27",
+        "localTime": "2026/6/30 21:03:10",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -1989,7 +1937,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/30 20:35:27",
+        "localTime": "2026/6/30 21:03:10",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -2069,7 +2017,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/30 20:35:27",
+        "localTime": "2026/6/30 21:03:10",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -2147,7 +2095,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/30 20:35:27",
+        "localTime": "2026/6/30 21:03:10",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -2227,7 +2175,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/30 20:35:27",
+        "localTime": "2026/6/30 21:03:10",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -2305,7 +2253,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/30 20:35:27",
+        "localTime": "2026/6/30 21:03:10",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -2385,7 +2333,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/30 20:35:27",
+        "localTime": "2026/6/30 21:03:10",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -2470,7 +2418,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/30 20:35:27",
+        "localTime": "2026/6/30 21:03:10",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -2548,7 +2496,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/30 20:35:27",
+        "localTime": "2026/6/30 21:03:10",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -2628,7 +2576,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/30 20:35:27",
+        "localTime": "2026/6/30 21:03:10",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -2706,7 +2654,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/30 20:35:27",
+        "localTime": "2026/6/30 21:03:10",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -2786,7 +2734,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/30 20:35:27",
+        "localTime": "2026/6/30 21:03:10",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -2864,7 +2812,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/30 20:35:27",
+        "localTime": "2026/6/30 21:03:10",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -2889,6 +2837,164 @@
       "lastStatus": "sent_confirmed",
       "lastEvidence": "facebook_platform_engagement_confirmed;comment_submitted;post_liked_or_reacted;account_followed;dm_sent_confirmed;share_repost_skipped_by_policy",
       "lastTouch": "2026-06-26T10:06:37.586Z"
+    },
+    {
+      "linkedinUrl": "https://uk.linkedin.com/company/go-outdoors-ltd",
+      "founded": "1969",
+      "headquarters": "Bury, Lancashire, United Kingdom",
+      "companyScale": "1,001-5,000 employees; major UK outdoor retail chain",
+      "coverage": "United Kingdom",
+      "mainBrands": "Camping equipment, outdoor clothing/footwear, cycling, fishing, caravanning, tents",
+      "salesChannel": "Stores and ecommerce",
+      "buyingCapability": "High; category buyer or JD Outdoors/GO Outdoors merchandising route",
+      "decisionMaker": "Camping equipment buyer, outdoor accessories category manager, vendor review contact",
+      "publicEmail": "",
+      "publicEmailStatus": "No public buyer email verified; use official contact page and LinkedIn category research.",
+      "contactPhone": "+44 330 008 1555",
+      "vendorPortal": "https://www.gooutdoors.co.uk/contact-us",
+      "linkedinCompany": "https://uk.linkedin.com/company/go-outdoors-ltd",
+      "contactNote": "Use official contact route and ask for camping/accessories buyer; validate any personal emails before use.",
+      "dataSources": [
+        "GO Outdoors LinkedIn",
+        "GO Outdoors public company/contact sources"
+      ],
+      "id": "google-customer-go-outdoors-instagram",
+      "name": "GO Outdoors",
+      "company": "GO Outdoors",
+      "country": "United Kingdom",
+      "countryEn": "United Kingdom",
+      "fitScore": 93,
+      "fitTier": "A+",
+      "marketScore": 4.5,
+      "marketStatus": "open",
+      "agencyState": "open",
+      "keyword": "outdoor retail chain",
+      "role": "Camping and outdoor accessories buyer.",
+      "background": "UK outdoor retailer with camping, tents, hiking, cycling, and outdoor equipment categories.",
+      "buyerPersona": "Camping and outdoor accessories buyer.",
+      "productCategory": "outdoor retail chain",
+      "businessModel": "Retail Chain",
+      "productFit": "FLEXTAIL portable pumps, outdoor power, camping lighting and compact camping accessories",
+      "opportunity": "UK outdoor retailer with camping, tents, hiking, cycling, and outdoor equipment categories.",
+      "linkedin_url": "https://uk.linkedin.com/company/go-outdoors-ltd",
+      "linkedin": "https://uk.linkedin.com/company/go-outdoors-ltd",
+      "contactEmail": "",
+      "website": "https://www.gooutdoors.co.uk/",
+      "evidenceUrl": "https://www.google.com/search?q=%22GO%20Outdoors%22%20%22outdoor%20retail%20chain%22%20%22United%20Kingdom%22%20buyer%20OR%20wholesale%20OR%20contact",
+      "query": "https://www.google.com/search?q=%22GO%20Outdoors%22%20%22outdoor%20retail%20chain%22%20%22United%20Kingdom%22%20buyer%20OR%20wholesale%20OR%20contact",
+      "source": "google_customer_discovery",
+      "identityStatus": "verified",
+      "partnershipStatus": "",
+      "doNotOutreach": false,
+      "automationStatus": "",
+      "partnerNote": "",
+      "sendStatus": "",
+      "workingTime": {
+        "dueNow": true,
+        "timeZone": "local-market",
+        "localTime": "2026/6/30 21:03:10",
+        "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
+      },
+      "platform": "instagram",
+      "platformUrl": "https://www.instagram.com/gooutdoors/",
+      "url": "https://www.instagram.com/gooutdoors/",
+      "action": "cooldown",
+      "reason": "7_day_no_repeat_touch",
+      "alternateChannels": {
+        "instagram": "https://www.instagram.com/gooutdoors/",
+        "facebook": "https://www.facebook.com/GOoutdoorsUK/",
+        "websiteContact": "https://www.gooutdoors.co.uk/contact-us"
+      },
+      "identitySource": "official website/social profile + Google background query",
+      "channelPriority": 1,
+      "targetRegion": "europe",
+      "targetRegionScore": 32,
+      "contactChannelScore": 17,
+      "dealProbabilityScore": 214,
+      "priorityScore": 214,
+      "lastStatus": "sent_confirmed",
+      "lastEvidence": "instagram_message_sent_confirmed_composer_cleared;instagram_post_opened;post_liked;comment_submitted;follow_already_active",
+      "lastTouch": "2026-06-30T13:05:04.429Z"
+    },
+    {
+      "linkedinUrl": "https://uk.linkedin.com/company/go-outdoors-ltd",
+      "founded": "1969",
+      "headquarters": "Bury, Lancashire, United Kingdom",
+      "companyScale": "1,001-5,000 employees; major UK outdoor retail chain",
+      "coverage": "United Kingdom",
+      "mainBrands": "Camping equipment, outdoor clothing/footwear, cycling, fishing, caravanning, tents",
+      "salesChannel": "Stores and ecommerce",
+      "buyingCapability": "High; category buyer or JD Outdoors/GO Outdoors merchandising route",
+      "decisionMaker": "Camping equipment buyer, outdoor accessories category manager, vendor review contact",
+      "publicEmail": "",
+      "publicEmailStatus": "No public buyer email verified; use official contact page and LinkedIn category research.",
+      "contactPhone": "+44 330 008 1555",
+      "vendorPortal": "https://www.gooutdoors.co.uk/contact-us",
+      "linkedinCompany": "https://uk.linkedin.com/company/go-outdoors-ltd",
+      "contactNote": "Use official contact route and ask for camping/accessories buyer; validate any personal emails before use.",
+      "dataSources": [
+        "GO Outdoors LinkedIn",
+        "GO Outdoors public company/contact sources"
+      ],
+      "id": "google-customer-go-outdoors-facebook",
+      "name": "GO Outdoors",
+      "company": "GO Outdoors",
+      "country": "United Kingdom",
+      "countryEn": "United Kingdom",
+      "fitScore": 93,
+      "fitTier": "A+",
+      "marketScore": 4.5,
+      "marketStatus": "open",
+      "agencyState": "open",
+      "keyword": "outdoor retail chain",
+      "role": "Camping and outdoor accessories buyer.",
+      "background": "UK outdoor retailer with camping, tents, hiking, cycling, and outdoor equipment categories.",
+      "buyerPersona": "Camping and outdoor accessories buyer.",
+      "productCategory": "outdoor retail chain",
+      "businessModel": "Retail Chain",
+      "productFit": "FLEXTAIL portable pumps, outdoor power, camping lighting and compact camping accessories",
+      "opportunity": "UK outdoor retailer with camping, tents, hiking, cycling, and outdoor equipment categories.",
+      "linkedin_url": "https://uk.linkedin.com/company/go-outdoors-ltd",
+      "linkedin": "https://uk.linkedin.com/company/go-outdoors-ltd",
+      "contactEmail": "",
+      "website": "https://www.gooutdoors.co.uk/",
+      "evidenceUrl": "https://www.google.com/search?q=%22GO%20Outdoors%22%20%22outdoor%20retail%20chain%22%20%22United%20Kingdom%22%20buyer%20OR%20wholesale%20OR%20contact",
+      "query": "https://www.google.com/search?q=%22GO%20Outdoors%22%20%22outdoor%20retail%20chain%22%20%22United%20Kingdom%22%20buyer%20OR%20wholesale%20OR%20contact",
+      "source": "google_customer_discovery",
+      "identityStatus": "verified",
+      "partnershipStatus": "",
+      "doNotOutreach": false,
+      "automationStatus": "",
+      "partnerNote": "",
+      "sendStatus": "",
+      "workingTime": {
+        "dueNow": true,
+        "timeZone": "local-market",
+        "localTime": "2026/6/30 21:03:10",
+        "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
+      },
+      "platform": "facebook",
+      "platformUrl": "https://www.facebook.com/GOoutdoorsUK/",
+      "url": "https://www.facebook.com/GOoutdoorsUK/",
+      "action": "cooldown",
+      "reason": "7_day_no_repeat_touch",
+      "alternateChannels": {
+        "instagram": "https://www.instagram.com/gooutdoors/",
+        "facebook": "https://www.facebook.com/GOoutdoorsUK/",
+        "websiteContact": "https://www.gooutdoors.co.uk/contact-us"
+      },
+      "invalidChannels": {},
+      "facebookStatus": "verified_official_page_candidate",
+      "identitySource": "official Facebook page candidate + official website + Google background query",
+      "channelPriority": 2,
+      "targetRegion": "europe",
+      "targetRegionScore": 32,
+      "contactChannelScore": 17,
+      "dealProbabilityScore": 214,
+      "priorityScore": 214,
+      "lastStatus": "send_unconfirmed",
+      "lastEvidence": "facebook_send_clicked_but_confirmation_missing",
+      "lastTouch": "2026-06-30T13:05:55.276Z"
     },
     {
       "linkedinUrl": "https://au.linkedin.com/company/anaconda-group-pty-ltd",
@@ -2945,7 +3051,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/30 20:35:27",
+        "localTime": "2026/6/30 21:03:10",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -3030,7 +3136,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/30 20:35:27",
+        "localTime": "2026/6/30 21:03:10",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -3108,7 +3214,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/6/30 20:35:27",
+        "localTime": "2026/6/30 21:03:10",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -3133,267 +3239,9 @@
       "lastStatus": "sent_confirmed",
       "lastEvidence": "facebook_message_sent_confirmed_composer_cleared;follow_not_available;like_not_available",
       "lastTouch": "2026-06-26T09:20:15.501Z"
-    },
-    {
-      "linkedinUrl": "https://au.linkedin.com/company/boating-camping-fishing",
-      "founded": "2005",
-      "headquarters": "Strathpine, Queensland, Australia",
-      "companyScale": "1,001-5,000 employees; largest outdoor retailer in Australia per company profile",
-      "coverage": "Australia",
-      "mainBrands": "Boating, camping, fishing and outdoor brands under Super Retail Group",
-      "salesChannel": "Stores and ecommerce; Super Retail Group trade partner processes",
-      "buyingCapability": "High; Super Retail Group trade partner route",
-      "decisionMaker": "Camping/outdoor accessories category manager or Super Retail Group trade partner contact",
-      "publicEmail": "",
-      "publicEmailStatus": "No public buyer email verified; use Super Retail Group trade partner/contact route.",
-      "contactPhone": "",
-      "vendorPortal": "https://www.superretailgroup.com.au/working-with-us/Trade/",
-      "linkedinCompany": "https://au.linkedin.com/company/boating-camping-fishing",
-      "contactNote": "Use Super Retail Group trade partner information; do not use generic AP emails for sales pitch.",
-      "dataSources": [
-        "BCF LinkedIn",
-        "Super Retail Group trade partner page"
-      ],
-      "id": "google-customer-bcf-instagram",
-      "name": "BCF",
-      "company": "BCF",
-      "country": "Australia",
-      "countryEn": "Australia",
-      "fitScore": 89,
-      "fitTier": "A",
-      "marketScore": 4.5,
-      "marketStatus": "open",
-      "agencyState": "open",
-      "keyword": "outdoor retail chain",
-      "role": "Camping or outdoor accessories buyer.",
-      "background": "Australian boating, camping, and fishing retailer with strong fit for compact outdoor power and camping accessories.",
-      "buyerPersona": "Camping or outdoor accessories buyer.",
-      "productCategory": "outdoor retail chain",
-      "businessModel": "Retail Chain",
-      "productFit": "FLEXTAIL portable pumps, outdoor power, camping lighting and compact camping accessories",
-      "opportunity": "Australian boating, camping, and fishing retailer with strong fit for compact outdoor power and camping accessories.",
-      "linkedin_url": "https://au.linkedin.com/company/boating-camping-fishing",
-      "linkedin": "https://au.linkedin.com/company/boating-camping-fishing",
-      "contactEmail": "",
-      "website": "https://www.bcf.com.au/",
-      "evidenceUrl": "https://www.google.com/search?q=%22BCF%22%20%22outdoor%20retail%20chain%22%20%22Australia%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "query": "https://www.google.com/search?q=%22BCF%22%20%22outdoor%20retail%20chain%22%20%22Australia%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "source": "google_customer_discovery",
-      "identityStatus": "verified",
-      "partnershipStatus": "",
-      "doNotOutreach": false,
-      "automationStatus": "",
-      "partnerNote": "",
-      "sendStatus": "",
-      "workingTime": {
-        "dueNow": true,
-        "timeZone": "local-market",
-        "localTime": "2026/6/30 20:35:27",
-        "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
-      },
-      "platform": "instagram",
-      "platformUrl": "https://www.instagram.com/bcf.australia/",
-      "url": "https://www.instagram.com/bcf.australia/",
-      "action": "cooldown",
-      "reason": "7_day_no_repeat_touch",
-      "alternateChannels": {
-        "instagram": "https://www.instagram.com/bcf.australia/",
-        "facebook": "https://www.facebook.com/BCFAustralia",
-        "websiteContact": "https://www.bcf.com.au/contact-us"
-      },
-      "identitySource": "official website/social profile + Google background query",
-      "channelPriority": 1,
-      "targetRegion": "oceania",
-      "targetRegionScore": 0,
-      "contactChannelScore": 17,
-      "dealProbabilityScore": 178,
-      "priorityScore": 178,
-      "lastStatus": "sent_confirmed",
-      "lastEvidence": "facebook_message_sent_confirmed_composer_cleared",
-      "lastTouch": "2026-06-26T06:11:43.204Z"
-    },
-    {
-      "linkedinUrl": "https://au.linkedin.com/company/boating-camping-fishing",
-      "founded": "2005",
-      "headquarters": "Strathpine, Queensland, Australia",
-      "companyScale": "1,001-5,000 employees; largest outdoor retailer in Australia per company profile",
-      "coverage": "Australia",
-      "mainBrands": "Boating, camping, fishing and outdoor brands under Super Retail Group",
-      "salesChannel": "Stores and ecommerce; Super Retail Group trade partner processes",
-      "buyingCapability": "High; Super Retail Group trade partner route",
-      "decisionMaker": "Camping/outdoor accessories category manager or Super Retail Group trade partner contact",
-      "publicEmail": "",
-      "publicEmailStatus": "No public buyer email verified; use Super Retail Group trade partner/contact route.",
-      "contactPhone": "",
-      "vendorPortal": "https://www.superretailgroup.com.au/working-with-us/Trade/",
-      "linkedinCompany": "https://au.linkedin.com/company/boating-camping-fishing",
-      "contactNote": "Use Super Retail Group trade partner information; do not use generic AP emails for sales pitch.",
-      "dataSources": [
-        "BCF LinkedIn",
-        "Super Retail Group trade partner page"
-      ],
-      "id": "google-customer-bcf-facebook",
-      "name": "BCF",
-      "company": "BCF",
-      "country": "Australia",
-      "countryEn": "Australia",
-      "fitScore": 89,
-      "fitTier": "A",
-      "marketScore": 4.5,
-      "marketStatus": "open",
-      "agencyState": "open",
-      "keyword": "outdoor retail chain",
-      "role": "Camping or outdoor accessories buyer.",
-      "background": "Australian boating, camping, and fishing retailer with strong fit for compact outdoor power and camping accessories.",
-      "buyerPersona": "Camping or outdoor accessories buyer.",
-      "productCategory": "outdoor retail chain",
-      "businessModel": "Retail Chain",
-      "productFit": "FLEXTAIL portable pumps, outdoor power, camping lighting and compact camping accessories",
-      "opportunity": "Australian boating, camping, and fishing retailer with strong fit for compact outdoor power and camping accessories.",
-      "linkedin_url": "https://au.linkedin.com/company/boating-camping-fishing",
-      "linkedin": "https://au.linkedin.com/company/boating-camping-fishing",
-      "contactEmail": "",
-      "website": "https://www.bcf.com.au/",
-      "evidenceUrl": "https://www.google.com/search?q=%22BCF%22%20%22outdoor%20retail%20chain%22%20%22Australia%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "query": "https://www.google.com/search?q=%22BCF%22%20%22outdoor%20retail%20chain%22%20%22Australia%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "source": "google_customer_discovery",
-      "identityStatus": "verified",
-      "partnershipStatus": "",
-      "doNotOutreach": false,
-      "automationStatus": "",
-      "partnerNote": "",
-      "sendStatus": "",
-      "workingTime": {
-        "dueNow": true,
-        "timeZone": "local-market",
-        "localTime": "2026/6/30 20:35:27",
-        "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
-      },
-      "platform": "facebook",
-      "platformUrl": "https://www.facebook.com/BCFAustralia",
-      "url": "https://www.facebook.com/BCFAustralia",
-      "action": "cooldown",
-      "reason": "7_day_no_repeat_touch",
-      "alternateChannels": {
-        "instagram": "https://www.instagram.com/bcf.australia/",
-        "facebook": "https://www.facebook.com/BCFAustralia",
-        "websiteContact": "https://www.bcf.com.au/contact-us"
-      },
-      "invalidChannels": {},
-      "facebookStatus": "verified_official_page_candidate",
-      "identitySource": "official Facebook page candidate + official website + Google background query",
-      "channelPriority": 2,
-      "targetRegion": "oceania",
-      "targetRegionScore": 0,
-      "contactChannelScore": 17,
-      "dealProbabilityScore": 178,
-      "priorityScore": 178,
-      "lastStatus": "sent_confirmed",
-      "lastEvidence": "facebook_message_sent_confirmed_composer_cleared",
-      "lastTouch": "2026-06-26T06:11:43.204Z"
     }
   ],
   "scheduledLater": [
-    {
-      "id": "verified-Instagram-ellisbrigham",
-      "name": "ellisbrigham",
-      "company": "Ellis Brigham UK (33K followers, since 1933)",
-      "platform": "instagram",
-      "country": "英国",
-      "countryEn": "United Kingdom",
-      "fitScore": 100,
-      "fitTier": "A",
-      "marketScore": 4.5,
-      "marketStatus": "可开拓",
-      "agencyState": "open",
-      "url": "https://www.instagram.com/ellisbrigham/",
-      "website": "",
-      "platformUrl": "https://www.instagram.com/ellisbrigham/",
-      "contactUrl": "",
-      "contactSearchUrl": "",
-      "emailFrom": "",
-      "websiteContactSubject": "",
-      "websiteContactMessage": "",
-      "websiteContactFlow": "",
-      "publicEmail": "",
-      "publicEmailStatus": "",
-      "contactPhone": "",
-      "vendorPortal": "",
-      "linkedinUrl": "",
-      "headquarters": "",
-      "founded": "",
-      "companyScale": "",
-      "dataSources": null,
-      "alternateChannels": null,
-      "lastStatus": "skipped",
-      "lastEvidence": "email_channel_found",
-      "lastTouch": "",
-      "action": "email_priority",
-      "reason": "email_channel_found",
-      "workingTime": {
-        "dueNow": false,
-        "timeZone": "Europe/London",
-        "localTime": "Tue 13:47",
-        "window": "outside_work_hours",
-        "nextBest": "Europe/London afternoon",
-        "weight": 0
-      },
-      "targetRegion": "europe",
-      "targetRegionScore": 32,
-      "contactChannelScore": 0,
-      "dealProbabilityScore": 204,
-      "priorityScore": 210
-    },
-    {
-      "id": "verified-Instagram-triedandtrout",
-      "name": "triedandtrout",
-      "company": "Tried & Trout Supply Co",
-      "platform": "instagram",
-      "country": "美国",
-      "countryEn": "United States",
-      "fitScore": 73,
-      "fitTier": "A",
-      "marketScore": 4.4,
-      "marketStatus": "可开拓",
-      "agencyState": "open",
-      "url": "https://www.instagram.com/triedandtroutsupply/",
-      "website": "",
-      "platformUrl": "https://www.instagram.com/triedandtroutsupply/",
-      "contactUrl": "",
-      "contactSearchUrl": "",
-      "emailFrom": "",
-      "websiteContactSubject": "",
-      "websiteContactMessage": "",
-      "websiteContactFlow": "",
-      "publicEmail": "",
-      "publicEmailStatus": "",
-      "contactPhone": "",
-      "vendorPortal": "",
-      "linkedinUrl": "",
-      "headquarters": "",
-      "founded": "",
-      "companyScale": "",
-      "dataSources": null,
-      "alternateChannels": null,
-      "lastStatus": "failed_open",
-      "lastEvidence": "profile_valid_no_message_button",
-      "lastTouch": "",
-      "action": "retry_or_alternate_channel",
-      "reason": "profile_valid_no_message_button",
-      "workingTime": {
-        "dueNow": false,
-        "timeZone": "America/New_York",
-        "localTime": "Tue 08:47",
-        "window": "outside_work_hours",
-        "nextBest": "America/New_York morning",
-        "weight": 0
-      },
-      "targetRegion": "americas",
-      "targetRegionScore": 30,
-      "contactChannelScore": 0,
-      "dealProbabilityScore": 174,
-      "priorityScore": 174
-    },
     {
       "id": "verified-Instagram-anacondastores",
       "name": "anacondastores",
@@ -3433,7 +3281,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Australia/Sydney",
-        "localTime": "Tue 22:47",
+        "localTime": "Tue 23:06",
         "window": "outside_work_hours",
         "nextBest": "Australia/Sydney morning",
         "weight": 0
@@ -3483,7 +3331,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Pacific/Auckland",
-        "localTime": "Wed 00:47",
+        "localTime": "Wed 01:06",
         "window": "outside_work_hours",
         "nextBest": "Pacific/Auckland morning",
         "weight": 0
@@ -3533,7 +3381,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Pacific/Auckland",
-        "localTime": "Wed 00:47",
+        "localTime": "Wed 01:06",
         "window": "outside_work_hours",
         "nextBest": "Pacific/Auckland morning",
         "weight": 0
@@ -3565,10 +3413,11 @@
       "Target-region priority favors Southeast Asia first, then Europe, then the Americas; other regions remain eligible but lower priority."
     ],
     "byAction": {
-      "skip_exclusive_agency": 1,
-      "email_priority": 4,
+      "develop": 1,
       "cooldown": 10,
-      "retry_or_alternate_channel": 1
+      "retry_or_alternate_channel": 1,
+      "skip_exclusive_agency": 1,
+      "email_priority": 3
     },
     "keywordOpportunities": [
       {

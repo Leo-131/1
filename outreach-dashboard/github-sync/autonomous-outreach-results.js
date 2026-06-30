@@ -465,5 +465,60 @@ window.AUTONOMOUS_OUTREACH_RESULTS = [
     "evidence": "instagram_message_sent_confirmed_composer_cleared;instagram_post_opened;post_like_not_available_or_already_active;comment_box_not_available;follow_already_active",
     "draft": "Hi Cotswold Outdoor team — Leo from FLEXTAIL here. We're the top-selling ultralight outdoor electric brand on Amazon, with portable pumps, camping power, and lighting that fit your hiking and camping range. 36+ new SKUs are planned for 2026. Could you point me to the right category buyer for a brief brand intro?",
     "subject": ""
+  },
+  {
+    "task_id": "google-customer-go-outdoors-instagram",
+    "approval_version": 1,
+    "status": "sent_confirmed",
+    "agent": "codex-chrome-extension",
+    "timestamp": "2026-06-30T13:05:04.429Z",
+    "target_url": "https://www.instagram.com/gooutdoors/",
+    "evidence": "instagram_message_sent_confirmed_composer_cleared;instagram_post_opened;post_liked;comment_submitted;follow_already_active",
+    "draft": "Hi GO Outdoors team — I'm Leo from FLEXTAIL, the top-selling ultralight outdoor electrics brand on Amazon. Your camping and caravanning ranges are a strong fit for our portable pumps, lighting, and compact power gear, with 36+ new SKUs coming for 2026. Could you connect me with the right camping accessories buyer for a short intro call?",
+    "subject": ""
+  },
+  {
+    "task_id": "google-customer-go-outdoors-facebook",
+    "approval_version": 1,
+    "status": "send_unconfirmed",
+    "agent": "codex-chrome-extension",
+    "timestamp": "2026-06-30T13:05:55.276Z",
+    "target_url": "https://www.facebook.com/GOoutdoorsUK/",
+    "evidence": "facebook_send_clicked_but_confirmation_missing",
+    "draft": "Hi GO Outdoors team — I'm Leo with FLEXTAIL, the top-selling ultralight outdoor electrics brand on Amazon. Your camping and tent range is a strong fit for our portable pumps, camping power, and lighting. Could you share the best email or WhatsApp for your camping/accessories buyer? I'll send our brand intro, line sheet, and 2026 SKU roadmap there.",
+    "subject": ""
+  },
+  {
+    "task_id": "google-customer-go-outdoors-website-contact",
+    "approval_version": 1,
+    "status": "approval_pending",
+    "agent": "codex-chrome-extension",
+    "timestamp": "2026-06-30T13:06:07.530Z",
+    "target_url": "https://www.gooutdoors.co.uk/contact-us",
+    "evidence": "contact_entry_verified;mailto_detected;initial_page_verified;website_contact_form_fields_prepared;marketing_attachment_missing",
+    "draft": "Dear GO Outdoors Team,\n\nNice to e-meet you.\nI am Leo, from Flextail & Vollyc.\n\nFlextail is our first and core brand, specializing in ultralight electric products for outdoor, travel, and home use. The brand is currently Top 1 on Amazon, with strong global sell-through and a proven product-market fit.\nVollyc, our second brand, focuses on 3C electronics, targeting practical, high-rotation consumer use cases.\n\nFrom our perspective, your platform and positioning are highly aligned with Flextail’s product philosophy, especially in lightweight outdoor and travel-oriented electrics.\n\nWe have already contacted with your team, and we are now actively exploring opportunities in other regions.\nAttached, you will find a brief introduction to our brands and current product catalog for your reference.\n\nLooking ahead, we are planning to launch over 36 new SKUs in 2026, covering multiple usage scenarios and price tiers, which we believe could be of interest to your assortment strategy.\n\nIf you are available, I would greatly appreciate the opportunity to arrange a short introductory video meeting to present our brands and discuss potential collaboration opportunities.\n\nThank you for your time and consideration. I look forward to your reply.\n\n[Flextail.com](https://www.flextail.com/), [vollyc.com](https://vollyc.com/)\n\n[Sincerely](https://wa.me/8617321028184)\n[Best Regard](https://wa.me/8617321028184)\n[Leo Liu](https://wa.me/8617321028184)\n[Sales](https://wa.me/8617321028184) [& Operations Director](https://wa.me/8617321028184)\n[Brand & ODM Department](https://wa.me/8617321028184)\n[Tel/whatsapp:  +86 17321028184](https://wa.me/8617321028184)\n\n[Email:  Leo@flextailgear.com](https://wa.me/8617321028184)\n[SHANGHAI FLEXTAIL TECHNOLOGY CO.,LTD.](https://wa.me/8617321028184)\n[Room103, Building No.6, No.1 Yanjiaqiao, Pudong District, ShangHai, China](https://wa.me/8617321028184)",
+    "subject": "Flextail & Vollyc | Lightweight Outdoor & 3C Electronics – Potential Cooperation"
+  },
+  {
+    "task_id": "google-customer-sail-outdoors-website-contact",
+    "approval_version": 1,
+    "status": "approval_pending",
+    "agent": "codex-chrome-extension",
+    "timestamp": "2026-06-30T13:06:12.565Z",
+    "target_url": "https://www.sail.ca/en/contact-us",
+    "evidence": "website_contact_entry_not_verified;no_contact_entry_control",
+    "draft": "Dear Sail Outdoors Team,\n\nNice to e-meet you.\nI am Leo, from Flextail & Vollyc.\n\nFlextail is our first and core brand, specializing in ultralight electric products for outdoor, travel, and home use. The brand is currently Top 1 on Amazon, with strong global sell-through and a proven product-market fit.\nVollyc, our second brand, focuses on 3C electronics, targeting practical, high-rotation consumer use cases.\n\nFrom our perspective, your platform and positioning are highly aligned with Flextail’s product philosophy, especially in lightweight outdoor and travel-oriented electrics.\n\nWe have already contacted with your team, and we are now actively exploring opportunities in other regions.\nAttached, you will find a brief introduction to our brands and current product catalog for your reference.\n\nLooking ahead, we are planning to launch over 36 new SKUs in 2026, covering multiple usage scenarios and price tiers, which we believe could be of interest to your assortment strategy.\n\nIf you are available, I would greatly appreciate the opportunity to arrange a short introductory video meeting to present our brands and discuss potential collaboration opportunities.\n\nThank you for your time and consideration. I look forward to your reply.\n\n[Flextail.com](https://www.flextail.com/), [vollyc.com](https://vollyc.com/)\n\n[Sincerely](https://wa.me/8617321028184)\n[Best Regard](https://wa.me/8617321028184)\n[Leo Liu](https://wa.me/8617321028184)\n[Sales](https://wa.me/8617321028184) [& Operations Director](https://wa.me/8617321028184)\n[Brand & ODM Department](https://wa.me/8617321028184)\n[Tel/whatsapp:  +86 17321028184](https://wa.me/8617321028184)\n\n[Email:  Leo@flextailgear.com](https://wa.me/8617321028184)\n[SHANGHAI FLEXTAIL TECHNOLOGY CO.,LTD.](https://wa.me/8617321028184)\n[Room103, Building No.6, No.1 Yanjiaqiao, Pudong District, ShangHai, China](https://wa.me/8617321028184)",
+    "subject": "Flextail & Vollyc | Lightweight Outdoor & 3C Electronics – Potential Cooperation"
+  },
+  {
+    "task_id": "verified-Instagram-ellisbrigham",
+    "approval_version": 1,
+    "status": "approval_pending",
+    "agent": "codex-chrome-extension",
+    "timestamp": "2026-06-30T13:06:20.612Z",
+    "target_url": "https://www.instagram.com/ellisbrigham/",
+    "evidence": "website_contact_entry_not_verified;no_contact_entry_control",
+    "draft": "Dear Ellis Brigham UK (33K followers, since 1933) Team,\n\nNice to e-meet you.\nI am Leo, from Flextail & Vollyc.\n\nFlextail is our first and core brand, specializing in ultralight electric products for outdoor, travel, and home use. The brand is currently Top 1 on Amazon, with strong global sell-through and a proven product-market fit.\nVollyc, our second brand, focuses on 3C electronics, targeting practical, high-rotation consumer use cases.\n\nFrom our perspective, your platform and positioning are highly aligned with Flextail’s product philosophy, especially in lightweight outdoor and travel-oriented electrics.\n\nWe have already contacted with your team, and we are now actively exploring opportunities in other regions.\nAttached, you will find a brief introduction to our brands and current product catalog for your reference.\n\nLooking ahead, we are planning to launch over 36 new SKUs in 2026, covering multiple usage scenarios and price tiers, which we believe could be of interest to your assortment strategy.\n\nIf you are available, I would greatly appreciate the opportunity to arrange a short introductory video meeting to present our brands and discuss potential collaboration opportunities.\n\nThank you for your time and consideration. I look forward to your reply.\n\n[Flextail.com](https://www.flextail.com/), [vollyc.com](https://vollyc.com/)\n\n[Sincerely](https://wa.me/8617321028184)\n[Best Regard](https://wa.me/8617321028184)\n[Leo Liu](https://wa.me/8617321028184)\n[Sales](https://wa.me/8617321028184) [& Operations Director](https://wa.me/8617321028184)\n[Brand & ODM Department](https://wa.me/8617321028184)\n[Tel/whatsapp:  +86 17321028184](https://wa.me/8617321028184)\n\n[Email:  Leo@flextailgear.com](https://wa.me/8617321028184)\n[SHANGHAI FLEXTAIL TECHNOLOGY CO.,LTD.](https://wa.me/8617321028184)\n[Room103, Building No.6, No.1 Yanjiaqiao, Pudong District, ShangHai, China](https://wa.me/8617321028184)\n",
+    "subject": "Flextail & Vollyc | Lightweight Outdoor & 3C Electronics – Potential Cooperation"
   }
 ];
