@@ -443,5 +443,16 @@ window.AUTONOMOUS_OUTREACH_RESULTS = [
     "evidence": "instagram_message_button_clicked_composer_not_found",
     "draft": "Hi MEC team — Leo from FLEXTAIL here. We make ultralight electric camping gear (portable pumps, outdoor power, lighting), currently top-selling in our category on Amazon. Our lineup fits naturally with your camping assortment, with 36+ new SKUs coming for 2026. Could you connect me with the right camping accessories category buyer for a short intro call?",
     "subject": ""
+  },
+  {
+    "task_id": "google-customer-mec-instagram",
+    "approval_version": 1,
+    "status": "sent_confirmed",
+    "agent": "codex-chrome-extension",
+    "timestamp": "2026-06-30T12:42:01.936Z",
+    "target_url": "https://www.instagram.com/mec/",
+    "evidence": "instagram_message_sent_confirmed_composer_cleared;instagram_post_opened;post_like_not_available_or_already_active;comment_box_not_available;follow_clicked",
+    "draft": "Hi MEC team, I'm Leo with FLEXTAIL — the top-selling ultralight outdoor electrics brand on Amazon. Our portable pumps, camping power, and lighting fit your camping and travel assortment well, with 36+ new SKUs coming for 2026. Could you connect me with your camping equipment category buyer for a short intro call?",
+    "subject": ""
   }
 ];

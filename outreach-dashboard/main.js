@@ -207,6 +207,7 @@ function blockingAutomationResultFor(item) {
   return results
     .filter((result) => result && blocking.has(result.status))
     .filter((result) => result.status !== 'website_contact_ready' || websiteContactResultIsVerified(result))
+    .filter((result) => result.status !== 'failed_open' || failedOpenResultShouldBlockRetry(result))
     .find((result) => {
       const resultExactKeys = automationExactKeys(result);
       if (setsIntersect(exactKeys, resultExactKeys)) return true;
@@ -214,6 +215,28 @@ function blockingAutomationResultFor(item) {
       if (!itemPlatform || !resultPlatform || itemPlatform !== resultPlatform) return false;
       return setsIntersect(companyKeys, automationCompanyKeys(result));
     }) || null;
+}
+
+function failedOpenResultShouldBlockRetry(result = {}) {
+  const evidence = String(result.evidence || '').toLowerCase();
+  const recoverable = [
+    'message_button_clicked_composer_not_found',
+    'composer_not_found',
+    'chrome_target_not_found',
+    'cdp timeout',
+    'contact_page_open_failed',
+    'no_contact_entry_control',
+    'website_contact_entry_not_verified',
+  ];
+  if (recoverable.some(fragment => evidence.includes(fragment))) return false;
+  const hardFailures = [
+    'identity_mismatch',
+    'unavailable_profile_page',
+    'page isn',
+    'wrong or unmatched account',
+  ];
+  if (hardFailures.some(fragment => evidence.includes(fragment))) return true;
+  return true;
 }
 
 function websiteContactResultIsVerified(result = {}) {

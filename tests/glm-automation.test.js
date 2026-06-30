@@ -239,6 +239,17 @@ test('Codex Chrome execution can auto-send approved social outreach with confirm
   assert.ok(chromeDriverSource.includes("'Input.insertText'"));
   assert.ok(chromeDriverSource.includes('sendButtonExpression'));
   assert.ok(chromeDriverSource.includes('document.elementFromPoint'));
+  assert.ok(chromeDriverSource.includes('profileMessageButtonExpression'));
+  assert.ok(chromeDriverSource.includes("closest('nav,[role=\"navigation\"]')"));
+  assert.ok(chromeDriverSource.includes('closeBlockingOverlayExpression'));
+  assert.ok(chromeDriverSource.includes('submitInstagramPostEngagement'));
+  assert.ok(chromeDriverSource.includes('instagramPostTileExpression'));
+  assert.ok(chromeDriverSource.includes('instagramCommentActionExpression'));
+  assert.ok(chromeDriverSource.includes('instagram_post_opened'));
+  assert.ok(chromeDriverSource.includes('post_liked'));
+  assert.ok(chromeDriverSource.includes('comment_submitted'));
+  assert.ok(chromeDriverSource.includes("return `${kind}_already_active`"));
+  assert.ok(chromeDriverSource.includes('followers|following|mutualonly'));
   assert.ok(chromeDriverSource.includes('conversationContextExpression'));
   assert.ok(chromeDriverSource.includes('unavailableProfileExpression'));
   assert.ok(chromeDriverSource.includes("sendStatus: 'failed_open'"));
@@ -265,6 +276,9 @@ test('daily execution is serial and can process a priority batch per run', () =>
 
 test('daily execution duplicate blocking is channel-aware', () => {
   assert.ok(mainSource.includes('function canonicalExactAutomationKey'));
+  assert.ok(mainSource.includes('function failedOpenResultShouldBlockRetry'));
+  assert.ok(mainSource.includes('message_button_clicked_composer_not_found'));
+  assert.ok(mainSource.includes("result.status !== 'failed_open' || failedOpenResultShouldBlockRetry(result)"));
   assert.ok(mainSource.includes('function automationPlatformFor'));
   assert.ok(mainSource.includes('const exactKeys = automationExactKeys(item)'));
   assert.ok(mainSource.includes('const itemPlatform = automationPlatformFor(item)'));

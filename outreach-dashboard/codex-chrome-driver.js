@@ -150,6 +150,90 @@ function buttonExpression(keywords) {
   })()`;
 }
 
+function closeBlockingOverlayExpression(platform) {
+  return `(() => {
+    const platform = ${JSON.stringify(platform)};
+    const visible = (el) => {
+      const rect = el && el.getBoundingClientRect && el.getBoundingClientRect();
+      return Boolean(rect && rect.width > 0 && rect.height > 0);
+    };
+    const dialog = Array.from(document.querySelectorAll('[role="dialog"],[aria-modal="true"]'))
+      .filter(visible)
+      .map((el) => ({
+        el,
+        text: String(el.innerText || el.textContent || '').replace(/\\s+/g, ' ').trim().toLowerCase(),
+        rect: el.getBoundingClientRect(),
+      }))
+      .filter(item => item.rect.width > 260 && item.rect.height > 220)
+      .sort((a, b) => b.rect.width * b.rect.height - a.rect.width * a.rect.height)[0];
+    if (!dialog) return JSON.stringify({ clicked: false, reason: 'no_overlay' });
+    const looksLikeInbox = platform === 'instagram'
+      && (dialog.text.includes('message') || dialog.text.includes('\\u6d88\\u606f'))
+      && (dialog.text.includes('new message') || dialog.text.includes('\\u65b0\\u6d88\\u606f') || dialog.text.includes('\\u5173\\u95ed') || dialog.rect.left > window.innerWidth * 0.35);
+    if (!looksLikeInbox) return JSON.stringify({ clicked: false, reason: 'overlay_not_blocking' });
+    const closeWords = ['close', '\\u5173\\u95ed'];
+    const controls = Array.from(dialog.el.querySelectorAll('button,div[role="button"],span[role="button"],svg[aria-label]'))
+      .filter(visible)
+      .map((el) => {
+        const rect = el.getBoundingClientRect();
+        const text = String(el.innerText || el.textContent || el.getAttribute('aria-label') || '').replace(/\\s+/g, ' ').trim().toLowerCase();
+        return { el, text, x: rect.left + rect.width / 2, y: rect.top + rect.height / 2 };
+      });
+    const byLabel = controls.find(item => closeWords.some(word => item.text.includes(word)));
+    const topRight = controls
+      .filter(item => item.x > dialog.rect.left + dialog.rect.width * 0.7 && item.y < dialog.rect.top + 90)
+      .sort((a, b) => b.x - a.x || a.y - b.y)[0];
+    const button = byLabel || topRight;
+    if (!button) return JSON.stringify({ clicked: false, reason: 'close_button_not_found' });
+    button.el.click();
+    return JSON.stringify({ clicked: true, text: button.text || 'top_right_close' });
+  })()`;
+}
+
+function profileMessageButtonExpression(platform, keywords) {
+  return `(() => {
+    const platform = ${JSON.stringify(platform)};
+    const keywords = ${JSON.stringify(keywords)};
+    const visible = (el) => {
+      const rect = el && el.getBoundingClientRect && el.getBoundingClientRect();
+      return Boolean(rect && rect.width > 0 && rect.height > 0 && rect.bottom > 0 && rect.top < window.innerHeight);
+    };
+    const controls = Array.from(document.querySelectorAll('main button,main a,main div[role="button"],main span[role="button"],header button,header a,header div[role="button"],section button,section a,section div[role="button"],article button,article a,article div[role="button"]'))
+      .filter(visible)
+      .map((el) => {
+        const rect = el.getBoundingClientRect();
+        const text = String(el.innerText || el.textContent || el.getAttribute('aria-label') || '').replace(/\\s+/g, ' ').trim().toLowerCase();
+        const inNav = Boolean(el.closest('nav,[role="navigation"]'));
+        const inDialog = Boolean(el.closest('[role="dialog"],[aria-modal="true"]'));
+        return {
+          el,
+          text,
+          x: Math.round(rect.left + rect.width / 2),
+          y: Math.round(rect.top + rect.height / 2),
+          width: Math.round(rect.width),
+          height: Math.round(rect.height),
+          inNav,
+          inDialog,
+          disabled: Boolean(el.disabled || el.getAttribute('aria-disabled') === 'true')
+        };
+      })
+      .filter(item => !item.inNav && !item.inDialog && !item.disabled)
+      .filter(item => keywords.some(keyword => item.text.includes(keyword)))
+      .filter(item => item.width >= 60 && item.height >= 24);
+    const profileZone = controls.filter(item => item.x > 120 && item.y > 80 && item.y < Math.min(window.innerHeight - 80, 720));
+    const preferred = (profileZone.length ? profileZone : controls)
+      .sort((a, b) => Math.abs(a.y - 420) - Math.abs(b.y - 420) || b.width - a.width)[0];
+    if (!preferred) return JSON.stringify(null);
+    return JSON.stringify({
+      text: preferred.text,
+      x: preferred.x,
+      y: preferred.y,
+      visible: true,
+      source: platform + '_profile_message_button'
+    });
+  })()`;
+}
+
 function composerExpression(platform) {
   return `(() => {
     const platform = ${JSON.stringify(platform)};
@@ -210,6 +294,78 @@ function dismissDialogExpression() {
       return JSON.stringify({ clicked: true, text: button.text });
     }
     return JSON.stringify({ clicked: false });
+  })()`;
+}
+
+function instagramPostTileExpression() {
+  return `(() => {
+    const visible = (el) => {
+      const rect = el && el.getBoundingClientRect && el.getBoundingClientRect();
+      return Boolean(rect && rect.width > 80 && rect.height > 80 && rect.bottom > 0 && rect.top < window.innerHeight);
+    };
+    const links = Array.from(document.querySelectorAll('main a[href*="/p/"],main a[href*="/reel/"],main a[href*="/tv/"]'))
+      .filter(visible)
+      .map((el) => {
+        const rect = el.getBoundingClientRect();
+        return {
+          x: Math.round(rect.left + rect.width / 2),
+          y: Math.round(rect.top + rect.height / 2),
+          href: el.href || '',
+          visible: true,
+        };
+      })
+      .sort((a, b) => a.y - b.y || a.x - b.x);
+    return JSON.stringify(links[0] || null);
+  })()`;
+}
+
+function instagramPostLikeButtonExpression() {
+  return `(() => {
+    const visible = (el) => {
+      const rect = el && el.getBoundingClientRect && el.getBoundingClientRect();
+      return Boolean(rect && rect.width > 0 && rect.height > 0);
+    };
+    const dialog = Array.from(document.querySelectorAll('[role="dialog"],[aria-modal="true"],article')).filter(visible)[0] || document;
+    const controls = Array.from(dialog.querySelectorAll('button,div[role="button"],span[role="button"],svg[aria-label]'))
+      .filter(visible)
+      .map((el) => {
+        const rect = el.getBoundingClientRect();
+        const text = String(el.innerText || el.textContent || el.getAttribute('aria-label') || '').replace(/\\s+/g, ' ').trim().toLowerCase();
+        return {
+          text,
+          x: Math.round(rect.left + rect.width / 2),
+          y: Math.round(rect.top + rect.height / 2),
+          visible: true,
+          disabled: Boolean(el.disabled || el.getAttribute('aria-disabled') === 'true')
+        };
+      })
+      .filter(item => !item.disabled);
+    const positive = ['like', '\\u8d5e', '\\u559c\\u6b22'];
+    const negative = ['unlike', '\\u53d6\\u6d88\\u8d5e', '\\u5df2\\u8d5e'];
+    const button = controls.find(item => positive.some(word => item.text === word || item.text.includes(word)) && !negative.some(word => item.text.includes(word)));
+    return JSON.stringify(button || null);
+  })()`;
+}
+
+function instagramPostCloseExpression() {
+  return `(() => {
+    const visible = (el) => {
+      const rect = el && el.getBoundingClientRect && el.getBoundingClientRect();
+      return Boolean(rect && rect.width > 0 && rect.height > 0);
+    };
+    const closeWords = ['close', '\\u5173\\u95ed'];
+    const controls = Array.from(document.querySelectorAll('[role="dialog"] button,[aria-modal="true"] button,button,div[role="button"],svg[aria-label]'))
+      .filter(visible)
+      .map((el) => {
+        const rect = el.getBoundingClientRect();
+        const text = String(el.innerText || el.textContent || el.getAttribute('aria-label') || '').replace(/\\s+/g, ' ').trim().toLowerCase();
+        return { el, text, x: rect.left + rect.width / 2, y: rect.top + rect.height / 2 };
+      });
+    const button = controls.find(item => closeWords.some(word => item.text.includes(word)))
+      || controls.filter(item => item.x > window.innerWidth - 120 && item.y < 120).sort((a, b) => b.x - a.x || a.y - b.y)[0];
+    if (!button) return JSON.stringify({ clicked: false });
+    button.el.click();
+    return JSON.stringify({ clicked: true, text: button.text || 'top_right_close' });
   })()`;
 }
 
@@ -292,11 +448,11 @@ function identityCheckExpression(expectedCompany, targetUrl) {
 
 function sideEffectButtonExpression(kind, platform) {
   const keywords = kind === 'follow'
-    ? ['follow', '\\u5173\\u6ce8']
-    : ['like', '\\u8d5e', '\\u559c\\u6b22', '\\u7559\\u4e0b\\u5fc3\\u60c5'];
+    ? ['follow', '\u5173\u6ce8']
+    : ['like', '\u8d5e', '\u559c\u6b22', '\u7559\u4e0b\u5fc3\u60c5'];
   const negative = kind === 'follow'
-    ? ['following', '\\u5df2\\u5173\\u6ce8']
-    : ['unlike', 'share', 'forward', 'repost', '\\u5df2\\u8d5e', '\\u53d6\\u6d88\\u8d5e', '\\u5206\\u4eab', '\\u8f6c\\u53d1', '\\u53d1\\u9001\\u7ed9\\u597d\\u53cb'];
+    ? ['following', '\u5df2\u5173\u6ce8']
+    : ['unlike', 'share', 'forward', 'repost', '\u5df2\u8d5e', '\u53d6\u6d88\u8d5e', '\u5206\u4eab', '\u8f6c\u53d1', '\u53d1\u9001\u7ed9\u597d\u53cb'];
   return `(() => {
     const keywords = ${JSON.stringify(keywords)};
     const negative = ${JSON.stringify(negative)};
@@ -305,20 +461,35 @@ function sideEffectButtonExpression(kind, platform) {
       const text = String(el.innerText || el.textContent || el.getAttribute('aria-label') || '').replace(/\\s+/g, ' ').trim().toLowerCase();
       return {
         text,
+        tag: el.tagName,
+        href: el.href || '',
         x: Math.round(rect.left + rect.width / 2),
         y: Math.round(rect.top + rect.height / 2),
+        width: Math.round(rect.width),
+        height: Math.round(rect.height),
         visible: rect.width > 0 && rect.height > 0,
         disabled: Boolean(el.disabled || el.getAttribute('aria-disabled') === 'true')
       };
     }).filter(item => item.visible && !item.disabled);
-    const exact = controls.find(item => keywords.some(keyword => item.text === keyword) && !negative.some(word => item.text.includes(word)));
-    const found = exact || controls.find(item => keywords.some(keyword => item.text.includes(keyword)) && !negative.some(word => item.text.includes(word)));
+    const alreadyActive = controls.find(item => negative.some(word => item.text.includes(word)));
+    if (alreadyActive) return JSON.stringify({ alreadyActive: true, text: alreadyActive.text });
+    const candidates = controls
+      .filter(item => keywords.some(keyword => item.text === keyword || item.text.includes(keyword)) && !negative.some(word => item.text.includes(word)))
+      .filter(item => {
+        if (kind !== 'follow') return true;
+        if (item.tag === 'A' && /followers|following|mutualonly|\\/$|#$/.test(item.href.toLowerCase())) return false;
+        if (/\\d/.test(item.text)) return false;
+        return item.width >= 60 && item.height >= 24;
+      });
+    const exact = candidates.find(item => keywords.some(keyword => item.text === keyword));
+    const found = exact || candidates[0];
     return JSON.stringify(found || null);
   })()`;
 }
 
 async function clickOptionalAction(tab, kind, platform) {
   const button = await evaluateJson(tab, sideEffectButtonExpression(kind, platform), 3000).catch(() => null);
+  if (button && button.alreadyActive) return `${kind}_already_active`;
   if (!button || !Number.isFinite(button.x) || !Number.isFinite(button.y)) {
     return `${kind}_not_available`;
   }
@@ -336,7 +507,9 @@ function commentBoxExpression() {
     const box = Array.from(document.querySelectorAll('[contenteditable="true"],[role="textbox"],textarea'))
       .find((el) => {
         const label = String(el.getAttribute('aria-label') || '').toLowerCase();
-        return label.includes('comment') || label.includes('\\u5199\\u8bc4\\u8bba') || label.includes('\\u53d1\\u8868\\u8bc4\\u8bba');
+        const placeholder = String(el.getAttribute('placeholder') || '').toLowerCase();
+        const text = [label, placeholder, String(el.innerText || el.textContent || '')].join(' ');
+        return text.includes('comment') || text.includes('\\u5199\\u8bc4\\u8bba') || text.includes('\\u53d1\\u8868\\u8bc4\\u8bba') || text.includes('\\u6dfb\\u52a0\\u8bc4\\u8bba');
       });
     if (!box) return JSON.stringify(null);
     if (!visible(box)) box.scrollIntoView({ block: 'center' });
@@ -347,6 +520,31 @@ function commentBoxExpression() {
       visible: rect.width > 0 && rect.height > 0,
       label: String(box.getAttribute('aria-label') || '')
     });
+  })()`;
+}
+
+function instagramCommentActionExpression() {
+  return `(() => {
+    const visible = (el) => {
+      const rect = el && el.getBoundingClientRect && el.getBoundingClientRect();
+      return Boolean(rect && rect.width > 0 && rect.height > 0);
+    };
+    const controls = Array.from(document.querySelectorAll('[role="dialog"] button,[aria-modal="true"] button,article button,button,div[role="button"],span[role="button"],svg[aria-label]'))
+      .filter(visible)
+      .map((el) => {
+        const rect = el.getBoundingClientRect();
+        const text = String(el.innerText || el.textContent || el.getAttribute('aria-label') || '').replace(/\\s+/g, ' ').trim().toLowerCase();
+        return {
+          text,
+          x: Math.round(rect.left + rect.width / 2),
+          y: Math.round(rect.top + rect.height / 2),
+          visible: true,
+          disabled: Boolean(el.disabled || el.getAttribute('aria-disabled') === 'true')
+        };
+      })
+      .filter(item => !item.disabled);
+    const button = controls.find(item => item.text.includes('comment') || item.text.includes('\\u8bc4\\u8bba'));
+    return JSON.stringify(button || null);
   })()`;
 }
 
@@ -362,6 +560,56 @@ async function submitOptionalComment(tab, text) {
   await pressEnter(tab);
   await sleep(1200);
   return 'comment_submitted';
+}
+
+async function submitInstagramPostEngagement(tab, text) {
+  const evidence = [];
+  const tile = await evaluateJson(tab, instagramPostTileExpression(), 5000).catch(() => null);
+  if (!tile || !Number.isFinite(tile.x) || !Number.isFinite(tile.y)) {
+    return 'instagram_post_not_available';
+  }
+  await clickAt(tab, tile.x, tile.y);
+  await sleep(1800);
+  evidence.push('instagram_post_opened');
+
+  const like = await evaluateJson(tab, instagramPostLikeButtonExpression(), 3000).catch(() => null);
+  if (like && Number.isFinite(like.x) && Number.isFinite(like.y)) {
+    await clickAt(tab, like.x, like.y);
+    await sleep(700);
+    evidence.push('post_liked');
+  } else {
+    evidence.push('post_like_not_available_or_already_active');
+  }
+
+  const comment = String(text || '').trim();
+  if (comment) {
+    let box = await evaluateJson(tab, commentBoxExpression(), 5000).catch(() => null);
+    if (!box || !Number.isFinite(box.x) || !Number.isFinite(box.y)) {
+      const action = await evaluateJson(tab, instagramCommentActionExpression(), 3000).catch(() => null);
+      if (action && Number.isFinite(action.x) && Number.isFinite(action.y)) {
+        await clickAt(tab, action.x, action.y);
+        await sleep(900);
+        box = await evaluateJson(tab, commentBoxExpression(), 5000).catch(() => null);
+      }
+    }
+    if (box && Number.isFinite(box.x) && Number.isFinite(box.y)) {
+      await clickAt(tab, box.x, box.y);
+      await sleep(500);
+      await cdp(tab.webSocketDebuggerUrl, 'Input.insertText', { text: comment }, 5000);
+      await sleep(300);
+      await pressEnter(tab);
+      await sleep(1200);
+      evidence.push('comment_submitted');
+    } else {
+      evidence.push('comment_box_not_available');
+    }
+  } else {
+    evidence.push('comment_not_configured');
+  }
+
+  await evaluateJson(tab, instagramPostCloseExpression(), 2500).catch(() => null);
+  await sleep(800);
+  return evidence.join(';');
 }
 
 function conversationContextExpression() {
@@ -431,18 +679,28 @@ async function ensureComposerOpen(tab, port, platform) {
   let composer = await waitForJson(tab, composerExpression(platform), item => item && item.visible, 1200, 300);
   if (composer && Number.isFinite(composer.x)) return composer;
   await evaluateJson(tab, dismissDialogExpression(), 2000).catch(() => null);
+  await evaluateJson(tab, closeBlockingOverlayExpression(platform), 2500).catch(() => null);
+  await sleep(400);
 
   const keywordsByPlatform = {
-    instagram: ['message', '\\u53d1\\u6d88\\u606f', '\\u53d1\\u9001\\u6d88\\u606f'],
-    facebook: ['message', 'send message', 'messenger', '\\u53d1\\u6d88\\u606f', '\\u53d1\\u9001\\u6d88\\u606f', '\\u6d88\\u606f'],
-    linkedin: ['message', '\\u53d1\\u6d88\\u606f', '\\u53d1\\u9001\\u6d88\\u606f'],
-    social: ['message', 'contact', '\\u53d1\\u6d88\\u606f', '\\u53d1\\u9001\\u6d88\\u606f', '\\u6d88\\u606f'],
+    instagram: ['message', '\u53d1\u6d88\u606f', '\u53d1\u9001\u6d88\u606f'],
+    facebook: ['message', 'send message', 'messenger', '\u53d1\u6d88\u606f', '\u53d1\u9001\u6d88\u606f', '\u6d88\u606f'],
+    linkedin: ['message', '\u53d1\u6d88\u606f', '\u53d1\u9001\u6d88\u606f'],
+    social: ['message', 'contact', '\u53d1\u6d88\u606f', '\u53d1\u9001\u6d88\u606f', '\u6d88\u606f'],
   };
   const keywords = keywordsByPlatform[platform] || keywordsByPlatform.social;
-  const button = await waitForJson(tab, buttonExpression(keywords), item => item && Number.isFinite(item.x) && Number.isFinite(item.y), 12000, 500);
+  const button = await waitForJson(
+    tab,
+    platform === 'instagram' ? profileMessageButtonExpression(platform, keywords) : buttonExpression(keywords),
+    item => item && Number.isFinite(item.x) && Number.isFinite(item.y),
+    12000,
+    500
+  );
   if (!button || !Number.isFinite(button.x)) {
     if (platform === 'instagram') {
-      await clickAt(tab, 615, 336);
+      const fallbackButton = await waitForJson(tab, buttonExpression(keywords), item => item && Number.isFinite(item.x) && Number.isFinite(item.y) && item.x > 120, 3000, 500);
+      if (!fallbackButton || !Number.isFinite(fallbackButton.x)) return null;
+      await clickAt(tab, fallbackButton.x, fallbackButton.y);
     } else {
       return null;
     }
@@ -451,6 +709,7 @@ async function ensureComposerOpen(tab, port, platform) {
   }
   await sleep(900);
   await evaluateJson(tab, dismissDialogExpression(), 2000).catch(() => null);
+  await evaluateJson(tab, closeBlockingOverlayExpression(platform), 2500).catch(() => null);
   composer = await waitForJson(tab, composerExpression(platform), item => item && item.visible, 25000, 500);
   if (!composer || !Number.isFinite(composer.x)) {
     await evaluateJson(tab, dismissDialogExpression(), 2000).catch(() => null);
@@ -478,8 +737,12 @@ async function preparePlatformDraft(payload, platform) {
 
   const preActions = [];
   if (payload.autoEngage) {
-    preActions.push(await submitOptionalComment(tab, payload.engagementComment || 'Great outdoor checklist. Useful reminder for hikers preparing a complete, lightweight kit.'));
-    preActions.push(await clickOptionalAction(tab, 'like', platform));
+    if (platform === 'instagram') {
+      preActions.push(await submitInstagramPostEngagement(tab, payload.engagementComment || 'Great outdoor checklist. Useful reminder for hikers preparing a complete, lightweight kit.'));
+    } else {
+      preActions.push(await submitOptionalComment(tab, payload.engagementComment || 'Great outdoor checklist. Useful reminder for hikers preparing a complete, lightweight kit.'));
+      preActions.push(await clickOptionalAction(tab, 'like', platform));
+    }
     preActions.push(await clickOptionalAction(tab, 'follow', platform));
   }
 

@@ -1,5 +1,5 @@
 {
-  "ok": false,
+  "ok": true,
   "engine": "Codex Chrome Extension queue bridge",
   "mode": "serial-single-target",
   "batchMode": "parallel-batches",
@@ -22,8 +22,8 @@
         "engine": "codex-chrome-extension-cdp",
         "port": 9224,
         "targetUrl": "https://www.basspro.com/shop/en/contact-us",
-        "tabId": "802CFB0B92DFB901101351391D05BCA2",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/802CFB0B92DFB901101351391D05BCA2",
+        "tabId": "AB2117257B6A5FF30075DBA9954FDA54",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/AB2117257B6A5FF30075DBA9954FDA54",
         "title": "Access Denied"
       },
       "result": {
@@ -37,8 +37,8 @@
           "engine": "codex-chrome-extension-cdp",
           "port": 9224,
           "targetUrl": "https://www.basspro.com/shop/en/contact-us",
-          "tabId": "802CFB0B92DFB901101351391D05BCA2",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/802CFB0B92DFB901101351391D05BCA2",
+          "tabId": "AB2117257B6A5FF30075DBA9954FDA54",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/AB2117257B6A5FF30075DBA9954FDA54",
           "title": "Access Denied"
         },
         "sendStatus": "approval_pending",
@@ -62,8 +62,8 @@
         "engine": "codex-chrome-extension-cdp",
         "port": 9224,
         "targetUrl": "https://www.cabelas.com/shop/en/contact-us",
-        "tabId": "3B7292EAC9F22243F224C963281375B2",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/3B7292EAC9F22243F224C963281375B2",
+        "tabId": "1FF051924E35B53E21372000A0A8B123",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/1FF051924E35B53E21372000A0A8B123",
         "title": "Access Denied"
       },
       "result": {
@@ -77,8 +77,8 @@
           "engine": "codex-chrome-extension-cdp",
           "port": 9224,
           "targetUrl": "https://www.cabelas.com/shop/en/contact-us",
-          "tabId": "3B7292EAC9F22243F224C963281375B2",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/3B7292EAC9F22243F224C963281375B2",
+          "tabId": "1FF051924E35B53E21372000A0A8B123",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/1FF051924E35B53E21372000A0A8B123",
           "title": "Access Denied"
         },
         "sendStatus": "approval_pending",
@@ -94,20 +94,20 @@
       "action": "develop",
       "platform": "instagram",
       "targetUrl": "https://www.instagram.com/mec/",
-      "ok": false,
-      "sendStatus": "failed_open",
-      "evidence": "instagram_message_button_clicked_composer_not_found",
+      "ok": true,
+      "sendStatus": "sent_confirmed",
+      "evidence": "instagram_message_sent_confirmed_composer_cleared;instagram_post_opened;post_like_not_available_or_already_active;comment_box_not_available;follow_clicked",
       "chromeOpen": {
         "ok": true,
         "engine": "codex-chrome-extension-cdp",
         "port": 9224,
         "targetUrl": "https://www.instagram.com/mec/",
-        "tabId": "5070EED1512C0CB15EAC402C0B503DBB",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/5070EED1512C0CB15EAC402C0B503DBB",
+        "tabId": "D83A7186B3D64828A8F6052F93AE6BCB",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/D83A7186B3D64828A8F6052F93AE6BCB",
         "title": "Mountain Equipment Company (@mec) · Instagram 照片和视频"
       },
       "result": {
-        "ok": false,
+        "ok": true,
         "engine": "codex-chrome-extension-cdp",
         "browserEngine": "codex-chrome-extension-cdp",
         "mode": "codex_chrome_primary_no_autoglm",
@@ -117,17 +117,17 @@
           "engine": "codex-chrome-extension-cdp",
           "port": 9224,
           "targetUrl": "https://www.instagram.com/mec/",
-          "tabId": "5070EED1512C0CB15EAC402C0B503DBB",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/5070EED1512C0CB15EAC402C0B503DBB",
+          "tabId": "D83A7186B3D64828A8F6052F93AE6BCB",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/D83A7186B3D64828A8F6052F93AE6BCB",
           "title": "Mountain Equipment Company (@mec) · Instagram 照片和视频"
         },
-        "sendStatus": "failed_open",
-        "output": "{\"verdict\":\"major_bug_review_needed\",\"evidence\":\"instagram_message_button_clicked_composer_not_found\",\"nextAction\":\"Composer not detected; pause automation and notify operator only if retry would be unsafe.\",\"draft\":\"Hi MEC team — Leo from FLEXTAIL here. We make ultralight electric camping gear (portable pumps, outdoor power, lighting), currently top-selling in our category on Amazon. Our lineup fits naturally with your camping assortment, with 36+ new SKUs coming for 2026. Could you connect me with the right camping accessories category buyer for a short intro call?\",\"sendStatus\":\"failed_open\"}",
+        "sendStatus": "sent_confirmed",
+        "output": "{\"verdict\":\"sent_confirmed\",\"evidence\":\"instagram_message_sent_confirmed_composer_cleared;instagram_post_opened;post_like_not_available_or_already_active;comment_box_not_available;follow_clicked\",\"nextAction\":\"Record outcome and monitor for reply.\",\"draft\":\"Hi MEC team, I'm Leo with FLEXTAIL — the top-selling ultralight outdoor electrics brand on Amazon. Our portable pumps, camping power, and lighting fit your camping and travel assortment well, with 36+ new SKUs coming for 2026. Could you connect me with your camping equipment category buyer for a short intro call?\",\"sendStatus\":\"sent_confirmed\"}",
         "decision": {
           "fitScore": 94,
           "verdict": "develop",
-          "reason": "A+ Canadian outdoor retail co-op since 1971; camping accessories category aligns directly with FLEXTAIL portable pumps, power, and lighting; high buying capability; vendor portal and info path available for outreach.",
-          "draft": "Hi MEC team,\n\nNice to e-meet you. I'm Leo from FLEXTAIL — we build ultralight electric gear for camping and travel, currently the top-selling brand in our category on Amazon with strong global sell-through. Our portable pumps, outdoor power, and compact lighting fit naturally alongside MEC's camping assortment, and we have 36+ new SKUs planned for 2026 across multiple price tiers.\n\nCould you point me to the right camping accessories category buyer or vendor-review contact for a short intro video meeting?\n\nBest,\nLeo",
+          "reason": "A+ Canadian outdoor retail co-op since 1971 with high buying capability and direct category fit for FLEXTAIL portable pumps, camping power, and lighting; general contact path available, buyer routing required.",
+          "draft": "Hi MEC team,\n\nNice to e-meet you. I'm Leo, representing FLEXTAIL — the top-selling ultralight outdoor electric brand on Amazon, with proven sell-through across portable pumps, camping power, and compact lighting that fit your camping and travel assortment.\n\nWe have 36+ new SKUs planned for 2026 across multiple price tiers and usage scenarios, which could complement your outdoor accessories range.\n\nCould you point me to the right camping equipment category buyer or vendor-review contact for a short intro video meeting?\n\nBest,\nLeo",
           "nextStep": "open_profile"
         },
         "glmModel": "glm-5.2",
@@ -150,8 +150,8 @@
         "engine": "codex-chrome-extension-cdp",
         "port": 9224,
         "targetUrl": "https://www.basspro.com/shop/en/contact-us",
-        "tabId": "802CFB0B92DFB901101351391D05BCA2",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/802CFB0B92DFB901101351391D05BCA2",
+        "tabId": "AB2117257B6A5FF30075DBA9954FDA54",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/AB2117257B6A5FF30075DBA9954FDA54",
         "title": "Access Denied"
       },
       "result": {
@@ -165,8 +165,8 @@
           "engine": "codex-chrome-extension-cdp",
           "port": 9224,
           "targetUrl": "https://www.basspro.com/shop/en/contact-us",
-          "tabId": "802CFB0B92DFB901101351391D05BCA2",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/802CFB0B92DFB901101351391D05BCA2",
+          "tabId": "AB2117257B6A5FF30075DBA9954FDA54",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/AB2117257B6A5FF30075DBA9954FDA54",
           "title": "Access Denied"
         },
         "sendStatus": "approval_pending",
@@ -190,8 +190,8 @@
         "engine": "codex-chrome-extension-cdp",
         "port": 9224,
         "targetUrl": "https://www.cabelas.com/shop/en/contact-us",
-        "tabId": "3B7292EAC9F22243F224C963281375B2",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/3B7292EAC9F22243F224C963281375B2",
+        "tabId": "1FF051924E35B53E21372000A0A8B123",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/1FF051924E35B53E21372000A0A8B123",
         "title": "Access Denied"
       },
       "result": {
@@ -205,8 +205,8 @@
           "engine": "codex-chrome-extension-cdp",
           "port": 9224,
           "targetUrl": "https://www.cabelas.com/shop/en/contact-us",
-          "tabId": "3B7292EAC9F22243F224C963281375B2",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/3B7292EAC9F22243F224C963281375B2",
+          "tabId": "1FF051924E35B53E21372000A0A8B123",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/1FF051924E35B53E21372000A0A8B123",
           "title": "Access Denied"
         },
         "sendStatus": "approval_pending",
@@ -222,20 +222,20 @@
       "action": "develop",
       "platform": "instagram",
       "targetUrl": "https://www.instagram.com/mec/",
-      "ok": false,
-      "sendStatus": "failed_open",
-      "evidence": "instagram_message_button_clicked_composer_not_found",
+      "ok": true,
+      "sendStatus": "sent_confirmed",
+      "evidence": "instagram_message_sent_confirmed_composer_cleared;instagram_post_opened;post_like_not_available_or_already_active;comment_box_not_available;follow_clicked",
       "chromeOpen": {
         "ok": true,
         "engine": "codex-chrome-extension-cdp",
         "port": 9224,
         "targetUrl": "https://www.instagram.com/mec/",
-        "tabId": "5070EED1512C0CB15EAC402C0B503DBB",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/5070EED1512C0CB15EAC402C0B503DBB",
+        "tabId": "D83A7186B3D64828A8F6052F93AE6BCB",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/D83A7186B3D64828A8F6052F93AE6BCB",
         "title": "Mountain Equipment Company (@mec) · Instagram 照片和视频"
       },
       "result": {
-        "ok": false,
+        "ok": true,
         "engine": "codex-chrome-extension-cdp",
         "browserEngine": "codex-chrome-extension-cdp",
         "mode": "codex_chrome_primary_no_autoglm",
@@ -245,17 +245,17 @@
           "engine": "codex-chrome-extension-cdp",
           "port": 9224,
           "targetUrl": "https://www.instagram.com/mec/",
-          "tabId": "5070EED1512C0CB15EAC402C0B503DBB",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/5070EED1512C0CB15EAC402C0B503DBB",
+          "tabId": "D83A7186B3D64828A8F6052F93AE6BCB",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/D83A7186B3D64828A8F6052F93AE6BCB",
           "title": "Mountain Equipment Company (@mec) · Instagram 照片和视频"
         },
-        "sendStatus": "failed_open",
-        "output": "{\"verdict\":\"major_bug_review_needed\",\"evidence\":\"instagram_message_button_clicked_composer_not_found\",\"nextAction\":\"Composer not detected; pause automation and notify operator only if retry would be unsafe.\",\"draft\":\"Hi MEC team — Leo from FLEXTAIL here. We make ultralight electric camping gear (portable pumps, outdoor power, lighting), currently top-selling in our category on Amazon. Our lineup fits naturally with your camping assortment, with 36+ new SKUs coming for 2026. Could you connect me with the right camping accessories category buyer for a short intro call?\",\"sendStatus\":\"failed_open\"}",
+        "sendStatus": "sent_confirmed",
+        "output": "{\"verdict\":\"sent_confirmed\",\"evidence\":\"instagram_message_sent_confirmed_composer_cleared;instagram_post_opened;post_like_not_available_or_already_active;comment_box_not_available;follow_clicked\",\"nextAction\":\"Record outcome and monitor for reply.\",\"draft\":\"Hi MEC team, I'm Leo with FLEXTAIL — the top-selling ultralight outdoor electrics brand on Amazon. Our portable pumps, camping power, and lighting fit your camping and travel assortment well, with 36+ new SKUs coming for 2026. Could you connect me with your camping equipment category buyer for a short intro call?\",\"sendStatus\":\"sent_confirmed\"}",
         "decision": {
           "fitScore": 94,
           "verdict": "develop",
-          "reason": "A+ Canadian outdoor retail co-op since 1971; camping accessories category aligns directly with FLEXTAIL portable pumps, power, and lighting; high buying capability; vendor portal and info path available for outreach.",
-          "draft": "Hi MEC team,\n\nNice to e-meet you. I'm Leo from FLEXTAIL — we build ultralight electric gear for camping and travel, currently the top-selling brand in our category on Amazon with strong global sell-through. Our portable pumps, outdoor power, and compact lighting fit naturally alongside MEC's camping assortment, and we have 36+ new SKUs planned for 2026 across multiple price tiers.\n\nCould you point me to the right camping accessories category buyer or vendor-review contact for a short intro video meeting?\n\nBest,\nLeo",
+          "reason": "A+ Canadian outdoor retail co-op since 1971 with high buying capability and direct category fit for FLEXTAIL portable pumps, camping power, and lighting; general contact path available, buyer routing required.",
+          "draft": "Hi MEC team,\n\nNice to e-meet you. I'm Leo, representing FLEXTAIL — the top-selling ultralight outdoor electric brand on Amazon, with proven sell-through across portable pumps, camping power, and compact lighting that fit your camping and travel assortment.\n\nWe have 36+ new SKUs planned for 2026 across multiple price tiers and usage scenarios, which could complement your outdoor accessories range.\n\nCould you point me to the right camping equipment category buyer or vendor-review contact for a short intro video meeting?\n\nBest,\nLeo",
           "nextStep": "open_profile"
         },
         "glmModel": "glm-5.2",
@@ -357,8 +357,8 @@
     {
       "id": "verified-Instagram-mec",
       "company": "MEC Canada",
-      "action": "develop",
-      "reason": "high_icp_verified_ready"
+      "action": "retry_or_alternate_channel",
+      "reason": "instagram_message_button_clicked_composer_not_found"
     },
     {
       "id": "verified-Instagram-triedandtrout",
@@ -403,22 +403,22 @@
   },
   "systemRefresh": {
     "ok": true,
-    "stdout": "{\n  \"date\": \"2026-06-30\",\n  \"summary\": {\n    \"totalLeads\": 16,\n    \"highIcp\": 16,\n    \"readyToDevelop\": 8,\n    \"dueNow\": 17,\n    \"googleDiscovered\": 17,\n    \"facebookDiscovered\": 4,\n    \"websiteContactDiscovered\": 9,\n    \"scheduledLater\": 6,\n    \"cooldown\": 26,\n    \"emailPriority\": 4,\n    \"openAgencyMarket\": 15,\n    \"exclusiveAgencySkipped\": 1,\n    \"needsVerification\": 0,\n    \"retainedLowIcp\": 0\n  },\n  \"bugErrors\": 0,\n  \"queueFile\": \"E:\\\\New project\\\\outreach-dashboard\\\\daily-runs\\\\2026-06-30-daily-automation.json\",\n  \"csvFile\": \"E:\\\\New project\\\\outreach-dashboard\\\\daily-runs\\\\2026-06-30-daily-queue.csv\"\n}",
+    "stdout": "{\n  \"date\": \"2026-06-30\",\n  \"summary\": {\n    \"totalLeads\": 16,\n    \"highIcp\": 16,\n    \"readyToDevelop\": 7,\n    \"dueNow\": 16,\n    \"googleDiscovered\": 16,\n    \"facebookDiscovered\": 4,\n    \"websiteContactDiscovered\": 9,\n    \"scheduledLater\": 5,\n    \"cooldown\": 28,\n    \"emailPriority\": 4,\n    \"openAgencyMarket\": 15,\n    \"exclusiveAgencySkipped\": 1,\n    \"needsVerification\": 0,\n    \"retainedLowIcp\": 0\n  },\n  \"bugErrors\": 0,\n  \"queueFile\": \"E:\\\\New project\\\\outreach-dashboard\\\\daily-runs\\\\2026-06-30-daily-automation.json\",\n  \"csvFile\": \"E:\\\\New project\\\\outreach-dashboard\\\\daily-runs\\\\2026-06-30-daily-queue.csv\"\n}",
     "stderr": "",
     "error": "",
     "visibility": {
-      "updatedAt": "2026-06-30T12:25:29.158Z",
+      "updatedAt": "2026-06-30T12:42:02.886Z",
       "source": "main-refreshDailyAutomationArtifacts",
       "runDate": "2026-06-30",
-      "artifactGeneratedAt": "2026-06-30T12:25:28.330Z",
-      "executionGeneratedAt": "2026-06-30T12:20:48.768Z",
-      "githubSyncUpdatedAt": "2026-06-30T12:03:36.258Z",
+      "artifactGeneratedAt": "2026-06-30T12:42:02.160Z",
+      "executionGeneratedAt": "2026-06-30T12:37:37.552Z",
+      "githubSyncUpdatedAt": "2026-06-30T12:27:41.703Z",
       "counts": {
-        "dailyQueue": 17,
-        "googleDiscovered": 17,
+        "dailyQueue": 16,
+        "googleDiscovered": 16,
         "websiteContact": 9,
-        "cooldownQueue": 26,
-        "scheduledLater": 6
+        "cooldownQueue": 28,
+        "scheduledLater": 5
       },
       "visibleSections": [
         "workspace",
@@ -458,5 +458,5 @@
       }
     }
   },
-  "completedAt": "2026-06-30T12:25:29.586Z"
+  "completedAt": "2026-06-30T12:42:03.260Z"
 }
