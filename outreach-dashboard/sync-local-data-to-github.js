@@ -45,6 +45,10 @@ function writeSyncStatus(status) {
   fs.mkdirSync(OUT, { recursive: true });
   fs.writeFileSync(path.join(OUT, 'latest-status.json'), JSON.stringify(output, null, 2));
   writeJsonScript(path.join(OUT, 'latest-status.js'), 'GITHUB_SYNC_LATEST', output);
+  const publicOut = path.join(ROOT, 'public', 'github-sync');
+  fs.mkdirSync(publicOut, { recursive: true });
+  fs.writeFileSync(path.join(publicOut, 'latest-status.json'), JSON.stringify(output, null, 2));
+  writeJsonScript(path.join(publicOut, 'latest-status.js'), 'GITHUB_SYNC_LATEST', output);
   return output;
 }
 
