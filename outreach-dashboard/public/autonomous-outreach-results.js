@@ -586,5 +586,27 @@ window.AUTONOMOUS_OUTREACH_RESULTS = [
     "evidence": "contact_entry_verified;mailto_detected;initial_page_verified;website_contact_form_fields_prepared;marketing_attachment_missing",
     "draft": "Dear Sail Outdoors Team,\n\nNice to e-meet you.\nI am Leo, from Flextail & Vollyc.\n\nFlextail is our first and core brand, specializing in ultralight electric products for outdoor, travel, and home use. The brand is currently Top 1 on Amazon, with strong global sell-through and a proven product-market fit.\nVollyc, our second brand, focuses on 3C electronics, targeting practical, high-rotation consumer use cases.\n\nFrom our perspective, your platform and positioning are highly aligned with Flextail’s product philosophy, especially in lightweight outdoor and travel-oriented electrics.\n\nWe have already contacted with your team, and we are now actively exploring opportunities in other regions.\nAttached, you will find a brief introduction to our brands and current product catalog for your reference.\n\nLooking ahead, we are planning to launch over 36 new SKUs in 2026, covering multiple usage scenarios and price tiers, which we believe could be of interest to your assortment strategy.\n\nIf you are available, I would greatly appreciate the opportunity to arrange a short introductory video meeting to present our brands and discuss potential collaboration opportunities.\n\nThank you for your time and consideration. I look forward to your reply.\n\n[Flextail.com](https://www.flextail.com/), [vollyc.com](https://vollyc.com/)\n\n[Sincerely](https://wa.me/8617321028184)\n[Best Regard](https://wa.me/8617321028184)\n[Leo Liu](https://wa.me/8617321028184)\n[Sales](https://wa.me/8617321028184) [& Operations Director](https://wa.me/8617321028184)\n[Brand & ODM Department](https://wa.me/8617321028184)\n[Tel/whatsapp:  +86 17321028184](https://wa.me/8617321028184)\n\n[Email:  Leo@flextailgear.com](https://wa.me/8617321028184)\n[SHANGHAI FLEXTAIL TECHNOLOGY CO.,LTD.](https://wa.me/8617321028184)\n[Room103, Building No.6, No.1 Yanjiaqiao, Pudong District, ShangHai, China](https://wa.me/8617321028184)",
     "subject": "Flextail & Vollyc | Lightweight Outdoor & 3C Electronics – Potential Cooperation"
+  },
+  {
+    "task_id": "verified-Instagram-macpac",
+    "approval_version": 1,
+    "status": "sent_confirmed",
+    "agent": "codex-chrome-extension",
+    "timestamp": "2026-06-30T21:03:40.471Z",
+    "target_url": "https://www.instagram.com/macpac/",
+    "evidence": "instagram_message_sent_confirmed_composer_cleared;instagram_post_opened;post_liked;comment_submitted;follow_already_active",
+    "draft": "Hi Macpac team — Leo here from FLEXTAIL, the #1 ultralight outdoor electric brand on Amazon. We're expanding across NZ/AU with 36+ new SKUs planned for 2026 — camping pumps, lanterns, travel gear. Given your authority in technical outdoor retail, could you connect me with the right category buyer for a short intro call?",
+    "subject": ""
+  },
+  {
+    "task_id": "verified-Instagram-stoneycreeknz",
+    "approval_version": 1,
+    "status": "sent_confirmed",
+    "agent": "codex-chrome-extension",
+    "timestamp": "2026-06-30T21:04:33.119Z",
+    "target_url": "https://www.instagram.com/stoneycreeknz/",
+    "evidence": "instagram_message_sent_confirmed_composer_cleared;instagram_post_opened;post_liked;comment_submitted;follow_already_active",
+    "draft": "Hi Stoney Creek team — nice to e-meet you. I'm with FLEXTAIL, the top-selling ultralight electric outdoor brand on Amazon. Given your NZ outdoor heritage, I see clear fit in co-developing lightweight camp and travel electrics that extend your product range. We have 36+ new SKUs planned for 2026 across usage scenarios and price tiers, and I'd welcome a brief brand and roadmap introduction. Could I set up a short intro video meeting with your product or sourcing lead?",
+    "subject": ""
   }
 ];
