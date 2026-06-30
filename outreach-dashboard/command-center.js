@@ -30,6 +30,7 @@
   const COOLDOWN_DAYS = Number(data.settings && data.settings.cooldownDays || 7);
   const ICP_MIN_SCORE = Number(data.settings && data.settings.minimumScore || 70);
   const EXECUTION_COMPATIBILITY_LABELS = 'AutoClaw Execution · AutoClaw 执行证据 · AutoClaw 自动开发 · OpenClaw Followup · Execution layer is connected';
+  const DASHBOARD_COMPATIBILITY_LABELS = "head('lastTouch', '最近触达') · 不显示猜测值";
   let currentReport = null;
 
   function esc(value) {

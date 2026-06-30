@@ -25,6 +25,7 @@ for (const stream of [process.stdout, process.stderr]) {
 let glmAutomationRunning = false;
 let lastGlmAutomationAt = 0;
 let managedChromeStarted = false;
+const isAutoRunDaily = process.argv.includes('--auto-run-daily');
 const WEBSITE_CONTACT_VERIFIED_EVIDENCE = 'contact_entry_verified';
 const DEFAULT_WEBSITE_CONTACT_EMAIL = 'leo@flextailgear.com';
 const DEFAULT_WEBSITE_CONTACT_FIRST_NAME = 'Leo';
@@ -95,6 +96,13 @@ function writeJsonScript(file, globalName, value) {
   fs.writeFileSync(file, `window.${globalName} = ${JSON.stringify(value, null, 2)};\n`);
 }
 
+function writeDailyExecutionArtifact(output) {
+  writeJson(path.join(__dirname, 'daily-automation-execution-latest.json'), output);
+  writeJsonScript(path.join(__dirname, 'daily-automation-execution-latest.js'), 'DAILY_AUTOMATION_EXECUTION_LATEST', output);
+  copyPublicArtifact('daily-automation-execution-latest.json');
+  copyPublicArtifact('daily-automation-execution-latest.js');
+}
+
 function readJsonScriptArray(file, globalName) {
   try {
     if (!fs.existsSync(file)) return [];
@@ -129,28 +137,83 @@ function canonicalLeadKey(value) {
     .replace(/[^a-z0-9.]+/g, '');
 }
 
+function canonicalExactAutomationKey(value) {
+  return String(value || '')
+    .toLowerCase()
+    .replace(/^https?:\/\//i, '')
+    .replace(/^www\./i, '')
+    .replace(/\/+$/g, '')
+    .replace(/[^a-z0-9.]+/g, '');
+}
+
+function automationPlatformFor(value = {}) {
+  const explicit = String(value.platform || value.channel || '').toLowerCase();
+  if (explicit) {
+    if (/instagram|ins/.test(explicit)) return 'instagram';
+    if (/facebook|fb/.test(explicit)) return 'facebook';
+    if (/email|website|contact/.test(explicit)) return 'website';
+  }
+  const text = [
+    value.id,
+    value.taskId,
+    value.task_id,
+    value.reason,
+    value.evidence,
+    value.target_url,
+    value.targetUrl,
+    value.url,
+    value.contactUrl,
+  ].filter(Boolean).join(' ').toLowerCase();
+  if (/instagram|instagram\.com/.test(text)) return 'instagram';
+  if (/facebook|facebook\.com|fb\.com/.test(text)) return 'facebook';
+  if (/website-contact|official_website_contact_channel|website_contact|mailto|email_channel|contact_entry/.test(text)) return 'website';
+  return '';
+}
+
+function automationExactKeys(value = {}) {
+  return new Set([
+    value.id,
+    value.taskId,
+    value.task_id,
+    value.url,
+    value.targetUrl,
+    value.target_url,
+    value.platformUrl,
+    value.contactUrl,
+  ].map(canonicalExactAutomationKey).filter(Boolean));
+}
+
+function automationCompanyKeys(value = {}) {
+  return new Set([
+    value.company,
+    value.name,
+  ].map(canonicalLeadKey).filter(Boolean));
+}
+
+function setsIntersect(left, right) {
+  for (const item of left) {
+    if (right.has(item)) return true;
+  }
+  return false;
+}
+
 function blockingAutomationResultFor(item) {
   const file = path.join(__dirname, 'autonomous-outreach-results.js');
   const results = readJsonScriptArray(file, 'AUTONOMOUS_OUTREACH_RESULTS');
-  const keys = new Set([
-    item && item.id,
-    item && item.taskId,
-    item && item.company,
-    item && item.name,
-    item && item.url,
-    item && item.platformUrl,
-    item && item.contactUrl,
-  ].map(canonicalLeadKey).filter(Boolean));
-  const blocking = new Set(['sent_confirmed', 'failed_open', 'send_unconfirmed', 'skipped', 'account_followed', 'post_liked', 'website_contact_ready']);
+  const exactKeys = automationExactKeys(item);
+  const companyKeys = automationCompanyKeys(item);
+  const itemPlatform = automationPlatformFor(item);
+  const blocking = new Set(['sent_confirmed', 'failed_open', 'send_unconfirmed', 'account_followed', 'post_liked', 'website_contact_ready']);
   return results
     .filter((result) => result && blocking.has(result.status))
     .filter((result) => result.status !== 'website_contact_ready' || websiteContactResultIsVerified(result))
-    .find((result) => [
-      result.task_id,
-      result.target_url,
-      result.company,
-      result.name,
-    ].map(canonicalLeadKey).filter(Boolean).some(key => keys.has(key))) || null;
+    .find((result) => {
+      const resultExactKeys = automationExactKeys(result);
+      if (setsIntersect(exactKeys, resultExactKeys)) return true;
+      const resultPlatform = automationPlatformFor(result);
+      if (!itemPlatform || !resultPlatform || itemPlatform !== resultPlatform) return false;
+      return setsIntersect(companyKeys, automationCompanyKeys(result));
+    }) || null;
 }
 
 function websiteContactResultIsVerified(result = {}) {
@@ -951,7 +1014,7 @@ async function runCodexChromeDriver(command, payload) {
   try {
     const result = await execFilePromise(nodeCommand, args, {
       windowsHide: true,
-      timeout: 30000,
+      timeout: 120000,
       maxBuffer: 2 * 1024 * 1024,
     });
     return parseDriverJson(result.stdout);
@@ -2157,36 +2220,37 @@ async function runDailyAutomationQueue(payload = {}) {
 
 ipcMain.handle('run-daily-automation-queue', async (_event, payload) => runDailyAutomationQueue(payload));
 
-app.whenReady().then(() => {
-  createWindow();
-  if (process.argv.includes('--auto-run-daily')) {
-    setTimeout(async () => {
-      try {
-        const autoLimit = Math.max(1, Math.min(Number(process.env.DAILY_EXECUTE_LIMIT || 10), 100));
-        const result = await runDailyAutomationQueue({ limit: autoLimit, parallelLimit: 1, delayMs: 2500 });
-        const output = {
-          ...result,
-          completedAt: new Date().toISOString(),
-        };
-        writeJson(path.join(__dirname, 'daily-automation-execution-latest.json'), output);
-        writeJsonScript(path.join(__dirname, 'daily-automation-execution-latest.js'), 'DAILY_AUTOMATION_EXECUTION_LATEST', output);
-      } catch (error) {
-        const output = {
-          ok: false,
-          error: error.message || String(error),
-          completedAt: new Date().toISOString(),
-        };
-        writeJson(path.join(__dirname, 'daily-automation-execution-latest.json'), output);
-        writeJsonScript(path.join(__dirname, 'daily-automation-execution-latest.js'), 'DAILY_AUTOMATION_EXECUTION_LATEST', output);
-      } finally {
-        app.quit();
-      }
-    }, 3000);
+async function runAutoDailyAndWriteArtifact() {
+  try {
+    const autoLimit = Math.max(1, Math.min(Number(process.env.DAILY_EXECUTE_LIMIT || 10), 100));
+    const result = await runDailyAutomationQueue({ limit: autoLimit, parallelLimit: 1, delayMs: 2500 });
+    const output = {
+      ...result,
+      completedAt: new Date().toISOString(),
+    };
+    writeDailyExecutionArtifact(output);
+  } catch (error) {
+    const output = {
+      ok: false,
+      error: error.message || String(error),
+      completedAt: new Date().toISOString(),
+    };
+    writeDailyExecutionArtifact(output);
+  } finally {
+    app.quit();
   }
+}
+
+app.whenReady().then(() => {
+  if (isAutoRunDaily) {
+    runAutoDailyAndWriteArtifact();
+    return;
+  }
+  createWindow();
 });
 
 app.on('window-all-closed', () => {
-  app.quit();
+  if (!isAutoRunDaily) app.quit();
 });
 
 app.on('activate', () => {

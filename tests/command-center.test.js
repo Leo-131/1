@@ -73,6 +73,21 @@ test('customer detail includes global channel analysis template', () => {
   ]) assert.ok(js.includes(token), token);
 });
 
+test('customer detail exposes sales dossier and verified channel matrix', () => {
+  for (const token of [
+    'Sales Intelligence Dossier',
+    'Verified Channel Matrix',
+    'Broken social links are marked for reroute',
+    'Buyer Persona',
+    'Likely Product Fit',
+    'Google Contact Search',
+    'Public Email',
+    'Vendor / Contact Portal',
+    'Data Sources',
+    'mailto:',
+  ]) assert.ok(js.includes(token), token);
+});
+
 test('SEO view exposes conversion evidence and high-intent keyword opportunities', () => {
   assert.ok(js.includes('analytics.buildKeywordOpportunities'));
   assert.ok(js.includes('keyword-opportunity'));
@@ -121,8 +136,10 @@ test('historical follow-up tasks can trigger safe OpenClaw preparation', () => {
 test('today queue separates untouched work from historical follow-ups', () => {
   assert.ok(js.includes('function untouchedTasks'));
   assert.ok(js.includes('function followupTasks'));
+  assert.ok(js.includes('function executableDevelopmentTasks'));
+  assert.ok(js.includes('function isAutoDevelopmentTask'));
   assert.ok(js.includes("query.get('queue') || 'untouched'"));
-  assert.ok(js.includes('今日待开发'));
+  assert.ok(js.includes('可自动开发'));
   assert.ok(js.includes('跟进中'));
 });
 
