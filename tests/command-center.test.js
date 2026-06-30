@@ -7,6 +7,7 @@ const root = path.join(__dirname, '..', 'outreach-dashboard');
 const html = fs.readFileSync(path.join(root, 'outreach-dashboard.html'), 'utf8');
 const js = fs.readFileSync(path.join(root, 'command-center.js'), 'utf8');
 const analyticsJs = fs.readFileSync(path.join(root, 'outreach-analytics.js'), 'utf8');
+const serviceWorkerJs = fs.readFileSync(path.join(root, 'service-worker.js'), 'utf8');
 const portableBuilder = fs.readFileSync(path.join(root, 'build-portable-app.js'), 'utf8');
 
 test('dashboard loads autonomous command center assets', () => {
@@ -184,4 +185,15 @@ test('recent-touch supports range filtering and ascending or descending sorting'
 test('trend unavailability is visible and not presented as a guessed number', () => {
   assert.ok(js.includes('data_unavailable'));
   assert.ok(js.includes('不显示猜测值'));
+});
+
+test('all reporting sections use live automation artifacts', () => {
+  assert.ok(js.includes('function liveOperationalRecords'));
+  assert.ok(js.includes('function liveAuditEvents'));
+  assert.ok(js.includes('const reportRecords = liveOperationalRecords();'));
+  assert.ok(js.includes('analytics.buildTemplateMetrics(liveOperationalRecords())'));
+  assert.ok(js.includes('const events = liveAuditEvents();'));
+  assert.ok(js.includes('...liveOperationalRecords()'));
+  assert.ok(html.includes('20260630-live-sections-refresh'));
+  assert.ok(serviceWorkerJs.includes('customer-development-system-v18-7-20-20260630-live-sections-refresh'));
 });

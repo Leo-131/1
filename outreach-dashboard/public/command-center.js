@@ -331,6 +331,98 @@
       }));
     return [...latestResults, ...auditResults];
   }
+  function inferPlatformFromResult(item) {
+    const text = [item && item.task_id, item && item.target_url, item && item.evidence].join(' ').toLowerCase();
+    if (/instagram|instagram\.com/.test(text)) return 'instagram';
+    if (/facebook|facebook\.com|fb\.com/.test(text)) return 'facebook';
+    if (/contact|mailto|website|email/.test(text)) return 'email';
+    return 'unknown';
+  }
+  function resultCompanyName(taskId) {
+    return String(taskId || '')
+      .replace(/^google-customer-/i, '')
+      .replace(/^verified-[a-z]+-/i, '')
+      .replace(/-(instagram|facebook|website-contact)$/i, '')
+      .replace(/[-_]+/g, ' ')
+      .replace(/\b\w/g, char => char.toUpperCase());
+  }
+  function autonomousResultRecords() {
+    return (window.AUTONOMOUS_OUTREACH_RESULTS || []).map((item, index) => {
+      const taskId = item.task_id || `autonomous-result-${index}`;
+      const task = findTaskById(taskId) || taskIndex.get(canonicalLeadKey(taskId)) || {};
+      const timestamp = timestampOrEmpty(item.timestamp);
+      const status = item.status || '';
+      const evidence = item.evidence || '';
+      const confirmed = status === 'sent_confirmed';
+      const contactCaptured = /contact_entry_verified|mailto_detected|contact_form_detected|business_contact_route_detected/i.test(evidence);
+      return {
+        ...task,
+        taskId,
+        id: taskId,
+        name: task.name || task.company || resultCompanyName(taskId),
+        company: task.company || task.name || resultCompanyName(taskId),
+        platform: task.platform || inferPlatformFromResult(item),
+        targetUrl: item.target_url || task.targetUrl || task.url || '',
+        verifiedTargetUrl: item.target_url || task.verifiedTargetUrl || '',
+        keyword: task.keyword || 'outdoor retail partnership',
+        templateId: task.templateId || 'buyer-contact-v1',
+        icpTier: task.icpTier || task.fitTier || '',
+        state: confirmed ? 'sent_confirmed' : status || 'automation_event',
+        sendStatus: status,
+        evidence,
+        discoveredAt: timestamp || task.discoveredAt || '',
+        profiledAt: timestamp || task.profiledAt || '',
+        approvedAt: timestamp || task.approvedAt || '',
+        sentAt: confirmed ? timestamp : '',
+        autoSkippedAt: status === 'failed_open' || status === 'skipped' ? timestamp : '',
+        contactCapturedAt: contactCaptured ? timestamp : task.contactCapturedAt || '',
+        resultCheckedAt: timestamp,
+        lastTouch: timestamp || task.lastTouch || '',
+      };
+    });
+  }
+  function liveOperationalRecords() {
+    const records = [
+      ...latestReportRecords(),
+      ...executionReportRecords([]),
+      ...autonomousResultRecords(),
+    ];
+    const seen = new Set();
+    return records
+      .filter(item => item && (item.taskId || item.id || item.company || item.name))
+      .sort((left, right) => Date.parse(recordUpdatedAt(right) || '') - Date.parse(recordUpdatedAt(left) || ''))
+      .filter(item => {
+        const key = [
+          item.taskId || item.id || item.company || item.name,
+          item.sendStatus || item.state || '',
+          item.sentAt || item.approvedAt || item.resultCheckedAt || item.lastTouch || '',
+        ].join('|');
+        if (seen.has(key)) return false;
+        seen.add(key);
+        return true;
+      });
+  }
+  function liveAuditEvents() {
+    const auditEvents = (data.audit || []).map(item => ({
+      timestamp: item.timestamp || '',
+      taskId: item.taskId || '',
+      stage: item.stage || '',
+      agent: item.agent || 'codex',
+      result: item.result || '',
+      evidence: item.evidence || '',
+    }));
+    const resultEvents = (window.AUTONOMOUS_OUTREACH_RESULTS || []).map(item => ({
+      timestamp: item.timestamp || '',
+      taskId: item.task_id || '',
+      stage: 'automation_result',
+      agent: item.agent || 'codex-chrome-extension',
+      result: item.status || '',
+      evidence: item.evidence || '',
+    }));
+    return [...auditEvents, ...resultEvents]
+      .filter(item => item.timestamp || item.taskId || item.result)
+      .sort((left, right) => Date.parse(right.timestamp || '') - Date.parse(left.timestamp || ''));
+  }
   function findTaskById(taskId) {
     return latestQueueRows('all').find(item => item.taskId === taskId)
       || tasks.find(item => item.taskId === taskId);
@@ -781,8 +873,8 @@
   }
   function reports() {
     const type = query.get('report') === 'monthly' ? 'monthly' : 'weekly';
-    const reportBase = [...tasks, ...latestReportRecords()];
-    const report = analytics.buildPeriodReport([...reportBase, ...executionReportRecords(reportBase)], { type, anchor: query.get('period') || undefined });
+    const reportRecords = liveOperationalRecords();
+    const report = analytics.buildPeriodReport(reportRecords, { type, anchor: query.get('period') || undefined });
     currentReport = report;
     const metricLabels = [
       ['discovered', '发现客户'], ['profiled', '画像评分'], ['approved', '自动决策'],
@@ -1201,7 +1293,7 @@
     return ['outdoor retail partnership'];
   }
   function seoCountryHeatRows() {
-    const rows = [...latestQueueRows('all'), ...googleDiscoveryRows()];
+    const rows = [...latestQueueRows('all'), ...googleDiscoveryRows(), ...liveOperationalRecords()];
     const groups = new Map();
     rows.forEach(record => {
       const country = record.countryEn || record.country || 'Global';
@@ -1239,7 +1331,7 @@
       || left.keyword.localeCompare(right.keyword)).slice(0, 24);
   }
   function seo() {
-    const reportRecords = [...latestReportRecords(), ...executionReportRecords([])];
+    const reportRecords = liveOperationalRecords();
     const metrics = analytics.buildKeywordMetrics(reportRecords);
     const countryHeat = seoCountryHeatRows();
     const opportunities = analytics.buildKeywordOpportunities(reportRecords).slice(0, 18);
@@ -1249,13 +1341,14 @@
       <section class="cc-panel keyword-opportunity"><div class="cc-panel-head"><h2>高转化关键词机会池</h2><span class="cc-sub">实测词优先，推荐词必须落到国家/客户热度后再执行</span></div><div class="cc-table-wrap"><table class="cc-table"><thead><tr><th>关键词</th><th>意图</th><th>目标客户</th><th>证据</th><th>优先级</th><th>趋势核验</th></tr></thead><tbody>${opportunities.map(item => `<tr><td><b>${esc(item.keyword)}</b></td><td>${item.intent === 'transactional' ? '交易型' : '商业型'}</td><td>${esc(item.audience)}</td><td>${item.source === 'observed' ? `实测 n=${item.sampleSize} · 回复 ${Math.round(item.replyRate * 100)}%` : '推荐 · 待国家热度验证'}</td><td><span class="cc-chip ${item.priorityScore >= 90 ? 'green' : ''}">${item.priorityScore}</span></td><td><a href="${esc(item.trendsUrl)}" target="_blank" rel="noopener">Global Trends</a></td></tr>`).join('')}</tbody></table></div></section>`;
   }
   function experiments() {
-    const metrics = analytics.buildTemplateMetrics(tasks);
+    const metrics = analytics.buildTemplateMetrics(liveOperationalRecords());
     return `${pageHead('模板实验', '只以发送确认记录计算回复率和联系方式获取率')}
       <div class="cc-table-wrap"><table class="cc-table"><thead><tr><th>模板</th><th>样本</th><th>确认发送</th><th>回复</th><th>回复率</th><th>联系方式率</th></tr></thead><tbody>${metrics.map(item => `<tr><td>${esc(item.templateId)}</td><td>${item.sampleSize}</td><td>${item.confirmedSends}</td><td>${item.replies}</td><td>${Math.round(item.replyRate * 100)}%</td><td>${Math.round(item.contactCaptureRate * 100)}%</td></tr>`).join('')}</tbody></table></div>`;
   }
   function audit() {
+    const events = liveAuditEvents();
     return `${pageHead('自动化审计', 'Codex 决策与 Codex Chrome 执行证据留档，AutoClaw 兼容，GLM 仅作为辅助模型')}
-      <div class="cc-table-wrap"><table class="cc-table"><thead><tr><th>时间</th><th>任务</th><th>阶段</th><th>代理</th><th>结果</th><th>证据</th></tr></thead><tbody>${(data.audit || []).map(item => `<tr><td>${esc(item.timestamp)}</td><td>${esc(item.taskId)}</td><td>${esc(item.stage)}</td><td>${esc(item.agent)}</td><td>${esc(item.result)}</td><td>${esc(item.evidence)}</td></tr>`).join('')}</tbody></table></div>`;
+      <div class="cc-table-wrap"><table class="cc-table"><thead><tr><th>时间</th><th>任务</th><th>阶段</th><th>代理</th><th>结果</th><th>证据</th></tr></thead><tbody>${events.map(item => `<tr><td>${esc(item.timestamp)}</td><td>${esc(item.taskId)}</td><td>${esc(item.stage)}</td><td>${esc(item.agent)}</td><td>${esc(item.result)}</td><td>${esc(item.evidence)}</td></tr>`).join('')}</tbody></table></div>`;
   }
   function settings() {
     const settings = data.settings || {};
