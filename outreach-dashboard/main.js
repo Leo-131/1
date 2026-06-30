@@ -2244,8 +2244,9 @@ async function runDailyAutomationQueue(payload = {}) {
   const candidatePool = queueSource === 'dailyQueue' ? dueCandidates : scheduledExecutable;
   const executable = [];
   const skipped = [];
+  const selectedCompanyKeys = new Set(sameDayCompanyKeys);
   for (const item of candidatePool) {
-    if (itemBlockedBySameDayCompany(item, sameDayCompanyKeys)) {
+    if (itemBlockedBySameDayCompany(item, selectedCompanyKeys)) {
       skipped.push({
         id: item.id,
         company: item.company,
@@ -2255,6 +2256,7 @@ async function runDailyAutomationQueue(payload = {}) {
       continue;
     }
     executable.push(item);
+    automationCompanyKeys(item).forEach(key => selectedCompanyKeys.add(key));
     if (executable.length >= limit) break;
   }
   [...latest.dailyQueue, ...(latest.scheduledLater || [])]

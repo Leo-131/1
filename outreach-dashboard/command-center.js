@@ -154,7 +154,8 @@
       && ['develop', 'discover_and_develop'].includes(task.action)
       && !['sent_confirmed', 'send_unconfirmed', 'failed_open', 'skipped'].includes(task.sendStatus)
       && task.state === 'target_verified'
-      && platformUrl(task);
+      && platformUrl(task)
+      && !sameDayDevelopmentFor(task);
   }
   function executableDevelopmentTasks() {
     const byCustomer = new Map();
@@ -233,10 +234,13 @@
         || taskIndex.get(normalizeKey(item.company))
         || {};
       const touch = confirmedTouchFor({ ...base, ...item });
+      const sameDay = sameDayDevelopmentFor({ ...base, ...item });
       const executionResult = latestExecutionResultFor(item);
       const executionStatus = executionResult && (executionResult.sendStatus || executionResult.status || executionResult.result && executionResult.result.sendStatus);
       const executionEvidence = executionResult && (executionResult.evidence || executionResult.automationEvidence || executionResult.result && executionResult.result.evidence);
       const executionTime = timestampOrEmpty(latestExecution && (latestExecution.completedAt || latestExecution.generatedAt));
+      const sameDayStatus = sameDay && sameDay.status;
+      const sameDayTimestamp = sameDay && sameDay.timestamp;
       return {
         ...base,
         ...item,
@@ -258,20 +262,20 @@
         action: item.action,
         reason: item.reason,
         workingTime: item.workingTime,
-        state: executionStatus === 'sent_confirmed' ? 'outcome_pending'
+        state: (executionStatus === 'sent_confirmed' || sameDayStatus === 'sent_confirmed') ? 'outcome_pending'
           : item.action === 'develop' ? 'target_verified'
           : item.action === 'retry_or_alternate_channel' ? 'outcome_pending'
             : item.action === 'email_priority' ? 'rerouted'
               : item.action === 'verify_target' ? 'profile_scored'
                 : 'auto_skipped',
-        sendStatus: executionStatus || (touch ? 'sent_confirmed' : item.lastStatus || base.sendStatus || ''),
-        lastTouch: executionStatus === 'sent_confirmed' && executionTime ? executionTime : (touch ? touch.timestamp : item.lastTouch || base.lastTouch || ''),
-        evidence: executionEvidence || (touch ? touch.evidence || base.evidence || '' : base.evidence || ''),
+        sendStatus: executionStatus || sameDayStatus || (touch ? 'sent_confirmed' : item.lastStatus || base.sendStatus || ''),
+        lastTouch: executionStatus === 'sent_confirmed' && executionTime ? executionTime : (sameDayTimestamp || (touch ? touch.timestamp : item.lastTouch || base.lastTouch || '')),
+        evidence: executionEvidence || (sameDay && sameDay.evidence) || (touch ? touch.evidence || base.evidence || '' : base.evidence || ''),
         resultCheckedAt: executionResult && executionTime ? executionTime : item.resultCheckedAt || base.resultCheckedAt || '',
         latestExecutionResult: Boolean(executionResult),
         identityStatus: base.identityStatus || (item.url ? 'verified' : 'pending'),
         identityVerified: Boolean(item.url || base.identityVerified),
-        previouslyContacted: Boolean(executionStatus === 'sent_confirmed' || touch || base.previouslyContacted || item.action === 'retry_or_alternate_channel'),
+        previouslyContacted: Boolean(executionStatus === 'sent_confirmed' || sameDay || touch || base.previouslyContacted || item.action === 'retry_or_alternate_channel'),
       };
     });
   }
@@ -378,6 +382,35 @@
       .replace(/^verified-[a-z]+-/i, '')
       .replace(/-(instagram|facebook|website-contact)$/i, ''));
   }
+  const SAME_DAY_DEVELOPMENT_STATUSES = new Set([
+    'sent_confirmed',
+    'send_unconfirmed',
+    'approval_pending',
+    'draft_prepared',
+    'prepared_not_sent',
+    'website_contact_ready',
+    'account_followed',
+    'post_liked',
+  ]);
+  function automationLocalDay(value) {
+    const time = Date.parse(value || '');
+    if (!Number.isFinite(time)) return '';
+    return new Intl.DateTimeFormat('en-CA', {
+      timeZone: 'Asia/Shanghai',
+      year: 'numeric',
+      month: '2-digit',
+      day: '2-digit',
+    }).format(new Date(time));
+  }
+  function isTodayTimestamp(value) {
+    const today = new Intl.DateTimeFormat('en-CA', {
+      timeZone: 'Asia/Shanghai',
+      year: 'numeric',
+      month: '2-digit',
+      day: '2-digit',
+    }).format(new Date());
+    return automationLocalDay(value) === today;
+  }
   function urlHandle(value) {
     const match = String(value || '').match(/instagram\.com\/([^/?#]+)/i);
     return match ? match[1] : '';
@@ -416,13 +449,37 @@
       record && urlHandle(platformUrl(record)),
     ].map(canonicalLeadKey).filter(Boolean);
   }
+  function autonomousLeadKeys(item) {
+    return [
+      item && item.task_id,
+      item && item.taskId,
+      item && item.company,
+      item && item.name,
+      item && urlHandle(item.target_url || item.targetUrl),
+    ].map(canonicalLeadKey).filter(Boolean);
+  }
+  function sameDayDevelopmentFor(record) {
+    const keys = new Set(leadMatchKeys(record));
+    if (!keys.size) return null;
+    return (window.AUTONOMOUS_OUTREACH_RESULTS || [])
+      .filter(item => item && SAME_DAY_DEVELOPMENT_STATUSES.has(item.status))
+      .filter(item => isTodayTimestamp(item.timestamp))
+      .filter(item => autonomousLeadKeys(item).some(key => keys.has(key)))
+      .sort((left, right) => Date.parse(right.timestamp) - Date.parse(left.timestamp))[0] || null;
+  }
   function confirmedTouchFor(record) {
     const keys = new Set(leadMatchKeys(record));
     if (!keys.size) return null;
-    return (data.audit || [])
+    const auditTouches = (data.audit || [])
       .filter(item => item && (item.result === 'sent_confirmed' || item.stage === 'sent_confirmed'))
       .filter(item => keys.has(canonicalLeadKey(item.taskId)))
       .filter(item => isValidTimestamp(item.timestamp))
+      .map(item => ({ timestamp: item.timestamp, evidence: item.evidence || '', status: 'sent_confirmed' }));
+    const resultTouches = (window.AUTONOMOUS_OUTREACH_RESULTS || [])
+      .filter(item => item && item.status === 'sent_confirmed')
+      .filter(item => autonomousLeadKeys(item).some(key => keys.has(key)))
+      .filter(item => isValidTimestamp(item.timestamp));
+    return [...auditTouches, ...resultTouches]
       .sort((left, right) => Date.parse(right.timestamp) - Date.parse(left.timestamp))[0] || null;
   }
   function isValidTimestamp(value) {
