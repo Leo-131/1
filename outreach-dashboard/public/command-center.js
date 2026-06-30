@@ -181,7 +181,7 @@
         name: item.name || base.name || item.company,
         company: item.company || item.name || base.company,
         country: item.countryEn || item.country || base.country || '',
-        keyword: base.keyword || 'outdoor retail partnership',
+        keyword: item.keyword || base.keyword || 'outdoor retail partnership',
         platform: item.platform || base.platform || 'instagram',
         targetUrl: item.platformUrl || item.website || item.url || base.targetUrl || base.verifiedTargetUrl || '',
         verifiedTargetUrl: item.platformUrl || item.website || item.url || base.verifiedTargetUrl || '',
@@ -350,6 +350,9 @@
     if (!Number.isFinite(rightTime)) return left || '';
     return rightTime > leftTime ? right : left;
   }
+  function recordUpdatedAt(record) {
+    return record && (record.lastTouch || record.resultCheckedAt || record.discoveredAt || record.profiledAt || record.date || '');
+  }
   function lastActualTouch(task) {
     return [task.lastTouch, task.sentAt, task.lastAutomationAt]
       .find(value => isValidTimestamp(value)) || '';
@@ -483,6 +486,7 @@
       automationTaskId: row.taskId || row.id || '',
       automationEvidence: row.reason || row.evidence || '',
       resultCheckedAt: latestRun && latestRun.generatedAt || '',
+      discoveredAt: latestRun && latestRun.generatedAt || '',
     };
   }
   function customerRecords() {
@@ -523,6 +527,7 @@
       enriched.automationTaskId = source.taskId || source.id || enriched.automationTaskId;
       enriched.automationEvidence = source.reason || source.evidence || source.sendStatus || enriched.automationEvidence || '';
       enriched.resultCheckedAt = source.resultCheckedAt || (latestRun && latestRun.generatedAt) || enriched.resultCheckedAt || '';
+      enriched.discoveredAt = source.discoveredAt || enriched.discoveredAt || enriched.resultCheckedAt || '';
       return enriched;
     });
     latestRows.forEach(row => {
@@ -846,7 +851,7 @@
     const touchTime = query.get('touchTime') || '';
     const touchFrom = query.get('touchFrom') || '';
     const touchTo = query.get('touchTo') || '';
-    const sort = query.get('sort') || 'fitScore';
+    const sort = query.get('sort') || 'latestUpdate';
     const direction = query.get('direction') === 'asc' ? 'asc' : 'desc';
     const records = customerRecords();
     const indexed = records.map((record, index) => ({ record, index }));
@@ -879,13 +884,14 @@
     const sortableValue = record => {
       if (sort === 'dealProbabilityScore') return dealProbabilityScore(record);
       if (sort === 'fitScore' || sort === 'marketScore') return Number(record[sort] || 0);
+      if (sort === 'latestUpdate') return Date.parse(recordUpdatedAt(record)) || 0;
       if (sort === 'lastTouch') return Date.parse(record.lastTouch || record.date || '') || 0;
       return String(record[sort] || '').toLowerCase();
     };
     filtered.sort((left, right) => {
-      if (sort === 'lastTouch') {
-        const leftTouch = Date.parse(left.record.lastTouch || left.record.date || '');
-        const rightTouch = Date.parse(right.record.lastTouch || right.record.date || '');
+      if (sort === 'lastTouch' || sort === 'latestUpdate') {
+        const leftTouch = Date.parse(sort === 'latestUpdate' ? recordUpdatedAt(left.record) : (left.record.lastTouch || left.record.date || ''));
+        const rightTouch = Date.parse(sort === 'latestUpdate' ? recordUpdatedAt(right.record) : (right.record.lastTouch || right.record.date || ''));
         const missingTouch = !Number.isFinite(leftTouch) || !Number.isFinite(rightTouch);
         if (missingTouch) {
           if (!Number.isFinite(leftTouch) && !Number.isFinite(rightTouch)) return 0;
@@ -921,11 +927,11 @@
         <select id="customer-touch-time" name="touchTime"><option value="">全部触达时间</option><option value="none" ${touchTime === 'none' ? 'selected' : ''}>无触达时间</option><option value="7" ${touchTime === '7' ? 'selected' : ''}>最近 7 天</option><option value="30" ${touchTime === '30' ? 'selected' : ''}>最近 30 天</option><option value="90" ${touchTime === '90' ? 'selected' : ''}>最近 90 天</option><option value="custom" ${touchTime === 'custom' ? 'selected' : ''}>自定义日期</option></select>
         <input id="customer-touch-from" name="touchFrom" type="date" value="${esc(touchFrom)}" title="最近触达开始日期">
         <input id="customer-touch-to" name="touchTo" type="date" value="${esc(touchTo)}" title="最近触达结束日期">
-        <select id="customer-sort" name="sort"><option value="dealProbabilityScore" ${sort === 'dealProbabilityScore' ? 'selected' : ''}>成交概率</option><option value="fitScore" ${sort === 'fitScore' ? 'selected' : ''}>ICP 分数</option><option value="marketScore" ${sort === 'marketScore' ? 'selected' : ''}>市场分数</option><option value="lastTouch" ${sort === 'lastTouch' ? 'selected' : ''}>最近触达</option><option value="company" ${sort === 'company' ? 'selected' : ''}>公司</option></select>
+        <select id="customer-sort" name="sort"><option value="latestUpdate" ${sort === 'latestUpdate' ? 'selected' : ''}>最近更新</option><option value="dealProbabilityScore" ${sort === 'dealProbabilityScore' ? 'selected' : ''}>成交概率</option><option value="fitScore" ${sort === 'fitScore' ? 'selected' : ''}>ICP 分数</option><option value="marketScore" ${sort === 'marketScore' ? 'selected' : ''}>市场分数</option><option value="lastTouch" ${sort === 'lastTouch' ? 'selected' : ''}>最近触达</option><option value="company" ${sort === 'company' ? 'selected' : ''}>公司</option></select>
         <input type="hidden" name="direction" value="${direction}">
         <button class="primary" type="submit">筛选</button><a class="cc-reset" href="${urlFor('customers')}">重置筛选</a>
       </form>
-      <div class="cc-table-wrap"><table class="cc-table"><thead><tr>${head('name', '姓名')}${head('company', '公司')}<th>职位</th>${head('country', '国家')}<th>平台</th>${head('status', '状态')}${head('fitScore', 'ICP')}${head('lastTouch', '最近触达')}</tr></thead><tbody>${rows.map(({ record, index }) => {
+      <div class="cc-table-wrap"><table class="cc-table"><thead><tr>${head('name', '姓名')}${head('company', '公司')}<th>职位</th>${head('country', '国家')}<th>平台</th>${head('status', '状态')}${head('fitScore', 'ICP')}${head('latestUpdate', '最近更新 / 触达')}</tr></thead><tbody>${rows.map(({ record, index }) => {
         const key = recordKey(record, index);
         const qualified = isIcpQualified(record);
         const linkClass = qualified ? '' : ' class="cc-strike-link"';
@@ -933,16 +939,88 @@
         const customerHref = target || urlFor('customer', { contact: key });
         const customerLinkAttrs = target ? ` href="${esc(customerHref)}" target="_blank" rel="noopener"` : ` href="${customerHref}"`;
         const archiveLink = target ? `<br><a class="cc-sub-link" href="${urlFor('customer', { contact: key })}">System profile</a>` : '';
-        return `<tr class="${qualified ? '' : 'cc-low-icp'}"><td><a${linkClass}${customerLinkAttrs} title="Open verified customer platform; ${esc(icpExplanation(record))}">${esc(record.name)}</a>${archiveLink}</td><td>${esc(record.company)}${qualified ? '' : '<br><span class="cc-chip amber">Low ICP retained</span>'}</td><td>${esc(record.role)}</td><td>${esc(record.country)}</td><td>${esc(record.platform)}</td><td><span class="cc-chip">${esc(record.status)}</span></td><td title="ICP ${icpScore(record)} + market/contact/region priority">${dealProbabilityScore(record)}</td><td>${esc(record.lastTouch || record.date || '')}</td></tr>`;
+        return `<tr class="${qualified ? '' : 'cc-low-icp'}"><td><a${linkClass}${customerLinkAttrs} title="Open verified customer platform; ${esc(icpExplanation(record))}">${esc(record.name)}</a>${archiveLink}</td><td>${esc(record.company)}${qualified ? '' : '<br><span class="cc-chip amber">Low ICP retained</span>'}</td><td>${esc(record.role)}</td><td>${esc(record.country)}</td><td>${esc(record.platform)}</td><td><span class="cc-chip">${esc(record.status)}</span></td><td title="ICP ${icpScore(record)} + market/contact/region priority">${dealProbabilityScore(record)}</td><td>${esc(recordUpdatedAt(record))}</td></tr>`;
       }).join('')}</tbody></table>${rows.length ? '' : '<div class="cc-empty">没有匹配客户，请重置或调整筛选条件</div>'}</div>`;
   }
+  function countryGeoCode(country) {
+    const key = String(country || '').toLowerCase();
+    const map = {
+      'united states': 'US', usa: 'US', '美国': 'US',
+      canada: 'CA', '加拿大': 'CA',
+      'united kingdom': 'GB', uk: 'GB', '英国': 'GB',
+      france: 'FR', '法国': 'FR',
+      germany: 'DE', '德国': 'DE',
+      netherlands: 'NL', '荷兰': 'NL',
+      australia: 'AU', '澳大利亚': 'AU',
+      'new zealand': 'NZ', '新西兰': 'NZ',
+      indonesia: 'ID', '印度尼西亚': 'ID',
+    };
+    return map[key] || '';
+  }
+  function trendsUrl(keyword, country) {
+    const geo = countryGeoCode(country);
+    const params = new URLSearchParams({
+      date: 'today 12-m',
+      gprop: '',
+      q: keyword,
+    });
+    if (geo) params.set('geo', geo);
+    return `https://trends.google.com/trends/explore?${params.toString()}`;
+  }
+  function commercialSearchTerms(record) {
+    const raw = String(record.keyword || record.keyword_used || record.productCategory || '').toLowerCase();
+    if (/sporting goods/.test(raw)) return ['sporting goods distributor', 'sporting goods wholesale'];
+    if (/retail chain|outdoor retail/.test(raw)) return ['outdoor retail partnership', 'camping gear wholesale', 'outdoor gear distributor'];
+    if (/camping|outdoor/.test(raw)) return ['camping equipment importer', 'camping accessories wholesale'];
+    return ['outdoor retail partnership'];
+  }
+  function seoCountryHeatRows() {
+    const rows = [...latestQueueRows('all'), ...googleDiscoveryRows()];
+    const groups = new Map();
+    rows.forEach(record => {
+      const country = record.countryEn || record.country || 'Global';
+      commercialSearchTerms(record).forEach(keyword => {
+        const key = `${keyword}|${country}`;
+        const item = groups.get(key) || {
+          keyword,
+          country,
+          customers: new Set(),
+          platforms: new Set(),
+          fitTotal: 0,
+          count: 0,
+          contactable: 0,
+        };
+        item.customers.add(record.company || record.name || '');
+        item.platforms.add(record.platform || 'unknown');
+        item.fitTotal += Number(record.fitScore || 0);
+        item.count += 1;
+        if (record.publicEmail || record.contactEmail || record.contactUrl || record.vendorPortal || record.website) item.contactable += 1;
+        groups.set(key, item);
+      });
+    });
+    return Array.from(groups.values()).map(item => {
+      const avgFit = item.count ? item.fitTotal / item.count : 0;
+      const heat = Math.min(100, Math.round(item.customers.size * 18 + item.platforms.size * 8 + avgFit * 0.45 + item.contactable * 5));
+      return {
+        ...item,
+        heat,
+        customerList: Array.from(item.customers).filter(Boolean).slice(0, 4).join(' / '),
+        trendsUrl: trendsUrl(item.keyword, item.country),
+      };
+    }).sort((left, right) => right.heat - left.heat
+      || right.customers.size - left.customers.size
+      || left.country.localeCompare(right.country)
+      || left.keyword.localeCompare(right.keyword)).slice(0, 24);
+  }
   function seo() {
-    const metrics = analytics.buildKeywordMetrics(tasks);
-    const opportunities = analytics.buildKeywordOpportunities(tasks).slice(0, 18);
-    return `${pageHead('SEO 趋势', '用真实转化数据排序关键词，并扩展高商业意图的客户搜索词')}
+    const reportRecords = [...latestReportRecords(), ...executionReportRecords([])];
+    const metrics = analytics.buildKeywordMetrics(reportRecords);
+    const countryHeat = seoCountryHeatRows();
+    const opportunities = analytics.buildKeywordOpportunities(reportRecords).slice(0, 18);
+    return `${pageHead('SEO 趋势', '按最新 Google/队列客户生成关键词与国家热度，并提供逐国家 Google Trends 核验入口')}
       <section class="cc-panel"><div class="cc-panel-head"><h2>真实关键词漏斗</h2><span class="cc-sub">仅统计已确认发送后的回复，不用预测值冒充结果</span></div><div class="cc-panel-body">${metrics.length ? metrics.map(item => `<div class="cc-bar-row"><span>${esc(item.keyword)} · n=${item.sampleSize}</span><div class="cc-bar"><i style="width:${Math.round(item.rates.replyRate * 100)}%"></i></div><b>${Math.round(item.rates.replyRate * 100)}%</b></div>`).join('') : '<div class="cc-empty">暂无已验证关键词数据</div>'}</div></section>
-      <section class="cc-panel keyword-opportunity"><div class="cc-panel-head"><h2>高转化关键词机会池</h2><span class="cc-sub">已实测词优先；推荐词需经过实际触达验证</span></div><div class="cc-table-wrap"><table class="cc-table"><thead><tr><th>关键词</th><th>意图</th><th>目标客户</th><th>证据</th><th>优先级</th><th>趋势核验</th></tr></thead><tbody>${opportunities.map(item => `<tr><td><b>${esc(item.keyword)}</b></td><td>${item.intent === 'transactional' ? '交易型' : '商业型'}</td><td>${esc(item.audience)}</td><td>${item.source === 'observed' ? `实测 n=${item.sampleSize} · 回复 ${Math.round(item.replyRate * 100)}%` : '推荐 · 待验证'}</td><td><span class="cc-chip ${item.priorityScore >= 90 ? 'green' : ''}">${item.priorityScore}</span></td><td><a href="${esc(item.trendsUrl)}" target="_blank" rel="noopener">Google Trends</a></td></tr>`).join('')}</tbody></table></div></section>
-      <section class="cc-panel"><div class="cc-panel-head"><h2>趋势数据状态</h2></div><div class="cc-panel-body"><div class="cc-empty">data_unavailable · 当前没有带地区、周期和采集时间戳的自动趋势数据。已提供逐词 Google Trends 核验入口，不显示猜测值。</div></div></section>`;
+      <section class="cc-panel"><div class="cc-panel-head"><h2>全球国家热度矩阵</h2><span class="cc-sub">基于最新队列客户数、国家、ICP、渠道和联系方式；趋势链接按国家打开 Google Trends</span></div><div class="cc-table-wrap"><table class="cc-table"><thead><tr><th>关键词</th><th>国家</th><th>本地开发热度</th><th>客户 / 渠道</th><th>代表客户</th><th>国家趋势核验</th></tr></thead><tbody>${countryHeat.map(item => `<tr><td><b>${esc(item.keyword)}</b></td><td>${esc(item.country)}</td><td><span class="cc-chip ${item.heat >= 85 ? 'green' : item.heat >= 70 ? 'amber' : ''}">${item.heat}</span></td><td>${item.customers.size} 客户 · ${Array.from(item.platforms).join(' / ')}</td><td>${esc(item.customerList)}</td><td><a href="${esc(item.trendsUrl)}" target="_blank" rel="noopener">Google Trends ${esc(countryGeoCode(item.country) || 'Global')}</a></td></tr>`).join('')}</tbody></table></div></section>
+      <section class="cc-panel keyword-opportunity"><div class="cc-panel-head"><h2>高转化关键词机会池</h2><span class="cc-sub">实测词优先，推荐词必须落到国家/客户热度后再执行</span></div><div class="cc-table-wrap"><table class="cc-table"><thead><tr><th>关键词</th><th>意图</th><th>目标客户</th><th>证据</th><th>优先级</th><th>趋势核验</th></tr></thead><tbody>${opportunities.map(item => `<tr><td><b>${esc(item.keyword)}</b></td><td>${item.intent === 'transactional' ? '交易型' : '商业型'}</td><td>${esc(item.audience)}</td><td>${item.source === 'observed' ? `实测 n=${item.sampleSize} · 回复 ${Math.round(item.replyRate * 100)}%` : '推荐 · 待国家热度验证'}</td><td><span class="cc-chip ${item.priorityScore >= 90 ? 'green' : ''}">${item.priorityScore}</span></td><td><a href="${esc(item.trendsUrl)}" target="_blank" rel="noopener">Global Trends</a></td></tr>`).join('')}</tbody></table></div></section>`;
   }
   function experiments() {
     const metrics = analytics.buildTemplateMetrics(tasks);

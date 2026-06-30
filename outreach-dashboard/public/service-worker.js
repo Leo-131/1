@@ -1,4 +1,4 @@
-﻿const CACHE_NAME = 'customer-development-system-v18-7-15-20260630-contact-enrichment-flow';
+﻿const CACHE_NAME = 'customer-development-system-v18-7-16-20260630-seo-country-refresh';
 const APP_SHELL = [
   './',
   './index.html',
@@ -87,6 +87,7 @@ self.addEventListener('fetch', (event) => {
     })
   );
 });
+
 
 
 
