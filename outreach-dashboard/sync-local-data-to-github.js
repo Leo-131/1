@@ -33,6 +33,21 @@ function copyIfExists(from, to) {
   return true;
 }
 
+function writeJsonScript(file, globalName, value) {
+  fs.writeFileSync(file, `window.${globalName} = ${JSON.stringify(value, null, 2)};\n`);
+}
+
+function writeSyncStatus(status) {
+  const output = {
+    updatedAt: new Date().toISOString(),
+    ...status,
+  };
+  fs.mkdirSync(OUT, { recursive: true });
+  fs.writeFileSync(path.join(OUT, 'latest-status.json'), JSON.stringify(output, null, 2));
+  writeJsonScript(path.join(OUT, 'latest-status.js'), 'GITHUB_SYNC_LATEST', output);
+  return output;
+}
+
 function git(args, options = {}) {
   const output = execFileSync('git', args, {
     cwd: ROOT,
@@ -77,17 +92,46 @@ function syncOnce() {
     'github-sync',
     'daily-automation-latest.js',
     'google-lead-discovery-latest.js',
+    'daily-automation-execution-latest.js',
     'sync-local-data-to-github.js',
     'package.json',
   ];
   git(['add', '--', ...paths], { stdio: 'pipe' });
   if (!hasChanges(paths)) {
+    writeSyncStatus({
+      ok: true,
+      pushed: false,
+      branch: git(['branch', '--show-current']),
+      localCommit: git(['rev-parse', 'HEAD']),
+      message: 'No local data changes to sync',
+    });
     console.log('github sync: no local data changes');
     return false;
   }
   const message = `sync: local outreach data ${latestDate}`;
   git(['commit', '-m', message], { stdio: 'inherit' });
-  if (PUSH) git(['push', 'origin', git(['branch', '--show-current'])], { stdio: 'inherit' });
+  const branch = git(['branch', '--show-current']);
+  const localCommit = git(['rev-parse', 'HEAD']);
+  const remoteCommit = git(['ls-remote', 'origin', `refs/heads/${branch}`]).split(/\s+/)[0] || '';
+  if (PUSH) {
+    try {
+      git(['push', 'origin', branch], { stdio: 'inherit' });
+      writeSyncStatus({ ok: true, pushed: true, branch, localCommit, remoteCommit, message });
+    } catch (error) {
+      writeSyncStatus({
+        ok: false,
+        pushed: false,
+        branch,
+        localCommit,
+        remoteCommit,
+        message,
+        error: error.message || String(error),
+      });
+      throw error;
+    }
+  } else {
+    writeSyncStatus({ ok: true, pushed: false, branch, localCommit, remoteCommit, message: `${message} (no push)` });
+  }
   console.log(`github sync: ${message}`);
   return true;
 }
