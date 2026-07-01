@@ -1,5 +1,5 @@
 window.DAILY_AUTOMATION_LATEST = {
-  "generatedAt": "2026-07-01T15:02:49.465Z",
+  "generatedAt": "2026-07-01T16:04:49.794Z",
   "date": "2026-07-01",
   "mode": "daily-icp-first-automation-loop",
   "executionLayer": "Codex Chrome Extension primary; AutoClaw compatible",
@@ -8,8 +8,8 @@ window.DAILY_AUTOMATION_LATEST = {
     "quota": {
       "total": {
         "target": 100,
-        "planned": 1,
-        "gap": 99
+        "planned": 0,
+        "gap": 100
       },
       "develop": {
         "target": 70,
@@ -23,8 +23,8 @@ window.DAILY_AUTOMATION_LATEST = {
       },
       "retry_or_alternate_channel": {
         "target": 10,
-        "planned": 1,
-        "gap": 9
+        "planned": 0,
+        "gap": 10
       },
       "verify_target": {
         "target": 5,
@@ -52,10 +52,10 @@ window.DAILY_AUTOMATION_LATEST = {
     "highIcp": 16,
     "readyToDevelop": 0,
     "dueNow": 1,
-    "googleDiscovered": 0,
+    "googleDiscovered": 1,
     "facebookDiscovered": 0,
-    "websiteContactDiscovered": 0,
-    "scheduledLater": 0,
+    "websiteContactDiscovered": 1,
+    "scheduledLater": 1,
     "cooldown": 30,
     "emailPriority": 0,
     "openAgencyMarket": 15,
@@ -65,54 +65,86 @@ window.DAILY_AUTOMATION_LATEST = {
   },
   "dailyQueue": [
     {
-      "id": "verified-Instagram-triedandtrout",
-      "name": "triedandtrout",
-      "company": "Tried & Trout Supply Co",
-      "platform": "instagram",
-      "country": "美国",
-      "countryEn": "United States",
-      "fitScore": 73,
-      "fitTier": "A",
-      "marketScore": 4.4,
-      "marketStatus": "可开拓",
-      "agencyState": "open",
-      "url": "https://www.instagram.com/triedandtroutsupply/",
-      "website": "",
-      "platformUrl": "https://www.instagram.com/triedandtroutsupply/",
-      "contactUrl": "",
-      "contactSearchUrl": "",
-      "emailFrom": "",
-      "websiteContactSubject": "",
-      "websiteContactMessage": "",
-      "websiteContactFlow": "",
-      "publicEmail": "",
-      "publicEmailStatus": "",
+      "linkedinUrl": "https://www.linkedin.com/company/bassproshops",
+      "founded": "1972",
+      "headquarters": "Springfield, Missouri, United States",
+      "companyScale": "150+ Bass Pro/Cabela retail locations across North America; large omnichannel outdoor retail group",
+      "coverage": "North America",
+      "mainBrands": "Bass Pro Shops, Cabela’s, Tracker Boats and broad third-party outdoor/fishing/camping brands",
+      "salesChannel": "Destination retail stores, ecommerce, catalog, loyalty/membership, vendor portal",
+      "buyingCapability": "Very high; formal vendor submission via Bass Pro Shops/Cabela’s vendor relations",
+      "decisionMaker": "Camping/outdoor accessories category merchant or vendor relations team",
+      "publicEmail": "vendorrelations@basspro.com",
+      "publicEmailStatus": "Official vendor submission email for finished product/company information.",
       "contactPhone": "",
-      "vendorPortal": "",
-      "linkedinUrl": "",
-      "headquarters": "",
-      "founded": "",
-      "companyScale": "",
-      "dataSources": null,
-      "alternateChannels": null,
-      "lastStatus": "failed_open",
-      "lastEvidence": "profile_valid_no_message_button",
-      "lastTouch": "",
-      "action": "retry_or_alternate_channel",
-      "reason": "profile_valid_no_message_button",
+      "vendorPortal": "https://vendorportal.basspro.com/",
+      "linkedinCompany": "https://www.linkedin.com/company/bassproshops",
+      "contactNote": "Send product information, company information, website link and primary contact to vendor relations with the right department subject line.",
+      "dataSources": [
+        "Bass Pro Shops Vendor Relations Portal",
+        "Bass Pro Shops LinkedIn"
+      ],
+      "id": "google-customer-bass-pro-shops-website-contact",
+      "name": "Bass Pro Shops",
+      "company": "Bass Pro Shops",
+      "country": "United States",
+      "countryEn": "United States",
+      "fitScore": 96,
+      "fitTier": "A+",
+      "marketScore": 4.5,
+      "marketStatus": "open",
+      "agencyState": "open",
+      "keyword": "outdoor retail chain",
+      "role": "Outdoor camping accessories buyer or category merchant.",
+      "background": "Major North American outdoor, fishing, hunting, camping, and boating retailer with strong channel fit.",
+      "buyerPersona": "Outdoor camping accessories buyer or category merchant.",
+      "productCategory": "outdoor retail chain",
+      "businessModel": "Retail Chain",
+      "productFit": "FLEXTAIL portable pumps, outdoor power, camping lighting and compact camping accessories",
+      "opportunity": "Major North American outdoor, fishing, hunting, camping, and boating retailer with strong channel fit.",
+      "linkedin_url": "https://www.linkedin.com/company/bassproshops",
+      "linkedin": "https://www.linkedin.com/company/bassproshops",
+      "contactEmail": "vendorrelations@basspro.com",
+      "website": "https://www.basspro.com/",
+      "evidenceUrl": "https://www.google.com/search?q=%22Bass%20Pro%20Shops%22%20%22outdoor%20retail%20chain%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
+      "query": "https://www.google.com/search?q=%22Bass%20Pro%20Shops%22%20%22outdoor%20retail%20chain%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
+      "source": "google_customer_discovery",
+      "identityStatus": "verified",
+      "partnershipStatus": "",
+      "doNotOutreach": false,
+      "automationStatus": "",
+      "partnerNote": "",
+      "sendStatus": "",
       "workingTime": {
         "dueNow": true,
-        "timeZone": "America/New_York",
-        "localTime": "Wed 11:02",
-        "window": "morning",
-        "nextBest": "now",
-        "weight": 1
+        "timeZone": "local-market",
+        "localTime": "2026/7/2 00:02:14",
+        "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
+      "platform": "email",
+      "platformUrl": "https://www.basspro.com/shop/en/contact-us",
+      "url": "https://www.basspro.com/shop/en/contact-us",
+      "contactUrl": "https://www.basspro.com/shop/en/contact-us",
+      "contactSearchUrl": "https://www.google.com/search?q=site%3Awww.basspro.com%20%22Bass%20Pro%20Shops%22%20contact%20buyer%20wholesale%20email%20vendor",
+      "emailFrom": "leo@flextailgear.com",
+      "websiteContactSubject": "Flextail & Vollyc | Lightweight Outdoor & 3C Electronics – Potential Cooperation",
+      "websiteContactMessage": "Dear Bass Pro Shops Team,\n\nNice to e-meet you.\nI am Leo, from Flextail & Vollyc.\n\nFlextail is our first and core brand, specializing in ultralight electric products for outdoor, travel, and home use. The brand is currently Top 1 on Amazon, with strong global sell-through and a proven product-market fit.\nVollyc, our second brand, focuses on 3C electronics, targeting practical, high-rotation consumer use cases.\n\nFrom our perspective, your platform and positioning are highly aligned with Flextail’s product philosophy, especially in lightweight outdoor and travel-oriented electrics.\n\nWe have already contacted with your team, and we are now actively exploring opportunities in other regions.\nAttached, you will find a brief introduction to our brands and current product catalog for your reference.\n\nLooking ahead, we are planning to launch over 36 new SKUs in 2026, covering multiple usage scenarios and price tiers, which we believe could be of interest to your assortment strategy.\n\nIf you are available, I would greatly appreciate the opportunity to arrange a short introductory video meeting to present our brands and discuss potential collaboration opportunities.\n\nThank you for your time and consideration. I look forward to your reply.\n\n[Flextail.com](https://www.flextail.com/), [vollyc.com](https://vollyc.com/)\n\n[Sincerely](https://wa.me/8617321028184)\n[Best Regard](https://wa.me/8617321028184)\n[Leo Liu](https://wa.me/8617321028184)\n[Sales](https://wa.me/8617321028184) [& Operations Director](https://wa.me/8617321028184)\n[Brand & ODM Department](https://wa.me/8617321028184)\n[Tel/whatsapp:  +86 17321028184](https://wa.me/8617321028184)\n\n[Email:  Leo@flextailgear.com](https://wa.me/8617321028184)\n[SHANGHAI FLEXTAIL TECHNOLOGY CO.,LTD.](https://wa.me/8617321028184)\n[Room103, Building No.6, No.1 Yanjiaqiao, Pudong District, ShangHai, China](https://wa.me/8617321028184)\n",
+      "websiteContactFlow": "open_official_contact_us_fill_attach_auto_submit",
+      "action": "email_priority",
+      "reason": "official_website_contact_channel",
+      "alternateChannels": {
+        "instagram": "https://www.instagram.com/bassproshops/",
+        "facebook": "https://www.facebook.com/bassproshops",
+        "websiteContact": "https://www.basspro.com/shop/en/contact-us"
+      },
+      "invalidChannels": {},
+      "identitySource": "official website contact path + Google buyer/contact query",
+      "channelPriority": 3,
       "targetRegion": "americas",
       "targetRegionScore": 30,
-      "contactChannelScore": 0,
-      "dealProbabilityScore": 174,
-      "priorityScore": 174
+      "contactChannelScore": 29,
+      "dealProbabilityScore": 227,
+      "priorityScore": 225
     }
   ],
   "cooldownQueue": [
@@ -151,14 +183,14 @@ window.DAILY_AUTOMATION_LATEST = {
       "lastEvidence": "instagram_message_sent_confirmed_composer_cleared;instagram_post_opened;post_liked;comment_submitted;follow_already_active",
       "lastTouch": "2026-07-01T06:31:41.338Z",
       "action": "cooldown",
-      "reason": "same_day_customer_already_developed",
+      "reason": "previous_sent_confirmed_no_duplicate_dm",
       "workingTime": {
-        "dueNow": true,
+        "dueNow": false,
         "timeZone": "Europe/London",
-        "localTime": "Wed 16:02",
-        "window": "afternoon",
-        "nextBest": "now",
-        "weight": 0.9
+        "localTime": "Wed 17:04",
+        "window": "outside_work_hours",
+        "nextBest": "Europe/London morning",
+        "weight": 0
       },
       "targetRegion": "europe",
       "targetRegionScore": 32,
@@ -203,12 +235,12 @@ window.DAILY_AUTOMATION_LATEST = {
       "action": "cooldown",
       "reason": "previous_sent_confirmed_no_duplicate_dm",
       "workingTime": {
-        "dueNow": true,
+        "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Wed 11:02",
-        "window": "morning",
-        "nextBest": "now",
-        "weight": 1
+        "localTime": "Wed 12:04",
+        "window": "outside_work_hours",
+        "nextBest": "America/New_York afternoon",
+        "weight": 0
       },
       "targetRegion": "americas",
       "targetRegionScore": 30,
@@ -253,12 +285,12 @@ window.DAILY_AUTOMATION_LATEST = {
       "action": "cooldown",
       "reason": "previous_sent_confirmed_no_duplicate_dm",
       "workingTime": {
-        "dueNow": true,
+        "dueNow": false,
         "timeZone": "Europe/London",
-        "localTime": "Wed 16:02",
-        "window": "afternoon",
-        "nextBest": "now",
-        "weight": 0.9
+        "localTime": "Wed 17:04",
+        "window": "outside_work_hours",
+        "nextBest": "Europe/London morning",
+        "weight": 0
       },
       "targetRegion": "europe",
       "targetRegionScore": 32,
@@ -303,12 +335,12 @@ window.DAILY_AUTOMATION_LATEST = {
       "action": "cooldown",
       "reason": "previous_sent_confirmed_no_duplicate_dm",
       "workingTime": {
-        "dueNow": true,
+        "dueNow": false,
         "timeZone": "Europe/London",
-        "localTime": "Wed 16:02",
-        "window": "afternoon",
-        "nextBest": "now",
-        "weight": 0.9
+        "localTime": "Wed 17:04",
+        "window": "outside_work_hours",
+        "nextBest": "Europe/London morning",
+        "weight": 0
       },
       "targetRegion": "europe",
       "targetRegionScore": 32,
@@ -348,17 +380,17 @@ window.DAILY_AUTOMATION_LATEST = {
       "dataSources": null,
       "alternateChannels": null,
       "lastStatus": "approval_pending",
-      "lastEvidence": "contact_entry_verified;contact_form_detected;contact_entry_clicked:contact us;website_contact_form_fields_prepared;marketing_attachment_missing",
-      "lastTouch": "2026-07-01T00:03:17.556Z",
+      "lastEvidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:2",
+      "lastTouch": "2026-07-01T16:03:27.104Z",
       "action": "cooldown",
       "reason": "same_day_customer_already_developed",
       "workingTime": {
-        "dueNow": true,
+        "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Wed 11:02",
-        "window": "morning",
-        "nextBest": "now",
-        "weight": 1
+        "localTime": "Wed 12:04",
+        "window": "outside_work_hours",
+        "nextBest": "America/Toronto afternoon",
+        "weight": 0
       },
       "targetRegion": "americas",
       "targetRegionScore": 30,
@@ -403,12 +435,12 @@ window.DAILY_AUTOMATION_LATEST = {
       "action": "cooldown",
       "reason": "previous_sent_confirmed_no_duplicate_dm",
       "workingTime": {
-        "dueNow": true,
+        "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Wed 11:02",
-        "window": "morning",
-        "nextBest": "now",
-        "weight": 1
+        "localTime": "Wed 12:04",
+        "window": "outside_work_hours",
+        "nextBest": "America/Toronto afternoon",
+        "weight": 0
       },
       "targetRegion": "americas",
       "targetRegionScore": 30,
@@ -455,7 +487,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Asia/Jakarta",
-        "localTime": "Wed 22:02",
+        "localTime": "Wed 23:04",
         "window": "outside_work_hours",
         "nextBest": "Asia/Jakarta morning",
         "weight": 0
@@ -505,7 +537,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Australia/Sydney",
-        "localTime": "Thu 01:02",
+        "localTime": "Thu 02:04",
         "window": "outside_work_hours",
         "nextBest": "Australia/Sydney morning",
         "weight": 0
@@ -555,7 +587,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Pacific/Auckland",
-        "localTime": "Thu 03:02",
+        "localTime": "Thu 04:04",
         "window": "outside_work_hours",
         "nextBest": "Pacific/Auckland morning",
         "weight": 0
@@ -605,7 +637,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Pacific/Auckland",
-        "localTime": "Thu 03:02",
+        "localTime": "Thu 04:04",
         "window": "outside_work_hours",
         "nextBest": "Pacific/Auckland morning",
         "weight": 0
@@ -651,11 +683,11 @@ window.DAILY_AUTOMATION_LATEST = {
       "lastEvidence": "instagram_message_sent_confirmed_composer_cleared;instagram_post_opened;post_liked;comment_submitted;follow_already_active",
       "lastTouch": "2026-06-30T21:03:40.471Z",
       "action": "cooldown",
-      "reason": "same_day_customer_already_developed",
+      "reason": "previous_sent_confirmed_no_duplicate_dm",
       "workingTime": {
         "dueNow": false,
         "timeZone": "Pacific/Auckland",
-        "localTime": "Thu 03:02",
+        "localTime": "Thu 04:04",
         "window": "outside_work_hours",
         "nextBest": "Pacific/Auckland morning",
         "weight": 0
@@ -705,7 +737,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Pacific/Auckland",
-        "localTime": "Thu 03:02",
+        "localTime": "Thu 04:04",
         "window": "outside_work_hours",
         "nextBest": "Pacific/Auckland morning",
         "weight": 0
@@ -751,11 +783,11 @@ window.DAILY_AUTOMATION_LATEST = {
       "lastEvidence": "instagram_message_sent_confirmed_composer_cleared;instagram_post_opened;post_liked;comment_submitted;follow_already_active",
       "lastTouch": "2026-06-30T21:04:33.119Z",
       "action": "cooldown",
-      "reason": "same_day_customer_already_developed",
+      "reason": "previous_sent_confirmed_no_duplicate_dm",
       "workingTime": {
         "dueNow": false,
         "timeZone": "Pacific/Auckland",
-        "localTime": "Thu 03:02",
+        "localTime": "Thu 04:04",
         "window": "outside_work_hours",
         "nextBest": "Pacific/Auckland morning",
         "weight": 0
@@ -805,7 +837,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Asia/Kolkata",
-        "localTime": "Wed 20:32",
+        "localTime": "Wed 21:34",
         "window": "outside_work_hours",
         "nextBest": "Asia/Kolkata morning",
         "weight": 0
@@ -870,14 +902,14 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/1 23:02:49",
+        "localTime": "2026/7/2 00:02:14",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
       "platformUrl": "https://www.instagram.com/bassproshops/",
       "url": "https://www.instagram.com/bassproshops/",
       "action": "cooldown",
-      "reason": "same_day_customer_already_developed",
+      "reason": "7_day_no_repeat_touch",
       "alternateChannels": {
         "instagram": "https://www.instagram.com/bassproshops/",
         "facebook": "https://www.facebook.com/bassproshops",
@@ -890,9 +922,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "contactChannelScore": 29,
       "dealProbabilityScore": 227,
       "priorityScore": 227,
-      "lastStatus": "approval_pending",
-      "lastEvidence": "website_page_unavailable_403: Access Denied\nYou don't have permission to access \"http://www.basspro.com/shop/en/contact-us\" on this server.\n\nReference #18.b2d4ce17.1782887310.1cbe3dba\n\nhttps://errors.edgesuite.;website_contact_cdp_unavailable_form_not_prepared;website_contact_target_attempts:1",
-      "lastTouch": "2026-07-01T06:28:33.983Z"
+      "lastStatus": "sent_confirmed",
+      "lastEvidence": "instagram_message_sent_confirmed_composer_cleared",
+      "lastTouch": "2026-06-26T02:00:02.750Z"
     },
     {
       "linkedinUrl": "https://www.linkedin.com/company/bassproshops",
@@ -948,14 +980,14 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/1 23:02:49",
+        "localTime": "2026/7/2 00:02:14",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
       "platformUrl": "https://www.facebook.com/bassproshops",
       "url": "https://www.facebook.com/bassproshops",
       "action": "cooldown",
-      "reason": "same_day_customer_already_developed",
+      "reason": "7_day_no_repeat_touch",
       "alternateChannels": {
         "instagram": "https://www.instagram.com/bassproshops/",
         "facebook": "https://www.facebook.com/bassproshops",
@@ -970,94 +1002,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "contactChannelScore": 29,
       "dealProbabilityScore": 227,
       "priorityScore": 227,
-      "lastStatus": "approval_pending",
-      "lastEvidence": "website_page_unavailable_403: Access Denied\nYou don't have permission to access \"http://www.basspro.com/shop/en/contact-us\" on this server.\n\nReference #18.b2d4ce17.1782887310.1cbe3dba\n\nhttps://errors.edgesuite.;website_contact_cdp_unavailable_form_not_prepared;website_contact_target_attempts:1",
-      "lastTouch": "2026-07-01T06:28:33.983Z"
-    },
-    {
-      "linkedinUrl": "https://www.linkedin.com/company/bassproshops",
-      "founded": "1972",
-      "headquarters": "Springfield, Missouri, United States",
-      "companyScale": "150+ Bass Pro/Cabela retail locations across North America; large omnichannel outdoor retail group",
-      "coverage": "North America",
-      "mainBrands": "Bass Pro Shops, Cabela’s, Tracker Boats and broad third-party outdoor/fishing/camping brands",
-      "salesChannel": "Destination retail stores, ecommerce, catalog, loyalty/membership, vendor portal",
-      "buyingCapability": "Very high; formal vendor submission via Bass Pro Shops/Cabela’s vendor relations",
-      "decisionMaker": "Camping/outdoor accessories category merchant or vendor relations team",
-      "publicEmail": "vendorrelations@basspro.com",
-      "publicEmailStatus": "Official vendor submission email for finished product/company information.",
-      "contactPhone": "",
-      "vendorPortal": "https://vendorportal.basspro.com/",
-      "linkedinCompany": "https://www.linkedin.com/company/bassproshops",
-      "contactNote": "Send product information, company information, website link and primary contact to vendor relations with the right department subject line.",
-      "dataSources": [
-        "Bass Pro Shops Vendor Relations Portal",
-        "Bass Pro Shops LinkedIn"
-      ],
-      "id": "google-customer-bass-pro-shops-website-contact",
-      "name": "Bass Pro Shops",
-      "company": "Bass Pro Shops",
-      "country": "United States",
-      "countryEn": "United States",
-      "fitScore": 96,
-      "fitTier": "A+",
-      "marketScore": 4.5,
-      "marketStatus": "open",
-      "agencyState": "open",
-      "keyword": "outdoor retail chain",
-      "role": "Outdoor camping accessories buyer or category merchant.",
-      "background": "Major North American outdoor, fishing, hunting, camping, and boating retailer with strong channel fit.",
-      "buyerPersona": "Outdoor camping accessories buyer or category merchant.",
-      "productCategory": "outdoor retail chain",
-      "businessModel": "Retail Chain",
-      "productFit": "FLEXTAIL portable pumps, outdoor power, camping lighting and compact camping accessories",
-      "opportunity": "Major North American outdoor, fishing, hunting, camping, and boating retailer with strong channel fit.",
-      "linkedin_url": "https://www.linkedin.com/company/bassproshops",
-      "linkedin": "https://www.linkedin.com/company/bassproshops",
-      "contactEmail": "vendorrelations@basspro.com",
-      "website": "https://www.basspro.com/",
-      "evidenceUrl": "https://www.google.com/search?q=%22Bass%20Pro%20Shops%22%20%22outdoor%20retail%20chain%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "query": "https://www.google.com/search?q=%22Bass%20Pro%20Shops%22%20%22outdoor%20retail%20chain%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "source": "google_customer_discovery",
-      "identityStatus": "verified",
-      "partnershipStatus": "",
-      "doNotOutreach": false,
-      "automationStatus": "",
-      "partnerNote": "",
-      "sendStatus": "",
-      "workingTime": {
-        "dueNow": true,
-        "timeZone": "local-market",
-        "localTime": "2026/7/1 23:02:49",
-        "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
-      },
-      "platform": "email",
-      "platformUrl": "https://www.basspro.com/shop/en/contact-us",
-      "url": "https://www.basspro.com/shop/en/contact-us",
-      "contactUrl": "https://www.basspro.com/shop/en/contact-us",
-      "contactSearchUrl": "https://www.google.com/search?q=site%3Awww.basspro.com%20%22Bass%20Pro%20Shops%22%20contact%20buyer%20wholesale%20email%20vendor",
-      "emailFrom": "leo@flextailgear.com",
-      "websiteContactSubject": "Flextail & Vollyc | Lightweight Outdoor & 3C Electronics – Potential Cooperation",
-      "websiteContactMessage": "Dear Bass Pro Shops Team,\n\nNice to e-meet you.\nI am Leo, from Flextail & Vollyc.\n\nFlextail is our first and core brand, specializing in ultralight electric products for outdoor, travel, and home use. The brand is currently Top 1 on Amazon, with strong global sell-through and a proven product-market fit.\nVollyc, our second brand, focuses on 3C electronics, targeting practical, high-rotation consumer use cases.\n\nFrom our perspective, your platform and positioning are highly aligned with Flextail’s product philosophy, especially in lightweight outdoor and travel-oriented electrics.\n\nWe have already contacted with your team, and we are now actively exploring opportunities in other regions.\nAttached, you will find a brief introduction to our brands and current product catalog for your reference.\n\nLooking ahead, we are planning to launch over 36 new SKUs in 2026, covering multiple usage scenarios and price tiers, which we believe could be of interest to your assortment strategy.\n\nIf you are available, I would greatly appreciate the opportunity to arrange a short introductory video meeting to present our brands and discuss potential collaboration opportunities.\n\nThank you for your time and consideration. I look forward to your reply.\n\n[Flextail.com](https://www.flextail.com/), [vollyc.com](https://vollyc.com/)\n\n[Sincerely](https://wa.me/8617321028184)\n[Best Regard](https://wa.me/8617321028184)\n[Leo Liu](https://wa.me/8617321028184)\n[Sales](https://wa.me/8617321028184) [& Operations Director](https://wa.me/8617321028184)\n[Brand & ODM Department](https://wa.me/8617321028184)\n[Tel/whatsapp:  +86 17321028184](https://wa.me/8617321028184)\n\n[Email:  Leo@flextailgear.com](https://wa.me/8617321028184)\n[SHANGHAI FLEXTAIL TECHNOLOGY CO.,LTD.](https://wa.me/8617321028184)\n[Room103, Building No.6, No.1 Yanjiaqiao, Pudong District, ShangHai, China](https://wa.me/8617321028184)\n",
-      "websiteContactFlow": "open_official_contact_us_fill_attach_auto_submit",
-      "action": "cooldown",
-      "reason": "same_day_customer_already_developed",
-      "alternateChannels": {
-        "instagram": "https://www.instagram.com/bassproshops/",
-        "facebook": "https://www.facebook.com/bassproshops",
-        "websiteContact": "https://www.basspro.com/shop/en/contact-us"
-      },
-      "invalidChannels": {},
-      "identitySource": "official website contact path + Google buyer/contact query",
-      "channelPriority": 3,
-      "targetRegion": "americas",
-      "targetRegionScore": 30,
-      "contactChannelScore": 29,
-      "dealProbabilityScore": 227,
-      "priorityScore": 227,
-      "lastStatus": "approval_pending",
-      "lastEvidence": "website_page_unavailable_403: Access Denied\nYou don't have permission to access \"http://www.basspro.com/shop/en/contact-us\" on this server.\n\nReference #18.b2d4ce17.1782887310.1cbe3dba\n\nhttps://errors.edgesuite.;website_contact_cdp_unavailable_form_not_prepared;website_contact_target_attempts:1",
-      "lastTouch": "2026-07-01T06:28:33.983Z"
+      "lastStatus": "sent_confirmed",
+      "lastEvidence": "instagram_message_sent_confirmed_composer_cleared",
+      "lastTouch": "2026-06-26T02:00:02.750Z"
     },
     {
       "linkedinUrl": "https://www.linkedin.com/company/cabela%27s",
@@ -1113,7 +1060,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/1 23:02:49",
+        "localTime": "2026/7/2 00:02:14",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -1134,8 +1081,8 @@ window.DAILY_AUTOMATION_LATEST = {
       "dealProbabilityScore": 226,
       "priorityScore": 226,
       "lastStatus": "approval_pending",
-      "lastEvidence": "website_page_unavailable_403: Access Denied\nYou don't have permission to access \"http://www.cabelas.com/shop/en/contact-us\" on this server.\n\nReference #18.52bd2817.1782887317.ae8943a\n\nhttps://errors.edgesuite.n;website_contact_cdp_unavailable_form_not_prepared;website_contact_target_attempts:1",
-      "lastTouch": "2026-07-01T06:28:40.186Z"
+      "lastEvidence": "contact_entry_verified;mailto_detected;initial_page_verified;website_contact_form_fields_prepared;marketing_attachment_missing;website_contact_target_attempts:2",
+      "lastTouch": "2026-07-01T16:03:14.884Z"
     },
     {
       "linkedinUrl": "https://www.linkedin.com/company/cabela%27s",
@@ -1191,7 +1138,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/1 23:02:49",
+        "localTime": "2026/7/2 00:02:14",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -1214,8 +1161,8 @@ window.DAILY_AUTOMATION_LATEST = {
       "dealProbabilityScore": 226,
       "priorityScore": 226,
       "lastStatus": "approval_pending",
-      "lastEvidence": "website_page_unavailable_403: Access Denied\nYou don't have permission to access \"http://www.cabelas.com/shop/en/contact-us\" on this server.\n\nReference #18.52bd2817.1782887317.ae8943a\n\nhttps://errors.edgesuite.n;website_contact_cdp_unavailable_form_not_prepared;website_contact_target_attempts:1",
-      "lastTouch": "2026-07-01T06:28:40.186Z"
+      "lastEvidence": "contact_entry_verified;mailto_detected;initial_page_verified;website_contact_form_fields_prepared;marketing_attachment_missing;website_contact_target_attempts:2",
+      "lastTouch": "2026-07-01T16:03:14.884Z"
     },
     {
       "linkedinUrl": "https://www.linkedin.com/company/cabela%27s",
@@ -1271,7 +1218,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/1 23:02:49",
+        "localTime": "2026/7/2 00:02:14",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -1299,8 +1246,8 @@ window.DAILY_AUTOMATION_LATEST = {
       "dealProbabilityScore": 226,
       "priorityScore": 226,
       "lastStatus": "approval_pending",
-      "lastEvidence": "website_page_unavailable_403: Access Denied\nYou don't have permission to access \"http://www.cabelas.com/shop/en/contact-us\" on this server.\n\nReference #18.52bd2817.1782887317.ae8943a\n\nhttps://errors.edgesuite.n;website_contact_cdp_unavailable_form_not_prepared;website_contact_target_attempts:1",
-      "lastTouch": "2026-07-01T06:28:40.186Z"
+      "lastEvidence": "contact_entry_verified;mailto_detected;initial_page_verified;website_contact_form_fields_prepared;marketing_attachment_missing;website_contact_target_attempts:2",
+      "lastTouch": "2026-07-01T16:03:14.884Z"
     },
     {
       "linkedinUrl": "https://ca.linkedin.com/company/mountainequipmentcompany",
@@ -1356,7 +1303,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/1 23:02:49",
+        "localTime": "2026/7/2 00:02:14",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -1377,8 +1324,8 @@ window.DAILY_AUTOMATION_LATEST = {
       "dealProbabilityScore": 225,
       "priorityScore": 225,
       "lastStatus": "approval_pending",
-      "lastEvidence": "contact_entry_verified;contact_form_detected;contact_entry_clicked:contact us;website_contact_form_fields_prepared;marketing_attachment_missing",
-      "lastTouch": "2026-07-01T00:03:17.556Z"
+      "lastEvidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:2",
+      "lastTouch": "2026-07-01T16:03:27.104Z"
     },
     {
       "linkedinUrl": "https://ca.linkedin.com/company/mountainequipmentcompany",
@@ -1434,7 +1381,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/1 23:02:49",
+        "localTime": "2026/7/2 00:02:14",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -1457,8 +1404,8 @@ window.DAILY_AUTOMATION_LATEST = {
       "dealProbabilityScore": 225,
       "priorityScore": 225,
       "lastStatus": "approval_pending",
-      "lastEvidence": "contact_entry_verified;contact_form_detected;contact_entry_clicked:contact us;website_contact_form_fields_prepared;marketing_attachment_missing",
-      "lastTouch": "2026-07-01T00:03:17.556Z"
+      "lastEvidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:2",
+      "lastTouch": "2026-07-01T16:03:27.104Z"
     },
     {
       "linkedinUrl": "https://ca.linkedin.com/company/mountainequipmentcompany",
@@ -1514,7 +1461,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/1 23:02:49",
+        "localTime": "2026/7/2 00:02:14",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -1542,8 +1489,8 @@ window.DAILY_AUTOMATION_LATEST = {
       "dealProbabilityScore": 225,
       "priorityScore": 225,
       "lastStatus": "approval_pending",
-      "lastEvidence": "contact_entry_verified;contact_form_detected;contact_entry_clicked:contact us;website_contact_form_fields_prepared;marketing_attachment_missing",
-      "lastTouch": "2026-07-01T00:03:17.556Z"
+      "lastEvidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:2",
+      "lastTouch": "2026-07-01T16:03:27.104Z"
     },
     {
       "linkedinUrl": "https://uk.linkedin.com/company/cotswold-outdoor",
@@ -1599,7 +1546,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/1 23:02:49",
+        "localTime": "2026/7/2 00:02:14",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -1677,7 +1624,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/1 23:02:49",
+        "localTime": "2026/7/2 00:02:14",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -1757,7 +1704,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/1 23:02:49",
+        "localTime": "2026/7/2 00:02:14",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -1842,7 +1789,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/1 23:02:49",
+        "localTime": "2026/7/2 00:02:14",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -1863,8 +1810,8 @@ window.DAILY_AUTOMATION_LATEST = {
       "dealProbabilityScore": 223,
       "priorityScore": 223,
       "lastStatus": "approval_pending",
-      "lastEvidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_form_fields_prepared;marketing_attachment_missing;website_contact_target_attempts:1",
-      "lastTouch": "2026-07-01T06:28:54.823Z"
+      "lastEvidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:2",
+      "lastTouch": "2026-07-01T16:03:37.811Z"
     },
     {
       "linkedinUrl": "https://www.linkedin.com/company/decathlon-group",
@@ -1920,7 +1867,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/1 23:02:49",
+        "localTime": "2026/7/2 00:02:14",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -1943,8 +1890,8 @@ window.DAILY_AUTOMATION_LATEST = {
       "dealProbabilityScore": 223,
       "priorityScore": 223,
       "lastStatus": "approval_pending",
-      "lastEvidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_form_fields_prepared;marketing_attachment_missing;website_contact_target_attempts:1",
-      "lastTouch": "2026-07-01T06:28:54.823Z"
+      "lastEvidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:2",
+      "lastTouch": "2026-07-01T16:03:37.811Z"
     },
     {
       "linkedinUrl": "https://www.linkedin.com/company/decathlon-group",
@@ -2000,7 +1947,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/1 23:02:49",
+        "localTime": "2026/7/2 00:02:14",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -2028,8 +1975,8 @@ window.DAILY_AUTOMATION_LATEST = {
       "dealProbabilityScore": 223,
       "priorityScore": 223,
       "lastStatus": "approval_pending",
-      "lastEvidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_form_fields_prepared;marketing_attachment_missing;website_contact_target_attempts:1",
-      "lastTouch": "2026-07-01T06:28:54.823Z"
+      "lastEvidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:2",
+      "lastTouch": "2026-07-01T16:03:37.811Z"
     },
     {
       "linkedinUrl": "https://www.linkedin.com/company/decathlon-group",
@@ -2085,7 +2032,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/1 23:02:49",
+        "localTime": "2026/7/2 00:02:14",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -2106,11 +2053,142 @@ window.DAILY_AUTOMATION_LATEST = {
       "dealProbabilityScore": 223,
       "priorityScore": 223,
       "lastStatus": "approval_pending",
-      "lastEvidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_form_fields_prepared;marketing_attachment_missing;website_contact_target_attempts:1",
-      "lastTouch": "2026-07-01T06:28:54.823Z"
+      "lastEvidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:2",
+      "lastTouch": "2026-07-01T16:03:37.811Z"
+    },
+    {
+      "linkedinUrl": "https://www.linkedin.com/company/decathlon-group",
+      "founded": "1976",
+      "headquarters": "Villeneuve-d’Ascq / Lille, France; Germany country operation",
+      "companyScale": "Decathlon Group: 10,001+ employees and 1,800+ stores globally",
+      "coverage": "Germany / Europe / Global Decathlon group",
+      "mainBrands": "Decathlon private-label sports/outdoor brands and marketplace categories",
+      "salesChannel": "Stores, ecommerce, marketplace, group retail operations",
+      "buyingCapability": "Very high; marketplace/vendor onboarding or camping category buyer route",
+      "decisionMaker": "Camping/outdoor category buyer, marketplace partnership, Decathlon Germany vendor onboarding",
+      "publicEmail": "international.media@decathlon.com",
+      "publicEmailStatus": "Public group media email only; buyer/vendor email not publicly verified.",
+      "contactPhone": "",
+      "vendorPortal": "https://www.decathlon.de/help/app/contact",
+      "linkedinCompany": "https://www.linkedin.com/company/decathlon-group",
+      "contactNote": "Use country contact/marketplace route; do not use media email for sales except as routing fallback.",
+      "dataSources": [
+        "Decathlon LinkedIn",
+        "Decathlon group contact page"
+      ],
+      "id": "google-customer-decathlon-germany-facebook",
+      "name": "Decathlon Germany",
+      "company": "Decathlon Germany",
+      "country": "Germany",
+      "countryEn": "Germany",
+      "fitScore": 90,
+      "fitTier": "A+",
+      "marketScore": 4.5,
+      "marketStatus": "open",
+      "agencyState": "open",
+      "keyword": "sporting goods retail chain",
+      "role": "Outdoor/camping category buyer or marketplace partnership lead.",
+      "background": "Large sporting goods retailer with camping, hiking, outdoor, and travel categories.",
+      "buyerPersona": "Outdoor/camping category buyer or marketplace partnership lead.",
+      "productCategory": "sporting goods retail chain",
+      "businessModel": "Retail Chain",
+      "productFit": "FLEXTAIL portable pumps, outdoor power, camping lighting and compact camping accessories",
+      "opportunity": "Large sporting goods retailer with camping, hiking, outdoor, and travel categories.",
+      "linkedin_url": "https://www.linkedin.com/company/decathlon-group",
+      "linkedin": "https://www.linkedin.com/company/decathlon-group",
+      "contactEmail": "international.media@decathlon.com",
+      "website": "https://www.decathlon.de/",
+      "evidenceUrl": "https://www.google.com/search?q=%22Decathlon%20Germany%22%20%22sporting%20goods%20retail%20chain%22%20%22Germany%22%20buyer%20OR%20wholesale%20OR%20contact",
+      "query": "https://www.google.com/search?q=%22Decathlon%20Germany%22%20%22sporting%20goods%20retail%20chain%22%20%22Germany%22%20buyer%20OR%20wholesale%20OR%20contact",
+      "source": "google_customer_discovery",
+      "identityStatus": "verified",
+      "partnershipStatus": "",
+      "doNotOutreach": false,
+      "automationStatus": "",
+      "partnerNote": "",
+      "sendStatus": "",
+      "workingTime": {
+        "dueNow": true,
+        "timeZone": "local-market",
+        "localTime": "2026/7/2 00:02:14",
+        "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
+      },
+      "platform": "facebook",
+      "platformUrl": "https://www.facebook.com/DecathlonDeutschland",
+      "url": "https://www.facebook.com/DecathlonDeutschland",
+      "action": "cooldown",
+      "reason": "same_day_customer_already_developed",
+      "alternateChannels": {
+        "instagram": "https://www.instagram.com/decathlondeutschland/",
+        "facebook": "https://www.facebook.com/DecathlonDeutschland",
+        "websiteContact": "https://www.decathlon.de/help/app/contact"
+      },
+      "invalidChannels": {},
+      "facebookStatus": "verified_official_page_candidate",
+      "identitySource": "official Facebook page candidate + official website + Google background query",
+      "channelPriority": 2,
+      "targetRegion": "europe",
+      "targetRegionScore": 32,
+      "contactChannelScore": 29,
+      "dealProbabilityScore": 223,
+      "priorityScore": 223,
+      "lastStatus": "approval_pending",
+      "lastEvidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:2",
+      "lastTouch": "2026-07-01T16:03:37.811Z"
     }
   ],
-  "scheduledLater": [],
+  "scheduledLater": [
+    {
+      "id": "verified-Instagram-triedandtrout",
+      "name": "triedandtrout",
+      "company": "Tried & Trout Supply Co",
+      "platform": "instagram",
+      "country": "美国",
+      "countryEn": "United States",
+      "fitScore": 73,
+      "fitTier": "A",
+      "marketScore": 4.4,
+      "marketStatus": "可开拓",
+      "agencyState": "open",
+      "url": "https://www.instagram.com/triedandtroutsupply/",
+      "website": "",
+      "platformUrl": "https://www.instagram.com/triedandtroutsupply/",
+      "contactUrl": "",
+      "contactSearchUrl": "",
+      "emailFrom": "",
+      "websiteContactSubject": "",
+      "websiteContactMessage": "",
+      "websiteContactFlow": "",
+      "publicEmail": "",
+      "publicEmailStatus": "",
+      "contactPhone": "",
+      "vendorPortal": "",
+      "linkedinUrl": "",
+      "headquarters": "",
+      "founded": "",
+      "companyScale": "",
+      "dataSources": null,
+      "alternateChannels": null,
+      "lastStatus": "failed_open",
+      "lastEvidence": "profile_valid_no_message_button",
+      "lastTouch": "",
+      "action": "retry_or_alternate_channel",
+      "reason": "profile_valid_no_message_button",
+      "workingTime": {
+        "dueNow": false,
+        "timeZone": "America/New_York",
+        "localTime": "Wed 12:04",
+        "window": "outside_work_hours",
+        "nextBest": "America/New_York afternoon",
+        "weight": 0
+      },
+      "targetRegion": "americas",
+      "targetRegionScore": 30,
+      "contactChannelScore": 0,
+      "dealProbabilityScore": 174,
+      "priorityScore": 174
+    }
+  ],
   "bugChecks": [
     {
       "level": "warn",
