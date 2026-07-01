@@ -22,8 +22,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
         "engine": "codex-chrome-extension-cdp",
         "port": 9224,
         "targetUrl": "https://www.basspro.com/shop/en/contact-us",
-        "tabId": "9210881299814BFC0CFBF4649C42F129",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/9210881299814BFC0CFBF4649C42F129",
+        "tabId": "B98CD5014F294DBD5E6B3E1B0FA763B4",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/B98CD5014F294DBD5E6B3E1B0FA763B4",
         "title": "Access Denied"
       },
       "result": {
@@ -37,8 +37,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
           "engine": "codex-chrome-extension-cdp",
           "port": 9224,
           "targetUrl": "https://www.basspro.com/shop/en/contact-us",
-          "tabId": "9210881299814BFC0CFBF4649C42F129",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/9210881299814BFC0CFBF4649C42F129",
+          "tabId": "B98CD5014F294DBD5E6B3E1B0FA763B4",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/B98CD5014F294DBD5E6B3E1B0FA763B4",
           "title": "Access Denied"
         },
         "sendStatus": "approval_pending",
@@ -62,8 +62,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
         "engine": "codex-chrome-extension-cdp",
         "port": 9224,
         "targetUrl": "https://www.cabelas.com/shop/en/contact-us",
-        "tabId": "6F9C29F17BF86039C4B15F9EFE036DAD",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/6F9C29F17BF86039C4B15F9EFE036DAD",
+        "tabId": "2C66A577B29C4B42061C10C32B80F911",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/2C66A577B29C4B42061C10C32B80F911",
         "title": "Access Denied"
       },
       "result": {
@@ -77,8 +77,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
           "engine": "codex-chrome-extension-cdp",
           "port": 9224,
           "targetUrl": "https://www.cabelas.com/shop/en/contact-us",
-          "tabId": "6F9C29F17BF86039C4B15F9EFE036DAD",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/6F9C29F17BF86039C4B15F9EFE036DAD",
+          "tabId": "2C66A577B29C4B42061C10C32B80F911",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/2C66A577B29C4B42061C10C32B80F911",
           "title": "Access Denied"
         },
         "sendStatus": "approval_pending",
@@ -86,46 +86,6 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
         "draft": "Dear Cabela's Team,\n\nNice to e-meet you.\nI am Leo, from Flextail & Vollyc.\n\nFlextail is our first and core brand, specializing in ultralight electric products for outdoor, travel, and home use. The brand is currently Top 1 on Amazon, with strong global sell-through and a proven product-market fit.\nVollyc, our second brand, focuses on 3C electronics, targeting practical, high-rotation consumer use cases.\n\nFrom our perspective, your platform and positioning are highly aligned with Flextail’s product philosophy, especially in lightweight outdoor and travel-oriented electrics.\n\nWe have already contacted with your team, and we are now actively exploring opportunities in other regions.\nAttached, you will find a brief introduction to our brands and current product catalog for your reference.\n\nLooking ahead, we are planning to launch over 36 new SKUs in 2026, covering multiple usage scenarios and price tiers, which we believe could be of interest to your assortment strategy.\n\nIf you are available, I would greatly appreciate the opportunity to arrange a short introductory video meeting to present our brands and discuss potential collaboration opportunities.\n\nThank you for your time and consideration. I look forward to your reply.\n\n[Flextail.com](https://www.flextail.com/), [vollyc.com](https://vollyc.com/)\n\n[Sincerely](https://wa.me/8617321028184)\n[Best Regard](https://wa.me/8617321028184)\n[Leo Liu](https://wa.me/8617321028184)\n[Sales](https://wa.me/8617321028184) [& Operations Director](https://wa.me/8617321028184)\n[Brand & ODM Department](https://wa.me/8617321028184)\n[Tel/whatsapp:  +86 17321028184](https://wa.me/8617321028184)\n\n[Email:  Leo@flextailgear.com](https://wa.me/8617321028184)\n[SHANGHAI FLEXTAIL TECHNOLOGY CO.,LTD.](https://wa.me/8617321028184)\n[Room103, Building No.6, No.1 Yanjiaqiao, Pudong District, ShangHai, China](https://wa.me/8617321028184)",
         "evidence": "website_contact_entry_not_verified;no_contact_entry_control",
         "output": "{\"verdict\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control\",\"nextAction\":\"Contact page opened, but no verified form, mailto link, vendor/business route, or clickable Contact Us path was detected. Continue manually before marking the lead ready.\",\"subject\":\"Flextail & Vollyc | Lightweight Outdoor & 3C Electronics – Potential Cooperation\",\"draft\":\"Dear Cabela's Team,\\n\\nNice to e-meet you.\\nI am Leo, from Flextail & Vollyc.\\n\\nFlextail is our first and core brand, specializing in ultralight electric products for outdoor, travel, and home use. The brand is currently Top 1 on Amazon, with strong global sell-through and a proven product-market fit.\\nVollyc, our second brand, focuses on 3C electronics, targeting practical, high-rotation consumer use cases.\\n\\nFrom our perspective, your platform and positioning are highly aligned with Flextail’s product philosophy, especially in lightweight outdoor and travel-oriented electrics.\\n\\nWe have already contacted with your team, and we are now actively exploring opportunities in other regions.\\nAttached, you will find a brief introduction to our brands and current product catalog for your reference.\\n\\nLooking ahead, we are planning to launch over 36 new SKUs in 2026, covering multiple usage scenarios and price tiers, which we believe could be of interest to your assortment strategy.\\n\\nIf you are available, I would greatly appreciate the opportunity to arrange a short introductory video meeting to present our brands and discuss potential collaboration opportunities.\\n\\nThank you for your time and consideration. I look forward to your reply.\\n\\n[Flextail.com](https://www.flextail.com/), [vollyc.com](https://vollyc.com/)\\n\\n[Sincerely](https://wa.me/8617321028184)\\n[Best Regard](https://wa.me/8617321028184)\\n[Leo Liu](https://wa.me/8617321028184)\\n[Sales](https://wa.me/8617321028184) [& Operations Director](https://wa.me/8617321028184)\\n[Brand & ODM Department](https://wa.me/8617321028184)\\n[Tel/whatsapp:  +86 17321028184](https://wa.me/8617321028184)\\n\\n[Email:  Leo@flextailgear.com](https://wa.me/8617321028184)\\n[SHANGHAI FLEXTAIL TECHNOLOGY CO.,LTD.](https://wa.me/8617321028184)\\n[Room103, Building No.6, No.1 Yanjiaqiao, Pudong District, ShangHai, China](https://wa.me/8617321028184)\",\"sendStatus\":\"approval_pending\"}"
-      }
-    },
-    {
-      "id": "google-customer-mec-website-contact",
-      "company": "MEC",
-      "action": "email_priority",
-      "platform": "email",
-      "targetUrl": "https://www.mec.ca/en/contact-us",
-      "ok": false,
-      "sendStatus": "approval_pending",
-      "evidence": "contact_entry_verified;contact_form_detected;contact_entry_clicked:contact us;website_contact_form_fields_prepared;marketing_attachment_missing",
-      "chromeOpen": {
-        "ok": true,
-        "engine": "codex-chrome-extension-cdp",
-        "port": 9224,
-        "targetUrl": "https://www.mec.ca/en/contact-us",
-        "tabId": "DAB2284604E0696565D2DA6F013452B8",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/DAB2284604E0696565D2DA6F013452B8",
-        "title": "MEC"
-      },
-      "result": {
-        "ok": false,
-        "engine": "codex-chrome-extension-website-contact",
-        "browserEngine": "codex-chrome-extension-cdp",
-        "mode": "website_contact_prepare_marketing_file",
-        "targetUrl": "https://www.mec.ca/en/contact-us",
-        "chromeOpen": {
-          "ok": true,
-          "engine": "codex-chrome-extension-cdp",
-          "port": 9224,
-          "targetUrl": "https://www.mec.ca/en/contact-us",
-          "tabId": "DAB2284604E0696565D2DA6F013452B8",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/DAB2284604E0696565D2DA6F013452B8",
-          "title": "MEC"
-        },
-        "sendStatus": "approval_pending",
-        "subject": "Flextail & Vollyc | Lightweight Outdoor & 3C Electronics – Potential Cooperation",
-        "draft": "Dear MEC Team,\n\nNice to e-meet you.\nI am Leo, from Flextail & Vollyc.\n\nFlextail is our first and core brand, specializing in ultralight electric products for outdoor, travel, and home use. The brand is currently Top 1 on Amazon, with strong global sell-through and a proven product-market fit.\nVollyc, our second brand, focuses on 3C electronics, targeting practical, high-rotation consumer use cases.\n\nFrom our perspective, your platform and positioning are highly aligned with Flextail’s product philosophy, especially in lightweight outdoor and travel-oriented electrics.\n\nWe have already contacted with your team, and we are now actively exploring opportunities in other regions.\nAttached, you will find a brief introduction to our brands and current product catalog for your reference.\n\nLooking ahead, we are planning to launch over 36 new SKUs in 2026, covering multiple usage scenarios and price tiers, which we believe could be of interest to your assortment strategy.\n\nIf you are available, I would greatly appreciate the opportunity to arrange a short introductory video meeting to present our brands and discuss potential collaboration opportunities.\n\nThank you for your time and consideration. I look forward to your reply.\n\n[Flextail.com](https://www.flextail.com/), [vollyc.com](https://vollyc.com/)\n\n[Sincerely](https://wa.me/8617321028184)\n[Best Regard](https://wa.me/8617321028184)\n[Leo Liu](https://wa.me/8617321028184)\n[Sales](https://wa.me/8617321028184) [& Operations Director](https://wa.me/8617321028184)\n[Brand & ODM Department](https://wa.me/8617321028184)\n[Tel/whatsapp:  +86 17321028184](https://wa.me/8617321028184)\n\n[Email:  Leo@flextailgear.com](https://wa.me/8617321028184)\n[SHANGHAI FLEXTAIL TECHNOLOGY CO.,LTD.](https://wa.me/8617321028184)\n[Room103, Building No.6, No.1 Yanjiaqiao, Pudong District, ShangHai, China](https://wa.me/8617321028184)",
-        "evidence": "contact_entry_verified;contact_form_detected;contact_entry_clicked:contact us;website_contact_form_fields_prepared;marketing_attachment_missing",
-        "output": "{\"verdict\":\"approval_pending\",\"evidence\":\"contact_entry_verified;contact_form_detected;contact_entry_clicked:contact us;website_contact_form_fields_prepared;marketing_attachment_missing\",\"nextAction\":\"Configure WEBSITE_MARKETING_FILE or MARKETING_ATTACHMENT_PATH with the approved marketing file, then rerun. The form was not submitted.\",\"subject\":\"Flextail & Vollyc | Lightweight Outdoor & 3C Electronics – Potential Cooperation\",\"draft\":\"Dear MEC Team,\\n\\nNice to e-meet you.\\nI am Leo, from Flextail & Vollyc.\\n\\nFlextail is our first and core brand, specializing in ultralight electric products for outdoor, travel, and home use. The brand is currently Top 1 on Amazon, with strong global sell-through and a proven product-market fit.\\nVollyc, our second brand, focuses on 3C electronics, targeting practical, high-rotation consumer use cases.\\n\\nFrom our perspective, your platform and positioning are highly aligned with Flextail’s product philosophy, especially in lightweight outdoor and travel-oriented electrics.\\n\\nWe have already contacted with your team, and we are now actively exploring opportunities in other regions.\\nAttached, you will find a brief introduction to our brands and current product catalog for your reference.\\n\\nLooking ahead, we are planning to launch over 36 new SKUs in 2026, covering multiple usage scenarios and price tiers, which we believe could be of interest to your assortment strategy.\\n\\nIf you are available, I would greatly appreciate the opportunity to arrange a short introductory video meeting to present our brands and discuss potential collaboration opportunities.\\n\\nThank you for your time and consideration. I look forward to your reply.\\n\\n[Flextail.com](https://www.flextail.com/), [vollyc.com](https://vollyc.com/)\\n\\n[Sincerely](https://wa.me/8617321028184)\\n[Best Regard](https://wa.me/8617321028184)\\n[Leo Liu](https://wa.me/8617321028184)\\n[Sales](https://wa.me/8617321028184) [& Operations Director](https://wa.me/8617321028184)\\n[Brand & ODM Department](https://wa.me/8617321028184)\\n[Tel/whatsapp:  +86 17321028184](https://wa.me/8617321028184)\\n\\n[Email:  Leo@flextailgear.com](https://wa.me/8617321028184)\\n[SHANGHAI FLEXTAIL TECHNOLOGY CO.,LTD.](https://wa.me/8617321028184)\\n[Room103, Building No.6, No.1 Yanjiaqiao, Pudong District, ShangHai, China](https://wa.me/8617321028184)\",\"sendStatus\":\"approval_pending\"}"
       }
     },
     {
@@ -142,8 +102,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
         "engine": "codex-chrome-extension-cdp",
         "port": 9224,
         "targetUrl": "https://www.decathlon.fr/help/app/contact",
-        "tabId": "AEC5716295C4E19EBA40E89CF9728B2A",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/AEC5716295C4E19EBA40E89CF9728B2A",
+        "tabId": "76451ACBC3A72F230E2B7561ECE11C5B",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/76451ACBC3A72F230E2B7561ECE11C5B",
         "title": "Aide - Decathlon"
       },
       "result": {
@@ -157,8 +117,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
           "engine": "codex-chrome-extension-cdp",
           "port": 9224,
           "targetUrl": "https://www.decathlon.fr/help/app/contact",
-          "tabId": "AEC5716295C4E19EBA40E89CF9728B2A",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/AEC5716295C4E19EBA40E89CF9728B2A",
+          "tabId": "76451ACBC3A72F230E2B7561ECE11C5B",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/76451ACBC3A72F230E2B7561ECE11C5B",
           "title": "Aide - Decathlon"
         },
         "sendStatus": "approval_pending",
@@ -182,8 +142,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
         "engine": "codex-chrome-extension-cdp",
         "port": 9224,
         "targetUrl": "https://www.bever.nl/klantenservice/contact.html",
-        "tabId": "B5D699386151494CFB9B19744E35C367",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/B5D699386151494CFB9B19744E35C367",
+        "tabId": "CCD08C93EB593A6870DE1BE85C3CA58C",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/CCD08C93EB593A6870DE1BE85C3CA58C",
         "title": "404 | Bever"
       },
       "result": {
@@ -197,8 +157,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
           "engine": "codex-chrome-extension-cdp",
           "port": 9224,
           "targetUrl": "https://www.bever.nl/klantenservice/contact.html",
-          "tabId": "B5D699386151494CFB9B19744E35C367",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/B5D699386151494CFB9B19744E35C367",
+          "tabId": "CCD08C93EB593A6870DE1BE85C3CA58C",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/CCD08C93EB593A6870DE1BE85C3CA58C",
           "title": "404 | Bever"
         },
         "sendStatus": "approval_pending",
@@ -222,8 +182,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
         "engine": "codex-chrome-extension-cdp",
         "port": 9224,
         "targetUrl": "https://www.gooutdoors.co.uk/contact-us",
-        "tabId": "4A89541A17887F87EFCD83785817AC36",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/4A89541A17887F87EFCD83785817AC36",
+        "tabId": "9E91512DC0C4A7529268FF98643395C3",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/9E91512DC0C4A7529268FF98643395C3",
         "title": "Contact Us – GO Outdoors"
       },
       "result": {
@@ -237,8 +197,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
           "engine": "codex-chrome-extension-cdp",
           "port": 9224,
           "targetUrl": "https://www.gooutdoors.co.uk/contact-us",
-          "tabId": "4A89541A17887F87EFCD83785817AC36",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/4A89541A17887F87EFCD83785817AC36",
+          "tabId": "9E91512DC0C4A7529268FF98643395C3",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/9E91512DC0C4A7529268FF98643395C3",
           "title": "Contact Us – GO Outdoors"
         },
         "sendStatus": "approval_pending",
@@ -262,8 +222,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
         "engine": "codex-chrome-extension-cdp",
         "port": 9224,
         "targetUrl": "https://www.kathmandu.co.nz/contact-us",
-        "tabId": "C34B8BB81A3E551CC87D1EA7A95A2740",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/C34B8BB81A3E551CC87D1EA7A95A2740",
+        "tabId": "75A2EE33163FB1FAF8D5030C24DEBB94",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/75A2EE33163FB1FAF8D5030C24DEBB94",
         "title": "404 Not Found"
       },
       "result": {
@@ -277,8 +237,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
           "engine": "codex-chrome-extension-cdp",
           "port": 9224,
           "targetUrl": "https://www.kathmandu.co.nz/contact-us",
-          "tabId": "C34B8BB81A3E551CC87D1EA7A95A2740",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/C34B8BB81A3E551CC87D1EA7A95A2740",
+          "tabId": "75A2EE33163FB1FAF8D5030C24DEBB94",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/75A2EE33163FB1FAF8D5030C24DEBB94",
           "title": "404 Not Found"
         },
         "sendStatus": "approval_pending",
@@ -302,8 +262,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
         "engine": "codex-chrome-extension-cdp",
         "port": 9224,
         "targetUrl": "https://www.bcf.com.au/contact-us",
-        "tabId": "CDEE7290D4FADE5E1B4F1C75AF392767",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/CDEE7290D4FADE5E1B4F1C75AF392767",
+        "tabId": "F26CC6DD4AAAC3193CFCBBD41932028F",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/F26CC6DD4AAAC3193CFCBBD41932028F",
         "title": "ERROR: The request could not be satisfied"
       },
       "result": {
@@ -317,8 +277,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
           "engine": "codex-chrome-extension-cdp",
           "port": 9224,
           "targetUrl": "https://www.bcf.com.au/contact-us",
-          "tabId": "CDEE7290D4FADE5E1B4F1C75AF392767",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/CDEE7290D4FADE5E1B4F1C75AF392767",
+          "tabId": "F26CC6DD4AAAC3193CFCBBD41932028F",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/F26CC6DD4AAAC3193CFCBBD41932028F",
           "title": "ERROR: The request could not be satisfied"
         },
         "sendStatus": "approval_pending",
@@ -344,8 +304,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
         "engine": "codex-chrome-extension-cdp",
         "port": 9224,
         "targetUrl": "https://www.basspro.com/shop/en/contact-us",
-        "tabId": "9210881299814BFC0CFBF4649C42F129",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/9210881299814BFC0CFBF4649C42F129",
+        "tabId": "B98CD5014F294DBD5E6B3E1B0FA763B4",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/B98CD5014F294DBD5E6B3E1B0FA763B4",
         "title": "Access Denied"
       },
       "result": {
@@ -359,8 +319,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
           "engine": "codex-chrome-extension-cdp",
           "port": 9224,
           "targetUrl": "https://www.basspro.com/shop/en/contact-us",
-          "tabId": "9210881299814BFC0CFBF4649C42F129",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/9210881299814BFC0CFBF4649C42F129",
+          "tabId": "B98CD5014F294DBD5E6B3E1B0FA763B4",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/B98CD5014F294DBD5E6B3E1B0FA763B4",
           "title": "Access Denied"
         },
         "sendStatus": "approval_pending",
@@ -384,8 +344,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
         "engine": "codex-chrome-extension-cdp",
         "port": 9224,
         "targetUrl": "https://www.cabelas.com/shop/en/contact-us",
-        "tabId": "6F9C29F17BF86039C4B15F9EFE036DAD",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/6F9C29F17BF86039C4B15F9EFE036DAD",
+        "tabId": "2C66A577B29C4B42061C10C32B80F911",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/2C66A577B29C4B42061C10C32B80F911",
         "title": "Access Denied"
       },
       "result": {
@@ -399,8 +359,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
           "engine": "codex-chrome-extension-cdp",
           "port": 9224,
           "targetUrl": "https://www.cabelas.com/shop/en/contact-us",
-          "tabId": "6F9C29F17BF86039C4B15F9EFE036DAD",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/6F9C29F17BF86039C4B15F9EFE036DAD",
+          "tabId": "2C66A577B29C4B42061C10C32B80F911",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/2C66A577B29C4B42061C10C32B80F911",
           "title": "Access Denied"
         },
         "sendStatus": "approval_pending",
@@ -408,46 +368,6 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
         "draft": "Dear Cabela's Team,\n\nNice to e-meet you.\nI am Leo, from Flextail & Vollyc.\n\nFlextail is our first and core brand, specializing in ultralight electric products for outdoor, travel, and home use. The brand is currently Top 1 on Amazon, with strong global sell-through and a proven product-market fit.\nVollyc, our second brand, focuses on 3C electronics, targeting practical, high-rotation consumer use cases.\n\nFrom our perspective, your platform and positioning are highly aligned with Flextail’s product philosophy, especially in lightweight outdoor and travel-oriented electrics.\n\nWe have already contacted with your team, and we are now actively exploring opportunities in other regions.\nAttached, you will find a brief introduction to our brands and current product catalog for your reference.\n\nLooking ahead, we are planning to launch over 36 new SKUs in 2026, covering multiple usage scenarios and price tiers, which we believe could be of interest to your assortment strategy.\n\nIf you are available, I would greatly appreciate the opportunity to arrange a short introductory video meeting to present our brands and discuss potential collaboration opportunities.\n\nThank you for your time and consideration. I look forward to your reply.\n\n[Flextail.com](https://www.flextail.com/), [vollyc.com](https://vollyc.com/)\n\n[Sincerely](https://wa.me/8617321028184)\n[Best Regard](https://wa.me/8617321028184)\n[Leo Liu](https://wa.me/8617321028184)\n[Sales](https://wa.me/8617321028184) [& Operations Director](https://wa.me/8617321028184)\n[Brand & ODM Department](https://wa.me/8617321028184)\n[Tel/whatsapp:  +86 17321028184](https://wa.me/8617321028184)\n\n[Email:  Leo@flextailgear.com](https://wa.me/8617321028184)\n[SHANGHAI FLEXTAIL TECHNOLOGY CO.,LTD.](https://wa.me/8617321028184)\n[Room103, Building No.6, No.1 Yanjiaqiao, Pudong District, ShangHai, China](https://wa.me/8617321028184)",
         "evidence": "website_contact_entry_not_verified;no_contact_entry_control",
         "output": "{\"verdict\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control\",\"nextAction\":\"Contact page opened, but no verified form, mailto link, vendor/business route, or clickable Contact Us path was detected. Continue manually before marking the lead ready.\",\"subject\":\"Flextail & Vollyc | Lightweight Outdoor & 3C Electronics – Potential Cooperation\",\"draft\":\"Dear Cabela's Team,\\n\\nNice to e-meet you.\\nI am Leo, from Flextail & Vollyc.\\n\\nFlextail is our first and core brand, specializing in ultralight electric products for outdoor, travel, and home use. The brand is currently Top 1 on Amazon, with strong global sell-through and a proven product-market fit.\\nVollyc, our second brand, focuses on 3C electronics, targeting practical, high-rotation consumer use cases.\\n\\nFrom our perspective, your platform and positioning are highly aligned with Flextail’s product philosophy, especially in lightweight outdoor and travel-oriented electrics.\\n\\nWe have already contacted with your team, and we are now actively exploring opportunities in other regions.\\nAttached, you will find a brief introduction to our brands and current product catalog for your reference.\\n\\nLooking ahead, we are planning to launch over 36 new SKUs in 2026, covering multiple usage scenarios and price tiers, which we believe could be of interest to your assortment strategy.\\n\\nIf you are available, I would greatly appreciate the opportunity to arrange a short introductory video meeting to present our brands and discuss potential collaboration opportunities.\\n\\nThank you for your time and consideration. I look forward to your reply.\\n\\n[Flextail.com](https://www.flextail.com/), [vollyc.com](https://vollyc.com/)\\n\\n[Sincerely](https://wa.me/8617321028184)\\n[Best Regard](https://wa.me/8617321028184)\\n[Leo Liu](https://wa.me/8617321028184)\\n[Sales](https://wa.me/8617321028184) [& Operations Director](https://wa.me/8617321028184)\\n[Brand & ODM Department](https://wa.me/8617321028184)\\n[Tel/whatsapp:  +86 17321028184](https://wa.me/8617321028184)\\n\\n[Email:  Leo@flextailgear.com](https://wa.me/8617321028184)\\n[SHANGHAI FLEXTAIL TECHNOLOGY CO.,LTD.](https://wa.me/8617321028184)\\n[Room103, Building No.6, No.1 Yanjiaqiao, Pudong District, ShangHai, China](https://wa.me/8617321028184)\",\"sendStatus\":\"approval_pending\"}"
-      }
-    },
-    {
-      "id": "google-customer-mec-website-contact",
-      "company": "MEC",
-      "action": "email_priority",
-      "platform": "email",
-      "targetUrl": "https://www.mec.ca/en/contact-us",
-      "ok": false,
-      "sendStatus": "approval_pending",
-      "evidence": "contact_entry_verified;contact_form_detected;contact_entry_clicked:contact us;website_contact_form_fields_prepared;marketing_attachment_missing",
-      "chromeOpen": {
-        "ok": true,
-        "engine": "codex-chrome-extension-cdp",
-        "port": 9224,
-        "targetUrl": "https://www.mec.ca/en/contact-us",
-        "tabId": "DAB2284604E0696565D2DA6F013452B8",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/DAB2284604E0696565D2DA6F013452B8",
-        "title": "MEC"
-      },
-      "result": {
-        "ok": false,
-        "engine": "codex-chrome-extension-website-contact",
-        "browserEngine": "codex-chrome-extension-cdp",
-        "mode": "website_contact_prepare_marketing_file",
-        "targetUrl": "https://www.mec.ca/en/contact-us",
-        "chromeOpen": {
-          "ok": true,
-          "engine": "codex-chrome-extension-cdp",
-          "port": 9224,
-          "targetUrl": "https://www.mec.ca/en/contact-us",
-          "tabId": "DAB2284604E0696565D2DA6F013452B8",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/DAB2284604E0696565D2DA6F013452B8",
-          "title": "MEC"
-        },
-        "sendStatus": "approval_pending",
-        "subject": "Flextail & Vollyc | Lightweight Outdoor & 3C Electronics – Potential Cooperation",
-        "draft": "Dear MEC Team,\n\nNice to e-meet you.\nI am Leo, from Flextail & Vollyc.\n\nFlextail is our first and core brand, specializing in ultralight electric products for outdoor, travel, and home use. The brand is currently Top 1 on Amazon, with strong global sell-through and a proven product-market fit.\nVollyc, our second brand, focuses on 3C electronics, targeting practical, high-rotation consumer use cases.\n\nFrom our perspective, your platform and positioning are highly aligned with Flextail’s product philosophy, especially in lightweight outdoor and travel-oriented electrics.\n\nWe have already contacted with your team, and we are now actively exploring opportunities in other regions.\nAttached, you will find a brief introduction to our brands and current product catalog for your reference.\n\nLooking ahead, we are planning to launch over 36 new SKUs in 2026, covering multiple usage scenarios and price tiers, which we believe could be of interest to your assortment strategy.\n\nIf you are available, I would greatly appreciate the opportunity to arrange a short introductory video meeting to present our brands and discuss potential collaboration opportunities.\n\nThank you for your time and consideration. I look forward to your reply.\n\n[Flextail.com](https://www.flextail.com/), [vollyc.com](https://vollyc.com/)\n\n[Sincerely](https://wa.me/8617321028184)\n[Best Regard](https://wa.me/8617321028184)\n[Leo Liu](https://wa.me/8617321028184)\n[Sales](https://wa.me/8617321028184) [& Operations Director](https://wa.me/8617321028184)\n[Brand & ODM Department](https://wa.me/8617321028184)\n[Tel/whatsapp:  +86 17321028184](https://wa.me/8617321028184)\n\n[Email:  Leo@flextailgear.com](https://wa.me/8617321028184)\n[SHANGHAI FLEXTAIL TECHNOLOGY CO.,LTD.](https://wa.me/8617321028184)\n[Room103, Building No.6, No.1 Yanjiaqiao, Pudong District, ShangHai, China](https://wa.me/8617321028184)",
-        "evidence": "contact_entry_verified;contact_form_detected;contact_entry_clicked:contact us;website_contact_form_fields_prepared;marketing_attachment_missing",
-        "output": "{\"verdict\":\"approval_pending\",\"evidence\":\"contact_entry_verified;contact_form_detected;contact_entry_clicked:contact us;website_contact_form_fields_prepared;marketing_attachment_missing\",\"nextAction\":\"Configure WEBSITE_MARKETING_FILE or MARKETING_ATTACHMENT_PATH with the approved marketing file, then rerun. The form was not submitted.\",\"subject\":\"Flextail & Vollyc | Lightweight Outdoor & 3C Electronics – Potential Cooperation\",\"draft\":\"Dear MEC Team,\\n\\nNice to e-meet you.\\nI am Leo, from Flextail & Vollyc.\\n\\nFlextail is our first and core brand, specializing in ultralight electric products for outdoor, travel, and home use. The brand is currently Top 1 on Amazon, with strong global sell-through and a proven product-market fit.\\nVollyc, our second brand, focuses on 3C electronics, targeting practical, high-rotation consumer use cases.\\n\\nFrom our perspective, your platform and positioning are highly aligned with Flextail’s product philosophy, especially in lightweight outdoor and travel-oriented electrics.\\n\\nWe have already contacted with your team, and we are now actively exploring opportunities in other regions.\\nAttached, you will find a brief introduction to our brands and current product catalog for your reference.\\n\\nLooking ahead, we are planning to launch over 36 new SKUs in 2026, covering multiple usage scenarios and price tiers, which we believe could be of interest to your assortment strategy.\\n\\nIf you are available, I would greatly appreciate the opportunity to arrange a short introductory video meeting to present our brands and discuss potential collaboration opportunities.\\n\\nThank you for your time and consideration. I look forward to your reply.\\n\\n[Flextail.com](https://www.flextail.com/), [vollyc.com](https://vollyc.com/)\\n\\n[Sincerely](https://wa.me/8617321028184)\\n[Best Regard](https://wa.me/8617321028184)\\n[Leo Liu](https://wa.me/8617321028184)\\n[Sales](https://wa.me/8617321028184) [& Operations Director](https://wa.me/8617321028184)\\n[Brand & ODM Department](https://wa.me/8617321028184)\\n[Tel/whatsapp:  +86 17321028184](https://wa.me/8617321028184)\\n\\n[Email:  Leo@flextailgear.com](https://wa.me/8617321028184)\\n[SHANGHAI FLEXTAIL TECHNOLOGY CO.,LTD.](https://wa.me/8617321028184)\\n[Room103, Building No.6, No.1 Yanjiaqiao, Pudong District, ShangHai, China](https://wa.me/8617321028184)\",\"sendStatus\":\"approval_pending\"}"
       }
     },
     {
@@ -464,8 +384,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
         "engine": "codex-chrome-extension-cdp",
         "port": 9224,
         "targetUrl": "https://www.decathlon.fr/help/app/contact",
-        "tabId": "AEC5716295C4E19EBA40E89CF9728B2A",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/AEC5716295C4E19EBA40E89CF9728B2A",
+        "tabId": "76451ACBC3A72F230E2B7561ECE11C5B",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/76451ACBC3A72F230E2B7561ECE11C5B",
         "title": "Aide - Decathlon"
       },
       "result": {
@@ -479,8 +399,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
           "engine": "codex-chrome-extension-cdp",
           "port": 9224,
           "targetUrl": "https://www.decathlon.fr/help/app/contact",
-          "tabId": "AEC5716295C4E19EBA40E89CF9728B2A",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/AEC5716295C4E19EBA40E89CF9728B2A",
+          "tabId": "76451ACBC3A72F230E2B7561ECE11C5B",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/76451ACBC3A72F230E2B7561ECE11C5B",
           "title": "Aide - Decathlon"
         },
         "sendStatus": "approval_pending",
@@ -504,8 +424,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
         "engine": "codex-chrome-extension-cdp",
         "port": 9224,
         "targetUrl": "https://www.bever.nl/klantenservice/contact.html",
-        "tabId": "B5D699386151494CFB9B19744E35C367",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/B5D699386151494CFB9B19744E35C367",
+        "tabId": "CCD08C93EB593A6870DE1BE85C3CA58C",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/CCD08C93EB593A6870DE1BE85C3CA58C",
         "title": "404 | Bever"
       },
       "result": {
@@ -519,8 +439,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
           "engine": "codex-chrome-extension-cdp",
           "port": 9224,
           "targetUrl": "https://www.bever.nl/klantenservice/contact.html",
-          "tabId": "B5D699386151494CFB9B19744E35C367",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/B5D699386151494CFB9B19744E35C367",
+          "tabId": "CCD08C93EB593A6870DE1BE85C3CA58C",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/CCD08C93EB593A6870DE1BE85C3CA58C",
           "title": "404 | Bever"
         },
         "sendStatus": "approval_pending",
@@ -544,8 +464,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
         "engine": "codex-chrome-extension-cdp",
         "port": 9224,
         "targetUrl": "https://www.gooutdoors.co.uk/contact-us",
-        "tabId": "4A89541A17887F87EFCD83785817AC36",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/4A89541A17887F87EFCD83785817AC36",
+        "tabId": "9E91512DC0C4A7529268FF98643395C3",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/9E91512DC0C4A7529268FF98643395C3",
         "title": "Contact Us – GO Outdoors"
       },
       "result": {
@@ -559,8 +479,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
           "engine": "codex-chrome-extension-cdp",
           "port": 9224,
           "targetUrl": "https://www.gooutdoors.co.uk/contact-us",
-          "tabId": "4A89541A17887F87EFCD83785817AC36",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/4A89541A17887F87EFCD83785817AC36",
+          "tabId": "9E91512DC0C4A7529268FF98643395C3",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/9E91512DC0C4A7529268FF98643395C3",
           "title": "Contact Us – GO Outdoors"
         },
         "sendStatus": "approval_pending",
@@ -584,8 +504,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
         "engine": "codex-chrome-extension-cdp",
         "port": 9224,
         "targetUrl": "https://www.kathmandu.co.nz/contact-us",
-        "tabId": "C34B8BB81A3E551CC87D1EA7A95A2740",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/C34B8BB81A3E551CC87D1EA7A95A2740",
+        "tabId": "75A2EE33163FB1FAF8D5030C24DEBB94",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/75A2EE33163FB1FAF8D5030C24DEBB94",
         "title": "404 Not Found"
       },
       "result": {
@@ -599,8 +519,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
           "engine": "codex-chrome-extension-cdp",
           "port": 9224,
           "targetUrl": "https://www.kathmandu.co.nz/contact-us",
-          "tabId": "C34B8BB81A3E551CC87D1EA7A95A2740",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/C34B8BB81A3E551CC87D1EA7A95A2740",
+          "tabId": "75A2EE33163FB1FAF8D5030C24DEBB94",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/75A2EE33163FB1FAF8D5030C24DEBB94",
           "title": "404 Not Found"
         },
         "sendStatus": "approval_pending",
@@ -624,8 +544,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
         "engine": "codex-chrome-extension-cdp",
         "port": 9224,
         "targetUrl": "https://www.bcf.com.au/contact-us",
-        "tabId": "CDEE7290D4FADE5E1B4F1C75AF392767",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/CDEE7290D4FADE5E1B4F1C75AF392767",
+        "tabId": "F26CC6DD4AAAC3193CFCBBD41932028F",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/F26CC6DD4AAAC3193CFCBBD41932028F",
         "title": "ERROR: The request could not be satisfied"
       },
       "result": {
@@ -639,8 +559,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
           "engine": "codex-chrome-extension-cdp",
           "port": 9224,
           "targetUrl": "https://www.bcf.com.au/contact-us",
-          "tabId": "CDEE7290D4FADE5E1B4F1C75AF392767",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/CDEE7290D4FADE5E1B4F1C75AF392767",
+          "tabId": "F26CC6DD4AAAC3193CFCBBD41932028F",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/F26CC6DD4AAAC3193CFCBBD41932028F",
           "title": "ERROR: The request could not be satisfied"
         },
         "sendStatus": "approval_pending",
@@ -669,10 +589,10 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     "totalLeads": 16,
     "highIcp": 16,
     "readyToDevelop": 0,
-    "dueNow": 8,
-    "googleDiscovered": 8,
+    "dueNow": 7,
+    "googleDiscovered": 7,
     "facebookDiscovered": 0,
-    "websiteContactDiscovered": 8,
+    "websiteContactDiscovered": 7,
     "scheduledLater": 2,
     "cooldown": 30,
     "emailPriority": 0,
@@ -687,12 +607,12 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     "stderr": "",
     "error": "",
     "visibility": {
-      "updatedAt": "2026-07-01T00:03:56.903Z",
+      "updatedAt": "2026-07-01T01:04:06.491Z",
       "source": "main-refreshDailyAutomationArtifacts",
       "runDate": "2026-07-01",
-      "artifactGeneratedAt": "2026-07-01T00:03:55.888Z",
-      "executionGeneratedAt": "2026-06-30T22:03:29.004Z",
-      "githubSyncUpdatedAt": "2026-06-30T22:04:11.446Z",
+      "artifactGeneratedAt": "2026-07-01T01:04:05.590Z",
+      "executionGeneratedAt": "2026-07-01T00:03:57.278Z",
+      "githubSyncUpdatedAt": "2026-07-01T00:06:51.602Z",
       "counts": {
         "dailyQueue": 7,
         "googleDiscovered": 7,
@@ -738,5 +658,5 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       }
     }
   },
-  "completedAt": "2026-07-01T00:03:57.278Z"
+  "completedAt": "2026-07-01T01:04:06.969Z"
 };
