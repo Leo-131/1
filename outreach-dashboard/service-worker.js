@@ -41,6 +41,11 @@ self.addEventListener('activate', (event) => {
 self.addEventListener('fetch', (event) => {
   if (event.request.method !== 'GET') return;
   const requestUrl = new URL(event.request.url);
+  const isLocalDashboard = ['127.0.0.1', 'localhost', '::1'].includes(requestUrl.hostname);
+  if (isLocalDashboard) {
+    event.respondWith(fetch(event.request, { cache: 'no-store' }));
+    return;
+  }
   const realtimeFiles = [
     'daily-automation-latest.js',
     'daily-automation-execution-latest.js',
