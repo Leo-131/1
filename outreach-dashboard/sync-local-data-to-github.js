@@ -147,6 +147,7 @@ function syncOnce() {
   copyIfExists(path.join(ROOT, 'system-visibility-latest.json'), path.join(OUT, 'system-visibility-latest.json'));
   copyIfExists(path.join(ROOT, 'system-visibility-latest.js'), path.join(OUT, 'system-visibility-latest.js'));
   copyIfExists(path.join(ROOT, 'autonomous-outreach-results.js'), path.join(OUT, 'autonomous-outreach-results.js'));
+  copyIfExists(path.join(ROOT, 'autonomous-outreach-results.js'), path.join(ROOT, 'public', 'autonomous-outreach-results.js'));
 
   [
     'daily-automation-latest.js',
@@ -178,12 +179,14 @@ function syncOnce() {
     'public/daily-automation-execution-latest.json',
     'public/system-visibility-latest.js',
     'public/system-visibility-latest.json',
+    'public/autonomous-outreach-results.js',
     'daily-automation-latest.js',
     'google-lead-discovery-latest.js',
     'google-lead-discovery-latest.json',
     'google-lead-discovery-latest.csv',
     'daily-automation-execution-latest.js',
     'daily-automation-execution-latest.json',
+    'autonomous-outreach-results.js',
     'system-visibility-latest.json',
     'system-visibility-latest.js',
     'sync-local-data-to-github.js',
