@@ -7,6 +7,23 @@
 <meta name="application-name" content="Customer Development System">
 <meta name="theme-color" content="#0d1117">
 <meta name="description" content="Flextail and Vollyc customer development app with LinkedIn, Facebook, and Instagram automation queues.">
+<script>
+(function resetLocalDashboardCache(){
+  const isLocal = ['127.0.0.1','localhost','::1'].includes(location.hostname);
+  if(!isLocal || !('serviceWorker' in navigator)) return;
+  const key = 'local-dashboard-cache-reset-20260701-no-store';
+  if(sessionStorage.getItem(key)) return;
+  sessionStorage.setItem(key,'1');
+  Promise.all([
+    navigator.serviceWorker.getRegistrations().then(regs=>Promise.all(regs.map(reg=>reg.unregister()))).catch(()=>{}),
+    typeof caches !== 'undefined' ? caches.keys().then(keys=>Promise.all(keys.map(name=>caches.delete(name)))).catch(()=>{}) : Promise.resolve()
+  ]).then(()=>{
+    const next = new URL(location.href);
+    next.searchParams.set('cacheReset','20260701');
+    location.replace(next.toString());
+  });
+})();
+</script>
 <link rel="manifest" href="./manifest.webmanifest">
 <link rel="icon" href="./icon.svg" type="image/svg+xml">
 <style>

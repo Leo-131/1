@@ -16,6 +16,23 @@ const types = {
   '.webmanifest': 'application/manifest+json; charset=utf-8',
 };
 
+function cacheHeaders(file) {
+  const ext = path.extname(file);
+  const headers = {
+    'Content-Type': types[ext] || 'application/octet-stream',
+  };
+  if (['.html', '.js', '.json', '.webmanifest'].includes(ext)) {
+    headers['Cache-Control'] = 'no-store, no-cache, must-revalidate, proxy-revalidate';
+    headers.Pragma = 'no-cache';
+    headers.Expires = '0';
+  }
+  if (path.basename(file) === 'service-worker.js') {
+    headers['Service-Worker-Allowed'] = '/';
+    headers['Clear-Site-Data'] = '"cache"';
+  }
+  return headers;
+}
+
 function chromeCandidates() {
   const candidates = [];
   if (process.env.ProgramFiles) candidates.push(path.join(process.env.ProgramFiles, 'Google', 'Chrome', 'Application', 'chrome.exe'));
@@ -83,7 +100,7 @@ const server = http.createServer((req, res) => {
       res.writeHead(404);
       return res.end('Not found');
     }
-    res.writeHead(200, { 'Content-Type': types[path.extname(file)] || 'application/octet-stream' });
+    res.writeHead(200, cacheHeaders(file));
     res.end(data);
   });
 });
