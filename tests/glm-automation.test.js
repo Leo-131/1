@@ -191,6 +191,8 @@ test('desktop automation can use GLM env key and OpenClaw follow-up preparation'
 
 test('website contact automation must verify contact entry before ready status', () => {
   assert.ok(mainSource.includes('function inspectWebsiteContactFlow'));
+  assert.ok(mainSource.includes('function websiteUnavailablePageEvidence'));
+  assert.ok(mainSource.includes('function websiteContactTargetCandidates'));
   assert.ok(mainSource.includes('function websiteContactInspectionExpression'));
   assert.ok(mainSource.includes('function websiteContactClickExpression'));
   assert.ok(mainSource.includes('function websiteContactRequiredDropdownExpression'));
@@ -206,6 +208,11 @@ test('website contact automation must verify contact entry before ready status',
   assert.ok(mainSource.includes('process.env.WEBSITE_MARKETING_FILE'));
   assert.ok(mainSource.includes('process.env.WEBSITE_CONTACT_AUTO_SUBMIT'));
   assert.ok(mainSource.includes('website_contact_entry_not_verified'));
+  assert.ok(mainSource.includes('website_page_unavailable_403'));
+  assert.ok(mainSource.includes('website_page_unavailable_404'));
+  assert.ok(mainSource.includes('website_contact_target_attempts'));
+  assert.ok(mainSource.includes('website_contact_all_targets_failed'));
+  assert.ok(mainSource.includes('Social platform URL is not a website contact form'));
   assert.ok(mainSource.includes('marketing_attachment_missing'));
   assert.ok(mainSource.includes('submit_paused_by_env'));
   assert.ok(mainSource.includes('required_fields_auto_bypassed'));
@@ -216,6 +223,15 @@ test('website contact automation must verify contact entry before ready status',
   assert.ok(mainSource.includes("sendStatus: 'website_contact_ready'"));
   assert.ok(dailyRunnerSource.includes('function isVerifiedWebsiteContactResult'));
   assert.ok(dailyRunnerSource.includes('isTouchResult(result)'));
+});
+
+test('Google discovery uses a live Bever contact details URL instead of the retired 404 page', () => {
+  const leads = buildLeads(120);
+  const beverContact = leads.find(item => item.id === 'google-customer-bever-website-contact');
+  assert.ok(beverContact);
+  assert.equal(beverContact.contactUrl, 'https://www.bever.nl/klantenservice/contactgegevens.html');
+  assert.notEqual(beverContact.contactUrl, 'https://www.bever.nl/klantenservice/contact.html');
+  assert.equal(beverContact.vendorPortal, 'https://www.bever.nl/klantenservice/contactgegevens.html');
 });
 
 test('Codex Chrome execution can auto-send approved social outreach with confirmation', () => {

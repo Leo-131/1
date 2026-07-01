@@ -11,9 +11,13 @@ const CANDIDATES = [
     company: 'REI Co-op',
     country: 'United States',
     url: 'https://www.rei.com/',
-    platformUrl: 'https://www.instagram.com/rei/',
+    instagramUrl: 'https://www.instagram.com/rei/',
+    facebookUrl: 'https://www.facebook.com/REI',
+    contactUrl: 'https://www.rei.com/help',
     segment: 'outdoor retail chain',
     fitScore: 98,
+    partnershipStatus: 'active_partner',
+    doNotOutreach: true,
     background: 'Large US outdoor specialty retailer and co-op with camping, hiking, travel, and outdoor equipment categories.',
     buyerPersona: 'Category buyer / merchandising manager for camping, outdoor electronics, and accessories.',
   },
@@ -21,7 +25,9 @@ const CANDIDATES = [
     company: 'Bass Pro Shops',
     country: 'United States',
     url: 'https://www.basspro.com/',
-    platformUrl: 'https://www.instagram.com/bassproshops/',
+    instagramUrl: 'https://www.instagram.com/bassproshops/',
+    facebookUrl: 'https://www.facebook.com/bassproshops',
+    contactUrl: 'https://www.basspro.com/shop/en/contact-us',
     segment: 'outdoor retail chain',
     fitScore: 96,
     background: 'Major North American outdoor, fishing, hunting, camping, and boating retailer with strong channel fit.',
@@ -31,7 +37,9 @@ const CANDIDATES = [
     company: 'Cabela\'s',
     country: 'United States',
     url: 'https://www.cabelas.com/',
-    platformUrl: 'https://www.instagram.com/cabelas/',
+    instagramUrl: 'https://www.instagram.com/cabelas/',
+    facebookUrl: 'https://www.facebook.com/Cabelas',
+    contactUrl: 'https://www.cabelas.com/shop/en/contact-us',
     segment: 'outdoor retail chain',
     fitScore: 95,
     background: 'Outdoor retail brand under Bass Pro group, relevant for camping and outdoor accessory distribution.',
@@ -41,7 +49,9 @@ const CANDIDATES = [
     company: 'MEC',
     country: 'Canada',
     url: 'https://www.mec.ca/',
-    platformUrl: 'https://www.instagram.com/mec/',
+    instagramUrl: 'https://www.instagram.com/mec/',
+    facebookUrl: 'https://www.facebook.com/MountainEquipmentCoop',
+    contactUrl: 'https://www.mec.ca/en/contact-us',
     segment: 'outdoor retail chain',
     fitScore: 94,
     background: 'Canadian outdoor retail co-op focused on camping, hiking, climbing, travel, and outdoor gear.',
@@ -51,7 +61,9 @@ const CANDIDATES = [
     company: 'Sail Outdoors',
     country: 'Canada',
     url: 'https://www.sail.ca/',
-    platformUrl: 'https://www.instagram.com/sailoutdoors/',
+    instagramUrl: 'https://www.instagram.com/sailoutdoors/',
+    facebookUrl: 'https://www.facebook.com/SAILoutdoors',
+    contactUrl: 'https://www.sail.ca/en/contact-us',
     segment: 'outdoor retail chain',
     fitScore: 91,
     background: 'Canadian outdoor retailer for camping, fishing, hunting, apparel, and equipment.',
@@ -61,7 +73,9 @@ const CANDIDATES = [
     company: 'GO Outdoors',
     country: 'United Kingdom',
     url: 'https://www.gooutdoors.co.uk/',
-    platformUrl: 'https://www.instagram.com/gooutdoors/',
+    instagramUrl: 'https://www.instagram.com/gooutdoors/',
+    facebookUrl: 'https://www.facebook.com/GOoutdoorsUK/',
+    contactUrl: 'https://www.gooutdoors.co.uk/contact-us',
     segment: 'outdoor retail chain',
     fitScore: 93,
     background: 'UK outdoor retailer with camping, tents, hiking, cycling, and outdoor equipment categories.',
@@ -71,7 +85,9 @@ const CANDIDATES = [
     company: 'Cotswold Outdoor',
     country: 'United Kingdom',
     url: 'https://www.cotswoldoutdoor.com/',
-    platformUrl: 'https://www.instagram.com/cotswoldoutdoor/',
+    instagramUrl: 'https://www.instagram.com/cotswoldoutdoor/',
+    facebookUrl: 'https://www.facebook.com/CotswoldOutdoor',
+    contactUrl: 'https://www.cotswoldoutdoor.com/contact-us',
     segment: 'outdoor retail chain',
     fitScore: 90,
     background: 'UK specialty outdoor retailer for hiking, camping, travel, and technical outdoor products.',
@@ -81,7 +97,9 @@ const CANDIDATES = [
     company: 'Anaconda',
     country: 'Australia',
     url: 'https://www.anacondastores.com/',
-    platformUrl: 'https://www.instagram.com/anacondastores/',
+    instagramUrl: 'https://www.instagram.com/anacondastores/',
+    facebookUrl: 'https://www.facebook.com/AnacondaStores',
+    contactUrl: 'https://www.anacondastores.com/contact-us',
     segment: 'outdoor retail chain',
     fitScore: 92,
     background: 'Australian outdoor retailer for camping, hiking, fishing, 4WD, and outdoor lifestyle equipment.',
@@ -91,7 +109,9 @@ const CANDIDATES = [
     company: 'BCF',
     country: 'Australia',
     url: 'https://www.bcf.com.au/',
-    platformUrl: 'https://www.instagram.com/bcf.australia/',
+    instagramUrl: 'https://www.instagram.com/bcf.australia/',
+    facebookUrl: 'https://www.facebook.com/BCFAustralia',
+    contactUrl: 'https://www.bcf.com.au/contact-us',
     segment: 'outdoor retail chain',
     fitScore: 89,
     background: 'Australian boating, camping, and fishing retailer with strong fit for compact outdoor power and camping accessories.',
@@ -101,7 +121,9 @@ const CANDIDATES = [
     company: 'Kathmandu',
     country: 'New Zealand',
     url: 'https://www.kathmandu.co.nz/',
-    platformUrl: 'https://www.instagram.com/kathmandugear/',
+    instagramUrl: 'https://www.instagram.com/kathmandugear/',
+    facebookUrl: 'https://www.facebook.com/Kathmandu',
+    contactUrl: 'https://www.kathmandu.co.nz/contact-us',
     segment: 'outdoor brand and retail chain',
     fitScore: 88,
     background: 'New Zealand outdoor brand and retailer with apparel, travel, hiking, and camping categories.',
@@ -111,7 +133,9 @@ const CANDIDATES = [
     company: 'Decathlon Germany',
     country: 'Germany',
     url: 'https://www.decathlon.de/',
-    platformUrl: 'https://www.instagram.com/decathlondeutschland/',
+    instagramUrl: 'https://www.instagram.com/decathlondeutschland/',
+    facebookUrl: 'https://www.facebook.com/DecathlonDeutschland',
+    contactUrl: 'https://www.decathlon.de/help/app/contact',
     segment: 'sporting goods retail chain',
     fitScore: 90,
     background: 'Large sporting goods retailer with camping, hiking, outdoor, and travel categories.',
@@ -121,7 +145,9 @@ const CANDIDATES = [
     company: 'Decathlon France',
     country: 'France',
     url: 'https://www.decathlon.fr/',
-    platformUrl: 'https://www.instagram.com/decathlonfrance/',
+    instagramUrl: 'https://www.instagram.com/decathlonfrance/',
+    facebookUrl: 'https://www.facebook.com/DecathlonFrance',
+    contactUrl: 'https://www.decathlon.fr/help/app/contact',
     segment: 'sporting goods retail chain',
     fitScore: 90,
     background: 'Large French sporting goods retailer with strong outdoor and camping category coverage.',
@@ -131,13 +157,256 @@ const CANDIDATES = [
     company: 'Bever',
     country: 'Netherlands',
     url: 'https://www.bever.nl/',
-    platformUrl: 'https://www.instagram.com/bever/',
+    instagramUrl: 'https://www.instagram.com/bevernl/',
+    facebookUrl: 'https://www.facebook.com/BeverNL',
+    contactUrl: 'https://www.bever.nl/klantenservice/contactgegevens.html',
     segment: 'outdoor retail chain',
     fitScore: 86,
     background: 'Dutch outdoor retailer for hiking, camping, travel, and outdoor apparel/equipment.',
     buyerPersona: 'Outdoor equipment buyer or category manager.',
   },
 ];
+
+const KNOWN_BROKEN_SOCIAL_URLS = new Set([
+  'https://www.instagram.com/sailoutdoors/',
+]);
+
+const VERIFIED_ENRICHMENT = {
+  'REI Co-op': {
+    linkedinUrl: 'https://www.linkedin.com/company/rei',
+    founded: '1938',
+    headquarters: 'Seattle, Washington, United States',
+    companyScale: '10,001+ employees; national US co-op retailer and ecommerce channel',
+    coverage: 'National / United States',
+    mainBrands: 'Multi-brand outdoor retail assortment across camping, hiking, cycling, travel, apparel, and REI private label',
+    salesChannel: 'Omni-channel retail: stores, ecommerce, co-op membership, outdoor services',
+    buyingCapability: 'Large national buyer organization; vendor/category review likely required',
+    decisionMaker: 'Camping accessories buyer, category merchant, vendor onboarding or merchandising manager',
+    publicEmail: '',
+    publicEmailStatus: 'No public buyer email verified; use official help/contact path or LinkedIn/company vendor research.',
+    contactPhone: '',
+    vendorPortal: 'https://www.rei.com/help',
+    linkedinCompany: 'https://www.linkedin.com/company/rei',
+    contactNote: 'Use REI help/contact route and LinkedIn procurement/category research; do not guess employee emails.',
+    dataSources: ['LinkedIn company profile', 'Official website/contact page'],
+  },
+  'Bass Pro Shops': {
+    linkedinUrl: 'https://www.linkedin.com/company/bassproshops',
+    founded: '1972',
+    headquarters: 'Springfield, Missouri, United States',
+    companyScale: '150+ Bass Pro/Cabela retail locations across North America; large omnichannel outdoor retail group',
+    coverage: 'North America',
+    mainBrands: 'Bass Pro Shops, Cabela’s, Tracker Boats and broad third-party outdoor/fishing/camping brands',
+    salesChannel: 'Destination retail stores, ecommerce, catalog, loyalty/membership, vendor portal',
+    buyingCapability: 'Very high; formal vendor submission via Bass Pro Shops/Cabela’s vendor relations',
+    decisionMaker: 'Camping/outdoor accessories category merchant or vendor relations team',
+    publicEmail: 'vendorrelations@basspro.com',
+    publicEmailStatus: 'Official vendor submission email for finished product/company information.',
+    contactPhone: '',
+    vendorPortal: 'https://vendorportal.basspro.com/',
+    linkedinCompany: 'https://www.linkedin.com/company/bassproshops',
+    contactNote: 'Send product information, company information, website link and primary contact to vendor relations with the right department subject line.',
+    dataSources: ['Bass Pro Shops Vendor Relations Portal', 'Bass Pro Shops LinkedIn'],
+  },
+  'Cabela\'s': {
+    linkedinUrl: 'https://www.linkedin.com/company/cabela%27s',
+    founded: '1961',
+    headquarters: 'Sidney, Nebraska, United States',
+    companyScale: '10,001+ employee retail brand under Bass Pro Shops group',
+    coverage: 'United States / Canada through Bass Pro Shops group',
+    mainBrands: 'Cabela’s, Bass Pro Shops group brands, hunting/fishing/camping/outdoor categories',
+    salesChannel: 'Retail stores, ecommerce, catalog, Bass Pro Shops/Cabela’s vendor relations',
+    buyingCapability: 'Very high; same Bass Pro Shops/Cabela’s vendor review route',
+    decisionMaker: 'Camping, hunting, outdoor gear buyer or Bass Pro Shops/Cabela’s vendor relations',
+    publicEmail: 'vendorrelations@basspro.com',
+    publicEmailStatus: 'Official Cabela’s help article points product submissions to this vendor relations email.',
+    contactPhone: '',
+    vendorPortal: 'https://help.cabelas.com/company-information-ff566349/how-can-i-sell-my-product-through-cabelas-cf904a21',
+    linkedinCompany: 'https://www.linkedin.com/company/cabela%27s',
+    contactNote: 'Submit finished product/company information through Bass Pro Shops/Cabela’s vendor relations.',
+    dataSources: ['Cabela’s help article', 'Cabela’s LinkedIn'],
+  },
+  MEC: {
+    linkedinUrl: 'https://ca.linkedin.com/company/mountainequipmentcompany',
+    founded: '1971',
+    headquarters: 'Vancouver, British Columbia, Canada',
+    companyScale: 'Canadian national outdoor retailer; established 1971',
+    coverage: 'Canada',
+    mainBrands: 'Outdoor gear, apparel and equipment for camping, climbing, hiking, cycling, snow and travel',
+    salesChannel: 'Stores, ecommerce, membership/community channel',
+    buyingCapability: 'High; category/brand partnership or merchandising route required',
+    decisionMaker: 'Camping equipment category merchant, brand partnerships, vendor review contact',
+    publicEmail: 'info@mec.ca',
+    publicEmailStatus: 'Public general information/customer contact email; buyer email not publicly verified.',
+    contactPhone: '1-888-847-0770',
+    vendorPortal: 'https://www.mec.ca/en/contact-us',
+    linkedinCompany: 'https://ca.linkedin.com/company/mountainequipmentcompany',
+    contactNote: 'Use info/contact path first; ask for camping/outdoor accessories category buyer or brand partnership contact.',
+    dataSources: ['MEC LinkedIn', 'MEC public contact/FAQ sources'],
+  },
+  'Sail Outdoors': {
+    linkedinUrl: 'https://ca.linkedin.com/company/sailpleinairoutdoors',
+    founded: '1981',
+    headquarters: 'Beloeil, Quebec, Canada',
+    companyScale: 'Quebec/Ontario outdoor, camping, hunting and fishing retail network',
+    coverage: 'Eastern Canada',
+    mainBrands: 'Brand-name outdoor sports, camping, hunting and fishing products',
+    salesChannel: 'Stores and ecommerce',
+    buyingCapability: 'Medium/High; regional Canadian outdoor chain',
+    decisionMaker: 'Camping/outdoor equipment department buyer or merchandising manager',
+    publicEmail: '',
+    publicEmailStatus: 'No public buyer email verified; Instagram profile is broken, use Facebook or official contact page.',
+    contactPhone: '',
+    vendorPortal: 'https://www.sail.ca/en/contact-us',
+    linkedinCompany: 'https://ca.linkedin.com/company/sailpleinairoutdoors',
+    contactNote: 'Reroute away from broken Instagram URL; use Facebook page and official contact page.',
+    dataSources: ['SAIL LinkedIn', 'SAIL public contact page/job descriptions'],
+  },
+  'GO Outdoors': {
+    linkedinUrl: 'https://uk.linkedin.com/company/go-outdoors-ltd',
+    founded: '1969',
+    headquarters: 'Bury, Lancashire, United Kingdom',
+    companyScale: '1,001-5,000 employees; major UK outdoor retail chain',
+    coverage: 'United Kingdom',
+    mainBrands: 'Camping equipment, outdoor clothing/footwear, cycling, fishing, caravanning, tents',
+    salesChannel: 'Stores and ecommerce',
+    buyingCapability: 'High; category buyer or JD Outdoors/GO Outdoors merchandising route',
+    decisionMaker: 'Camping equipment buyer, outdoor accessories category manager, vendor review contact',
+    publicEmail: '',
+    publicEmailStatus: 'No public buyer email verified; use official contact page and LinkedIn category research.',
+    contactPhone: '+44 330 008 1555',
+    vendorPortal: 'https://www.gooutdoors.co.uk/contact-us',
+    linkedinCompany: 'https://uk.linkedin.com/company/go-outdoors-ltd',
+    contactNote: 'Use official contact route and ask for camping/accessories buyer; validate any personal emails before use.',
+    dataSources: ['GO Outdoors LinkedIn', 'GO Outdoors public company/contact sources'],
+  },
+  'Cotswold Outdoor': {
+    linkedinUrl: 'https://uk.linkedin.com/company/cotswold-outdoor',
+    founded: '1997',
+    headquarters: 'Swindon, Wiltshire, United Kingdom',
+    companyScale: 'Part of Cotswold Outdoor Group; one of the largest UK outdoor retail groups',
+    coverage: 'United Kingdom',
+    mainBrands: 'Cotswold Outdoor, Snow+Rock, Runners Need group brands',
+    salesChannel: 'Stores and ecommerce',
+    buyingCapability: 'High; outdoor group/category buying route',
+    decisionMaker: 'Outdoor equipment buyer, category manager, group merchandising contact',
+    publicEmail: 'enquiries@cotswoldoutdoor.com',
+    publicEmailStatus: 'Official customer contact email; buyer email not publicly verified.',
+    contactPhone: '01666 336447',
+    vendorPortal: 'https://help.cotswoldoutdoor.com/hc/en-gb/articles/21898663918866-Contact-Details',
+    linkedinCompany: 'https://uk.linkedin.com/company/cotswold-outdoor',
+    contactNote: 'Use enquiries/contact route to request vendor/category buyer routing.',
+    dataSources: ['Cotswold Outdoor contact details', 'Cotswold Outdoor Group sources'],
+  },
+  Anaconda: {
+    linkedinUrl: 'https://au.linkedin.com/company/anaconda-group-pty-ltd',
+    founded: '2004',
+    headquarters: 'South Melbourne, Victoria, Australia',
+    companyScale: '501-1,000 employees on LinkedIn; large Australian camping/adventure retail chain',
+    coverage: 'Australia',
+    mainBrands: 'Camping, fishing, hiking, 4WD, outdoor lifestyle and adventure retail brands',
+    salesChannel: 'Stores and ecommerce',
+    buyingCapability: 'High; Australian national outdoor chain under Spotlight Group holdings',
+    decisionMaker: 'Camping/4WD/outdoor equipment buyer or category manager',
+    publicEmail: 'info@spotlightgroup.com',
+    publicEmailStatus: 'Parent/group public contact email; direct buyer email not publicly verified.',
+    contactPhone: '1300 558 990',
+    vendorPortal: 'https://help.anacondastores.com/hc/en-au',
+    linkedinCompany: 'https://au.linkedin.com/company/anaconda-group-pty-ltd',
+    contactNote: 'Use official enquiry form or group contact; request camping/4WD category buyer routing.',
+    dataSources: ['Anaconda LinkedIn', 'Anaconda help centre', 'Spotlight Group Anaconda page'],
+  },
+  BCF: {
+    linkedinUrl: 'https://au.linkedin.com/company/boating-camping-fishing',
+    founded: '2005',
+    headquarters: 'Strathpine, Queensland, Australia',
+    companyScale: '1,001-5,000 employees; largest outdoor retailer in Australia per company profile',
+    coverage: 'Australia',
+    mainBrands: 'Boating, camping, fishing and outdoor brands under Super Retail Group',
+    salesChannel: 'Stores and ecommerce; Super Retail Group trade partner processes',
+    buyingCapability: 'High; Super Retail Group trade partner route',
+    decisionMaker: 'Camping/outdoor accessories category manager or Super Retail Group trade partner contact',
+    publicEmail: '',
+    publicEmailStatus: 'No public buyer email verified; use Super Retail Group trade partner/contact route.',
+    contactPhone: '',
+    vendorPortal: 'https://www.superretailgroup.com.au/working-with-us/Trade/',
+    linkedinCompany: 'https://au.linkedin.com/company/boating-camping-fishing',
+    contactNote: 'Use Super Retail Group trade partner information; do not use generic AP emails for sales pitch.',
+    dataSources: ['BCF LinkedIn', 'Super Retail Group trade partner page'],
+  },
+  Kathmandu: {
+    linkedinUrl: 'https://sd.linkedin.com/company/kathmandu',
+    founded: '1987',
+    headquarters: 'Christchurch, Canterbury, New Zealand',
+    companyScale: 'Outdoor lifestyle brand/retailer across New Zealand, Australia and international wholesale channels',
+    coverage: 'New Zealand / Australia / international brand distribution',
+    mainBrands: 'Kathmandu, Oboz and KMD Brands outdoor portfolio',
+    salesChannel: 'Stores, ecommerce, brand/wholesale sales channels',
+    buyingCapability: 'Medium/High; brand partnership/wholesale sales route may be more relevant than vendor pitch',
+    decisionMaker: 'Partnerships, wholesale, sales manager, or category collaboration contact',
+    publicEmail: 'eric.eichberger@kmdbrands.com',
+    publicEmailStatus: 'Published North America sales contact on Kathmandu support page; validate region fit before outreach.',
+    contactPhone: '+1 604 781 1253',
+    vendorPortal: 'https://help.kathmanduoutdoor.com/support/solutions/articles/51000414624-sales-team-contact-details',
+    linkedinCompany: 'https://sd.linkedin.com/company/kathmandu',
+    contactNote: 'Use sales-team contact page for region routing; for vendor/category pitch ask for outdoor accessories partnership contact.',
+    dataSources: ['Kathmandu LinkedIn', 'Kathmandu sales team contact page'],
+  },
+  'Decathlon Germany': {
+    linkedinUrl: 'https://www.linkedin.com/company/decathlon-group',
+    founded: '1976',
+    headquarters: 'Villeneuve-d’Ascq / Lille, France; Germany country operation',
+    companyScale: 'Decathlon Group: 10,001+ employees and 1,800+ stores globally',
+    coverage: 'Germany / Europe / Global Decathlon group',
+    mainBrands: 'Decathlon private-label sports/outdoor brands and marketplace categories',
+    salesChannel: 'Stores, ecommerce, marketplace, group retail operations',
+    buyingCapability: 'Very high; marketplace/vendor onboarding or camping category buyer route',
+    decisionMaker: 'Camping/outdoor category buyer, marketplace partnership, Decathlon Germany vendor onboarding',
+    publicEmail: 'international.media@decathlon.com',
+    publicEmailStatus: 'Public group media email only; buyer/vendor email not publicly verified.',
+    contactPhone: '',
+    vendorPortal: 'https://www.decathlon.de/help/app/contact',
+    linkedinCompany: 'https://www.linkedin.com/company/decathlon-group',
+    contactNote: 'Use country contact/marketplace route; do not use media email for sales except as routing fallback.',
+    dataSources: ['Decathlon LinkedIn', 'Decathlon group contact page'],
+  },
+  'Decathlon France': {
+    linkedinUrl: 'https://www.linkedin.com/company/decathlon-group',
+    founded: '1976',
+    headquarters: 'Villeneuve-d’Ascq / Lille, France',
+    companyScale: 'Decathlon Group: 10,001+ employees and 1,800+ stores globally',
+    coverage: 'France / Europe / Global Decathlon group',
+    mainBrands: 'Decathlon private-label sports/outdoor brands and marketplace categories',
+    salesChannel: 'Stores, ecommerce, marketplace, group retail operations',
+    buyingCapability: 'Very high; marketplace/vendor onboarding or camping category buyer route',
+    decisionMaker: 'Camping/outdoor category buyer, marketplace partnership, Decathlon France vendor onboarding',
+    publicEmail: 'international.media@decathlon.com',
+    publicEmailStatus: 'Public group media email only; buyer/vendor email not publicly verified.',
+    contactPhone: '',
+    vendorPortal: 'https://www.decathlon.fr/help/app/contact',
+    linkedinCompany: 'https://www.linkedin.com/company/decathlon-group',
+    contactNote: 'Use country contact/marketplace route; do not use media email for sales except as routing fallback.',
+    dataSources: ['Decathlon LinkedIn', 'Decathlon group contact page'],
+  },
+  Bever: {
+    linkedinUrl: 'https://nl.linkedin.com/company/bever',
+    founded: '1977',
+    headquarters: 'Pijnacker, South Holland, Netherlands',
+    companyScale: 'Dutch outdoor retail chain; 40 stores reported by public company sources',
+    coverage: 'Netherlands',
+    mainBrands: 'Outdoor apparel, footwear, camping, hiking and travel gear brands',
+    salesChannel: 'Stores, ecommerce, customer service/contact form and social channels',
+    buyingCapability: 'Medium/High; national Netherlands outdoor specialist',
+    decisionMaker: 'Outdoor equipment/category buyer or B2B/partnership contact',
+    publicEmail: 'klantenservice@bever.nl',
+    publicEmailStatus: 'Official customer service email; buyer email not publicly verified.',
+    contactPhone: '+31 85 888 50 88',
+    vendorPortal: 'https://www.bever.nl/klantenservice/contactgegevens.html',
+    linkedinCompany: 'https://nl.linkedin.com/company/bever',
+    contactNote: 'Use official email/contact form to request category buyer routing; WhatsApp/customer channels are for service.',
+    dataSources: ['Bever official contact page', 'Bever LinkedIn/public company sources'],
+  },
+};
 
 function csvCell(value) {
   return `"${String(value == null ? '' : value).replace(/"/g, '""')}"`;
@@ -148,46 +417,185 @@ function googleUrl(company, segment, country) {
   return `https://www.google.com/search?q=${encodeURIComponent(query)}`;
 }
 
+function contactSearchUrl(company, website) {
+  const host = String(website || '').replace(/^https?:\/\//, '').replace(/\/.*$/, '');
+  const query = `site:${host} ${JSON.stringify(company)} contact buyer wholesale email vendor`;
+  return `https://www.google.com/search?q=${encodeURIComponent(query)}`;
+}
+
+function slug(value) {
+  return String(value || '').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+}
+
+function websiteContactSubject(item) {
+  return 'Flextail & Vollyc | Lightweight Outdoor & 3C Electronics – Potential Cooperation';
+}
+
+function marketingEmailSignature() {
+  return `[Flextail.com](https://www.flextail.com/), [vollyc.com](https://vollyc.com/)
+
+[Sincerely](https://wa.me/8617321028184)
+[Best Regard](https://wa.me/8617321028184)
+[Leo Liu](https://wa.me/8617321028184)
+[Sales](https://wa.me/8617321028184) [& Operations Director](https://wa.me/8617321028184)
+[Brand & ODM Department](https://wa.me/8617321028184)
+[Tel/whatsapp:  +86 17321028184](https://wa.me/8617321028184)
+
+[Email:  Leo@flextailgear.com](https://wa.me/8617321028184)
+[SHANGHAI FLEXTAIL TECHNOLOGY CO.,LTD.](https://wa.me/8617321028184)
+[Room103, Building No.6, No.1 Yanjiaqiao, Pudong District, ShangHai, China](https://wa.me/8617321028184)`;
+}
+
+function websiteContactMessage(item) {
+  const teamName = String(item.company || 'Your').replace(/\s+(Inc|Ltd|Limited|LLC|Group)$/i, '').trim() || 'Your';
+  return `Dear ${teamName} Team,
+
+Nice to e-meet you.
+I am Leo, from Flextail & Vollyc.
+
+Flextail is our first and core brand, specializing in ultralight electric products for outdoor, travel, and home use. The brand is currently Top 1 on Amazon, with strong global sell-through and a proven product-market fit.
+Vollyc, our second brand, focuses on 3C electronics, targeting practical, high-rotation consumer use cases.
+
+From our perspective, your platform and positioning are highly aligned with Flextail’s product philosophy, especially in lightweight outdoor and travel-oriented electrics.
+
+We have already contacted with your team, and we are now actively exploring opportunities in other regions.
+Attached, you will find a brief introduction to our brands and current product catalog for your reference.
+
+Looking ahead, we are planning to launch over 36 new SKUs in 2026, covering multiple usage scenarios and price tiers, which we believe could be of interest to your assortment strategy.
+
+If you are available, I would greatly appreciate the opportunity to arrange a short introductory video meeting to present our brands and discuss potential collaboration opportunities.
+
+Thank you for your time and consideration. I look forward to your reply.
+
+${marketingEmailSignature()}
+`;
+}
+
+function baseLead(item, id, evidenceUrl) {
+  const enrichment = VERIFIED_ENRICHMENT[item.company] || {};
+  const partnerAccount = Boolean(item.doNotOutreach || item.partnershipStatus === 'active_partner');
+  return {
+    ...enrichment,
+    id,
+    name: item.company,
+    company: item.company,
+    country: item.country,
+    countryEn: item.country,
+    fitScore: item.fitScore,
+    fitTier: item.fitScore >= 90 ? 'A+' : 'A',
+    marketScore: 4.5,
+    marketStatus: 'open',
+    agencyState: 'open',
+    keyword: item.segment,
+    role: item.buyerPersona,
+    background: item.background,
+    buyerPersona: item.buyerPersona,
+    productCategory: enrichment.productCategory || item.segment,
+    businessModel: enrichment.businessModel || 'Retail Chain',
+    productFit: enrichment.productFit || 'FLEXTAIL portable pumps, outdoor power, camping lighting and compact camping accessories',
+    opportunity: enrichment.opportunity || item.background,
+    linkedin_url: enrichment.linkedinUrl || '',
+    linkedin: enrichment.linkedinUrl || '',
+    publicEmail: enrichment.publicEmail || '',
+    contactEmail: enrichment.publicEmail || '',
+    vendorPortal: enrichment.vendorPortal || '',
+    contactPhone: enrichment.contactPhone || '',
+    contactNote: enrichment.contactNote || '',
+    publicEmailStatus: enrichment.publicEmailStatus || '',
+    website: item.url,
+    evidenceUrl,
+    query: evidenceUrl,
+    source: 'google_customer_discovery',
+    identityStatus: 'verified',
+    partnershipStatus: item.partnershipStatus || '',
+    doNotOutreach: Boolean(item.doNotOutreach),
+    automationStatus: item.doNotOutreach ? 'partner_account' : '',
+    partnerNote: item.doNotOutreach ? 'Active cooperation account; keep profile only and do not create new outreach tasks.' : '',
+    sendStatus: item.doNotOutreach ? 'partner_account' : '',
+    workingTime: {
+      dueNow: true,
+      timeZone: 'local-market',
+      localTime: new Date().toLocaleString(),
+      nextBest: 'open exact company profile, review background, then start compliant buyer/contact development',
+    },
+  };
+}
+
+function channelLeads(item) {
+  const evidenceUrl = googleUrl(item.company, item.segment, item.country);
+  const baseId = `google-customer-${slug(item.company)}`;
+  const invalidChannels = {};
+  if (item.instagramUrl && KNOWN_BROKEN_SOCIAL_URLS.has(item.instagramUrl.toLowerCase())) {
+    invalidChannels.instagram = {
+      url: item.instagramUrl,
+      status: 'broken_profile_url',
+      evidence: 'Instagram reports this page is unavailable; use Facebook or official website contact instead.',
+    };
+  }
+  const socialSiblings = {
+    instagram: invalidChannels.instagram ? '' : (item.instagramUrl || ''),
+    facebook: item.facebookUrl || '',
+    websiteContact: item.contactUrl || item.url,
+  };
+  const leads = [];
+  if (item.instagramUrl && !invalidChannels.instagram) {
+    leads.push({
+      ...baseLead(item, `${baseId}-instagram`, evidenceUrl),
+      platform: 'instagram',
+      platformUrl: item.instagramUrl,
+      url: item.instagramUrl,
+      action: item.doNotOutreach ? 'partner_account' : 'develop',
+      reason: item.doNotOutreach ? 'active_partner_no_new_outreach' : 'concrete_google_discovered_major_customer_instagram',
+      alternateChannels: socialSiblings,
+      identitySource: 'official website/social profile + Google background query',
+      channelPriority: 1,
+    });
+  }
+  if (item.facebookUrl) {
+    leads.push({
+      ...baseLead(item, `${baseId}-facebook`, evidenceUrl),
+      platform: 'facebook',
+      platformUrl: item.facebookUrl,
+      url: item.facebookUrl,
+      action: item.doNotOutreach ? 'partner_account' : 'develop',
+      reason: item.doNotOutreach ? 'active_partner_no_new_outreach' : 'concrete_google_discovered_major_customer_facebook',
+      alternateChannels: socialSiblings,
+      invalidChannels,
+      facebookStatus: 'verified_official_page_candidate',
+      identitySource: 'official Facebook page candidate + official website + Google background query',
+      channelPriority: 2,
+    });
+  }
+  leads.push({
+    ...baseLead(item, `${baseId}-website-contact`, evidenceUrl),
+    platform: 'email',
+    platformUrl: item.contactUrl || item.url,
+    url: item.contactUrl || item.url,
+    contactUrl: item.contactUrl || item.url,
+    contactSearchUrl: contactSearchUrl(item.company, item.url),
+    emailFrom: 'leo@flextailgear.com',
+    websiteContactSubject: websiteContactSubject(item),
+    websiteContactMessage: websiteContactMessage(item),
+    websiteContactFlow: 'open_official_contact_us_fill_attach_auto_submit',
+    action: item.doNotOutreach ? 'partner_account' : 'email_priority',
+    partnershipStatus: item.partnershipStatus || '',
+    doNotOutreach: Boolean(item.doNotOutreach),
+    automationStatus: item.doNotOutreach ? 'partner_account' : '',
+    partnerNote: item.doNotOutreach ? 'Active cooperation account; keep profile only and do not create new outreach tasks.' : '',
+    sendStatus: item.doNotOutreach ? 'partner_account' : '',
+    reason: item.doNotOutreach ? 'active_partner_no_new_outreach' : 'official_website_contact_channel',
+    alternateChannels: socialSiblings,
+    invalidChannels,
+    identitySource: 'official website contact path + Google buyer/contact query',
+    channelPriority: 3,
+  });
+  return leads;
+}
+
 function buildLeads(limit = 40) {
   return CANDIDATES
-    .map((item) => {
-      const evidenceUrl = googleUrl(item.company, item.segment, item.country);
-      const id = `google-customer-${item.company}`.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
-      return {
-        id,
-        name: item.company,
-        company: item.company,
-        platform: item.platformUrl ? 'instagram' : 'website',
-        country: item.country,
-        countryEn: item.country,
-        fitScore: item.fitScore,
-        fitTier: item.fitScore >= 90 ? 'A+' : 'A',
-        marketScore: 4.5,
-        marketStatus: 'open',
-        agencyState: 'open',
-        keyword: item.segment,
-        role: item.buyerPersona,
-        background: item.background,
-        buyerPersona: item.buyerPersona,
-        website: item.url,
-        platformUrl: item.platformUrl || item.url,
-        url: item.platformUrl || item.url,
-        evidenceUrl,
-        query: evidenceUrl,
-        action: 'develop',
-        reason: 'concrete_google_discovered_major_customer',
-        source: 'google_customer_discovery',
-        identityStatus: 'verified',
-        identitySource: 'official website/social profile + Google background query',
-        workingTime: {
-          dueNow: true,
-          timeZone: 'local-market',
-          localTime: new Date().toLocaleString(),
-          nextBest: 'open exact company profile, review background, then start compliant buyer/contact development',
-        },
-      };
-    })
-    .sort((left, right) => right.fitScore - left.fitScore)
+    .flatMap(channelLeads)
+    .sort((left, right) => right.fitScore - left.fitScore || left.channelPriority - right.channelPriority)
     .slice(0, limit);
 }
 
@@ -202,7 +610,7 @@ function main() {
   };
   fs.writeFileSync(OUT_JSON, JSON.stringify(run, null, 2));
   fs.writeFileSync(OUT_JS, `window.GOOGLE_LEAD_DISCOVERY_LATEST = ${JSON.stringify(run, null, 2)};\n`);
-  const columns = ['rank', 'id', 'company', 'country', 'fitScore', 'keyword', 'website', 'platformUrl', 'background', 'buyerPersona', 'evidenceUrl', 'action'];
+  const columns = ['rank', 'id', 'company', 'platform', 'country', 'fitScore', 'keyword', 'website', 'platformUrl', 'contactUrl', 'contactSearchUrl', 'emailFrom', 'websiteContactSubject', 'websiteContactMessage', 'background', 'buyerPersona', 'evidenceUrl', 'action'];
   const rows = run.leads.map((lead, index) => ({ rank: index + 1, ...lead }));
   fs.writeFileSync(OUT_CSV, [columns.join(','), ...rows.map(row => columns.map(column => csvCell(row[column])).join(','))].join('\n'));
   console.log(JSON.stringify({ count: run.leads.length, json: OUT_JSON, csv: OUT_CSV }, null, 2));
