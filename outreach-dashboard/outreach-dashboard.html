@@ -242,7 +242,7 @@ tr.contact-row:hover .row-actions{display:inline-flex}
   .detail-overlay{width:100vw}
 }
 </style>
-<link rel="stylesheet" href="./command-center.css?v=20260630-live-sections-refresh">
+<link rel="stylesheet" href="./command-center.css?v=20260701-no-false-development">
 </head>
 <body>
 
@@ -478,11 +478,11 @@ tr.contact-row:hover .row-actions{display:inline-flex}
 
 <script src="./country-market-data.js?v=20260604-icp-fit"></script>
 <script src="./daily-outreach-tasks.js?v=20260605-followup-data-fix"></script>
-<script src="./google-lead-discovery-latest.js?v=20260630-live-sections-refresh"></script>
-<script src="./daily-automation-latest.js?v=20260630-live-sections-refresh"></script>
-<script src="./daily-automation-execution-latest.js?v=20260630-live-sections-refresh"></script>
-<script src="./system-visibility-latest.js?v=20260630-live-sections-refresh"></script>
-<script src="./github-sync/latest-status.js?v=20260630-live-sections-refresh"></script>
+<script src="./google-lead-discovery-latest.js?v=20260701-no-false-development"></script>
+<script src="./daily-automation-latest.js?v=20260701-no-false-development"></script>
+<script src="./daily-automation-execution-latest.js?v=20260701-no-false-development"></script>
+<script src="./system-visibility-latest.js?v=20260701-no-false-development"></script>
+<script src="./github-sync/latest-status.js?v=20260701-no-false-development"></script>
 <script>
 // === UTILS ===
 const TIER1_KEYS=['CEO','President','Founder','Owner','Managing Director','VP','Vice President','Head','Director','Chief'];
@@ -2238,21 +2238,21 @@ function exportCSV(){
 }
 if('serviceWorker' in navigator){
   navigator.serviceWorker.addEventListener('controllerchange',()=>{
-    const key='sw-refresh-20260630-live-sections-refresh';
+    const key='sw-refresh-20260701-no-false-development';
     if(sessionStorage.getItem(key)) return;
     sessionStorage.setItem(key,'1');
     window.location.reload();
   });
-  window.addEventListener('load',()=>navigator.serviceWorker.register('./service-worker.js?v=20260630-live-sections-refresh').then(reg=>reg.update()).catch(()=>{}));
+  window.addEventListener('load',()=>navigator.serviceWorker.register('./service-worker.js?v=20260701-no-false-development').then(reg=>reg.update()).catch(()=>{}));
 }
 initializeKpiDetailPage();
 </script>
 <script src="./outreach-engine.js?v=20260610-autonomous"></script>
 <script src="./outreach-analytics.js?v=20260610-autonomous"></script>
-<script src="./autonomous-outreach-results.js?v=20260630-live-sections-refresh"></script>
+<script src="./autonomous-outreach-results.js?v=20260701-no-false-development"></script>
 <script src="./verified-profile-registry.js?v=20260612-profile-calibration"></script>
 <script src="./autonomous-outreach-data.js?v=20260618-icp-priority"></script>
-<script src="./command-center.js?v=20260630-live-sections-refresh"></script>
+<script src="./command-center.js?v=20260701-no-false-development"></script>
 </body>
 </html>
 

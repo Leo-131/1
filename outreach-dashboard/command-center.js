@@ -987,6 +987,12 @@
   function executionVisibilitySummary() {
     const skipped = executionSkipped();
     const results = executionResults();
+    const noBrowserExecution = latestExecution && (
+      latestExecution.executionPhase === 'no_executable_tasks'
+      || latestExecution.chromeStage === 'not_started'
+      || latestExecution.chromeOpened === false
+      || (latestExecution.customerDevelopmentPerformed === false && latestExecution.skippedOnly)
+    );
     const buckets = skipped.reduce((acc, item) => {
       const key = item.reason || item.error || item.status || 'unknown';
       acc[key] = (acc[key] || 0) + 1;
@@ -995,8 +1001,11 @@
     const bucketRows = Object.entries(buckets)
       .sort((a, b) => b[1] - a[1])
       .map(([reason, count]) => ({ reason, count, label: humanSkipLabel(reason) }));
-    const chromeEntered = results.some(item => item && (item.ok || item.status || item.evidence || item.automationEvidence));
-    const chromeStage = latestExecution && latestExecution.skippedOnly
+    const chromeEntered = (latestExecution && latestExecution.chromeOpened === true)
+      || results.some(item => item && (item.chromeOpen && item.chromeOpen.ok || item.ok || item.status || item.evidence || item.automationEvidence));
+    const chromeStage = noBrowserExecution
+      ? 'Chrome not opened - no development performed'
+      : latestExecution && latestExecution.skippedOnly
       ? 'Chrome 未进入执行阶段'
       : chromeEntered
         ? 'Chrome 已执行'
@@ -1005,7 +1014,7 @@
           : latestExecution
             ? '未记录 Chrome 动作'
             : '尚未加载执行结果';
-    const headline = latestExecution
+    let headline = latestExecution
       ? latestExecution.pendingExecution
         ? '队列已刷新，等待 daily:execute'
         : latestExecution.skippedOnly
@@ -1014,12 +1023,16 @@
             ? `本轮已执行 ${results.length} 条`
             : `本轮执行失败：${latestExecution.error || '未知错误'}`
       : '尚未加载 daily:execute 结果';
-    const nextAction = latestExecution && latestExecution.skippedOnly
+    let nextAction = latestExecution && latestExecution.skippedOnly
       ? '优先处理官网/邮件入口；社媒项需先满足身份、冷却、防重复和可发消息按钮条件。'
       : latestExecution && latestExecution.ok
         ? '查看下方执行证据与客户触达记录。'
         : '等待下一次队列刷新或手动触发执行。';
-    return { skipped, results, bucketRows, chromeStage, headline, nextAction };
+    if (noBrowserExecution) {
+      headline = 'No customer development was performed; safety gates left no executable task';
+      nextAction = 'Wait for a new safe queue item or manually review the blocked/cooldown entries; do not report this run as development.';
+    }
+    return { skipped, results, bucketRows, chromeStage, headline, nextAction, noBrowserExecution };
   }
   function taskDetailPanel(system) {
     if (!latestRun) return '';
@@ -1029,7 +1042,7 @@
     const generatedAt = latestExecution && (latestExecution.completedAt || latestExecution.generatedAt)
       ? new Date(latestExecution.completedAt || latestExecution.generatedAt).toLocaleString('zh-CN', { hour12: false })
       : '尚未执行';
-    const executionText = latestExecution
+    let executionText = latestExecution
       ? latestExecution.pendingExecution
         ? `待执行：${latestExecution.message || latestExecution.error || '队列已刷新，尚未执行发送'}`
         : latestExecution.skippedOnly
@@ -1038,6 +1051,9 @@
           ? `已执行：${(latestExecution.results || latestExecution.executed || []).length} 条`
           : `执行失败：${latestExecution.error || '未知错误'}`
       : '尚未加载 daily:execute 结果';
+    if (visibility.noBrowserExecution) {
+      executionText = `No development performed: ${latestExecution.userVisibleStatus || latestExecution.error || 'Chrome was not opened because there were no executable tasks.'}`;
+    }
     const syncText = latestGithubSync
       ? latestGithubSync.ok
         ? `GitHub 已同步：${latestGithubSync.remoteCommit || latestGithubSync.localCommit || 'commit 已推送'}`
@@ -1768,6 +1784,10 @@
       try {
         const result = await window.customerDev.runDailyAutomationQueue({ limit: Math.max(1, executableDevelopmentTasks().length), parallelLimit: 1, delayMs: 2500 });
         if (!result.ok) {
+          if (result.executionPhase === 'no_executable_tasks' || result.chromeOpened === false || result.customerDevelopmentPerformed === false) {
+            window.alert(`No Chrome/browser development was performed.\nReason: ${result.error || result.userVisibleStatus || 'Safety gates left no executable tasks.'}\nSkipped: ${(result.skipped || []).length}`);
+            return;
+          }
           window.alert(`${result.error || 'Daily queue did not execute.'}\nSkipped: ${(result.skipped || []).length}`);
           return;
         }

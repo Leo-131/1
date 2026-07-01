@@ -1,4 +1,4 @@
-const CACHE_NAME = 'customer-development-system-v18-7-20-20260630-live-sections-refresh';
+const CACHE_NAME = 'customer-development-system-v18-7-20-20260701-no-false-development';
 const APP_SHELL = [
   './',
   './index.html',

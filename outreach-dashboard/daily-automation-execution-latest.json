@@ -1,6 +1,15 @@
 {
   "ok": false,
   "skippedOnly": true,
+  "executionPhase": "no_executable_tasks",
+  "chromeStage": "not_started",
+  "chromeOpened": false,
+  "chromeOpenedCount": 0,
+  "customerDevelopmentPerformed": false,
+  "customerMessageSent": false,
+  "realDevelopmentCount": 0,
+  "reportingVerdict": "no_customer_development_performed",
+  "userVisibleStatus": "No Chrome/browser development was performed because safety gates left no executable tasks.",
   "error": "No executable tasks. Website-contact, social, cooldown, exclusive-agency, and verification safety gates left nothing safe to prepare.",
   "skipped": [
     {
@@ -26,5 +35,5 @@
     "needsVerification": 0,
     "retainedLowIcp": 0
   },
-  "completedAt": "2026-07-01T13:03:42.752Z"
+  "completedAt": "2026-07-01T13:23:33.045Z"
 }

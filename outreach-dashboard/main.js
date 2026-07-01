@@ -2341,6 +2341,31 @@ function queueItemToLead(item) {
   };
 }
 
+const REAL_CUSTOMER_DEVELOPMENT_STATUSES = new Set([
+  'sent_confirmed',
+  'account_followed',
+  'post_liked',
+]);
+
+function buildExecutionTruth(results = []) {
+  const rows = Array.isArray(results) ? results : [];
+  const chromeOpenedCount = rows.filter(item => item && item.chromeOpen && item.chromeOpen.ok).length;
+  const customerMessageSent = rows.some(item => item && item.sendStatus === 'sent_confirmed');
+  const realDevelopmentCount = rows.filter(item => item && REAL_CUSTOMER_DEVELOPMENT_STATUSES.has(item.sendStatus)).length;
+  return {
+    executionPhase: chromeOpenedCount ? 'browser_execution' : 'no_browser_execution',
+    chromeStage: chromeOpenedCount ? 'opened' : 'not_started',
+    chromeOpened: chromeOpenedCount > 0,
+    chromeOpenedCount,
+    customerDevelopmentPerformed: realDevelopmentCount > 0,
+    customerMessageSent,
+    realDevelopmentCount,
+    reportingVerdict: realDevelopmentCount > 0
+      ? 'development_performed'
+      : 'no_customer_development_performed',
+  };
+}
+
 ipcMain.handle('run-glm-direct-automation', async (_event, payload) => {
   const lead = payload && payload.lead;
   const result = await executeLeadAutomation(lead);
@@ -2401,6 +2426,15 @@ async function runDailyAutomationQueue(payload = {}) {
     return {
       ok: false,
       skippedOnly: true,
+      executionPhase: 'no_executable_tasks',
+      chromeStage: 'not_started',
+      chromeOpened: false,
+      chromeOpenedCount: 0,
+      customerDevelopmentPerformed: false,
+      customerMessageSent: false,
+      realDevelopmentCount: 0,
+      reportingVerdict: 'no_customer_development_performed',
+      userVisibleStatus: 'No Chrome/browser development was performed because safety gates left no executable tasks.',
       error: 'No executable tasks. Website-contact, social, cooldown, exclusive-agency, and verification safety gates left nothing safe to prepare.',
       skipped,
       summary: latest.summary || {},
@@ -2440,6 +2474,7 @@ async function runDailyAutomationQueue(payload = {}) {
 
   return {
     ok: results.some(item => item.ok),
+    ...buildExecutionTruth(results),
     engine: 'Codex Chrome Extension queue bridge',
     mode: 'serial-single-target',
     batchMode: 'parallel-batches',

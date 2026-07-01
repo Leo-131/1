@@ -95,4 +95,15 @@ if (!main.includes('const chromeOpen = await openWithCodexChrome(item.url)')) {
   throw new Error('Daily automation queue must open exact targets through Codex Chrome');
 }
 
+if (!main.includes("executionPhase: 'no_executable_tasks'")
+  || !main.includes('customerDevelopmentPerformed: false')
+  || !main.includes('chromeOpened: false')) {
+  throw new Error('No-executable daily runs must be recorded as no browser/customer development');
+}
+
+if (!commandCenter.includes('No Chrome/browser development was performed')
+  || !commandCenter.includes('No customer development was performed')) {
+  throw new Error('Dashboard must not report skipped/no-browser runs as customer development');
+}
+
 console.log('checks ok');
