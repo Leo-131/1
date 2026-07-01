@@ -22,8 +22,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
         "engine": "codex-chrome-extension-cdp",
         "port": 9224,
         "targetUrl": "https://www.basspro.com/shop/en/contact-us",
-        "tabId": "95C09CE00B9C984F87AAE0D34182295B",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/95C09CE00B9C984F87AAE0D34182295B",
+        "tabId": "8BAED236A3A2A77FE22832C6CC579D97",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/8BAED236A3A2A77FE22832C6CC579D97",
         "title": "Access Denied"
       },
       "result": {
@@ -37,8 +37,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
           "engine": "codex-chrome-extension-cdp",
           "port": 9224,
           "targetUrl": "https://www.basspro.com/shop/en/contact-us",
-          "tabId": "95C09CE00B9C984F87AAE0D34182295B",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/95C09CE00B9C984F87AAE0D34182295B",
+          "tabId": "8BAED236A3A2A77FE22832C6CC579D97",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/8BAED236A3A2A77FE22832C6CC579D97",
           "title": "Access Denied"
         },
         "sendStatus": "approval_pending",
@@ -62,8 +62,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
         "engine": "codex-chrome-extension-cdp",
         "port": 9224,
         "targetUrl": "https://www.cabelas.com/shop/en/contact-us",
-        "tabId": "E171BC121F63C60E3EBAFEB41C2A7A70",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/E171BC121F63C60E3EBAFEB41C2A7A70",
+        "tabId": "E77FA0F7621783D1691E17848B1B50A8",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/E77FA0F7621783D1691E17848B1B50A8",
         "title": "Access Denied"
       },
       "result": {
@@ -77,8 +77,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
           "engine": "codex-chrome-extension-cdp",
           "port": 9224,
           "targetUrl": "https://www.cabelas.com/shop/en/contact-us",
-          "tabId": "E171BC121F63C60E3EBAFEB41C2A7A70",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/E171BC121F63C60E3EBAFEB41C2A7A70",
+          "tabId": "E77FA0F7621783D1691E17848B1B50A8",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/E77FA0F7621783D1691E17848B1B50A8",
           "title": "Access Denied"
         },
         "sendStatus": "approval_pending",
@@ -102,8 +102,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
         "engine": "codex-chrome-extension-cdp",
         "port": 9224,
         "targetUrl": "https://www.decathlon.fr/help/app/contact",
-        "tabId": "B49D446D6487B80AE7EC6CCFED4FC09F",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/B49D446D6487B80AE7EC6CCFED4FC09F",
+        "tabId": "05A96DDD2D57248E6ED803760A26985B",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/05A96DDD2D57248E6ED803760A26985B",
         "title": "Aide - Decathlon"
       },
       "result": {
@@ -117,8 +117,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
           "engine": "codex-chrome-extension-cdp",
           "port": 9224,
           "targetUrl": "https://www.decathlon.fr/help/app/contact",
-          "tabId": "B49D446D6487B80AE7EC6CCFED4FC09F",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/B49D446D6487B80AE7EC6CCFED4FC09F",
+          "tabId": "05A96DDD2D57248E6ED803760A26985B",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/05A96DDD2D57248E6ED803760A26985B",
           "title": "Aide - Decathlon"
         },
         "sendStatus": "approval_pending",
@@ -142,8 +142,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
         "engine": "codex-chrome-extension-cdp",
         "port": 9224,
         "targetUrl": "https://www.bever.nl/klantenservice/contact.html",
-        "tabId": "9F0FF3B0FF35036041C375B402CDE257",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/9F0FF3B0FF35036041C375B402CDE257",
+        "tabId": "D5755E934669B22C805DA88497BB2ABA",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/D5755E934669B22C805DA88497BB2ABA",
         "title": "404 | Bever"
       },
       "result": {
@@ -157,8 +157,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
           "engine": "codex-chrome-extension-cdp",
           "port": 9224,
           "targetUrl": "https://www.bever.nl/klantenservice/contact.html",
-          "tabId": "9F0FF3B0FF35036041C375B402CDE257",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/9F0FF3B0FF35036041C375B402CDE257",
+          "tabId": "D5755E934669B22C805DA88497BB2ABA",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/D5755E934669B22C805DA88497BB2ABA",
           "title": "404 | Bever"
         },
         "sendStatus": "approval_pending",
@@ -182,9 +182,9 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
         "engine": "codex-chrome-extension-cdp",
         "port": 9224,
         "targetUrl": "https://www.gooutdoors.co.uk/contact-us",
-        "tabId": "15F0DB1B39A1B39CE8422A0CF4655CF2",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/15F0DB1B39A1B39CE8422A0CF4655CF2",
-        "title": ""
+        "tabId": "A1B160492B7831A73EDA5138AF7715F5",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/A1B160492B7831A73EDA5138AF7715F5",
+        "title": "Contact Us – GO Outdoors"
       },
       "result": {
         "ok": false,
@@ -197,9 +197,9 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
           "engine": "codex-chrome-extension-cdp",
           "port": 9224,
           "targetUrl": "https://www.gooutdoors.co.uk/contact-us",
-          "tabId": "15F0DB1B39A1B39CE8422A0CF4655CF2",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/15F0DB1B39A1B39CE8422A0CF4655CF2",
-          "title": ""
+          "tabId": "A1B160492B7831A73EDA5138AF7715F5",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/A1B160492B7831A73EDA5138AF7715F5",
+          "title": "Contact Us – GO Outdoors"
         },
         "sendStatus": "approval_pending",
         "subject": "Flextail & Vollyc | Lightweight Outdoor & 3C Electronics – Potential Cooperation",
@@ -222,8 +222,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
         "engine": "codex-chrome-extension-cdp",
         "port": 9224,
         "targetUrl": "https://www.kathmandu.co.nz/contact-us",
-        "tabId": "E622B38097B131FDF3E50423F9C25E47",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/E622B38097B131FDF3E50423F9C25E47",
+        "tabId": "8D778FA1CB1C3331BF6DADFEA0F5E869",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/8D778FA1CB1C3331BF6DADFEA0F5E869",
         "title": "404 Not Found"
       },
       "result": {
@@ -237,8 +237,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
           "engine": "codex-chrome-extension-cdp",
           "port": 9224,
           "targetUrl": "https://www.kathmandu.co.nz/contact-us",
-          "tabId": "E622B38097B131FDF3E50423F9C25E47",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/E622B38097B131FDF3E50423F9C25E47",
+          "tabId": "8D778FA1CB1C3331BF6DADFEA0F5E869",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/8D778FA1CB1C3331BF6DADFEA0F5E869",
           "title": "404 Not Found"
         },
         "sendStatus": "approval_pending",
@@ -262,8 +262,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
         "engine": "codex-chrome-extension-cdp",
         "port": 9224,
         "targetUrl": "https://www.bcf.com.au/contact-us",
-        "tabId": "FFF2632339EC5DE1F04F25CF1C6F0928",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/FFF2632339EC5DE1F04F25CF1C6F0928",
+        "tabId": "4812513B181D1F4AD7321712F20CA227",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/4812513B181D1F4AD7321712F20CA227",
         "title": "ERROR: The request could not be satisfied"
       },
       "result": {
@@ -277,8 +277,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
           "engine": "codex-chrome-extension-cdp",
           "port": 9224,
           "targetUrl": "https://www.bcf.com.au/contact-us",
-          "tabId": "FFF2632339EC5DE1F04F25CF1C6F0928",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/FFF2632339EC5DE1F04F25CF1C6F0928",
+          "tabId": "4812513B181D1F4AD7321712F20CA227",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/4812513B181D1F4AD7321712F20CA227",
           "title": "ERROR: The request could not be satisfied"
         },
         "sendStatus": "approval_pending",
@@ -304,8 +304,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
         "engine": "codex-chrome-extension-cdp",
         "port": 9224,
         "targetUrl": "https://www.basspro.com/shop/en/contact-us",
-        "tabId": "95C09CE00B9C984F87AAE0D34182295B",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/95C09CE00B9C984F87AAE0D34182295B",
+        "tabId": "8BAED236A3A2A77FE22832C6CC579D97",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/8BAED236A3A2A77FE22832C6CC579D97",
         "title": "Access Denied"
       },
       "result": {
@@ -319,8 +319,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
           "engine": "codex-chrome-extension-cdp",
           "port": 9224,
           "targetUrl": "https://www.basspro.com/shop/en/contact-us",
-          "tabId": "95C09CE00B9C984F87AAE0D34182295B",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/95C09CE00B9C984F87AAE0D34182295B",
+          "tabId": "8BAED236A3A2A77FE22832C6CC579D97",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/8BAED236A3A2A77FE22832C6CC579D97",
           "title": "Access Denied"
         },
         "sendStatus": "approval_pending",
@@ -344,8 +344,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
         "engine": "codex-chrome-extension-cdp",
         "port": 9224,
         "targetUrl": "https://www.cabelas.com/shop/en/contact-us",
-        "tabId": "E171BC121F63C60E3EBAFEB41C2A7A70",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/E171BC121F63C60E3EBAFEB41C2A7A70",
+        "tabId": "E77FA0F7621783D1691E17848B1B50A8",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/E77FA0F7621783D1691E17848B1B50A8",
         "title": "Access Denied"
       },
       "result": {
@@ -359,8 +359,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
           "engine": "codex-chrome-extension-cdp",
           "port": 9224,
           "targetUrl": "https://www.cabelas.com/shop/en/contact-us",
-          "tabId": "E171BC121F63C60E3EBAFEB41C2A7A70",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/E171BC121F63C60E3EBAFEB41C2A7A70",
+          "tabId": "E77FA0F7621783D1691E17848B1B50A8",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/E77FA0F7621783D1691E17848B1B50A8",
           "title": "Access Denied"
         },
         "sendStatus": "approval_pending",
@@ -384,8 +384,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
         "engine": "codex-chrome-extension-cdp",
         "port": 9224,
         "targetUrl": "https://www.decathlon.fr/help/app/contact",
-        "tabId": "B49D446D6487B80AE7EC6CCFED4FC09F",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/B49D446D6487B80AE7EC6CCFED4FC09F",
+        "tabId": "05A96DDD2D57248E6ED803760A26985B",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/05A96DDD2D57248E6ED803760A26985B",
         "title": "Aide - Decathlon"
       },
       "result": {
@@ -399,8 +399,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
           "engine": "codex-chrome-extension-cdp",
           "port": 9224,
           "targetUrl": "https://www.decathlon.fr/help/app/contact",
-          "tabId": "B49D446D6487B80AE7EC6CCFED4FC09F",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/B49D446D6487B80AE7EC6CCFED4FC09F",
+          "tabId": "05A96DDD2D57248E6ED803760A26985B",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/05A96DDD2D57248E6ED803760A26985B",
           "title": "Aide - Decathlon"
         },
         "sendStatus": "approval_pending",
@@ -424,8 +424,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
         "engine": "codex-chrome-extension-cdp",
         "port": 9224,
         "targetUrl": "https://www.bever.nl/klantenservice/contact.html",
-        "tabId": "9F0FF3B0FF35036041C375B402CDE257",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/9F0FF3B0FF35036041C375B402CDE257",
+        "tabId": "D5755E934669B22C805DA88497BB2ABA",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/D5755E934669B22C805DA88497BB2ABA",
         "title": "404 | Bever"
       },
       "result": {
@@ -439,8 +439,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
           "engine": "codex-chrome-extension-cdp",
           "port": 9224,
           "targetUrl": "https://www.bever.nl/klantenservice/contact.html",
-          "tabId": "9F0FF3B0FF35036041C375B402CDE257",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/9F0FF3B0FF35036041C375B402CDE257",
+          "tabId": "D5755E934669B22C805DA88497BB2ABA",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/D5755E934669B22C805DA88497BB2ABA",
           "title": "404 | Bever"
         },
         "sendStatus": "approval_pending",
@@ -464,9 +464,9 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
         "engine": "codex-chrome-extension-cdp",
         "port": 9224,
         "targetUrl": "https://www.gooutdoors.co.uk/contact-us",
-        "tabId": "15F0DB1B39A1B39CE8422A0CF4655CF2",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/15F0DB1B39A1B39CE8422A0CF4655CF2",
-        "title": ""
+        "tabId": "A1B160492B7831A73EDA5138AF7715F5",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/A1B160492B7831A73EDA5138AF7715F5",
+        "title": "Contact Us – GO Outdoors"
       },
       "result": {
         "ok": false,
@@ -479,9 +479,9 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
           "engine": "codex-chrome-extension-cdp",
           "port": 9224,
           "targetUrl": "https://www.gooutdoors.co.uk/contact-us",
-          "tabId": "15F0DB1B39A1B39CE8422A0CF4655CF2",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/15F0DB1B39A1B39CE8422A0CF4655CF2",
-          "title": ""
+          "tabId": "A1B160492B7831A73EDA5138AF7715F5",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/A1B160492B7831A73EDA5138AF7715F5",
+          "title": "Contact Us – GO Outdoors"
         },
         "sendStatus": "approval_pending",
         "subject": "Flextail & Vollyc | Lightweight Outdoor & 3C Electronics – Potential Cooperation",
@@ -504,8 +504,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
         "engine": "codex-chrome-extension-cdp",
         "port": 9224,
         "targetUrl": "https://www.kathmandu.co.nz/contact-us",
-        "tabId": "E622B38097B131FDF3E50423F9C25E47",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/E622B38097B131FDF3E50423F9C25E47",
+        "tabId": "8D778FA1CB1C3331BF6DADFEA0F5E869",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/8D778FA1CB1C3331BF6DADFEA0F5E869",
         "title": "404 Not Found"
       },
       "result": {
@@ -519,8 +519,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
           "engine": "codex-chrome-extension-cdp",
           "port": 9224,
           "targetUrl": "https://www.kathmandu.co.nz/contact-us",
-          "tabId": "E622B38097B131FDF3E50423F9C25E47",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/E622B38097B131FDF3E50423F9C25E47",
+          "tabId": "8D778FA1CB1C3331BF6DADFEA0F5E869",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/8D778FA1CB1C3331BF6DADFEA0F5E869",
           "title": "404 Not Found"
         },
         "sendStatus": "approval_pending",
@@ -544,8 +544,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
         "engine": "codex-chrome-extension-cdp",
         "port": 9224,
         "targetUrl": "https://www.bcf.com.au/contact-us",
-        "tabId": "FFF2632339EC5DE1F04F25CF1C6F0928",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/FFF2632339EC5DE1F04F25CF1C6F0928",
+        "tabId": "4812513B181D1F4AD7321712F20CA227",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/4812513B181D1F4AD7321712F20CA227",
         "title": "ERROR: The request could not be satisfied"
       },
       "result": {
@@ -559,8 +559,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
           "engine": "codex-chrome-extension-cdp",
           "port": 9224,
           "targetUrl": "https://www.bcf.com.au/contact-us",
-          "tabId": "FFF2632339EC5DE1F04F25CF1C6F0928",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/FFF2632339EC5DE1F04F25CF1C6F0928",
+          "tabId": "4812513B181D1F4AD7321712F20CA227",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/4812513B181D1F4AD7321712F20CA227",
           "title": "ERROR: The request could not be satisfied"
         },
         "sendStatus": "approval_pending",
@@ -607,12 +607,12 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     "stderr": "",
     "error": "",
     "visibility": {
-      "updatedAt": "2026-07-01T01:06:13.366Z",
+      "updatedAt": "2026-07-01T02:04:14.676Z",
       "source": "main-refreshDailyAutomationArtifacts",
       "runDate": "2026-07-01",
-      "artifactGeneratedAt": "2026-07-01T01:06:12.406Z",
-      "executionGeneratedAt": "2026-07-01T01:04:06.969Z",
-      "githubSyncUpdatedAt": "2026-07-01T01:04:44.610Z",
+      "artifactGeneratedAt": "2026-07-01T02:04:13.805Z",
+      "executionGeneratedAt": "2026-07-01T01:06:13.774Z",
+      "githubSyncUpdatedAt": "2026-07-01T01:06:29.217Z",
       "counts": {
         "dailyQueue": 7,
         "googleDiscovered": 7,
@@ -658,5 +658,5 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       }
     }
   },
-  "completedAt": "2026-07-01T01:06:13.774Z"
+  "completedAt": "2026-07-01T02:04:15.083Z"
 };
