@@ -1,9 +1,10 @@
 window.GITHUB_SYNC_LATEST = {
-  "updatedAt": "2026-07-02T03:04:52.051Z",
-  "ok": true,
-  "pushed": true,
+  "updatedAt": "2026-07-02T03:06:03.307Z",
+  "ok": false,
+  "pushed": false,
   "branch": "vercel-main-sync",
   "localCommit": "f5f6c2d20f6f98761c2d6412d8e482d832fe4cb0",
-  "remoteCommit": "f5f6c2d20f6f98761c2d6412d8e482d832fe4cb0",
-  "message": "sync: local outreach data 2026-07-02"
+  "remoteCommit": "5e31b4dffc8d180fb18a56cd51e3e426d7fb1608",
+  "message": "sync: local outreach data 2026-07-02",
+  "error": "Command failed: git push origin vercel-main-sync"
 };
