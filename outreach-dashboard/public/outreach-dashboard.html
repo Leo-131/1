@@ -7,6 +7,23 @@
 <meta name="application-name" content="Customer Development System">
 <meta name="theme-color" content="#0d1117">
 <meta name="description" content="Flextail and Vollyc customer development app with LinkedIn, Facebook, and Instagram automation queues.">
+<script>
+(function resetLocalDashboardCache(){
+  const isLocal = ['127.0.0.1','localhost','::1'].includes(location.hostname);
+  if(!isLocal || !('serviceWorker' in navigator)) return;
+  const key = 'local-dashboard-cache-reset-20260702-local-api-recovery';
+  if(sessionStorage.getItem(key)) return;
+  sessionStorage.setItem(key,'1');
+  Promise.all([
+    navigator.serviceWorker.getRegistrations().then(regs=>Promise.all(regs.map(reg=>reg.unregister()))).catch(()=>{}),
+    typeof caches !== 'undefined' ? caches.keys().then(keys=>Promise.all(keys.map(name=>caches.delete(name)))).catch(()=>{}) : Promise.resolve()
+  ]).then(()=>{
+    const next = new URL(location.href);
+    next.searchParams.set('cacheReset','20260702');
+    location.replace(next.toString());
+  });
+})();
+</script>
 <link rel="manifest" href="./manifest.webmanifest">
 <link rel="icon" href="./icon.svg" type="image/svg+xml">
 <style>
@@ -273,7 +290,7 @@ tr.contact-row:hover .row-actions{display:inline-flex}
       <span class="credential-pill missing" id="glm-status">GLM not configured</span>
       <button class="btn" type="button" onclick="saveGlmSettings()">Save GLM</button>
       <button class="btn primary" type="button" onclick="optimizeCurrentLeadWithGlm()">Optimize Current Lead</button>
-      <button class="btn success" type="button" onclick="runCurrentLeadWithGlm()">Codex Chrome</button>
+      <button class="btn success" type="button" onclick="runCurrentLeadWithGlm()">Codex Chrome / Open</button>
     </div>
     <div class="credential-strip">
       <span class="label">Cloud</span>
@@ -902,6 +919,11 @@ function loadAutomationState(){
   try{
     const state = JSON.parse(localStorage.getItem(AUTO_KEY) || '{"platform":"","status":"Idle","progress":0,"tasks":[],"log":[]}');
     state.autoRunning = false;
+    if(state.status === 'Running'){
+      state.status = state.tasks && state.tasks.length ? 'Ready' : 'Idle';
+      state.log = [{time:new Date().toLocaleString(),text:'Recovered local queue after refresh; no background automation is running'},...(state.log||[])].slice(0,30);
+      localStorage.setItem(AUTO_KEY, JSON.stringify(state));
+    }
     return state;
   }catch(e){
     return {platform:'',status:'Idle',progress:0,tasks:[],log:[]};
@@ -1062,7 +1084,15 @@ async function optimizeCurrentLeadWithGlm(){
 }
 async function runCurrentLeadWithGlm(){
   const lead=currentAutomationTask(); if(!lead)return showAppToast('No current lead');
-  if(!window.customerDev || !window.customerDev.runGlmDirectAutomation)return showAppToast('Use desktop APP for browser automation');
+  if(!window.customerDev || !window.customerDev.runGlmDirectAutomation){
+    const now = new Date().toLocaleString();
+    automationState.log=[{time:now,text:'Codex Chrome desktop bridge is not connected in this web preview; opened current target in local manual prepare mode and copied the approved draft'},...automationState.log].slice(0,30);
+    saveAutomationState();
+    renderAutomation();
+    await openCurrentAutomationTask();
+    showAppToast('Desktop bridge not connected; opened current target for manual prepare');
+    return;
+  }
   try{
     showAppToast('GLM automation started');
     const r=await window.customerDev.runGlmDirectAutomation({lead});
@@ -1216,7 +1246,9 @@ function updateAutomationProgress(){
   const tasks = automationState.tasks || [];
   const done = tasks.filter(t=>t.done || t.state===TASK_STATE.contact).length;
   automationState.progress = tasks.length ? Math.round(done/tasks.length*100) : 0;
-  automationState.status = tasks.length && done>=tasks.length ? 'Completed' : (tasks.length?'Running':'Idle');
+  automationState.status = tasks.length && done>=tasks.length
+    ? 'Completed'
+    : (tasks.length ? (automationState.autoRunning ? 'Running' : 'Ready') : 'Idle');
   automationState.currentIndex = Math.max(0,currentTaskIndex());
 }
 function openCurrentAutomationTask(){
@@ -1260,6 +1292,7 @@ function startAutoDevelopment(limit){
   }
   clearTimeout(autoDevTimer);
   automationState.autoRunning = true;
+  automationState.status = 'Running';
   automationState.autoBatchLimit = Number(limit || AUTO_DEV_BATCH_LIMIT);
   automationState.autoBatchDone = 0;
   automationState.autoDelayMs = AUTO_DEV_DELAY_MS;
@@ -1316,6 +1349,7 @@ function exportAutomationDrafts(){
 function pauseAutoDevelopment(reason){
   clearTimeout(autoDevTimer);
   automationState.autoRunning = false;
+  updateAutomationProgress();
   automationState.log = [{time:new Date().toLocaleString(),text:reason || 'Auto development paused'},...automationState.log].slice(0,30);
   saveAutomationState();
   renderAutomation();
@@ -1524,7 +1558,7 @@ function loadDailyOutreachPlan(options){
     .sort((a,b)=>b.autoScore-a.autoScore || (a.priority||99)-(b.priority||99) || String(a.company).localeCompare(String(b.company)));
   automationState = {
     platform:'social',
-    status:'Running',
+    status:'Ready',
     progress:0,
     currentIndex:0,
     serialModeVersion:SERIAL_QUEUE_VERSION,
@@ -2221,21 +2255,21 @@ function exportCSV(){
 }
 if('serviceWorker' in navigator){
   navigator.serviceWorker.addEventListener('controllerchange',()=>{
-    const key='sw-refresh-20260701-no-false-development';
+    const key='sw-refresh-20260702-local-api-recovery';
     if(sessionStorage.getItem(key)) return;
     sessionStorage.setItem(key,'1');
     window.location.reload();
   });
-  window.addEventListener('load',()=>navigator.serviceWorker.register('./service-worker.js?v=20260701-no-false-development').then(reg=>reg.update()).catch(()=>{}));
+  window.addEventListener('load',()=>navigator.serviceWorker.register('./service-worker.js?v=20260702-local-api-recovery').then(reg=>reg.update()).catch(()=>{}));
 }
 initializeKpiDetailPage();
 </script>
 <script src="./outreach-engine.js?v=20260610-autonomous"></script>
 <script src="./outreach-analytics.js?v=20260610-autonomous"></script>
-<script src="./autonomous-outreach-results.js?v=20260701-no-false-development"></script>
+<script src="./autonomous-outreach-results.js?v=20260702-local-api-recovery"></script>
 <script src="./verified-profile-registry.js?v=20260612-profile-calibration"></script>
 <script src="./autonomous-outreach-data.js?v=20260618-icp-priority"></script>
-<script src="./command-center.js?v=20260701-no-false-development"></script>
+<script src="./command-center.js?v=20260702-local-api-recovery"></script>
 </body>
 </html>
 

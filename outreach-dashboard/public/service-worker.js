@@ -1,4 +1,4 @@
-const CACHE_NAME = 'customer-development-system-v18-7-20-20260701-no-false-development';
+const CACHE_NAME = 'customer-development-system-v18-7-20-20260702-local-api-recovery';
 const APP_SHELL = [
   './',
   './index.html',
@@ -41,6 +41,11 @@ self.addEventListener('activate', (event) => {
 self.addEventListener('fetch', (event) => {
   if (event.request.method !== 'GET') return;
   const requestUrl = new URL(event.request.url);
+  const isLocalDashboard = ['127.0.0.1', 'localhost', '::1'].includes(requestUrl.hostname);
+  if (isLocalDashboard) {
+    event.respondWith(fetch(event.request, { cache: 'no-store' }));
+    return;
+  }
   const realtimeFiles = [
     'daily-automation-latest.js',
     'daily-automation-execution-latest.js',
