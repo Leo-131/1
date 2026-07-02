@@ -101,6 +101,7 @@ function writeDailyExecutionArtifact(output) {
   writeJsonScript(path.join(__dirname, 'daily-automation-execution-latest.js'), 'DAILY_AUTOMATION_EXECUTION_LATEST', output);
   copyPublicArtifact('daily-automation-execution-latest.json');
   copyPublicArtifact('daily-automation-execution-latest.js');
+  writeSystemVisibilityArtifact('main-writeDailyExecutionArtifact');
 }
 
 function readJsonScriptArray(file, globalName) {

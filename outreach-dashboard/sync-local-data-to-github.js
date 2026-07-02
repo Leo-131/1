@@ -49,7 +49,64 @@ function writeSyncStatus(status) {
   fs.mkdirSync(publicOut, { recursive: true });
   fs.writeFileSync(path.join(publicOut, 'latest-status.json'), JSON.stringify(output, null, 2));
   writeJsonScript(path.join(publicOut, 'latest-status.js'), 'GITHUB_SYNC_LATEST', output);
+  writeSystemVisibilityArtifact('sync-local-data-to-github-writeSyncStatus');
   return output;
+}
+
+function writeSystemVisibilityArtifact(source) {
+  const latest = readJson(path.join(ROOT, 'daily-automation-latest.json'), {});
+  const latestExecution = readJson(path.join(ROOT, 'daily-automation-execution-latest.json'), {});
+  const githubSync = readJson(path.join(OUT, 'latest-status.json'), {});
+  const dailyRows = Array.isArray(latest.dailyQueue) ? latest.dailyQueue : [];
+  const cooldownRows = Array.isArray(latest.cooldownQueue) ? latest.cooldownQueue : [];
+  const googleRows = dailyRows.filter((item) => item.source === 'google_customer_discovery' || /^google-customer-/i.test(item.id || item.taskId || ''));
+  const websiteContactRows = googleRows.filter((item) => item.reason === 'official_website_contact_channel' || /website-contact/i.test(item.id || item.taskId || ''));
+  const visibility = {
+    updatedAt: new Date().toISOString(),
+    source,
+    runDate: latest.date || '',
+    artifactGeneratedAt: latest.generatedAt || '',
+    executionGeneratedAt: latestExecution.completedAt || latestExecution.generatedAt || '',
+    githubSyncUpdatedAt: githubSync.updatedAt || '',
+    counts: {
+      dailyQueue: dailyRows.length,
+      googleDiscovered: googleRows.length,
+      websiteContact: websiteContactRows.length,
+      cooldownQueue: cooldownRows.length,
+      scheduledLater: Array.isArray(latest.scheduledLater) ? latest.scheduledLater.length : 0,
+    },
+    visibleSections: [
+      'workspace',
+      'taskDetailPanel',
+      'todayQueue',
+      'customers',
+      'customerDetail',
+      'seo',
+      'automationAudit',
+      'settings',
+      'rightRail',
+      'githubSyncStatus',
+    ],
+    refreshedArtifacts: [
+      'daily-automation-latest',
+      'daily-automation-execution-latest',
+      'google-lead-discovery-latest',
+      'github-sync/latest-status',
+      'system-visibility-latest',
+    ],
+    contactEnrichment: {
+      enabled: true,
+      sources: ['dailyQueue', 'cooldownQueue', 'google-lead-discovery-latest'],
+      fields: ['publicEmail', 'contactEmail', 'contactPhone', 'vendorPortal', 'contactUrl', 'contactSearchUrl', 'website'],
+    },
+  };
+  fs.writeFileSync(path.join(ROOT, 'system-visibility-latest.json'), JSON.stringify(visibility, null, 2));
+  writeJsonScript(path.join(ROOT, 'system-visibility-latest.js'), 'SYSTEM_VISIBILITY_LATEST', visibility);
+  copyIfExists(path.join(ROOT, 'system-visibility-latest.json'), path.join(ROOT, 'public', 'system-visibility-latest.json'));
+  copyIfExists(path.join(ROOT, 'system-visibility-latest.js'), path.join(ROOT, 'public', 'system-visibility-latest.js'));
+  copyIfExists(path.join(ROOT, 'system-visibility-latest.json'), path.join(OUT, 'system-visibility-latest.json'));
+  copyIfExists(path.join(ROOT, 'system-visibility-latest.js'), path.join(OUT, 'system-visibility-latest.js'));
+  return visibility;
 }
 
 function git(args, options = {}) {
@@ -70,8 +127,14 @@ function commitAndPushStatus(branch, latestDate) {
   const statusPaths = [
     'github-sync/latest-status.json',
     'github-sync/latest-status.js',
+    'github-sync/system-visibility-latest.json',
+    'github-sync/system-visibility-latest.js',
     'public/github-sync/latest-status.json',
     'public/github-sync/latest-status.js',
+    'public/system-visibility-latest.json',
+    'public/system-visibility-latest.js',
+    'system-visibility-latest.json',
+    'system-visibility-latest.js',
   ];
   git(['add', '--', ...statusPaths], { stdio: 'pipe' });
   if (!hasChanges(statusPaths)) return '';
