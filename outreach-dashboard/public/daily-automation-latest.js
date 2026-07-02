@@ -1,5 +1,5 @@
 window.DAILY_AUTOMATION_LATEST = {
-  "generatedAt": "2026-07-02T17:03:02.998Z",
+  "generatedAt": "2026-07-02T18:01:56.133Z",
   "date": "2026-07-02",
   "mode": "daily-icp-first-automation-loop",
   "executionLayer": "Codex Chrome Extension primary; AutoClaw compatible",
@@ -8,8 +8,8 @@ window.DAILY_AUTOMATION_LATEST = {
     "quota": {
       "total": {
         "target": 100,
-        "planned": 0,
-        "gap": 100
+        "planned": 1,
+        "gap": 99
       },
       "develop": {
         "target": 70,
@@ -23,8 +23,8 @@ window.DAILY_AUTOMATION_LATEST = {
       },
       "retry_or_alternate_channel": {
         "target": 10,
-        "planned": 0,
-        "gap": 10
+        "planned": 1,
+        "gap": 9
       },
       "verify_target": {
         "target": 5,
@@ -51,11 +51,11 @@ window.DAILY_AUTOMATION_LATEST = {
     "totalLeads": 16,
     "highIcp": 16,
     "readyToDevelop": 0,
-    "dueNow": 6,
+    "dueNow": 7,
     "googleDiscovered": 6,
     "facebookDiscovered": 0,
     "websiteContactDiscovered": 6,
-    "scheduledLater": 1,
+    "scheduledLater": 0,
     "cooldown": 30,
     "emailPriority": 0,
     "openAgencyMarket": 15,
@@ -118,7 +118,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/3 01:01:43",
+        "localTime": "2026/7/3 02:00:58",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -200,7 +200,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/3 01:01:43",
+        "localTime": "2026/7/3 02:00:58",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -282,7 +282,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/3 01:01:43",
+        "localTime": "2026/7/3 02:00:58",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -364,7 +364,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/3 01:01:43",
+        "localTime": "2026/7/3 02:00:58",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -446,7 +446,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/3 01:01:43",
+        "localTime": "2026/7/3 02:00:58",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -528,7 +528,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/3 01:01:43",
+        "localTime": "2026/7/3 02:00:58",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -555,9 +555,209 @@ window.DAILY_AUTOMATION_LATEST = {
       "contactChannelScore": 17,
       "dealProbabilityScore": 178,
       "priorityScore": 176
+    },
+    {
+      "id": "verified-Instagram-triedandtrout",
+      "name": "triedandtrout",
+      "company": "Tried & Trout Supply Co",
+      "platform": "instagram",
+      "country": "美国",
+      "countryEn": "United States",
+      "fitScore": 73,
+      "fitTier": "A",
+      "marketScore": 4.4,
+      "marketStatus": "可开拓",
+      "agencyState": "open",
+      "url": "https://www.instagram.com/triedandtroutsupply/",
+      "website": "",
+      "platformUrl": "https://www.instagram.com/triedandtroutsupply/",
+      "contactUrl": "",
+      "contactSearchUrl": "",
+      "emailFrom": "",
+      "websiteContactSubject": "",
+      "websiteContactMessage": "",
+      "websiteContactFlow": "",
+      "publicEmail": "",
+      "publicEmailStatus": "",
+      "contactPhone": "",
+      "vendorPortal": "",
+      "linkedinUrl": "",
+      "headquarters": "",
+      "founded": "",
+      "companyScale": "",
+      "dataSources": null,
+      "alternateChannels": null,
+      "lastStatus": "failed_open",
+      "lastEvidence": "profile_valid_no_message_button",
+      "lastTouch": "",
+      "action": "retry_or_alternate_channel",
+      "reason": "profile_valid_no_message_button",
+      "workingTime": {
+        "dueNow": true,
+        "timeZone": "America/New_York",
+        "localTime": "Thu 14:01",
+        "window": "afternoon",
+        "nextBest": "now",
+        "weight": 0.9
+      },
+      "targetRegion": "americas",
+      "targetRegionScore": 30,
+      "contactChannelScore": 0,
+      "dealProbabilityScore": 174,
+      "priorityScore": 174
     }
   ],
   "cooldownQueue": [
+    {
+      "id": "verified-Instagram-campmor",
+      "name": "campmor",
+      "company": "Campmor US",
+      "platform": "instagram",
+      "country": "美国",
+      "countryEn": "United States",
+      "fitScore": 100,
+      "fitTier": "A",
+      "marketScore": 4.4,
+      "marketStatus": "可开拓",
+      "agencyState": "open",
+      "url": "https://www.instagram.com/campmor/",
+      "website": "",
+      "platformUrl": "https://www.instagram.com/campmor/",
+      "contactUrl": "",
+      "contactSearchUrl": "",
+      "emailFrom": "",
+      "websiteContactSubject": "",
+      "websiteContactMessage": "",
+      "websiteContactFlow": "",
+      "publicEmail": "",
+      "publicEmailStatus": "",
+      "contactPhone": "",
+      "vendorPortal": "",
+      "linkedinUrl": "",
+      "headquarters": "",
+      "founded": "",
+      "companyScale": "",
+      "dataSources": null,
+      "alternateChannels": null,
+      "lastStatus": "sent_confirmed",
+      "lastEvidence": "confirmed DM follow-up sent via logged-in Chrome session",
+      "lastTouch": "2026-06-18T10:09:35.863Z",
+      "action": "cooldown",
+      "reason": "previous_sent_confirmed_no_duplicate_dm",
+      "workingTime": {
+        "dueNow": true,
+        "timeZone": "America/New_York",
+        "localTime": "Thu 14:01",
+        "window": "afternoon",
+        "nextBest": "now",
+        "weight": 0.9
+      },
+      "targetRegion": "americas",
+      "targetRegionScore": 30,
+      "contactChannelScore": 0,
+      "dealProbabilityScore": 201,
+      "priorityScore": 201
+    },
+    {
+      "id": "verified-Instagram-mec",
+      "name": "mec",
+      "company": "MEC Canada",
+      "platform": "instagram",
+      "country": "加拿大",
+      "countryEn": "Canada",
+      "fitScore": 83,
+      "fitTier": "A",
+      "marketScore": 3.7,
+      "marketStatus": "可开拓",
+      "agencyState": "open",
+      "url": "https://www.instagram.com/mec/",
+      "website": "",
+      "platformUrl": "https://www.instagram.com/mec/",
+      "contactUrl": "",
+      "contactSearchUrl": "",
+      "emailFrom": "",
+      "websiteContactSubject": "",
+      "websiteContactMessage": "",
+      "websiteContactFlow": "",
+      "publicEmail": "",
+      "publicEmailStatus": "",
+      "contactPhone": "",
+      "vendorPortal": "",
+      "linkedinUrl": "",
+      "headquarters": "",
+      "founded": "",
+      "companyScale": "",
+      "dataSources": null,
+      "alternateChannels": null,
+      "lastStatus": "sent_confirmed",
+      "lastEvidence": "instagram_message_sent_confirmed_composer_cleared;instagram_post_opened;post_like_not_available_or_already_active;comment_box_not_available;follow_clicked",
+      "lastTouch": "2026-06-30T12:42:01.936Z",
+      "action": "cooldown",
+      "reason": "previous_sent_confirmed_no_duplicate_dm",
+      "workingTime": {
+        "dueNow": true,
+        "timeZone": "America/Toronto",
+        "localTime": "Thu 14:01",
+        "window": "afternoon",
+        "nextBest": "now",
+        "weight": 0.9
+      },
+      "targetRegion": "americas",
+      "targetRegionScore": 30,
+      "contactChannelScore": 0,
+      "dealProbabilityScore": 175,
+      "priorityScore": 175
+    },
+    {
+      "id": "verified-Instagram-monasheeoutdoors",
+      "name": "monasheeoutdoors",
+      "company": "Monashee Outdoors",
+      "platform": "instagram",
+      "country": "加拿大",
+      "countryEn": "Canada",
+      "fitScore": 83,
+      "fitTier": "A",
+      "marketScore": 3.7,
+      "marketStatus": "可开拓",
+      "agencyState": "open",
+      "url": "https://www.instagram.com/monasheeoutdoors/",
+      "website": "",
+      "platformUrl": "https://www.instagram.com/monasheeoutdoors/",
+      "contactUrl": "",
+      "contactSearchUrl": "",
+      "emailFrom": "",
+      "websiteContactSubject": "",
+      "websiteContactMessage": "",
+      "websiteContactFlow": "",
+      "publicEmail": "",
+      "publicEmailStatus": "",
+      "contactPhone": "",
+      "vendorPortal": "",
+      "linkedinUrl": "",
+      "headquarters": "",
+      "founded": "",
+      "companyScale": "",
+      "dataSources": null,
+      "alternateChannels": null,
+      "lastStatus": "sent_confirmed",
+      "lastEvidence": "duplicate_risk: duplicate DM observed in Instagram chat; future sends locked",
+      "lastTouch": "2026-06-18T09:01:31.455Z",
+      "action": "cooldown",
+      "reason": "previous_sent_confirmed_no_duplicate_dm",
+      "workingTime": {
+        "dueNow": true,
+        "timeZone": "America/Toronto",
+        "localTime": "Thu 14:01",
+        "window": "afternoon",
+        "nextBest": "now",
+        "weight": 0.9
+      },
+      "targetRegion": "americas",
+      "targetRegionScore": 30,
+      "contactChannelScore": 0,
+      "dealProbabilityScore": 175,
+      "priorityScore": 175
+    },
     {
       "id": "verified-Instagram-ellisbrigham",
       "name": "ellisbrigham",
@@ -597,7 +797,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/London",
-        "localTime": "Thu 18:03",
+        "localTime": "Thu 19:01",
         "window": "outside_work_hours",
         "nextBest": "Europe/London morning",
         "weight": 0
@@ -607,56 +807,6 @@ window.DAILY_AUTOMATION_LATEST = {
       "contactChannelScore": 0,
       "dealProbabilityScore": 204,
       "priorityScore": 204
-    },
-    {
-      "id": "verified-Instagram-campmor",
-      "name": "campmor",
-      "company": "Campmor US",
-      "platform": "instagram",
-      "country": "美国",
-      "countryEn": "United States",
-      "fitScore": 100,
-      "fitTier": "A",
-      "marketScore": 4.4,
-      "marketStatus": "可开拓",
-      "agencyState": "open",
-      "url": "https://www.instagram.com/campmor/",
-      "website": "",
-      "platformUrl": "https://www.instagram.com/campmor/",
-      "contactUrl": "",
-      "contactSearchUrl": "",
-      "emailFrom": "",
-      "websiteContactSubject": "",
-      "websiteContactMessage": "",
-      "websiteContactFlow": "",
-      "publicEmail": "",
-      "publicEmailStatus": "",
-      "contactPhone": "",
-      "vendorPortal": "",
-      "linkedinUrl": "",
-      "headquarters": "",
-      "founded": "",
-      "companyScale": "",
-      "dataSources": null,
-      "alternateChannels": null,
-      "lastStatus": "sent_confirmed",
-      "lastEvidence": "confirmed DM follow-up sent via logged-in Chrome session",
-      "lastTouch": "2026-06-18T10:09:35.863Z",
-      "action": "cooldown",
-      "reason": "previous_sent_confirmed_no_duplicate_dm",
-      "workingTime": {
-        "dueNow": false,
-        "timeZone": "America/New_York",
-        "localTime": "Thu 13:03",
-        "window": "outside_work_hours",
-        "nextBest": "America/New_York afternoon",
-        "weight": 0
-      },
-      "targetRegion": "americas",
-      "targetRegionScore": 30,
-      "contactChannelScore": 0,
-      "dealProbabilityScore": 201,
-      "priorityScore": 201
     },
     {
       "id": "verified-Instagram-otimosoutdoorgear",
@@ -697,7 +847,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/London",
-        "localTime": "Thu 18:03",
+        "localTime": "Thu 19:01",
         "window": "outside_work_hours",
         "nextBest": "Europe/London morning",
         "weight": 0
@@ -747,7 +897,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/London",
-        "localTime": "Thu 18:03",
+        "localTime": "Thu 19:01",
         "window": "outside_work_hours",
         "nextBest": "Europe/London morning",
         "weight": 0
@@ -757,106 +907,6 @@ window.DAILY_AUTOMATION_LATEST = {
       "contactChannelScore": 0,
       "dealProbabilityScore": 195,
       "priorityScore": 195
-    },
-    {
-      "id": "verified-Instagram-mec",
-      "name": "mec",
-      "company": "MEC Canada",
-      "platform": "instagram",
-      "country": "加拿大",
-      "countryEn": "Canada",
-      "fitScore": 83,
-      "fitTier": "A",
-      "marketScore": 3.7,
-      "marketStatus": "可开拓",
-      "agencyState": "open",
-      "url": "https://www.instagram.com/mec/",
-      "website": "",
-      "platformUrl": "https://www.instagram.com/mec/",
-      "contactUrl": "",
-      "contactSearchUrl": "",
-      "emailFrom": "",
-      "websiteContactSubject": "",
-      "websiteContactMessage": "",
-      "websiteContactFlow": "",
-      "publicEmail": "",
-      "publicEmailStatus": "",
-      "contactPhone": "",
-      "vendorPortal": "",
-      "linkedinUrl": "",
-      "headquarters": "",
-      "founded": "",
-      "companyScale": "",
-      "dataSources": null,
-      "alternateChannels": null,
-      "lastStatus": "sent_confirmed",
-      "lastEvidence": "instagram_message_sent_confirmed_composer_cleared;instagram_post_opened;post_like_not_available_or_already_active;comment_box_not_available;follow_clicked",
-      "lastTouch": "2026-06-30T12:42:01.936Z",
-      "action": "cooldown",
-      "reason": "previous_sent_confirmed_no_duplicate_dm",
-      "workingTime": {
-        "dueNow": false,
-        "timeZone": "America/Toronto",
-        "localTime": "Thu 13:03",
-        "window": "outside_work_hours",
-        "nextBest": "America/Toronto afternoon",
-        "weight": 0
-      },
-      "targetRegion": "americas",
-      "targetRegionScore": 30,
-      "contactChannelScore": 0,
-      "dealProbabilityScore": 175,
-      "priorityScore": 175
-    },
-    {
-      "id": "verified-Instagram-monasheeoutdoors",
-      "name": "monasheeoutdoors",
-      "company": "Monashee Outdoors",
-      "platform": "instagram",
-      "country": "加拿大",
-      "countryEn": "Canada",
-      "fitScore": 83,
-      "fitTier": "A",
-      "marketScore": 3.7,
-      "marketStatus": "可开拓",
-      "agencyState": "open",
-      "url": "https://www.instagram.com/monasheeoutdoors/",
-      "website": "",
-      "platformUrl": "https://www.instagram.com/monasheeoutdoors/",
-      "contactUrl": "",
-      "contactSearchUrl": "",
-      "emailFrom": "",
-      "websiteContactSubject": "",
-      "websiteContactMessage": "",
-      "websiteContactFlow": "",
-      "publicEmail": "",
-      "publicEmailStatus": "",
-      "contactPhone": "",
-      "vendorPortal": "",
-      "linkedinUrl": "",
-      "headquarters": "",
-      "founded": "",
-      "companyScale": "",
-      "dataSources": null,
-      "alternateChannels": null,
-      "lastStatus": "sent_confirmed",
-      "lastEvidence": "duplicate_risk: duplicate DM observed in Instagram chat; future sends locked",
-      "lastTouch": "2026-06-18T09:01:31.455Z",
-      "action": "cooldown",
-      "reason": "previous_sent_confirmed_no_duplicate_dm",
-      "workingTime": {
-        "dueNow": false,
-        "timeZone": "America/Toronto",
-        "localTime": "Thu 13:03",
-        "window": "outside_work_hours",
-        "nextBest": "America/Toronto afternoon",
-        "weight": 0
-      },
-      "targetRegion": "americas",
-      "targetRegionScore": 30,
-      "contactChannelScore": 0,
-      "dealProbabilityScore": 175,
-      "priorityScore": 175
     },
     {
       "id": "verified-Instagram-kfoutdoor",
@@ -897,7 +947,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Asia/Jakarta",
-        "localTime": "Fri 00:03",
+        "localTime": "Fri 01:01",
         "window": "outside_work_hours",
         "nextBest": "Asia/Jakarta morning",
         "weight": 0
@@ -947,7 +997,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Australia/Sydney",
-        "localTime": "Fri 03:03",
+        "localTime": "Fri 04:01",
         "window": "outside_work_hours",
         "nextBest": "Australia/Sydney morning",
         "weight": 0
@@ -997,7 +1047,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Pacific/Auckland",
-        "localTime": "Fri 05:03",
+        "localTime": "Fri 06:01",
         "window": "outside_work_hours",
         "nextBest": "Pacific/Auckland morning",
         "weight": 0
@@ -1047,7 +1097,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Pacific/Auckland",
-        "localTime": "Fri 05:03",
+        "localTime": "Fri 06:01",
         "window": "outside_work_hours",
         "nextBest": "Pacific/Auckland morning",
         "weight": 0
@@ -1097,7 +1147,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Pacific/Auckland",
-        "localTime": "Fri 05:03",
+        "localTime": "Fri 06:01",
         "window": "outside_work_hours",
         "nextBest": "Pacific/Auckland morning",
         "weight": 0
@@ -1147,7 +1197,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Pacific/Auckland",
-        "localTime": "Fri 05:03",
+        "localTime": "Fri 06:01",
         "window": "outside_work_hours",
         "nextBest": "Pacific/Auckland morning",
         "weight": 0
@@ -1197,7 +1247,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Pacific/Auckland",
-        "localTime": "Fri 05:03",
+        "localTime": "Fri 06:01",
         "window": "outside_work_hours",
         "nextBest": "Pacific/Auckland morning",
         "weight": 0
@@ -1247,7 +1297,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Asia/Kolkata",
-        "localTime": "Thu 22:33",
+        "localTime": "Thu 23:31",
         "window": "outside_work_hours",
         "nextBest": "Asia/Kolkata morning",
         "weight": 0
@@ -1312,7 +1362,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/3 01:01:43",
+        "localTime": "2026/7/3 02:00:58",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -1390,7 +1440,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/3 01:01:43",
+        "localTime": "2026/7/3 02:00:58",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -1470,7 +1520,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/3 01:01:43",
+        "localTime": "2026/7/3 02:00:58",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -1548,7 +1598,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/3 01:01:43",
+        "localTime": "2026/7/3 02:00:58",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -1628,7 +1678,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/3 01:01:43",
+        "localTime": "2026/7/3 02:00:58",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -1706,7 +1756,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/3 01:01:43",
+        "localTime": "2026/7/3 02:00:58",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -1786,7 +1836,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/3 01:01:43",
+        "localTime": "2026/7/3 02:00:58",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -1864,7 +1914,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/3 01:01:43",
+        "localTime": "2026/7/3 02:00:58",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -1944,7 +1994,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/3 01:01:43",
+        "localTime": "2026/7/3 02:00:58",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -2029,7 +2079,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/3 01:01:43",
+        "localTime": "2026/7/3 02:00:58",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -2107,7 +2157,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/3 01:01:43",
+        "localTime": "2026/7/3 02:00:58",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -2187,7 +2237,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/3 01:01:43",
+        "localTime": "2026/7/3 02:00:58",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -2265,7 +2315,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/3 01:01:43",
+        "localTime": "2026/7/3 02:00:58",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -2345,7 +2395,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/3 01:01:43",
+        "localTime": "2026/7/3 02:00:58",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -2423,7 +2473,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/3 01:01:43",
+        "localTime": "2026/7/3 02:00:58",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -2503,7 +2553,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/3 01:01:43",
+        "localTime": "2026/7/3 02:00:58",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -2528,58 +2578,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "lastTouch": "2026-07-02T16:03:25.098Z"
     }
   ],
-  "scheduledLater": [
-    {
-      "id": "verified-Instagram-triedandtrout",
-      "name": "triedandtrout",
-      "company": "Tried & Trout Supply Co",
-      "platform": "instagram",
-      "country": "美国",
-      "countryEn": "United States",
-      "fitScore": 73,
-      "fitTier": "A",
-      "marketScore": 4.4,
-      "marketStatus": "可开拓",
-      "agencyState": "open",
-      "url": "https://www.instagram.com/triedandtroutsupply/",
-      "website": "",
-      "platformUrl": "https://www.instagram.com/triedandtroutsupply/",
-      "contactUrl": "",
-      "contactSearchUrl": "",
-      "emailFrom": "",
-      "websiteContactSubject": "",
-      "websiteContactMessage": "",
-      "websiteContactFlow": "",
-      "publicEmail": "",
-      "publicEmailStatus": "",
-      "contactPhone": "",
-      "vendorPortal": "",
-      "linkedinUrl": "",
-      "headquarters": "",
-      "founded": "",
-      "companyScale": "",
-      "dataSources": null,
-      "alternateChannels": null,
-      "lastStatus": "failed_open",
-      "lastEvidence": "profile_valid_no_message_button",
-      "lastTouch": "",
-      "action": "retry_or_alternate_channel",
-      "reason": "profile_valid_no_message_button",
-      "workingTime": {
-        "dueNow": false,
-        "timeZone": "America/New_York",
-        "localTime": "Thu 13:03",
-        "window": "outside_work_hours",
-        "nextBest": "America/New_York afternoon",
-        "weight": 0
-      },
-      "targetRegion": "americas",
-      "targetRegionScore": 30,
-      "contactChannelScore": 0,
-      "dealProbabilityScore": 174,
-      "priorityScore": 174
-    }
-  ],
+  "scheduledLater": [],
   "bugChecks": [
     {
       "level": "warn",
