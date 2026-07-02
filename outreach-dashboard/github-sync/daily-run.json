@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-07-01T17:02:34.443Z",
-  "date": "2026-07-01",
+  "generatedAt": "2026-07-02T01:05:04.333Z",
+  "date": "2026-07-02",
   "mode": "daily-icp-first-automation-loop",
   "executionLayer": "Codex Chrome Extension primary; AutoClaw compatible",
   "limits": {
@@ -118,7 +118,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/2 01:02:34",
+        "localTime": "2026/7/2 09:05:04",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -148,6 +148,56 @@
     }
   ],
   "cooldownQueue": [
+    {
+      "id": "verified-Instagram-anacondastores",
+      "name": "anacondastores",
+      "company": "Anaconda Stores AU (60K followers, verified, largest outdoor retailer)",
+      "platform": "instagram",
+      "country": "澳大利亚",
+      "countryEn": "Australia",
+      "fitScore": 85,
+      "fitTier": "A",
+      "marketScore": 4.8,
+      "marketStatus": "可开拓",
+      "agencyState": "open",
+      "url": "https://www.instagram.com/anacondastores/",
+      "website": "",
+      "platformUrl": "https://www.instagram.com/anacondastores/",
+      "contactUrl": "",
+      "contactSearchUrl": "",
+      "emailFrom": "",
+      "websiteContactSubject": "",
+      "websiteContactMessage": "",
+      "websiteContactFlow": "",
+      "publicEmail": "",
+      "publicEmailStatus": "",
+      "contactPhone": "",
+      "vendorPortal": "",
+      "linkedinUrl": "",
+      "headquarters": "",
+      "founded": "",
+      "companyScale": "",
+      "dataSources": null,
+      "alternateChannels": null,
+      "lastStatus": "sent_confirmed",
+      "lastEvidence": "instagram_message_sent_confirmed_composer_cleared;instagram_post_opened;post_liked;comment_submitted;follow_already_active",
+      "lastTouch": "2026-06-30T13:16:18.266Z",
+      "action": "cooldown",
+      "reason": "previous_sent_confirmed_no_duplicate_dm",
+      "workingTime": {
+        "dueNow": true,
+        "timeZone": "Australia/Sydney",
+        "localTime": "Thu 11:05",
+        "window": "morning",
+        "nextBest": "now",
+        "weight": 1
+      },
+      "targetRegion": "oceania",
+      "targetRegionScore": 0,
+      "contactChannelScore": 0,
+      "dealProbabilityScore": 161,
+      "priorityScore": 161
+    },
     {
       "id": "verified-Instagram-ellisbrigham",
       "name": "ellisbrigham",
@@ -187,7 +237,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/London",
-        "localTime": "Wed 18:02",
+        "localTime": "Thu 02:05",
         "window": "outside_work_hours",
         "nextBest": "Europe/London morning",
         "weight": 0
@@ -237,9 +287,9 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Wed 13:02",
+        "localTime": "Wed 21:05",
         "window": "outside_work_hours",
-        "nextBest": "America/New_York afternoon",
+        "nextBest": "America/New_York morning",
         "weight": 0
       },
       "targetRegion": "americas",
@@ -287,7 +337,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/London",
-        "localTime": "Wed 18:02",
+        "localTime": "Thu 02:05",
         "window": "outside_work_hours",
         "nextBest": "Europe/London morning",
         "weight": 0
@@ -337,7 +387,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/London",
-        "localTime": "Wed 18:02",
+        "localTime": "Thu 02:05",
         "window": "outside_work_hours",
         "nextBest": "Europe/London morning",
         "weight": 0
@@ -387,9 +437,9 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Wed 13:02",
+        "localTime": "Wed 21:05",
         "window": "outside_work_hours",
-        "nextBest": "America/Toronto afternoon",
+        "nextBest": "America/Toronto morning",
         "weight": 0
       },
       "targetRegion": "americas",
@@ -437,9 +487,9 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Wed 13:02",
+        "localTime": "Wed 21:05",
         "window": "outside_work_hours",
-        "nextBest": "America/Toronto afternoon",
+        "nextBest": "America/Toronto morning",
         "weight": 0
       },
       "targetRegion": "americas",
@@ -487,7 +537,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Asia/Jakarta",
-        "localTime": "Thu 00:02",
+        "localTime": "Thu 08:05",
         "window": "outside_work_hours",
         "nextBest": "Asia/Jakarta morning",
         "weight": 0
@@ -497,56 +547,6 @@
       "contactChannelScore": 0,
       "dealProbabilityScore": 172,
       "priorityScore": 172
-    },
-    {
-      "id": "verified-Instagram-anacondastores",
-      "name": "anacondastores",
-      "company": "Anaconda Stores AU (60K followers, verified, largest outdoor retailer)",
-      "platform": "instagram",
-      "country": "澳大利亚",
-      "countryEn": "Australia",
-      "fitScore": 85,
-      "fitTier": "A",
-      "marketScore": 4.8,
-      "marketStatus": "可开拓",
-      "agencyState": "open",
-      "url": "https://www.instagram.com/anacondastores/",
-      "website": "",
-      "platformUrl": "https://www.instagram.com/anacondastores/",
-      "contactUrl": "",
-      "contactSearchUrl": "",
-      "emailFrom": "",
-      "websiteContactSubject": "",
-      "websiteContactMessage": "",
-      "websiteContactFlow": "",
-      "publicEmail": "",
-      "publicEmailStatus": "",
-      "contactPhone": "",
-      "vendorPortal": "",
-      "linkedinUrl": "",
-      "headquarters": "",
-      "founded": "",
-      "companyScale": "",
-      "dataSources": null,
-      "alternateChannels": null,
-      "lastStatus": "sent_confirmed",
-      "lastEvidence": "instagram_message_sent_confirmed_composer_cleared;instagram_post_opened;post_liked;comment_submitted;follow_already_active",
-      "lastTouch": "2026-06-30T13:16:18.266Z",
-      "action": "cooldown",
-      "reason": "previous_sent_confirmed_no_duplicate_dm",
-      "workingTime": {
-        "dueNow": false,
-        "timeZone": "Australia/Sydney",
-        "localTime": "Thu 03:02",
-        "window": "outside_work_hours",
-        "nextBest": "Australia/Sydney morning",
-        "weight": 0
-      },
-      "targetRegion": "oceania",
-      "targetRegionScore": 0,
-      "contactChannelScore": 0,
-      "dealProbabilityScore": 161,
-      "priorityScore": 161
     },
     {
       "id": "verified-Instagram-huntingandfishingnewzealand",
@@ -587,9 +587,9 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Pacific/Auckland",
-        "localTime": "Thu 05:02",
+        "localTime": "Thu 13:05",
         "window": "outside_work_hours",
-        "nextBest": "Pacific/Auckland morning",
+        "nextBest": "Pacific/Auckland afternoon",
         "weight": 0
       },
       "targetRegion": "oceania",
@@ -637,9 +637,9 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Pacific/Auckland",
-        "localTime": "Thu 05:02",
+        "localTime": "Thu 13:05",
         "window": "outside_work_hours",
-        "nextBest": "Pacific/Auckland morning",
+        "nextBest": "Pacific/Auckland afternoon",
         "weight": 0
       },
       "targetRegion": "oceania",
@@ -687,9 +687,9 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Pacific/Auckland",
-        "localTime": "Thu 05:02",
+        "localTime": "Thu 13:05",
         "window": "outside_work_hours",
-        "nextBest": "Pacific/Auckland morning",
+        "nextBest": "Pacific/Auckland afternoon",
         "weight": 0
       },
       "targetRegion": "oceania",
@@ -737,9 +737,9 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Pacific/Auckland",
-        "localTime": "Thu 05:02",
+        "localTime": "Thu 13:05",
         "window": "outside_work_hours",
-        "nextBest": "Pacific/Auckland morning",
+        "nextBest": "Pacific/Auckland afternoon",
         "weight": 0
       },
       "targetRegion": "oceania",
@@ -787,9 +787,9 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Pacific/Auckland",
-        "localTime": "Thu 05:02",
+        "localTime": "Thu 13:05",
         "window": "outside_work_hours",
-        "nextBest": "Pacific/Auckland morning",
+        "nextBest": "Pacific/Auckland afternoon",
         "weight": 0
       },
       "targetRegion": "oceania",
@@ -837,7 +837,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Asia/Kolkata",
-        "localTime": "Wed 22:32",
+        "localTime": "Thu 06:35",
         "window": "outside_work_hours",
         "nextBest": "Asia/Kolkata morning",
         "weight": 0
@@ -902,7 +902,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/2 01:02:34",
+        "localTime": "2026/7/2 09:05:04",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -980,7 +980,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/2 01:02:34",
+        "localTime": "2026/7/2 09:05:04",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -1060,7 +1060,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/2 01:02:34",
+        "localTime": "2026/7/2 09:05:04",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -1138,7 +1138,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/2 01:02:34",
+        "localTime": "2026/7/2 09:05:04",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -1218,7 +1218,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/2 01:02:34",
+        "localTime": "2026/7/2 09:05:04",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -1303,7 +1303,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/2 01:02:34",
+        "localTime": "2026/7/2 09:05:04",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -1381,7 +1381,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/2 01:02:34",
+        "localTime": "2026/7/2 09:05:04",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -1461,7 +1461,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/2 01:02:34",
+        "localTime": "2026/7/2 09:05:04",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -1546,7 +1546,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/2 01:02:34",
+        "localTime": "2026/7/2 09:05:04",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -1624,7 +1624,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/2 01:02:34",
+        "localTime": "2026/7/2 09:05:04",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -1704,7 +1704,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/2 01:02:34",
+        "localTime": "2026/7/2 09:05:04",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -1789,7 +1789,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/2 01:02:34",
+        "localTime": "2026/7/2 09:05:04",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -1867,7 +1867,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/2 01:02:34",
+        "localTime": "2026/7/2 09:05:04",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -1947,7 +1947,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/2 01:02:34",
+        "localTime": "2026/7/2 09:05:04",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -2032,7 +2032,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/2 01:02:34",
+        "localTime": "2026/7/2 09:05:04",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -2110,7 +2110,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/2 01:02:34",
+        "localTime": "2026/7/2 09:05:04",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -2177,9 +2177,9 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Wed 13:02",
+        "localTime": "Wed 21:05",
         "window": "outside_work_hours",
-        "nextBest": "America/New_York afternoon",
+        "nextBest": "America/New_York morning",
         "weight": 0
       },
       "targetRegion": "americas",
