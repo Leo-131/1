@@ -29,11 +29,11 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     "totalLeads": 16,
     "highIcp": 16,
     "readyToDevelop": 0,
-    "dueNow": 1,
+    "dueNow": 2,
     "googleDiscovered": 1,
     "facebookDiscovered": 0,
     "websiteContactDiscovered": 1,
-    "scheduledLater": 1,
+    "scheduledLater": 0,
     "cooldown": 30,
     "emailPriority": 0,
     "openAgencyMarket": 15,
@@ -41,5 +41,5 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     "needsVerification": 0,
     "retainedLowIcp": 0
   },
-  "completedAt": "2026-07-02T04:02:38.701Z"
+  "completedAt": "2026-07-02T13:14:37.201Z"
 };
