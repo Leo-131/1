@@ -1,16 +1,16 @@
 window.SYSTEM_VISIBILITY_LATEST = {
-  "updatedAt": "2026-07-02T20:02:18.927Z",
+  "updatedAt": "2026-07-02T21:02:44.797Z",
   "source": "main-refreshDailyAutomationArtifacts",
   "runDate": "2026-07-02",
-  "artifactGeneratedAt": "2026-07-02T20:02:17.878Z",
-  "executionGeneratedAt": "2026-07-02T19:03:12.372Z",
-  "githubSyncUpdatedAt": "2026-07-02T19:03:32.894Z",
+  "artifactGeneratedAt": "2026-07-02T21:02:43.845Z",
+  "executionGeneratedAt": "2026-07-02T20:02:19.318Z",
+  "githubSyncUpdatedAt": "2026-07-02T20:02:48.953Z",
   "counts": {
-    "dailyQueue": 7,
+    "dailyQueue": 6,
     "googleDiscovered": 6,
     "websiteContact": 6,
     "cooldownQueue": 30,
-    "scheduledLater": 0
+    "scheduledLater": 1
   },
   "visibleSections": [
     "workspace",
