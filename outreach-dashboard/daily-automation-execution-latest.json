@@ -13,7 +13,7 @@
   "batchMode": "parallel-batches",
   "parallelLimit": 1,
   "limit": 10,
-  "queueDate": "2026-07-02",
+  "queueDate": "2026-07-03",
   "queueSource": "dailyQueue",
   "executed": [
     {
@@ -30,8 +30,8 @@
         "engine": "codex-chrome-extension-cdp",
         "port": 9224,
         "targetUrl": "https://www.mec.ca/",
-        "tabId": "70ED4BDCFC5A9FCC501B6AC1223C1A7E",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/70ED4BDCFC5A9FCC501B6AC1223C1A7E",
+        "tabId": "AE1CFAE6DCE3E4AB7DB0CC23AF911968",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/AE1CFAE6DCE3E4AB7DB0CC23AF911968",
         "title": "MEC: Canadian Outdoor Retailer - Shop Camping, Hiking, Climbing, Cycling, Watersports & More"
       },
       "result": {
@@ -45,8 +45,8 @@
           "engine": "codex-chrome-extension-cdp",
           "port": 9224,
           "targetUrl": "https://www.mec.ca/",
-          "tabId": "70ED4BDCFC5A9FCC501B6AC1223C1A7E",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/70ED4BDCFC5A9FCC501B6AC1223C1A7E",
+          "tabId": "AE1CFAE6DCE3E4AB7DB0CC23AF911968",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/AE1CFAE6DCE3E4AB7DB0CC23AF911968",
           "title": "MEC: Canadian Outdoor Retailer - Shop Camping, Hiking, Climbing, Cycling, Watersports & More"
         },
         "sendStatus": "approval_pending",
@@ -70,8 +70,8 @@
         "engine": "codex-chrome-extension-cdp",
         "port": 9224,
         "targetUrl": "https://www.decathlon.fr/",
-        "tabId": "CC0B58D67308896B4C8B0A6C1D021FE5",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/CC0B58D67308896B4C8B0A6C1D021FE5",
+        "tabId": "7B6109BC54B1409C407BC8FF337505CC",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/7B6109BC54B1409C407BC8FF337505CC",
         "title": "Decathlon | Chaussures de sport, équipements et matériel sportif"
       },
       "result": {
@@ -85,8 +85,8 @@
           "engine": "codex-chrome-extension-cdp",
           "port": 9224,
           "targetUrl": "https://www.decathlon.fr/",
-          "tabId": "CC0B58D67308896B4C8B0A6C1D021FE5",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/CC0B58D67308896B4C8B0A6C1D021FE5",
+          "tabId": "7B6109BC54B1409C407BC8FF337505CC",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/7B6109BC54B1409C407BC8FF337505CC",
           "title": "Decathlon | Chaussures de sport, équipements et matériel sportif"
         },
         "sendStatus": "approval_pending",
@@ -110,8 +110,8 @@
         "engine": "codex-chrome-extension-cdp",
         "port": 9224,
         "targetUrl": "https://www.bever.nl/",
-        "tabId": "316BD459172845F8EA3C132B8226E415",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/316BD459172845F8EA3C132B8226E415",
+        "tabId": "77A541F8715F17DBE7AF94558ACCDE4D",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/77A541F8715F17DBE7AF94558ACCDE4D",
         "title": "dé buitenwinkel van Nederland | Bever"
       },
       "result": {
@@ -125,8 +125,8 @@
           "engine": "codex-chrome-extension-cdp",
           "port": 9224,
           "targetUrl": "https://www.bever.nl/",
-          "tabId": "316BD459172845F8EA3C132B8226E415",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/316BD459172845F8EA3C132B8226E415",
+          "tabId": "77A541F8715F17DBE7AF94558ACCDE4D",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/77A541F8715F17DBE7AF94558ACCDE4D",
           "title": "dé buitenwinkel van Nederland | Bever"
         },
         "sendStatus": "approval_pending",
@@ -150,8 +150,8 @@
         "engine": "codex-chrome-extension-cdp",
         "port": 9224,
         "targetUrl": "https://www.superretailgroup.com.au/working-with-us/Trade/",
-        "tabId": "703D87D0DE619A8DF4486A9A67330D82",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/703D87D0DE619A8DF4486A9A67330D82",
+        "tabId": "F77B9C3C08EBD24DD8E0F293AE581A69",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/F77B9C3C08EBD24DD8E0F293AE581A69",
         "title": "Trade Partner Info - Super Retail Group"
       },
       "result": {
@@ -165,8 +165,8 @@
           "engine": "codex-chrome-extension-cdp",
           "port": 9224,
           "targetUrl": "https://www.superretailgroup.com.au/working-with-us/Trade/",
-          "tabId": "703D87D0DE619A8DF4486A9A67330D82",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/703D87D0DE619A8DF4486A9A67330D82",
+          "tabId": "F77B9C3C08EBD24DD8E0F293AE581A69",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/F77B9C3C08EBD24DD8E0F293AE581A69",
           "title": "Trade Partner Info - Super Retail Group"
         },
         "sendStatus": "approval_pending",
@@ -192,8 +192,8 @@
         "engine": "codex-chrome-extension-cdp",
         "port": 9224,
         "targetUrl": "https://www.mec.ca/",
-        "tabId": "70ED4BDCFC5A9FCC501B6AC1223C1A7E",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/70ED4BDCFC5A9FCC501B6AC1223C1A7E",
+        "tabId": "AE1CFAE6DCE3E4AB7DB0CC23AF911968",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/AE1CFAE6DCE3E4AB7DB0CC23AF911968",
         "title": "MEC: Canadian Outdoor Retailer - Shop Camping, Hiking, Climbing, Cycling, Watersports & More"
       },
       "result": {
@@ -207,8 +207,8 @@
           "engine": "codex-chrome-extension-cdp",
           "port": 9224,
           "targetUrl": "https://www.mec.ca/",
-          "tabId": "70ED4BDCFC5A9FCC501B6AC1223C1A7E",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/70ED4BDCFC5A9FCC501B6AC1223C1A7E",
+          "tabId": "AE1CFAE6DCE3E4AB7DB0CC23AF911968",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/AE1CFAE6DCE3E4AB7DB0CC23AF911968",
           "title": "MEC: Canadian Outdoor Retailer - Shop Camping, Hiking, Climbing, Cycling, Watersports & More"
         },
         "sendStatus": "approval_pending",
@@ -232,8 +232,8 @@
         "engine": "codex-chrome-extension-cdp",
         "port": 9224,
         "targetUrl": "https://www.decathlon.fr/",
-        "tabId": "CC0B58D67308896B4C8B0A6C1D021FE5",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/CC0B58D67308896B4C8B0A6C1D021FE5",
+        "tabId": "7B6109BC54B1409C407BC8FF337505CC",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/7B6109BC54B1409C407BC8FF337505CC",
         "title": "Decathlon | Chaussures de sport, équipements et matériel sportif"
       },
       "result": {
@@ -247,8 +247,8 @@
           "engine": "codex-chrome-extension-cdp",
           "port": 9224,
           "targetUrl": "https://www.decathlon.fr/",
-          "tabId": "CC0B58D67308896B4C8B0A6C1D021FE5",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/CC0B58D67308896B4C8B0A6C1D021FE5",
+          "tabId": "7B6109BC54B1409C407BC8FF337505CC",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/7B6109BC54B1409C407BC8FF337505CC",
           "title": "Decathlon | Chaussures de sport, équipements et matériel sportif"
         },
         "sendStatus": "approval_pending",
@@ -272,8 +272,8 @@
         "engine": "codex-chrome-extension-cdp",
         "port": 9224,
         "targetUrl": "https://www.bever.nl/",
-        "tabId": "316BD459172845F8EA3C132B8226E415",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/316BD459172845F8EA3C132B8226E415",
+        "tabId": "77A541F8715F17DBE7AF94558ACCDE4D",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/77A541F8715F17DBE7AF94558ACCDE4D",
         "title": "dé buitenwinkel van Nederland | Bever"
       },
       "result": {
@@ -287,8 +287,8 @@
           "engine": "codex-chrome-extension-cdp",
           "port": 9224,
           "targetUrl": "https://www.bever.nl/",
-          "tabId": "316BD459172845F8EA3C132B8226E415",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/316BD459172845F8EA3C132B8226E415",
+          "tabId": "77A541F8715F17DBE7AF94558ACCDE4D",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/77A541F8715F17DBE7AF94558ACCDE4D",
           "title": "dé buitenwinkel van Nederland | Bever"
         },
         "sendStatus": "approval_pending",
@@ -312,8 +312,8 @@
         "engine": "codex-chrome-extension-cdp",
         "port": 9224,
         "targetUrl": "https://www.superretailgroup.com.au/working-with-us/Trade/",
-        "tabId": "703D87D0DE619A8DF4486A9A67330D82",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/703D87D0DE619A8DF4486A9A67330D82",
+        "tabId": "F77B9C3C08EBD24DD8E0F293AE581A69",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/F77B9C3C08EBD24DD8E0F293AE581A69",
         "title": "Trade Partner Info - Super Retail Group"
       },
       "result": {
@@ -327,8 +327,8 @@
           "engine": "codex-chrome-extension-cdp",
           "port": 9224,
           "targetUrl": "https://www.superretailgroup.com.au/working-with-us/Trade/",
-          "tabId": "703D87D0DE619A8DF4486A9A67330D82",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/703D87D0DE619A8DF4486A9A67330D82",
+          "tabId": "F77B9C3C08EBD24DD8E0F293AE581A69",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/F77B9C3C08EBD24DD8E0F293AE581A69",
           "title": "Trade Partner Info - Super Retail Group"
         },
         "sendStatus": "approval_pending",
@@ -377,16 +377,16 @@
   },
   "systemRefresh": {
     "ok": true,
-    "stdout": "{\n  \"date\": \"2026-07-02\",\n  \"summary\": {\n    \"totalLeads\": 16,\n    \"highIcp\": 16,\n    \"readyToDevelop\": 0,\n    \"dueNow\": 6,\n    \"googleDiscovered\": 6,\n    \"facebookDiscovered\": 0,\n    \"websiteContactDiscovered\": 6,\n    \"scheduledLater\": 1,\n    \"cooldown\": 30,\n    \"emailPriority\": 0,\n    \"openAgencyMarket\": 15,\n    \"exclusiveAgencySkipped\": 1,\n    \"needsVerification\": 0,\n    \"retainedLowIcp\": 0\n  },\n  \"bugErrors\": 0,\n  \"queueFile\": \"E:\\\\New project\\\\outreach-dashboard\\\\daily-runs\\\\2026-07-02-daily-automation.json\",\n  \"csvFile\": \"E:\\\\New project\\\\outreach-dashboard\\\\daily-runs\\\\2026-07-02-daily-queue.csv\"\n}",
+    "stdout": "{\n  \"date\": \"2026-07-03\",\n  \"summary\": {\n    \"totalLeads\": 16,\n    \"highIcp\": 16,\n    \"readyToDevelop\": 0,\n    \"dueNow\": 6,\n    \"googleDiscovered\": 6,\n    \"facebookDiscovered\": 0,\n    \"websiteContactDiscovered\": 6,\n    \"scheduledLater\": 1,\n    \"cooldown\": 30,\n    \"emailPriority\": 0,\n    \"openAgencyMarket\": 15,\n    \"exclusiveAgencySkipped\": 1,\n    \"needsVerification\": 0,\n    \"retainedLowIcp\": 0\n  },\n  \"bugErrors\": 0,\n  \"queueFile\": \"E:\\\\New project\\\\outreach-dashboard\\\\daily-runs\\\\2026-07-03-daily-automation.json\",\n  \"csvFile\": \"E:\\\\New project\\\\outreach-dashboard\\\\daily-runs\\\\2026-07-03-daily-queue.csv\"\n}",
     "stderr": "",
     "error": "",
     "visibility": {
-      "updatedAt": "2026-07-02T23:02:29.888Z",
+      "updatedAt": "2026-07-03T00:03:42.984Z",
       "source": "main-refreshDailyAutomationArtifacts",
-      "runDate": "2026-07-02",
-      "artifactGeneratedAt": "2026-07-02T23:02:28.915Z",
-      "executionGeneratedAt": "2026-07-02T22:03:03.481Z",
-      "githubSyncUpdatedAt": "2026-07-02T22:06:40.911Z",
+      "runDate": "2026-07-03",
+      "artifactGeneratedAt": "2026-07-03T00:03:42.099Z",
+      "executionGeneratedAt": "2026-07-02T23:02:30.405Z",
+      "githubSyncUpdatedAt": "2026-07-02T23:03:05.647Z",
       "counts": {
         "dailyQueue": 6,
         "googleDiscovered": 6,
@@ -432,5 +432,5 @@
       }
     }
   },
-  "completedAt": "2026-07-02T23:02:30.405Z"
+  "completedAt": "2026-07-03T00:03:43.764Z"
 }
