@@ -30,9 +30,9 @@
         "engine": "codex-chrome-extension-cdp",
         "port": 9224,
         "targetUrl": "https://www.mec.ca/",
-        "tabId": "2BBD1BB3AD582E5780860E01F6F076FE",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/2BBD1BB3AD582E5780860E01F6F076FE",
-        "title": ""
+        "tabId": "28DC2F2DA6C3390ED212ED70A7FCB1DA",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/28DC2F2DA6C3390ED212ED70A7FCB1DA",
+        "title": "MEC: Canadian Outdoor Retailer - Shop Camping, Hiking, Climbing, Cycling, Watersports & More"
       },
       "result": {
         "ok": false,
@@ -45,9 +45,9 @@
           "engine": "codex-chrome-extension-cdp",
           "port": 9224,
           "targetUrl": "https://www.mec.ca/",
-          "tabId": "2BBD1BB3AD582E5780860E01F6F076FE",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/2BBD1BB3AD582E5780860E01F6F076FE",
-          "title": ""
+          "tabId": "28DC2F2DA6C3390ED212ED70A7FCB1DA",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/28DC2F2DA6C3390ED212ED70A7FCB1DA",
+          "title": "MEC: Canadian Outdoor Retailer - Shop Camping, Hiking, Climbing, Cycling, Watersports & More"
         },
         "sendStatus": "approval_pending",
         "subject": "Flextail & Vollyc | Lightweight Outdoor & 3C Electronics – Potential Cooperation",
@@ -70,8 +70,8 @@
         "engine": "codex-chrome-extension-cdp",
         "port": 9224,
         "targetUrl": "https://www.decathlon.fr/",
-        "tabId": "8118E68C4BEBCBAFCE8ADA8878B9AE25",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/8118E68C4BEBCBAFCE8ADA8878B9AE25",
+        "tabId": "7230B47C384F8496FA260AF7CE75C0C6",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/7230B47C384F8496FA260AF7CE75C0C6",
         "title": "Decathlon | Chaussures de sport, équipements et matériel sportif"
       },
       "result": {
@@ -85,8 +85,8 @@
           "engine": "codex-chrome-extension-cdp",
           "port": 9224,
           "targetUrl": "https://www.decathlon.fr/",
-          "tabId": "8118E68C4BEBCBAFCE8ADA8878B9AE25",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/8118E68C4BEBCBAFCE8ADA8878B9AE25",
+          "tabId": "7230B47C384F8496FA260AF7CE75C0C6",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/7230B47C384F8496FA260AF7CE75C0C6",
           "title": "Decathlon | Chaussures de sport, équipements et matériel sportif"
         },
         "sendStatus": "approval_pending",
@@ -110,8 +110,8 @@
         "engine": "codex-chrome-extension-cdp",
         "port": 9224,
         "targetUrl": "https://www.bever.nl/",
-        "tabId": "9BB38BAE3A7E59006C6A5A3FC0373909",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/9BB38BAE3A7E59006C6A5A3FC0373909",
+        "tabId": "DE3235FCF5E4499BB3755D7E0C124E6F",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/DE3235FCF5E4499BB3755D7E0C124E6F",
         "title": "dé buitenwinkel van Nederland | Bever"
       },
       "result": {
@@ -125,8 +125,8 @@
           "engine": "codex-chrome-extension-cdp",
           "port": 9224,
           "targetUrl": "https://www.bever.nl/",
-          "tabId": "9BB38BAE3A7E59006C6A5A3FC0373909",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/9BB38BAE3A7E59006C6A5A3FC0373909",
+          "tabId": "DE3235FCF5E4499BB3755D7E0C124E6F",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/DE3235FCF5E4499BB3755D7E0C124E6F",
           "title": "dé buitenwinkel van Nederland | Bever"
         },
         "sendStatus": "approval_pending",
@@ -150,8 +150,8 @@
         "engine": "codex-chrome-extension-cdp",
         "port": 9224,
         "targetUrl": "https://www.gooutdoors.co.uk/contact-us",
-        "tabId": "2CA7884EF43B068AF1969110098C0B40",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/2CA7884EF43B068AF1969110098C0B40",
+        "tabId": "6484D94EFFC7740161C74BD7B793B3B2",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/6484D94EFFC7740161C74BD7B793B3B2",
         "title": "Contact Us – GO Outdoors"
       },
       "result": {
@@ -165,8 +165,8 @@
           "engine": "codex-chrome-extension-cdp",
           "port": 9224,
           "targetUrl": "https://www.gooutdoors.co.uk/contact-us",
-          "tabId": "2CA7884EF43B068AF1969110098C0B40",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/2CA7884EF43B068AF1969110098C0B40",
+          "tabId": "6484D94EFFC7740161C74BD7B793B3B2",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/6484D94EFFC7740161C74BD7B793B3B2",
           "title": "Contact Us – GO Outdoors"
         },
         "sendStatus": "approval_pending",
@@ -190,8 +190,8 @@
         "engine": "codex-chrome-extension-cdp",
         "port": 9224,
         "targetUrl": "https://www.sail.ca/en/contact-us",
-        "tabId": "ADA92DC08CCF57429DB719E4FEFB7F62",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/ADA92DC08CCF57429DB719E4FEFB7F62",
+        "tabId": "74283FCF6737EBC2B6BE29D0B0F3DAEA",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/74283FCF6737EBC2B6BE29D0B0F3DAEA",
         "title": "SAIL | Need Help - Contact Us | SAIL"
       },
       "result": {
@@ -205,8 +205,8 @@
           "engine": "codex-chrome-extension-cdp",
           "port": 9224,
           "targetUrl": "https://www.sail.ca/en/contact-us",
-          "tabId": "ADA92DC08CCF57429DB719E4FEFB7F62",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/ADA92DC08CCF57429DB719E4FEFB7F62",
+          "tabId": "74283FCF6737EBC2B6BE29D0B0F3DAEA",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/74283FCF6737EBC2B6BE29D0B0F3DAEA",
           "title": "SAIL | Need Help - Contact Us | SAIL"
         },
         "sendStatus": "approval_pending",
@@ -224,36 +224,36 @@
       "targetUrl": "https://www.kathmandu.co.nz/contact-us",
       "ok": false,
       "sendStatus": "approval_pending",
-      "evidence": "contact_entry_verified;business_contact_route_detected;initial_page_verified;website_contact_form_fields_prepared;marketing_attachment_missing;website_contact_target_attempts:3",
+      "evidence": "contact_entry_verified;mailto_detected;initial_page_verified;website_contact_form_fields_prepared;marketing_attachment_missing;website_contact_target_attempts:2",
       "chromeOpen": {
         "ok": true,
         "engine": "codex-chrome-extension-cdp",
         "port": 9224,
-        "targetUrl": "https://www.kathmandu.co.nz/",
-        "tabId": "31268685DD124FB8AE5B3E7E52495B8D",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/31268685DD124FB8AE5B3E7E52495B8D",
-        "title": "Buy Kathmandu Outdoor Clothing & Gear | Kathmandu New Zealand – Kathmandu NZ"
+        "targetUrl": "https://help.kathmanduoutdoor.com/support/solutions/articles/51000414624-sales-team-contact-details",
+        "tabId": "9AA094191E930DAF27AF236B94F48D58",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/9AA094191E930DAF27AF236B94F48D58",
+        "title": "Sales Team contact details : Help Centre United States"
       },
       "result": {
         "ok": false,
         "engine": "codex-chrome-extension-website-contact",
         "browserEngine": "codex-chrome-extension-cdp",
         "mode": "website_contact_prepare_marketing_file",
-        "targetUrl": "https://www.kathmandu.co.nz/",
+        "targetUrl": "https://help.kathmanduoutdoor.com/support/solutions/articles/51000414624-sales-team-contact-details",
         "chromeOpen": {
           "ok": true,
           "engine": "codex-chrome-extension-cdp",
           "port": 9224,
-          "targetUrl": "https://www.kathmandu.co.nz/",
-          "tabId": "31268685DD124FB8AE5B3E7E52495B8D",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/31268685DD124FB8AE5B3E7E52495B8D",
-          "title": "Buy Kathmandu Outdoor Clothing & Gear | Kathmandu New Zealand – Kathmandu NZ"
+          "targetUrl": "https://help.kathmanduoutdoor.com/support/solutions/articles/51000414624-sales-team-contact-details",
+          "tabId": "9AA094191E930DAF27AF236B94F48D58",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/9AA094191E930DAF27AF236B94F48D58",
+          "title": "Sales Team contact details : Help Centre United States"
         },
         "sendStatus": "approval_pending",
         "subject": "Flextail & Vollyc | Lightweight Outdoor & 3C Electronics – Potential Cooperation",
         "draft": "Dear Kathmandu Team,\n\nNice to e-meet you.\nI am Leo, from Flextail & Vollyc.\n\nFlextail is our first and core brand, specializing in ultralight electric products for outdoor, travel, and home use. The brand is currently Top 1 on Amazon, with strong global sell-through and a proven product-market fit.\nVollyc, our second brand, focuses on 3C electronics, targeting practical, high-rotation consumer use cases.\n\nFrom our perspective, your platform and positioning are highly aligned with Flextail’s product philosophy, especially in lightweight outdoor and travel-oriented electrics.\n\nWe have already contacted with your team, and we are now actively exploring opportunities in other regions.\nAttached, you will find a brief introduction to our brands and current product catalog for your reference.\n\nLooking ahead, we are planning to launch over 36 new SKUs in 2026, covering multiple usage scenarios and price tiers, which we believe could be of interest to your assortment strategy.\n\nIf you are available, I would greatly appreciate the opportunity to arrange a short introductory video meeting to present our brands and discuss potential collaboration opportunities.\n\nThank you for your time and consideration. I look forward to your reply.\n\n[Flextail.com](https://www.flextail.com/), [vollyc.com](https://vollyc.com/)\n\n[Sincerely](https://wa.me/8617321028184)\n[Best Regard](https://wa.me/8617321028184)\n[Leo Liu](https://wa.me/8617321028184)\n[Sales](https://wa.me/8617321028184) [& Operations Director](https://wa.me/8617321028184)\n[Brand & ODM Department](https://wa.me/8617321028184)\n[Tel/whatsapp:  +86 17321028184](https://wa.me/8617321028184)\n\n[Email:  Leo@flextailgear.com](https://wa.me/8617321028184)\n[SHANGHAI FLEXTAIL TECHNOLOGY CO.,LTD.](https://wa.me/8617321028184)\n[Room103, Building No.6, No.1 Yanjiaqiao, Pudong District, ShangHai, China](https://wa.me/8617321028184)",
-        "evidence": "contact_entry_verified;business_contact_route_detected;initial_page_verified;website_contact_form_fields_prepared;marketing_attachment_missing",
-        "output": "{\"verdict\":\"approval_pending\",\"evidence\":\"contact_entry_verified;business_contact_route_detected;initial_page_verified;website_contact_form_fields_prepared;marketing_attachment_missing;website_contact_target_attempts:3\",\"nextAction\":\"Configure WEBSITE_MARKETING_FILE or MARKETING_ATTACHMENT_PATH with the approved marketing file, then rerun. The form was not submitted.\",\"subject\":\"Flextail & Vollyc | Lightweight Outdoor & 3C Electronics – Potential Cooperation\",\"draft\":\"Dear Kathmandu Team,\\n\\nNice to e-meet you.\\nI am Leo, from Flextail & Vollyc.\\n\\nFlextail is our first and core brand, specializing in ultralight electric products for outdoor, travel, and home use. The brand is currently Top 1 on Amazon, with strong global sell-through and a proven product-market fit.\\nVollyc, our second brand, focuses on 3C electronics, targeting practical, high-rotation consumer use cases.\\n\\nFrom our perspective, your platform and positioning are highly aligned with Flextail’s product philosophy, especially in lightweight outdoor and travel-oriented electrics.\\n\\nWe have already contacted with your team, and we are now actively exploring opportunities in other regions.\\nAttached, you will find a brief introduction to our brands and current product catalog for your reference.\\n\\nLooking ahead, we are planning to launch over 36 new SKUs in 2026, covering multiple usage scenarios and price tiers, which we believe could be of interest to your assortment strategy.\\n\\nIf you are available, I would greatly appreciate the opportunity to arrange a short introductory video meeting to present our brands and discuss potential collaboration opportunities.\\n\\nThank you for your time and consideration. I look forward to your reply.\\n\\n[Flextail.com](https://www.flextail.com/), [vollyc.com](https://vollyc.com/)\\n\\n[Sincerely](https://wa.me/8617321028184)\\n[Best Regard](https://wa.me/8617321028184)\\n[Leo Liu](https://wa.me/8617321028184)\\n[Sales](https://wa.me/8617321028184) [& Operations Director](https://wa.me/8617321028184)\\n[Brand & ODM Department](https://wa.me/8617321028184)\\n[Tel/whatsapp:  +86 17321028184](https://wa.me/8617321028184)\\n\\n[Email:  Leo@flextailgear.com](https://wa.me/8617321028184)\\n[SHANGHAI FLEXTAIL TECHNOLOGY CO.,LTD.](https://wa.me/8617321028184)\\n[Room103, Building No.6, No.1 Yanjiaqiao, Pudong District, ShangHai, China](https://wa.me/8617321028184)\",\"sendStatus\":\"approval_pending\",\"attempts\":[{\"targetUrl\":\"https://www.kathmandu.co.nz/contact-us\",\"sendStatus\":\"failed_open\",\"evidence\":\"website_page_unavailable_404: Something went wrong.\\n\\nWhat happened?\\n404 Not Found\\nWhat can I do?\\nReturn to the previous page.\"},{\"targetUrl\":\"https://help.kathmanduoutdoor.com/support/solutions/articles/51000414624-sales-team-contact-details\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control\"},{\"targetUrl\":\"https://www.kathmandu.co.nz/\",\"sendStatus\":\"approval_pending\",\"evidence\":\"contact_entry_verified;business_contact_route_detected;initial_page_verified;website_contact_form_fields_prepared;marketing_attachment_missing\"}]}"
+        "evidence": "contact_entry_verified;mailto_detected;initial_page_verified;website_contact_form_fields_prepared;marketing_attachment_missing",
+        "output": "{\"verdict\":\"approval_pending\",\"evidence\":\"contact_entry_verified;mailto_detected;initial_page_verified;website_contact_form_fields_prepared;marketing_attachment_missing;website_contact_target_attempts:2\",\"nextAction\":\"Configure WEBSITE_MARKETING_FILE or MARKETING_ATTACHMENT_PATH with the approved marketing file, then rerun. The form was not submitted.\",\"subject\":\"Flextail & Vollyc | Lightweight Outdoor & 3C Electronics – Potential Cooperation\",\"draft\":\"Dear Kathmandu Team,\\n\\nNice to e-meet you.\\nI am Leo, from Flextail & Vollyc.\\n\\nFlextail is our first and core brand, specializing in ultralight electric products for outdoor, travel, and home use. The brand is currently Top 1 on Amazon, with strong global sell-through and a proven product-market fit.\\nVollyc, our second brand, focuses on 3C electronics, targeting practical, high-rotation consumer use cases.\\n\\nFrom our perspective, your platform and positioning are highly aligned with Flextail’s product philosophy, especially in lightweight outdoor and travel-oriented electrics.\\n\\nWe have already contacted with your team, and we are now actively exploring opportunities in other regions.\\nAttached, you will find a brief introduction to our brands and current product catalog for your reference.\\n\\nLooking ahead, we are planning to launch over 36 new SKUs in 2026, covering multiple usage scenarios and price tiers, which we believe could be of interest to your assortment strategy.\\n\\nIf you are available, I would greatly appreciate the opportunity to arrange a short introductory video meeting to present our brands and discuss potential collaboration opportunities.\\n\\nThank you for your time and consideration. I look forward to your reply.\\n\\n[Flextail.com](https://www.flextail.com/), [vollyc.com](https://vollyc.com/)\\n\\n[Sincerely](https://wa.me/8617321028184)\\n[Best Regard](https://wa.me/8617321028184)\\n[Leo Liu](https://wa.me/8617321028184)\\n[Sales](https://wa.me/8617321028184) [& Operations Director](https://wa.me/8617321028184)\\n[Brand & ODM Department](https://wa.me/8617321028184)\\n[Tel/whatsapp:  +86 17321028184](https://wa.me/8617321028184)\\n\\n[Email:  Leo@flextailgear.com](https://wa.me/8617321028184)\\n[SHANGHAI FLEXTAIL TECHNOLOGY CO.,LTD.](https://wa.me/8617321028184)\\n[Room103, Building No.6, No.1 Yanjiaqiao, Pudong District, ShangHai, China](https://wa.me/8617321028184)\",\"sendStatus\":\"approval_pending\",\"attempts\":[{\"targetUrl\":\"https://www.kathmandu.co.nz/contact-us\",\"sendStatus\":\"failed_open\",\"evidence\":\"website_page_unavailable_404: Something went wrong.\\n\\nWhat happened?\\n404 Not Found\\nWhat can I do?\\nReturn to the previous page.\"},{\"targetUrl\":\"https://help.kathmanduoutdoor.com/support/solutions/articles/51000414624-sales-team-contact-details\",\"sendStatus\":\"approval_pending\",\"evidence\":\"contact_entry_verified;mailto_detected;initial_page_verified;website_contact_form_fields_prepared;marketing_attachment_missing\"}]}"
       }
     }
   ],
@@ -272,9 +272,9 @@
         "engine": "codex-chrome-extension-cdp",
         "port": 9224,
         "targetUrl": "https://www.mec.ca/",
-        "tabId": "2BBD1BB3AD582E5780860E01F6F076FE",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/2BBD1BB3AD582E5780860E01F6F076FE",
-        "title": ""
+        "tabId": "28DC2F2DA6C3390ED212ED70A7FCB1DA",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/28DC2F2DA6C3390ED212ED70A7FCB1DA",
+        "title": "MEC: Canadian Outdoor Retailer - Shop Camping, Hiking, Climbing, Cycling, Watersports & More"
       },
       "result": {
         "ok": false,
@@ -287,9 +287,9 @@
           "engine": "codex-chrome-extension-cdp",
           "port": 9224,
           "targetUrl": "https://www.mec.ca/",
-          "tabId": "2BBD1BB3AD582E5780860E01F6F076FE",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/2BBD1BB3AD582E5780860E01F6F076FE",
-          "title": ""
+          "tabId": "28DC2F2DA6C3390ED212ED70A7FCB1DA",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/28DC2F2DA6C3390ED212ED70A7FCB1DA",
+          "title": "MEC: Canadian Outdoor Retailer - Shop Camping, Hiking, Climbing, Cycling, Watersports & More"
         },
         "sendStatus": "approval_pending",
         "subject": "Flextail & Vollyc | Lightweight Outdoor & 3C Electronics – Potential Cooperation",
@@ -312,8 +312,8 @@
         "engine": "codex-chrome-extension-cdp",
         "port": 9224,
         "targetUrl": "https://www.decathlon.fr/",
-        "tabId": "8118E68C4BEBCBAFCE8ADA8878B9AE25",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/8118E68C4BEBCBAFCE8ADA8878B9AE25",
+        "tabId": "7230B47C384F8496FA260AF7CE75C0C6",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/7230B47C384F8496FA260AF7CE75C0C6",
         "title": "Decathlon | Chaussures de sport, équipements et matériel sportif"
       },
       "result": {
@@ -327,8 +327,8 @@
           "engine": "codex-chrome-extension-cdp",
           "port": 9224,
           "targetUrl": "https://www.decathlon.fr/",
-          "tabId": "8118E68C4BEBCBAFCE8ADA8878B9AE25",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/8118E68C4BEBCBAFCE8ADA8878B9AE25",
+          "tabId": "7230B47C384F8496FA260AF7CE75C0C6",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/7230B47C384F8496FA260AF7CE75C0C6",
           "title": "Decathlon | Chaussures de sport, équipements et matériel sportif"
         },
         "sendStatus": "approval_pending",
@@ -352,8 +352,8 @@
         "engine": "codex-chrome-extension-cdp",
         "port": 9224,
         "targetUrl": "https://www.bever.nl/",
-        "tabId": "9BB38BAE3A7E59006C6A5A3FC0373909",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/9BB38BAE3A7E59006C6A5A3FC0373909",
+        "tabId": "DE3235FCF5E4499BB3755D7E0C124E6F",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/DE3235FCF5E4499BB3755D7E0C124E6F",
         "title": "dé buitenwinkel van Nederland | Bever"
       },
       "result": {
@@ -367,8 +367,8 @@
           "engine": "codex-chrome-extension-cdp",
           "port": 9224,
           "targetUrl": "https://www.bever.nl/",
-          "tabId": "9BB38BAE3A7E59006C6A5A3FC0373909",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/9BB38BAE3A7E59006C6A5A3FC0373909",
+          "tabId": "DE3235FCF5E4499BB3755D7E0C124E6F",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/DE3235FCF5E4499BB3755D7E0C124E6F",
           "title": "dé buitenwinkel van Nederland | Bever"
         },
         "sendStatus": "approval_pending",
@@ -392,8 +392,8 @@
         "engine": "codex-chrome-extension-cdp",
         "port": 9224,
         "targetUrl": "https://www.gooutdoors.co.uk/contact-us",
-        "tabId": "2CA7884EF43B068AF1969110098C0B40",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/2CA7884EF43B068AF1969110098C0B40",
+        "tabId": "6484D94EFFC7740161C74BD7B793B3B2",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/6484D94EFFC7740161C74BD7B793B3B2",
         "title": "Contact Us – GO Outdoors"
       },
       "result": {
@@ -407,8 +407,8 @@
           "engine": "codex-chrome-extension-cdp",
           "port": 9224,
           "targetUrl": "https://www.gooutdoors.co.uk/contact-us",
-          "tabId": "2CA7884EF43B068AF1969110098C0B40",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/2CA7884EF43B068AF1969110098C0B40",
+          "tabId": "6484D94EFFC7740161C74BD7B793B3B2",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/6484D94EFFC7740161C74BD7B793B3B2",
           "title": "Contact Us – GO Outdoors"
         },
         "sendStatus": "approval_pending",
@@ -432,8 +432,8 @@
         "engine": "codex-chrome-extension-cdp",
         "port": 9224,
         "targetUrl": "https://www.sail.ca/en/contact-us",
-        "tabId": "ADA92DC08CCF57429DB719E4FEFB7F62",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/ADA92DC08CCF57429DB719E4FEFB7F62",
+        "tabId": "74283FCF6737EBC2B6BE29D0B0F3DAEA",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/74283FCF6737EBC2B6BE29D0B0F3DAEA",
         "title": "SAIL | Need Help - Contact Us | SAIL"
       },
       "result": {
@@ -447,8 +447,8 @@
           "engine": "codex-chrome-extension-cdp",
           "port": 9224,
           "targetUrl": "https://www.sail.ca/en/contact-us",
-          "tabId": "ADA92DC08CCF57429DB719E4FEFB7F62",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/ADA92DC08CCF57429DB719E4FEFB7F62",
+          "tabId": "74283FCF6737EBC2B6BE29D0B0F3DAEA",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/74283FCF6737EBC2B6BE29D0B0F3DAEA",
           "title": "SAIL | Need Help - Contact Us | SAIL"
         },
         "sendStatus": "approval_pending",
@@ -466,36 +466,36 @@
       "targetUrl": "https://www.kathmandu.co.nz/contact-us",
       "ok": false,
       "sendStatus": "approval_pending",
-      "evidence": "contact_entry_verified;business_contact_route_detected;initial_page_verified;website_contact_form_fields_prepared;marketing_attachment_missing;website_contact_target_attempts:3",
+      "evidence": "contact_entry_verified;mailto_detected;initial_page_verified;website_contact_form_fields_prepared;marketing_attachment_missing;website_contact_target_attempts:2",
       "chromeOpen": {
         "ok": true,
         "engine": "codex-chrome-extension-cdp",
         "port": 9224,
-        "targetUrl": "https://www.kathmandu.co.nz/",
-        "tabId": "31268685DD124FB8AE5B3E7E52495B8D",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/31268685DD124FB8AE5B3E7E52495B8D",
-        "title": "Buy Kathmandu Outdoor Clothing & Gear | Kathmandu New Zealand – Kathmandu NZ"
+        "targetUrl": "https://help.kathmanduoutdoor.com/support/solutions/articles/51000414624-sales-team-contact-details",
+        "tabId": "9AA094191E930DAF27AF236B94F48D58",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/9AA094191E930DAF27AF236B94F48D58",
+        "title": "Sales Team contact details : Help Centre United States"
       },
       "result": {
         "ok": false,
         "engine": "codex-chrome-extension-website-contact",
         "browserEngine": "codex-chrome-extension-cdp",
         "mode": "website_contact_prepare_marketing_file",
-        "targetUrl": "https://www.kathmandu.co.nz/",
+        "targetUrl": "https://help.kathmanduoutdoor.com/support/solutions/articles/51000414624-sales-team-contact-details",
         "chromeOpen": {
           "ok": true,
           "engine": "codex-chrome-extension-cdp",
           "port": 9224,
-          "targetUrl": "https://www.kathmandu.co.nz/",
-          "tabId": "31268685DD124FB8AE5B3E7E52495B8D",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/31268685DD124FB8AE5B3E7E52495B8D",
-          "title": "Buy Kathmandu Outdoor Clothing & Gear | Kathmandu New Zealand – Kathmandu NZ"
+          "targetUrl": "https://help.kathmanduoutdoor.com/support/solutions/articles/51000414624-sales-team-contact-details",
+          "tabId": "9AA094191E930DAF27AF236B94F48D58",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/9AA094191E930DAF27AF236B94F48D58",
+          "title": "Sales Team contact details : Help Centre United States"
         },
         "sendStatus": "approval_pending",
         "subject": "Flextail & Vollyc | Lightweight Outdoor & 3C Electronics – Potential Cooperation",
         "draft": "Dear Kathmandu Team,\n\nNice to e-meet you.\nI am Leo, from Flextail & Vollyc.\n\nFlextail is our first and core brand, specializing in ultralight electric products for outdoor, travel, and home use. The brand is currently Top 1 on Amazon, with strong global sell-through and a proven product-market fit.\nVollyc, our second brand, focuses on 3C electronics, targeting practical, high-rotation consumer use cases.\n\nFrom our perspective, your platform and positioning are highly aligned with Flextail’s product philosophy, especially in lightweight outdoor and travel-oriented electrics.\n\nWe have already contacted with your team, and we are now actively exploring opportunities in other regions.\nAttached, you will find a brief introduction to our brands and current product catalog for your reference.\n\nLooking ahead, we are planning to launch over 36 new SKUs in 2026, covering multiple usage scenarios and price tiers, which we believe could be of interest to your assortment strategy.\n\nIf you are available, I would greatly appreciate the opportunity to arrange a short introductory video meeting to present our brands and discuss potential collaboration opportunities.\n\nThank you for your time and consideration. I look forward to your reply.\n\n[Flextail.com](https://www.flextail.com/), [vollyc.com](https://vollyc.com/)\n\n[Sincerely](https://wa.me/8617321028184)\n[Best Regard](https://wa.me/8617321028184)\n[Leo Liu](https://wa.me/8617321028184)\n[Sales](https://wa.me/8617321028184) [& Operations Director](https://wa.me/8617321028184)\n[Brand & ODM Department](https://wa.me/8617321028184)\n[Tel/whatsapp:  +86 17321028184](https://wa.me/8617321028184)\n\n[Email:  Leo@flextailgear.com](https://wa.me/8617321028184)\n[SHANGHAI FLEXTAIL TECHNOLOGY CO.,LTD.](https://wa.me/8617321028184)\n[Room103, Building No.6, No.1 Yanjiaqiao, Pudong District, ShangHai, China](https://wa.me/8617321028184)",
-        "evidence": "contact_entry_verified;business_contact_route_detected;initial_page_verified;website_contact_form_fields_prepared;marketing_attachment_missing",
-        "output": "{\"verdict\":\"approval_pending\",\"evidence\":\"contact_entry_verified;business_contact_route_detected;initial_page_verified;website_contact_form_fields_prepared;marketing_attachment_missing;website_contact_target_attempts:3\",\"nextAction\":\"Configure WEBSITE_MARKETING_FILE or MARKETING_ATTACHMENT_PATH with the approved marketing file, then rerun. The form was not submitted.\",\"subject\":\"Flextail & Vollyc | Lightweight Outdoor & 3C Electronics – Potential Cooperation\",\"draft\":\"Dear Kathmandu Team,\\n\\nNice to e-meet you.\\nI am Leo, from Flextail & Vollyc.\\n\\nFlextail is our first and core brand, specializing in ultralight electric products for outdoor, travel, and home use. The brand is currently Top 1 on Amazon, with strong global sell-through and a proven product-market fit.\\nVollyc, our second brand, focuses on 3C electronics, targeting practical, high-rotation consumer use cases.\\n\\nFrom our perspective, your platform and positioning are highly aligned with Flextail’s product philosophy, especially in lightweight outdoor and travel-oriented electrics.\\n\\nWe have already contacted with your team, and we are now actively exploring opportunities in other regions.\\nAttached, you will find a brief introduction to our brands and current product catalog for your reference.\\n\\nLooking ahead, we are planning to launch over 36 new SKUs in 2026, covering multiple usage scenarios and price tiers, which we believe could be of interest to your assortment strategy.\\n\\nIf you are available, I would greatly appreciate the opportunity to arrange a short introductory video meeting to present our brands and discuss potential collaboration opportunities.\\n\\nThank you for your time and consideration. I look forward to your reply.\\n\\n[Flextail.com](https://www.flextail.com/), [vollyc.com](https://vollyc.com/)\\n\\n[Sincerely](https://wa.me/8617321028184)\\n[Best Regard](https://wa.me/8617321028184)\\n[Leo Liu](https://wa.me/8617321028184)\\n[Sales](https://wa.me/8617321028184) [& Operations Director](https://wa.me/8617321028184)\\n[Brand & ODM Department](https://wa.me/8617321028184)\\n[Tel/whatsapp:  +86 17321028184](https://wa.me/8617321028184)\\n\\n[Email:  Leo@flextailgear.com](https://wa.me/8617321028184)\\n[SHANGHAI FLEXTAIL TECHNOLOGY CO.,LTD.](https://wa.me/8617321028184)\\n[Room103, Building No.6, No.1 Yanjiaqiao, Pudong District, ShangHai, China](https://wa.me/8617321028184)\",\"sendStatus\":\"approval_pending\",\"attempts\":[{\"targetUrl\":\"https://www.kathmandu.co.nz/contact-us\",\"sendStatus\":\"failed_open\",\"evidence\":\"website_page_unavailable_404: Something went wrong.\\n\\nWhat happened?\\n404 Not Found\\nWhat can I do?\\nReturn to the previous page.\"},{\"targetUrl\":\"https://help.kathmanduoutdoor.com/support/solutions/articles/51000414624-sales-team-contact-details\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control\"},{\"targetUrl\":\"https://www.kathmandu.co.nz/\",\"sendStatus\":\"approval_pending\",\"evidence\":\"contact_entry_verified;business_contact_route_detected;initial_page_verified;website_contact_form_fields_prepared;marketing_attachment_missing\"}]}"
+        "evidence": "contact_entry_verified;mailto_detected;initial_page_verified;website_contact_form_fields_prepared;marketing_attachment_missing",
+        "output": "{\"verdict\":\"approval_pending\",\"evidence\":\"contact_entry_verified;mailto_detected;initial_page_verified;website_contact_form_fields_prepared;marketing_attachment_missing;website_contact_target_attempts:2\",\"nextAction\":\"Configure WEBSITE_MARKETING_FILE or MARKETING_ATTACHMENT_PATH with the approved marketing file, then rerun. The form was not submitted.\",\"subject\":\"Flextail & Vollyc | Lightweight Outdoor & 3C Electronics – Potential Cooperation\",\"draft\":\"Dear Kathmandu Team,\\n\\nNice to e-meet you.\\nI am Leo, from Flextail & Vollyc.\\n\\nFlextail is our first and core brand, specializing in ultralight electric products for outdoor, travel, and home use. The brand is currently Top 1 on Amazon, with strong global sell-through and a proven product-market fit.\\nVollyc, our second brand, focuses on 3C electronics, targeting practical, high-rotation consumer use cases.\\n\\nFrom our perspective, your platform and positioning are highly aligned with Flextail’s product philosophy, especially in lightweight outdoor and travel-oriented electrics.\\n\\nWe have already contacted with your team, and we are now actively exploring opportunities in other regions.\\nAttached, you will find a brief introduction to our brands and current product catalog for your reference.\\n\\nLooking ahead, we are planning to launch over 36 new SKUs in 2026, covering multiple usage scenarios and price tiers, which we believe could be of interest to your assortment strategy.\\n\\nIf you are available, I would greatly appreciate the opportunity to arrange a short introductory video meeting to present our brands and discuss potential collaboration opportunities.\\n\\nThank you for your time and consideration. I look forward to your reply.\\n\\n[Flextail.com](https://www.flextail.com/), [vollyc.com](https://vollyc.com/)\\n\\n[Sincerely](https://wa.me/8617321028184)\\n[Best Regard](https://wa.me/8617321028184)\\n[Leo Liu](https://wa.me/8617321028184)\\n[Sales](https://wa.me/8617321028184) [& Operations Director](https://wa.me/8617321028184)\\n[Brand & ODM Department](https://wa.me/8617321028184)\\n[Tel/whatsapp:  +86 17321028184](https://wa.me/8617321028184)\\n\\n[Email:  Leo@flextailgear.com](https://wa.me/8617321028184)\\n[SHANGHAI FLEXTAIL TECHNOLOGY CO.,LTD.](https://wa.me/8617321028184)\\n[Room103, Building No.6, No.1 Yanjiaqiao, Pudong District, ShangHai, China](https://wa.me/8617321028184)\",\"sendStatus\":\"approval_pending\",\"attempts\":[{\"targetUrl\":\"https://www.kathmandu.co.nz/contact-us\",\"sendStatus\":\"failed_open\",\"evidence\":\"website_page_unavailable_404: Something went wrong.\\n\\nWhat happened?\\n404 Not Found\\nWhat can I do?\\nReturn to the previous page.\"},{\"targetUrl\":\"https://help.kathmanduoutdoor.com/support/solutions/articles/51000414624-sales-team-contact-details\",\"sendStatus\":\"approval_pending\",\"evidence\":\"contact_entry_verified;mailto_detected;initial_page_verified;website_contact_form_fields_prepared;marketing_attachment_missing\"}]}"
       }
     }
   ],
@@ -553,12 +553,12 @@
     "stderr": "",
     "error": "",
     "visibility": {
-      "updatedAt": "2026-07-03T16:03:51.981Z",
+      "updatedAt": "2026-07-03T17:04:40.949Z",
       "source": "main-refreshDailyAutomationArtifacts",
       "runDate": "2026-07-03",
-      "artifactGeneratedAt": "2026-07-03T16:03:50.828Z",
-      "executionGeneratedAt": "2026-07-03T15:03:47.868Z",
-      "githubSyncUpdatedAt": "2026-07-03T15:04:21.627Z",
+      "artifactGeneratedAt": "2026-07-03T17:04:39.121Z",
+      "executionGeneratedAt": "2026-07-03T16:03:52.670Z",
+      "githubSyncUpdatedAt": "2026-07-03T16:04:16.937Z",
       "counts": {
         "dailyQueue": 10,
         "googleDiscovered": 10,
@@ -604,5 +604,5 @@
       }
     }
   },
-  "completedAt": "2026-07-03T16:03:52.670Z"
+  "completedAt": "2026-07-03T17:04:41.430Z"
 }
