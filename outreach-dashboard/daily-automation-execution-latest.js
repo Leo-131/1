@@ -30,8 +30,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
         "engine": "codex-chrome-extension-cdp",
         "port": 9224,
         "targetUrl": "https://www.mec.ca/",
-        "tabId": "A054856E18C2F7644CEA1EFE7A8638D8",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/A054856E18C2F7644CEA1EFE7A8638D8",
+        "tabId": "C39C4D4440D84FEF409C35F25C5A5E3C",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/C39C4D4440D84FEF409C35F25C5A5E3C",
         "title": "MEC: Canadian Outdoor Retailer - Shop Camping, Hiking, Climbing, Cycling, Watersports & More"
       },
       "result": {
@@ -45,8 +45,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
           "engine": "codex-chrome-extension-cdp",
           "port": 9224,
           "targetUrl": "https://www.mec.ca/",
-          "tabId": "A054856E18C2F7644CEA1EFE7A8638D8",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/A054856E18C2F7644CEA1EFE7A8638D8",
+          "tabId": "C39C4D4440D84FEF409C35F25C5A5E3C",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/C39C4D4440D84FEF409C35F25C5A5E3C",
           "title": "MEC: Canadian Outdoor Retailer - Shop Camping, Hiking, Climbing, Cycling, Watersports & More"
         },
         "sendStatus": "approval_pending",
@@ -70,8 +70,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
         "engine": "codex-chrome-extension-cdp",
         "port": 9224,
         "targetUrl": "https://www.decathlon.fr/",
-        "tabId": "AD09271615CD481423FD83A1AF9C004A",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/AD09271615CD481423FD83A1AF9C004A",
+        "tabId": "7702DC087608A082A1051949BDC8612D",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/7702DC087608A082A1051949BDC8612D",
         "title": "Decathlon | Chaussures de sport, équipements et matériel sportif"
       },
       "result": {
@@ -85,8 +85,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
           "engine": "codex-chrome-extension-cdp",
           "port": 9224,
           "targetUrl": "https://www.decathlon.fr/",
-          "tabId": "AD09271615CD481423FD83A1AF9C004A",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/AD09271615CD481423FD83A1AF9C004A",
+          "tabId": "7702DC087608A082A1051949BDC8612D",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/7702DC087608A082A1051949BDC8612D",
           "title": "Decathlon | Chaussures de sport, équipements et matériel sportif"
         },
         "sendStatus": "approval_pending",
@@ -110,8 +110,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
         "engine": "codex-chrome-extension-cdp",
         "port": 9224,
         "targetUrl": "https://www.bever.nl/",
-        "tabId": "C208590F7FF6D53DAD6AC849BCCA25DB",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/C208590F7FF6D53DAD6AC849BCCA25DB",
+        "tabId": "928295BE1257F67E396B5EB58A13574C",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/928295BE1257F67E396B5EB58A13574C",
         "title": ""
       },
       "result": {
@@ -125,8 +125,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
           "engine": "codex-chrome-extension-cdp",
           "port": 9224,
           "targetUrl": "https://www.bever.nl/",
-          "tabId": "C208590F7FF6D53DAD6AC849BCCA25DB",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/C208590F7FF6D53DAD6AC849BCCA25DB",
+          "tabId": "928295BE1257F67E396B5EB58A13574C",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/928295BE1257F67E396B5EB58A13574C",
           "title": ""
         },
         "sendStatus": "approval_pending",
@@ -152,8 +152,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
         "engine": "codex-chrome-extension-cdp",
         "port": 9224,
         "targetUrl": "https://www.mec.ca/",
-        "tabId": "A054856E18C2F7644CEA1EFE7A8638D8",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/A054856E18C2F7644CEA1EFE7A8638D8",
+        "tabId": "C39C4D4440D84FEF409C35F25C5A5E3C",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/C39C4D4440D84FEF409C35F25C5A5E3C",
         "title": "MEC: Canadian Outdoor Retailer - Shop Camping, Hiking, Climbing, Cycling, Watersports & More"
       },
       "result": {
@@ -167,8 +167,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
           "engine": "codex-chrome-extension-cdp",
           "port": 9224,
           "targetUrl": "https://www.mec.ca/",
-          "tabId": "A054856E18C2F7644CEA1EFE7A8638D8",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/A054856E18C2F7644CEA1EFE7A8638D8",
+          "tabId": "C39C4D4440D84FEF409C35F25C5A5E3C",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/C39C4D4440D84FEF409C35F25C5A5E3C",
           "title": "MEC: Canadian Outdoor Retailer - Shop Camping, Hiking, Climbing, Cycling, Watersports & More"
         },
         "sendStatus": "approval_pending",
@@ -192,8 +192,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
         "engine": "codex-chrome-extension-cdp",
         "port": 9224,
         "targetUrl": "https://www.decathlon.fr/",
-        "tabId": "AD09271615CD481423FD83A1AF9C004A",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/AD09271615CD481423FD83A1AF9C004A",
+        "tabId": "7702DC087608A082A1051949BDC8612D",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/7702DC087608A082A1051949BDC8612D",
         "title": "Decathlon | Chaussures de sport, équipements et matériel sportif"
       },
       "result": {
@@ -207,8 +207,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
           "engine": "codex-chrome-extension-cdp",
           "port": 9224,
           "targetUrl": "https://www.decathlon.fr/",
-          "tabId": "AD09271615CD481423FD83A1AF9C004A",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/AD09271615CD481423FD83A1AF9C004A",
+          "tabId": "7702DC087608A082A1051949BDC8612D",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/7702DC087608A082A1051949BDC8612D",
           "title": "Decathlon | Chaussures de sport, équipements et matériel sportif"
         },
         "sendStatus": "approval_pending",
@@ -232,8 +232,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
         "engine": "codex-chrome-extension-cdp",
         "port": 9224,
         "targetUrl": "https://www.bever.nl/",
-        "tabId": "C208590F7FF6D53DAD6AC849BCCA25DB",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/C208590F7FF6D53DAD6AC849BCCA25DB",
+        "tabId": "928295BE1257F67E396B5EB58A13574C",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/928295BE1257F67E396B5EB58A13574C",
         "title": ""
       },
       "result": {
@@ -247,8 +247,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
           "engine": "codex-chrome-extension-cdp",
           "port": 9224,
           "targetUrl": "https://www.bever.nl/",
-          "tabId": "C208590F7FF6D53DAD6AC849BCCA25DB",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/C208590F7FF6D53DAD6AC849BCCA25DB",
+          "tabId": "928295BE1257F67E396B5EB58A13574C",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/928295BE1257F67E396B5EB58A13574C",
           "title": ""
         },
         "sendStatus": "approval_pending",
@@ -307,12 +307,12 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     "stderr": "",
     "error": "",
     "visibility": {
-      "updatedAt": "2026-07-03T11:02:51.454Z",
+      "updatedAt": "2026-07-03T12:01:33.527Z",
       "source": "main-refreshDailyAutomationArtifacts",
       "runDate": "2026-07-03",
-      "artifactGeneratedAt": "2026-07-03T11:02:49.954Z",
-      "executionGeneratedAt": "2026-07-03T10:02:16.302Z",
-      "githubSyncUpdatedAt": "2026-07-03T10:02:47.624Z",
+      "artifactGeneratedAt": "2026-07-03T12:01:32.513Z",
+      "executionGeneratedAt": "2026-07-03T11:02:51.849Z",
+      "githubSyncUpdatedAt": "2026-07-03T11:03:38.519Z",
       "counts": {
         "dailyQueue": 6,
         "googleDiscovered": 6,
@@ -358,5 +358,5 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       }
     }
   },
-  "completedAt": "2026-07-03T11:02:51.849Z"
+  "completedAt": "2026-07-03T12:01:33.993Z"
 };
