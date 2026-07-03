@@ -1,16 +1,16 @@
 {
-  "updatedAt": "2026-07-03T12:02:00.287Z",
-  "source": "sync-local-data-to-github-writeSyncStatus",
+  "updatedAt": "2026-07-03T13:02:25.842Z",
+  "source": "main-writeDailyExecutionArtifact",
   "runDate": "2026-07-03",
-  "artifactGeneratedAt": "2026-07-03T12:01:32.513Z",
-  "executionGeneratedAt": "2026-07-03T12:01:33.993Z",
+  "artifactGeneratedAt": "2026-07-03T13:02:23.495Z",
+  "executionGeneratedAt": "2026-07-03T13:02:25.700Z",
   "githubSyncUpdatedAt": "2026-07-03T12:02:00.077Z",
   "counts": {
-    "dailyQueue": 6,
+    "dailyQueue": 7,
     "googleDiscovered": 6,
     "websiteContact": 6,
     "cooldownQueue": 30,
-    "scheduledLater": 1
+    "scheduledLater": 0
   },
   "visibleSections": [
     "workspace",
