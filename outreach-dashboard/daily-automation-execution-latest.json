@@ -3,7 +3,7 @@
   "executionPhase": "browser_execution",
   "chromeStage": "opened",
   "chromeOpened": true,
-  "chromeOpenedCount": 4,
+  "chromeOpenedCount": 3,
   "customerDevelopmentPerformed": false,
   "customerMessageSent": false,
   "realDevelopmentCount": 0,
@@ -30,9 +30,9 @@
         "engine": "codex-chrome-extension-cdp",
         "port": 9224,
         "targetUrl": "https://www.mec.ca/",
-        "tabId": "5926632A6858ADC11B93CEEF2242965E",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/5926632A6858ADC11B93CEEF2242965E",
-        "title": "MEC: Canadian Outdoor Retailer - Shop Camping, Hiking, Climbing, Cycling, Watersports & More"
+        "tabId": "61DCCC40A536F0E536C47DA33AE7B248",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/61DCCC40A536F0E536C47DA33AE7B248",
+        "title": ""
       },
       "result": {
         "ok": false,
@@ -45,9 +45,9 @@
           "engine": "codex-chrome-extension-cdp",
           "port": 9224,
           "targetUrl": "https://www.mec.ca/",
-          "tabId": "5926632A6858ADC11B93CEEF2242965E",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/5926632A6858ADC11B93CEEF2242965E",
-          "title": "MEC: Canadian Outdoor Retailer - Shop Camping, Hiking, Climbing, Cycling, Watersports & More"
+          "tabId": "61DCCC40A536F0E536C47DA33AE7B248",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/61DCCC40A536F0E536C47DA33AE7B248",
+          "title": ""
         },
         "sendStatus": "approval_pending",
         "subject": "Flextail & Vollyc | Lightweight Outdoor & 3C Electronics – Potential Cooperation",
@@ -70,8 +70,8 @@
         "engine": "codex-chrome-extension-cdp",
         "port": 9224,
         "targetUrl": "https://www.decathlon.fr/",
-        "tabId": "5FC36CC53137E4B0EB63B4B9FFECA11D",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/5FC36CC53137E4B0EB63B4B9FFECA11D",
+        "tabId": "B3E60EC4A793F691709278E778D3473D",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/B3E60EC4A793F691709278E778D3473D",
         "title": "Decathlon | Chaussures de sport, équipements et matériel sportif"
       },
       "result": {
@@ -85,8 +85,8 @@
           "engine": "codex-chrome-extension-cdp",
           "port": 9224,
           "targetUrl": "https://www.decathlon.fr/",
-          "tabId": "5FC36CC53137E4B0EB63B4B9FFECA11D",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/5FC36CC53137E4B0EB63B4B9FFECA11D",
+          "tabId": "B3E60EC4A793F691709278E778D3473D",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/B3E60EC4A793F691709278E778D3473D",
           "title": "Decathlon | Chaussures de sport, équipements et matériel sportif"
         },
         "sendStatus": "approval_pending",
@@ -110,9 +110,9 @@
         "engine": "codex-chrome-extension-cdp",
         "port": 9224,
         "targetUrl": "https://www.bever.nl/",
-        "tabId": "E056518EF8A7AE8B9BFB22B37B8F469A",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/E056518EF8A7AE8B9BFB22B37B8F469A",
-        "title": "dé buitenwinkel van Nederland | Bever"
+        "tabId": "FF1820A68331F6DDA19CA50818D89B48",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/FF1820A68331F6DDA19CA50818D89B48",
+        "title": ""
       },
       "result": {
         "ok": false,
@@ -125,9 +125,9 @@
           "engine": "codex-chrome-extension-cdp",
           "port": 9224,
           "targetUrl": "https://www.bever.nl/",
-          "tabId": "E056518EF8A7AE8B9BFB22B37B8F469A",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/E056518EF8A7AE8B9BFB22B37B8F469A",
-          "title": "dé buitenwinkel van Nederland | Bever"
+          "tabId": "FF1820A68331F6DDA19CA50818D89B48",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/FF1820A68331F6DDA19CA50818D89B48",
+          "title": ""
         },
         "sendStatus": "approval_pending",
         "subject": "Flextail & Vollyc | Lightweight Outdoor & 3C Electronics – Potential Cooperation",
@@ -143,37 +143,41 @@
       "platform": "email",
       "targetUrl": "https://www.bcf.com.au/contact-us",
       "ok": false,
-      "sendStatus": "approval_pending",
-      "evidence": "contact_entry_verified;mailto_detected;initial_page_verified;website_contact_form_fields_prepared;marketing_attachment_missing;website_contact_target_attempts:2",
+      "sendStatus": "failed_open",
+      "evidence": "website_page_unavailable_403: 403 ERROR\nThe request could not be satisfied.\nRequest blocked. We can't connect to the server for this app or website at this time. There might be too much traffic or a configurati;website_contact_all_targets_failed:3",
       "chromeOpen": {
-        "ok": true,
+        "ok": false,
         "engine": "codex-chrome-extension-cdp",
         "port": 9224,
-        "targetUrl": "https://www.superretailgroup.com.au/working-with-us/Trade/",
-        "tabId": "89C61A6F7A991AB9D82C8226A10F022C",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/89C61A6F7A991AB9D82C8226A10F022C",
-        "title": ""
+        "targetUrl": "https://www.bcf.com.au/",
+        "tabId": "C84FD9C170348C323F17B273BD3B2062",
+        "title": "ERROR: The request could not be satisfied",
+        "status": "failed_open",
+        "error": "profile_unavailable_or_broken_link",
+        "evidence": "website_page_unavailable_403: 403 ERROR\nThe request could not be satisfied.\nRequest blocked. We can't connect to the server for this app or website at this time. There might be too much traffic or a configurati"
       },
       "result": {
         "ok": false,
         "engine": "codex-chrome-extension-website-contact",
         "browserEngine": "codex-chrome-extension-cdp",
-        "mode": "website_contact_prepare_marketing_file",
-        "targetUrl": "https://www.superretailgroup.com.au/working-with-us/Trade/",
+        "mode": "website_contact_prepare_manual_submit",
+        "targetUrl": "https://www.bcf.com.au/",
         "chromeOpen": {
-          "ok": true,
+          "ok": false,
           "engine": "codex-chrome-extension-cdp",
           "port": 9224,
-          "targetUrl": "https://www.superretailgroup.com.au/working-with-us/Trade/",
-          "tabId": "89C61A6F7A991AB9D82C8226A10F022C",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/89C61A6F7A991AB9D82C8226A10F022C",
-          "title": ""
+          "targetUrl": "https://www.bcf.com.au/",
+          "tabId": "C84FD9C170348C323F17B273BD3B2062",
+          "title": "ERROR: The request could not be satisfied",
+          "status": "failed_open",
+          "error": "profile_unavailable_or_broken_link",
+          "evidence": "website_page_unavailable_403: 403 ERROR\nThe request could not be satisfied.\nRequest blocked. We can't connect to the server for this app or website at this time. There might be too much traffic or a configurati"
         },
-        "sendStatus": "approval_pending",
+        "sendStatus": "failed_open",
         "subject": "Flextail & Vollyc | Lightweight Outdoor & 3C Electronics – Potential Cooperation",
         "draft": "Dear BCF Team,\n\nNice to e-meet you.\nI am Leo, from Flextail & Vollyc.\n\nFlextail is our first and core brand, specializing in ultralight electric products for outdoor, travel, and home use. The brand is currently Top 1 on Amazon, with strong global sell-through and a proven product-market fit.\nVollyc, our second brand, focuses on 3C electronics, targeting practical, high-rotation consumer use cases.\n\nFrom our perspective, your platform and positioning are highly aligned with Flextail’s product philosophy, especially in lightweight outdoor and travel-oriented electrics.\n\nWe have already contacted with your team, and we are now actively exploring opportunities in other regions.\nAttached, you will find a brief introduction to our brands and current product catalog for your reference.\n\nLooking ahead, we are planning to launch over 36 new SKUs in 2026, covering multiple usage scenarios and price tiers, which we believe could be of interest to your assortment strategy.\n\nIf you are available, I would greatly appreciate the opportunity to arrange a short introductory video meeting to present our brands and discuss potential collaboration opportunities.\n\nThank you for your time and consideration. I look forward to your reply.\n\n[Flextail.com](https://www.flextail.com/), [vollyc.com](https://vollyc.com/)\n\n[Sincerely](https://wa.me/8617321028184)\n[Best Regard](https://wa.me/8617321028184)\n[Leo Liu](https://wa.me/8617321028184)\n[Sales](https://wa.me/8617321028184) [& Operations Director](https://wa.me/8617321028184)\n[Brand & ODM Department](https://wa.me/8617321028184)\n[Tel/whatsapp:  +86 17321028184](https://wa.me/8617321028184)\n\n[Email:  Leo@flextailgear.com](https://wa.me/8617321028184)\n[SHANGHAI FLEXTAIL TECHNOLOGY CO.,LTD.](https://wa.me/8617321028184)\n[Room103, Building No.6, No.1 Yanjiaqiao, Pudong District, ShangHai, China](https://wa.me/8617321028184)",
-        "evidence": "contact_entry_verified;mailto_detected;initial_page_verified;website_contact_form_fields_prepared;marketing_attachment_missing",
-        "output": "{\"verdict\":\"approval_pending\",\"evidence\":\"contact_entry_verified;mailto_detected;initial_page_verified;website_contact_form_fields_prepared;marketing_attachment_missing;website_contact_target_attempts:2\",\"nextAction\":\"Configure WEBSITE_MARKETING_FILE or MARKETING_ATTACHMENT_PATH with the approved marketing file, then rerun. The form was not submitted.\",\"subject\":\"Flextail & Vollyc | Lightweight Outdoor & 3C Electronics – Potential Cooperation\",\"draft\":\"Dear BCF Team,\\n\\nNice to e-meet you.\\nI am Leo, from Flextail & Vollyc.\\n\\nFlextail is our first and core brand, specializing in ultralight electric products for outdoor, travel, and home use. The brand is currently Top 1 on Amazon, with strong global sell-through and a proven product-market fit.\\nVollyc, our second brand, focuses on 3C electronics, targeting practical, high-rotation consumer use cases.\\n\\nFrom our perspective, your platform and positioning are highly aligned with Flextail’s product philosophy, especially in lightweight outdoor and travel-oriented electrics.\\n\\nWe have already contacted with your team, and we are now actively exploring opportunities in other regions.\\nAttached, you will find a brief introduction to our brands and current product catalog for your reference.\\n\\nLooking ahead, we are planning to launch over 36 new SKUs in 2026, covering multiple usage scenarios and price tiers, which we believe could be of interest to your assortment strategy.\\n\\nIf you are available, I would greatly appreciate the opportunity to arrange a short introductory video meeting to present our brands and discuss potential collaboration opportunities.\\n\\nThank you for your time and consideration. I look forward to your reply.\\n\\n[Flextail.com](https://www.flextail.com/), [vollyc.com](https://vollyc.com/)\\n\\n[Sincerely](https://wa.me/8617321028184)\\n[Best Regard](https://wa.me/8617321028184)\\n[Leo Liu](https://wa.me/8617321028184)\\n[Sales](https://wa.me/8617321028184) [& Operations Director](https://wa.me/8617321028184)\\n[Brand & ODM Department](https://wa.me/8617321028184)\\n[Tel/whatsapp:  +86 17321028184](https://wa.me/8617321028184)\\n\\n[Email:  Leo@flextailgear.com](https://wa.me/8617321028184)\\n[SHANGHAI FLEXTAIL TECHNOLOGY CO.,LTD.](https://wa.me/8617321028184)\\n[Room103, Building No.6, No.1 Yanjiaqiao, Pudong District, ShangHai, China](https://wa.me/8617321028184)\",\"sendStatus\":\"approval_pending\",\"attempts\":[{\"targetUrl\":\"https://www.bcf.com.au/contact-us\",\"sendStatus\":\"failed_open\",\"evidence\":\"website_page_unavailable_403: 403 ERROR\\nThe request could not be satisfied.\\nRequest blocked. We can't connect to the server for this app or website at this time. There might be too much traffic or a configurati\"},{\"targetUrl\":\"https://www.superretailgroup.com.au/working-with-us/Trade/\",\"sendStatus\":\"approval_pending\",\"evidence\":\"contact_entry_verified;mailto_detected;initial_page_verified;website_contact_form_fields_prepared;marketing_attachment_missing\"}]}"
+        "evidence": "website_page_unavailable_403: 403 ERROR\nThe request could not be satisfied.\nRequest blocked. We can't connect to the server for this app or website at this time. There might be too much traffic or a configurati;website_contact_all_targets_failed:3",
+        "output": "{\"verdict\":\"failed_open\",\"evidence\":\"website_page_unavailable_403: 403 ERROR\\nThe request could not be satisfied.\\nRequest blocked. We can't connect to the server for this app or website at this time. There might be too much traffic or a configurati;website_contact_all_targets_failed:3\",\"subject\":\"Flextail & Vollyc | Lightweight Outdoor & 3C Electronics – Potential Cooperation\",\"draft\":\"Dear BCF Team,\\n\\nNice to e-meet you.\\nI am Leo, from Flextail & Vollyc.\\n\\nFlextail is our first and core brand, specializing in ultralight electric products for outdoor, travel, and home use. The brand is currently Top 1 on Amazon, with strong global sell-through and a proven product-market fit.\\nVollyc, our second brand, focuses on 3C electronics, targeting practical, high-rotation consumer use cases.\\n\\nFrom our perspective, your platform and positioning are highly aligned with Flextail’s product philosophy, especially in lightweight outdoor and travel-oriented electrics.\\n\\nWe have already contacted with your team, and we are now actively exploring opportunities in other regions.\\nAttached, you will find a brief introduction to our brands and current product catalog for your reference.\\n\\nLooking ahead, we are planning to launch over 36 new SKUs in 2026, covering multiple usage scenarios and price tiers, which we believe could be of interest to your assortment strategy.\\n\\nIf you are available, I would greatly appreciate the opportunity to arrange a short introductory video meeting to present our brands and discuss potential collaboration opportunities.\\n\\nThank you for your time and consideration. I look forward to your reply.\\n\\n[Flextail.com](https://www.flextail.com/), [vollyc.com](https://vollyc.com/)\\n\\n[Sincerely](https://wa.me/8617321028184)\\n[Best Regard](https://wa.me/8617321028184)\\n[Leo Liu](https://wa.me/8617321028184)\\n[Sales](https://wa.me/8617321028184) [& Operations Director](https://wa.me/8617321028184)\\n[Brand & ODM Department](https://wa.me/8617321028184)\\n[Tel/whatsapp:  +86 17321028184](https://wa.me/8617321028184)\\n\\n[Email:  Leo@flextailgear.com](https://wa.me/8617321028184)\\n[SHANGHAI FLEXTAIL TECHNOLOGY CO.,LTD.](https://wa.me/8617321028184)\\n[Room103, Building No.6, No.1 Yanjiaqiao, Pudong District, ShangHai, China](https://wa.me/8617321028184)\",\"sendStatus\":\"failed_open\",\"attempts\":[{\"targetUrl\":\"https://www.bcf.com.au/contact-us\",\"sendStatus\":\"failed_open\",\"evidence\":\"website_page_unavailable_403: 403 ERROR\\nThe request could not be satisfied.\\nRequest blocked. We can't connect to the server for this app or website at this time. There might be too much traffic or a configurati\"},{\"targetUrl\":\"https://www.superretailgroup.com.au/working-with-us/Trade/\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control\"},{\"targetUrl\":\"https://www.bcf.com.au/\",\"sendStatus\":\"failed_open\",\"evidence\":\"website_page_unavailable_403: 403 ERROR\\nThe request could not be satisfied.\\nRequest blocked. We can't connect to the server for this app or website at this time. There might be too much traffic or a configurati\"}],\"nextAction\":\"All verified website-contact URL candidates failed or remained unverified. Use a different official channel instead of retrying the same 403/404 page.\"}"
       }
     }
   ],
@@ -192,9 +196,9 @@
         "engine": "codex-chrome-extension-cdp",
         "port": 9224,
         "targetUrl": "https://www.mec.ca/",
-        "tabId": "5926632A6858ADC11B93CEEF2242965E",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/5926632A6858ADC11B93CEEF2242965E",
-        "title": "MEC: Canadian Outdoor Retailer - Shop Camping, Hiking, Climbing, Cycling, Watersports & More"
+        "tabId": "61DCCC40A536F0E536C47DA33AE7B248",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/61DCCC40A536F0E536C47DA33AE7B248",
+        "title": ""
       },
       "result": {
         "ok": false,
@@ -207,9 +211,9 @@
           "engine": "codex-chrome-extension-cdp",
           "port": 9224,
           "targetUrl": "https://www.mec.ca/",
-          "tabId": "5926632A6858ADC11B93CEEF2242965E",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/5926632A6858ADC11B93CEEF2242965E",
-          "title": "MEC: Canadian Outdoor Retailer - Shop Camping, Hiking, Climbing, Cycling, Watersports & More"
+          "tabId": "61DCCC40A536F0E536C47DA33AE7B248",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/61DCCC40A536F0E536C47DA33AE7B248",
+          "title": ""
         },
         "sendStatus": "approval_pending",
         "subject": "Flextail & Vollyc | Lightweight Outdoor & 3C Electronics – Potential Cooperation",
@@ -232,8 +236,8 @@
         "engine": "codex-chrome-extension-cdp",
         "port": 9224,
         "targetUrl": "https://www.decathlon.fr/",
-        "tabId": "5FC36CC53137E4B0EB63B4B9FFECA11D",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/5FC36CC53137E4B0EB63B4B9FFECA11D",
+        "tabId": "B3E60EC4A793F691709278E778D3473D",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/B3E60EC4A793F691709278E778D3473D",
         "title": "Decathlon | Chaussures de sport, équipements et matériel sportif"
       },
       "result": {
@@ -247,8 +251,8 @@
           "engine": "codex-chrome-extension-cdp",
           "port": 9224,
           "targetUrl": "https://www.decathlon.fr/",
-          "tabId": "5FC36CC53137E4B0EB63B4B9FFECA11D",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/5FC36CC53137E4B0EB63B4B9FFECA11D",
+          "tabId": "B3E60EC4A793F691709278E778D3473D",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/B3E60EC4A793F691709278E778D3473D",
           "title": "Decathlon | Chaussures de sport, équipements et matériel sportif"
         },
         "sendStatus": "approval_pending",
@@ -272,9 +276,9 @@
         "engine": "codex-chrome-extension-cdp",
         "port": 9224,
         "targetUrl": "https://www.bever.nl/",
-        "tabId": "E056518EF8A7AE8B9BFB22B37B8F469A",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/E056518EF8A7AE8B9BFB22B37B8F469A",
-        "title": "dé buitenwinkel van Nederland | Bever"
+        "tabId": "FF1820A68331F6DDA19CA50818D89B48",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/FF1820A68331F6DDA19CA50818D89B48",
+        "title": ""
       },
       "result": {
         "ok": false,
@@ -287,9 +291,9 @@
           "engine": "codex-chrome-extension-cdp",
           "port": 9224,
           "targetUrl": "https://www.bever.nl/",
-          "tabId": "E056518EF8A7AE8B9BFB22B37B8F469A",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/E056518EF8A7AE8B9BFB22B37B8F469A",
-          "title": "dé buitenwinkel van Nederland | Bever"
+          "tabId": "FF1820A68331F6DDA19CA50818D89B48",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/FF1820A68331F6DDA19CA50818D89B48",
+          "title": ""
         },
         "sendStatus": "approval_pending",
         "subject": "Flextail & Vollyc | Lightweight Outdoor & 3C Electronics – Potential Cooperation",
@@ -305,37 +309,41 @@
       "platform": "email",
       "targetUrl": "https://www.bcf.com.au/contact-us",
       "ok": false,
-      "sendStatus": "approval_pending",
-      "evidence": "contact_entry_verified;mailto_detected;initial_page_verified;website_contact_form_fields_prepared;marketing_attachment_missing;website_contact_target_attempts:2",
+      "sendStatus": "failed_open",
+      "evidence": "website_page_unavailable_403: 403 ERROR\nThe request could not be satisfied.\nRequest blocked. We can't connect to the server for this app or website at this time. There might be too much traffic or a configurati;website_contact_all_targets_failed:3",
       "chromeOpen": {
-        "ok": true,
+        "ok": false,
         "engine": "codex-chrome-extension-cdp",
         "port": 9224,
-        "targetUrl": "https://www.superretailgroup.com.au/working-with-us/Trade/",
-        "tabId": "89C61A6F7A991AB9D82C8226A10F022C",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/89C61A6F7A991AB9D82C8226A10F022C",
-        "title": ""
+        "targetUrl": "https://www.bcf.com.au/",
+        "tabId": "C84FD9C170348C323F17B273BD3B2062",
+        "title": "ERROR: The request could not be satisfied",
+        "status": "failed_open",
+        "error": "profile_unavailable_or_broken_link",
+        "evidence": "website_page_unavailable_403: 403 ERROR\nThe request could not be satisfied.\nRequest blocked. We can't connect to the server for this app or website at this time. There might be too much traffic or a configurati"
       },
       "result": {
         "ok": false,
         "engine": "codex-chrome-extension-website-contact",
         "browserEngine": "codex-chrome-extension-cdp",
-        "mode": "website_contact_prepare_marketing_file",
-        "targetUrl": "https://www.superretailgroup.com.au/working-with-us/Trade/",
+        "mode": "website_contact_prepare_manual_submit",
+        "targetUrl": "https://www.bcf.com.au/",
         "chromeOpen": {
-          "ok": true,
+          "ok": false,
           "engine": "codex-chrome-extension-cdp",
           "port": 9224,
-          "targetUrl": "https://www.superretailgroup.com.au/working-with-us/Trade/",
-          "tabId": "89C61A6F7A991AB9D82C8226A10F022C",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/89C61A6F7A991AB9D82C8226A10F022C",
-          "title": ""
+          "targetUrl": "https://www.bcf.com.au/",
+          "tabId": "C84FD9C170348C323F17B273BD3B2062",
+          "title": "ERROR: The request could not be satisfied",
+          "status": "failed_open",
+          "error": "profile_unavailable_or_broken_link",
+          "evidence": "website_page_unavailable_403: 403 ERROR\nThe request could not be satisfied.\nRequest blocked. We can't connect to the server for this app or website at this time. There might be too much traffic or a configurati"
         },
-        "sendStatus": "approval_pending",
+        "sendStatus": "failed_open",
         "subject": "Flextail & Vollyc | Lightweight Outdoor & 3C Electronics – Potential Cooperation",
         "draft": "Dear BCF Team,\n\nNice to e-meet you.\nI am Leo, from Flextail & Vollyc.\n\nFlextail is our first and core brand, specializing in ultralight electric products for outdoor, travel, and home use. The brand is currently Top 1 on Amazon, with strong global sell-through and a proven product-market fit.\nVollyc, our second brand, focuses on 3C electronics, targeting practical, high-rotation consumer use cases.\n\nFrom our perspective, your platform and positioning are highly aligned with Flextail’s product philosophy, especially in lightweight outdoor and travel-oriented electrics.\n\nWe have already contacted with your team, and we are now actively exploring opportunities in other regions.\nAttached, you will find a brief introduction to our brands and current product catalog for your reference.\n\nLooking ahead, we are planning to launch over 36 new SKUs in 2026, covering multiple usage scenarios and price tiers, which we believe could be of interest to your assortment strategy.\n\nIf you are available, I would greatly appreciate the opportunity to arrange a short introductory video meeting to present our brands and discuss potential collaboration opportunities.\n\nThank you for your time and consideration. I look forward to your reply.\n\n[Flextail.com](https://www.flextail.com/), [vollyc.com](https://vollyc.com/)\n\n[Sincerely](https://wa.me/8617321028184)\n[Best Regard](https://wa.me/8617321028184)\n[Leo Liu](https://wa.me/8617321028184)\n[Sales](https://wa.me/8617321028184) [& Operations Director](https://wa.me/8617321028184)\n[Brand & ODM Department](https://wa.me/8617321028184)\n[Tel/whatsapp:  +86 17321028184](https://wa.me/8617321028184)\n\n[Email:  Leo@flextailgear.com](https://wa.me/8617321028184)\n[SHANGHAI FLEXTAIL TECHNOLOGY CO.,LTD.](https://wa.me/8617321028184)\n[Room103, Building No.6, No.1 Yanjiaqiao, Pudong District, ShangHai, China](https://wa.me/8617321028184)",
-        "evidence": "contact_entry_verified;mailto_detected;initial_page_verified;website_contact_form_fields_prepared;marketing_attachment_missing",
-        "output": "{\"verdict\":\"approval_pending\",\"evidence\":\"contact_entry_verified;mailto_detected;initial_page_verified;website_contact_form_fields_prepared;marketing_attachment_missing;website_contact_target_attempts:2\",\"nextAction\":\"Configure WEBSITE_MARKETING_FILE or MARKETING_ATTACHMENT_PATH with the approved marketing file, then rerun. The form was not submitted.\",\"subject\":\"Flextail & Vollyc | Lightweight Outdoor & 3C Electronics – Potential Cooperation\",\"draft\":\"Dear BCF Team,\\n\\nNice to e-meet you.\\nI am Leo, from Flextail & Vollyc.\\n\\nFlextail is our first and core brand, specializing in ultralight electric products for outdoor, travel, and home use. The brand is currently Top 1 on Amazon, with strong global sell-through and a proven product-market fit.\\nVollyc, our second brand, focuses on 3C electronics, targeting practical, high-rotation consumer use cases.\\n\\nFrom our perspective, your platform and positioning are highly aligned with Flextail’s product philosophy, especially in lightweight outdoor and travel-oriented electrics.\\n\\nWe have already contacted with your team, and we are now actively exploring opportunities in other regions.\\nAttached, you will find a brief introduction to our brands and current product catalog for your reference.\\n\\nLooking ahead, we are planning to launch over 36 new SKUs in 2026, covering multiple usage scenarios and price tiers, which we believe could be of interest to your assortment strategy.\\n\\nIf you are available, I would greatly appreciate the opportunity to arrange a short introductory video meeting to present our brands and discuss potential collaboration opportunities.\\n\\nThank you for your time and consideration. I look forward to your reply.\\n\\n[Flextail.com](https://www.flextail.com/), [vollyc.com](https://vollyc.com/)\\n\\n[Sincerely](https://wa.me/8617321028184)\\n[Best Regard](https://wa.me/8617321028184)\\n[Leo Liu](https://wa.me/8617321028184)\\n[Sales](https://wa.me/8617321028184) [& Operations Director](https://wa.me/8617321028184)\\n[Brand & ODM Department](https://wa.me/8617321028184)\\n[Tel/whatsapp:  +86 17321028184](https://wa.me/8617321028184)\\n\\n[Email:  Leo@flextailgear.com](https://wa.me/8617321028184)\\n[SHANGHAI FLEXTAIL TECHNOLOGY CO.,LTD.](https://wa.me/8617321028184)\\n[Room103, Building No.6, No.1 Yanjiaqiao, Pudong District, ShangHai, China](https://wa.me/8617321028184)\",\"sendStatus\":\"approval_pending\",\"attempts\":[{\"targetUrl\":\"https://www.bcf.com.au/contact-us\",\"sendStatus\":\"failed_open\",\"evidence\":\"website_page_unavailable_403: 403 ERROR\\nThe request could not be satisfied.\\nRequest blocked. We can't connect to the server for this app or website at this time. There might be too much traffic or a configurati\"},{\"targetUrl\":\"https://www.superretailgroup.com.au/working-with-us/Trade/\",\"sendStatus\":\"approval_pending\",\"evidence\":\"contact_entry_verified;mailto_detected;initial_page_verified;website_contact_form_fields_prepared;marketing_attachment_missing\"}]}"
+        "evidence": "website_page_unavailable_403: 403 ERROR\nThe request could not be satisfied.\nRequest blocked. We can't connect to the server for this app or website at this time. There might be too much traffic or a configurati;website_contact_all_targets_failed:3",
+        "output": "{\"verdict\":\"failed_open\",\"evidence\":\"website_page_unavailable_403: 403 ERROR\\nThe request could not be satisfied.\\nRequest blocked. We can't connect to the server for this app or website at this time. There might be too much traffic or a configurati;website_contact_all_targets_failed:3\",\"subject\":\"Flextail & Vollyc | Lightweight Outdoor & 3C Electronics – Potential Cooperation\",\"draft\":\"Dear BCF Team,\\n\\nNice to e-meet you.\\nI am Leo, from Flextail & Vollyc.\\n\\nFlextail is our first and core brand, specializing in ultralight electric products for outdoor, travel, and home use. The brand is currently Top 1 on Amazon, with strong global sell-through and a proven product-market fit.\\nVollyc, our second brand, focuses on 3C electronics, targeting practical, high-rotation consumer use cases.\\n\\nFrom our perspective, your platform and positioning are highly aligned with Flextail’s product philosophy, especially in lightweight outdoor and travel-oriented electrics.\\n\\nWe have already contacted with your team, and we are now actively exploring opportunities in other regions.\\nAttached, you will find a brief introduction to our brands and current product catalog for your reference.\\n\\nLooking ahead, we are planning to launch over 36 new SKUs in 2026, covering multiple usage scenarios and price tiers, which we believe could be of interest to your assortment strategy.\\n\\nIf you are available, I would greatly appreciate the opportunity to arrange a short introductory video meeting to present our brands and discuss potential collaboration opportunities.\\n\\nThank you for your time and consideration. I look forward to your reply.\\n\\n[Flextail.com](https://www.flextail.com/), [vollyc.com](https://vollyc.com/)\\n\\n[Sincerely](https://wa.me/8617321028184)\\n[Best Regard](https://wa.me/8617321028184)\\n[Leo Liu](https://wa.me/8617321028184)\\n[Sales](https://wa.me/8617321028184) [& Operations Director](https://wa.me/8617321028184)\\n[Brand & ODM Department](https://wa.me/8617321028184)\\n[Tel/whatsapp:  +86 17321028184](https://wa.me/8617321028184)\\n\\n[Email:  Leo@flextailgear.com](https://wa.me/8617321028184)\\n[SHANGHAI FLEXTAIL TECHNOLOGY CO.,LTD.](https://wa.me/8617321028184)\\n[Room103, Building No.6, No.1 Yanjiaqiao, Pudong District, ShangHai, China](https://wa.me/8617321028184)\",\"sendStatus\":\"failed_open\",\"attempts\":[{\"targetUrl\":\"https://www.bcf.com.au/contact-us\",\"sendStatus\":\"failed_open\",\"evidence\":\"website_page_unavailable_403: 403 ERROR\\nThe request could not be satisfied.\\nRequest blocked. We can't connect to the server for this app or website at this time. There might be too much traffic or a configurati\"},{\"targetUrl\":\"https://www.superretailgroup.com.au/working-with-us/Trade/\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control\"},{\"targetUrl\":\"https://www.bcf.com.au/\",\"sendStatus\":\"failed_open\",\"evidence\":\"website_page_unavailable_403: 403 ERROR\\nThe request could not be satisfied.\\nRequest blocked. We can't connect to the server for this app or website at this time. There might be too much traffic or a configurati\"}],\"nextAction\":\"All verified website-contact URL candidates failed or remained unverified. Use a different official channel instead of retrying the same 403/404 page.\"}"
       }
     }
   ],
@@ -381,12 +389,12 @@
     "stderr": "",
     "error": "",
     "visibility": {
-      "updatedAt": "2026-07-03T06:02:29.634Z",
+      "updatedAt": "2026-07-03T07:04:04.608Z",
       "source": "main-refreshDailyAutomationArtifacts",
       "runDate": "2026-07-03",
-      "artifactGeneratedAt": "2026-07-03T06:02:28.347Z",
-      "executionGeneratedAt": "2026-07-03T05:03:25.237Z",
-      "githubSyncUpdatedAt": "2026-07-03T05:04:05.937Z",
+      "artifactGeneratedAt": "2026-07-03T07:04:03.187Z",
+      "executionGeneratedAt": "2026-07-03T06:02:30.082Z",
+      "githubSyncUpdatedAt": "2026-07-03T06:03:07.342Z",
       "counts": {
         "dailyQueue": 6,
         "googleDiscovered": 6,
@@ -432,5 +440,5 @@
       }
     }
   },
-  "completedAt": "2026-07-03T06:02:30.082Z"
+  "completedAt": "2026-07-03T07:04:05.051Z"
 }
