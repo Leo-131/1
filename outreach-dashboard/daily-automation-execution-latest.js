@@ -30,8 +30,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
         "engine": "codex-chrome-extension-cdp",
         "port": 9224,
         "targetUrl": "https://www.mec.ca/",
-        "tabId": "BE1708CC93A96E0BA2903F39715DD69F",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/BE1708CC93A96E0BA2903F39715DD69F",
+        "tabId": "3892E91F1FB0BD7D0FD7D23E35531326",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/3892E91F1FB0BD7D0FD7D23E35531326",
         "title": "MEC: Canadian Outdoor Retailer - Shop Camping, Hiking, Climbing, Cycling, Watersports & More"
       },
       "result": {
@@ -45,8 +45,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
           "engine": "codex-chrome-extension-cdp",
           "port": 9224,
           "targetUrl": "https://www.mec.ca/",
-          "tabId": "BE1708CC93A96E0BA2903F39715DD69F",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/BE1708CC93A96E0BA2903F39715DD69F",
+          "tabId": "3892E91F1FB0BD7D0FD7D23E35531326",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/3892E91F1FB0BD7D0FD7D23E35531326",
           "title": "MEC: Canadian Outdoor Retailer - Shop Camping, Hiking, Climbing, Cycling, Watersports & More"
         },
         "sendStatus": "approval_pending",
@@ -70,8 +70,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
         "engine": "codex-chrome-extension-cdp",
         "port": 9224,
         "targetUrl": "https://www.decathlon.fr/",
-        "tabId": "E8BB9989F6FD4D8EDF0337F4C0961F36",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/E8BB9989F6FD4D8EDF0337F4C0961F36",
+        "tabId": "D0BB363DE27037202869AA4223949FF9",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/D0BB363DE27037202869AA4223949FF9",
         "title": "Decathlon | Chaussures de sport, équipements et matériel sportif"
       },
       "result": {
@@ -85,8 +85,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
           "engine": "codex-chrome-extension-cdp",
           "port": 9224,
           "targetUrl": "https://www.decathlon.fr/",
-          "tabId": "E8BB9989F6FD4D8EDF0337F4C0961F36",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/E8BB9989F6FD4D8EDF0337F4C0961F36",
+          "tabId": "D0BB363DE27037202869AA4223949FF9",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/D0BB363DE27037202869AA4223949FF9",
           "title": "Decathlon | Chaussures de sport, équipements et matériel sportif"
         },
         "sendStatus": "approval_pending",
@@ -110,9 +110,9 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
         "engine": "codex-chrome-extension-cdp",
         "port": 9224,
         "targetUrl": "https://www.bever.nl/",
-        "tabId": "9A7B9480E946F60E28C4870FE284148B",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/9A7B9480E946F60E28C4870FE284148B",
-        "title": "dé buitenwinkel van Nederland | Bever"
+        "tabId": "358995F5FE4DC3AF466965DE9B163B68",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/358995F5FE4DC3AF466965DE9B163B68",
+        "title": ""
       },
       "result": {
         "ok": false,
@@ -125,9 +125,9 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
           "engine": "codex-chrome-extension-cdp",
           "port": 9224,
           "targetUrl": "https://www.bever.nl/",
-          "tabId": "9A7B9480E946F60E28C4870FE284148B",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/9A7B9480E946F60E28C4870FE284148B",
-          "title": "dé buitenwinkel van Nederland | Bever"
+          "tabId": "358995F5FE4DC3AF466965DE9B163B68",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/358995F5FE4DC3AF466965DE9B163B68",
+          "title": ""
         },
         "sendStatus": "approval_pending",
         "subject": "Flextail & Vollyc | Lightweight Outdoor & 3C Electronics – Potential Cooperation",
@@ -150,8 +150,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
         "engine": "codex-chrome-extension-cdp",
         "port": 9224,
         "targetUrl": "https://www.gooutdoors.co.uk/contact-us",
-        "tabId": "595B42E7BCD4621253E5FBD9103E7E99",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/595B42E7BCD4621253E5FBD9103E7E99",
+        "tabId": "A37770EFCB87201921864ECCFD305725",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/A37770EFCB87201921864ECCFD305725",
         "title": "Contact Us – GO Outdoors"
       },
       "result": {
@@ -165,8 +165,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
           "engine": "codex-chrome-extension-cdp",
           "port": 9224,
           "targetUrl": "https://www.gooutdoors.co.uk/contact-us",
-          "tabId": "595B42E7BCD4621253E5FBD9103E7E99",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/595B42E7BCD4621253E5FBD9103E7E99",
+          "tabId": "A37770EFCB87201921864ECCFD305725",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/A37770EFCB87201921864ECCFD305725",
           "title": "Contact Us – GO Outdoors"
         },
         "sendStatus": "approval_pending",
@@ -190,8 +190,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
         "engine": "codex-chrome-extension-cdp",
         "port": 9224,
         "targetUrl": "https://www.sail.ca/en/contact-us",
-        "tabId": "4F7CAE13CCEC1A76DD0969619412BD9D",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/4F7CAE13CCEC1A76DD0969619412BD9D",
+        "tabId": "EA626412CF7D7BBCDDE9C84B2E897B69",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/EA626412CF7D7BBCDDE9C84B2E897B69",
         "title": "SAIL | Need Help - Contact Us | SAIL"
       },
       "result": {
@@ -205,8 +205,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
           "engine": "codex-chrome-extension-cdp",
           "port": 9224,
           "targetUrl": "https://www.sail.ca/en/contact-us",
-          "tabId": "4F7CAE13CCEC1A76DD0969619412BD9D",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/4F7CAE13CCEC1A76DD0969619412BD9D",
+          "tabId": "EA626412CF7D7BBCDDE9C84B2E897B69",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/EA626412CF7D7BBCDDE9C84B2E897B69",
           "title": "SAIL | Need Help - Contact Us | SAIL"
         },
         "sendStatus": "approval_pending",
@@ -230,9 +230,9 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
         "engine": "codex-chrome-extension-cdp",
         "port": 9224,
         "targetUrl": "https://help.kathmanduoutdoor.com/support/solutions/articles/51000414624-sales-team-contact-details",
-        "tabId": "419A32F5B12D69C340882EC88EE187D1",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/419A32F5B12D69C340882EC88EE187D1",
-        "title": "Sales Team contact details : Help Centre United States"
+        "tabId": "1F0C5D8FA088FC3590C2DE24902DD8F5",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/1F0C5D8FA088FC3590C2DE24902DD8F5",
+        "title": ""
       },
       "result": {
         "ok": false,
@@ -245,9 +245,9 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
           "engine": "codex-chrome-extension-cdp",
           "port": 9224,
           "targetUrl": "https://help.kathmanduoutdoor.com/support/solutions/articles/51000414624-sales-team-contact-details",
-          "tabId": "419A32F5B12D69C340882EC88EE187D1",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/419A32F5B12D69C340882EC88EE187D1",
-          "title": "Sales Team contact details : Help Centre United States"
+          "tabId": "1F0C5D8FA088FC3590C2DE24902DD8F5",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/1F0C5D8FA088FC3590C2DE24902DD8F5",
+          "title": ""
         },
         "sendStatus": "approval_pending",
         "subject": "Flextail & Vollyc | Lightweight Outdoor & 3C Electronics – Potential Cooperation",
@@ -272,8 +272,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
         "engine": "codex-chrome-extension-cdp",
         "port": 9224,
         "targetUrl": "https://www.mec.ca/",
-        "tabId": "BE1708CC93A96E0BA2903F39715DD69F",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/BE1708CC93A96E0BA2903F39715DD69F",
+        "tabId": "3892E91F1FB0BD7D0FD7D23E35531326",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/3892E91F1FB0BD7D0FD7D23E35531326",
         "title": "MEC: Canadian Outdoor Retailer - Shop Camping, Hiking, Climbing, Cycling, Watersports & More"
       },
       "result": {
@@ -287,8 +287,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
           "engine": "codex-chrome-extension-cdp",
           "port": 9224,
           "targetUrl": "https://www.mec.ca/",
-          "tabId": "BE1708CC93A96E0BA2903F39715DD69F",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/BE1708CC93A96E0BA2903F39715DD69F",
+          "tabId": "3892E91F1FB0BD7D0FD7D23E35531326",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/3892E91F1FB0BD7D0FD7D23E35531326",
           "title": "MEC: Canadian Outdoor Retailer - Shop Camping, Hiking, Climbing, Cycling, Watersports & More"
         },
         "sendStatus": "approval_pending",
@@ -312,8 +312,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
         "engine": "codex-chrome-extension-cdp",
         "port": 9224,
         "targetUrl": "https://www.decathlon.fr/",
-        "tabId": "E8BB9989F6FD4D8EDF0337F4C0961F36",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/E8BB9989F6FD4D8EDF0337F4C0961F36",
+        "tabId": "D0BB363DE27037202869AA4223949FF9",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/D0BB363DE27037202869AA4223949FF9",
         "title": "Decathlon | Chaussures de sport, équipements et matériel sportif"
       },
       "result": {
@@ -327,8 +327,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
           "engine": "codex-chrome-extension-cdp",
           "port": 9224,
           "targetUrl": "https://www.decathlon.fr/",
-          "tabId": "E8BB9989F6FD4D8EDF0337F4C0961F36",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/E8BB9989F6FD4D8EDF0337F4C0961F36",
+          "tabId": "D0BB363DE27037202869AA4223949FF9",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/D0BB363DE27037202869AA4223949FF9",
           "title": "Decathlon | Chaussures de sport, équipements et matériel sportif"
         },
         "sendStatus": "approval_pending",
@@ -352,9 +352,9 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
         "engine": "codex-chrome-extension-cdp",
         "port": 9224,
         "targetUrl": "https://www.bever.nl/",
-        "tabId": "9A7B9480E946F60E28C4870FE284148B",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/9A7B9480E946F60E28C4870FE284148B",
-        "title": "dé buitenwinkel van Nederland | Bever"
+        "tabId": "358995F5FE4DC3AF466965DE9B163B68",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/358995F5FE4DC3AF466965DE9B163B68",
+        "title": ""
       },
       "result": {
         "ok": false,
@@ -367,9 +367,9 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
           "engine": "codex-chrome-extension-cdp",
           "port": 9224,
           "targetUrl": "https://www.bever.nl/",
-          "tabId": "9A7B9480E946F60E28C4870FE284148B",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/9A7B9480E946F60E28C4870FE284148B",
-          "title": "dé buitenwinkel van Nederland | Bever"
+          "tabId": "358995F5FE4DC3AF466965DE9B163B68",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/358995F5FE4DC3AF466965DE9B163B68",
+          "title": ""
         },
         "sendStatus": "approval_pending",
         "subject": "Flextail & Vollyc | Lightweight Outdoor & 3C Electronics – Potential Cooperation",
@@ -392,8 +392,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
         "engine": "codex-chrome-extension-cdp",
         "port": 9224,
         "targetUrl": "https://www.gooutdoors.co.uk/contact-us",
-        "tabId": "595B42E7BCD4621253E5FBD9103E7E99",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/595B42E7BCD4621253E5FBD9103E7E99",
+        "tabId": "A37770EFCB87201921864ECCFD305725",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/A37770EFCB87201921864ECCFD305725",
         "title": "Contact Us – GO Outdoors"
       },
       "result": {
@@ -407,8 +407,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
           "engine": "codex-chrome-extension-cdp",
           "port": 9224,
           "targetUrl": "https://www.gooutdoors.co.uk/contact-us",
-          "tabId": "595B42E7BCD4621253E5FBD9103E7E99",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/595B42E7BCD4621253E5FBD9103E7E99",
+          "tabId": "A37770EFCB87201921864ECCFD305725",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/A37770EFCB87201921864ECCFD305725",
           "title": "Contact Us – GO Outdoors"
         },
         "sendStatus": "approval_pending",
@@ -432,8 +432,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
         "engine": "codex-chrome-extension-cdp",
         "port": 9224,
         "targetUrl": "https://www.sail.ca/en/contact-us",
-        "tabId": "4F7CAE13CCEC1A76DD0969619412BD9D",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/4F7CAE13CCEC1A76DD0969619412BD9D",
+        "tabId": "EA626412CF7D7BBCDDE9C84B2E897B69",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/EA626412CF7D7BBCDDE9C84B2E897B69",
         "title": "SAIL | Need Help - Contact Us | SAIL"
       },
       "result": {
@@ -447,8 +447,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
           "engine": "codex-chrome-extension-cdp",
           "port": 9224,
           "targetUrl": "https://www.sail.ca/en/contact-us",
-          "tabId": "4F7CAE13CCEC1A76DD0969619412BD9D",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/4F7CAE13CCEC1A76DD0969619412BD9D",
+          "tabId": "EA626412CF7D7BBCDDE9C84B2E897B69",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/EA626412CF7D7BBCDDE9C84B2E897B69",
           "title": "SAIL | Need Help - Contact Us | SAIL"
         },
         "sendStatus": "approval_pending",
@@ -472,9 +472,9 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
         "engine": "codex-chrome-extension-cdp",
         "port": 9224,
         "targetUrl": "https://help.kathmanduoutdoor.com/support/solutions/articles/51000414624-sales-team-contact-details",
-        "tabId": "419A32F5B12D69C340882EC88EE187D1",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/419A32F5B12D69C340882EC88EE187D1",
-        "title": "Sales Team contact details : Help Centre United States"
+        "tabId": "1F0C5D8FA088FC3590C2DE24902DD8F5",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/1F0C5D8FA088FC3590C2DE24902DD8F5",
+        "title": ""
       },
       "result": {
         "ok": false,
@@ -487,9 +487,9 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
           "engine": "codex-chrome-extension-cdp",
           "port": 9224,
           "targetUrl": "https://help.kathmanduoutdoor.com/support/solutions/articles/51000414624-sales-team-contact-details",
-          "tabId": "419A32F5B12D69C340882EC88EE187D1",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/419A32F5B12D69C340882EC88EE187D1",
-          "title": "Sales Team contact details : Help Centre United States"
+          "tabId": "1F0C5D8FA088FC3590C2DE24902DD8F5",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/1F0C5D8FA088FC3590C2DE24902DD8F5",
+          "title": ""
         },
         "sendStatus": "approval_pending",
         "subject": "Flextail & Vollyc | Lightweight Outdoor & 3C Electronics – Potential Cooperation",
@@ -553,12 +553,12 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     "stderr": "",
     "error": "",
     "visibility": {
-      "updatedAt": "2026-07-03T19:04:29.554Z",
+      "updatedAt": "2026-07-03T20:03:42.640Z",
       "source": "main-refreshDailyAutomationArtifacts",
       "runDate": "2026-07-03",
-      "artifactGeneratedAt": "2026-07-03T19:04:28.139Z",
-      "executionGeneratedAt": "2026-07-03T18:02:47.196Z",
-      "githubSyncUpdatedAt": "2026-07-03T18:03:09.420Z",
+      "artifactGeneratedAt": "2026-07-03T20:03:41.465Z",
+      "executionGeneratedAt": "2026-07-03T19:04:29.979Z",
+      "githubSyncUpdatedAt": "2026-07-03T19:05:03.218Z",
       "counts": {
         "dailyQueue": 11,
         "googleDiscovered": 10,
@@ -604,5 +604,5 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       }
     }
   },
-  "completedAt": "2026-07-03T19:04:29.979Z"
+  "completedAt": "2026-07-03T20:03:43.081Z"
 };
