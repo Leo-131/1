@@ -30,8 +30,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
         "engine": "codex-chrome-extension-cdp",
         "port": 9224,
         "targetUrl": "https://www.mec.ca/",
-        "tabId": "45EFE108014440BF03285DEE060DAA85",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/45EFE108014440BF03285DEE060DAA85",
+        "tabId": "59F9367572126E598EB3899317A7FFF0",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/59F9367572126E598EB3899317A7FFF0",
         "title": "MEC: Canadian Outdoor Retailer - Shop Camping, Hiking, Climbing, Cycling, Watersports & More"
       },
       "result": {
@@ -45,8 +45,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
           "engine": "codex-chrome-extension-cdp",
           "port": 9224,
           "targetUrl": "https://www.mec.ca/",
-          "tabId": "45EFE108014440BF03285DEE060DAA85",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/45EFE108014440BF03285DEE060DAA85",
+          "tabId": "59F9367572126E598EB3899317A7FFF0",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/59F9367572126E598EB3899317A7FFF0",
           "title": "MEC: Canadian Outdoor Retailer - Shop Camping, Hiking, Climbing, Cycling, Watersports & More"
         },
         "sendStatus": "approval_pending",
@@ -70,8 +70,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
         "engine": "codex-chrome-extension-cdp",
         "port": 9224,
         "targetUrl": "https://www.decathlon.fr/",
-        "tabId": "E2514F5EE77FF2C29B4629B1AA4A1D89",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/E2514F5EE77FF2C29B4629B1AA4A1D89",
+        "tabId": "6C722F8E1E60AC4B5B5CE106CB686FC1",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/6C722F8E1E60AC4B5B5CE106CB686FC1",
         "title": "Decathlon | Chaussures de sport, équipements et matériel sportif"
       },
       "result": {
@@ -85,8 +85,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
           "engine": "codex-chrome-extension-cdp",
           "port": 9224,
           "targetUrl": "https://www.decathlon.fr/",
-          "tabId": "E2514F5EE77FF2C29B4629B1AA4A1D89",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/E2514F5EE77FF2C29B4629B1AA4A1D89",
+          "tabId": "6C722F8E1E60AC4B5B5CE106CB686FC1",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/6C722F8E1E60AC4B5B5CE106CB686FC1",
           "title": "Decathlon | Chaussures de sport, équipements et matériel sportif"
         },
         "sendStatus": "approval_pending",
@@ -110,8 +110,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
         "engine": "codex-chrome-extension-cdp",
         "port": 9224,
         "targetUrl": "https://www.bever.nl/",
-        "tabId": "8B6A20E14D228B22593E78EB1A9ED93C",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/8B6A20E14D228B22593E78EB1A9ED93C",
+        "tabId": "247A86D50B2D989702B5011AD26CCF61",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/247A86D50B2D989702B5011AD26CCF61",
         "title": "dé buitenwinkel van Nederland | Bever"
       },
       "result": {
@@ -125,8 +125,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
           "engine": "codex-chrome-extension-cdp",
           "port": 9224,
           "targetUrl": "https://www.bever.nl/",
-          "tabId": "8B6A20E14D228B22593E78EB1A9ED93C",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/8B6A20E14D228B22593E78EB1A9ED93C",
+          "tabId": "247A86D50B2D989702B5011AD26CCF61",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/247A86D50B2D989702B5011AD26CCF61",
           "title": "dé buitenwinkel van Nederland | Bever"
         },
         "sendStatus": "approval_pending",
@@ -150,9 +150,9 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
         "engine": "codex-chrome-extension-cdp",
         "port": 9224,
         "targetUrl": "https://www.superretailgroup.com.au/working-with-us/Trade/",
-        "tabId": "9362DD27FC1FF2D496C870C58E735B3E",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/9362DD27FC1FF2D496C870C58E735B3E",
-        "title": ""
+        "tabId": "CB937CA22261285C57A25F0FDD3DA2D0",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/CB937CA22261285C57A25F0FDD3DA2D0",
+        "title": "Trade Partner Info - Super Retail Group"
       },
       "result": {
         "ok": false,
@@ -165,9 +165,9 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
           "engine": "codex-chrome-extension-cdp",
           "port": 9224,
           "targetUrl": "https://www.superretailgroup.com.au/working-with-us/Trade/",
-          "tabId": "9362DD27FC1FF2D496C870C58E735B3E",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/9362DD27FC1FF2D496C870C58E735B3E",
-          "title": ""
+          "tabId": "CB937CA22261285C57A25F0FDD3DA2D0",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/CB937CA22261285C57A25F0FDD3DA2D0",
+          "title": "Trade Partner Info - Super Retail Group"
         },
         "sendStatus": "approval_pending",
         "subject": "Flextail & Vollyc | Lightweight Outdoor & 3C Electronics – Potential Cooperation",
@@ -192,8 +192,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
         "engine": "codex-chrome-extension-cdp",
         "port": 9224,
         "targetUrl": "https://www.mec.ca/",
-        "tabId": "45EFE108014440BF03285DEE060DAA85",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/45EFE108014440BF03285DEE060DAA85",
+        "tabId": "59F9367572126E598EB3899317A7FFF0",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/59F9367572126E598EB3899317A7FFF0",
         "title": "MEC: Canadian Outdoor Retailer - Shop Camping, Hiking, Climbing, Cycling, Watersports & More"
       },
       "result": {
@@ -207,8 +207,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
           "engine": "codex-chrome-extension-cdp",
           "port": 9224,
           "targetUrl": "https://www.mec.ca/",
-          "tabId": "45EFE108014440BF03285DEE060DAA85",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/45EFE108014440BF03285DEE060DAA85",
+          "tabId": "59F9367572126E598EB3899317A7FFF0",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/59F9367572126E598EB3899317A7FFF0",
           "title": "MEC: Canadian Outdoor Retailer - Shop Camping, Hiking, Climbing, Cycling, Watersports & More"
         },
         "sendStatus": "approval_pending",
@@ -232,8 +232,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
         "engine": "codex-chrome-extension-cdp",
         "port": 9224,
         "targetUrl": "https://www.decathlon.fr/",
-        "tabId": "E2514F5EE77FF2C29B4629B1AA4A1D89",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/E2514F5EE77FF2C29B4629B1AA4A1D89",
+        "tabId": "6C722F8E1E60AC4B5B5CE106CB686FC1",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/6C722F8E1E60AC4B5B5CE106CB686FC1",
         "title": "Decathlon | Chaussures de sport, équipements et matériel sportif"
       },
       "result": {
@@ -247,8 +247,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
           "engine": "codex-chrome-extension-cdp",
           "port": 9224,
           "targetUrl": "https://www.decathlon.fr/",
-          "tabId": "E2514F5EE77FF2C29B4629B1AA4A1D89",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/E2514F5EE77FF2C29B4629B1AA4A1D89",
+          "tabId": "6C722F8E1E60AC4B5B5CE106CB686FC1",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/6C722F8E1E60AC4B5B5CE106CB686FC1",
           "title": "Decathlon | Chaussures de sport, équipements et matériel sportif"
         },
         "sendStatus": "approval_pending",
@@ -272,8 +272,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
         "engine": "codex-chrome-extension-cdp",
         "port": 9224,
         "targetUrl": "https://www.bever.nl/",
-        "tabId": "8B6A20E14D228B22593E78EB1A9ED93C",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/8B6A20E14D228B22593E78EB1A9ED93C",
+        "tabId": "247A86D50B2D989702B5011AD26CCF61",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/247A86D50B2D989702B5011AD26CCF61",
         "title": "dé buitenwinkel van Nederland | Bever"
       },
       "result": {
@@ -287,8 +287,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
           "engine": "codex-chrome-extension-cdp",
           "port": 9224,
           "targetUrl": "https://www.bever.nl/",
-          "tabId": "8B6A20E14D228B22593E78EB1A9ED93C",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/8B6A20E14D228B22593E78EB1A9ED93C",
+          "tabId": "247A86D50B2D989702B5011AD26CCF61",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/247A86D50B2D989702B5011AD26CCF61",
           "title": "dé buitenwinkel van Nederland | Bever"
         },
         "sendStatus": "approval_pending",
@@ -312,9 +312,9 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
         "engine": "codex-chrome-extension-cdp",
         "port": 9224,
         "targetUrl": "https://www.superretailgroup.com.au/working-with-us/Trade/",
-        "tabId": "9362DD27FC1FF2D496C870C58E735B3E",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/9362DD27FC1FF2D496C870C58E735B3E",
-        "title": ""
+        "tabId": "CB937CA22261285C57A25F0FDD3DA2D0",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/CB937CA22261285C57A25F0FDD3DA2D0",
+        "title": "Trade Partner Info - Super Retail Group"
       },
       "result": {
         "ok": false,
@@ -327,9 +327,9 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
           "engine": "codex-chrome-extension-cdp",
           "port": 9224,
           "targetUrl": "https://www.superretailgroup.com.au/working-with-us/Trade/",
-          "tabId": "9362DD27FC1FF2D496C870C58E735B3E",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/9362DD27FC1FF2D496C870C58E735B3E",
-          "title": ""
+          "tabId": "CB937CA22261285C57A25F0FDD3DA2D0",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/CB937CA22261285C57A25F0FDD3DA2D0",
+          "title": "Trade Partner Info - Super Retail Group"
         },
         "sendStatus": "approval_pending",
         "subject": "Flextail & Vollyc | Lightweight Outdoor & 3C Electronics – Potential Cooperation",
@@ -381,12 +381,12 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     "stderr": "",
     "error": "",
     "visibility": {
-      "updatedAt": "2026-07-03T01:06:00.168Z",
+      "updatedAt": "2026-07-03T02:02:56.345Z",
       "source": "main-refreshDailyAutomationArtifacts",
       "runDate": "2026-07-03",
-      "artifactGeneratedAt": "2026-07-03T01:05:58.876Z",
-      "executionGeneratedAt": "2026-07-03T01:02:35.390Z",
-      "githubSyncUpdatedAt": "2026-07-03T01:03:20.625Z",
+      "artifactGeneratedAt": "2026-07-03T02:02:55.271Z",
+      "executionGeneratedAt": "2026-07-03T01:06:00.810Z",
+      "githubSyncUpdatedAt": "2026-07-03T01:06:18.476Z",
       "counts": {
         "dailyQueue": 6,
         "googleDiscovered": 6,
@@ -432,5 +432,5 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       }
     }
   },
-  "completedAt": "2026-07-03T01:06:00.810Z"
+  "completedAt": "2026-07-03T02:02:56.771Z"
 };
