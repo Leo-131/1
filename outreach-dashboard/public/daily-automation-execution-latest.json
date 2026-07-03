@@ -30,8 +30,8 @@
         "engine": "codex-chrome-extension-cdp",
         "port": 9224,
         "targetUrl": "https://www.mec.ca/",
-        "tabId": "2279A6828DD43AD2C8A3DD7BB89FEEC9",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/2279A6828DD43AD2C8A3DD7BB89FEEC9",
+        "tabId": "BE1708CC93A96E0BA2903F39715DD69F",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/BE1708CC93A96E0BA2903F39715DD69F",
         "title": "MEC: Canadian Outdoor Retailer - Shop Camping, Hiking, Climbing, Cycling, Watersports & More"
       },
       "result": {
@@ -45,8 +45,8 @@
           "engine": "codex-chrome-extension-cdp",
           "port": 9224,
           "targetUrl": "https://www.mec.ca/",
-          "tabId": "2279A6828DD43AD2C8A3DD7BB89FEEC9",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/2279A6828DD43AD2C8A3DD7BB89FEEC9",
+          "tabId": "BE1708CC93A96E0BA2903F39715DD69F",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/BE1708CC93A96E0BA2903F39715DD69F",
           "title": "MEC: Canadian Outdoor Retailer - Shop Camping, Hiking, Climbing, Cycling, Watersports & More"
         },
         "sendStatus": "approval_pending",
@@ -70,8 +70,8 @@
         "engine": "codex-chrome-extension-cdp",
         "port": 9224,
         "targetUrl": "https://www.decathlon.fr/",
-        "tabId": "A2A1CE8FB4A0B92B22757E6BF2864ABD",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/A2A1CE8FB4A0B92B22757E6BF2864ABD",
+        "tabId": "E8BB9989F6FD4D8EDF0337F4C0961F36",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/E8BB9989F6FD4D8EDF0337F4C0961F36",
         "title": "Decathlon | Chaussures de sport, équipements et matériel sportif"
       },
       "result": {
@@ -85,8 +85,8 @@
           "engine": "codex-chrome-extension-cdp",
           "port": 9224,
           "targetUrl": "https://www.decathlon.fr/",
-          "tabId": "A2A1CE8FB4A0B92B22757E6BF2864ABD",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/A2A1CE8FB4A0B92B22757E6BF2864ABD",
+          "tabId": "E8BB9989F6FD4D8EDF0337F4C0961F36",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/E8BB9989F6FD4D8EDF0337F4C0961F36",
           "title": "Decathlon | Chaussures de sport, équipements et matériel sportif"
         },
         "sendStatus": "approval_pending",
@@ -110,8 +110,8 @@
         "engine": "codex-chrome-extension-cdp",
         "port": 9224,
         "targetUrl": "https://www.bever.nl/",
-        "tabId": "4F485FE101D3E07D2133293BA31E5D16",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/4F485FE101D3E07D2133293BA31E5D16",
+        "tabId": "9A7B9480E946F60E28C4870FE284148B",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/9A7B9480E946F60E28C4870FE284148B",
         "title": "dé buitenwinkel van Nederland | Bever"
       },
       "result": {
@@ -125,8 +125,8 @@
           "engine": "codex-chrome-extension-cdp",
           "port": 9224,
           "targetUrl": "https://www.bever.nl/",
-          "tabId": "4F485FE101D3E07D2133293BA31E5D16",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/4F485FE101D3E07D2133293BA31E5D16",
+          "tabId": "9A7B9480E946F60E28C4870FE284148B",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/9A7B9480E946F60E28C4870FE284148B",
           "title": "dé buitenwinkel van Nederland | Bever"
         },
         "sendStatus": "approval_pending",
@@ -150,8 +150,8 @@
         "engine": "codex-chrome-extension-cdp",
         "port": 9224,
         "targetUrl": "https://www.gooutdoors.co.uk/contact-us",
-        "tabId": "C1CDAFB14F5632283DB36CBC6BEE3001",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/C1CDAFB14F5632283DB36CBC6BEE3001",
+        "tabId": "595B42E7BCD4621253E5FBD9103E7E99",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/595B42E7BCD4621253E5FBD9103E7E99",
         "title": "Contact Us – GO Outdoors"
       },
       "result": {
@@ -165,8 +165,8 @@
           "engine": "codex-chrome-extension-cdp",
           "port": 9224,
           "targetUrl": "https://www.gooutdoors.co.uk/contact-us",
-          "tabId": "C1CDAFB14F5632283DB36CBC6BEE3001",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/C1CDAFB14F5632283DB36CBC6BEE3001",
+          "tabId": "595B42E7BCD4621253E5FBD9103E7E99",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/595B42E7BCD4621253E5FBD9103E7E99",
           "title": "Contact Us – GO Outdoors"
         },
         "sendStatus": "approval_pending",
@@ -190,8 +190,8 @@
         "engine": "codex-chrome-extension-cdp",
         "port": 9224,
         "targetUrl": "https://www.sail.ca/en/contact-us",
-        "tabId": "94FE05B42352D5990D3A26B8A45BB7AD",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/94FE05B42352D5990D3A26B8A45BB7AD",
+        "tabId": "4F7CAE13CCEC1A76DD0969619412BD9D",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/4F7CAE13CCEC1A76DD0969619412BD9D",
         "title": "SAIL | Need Help - Contact Us | SAIL"
       },
       "result": {
@@ -205,8 +205,8 @@
           "engine": "codex-chrome-extension-cdp",
           "port": 9224,
           "targetUrl": "https://www.sail.ca/en/contact-us",
-          "tabId": "94FE05B42352D5990D3A26B8A45BB7AD",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/94FE05B42352D5990D3A26B8A45BB7AD",
+          "tabId": "4F7CAE13CCEC1A76DD0969619412BD9D",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/4F7CAE13CCEC1A76DD0969619412BD9D",
           "title": "SAIL | Need Help - Contact Us | SAIL"
         },
         "sendStatus": "approval_pending",
@@ -230,8 +230,8 @@
         "engine": "codex-chrome-extension-cdp",
         "port": 9224,
         "targetUrl": "https://help.kathmanduoutdoor.com/support/solutions/articles/51000414624-sales-team-contact-details",
-        "tabId": "40F30A12F9EAC413D43840FD4C7CC190",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/40F30A12F9EAC413D43840FD4C7CC190",
+        "tabId": "419A32F5B12D69C340882EC88EE187D1",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/419A32F5B12D69C340882EC88EE187D1",
         "title": "Sales Team contact details : Help Centre United States"
       },
       "result": {
@@ -245,8 +245,8 @@
           "engine": "codex-chrome-extension-cdp",
           "port": 9224,
           "targetUrl": "https://help.kathmanduoutdoor.com/support/solutions/articles/51000414624-sales-team-contact-details",
-          "tabId": "40F30A12F9EAC413D43840FD4C7CC190",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/40F30A12F9EAC413D43840FD4C7CC190",
+          "tabId": "419A32F5B12D69C340882EC88EE187D1",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/419A32F5B12D69C340882EC88EE187D1",
           "title": "Sales Team contact details : Help Centre United States"
         },
         "sendStatus": "approval_pending",
@@ -272,8 +272,8 @@
         "engine": "codex-chrome-extension-cdp",
         "port": 9224,
         "targetUrl": "https://www.mec.ca/",
-        "tabId": "2279A6828DD43AD2C8A3DD7BB89FEEC9",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/2279A6828DD43AD2C8A3DD7BB89FEEC9",
+        "tabId": "BE1708CC93A96E0BA2903F39715DD69F",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/BE1708CC93A96E0BA2903F39715DD69F",
         "title": "MEC: Canadian Outdoor Retailer - Shop Camping, Hiking, Climbing, Cycling, Watersports & More"
       },
       "result": {
@@ -287,8 +287,8 @@
           "engine": "codex-chrome-extension-cdp",
           "port": 9224,
           "targetUrl": "https://www.mec.ca/",
-          "tabId": "2279A6828DD43AD2C8A3DD7BB89FEEC9",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/2279A6828DD43AD2C8A3DD7BB89FEEC9",
+          "tabId": "BE1708CC93A96E0BA2903F39715DD69F",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/BE1708CC93A96E0BA2903F39715DD69F",
           "title": "MEC: Canadian Outdoor Retailer - Shop Camping, Hiking, Climbing, Cycling, Watersports & More"
         },
         "sendStatus": "approval_pending",
@@ -312,8 +312,8 @@
         "engine": "codex-chrome-extension-cdp",
         "port": 9224,
         "targetUrl": "https://www.decathlon.fr/",
-        "tabId": "A2A1CE8FB4A0B92B22757E6BF2864ABD",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/A2A1CE8FB4A0B92B22757E6BF2864ABD",
+        "tabId": "E8BB9989F6FD4D8EDF0337F4C0961F36",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/E8BB9989F6FD4D8EDF0337F4C0961F36",
         "title": "Decathlon | Chaussures de sport, équipements et matériel sportif"
       },
       "result": {
@@ -327,8 +327,8 @@
           "engine": "codex-chrome-extension-cdp",
           "port": 9224,
           "targetUrl": "https://www.decathlon.fr/",
-          "tabId": "A2A1CE8FB4A0B92B22757E6BF2864ABD",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/A2A1CE8FB4A0B92B22757E6BF2864ABD",
+          "tabId": "E8BB9989F6FD4D8EDF0337F4C0961F36",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/E8BB9989F6FD4D8EDF0337F4C0961F36",
           "title": "Decathlon | Chaussures de sport, équipements et matériel sportif"
         },
         "sendStatus": "approval_pending",
@@ -352,8 +352,8 @@
         "engine": "codex-chrome-extension-cdp",
         "port": 9224,
         "targetUrl": "https://www.bever.nl/",
-        "tabId": "4F485FE101D3E07D2133293BA31E5D16",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/4F485FE101D3E07D2133293BA31E5D16",
+        "tabId": "9A7B9480E946F60E28C4870FE284148B",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/9A7B9480E946F60E28C4870FE284148B",
         "title": "dé buitenwinkel van Nederland | Bever"
       },
       "result": {
@@ -367,8 +367,8 @@
           "engine": "codex-chrome-extension-cdp",
           "port": 9224,
           "targetUrl": "https://www.bever.nl/",
-          "tabId": "4F485FE101D3E07D2133293BA31E5D16",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/4F485FE101D3E07D2133293BA31E5D16",
+          "tabId": "9A7B9480E946F60E28C4870FE284148B",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/9A7B9480E946F60E28C4870FE284148B",
           "title": "dé buitenwinkel van Nederland | Bever"
         },
         "sendStatus": "approval_pending",
@@ -392,8 +392,8 @@
         "engine": "codex-chrome-extension-cdp",
         "port": 9224,
         "targetUrl": "https://www.gooutdoors.co.uk/contact-us",
-        "tabId": "C1CDAFB14F5632283DB36CBC6BEE3001",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/C1CDAFB14F5632283DB36CBC6BEE3001",
+        "tabId": "595B42E7BCD4621253E5FBD9103E7E99",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/595B42E7BCD4621253E5FBD9103E7E99",
         "title": "Contact Us – GO Outdoors"
       },
       "result": {
@@ -407,8 +407,8 @@
           "engine": "codex-chrome-extension-cdp",
           "port": 9224,
           "targetUrl": "https://www.gooutdoors.co.uk/contact-us",
-          "tabId": "C1CDAFB14F5632283DB36CBC6BEE3001",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/C1CDAFB14F5632283DB36CBC6BEE3001",
+          "tabId": "595B42E7BCD4621253E5FBD9103E7E99",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/595B42E7BCD4621253E5FBD9103E7E99",
           "title": "Contact Us – GO Outdoors"
         },
         "sendStatus": "approval_pending",
@@ -432,8 +432,8 @@
         "engine": "codex-chrome-extension-cdp",
         "port": 9224,
         "targetUrl": "https://www.sail.ca/en/contact-us",
-        "tabId": "94FE05B42352D5990D3A26B8A45BB7AD",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/94FE05B42352D5990D3A26B8A45BB7AD",
+        "tabId": "4F7CAE13CCEC1A76DD0969619412BD9D",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/4F7CAE13CCEC1A76DD0969619412BD9D",
         "title": "SAIL | Need Help - Contact Us | SAIL"
       },
       "result": {
@@ -447,8 +447,8 @@
           "engine": "codex-chrome-extension-cdp",
           "port": 9224,
           "targetUrl": "https://www.sail.ca/en/contact-us",
-          "tabId": "94FE05B42352D5990D3A26B8A45BB7AD",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/94FE05B42352D5990D3A26B8A45BB7AD",
+          "tabId": "4F7CAE13CCEC1A76DD0969619412BD9D",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/4F7CAE13CCEC1A76DD0969619412BD9D",
           "title": "SAIL | Need Help - Contact Us | SAIL"
         },
         "sendStatus": "approval_pending",
@@ -472,8 +472,8 @@
         "engine": "codex-chrome-extension-cdp",
         "port": 9224,
         "targetUrl": "https://help.kathmanduoutdoor.com/support/solutions/articles/51000414624-sales-team-contact-details",
-        "tabId": "40F30A12F9EAC413D43840FD4C7CC190",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/40F30A12F9EAC413D43840FD4C7CC190",
+        "tabId": "419A32F5B12D69C340882EC88EE187D1",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/419A32F5B12D69C340882EC88EE187D1",
         "title": "Sales Team contact details : Help Centre United States"
       },
       "result": {
@@ -487,8 +487,8 @@
           "engine": "codex-chrome-extension-cdp",
           "port": 9224,
           "targetUrl": "https://help.kathmanduoutdoor.com/support/solutions/articles/51000414624-sales-team-contact-details",
-          "tabId": "40F30A12F9EAC413D43840FD4C7CC190",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/40F30A12F9EAC413D43840FD4C7CC190",
+          "tabId": "419A32F5B12D69C340882EC88EE187D1",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/419A32F5B12D69C340882EC88EE187D1",
           "title": "Sales Team contact details : Help Centre United States"
         },
         "sendStatus": "approval_pending",
@@ -553,12 +553,12 @@
     "stderr": "",
     "error": "",
     "visibility": {
-      "updatedAt": "2026-07-03T18:02:46.519Z",
+      "updatedAt": "2026-07-03T19:04:29.554Z",
       "source": "main-refreshDailyAutomationArtifacts",
       "runDate": "2026-07-03",
-      "artifactGeneratedAt": "2026-07-03T18:02:45.323Z",
-      "executionGeneratedAt": "2026-07-03T17:04:41.430Z",
-      "githubSyncUpdatedAt": "2026-07-03T17:05:23.579Z",
+      "artifactGeneratedAt": "2026-07-03T19:04:28.139Z",
+      "executionGeneratedAt": "2026-07-03T18:02:47.196Z",
+      "githubSyncUpdatedAt": "2026-07-03T18:03:09.420Z",
       "counts": {
         "dailyQueue": 11,
         "googleDiscovered": 10,
@@ -604,5 +604,5 @@
       }
     }
   },
-  "completedAt": "2026-07-03T18:02:47.196Z"
+  "completedAt": "2026-07-03T19:04:29.979Z"
 }
