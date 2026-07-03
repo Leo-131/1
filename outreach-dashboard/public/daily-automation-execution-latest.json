@@ -30,8 +30,8 @@
         "engine": "codex-chrome-extension-cdp",
         "port": 9224,
         "targetUrl": "https://www.mec.ca/",
-        "tabId": "8366670CC2DB1B0AAD03EE75AC21DC8C",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/8366670CC2DB1B0AAD03EE75AC21DC8C",
+        "tabId": "ADD2286C8AD2EF70A4B0F7B77FA0C17E",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/ADD2286C8AD2EF70A4B0F7B77FA0C17E",
         "title": ""
       },
       "result": {
@@ -45,8 +45,8 @@
           "engine": "codex-chrome-extension-cdp",
           "port": 9224,
           "targetUrl": "https://www.mec.ca/",
-          "tabId": "8366670CC2DB1B0AAD03EE75AC21DC8C",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/8366670CC2DB1B0AAD03EE75AC21DC8C",
+          "tabId": "ADD2286C8AD2EF70A4B0F7B77FA0C17E",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/ADD2286C8AD2EF70A4B0F7B77FA0C17E",
           "title": ""
         },
         "sendStatus": "approval_pending",
@@ -70,8 +70,8 @@
         "engine": "codex-chrome-extension-cdp",
         "port": 9224,
         "targetUrl": "https://www.decathlon.fr/",
-        "tabId": "61C91D1AAEEE1077A46E280E1092485A",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/61C91D1AAEEE1077A46E280E1092485A",
+        "tabId": "83DE06EC5283601703C102B55CA99205",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/83DE06EC5283601703C102B55CA99205",
         "title": "Decathlon | Chaussures de sport, équipements et matériel sportif"
       },
       "result": {
@@ -85,8 +85,8 @@
           "engine": "codex-chrome-extension-cdp",
           "port": 9224,
           "targetUrl": "https://www.decathlon.fr/",
-          "tabId": "61C91D1AAEEE1077A46E280E1092485A",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/61C91D1AAEEE1077A46E280E1092485A",
+          "tabId": "83DE06EC5283601703C102B55CA99205",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/83DE06EC5283601703C102B55CA99205",
           "title": "Decathlon | Chaussures de sport, équipements et matériel sportif"
         },
         "sendStatus": "approval_pending",
@@ -110,8 +110,8 @@
         "engine": "codex-chrome-extension-cdp",
         "port": 9224,
         "targetUrl": "https://www.bever.nl/",
-        "tabId": "B4525E0B363AD5058EF06A64F2BD0872",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/B4525E0B363AD5058EF06A64F2BD0872",
+        "tabId": "A4795FE28289ABB25DB405536B3AA7D9",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/A4795FE28289ABB25DB405536B3AA7D9",
         "title": "dé buitenwinkel van Nederland | Bever"
       },
       "result": {
@@ -125,8 +125,8 @@
           "engine": "codex-chrome-extension-cdp",
           "port": 9224,
           "targetUrl": "https://www.bever.nl/",
-          "tabId": "B4525E0B363AD5058EF06A64F2BD0872",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/B4525E0B363AD5058EF06A64F2BD0872",
+          "tabId": "A4795FE28289ABB25DB405536B3AA7D9",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/A4795FE28289ABB25DB405536B3AA7D9",
           "title": "dé buitenwinkel van Nederland | Bever"
         },
         "sendStatus": "approval_pending",
@@ -152,8 +152,8 @@
         "engine": "codex-chrome-extension-cdp",
         "port": 9224,
         "targetUrl": "https://www.mec.ca/",
-        "tabId": "8366670CC2DB1B0AAD03EE75AC21DC8C",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/8366670CC2DB1B0AAD03EE75AC21DC8C",
+        "tabId": "ADD2286C8AD2EF70A4B0F7B77FA0C17E",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/ADD2286C8AD2EF70A4B0F7B77FA0C17E",
         "title": ""
       },
       "result": {
@@ -167,8 +167,8 @@
           "engine": "codex-chrome-extension-cdp",
           "port": 9224,
           "targetUrl": "https://www.mec.ca/",
-          "tabId": "8366670CC2DB1B0AAD03EE75AC21DC8C",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/8366670CC2DB1B0AAD03EE75AC21DC8C",
+          "tabId": "ADD2286C8AD2EF70A4B0F7B77FA0C17E",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/ADD2286C8AD2EF70A4B0F7B77FA0C17E",
           "title": ""
         },
         "sendStatus": "approval_pending",
@@ -192,8 +192,8 @@
         "engine": "codex-chrome-extension-cdp",
         "port": 9224,
         "targetUrl": "https://www.decathlon.fr/",
-        "tabId": "61C91D1AAEEE1077A46E280E1092485A",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/61C91D1AAEEE1077A46E280E1092485A",
+        "tabId": "83DE06EC5283601703C102B55CA99205",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/83DE06EC5283601703C102B55CA99205",
         "title": "Decathlon | Chaussures de sport, équipements et matériel sportif"
       },
       "result": {
@@ -207,8 +207,8 @@
           "engine": "codex-chrome-extension-cdp",
           "port": 9224,
           "targetUrl": "https://www.decathlon.fr/",
-          "tabId": "61C91D1AAEEE1077A46E280E1092485A",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/61C91D1AAEEE1077A46E280E1092485A",
+          "tabId": "83DE06EC5283601703C102B55CA99205",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/83DE06EC5283601703C102B55CA99205",
           "title": "Decathlon | Chaussures de sport, équipements et matériel sportif"
         },
         "sendStatus": "approval_pending",
@@ -232,8 +232,8 @@
         "engine": "codex-chrome-extension-cdp",
         "port": 9224,
         "targetUrl": "https://www.bever.nl/",
-        "tabId": "B4525E0B363AD5058EF06A64F2BD0872",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/B4525E0B363AD5058EF06A64F2BD0872",
+        "tabId": "A4795FE28289ABB25DB405536B3AA7D9",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/A4795FE28289ABB25DB405536B3AA7D9",
         "title": "dé buitenwinkel van Nederland | Bever"
       },
       "result": {
@@ -247,8 +247,8 @@
           "engine": "codex-chrome-extension-cdp",
           "port": 9224,
           "targetUrl": "https://www.bever.nl/",
-          "tabId": "B4525E0B363AD5058EF06A64F2BD0872",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/B4525E0B363AD5058EF06A64F2BD0872",
+          "tabId": "A4795FE28289ABB25DB405536B3AA7D9",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/A4795FE28289ABB25DB405536B3AA7D9",
           "title": "dé buitenwinkel van Nederland | Bever"
         },
         "sendStatus": "approval_pending",
@@ -307,12 +307,12 @@
     "stderr": "",
     "error": "",
     "visibility": {
-      "updatedAt": "2026-07-03T13:02:25.104Z",
+      "updatedAt": "2026-07-03T14:09:07.084Z",
       "source": "main-refreshDailyAutomationArtifacts",
       "runDate": "2026-07-03",
-      "artifactGeneratedAt": "2026-07-03T13:02:23.495Z",
-      "executionGeneratedAt": "2026-07-03T12:01:33.993Z",
-      "githubSyncUpdatedAt": "2026-07-03T12:02:00.077Z",
+      "artifactGeneratedAt": "2026-07-03T14:09:05.501Z",
+      "executionGeneratedAt": "2026-07-03T13:02:25.700Z",
+      "githubSyncUpdatedAt": "2026-07-03T13:03:00.932Z",
       "counts": {
         "dailyQueue": 7,
         "googleDiscovered": 6,
@@ -358,5 +358,5 @@
       }
     }
   },
-  "completedAt": "2026-07-03T13:02:25.700Z"
+  "completedAt": "2026-07-03T14:09:07.666Z"
 }
