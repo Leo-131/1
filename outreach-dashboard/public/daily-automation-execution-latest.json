@@ -30,9 +30,9 @@
         "engine": "codex-chrome-extension-cdp",
         "port": 9224,
         "targetUrl": "https://www.mec.ca/",
-        "tabId": "050B5DED5FB6544C98281E54F78DB75F",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/050B5DED5FB6544C98281E54F78DB75F",
-        "title": "MEC: Canadian Outdoor Retailer - Shop Camping, Hiking, Climbing, Cycling, Watersports & More"
+        "tabId": "011014D421334B632480782AA805C0CF",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/011014D421334B632480782AA805C0CF",
+        "title": ""
       },
       "result": {
         "ok": false,
@@ -45,9 +45,9 @@
           "engine": "codex-chrome-extension-cdp",
           "port": 9224,
           "targetUrl": "https://www.mec.ca/",
-          "tabId": "050B5DED5FB6544C98281E54F78DB75F",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/050B5DED5FB6544C98281E54F78DB75F",
-          "title": "MEC: Canadian Outdoor Retailer - Shop Camping, Hiking, Climbing, Cycling, Watersports & More"
+          "tabId": "011014D421334B632480782AA805C0CF",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/011014D421334B632480782AA805C0CF",
+          "title": ""
         },
         "sendStatus": "approval_pending",
         "subject": "Flextail & Vollyc | Lightweight Outdoor & 3C Electronics – Potential Cooperation",
@@ -70,8 +70,8 @@
         "engine": "codex-chrome-extension-cdp",
         "port": 9224,
         "targetUrl": "https://www.decathlon.fr/",
-        "tabId": "088209FCE12362DC6CABB4D376226470",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/088209FCE12362DC6CABB4D376226470",
+        "tabId": "EEDD36563E85D39902E56C59BC00000A",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/EEDD36563E85D39902E56C59BC00000A",
         "title": "Decathlon | Chaussures de sport, équipements et matériel sportif"
       },
       "result": {
@@ -85,8 +85,8 @@
           "engine": "codex-chrome-extension-cdp",
           "port": 9224,
           "targetUrl": "https://www.decathlon.fr/",
-          "tabId": "088209FCE12362DC6CABB4D376226470",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/088209FCE12362DC6CABB4D376226470",
+          "tabId": "EEDD36563E85D39902E56C59BC00000A",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/EEDD36563E85D39902E56C59BC00000A",
           "title": "Decathlon | Chaussures de sport, équipements et matériel sportif"
         },
         "sendStatus": "approval_pending",
@@ -110,8 +110,8 @@
         "engine": "codex-chrome-extension-cdp",
         "port": 9224,
         "targetUrl": "https://www.bever.nl/",
-        "tabId": "C2DC23340769F41DD62F602422418FA7",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/C2DC23340769F41DD62F602422418FA7",
+        "tabId": "1AF2403B5A73CA23BDB36B516B2B27D6",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/1AF2403B5A73CA23BDB36B516B2B27D6",
         "title": "dé buitenwinkel van Nederland | Bever"
       },
       "result": {
@@ -125,8 +125,8 @@
           "engine": "codex-chrome-extension-cdp",
           "port": 9224,
           "targetUrl": "https://www.bever.nl/",
-          "tabId": "C2DC23340769F41DD62F602422418FA7",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/C2DC23340769F41DD62F602422418FA7",
+          "tabId": "1AF2403B5A73CA23BDB36B516B2B27D6",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/1AF2403B5A73CA23BDB36B516B2B27D6",
           "title": "dé buitenwinkel van Nederland | Bever"
         },
         "sendStatus": "approval_pending",
@@ -152,9 +152,9 @@
         "engine": "codex-chrome-extension-cdp",
         "port": 9224,
         "targetUrl": "https://www.mec.ca/",
-        "tabId": "050B5DED5FB6544C98281E54F78DB75F",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/050B5DED5FB6544C98281E54F78DB75F",
-        "title": "MEC: Canadian Outdoor Retailer - Shop Camping, Hiking, Climbing, Cycling, Watersports & More"
+        "tabId": "011014D421334B632480782AA805C0CF",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/011014D421334B632480782AA805C0CF",
+        "title": ""
       },
       "result": {
         "ok": false,
@@ -167,9 +167,9 @@
           "engine": "codex-chrome-extension-cdp",
           "port": 9224,
           "targetUrl": "https://www.mec.ca/",
-          "tabId": "050B5DED5FB6544C98281E54F78DB75F",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/050B5DED5FB6544C98281E54F78DB75F",
-          "title": "MEC: Canadian Outdoor Retailer - Shop Camping, Hiking, Climbing, Cycling, Watersports & More"
+          "tabId": "011014D421334B632480782AA805C0CF",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/011014D421334B632480782AA805C0CF",
+          "title": ""
         },
         "sendStatus": "approval_pending",
         "subject": "Flextail & Vollyc | Lightweight Outdoor & 3C Electronics – Potential Cooperation",
@@ -192,8 +192,8 @@
         "engine": "codex-chrome-extension-cdp",
         "port": 9224,
         "targetUrl": "https://www.decathlon.fr/",
-        "tabId": "088209FCE12362DC6CABB4D376226470",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/088209FCE12362DC6CABB4D376226470",
+        "tabId": "EEDD36563E85D39902E56C59BC00000A",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/EEDD36563E85D39902E56C59BC00000A",
         "title": "Decathlon | Chaussures de sport, équipements et matériel sportif"
       },
       "result": {
@@ -207,8 +207,8 @@
           "engine": "codex-chrome-extension-cdp",
           "port": 9224,
           "targetUrl": "https://www.decathlon.fr/",
-          "tabId": "088209FCE12362DC6CABB4D376226470",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/088209FCE12362DC6CABB4D376226470",
+          "tabId": "EEDD36563E85D39902E56C59BC00000A",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/EEDD36563E85D39902E56C59BC00000A",
           "title": "Decathlon | Chaussures de sport, équipements et matériel sportif"
         },
         "sendStatus": "approval_pending",
@@ -232,8 +232,8 @@
         "engine": "codex-chrome-extension-cdp",
         "port": 9224,
         "targetUrl": "https://www.bever.nl/",
-        "tabId": "C2DC23340769F41DD62F602422418FA7",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/C2DC23340769F41DD62F602422418FA7",
+        "tabId": "1AF2403B5A73CA23BDB36B516B2B27D6",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/1AF2403B5A73CA23BDB36B516B2B27D6",
         "title": "dé buitenwinkel van Nederland | Bever"
       },
       "result": {
@@ -247,8 +247,8 @@
           "engine": "codex-chrome-extension-cdp",
           "port": 9224,
           "targetUrl": "https://www.bever.nl/",
-          "tabId": "C2DC23340769F41DD62F602422418FA7",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/C2DC23340769F41DD62F602422418FA7",
+          "tabId": "1AF2403B5A73CA23BDB36B516B2B27D6",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/1AF2403B5A73CA23BDB36B516B2B27D6",
           "title": "dé buitenwinkel van Nederland | Bever"
         },
         "sendStatus": "approval_pending",
@@ -307,12 +307,12 @@
     "stderr": "",
     "error": "",
     "visibility": {
-      "updatedAt": "2026-07-03T09:03:11.850Z",
+      "updatedAt": "2026-07-03T10:02:15.865Z",
       "source": "main-refreshDailyAutomationArtifacts",
       "runDate": "2026-07-03",
-      "artifactGeneratedAt": "2026-07-03T09:03:10.869Z",
-      "executionGeneratedAt": "2026-07-03T08:02:16.465Z",
-      "githubSyncUpdatedAt": "2026-07-03T08:02:50.509Z",
+      "artifactGeneratedAt": "2026-07-03T10:02:14.647Z",
+      "executionGeneratedAt": "2026-07-03T09:03:12.324Z",
+      "githubSyncUpdatedAt": "2026-07-03T09:03:45.055Z",
       "counts": {
         "dailyQueue": 6,
         "googleDiscovered": 6,
@@ -358,5 +358,5 @@
       }
     }
   },
-  "completedAt": "2026-07-03T09:03:12.324Z"
+  "completedAt": "2026-07-03T10:02:16.302Z"
 }
