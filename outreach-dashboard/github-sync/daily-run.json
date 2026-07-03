@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-03T20:03:41.465Z",
+  "generatedAt": "2026-07-03T21:03:22.522Z",
   "date": "2026-07-03",
   "mode": "daily-icp-first-automation-loop",
   "executionLayer": "Codex Chrome Extension primary; AutoClaw compatible",
@@ -8,8 +8,8 @@
     "quota": {
       "total": {
         "target": 100,
-        "planned": 1,
-        "gap": 99
+        "planned": 0,
+        "gap": 100
       },
       "develop": {
         "target": 70,
@@ -23,8 +23,8 @@
       },
       "retry_or_alternate_channel": {
         "target": 10,
-        "planned": 1,
-        "gap": 9
+        "planned": 0,
+        "gap": 10
       },
       "verify_target": {
         "target": 5,
@@ -51,11 +51,11 @@
     "totalLeads": 16,
     "highIcp": 16,
     "readyToDevelop": 1,
-    "dueNow": 11,
-    "googleDiscovered": 10,
+    "dueNow": 9,
+    "googleDiscovered": 9,
     "facebookDiscovered": 1,
-    "websiteContactDiscovered": 9,
-    "scheduledLater": 0,
+    "websiteContactDiscovered": 8,
+    "scheduledLater": 1,
     "cooldown": 30,
     "emailPriority": 0,
     "openAgencyMarket": 15,
@@ -118,7 +118,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/4 04:01:52",
+        "localTime": "2026/7/4 05:01:50",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -200,7 +200,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/4 04:01:52",
+        "localTime": "2026/7/4 05:01:50",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -282,7 +282,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/4 04:01:52",
+        "localTime": "2026/7/4 05:01:50",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -364,7 +364,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/4 04:01:52",
+        "localTime": "2026/7/4 05:01:50",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -446,7 +446,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/4 04:01:52",
+        "localTime": "2026/7/4 05:01:50",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -473,88 +473,6 @@
       "contactChannelScore": 29,
       "dealProbabilityScore": 219,
       "priorityScore": 217
-    },
-    {
-      "linkedinUrl": "https://uk.linkedin.com/company/go-outdoors-ltd",
-      "founded": "1969",
-      "headquarters": "Bury, Lancashire, United Kingdom",
-      "companyScale": "1,001-5,000 employees; major UK outdoor retail chain",
-      "coverage": "United Kingdom",
-      "mainBrands": "Camping equipment, outdoor clothing/footwear, cycling, fishing, caravanning, tents",
-      "salesChannel": "Stores and ecommerce",
-      "buyingCapability": "High; category buyer or JD Outdoors/GO Outdoors merchandising route",
-      "decisionMaker": "Camping equipment buyer, outdoor accessories category manager, vendor review contact",
-      "publicEmail": "",
-      "publicEmailStatus": "No public buyer email verified; use official contact page and LinkedIn category research.",
-      "contactPhone": "+44 330 008 1555",
-      "vendorPortal": "https://www.gooutdoors.co.uk/contact-us",
-      "linkedinCompany": "https://uk.linkedin.com/company/go-outdoors-ltd",
-      "contactNote": "Use official contact route and ask for camping/accessories buyer; validate any personal emails before use.",
-      "dataSources": [
-        "GO Outdoors LinkedIn",
-        "GO Outdoors public company/contact sources"
-      ],
-      "id": "google-customer-go-outdoors-website-contact",
-      "name": "GO Outdoors",
-      "company": "GO Outdoors",
-      "country": "United Kingdom",
-      "countryEn": "United Kingdom",
-      "fitScore": 93,
-      "fitTier": "A+",
-      "marketScore": 4.5,
-      "marketStatus": "open",
-      "agencyState": "open",
-      "keyword": "outdoor retail chain",
-      "role": "Camping and outdoor accessories buyer.",
-      "background": "UK outdoor retailer with camping, tents, hiking, cycling, and outdoor equipment categories.",
-      "buyerPersona": "Camping and outdoor accessories buyer.",
-      "productCategory": "outdoor retail chain",
-      "businessModel": "Retail Chain",
-      "productFit": "FLEXTAIL portable pumps, outdoor power, camping lighting and compact camping accessories",
-      "opportunity": "UK outdoor retailer with camping, tents, hiking, cycling, and outdoor equipment categories.",
-      "linkedin_url": "https://uk.linkedin.com/company/go-outdoors-ltd",
-      "linkedin": "https://uk.linkedin.com/company/go-outdoors-ltd",
-      "contactEmail": "",
-      "website": "https://www.gooutdoors.co.uk/",
-      "evidenceUrl": "https://www.google.com/search?q=%22GO%20Outdoors%22%20%22outdoor%20retail%20chain%22%20%22United%20Kingdom%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "query": "https://www.google.com/search?q=%22GO%20Outdoors%22%20%22outdoor%20retail%20chain%22%20%22United%20Kingdom%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "source": "google_customer_discovery",
-      "identityStatus": "verified",
-      "partnershipStatus": "",
-      "doNotOutreach": false,
-      "automationStatus": "",
-      "partnerNote": "",
-      "sendStatus": "",
-      "workingTime": {
-        "dueNow": true,
-        "timeZone": "local-market",
-        "localTime": "2026/7/4 04:01:52",
-        "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
-      },
-      "platform": "email",
-      "platformUrl": "https://www.gooutdoors.co.uk/contact-us",
-      "url": "https://www.gooutdoors.co.uk/contact-us",
-      "contactUrl": "https://www.gooutdoors.co.uk/contact-us",
-      "contactSearchUrl": "https://www.google.com/search?q=site%3Awww.gooutdoors.co.uk%20%22GO%20Outdoors%22%20contact%20buyer%20wholesale%20email%20vendor",
-      "emailFrom": "leo@flextailgear.com",
-      "websiteContactSubject": "Flextail & Vollyc | Lightweight Outdoor & 3C Electronics – Potential Cooperation",
-      "websiteContactMessage": "Dear GO Outdoors Team,\n\nNice to e-meet you.\nI am Leo, from Flextail & Vollyc.\n\nFlextail is our first and core brand, specializing in ultralight electric products for outdoor, travel, and home use. The brand is currently Top 1 on Amazon, with strong global sell-through and a proven product-market fit.\nVollyc, our second brand, focuses on 3C electronics, targeting practical, high-rotation consumer use cases.\n\nFrom our perspective, your platform and positioning are highly aligned with Flextail’s product philosophy, especially in lightweight outdoor and travel-oriented electrics.\n\nWe have already contacted with your team, and we are now actively exploring opportunities in other regions.\nAttached, you will find a brief introduction to our brands and current product catalog for your reference.\n\nLooking ahead, we are planning to launch over 36 new SKUs in 2026, covering multiple usage scenarios and price tiers, which we believe could be of interest to your assortment strategy.\n\nIf you are available, I would greatly appreciate the opportunity to arrange a short introductory video meeting to present our brands and discuss potential collaboration opportunities.\n\nThank you for your time and consideration. I look forward to your reply.\n\n[Flextail.com](https://www.flextail.com/), [vollyc.com](https://vollyc.com/)\n\n[Sincerely](https://wa.me/8617321028184)\n[Best Regard](https://wa.me/8617321028184)\n[Leo Liu](https://wa.me/8617321028184)\n[Sales](https://wa.me/8617321028184) [& Operations Director](https://wa.me/8617321028184)\n[Brand & ODM Department](https://wa.me/8617321028184)\n[Tel/whatsapp:  +86 17321028184](https://wa.me/8617321028184)\n\n[Email:  Leo@flextailgear.com](https://wa.me/8617321028184)\n[SHANGHAI FLEXTAIL TECHNOLOGY CO.,LTD.](https://wa.me/8617321028184)\n[Room103, Building No.6, No.1 Yanjiaqiao, Pudong District, ShangHai, China](https://wa.me/8617321028184)\n",
-      "websiteContactFlow": "open_official_contact_us_fill_attach_auto_submit",
-      "action": "email_priority",
-      "reason": "official_website_contact_channel",
-      "alternateChannels": {
-        "instagram": "https://www.instagram.com/gooutdoors/",
-        "facebook": "https://www.facebook.com/GOoutdoorsUK/",
-        "websiteContact": "https://www.gooutdoors.co.uk/contact-us"
-      },
-      "invalidChannels": {},
-      "identitySource": "official website contact path + Google buyer/contact query",
-      "channelPriority": 3,
-      "targetRegion": "europe",
-      "targetRegionScore": 32,
-      "contactChannelScore": 17,
-      "dealProbabilityScore": 214,
-      "priorityScore": 212
     },
     {
       "linkedinUrl": "https://ca.linkedin.com/company/sailpleinairoutdoors",
@@ -610,7 +528,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/4 04:01:52",
+        "localTime": "2026/7/4 05:01:50",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -693,7 +611,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/4 04:01:52",
+        "localTime": "2026/7/4 05:01:50",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -781,7 +699,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/4 04:01:52",
+        "localTime": "2026/7/4 05:01:50",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -863,7 +781,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/4 04:01:52",
+        "localTime": "2026/7/4 05:01:50",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -890,209 +808,9 @@
       "contactChannelScore": 17,
       "dealProbabilityScore": 178,
       "priorityScore": 176
-    },
-    {
-      "id": "verified-Instagram-triedandtrout",
-      "name": "triedandtrout",
-      "company": "Tried & Trout Supply Co",
-      "platform": "instagram",
-      "country": "美国",
-      "countryEn": "United States",
-      "fitScore": 73,
-      "fitTier": "A",
-      "marketScore": 4.4,
-      "marketStatus": "可开拓",
-      "agencyState": "open",
-      "url": "https://www.instagram.com/triedandtroutsupply/",
-      "website": "",
-      "platformUrl": "https://www.instagram.com/triedandtroutsupply/",
-      "contactUrl": "",
-      "contactSearchUrl": "",
-      "emailFrom": "",
-      "websiteContactSubject": "",
-      "websiteContactMessage": "",
-      "websiteContactFlow": "",
-      "publicEmail": "",
-      "publicEmailStatus": "",
-      "contactPhone": "",
-      "vendorPortal": "",
-      "linkedinUrl": "",
-      "headquarters": "",
-      "founded": "",
-      "companyScale": "",
-      "dataSources": null,
-      "alternateChannels": null,
-      "lastStatus": "failed_open",
-      "lastEvidence": "profile_valid_no_message_button",
-      "lastTouch": "",
-      "action": "retry_or_alternate_channel",
-      "reason": "profile_valid_no_message_button",
-      "workingTime": {
-        "dueNow": true,
-        "timeZone": "America/New_York",
-        "localTime": "Fri 16:03",
-        "window": "afternoon",
-        "nextBest": "now",
-        "weight": 0.9
-      },
-      "targetRegion": "americas",
-      "targetRegionScore": 30,
-      "contactChannelScore": 0,
-      "dealProbabilityScore": 174,
-      "priorityScore": 174
     }
   ],
   "cooldownQueue": [
-    {
-      "id": "verified-Instagram-campmor",
-      "name": "campmor",
-      "company": "Campmor US",
-      "platform": "instagram",
-      "country": "美国",
-      "countryEn": "United States",
-      "fitScore": 100,
-      "fitTier": "A",
-      "marketScore": 4.4,
-      "marketStatus": "可开拓",
-      "agencyState": "open",
-      "url": "https://www.instagram.com/campmor/",
-      "website": "",
-      "platformUrl": "https://www.instagram.com/campmor/",
-      "contactUrl": "",
-      "contactSearchUrl": "",
-      "emailFrom": "",
-      "websiteContactSubject": "",
-      "websiteContactMessage": "",
-      "websiteContactFlow": "",
-      "publicEmail": "",
-      "publicEmailStatus": "",
-      "contactPhone": "",
-      "vendorPortal": "",
-      "linkedinUrl": "",
-      "headquarters": "",
-      "founded": "",
-      "companyScale": "",
-      "dataSources": null,
-      "alternateChannels": null,
-      "lastStatus": "sent_confirmed",
-      "lastEvidence": "confirmed DM follow-up sent via logged-in Chrome session",
-      "lastTouch": "2026-06-18T10:09:35.863Z",
-      "action": "cooldown",
-      "reason": "previous_sent_confirmed_no_duplicate_dm",
-      "workingTime": {
-        "dueNow": true,
-        "timeZone": "America/New_York",
-        "localTime": "Fri 16:03",
-        "window": "afternoon",
-        "nextBest": "now",
-        "weight": 0.9
-      },
-      "targetRegion": "americas",
-      "targetRegionScore": 30,
-      "contactChannelScore": 0,
-      "dealProbabilityScore": 201,
-      "priorityScore": 201
-    },
-    {
-      "id": "verified-Instagram-mec",
-      "name": "mec",
-      "company": "MEC Canada",
-      "platform": "instagram",
-      "country": "加拿大",
-      "countryEn": "Canada",
-      "fitScore": 83,
-      "fitTier": "A",
-      "marketScore": 3.7,
-      "marketStatus": "可开拓",
-      "agencyState": "open",
-      "url": "https://www.instagram.com/mec/",
-      "website": "",
-      "platformUrl": "https://www.instagram.com/mec/",
-      "contactUrl": "",
-      "contactSearchUrl": "",
-      "emailFrom": "",
-      "websiteContactSubject": "",
-      "websiteContactMessage": "",
-      "websiteContactFlow": "",
-      "publicEmail": "",
-      "publicEmailStatus": "",
-      "contactPhone": "",
-      "vendorPortal": "",
-      "linkedinUrl": "",
-      "headquarters": "",
-      "founded": "",
-      "companyScale": "",
-      "dataSources": null,
-      "alternateChannels": null,
-      "lastStatus": "sent_confirmed",
-      "lastEvidence": "instagram_message_sent_confirmed_composer_cleared;instagram_post_opened;post_like_not_available_or_already_active;comment_box_not_available;follow_clicked",
-      "lastTouch": "2026-06-30T12:42:01.936Z",
-      "action": "cooldown",
-      "reason": "previous_sent_confirmed_no_duplicate_dm",
-      "workingTime": {
-        "dueNow": true,
-        "timeZone": "America/Toronto",
-        "localTime": "Fri 16:03",
-        "window": "afternoon",
-        "nextBest": "now",
-        "weight": 0.9
-      },
-      "targetRegion": "americas",
-      "targetRegionScore": 30,
-      "contactChannelScore": 0,
-      "dealProbabilityScore": 175,
-      "priorityScore": 175
-    },
-    {
-      "id": "verified-Instagram-monasheeoutdoors",
-      "name": "monasheeoutdoors",
-      "company": "Monashee Outdoors",
-      "platform": "instagram",
-      "country": "加拿大",
-      "countryEn": "Canada",
-      "fitScore": 83,
-      "fitTier": "A",
-      "marketScore": 3.7,
-      "marketStatus": "可开拓",
-      "agencyState": "open",
-      "url": "https://www.instagram.com/monasheeoutdoors/",
-      "website": "",
-      "platformUrl": "https://www.instagram.com/monasheeoutdoors/",
-      "contactUrl": "",
-      "contactSearchUrl": "",
-      "emailFrom": "",
-      "websiteContactSubject": "",
-      "websiteContactMessage": "",
-      "websiteContactFlow": "",
-      "publicEmail": "",
-      "publicEmailStatus": "",
-      "contactPhone": "",
-      "vendorPortal": "",
-      "linkedinUrl": "",
-      "headquarters": "",
-      "founded": "",
-      "companyScale": "",
-      "dataSources": null,
-      "alternateChannels": null,
-      "lastStatus": "sent_confirmed",
-      "lastEvidence": "duplicate_risk: duplicate DM observed in Instagram chat; future sends locked",
-      "lastTouch": "2026-06-18T09:01:31.455Z",
-      "action": "cooldown",
-      "reason": "previous_sent_confirmed_no_duplicate_dm",
-      "workingTime": {
-        "dueNow": true,
-        "timeZone": "America/Toronto",
-        "localTime": "Fri 16:03",
-        "window": "afternoon",
-        "nextBest": "now",
-        "weight": 0.9
-      },
-      "targetRegion": "americas",
-      "targetRegionScore": 30,
-      "contactChannelScore": 0,
-      "dealProbabilityScore": 175,
-      "priorityScore": 175
-    },
     {
       "id": "verified-Instagram-ellisbrigham",
       "name": "ellisbrigham",
@@ -1132,7 +850,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/London",
-        "localTime": "Fri 21:03",
+        "localTime": "Fri 22:03",
         "window": "outside_work_hours",
         "nextBest": "Europe/London morning",
         "weight": 0
@@ -1142,6 +860,56 @@
       "contactChannelScore": 0,
       "dealProbabilityScore": 204,
       "priorityScore": 204
+    },
+    {
+      "id": "verified-Instagram-campmor",
+      "name": "campmor",
+      "company": "Campmor US",
+      "platform": "instagram",
+      "country": "美国",
+      "countryEn": "United States",
+      "fitScore": 100,
+      "fitTier": "A",
+      "marketScore": 4.4,
+      "marketStatus": "可开拓",
+      "agencyState": "open",
+      "url": "https://www.instagram.com/campmor/",
+      "website": "",
+      "platformUrl": "https://www.instagram.com/campmor/",
+      "contactUrl": "",
+      "contactSearchUrl": "",
+      "emailFrom": "",
+      "websiteContactSubject": "",
+      "websiteContactMessage": "",
+      "websiteContactFlow": "",
+      "publicEmail": "",
+      "publicEmailStatus": "",
+      "contactPhone": "",
+      "vendorPortal": "",
+      "linkedinUrl": "",
+      "headquarters": "",
+      "founded": "",
+      "companyScale": "",
+      "dataSources": null,
+      "alternateChannels": null,
+      "lastStatus": "sent_confirmed",
+      "lastEvidence": "confirmed DM follow-up sent via logged-in Chrome session",
+      "lastTouch": "2026-06-18T10:09:35.863Z",
+      "action": "cooldown",
+      "reason": "previous_sent_confirmed_no_duplicate_dm",
+      "workingTime": {
+        "dueNow": false,
+        "timeZone": "America/New_York",
+        "localTime": "Fri 17:03",
+        "window": "outside_work_hours",
+        "nextBest": "America/New_York morning",
+        "weight": 0
+      },
+      "targetRegion": "americas",
+      "targetRegionScore": 30,
+      "contactChannelScore": 0,
+      "dealProbabilityScore": 201,
+      "priorityScore": 201
     },
     {
       "id": "verified-Instagram-otimosoutdoorgear",
@@ -1182,7 +950,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/London",
-        "localTime": "Fri 21:03",
+        "localTime": "Fri 22:03",
         "window": "outside_work_hours",
         "nextBest": "Europe/London morning",
         "weight": 0
@@ -1232,7 +1000,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/London",
-        "localTime": "Fri 21:03",
+        "localTime": "Fri 22:03",
         "window": "outside_work_hours",
         "nextBest": "Europe/London morning",
         "weight": 0
@@ -1242,6 +1010,106 @@
       "contactChannelScore": 0,
       "dealProbabilityScore": 195,
       "priorityScore": 195
+    },
+    {
+      "id": "verified-Instagram-mec",
+      "name": "mec",
+      "company": "MEC Canada",
+      "platform": "instagram",
+      "country": "加拿大",
+      "countryEn": "Canada",
+      "fitScore": 83,
+      "fitTier": "A",
+      "marketScore": 3.7,
+      "marketStatus": "可开拓",
+      "agencyState": "open",
+      "url": "https://www.instagram.com/mec/",
+      "website": "",
+      "platformUrl": "https://www.instagram.com/mec/",
+      "contactUrl": "",
+      "contactSearchUrl": "",
+      "emailFrom": "",
+      "websiteContactSubject": "",
+      "websiteContactMessage": "",
+      "websiteContactFlow": "",
+      "publicEmail": "",
+      "publicEmailStatus": "",
+      "contactPhone": "",
+      "vendorPortal": "",
+      "linkedinUrl": "",
+      "headquarters": "",
+      "founded": "",
+      "companyScale": "",
+      "dataSources": null,
+      "alternateChannels": null,
+      "lastStatus": "sent_confirmed",
+      "lastEvidence": "instagram_message_sent_confirmed_composer_cleared;instagram_post_opened;post_like_not_available_or_already_active;comment_box_not_available;follow_clicked",
+      "lastTouch": "2026-06-30T12:42:01.936Z",
+      "action": "cooldown",
+      "reason": "previous_sent_confirmed_no_duplicate_dm",
+      "workingTime": {
+        "dueNow": false,
+        "timeZone": "America/Toronto",
+        "localTime": "Fri 17:03",
+        "window": "outside_work_hours",
+        "nextBest": "America/Toronto morning",
+        "weight": 0
+      },
+      "targetRegion": "americas",
+      "targetRegionScore": 30,
+      "contactChannelScore": 0,
+      "dealProbabilityScore": 175,
+      "priorityScore": 175
+    },
+    {
+      "id": "verified-Instagram-monasheeoutdoors",
+      "name": "monasheeoutdoors",
+      "company": "Monashee Outdoors",
+      "platform": "instagram",
+      "country": "加拿大",
+      "countryEn": "Canada",
+      "fitScore": 83,
+      "fitTier": "A",
+      "marketScore": 3.7,
+      "marketStatus": "可开拓",
+      "agencyState": "open",
+      "url": "https://www.instagram.com/monasheeoutdoors/",
+      "website": "",
+      "platformUrl": "https://www.instagram.com/monasheeoutdoors/",
+      "contactUrl": "",
+      "contactSearchUrl": "",
+      "emailFrom": "",
+      "websiteContactSubject": "",
+      "websiteContactMessage": "",
+      "websiteContactFlow": "",
+      "publicEmail": "",
+      "publicEmailStatus": "",
+      "contactPhone": "",
+      "vendorPortal": "",
+      "linkedinUrl": "",
+      "headquarters": "",
+      "founded": "",
+      "companyScale": "",
+      "dataSources": null,
+      "alternateChannels": null,
+      "lastStatus": "sent_confirmed",
+      "lastEvidence": "duplicate_risk: duplicate DM observed in Instagram chat; future sends locked",
+      "lastTouch": "2026-06-18T09:01:31.455Z",
+      "action": "cooldown",
+      "reason": "previous_sent_confirmed_no_duplicate_dm",
+      "workingTime": {
+        "dueNow": false,
+        "timeZone": "America/Toronto",
+        "localTime": "Fri 17:03",
+        "window": "outside_work_hours",
+        "nextBest": "America/Toronto morning",
+        "weight": 0
+      },
+      "targetRegion": "americas",
+      "targetRegionScore": 30,
+      "contactChannelScore": 0,
+      "dealProbabilityScore": 175,
+      "priorityScore": 175
     },
     {
       "id": "verified-Instagram-kfoutdoor",
@@ -1282,7 +1150,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Asia/Jakarta",
-        "localTime": "Sat 03:03",
+        "localTime": "Sat 04:03",
         "window": "off_workday",
         "nextBest": "Asia/Jakarta morning"
       },
@@ -1331,7 +1199,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Australia/Sydney",
-        "localTime": "Sat 06:03",
+        "localTime": "Sat 07:03",
         "window": "off_workday",
         "nextBest": "Australia/Sydney morning"
       },
@@ -1380,7 +1248,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Pacific/Auckland",
-        "localTime": "Sat 08:03",
+        "localTime": "Sat 09:03",
         "window": "off_workday",
         "nextBest": "Pacific/Auckland morning"
       },
@@ -1429,7 +1297,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Pacific/Auckland",
-        "localTime": "Sat 08:03",
+        "localTime": "Sat 09:03",
         "window": "off_workday",
         "nextBest": "Pacific/Auckland morning"
       },
@@ -1478,7 +1346,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Pacific/Auckland",
-        "localTime": "Sat 08:03",
+        "localTime": "Sat 09:03",
         "window": "off_workday",
         "nextBest": "Pacific/Auckland morning"
       },
@@ -1527,7 +1395,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Pacific/Auckland",
-        "localTime": "Sat 08:03",
+        "localTime": "Sat 09:03",
         "window": "off_workday",
         "nextBest": "Pacific/Auckland morning"
       },
@@ -1576,7 +1444,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Pacific/Auckland",
-        "localTime": "Sat 08:03",
+        "localTime": "Sat 09:03",
         "window": "off_workday",
         "nextBest": "Pacific/Auckland morning"
       },
@@ -1625,7 +1493,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Asia/Kolkata",
-        "localTime": "Sat 01:33",
+        "localTime": "Sat 02:33",
         "window": "off_workday",
         "nextBest": "Asia/Kolkata morning"
       },
@@ -1689,7 +1557,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/4 04:01:52",
+        "localTime": "2026/7/4 05:01:50",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -1767,7 +1635,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/4 04:01:52",
+        "localTime": "2026/7/4 05:01:50",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -1847,7 +1715,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/4 04:01:52",
+        "localTime": "2026/7/4 05:01:50",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -1925,7 +1793,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/4 04:01:52",
+        "localTime": "2026/7/4 05:01:50",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -2005,7 +1873,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/4 04:01:52",
+        "localTime": "2026/7/4 05:01:50",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -2083,7 +1951,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/4 04:01:52",
+        "localTime": "2026/7/4 05:01:50",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -2163,7 +2031,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/4 04:01:52",
+        "localTime": "2026/7/4 05:01:50",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -2241,7 +2109,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/4 04:01:52",
+        "localTime": "2026/7/4 05:01:50",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -2321,7 +2189,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/4 04:01:52",
+        "localTime": "2026/7/4 05:01:50",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -2406,7 +2274,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/4 04:01:52",
+        "localTime": "2026/7/4 05:01:50",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -2484,7 +2352,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/4 04:01:52",
+        "localTime": "2026/7/4 05:01:50",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -2564,7 +2432,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/4 04:01:52",
+        "localTime": "2026/7/4 05:01:50",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -2642,7 +2510,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/4 04:01:52",
+        "localTime": "2026/7/4 05:01:50",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -2722,7 +2590,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/4 04:01:52",
+        "localTime": "2026/7/4 05:01:50",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -2800,7 +2668,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/4 04:01:52",
+        "localTime": "2026/7/4 05:01:50",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -2880,14 +2748,14 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/4 04:01:52",
+        "localTime": "2026/7/4 05:01:50",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
       "platformUrl": "https://www.instagram.com/gooutdoors/",
       "url": "https://www.instagram.com/gooutdoors/",
       "action": "cooldown",
-      "reason": "7_day_no_repeat_touch",
+      "reason": "same_day_customer_already_developed",
       "alternateChannels": {
         "instagram": "https://www.instagram.com/gooutdoors/",
         "facebook": "https://www.facebook.com/GOoutdoorsUK/",
@@ -2900,12 +2768,63 @@
       "contactChannelScore": 17,
       "dealProbabilityScore": 214,
       "priorityScore": 214,
-      "lastStatus": "sent_confirmed",
-      "lastEvidence": "instagram_message_sent_confirmed_composer_cleared;instagram_post_opened;post_liked;comment_submitted;follow_already_active",
-      "lastTouch": "2026-06-30T13:05:04.429Z"
+      "lastStatus": "approval_pending",
+      "lastEvidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:2",
+      "lastTouch": "2026-07-03T21:02:48.695Z"
     }
   ],
-  "scheduledLater": [],
+  "scheduledLater": [
+    {
+      "id": "verified-Instagram-triedandtrout",
+      "name": "triedandtrout",
+      "company": "Tried & Trout Supply Co",
+      "platform": "instagram",
+      "country": "美国",
+      "countryEn": "United States",
+      "fitScore": 73,
+      "fitTier": "A",
+      "marketScore": 4.4,
+      "marketStatus": "可开拓",
+      "agencyState": "open",
+      "url": "https://www.instagram.com/triedandtroutsupply/",
+      "website": "",
+      "platformUrl": "https://www.instagram.com/triedandtroutsupply/",
+      "contactUrl": "",
+      "contactSearchUrl": "",
+      "emailFrom": "",
+      "websiteContactSubject": "",
+      "websiteContactMessage": "",
+      "websiteContactFlow": "",
+      "publicEmail": "",
+      "publicEmailStatus": "",
+      "contactPhone": "",
+      "vendorPortal": "",
+      "linkedinUrl": "",
+      "headquarters": "",
+      "founded": "",
+      "companyScale": "",
+      "dataSources": null,
+      "alternateChannels": null,
+      "lastStatus": "failed_open",
+      "lastEvidence": "profile_valid_no_message_button",
+      "lastTouch": "",
+      "action": "retry_or_alternate_channel",
+      "reason": "profile_valid_no_message_button",
+      "workingTime": {
+        "dueNow": false,
+        "timeZone": "America/New_York",
+        "localTime": "Fri 17:03",
+        "window": "outside_work_hours",
+        "nextBest": "America/New_York morning",
+        "weight": 0
+      },
+      "targetRegion": "americas",
+      "targetRegionScore": 30,
+      "contactChannelScore": 0,
+      "dealProbabilityScore": 174,
+      "priorityScore": 174
+    }
+  ],
   "bugChecks": [
     {
       "level": "warn",
