@@ -30,8 +30,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
         "engine": "codex-chrome-extension-cdp",
         "port": 9224,
         "targetUrl": "https://www.decathlon.fr/",
-        "tabId": "3857CB3395B53F686DABC8C299A87C6B",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/3857CB3395B53F686DABC8C299A87C6B",
+        "tabId": "2B37FFE1737544D4B100137F63B74E0C",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/2B37FFE1737544D4B100137F63B74E0C",
         "title": "Decathlon | Chaussures de sport, équipements et matériel sportif"
       },
       "result": {
@@ -45,8 +45,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
           "engine": "codex-chrome-extension-cdp",
           "port": 9224,
           "targetUrl": "https://www.decathlon.fr/",
-          "tabId": "3857CB3395B53F686DABC8C299A87C6B",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/3857CB3395B53F686DABC8C299A87C6B",
+          "tabId": "2B37FFE1737544D4B100137F63B74E0C",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/2B37FFE1737544D4B100137F63B74E0C",
           "title": "Decathlon | Chaussures de sport, équipements et matériel sportif"
         },
         "sendStatus": "approval_pending",
@@ -70,9 +70,9 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
         "engine": "codex-chrome-extension-cdp",
         "port": 9224,
         "targetUrl": "https://www.bever.nl/",
-        "tabId": "A34810058E6B708A67726CAA716A83C9",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/A34810058E6B708A67726CAA716A83C9",
-        "title": "dé buitenwinkel van Nederland | Bever"
+        "tabId": "EB6615D36144F59E0D059B8D108E1A2D",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/EB6615D36144F59E0D059B8D108E1A2D",
+        "title": ""
       },
       "result": {
         "ok": false,
@@ -85,9 +85,9 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
           "engine": "codex-chrome-extension-cdp",
           "port": 9224,
           "targetUrl": "https://www.bever.nl/",
-          "tabId": "A34810058E6B708A67726CAA716A83C9",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/A34810058E6B708A67726CAA716A83C9",
-          "title": "dé buitenwinkel van Nederland | Bever"
+          "tabId": "EB6615D36144F59E0D059B8D108E1A2D",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/EB6615D36144F59E0D059B8D108E1A2D",
+          "title": ""
         },
         "sendStatus": "approval_pending",
         "subject": "Flextail & Vollyc | Lightweight Outdoor & 3C Electronics – Potential Cooperation",
@@ -110,8 +110,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
         "engine": "codex-chrome-extension-cdp",
         "port": 9224,
         "targetUrl": "https://help.kathmanduoutdoor.com/support/solutions/articles/51000414624-sales-team-contact-details",
-        "tabId": "5915D21AF6C2E9CB184F5AC3663CEEAD",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/5915D21AF6C2E9CB184F5AC3663CEEAD",
+        "tabId": "3A11945D9B1F4A991927779394683678",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/3A11945D9B1F4A991927779394683678",
         "title": ""
       },
       "result": {
@@ -125,8 +125,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
           "engine": "codex-chrome-extension-cdp",
           "port": 9224,
           "targetUrl": "https://help.kathmanduoutdoor.com/support/solutions/articles/51000414624-sales-team-contact-details",
-          "tabId": "5915D21AF6C2E9CB184F5AC3663CEEAD",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/5915D21AF6C2E9CB184F5AC3663CEEAD",
+          "tabId": "3A11945D9B1F4A991927779394683678",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/3A11945D9B1F4A991927779394683678",
           "title": ""
         },
         "sendStatus": "approval_pending",
@@ -152,8 +152,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
         "engine": "codex-chrome-extension-cdp",
         "port": 9224,
         "targetUrl": "https://www.decathlon.fr/",
-        "tabId": "3857CB3395B53F686DABC8C299A87C6B",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/3857CB3395B53F686DABC8C299A87C6B",
+        "tabId": "2B37FFE1737544D4B100137F63B74E0C",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/2B37FFE1737544D4B100137F63B74E0C",
         "title": "Decathlon | Chaussures de sport, équipements et matériel sportif"
       },
       "result": {
@@ -167,8 +167,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
           "engine": "codex-chrome-extension-cdp",
           "port": 9224,
           "targetUrl": "https://www.decathlon.fr/",
-          "tabId": "3857CB3395B53F686DABC8C299A87C6B",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/3857CB3395B53F686DABC8C299A87C6B",
+          "tabId": "2B37FFE1737544D4B100137F63B74E0C",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/2B37FFE1737544D4B100137F63B74E0C",
           "title": "Decathlon | Chaussures de sport, équipements et matériel sportif"
         },
         "sendStatus": "approval_pending",
@@ -192,9 +192,9 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
         "engine": "codex-chrome-extension-cdp",
         "port": 9224,
         "targetUrl": "https://www.bever.nl/",
-        "tabId": "A34810058E6B708A67726CAA716A83C9",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/A34810058E6B708A67726CAA716A83C9",
-        "title": "dé buitenwinkel van Nederland | Bever"
+        "tabId": "EB6615D36144F59E0D059B8D108E1A2D",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/EB6615D36144F59E0D059B8D108E1A2D",
+        "title": ""
       },
       "result": {
         "ok": false,
@@ -207,9 +207,9 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
           "engine": "codex-chrome-extension-cdp",
           "port": 9224,
           "targetUrl": "https://www.bever.nl/",
-          "tabId": "A34810058E6B708A67726CAA716A83C9",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/A34810058E6B708A67726CAA716A83C9",
-          "title": "dé buitenwinkel van Nederland | Bever"
+          "tabId": "EB6615D36144F59E0D059B8D108E1A2D",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/EB6615D36144F59E0D059B8D108E1A2D",
+          "title": ""
         },
         "sendStatus": "approval_pending",
         "subject": "Flextail & Vollyc | Lightweight Outdoor & 3C Electronics – Potential Cooperation",
@@ -232,8 +232,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
         "engine": "codex-chrome-extension-cdp",
         "port": 9224,
         "targetUrl": "https://help.kathmanduoutdoor.com/support/solutions/articles/51000414624-sales-team-contact-details",
-        "tabId": "5915D21AF6C2E9CB184F5AC3663CEEAD",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/5915D21AF6C2E9CB184F5AC3663CEEAD",
+        "tabId": "3A11945D9B1F4A991927779394683678",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/3A11945D9B1F4A991927779394683678",
         "title": ""
       },
       "result": {
@@ -247,8 +247,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
           "engine": "codex-chrome-extension-cdp",
           "port": 9224,
           "targetUrl": "https://help.kathmanduoutdoor.com/support/solutions/articles/51000414624-sales-team-contact-details",
-          "tabId": "5915D21AF6C2E9CB184F5AC3663CEEAD",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/5915D21AF6C2E9CB184F5AC3663CEEAD",
+          "tabId": "3A11945D9B1F4A991927779394683678",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/3A11945D9B1F4A991927779394683678",
           "title": ""
         },
         "sendStatus": "approval_pending",
@@ -307,12 +307,12 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     "stderr": "",
     "error": "",
     "visibility": {
-      "updatedAt": "2026-07-04T03:04:24.259Z",
+      "updatedAt": "2026-07-04T04:03:08.375Z",
       "source": "main-refreshDailyAutomationArtifacts",
       "runDate": "2026-07-04",
-      "artifactGeneratedAt": "2026-07-04T03:04:21.941Z",
-      "executionGeneratedAt": "2026-07-04T02:02:49.021Z",
-      "githubSyncUpdatedAt": "2026-07-04T02:03:31.512Z",
+      "artifactGeneratedAt": "2026-07-04T04:03:06.875Z",
+      "executionGeneratedAt": "2026-07-04T03:04:24.758Z",
+      "githubSyncUpdatedAt": "2026-07-04T03:05:00.803Z",
       "counts": {
         "dailyQueue": 6,
         "googleDiscovered": 6,
@@ -358,5 +358,5 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       }
     }
   },
-  "completedAt": "2026-07-04T03:04:24.758Z"
+  "completedAt": "2026-07-04T04:03:08.955Z"
 };
