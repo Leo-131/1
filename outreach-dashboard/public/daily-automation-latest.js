@@ -1,5 +1,5 @@
 window.DAILY_AUTOMATION_LATEST = {
-  "generatedAt": "2026-07-04T01:03:33.835Z",
+  "generatedAt": "2026-07-04T01:06:30.039Z",
   "date": "2026-07-04",
   "mode": "daily-icp-first-automation-loop",
   "executionLayer": "Codex Chrome Extension primary; AutoClaw compatible",
@@ -51,10 +51,10 @@ window.DAILY_AUTOMATION_LATEST = {
     "totalLeads": 16,
     "highIcp": 16,
     "readyToDevelop": 0,
-    "dueNow": 7,
-    "googleDiscovered": 7,
+    "dueNow": 6,
+    "googleDiscovered": 6,
     "facebookDiscovered": 0,
-    "websiteContactDiscovered": 7,
+    "websiteContactDiscovered": 6,
     "scheduledLater": 1,
     "cooldown": 30,
     "emailPriority": 0,
@@ -118,7 +118,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/4 09:02:04",
+        "localTime": "2026/7/4 09:05:05",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -200,7 +200,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/4 09:02:04",
+        "localTime": "2026/7/4 09:05:05",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -227,88 +227,6 @@ window.DAILY_AUTOMATION_LATEST = {
       "contactChannelScore": 29,
       "dealProbabilityScore": 226,
       "priorityScore": 224
-    },
-    {
-      "linkedinUrl": "https://ca.linkedin.com/company/mountainequipmentcompany",
-      "founded": "1971",
-      "headquarters": "Vancouver, British Columbia, Canada",
-      "companyScale": "Canadian national outdoor retailer; established 1971",
-      "coverage": "Canada",
-      "mainBrands": "Outdoor gear, apparel and equipment for camping, climbing, hiking, cycling, snow and travel",
-      "salesChannel": "Stores, ecommerce, membership/community channel",
-      "buyingCapability": "High; category/brand partnership or merchandising route required",
-      "decisionMaker": "Camping equipment category merchant, brand partnerships, vendor review contact",
-      "publicEmail": "info@mec.ca",
-      "publicEmailStatus": "Public general information/customer contact email; buyer email not publicly verified.",
-      "contactPhone": "1-888-847-0770",
-      "vendorPortal": "https://www.mec.ca/en/contact-us",
-      "linkedinCompany": "https://ca.linkedin.com/company/mountainequipmentcompany",
-      "contactNote": "Use info/contact path first; ask for camping/outdoor accessories category buyer or brand partnership contact.",
-      "dataSources": [
-        "MEC LinkedIn",
-        "MEC public contact/FAQ sources"
-      ],
-      "id": "google-customer-mec-website-contact",
-      "name": "MEC",
-      "company": "MEC",
-      "country": "Canada",
-      "countryEn": "Canada",
-      "fitScore": 94,
-      "fitTier": "A+",
-      "marketScore": 4.5,
-      "marketStatus": "open",
-      "agencyState": "open",
-      "keyword": "outdoor retail chain",
-      "role": "Camping equipment / outdoor accessories category buyer.",
-      "background": "Canadian outdoor retail co-op focused on camping, hiking, climbing, travel, and outdoor gear.",
-      "buyerPersona": "Camping equipment / outdoor accessories category buyer.",
-      "productCategory": "outdoor retail chain",
-      "businessModel": "Retail Chain",
-      "productFit": "FLEXTAIL portable pumps, outdoor power, camping lighting and compact camping accessories",
-      "opportunity": "Canadian outdoor retail co-op focused on camping, hiking, climbing, travel, and outdoor gear.",
-      "linkedin_url": "https://ca.linkedin.com/company/mountainequipmentcompany",
-      "linkedin": "https://ca.linkedin.com/company/mountainequipmentcompany",
-      "contactEmail": "info@mec.ca",
-      "website": "https://www.mec.ca/",
-      "evidenceUrl": "https://www.google.com/search?q=%22MEC%22%20%22outdoor%20retail%20chain%22%20%22Canada%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "query": "https://www.google.com/search?q=%22MEC%22%20%22outdoor%20retail%20chain%22%20%22Canada%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "source": "google_customer_discovery",
-      "identityStatus": "verified",
-      "partnershipStatus": "",
-      "doNotOutreach": false,
-      "automationStatus": "",
-      "partnerNote": "",
-      "sendStatus": "",
-      "workingTime": {
-        "dueNow": true,
-        "timeZone": "local-market",
-        "localTime": "2026/7/4 09:02:04",
-        "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
-      },
-      "platform": "email",
-      "platformUrl": "https://www.mec.ca/en/contact-us",
-      "url": "https://www.mec.ca/en/contact-us",
-      "contactUrl": "https://www.mec.ca/en/contact-us",
-      "contactSearchUrl": "https://www.google.com/search?q=site%3Awww.mec.ca%20%22MEC%22%20contact%20buyer%20wholesale%20email%20vendor",
-      "emailFrom": "leo@flextailgear.com",
-      "websiteContactSubject": "Flextail & Vollyc | Lightweight Outdoor & 3C Electronics – Potential Cooperation",
-      "websiteContactMessage": "Dear MEC Team,\n\nNice to e-meet you.\nI am Leo, from Flextail & Vollyc.\n\nFlextail is our first and core brand, specializing in ultralight electric products for outdoor, travel, and home use. The brand is currently Top 1 on Amazon, with strong global sell-through and a proven product-market fit.\nVollyc, our second brand, focuses on 3C electronics, targeting practical, high-rotation consumer use cases.\n\nFrom our perspective, your platform and positioning are highly aligned with Flextail’s product philosophy, especially in lightweight outdoor and travel-oriented electrics.\n\nWe have already contacted with your team, and we are now actively exploring opportunities in other regions.\nAttached, you will find a brief introduction to our brands and current product catalog for your reference.\n\nLooking ahead, we are planning to launch over 36 new SKUs in 2026, covering multiple usage scenarios and price tiers, which we believe could be of interest to your assortment strategy.\n\nIf you are available, I would greatly appreciate the opportunity to arrange a short introductory video meeting to present our brands and discuss potential collaboration opportunities.\n\nThank you for your time and consideration. I look forward to your reply.\n\n[Flextail.com](https://www.flextail.com/), [vollyc.com](https://vollyc.com/)\n\n[Sincerely](https://wa.me/8617321028184)\n[Best Regard](https://wa.me/8617321028184)\n[Leo Liu](https://wa.me/8617321028184)\n[Sales](https://wa.me/8617321028184) [& Operations Director](https://wa.me/8617321028184)\n[Brand & ODM Department](https://wa.me/8617321028184)\n[Tel/whatsapp:  +86 17321028184](https://wa.me/8617321028184)\n\n[Email:  Leo@flextailgear.com](https://wa.me/8617321028184)\n[SHANGHAI FLEXTAIL TECHNOLOGY CO.,LTD.](https://wa.me/8617321028184)\n[Room103, Building No.6, No.1 Yanjiaqiao, Pudong District, ShangHai, China](https://wa.me/8617321028184)\n",
-      "websiteContactFlow": "open_official_contact_us_fill_attach_auto_submit",
-      "action": "email_priority",
-      "reason": "official_website_contact_channel",
-      "alternateChannels": {
-        "instagram": "https://www.instagram.com/mec/",
-        "facebook": "https://www.facebook.com/MountainEquipmentCoop",
-        "websiteContact": "https://www.mec.ca/en/contact-us"
-      },
-      "invalidChannels": {},
-      "identitySource": "official website contact path + Google buyer/contact query",
-      "channelPriority": 3,
-      "targetRegion": "americas",
-      "targetRegionScore": 30,
-      "contactChannelScore": 29,
-      "dealProbabilityScore": 225,
-      "priorityScore": 223
     },
     {
       "linkedinUrl": "https://www.linkedin.com/company/decathlon-group",
@@ -364,7 +282,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/4 09:02:04",
+        "localTime": "2026/7/4 09:05:05",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -446,7 +364,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/4 09:02:04",
+        "localTime": "2026/7/4 09:05:05",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -528,7 +446,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/4 09:02:04",
+        "localTime": "2026/7/4 09:05:05",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -610,7 +528,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/4 09:02:04",
+        "localTime": "2026/7/4 09:05:05",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -679,7 +597,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/London",
-        "localTime": "Sat 02:03",
+        "localTime": "Sat 02:06",
         "window": "off_workday",
         "nextBest": "Europe/London morning"
       },
@@ -728,7 +646,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Fri 21:03",
+        "localTime": "Fri 21:06",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -778,7 +696,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/London",
-        "localTime": "Sat 02:03",
+        "localTime": "Sat 02:06",
         "window": "off_workday",
         "nextBest": "Europe/London morning"
       },
@@ -827,7 +745,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/London",
-        "localTime": "Sat 02:03",
+        "localTime": "Sat 02:06",
         "window": "off_workday",
         "nextBest": "Europe/London morning"
       },
@@ -868,15 +786,15 @@ window.DAILY_AUTOMATION_LATEST = {
       "companyScale": "",
       "dataSources": null,
       "alternateChannels": null,
-      "lastStatus": "sent_confirmed",
-      "lastEvidence": "instagram_message_sent_confirmed_composer_cleared;instagram_post_opened;post_like_not_available_or_already_active;comment_box_not_available;follow_clicked",
-      "lastTouch": "2026-06-30T12:42:01.936Z",
+      "lastStatus": "approval_pending",
+      "lastEvidence": "contact_entry_verified;contact_form_detected;contact_entry_clicked:contact us;website_contact_form_fields_prepared;marketing_attachment_missing;website_contact_target_attempts:2",
+      "lastTouch": "2026-07-04T01:05:34.293Z",
       "action": "cooldown",
-      "reason": "previous_sent_confirmed_no_duplicate_dm",
+      "reason": "same_day_customer_already_developed",
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Fri 21:03",
+        "localTime": "Fri 21:06",
         "window": "outside_work_hours",
         "nextBest": "America/Toronto morning",
         "weight": 0
@@ -926,7 +844,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Fri 21:03",
+        "localTime": "Fri 21:06",
         "window": "outside_work_hours",
         "nextBest": "America/Toronto morning",
         "weight": 0
@@ -976,7 +894,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Asia/Jakarta",
-        "localTime": "Sat 08:03",
+        "localTime": "Sat 08:06",
         "window": "off_workday",
         "nextBest": "Asia/Jakarta morning"
       },
@@ -1025,7 +943,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Australia/Sydney",
-        "localTime": "Sat 11:03",
+        "localTime": "Sat 11:06",
         "window": "off_workday",
         "nextBest": "Australia/Sydney morning"
       },
@@ -1074,7 +992,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Pacific/Auckland",
-        "localTime": "Sat 13:03",
+        "localTime": "Sat 13:06",
         "window": "off_workday",
         "nextBest": "Pacific/Auckland morning"
       },
@@ -1123,7 +1041,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Pacific/Auckland",
-        "localTime": "Sat 13:03",
+        "localTime": "Sat 13:06",
         "window": "off_workday",
         "nextBest": "Pacific/Auckland morning"
       },
@@ -1172,7 +1090,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Pacific/Auckland",
-        "localTime": "Sat 13:03",
+        "localTime": "Sat 13:06",
         "window": "off_workday",
         "nextBest": "Pacific/Auckland morning"
       },
@@ -1221,7 +1139,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Pacific/Auckland",
-        "localTime": "Sat 13:03",
+        "localTime": "Sat 13:06",
         "window": "off_workday",
         "nextBest": "Pacific/Auckland morning"
       },
@@ -1270,7 +1188,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Pacific/Auckland",
-        "localTime": "Sat 13:03",
+        "localTime": "Sat 13:06",
         "window": "off_workday",
         "nextBest": "Pacific/Auckland morning"
       },
@@ -1319,7 +1237,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Asia/Kolkata",
-        "localTime": "Sat 06:33",
+        "localTime": "Sat 06:36",
         "window": "off_workday",
         "nextBest": "Asia/Kolkata morning"
       },
@@ -1383,7 +1301,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/4 09:02:04",
+        "localTime": "2026/7/4 09:05:05",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -1461,7 +1379,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/4 09:02:04",
+        "localTime": "2026/7/4 09:05:05",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -1541,7 +1459,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/4 09:02:04",
+        "localTime": "2026/7/4 09:05:05",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -1619,7 +1537,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/4 09:02:04",
+        "localTime": "2026/7/4 09:05:05",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -1699,14 +1617,14 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/4 09:02:04",
+        "localTime": "2026/7/4 09:05:05",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
       "platformUrl": "https://www.instagram.com/mec/",
       "url": "https://www.instagram.com/mec/",
       "action": "cooldown",
-      "reason": "7_day_no_repeat_touch",
+      "reason": "same_day_customer_already_developed",
       "alternateChannels": {
         "instagram": "https://www.instagram.com/mec/",
         "facebook": "https://www.facebook.com/MountainEquipmentCoop",
@@ -1719,9 +1637,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "contactChannelScore": 29,
       "dealProbabilityScore": 225,
       "priorityScore": 225,
-      "lastStatus": "sent_confirmed",
-      "lastEvidence": "instagram_message_sent_confirmed_composer_cleared;instagram_post_opened;post_like_not_available_or_already_active;comment_box_not_available;follow_clicked",
-      "lastTouch": "2026-06-30T12:42:01.936Z"
+      "lastStatus": "approval_pending",
+      "lastEvidence": "contact_entry_verified;contact_form_detected;contact_entry_clicked:contact us;website_contact_form_fields_prepared;marketing_attachment_missing;website_contact_target_attempts:2",
+      "lastTouch": "2026-07-04T01:05:34.293Z"
     },
     {
       "linkedinUrl": "https://ca.linkedin.com/company/mountainequipmentcompany",
@@ -1777,14 +1695,14 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/4 09:02:04",
+        "localTime": "2026/7/4 09:05:05",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
       "platformUrl": "https://www.facebook.com/MountainEquipmentCoop",
       "url": "https://www.facebook.com/MountainEquipmentCoop",
       "action": "cooldown",
-      "reason": "7_day_no_repeat_touch",
+      "reason": "same_day_customer_already_developed",
       "alternateChannels": {
         "instagram": "https://www.instagram.com/mec/",
         "facebook": "https://www.facebook.com/MountainEquipmentCoop",
@@ -1799,9 +1717,94 @@ window.DAILY_AUTOMATION_LATEST = {
       "contactChannelScore": 29,
       "dealProbabilityScore": 225,
       "priorityScore": 225,
-      "lastStatus": "sent_confirmed",
-      "lastEvidence": "facebook_message_sent_confirmed_composer_cleared",
-      "lastTouch": "2026-06-26T05:22:33.084Z"
+      "lastStatus": "approval_pending",
+      "lastEvidence": "contact_entry_verified;contact_form_detected;contact_entry_clicked:contact us;website_contact_form_fields_prepared;marketing_attachment_missing;website_contact_target_attempts:2",
+      "lastTouch": "2026-07-04T01:05:34.293Z"
+    },
+    {
+      "linkedinUrl": "https://ca.linkedin.com/company/mountainequipmentcompany",
+      "founded": "1971",
+      "headquarters": "Vancouver, British Columbia, Canada",
+      "companyScale": "Canadian national outdoor retailer; established 1971",
+      "coverage": "Canada",
+      "mainBrands": "Outdoor gear, apparel and equipment for camping, climbing, hiking, cycling, snow and travel",
+      "salesChannel": "Stores, ecommerce, membership/community channel",
+      "buyingCapability": "High; category/brand partnership or merchandising route required",
+      "decisionMaker": "Camping equipment category merchant, brand partnerships, vendor review contact",
+      "publicEmail": "info@mec.ca",
+      "publicEmailStatus": "Public general information/customer contact email; buyer email not publicly verified.",
+      "contactPhone": "1-888-847-0770",
+      "vendorPortal": "https://www.mec.ca/en/contact-us",
+      "linkedinCompany": "https://ca.linkedin.com/company/mountainequipmentcompany",
+      "contactNote": "Use info/contact path first; ask for camping/outdoor accessories category buyer or brand partnership contact.",
+      "dataSources": [
+        "MEC LinkedIn",
+        "MEC public contact/FAQ sources"
+      ],
+      "id": "google-customer-mec-website-contact",
+      "name": "MEC",
+      "company": "MEC",
+      "country": "Canada",
+      "countryEn": "Canada",
+      "fitScore": 94,
+      "fitTier": "A+",
+      "marketScore": 4.5,
+      "marketStatus": "open",
+      "agencyState": "open",
+      "keyword": "outdoor retail chain",
+      "role": "Camping equipment / outdoor accessories category buyer.",
+      "background": "Canadian outdoor retail co-op focused on camping, hiking, climbing, travel, and outdoor gear.",
+      "buyerPersona": "Camping equipment / outdoor accessories category buyer.",
+      "productCategory": "outdoor retail chain",
+      "businessModel": "Retail Chain",
+      "productFit": "FLEXTAIL portable pumps, outdoor power, camping lighting and compact camping accessories",
+      "opportunity": "Canadian outdoor retail co-op focused on camping, hiking, climbing, travel, and outdoor gear.",
+      "linkedin_url": "https://ca.linkedin.com/company/mountainequipmentcompany",
+      "linkedin": "https://ca.linkedin.com/company/mountainequipmentcompany",
+      "contactEmail": "info@mec.ca",
+      "website": "https://www.mec.ca/",
+      "evidenceUrl": "https://www.google.com/search?q=%22MEC%22%20%22outdoor%20retail%20chain%22%20%22Canada%22%20buyer%20OR%20wholesale%20OR%20contact",
+      "query": "https://www.google.com/search?q=%22MEC%22%20%22outdoor%20retail%20chain%22%20%22Canada%22%20buyer%20OR%20wholesale%20OR%20contact",
+      "source": "google_customer_discovery",
+      "identityStatus": "verified",
+      "partnershipStatus": "",
+      "doNotOutreach": false,
+      "automationStatus": "",
+      "partnerNote": "",
+      "sendStatus": "",
+      "workingTime": {
+        "dueNow": true,
+        "timeZone": "local-market",
+        "localTime": "2026/7/4 09:05:05",
+        "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
+      },
+      "platform": "email",
+      "platformUrl": "https://www.mec.ca/en/contact-us",
+      "url": "https://www.mec.ca/en/contact-us",
+      "contactUrl": "https://www.mec.ca/en/contact-us",
+      "contactSearchUrl": "https://www.google.com/search?q=site%3Awww.mec.ca%20%22MEC%22%20contact%20buyer%20wholesale%20email%20vendor",
+      "emailFrom": "leo@flextailgear.com",
+      "websiteContactSubject": "Flextail & Vollyc | Lightweight Outdoor & 3C Electronics – Potential Cooperation",
+      "websiteContactMessage": "Dear MEC Team,\n\nNice to e-meet you.\nI am Leo, from Flextail & Vollyc.\n\nFlextail is our first and core brand, specializing in ultralight electric products for outdoor, travel, and home use. The brand is currently Top 1 on Amazon, with strong global sell-through and a proven product-market fit.\nVollyc, our second brand, focuses on 3C electronics, targeting practical, high-rotation consumer use cases.\n\nFrom our perspective, your platform and positioning are highly aligned with Flextail’s product philosophy, especially in lightweight outdoor and travel-oriented electrics.\n\nWe have already contacted with your team, and we are now actively exploring opportunities in other regions.\nAttached, you will find a brief introduction to our brands and current product catalog for your reference.\n\nLooking ahead, we are planning to launch over 36 new SKUs in 2026, covering multiple usage scenarios and price tiers, which we believe could be of interest to your assortment strategy.\n\nIf you are available, I would greatly appreciate the opportunity to arrange a short introductory video meeting to present our brands and discuss potential collaboration opportunities.\n\nThank you for your time and consideration. I look forward to your reply.\n\n[Flextail.com](https://www.flextail.com/), [vollyc.com](https://vollyc.com/)\n\n[Sincerely](https://wa.me/8617321028184)\n[Best Regard](https://wa.me/8617321028184)\n[Leo Liu](https://wa.me/8617321028184)\n[Sales](https://wa.me/8617321028184) [& Operations Director](https://wa.me/8617321028184)\n[Brand & ODM Department](https://wa.me/8617321028184)\n[Tel/whatsapp:  +86 17321028184](https://wa.me/8617321028184)\n\n[Email:  Leo@flextailgear.com](https://wa.me/8617321028184)\n[SHANGHAI FLEXTAIL TECHNOLOGY CO.,LTD.](https://wa.me/8617321028184)\n[Room103, Building No.6, No.1 Yanjiaqiao, Pudong District, ShangHai, China](https://wa.me/8617321028184)\n",
+      "websiteContactFlow": "open_official_contact_us_fill_attach_auto_submit",
+      "action": "cooldown",
+      "reason": "same_day_customer_already_developed",
+      "alternateChannels": {
+        "instagram": "https://www.instagram.com/mec/",
+        "facebook": "https://www.facebook.com/MountainEquipmentCoop",
+        "websiteContact": "https://www.mec.ca/en/contact-us"
+      },
+      "invalidChannels": {},
+      "identitySource": "official website contact path + Google buyer/contact query",
+      "channelPriority": 3,
+      "targetRegion": "americas",
+      "targetRegionScore": 30,
+      "contactChannelScore": 29,
+      "dealProbabilityScore": 225,
+      "priorityScore": 225,
+      "lastStatus": "approval_pending",
+      "lastEvidence": "contact_entry_verified;contact_form_detected;contact_entry_clicked:contact us;website_contact_form_fields_prepared;marketing_attachment_missing;website_contact_target_attempts:2",
+      "lastTouch": "2026-07-04T01:05:34.293Z"
     },
     {
       "linkedinUrl": "https://uk.linkedin.com/company/cotswold-outdoor",
@@ -1857,7 +1860,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/4 09:02:04",
+        "localTime": "2026/7/4 09:05:05",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -1935,7 +1938,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/4 09:02:04",
+        "localTime": "2026/7/4 09:05:05",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -2015,7 +2018,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/4 09:02:04",
+        "localTime": "2026/7/4 09:05:05",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -2100,7 +2103,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/4 09:02:04",
+        "localTime": "2026/7/4 09:05:05",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -2178,7 +2181,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/4 09:02:04",
+        "localTime": "2026/7/4 09:05:05",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -2258,7 +2261,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/4 09:02:04",
+        "localTime": "2026/7/4 09:05:05",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -2336,7 +2339,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/4 09:02:04",
+        "localTime": "2026/7/4 09:05:05",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -2416,7 +2419,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/4 09:02:04",
+        "localTime": "2026/7/4 09:05:05",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -2494,7 +2497,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/4 09:02:04",
+        "localTime": "2026/7/4 09:05:05",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -2519,84 +2522,6 @@ window.DAILY_AUTOMATION_LATEST = {
       "lastStatus": "sent_confirmed",
       "lastEvidence": "facebook_platform_engagement_confirmed;comment_submitted;post_liked_or_reacted;account_followed;dm_sent_confirmed;share_repost_skipped_by_policy",
       "lastTouch": "2026-06-26T10:06:37.586Z"
-    },
-    {
-      "linkedinUrl": "https://uk.linkedin.com/company/go-outdoors-ltd",
-      "founded": "1969",
-      "headquarters": "Bury, Lancashire, United Kingdom",
-      "companyScale": "1,001-5,000 employees; major UK outdoor retail chain",
-      "coverage": "United Kingdom",
-      "mainBrands": "Camping equipment, outdoor clothing/footwear, cycling, fishing, caravanning, tents",
-      "salesChannel": "Stores and ecommerce",
-      "buyingCapability": "High; category buyer or JD Outdoors/GO Outdoors merchandising route",
-      "decisionMaker": "Camping equipment buyer, outdoor accessories category manager, vendor review contact",
-      "publicEmail": "",
-      "publicEmailStatus": "No public buyer email verified; use official contact page and LinkedIn category research.",
-      "contactPhone": "+44 330 008 1555",
-      "vendorPortal": "https://www.gooutdoors.co.uk/contact-us",
-      "linkedinCompany": "https://uk.linkedin.com/company/go-outdoors-ltd",
-      "contactNote": "Use official contact route and ask for camping/accessories buyer; validate any personal emails before use.",
-      "dataSources": [
-        "GO Outdoors LinkedIn",
-        "GO Outdoors public company/contact sources"
-      ],
-      "id": "google-customer-go-outdoors-instagram",
-      "name": "GO Outdoors",
-      "company": "GO Outdoors",
-      "country": "United Kingdom",
-      "countryEn": "United Kingdom",
-      "fitScore": 93,
-      "fitTier": "A+",
-      "marketScore": 4.5,
-      "marketStatus": "open",
-      "agencyState": "open",
-      "keyword": "outdoor retail chain",
-      "role": "Camping and outdoor accessories buyer.",
-      "background": "UK outdoor retailer with camping, tents, hiking, cycling, and outdoor equipment categories.",
-      "buyerPersona": "Camping and outdoor accessories buyer.",
-      "productCategory": "outdoor retail chain",
-      "businessModel": "Retail Chain",
-      "productFit": "FLEXTAIL portable pumps, outdoor power, camping lighting and compact camping accessories",
-      "opportunity": "UK outdoor retailer with camping, tents, hiking, cycling, and outdoor equipment categories.",
-      "linkedin_url": "https://uk.linkedin.com/company/go-outdoors-ltd",
-      "linkedin": "https://uk.linkedin.com/company/go-outdoors-ltd",
-      "contactEmail": "",
-      "website": "https://www.gooutdoors.co.uk/",
-      "evidenceUrl": "https://www.google.com/search?q=%22GO%20Outdoors%22%20%22outdoor%20retail%20chain%22%20%22United%20Kingdom%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "query": "https://www.google.com/search?q=%22GO%20Outdoors%22%20%22outdoor%20retail%20chain%22%20%22United%20Kingdom%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "source": "google_customer_discovery",
-      "identityStatus": "verified",
-      "partnershipStatus": "",
-      "doNotOutreach": false,
-      "automationStatus": "",
-      "partnerNote": "",
-      "sendStatus": "",
-      "workingTime": {
-        "dueNow": true,
-        "timeZone": "local-market",
-        "localTime": "2026/7/4 09:02:04",
-        "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
-      },
-      "platform": "instagram",
-      "platformUrl": "https://www.instagram.com/gooutdoors/",
-      "url": "https://www.instagram.com/gooutdoors/",
-      "action": "cooldown",
-      "reason": "same_day_customer_already_developed",
-      "alternateChannels": {
-        "instagram": "https://www.instagram.com/gooutdoors/",
-        "facebook": "https://www.facebook.com/GOoutdoorsUK/",
-        "websiteContact": "https://www.gooutdoors.co.uk/contact-us"
-      },
-      "identitySource": "official website/social profile + Google background query",
-      "channelPriority": 1,
-      "targetRegion": "europe",
-      "targetRegionScore": 32,
-      "contactChannelScore": 17,
-      "dealProbabilityScore": 214,
-      "priorityScore": 214,
-      "lastStatus": "approval_pending",
-      "lastEvidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:2",
-      "lastTouch": "2026-07-03T21:02:48.695Z"
     }
   ],
   "scheduledLater": [
@@ -2639,7 +2564,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Fri 21:03",
+        "localTime": "Fri 21:06",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
