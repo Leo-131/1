@@ -1,6 +1,6 @@
 window.DAILY_AUTOMATION_LATEST = {
-  "generatedAt": "2026-07-04T09:02:31.465Z",
-  "date": "2026-07-04",
+  "generatedAt": "2026-07-05T01:07:05.702Z",
+  "date": "2026-07-05",
   "mode": "daily-icp-first-automation-loop",
   "executionLayer": "Codex Chrome Extension primary; AutoClaw compatible",
   "limits": {
@@ -50,11 +50,11 @@ window.DAILY_AUTOMATION_LATEST = {
   "summary": {
     "totalLeads": 16,
     "highIcp": 16,
-    "readyToDevelop": 0,
-    "dueNow": 6,
-    "googleDiscovered": 6,
-    "facebookDiscovered": 0,
-    "websiteContactDiscovered": 6,
+    "readyToDevelop": 1,
+    "dueNow": 8,
+    "googleDiscovered": 8,
+    "facebookDiscovered": 1,
+    "websiteContactDiscovered": 7,
     "scheduledLater": 1,
     "cooldown": 30,
     "emailPriority": 0,
@@ -118,7 +118,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/4 17:01:15",
+        "localTime": "2026/7/5 09:05:04",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -200,7 +200,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/4 17:01:15",
+        "localTime": "2026/7/5 09:05:04",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -282,7 +282,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/4 17:01:15",
+        "localTime": "2026/7/5 09:05:04",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -364,7 +364,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/4 17:01:15",
+        "localTime": "2026/7/5 09:05:04",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -391,6 +391,177 @@ window.DAILY_AUTOMATION_LATEST = {
       "contactChannelScore": 29,
       "dealProbabilityScore": 219,
       "priorityScore": 217
+    },
+    {
+      "linkedinUrl": "https://ca.linkedin.com/company/sailpleinairoutdoors",
+      "founded": "1981",
+      "headquarters": "Beloeil, Quebec, Canada",
+      "companyScale": "Quebec/Ontario outdoor, camping, hunting and fishing retail network",
+      "coverage": "Eastern Canada",
+      "mainBrands": "Brand-name outdoor sports, camping, hunting and fishing products",
+      "salesChannel": "Stores and ecommerce",
+      "buyingCapability": "Medium/High; regional Canadian outdoor chain",
+      "decisionMaker": "Camping/outdoor equipment department buyer or merchandising manager",
+      "publicEmail": "",
+      "publicEmailStatus": "No public buyer email verified; Instagram profile is broken, use Facebook or official contact page.",
+      "contactPhone": "",
+      "vendorPortal": "https://www.sail.ca/en/contact-us",
+      "linkedinCompany": "https://ca.linkedin.com/company/sailpleinairoutdoors",
+      "contactNote": "Reroute away from broken Instagram URL; use Facebook page and official contact page.",
+      "dataSources": [
+        "SAIL LinkedIn",
+        "SAIL public contact page/job descriptions"
+      ],
+      "id": "google-customer-sail-outdoors-facebook",
+      "name": "Sail Outdoors",
+      "company": "Sail Outdoors",
+      "country": "Canada",
+      "countryEn": "Canada",
+      "fitScore": 91,
+      "fitTier": "A+",
+      "marketScore": 4.5,
+      "marketStatus": "open",
+      "agencyState": "open",
+      "keyword": "outdoor retail chain",
+      "role": "Outdoor equipment buyer or merchandising lead.",
+      "background": "Canadian outdoor retailer for camping, fishing, hunting, apparel, and equipment.",
+      "buyerPersona": "Outdoor equipment buyer or merchandising lead.",
+      "productCategory": "outdoor retail chain",
+      "businessModel": "Retail Chain",
+      "productFit": "FLEXTAIL portable pumps, outdoor power, camping lighting and compact camping accessories",
+      "opportunity": "Canadian outdoor retailer for camping, fishing, hunting, apparel, and equipment.",
+      "linkedin_url": "https://ca.linkedin.com/company/sailpleinairoutdoors",
+      "linkedin": "https://ca.linkedin.com/company/sailpleinairoutdoors",
+      "contactEmail": "",
+      "website": "https://www.sail.ca/",
+      "evidenceUrl": "https://www.google.com/search?q=%22Sail%20Outdoors%22%20%22outdoor%20retail%20chain%22%20%22Canada%22%20buyer%20OR%20wholesale%20OR%20contact",
+      "query": "https://www.google.com/search?q=%22Sail%20Outdoors%22%20%22outdoor%20retail%20chain%22%20%22Canada%22%20buyer%20OR%20wholesale%20OR%20contact",
+      "source": "google_customer_discovery",
+      "identityStatus": "verified",
+      "partnershipStatus": "",
+      "doNotOutreach": false,
+      "automationStatus": "",
+      "partnerNote": "",
+      "sendStatus": "",
+      "workingTime": {
+        "dueNow": true,
+        "timeZone": "local-market",
+        "localTime": "2026/7/5 09:05:04",
+        "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
+      },
+      "platform": "facebook",
+      "platformUrl": "https://www.facebook.com/SAILoutdoors",
+      "url": "https://www.facebook.com/SAILoutdoors",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_facebook",
+      "alternateChannels": {
+        "instagram": "",
+        "facebook": "https://www.facebook.com/SAILoutdoors",
+        "websiteContact": "https://www.sail.ca/en/contact-us"
+      },
+      "invalidChannels": {
+        "instagram": {
+          "url": "https://www.instagram.com/sailoutdoors/",
+          "status": "broken_profile_url",
+          "evidence": "Instagram reports this page is unavailable; use Facebook or official website contact instead."
+        }
+      },
+      "facebookStatus": "verified_official_page_candidate",
+      "identitySource": "official Facebook page candidate + official website + Google background query",
+      "channelPriority": 2,
+      "targetRegion": "americas",
+      "targetRegionScore": 30,
+      "contactChannelScore": 17,
+      "dealProbabilityScore": 210,
+      "priorityScore": 210
+    },
+    {
+      "linkedinUrl": "https://ca.linkedin.com/company/sailpleinairoutdoors",
+      "founded": "1981",
+      "headquarters": "Beloeil, Quebec, Canada",
+      "companyScale": "Quebec/Ontario outdoor, camping, hunting and fishing retail network",
+      "coverage": "Eastern Canada",
+      "mainBrands": "Brand-name outdoor sports, camping, hunting and fishing products",
+      "salesChannel": "Stores and ecommerce",
+      "buyingCapability": "Medium/High; regional Canadian outdoor chain",
+      "decisionMaker": "Camping/outdoor equipment department buyer or merchandising manager",
+      "publicEmail": "",
+      "publicEmailStatus": "No public buyer email verified; Instagram profile is broken, use Facebook or official contact page.",
+      "contactPhone": "",
+      "vendorPortal": "https://www.sail.ca/en/contact-us",
+      "linkedinCompany": "https://ca.linkedin.com/company/sailpleinairoutdoors",
+      "contactNote": "Reroute away from broken Instagram URL; use Facebook page and official contact page.",
+      "dataSources": [
+        "SAIL LinkedIn",
+        "SAIL public contact page/job descriptions"
+      ],
+      "id": "google-customer-sail-outdoors-website-contact",
+      "name": "Sail Outdoors",
+      "company": "Sail Outdoors",
+      "country": "Canada",
+      "countryEn": "Canada",
+      "fitScore": 91,
+      "fitTier": "A+",
+      "marketScore": 4.5,
+      "marketStatus": "open",
+      "agencyState": "open",
+      "keyword": "outdoor retail chain",
+      "role": "Outdoor equipment buyer or merchandising lead.",
+      "background": "Canadian outdoor retailer for camping, fishing, hunting, apparel, and equipment.",
+      "buyerPersona": "Outdoor equipment buyer or merchandising lead.",
+      "productCategory": "outdoor retail chain",
+      "businessModel": "Retail Chain",
+      "productFit": "FLEXTAIL portable pumps, outdoor power, camping lighting and compact camping accessories",
+      "opportunity": "Canadian outdoor retailer for camping, fishing, hunting, apparel, and equipment.",
+      "linkedin_url": "https://ca.linkedin.com/company/sailpleinairoutdoors",
+      "linkedin": "https://ca.linkedin.com/company/sailpleinairoutdoors",
+      "contactEmail": "",
+      "website": "https://www.sail.ca/",
+      "evidenceUrl": "https://www.google.com/search?q=%22Sail%20Outdoors%22%20%22outdoor%20retail%20chain%22%20%22Canada%22%20buyer%20OR%20wholesale%20OR%20contact",
+      "query": "https://www.google.com/search?q=%22Sail%20Outdoors%22%20%22outdoor%20retail%20chain%22%20%22Canada%22%20buyer%20OR%20wholesale%20OR%20contact",
+      "source": "google_customer_discovery",
+      "identityStatus": "verified",
+      "partnershipStatus": "",
+      "doNotOutreach": false,
+      "automationStatus": "",
+      "partnerNote": "",
+      "sendStatus": "",
+      "workingTime": {
+        "dueNow": true,
+        "timeZone": "local-market",
+        "localTime": "2026/7/5 09:05:04",
+        "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
+      },
+      "platform": "email",
+      "platformUrl": "https://www.sail.ca/en/contact-us",
+      "url": "https://www.sail.ca/en/contact-us",
+      "contactUrl": "https://www.sail.ca/en/contact-us",
+      "contactSearchUrl": "https://www.google.com/search?q=site%3Awww.sail.ca%20%22Sail%20Outdoors%22%20contact%20buyer%20wholesale%20email%20vendor",
+      "emailFrom": "leo@flextailgear.com",
+      "websiteContactSubject": "Flextail & Vollyc | Lightweight Outdoor & 3C Electronics – Potential Cooperation",
+      "websiteContactMessage": "Dear Sail Outdoors Team,\n\nNice to e-meet you.\nI am Leo, from Flextail & Vollyc.\n\nFlextail is our first and core brand, specializing in ultralight electric products for outdoor, travel, and home use. The brand is currently Top 1 on Amazon, with strong global sell-through and a proven product-market fit.\nVollyc, our second brand, focuses on 3C electronics, targeting practical, high-rotation consumer use cases.\n\nFrom our perspective, your platform and positioning are highly aligned with Flextail’s product philosophy, especially in lightweight outdoor and travel-oriented electrics.\n\nWe have already contacted with your team, and we are now actively exploring opportunities in other regions.\nAttached, you will find a brief introduction to our brands and current product catalog for your reference.\n\nLooking ahead, we are planning to launch over 36 new SKUs in 2026, covering multiple usage scenarios and price tiers, which we believe could be of interest to your assortment strategy.\n\nIf you are available, I would greatly appreciate the opportunity to arrange a short introductory video meeting to present our brands and discuss potential collaboration opportunities.\n\nThank you for your time and consideration. I look forward to your reply.\n\n[Flextail.com](https://www.flextail.com/), [vollyc.com](https://vollyc.com/)\n\n[Sincerely](https://wa.me/8617321028184)\n[Best Regard](https://wa.me/8617321028184)\n[Leo Liu](https://wa.me/8617321028184)\n[Sales](https://wa.me/8617321028184) [& Operations Director](https://wa.me/8617321028184)\n[Brand & ODM Department](https://wa.me/8617321028184)\n[Tel/whatsapp:  +86 17321028184](https://wa.me/8617321028184)\n\n[Email:  Leo@flextailgear.com](https://wa.me/8617321028184)\n[SHANGHAI FLEXTAIL TECHNOLOGY CO.,LTD.](https://wa.me/8617321028184)\n[Room103, Building No.6, No.1 Yanjiaqiao, Pudong District, ShangHai, China](https://wa.me/8617321028184)\n",
+      "websiteContactFlow": "open_official_contact_us_fill_attach_auto_submit",
+      "action": "email_priority",
+      "reason": "official_website_contact_channel",
+      "alternateChannels": {
+        "instagram": "",
+        "facebook": "https://www.facebook.com/SAILoutdoors",
+        "websiteContact": "https://www.sail.ca/en/contact-us"
+      },
+      "invalidChannels": {
+        "instagram": {
+          "url": "https://www.instagram.com/sailoutdoors/",
+          "status": "broken_profile_url",
+          "evidence": "Instagram reports this page is unavailable; use Facebook or official website contact instead."
+        }
+      },
+      "identitySource": "official website contact path + Google buyer/contact query",
+      "channelPriority": 3,
+      "targetRegion": "americas",
+      "targetRegionScore": 30,
+      "contactChannelScore": 17,
+      "dealProbabilityScore": 210,
+      "priorityScore": 208
     },
     {
       "linkedinUrl": "https://sd.linkedin.com/company/kathmandu",
@@ -446,7 +617,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/4 17:01:15",
+        "localTime": "2026/7/5 09:05:04",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -528,7 +699,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/4 17:01:15",
+        "localTime": "2026/7/5 09:05:04",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -597,7 +768,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/London",
-        "localTime": "Sat 10:02",
+        "localTime": "Sun 02:07",
         "window": "off_workday",
         "nextBest": "Europe/London morning"
       },
@@ -646,7 +817,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Sat 05:02",
+        "localTime": "Sat 21:07",
         "window": "off_workday",
         "nextBest": "America/New_York morning"
       },
@@ -695,7 +866,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/London",
-        "localTime": "Sat 10:02",
+        "localTime": "Sun 02:07",
         "window": "off_workday",
         "nextBest": "Europe/London morning"
       },
@@ -744,7 +915,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/London",
-        "localTime": "Sat 10:02",
+        "localTime": "Sun 02:07",
         "window": "off_workday",
         "nextBest": "Europe/London morning"
       },
@@ -786,14 +957,14 @@ window.DAILY_AUTOMATION_LATEST = {
       "dataSources": null,
       "alternateChannels": null,
       "lastStatus": "approval_pending",
-      "lastEvidence": "contact_entry_verified;contact_form_detected;contact_entry_clicked:contact us;website_contact_form_fields_prepared;marketing_attachment_missing;website_contact_target_attempts:2",
-      "lastTouch": "2026-07-04T01:05:34.293Z",
+      "lastEvidence": "contact_entry_verified;contact_form_detected;initial_page_verified;website_contact_form_fields_prepared;marketing_attachment_missing;website_contact_target_attempts:1",
+      "lastTouch": "2026-07-05T01:05:27.767Z",
       "action": "cooldown",
       "reason": "same_day_customer_already_developed",
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Sat 05:02",
+        "localTime": "Sat 21:07",
         "window": "off_workday",
         "nextBest": "America/Toronto morning"
       },
@@ -842,7 +1013,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Sat 05:02",
+        "localTime": "Sat 21:07",
         "window": "off_workday",
         "nextBest": "America/Toronto morning"
       },
@@ -891,7 +1062,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Asia/Jakarta",
-        "localTime": "Sat 16:02",
+        "localTime": "Sun 08:07",
         "window": "off_workday",
         "nextBest": "Asia/Jakarta morning"
       },
@@ -940,7 +1111,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Australia/Sydney",
-        "localTime": "Sat 19:02",
+        "localTime": "Sun 11:07",
         "window": "off_workday",
         "nextBest": "Australia/Sydney morning"
       },
@@ -989,7 +1160,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Pacific/Auckland",
-        "localTime": "Sat 21:02",
+        "localTime": "Sun 13:07",
         "window": "off_workday",
         "nextBest": "Pacific/Auckland morning"
       },
@@ -1038,7 +1209,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Pacific/Auckland",
-        "localTime": "Sat 21:02",
+        "localTime": "Sun 13:07",
         "window": "off_workday",
         "nextBest": "Pacific/Auckland morning"
       },
@@ -1087,7 +1258,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Pacific/Auckland",
-        "localTime": "Sat 21:02",
+        "localTime": "Sun 13:07",
         "window": "off_workday",
         "nextBest": "Pacific/Auckland morning"
       },
@@ -1136,7 +1307,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Pacific/Auckland",
-        "localTime": "Sat 21:02",
+        "localTime": "Sun 13:07",
         "window": "off_workday",
         "nextBest": "Pacific/Auckland morning"
       },
@@ -1185,7 +1356,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Pacific/Auckland",
-        "localTime": "Sat 21:02",
+        "localTime": "Sun 13:07",
         "window": "off_workday",
         "nextBest": "Pacific/Auckland morning"
       },
@@ -1234,7 +1405,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Asia/Kolkata",
-        "localTime": "Sat 14:32",
+        "localTime": "Sun 06:37",
         "window": "off_workday",
         "nextBest": "Asia/Kolkata morning"
       },
@@ -1298,7 +1469,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/4 17:01:15",
+        "localTime": "2026/7/5 09:05:04",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -1376,7 +1547,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/4 17:01:15",
+        "localTime": "2026/7/5 09:05:04",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -1456,7 +1627,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/4 17:01:15",
+        "localTime": "2026/7/5 09:05:04",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -1534,7 +1705,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/4 17:01:15",
+        "localTime": "2026/7/5 09:05:04",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -1614,7 +1785,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/4 17:01:15",
+        "localTime": "2026/7/5 09:05:04",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -1635,8 +1806,8 @@ window.DAILY_AUTOMATION_LATEST = {
       "dealProbabilityScore": 225,
       "priorityScore": 225,
       "lastStatus": "approval_pending",
-      "lastEvidence": "contact_entry_verified;contact_form_detected;contact_entry_clicked:contact us;website_contact_form_fields_prepared;marketing_attachment_missing;website_contact_target_attempts:2",
-      "lastTouch": "2026-07-04T01:05:34.293Z"
+      "lastEvidence": "contact_entry_verified;contact_form_detected;initial_page_verified;website_contact_form_fields_prepared;marketing_attachment_missing;website_contact_target_attempts:1",
+      "lastTouch": "2026-07-05T01:05:27.767Z"
     },
     {
       "linkedinUrl": "https://ca.linkedin.com/company/mountainequipmentcompany",
@@ -1692,7 +1863,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/4 17:01:15",
+        "localTime": "2026/7/5 09:05:04",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -1715,8 +1886,8 @@ window.DAILY_AUTOMATION_LATEST = {
       "dealProbabilityScore": 225,
       "priorityScore": 225,
       "lastStatus": "approval_pending",
-      "lastEvidence": "contact_entry_verified;contact_form_detected;contact_entry_clicked:contact us;website_contact_form_fields_prepared;marketing_attachment_missing;website_contact_target_attempts:2",
-      "lastTouch": "2026-07-04T01:05:34.293Z"
+      "lastEvidence": "contact_entry_verified;contact_form_detected;initial_page_verified;website_contact_form_fields_prepared;marketing_attachment_missing;website_contact_target_attempts:1",
+      "lastTouch": "2026-07-05T01:05:27.767Z"
     },
     {
       "linkedinUrl": "https://ca.linkedin.com/company/mountainequipmentcompany",
@@ -1772,7 +1943,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/4 17:01:15",
+        "localTime": "2026/7/5 09:05:04",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -1800,8 +1971,8 @@ window.DAILY_AUTOMATION_LATEST = {
       "dealProbabilityScore": 225,
       "priorityScore": 225,
       "lastStatus": "approval_pending",
-      "lastEvidence": "contact_entry_verified;contact_form_detected;contact_entry_clicked:contact us;website_contact_form_fields_prepared;marketing_attachment_missing;website_contact_target_attempts:2",
-      "lastTouch": "2026-07-04T01:05:34.293Z"
+      "lastEvidence": "contact_entry_verified;contact_form_detected;initial_page_verified;website_contact_form_fields_prepared;marketing_attachment_missing;website_contact_target_attempts:1",
+      "lastTouch": "2026-07-05T01:05:27.767Z"
     },
     {
       "linkedinUrl": "https://uk.linkedin.com/company/cotswold-outdoor",
@@ -1857,7 +2028,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/4 17:01:15",
+        "localTime": "2026/7/5 09:05:04",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -1935,7 +2106,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/4 17:01:15",
+        "localTime": "2026/7/5 09:05:04",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -2015,7 +2186,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/4 17:01:15",
+        "localTime": "2026/7/5 09:05:04",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -2100,7 +2271,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/4 17:01:15",
+        "localTime": "2026/7/5 09:05:04",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -2178,7 +2349,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/4 17:01:15",
+        "localTime": "2026/7/5 09:05:04",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -2258,7 +2429,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/4 17:01:15",
+        "localTime": "2026/7/5 09:05:04",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -2336,7 +2507,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/4 17:01:15",
+        "localTime": "2026/7/5 09:05:04",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -2416,7 +2587,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/4 17:01:15",
+        "localTime": "2026/7/5 09:05:04",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -2494,7 +2665,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/4 17:01:15",
+        "localTime": "2026/7/5 09:05:04",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -2561,7 +2732,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Sat 05:02",
+        "localTime": "Sat 21:07",
         "window": "off_workday",
         "nextBest": "America/New_York morning"
       },
