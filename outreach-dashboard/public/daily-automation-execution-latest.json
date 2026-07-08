@@ -23,11 +23,11 @@
     "totalLeads": 16,
     "highIcp": 16,
     "readyToDevelop": 0,
-    "dueNow": 1,
+    "dueNow": 0,
     "googleDiscovered": 0,
     "facebookDiscovered": 0,
     "websiteContactDiscovered": 0,
-    "scheduledLater": 0,
+    "scheduledLater": 1,
     "cooldown": 30,
     "emailPriority": 0,
     "openAgencyMarket": 15,
@@ -35,5 +35,5 @@
     "needsVerification": 0,
     "retainedLowIcp": 0
   },
-  "completedAt": "2026-07-08T18:02:44.947Z"
+  "completedAt": "2026-07-08T21:02:09.692Z"
 }
