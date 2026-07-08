@@ -36,7 +36,16 @@ const CONFIG = loadConfig();
 const ICP_THRESHOLD = Number(CONFIG.cadence.icpThreshold || 70);
 const COOLDOWN_DAYS = Number(CONFIG.cadence.cooldownDays || 7);
 const DEFAULT_DAILY_LIMIT = 12;
-const TOUCH_STATUSES = new Set(['sent_confirmed', 'post_liked', 'account_followed', 'send_unconfirmed', 'website_contact_ready']);
+const TOUCH_STATUSES = new Set([
+  'sent_confirmed',
+  'post_liked',
+  'account_followed',
+  'send_unconfirmed',
+  'website_contact_ready',
+  'approval_pending',
+  'draft_prepared',
+  'prepared_not_sent',
+]);
 const SAME_DAY_DEVELOPMENT_STATUSES = new Set([
   'sent_confirmed',
   'send_unconfirmed',
@@ -442,6 +451,13 @@ function knownTouchIndex(results, contacts, now = Date.now()) {
       profileKey(result.target_url),
       hostKey(result.target_url),
     ].map(cleanKey).filter(Boolean);
+    for (const key of companyLeadKeys(result)) {
+      touched.add(key);
+      const current = touchedDetails.get(key);
+      if (!current || validDate(result.timestamp) >= validDate(current.timestamp)) {
+        touchedDetails.set(key, result);
+      }
+    }
     for (const key of keys) {
       touched.add(key);
       const current = touchedDetails.get(key);
@@ -793,6 +809,7 @@ function discoveryQueue(limit, context = {}) {
       const channelKeys = channelLeadKeys(item);
       return !partnerKeys.some(key => history.partners.has(key))
         && !companyLeadKeys(item).some(key => history.sameDayDeveloped.has(key))
+        && !companyLeadKeys(item).some(key => history.touched.has(key))
         && !channelKeys.some(key => history.touched.has(key));
     })
     .map(item => ({
@@ -822,6 +839,7 @@ function discoveryCooldownQueue(limit, context = {}) {
       const partnerKeys = leadKeys(item);
       if (partnerKeys.some(key => history.partners.has(key))) return false;
       return companyLeadKeys(item).some(key => history.sameDayDeveloped.has(key))
+        || companyLeadKeys(item).some(key => history.touched.has(key))
         || channelLeadKeys(item).some(key => history.touched.has(key));
     })
     .map(item => {
@@ -830,6 +848,7 @@ function discoveryCooldownQueue(limit, context = {}) {
         .filter(Boolean)
         .sort((left, right) => validDate(right.timestamp) - validDate(left.timestamp))[0] || null;
       const touch = channelLeadKeys(item)
+        .concat(companyLeadKeys(item))
         .map(key => history.touchedDetails.get(key))
         .filter(Boolean)
         .sort((left, right) => validDate(right.timestamp) - validDate(left.timestamp))[0] || null;
@@ -972,4 +991,6 @@ module.exports = {
   classifyTask,
   buildBugChecks,
   buildModelOptimizations,
+  companyLeadKeys,
+  knownTouchIndex,
 };

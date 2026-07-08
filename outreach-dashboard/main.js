@@ -212,13 +212,15 @@ function blockingAutomationResultFor(item) {
   const companyKeys = automationCompanyKeys(item);
   const itemPlatform = automationPlatformFor(item);
   const blocking = new Set(['sent_confirmed', 'failed_open', 'send_unconfirmed', 'account_followed', 'post_liked', 'website_contact_ready']);
+  const companyBlocking = new Set(['sent_confirmed', 'send_unconfirmed', 'account_followed', 'post_liked', 'website_contact_ready', 'approval_pending', 'draft_prepared', 'prepared_not_sent']);
   return results
-    .filter((result) => result && blocking.has(result.status))
+    .filter((result) => result && (blocking.has(result.status) || companyBlocking.has(result.status)))
     .filter((result) => result.status !== 'website_contact_ready' || websiteContactResultIsVerified(result))
     .filter((result) => result.status !== 'failed_open' || failedOpenResultShouldBlockRetry(result))
     .find((result) => {
       const resultExactKeys = automationExactKeys(result);
       if (setsIntersect(exactKeys, resultExactKeys)) return true;
+      if (companyBlocking.has(result.status) && setsIntersect(companyKeys, automationCompanyKeys(result))) return true;
       const resultPlatform = automationPlatformFor(result);
       if (!itemPlatform || !resultPlatform || itemPlatform !== resultPlatform) return false;
       return setsIntersect(companyKeys, automationCompanyKeys(result));
