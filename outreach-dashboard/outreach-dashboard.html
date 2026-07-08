@@ -11,7 +11,7 @@
 (function resetLocalDashboardCache(){
   const isLocal = ['127.0.0.1','localhost','::1'].includes(location.hostname);
   if(!isLocal || !('serviceWorker' in navigator)) return;
-  const key = 'local-dashboard-cache-reset-20260702-local-api-recovery';
+  const key = 'local-dashboard-cache-reset-20260708-google-queue';
   if(sessionStorage.getItem(key)) return;
   sessionStorage.setItem(key,'1');
   Promise.all([
@@ -19,7 +19,7 @@
     typeof caches !== 'undefined' ? caches.keys().then(keys=>Promise.all(keys.map(name=>caches.delete(name)))).catch(()=>{}) : Promise.resolve()
   ]).then(()=>{
     const next = new URL(location.href);
-    next.searchParams.set('cacheReset','20260702');
+    next.searchParams.set('cacheReset','20260708');
     location.replace(next.toString());
   });
 })();
@@ -327,7 +327,7 @@ tr.contact-row:hover .row-actions{display:inline-flex}
     <div class="daily-plan-list" id="daily-plan-list">
       <div class="head">
         <div>
-          <b>Today's Verified Follow-up List</b>
+          <b id="daily-plan-list-title">Today's Verified Follow-up List</b>
           <span id="daily-plan-list-meta"></span>
         </div>
         <button class="btn green" type="button" onclick="loadDailyOutreachPlan()">Load Serial Queue</button>
@@ -477,12 +477,12 @@ tr.contact-row:hover .row-actions{display:inline-flex}
 <div class="footer" id="system-footer">Customer Automated Development System</div>
 
 <script src="./country-market-data.js?v=20260604-icp-fit"></script>
-<script src="./daily-outreach-tasks.js?v=20260605-followup-data-fix"></script>
-<script src="./google-lead-discovery-latest.js?v=20260701-no-false-development"></script>
-<script src="./daily-automation-latest.js?v=20260701-no-false-development"></script>
-<script src="./daily-automation-execution-latest.js?v=20260701-no-false-development"></script>
-<script src="./system-visibility-latest.js?v=20260701-no-false-development"></script>
-<script src="./github-sync/latest-status.js?v=20260701-no-false-development"></script>
+<script src="./daily-outreach-tasks.js?v=20260708-google-queue"></script>
+<script src="./google-lead-discovery-latest.js?v=20260708-google-queue"></script>
+<script src="./daily-automation-latest.js?v=20260708-google-queue"></script>
+<script src="./daily-automation-execution-latest.js?v=20260708-google-queue"></script>
+<script src="./system-visibility-latest.js?v=20260708-google-queue"></script>
+<script src="./github-sync/latest-status.js?v=20260708-google-queue"></script>
 <script>
 // === UTILS ===
 const TIER1_KEYS=['CEO','President','Founder','Owner','Managing Director','VP','Vice President','Head','Director','Chief'];
@@ -930,7 +930,7 @@ function loadAutomationState(){
   }
 }
 function saveAutomationState(){localStorage.setItem(AUTO_KEY,JSON.stringify(automationState))}
-function platformName(p){return p==='li'?'LINKEDIN':p==='fb'?'FACEBOOK':p==='ins'?'INS':p==='social'?'FB/INS':'Platform'}
+function platformName(p){return p==='li'?'LINKEDIN':p==='fb'?'FACEBOOK':p==='ins'?'INS':p==='web'?'WEBSITE':p==='social'?'GOOGLE QUEUE':'Platform'}
 function platformRecords(p){return p==='li'?liR:p==='fb'?fbR:insR}
 function scoreLead(r){
   let score=0;
@@ -1187,6 +1187,9 @@ function instagramHandle(record){
   return /^[a-zA-Z0-9._]{2,30}$/.test(raw) ? raw : '';
 }
 function platformSearchUrl(task){
+  if(task.platform==='web'){
+    return task.contactUrl || task.platformUrl || task.url || task.website || task.contactSearchUrl || task.evidenceUrl || 'https://www.google.com/search?q='+encodeURIComponent(cleanSearchParts(task).join(' '));
+  }
   const query = encodeURIComponent(cleanSearchParts(task).join(' '));
   if(task.platform==='fb'){
     if(task.facebookUrl) return task.facebookUrl;
@@ -1199,6 +1202,11 @@ function platformSearchUrl(task){
   return PLATFORM_AUTOMATION.li.browserUrl;
 }
 function draftOutreachMessage(task){
+  if(task.platform === 'web' && task.websiteContactMessage){
+    return task.websiteContactSubject
+      ? task.websiteContactSubject + '\n\n' + task.websiteContactMessage
+      : task.websiteContactMessage;
+  }
   const company = task.company || task.name || 'your team';
   const market = task.country && task.country !== 'Unknown' ? ' in '+task.country : '';
   const followup = task.followupMode || ['Replied','Sent'].includes(task.status);
@@ -1220,6 +1228,9 @@ function draftOutreachMessage(task){
   ].join('\n');
 }
 function openUrlInChrome(url, platform){
+  if(platform === 'web' || !/^https:\/\/(www\.)?(linkedin|facebook|instagram)\.com\//i.test(String(url || ''))){
+    return openAcquisitionBrowserFallback(url, PLATFORM_AUTOMATION[platform]);
+  }
   if(location.hostname==='127.0.0.1' || location.hostname==='localhost'){
     return fetch('/launch-chrome?platform='+encodeURIComponent(platform||'fb')+'&url='+encodeURIComponent(url))
       .then(response=>response.ok)
@@ -1480,9 +1491,40 @@ function startAutomation(platform){
   launchCustomerAcquisition(platform,tasks);
   showAppToast(platformName(platform)+' browser acquisition started');
 }
-function dailyOutreachPlan(){return window.DAILY_OUTREACH_TASKS || null}
+function dailyOutreachPlan(){
+  const latest = window.DAILY_AUTOMATION_LATEST || null;
+  const queue = latest && Array.isArray(latest.dailyQueue)
+    ? latest.dailyQueue.filter(item=>item && (item.source === 'google_customer_discovery' || /^google-customer-/i.test(item.id || item.taskId || '')))
+    : [];
+  if(queue.length){
+    return {
+      generatedAt: latest.generatedAt || latest.date || new Date().toISOString(),
+      strategy: 'Google-discovered high-ICP customer development queue',
+      total: queue.length,
+      source: 'daily-automation-latest',
+      tasks: queue.map((item,index)=>({
+        ...item,
+        priority: index + 1,
+        dailyAutomation: true,
+        originalStatus: item.sendStatus || item.automationStatus || 'Ready',
+        platform: item.platform || item.channel || (item.facebookUrl ? 'facebook' : 'website'),
+        action: item.websiteContactFlow
+          ? 'Open official website contact path and prepare approved buyer outreach'
+          : (item.action || 'Develop verified Google customer lead')
+      }))
+    };
+  }
+  return window.DAILY_OUTREACH_TASKS || null;
+}
 function normalizeDailyTask(task){
-  const platform = String(task.platform||'').toLowerCase().includes('facebook')?'fb':'ins';
+  const rawPlatform = String(task.platform||'').toLowerCase();
+  const platform = rawPlatform.includes('facebook') || rawPlatform === 'fb'
+    ? 'fb'
+    : rawPlatform.includes('linkedin') || rawPlatform === 'li'
+      ? 'li'
+      : rawPlatform.includes('instagram') || rawPlatform === 'ins'
+        ? 'ins'
+        : 'web';
   return {
     id: 'daily-'+platform+'-'+task.priority+'-'+String(task.name||'').replace(/\W+/g,'').slice(0,12),
     done: false,
@@ -1492,7 +1534,7 @@ function normalizeDailyTask(task){
     tier: task.tier || 'T3',
     status: task.originalStatus || task.state || 'Imported',
     state: task.state || TASK_STATE.pending,
-    contact: '',
+    contact: task.contactEmail || task.publicEmail || '',
     country: task.country || 'Unknown',
     marketScore: task.marketScore || 0,
     marketTier: task.marketTier || 'Unknown',
@@ -1504,6 +1546,13 @@ function normalizeDailyTask(task){
     priority: task.priority,
     autoScore: task.autoScore || 0,
     source: task.source || 'daily-plan',
+    dailyAutomation: Boolean(task.dailyAutomation),
+    contactUrl: task.contactUrl || task.url || task.website || '',
+    website: task.website || '',
+    platformUrl: task.platformUrl || task.url || task.contactUrl || task.website || '',
+    publicEmail: task.publicEmail || task.contactEmail || '',
+    websiteContactMessage: task.websiteContactMessage || '',
+    websiteContactSubject: task.websiteContactSubject || '',
     followupMode: Boolean(task.followupMode),
     verifiedPlatform: task.verifiedPlatform || '',
     facebookStatus: task.facebookStatus || '',
@@ -1511,7 +1560,7 @@ function normalizeDailyTask(task){
     verifiedFacebookName: task.verifiedFacebookName || '',
     lastKnownTouch: task.lastKnownTouch || '',
     instagramAccount: platform==='ins' && (task.verifiedPlatform==='instagram' || task.source==='instagram') ? String(task.name||'') : '',
-    socialPlatforms: platform==='ins' ? ['ins'] : ['fb'],
+    socialPlatforms: platform==='web' ? ['web'] : (platform==='ins' ? ['ins'] : ['fb']),
     action: task.action || (platform==='fb'?'Facebook outreach and buyer contact capture':'Instagram DM follow-up and contact capture')
   };
 }
@@ -1521,8 +1570,9 @@ function renderDailyPlanStrip(){
   if(!strip || !plan || !Array.isArray(plan.tasks) || !plan.tasks.length)return;
   const fbCount = plan.tasks.filter(task=>String(task.platform||'').toLowerCase().includes('facebook')).length;
   const insCount = plan.tasks.filter(task=>String(task.platform||'').toLowerCase().includes('instagram')).length;
-  document.getElementById('daily-plan-title').textContent = fbCount ? 'Today Social Follow-up Plan' : 'Today Instagram Follow-up Plan';
-  document.getElementById('daily-plan-meta').textContent = (plan.strategy||'Prioritize Facebook and Instagram')+' · Facebook '+fbCount+' · Instagram '+insCount+' · '+plan.total+' total';
+  const webCount = plan.tasks.filter(task=>!/facebook|instagram/i.test(String(task.platform||''))).length;
+  document.getElementById('daily-plan-title').textContent = plan.source === 'daily-automation-latest' ? 'Today Google Lead Development Queue' : (fbCount ? 'Today Social Follow-up Plan' : 'Today Instagram Follow-up Plan');
+  document.getElementById('daily-plan-meta').textContent = (plan.strategy||'Prioritize Facebook and Instagram')+' · Website '+webCount+' · Facebook '+fbCount+' · Instagram '+insCount+' · '+plan.total+' total';
   strip.style.display = 'flex';
 }
 function renderDailyPlanList(){
@@ -1533,9 +1583,13 @@ function renderDailyPlanList(){
   const fbCount = plan.tasks.filter(task=>String(task.platform||'').toLowerCase().includes('facebook')).length;
   const insCount = plan.tasks.filter(task=>String(task.platform||'').toLowerCase().includes('instagram')).length;
   const meta = document.getElementById('daily-plan-list-meta');
-  if(meta) meta.textContent = ' · Facebook '+fbCount+' · Instagram '+insCount+' · '+plan.tasks.length+' total';
+  const webCount = plan.tasks.filter(task=>!/facebook|instagram/i.test(String(task.platform||''))).length;
+  const listTitle = document.getElementById('daily-plan-list-title');
+  if(listTitle) listTitle.textContent = plan.source === 'daily-automation-latest' ? "Today's Google Lead Development Queue" : "Today's Verified Follow-up List";
+  if(meta) meta.textContent = ' · Website '+webCount+' · Facebook '+fbCount+' · Instagram '+insCount+' · '+plan.tasks.length+' total';
   rows.innerHTML = plan.tasks.map(task=>{
-    const platform = String(task.platform||'').toLowerCase().includes('facebook')?'Facebook':'Instagram';
+    const rawPlatform = String(task.platform||'').toLowerCase();
+    const platform = rawPlatform.includes('facebook') ? 'Facebook' : rawPlatform.includes('instagram') ? 'Instagram' : 'Website';
     return '<div class="daily-plan-row">'
       + '<div class="rank">#'+esc(task.priority)+'</div>'
       + '<div class="platform">'+esc(platform)+'</div>'
@@ -1565,7 +1619,7 @@ function loadDailyOutreachPlan(options){
     importedPlan: plan.generatedAt || new Date().toISOString(),
     tasks,
     log:[
-      {time:new Date().toLocaleString(),text:'Imported verified follow-up plan with '+tasks.length+' Instagram tasks'},
+      {time:new Date().toLocaleString(),text:'Imported '+(plan.source === 'daily-automation-latest' ? 'Google lead development queue' : 'verified follow-up plan')+' with '+tasks.length+' tasks'},
       {time:new Date().toLocaleString(),text:plan.strategy || 'LinkedIn limited; prioritize Facebook and Instagram'},
       ...automationState.log
     ].slice(0,30)
@@ -2255,12 +2309,12 @@ function exportCSV(){
 }
 if('serviceWorker' in navigator){
   navigator.serviceWorker.addEventListener('controllerchange',()=>{
-    const key='sw-refresh-20260702-local-api-recovery';
+    const key='sw-refresh-20260708-google-queue';
     if(sessionStorage.getItem(key)) return;
     sessionStorage.setItem(key,'1');
     window.location.reload();
   });
-  window.addEventListener('load',()=>navigator.serviceWorker.register('./service-worker.js?v=20260702-local-api-recovery').then(reg=>reg.update()).catch(()=>{}));
+  window.addEventListener('load',()=>navigator.serviceWorker.register('./service-worker.js?v=20260708-google-queue').then(reg=>reg.update()).catch(()=>{}));
 }
 initializeKpiDetailPage();
 </script>
