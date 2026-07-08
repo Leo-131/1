@@ -7,6 +7,7 @@ const { spawn } = require('child_process');
 const root = __dirname;
 const port = Number(process.env.PORT || 4174);
 const host = process.env.HOST || '0.0.0.0';
+const stateFile = path.join(os.tmpdir(), 'outreach-dashboard-local-state.json');
 const types = {
   '.html': 'text/html; charset=utf-8',
   '.js': 'application/javascript; charset=utf-8',
@@ -61,6 +62,40 @@ function sendJson(res, status, payload) {
   res.end(JSON.stringify(payload));
 }
 
+function readJsonBody(req) {
+  return new Promise((resolve, reject) => {
+    let body = '';
+    req.on('data', (chunk) => {
+      body += chunk;
+      if (body.length > 1024 * 1024) {
+        reject(new Error('Request body too large'));
+        req.destroy();
+      }
+    });
+    req.on('end', () => {
+      if (!body.trim()) return resolve({});
+      try {
+        resolve(JSON.parse(body));
+      } catch (error) {
+        reject(error);
+      }
+    });
+    req.on('error', reject);
+  });
+}
+
+function readLocalState() {
+  try {
+    return JSON.parse(fs.readFileSync(stateFile, 'utf8'));
+  } catch {
+    return {};
+  }
+}
+
+function writeLocalState(value) {
+  fs.writeFileSync(stateFile, `${JSON.stringify(value, null, 2)}\n`, 'utf8');
+}
+
 function isLocalRequest(req) {
   const address = req.socket.remoteAddress || '';
   return address === '127.0.0.1' || address === '::1' || address === '::ffff:127.0.0.1';
@@ -76,6 +111,54 @@ function lanAddresses() {
 
 const server = http.createServer((req, res) => {
   const parsed = new URL(req.url, `http://localhost:${port}`);
+  if (parsed.pathname === '/api/health') {
+    return sendJson(res, 200, {
+      ok: true,
+      mode: 'local',
+      supabase: false,
+      glm: Boolean(process.env.GLM_API_KEY || process.env.ZHIPUAI_API_KEY),
+      glmModel: process.env.GLM_MODEL || '',
+      okki: false,
+      message: 'Local dashboard API is available; cloud integrations are optional.',
+    });
+  }
+  if (parsed.pathname === '/api/sync') {
+    if (!isLocalRequest(req)) {
+      return sendJson(res, 403, { ok: false, error: 'Local state sync is restricted to this computer' });
+    }
+    if (req.method === 'GET') {
+      const key = parsed.searchParams.get('key') || 'dashboard-state';
+      const localState = readLocalState();
+      return sendJson(res, 200, { ok: Boolean(localState[key]), state: localState[key] || null, local: true });
+    }
+    if (req.method === 'POST') {
+      return readJsonBody(req)
+        .then((payload) => {
+          const key = payload.key || 'dashboard-state';
+          const localState = readLocalState();
+          localState[key] = payload.value;
+          writeLocalState(localState);
+          sendJson(res, 200, { ok: true, local: true, key });
+        })
+        .catch((error) => sendJson(res, 400, { ok: false, error: error.message || 'Invalid JSON body' }));
+    }
+    return sendJson(res, 405, { ok: false, error: 'Method not allowed' });
+  }
+  if (parsed.pathname === '/api/glm') {
+    return sendJson(res, 200, {
+      ok: false,
+      configured: false,
+      error: 'Cloud GLM is not configured in the local dashboard server.',
+    });
+  }
+  if (parsed.pathname === '/api/okki') {
+    return sendJson(res, 200, {
+      ok: false,
+      configured: false,
+      module: parsed.searchParams.get('module') || '',
+      error: 'OKKI integration is not configured in the local dashboard server.',
+    });
+  }
   if (parsed.pathname === '/launch-chrome') {
     if (!isLocalRequest(req)) {
       return sendJson(res, 403, { ok: false, error: 'Chrome launch is restricted to this computer' });

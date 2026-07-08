@@ -11,7 +11,7 @@
 (function resetLocalDashboardCache(){
   const isLocal = ['127.0.0.1','localhost','::1'].includes(location.hostname);
   if(!isLocal || !('serviceWorker' in navigator)) return;
-  const key = 'local-dashboard-cache-reset-20260708-google-queue';
+  const key = 'local-dashboard-cache-reset-20260708-system-structure';
   if(sessionStorage.getItem(key)) return;
   sessionStorage.setItem(key,'1');
   Promise.all([
@@ -242,7 +242,7 @@ tr.contact-row:hover .row-actions{display:inline-flex}
   .detail-overlay{width:100vw}
 }
 </style>
-<link rel="stylesheet" href="./command-center.css?v=20260701-no-false-development">
+<link rel="stylesheet" href="./command-center.css?v=20260708-system-structure">
 </head>
 <body>
 
@@ -477,12 +477,12 @@ tr.contact-row:hover .row-actions{display:inline-flex}
 <div class="footer" id="system-footer">Customer Automated Development System</div>
 
 <script src="./country-market-data.js?v=20260604-icp-fit"></script>
-<script src="./daily-outreach-tasks.js?v=20260708-google-queue"></script>
-<script src="./google-lead-discovery-latest.js?v=20260708-google-queue"></script>
-<script src="./daily-automation-latest.js?v=20260708-google-queue"></script>
-<script src="./daily-automation-execution-latest.js?v=20260708-google-queue"></script>
-<script src="./system-visibility-latest.js?v=20260708-google-queue"></script>
-<script src="./github-sync/latest-status.js?v=20260708-google-queue"></script>
+<script src="./daily-outreach-tasks.js?v=20260708-system-structure"></script>
+<script src="./google-lead-discovery-latest.js?v=20260708-system-structure"></script>
+<script src="./daily-automation-latest.js?v=20260708-system-structure"></script>
+<script src="./daily-automation-execution-latest.js?v=20260708-system-structure"></script>
+<script src="./system-visibility-latest.js?v=20260708-system-structure"></script>
+<script src="./github-sync/latest-status.js?v=20260708-system-structure"></script>
 <script>
 // === UTILS ===
 const TIER1_KEYS=['CEO','President','Founder','Owner','Managing Director','VP','Vice President','Head','Director','Chief'];
@@ -824,10 +824,12 @@ function attachCustomerFit(record){
 function isQualifiedLead(record){
   return record && record.fitScore>=55 && !String(record.fitReasons||'').includes('exclude: government/economic development') && !String(record.fitReasons||'').includes('exclude: nonprofit/education/association') && !String(record.fitReasons||'').includes('exclude: HR/design/marketing-only role');
 }
-function latestDataDate(){
+function latestSystemDate(){
   const dates = [];
+  if(window.SYSTEM_VISIBILITY_LATEST && window.SYSTEM_VISIBILITY_LATEST.updatedAt) dates.push(window.SYSTEM_VISIBILITY_LATEST.updatedAt);
+  if(window.GITHUB_SYNC_LATEST_STATUS && window.GITHUB_SYNC_LATEST_STATUS.updatedAt) dates.push(window.GITHUB_SYNC_LATEST_STATUS.updatedAt);
+  if(window.DAILY_AUTOMATION_LATEST && window.DAILY_AUTOMATION_LATEST.generatedAt) dates.push(window.DAILY_AUTOMATION_LATEST.generatedAt);
   if(embeddedData.stats && embeddedData.stats.last_run) dates.push(embeddedData.stats.last_run);
-  allRecords.forEach(record=>{if(record.date) dates.push(record.date)});
   return dates.map(formatDate).filter(Boolean).sort().pop() || 'Unknown';
 }
 function renderSystemInfo(){
@@ -838,10 +840,12 @@ function renderSystemInfo(){
   const updatedEl = document.getElementById('system-updated');
   const footerEl = document.getElementById('system-footer');
   const pageUpdated = formatDate(document.lastModified) || new Date().toISOString().slice(0,10);
-  const dataDate = latestDataDate();
+  const dataDate = latestSystemDate();
+  const activeCount = Number(stats.active_contacts || stats.total_contacts || liContacts.length || allRecords.length);
+  const totalCount = Number(stats.total_contacts || activeCount);
   document.title = 'Customer Automated Development System v' + APP_VERSION;
   if(versionEl) versionEl.textContent = 'v' + APP_VERSION;
-  if(sourceEl) sourceEl.textContent = allRecords.length + ' active / ' + allRecords.length + ' total';
+  if(sourceEl) sourceEl.textContent = activeCount + ' active / ' + totalCount + ' total';
   if(freshnessEl) freshnessEl.textContent = 'Data ' + dataDate;
   if(updatedEl) updatedEl.textContent = 'Page ' + pageUpdated;
   if(footerEl) footerEl.textContent = 'Customer Automated Development System v' + APP_VERSION + '  · Flextail + Vollyc · data ' + dataDate + ' · page ' + pageUpdated;
@@ -1103,10 +1107,13 @@ async function runCurrentLeadWithGlm(){
 }
 async function refreshCloudStatus(){
   const el=document.getElementById('cloud-status'); if(!el)return;
-  try{const r=await fetch('/api/health'); const s=await r.json();
+  const controller = typeof AbortController !== 'undefined' ? new AbortController() : null;
+  const timer = controller ? setTimeout(()=>controller.abort(), 2500) : null;
+  try{const r=await fetch('/api/health', controller ? {signal: controller.signal} : {}); const s=await r.json();
+    if(timer) clearTimeout(timer);
     el.textContent=s.ok?'Cloud '+(s.supabase?'DB':'no DB')+' · '+(s.glm?'GLM':'no GLM')+' · '+(s.okki?'OKKI':'no OKKI'):'Cloud offline';
     el.className='credential-pill '+(s.supabase?'ready':'missing');
-  }catch{el.textContent='Local mode';el.className='credential-pill missing';}
+  }catch{if(timer) clearTimeout(timer);el.textContent='Local API timeout';el.className='credential-pill missing';}
 }
 function cloudPayload(){
   return {automationState, statusChanges:readSavedStatusChanges(), activityChanges:readSavedActivityChanges(), savedAt:new Date().toISOString()};
@@ -1496,10 +1503,10 @@ function dailyOutreachPlan(){
   const queue = latest && Array.isArray(latest.dailyQueue)
     ? latest.dailyQueue.filter(item=>item && (item.source === 'google_customer_discovery' || /^google-customer-/i.test(item.id || item.taskId || '')))
     : [];
-  if(queue.length){
+  if(latest){
     return {
       generatedAt: latest.generatedAt || latest.date || new Date().toISOString(),
-      strategy: 'Google-discovered high-ICP customer development queue',
+      strategy: queue.length ? 'Google-discovered high-ICP customer development queue' : 'No executable Google-discovered leads after safety gates',
       total: queue.length,
       source: 'daily-automation-latest',
       tasks: queue.map((item,index)=>({
@@ -1567,19 +1574,19 @@ function normalizeDailyTask(task){
 function renderDailyPlanStrip(){
   const plan = dailyOutreachPlan();
   const strip = document.getElementById('daily-plan-strip');
-  if(!strip || !plan || !Array.isArray(plan.tasks) || !plan.tasks.length)return;
+  if(!strip || !plan || !Array.isArray(plan.tasks))return;
   const fbCount = plan.tasks.filter(task=>String(task.platform||'').toLowerCase().includes('facebook')).length;
   const insCount = plan.tasks.filter(task=>String(task.platform||'').toLowerCase().includes('instagram')).length;
   const webCount = plan.tasks.filter(task=>!/facebook|instagram/i.test(String(task.platform||''))).length;
   document.getElementById('daily-plan-title').textContent = plan.source === 'daily-automation-latest' ? 'Today Google Lead Development Queue' : (fbCount ? 'Today Social Follow-up Plan' : 'Today Instagram Follow-up Plan');
-  document.getElementById('daily-plan-meta').textContent = (plan.strategy||'Prioritize Facebook and Instagram')+' · Website '+webCount+' · Facebook '+fbCount+' · Instagram '+insCount+' · '+plan.total+' total';
+  document.getElementById('daily-plan-meta').textContent = (plan.strategy||'Prioritize Facebook and Instagram')+' · Website '+webCount+' · Facebook '+fbCount+' · Instagram '+insCount+' · '+(plan.total || plan.tasks.length)+' total';
   strip.style.display = 'flex';
 }
 function renderDailyPlanList(){
   const plan = dailyOutreachPlan();
   const wrap = document.getElementById('daily-plan-list');
   const rows = document.getElementById('daily-plan-list-rows');
-  if(!wrap || !rows || !plan || !Array.isArray(plan.tasks) || !plan.tasks.length)return;
+  if(!wrap || !rows || !plan || !Array.isArray(plan.tasks))return;
   const fbCount = plan.tasks.filter(task=>String(task.platform||'').toLowerCase().includes('facebook')).length;
   const insCount = plan.tasks.filter(task=>String(task.platform||'').toLowerCase().includes('instagram')).length;
   const meta = document.getElementById('daily-plan-list-meta');
@@ -1587,6 +1594,12 @@ function renderDailyPlanList(){
   const listTitle = document.getElementById('daily-plan-list-title');
   if(listTitle) listTitle.textContent = plan.source === 'daily-automation-latest' ? "Today's Google Lead Development Queue" : "Today's Verified Follow-up List";
   if(meta) meta.textContent = ' · Website '+webCount+' · Facebook '+fbCount+' · Instagram '+insCount+' · '+plan.tasks.length+' total';
+  if(!plan.tasks.length){
+    rows.innerHTML = '<div class="daily-plan-row"><div class="rank">0</div><div class="platform">SYSTEM</div><div class="main"><b>No executable Google leads</b><span>'+esc(plan.strategy || 'Safety gates left no executable customer-development tasks')+'</span></div><div class="market">'+esc(formatDate(plan.generatedAt) || '')+'</div></div>';
+    wrap.style.display = 'block';
+    sanitizeVisibleText(wrap);
+    return;
+  }
   rows.innerHTML = plan.tasks.map(task=>{
     const rawPlatform = String(task.platform||'').toLowerCase();
     const platform = rawPlatform.includes('facebook') ? 'Facebook' : rawPlatform.includes('instagram') ? 'Instagram' : 'Website';
@@ -2309,12 +2322,12 @@ function exportCSV(){
 }
 if('serviceWorker' in navigator){
   navigator.serviceWorker.addEventListener('controllerchange',()=>{
-    const key='sw-refresh-20260708-google-queue';
+    const key='sw-refresh-20260708-system-structure';
     if(sessionStorage.getItem(key)) return;
     sessionStorage.setItem(key,'1');
     window.location.reload();
   });
-  window.addEventListener('load',()=>navigator.serviceWorker.register('./service-worker.js?v=20260708-google-queue').then(reg=>reg.update()).catch(()=>{}));
+  window.addEventListener('load',()=>navigator.serviceWorker.register('./service-worker.js?v=20260708-system-structure').then(reg=>reg.update()).catch(()=>{}));
 }
 initializeKpiDetailPage();
 </script>
@@ -2323,7 +2336,7 @@ initializeKpiDetailPage();
 <script src="./autonomous-outreach-results.js?v=20260702-local-api-recovery"></script>
 <script src="./verified-profile-registry.js?v=20260612-profile-calibration"></script>
 <script src="./autonomous-outreach-data.js?v=20260618-icp-priority"></script>
-<script src="./command-center.js?v=20260702-local-api-recovery"></script>
+<script src="./command-center.js?v=20260708-system-structure"></script>
 </body>
 </html>
 
