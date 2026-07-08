@@ -12,6 +12,7 @@ const {
   normalizeTarget,
   validateLeadForExecution,
 } = require('../outreach-dashboard/autoglm-bridge');
+const dailyRunner = require('../outreach-dashboard/daily-automation-runner');
 
 const mainSource = fs.readFileSync(path.join(__dirname, '..', 'outreach-dashboard', 'main.js'), 'utf8');
 const chromeDriverSource = fs.readFileSync(path.join(__dirname, '..', 'outreach-dashboard', 'codex-chrome-driver.js'), 'utf8');
@@ -303,6 +304,8 @@ test('daily execution duplicate blocking is channel-aware', () => {
   assert.ok(mainSource.includes('function automationPlatformFor'));
   assert.ok(mainSource.includes('const exactKeys = automationExactKeys(item)'));
   assert.ok(mainSource.includes('const itemPlatform = automationPlatformFor(item)'));
+  assert.ok(mainSource.includes('const companyBlocking = new Set'));
+  assert.ok(mainSource.includes('companyBlocking.has(result.status) && setsIntersect(companyKeys, automationCompanyKeys(result))'));
   assert.ok(mainSource.includes('if (!itemPlatform || !resultPlatform || itemPlatform !== resultPlatform) return false'));
   assert.ok(mainSource.includes("const blocking = new Set(['sent_confirmed', 'failed_open', 'send_unconfirmed', 'account_followed', 'post_liked', 'website_contact_ready'])"));
   assert.ok(!mainSource.includes("'sent_confirmed', 'failed_open', 'send_unconfirmed', 'skipped'"));
@@ -314,4 +317,42 @@ test('daily queue generator blocks same-day repeat development by company', () =
   assert.ok(dailyRunnerSource.includes('sameDayDeveloped'));
   assert.ok(dailyRunnerSource.includes('same_day_customer_already_developed'));
   assert.ok(dailyRunnerSource.includes('context.sameDayByCompany'));
+});
+
+test('daily queue generator blocks cross-channel repeats for already developed companies', () => {
+  const now = Date.parse('2026-07-08T02:00:00.000Z');
+  const history = dailyRunner.knownTouchIndex([
+    {
+      task_id: 'google-customer-bever-facebook',
+      status: 'sent_confirmed',
+      timestamp: '2026-06-26T10:00:00.000Z',
+      target_url: 'https://www.facebook.com/BeverNL',
+      evidence: 'facebook_message_sent_confirmed_composer_cleared',
+    },
+    {
+      task_id: 'google-customer-go-outdoors-website-contact',
+      status: 'approval_pending',
+      timestamp: '2026-07-08T01:48:13.857Z',
+      target_url: 'https://www.gooutdoors.co.uk/contact-us',
+      evidence: 'contact_entry_verified;marketing_attachment_missing',
+    },
+  ], [], now);
+
+  const beverWebsite = {
+    id: 'google-customer-bever-website-contact',
+    company: 'Bever',
+    name: 'Bever',
+    platform: 'email',
+    contactUrl: 'https://www.bever.nl/klantenservice/contactgegevens.html',
+  };
+  const goOutdoorsFacebook = {
+    id: 'google-customer-go-outdoors-facebook',
+    company: 'GO Outdoors',
+    name: 'GO Outdoors',
+    platform: 'facebook',
+    url: 'https://www.facebook.com/GOOutdoors',
+  };
+
+  assert.ok(dailyRunner.companyLeadKeys(beverWebsite).some(key => history.touched.has(key)));
+  assert.ok(dailyRunner.companyLeadKeys(goOutdoorsFacebook).some(key => history.touched.has(key)));
 });

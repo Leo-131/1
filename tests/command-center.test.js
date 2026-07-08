@@ -194,6 +194,6 @@ test('all reporting sections use live automation artifacts', () => {
   assert.ok(js.includes('analytics.buildTemplateMetrics(liveOperationalRecords())'));
   assert.ok(js.includes('const events = liveAuditEvents();'));
   assert.ok(js.includes('...liveOperationalRecords()'));
-  assert.ok(html.includes('20260701-no-false-development'));
-  assert.ok(serviceWorkerJs.includes('customer-development-system-v18-7-20-20260701-no-false-development'));
+  assert.ok(html.includes('20260708-google-queue'));
+  assert.ok(serviceWorkerJs.includes('customer-development-system-v18-7-20-20260708-google-queue'));
 });
