@@ -23,11 +23,11 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     "totalLeads": 16,
     "highIcp": 16,
     "readyToDevelop": 0,
-    "dueNow": 0,
+    "dueNow": 1,
     "googleDiscovered": 0,
     "facebookDiscovered": 0,
     "websiteContactDiscovered": 0,
-    "scheduledLater": 1,
+    "scheduledLater": 0,
     "cooldown": 30,
     "emailPriority": 0,
     "openAgencyMarket": 15,
@@ -35,5 +35,5 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     "needsVerification": 0,
     "retainedLowIcp": 0
   },
-  "completedAt": "2026-07-08T12:53:56.173Z"
+  "completedAt": "2026-07-08T15:01:30.674Z"
 };
