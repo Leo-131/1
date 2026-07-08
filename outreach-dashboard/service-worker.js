@@ -1,4 +1,4 @@
-const CACHE_NAME = 'customer-development-system-v18-7-20-20260708-system-structure';
+const CACHE_NAME = 'customer-development-system-v18-7-20-20260708-white-ui';
 const APP_SHELL = [
   './',
   './index.html',
