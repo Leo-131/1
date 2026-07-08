@@ -2494,6 +2494,22 @@ async function runDailyAutomationQueue(payload = {}) {
 ipcMain.handle('run-daily-automation-queue', async (_event, payload) => runDailyAutomationQueue(payload));
 
 async function runAutoDailyAndWriteArtifact() {
+  let completed = false;
+  const timeoutMs = Math.max(60000, Number(process.env.DAILY_EXECUTE_TIMEOUT_MS || 300000));
+  const watchdog = setTimeout(() => {
+    if (completed) return;
+    writeDailyExecutionArtifact({
+      ok: false,
+      error: `auto-run-daily timed out after ${timeoutMs}ms`,
+      completedAt: new Date().toISOString(),
+      executionPhase: 'browser_execution_timeout',
+      chromeOpened: true,
+      customerDevelopmentPerformed: false,
+    });
+    app.exit(1);
+  }, timeoutMs);
+  if (watchdog.unref) watchdog.unref();
+
   try {
     const autoLimit = Math.max(1, Math.min(Number(process.env.DAILY_EXECUTE_LIMIT || 10), 100));
     const result = await runDailyAutomationQueue({ limit: autoLimit, parallelLimit: 1, delayMs: 2500 });
@@ -2510,7 +2526,9 @@ async function runAutoDailyAndWriteArtifact() {
     };
     writeDailyExecutionArtifact(output);
   } finally {
-    app.quit();
+    completed = true;
+    clearTimeout(watchdog);
+    app.exit(0);
   }
 }
 
