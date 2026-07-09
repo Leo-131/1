@@ -41,18 +41,10 @@ const TOUCH_STATUSES = new Set([
   'post_liked',
   'account_followed',
   'send_unconfirmed',
-  'website_contact_ready',
-  'approval_pending',
-  'draft_prepared',
-  'prepared_not_sent',
 ]);
 const SAME_DAY_DEVELOPMENT_STATUSES = new Set([
   'sent_confirmed',
   'send_unconfirmed',
-  'approval_pending',
-  'draft_prepared',
-  'prepared_not_sent',
-  'website_contact_ready',
   'account_followed',
   'post_liked',
 ]);
@@ -189,10 +181,20 @@ function dealProbabilityScore(task) {
     + contactChannelScore(task);
 }
 
+function channelPriorityScore(task) {
+  const platform = String(task.platform || task.channel || '').trim().toLowerCase();
+  const identity = `${task.id || ''} ${task.reason || ''} ${task.url || ''}`.toLowerCase();
+  if (platform === 'instagram' || /instagram/.test(identity)) return 300;
+  if (platform === 'facebook' || /facebook/.test(identity)) return 290;
+  if (platform === 'email' || /website-contact|official_website_contact_channel/.test(identity)) return 0;
+  return 100;
+}
+
 function priorityCompare(left, right) {
   const dueDelta = Number(Boolean(right.workingTime && right.workingTime.dueNow)) - Number(Boolean(left.workingTime && left.workingTime.dueNow));
   if (dueDelta) return dueDelta;
-  return Number(right.dealProbabilityScore || 0) - Number(left.dealProbabilityScore || 0)
+  return channelPriorityScore(right) - channelPriorityScore(left)
+    || Number(right.dealProbabilityScore || 0) - Number(left.dealProbabilityScore || 0)
     || Number(right.priorityScore || 0) - Number(left.priorityScore || 0)
     || String(left.company || left.name || '').localeCompare(String(right.company || right.name || ''));
 }
@@ -1036,6 +1038,7 @@ module.exports = {
   classifyTask,
   buildBugChecks,
   buildModelOptimizations,
+  channelPriorityScore,
   companyLeadKeys,
   knownTouchIndex,
 };

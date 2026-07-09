@@ -1107,7 +1107,9 @@
     const rows = detailRows.slice(0, 12).map((item) => {
       const skippedItem = skippedById.get(String(item.taskId || item.id || ''));
       const isGoogle = googleQueueItem(item);
-      const status = item.latestExecutionResult && item.sendStatus ? statusLabel(item.sendStatus) : (skippedItem ? actionLabel(skippedItem.action) : actionLabel(item.action));
+      const status = item.latestExecutionResult && item.sendStatus
+        ? automationStatusLabel(item.sendStatus, item.evidence, item.duplicateRisk)
+        : (skippedItem ? actionLabel(skippedItem.action) : actionLabel(item.action));
       const reason = skippedItem ? humanSkipLabel(skippedItem.reason) : humanSkipLabel(item.reason);
       const executionBadge = item.latestExecutionResult ? '<br><span class="cc-chip green">latest execution</span>' : '';
       return `<tr>
@@ -1883,13 +1885,19 @@
   window.runGlmDirect = runGlmDirect;
   window.runGlmQueue = runGlmQueue;
   const renderers = { workspace, queue, customers, seo, experiments, reports, audit, settings, customer };
-  document.body.classList.add('command-center-active');
-  const shell = document.createElement('div');
-  shell.className = 'cc-shell';
-  shell.id = 'command-center-shell';
-  shell.innerHTML = `${nav()}<main class="cc-main">${(renderers[view] || workspace)()}</main>${rail()}`;
-  document.body.appendChild(shell);
-  document.body.classList.remove('command-center-booting');
+  try {
+    document.body.classList.add('command-center-active');
+    const shell = document.createElement('div');
+    shell.className = 'cc-shell';
+    shell.id = 'command-center-shell';
+    shell.innerHTML = `${nav()}<main class="cc-main">${(renderers[view] || workspace)()}</main>${rail()}`;
+    document.body.appendChild(shell);
+    document.body.classList.remove('command-center-booting');
+  } catch (error) {
+    console.error('Command center startup failed', error);
+    document.body.classList.remove('command-center-active');
+    document.body.classList.remove('command-center-booting');
+  }
   const reportPeriod = document.getElementById('report-period');
   if (reportPeriod) {
     reportPeriod.addEventListener('change', event => {

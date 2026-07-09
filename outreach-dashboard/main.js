@@ -212,7 +212,7 @@ function blockingAutomationResultFor(item) {
   const companyKeys = automationCompanyKeys(item);
   const itemPlatform = automationPlatformFor(item);
   const blocking = new Set(['sent_confirmed', 'failed_open', 'send_unconfirmed', 'account_followed', 'post_liked', 'website_contact_ready']);
-  const companyBlocking = new Set(['sent_confirmed', 'send_unconfirmed', 'account_followed', 'post_liked', 'website_contact_ready', 'approval_pending', 'draft_prepared', 'prepared_not_sent']);
+  const companyBlocking = new Set(['sent_confirmed', 'send_unconfirmed', 'account_followed', 'post_liked']);
   return results
     .filter((result) => result && (blocking.has(result.status) || companyBlocking.has(result.status)))
     .filter((result) => result.status !== 'website_contact_ready' || websiteContactResultIsVerified(result))
@@ -230,10 +230,6 @@ function blockingAutomationResultFor(item) {
 const SAME_DAY_DEVELOPMENT_STATUSES = new Set([
   'sent_confirmed',
   'send_unconfirmed',
-  'approval_pending',
-  'draft_prepared',
-  'prepared_not_sent',
-  'website_contact_ready',
   'account_followed',
   'post_liked',
 ]);
