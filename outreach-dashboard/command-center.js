@@ -4,7 +4,10 @@
   const engine = window.OutreachEngine;
   const analytics = window.OutreachAnalytics;
   const data = window.AUTONOMOUS_OUTREACH_DATA || { tasks: [], audit: [], settings: {} };
-  if (!engine || !analytics) return;
+  if (!engine || !analytics) {
+    document.body.classList.remove('command-center-booting');
+    return;
+  }
 
   const views = [
     ['reports', '汇报中心'],
@@ -32,6 +35,14 @@
   const EXECUTION_COMPATIBILITY_LABELS = 'AutoClaw Execution · AutoClaw 执行证据 · AutoClaw 自动开发 · OpenClaw Followup · Execution layer is connected';
   const DASHBOARD_COMPATIBILITY_LABELS = "head('lastTouch', '最近触达') · 不显示猜测值";
   let currentReport = null;
+  const derivedCache = new Map();
+
+  function memoized(key, factory) {
+    if (derivedCache.has(key)) return derivedCache.get(key);
+    const value = factory();
+    derivedCache.set(key, value);
+    return value;
+  }
 
   function esc(value) {
     return String(value == null ? '' : value)
@@ -219,7 +230,7 @@
       };
     });
   }
-  function latestQueueRows(source) {
+  function computeLatestQueueRows(source) {
     if (!latestRun) return [];
     const rows = source === 'scheduledLater'
       ? (latestRun.scheduledLater || [])
@@ -278,6 +289,9 @@
         previouslyContacted: Boolean(executionStatus === 'sent_confirmed' || sameDay || touch || base.previouslyContacted || item.action === 'retry_or_alternate_channel'),
       };
     });
+  }
+  function latestQueueRows(source) {
+    return memoized('latestQueueRows:' + source, () => computeLatestQueueRows(source));
   }
   function timestampOrEmpty(value) {
     return typeof value === 'string' && value && Number.isFinite(Date.parse(value)) ? value : '';
@@ -381,7 +395,7 @@
       };
     });
   }
-  function liveOperationalRecords() {
+  function computeLiveOperationalRecords() {
     const records = [
       ...latestReportRecords(),
       ...executionReportRecords([]),
@@ -401,6 +415,9 @@
         seen.add(key);
         return true;
       });
+  }
+  function liveOperationalRecords() {
+    return memoized('liveOperationalRecords', computeLiveOperationalRecords);
   }
   function liveAuditEvents() {
     const auditEvents = (data.audit || []).map(item => ({
@@ -640,12 +657,24 @@
       ...googleDiscoveryRows(),
     ].filter(Boolean);
   }
-  function enrichmentForRecord(record) {
-    const keys = new Set(customerMatchKeys(record));
-    if (!keys.size) return {};
+  function buildContactEnrichmentIndex(rows) {
+    const index = new Map();
+    (rows || contactEnrichmentRows()).forEach(source => {
+      customerMatchKeys(source).forEach(key => {
+        const merged = index.get(key) || {};
+        mergeContactEnrichment(merged, source);
+        index.set(key, merged);
+      });
+    });
+    return index;
+  }
+  function enrichmentFromIndex(record, index) {
     const merged = {};
-    contactEnrichmentRows().forEach(source => {
-      if (!customerMatchKeys(source).some(key => keys.has(key))) return;
+    const seen = new Set();
+    customerMatchKeys(record).forEach(key => {
+      const source = index.get(key);
+      if (!source || seen.has(source)) return;
+      seen.add(source);
       mergeContactEnrichment(merged, source);
     });
     return merged;
@@ -732,8 +761,12 @@
       discoveredAt: latestRun && latestRun.generatedAt || '',
     };
   }
-  function customerRecords() {
+  function computeCustomerRecords() {
     const latestRows = latestCustomerRows();
+    const enrichmentIndex = buildContactEnrichmentIndex([
+      ...latestRows,
+      ...googleDiscoveryRows(),
+    ]);
     const latestByKey = new Map();
     latestRows.forEach(row => {
       customerMatchKeys(row).forEach(key => {
@@ -745,7 +778,7 @@
       const task = taskForRecord(record);
       const latest = customerMatchKeys(record).map(key => latestByKey.get(key)).find(Boolean);
       customerMatchKeys(record).forEach(key => seenKeys.add(key));
-      const contactEnrichment = enrichmentForRecord(record);
+      const contactEnrichment = enrichmentFromIndex(record, enrichmentIndex);
       if (!task && !latest && !Object.keys(contactEnrichment).length) return record;
       const source = latest || task || {};
       const enriched = { ...record };
@@ -780,6 +813,9 @@
       records.push(latestCustomerRecord(row));
     });
     return records;
+  }
+  function customerRecords() {
+    return memoized('customerRecords', computeCustomerRecords);
   }
   function autoClawConnected() {
     return Boolean(window.customerDev && window.customerDev.runGlmDirectAutomation);
@@ -1853,6 +1889,7 @@
   shell.id = 'command-center-shell';
   shell.innerHTML = `${nav()}<main class="cc-main">${(renderers[view] || workspace)()}</main>${rail()}`;
   document.body.appendChild(shell);
+  document.body.classList.remove('command-center-booting');
   const reportPeriod = document.getElementById('report-period');
   if (reportPeriod) {
     reportPeriod.addEventListener('change', event => {
