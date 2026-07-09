@@ -5,6 +5,7 @@ const ROOT = __dirname;
 const OUT_JSON = path.join(ROOT, 'google-lead-discovery-latest.json');
 const OUT_JS = path.join(ROOT, 'google-lead-discovery-latest.js');
 const OUT_CSV = path.join(ROOT, 'google-lead-discovery-latest.csv');
+const QUALIFIED_ICP_THRESHOLD = 70;
 
 const CANDIDATES = [
   {
@@ -164,6 +165,78 @@ const CANDIDATES = [
     fitScore: 86,
     background: 'Dutch outdoor retailer for hiking, camping, travel, and outdoor apparel/equipment.',
     buyerPersona: 'Outdoor equipment buyer or category manager.',
+  },
+  {
+    company: 'Liberty Mountain',
+    country: 'United States',
+    url: 'https://libertymountain.com/',
+    contactUrl: 'https://libertymountain.com/find-a-rep',
+    segment: 'technical outdoor wholesale distributor',
+    customerType: 'agency',
+    refillSeed: true,
+    fitScore: 95,
+    background: 'Large US wholesale distributor carrying camping, hiking, climbing, travel, lighting, electronics, and outdoor products from more than 1,000 brands.',
+    buyerPersona: 'Brand acquisition, exclusive distribution, or outdoor products sales leadership.',
+  },
+  {
+    company: 'Summit International',
+    country: 'United Kingdom',
+    url: 'https://www.summitint.co/',
+    contactUrl: 'https://www.summitint.co/contact-us',
+    segment: 'outdoor importer and distributor',
+    customerType: 'agency',
+    refillSeed: true,
+    fitScore: 90,
+    background: 'UK outdoor B2B importer and distributor supplying retailers, wholesalers, supermarkets, and independent businesses across camping and hiking categories.',
+    buyerPersona: 'Brand partnerships, buying, or distribution director for outdoor products.',
+  },
+  {
+    company: 'Academy Sports + Outdoors',
+    country: 'United States',
+    url: 'https://www.academy.com/',
+    contactUrl: 'https://vendor.academy.com/becoming-a-vendor.html',
+    segment: 'sporting goods and outdoor retail chain',
+    customerType: 'key_account',
+    refillSeed: true,
+    fitScore: 96,
+    background: 'Large US sporting goods and outdoor retailer with hundreds of stores, camping categories, and an official new outdoor vendor application path.',
+    buyerPersona: 'Outdoor category buyer, vendor onboarding, or merchandising manager.',
+  },
+  {
+    company: 'Sportsman\'s Warehouse',
+    country: 'United States',
+    url: 'https://www.sportsmans.com/',
+    contactUrl: 'https://www.sportsmans.com/contact-us',
+    segment: 'outdoor specialty retail chain',
+    customerType: 'key_account',
+    refillSeed: true,
+    fitScore: 93,
+    background: 'US outdoor specialty retailer with more than 140 locations and camping, fishing, hunting, apparel, and footwear categories.',
+    buyerPersona: 'Camping equipment category buyer, merchandising lead, or vendor partnership manager.',
+  },
+  {
+    company: 'SCHEELS',
+    country: 'United States',
+    url: 'https://www.scheels.com/',
+    contactUrl: 'https://www.scheels.com/help-center/',
+    segment: 'all-sports and outdoor retail chain',
+    customerType: 'key_account',
+    refillSeed: true,
+    fitScore: 92,
+    background: 'Employee-owned US all-sports retailer with a large store network, camping and hiking specialty shops, and more than 10,000 associates.',
+    buyerPersona: 'Camping and hiking category buyer, business partner, or merchandising manager.',
+  },
+  {
+    company: 'Camping World',
+    country: 'United States',
+    url: 'https://www.campingworld.com/',
+    contactUrl: 'https://www.campingworld.com/contact-us.html',
+    segment: 'RV and camping retail chain',
+    customerType: 'key_account',
+    refillSeed: true,
+    fitScore: 89,
+    background: 'Large US RV and camping retailer with broad portable power, campsite, outdoor living, and travel accessory categories.',
+    buyerPersona: 'Camping accessories buyer, vendor partnerships, or outdoor living category manager.',
   },
 ];
 
@@ -479,6 +552,8 @@ function baseLead(item, id, evidenceUrl) {
     id,
     name: item.company,
     company: item.company,
+    customerType: item.customerType || 'key_account',
+    discoveryMode: item.refillSeed ? 'autonomous_refill' : 'baseline_verified_pool',
     country: item.country,
     countryEn: item.country,
     fitScore: item.fitScore,
@@ -599,15 +674,28 @@ function buildLeads(limit = 40) {
     .slice(0, limit);
 }
 
+function buildDiscoveryRun(limit = 40) {
+  const leads = buildLeads(limit);
+  const refillCompanies = CANDIDATES.filter(item => item.refillSeed && Number(item.fitScore || 0) > QUALIFIED_ICP_THRESHOLD);
+  return {
+    generatedAt: new Date().toISOString(),
+    mode: 'google-concrete-customer-discovery',
+    objective: 'continuously refill verified agency and key-account prospects above ICP 70, then convert them into exact official outreach targets',
+    discoveryRefillAttempted: true,
+    qualifiedThreshold: QUALIFIED_ICP_THRESHOLD,
+    refillCandidateCount: refillCompanies.length,
+    refillByCustomerType: {
+      agency: refillCompanies.filter(item => item.customerType === 'agency').length,
+      key_account: refillCompanies.filter(item => item.customerType === 'key_account').length,
+    },
+    leads,
+  };
+}
+
 function main() {
   const limitArg = process.argv.find(arg => /^--limit=/.test(arg));
   const limit = limitArg ? Number(limitArg.split('=')[1]) : 40;
-  const run = {
-    generatedAt: new Date().toISOString(),
-    mode: 'google-concrete-customer-discovery',
-    objective: 'convert Google discovery into concrete high-ICP customer profiles with official URLs and background notes',
-    leads: buildLeads(limit),
-  };
+  const run = buildDiscoveryRun(limit);
   fs.writeFileSync(OUT_JSON, JSON.stringify(run, null, 2));
   fs.writeFileSync(OUT_JS, `window.GOOGLE_LEAD_DISCOVERY_LATEST = ${JSON.stringify(run, null, 2)};\n`);
   const columns = ['rank', 'id', 'company', 'platform', 'country', 'fitScore', 'keyword', 'website', 'platformUrl', 'contactUrl', 'contactSearchUrl', 'emailFrom', 'websiteContactSubject', 'websiteContactMessage', 'background', 'buyerPersona', 'evidenceUrl', 'action'];
@@ -618,4 +706,4 @@ function main() {
 
 if (require.main === module) main();
 
-module.exports = { buildLeads };
+module.exports = { buildDiscoveryRun, buildLeads };

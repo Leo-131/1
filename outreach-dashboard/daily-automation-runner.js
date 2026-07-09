@@ -945,6 +945,7 @@ function main() {
     ? actionable
     : actionable.filter(item => item.workingTime && item.workingTime.dueNow);
   const picked = quotaPick(dueClassified, limit);
+  const discoveryRun = readJson('google-lead-discovery-latest.json', { leads: [] });
   const newDiscovery = discoveryQueue(Number(CONFIG.limits.develop || 10), context);
   const touchedDiscovery = discoveryCooldownQueue(20, context);
   const remainingLimit = Math.max(0, picked.quota.total.target - newDiscovery.length);
@@ -993,6 +994,13 @@ function main() {
       exclusiveAgencySkipped: classified.filter(item => item.action === 'skip_exclusive_agency').length,
       needsVerification: classified.filter(item => item.action === 'verify_target').length,
       retainedLowIcp: classified.filter(item => item.action === 'retain_low_icp').length,
+    },
+    discoveryRefill: {
+      discoveryRefillAttempted: Boolean(discoveryRun.discoveryRefillAttempted),
+      qualifiedThreshold: Number(discoveryRun.qualifiedThreshold || ICP_THRESHOLD),
+      refillCandidateCount: Number(discoveryRun.refillCandidateCount || 0),
+      refillByCustomerType: discoveryRun.refillByCustomerType || { agency: 0, key_account: 0 },
+      qualifiedQueueCount: newDiscovery.filter(item => Number(item.fitScore || 0) > ICP_THRESHOLD).length,
     },
     dailyQueue,
     cooldownQueue,

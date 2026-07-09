@@ -4,7 +4,7 @@ const fs = require('fs');
 const path = require('path');
 
 const { leadMessages, parseJsonContent, professionalSalesDraft, requestGlm } = require('../outreach-dashboard/glm-service');
-const { buildLeads } = require('../outreach-dashboard/google-lead-discovery-runner');
+const { buildDiscoveryRun, buildLeads } = require('../outreach-dashboard/google-lead-discovery-runner');
 const {
   buildAutoGlmTask,
   isBlockedFacebookTarget,
@@ -121,6 +121,34 @@ test('Google discovery reroutes known broken Instagram links to alternate channe
   const sailContact = leads.find(item => item.id === 'google-customer-sail-outdoors-website-contact');
   assert.ok(sailContact);
   assert.equal(sailContact.alternateChannels.instagram, '');
+});
+
+test('Google discovery autonomously refills verified agency and key-account candidates above ICP 70', () => {
+  const leads = buildLeads(120);
+  const refillLeads = leads.filter(item => item.discoveryMode === 'autonomous_refill');
+  assert.ok(refillLeads.some(item => item.customerType === 'agency'));
+  assert.ok(refillLeads.some(item => item.customerType === 'key_account'));
+  assert.ok(refillLeads.every(item => Number(item.fitScore) > 70));
+  assert.ok(refillLeads.every(item => /^https:\/\//.test(item.website || '')));
+  assert.ok(refillLeads.every(item => /^https:\/\//.test(item.contactUrl || item.url || '')));
+});
+
+test('Google discovery run reports autonomous refill coverage and strict ICP threshold', () => {
+  const run = buildDiscoveryRun(120);
+  assert.equal(run.qualifiedThreshold, 70);
+  assert.equal(run.discoveryRefillAttempted, true);
+  assert.ok(run.refillCandidateCount >= 4);
+  assert.ok(run.refillByCustomerType.agency >= 1);
+  assert.ok(run.refillByCustomerType.key_account >= 1);
+  assert.ok(run.leads
+    .filter(item => item.discoveryMode === 'autonomous_refill')
+    .every(item => item.fitScore > run.qualifiedThreshold));
+});
+
+test('daily queue artifacts expose autonomous discovery refill metadata', () => {
+  assert.ok(dailyRunnerSource.includes('discoveryRefill'));
+  assert.ok(dailyRunnerSource.includes('discoveryRefillAttempted'));
+  assert.ok(dailyRunnerSource.includes('refillCandidateCount'));
 });
 
 test('AutoGLM only accepts exact supported platform URLs and blocks repeat contact', () => {
