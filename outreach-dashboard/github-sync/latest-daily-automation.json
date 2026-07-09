@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-09T12:01:15.618Z",
+  "generatedAt": "2026-07-09T12:47:05.809Z",
   "date": "2026-07-09",
   "mode": "daily-icp-first-automation-loop",
   "executionLayer": "Codex Chrome Extension primary; AutoClaw compatible",
@@ -63,6 +63,16 @@
     "needsVerification": 0,
     "retainedLowIcp": 0
   },
+  "discoveryRefill": {
+    "discoveryRefillAttempted": true,
+    "qualifiedThreshold": 70,
+    "refillCandidateCount": 6,
+    "refillByCustomerType": {
+      "agency": 2,
+      "key_account": 4
+    },
+    "qualifiedQueueCount": 0
+  },
   "dailyQueue": [],
   "cooldownQueue": [
     {
@@ -104,7 +114,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/London",
-        "localTime": "Thu 13:01",
+        "localTime": "Thu 13:47",
         "window": "outside_work_hours",
         "nextBest": "Europe/London afternoon",
         "weight": 0
@@ -154,7 +164,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Thu 08:01",
+        "localTime": "Thu 08:47",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -204,7 +214,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/London",
-        "localTime": "Thu 13:01",
+        "localTime": "Thu 13:47",
         "window": "outside_work_hours",
         "nextBest": "Europe/London afternoon",
         "weight": 0
@@ -254,7 +264,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/London",
-        "localTime": "Thu 13:01",
+        "localTime": "Thu 13:47",
         "window": "outside_work_hours",
         "nextBest": "Europe/London afternoon",
         "weight": 0
@@ -304,7 +314,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Thu 08:01",
+        "localTime": "Thu 08:47",
         "window": "outside_work_hours",
         "nextBest": "America/Toronto morning",
         "weight": 0
@@ -354,7 +364,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Thu 08:01",
+        "localTime": "Thu 08:47",
         "window": "outside_work_hours",
         "nextBest": "America/Toronto morning",
         "weight": 0
@@ -404,7 +414,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Asia/Jakarta",
-        "localTime": "Thu 19:01",
+        "localTime": "Thu 19:47",
         "window": "outside_work_hours",
         "nextBest": "Asia/Jakarta morning",
         "weight": 0
@@ -454,7 +464,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Australia/Sydney",
-        "localTime": "Thu 22:01",
+        "localTime": "Thu 22:47",
         "window": "outside_work_hours",
         "nextBest": "Australia/Sydney morning",
         "weight": 0
@@ -504,7 +514,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Pacific/Auckland",
-        "localTime": "Fri 00:01",
+        "localTime": "Fri 00:47",
         "window": "outside_work_hours",
         "nextBest": "Pacific/Auckland morning",
         "weight": 0
@@ -554,7 +564,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Pacific/Auckland",
-        "localTime": "Fri 00:01",
+        "localTime": "Fri 00:47",
         "window": "outside_work_hours",
         "nextBest": "Pacific/Auckland morning",
         "weight": 0
@@ -604,7 +614,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Pacific/Auckland",
-        "localTime": "Fri 00:01",
+        "localTime": "Fri 00:47",
         "window": "outside_work_hours",
         "nextBest": "Pacific/Auckland morning",
         "weight": 0
@@ -654,7 +664,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Pacific/Auckland",
-        "localTime": "Fri 00:01",
+        "localTime": "Fri 00:47",
         "window": "outside_work_hours",
         "nextBest": "Pacific/Auckland morning",
         "weight": 0
@@ -704,7 +714,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Pacific/Auckland",
-        "localTime": "Fri 00:01",
+        "localTime": "Fri 00:47",
         "window": "outside_work_hours",
         "nextBest": "Pacific/Auckland morning",
         "weight": 0
@@ -754,7 +764,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Asia/Kolkata",
-        "localTime": "Thu 17:31",
+        "localTime": "Thu 18:17",
         "window": "outside_work_hours",
         "nextBest": "Asia/Kolkata morning",
         "weight": 0
@@ -788,6 +798,8 @@
       "id": "google-customer-bass-pro-shops-instagram",
       "name": "Bass Pro Shops",
       "company": "Bass Pro Shops",
+      "customerType": "key_account",
+      "discoveryMode": "baseline_verified_pool",
       "country": "United States",
       "countryEn": "United States",
       "fitScore": 96,
@@ -819,7 +831,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/9 20:01:15",
+        "localTime": "2026/7/9 20:45:22",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -866,6 +878,8 @@
       "id": "google-customer-bass-pro-shops-facebook",
       "name": "Bass Pro Shops",
       "company": "Bass Pro Shops",
+      "customerType": "key_account",
+      "discoveryMode": "baseline_verified_pool",
       "country": "United States",
       "countryEn": "United States",
       "fitScore": 96,
@@ -897,7 +911,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/9 20:01:15",
+        "localTime": "2026/7/9 20:45:22",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -946,6 +960,8 @@
       "id": "google-customer-bass-pro-shops-website-contact",
       "name": "Bass Pro Shops",
       "company": "Bass Pro Shops",
+      "customerType": "key_account",
+      "discoveryMode": "baseline_verified_pool",
       "country": "United States",
       "countryEn": "United States",
       "fitScore": 96,
@@ -977,7 +993,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/9 20:01:15",
+        "localTime": "2026/7/9 20:45:22",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -1031,6 +1047,8 @@
       "id": "google-customer-cabela-s-instagram",
       "name": "Cabela's",
       "company": "Cabela's",
+      "customerType": "key_account",
+      "discoveryMode": "baseline_verified_pool",
       "country": "United States",
       "countryEn": "United States",
       "fitScore": 95,
@@ -1062,7 +1080,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/9 20:01:15",
+        "localTime": "2026/7/9 20:45:22",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -1109,6 +1127,8 @@
       "id": "google-customer-cabela-s-facebook",
       "name": "Cabela's",
       "company": "Cabela's",
+      "customerType": "key_account",
+      "discoveryMode": "baseline_verified_pool",
       "country": "United States",
       "countryEn": "United States",
       "fitScore": 95,
@@ -1140,7 +1160,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/9 20:01:15",
+        "localTime": "2026/7/9 20:45:22",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -1189,6 +1209,8 @@
       "id": "google-customer-cabela-s-website-contact",
       "name": "Cabela's",
       "company": "Cabela's",
+      "customerType": "key_account",
+      "discoveryMode": "baseline_verified_pool",
       "country": "United States",
       "countryEn": "United States",
       "fitScore": 95,
@@ -1220,7 +1242,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/9 20:01:15",
+        "localTime": "2026/7/9 20:45:22",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -1274,6 +1296,8 @@
       "id": "google-customer-mec-instagram",
       "name": "MEC",
       "company": "MEC",
+      "customerType": "key_account",
+      "discoveryMode": "baseline_verified_pool",
       "country": "Canada",
       "countryEn": "Canada",
       "fitScore": 94,
@@ -1305,7 +1329,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/9 20:01:15",
+        "localTime": "2026/7/9 20:45:22",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -1352,6 +1376,8 @@
       "id": "google-customer-mec-facebook",
       "name": "MEC",
       "company": "MEC",
+      "customerType": "key_account",
+      "discoveryMode": "baseline_verified_pool",
       "country": "Canada",
       "countryEn": "Canada",
       "fitScore": 94,
@@ -1383,7 +1409,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/9 20:01:15",
+        "localTime": "2026/7/9 20:45:22",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -1432,6 +1458,8 @@
       "id": "google-customer-mec-website-contact",
       "name": "MEC",
       "company": "MEC",
+      "customerType": "key_account",
+      "discoveryMode": "baseline_verified_pool",
       "country": "Canada",
       "countryEn": "Canada",
       "fitScore": 94,
@@ -1463,7 +1491,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/9 20:01:15",
+        "localTime": "2026/7/9 20:45:22",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -1517,6 +1545,8 @@
       "id": "google-customer-cotswold-outdoor-instagram",
       "name": "Cotswold Outdoor",
       "company": "Cotswold Outdoor",
+      "customerType": "key_account",
+      "discoveryMode": "baseline_verified_pool",
       "country": "United Kingdom",
       "countryEn": "United Kingdom",
       "fitScore": 90,
@@ -1548,7 +1578,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/9 20:01:15",
+        "localTime": "2026/7/9 20:45:22",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -1595,6 +1625,8 @@
       "id": "google-customer-cotswold-outdoor-facebook",
       "name": "Cotswold Outdoor",
       "company": "Cotswold Outdoor",
+      "customerType": "key_account",
+      "discoveryMode": "baseline_verified_pool",
       "country": "United Kingdom",
       "countryEn": "United Kingdom",
       "fitScore": 90,
@@ -1626,7 +1658,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/9 20:01:15",
+        "localTime": "2026/7/9 20:45:22",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -1675,6 +1707,8 @@
       "id": "google-customer-cotswold-outdoor-website-contact",
       "name": "Cotswold Outdoor",
       "company": "Cotswold Outdoor",
+      "customerType": "key_account",
+      "discoveryMode": "baseline_verified_pool",
       "country": "United Kingdom",
       "countryEn": "United Kingdom",
       "fitScore": 90,
@@ -1706,7 +1740,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/9 20:01:15",
+        "localTime": "2026/7/9 20:45:22",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -1760,6 +1794,8 @@
       "id": "google-customer-decathlon-france-instagram",
       "name": "Decathlon France",
       "company": "Decathlon France",
+      "customerType": "key_account",
+      "discoveryMode": "baseline_verified_pool",
       "country": "France",
       "countryEn": "France",
       "fitScore": 90,
@@ -1791,7 +1827,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/9 20:01:15",
+        "localTime": "2026/7/9 20:45:22",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -1838,6 +1874,8 @@
       "id": "google-customer-decathlon-france-facebook",
       "name": "Decathlon France",
       "company": "Decathlon France",
+      "customerType": "key_account",
+      "discoveryMode": "baseline_verified_pool",
       "country": "France",
       "countryEn": "France",
       "fitScore": 90,
@@ -1869,7 +1907,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/9 20:01:15",
+        "localTime": "2026/7/9 20:45:22",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -1918,6 +1956,8 @@
       "id": "google-customer-decathlon-france-website-contact",
       "name": "Decathlon France",
       "company": "Decathlon France",
+      "customerType": "key_account",
+      "discoveryMode": "baseline_verified_pool",
       "country": "France",
       "countryEn": "France",
       "fitScore": 90,
@@ -1949,7 +1989,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/9 20:01:15",
+        "localTime": "2026/7/9 20:45:22",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -2003,6 +2043,8 @@
       "id": "google-customer-decathlon-germany-instagram",
       "name": "Decathlon Germany",
       "company": "Decathlon Germany",
+      "customerType": "key_account",
+      "discoveryMode": "baseline_verified_pool",
       "country": "Germany",
       "countryEn": "Germany",
       "fitScore": 90,
@@ -2034,7 +2076,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/9 20:01:15",
+        "localTime": "2026/7/9 20:45:22",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -2099,7 +2141,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Thu 08:01",
+        "localTime": "Thu 08:47",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
