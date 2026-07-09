@@ -1,126 +1,109 @@
-# Codex Chrome Extension First Design
+# Codex Chrome Extension 优先设计规范
 
-Date: 2026-07-09
+日期：2026-07-09
 
-## Problem
+## 问题说明
 
-The dashboard labels the browser execution layer as "Codex Chrome Extension",
-but `main.js` currently discovers or launches a Chrome DevTools Protocol (CDP)
-browser on ports 9222-9225. That is a separate transport and may use a separate
-Chrome profile. A connected Codex Chrome Extension therefore does not prove
-that `npm run daily:execute` is using the extension.
+仪表盘将浏览器执行层标记为“Codex Chrome Extension”，但 `main.js`
+当前实际查找或启动的是使用 9222-9225 端口的 Chrome DevTools Protocol
+（CDP）浏览器。这是另一套传输机制，并且可能使用独立的 Chrome 用户目录。
+因此，Codex Chrome Extension 显示 Connected，并不能证明
+`npm run daily:execute` 正在使用该插件。
 
-Runs with no executable queue items correctly stop before browser startup. This
-must remain distinct from extension connection failures.
+当队列中没有可执行任务时，系统会在启动浏览器前正常停止。该状态必须与插件连接
+失败明确区分。
 
-## Objective
+## 目标
 
-Use the connected Codex Chrome Extension as the preferred browser transport
-when the automation is running under a Codex browser runtime. Retain the
-existing CDP driver as a bounded fallback. Report the transport actually used
-without implying that Chrome opened or customer development occurred.
+当自动化运行在具备 Codex 浏览器能力的环境中时，优先使用已连接的 Codex Chrome
+Extension；保留现有 CDP 驱动作为受控降级通道。系统必须报告实际使用的传输方式，
+不得在浏览器未打开或客户开发未发生时作出相反表述。
 
-## Constraints
+## 约束
 
-- Preserve exact-target identity checks, cooldown rules, confirmed-message
-  duplicate protection, credential gates, and send confirmation.
-- Do not contact a customer during transport health checks.
-- Standalone Electron and scheduled command execution cannot assume access to
-  Codex's browser-extension runtime. They must fall back safely when that
-  capability is not supplied.
-- Do not expose a general unauthenticated local browser-control endpoint.
-- Do not force-push, deploy to Vercel, or modify unrelated dirty files.
+- 保留精确目标身份验证、冷却期、已确认消息防重复、凭据校验和发送确认机制。
+- 传输层健康检查不得联系真实客户。
+- 独立 Electron 进程及定时命令不得假设能够直接访问 Codex 浏览器插件运行时；
+  未显式获得该能力时必须安全降级。
+- 不得暴露无身份验证的通用本地浏览器控制接口。
+- 不得强制推送、部署 Vercel 或修改无关的现有工作区变更。
 
-## Architecture
+## 架构
 
-Introduce a browser transport boundary used by the existing outreach execution
-flow:
+在现有客户开发执行流程中引入统一的浏览器传输边界。
 
-1. `CodexExtensionTransport`
-   - Available only when the Codex runtime explicitly supplies an authenticated
-     extension bridge capability.
-   - Performs a read-only health check before selection.
-   - Opens and inspects the exact target through the user's connected Chrome
-     profile.
-   - Returns normalized open, inspection, interaction, and confirmation
-     results.
+### 1. `CodexExtensionTransport`
 
-2. `CdpChromeTransport`
-   - Wraps the existing ports 9222-9225 discovery and managed-profile launch.
-   - Remains the fallback for standalone `npm run daily:execute`.
-   - Keeps existing DOM interaction and send-confirmation behavior.
+- 仅当 Codex 运行时显式提供经过身份验证的 Extension Bridge 能力时可用。
+- 被选中前执行只读健康检查。
+- 通过用户当前已连接的 Chrome 用户目录打开并检查精确目标。
+- 返回统一格式的打开、检查、交互及确认结果。
 
-3. `BrowserTransportSelector`
-   - Selects a healthy extension transport first.
-   - Falls back once to CDP only when the extension transport is unavailable
-     before any external side effect.
-   - Never switches transport after a send, comment, like, or follow attempt,
-     preventing duplicate actions.
+### 2. `CdpChromeTransport`
 
-The transport boundary must be narrow: open exact URL, inspect visible state,
-perform an approved action, and return evidence. Queue selection and outreach
-safety policy remain outside the transport.
+- 封装现有的 9222-9225 端口发现和独立用户目录启动逻辑。
+- 作为独立执行 `npm run daily:execute` 时的降级通道。
+- 保留现有 DOM 交互及发送确认行为。
 
-## Data Flow
+### 3. `BrowserTransportSelector`
 
-1. Daily queue generation determines whether an executable task exists.
-2. If no executable task exists, execution ends as
-   `no_executable_tasks`; no transport health check is required.
-3. For an executable task, the selector checks extension capability.
-4. A healthy extension bridge is selected and opens the exact verified URL.
-5. If the bridge is unavailable before interaction, CDP is selected.
-6. The selected transport returns normalized evidence to the existing result
-   recorder and artifact refresh flow.
+- 优先选择健康的 Extension Transport。
+- 仅当插件传输在任何外部副作用发生前不可用时，允许降级一次到 CDP。
+- 发送、评论、点赞或关注一旦开始，禁止切换传输方式，防止重复操作。
 
-## Status and Evidence
+传输边界保持最小化，只负责打开精确 URL、检查可见状态、执行已批准操作及返回
+证据。队列选择和客户开发安全策略继续位于传输层之外。
 
-Execution artifacts will distinguish:
+## 数据流程
 
-- `browserTransportRequested`: `codex-extension-first`
-- `browserTransportUsed`: `codex-extension`, `cdp`, or `none`
-- `browserTransportFallbackReason`: empty or a stable reason code
-- `chromeOpened`: true only after a verified target tab is opened
-- `customerDevelopmentPerformed`: true only after an approved customer action
-  is confirmed
+1. Daily Queue 生成流程先判断是否存在可执行任务。
+2. 如果不存在可执行任务，则以 `no_executable_tasks` 结束，不初始化任何传输层。
+3. 如果存在可执行任务，Selector 检查 Extension 能力。
+4. Extension Bridge 健康时，通过它打开经过验证的精确目标 URL。
+5. 如果 Bridge 在交互开始前不可用，则选择 CDP。
+6. 被选中的传输层将统一证据返回现有结果记录器和 Artifact 刷新流程。
 
-The UI must display the actual transport. It must not label CDP execution as
-Codex Extension execution.
+## 状态与证据
 
-## Failure Handling
+Execution Artifact 必须明确记录：
 
-- Empty queue: `no_executable_tasks`, transport `none`.
-- Extension unavailable before interaction: record reason and fall back to CDP.
-- Extension loses connection after interaction begins: stop and require manual
-  review; do not fall back automatically.
-- Exact target mismatch: stop without interaction.
-- Both transports unavailable: `browser_transport_unavailable`, no customer
-  development.
-- Unconfirmed send/action: preserve existing unconfirmed/manual-review state;
-  never retry through the other transport.
+- `browserTransportRequested`：`codex-extension-first`
+- `browserTransportUsed`：`codex-extension`、`cdp` 或 `none`
+- `browserTransportFallbackReason`：空值或稳定的原因代码
+- `chromeOpened`：仅在目标标签页已验证打开后为 `true`
+- `customerDevelopmentPerformed`：仅在已批准的客户操作得到确认后为 `true`
 
-## Testing
+仪表盘必须展示实际使用的传输方式，不得将 CDP 执行标记成 Codex Extension 执行。
 
-Tests must be written before production changes and must cover:
+## 失败处理
 
-1. Healthy extension capability is selected before CDP.
-2. Missing extension capability selects CDP.
-3. Extension failure before side effects falls back once to CDP.
-4. Extension failure after side effects does not fall back.
-5. Empty queue does not initialize either transport.
-6. Artifacts report the actual transport and retain truthful
-   `chromeOpened`/`customerDevelopmentPerformed` values.
-7. Existing exact-target, duplicate-message, cooldown, and send-confirmation
-   tests remain green.
+- 队列为空：`no_executable_tasks`，传输方式为 `none`。
+- Extension 在交互前不可用：记录原因并降级到 CDP。
+- Extension 在交互开始后断开：停止执行并要求人工检查，禁止自动降级。
+- 精确目标不匹配：停止执行，不进行交互。
+- 两种传输均不可用：`browser_transport_unavailable`，不开展客户开发。
+- 发送或操作未确认：保留现有未确认或人工检查状态，不得通过另一传输方式重试。
 
-Live verification is read-only first: enumerate connected Chrome tabs and open
-an inert local dashboard target. Real customer interaction is outside transport
-verification and requires the normal execution safety gates.
+## 测试方案
 
-## Acceptance Criteria
+所有生产代码变更前必须先编写失败测试，覆盖以下行为：
 
-- A connected extension is preferred when its authenticated runtime capability
-  is available.
-- Standalone execution remains functional through CDP fallback.
-- No duplicate action can result from transport fallback.
-- Execution artifacts and dashboard clearly identify the actual transport.
-- Empty-queue runs remain truthful and do not claim a plugin failure.
+1. Extension 能力健康时优先于 CDP。
+2. Extension 能力不存在时选择 CDP。
+3. Extension 在副作用发生前失败时，只降级一次到 CDP。
+4. Extension 在副作用发生后失败时，不允许降级。
+5. 队列为空时，两种传输均不得初始化。
+6. Artifact 必须报告实际传输方式，并保持 `chromeOpened` 和
+   `customerDevelopmentPerformed` 的真实性。
+7. 现有精确目标、防重复消息、冷却期及发送确认测试全部保持通过。
+
+真实环境验证首先采用只读方式：列出已连接的 Chrome 标签页，并打开无副作用的
+本地仪表盘目标。真实客户交互不属于传输层验证范围，仍须通过正常执行安全门控。
+
+## 验收标准
+
+- 经过身份验证的 Extension 运行时能力可用时，系统优先使用 Extension。
+- 独立执行仍可通过 CDP 降级正常工作。
+- 传输降级不得产生任何重复操作。
+- Execution Artifact 和仪表盘清晰展示实际传输方式。
+- 空队列运行保持真实状态，不得错误报告插件故障。
