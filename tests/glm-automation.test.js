@@ -356,3 +356,31 @@ test('daily queue generator blocks cross-channel repeats for already developed c
   assert.ok(dailyRunner.companyLeadKeys(beverWebsite).some(key => history.touched.has(key)));
   assert.ok(dailyRunner.companyLeadKeys(goOutdoorsFacebook).some(key => history.touched.has(key)));
 });
+
+test('discovery cooldown expires ordinary touches but preserves confirmed DM protection', () => {
+  const now = Date.parse('2026-07-09T00:00:00.000Z');
+  const history = dailyRunner.knownTouchIndex([
+    {
+      task_id: 'google-customer-bass-pro-shops-website-contact',
+      status: 'approval_pending',
+      timestamp: '2026-07-01T06:28:33.983Z',
+      target_url: 'https://www.basspro.com/contact',
+    },
+    {
+      task_id: 'google-customer-mec-website-contact',
+      status: 'approval_pending',
+      timestamp: '2026-07-05T01:05:27.767Z',
+      target_url: 'https://www.mec.ca/contact',
+    },
+    {
+      task_id: 'google-customer-bever-facebook',
+      status: 'sent_confirmed',
+      timestamp: '2026-06-26T10:00:00.000Z',
+      target_url: 'https://www.facebook.com/BeverNL',
+    },
+  ], [], now);
+
+  assert.ok(!history.activeCooldown.has('bassproshops'));
+  assert.ok(history.activeCooldown.has('mec'));
+  assert.ok(history.sentConfirmed.has('bever'));
+});

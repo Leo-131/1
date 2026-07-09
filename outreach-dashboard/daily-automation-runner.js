@@ -431,6 +431,9 @@ function companyLeadKeys(item) {
 function knownTouchIndex(results, contacts, now = Date.now()) {
   const touched = new Set();
   const touchedDetails = new Map();
+  const activeCooldown = new Set();
+  const activeCooldownDetails = new Map();
+  const sentConfirmed = new Set();
   const sameDayDeveloped = new Set();
   const sameDayDetails = new Map();
   const partners = new Set([...PARTNER_COMPANIES].map(cleanKey));
@@ -445,6 +448,8 @@ function knownTouchIndex(results, contacts, now = Date.now()) {
       }
     }
     if (!isTouchResult(result)) continue;
+    const cooldownActive = daysSince(result.timestamp, now) < COOLDOWN_DAYS;
+    const confirmedDm = result.status === 'sent_confirmed';
     const keys = [
       result.task_id,
       result.target_url,
@@ -457,6 +462,14 @@ function knownTouchIndex(results, contacts, now = Date.now()) {
       if (!current || validDate(result.timestamp) >= validDate(current.timestamp)) {
         touchedDetails.set(key, result);
       }
+      if (cooldownActive) {
+        activeCooldown.add(key);
+        const activeCurrent = activeCooldownDetails.get(key);
+        if (!activeCurrent || validDate(result.timestamp) >= validDate(activeCurrent.timestamp)) {
+          activeCooldownDetails.set(key, result);
+        }
+      }
+      if (confirmedDm) sentConfirmed.add(key);
     }
     for (const key of keys) {
       touched.add(key);
@@ -464,6 +477,14 @@ function knownTouchIndex(results, contacts, now = Date.now()) {
       if (!current || validDate(result.timestamp) >= validDate(current.timestamp)) {
         touchedDetails.set(key, result);
       }
+      if (cooldownActive) {
+        activeCooldown.add(key);
+        const activeCurrent = activeCooldownDetails.get(key);
+        if (!activeCurrent || validDate(result.timestamp) >= validDate(activeCurrent.timestamp)) {
+          activeCooldownDetails.set(key, result);
+        }
+      }
+      if (confirmedDm) sentConfirmed.add(key);
     }
   }
   for (const item of contacts || []) {
@@ -471,9 +492,23 @@ function knownTouchIndex(results, contacts, now = Date.now()) {
     const hasTouch = item.sentTime || item.lastTouch || item.scheduledTime || /sent|replied|accepted|scheduled|合作|partner/.test(status);
     const isPartner = /partner|合作/.test(status) || PARTNER_COMPANIES.has(String(item.company || item.name || '').trim().toLowerCase());
     if (isPartner) leadKeys(item).forEach(key => partners.add(key));
-    if (hasTouch || isPartner) leadKeys(item).forEach(key => touched.add(key));
+    if (hasTouch || isPartner) {
+      leadKeys(item).forEach(key => {
+        touched.add(key);
+        activeCooldown.add(key);
+      });
+    }
   }
-  return { touched, touchedDetails, sameDayDeveloped, sameDayDetails, partners };
+  return {
+    touched,
+    touchedDetails,
+    activeCooldown,
+    activeCooldownDetails,
+    sentConfirmed,
+    sameDayDeveloped,
+    sameDayDetails,
+    partners,
+  };
 }
 
 function classifyTask(task, context) {
@@ -809,8 +844,9 @@ function discoveryQueue(limit, context = {}) {
       const channelKeys = channelLeadKeys(item);
       return !partnerKeys.some(key => history.partners.has(key))
         && !companyLeadKeys(item).some(key => history.sameDayDeveloped.has(key))
-        && !companyLeadKeys(item).some(key => history.touched.has(key))
-        && !channelKeys.some(key => history.touched.has(key));
+        && !companyLeadKeys(item).some(key => history.sentConfirmed.has(key))
+        && !companyLeadKeys(item).some(key => history.activeCooldown.has(key))
+        && !channelKeys.some(key => history.activeCooldown.has(key));
     })
     .map(item => ({
       ...item,
@@ -839,8 +875,9 @@ function discoveryCooldownQueue(limit, context = {}) {
       const partnerKeys = leadKeys(item);
       if (partnerKeys.some(key => history.partners.has(key))) return false;
       return companyLeadKeys(item).some(key => history.sameDayDeveloped.has(key))
-        || companyLeadKeys(item).some(key => history.touched.has(key))
-        || channelLeadKeys(item).some(key => history.touched.has(key));
+        || companyLeadKeys(item).some(key => history.sentConfirmed.has(key))
+        || companyLeadKeys(item).some(key => history.activeCooldown.has(key))
+        || channelLeadKeys(item).some(key => history.activeCooldown.has(key));
     })
     .map(item => {
       const sameDay = companyLeadKeys(item)
@@ -849,7 +886,7 @@ function discoveryCooldownQueue(limit, context = {}) {
         .sort((left, right) => validDate(right.timestamp) - validDate(left.timestamp))[0] || null;
       const touch = channelLeadKeys(item)
         .concat(companyLeadKeys(item))
-        .map(key => history.touchedDetails.get(key))
+        .map(key => history.activeCooldownDetails.get(key) || history.touchedDetails.get(key))
         .filter(Boolean)
         .sort((left, right) => validDate(right.timestamp) - validDate(left.timestamp))[0] || null;
       return {
