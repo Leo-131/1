@@ -107,19 +107,20 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "count": 1
     }
   ],
-  "userVisibleStatus": "Customer development was not performed. Top blocker: marketing_attachment_missing (1).",
+  "userVisibleStatus": "Customer development was not performed. Blockers: marketing_attachment_missing (1); profile_valid_no_message_button (1).",
+  "recoveryHint": "Configure WEBSITE_MARKETING_FILE or MARKETING_ATTACHMENT_PATH with an approved marketing attachment before rerunning website-contact outreach.",
   "systemRefresh": {
     "ok": true,
     "stdout": "{\n  \"date\": \"2026-07-10\",\n  \"summary\": {\n    \"totalLeads\": 16,\n    \"highIcp\": 16,\n    \"readyToDevelop\": 0,\n    \"dueNow\": 2,\n    \"potentialPool\": 100,\n    \"potentialPoolTarget\": 100,\n    \"customerTableHighIcp\": 64,\n    \"refillNeeded\": 0,\n    \"googleDiscovered\": 1,\n    \"facebookDiscovered\": 0,\n    \"websiteContactDiscovered\": 1,\n    \"scheduledLater\": 0,\n    \"cooldown\": 30,\n    \"emailPriority\": 0,\n    \"openAgencyMarket\": 15,\n    \"exclusiveAgencySkipped\": 1,\n    \"needsVerification\": 0,\n    \"retainedLowIcp\": 0\n  },\n  \"bugErrors\": 0,\n  \"queueFile\": \"E:\\\\New project\\\\outreach-dashboard\\\\daily-runs\\\\2026-07-10-daily-automation.json\",\n  \"csvFile\": \"E:\\\\New project\\\\outreach-dashboard\\\\daily-runs\\\\2026-07-10-daily-queue.csv\"\n}",
     "stderr": "",
     "error": "",
     "visibility": {
-      "updatedAt": "2026-07-10T19:02:24.990Z",
+      "updatedAt": "2026-07-10T19:05:49.092Z",
       "source": "main-refreshDailyAutomationArtifacts",
       "runDate": "2026-07-10",
-      "artifactGeneratedAt": "2026-07-10T19:02:22.152Z",
-      "executionGeneratedAt": "2026-07-10T16:04:05.769Z",
-      "githubSyncUpdatedAt": "2026-07-10T16:04:22.385Z",
+      "artifactGeneratedAt": "2026-07-10T19:05:48.428Z",
+      "executionGeneratedAt": "2026-07-10T19:02:25.510Z",
+      "githubSyncUpdatedAt": "2026-07-10T19:04:50.638Z",
       "counts": {
         "dailyQueue": 2,
         "googleDiscovered": 1,
@@ -165,5 +166,5 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       }
     }
   },
-  "completedAt": "2026-07-10T19:02:25.510Z"
+  "completedAt": "2026-07-10T19:05:49.414Z"
 };
