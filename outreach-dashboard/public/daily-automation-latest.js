@@ -1,5 +1,5 @@
 window.DAILY_AUTOMATION_LATEST = {
-  "generatedAt": "2026-07-10T07:04:43.273Z",
+  "generatedAt": "2026-07-10T10:02:51.204Z",
   "date": "2026-07-10",
   "mode": "daily-icp-first-automation-loop",
   "executionLayer": "Codex Chrome Extension primary; AutoClaw compatible",
@@ -116,7 +116,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/10 15:02:22",
+        "localTime": "2026/7/10 18:01:53",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -211,7 +211,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/10 15:02:22",
+        "localTime": "2026/7/10 18:01:53",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -253,59 +253,6 @@ window.DAILY_AUTOMATION_LATEST = {
   ],
   "cooldownQueue": [
     {
-      "id": "verified-Instagram-kfoutdoor",
-      "name": "kfoutdoor",
-      "company": "KF Outdoor Official (33K followers, outdoor & sporting goods)",
-      "platform": "instagram",
-      "country": "?????",
-      "countryEn": "Indonesia",
-      "fitScore": 78,
-      "fitTier": "A",
-      "marketScore": 3.4,
-      "marketStatus": "可开拓",
-      "agencyState": "open",
-      "url": "https://www.instagram.com/kfoutdoor/",
-      "website": "",
-      "platformUrl": "https://www.instagram.com/kfoutdoor/",
-      "invalidChannels": null,
-      "facebookStatus": "not_verified_do_not_use",
-      "instagramStatus": "",
-      "contactUrl": "",
-      "contactSearchUrl": "",
-      "emailFrom": "",
-      "websiteContactSubject": "",
-      "websiteContactMessage": "",
-      "websiteContactFlow": "",
-      "publicEmail": "",
-      "publicEmailStatus": "",
-      "contactPhone": "",
-      "vendorPortal": "",
-      "linkedinUrl": "",
-      "headquarters": "",
-      "founded": "",
-      "companyScale": "",
-      "dataSources": null,
-      "alternateChannels": null,
-      "lastStatus": "sent_confirmed",
-      "lastEvidence": "confirmed DM follow-up sent via logged-in Chrome session",
-      "lastTouch": "2026-06-18T10:09:35.863Z",
-      "action": "cooldown",
-      "reason": "previous_sent_confirmed_no_duplicate_dm",
-      "workingTime": {
-        "dueNow": true,
-        "timeZone": "Asia/Jakarta",
-        "localTime": "Fri 14:04",
-        "window": "afternoon",
-        "nextBest": "now",
-        "weight": 0.9
-      },
-      "targetRegion": "southeast_asia",
-      "targetRegionScore": 35,
-      "contactChannelScore": 0,
-      "dealProbabilityScore": 172,
-      "priorityScore": 172
-    },
-    {
       "id": "verified-Instagram-ellisbrigham",
       "name": "ellisbrigham",
       "company": "Ellis Brigham UK (33K followers, since 1933)",
@@ -345,71 +292,18 @@ window.DAILY_AUTOMATION_LATEST = {
       "action": "cooldown",
       "reason": "previous_sent_confirmed_no_duplicate_dm",
       "workingTime": {
-        "dueNow": false,
+        "dueNow": true,
         "timeZone": "Europe/London",
-        "localTime": "Fri 08:04",
-        "window": "outside_work_hours",
-        "nextBest": "Europe/London morning",
-        "weight": 0
+        "localTime": "Fri 11:02",
+        "window": "morning",
+        "nextBest": "now",
+        "weight": 1
       },
       "targetRegion": "europe",
       "targetRegionScore": 32,
       "contactChannelScore": 0,
       "dealProbabilityScore": 204,
       "priorityScore": 204
-    },
-    {
-      "id": "verified-Instagram-campmor",
-      "name": "campmor",
-      "company": "Campmor US",
-      "platform": "instagram",
-      "country": "美国",
-      "countryEn": "United States",
-      "fitScore": 100,
-      "fitTier": "A",
-      "marketScore": 4.4,
-      "marketStatus": "可开拓",
-      "agencyState": "open",
-      "url": "https://www.instagram.com/campmor/",
-      "website": "",
-      "platformUrl": "https://www.instagram.com/campmor/",
-      "invalidChannels": null,
-      "facebookStatus": "not_verified_do_not_use",
-      "instagramStatus": "",
-      "contactUrl": "",
-      "contactSearchUrl": "",
-      "emailFrom": "",
-      "websiteContactSubject": "",
-      "websiteContactMessage": "",
-      "websiteContactFlow": "",
-      "publicEmail": "",
-      "publicEmailStatus": "",
-      "contactPhone": "",
-      "vendorPortal": "",
-      "linkedinUrl": "",
-      "headquarters": "",
-      "founded": "",
-      "companyScale": "",
-      "dataSources": null,
-      "alternateChannels": null,
-      "lastStatus": "sent_confirmed",
-      "lastEvidence": "confirmed DM follow-up sent via logged-in Chrome session",
-      "lastTouch": "2026-06-18T10:09:35.863Z",
-      "action": "cooldown",
-      "reason": "previous_sent_confirmed_no_duplicate_dm",
-      "workingTime": {
-        "dueNow": false,
-        "timeZone": "America/New_York",
-        "localTime": "Fri 03:04",
-        "window": "outside_work_hours",
-        "nextBest": "America/New_York morning",
-        "weight": 0
-      },
-      "targetRegion": "americas",
-      "targetRegionScore": 30,
-      "contactChannelScore": 0,
-      "dealProbabilityScore": 201,
-      "priorityScore": 201
     },
     {
       "id": "verified-Instagram-otimosoutdoorgear",
@@ -451,12 +345,12 @@ window.DAILY_AUTOMATION_LATEST = {
       "action": "cooldown",
       "reason": "previous_sent_confirmed_no_duplicate_dm",
       "workingTime": {
-        "dueNow": false,
+        "dueNow": true,
         "timeZone": "Europe/London",
-        "localTime": "Fri 08:04",
-        "window": "outside_work_hours",
-        "nextBest": "Europe/London morning",
-        "weight": 0
+        "localTime": "Fri 11:02",
+        "window": "morning",
+        "nextBest": "now",
+        "weight": 1
       },
       "targetRegion": "europe",
       "targetRegionScore": 32,
@@ -504,18 +398,124 @@ window.DAILY_AUTOMATION_LATEST = {
       "action": "cooldown",
       "reason": "previous_sent_confirmed_no_duplicate_dm",
       "workingTime": {
-        "dueNow": false,
+        "dueNow": true,
         "timeZone": "Europe/London",
-        "localTime": "Fri 08:04",
-        "window": "outside_work_hours",
-        "nextBest": "Europe/London morning",
-        "weight": 0
+        "localTime": "Fri 11:02",
+        "window": "morning",
+        "nextBest": "now",
+        "weight": 1
       },
       "targetRegion": "europe",
       "targetRegionScore": 32,
       "contactChannelScore": 0,
       "dealProbabilityScore": 195,
       "priorityScore": 195
+    },
+    {
+      "id": "verified-Instagram-prago.outdoors",
+      "name": "prago.outdoors",
+      "company": "Prago Outdoors (outdoor wholesale/retail account)",
+      "platform": "instagram",
+      "country": "??",
+      "countryEn": "India",
+      "fitScore": 76,
+      "fitTier": "A",
+      "marketScore": 3.2,
+      "marketStatus": "可开拓",
+      "agencyState": "open",
+      "url": "https://www.instagram.com/prago.outdoors/",
+      "website": "",
+      "platformUrl": "https://www.instagram.com/prago.outdoors/",
+      "invalidChannels": null,
+      "facebookStatus": "not_verified_do_not_use",
+      "instagramStatus": "",
+      "contactUrl": "",
+      "contactSearchUrl": "",
+      "emailFrom": "",
+      "websiteContactSubject": "",
+      "websiteContactMessage": "",
+      "websiteContactFlow": "",
+      "publicEmail": "",
+      "publicEmailStatus": "",
+      "contactPhone": "",
+      "vendorPortal": "",
+      "linkedinUrl": "",
+      "headquarters": "",
+      "founded": "",
+      "companyScale": "",
+      "dataSources": null,
+      "alternateChannels": null,
+      "lastStatus": "sent_confirmed",
+      "lastEvidence": "confirmed DM follow-up sent via logged-in Chrome session",
+      "lastTouch": "2026-06-18T10:09:35.863Z",
+      "action": "cooldown",
+      "reason": "previous_sent_confirmed_no_duplicate_dm",
+      "workingTime": {
+        "dueNow": true,
+        "timeZone": "Asia/Kolkata",
+        "localTime": "Fri 15:32",
+        "window": "afternoon",
+        "nextBest": "now",
+        "weight": 0.9
+      },
+      "targetRegion": "other",
+      "targetRegionScore": 0,
+      "contactChannelScore": 0,
+      "dealProbabilityScore": 132,
+      "priorityScore": 132
+    },
+    {
+      "id": "verified-Instagram-campmor",
+      "name": "campmor",
+      "company": "Campmor US",
+      "platform": "instagram",
+      "country": "美国",
+      "countryEn": "United States",
+      "fitScore": 100,
+      "fitTier": "A",
+      "marketScore": 4.4,
+      "marketStatus": "可开拓",
+      "agencyState": "open",
+      "url": "https://www.instagram.com/campmor/",
+      "website": "",
+      "platformUrl": "https://www.instagram.com/campmor/",
+      "invalidChannels": null,
+      "facebookStatus": "not_verified_do_not_use",
+      "instagramStatus": "",
+      "contactUrl": "",
+      "contactSearchUrl": "",
+      "emailFrom": "",
+      "websiteContactSubject": "",
+      "websiteContactMessage": "",
+      "websiteContactFlow": "",
+      "publicEmail": "",
+      "publicEmailStatus": "",
+      "contactPhone": "",
+      "vendorPortal": "",
+      "linkedinUrl": "",
+      "headquarters": "",
+      "founded": "",
+      "companyScale": "",
+      "dataSources": null,
+      "alternateChannels": null,
+      "lastStatus": "sent_confirmed",
+      "lastEvidence": "confirmed DM follow-up sent via logged-in Chrome session",
+      "lastTouch": "2026-06-18T10:09:35.863Z",
+      "action": "cooldown",
+      "reason": "previous_sent_confirmed_no_duplicate_dm",
+      "workingTime": {
+        "dueNow": false,
+        "timeZone": "America/New_York",
+        "localTime": "Fri 06:02",
+        "window": "outside_work_hours",
+        "nextBest": "America/New_York morning",
+        "weight": 0
+      },
+      "targetRegion": "americas",
+      "targetRegionScore": 30,
+      "contactChannelScore": 0,
+      "dealProbabilityScore": 201,
+      "priorityScore": 201
     },
     {
       "id": "verified-Instagram-mec",
@@ -559,7 +559,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Fri 03:04",
+        "localTime": "Fri 06:02",
         "window": "outside_work_hours",
         "nextBest": "America/Toronto morning",
         "weight": 0
@@ -612,7 +612,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Fri 03:04",
+        "localTime": "Fri 06:02",
         "window": "outside_work_hours",
         "nextBest": "America/Toronto morning",
         "weight": 0
@@ -622,6 +622,59 @@ window.DAILY_AUTOMATION_LATEST = {
       "contactChannelScore": 0,
       "dealProbabilityScore": 175,
       "priorityScore": 175
+    },
+    {
+      "id": "verified-Instagram-kfoutdoor",
+      "name": "kfoutdoor",
+      "company": "KF Outdoor Official (33K followers, outdoor & sporting goods)",
+      "platform": "instagram",
+      "country": "?????",
+      "countryEn": "Indonesia",
+      "fitScore": 78,
+      "fitTier": "A",
+      "marketScore": 3.4,
+      "marketStatus": "可开拓",
+      "agencyState": "open",
+      "url": "https://www.instagram.com/kfoutdoor/",
+      "website": "",
+      "platformUrl": "https://www.instagram.com/kfoutdoor/",
+      "invalidChannels": null,
+      "facebookStatus": "not_verified_do_not_use",
+      "instagramStatus": "",
+      "contactUrl": "",
+      "contactSearchUrl": "",
+      "emailFrom": "",
+      "websiteContactSubject": "",
+      "websiteContactMessage": "",
+      "websiteContactFlow": "",
+      "publicEmail": "",
+      "publicEmailStatus": "",
+      "contactPhone": "",
+      "vendorPortal": "",
+      "linkedinUrl": "",
+      "headquarters": "",
+      "founded": "",
+      "companyScale": "",
+      "dataSources": null,
+      "alternateChannels": null,
+      "lastStatus": "sent_confirmed",
+      "lastEvidence": "confirmed DM follow-up sent via logged-in Chrome session",
+      "lastTouch": "2026-06-18T10:09:35.863Z",
+      "action": "cooldown",
+      "reason": "previous_sent_confirmed_no_duplicate_dm",
+      "workingTime": {
+        "dueNow": false,
+        "timeZone": "Asia/Jakarta",
+        "localTime": "Fri 17:02",
+        "window": "outside_work_hours",
+        "nextBest": "Asia/Jakarta morning",
+        "weight": 0
+      },
+      "targetRegion": "southeast_asia",
+      "targetRegionScore": 35,
+      "contactChannelScore": 0,
+      "dealProbabilityScore": 172,
+      "priorityScore": 172
     },
     {
       "id": "verified-Instagram-anacondastores",
@@ -665,7 +718,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Australia/Sydney",
-        "localTime": "Fri 17:04",
+        "localTime": "Fri 20:02",
         "window": "outside_work_hours",
         "nextBest": "Australia/Sydney morning",
         "weight": 0
@@ -718,7 +771,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Pacific/Auckland",
-        "localTime": "Fri 19:04",
+        "localTime": "Fri 22:02",
         "window": "outside_work_hours",
         "nextBest": "Pacific/Auckland morning",
         "weight": 0
@@ -771,7 +824,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Pacific/Auckland",
-        "localTime": "Fri 19:04",
+        "localTime": "Fri 22:02",
         "window": "outside_work_hours",
         "nextBest": "Pacific/Auckland morning",
         "weight": 0
@@ -824,7 +877,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Pacific/Auckland",
-        "localTime": "Fri 19:04",
+        "localTime": "Fri 22:02",
         "window": "outside_work_hours",
         "nextBest": "Pacific/Auckland morning",
         "weight": 0
@@ -877,7 +930,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Pacific/Auckland",
-        "localTime": "Fri 19:04",
+        "localTime": "Fri 22:02",
         "window": "outside_work_hours",
         "nextBest": "Pacific/Auckland morning",
         "weight": 0
@@ -930,7 +983,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Pacific/Auckland",
-        "localTime": "Fri 19:04",
+        "localTime": "Fri 22:02",
         "window": "outside_work_hours",
         "nextBest": "Pacific/Auckland morning",
         "weight": 0
@@ -940,59 +993,6 @@ window.DAILY_AUTOMATION_LATEST = {
       "contactChannelScore": 0,
       "dealProbabilityScore": 142,
       "priorityScore": 142
-    },
-    {
-      "id": "verified-Instagram-prago.outdoors",
-      "name": "prago.outdoors",
-      "company": "Prago Outdoors (outdoor wholesale/retail account)",
-      "platform": "instagram",
-      "country": "??",
-      "countryEn": "India",
-      "fitScore": 76,
-      "fitTier": "A",
-      "marketScore": 3.2,
-      "marketStatus": "可开拓",
-      "agencyState": "open",
-      "url": "https://www.instagram.com/prago.outdoors/",
-      "website": "",
-      "platformUrl": "https://www.instagram.com/prago.outdoors/",
-      "invalidChannels": null,
-      "facebookStatus": "not_verified_do_not_use",
-      "instagramStatus": "",
-      "contactUrl": "",
-      "contactSearchUrl": "",
-      "emailFrom": "",
-      "websiteContactSubject": "",
-      "websiteContactMessage": "",
-      "websiteContactFlow": "",
-      "publicEmail": "",
-      "publicEmailStatus": "",
-      "contactPhone": "",
-      "vendorPortal": "",
-      "linkedinUrl": "",
-      "headquarters": "",
-      "founded": "",
-      "companyScale": "",
-      "dataSources": null,
-      "alternateChannels": null,
-      "lastStatus": "sent_confirmed",
-      "lastEvidence": "confirmed DM follow-up sent via logged-in Chrome session",
-      "lastTouch": "2026-06-18T10:09:35.863Z",
-      "action": "cooldown",
-      "reason": "previous_sent_confirmed_no_duplicate_dm",
-      "workingTime": {
-        "dueNow": false,
-        "timeZone": "Asia/Kolkata",
-        "localTime": "Fri 12:34",
-        "window": "outside_work_hours",
-        "nextBest": "Asia/Kolkata afternoon",
-        "weight": 0
-      },
-      "targetRegion": "other",
-      "targetRegionScore": 0,
-      "contactChannelScore": 0,
-      "dealProbabilityScore": 132,
-      "priorityScore": 132
     },
     {
       "linkedinUrl": "https://www.linkedin.com/company/bassproshops",
@@ -1050,7 +1050,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/10 15:02:22",
+        "localTime": "2026/7/10 18:01:53",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -1130,7 +1130,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/10 15:02:22",
+        "localTime": "2026/7/10 18:01:53",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -1210,7 +1210,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/10 15:02:22",
+        "localTime": "2026/7/10 18:01:53",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -1290,7 +1290,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/10 15:02:22",
+        "localTime": "2026/7/10 18:01:53",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -1370,7 +1370,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/10 15:02:22",
+        "localTime": "2026/7/10 18:01:53",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -1450,7 +1450,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/10 15:02:22",
+        "localTime": "2026/7/10 18:01:53",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -1530,7 +1530,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/10 15:02:22",
+        "localTime": "2026/7/10 18:01:53",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -1610,7 +1610,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/10 15:02:22",
+        "localTime": "2026/7/10 18:01:53",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -1676,7 +1676,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/10 15:02:22",
+        "localTime": "2026/7/10 18:01:53",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -1742,7 +1742,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/10 15:02:22",
+        "localTime": "2026/7/10 18:01:53",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -1808,7 +1808,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/10 15:02:22",
+        "localTime": "2026/7/10 18:01:53",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -1874,7 +1874,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/10 15:02:22",
+        "localTime": "2026/7/10 18:01:53",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -1940,7 +1940,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/10 15:02:22",
+        "localTime": "2026/7/10 18:01:53",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -2006,7 +2006,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/10 15:02:22",
+        "localTime": "2026/7/10 18:01:53",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -2087,7 +2087,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/10 15:02:22",
+        "localTime": "2026/7/10 18:01:53",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -2167,7 +2167,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/10 15:02:22",
+        "localTime": "2026/7/10 18:01:53",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -2235,7 +2235,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Fri 03:04",
+        "localTime": "Fri 06:02",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -2268,8 +2268,8 @@ window.DAILY_AUTOMATION_LATEST = {
     ],
     "byAction": {
       "cooldown": 14,
-      "skip_exclusive_agency": 1,
-      "retry_or_alternate_channel": 1
+      "retry_or_alternate_channel": 1,
+      "skip_exclusive_agency": 1
     },
     "keywordOpportunities": [
       {
