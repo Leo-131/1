@@ -377,6 +377,10 @@ test('website contact automation must verify contact entry before ready status',
   assert.ok(mainSource.includes('website_contact_all_targets_failed'));
   assert.ok(mainSource.includes('Social platform URL is not a website contact form'));
   assert.ok(mainSource.includes('marketing_attachment_missing'));
+  assert.ok(mainSource.includes('function formatExecutionBlockerStatus'));
+  assert.ok(mainSource.includes('function executionRecoveryHint'));
+  assert.ok(mainSource.includes('Configure WEBSITE_MARKETING_FILE or MARKETING_ATTACHMENT_PATH'));
+  assert.ok(mainSource.includes('Customer development was not performed. Blockers:'));
   assert.ok(mainSource.includes('submit_paused_by_env'));
   assert.ok(mainSource.includes('required_fields_auto_bypassed'));
   assert.ok(mainSource.includes("el.tagName === 'TEXTAREA' && /description|message|details|request/.test(key)"));
