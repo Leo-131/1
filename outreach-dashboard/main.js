@@ -2415,6 +2415,26 @@ function buildExecutionTruth(results = []) {
   };
 }
 
+function buildExecutionBlockerSummary(results = [], skipped = []) {
+  const blockers = new Map();
+  const add = (reason, status) => {
+    const key = reason || status || 'unknown';
+    const current = blockers.get(key) || { reason: key, status: status || '', count: 0 };
+    current.count += 1;
+    blockers.set(key, current);
+  };
+  (Array.isArray(results) ? results : []).forEach((item) => {
+    const nested = item && item.result && typeof item.result === 'object' ? item.result : {};
+    const reason = nested.reason || item.reason || '';
+    const status = nested.status || item.sendStatus || '';
+    if (reason || status === 'approval_pending' || status === 'send_unconfirmed' || status === 'failed_open') {
+      add(reason, status);
+    }
+  });
+  (Array.isArray(skipped) ? skipped : []).forEach((item) => add(item && item.reason, 'skipped'));
+  return Array.from(blockers.values()).sort((a, b) => b.count - a.count || a.reason.localeCompare(b.reason));
+}
+
 ipcMain.handle('run-glm-direct-automation', async (_event, payload) => {
   const lead = payload && payload.lead;
   const result = await executeLeadAutomation(lead);
@@ -2577,6 +2597,7 @@ async function runDailyAutomationQueue(payload = {}) {
     if (index + parallelLimit < executable.length) await sleep(Number(payload && payload.delayMs || 91000));
   }
   const systemRefresh = await refreshDailyAutomationArtifacts();
+  const blockerSummary = buildExecutionBlockerSummary(results, skipped);
 
   return {
     ok: results.some(item => item.ok),
@@ -2592,6 +2613,10 @@ async function runDailyAutomationQueue(payload = {}) {
     results,
     skipped,
     summary: latest.summary || {},
+    blockerSummary,
+    userVisibleStatus: blockerSummary.length
+      ? `Customer development was not performed. Top blocker: ${blockerSummary[0].reason} (${blockerSummary[0].count}).`
+      : undefined,
     systemRefresh,
   };
 }

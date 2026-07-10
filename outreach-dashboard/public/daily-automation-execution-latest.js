@@ -95,18 +95,31 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     "needsVerification": 0,
     "retainedLowIcp": 0
   },
+  "blockerSummary": [
+    {
+      "reason": "marketing_attachment_missing",
+      "status": "approval_pending",
+      "count": 1
+    },
+    {
+      "reason": "profile_valid_no_message_button",
+      "status": "skipped",
+      "count": 1
+    }
+  ],
+  "userVisibleStatus": "Customer development was not performed. Top blocker: marketing_attachment_missing (1).",
   "systemRefresh": {
     "ok": true,
     "stdout": "{\n  \"date\": \"2026-07-10\",\n  \"summary\": {\n    \"totalLeads\": 16,\n    \"highIcp\": 16,\n    \"readyToDevelop\": 0,\n    \"dueNow\": 1,\n    \"potentialPool\": 100,\n    \"potentialPoolTarget\": 100,\n    \"customerTableHighIcp\": 64,\n    \"refillNeeded\": 0,\n    \"googleDiscovered\": 1,\n    \"facebookDiscovered\": 0,\n    \"websiteContactDiscovered\": 1,\n    \"scheduledLater\": 1,\n    \"cooldown\": 30,\n    \"emailPriority\": 0,\n    \"openAgencyMarket\": 15,\n    \"exclusiveAgencySkipped\": 1,\n    \"needsVerification\": 0,\n    \"retainedLowIcp\": 0\n  },\n  \"bugErrors\": 0,\n  \"queueFile\": \"E:\\\\New project\\\\outreach-dashboard\\\\daily-runs\\\\2026-07-10-daily-automation.json\",\n  \"csvFile\": \"E:\\\\New project\\\\outreach-dashboard\\\\daily-runs\\\\2026-07-10-daily-queue.csv\"\n}",
     "stderr": "",
     "error": "",
     "visibility": {
-      "updatedAt": "2026-07-10T16:02:05.549Z",
+      "updatedAt": "2026-07-10T16:04:05.029Z",
       "source": "main-refreshDailyAutomationArtifacts",
       "runDate": "2026-07-10",
-      "artifactGeneratedAt": "2026-07-10T16:02:03.239Z",
-      "executionGeneratedAt": "2026-07-10T13:02:20.828Z",
-      "githubSyncUpdatedAt": "2026-07-10T13:04:00.220Z",
+      "artifactGeneratedAt": "2026-07-10T16:04:03.140Z",
+      "executionGeneratedAt": "2026-07-10T16:02:07.208Z",
+      "githubSyncUpdatedAt": "2026-07-10T16:02:32.148Z",
       "counts": {
         "dailyQueue": 1,
         "googleDiscovered": 1,
@@ -152,5 +165,5 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       }
     }
   },
-  "completedAt": "2026-07-10T16:02:07.208Z"
+  "completedAt": "2026-07-10T16:04:05.769Z"
 };
