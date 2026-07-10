@@ -1489,6 +1489,14 @@ function websiteMarketingAttachmentPath() {
   return path.isAbsolute(configured) ? configured : path.join(__dirname, configured);
 }
 
+function websiteMarketingAttachmentStatus() {
+  const filePath = websiteMarketingAttachmentPath();
+  if (!filePath || !fs.existsSync(filePath)) {
+    return { ok: false, filePath, evidence: 'marketing_attachment_missing' };
+  }
+  return { ok: true, filePath, evidence: `marketing_attachment_selected:${path.basename(filePath)}` };
+}
+
 function validateWebsiteContactTarget(lead = {}) {
   const targetUrl = lead.contactUrl || lead.targetUrl || lead.verifiedTargetUrl || lead.url || lead.website;
   let parsed;
@@ -1945,7 +1953,7 @@ async function prepareWebsiteContactForm(chromeOpen, lead, subject, draft) {
     message: draft,
   };
   const filled = await evaluateChromeTabJson(chromeOpen, websiteContactFormFillExpression(fillPayload), 8000);
-  const attachmentPath = websiteMarketingAttachmentPath();
+  const attachmentPath = websiteMarketingAttachmentStatus().filePath;
   const attachment = await setChromeFileInput(chromeOpen, attachmentPath);
   const requiredEmpty = filled && Array.isArray(filled.requiredEmpty) ? filled.requiredEmpty : [];
   const autoSubmitSetting = process.env.WEBSITE_CONTACT_AUTO_SUBMIT;
@@ -2001,6 +2009,29 @@ async function runWebsiteContactLead(lead = {}) {
   }
   const subject = websiteContactSubject(lead);
   const draft = websiteContactMessage(lead);
+  const attachment = websiteMarketingAttachmentStatus();
+  if (!attachment.ok) {
+    const output = {
+      verdict: 'approval_pending',
+      evidence: `website_contact_preflight_blocked;${attachment.evidence};website_contact_targets:${targets.length}`,
+      nextAction: 'Configure WEBSITE_MARKETING_FILE or MARKETING_ATTACHMENT_PATH with the approved marketing file, then rerun. Browser execution was skipped before touching the contact page.',
+      subject,
+      draft,
+      sendStatus: 'approval_pending',
+      attempts: [],
+    };
+    return {
+      ok: false,
+      engine: 'codex-chrome-extension-website-contact',
+      mode: 'website_contact_preflight_marketing_file',
+      targetUrl: targets[0] && targets[0].targetUrl,
+      sendStatus: 'approval_pending',
+      subject,
+      draft,
+      evidence: output.evidence,
+      output: JSON.stringify(output),
+    };
+  }
   const attempts = [];
   let lastResult = null;
   for (const target of targets) {
