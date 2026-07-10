@@ -470,7 +470,8 @@
       ? [record && record.contactUrl, record && record.vendorPortal, record && record.url, record && record.targetUrl, record && record.website]
       : [record && record.url, record && record.targetUrl, record && record.platformUrl, record && record.contactUrl, record && record.vendorPortal, record && record.website];
     return candidates.find(value => /^https?:\/\//i.test(String(value || ''))
-      && !/^https:\/\/www\.google\.com\/search/i.test(String(value || ''))) || '';
+      && !/^https:\/\/www\.google\.com\/search/i.test(String(value || ''))
+      && !isBrokenChannelUrl(record, value)) || '';
   }
   function urlHost(value) {
     try {
@@ -524,6 +525,31 @@
   function urlHandle(value) {
     const match = String(value || '').match(/instagram\.com\/([^/?#]+)/i);
     return match ? match[1] : '';
+  }
+  function socialChannelForUrl(value) {
+    const text = String(value || '').toLowerCase();
+    if (/instagram\.com\//.test(text)) return 'instagram';
+    if (/facebook\.com\//.test(text)) return 'facebook';
+    return '';
+  }
+  function normalizedSocialUrl(value) {
+    try {
+      const parsed = new URL(String(value || ''));
+      parsed.hash = '';
+      parsed.search = '';
+      return parsed.href.replace(/\/$/, '').toLowerCase();
+    } catch {
+      return String(value || '').replace(/\/$/, '').toLowerCase();
+    }
+  }
+  function isBrokenChannelUrl(record, value) {
+    const channel = socialChannelForUrl(value);
+    if (!channel || !record) return false;
+    const invalid = record.invalidChannels && record.invalidChannels[channel];
+    if (!invalid) return false;
+    const invalidUrl = normalizedSocialUrl(invalid.url || '');
+    const candidateUrl = normalizedSocialUrl(value);
+    return !invalidUrl || invalidUrl === candidateUrl || String(invalid.status || '').includes('broken');
   }
   function taskKeys(task) {
     return [
@@ -1191,10 +1217,10 @@
       const qualified = shouldRetainWithoutStrike(task);
       const rowClass = qualified ? '' : ' class="cc-low-icp"';
       const linkClass = qualified ? '' : ' class="cc-strike-link"';
-      const target = entryUrl(task) || platformUrl(task);
-      const customerHref = target || urlFor('customer', { contact: task.taskId });
-      const customerLinkAttrs = target ? ` href="${esc(customerHref)}" target="_blank" rel="noopener"` : ` href="${customerHref}"`;
-      const archiveLink = target ? `<br><a class="cc-sub-link" href="${urlFor('customer', { contact: task.taskId })}">System profile</a>` : '';
+      const target = entryUrl(task);
+      const profileHref = urlFor('customer', { contact: task.taskId });
+      const customerLinkAttrs = ` href="${profileHref}"`;
+      const archiveLink = target ? `<br><a class="cc-sub-link" href="${esc(target)}" target="_blank" rel="noopener">Verified channel</a>` : '';
       return `<tr${rowClass}><td><a${linkClass}${customerLinkAttrs} title="Open verified customer platform; ${esc(icpExplanation(task))}">${esc(task.company)}</a>${archiveLink}${task.identityStatus === 'identity_mismatch' ? '<br><span class="cc-chip red">Identity mismatch</span>' : ''}${qualified ? '' : '<br><span class="cc-chip amber">Low ICP retained</span>'}</td><td>${esc(task.country)}</td><td>${esc(task.keyword)}</td><td><span class="cc-chip">${stateLabel(task.state)}</span></td><td title="ICP ${icpScore(task)} + market/contact/region priority">${dealProbabilityScore(task)}</td><td><span class="cc-chip ${['southeast_asia', 'europe', 'americas'].includes(targetRegion(task)) ? 'green' : ''}">${esc(targetRegion(task))}</span></td><td><div class="cc-row-actions"><button type="button" onclick="openVerifiedCustomer('${esc(task.taskId)}')" ${target ? '' : 'disabled'}>Open profile</button><button type="button" title="${esc(autoClawAvailability(task).reason)}" onclick="runGlmDirect('${esc(task.taskId)}')" ${canRunGlm(task) ? '' : 'disabled'}>${esc(autoClawAvailability(task).label)}</button></div></td></tr>`;
     }).join('')}</tbody></table>`;
   }
@@ -1395,10 +1421,10 @@
         const key = recordKey(record, index);
         const qualified = shouldRetainWithoutStrike(record);
         const linkClass = qualified ? '' : ' class="cc-strike-link"';
-        const target = entryUrl(record) || platformUrl(record);
-        const customerHref = target || urlFor('customer', { contact: key });
-        const customerLinkAttrs = target ? ` href="${esc(customerHref)}" target="_blank" rel="noopener"` : ` href="${customerHref}"`;
-        const archiveLink = target ? `<br><a class="cc-sub-link" href="${urlFor('customer', { contact: key })}">System profile</a>` : '';
+        const target = entryUrl(record);
+        const profileHref = urlFor('customer', { contact: key });
+        const customerLinkAttrs = ` href="${profileHref}"`;
+        const archiveLink = target ? `<br><a class="cc-sub-link" href="${esc(target)}" target="_blank" rel="noopener">Verified channel</a>` : '';
         return `<tr class="${qualified ? '' : 'cc-low-icp'}"><td><a${linkClass}${customerLinkAttrs} title="Open verified customer platform; ${esc(icpExplanation(record))}">${esc(record.name)}</a>${archiveLink}</td><td>${esc(record.company)}${qualified ? '' : '<br><span class="cc-chip amber">Low ICP retained</span>'}</td><td>${esc(record.role)}</td><td>${esc(record.country)}</td><td>${esc(record.platform)}</td><td><span class="cc-chip">${esc(record.status)}</span></td><td title="ICP ${icpScore(record)} + market/contact/region priority">${dealProbabilityScore(record)}</td><td>${esc(recordUpdatedAt(record))}</td></tr>`;
       }).join('')}</tbody></table>${rows.length ? '' : '<div class="cc-empty">没有匹配客户，请重置或调整筛选条件</div>'}</div>`;
   }
@@ -1575,8 +1601,8 @@
       ['Official Website', firstUrl(record.website, record.companyWebsite), 'Primary company verification and vendor/contact research'],
       ['Website Contact', firstUrl(record.contactUrl, alternates.websiteContact), 'Preferred non-social route for buyer/vendor inquiry'],
       ['Vendor Portal', firstUrl(record.vendorPortal), record.contactNote || 'Supplier or vendor onboarding/contact route'],
-      ['Instagram', firstUrl(record.instagram_url, record.platform === 'instagram' ? record.targetUrl : '', alternates.instagram), invalid.instagram ? invalid.instagram.status : 'Use only if profile opens and message composer is available'],
-      ['Facebook', firstUrl(record.facebook_url, record.platform === 'facebook' ? record.targetUrl : '', alternates.facebook), 'Use official page when Instagram is broken or unavailable'],
+      ['Instagram', invalid.instagram ? '' : firstUrl(record.instagram_url, record.platform === 'instagram' ? record.targetUrl : '', alternates.instagram), invalid.instagram ? invalid.instagram.status : 'Use only if profile opens and message composer is available'],
+      ['Facebook', invalid.facebook ? '' : firstUrl(record.facebook_url, record.platform === 'facebook' ? record.targetUrl : '', alternates.facebook), invalid.facebook ? invalid.facebook.status : 'Use official page when Instagram is broken or unavailable'],
       ['LinkedIn', firstUrl(record.linkedin_url, record.linkedin), 'Use for company and buyer role validation'],
       ['Google Contact Search', firstUrl(record.contactSearchUrl, record.evidenceUrl, record.query), 'Find buyer, wholesale, vendor portal, or partnership contact'],
     ];
