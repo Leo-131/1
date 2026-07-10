@@ -415,10 +415,14 @@ test('Codex Chrome execution can auto-send approved social outreach with confirm
   assert.ok(chromeDriverSource.includes('closeBlockingOverlayExpression'));
   assert.ok(chromeDriverSource.includes('submitInstagramPostEngagement'));
   assert.match(chromeDriverSource, /platform === 'instagram'[\s\S]*clickOptionalAction\(tab, 'follow', platform\)[\s\S]*submitInstagramPostEngagement\(tab/);
+  assert.ok(chromeDriverSource.includes('submitFacebookPostEngagement'));
+  assert.ok(chromeDriverSource.includes('facebookPostLikeButtonExpression'));
+  assert.match(chromeDriverSource, /platform === 'facebook'[\s\S]*clickOptionalAction\(tab, 'follow', platform\)[\s\S]*submitFacebookPostEngagement\(tab/);
   assert.ok(chromeDriverSource.includes('instagramPostTileExpression'));
   assert.ok(chromeDriverSource.includes('instagramCommentActionExpression'));
   assert.ok(chromeDriverSource.includes('instagram_post_opened'));
   assert.ok(chromeDriverSource.includes('post_liked'));
+  assert.ok(chromeDriverSource.includes('facebook_post_like_clicked'));
   assert.ok(chromeDriverSource.includes('post_like_double_tap_attempted'));
   assert.ok(chromeDriverSource.includes('comment_submitted'));
   assert.ok(chromeDriverSource.includes("return `${kind}_already_active`"));

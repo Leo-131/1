@@ -653,6 +653,60 @@ async function submitInstagramPostEngagement(tab, text) {
   return evidence.join(';');
 }
 
+function facebookPostLikeButtonExpression() {
+  return `(() => {
+    const visible = (el) => {
+      const rect = el && el.getBoundingClientRect && el.getBoundingClientRect();
+      return Boolean(rect && rect.width > 0 && rect.height > 0 && rect.bottom > 0 && rect.top < window.innerHeight);
+    };
+    const textOf = (el) => String(el.innerText || el.textContent || el.getAttribute('aria-label') || '').replace(/\\s+/g, ' ').trim().toLowerCase();
+    const negative = ['unlike', '\\u5df2\\u8d5e', '\\u53d6\\u6d88\\u8d5e'];
+    window.scrollBy({ top: Math.round(window.innerHeight * 0.55), behavior: 'instant' });
+    const controls = Array.from(document.querySelectorAll('[role="feed"] [role="article"] button,[role="feed"] [role="article"] div[role="button"],[role="main"] [role="article"] button,[role="main"] [role="article"] div[role="button"],[role="article"] button,[role="article"] div[role="button"]'))
+      .filter(visible)
+      .map((el) => {
+        const rect = el.getBoundingClientRect();
+        const text = textOf(el);
+        const article = el.closest('[role="article"]');
+        const articleText = article ? textOf(article).slice(0, 600) : '';
+        return {
+          text,
+          articleText,
+          x: Math.round(rect.left + rect.width / 2),
+          y: Math.round(rect.top + rect.height / 2),
+          width: Math.round(rect.width),
+          height: Math.round(rect.height),
+          disabled: Boolean(el.disabled || el.getAttribute('aria-disabled') === 'true' || el.getAttribute('aria-pressed') === 'true')
+        };
+      })
+      .filter(item => !item.disabled)
+      .filter(item => item.width >= 24 && item.height >= 20)
+      .filter(item => !negative.some(word => item.text.includes(word)))
+      .filter(item => /(^|\\s)(like|\\u8d5e)(\\s|$)/i.test(item.text) || item.text === '\\u559c\\u6b22')
+      .filter(item => !/share|comment|send|messenger|\\u5206\\u4eab|\\u8bc4\\u8bba|\\u53d1\\u9001/.test(item.text));
+    const preferred = controls
+      .filter(item => item.y > 160 && item.y < window.innerHeight - 60)
+      .sort((a, b) => a.y - b.y || a.x - b.x)[0] || controls[0];
+    return JSON.stringify(preferred || null);
+  })()`;
+}
+
+async function submitFacebookPostEngagement(tab) {
+  const evidence = [];
+  const like = await evaluateJson(tab, facebookPostLikeButtonExpression(), 4000).catch(() => null);
+  if (like && Number.isFinite(like.x) && Number.isFinite(like.y)) {
+    await clickAt(tab, like.x, like.y);
+    await sleep(900);
+    evidence.push('post_liked');
+    evidence.push('facebook_post_like_clicked');
+  } else {
+    evidence.push('facebook_post_like_not_available');
+  }
+  await evaluateJson(tab, '(() => { window.scrollTo({ top: 0, behavior: "instant" }); return JSON.stringify(true); })()', 2000).catch(() => null);
+  await sleep(500);
+  return evidence.join(';');
+}
+
 function conversationContextExpression() {
   return `(() => {
     const visible = (el) => {
@@ -781,6 +835,9 @@ async function preparePlatformDraft(payload, platform) {
     if (platform === 'instagram') {
       preActions.push(await clickOptionalAction(tab, 'follow', platform));
       preActions.push(await submitInstagramPostEngagement(tab, payload.engagementComment || 'Great outdoor checklist. Useful reminder for hikers preparing a complete, lightweight kit.'));
+    } else if (platform === 'facebook') {
+      preActions.push(await clickOptionalAction(tab, 'follow', platform));
+      preActions.push(await submitFacebookPostEngagement(tab));
     } else {
       preActions.push(await submitOptionalComment(tab, payload.engagementComment || 'Great outdoor checklist. Useful reminder for hikers preparing a complete, lightweight kit.'));
       preActions.push(await clickOptionalAction(tab, 'like', platform));
