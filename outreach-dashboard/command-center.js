@@ -1179,6 +1179,9 @@
       : '尚未加载 daily:execute 结果';
     if (visibility.noBrowserExecution) {
       executionText = `No development performed: ${latestExecution.userVisibleStatus || latestExecution.error || 'Chrome was not opened because there were no executable tasks.'}`;
+      if (latestExecution.recoveryHint) {
+        executionText += ` Recovery: ${latestExecution.recoveryHint}`;
+      }
     }
     const syncText = latestGithubSync
       ? latestGithubSync.ok
