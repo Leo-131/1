@@ -453,10 +453,19 @@ function sendButtonExpression(composer) {
 function composerTextExpression(draft) {
   return `(() => {
     const draft = ${JSON.stringify(String(draft || '').trim())};
-    const text = Array.from(document.querySelectorAll('[contenteditable="true"],textarea,input[type="text"]'))
+    const controls = Array.from(document.querySelectorAll('[contenteditable="true"],textarea,input[type="text"]'));
+    const text = controls
       .map((el) => String(el.innerText || el.value || '').trim())
       .join('\\n');
-    return JSON.stringify({ text, containsDraft: Boolean(draft && text.includes(draft.slice(0, Math.min(40, draft.length)))) });
+    const active = document.activeElement;
+    const activeLabel = active ? String(active.getAttribute('aria-label') || active.getAttribute('role') || active.tagName || '').slice(0, 80) : '';
+    return JSON.stringify({
+      text,
+      containsDraft: Boolean(draft && text.includes(draft.slice(0, Math.min(40, draft.length)))),
+      editableCount: controls.length,
+      textLength: text.length,
+      activeLabel
+    });
   })()`;
 }
 
@@ -475,7 +484,11 @@ async function insertDraftAndVerify(tab, composer, draft, platform) {
       await cdp(tab.webSocketDebuggerUrl, 'Input.insertText', { text: draft }, 5000);
       inserted = await waitForJson(tab, composerTextExpression(draft), item => item && item.containsDraft, 3500, 300);
       if (inserted && inserted.containsDraft) return { ok: true, composer: refreshedComposer, evidence: 'facebook_draft_inserted_after_composer_refocus' };
-      return { ok: false, composer: refreshedComposer, evidence: 'facebook_draft_not_inserted_after_composer_refocus' };
+      const diagnostic = inserted || await evaluateJson(tab, composerTextExpression(draft), 3000).catch(() => null);
+      const detail = diagnostic
+        ? `editable_count:${diagnostic.editableCount || 0};composer_text_length:${diagnostic.textLength || 0};active:${String(diagnostic.activeLabel || 'unknown').replace(/[;\\r\\n]+/g, ' ').slice(0, 80)}`
+        : 'composer_diagnostic_unavailable';
+      return { ok: false, composer: refreshedComposer, evidence: `facebook_draft_not_inserted_after_composer_refocus;${detail}` };
     }
   }
 
