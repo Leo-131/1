@@ -2352,6 +2352,8 @@ function queueItemToLead(item) {
   };
 }
 
+let currentDailyExecutionProgress = null;
+
 const REAL_CUSTOMER_DEVELOPMENT_STATUSES = new Set([
   'sent_confirmed',
   'account_followed',
@@ -2451,10 +2453,36 @@ async function runDailyAutomationQueue(payload = {}) {
     };
   }
 
+  currentDailyExecutionProgress = {
+    startedAt: new Date().toISOString(),
+    queueDate: latest.date,
+    queueSource,
+    dailyQueueCount: latest.dailyQueue.length,
+    candidateCount: candidatePool.length,
+    executableCount: executable.length,
+    skippedCount: skipped.length,
+    limit,
+    currentIndex: 0,
+    currentItem: null,
+    completedCount: 0,
+    lastResult: null,
+  };
+
   const results = [];
   for (let index = 0; index < executable.length; index += parallelLimit) {
     const batch = executable.slice(index, index + parallelLimit);
     const batchResults = await Promise.all(batch.map(async (item) => {
+      currentDailyExecutionProgress = {
+        ...currentDailyExecutionProgress,
+        currentIndex: index + 1,
+        currentItem: {
+          id: item.id,
+          company: item.company,
+          action: item.action,
+          platform: item.platform,
+          targetUrl: item.url,
+        },
+      };
       if (itemBlockedBySameDayCompany(item, sameDayCompanyKeys)) {
         skipped.push({
           id: item.id,
@@ -2498,6 +2526,17 @@ async function runDailyAutomationQueue(payload = {}) {
       };
     }));
     results.push(...batchResults);
+    currentDailyExecutionProgress = {
+      ...currentDailyExecutionProgress,
+      completedCount: results.length,
+      skippedCount: skipped.length,
+      lastResult: batchResults[batchResults.length - 1] ? {
+        id: batchResults[batchResults.length - 1].id,
+        company: batchResults[batchResults.length - 1].company,
+        sendStatus: batchResults[batchResults.length - 1].sendStatus,
+        evidence: batchResults[batchResults.length - 1].evidence,
+      } : null,
+    };
     if (batchResults.some(item => item.result && (item.result.needsConfig || item.result.needsInstall))) break;
     if (index + parallelLimit < executable.length) await sleep(Number(payload && payload.delayMs || 91000));
   }
@@ -2535,6 +2574,7 @@ async function runAutoDailyAndWriteArtifact() {
       executionPhase: 'browser_execution_timeout',
       chromeOpened: true,
       customerDevelopmentPerformed: false,
+      progress: currentDailyExecutionProgress,
     });
     app.exit(1);
   }, timeoutMs);
