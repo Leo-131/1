@@ -1,13 +1,13 @@
 window.GOOGLE_LEAD_DISCOVERY_LATEST = {
-  "generatedAt": "2026-07-10T01:05:07.137Z",
+  "generatedAt": "2026-07-10T03:02:24.155Z",
   "mode": "google-concrete-customer-discovery",
   "objective": "continuously refill verified agency and key-account prospects above ICP 70, then convert them into exact official outreach targets",
   "discoveryRefillAttempted": true,
   "qualifiedThreshold": 70,
-  "refillCandidateCount": 6,
+  "refillCandidateCount": 4,
   "refillByCustomerType": {
     "agency": 2,
-    "key_account": 4
+    "key_account": 2
   },
   "leads": [
     {
@@ -61,12 +61,12 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "partnershipStatus": "active_partner",
       "doNotOutreach": true,
       "automationStatus": "partner_account",
-      "partnerNote": "Active cooperation account; keep profile only and do not create new outreach tasks.",
+      "partnerNote": "Active customer/cooperation account; keep profile only and do not create new outreach tasks.",
       "sendStatus": "partner_account",
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/10 09:05:06",
+        "localTime": "2026/7/10 11:02:24",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -133,12 +133,12 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "partnershipStatus": "active_partner",
       "doNotOutreach": true,
       "automationStatus": "partner_account",
-      "partnerNote": "Active cooperation account; keep profile only and do not create new outreach tasks.",
+      "partnerNote": "Active customer/cooperation account; keep profile only and do not create new outreach tasks.",
       "sendStatus": "partner_account",
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/10 09:05:07",
+        "localTime": "2026/7/10 11:02:24",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -207,12 +207,12 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "partnershipStatus": "active_partner",
       "doNotOutreach": true,
       "automationStatus": "partner_account",
-      "partnerNote": "Active cooperation account; keep profile only and do not create new outreach tasks.",
+      "partnerNote": "Active customer/cooperation account; keep profile only and do not create new outreach tasks.",
       "sendStatus": "partner_account",
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/10 09:05:07",
+        "localTime": "2026/7/10 11:02:24",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -291,7 +291,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/10 09:05:07",
+        "localTime": "2026/7/10 11:02:24",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -363,7 +363,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/10 09:05:07",
+        "localTime": "2026/7/10 11:02:24",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -437,7 +437,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/10 09:05:07",
+        "localTime": "2026/7/10 11:02:24",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -494,15 +494,15 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "query": "https://www.google.com/search?q=%22Academy%20Sports%20%2B%20Outdoors%22%20%22sporting%20goods%20and%20outdoor%20retail%20chain%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
       "source": "google_customer_discovery",
       "identityStatus": "verified",
-      "partnershipStatus": "",
-      "doNotOutreach": false,
-      "automationStatus": "",
-      "partnerNote": "",
-      "sendStatus": "",
+      "partnershipStatus": "active_partner",
+      "doNotOutreach": true,
+      "automationStatus": "partner_account",
+      "partnerNote": "Active customer/cooperation account; keep profile only and do not create new outreach tasks.",
+      "sendStatus": "partner_account",
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/10 09:05:07",
+        "localTime": "2026/7/10 11:02:24",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -514,8 +514,8 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "websiteContactSubject": "Flextail & Vollyc | Lightweight Outdoor & 3C Electronics – Potential Cooperation",
       "websiteContactMessage": "Dear Academy Sports + Outdoors Team,\n\nNice to e-meet you.\nI am Leo, from Flextail & Vollyc.\n\nFlextail is our first and core brand, specializing in ultralight electric products for outdoor, travel, and home use. The brand is currently Top 1 on Amazon, with strong global sell-through and a proven product-market fit.\nVollyc, our second brand, focuses on 3C electronics, targeting practical, high-rotation consumer use cases.\n\nFrom our perspective, your platform and positioning are highly aligned with Flextail’s product philosophy, especially in lightweight outdoor and travel-oriented electrics.\n\nWe have already contacted with your team, and we are now actively exploring opportunities in other regions.\nAttached, you will find a brief introduction to our brands and current product catalog for your reference.\n\nLooking ahead, we are planning to launch over 36 new SKUs in 2026, covering multiple usage scenarios and price tiers, which we believe could be of interest to your assortment strategy.\n\nIf you are available, I would greatly appreciate the opportunity to arrange a short introductory video meeting to present our brands and discuss potential collaboration opportunities.\n\nThank you for your time and consideration. I look forward to your reply.\n\n[Flextail.com](https://www.flextail.com/), [vollyc.com](https://vollyc.com/)\n\n[Sincerely](https://wa.me/8617321028184)\n[Best Regard](https://wa.me/8617321028184)\n[Leo Liu](https://wa.me/8617321028184)\n[Sales](https://wa.me/8617321028184) [& Operations Director](https://wa.me/8617321028184)\n[Brand & ODM Department](https://wa.me/8617321028184)\n[Tel/whatsapp:  +86 17321028184](https://wa.me/8617321028184)\n\n[Email:  Leo@flextailgear.com](https://wa.me/8617321028184)\n[SHANGHAI FLEXTAIL TECHNOLOGY CO.,LTD.](https://wa.me/8617321028184)\n[Room103, Building No.6, No.1 Yanjiaqiao, Pudong District, ShangHai, China](https://wa.me/8617321028184)\n",
       "websiteContactFlow": "open_official_contact_us_fill_attach_auto_submit",
-      "action": "email_priority",
-      "reason": "official_website_contact_channel",
+      "action": "partner_account",
+      "reason": "active_partner_no_new_outreach",
       "alternateChannels": {
         "instagram": "",
         "facebook": "",
@@ -581,7 +581,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/10 09:05:07",
+        "localTime": "2026/7/10 11:02:24",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -593,6 +593,64 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
         "instagram": "https://www.instagram.com/cabelas/",
         "facebook": "https://www.facebook.com/Cabelas",
         "websiteContact": "https://www.cabelas.com/shop/en/contact-us"
+      },
+      "identitySource": "official website/social profile + Google background query",
+      "channelPriority": 1
+    },
+    {
+      "id": "google-customer-liberty-mountain-instagram",
+      "name": "Liberty Mountain",
+      "company": "Liberty Mountain",
+      "customerType": "agency",
+      "discoveryMode": "autonomous_refill",
+      "country": "United States",
+      "countryEn": "United States",
+      "fitScore": 95,
+      "fitTier": "A+",
+      "marketScore": 4.5,
+      "marketStatus": "open",
+      "agencyState": "open",
+      "keyword": "technical outdoor wholesale distributor",
+      "role": "Brand acquisition, exclusive distribution, or outdoor products sales leadership.",
+      "background": "Large US wholesale distributor carrying camping, hiking, climbing, travel, lighting, electronics, and outdoor products from more than 1,000 brands.",
+      "buyerPersona": "Brand acquisition, exclusive distribution, or outdoor products sales leadership.",
+      "productCategory": "technical outdoor wholesale distributor",
+      "businessModel": "Retail Chain",
+      "productFit": "FLEXTAIL portable pumps, outdoor power, camping lighting and compact camping accessories",
+      "opportunity": "Large US wholesale distributor carrying camping, hiking, climbing, travel, lighting, electronics, and outdoor products from more than 1,000 brands.",
+      "linkedin_url": "",
+      "linkedin": "",
+      "publicEmail": "",
+      "contactEmail": "",
+      "vendorPortal": "",
+      "contactPhone": "",
+      "contactNote": "",
+      "publicEmailStatus": "",
+      "website": "https://libertymountain.com/",
+      "evidenceUrl": "https://www.google.com/search?q=%22Liberty%20Mountain%22%20%22technical%20outdoor%20wholesale%20distributor%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
+      "query": "https://www.google.com/search?q=%22Liberty%20Mountain%22%20%22technical%20outdoor%20wholesale%20distributor%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
+      "source": "google_customer_discovery",
+      "identityStatus": "verified",
+      "partnershipStatus": "",
+      "doNotOutreach": false,
+      "automationStatus": "",
+      "partnerNote": "",
+      "sendStatus": "",
+      "workingTime": {
+        "dueNow": true,
+        "timeZone": "local-market",
+        "localTime": "2026/7/10 11:02:24",
+        "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
+      },
+      "platform": "instagram",
+      "platformUrl": "https://www.instagram.com/libertymountain/",
+      "url": "https://www.instagram.com/libertymountain/",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_instagram",
+      "alternateChannels": {
+        "instagram": "https://www.instagram.com/libertymountain/",
+        "facebook": "https://www.facebook.com/LibertyMountain",
+        "websiteContact": "https://libertymountain.com/find-a-rep"
       },
       "identitySource": "official website/social profile + Google background query",
       "channelPriority": 1
@@ -653,7 +711,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/10 09:05:07",
+        "localTime": "2026/7/10 11:02:24",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -665,6 +723,66 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
         "instagram": "https://www.instagram.com/cabelas/",
         "facebook": "https://www.facebook.com/Cabelas",
         "websiteContact": "https://www.cabelas.com/shop/en/contact-us"
+      },
+      "invalidChannels": {},
+      "facebookStatus": "verified_official_page_candidate",
+      "identitySource": "official Facebook page candidate + official website + Google background query",
+      "channelPriority": 2
+    },
+    {
+      "id": "google-customer-liberty-mountain-facebook",
+      "name": "Liberty Mountain",
+      "company": "Liberty Mountain",
+      "customerType": "agency",
+      "discoveryMode": "autonomous_refill",
+      "country": "United States",
+      "countryEn": "United States",
+      "fitScore": 95,
+      "fitTier": "A+",
+      "marketScore": 4.5,
+      "marketStatus": "open",
+      "agencyState": "open",
+      "keyword": "technical outdoor wholesale distributor",
+      "role": "Brand acquisition, exclusive distribution, or outdoor products sales leadership.",
+      "background": "Large US wholesale distributor carrying camping, hiking, climbing, travel, lighting, electronics, and outdoor products from more than 1,000 brands.",
+      "buyerPersona": "Brand acquisition, exclusive distribution, or outdoor products sales leadership.",
+      "productCategory": "technical outdoor wholesale distributor",
+      "businessModel": "Retail Chain",
+      "productFit": "FLEXTAIL portable pumps, outdoor power, camping lighting and compact camping accessories",
+      "opportunity": "Large US wholesale distributor carrying camping, hiking, climbing, travel, lighting, electronics, and outdoor products from more than 1,000 brands.",
+      "linkedin_url": "",
+      "linkedin": "",
+      "publicEmail": "",
+      "contactEmail": "",
+      "vendorPortal": "",
+      "contactPhone": "",
+      "contactNote": "",
+      "publicEmailStatus": "",
+      "website": "https://libertymountain.com/",
+      "evidenceUrl": "https://www.google.com/search?q=%22Liberty%20Mountain%22%20%22technical%20outdoor%20wholesale%20distributor%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
+      "query": "https://www.google.com/search?q=%22Liberty%20Mountain%22%20%22technical%20outdoor%20wholesale%20distributor%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
+      "source": "google_customer_discovery",
+      "identityStatus": "verified",
+      "partnershipStatus": "",
+      "doNotOutreach": false,
+      "automationStatus": "",
+      "partnerNote": "",
+      "sendStatus": "",
+      "workingTime": {
+        "dueNow": true,
+        "timeZone": "local-market",
+        "localTime": "2026/7/10 11:02:24",
+        "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
+      },
+      "platform": "facebook",
+      "platformUrl": "https://www.facebook.com/LibertyMountain",
+      "url": "https://www.facebook.com/LibertyMountain",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_facebook",
+      "alternateChannels": {
+        "instagram": "https://www.instagram.com/libertymountain/",
+        "facebook": "https://www.facebook.com/LibertyMountain",
+        "websiteContact": "https://libertymountain.com/find-a-rep"
       },
       "invalidChannels": {},
       "facebookStatus": "verified_official_page_candidate",
@@ -727,7 +845,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/10 09:05:07",
+        "localTime": "2026/7/10 11:02:24",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -792,7 +910,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/10 09:05:07",
+        "localTime": "2026/7/10 11:02:24",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -807,8 +925,8 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "action": "email_priority",
       "reason": "official_website_contact_channel",
       "alternateChannels": {
-        "instagram": "",
-        "facebook": "",
+        "instagram": "https://www.instagram.com/libertymountain/",
+        "facebook": "https://www.facebook.com/LibertyMountain",
         "websiteContact": "https://libertymountain.com/find-a-rep"
       },
       "invalidChannels": {},
@@ -871,7 +989,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/10 09:05:07",
+        "localTime": "2026/7/10 11:02:24",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -943,7 +1061,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/10 09:05:07",
+        "localTime": "2026/7/10 11:02:24",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -1017,7 +1135,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/10 09:05:07",
+        "localTime": "2026/7/10 11:02:24",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -1096,7 +1214,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/10 09:05:07",
+        "localTime": "2026/7/10 11:02:24",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -1108,6 +1226,64 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
         "instagram": "https://www.instagram.com/gooutdoors/",
         "facebook": "https://www.facebook.com/GOoutdoorsUK/",
         "websiteContact": "https://www.gooutdoors.co.uk/contact-us"
+      },
+      "identitySource": "official website/social profile + Google background query",
+      "channelPriority": 1
+    },
+    {
+      "id": "google-customer-sportsman-s-warehouse-instagram",
+      "name": "Sportsman's Warehouse",
+      "company": "Sportsman's Warehouse",
+      "customerType": "key_account",
+      "discoveryMode": "autonomous_refill",
+      "country": "United States",
+      "countryEn": "United States",
+      "fitScore": 93,
+      "fitTier": "A+",
+      "marketScore": 4.5,
+      "marketStatus": "open",
+      "agencyState": "open",
+      "keyword": "outdoor specialty retail chain",
+      "role": "Camping equipment category buyer, merchandising lead, or vendor partnership manager.",
+      "background": "US outdoor specialty retailer with more than 140 locations and camping, fishing, hunting, apparel, and footwear categories.",
+      "buyerPersona": "Camping equipment category buyer, merchandising lead, or vendor partnership manager.",
+      "productCategory": "outdoor specialty retail chain",
+      "businessModel": "Retail Chain",
+      "productFit": "FLEXTAIL portable pumps, outdoor power, camping lighting and compact camping accessories",
+      "opportunity": "US outdoor specialty retailer with more than 140 locations and camping, fishing, hunting, apparel, and footwear categories.",
+      "linkedin_url": "",
+      "linkedin": "",
+      "publicEmail": "",
+      "contactEmail": "",
+      "vendorPortal": "",
+      "contactPhone": "",
+      "contactNote": "",
+      "publicEmailStatus": "",
+      "website": "https://www.sportsmans.com/",
+      "evidenceUrl": "https://www.google.com/search?q=%22Sportsman's%20Warehouse%22%20%22outdoor%20specialty%20retail%20chain%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
+      "query": "https://www.google.com/search?q=%22Sportsman's%20Warehouse%22%20%22outdoor%20specialty%20retail%20chain%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
+      "source": "google_customer_discovery",
+      "identityStatus": "verified",
+      "partnershipStatus": "",
+      "doNotOutreach": false,
+      "automationStatus": "",
+      "partnerNote": "",
+      "sendStatus": "",
+      "workingTime": {
+        "dueNow": true,
+        "timeZone": "local-market",
+        "localTime": "2026/7/10 11:02:24",
+        "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
+      },
+      "platform": "instagram",
+      "platformUrl": "https://www.instagram.com/sportsmanswarehouse/",
+      "url": "https://www.instagram.com/sportsmanswarehouse/",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_instagram",
+      "alternateChannels": {
+        "instagram": "https://www.instagram.com/sportsmanswarehouse/",
+        "facebook": "https://www.facebook.com/SportsmansWarehouse",
+        "websiteContact": "https://www.sportsmans.com/contact-us"
       },
       "identitySource": "official website/social profile + Google background query",
       "channelPriority": 1
@@ -1168,7 +1344,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/10 09:05:07",
+        "localTime": "2026/7/10 11:02:24",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -1180,6 +1356,66 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
         "instagram": "https://www.instagram.com/gooutdoors/",
         "facebook": "https://www.facebook.com/GOoutdoorsUK/",
         "websiteContact": "https://www.gooutdoors.co.uk/contact-us"
+      },
+      "invalidChannels": {},
+      "facebookStatus": "verified_official_page_candidate",
+      "identitySource": "official Facebook page candidate + official website + Google background query",
+      "channelPriority": 2
+    },
+    {
+      "id": "google-customer-sportsman-s-warehouse-facebook",
+      "name": "Sportsman's Warehouse",
+      "company": "Sportsman's Warehouse",
+      "customerType": "key_account",
+      "discoveryMode": "autonomous_refill",
+      "country": "United States",
+      "countryEn": "United States",
+      "fitScore": 93,
+      "fitTier": "A+",
+      "marketScore": 4.5,
+      "marketStatus": "open",
+      "agencyState": "open",
+      "keyword": "outdoor specialty retail chain",
+      "role": "Camping equipment category buyer, merchandising lead, or vendor partnership manager.",
+      "background": "US outdoor specialty retailer with more than 140 locations and camping, fishing, hunting, apparel, and footwear categories.",
+      "buyerPersona": "Camping equipment category buyer, merchandising lead, or vendor partnership manager.",
+      "productCategory": "outdoor specialty retail chain",
+      "businessModel": "Retail Chain",
+      "productFit": "FLEXTAIL portable pumps, outdoor power, camping lighting and compact camping accessories",
+      "opportunity": "US outdoor specialty retailer with more than 140 locations and camping, fishing, hunting, apparel, and footwear categories.",
+      "linkedin_url": "",
+      "linkedin": "",
+      "publicEmail": "",
+      "contactEmail": "",
+      "vendorPortal": "",
+      "contactPhone": "",
+      "contactNote": "",
+      "publicEmailStatus": "",
+      "website": "https://www.sportsmans.com/",
+      "evidenceUrl": "https://www.google.com/search?q=%22Sportsman's%20Warehouse%22%20%22outdoor%20specialty%20retail%20chain%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
+      "query": "https://www.google.com/search?q=%22Sportsman's%20Warehouse%22%20%22outdoor%20specialty%20retail%20chain%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
+      "source": "google_customer_discovery",
+      "identityStatus": "verified",
+      "partnershipStatus": "",
+      "doNotOutreach": false,
+      "automationStatus": "",
+      "partnerNote": "",
+      "sendStatus": "",
+      "workingTime": {
+        "dueNow": true,
+        "timeZone": "local-market",
+        "localTime": "2026/7/10 11:02:24",
+        "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
+      },
+      "platform": "facebook",
+      "platformUrl": "https://www.facebook.com/SportsmansWarehouse",
+      "url": "https://www.facebook.com/SportsmansWarehouse",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_facebook",
+      "alternateChannels": {
+        "instagram": "https://www.instagram.com/sportsmanswarehouse/",
+        "facebook": "https://www.facebook.com/SportsmansWarehouse",
+        "websiteContact": "https://www.sportsmans.com/contact-us"
       },
       "invalidChannels": {},
       "facebookStatus": "verified_official_page_candidate",
@@ -1242,7 +1478,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/10 09:05:07",
+        "localTime": "2026/7/10 11:02:24",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -1307,7 +1543,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/10 09:05:07",
+        "localTime": "2026/7/10 11:02:24",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -1322,8 +1558,8 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "action": "email_priority",
       "reason": "official_website_contact_channel",
       "alternateChannels": {
-        "instagram": "",
-        "facebook": "",
+        "instagram": "https://www.instagram.com/sportsmanswarehouse/",
+        "facebook": "https://www.facebook.com/SportsmansWarehouse",
         "websiteContact": "https://www.sportsmans.com/contact-us"
       },
       "invalidChannels": {},
@@ -1387,7 +1623,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/10 09:05:07",
+        "localTime": "2026/7/10 11:02:24",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -1460,7 +1696,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/10 09:05:07",
+        "localTime": "2026/7/10 11:02:24",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -1535,7 +1771,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/10 09:05:07",
+        "localTime": "2026/7/10 11:02:24",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -1592,15 +1828,15 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "query": "https://www.google.com/search?q=%22SCHEELS%22%20%22all-sports%20and%20outdoor%20retail%20chain%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
       "source": "google_customer_discovery",
       "identityStatus": "verified",
-      "partnershipStatus": "",
-      "doNotOutreach": false,
-      "automationStatus": "",
-      "partnerNote": "",
-      "sendStatus": "",
+      "partnershipStatus": "active_partner",
+      "doNotOutreach": true,
+      "automationStatus": "partner_account",
+      "partnerNote": "Active customer/cooperation account; keep profile only and do not create new outreach tasks.",
+      "sendStatus": "partner_account",
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/10 09:05:07",
+        "localTime": "2026/7/10 11:02:24",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -1612,8 +1848,8 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "websiteContactSubject": "Flextail & Vollyc | Lightweight Outdoor & 3C Electronics – Potential Cooperation",
       "websiteContactMessage": "Dear SCHEELS Team,\n\nNice to e-meet you.\nI am Leo, from Flextail & Vollyc.\n\nFlextail is our first and core brand, specializing in ultralight electric products for outdoor, travel, and home use. The brand is currently Top 1 on Amazon, with strong global sell-through and a proven product-market fit.\nVollyc, our second brand, focuses on 3C electronics, targeting practical, high-rotation consumer use cases.\n\nFrom our perspective, your platform and positioning are highly aligned with Flextail’s product philosophy, especially in lightweight outdoor and travel-oriented electrics.\n\nWe have already contacted with your team, and we are now actively exploring opportunities in other regions.\nAttached, you will find a brief introduction to our brands and current product catalog for your reference.\n\nLooking ahead, we are planning to launch over 36 new SKUs in 2026, covering multiple usage scenarios and price tiers, which we believe could be of interest to your assortment strategy.\n\nIf you are available, I would greatly appreciate the opportunity to arrange a short introductory video meeting to present our brands and discuss potential collaboration opportunities.\n\nThank you for your time and consideration. I look forward to your reply.\n\n[Flextail.com](https://www.flextail.com/), [vollyc.com](https://vollyc.com/)\n\n[Sincerely](https://wa.me/8617321028184)\n[Best Regard](https://wa.me/8617321028184)\n[Leo Liu](https://wa.me/8617321028184)\n[Sales](https://wa.me/8617321028184) [& Operations Director](https://wa.me/8617321028184)\n[Brand & ODM Department](https://wa.me/8617321028184)\n[Tel/whatsapp:  +86 17321028184](https://wa.me/8617321028184)\n\n[Email:  Leo@flextailgear.com](https://wa.me/8617321028184)\n[SHANGHAI FLEXTAIL TECHNOLOGY CO.,LTD.](https://wa.me/8617321028184)\n[Room103, Building No.6, No.1 Yanjiaqiao, Pudong District, ShangHai, China](https://wa.me/8617321028184)\n",
       "websiteContactFlow": "open_official_contact_us_fill_attach_auto_submit",
-      "action": "email_priority",
-      "reason": "official_website_contact_channel",
+      "action": "partner_account",
+      "reason": "active_partner_no_new_outreach",
       "alternateChannels": {
         "instagram": "",
         "facebook": "",
@@ -1679,7 +1915,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/10 09:05:07",
+        "localTime": "2026/7/10 11:02:24",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -1759,7 +1995,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/10 09:05:07",
+        "localTime": "2026/7/10 11:02:24",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -1844,7 +2080,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/10 09:05:07",
+        "localTime": "2026/7/10 11:02:24",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -1916,7 +2152,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/10 09:05:07",
+        "localTime": "2026/7/10 11:02:24",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -1988,7 +2224,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/10 09:05:07",
+        "localTime": "2026/7/10 11:02:24",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -2000,6 +2236,64 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
         "instagram": "https://www.instagram.com/decathlonfrance/",
         "facebook": "https://www.facebook.com/DecathlonFrance",
         "websiteContact": "https://www.decathlon.fr/help/app/contact"
+      },
+      "identitySource": "official website/social profile + Google background query",
+      "channelPriority": 1
+    },
+    {
+      "id": "google-customer-summit-international-instagram",
+      "name": "Summit International",
+      "company": "Summit International",
+      "customerType": "agency",
+      "discoveryMode": "autonomous_refill",
+      "country": "United Kingdom",
+      "countryEn": "United Kingdom",
+      "fitScore": 90,
+      "fitTier": "A+",
+      "marketScore": 4.5,
+      "marketStatus": "open",
+      "agencyState": "open",
+      "keyword": "outdoor importer and distributor",
+      "role": "Brand partnerships, buying, or distribution director for outdoor products.",
+      "background": "UK outdoor B2B importer and distributor supplying retailers, wholesalers, supermarkets, and independent businesses across camping and hiking categories.",
+      "buyerPersona": "Brand partnerships, buying, or distribution director for outdoor products.",
+      "productCategory": "outdoor importer and distributor",
+      "businessModel": "Retail Chain",
+      "productFit": "FLEXTAIL portable pumps, outdoor power, camping lighting and compact camping accessories",
+      "opportunity": "UK outdoor B2B importer and distributor supplying retailers, wholesalers, supermarkets, and independent businesses across camping and hiking categories.",
+      "linkedin_url": "",
+      "linkedin": "",
+      "publicEmail": "",
+      "contactEmail": "",
+      "vendorPortal": "",
+      "contactPhone": "",
+      "contactNote": "",
+      "publicEmailStatus": "",
+      "website": "https://www.summitint.co/",
+      "evidenceUrl": "https://www.google.com/search?q=%22Summit%20International%22%20%22outdoor%20importer%20and%20distributor%22%20%22United%20Kingdom%22%20buyer%20OR%20wholesale%20OR%20contact",
+      "query": "https://www.google.com/search?q=%22Summit%20International%22%20%22outdoor%20importer%20and%20distributor%22%20%22United%20Kingdom%22%20buyer%20OR%20wholesale%20OR%20contact",
+      "source": "google_customer_discovery",
+      "identityStatus": "verified",
+      "partnershipStatus": "",
+      "doNotOutreach": false,
+      "automationStatus": "",
+      "partnerNote": "",
+      "sendStatus": "",
+      "workingTime": {
+        "dueNow": true,
+        "timeZone": "local-market",
+        "localTime": "2026/7/10 11:02:24",
+        "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
+      },
+      "platform": "instagram",
+      "platformUrl": "https://www.instagram.com/summitint/",
+      "url": "https://www.instagram.com/summitint/",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_instagram",
+      "alternateChannels": {
+        "instagram": "https://www.instagram.com/summitint/",
+        "facebook": "https://www.facebook.com/summitint",
+        "websiteContact": "https://www.summitint.co/contact-us"
       },
       "identitySource": "official website/social profile + Google background query",
       "channelPriority": 1
@@ -2060,7 +2354,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/10 09:05:07",
+        "localTime": "2026/7/10 11:02:24",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -2134,7 +2428,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/10 09:05:07",
+        "localTime": "2026/7/10 11:02:24",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -2208,7 +2502,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/10 09:05:07",
+        "localTime": "2026/7/10 11:02:24",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -2220,6 +2514,66 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
         "instagram": "https://www.instagram.com/decathlonfrance/",
         "facebook": "https://www.facebook.com/DecathlonFrance",
         "websiteContact": "https://www.decathlon.fr/help/app/contact"
+      },
+      "invalidChannels": {},
+      "facebookStatus": "verified_official_page_candidate",
+      "identitySource": "official Facebook page candidate + official website + Google background query",
+      "channelPriority": 2
+    },
+    {
+      "id": "google-customer-summit-international-facebook",
+      "name": "Summit International",
+      "company": "Summit International",
+      "customerType": "agency",
+      "discoveryMode": "autonomous_refill",
+      "country": "United Kingdom",
+      "countryEn": "United Kingdom",
+      "fitScore": 90,
+      "fitTier": "A+",
+      "marketScore": 4.5,
+      "marketStatus": "open",
+      "agencyState": "open",
+      "keyword": "outdoor importer and distributor",
+      "role": "Brand partnerships, buying, or distribution director for outdoor products.",
+      "background": "UK outdoor B2B importer and distributor supplying retailers, wholesalers, supermarkets, and independent businesses across camping and hiking categories.",
+      "buyerPersona": "Brand partnerships, buying, or distribution director for outdoor products.",
+      "productCategory": "outdoor importer and distributor",
+      "businessModel": "Retail Chain",
+      "productFit": "FLEXTAIL portable pumps, outdoor power, camping lighting and compact camping accessories",
+      "opportunity": "UK outdoor B2B importer and distributor supplying retailers, wholesalers, supermarkets, and independent businesses across camping and hiking categories.",
+      "linkedin_url": "",
+      "linkedin": "",
+      "publicEmail": "",
+      "contactEmail": "",
+      "vendorPortal": "",
+      "contactPhone": "",
+      "contactNote": "",
+      "publicEmailStatus": "",
+      "website": "https://www.summitint.co/",
+      "evidenceUrl": "https://www.google.com/search?q=%22Summit%20International%22%20%22outdoor%20importer%20and%20distributor%22%20%22United%20Kingdom%22%20buyer%20OR%20wholesale%20OR%20contact",
+      "query": "https://www.google.com/search?q=%22Summit%20International%22%20%22outdoor%20importer%20and%20distributor%22%20%22United%20Kingdom%22%20buyer%20OR%20wholesale%20OR%20contact",
+      "source": "google_customer_discovery",
+      "identityStatus": "verified",
+      "partnershipStatus": "",
+      "doNotOutreach": false,
+      "automationStatus": "",
+      "partnerNote": "",
+      "sendStatus": "",
+      "workingTime": {
+        "dueNow": true,
+        "timeZone": "local-market",
+        "localTime": "2026/7/10 11:02:24",
+        "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
+      },
+      "platform": "facebook",
+      "platformUrl": "https://www.facebook.com/summitint",
+      "url": "https://www.facebook.com/summitint",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_facebook",
+      "alternateChannels": {
+        "instagram": "https://www.instagram.com/summitint/",
+        "facebook": "https://www.facebook.com/summitint",
+        "websiteContact": "https://www.summitint.co/contact-us"
       },
       "invalidChannels": {},
       "facebookStatus": "verified_official_page_candidate",
@@ -2282,7 +2636,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/10 09:05:07",
+        "localTime": "2026/7/10 11:02:24",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -2361,7 +2715,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/10 09:05:07",
+        "localTime": "2026/7/10 11:02:24",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -2440,7 +2794,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/10 09:05:07",
+        "localTime": "2026/7/10 11:02:24",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -2505,7 +2859,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/10 09:05:07",
+        "localTime": "2026/7/10 11:02:24",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -2520,8 +2874,8 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "action": "email_priority",
       "reason": "official_website_contact_channel",
       "alternateChannels": {
-        "instagram": "",
-        "facebook": "",
+        "instagram": "https://www.instagram.com/summitint/",
+        "facebook": "https://www.facebook.com/summitint",
         "websiteContact": "https://www.summitint.co/contact-us"
       },
       "invalidChannels": {},
@@ -2584,7 +2938,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/10 09:05:07",
+        "localTime": "2026/7/10 11:02:24",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -2596,6 +2950,64 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
         "instagram": "https://www.instagram.com/bcf.australia/",
         "facebook": "https://www.facebook.com/BCFAustralia",
         "websiteContact": "https://www.bcf.com.au/contact-us"
+      },
+      "identitySource": "official website/social profile + Google background query",
+      "channelPriority": 1
+    },
+    {
+      "id": "google-customer-camping-world-instagram",
+      "name": "Camping World",
+      "company": "Camping World",
+      "customerType": "key_account",
+      "discoveryMode": "autonomous_refill",
+      "country": "United States",
+      "countryEn": "United States",
+      "fitScore": 89,
+      "fitTier": "A",
+      "marketScore": 4.5,
+      "marketStatus": "open",
+      "agencyState": "open",
+      "keyword": "RV and camping retail chain",
+      "role": "Camping accessories buyer, vendor partnerships, or outdoor living category manager.",
+      "background": "Large US RV and camping retailer with broad portable power, campsite, outdoor living, and travel accessory categories.",
+      "buyerPersona": "Camping accessories buyer, vendor partnerships, or outdoor living category manager.",
+      "productCategory": "RV and camping retail chain",
+      "businessModel": "Retail Chain",
+      "productFit": "FLEXTAIL portable pumps, outdoor power, camping lighting and compact camping accessories",
+      "opportunity": "Large US RV and camping retailer with broad portable power, campsite, outdoor living, and travel accessory categories.",
+      "linkedin_url": "",
+      "linkedin": "",
+      "publicEmail": "",
+      "contactEmail": "",
+      "vendorPortal": "",
+      "contactPhone": "",
+      "contactNote": "",
+      "publicEmailStatus": "",
+      "website": "https://www.campingworld.com/",
+      "evidenceUrl": "https://www.google.com/search?q=%22Camping%20World%22%20%22RV%20and%20camping%20retail%20chain%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
+      "query": "https://www.google.com/search?q=%22Camping%20World%22%20%22RV%20and%20camping%20retail%20chain%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
+      "source": "google_customer_discovery",
+      "identityStatus": "verified",
+      "partnershipStatus": "",
+      "doNotOutreach": false,
+      "automationStatus": "",
+      "partnerNote": "",
+      "sendStatus": "",
+      "workingTime": {
+        "dueNow": true,
+        "timeZone": "local-market",
+        "localTime": "2026/7/10 11:02:24",
+        "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
+      },
+      "platform": "instagram",
+      "platformUrl": "https://www.instagram.com/campingworld/",
+      "url": "https://www.instagram.com/campingworld/",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_instagram",
+      "alternateChannels": {
+        "instagram": "https://www.instagram.com/campingworld/",
+        "facebook": "https://www.facebook.com/campingworld",
+        "websiteContact": "https://www.campingworld.com/contact-us.html"
       },
       "identitySource": "official website/social profile + Google background query",
       "channelPriority": 1
@@ -2656,7 +3068,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/10 09:05:07",
+        "localTime": "2026/7/10 11:02:24",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -2668,6 +3080,66 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
         "instagram": "https://www.instagram.com/bcf.australia/",
         "facebook": "https://www.facebook.com/BCFAustralia",
         "websiteContact": "https://www.bcf.com.au/contact-us"
+      },
+      "invalidChannels": {},
+      "facebookStatus": "verified_official_page_candidate",
+      "identitySource": "official Facebook page candidate + official website + Google background query",
+      "channelPriority": 2
+    },
+    {
+      "id": "google-customer-camping-world-facebook",
+      "name": "Camping World",
+      "company": "Camping World",
+      "customerType": "key_account",
+      "discoveryMode": "autonomous_refill",
+      "country": "United States",
+      "countryEn": "United States",
+      "fitScore": 89,
+      "fitTier": "A",
+      "marketScore": 4.5,
+      "marketStatus": "open",
+      "agencyState": "open",
+      "keyword": "RV and camping retail chain",
+      "role": "Camping accessories buyer, vendor partnerships, or outdoor living category manager.",
+      "background": "Large US RV and camping retailer with broad portable power, campsite, outdoor living, and travel accessory categories.",
+      "buyerPersona": "Camping accessories buyer, vendor partnerships, or outdoor living category manager.",
+      "productCategory": "RV and camping retail chain",
+      "businessModel": "Retail Chain",
+      "productFit": "FLEXTAIL portable pumps, outdoor power, camping lighting and compact camping accessories",
+      "opportunity": "Large US RV and camping retailer with broad portable power, campsite, outdoor living, and travel accessory categories.",
+      "linkedin_url": "",
+      "linkedin": "",
+      "publicEmail": "",
+      "contactEmail": "",
+      "vendorPortal": "",
+      "contactPhone": "",
+      "contactNote": "",
+      "publicEmailStatus": "",
+      "website": "https://www.campingworld.com/",
+      "evidenceUrl": "https://www.google.com/search?q=%22Camping%20World%22%20%22RV%20and%20camping%20retail%20chain%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
+      "query": "https://www.google.com/search?q=%22Camping%20World%22%20%22RV%20and%20camping%20retail%20chain%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
+      "source": "google_customer_discovery",
+      "identityStatus": "verified",
+      "partnershipStatus": "",
+      "doNotOutreach": false,
+      "automationStatus": "",
+      "partnerNote": "",
+      "sendStatus": "",
+      "workingTime": {
+        "dueNow": true,
+        "timeZone": "local-market",
+        "localTime": "2026/7/10 11:02:24",
+        "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
+      },
+      "platform": "facebook",
+      "platformUrl": "https://www.facebook.com/campingworld",
+      "url": "https://www.facebook.com/campingworld",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_facebook",
+      "alternateChannels": {
+        "instagram": "https://www.instagram.com/campingworld/",
+        "facebook": "https://www.facebook.com/campingworld",
+        "websiteContact": "https://www.campingworld.com/contact-us.html"
       },
       "invalidChannels": {},
       "facebookStatus": "verified_official_page_candidate",
@@ -2730,7 +3202,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/10 09:05:07",
+        "localTime": "2026/7/10 11:02:24",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -2795,7 +3267,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/10 09:05:07",
+        "localTime": "2026/7/10 11:02:24",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -2810,8 +3282,8 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "action": "email_priority",
       "reason": "official_website_contact_channel",
       "alternateChannels": {
-        "instagram": "",
-        "facebook": "",
+        "instagram": "https://www.instagram.com/campingworld/",
+        "facebook": "https://www.facebook.com/campingworld",
         "websiteContact": "https://www.campingworld.com/contact-us.html"
       },
       "invalidChannels": {},
@@ -2874,7 +3346,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/10 09:05:07",
+        "localTime": "2026/7/10 11:02:24",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -2946,7 +3418,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/10 09:05:07",
+        "localTime": "2026/7/10 11:02:24",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -3020,7 +3492,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/10 09:05:07",
+        "localTime": "2026/7/10 11:02:24",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -3099,7 +3571,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/10 09:05:07",
+        "localTime": "2026/7/10 11:02:24",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -3171,7 +3643,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/10 09:05:07",
+        "localTime": "2026/7/10 11:02:24",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -3245,7 +3717,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/10 09:05:07",
+        "localTime": "2026/7/10 11:02:24",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",

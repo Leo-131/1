@@ -6,7 +6,7 @@ const http = require('http');
 const net = require('net');
 const tls = require('tls');
 const { execFile, spawn } = require('child_process');
-const { requestGlm } = require('./glm-service');
+const { professionalSalesDraft, requestGlm } = require('./glm-service');
 const {
   normalizeTarget,
   validateLeadForExecution,
@@ -2288,8 +2288,20 @@ async function executeLeadAutomation(lead, options = {}) {
 
   if (!options.allowParallel) glmAutomationRunning = true;
   try {
-    const glm = await requestGlm({ ...config, lead });
-    const decision = glm.result;
+    let glm = null;
+    let decision = null;
+    try {
+      glm = await requestGlm({ ...config, lead });
+      decision = glm.result;
+    } catch (error) {
+      decision = {
+        verdict: followup ? 'recheck' : 'develop',
+        fitScore: Math.max(Number(lead && lead.fitScore || 0), followup ? 50 : 70),
+        reason: `local_template_fallback_after_glm_error: ${error && error.message || 'unknown_error'}`,
+        draft: professionalSalesDraft(lead || {}, ''),
+      };
+      glm = { model: 'local-professional-template-fallback', error: error && error.message || String(error || '') };
+    }
     const acceptedFollowup = followup
       && decision
       && ['develop', 'recheck'].includes(String(decision.verdict || ''))
@@ -2413,7 +2425,6 @@ async function runDailyAutomationQueue(payload = {}) {
       continue;
     }
     executable.push(item);
-    automationCompanyKeys(item).forEach(key => selectedCompanyKeys.add(key));
     if (executable.length >= limit) break;
   }
   [...latest.dailyQueue, ...(latest.scheduledLater || [])]
@@ -2444,6 +2455,27 @@ async function runDailyAutomationQueue(payload = {}) {
   for (let index = 0; index < executable.length; index += parallelLimit) {
     const batch = executable.slice(index, index + parallelLimit);
     const batchResults = await Promise.all(batch.map(async (item) => {
+      if (itemBlockedBySameDayCompany(item, sameDayCompanyKeys)) {
+        skipped.push({
+          id: item.id,
+          company: item.company,
+          action: item.action,
+          reason: 'same_day_customer_already_developed',
+        });
+        return {
+          id: item.id,
+          company: item.company,
+          action: item.action,
+          platform: item.platform,
+          targetUrl: item.url,
+          ok: false,
+          skipped: true,
+          sendStatus: 'skipped',
+          evidence: 'same_day_customer_already_developed',
+          chromeOpen: null,
+          result: { ok: false, skipped: true, sendStatus: 'skipped', evidence: 'same_day_customer_already_developed' },
+        };
+      }
       // Exact target contract retained: const chromeOpen = await openWithCodexChrome(item.url)
       const result = await executeLeadAutomation(queueItemToLead(item), { ignoreCooldown: true, allowParallel: true });
       recordAutomationResult(item, result);

@@ -53,6 +53,11 @@ const PARTNER_COMPANIES = new Set([
   'rei',
   'rei co-op',
   'rei coop',
+  'academy',
+  'acadamy',
+  'academy sports outdoors',
+  'acadamy sports outdoors',
+  'scheels',
 ]);
 
 function loadConfig() {
@@ -220,6 +225,21 @@ function dedupeQueueItems(items) {
   });
 }
 
+function preferSocialChannels(items) {
+  const socialCompanyKeys = new Set();
+  for (const item of items || []) {
+    const platform = String(item.platform || '').toLowerCase();
+    if (platform !== 'instagram' && platform !== 'facebook') continue;
+    companyLeadKeys(item).forEach(key => socialCompanyKeys.add(key));
+  }
+  return (items || []).filter(item => {
+    const platform = String(item.platform || '').toLowerCase();
+    const isWebsiteContact = platform === 'email' || /website-contact|official_website_contact_channel/i.test(`${item.id || ''} ${item.reason || ''}`);
+    if (!isWebsiteContact) return true;
+    return !companyLeadKeys(item).some(key => socialCompanyKeys.has(key));
+  });
+}
+
 function minutesOfDay(value) {
   const match = String(value || '').match(/^(\d{1,2}):(\d{2})$/);
   if (!match) return 0;
@@ -314,6 +334,27 @@ function normalizeResultIndex(results) {
 
 function cleanKey(value) {
   return String(value || '').trim().toLowerCase().replace(/^@/, '').replace(/[^a-z0-9]+/g, '');
+}
+
+function partnerCompanyKeys(value) {
+  const raw = String(value || '');
+  return [
+    raw,
+    raw.replace(/&/g, 'and'),
+    raw.replace(/\+/g, ' '),
+    raw.replace(/\bsports\s*outdoors\b/i, ''),
+    raw.replace(/\bsports\s*\+\s*outdoors\b/i, ''),
+  ].map(cleanKey).filter(Boolean);
+}
+
+function isKnownPartnerCompany(item = {}) {
+  const keys = [
+    item.company,
+    item.name,
+    leadFamilyKey(item.id || item.task_id),
+    hostnameKey(item.website || item.url || item.contactUrl || item.target_url),
+  ].flatMap(partnerCompanyKeys);
+  return keys.some(key => PARTNER_COMPANIES.has(key));
 }
 
 function leadFamilyKey(value) {
@@ -438,7 +479,7 @@ function knownTouchIndex(results, contacts, now = Date.now()) {
   const sentConfirmed = new Set();
   const sameDayDeveloped = new Set();
   const sameDayDetails = new Map();
-  const partners = new Set([...PARTNER_COMPANIES].map(cleanKey));
+  const partners = new Set([...PARTNER_COMPANIES].flatMap(partnerCompanyKeys));
   for (const result of results || []) {
     if (isSameDayDevelopmentResult(result, now)) {
       for (const key of companyLeadKeys(result)) {
@@ -492,7 +533,7 @@ function knownTouchIndex(results, contacts, now = Date.now()) {
   for (const item of contacts || []) {
     const status = String(item.status || '').toLowerCase();
     const hasTouch = item.sentTime || item.lastTouch || item.scheduledTime || /sent|replied|accepted|scheduled|合作|partner/.test(status);
-    const isPartner = /partner|合作/.test(status) || PARTNER_COMPANIES.has(String(item.company || item.name || '').trim().toLowerCase());
+    const isPartner = /partner|合作/.test(status) || isKnownPartnerCompany(item);
     if (isPartner) leadKeys(item).forEach(key => partners.add(key));
     if (hasTouch || isPartner) {
       leadKeys(item).forEach(key => {
@@ -841,6 +882,7 @@ function discoveryQueue(limit, context = {}) {
   return (discovery.leads || [])
     .filter(item => Number(item.fitScore || 0) > ICP_THRESHOLD)
     .filter(item => !item.doNotOutreach && item.action !== 'partner_account' && item.sendStatus !== 'partner_account')
+    .filter(item => !isKnownPartnerCompany(item))
     .filter(item => {
       const partnerKeys = leadKeys(item);
       const channelKeys = channelLeadKeys(item);
@@ -873,6 +915,7 @@ function discoveryCooldownQueue(limit, context = {}) {
   return (discovery.leads || [])
     .filter(item => Number(item.fitScore || 0) > ICP_THRESHOLD)
     .filter(item => !item.doNotOutreach && item.action !== 'partner_account' && item.sendStatus !== 'partner_account')
+    .filter(item => !isKnownPartnerCompany(item))
     .filter(item => {
       const partnerKeys = leadKeys(item);
       if (partnerKeys.some(key => history.partners.has(key))) return false;
@@ -951,7 +994,7 @@ function main() {
   const newDiscovery = discoveryQueue(Number(CONFIG.limits.develop || 10), context);
   const touchedDiscovery = discoveryCooldownQueue(20, context);
   const remainingLimit = Math.max(0, picked.quota.total.target - newDiscovery.length);
-  const dailyQueue = dedupeQueueItems([...newDiscovery, ...picked.queue.slice(0, remainingLimit)]).sort(priorityCompare);
+  const dailyQueue = preferSocialChannels(dedupeQueueItems([...newDiscovery, ...picked.queue.slice(0, remainingLimit)])).sort(priorityCompare);
   const cooldownQueue = [...classified
     .filter(item => item.action === 'cooldown')
     .sort(priorityCompare), ...touchedDiscovery]
@@ -1040,5 +1083,7 @@ module.exports = {
   buildModelOptimizations,
   channelPriorityScore,
   companyLeadKeys,
+  isKnownPartnerCompany,
   knownTouchIndex,
+  preferSocialChannels,
 };

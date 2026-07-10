@@ -993,5 +993,82 @@ window.AUTONOMOUS_OUTREACH_RESULTS = [
     "evidence": "contact_entry_verified;business_contact_route_detected;initial_page_verified;website_contact_form_fields_prepared;marketing_attachment_missing;website_contact_target_attempts:1",
     "draft": "Dear Academy Sports + Outdoors Team,\n\nNice to e-meet you.\nI am Leo, from Flextail & Vollyc.\n\nFlextail is our first and core brand, specializing in ultralight electric products for outdoor, travel, and home use. The brand is currently Top 1 on Amazon, with strong global sell-through and a proven product-market fit.\nVollyc, our second brand, focuses on 3C electronics, targeting practical, high-rotation consumer use cases.\n\nFrom our perspective, your platform and positioning are highly aligned with Flextail’s product philosophy, especially in lightweight outdoor and travel-oriented electrics.\n\nWe have already contacted with your team, and we are now actively exploring opportunities in other regions.\nAttached, you will find a brief introduction to our brands and current product catalog for your reference.\n\nLooking ahead, we are planning to launch over 36 new SKUs in 2026, covering multiple usage scenarios and price tiers, which we believe could be of interest to your assortment strategy.\n\nIf you are available, I would greatly appreciate the opportunity to arrange a short introductory video meeting to present our brands and discuss potential collaboration opportunities.\n\nThank you for your time and consideration. I look forward to your reply.\n\n[Flextail.com](https://www.flextail.com/), [vollyc.com](https://vollyc.com/)\n\n[Sincerely](https://wa.me/8617321028184)\n[Best Regard](https://wa.me/8617321028184)\n[Leo Liu](https://wa.me/8617321028184)\n[Sales](https://wa.me/8617321028184) [& Operations Director](https://wa.me/8617321028184)\n[Brand & ODM Department](https://wa.me/8617321028184)\n[Tel/whatsapp:  +86 17321028184](https://wa.me/8617321028184)\n\n[Email:  Leo@flextailgear.com](https://wa.me/8617321028184)\n[SHANGHAI FLEXTAIL TECHNOLOGY CO.,LTD.](https://wa.me/8617321028184)\n[Room103, Building No.6, No.1 Yanjiaqiao, Pudong District, ShangHai, China](https://wa.me/8617321028184)",
     "subject": "Flextail & Vollyc | Lightweight Outdoor & 3C Electronics – Potential Cooperation"
+  },
+  {
+    "task_id": "google-customer-liberty-mountain-instagram",
+    "approval_version": 1,
+    "status": "failed_open",
+    "agent": "codex-chrome-extension",
+    "timestamp": "2026-07-10T02:56:44.917Z",
+    "target_url": "https://www.instagram.com/libertymountain/",
+    "evidence": "instagram_message_button_clicked_composer_not_found",
+    "draft": "Hi Liberty Mountain team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a distributor/importer, the strongest fit is regional sell-through, channel fit, margin-ready product line, and whether they cover outdoor/travel electronics buyers; your technical outdoor wholesale distributor focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the owner of distribution evaluation or the best time for a short intro video meeting?",
+    "subject": ""
+  },
+  {
+    "task_id": "google-customer-sportsman-s-warehouse-instagram",
+    "approval_version": 1,
+    "status": "failed_open",
+    "agent": "codex-chrome-extension",
+    "timestamp": "2026-07-10T02:57:27.924Z",
+    "target_url": "https://www.instagram.com/sportsmanswarehouse/",
+    "evidence": "instagram_message_button_clicked_composer_not_found",
+    "draft": "Hi Sportsman's Warehouse team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a retail/category buyer, the strongest fit is assortment fit, new SKU pipeline, price-tier coverage, and proven consumer demand; your outdoor specialty retail chain focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the category buyer or vendor-review owner for a short intro video meeting?",
+    "subject": ""
+  },
+  {
+    "task_id": "google-customer-summit-international-instagram",
+    "approval_version": 1,
+    "status": "failed_open",
+    "agent": "codex-chrome-extension",
+    "timestamp": "2026-07-10T02:58:12.001Z",
+    "target_url": "https://www.instagram.com/summitint/",
+    "evidence": "instagram_message_button_clicked_composer_not_found",
+    "draft": "Hi Summit International team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a distributor/importer, the strongest fit is regional sell-through, channel fit, margin-ready product line, and whether they cover outdoor/travel electronics buyers; your outdoor importer and distributor focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the owner of distribution evaluation or the best time for a short intro video meeting?",
+    "subject": ""
+  },
+  {
+    "task_id": "google-customer-camping-world-instagram",
+    "approval_version": 1,
+    "status": "sent_confirmed",
+    "agent": "codex-chrome-extension",
+    "timestamp": "2026-07-10T02:58:34.825Z",
+    "target_url": "https://www.instagram.com/campingworld/",
+    "evidence": "instagram_message_sent_confirmed_composer_cleared;instagram_post_opened;post_like_double_tap_attempted;comment_box_not_available;follow_not_available",
+    "draft": "Hi Camping World team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a retail/category buyer, the strongest fit is assortment fit, new SKU pipeline, price-tier coverage, and proven consumer demand; your RV and camping retail chain focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the category buyer or vendor-review owner for a short intro video meeting?",
+    "subject": ""
+  },
+  {
+    "task_id": "google-customer-liberty-mountain-facebook",
+    "approval_version": 1,
+    "status": "send_unconfirmed",
+    "agent": "codex-chrome-extension",
+    "timestamp": "2026-07-10T03:05:08.706Z",
+    "target_url": "https://www.facebook.com/LibertyMountain",
+    "evidence": "facebook_send_clicked_but_confirmation_missing",
+    "draft": "Hi Liberty Mountain team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a distributor/importer, the strongest fit is regional sell-through, channel fit, margin-ready product line, and whether they cover outdoor/travel electronics buyers; your technical outdoor wholesale distributor focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the owner of distribution evaluation or the best time for a short intro video meeting?",
+    "subject": ""
+  },
+  {
+    "task_id": "google-customer-sportsman-s-warehouse-facebook",
+    "approval_version": 1,
+    "status": "send_unconfirmed",
+    "agent": "codex-chrome-extension",
+    "timestamp": "2026-07-10T03:05:36.255Z",
+    "target_url": "https://www.facebook.com/SportsmansWarehouse",
+    "evidence": "facebook_send_clicked_but_confirmation_missing",
+    "draft": "Hi Sportsman's Warehouse team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a retail/category buyer, the strongest fit is assortment fit, new SKU pipeline, price-tier coverage, and proven consumer demand; your outdoor specialty retail chain focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the category buyer or vendor-review owner for a short intro video meeting?",
+    "subject": ""
+  },
+  {
+    "task_id": "google-customer-summit-international-facebook",
+    "approval_version": 1,
+    "status": "failed_open",
+    "agent": "codex-chrome-extension",
+    "timestamp": "2026-07-10T03:06:59.488Z",
+    "target_url": "https://www.facebook.com/summitint",
+    "evidence": "facebook_message_button_clicked_composer_not_found",
+    "draft": "Thanks, Summit International team. Email or WhatsApp works well. Could you share the best buyer/category contact for camping accessories vendor review? I will send a concise FLEXTAIL and Vollyc brand intro, line sheet, and current product specs through that channel.",
+    "subject": ""
   }
 ];
