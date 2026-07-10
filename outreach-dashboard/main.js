@@ -2435,6 +2435,27 @@ function buildExecutionBlockerSummary(results = [], skipped = []) {
   return Array.from(blockers.values()).sort((a, b) => b.count - a.count || a.reason.localeCompare(b.reason));
 }
 
+function executionRecoveryHint(blockerSummary = []) {
+  const reasons = new Set((Array.isArray(blockerSummary) ? blockerSummary : []).map(item => item && item.reason));
+  if (reasons.has('marketing_attachment_missing')) {
+    return 'Configure WEBSITE_MARKETING_FILE or MARKETING_ATTACHMENT_PATH with an approved marketing attachment before rerunning website-contact outreach.';
+  }
+  if (reasons.has('profile_valid_no_message_button')) {
+    return 'Use a verified alternate channel because the current social profile has no safe message button.';
+  }
+  return undefined;
+}
+
+function formatExecutionBlockerStatus(blockerSummary = []) {
+  const rows = Array.isArray(blockerSummary) ? blockerSummary.filter(Boolean) : [];
+  if (!rows.length) return undefined;
+  const summary = rows
+    .slice(0, 3)
+    .map(item => `${item.reason || item.status || 'unknown'} (${item.count || 0})`)
+    .join('; ');
+  return `Customer development was not performed. Blockers: ${summary}.`;
+}
+
 ipcMain.handle('run-glm-direct-automation', async (_event, payload) => {
   const lead = payload && payload.lead;
   const result = await executeLeadAutomation(lead);
@@ -2598,6 +2619,8 @@ async function runDailyAutomationQueue(payload = {}) {
   }
   const systemRefresh = await refreshDailyAutomationArtifacts();
   const blockerSummary = buildExecutionBlockerSummary(results, skipped);
+  const userVisibleStatus = formatExecutionBlockerStatus(blockerSummary);
+  const recoveryHint = executionRecoveryHint(blockerSummary);
 
   return {
     ok: results.some(item => item.ok),
@@ -2614,9 +2637,8 @@ async function runDailyAutomationQueue(payload = {}) {
     skipped,
     summary: latest.summary || {},
     blockerSummary,
-    userVisibleStatus: blockerSummary.length
-      ? `Customer development was not performed. Top blocker: ${blockerSummary[0].reason} (${blockerSummary[0].count}).`
-      : undefined,
+    userVisibleStatus,
+    recoveryHint,
     systemRefresh,
   };
 }
