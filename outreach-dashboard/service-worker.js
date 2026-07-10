@@ -1,4 +1,4 @@
-﻿const CACHE_NAME = 'customer-development-system-v18-7-20-20260710-reply-conversion';
+const CACHE_NAME = 'customer-development-system-v18-7-21-20260710-potential-pool';
 const APP_SHELL = [
   './',
   './index.html',

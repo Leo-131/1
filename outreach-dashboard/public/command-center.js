@@ -285,9 +285,11 @@
       ? (latestRun.scheduledLater || [])
       : source === 'cooldownQueue'
         ? (latestRun.cooldownQueue || [])
-      : source === 'all'
-        ? [...(latestRun.dailyQueue || []), ...(latestRun.scheduledLater || []), ...(latestRun.cooldownQueue || [])]
-        : (latestRun.dailyQueue || []);
+        : source === 'dailyPotentialPool'
+          ? (latestRun.dailyPotentialPool || [])
+          : source === 'all'
+            ? [...(latestRun.dailyPotentialPool || []), ...(latestRun.dailyQueue || []), ...(latestRun.scheduledLater || []), ...(latestRun.cooldownQueue || [])]
+            : (latestRun.dailyQueue || []);
     return rows.map((item, index) => {
       const base = taskIndex.get(normalizeKey(item.id))
         || taskIndex.get(normalizeKey(item.name))
@@ -494,7 +496,7 @@
       || tasks.find(item => item.taskId === taskId);
   }
   function todayDevelopTasks() {
-    return latestRun ? latestQueueRows('dailyQueue') : untouchedTasks();
+    return latestRun ? latestQueueRows('dailyPotentialPool') : untouchedTasks();
   }
   function todayFollowupTasks() {
     return latestRun ? latestQueueRows('scheduledLater') : followupTasks();
@@ -1042,13 +1044,14 @@
   }
   function latestSystemSummary() {
     const dailyRows = latestRun ? latestQueueRows('dailyQueue') : [];
+    const potentialRows = latestRun ? latestQueueRows('dailyPotentialPool') : [];
     const cooldownRows = latestRun ? latestQueueRows('cooldownQueue') : [];
     const googleRows = dailyRows.filter(item => item.source === 'google_customer_discovery' || /^google-customer-/i.test(item.taskId || item.id || ''));
     const websiteContactRows = googleRows.filter(item => item.reason === 'official_website_contact_channel' || /website-contact/i.test(item.taskId || item.id || ''));
     const generatedAt = latestRun && latestRun.generatedAt
       ? new Date(latestRun.generatedAt).toLocaleString('zh-CN', { hour12: false })
       : '';
-    return { dailyRows, cooldownRows, googleRows, websiteContactRows, generatedAt };
+    return { dailyRows, potentialRows, cooldownRows, googleRows, websiteContactRows, generatedAt };
   }
   function systemFreshnessNotice(system) {
     if (!latestRun) return '<div class="cc-quality">系统尚未加载每日自动化 artifact；请先运行 npm run discover:daily。</div>';
@@ -1058,7 +1061,7 @@
     const visibility = latestSystemVisibility
       ? ` · visibleSections ${(latestSystemVisibility.visibleSections || []).length} · visibility ${latestSystemVisibility.updatedAt || ''}`
       : '';
-    return `<div class="cc-quality">系统已更新：Latest artifact ${esc(system.generatedAt || latestRun.date || 'unknown')} · dailyQueue ${system.dailyRows.length} · googleDiscovered ${system.googleRows.length} · websiteContact ${system.websiteContactRows.length}${esc(visibility)}${esc(sync)}</div>`;
+    return `<div class="cc-quality">系统已更新：Latest artifact ${esc(system.generatedAt || latestRun.date || 'unknown')} · potentialPool ${(system.potentialRows || []).length} · dailyQueue ${system.dailyRows.length} · googleDiscovered ${system.googleRows.length} · websiteContact ${system.websiteContactRows.length}${esc(visibility)}${esc(sync)}</div>`;
   }
   function actionLabel(action) {
     const labels = {
@@ -1222,7 +1225,7 @@
     return `<section class="cc-panel cc-task-details"><div class="cc-panel-head"><h2>任务明细</h2><span class="cc-sub">执行时间 ${esc(generatedAt)}</span></div>
       <div class="cc-panel-body">
         <div class="cc-detail-grid">
-          <div><span>队列任务</span><b>${system.dailyRows.length}</b><em>今日 dueNow 队列</em></div>
+          <div><span>高 ICP 潜客池</span><b>${(system.potentialRows || []).length}</b><em>每日待开发清单</em></div>
           <div><span>Google 发现</span><b>${system.googleRows.length}</b><em>高 ICP 官网/渠道线索</em></div>
           <div><span>本次执行</span><b>${latestExecution && (latestExecution.skippedOnly || latestExecution.pendingExecution) ? '0' : ((latestExecution && (latestExecution.results || latestExecution.executed || []).length) || 0)}</b><em>${esc(executionText)}</em></div>
           <div class="${latestGithubSync && !latestGithubSync.ok ? 'blocked' : ''}"><span>系统同步</span><b>${latestGithubSync && latestGithubSync.ok ? 'OK' : 'BLOCKED'}</b><em>${esc(syncText)}</em></div>
@@ -1237,16 +1240,17 @@
   function workspace() {
     const task = currentTask();
     const untouched = executableDevelopmentTasks();
+    const potentialRows = latestRun ? latestQueueRows('dailyPotentialPool') : untouchedTasks();
     const followups = todayFollowupTasks();
     const confirmed = tasks.filter(item => item.sendStatus === 'sent_confirmed').length;
     const eligibleCount = untouched.filter(canRunGlm).length;
     const executionConnected = autoClawConnected();
     const system = latestSystemSummary();
     const metrics = `<div class="cc-kpis">
-      <a class="cc-kpi cc-kpi-link" href="${urlFor('queue', { queue: 'untouched' })}"><span>今日待开发</span><b>${untouched.length}</b></a>
+      <a class="cc-kpi cc-kpi-link" href="${urlFor('queue', { queue: 'potential' })}"><span>今日待开发</span><b>${potentialRows.length}</b></a>
+      <a class="cc-kpi cc-kpi-link" href="${urlFor('queue', { queue: 'untouched' })}"><span>可自动触达</span><b>${untouched.length}</b></a>
       <a class="cc-kpi cc-kpi-link" href="${urlFor('queue', { queue: 'followup' })}"><span>跟进中</span><b>${followups.length}</b></a>
       <a class="cc-kpi cc-kpi-link" href="${urlFor('customers', { touch: 'untouched' })}"><span>候选客户池</span><b>${customerRecords().filter(record => !recordTouched(record)).length}</b></a>
-      <a class="cc-kpi cc-kpi-link" href="${urlFor('queue', { queue: 'all' })}"><span>已确认发送</span><b>${confirmed}</b></a>
     </div>`;
     const connection = `<div class="cc-quality">${executionConnected ? 'Codex Chrome Extension 已连接：AutoClaw 兼容执行层可用' : 'Codex Chrome Extension 未连接：当前是网页预览，请使用桌面 APP 执行；历史客户仍会因防重复规则保持禁用'}</div>`;
     const icpRule = `<div class="cc-icp-rule"><b>ICP 分值算法</b><span>市场潜力 25 + 行业/角色匹配 25 + 身份核验 15 + 采购意图 15 + SEO/趋势 10 + 可联系历史 10。仅 ICP &gt; ${ICP_MIN_SCORE} 进入每日新客户开发，≤${ICP_MIN_SCORE} 保留链接但划线，不自动触达。</span></div>`;
@@ -1285,17 +1289,18 @@
     }).join('')}</tbody></table>`;
   }
   function queue() {
-    const mode = query.get('queue') || 'untouched';
+    const mode = query.get('queue') || 'potential';
     const list = latestRun
-      ? (mode === 'followup' ? todayFollowupTasks() : mode === 'cooldown' ? latestQueueRows('cooldownQueue') : mode === 'all' ? latestQueueRows('all') : executableDevelopmentTasks())
+      ? (mode === 'potential' ? latestQueueRows('dailyPotentialPool') : mode === 'followup' ? todayFollowupTasks() : mode === 'cooldown' ? latestQueueRows('cooldownQueue') : mode === 'all' ? latestQueueRows('all') : executableDevelopmentTasks())
       : (mode === 'followup' ? followupTasks() : mode === 'all' ? tasks : untouchedTasks());
     const tabs = [
-      ['untouched', '可自动开发', executableDevelopmentTasks().length],
+      ['potential', '高 ICP 潜客清单', latestRun ? latestQueueRows('dailyPotentialPool').length : untouchedTasks().length],
+      ['untouched', '可自动触达', executableDevelopmentTasks().length],
       ['followup', '跟进中', todayFollowupTasks().length],
       ['cooldown', '短期不重复', latestRun ? latestQueueRows('cooldownQueue').length : 0],
       ['all', '全部任务', latestRun ? latestQueueRows('all').length : tasks.length],
     ];
-    return `${pageHead('今日队列', '默认只显示未触达且身份核验通过的新客户，历史客户单独跟进')}
+    return `${pageHead('今日队列', '默认显示每日高 ICP 潜客清单；可自动触达是通过防重复、冷却和身份核验后的执行子集')}
       <div class="cc-view-tabs">${tabs.map(([key, label, count]) => `<a class="${mode === key ? 'active' : ''}" href="${urlFor('queue', { queue: key })}">${label} <b>${count}</b></a>`).join('')}</div>
       <div class="cc-table-wrap">${taskTable(list)}</div>`;
   }
@@ -1861,7 +1866,7 @@
             : `本次执行失败：${latestExecution.error || '未知错误'}`
         : '尚未加载执行结果。';
       return `<aside class="cc-rail"><h2>Codex 决策</h2>
-        <div class="cc-rail-section"><h2>本次运行</h2><div class="cc-evidence">dailyQueue：${system.dailyRows.length}<br>Google discovered：${system.googleRows.length}<br>websiteContact：${system.websiteContactRows.length}<br>${esc(executionText)}</div></div>
+        <div class="cc-rail-section"><h2>本次运行</h2><div class="cc-evidence">potentialPool：${(system.potentialRows || []).length}<br>dailyQueue：${system.dailyRows.length}<br>Google discovered：${system.googleRows.length}<br>websiteContact：${system.websiteContactRows.length}<br>${esc(executionText)}</div></div>
         <div class="cc-rail-section"><h2>下一步</h2><div class="cc-evidence">优先处理上方“任务明细”里的官网/邮件入口；当前没有符合自动社媒发送条件的客户。</div></div>
       </aside>`;
     }

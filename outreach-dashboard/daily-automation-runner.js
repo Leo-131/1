@@ -36,6 +36,7 @@ const CONFIG = loadConfig();
 const ICP_THRESHOLD = Number(CONFIG.cadence.icpThreshold || 70);
 const COOLDOWN_DAYS = Number(CONFIG.cadence.cooldownDays || 7);
 const DEFAULT_DAILY_LIMIT = 12;
+const DEFAULT_POTENTIAL_POOL_TARGET = 100;
 const TOUCH_STATUSES = new Set([
   'sent_confirmed',
   'post_liked',
@@ -92,12 +93,28 @@ function readJson(file, fallback) {
   }
 }
 
+function readEmbeddedCustomerRecords() {
+  try {
+    const html = fs.readFileSync(path.join(ROOT, 'outreach-dashboard.html'), 'utf8');
+    const match = html.match(/const embeddedData = (\{[\s\S]*?\});\s*const liContacts/);
+    if (!match) return [];
+    const parsed = JSON.parse(match[1]);
+    return Array.isArray(parsed.contacts) ? parsed.contacts : [];
+  } catch {
+    return [];
+  }
+}
+
 function csvCell(value) {
   return `"${String(value == null ? '' : value).replace(/"/g, '""')}"`;
 }
 
 function taskId(task) {
   return `verified-${task.platform || 'social'}-${task.accountHandle || task.name}`;
+}
+
+function slugKey(value) {
+  return String(value || '').trim().toLowerCase().replace(/&/g, 'and').replace(/\+/g, ' ').replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
 }
 
 function validDate(value) {
@@ -961,6 +978,132 @@ function discoveryCooldownQueue(limit, context = {}) {
     .slice(0, limit);
 }
 
+function legacyCustomerFitScore(record) {
+  const text = [record.company, record.role, record.category, record.keyword_used, record.source].join(' ').toLowerCase();
+  let score = 55;
+  if (/buyer|buying|category|merchandising|sourcing|procurement|commercial/.test(text)) score += 22;
+  if (/director|head|vp|chief|founder|owner|manager|lead|ceo|president/.test(text)) score += 14;
+  if (/outdoor|camp|rv|sport|retail|distributor|wholesale|dealer|gear|electronics|power|ka/.test(text)) score += 18;
+  if (/linkedin|salesrobot|okki|outreach_data/i.test(String(record.source || ''))) score += 4;
+  if (/accepted|replied/i.test(String(record.status || ''))) score += 8;
+  if (/excluded|designer|student|foundation|government|school|nonprofit|501/i.test(text)) score -= 35;
+  if (/failed|rejected|excluded/i.test(String(record.status || ''))) score -= 10;
+  return Math.max(0, Math.min(100, score));
+}
+
+function legacyCustomerPlatform(record) {
+  const source = String(record.source || '').toLowerCase();
+  const url = String(record.linkedin_url || record.id || '');
+  if (/linkedin|salesrobot/.test(source) || /linkedin\.com/i.test(url)) return 'linkedin';
+  if (/okki|email/.test(source) || record.email) return 'email';
+  return 'research';
+}
+
+function googleSearchUrl(company) {
+  const query = `${company || ''} outdoor buyer partnership contact`;
+  return `https://www.google.com/search?q=${encodeURIComponent(query)}`;
+}
+
+function linkedinSearchUrl(record) {
+  const direct = record.linkedinUrl || record.linkedin_url || record.linkedinCompany || (/linkedin\.com/i.test(String(record.id || '')) ? record.id : '');
+  if (/^https?:\/\//i.test(String(direct || ''))) return direct;
+  const query = `${record.company || record.name || ''} buyer outdoor LinkedIn`;
+  return `https://www.linkedin.com/search/results/all/?keywords=${encodeURIComponent(query)}`;
+}
+
+function potentialStatusFor(item, history) {
+  const companyKeys = companyLeadKeys(item);
+  const channelKeys = channelLeadKeys(item);
+  const touch = [...companyKeys, ...channelKeys]
+    .map(key => history.activeCooldownDetails.get(key) || history.touchedDetails.get(key))
+    .filter(Boolean)
+    .sort((left, right) => validDate(right.timestamp) - validDate(left.timestamp))[0] || null;
+  if (companyKeys.some(key => history.partners.has(key))) return { action: 'blocked_partner', reason: 'known_partner_no_duplicate_outreach', touch };
+  if (companyKeys.some(key => history.sameDayDeveloped.has(key))) return { action: 'cooldown', reason: 'same_day_customer_already_developed', touch };
+  if (companyKeys.some(key => history.sentConfirmed.has(key)) || channelKeys.some(key => history.activeCooldown.has(key))) {
+    return { action: 'cooldown', reason: touch && touch.status === 'website_contact_ready' ? 'website_contact_ready_no_repeat' : `${COOLDOWN_DAYS}_day_no_repeat_touch`, touch };
+  }
+  if (String(item.platform || '').toLowerCase() === 'email') return { action: 'email_priority', reason: item.reason || 'official_website_contact_channel', touch };
+  if (!targetUrl(item, {})) return { action: 'verify_target', reason: 'missing_verified_profile_url', touch };
+  return { action: item.action || 'develop', reason: item.reason || 'high_icp_potential_ready', touch };
+}
+
+function normalizePotentialItem(item, sourceType, history, index = 0) {
+  const base = {
+    ...item,
+    id: item.id || `potential-${sourceType}-${slugKey(item.company || item.name || index)}`,
+    name: item.name || item.company || '',
+    company: item.company || item.name || '',
+    country: item.countryEn || item.country || item.headquarters || '',
+    countryEn: item.countryEn || item.country || item.headquarters || '',
+    platform: String(item.platform || legacyCustomerPlatform(item) || 'research').toLowerCase(),
+    fitScore: Number(item.fitScore || legacyCustomerFitScore(item)),
+    fitTier: item.fitTier || (Number(item.fitScore || legacyCustomerFitScore(item)) >= 90 ? 'A' : 'B'),
+    source: item.source || sourceType,
+    website: item.website || item.url || '',
+    url: item.url || item.targetUrl || item.linkedin_url || item.linkedinUrl || item.website || '',
+    platformUrl: item.platformUrl || item.url || item.linkedin_url || item.linkedinUrl || item.website || '',
+    linkedinUrl: item.linkedinUrl || item.linkedin_url || item.linkedinCompany || '',
+    linkedinSearchUrl: linkedinSearchUrl(item),
+    googleSearchUrl: item.contactSearchUrl || googleSearchUrl(item.company || item.name),
+    contactSearchUrl: item.contactSearchUrl || googleSearchUrl(item.company || item.name),
+    dataSources: item.dataSources || [sourceType],
+    background: item.background || item.message || item.contactNote || '',
+    buyerPersona: item.buyerPersona || item.role || item.decisionMaker || '',
+    marketStatus: item.marketStatus || item.agencyState || '',
+  };
+  const status = potentialStatusFor(base, history);
+  return {
+    ...base,
+    taskId: base.id,
+    action: status.action,
+    reason: status.reason,
+    lastStatus: status.touch && status.touch.status || base.lastStatus || base.status || '',
+    lastEvidence: status.touch && status.touch.evidence || base.lastEvidence || '',
+    lastTouch: status.touch && status.touch.timestamp || base.lastTouch || '',
+    targetRegion: targetRegion(base),
+    targetRegionScore: targetRegionScore(base),
+    contactChannelScore: contactChannelScore(base),
+    dealProbabilityScore: dealProbabilityScore(base),
+    priorityScore: dealProbabilityScore(base) + contactChannelScore(base),
+    potentialSource: sourceType,
+    nextAction: status.action === 'cooldown'
+      ? 'no_repeat_review'
+      : status.action === 'verify_target'
+        ? 'background_check_then_verify_channel'
+        : status.action === 'email_priority'
+          ? 'official_website_or_email_contact'
+          : 'develop_after_identity_check',
+  };
+}
+
+function buildDailyPotentialPool(classified, discoveryRun, context, targetSize) {
+  const history = knownTouchIndex(context.results || [], [], context.now || Date.now());
+  const embedded = readEmbeddedCustomerRecords()
+    .filter(item => !item.excluded)
+    .map((item, index) => normalizePotentialItem(item, 'customer_table', history, index))
+    .filter(item => item.fitScore > ICP_THRESHOLD)
+    .filter(item => !/excluded|designer|student|foundation|government|school|nonprofit|501/i.test([item.category, item.role, item.company].join(' ')));
+  const currentPlan = classified
+    .filter(item => item.fitScore > ICP_THRESHOLD)
+    .map((item, index) => normalizePotentialItem(item, 'daily_plan', history, index));
+  const discovered = (discoveryRun.leads || [])
+    .filter(item => Number(item.fitScore || 0) > ICP_THRESHOLD)
+    .filter(item => !item.doNotOutreach && item.action !== 'partner_account' && item.sendStatus !== 'partner_account')
+    .filter(item => !isKnownPartnerCompany(item))
+    .map((item, index) => normalizePotentialItem(item, 'google_linkedin_social_refill', history, index));
+  const seen = new Set();
+  return [...currentPlan, ...embedded, ...discovered]
+    .sort(priorityCompare)
+    .filter(item => {
+      const key = slugKey(item.company || item.name || item.id);
+      if (!key || seen.has(key)) return false;
+      seen.add(key);
+      return true;
+    })
+    .slice(0, targetSize);
+}
+
 function main() {
   const args = new Set(process.argv.slice(2));
   const now = Date.now();
@@ -994,6 +1137,8 @@ function main() {
     : actionable.filter(item => item.workingTime && item.workingTime.dueNow);
   const picked = quotaPick(dueClassified, limit);
   const discoveryRun = readJson('google-lead-discovery-latest.json', { leads: [] });
+  const potentialPoolTarget = Math.max(DEFAULT_POTENTIAL_POOL_TARGET, Number(CONFIG.limits.total || 0));
+  const dailyPotentialPool = buildDailyPotentialPool(classified, discoveryRun, context, potentialPoolTarget);
   const newDiscovery = discoveryQueue(Number(CONFIG.limits.develop || 10), context);
   const touchedDiscovery = discoveryCooldownQueue(20, context);
   const remainingLimit = Math.max(0, picked.quota.total.target - newDiscovery.length);
@@ -1032,6 +1177,10 @@ function main() {
       highIcp: classified.filter(item => item.fitScore > ICP_THRESHOLD).length,
       readyToDevelop: dailyQueue.filter(item => ['develop', 'discover_and_develop'].includes(item.action)).length,
       dueNow: dailyQueue.length,
+      potentialPool: dailyPotentialPool.length,
+      potentialPoolTarget,
+      customerTableHighIcp: dailyPotentialPool.filter(item => item.potentialSource === 'customer_table').length,
+      refillNeeded: Math.max(0, potentialPoolTarget - dailyPotentialPool.length),
       googleDiscovered: dailyQueue.filter(item => item.source === 'google_customer_discovery' || /^google-customer-/i.test(item.id || '')).length,
       facebookDiscovered: dailyQueue.filter(item => item.platform === 'facebook' && (item.source === 'google_customer_discovery' || /^google-customer-/i.test(item.id || ''))).length,
       websiteContactDiscovered: dailyQueue.filter(item => item.platform === 'email' && (item.source === 'google_customer_discovery' || /^google-customer-/i.test(item.id || ''))).length,
@@ -1050,6 +1199,7 @@ function main() {
       refillByCustomerType: discoveryRun.refillByCustomerType || { agency: 0, key_account: 0 },
       qualifiedQueueCount: newDiscovery.filter(item => Number(item.fitScore || 0) > ICP_THRESHOLD).length,
     },
+    dailyPotentialPool,
     dailyQueue,
     cooldownQueue,
     scheduledLater,
