@@ -163,6 +163,20 @@ test('Google discovery autonomously refills verified agency and key-account cand
   assert.ok(refillLeads.every(item => /^https:\/\//.test(item.contactUrl || item.url || '')));
 });
 
+test('Google discovery keeps a refill pool for new prospects after current customers are developed', () => {
+  const run = buildDiscoveryRun(120);
+  assert.ok(run.candidatePoolCount >= 23);
+  assert.ok(run.qualifiedNonPartnerCompanyCount >= 8);
+  assert.ok(run.activeCustomerExcludedCount >= 3);
+  for (const company of ['Backcountry', 'evo', 'Mountain Warehouse', 'Snowys Outdoors']) {
+    const companyLeads = run.leads.filter(item => item.company === company);
+    assert.ok(companyLeads.length > 0, company);
+    assert.ok(companyLeads.every(item => item.discoveryMode === 'autonomous_refill'));
+    assert.ok(companyLeads.every(item => !item.doNotOutreach));
+    assert.ok(companyLeads.some(item => item.platform === 'instagram' || item.platform === 'facebook'));
+  }
+});
+
 test('Google discovery gives autonomous refill customers social channels before website contact', () => {
   const leads = buildLeads(120);
   for (const company of ['Liberty Mountain', 'Sportsman\'s Warehouse', 'Camping World']) {

@@ -1,11 +1,11 @@
 window.SYSTEM_VISIBILITY_LATEST = {
-  "updatedAt": "2026-07-10T03:12:23.481Z",
+  "updatedAt": "2026-07-10T03:23:53.646Z",
   "source": "daily-automation-runner",
   "runDate": "2026-07-10",
-  "artifactGeneratedAt": "2026-07-10T03:12:23.196Z",
+  "artifactGeneratedAt": "2026-07-10T03:23:53.069Z",
   "counts": {
-    "dailyQueue": 2,
-    "googleDiscovered": 2,
+    "dailyQueue": 10,
+    "googleDiscovered": 10,
     "websiteContact": 0,
     "cooldownQueue": 30,
     "scheduledLater": 1
