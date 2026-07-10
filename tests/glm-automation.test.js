@@ -417,6 +417,10 @@ test('Codex Chrome execution can auto-send approved social outreach with confirm
   assert.match(chromeDriverSource, /platform === 'instagram'[\s\S]*clickOptionalAction\(tab, 'follow', platform\)[\s\S]*submitInstagramPostEngagement\(tab/);
   assert.ok(chromeDriverSource.includes('submitFacebookPostEngagement'));
   assert.ok(chromeDriverSource.includes('facebookPostLikeButtonExpression'));
+  assert.ok(chromeDriverSource.includes('facebookStartButtonExpression'));
+  assert.ok(chromeDriverSource.includes('insertDraftAndVerify'));
+  assert.ok(chromeDriverSource.includes('facebook_draft_inserted_after_composer_refocus'));
+  assert.ok(chromeDriverSource.includes('Marketing draft was not detected in the message composer'));
   assert.match(chromeDriverSource, /platform === 'facebook'[\s\S]*clickOptionalAction\(tab, 'follow', platform\)[\s\S]*submitFacebookPostEngagement\(tab/);
   assert.ok(chromeDriverSource.includes('instagramPostTileExpression'));
   assert.ok(chromeDriverSource.includes('instagramCommentActionExpression'));

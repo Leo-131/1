@@ -260,11 +260,20 @@ function composerExpression(platform) {
         x: Math.round(rect.left + rect.width / 2),
         y: Math.round(rect.top + rect.height / 2),
         text,
+        label,
+        placeholder,
         visible: visible(el),
         inDialog,
         match: visible(el) && editable && messageLike
       };
     });
+    if (platform === 'facebook') {
+      const facebookComposer = elements
+        .filter(item => item.match && item.inDialog)
+        .filter(item => item.y > window.innerHeight * 0.45 || item.label.includes('message') || item.placeholder.includes('message') || item.placeholder === 'aa')
+        .sort((a, b) => b.y - a.y)[0];
+      if (facebookComposer) return JSON.stringify(facebookComposer);
+    }
     return JSON.stringify(
       elements.find(item => item.match && item.inDialog)
       || elements.find(item => item.match)
@@ -272,6 +281,33 @@ function composerExpression(platform) {
       || elements.find(item => item.visible)
       || null
     );
+  })()`;
+}
+
+function facebookStartButtonExpression() {
+  return `(() => {
+    const visible = (el) => {
+      const rect = el && el.getBoundingClientRect && el.getBoundingClientRect();
+      return Boolean(rect && rect.width > 0 && rect.height > 0 && rect.bottom > 0 && rect.top < window.innerHeight);
+    };
+    const controls = Array.from(document.querySelectorAll('[role="dialog"] button,[role="dialog"] div[role="button"],[aria-modal="true"] button,[aria-modal="true"] div[role="button"]'))
+      .filter(visible)
+      .map((el) => {
+        const rect = el.getBoundingClientRect();
+        const text = String(el.innerText || el.textContent || el.getAttribute('aria-label') || '').replace(/\\s+/g, ' ').trim().toLowerCase();
+        return {
+          text,
+          x: Math.round(rect.left + rect.width / 2),
+          y: Math.round(rect.top + rect.height / 2),
+          width: Math.round(rect.width),
+          height: Math.round(rect.height),
+          disabled: Boolean(el.disabled || el.getAttribute('aria-disabled') === 'true')
+        };
+      })
+      .filter(item => !item.disabled)
+      .filter(item => item.width >= 48 && item.height >= 24);
+    const button = controls.find(item => item.text === 'get started' || item.text === 'start' || item.text === '\\u5f00\\u59cb');
+    return JSON.stringify(button || null);
   })()`;
 }
 
@@ -422,6 +458,28 @@ function composerTextExpression(draft) {
       .join('\\n');
     return JSON.stringify({ text, containsDraft: Boolean(draft && text.includes(draft.slice(0, Math.min(40, draft.length)))) });
   })()`;
+}
+
+async function insertDraftAndVerify(tab, composer, draft, platform) {
+  await clickAt(tab, composer.x, composer.y);
+  await sleep(300);
+  await cdp(tab.webSocketDebuggerUrl, 'Input.insertText', { text: draft }, 5000);
+  let inserted = await waitForJson(tab, composerTextExpression(draft), item => item && item.containsDraft, 2500, 300);
+  if (inserted && inserted.containsDraft) return { ok: true, composer, evidence: `${platform}_draft_inserted_verified` };
+
+  if (platform === 'facebook') {
+    const refreshedComposer = await waitForJson(tab, composerExpression(platform), item => item && item.visible && Number.isFinite(item.x), 5000, 400);
+    if (refreshedComposer && Number.isFinite(refreshedComposer.x)) {
+      await clickAt(tab, refreshedComposer.x, refreshedComposer.y);
+      await sleep(300);
+      await cdp(tab.webSocketDebuggerUrl, 'Input.insertText', { text: draft }, 5000);
+      inserted = await waitForJson(tab, composerTextExpression(draft), item => item && item.containsDraft, 3500, 300);
+      if (inserted && inserted.containsDraft) return { ok: true, composer: refreshedComposer, evidence: 'facebook_draft_inserted_after_composer_refocus' };
+      return { ok: false, composer: refreshedComposer, evidence: 'facebook_draft_not_inserted_after_composer_refocus' };
+    }
+  }
+
+  return { ok: false, composer, evidence: `${platform}_draft_not_inserted_before_send` };
 }
 
 function identityCheckExpression(expectedCompany, targetUrl) {
@@ -805,6 +863,13 @@ async function ensureComposerOpen(tab, port, platform) {
   await sleep(900);
   await evaluateJson(tab, dismissDialogExpression(), 2000).catch(() => null);
   await evaluateJson(tab, closeBlockingOverlayExpression(platform), 2500).catch(() => null);
+  if (platform === 'facebook') {
+    const startButton = await evaluateJson(tab, facebookStartButtonExpression(), 2500).catch(() => null);
+    if (startButton && Number.isFinite(startButton.x) && Number.isFinite(startButton.y)) {
+      await clickAt(tab, startButton.x, startButton.y);
+      await sleep(1200);
+    }
+  }
   composer = await waitForJson(tab, composerExpression(platform), item => item && item.visible, 25000, 500);
   if (!composer || !Number.isFinite(composer.x)) {
     await evaluateJson(tab, dismissDialogExpression(), 2000).catch(() => null);
@@ -845,7 +910,7 @@ async function preparePlatformDraft(payload, platform) {
     }
   }
 
-  const composer = await ensureComposerOpen(tab, port, platform);
+  let composer = await ensureComposerOpen(tab, port, platform);
   if (composer && composer.unavailable) {
     return {
       ok: false,
@@ -900,7 +965,16 @@ async function preparePlatformDraft(payload, platform) {
     }, 2000);
     await sleep(300);
   }
-  await cdp(tab.webSocketDebuggerUrl, 'Input.insertText', { text: draft }, 5000);
+  const insertResult = await insertDraftAndVerify(tab, composer, draft, platform);
+  composer = insertResult.composer || composer;
+  if (!insertResult.ok) {
+    return {
+      ok: false,
+      sendStatus: 'send_unconfirmed',
+      evidence: insertResult.evidence,
+      nextAction: 'Marketing draft was not detected in the message composer; do not click Send or retry blindly.',
+    };
+  }
   if (payload.autoSend) {
     await sleep(800);
     const sendButton = await waitForJson(tab, sendButtonExpression(composer), item => item && Number.isFinite(item.x) && Number.isFinite(item.y), 8000, 400);
@@ -918,7 +992,7 @@ async function preparePlatformDraft(payload, platform) {
       return {
         ok: true,
         sendStatus: 'sent_confirmed',
-        evidence: `${platform}_message_sent_confirmed_composer_cleared;${preActions.filter(Boolean).join(';')}`,
+        evidence: `${platform}_message_sent_confirmed_composer_cleared;${insertResult.evidence};${preActions.filter(Boolean).join(';')}`,
         nextAction: 'Record outcome and monitor for reply.',
       };
     }
