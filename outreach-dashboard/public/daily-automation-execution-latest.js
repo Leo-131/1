@@ -30,8 +30,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
         "engine": "codex-chrome-extension-cdp",
         "port": 9224,
         "targetUrl": "https://vendor.academy.com/becoming-a-vendor.html",
-        "tabId": "E2A357FE6C5BD90B4ACF6F69873F97A5",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/E2A357FE6C5BD90B4ACF6F69873F97A5",
+        "tabId": "BCAAE590C2D5EA52D168BAB075ABEE04",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/BCAAE590C2D5EA52D168BAB075ABEE04",
         "title": "Becoming a Vendor | Academy Vendor"
       },
       "result": {
@@ -45,8 +45,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
           "engine": "codex-chrome-extension-cdp",
           "port": 9224,
           "targetUrl": "https://vendor.academy.com/becoming-a-vendor.html",
-          "tabId": "E2A357FE6C5BD90B4ACF6F69873F97A5",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/E2A357FE6C5BD90B4ACF6F69873F97A5",
+          "tabId": "BCAAE590C2D5EA52D168BAB075ABEE04",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/BCAAE590C2D5EA52D168BAB075ABEE04",
           "title": "Becoming a Vendor | Academy Vendor"
         },
         "sendStatus": "approval_pending",
@@ -70,8 +70,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
         "engine": "codex-chrome-extension-cdp",
         "port": 9224,
         "targetUrl": "https://libertymountain.com/",
-        "tabId": "A0C434782855D7A57208E629664C7761",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/A0C434782855D7A57208E629664C7761",
+        "tabId": "77B0C66B6A5DBBFE100FDA22E6649512",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/77B0C66B6A5DBBFE100FDA22E6649512",
         "title": "Just a moment..."
       },
       "result": {
@@ -85,8 +85,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
           "engine": "codex-chrome-extension-cdp",
           "port": 9224,
           "targetUrl": "https://libertymountain.com/",
-          "tabId": "A0C434782855D7A57208E629664C7761",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/A0C434782855D7A57208E629664C7761",
+          "tabId": "77B0C66B6A5DBBFE100FDA22E6649512",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/77B0C66B6A5DBBFE100FDA22E6649512",
           "title": "Just a moment..."
         },
         "sendStatus": "approval_pending",
@@ -110,8 +110,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
         "engine": "codex-chrome-extension-cdp",
         "port": 9224,
         "targetUrl": "https://www.sail.ca/en/contact-us",
-        "tabId": "B4A930328D5E319EC64058214ACC99EF",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/B4A930328D5E319EC64058214ACC99EF",
+        "tabId": "C39C131BE7650F0C8EB798526E366A4F",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/C39C131BE7650F0C8EB798526E366A4F",
         "title": "SAIL | Need Help - Contact Us | SAIL"
       },
       "result": {
@@ -125,8 +125,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
           "engine": "codex-chrome-extension-cdp",
           "port": 9224,
           "targetUrl": "https://www.sail.ca/en/contact-us",
-          "tabId": "B4A930328D5E319EC64058214ACC99EF",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/B4A930328D5E319EC64058214ACC99EF",
+          "tabId": "C39C131BE7650F0C8EB798526E366A4F",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/C39C131BE7650F0C8EB798526E366A4F",
           "title": "SAIL | Need Help - Contact Us | SAIL"
         },
         "sendStatus": "approval_pending",
@@ -150,8 +150,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
         "engine": "codex-chrome-extension-cdp",
         "port": 9224,
         "targetUrl": "https://www.sportsmans.com/",
-        "tabId": "6DD2AB8FB64D6284CFDBFFE05A8F9E4F",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/6DD2AB8FB64D6284CFDBFFE05A8F9E4F",
+        "tabId": "FB3F5E9F89028CA4CFCEF4660D216947",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/FB3F5E9F89028CA4CFCEF4660D216947",
         "title": "Attention Required! | Cloudflare"
       },
       "result": {
@@ -165,8 +165,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
           "engine": "codex-chrome-extension-cdp",
           "port": 9224,
           "targetUrl": "https://www.sportsmans.com/",
-          "tabId": "6DD2AB8FB64D6284CFDBFFE05A8F9E4F",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/6DD2AB8FB64D6284CFDBFFE05A8F9E4F",
+          "tabId": "FB3F5E9F89028CA4CFCEF4660D216947",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/FB3F5E9F89028CA4CFCEF4660D216947",
           "title": "Attention Required! | Cloudflare"
         },
         "sendStatus": "approval_pending",
@@ -190,8 +190,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
         "engine": "codex-chrome-extension-cdp",
         "port": 9224,
         "targetUrl": "https://www.scheels.com/",
-        "tabId": "FDF795526DCCFD51773A1397BCD35AAC",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/FDF795526DCCFD51773A1397BCD35AAC",
+        "tabId": "61501A25131D6710105D67105BD04978",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/61501A25131D6710105D67105BD04978",
         "title": "SCHEELS | Sporting Goods, Clothing & Footwear"
       },
       "result": {
@@ -205,8 +205,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
           "engine": "codex-chrome-extension-cdp",
           "port": 9224,
           "targetUrl": "https://www.scheels.com/",
-          "tabId": "FDF795526DCCFD51773A1397BCD35AAC",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/FDF795526DCCFD51773A1397BCD35AAC",
+          "tabId": "61501A25131D6710105D67105BD04978",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/61501A25131D6710105D67105BD04978",
           "title": "SCHEELS | Sporting Goods, Clothing & Footwear"
         },
         "sendStatus": "approval_pending",
@@ -230,8 +230,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
         "engine": "codex-chrome-extension-cdp",
         "port": 9224,
         "targetUrl": "https://www.summitint.co/",
-        "tabId": "14FA984767F1AD69661A7F54D152D689",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/14FA984767F1AD69661A7F54D152D689",
+        "tabId": "E701952994F967CE1FB2FA075A074BBD",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/E701952994F967CE1FB2FA075A074BBD",
         "title": "Summit International - Camping and Outdoor Gear"
       },
       "result": {
@@ -245,8 +245,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
           "engine": "codex-chrome-extension-cdp",
           "port": 9224,
           "targetUrl": "https://www.summitint.co/",
-          "tabId": "14FA984767F1AD69661A7F54D152D689",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/14FA984767F1AD69661A7F54D152D689",
+          "tabId": "E701952994F967CE1FB2FA075A074BBD",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/E701952994F967CE1FB2FA075A074BBD",
           "title": "Summit International - Camping and Outdoor Gear"
         },
         "sendStatus": "approval_pending",
@@ -270,8 +270,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
         "engine": "codex-chrome-extension-cdp",
         "port": 9224,
         "targetUrl": "https://www.campingworld.com/",
-        "tabId": "882714549B317EE66EE836FF4E2B31AF",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/882714549B317EE66EE836FF4E2B31AF",
+        "tabId": "C6BCF42F10648C22067A78B363279C8F",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/C6BCF42F10648C22067A78B363279C8F",
         "title": "Attention Required! | Cloudflare"
       },
       "result": {
@@ -285,8 +285,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
           "engine": "codex-chrome-extension-cdp",
           "port": 9224,
           "targetUrl": "https://www.campingworld.com/",
-          "tabId": "882714549B317EE66EE836FF4E2B31AF",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/882714549B317EE66EE836FF4E2B31AF",
+          "tabId": "C6BCF42F10648C22067A78B363279C8F",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/C6BCF42F10648C22067A78B363279C8F",
           "title": "Attention Required! | Cloudflare"
         },
         "sendStatus": "approval_pending",
@@ -312,8 +312,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
         "engine": "codex-chrome-extension-cdp",
         "port": 9224,
         "targetUrl": "https://vendor.academy.com/becoming-a-vendor.html",
-        "tabId": "E2A357FE6C5BD90B4ACF6F69873F97A5",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/E2A357FE6C5BD90B4ACF6F69873F97A5",
+        "tabId": "BCAAE590C2D5EA52D168BAB075ABEE04",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/BCAAE590C2D5EA52D168BAB075ABEE04",
         "title": "Becoming a Vendor | Academy Vendor"
       },
       "result": {
@@ -327,8 +327,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
           "engine": "codex-chrome-extension-cdp",
           "port": 9224,
           "targetUrl": "https://vendor.academy.com/becoming-a-vendor.html",
-          "tabId": "E2A357FE6C5BD90B4ACF6F69873F97A5",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/E2A357FE6C5BD90B4ACF6F69873F97A5",
+          "tabId": "BCAAE590C2D5EA52D168BAB075ABEE04",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/BCAAE590C2D5EA52D168BAB075ABEE04",
           "title": "Becoming a Vendor | Academy Vendor"
         },
         "sendStatus": "approval_pending",
@@ -352,8 +352,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
         "engine": "codex-chrome-extension-cdp",
         "port": 9224,
         "targetUrl": "https://libertymountain.com/",
-        "tabId": "A0C434782855D7A57208E629664C7761",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/A0C434782855D7A57208E629664C7761",
+        "tabId": "77B0C66B6A5DBBFE100FDA22E6649512",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/77B0C66B6A5DBBFE100FDA22E6649512",
         "title": "Just a moment..."
       },
       "result": {
@@ -367,8 +367,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
           "engine": "codex-chrome-extension-cdp",
           "port": 9224,
           "targetUrl": "https://libertymountain.com/",
-          "tabId": "A0C434782855D7A57208E629664C7761",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/A0C434782855D7A57208E629664C7761",
+          "tabId": "77B0C66B6A5DBBFE100FDA22E6649512",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/77B0C66B6A5DBBFE100FDA22E6649512",
           "title": "Just a moment..."
         },
         "sendStatus": "approval_pending",
@@ -392,8 +392,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
         "engine": "codex-chrome-extension-cdp",
         "port": 9224,
         "targetUrl": "https://www.sail.ca/en/contact-us",
-        "tabId": "B4A930328D5E319EC64058214ACC99EF",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/B4A930328D5E319EC64058214ACC99EF",
+        "tabId": "C39C131BE7650F0C8EB798526E366A4F",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/C39C131BE7650F0C8EB798526E366A4F",
         "title": "SAIL | Need Help - Contact Us | SAIL"
       },
       "result": {
@@ -407,8 +407,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
           "engine": "codex-chrome-extension-cdp",
           "port": 9224,
           "targetUrl": "https://www.sail.ca/en/contact-us",
-          "tabId": "B4A930328D5E319EC64058214ACC99EF",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/B4A930328D5E319EC64058214ACC99EF",
+          "tabId": "C39C131BE7650F0C8EB798526E366A4F",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/C39C131BE7650F0C8EB798526E366A4F",
           "title": "SAIL | Need Help - Contact Us | SAIL"
         },
         "sendStatus": "approval_pending",
@@ -432,8 +432,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
         "engine": "codex-chrome-extension-cdp",
         "port": 9224,
         "targetUrl": "https://www.sportsmans.com/",
-        "tabId": "6DD2AB8FB64D6284CFDBFFE05A8F9E4F",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/6DD2AB8FB64D6284CFDBFFE05A8F9E4F",
+        "tabId": "FB3F5E9F89028CA4CFCEF4660D216947",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/FB3F5E9F89028CA4CFCEF4660D216947",
         "title": "Attention Required! | Cloudflare"
       },
       "result": {
@@ -447,8 +447,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
           "engine": "codex-chrome-extension-cdp",
           "port": 9224,
           "targetUrl": "https://www.sportsmans.com/",
-          "tabId": "6DD2AB8FB64D6284CFDBFFE05A8F9E4F",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/6DD2AB8FB64D6284CFDBFFE05A8F9E4F",
+          "tabId": "FB3F5E9F89028CA4CFCEF4660D216947",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/FB3F5E9F89028CA4CFCEF4660D216947",
           "title": "Attention Required! | Cloudflare"
         },
         "sendStatus": "approval_pending",
@@ -472,8 +472,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
         "engine": "codex-chrome-extension-cdp",
         "port": 9224,
         "targetUrl": "https://www.scheels.com/",
-        "tabId": "FDF795526DCCFD51773A1397BCD35AAC",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/FDF795526DCCFD51773A1397BCD35AAC",
+        "tabId": "61501A25131D6710105D67105BD04978",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/61501A25131D6710105D67105BD04978",
         "title": "SCHEELS | Sporting Goods, Clothing & Footwear"
       },
       "result": {
@@ -487,8 +487,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
           "engine": "codex-chrome-extension-cdp",
           "port": 9224,
           "targetUrl": "https://www.scheels.com/",
-          "tabId": "FDF795526DCCFD51773A1397BCD35AAC",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/FDF795526DCCFD51773A1397BCD35AAC",
+          "tabId": "61501A25131D6710105D67105BD04978",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/61501A25131D6710105D67105BD04978",
           "title": "SCHEELS | Sporting Goods, Clothing & Footwear"
         },
         "sendStatus": "approval_pending",
@@ -512,8 +512,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
         "engine": "codex-chrome-extension-cdp",
         "port": 9224,
         "targetUrl": "https://www.summitint.co/",
-        "tabId": "14FA984767F1AD69661A7F54D152D689",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/14FA984767F1AD69661A7F54D152D689",
+        "tabId": "E701952994F967CE1FB2FA075A074BBD",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/E701952994F967CE1FB2FA075A074BBD",
         "title": "Summit International - Camping and Outdoor Gear"
       },
       "result": {
@@ -527,8 +527,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
           "engine": "codex-chrome-extension-cdp",
           "port": 9224,
           "targetUrl": "https://www.summitint.co/",
-          "tabId": "14FA984767F1AD69661A7F54D152D689",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/14FA984767F1AD69661A7F54D152D689",
+          "tabId": "E701952994F967CE1FB2FA075A074BBD",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/E701952994F967CE1FB2FA075A074BBD",
           "title": "Summit International - Camping and Outdoor Gear"
         },
         "sendStatus": "approval_pending",
@@ -552,8 +552,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
         "engine": "codex-chrome-extension-cdp",
         "port": 9224,
         "targetUrl": "https://www.campingworld.com/",
-        "tabId": "882714549B317EE66EE836FF4E2B31AF",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/882714549B317EE66EE836FF4E2B31AF",
+        "tabId": "C6BCF42F10648C22067A78B363279C8F",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/C6BCF42F10648C22067A78B363279C8F",
         "title": "Attention Required! | Cloudflare"
       },
       "result": {
@@ -567,8 +567,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
           "engine": "codex-chrome-extension-cdp",
           "port": 9224,
           "targetUrl": "https://www.campingworld.com/",
-          "tabId": "882714549B317EE66EE836FF4E2B31AF",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/882714549B317EE66EE836FF4E2B31AF",
+          "tabId": "C6BCF42F10648C22067A78B363279C8F",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/C6BCF42F10648C22067A78B363279C8F",
           "title": "Attention Required! | Cloudflare"
         },
         "sendStatus": "approval_pending",
@@ -615,12 +615,12 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     "stderr": "",
     "error": "",
     "visibility": {
-      "updatedAt": "2026-07-10T01:03:02.027Z",
+      "updatedAt": "2026-07-10T01:07:21.312Z",
       "source": "main-refreshDailyAutomationArtifacts",
       "runDate": "2026-07-10",
-      "artifactGeneratedAt": "2026-07-10T01:03:00.866Z",
-      "executionGeneratedAt": "2026-07-09T22:04:21.508Z",
-      "githubSyncUpdatedAt": "2026-07-09T22:04:53.066Z",
+      "artifactGeneratedAt": "2026-07-10T01:07:20.106Z",
+      "executionGeneratedAt": "2026-07-10T01:03:02.429Z",
+      "githubSyncUpdatedAt": "2026-07-10T01:03:38.965Z",
       "counts": {
         "dailyQueue": 8,
         "googleDiscovered": 8,
@@ -666,5 +666,5 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       }
     }
   },
-  "completedAt": "2026-07-10T01:03:02.429Z"
+  "completedAt": "2026-07-10T01:07:21.881Z"
 };
