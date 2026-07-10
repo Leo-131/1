@@ -1070,5 +1070,60 @@ window.AUTONOMOUS_OUTREACH_RESULTS = [
     "evidence": "facebook_message_button_clicked_composer_not_found",
     "draft": "Thanks, Summit International team. Email or WhatsApp works well. Could you share the best buyer/category contact for camping accessories vendor review? I will send a concise FLEXTAIL and Vollyc brand intro, line sheet, and current product specs through that channel.",
     "subject": ""
+  },
+  {
+    "task_id": "google-customer-backcountry-instagram",
+    "approval_version": 1,
+    "status": "sent_confirmed",
+    "agent": "codex-chrome-extension",
+    "timestamp": "2026-07-10T04:03:24.818Z",
+    "target_url": "https://www.instagram.com/backcountry/",
+    "evidence": "instagram_message_sent_confirmed_composer_cleared;follow_not_available;instagram_post_opened;post_liked;comment_submitted",
+    "draft": "Hi Backcountry team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a retail/category buyer, the strongest fit is assortment fit, new SKU pipeline, price-tier coverage, and proven consumer demand; your outdoor ecommerce and specialty retail focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the category buyer or vendor-review owner for a short intro video meeting?",
+    "subject": ""
+  },
+  {
+    "task_id": "google-customer-evo-instagram",
+    "approval_version": 1,
+    "status": "send_unconfirmed",
+    "agent": "codex-chrome-extension",
+    "timestamp": "2026-07-10T04:03:58.070Z",
+    "target_url": "https://www.instagram.com/evo/",
+    "evidence": "instagram_send_clicked_but_confirmation_missing",
+    "draft": "Hi evo team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a retail/category buyer, the strongest fit is assortment fit, new SKU pipeline, price-tier coverage, and proven consumer demand; your outdoor gear retailer and adventure retail group focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the category buyer or vendor-review owner for a short intro video meeting?",
+    "subject": ""
+  },
+  {
+    "task_id": "google-customer-mountain-warehouse-instagram",
+    "approval_version": 1,
+    "status": "failed_open",
+    "agent": "codex-chrome-extension",
+    "timestamp": "2026-07-10T04:05:03.262Z",
+    "target_url": "https://www.instagram.com/mountainwarehouse/",
+    "evidence": "instagram_message_button_clicked_composer_not_found",
+    "draft": "Hi Mountain Warehouse team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a retail/category buyer, the strongest fit is assortment fit, new SKU pipeline, price-tier coverage, and proven consumer demand; your outdoor clothing and equipment retail chain focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the category buyer or vendor-review owner for a short intro video meeting?",
+    "subject": ""
+  },
+  {
+    "task_id": "google-customer-snowys-outdoors-instagram",
+    "approval_version": 1,
+    "status": "failed_open",
+    "agent": "codex-chrome-extension",
+    "timestamp": "2026-07-10T04:06:07.012Z",
+    "target_url": "https://www.instagram.com/snowys_outdoors/",
+    "evidence": "instagram_message_button_clicked_composer_not_found",
+    "draft": "Hi Snowys Outdoors team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a retail/category buyer, the strongest fit is assortment fit, new SKU pipeline, price-tier coverage, and proven consumer demand; your camping and hiking ecommerce retailer focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the category buyer or vendor-review owner for a short intro video meeting?",
+    "subject": ""
+  },
+  {
+    "task_id": "google-customer-mountain-warehouse-facebook",
+    "approval_version": 1,
+    "status": "send_unconfirmed",
+    "agent": "codex-chrome-extension",
+    "timestamp": "2026-07-10T04:07:58.183Z",
+    "target_url": "https://www.facebook.com/MountainWarehouse/",
+    "evidence": "facebook_send_clicked_but_confirmation_missing",
+    "draft": "Hi Mountain Warehouse team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a retail/category buyer, the strongest fit is assortment fit, new SKU pipeline, price-tier coverage, and proven consumer demand; your outdoor clothing and equipment retail chain focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the category buyer or vendor-review owner for a short intro video meeting?",
+    "subject": ""
   }
 ];
