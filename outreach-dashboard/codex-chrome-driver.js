@@ -439,6 +439,13 @@ function identityCheckExpression(expectedCompany, targetUrl) {
         return '';
       }
     })();
+    const host = (() => {
+      try {
+        return new URL(targetUrl).hostname.toLowerCase();
+      } catch {
+        return '';
+      }
+    })();
     const title = String(document.title || '');
     const headers = Array.from(document.querySelectorAll('h1,h2,strong,a[aria-label],div[role="main"] span'))
       .slice(0, 80)
@@ -446,16 +453,32 @@ function identityCheckExpression(expectedCompany, targetUrl) {
       .filter(Boolean)
       .join(' | ');
     const visible = [title, headers, String(document.body && document.body.innerText || '').slice(0, 1200)].join('\\n');
+    const visibleLower = visible.toLowerCase();
     const visibleCompact = compact(visible);
+    const expectedTokens = expected.split(/\\s+/).filter(token => token.length >= 4);
+    const tokenHits = expectedTokens.filter(token => visibleCompact.includes(compact(token))).length;
+    const isSocial = /instagram\\.com|facebook\\.com/.test(host);
+    const businessSignal = /official|company|business|retail|outdoor|camping|hiking|wholesale|distributor|brand|vendor|merchandising|buyer|procurement|partnership|category|sales|about|website/.test(visibleLower);
+    const employeeSignal = /buyer|category manager|merchandising|procurement|purchasing|vendor|partnership|business development|sales manager|works at|employee/.test(visibleLower);
+    const emptyPersonalSignal = /0\\s*(posts?|帖子)[\\s\\S]{0,80}0\\s*(followers|粉丝)[\\s\\S]{0,80}0\\s*(following|关注)/i.test(visible);
     const companyOk = expectedCompact && visibleCompact.includes(expectedCompact);
     const pathOk = pathCompact && visibleCompact.includes(pathCompact);
-    const ok = !expectedCompact || companyOk || (pathCompact.length >= 5 && pathOk);
+    const staffOk = tokenHits >= 1 && employeeSignal;
+    const socialCompanyOk = companyOk || (tokenHits >= Math.min(2, expectedTokens.length) && businessSignal);
+    const ok = !expectedCompact || (isSocial
+      ? Boolean(socialCompanyOk || staffOk)
+      : Boolean(companyOk || (pathCompact.length >= 5 && pathOk)));
+    const personalMismatch = isSocial && !ok && emptyPersonalSignal;
     return JSON.stringify({
       ok,
       expectedCompany,
       title,
       url: location.href,
-      evidence: ok ? 'identity_match' : ('identity_mismatch_expected_' + expectedCompany + '_title_' + title).slice(0, 300)
+      evidence: ok
+        ? 'identity_match'
+        : (personalMismatch
+          ? ('personal_profile_without_company_match_expected_' + expectedCompany + '_title_' + title).slice(0, 300)
+          : ('identity_mismatch_expected_' + expectedCompany + '_title_' + title).slice(0, 300))
     });
   })()`;
 }
@@ -756,12 +779,13 @@ async function preparePlatformDraft(payload, platform) {
   const preActions = [];
   if (payload.autoEngage) {
     if (platform === 'instagram') {
+      preActions.push(await clickOptionalAction(tab, 'follow', platform));
       preActions.push(await submitInstagramPostEngagement(tab, payload.engagementComment || 'Great outdoor checklist. Useful reminder for hikers preparing a complete, lightweight kit.'));
     } else {
       preActions.push(await submitOptionalComment(tab, payload.engagementComment || 'Great outdoor checklist. Useful reminder for hikers preparing a complete, lightweight kit.'));
       preActions.push(await clickOptionalAction(tab, 'like', platform));
+      preActions.push(await clickOptionalAction(tab, 'follow', platform));
     }
-    preActions.push(await clickOptionalAction(tab, 'follow', platform));
   }
 
   const composer = await ensureComposerOpen(tab, port, platform);

@@ -19,6 +19,28 @@ const chromeDriverSource = fs.readFileSync(path.join(__dirname, '..', 'outreach-
 const dailyRunnerSource = fs.readFileSync(path.join(__dirname, '..', 'outreach-dashboard', 'daily-automation-runner.js'), 'utf8');
 const templateSource = fs.readFileSync(path.join(__dirname, '..', 'outreach-dashboard', 'api', 'templates.js'), 'utf8');
 
+test('daily queue prioritizes Instagram and Facebook over website contact', () => {
+  assert.ok(dailyRunner.channelPriorityScore({ platform: 'instagram' })
+    > dailyRunner.channelPriorityScore({ platform: 'facebook' }));
+  assert.ok(dailyRunner.channelPriorityScore({ platform: 'facebook' })
+    > dailyRunner.channelPriorityScore({ platform: 'email', reason: 'official_website_contact_channel' }));
+});
+
+test('unsubmitted website preparation does not create customer-development cooldown', () => {
+  const now = Date.parse('2026-07-09T04:00:00.000Z');
+  const websiteAttempt = {
+    task_id: 'google-customer-kathmandu-website-contact',
+    company: 'Kathmandu',
+    status: 'website_contact_ready',
+    timestamp: '2026-07-09T03:00:00.000Z',
+    target_url: 'https://www.kathmandu.co.nz/contact-us',
+    evidence: 'contact_entry_verified;website_contact_form_fields_prepared',
+  };
+  const index = dailyRunner.knownTouchIndex([websiteAttempt], [], now);
+  assert.equal(index.sameDayDeveloped.size, 0);
+  assert.equal(index.activeCooldown.size, 0);
+});
+
 test('GLM response parser accepts fenced JSON', () => {
   assert.deepEqual(parseJsonContent('```json\n{"fitScore":88,"verdict":"develop"}\n```'), {
     fitScore: 88,
@@ -123,6 +145,14 @@ test('Google discovery reroutes known broken Instagram links to alternate channe
   assert.equal(sailContact.alternateChannels.instagram, '');
 });
 
+test('Google discovery blocks known personal or mismatched Instagram handles', () => {
+  const leads = buildLeads(120);
+  assert.equal(leads.some(item => item.id === 'google-customer-summit-international-instagram'), false);
+  const summitFacebook = leads.find(item => item.id === 'google-customer-summit-international-facebook');
+  assert.ok(summitFacebook);
+  assert.equal(summitFacebook.invalidChannels.instagram.status, 'broken_profile_url');
+});
+
 test('Google discovery autonomously refills verified agency and key-account candidates above ICP 70', () => {
   const leads = buildLeads(120);
   const refillLeads = leads.filter(item => item.discoveryMode === 'autonomous_refill');
@@ -131,6 +161,85 @@ test('Google discovery autonomously refills verified agency and key-account cand
   assert.ok(refillLeads.every(item => Number(item.fitScore) > 70));
   assert.ok(refillLeads.every(item => /^https:\/\//.test(item.website || '')));
   assert.ok(refillLeads.every(item => /^https:\/\//.test(item.contactUrl || item.url || '')));
+});
+
+test('Google discovery gives autonomous refill customers social channels before website contact', () => {
+  const leads = buildLeads(120);
+  for (const company of ['Liberty Mountain', 'Sportsman\'s Warehouse', 'Camping World']) {
+    const companyLeads = leads.filter(item => item.company === company);
+    assert.ok(companyLeads.some(item => item.platform === 'instagram'));
+    assert.ok(companyLeads.some(item => item.platform === 'facebook'));
+    assert.ok(companyLeads.findIndex(item => item.platform === 'instagram')
+      < companyLeads.findIndex(item => item.platform === 'email'));
+    assert.ok(companyLeads.findIndex(item => item.platform === 'facebook')
+      < companyLeads.findIndex(item => item.platform === 'email'));
+  }
+  const summitLeads = leads.filter(item => item.company === 'Summit International');
+  assert.ok(summitLeads.some(item => item.platform === 'facebook'));
+  assert.ok(!summitLeads.some(item => item.platform === 'instagram'));
+});
+
+test('daily queue removes website contact when the same company has a social candidate', () => {
+  const filtered = dailyRunner.preferSocialChannels([
+    {
+      id: 'google-customer-sail-outdoors-facebook',
+      company: 'Sail Outdoors',
+      platform: 'facebook',
+      url: 'https://www.facebook.com/SAILoutdoors',
+    },
+    {
+      id: 'google-customer-sail-outdoors-website-contact',
+      company: 'Sail Outdoors',
+      platform: 'email',
+      url: 'https://www.sail.ca/en/contact-us',
+      reason: 'official_website_contact_channel',
+    },
+    {
+      id: 'google-customer-liberty-mountain-website-contact',
+      company: 'Liberty Mountain',
+      platform: 'email',
+      url: 'https://libertymountain.com/find-a-rep',
+      reason: 'official_website_contact_channel',
+    },
+  ]);
+  assert.ok(filtered.some(item => item.id === 'google-customer-sail-outdoors-facebook'));
+  assert.ok(!filtered.some(item => item.id === 'google-customer-sail-outdoors-website-contact'));
+  assert.ok(filtered.some(item => item.id === 'google-customer-liberty-mountain-website-contact'));
+});
+
+test('Google discovery marks active customers as partner accounts only', () => {
+  const leads = buildLeads(120);
+  for (const company of ['REI Co-op', 'Academy Sports + Outdoors', 'SCHEELS']) {
+    const customerLeads = leads.filter(item => item.company === company);
+    assert.ok(customerLeads.length > 0);
+    assert.ok(customerLeads.every(item => item.doNotOutreach));
+    assert.ok(customerLeads.every(item => item.action === 'partner_account'));
+    assert.ok(customerLeads.every(item => item.sendStatus === 'partner_account'));
+    assert.ok(customerLeads.every(item => item.partnershipStatus === 'active_partner'));
+  }
+});
+
+test('daily queue partner guard recognizes existing customer aliases', () => {
+  assert.equal(dailyRunner.isKnownPartnerCompany({
+    id: 'google-customer-academy-sports-outdoors-website-contact',
+    company: 'Academy Sports + Outdoors',
+    website: 'https://www.academy.com/',
+  }), true);
+  assert.equal(dailyRunner.isKnownPartnerCompany({
+    id: 'google-customer-acadamy-sports-outdoors-website-contact',
+    company: 'Acadamy Sports Outdoors',
+    website: 'https://www.academy.com/',
+  }), true);
+  assert.equal(dailyRunner.isKnownPartnerCompany({
+    id: 'google-customer-scheels-website-contact',
+    company: 'SCHEELS',
+    website: 'https://www.scheels.com/',
+  }), true);
+  assert.equal(dailyRunner.isKnownPartnerCompany({
+    id: 'google-customer-rei-website-contact',
+    company: 'REI',
+    website: 'https://www.rei.com/',
+  }), true);
 });
 
 test('Google discovery run reports autonomous refill coverage and strict ICP threshold', () => {
@@ -276,6 +385,9 @@ test('Codex Chrome execution can auto-send approved social outreach with confirm
   assert.ok(mainSource.includes('inspect-social-context'));
   assert.ok(mainSource.includes('optimizeDraftWithContext'));
   assert.ok(mainSource.includes('contextAwareFallbackDraft'));
+  assert.ok(mainSource.includes('local-professional-template-fallback'));
+  assert.ok(mainSource.includes('local_template_fallback_after_glm_error'));
+  assert.ok(mainSource.includes('professionalSalesDraft(lead || {},'));
   assert.ok(mainSource.includes('Email or WhatsApp works well'));
   assert.ok(mainSource.includes('Flextail and Vollyc'));
   assert.ok(mainSource.includes('36+ new SKUs are planned for 2026'));
@@ -288,6 +400,7 @@ test('Codex Chrome execution can auto-send approved social outreach with confirm
   assert.ok(chromeDriverSource.includes("closest('nav,[role=\"navigation\"]')"));
   assert.ok(chromeDriverSource.includes('closeBlockingOverlayExpression'));
   assert.ok(chromeDriverSource.includes('submitInstagramPostEngagement'));
+  assert.match(chromeDriverSource, /platform === 'instagram'[\s\S]*clickOptionalAction\(tab, 'follow', platform\)[\s\S]*submitInstagramPostEngagement\(tab/);
   assert.ok(chromeDriverSource.includes('instagramPostTileExpression'));
   assert.ok(chromeDriverSource.includes('instagramCommentActionExpression'));
   assert.ok(chromeDriverSource.includes('instagram_post_opened'));
@@ -298,6 +411,9 @@ test('Codex Chrome execution can auto-send approved social outreach with confirm
   assert.ok(chromeDriverSource.includes('followers|following|mutualonly'));
   assert.ok(chromeDriverSource.includes('conversationContextExpression'));
   assert.ok(chromeDriverSource.includes('unavailableProfileExpression'));
+  assert.ok(chromeDriverSource.includes('personal_profile_without_company_match'));
+  assert.ok(chromeDriverSource.includes('employeeSignal'));
+  assert.ok(chromeDriverSource.includes('businessSignal'));
   assert.ok(chromeDriverSource.includes("sendStatus: 'failed_open'"));
   assert.ok(chromeDriverSource.includes('switch to a verified alternate channel'));
   assert.ok(chromeDriverSource.includes("command === 'inspect-social-context'"));
@@ -326,6 +442,7 @@ test('daily execution duplicate blocking is channel-aware', () => {
   assert.ok(mainSource.includes('sameDayAutomationCompanyKeys'));
   assert.ok(mainSource.includes('same_day_customer_already_developed'));
   assert.ok(mainSource.includes('const selectedCompanyKeys = new Set(sameDayCompanyKeys)'));
+  assert.ok(mainSource.includes('itemBlockedBySameDayCompany(item, sameDayCompanyKeys)'));
   assert.ok(mainSource.includes('function failedOpenResultShouldBlockRetry'));
   assert.ok(mainSource.includes('message_button_clicked_composer_not_found'));
   assert.ok(mainSource.includes("result.status !== 'failed_open' || failedOpenResultShouldBlockRetry(result)"));
@@ -389,16 +506,16 @@ test('discovery cooldown expires ordinary touches but preserves confirmed DM pro
   const now = Date.parse('2026-07-09T00:00:00.000Z');
   const history = dailyRunner.knownTouchIndex([
     {
-      task_id: 'google-customer-bass-pro-shops-website-contact',
-      status: 'approval_pending',
+      task_id: 'google-customer-bass-pro-shops-facebook',
+      status: 'post_liked',
       timestamp: '2026-07-01T06:28:33.983Z',
-      target_url: 'https://www.basspro.com/contact',
+      target_url: 'https://www.facebook.com/bassproshops',
     },
     {
-      task_id: 'google-customer-mec-website-contact',
-      status: 'approval_pending',
+      task_id: 'google-customer-mec-instagram',
+      status: 'account_followed',
       timestamp: '2026-07-05T01:05:27.767Z',
-      target_url: 'https://www.mec.ca/contact',
+      target_url: 'https://www.instagram.com/mec',
     },
     {
       task_id: 'google-customer-bever-facebook',

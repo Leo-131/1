@@ -6,6 +6,24 @@ const OUT_JSON = path.join(ROOT, 'google-lead-discovery-latest.json');
 const OUT_JS = path.join(ROOT, 'google-lead-discovery-latest.js');
 const OUT_CSV = path.join(ROOT, 'google-lead-discovery-latest.csv');
 const QUALIFIED_ICP_THRESHOLD = 70;
+const ACTIVE_CUSTOMER_ALIASES = new Set([
+  'rei',
+  'rei co op',
+  'rei coop',
+  'academy sports outdoors',
+  'acadamy sports outdoors',
+  'academy',
+  'acadamy',
+  'scheels',
+]);
+
+function activeCustomerKey(value) {
+  return String(value || '').trim().toLowerCase().replace(/&/g, 'and').replace(/\+/g, ' ').replace(/[^a-z0-9]+/g, ' ').trim();
+}
+
+function isActiveCustomer(company) {
+  return ACTIVE_CUSTOMER_ALIASES.has(activeCustomerKey(company));
+}
 
 const CANDIDATES = [
   {
@@ -170,6 +188,8 @@ const CANDIDATES = [
     company: 'Liberty Mountain',
     country: 'United States',
     url: 'https://libertymountain.com/',
+    instagramUrl: 'https://www.instagram.com/libertymountain/',
+    facebookUrl: 'https://www.facebook.com/LibertyMountain',
     contactUrl: 'https://libertymountain.com/find-a-rep',
     segment: 'technical outdoor wholesale distributor',
     customerType: 'agency',
@@ -182,6 +202,8 @@ const CANDIDATES = [
     company: 'Summit International',
     country: 'United Kingdom',
     url: 'https://www.summitint.co/',
+    instagramUrl: 'https://www.instagram.com/summitint/',
+    facebookUrl: 'https://www.facebook.com/summitint',
     contactUrl: 'https://www.summitint.co/contact-us',
     segment: 'outdoor importer and distributor',
     customerType: 'agency',
@@ -206,6 +228,8 @@ const CANDIDATES = [
     company: 'Sportsman\'s Warehouse',
     country: 'United States',
     url: 'https://www.sportsmans.com/',
+    instagramUrl: 'https://www.instagram.com/sportsmanswarehouse/',
+    facebookUrl: 'https://www.facebook.com/SportsmansWarehouse',
     contactUrl: 'https://www.sportsmans.com/contact-us',
     segment: 'outdoor specialty retail chain',
     customerType: 'key_account',
@@ -230,6 +254,8 @@ const CANDIDATES = [
     company: 'Camping World',
     country: 'United States',
     url: 'https://www.campingworld.com/',
+    instagramUrl: 'https://www.instagram.com/campingworld/',
+    facebookUrl: 'https://www.facebook.com/campingworld',
     contactUrl: 'https://www.campingworld.com/contact-us.html',
     segment: 'RV and camping retail chain',
     customerType: 'key_account',
@@ -242,6 +268,7 @@ const CANDIDATES = [
 
 const KNOWN_BROKEN_SOCIAL_URLS = new Set([
   'https://www.instagram.com/sailoutdoors/',
+  'https://www.instagram.com/summitint/',
 ]);
 
 const VERIFIED_ENRICHMENT = {
@@ -546,7 +573,7 @@ ${marketingEmailSignature()}
 
 function baseLead(item, id, evidenceUrl) {
   const enrichment = VERIFIED_ENRICHMENT[item.company] || {};
-  const partnerAccount = Boolean(item.doNotOutreach || item.partnershipStatus === 'active_partner');
+  const partnerAccount = Boolean(item.doNotOutreach || item.partnershipStatus === 'active_partner' || isActiveCustomer(item.company));
   return {
     ...enrichment,
     id,
@@ -582,11 +609,11 @@ function baseLead(item, id, evidenceUrl) {
     query: evidenceUrl,
     source: 'google_customer_discovery',
     identityStatus: 'verified',
-    partnershipStatus: item.partnershipStatus || '',
-    doNotOutreach: Boolean(item.doNotOutreach),
-    automationStatus: item.doNotOutreach ? 'partner_account' : '',
-    partnerNote: item.doNotOutreach ? 'Active cooperation account; keep profile only and do not create new outreach tasks.' : '',
-    sendStatus: item.doNotOutreach ? 'partner_account' : '',
+    partnershipStatus: partnerAccount ? 'active_partner' : (item.partnershipStatus || ''),
+    doNotOutreach: partnerAccount,
+    automationStatus: partnerAccount ? 'partner_account' : '',
+    partnerNote: partnerAccount ? 'Active customer/cooperation account; keep profile only and do not create new outreach tasks.' : '',
+    sendStatus: partnerAccount ? 'partner_account' : '',
     workingTime: {
       dueNow: true,
       timeZone: 'local-market',
@@ -599,6 +626,7 @@ function baseLead(item, id, evidenceUrl) {
 function channelLeads(item) {
   const evidenceUrl = googleUrl(item.company, item.segment, item.country);
   const baseId = `google-customer-${slug(item.company)}`;
+  const partnerAccount = Boolean(item.doNotOutreach || item.partnershipStatus === 'active_partner' || isActiveCustomer(item.company));
   const invalidChannels = {};
   if (item.instagramUrl && KNOWN_BROKEN_SOCIAL_URLS.has(item.instagramUrl.toLowerCase())) {
     invalidChannels.instagram = {
@@ -619,8 +647,8 @@ function channelLeads(item) {
       platform: 'instagram',
       platformUrl: item.instagramUrl,
       url: item.instagramUrl,
-      action: item.doNotOutreach ? 'partner_account' : 'develop',
-      reason: item.doNotOutreach ? 'active_partner_no_new_outreach' : 'concrete_google_discovered_major_customer_instagram',
+      action: partnerAccount ? 'partner_account' : 'develop',
+      reason: partnerAccount ? 'active_partner_no_new_outreach' : 'concrete_google_discovered_major_customer_instagram',
       alternateChannels: socialSiblings,
       identitySource: 'official website/social profile + Google background query',
       channelPriority: 1,
@@ -632,8 +660,8 @@ function channelLeads(item) {
       platform: 'facebook',
       platformUrl: item.facebookUrl,
       url: item.facebookUrl,
-      action: item.doNotOutreach ? 'partner_account' : 'develop',
-      reason: item.doNotOutreach ? 'active_partner_no_new_outreach' : 'concrete_google_discovered_major_customer_facebook',
+      action: partnerAccount ? 'partner_account' : 'develop',
+      reason: partnerAccount ? 'active_partner_no_new_outreach' : 'concrete_google_discovered_major_customer_facebook',
       alternateChannels: socialSiblings,
       invalidChannels,
       facebookStatus: 'verified_official_page_candidate',
@@ -652,13 +680,13 @@ function channelLeads(item) {
     websiteContactSubject: websiteContactSubject(item),
     websiteContactMessage: websiteContactMessage(item),
     websiteContactFlow: 'open_official_contact_us_fill_attach_auto_submit',
-    action: item.doNotOutreach ? 'partner_account' : 'email_priority',
-    partnershipStatus: item.partnershipStatus || '',
-    doNotOutreach: Boolean(item.doNotOutreach),
-    automationStatus: item.doNotOutreach ? 'partner_account' : '',
-    partnerNote: item.doNotOutreach ? 'Active cooperation account; keep profile only and do not create new outreach tasks.' : '',
-    sendStatus: item.doNotOutreach ? 'partner_account' : '',
-    reason: item.doNotOutreach ? 'active_partner_no_new_outreach' : 'official_website_contact_channel',
+    action: partnerAccount ? 'partner_account' : 'email_priority',
+    partnershipStatus: partnerAccount ? 'active_partner' : (item.partnershipStatus || ''),
+    doNotOutreach: partnerAccount,
+    automationStatus: partnerAccount ? 'partner_account' : '',
+    partnerNote: partnerAccount ? 'Active customer/cooperation account; keep profile only and do not create new outreach tasks.' : '',
+    sendStatus: partnerAccount ? 'partner_account' : '',
+    reason: partnerAccount ? 'active_partner_no_new_outreach' : 'official_website_contact_channel',
     alternateChannels: socialSiblings,
     invalidChannels,
     identitySource: 'official website contact path + Google buyer/contact query',
@@ -676,7 +704,7 @@ function buildLeads(limit = 40) {
 
 function buildDiscoveryRun(limit = 40) {
   const leads = buildLeads(limit);
-  const refillCompanies = CANDIDATES.filter(item => item.refillSeed && Number(item.fitScore || 0) > QUALIFIED_ICP_THRESHOLD);
+  const refillCompanies = CANDIDATES.filter(item => item.refillSeed && !isActiveCustomer(item.company) && Number(item.fitScore || 0) > QUALIFIED_ICP_THRESHOLD);
   return {
     generatedAt: new Date().toISOString(),
     mode: 'google-concrete-customer-discovery',
