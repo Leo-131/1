@@ -14,6 +14,7 @@
     ['workspace', '开发工作台'],
     ['queue', '今日队列'],
     ['customers', '客户附表'],
+    ['analysis', '客户分析'],
     ['seo', 'SEO 趋势'],
     ['experiments', '模板实验'],
     ['audit', '自动化审计'],
@@ -1212,6 +1213,93 @@
       <div class="cc-view-tabs">${tabs.map(([key, label, count]) => `<a class="${mode === key ? 'active' : ''}" href="${urlFor('queue', { queue: key })}">${label} <b>${count}</b></a>`).join('')}</div>
       <div class="cc-table-wrap">${taskTable(list)}</div>`;
   }
+  function customerProfileType(record) {
+    const text = [record.customerType, record.category, record.keyword, record.keyword_used, record.role, record.company, record.industry].join(' ').toLowerCase();
+    if (/agency|agent|distributor|wholesale|importer|exclusive/.test(text)) return '渠道/代理';
+    if (/rv|camping world|airstream|winnebago/.test(text)) return '房车/露营';
+    if (/retail|buyer|category|merchant|merchandising|sporting goods|chain|store|co-op|coop/.test(text)) return 'KA/零售';
+    if (/brand|oem|odm|manufacturer|product development/.test(text)) return '品牌/OEM';
+    if (/marketing|community|designer|student|foundation|government|school/.test(text)) return '低匹配/非采购';
+    return '待判定';
+  }
+  function companyScaleTier(record) {
+    const text = [record.companyScale, record.background, record.role, record.company].join(' ').toLowerCase();
+    if (/10,?001\+|10000\+|national|hundreds of stores|large|global|fortune|major/.test(text)) return '超大型';
+    if (/1,?001|5000|thousands|store network|chain|co-op/.test(text)) return '大型';
+    if (/201|500|regional|distributor|importer|wholesale/.test(text)) return '中型';
+    if (/founder|owner|independent|boutique|startup/.test(text)) return '小型/独立';
+    return '未知体量';
+  }
+  function distribution(records, getter) {
+    const total = Math.max(records.length, 1);
+    const buckets = new Map();
+    records.forEach(record => {
+      const label = String(getter(record) || 'Unknown').trim() || 'Unknown';
+      const current = buckets.get(label) || { label, count: 0, highIcp: 0, contactable: 0, touched: 0, scoreTotal: 0 };
+      current.count += 1;
+      current.highIcp += isIcpQualified(record) ? 1 : 0;
+      current.contactable += record.contact || record.email || record.targetUrl || record.website ? 1 : 0;
+      current.touched += recordTouched(record) ? 1 : 0;
+      current.scoreTotal += dealProbabilityScore(record);
+      buckets.set(label, current);
+    });
+    return Array.from(buckets.values()).map(item => ({
+      ...item,
+      percent: Math.round((item.count / total) * 100),
+      avgScore: Math.round(item.scoreTotal / Math.max(item.count, 1)),
+    })).sort((left, right) => right.count - left.count || right.avgScore - left.avgScore || left.label.localeCompare(right.label));
+  }
+  function analysisBarRows(items, linkFactory) {
+    const max = Math.max(...items.map(item => item.count), 1);
+    return items.slice(0, 10).map(item => {
+      const width = Math.max(4, Math.round((item.count / max) * 100));
+      const label = linkFactory ? `<a href="${esc(linkFactory(item))}">${esc(item.label)}</a>` : esc(item.label);
+      return `<div class="cc-analysis-bar"><div><b>${label}</b><span>${item.count} 条 · ${item.percent}% · 均分 ${item.avgScore}</span></div><div class="cc-bar"><i style="width:${width}%"></i></div><em>${item.highIcp} 高 ICP</em></div>`;
+    }).join('');
+  }
+  function customerAnalysis() {
+    const records = customerRecords();
+    const mode = query.get('analysis') || 'overview';
+    const highIcp = records.filter(isIcpQualified);
+    const contactable = records.filter(record => record.contact || record.email || record.targetUrl || record.website);
+    const social = records.filter(record => /instagram|facebook|ins|fb/i.test(String(record.platform || record.source || record.targetUrl || '')));
+    const countries = distribution(records, record => record.country || record.countryEn || '未知国家');
+    const platforms = distribution(records, record => record.platform || record.source || '未知平台');
+    const profiles = distribution(records, customerProfileType);
+    const scales = distribution(records, companyScaleTier);
+    const statuses = distribution(records, record => record.status || record.sendStatus || 'Pending');
+    const tabs = [['overview', '总览'], ['country', '国家'], ['profile', '画像'], ['scale', '体量'], ['channel', '渠道']];
+    const topCustomers = records.slice().sort((left, right) => dealProbabilityScore(right) - dealProbabilityScore(left)).slice(0, 14);
+    const segment = mode === 'country' ? countries : mode === 'profile' ? profiles : mode === 'scale' ? scales : mode === 'channel' ? platforms : statuses;
+    const segmentTitle = { overview: '客户状态结构', country: '国家 / 区域分布', profile: '客户画像分层', scale: '客户体量拆解', channel: '触达渠道结构' }[mode] || '客户结构';
+    const segmentLink = mode === 'country'
+      ? item => urlFor('customers', { country: item.label })
+      : mode === 'channel'
+        ? item => urlFor('customers', { platform: item.label })
+        : mode === 'overview'
+          ? item => urlFor('customers', { status: item.label })
+          : null;
+    return `${pageHead('客户分析', `专业客户结构拆解 · ${records.length} 条客户 · ${highIcp.length} 条高 ICP`)}
+      <div class="cc-view-tabs">${tabs.map(([key, label]) => `<a class="${mode === key ? 'active' : ''}" href="${urlFor('analysis', { analysis: key })}">${label}</a>`).join('')}</div>
+      <div class="cc-kpis cc-analysis-kpis">
+        <a class="cc-kpi cc-kpi-link" href="${urlFor('customers')}"><span>客户总量</span><b>${records.length}</b></a>
+        <a class="cc-kpi cc-kpi-link" href="${urlFor('customers', { sort: 'dealProbabilityScore' })}"><span>高 ICP</span><b>${highIcp.length}</b></a>
+        <a class="cc-kpi cc-kpi-link" href="${urlFor('customers', { touch: 'contact' })}"><span>可联系客户</span><b>${contactable.length}</b></a>
+        <a class="cc-kpi cc-kpi-link" href="${urlFor('analysis', { analysis: 'channel' })}"><span>社媒客户</span><b>${social.length}</b></a>
+      </div>
+      <section class="cc-panel"><div class="cc-panel-head"><h2>${segmentTitle}</h2><span class="cc-sub">占比、均分、高 ICP 数量按当前客户池实时计算</span></div><div class="cc-panel-body cc-analysis-bars">${analysisBarRows(segment, segmentLink)}</div></section>
+      <div class="cc-analysis-grid">
+        <section class="cc-panel"><div class="cc-panel-head"><h2>客户画像</h2><a href="${urlFor('analysis', { analysis: 'profile' })}">展开</a></div><div class="cc-panel-body cc-analysis-bars">${analysisBarRows(profiles)}</div></section>
+        <section class="cc-panel"><div class="cc-panel-head"><h2>国家占比</h2><a href="${urlFor('analysis', { analysis: 'country' })}">展开</a></div><div class="cc-panel-body cc-analysis-bars">${analysisBarRows(countries, item => urlFor('customers', { country: item.label }))}</div></section>
+        <section class="cc-panel"><div class="cc-panel-head"><h2>客户体量</h2><a href="${urlFor('analysis', { analysis: 'scale' })}">展开</a></div><div class="cc-panel-body cc-analysis-bars">${analysisBarRows(scales)}</div></section>
+        <section class="cc-panel"><div class="cc-panel-head"><h2>平台渠道</h2><a href="${urlFor('analysis', { analysis: 'channel' })}">展开</a></div><div class="cc-panel-body cc-analysis-bars">${analysisBarRows(platforms, item => urlFor('customers', { platform: item.label }))}</div></section>
+      </div>
+      <section class="cc-panel"><div class="cc-panel-head"><h2>高价值客户拆解</h2><span class="cc-sub">按成交概率、ICP、国家优先级与联系方式综合排序</span></div><div class="cc-table-wrap"><table class="cc-table"><thead><tr><th>客户</th><th>画像</th><th>国家</th><th>体量</th><th>平台</th><th>状态</th><th>综合分</th><th>可联系性</th></tr></thead><tbody>${topCustomers.map((record, index) => {
+        const key = recordKey(record, index);
+        const contact = record.contact || record.email || record.targetUrl || record.website || '';
+        return `<tr><td><a href="${urlFor('customer', { contact: key })}">${esc(record.company || record.name)}</a><br><span class="cc-sub">${esc(record.role || record.keyword || '')}</span></td><td>${esc(customerProfileType(record))}</td><td>${esc(record.country || record.countryEn || '')}</td><td>${esc(companyScaleTier(record))}</td><td>${esc(record.platform || record.source || '')}</td><td><span class="cc-chip">${esc(record.status || '')}</span></td><td><b>${dealProbabilityScore(record)}</b></td><td>${contact ? '<span class="cc-chip green">可触达</span>' : '<span class="cc-chip amber">待补全</span>'}</td></tr>`;
+      }).join('')}</tbody></table></div></section>`;
+  }
   function customers() {
     const search = String(query.get('search') || '').trim().toLowerCase();
     const platform = query.get('platform') || '';
@@ -1884,7 +1972,7 @@
   window.openVerifiedCustomer = openVerifiedCustomer;
   window.runGlmDirect = runGlmDirect;
   window.runGlmQueue = runGlmQueue;
-  const renderers = { workspace, queue, customers, seo, experiments, reports, audit, settings, customer };
+  const renderers = { workspace, queue, customers, analysis: customerAnalysis, seo, experiments, reports, audit, settings, customer };
   try {
     document.body.classList.add('command-center-active');
     const shell = document.createElement('div');
