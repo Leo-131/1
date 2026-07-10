@@ -1136,5 +1136,17 @@ window.AUTONOMOUS_OUTREACH_RESULTS = [
     "evidence": "facebook_draft_not_inserted_after_composer_refocus",
     "draft": "Hi Snowys Outdoors team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a retail/category buyer, the strongest fit is assortment fit, new SKU pipeline, price-tier coverage, and proven consumer demand; your camping and hiking ecommerce retailer focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the category buyer or vendor-review owner for a short intro video meeting?",
     "subject": ""
+  },
+  {
+    "task_id": "google-customer-sail-outdoors-website-contact",
+    "company": "Sail Outdoors",
+    "approval_version": 1,
+    "status": "sent_confirmed",
+    "agent": "manual-user-confirmed",
+    "timestamp": "2026-07-10T10:20:00.000Z",
+    "target_url": "https://www.sail.ca/en/contact-us",
+    "evidence": "user_confirmed_official_website_email_sent;contact_entry_verified;mailto_detected;no_duplicate_outreach",
+    "draft": "",
+    "subject": ""
   }
 ];
