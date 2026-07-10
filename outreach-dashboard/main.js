@@ -2014,6 +2014,8 @@ async function runWebsiteContactLead(lead = {}) {
   if (!attachment.ok) {
     const output = {
       verdict: 'approval_pending',
+      status: 'approval_pending',
+      reason: attachment.evidence || 'marketing_attachment_missing',
       evidence: `website_contact_preflight_blocked;${attachment.evidence};website_contact_targets:${targets.length}`,
       nextAction: 'Configure WEBSITE_MARKETING_FILE or MARKETING_ATTACHMENT_PATH with the approved marketing file, then rerun. Browser execution was skipped before touching the contact page.',
       subject,
@@ -2027,6 +2029,8 @@ async function runWebsiteContactLead(lead = {}) {
       mode: 'website_contact_preflight_marketing_file',
       targetUrl: targets[0] && targets[0].targetUrl,
       sendStatus: 'approval_pending',
+      status: 'approval_pending',
+      reason: attachment.evidence || 'marketing_attachment_missing',
       subject,
       draft,
       evidence: output.evidence,
