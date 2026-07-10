@@ -157,6 +157,22 @@
     return funnel;
   }
 
+  function buildConversionRates(funnel) {
+    const source = funnel || {};
+    return {
+      profileRate: safeRate(source.profiled, source.discovered),
+      approvalRate: safeRate(source.approved, source.profiled),
+      sendRate: safeRate(source.sent, source.approved),
+      discoveryToSendRate: safeRate(source.sent, source.discovered),
+      discoveryToReplyRate: safeRate(source.replied, source.discovered),
+      replyRate: safeRate(source.replied, source.sent),
+      contactCaptureRate: safeRate(source.contactCaptured, source.sent),
+      opportunityRate: safeRate(source.opportunity, source.sent),
+      replyToContactRate: safeRate(source.contactCaptured, source.replied),
+      replyToOpportunityRate: safeRate(source.opportunity, source.replied),
+    };
+  }
+
   function buildKeywordMetrics(records) {
     const groups = groupRecords(
       records,
@@ -169,14 +185,7 @@
         keyword,
         sampleSize: group.length,
         funnel,
-        rates: {
-          profileRate: safeRate(funnel.profiled, funnel.discovered),
-          approvalRate: safeRate(funnel.approved, funnel.profiled),
-          sendRate: safeRate(funnel.sent, funnel.approved),
-          replyRate: safeRate(funnel.replied, funnel.sent),
-          contactCaptureRate: safeRate(funnel.contactCaptured, funnel.sent),
-          opportunityRate: safeRate(funnel.opportunity, funnel.sent),
-        },
+        rates: buildConversionRates(funnel),
       };
     });
   }
@@ -291,6 +300,40 @@
         opportunityRate: safeRate(opportunities, confirmed.length),
       };
     });
+  }
+
+  function buildReplyConversionInsights(breakdowns) {
+    const source = breakdowns && typeof breakdowns === 'object' ? breakdowns : {};
+    const dimensions = ['platform', 'countryMarket', 'keyword', 'template', 'icpTier'];
+    const items = [];
+    for (const dimension of dimensions) {
+      for (const item of source[dimension] || []) {
+        const sent = Number(item.metrics && item.metrics.sent || 0);
+        if (!sent) continue;
+        items.push({
+          dimension,
+          label: item.label,
+          sent,
+          replied: Number(item.metrics.replied || 0),
+          contactCaptured: Number(item.metrics.contactCaptured || 0),
+          opportunity: Number(item.metrics.opportunity || 0),
+          rates: item.rates,
+          confidence: sent >= 10 ? 'strong' : sent >= 3 ? 'directional' : 'low_sample',
+        });
+      }
+    }
+    const ranked = items.slice().sort((left, right) =>
+      Number(right.rates.replyRate || 0) - Number(left.rates.replyRate || 0)
+      || right.replied - left.replied
+      || right.sent - left.sent
+      || left.label.localeCompare(right.label));
+    const underperforming = items
+      .filter(item => item.sent >= 3 && Number(item.rates.replyRate || 0) < 0.05)
+      .sort((left, right) => right.sent - left.sent || left.label.localeCompare(right.label));
+    return {
+      topReplySegments: ranked.slice(0, 8),
+      underperformingSegments: underperforming.slice(0, 8),
+    };
   }
 
   function pad(value) {
@@ -439,11 +482,7 @@
       return Array.from(groups, ([label, groupMetrics]) => ({
         label,
         metrics: groupMetrics,
-        rates: {
-          replyRate: safeRate(groupMetrics.replied, groupMetrics.sent),
-          contactCaptureRate: safeRate(groupMetrics.contactCaptured, groupMetrics.sent),
-          opportunityRate: safeRate(groupMetrics.opportunity, groupMetrics.sent),
-        },
+        rates: buildConversionRates(groupMetrics),
       })).filter(item => Object.values(item.metrics).some(Boolean))
         .sort((left, right) => right.metrics.sent - left.metrics.sent
           || right.metrics.replied - left.metrics.replied
@@ -451,21 +490,20 @@
           || left.label.localeCompare(right.label));
     }
 
+    const rates = buildConversionRates(metrics);
+    const breakdowns = {
+      platform: breakdown(record => record.platform),
+      countryMarket: breakdown(record => record.country || record.market),
+      keyword: breakdown(record => record.keyword),
+      template: breakdown(record => record.templateId),
+      icpTier: breakdown(record => record.icpTier || record.tier),
+    };
     return {
       period,
       metrics,
-      rates: {
-        replyRate: safeRate(metrics.replied, metrics.sent),
-        contactCaptureRate: safeRate(metrics.contactCaptured, metrics.sent),
-        opportunityRate: safeRate(metrics.opportunity, metrics.sent),
-      },
-      breakdowns: {
-        platform: breakdown(record => record.platform),
-        countryMarket: breakdown(record => record.country || record.market),
-        keyword: breakdown(record => record.keyword),
-        template: breakdown(record => record.templateId),
-        icpTier: breakdown(record => record.icpTier || record.tier),
-      },
+      rates,
+      conversion: buildReplyConversionInsights(breakdowns),
+      breakdowns,
       dataQuality,
       hasData: Object.values(metrics).some(Boolean),
     };
@@ -476,6 +514,7 @@
     buildKeywordMetrics,
     buildKeywordOpportunities,
     buildTemplateMetrics,
+    buildConversionRates,
     getNaturalPeriod,
     buildPeriodReport,
   };

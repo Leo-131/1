@@ -1172,6 +1172,7 @@ function buildContextOptimizationMessages(lead, baseDraft, context) {
         'Return JSON only with keys: draft, reason.',
         'Reference: Leo represents Flextail and Vollyc. Flextail is the core ultralight outdoor/travel electrics brand and currently Top 1 on Amazon; Vollyc covers practical high-rotation 3C electronics; 36+ new SKUs are planned for 2026.',
         'Optimize for the highest chance of a real reply and a booked phone/video meeting. Tailor the angle to the exact customer persona, role, category, region, and latest visible cue.',
+        'Reply-rate strategy: lead with one buyer-relevant reason, ask exactly one easy question, prefer buyer/contact routing over a broad pitch, and avoid long company introductions unless the customer asked for background.',
         'Rules: do not restart the conversation if prior chat exists; answer the latest customer cue; if they asked for email/WhatsApp/PDF/catalog, ask for or confirm the best email/WhatsApp and say you will send the FLEXTAIL/Vollyc brand intro, line sheet and specs there; otherwise ask one low-friction next step toward the right buyer contact or a short video meeting; keep 25-70 English words; no hype, no false claims, no emojis.',
       ].join(' '),
     },

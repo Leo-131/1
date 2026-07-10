@@ -142,9 +142,13 @@ test('keyword metrics include sample sizes, funnel counts, and rates', () => {
       profileRate: 1,
       approvalRate: 1,
       sendRate: 0.5,
+      discoveryToSendRate: 0.5,
+      discoveryToReplyRate: 0.5,
       replyRate: 1,
       contactCaptureRate: 1,
       opportunityRate: 1,
+      replyToContactRate: 1,
+      replyToOpportunityRate: 1,
     },
   }]);
 });
@@ -300,12 +304,20 @@ test('period reports count events by their timestamps and only confirmed sends c
     autoSkipped: 1,
   });
   assert.deepEqual(report.rates, {
+    profileRate: 0.5,
+    approvalRate: 1,
+    sendRate: 1,
+    discoveryToSendRate: 0.5,
+    discoveryToReplyRate: 0.5,
     replyRate: 1,
     contactCaptureRate: 1,
     opportunityRate: 1,
+    replyToContactRate: 1,
+    replyToOpportunityRate: 1,
   });
   assert.equal(report.breakdowns.platform[0].label, 'facebook');
   assert.equal(report.breakdowns.platform[0].metrics.sent, 1);
+  assert.equal(report.conversion.topReplySegments[0].label, 'buyer-v1');
   assert.equal(report.hasData, true);
 });
 

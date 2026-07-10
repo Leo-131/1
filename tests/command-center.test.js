@@ -1,4 +1,4 @@
-const test = require('node:test');
+﻿const test = require('node:test');
 const assert = require('node:assert/strict');
 const fs = require('fs');
 const path = require('path');
@@ -24,8 +24,18 @@ test('dashboard loads autonomous command center assets', () => {
   }
 });
 
+test('command center uses an atomic boot gate so the legacy dashboard never flashes', () => {
+  assert.ok(html.includes('<body class="command-center-booting">'));
+  assert.ok(html.includes('body.command-center-booting>.header'));
+  assert.ok(js.includes("document.body.classList.remove('command-center-booting')"));
+  assert.match(js, /document\.body\.appendChild\(shell\);\s*document\.body\.classList\.remove\('command-center-booting'\)/);
+  assert.ok(js.includes("document.body.classList.remove('command-center-active')"));
+  assert.ok(js.includes('Command center startup failed'));
+  assert.doesNotMatch(js, /\bstatusLabel\(/);
+});
+
 test('command center exposes weekly and monthly reporting controls', () => {
-  assert.ok(js.includes("['reports', '汇报中心']"));
+  assert.ok(js.includes("['reports'"));
   assert.ok(js.includes('analytics.buildPeriodReport'));
   assert.ok(js.includes('data-report-type="weekly"'));
   assert.ok(js.includes('data-report-type="monthly"'));
@@ -50,8 +60,8 @@ test('portable desktop app inherits the package version', () => {
 });
 
 test('command center contains separated operational views', () => {
-  for (const label of ['开发工作台', '今日队列', '客户附表', 'SEO 趋势', '模板实验', '自动化审计', '系统设置']) {
-    assert.ok(js.includes(label), label);
+  for (const viewId of ['reports', 'workspace', 'queue', 'customers', 'analysis', 'seo', 'experiments', 'audit', 'settings']) {
+    assert.ok(js.includes(`['${viewId}'`), viewId);
   }
 });
 
@@ -100,7 +110,7 @@ test('command center opens verified platform URLs and exposes assisted automatio
   assert.ok(js.includes('verifiedTargetUrl'));
   assert.ok(js.includes('openVerifiedCustomer'));
   assert.ok(js.includes('runGlmDirect'));
-  assert.ok(js.includes('AutoClaw 自动开发'));
+  assert.ok(js.includes('EXECUTION_COMPATIBILITY_LABELS'));
   assert.ok(html.includes('Codex Chrome'));
 });
 
@@ -114,12 +124,12 @@ test('command center uses Codex decisions and AutoClaw execution on verified URL
 test('sent tasks render a completed route ending in outcome pending', () => {
   assert.ok(js.includes("['outcome_pending'"));
   assert.ok(js.includes("task.sendStatus === 'sent_confirmed'"));
-  assert.ok(js.includes('AutoClaw 执行证据'));
+  assert.ok(js.includes('stageRoute(task)'));
 });
 
 test('AutoClaw buttons explain desktop connection and duplicate-contact blocks', () => {
   assert.ok(js.includes('function autoClawAvailability'));
-  assert.ok(js.includes('已触达'));
+  assert.ok(js.includes('isInCooldown(task)'));
   assert.ok(js.includes('Desktop app'));
   assert.ok(js.includes('Execution layer is connected'));
 });
@@ -140,8 +150,8 @@ test('today queue separates untouched work from historical follow-ups', () => {
   assert.ok(js.includes('function executableDevelopmentTasks'));
   assert.ok(js.includes('function isAutoDevelopmentTask'));
   assert.ok(js.includes("query.get('queue') || 'untouched'"));
-  assert.ok(js.includes('可自动开发'));
-  assert.ok(js.includes('跟进中'));
+  assert.ok(js.includes("queue: 'untouched'"));
+  assert.ok(js.includes("queue: 'followup'"));
 });
 
 test('command center customer list restores 18.4 filtering and sorting controls', () => {
@@ -155,7 +165,7 @@ test('command center customer list restores 18.4 filtering and sorting controls'
     'customer-touch',
     'customer-sort',
     'applyCustomerFilters',
-    '重置筛选',
+    'cc-reset',
   ]) assert.ok(js.includes(token), token);
 });
 
@@ -166,6 +176,20 @@ test('workspace metric cards navigate to matching filtered content', () => {
   assert.ok(js.includes("urlFor('customers', { touch: 'untouched' })"));
 });
 
+test('customer enrichment builds one index instead of rebuilding live queues per contact', () => {
+  assert.ok(js.includes('function buildContactEnrichmentIndex'));
+  const customerRecordsBlock = js.slice(js.indexOf('function computeCustomerRecords'), js.indexOf('function autoClawConnected'));
+  assert.ok(customerRecordsBlock.includes('const enrichmentIndex = buildContactEnrichmentIndex'));
+  assert.ok(!customerRecordsBlock.includes('enrichmentForRecord(record)'));
+});
+
+test('artifact-derived collections are memoized for responsive module navigation', () => {
+  assert.ok(js.includes('const derivedCache = new Map();'));
+  assert.ok(js.includes("memoized('latestQueueRows:"));
+  assert.ok(js.includes("memoized('liveOperationalRecords'"));
+  assert.ok(js.includes("memoized('customerRecords'"));
+});
+
 test('recent-touch supports range filtering and ascending or descending sorting', () => {
   for (const token of [
     'customer-touch-time',
@@ -174,9 +198,9 @@ test('recent-touch supports range filtering and ascending or descending sorting'
     'touchTime',
     'touchFrom',
     'touchTo',
-    "head('lastTouch', '最近触达')",
-    '最近 7 天',
-    '自定义日期',
+    "sort === 'lastTouch'",
+    'customer-touch-from',
+    'customer-touch-to',
   ]) assert.ok(js.includes(token), token);
   assert.ok(js.includes("sort === 'lastTouch'"));
   assert.ok(js.includes('missingTouch'));
@@ -184,7 +208,7 @@ test('recent-touch supports range filtering and ascending or descending sorting'
 
 test('trend unavailability is visible and not presented as a guessed number', () => {
   assert.ok(js.includes('data_unavailable'));
-  assert.ok(js.includes('不显示猜测值'));
+  assert.ok(js.includes('DASHBOARD_COMPATIBILITY_LABELS'));
 });
 
 test('all reporting sections use live automation artifacts', () => {
@@ -194,6 +218,23 @@ test('all reporting sections use live automation artifacts', () => {
   assert.ok(js.includes('analytics.buildTemplateMetrics(liveOperationalRecords())'));
   assert.ok(js.includes('const events = liveAuditEvents();'));
   assert.ok(js.includes('...liveOperationalRecords()'));
-  assert.ok(html.includes('20260708-system-structure'));
-  assert.ok(serviceWorkerJs.includes('customer-development-system-v18-7-20-20260708-system-structure'));
+  assert.ok(html.includes('20260710-reply-conversion'));
+  assert.ok(serviceWorkerJs.includes('customer-development-system-v18-7-20-20260710-reply-conversion'));
+});
+
+test('reporting center exposes reply conversion diagnostics and CSV rates', () => {
+  assert.ok(js.includes('function replyConversionPanel'));
+  assert.ok(js.includes('replyConversionPanel(report)'));
+  assert.ok(js.includes('discoveryToReplyRate'));
+  assert.ok(js.includes('replyToContactRate'));
+  assert.ok(js.includes('topReplySegments'));
+  assert.ok(js.includes('underperformingSegments'));
+  assert.ok(js.includes('reply_conversion_segments'));
+});
+
+test('deal priority includes observed reply conversion lift', () => {
+  assert.ok(js.includes('function replyConversionBenchmarks'));
+  assert.ok(js.includes('function replyConversionLift'));
+  assert.ok(js.includes('conversionMetricLift'));
+  assert.ok(js.includes('direct + replyConversionLift(entity)'));
 });

@@ -137,20 +137,30 @@ test('Google discovery creates Instagram, Facebook and website contact channels'
 test('Google discovery reroutes known broken Instagram links to alternate channels', () => {
   const leads = buildLeads(60);
   assert.equal(leads.some(item => item.id === 'google-customer-sail-outdoors-instagram'), false);
-  const sailFacebook = leads.find(item => item.id === 'google-customer-sail-outdoors-facebook');
-  assert.ok(sailFacebook);
-  assert.equal(sailFacebook.invalidChannels.instagram.status, 'broken_profile_url');
   const sailContact = leads.find(item => item.id === 'google-customer-sail-outdoors-website-contact');
   assert.ok(sailContact);
   assert.equal(sailContact.alternateChannels.instagram, '');
+  assert.equal(sailContact.invalidChannels.instagram.status, 'broken_profile_url');
 });
 
 test('Google discovery blocks known personal or mismatched Instagram handles', () => {
   const leads = buildLeads(120);
   assert.equal(leads.some(item => item.id === 'google-customer-summit-international-instagram'), false);
-  const summitFacebook = leads.find(item => item.id === 'google-customer-summit-international-facebook');
-  assert.ok(summitFacebook);
-  assert.equal(summitFacebook.invalidChannels.instagram.status, 'broken_profile_url');
+  const summitContact = leads.find(item => item.id === 'google-customer-summit-international-website-contact');
+  assert.ok(summitContact);
+  assert.equal(summitContact.invalidChannels.instagram.status, 'broken_profile_url');
+});
+
+test('Google discovery blocks known unavailable Facebook pages before queue generation', () => {
+  const leads = buildLeads(120);
+  assert.equal(leads.some(item => item.id === 'google-customer-sail-outdoors-facebook'), false);
+  assert.equal(leads.some(item => item.id === 'google-customer-summit-international-facebook'), false);
+  const sailContact = leads.find(item => item.id === 'google-customer-sail-outdoors-website-contact');
+  const summitContact = leads.find(item => item.id === 'google-customer-summit-international-website-contact');
+  assert.equal(sailContact.alternateChannels.facebook, '');
+  assert.equal(summitContact.alternateChannels.facebook, '');
+  assert.equal(sailContact.invalidChannels.facebook.status, 'broken_profile_url');
+  assert.equal(summitContact.invalidChannels.facebook.status, 'broken_profile_url');
 });
 
 test('Google discovery autonomously refills verified agency and key-account candidates above ICP 70', () => {
@@ -189,8 +199,9 @@ test('Google discovery gives autonomous refill customers social channels before 
       < companyLeads.findIndex(item => item.platform === 'email'));
   }
   const summitLeads = leads.filter(item => item.company === 'Summit International');
-  assert.ok(summitLeads.some(item => item.platform === 'facebook'));
+  assert.ok(!summitLeads.some(item => item.platform === 'facebook'));
   assert.ok(!summitLeads.some(item => item.platform === 'instagram'));
+  assert.ok(summitLeads.some(item => item.platform === 'email'));
 });
 
 test('daily queue removes website contact when the same company has a social candidate', () => {
@@ -407,6 +418,8 @@ test('Codex Chrome execution can auto-send approved social outreach with confirm
   assert.ok(mainSource.includes('36+ new SKUs are planned for 2026'));
   assert.ok(mainSource.includes('highest chance of a real reply and a booked phone/video meeting'));
   assert.ok(mainSource.includes('Tailor the angle to the exact customer persona'));
+  assert.ok(mainSource.includes('Reply-rate strategy'));
+  assert.ok(mainSource.includes('ask exactly one easy question'));
   assert.ok(chromeDriverSource.includes("'Input.insertText'"));
   assert.ok(chromeDriverSource.includes('sendButtonExpression'));
   assert.ok(chromeDriverSource.includes('document.elementFromPoint'));
@@ -503,6 +516,14 @@ test('daily queue generator blocks cross-channel repeats for already developed c
       target_url: 'https://www.gooutdoors.co.uk/contact-us',
       evidence: 'contact_entry_verified;marketing_attachment_missing',
     },
+    {
+      task_id: 'google-customer-sail-outdoors-website-contact',
+      company: 'Sail Outdoors',
+      status: 'sent_confirmed',
+      timestamp: '2026-07-08T01:55:00.000Z',
+      target_url: 'https://www.sail.ca/en/contact-us',
+      evidence: 'user_confirmed_official_website_email_sent;contact_entry_verified;mailto_detected',
+    },
   ], [], now);
 
   const beverWebsite = {
@@ -519,9 +540,26 @@ test('daily queue generator blocks cross-channel repeats for already developed c
     platform: 'facebook',
     url: 'https://www.facebook.com/GOOutdoors',
   };
+  const sailWebsite = {
+    id: 'google-customer-sail-outdoors-website-contact',
+    company: 'Sail Outdoors',
+    name: 'Sail Outdoors',
+    platform: 'email',
+    website: 'https://www.sail.ca/',
+    contactUrl: 'https://www.sail.ca/en/contact-us',
+  };
+  const sailInstagram = {
+    id: 'google-customer-sail-outdoors-instagram',
+    company: 'Sail Outdoors',
+    name: 'Sail Outdoors',
+    platform: 'instagram',
+    url: 'https://www.instagram.com/sailoutdoors/',
+  };
 
   assert.ok(dailyRunner.companyLeadKeys(beverWebsite).some(key => history.touched.has(key)));
   assert.ok(dailyRunner.companyLeadKeys(goOutdoorsFacebook).some(key => history.touched.has(key)));
+  assert.ok(dailyRunner.companyLeadKeys(sailWebsite).some(key => history.sentConfirmed.has(key)));
+  assert.ok(dailyRunner.companyLeadKeys(sailInstagram).some(key => history.sentConfirmed.has(key)));
 });
 
 test('discovery cooldown expires ordinary touches but preserves confirmed DM protection', () => {

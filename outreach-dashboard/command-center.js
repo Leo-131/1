@@ -140,16 +140,64 @@
     if (entity && entity.alternateChannels && (entity.alternateChannels.instagram || entity.alternateChannels.facebook)) score += 4;
     return score;
   }
+  function replyConversionBenchmarks() {
+    return memoized('replyConversionBenchmarks', () => {
+      const records = liveOperationalRecords();
+      const groups = {
+        platform: new Map(),
+        keyword: new Map(),
+        template: new Map(),
+      };
+      const add = (map, key, record) => {
+        const normalized = normalizeKey(key || 'unknown');
+        if (!normalized) return;
+        const item = map.get(normalized) || { sent: 0, replied: 0, contactCaptured: 0, opportunity: 0 };
+        const confirmed = record.state === 'sent_confirmed' || record.sendStatus === 'sent_confirmed' || record.automationStatus === 'sent_confirmed';
+        if (confirmed) {
+          item.sent += 1;
+          if (record.repliedAt) item.replied += 1;
+          if (record.contactCapturedAt) item.contactCaptured += 1;
+          if (record.opportunityAt) item.opportunity += 1;
+        }
+        map.set(normalized, item);
+      };
+      records.forEach(record => {
+        add(groups.platform, record.platform, record);
+        add(groups.keyword, record.keyword || record.keyword_used, record);
+        add(groups.template, record.templateId, record);
+      });
+      return groups;
+    });
+  }
+  function conversionMetricLift(metric) {
+    if (!metric || !metric.sent) return 0;
+    const replyRate = metric.replied / metric.sent;
+    const contactRate = metric.contactCaptured / metric.sent;
+    const opportunityRate = metric.opportunity / metric.sent;
+    const evidence = Math.min(metric.sent, 10);
+    const penalty = metric.sent >= 3 && metric.replied === 0 ? -8 : 0;
+    return Math.round((replyRate * 20) + (contactRate * 10) + (opportunityRate * 12) + evidence + penalty);
+  }
+  function replyConversionLift(entity) {
+    if (!entity) return 0;
+    const benchmarks = replyConversionBenchmarks();
+    return [
+      [benchmarks.platform, entity.platform],
+      [benchmarks.keyword, entity.keyword || entity.keyword_used || entity.productCategory],
+      [benchmarks.template, entity.templateId || entity.messageTemplate],
+    ].reduce((total, [map, key]) => total + conversionMetricLift(map.get(normalizeKey(key || 'unknown'))), 0);
+  }
   function dealProbabilityScore(entity) {
     if (!entity) return 0;
     const direct = Number(entity.dealProbabilityScore || 0);
-    if (direct > 0) return Math.round(direct);
+    if (direct > 0) return Math.round(direct + replyConversionLift(entity));
     const openAgency = /open|available|可开拓|开放/i.test(String(entity.marketStatus || entity.agencyState || '')) ? 18 : 0;
     return Math.round(icpScore(entity)
       + Number(entity.marketScore || 0) * 12
       + openAgency
       + targetRegionScore(entity)
-      + contactChannelScore(entity));
+      + contactChannelScore(entity)
+      + replyConversionLift(entity));
   }
   function dealPriorityCompare(left, right) {
     return dealProbabilityScore(right) - dealProbabilityScore(left)
@@ -930,6 +978,17 @@
   function rate(value) {
     return `${Math.round(Number(value || 0) * 100)}%`;
   }
+  function rateDetail(value, numerator, denominator) {
+    return `${rate(value)} (${Number(numerator || 0)}/${Number(denominator || 0)})`;
+  }
+  function replyConversionPanel(report) {
+    if (!report || !report.hasData) return '';
+    const rates = report.rates || {};
+    const topRows = ((report.conversion && report.conversion.topReplySegments) || []).slice(0, 6);
+    const lowRows = ((report.conversion && report.conversion.underperformingSegments) || []).slice(0, 6);
+    const row = item => `<tr><td>${esc(item.dimension)}</td><td>${esc(item.label)}</td><td>${item.sent}</td><td>${item.replied}</td><td>${rate(item.rates && item.rates.replyRate)}</td><td>${esc(item.confidence)}</td></tr>`;
+    return `<section class="cc-panel"><div class="cc-panel-head"><h2>回复转化率诊断</h2><span class="cc-sub">发现→回复 ${rateDetail(rates.discoveryToReplyRate, report.metrics.replied, report.metrics.discovered)} · 发送→回复 ${rateDetail(rates.replyRate, report.metrics.replied, report.metrics.sent)} · 回复→联系方式 ${rateDetail(rates.replyToContactRate, report.metrics.contactCaptured, report.metrics.replied)}</span></div><div class="cc-panel-body"><div class="cc-funnel"><div><span>发现到发送</span><b>${rateDetail(rates.discoveryToSendRate, report.metrics.sent, report.metrics.discovered)}</b></div><div><span>发现到回复</span><b>${rateDetail(rates.discoveryToReplyRate, report.metrics.replied, report.metrics.discovered)}</b></div><div><span>发送到回复</span><b>${rateDetail(rates.replyRate, report.metrics.replied, report.metrics.sent)}</b></div><div><span>回复到联系方式</span><b>${rateDetail(rates.replyToContactRate, report.metrics.contactCaptured, report.metrics.replied)}</b></div></div><div class="cc-report-grid"><section class="cc-panel"><div class="cc-panel-head"><h2>高回复细分</h2></div><div class="cc-table-wrap"><table class="cc-table"><thead><tr><th>维度</th><th>细分</th><th>发送</th><th>回复</th><th>回复率</th><th>置信度</th></tr></thead><tbody>${topRows.length ? topRows.map(row).join('') : '<tr><td colspan="6">暂无已确认发送样本</td></tr>'}</tbody></table></div></section><section class="cc-panel"><div class="cc-panel-head"><h2>低回复预警</h2></div><div class="cc-table-wrap"><table class="cc-table"><thead><tr><th>维度</th><th>细分</th><th>发送</th><th>回复</th><th>回复率</th><th>置信度</th></tr></thead><tbody>${lowRows.length ? lowRows.map(row).join('') : '<tr><td colspan="6">暂无达到样本阈值的低回复项</td></tr>'}</tbody></table></div></section></div></div></section>`;
+  }
   function reportBreakdown(title, rows) {
     if (!rows.length) return `<section class="cc-panel"><div class="cc-panel-head"><h2>${title}</h2></div><div class="cc-empty">本周期暂无可统计数据</div></section>`;
     return `<section class="cc-panel"><div class="cc-panel-head"><h2>${title}</h2></div><div class="cc-table-wrap"><table class="cc-table"><thead><tr><th>分类</th><th>发现</th><th>确认发送</th><th>回复</th><th>联系方式</th><th>机会</th><th>回复率</th></tr></thead><tbody>${rows.map(item => `<tr><td>${esc(item.label)}</td><td>${item.metrics.discovered}</td><td>${item.metrics.sent}</td><td>${item.metrics.replied}</td><td>${item.metrics.contactCaptured}</td><td>${item.metrics.opportunity}</td><td>${rate(item.rates.replyRate)}</td></tr>`).join('')}</tbody></table></div></section>`;
@@ -958,6 +1017,7 @@
       <div class="cc-report-period"><b>${report.period.label}</b><span>Asia/Shanghai</span></div>
       <div class="cc-kpis cc-report-kpis">${metricLabels.map(([key, label]) => `<div class="cc-kpi"><span>${label}</span><b>${report.metrics[key]}</b></div>`).join('')}</div>
       <section class="cc-panel"><div class="cc-panel-head"><h2>转化漏斗</h2><span class="cc-sub">回复率 ${rate(report.rates.replyRate)} · 联系方式率 ${rate(report.rates.contactCaptureRate)} · 机会率 ${rate(report.rates.opportunityRate)}</span></div><div class="cc-panel-body"><div class="cc-funnel">${funnelMetrics.map(([key, label]) => `<div><span>${label}</span><b>${report.metrics[key]}</b></div>`).join('')}</div></div></section>
+      ${replyConversionPanel(report)}
       ${qualityTotal ? `<div class="cc-quality">数据质量：${report.dataQuality.missingTimestamps} 个应有时间缺失，${report.dataQuality.invalidTimestamps} 个时间无效；这些事件未计入周期结果。</div>` : ''}
       ${report.hasData ? `<div class="cc-report-grid">${reportBreakdown('平台', report.breakdowns.platform)}${reportBreakdown('国家 / 市场', report.breakdowns.countryMarket)}${reportBreakdown('关键词', report.breakdowns.keyword)}${reportBreakdown('消息模板', report.breakdowns.template)}${reportBreakdown('ICP 层级', report.breakdowns.icpTier)}</div>` : '<div class="cc-empty cc-report-empty">本周期暂无带有效时间证据的开发记录</div>'}`;
   }
@@ -1845,8 +1905,9 @@
       [],
       ['metric', 'value'],
       ...Object.entries(currentReport.metrics),
+      ...Object.entries(currentReport.rates || {}).map(([key, value]) => [key, rate(value)]),
       [],
-      ['dimension', 'label', 'discovered', 'sent', 'replied', 'contacts', 'opportunities', 'reply_rate'],
+      ['dimension', 'label', 'discovered', 'sent', 'replied', 'contacts', 'opportunities', 'discovery_to_reply_rate', 'reply_rate', 'reply_to_contact_rate', 'confidence'],
     ];
     Object.entries(currentReport.breakdowns).forEach(([dimension, items]) => {
       items.forEach(item => rows.push([
@@ -1857,9 +1918,32 @@
         item.metrics.replied,
         item.metrics.contactCaptured,
         item.metrics.opportunity,
+        rate(item.rates.discoveryToReplyRate),
         rate(item.rates.replyRate),
+        rate(item.rates.replyToContactRate),
+        item.metrics.sent >= 10 ? 'strong' : item.metrics.sent >= 3 ? 'directional' : 'low_sample',
       ]));
     });
+    rows.push([]);
+    rows.push(['reply_conversion_segments', 'dimension', 'label', 'sent', 'replied', 'reply_rate', 'confidence']);
+    ((currentReport.conversion && currentReport.conversion.topReplySegments) || []).forEach(item => rows.push([
+      'top',
+      item.dimension,
+      item.label,
+      item.sent,
+      item.replied,
+      rate(item.rates.replyRate),
+      item.confidence,
+    ]));
+    ((currentReport.conversion && currentReport.conversion.underperformingSegments) || []).forEach(item => rows.push([
+      'underperforming',
+      item.dimension,
+      item.label,
+      item.sent,
+      item.replied,
+      rate(item.rates.replyRate),
+      item.confidence,
+    ]));
     const csv = rows.map(row => row.map(csvCell).join(',')).join('\r\n');
     const blob = new Blob(['\ufeff', csv], { type: 'text/csv;charset=utf-8' });
     const link = document.createElement('a');
