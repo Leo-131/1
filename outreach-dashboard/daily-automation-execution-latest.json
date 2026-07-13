@@ -108,19 +108,19 @@
     }
   ],
   "userVisibleStatus": "Customer development was not performed. Blockers: marketing_attachment_missing (1); profile_valid_no_message_button (1).",
-  "recoveryHint": "Configure WEBSITE_MARKETING_FILE or MARKETING_ATTACHMENT_PATH with an approved marketing attachment before rerunning website-contact outreach.",
+  "recoveryHint": "Configure WEBSITE_MARKETING_FILE or MARKETING_ATTACHMENT_PATH with an approved marketing attachment before rerunning website-contact outreach. Use a verified alternate channel because the current social profile has no safe message button.",
   "systemRefresh": {
     "ok": true,
     "stdout": "{\n  \"date\": \"2026-07-13\",\n  \"summary\": {\n    \"totalLeads\": 16,\n    \"highIcp\": 16,\n    \"readyToDevelop\": 0,\n    \"dueNow\": 1,\n    \"potentialPool\": 100,\n    \"potentialPoolTarget\": 100,\n    \"customerTableHighIcp\": 64,\n    \"refillNeeded\": 0,\n    \"googleDiscovered\": 1,\n    \"facebookDiscovered\": 0,\n    \"websiteContactDiscovered\": 1,\n    \"scheduledLater\": 1,\n    \"cooldown\": 30,\n    \"emailPriority\": 0,\n    \"openAgencyMarket\": 15,\n    \"exclusiveAgencySkipped\": 1,\n    \"needsVerification\": 0,\n    \"retainedLowIcp\": 0\n  },\n  \"bugErrors\": 0,\n  \"queueFile\": \"E:\\\\New project\\\\outreach-dashboard\\\\daily-runs\\\\2026-07-13-daily-automation.json\",\n  \"csvFile\": \"E:\\\\New project\\\\outreach-dashboard\\\\daily-runs\\\\2026-07-13-daily-queue.csv\"\n}",
     "stderr": "",
     "error": "",
     "visibility": {
-      "updatedAt": "2026-07-13T01:01:14.549Z",
+      "updatedAt": "2026-07-13T01:03:06.079Z",
       "source": "main-refreshDailyAutomationArtifacts",
       "runDate": "2026-07-13",
-      "artifactGeneratedAt": "2026-07-13T01:01:13.117Z",
-      "executionGeneratedAt": "2026-07-12T01:05:31.464Z",
-      "githubSyncUpdatedAt": "2026-07-12T01:05:47.987Z",
+      "artifactGeneratedAt": "2026-07-13T01:03:02.765Z",
+      "executionGeneratedAt": "2026-07-13T01:01:15.305Z",
+      "githubSyncUpdatedAt": "2026-07-13T01:01:53.491Z",
       "counts": {
         "dailyQueue": 1,
         "googleDiscovered": 1,
@@ -166,5 +166,5 @@
       }
     }
   },
-  "completedAt": "2026-07-13T01:01:15.305Z"
+  "completedAt": "2026-07-13T01:03:07.686Z"
 }

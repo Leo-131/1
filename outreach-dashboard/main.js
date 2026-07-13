@@ -2437,13 +2437,14 @@ function buildExecutionBlockerSummary(results = [], skipped = []) {
 
 function executionRecoveryHint(blockerSummary = []) {
   const reasons = new Set((Array.isArray(blockerSummary) ? blockerSummary : []).map(item => item && item.reason));
+  const hints = [];
   if (reasons.has('marketing_attachment_missing')) {
-    return 'Configure WEBSITE_MARKETING_FILE or MARKETING_ATTACHMENT_PATH with an approved marketing attachment before rerunning website-contact outreach.';
+    hints.push('Configure WEBSITE_MARKETING_FILE or MARKETING_ATTACHMENT_PATH with an approved marketing attachment before rerunning website-contact outreach.');
   }
   if (reasons.has('profile_valid_no_message_button')) {
-    return 'Use a verified alternate channel because the current social profile has no safe message button.';
+    hints.push('Use a verified alternate channel because the current social profile has no safe message button.');
   }
-  return undefined;
+  return hints.length ? hints.join(' ') : undefined;
 }
 
 function formatExecutionBlockerStatus(blockerSummary = []) {
