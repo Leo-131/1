@@ -5,6 +5,7 @@ const path = require('path');
 
 const root = path.join(__dirname, '..', 'outreach-dashboard');
 const html = fs.readFileSync(path.join(root, 'outreach-dashboard.html'), 'utf8');
+const publicIndexHtml = fs.readFileSync(path.join(root, 'public', 'index.html'), 'utf8');
 const js = fs.readFileSync(path.join(root, 'command-center.js'), 'utf8');
 const analyticsJs = fs.readFileSync(path.join(root, 'outreach-analytics.js'), 'utf8');
 const serviceWorkerJs = fs.readFileSync(path.join(root, 'service-worker.js'), 'utf8');
@@ -32,6 +33,12 @@ test('command center uses an atomic boot gate so the legacy dashboard never flas
   assert.ok(js.includes("document.body.classList.remove('command-center-active')"));
   assert.ok(js.includes('Command center startup failed'));
   assert.doesNotMatch(js, /\bstatusLabel\(/);
+});
+
+test('command center waits for engine dependencies instead of falling back to legacy dashboard', () => {
+  assert.ok(js.includes('__commandCenterDependencyRetries'));
+  assert.ok(js.includes('window.setTimeout(initializeCommandCenter, 100)'));
+  assert.ok(js.includes('已阻止回退到旧模块'));
 });
 
 test('command center exposes weekly and monthly reporting controls', () => {
@@ -63,6 +70,8 @@ test('command center contains separated operational views', () => {
   for (const viewId of ['reports', 'workspace', 'queue', 'customers', 'analysis', 'seo', 'experiments', 'audit', 'settings']) {
     assert.ok(js.includes(`['${viewId}'`), viewId);
   }
+  assert.ok(publicIndexHtml.includes('<body class="command-center-booting">'));
+  assert.ok(publicIndexHtml.includes('command-center.js?v=20260713-active-queue'));
 });
 
 test('customer detail opens in a new tab without replacing the shell', () => {
