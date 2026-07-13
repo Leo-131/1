@@ -8,6 +8,9 @@ const root = __dirname;
 const port = Number(process.env.PORT || 4174);
 const host = process.env.HOST || '0.0.0.0';
 const stateFile = path.join(os.tmpdir(), 'outreach-dashboard-local-state.json');
+const STATIC_CACHE_LIMIT = 64;
+const STATIC_CACHE_MAX_BYTES = 2 * 1024 * 1024;
+const staticFileCache = new Map();
 const types = {
   '.html': 'text/html; charset=utf-8',
   '.js': 'application/javascript; charset=utf-8',
@@ -17,11 +20,14 @@ const types = {
   '.webmanifest': 'application/manifest+json; charset=utf-8',
 };
 
-function cacheHeaders(file) {
+function cacheHeaders(file, stat) {
   const ext = path.extname(file);
+  const etag = stat ? `"${stat.size.toString(16)}-${Math.trunc(stat.mtimeMs).toString(16)}"` : '';
   const headers = {
     'Content-Type': types[ext] || 'application/octet-stream',
   };
+  if (etag) headers.ETag = etag;
+  if (stat) headers['Last-Modified'] = stat.mtime.toUTCString();
   if (['.html', '.js', '.json', '.webmanifest'].includes(ext)) {
     headers['Cache-Control'] = 'no-store, no-cache, must-revalidate, proxy-revalidate';
     headers.Pragma = 'no-cache';
@@ -32,6 +38,37 @@ function cacheHeaders(file) {
     headers['Clear-Site-Data'] = '"cache"';
   }
   return headers;
+}
+
+function rememberStaticFile(file, stat, data, headers) {
+  if (data.length > STATIC_CACHE_MAX_BYTES) return;
+  if (staticFileCache.size >= STATIC_CACHE_LIMIT) {
+    const oldest = staticFileCache.keys().next().value;
+    if (oldest) staticFileCache.delete(oldest);
+  }
+  staticFileCache.set(file, {
+    size: stat.size,
+    mtimeMs: stat.mtimeMs,
+    data,
+    headers,
+  });
+}
+
+function cachedStaticFile(file, stat) {
+  const cached = staticFileCache.get(file);
+  if (!cached || cached.size !== stat.size || cached.mtimeMs !== stat.mtimeMs) return null;
+  staticFileCache.delete(file);
+  staticFileCache.set(file, cached);
+  return cached;
+}
+
+function notModified(req, headers) {
+  const etag = headers.ETag;
+  const modifiedSince = headers['Last-Modified'];
+  return Boolean(
+    (etag && req.headers['if-none-match'] === etag)
+    || (modifiedSince && req.headers['if-modified-since'] === modifiedSince)
+  );
 }
 
 function chromeCandidates() {
@@ -178,13 +215,34 @@ const server = http.createServer((req, res) => {
     res.writeHead(403);
     return res.end('Forbidden');
   }
-  fs.readFile(file, (error, data) => {
-    if (error) {
+  fs.stat(file, (statError, stat) => {
+    if (statError || !stat.isFile()) {
       res.writeHead(404);
       return res.end('Not found');
     }
-    res.writeHead(200, cacheHeaders(file));
-    res.end(data);
+    const cached = cachedStaticFile(file, stat);
+    if (cached) {
+      if (notModified(req, cached.headers)) {
+        res.writeHead(304, cached.headers);
+        return res.end();
+      }
+      res.writeHead(200, cached.headers);
+      return res.end(cached.data);
+    }
+    fs.readFile(file, (error, data) => {
+      if (error) {
+        res.writeHead(404);
+        return res.end('Not found');
+      }
+      const headers = cacheHeaders(file, stat);
+      rememberStaticFile(file, stat, data, headers);
+      if (notModified(req, headers)) {
+        res.writeHead(304, headers);
+        return res.end();
+      }
+      res.writeHead(200, headers);
+      return res.end(data);
+    });
   });
 });
 
