@@ -1,34 +1,105 @@
 window.DAILY_AUTOMATION_EXECUTION_LATEST = {
-  "ok": false,
-  "skippedOnly": true,
-  "executionPhase": "no_executable_tasks",
-  "chromeStage": "not_started",
-  "chromeOpened": false,
-  "chromeOpenedCount": 0,
+  "ok": true,
+  "executionPhase": "browser_execution",
+  "chromeStage": "opened",
+  "chromeOpened": true,
+  "chromeOpenedCount": 1,
   "customerDevelopmentPerformed": false,
   "customerMessageSent": false,
   "realDevelopmentCount": 0,
   "reportingVerdict": "no_customer_development_performed",
-  "userVisibleStatus": "Customer development was not performed. Blockers: marketing_attachment_missing (1); profile_valid_no_message_button (1).",
-  "recoveryHint": "Configure WEBSITE_MARKETING_FILE or MARKETING_ATTACHMENT_PATH with an approved marketing attachment before rerunning website-contact outreach. Use a verified alternate channel because the current social profile has no safe message button.",
-  "recoveryActions": [
-    {
-      "reason": "marketing_attachment_missing",
-      "hint": "Configure WEBSITE_MARKETING_FILE or MARKETING_ATTACHMENT_PATH with an approved marketing attachment before rerunning website-contact outreach."
-    },
-    {
-      "reason": "profile_valid_no_message_button",
-      "hint": "Use a verified alternate channel because the current social profile has no safe message button."
-    }
-  ],
-  "error": "No executable tasks. Website-contact, social, cooldown, exclusive-agency, and verification safety gates left nothing safe to prepare.",
-  "skipped": [
+  "engine": "Codex Chrome Extension queue bridge",
+  "mode": "serial-single-target",
+  "batchMode": "parallel-batches",
+  "parallelLimit": 1,
+  "limit": 10,
+  "queueDate": "2026-07-13",
+  "queueSource": "dailyQueue",
+  "executed": [
     {
       "id": "google-customer-summit-international-website-contact",
       "company": "Summit International",
       "action": "email_priority",
-      "reason": "marketing_attachment_missing"
-    },
+      "platform": "email",
+      "targetUrl": "https://www.summitint.co/contact/",
+      "ok": true,
+      "sendStatus": "website_contact_ready",
+      "evidence": "website_contact_entry_not_verified;no_contact_entry_control;public_email_fallback_available:info@summitint.co;website_contact_target_attempts:1",
+      "chromeOpen": {
+        "ok": true,
+        "engine": "codex-chrome-extension-cdp",
+        "port": 9224,
+        "targetUrl": "https://www.summitint.co/contact/",
+        "tabId": "365092D72D82537309475127DE7C3673",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/365092D72D82537309475127DE7C3673",
+        "title": ""
+      },
+      "result": {
+        "ok": true,
+        "engine": "codex-chrome-extension-website-contact",
+        "browserEngine": "codex-chrome-extension-cdp",
+        "mode": "website_contact_public_email_ready",
+        "targetUrl": "https://www.summitint.co/contact/",
+        "chromeOpen": {
+          "ok": true,
+          "engine": "codex-chrome-extension-cdp",
+          "port": 9224,
+          "targetUrl": "https://www.summitint.co/contact/",
+          "tabId": "365092D72D82537309475127DE7C3673",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/365092D72D82537309475127DE7C3673",
+          "title": ""
+        },
+        "sendStatus": "website_contact_ready",
+        "subject": "Flextail & Vollyc | Lightweight Outdoor & 3C Electronics – Potential Cooperation",
+        "draft": "Dear Summit International Team,\n\nNice to e-meet you.\nI am Leo, from Flextail & Vollyc.\n\nFlextail is our first and core brand, specializing in ultralight electric products for outdoor, travel, and home use. The brand is currently Top 1 on Amazon, with strong global sell-through and a proven product-market fit.\nVollyc, our second brand, focuses on 3C electronics, targeting practical, high-rotation consumer use cases.\n\nFrom our perspective, your platform and positioning are highly aligned with Flextail’s product philosophy, especially in lightweight outdoor and travel-oriented electrics.\n\nWe have already contacted with your team, and we are now actively exploring opportunities in other regions.\nAttached, you will find a brief introduction to our brands and current product catalog for your reference.\n\nLooking ahead, we are planning to launch over 36 new SKUs in 2026, covering multiple usage scenarios and price tiers, which we believe could be of interest to your assortment strategy.\n\nIf you are available, I would greatly appreciate the opportunity to arrange a short introductory video meeting to present our brands and discuss potential collaboration opportunities.\n\nThank you for your time and consideration. I look forward to your reply.\n\n[Flextail.com](https://www.flextail.com/), [vollyc.com](https://vollyc.com/)\n\n[Sincerely](https://wa.me/8617321028184)\n[Best Regard](https://wa.me/8617321028184)\n[Leo Liu](https://wa.me/8617321028184)\n[Sales](https://wa.me/8617321028184) [& Operations Director](https://wa.me/8617321028184)\n[Brand & ODM Department](https://wa.me/8617321028184)\n[Tel/whatsapp:  +86 17321028184](https://wa.me/8617321028184)\n\n[Email:  Leo@flextailgear.com](https://wa.me/8617321028184)\n[SHANGHAI FLEXTAIL TECHNOLOGY CO.,LTD.](https://wa.me/8617321028184)\n[Room103, Building No.6, No.1 Yanjiaqiao, Pudong District, ShangHai, China](https://wa.me/8617321028184)",
+        "evidence": "website_contact_entry_not_verified;no_contact_entry_control;public_email_fallback_available:info@summitint.co;website_contact_target_attempts:1",
+        "output": "{\"verdict\":\"website_contact_ready\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control;public_email_fallback_available:info@summitint.co;website_contact_target_attempts:1\",\"nextAction\":\"Official contact page opened but the form was not machine-verified. Use the prepared subject/draft and send manually to info@summitint.co, or submit the visible contact form manually.\",\"subject\":\"Flextail & Vollyc | Lightweight Outdoor & 3C Electronics – Potential Cooperation\",\"draft\":\"Dear Summit International Team,\\n\\nNice to e-meet you.\\nI am Leo, from Flextail & Vollyc.\\n\\nFlextail is our first and core brand, specializing in ultralight electric products for outdoor, travel, and home use. The brand is currently Top 1 on Amazon, with strong global sell-through and a proven product-market fit.\\nVollyc, our second brand, focuses on 3C electronics, targeting practical, high-rotation consumer use cases.\\n\\nFrom our perspective, your platform and positioning are highly aligned with Flextail’s product philosophy, especially in lightweight outdoor and travel-oriented electrics.\\n\\nWe have already contacted with your team, and we are now actively exploring opportunities in other regions.\\nAttached, you will find a brief introduction to our brands and current product catalog for your reference.\\n\\nLooking ahead, we are planning to launch over 36 new SKUs in 2026, covering multiple usage scenarios and price tiers, which we believe could be of interest to your assortment strategy.\\n\\nIf you are available, I would greatly appreciate the opportunity to arrange a short introductory video meeting to present our brands and discuss potential collaboration opportunities.\\n\\nThank you for your time and consideration. I look forward to your reply.\\n\\n[Flextail.com](https://www.flextail.com/), [vollyc.com](https://vollyc.com/)\\n\\n[Sincerely](https://wa.me/8617321028184)\\n[Best Regard](https://wa.me/8617321028184)\\n[Leo Liu](https://wa.me/8617321028184)\\n[Sales](https://wa.me/8617321028184) [& Operations Director](https://wa.me/8617321028184)\\n[Brand & ODM Department](https://wa.me/8617321028184)\\n[Tel/whatsapp:  +86 17321028184](https://wa.me/8617321028184)\\n\\n[Email:  Leo@flextailgear.com](https://wa.me/8617321028184)\\n[SHANGHAI FLEXTAIL TECHNOLOGY CO.,LTD.](https://wa.me/8617321028184)\\n[Room103, Building No.6, No.1 Yanjiaqiao, Pudong District, ShangHai, China](https://wa.me/8617321028184)\",\"publicEmail\":\"info@summitint.co\",\"sendStatus\":\"website_contact_ready\",\"attempts\":[{\"targetUrl\":\"https://www.summitint.co/contact/\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control\"}]}"
+      }
+    }
+  ],
+  "results": [
+    {
+      "id": "google-customer-summit-international-website-contact",
+      "company": "Summit International",
+      "action": "email_priority",
+      "platform": "email",
+      "targetUrl": "https://www.summitint.co/contact/",
+      "ok": true,
+      "sendStatus": "website_contact_ready",
+      "evidence": "website_contact_entry_not_verified;no_contact_entry_control;public_email_fallback_available:info@summitint.co;website_contact_target_attempts:1",
+      "chromeOpen": {
+        "ok": true,
+        "engine": "codex-chrome-extension-cdp",
+        "port": 9224,
+        "targetUrl": "https://www.summitint.co/contact/",
+        "tabId": "365092D72D82537309475127DE7C3673",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/365092D72D82537309475127DE7C3673",
+        "title": ""
+      },
+      "result": {
+        "ok": true,
+        "engine": "codex-chrome-extension-website-contact",
+        "browserEngine": "codex-chrome-extension-cdp",
+        "mode": "website_contact_public_email_ready",
+        "targetUrl": "https://www.summitint.co/contact/",
+        "chromeOpen": {
+          "ok": true,
+          "engine": "codex-chrome-extension-cdp",
+          "port": 9224,
+          "targetUrl": "https://www.summitint.co/contact/",
+          "tabId": "365092D72D82537309475127DE7C3673",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/365092D72D82537309475127DE7C3673",
+          "title": ""
+        },
+        "sendStatus": "website_contact_ready",
+        "subject": "Flextail & Vollyc | Lightweight Outdoor & 3C Electronics – Potential Cooperation",
+        "draft": "Dear Summit International Team,\n\nNice to e-meet you.\nI am Leo, from Flextail & Vollyc.\n\nFlextail is our first and core brand, specializing in ultralight electric products for outdoor, travel, and home use. The brand is currently Top 1 on Amazon, with strong global sell-through and a proven product-market fit.\nVollyc, our second brand, focuses on 3C electronics, targeting practical, high-rotation consumer use cases.\n\nFrom our perspective, your platform and positioning are highly aligned with Flextail’s product philosophy, especially in lightweight outdoor and travel-oriented electrics.\n\nWe have already contacted with your team, and we are now actively exploring opportunities in other regions.\nAttached, you will find a brief introduction to our brands and current product catalog for your reference.\n\nLooking ahead, we are planning to launch over 36 new SKUs in 2026, covering multiple usage scenarios and price tiers, which we believe could be of interest to your assortment strategy.\n\nIf you are available, I would greatly appreciate the opportunity to arrange a short introductory video meeting to present our brands and discuss potential collaboration opportunities.\n\nThank you for your time and consideration. I look forward to your reply.\n\n[Flextail.com](https://www.flextail.com/), [vollyc.com](https://vollyc.com/)\n\n[Sincerely](https://wa.me/8617321028184)\n[Best Regard](https://wa.me/8617321028184)\n[Leo Liu](https://wa.me/8617321028184)\n[Sales](https://wa.me/8617321028184) [& Operations Director](https://wa.me/8617321028184)\n[Brand & ODM Department](https://wa.me/8617321028184)\n[Tel/whatsapp:  +86 17321028184](https://wa.me/8617321028184)\n\n[Email:  Leo@flextailgear.com](https://wa.me/8617321028184)\n[SHANGHAI FLEXTAIL TECHNOLOGY CO.,LTD.](https://wa.me/8617321028184)\n[Room103, Building No.6, No.1 Yanjiaqiao, Pudong District, ShangHai, China](https://wa.me/8617321028184)",
+        "evidence": "website_contact_entry_not_verified;no_contact_entry_control;public_email_fallback_available:info@summitint.co;website_contact_target_attempts:1",
+        "output": "{\"verdict\":\"website_contact_ready\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control;public_email_fallback_available:info@summitint.co;website_contact_target_attempts:1\",\"nextAction\":\"Official contact page opened but the form was not machine-verified. Use the prepared subject/draft and send manually to info@summitint.co, or submit the visible contact form manually.\",\"subject\":\"Flextail & Vollyc | Lightweight Outdoor & 3C Electronics – Potential Cooperation\",\"draft\":\"Dear Summit International Team,\\n\\nNice to e-meet you.\\nI am Leo, from Flextail & Vollyc.\\n\\nFlextail is our first and core brand, specializing in ultralight electric products for outdoor, travel, and home use. The brand is currently Top 1 on Amazon, with strong global sell-through and a proven product-market fit.\\nVollyc, our second brand, focuses on 3C electronics, targeting practical, high-rotation consumer use cases.\\n\\nFrom our perspective, your platform and positioning are highly aligned with Flextail’s product philosophy, especially in lightweight outdoor and travel-oriented electrics.\\n\\nWe have already contacted with your team, and we are now actively exploring opportunities in other regions.\\nAttached, you will find a brief introduction to our brands and current product catalog for your reference.\\n\\nLooking ahead, we are planning to launch over 36 new SKUs in 2026, covering multiple usage scenarios and price tiers, which we believe could be of interest to your assortment strategy.\\n\\nIf you are available, I would greatly appreciate the opportunity to arrange a short introductory video meeting to present our brands and discuss potential collaboration opportunities.\\n\\nThank you for your time and consideration. I look forward to your reply.\\n\\n[Flextail.com](https://www.flextail.com/), [vollyc.com](https://vollyc.com/)\\n\\n[Sincerely](https://wa.me/8617321028184)\\n[Best Regard](https://wa.me/8617321028184)\\n[Leo Liu](https://wa.me/8617321028184)\\n[Sales](https://wa.me/8617321028184) [& Operations Director](https://wa.me/8617321028184)\\n[Brand & ODM Department](https://wa.me/8617321028184)\\n[Tel/whatsapp:  +86 17321028184](https://wa.me/8617321028184)\\n\\n[Email:  Leo@flextailgear.com](https://wa.me/8617321028184)\\n[SHANGHAI FLEXTAIL TECHNOLOGY CO.,LTD.](https://wa.me/8617321028184)\\n[Room103, Building No.6, No.1 Yanjiaqiao, Pudong District, ShangHai, China](https://wa.me/8617321028184)\",\"publicEmail\":\"info@summitint.co\",\"sendStatus\":\"website_contact_ready\",\"attempts\":[{\"targetUrl\":\"https://www.summitint.co/contact/\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control\"}]}"
+      }
+    }
+  ],
+  "skipped": [
     {
       "id": "verified-Instagram-triedandtrout",
       "company": "Tried & Trout Supply Co",
@@ -36,22 +107,6 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "reason": "profile_valid_no_message_button"
     }
   ],
-  "blockerSummary": [
-    {
-      "reason": "marketing_attachment_missing",
-      "status": "skipped",
-      "count": 1
-    },
-    {
-      "reason": "profile_valid_no_message_button",
-      "status": "skipped",
-      "count": 1
-    }
-  ],
-  "blockerCounts": {
-    "marketing_attachment_missing": 1,
-    "profile_valid_no_message_button": 1
-  },
   "summary": {
     "totalLeads": 16,
     "highIcp": 16,
@@ -73,5 +128,80 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     "needsVerification": 0,
     "retainedLowIcp": 0
   },
-  "completedAt": "2026-07-13T11:03:07.509Z"
+  "blockerSummary": [
+    {
+      "reason": "profile_valid_no_message_button",
+      "status": "skipped",
+      "count": 1
+    }
+  ],
+  "blockerCounts": {
+    "profile_valid_no_message_button": 1
+  },
+  "userVisibleStatus": "Customer development was not performed. Blockers: profile_valid_no_message_button (1).",
+  "recoveryHint": "Use a verified alternate channel because the current social profile has no safe message button.",
+  "recoveryActions": [
+    {
+      "reason": "profile_valid_no_message_button",
+      "hint": "Use a verified alternate channel because the current social profile has no safe message button."
+    }
+  ],
+  "systemRefresh": {
+    "ok": true,
+    "stdout": "{\n  \"date\": \"2026-07-13\",\n  \"summary\": {\n    \"totalLeads\": 16,\n    \"highIcp\": 16,\n    \"readyToDevelop\": 0,\n    \"dueNow\": 1,\n    \"visibleTodayQueue\": 3,\n    \"potentialPool\": 1,\n    \"potentialPoolTarget\": 100,\n    \"customerTableHighIcp\": 0,\n    \"refillNeeded\": 99,\n    \"googleDiscovered\": 1,\n    \"facebookDiscovered\": 0,\n    \"websiteContactDiscovered\": 1,\n    \"scheduledLater\": 1,\n    \"cooldown\": 30,\n    \"emailPriority\": 0,\n    \"openAgencyMarket\": 15,\n    \"exclusiveAgencySkipped\": 1,\n    \"needsVerification\": 0,\n    \"retainedLowIcp\": 0\n  },\n  \"bugErrors\": 0,\n  \"queueFile\": \"E:\\\\New project\\\\outreach-dashboard\\\\daily-runs\\\\2026-07-13-daily-automation.json\",\n  \"csvFile\": \"E:\\\\New project\\\\outreach-dashboard\\\\daily-runs\\\\2026-07-13-daily-queue.csv\"\n}",
+    "stderr": "",
+    "error": "",
+    "visibility": {
+      "updatedAt": "2026-07-13T12:14:14.634Z",
+      "source": "main-refreshDailyAutomationArtifacts",
+      "runDate": "2026-07-13",
+      "artifactGeneratedAt": "2026-07-13T12:14:13.951Z",
+      "executionGeneratedAt": "2026-07-13T12:12:06.009Z",
+      "githubSyncUpdatedAt": "2026-07-13T11:08:08.723Z",
+      "counts": {
+        "dailyQueue": 1,
+        "googleDiscovered": 1,
+        "websiteContact": 1,
+        "cooldownQueue": 30,
+        "scheduledLater": 1
+      },
+      "visibleSections": [
+        "workspace",
+        "taskDetailPanel",
+        "todayQueue",
+        "customers",
+        "customerDetail",
+        "seo",
+        "automationAudit",
+        "settings",
+        "rightRail",
+        "githubSyncStatus"
+      ],
+      "refreshedArtifacts": [
+        "daily-automation-latest",
+        "daily-automation-execution-latest",
+        "google-lead-discovery-latest",
+        "github-sync/latest-status",
+        "system-visibility-latest"
+      ],
+      "contactEnrichment": {
+        "enabled": true,
+        "sources": [
+          "dailyQueue",
+          "cooldownQueue",
+          "google-lead-discovery-latest"
+        ],
+        "fields": [
+          "publicEmail",
+          "contactEmail",
+          "contactPhone",
+          "vendorPortal",
+          "contactUrl",
+          "contactSearchUrl",
+          "website"
+        ]
+      }
+    }
+  },
+  "completedAt": "2026-07-13T12:14:15.066Z"
 };

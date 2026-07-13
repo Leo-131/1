@@ -26,6 +26,15 @@ test('daily queue prioritizes Instagram and Facebook over website contact', () =
     > dailyRunner.channelPriorityScore({ platform: 'email', reason: 'official_website_contact_channel' }));
 });
 
+test('website contact can execute without a configured attachment', () => {
+  assert.ok(mainSource.includes("executableQueueCandidates(latest.dailyQueue, { allowWebsiteContact: true })"));
+  assert.ok(!mainSource.includes('website_contact_preflight_blocked'));
+  assert.ok(mainSource.includes('text_only_manual_submit_required'));
+  assert.ok(mainSource.includes("sendStatus: filled && filled.ok ? 'website_contact_ready' : 'approval_pending'"));
+  assert.ok(mainSource.includes('website_contact_public_email_ready'));
+  assert.ok(mainSource.includes('public_email_fallback_available'));
+});
+
 test('unsubmitted website preparation does not create customer-development cooldown', () => {
   const now = Date.parse('2026-07-09T04:00:00.000Z');
   const websiteAttempt = {
@@ -163,6 +172,8 @@ test('Google discovery blocks known personal or mismatched Instagram handles', (
   assert.equal(leads.some(item => item.id === 'google-customer-summit-international-instagram'), false);
   const summitContact = leads.find(item => item.id === 'google-customer-summit-international-website-contact');
   assert.ok(summitContact);
+  assert.equal(summitContact.contactUrl, 'https://www.summitint.co/contact/');
+  assert.equal(summitContact.publicEmail, 'info@summitint.co');
   assert.equal(summitContact.invalidChannels.instagram.status, 'broken_profile_url');
 });
 

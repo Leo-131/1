@@ -204,7 +204,9 @@ const CANDIDATES = [
     url: 'https://www.summitint.co/',
     instagramUrl: 'https://www.instagram.com/summitint/',
     facebookUrl: 'https://www.facebook.com/summitint',
-    contactUrl: 'https://www.summitint.co/contact-us',
+    contactUrl: 'https://www.summitint.co/contact/',
+    publicEmail: 'info@summitint.co',
+    contactPhone: '+44 (0) 1268 505 171',
     segment: 'outdoor importer and distributor',
     customerType: 'agency',
     refillSeed: true,
@@ -325,6 +327,8 @@ const CANDIDATES = [
 const KNOWN_BROKEN_SOCIAL_URLS = new Set([
   'https://www.instagram.com/sailoutdoors/',
   'https://www.instagram.com/summitint/',
+  'https://www.facebook.com/sailoutdoors',
+  'https://www.facebook.com/summitint',
 ]);
 
 const VERIFIED_ENRICHMENT = {
@@ -562,6 +566,24 @@ const VERIFIED_ENRICHMENT = {
     contactNote: 'Use official email/contact form to request category buyer routing; WhatsApp/customer channels are for service.',
     dataSources: ['Bever official contact page', 'Bever LinkedIn/public company sources'],
   },
+  'Summit International': {
+    linkedinUrl: 'https://uk.linkedin.com/company/summit-international',
+    founded: '',
+    headquarters: 'Basildon, Essex, United Kingdom',
+    companyScale: 'UK based importer and distributor for the outdoor B2B trade sector',
+    coverage: 'United Kingdom / Europe',
+    mainBrands: 'Camping, sports and outdoor leisure products for trade customers',
+    salesChannel: 'B2B distribution, showrooms, official contact form and trade website',
+    buyingCapability: 'High; outdoor B2B importer/distributor with retailer and wholesale channels',
+    decisionMaker: 'Brand partnerships, buying, or distribution director for outdoor products',
+    publicEmail: 'info@summitint.co',
+    publicEmailStatus: 'Official public contact email from Summit International contact page; buyer email not publicly verified.',
+    contactPhone: '+44 (0) 1268 505 171',
+    vendorPortal: 'https://www.summitint.co/contact/',
+    linkedinCompany: 'https://uk.linkedin.com/company/summit-international',
+    contactNote: 'Use official contact form or info email to request buying/distribution contact routing.',
+    dataSources: ['Summit International official contact page', 'Summit International LinkedIn/public company sources'],
+  },
 };
 
 function csvCell(value) {
@@ -652,14 +674,14 @@ function baseLead(item, id, evidenceUrl) {
     businessModel: enrichment.businessModel || 'Retail Chain',
     productFit: enrichment.productFit || 'FLEXTAIL portable pumps, outdoor power, camping lighting and compact camping accessories',
     opportunity: enrichment.opportunity || item.background,
-    linkedin_url: enrichment.linkedinUrl || '',
-    linkedin: enrichment.linkedinUrl || '',
-    publicEmail: enrichment.publicEmail || '',
-    contactEmail: enrichment.publicEmail || '',
-    vendorPortal: enrichment.vendorPortal || '',
-    contactPhone: enrichment.contactPhone || '',
-    contactNote: enrichment.contactNote || '',
-    publicEmailStatus: enrichment.publicEmailStatus || '',
+    linkedin_url: enrichment.linkedinUrl || item.linkedinUrl || '',
+    linkedin: enrichment.linkedinUrl || item.linkedinUrl || '',
+    publicEmail: enrichment.publicEmail || item.publicEmail || '',
+    contactEmail: enrichment.publicEmail || item.publicEmail || '',
+    vendorPortal: enrichment.vendorPortal || item.vendorPortal || item.contactUrl || '',
+    contactPhone: enrichment.contactPhone || item.contactPhone || '',
+    contactNote: enrichment.contactNote || item.contactNote || '',
+    publicEmailStatus: enrichment.publicEmailStatus || item.publicEmailStatus || '',
     website: item.url,
     evidenceUrl,
     query: evidenceUrl,
@@ -691,9 +713,16 @@ function channelLeads(item) {
       evidence: 'Instagram reports this page is unavailable; use Facebook or official website contact instead.',
     };
   }
+  if (item.facebookUrl && KNOWN_BROKEN_SOCIAL_URLS.has(item.facebookUrl.toLowerCase().replace(/\/$/, ''))) {
+    invalidChannels.facebook = {
+      url: item.facebookUrl,
+      status: 'broken_profile_url',
+      evidence: 'Facebook reports this content is unavailable; use official website contact or another verified company profile instead.',
+    };
+  }
   const socialSiblings = {
     instagram: invalidChannels.instagram ? '' : (item.instagramUrl || ''),
-    facebook: item.facebookUrl || '',
+    facebook: invalidChannels.facebook ? '' : (item.facebookUrl || ''),
     websiteContact: item.contactUrl || item.url,
   };
   const leads = [];
@@ -710,7 +739,7 @@ function channelLeads(item) {
       channelPriority: 1,
     });
   }
-  if (item.facebookUrl) {
+  if (item.facebookUrl && !invalidChannels.facebook) {
     leads.push({
       ...baseLead(item, `${baseId}-facebook`, evidenceUrl),
       platform: 'facebook',

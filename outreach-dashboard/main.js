@@ -1954,19 +1954,23 @@ async function prepareWebsiteContactForm(chromeOpen, lead, subject, draft) {
     message: draft,
   };
   const filled = await evaluateChromeTabJson(chromeOpen, websiteContactFormFillExpression(fillPayload), 8000);
-  const attachmentPath = websiteMarketingAttachmentStatus().filePath;
-  const attachment = await setChromeFileInput(chromeOpen, attachmentPath);
+  const attachmentStatus = websiteMarketingAttachmentStatus();
+  const attachment = attachmentStatus.ok
+    ? await setChromeFileInput(chromeOpen, attachmentStatus.filePath)
+    : { ok: false, filePath: attachmentStatus.filePath, evidence: attachmentStatus.evidence };
   const requiredEmpty = filled && Array.isArray(filled.requiredEmpty) ? filled.requiredEmpty : [];
   const autoSubmitSetting = process.env.WEBSITE_CONTACT_AUTO_SUBMIT;
   const allowSubmit = !/^(0|false|no)$/i.test(String(autoSubmitSetting == null ? '1' : autoSubmitSetting));
   if (!attachment.ok) {
     return {
-      ok: false,
-      sendStatus: 'approval_pending',
-      evidence: `${filled && filled.evidence || 'website_contact_form_fields_prepare_attempted'};${attachment.evidence}`,
+      ok: Boolean(filled && filled.ok),
+      sendStatus: filled && filled.ok ? 'website_contact_ready' : 'approval_pending',
+      evidence: `${filled && filled.evidence || 'website_contact_form_fields_prepare_attempted'};${attachment.evidence};text_only_manual_submit_required`,
       filled,
       attachment,
-      nextAction: 'Configure WEBSITE_MARKETING_FILE or MARKETING_ATTACHMENT_PATH with the approved marketing file, then rerun. The form was not submitted.',
+      nextAction: filled && filled.ok
+        ? 'Website contact form text was prepared without an attachment. Review the browser, attach an approved marketing file manually if required, then submit manually.'
+        : 'Configure WEBSITE_MARKETING_FILE or MARKETING_ATTACHMENT_PATH with the approved marketing file, then rerun. The form was not submitted.',
     };
   }
   if (requiredEmpty.length && !allowSubmit) {
@@ -2010,33 +2014,6 @@ async function runWebsiteContactLead(lead = {}) {
   }
   const subject = websiteContactSubject(lead);
   const draft = websiteContactMessage(lead);
-  const attachment = websiteMarketingAttachmentStatus();
-  if (!attachment.ok) {
-    const output = {
-      verdict: 'approval_pending',
-      status: 'approval_pending',
-      reason: attachment.evidence || 'marketing_attachment_missing',
-      evidence: `website_contact_preflight_blocked;${attachment.evidence};website_contact_targets:${targets.length}`,
-      nextAction: 'Configure WEBSITE_MARKETING_FILE or MARKETING_ATTACHMENT_PATH with the approved marketing file, then rerun. Browser execution was skipped before touching the contact page.',
-      subject,
-      draft,
-      sendStatus: 'approval_pending',
-      attempts: [],
-    };
-    return {
-      ok: false,
-      engine: 'codex-chrome-extension-website-contact',
-      mode: 'website_contact_preflight_marketing_file',
-      targetUrl: targets[0] && targets[0].targetUrl,
-      sendStatus: 'approval_pending',
-      status: 'approval_pending',
-      reason: attachment.evidence || 'marketing_attachment_missing',
-      subject,
-      draft,
-      evidence: output.evidence,
-      output: JSON.stringify(output),
-    };
-  }
   const attempts = [];
   let lastResult = null;
   for (const target of targets) {
@@ -2048,6 +2025,32 @@ async function runWebsiteContactLead(lead = {}) {
       evidence: contactFlow.evidence,
     });
     if (!contactFlow.ok) {
+      if (lead.publicEmail || lead.contactEmail) {
+        const publicEmail = lead.publicEmail || lead.contactEmail;
+        const output = {
+          verdict: 'website_contact_ready',
+          evidence: `${contactFlow.evidence};public_email_fallback_available:${publicEmail};website_contact_target_attempts:${attempts.length}`,
+          nextAction: `Official contact page opened but the form was not machine-verified. Use the prepared subject/draft and send manually to ${publicEmail}, or submit the visible contact form manually.`,
+          subject,
+          draft,
+          publicEmail,
+          sendStatus: 'website_contact_ready',
+          attempts,
+        };
+        return {
+          ok: true,
+          engine: 'codex-chrome-extension-website-contact',
+          browserEngine: chromeOpen && chromeOpen.engine,
+          mode: 'website_contact_public_email_ready',
+          targetUrl: target.targetUrl,
+          chromeOpen,
+          sendStatus: 'website_contact_ready',
+          subject,
+          draft,
+          evidence: output.evidence,
+          output: JSON.stringify(output),
+        };
+      }
       lastResult = {
         ok: false,
         engine: 'codex-chrome-extension-website-contact',
@@ -2537,9 +2540,9 @@ async function runDailyAutomationQueue(payload = {}) {
   const previousResults = readJsonScriptArray(path.join(__dirname, 'autonomous-outreach-results.js'), 'AUTONOMOUS_OUTREACH_RESULTS');
   const sameDayCompanyKeys = sameDayAutomationCompanyKeys(previousResults);
   const attachmentReady = websiteMarketingAttachmentStatus().ok;
-  const dueCandidates = executableQueueCandidates(latest.dailyQueue, { allowWebsiteContact: attachmentReady });
-  const scheduledExecutable = executableQueueCandidates(latest.scheduledLater || [], { allowWebsiteContact: attachmentReady });
-  const potentialFallback = executableQueueCandidates(latest.dailyPotentialPool || [], { allowWebsiteContact: attachmentReady })
+  const dueCandidates = executableQueueCandidates(latest.dailyQueue, { allowWebsiteContact: true });
+  const scheduledExecutable = executableQueueCandidates(latest.scheduledLater || [], { allowWebsiteContact: true });
+  const potentialFallback = executableQueueCandidates(latest.dailyPotentialPool || [], { allowWebsiteContact: true })
     .filter(item => !['cooldown', 'blocked_partner', 'retain_low_icp', 'skip_exclusive_agency'].includes(String(item.action || '').toLowerCase()))
     .filter(item => !item.lastTouch && !item.previouslyContacted);
   const queueSource = dueCandidates.length ? 'dailyQueue' : scheduledExecutable.length ? 'scheduledLater' : 'dailyPotentialPool';

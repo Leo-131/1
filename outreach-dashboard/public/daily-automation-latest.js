@@ -1,5 +1,5 @@
 window.DAILY_AUTOMATION_LATEST = {
-  "generatedAt": "2026-07-13T11:02:49.402Z",
+  "generatedAt": "2026-07-13T12:14:13.951Z",
   "date": "2026-07-13",
   "mode": "daily-icp-first-automation-loop",
   "executionLayer": "Codex Chrome Extension primary; AutoClaw compatible",
@@ -104,7 +104,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "linkedin": "",
       "publicEmail": "",
       "contactEmail": "",
-      "vendorPortal": "",
+      "vendorPortal": "https://www.snowys.com.au/contact-us",
       "contactPhone": "",
       "contactNote": "",
       "publicEmailStatus": "",
@@ -121,7 +121,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/13 19:02:49",
+        "localTime": "2026/7/13 20:11:42",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -141,9 +141,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "taskId": "google-customer-snowys-outdoors-facebook",
       "targetRegion": "oceania",
       "targetRegionScore": 0,
-      "contactChannelScore": 9,
-      "dealProbabilityScore": 168,
-      "priorityScore": 168,
+      "contactChannelScore": 17,
+      "dealProbabilityScore": 176,
+      "priorityScore": 176,
       "lastStatus": "send_unconfirmed",
       "lastEvidence": "facebook_draft_not_inserted_after_composer_refocus",
       "lastTouch": "2026-07-10T07:04:15.294Z",
@@ -205,7 +205,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/13 19:02:49",
+        "localTime": "2026/7/13 20:11:42",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -250,6 +250,25 @@ window.DAILY_AUTOMATION_LATEST = {
       "visibleOnly": true
     },
     {
+      "linkedinUrl": "https://uk.linkedin.com/company/summit-international",
+      "founded": "",
+      "headquarters": "Basildon, Essex, United Kingdom",
+      "companyScale": "UK based importer and distributor for the outdoor B2B trade sector",
+      "coverage": "United Kingdom / Europe",
+      "mainBrands": "Camping, sports and outdoor leisure products for trade customers",
+      "salesChannel": "B2B distribution, showrooms, official contact form and trade website",
+      "buyingCapability": "High; outdoor B2B importer/distributor with retailer and wholesale channels",
+      "decisionMaker": "Brand partnerships, buying, or distribution director for outdoor products",
+      "publicEmail": "info@summitint.co",
+      "publicEmailStatus": "Official public contact email from Summit International contact page; buyer email not publicly verified.",
+      "contactPhone": "+44 (0) 1268 505 171",
+      "vendorPortal": "https://www.summitint.co/contact/",
+      "linkedinCompany": "https://uk.linkedin.com/company/summit-international",
+      "contactNote": "Use official contact form or info email to request buying/distribution contact routing.",
+      "dataSources": [
+        "Summit International official contact page",
+        "Summit International LinkedIn/public company sources"
+      ],
       "id": "google-customer-summit-international-website-contact",
       "name": "Summit International",
       "company": "Summit International",
@@ -270,14 +289,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "businessModel": "Retail Chain",
       "productFit": "FLEXTAIL portable pumps, outdoor power, camping lighting and compact camping accessories",
       "opportunity": "UK outdoor B2B importer and distributor supplying retailers, wholesalers, supermarkets, and independent businesses across camping and hiking categories.",
-      "linkedin_url": "",
-      "linkedin": "",
-      "publicEmail": "",
-      "contactEmail": "",
-      "vendorPortal": "",
-      "contactPhone": "",
-      "contactNote": "",
-      "publicEmailStatus": "",
+      "linkedin_url": "https://uk.linkedin.com/company/summit-international",
+      "linkedin": "https://uk.linkedin.com/company/summit-international",
+      "contactEmail": "info@summitint.co",
       "website": "https://www.summitint.co/",
       "evidenceUrl": "https://www.google.com/search?q=%22Summit%20International%22%20%22outdoor%20importer%20and%20distributor%22%20%22United%20Kingdom%22%20buyer%20OR%20wholesale%20OR%20contact",
       "query": "https://www.google.com/search?q=%22Summit%20International%22%20%22outdoor%20importer%20and%20distributor%22%20%22United%20Kingdom%22%20buyer%20OR%20wholesale%20OR%20contact",
@@ -291,13 +305,13 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/13 19:02:49",
+        "localTime": "2026/7/13 20:11:42",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
-      "platformUrl": "https://www.summitint.co/contact-us",
-      "url": "https://www.summitint.co/contact-us",
-      "contactUrl": "https://www.summitint.co/contact-us",
+      "platformUrl": "https://www.summitint.co/contact/",
+      "url": "https://www.summitint.co/contact/",
+      "contactUrl": "https://www.summitint.co/contact/",
       "contactSearchUrl": "https://www.google.com/search?q=site%3Awww.summitint.co%20%22Summit%20International%22%20contact%20buyer%20wholesale%20email%20vendor",
       "emailFrom": "leo@flextailgear.com",
       "websiteContactSubject": "Flextail & Vollyc | Lightweight Outdoor & 3C Electronics – Potential Cooperation",
@@ -308,7 +322,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "alternateChannels": {
         "instagram": "",
         "facebook": "",
-        "websiteContact": "https://www.summitint.co/contact-us"
+        "websiteContact": "https://www.summitint.co/contact/"
       },
       "invalidChannels": {
         "instagram": {
@@ -327,9 +341,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "taskId": "google-customer-summit-international-website-contact",
       "targetRegion": "europe",
       "targetRegionScore": 32,
-      "contactChannelScore": 13,
-      "dealProbabilityScore": 207,
-      "priorityScore": 207,
+      "contactChannelScore": 25,
+      "dealProbabilityScore": 219,
+      "priorityScore": 219,
       "lastStatus": "",
       "lastEvidence": "",
       "lastTouch": "",
@@ -338,6 +352,25 @@ window.DAILY_AUTOMATION_LATEST = {
   ],
   "dailyPotentialPool": [
     {
+      "linkedinUrl": "https://uk.linkedin.com/company/summit-international",
+      "founded": "",
+      "headquarters": "Basildon, Essex, United Kingdom",
+      "companyScale": "UK based importer and distributor for the outdoor B2B trade sector",
+      "coverage": "United Kingdom / Europe",
+      "mainBrands": "Camping, sports and outdoor leisure products for trade customers",
+      "salesChannel": "B2B distribution, showrooms, official contact form and trade website",
+      "buyingCapability": "High; outdoor B2B importer/distributor with retailer and wholesale channels",
+      "decisionMaker": "Brand partnerships, buying, or distribution director for outdoor products",
+      "publicEmail": "info@summitint.co",
+      "publicEmailStatus": "Official public contact email from Summit International contact page; buyer email not publicly verified.",
+      "contactPhone": "+44 (0) 1268 505 171",
+      "vendorPortal": "https://www.summitint.co/contact/",
+      "linkedinCompany": "https://uk.linkedin.com/company/summit-international",
+      "contactNote": "Use official contact form or info email to request buying/distribution contact routing.",
+      "dataSources": [
+        "Summit International official contact page",
+        "Summit International LinkedIn/public company sources"
+      ],
       "id": "google-customer-summit-international-website-contact",
       "name": "Summit International",
       "company": "Summit International",
@@ -358,14 +391,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "businessModel": "Retail Chain",
       "productFit": "FLEXTAIL portable pumps, outdoor power, camping lighting and compact camping accessories",
       "opportunity": "UK outdoor B2B importer and distributor supplying retailers, wholesalers, supermarkets, and independent businesses across camping and hiking categories.",
-      "linkedin_url": "",
-      "linkedin": "",
-      "publicEmail": "",
-      "contactEmail": "",
-      "vendorPortal": "",
-      "contactPhone": "",
-      "contactNote": "",
-      "publicEmailStatus": "",
+      "linkedin_url": "https://uk.linkedin.com/company/summit-international",
+      "linkedin": "https://uk.linkedin.com/company/summit-international",
+      "contactEmail": "info@summitint.co",
       "website": "https://www.summitint.co/",
       "evidenceUrl": "https://www.google.com/search?q=%22Summit%20International%22%20%22outdoor%20importer%20and%20distributor%22%20%22United%20Kingdom%22%20buyer%20OR%20wholesale%20OR%20contact",
       "query": "https://www.google.com/search?q=%22Summit%20International%22%20%22outdoor%20importer%20and%20distributor%22%20%22United%20Kingdom%22%20buyer%20OR%20wholesale%20OR%20contact",
@@ -379,13 +407,13 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/13 19:02:49",
+        "localTime": "2026/7/13 20:11:42",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
-      "platformUrl": "https://www.summitint.co/contact-us",
-      "url": "https://www.summitint.co/contact-us",
-      "contactUrl": "https://www.summitint.co/contact-us",
+      "platformUrl": "https://www.summitint.co/contact/",
+      "url": "https://www.summitint.co/contact/",
+      "contactUrl": "https://www.summitint.co/contact/",
       "contactSearchUrl": "https://www.google.com/search?q=site%3Awww.summitint.co%20%22Summit%20International%22%20contact%20buyer%20wholesale%20email%20vendor",
       "emailFrom": "leo@flextailgear.com",
       "websiteContactSubject": "Flextail & Vollyc | Lightweight Outdoor & 3C Electronics – Potential Cooperation",
@@ -396,7 +424,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "alternateChannels": {
         "instagram": "",
         "facebook": "",
-        "websiteContact": "https://www.summitint.co/contact-us"
+        "websiteContact": "https://www.summitint.co/contact/"
       },
       "invalidChannels": {
         "instagram": {
@@ -412,27 +440,42 @@ window.DAILY_AUTOMATION_LATEST = {
       },
       "identitySource": "official website contact path + Google buyer/contact query",
       "channelPriority": 3,
-      "linkedinUrl": "",
-      "linkedinSearchUrl": "https://www.linkedin.com/search/results/all/?keywords=Summit%20International%20buyer%20outdoor%20LinkedIn",
+      "linkedinSearchUrl": "https://uk.linkedin.com/company/summit-international",
       "googleSearchUrl": "https://www.google.com/search?q=site%3Awww.summitint.co%20%22Summit%20International%22%20contact%20buyer%20wholesale%20email%20vendor",
-      "dataSources": [
-        "google_linkedin_social_refill"
-      ],
       "taskId": "google-customer-summit-international-website-contact",
       "lastStatus": "",
       "lastEvidence": "",
       "lastTouch": "",
       "targetRegion": "europe",
       "targetRegionScore": 32,
-      "contactChannelScore": 13,
-      "dealProbabilityScore": 207,
-      "priorityScore": 220,
+      "contactChannelScore": 25,
+      "dealProbabilityScore": 219,
+      "priorityScore": 244,
       "potentialSource": "google_linkedin_social_refill",
       "nextAction": "official_website_or_email_contact"
     }
   ],
   "dailyQueue": [
     {
+      "linkedinUrl": "https://uk.linkedin.com/company/summit-international",
+      "founded": "",
+      "headquarters": "Basildon, Essex, United Kingdom",
+      "companyScale": "UK based importer and distributor for the outdoor B2B trade sector",
+      "coverage": "United Kingdom / Europe",
+      "mainBrands": "Camping, sports and outdoor leisure products for trade customers",
+      "salesChannel": "B2B distribution, showrooms, official contact form and trade website",
+      "buyingCapability": "High; outdoor B2B importer/distributor with retailer and wholesale channels",
+      "decisionMaker": "Brand partnerships, buying, or distribution director for outdoor products",
+      "publicEmail": "info@summitint.co",
+      "publicEmailStatus": "Official public contact email from Summit International contact page; buyer email not publicly verified.",
+      "contactPhone": "+44 (0) 1268 505 171",
+      "vendorPortal": "https://www.summitint.co/contact/",
+      "linkedinCompany": "https://uk.linkedin.com/company/summit-international",
+      "contactNote": "Use official contact form or info email to request buying/distribution contact routing.",
+      "dataSources": [
+        "Summit International official contact page",
+        "Summit International LinkedIn/public company sources"
+      ],
       "id": "google-customer-summit-international-website-contact",
       "name": "Summit International",
       "company": "Summit International",
@@ -453,14 +496,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "businessModel": "Retail Chain",
       "productFit": "FLEXTAIL portable pumps, outdoor power, camping lighting and compact camping accessories",
       "opportunity": "UK outdoor B2B importer and distributor supplying retailers, wholesalers, supermarkets, and independent businesses across camping and hiking categories.",
-      "linkedin_url": "",
-      "linkedin": "",
-      "publicEmail": "",
-      "contactEmail": "",
-      "vendorPortal": "",
-      "contactPhone": "",
-      "contactNote": "",
-      "publicEmailStatus": "",
+      "linkedin_url": "https://uk.linkedin.com/company/summit-international",
+      "linkedin": "https://uk.linkedin.com/company/summit-international",
+      "contactEmail": "info@summitint.co",
       "website": "https://www.summitint.co/",
       "evidenceUrl": "https://www.google.com/search?q=%22Summit%20International%22%20%22outdoor%20importer%20and%20distributor%22%20%22United%20Kingdom%22%20buyer%20OR%20wholesale%20OR%20contact",
       "query": "https://www.google.com/search?q=%22Summit%20International%22%20%22outdoor%20importer%20and%20distributor%22%20%22United%20Kingdom%22%20buyer%20OR%20wholesale%20OR%20contact",
@@ -474,13 +512,13 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/13 19:02:49",
+        "localTime": "2026/7/13 20:11:42",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
-      "platformUrl": "https://www.summitint.co/contact-us",
-      "url": "https://www.summitint.co/contact-us",
-      "contactUrl": "https://www.summitint.co/contact-us",
+      "platformUrl": "https://www.summitint.co/contact/",
+      "url": "https://www.summitint.co/contact/",
+      "contactUrl": "https://www.summitint.co/contact/",
       "contactSearchUrl": "https://www.google.com/search?q=site%3Awww.summitint.co%20%22Summit%20International%22%20contact%20buyer%20wholesale%20email%20vendor",
       "emailFrom": "leo@flextailgear.com",
       "websiteContactSubject": "Flextail & Vollyc | Lightweight Outdoor & 3C Electronics – Potential Cooperation",
@@ -491,7 +529,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "alternateChannels": {
         "instagram": "",
         "facebook": "",
-        "websiteContact": "https://www.summitint.co/contact-us"
+        "websiteContact": "https://www.summitint.co/contact/"
       },
       "invalidChannels": {
         "instagram": {
@@ -509,9 +547,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "channelPriority": 3,
       "targetRegion": "europe",
       "targetRegionScore": 32,
-      "contactChannelScore": 13,
-      "dealProbabilityScore": 207,
-      "priorityScore": 205
+      "contactChannelScore": 25,
+      "dealProbabilityScore": 219,
+      "priorityScore": 217
     }
   ],
   "cooldownQueue": [
@@ -557,7 +595,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/London",
-        "localTime": "Mon 12:02",
+        "localTime": "Mon 13:14",
         "window": "outside_work_hours",
         "nextBest": "Europe/London afternoon",
         "weight": 0
@@ -610,7 +648,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Mon 07:02",
+        "localTime": "Mon 08:14",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -663,7 +701,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/London",
-        "localTime": "Mon 12:02",
+        "localTime": "Mon 13:14",
         "window": "outside_work_hours",
         "nextBest": "Europe/London afternoon",
         "weight": 0
@@ -716,7 +754,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/London",
-        "localTime": "Mon 12:02",
+        "localTime": "Mon 13:14",
         "window": "outside_work_hours",
         "nextBest": "Europe/London afternoon",
         "weight": 0
@@ -769,7 +807,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Mon 07:02",
+        "localTime": "Mon 08:14",
         "window": "outside_work_hours",
         "nextBest": "America/Toronto morning",
         "weight": 0
@@ -822,7 +860,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Mon 07:02",
+        "localTime": "Mon 08:14",
         "window": "outside_work_hours",
         "nextBest": "America/Toronto morning",
         "weight": 0
@@ -875,7 +913,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Asia/Jakarta",
-        "localTime": "Mon 18:02",
+        "localTime": "Mon 19:14",
         "window": "outside_work_hours",
         "nextBest": "Asia/Jakarta morning",
         "weight": 0
@@ -928,7 +966,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Australia/Sydney",
-        "localTime": "Mon 21:02",
+        "localTime": "Mon 22:14",
         "window": "outside_work_hours",
         "nextBest": "Australia/Sydney morning",
         "weight": 0
@@ -981,7 +1019,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Pacific/Auckland",
-        "localTime": "Mon 23:02",
+        "localTime": "Tue 00:14",
         "window": "outside_work_hours",
         "nextBest": "Pacific/Auckland morning",
         "weight": 0
@@ -1034,7 +1072,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Pacific/Auckland",
-        "localTime": "Mon 23:02",
+        "localTime": "Tue 00:14",
         "window": "outside_work_hours",
         "nextBest": "Pacific/Auckland morning",
         "weight": 0
@@ -1087,7 +1125,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Pacific/Auckland",
-        "localTime": "Mon 23:02",
+        "localTime": "Tue 00:14",
         "window": "outside_work_hours",
         "nextBest": "Pacific/Auckland morning",
         "weight": 0
@@ -1140,7 +1178,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Pacific/Auckland",
-        "localTime": "Mon 23:02",
+        "localTime": "Tue 00:14",
         "window": "outside_work_hours",
         "nextBest": "Pacific/Auckland morning",
         "weight": 0
@@ -1193,7 +1231,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Pacific/Auckland",
-        "localTime": "Mon 23:02",
+        "localTime": "Tue 00:14",
         "window": "outside_work_hours",
         "nextBest": "Pacific/Auckland morning",
         "weight": 0
@@ -1246,7 +1284,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Asia/Kolkata",
-        "localTime": "Mon 16:32",
+        "localTime": "Mon 17:44",
         "window": "outside_work_hours",
         "nextBest": "Asia/Kolkata morning",
         "weight": 0
@@ -1313,7 +1351,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/13 19:02:49",
+        "localTime": "2026/7/13 20:11:42",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -1393,7 +1431,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/13 19:02:49",
+        "localTime": "2026/7/13 20:11:42",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -1473,7 +1511,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/13 19:02:49",
+        "localTime": "2026/7/13 20:11:42",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -1553,7 +1591,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/13 19:02:49",
+        "localTime": "2026/7/13 20:11:42",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -1633,7 +1671,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/13 19:02:49",
+        "localTime": "2026/7/13 20:11:42",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -1713,7 +1751,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/13 19:02:49",
+        "localTime": "2026/7/13 20:11:42",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -1793,7 +1831,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/13 19:02:49",
+        "localTime": "2026/7/13 20:11:42",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -1873,7 +1911,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/13 19:02:49",
+        "localTime": "2026/7/13 20:11:42",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -1922,7 +1960,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "linkedin": "",
       "publicEmail": "",
       "contactEmail": "",
-      "vendorPortal": "",
+      "vendorPortal": "https://libertymountain.com/find-a-rep",
       "contactPhone": "",
       "contactNote": "",
       "publicEmailStatus": "",
@@ -1939,7 +1977,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/13 19:02:49",
+        "localTime": "2026/7/13 20:11:42",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -1956,9 +1994,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "channelPriority": 1,
       "targetRegion": "americas",
       "targetRegionScore": 30,
-      "contactChannelScore": 9,
-      "dealProbabilityScore": 206,
-      "priorityScore": 206,
+      "contactChannelScore": 17,
+      "dealProbabilityScore": 214,
+      "priorityScore": 214,
       "lastStatus": "send_unconfirmed",
       "lastEvidence": "facebook_send_clicked_but_confirmation_missing",
       "lastTouch": "2026-07-10T03:05:08.706Z"
@@ -1988,7 +2026,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "linkedin": "",
       "publicEmail": "",
       "contactEmail": "",
-      "vendorPortal": "",
+      "vendorPortal": "https://www.backcountry.com/sc/contact-us",
       "contactPhone": "",
       "contactNote": "",
       "publicEmailStatus": "",
@@ -2005,7 +2043,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/13 19:02:49",
+        "localTime": "2026/7/13 20:11:42",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -2022,9 +2060,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "channelPriority": 1,
       "targetRegion": "americas",
       "targetRegionScore": 30,
-      "contactChannelScore": 9,
-      "dealProbabilityScore": 205,
-      "priorityScore": 205,
+      "contactChannelScore": 17,
+      "dealProbabilityScore": 213,
+      "priorityScore": 213,
       "lastStatus": "sent_confirmed",
       "lastEvidence": "instagram_message_sent_confirmed_composer_cleared;follow_not_available;instagram_post_opened;post_liked;comment_submitted",
       "lastTouch": "2026-07-10T04:03:24.818Z"
@@ -2054,7 +2092,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "linkedin": "",
       "publicEmail": "",
       "contactEmail": "",
-      "vendorPortal": "",
+      "vendorPortal": "https://www.sportsmans.com/contact-us",
       "contactPhone": "",
       "contactNote": "",
       "publicEmailStatus": "",
@@ -2071,7 +2109,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/13 19:02:49",
+        "localTime": "2026/7/13 20:11:42",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -2088,9 +2126,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "channelPriority": 1,
       "targetRegion": "americas",
       "targetRegionScore": 30,
-      "contactChannelScore": 9,
-      "dealProbabilityScore": 204,
-      "priorityScore": 204,
+      "contactChannelScore": 17,
+      "dealProbabilityScore": 212,
+      "priorityScore": 212,
       "lastStatus": "send_unconfirmed",
       "lastEvidence": "facebook_send_clicked_but_confirmation_missing",
       "lastTouch": "2026-07-10T03:05:36.255Z"
@@ -2120,7 +2158,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "linkedin": "",
       "publicEmail": "",
       "contactEmail": "",
-      "vendorPortal": "",
+      "vendorPortal": "https://www.campingworld.com/contact-us.html",
       "contactPhone": "",
       "contactNote": "",
       "publicEmailStatus": "",
@@ -2137,7 +2175,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/13 19:02:49",
+        "localTime": "2026/7/13 20:11:42",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -2154,9 +2192,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "channelPriority": 1,
       "targetRegion": "americas",
       "targetRegionScore": 30,
-      "contactChannelScore": 9,
-      "dealProbabilityScore": 200,
-      "priorityScore": 200,
+      "contactChannelScore": 17,
+      "dealProbabilityScore": 208,
+      "priorityScore": 208,
       "lastStatus": "sent_confirmed",
       "lastEvidence": "instagram_message_sent_confirmed_composer_cleared;instagram_post_opened;post_like_double_tap_attempted;comment_box_not_available;follow_not_available",
       "lastTouch": "2026-07-10T02:58:34.825Z"
@@ -2186,7 +2224,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "linkedin": "",
       "publicEmail": "",
       "contactEmail": "",
-      "vendorPortal": "",
+      "vendorPortal": "https://www.evo.com/contact",
       "contactPhone": "",
       "contactNote": "",
       "publicEmailStatus": "",
@@ -2203,7 +2241,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/13 19:02:49",
+        "localTime": "2026/7/13 20:11:42",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -2220,9 +2258,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "channelPriority": 1,
       "targetRegion": "americas",
       "targetRegionScore": 30,
-      "contactChannelScore": 9,
-      "dealProbabilityScore": 199,
-      "priorityScore": 199,
+      "contactChannelScore": 17,
+      "dealProbabilityScore": 207,
+      "priorityScore": 207,
       "lastStatus": "send_unconfirmed",
       "lastEvidence": "instagram_send_clicked_but_confirmation_missing",
       "lastTouch": "2026-07-10T04:03:58.070Z"
@@ -2252,7 +2290,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "linkedin": "",
       "publicEmail": "",
       "contactEmail": "",
-      "vendorPortal": "",
+      "vendorPortal": "https://www.mountainwarehouse.com/help/contact-us/",
       "contactPhone": "",
       "contactNote": "",
       "publicEmailStatus": "",
@@ -2269,7 +2307,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/13 19:02:49",
+        "localTime": "2026/7/13 20:11:42",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -2286,9 +2324,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "channelPriority": 1,
       "targetRegion": "europe",
       "targetRegionScore": 32,
-      "contactChannelScore": 9,
-      "dealProbabilityScore": 199,
-      "priorityScore": 199,
+      "contactChannelScore": 17,
+      "dealProbabilityScore": 207,
+      "priorityScore": 207,
       "lastStatus": "send_unconfirmed",
       "lastEvidence": "facebook_send_clicked_but_confirmation_missing",
       "lastTouch": "2026-07-10T04:07:58.183Z"
@@ -2350,7 +2388,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/13 19:02:49",
+        "localTime": "2026/7/13 20:11:42",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -2430,7 +2468,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/13 19:02:49",
+        "localTime": "2026/7/13 20:11:42",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -2498,7 +2536,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Mon 07:02",
+        "localTime": "Mon 08:14",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -2530,9 +2568,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "Target-region priority favors Southeast Asia first, then Europe, then the Americas; other regions remain eligible but lower priority."
     ],
     "byAction": {
+      "skip_exclusive_agency": 1,
       "cooldown": 14,
-      "retry_or_alternate_channel": 1,
-      "skip_exclusive_agency": 1
+      "retry_or_alternate_channel": 1
     },
     "keywordOpportunities": [
       {
