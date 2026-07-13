@@ -1,4 +1,4 @@
-const CACHE_NAME = 'customer-development-system-v18-7-22-20260713-active-queue';
+const CACHE_NAME = 'customer-development-system-v18-7-23-20260713-okki-module';
 const APP_SHELL = [
   './',
   './index.html',
