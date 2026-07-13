@@ -112,6 +112,8 @@ if (!main.includes('function executionRecoveryHint(')
   || !main.includes('recoveryActions')
   || !main.includes('blockerCounts')
   || !main.includes('formatExecutionBlockerStatus(blockerSummary)')
+  || !commandCenter.includes('function executionRecoveryCards(')
+  || !commandCenter.includes('cc-recovery-actions')
   || !commandCenter.includes('latestExecution.recoveryHint')) {
   throw new Error('Dashboard checks must cover execution recovery hints for no-browser blocker runs');
 }
