@@ -101,6 +101,12 @@ if (!main.includes("executionPhase: 'no_executable_tasks'")
   throw new Error('No-executable daily runs must be recorded as no browser/customer development');
 }
 
+if (!main.includes("executionPhase: chromeOpenedCount ? 'browser_execution' : 'no_browser_execution'")
+  || !main.includes('customerDevelopmentPerformed: realDevelopmentCount > 0')
+  || !main.includes('chromeOpenedCount > 0')) {
+  throw new Error('Browser-open daily runs must still require real customer development before reporting development');
+}
+
 if (!commandCenter.includes('No Chrome/browser development was performed')
   || !commandCenter.includes('No customer development was performed')) {
   throw new Error('Dashboard must not report skipped/no-browser runs as customer development');
