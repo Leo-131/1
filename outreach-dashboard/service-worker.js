@@ -1,4 +1,4 @@
-const CACHE_NAME = 'customer-development-system-v18-7-21-20260710-potential-pool';
+const CACHE_NAME = 'customer-development-system-v18-7-22-20260713-active-queue';
 const APP_SHELL = [
   './',
   './index.html',

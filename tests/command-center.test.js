@@ -149,7 +149,7 @@ test('today queue separates untouched work from historical follow-ups', () => {
   assert.ok(js.includes('function followupTasks'));
   assert.ok(js.includes('function executableDevelopmentTasks'));
   assert.ok(js.includes('function isAutoDevelopmentTask'));
-  assert.ok(js.includes("query.get('queue') || 'potential'"));
+  assert.ok(js.includes("query.get('queue') || 'untouched'"));
   assert.ok(js.includes("latestQueueRows('dailyPotentialPool')"));
   assert.ok(js.includes("queue: 'untouched'"));
   assert.ok(js.includes("queue: 'followup'"));
@@ -219,8 +219,8 @@ test('all reporting sections use live automation artifacts', () => {
   assert.ok(js.includes('analytics.buildTemplateMetrics(liveOperationalRecords())'));
   assert.ok(js.includes('const events = liveAuditEvents();'));
   assert.ok(js.includes('...liveOperationalRecords()'));
-  assert.ok(html.includes('20260710-potential-pool'));
-  assert.ok(serviceWorkerJs.includes('customer-development-system-v18-7-21-20260710-potential-pool'));
+  assert.ok(html.includes('20260713-active-queue'));
+  assert.ok(serviceWorkerJs.includes('customer-development-system-v18-7-22-20260713-active-queue'));
 });
 
 test('reporting center exposes reply conversion diagnostics and CSV rates', () => {

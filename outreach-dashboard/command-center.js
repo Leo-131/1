@@ -496,7 +496,7 @@
       || tasks.find(item => item.taskId === taskId);
   }
   function todayDevelopTasks() {
-    return latestRun ? latestQueueRows('dailyPotentialPool') : untouchedTasks();
+    return latestRun ? executableDevelopmentTasks() : untouchedTasks();
   }
   function todayFollowupTasks() {
     return latestRun ? latestQueueRows('scheduledLater') : followupTasks();
@@ -1292,7 +1292,7 @@
     }).join('')}</tbody></table>`;
   }
   function queue() {
-    const mode = query.get('queue') || 'potential';
+    const mode = query.get('queue') || 'untouched';
     const list = latestRun
       ? (mode === 'potential' ? latestQueueRows('dailyPotentialPool') : mode === 'followup' ? todayFollowupTasks() : mode === 'cooldown' ? latestQueueRows('cooldownQueue') : mode === 'all' ? latestQueueRows('all') : executableDevelopmentTasks())
       : (mode === 'followup' ? followupTasks() : mode === 'all' ? tasks : untouchedTasks());
@@ -1303,7 +1303,7 @@
       ['cooldown', '短期不重复', latestRun ? latestQueueRows('cooldownQueue').length : 0],
       ['all', '全部任务', latestRun ? latestQueueRows('all').length : tasks.length],
     ];
-    return `${pageHead('今日队列', '默认显示每日高 ICP 潜客清单；可自动触达是通过防重复、冷却和身份核验后的执行子集')}
+    return `${pageHead('今日队列', '默认显示可自动触达客户；高 ICP 潜客清单已剔除已开发和冷却中的历史客户')}
       <div class="cc-view-tabs">${tabs.map(([key, label, count]) => `<a class="${mode === key ? 'active' : ''}" href="${urlFor('queue', { queue: key })}">${label} <b>${count}</b></a>`).join('')}</div>
       <div class="cc-table-wrap">${taskTable(list)}</div>`;
   }

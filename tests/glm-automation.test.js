@@ -41,6 +41,21 @@ test('unsubmitted website preparation does not create customer-development coold
   assert.equal(index.activeCooldown.size, 0);
 });
 
+test('daily potential pool excludes previously touched candidates', () => {
+  assert.equal(dailyRunner.isActivePotentialCandidate({
+    company: 'Bass Pro Shops',
+    action: 'cooldown',
+    lastTouch: '2026-07-13T01:00:00.000Z',
+    lastStatus: 'sent_confirmed',
+  }), false);
+  assert.equal(dailyRunner.isActivePotentialCandidate({
+    company: 'New Outdoor Retailer',
+    action: 'develop',
+    platform: 'instagram',
+    url: 'https://www.instagram.com/newoutdoorretailer/',
+  }), true);
+});
+
 test('GLM response parser accepts fenced JSON', () => {
   assert.deepEqual(parseJsonContent('```json\n{"fitScore":88,"verdict":"develop"}\n```'), {
     fitScore: 88,

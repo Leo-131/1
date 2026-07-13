@@ -2388,6 +2388,28 @@ function queueItemToLead(item) {
   };
 }
 
+function isWebsiteContactQueueItem(item = {}) {
+  const text = [
+    item.platform,
+    item.action,
+    item.reason,
+    item.id,
+    item.url,
+    item.contactUrl,
+  ].filter(Boolean).join(' ').toLowerCase();
+  return /\bemail\b|email_priority|website-contact|official_website_contact_channel|website_contact/.test(text);
+}
+
+function executableQueueCandidates(items = [], options = {}) {
+  const executableActions = new Set(['develop', 'retry_or_alternate_channel', 'discover_and_develop', 'email_priority']);
+  const allowWebsiteContact = options.allowWebsiteContact !== false;
+  return (Array.isArray(items) ? items : [])
+    .filter(item => executableActions.has(item.action))
+    .filter(item => item.url)
+    .filter(item => allowWebsiteContact || !isWebsiteContactQueueItem(item))
+    .filter(item => !blockingAutomationResultFor(item));
+}
+
 let currentDailyExecutionProgress = null;
 
 const REAL_CUSTOMER_DEVELOPMENT_STATUSES = new Set([
@@ -2435,6 +2457,21 @@ function buildExecutionBlockerSummary(results = [], skipped = []) {
   return Array.from(blockers.values()).sort((a, b) => b.count - a.count || a.reason.localeCompare(b.reason));
 }
 
+function uniqueSkippedRows(rows = []) {
+  const seen = new Set();
+  return (Array.isArray(rows) ? rows : []).filter((item) => {
+    const key = [
+      item && item.id,
+      item && item.company,
+      item && item.action,
+      item && item.reason,
+    ].join('|');
+    if (seen.has(key)) return false;
+    seen.add(key);
+    return true;
+  });
+}
+
 function executionRecoveryHint(blockerSummary = []) {
   const reasons = new Set((Array.isArray(blockerSummary) ? blockerSummary : []).map(item => item && item.reason));
   const hints = [];
@@ -2478,19 +2515,20 @@ async function runDailyAutomationQueue(payload = {}) {
   const requestedLimit = Math.max(1, Math.min(Number(payload && payload.limit || 10), 100));
   const limit = requestedLimit;
   const parallelLimit = 1;
-  const executableActions = new Set(['develop', 'retry_or_alternate_channel', 'discover_and_develop', 'email_priority']);
   const previousResults = readJsonScriptArray(path.join(__dirname, 'autonomous-outreach-results.js'), 'AUTONOMOUS_OUTREACH_RESULTS');
   const sameDayCompanyKeys = sameDayAutomationCompanyKeys(previousResults);
-  const dueCandidates = latest.dailyQueue
-    .filter(item => executableActions.has(item.action))
-    .filter(item => item.url)
-    .filter(item => !blockingAutomationResultFor(item));
-  const scheduledExecutable = (latest.scheduledLater || [])
-    .filter(item => executableActions.has(item.action))
-    .filter(item => item.url)
-    .filter(item => !blockingAutomationResultFor(item));
-  const queueSource = dueCandidates.length ? 'dailyQueue' : 'scheduledLater';
-  const candidatePool = queueSource === 'dailyQueue' ? dueCandidates : scheduledExecutable;
+  const attachmentReady = websiteMarketingAttachmentStatus().ok;
+  const dueCandidates = executableQueueCandidates(latest.dailyQueue, { allowWebsiteContact: attachmentReady });
+  const scheduledExecutable = executableQueueCandidates(latest.scheduledLater || [], { allowWebsiteContact: attachmentReady });
+  const potentialFallback = executableQueueCandidates(latest.dailyPotentialPool || [], { allowWebsiteContact: attachmentReady })
+    .filter(item => !['cooldown', 'blocked_partner', 'retain_low_icp', 'skip_exclusive_agency'].includes(String(item.action || '').toLowerCase()))
+    .filter(item => !item.lastTouch && !item.previouslyContacted);
+  const queueSource = dueCandidates.length ? 'dailyQueue' : scheduledExecutable.length ? 'scheduledLater' : 'dailyPotentialPool';
+  const candidatePool = queueSource === 'dailyQueue'
+    ? dueCandidates
+    : queueSource === 'scheduledLater'
+      ? scheduledExecutable
+      : potentialFallback;
   const executable = [];
   const skipped = [];
   const selectedCompanyKeys = new Set(sameDayCompanyKeys);
@@ -2507,12 +2545,24 @@ async function runDailyAutomationQueue(payload = {}) {
     executable.push(item);
     if (executable.length >= limit) break;
   }
-  [...latest.dailyQueue, ...(latest.scheduledLater || [])]
+  [...latest.dailyQueue, ...(latest.scheduledLater || []), ...(latest.dailyPotentialPool || [])]
     .filter(item => !executable.some(run => run.id === item.id))
     .filter(item => !skipped.some(run => run.id === item.id))
-    .forEach(item => skipped.push({ id: item.id, company: item.company, action: item.action, reason: item.reason }));
+    .forEach(item => skipped.push({
+      id: item.id,
+      company: item.company,
+      action: item.action,
+      reason: !attachmentReady && isWebsiteContactQueueItem(item)
+        ? 'marketing_attachment_missing'
+        : item.reason,
+    }));
 
   if (!executable.length) {
+    const skippedRows = uniqueSkippedRows(skipped);
+    const blockerSummary = buildExecutionBlockerSummary([], skippedRows);
+    const userVisibleStatus = formatExecutionBlockerStatus(blockerSummary)
+      || 'No Chrome/browser development was performed because safety gates left no executable tasks.';
+    const recoveryHint = executionRecoveryHint(blockerSummary);
     return {
       ok: false,
       skippedOnly: true,
@@ -2524,9 +2574,11 @@ async function runDailyAutomationQueue(payload = {}) {
       customerMessageSent: false,
       realDevelopmentCount: 0,
       reportingVerdict: 'no_customer_development_performed',
-      userVisibleStatus: 'No Chrome/browser development was performed because safety gates left no executable tasks.',
+      userVisibleStatus,
+      recoveryHint,
       error: 'No executable tasks. Website-contact, social, cooldown, exclusive-agency, and verification safety gates left nothing safe to prepare.',
-      skipped,
+      skipped: skippedRows,
+      blockerSummary,
       summary: latest.summary || {},
     };
   }

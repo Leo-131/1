@@ -1028,6 +1028,14 @@ function potentialStatusFor(item, history) {
   return { action: item.action || 'develop', reason: item.reason || 'high_icp_potential_ready', touch };
 }
 
+function isActivePotentialCandidate(item) {
+  const action = String(item && item.action || '').toLowerCase();
+  if (['cooldown', 'blocked_partner', 'retain_low_icp', 'skip_exclusive_agency'].includes(action)) return false;
+  if (item && (item.lastTouch || item.lastStatus || item.lastEvidence)) return false;
+  if (item && item.previouslyContacted) return false;
+  return ['develop', 'retry_or_alternate_channel', 'verify_target', 'email_priority'].includes(action);
+}
+
 function normalizePotentialItem(item, sourceType, history, index = 0) {
   const base = {
     ...item,
@@ -1094,6 +1102,7 @@ function buildDailyPotentialPool(classified, discoveryRun, context, targetSize) 
     .map((item, index) => normalizePotentialItem(item, 'google_linkedin_social_refill', history, index));
   const seen = new Set();
   return [...currentPlan, ...embedded, ...discovered]
+    .filter(isActivePotentialCandidate)
     .sort(priorityCompare)
     .filter(item => {
       const key = slugKey(item.company || item.name || item.id);
@@ -1236,6 +1245,7 @@ module.exports = {
   buildModelOptimizations,
   channelPriorityScore,
   companyLeadKeys,
+  isActivePotentialCandidate,
   isKnownPartnerCompany,
   knownTouchIndex,
   preferSocialChannels,
