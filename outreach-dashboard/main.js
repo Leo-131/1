@@ -2419,6 +2419,18 @@ function isWebsiteContactQueueItem(item = {}) {
   return /\bemail\b|email_priority|website-contact|official_website_contact_channel|website_contact/.test(text);
 }
 
+function hasNoSafeMessageButton(item = {}) {
+  const text = [
+    item.reason,
+    item.evidence,
+    item.lastEvidence,
+    item.sendStatus,
+    item.lastStatus,
+    item.action,
+  ].filter(Boolean).join(' ');
+  return /profile_valid_no_message_button|profile_opened_no_message_button|no_message_button|no safe message button/i.test(text);
+}
+
 function socialPriorityRank(item = {}) {
   const text = [item.platform, item.id, item.url, item.targetUrl, item.verifiedTargetUrl].filter(Boolean).join(' ').toLowerCase();
   if (/\bfacebook\b|facebook\.com/.test(text)) return 300;
@@ -2439,6 +2451,7 @@ function executableQueueCandidates(items = [], options = {}) {
   return (Array.isArray(items) ? items : [])
     .filter(item => executableActions.has(item.action))
     .filter(item => item.url)
+    .filter(item => !hasNoSafeMessageButton(item))
     .filter(item => allowWebsiteContact || !isWebsiteContactQueueItem(item))
     .filter(item => !blockingAutomationResultFor(item))
     .sort(developmentPriorityCompare);

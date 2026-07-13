@@ -424,6 +424,10 @@ function isTouchResult(result = {}) {
   return Boolean(result && TOUCH_STATUSES.has(result.status) && isVerifiedWebsiteContactResult(result));
 }
 
+function noSafeMessageButtonEvidence(value = '') {
+  return /profile_valid_no_message_button|profile_opened_no_message_button|no_message_button|no safe message button/i.test(String(value || ''));
+}
+
 function isSameDayDevelopmentResult(result = {}, now = Date.now()) {
   return Boolean(result
     && SAME_DAY_DEVELOPMENT_STATUSES.has(result.status)
@@ -574,6 +578,9 @@ function classifyTask(task, context) {
   const lastTouch = isTouchResult(result) ? result.timestamp : '';
   const cooldownActive = lastTouch && daysSince(lastTouch, context.now) < COOLDOWN_DAYS;
   const emailPriority = result && result.status === 'skipped' && /email_channel_found/i.test(String(result.evidence || ''));
+  const noSafeMessageButton = result
+    && result.status === 'failed_open'
+    && noSafeMessageButtonEvidence(result.evidence);
   const sameDayByCompany = context.sameDayByCompany || new Map();
   const sameDayResult = companyLeadKeys(task)
     .map(key => sameDayByCompany.get(key))
@@ -607,6 +614,9 @@ function classifyTask(task, context) {
   } else if (isEmail || emailPriority) {
     action = 'email_priority';
     reason = task.reason || 'email_channel_found';
+  } else if (noSafeMessageButton) {
+    action = 'blocked_no_message_button';
+    reason = 'profile_valid_no_message_button';
   } else if (result && result.status === 'failed_open') {
     action = 'retry_or_alternate_channel';
     reason = result.evidence || 'previous_open_failed';
@@ -1023,7 +1033,7 @@ function potentialStatusFor(item, history) {
 
 function isActivePotentialCandidate(item) {
   const action = String(item && item.action || '').toLowerCase();
-  if (['cooldown', 'blocked_partner', 'retain_low_icp', 'skip_exclusive_agency'].includes(action)) return false;
+  if (['cooldown', 'blocked_partner', 'blocked_no_message_button', 'retain_low_icp', 'skip_exclusive_agency'].includes(action)) return false;
   if (item && (item.lastTouch || item.lastStatus || item.lastEvidence)) return false;
   if (item && item.previouslyContacted) return false;
   return ['develop', 'retry_or_alternate_channel', 'verify_target', 'email_priority'].includes(action);

@@ -47,6 +47,37 @@ test('daily execution ranks Facebook and Instagram before website contact fallba
   assert.ok(mainSource.includes('.sort(developmentPriorityCompare)'));
 });
 
+test('no-message social profiles are blocked from automatic execution', () => {
+  const result = {
+    task_id: 'verified-Instagram-triedandtrout',
+    target_url: 'https://www.instagram.com/triedandtroutsupply/',
+    status: 'failed_open',
+    evidence: 'profile_valid_no_message_button',
+    timestamp: '2026-07-13T13:10:32.166Z',
+  };
+  const classified = dailyRunner.classifyTask({
+    platform: 'Instagram',
+    name: 'triedandtrout',
+    company: 'Tried & Trout Supply Co',
+    fitScore: 90,
+    url: 'https://www.instagram.com/triedandtroutsupply/',
+  }, {
+    now: Date.parse('2026-07-13T14:00:00.000Z'),
+    profiles: {},
+    resultsByTask: new Map([
+      ['verifiedinstagramtriedandtrout', result],
+      ['httpswwwinstagramcomtriedandtroutsupply', result],
+      ['profiletriedandtroutsupply', result],
+    ]),
+    sameDayByCompany: new Map(),
+  });
+  assert.equal(classified.action, 'blocked_no_message_button');
+  assert.equal(classified.reason, 'profile_valid_no_message_button');
+  assert.equal(dailyRunner.isActivePotentialCandidate(classified), false);
+  assert.ok(mainSource.includes('function hasNoSafeMessageButton'));
+  assert.ok(mainSource.includes('.filter(item => !hasNoSafeMessageButton(item))'));
+});
+
 test('unsubmitted website preparation does not create customer-development cooldown', () => {
   const now = Date.parse('2026-07-09T04:00:00.000Z');
   const websiteAttempt = {
