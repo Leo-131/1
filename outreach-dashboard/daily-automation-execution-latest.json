@@ -57,6 +57,7 @@
     "highIcp": 16,
     "readyToDevelop": 0,
     "dueNow": 1,
+    "visibleTodayQueue": 3,
     "potentialPool": 1,
     "potentialPoolTarget": 100,
     "customerTableHighIcp": 0,
@@ -72,5 +73,5 @@
     "needsVerification": 0,
     "retainedLowIcp": 0
   },
-  "completedAt": "2026-07-13T08:04:11.596Z"
+  "completedAt": "2026-07-13T11:03:07.509Z"
 }
