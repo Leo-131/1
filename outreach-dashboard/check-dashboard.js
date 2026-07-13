@@ -106,4 +106,10 @@ if (!commandCenter.includes('No Chrome/browser development was performed')
   throw new Error('Dashboard must not report skipped/no-browser runs as customer development');
 }
 
+if (!main.includes('function executionRecoveryHint(')
+  || !main.includes('formatExecutionBlockerStatus(blockerSummary)')
+  || !commandCenter.includes('latestExecution.recoveryHint')) {
+  throw new Error('Dashboard checks must cover execution recovery hints for no-browser blocker runs');
+}
+
 console.log('checks ok');
