@@ -73,7 +73,7 @@ test('command center contains separated operational views', () => {
     assert.ok(js.includes(`['${viewId}'`), viewId);
   }
   assert.ok(publicIndexHtml.includes('<body class="command-center-booting">'));
-  assert.ok(publicIndexHtml.includes('command-center.js?v=20260713-visible-queue'));
+  assert.ok(publicIndexHtml.includes('command-center.js?v=20260713-display-repair'));
 });
 
 test('customer detail opens in a new tab without replacing the shell', () => {
@@ -231,10 +231,12 @@ test('all reporting sections use live automation artifacts', () => {
   assert.ok(js.includes('analytics.buildTemplateMetrics(liveOperationalRecords())'));
   assert.ok(js.includes('const events = liveAuditEvents();'));
   assert.ok(js.includes('...liveOperationalRecords()'));
-  assert.ok(html.includes('20260713-visible-queue'));
+  assert.ok(html.includes('20260713-display-repair'));
   assert.ok(html.includes('ensureCommandCenterModule'));
+  assert.ok(html.includes('ensureVisibleCommandCenterFallback'));
+  assert.ok(html.includes('System display recovered in fallback mode'));
   assert.ok(html.includes('commandCenterRecovery'));
-  assert.ok(serviceWorkerJs.includes('customer-development-system-v18-7-23-20260713-visible-queue'));
+  assert.ok(serviceWorkerJs.includes('customer-development-system-v18-7-23-20260713-display-repair'));
 });
 
 test('reporting center exposes reply conversion diagnostics and CSV rates', () => {

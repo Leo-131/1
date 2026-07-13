@@ -1,4 +1,4 @@
-const CACHE_NAME = 'customer-development-system-v18-7-23-20260713-visible-queue';
+const CACHE_NAME = 'customer-development-system-v18-7-23-20260713-display-repair';
 const APP_SHELL = [
   './',
   './index.html',
