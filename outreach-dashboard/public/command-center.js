@@ -1180,6 +1180,13 @@
     }
     return { skipped, results, bucketRows, chromeStage, headline, nextAction, noBrowserExecution };
   }
+  function executionRecoveryCards() {
+    const actions = Array.isArray(latestExecution && latestExecution.recoveryActions)
+      ? latestExecution.recoveryActions
+      : [];
+    if (!actions.length) return '';
+    return `<div class="cc-skip-grid cc-recovery-actions">${actions.map(action => `<div class="cc-skip-card"><b>${esc(action.reason || 'recovery')}</b><span>${esc(action.action || '')}</span><em>${esc(action.description || '')}</em></div>`).join('')}</div>`;
+  }
   function taskDetailPanel(system) {
     if (!latestRun) return '';
     const visibility = executionVisibilitySummary();
@@ -1255,6 +1262,7 @@
         </div>
         ${chromeNote}
         <div class="cc-skip-grid">${skipCards}</div>
+        ${executionRecoveryCards()}
         <div class="cc-task-note">${esc(executionText)}</div>
         <div class="cc-table-wrap"><table class="cc-table"><thead><tr><th>客户</th><th>国家</th><th>当前任务</th><th>为什么没有自动发送</th><th>入口</th></tr></thead><tbody>${rows}</tbody></table></div>
         ${cooldownRows ? `<div class="cc-panel-head cc-subhead"><h2>短期不重复 / 冷却中</h2><a href="${urlFor('queue', { queue: 'cooldown' })}">查看 ${system.cooldownRows.length} 条</a></div><div class="cc-table-wrap"><table class="cc-table"><thead><tr><th>客户</th><th>国家</th><th>状态</th><th>最近触达</th><th>规则</th></tr></thead><tbody>${cooldownRows}</tbody></table></div>` : ''}
