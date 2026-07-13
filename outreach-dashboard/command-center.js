@@ -234,7 +234,8 @@
   }
   function executableDevelopmentTasks() {
     const byCustomer = new Map();
-    for (const task of todayDevelopTasks().filter(isAutoDevelopmentTask)) {
+    const sourceRows = latestRun ? latestQueueRows('visibleTodayQueue') : untouchedTasks();
+    for (const task of sourceRows.filter(isAutoDevelopmentTask)) {
       const key = leadMatchKeys(task)[0] || normalizeKey(task.taskId || task.company || task.name);
       const existing = byCustomer.get(key);
       if (!existing || executionRank(task) > executionRank(existing)) {

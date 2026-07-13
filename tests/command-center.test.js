@@ -160,6 +160,9 @@ test('today queue separates untouched work from historical follow-ups', () => {
   assert.ok(js.includes('function followupTasks'));
   assert.ok(js.includes('function executableDevelopmentTasks'));
   assert.ok(js.includes('function isAutoDevelopmentTask'));
+  const executableBlock = js.slice(js.indexOf('function executableDevelopmentTasks'), js.indexOf('function currentTask'));
+  assert.ok(executableBlock.includes("latestQueueRows('visibleTodayQueue')"));
+  assert.ok(!executableBlock.includes('todayDevelopTasks()'));
   assert.ok(js.includes("query.get('queue') || 'potential'"));
   assert.ok(js.includes("latestQueueRows('visibleTodayQueue')"));
   assert.ok(js.includes("latestQueueRows('dailyPotentialPool')"));
