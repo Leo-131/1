@@ -19,9 +19,11 @@ const chromeDriverSource = fs.readFileSync(path.join(__dirname, '..', 'outreach-
 const dailyRunnerSource = fs.readFileSync(path.join(__dirname, '..', 'outreach-dashboard', 'daily-automation-runner.js'), 'utf8');
 const templateSource = fs.readFileSync(path.join(__dirname, '..', 'outreach-dashboard', 'api', 'templates.js'), 'utf8');
 
-test('daily queue prioritizes Instagram and Facebook over website contact', () => {
+test('daily queue prioritizes Facebook and Instagram over website contact', () => {
+  assert.ok(dailyRunner.channelPriorityScore({ platform: 'facebook' })
+    > dailyRunner.channelPriorityScore({ platform: 'instagram' }));
   assert.ok(dailyRunner.channelPriorityScore({ platform: 'instagram' })
-    > dailyRunner.channelPriorityScore({ platform: 'facebook' }));
+    > dailyRunner.channelPriorityScore({ platform: 'email', reason: 'official_website_contact_channel' }));
   assert.ok(dailyRunner.channelPriorityScore({ platform: 'facebook' })
     > dailyRunner.channelPriorityScore({ platform: 'email', reason: 'official_website_contact_channel' }));
 });
@@ -33,6 +35,16 @@ test('website contact can execute without a configured attachment', () => {
   assert.ok(mainSource.includes("sendStatus: filled && filled.ok ? 'website_contact_ready' : 'approval_pending'"));
   assert.ok(mainSource.includes('website_contact_public_email_ready'));
   assert.ok(mainSource.includes('public_email_fallback_available'));
+});
+
+test('daily execution ranks Facebook and Instagram before website contact fallback', () => {
+  assert.ok(mainSource.includes('function socialPriorityRank'));
+  assert.ok(mainSource.includes('function developmentPriorityCompare'));
+  assert.ok(mainSource.includes("if (/\\bfacebook\\b|facebook\\.com/.test(text)) return 300"));
+  assert.ok(mainSource.includes("if (/\\binstagram\\b|instagram\\.com/.test(text)) return 290"));
+  assert.ok(mainSource.includes('return socialPriorityRank(right) - socialPriorityRank(left)'));
+  assert.ok(mainSource.includes('[...dueCandidates, ...scheduledExecutable, ...potentialFallback]'));
+  assert.ok(mainSource.includes('.sort(developmentPriorityCompare)'));
 });
 
 test('unsubmitted website preparation does not create customer-development cooldown', () => {
@@ -230,20 +242,26 @@ test('Google discovery gives autonomous refill customers social channels before 
   assert.ok(summitLeads.some(item => item.platform === 'email'));
 });
 
-test('daily queue removes website contact when the same company has a social candidate', () => {
+test('daily queue preserves multi-channel outreach but ranks social before website contact', () => {
   const filtered = dailyRunner.preferSocialChannels([
-    {
-      id: 'google-customer-sail-outdoors-facebook',
-      company: 'Sail Outdoors',
-      platform: 'facebook',
-      url: 'https://www.facebook.com/SAILoutdoors',
-    },
     {
       id: 'google-customer-sail-outdoors-website-contact',
       company: 'Sail Outdoors',
       platform: 'email',
       url: 'https://www.sail.ca/en/contact-us',
       reason: 'official_website_contact_channel',
+    },
+    {
+      id: 'google-customer-sail-outdoors-instagram',
+      company: 'Sail Outdoors',
+      platform: 'instagram',
+      url: 'https://www.instagram.com/sailoutdoors/',
+    },
+    {
+      id: 'google-customer-sail-outdoors-facebook',
+      company: 'Sail Outdoors',
+      platform: 'facebook',
+      url: 'https://www.facebook.com/SAILoutdoors',
     },
     {
       id: 'google-customer-liberty-mountain-website-contact',
@@ -254,8 +272,13 @@ test('daily queue removes website contact when the same company has a social can
     },
   ]);
   assert.ok(filtered.some(item => item.id === 'google-customer-sail-outdoors-facebook'));
-  assert.ok(!filtered.some(item => item.id === 'google-customer-sail-outdoors-website-contact'));
+  assert.ok(filtered.some(item => item.id === 'google-customer-sail-outdoors-instagram'));
+  assert.ok(filtered.some(item => item.id === 'google-customer-sail-outdoors-website-contact'));
   assert.ok(filtered.some(item => item.id === 'google-customer-liberty-mountain-website-contact'));
+  assert.equal(filtered[0].id, 'google-customer-sail-outdoors-facebook');
+  assert.equal(filtered[1].id, 'google-customer-sail-outdoors-instagram');
+  assert.ok(filtered.findIndex(item => item.id === 'google-customer-sail-outdoors-website-contact')
+    > filtered.findIndex(item => item.id === 'google-customer-sail-outdoors-facebook'));
 });
 
 test('Google discovery marks active customers as partner accounts only', () => {
@@ -309,6 +332,13 @@ test('daily queue artifacts expose autonomous discovery refill metadata', () => 
   assert.ok(dailyRunnerSource.includes('discoveryRefill'));
   assert.ok(dailyRunnerSource.includes('discoveryRefillAttempted'));
   assert.ok(dailyRunnerSource.includes('refillCandidateCount'));
+});
+
+test('daily automation targets one hundred high-ICP prospects by default', () => {
+  assert.ok(dailyRunnerSource.includes('const DEFAULT_DAILY_LIMIT = 100'));
+  assert.ok(dailyRunnerSource.includes('buildVisibleTodayQueue(discoveryRun, context, DEFAULT_DAILY_LIMIT)'));
+  assert.ok(dailyRunnerSource.includes('discoveryQueue(DEFAULT_DAILY_LIMIT, context)'));
+  assert.ok(dailyRunnerSource.includes("['develop', Math.max(DEFAULT_DAILY_LIMIT"));
 });
 
 test('AutoGLM only accepts exact supported platform URLs and blocks repeat contact', () => {
@@ -401,6 +431,9 @@ test('website contact automation must verify contact entry before ready status',
   assert.ok(mainSource.includes('website_page_unavailable_404'));
   assert.ok(mainSource.includes('website_contact_target_attempts'));
   assert.ok(mainSource.includes('website_contact_all_targets_failed'));
+  assert.ok(mainSource.includes('website_contact_unreachable_skip'));
+  assert.ok(mainSource.includes('Skip this website route'));
+  assert.ok(mainSource.includes('Facebook, Instagram, or another verified official channel'));
   assert.ok(mainSource.includes('Social platform URL is not a website contact form'));
   assert.ok(mainSource.includes('marketing_attachment_missing'));
   assert.ok(mainSource.includes('function formatExecutionBlockerStatus'));
@@ -517,7 +550,7 @@ test('daily execution duplicate blocking is channel-aware', () => {
   assert.ok(mainSource.includes('const companyBlocking = new Set'));
   assert.ok(mainSource.includes('companyBlocking.has(result.status) && setsIntersect(companyKeys, automationCompanyKeys(result))'));
   assert.ok(mainSource.includes('if (!itemPlatform || !resultPlatform || itemPlatform !== resultPlatform) return false'));
-  assert.ok(mainSource.includes("const blocking = new Set(['sent_confirmed', 'failed_open', 'send_unconfirmed', 'account_followed', 'post_liked', 'website_contact_ready'])"));
+  assert.ok(mainSource.includes("'website_contact_unreachable_skip'"));
   assert.ok(!mainSource.includes("'sent_confirmed', 'failed_open', 'send_unconfirmed', 'skipped'"));
 });
 

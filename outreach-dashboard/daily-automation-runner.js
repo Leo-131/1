@@ -35,7 +35,7 @@ const DEFAULT_CONFIG = {
 const CONFIG = loadConfig();
 const ICP_THRESHOLD = Number(CONFIG.cadence.icpThreshold || 70);
 const COOLDOWN_DAYS = Number(CONFIG.cadence.cooldownDays || 7);
-const DEFAULT_DAILY_LIMIT = 12;
+const DEFAULT_DAILY_LIMIT = 100;
 const DEFAULT_POTENTIAL_POOL_TARGET = 100;
 const TOUCH_STATUSES = new Set([
   'sent_confirmed',
@@ -206,8 +206,8 @@ function dealProbabilityScore(task) {
 function channelPriorityScore(task) {
   const platform = String(task.platform || task.channel || '').trim().toLowerCase();
   const identity = `${task.id || ''} ${task.reason || ''} ${task.url || ''}`.toLowerCase();
-  if (platform === 'instagram' || /instagram/.test(identity)) return 300;
-  if (platform === 'facebook' || /facebook/.test(identity)) return 290;
+  if (platform === 'facebook' || /facebook/.test(identity)) return 320;
+  if (platform === 'instagram' || /instagram/.test(identity)) return 310;
   if (platform === 'email' || /website-contact|official_website_contact_channel/.test(identity)) return 0;
   return 100;
 }
@@ -243,18 +243,7 @@ function dedupeQueueItems(items) {
 }
 
 function preferSocialChannels(items) {
-  const socialCompanyKeys = new Set();
-  for (const item of items || []) {
-    const platform = String(item.platform || '').toLowerCase();
-    if (platform !== 'instagram' && platform !== 'facebook') continue;
-    companyLeadKeys(item).forEach(key => socialCompanyKeys.add(key));
-  }
-  return (items || []).filter(item => {
-    const platform = String(item.platform || '').toLowerCase();
-    const isWebsiteContact = platform === 'email' || /website-contact|official_website_contact_channel/i.test(`${item.id || ''} ${item.reason || ''}`);
-    if (!isWebsiteContact) return true;
-    return !companyLeadKeys(item).some(key => socialCompanyKeys.has(key));
-  });
+  return (items || []).slice().sort(priorityCompare);
 }
 
 function minutesOfDay(value) {
@@ -857,9 +846,11 @@ function writeSystemVisibilityArtifact(run) {
 
 function quotaPick(classified, cliLimit) {
   const limits = CONFIG.limits || DEFAULT_CONFIG.limits;
-  const totalLimit = Number.isFinite(cliLimit) && cliLimit > 0 ? cliLimit : Number(limits.total || DEFAULT_DAILY_LIMIT);
+  const totalLimit = Number.isFinite(cliLimit) && cliLimit > 0
+    ? Math.min(Number(cliLimit), DEFAULT_DAILY_LIMIT)
+    : Math.max(DEFAULT_DAILY_LIMIT, Number(limits.total || 0));
   const buckets = [
-    ['develop', Number(limits.develop || 0)],
+    ['develop', Math.max(DEFAULT_DAILY_LIMIT, Number(limits.develop || 0))],
     ['email_priority', Number(limits.emailPriority || 0)],
     ['retry_or_alternate_channel', Number(limits.retryOrAlternate || 0)],
     ['verify_target', Number(limits.verifyTarget || 0)],
@@ -1229,8 +1220,8 @@ function main() {
   const discoveryRun = readJson('google-lead-discovery-latest.json', { leads: [] });
   const potentialPoolTarget = Math.max(DEFAULT_POTENTIAL_POOL_TARGET, Number(CONFIG.limits.total || 0));
   const dailyPotentialPool = buildDailyPotentialPool(classified, discoveryRun, context, potentialPoolTarget);
-  const visibleTodayQueue = buildVisibleTodayQueue(discoveryRun, context, 3);
-  const newDiscovery = discoveryQueue(Number(CONFIG.limits.develop || 10), context);
+  const visibleTodayQueue = buildVisibleTodayQueue(discoveryRun, context, DEFAULT_DAILY_LIMIT);
+  const newDiscovery = discoveryQueue(DEFAULT_DAILY_LIMIT, context);
   const touchedDiscovery = discoveryCooldownQueue(20, context);
   const remainingLimit = Math.max(0, picked.quota.total.target - newDiscovery.length);
   const dailyQueue = preferSocialChannels(dedupeQueueItems([...newDiscovery, ...picked.queue.slice(0, remainingLimit)])).sort(priorityCompare);

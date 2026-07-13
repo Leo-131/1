@@ -211,7 +211,7 @@ function blockingAutomationResultFor(item) {
   const exactKeys = automationExactKeys(item);
   const companyKeys = automationCompanyKeys(item);
   const itemPlatform = automationPlatformFor(item);
-  const blocking = new Set(['sent_confirmed', 'failed_open', 'send_unconfirmed', 'account_followed', 'post_liked', 'website_contact_ready']);
+  const blocking = new Set(['sent_confirmed', 'failed_open', 'send_unconfirmed', 'account_followed', 'post_liked', 'website_contact_ready', 'website_contact_unreachable_skip']);
   const companyBlocking = new Set(['sent_confirmed', 'send_unconfirmed', 'account_followed', 'post_liked']);
   return results
     .filter((result) => result && (blocking.has(result.status) || companyBlocking.has(result.status)))
@@ -308,7 +308,7 @@ function websiteContactResultIsVerified(result = {}) {
 
 function recordAutomationResult(item, result) {
   const sendStatus = result && result.sendStatus;
-  if (!['sent_confirmed', 'send_unconfirmed', 'failed_open', 'draft_prepared', 'prepared_not_sent', 'website_contact_ready', 'approval_pending'].includes(sendStatus)) return;
+  if (!['sent_confirmed', 'send_unconfirmed', 'failed_open', 'draft_prepared', 'prepared_not_sent', 'website_contact_ready', 'website_contact_unreachable_skip', 'approval_pending'].includes(sendStatus)) return;
   const output = parseExecutionOutput(result.output);
   const timestamp = new Date().toISOString();
   const entry = {
@@ -2130,16 +2130,32 @@ async function runWebsiteContactLead(lead = {}) {
     const output = parseExecutionOutput(lastResult.output);
     return {
       ...lastResult,
+      mode: 'website_contact_unreachable_skip',
+      sendStatus: 'website_contact_unreachable_skip',
       evidence: `${lastResult.evidence};website_contact_all_targets_failed:${attempts.length}`,
       output: JSON.stringify({
         ...output,
+        verdict: 'website_contact_unreachable_skip',
         evidence: `${lastResult.evidence};website_contact_all_targets_failed:${attempts.length}`,
-        nextAction: output.nextAction || 'All verified website-contact URL candidates failed or remained unverified. Use a different official channel instead of retrying the same 403/404 page.',
+        nextAction: output.nextAction || 'Official website contact was unreachable or not machine-verifiable. Skip this website route now, note it clearly, and continue with Facebook, Instagram, or another verified official channel.',
+        sendStatus: 'website_contact_unreachable_skip',
         attempts,
       }),
     };
   }
-  return { ok: false, error: 'No valid website contact URL candidates found' };
+  return {
+    ok: false,
+    mode: 'website_contact_unreachable_skip',
+    sendStatus: 'website_contact_unreachable_skip',
+    evidence: 'website_contact_no_valid_targets;website_contact_unreachable_skip',
+    output: JSON.stringify({
+      verdict: 'website_contact_unreachable_skip',
+      evidence: 'website_contact_no_valid_targets;website_contact_unreachable_skip',
+      nextAction: 'No valid official website contact target was found. Skip this website route and continue with Facebook, Instagram, or another verified official channel.',
+      sendStatus: 'website_contact_unreachable_skip',
+      attempts,
+    }),
+  };
 }
 
 async function runOpenClawLead(lead, decision, options = {}) {
@@ -2403,6 +2419,20 @@ function isWebsiteContactQueueItem(item = {}) {
   return /\bemail\b|email_priority|website-contact|official_website_contact_channel|website_contact/.test(text);
 }
 
+function socialPriorityRank(item = {}) {
+  const text = [item.platform, item.id, item.url, item.targetUrl, item.verifiedTargetUrl].filter(Boolean).join(' ').toLowerCase();
+  if (/\bfacebook\b|facebook\.com/.test(text)) return 300;
+  if (/\binstagram\b|instagram\.com/.test(text)) return 290;
+  if (isWebsiteContactQueueItem(item)) return 0;
+  return 100;
+}
+
+function developmentPriorityCompare(left, right) {
+  return socialPriorityRank(right) - socialPriorityRank(left)
+    || Number(right.fitScore || right.dealProbabilityScore || 0) - Number(left.fitScore || left.dealProbabilityScore || 0)
+    || String(left.company || left.name || '').localeCompare(String(right.company || right.name || ''));
+}
+
 function executableQueueCandidates(items = [], options = {}) {
   const executableActions = new Set(['develop', 'retry_or_alternate_channel', 'discover_and_develop', 'email_priority']);
   const allowWebsiteContact = options.allowWebsiteContact !== false;
@@ -2410,7 +2440,8 @@ function executableQueueCandidates(items = [], options = {}) {
     .filter(item => executableActions.has(item.action))
     .filter(item => item.url)
     .filter(item => allowWebsiteContact || !isWebsiteContactQueueItem(item))
-    .filter(item => !blockingAutomationResultFor(item));
+    .filter(item => !blockingAutomationResultFor(item))
+    .sort(developmentPriorityCompare);
 }
 
 let currentDailyExecutionProgress = null;
@@ -2495,6 +2526,12 @@ function executionRecoveryActions(blockerSummary = []) {
       hint: 'Use a verified alternate channel because the current social profile has no safe message button.',
     });
   }
+  if (reasons.has('website_contact_unreachable_skip')) {
+    actions.push({
+      reason: 'website_contact_unreachable_skip',
+      hint: 'Skip the unreachable official website route and continue with Facebook, Instagram, or another verified official channel.',
+    });
+  }
   return actions;
 }
 
@@ -2545,12 +2582,14 @@ async function runDailyAutomationQueue(payload = {}) {
   const potentialFallback = executableQueueCandidates(latest.dailyPotentialPool || [], { allowWebsiteContact: true })
     .filter(item => !['cooldown', 'blocked_partner', 'retain_low_icp', 'skip_exclusive_agency'].includes(String(item.action || '').toLowerCase()))
     .filter(item => !item.lastTouch && !item.previouslyContacted);
-  const queueSource = dueCandidates.length ? 'dailyQueue' : scheduledExecutable.length ? 'scheduledLater' : 'dailyPotentialPool';
-  const candidatePool = queueSource === 'dailyQueue'
-    ? dueCandidates
-    : queueSource === 'scheduledLater'
-      ? scheduledExecutable
-      : potentialFallback;
+  const queueSource = dueCandidates.length
+    ? 'dailyQueue'
+    : scheduledExecutable.length
+      ? 'scheduledLater'
+      : 'dailyPotentialPool';
+  const candidatePool = [...dueCandidates, ...scheduledExecutable, ...potentialFallback]
+    .filter((item, index, list) => list.findIndex(other => other.id === item.id) === index)
+    .sort(developmentPriorityCompare);
   const executable = [];
   const skipped = [];
   const selectedCompanyKeys = new Set(sameDayCompanyKeys);

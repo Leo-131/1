@@ -1,5 +1,5 @@
 window.DAILY_AUTOMATION_LATEST = {
-  "generatedAt": "2026-07-13T12:14:13.951Z",
+  "generatedAt": "2026-07-13T12:39:49.991Z",
   "date": "2026-07-13",
   "mode": "daily-icp-first-automation-loop",
   "executionLayer": "Codex Chrome Extension primary; AutoClaw compatible",
@@ -12,9 +12,9 @@ window.DAILY_AUTOMATION_LATEST = {
         "gap": 100
       },
       "develop": {
-        "target": 70,
+        "target": 100,
         "planned": 0,
-        "gap": 70
+        "gap": 100
       },
       "email_priority": {
         "target": 15,
@@ -52,7 +52,7 @@ window.DAILY_AUTOMATION_LATEST = {
     "highIcp": 16,
     "readyToDevelop": 0,
     "dueNow": 1,
-    "visibleTodayQueue": 3,
+    "visibleTodayQueue": 4,
     "potentialPool": 1,
     "potentialPoolTarget": 100,
     "customerTableHighIcp": 0,
@@ -121,7 +121,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/13 20:11:42",
+        "localTime": "2026/7/13 20:39:42",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -205,7 +205,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/13 20:11:42",
+        "localTime": "2026/7/13 20:39:42",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -305,7 +305,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/13 20:11:42",
+        "localTime": "2026/7/13 20:39:42",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -348,6 +348,76 @@ window.DAILY_AUTOMATION_LATEST = {
       "lastEvidence": "",
       "lastTouch": "",
       "visibleOnly": false
+    },
+    {
+      "id": "google-customer-mountain-warehouse-facebook",
+      "name": "Mountain Warehouse",
+      "company": "Mountain Warehouse",
+      "customerType": "key_account",
+      "discoveryMode": "autonomous_refill",
+      "country": "United Kingdom",
+      "countryEn": "United Kingdom",
+      "fitScore": 86,
+      "fitTier": "A",
+      "marketScore": 4.5,
+      "marketStatus": "open",
+      "agencyState": "open",
+      "keyword": "outdoor clothing and equipment retail chain",
+      "role": "Outdoor accessories buyer, product/category manager, or vendor partnership contact.",
+      "background": "International outdoor retail chain selling outdoor clothing, camping, hiking, travel, and family outdoor equipment.",
+      "buyerPersona": "Outdoor accessories buyer, product/category manager, or vendor partnership contact.",
+      "productCategory": "outdoor clothing and equipment retail chain",
+      "businessModel": "Retail Chain",
+      "productFit": "FLEXTAIL portable pumps, outdoor power, camping lighting and compact camping accessories",
+      "opportunity": "International outdoor retail chain selling outdoor clothing, camping, hiking, travel, and family outdoor equipment.",
+      "linkedin_url": "",
+      "linkedin": "",
+      "publicEmail": "",
+      "contactEmail": "",
+      "vendorPortal": "https://www.mountainwarehouse.com/help/contact-us/",
+      "contactPhone": "",
+      "contactNote": "",
+      "publicEmailStatus": "",
+      "website": "https://www.mountainwarehouse.com/",
+      "evidenceUrl": "https://www.google.com/search?q=%22Mountain%20Warehouse%22%20%22outdoor%20clothing%20and%20equipment%20retail%20chain%22%20%22United%20Kingdom%22%20buyer%20OR%20wholesale%20OR%20contact",
+      "query": "https://www.google.com/search?q=%22Mountain%20Warehouse%22%20%22outdoor%20clothing%20and%20equipment%20retail%20chain%22%20%22United%20Kingdom%22%20buyer%20OR%20wholesale%20OR%20contact",
+      "source": "google_customer_discovery",
+      "identityStatus": "verified",
+      "partnershipStatus": "",
+      "doNotOutreach": false,
+      "automationStatus": "",
+      "partnerNote": "",
+      "sendStatus": "",
+      "workingTime": {
+        "dueNow": true,
+        "timeZone": "local-market",
+        "localTime": "2026/7/13 20:39:42",
+        "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
+      },
+      "platform": "facebook",
+      "platformUrl": "https://www.facebook.com/MountainWarehouse/",
+      "url": "https://www.facebook.com/MountainWarehouse/",
+      "action": "review_only",
+      "reason": "cooldown_visible_review",
+      "alternateChannels": {
+        "instagram": "https://www.instagram.com/mountainwarehouse/",
+        "facebook": "https://www.facebook.com/MountainWarehouse/",
+        "websiteContact": "https://www.mountainwarehouse.com/help/contact-us/"
+      },
+      "invalidChannels": {},
+      "facebookStatus": "verified_official_page_candidate",
+      "identitySource": "official Facebook page candidate + official website + Google background query",
+      "channelPriority": 2,
+      "taskId": "google-customer-mountain-warehouse-facebook",
+      "targetRegion": "europe",
+      "targetRegionScore": 32,
+      "contactChannelScore": 17,
+      "dealProbabilityScore": 207,
+      "priorityScore": 207,
+      "lastStatus": "send_unconfirmed",
+      "lastEvidence": "facebook_send_clicked_but_confirmation_missing",
+      "lastTouch": "2026-07-10T04:07:58.183Z",
+      "visibleOnly": true
     }
   ],
   "dailyPotentialPool": [
@@ -407,7 +477,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/13 20:11:42",
+        "localTime": "2026/7/13 20:39:42",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -512,7 +582,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/13 20:11:42",
+        "localTime": "2026/7/13 20:39:42",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -595,7 +665,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/London",
-        "localTime": "Mon 13:14",
+        "localTime": "Mon 13:39",
         "window": "outside_work_hours",
         "nextBest": "Europe/London afternoon",
         "weight": 0
@@ -648,7 +718,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Mon 08:14",
+        "localTime": "Mon 08:39",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -701,7 +771,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/London",
-        "localTime": "Mon 13:14",
+        "localTime": "Mon 13:39",
         "window": "outside_work_hours",
         "nextBest": "Europe/London afternoon",
         "weight": 0
@@ -754,7 +824,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/London",
-        "localTime": "Mon 13:14",
+        "localTime": "Mon 13:39",
         "window": "outside_work_hours",
         "nextBest": "Europe/London afternoon",
         "weight": 0
@@ -807,7 +877,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Mon 08:14",
+        "localTime": "Mon 08:39",
         "window": "outside_work_hours",
         "nextBest": "America/Toronto morning",
         "weight": 0
@@ -860,7 +930,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Mon 08:14",
+        "localTime": "Mon 08:39",
         "window": "outside_work_hours",
         "nextBest": "America/Toronto morning",
         "weight": 0
@@ -913,7 +983,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Asia/Jakarta",
-        "localTime": "Mon 19:14",
+        "localTime": "Mon 19:39",
         "window": "outside_work_hours",
         "nextBest": "Asia/Jakarta morning",
         "weight": 0
@@ -966,7 +1036,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Australia/Sydney",
-        "localTime": "Mon 22:14",
+        "localTime": "Mon 22:39",
         "window": "outside_work_hours",
         "nextBest": "Australia/Sydney morning",
         "weight": 0
@@ -1019,7 +1089,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Pacific/Auckland",
-        "localTime": "Tue 00:14",
+        "localTime": "Tue 00:39",
         "window": "outside_work_hours",
         "nextBest": "Pacific/Auckland morning",
         "weight": 0
@@ -1072,7 +1142,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Pacific/Auckland",
-        "localTime": "Tue 00:14",
+        "localTime": "Tue 00:39",
         "window": "outside_work_hours",
         "nextBest": "Pacific/Auckland morning",
         "weight": 0
@@ -1125,7 +1195,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Pacific/Auckland",
-        "localTime": "Tue 00:14",
+        "localTime": "Tue 00:39",
         "window": "outside_work_hours",
         "nextBest": "Pacific/Auckland morning",
         "weight": 0
@@ -1178,7 +1248,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Pacific/Auckland",
-        "localTime": "Tue 00:14",
+        "localTime": "Tue 00:39",
         "window": "outside_work_hours",
         "nextBest": "Pacific/Auckland morning",
         "weight": 0
@@ -1231,7 +1301,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Pacific/Auckland",
-        "localTime": "Tue 00:14",
+        "localTime": "Tue 00:39",
         "window": "outside_work_hours",
         "nextBest": "Pacific/Auckland morning",
         "weight": 0
@@ -1284,7 +1354,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Asia/Kolkata",
-        "localTime": "Mon 17:44",
+        "localTime": "Mon 18:09",
         "window": "outside_work_hours",
         "nextBest": "Asia/Kolkata morning",
         "weight": 0
@@ -1315,7 +1385,7 @@ window.DAILY_AUTOMATION_LATEST = {
         "Bass Pro Shops Vendor Relations Portal",
         "Bass Pro Shops LinkedIn"
       ],
-      "id": "google-customer-bass-pro-shops-instagram",
+      "id": "google-customer-bass-pro-shops-facebook",
       "name": "Bass Pro Shops",
       "company": "Bass Pro Shops",
       "customerType": "key_account",
@@ -1351,12 +1421,12 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/13 20:11:42",
+        "localTime": "2026/7/13 20:39:42",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
-      "platform": "instagram",
-      "platformUrl": "https://www.instagram.com/bassproshops/",
-      "url": "https://www.instagram.com/bassproshops/",
+      "platform": "facebook",
+      "platformUrl": "https://www.facebook.com/bassproshops",
+      "url": "https://www.facebook.com/bassproshops",
       "action": "cooldown",
       "reason": "7_day_no_repeat_touch",
       "alternateChannels": {
@@ -1364,8 +1434,10 @@ window.DAILY_AUTOMATION_LATEST = {
         "facebook": "https://www.facebook.com/bassproshops",
         "websiteContact": "https://www.basspro.com/shop/en/contact-us"
       },
-      "identitySource": "official website/social profile + Google background query",
-      "channelPriority": 1,
+      "invalidChannels": {},
+      "facebookStatus": "verified_official_page_candidate",
+      "identitySource": "official Facebook page candidate + official website + Google background query",
+      "channelPriority": 2,
       "targetRegion": "americas",
       "targetRegionScore": 30,
       "contactChannelScore": 29,
@@ -1395,7 +1467,7 @@ window.DAILY_AUTOMATION_LATEST = {
         "Cabela’s help article",
         "Cabela’s LinkedIn"
       ],
-      "id": "google-customer-cabela-s-instagram",
+      "id": "google-customer-cabela-s-facebook",
       "name": "Cabela's",
       "company": "Cabela's",
       "customerType": "key_account",
@@ -1431,12 +1503,12 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/13 20:11:42",
+        "localTime": "2026/7/13 20:39:42",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
-      "platform": "instagram",
-      "platformUrl": "https://www.instagram.com/cabelas/",
-      "url": "https://www.instagram.com/cabelas/",
+      "platform": "facebook",
+      "platformUrl": "https://www.facebook.com/Cabelas",
+      "url": "https://www.facebook.com/Cabelas",
       "action": "cooldown",
       "reason": "7_day_no_repeat_touch",
       "alternateChannels": {
@@ -1444,8 +1516,10 @@ window.DAILY_AUTOMATION_LATEST = {
         "facebook": "https://www.facebook.com/Cabelas",
         "websiteContact": "https://www.cabelas.com/shop/en/contact-us"
       },
-      "identitySource": "official website/social profile + Google background query",
-      "channelPriority": 1,
+      "invalidChannels": {},
+      "facebookStatus": "verified_official_page_candidate",
+      "identitySource": "official Facebook page candidate + official website + Google background query",
+      "channelPriority": 2,
       "targetRegion": "americas",
       "targetRegionScore": 30,
       "contactChannelScore": 29,
@@ -1475,7 +1549,7 @@ window.DAILY_AUTOMATION_LATEST = {
         "MEC LinkedIn",
         "MEC public contact/FAQ sources"
       ],
-      "id": "google-customer-mec-instagram",
+      "id": "google-customer-mec-facebook",
       "name": "MEC",
       "company": "MEC",
       "customerType": "key_account",
@@ -1511,12 +1585,12 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/13 20:11:42",
+        "localTime": "2026/7/13 20:39:42",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
-      "platform": "instagram",
-      "platformUrl": "https://www.instagram.com/mec/",
-      "url": "https://www.instagram.com/mec/",
+      "platform": "facebook",
+      "platformUrl": "https://www.facebook.com/MountainEquipmentCoop",
+      "url": "https://www.facebook.com/MountainEquipmentCoop",
       "action": "cooldown",
       "reason": "7_day_no_repeat_touch",
       "alternateChannels": {
@@ -1524,8 +1598,10 @@ window.DAILY_AUTOMATION_LATEST = {
         "facebook": "https://www.facebook.com/MountainEquipmentCoop",
         "websiteContact": "https://www.mec.ca/en/contact-us"
       },
-      "identitySource": "official website/social profile + Google background query",
-      "channelPriority": 1,
+      "invalidChannels": {},
+      "facebookStatus": "verified_official_page_candidate",
+      "identitySource": "official Facebook page candidate + official website + Google background query",
+      "channelPriority": 2,
       "targetRegion": "americas",
       "targetRegionScore": 30,
       "contactChannelScore": 29,
@@ -1555,7 +1631,7 @@ window.DAILY_AUTOMATION_LATEST = {
         "Cotswold Outdoor contact details",
         "Cotswold Outdoor Group sources"
       ],
-      "id": "google-customer-cotswold-outdoor-instagram",
+      "id": "google-customer-cotswold-outdoor-facebook",
       "name": "Cotswold Outdoor",
       "company": "Cotswold Outdoor",
       "customerType": "key_account",
@@ -1591,12 +1667,12 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/13 20:11:42",
+        "localTime": "2026/7/13 20:39:42",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
-      "platform": "instagram",
-      "platformUrl": "https://www.instagram.com/cotswoldoutdoor/",
-      "url": "https://www.instagram.com/cotswoldoutdoor/",
+      "platform": "facebook",
+      "platformUrl": "https://www.facebook.com/CotswoldOutdoor",
+      "url": "https://www.facebook.com/CotswoldOutdoor",
       "action": "cooldown",
       "reason": "7_day_no_repeat_touch",
       "alternateChannels": {
@@ -1604,8 +1680,10 @@ window.DAILY_AUTOMATION_LATEST = {
         "facebook": "https://www.facebook.com/CotswoldOutdoor",
         "websiteContact": "https://www.cotswoldoutdoor.com/contact-us"
       },
-      "identitySource": "official website/social profile + Google background query",
-      "channelPriority": 1,
+      "invalidChannels": {},
+      "facebookStatus": "verified_official_page_candidate",
+      "identitySource": "official Facebook page candidate + official website + Google background query",
+      "channelPriority": 2,
       "targetRegion": "europe",
       "targetRegionScore": 32,
       "contactChannelScore": 29,
@@ -1635,7 +1713,7 @@ window.DAILY_AUTOMATION_LATEST = {
         "Decathlon LinkedIn",
         "Decathlon group contact page"
       ],
-      "id": "google-customer-decathlon-france-instagram",
+      "id": "google-customer-decathlon-france-facebook",
       "name": "Decathlon France",
       "company": "Decathlon France",
       "customerType": "key_account",
@@ -1671,12 +1749,12 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/13 20:11:42",
+        "localTime": "2026/7/13 20:39:42",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
-      "platform": "instagram",
-      "platformUrl": "https://www.instagram.com/decathlonfrance/",
-      "url": "https://www.instagram.com/decathlonfrance/",
+      "platform": "facebook",
+      "platformUrl": "https://www.facebook.com/DecathlonFrance",
+      "url": "https://www.facebook.com/DecathlonFrance",
       "action": "cooldown",
       "reason": "7_day_no_repeat_touch",
       "alternateChannels": {
@@ -1684,8 +1762,10 @@ window.DAILY_AUTOMATION_LATEST = {
         "facebook": "https://www.facebook.com/DecathlonFrance",
         "websiteContact": "https://www.decathlon.fr/help/app/contact"
       },
-      "identitySource": "official website/social profile + Google background query",
-      "channelPriority": 1,
+      "invalidChannels": {},
+      "facebookStatus": "verified_official_page_candidate",
+      "identitySource": "official Facebook page candidate + official website + Google background query",
+      "channelPriority": 2,
       "targetRegion": "europe",
       "targetRegionScore": 32,
       "contactChannelScore": 29,
@@ -1715,7 +1795,7 @@ window.DAILY_AUTOMATION_LATEST = {
         "Decathlon LinkedIn",
         "Decathlon group contact page"
       ],
-      "id": "google-customer-decathlon-germany-instagram",
+      "id": "google-customer-decathlon-germany-facebook",
       "name": "Decathlon Germany",
       "company": "Decathlon Germany",
       "customerType": "key_account",
@@ -1751,12 +1831,12 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/13 20:11:42",
+        "localTime": "2026/7/13 20:39:42",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
-      "platform": "instagram",
-      "platformUrl": "https://www.instagram.com/decathlondeutschland/",
-      "url": "https://www.instagram.com/decathlondeutschland/",
+      "platform": "facebook",
+      "platformUrl": "https://www.facebook.com/DecathlonDeutschland",
+      "url": "https://www.facebook.com/DecathlonDeutschland",
       "action": "cooldown",
       "reason": "7_day_no_repeat_touch",
       "alternateChannels": {
@@ -1764,8 +1844,10 @@ window.DAILY_AUTOMATION_LATEST = {
         "facebook": "https://www.facebook.com/DecathlonDeutschland",
         "websiteContact": "https://www.decathlon.de/help/app/contact"
       },
-      "identitySource": "official website/social profile + Google background query",
-      "channelPriority": 1,
+      "invalidChannels": {},
+      "facebookStatus": "verified_official_page_candidate",
+      "identitySource": "official Facebook page candidate + official website + Google background query",
+      "channelPriority": 2,
       "targetRegion": "europe",
       "targetRegionScore": 32,
       "contactChannelScore": 29,
@@ -1795,7 +1877,7 @@ window.DAILY_AUTOMATION_LATEST = {
         "Bever official contact page",
         "Bever LinkedIn/public company sources"
       ],
-      "id": "google-customer-bever-instagram",
+      "id": "google-customer-bever-facebook",
       "name": "Bever",
       "company": "Bever",
       "customerType": "key_account",
@@ -1831,12 +1913,12 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/13 20:11:42",
+        "localTime": "2026/7/13 20:39:42",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
-      "platform": "instagram",
-      "platformUrl": "https://www.instagram.com/bevernl/",
-      "url": "https://www.instagram.com/bevernl/",
+      "platform": "facebook",
+      "platformUrl": "https://www.facebook.com/BeverNL",
+      "url": "https://www.facebook.com/BeverNL",
       "action": "cooldown",
       "reason": "7_day_no_repeat_touch",
       "alternateChannels": {
@@ -1844,8 +1926,10 @@ window.DAILY_AUTOMATION_LATEST = {
         "facebook": "https://www.facebook.com/BeverNL",
         "websiteContact": "https://www.bever.nl/klantenservice/contactgegevens.html"
       },
-      "identitySource": "official website/social profile + Google background query",
-      "channelPriority": 1,
+      "invalidChannels": {},
+      "facebookStatus": "verified_official_page_candidate",
+      "identitySource": "official Facebook page candidate + official website + Google background query",
+      "channelPriority": 2,
       "targetRegion": "europe",
       "targetRegionScore": 32,
       "contactChannelScore": 29,
@@ -1875,7 +1959,7 @@ window.DAILY_AUTOMATION_LATEST = {
         "GO Outdoors LinkedIn",
         "GO Outdoors public company/contact sources"
       ],
-      "id": "google-customer-go-outdoors-instagram",
+      "id": "google-customer-go-outdoors-facebook",
       "name": "GO Outdoors",
       "company": "GO Outdoors",
       "customerType": "key_account",
@@ -1911,12 +1995,12 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/13 20:11:42",
+        "localTime": "2026/7/13 20:39:42",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
-      "platform": "instagram",
-      "platformUrl": "https://www.instagram.com/gooutdoors/",
-      "url": "https://www.instagram.com/gooutdoors/",
+      "platform": "facebook",
+      "platformUrl": "https://www.facebook.com/GOoutdoorsUK/",
+      "url": "https://www.facebook.com/GOoutdoorsUK/",
       "action": "cooldown",
       "reason": "7_day_no_repeat_touch",
       "alternateChannels": {
@@ -1924,8 +2008,10 @@ window.DAILY_AUTOMATION_LATEST = {
         "facebook": "https://www.facebook.com/GOoutdoorsUK/",
         "websiteContact": "https://www.gooutdoors.co.uk/contact-us"
       },
-      "identitySource": "official website/social profile + Google background query",
-      "channelPriority": 1,
+      "invalidChannels": {},
+      "facebookStatus": "verified_official_page_candidate",
+      "identitySource": "official Facebook page candidate + official website + Google background query",
+      "channelPriority": 2,
       "targetRegion": "europe",
       "targetRegionScore": 32,
       "contactChannelScore": 17,
@@ -1936,7 +2022,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "lastTouch": "2026-06-30T13:05:55.276Z"
     },
     {
-      "id": "google-customer-liberty-mountain-instagram",
+      "id": "google-customer-liberty-mountain-facebook",
       "name": "Liberty Mountain",
       "company": "Liberty Mountain",
       "customerType": "agency",
@@ -1977,12 +2063,12 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/13 20:11:42",
+        "localTime": "2026/7/13 20:39:42",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
-      "platform": "instagram",
-      "platformUrl": "https://www.instagram.com/libertymountain/",
-      "url": "https://www.instagram.com/libertymountain/",
+      "platform": "facebook",
+      "platformUrl": "https://www.facebook.com/LibertyMountain",
+      "url": "https://www.facebook.com/LibertyMountain",
       "action": "cooldown",
       "reason": "7_day_no_repeat_touch",
       "alternateChannels": {
@@ -1990,8 +2076,10 @@ window.DAILY_AUTOMATION_LATEST = {
         "facebook": "https://www.facebook.com/LibertyMountain",
         "websiteContact": "https://libertymountain.com/find-a-rep"
       },
-      "identitySource": "official website/social profile + Google background query",
-      "channelPriority": 1,
+      "invalidChannels": {},
+      "facebookStatus": "verified_official_page_candidate",
+      "identitySource": "official Facebook page candidate + official website + Google background query",
+      "channelPriority": 2,
       "targetRegion": "americas",
       "targetRegionScore": 30,
       "contactChannelScore": 17,
@@ -2002,7 +2090,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "lastTouch": "2026-07-10T03:05:08.706Z"
     },
     {
-      "id": "google-customer-backcountry-instagram",
+      "id": "google-customer-backcountry-facebook",
       "name": "Backcountry",
       "company": "Backcountry",
       "customerType": "key_account",
@@ -2043,12 +2131,12 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/13 20:11:42",
+        "localTime": "2026/7/13 20:39:42",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
-      "platform": "instagram",
-      "platformUrl": "https://www.instagram.com/backcountry/",
-      "url": "https://www.instagram.com/backcountry/",
+      "platform": "facebook",
+      "platformUrl": "https://www.facebook.com/Backcountry/",
+      "url": "https://www.facebook.com/Backcountry/",
       "action": "cooldown",
       "reason": "7_day_no_repeat_touch",
       "alternateChannels": {
@@ -2056,8 +2144,10 @@ window.DAILY_AUTOMATION_LATEST = {
         "facebook": "https://www.facebook.com/Backcountry/",
         "websiteContact": "https://www.backcountry.com/sc/contact-us"
       },
-      "identitySource": "official website/social profile + Google background query",
-      "channelPriority": 1,
+      "invalidChannels": {},
+      "facebookStatus": "verified_official_page_candidate",
+      "identitySource": "official Facebook page candidate + official website + Google background query",
+      "channelPriority": 2,
       "targetRegion": "americas",
       "targetRegionScore": 30,
       "contactChannelScore": 17,
@@ -2068,7 +2158,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "lastTouch": "2026-07-10T04:03:24.818Z"
     },
     {
-      "id": "google-customer-sportsman-s-warehouse-instagram",
+      "id": "google-customer-sportsman-s-warehouse-facebook",
       "name": "Sportsman's Warehouse",
       "company": "Sportsman's Warehouse",
       "customerType": "key_account",
@@ -2109,12 +2199,12 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/13 20:11:42",
+        "localTime": "2026/7/13 20:39:42",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
-      "platform": "instagram",
-      "platformUrl": "https://www.instagram.com/sportsmanswarehouse/",
-      "url": "https://www.instagram.com/sportsmanswarehouse/",
+      "platform": "facebook",
+      "platformUrl": "https://www.facebook.com/SportsmansWarehouse",
+      "url": "https://www.facebook.com/SportsmansWarehouse",
       "action": "cooldown",
       "reason": "7_day_no_repeat_touch",
       "alternateChannels": {
@@ -2122,8 +2212,10 @@ window.DAILY_AUTOMATION_LATEST = {
         "facebook": "https://www.facebook.com/SportsmansWarehouse",
         "websiteContact": "https://www.sportsmans.com/contact-us"
       },
-      "identitySource": "official website/social profile + Google background query",
-      "channelPriority": 1,
+      "invalidChannels": {},
+      "facebookStatus": "verified_official_page_candidate",
+      "identitySource": "official Facebook page candidate + official website + Google background query",
+      "channelPriority": 2,
       "targetRegion": "americas",
       "targetRegionScore": 30,
       "contactChannelScore": 17,
@@ -2134,7 +2226,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "lastTouch": "2026-07-10T03:05:36.255Z"
     },
     {
-      "id": "google-customer-camping-world-instagram",
+      "id": "google-customer-camping-world-facebook",
       "name": "Camping World",
       "company": "Camping World",
       "customerType": "key_account",
@@ -2175,12 +2267,12 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/13 20:11:42",
+        "localTime": "2026/7/13 20:39:42",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
-      "platform": "instagram",
-      "platformUrl": "https://www.instagram.com/campingworld/",
-      "url": "https://www.instagram.com/campingworld/",
+      "platform": "facebook",
+      "platformUrl": "https://www.facebook.com/campingworld",
+      "url": "https://www.facebook.com/campingworld",
       "action": "cooldown",
       "reason": "7_day_no_repeat_touch",
       "alternateChannels": {
@@ -2188,8 +2280,10 @@ window.DAILY_AUTOMATION_LATEST = {
         "facebook": "https://www.facebook.com/campingworld",
         "websiteContact": "https://www.campingworld.com/contact-us.html"
       },
-      "identitySource": "official website/social profile + Google background query",
-      "channelPriority": 1,
+      "invalidChannels": {},
+      "facebookStatus": "verified_official_page_candidate",
+      "identitySource": "official Facebook page candidate + official website + Google background query",
+      "channelPriority": 2,
       "targetRegion": "americas",
       "targetRegionScore": 30,
       "contactChannelScore": 17,
@@ -2200,7 +2294,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "lastTouch": "2026-07-10T02:58:34.825Z"
     },
     {
-      "id": "google-customer-evo-instagram",
+      "id": "google-customer-evo-facebook",
       "name": "evo",
       "company": "evo",
       "customerType": "key_account",
@@ -2241,12 +2335,12 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/13 20:11:42",
+        "localTime": "2026/7/13 20:39:42",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
-      "platform": "instagram",
-      "platformUrl": "https://www.instagram.com/evo/",
-      "url": "https://www.instagram.com/evo/",
+      "platform": "facebook",
+      "platformUrl": "https://www.facebook.com/evo/",
+      "url": "https://www.facebook.com/evo/",
       "action": "cooldown",
       "reason": "7_day_no_repeat_touch",
       "alternateChannels": {
@@ -2254,8 +2348,10 @@ window.DAILY_AUTOMATION_LATEST = {
         "facebook": "https://www.facebook.com/evo/",
         "websiteContact": "https://www.evo.com/contact"
       },
-      "identitySource": "official website/social profile + Google background query",
-      "channelPriority": 1,
+      "invalidChannels": {},
+      "facebookStatus": "verified_official_page_candidate",
+      "identitySource": "official Facebook page candidate + official website + Google background query",
+      "channelPriority": 2,
       "targetRegion": "americas",
       "targetRegionScore": 30,
       "contactChannelScore": 17,
@@ -2266,7 +2362,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "lastTouch": "2026-07-10T04:03:58.070Z"
     },
     {
-      "id": "google-customer-mountain-warehouse-instagram",
+      "id": "google-customer-mountain-warehouse-facebook",
       "name": "Mountain Warehouse",
       "company": "Mountain Warehouse",
       "customerType": "key_account",
@@ -2307,12 +2403,12 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/13 20:11:42",
+        "localTime": "2026/7/13 20:39:42",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
-      "platform": "instagram",
-      "platformUrl": "https://www.instagram.com/mountainwarehouse/",
-      "url": "https://www.instagram.com/mountainwarehouse/",
+      "platform": "facebook",
+      "platformUrl": "https://www.facebook.com/MountainWarehouse/",
+      "url": "https://www.facebook.com/MountainWarehouse/",
       "action": "cooldown",
       "reason": "7_day_no_repeat_touch",
       "alternateChannels": {
@@ -2320,8 +2416,10 @@ window.DAILY_AUTOMATION_LATEST = {
         "facebook": "https://www.facebook.com/MountainWarehouse/",
         "websiteContact": "https://www.mountainwarehouse.com/help/contact-us/"
       },
-      "identitySource": "official website/social profile + Google background query",
-      "channelPriority": 1,
+      "invalidChannels": {},
+      "facebookStatus": "verified_official_page_candidate",
+      "identitySource": "official Facebook page candidate + official website + Google background query",
+      "channelPriority": 2,
       "targetRegion": "europe",
       "targetRegionScore": 32,
       "contactChannelScore": 17,
@@ -2352,7 +2450,7 @@ window.DAILY_AUTOMATION_LATEST = {
         "Anaconda help centre",
         "Spotlight Group Anaconda page"
       ],
-      "id": "google-customer-anaconda-instagram",
+      "id": "google-customer-anaconda-facebook",
       "name": "Anaconda",
       "company": "Anaconda",
       "customerType": "key_account",
@@ -2388,12 +2486,12 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/13 20:11:42",
+        "localTime": "2026/7/13 20:39:42",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
-      "platform": "instagram",
-      "platformUrl": "https://www.instagram.com/anacondastores/",
-      "url": "https://www.instagram.com/anacondastores/",
+      "platform": "facebook",
+      "platformUrl": "https://www.facebook.com/AnacondaStores",
+      "url": "https://www.facebook.com/AnacondaStores",
       "action": "cooldown",
       "reason": "7_day_no_repeat_touch",
       "alternateChannels": {
@@ -2401,8 +2499,10 @@ window.DAILY_AUTOMATION_LATEST = {
         "facebook": "https://www.facebook.com/AnacondaStores",
         "websiteContact": "https://www.anacondastores.com/contact-us"
       },
-      "identitySource": "official website/social profile + Google background query",
-      "channelPriority": 1,
+      "invalidChannels": {},
+      "facebookStatus": "verified_official_page_candidate",
+      "identitySource": "official Facebook page candidate + official website + Google background query",
+      "channelPriority": 2,
       "targetRegion": "oceania",
       "targetRegionScore": 0,
       "contactChannelScore": 29,
@@ -2432,7 +2532,7 @@ window.DAILY_AUTOMATION_LATEST = {
         "Kathmandu LinkedIn",
         "Kathmandu sales team contact page"
       ],
-      "id": "google-customer-kathmandu-instagram",
+      "id": "google-customer-kathmandu-facebook",
       "name": "Kathmandu",
       "company": "Kathmandu",
       "customerType": "key_account",
@@ -2468,12 +2568,12 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/13 20:11:42",
+        "localTime": "2026/7/13 20:39:42",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
-      "platform": "instagram",
-      "platformUrl": "https://www.instagram.com/kathmandugear/",
-      "url": "https://www.instagram.com/kathmandugear/",
+      "platform": "facebook",
+      "platformUrl": "https://www.facebook.com/Kathmandu",
+      "url": "https://www.facebook.com/Kathmandu",
       "action": "cooldown",
       "reason": "7_day_no_repeat_touch",
       "alternateChannels": {
@@ -2481,8 +2581,10 @@ window.DAILY_AUTOMATION_LATEST = {
         "facebook": "https://www.facebook.com/Kathmandu",
         "websiteContact": "https://www.kathmandu.co.nz/contact-us"
       },
-      "identitySource": "official website/social profile + Google background query",
-      "channelPriority": 1,
+      "invalidChannels": {},
+      "facebookStatus": "verified_official_page_candidate",
+      "identitySource": "official Facebook page candidate + official website + Google background query",
+      "channelPriority": 2,
       "targetRegion": "oceania",
       "targetRegionScore": 0,
       "contactChannelScore": 29,
@@ -2536,7 +2638,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Mon 08:14",
+        "localTime": "Mon 08:39",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
