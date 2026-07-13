@@ -30,8 +30,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
         "engine": "codex-chrome-extension-cdp",
         "port": 9224,
         "targetUrl": "https://www.summitint.co/contact/",
-        "tabId": "365092D72D82537309475127DE7C3673",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/365092D72D82537309475127DE7C3673",
+        "tabId": "13F0CE95E8D21BF16DE27FC3EF288595",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/13F0CE95E8D21BF16DE27FC3EF288595",
         "title": ""
       },
       "result": {
@@ -45,8 +45,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
           "engine": "codex-chrome-extension-cdp",
           "port": 9224,
           "targetUrl": "https://www.summitint.co/contact/",
-          "tabId": "365092D72D82537309475127DE7C3673",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/365092D72D82537309475127DE7C3673",
+          "tabId": "13F0CE95E8D21BF16DE27FC3EF288595",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/13F0CE95E8D21BF16DE27FC3EF288595",
           "title": ""
         },
         "sendStatus": "website_contact_ready",
@@ -72,8 +72,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
         "engine": "codex-chrome-extension-cdp",
         "port": 9224,
         "targetUrl": "https://www.summitint.co/contact/",
-        "tabId": "365092D72D82537309475127DE7C3673",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/365092D72D82537309475127DE7C3673",
+        "tabId": "13F0CE95E8D21BF16DE27FC3EF288595",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/13F0CE95E8D21BF16DE27FC3EF288595",
         "title": ""
       },
       "result": {
@@ -87,8 +87,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
           "engine": "codex-chrome-extension-cdp",
           "port": 9224,
           "targetUrl": "https://www.summitint.co/contact/",
-          "tabId": "365092D72D82537309475127DE7C3673",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/365092D72D82537309475127DE7C3673",
+          "tabId": "13F0CE95E8D21BF16DE27FC3EF288595",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/13F0CE95E8D21BF16DE27FC3EF288595",
           "title": ""
         },
         "sendStatus": "website_contact_ready",
@@ -111,8 +111,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     "totalLeads": 16,
     "highIcp": 16,
     "readyToDevelop": 0,
-    "dueNow": 1,
-    "visibleTodayQueue": 3,
+    "dueNow": 2,
+    "visibleTodayQueue": 4,
     "potentialPool": 1,
     "potentialPoolTarget": 100,
     "customerTableHighIcp": 0,
@@ -120,7 +120,7 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     "googleDiscovered": 1,
     "facebookDiscovered": 0,
     "websiteContactDiscovered": 1,
-    "scheduledLater": 1,
+    "scheduledLater": 0,
     "cooldown": 30,
     "emailPriority": 0,
     "openAgencyMarket": 15,
@@ -148,22 +148,22 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
   ],
   "systemRefresh": {
     "ok": true,
-    "stdout": "{\n  \"date\": \"2026-07-13\",\n  \"summary\": {\n    \"totalLeads\": 16,\n    \"highIcp\": 16,\n    \"readyToDevelop\": 0,\n    \"dueNow\": 1,\n    \"visibleTodayQueue\": 3,\n    \"potentialPool\": 1,\n    \"potentialPoolTarget\": 100,\n    \"customerTableHighIcp\": 0,\n    \"refillNeeded\": 99,\n    \"googleDiscovered\": 1,\n    \"facebookDiscovered\": 0,\n    \"websiteContactDiscovered\": 1,\n    \"scheduledLater\": 1,\n    \"cooldown\": 30,\n    \"emailPriority\": 0,\n    \"openAgencyMarket\": 15,\n    \"exclusiveAgencySkipped\": 1,\n    \"needsVerification\": 0,\n    \"retainedLowIcp\": 0\n  },\n  \"bugErrors\": 0,\n  \"queueFile\": \"E:\\\\New project\\\\outreach-dashboard\\\\daily-runs\\\\2026-07-13-daily-automation.json\",\n  \"csvFile\": \"E:\\\\New project\\\\outreach-dashboard\\\\daily-runs\\\\2026-07-13-daily-queue.csv\"\n}",
+    "stdout": "{\n  \"date\": \"2026-07-13\",\n  \"summary\": {\n    \"totalLeads\": 16,\n    \"highIcp\": 16,\n    \"readyToDevelop\": 0,\n    \"dueNow\": 2,\n    \"visibleTodayQueue\": 4,\n    \"potentialPool\": 1,\n    \"potentialPoolTarget\": 100,\n    \"customerTableHighIcp\": 0,\n    \"refillNeeded\": 99,\n    \"googleDiscovered\": 1,\n    \"facebookDiscovered\": 0,\n    \"websiteContactDiscovered\": 1,\n    \"scheduledLater\": 0,\n    \"cooldown\": 30,\n    \"emailPriority\": 0,\n    \"openAgencyMarket\": 15,\n    \"exclusiveAgencySkipped\": 1,\n    \"needsVerification\": 0,\n    \"retainedLowIcp\": 0\n  },\n  \"bugErrors\": 0,\n  \"queueFile\": \"E:\\\\New project\\\\outreach-dashboard\\\\daily-runs\\\\2026-07-13-daily-automation.json\",\n  \"csvFile\": \"E:\\\\New project\\\\outreach-dashboard\\\\daily-runs\\\\2026-07-13-daily-queue.csv\"\n}",
     "stderr": "",
     "error": "",
     "visibility": {
-      "updatedAt": "2026-07-13T12:14:14.634Z",
+      "updatedAt": "2026-07-13T13:10:31.556Z",
       "source": "main-refreshDailyAutomationArtifacts",
       "runDate": "2026-07-13",
-      "artifactGeneratedAt": "2026-07-13T12:14:13.951Z",
-      "executionGeneratedAt": "2026-07-13T12:12:06.009Z",
-      "githubSyncUpdatedAt": "2026-07-13T11:08:08.723Z",
+      "artifactGeneratedAt": "2026-07-13T13:10:30.019Z",
+      "executionGeneratedAt": "2026-07-13T12:14:15.066Z",
+      "githubSyncUpdatedAt": "2026-07-13T12:15:26.675Z",
       "counts": {
-        "dailyQueue": 1,
+        "dailyQueue": 2,
         "googleDiscovered": 1,
         "websiteContact": 1,
         "cooldownQueue": 30,
-        "scheduledLater": 1
+        "scheduledLater": 0
       },
       "visibleSections": [
         "workspace",
@@ -203,5 +203,5 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       }
     }
   },
-  "completedAt": "2026-07-13T12:14:15.066Z"
+  "completedAt": "2026-07-13T13:10:32.166Z"
 };
