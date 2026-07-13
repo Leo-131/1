@@ -1,4 +1,4 @@
-window.DAILY_AUTOMATION_LATEST = {
+{
   "generatedAt": "2026-07-13T08:44:05.748Z",
   "date": "2026-07-13",
   "mode": "daily-icp-first-automation-loop",
@@ -2696,4 +2696,4 @@ window.DAILY_AUTOMATION_LATEST = {
       ]
     }
   }
-};
+}

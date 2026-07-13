@@ -73,7 +73,7 @@ test('command center contains separated operational views', () => {
     assert.ok(js.includes(`['${viewId}'`), viewId);
   }
   assert.ok(publicIndexHtml.includes('<body class="command-center-booting">'));
-  assert.ok(publicIndexHtml.includes('command-center.js?v=20260713-okki-module'));
+  assert.ok(publicIndexHtml.includes('command-center.js?v=20260713-visible-queue'));
 });
 
 test('customer detail opens in a new tab without replacing the shell', () => {
@@ -160,7 +160,8 @@ test('today queue separates untouched work from historical follow-ups', () => {
   assert.ok(js.includes('function followupTasks'));
   assert.ok(js.includes('function executableDevelopmentTasks'));
   assert.ok(js.includes('function isAutoDevelopmentTask'));
-  assert.ok(js.includes("query.get('queue') || 'untouched'"));
+  assert.ok(js.includes("query.get('queue') || 'potential'"));
+  assert.ok(js.includes("latestQueueRows('visibleTodayQueue')"));
   assert.ok(js.includes("latestQueueRows('dailyPotentialPool')"));
   assert.ok(js.includes("queue: 'untouched'"));
   assert.ok(js.includes("queue: 'followup'"));
@@ -230,10 +231,10 @@ test('all reporting sections use live automation artifacts', () => {
   assert.ok(js.includes('analytics.buildTemplateMetrics(liveOperationalRecords())'));
   assert.ok(js.includes('const events = liveAuditEvents();'));
   assert.ok(js.includes('...liveOperationalRecords()'));
-  assert.ok(html.includes('20260713-okki-module'));
+  assert.ok(html.includes('20260713-visible-queue'));
   assert.ok(html.includes('ensureCommandCenterModule'));
   assert.ok(html.includes('commandCenterRecovery'));
-  assert.ok(serviceWorkerJs.includes('customer-development-system-v18-7-23-20260713-okki-module'));
+  assert.ok(serviceWorkerJs.includes('customer-development-system-v18-7-23-20260713-visible-queue'));
 });
 
 test('reporting center exposes reply conversion diagnostics and CSV rates', () => {

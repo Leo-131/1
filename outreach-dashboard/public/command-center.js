@@ -244,7 +244,9 @@
     return Array.from(byCustomer.values());
   }
   function currentTask() {
-    return executableDevelopmentTasks().sort(dealPriorityCompare)[0] || null;
+    return executableDevelopmentTasks().sort(dealPriorityCompare)[0]
+      || (latestRun ? latestQueueRows('visibleTodayQueue').sort(dealPriorityCompare)[0] : null)
+      || null;
   }
   function executionResultKey(result) {
     return normalizeKey(result && (result.id || result.taskId || result.automationTaskId || result.company || result.name));
@@ -300,10 +302,12 @@
       ? (latestRun.scheduledLater || [])
       : source === 'cooldownQueue'
         ? (latestRun.cooldownQueue || [])
+        : source === 'visibleTodayQueue'
+          ? (latestRun.visibleTodayQueue || latestRun.dailyPotentialPool || latestRun.dailyQueue || [])
         : source === 'dailyPotentialPool'
           ? (latestRun.dailyPotentialPool || [])
           : source === 'all'
-            ? [...(latestRun.dailyPotentialPool || []), ...(latestRun.dailyQueue || []), ...(latestRun.scheduledLater || []), ...(latestRun.cooldownQueue || [])]
+            ? [...(latestRun.visibleTodayQueue || []), ...(latestRun.dailyPotentialPool || []), ...(latestRun.dailyQueue || []), ...(latestRun.scheduledLater || []), ...(latestRun.cooldownQueue || [])]
             : (latestRun.dailyQueue || []);
     return rows.map((item, index) => {
       const base = taskIndex.get(normalizeKey(item.id))
@@ -341,6 +345,7 @@
         workingTime: item.workingTime,
         state: (executionStatus === 'sent_confirmed' || sameDayStatus === 'sent_confirmed') ? 'outcome_pending'
           : item.action === 'develop' ? 'target_verified'
+          : item.action === 'review_only' ? 'target_verified'
           : item.action === 'retry_or_alternate_channel' ? 'outcome_pending'
             : item.action === 'email_priority' ? 'rerouted'
               : item.action === 'verify_target' ? 'profile_scored'
@@ -1058,7 +1063,7 @@
     return `<div class="cc-route">${route.map((item, i) => `<div class="cc-stage ${i < index ? 'done' : i === index ? 'active' : ''}"><b>${item.label}</b><span>${esc(item.note)}</span><em>${i < index ? '已完成' : i === index ? '当前阶段' : '待执行'}</em></div>`).join('')}</div>`;
   }
   function latestSystemSummary() {
-    const dailyRows = latestRun ? latestQueueRows('dailyQueue') : [];
+    const dailyRows = latestRun ? latestQueueRows('visibleTodayQueue') : [];
     const potentialRows = latestRun ? latestQueueRows('dailyPotentialPool') : [];
     const cooldownRows = latestRun ? latestQueueRows('cooldownQueue') : [];
     const googleRows = dailyRows.filter(item => item.source === 'google_customer_discovery' || /^google-customer-/i.test(item.taskId || item.id || ''));
@@ -1307,18 +1312,19 @@
     }).join('')}</tbody></table>`;
   }
   function queue() {
-    const mode = query.get('queue') || 'untouched';
+    const mode = query.get('queue') || 'potential';
+    const visibleRows = latestRun ? latestQueueRows('visibleTodayQueue') : untouchedTasks();
     const list = latestRun
-      ? (mode === 'potential' ? latestQueueRows('dailyPotentialPool') : mode === 'followup' ? todayFollowupTasks() : mode === 'cooldown' ? latestQueueRows('cooldownQueue') : mode === 'all' ? latestQueueRows('all') : executableDevelopmentTasks())
+      ? (mode === 'potential' ? visibleRows : mode === 'followup' ? todayFollowupTasks() : mode === 'cooldown' ? latestQueueRows('cooldownQueue') : mode === 'all' ? latestQueueRows('all') : executableDevelopmentTasks())
       : (mode === 'followup' ? followupTasks() : mode === 'all' ? tasks : untouchedTasks());
     const tabs = [
-      ['potential', '高 ICP 潜客清单', latestRun ? latestQueueRows('dailyPotentialPool').length : untouchedTasks().length],
-      ['untouched', '可自动触达', executableDevelopmentTasks().length],
-      ['followup', '跟进中', todayFollowupTasks().length],
-      ['cooldown', '短期不重复', latestRun ? latestQueueRows('cooldownQueue').length : 0],
-      ['all', '全部任务', latestRun ? latestQueueRows('all').length : tasks.length],
+      ['potential', '\u53ef\u81ea\u52a8\u5f00\u53d1', visibleRows.length],
+      ['untouched', '\u6267\u884c\u5b50\u96c6', executableDevelopmentTasks().length],
+      ['followup', '\u8ddf\u8fdb\u4e2d', todayFollowupTasks().length],
+      ['cooldown', '\u77ed\u671f\u4e0d\u91cd\u590d', latestRun ? latestQueueRows('cooldownQueue').length : 0],
+      ['all', '\u5168\u90e8\u4efb\u52a1', latestRun ? latestQueueRows('all').length : tasks.length],
     ];
-    return `${pageHead('今日队列', '默认显示可自动触达客户；高 ICP 潜客清单已剔除已开发和冷却中的历史客户')}
+    return `${pageHead('\u4eca\u65e5\u961f\u5217', '\u9ed8\u8ba4\u53ea\u663e\u793a\u672a\u89e6\u8fbe\u4e14\u8eab\u4efd\u6821\u9a8c\u901a\u8fc7\u7684\u65b0\u5ba2\u6237\uff0c\u5386\u53f2\u5ba2\u6237\u5355\u72ec\u8ddf\u8fdb')}
       <div class="cc-view-tabs">${tabs.map(([key, label, count]) => `<a class="${mode === key ? 'active' : ''}" href="${urlFor('queue', { queue: key })}">${label} <b>${count}</b></a>`).join('')}</div>
       <div class="cc-table-wrap">${taskTable(list)}</div>`;
   }
@@ -2127,3 +2133,4 @@
     });
   }
 }());
+

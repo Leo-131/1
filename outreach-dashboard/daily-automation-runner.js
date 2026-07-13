@@ -807,8 +807,9 @@ function copyPublicArtifact(file) {
 
 function writeSystemVisibilityArtifact(run) {
   const dailyRows = Array.isArray(run.dailyQueue) ? run.dailyQueue : [];
+  const visibleRows = Array.isArray(run.visibleTodayQueue) ? run.visibleTodayQueue : dailyRows;
   const cooldownRows = Array.isArray(run.cooldownQueue) ? run.cooldownQueue : [];
-  const googleRows = dailyRows.filter(item => item.source === 'google_customer_discovery' || /^google-customer-/i.test(item.id || item.taskId || ''));
+  const googleRows = visibleRows.filter(item => item.source === 'google_customer_discovery' || /^google-customer-/i.test(item.id || item.taskId || ''));
   const websiteContactRows = googleRows.filter(item => item.reason === 'official_website_contact_channel' || /website-contact/i.test(item.id || item.taskId || ''));
   const visibility = {
     updatedAt: new Date().toISOString(),
@@ -816,6 +817,7 @@ function writeSystemVisibilityArtifact(run) {
     runDate: run.date,
     artifactGeneratedAt: run.generatedAt,
     counts: {
+      visibleTodayQueue: visibleRows.length,
       dailyQueue: dailyRows.length,
       googleDiscovered: googleRows.length,
       websiteContact: websiteContactRows.length,
@@ -1113,6 +1115,85 @@ function buildDailyPotentialPool(classified, discoveryRun, context, targetSize) 
     .slice(0, targetSize);
 }
 
+function bestVisibleChannel(items = []) {
+  const rank = { facebook: 0, instagram: 1, email: 2 };
+  return items.slice().sort((left, right) => {
+    const leftRank = rank[String(left.platform || '').toLowerCase()] ?? 9;
+    const rightRank = rank[String(right.platform || '').toLowerCase()] ?? 9;
+    return leftRank - rightRank || priorityCompare(left, right);
+  })[0] || items[0];
+}
+
+function buildVisibleTodayQueue(discoveryRun, context, targetSize = 3) {
+  const history = knownTouchIndex(context.results || [], [], context.now || Date.now());
+  const byCompany = new Map();
+  (discoveryRun.leads || [])
+    .filter(item => Number(item.fitScore || 0) > ICP_THRESHOLD)
+    .filter(item => !item.doNotOutreach && item.action !== 'partner_account' && item.sendStatus !== 'partner_account')
+    .filter(item => !isKnownPartnerCompany(item))
+    .filter(item => !/^united states$/i.test(String(item.country || item.countryEn || '').trim()))
+    .forEach((item) => {
+      const key = slugKey(item.company || item.name || item.id);
+      if (!key) return;
+      if (!byCompany.has(key)) byCompany.set(key, []);
+      byCompany.get(key).push(item);
+    });
+
+  return Array.from(byCompany.values())
+    .map(items => {
+      const item = bestVisibleChannel(items);
+      const companyKeys = companyLeadKeys(item);
+      const channelKeys = channelLeadKeys(item);
+      const keys = [...companyKeys, ...channelKeys];
+      const touch = keys
+        .map(key => history.activeCooldownDetails.get(key) || history.touchedDetails.get(key))
+        .filter(Boolean)
+        .sort((left, right) => validDate(right.timestamp) - validDate(left.timestamp))[0] || null;
+      const sentConfirmed = keys.some(key => history.sentConfirmed.has(key));
+      const activeCooldown = keys.some(key => history.activeCooldown.has(key));
+      const sameDay = keys.some(key => history.sameDayDeveloped.has(key));
+      const untouched = !sentConfirmed && !activeCooldown && !sameDay;
+      const visibleReview = activeCooldown && touch;
+      if (!untouched && !visibleReview) return null;
+      return {
+        ...item,
+        id: item.id || `visible-${slugKey(item.company || item.name)}`,
+        taskId: item.id || `visible-${slugKey(item.company || item.name)}`,
+        targetRegion: targetRegion(item),
+        targetRegionScore: targetRegionScore(item),
+        contactChannelScore: contactChannelScore(item),
+        dealProbabilityScore: dealProbabilityScore(item),
+        priorityScore: dealProbabilityScore(item),
+        action: sentConfirmed
+          ? 'review_only'
+          : activeCooldown
+            ? 'review_only'
+            : (item.action || 'develop'),
+        reason: sentConfirmed
+          ? 'sent_confirmed_no_duplicate_review'
+          : activeCooldown
+            ? 'cooldown_visible_review'
+            : (item.reason || 'high_icp_visible_today'),
+        agencyState: item.agencyState || 'open',
+        lastStatus: touch && touch.status || '',
+        lastEvidence: touch && touch.evidence || '',
+        lastTouch: touch && touch.timestamp || '',
+        visibleOnly: Boolean(!untouched),
+        workingTime: item.workingTime || { dueNow: true },
+      };
+    })
+    .filter(Boolean)
+    .sort((left, right) => {
+      const regionRank = { oceania: 0, americas: 1, europe: 2 };
+      const leftRegion = regionRank[targetRegion(left)] ?? 9;
+      const rightRegion = regionRank[targetRegion(right)] ?? 9;
+      return leftRegion - rightRegion
+        || Number(right.fitScore || 0) - Number(left.fitScore || 0)
+        || priorityCompare(left, right);
+    })
+    .slice(0, targetSize);
+}
+
 function main() {
   const args = new Set(process.argv.slice(2));
   const now = Date.now();
@@ -1148,6 +1229,7 @@ function main() {
   const discoveryRun = readJson('google-lead-discovery-latest.json', { leads: [] });
   const potentialPoolTarget = Math.max(DEFAULT_POTENTIAL_POOL_TARGET, Number(CONFIG.limits.total || 0));
   const dailyPotentialPool = buildDailyPotentialPool(classified, discoveryRun, context, potentialPoolTarget);
+  const visibleTodayQueue = buildVisibleTodayQueue(discoveryRun, context, 3);
   const newDiscovery = discoveryQueue(Number(CONFIG.limits.develop || 10), context);
   const touchedDiscovery = discoveryCooldownQueue(20, context);
   const remainingLimit = Math.max(0, picked.quota.total.target - newDiscovery.length);
@@ -1186,6 +1268,7 @@ function main() {
       highIcp: classified.filter(item => item.fitScore > ICP_THRESHOLD).length,
       readyToDevelop: dailyQueue.filter(item => ['develop', 'discover_and_develop'].includes(item.action)).length,
       dueNow: dailyQueue.length,
+      visibleTodayQueue: visibleTodayQueue.length,
       potentialPool: dailyPotentialPool.length,
       potentialPoolTarget,
       customerTableHighIcp: dailyPotentialPool.filter(item => item.potentialSource === 'customer_table').length,
@@ -1208,6 +1291,7 @@ function main() {
       refillByCustomerType: discoveryRun.refillByCustomerType || { agency: 0, key_account: 0 },
       qualifiedQueueCount: newDiscovery.filter(item => Number(item.fitScore || 0) > ICP_THRESHOLD).length,
     },
+    visibleTodayQueue,
     dailyPotentialPool,
     dailyQueue,
     cooldownQueue,
