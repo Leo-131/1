@@ -31,6 +31,8 @@
 body.command-center-booting{overflow:hidden}
 body.command-center-booting>.header,body.command-center-booting>.container,body.command-center-booting>.footer,body.command-center-booting>.detail-overlay,body.command-center-booting>.detail-backdrop{display:none!important}
 body.command-center-booting::before{content:'正在加载开发工作台…';position:fixed;inset:0;display:grid;place-items:center;background:#f5f7fb;color:#334155;font:600 14px -apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC',sans-serif;letter-spacing:.02em}
+body>.header,body>.container,body>.footer,body>.detail-overlay,body>.detail-backdrop{display:none!important}
+body:not(.command-center-active)::before{content:'正在加载中文 OKKI 客户开发系统…';position:fixed;inset:0;z-index:9999;display:grid;place-items:center;background:#f5f7fb;color:#334155;font:600 14px -apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC',sans-serif;letter-spacing:.02em}
 :root{
   --bg:#f6f8fb;--surface:#ffffff;--border:#d9e0e8;--text:#111827;--muted:#667085;
   --primary:#2563eb;--primary-light:#eff6ff;--li:#0a66c2;--fb:#1877f2;--ins:#db2777;
@@ -2366,7 +2368,6 @@ initializeKpiDetailPage();
 </script>
 </body>
 </html>
-
 
 
 

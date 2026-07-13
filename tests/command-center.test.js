@@ -28,6 +28,8 @@ test('dashboard loads autonomous command center assets', () => {
 test('command center uses an atomic boot gate so the legacy dashboard never flashes', () => {
   assert.ok(html.includes('<body class="command-center-booting">'));
   assert.ok(html.includes('body.command-center-booting>.header'));
+  assert.ok(html.includes('body>.header,body>.container,body>.footer'));
+  assert.ok(html.includes('正在加载中文 OKKI 客户开发系统'));
   assert.ok(js.includes("document.body.classList.remove('command-center-booting')"));
   assert.match(js, /document\.body\.appendChild\(shell\);\s*document\.body\.classList\.remove\('command-center-booting'\)/);
   assert.ok(js.includes("document.body.classList.remove('command-center-active')"));
