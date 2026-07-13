@@ -1,10 +1,8 @@
 window.SYSTEM_VISIBILITY_LATEST = {
-  "updatedAt": "2026-07-13T05:57:56.445Z",
-  "source": "sync-local-data-to-github-writeSyncStatus",
+  "updatedAt": "2026-07-13T07:55:47.635Z",
+  "source": "daily-automation-runner",
   "runDate": "2026-07-13",
-  "artifactGeneratedAt": "2026-07-13T05:54:24.435Z",
-  "executionGeneratedAt": "2026-07-13T05:55:37.542Z",
-  "githubSyncUpdatedAt": "2026-07-13T05:57:56.312Z",
+  "artifactGeneratedAt": "2026-07-13T07:55:47.100Z",
   "counts": {
     "dailyQueue": 1,
     "googleDiscovered": 1,
@@ -20,16 +18,8 @@ window.SYSTEM_VISIBILITY_LATEST = {
     "customerDetail",
     "seo",
     "automationAudit",
-    "settings",
     "rightRail",
     "githubSyncStatus"
-  ],
-  "refreshedArtifacts": [
-    "daily-automation-latest",
-    "daily-automation-execution-latest",
-    "google-lead-discovery-latest",
-    "github-sync/latest-status",
-    "system-visibility-latest"
   ],
   "contactEnrichment": {
     "enabled": true,
