@@ -2473,15 +2473,34 @@ function uniqueSkippedRows(rows = []) {
 }
 
 function executionRecoveryHint(blockerSummary = []) {
+  const actions = executionRecoveryActions(blockerSummary);
+  return actions.length ? actions.map(item => item.hint).join(' ') : undefined;
+}
+
+function executionRecoveryActions(blockerSummary = []) {
   const reasons = new Set((Array.isArray(blockerSummary) ? blockerSummary : []).map(item => item && item.reason));
-  const hints = [];
+  const actions = [];
   if (reasons.has('marketing_attachment_missing')) {
-    hints.push('Configure WEBSITE_MARKETING_FILE or MARKETING_ATTACHMENT_PATH with an approved marketing attachment before rerunning website-contact outreach.');
+    actions.push({
+      reason: 'marketing_attachment_missing',
+      hint: 'Configure WEBSITE_MARKETING_FILE or MARKETING_ATTACHMENT_PATH with an approved marketing attachment before rerunning website-contact outreach.',
+    });
   }
   if (reasons.has('profile_valid_no_message_button')) {
-    hints.push('Use a verified alternate channel because the current social profile has no safe message button.');
+    actions.push({
+      reason: 'profile_valid_no_message_button',
+      hint: 'Use a verified alternate channel because the current social profile has no safe message button.',
+    });
   }
-  return hints.length ? hints.join(' ') : undefined;
+  return actions;
+}
+
+function executionBlockerCounts(blockerSummary = []) {
+  return (Array.isArray(blockerSummary) ? blockerSummary : []).reduce((counts, item) => {
+    const key = item && (item.reason || item.status);
+    if (key) counts[key] = item.count || 0;
+    return counts;
+  }, {});
 }
 
 function formatExecutionBlockerStatus(blockerSummary = []) {
@@ -2563,6 +2582,8 @@ async function runDailyAutomationQueue(payload = {}) {
     const userVisibleStatus = formatExecutionBlockerStatus(blockerSummary)
       || 'No Chrome/browser development was performed because safety gates left no executable tasks.';
     const recoveryHint = executionRecoveryHint(blockerSummary);
+    const recoveryActions = executionRecoveryActions(blockerSummary);
+    const blockerCounts = executionBlockerCounts(blockerSummary);
     return {
       ok: false,
       skippedOnly: true,
@@ -2576,9 +2597,11 @@ async function runDailyAutomationQueue(payload = {}) {
       reportingVerdict: 'no_customer_development_performed',
       userVisibleStatus,
       recoveryHint,
+      recoveryActions,
       error: 'No executable tasks. Website-contact, social, cooldown, exclusive-agency, and verification safety gates left nothing safe to prepare.',
       skipped: skippedRows,
       blockerSummary,
+      blockerCounts,
       summary: latest.summary || {},
     };
   }
@@ -2674,6 +2697,8 @@ async function runDailyAutomationQueue(payload = {}) {
   const blockerSummary = buildExecutionBlockerSummary(results, skipped);
   const userVisibleStatus = formatExecutionBlockerStatus(blockerSummary);
   const recoveryHint = executionRecoveryHint(blockerSummary);
+  const recoveryActions = executionRecoveryActions(blockerSummary);
+  const blockerCounts = executionBlockerCounts(blockerSummary);
 
   return {
     ok: results.some(item => item.ok),
@@ -2690,8 +2715,10 @@ async function runDailyAutomationQueue(payload = {}) {
     skipped,
     summary: latest.summary || {},
     blockerSummary,
+    blockerCounts,
     userVisibleStatus,
     recoveryHint,
+    recoveryActions,
     systemRefresh,
   };
 }

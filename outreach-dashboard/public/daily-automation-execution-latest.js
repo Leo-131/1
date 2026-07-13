@@ -11,6 +11,16 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
   "reportingVerdict": "no_customer_development_performed",
   "userVisibleStatus": "Customer development was not performed. Blockers: marketing_attachment_missing (1); profile_valid_no_message_button (1).",
   "recoveryHint": "Configure WEBSITE_MARKETING_FILE or MARKETING_ATTACHMENT_PATH with an approved marketing attachment before rerunning website-contact outreach. Use a verified alternate channel because the current social profile has no safe message button.",
+  "recoveryActions": [
+    {
+      "reason": "marketing_attachment_missing",
+      "hint": "Configure WEBSITE_MARKETING_FILE or MARKETING_ATTACHMENT_PATH with an approved marketing attachment before rerunning website-contact outreach."
+    },
+    {
+      "reason": "profile_valid_no_message_button",
+      "hint": "Use a verified alternate channel because the current social profile has no safe message button."
+    }
+  ],
   "error": "No executable tasks. Website-contact, social, cooldown, exclusive-agency, and verification safety gates left nothing safe to prepare.",
   "skipped": [
     {
@@ -38,6 +48,10 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "count": 1
     }
   ],
+  "blockerCounts": {
+    "marketing_attachment_missing": 1,
+    "profile_valid_no_message_button": 1
+  },
   "summary": {
     "totalLeads": 16,
     "highIcp": 16,
@@ -58,5 +72,5 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     "needsVerification": 0,
     "retainedLowIcp": 0
   },
-  "completedAt": "2026-07-13T08:02:08.785Z"
+  "completedAt": "2026-07-13T08:04:11.596Z"
 };
