@@ -107,6 +107,10 @@ if (!commandCenter.includes('No Chrome/browser development was performed')
 }
 
 if (!main.includes('function executionRecoveryHint(')
+  || !main.includes('function executionRecoveryActions(')
+  || !main.includes('function executionBlockerCounts(')
+  || !main.includes('recoveryActions')
+  || !main.includes('blockerCounts')
   || !main.includes('formatExecutionBlockerStatus(blockerSummary)')
   || !commandCenter.includes('latestExecution.recoveryHint')) {
   throw new Error('Dashboard checks must cover execution recovery hints for no-browser blocker runs');
