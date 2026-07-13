@@ -13,7 +13,7 @@
   "batchMode": "parallel-batches",
   "parallelLimit": 1,
   "limit": 10,
-  "queueDate": "2026-07-12",
+  "queueDate": "2026-07-13",
   "queueSource": "dailyQueue",
   "executed": [
     {
@@ -111,16 +111,16 @@
   "recoveryHint": "Configure WEBSITE_MARKETING_FILE or MARKETING_ATTACHMENT_PATH with an approved marketing attachment before rerunning website-contact outreach.",
   "systemRefresh": {
     "ok": true,
-    "stdout": "{\n  \"date\": \"2026-07-12\",\n  \"summary\": {\n    \"totalLeads\": 16,\n    \"highIcp\": 16,\n    \"readyToDevelop\": 0,\n    \"dueNow\": 1,\n    \"potentialPool\": 100,\n    \"potentialPoolTarget\": 100,\n    \"customerTableHighIcp\": 64,\n    \"refillNeeded\": 0,\n    \"googleDiscovered\": 1,\n    \"facebookDiscovered\": 0,\n    \"websiteContactDiscovered\": 1,\n    \"scheduledLater\": 1,\n    \"cooldown\": 30,\n    \"emailPriority\": 0,\n    \"openAgencyMarket\": 15,\n    \"exclusiveAgencySkipped\": 1,\n    \"needsVerification\": 0,\n    \"retainedLowIcp\": 0\n  },\n  \"bugErrors\": 0,\n  \"queueFile\": \"E:\\\\New project\\\\outreach-dashboard\\\\daily-runs\\\\2026-07-12-daily-automation.json\",\n  \"csvFile\": \"E:\\\\New project\\\\outreach-dashboard\\\\daily-runs\\\\2026-07-12-daily-queue.csv\"\n}",
+    "stdout": "{\n  \"date\": \"2026-07-13\",\n  \"summary\": {\n    \"totalLeads\": 16,\n    \"highIcp\": 16,\n    \"readyToDevelop\": 0,\n    \"dueNow\": 1,\n    \"potentialPool\": 100,\n    \"potentialPoolTarget\": 100,\n    \"customerTableHighIcp\": 64,\n    \"refillNeeded\": 0,\n    \"googleDiscovered\": 1,\n    \"facebookDiscovered\": 0,\n    \"websiteContactDiscovered\": 1,\n    \"scheduledLater\": 1,\n    \"cooldown\": 30,\n    \"emailPriority\": 0,\n    \"openAgencyMarket\": 15,\n    \"exclusiveAgencySkipped\": 1,\n    \"needsVerification\": 0,\n    \"retainedLowIcp\": 0\n  },\n  \"bugErrors\": 0,\n  \"queueFile\": \"E:\\\\New project\\\\outreach-dashboard\\\\daily-runs\\\\2026-07-13-daily-automation.json\",\n  \"csvFile\": \"E:\\\\New project\\\\outreach-dashboard\\\\daily-runs\\\\2026-07-13-daily-queue.csv\"\n}",
     "stderr": "",
     "error": "",
     "visibility": {
-      "updatedAt": "2026-07-12T01:05:30.053Z",
+      "updatedAt": "2026-07-13T01:01:14.549Z",
       "source": "main-refreshDailyAutomationArtifacts",
-      "runDate": "2026-07-12",
-      "artifactGeneratedAt": "2026-07-12T01:05:27.078Z",
-      "executionGeneratedAt": "2026-07-11T01:05:24.389Z",
-      "githubSyncUpdatedAt": "2026-07-11T01:05:38.835Z",
+      "runDate": "2026-07-13",
+      "artifactGeneratedAt": "2026-07-13T01:01:13.117Z",
+      "executionGeneratedAt": "2026-07-12T01:05:31.464Z",
+      "githubSyncUpdatedAt": "2026-07-12T01:05:47.987Z",
       "counts": {
         "dailyQueue": 1,
         "googleDiscovered": 1,
@@ -166,5 +166,5 @@
       }
     }
   },
-  "completedAt": "2026-07-12T01:05:31.464Z"
+  "completedAt": "2026-07-13T01:01:15.305Z"
 }
