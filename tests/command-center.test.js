@@ -73,7 +73,7 @@ test('command center contains separated operational views', () => {
     assert.ok(js.includes(`['${viewId}'`), viewId);
   }
   assert.ok(publicIndexHtml.includes('<body class="command-center-booting">'));
-  assert.ok(publicIndexHtml.includes('command-center.js?v=20260713-okki-restore'));
+  assert.ok(publicIndexHtml.includes('command-center.js?v=20260714-report-detail-fix'));
 });
 
 test('customer detail opens in a new tab without replacing the shell', () => {
@@ -127,7 +127,7 @@ test('command center opens verified platform URLs and exposes assisted automatio
 
 test('command center uses Codex decisions and AutoClaw execution on verified URLs', () => {
   assert.ok(js.includes('Codex Decision'));
-  assert.ok(js.includes('AutoClaw Execution'));
+  assert.ok(js.includes('Codex Chrome Extension Execution'));
   assert.ok(js.includes("task.identityStatus === 'verified'"));
   assert.ok(html.includes('Codex Chrome'));
 });
@@ -146,7 +146,7 @@ test('AutoClaw buttons explain desktop connection and duplicate-contact blocks',
 });
 
 test('historical follow-up tasks can trigger safe OpenClaw preparation', () => {
-  assert.ok(js.includes('OpenClaw Followup'));
+  assert.ok(js.includes('Codex Chrome Followup'));
   assert.ok(js.includes('Prepare follow-up only'));
   assert.ok(js.includes('glm-direct-prepared'));
   const canRunBlock = js.slice(js.indexOf('function canRunGlm'), js.indexOf('function untouchedTasks'));
