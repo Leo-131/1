@@ -333,7 +333,7 @@
   }
   function currentTask() {
     return executableDevelopmentTasks().sort(dealPriorityCompare)[0]
-      || (latestRun ? latestQueueRows('visibleTodayQueue').sort(dealPriorityCompare)[0] : null)
+      || (latestRun ? [...latestQueueRows('visibleTodayQueue')].sort(dealPriorityCompare)[0] : null)
       || null;
   }
   function executionResultKey(result) {
