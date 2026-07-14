@@ -205,19 +205,37 @@ function setsIntersect(left, right) {
   return false;
 }
 
+const COMPANY_HISTORY_BLOCKING_STATUSES = new Set([
+  'sent_confirmed',
+  'send_unconfirmed',
+  'account_followed',
+  'post_liked',
+  'website_contact_ready',
+  'approval_pending',
+  'draft_prepared',
+  'prepared_not_sent',
+]);
+
+function historicalAutomationResultBlocksCompany(result = {}) {
+  if (COMPANY_HISTORY_BLOCKING_STATUSES.has(result.status)) return true;
+  if (result.status !== 'failed_open') return false;
+  return /message_button_clicked|profile_valid_no_message_button|profile_opened_no_message_button|no_message_button|contact_entry_verified|contact_form_detected|mailto_detected|no_contact_entry_control|website_contact_entry_not_verified|website_contact_all_targets_failed|public_email_fallback_available/i
+    .test(String(result.evidence || ''));
+}
+
 function blockingAutomationResultFor(item) {
   const file = path.join(__dirname, 'autonomous-outreach-results.js');
   const results = readJsonScriptArray(file, 'AUTONOMOUS_OUTREACH_RESULTS');
   const exactKeys = automationExactKeys(item);
   const companyKeys = automationCompanyKeys(item);
   const itemPlatform = automationPlatformFor(item);
-  const blocking = new Set(['sent_confirmed', 'failed_open', 'send_unconfirmed', 'account_followed', 'post_liked', 'website_contact_ready', 'website_contact_unreachable_skip']);
+  const blocking = new Set(['sent_confirmed', 'failed_open', 'send_unconfirmed', 'account_followed', 'post_liked', 'website_contact_ready', 'website_contact_unreachable_skip', 'approval_pending', 'draft_prepared', 'prepared_not_sent']);
   const companyBlocking = new Set(['sent_confirmed', 'send_unconfirmed', 'account_followed', 'post_liked']);
   return results
-    .filter((result) => result && (blocking.has(result.status) || companyBlocking.has(result.status)))
-    .filter((result) => result.status !== 'website_contact_ready' || websiteContactResultIsVerified(result))
-    .filter((result) => result.status !== 'failed_open' || failedOpenResultShouldBlockRetry(result))
+    .filter((result) => result && (blocking.has(result.status) || historicalAutomationResultBlocksCompany(result)))
+    .filter((result) => result.status !== 'failed_open' || failedOpenResultShouldBlockRetry(result) || historicalAutomationResultBlocksCompany(result))
     .find((result) => {
+      if (historicalAutomationResultBlocksCompany(result) && setsIntersect(companyKeys, automationCompanyKeys(result))) return true;
       const resultExactKeys = automationExactKeys(result);
       if (setsIntersect(exactKeys, resultExactKeys)) return true;
       if (companyBlocking.has(result.status) && setsIntersect(companyKeys, automationCompanyKeys(result))) return true;

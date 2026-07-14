@@ -49,6 +49,13 @@ const SAME_DAY_DEVELOPMENT_STATUSES = new Set([
   'account_followed',
   'post_liked',
 ]);
+const HISTORICAL_DEVELOPMENT_STATUSES = new Set([
+  ...SAME_DAY_DEVELOPMENT_STATUSES,
+  'website_contact_ready',
+  'approval_pending',
+  'draft_prepared',
+  'prepared_not_sent',
+]);
 const WEBSITE_CONTACT_VERIFIED_EVIDENCE = 'contact_entry_verified';
 const PARTNER_COMPANIES = new Set([
   'rei',
@@ -424,6 +431,13 @@ function isTouchResult(result = {}) {
   return Boolean(result && TOUCH_STATUSES.has(result.status) && isVerifiedWebsiteContactResult(result));
 }
 
+function isHistoricalDevelopmentResult(result = {}) {
+  if (HISTORICAL_DEVELOPMENT_STATUSES.has(result.status)) return true;
+  if (result.status !== 'failed_open') return false;
+  return /message_button_clicked|profile_valid_no_message_button|profile_opened_no_message_button|no_message_button|contact_entry_verified|contact_form_detected|mailto_detected|no_contact_entry_control|website_contact_entry_not_verified|website_contact_all_targets_failed|public_email_fallback_available/i
+    .test(String(result.evidence || ''));
+}
+
 function noSafeMessageButtonEvidence(value = '') {
   return /profile_valid_no_message_button|profile_opened_no_message_button|no_message_button|no safe message button/i.test(String(value || ''));
 }
@@ -487,10 +501,21 @@ function knownTouchIndex(results, contacts, now = Date.now()) {
   const activeCooldown = new Set();
   const activeCooldownDetails = new Map();
   const sentConfirmed = new Set();
+  const priorDeveloped = new Set();
+  const priorDevelopedDetails = new Map();
   const sameDayDeveloped = new Set();
   const sameDayDetails = new Map();
   const partners = new Set([...PARTNER_COMPANIES].flatMap(partnerCompanyKeys));
   for (const result of results || []) {
+    if (isHistoricalDevelopmentResult(result)) {
+      for (const key of companyLeadKeys(result)) {
+        priorDeveloped.add(key);
+        const current = priorDevelopedDetails.get(key);
+        if (!current || validDate(result.timestamp) >= validDate(current.timestamp)) {
+          priorDevelopedDetails.set(key, result);
+        }
+      }
+    }
     if (isSameDayDevelopmentResult(result, now)) {
       for (const key of companyLeadKeys(result)) {
         sameDayDeveloped.add(key);
@@ -558,6 +583,8 @@ function knownTouchIndex(results, contacts, now = Date.now()) {
     activeCooldown,
     activeCooldownDetails,
     sentConfirmed,
+    priorDeveloped,
+    priorDevelopedDetails,
     sameDayDeveloped,
     sameDayDetails,
     partners,
@@ -582,6 +609,11 @@ function classifyTask(task, context) {
     && result.status === 'failed_open'
     && noSafeMessageButtonEvidence(result.evidence);
   const sameDayByCompany = context.sameDayByCompany || new Map();
+  const priorDevelopmentByCompany = context.priorDevelopmentByCompany || new Map();
+  const priorDevelopment = companyLeadKeys(task)
+    .map(key => priorDevelopmentByCompany.get(key))
+    .filter(Boolean)
+    .sort((left, right) => validDate(right.timestamp) - validDate(left.timestamp))[0] || null;
   const sameDayResult = companyLeadKeys(task)
     .map(key => sameDayByCompany.get(key))
     .filter(Boolean)
@@ -602,6 +634,9 @@ function classifyTask(task, context) {
   } else if (!verified) {
     action = 'verify_target';
     reason = 'missing_verified_profile_url';
+  } else if (priorDevelopment) {
+    action = 'cooldown';
+    reason = 'previous_customer_development_no_repeat';
   } else if (sameDayResult && CONFIG.cadence.noDuplicateSameDayCustomer !== false) {
     action = 'cooldown';
     reason = 'same_day_customer_already_developed';
@@ -659,9 +694,9 @@ function classifyTask(task, context) {
     companyScale: task.companyScale || task.scale || '',
     dataSources: task.dataSources || null,
     alternateChannels: task.alternateChannels || null,
-    lastStatus: sameDayResult && sameDayResult.status || result && result.status || '',
-    lastEvidence: sameDayResult && sameDayResult.evidence || result && result.evidence || '',
-    lastTouch: sameDayResult && sameDayResult.timestamp || lastTouch,
+    lastStatus: priorDevelopment && priorDevelopment.status || sameDayResult && sameDayResult.status || result && result.status || '',
+    lastEvidence: priorDevelopment && priorDevelopment.evidence || sameDayResult && sameDayResult.evidence || result && result.evidence || '',
+    lastTouch: priorDevelopment && priorDevelopment.timestamp || sameDayResult && sameDayResult.timestamp || lastTouch,
     action,
     reason,
     workingTime: workingTimeForTask(task, context.now),
@@ -910,6 +945,7 @@ function discoveryQueue(limit, context = {}) {
       const partnerKeys = leadKeys(item);
       const channelKeys = channelLeadKeys(item);
       return !partnerKeys.some(key => history.partners.has(key))
+        && !companyLeadKeys(item).some(key => history.priorDeveloped.has(key))
         && !companyLeadKeys(item).some(key => history.sameDayDeveloped.has(key))
         && !companyLeadKeys(item).some(key => history.sentConfirmed.has(key))
         && !companyLeadKeys(item).some(key => history.activeCooldown.has(key))
@@ -943,6 +979,7 @@ function discoveryCooldownQueue(limit, context = {}) {
       const partnerKeys = leadKeys(item);
       if (partnerKeys.some(key => history.partners.has(key))) return false;
       return companyLeadKeys(item).some(key => history.sameDayDeveloped.has(key))
+        || companyLeadKeys(item).some(key => history.priorDeveloped.has(key))
         || companyLeadKeys(item).some(key => history.sentConfirmed.has(key))
         || companyLeadKeys(item).some(key => history.activeCooldown.has(key))
         || channelLeadKeys(item).some(key => history.activeCooldown.has(key));
@@ -950,6 +987,10 @@ function discoveryCooldownQueue(limit, context = {}) {
     .map(item => {
       const sameDay = companyLeadKeys(item)
         .map(key => history.sameDayDetails.get(key))
+        .filter(Boolean)
+        .sort((left, right) => validDate(right.timestamp) - validDate(left.timestamp))[0] || null;
+      const priorDevelopment = companyLeadKeys(item)
+        .map(key => history.priorDevelopedDetails.get(key))
         .filter(Boolean)
         .sort((left, right) => validDate(right.timestamp) - validDate(left.timestamp))[0] || null;
       const touch = channelLeadKeys(item)
@@ -965,15 +1006,17 @@ function discoveryCooldownQueue(limit, context = {}) {
         dealProbabilityScore: dealProbabilityScore(item),
         priorityScore: dealProbabilityScore(item),
         action: 'cooldown',
-        reason: sameDay
+        reason: priorDevelopment
+          ? 'previous_customer_development_no_repeat'
+          : sameDay
           ? 'same_day_customer_already_developed'
           : touch && touch.status === 'website_contact_ready'
           ? 'website_contact_ready_no_repeat'
           : `${COOLDOWN_DAYS}_day_no_repeat_touch`,
         agencyState: item.agencyState || 'open',
-        lastStatus: sameDay && sameDay.status || touch && touch.status || '',
-        lastEvidence: sameDay && sameDay.evidence || touch && touch.evidence || '',
-        lastTouch: sameDay && sameDay.timestamp || touch && touch.timestamp || '',
+        lastStatus: priorDevelopment && priorDevelopment.status || sameDay && sameDay.status || touch && touch.status || '',
+        lastEvidence: priorDevelopment && priorDevelopment.evidence || sameDay && sameDay.evidence || touch && touch.evidence || '',
+        lastTouch: priorDevelopment && priorDevelopment.timestamp || sameDay && sameDay.timestamp || touch && touch.timestamp || '',
         workingTime: item.workingTime || { dueNow: false, reason: 'channel_already_touched' },
       };
     })
@@ -1022,6 +1065,13 @@ function potentialStatusFor(item, history) {
     .filter(Boolean)
     .sort((left, right) => validDate(right.timestamp) - validDate(left.timestamp))[0] || null;
   if (companyKeys.some(key => history.partners.has(key))) return { action: 'blocked_partner', reason: 'known_partner_no_duplicate_outreach', touch };
+  if (companyKeys.some(key => history.priorDeveloped.has(key))) {
+    const prior = companyKeys
+      .map(key => history.priorDevelopedDetails.get(key))
+      .filter(Boolean)
+      .sort((left, right) => validDate(right.timestamp) - validDate(left.timestamp))[0] || touch;
+    return { action: 'cooldown', reason: 'previous_customer_development_no_repeat', touch: prior };
+  }
   if (companyKeys.some(key => history.sameDayDeveloped.has(key))) return { action: 'cooldown', reason: 'same_day_customer_already_developed', touch };
   if (companyKeys.some(key => history.sentConfirmed.has(key)) || channelKeys.some(key => history.activeCooldown.has(key))) {
     return { action: 'cooldown', reason: touch && touch.status === 'website_contact_ready' ? 'website_contact_ready_no_repeat' : `${COOLDOWN_DAYS}_day_no_repeat_touch`, touch };
@@ -1153,6 +1203,8 @@ function buildVisibleTodayQueue(discoveryRun, context, targetSize = 3) {
       const sentConfirmed = keys.some(key => history.sentConfirmed.has(key));
       const activeCooldown = keys.some(key => history.activeCooldown.has(key));
       const sameDay = keys.some(key => history.sameDayDeveloped.has(key));
+      const priorDeveloped = companyKeys.some(key => history.priorDeveloped.has(key));
+      if (priorDeveloped) return null;
       const untouched = !sentConfirmed && !activeCooldown && !sameDay;
       const visibleReview = activeCooldown && touch;
       if (!untouched && !visibleReview) return null;
@@ -1218,6 +1270,7 @@ function main() {
   };
   const history = knownTouchIndex(results, [], now);
   context.sameDayByCompany = history.sameDayDetails;
+  context.priorDevelopmentByCompany = history.priorDevelopedDetails;
   const classified = (plan.tasks || [])
     .map(task => classifyTask(task, context))
     .sort(priorityCompare);
@@ -1332,6 +1385,7 @@ module.exports = {
   companyLeadKeys,
   isActivePotentialCandidate,
   isKnownPartnerCompany,
+  isHistoricalDevelopmentResult,
   knownTouchIndex,
   preferSocialChannels,
 };

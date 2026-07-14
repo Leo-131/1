@@ -78,7 +78,7 @@ test('no-message social profiles are blocked from automatic execution', () => {
   assert.ok(mainSource.includes('.filter(item => !hasNoSafeMessageButton(item))'));
 });
 
-test('unsubmitted website preparation does not create customer-development cooldown', () => {
+test('unsubmitted website preparation creates a durable company history lock without claiming a sent touch', () => {
   const now = Date.parse('2026-07-09T04:00:00.000Z');
   const websiteAttempt = {
     task_id: 'google-customer-kathmandu-website-contact',
@@ -91,6 +91,49 @@ test('unsubmitted website preparation does not create customer-development coold
   const index = dailyRunner.knownTouchIndex([websiteAttempt], [], now);
   assert.equal(index.sameDayDeveloped.size, 0);
   assert.equal(index.activeCooldown.size, 0);
+  assert.ok(index.priorDeveloped.has('kathmandu'));
+  assert.equal(index.priorDevelopedDetails.get('kathmandu'), websiteAttempt);
+});
+
+test('previous customer development blocks Summit across days and channels', () => {
+  const now = Date.parse('2026-07-14T02:00:00.000Z');
+  const websiteAttempt = {
+    task_id: 'google-customer-summit-international-website-contact',
+    status: 'website_contact_ready',
+    timestamp: '2026-07-13T12:14:13.609Z',
+    target_url: 'https://www.summitint.co/contact/',
+    evidence: 'website_contact_entry_not_verified;no_contact_entry_control;public_email_fallback_available:info@summitint.co',
+  };
+  const history = dailyRunner.knownTouchIndex([websiteAttempt], [], now);
+  const classified = dailyRunner.classifyTask({
+    platform: 'Instagram',
+    name: 'Summit International',
+    company: 'Summit International',
+    fitScore: 91,
+    url: 'https://www.instagram.com/summitint/',
+  }, {
+    now,
+    profiles: {},
+    resultsByTask: new Map(),
+    sameDayByCompany: history.sameDayDetails,
+    priorDevelopmentByCompany: history.priorDevelopedDetails,
+  });
+
+  assert.ok(history.priorDeveloped.has('summitinternational'));
+  assert.equal(classified.action, 'cooldown');
+  assert.equal(classified.reason, 'previous_customer_development_no_repeat');
+  assert.equal(classified.lastStatus, 'website_contact_ready');
+});
+
+test('historical development lock distinguishes user interaction from transient browser failure', () => {
+  assert.equal(dailyRunner.isHistoricalDevelopmentResult({
+    status: 'failed_open',
+    evidence: 'chrome_target_not_found',
+  }), false);
+  assert.equal(dailyRunner.isHistoricalDevelopmentResult({
+    status: 'failed_open',
+    evidence: 'facebook_message_button_clicked_composer_not_found',
+  }), true);
 });
 
 test('daily potential pool excludes previously touched candidates', () => {
@@ -579,6 +622,10 @@ test('daily execution duplicate blocking is channel-aware', () => {
   assert.ok(mainSource.includes('const exactKeys = automationExactKeys(item)'));
   assert.ok(mainSource.includes('const itemPlatform = automationPlatformFor(item)'));
   assert.ok(mainSource.includes('const companyBlocking = new Set'));
+  assert.ok(mainSource.includes('COMPANY_HISTORY_BLOCKING_STATUSES'));
+  assert.ok(mainSource.includes('historicalAutomationResultBlocksCompany(result) && setsIntersect(companyKeys, automationCompanyKeys(result))'));
+  assert.ok(mainSource.includes("'approval_pending'"));
+  assert.ok(mainSource.includes("'website_contact_ready'"));
   assert.ok(mainSource.includes('companyBlocking.has(result.status) && setsIntersect(companyKeys, automationCompanyKeys(result))'));
   assert.ok(mainSource.includes('if (!itemPlatform || !resultPlatform || itemPlatform !== resultPlatform) return false'));
   assert.ok(mainSource.includes("'website_contact_unreachable_skip'"));
