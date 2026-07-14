@@ -38,6 +38,13 @@ test('legacy pending sequence statuses do not mark a customer as previously deve
   assert.equal(dailyRunner.legacyStatusIndicatesTouch('Accepted'), true);
 });
 
+test('daily automation default run date follows Shanghai business day', () => {
+  assert.equal(
+    dailyRunner.automationRunDate(Date.parse('2026-07-14T22:01:00.000Z')),
+    '2026-07-15',
+  );
+});
+
 test('daily queue prioritizes LinkedIn, Facebook and Instagram over website contact', () => {
   assert.ok(dailyRunner.channelPriorityScore({ platform: 'linkedin' })
     > dailyRunner.channelPriorityScore({ platform: 'facebook' }));

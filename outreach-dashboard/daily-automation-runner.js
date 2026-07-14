@@ -412,6 +412,10 @@ function sameAutomationDay(value, now = Date.now()) {
   return Boolean(day && day === automationLocalDay(now));
 }
 
+function automationRunDate(now = Date.now()) {
+  return automationLocalDay(now);
+}
+
 function profileHandle(value) {
   const raw = String(value || '');
   const socialMatch = raw.match(/(?:instagram|facebook)\.com\/([^/?#]+)/i);
@@ -1286,7 +1290,7 @@ function main() {
   const args = new Set(process.argv.slice(2));
   const now = Date.now();
   const dateArg = process.argv.find(arg => /^--date=/.test(arg));
-  const date = dateArg ? dateArg.split('=')[1] : new Date(now).toISOString().slice(0, 10);
+  const date = dateArg ? dateArg.split('=')[1] : automationRunDate(now);
   const limitArg = process.argv.find(arg => /^--limit=/.test(arg));
   const limit = limitArg ? Number(limitArg.split('=')[1]) : undefined;
 
@@ -1422,6 +1426,7 @@ module.exports = {
   classifyTask,
   buildBugChecks,
   buildModelOptimizations,
+  automationRunDate,
   channelPriorityScore,
   companyLeadKeys,
   isActivePotentialCandidate,
