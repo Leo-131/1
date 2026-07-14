@@ -222,6 +222,12 @@ test('artifact-derived collections are memoized for responsive module navigation
   assert.ok(js.includes("memoized('customerRecords'"));
 });
 
+test('current task sorting does not mutate the memoized visible queue', () => {
+  const currentTaskBlock = js.slice(js.indexOf('function currentTask'), js.indexOf('function executionResultKey'));
+  assert.ok(currentTaskBlock.includes("[...latestQueueRows('visibleTodayQueue')].sort(dealPriorityCompare)[0]"));
+  assert.ok(!currentTaskBlock.includes("latestQueueRows('visibleTodayQueue').sort(dealPriorityCompare)"));
+});
+
 test('recent-touch supports range filtering and ascending or descending sorting', () => {
   for (const token of [
     'customer-touch-time',
