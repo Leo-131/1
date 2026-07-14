@@ -765,7 +765,33 @@ async function ensureCodexChromePort() {
   return 0;
 }
 
-async function openWithCodexChrome(url) {
+const automationOwnedChromeTabs = new Map();
+
+async function closeChromeTarget(port, tabId) {
+  if (!port || !tabId) return false;
+  const closed = await httpJson(`http://127.0.0.1:${port}/json/close/${tabId}`, 2500).catch(() => null);
+  return Boolean(closed);
+}
+
+async function closeAutomationTabsOpenedAfter(existingTabIds = new Set()) {
+  const owned = Array.from(automationOwnedChromeTabs.entries())
+    .filter(([tabId]) => !existingTabIds.has(tabId));
+  for (const [tabId, port] of owned) {
+    await closeChromeTarget(port, tabId);
+    automationOwnedChromeTabs.delete(tabId);
+  }
+  return owned.length;
+}
+
+async function closeAutomationChromeTab(chromeOpen) {
+  if (!chromeOpen || !chromeOpen.tabId) return false;
+  const port = Number(chromeOpen.port || automationOwnedChromeTabs.get(chromeOpen.tabId) || 0);
+  const closed = await closeChromeTarget(port, chromeOpen.tabId);
+  automationOwnedChromeTabs.delete(chromeOpen.tabId);
+  return closed;
+}
+
+async function openWithCodexChrome(url, options = {}) {
   const parsed = validateExternalUrl(url);
   const port = await ensureCodexChromePort();
   if (!port) {
@@ -773,6 +799,7 @@ async function openWithCodexChrome(url) {
     return { ok: true, engine: 'shell-fallback', targetUrl: parsed.toString() };
   }
   const opened = await httpJson(`http://127.0.0.1:${port}/json/new?${encodeURIComponent(parsed.toString())}`, 2500, 'PUT');
+  if (options.automationOwned && opened && opened.id) automationOwnedChromeTabs.set(opened.id, port);
   await activateChromeTarget(port, opened);
   const inspected = await inspectOpenedChromeTab(opened, parsed.toString());
   if (inspected.unavailable) {
@@ -2035,7 +2062,7 @@ async function runWebsiteContactLead(lead = {}) {
   const attempts = [];
   let lastResult = null;
   for (const target of targets) {
-    const chromeOpen = await openWithCodexChrome(target.targetUrl);
+    const chromeOpen = await openWithCodexChrome(target.targetUrl, { automationOwned: true });
     const contactFlow = await inspectWebsiteContactFlow(chromeOpen);
     attempts.push({
       targetUrl: target.targetUrl,
@@ -2090,6 +2117,7 @@ async function runWebsiteContactLead(lead = {}) {
           attempts,
         }),
       };
+      await closeAutomationChromeTab(chromeOpen);
       continue;
     }
     const formPreparation = await prepareWebsiteContactForm(chromeOpen, lead, subject, draft);
@@ -2181,7 +2209,7 @@ async function runOpenClawLead(lead, decision, options = {}) {
   if (!target.ok) return target;
   const config = loadGlmConfig();
   if (!config || !config.apiKey) return { ok: false, needsConfig: true, error: 'GLM API key is not configured' };
-  const chromeOpen = await openWithCodexChrome(target.targetUrl);
+  const chromeOpen = await openWithCodexChrome(target.targetUrl, { automationOwned: true });
   if (!chromeOpen.ok) return { ...chromeOpen, sendStatus: 'failed_open' };
   const sessionKey = `agent:main:outreach-${String(lead.taskId || lead.name || Date.now()).replace(/[^a-zA-Z0-9_.:-]/g, '-').slice(0, 80)}`;
   // Legacy compatibility marker: followup_prepare_no_duplicate_send.
@@ -2224,7 +2252,7 @@ async function runOpenClawLead(lead, decision, options = {}) {
 async function runCodexChromeLead(lead, decision, mode = 'codex_chrome_prepare') {
   const target = validateLeadTargetForPreparation(lead);
   if (!target.ok) return target;
-  const chromeOpen = await openWithCodexChrome(target.targetUrl);
+  const chromeOpen = await openWithCodexChrome(target.targetUrl, { automationOwned: true });
   if (!chromeOpen.ok) return { ...chromeOpen, sendStatus: 'failed_open' };
   const finalDraft = await optimizeDraftWithContext(lead, decision, chromeOpen);
   const draftResult = await prepareSocialDraft(chromeOpen, finalDraft, lead);
@@ -2341,6 +2369,8 @@ function sleep(ms) {
 }
 
 async function executeLeadAutomation(lead, options = {}) {
+  const ownedTabsAtStart = new Set(automationOwnedChromeTabs.keys());
+  try {
   if (!options.allowParallel && glmAutomationRunning) return { ok: false, busy: true, error: 'Another customer is running' };
   if (!options.ignoreCooldown && Date.now() - lastGlmAutomationAt < 90000) {
     return { ok: false, cooldown: true, error: 'Serial cooldown is active' };
@@ -2404,6 +2434,9 @@ async function executeLeadAutomation(lead, options = {}) {
     return { ...execution, decision, glmModel: glm.model, followup };
   } finally {
     if (!options.allowParallel) glmAutomationRunning = false;
+  }
+  } finally {
+    await closeAutomationTabsOpenedAfter(ownedTabsAtStart);
   }
 }
 
@@ -2805,7 +2838,7 @@ ipcMain.handle('run-daily-automation-queue', async (_event, payload) => runDaily
 async function runAutoDailyAndWriteArtifact() {
   let completed = false;
   const timeoutMs = Math.max(60000, Number(process.env.DAILY_EXECUTE_TIMEOUT_MS || 300000));
-  const watchdog = setTimeout(() => {
+  const watchdog = setTimeout(async () => {
     if (completed) return;
     const confirmedSendCount = Number(currentDailyExecutionProgress && currentDailyExecutionProgress.confirmedSendCount || 0);
     writeDailyExecutionArtifact({
@@ -2820,6 +2853,7 @@ async function runAutoDailyAndWriteArtifact() {
       reportingVerdict: confirmedSendCount > 0 ? 'partial_customer_development_before_timeout' : 'no_customer_development_performed',
       progress: currentDailyExecutionProgress,
     });
+    await closeAutomationTabsOpenedAfter(new Set());
     app.exit(1);
   }, timeoutMs);
   if (watchdog.unref) watchdog.unref();

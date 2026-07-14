@@ -624,6 +624,15 @@ test('daily execution is serial and can process a priority batch per run', () =>
   assert.ok(mainSource.includes('timeout: 120000'));
 });
 
+test('daily execution owns and closes each automation-created Chrome tab', () => {
+  assert.ok(mainSource.includes('automationOwnedChromeTabs'));
+  assert.ok(mainSource.includes('closeAutomationTabsOpenedAfter'));
+  assert.ok(mainSource.includes('{ automationOwned: true }'));
+  assert.ok(mainSource.includes('await closeAutomationTabsOpenedAfter(ownedTabsAtStart)'));
+  assert.ok(mainSource.includes('await closeAutomationChromeTab(chromeOpen)'));
+  assert.ok(mainSource.includes('const parallelLimit = 1'));
+});
+
 test('daily execution duplicate blocking is channel-aware', () => {
   assert.ok(mainSource.includes('function canonicalExactAutomationKey'));
   assert.ok(mainSource.includes('SAME_DAY_DEVELOPMENT_STATUSES'));
