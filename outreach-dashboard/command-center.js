@@ -167,24 +167,29 @@
       history: { replied: Boolean(task.repliedAt), templateRate: 0 },
     });
   }
+  function boundedIcpScore(value) {
+    const score = Number(value);
+    if (!Number.isFinite(score)) return 0;
+    return Math.max(0, Math.min(100, Math.round(score)));
+  }
   function icpScore(entity) {
     if (!entity) return 0;
     const direct = Number(entity.fitScore || 0);
-    if (direct > 0) return Math.round(direct);
-    if (entity.taskId) return scoreTask(entity).total;
-    return engine.calculateDevelopmentScore({
+    if (direct > 0) return boundedIcpScore(direct);
+    if (entity.taskId) return boundedIcpScore(scoreTask(entity).total);
+    return boundedIcpScore(engine.calculateDevelopmentScore({
       region: normalizedCountry(entity),
       marketStatus: entity.marketStatus || '',
       role: entity.role || '',
       industry: entity.industry || '',
       identityConfidence: entity.linkedin_url || entity.instagram_url || entity.targetUrl ? 100 : 0,
       keywordIntent: entity.keyword_used || entity.keyword ? 70 : 0,
-    }).total;
+    }).total);
   }
   function scoreForDisplay(entity) {
     const calculated = scoreTask(entity || {});
     const direct = Number(entity && entity.fitScore || 0);
-    return direct > 0 ? { ...calculated, total: Math.round(direct) } : calculated;
+    return { ...calculated, total: direct > 0 ? boundedIcpScore(direct) : boundedIcpScore(calculated.total) };
   }
   function isIcpQualified(entity) {
     return icpScore(entity) > ICP_MIN_SCORE;
@@ -931,7 +936,7 @@
       followUpAt: '',
       platform: row.platform || 'email',
       source: row.source || 'daily_automation',
-      fitScore: Number(row.fitScore || 0),
+      fitScore: boundedIcpScore(row.fitScore),
       fitTier: row.fitTier || '',
       linkedin_url: row.linkedin_url || row.linkedin || row.linkedinCompany || '',
       instagram_url: row.alternateChannels && row.alternateChannels.instagram || '',
@@ -1001,7 +1006,14 @@
     });
     return records.map(record => {
       const country = normalizedCountry(record);
-      return { ...record, country, countryEn: country, region: country };
+      const directFitScore = Number(record.fitScore || 0);
+      return {
+        ...record,
+        country,
+        countryEn: country,
+        region: country,
+        fitScore: directFitScore > 0 ? boundedIcpScore(directFitScore) : record.fitScore,
+      };
     });
   }
   function customerRecords() {
@@ -1689,7 +1701,7 @@
         const customerLinkAttrs = ` href="${profileHref}"`;
         const archiveLink = target ? `<br><a class="cc-sub-link" href="${esc(target)}" target="_blank" rel="noopener">Verified channel</a>` : '';
         const reviewNote = customerReviewNote(record);
-        return `<tr class="${qualified ? '' : 'cc-low-icp'}"><td><a${linkClass}${customerLinkAttrs} title="${esc(reviewNote)}">${esc(record.name)}</a>${archiveLink}</td><td>${esc(record.company)}<br><span class="cc-chip ${qualified ? 'green' : 'amber'}" title="${esc(reviewNote)}">${esc(reviewNote)}</span></td><td>${esc(record.role)}</td><td>${esc(normalizedCountry(record))}</td><td>${esc(record.platform)}</td><td><span class="cc-chip">${esc(record.status)}</span></td><td title="ICP ${icpScore(record)} + market/contact/region priority">${dealProbabilityScore(record)}</td><td>${esc(recordUpdatedAt(record))}</td></tr>`;
+        return `<tr class="${qualified ? '' : 'cc-low-icp'}"><td><a${linkClass}${customerLinkAttrs} title="${esc(reviewNote)}">${esc(record.name)}</a>${archiveLink}</td><td>${esc(record.company)}<br><span class="cc-chip ${qualified ? 'green' : 'amber'}" title="${esc(reviewNote)}">${esc(reviewNote)}</span></td><td>${esc(record.role)}</td><td>${esc(normalizedCountry(record))}</td><td>${esc(record.platform)}</td><td><span class="cc-chip">${esc(record.status)}</span></td><td title="ICP score, bounded to 0-100">${icpScore(record)}</td><td>${esc(recordUpdatedAt(record))}</td></tr>`;
       }).join('')}</tbody></table>${rows.length ? '' : '<div class="cc-empty">没有匹配客户，请重置或调整筛选条件</div>'}</div>`;
   }
   function countryGeoCode(country) {

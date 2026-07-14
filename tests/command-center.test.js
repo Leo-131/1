@@ -81,7 +81,7 @@ test('command center contains separated operational views', () => {
     assert.ok(js.includes(`['${viewId}'`), viewId);
   }
   assert.ok(publicIndexHtml.includes('<body class="command-center-booting">'));
-  assert.ok(publicIndexHtml.includes('command-center.js?v=20260714-report-evidence-v3'));
+  assert.ok(publicIndexHtml.includes('command-center.js?v=20260714-icp-score-fix'));
 });
 
 test('customer detail opens in a new tab without replacing the shell', () => {
@@ -193,6 +193,14 @@ test('command center customer list restores 18.4 filtering and sorting controls'
   ]) assert.ok(js.includes(token), token);
 });
 
+test('customer table displays bounded ICP scores instead of composite priority scores', () => {
+  assert.ok(js.includes('function boundedIcpScore'));
+  assert.ok(js.includes('Math.min(100'));
+  const customerTableBlock = js.slice(js.indexOf('function customers()'), js.indexOf('function countryGeoCode'));
+  assert.ok(customerTableBlock.includes('>${icpScore(record)}</td>'));
+  assert.ok(!customerTableBlock.includes('>${dealProbabilityScore(record)}</td>'));
+});
+
 test('workspace metric cards navigate to matching filtered content', () => {
   assert.ok(js.includes('cc-kpi-link'));
   assert.ok(js.includes("urlFor('queue', { queue: 'untouched' })"));
@@ -242,14 +250,14 @@ test('all reporting sections use live automation artifacts', () => {
   assert.ok(js.includes('analytics.buildTemplateMetrics(liveOperationalRecords())'));
   assert.ok(js.includes('const events = liveAuditEvents();'));
   assert.ok(js.includes('...liveOperationalRecords()'));
-  assert.ok(html.includes('20260714-report-evidence-v3'));
+  assert.ok(html.includes('20260714-icp-score-fix'));
   assert.ok(html.includes('ensureCommandCenterModule'));
   assert.ok(html.includes('正在加载客户开发系统'));
   assert.ok(!html.includes('ensureVisibleCommandCenterFallback'));
   assert.ok(!html.includes('System display recovered in fallback mode'));
   assert.ok(!html.includes('Display repair mode'));
   assert.ok(html.includes('commandCenterRecovery'));
-  assert.ok(serviceWorkerJs.includes('customer-development-system-v18-7-27-20260714-report-evidence-v3'));
+  assert.ok(serviceWorkerJs.includes('customer-development-system-v18-7-28-20260714-icp-score-fix'));
 });
 
 test('reporting center exposes reply conversion diagnostics and CSV rates', () => {

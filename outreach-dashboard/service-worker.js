@@ -1,4 +1,4 @@
-const CACHE_NAME = 'customer-development-system-v18-7-27-20260714-report-evidence-v3';
+const CACHE_NAME = 'customer-development-system-v18-7-28-20260714-icp-score-fix';
 const APP_SHELL = [
   './',
   './index.html',
