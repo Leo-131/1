@@ -367,8 +367,8 @@
         state: sendStatus === 'sent_confirmed' ? 'outcome_pending' : 'profile_scored',
         lastTouch: sendStatus === 'sent_confirmed' ? completedAt : (result.lastTouch || base.lastTouch || completedAt),
         resultCheckedAt: completedAt,
-        discoveredAt: completedAt || result.discoveredAt || base.discoveredAt || '',
-        profiledAt: completedAt || result.profiledAt || base.profiledAt || '',
+        discoveredAt: result.discoveredAt || base.discoveredAt || '',
+        profiledAt: result.profiledAt || base.profiledAt || '',
         approvedAt: sendStatus === 'sent_confirmed' ? completedAt : '',
         sentAt: sendStatus === 'sent_confirmed' ? completedAt : '',
         action: result.action || base.action || 'executed',
@@ -461,7 +461,7 @@
       return {
         ...item,
         discoveredAt: timestampOrEmpty(item.discoveredAt) || runTimestamp,
-        profiledAt: timestampOrEmpty(item.profiledAt) || runTimestamp,
+        profiledAt: timestampOrEmpty(item.profiledAt),
         approvedAt: sentAt || timestampOrEmpty(item.approvedAt),
         sentAt,
         templateId: item.templateId || 'daily-google-discovery',
@@ -1140,7 +1140,40 @@
     if (primaryBlocker && /attachment/.test(primaryBlocker[0])) actions.push('配置已批准营销附件或改用无需附件的社媒入口');
     if (metrics.sent >= 3 && !metrics.replied) actions.push('暂停低回复模板并对前10个高ICP客户使用买家角色个性化文案');
     if (!actions.length) actions.push('扩大当前最高回复渠道和模板，同时保持公司级防重复');
-    return `<section class="cc-panel"><div class="cc-panel-head"><h2>周期总结与数据归因</h2><span class="cc-sub">由转化数据和操作日志自动生成</span></div><div class="cc-panel-body"><p>${esc(summary)}</p><p>${esc(attribution)}</p><h3>下一阶段系统操作</h3><ol>${actions.map(item => `<li>${esc(item)}</li>`).join('')}</ol></div></section>`;
+    const appliedActions = [
+      '已启用公司级跨渠道防重复与单客户串行执行',
+      '已优先处理核验通过的社媒入口',
+      '已将只有首页、没有明确联系路径的官网客户降级为待核验',
+      '已对高ICP客户使用买家角色和产品匹配信息生成个性化文案',
+    ];
+    return `<section class="cc-panel"><div class="cc-panel-head"><h2>周期总结与数据归因</h2><span class="cc-sub">由转化数据和操作日志自动生成</span></div><div class="cc-panel-body"><p>${esc(summary)}</p><p>${esc(attribution)}</p><h3>已采纳并生效</h3><ul>${appliedActions.map(item => `<li>${esc(item)}</li>`).join('')}</ul><h3>下一阶段系统操作</h3><ol>${actions.map(item => `<li>${esc(item)}</li>`).join('')}</ol></div></section>`;
+  }
+  function reportMetricDetail(records, report, metric, label) {
+    const fields = {
+      discovered: 'discoveredAt', profiled: 'profiledAt', approved: 'approvedAt', sent: 'sentAt',
+      replied: 'repliedAt', contactCaptured: 'contactCapturedAt', opportunity: 'opportunityAt', autoSkipped: 'autoSkippedAt',
+    };
+    const field = fields[metric];
+    if (!field) return '';
+    const start = Date.parse(report.period.start);
+    const end = Date.parse(report.period.endExclusive);
+    const seen = new Set();
+    const rows = records.filter(record => {
+      const timestamp = Date.parse(record && record[field] || '');
+      if (!Number.isFinite(timestamp) || timestamp < start || timestamp >= end) return false;
+      if (['sent', 'replied', 'contactCaptured', 'opportunity'].includes(metric)
+        && !['sent_confirmed', 'outcome_pending'].includes(String(record.sendStatus || record.state || ''))) return false;
+      const key = normalizeKey(record.company || record.name || record.taskId || record.id);
+      if (!key || seen.has(key)) return false;
+      seen.add(key);
+      return true;
+    }).sort((left, right) => Date.parse(right[field]) - Date.parse(left[field]));
+    const body = rows.length ? rows.slice(0, 100).map(record => {
+      const target = entryUrl(record);
+      const customer = target ? `<a href="${esc(target)}" target="_blank" rel="noopener">${esc(record.company || record.name)}</a>` : esc(record.company || record.name);
+      return `<tr><td>${customer}</td><td>${esc(record.platform || record.source || 'unknown')}</td><td>${esc(record.sendStatus || record.state || record.action || '')}</td><td>${esc(record[field])}</td><td>${esc(record.evidence || record.reason || record.background || '')}</td></tr>`;
+    }).join('') : '<tr><td colspan="5">该周期没有符合此阶段定义的客户事件。</td></tr>';
+    return `<section class="cc-panel cc-report-detail"><div class="cc-panel-head"><h2>${esc(label)}明细</h2><a href="${reportHref(report.period.type, report.period.anchor)}">关闭明细</a></div><div class="cc-table-wrap"><table class="cc-table"><thead><tr><th>客户</th><th>渠道</th><th>状态</th><th>事件时间</th><th>证据/原因</th></tr></thead><tbody>${body}</tbody></table></div></section>`;
   }
   function reports() {
     const type = query.get('report') === 'monthly' ? 'monthly' : 'weekly';
@@ -1156,6 +1189,8 @@
     const previous = shiftReportAnchor(type, report.period.anchor, -1);
     const next = shiftReportAnchor(type, report.period.anchor, 1);
     const qualityTotal = report.dataQuality.missingTimestamps + report.dataQuality.invalidTimestamps;
+    const selectedMetric = metricLabels.some(([key]) => key === query.get('detail')) ? query.get('detail') : '';
+    const selectedMetricLabel = (metricLabels.find(([key]) => key === selectedMetric) || [null, ''])[1];
 
     return `${pageHead('汇报中心', '按自然周和自然月复盘客户开发结果，仅统计有时间证据的真实事件')}
       <div class="cc-report-toolbar">
@@ -1165,7 +1200,8 @@
       </div>
       <div class="cc-report-period"><b>${report.period.label}</b><span>Asia/Shanghai</span></div>
       ${reportExecutiveSummary(report)}
-      <div class="cc-kpis cc-report-kpis">${metricLabels.map(([key, label]) => `<div class="cc-kpi"><span>${label}</span><b>${report.metrics[key]}</b></div>`).join('')}</div>
+      <div class="cc-kpis cc-report-kpis">${metricLabels.map(([key, label]) => `<a class="cc-kpi cc-kpi-link ${selectedMetric === key ? 'active' : ''}" href="${urlFor('reports', { report: type, period: report.period.anchor, detail: key })}"><span>${label}</span><b>${report.metrics[key]}</b></a>`).join('')}</div>
+      ${selectedMetric ? reportMetricDetail(reportRecords, report, selectedMetric, selectedMetricLabel) : ''}
       <section class="cc-panel"><div class="cc-panel-head"><h2>转化漏斗</h2><span class="cc-sub">回复率 ${rate(report.rates.replyRate)} · 联系方式率 ${rate(report.rates.contactCaptureRate)} · 机会率 ${rate(report.rates.opportunityRate)}</span></div><div class="cc-panel-body"><div class="cc-funnel">${funnelMetrics.map(([key, label]) => `<div><span>${label}</span><b>${report.metrics[key]}</b></div>`).join('')}</div></div></section>
       ${replyConversionPanel(report)}
       ${qualityTotal ? `<div class="cc-quality">数据质量：${report.dataQuality.missingTimestamps} 个应有时间缺失，${report.dataQuality.invalidTimestamps} 个时间无效；这些事件未计入周期结果。</div>` : ''}

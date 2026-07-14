@@ -353,3 +353,13 @@ test('empty period reports return stable zero metrics and breakdowns', () => {
   });
   assert.deepEqual(report.breakdowns.platform, []);
 });
+
+test('period headline counts unique discovered customers and only explicit profile events', () => {
+  const report = buildPeriodReport([
+    { company: 'Example Outdoor', platform: 'instagram', discoveredAt: '2026-07-14T01:00:00+08:00' },
+    { company: 'Example Outdoor', platform: 'email', discoveredAt: '2026-07-14T01:00:00+08:00' },
+    { company: 'Profiled Retailer', discoveredAt: '2026-07-14T01:00:00+08:00', profiledAt: '2026-07-14T02:00:00+08:00' },
+  ], { type: 'monthly', anchor: '2026-07-14' });
+  assert.equal(report.metrics.discovered, 2);
+  assert.equal(report.metrics.profiled, 1);
+});

@@ -671,6 +671,23 @@ function contactSearchUrl(company, website) {
   return `https://www.google.com/search?q=${encodeURIComponent(query)}`;
 }
 
+function hasVerifiedContactPath(item) {
+  const contact = String(item && item.contactUrl || '').trim();
+  const website = String(item && item.url || '').trim();
+  if (!contact || !website) return false;
+  try {
+    const contactUrl = new URL(contact);
+    const websiteUrl = new URL(website);
+    const contactPath = contactUrl.pathname.replace(/\/+$/, '') || '/';
+    const websitePath = websiteUrl.pathname.replace(/\/+$/, '') || '/';
+    return contactUrl.hostname === websiteUrl.hostname
+      && contactPath !== '/'
+      && contactPath !== websitePath;
+  } catch {
+    return false;
+  }
+}
+
 function slug(value) {
   return String(value || '').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
 }
@@ -758,6 +775,7 @@ function baseLead(item, id, evidenceUrl) {
     query: evidenceUrl,
     source: 'google_customer_discovery',
     identityStatus: 'verified',
+    profiledAt: enrichment.decisionMaker && enrichment.dataSources ? new Date().toISOString() : '',
     partnershipStatus: partnerAccount ? 'active_partner' : (item.partnershipStatus || ''),
     doNotOutreach: partnerAccount,
     automationStatus: partnerAccount ? 'partner_account' : '',
@@ -796,6 +814,7 @@ function channelLeads(item) {
     facebook: invalidChannels.facebook ? '' : (item.facebookUrl || ''),
     websiteContact: item.contactUrl || item.url,
   };
+  const verifiedContactPath = hasVerifiedContactPath(item);
   const leads = [];
   if (item.instagramUrl && !invalidChannels.instagram) {
     leads.push({
@@ -836,16 +855,16 @@ function channelLeads(item) {
     websiteContactSubject: websiteContactSubject(item),
     websiteContactMessage: websiteContactMessage(item),
     websiteContactFlow: 'open_official_contact_us_fill_attach_auto_submit',
-    action: partnerAccount ? 'partner_account' : 'email_priority',
+    action: partnerAccount ? 'partner_account' : (verifiedContactPath ? 'email_priority' : 'verify_target'),
     partnershipStatus: partnerAccount ? 'active_partner' : (item.partnershipStatus || ''),
     doNotOutreach: partnerAccount,
     automationStatus: partnerAccount ? 'partner_account' : '',
     partnerNote: partnerAccount ? 'Active customer/cooperation account; keep profile only and do not create new outreach tasks.' : '',
     sendStatus: partnerAccount ? 'partner_account' : '',
-    reason: partnerAccount ? 'active_partner_no_new_outreach' : 'official_website_contact_channel',
+    reason: partnerAccount ? 'active_partner_no_new_outreach' : (verifiedContactPath ? 'official_website_contact_channel' : 'homepage_only_contact_path_requires_verification'),
     alternateChannels: socialSiblings,
     invalidChannels,
-    identitySource: 'official website contact path + Google buyer/contact query',
+    identitySource: verifiedContactPath ? 'official website contact path + Google buyer/contact query' : 'official homepage found; exact buyer/contact path still requires verification',
     channelPriority: 3,
   });
   return leads;

@@ -1,4 +1,4 @@
-const CACHE_NAME = 'customer-development-system-v18-7-23-20260713-okki-restore';
+const CACHE_NAME = 'customer-development-system-v18-7-24-20260714-report-detail-fix';
 const APP_SHELL = [
   './',
   './index.html',
@@ -92,6 +92,5 @@ self.addEventListener('fetch', (event) => {
     })
   );
 });
-
 
 

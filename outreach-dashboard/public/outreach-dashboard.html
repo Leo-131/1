@@ -11,7 +11,7 @@
 (function resetLocalDashboardCache(){
   const isLocal = ['127.0.0.1','localhost','::1'].includes(location.hostname);
   if(!isLocal || !('serviceWorker' in navigator)) return;
-  const key = 'local-dashboard-cache-reset-20260713-okki-restore';
+  const key = 'local-dashboard-cache-reset-20260714-report-detail-fix';
   if(sessionStorage.getItem(key)) return;
   sessionStorage.setItem(key,'1');
   Promise.all([
@@ -19,7 +19,7 @@
     typeof caches !== 'undefined' ? caches.keys().then(keys=>Promise.all(keys.map(name=>caches.delete(name)))).catch(()=>{}) : Promise.resolve()
   ]).then(()=>{
     const next = new URL(location.href);
-    next.searchParams.set('cacheReset','20260713-okki-restore');
+    next.searchParams.set('cacheReset','20260714-report-detail-fix');
     location.replace(next.toString());
   });
 })();
@@ -32,7 +32,7 @@ body.command-center-booting{overflow:hidden}
 body.command-center-booting>.header,body.command-center-booting>.container,body.command-center-booting>.footer,body.command-center-booting>.detail-overlay,body.command-center-booting>.detail-backdrop{display:none!important}
 body.command-center-booting::before{content:'正在加载开发工作台…';position:fixed;inset:0;display:grid;place-items:center;background:#f5f7fb;color:#334155;font:600 14px -apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC',sans-serif;letter-spacing:.02em}
 body>.header,body>.container,body>.footer,body>.detail-overlay,body>.detail-backdrop{display:none!important}
-body:not(.command-center-active)::before{content:'正在加载中文 OKKI 客户开发系统…';position:fixed;inset:0;z-index:9999;display:grid;place-items:center;background:#f5f7fb;color:#334155;font:600 14px -apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC',sans-serif;letter-spacing:.02em}
+body:not(.command-center-active)::before{content:'正在加载客户开发系统…';position:fixed;inset:0;z-index:9999;display:grid;place-items:center;background:#f5f7fb;color:#334155;font:600 14px -apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC',sans-serif;letter-spacing:.02em}
 :root{
   --bg:#f6f8fb;--surface:#ffffff;--border:#d9e0e8;--text:#111827;--muted:#667085;
   --primary:#2563eb;--primary-light:#eff6ff;--li:#0a66c2;--fb:#1877f2;--ins:#db2777;
@@ -247,7 +247,7 @@ tr.contact-row:hover .row-actions{display:inline-flex}
   .detail-overlay{width:100vw}
 }
 </style>
-<link rel="stylesheet" href="./command-center.css?v=20260713-okki-restore">
+<link rel="stylesheet" href="./command-center.css?v=20260714-report-detail-fix">
 </head>
 <body class="command-center-booting">
 
@@ -482,12 +482,12 @@ tr.contact-row:hover .row-actions{display:inline-flex}
 <div class="footer" id="system-footer">Customer Automated Development System</div>
 
 <script src="./country-market-data.js?v=20260604-icp-fit"></script>
-<script src="./daily-outreach-tasks.js?v=20260713-okki-restore"></script>
-<script src="./google-lead-discovery-latest.js?v=20260713-okki-restore"></script>
-<script src="./daily-automation-latest.js?v=20260713-okki-restore"></script>
-<script src="./daily-automation-execution-latest.js?v=20260713-okki-restore"></script>
-<script src="./system-visibility-latest.js?v=20260713-okki-restore"></script>
-<script src="./github-sync/latest-status.js?v=20260713-okki-restore"></script>
+<script src="./daily-outreach-tasks.js?v=20260714-report-detail-fix"></script>
+<script src="./google-lead-discovery-latest.js?v=20260714-report-detail-fix"></script>
+<script src="./daily-automation-latest.js?v=20260714-report-detail-fix"></script>
+<script src="./daily-automation-execution-latest.js?v=20260714-report-detail-fix"></script>
+<script src="./system-visibility-latest.js?v=20260714-report-detail-fix"></script>
+<script src="./github-sync/latest-status.js?v=20260714-report-detail-fix"></script>
 <script>
 // === UTILS ===
 const TIER1_KEYS=['CEO','President','Founder','Owner','Managing Director','VP','Vice President','Head','Director','Chief'];
@@ -2327,24 +2327,24 @@ function exportCSV(){
 }
 if('serviceWorker' in navigator){
   navigator.serviceWorker.addEventListener('controllerchange',()=>{
-    const key='sw-refresh-20260713-okki-restore';
+    const key='sw-refresh-20260714-report-detail-fix';
     if(sessionStorage.getItem(key)) return;
     sessionStorage.setItem(key,'1');
     window.location.reload();
   });
-  window.addEventListener('load',()=>navigator.serviceWorker.register('./service-worker.js?v=20260713-okki-restore').then(reg=>reg.update()).catch(()=>{}));
+  window.addEventListener('load',()=>navigator.serviceWorker.register('./service-worker.js?v=20260714-report-detail-fix').then(reg=>reg.update()).catch(()=>{}));
 }
 initializeKpiDetailPage();
 </script>
 <script src="./outreach-engine.js?v=20260610-autonomous"></script>
 <script src="./outreach-analytics.js?v=20260610-autonomous"></script>
-<script src="./autonomous-outreach-results.js?v=20260713-okki-restore"></script>
+<script src="./autonomous-outreach-results.js?v=20260714-report-detail-fix"></script>
 <script src="./verified-profile-registry.js?v=20260612-profile-calibration"></script>
 <script src="./autonomous-outreach-data.js?v=20260618-icp-priority"></script>
-<script src="./command-center.js?v=20260713-okki-restore"></script>
+<script src="./command-center.js?v=20260714-report-detail-fix"></script>
 <script>
 (function ensureCommandCenterModule(){
-  const token = '20260713-okki-restore';
+  const token = '20260714-report-detail-fix';
   window.setTimeout(function(){
     if (document.getElementById('command-center-shell')) return;
     if ('serviceWorker' in navigator) {
@@ -2368,6 +2368,4 @@ initializeKpiDetailPage();
 </script>
 </body>
 </html>
-
-
 

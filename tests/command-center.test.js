@@ -29,7 +29,7 @@ test('command center uses an atomic boot gate so the legacy dashboard never flas
   assert.ok(html.includes('<body class="command-center-booting">'));
   assert.ok(html.includes('body.command-center-booting>.header'));
   assert.ok(html.includes('body>.header,body>.container,body>.footer'));
-  assert.ok(html.includes('正在加载中文 OKKI 客户开发系统'));
+  assert.ok(html.includes('正在加载客户开发系统'));
   assert.ok(js.includes("document.body.classList.remove('command-center-booting')"));
   assert.match(js, /document\.body\.appendChild\(shell\);\s*document\.body\.classList\.remove\('command-center-booting'\)/);
   assert.ok(js.includes("document.body.classList.remove('command-center-active')"));
@@ -234,14 +234,14 @@ test('all reporting sections use live automation artifacts', () => {
   assert.ok(js.includes('analytics.buildTemplateMetrics(liveOperationalRecords())'));
   assert.ok(js.includes('const events = liveAuditEvents();'));
   assert.ok(js.includes('...liveOperationalRecords()'));
-  assert.ok(html.includes('20260713-okki-restore'));
+  assert.ok(html.includes('20260714-report-detail-fix'));
   assert.ok(html.includes('ensureCommandCenterModule'));
-  assert.ok(html.includes('正在加载中文 OKKI 客户开发系统'));
+  assert.ok(html.includes('正在加载客户开发系统'));
   assert.ok(!html.includes('ensureVisibleCommandCenterFallback'));
   assert.ok(!html.includes('System display recovered in fallback mode'));
   assert.ok(!html.includes('Display repair mode'));
   assert.ok(html.includes('commandCenterRecovery'));
-  assert.ok(serviceWorkerJs.includes('customer-development-system-v18-7-23-20260713-okki-restore'));
+  assert.ok(serviceWorkerJs.includes('customer-development-system-v18-7-24-20260714-report-detail-fix'));
 });
 
 test('reporting center exposes reply conversion diagnostics and CSV rates', () => {
@@ -259,6 +259,23 @@ test('weekly and monthly reports include log attribution and next-stage actions'
   assert.ok(js.includes('周期总结与数据归因'));
   assert.ok(js.includes('下一阶段系统操作'));
   assert.ok(js.includes('liveAuditEvents()'));
+});
+
+test('report metrics open customer-level evidence details', () => {
+  assert.ok(js.includes('reportMetricDetail'));
+  assert.ok(js.includes("detail: key"));
+  assert.ok(js.includes('事件时间'));
+  assert.ok(js.includes('证据/原因'));
+});
+
+test('report discovery does not fabricate profile completion timestamps', () => {
+  assert.ok(js.includes("profiledAt: timestampOrEmpty(item.profiledAt),"));
+  assert.ok(!js.includes("profiledAt: timestampOrEmpty(item.profiledAt) || runTimestamp"));
+});
+
+test('dashboard loading screen does not show the legacy Chinese OKKI label', () => {
+  assert.ok(!html.includes('正在加载中文 OKKI'));
+  assert.ok(html.includes('正在加载客户开发系统'));
 });
 
 test('deal priority includes observed reply conversion lift', () => {

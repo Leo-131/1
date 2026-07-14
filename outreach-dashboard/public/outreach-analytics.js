@@ -436,8 +436,9 @@
     const start = Date.parse(period.start);
     const endExclusive = Date.parse(period.endExclusive);
     const metrics = emptyReportMetrics();
+    const metricCustomers = new Map(REPORT_EVENTS.map(([metric]) => [metric, new Set()]));
     const dataQuality = { missingTimestamps: 0, invalidTimestamps: 0 };
-    const evaluated = source.map(item => {
+    const evaluated = source.map((item, recordIndex) => {
       const record = item && typeof item === 'object' ? item : {};
       const events = {};
 
@@ -463,7 +464,14 @@
         }
 
         events[metric] = timestamp >= start && timestamp < endExclusive;
-        if (events[metric]) metrics[metric] += 1;
+        if (events[metric]) {
+          const customerKey = normalizeGroupKey(record.company || record.name || record.taskId || record.id || `record-${recordIndex}`, `record-${recordIndex}`);
+          const seen = metricCustomers.get(metric);
+          if (!seen.has(customerKey)) {
+            seen.add(customerKey);
+            metrics[metric] += 1;
+          }
+        }
       }
 
       return { record, events };

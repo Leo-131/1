@@ -315,6 +315,13 @@ test('online directory refill adds Flextail and Vollyc matched outdoor retailers
   assert.ok(run.leads.some(item => /outdoorretailer\.com\/retailers-of-interest/.test(item.sourceEvidenceUrl || '')));
 });
 
+test('homepage-only directory prospects require contact-path verification before execution', () => {
+  const run = buildDiscoveryRun(200);
+  const website = run.leads.find(item => item.company === 'Obelink' && item.platform === 'email');
+  assert.equal(website.action, 'verify_target');
+  assert.equal(website.reason, 'homepage_only_contact_path_requires_verification');
+});
+
 test('Google discovery gives autonomous refill customers social channels before website contact', () => {
   const leads = buildLeads(120);
   for (const company of ['Liberty Mountain', 'Sportsman\'s Warehouse', 'Camping World']) {
