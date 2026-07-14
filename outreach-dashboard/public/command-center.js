@@ -453,15 +453,13 @@
   }
   function latestReportRecords() {
     if (!latestRun) return [];
-    const runTimestamp = timestampOrEmpty(latestRun.generatedAt)
-      || (latestRun.date ? `${latestRun.date}T09:00:00+08:00` : '');
     return latestQueueRows('all').map((item) => {
       const sentAt = item.sendStatus === 'sent_confirmed'
-        ? timestampOrEmpty(item.lastTouch) || runTimestamp
+        ? timestampOrEmpty(item.lastTouch)
         : '';
       return {
         ...item,
-        discoveredAt: timestampOrEmpty(item.discoveredAt) || runTimestamp,
+        discoveredAt: timestampOrEmpty(item.discoveredAt),
         profiledAt: timestampOrEmpty(item.profiledAt),
         approvedAt: sentAt || timestampOrEmpty(item.approvedAt),
         sentAt,
@@ -524,6 +522,9 @@
       const evidence = item.evidence || '';
       const confirmed = status === 'sent_confirmed';
       const contactCaptured = /contact_entry_verified|mailto_detected|contact_form_detected|business_contact_route_detected/i.test(evidence);
+      const discoveredAt = timestampOrEmpty(task.discoveredAt) || timestamp;
+      const profiledAt = timestampOrEmpty(task.profiledAt);
+      const approvedAt = confirmed ? timestamp : timestampOrEmpty(task.approvedAt);
       return {
         ...task,
         taskId,
@@ -539,9 +540,9 @@
         state: confirmed ? 'sent_confirmed' : status || 'automation_event',
         sendStatus: status,
         evidence,
-        discoveredAt: timestamp || task.discoveredAt || '',
-        profiledAt: timestamp || task.profiledAt || '',
-        approvedAt: timestamp || task.approvedAt || '',
+        discoveredAt,
+        profiledAt,
+        approvedAt,
         sentAt: confirmed ? timestamp : '',
         autoSkippedAt: status === 'failed_open' || status === 'skipped' ? timestamp : '',
         contactCapturedAt: contactCaptured ? timestamp : task.contactCapturedAt || '',
@@ -1149,7 +1150,7 @@
     ];
     return `<section class="cc-panel"><div class="cc-panel-head"><h2>周期总结与数据归因</h2><span class="cc-sub">由转化数据和操作日志自动生成</span></div><div class="cc-panel-body"><p>${esc(summary)}</p><p>${esc(attribution)}</p><h3>已采纳并生效</h3><ul>${appliedActions.map(item => `<li>${esc(item)}</li>`).join('')}</ul><h3>下一阶段系统操作</h3><ol>${actions.map(item => `<li>${esc(item)}</li>`).join('')}</ol></div></section>`;
   }
-  function reportMetricDetail(records, report, metric, label) {
+  function reportMetricDetail(report, metric, label) {
     if (!report.metrics || !Object.prototype.hasOwnProperty.call(report.metrics, metric)) return '';
     const seen = new Set();
     const rows = (report.eventRecords || []).filter(entry => {
@@ -1164,7 +1165,12 @@
       const record = entry.record || {};
       const target = entryUrl(record);
       const customer = target ? `<a href="${esc(target)}" target="_blank" rel="noopener">${esc(record.company || record.name)}</a>` : esc(record.company || record.name);
-      return `<tr><td>${customer}</td><td>${esc(record.platform || record.source || 'unknown')}</td><td>${esc(record.sendStatus || record.state || record.action || '')}</td><td>${esc(entry.eventTimes[metric])}</td><td>${esc(record.evidence || record.reason || record.background || '')}</td></tr>`;
+      const stageLabels = { discovered: '发现', profiled: '画像评分', approved: '决策通过', sent: '确认发送', replied: '收到回复', contactCaptured: '获得联系方式', opportunity: '成交机会' };
+      const inferredStage = String(entry.eventEvidence && entry.eventEvidence[metric] || '').replace('inferred_from_', '');
+      const evidenceType = entry.eventEvidence && entry.eventEvidence[metric] === 'explicit'
+        ? '原始阶段时间证据'
+        : `由${stageLabels[inferredStage] || '下游'}阶段证据补齐`;
+      return `<tr><td>${customer}</td><td>${esc(record.platform || record.source || 'unknown')}</td><td>${esc(record.sendStatus || record.state || record.action || '')}</td><td>${esc(entry.eventTimes[metric])}</td><td><span class="cc-chip">${esc(evidenceType)}</span><br>${esc(record.evidence || record.reason || record.background || '')}</td></tr>`;
     }).join('') : '<tr><td colspan="5">该周期没有符合此阶段定义的客户事件。</td></tr>';
     return `<section class="cc-panel cc-report-detail"><div class="cc-panel-head"><h2>${esc(label)}明细</h2><a href="${reportHref(report.period.type, report.period.anchor)}">关闭明细</a></div><div class="cc-table-wrap"><table class="cc-table"><thead><tr><th>客户</th><th>渠道</th><th>状态</th><th>事件时间</th><th>证据/原因</th></tr></thead><tbody>${body}</tbody></table></div></section>`;
   }
@@ -1182,6 +1188,7 @@
     const previous = shiftReportAnchor(type, report.period.anchor, -1);
     const next = shiftReportAnchor(type, report.period.anchor, 1);
     const qualityTotal = report.dataQuality.missingTimestamps + report.dataQuality.invalidTimestamps;
+    const queueSnapshotCount = latestRun ? latestQueueRows('visibleTodayQueue').length : 0;
     const selectedMetric = metricLabels.some(([key]) => key === query.get('detail')) ? query.get('detail') : '';
     const selectedMetricLabel = (metricLabels.find(([key]) => key === selectedMetric) || [null, ''])[1];
 
@@ -1192,9 +1199,10 @@
         <div class="cc-report-actions"><button type="button" onclick="exportCurrentReportCsv()" ${report.hasData ? '' : 'disabled'}>导出 CSV</button><button type="button" onclick="window.print()">打印/PDF</button></div>
       </div>
       <div class="cc-report-period"><b>${report.period.label}</b><span>Asia/Shanghai</span></div>
+      <div class="cc-quality cc-report-scope">数据口径：汇报数字是本周期有时间证据的唯一客户累计；今日队列是当前待处理快照（${queueSnapshotCount} 个），两者不直接相加或要求相等。漏斗一致性：${report.consistency.funnelMonotonic ? '通过' : `异常（${report.consistency.violations.join(', ')}）`}。</div>
       ${reportExecutiveSummary(report)}
       <div class="cc-kpis cc-report-kpis">${metricLabels.map(([key, label]) => `<a class="cc-kpi cc-kpi-link ${selectedMetric === key ? 'active' : ''}" href="${urlFor('reports', { report: type, period: report.period.anchor, detail: key })}"><span>${label}</span><b>${report.metrics[key]}</b></a>`).join('')}</div>
-      ${selectedMetric ? reportMetricDetail(reportRecords, report, selectedMetric, selectedMetricLabel) : ''}
+      ${selectedMetric ? reportMetricDetail(report, selectedMetric, selectedMetricLabel) : ''}
       <section class="cc-panel"><div class="cc-panel-head"><h2>转化漏斗</h2><span class="cc-sub">回复率 ${rate(report.rates.replyRate)} · 联系方式率 ${rate(report.rates.contactCaptureRate)} · 机会率 ${rate(report.rates.opportunityRate)}</span></div><div class="cc-panel-body"><div class="cc-funnel">${funnelMetrics.map(([key, label]) => `<div><span>${label}</span><b>${report.metrics[key]}</b></div>`).join('')}</div></div></section>
       ${replyConversionPanel(report)}
       ${qualityTotal ? `<div class="cc-quality">数据质量：${report.dataQuality.missingTimestamps} 个应有时间缺失，${report.dataQuality.invalidTimestamps} 个时间无效；这些事件未计入周期结果。</div>` : ''}

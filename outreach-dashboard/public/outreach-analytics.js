@@ -442,6 +442,7 @@
       const record = item && typeof item === 'object' ? item : {};
       const events = {};
       const eventTimes = {};
+      const eventEvidence = {};
 
       for (const [metric, field] of REPORT_EVENTS) {
         if ((metric === 'sent' || ['replied', 'contactCaptured', 'opportunity'].includes(metric))
@@ -465,7 +466,10 @@
         }
 
         events[metric] = timestamp >= start && timestamp < endExclusive;
-        if (events[metric]) eventTimes[metric] = value;
+        if (events[metric]) {
+          eventTimes[metric] = value;
+          eventEvidence[metric] = 'explicit';
+        }
       }
 
       // A verified downstream event proves this customer reached every prior
@@ -479,6 +483,7 @@
           if (events[upstream]) continue;
           events[upstream] = true;
           eventTimes[upstream] = eventTimes[downstream];
+          eventEvidence[upstream] = `inferred_from_${downstream}`;
         }
       }
 
@@ -492,7 +497,7 @@
         }
       }
 
-      return { record, events, eventTimes, customerKey };
+      return { record, events, eventTimes, eventEvidence, customerKey };
     });
 
     function breakdown(keySelector) {
@@ -517,6 +522,8 @@
     }
 
     const rates = buildConversionRates(metrics);
+    const funnelMetrics = ['discovered', 'profiled', 'approved', 'sent', 'replied', 'contactCaptured', 'opportunity'];
+    const consistencyViolations = funnelMetrics.slice(1).filter((metric, index) => metrics[metric] > metrics[funnelMetrics[index]]);
     const breakdowns = {
       platform: breakdown(record => record.platform),
       countryMarket: breakdown(record => record.country || record.market),
@@ -531,6 +538,10 @@
       conversion: buildReplyConversionInsights(breakdowns),
       breakdowns,
       eventRecords: evaluated,
+      consistency: {
+        funnelMonotonic: consistencyViolations.length === 0,
+        violations: consistencyViolations,
+      },
       dataQuality,
       hasData: Object.values(metrics).some(Boolean),
     };

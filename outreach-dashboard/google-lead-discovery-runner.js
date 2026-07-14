@@ -877,12 +877,30 @@ function buildLeads(limit = 40) {
     .slice(0, limit);
 }
 
-function buildDiscoveryRun(limit = 40) {
-  const leads = buildLeads(limit);
+function buildDiscoveryRun(limit = 40, previousRun = null) {
+  const generatedAt = new Date().toISOString();
+  const previousLeads = previousRun && Array.isArray(previousRun.leads) ? previousRun.leads : [];
+  const previousById = new Map(previousLeads.map(lead => [String(lead.id || ''), lead]));
+  const previousByCompany = new Map(previousLeads.map(lead => [activeCustomerKey(lead.company || lead.name), lead]));
+  const previousGeneratedAt = previousRun && Number.isFinite(Date.parse(previousRun.generatedAt))
+    ? previousRun.generatedAt
+    : '';
+  const leads = buildLeads(limit).map(lead => {
+    const previous = previousById.get(String(lead.id || ''))
+      || previousByCompany.get(activeCustomerKey(lead.company || lead.name))
+      || {};
+    const discoveredAt = Number.isFinite(Date.parse(previous.discoveredAt))
+      ? previous.discoveredAt
+      : previousGeneratedAt || generatedAt;
+    const profiledAt = Number.isFinite(Date.parse(previous.profiledAt))
+      ? previous.profiledAt
+      : lead.profiledAt;
+    return { ...lead, discoveredAt, profiledAt };
+  });
   const refillCompanies = CANDIDATES.filter(item => item.refillSeed && !isActiveCustomer(item.company) && Number(item.fitScore || 0) > QUALIFIED_ICP_THRESHOLD);
   const activeCustomerCount = CANDIDATES.filter(item => isActiveCustomer(item.company) || item.doNotOutreach || item.partnershipStatus === 'active_partner').length;
   return {
-    generatedAt: new Date().toISOString(),
+    generatedAt,
     mode: 'google-concrete-customer-discovery',
     objective: 'continuously refill verified agency and key-account prospects above ICP 70, exclude active customers, then convert them into exact official social and website outreach targets',
     discoveryRefillAttempted: true,
@@ -903,7 +921,13 @@ function buildDiscoveryRun(limit = 40) {
 function main() {
   const limitArg = process.argv.find(arg => /^--limit=/.test(arg));
   const limit = limitArg ? Number(limitArg.split('=')[1]) : 40;
-  const run = buildDiscoveryRun(limit);
+  let previousRun = null;
+  try {
+    previousRun = JSON.parse(fs.readFileSync(OUT_JSON, 'utf8'));
+  } catch (_) {
+    previousRun = null;
+  }
+  const run = buildDiscoveryRun(limit, previousRun);
   fs.writeFileSync(OUT_JSON, JSON.stringify(run, null, 2));
   fs.writeFileSync(OUT_JS, `window.GOOGLE_LEAD_DISCOVERY_LATEST = ${JSON.stringify(run, null, 2)};\n`);
   const columns = ['rank', 'id', 'company', 'platform', 'country', 'fitScore', 'keyword', 'website', 'platformUrl', 'contactUrl', 'contactSearchUrl', 'emailFrom', 'websiteContactSubject', 'websiteContactMessage', 'background', 'buyerPersona', 'evidenceUrl', 'action'];

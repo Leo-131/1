@@ -397,6 +397,9 @@ test('period funnel backfills required upstream stages from confirmed downstream
   });
   assert.equal(report.rates.discoveryToSendRate, 1);
   assert.equal(report.eventRecords.filter(entry => entry.events.discovered).length, 3);
+  assert.equal(report.consistency.funnelMonotonic, true);
+  assert.deepEqual(report.consistency.violations, []);
+  assert.equal(report.eventRecords[0].eventEvidence.discovered, 'inferred_from_sent');
   assert.ok(report.metrics.discovered >= report.metrics.profiled);
   assert.ok(report.metrics.profiled >= report.metrics.approved);
   assert.ok(report.metrics.approved >= report.metrics.sent);

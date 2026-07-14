@@ -307,6 +307,22 @@ test('Google discovery keeps a refill pool for new prospects after current custo
   }
 });
 
+test('Google discovery preserves first-seen and profile timestamps across refreshes', () => {
+  const initial = buildDiscoveryRun(120);
+  const target = initial.leads.find(item => item.company === 'Backcountry');
+  const firstSeen = '2026-07-01T01:02:03.000Z';
+  const firstProfiled = '2026-07-02T01:02:03.000Z';
+  const refreshed = buildDiscoveryRun(120, {
+    generatedAt: '2026-07-03T01:02:03.000Z',
+    leads: [{ ...target, discoveredAt: firstSeen, profiledAt: firstProfiled }],
+  });
+  const refreshedTarget = refreshed.leads.find(item => item.id === target.id);
+
+  assert.equal(refreshedTarget.discoveredAt, firstSeen);
+  assert.equal(refreshedTarget.profiledAt, firstProfiled);
+  assert.ok(refreshed.leads.every(item => Number.isFinite(Date.parse(item.discoveredAt))));
+});
+
 test('online directory refill adds Flextail and Vollyc matched outdoor retailers with evidence', () => {
   const run = buildDiscoveryRun(200);
   assert.ok(run.refillCandidateCount >= 50);

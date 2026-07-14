@@ -1,4 +1,4 @@
-const CACHE_NAME = 'customer-development-system-v18-7-25-20260714-funnel-cohort-fix';
+const CACHE_NAME = 'customer-development-system-v18-7-27-20260714-report-evidence-v3';
 const APP_SHELL = [
   './',
   './index.html',
@@ -92,4 +92,3 @@ self.addEventListener('fetch', (event) => {
     })
   );
 });
-
