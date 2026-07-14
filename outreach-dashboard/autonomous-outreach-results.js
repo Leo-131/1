@@ -1896,5 +1896,38 @@ window.AUTONOMOUS_OUTREACH_RESULTS = [
     "evidence": "facebook_draft_not_inserted_after_composer_refocus;editable_count:2;composer_text_length:1;active:BODY",
     "draft": "Hi Snowys Outdoors team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a retail/category buyer, the strongest fit is assortment fit, new SKU pipeline, price-tier coverage, and proven consumer demand; your camping and hiking ecommerce retailer focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the category buyer or vendor-review owner for a short intro video meeting?",
     "subject": ""
+  },
+  {
+    "task_id": "google-customer-cms-distribution-linkedin",
+    "approval_version": 1,
+    "status": "send_unconfirmed",
+    "agent": "codex-chrome-extension",
+    "timestamp": "2026-07-14T08:07:55.732Z",
+    "target_url": "https://www.linkedin.com/company/cms-distribution",
+    "evidence": "linkedin_send_clicked_but_confirmation_missing",
+    "draft": "Thanks, CMS Distribution team. Email or WhatsApp works well. Could you share the best buyer/category contact for camping accessories vendor review? I will send a concise FLEXTAIL and Vollyc brand intro, line sheet, and current product specs through that channel.",
+    "subject": ""
+  },
+  {
+    "task_id": "google-customer-snowys-outdoors-facebook",
+    "approval_version": 1,
+    "status": "send_unconfirmed",
+    "agent": "codex-chrome-extension",
+    "timestamp": "2026-07-14T08:08:24.977Z",
+    "target_url": "https://www.facebook.com/SnowysOutdoors/",
+    "evidence": "facebook_send_clicked_but_confirmation_missing",
+    "draft": "Hi Snowys Outdoors team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a retail/category buyer, the strongest fit is assortment fit, new SKU pipeline, price-tier coverage, and proven consumer demand; your camping and hiking ecommerce retailer focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the category buyer or vendor-review owner for a short intro video meeting?",
+    "subject": ""
+  },
+  {
+    "task_id": "google-customer-garage-grown-gear-instagram",
+    "approval_version": 1,
+    "status": "failed_open",
+    "agent": "codex-chrome-extension",
+    "timestamp": "2026-07-14T08:14:27.778Z",
+    "target_url": "https://www.instagram.com/garagegrowngear/",
+    "evidence": "identity_mismatch_expected_Garage Grown Gear_title_",
+    "draft": "Hi Garage Grown Gear team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a retail/category buyer, the strongest fit is assortment fit, new SKU pipeline, price-tier coverage, and proven consumer demand; your verified outdoor, camping, travel and consumer electronics retail channel focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the category buyer or vendor-review owner for a short intro video meeting?",
+    "subject": ""
   }
 ];
