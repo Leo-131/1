@@ -241,14 +241,14 @@ function composerExpression(platform) {
       const rect = el && el.getBoundingClientRect && el.getBoundingClientRect();
       return Boolean(rect && rect.width > 0 && rect.height > 0);
     };
-    const dialogTextboxes = Array.from(document.querySelectorAll('[role="dialog"] [contenteditable="true"],[role="dialog"] textarea,[role="dialog"] input[type="text"],[aria-modal="true"] [contenteditable="true"],[aria-modal="true"] textarea,[aria-modal="true"] input[type="text"]'));
-    const pageTextboxes = Array.from(document.querySelectorAll('[contenteditable="true"],textarea,input[type="text"]'));
+    const dialogTextboxes = Array.from(document.querySelectorAll('[role="dialog"] [contenteditable="true"],[role="dialog"] [role="textbox"],[role="dialog"] textarea,[role="dialog"] input[type="text"],[aria-modal="true"] [contenteditable="true"],[aria-modal="true"] [role="textbox"],[aria-modal="true"] textarea,[aria-modal="true"] input[type="text"]'));
+    const pageTextboxes = Array.from(document.querySelectorAll('[contenteditable="true"],[role="textbox"],textarea,input[type="text"]'));
     const elements = [...dialogTextboxes, ...pageTextboxes].filter((el, index, list) => list.indexOf(el) === index).map((el) => {
       const rect = el.getBoundingClientRect();
       const label = String(el.getAttribute('aria-label') || '').toLowerCase();
       const placeholder = String(el.getAttribute('placeholder') || '').toLowerCase();
       const text = String(el.innerText || el.value || '').trim();
-      const editable = el.getAttribute('contenteditable') === 'true' || el.tagName === 'TEXTAREA' || el.tagName === 'INPUT';
+      const editable = el.getAttribute('contenteditable') === 'true' || el.getAttribute('role') === 'textbox' || el.tagName === 'TEXTAREA' || el.tagName === 'INPUT';
       const messageLike = label.includes('message') || placeholder.includes('message')
         || label.includes('\\u6d88\\u606f') || placeholder.includes('\\u6d88\\u606f')
         || label.includes('write') || placeholder.includes('write')
@@ -436,13 +436,22 @@ function sendButtonExpression(composer) {
         disabled: Boolean(el.disabled || el.getAttribute('aria-disabled') === 'true')
       };
     }).filter(item => item.visible && !item.disabled);
-    const byText = controls.find(item => item.text.includes('send') || item.text.includes('\\u53d1\\u9001'));
-    if (byText) return JSON.stringify(byText);
-    const nearComposer = controls
-      .filter(item => item.x > centerX && Math.abs(item.y - centerY) < 95)
-      .filter(item => !/emoji|gif|sticker|photo|image|voice|microphone|like|thumb|share|forward|repost|\\u8868\\u60c5|\\u56fe\\u7247|\\u8d5e|\\u5206\\u4eab|\\u8f6c\\u53d1|\\u53d1\\u9001\\u7ed9\\u597d\\u53cb/.test(item.text))
+    const badSend = /emoji|gif|sticker|photo|image|voice|microphone|like|thumb|share|forward|repost|friend|friends|story|invite|\\u8868\\u60c5|\\u56fe\\u7247|\\u8d5e|\\u5206\\u4eab|\\u8f6c\\u53d1|\\u53d1\\u9001\\u7ed9\\u597d\\u53cb/;
+    const sendText = item => /(^|\\b)(send|submit)(\\b|$)|\\u53d1\\u9001|\\u63d0\\u4ea4/.test(item.text) && !badSend.test(item.text);
+    const nearControls = controls
+      .filter(item => item.x > centerX - 40 && Math.abs(item.y - centerY) < 110)
+      .filter(item => !badSend.test(item.text));
+    const nearExplicitSend = nearControls
+      .filter(sendText)
+      .sort((a, b) => Math.abs(a.y - centerY) - Math.abs(b.y - centerY) || b.x - a.x)[0];
+    if (nearExplicitSend) return JSON.stringify(nearExplicitSend);
+    const nearComposer = nearControls
       .sort((a, b) => Math.abs(a.y - centerY) - Math.abs(b.y - centerY) || b.x - a.x)[0];
     if (nearComposer) return JSON.stringify(nearComposer);
+    const byText = controls
+      .filter(sendText)
+      .sort((a, b) => Math.abs(a.y - centerY) - Math.abs(b.y - centerY) || Math.abs(a.x - centerX) - Math.abs(b.x - centerX))[0];
+    if (byText) return JSON.stringify(byText);
     const rightMost = controls
       .filter(item => item.x > centerX && Math.abs(item.y - centerY) < 95)
       .sort((a, b) => Math.abs(a.y - centerY) - Math.abs(b.y - centerY) || b.x - a.x)[0];
@@ -453,9 +462,9 @@ function sendButtonExpression(composer) {
 function composerTextExpression(draft) {
   return `(() => {
     const draft = ${JSON.stringify(String(draft || '').trim())};
-    const controls = Array.from(document.querySelectorAll('[contenteditable="true"],textarea,input[type="text"]'));
+    const controls = Array.from(document.querySelectorAll('[role="dialog"] [contenteditable="true"],[role="dialog"] [role="textbox"],[role="dialog"] textarea,[role="dialog"] input[type="text"],[aria-modal="true"] [contenteditable="true"],[aria-modal="true"] [role="textbox"],[aria-modal="true"] textarea,[aria-modal="true"] input[type="text"],[contenteditable="true"],[role="textbox"],textarea,input[type="text"]'));
     const text = controls
-      .map((el) => String(el.innerText || el.value || '').trim())
+      .map((el) => String(el.innerText || el.textContent || el.value || '').trim())
       .join('\\n');
     const active = document.activeElement;
     const activeLabel = active ? String(active.getAttribute('aria-label') || active.getAttribute('role') || active.tagName || '').slice(0, 80) : '';
@@ -469,12 +478,110 @@ function composerTextExpression(draft) {
   })()`;
 }
 
+function setComposerTextExpression(composer, draft) {
+  return `(() => {
+    const targetX = ${JSON.stringify(Number(composer && composer.x || 0))};
+    const targetY = ${JSON.stringify(Number(composer && composer.y || 0))};
+    const draft = ${JSON.stringify(String(draft || '').trim())};
+    const visible = (el) => {
+      const rect = el && el.getBoundingClientRect && el.getBoundingClientRect();
+      return Boolean(rect && rect.width > 0 && rect.height > 0 && rect.bottom > 0 && rect.top < window.innerHeight);
+    };
+    const textOf = (el) => String(el.innerText || el.textContent || el.value || '').trim();
+    const candidates = Array.from(document.querySelectorAll('[role="dialog"] [contenteditable="true"],[role="dialog"] [role="textbox"],[role="dialog"] textarea,[role="dialog"] input[type="text"],[aria-modal="true"] [contenteditable="true"],[aria-modal="true"] [role="textbox"],[aria-modal="true"] textarea,[aria-modal="true"] input[type="text"],[contenteditable="true"],[role="textbox"],textarea,input[type="text"]'))
+      .filter(visible)
+      .map((el) => {
+        const rect = el.getBoundingClientRect();
+        const label = String(el.getAttribute('aria-label') || el.getAttribute('placeholder') || el.getAttribute('role') || '').toLowerCase();
+        const inDialog = Boolean(el.closest('[role="dialog"],[aria-modal="true"]'));
+        const messageLike = /message|reply|write|text|messenger|\\u6d88\\u606f|\\u8f93\\u5165/.test(label);
+        return {
+          el,
+          x: Math.round(rect.left + rect.width / 2),
+          y: Math.round(rect.top + rect.height / 2),
+          inDialog,
+          messageLike,
+          distance: Math.abs((rect.left + rect.width / 2) - targetX) + Math.abs((rect.top + rect.height / 2) - targetY),
+          textLength: textOf(el).length
+        };
+      })
+      .sort((a, b) => Number(b.inDialog) - Number(a.inDialog)
+        || Number(b.messageLike) - Number(a.messageLike)
+        || a.distance - b.distance
+        || a.textLength - b.textLength);
+    const picked = candidates[0];
+    if (!picked) return JSON.stringify({ ok: false, evidence: 'composer_dom_target_not_found' });
+    const el = picked.el;
+    el.focus();
+    if (el.isContentEditable || el.getAttribute('contenteditable') === 'true') {
+      el.textContent = draft;
+      el.dispatchEvent(new InputEvent('input', { bubbles: true, inputType: 'insertText', data: draft }));
+    } else {
+      const proto = el.tagName === 'TEXTAREA' ? HTMLTextAreaElement.prototype : HTMLInputElement.prototype;
+      const setter = Object.getOwnPropertyDescriptor(proto, 'value') && Object.getOwnPropertyDescriptor(proto, 'value').set;
+      if (setter) setter.call(el, draft);
+      else el.value = draft;
+      el.dispatchEvent(new Event('input', { bubbles: true }));
+      el.dispatchEvent(new Event('change', { bubbles: true }));
+    }
+    const finalText = textOf(el);
+    return JSON.stringify({
+      ok: Boolean(draft && finalText.includes(draft.slice(0, Math.min(40, draft.length)))),
+      evidence: 'composer_dom_text_set',
+      x: picked.x,
+      y: picked.y,
+      inDialog: picked.inDialog,
+      messageLike: picked.messageLike,
+      textLength: finalText.length
+    });
+  })()`;
+}
+
+function sendConfirmationExpression(draft) {
+  return `(() => {
+    const draft = ${JSON.stringify(String(draft || '').trim())};
+    const sample = draft.slice(0, Math.min(40, draft.length));
+    const controls = Array.from(document.querySelectorAll('[role="dialog"] [contenteditable="true"],[role="dialog"] [role="textbox"],[role="dialog"] textarea,[role="dialog"] input[type="text"],[aria-modal="true"] [contenteditable="true"],[aria-modal="true"] [role="textbox"],[aria-modal="true"] textarea,[aria-modal="true"] input[type="text"],[contenteditable="true"],[role="textbox"],textarea,input[type="text"]'))
+      .filter((el) => {
+        const rect = el.getBoundingClientRect();
+        return rect.width > 0 && rect.height > 0;
+      });
+    const composerText = controls.map(el => String(el.innerText || el.textContent || el.value || '').trim()).join('\\n');
+    const pageText = String(document.body && document.body.innerText || '').slice(-12000);
+    const hasDraftInComposer = Boolean(sample && composerText.includes(sample));
+    const sentText = /\\b(sent|delivered|message sent)\\b|\\u5df2\\u53d1\\u9001|\\u6d88\\u606f\\u5df2\\u53d1\\u9001/i.test(pageText);
+    const outgoingBubble = Boolean(sample && pageText.includes(sample) && !hasDraftInComposer);
+    const emptyComposer = controls.length === 0 || controls.every(el => !String(el.innerText || el.textContent || el.value || '').trim());
+    return JSON.stringify({
+      confirmed: Boolean((sentText || outgoingBubble || emptyComposer) && !hasDraftInComposer),
+      sentText,
+      outgoingBubble,
+      emptyComposer,
+      hasDraftInComposer,
+      composerCount: controls.length,
+      composerTextLength: composerText.length
+    });
+  })()`;
+}
+
 async function insertDraftAndVerify(tab, composer, draft, platform) {
   await clickAt(tab, composer.x, composer.y);
   await sleep(300);
   await cdp(tab.webSocketDebuggerUrl, 'Input.insertText', { text: draft }, 5000);
   let inserted = await waitForJson(tab, composerTextExpression(draft), item => item && item.containsDraft, 2500, 300);
   if (inserted && inserted.containsDraft) return { ok: true, composer, evidence: `${platform}_draft_inserted_verified` };
+
+  const domInserted = await evaluateJson(tab, setComposerTextExpression(composer, draft), 5000).catch(() => null);
+  if (domInserted && domInserted.ok) {
+    inserted = await waitForJson(tab, composerTextExpression(draft), item => item && item.containsDraft, 2500, 300);
+    if (inserted && inserted.containsDraft) {
+      return {
+        ok: true,
+        composer: { ...composer, x: domInserted.x || composer.x, y: domInserted.y || composer.y },
+        evidence: `${platform}_draft_inserted_dom_fallback`,
+      };
+    }
+  }
 
   if (platform === 'facebook') {
     const refreshedComposer = await waitForJson(tab, composerExpression(platform), item => item && item.visible && Number.isFinite(item.x), 5000, 400);
@@ -484,6 +591,17 @@ async function insertDraftAndVerify(tab, composer, draft, platform) {
       await cdp(tab.webSocketDebuggerUrl, 'Input.insertText', { text: draft }, 5000);
       inserted = await waitForJson(tab, composerTextExpression(draft), item => item && item.containsDraft, 3500, 300);
       if (inserted && inserted.containsDraft) return { ok: true, composer: refreshedComposer, evidence: 'facebook_draft_inserted_after_composer_refocus' };
+      const facebookDomInserted = await evaluateJson(tab, setComposerTextExpression(refreshedComposer, draft), 5000).catch(() => null);
+      if (facebookDomInserted && facebookDomInserted.ok) {
+        inserted = await waitForJson(tab, composerTextExpression(draft), item => item && item.containsDraft, 2500, 300);
+        if (inserted && inserted.containsDraft) {
+          return {
+            ok: true,
+            composer: { ...refreshedComposer, x: facebookDomInserted.x || refreshedComposer.x, y: facebookDomInserted.y || refreshedComposer.y },
+            evidence: 'facebook_draft_inserted_dom_fallback_after_refocus',
+          };
+        }
+      }
       const diagnostic = inserted || await evaluateJson(tab, composerTextExpression(draft), 3000).catch(() => null);
       const detail = diagnostic
         ? `editable_count:${diagnostic.editableCount || 0};composer_text_length:${diagnostic.textLength || 0};active:${String(diagnostic.activeLabel || 'unknown').replace(/[;\\r\\n]+/g, ' ').slice(0, 80)}`
@@ -526,6 +644,17 @@ function identityCheckExpression(expectedCompany, targetUrl) {
     const visible = [title, headers, String(document.body && document.body.innerText || '').slice(0, 1200)].join('\\n');
     const visibleLower = visible.toLowerCase();
     const visibleCompact = compact(visible);
+    const pending = !title.trim() && !headers.trim() && visibleCompact.length < 8;
+    if (pending) {
+      return JSON.stringify({
+        ok: null,
+        pending: true,
+        expectedCompany,
+        title,
+        url: location.href,
+        evidence: 'identity_check_pending_empty_page'
+      });
+    }
     const expectedTokens = expected.split(/\\s+/).filter(token => token.length >= 4);
     const tokenHits = expectedTokens.filter(token => visibleCompact.includes(compact(token))).length;
     const isSocial = /instagram\\.com|facebook\\.com/.test(host);
@@ -888,6 +1017,38 @@ async function ensureComposerOpen(tab, port, platform) {
     await evaluateJson(tab, dismissDialogExpression(), 2000).catch(() => null);
     composer = await waitForJson(tab, composerExpression(platform), item => item && item.visible, 8000, 500);
   }
+  if ((!composer || !Number.isFinite(composer.x)) && platform === 'instagram') {
+    const retryButton = await waitForJson(
+      tab,
+      profileMessageButtonExpression(platform, keywords),
+      item => item && Number.isFinite(item.x) && Number.isFinite(item.y),
+      5000,
+      500
+    ).catch(() => null);
+    if (retryButton && Number.isFinite(retryButton.x)) {
+      await clickAt(tab, retryButton.x, retryButton.y);
+      await sleep(1800);
+      await evaluateJson(tab, dismissDialogExpression(), 2000).catch(() => null);
+      await evaluateJson(tab, closeBlockingOverlayExpression(platform), 2500).catch(() => null);
+      composer = await waitForJson(tab, composerExpression(platform), item => item && item.visible, 12000, 500);
+    }
+  }
+  if ((!composer || !Number.isFinite(composer.x)) && (platform === 'facebook' || platform === 'linkedin')) {
+    const retryButton = await waitForJson(
+      tab,
+      buttonExpression(keywords),
+      item => item && Number.isFinite(item.x) && Number.isFinite(item.y),
+      5000,
+      500
+    ).catch(() => null);
+    if (retryButton && Number.isFinite(retryButton.x)) {
+      await clickAt(tab, retryButton.x, retryButton.y);
+      await sleep(1600);
+      await evaluateJson(tab, dismissDialogExpression(), 2000).catch(() => null);
+      await evaluateJson(tab, closeBlockingOverlayExpression(platform), 2500).catch(() => null);
+      composer = await waitForJson(tab, composerExpression(platform), item => item && item.visible, 12000, 500);
+    }
+  }
   return composer && Number.isFinite(composer.x) ? composer : null;
 }
 
@@ -898,7 +1059,13 @@ async function preparePlatformDraft(payload, platform) {
     return { ok: false, sendStatus: 'failed_open', evidence: 'chrome_target_not_found' };
   }
 
-  const identity = await evaluateJson(tab, identityCheckExpression(payload.expectedCompany, payload.targetUrl), 5000).catch(() => null);
+  const identity = await waitForJson(
+    tab,
+    identityCheckExpression(payload.expectedCompany, payload.targetUrl),
+    item => item && !item.pending,
+    12000,
+    500
+  ).catch(() => null);
   if (identity && identity.ok === false) {
     return {
       ok: false,
@@ -1010,12 +1177,12 @@ async function preparePlatformDraft(payload, platform) {
       };
     }
     await clickAt(tab, sendButton.x, sendButton.y);
-    const sent = await waitForJson(tab, composerTextExpression(draft), item => item && !item.containsDraft, 12000, 500);
-    if (sent && !sent.containsDraft) {
+    const sent = await waitForJson(tab, sendConfirmationExpression(draft), item => item && item.confirmed, 12000, 500);
+    if (sent && sent.confirmed) {
       return {
         ok: true,
         sendStatus: 'sent_confirmed',
-        evidence: `${platform}_message_sent_confirmed_composer_cleared;${insertResult.evidence};${preActions.filter(Boolean).join(';')}`,
+        evidence: `${platform}_message_sent_confirmed_after_send_click;${insertResult.evidence};sentText:${Boolean(sent.sentText)};outgoingBubble:${Boolean(sent.outgoingBubble)};emptyComposer:${Boolean(sent.emptyComposer)};${preActions.filter(Boolean).join(';')}`,
         nextAction: 'Record outcome and monitor for reply.',
       };
     }

@@ -685,8 +685,15 @@ test('Codex Chrome execution can auto-send approved social outreach with confirm
   assert.ok(mainSource.includes('ask exactly one easy question'));
   assert.ok(chromeDriverSource.includes("'Input.insertText'"));
   assert.ok(chromeDriverSource.includes('sendButtonExpression'));
+  assert.ok(chromeDriverSource.includes('sendConfirmationExpression'));
+  assert.ok(chromeDriverSource.includes('nearExplicitSend'));
+  assert.ok(chromeDriverSource.includes('outgoingBubble'));
   assert.ok(chromeDriverSource.includes('document.elementFromPoint'));
   assert.ok(chromeDriverSource.includes('profileMessageButtonExpression'));
+  assert.ok(chromeDriverSource.includes('[role="dialog"] [role="textbox"]'));
+  assert.ok(chromeDriverSource.includes("el.getAttribute('role') === 'textbox'"));
+  assert.ok(chromeDriverSource.includes('identity_check_pending_empty_page'));
+  assert.ok(chromeDriverSource.includes('item => item && !item.pending'));
   assert.ok(chromeDriverSource.includes("closest('nav,[role=\"navigation\"]')"));
   assert.ok(chromeDriverSource.includes('closeBlockingOverlayExpression'));
   assert.ok(chromeDriverSource.includes('submitInstagramPostEngagement'));
@@ -695,7 +702,11 @@ test('Codex Chrome execution can auto-send approved social outreach with confirm
   assert.ok(chromeDriverSource.includes('facebookPostLikeButtonExpression'));
   assert.ok(chromeDriverSource.includes('facebookStartButtonExpression'));
   assert.ok(chromeDriverSource.includes('insertDraftAndVerify'));
+  assert.ok(chromeDriverSource.includes('setComposerTextExpression'));
+  assert.ok(chromeDriverSource.includes('composer_dom_text_set'));
+  assert.ok(chromeDriverSource.includes('draft_inserted_dom_fallback'));
   assert.ok(chromeDriverSource.includes('facebook_draft_inserted_after_composer_refocus'));
+  assert.ok(chromeDriverSource.includes('facebook_draft_inserted_dom_fallback_after_refocus'));
   assert.ok(chromeDriverSource.includes('Marketing draft was not detected in the message composer'));
   assert.match(chromeDriverSource, /platform === 'facebook'[\s\S]*clickOptionalAction\(tab, 'follow', platform\)[\s\S]*submitFacebookPostEngagement\(tab/);
   assert.ok(chromeDriverSource.includes('instagramPostTileExpression'));
@@ -716,8 +727,10 @@ test('Codex Chrome execution can auto-send approved social outreach with confirm
   assert.ok(chromeDriverSource.includes('switch to a verified alternate channel'));
   assert.ok(chromeDriverSource.includes("command === 'inspect-social-context'"));
   assert.ok(chromeDriverSource.includes("sendStatus: 'sent_confirmed'"));
+  assert.ok(chromeDriverSource.includes('message_sent_confirmed_after_send_click'));
   assert.ok(chromeDriverSource.includes("command === 'prepare-social-draft'"));
   assert.ok(chromeDriverSource.includes("facebook: ['message'"));
+  assert.match(chromeDriverSource, /platform === 'instagram'[\s\S]*profileMessageButtonExpression\(platform, keywords\)[\s\S]*composerExpression\(platform\)/);
   assert.ok(chromeDriverSource.includes('${platform}_message_composer_opened_and_draft_inserted_no_send'));
   assert.ok(mainSource.includes("sendStatus: 'draft_prepared'"));
   assert.ok(mainSource.includes('message_composer_opened_and_draft_inserted_no_send'));
