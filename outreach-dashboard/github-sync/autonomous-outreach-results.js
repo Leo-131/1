@@ -1808,5 +1808,82 @@ window.AUTONOMOUS_OUTREACH_RESULTS = [
     "evidence": "contact_entry_verified;mailto_detected;initial_page_verified;website_contact_form_fields_prepared;marketing_attachment_missing;text_only_manual_submit_required;website_contact_target_attempts:1",
     "draft": "Dear Durango Outdoor Exchange Team,\n\nNice to e-meet you.\nI am Leo, from Flextail & Vollyc.\n\nFlextail is our first and core brand, specializing in ultralight electric products for outdoor, travel, and home use. The brand is currently Top 1 on Amazon, with strong global sell-through and a proven product-market fit.\nVollyc, our second brand, focuses on 3C electronics, targeting practical, high-rotation consumer use cases.\n\nFrom our perspective, your platform and positioning are highly aligned with Flextail’s product philosophy, especially in lightweight outdoor and travel-oriented electrics.\n\nWe have already contacted with your team, and we are now actively exploring opportunities in other regions.\nAttached, you will find a brief introduction to our brands and current product catalog for your reference.\n\nLooking ahead, we are planning to launch over 36 new SKUs in 2026, covering multiple usage scenarios and price tiers, which we believe could be of interest to your assortment strategy.\n\nIf you are available, I would greatly appreciate the opportunity to arrange a short introductory video meeting to present our brands and discuss potential collaboration opportunities.\n\nThank you for your time and consideration. I look forward to your reply.\n\n[Flextail.com](https://www.flextail.com/), [vollyc.com](https://vollyc.com/)\n\n[Sincerely](https://wa.me/8617321028184)\n[Best Regard](https://wa.me/8617321028184)\n[Leo Liu](https://wa.me/8617321028184)\n[Sales](https://wa.me/8617321028184) [& Operations Director](https://wa.me/8617321028184)\n[Brand & ODM Department](https://wa.me/8617321028184)\n[Tel/whatsapp:  +86 17321028184](https://wa.me/8617321028184)\n\n[Email:  Leo@flextailgear.com](https://wa.me/8617321028184)\n[SHANGHAI FLEXTAIL TECHNOLOGY CO.,LTD.](https://wa.me/8617321028184)\n[Room103, Building No.6, No.1 Yanjiaqiao, Pudong District, ShangHai, China](https://wa.me/8617321028184)",
     "subject": "Flextail & Vollyc | Lightweight Outdoor & 3C Electronics – Potential Cooperation"
+  },
+  {
+    "task_id": "google-customer-esprinet-group-linkedin",
+    "approval_version": 1,
+    "status": "send_unconfirmed",
+    "agent": "codex-chrome-extension",
+    "timestamp": "2026-07-14T06:12:57.332Z",
+    "target_url": "https://www.linkedin.com/company/esprinet-group/",
+    "evidence": "linkedin_draft_not_inserted_before_send",
+    "draft": "Thanks, Esprinet Group team. Email or WhatsApp works well. Could you share the best buyer/category contact for camping accessories vendor review? I will send a concise FLEXTAIL and Vollyc brand intro, line sheet, and current product specs through that channel.",
+    "subject": ""
+  },
+  {
+    "task_id": "google-customer-cms-distribution-linkedin",
+    "approval_version": 1,
+    "status": "send_unconfirmed",
+    "agent": "codex-chrome-extension",
+    "timestamp": "2026-07-14T06:13:36.882Z",
+    "target_url": "https://www.linkedin.com/company/cms-distribution",
+    "evidence": "linkedin_draft_not_inserted_before_send",
+    "draft": "Thanks, CMS Distribution team. Email or WhatsApp works well. Could you share the best buyer/category contact for camping accessories vendor review? I will send a concise FLEXTAIL and Vollyc brand intro, line sheet, and current product specs through that channel.",
+    "subject": ""
+  },
+  {
+    "task_id": "google-customer-aqipa-website-contact",
+    "approval_version": 1,
+    "status": "website_contact_unreachable_skip",
+    "agent": "codex-chrome-extension",
+    "timestamp": "2026-07-14T06:14:48.418Z",
+    "target_url": "https://www.aqipa.com/",
+    "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:2",
+    "draft": "Dear Aqipa Team,\n\nNice to e-meet you.\nI am Leo, from Flextail & Vollyc.\n\nFlextail is our first and core brand, specializing in ultralight electric products for outdoor, travel, and home use. The brand is currently Top 1 on Amazon, with strong global sell-through and a proven product-market fit.\nVollyc, our second brand, focuses on 3C electronics, targeting practical, high-rotation consumer use cases.\n\nFrom our perspective, your platform and positioning are highly aligned with Flextail’s product philosophy, especially in lightweight outdoor and travel-oriented electrics.\n\nWe have already contacted with your team, and we are now actively exploring opportunities in other regions.\nAttached, you will find a brief introduction to our brands and current product catalog for your reference.\n\nLooking ahead, we are planning to launch over 36 new SKUs in 2026, covering multiple usage scenarios and price tiers, which we believe could be of interest to your assortment strategy.\n\nIf you are available, I would greatly appreciate the opportunity to arrange a short introductory video meeting to present our brands and discuss potential collaboration opportunities.\n\nThank you for your time and consideration. I look forward to your reply.\n\n[Flextail.com](https://www.flextail.com/), [vollyc.com](https://vollyc.com/)\n\n[Sincerely](https://wa.me/8617321028184)\n[Best Regard](https://wa.me/8617321028184)\n[Leo Liu](https://wa.me/8617321028184)\n[Sales](https://wa.me/8617321028184) [& Operations Director](https://wa.me/8617321028184)\n[Brand & ODM Department](https://wa.me/8617321028184)\n[Tel/whatsapp:  +86 17321028184](https://wa.me/8617321028184)\n\n[Email:  Leo@flextailgear.com](https://wa.me/8617321028184)\n[SHANGHAI FLEXTAIL TECHNOLOGY CO.,LTD.](https://wa.me/8617321028184)\n[Room103, Building No.6, No.1 Yanjiaqiao, Pudong District, ShangHai, China](https://wa.me/8617321028184)",
+    "subject": "Flextail & Vollyc | Lightweight Outdoor & 3C Electronics – Potential Cooperation"
+  },
+  {
+    "task_id": "google-customer-esprinet-group-linkedin",
+    "approval_version": 1,
+    "status": "send_unconfirmed",
+    "agent": "codex-chrome-extension",
+    "timestamp": "2026-07-14T06:21:55.239Z",
+    "target_url": "https://www.linkedin.com/company/esprinet-group/",
+    "evidence": "linkedin_send_clicked_but_confirmation_missing",
+    "draft": "Thanks, Esprinet Group team. Email or WhatsApp works well. Could you share the best buyer/category contact for camping accessories vendor review? I will send a concise FLEXTAIL and Vollyc brand intro, line sheet, and current product specs through that channel.",
+    "subject": ""
+  },
+  {
+    "task_id": "google-customer-snowys-outdoors-facebook",
+    "approval_version": 1,
+    "status": "send_unconfirmed",
+    "agent": "codex-chrome-extension",
+    "timestamp": "2026-07-14T06:22:47.580Z",
+    "target_url": "https://www.facebook.com/SnowysOutdoors/",
+    "evidence": "facebook_draft_not_inserted_after_composer_refocus;editable_count:3;composer_text_length:2;active:BODY",
+    "draft": "Thanks, Snowys Outdoors team. Email or WhatsApp works well. Could you share the best buyer/category contact for camping accessories vendor review? I will send a concise FLEXTAIL and Vollyc brand intro, line sheet, and current product specs through that channel.",
+    "subject": ""
+  },
+  {
+    "task_id": "google-customer-cms-distribution-website-contact",
+    "approval_version": 1,
+    "status": "website_contact_unreachable_skip",
+    "agent": "codex-chrome-extension",
+    "timestamp": "2026-07-14T06:25:16.174Z",
+    "target_url": "https://www.cmsdistribution.com/",
+    "evidence": "website_contact_entry_not_verified;contact_entry_clicked:Skip to content;website_contact_all_targets_failed:2",
+    "draft": "Dear CMS Distribution Team,\n\nNice to e-meet you.\nI am Leo, from Flextail & Vollyc.\n\nFlextail is our first and core brand, specializing in ultralight electric products for outdoor, travel, and home use. The brand is currently Top 1 on Amazon, with strong global sell-through and a proven product-market fit.\nVollyc, our second brand, focuses on 3C electronics, targeting practical, high-rotation consumer use cases.\n\nFrom our perspective, your platform and positioning are highly aligned with Flextail’s product philosophy, especially in lightweight outdoor and travel-oriented electrics.\n\nWe have already contacted with your team, and we are now actively exploring opportunities in other regions.\nAttached, you will find a brief introduction to our brands and current product catalog for your reference.\n\nLooking ahead, we are planning to launch over 36 new SKUs in 2026, covering multiple usage scenarios and price tiers, which we believe could be of interest to your assortment strategy.\n\nIf you are available, I would greatly appreciate the opportunity to arrange a short introductory video meeting to present our brands and discuss potential collaboration opportunities.\n\nThank you for your time and consideration. I look forward to your reply.\n\n[Flextail.com](https://www.flextail.com/), [vollyc.com](https://vollyc.com/)\n\n[Sincerely](https://wa.me/8617321028184)\n[Best Regard](https://wa.me/8617321028184)\n[Leo Liu](https://wa.me/8617321028184)\n[Sales](https://wa.me/8617321028184) [& Operations Director](https://wa.me/8617321028184)\n[Brand & ODM Department](https://wa.me/8617321028184)\n[Tel/whatsapp:  +86 17321028184](https://wa.me/8617321028184)\n\n[Email:  Leo@flextailgear.com](https://wa.me/8617321028184)\n[SHANGHAI FLEXTAIL TECHNOLOGY CO.,LTD.](https://wa.me/8617321028184)\n[Room103, Building No.6, No.1 Yanjiaqiao, Pudong District, ShangHai, China](https://wa.me/8617321028184)",
+    "subject": "Flextail & Vollyc | Lightweight Outdoor & 3C Electronics – Potential Cooperation"
+  },
+  {
+    "task_id": "google-customer-snowys-outdoors-website-contact",
+    "approval_version": 1,
+    "status": "website_contact_unreachable_skip",
+    "agent": "codex-chrome-extension",
+    "timestamp": "2026-07-14T06:25:23.417Z",
+    "target_url": "https://www.snowys.com.au/",
+    "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:2",
+    "draft": "Dear Snowys Outdoors Team,\n\nNice to e-meet you.\nI am Leo, from Flextail & Vollyc.\n\nFlextail is our first and core brand, specializing in ultralight electric products for outdoor, travel, and home use. The brand is currently Top 1 on Amazon, with strong global sell-through and a proven product-market fit.\nVollyc, our second brand, focuses on 3C electronics, targeting practical, high-rotation consumer use cases.\n\nFrom our perspective, your platform and positioning are highly aligned with Flextail’s product philosophy, especially in lightweight outdoor and travel-oriented electrics.\n\nWe have already contacted with your team, and we are now actively exploring opportunities in other regions.\nAttached, you will find a brief introduction to our brands and current product catalog for your reference.\n\nLooking ahead, we are planning to launch over 36 new SKUs in 2026, covering multiple usage scenarios and price tiers, which we believe could be of interest to your assortment strategy.\n\nIf you are available, I would greatly appreciate the opportunity to arrange a short introductory video meeting to present our brands and discuss potential collaboration opportunities.\n\nThank you for your time and consideration. I look forward to your reply.\n\n[Flextail.com](https://www.flextail.com/), [vollyc.com](https://vollyc.com/)\n\n[Sincerely](https://wa.me/8617321028184)\n[Best Regard](https://wa.me/8617321028184)\n[Leo Liu](https://wa.me/8617321028184)\n[Sales](https://wa.me/8617321028184) [& Operations Director](https://wa.me/8617321028184)\n[Brand & ODM Department](https://wa.me/8617321028184)\n[Tel/whatsapp:  +86 17321028184](https://wa.me/8617321028184)\n\n[Email:  Leo@flextailgear.com](https://wa.me/8617321028184)\n[SHANGHAI FLEXTAIL TECHNOLOGY CO.,LTD.](https://wa.me/8617321028184)\n[Room103, Building No.6, No.1 Yanjiaqiao, Pudong District, ShangHai, China](https://wa.me/8617321028184)",
+    "subject": "Flextail & Vollyc | Lightweight Outdoor & 3C Electronics – Potential Cooperation"
   }
 ];
