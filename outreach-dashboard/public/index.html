@@ -11,7 +11,7 @@
 (function resetLocalDashboardCache(){
   const isLocal = ['127.0.0.1','localhost','::1'].includes(location.hostname);
   if(!isLocal || !('serviceWorker' in navigator)) return;
-  const key = 'local-dashboard-cache-reset-20260714-report-detail-fix';
+  const key = 'local-dashboard-cache-reset-20260714-funnel-cohort-fix';
   if(sessionStorage.getItem(key)) return;
   sessionStorage.setItem(key,'1');
   Promise.all([
@@ -19,7 +19,7 @@
     typeof caches !== 'undefined' ? caches.keys().then(keys=>Promise.all(keys.map(name=>caches.delete(name)))).catch(()=>{}) : Promise.resolve()
   ]).then(()=>{
     const next = new URL(location.href);
-    next.searchParams.set('cacheReset','20260714-report-detail-fix');
+    next.searchParams.set('cacheReset','20260714-funnel-cohort-fix');
     location.replace(next.toString());
   });
 })();
@@ -247,7 +247,7 @@ tr.contact-row:hover .row-actions{display:inline-flex}
   .detail-overlay{width:100vw}
 }
 </style>
-<link rel="stylesheet" href="./command-center.css?v=20260714-report-detail-fix">
+<link rel="stylesheet" href="./command-center.css?v=20260714-funnel-cohort-fix">
 </head>
 <body class="command-center-booting">
 
@@ -482,12 +482,12 @@ tr.contact-row:hover .row-actions{display:inline-flex}
 <div class="footer" id="system-footer">Customer Automated Development System</div>
 
 <script src="./country-market-data.js?v=20260604-icp-fit"></script>
-<script src="./daily-outreach-tasks.js?v=20260714-report-detail-fix"></script>
-<script src="./google-lead-discovery-latest.js?v=20260714-report-detail-fix"></script>
-<script src="./daily-automation-latest.js?v=20260714-report-detail-fix"></script>
-<script src="./daily-automation-execution-latest.js?v=20260714-report-detail-fix"></script>
-<script src="./system-visibility-latest.js?v=20260714-report-detail-fix"></script>
-<script src="./github-sync/latest-status.js?v=20260714-report-detail-fix"></script>
+<script src="./daily-outreach-tasks.js?v=20260714-funnel-cohort-fix"></script>
+<script src="./google-lead-discovery-latest.js?v=20260714-funnel-cohort-fix"></script>
+<script src="./daily-automation-latest.js?v=20260714-funnel-cohort-fix"></script>
+<script src="./daily-automation-execution-latest.js?v=20260714-funnel-cohort-fix"></script>
+<script src="./system-visibility-latest.js?v=20260714-funnel-cohort-fix"></script>
+<script src="./github-sync/latest-status.js?v=20260714-funnel-cohort-fix"></script>
 <script>
 // === UTILS ===
 const TIER1_KEYS=['CEO','President','Founder','Owner','Managing Director','VP','Vice President','Head','Director','Chief'];
@@ -2327,24 +2327,24 @@ function exportCSV(){
 }
 if('serviceWorker' in navigator){
   navigator.serviceWorker.addEventListener('controllerchange',()=>{
-    const key='sw-refresh-20260714-report-detail-fix';
+    const key='sw-refresh-20260714-funnel-cohort-fix';
     if(sessionStorage.getItem(key)) return;
     sessionStorage.setItem(key,'1');
     window.location.reload();
   });
-  window.addEventListener('load',()=>navigator.serviceWorker.register('./service-worker.js?v=20260714-report-detail-fix').then(reg=>reg.update()).catch(()=>{}));
+  window.addEventListener('load',()=>navigator.serviceWorker.register('./service-worker.js?v=20260714-funnel-cohort-fix').then(reg=>reg.update()).catch(()=>{}));
 }
 initializeKpiDetailPage();
 </script>
 <script src="./outreach-engine.js?v=20260610-autonomous"></script>
 <script src="./outreach-analytics.js?v=20260610-autonomous"></script>
-<script src="./autonomous-outreach-results.js?v=20260714-report-detail-fix"></script>
+<script src="./autonomous-outreach-results.js?v=20260714-funnel-cohort-fix"></script>
 <script src="./verified-profile-registry.js?v=20260612-profile-calibration"></script>
 <script src="./autonomous-outreach-data.js?v=20260618-icp-priority"></script>
-<script src="./command-center.js?v=20260714-report-detail-fix"></script>
+<script src="./command-center.js?v=20260714-funnel-cohort-fix"></script>
 <script>
 (function ensureCommandCenterModule(){
-  const token = '20260714-report-detail-fix';
+  const token = '20260714-funnel-cohort-fix';
   function loadRecoveryScript(src, key){
     return new Promise(function(resolve, reject){
       const script = document.createElement('script');

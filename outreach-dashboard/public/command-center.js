@@ -1150,29 +1150,21 @@
     return `<section class="cc-panel"><div class="cc-panel-head"><h2>周期总结与数据归因</h2><span class="cc-sub">由转化数据和操作日志自动生成</span></div><div class="cc-panel-body"><p>${esc(summary)}</p><p>${esc(attribution)}</p><h3>已采纳并生效</h3><ul>${appliedActions.map(item => `<li>${esc(item)}</li>`).join('')}</ul><h3>下一阶段系统操作</h3><ol>${actions.map(item => `<li>${esc(item)}</li>`).join('')}</ol></div></section>`;
   }
   function reportMetricDetail(records, report, metric, label) {
-    const fields = {
-      discovered: 'discoveredAt', profiled: 'profiledAt', approved: 'approvedAt', sent: 'sentAt',
-      replied: 'repliedAt', contactCaptured: 'contactCapturedAt', opportunity: 'opportunityAt', autoSkipped: 'autoSkippedAt',
-    };
-    const field = fields[metric];
-    if (!field) return '';
-    const start = Date.parse(report.period.start);
-    const end = Date.parse(report.period.endExclusive);
+    if (!report.metrics || !Object.prototype.hasOwnProperty.call(report.metrics, metric)) return '';
     const seen = new Set();
-    const rows = records.filter(record => {
-      const timestamp = Date.parse(record && record[field] || '');
-      if (!Number.isFinite(timestamp) || timestamp < start || timestamp >= end) return false;
-      if (['sent', 'replied', 'contactCaptured', 'opportunity'].includes(metric)
-        && !['sent_confirmed', 'outcome_pending'].includes(String(record.sendStatus || record.state || ''))) return false;
-      const key = normalizeKey(record.company || record.name || record.taskId || record.id);
+    const rows = (report.eventRecords || []).filter(entry => {
+      if (!entry || !entry.events || !entry.events[metric]) return false;
+      const record = entry.record || {};
+      const key = entry.customerKey || normalizeKey(record.company || record.name || record.taskId || record.id);
       if (!key || seen.has(key)) return false;
       seen.add(key);
       return true;
-    }).sort((left, right) => Date.parse(right[field]) - Date.parse(left[field]));
-    const body = rows.length ? rows.slice(0, 100).map(record => {
+    }).sort((left, right) => Date.parse(right.eventTimes[metric]) - Date.parse(left.eventTimes[metric]));
+    const body = rows.length ? rows.slice(0, 100).map(entry => {
+      const record = entry.record || {};
       const target = entryUrl(record);
       const customer = target ? `<a href="${esc(target)}" target="_blank" rel="noopener">${esc(record.company || record.name)}</a>` : esc(record.company || record.name);
-      return `<tr><td>${customer}</td><td>${esc(record.platform || record.source || 'unknown')}</td><td>${esc(record.sendStatus || record.state || record.action || '')}</td><td>${esc(record[field])}</td><td>${esc(record.evidence || record.reason || record.background || '')}</td></tr>`;
+      return `<tr><td>${customer}</td><td>${esc(record.platform || record.source || 'unknown')}</td><td>${esc(record.sendStatus || record.state || record.action || '')}</td><td>${esc(entry.eventTimes[metric])}</td><td>${esc(record.evidence || record.reason || record.background || '')}</td></tr>`;
     }).join('') : '<tr><td colspan="5">该周期没有符合此阶段定义的客户事件。</td></tr>';
     return `<section class="cc-panel cc-report-detail"><div class="cc-panel-head"><h2>${esc(label)}明细</h2><a href="${reportHref(report.period.type, report.period.anchor)}">关闭明细</a></div><div class="cc-table-wrap"><table class="cc-table"><thead><tr><th>客户</th><th>渠道</th><th>状态</th><th>事件时间</th><th>证据/原因</th></tr></thead><tbody>${body}</tbody></table></div></section>`;
   }

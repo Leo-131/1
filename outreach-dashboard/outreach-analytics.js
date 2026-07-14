@@ -441,6 +441,7 @@
     const evaluated = source.map((item, recordIndex) => {
       const record = item && typeof item === 'object' ? item : {};
       const events = {};
+      const eventTimes = {};
 
       for (const [metric, field] of REPORT_EVENTS) {
         if ((metric === 'sent' || ['replied', 'contactCaptured', 'opportunity'].includes(metric))
@@ -464,17 +465,34 @@
         }
 
         events[metric] = timestamp >= start && timestamp < endExclusive;
-        if (events[metric]) {
-          const customerKey = normalizeGroupKey(record.company || record.name || record.taskId || record.id || `record-${recordIndex}`, `record-${recordIndex}`);
-          const seen = metricCustomers.get(metric);
-          if (!seen.has(customerKey)) {
-            seen.add(customerKey);
-            metrics[metric] += 1;
-          }
+        if (events[metric]) eventTimes[metric] = value;
+      }
+
+      // A verified downstream event proves this customer reached every prior
+      // funnel stage, even when a legacy row lacks the upstream timestamps.
+      const funnel = ['discovered', 'profiled', 'approved', 'sent', 'replied', 'contactCaptured', 'opportunity'];
+      for (let downstreamIndex = funnel.length - 1; downstreamIndex > 0; downstreamIndex -= 1) {
+        const downstream = funnel[downstreamIndex];
+        if (!events[downstream]) continue;
+        for (let upstreamIndex = 0; upstreamIndex < downstreamIndex; upstreamIndex += 1) {
+          const upstream = funnel[upstreamIndex];
+          if (events[upstream]) continue;
+          events[upstream] = true;
+          eventTimes[upstream] = eventTimes[downstream];
         }
       }
 
-      return { record, events };
+      const customerKey = normalizeGroupKey(record.company || record.name || record.taskId || record.id || `record-${recordIndex}`, `record-${recordIndex}`);
+      for (const [metric] of REPORT_EVENTS) {
+        if (!events[metric]) continue;
+        const seen = metricCustomers.get(metric);
+        if (!seen.has(customerKey)) {
+          seen.add(customerKey);
+          metrics[metric] += 1;
+        }
+      }
+
+      return { record, events, eventTimes, customerKey };
     });
 
     function breakdown(keySelector) {
@@ -512,6 +530,7 @@
       rates,
       conversion: buildReplyConversionInsights(breakdowns),
       breakdowns,
+      eventRecords: evaluated,
       dataQuality,
       hasData: Object.values(metrics).some(Boolean),
     };

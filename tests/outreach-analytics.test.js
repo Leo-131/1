@@ -363,3 +363,41 @@ test('period headline counts unique discovered customers and only explicit profi
   assert.equal(report.metrics.discovered, 2);
   assert.equal(report.metrics.profiled, 1);
 });
+
+test('period funnel backfills required upstream stages from confirmed downstream evidence', () => {
+  const report = buildPeriodReport([
+    {
+      company: 'Legacy Outdoor',
+      discoveredAt: '2026-05-20T01:00:00+08:00',
+      state: 'sent_confirmed',
+      sentAt: '2026-06-04T01:00:00+08:00',
+    },
+    {
+      company: 'June Retailer',
+      discoveredAt: '2026-06-03T01:00:00+08:00',
+      state: 'sent_confirmed',
+      sentAt: '2026-06-05T01:00:00+08:00',
+    },
+    {
+      company: 'Reply Buyer',
+      state: 'sent_confirmed',
+      repliedAt: '2026-06-06T01:00:00+08:00',
+    },
+  ], { type: 'monthly', anchor: '2026-06-14' });
+
+  assert.deepEqual(report.metrics, {
+    discovered: 3,
+    profiled: 3,
+    approved: 3,
+    sent: 3,
+    replied: 1,
+    contactCaptured: 0,
+    opportunity: 0,
+    autoSkipped: 0,
+  });
+  assert.equal(report.rates.discoveryToSendRate, 1);
+  assert.equal(report.eventRecords.filter(entry => entry.events.discovered).length, 3);
+  assert.ok(report.metrics.discovered >= report.metrics.profiled);
+  assert.ok(report.metrics.profiled >= report.metrics.approved);
+  assert.ok(report.metrics.approved >= report.metrics.sent);
+});
