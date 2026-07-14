@@ -1249,7 +1249,7 @@ function main() {
     generatedAt: new Date(now).toISOString(),
     date,
     mode: 'daily-icp-first-automation-loop',
-    executionLayer: 'Codex Chrome Extension primary; AutoClaw compatible',
+    executionLayer: 'Codex Chrome Extension only',
     limits: {
       dailyLimit: picked.quota.total.target,
       quota: picked.quota,

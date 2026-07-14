@@ -48,7 +48,7 @@
   const taskIndex = buildTaskIndex(tasks);
   const COOLDOWN_DAYS = Number(data.settings && data.settings.cooldownDays || 7);
   const ICP_MIN_SCORE = Number(data.settings && data.settings.minimumScore || 70);
-  const EXECUTION_COMPATIBILITY_LABELS = 'AutoClaw Execution · AutoClaw 执行证据 · AutoClaw 自动开发 · OpenClaw Followup · Execution layer is connected';
+  const EXECUTION_COMPATIBILITY_LABELS = 'Codex Chrome Extension Execution · Codex Chrome 执行证据 · Codex Chrome 自动开发 · Codex Chrome Followup · Execution layer is connected';
   const DASHBOARD_COMPATIBILITY_LABELS = "head('lastTouch', '最近触达') · 不显示猜测值";
   let currentReport = null;
   const derivedCache = new Map();
@@ -64,6 +64,79 @@
     return String(value == null ? '' : value)
       .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
       .replace(/"/g, '&quot;').replace(/'/g, '&#39;');
+  }
+  const COUNTRY_ALIASES = [
+    { label: 'United States', patterns: [/united states/i, /united states of america/i, /\busa\b/i, /\bu\.s\.a?\b/i, /\bus\b/i, /\u7f8e\u56fd/i] },
+    { label: 'United Kingdom', patterns: [/united kingdom/i, /great britain/i, /\buk\b/i, /\bengland\b/i, /\u82f1\u56fd/i] },
+    { label: 'Canada', patterns: [/canada/i, /\u52a0\u62ff\u5927/i] },
+    { label: 'Australia', patterns: [/australia/i, /\u6fb3\u5927\u5229\u4e9a/i] },
+    { label: 'New Zealand', patterns: [/new zealand/i, /\u65b0\u897f\u5170/i] },
+    { label: 'Germany', patterns: [/germany/i, /\u5fb7\u56fd/i] },
+    { label: 'France', patterns: [/france/i, /\u6cd5\u56fd/i] },
+    { label: 'Netherlands', patterns: [/netherlands/i, /\u8377\u5170/i] },
+    { label: 'Singapore', patterns: [/singapore/i, /\u65b0\u52a0\u5761/i] },
+    { label: 'Malaysia', patterns: [/malaysia/i, /\u9a6c\u6765\u897f\u4e9a/i] },
+    { label: 'Indonesia', patterns: [/indonesia/i, /\u5370\u5ea6\u5c3c\u897f\u4e9a/i] },
+    { label: 'Japan', patterns: [/japan/i, /\u65e5\u672c/i] },
+    { label: 'South Korea', patterns: [/south korea/i, /\bkorea\b/i, /\u97e9\u56fd/i] },
+  ];
+  const COUNTRY_TLD_ALIASES = [
+    { label: 'United Kingdom', patterns: [/\.co\.uk\b/i, /\.uk\b/i] },
+    { label: 'Australia', patterns: [/\.com\.au\b/i, /\.au\b/i] },
+    { label: 'New Zealand', patterns: [/\.co\.nz\b/i, /\.nz\b/i] },
+    { label: 'Canada', patterns: [/\.ca\b/i] },
+    { label: 'Germany', patterns: [/\.de\b/i] },
+    { label: 'France', patterns: [/\.fr\b/i] },
+    { label: 'Netherlands', patterns: [/\.nl\b/i] },
+    { label: 'Singapore', patterns: [/\.sg\b/i] },
+    { label: 'Malaysia', patterns: [/\.my\b/i] },
+    { label: 'Indonesia', patterns: [/\.id\b/i] },
+    { label: 'Japan', patterns: [/\.jp\b/i] },
+    { label: 'South Korea', patterns: [/\.kr\b/i] },
+  ];
+  function countryFromText(value) {
+    const text = String(value || '').trim();
+    if (!text || /^(unknown|n\/a|null|undefined|\u672a\u77e5|\u5f85\u8865\u5145|\u672a\u77e5\u56fd\u5bb6)$/i.test(text)) return '';
+    const normalized = text.replace(/[_-]+/g, ' ');
+    const alias = COUNTRY_ALIASES.find(item => item.patterns.some(pattern => pattern.test(normalized)));
+    return alias ? alias.label : '';
+  }
+  function countryFromUrl(value) {
+    const text = String(value || '').trim();
+    if (!text) return '';
+    const alias = COUNTRY_TLD_ALIASES.find(item => item.patterns.some(pattern => pattern.test(text)));
+    return alias ? alias.label : '';
+  }
+  function normalizedCountry(record = {}) {
+    const directFields = [
+      record.countryEn,
+      record.country,
+      record.countryMarket,
+      record.market,
+      record.location,
+      record.headquarters,
+      record.coverage,
+      record.region,
+    ];
+    for (const value of directFields) {
+      const country = countryFromText(value);
+      if (country) return country;
+    }
+    const urlFields = [
+      record.website,
+      record.targetUrl,
+      record.verifiedTargetUrl,
+      record.platformUrl,
+      record.contactUrl,
+      record.vendorPortal,
+      record.linkedin_url,
+      record.linkedinUrl,
+    ];
+    for (const value of urlFields) {
+      const country = countryFromUrl(value);
+      if (country) return country;
+    }
+    return 'Global / Unspecified';
   }
   function urlFor(nextView, values = {}) {
     const url = new URL(location.href);
@@ -83,7 +156,7 @@
   }
   function scoreTask(task) {
     return engine.calculateDevelopmentScore({
-      region: task.country || '',
+      region: normalizedCountry(task),
       marketStatus: task.marketStatus || '开放',
       role: task.role || '',
       industry: 'Outdoor retail',
@@ -99,7 +172,7 @@
     if (direct > 0) return Math.round(direct);
     if (entity.taskId) return scoreTask(entity).total;
     return engine.calculateDevelopmentScore({
-      region: entity.country || '',
+      region: normalizedCountry(entity),
       marketStatus: entity.marketStatus || '',
       role: entity.role || '',
       industry: entity.industry || '',
@@ -329,7 +402,8 @@
         taskId: item.id || base.taskId || `daily-${index}`,
         name: item.name || base.name || item.company,
         company: item.company || item.name || base.company,
-        country: item.countryEn || item.country || base.country || '',
+        country: normalizedCountry({ ...base, ...item }),
+        countryEn: normalizedCountry({ ...base, ...item }),
         keyword: item.keyword || base.keyword || 'outdoor retail partnership',
         platform: item.platform || base.platform || 'instagram',
         targetUrl: item.platformUrl || item.website || item.url || base.targetUrl || base.verifiedTargetUrl || '',
@@ -808,19 +882,20 @@
     return target;
   }
   function latestCustomerRecord(row) {
+    const country = normalizedCountry(row);
     return {
       id: row.taskId || row.id || row.company || row.name,
       name: row.name || row.company,
       company: row.company || row.name,
       role: row.buyerPersona || row.role || '',
       category: row.businessModel || row.productCategory || 'daily_automation',
-      country: row.countryEn || row.country || '',
-      countryEn: row.countryEn || row.country || '',
+      country,
+      countryEn: country,
       marketScore: row.marketScore || '',
       marketTier: row.fitTier || '',
       marketStatus: row.marketStatus || row.agencyState || '',
       industry: row.productCategory || row.keyword || 'Outdoor retail',
-      region: row.countryEn || row.country || '',
+      region: country,
       targetRegion: row.targetRegion || targetRegion(row),
       dealProbabilityScore: dealProbabilityScore(row),
       tier: Number(row.fitScore || 0) >= 90 ? 't1' : 't2',
@@ -898,6 +973,10 @@
         enriched.email = enriched.contactEmail || enriched.publicEmail;
         enriched.contact = enriched.contactEmail || enriched.publicEmail;
       }
+      const country = normalizedCountry(enriched);
+      enriched.country = country;
+      enriched.countryEn = country;
+      enriched.region = country;
       enriched.automationTaskId = source.taskId || source.id || enriched.automationTaskId;
       enriched.automationEvidence = source.reason || source.evidence || source.sendStatus || enriched.automationEvidence || '';
       enriched.resultCheckedAt = source.resultCheckedAt || (latestRun && latestRun.generatedAt) || enriched.resultCheckedAt || '';
@@ -910,7 +989,10 @@
       keys.forEach(key => seenKeys.add(key));
       records.push(latestCustomerRecord(row));
     });
-    return records;
+    return records.map(record => {
+      const country = normalizedCountry(record);
+      return { ...record, country, countryEn: country, region: country };
+    });
   }
   function customerRecords() {
     return memoized('customerRecords', computeCustomerRecords);
@@ -935,9 +1017,9 @@
     if (!followup && localStorage.getItem(`glm-direct-completed:${task.taskId}`) === '1') {
       return { ready: false, label: 'Done', reason: 'This lead was already completed on this device' };
     }
-    if (!autoClawConnected()) return { ready: false, label: 'Desktop app', reason: 'Use the desktop app to connect Codex Chrome Extension / AutoClaw compatible execution' };
+    if (!autoClawConnected()) return { ready: false, label: 'Desktop app', reason: 'Use the desktop app to connect Codex Chrome Extension execution' };
     if (followup) return { ready: true, label: 'Chrome Followup', reason: 'Prepare follow-up only; 7-day cooldown has passed, verify before any send.' };
-    return { ready: true, label: 'Codex Chrome', reason: 'Codex Chrome Extension execution layer is connected; AutoClaw compatible' };
+    return { ready: true, label: 'Codex Chrome', reason: 'Codex Chrome Extension execution layer is connected' };
   }
   function canRunGlm(task) {
     if (task && (String(task.platform || '').toLowerCase() === 'email' || task.action === 'email_priority')) {
@@ -967,7 +1049,8 @@
       .sort(dealPriorityCompare);
   }
   function uniqueValues(records, key) {
-    return [...new Set(records.map(record => String(record[key] || '').trim()).filter(Boolean))]
+    const getter = typeof key === 'function' ? key : record => record[key];
+    return [...new Set(records.map(record => String(getter(record) || '').trim()).filter(Boolean))]
       .sort((left, right) => left.localeCompare(right));
   }
   function optionList(values, selected, allLabel) {
@@ -983,7 +1066,7 @@
   function nav() {
     return `<aside class="cc-sidebar"><div class="cc-brand"><b>Customer Development</b><span>Codex Decision - Codex Chrome Extension</span></div>
       <nav class="cc-nav">${views.map(([key, label]) => `<a class="${view === key ? 'active' : ''}" href="${urlFor(key)}">${label}</a>`).join('')}</nav>
-      <div class="cc-agent">Brain: Codex<br>Executor: Codex Chrome Extension<br>Fallback: AutoClaw compatible<br>Mode: ICP&gt;70 - one target at a time</div></aside>`;
+      <div class="cc-agent">Brain: Codex<br>Executor: Codex Chrome Extension<br>Browser control: Codex Chrome Extension only<br>Mode: ICP&gt;70 - one target at a time</div></aside>`;
   }
   function pageHead(title, subtitle) {
     return `<div class="cc-page-head"><div><h1>${title}</h1><p>${subtitle}</p></div><span class="cc-status">自动决策运行中</span></div>`;
@@ -1284,7 +1367,7 @@
       <a class="cc-kpi cc-kpi-link" href="${urlFor('queue', { queue: 'followup' })}"><span>跟进中</span><b>${followups.length}</b></a>
       <a class="cc-kpi cc-kpi-link" href="${urlFor('customers', { touch: 'untouched' })}"><span>候选客户池</span><b>${customerRecords().filter(record => !recordTouched(record)).length}</b></a>
     </div>`;
-    const connection = `<div class="cc-quality">${executionConnected ? 'Codex Chrome Extension 已连接：AutoClaw 兼容执行层可用' : 'Codex Chrome Extension 未连接：当前是网页预览，请使用桌面 APP 执行；历史客户仍会因防重复规则保持禁用'}</div>`;
+    const connection = `<div class="cc-quality">${executionConnected ? 'Codex Chrome Extension 已连接：浏览器执行层可用' : 'Codex Chrome Extension 未连接：当前是网页预览，请使用桌面 APP 执行；历史客户仍会因防重复规则保持禁用'}</div>`;
     const icpRule = `<div class="cc-icp-rule"><b>ICP 分值算法</b><span>市场潜力 25 + 行业/角色匹配 25 + 身份核验 15 + 采购意图 15 + SEO/趋势 10 + 可联系历史 10。仅 ICP &gt; ${ICP_MIN_SCORE} 进入每日新客户开发，≤${ICP_MIN_SCORE} 保留链接但划线，不自动触达。</span></div>`;
     if (!task) {
       return `${pageHead('开发工作台', 'Codex 全自动接手开发，Codex Chrome Extension 执行；仅重大异常通知介入')}
@@ -1299,7 +1382,7 @@
     return `${pageHead('开发工作台', 'Codex 全自动决策与执行，GLM 优化画像与文案；仅重大 bug 暂停通知')}
       ${metrics}${systemFreshnessNotice(system)}${connection}${icpRule}${taskDetailPanel(system)}
       <section class="cc-panel"><div class="cc-panel-head"><h2>当前客户</h2><div class="cc-row-actions"><button class="primary" type="button" onclick="runGlmQueue()" ${eligibleCount ? '' : 'disabled'}>${eligibleCount ? '执行当前最高优先级客户' : '暂无待开发客户'}</button><span class="cc-chip green">${stateLabel(task.state)}</span></div></div><div class="cc-panel-body">
-        <div class="cc-current"><div><h3>${platformUrl(task) ? `<a href="${esc(platformUrl(task))}" target="_blank" rel="noopener">${esc(task.company)}</a>` : esc(task.company)}</h3><div class="cc-sub">${esc(task.role || '采购/合作负责人')} · ${esc(task.country || '区域待补全')} · ${esc(task.keyword)}</div><div class="cc-actions"><button type="button" onclick="openVerifiedCustomer('${esc(task.taskId)}')" ${platformUrl(task) ? '' : 'disabled'}>打开客户主页</button><button class="primary" type="button" title="${esc(autoClawAvailability(task).reason)}" onclick="runGlmDirect('${esc(task.taskId)}')" ${canRunGlm(task) ? '' : 'disabled'}>${esc(autoClawAvailability(task).label)}</button><a href="${urlFor('customer', { contact: task.taskId })}">查看系统档案</a></div></div><div class="cc-score"><strong>${score.total}</strong><span>综合开发分 / 100</span></div></div>
+        <div class="cc-current"><div><h3>${platformUrl(task) ? `<a href="${esc(platformUrl(task))}" target="_blank" rel="noopener">${esc(task.company)}</a>` : esc(task.company)}</h3><div class="cc-sub">${esc(task.role || '采购/合作负责人')} · ${esc(normalizedCountry(task))} · ${esc(task.keyword)}</div><div class="cc-actions"><button type="button" onclick="openVerifiedCustomer('${esc(task.taskId)}')" ${platformUrl(task) ? '' : 'disabled'}>打开客户主页</button><button class="primary" type="button" title="${esc(autoClawAvailability(task).reason)}" onclick="runGlmDirect('${esc(task.taskId)}')" ${canRunGlm(task) ? '' : 'disabled'}>${esc(autoClawAvailability(task).label)}</button><a href="${urlFor('customer', { contact: task.taskId })}">查看系统档案</a></div></div><div class="cc-score"><strong>${score.total}</strong><span>综合开发分 / 100</span></div></div>
         <div class="cc-sub">ICP：${activeIcp}/100 · ${esc(icpExplanation(task))}</div>
         ${stageRoute(task)}
         ${task.identityStatus === 'identity_mismatch' ? `<div class="cc-quality">身份不匹配：${esc(task.identityNote || '该账号与目标客户画像不一致，已禁止自动执行。')}</div>` : ''}
@@ -1317,7 +1400,7 @@
       const profileHref = urlFor('customer', { contact: task.taskId });
       const customerLinkAttrs = ` href="${profileHref}"`;
       const archiveLink = target ? `<br><a class="cc-sub-link" href="${esc(target)}" target="_blank" rel="noopener">Verified channel</a>` : '';
-      return `<tr${rowClass}><td><a${linkClass}${customerLinkAttrs} title="Open verified customer platform; ${esc(icpExplanation(task))}">${esc(task.company)}</a>${archiveLink}${task.identityStatus === 'identity_mismatch' ? '<br><span class="cc-chip red">Identity mismatch</span>' : ''}${qualified ? '' : '<br><span class="cc-chip amber">Low ICP retained</span>'}</td><td>${esc(task.country)}</td><td>${esc(task.keyword)}</td><td><span class="cc-chip">${stateLabel(task.state)}</span></td><td title="ICP ${icpScore(task)} + market/contact/region priority">${dealProbabilityScore(task)}</td><td><span class="cc-chip ${['southeast_asia', 'europe', 'americas'].includes(targetRegion(task)) ? 'green' : ''}">${esc(targetRegion(task))}</span></td><td><div class="cc-row-actions"><button type="button" onclick="openVerifiedCustomer('${esc(task.taskId)}')" ${target ? '' : 'disabled'}>Open profile</button><button type="button" title="${esc(autoClawAvailability(task).reason)}" onclick="runGlmDirect('${esc(task.taskId)}')" ${canRunGlm(task) ? '' : 'disabled'}>${esc(autoClawAvailability(task).label)}</button></div></td></tr>`;
+      return `<tr${rowClass}><td><a${linkClass}${customerLinkAttrs} title="Open verified customer platform; ${esc(icpExplanation(task))}">${esc(task.company)}</a>${archiveLink}${task.identityStatus === 'identity_mismatch' ? '<br><span class="cc-chip red">Identity mismatch</span>' : ''}${qualified ? '' : '<br><span class="cc-chip amber">Low ICP retained</span>'}</td><td>${esc(normalizedCountry(task))}</td><td>${esc(task.keyword)}</td><td><span class="cc-chip">${stateLabel(task.state)}</span></td><td title="ICP ${icpScore(task)} + market/contact/region priority">${dealProbabilityScore(task)}</td><td><span class="cc-chip ${['southeast_asia', 'europe', 'americas'].includes(targetRegion(task)) ? 'green' : ''}">${esc(targetRegion(task))}</span></td><td><div class="cc-row-actions"><button type="button" onclick="openVerifiedCustomer('${esc(task.taskId)}')" ${target ? '' : 'disabled'}>Open profile</button><button type="button" title="${esc(autoClawAvailability(task).reason)}" onclick="runGlmDirect('${esc(task.taskId)}')" ${canRunGlm(task) ? '' : 'disabled'}>${esc(autoClawAvailability(task).label)}</button></div></td></tr>`;
     }).join('')}</tbody></table>`;
   }
   function queue() {
@@ -1387,7 +1470,7 @@
     const highIcp = records.filter(isIcpQualified);
     const contactable = records.filter(record => record.contact || record.email || record.targetUrl || record.website);
     const social = records.filter(record => /instagram|facebook|ins|fb/i.test(String(record.platform || record.source || record.targetUrl || '')));
-    const countries = distribution(records, record => record.country || record.countryEn || '未知国家');
+    const countries = distribution(records, normalizedCountry);
     const platforms = distribution(records, record => record.platform || record.source || '未知平台');
     const profiles = distribution(records, customerProfileType);
     const scales = distribution(records, companyScaleTier);
@@ -1421,7 +1504,7 @@
       <section class="cc-panel"><div class="cc-panel-head"><h2>高价值客户拆解</h2><span class="cc-sub">按成交概率、ICP、国家优先级与联系方式综合排序</span></div><div class="cc-table-wrap"><table class="cc-table"><thead><tr><th>客户</th><th>画像</th><th>国家</th><th>体量</th><th>平台</th><th>状态</th><th>综合分</th><th>可联系性</th></tr></thead><tbody>${topCustomers.map((record, index) => {
         const key = recordKey(record, index);
         const contact = record.contact || record.email || record.targetUrl || record.website || '';
-        return `<tr><td><a href="${urlFor('customer', { contact: key })}">${esc(record.company || record.name)}</a><br><span class="cc-sub">${esc(record.role || record.keyword || '')}</span></td><td>${esc(customerProfileType(record))}</td><td>${esc(record.country || record.countryEn || '')}</td><td>${esc(companyScaleTier(record))}</td><td>${esc(record.platform || record.source || '')}</td><td><span class="cc-chip">${esc(record.status || '')}</span></td><td><b>${dealProbabilityScore(record)}</b></td><td>${contact ? '<span class="cc-chip green">可触达</span>' : '<span class="cc-chip amber">待补全</span>'}</td></tr>`;
+        return `<tr><td><a href="${urlFor('customer', { contact: key })}">${esc(record.company || record.name)}</a><br><span class="cc-sub">${esc(record.role || record.keyword || '')}</span></td><td>${esc(customerProfileType(record))}</td><td>${esc(normalizedCountry(record))}</td><td>${esc(companyScaleTier(record))}</td><td>${esc(record.platform || record.source || '')}</td><td><span class="cc-chip">${esc(record.status || '')}</span></td><td><b>${dealProbabilityScore(record)}</b></td><td>${contact ? '<span class="cc-chip green">可触达</span>' : '<span class="cc-chip amber">待补全</span>'}</td></tr>`;
       }).join('')}</tbody></table></div></section>`;
   }
   function customers() {
@@ -1440,11 +1523,12 @@
     const records = customerRecords();
     const indexed = records.map((record, index) => ({ record, index }));
     const filtered = indexed.filter(({ record }) => {
-      const haystack = [record.name, record.company, record.role, record.country, record.industry, record.source].join(' ').toLowerCase();
+      const recordCountry = normalizedCountry(record);
+      const haystack = [record.name, record.company, record.role, recordCountry, record.industry, record.source].join(' ').toLowerCase();
       if (search && !haystack.includes(search)) return false;
       if (platform && String(record.platform || '') !== platform) return false;
       if (status && String(record.status || '') !== status) return false;
-      if (country && String(record.country || '') !== country) return false;
+      if (country && recordCountry !== country) return false;
       if (industry && String(record.industry || '') !== industry) return false;
       if (source && String(record.source || '') !== source) return false;
       if (touch === 'untouched' && recordTouched(record)) return false;
@@ -1504,7 +1588,7 @@
         <input id="customer-search" name="search" value="${esc(query.get('search') || '')}" placeholder="搜索姓名、公司、职位...">
         <select id="customer-platform" name="platform">${optionList(uniqueValues(records, 'platform'), platform, '全部平台')}</select>
         <select id="customer-status" name="status">${optionList(uniqueValues(records, 'status'), status, '全部状态')}</select>
-        <select id="customer-country" name="country">${optionList(uniqueValues(records, 'country'), country, '全部国家')}</select>
+        <select id="customer-country" name="country">${optionList(uniqueValues(records, normalizedCountry), country, '全部国家')}</select>
         <select id="customer-industry" name="industry">${optionList(uniqueValues(records, 'industry'), industry, '全部行业')}</select>
         <select id="customer-source" name="source">${optionList(uniqueValues(records, 'source'), source, '全部来源')}</select>
         <select id="customer-touch" name="touch"><option value="">全部触达状态</option><option value="untouched" ${touch === 'untouched' ? 'selected' : ''}>未触达</option><option value="touched" ${touch === 'touched' ? 'selected' : ''}>已触达</option><option value="contact" ${touch === 'contact' ? 'selected' : ''}>已获取联系方式</option><option value="followup" ${touch === 'followup' ? 'selected' : ''}>需跟进</option></select>
@@ -1523,7 +1607,7 @@
         const profileHref = urlFor('customer', { contact: key });
         const customerLinkAttrs = ` href="${profileHref}"`;
         const archiveLink = target ? `<br><a class="cc-sub-link" href="${esc(target)}" target="_blank" rel="noopener">Verified channel</a>` : '';
-        return `<tr class="${qualified ? '' : 'cc-low-icp'}"><td><a${linkClass}${customerLinkAttrs} title="Open verified customer platform; ${esc(icpExplanation(record))}">${esc(record.name)}</a>${archiveLink}</td><td>${esc(record.company)}${qualified ? '' : '<br><span class="cc-chip amber">Low ICP retained</span>'}</td><td>${esc(record.role)}</td><td>${esc(record.country)}</td><td>${esc(record.platform)}</td><td><span class="cc-chip">${esc(record.status)}</span></td><td title="ICP ${icpScore(record)} + market/contact/region priority">${dealProbabilityScore(record)}</td><td>${esc(recordUpdatedAt(record))}</td></tr>`;
+        return `<tr class="${qualified ? '' : 'cc-low-icp'}"><td><a${linkClass}${customerLinkAttrs} title="Open verified customer platform; ${esc(icpExplanation(record))}">${esc(record.name)}</a>${archiveLink}</td><td>${esc(record.company)}${qualified ? '' : '<br><span class="cc-chip amber">Low ICP retained</span>'}</td><td>${esc(record.role)}</td><td>${esc(normalizedCountry(record))}</td><td>${esc(record.platform)}</td><td><span class="cc-chip">${esc(record.status)}</span></td><td title="ICP ${icpScore(record)} + market/contact/region priority">${dealProbabilityScore(record)}</td><td>${esc(recordUpdatedAt(record))}</td></tr>`;
       }).join('')}</tbody></table>${rows.length ? '' : '<div class="cc-empty">没有匹配客户，请重置或调整筛选条件</div>'}</div>`;
   }
   function countryGeoCode(country) {
@@ -1562,7 +1646,7 @@
     const rows = [...latestQueueRows('all'), ...googleDiscoveryRows(), ...liveOperationalRecords()];
     const groups = new Map();
     rows.forEach(record => {
-      const country = record.countryEn || record.country || 'Global';
+      const country = normalizedCountry(record);
       commercialSearchTerms(record).forEach(keyword => {
         const key = `${keyword}|${country}`;
         const item = groups.get(key) || {
@@ -1613,7 +1697,7 @@
   }
   function audit() {
     const events = liveAuditEvents();
-    return `${pageHead('自动化审计', 'Codex 决策与 Codex Chrome 执行证据留档，AutoClaw 兼容，GLM 仅作为辅助模型')}
+    return `${pageHead('自动化审计', 'Codex 决策与 Codex Chrome Extension 执行证据留档，GLM 仅作为辅助模型')}
       <div class="cc-table-wrap"><table class="cc-table"><thead><tr><th>时间</th><th>任务</th><th>阶段</th><th>代理</th><th>结果</th><th>证据</th></tr></thead><tbody>${events.map(item => `<tr><td>${esc(item.timestamp)}</td><td>${esc(item.taskId)}</td><td>${esc(item.stage)}</td><td>${esc(item.agent)}</td><td>${esc(item.result)}</td><td>${esc(item.evidence)}</td></tr>`).join('')}</tbody></table></div>`;
   }
   function settings() {
@@ -1668,7 +1752,7 @@
   function backgroundRows(record) {
     return [
       ['客户/公司', record.company || record.name],
-      ['国家/区域', record.country || record.countryEn || record.location],
+      ['国家/区域', normalizedCountry(record)],
       ['平台主页', platformUrl(record)],
       ['官网', record.website || record.companyWebsite || ''],
       ['背调证据', record.evidenceUrl || record.query || record.automationEvidence || ''],
@@ -1739,7 +1823,7 @@
     if (/global|worldwide|international/.test(text)) return 'Global';
     if (/sea|europe|north america|asia-pacific|regional/.test(text)) return 'Regional';
     if (/chain|stores|national|largest|major/.test(text)) return 'National';
-    return record.country || record.countryEn ? 'Local / National' : '待补充';
+    return normalizedCountry(record) !== 'Global / Unspecified' ? 'Local / National' : '待补充';
   }
   function entryBarrier(record, scoreValue) {
     const status = String(record.marketStatus || record.agencyState || '').toLowerCase();
@@ -1790,7 +1874,7 @@
     return [
       ['Basic Info', 'Priority', priorityTier(record, score), '客户等级：S/A/B/C/D'],
       ['Basic Info', 'Company', record.company || record.name || '待补充', '公司名称'],
-      ['Basic Info', 'Country', record.country || record.countryEn || record.location || '待补充', '国家/地区'],
+      ['Basic Info', 'Country', normalizedCountry(record), '国家/地区'],
       ['Basic Info', 'Website', record.website || record.companyWebsite || '待补充', '官网'],
       ['Basic Info', 'LinkedIn', record.linkedin_url || record.linkedin || '待补充', '公司主页'],
       ['Basic Info', 'Founded', record.founded || '待补充', '成立时间'],
@@ -1872,7 +1956,7 @@
     const background = backgroundRows(record);
     const timeline = timelineFor(record);
     return `${pageHead(esc(record.company || record.name), '独立客户详情页，不覆盖原工作台')}
-      <section class="cc-panel"><div class="cc-panel-body"><div class="cc-current"><div><h3>${esc(record.name)}</h3><div class="cc-sub">${esc(record.role)} · ${esc(record.country)} · ${esc(record.platform)}</div></div><div class="cc-score"><strong>${score.total}</strong><span>综合开发分</span></div></div></div></section>
+      <section class="cc-panel"><div class="cc-panel-body"><div class="cc-current"><div><h3>${esc(record.name)}</h3><div class="cc-sub">${esc(record.role)} · ${esc(normalizedCountry(record))} · ${esc(record.platform)}</div></div><div class="cc-score"><strong>${score.total}</strong><span>综合开发分</span></div></div></div></section>
       <section class="cc-panel"><div class="cc-panel-head"><h2>ICP 评分解释</h2></div><div class="cc-panel-body"><div class="cc-sub">${esc(icpExplanation(record))}</div></div></section>
       ${globalCustomerDashboard(record, score)}
       <section class="cc-panel"><div class="cc-panel-head"><h2>Sales Intelligence Dossier</h2><span class="cc-sub">Sales-ready customer facts, opportunity, risk, and next action</span></div><div class="cc-panel-body"><table class="cc-table"><tbody>${salesResearchRows(record, score).map(([label, value]) => `<tr><th>${esc(label)}</th><td>${esc(value)}</td></tr>`).join('')}</tbody></table></div></section>
@@ -2009,7 +2093,7 @@
       return;
     }
     if (!window.customerDev || !window.customerDev.runGlmDirectAutomation) {
-      window.alert('Codex Chrome 自动开发需要桌面 APP 和浏览器执行组件；AutoClaw 可作为兼容执行层。网页版只能生成画像与文案，不能控制本机浏览器。');
+      window.alert('Codex Chrome 自动开发需要桌面 APP 和 Codex Chrome Extension 浏览器执行组件。网页版只能生成画像与文案，不能控制本机浏览器。');
       return;
     }
     const button = document.activeElement;
@@ -2089,7 +2173,7 @@
       return;
     }
     if (!window.customerDev || !window.customerDev.runGlmDirectAutomation) {
-      window.alert('请使用桌面 APP 启动 Codex Chrome / AutoClaw 兼容串行队列。');
+      window.alert('请使用桌面 APP 启动 Codex Chrome Extension 串行队列。');
       return;
     }
     for (let index = 0; index < eligible.length; index += 1) {
