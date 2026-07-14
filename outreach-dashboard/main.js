@@ -134,7 +134,7 @@ function canonicalLeadKey(value) {
     .toLowerCase()
     .replace(/^google-customer-/i, '')
     .replace(/^verified-[a-z]+-/i, '')
-    .replace(/-(instagram|facebook|website-contact)$/i, '')
+    .replace(/-(linkedin|instagram|facebook|website-contact)$/i, '')
     .replace(/[^a-z0-9.]+/g, '');
 }
 
@@ -154,6 +154,7 @@ function canonicalExactAutomationKey(value) {
 function automationPlatformFor(value = {}) {
   const explicit = String(value.platform || value.channel || '').toLowerCase();
   if (explicit) {
+    if (/linkedin|\bli\b/.test(explicit)) return 'linkedin';
     if (/instagram|ins/.test(explicit)) return 'instagram';
     if (/facebook|fb/.test(explicit)) return 'facebook';
     if (/email|website|contact/.test(explicit)) return 'website';
@@ -169,6 +170,7 @@ function automationPlatformFor(value = {}) {
     value.url,
     value.contactUrl,
   ].filter(Boolean).join(' ').toLowerCase();
+  if (/linkedin|linkedin\.com/.test(text)) return 'linkedin';
   if (/instagram|instagram\.com/.test(text)) return 'instagram';
   if (/facebook|facebook\.com|fb\.com/.test(text)) return 'facebook';
   if (/website-contact|official_website_contact_channel|website_contact|mailto|email_channel|contact_entry/.test(text)) return 'website';
@@ -210,16 +212,12 @@ const COMPANY_HISTORY_BLOCKING_STATUSES = new Set([
   'send_unconfirmed',
   'account_followed',
   'post_liked',
-  'website_contact_ready',
-  'approval_pending',
-  'draft_prepared',
-  'prepared_not_sent',
 ]);
 
 function historicalAutomationResultBlocksCompany(result = {}) {
   if (COMPANY_HISTORY_BLOCKING_STATUSES.has(result.status)) return true;
   if (result.status !== 'failed_open') return false;
-  return /message_button_clicked|profile_valid_no_message_button|profile_opened_no_message_button|no_message_button|contact_entry_verified|contact_form_detected|mailto_detected|no_contact_entry_control|website_contact_entry_not_verified|website_contact_all_targets_failed|public_email_fallback_available/i
+  return /message_sent|send_clicked_but_confirmation_missing/i
     .test(String(result.evidence || ''));
 }
 
@@ -1535,6 +1533,13 @@ function websiteMarketingAttachmentPath() {
   return path.isAbsolute(configured) ? configured : path.join(__dirname, configured);
 }
 
+async function navigateChromeTab(opened, targetUrl) {
+  if (!opened || !opened.webSocketDebuggerUrl || !/^https?:\/\//i.test(String(targetUrl || ''))) return false;
+  await cdpCommand(opened.webSocketDebuggerUrl, 'Page.navigate', { url: targetUrl }, 5000);
+  await sleep(1600);
+  return true;
+}
+
 function websiteMarketingAttachmentStatus() {
   const filePath = websiteMarketingAttachmentPath();
   if (!filePath || !fs.existsSync(filePath)) {
@@ -1638,15 +1643,15 @@ function websiteContactInspectionExpression() {
       }));
     const messageFields = fields.filter((field) => field.tag === 'TEXTAREA'
       || /email|message|enquiry|inquiry|business|company|name|phone|subject/.test(String(field.type || '') + ' ' + String(field.label || '')));
-    const businessWords = ['business enquiry', 'business inquiry', 'trade enquiry', 'trade inquiry', 'vendor', 'supplier', 'wholesale', 'partnership', 'corporate sales', 'become a supplier', 'sales enquiry', 'customer service enquiry', 'submit a request', 'send us a message', 'contact form', 'email us'];
+    const businessWords = ['business enquiry', 'business inquiry', 'trade enquiry', 'trade inquiry', 'vendor', 'supplier', 'wholesale', 'partnership', 'corporate sales', 'become a supplier', 'sales enquiry', 'customer service enquiry', 'submit a request', 'send us a message', 'contact form', 'email us', 'contactez-nous', 'nous contacter', 'kontakt', 'contáctanos', 'contactanos', 'contattaci', 'contato'];
     const hasBusinessCue = businessWords.some((word) => lowerText.includes(word));
     const actionableControls = controls.filter((item) => {
       const text = (String(item.text || '') + ' ' + String(item.href || '')).toLowerCase();
       return businessWords.some((word) => text.includes(word))
-        || /contact us|get in touch|enquir|inquir|support request|request form|customer care|help request/.test(text);
+        || /contact us|get in touch|enquir|inquir|support request|request form|customer care|help request|contactez-nous|nous contacter|kontakt|cont[aá]ctanos|contattaci|contato/.test(text);
     });
     const hasContactForm = messageFields.length >= 2 || fields.some((field) => field.tag === 'TEXTAREA') || fields.some((field) => /email/.test(String(field.type || '') + ' ' + String(field.label || '')));
-    const ready = mailtos.length > 0 || hasContactForm || (hasBusinessCue && actionableControls.length > 0);
+    const ready = mailtos.length > 0 || hasContactForm;
     const evidence = mailtos.length ? 'mailto_detected'
       : hasContactForm ? 'contact_form_detected'
         : hasBusinessCue && actionableControls.length ? 'business_contact_route_detected'
@@ -1674,9 +1679,15 @@ function websiteContactClickExpression() {
       return rect.width > 0 && rect.height > 0 && style.visibility !== 'hidden' && style.display !== 'none';
     };
     const textOf = (el) => String(el && (el.innerText || el.textContent || el.getAttribute('aria-label') || el.getAttribute('title') || '') || '').replace(/\\s+/g, ' ').trim();
-    const positive = /contact us|get in touch|send us a message|submit a request|business enquiry|business inquiry|trade enquiry|trade inquiry|sales enquiry|enquir|inquir|vendor|supplier|wholesale|partnership|corporate sales|become a supplier|email us|customer service enquiry|support request|request form/i;
+    const positive = /contact us|get in touch|send us a message|submit a request|business enquiry|business inquiry|trade enquiry|trade inquiry|sales enquiry|enquir|inquir|vendor|supplier|wholesale|partnership|corporate sales|become a supplier|email us|customer service enquiry|support request|request form|contactez-nous|nous contacter|kontakt|cont[aá]ctanos|contattaci|contato/i;
     const negative = /continue shopping|search|sign in|login|cart|wishlist|store locator|track order|return policy|privacy|terms|newsletter|language|translate|accessibility|live chat/i;
-    const currentHost = location.hostname;
+    const registrableHost = (host) => {
+      const parts = String(host || '').toLowerCase().replace(/^www\./, '').split('.').filter(Boolean);
+      const publicSuffix = parts.slice(-2).join('.');
+      const needsThree = /^(co\.uk|com\.au|co\.nz|co\.jp|com\.br|com\.mx)$/.test(publicSuffix);
+      return parts.slice(needsThree ? -3 : -2).join('.');
+    };
+    const currentHost = registrableHost(location.hostname);
     const candidates = Array.from(document.querySelectorAll('a,button,[role="button"]'))
       .filter(visible)
       .map((el) => {
@@ -1686,7 +1697,7 @@ function websiteContactClickExpression() {
         const haystack = String(text || '') + ' ' + String(href || '');
         let sameHost = true;
         try {
-          if (/^https?:/i.test(href)) sameHost = new URL(href).hostname === currentHost;
+          if (/^https?:/i.test(href)) sameHost = registrableHost(new URL(href).hostname) === currentHost;
         } catch {
           sameHost = true;
         }
@@ -1694,8 +1705,8 @@ function websiteContactClickExpression() {
       })
       .filter((item) => positive.test(item.haystack) && !negative.test(item.haystack) && item.sameHost);
     const ranked = candidates.sort((left, right) => {
-      const exactLeft = /^(contact us|get in touch|submit a request|send us a message)$/i.test(left.text) ? 1 : 0;
-      const exactRight = /^(contact us|get in touch|submit a request|send us a message)$/i.test(right.text) ? 1 : 0;
+      const exactLeft = /^(contact us|get in touch|submit a request|send us a message|contactez-nous|nous contacter|kontakt|cont[aá]ctanos|contattaci|contato)$/i.test(left.text) ? 1 : 0;
+      const exactRight = /^(contact us|get in touch|submit a request|send us a message|contactez-nous|nous contacter|kontakt|cont[aá]ctanos|contattaci|contato)$/i.test(right.text) ? 1 : 0;
       return exactRight - exactLeft || left.y - right.y;
     });
     const target = ranked[0];
@@ -1741,7 +1752,10 @@ async function inspectWebsiteContactFlow(chromeOpen) {
       break;
     }
     clickEvidence = `${clicked.evidence}:${String(clicked.text || clicked.href || '').slice(0, 80)}`;
-    await clickChromeTabAt(chromeOpen, clicked.x, clicked.y);
+    const navigated = /^https?:\/\//i.test(String(clicked.href || ''))
+      ? await navigateChromeTab(chromeOpen, clicked.href)
+      : false;
+    if (!navigated) await clickChromeTabAt(chromeOpen, clicked.x, clicked.y);
     await sleep(1800);
     inspection = await evaluateChromeTabJson(chromeOpen, websiteContactInspectionExpression(), 8000);
     if (inspection && inspection.unavailable) {
@@ -1894,12 +1908,12 @@ function websiteContactFormFillExpression(payload) {
       const name = String(el.name || el.id || el.placeholder || '').toLowerCase();
       const key = String(label || '') + ' ' + String(name || '');
       let value = '';
-      if (/email|requester/.test(key)) value = payload.email;
-      else if (/first/.test(key)) value = payload.firstName;
-      else if (/last/.test(key)) value = payload.lastName;
-      else if (/phone|contact number|tel/.test(key)) value = payload.phone;
-      else if (/subject/.test(key)) value = payload.subject;
-      else if (el.tagName === 'TEXTAREA' && /description|message|details|request/.test(key)) value = payload.message;
+      if (/email|e-mail|requester|courriel/.test(key)) value = payload.email;
+      else if (/first|pr[eé]nom|vorname|nombre|nome/.test(key)) value = payload.firstName;
+      else if (/last|surname|nom de famille|nachname|apellido|cognome/.test(key)) value = payload.lastName;
+      else if (/phone|contact number|tel|t[eé]l[eé]phone|telefon|tel[eé]fono/.test(key)) value = payload.phone;
+      else if (/subject|objet|betreff|asunto|oggetto/.test(key)) value = payload.subject;
+      else if (el.tagName === 'TEXTAREA' && /description|message|details|request|demande|nachricht|mensaje|messaggio/.test(key)) value = payload.message;
       if (value && setValue(el, value)) filled.push({ id: el.id || '', name: el.name || '', label: labelTextFor(el).replace(/\\s+/g, ' ').trim().slice(0, 80) });
       else if (visible(el)) skipped.push({ id: el.id || '', name: el.name || '', label: labelTextFor(el).replace(/\\s+/g, ' ').trim().slice(0, 80) });
     }
@@ -1945,8 +1959,10 @@ function websiteContactFormFillExpression(payload) {
         };
       });
     requiredEmpty.push(...hiddenRequiredDropdowns);
-    const fileInputs = Array.from(document.querySelectorAll('input[type=file]')).length;
-    const submit = Array.from(document.querySelectorAll('button,input[type=submit]')).find((el) => visible(el) && /submit|send/i.test(String(el.innerText || el.textContent || el.value || '')));
+    const fileInputElements = Array.from(document.querySelectorAll('input[type=file]'));
+    const fileInputs = fileInputElements.length;
+    const requiredFileInputs = fileInputElements.filter((el) => el.required || el.getAttribute('aria-required') === 'true').length;
+    const submit = Array.from(document.querySelectorAll('button,input[type=submit]')).find((el) => visible(el) && (/submit|send|envoyer|senden|enviar|invia|versturen/i.test(String(el.innerText || el.textContent || el.value || '')) || String(el.type || '').toLowerCase() === 'submit'));
     return JSON.stringify({
       ok: filled.length > 0,
       evidence: 'website_contact_form_fields_prepared',
@@ -1954,6 +1970,7 @@ function websiteContactFormFillExpression(payload) {
       skipped: skipped.slice(0, 8),
       requiredEmpty,
       fileInputs,
+      requiredFileInputs,
       hasSubmit: Boolean(submit),
       url: location.href
     });
@@ -1969,10 +1986,27 @@ function websiteContactSubmitExpression() {
       return rect.width > 0 && rect.height > 0 && style.visibility !== 'hidden' && style.display !== 'none';
     };
     const button = Array.from(document.querySelectorAll('button,input[type=submit]'))
-      .find((el) => visible(el) && /submit|send/i.test(String(el.innerText || el.textContent || el.value || '')));
+      .find((el) => visible(el) && (/submit|send|envoyer|senden|enviar|invia|versturen/i.test(String(el.innerText || el.textContent || el.value || '')) || String(el.type || '').toLowerCase() === 'submit'));
     if (!button) return JSON.stringify({ submitted: false, evidence: 'submit_button_not_found' });
+    const form = button.closest('form');
+    if (form) form.setAttribute('data-codex-contact-submit', 'pending');
+    const beforeUrl = location.href;
+    const bodyText = String(document.body && document.body.innerText || '').replace(/\s+/g, ' ').toLowerCase();
+    const beforeSuccess = /thank you|thanks for contacting|message (has been )?sent|request (has been )?(received|submitted)|successfully submitted|we have received|merci de nous avoir contact|message envoy[ée]|vielen dank|nachricht gesendet|gracias por contactarnos|mensaje enviado|grazie per averci contattato|messaggio inviato/.test(bodyText);
     button.click();
-    return JSON.stringify({ submitted: true, evidence: 'website_contact_form_submitted' });
+    return JSON.stringify({ submitted: true, evidence: 'website_contact_form_submit_clicked', beforeUrl, beforeSuccess, trackedForm: Boolean(form) });
+  })()`;
+}
+
+function websiteContactSubmitConfirmationExpression(beforeUrl = '', trackedForm = false, beforeSuccess = false) {
+  return `(() => {
+    const bodyText = String(document.body && document.body.innerText || '').replace(/\\s+/g, ' ').toLowerCase();
+    const success = /thank you|thanks for contacting|message (has been )?sent|request (has been )?(received|submitted)|successfully submitted|we have received|merci de nous avoir contact|message envoy[ée]|vielen dank|nachricht gesendet|gracias por contactarnos|mensaje enviado|grazie per averci contattato|messaggio inviato/.test(bodyText);
+    const urlSuccess = /thank|success|confirmation|submitted|merci/i.test(location.href) && location.href !== ${JSON.stringify(beforeUrl)};
+    const trackedFormPresent = Boolean(document.querySelector('form[data-codex-contact-submit="pending"]'));
+    const visibleError = /please complete|required field|captcha|verification failed|there was an error|une erreur|erreur|fehler|errore|error al enviar/.test(bodyText);
+    const confirmed = !visibleError && ((success && !${Boolean(beforeSuccess)}) || urlSuccess || (${Boolean(trackedForm)} && !trackedFormPresent));
+    return JSON.stringify({ confirmed, success, urlSuccess, trackedFormPresent, visibleError, url: location.href, evidence: confirmed ? 'website_contact_submission_confirmed' : (visibleError ? 'website_contact_submission_validation_error' : 'website_contact_submission_confirmation_missing') });
   })()`;
 }
 
@@ -2000,25 +2034,27 @@ async function prepareWebsiteContactForm(chromeOpen, lead, subject, draft) {
   };
   const filled = await evaluateChromeTabJson(chromeOpen, websiteContactFormFillExpression(fillPayload), 8000);
   const attachmentStatus = websiteMarketingAttachmentStatus();
-  const attachment = attachmentStatus.ok
-    ? await setChromeFileInput(chromeOpen, attachmentStatus.filePath)
-    : { ok: false, filePath: attachmentStatus.filePath, evidence: attachmentStatus.evidence };
   const requiredEmpty = filled && Array.isArray(filled.requiredEmpty) ? filled.requiredEmpty : [];
+  const fileInputs = Number(filled && filled.fileInputs || 0);
+  const requiredFileInputs = Number(filled && filled.requiredFileInputs || 0);
+  const attachment = fileInputs === 0
+    ? { ok: true, filePath: '', evidence: 'website_contact_form_no_file_input' }
+    : attachmentStatus.ok
+      ? await setChromeFileInput(chromeOpen, attachmentStatus.filePath)
+      : { ok: false, filePath: attachmentStatus.filePath, evidence: attachmentStatus.evidence };
   const autoSubmitSetting = process.env.WEBSITE_CONTACT_AUTO_SUBMIT;
   const allowSubmit = !/^(0|false|no)$/i.test(String(autoSubmitSetting == null ? '1' : autoSubmitSetting));
-  if (!attachment.ok) {
+  if (!attachment.ok && requiredFileInputs > 0) {
     return {
       ok: Boolean(filled && filled.ok),
-      sendStatus: filled && filled.ok ? 'website_contact_ready' : 'approval_pending',
-      evidence: `${filled && filled.evidence || 'website_contact_form_fields_prepare_attempted'};${attachment.evidence};text_only_manual_submit_required`,
+      sendStatus: 'approval_pending',
+      evidence: `${filled && filled.evidence || 'website_contact_form_fields_prepare_attempted'};${attachment.evidence};required_attachment_missing`,
       filled,
       attachment,
-      nextAction: filled && filled.ok
-        ? 'Website contact form text was prepared without an attachment. Review the browser, attach an approved marketing file manually if required, then submit manually.'
-        : 'Configure WEBSITE_MARKETING_FILE or MARKETING_ATTACHMENT_PATH with the approved marketing file, then rerun. The form was not submitted.',
+      nextAction: 'Configure WEBSITE_MARKETING_FILE or MARKETING_ATTACHMENT_PATH with the required approved marketing file, then rerun. The form was not submitted.',
     };
   }
-  if (requiredEmpty.length && !allowSubmit) {
+  if (requiredEmpty.length) {
     return {
       ok: false,
       sendStatus: 'approval_pending',
@@ -2038,16 +2074,36 @@ async function prepareWebsiteContactForm(chromeOpen, lead, subject, draft) {
       nextAction: 'Marketing file is attached and the form is prepared. WEBSITE_CONTACT_AUTO_SUBMIT=0 paused automatic submit.',
     };
   }
+  if (!filled || !filled.ok || !filled.hasSubmit) {
+    return {
+      ok: false,
+      sendStatus: 'approval_pending',
+      evidence: `${filled && filled.evidence || 'website_contact_form_fields_prepare_failed'};contact_form_not_ready_for_submit`,
+      filled,
+      attachment,
+      nextAction: 'A verified Contact Us page opened, but the required message fields or submit control were not ready. Continue with another social channel.',
+    };
+  }
   const submitted = await evaluateChromeTabJson(chromeOpen, websiteContactSubmitExpression(), 8000);
-  const requiredEvidence = requiredEmpty.length ? ';required_fields_auto_bypassed' : '';
+  let confirmation = null;
+  if (submitted && submitted.submitted) {
+    for (let attempt = 0; attempt < 8; attempt += 1) {
+      await sleep(1000);
+      confirmation = await evaluateChromeTabJson(chromeOpen, websiteContactSubmitConfirmationExpression(submitted.beforeUrl, submitted.trackedForm, submitted.beforeSuccess), 5000).catch(() => null);
+      if (confirmation && confirmation.confirmed) break;
+    }
+  }
+  const confirmed = Boolean(submitted && submitted.submitted && confirmation && confirmation.confirmed);
+  const attachmentEvidence = attachment.ok ? attachment.evidence : `${attachment.evidence};optional_attachment_omitted`;
   return {
-    ok: Boolean(submitted && submitted.submitted),
-    sendStatus: submitted && submitted.submitted ? 'sent_confirmed' : 'send_unconfirmed',
-    evidence: `${filled && filled.evidence || 'website_contact_form_fields_prepared'};${attachment.evidence}${requiredEvidence};${submitted && submitted.evidence || 'submit_result_missing'}`,
+    ok: confirmed,
+    sendStatus: confirmed ? 'sent_confirmed' : 'send_unconfirmed',
+    evidence: `${filled && filled.evidence || 'website_contact_form_fields_prepared'};${attachmentEvidence};${submitted && submitted.evidence || 'submit_result_missing'};${confirmation && confirmation.evidence || 'website_contact_submission_confirmation_missing'}`,
     filled,
     attachment,
     submitted,
-    nextAction: submitted && submitted.submitted ? 'Website contact form submitted with the configured marketing attachment.' : 'Submit was attempted but not confirmed; inspect browser before retry.',
+    confirmation,
+    nextAction: confirmed ? 'Website contact form submission was confirmed by the destination page.' : 'Submit was attempted but no success receipt was detected; do not count this as completed development or retry blindly.',
   };
 }
 
@@ -2072,29 +2128,8 @@ async function runWebsiteContactLead(lead = {}) {
     if (!contactFlow.ok) {
       if (lead.publicEmail || lead.contactEmail) {
         const publicEmail = lead.publicEmail || lead.contactEmail;
-        const output = {
-          verdict: 'website_contact_ready',
-          evidence: `${contactFlow.evidence};public_email_fallback_available:${publicEmail};website_contact_target_attempts:${attempts.length}`,
-          nextAction: `Official contact page opened but the form was not machine-verified. Use the prepared subject/draft and send manually to ${publicEmail}, or submit the visible contact form manually.`,
-          subject,
-          draft,
-          publicEmail,
-          sendStatus: 'website_contact_ready',
-          attempts,
-        };
-        return {
-          ok: true,
-          engine: 'codex-chrome-extension-website-contact',
-          browserEngine: chromeOpen && chromeOpen.engine,
-          mode: 'website_contact_public_email_ready',
-          targetUrl: target.targetUrl,
-          chromeOpen,
-          sendStatus: 'website_contact_ready',
-          subject,
-          draft,
-          evidence: output.evidence,
-          output: JSON.stringify(output),
-        };
+        contactFlow.evidence = `${contactFlow.evidence};public_email_fallback_available:${publicEmail};email_sender_not_configured`;
+        contactFlow.nextAction = `Email delivery to ${publicEmail} requires a configured sender; continue with another verified contact path or LinkedIn, Facebook, or Instagram instead of claiming a send.`;
       }
       lastResult = {
         ok: false,
@@ -2127,7 +2162,7 @@ async function runWebsiteContactLead(lead = {}) {
       evidence: `${contactFlow.evidence};${formPreparation.evidence}`,
     };
     if (formPreparation.sendStatus === 'approval_pending') {
-      return {
+      lastResult = {
         ok: false,
         engine: 'codex-chrome-extension-website-contact',
         browserEngine: chromeOpen && chromeOpen.engine,
@@ -2148,9 +2183,11 @@ async function runWebsiteContactLead(lead = {}) {
           attempts,
         }),
       };
+      await closeAutomationChromeTab(chromeOpen);
+      continue;
     }
     const output = {
-      verdict: formPreparation.sendStatus === 'sent_confirmed' ? 'sent_confirmed' : 'website_contact_ready',
+      verdict: formPreparation.sendStatus,
       evidence: `${contactFlow.evidence};${formPreparation.evidence};website_contact_target_attempts:${attempts.length}`,
       nextAction: formPreparation.nextAction || 'Review the prepared website contact form before final submission.',
       subject,
@@ -2159,10 +2196,10 @@ async function runWebsiteContactLead(lead = {}) {
       attempts,
     };
     return {
-      ok: true,
+      ok: formPreparation.sendStatus === 'sent_confirmed',
       engine: 'codex-chrome-extension-website-contact',
       browserEngine: chromeOpen.engine,
-      mode: 'website_contact_prepare_marketing_file',
+      mode: formPreparation.sendStatus === 'sent_confirmed' ? 'website_contact_submitted_confirmed' : 'website_contact_submit_unconfirmed',
       targetUrl: target.targetUrl,
       chromeOpen,
       sendStatus: formPreparation.sendStatus,
@@ -2183,7 +2220,7 @@ async function runWebsiteContactLead(lead = {}) {
         ...output,
         verdict: 'website_contact_unreachable_skip',
         evidence: `${lastResult.evidence};website_contact_all_targets_failed:${attempts.length}`,
-        nextAction: output.nextAction || 'Official website contact was unreachable or not machine-verifiable. Skip this website route now, note it clearly, and continue with Facebook, Instagram, or another verified official channel.',
+        nextAction: output.nextAction || 'Official website contact was unreachable or not machine-verifiable. Skip this website route now, note it clearly, and continue with LinkedIn, Facebook, Instagram, or another verified official channel.',
         sendStatus: 'website_contact_unreachable_skip',
         attempts,
       }),
@@ -2484,8 +2521,9 @@ function hasNoSafeMessageButton(item = {}) {
 
 function socialPriorityRank(item = {}) {
   const text = [item.platform, item.id, item.url, item.targetUrl, item.verifiedTargetUrl].filter(Boolean).join(' ').toLowerCase();
-  if (/\bfacebook\b|facebook\.com/.test(text)) return 300;
-  if (/\binstagram\b|instagram\.com/.test(text)) return 290;
+  if (/\blinkedin\b|linkedin\.com/.test(text)) return 320;
+  if (/\bfacebook\b|facebook\.com/.test(text)) return 310;
+  if (/\binstagram\b|instagram\.com/.test(text)) return 300;
   if (isWebsiteContactQueueItem(item)) return 0;
   return 100;
 }

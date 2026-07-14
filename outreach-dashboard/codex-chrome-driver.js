@@ -933,6 +933,16 @@ async function preparePlatformDraft(payload, platform) {
     };
   }
   if (!composer || !Number.isFinite(composer.x)) {
+    const followed = preActions.includes('follow_clicked');
+    const liked = preActions.some(item => /like_clicked|post_like_clicked/.test(String(item || '')));
+    if (followed || liked) {
+      return {
+        ok: true,
+        sendStatus: followed ? 'account_followed' : 'post_liked',
+        evidence: `${platform}_engagement_completed_message_unavailable;${preActions.filter(Boolean).join(';')}`,
+        nextAction: 'The verified account was engaged successfully. Monitor for a connection opportunity and avoid repeating the same action.',
+      };
+    }
     return {
       ok: false,
       sendStatus: 'failed_open',

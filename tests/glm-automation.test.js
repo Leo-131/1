@@ -27,7 +27,9 @@ test('legacy pending sequence statuses do not mark a customer as previously deve
   assert.equal(dailyRunner.legacyStatusIndicatesTouch('Accepted'), true);
 });
 
-test('daily queue prioritizes Facebook and Instagram over website contact', () => {
+test('daily queue prioritizes LinkedIn, Facebook and Instagram over website contact', () => {
+  assert.ok(dailyRunner.channelPriorityScore({ platform: 'linkedin' })
+    > dailyRunner.channelPriorityScore({ platform: 'facebook' }));
   assert.ok(dailyRunner.channelPriorityScore({ platform: 'facebook' })
     > dailyRunner.channelPriorityScore({ platform: 'instagram' }));
   assert.ok(dailyRunner.channelPriorityScore({ platform: 'instagram' })
@@ -39,17 +41,19 @@ test('daily queue prioritizes Facebook and Instagram over website contact', () =
 test('website contact can execute without a configured attachment', () => {
   assert.ok(mainSource.includes("executableQueueCandidates(latest.dailyQueue, { allowWebsiteContact: true })"));
   assert.ok(!mainSource.includes('website_contact_preflight_blocked'));
-  assert.ok(mainSource.includes('text_only_manual_submit_required'));
-  assert.ok(mainSource.includes("sendStatus: filled && filled.ok ? 'website_contact_ready' : 'approval_pending'"));
-  assert.ok(mainSource.includes('website_contact_public_email_ready'));
+  assert.ok(mainSource.includes('website_contact_form_no_file_input'));
+  assert.ok(mainSource.includes('optional_attachment_omitted'));
+  assert.ok(mainSource.includes('required_attachment_missing'));
+  assert.ok(mainSource.includes('website_contact_public_email_sender_required') || mainSource.includes('email_sender_not_configured'));
   assert.ok(mainSource.includes('public_email_fallback_available'));
 });
 
-test('daily execution ranks Facebook and Instagram before website contact fallback', () => {
+test('daily execution ranks LinkedIn, Facebook and Instagram before website contact fallback', () => {
   assert.ok(mainSource.includes('function socialPriorityRank'));
   assert.ok(mainSource.includes('function developmentPriorityCompare'));
-  assert.ok(mainSource.includes("if (/\\bfacebook\\b|facebook\\.com/.test(text)) return 300"));
-  assert.ok(mainSource.includes("if (/\\binstagram\\b|instagram\\.com/.test(text)) return 290"));
+  assert.ok(mainSource.includes("if (/\\blinkedin\\b|linkedin\\.com/.test(text)) return 320"));
+  assert.ok(mainSource.includes("if (/\\bfacebook\\b|facebook\\.com/.test(text)) return 310"));
+  assert.ok(mainSource.includes("if (/\\binstagram\\b|instagram\\.com/.test(text)) return 300"));
   assert.ok(mainSource.includes('return socialPriorityRank(right) - socialPriorityRank(left)'));
   assert.ok(mainSource.includes('[...dueCandidates, ...scheduledExecutable, ...potentialFallback]'));
   assert.ok(mainSource.includes('.sort(developmentPriorityCompare)'));
@@ -86,7 +90,7 @@ test('no-message social profiles are blocked from automatic execution', () => {
   assert.ok(mainSource.includes('.filter(item => !hasNoSafeMessageButton(item))'));
 });
 
-test('unsubmitted website preparation creates a durable company history lock without claiming a sent touch', () => {
+test('unsubmitted website preparation does not block a verified social fallback', () => {
   const now = Date.parse('2026-07-09T04:00:00.000Z');
   const websiteAttempt = {
     task_id: 'google-customer-kathmandu-website-contact',
@@ -99,11 +103,11 @@ test('unsubmitted website preparation creates a durable company history lock wit
   const index = dailyRunner.knownTouchIndex([websiteAttempt], [], now);
   assert.equal(index.sameDayDeveloped.size, 0);
   assert.equal(index.activeCooldown.size, 0);
-  assert.ok(index.priorDeveloped.has('kathmandu'));
-  assert.equal(index.priorDevelopedDetails.get('kathmandu'), websiteAttempt);
+  assert.equal(index.priorDeveloped.has('kathmandu'), false);
+  assert.equal(index.priorDevelopedDetails.has('kathmandu'), false);
 });
 
-test('previous customer development blocks Summit across days and channels', () => {
+test('unsubmitted website preparation allows Summit social development across days', () => {
   const now = Date.parse('2026-07-14T02:00:00.000Z');
   const websiteAttempt = {
     task_id: 'google-customer-summit-international-website-contact',
@@ -127,10 +131,10 @@ test('previous customer development blocks Summit across days and channels', () 
     priorDevelopmentByCompany: history.priorDevelopedDetails,
   });
 
-  assert.ok(history.priorDeveloped.has('summitinternational'));
-  assert.equal(classified.action, 'cooldown');
-  assert.equal(classified.reason, 'previous_customer_development_no_repeat');
-  assert.equal(classified.lastStatus, 'website_contact_ready');
+  assert.equal(history.priorDeveloped.has('summitinternational'), false);
+  assert.equal(classified.action, 'develop');
+  assert.equal(classified.reason, 'high_icp_verified_ready');
+  assert.equal(classified.lastStatus, '');
 });
 
 test('historical development lock distinguishes user interaction from transient browser failure', () => {
@@ -141,6 +145,10 @@ test('historical development lock distinguishes user interaction from transient 
   assert.equal(dailyRunner.isHistoricalDevelopmentResult({
     status: 'failed_open',
     evidence: 'facebook_message_button_clicked_composer_not_found',
+  }), false);
+  assert.equal(dailyRunner.isHistoricalDevelopmentResult({
+    status: 'failed_open',
+    evidence: 'facebook_send_clicked_but_confirmation_missing',
   }), true);
 });
 
@@ -229,7 +237,7 @@ test('email templates follow Flextail and Vollyc reference copy', () => {
   assert.ok(templateSource.includes('[Email:  Leo@flextailgear.com](https://wa.me/8617321028184)'));
 });
 
-test('Google discovery creates Instagram, Facebook and website contact channels', () => {
+test('Google discovery preserves LinkedIn information while creating executable social and website channels', () => {
   const leads = buildLeads(60);
   const cabela = leads.filter(item => item.company === "Cabela's");
   assert.ok(cabela.some(item => item.platform === 'instagram' && /instagram\.com\/cabelas/i.test(item.url)));
@@ -250,6 +258,7 @@ test('Google discovery creates Instagram, Facebook and website contact channels'
   assert.match(emailLead.contactSearchUrl, /contact|buyer|wholesale|vendor/i);
   assert.ok(emailLead.alternateChannels.instagram);
   assert.ok(emailLead.alternateChannels.facebook);
+  assert.ok(emailLead.alternateChannels.linkedin);
 });
 
 test('Google discovery reroutes known broken Instagram links to alternate channels', () => {
@@ -531,6 +540,7 @@ test('website contact automation must verify contact entry before ready status',
   assert.ok(mainSource.includes('function prepareWebsiteContactForm'));
   assert.ok(mainSource.includes('async function setChromeFileInput'));
   assert.ok(mainSource.includes("const WEBSITE_CONTACT_VERIFIED_EVIDENCE = 'contact_entry_verified'"));
+  assert.ok(mainSource.includes('const ready = mailtos.length > 0 || hasContactForm;'));
   assert.ok(mainSource.includes("const DEFAULT_WEBSITE_CONTACT_FIRST_NAME = 'Leo'"));
   assert.ok(mainSource.includes("const DEFAULT_WEBSITE_CONTACT_LAST_NAME = 'Liu'"));
   assert.ok(mainSource.includes('Flextail & Vollyc | Lightweight Outdoor & 3C Electronics – Potential Cooperation'));
@@ -549,13 +559,16 @@ test('website contact automation must verify contact entry before ready status',
   assert.ok(mainSource.includes('Facebook, Instagram, or another verified official channel'));
   assert.ok(mainSource.includes('Social platform URL is not a website contact form'));
   assert.ok(mainSource.includes('marketing_attachment_missing'));
+  assert.ok(mainSource.includes('website_contact_submission_confirmed'));
+  assert.ok(mainSource.includes('website_contact_submission_confirmation_missing'));
+  assert.ok(mainSource.includes('website_contact_form_submit_clicked'));
   assert.ok(mainSource.includes('function formatExecutionBlockerStatus'));
   assert.ok(mainSource.includes('function executionRecoveryHint'));
   assert.ok(mainSource.includes('Configure WEBSITE_MARKETING_FILE or MARKETING_ATTACHMENT_PATH'));
   assert.ok(mainSource.includes('Customer development was not performed. Blockers:'));
   assert.ok(mainSource.includes('submit_paused_by_env'));
-  assert.ok(mainSource.includes('required_fields_auto_bypassed'));
-  assert.ok(mainSource.includes("el.tagName === 'TEXTAREA' && /description|message|details|request/.test(key)"));
+  assert.ok(!mainSource.includes('required_fields_auto_bypassed'));
+  assert.ok(mainSource.includes("el.tagName === 'TEXTAREA' && /description|message|details|request|demande|nachricht|mensaje|messaggio/.test(key)"));
   assert.ok(mainSource.includes('.ck-editor__editable,.ql-editor,[role="textbox"]'));
   assert.ok(mainSource.includes("sendStatus: 'approval_pending'"));
   assert.ok(mainSource.includes("evidence: contactFlow.evidence"));
@@ -674,6 +687,7 @@ test('daily execution duplicate blocking is channel-aware', () => {
   assert.ok(mainSource.includes('historicalAutomationResultBlocksCompany(result) && setsIntersect(companyKeys, automationCompanyKeys(result))'));
   assert.ok(mainSource.includes("'approval_pending'"));
   assert.ok(mainSource.includes("'website_contact_ready'"));
+  assert.ok(mainSource.includes('email_sender_not_configured'));
   assert.ok(mainSource.includes('companyBlocking.has(result.status) && setsIntersect(companyKeys, automationCompanyKeys(result))'));
   assert.ok(mainSource.includes('if (!itemPlatform || !resultPlatform || itemPlatform !== resultPlatform) return false'));
   assert.ok(mainSource.includes("'website_contact_unreachable_skip'"));

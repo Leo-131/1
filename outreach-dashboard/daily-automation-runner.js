@@ -51,10 +51,6 @@ const SAME_DAY_DEVELOPMENT_STATUSES = new Set([
 ]);
 const HISTORICAL_DEVELOPMENT_STATUSES = new Set([
   ...SAME_DAY_DEVELOPMENT_STATUSES,
-  'website_contact_ready',
-  'approval_pending',
-  'draft_prepared',
-  'prepared_not_sent',
 ]);
 const WEBSITE_CONTACT_VERIFIED_EVIDENCE = 'contact_entry_verified';
 const PARTNER_COMPANIES = new Set([
@@ -198,7 +194,7 @@ function contactChannelScore(task) {
   if (task.contactEmail || task.publicEmail) score += 12;
   if (task.vendorPortal || task.contactUrl) score += 8;
   if (task.website || task.platformUrl || task.url) score += 5;
-  if (task.alternateChannels && (task.alternateChannels.instagram || task.alternateChannels.facebook)) score += 4;
+  if (task.alternateChannels && (task.alternateChannels.linkedin || task.alternateChannels.instagram || task.alternateChannels.facebook)) score += 4;
   return score;
 }
 
@@ -213,8 +209,9 @@ function dealProbabilityScore(task) {
 function channelPriorityScore(task) {
   const platform = String(task.platform || task.channel || '').trim().toLowerCase();
   const identity = `${task.id || ''} ${task.reason || ''} ${task.url || ''}`.toLowerCase();
-  if (platform === 'facebook' || /facebook/.test(identity)) return 320;
-  if (platform === 'instagram' || /instagram/.test(identity)) return 310;
+  if (platform === 'linkedin' || /linkedin/.test(identity)) return 340;
+  if (platform === 'facebook' || /facebook/.test(identity)) return 330;
+  if (platform === 'instagram' || /instagram/.test(identity)) return 320;
   if (platform === 'email' || /website-contact|official_website_contact_channel/.test(identity)) return 0;
   return 100;
 }
@@ -435,7 +432,7 @@ function isTouchResult(result = {}) {
 function isHistoricalDevelopmentResult(result = {}) {
   if (HISTORICAL_DEVELOPMENT_STATUSES.has(result.status)) return true;
   if (result.status !== 'failed_open') return false;
-  return /message_button_clicked|profile_valid_no_message_button|profile_opened_no_message_button|no_message_button|contact_entry_verified|contact_form_detected|mailto_detected|no_contact_entry_control|website_contact_entry_not_verified|website_contact_all_targets_failed|public_email_fallback_available/i
+  return /message_sent|send_clicked_but_confirmation_missing/i
     .test(String(result.evidence || ''));
 }
 

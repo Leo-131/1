@@ -809,13 +809,29 @@ function channelLeads(item) {
       evidence: 'Facebook reports this content is unavailable; use official website contact or another verified company profile instead.',
     };
   }
+  const enrichment = VERIFIED_ENRICHMENT[item.company] || {};
+  const linkedinUrl = enrichment.linkedinUrl || item.linkedinUrl || '';
   const socialSiblings = {
+    linkedin: linkedinUrl,
     instagram: invalidChannels.instagram ? '' : (item.instagramUrl || ''),
     facebook: invalidChannels.facebook ? '' : (item.facebookUrl || ''),
     websiteContact: item.contactUrl || item.url,
   };
   const verifiedContactPath = hasVerifiedContactPath(item);
   const leads = [];
+  if (/linkedin\.com\/in\//i.test(linkedinUrl)) {
+    leads.push({
+      ...baseLead(item, `${baseId}-linkedin`, evidenceUrl),
+      platform: 'linkedin',
+      platformUrl: linkedinUrl,
+      url: linkedinUrl,
+      action: partnerAccount ? 'partner_account' : 'develop',
+      reason: partnerAccount ? 'active_partner_no_new_outreach' : 'verified_linkedin_profile_ready',
+      alternateChannels: socialSiblings,
+      identitySource: 'verified LinkedIn profile + official website + Google background query',
+      channelPriority: 0,
+    });
+  }
   if (item.instagramUrl && !invalidChannels.instagram) {
     leads.push({
       ...baseLead(item, `${baseId}-instagram`, evidenceUrl),
