@@ -65,6 +65,7 @@
       "icon.svg",
       "enhancements.css",
       "country-market-data.js",
+      "country-market-protection.js",
       "daily-outreach-tasks.js",
       "outreach-engine.js",
       "outreach-analytics.js",

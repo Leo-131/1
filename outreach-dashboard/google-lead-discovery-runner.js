@@ -6,6 +6,12 @@ const OUT_JSON = path.join(ROOT, 'google-lead-discovery-latest.json');
 const OUT_JS = path.join(ROOT, 'google-lead-discovery-latest.js');
 const OUT_CSV = path.join(ROOT, 'google-lead-discovery-latest.csv');
 const QUALIFIED_ICP_THRESHOLD = 70;
+const EXCLUSIVE_AGENCY_MARKETS = new Map([
+  ['switzerland', 'INNPRO Robert Błędowski Sp. z o.o.'],
+  ['romania', 'INNPRO Robert Błędowski Sp. z o.o.'],
+  ['greece', 'INNPRO Robert Błędowski Sp. z o.o.'],
+  ['hungary', 'INNPRO Robert Błędowski Sp. z o.o.'],
+]);
 const ACTIVE_CUSTOMER_ALIASES = new Set([
   'rei',
   'rei co op',
@@ -15,14 +21,29 @@ const ACTIVE_CUSTOMER_ALIASES = new Set([
   'academy',
   'acadamy',
   'scheels',
+  'innpro robert błędowski sp z o o',
+  'innpro robert bledowski sp z o o',
+  'innpro',
 ]);
 
 function activeCustomerKey(value) {
-  return String(value || '').trim().toLowerCase().replace(/&/g, 'and').replace(/\+/g, ' ').replace(/[^a-z0-9]+/g, ' ').trim();
+  return String(value || '')
+    .normalize('NFKD')
+    .replace(/ł/gi, 'l')
+    .trim()
+    .toLowerCase()
+    .replace(/&/g, 'and')
+    .replace(/\+/g, ' ')
+    .replace(/[^a-z0-9]+/g, ' ')
+    .trim();
 }
 
 function isActiveCustomer(company) {
   return ACTIVE_CUSTOMER_ALIASES.has(activeCustomerKey(company));
+}
+
+function exclusiveAgentForCountry(country) {
+  return EXCLUSIVE_AGENCY_MARKETS.get(String(country || '').trim().toLowerCase()) || '';
 }
 
 const CANDIDATES = [
@@ -321,6 +342,58 @@ const CANDIDATES = [
     fitScore: 87,
     background: 'Australian camping and hiking retailer focused on camping gear, travel equipment, outdoor accessories, and ecommerce fulfillment.',
     buyerPersona: 'Camping gear buyer, ecommerce category manager, or outdoor accessories partnership contact.',
+  },
+  {
+    company: 'Aqipa',
+    country: 'Austria',
+    url: 'https://www.aqipa.com/',
+    contactUrl: 'https://support.aqipa.com/en-US/new-ticket',
+    segment: 'pan-European premium consumer electronics and action gear distributor',
+    customerType: 'agency',
+    refillSeed: true,
+    fitScore: 98,
+    background: 'Pan-European value-added distributor and brand growth accelerator for premium consumer electronics, lifestyle, accessories, home appliances, e-mobility, and action gear.',
+    buyerPersona: 'Brand Operations Management, vendor partnerships, distribution markets, or category director.',
+    targetMarkets: 'Germany, Austria, France, Italy, Spain, Portugal, United Kingdom and Nordics',
+    excludedMarkets: 'Switzerland, Romania, Greece, Hungary, Netherlands, Belgium, Poland, Czechia, Slovakia, Estonia, Lithuania and Slovenia',
+    evidenceUrl: 'https://support.aqipa.com/en-US/kb/articles/anfrage-partner-werden',
+    dataSources: ['Aqipa official partner information', 'Aqipa official contact form'],
+  },
+  {
+    company: 'Esprinet Group',
+    country: 'Italy',
+    url: 'https://www.esprinet.com/en/',
+    linkedinUrl: 'https://www.linkedin.com/company/esprinet-group/',
+    linkedinDirectOutreach: true,
+    contactUrl: 'https://www.esprinet.com/en/become-a-supplier/',
+    segment: 'Southern Europe technology and consumer electronics distributor',
+    customerType: 'agency',
+    refillSeed: true,
+    fitScore: 99,
+    background: 'Large Southern European technology and consumer electronics distributor serving about 30,000 resellers and working with more than 850 manufacturers.',
+    buyerPersona: 'Supplier onboarding, producer partnerships, consumer electronics category, or vendor management director.',
+    targetMarkets: 'Italy, Spain and Portugal',
+    excludedMarkets: 'Switzerland, Romania, Greece and Hungary',
+    evidenceUrl: 'https://www.esprinet.com/en/become-a-supplier/',
+    dataSources: ['Esprinet official group website', 'Esprinet official supplier form', 'official LinkedIn company page'],
+  },
+  {
+    company: 'CMS Distribution',
+    country: 'Ireland',
+    url: 'https://www.cmsdistribution.com/',
+    linkedinUrl: 'https://www.linkedin.com/company/cms-distribution',
+    linkedinDirectOutreach: true,
+    contactUrl: 'https://www.cmsdistribution.com/contact-us',
+    segment: 'European value-added consumer electronics and technology distributor',
+    customerType: 'agency',
+    refillSeed: true,
+    fitScore: 97,
+    background: 'Value-added technology distributor representing more than 200 manufacturers, with consumer electronics, retail and B2B channel coverage in the UK, Ireland and wider Europe.',
+    buyerPersona: 'Vendor partnerships, consumer product sales, brand management, or distribution director.',
+    targetMarkets: 'Ireland, United Kingdom, France and Nordics',
+    excludedMarkets: 'Switzerland, Romania, Greece, Hungary, Netherlands, Belgium, Poland, Czechia, Slovakia, Estonia, Lithuania and Slovenia',
+    evidenceUrl: 'https://www.cmsdistribution.com/contact-us',
+    dataSources: ['CMS official company website', 'CMS official contact form', 'official LinkedIn company page'],
   },
 ];
 
@@ -738,6 +811,7 @@ ${marketingEmailSignature()}
 
 function baseLead(item, id, evidenceUrl) {
   const enrichment = VERIFIED_ENRICHMENT[item.company] || {};
+  const exclusiveAgent = exclusiveAgentForCountry(item.country);
   const partnerAccount = Boolean(item.doNotOutreach || item.partnershipStatus === 'active_partner' || isActiveCustomer(item.company));
   return {
     ...enrichment,
@@ -751,12 +825,15 @@ function baseLead(item, id, evidenceUrl) {
     fitScore: item.fitScore,
     fitTier: item.fitScore >= 90 ? 'A+' : 'A',
     marketScore: 4.5,
-    marketStatus: 'open',
-    agencyState: 'open',
+    marketStatus: exclusiveAgent ? 'exclusive' : (item.marketStatus || 'open'),
+    agencyState: exclusiveAgent ? 'exclusive' : (item.agencyState || 'open'),
+    agentCompany: exclusiveAgent || item.agentCompany || '',
     keyword: item.segment,
     role: item.buyerPersona,
     background: item.background,
     buyerPersona: item.buyerPersona,
+    targetMarkets: item.targetMarkets || '',
+    excludedMarkets: item.excludedMarkets || '',
     productCategory: enrichment.productCategory || item.segment,
     businessModel: enrichment.businessModel || 'Retail Chain',
     productFit: enrichment.productFit || 'FLEXTAIL portable pumps, outdoor power, camping lighting and compact camping accessories',
@@ -819,7 +896,7 @@ function channelLeads(item) {
   };
   const verifiedContactPath = hasVerifiedContactPath(item);
   const leads = [];
-  if (/linkedin\.com\/in\//i.test(linkedinUrl)) {
+  if (/linkedin\.com\/in\//i.test(linkedinUrl) || item.linkedinDirectOutreach === true) {
     leads.push({
       ...baseLead(item, `${baseId}-linkedin`, evidenceUrl),
       platform: 'linkedin',

@@ -18,6 +18,17 @@ const mainSource = fs.readFileSync(path.join(__dirname, '..', 'outreach-dashboar
 const chromeDriverSource = fs.readFileSync(path.join(__dirname, '..', 'outreach-dashboard', 'codex-chrome-driver.js'), 'utf8');
 const dailyRunnerSource = fs.readFileSync(path.join(__dirname, '..', 'outreach-dashboard', 'daily-automation-runner.js'), 'utf8');
 const templateSource = fs.readFileSync(path.join(__dirname, '..', 'outreach-dashboard', 'api', 'templates.js'), 'utf8');
+const marketProtectionSource = fs.readFileSync(path.join(__dirname, '..', 'outreach-dashboard', 'country-market-protection.js'), 'utf8');
+
+function emptyClassificationContext(now = Date.parse('2026-07-14T08:00:00.000Z')) {
+  return {
+    now,
+    profiles: {},
+    resultsByTask: new Map(),
+    sameDayByCompany: new Map(),
+    priorDevelopmentByCompany: new Map(),
+  };
+}
 
 test('legacy pending sequence statuses do not mark a customer as previously developed', () => {
   assert.equal(dailyRunner.legacyStatusIndicatesTouch('Pending'), false);
@@ -138,6 +149,14 @@ test('unsubmitted website preparation allows Summit social development across da
 });
 
 test('historical development lock distinguishes user interaction from transient browser failure', () => {
+  assert.equal(dailyRunner.isHistoricalDevelopmentResult({
+    status: 'send_unconfirmed',
+    evidence: 'linkedin_draft_not_inserted_before_send',
+  }), false);
+  assert.equal(dailyRunner.isHistoricalDevelopmentResult({
+    status: 'send_unconfirmed',
+    evidence: 'send_clicked_but_confirmation_missing',
+  }), true);
   assert.equal(dailyRunner.isHistoricalDevelopmentResult({
     status: 'failed_open',
     evidence: 'chrome_target_not_found',
@@ -436,6 +455,61 @@ test('daily queue partner guard recognizes existing customer aliases', () => {
     company: 'REI',
     website: 'https://www.rei.com/',
   }), true);
+  assert.equal(dailyRunner.isKnownPartnerCompany({
+    id: 'google-customer-innpro-robert-bledowski-sp-z-o-o-linkedin',
+    company: 'INNPRO Robert Błędowski Sp. z o.o.',
+    website: 'https://innpro.eu/',
+  }), true);
+});
+
+test('INNPRO exclusive markets are blocked even when source data says open', () => {
+  for (const country of ['Switzerland', 'Romania', 'Greece', 'Hungary']) {
+    const classified = dailyRunner.classifyTask({
+      id: `protected-${country.toLowerCase()}`,
+      company: 'Prospective Distributor',
+      platform: 'linkedin',
+      country,
+      marketStatus: 'open',
+      agencyState: 'open',
+      fitScore: 99,
+      url: 'https://www.linkedin.com/company/prospective-distributor/',
+    }, emptyClassificationContext());
+    assert.equal(classified.action, 'skip_exclusive_agency');
+    assert.equal(classified.agencyState, 'exclusive');
+  }
+});
+
+test('European large distributor candidates are high ICP and social first', () => {
+  const leads = buildLeads(200);
+  for (const company of ['Aqipa', 'Esprinet Group', 'CMS Distribution']) {
+    const companyLeads = leads.filter(item => item.company === company);
+    assert.ok(companyLeads.length > 0, `${company} should be in the discovery pool`);
+    assert.ok(companyLeads.every(item => item.fitScore > 70));
+    assert.ok(companyLeads.every(item => item.customerType === 'agency'));
+    assert.ok(companyLeads.every(item => /Switzerland/.test(item.excludedMarkets)));
+  }
+  assert.ok(leads.some(item => item.company === 'Esprinet Group' && item.platform === 'linkedin'));
+  assert.ok(leads.some(item => item.company === 'CMS Distribution' && item.platform === 'linkedin'));
+  assert.ok(leads.some(item => item.company === 'Aqipa' && item.platform === 'email' && /support\.aqipa\.com/.test(item.contactUrl)));
+});
+
+test('LinkedIn company profiles remain distinct queue targets', () => {
+  const sorted = dailyRunner.preferSocialChannels([
+    { id: 'esprinet', company: 'Esprinet Group', platform: 'linkedin', url: 'https://www.linkedin.com/company/esprinet-group/', dealProbabilityScore: 250 },
+    { id: 'cms', company: 'CMS Distribution', platform: 'linkedin', url: 'https://www.linkedin.com/company/cms-distribution', dealProbabilityScore: 248 },
+    { id: 'cms-email', company: 'CMS Distribution', platform: 'email', url: 'https://www.cmsdistribution.com/contact-us', dealProbabilityScore: 248 },
+  ]);
+  assert.deepEqual(sorted.slice(0, 2).map(item => item.id), ['esprinet', 'cms']);
+  assert.ok(dailyRunnerSource.includes("const rank = { linkedin: 0, facebook: 1, instagram: 2, email: 3 }"));
+  assert.ok(dailyRunnerSource.includes("const regionRank = { europe: 0, oceania: 1, americas: 2 }"));
+});
+
+test('dashboard protection overlay keeps all four INNPRO markets exclusive', () => {
+  assert.ok(marketProtectionSource.includes("'瑞士'"));
+  assert.ok(marketProtectionSource.includes("'罗马尼亚'"));
+  assert.ok(marketProtectionSource.includes("'希腊'"));
+  assert.ok(marketProtectionSource.includes("'匈牙利'"));
+  assert.ok(marketProtectionSource.includes('INNPRO Robert Błędowski Sp. z o.o.'));
 });
 
 test('Google discovery run reports autonomous refill coverage and strict ICP threshold', () => {
@@ -688,10 +762,17 @@ test('daily execution duplicate blocking is channel-aware', () => {
   assert.ok(mainSource.includes("'approval_pending'"));
   assert.ok(mainSource.includes("'website_contact_ready'"));
   assert.ok(mainSource.includes('email_sender_not_configured'));
-  assert.ok(mainSource.includes('companyBlocking.has(result.status) && setsIntersect(companyKeys, automationCompanyKeys(result))'));
+  assert.ok(mainSource.includes('companyBlocking.has(result.status)'));
+  assert.ok(mainSource.includes('sendStatusHasCustomerInteraction(result.status, result.evidence)'));
   assert.ok(mainSource.includes('if (!itemPlatform || !resultPlatform || itemPlatform !== resultPlatform) return false'));
   assert.ok(mainSource.includes("'website_contact_unreachable_skip'"));
   assert.ok(!mainSource.includes("'sent_confirmed', 'failed_open', 'send_unconfirmed', 'skipped'"));
+});
+
+test('uninserted social draft does not block same-company website fallback', () => {
+  assert.ok(mainSource.includes('function sendStatusHasCustomerInteraction'));
+  assert.ok(mainSource.includes('sendStatusHasCustomerInteraction(sendStatus, output.evidence || result.evidence ||'));
+  assert.ok(mainSource.includes("result.status !== 'send_unconfirmed' || sendStatusHasCustomerInteraction"));
 });
 
 test('daily queue generator blocks same-day repeat development by company', () => {

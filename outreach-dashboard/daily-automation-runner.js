@@ -53,6 +53,12 @@ const HISTORICAL_DEVELOPMENT_STATUSES = new Set([
   ...SAME_DAY_DEVELOPMENT_STATUSES,
 ]);
 const WEBSITE_CONTACT_VERIFIED_EVIDENCE = 'contact_entry_verified';
+const PROTECTED_AGENCY_MARKETS = new Map([
+  ['switzerland', 'INNPRO Robert Błędowski Sp. z o.o.'],
+  ['romania', 'INNPRO Robert Błędowski Sp. z o.o.'],
+  ['greece', 'INNPRO Robert Błędowski Sp. z o.o.'],
+  ['hungary', 'INNPRO Robert Błędowski Sp. z o.o.'],
+]);
 const PARTNER_COMPANIES = new Set([
   'rei',
   'rei co-op',
@@ -62,6 +68,9 @@ const PARTNER_COMPANIES = new Set([
   'academy sports outdoors',
   'acadamy sports outdoors',
   'scheels',
+  'innpro',
+  'innpro robert błędowski sp. z o.o.',
+  'innpro robert bledowski sp. z o.o.',
 ]);
 
 function loadConfig() {
@@ -139,6 +148,7 @@ function statusIncludes(status, words) {
 }
 
 function marketAgencyState(task) {
+  if (PROTECTED_AGENCY_MARKETS.has(normalizedCountry(task))) return 'exclusive';
   const status = normalizedMarketStatus(task);
   if (statusIncludes(status, CONFIG.marketPriority.exclusiveStatuses)) return 'exclusive';
   if (statusIncludes(status, CONFIG.marketPriority.openStatuses)) return 'open';
@@ -162,8 +172,8 @@ const REGION_PRIORITY = {
     countries: ['brunei', 'cambodia', 'indonesia', 'laos', 'malaysia', 'myanmar', 'philippines', 'singapore', 'thailand', 'timor-leste', 'vietnam'],
   },
   europe: {
-    weight: 32,
-    countries: ['austria', 'belgium', 'czech republic', 'denmark', 'finland', 'france', 'germany', 'ireland', 'italy', 'netherlands', 'norway', 'poland', 'portugal', 'spain', 'sweden', 'switzerland', 'united kingdom', 'uk'],
+    weight: 45,
+    countries: ['austria', 'belgium', 'czech republic', 'denmark', 'finland', 'france', 'germany', 'greece', 'hungary', 'ireland', 'italy', 'netherlands', 'norway', 'poland', 'portugal', 'romania', 'spain', 'sweden', 'switzerland', 'united kingdom', 'uk'],
   },
   americas: {
     weight: 30,
@@ -198,12 +208,17 @@ function contactChannelScore(task) {
   return score;
 }
 
+function customerTypePriorityScore(task) {
+  return String(task.customerType || '').trim().toLowerCase() === 'agency' ? 25 : 0;
+}
+
 function dealProbabilityScore(task) {
   return Number(task.fitScore || 0)
     + Math.round(Number(task.marketScore || 0) * 12)
     + marketAgencyScore(task)
     + targetRegionScore(task)
-    + contactChannelScore(task);
+    + contactChannelScore(task)
+    + customerTypePriorityScore(task);
 }
 
 function channelPriorityScore(task) {
@@ -344,7 +359,13 @@ function normalizeResultIndex(results) {
 }
 
 function cleanKey(value) {
-  return String(value || '').trim().toLowerCase().replace(/^@/, '').replace(/[^a-z0-9]+/g, '');
+  return String(value || '')
+    .normalize('NFKD')
+    .replace(/ł/gi, 'l')
+    .trim()
+    .toLowerCase()
+    .replace(/^@/, '')
+    .replace(/[^a-z0-9]+/g, '');
 }
 
 function partnerCompanyKeys(value) {
@@ -372,7 +393,7 @@ function leadFamilyKey(value) {
   return cleanKey(String(value || '')
     .replace(/^google-customer-/i, '')
     .replace(/^verified-[a-z]+-/i, '')
-    .replace(/-(instagram|facebook|website-contact)$/i, ''));
+    .replace(/-(linkedin|instagram|facebook|website-contact)$/i, ''));
 }
 
 function automationLocalDay(value, timeZone = 'Asia/Shanghai') {
@@ -392,8 +413,11 @@ function sameAutomationDay(value, now = Date.now()) {
 }
 
 function profileHandle(value) {
-  const match = String(value || '').match(/(?:instagram|facebook)\.com\/([^/?#]+)/i);
-  return match ? match[1] : '';
+  const raw = String(value || '');
+  const socialMatch = raw.match(/(?:instagram|facebook)\.com\/([^/?#]+)/i);
+  if (socialMatch) return socialMatch[1];
+  const linkedinMatch = raw.match(/linkedin\.com\/(?:in|company)\/([^/?#]+)/i);
+  return linkedinMatch ? linkedinMatch[1] : '';
 }
 
 function profileKey(value) {
@@ -426,11 +450,13 @@ function isVerifiedWebsiteContactResult(result = {}) {
 }
 
 function isTouchResult(result = {}) {
-  return Boolean(result && TOUCH_STATUSES.has(result.status) && isVerifiedWebsiteContactResult(result));
+  if (!result || !TOUCH_STATUSES.has(result.status) || !isVerifiedWebsiteContactResult(result)) return false;
+  if (result.status !== 'send_unconfirmed') return true;
+  return /send_clicked_but_confirmation_missing|message_sent|submit_clicked/i.test(String(result.evidence || ''));
 }
 
 function isHistoricalDevelopmentResult(result = {}) {
-  if (HISTORICAL_DEVELOPMENT_STATUSES.has(result.status)) return true;
+  if (HISTORICAL_DEVELOPMENT_STATUSES.has(result.status)) return isTouchResult(result);
   if (result.status !== 'failed_open') return false;
   return /message_sent|send_clicked_but_confirmation_missing/i
     .test(String(result.evidence || ''));
@@ -444,7 +470,7 @@ function isSameDayDevelopmentResult(result = {}, now = Date.now()) {
   return Boolean(result
     && SAME_DAY_DEVELOPMENT_STATUSES.has(result.status)
     && sameAutomationDay(result.timestamp, now)
-    && isVerifiedWebsiteContactResult(result));
+    && isTouchResult(result));
 }
 
 function channelLeadKeys(item) {
@@ -958,7 +984,7 @@ function discoveryQueue(limit, context = {}) {
       priorityScore: dealProbabilityScore(item) - (String(item.platform || '').toLowerCase() === 'email' ? 2 : 0),
       action: item.action || 'develop',
       agencyState: item.agencyState || 'open',
-      workingTime: item.workingTime || { dueNow: true },
+      workingTime: workingTimeForTask(item, context.now || Date.now()),
     }))
     .sort(priorityCompare)
     .slice(0, limit);
@@ -1015,7 +1041,7 @@ function discoveryCooldownQueue(limit, context = {}) {
         lastStatus: priorDevelopment && priorDevelopment.status || sameDay && sameDay.status || touch && touch.status || '',
         lastEvidence: priorDevelopment && priorDevelopment.evidence || sameDay && sameDay.evidence || touch && touch.evidence || '',
         lastTouch: priorDevelopment && priorDevelopment.timestamp || sameDay && sameDay.timestamp || touch && touch.timestamp || '',
-        workingTime: item.workingTime || { dueNow: false, reason: 'channel_already_touched' },
+        workingTime: workingTimeForTask(item, context.now || Date.now()),
       };
     })
     .sort(priorityCompare)
@@ -1176,7 +1202,7 @@ function buildDailyPotentialPool(classified, discoveryRun, context, targetSize) 
 }
 
 function bestVisibleChannel(items = []) {
-  const rank = { facebook: 0, instagram: 1, email: 2 };
+  const rank = { linkedin: 0, facebook: 1, instagram: 2, email: 3 };
   return items.slice().sort((left, right) => {
     const leftRank = rank[String(left.platform || '').toLowerCase()] ?? 9;
     const rightRank = rank[String(right.platform || '').toLowerCase()] ?? 9;
@@ -1241,12 +1267,12 @@ function buildVisibleTodayQueue(discoveryRun, context, targetSize = 3) {
         lastEvidence: touch && touch.evidence || '',
         lastTouch: touch && touch.timestamp || '',
         visibleOnly: Boolean(!untouched),
-        workingTime: item.workingTime || { dueNow: true },
+        workingTime: workingTimeForTask(item, context.now || Date.now()),
       };
     })
     .filter(Boolean)
     .sort((left, right) => {
-      const regionRank = { oceania: 0, americas: 1, europe: 2 };
+      const regionRank = { europe: 0, oceania: 1, americas: 2 };
       const leftRegion = regionRank[targetRegion(left)] ?? 9;
       const rightRegion = regionRank[targetRegion(right)] ?? 9;
       return leftRegion - rightRegion

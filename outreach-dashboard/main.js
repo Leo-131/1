@@ -215,7 +215,9 @@ const COMPANY_HISTORY_BLOCKING_STATUSES = new Set([
 ]);
 
 function historicalAutomationResultBlocksCompany(result = {}) {
-  if (COMPANY_HISTORY_BLOCKING_STATUSES.has(result.status)) return true;
+  if (COMPANY_HISTORY_BLOCKING_STATUSES.has(result.status)) {
+    return sendStatusHasCustomerInteraction(result.status, result.evidence);
+  }
   if (result.status !== 'failed_open') return false;
   return /message_sent|send_clicked_but_confirmation_missing/i
     .test(String(result.evidence || ''));
@@ -231,12 +233,15 @@ function blockingAutomationResultFor(item) {
   const companyBlocking = new Set(['sent_confirmed', 'send_unconfirmed', 'account_followed', 'post_liked']);
   return results
     .filter((result) => result && (blocking.has(result.status) || historicalAutomationResultBlocksCompany(result)))
+    .filter((result) => result.status !== 'send_unconfirmed' || sendStatusHasCustomerInteraction(result.status, result.evidence))
     .filter((result) => result.status !== 'failed_open' || failedOpenResultShouldBlockRetry(result) || historicalAutomationResultBlocksCompany(result))
     .find((result) => {
       if (historicalAutomationResultBlocksCompany(result) && setsIntersect(companyKeys, automationCompanyKeys(result))) return true;
       const resultExactKeys = automationExactKeys(result);
       if (setsIntersect(exactKeys, resultExactKeys)) return true;
-      if (companyBlocking.has(result.status) && setsIntersect(companyKeys, automationCompanyKeys(result))) return true;
+      if (companyBlocking.has(result.status)
+        && sendStatusHasCustomerInteraction(result.status, result.evidence)
+        && setsIntersect(companyKeys, automationCompanyKeys(result))) return true;
       const resultPlatform = automationPlatformFor(result);
       if (!itemPlatform || !resultPlatform || itemPlatform !== resultPlatform) return false;
       return setsIntersect(companyKeys, automationCompanyKeys(result));
@@ -270,7 +275,13 @@ function sameDayDevelopmentResult(result = {}, now = Date.now()) {
   return Boolean(result
     && SAME_DAY_DEVELOPMENT_STATUSES.has(result.status)
     && isSameAutomationDay(result.timestamp, now)
-    && isVerifiedSameDayWebsiteResult(result));
+    && isVerifiedSameDayWebsiteResult(result)
+    && sendStatusHasCustomerInteraction(result.status, result.evidence));
+}
+
+function sendStatusHasCustomerInteraction(status, evidence = '') {
+  if (status !== 'send_unconfirmed') return true;
+  return /send_clicked_but_confirmation_missing|message_sent|submit_clicked/i.test(String(evidence || ''));
 }
 
 function isVerifiedSameDayWebsiteResult(result = {}) {
@@ -2822,7 +2833,8 @@ async function runDailyAutomationQueue(payload = {}) {
       recordAutomationResult(item, result);
       const output = parseExecutionOutput(result && result.output);
       const sendStatus = output.sendStatus || result.sendStatus || '';
-      if (SAME_DAY_DEVELOPMENT_STATUSES.has(sendStatus)) {
+      if (SAME_DAY_DEVELOPMENT_STATUSES.has(sendStatus)
+        && sendStatusHasCustomerInteraction(sendStatus, output.evidence || result.evidence || '')) {
         automationCompanyKeys(item).forEach(key => sameDayCompanyKeys.add(key));
       }
       return {
