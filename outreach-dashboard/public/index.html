@@ -2345,27 +2345,43 @@ initializeKpiDetailPage();
 <script>
 (function ensureCommandCenterModule(){
   const token = '20260714-report-detail-fix';
-  window.setTimeout(function(){
-    if (document.getElementById('command-center-shell')) return;
-    if ('serviceWorker' in navigator) {
-      navigator.serviceWorker.getRegistrations().then(function(registrations){
-        return Promise.all(registrations.map(function(registration){ return registration.unregister(); }));
-      }).catch(function(){});
+  function loadRecoveryScript(src, key){
+    return new Promise(function(resolve, reject){
+      const script = document.createElement('script');
+      script.src = src + (src.includes('?') ? '&' : '?') + 'recovery=' + Date.now();
+      script.dataset.commandCenterRecovery = key;
+      script.onload = resolve;
+      script.onerror = function(){ reject(new Error('Failed to load ' + src)); };
+      document.body.appendChild(script);
+    });
+  }
+  window.setTimeout(async function(){
+    const shell = document.getElementById('command-center-shell');
+    const healthy = Boolean(window.OutreachEngine && window.OutreachAnalytics && shell && !shell.dataset.dependencyFailure);
+    if (healthy) return;
+    window.__commandCenterRecoveryInProgress = true;
+    try {
+      if ('serviceWorker' in navigator) {
+        const registrations = await navigator.serviceWorker.getRegistrations();
+        await Promise.all(registrations.map(function(registration){ return registration.unregister(); }));
+      }
+      if (typeof caches !== 'undefined') {
+        const keys = await caches.keys();
+        await Promise.all(keys.map(function(key){ return caches.delete(key); }));
+      }
+      if (!window.OutreachEngine) await loadRecoveryScript('./outreach-engine.js?v=' + token, 'engine');
+      if (!window.OutreachAnalytics) await loadRecoveryScript('./outreach-analytics.js?v=' + token, 'analytics');
+      const failedShell = document.querySelector('#command-center-shell[data-dependency-failure="1"]');
+      if (failedShell) failedShell.remove();
+      window.__commandCenterDependencyRetries = 0;
+      await loadRecoveryScript('./command-center.js?v=' + token, 'command-center');
+    } catch (error) {
+      console.error('Command center dependency recovery failed', error);
+    } finally {
+      window.__commandCenterRecoveryInProgress = false;
     }
-    if (typeof caches !== 'undefined') {
-      caches.keys().then(function(keys){
-        return Promise.all(keys.map(function(key){ return caches.delete(key); }));
-      }).catch(function(){});
-    }
-    const existing = document.querySelector('script[data-command-center-recovery]');
-    if (existing) existing.remove();
-    const script = document.createElement('script');
-    script.src = './command-center.js?v=' + token + '&recovery=' + Date.now();
-    script.dataset.commandCenterRecovery = '1';
-    document.body.appendChild(script);
-  }, 2000);
+  }, 4500);
 }());
 </script>
 </body>
 </html>
-

@@ -43,6 +43,14 @@ test('command center waits for engine dependencies instead of falling back to le
   assert.ok(js.includes('已阻止回退到旧模块'));
 });
 
+test('dependency recovery reloads engine and analytics before command center', () => {
+  assert.ok(js.includes("shell.dataset.dependencyFailure = '1'"));
+  assert.ok(html.includes("loadRecoveryScript('./outreach-engine.js?v=' + token, 'engine')"));
+  assert.ok(html.includes("loadRecoveryScript('./outreach-analytics.js?v=' + token, 'analytics')"));
+  assert.ok(html.includes("loadRecoveryScript('./command-center.js?v=' + token, 'command-center')"));
+  assert.ok(html.includes('!shell.dataset.dependencyFailure'));
+});
+
 test('command center exposes weekly and monthly reporting controls', () => {
   assert.ok(js.includes("['reports'"));
   assert.ok(js.includes('analytics.buildPeriodReport'));

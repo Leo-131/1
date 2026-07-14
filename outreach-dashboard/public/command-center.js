@@ -18,6 +18,7 @@
     const shell = document.createElement('div');
     shell.className = 'cc-shell';
     shell.id = 'command-center-shell';
+    shell.dataset.dependencyFailure = '1';
     shell.innerHTML = '<aside class="cc-sidebar"><div class="cc-brand"><b>Customer Development</b><span>Codex Decision - Codex Chrome Extension</span></div></aside><main class="cc-main"><section class="cc-panel"><h1>开发工作台加载失败</h1><p>OutreachEngine 或 OutreachAnalytics 未加载，已阻止回退到旧模块。请刷新页面或检查本地资源。</p></section></main>';
     document.body.appendChild(shell);
     document.body.classList.remove('command-center-booting');
