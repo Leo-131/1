@@ -1107,6 +1107,41 @@
     if (!rows.length) return `<section class="cc-panel"><div class="cc-panel-head"><h2>${title}</h2></div><div class="cc-empty">本周期暂无可统计数据</div></section>`;
     return `<section class="cc-panel"><div class="cc-panel-head"><h2>${title}</h2></div><div class="cc-table-wrap"><table class="cc-table"><thead><tr><th>分类</th><th>发现</th><th>确认发送</th><th>回复</th><th>联系方式</th><th>机会</th><th>回复率</th></tr></thead><tbody>${rows.map(item => `<tr><td>${esc(item.label)}</td><td>${item.metrics.discovered}</td><td>${item.metrics.sent}</td><td>${item.metrics.replied}</td><td>${item.metrics.contactCaptured}</td><td>${item.metrics.opportunity}</td><td>${rate(item.rates.replyRate)}</td></tr>`).join('')}</tbody></table></div></section>`;
   }
+  function reportExecutiveSummary(report) {
+    const metrics = report.metrics || {};
+    const rates = report.rates || {};
+    const start = Date.parse(report.period.start);
+    const end = Date.parse(report.period.endExclusive);
+    const periodLogs = liveAuditEvents().filter(item => {
+      const timestamp = Date.parse(item.timestamp || '');
+      return Number.isFinite(timestamp) && timestamp >= start && timestamp < end;
+    });
+    const failures = periodLogs.filter(item => /fail|skip|block|timeout|unavailable|missing/i.test(`${item.stage} ${item.result} ${item.evidence}`));
+    const blockerCounts = failures.reduce((counts, item) => {
+      const text = `${item.result} ${item.evidence}`;
+      const key = /duplicate|cooldown/i.test(text) ? 'duplicate/cooldown'
+        : /timeout/i.test(text) ? 'browser timeout'
+          : /attachment/i.test(text) ? 'marketing attachment missing'
+            : /profile|target|identity|unavailable|404/i.test(text) ? 'target verification'
+              : 'other execution blocker';
+      counts[key] = (counts[key] || 0) + 1;
+      return counts;
+    }, {});
+    const primaryBlocker = Object.entries(blockerCounts).sort((a, b) => b[1] - a[1])[0];
+    const summary = metrics.sent > 0
+      ? `本周期发现 ${metrics.discovered} 个客户，确认发送 ${metrics.sent} 个，收到回复 ${metrics.replied} 个；发送回复率 ${rate(rates.replyRate)}。`
+      : `本周期发现 ${metrics.discovered} 个客户，但没有形成已确认发送，当前漏斗停留在目标核验或执行安全门。`;
+    const attribution = primaryBlocker
+      ? `操作日志共 ${periodLogs.length} 条，其中失败或拦截 ${failures.length} 条；首要归因是 ${primaryBlocker[0]}（${primaryBlocker[1]} 条）。`
+      : `操作日志共 ${periodLogs.length} 条，当前没有足够失败证据形成稳定归因。`;
+    const actions = [];
+    if (!metrics.sent) actions.push('优先补充带官方 Facebook、Instagram 或有效官网联系入口的新客户');
+    if (primaryBlocker && /target verification/.test(primaryBlocker[0])) actions.push('在入队前完成官网、身份和消息入口核验');
+    if (primaryBlocker && /attachment/.test(primaryBlocker[0])) actions.push('配置已批准营销附件或改用无需附件的社媒入口');
+    if (metrics.sent >= 3 && !metrics.replied) actions.push('暂停低回复模板并对前10个高ICP客户使用买家角色个性化文案');
+    if (!actions.length) actions.push('扩大当前最高回复渠道和模板，同时保持公司级防重复');
+    return `<section class="cc-panel"><div class="cc-panel-head"><h2>周期总结与数据归因</h2><span class="cc-sub">由转化数据和操作日志自动生成</span></div><div class="cc-panel-body"><p>${esc(summary)}</p><p>${esc(attribution)}</p><h3>下一阶段系统操作</h3><ol>${actions.map(item => `<li>${esc(item)}</li>`).join('')}</ol></div></section>`;
+  }
   function reports() {
     const type = query.get('report') === 'monthly' ? 'monthly' : 'weekly';
     const reportRecords = liveOperationalRecords();
@@ -1129,6 +1164,7 @@
         <div class="cc-report-actions"><button type="button" onclick="exportCurrentReportCsv()" ${report.hasData ? '' : 'disabled'}>导出 CSV</button><button type="button" onclick="window.print()">打印/PDF</button></div>
       </div>
       <div class="cc-report-period"><b>${report.period.label}</b><span>Asia/Shanghai</span></div>
+      ${reportExecutiveSummary(report)}
       <div class="cc-kpis cc-report-kpis">${metricLabels.map(([key, label]) => `<div class="cc-kpi"><span>${label}</span><b>${report.metrics[key]}</b></div>`).join('')}</div>
       <section class="cc-panel"><div class="cc-panel-head"><h2>转化漏斗</h2><span class="cc-sub">回复率 ${rate(report.rates.replyRate)} · 联系方式率 ${rate(report.rates.contactCaptureRate)} · 机会率 ${rate(report.rates.opportunityRate)}</span></div><div class="cc-panel-body"><div class="cc-funnel">${funnelMetrics.map(([key, label]) => `<div><span>${label}</span><b>${report.metrics[key]}</b></div>`).join('')}</div></div></section>
       ${replyConversionPanel(report)}

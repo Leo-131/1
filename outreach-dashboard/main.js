@@ -2691,6 +2691,8 @@ async function runDailyAutomationQueue(payload = {}) {
     currentIndex: 0,
     currentItem: null,
     completedCount: 0,
+    confirmedSendCount: 0,
+    preparedWebsiteCount: 0,
     lastResult: null,
   };
 
@@ -2755,6 +2757,8 @@ async function runDailyAutomationQueue(payload = {}) {
     currentDailyExecutionProgress = {
       ...currentDailyExecutionProgress,
       completedCount: results.length,
+      confirmedSendCount: results.filter(item => item.sendStatus === 'sent_confirmed').length,
+      preparedWebsiteCount: results.filter(item => item.sendStatus === 'website_contact_ready').length,
       skippedCount: skipped.length,
       lastResult: batchResults[batchResults.length - 1] ? {
         id: batchResults[batchResults.length - 1].id,
@@ -2803,13 +2807,17 @@ async function runAutoDailyAndWriteArtifact() {
   const timeoutMs = Math.max(60000, Number(process.env.DAILY_EXECUTE_TIMEOUT_MS || 300000));
   const watchdog = setTimeout(() => {
     if (completed) return;
+    const confirmedSendCount = Number(currentDailyExecutionProgress && currentDailyExecutionProgress.confirmedSendCount || 0);
     writeDailyExecutionArtifact({
       ok: false,
       error: `auto-run-daily timed out after ${timeoutMs}ms`,
       completedAt: new Date().toISOString(),
       executionPhase: 'browser_execution_timeout',
       chromeOpened: true,
-      customerDevelopmentPerformed: false,
+      customerDevelopmentPerformed: confirmedSendCount > 0,
+      customerMessageSent: confirmedSendCount > 0,
+      realDevelopmentCount: confirmedSendCount,
+      reportingVerdict: confirmedSendCount > 0 ? 'partial_customer_development_before_timeout' : 'no_customer_development_performed',
       progress: currentDailyExecutionProgress,
     });
     app.exit(1);

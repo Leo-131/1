@@ -307,6 +307,14 @@ test('Google discovery keeps a refill pool for new prospects after current custo
   }
 });
 
+test('online directory refill adds Flextail and Vollyc matched outdoor retailers with evidence', () => {
+  const run = buildDiscoveryRun(200);
+  assert.ok(run.refillCandidateCount >= 50);
+  assert.ok(run.leads.some(item => item.company === 'Garage Grown Gear'));
+  assert.ok(run.leads.some(item => item.company === 'Obelink'));
+  assert.ok(run.leads.some(item => /outdoorretailer\.com\/retailers-of-interest/.test(item.sourceEvidenceUrl || '')));
+});
+
 test('Google discovery gives autonomous refill customers social channels before website contact', () => {
   const leads = buildLeads(120);
   for (const company of ['Liberty Mountain', 'Sportsman\'s Warehouse', 'Camping World']) {

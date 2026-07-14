@@ -254,6 +254,13 @@ test('reporting center exposes reply conversion diagnostics and CSV rates', () =
   assert.ok(js.includes('reply_conversion_segments'));
 });
 
+test('weekly and monthly reports include log attribution and next-stage actions', () => {
+  assert.ok(js.includes('reportExecutiveSummary'));
+  assert.ok(js.includes('周期总结与数据归因'));
+  assert.ok(js.includes('下一阶段系统操作'));
+  assert.ok(js.includes('liveAuditEvents()'));
+});
+
 test('deal priority includes observed reply conversion lift', () => {
   assert.ok(js.includes('function replyConversionBenchmarks'));
   assert.ok(js.includes('function replyConversionLift'));
