@@ -9,22 +9,163 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
   "customerMessageSent": false,
   "realDevelopmentCount": 0,
   "reportingVerdict": "no_customer_development_performed",
-  "userVisibleStatus": "No Chrome/browser development was performed because safety gates left no executable tasks.",
-  "recoveryActions": [],
+  "userVisibleStatus": "Customer development was not performed. Blockers: missing_verified_profile_url (16); marketing_attachment_missing (4).",
+  "recoveryHint": "Configure WEBSITE_MARKETING_FILE or MARKETING_ATTACHMENT_PATH with an approved marketing attachment before rerunning website-contact outreach.",
+  "recoveryActions": [
+    {
+      "reason": "marketing_attachment_missing",
+      "hint": "Configure WEBSITE_MARKETING_FILE or MARKETING_ATTACHMENT_PATH with an approved marketing attachment before rerunning website-contact outreach."
+    }
+  ],
   "error": "No executable tasks. Website-contact, social, cooldown, exclusive-agency, and verification safety gates left nothing safe to prepare.",
-  "skipped": [],
-  "blockerSummary": [],
-  "blockerCounts": {},
+  "skipped": [
+    {
+      "id": 23,
+      "company": "Ace Hardware",
+      "action": "verify_target",
+      "reason": "missing_verified_profile_url"
+    },
+    {
+      "id": 7,
+      "company": "AutoZone",
+      "action": "verify_target",
+      "reason": "missing_verified_profile_url"
+    },
+    {
+      "id": 10,
+      "company": "Backcountry.com",
+      "action": "verify_target",
+      "reason": "missing_verified_profile_url"
+    },
+    {
+      "id": 20,
+      "company": "Harbor Freight",
+      "action": "verify_target",
+      "reason": "missing_verified_profile_url"
+    },
+    {
+      "id": 6,
+      "company": "L.L.Bean",
+      "action": "verify_target",
+      "reason": "missing_verified_profile_url"
+    },
+    {
+      "id": 17,
+      "company": "Target",
+      "action": "verify_target",
+      "reason": "missing_verified_profile_url"
+    },
+    {
+      "id": 22,
+      "company": "Thor Industries",
+      "action": "verify_target",
+      "reason": "missing_verified_profile_url"
+    },
+    {
+      "id": 13,
+      "company": "Walgreens",
+      "action": "verify_target",
+      "reason": "missing_verified_profile_url"
+    },
+    {
+      "id": 18,
+      "company": "Winnebago",
+      "action": "verify_target",
+      "reason": "missing_verified_profile_url"
+    },
+    {
+      "id": 11,
+      "company": "Best Buy",
+      "action": "verify_target",
+      "reason": "missing_verified_profile_url"
+    },
+    {
+      "id": 9,
+      "company": "Canadian Tire",
+      "action": "verify_target",
+      "reason": "missing_verified_profile_url"
+    },
+    {
+      "id": 19,
+      "company": "MEC (Mountain Equipment Co-op)",
+      "action": "verify_target",
+      "reason": "missing_verified_profile_url"
+    },
+    {
+      "id": 16,
+      "company": "Airstream",
+      "action": "verify_target",
+      "reason": "missing_verified_profile_url"
+    },
+    {
+      "id": 5,
+      "company": "Pacific Outdoor Group",
+      "action": "verify_target",
+      "reason": "missing_verified_profile_url"
+    },
+    {
+      "id": 14,
+      "company": "Rural King",
+      "action": "verify_target",
+      "reason": "missing_verified_profile_url"
+    },
+    {
+      "id": 21,
+      "company": "RVDA (RV Dealers Association)",
+      "action": "verify_target",
+      "reason": "missing_verified_profile_url"
+    },
+    {
+      "id": "sheet_1779293110195_9myxa520z",
+      "company": "ARROW TIRE DISTRIBUTORS",
+      "action": "email_priority",
+      "reason": "marketing_attachment_missing"
+    },
+    {
+      "id": "sheet_1779293110195_u24j2gdmq",
+      "company": "FAUNA OUTDOOR",
+      "action": "email_priority",
+      "reason": "marketing_attachment_missing"
+    },
+    {
+      "id": "sheet_1779293110195_g0uwgglwc",
+      "company": "JOHN DOYLE DISTRIBUTORS",
+      "action": "email_priority",
+      "reason": "marketing_attachment_missing"
+    },
+    {
+      "id": "sheet_1779293110195_0f1r27koe",
+      "company": "TAHOE SPORTS HUB",
+      "action": "email_priority",
+      "reason": "marketing_attachment_missing"
+    }
+  ],
+  "blockerSummary": [
+    {
+      "reason": "missing_verified_profile_url",
+      "status": "skipped",
+      "count": 16
+    },
+    {
+      "reason": "marketing_attachment_missing",
+      "status": "skipped",
+      "count": 4
+    }
+  ],
+  "blockerCounts": {
+    "missing_verified_profile_url": 16,
+    "marketing_attachment_missing": 4
+  },
   "summary": {
     "totalLeads": 16,
     "highIcp": 16,
     "readyToDevelop": 0,
-    "dueNow": 0,
+    "dueNow": 20,
     "visibleTodayQueue": 0,
-    "potentialPool": 0,
+    "potentialPool": 20,
     "potentialPoolTarget": 100,
-    "customerTableHighIcp": 0,
-    "refillNeeded": 100,
+    "customerTableHighIcp": 20,
+    "refillNeeded": 80,
     "googleDiscovered": 0,
     "facebookDiscovered": 0,
     "websiteContactDiscovered": 0,
@@ -36,5 +177,5 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     "needsVerification": 0,
     "retainedLowIcp": 0
   },
-  "completedAt": "2026-07-14T02:19:48.014Z"
+  "completedAt": "2026-07-14T02:49:36.711Z"
 };

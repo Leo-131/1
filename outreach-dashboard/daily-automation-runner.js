@@ -234,6 +234,7 @@ function queueDedupeKey(item) {
   const handle = profileHandle(channelUrl);
   const host = hostnameKey(channelUrl);
   if (handle) return `${platform}:profile:${cleanKey(handle)}`;
+  if (/linkedin\.com\/in\//i.test(String(channelUrl || ''))) return `${platform}:profile:${cleanKey(channelUrl)}`;
   if (host) return `${platform}:host:${cleanKey(host)}`;
   return `${platform}:${cleanKey(channelUrl || item.company || item.name)}`;
 }
@@ -1077,6 +1078,7 @@ function potentialStatusFor(item, history) {
     return { action: 'cooldown', reason: touch && touch.status === 'website_contact_ready' ? 'website_contact_ready_no_repeat' : `${COOLDOWN_DAYS}_day_no_repeat_touch`, touch };
   }
   if (String(item.platform || '').toLowerCase() === 'email') return { action: 'email_priority', reason: item.reason || 'official_website_contact_channel', touch };
+  if (String(item.platform || '').toLowerCase() === 'linkedin') return { action: 'verify_target', reason: 'linkedin_channel_requires_supported_executor', touch };
   if (!targetUrl(item, {})) return { action: 'verify_target', reason: 'missing_verified_profile_url', touch };
   return { action: item.action || 'develop', reason: item.reason || 'high_icp_potential_ready', touch };
 }
@@ -1087,6 +1089,14 @@ function isActivePotentialCandidate(item) {
   if (item && (item.lastTouch || item.lastStatus || item.lastEvidence)) return false;
   if (item && item.previouslyContacted) return false;
   return ['develop', 'retry_or_alternate_channel', 'verify_target', 'email_priority'].includes(action);
+}
+
+function legacyStatusIndicatesTouch(value) {
+  const status = String(value || '').trim().toLowerCase();
+  if (!status || status === 'pending' || status === 'new' || status === 'not contacted') return false;
+  const sequence = status.match(/^(\d+)\s+out\s+of\s+\d+$/i);
+  if (sequence) return Number(sequence[1]) > 0;
+  return /sent|accepted|replied|responded|contacted|follow.?up|opened|clicked|meeting|qualified|converted|已发送|已回复|已联系|已接受/.test(status);
 }
 
 function normalizePotentialItem(item, sourceType, history, index = 0) {
@@ -1102,8 +1112,8 @@ function normalizePotentialItem(item, sourceType, history, index = 0) {
     fitTier: item.fitTier || (Number(item.fitScore || legacyCustomerFitScore(item)) >= 90 ? 'A' : 'B'),
     source: item.source || sourceType,
     website: item.website || item.url || '',
-    url: item.url || item.targetUrl || item.linkedin_url || item.linkedinUrl || item.website || '',
-    platformUrl: item.platformUrl || item.url || item.linkedin_url || item.linkedinUrl || item.website || '',
+    url: item.url || item.targetUrl || item.linkedin_url || item.linkedinUrl || (/^https?:\/\//i.test(String(item.id || '')) ? item.id : '') || item.website || '',
+    platformUrl: item.platformUrl || item.url || item.linkedin_url || item.linkedinUrl || (/^https?:\/\//i.test(String(item.id || '')) ? item.id : '') || item.website || '',
     linkedinUrl: item.linkedinUrl || item.linkedin_url || item.linkedinCompany || '',
     linkedinSearchUrl: linkedinSearchUrl(item),
     googleSearchUrl: item.contactSearchUrl || googleSearchUrl(item.company || item.name),
@@ -1114,14 +1124,16 @@ function normalizePotentialItem(item, sourceType, history, index = 0) {
     marketStatus: item.marketStatus || item.agencyState || '',
   };
   const status = potentialStatusFor(base, history);
+  const legacyTouched = legacyStatusIndicatesTouch(base.lastStatus || base.status);
   return {
     ...base,
     taskId: base.id,
     action: status.action,
     reason: status.reason,
-    lastStatus: status.touch && status.touch.status || base.lastStatus || base.status || '',
+    lastStatus: status.touch && status.touch.status || (legacyTouched ? (base.lastStatus || base.status) : ''),
     lastEvidence: status.touch && status.touch.evidence || base.lastEvidence || '',
-    lastTouch: status.touch && status.touch.timestamp || base.lastTouch || '',
+    lastTouch: status.touch && status.touch.timestamp || (legacyTouched ? base.lastTouch : '') || '',
+    previouslyContacted: Boolean(base.previouslyContacted || legacyTouched),
     targetRegion: targetRegion(base),
     targetRegionScore: targetRegionScore(base),
     contactChannelScore: contactChannelScore(base),
@@ -1287,7 +1299,13 @@ function main() {
   const newDiscovery = discoveryQueue(DEFAULT_DAILY_LIMIT, context);
   const touchedDiscovery = discoveryCooldownQueue(20, context);
   const remainingLimit = Math.max(0, picked.quota.total.target - newDiscovery.length);
-  const dailyQueue = preferSocialChannels(dedupeQueueItems([...newDiscovery, ...picked.queue.slice(0, remainingLimit)])).sort(priorityCompare);
+  const primaryQueue = [...newDiscovery, ...picked.queue.slice(0, remainingLimit)];
+  const primaryCompanies = new Set(primaryQueue.map(item => slugKey(item.company || item.name)).filter(Boolean));
+  const refillQueue = dailyPotentialPool
+    .filter(item => !primaryCompanies.has(slugKey(item.company || item.name)))
+    .filter(item => ['develop', 'retry_or_alternate_channel', 'verify_target', 'email_priority'].includes(item.action))
+    .slice(0, Math.max(0, picked.quota.total.target - primaryQueue.length));
+  const dailyQueue = preferSocialChannels(dedupeQueueItems([...primaryQueue, ...refillQueue])).sort(priorityCompare).slice(0, picked.quota.total.target);
   const cooldownQueue = [...classified
     .filter(item => item.action === 'cooldown')
     .sort(priorityCompare), ...touchedDiscovery]
@@ -1386,6 +1404,7 @@ module.exports = {
   isActivePotentialCandidate,
   isKnownPartnerCompany,
   isHistoricalDevelopmentResult,
+  legacyStatusIndicatesTouch,
   knownTouchIndex,
   preferSocialChannels,
 };

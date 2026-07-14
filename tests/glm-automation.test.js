@@ -19,6 +19,14 @@ const chromeDriverSource = fs.readFileSync(path.join(__dirname, '..', 'outreach-
 const dailyRunnerSource = fs.readFileSync(path.join(__dirname, '..', 'outreach-dashboard', 'daily-automation-runner.js'), 'utf8');
 const templateSource = fs.readFileSync(path.join(__dirname, '..', 'outreach-dashboard', 'api', 'templates.js'), 'utf8');
 
+test('legacy pending sequence statuses do not mark a customer as previously developed', () => {
+  assert.equal(dailyRunner.legacyStatusIndicatesTouch('Pending'), false);
+  assert.equal(dailyRunner.legacyStatusIndicatesTouch('0 out of 6'), false);
+  assert.equal(dailyRunner.legacyStatusIndicatesTouch('2 out of 6'), true);
+  assert.equal(dailyRunner.legacyStatusIndicatesTouch('Sent'), true);
+  assert.equal(dailyRunner.legacyStatusIndicatesTouch('Accepted'), true);
+});
+
 test('daily queue prioritizes Facebook and Instagram over website contact', () => {
   assert.ok(dailyRunner.channelPriorityScore({ platform: 'facebook' })
     > dailyRunner.channelPriorityScore({ platform: 'instagram' }));

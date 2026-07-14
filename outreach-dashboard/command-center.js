@@ -198,6 +198,14 @@
       || isGoogleHighValue(entity)
       || (/cotswold\s*outdoor/.test(text) && Number(entity && entity.fitScore || 0) >= 80);
   }
+  function customerReviewNote(entity) {
+    const score = icpScore(entity);
+    if (score <= ICP_MIN_SCORE) return `Excluded from automation: ICP ${score} is not above ${ICP_MIN_SCORE}. Retained for audit only.`;
+    if (!normalizedCountry(entity) || /global|unspecified|unknown/i.test(normalizedCountry(entity))) return 'Needs enrichment: country or market is not verified.';
+    if (!entryUrl(entity)) return 'Needs enrichment: no verified customer channel URL.';
+    if (recordTouched(entity)) return 'Previously developed: excluded from new-customer automation.';
+    return 'High-ICP customer with a verified channel; eligible after identity check.';
+  }
   function executionRank(task) {
     const platform = String(task && task.platform || '').toLowerCase();
     const platformRank = platform === 'instagram' ? 30
@@ -1607,7 +1615,8 @@
         const profileHref = urlFor('customer', { contact: key });
         const customerLinkAttrs = ` href="${profileHref}"`;
         const archiveLink = target ? `<br><a class="cc-sub-link" href="${esc(target)}" target="_blank" rel="noopener">Verified channel</a>` : '';
-        return `<tr class="${qualified ? '' : 'cc-low-icp'}"><td><a${linkClass}${customerLinkAttrs} title="Open verified customer platform; ${esc(icpExplanation(record))}">${esc(record.name)}</a>${archiveLink}</td><td>${esc(record.company)}${qualified ? '' : '<br><span class="cc-chip amber">Low ICP retained</span>'}</td><td>${esc(record.role)}</td><td>${esc(normalizedCountry(record))}</td><td>${esc(record.platform)}</td><td><span class="cc-chip">${esc(record.status)}</span></td><td title="ICP ${icpScore(record)} + market/contact/region priority">${dealProbabilityScore(record)}</td><td>${esc(recordUpdatedAt(record))}</td></tr>`;
+        const reviewNote = customerReviewNote(record);
+        return `<tr class="${qualified ? '' : 'cc-low-icp'}"><td><a${linkClass}${customerLinkAttrs} title="${esc(reviewNote)}">${esc(record.name)}</a>${archiveLink}</td><td>${esc(record.company)}<br><span class="cc-chip ${qualified ? 'green' : 'amber'}" title="${esc(reviewNote)}">${esc(reviewNote)}</span></td><td>${esc(record.role)}</td><td>${esc(normalizedCountry(record))}</td><td>${esc(record.platform)}</td><td><span class="cc-chip">${esc(record.status)}</span></td><td title="ICP ${icpScore(record)} + market/contact/region priority">${dealProbabilityScore(record)}</td><td>${esc(recordUpdatedAt(record))}</td></tr>`;
       }).join('')}</tbody></table>${rows.length ? '' : '<div class="cc-empty">没有匹配客户，请重置或调整筛选条件</div>'}</div>`;
   }
   function countryGeoCode(country) {
