@@ -2581,18 +2581,32 @@ function executionRecoveryActions(blockerSummary = []) {
   if (reasons.has('marketing_attachment_missing')) {
     actions.push({
       reason: 'marketing_attachment_missing',
+      action: 'Add approved website outreach attachment',
+      description: 'Set WEBSITE_MARKETING_FILE or MARKETING_ATTACHMENT_PATH before rerunning website-contact outreach.',
       hint: 'Configure WEBSITE_MARKETING_FILE or MARKETING_ATTACHMENT_PATH with an approved marketing attachment before rerunning website-contact outreach.',
+    });
+  }
+  if (reasons.has('missing_verified_profile_url')) {
+    actions.push({
+      reason: 'missing_verified_profile_url',
+      action: 'Verify official social profile URL',
+      description: 'Add a verified Facebook or Instagram profile URL before retrying social outreach.',
+      hint: 'Add a verified Facebook or Instagram profile URL before retrying social outreach.',
     });
   }
   if (reasons.has('profile_valid_no_message_button')) {
     actions.push({
       reason: 'profile_valid_no_message_button',
+      action: 'Use alternate verified channel',
+      description: 'The current social profile has no safe message button, so use another verified channel.',
       hint: 'Use a verified alternate channel because the current social profile has no safe message button.',
     });
   }
   if (reasons.has('website_contact_unreachable_skip')) {
     actions.push({
       reason: 'website_contact_unreachable_skip',
+      action: 'Skip unreachable website route',
+      description: 'Continue through Facebook, Instagram, or another verified official contact path.',
       hint: 'Skip the unreachable official website route and continue with Facebook, Instagram, or another verified official channel.',
     });
   }
