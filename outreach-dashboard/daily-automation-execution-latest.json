@@ -30,8 +30,8 @@
         "engine": "codex-chrome-extension-cdp",
         "port": 9224,
         "targetUrl": "https://www.linkedin.com/company/cms-distribution",
-        "tabId": "430C6EC728C84C0BC189B5B6BC35232E",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/430C6EC728C84C0BC189B5B6BC35232E",
+        "tabId": "93F584D5DB91F545E4FFD4F8F8836592",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/93F584D5DB91F545E4FFD4F8F8836592",
         "title": "(31) CMS Distribution: Overview | LinkedIn"
       },
       "result": {
@@ -45,8 +45,8 @@
           "engine": "codex-chrome-extension-cdp",
           "port": 9224,
           "targetUrl": "https://www.linkedin.com/company/cms-distribution",
-          "tabId": "430C6EC728C84C0BC189B5B6BC35232E",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/430C6EC728C84C0BC189B5B6BC35232E",
+          "tabId": "93F584D5DB91F545E4FFD4F8F8836592",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/93F584D5DB91F545E4FFD4F8F8836592",
           "title": "(31) CMS Distribution: Overview | LinkedIn"
         },
         "sendStatus": "send_unconfirmed",
@@ -75,8 +75,8 @@
         "engine": "codex-chrome-extension-cdp",
         "port": 9224,
         "targetUrl": "https://www.facebook.com/SnowysOutdoors/",
-        "tabId": "4066EEDC55E00B0FEF91EB8494E1A7B9",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/4066EEDC55E00B0FEF91EB8494E1A7B9",
+        "tabId": "D43369883D5389831C13E7A138ACD53F",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/D43369883D5389831C13E7A138ACD53F",
         "title": "Facebook"
       },
       "result": {
@@ -90,8 +90,8 @@
           "engine": "codex-chrome-extension-cdp",
           "port": 9224,
           "targetUrl": "https://www.facebook.com/SnowysOutdoors/",
-          "tabId": "4066EEDC55E00B0FEF91EB8494E1A7B9",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/4066EEDC55E00B0FEF91EB8494E1A7B9",
+          "tabId": "D43369883D5389831C13E7A138ACD53F",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/D43369883D5389831C13E7A138ACD53F",
           "title": "Facebook"
         },
         "sendStatus": "send_unconfirmed",
@@ -120,8 +120,8 @@
         "engine": "codex-chrome-extension-cdp",
         "port": 9224,
         "targetUrl": "https://www.instagram.com/garagegrowngear/",
-        "tabId": "3E1B34FE55E5A777BB84C073D278203C",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/3E1B34FE55E5A777BB84C073D278203C",
+        "tabId": "379443C2815DC70E1C2377F922B498BA",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/379443C2815DC70E1C2377F922B498BA",
         "title": "Garage Grown Gear (@garagegrowngear) · Instagram 照片和视频"
       },
       "result": {
@@ -135,8 +135,8 @@
           "engine": "codex-chrome-extension-cdp",
           "port": 9224,
           "targetUrl": "https://www.instagram.com/garagegrowngear/",
-          "tabId": "3E1B34FE55E5A777BB84C073D278203C",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/3E1B34FE55E5A777BB84C073D278203C",
+          "tabId": "379443C2815DC70E1C2377F922B498BA",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/379443C2815DC70E1C2377F922B498BA",
           "title": "Garage Grown Gear (@garagegrowngear) · Instagram 照片和视频"
         },
         "sendStatus": "failed_open",
@@ -165,8 +165,8 @@
         "engine": "codex-chrome-extension-cdp",
         "port": 9224,
         "targetUrl": "https://www.instagram.com/snowys_outdoors/",
-        "tabId": "FD1504C7B596537B7116510B158C2489",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/FD1504C7B596537B7116510B158C2489",
+        "tabId": "9481952F8801E3496ADC2861F1EF955D",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/9481952F8801E3496ADC2861F1EF955D",
         "title": "Snowys Outdoors (@snowys_outdoors) · Instagram 照片和视频"
       },
       "result": {
@@ -180,8 +180,8 @@
           "engine": "codex-chrome-extension-cdp",
           "port": 9224,
           "targetUrl": "https://www.instagram.com/snowys_outdoors/",
-          "tabId": "FD1504C7B596537B7116510B158C2489",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/FD1504C7B596537B7116510B158C2489",
+          "tabId": "9481952F8801E3496ADC2861F1EF955D",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/9481952F8801E3496ADC2861F1EF955D",
           "title": "Snowys Outdoors (@snowys_outdoors) · Instagram 照片和视频"
         },
         "sendStatus": "failed_open",
@@ -212,8 +212,8 @@
         "engine": "codex-chrome-extension-cdp",
         "port": 9224,
         "targetUrl": "https://www.linkedin.com/company/cms-distribution",
-        "tabId": "430C6EC728C84C0BC189B5B6BC35232E",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/430C6EC728C84C0BC189B5B6BC35232E",
+        "tabId": "93F584D5DB91F545E4FFD4F8F8836592",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/93F584D5DB91F545E4FFD4F8F8836592",
         "title": "(31) CMS Distribution: Overview | LinkedIn"
       },
       "result": {
@@ -227,8 +227,8 @@
           "engine": "codex-chrome-extension-cdp",
           "port": 9224,
           "targetUrl": "https://www.linkedin.com/company/cms-distribution",
-          "tabId": "430C6EC728C84C0BC189B5B6BC35232E",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/430C6EC728C84C0BC189B5B6BC35232E",
+          "tabId": "93F584D5DB91F545E4FFD4F8F8836592",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/93F584D5DB91F545E4FFD4F8F8836592",
           "title": "(31) CMS Distribution: Overview | LinkedIn"
         },
         "sendStatus": "send_unconfirmed",
@@ -257,8 +257,8 @@
         "engine": "codex-chrome-extension-cdp",
         "port": 9224,
         "targetUrl": "https://www.facebook.com/SnowysOutdoors/",
-        "tabId": "4066EEDC55E00B0FEF91EB8494E1A7B9",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/4066EEDC55E00B0FEF91EB8494E1A7B9",
+        "tabId": "D43369883D5389831C13E7A138ACD53F",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/D43369883D5389831C13E7A138ACD53F",
         "title": "Facebook"
       },
       "result": {
@@ -272,8 +272,8 @@
           "engine": "codex-chrome-extension-cdp",
           "port": 9224,
           "targetUrl": "https://www.facebook.com/SnowysOutdoors/",
-          "tabId": "4066EEDC55E00B0FEF91EB8494E1A7B9",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/4066EEDC55E00B0FEF91EB8494E1A7B9",
+          "tabId": "D43369883D5389831C13E7A138ACD53F",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/D43369883D5389831C13E7A138ACD53F",
           "title": "Facebook"
         },
         "sendStatus": "send_unconfirmed",
@@ -302,8 +302,8 @@
         "engine": "codex-chrome-extension-cdp",
         "port": 9224,
         "targetUrl": "https://www.instagram.com/garagegrowngear/",
-        "tabId": "3E1B34FE55E5A777BB84C073D278203C",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/3E1B34FE55E5A777BB84C073D278203C",
+        "tabId": "379443C2815DC70E1C2377F922B498BA",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/379443C2815DC70E1C2377F922B498BA",
         "title": "Garage Grown Gear (@garagegrowngear) · Instagram 照片和视频"
       },
       "result": {
@@ -317,8 +317,8 @@
           "engine": "codex-chrome-extension-cdp",
           "port": 9224,
           "targetUrl": "https://www.instagram.com/garagegrowngear/",
-          "tabId": "3E1B34FE55E5A777BB84C073D278203C",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/3E1B34FE55E5A777BB84C073D278203C",
+          "tabId": "379443C2815DC70E1C2377F922B498BA",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/379443C2815DC70E1C2377F922B498BA",
           "title": "Garage Grown Gear (@garagegrowngear) · Instagram 照片和视频"
         },
         "sendStatus": "failed_open",
@@ -347,8 +347,8 @@
         "engine": "codex-chrome-extension-cdp",
         "port": 9224,
         "targetUrl": "https://www.instagram.com/snowys_outdoors/",
-        "tabId": "FD1504C7B596537B7116510B158C2489",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/FD1504C7B596537B7116510B158C2489",
+        "tabId": "9481952F8801E3496ADC2861F1EF955D",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/9481952F8801E3496ADC2861F1EF955D",
         "title": "Snowys Outdoors (@snowys_outdoors) · Instagram 照片和视频"
       },
       "result": {
@@ -362,8 +362,8 @@
           "engine": "codex-chrome-extension-cdp",
           "port": 9224,
           "targetUrl": "https://www.instagram.com/snowys_outdoors/",
-          "tabId": "FD1504C7B596537B7116510B158C2489",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/FD1504C7B596537B7116510B158C2489",
+          "tabId": "9481952F8801E3496ADC2861F1EF955D",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/9481952F8801E3496ADC2861F1EF955D",
           "title": "Snowys Outdoors (@snowys_outdoors) · Instagram 照片和视频"
         },
         "sendStatus": "failed_open",
@@ -381,8 +381,74 @@
   ],
   "skipped": [
     {
+      "id": "google-customer-aqipa-website-contact",
+      "company": "Aqipa",
+      "action": "verify_target",
+      "reason": "marketing_attachment_missing"
+    },
+    {
       "id": "google-customer-obelink-website-contact",
       "company": "Obelink",
+      "action": "verify_target",
+      "reason": "marketing_attachment_missing"
+    },
+    {
+      "id": "google-customer-globetrotter-website-contact",
+      "company": "Globetrotter",
+      "action": "verify_target",
+      "reason": "marketing_attachment_missing"
+    },
+    {
+      "id": "google-customer-au-vieux-campeur-website-contact",
+      "company": "Au Vieux Campeur",
+      "action": "verify_target",
+      "reason": "marketing_attachment_missing"
+    },
+    {
+      "id": "google-customer-bergfreunde-website-contact",
+      "company": "Bergfreunde",
+      "action": "verify_target",
+      "reason": "marketing_attachment_missing"
+    },
+    {
+      "id": "google-customer-fritz-berger-website-contact",
+      "company": "Fritz Berger",
+      "action": "verify_target",
+      "reason": "marketing_attachment_missing"
+    },
+    {
+      "id": "google-customer-bergzeit-website-contact",
+      "company": "Bergzeit",
+      "action": "verify_target",
+      "reason": "marketing_attachment_missing"
+    },
+    {
+      "id": "google-customer-camping-wagner-website-contact",
+      "company": "Camping Wagner",
+      "action": "verify_target",
+      "reason": "marketing_attachment_missing"
+    },
+    {
+      "id": "google-customer-fjellsport-website-contact",
+      "company": "Fjellsport",
+      "action": "verify_target",
+      "reason": "marketing_attachment_missing"
+    },
+    {
+      "id": "google-customer-naturkompaniet-website-contact",
+      "company": "Naturkompaniet",
+      "action": "verify_target",
+      "reason": "marketing_attachment_missing"
+    },
+    {
+      "id": "google-customer-outnorth-website-contact",
+      "company": "Outnorth",
+      "action": "verify_target",
+      "reason": "marketing_attachment_missing"
+    },
+    {
+      "id": "google-customer-barrabes-website-contact",
+      "company": "Barrabes",
       "action": "verify_target",
       "reason": "marketing_attachment_missing"
     },
@@ -393,14 +459,44 @@
       "reason": "marketing_attachment_missing"
     },
     {
+      "id": "google-customer-ekosport-website-contact",
+      "company": "Ekosport",
+      "action": "verify_target",
+      "reason": "marketing_attachment_missing"
+    },
+    {
       "id": "google-customer-scandinavian-outdoor-website-contact",
       "company": "Scandinavian Outdoor",
       "action": "verify_target",
       "reason": "marketing_attachment_missing"
     },
     {
+      "id": "google-customer-snowleader-website-contact",
+      "company": "Snowleader",
+      "action": "verify_target",
+      "reason": "marketing_attachment_missing"
+    },
+    {
+      "id": "google-customer-friluftsland-website-contact",
+      "company": "Friluftsland",
+      "action": "verify_target",
+      "reason": "marketing_attachment_missing"
+    },
+    {
       "id": "google-customer-outdoorxl-website-contact",
       "company": "OutdoorXL",
+      "action": "verify_target",
+      "reason": "marketing_attachment_missing"
+    },
+    {
+      "id": "google-customer-spejder-sport-website-contact",
+      "company": "Spejder Sport",
+      "action": "verify_target",
+      "reason": "marketing_attachment_missing"
+    },
+    {
+      "id": "google-customer-hardloop-website-contact",
+      "company": "Hardloop",
       "action": "verify_target",
       "reason": "marketing_attachment_missing"
     },
@@ -413,6 +509,12 @@
     {
       "id": "google-customer-varuste-website-contact",
       "company": "Varuste",
+      "action": "verify_target",
+      "reason": "marketing_attachment_missing"
+    },
+    {
+      "id": "google-customer-transa-website-contact",
+      "company": "Transa",
       "action": "verify_target",
       "reason": "marketing_attachment_missing"
     },
@@ -531,66 +633,6 @@
       "reason": "marketing_attachment_missing"
     },
     {
-      "id": "google-customer-aqipa-website-contact",
-      "company": "Aqipa",
-      "action": "verify_target",
-      "reason": "marketing_attachment_missing"
-    },
-    {
-      "id": "google-customer-globetrotter-website-contact",
-      "company": "Globetrotter",
-      "action": "verify_target",
-      "reason": "marketing_attachment_missing"
-    },
-    {
-      "id": "google-customer-au-vieux-campeur-website-contact",
-      "company": "Au Vieux Campeur",
-      "action": "verify_target",
-      "reason": "marketing_attachment_missing"
-    },
-    {
-      "id": "google-customer-bergfreunde-website-contact",
-      "company": "Bergfreunde",
-      "action": "verify_target",
-      "reason": "marketing_attachment_missing"
-    },
-    {
-      "id": "google-customer-fritz-berger-website-contact",
-      "company": "Fritz Berger",
-      "action": "verify_target",
-      "reason": "marketing_attachment_missing"
-    },
-    {
-      "id": "google-customer-bergzeit-website-contact",
-      "company": "Bergzeit",
-      "action": "verify_target",
-      "reason": "marketing_attachment_missing"
-    },
-    {
-      "id": "google-customer-camping-wagner-website-contact",
-      "company": "Camping Wagner",
-      "action": "verify_target",
-      "reason": "marketing_attachment_missing"
-    },
-    {
-      "id": "google-customer-fjellsport-website-contact",
-      "company": "Fjellsport",
-      "action": "verify_target",
-      "reason": "marketing_attachment_missing"
-    },
-    {
-      "id": "google-customer-naturkompaniet-website-contact",
-      "company": "Naturkompaniet",
-      "action": "verify_target",
-      "reason": "marketing_attachment_missing"
-    },
-    {
-      "id": "google-customer-outnorth-website-contact",
-      "company": "Outnorth",
-      "action": "verify_target",
-      "reason": "marketing_attachment_missing"
-    },
-    {
       "id": "google-customer-trekitt-website-contact",
       "company": "Trekitt",
       "action": "verify_target",
@@ -609,44 +651,8 @@
       "reason": "marketing_attachment_missing"
     },
     {
-      "id": "google-customer-barrabes-website-contact",
-      "company": "Barrabes",
-      "action": "verify_target",
-      "reason": "marketing_attachment_missing"
-    },
-    {
-      "id": "google-customer-ekosport-website-contact",
-      "company": "Ekosport",
-      "action": "verify_target",
-      "reason": "marketing_attachment_missing"
-    },
-    {
-      "id": "google-customer-snowleader-website-contact",
-      "company": "Snowleader",
-      "action": "verify_target",
-      "reason": "marketing_attachment_missing"
-    },
-    {
-      "id": "google-customer-friluftsland-website-contact",
-      "company": "Friluftsland",
-      "action": "verify_target",
-      "reason": "marketing_attachment_missing"
-    },
-    {
-      "id": "google-customer-spejder-sport-website-contact",
-      "company": "Spejder Sport",
-      "action": "verify_target",
-      "reason": "marketing_attachment_missing"
-    },
-    {
       "id": "google-customer-taunton-leisure-website-contact",
       "company": "Taunton Leisure",
-      "action": "verify_target",
-      "reason": "marketing_attachment_missing"
-    },
-    {
-      "id": "google-customer-hardloop-website-contact",
-      "company": "Hardloop",
       "action": "verify_target",
       "reason": "marketing_attachment_missing"
     },
@@ -761,12 +767,6 @@
     {
       "id": "google-customer-further-faster-website-contact",
       "company": "Further Faster",
-      "action": "verify_target",
-      "reason": "marketing_attachment_missing"
-    },
-    {
-      "id": "google-customer-transa-website-contact",
-      "company": "Transa",
       "action": "verify_target",
       "reason": "marketing_attachment_missing"
     },
@@ -1262,12 +1262,12 @@
     "stderr": "",
     "error": "",
     "visibility": {
-      "updatedAt": "2026-07-14T07:00:58.203Z",
+      "updatedAt": "2026-07-14T07:05:30.086Z",
       "source": "main-refreshDailyAutomationArtifacts",
       "runDate": "2026-07-14",
-      "artifactGeneratedAt": "2026-07-14T07:00:57.274Z",
-      "executionGeneratedAt": "2026-07-14T06:25:25.664Z",
-      "githubSyncUpdatedAt": "2026-07-14T06:28:01.280Z",
+      "artifactGeneratedAt": "2026-07-14T07:05:29.113Z",
+      "executionGeneratedAt": "2026-07-14T07:00:58.717Z",
+      "githubSyncUpdatedAt": "2026-07-14T07:03:46.471Z",
       "counts": {
         "dailyQueue": 73,
         "googleDiscovered": 53,
@@ -1313,5 +1313,5 @@
       }
     }
   },
-  "completedAt": "2026-07-14T07:00:58.717Z"
+  "completedAt": "2026-07-14T07:05:30.636Z"
 }
