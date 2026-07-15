@@ -2683,9 +2683,20 @@ function executionRecoveryHint(blockerSummary = []) {
   return actions.length ? actions.map(item => item.hint).join(' ') : undefined;
 }
 
-function executionRecoveryActions(blockerSummary = []) {
+function executionRecoveryActions(blockerSummary = [], queueGoalStatus = null) {
   const reasons = new Set((Array.isArray(blockerSummary) ? blockerSummary : []).map(item => item && item.reason));
   const actions = [];
+  if (queueGoalStatus && queueGoalStatus.reached === false) {
+    actions.push({
+      reason: 'daily_queue_goal_not_reached',
+      action: 'Refill high-ICP customer pool',
+      description: `Add or unblock ${queueGoalStatus.refillNeeded || 0} verified high-ICP leads to reach the daily 100 target.`,
+      hint: `Refill the high-ICP pool with ${queueGoalStatus.refillNeeded || 0} verified leads or unblock existing website/social leads before the next run.`,
+      target: queueGoalStatus.target,
+      potentialPool: queueGoalStatus.potentialPool,
+      refillNeeded: queueGoalStatus.refillNeeded,
+    });
+  }
   if (reasons.has('marketing_attachment_missing')) {
     actions.push({
       reason: 'marketing_attachment_missing',
@@ -2846,10 +2857,10 @@ async function runDailyAutomationQueue(payload = {}) {
     const blockerSummary = buildExecutionBlockerSummary([], skippedRows);
     const userVisibleStatus = formatExecutionBlockerStatus(blockerSummary)
       || 'No Chrome/browser development was performed because safety gates left no executable tasks.';
-    const recoveryHint = executionRecoveryHint(blockerSummary);
-    const recoveryActions = executionRecoveryActions(blockerSummary);
     const blockerCounts = executionBlockerCounts(blockerSummary);
     const queueGoalStatus = executionQueueGoalStatus(latest.summary || {});
+    const recoveryActions = executionRecoveryActions(blockerSummary, queueGoalStatus);
+    const recoveryHint = recoveryActions.length ? recoveryActions.map(item => item.hint).join(' ') : undefined;
     return {
       ok: false,
       skippedOnly: true,
@@ -2968,10 +2979,10 @@ async function runDailyAutomationQueue(payload = {}) {
   const systemRefresh = await refreshDailyAutomationArtifacts();
   const blockerSummary = buildExecutionBlockerSummary(results, skipped);
   const userVisibleStatus = formatExecutionBlockerStatus(blockerSummary);
-  const recoveryHint = executionRecoveryHint(blockerSummary);
-  const recoveryActions = executionRecoveryActions(blockerSummary);
   const blockerCounts = executionBlockerCounts(blockerSummary);
   const queueGoalStatus = executionQueueGoalStatus(latest.summary || {});
+  const recoveryActions = executionRecoveryActions(blockerSummary, queueGoalStatus);
+  const recoveryHint = recoveryActions.length ? recoveryActions.map(item => item.hint).join(' ') : undefined;
 
   return {
     ok: results.some(item => item.ok),
