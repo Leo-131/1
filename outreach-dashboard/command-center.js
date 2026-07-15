@@ -1501,7 +1501,7 @@
   }
   function taskTable(list) {
     if (!list.length) return '<div class="cc-empty">当前筛选下没有客户</div>';
-    return `<table class="cc-table"><thead><tr><th>客户</th><th>国家</th><th>关键词</th><th>状态</th><th>成交分</th><th>区域</th><th>操作</th></tr></thead><tbody>${list.map(task => {
+    return `<table class="cc-table"><thead><tr><th>客户</th><th>国家</th><th>关键词</th><th>状态</th><th>ICP分</th><th>区域</th><th>操作</th></tr></thead><tbody>${list.map(task => {
       const qualified = shouldRetainWithoutStrike(task);
       const rowClass = qualified ? '' : ' class="cc-low-icp"';
       const linkClass = qualified ? '' : ' class="cc-strike-link"';
@@ -1509,7 +1509,7 @@
       const profileHref = urlFor('customer', { contact: task.taskId });
       const customerLinkAttrs = ` href="${profileHref}"`;
       const archiveLink = target ? `<br><a class="cc-sub-link" href="${esc(target)}" target="_blank" rel="noopener">Verified channel</a>` : '';
-      return `<tr${rowClass}><td><a${linkClass}${customerLinkAttrs} title="Open verified customer platform; ${esc(icpExplanation(task))}">${esc(task.company)}</a>${archiveLink}${task.identityStatus === 'identity_mismatch' ? '<br><span class="cc-chip red">Identity mismatch</span>' : ''}${qualified ? '' : '<br><span class="cc-chip amber">Low ICP retained</span>'}</td><td>${esc(normalizedCountry(task))}</td><td>${esc(task.keyword)}</td><td><span class="cc-chip">${stateLabel(task.state)}</span></td><td title="ICP ${icpScore(task)} + market/contact/region priority">${dealProbabilityScore(task)}</td><td><span class="cc-chip ${['southeast_asia', 'europe', 'americas'].includes(targetRegion(task)) ? 'green' : ''}">${esc(targetRegion(task))}</span></td><td><div class="cc-row-actions"><button type="button" onclick="openVerifiedCustomer('${esc(task.taskId)}')" ${target ? '' : 'disabled'}>Open profile</button><button type="button" title="${esc(autoClawAvailability(task).reason)}" onclick="runGlmDirect('${esc(task.taskId)}')" ${canRunGlm(task) ? '' : 'disabled'}>${esc(autoClawAvailability(task).label)}</button></div></td></tr>`;
+      return `<tr${rowClass}><td><a${linkClass}${customerLinkAttrs} title="Open verified customer platform; ${esc(icpExplanation(task))}">${esc(task.company)}</a>${archiveLink}${task.identityStatus === 'identity_mismatch' ? '<br><span class="cc-chip red">Identity mismatch</span>' : ''}${qualified ? '' : '<br><span class="cc-chip amber">Low ICP retained</span>'}</td><td>${esc(normalizedCountry(task))}</td><td>${esc(task.keyword)}</td><td><span class="cc-chip">${stateLabel(task.state)}</span></td><td title="${esc(icpExplanation(task))}">${icpScore(task)}</td><td><span class="cc-chip ${['southeast_asia', 'europe', 'americas'].includes(targetRegion(task)) ? 'green' : ''}">${esc(targetRegion(task))}</span></td><td><div class="cc-row-actions"><button type="button" onclick="openVerifiedCustomer('${esc(task.taskId)}')" ${target ? '' : 'disabled'}>Open profile</button><button type="button" title="${esc(autoClawAvailability(task).reason)}" onclick="runGlmDirect('${esc(task.taskId)}')" ${canRunGlm(task) ? '' : 'disabled'}>${esc(autoClawAvailability(task).label)}</button></div></td></tr>`;
     }).join('')}</tbody></table>`;
   }
   function queue() {

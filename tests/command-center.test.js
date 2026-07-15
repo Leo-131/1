@@ -201,6 +201,15 @@ test('customer table displays bounded ICP scores instead of composite priority s
   assert.ok(!customerTableBlock.includes('>${dealProbabilityScore(record)}</td>'));
 });
 
+test('today queue displays bounded ICP scores instead of composite deal scores', () => {
+  const taskTableBlock = js.slice(js.indexOf('function taskTable'), js.indexOf('function queue()'));
+  assert.ok(taskTableBlock.includes('<th>ICP分</th>'));
+  assert.ok(taskTableBlock.includes('>${icpScore(task)}</td>'));
+  assert.ok(taskTableBlock.includes('title="${esc(icpExplanation(task))}"'));
+  assert.ok(!taskTableBlock.includes('>${dealProbabilityScore(task)}</td>'));
+  assert.ok(!taskTableBlock.includes('market/contact/region priority'));
+});
+
 test('workspace metric cards navigate to matching filtered content', () => {
   assert.ok(js.includes('cc-kpi-link'));
   assert.ok(js.includes("urlFor('queue', { queue: 'untouched' })"));
