@@ -726,6 +726,15 @@
     "missing_verified_profile_url": 16,
     "concrete_google_discovered_major_customer_instagram": 2
   },
+  "queueGoalStatus": {
+    "target": 100,
+    "potentialPool": 66,
+    "queueCount": 68,
+    "googleDiscovered": 48,
+    "refillNeeded": 34,
+    "reached": false,
+    "action": "Add more verified high-ICP sources or unblock existing website/social leads."
+  },
   "summary": {
     "totalLeads": 16,
     "highIcp": 16,
@@ -747,5 +756,5 @@
     "needsVerification": 0,
     "retainedLowIcp": 0
   },
-  "completedAt": "2026-07-15T10:02:57.853Z"
+  "completedAt": "2026-07-15T10:05:28.023Z"
 }

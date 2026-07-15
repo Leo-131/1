@@ -2680,6 +2680,25 @@ function executionBlockerCounts(blockerSummary = []) {
   }, {});
 }
 
+function executionQueueGoalStatus(summary = {}) {
+  const target = Number(summary.potentialPoolTarget || 100);
+  const potentialPool = Number(summary.potentialPool || 0);
+  const queueCount = Number(summary.dueNow || summary.dailyQueue || summary.queueCount || 0);
+  const googleDiscovered = Number(summary.googleDiscovered || 0);
+  const refillNeeded = Math.max(0, Number.isFinite(target) ? target - potentialPool : 0);
+  return {
+    target,
+    potentialPool,
+    queueCount,
+    googleDiscovered,
+    refillNeeded,
+    reached: refillNeeded === 0,
+    action: refillNeeded > 0
+      ? 'Add more verified high-ICP sources or unblock existing website/social leads.'
+      : 'Daily high-ICP queue target reached.',
+  };
+}
+
 function formatExecutionBlockerStatus(blockerSummary = []) {
   const rows = Array.isArray(blockerSummary) ? blockerSummary.filter(Boolean) : [];
   if (!rows.length) return undefined;
@@ -2763,6 +2782,7 @@ async function runDailyAutomationQueue(payload = {}) {
     const recoveryHint = executionRecoveryHint(blockerSummary);
     const recoveryActions = executionRecoveryActions(blockerSummary);
     const blockerCounts = executionBlockerCounts(blockerSummary);
+    const queueGoalStatus = executionQueueGoalStatus(latest.summary || {});
     return {
       ok: false,
       skippedOnly: true,
@@ -2781,6 +2801,7 @@ async function runDailyAutomationQueue(payload = {}) {
       skipped: skippedRows,
       blockerSummary,
       blockerCounts,
+      queueGoalStatus,
       summary: latest.summary || {},
     };
   }
@@ -2883,6 +2904,7 @@ async function runDailyAutomationQueue(payload = {}) {
   const recoveryHint = executionRecoveryHint(blockerSummary);
   const recoveryActions = executionRecoveryActions(blockerSummary);
   const blockerCounts = executionBlockerCounts(blockerSummary);
+  const queueGoalStatus = executionQueueGoalStatus(latest.summary || {});
 
   return {
     ok: results.some(item => item.ok),
@@ -2900,6 +2922,7 @@ async function runDailyAutomationQueue(payload = {}) {
     summary: latest.summary || {},
     blockerSummary,
     blockerCounts,
+    queueGoalStatus,
     userVisibleStatus,
     recoveryHint,
     recoveryActions,
