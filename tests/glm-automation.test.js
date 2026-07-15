@@ -667,6 +667,9 @@ test('website contact automation must verify contact entry before ready status',
   assert.ok(mainSource.includes('website_contact_form_submit_clicked'));
   assert.ok(mainSource.includes('function formatExecutionBlockerStatus'));
   assert.ok(mainSource.includes('function executionRecoveryHint'));
+  assert.ok(mainSource.includes("reason: 'daily_queue_goal_not_reached'"));
+  assert.ok(mainSource.includes("action: 'Refill high-ICP customer pool'"));
+  assert.ok(mainSource.includes('Add or unblock ${queueGoalStatus.refillNeeded || 0} verified high-ICP leads'));
   assert.ok(mainSource.includes('Configure WEBSITE_MARKETING_FILE or MARKETING_ATTACHMENT_PATH'));
   assert.ok(mainSource.includes("requiredEnv: ['WEBSITE_MARKETING_FILE', 'MARKETING_ATTACHMENT_PATH']"));
   assert.ok(mainSource.includes('Complete Google social channel verification'));
