@@ -32,26 +32,140 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
   "error": "No executable tasks. Website-contact, social, cooldown, exclusive-agency, and verification safety gates left nothing safe to prepare.",
   "skipped": [
     {
-      "id": "google-customer-tentworld-website-contact",
-      "company": "Tentworld",
+      "id": "google-customer-aqipa-website-contact",
+      "company": "Aqipa",
       "action": "verify_target",
       "reason": "marketing_attachment_missing"
     },
     {
-      "id": "google-customer-bivouac-outdoor-website-contact",
-      "company": "Bivouac Outdoor",
+      "id": "google-customer-obelink-website-contact",
+      "company": "Obelink",
       "action": "verify_target",
       "reason": "marketing_attachment_missing"
     },
     {
-      "id": "google-customer-wildfire-sports-website-contact",
-      "company": "Wildfire Sports",
+      "id": "google-customer-globetrotter-website-contact",
+      "company": "Globetrotter",
       "action": "verify_target",
       "reason": "marketing_attachment_missing"
     },
     {
-      "id": "google-customer-further-faster-website-contact",
-      "company": "Further Faster",
+      "id": "google-customer-au-vieux-campeur-website-contact",
+      "company": "Au Vieux Campeur",
+      "action": "verify_target",
+      "reason": "marketing_attachment_missing"
+    },
+    {
+      "id": "google-customer-bergfreunde-website-contact",
+      "company": "Bergfreunde",
+      "action": "verify_target",
+      "reason": "marketing_attachment_missing"
+    },
+    {
+      "id": "google-customer-fritz-berger-website-contact",
+      "company": "Fritz Berger",
+      "action": "verify_target",
+      "reason": "marketing_attachment_missing"
+    },
+    {
+      "id": "google-customer-bergzeit-website-contact",
+      "company": "Bergzeit",
+      "action": "verify_target",
+      "reason": "marketing_attachment_missing"
+    },
+    {
+      "id": "google-customer-camping-wagner-website-contact",
+      "company": "Camping Wagner",
+      "action": "verify_target",
+      "reason": "marketing_attachment_missing"
+    },
+    {
+      "id": "google-customer-fjellsport-website-contact",
+      "company": "Fjellsport",
+      "action": "verify_target",
+      "reason": "marketing_attachment_missing"
+    },
+    {
+      "id": "google-customer-naturkompaniet-website-contact",
+      "company": "Naturkompaniet",
+      "action": "verify_target",
+      "reason": "marketing_attachment_missing"
+    },
+    {
+      "id": "google-customer-outnorth-website-contact",
+      "company": "Outnorth",
+      "action": "verify_target",
+      "reason": "marketing_attachment_missing"
+    },
+    {
+      "id": "google-customer-barrabes-website-contact",
+      "company": "Barrabes",
+      "action": "verify_target",
+      "reason": "marketing_attachment_missing"
+    },
+    {
+      "id": "google-customer-de-wit-schijndel-website-contact",
+      "company": "De Wit Schijndel",
+      "action": "verify_target",
+      "reason": "marketing_attachment_missing"
+    },
+    {
+      "id": "google-customer-ekosport-website-contact",
+      "company": "Ekosport",
+      "action": "verify_target",
+      "reason": "marketing_attachment_missing"
+    },
+    {
+      "id": "google-customer-scandinavian-outdoor-website-contact",
+      "company": "Scandinavian Outdoor",
+      "action": "verify_target",
+      "reason": "marketing_attachment_missing"
+    },
+    {
+      "id": "google-customer-snowleader-website-contact",
+      "company": "Snowleader",
+      "action": "verify_target",
+      "reason": "marketing_attachment_missing"
+    },
+    {
+      "id": "google-customer-friluftsland-website-contact",
+      "company": "Friluftsland",
+      "action": "verify_target",
+      "reason": "marketing_attachment_missing"
+    },
+    {
+      "id": "google-customer-outdoorxl-website-contact",
+      "company": "OutdoorXL",
+      "action": "verify_target",
+      "reason": "marketing_attachment_missing"
+    },
+    {
+      "id": "google-customer-spejder-sport-website-contact",
+      "company": "Spejder Sport",
+      "action": "verify_target",
+      "reason": "marketing_attachment_missing"
+    },
+    {
+      "id": "google-customer-hardloop-website-contact",
+      "company": "Hardloop",
+      "action": "verify_target",
+      "reason": "marketing_attachment_missing"
+    },
+    {
+      "id": "google-customer-kampeerwereld-hendriks-website-contact",
+      "company": "Kampeerwereld Hendriks",
+      "action": "verify_target",
+      "reason": "marketing_attachment_missing"
+    },
+    {
+      "id": "google-customer-varuste-website-contact",
+      "company": "Varuste",
+      "action": "verify_target",
+      "reason": "marketing_attachment_missing"
+    },
+    {
+      "id": "google-customer-transa-website-contact",
+      "company": "Transa",
       "action": "verify_target",
       "reason": "marketing_attachment_missing"
     },
@@ -170,72 +284,6 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "reason": "marketing_attachment_missing"
     },
     {
-      "id": "google-customer-aqipa-website-contact",
-      "company": "Aqipa",
-      "action": "verify_target",
-      "reason": "marketing_attachment_missing"
-    },
-    {
-      "id": "google-customer-obelink-website-contact",
-      "company": "Obelink",
-      "action": "verify_target",
-      "reason": "marketing_attachment_missing"
-    },
-    {
-      "id": "google-customer-globetrotter-website-contact",
-      "company": "Globetrotter",
-      "action": "verify_target",
-      "reason": "marketing_attachment_missing"
-    },
-    {
-      "id": "google-customer-au-vieux-campeur-website-contact",
-      "company": "Au Vieux Campeur",
-      "action": "verify_target",
-      "reason": "marketing_attachment_missing"
-    },
-    {
-      "id": "google-customer-bergfreunde-website-contact",
-      "company": "Bergfreunde",
-      "action": "verify_target",
-      "reason": "marketing_attachment_missing"
-    },
-    {
-      "id": "google-customer-fritz-berger-website-contact",
-      "company": "Fritz Berger",
-      "action": "verify_target",
-      "reason": "marketing_attachment_missing"
-    },
-    {
-      "id": "google-customer-bergzeit-website-contact",
-      "company": "Bergzeit",
-      "action": "verify_target",
-      "reason": "marketing_attachment_missing"
-    },
-    {
-      "id": "google-customer-camping-wagner-website-contact",
-      "company": "Camping Wagner",
-      "action": "verify_target",
-      "reason": "marketing_attachment_missing"
-    },
-    {
-      "id": "google-customer-fjellsport-website-contact",
-      "company": "Fjellsport",
-      "action": "verify_target",
-      "reason": "marketing_attachment_missing"
-    },
-    {
-      "id": "google-customer-naturkompaniet-website-contact",
-      "company": "Naturkompaniet",
-      "action": "verify_target",
-      "reason": "marketing_attachment_missing"
-    },
-    {
-      "id": "google-customer-outnorth-website-contact",
-      "company": "Outnorth",
-      "action": "verify_target",
-      "reason": "marketing_attachment_missing"
-    },
-    {
       "id": "google-customer-trekitt-website-contact",
       "company": "Trekitt",
       "action": "verify_target",
@@ -254,80 +302,14 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "reason": "marketing_attachment_missing"
     },
     {
-      "id": "google-customer-barrabes-website-contact",
-      "company": "Barrabes",
-      "action": "verify_target",
-      "reason": "marketing_attachment_missing"
-    },
-    {
-      "id": "google-customer-de-wit-schijndel-website-contact",
-      "company": "De Wit Schijndel",
-      "action": "verify_target",
-      "reason": "marketing_attachment_missing"
-    },
-    {
-      "id": "google-customer-ekosport-website-contact",
-      "company": "Ekosport",
-      "action": "verify_target",
-      "reason": "marketing_attachment_missing"
-    },
-    {
-      "id": "google-customer-scandinavian-outdoor-website-contact",
-      "company": "Scandinavian Outdoor",
-      "action": "verify_target",
-      "reason": "marketing_attachment_missing"
-    },
-    {
-      "id": "google-customer-snowleader-website-contact",
-      "company": "Snowleader",
-      "action": "verify_target",
-      "reason": "marketing_attachment_missing"
-    },
-    {
-      "id": "google-customer-friluftsland-website-contact",
-      "company": "Friluftsland",
-      "action": "verify_target",
-      "reason": "marketing_attachment_missing"
-    },
-    {
-      "id": "google-customer-outdoorxl-website-contact",
-      "company": "OutdoorXL",
-      "action": "verify_target",
-      "reason": "marketing_attachment_missing"
-    },
-    {
-      "id": "google-customer-spejder-sport-website-contact",
-      "company": "Spejder Sport",
-      "action": "verify_target",
-      "reason": "marketing_attachment_missing"
-    },
-    {
       "id": "google-customer-taunton-leisure-website-contact",
       "company": "Taunton Leisure",
       "action": "verify_target",
       "reason": "marketing_attachment_missing"
     },
     {
-      "id": "google-customer-hardloop-website-contact",
-      "company": "Hardloop",
-      "action": "verify_target",
-      "reason": "marketing_attachment_missing"
-    },
-    {
-      "id": "google-customer-kampeerwereld-hendriks-website-contact",
-      "company": "Kampeerwereld Hendriks",
-      "action": "verify_target",
-      "reason": "marketing_attachment_missing"
-    },
-    {
       "id": "google-customer-sportpursuit-website-contact",
       "company": "SportPursuit",
-      "action": "verify_target",
-      "reason": "marketing_attachment_missing"
-    },
-    {
-      "id": "google-customer-varuste-website-contact",
-      "company": "Varuste",
       "action": "verify_target",
       "reason": "marketing_attachment_missing"
     },
@@ -410,8 +392,26 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "reason": "marketing_attachment_missing"
     },
     {
-      "id": "google-customer-transa-website-contact",
-      "company": "Transa",
+      "id": "google-customer-tentworld-website-contact",
+      "company": "Tentworld",
+      "action": "verify_target",
+      "reason": "marketing_attachment_missing"
+    },
+    {
+      "id": "google-customer-bivouac-outdoor-website-contact",
+      "company": "Bivouac Outdoor",
+      "action": "verify_target",
+      "reason": "marketing_attachment_missing"
+    },
+    {
+      "id": "google-customer-wildfire-sports-website-contact",
+      "company": "Wildfire Sports",
+      "action": "verify_target",
+      "reason": "marketing_attachment_missing"
+    },
+    {
+      "id": "google-customer-further-faster-website-contact",
+      "company": "Further Faster",
       "action": "verify_target",
       "reason": "marketing_attachment_missing"
     },
@@ -741,5 +741,5 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     "needsVerification": 0,
     "retainedLowIcp": 0
   },
-  "completedAt": "2026-07-15T04:03:42.174Z"
+  "completedAt": "2026-07-15T07:03:02.965Z"
 };
