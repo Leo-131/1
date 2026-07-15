@@ -1293,6 +1293,19 @@
   function executionSkipped() {
     return Array.isArray(latestExecution && latestExecution.skipped) ? latestExecution.skipped : [];
   }
+  function executionBlockerBucketRows(skipped) {
+    const blockerCounts = latestExecution && latestExecution.blockerCounts;
+    const buckets = blockerCounts && typeof blockerCounts === 'object'
+      ? blockerCounts
+      : skipped.reduce((acc, item) => {
+        const key = item.reason || item.error || item.status || 'unknown';
+        acc[key] = (acc[key] || 0) + 1;
+        return acc;
+      }, {});
+    return Object.entries(buckets)
+      .sort((a, b) => b[1] - a[1])
+      .map(([reason, count]) => ({ reason, count, label: humanSkipLabel(reason) }));
+  }
   function humanSkipLabel(reason) {
     const labels = {
       official_website_contact_channel: '官网/邮件入口，需要人工或专用邮件流程',
@@ -1316,14 +1329,7 @@
       || latestExecution.chromeOpened === false
       || (latestExecution.customerDevelopmentPerformed === false && latestExecution.skippedOnly)
     );
-    const buckets = skipped.reduce((acc, item) => {
-      const key = item.reason || item.error || item.status || 'unknown';
-      acc[key] = (acc[key] || 0) + 1;
-      return acc;
-    }, {});
-    const bucketRows = Object.entries(buckets)
-      .sort((a, b) => b[1] - a[1])
-      .map(([reason, count]) => ({ reason, count, label: humanSkipLabel(reason) }));
+    const bucketRows = executionBlockerBucketRows(skipped);
     const chromeEntered = (latestExecution && latestExecution.chromeOpened === true)
       || results.some(item => item && (item.chromeOpen && item.chromeOpen.ok || item.ok || item.status || item.evidence || item.automationEvidence));
     const chromeStage = noBrowserExecution
