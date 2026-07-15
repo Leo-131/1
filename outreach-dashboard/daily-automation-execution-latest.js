@@ -9,8 +9,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
   "customerMessageSent": false,
   "realDevelopmentCount": 0,
   "reportingVerdict": "no_customer_development_performed",
-  "userVisibleStatus": "Customer development was not performed. Blockers: marketing_attachment_missing (93); missing_verified_profile_url (16); concrete_google_discovered_major_customer_instagram (2).",
-  "recoveryHint": "Configure WEBSITE_MARKETING_FILE or MARKETING_ATTACHMENT_PATH with an approved marketing attachment before rerunning website-contact outreach. Add a verified Facebook or Instagram profile URL before retrying social outreach. Confirm the official social profile and safe message entry before rerunning Google-discovered social outreach.",
+  "userVisibleStatus": "Customer development was not performed. Blockers: marketing_attachment_missing (109); concrete_google_discovered_major_customer_instagram (2).",
+  "recoveryHint": "Configure WEBSITE_MARKETING_FILE or MARKETING_ATTACHMENT_PATH with an approved marketing attachment before rerunning website-contact outreach. Confirm the official social profile and safe message entry before rerunning Google-discovered social outreach.",
   "recoveryActions": [
     {
       "reason": "marketing_attachment_missing",
@@ -21,12 +21,6 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
         "WEBSITE_MARKETING_FILE",
         "MARKETING_ATTACHMENT_PATH"
       ]
-    },
-    {
-      "reason": "missing_verified_profile_url",
-      "action": "Verify official social profile URL",
-      "description": "Add a verified Facebook or Instagram profile URL before retrying social outreach.",
-      "hint": "Add a verified Facebook or Instagram profile URL before retrying social outreach."
     },
     {
       "reason": "google_social_profile_not_executable",
@@ -89,97 +83,97 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "id": 23,
       "company": "Ace Hardware",
       "action": "verify_target",
-      "reason": "missing_verified_profile_url"
+      "reason": "marketing_attachment_missing"
     },
     {
       "id": 7,
       "company": "AutoZone",
       "action": "verify_target",
-      "reason": "missing_verified_profile_url"
+      "reason": "marketing_attachment_missing"
     },
     {
       "id": 10,
       "company": "Backcountry.com",
       "action": "verify_target",
-      "reason": "missing_verified_profile_url"
+      "reason": "marketing_attachment_missing"
     },
     {
       "id": 20,
       "company": "Harbor Freight",
       "action": "verify_target",
-      "reason": "missing_verified_profile_url"
+      "reason": "marketing_attachment_missing"
     },
     {
       "id": 6,
       "company": "L.L.Bean",
       "action": "verify_target",
-      "reason": "missing_verified_profile_url"
+      "reason": "marketing_attachment_missing"
     },
     {
       "id": 17,
       "company": "Target",
       "action": "verify_target",
-      "reason": "missing_verified_profile_url"
+      "reason": "marketing_attachment_missing"
     },
     {
       "id": 22,
       "company": "Thor Industries",
       "action": "verify_target",
-      "reason": "missing_verified_profile_url"
+      "reason": "marketing_attachment_missing"
     },
     {
       "id": 13,
       "company": "Walgreens",
       "action": "verify_target",
-      "reason": "missing_verified_profile_url"
+      "reason": "marketing_attachment_missing"
     },
     {
       "id": 18,
       "company": "Winnebago",
       "action": "verify_target",
-      "reason": "missing_verified_profile_url"
+      "reason": "marketing_attachment_missing"
     },
     {
       "id": 11,
       "company": "Best Buy",
       "action": "verify_target",
-      "reason": "missing_verified_profile_url"
+      "reason": "marketing_attachment_missing"
     },
     {
       "id": 9,
       "company": "Canadian Tire",
       "action": "verify_target",
-      "reason": "missing_verified_profile_url"
+      "reason": "marketing_attachment_missing"
     },
     {
       "id": 19,
       "company": "MEC (Mountain Equipment Co-op)",
       "action": "verify_target",
-      "reason": "missing_verified_profile_url"
+      "reason": "marketing_attachment_missing"
     },
     {
       "id": 16,
       "company": "Airstream",
       "action": "verify_target",
-      "reason": "missing_verified_profile_url"
+      "reason": "marketing_attachment_missing"
     },
     {
       "id": 5,
       "company": "Pacific Outdoor Group",
       "action": "verify_target",
-      "reason": "missing_verified_profile_url"
+      "reason": "marketing_attachment_missing"
     },
     {
       "id": 14,
       "company": "Rural King",
       "action": "verify_target",
-      "reason": "missing_verified_profile_url"
+      "reason": "marketing_attachment_missing"
     },
     {
       "id": 21,
       "company": "RVDA (RV Dealers Association)",
       "action": "verify_target",
-      "reason": "missing_verified_profile_url"
+      "reason": "marketing_attachment_missing"
     },
     {
       "id": "google-customer-aqipa-website-contact",
@@ -708,12 +702,7 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     {
       "reason": "marketing_attachment_missing",
       "status": "skipped",
-      "count": 93
-    },
-    {
-      "reason": "missing_verified_profile_url",
-      "status": "skipped",
-      "count": 16
+      "count": 109
     },
     {
       "reason": "concrete_google_discovered_major_customer_instagram",
@@ -722,8 +711,7 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     }
   ],
   "blockerCounts": {
-    "marketing_attachment_missing": 93,
-    "missing_verified_profile_url": 16,
+    "marketing_attachment_missing": 109,
     "concrete_google_discovered_major_customer_instagram": 2
   },
   "queueGoalStatus": {
@@ -756,5 +744,5 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     "needsVerification": 0,
     "retainedLowIcp": 0
   },
-  "completedAt": "2026-07-15T10:05:28.023Z"
+  "completedAt": "2026-07-15T10:06:06.380Z"
 };
