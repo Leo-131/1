@@ -2720,6 +2720,14 @@ function executionRecoveryActions(blockerSummary = []) {
       hint: 'Use a verified alternate channel because the current social profile has no safe message button.',
     });
   }
+  if (reasons.has('failed_open')) {
+    actions.push({
+      reason: 'failed_open',
+      action: 'Verify profile accessibility',
+      description: 'Open the official profile manually or switch to another verified channel before retrying.',
+      hint: 'Verify the official profile opens and exposes a safe message composer, or switch to another verified channel.',
+    });
+  }
   if (reasons.has('website_contact_unreachable_skip')) {
     actions.push({
       reason: 'website_contact_unreachable_skip',
