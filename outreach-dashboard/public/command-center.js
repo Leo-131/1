@@ -2036,6 +2036,73 @@
       ['Management', 'Development Cycle', record.developmentCycle || potential.cycle, '预计成交周期'],
     ];
   }
+  function researchValue(record, keys, fallback) {
+    for (const key of keys) {
+      const value = record && record[key];
+      if (Array.isArray(value) && value.length) return value.join(' / ');
+      if (String(value || '').trim()) return value;
+    }
+    return fallback || '待核验';
+  }
+  function qwenResearchModel(record, score) {
+    const scoreValue = Math.round(Number(record.fitScore || score.total || 0));
+    const company = record.company || record.name || '该客户';
+    const model = record.businessModel || businessModel(record);
+    const position = marketPosition(record, scoreValue);
+    const fit = researchValue(record, ['productFit'], 'FLEXTAIL 便携泵、户外电源、露营照明及驱蚊产品');
+    const decisionMaker = researchValue(record, ['decisionMaker', 'buyerPersona', 'role'], 'Category Manager / Head of Purchasing / Vendor Review Contact');
+    const opportunity = researchValue(record, ['opportunity', 'salesAngle', 'background'], `以 ${fit} 补充其现有品类与高毛利配件组合`);
+    const sources = researchValue(record, ['dataSources', 'evidenceUrl', 'query'], '待补充公开来源并交叉核验');
+    const tier = priorityTier(record, score);
+    const conclusion = researchValue(record, ['executiveConclusion', 'researchConclusion'], `${company} 属于 ${position} 的 ${model}，当前 ICP ${scoreValue}/100（${tier}）。建议围绕“${opportunity}”切入，并先核验采购决策人与官方建联入口。`);
+    return {
+      conclusion,
+      snapshot: [
+        ['法律实体', researchValue(record, ['legalEntity', 'company', 'name'], company), '公司主体与注册名称'],
+        ['成立时间', researchValue(record, ['founded']), '公开公司资料'],
+        ['总部', researchValue(record, ['headquarters']), '总部及主要运营区域'],
+        ['公司规模', researchValue(record, ['companyScale', 'scale']), '员工、营收、门店或仓储网络'],
+        ['核心定位', researchValue(record, ['corePositioning', 'marketPosition'], `${position} / ${model}`), '市场角色与价值定位'],
+        ['行业地位', researchValue(record, ['industryPosition', 'mainBrands', 'brands']), '代理品牌、渠道能力或行业影响力'],
+        ['证据来源', sources, '所有关键事实应保留可追溯公开来源'],
+      ],
+      fitRows: [
+        ['推荐产品组合', fit, researchValue(record, ['productRationale'], '依据客户品类、渠道和终端用户场景匹配')],
+        ['跨界定位', researchValue(record, ['crossCategoryPositioning'], 'Premium Outdoor & Lifestyle Tech Accessories'), '避免仅以低价露营装备定位'],
+        ['采购价值', researchValue(record, ['buyerValue'], '差异化设计、高毛利加购、完整合规资料与稳定供应'), '面向采购方的商业价值'],
+        ['首轮话术', researchValue(record, ['recommendedOpening', 'salesAngle'], opportunity), '必须针对该客户业务而非通用群发'],
+      ],
+      decisionRows: [
+        ['目标决策人', decisionMaker],
+        ['首选渠道', researchValue(record, ['preferredChannel'], record.instagram_url ? 'Instagram 官方账号' : record.facebook_url ? 'Facebook 官方主页' : record.linkedin_url ? 'LinkedIn 公司主页' : '官网 Vendor / Contact 入口')],
+        ['首触动作', researchValue(record, ['firstTouchAction'], '核验官方账号与身份，发送一条客户定制化短消息，请求对接品类采购负责人')],
+        ['跟进路径', researchValue(record, ['followUpStrategy', 'salesStrategy'], 'Social DM -> Buyer Email -> Meeting -> Sample -> Quote')],
+        ['下一步', researchValue(record, ['nextAction', 'reason'], '补齐决策人姓名与公开联系方式后执行首触')],
+      ],
+      risks: [
+        ['品牌/品类适配', researchValue(record, ['brandRisk'], scoreValue >= 80 ? '中：需要突出设计、奖项与高毛利定位' : '中高：需先验证终端用户与品类重合'), '使用客户现有品牌和渠道语言重新包装产品价值'],
+        ['合规与准入', researchValue(record, ['complianceRisk'], '待核验 CE / RoHS / REACH / WEEE / UN38.3 及当地准入要求'), '首轮沟通主动说明可提供的认证与测试文件'],
+        ['商务条款', researchValue(record, ['commercialRisk'], '待核验 MOQ、账期、返利、独家与库存要求'), '报价前核算账期资金成本并设置首单风险边界'],
+        ['决策周期', researchValue(record, ['decisionCycleRisk', 'developmentCycle'], scoreValue >= 85 ? '预计 3-6 个月，多层采购与测试审批' : '待核验采购周期与上新窗口'), '以样品、市场证据和阶段性跟进推进，避免高频催单'],
+      ],
+      ratings: [
+        ['公司实力', Math.min(5, Math.max(1, Math.round(scoreValue / 20))), researchValue(record, ['companyStrengthReason'], `${model}；${researchValue(record, ['companyScale', 'scale'], '规模待核验')}`)],
+        ['渠道价值', Math.min(5, Math.max(1, Math.round((score.market || scoreValue) / 20))), researchValue(record, ['channelValueReason'], `${coverage(record)} coverage；${researchValue(record, ['mainBrands', 'brands'], '代理品牌待核验')}`)],
+        ['产品匹配', Math.min(5, Math.max(1, Math.round((score.icp || scoreValue) / 20))), researchValue(record, ['productFitReason'], fit)],
+        ['合作门槛', entryBarrier(record, scoreValue) === 'High' ? 5 : scoreValue >= 80 ? 4 : 3, researchValue(record, ['entryBarrierReason'], `${entryBarrier(record, scoreValue)}；需验证合规、采购流程与商务条件`)],
+      ],
+    };
+  }
+  function qwenResearchDashboard(record, score) {
+    const research = qwenResearchModel(record, score);
+    const table = (headers, rows) => `<div class="cc-table-wrap"><table class="cc-table"><thead><tr>${headers.map(item => `<th>${esc(item)}</th>`).join('')}</tr></thead><tbody>${rows.map(row => `<tr>${row.map(value => `<td>${esc(value)}</td>`).join('')}</tr>`).join('')}</tbody></table></div>`;
+    return `<section class="cc-panel"><div class="cc-panel-head"><h2>深度背调结论</h2><span class="cc-sub">按专业分析师尽调模板生成，缺失事实明确标记待核验</span></div><div class="cc-panel-body"><p>${esc(research.conclusion)}</p></div></section>
+      <section class="cc-panel"><div class="cc-panel-head"><h2>一、公司基本面（尽调快照）</h2></div>${table(['维度', '核心信息', '验证状态 / 分析师备注'], research.snapshot)}</section>
+      <section class="cc-panel"><div class="cc-panel-head"><h2>二、业务矩阵与 FLEXTAIL 匹配度</h2></div>${table(['分析项', '客户适配结论', '采购价值 / 依据'], research.fitRows)}</section>
+      <section class="cc-panel"><div class="cc-panel-head"><h2>三、实战攻坚 SOP</h2></div>${table(['步骤', '执行内容'], research.decisionRows)}</section>
+      <section class="cc-panel"><div class="cc-panel-head"><h2>四、风险预警与应对底线</h2></div>${table(['风险点', '实际情况', '应对策略'], research.risks)}</section>
+      <section class="cc-panel"><div class="cc-panel-head"><h2>五、综合评级</h2><span class="cc-sub">评级辅助决策，不替代 ICP 评分</span></div>${table(['评估维度', '评分（5分）', '说明'], research.ratings)}</section>`;
+  }
   function globalCustomerDashboard(record, score) {
     const rows = globalCustomerDashboardRows(record, score);
     const scoreRows = [
@@ -2084,6 +2151,7 @@
     return `${pageHead(esc(record.company || record.name), '独立客户详情页，不覆盖原工作台')}
       <section class="cc-panel"><div class="cc-panel-body"><div class="cc-current"><div><h3>${esc(record.name)}</h3><div class="cc-sub">${esc(record.role)} · ${esc(normalizedCountry(record))} · ${esc(record.platform)}</div></div><div class="cc-score"><strong>${score.total}</strong><span>综合开发分</span></div></div></div></section>
       <section class="cc-panel"><div class="cc-panel-head"><h2>ICP 评分解释</h2></div><div class="cc-panel-body"><div class="cc-sub">${esc(icpExplanation(record))}</div></div></section>
+      ${qwenResearchDashboard(record, score)}
       ${globalCustomerDashboard(record, score)}
       <section class="cc-panel"><div class="cc-panel-head"><h2>Sales Intelligence Dossier</h2><span class="cc-sub">Sales-ready customer facts, opportunity, risk, and next action</span></div><div class="cc-panel-body"><table class="cc-table"><tbody>${salesResearchRows(record, score).map(([label, value]) => `<tr><th>${esc(label)}</th><td>${esc(value)}</td></tr>`).join('')}</tbody></table></div></section>
       <section class="cc-panel"><div class="cc-panel-head"><h2>Verified Channel Matrix</h2><span class="cc-sub">Broken social links are marked for reroute instead of blind retry</span></div><div class="cc-panel-body"><table class="cc-table"><thead><tr><th>Channel</th><th>URL / Contact</th><th>Sales Use</th></tr></thead><tbody>${channelMatrixRows(record).map(([channel, url, note]) => `<tr><td>${esc(channel)}</td><td>${renderContactValue(url)}</td><td>${esc(note)}</td></tr>`).join('')}</tbody></table></div></section>
