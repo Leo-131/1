@@ -646,6 +646,7 @@ test('website contact automation must verify contact entry before ready status',
   assert.ok(mainSource.includes('function formatExecutionBlockerStatus'));
   assert.ok(mainSource.includes('function executionRecoveryHint'));
   assert.ok(mainSource.includes('Configure WEBSITE_MARKETING_FILE or MARKETING_ATTACHMENT_PATH'));
+  assert.ok(mainSource.includes("requiredEnv: ['WEBSITE_MARKETING_FILE', 'MARKETING_ATTACHMENT_PATH']"));
   assert.ok(mainSource.includes('Customer development was not performed. Blockers:'));
   assert.ok(mainSource.includes('submit_paused_by_env'));
   assert.ok(!mainSource.includes('required_fields_auto_bypassed'));
