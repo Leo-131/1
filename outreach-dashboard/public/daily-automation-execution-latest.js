@@ -10,7 +10,7 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
   "realDevelopmentCount": 0,
   "reportingVerdict": "no_customer_development_performed",
   "userVisibleStatus": "Customer development was not performed. Blockers: marketing_attachment_missing (93); missing_verified_profile_url (16); concrete_google_discovered_major_customer_instagram (2).",
-  "recoveryHint": "Configure WEBSITE_MARKETING_FILE or MARKETING_ATTACHMENT_PATH with an approved marketing attachment before rerunning website-contact outreach. Add a verified Facebook or Instagram profile URL before retrying social outreach.",
+  "recoveryHint": "Configure WEBSITE_MARKETING_FILE or MARKETING_ATTACHMENT_PATH with an approved marketing attachment before rerunning website-contact outreach. Add a verified Facebook or Instagram profile URL before retrying social outreach. Confirm the official social profile and safe message entry before rerunning Google-discovered social outreach.",
   "recoveryActions": [
     {
       "reason": "marketing_attachment_missing",
@@ -27,6 +27,12 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "action": "Verify official social profile URL",
       "description": "Add a verified Facebook or Instagram profile URL before retrying social outreach.",
       "hint": "Add a verified Facebook or Instagram profile URL before retrying social outreach."
+    },
+    {
+      "reason": "google_social_profile_not_executable",
+      "action": "Complete Google social channel verification",
+      "description": "Confirm the official social profile and safe message entry before rerunning Google-discovered social outreach.",
+      "hint": "Confirm the official social profile and safe message entry before rerunning Google-discovered social outreach."
     }
   ],
   "error": "No executable tasks. Website-contact, social, cooldown, exclusive-agency, and verification safety gates left nothing safe to prepare.",
@@ -741,5 +747,5 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     "needsVerification": 0,
     "retainedLowIcp": 0
   },
-  "completedAt": "2026-07-15T07:03:02.965Z"
+  "completedAt": "2026-07-15T07:04:46.502Z"
 };

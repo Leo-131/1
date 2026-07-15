@@ -2644,6 +2644,15 @@ function executionRecoveryActions(blockerSummary = []) {
       hint: 'Add a verified Facebook or Instagram profile URL before retrying social outreach.',
     });
   }
+  if (reasons.has('concrete_google_discovered_major_customer_instagram')
+    || reasons.has('concrete_google_discovered_major_customer_facebook')) {
+    actions.push({
+      reason: 'google_social_profile_not_executable',
+      action: 'Complete Google social channel verification',
+      description: 'Confirm the official social profile and safe message entry before rerunning Google-discovered social outreach.',
+      hint: 'Confirm the official social profile and safe message entry before rerunning Google-discovered social outreach.',
+    });
+  }
   if (reasons.has('profile_valid_no_message_button')) {
     actions.push({
       reason: 'profile_valid_no_message_button',
