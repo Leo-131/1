@@ -2633,6 +2633,7 @@ function executionRecoveryActions(blockerSummary = []) {
       action: 'Add approved website outreach attachment',
       description: 'Set WEBSITE_MARKETING_FILE or MARKETING_ATTACHMENT_PATH before rerunning website-contact outreach.',
       hint: 'Configure WEBSITE_MARKETING_FILE or MARKETING_ATTACHMENT_PATH with an approved marketing attachment before rerunning website-contact outreach.',
+      requiredEnv: ['WEBSITE_MARKETING_FILE', 'MARKETING_ATTACHMENT_PATH'],
     });
   }
   if (reasons.has('missing_verified_profile_url')) {

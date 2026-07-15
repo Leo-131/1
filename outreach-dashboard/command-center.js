@@ -1368,7 +1368,12 @@
       ? latestExecution.recoveryActions
       : [];
     if (!actions.length) return '';
-    return `<div class="cc-skip-grid cc-recovery-actions">${actions.map(action => `<div class="cc-skip-card"><b>${esc(action.reason || 'recovery')}</b><span>${esc(action.action || '')}</span><em>${esc(action.description || '')}</em></div>`).join('')}</div>`;
+    return `<div class="cc-skip-grid cc-recovery-actions">${actions.map((action) => {
+      const requiredEnv = Array.isArray(action.requiredEnv) && action.requiredEnv.length
+        ? `<em>Env: ${esc(action.requiredEnv.join(' / '))}</em>`
+        : '';
+      return `<div class="cc-skip-card"><b>${esc(action.reason || 'recovery')}</b><span>${esc(action.action || '')}</span><em>${esc(action.description || '')}</em>${requiredEnv}</div>`;
+    }).join('')}</div>`;
   }
   function taskDetailPanel(system) {
     if (!latestRun) return '';

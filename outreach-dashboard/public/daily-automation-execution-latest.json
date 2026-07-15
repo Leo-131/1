@@ -16,7 +16,11 @@
       "reason": "marketing_attachment_missing",
       "action": "Add approved website outreach attachment",
       "description": "Set WEBSITE_MARKETING_FILE or MARKETING_ATTACHMENT_PATH before rerunning website-contact outreach.",
-      "hint": "Configure WEBSITE_MARKETING_FILE or MARKETING_ATTACHMENT_PATH with an approved marketing attachment before rerunning website-contact outreach."
+      "hint": "Configure WEBSITE_MARKETING_FILE or MARKETING_ATTACHMENT_PATH with an approved marketing attachment before rerunning website-contact outreach.",
+      "requiredEnv": [
+        "WEBSITE_MARKETING_FILE",
+        "MARKETING_ATTACHMENT_PATH"
+      ]
     },
     {
       "reason": "missing_verified_profile_url",
@@ -737,5 +741,5 @@
     "needsVerification": 0,
     "retainedLowIcp": 0
   },
-  "completedAt": "2026-07-15T04:01:44.672Z"
+  "completedAt": "2026-07-15T04:03:42.174Z"
 }
