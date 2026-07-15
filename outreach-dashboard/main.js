@@ -229,7 +229,7 @@ function blockingAutomationResultFor(item) {
   const exactKeys = automationExactKeys(item);
   const companyKeys = automationCompanyKeys(item);
   const itemPlatform = automationPlatformFor(item);
-  const blocking = new Set(['sent_confirmed', 'failed_open', 'send_unconfirmed', 'account_followed', 'post_liked', 'website_contact_ready', 'website_contact_unreachable_skip', 'approval_pending', 'draft_prepared', 'prepared_not_sent']);
+  const blocking = new Set(['sent_confirmed', 'failed_open', 'send_unconfirmed', 'account_followed', 'post_liked', 'website_contact_ready']);
   const companyBlocking = new Set(['sent_confirmed', 'send_unconfirmed', 'account_followed', 'post_liked']);
   return results
     .filter((result) => result && (blocking.has(result.status) || historicalAutomationResultBlocksCompany(result)))
@@ -2499,8 +2499,8 @@ function queueItemToLead(item) {
     ...item,
     taskId: item.id,
     name: item.name || item.company,
-    targetUrl: item.url,
-    verifiedTargetUrl: item.url,
+    targetUrl: item.url || item.contactUrl || item.website,
+    verifiedTargetUrl: item.url || item.contactUrl || item.website,
     fitScore: item.fitScore,
     originalStatus: item.lastStatus || '',
   };
@@ -2514,8 +2514,9 @@ function isWebsiteContactQueueItem(item = {}) {
     item.id,
     item.url,
     item.contactUrl,
+    item.website,
   ].filter(Boolean).join(' ').toLowerCase();
-  return /\bemail\b|email_priority|website-contact|official_website_contact_channel|website_contact/.test(text);
+  return /\bemail\b|email_priority|verify_target|website-contact|official_website_contact_channel|website_contact|homepage_only_contact_path_requires_verification/.test(text);
 }
 
 function hasNoSafeMessageButton(item = {}) {
@@ -2546,11 +2547,11 @@ function developmentPriorityCompare(left, right) {
 }
 
 function executableQueueCandidates(items = [], options = {}) {
-  const executableActions = new Set(['develop', 'retry_or_alternate_channel', 'discover_and_develop', 'email_priority']);
+  const executableActions = new Set(['develop', 'retry_or_alternate_channel', 'discover_and_develop', 'email_priority', 'verify_target']);
   const allowWebsiteContact = options.allowWebsiteContact !== false;
   return (Array.isArray(items) ? items : [])
     .filter(item => executableActions.has(item.action))
-    .filter(item => item.url)
+    .filter(item => item.url || item.contactUrl || item.website)
     .filter(item => !hasNoSafeMessageButton(item))
     .filter(item => allowWebsiteContact || !isWebsiteContactQueueItem(item))
     .filter(item => !blockingAutomationResultFor(item))
