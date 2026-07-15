@@ -1,4 +1,4 @@
-const CACHE_NAME = 'customer-development-system-v18-7-29-20260715-qwen-research-template';
+const CACHE_NAME = 'customer-development-system-v18-7-30-20260715-verified-customer-research';
 const APP_SHELL = [
   './',
   './index.html',

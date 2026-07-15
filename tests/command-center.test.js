@@ -81,7 +81,7 @@ test('command center contains separated operational views', () => {
     assert.ok(js.includes(`['${viewId}'`), viewId);
   }
   assert.ok(publicIndexHtml.includes('<body class="command-center-booting">'));
-  assert.ok(publicIndexHtml.includes('command-center.js?v=20260715-qwen-research-template'));
+  assert.ok(publicIndexHtml.includes('command-center.js?v=20260715-verified-customer-research'));
 });
 
 test('customer detail opens in a new tab without replacing the shell', () => {
@@ -115,6 +115,12 @@ test('every customer detail uses the Qwen-style due diligence template', () => {
     '缺失事实明确标记待核验',
     'researchValue(record',
   ]) assert.ok(js.includes(token), token);
+});
+
+test('customer research enrichment overrides low-information historical records', () => {
+  assert.ok(js.includes('if (sourceScore > targetScore) target.fitScore = sourceScore'));
+  assert.ok(js.includes("'executiveConclusion'"));
+  assert.ok(js.includes('const score = scoreForDisplay(task || record)'));
 });
 
 test('customer detail exposes sales dossier and verified channel matrix', () => {
@@ -298,7 +304,7 @@ test('all reporting sections use live automation artifacts', () => {
   assert.ok(!html.includes('System display recovered in fallback mode'));
   assert.ok(!html.includes('Display repair mode'));
   assert.ok(html.includes('commandCenterRecovery'));
-  assert.ok(serviceWorkerJs.includes('customer-development-system-v18-7-29-20260715-qwen-research-template'));
+  assert.ok(serviceWorkerJs.includes('customer-development-system-v18-7-30-20260715-verified-customer-research'));
 });
 
 test('reporting center exposes reply conversion diagnostics and CSV rates', () => {

@@ -896,6 +896,19 @@
     mergeTextField(target, 'headquarters', source.headquarters);
     mergeTextField(target, 'founded', source.founded);
     mergeTextField(target, 'companyScale', source.companyScale || source.scale);
+    const sourceScore = boundedIcpScore(source.fitScore);
+    const targetScore = boundedIcpScore(target.fitScore);
+    if (sourceScore > targetScore) target.fitScore = sourceScore;
+    if ((!target.country || /global|unspecified|unknown/i.test(target.country)) && source.country) target.country = source.country;
+    if ((!target.countryEn || /global|unspecified|unknown/i.test(target.countryEn)) && (source.countryEn || source.country)) target.countryEn = source.countryEn || source.country;
+    [
+      'businessModel', 'marketPosition', 'corePositioning', 'industryPosition', 'coverage',
+      'mainBrands', 'brands', 'productCategory', 'buyingCapability', 'decisionMaker',
+      'productFit', 'productRationale', 'crossCategoryPositioning', 'buyerValue',
+      'recommendedOpening', 'salesAngle', 'opportunity', 'competition', 'brandRisk',
+      'complianceRisk', 'commercialRisk', 'decisionCycleRisk', 'executiveConclusion',
+      'researchConclusion',
+    ].forEach(key => mergeTextField(target, key, source[key]));
     if (Array.isArray(source.dataSources) && source.dataSources.length && !target.dataSources) target.dataSources = source.dataSources;
     if (source.alternateChannels) target.alternateChannels = { ...(target.alternateChannels || {}), ...source.alternateChannels };
     if (source.invalidChannels) target.invalidChannels = { ...(target.invalidChannels || {}), ...source.invalidChannels };
@@ -2141,11 +2154,7 @@
     const records = customerRecords();
     const record = task || records.find((item, index) => encodeURIComponent([item.platform, item.name, item.company, index].join('|')) === key);
     if (!record) return pageHead('客户详情', '未找到对应客户') + '<div class="cc-empty">该记录可能已更新，请返回客户附表。</div>';
-    const score = task ? scoreForDisplay(task) : engine.calculateDevelopmentScore({
-      region: record.country, marketStatus: record.marketStatus, role: record.role,
-      industry: record.industry, identityConfidence: record.linkedin_url || record.targetUrl ? 100 : 0,
-      keywordIntent: record.keyword_used || record.keyword ? 70 : 0,
-    });
+    const score = scoreForDisplay(task || record);
     const background = backgroundRows(record);
     const timeline = timelineFor(record);
     return `${pageHead(esc(record.company || record.name), '独立客户详情页，不覆盖原工作台')}

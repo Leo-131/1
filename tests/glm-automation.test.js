@@ -509,6 +509,19 @@ test('European large distributor candidates are high ICP and social first', () =
   assert.ok(leads.some(item => item.company === 'Aqipa' && item.platform === 'email' && /support\.aqipa\.com/.test(item.contactUrl)));
 });
 
+test('Aqipa carries verified analyst-grade research into every channel lead', () => {
+  const discovery = buildDiscoveryRun(400);
+  const aqipa = discovery.leads.find(item => item.company === 'Aqipa');
+  assert.ok(aqipa);
+  assert.equal(aqipa.fitScore, 98);
+  assert.equal(aqipa.founded, '1990');
+  assert.match(aqipa.headquarters, /Kundl.*Austria/);
+  assert.match(aqipa.businessModel, /Value-Added Distributor/);
+  assert.match(aqipa.executiveConclusion, /not an Entry \/ Niche prospect/);
+  assert.ok(Array.isArray(aqipa.dataSources));
+  assert.ok(aqipa.dataSources.length >= 4);
+});
+
 test('LinkedIn company profiles remain distinct queue targets', () => {
   const sorted = dailyRunner.preferSocialChannels([
     { id: 'esprinet', company: 'Esprinet Group', platform: 'linkedin', url: 'https://www.linkedin.com/company/esprinet-group/', dealProbabilityScore: 250 },
