@@ -539,6 +539,9 @@
         platform: task.platform || inferPlatformFromResult(item),
         targetUrl: item.target_url || task.targetUrl || task.url || '',
         verifiedTargetUrl: item.target_url || task.verifiedTargetUrl || '',
+        instagram_url: /instagram/i.test(String(item.target_url || '')) ? item.target_url : task.instagram_url || '',
+        facebook_url: /facebook|fb\.com/i.test(String(item.target_url || '')) ? item.target_url : task.facebook_url || '',
+        linkedin_url: /linkedin/i.test(String(item.target_url || '')) ? item.target_url : task.linkedin_url || '',
         keyword: task.keyword || 'outdoor retail partnership',
         templateId: task.templateId || 'buyer-contact-v1',
         icpTier: task.icpTier || task.fitTier || '',
@@ -885,6 +888,8 @@
     mergeUrlField(target, 'website', source.website || source.companyWebsite || source.url);
     mergeUrlField(target, 'targetUrl', source.targetUrl || source.url || source.platformUrl);
     mergeUrlField(target, 'linkedin_url', source.linkedin_url || source.linkedinUrl || source.linkedinCompany || source.linkedin);
+    mergeUrlField(target, 'instagram_url', source.instagram_url || source.instagramUrl || (String(source.platform || '').toLowerCase() === 'instagram' ? source.targetUrl || source.url || source.platformUrl : ''));
+    mergeUrlField(target, 'facebook_url', source.facebook_url || source.facebookUrl || (String(source.platform || '').toLowerCase() === 'facebook' ? source.targetUrl || source.url || source.platformUrl : ''));
     mergeTextField(target, 'websiteContactSubject', source.websiteContactSubject);
     mergeTextField(target, 'websiteContactMessage', source.websiteContactMessage);
     mergeTextField(target, 'contactNote', source.contactNote || source.publicEmailStatus);
@@ -938,9 +943,9 @@
       source: row.source || 'daily_automation',
       fitScore: boundedIcpScore(row.fitScore),
       fitTier: row.fitTier || '',
-      linkedin_url: row.linkedin_url || row.linkedin || row.linkedinCompany || '',
-      instagram_url: row.alternateChannels && row.alternateChannels.instagram || '',
-      facebook_url: row.alternateChannels && row.alternateChannels.facebook || '',
+      linkedin_url: row.linkedin_url || row.linkedin || row.linkedinCompany || (String(row.platform || '').toLowerCase() === 'linkedin' ? row.targetUrl || row.url || row.platformUrl : ''),
+      instagram_url: row.alternateChannels && row.alternateChannels.instagram || row.instagram_url || row.instagramUrl || (String(row.platform || '').toLowerCase() === 'instagram' ? row.targetUrl || row.url || row.platformUrl : ''),
+      facebook_url: row.alternateChannels && row.alternateChannels.facebook || row.facebook_url || row.facebookUrl || (String(row.platform || '').toLowerCase() === 'facebook' ? row.targetUrl || row.url || row.platformUrl : ''),
       website: row.website || row.contactUrl || row.targetUrl || '',
       targetUrl: row.targetUrl || row.url || row.contactUrl || row.website || '',
       automationTaskId: row.taskId || row.id || '',
@@ -1021,6 +1026,17 @@
   }
   function autoClawConnected() {
     return Boolean(window.customerDev && window.customerDev.runGlmDirectAutomation);
+  }
+  function bestContactUrl(task) {
+    if (!task) return '';
+    return task.instagram_url
+      || task.facebook_url
+      || task.linkedin_url
+      || (task.alternateChannels && (task.alternateChannels.instagram || task.alternateChannels.facebook || task.alternateChannels.linkedin))
+      || platformUrl(task)
+      || task.contactUrl
+      || task.website
+      || '';
   }
   function autoClawAvailability(task) {
     if (!task || !platformUrl(task)) return { ready: false, label: 'Missing URL', reason: 'No verified platform homepage' };
@@ -2187,7 +2203,7 @@
 
   function openVerifiedCustomer(taskId) {
     const task = findTaskById(taskId);
-    const target = platformUrl(task);
+    const target = bestContactUrl(task);
     if (!target) return;
     if (window.customerDev && window.customerDev.openExternalUrl) {
       window.customerDev.openExternalUrl(target);
@@ -2203,6 +2219,11 @@
       return;
     }
     if (!window.customerDev || !window.customerDev.runGlmDirectAutomation) {
+      const target = bestContactUrl(task);
+      if (target) {
+        window.open(target, '_blank', 'noopener');
+        return;
+      }
       window.alert('Codex Chrome 自动开发需要桌面 APP 和 Codex Chrome Extension 浏览器执行组件。网页版只能生成画像与文案，不能控制本机浏览器。');
       return;
     }

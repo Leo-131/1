@@ -133,6 +133,18 @@ test('command center opens verified platform URLs and exposes assisted automatio
   assert.ok(html.includes('Codex Chrome'));
 });
 
+test('Contact Us falls back to verified social/contact links in browser mode', () => {
+  assert.ok(js.includes('function bestContactUrl'));
+  assert.ok(js.includes('task.instagram_url'));
+  assert.ok(js.includes('task.facebook_url'));
+  const runBlock = js.slice(js.indexOf('async function runGlmDirect'), js.indexOf('const button = document.activeElement'));
+  assert.ok(runBlock.includes('const target = bestContactUrl(task)'));
+  assert.ok(runBlock.includes("window.open(target, '_blank', 'noopener')"));
+  const resultBlock = js.slice(js.indexOf('function autonomousResultRecords'), js.indexOf('function normalizeRecords'));
+  assert.ok(resultBlock.includes('instagram_url: /instagram/i.test'));
+  assert.ok(resultBlock.includes('facebook_url: /facebook|fb\\.com/i.test'));
+});
+
 test('command center uses Codex decisions and AutoClaw execution on verified URLs', () => {
   assert.ok(js.includes('Codex Decision'));
   assert.ok(js.includes('Codex Chrome Extension Execution'));
