@@ -121,6 +121,8 @@ if (!main.includes('function executionRecoveryHint(')
   || !main.includes("description: 'Add a verified Facebook or Instagram profile URL before retrying social outreach.'")
   || !main.includes('formatExecutionBlockerStatus(blockerSummary)')
   || !commandCenter.includes('function executionRecoveryCards(')
+  || !commandCenter.includes('function executionBlockerBucketRows(')
+  || !commandCenter.includes('latestExecution.blockerCounts')
   || !commandCenter.includes('cc-recovery-actions')
   || !commandCenter.includes('latestExecution.recoveryHint')) {
   throw new Error('Dashboard checks must cover execution recovery hints for no-browser blocker runs');
