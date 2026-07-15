@@ -58,6 +58,15 @@ test('daily queue prioritizes LinkedIn, Facebook and Instagram over website cont
 
 test('website contact can execute without a configured attachment', () => {
   assert.ok(mainSource.includes("executableQueueCandidates(latest.dailyQueue, { allowWebsiteContact: true })"));
+  assert.ok(mainSource.includes("'verify_target'"));
+  assert.ok(mainSource.includes('item.url || item.contactUrl || item.website'));
+  assert.ok(mainSource.includes('homepage_only_contact_path_requires_verification'));
+  assert.ok(mainSource.includes("const blocking = new Set(['sent_confirmed', 'failed_open', 'send_unconfirmed', 'account_followed', 'post_liked', 'website_contact_ready'])"));
+  assert.ok(!mainSource.includes("'approval_pending', 'draft_prepared', 'prepared_not_sent'"));
+  assert.ok(mainSource.includes('function socialFallbackFromInspection'));
+  assert.ok(mainSource.includes('official_website_social_fallback'));
+  assert.ok(mainSource.includes('socialLinks'));
+  assert.ok(mainSource.includes('identity_check_pending_empty_page'));
   assert.ok(!mainSource.includes('website_contact_preflight_blocked'));
   assert.ok(mainSource.includes('website_contact_form_no_file_input'));
   assert.ok(mainSource.includes('optional_attachment_omitted'));
