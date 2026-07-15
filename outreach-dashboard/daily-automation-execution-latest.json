@@ -13,7 +13,7 @@
   "batchMode": "parallel-batches",
   "parallelLimit": 1,
   "limit": 10,
-  "queueDate": "2026-07-15",
+  "queueDate": "2026-07-16",
   "queueSource": "dailyQueue",
   "executed": [
     {
@@ -30,8 +30,8 @@
         "engine": "codex-chrome-extension-cdp",
         "port": 9224,
         "targetUrl": "https://www.instagram.com/bergfreunde/",
-        "tabId": "85CD4BAC8628FEAC2C9E2C56C8D563E1",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/85CD4BAC8628FEAC2C9E2C56C8D563E1",
+        "tabId": "326364536DDE9F2E93A811A5B1F39B94",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/326364536DDE9F2E93A811A5B1F39B94",
         "title": "Bergfreunde (@bergfreunde) · Instagram 照片和视频"
       },
       "result": {
@@ -45,8 +45,8 @@
           "engine": "codex-chrome-extension-cdp",
           "port": 9224,
           "targetUrl": "https://www.instagram.com/bergfreunde/",
-          "tabId": "85CD4BAC8628FEAC2C9E2C56C8D563E1",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/85CD4BAC8628FEAC2C9E2C56C8D563E1",
+          "tabId": "326364536DDE9F2E93A811A5B1F39B94",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/326364536DDE9F2E93A811A5B1F39B94",
           "title": "Bergfreunde (@bergfreunde) · Instagram 照片和视频"
         },
         "sendStatus": "failed_open",
@@ -75,8 +75,8 @@
         "engine": "codex-chrome-extension-cdp",
         "port": 9224,
         "targetUrl": "https://www.obelink.nl/",
-        "tabId": "589C316BEA5BD39ED691CF5B72D55464",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/589C316BEA5BD39ED691CF5B72D55464",
+        "tabId": "7C08CE32FFF95B91CB0E59868C603AC9",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/7C08CE32FFF95B91CB0E59868C603AC9",
         "title": "Obelink Kampeerwinkel - Alles voor kampeergeluk"
       },
       "result": {
@@ -90,8 +90,8 @@
           "engine": "codex-chrome-extension-cdp",
           "port": 9224,
           "targetUrl": "https://www.obelink.nl/",
-          "tabId": "589C316BEA5BD39ED691CF5B72D55464",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/589C316BEA5BD39ED691CF5B72D55464",
+          "tabId": "7C08CE32FFF95B91CB0E59868C603AC9",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/7C08CE32FFF95B91CB0E59868C603AC9",
           "title": "Obelink Kampeerwinkel - Alles voor kampeergeluk"
         },
         "sendStatus": "website_contact_unreachable_skip",
@@ -115,8 +115,8 @@
         "engine": "codex-chrome-extension-cdp",
         "port": 9224,
         "targetUrl": "https://www.auvieuxcampeur.fr/",
-        "tabId": "A828F5DCF28350BF95050F5404D6B082",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/A828F5DCF28350BF95050F5404D6B082",
+        "tabId": "CA8755E3E31C55AB0EAB2AA617AC8B71",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/CA8755E3E31C55AB0EAB2AA617AC8B71",
         "title": "Just a moment..."
       },
       "result": {
@@ -130,8 +130,8 @@
           "engine": "codex-chrome-extension-cdp",
           "port": 9224,
           "targetUrl": "https://www.auvieuxcampeur.fr/",
-          "tabId": "A828F5DCF28350BF95050F5404D6B082",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/A828F5DCF28350BF95050F5404D6B082",
+          "tabId": "CA8755E3E31C55AB0EAB2AA617AC8B71",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/CA8755E3E31C55AB0EAB2AA617AC8B71",
           "title": "Just a moment..."
         },
         "sendStatus": "website_contact_unreachable_skip",
@@ -155,8 +155,8 @@
         "engine": "codex-chrome-extension-cdp",
         "port": 9224,
         "targetUrl": "https://www.bergfreunde.eu/",
-        "tabId": "8F9F34E13A89CC68B02CE44B5B9E342F",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/8F9F34E13A89CC68B02CE44B5B9E342F",
+        "tabId": "1EA7BCBE8AD87FA6C824CA8D24C40C8D",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/1EA7BCBE8AD87FA6C824CA8D24C40C8D",
         "title": "Attention Required! | Cloudflare"
       },
       "result": {
@@ -170,8 +170,8 @@
           "engine": "codex-chrome-extension-cdp",
           "port": 9224,
           "targetUrl": "https://www.bergfreunde.eu/",
-          "tabId": "8F9F34E13A89CC68B02CE44B5B9E342F",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/8F9F34E13A89CC68B02CE44B5B9E342F",
+          "tabId": "1EA7BCBE8AD87FA6C824CA8D24C40C8D",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/1EA7BCBE8AD87FA6C824CA8D24C40C8D",
           "title": "Attention Required! | Cloudflare"
         },
         "sendStatus": "website_contact_unreachable_skip",
@@ -195,8 +195,8 @@
         "engine": "codex-chrome-extension-cdp",
         "port": 9224,
         "targetUrl": "https://www.fjellsport.no/",
-        "tabId": "274C309AE7328F66999683DFDEF492EF",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/274C309AE7328F66999683DFDEF492EF",
+        "tabId": "12B351E87BB3B8F6E76C264FA6535622",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/12B351E87BB3B8F6E76C264FA6535622",
         "title": "Fjellsport.no - friluftsbutikken med det enorme utvalget | Fjellsport.no"
       },
       "result": {
@@ -210,8 +210,8 @@
           "engine": "codex-chrome-extension-cdp",
           "port": 9224,
           "targetUrl": "https://www.fjellsport.no/",
-          "tabId": "274C309AE7328F66999683DFDEF492EF",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/274C309AE7328F66999683DFDEF492EF",
+          "tabId": "12B351E87BB3B8F6E76C264FA6535622",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/12B351E87BB3B8F6E76C264FA6535622",
           "title": "Fjellsport.no - friluftsbutikken med det enorme utvalget | Fjellsport.no"
         },
         "sendStatus": "website_contact_unreachable_skip",
@@ -235,8 +235,8 @@
         "engine": "codex-chrome-extension-cdp",
         "port": 9224,
         "targetUrl": "https://www.naturkompaniet.se/",
-        "tabId": "43F173C20D1B79A3A6CEE62864D06EBD",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/43F173C20D1B79A3A6CEE62864D06EBD",
+        "tabId": "889FF4229587ED55EE0BEC5A4F42FC48",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/889FF4229587ED55EE0BEC5A4F42FC48",
         "title": "Experter på outdoorkläder & utrustning | Naturkompaniet"
       },
       "result": {
@@ -250,8 +250,8 @@
           "engine": "codex-chrome-extension-cdp",
           "port": 9224,
           "targetUrl": "https://www.naturkompaniet.se/",
-          "tabId": "43F173C20D1B79A3A6CEE62864D06EBD",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/43F173C20D1B79A3A6CEE62864D06EBD",
+          "tabId": "889FF4229587ED55EE0BEC5A4F42FC48",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/889FF4229587ED55EE0BEC5A4F42FC48",
           "title": "Experter på outdoorkläder & utrustning | Naturkompaniet"
         },
         "sendStatus": "website_contact_unreachable_skip",
@@ -269,14 +269,14 @@
       "targetUrl": "https://www.outnorth.com/",
       "ok": false,
       "sendStatus": "website_contact_unreachable_skip",
-      "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:1",
+      "evidence": "website_contact_entry_not_verified;contact_entry_clicked:Logg inn;website_contact_all_targets_failed:1",
       "chromeOpen": {
         "ok": true,
         "engine": "codex-chrome-extension-cdp",
         "port": 9224,
         "targetUrl": "https://www.outnorth.com/",
-        "tabId": "93FE29DAB888B1B5D29199362895BF32",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/93FE29DAB888B1B5D29199362895BF32",
+        "tabId": "C9F7FA5CAF7C773D4E569FF8CFABB0F8",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/C9F7FA5CAF7C773D4E569FF8CFABB0F8",
         "title": "Outnorth - The best of scandinavian outdoor"
       },
       "result": {
@@ -290,15 +290,15 @@
           "engine": "codex-chrome-extension-cdp",
           "port": 9224,
           "targetUrl": "https://www.outnorth.com/",
-          "tabId": "93FE29DAB888B1B5D29199362895BF32",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/93FE29DAB888B1B5D29199362895BF32",
+          "tabId": "C9F7FA5CAF7C773D4E569FF8CFABB0F8",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/C9F7FA5CAF7C773D4E569FF8CFABB0F8",
           "title": "Outnorth - The best of scandinavian outdoor"
         },
         "sendStatus": "website_contact_unreachable_skip",
         "subject": "Flextail & Vollyc | Lightweight Outdoor & 3C Electronics – Potential Cooperation",
         "draft": "Dear Outnorth Team,\n\nNice to e-meet you.\nI am Leo, from Flextail & Vollyc.\n\nFlextail is our first and core brand, specializing in ultralight electric products for outdoor, travel, and home use. The brand is currently Top 1 on Amazon, with strong global sell-through and a proven product-market fit.\nVollyc, our second brand, focuses on 3C electronics, targeting practical, high-rotation consumer use cases.\n\nFrom our perspective, your platform and positioning are highly aligned with Flextail’s product philosophy, especially in lightweight outdoor and travel-oriented electrics.\n\nWe have already contacted with your team, and we are now actively exploring opportunities in other regions.\nAttached, you will find a brief introduction to our brands and current product catalog for your reference.\n\nLooking ahead, we are planning to launch over 36 new SKUs in 2026, covering multiple usage scenarios and price tiers, which we believe could be of interest to your assortment strategy.\n\nIf you are available, I would greatly appreciate the opportunity to arrange a short introductory video meeting to present our brands and discuss potential collaboration opportunities.\n\nThank you for your time and consideration. I look forward to your reply.\n\n[Flextail.com](https://www.flextail.com/), [vollyc.com](https://vollyc.com/)\n\n[Sincerely](https://wa.me/8617321028184)\n[Best Regard](https://wa.me/8617321028184)\n[Leo Liu](https://wa.me/8617321028184)\n[Sales](https://wa.me/8617321028184) [& Operations Director](https://wa.me/8617321028184)\n[Brand & ODM Department](https://wa.me/8617321028184)\n[Tel/whatsapp:  +86 17321028184](https://wa.me/8617321028184)\n\n[Email:  Leo@flextailgear.com](https://wa.me/8617321028184)\n[SHANGHAI FLEXTAIL TECHNOLOGY CO.,LTD.](https://wa.me/8617321028184)\n[Room103, Building No.6, No.1 Yanjiaqiao, Pudong District, ShangHai, China](https://wa.me/8617321028184)",
-        "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:1",
-        "output": "{\"verdict\":\"website_contact_unreachable_skip\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:1\",\"nextAction\":\"Contact page opened, but no verified form, mailto link, vendor/business route, or clickable Contact Us path was detected. Continue manually before marking the lead ready.\",\"subject\":\"Flextail & Vollyc | Lightweight Outdoor & 3C Electronics – Potential Cooperation\",\"draft\":\"Dear Outnorth Team,\\n\\nNice to e-meet you.\\nI am Leo, from Flextail & Vollyc.\\n\\nFlextail is our first and core brand, specializing in ultralight electric products for outdoor, travel, and home use. The brand is currently Top 1 on Amazon, with strong global sell-through and a proven product-market fit.\\nVollyc, our second brand, focuses on 3C electronics, targeting practical, high-rotation consumer use cases.\\n\\nFrom our perspective, your platform and positioning are highly aligned with Flextail’s product philosophy, especially in lightweight outdoor and travel-oriented electrics.\\n\\nWe have already contacted with your team, and we are now actively exploring opportunities in other regions.\\nAttached, you will find a brief introduction to our brands and current product catalog for your reference.\\n\\nLooking ahead, we are planning to launch over 36 new SKUs in 2026, covering multiple usage scenarios and price tiers, which we believe could be of interest to your assortment strategy.\\n\\nIf you are available, I would greatly appreciate the opportunity to arrange a short introductory video meeting to present our brands and discuss potential collaboration opportunities.\\n\\nThank you for your time and consideration. I look forward to your reply.\\n\\n[Flextail.com](https://www.flextail.com/), [vollyc.com](https://vollyc.com/)\\n\\n[Sincerely](https://wa.me/8617321028184)\\n[Best Regard](https://wa.me/8617321028184)\\n[Leo Liu](https://wa.me/8617321028184)\\n[Sales](https://wa.me/8617321028184) [& Operations Director](https://wa.me/8617321028184)\\n[Brand & ODM Department](https://wa.me/8617321028184)\\n[Tel/whatsapp:  +86 17321028184](https://wa.me/8617321028184)\\n\\n[Email:  Leo@flextailgear.com](https://wa.me/8617321028184)\\n[SHANGHAI FLEXTAIL TECHNOLOGY CO.,LTD.](https://wa.me/8617321028184)\\n[Room103, Building No.6, No.1 Yanjiaqiao, Pudong District, ShangHai, China](https://wa.me/8617321028184)\",\"sendStatus\":\"website_contact_unreachable_skip\",\"attempts\":[{\"targetUrl\":\"https://www.outnorth.com/\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control\"}]}"
+        "evidence": "website_contact_entry_not_verified;contact_entry_clicked:Logg inn;website_contact_all_targets_failed:1",
+        "output": "{\"verdict\":\"website_contact_unreachable_skip\",\"evidence\":\"website_contact_entry_not_verified;contact_entry_clicked:Logg inn;website_contact_all_targets_failed:1\",\"nextAction\":\"Contact page opened, but no verified form, mailto link, vendor/business route, or clickable Contact Us path was detected. Continue manually before marking the lead ready.\",\"subject\":\"Flextail & Vollyc | Lightweight Outdoor & 3C Electronics – Potential Cooperation\",\"draft\":\"Dear Outnorth Team,\\n\\nNice to e-meet you.\\nI am Leo, from Flextail & Vollyc.\\n\\nFlextail is our first and core brand, specializing in ultralight electric products for outdoor, travel, and home use. The brand is currently Top 1 on Amazon, with strong global sell-through and a proven product-market fit.\\nVollyc, our second brand, focuses on 3C electronics, targeting practical, high-rotation consumer use cases.\\n\\nFrom our perspective, your platform and positioning are highly aligned with Flextail’s product philosophy, especially in lightweight outdoor and travel-oriented electrics.\\n\\nWe have already contacted with your team, and we are now actively exploring opportunities in other regions.\\nAttached, you will find a brief introduction to our brands and current product catalog for your reference.\\n\\nLooking ahead, we are planning to launch over 36 new SKUs in 2026, covering multiple usage scenarios and price tiers, which we believe could be of interest to your assortment strategy.\\n\\nIf you are available, I would greatly appreciate the opportunity to arrange a short introductory video meeting to present our brands and discuss potential collaboration opportunities.\\n\\nThank you for your time and consideration. I look forward to your reply.\\n\\n[Flextail.com](https://www.flextail.com/), [vollyc.com](https://vollyc.com/)\\n\\n[Sincerely](https://wa.me/8617321028184)\\n[Best Regard](https://wa.me/8617321028184)\\n[Leo Liu](https://wa.me/8617321028184)\\n[Sales](https://wa.me/8617321028184) [& Operations Director](https://wa.me/8617321028184)\\n[Brand & ODM Department](https://wa.me/8617321028184)\\n[Tel/whatsapp:  +86 17321028184](https://wa.me/8617321028184)\\n\\n[Email:  Leo@flextailgear.com](https://wa.me/8617321028184)\\n[SHANGHAI FLEXTAIL TECHNOLOGY CO.,LTD.](https://wa.me/8617321028184)\\n[Room103, Building No.6, No.1 Yanjiaqiao, Pudong District, ShangHai, China](https://wa.me/8617321028184)\",\"sendStatus\":\"website_contact_unreachable_skip\",\"attempts\":[{\"targetUrl\":\"https://www.outnorth.com/\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;contact_entry_clicked:Logg inn\"}]}"
       }
     },
     {
@@ -315,8 +315,8 @@
         "engine": "codex-chrome-extension-cdp",
         "port": 9224,
         "targetUrl": "https://www.tentworld.com.au/",
-        "tabId": "C177C78945107EC4559DF2C70B79B27E",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/C177C78945107EC4559DF2C70B79B27E",
+        "tabId": "71A56D6D3A9C3214754DB695B8D4B896",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/71A56D6D3A9C3214754DB695B8D4B896",
         "title": "Home Page - Tentworld"
       },
       "result": {
@@ -330,8 +330,8 @@
           "engine": "codex-chrome-extension-cdp",
           "port": 9224,
           "targetUrl": "https://www.tentworld.com.au/",
-          "tabId": "C177C78945107EC4559DF2C70B79B27E",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/C177C78945107EC4559DF2C70B79B27E",
+          "tabId": "71A56D6D3A9C3214754DB695B8D4B896",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/71A56D6D3A9C3214754DB695B8D4B896",
           "title": "Home Page - Tentworld"
         },
         "sendStatus": "website_contact_unreachable_skip",
@@ -349,14 +349,14 @@
       "targetUrl": "https://www.trekitt.co.uk/",
       "ok": false,
       "sendStatus": "website_contact_unreachable_skip",
-      "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:1",
+      "evidence": "website_contact_entry_not_verified;contact_entry_clicked:Contact us;website_contact_all_targets_failed:1",
       "chromeOpen": {
         "ok": true,
         "engine": "codex-chrome-extension-cdp",
         "port": 9224,
         "targetUrl": "https://www.trekitt.co.uk/",
-        "tabId": "D73F40A4092D308EE114A3339279697E",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/D73F40A4092D308EE114A3339279697E",
+        "tabId": "A1AC15ECA8A420DA0496830E85A317C6",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/A1AC15ECA8A420DA0496830E85A317C6",
         "title": "Trekitt | UK Outdoor & Mountaineering Clothing and Equipment"
       },
       "result": {
@@ -370,15 +370,15 @@
           "engine": "codex-chrome-extension-cdp",
           "port": 9224,
           "targetUrl": "https://www.trekitt.co.uk/",
-          "tabId": "D73F40A4092D308EE114A3339279697E",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/D73F40A4092D308EE114A3339279697E",
+          "tabId": "A1AC15ECA8A420DA0496830E85A317C6",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/A1AC15ECA8A420DA0496830E85A317C6",
           "title": "Trekitt | UK Outdoor & Mountaineering Clothing and Equipment"
         },
         "sendStatus": "website_contact_unreachable_skip",
         "subject": "Flextail & Vollyc | Lightweight Outdoor & 3C Electronics – Potential Cooperation",
         "draft": "Dear Trekitt Team,\n\nNice to e-meet you.\nI am Leo, from Flextail & Vollyc.\n\nFlextail is our first and core brand, specializing in ultralight electric products for outdoor, travel, and home use. The brand is currently Top 1 on Amazon, with strong global sell-through and a proven product-market fit.\nVollyc, our second brand, focuses on 3C electronics, targeting practical, high-rotation consumer use cases.\n\nFrom our perspective, your platform and positioning are highly aligned with Flextail’s product philosophy, especially in lightweight outdoor and travel-oriented electrics.\n\nWe have already contacted with your team, and we are now actively exploring opportunities in other regions.\nAttached, you will find a brief introduction to our brands and current product catalog for your reference.\n\nLooking ahead, we are planning to launch over 36 new SKUs in 2026, covering multiple usage scenarios and price tiers, which we believe could be of interest to your assortment strategy.\n\nIf you are available, I would greatly appreciate the opportunity to arrange a short introductory video meeting to present our brands and discuss potential collaboration opportunities.\n\nThank you for your time and consideration. I look forward to your reply.\n\n[Flextail.com](https://www.flextail.com/), [vollyc.com](https://vollyc.com/)\n\n[Sincerely](https://wa.me/8617321028184)\n[Best Regard](https://wa.me/8617321028184)\n[Leo Liu](https://wa.me/8617321028184)\n[Sales](https://wa.me/8617321028184) [& Operations Director](https://wa.me/8617321028184)\n[Brand & ODM Department](https://wa.me/8617321028184)\n[Tel/whatsapp:  +86 17321028184](https://wa.me/8617321028184)\n\n[Email:  Leo@flextailgear.com](https://wa.me/8617321028184)\n[SHANGHAI FLEXTAIL TECHNOLOGY CO.,LTD.](https://wa.me/8617321028184)\n[Room103, Building No.6, No.1 Yanjiaqiao, Pudong District, ShangHai, China](https://wa.me/8617321028184)",
-        "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:1",
-        "output": "{\"verdict\":\"website_contact_unreachable_skip\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:1\",\"nextAction\":\"Contact page opened, but no verified form, mailto link, vendor/business route, or clickable Contact Us path was detected. Continue manually before marking the lead ready.\",\"subject\":\"Flextail & Vollyc | Lightweight Outdoor & 3C Electronics – Potential Cooperation\",\"draft\":\"Dear Trekitt Team,\\n\\nNice to e-meet you.\\nI am Leo, from Flextail & Vollyc.\\n\\nFlextail is our first and core brand, specializing in ultralight electric products for outdoor, travel, and home use. The brand is currently Top 1 on Amazon, with strong global sell-through and a proven product-market fit.\\nVollyc, our second brand, focuses on 3C electronics, targeting practical, high-rotation consumer use cases.\\n\\nFrom our perspective, your platform and positioning are highly aligned with Flextail’s product philosophy, especially in lightweight outdoor and travel-oriented electrics.\\n\\nWe have already contacted with your team, and we are now actively exploring opportunities in other regions.\\nAttached, you will find a brief introduction to our brands and current product catalog for your reference.\\n\\nLooking ahead, we are planning to launch over 36 new SKUs in 2026, covering multiple usage scenarios and price tiers, which we believe could be of interest to your assortment strategy.\\n\\nIf you are available, I would greatly appreciate the opportunity to arrange a short introductory video meeting to present our brands and discuss potential collaboration opportunities.\\n\\nThank you for your time and consideration. I look forward to your reply.\\n\\n[Flextail.com](https://www.flextail.com/), [vollyc.com](https://vollyc.com/)\\n\\n[Sincerely](https://wa.me/8617321028184)\\n[Best Regard](https://wa.me/8617321028184)\\n[Leo Liu](https://wa.me/8617321028184)\\n[Sales](https://wa.me/8617321028184) [& Operations Director](https://wa.me/8617321028184)\\n[Brand & ODM Department](https://wa.me/8617321028184)\\n[Tel/whatsapp:  +86 17321028184](https://wa.me/8617321028184)\\n\\n[Email:  Leo@flextailgear.com](https://wa.me/8617321028184)\\n[SHANGHAI FLEXTAIL TECHNOLOGY CO.,LTD.](https://wa.me/8617321028184)\\n[Room103, Building No.6, No.1 Yanjiaqiao, Pudong District, ShangHai, China](https://wa.me/8617321028184)\",\"sendStatus\":\"website_contact_unreachable_skip\",\"attempts\":[{\"targetUrl\":\"https://www.trekitt.co.uk/\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control\"}]}"
+        "evidence": "website_contact_entry_not_verified;contact_entry_clicked:Contact us;website_contact_all_targets_failed:1",
+        "output": "{\"verdict\":\"website_contact_unreachable_skip\",\"evidence\":\"website_contact_entry_not_verified;contact_entry_clicked:Contact us;website_contact_all_targets_failed:1\",\"nextAction\":\"Contact page opened, but no verified form, mailto link, vendor/business route, or clickable Contact Us path was detected. Continue manually before marking the lead ready.\",\"subject\":\"Flextail & Vollyc | Lightweight Outdoor & 3C Electronics – Potential Cooperation\",\"draft\":\"Dear Trekitt Team,\\n\\nNice to e-meet you.\\nI am Leo, from Flextail & Vollyc.\\n\\nFlextail is our first and core brand, specializing in ultralight electric products for outdoor, travel, and home use. The brand is currently Top 1 on Amazon, with strong global sell-through and a proven product-market fit.\\nVollyc, our second brand, focuses on 3C electronics, targeting practical, high-rotation consumer use cases.\\n\\nFrom our perspective, your platform and positioning are highly aligned with Flextail’s product philosophy, especially in lightweight outdoor and travel-oriented electrics.\\n\\nWe have already contacted with your team, and we are now actively exploring opportunities in other regions.\\nAttached, you will find a brief introduction to our brands and current product catalog for your reference.\\n\\nLooking ahead, we are planning to launch over 36 new SKUs in 2026, covering multiple usage scenarios and price tiers, which we believe could be of interest to your assortment strategy.\\n\\nIf you are available, I would greatly appreciate the opportunity to arrange a short introductory video meeting to present our brands and discuss potential collaboration opportunities.\\n\\nThank you for your time and consideration. I look forward to your reply.\\n\\n[Flextail.com](https://www.flextail.com/), [vollyc.com](https://vollyc.com/)\\n\\n[Sincerely](https://wa.me/8617321028184)\\n[Best Regard](https://wa.me/8617321028184)\\n[Leo Liu](https://wa.me/8617321028184)\\n[Sales](https://wa.me/8617321028184) [& Operations Director](https://wa.me/8617321028184)\\n[Brand & ODM Department](https://wa.me/8617321028184)\\n[Tel/whatsapp:  +86 17321028184](https://wa.me/8617321028184)\\n\\n[Email:  Leo@flextailgear.com](https://wa.me/8617321028184)\\n[SHANGHAI FLEXTAIL TECHNOLOGY CO.,LTD.](https://wa.me/8617321028184)\\n[Room103, Building No.6, No.1 Yanjiaqiao, Pudong District, ShangHai, China](https://wa.me/8617321028184)\",\"sendStatus\":\"website_contact_unreachable_skip\",\"attempts\":[{\"targetUrl\":\"https://www.trekitt.co.uk/\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;contact_entry_clicked:Contact us\"}]}"
       }
     },
     {
@@ -389,14 +389,14 @@
       "targetUrl": "https://ultralightoutdoorgear.co.uk/",
       "ok": false,
       "sendStatus": "website_contact_unreachable_skip",
-      "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:1",
+      "evidence": "website_contact_entry_not_verified;contact_entry_clicked:Contact Us;website_contact_all_targets_failed:1",
       "chromeOpen": {
         "ok": true,
         "engine": "codex-chrome-extension-cdp",
         "port": 9224,
         "targetUrl": "https://ultralightoutdoorgear.co.uk/",
-        "tabId": "768168E8C4DA55643FD58EAEB4FAF600",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/768168E8C4DA55643FD58EAEB4FAF600",
+        "tabId": "72737E25BB1B9848E91B61A5DC3CE6E0",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/72737E25BB1B9848E91B61A5DC3CE6E0",
         "title": "Ultralight Outdoor Gear | UK | Lightweight Gear Specialists"
       },
       "result": {
@@ -410,15 +410,15 @@
           "engine": "codex-chrome-extension-cdp",
           "port": 9224,
           "targetUrl": "https://ultralightoutdoorgear.co.uk/",
-          "tabId": "768168E8C4DA55643FD58EAEB4FAF600",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/768168E8C4DA55643FD58EAEB4FAF600",
+          "tabId": "72737E25BB1B9848E91B61A5DC3CE6E0",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/72737E25BB1B9848E91B61A5DC3CE6E0",
           "title": "Ultralight Outdoor Gear | UK | Lightweight Gear Specialists"
         },
         "sendStatus": "website_contact_unreachable_skip",
         "subject": "Flextail & Vollyc | Lightweight Outdoor & 3C Electronics – Potential Cooperation",
         "draft": "Dear Ultralight Outdoor Gear Team,\n\nNice to e-meet you.\nI am Leo, from Flextail & Vollyc.\n\nFlextail is our first and core brand, specializing in ultralight electric products for outdoor, travel, and home use. The brand is currently Top 1 on Amazon, with strong global sell-through and a proven product-market fit.\nVollyc, our second brand, focuses on 3C electronics, targeting practical, high-rotation consumer use cases.\n\nFrom our perspective, your platform and positioning are highly aligned with Flextail’s product philosophy, especially in lightweight outdoor and travel-oriented electrics.\n\nWe have already contacted with your team, and we are now actively exploring opportunities in other regions.\nAttached, you will find a brief introduction to our brands and current product catalog for your reference.\n\nLooking ahead, we are planning to launch over 36 new SKUs in 2026, covering multiple usage scenarios and price tiers, which we believe could be of interest to your assortment strategy.\n\nIf you are available, I would greatly appreciate the opportunity to arrange a short introductory video meeting to present our brands and discuss potential collaboration opportunities.\n\nThank you for your time and consideration. I look forward to your reply.\n\n[Flextail.com](https://www.flextail.com/), [vollyc.com](https://vollyc.com/)\n\n[Sincerely](https://wa.me/8617321028184)\n[Best Regard](https://wa.me/8617321028184)\n[Leo Liu](https://wa.me/8617321028184)\n[Sales](https://wa.me/8617321028184) [& Operations Director](https://wa.me/8617321028184)\n[Brand & ODM Department](https://wa.me/8617321028184)\n[Tel/whatsapp:  +86 17321028184](https://wa.me/8617321028184)\n\n[Email:  Leo@flextailgear.com](https://wa.me/8617321028184)\n[SHANGHAI FLEXTAIL TECHNOLOGY CO.,LTD.](https://wa.me/8617321028184)\n[Room103, Building No.6, No.1 Yanjiaqiao, Pudong District, ShangHai, China](https://wa.me/8617321028184)",
-        "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:1",
-        "output": "{\"verdict\":\"website_contact_unreachable_skip\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:1\",\"nextAction\":\"Contact page opened, but no verified form, mailto link, vendor/business route, or clickable Contact Us path was detected. Continue manually before marking the lead ready.\",\"subject\":\"Flextail & Vollyc | Lightweight Outdoor & 3C Electronics – Potential Cooperation\",\"draft\":\"Dear Ultralight Outdoor Gear Team,\\n\\nNice to e-meet you.\\nI am Leo, from Flextail & Vollyc.\\n\\nFlextail is our first and core brand, specializing in ultralight electric products for outdoor, travel, and home use. The brand is currently Top 1 on Amazon, with strong global sell-through and a proven product-market fit.\\nVollyc, our second brand, focuses on 3C electronics, targeting practical, high-rotation consumer use cases.\\n\\nFrom our perspective, your platform and positioning are highly aligned with Flextail’s product philosophy, especially in lightweight outdoor and travel-oriented electrics.\\n\\nWe have already contacted with your team, and we are now actively exploring opportunities in other regions.\\nAttached, you will find a brief introduction to our brands and current product catalog for your reference.\\n\\nLooking ahead, we are planning to launch over 36 new SKUs in 2026, covering multiple usage scenarios and price tiers, which we believe could be of interest to your assortment strategy.\\n\\nIf you are available, I would greatly appreciate the opportunity to arrange a short introductory video meeting to present our brands and discuss potential collaboration opportunities.\\n\\nThank you for your time and consideration. I look forward to your reply.\\n\\n[Flextail.com](https://www.flextail.com/), [vollyc.com](https://vollyc.com/)\\n\\n[Sincerely](https://wa.me/8617321028184)\\n[Best Regard](https://wa.me/8617321028184)\\n[Leo Liu](https://wa.me/8617321028184)\\n[Sales](https://wa.me/8617321028184) [& Operations Director](https://wa.me/8617321028184)\\n[Brand & ODM Department](https://wa.me/8617321028184)\\n[Tel/whatsapp:  +86 17321028184](https://wa.me/8617321028184)\\n\\n[Email:  Leo@flextailgear.com](https://wa.me/8617321028184)\\n[SHANGHAI FLEXTAIL TECHNOLOGY CO.,LTD.](https://wa.me/8617321028184)\\n[Room103, Building No.6, No.1 Yanjiaqiao, Pudong District, ShangHai, China](https://wa.me/8617321028184)\",\"sendStatus\":\"website_contact_unreachable_skip\",\"attempts\":[{\"targetUrl\":\"https://ultralightoutdoorgear.co.uk/\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control\"}]}"
+        "evidence": "website_contact_entry_not_verified;contact_entry_clicked:Contact Us;website_contact_all_targets_failed:1",
+        "output": "{\"verdict\":\"website_contact_unreachable_skip\",\"evidence\":\"website_contact_entry_not_verified;contact_entry_clicked:Contact Us;website_contact_all_targets_failed:1\",\"nextAction\":\"Contact page opened, but no verified form, mailto link, vendor/business route, or clickable Contact Us path was detected. Continue manually before marking the lead ready.\",\"subject\":\"Flextail & Vollyc | Lightweight Outdoor & 3C Electronics – Potential Cooperation\",\"draft\":\"Dear Ultralight Outdoor Gear Team,\\n\\nNice to e-meet you.\\nI am Leo, from Flextail & Vollyc.\\n\\nFlextail is our first and core brand, specializing in ultralight electric products for outdoor, travel, and home use. The brand is currently Top 1 on Amazon, with strong global sell-through and a proven product-market fit.\\nVollyc, our second brand, focuses on 3C electronics, targeting practical, high-rotation consumer use cases.\\n\\nFrom our perspective, your platform and positioning are highly aligned with Flextail’s product philosophy, especially in lightweight outdoor and travel-oriented electrics.\\n\\nWe have already contacted with your team, and we are now actively exploring opportunities in other regions.\\nAttached, you will find a brief introduction to our brands and current product catalog for your reference.\\n\\nLooking ahead, we are planning to launch over 36 new SKUs in 2026, covering multiple usage scenarios and price tiers, which we believe could be of interest to your assortment strategy.\\n\\nIf you are available, I would greatly appreciate the opportunity to arrange a short introductory video meeting to present our brands and discuss potential collaboration opportunities.\\n\\nThank you for your time and consideration. I look forward to your reply.\\n\\n[Flextail.com](https://www.flextail.com/), [vollyc.com](https://vollyc.com/)\\n\\n[Sincerely](https://wa.me/8617321028184)\\n[Best Regard](https://wa.me/8617321028184)\\n[Leo Liu](https://wa.me/8617321028184)\\n[Sales](https://wa.me/8617321028184) [& Operations Director](https://wa.me/8617321028184)\\n[Brand & ODM Department](https://wa.me/8617321028184)\\n[Tel/whatsapp:  +86 17321028184](https://wa.me/8617321028184)\\n\\n[Email:  Leo@flextailgear.com](https://wa.me/8617321028184)\\n[SHANGHAI FLEXTAIL TECHNOLOGY CO.,LTD.](https://wa.me/8617321028184)\\n[Room103, Building No.6, No.1 Yanjiaqiao, Pudong District, ShangHai, China](https://wa.me/8617321028184)\",\"sendStatus\":\"website_contact_unreachable_skip\",\"attempts\":[{\"targetUrl\":\"https://ultralightoutdoorgear.co.uk/\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;contact_entry_clicked:Contact Us\"}]}"
       }
     }
   ],
@@ -437,8 +437,8 @@
         "engine": "codex-chrome-extension-cdp",
         "port": 9224,
         "targetUrl": "https://www.instagram.com/bergfreunde/",
-        "tabId": "85CD4BAC8628FEAC2C9E2C56C8D563E1",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/85CD4BAC8628FEAC2C9E2C56C8D563E1",
+        "tabId": "326364536DDE9F2E93A811A5B1F39B94",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/326364536DDE9F2E93A811A5B1F39B94",
         "title": "Bergfreunde (@bergfreunde) · Instagram 照片和视频"
       },
       "result": {
@@ -452,8 +452,8 @@
           "engine": "codex-chrome-extension-cdp",
           "port": 9224,
           "targetUrl": "https://www.instagram.com/bergfreunde/",
-          "tabId": "85CD4BAC8628FEAC2C9E2C56C8D563E1",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/85CD4BAC8628FEAC2C9E2C56C8D563E1",
+          "tabId": "326364536DDE9F2E93A811A5B1F39B94",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/326364536DDE9F2E93A811A5B1F39B94",
           "title": "Bergfreunde (@bergfreunde) · Instagram 照片和视频"
         },
         "sendStatus": "failed_open",
@@ -482,8 +482,8 @@
         "engine": "codex-chrome-extension-cdp",
         "port": 9224,
         "targetUrl": "https://www.obelink.nl/",
-        "tabId": "589C316BEA5BD39ED691CF5B72D55464",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/589C316BEA5BD39ED691CF5B72D55464",
+        "tabId": "7C08CE32FFF95B91CB0E59868C603AC9",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/7C08CE32FFF95B91CB0E59868C603AC9",
         "title": "Obelink Kampeerwinkel - Alles voor kampeergeluk"
       },
       "result": {
@@ -497,8 +497,8 @@
           "engine": "codex-chrome-extension-cdp",
           "port": 9224,
           "targetUrl": "https://www.obelink.nl/",
-          "tabId": "589C316BEA5BD39ED691CF5B72D55464",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/589C316BEA5BD39ED691CF5B72D55464",
+          "tabId": "7C08CE32FFF95B91CB0E59868C603AC9",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/7C08CE32FFF95B91CB0E59868C603AC9",
           "title": "Obelink Kampeerwinkel - Alles voor kampeergeluk"
         },
         "sendStatus": "website_contact_unreachable_skip",
@@ -522,8 +522,8 @@
         "engine": "codex-chrome-extension-cdp",
         "port": 9224,
         "targetUrl": "https://www.auvieuxcampeur.fr/",
-        "tabId": "A828F5DCF28350BF95050F5404D6B082",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/A828F5DCF28350BF95050F5404D6B082",
+        "tabId": "CA8755E3E31C55AB0EAB2AA617AC8B71",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/CA8755E3E31C55AB0EAB2AA617AC8B71",
         "title": "Just a moment..."
       },
       "result": {
@@ -537,8 +537,8 @@
           "engine": "codex-chrome-extension-cdp",
           "port": 9224,
           "targetUrl": "https://www.auvieuxcampeur.fr/",
-          "tabId": "A828F5DCF28350BF95050F5404D6B082",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/A828F5DCF28350BF95050F5404D6B082",
+          "tabId": "CA8755E3E31C55AB0EAB2AA617AC8B71",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/CA8755E3E31C55AB0EAB2AA617AC8B71",
           "title": "Just a moment..."
         },
         "sendStatus": "website_contact_unreachable_skip",
@@ -562,8 +562,8 @@
         "engine": "codex-chrome-extension-cdp",
         "port": 9224,
         "targetUrl": "https://www.bergfreunde.eu/",
-        "tabId": "8F9F34E13A89CC68B02CE44B5B9E342F",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/8F9F34E13A89CC68B02CE44B5B9E342F",
+        "tabId": "1EA7BCBE8AD87FA6C824CA8D24C40C8D",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/1EA7BCBE8AD87FA6C824CA8D24C40C8D",
         "title": "Attention Required! | Cloudflare"
       },
       "result": {
@@ -577,8 +577,8 @@
           "engine": "codex-chrome-extension-cdp",
           "port": 9224,
           "targetUrl": "https://www.bergfreunde.eu/",
-          "tabId": "8F9F34E13A89CC68B02CE44B5B9E342F",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/8F9F34E13A89CC68B02CE44B5B9E342F",
+          "tabId": "1EA7BCBE8AD87FA6C824CA8D24C40C8D",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/1EA7BCBE8AD87FA6C824CA8D24C40C8D",
           "title": "Attention Required! | Cloudflare"
         },
         "sendStatus": "website_contact_unreachable_skip",
@@ -602,8 +602,8 @@
         "engine": "codex-chrome-extension-cdp",
         "port": 9224,
         "targetUrl": "https://www.fjellsport.no/",
-        "tabId": "274C309AE7328F66999683DFDEF492EF",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/274C309AE7328F66999683DFDEF492EF",
+        "tabId": "12B351E87BB3B8F6E76C264FA6535622",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/12B351E87BB3B8F6E76C264FA6535622",
         "title": "Fjellsport.no - friluftsbutikken med det enorme utvalget | Fjellsport.no"
       },
       "result": {
@@ -617,8 +617,8 @@
           "engine": "codex-chrome-extension-cdp",
           "port": 9224,
           "targetUrl": "https://www.fjellsport.no/",
-          "tabId": "274C309AE7328F66999683DFDEF492EF",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/274C309AE7328F66999683DFDEF492EF",
+          "tabId": "12B351E87BB3B8F6E76C264FA6535622",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/12B351E87BB3B8F6E76C264FA6535622",
           "title": "Fjellsport.no - friluftsbutikken med det enorme utvalget | Fjellsport.no"
         },
         "sendStatus": "website_contact_unreachable_skip",
@@ -642,8 +642,8 @@
         "engine": "codex-chrome-extension-cdp",
         "port": 9224,
         "targetUrl": "https://www.naturkompaniet.se/",
-        "tabId": "43F173C20D1B79A3A6CEE62864D06EBD",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/43F173C20D1B79A3A6CEE62864D06EBD",
+        "tabId": "889FF4229587ED55EE0BEC5A4F42FC48",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/889FF4229587ED55EE0BEC5A4F42FC48",
         "title": "Experter på outdoorkläder & utrustning | Naturkompaniet"
       },
       "result": {
@@ -657,8 +657,8 @@
           "engine": "codex-chrome-extension-cdp",
           "port": 9224,
           "targetUrl": "https://www.naturkompaniet.se/",
-          "tabId": "43F173C20D1B79A3A6CEE62864D06EBD",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/43F173C20D1B79A3A6CEE62864D06EBD",
+          "tabId": "889FF4229587ED55EE0BEC5A4F42FC48",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/889FF4229587ED55EE0BEC5A4F42FC48",
           "title": "Experter på outdoorkläder & utrustning | Naturkompaniet"
         },
         "sendStatus": "website_contact_unreachable_skip",
@@ -676,14 +676,14 @@
       "targetUrl": "https://www.outnorth.com/",
       "ok": false,
       "sendStatus": "website_contact_unreachable_skip",
-      "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:1",
+      "evidence": "website_contact_entry_not_verified;contact_entry_clicked:Logg inn;website_contact_all_targets_failed:1",
       "chromeOpen": {
         "ok": true,
         "engine": "codex-chrome-extension-cdp",
         "port": 9224,
         "targetUrl": "https://www.outnorth.com/",
-        "tabId": "93FE29DAB888B1B5D29199362895BF32",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/93FE29DAB888B1B5D29199362895BF32",
+        "tabId": "C9F7FA5CAF7C773D4E569FF8CFABB0F8",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/C9F7FA5CAF7C773D4E569FF8CFABB0F8",
         "title": "Outnorth - The best of scandinavian outdoor"
       },
       "result": {
@@ -697,15 +697,15 @@
           "engine": "codex-chrome-extension-cdp",
           "port": 9224,
           "targetUrl": "https://www.outnorth.com/",
-          "tabId": "93FE29DAB888B1B5D29199362895BF32",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/93FE29DAB888B1B5D29199362895BF32",
+          "tabId": "C9F7FA5CAF7C773D4E569FF8CFABB0F8",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/C9F7FA5CAF7C773D4E569FF8CFABB0F8",
           "title": "Outnorth - The best of scandinavian outdoor"
         },
         "sendStatus": "website_contact_unreachable_skip",
         "subject": "Flextail & Vollyc | Lightweight Outdoor & 3C Electronics – Potential Cooperation",
         "draft": "Dear Outnorth Team,\n\nNice to e-meet you.\nI am Leo, from Flextail & Vollyc.\n\nFlextail is our first and core brand, specializing in ultralight electric products for outdoor, travel, and home use. The brand is currently Top 1 on Amazon, with strong global sell-through and a proven product-market fit.\nVollyc, our second brand, focuses on 3C electronics, targeting practical, high-rotation consumer use cases.\n\nFrom our perspective, your platform and positioning are highly aligned with Flextail’s product philosophy, especially in lightweight outdoor and travel-oriented electrics.\n\nWe have already contacted with your team, and we are now actively exploring opportunities in other regions.\nAttached, you will find a brief introduction to our brands and current product catalog for your reference.\n\nLooking ahead, we are planning to launch over 36 new SKUs in 2026, covering multiple usage scenarios and price tiers, which we believe could be of interest to your assortment strategy.\n\nIf you are available, I would greatly appreciate the opportunity to arrange a short introductory video meeting to present our brands and discuss potential collaboration opportunities.\n\nThank you for your time and consideration. I look forward to your reply.\n\n[Flextail.com](https://www.flextail.com/), [vollyc.com](https://vollyc.com/)\n\n[Sincerely](https://wa.me/8617321028184)\n[Best Regard](https://wa.me/8617321028184)\n[Leo Liu](https://wa.me/8617321028184)\n[Sales](https://wa.me/8617321028184) [& Operations Director](https://wa.me/8617321028184)\n[Brand & ODM Department](https://wa.me/8617321028184)\n[Tel/whatsapp:  +86 17321028184](https://wa.me/8617321028184)\n\n[Email:  Leo@flextailgear.com](https://wa.me/8617321028184)\n[SHANGHAI FLEXTAIL TECHNOLOGY CO.,LTD.](https://wa.me/8617321028184)\n[Room103, Building No.6, No.1 Yanjiaqiao, Pudong District, ShangHai, China](https://wa.me/8617321028184)",
-        "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:1",
-        "output": "{\"verdict\":\"website_contact_unreachable_skip\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:1\",\"nextAction\":\"Contact page opened, but no verified form, mailto link, vendor/business route, or clickable Contact Us path was detected. Continue manually before marking the lead ready.\",\"subject\":\"Flextail & Vollyc | Lightweight Outdoor & 3C Electronics – Potential Cooperation\",\"draft\":\"Dear Outnorth Team,\\n\\nNice to e-meet you.\\nI am Leo, from Flextail & Vollyc.\\n\\nFlextail is our first and core brand, specializing in ultralight electric products for outdoor, travel, and home use. The brand is currently Top 1 on Amazon, with strong global sell-through and a proven product-market fit.\\nVollyc, our second brand, focuses on 3C electronics, targeting practical, high-rotation consumer use cases.\\n\\nFrom our perspective, your platform and positioning are highly aligned with Flextail’s product philosophy, especially in lightweight outdoor and travel-oriented electrics.\\n\\nWe have already contacted with your team, and we are now actively exploring opportunities in other regions.\\nAttached, you will find a brief introduction to our brands and current product catalog for your reference.\\n\\nLooking ahead, we are planning to launch over 36 new SKUs in 2026, covering multiple usage scenarios and price tiers, which we believe could be of interest to your assortment strategy.\\n\\nIf you are available, I would greatly appreciate the opportunity to arrange a short introductory video meeting to present our brands and discuss potential collaboration opportunities.\\n\\nThank you for your time and consideration. I look forward to your reply.\\n\\n[Flextail.com](https://www.flextail.com/), [vollyc.com](https://vollyc.com/)\\n\\n[Sincerely](https://wa.me/8617321028184)\\n[Best Regard](https://wa.me/8617321028184)\\n[Leo Liu](https://wa.me/8617321028184)\\n[Sales](https://wa.me/8617321028184) [& Operations Director](https://wa.me/8617321028184)\\n[Brand & ODM Department](https://wa.me/8617321028184)\\n[Tel/whatsapp:  +86 17321028184](https://wa.me/8617321028184)\\n\\n[Email:  Leo@flextailgear.com](https://wa.me/8617321028184)\\n[SHANGHAI FLEXTAIL TECHNOLOGY CO.,LTD.](https://wa.me/8617321028184)\\n[Room103, Building No.6, No.1 Yanjiaqiao, Pudong District, ShangHai, China](https://wa.me/8617321028184)\",\"sendStatus\":\"website_contact_unreachable_skip\",\"attempts\":[{\"targetUrl\":\"https://www.outnorth.com/\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control\"}]}"
+        "evidence": "website_contact_entry_not_verified;contact_entry_clicked:Logg inn;website_contact_all_targets_failed:1",
+        "output": "{\"verdict\":\"website_contact_unreachable_skip\",\"evidence\":\"website_contact_entry_not_verified;contact_entry_clicked:Logg inn;website_contact_all_targets_failed:1\",\"nextAction\":\"Contact page opened, but no verified form, mailto link, vendor/business route, or clickable Contact Us path was detected. Continue manually before marking the lead ready.\",\"subject\":\"Flextail & Vollyc | Lightweight Outdoor & 3C Electronics – Potential Cooperation\",\"draft\":\"Dear Outnorth Team,\\n\\nNice to e-meet you.\\nI am Leo, from Flextail & Vollyc.\\n\\nFlextail is our first and core brand, specializing in ultralight electric products for outdoor, travel, and home use. The brand is currently Top 1 on Amazon, with strong global sell-through and a proven product-market fit.\\nVollyc, our second brand, focuses on 3C electronics, targeting practical, high-rotation consumer use cases.\\n\\nFrom our perspective, your platform and positioning are highly aligned with Flextail’s product philosophy, especially in lightweight outdoor and travel-oriented electrics.\\n\\nWe have already contacted with your team, and we are now actively exploring opportunities in other regions.\\nAttached, you will find a brief introduction to our brands and current product catalog for your reference.\\n\\nLooking ahead, we are planning to launch over 36 new SKUs in 2026, covering multiple usage scenarios and price tiers, which we believe could be of interest to your assortment strategy.\\n\\nIf you are available, I would greatly appreciate the opportunity to arrange a short introductory video meeting to present our brands and discuss potential collaboration opportunities.\\n\\nThank you for your time and consideration. I look forward to your reply.\\n\\n[Flextail.com](https://www.flextail.com/), [vollyc.com](https://vollyc.com/)\\n\\n[Sincerely](https://wa.me/8617321028184)\\n[Best Regard](https://wa.me/8617321028184)\\n[Leo Liu](https://wa.me/8617321028184)\\n[Sales](https://wa.me/8617321028184) [& Operations Director](https://wa.me/8617321028184)\\n[Brand & ODM Department](https://wa.me/8617321028184)\\n[Tel/whatsapp:  +86 17321028184](https://wa.me/8617321028184)\\n\\n[Email:  Leo@flextailgear.com](https://wa.me/8617321028184)\\n[SHANGHAI FLEXTAIL TECHNOLOGY CO.,LTD.](https://wa.me/8617321028184)\\n[Room103, Building No.6, No.1 Yanjiaqiao, Pudong District, ShangHai, China](https://wa.me/8617321028184)\",\"sendStatus\":\"website_contact_unreachable_skip\",\"attempts\":[{\"targetUrl\":\"https://www.outnorth.com/\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;contact_entry_clicked:Logg inn\"}]}"
       }
     },
     {
@@ -722,8 +722,8 @@
         "engine": "codex-chrome-extension-cdp",
         "port": 9224,
         "targetUrl": "https://www.tentworld.com.au/",
-        "tabId": "C177C78945107EC4559DF2C70B79B27E",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/C177C78945107EC4559DF2C70B79B27E",
+        "tabId": "71A56D6D3A9C3214754DB695B8D4B896",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/71A56D6D3A9C3214754DB695B8D4B896",
         "title": "Home Page - Tentworld"
       },
       "result": {
@@ -737,8 +737,8 @@
           "engine": "codex-chrome-extension-cdp",
           "port": 9224,
           "targetUrl": "https://www.tentworld.com.au/",
-          "tabId": "C177C78945107EC4559DF2C70B79B27E",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/C177C78945107EC4559DF2C70B79B27E",
+          "tabId": "71A56D6D3A9C3214754DB695B8D4B896",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/71A56D6D3A9C3214754DB695B8D4B896",
           "title": "Home Page - Tentworld"
         },
         "sendStatus": "website_contact_unreachable_skip",
@@ -756,14 +756,14 @@
       "targetUrl": "https://www.trekitt.co.uk/",
       "ok": false,
       "sendStatus": "website_contact_unreachable_skip",
-      "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:1",
+      "evidence": "website_contact_entry_not_verified;contact_entry_clicked:Contact us;website_contact_all_targets_failed:1",
       "chromeOpen": {
         "ok": true,
         "engine": "codex-chrome-extension-cdp",
         "port": 9224,
         "targetUrl": "https://www.trekitt.co.uk/",
-        "tabId": "D73F40A4092D308EE114A3339279697E",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/D73F40A4092D308EE114A3339279697E",
+        "tabId": "A1AC15ECA8A420DA0496830E85A317C6",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/A1AC15ECA8A420DA0496830E85A317C6",
         "title": "Trekitt | UK Outdoor & Mountaineering Clothing and Equipment"
       },
       "result": {
@@ -777,15 +777,15 @@
           "engine": "codex-chrome-extension-cdp",
           "port": 9224,
           "targetUrl": "https://www.trekitt.co.uk/",
-          "tabId": "D73F40A4092D308EE114A3339279697E",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/D73F40A4092D308EE114A3339279697E",
+          "tabId": "A1AC15ECA8A420DA0496830E85A317C6",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/A1AC15ECA8A420DA0496830E85A317C6",
           "title": "Trekitt | UK Outdoor & Mountaineering Clothing and Equipment"
         },
         "sendStatus": "website_contact_unreachable_skip",
         "subject": "Flextail & Vollyc | Lightweight Outdoor & 3C Electronics – Potential Cooperation",
         "draft": "Dear Trekitt Team,\n\nNice to e-meet you.\nI am Leo, from Flextail & Vollyc.\n\nFlextail is our first and core brand, specializing in ultralight electric products for outdoor, travel, and home use. The brand is currently Top 1 on Amazon, with strong global sell-through and a proven product-market fit.\nVollyc, our second brand, focuses on 3C electronics, targeting practical, high-rotation consumer use cases.\n\nFrom our perspective, your platform and positioning are highly aligned with Flextail’s product philosophy, especially in lightweight outdoor and travel-oriented electrics.\n\nWe have already contacted with your team, and we are now actively exploring opportunities in other regions.\nAttached, you will find a brief introduction to our brands and current product catalog for your reference.\n\nLooking ahead, we are planning to launch over 36 new SKUs in 2026, covering multiple usage scenarios and price tiers, which we believe could be of interest to your assortment strategy.\n\nIf you are available, I would greatly appreciate the opportunity to arrange a short introductory video meeting to present our brands and discuss potential collaboration opportunities.\n\nThank you for your time and consideration. I look forward to your reply.\n\n[Flextail.com](https://www.flextail.com/), [vollyc.com](https://vollyc.com/)\n\n[Sincerely](https://wa.me/8617321028184)\n[Best Regard](https://wa.me/8617321028184)\n[Leo Liu](https://wa.me/8617321028184)\n[Sales](https://wa.me/8617321028184) [& Operations Director](https://wa.me/8617321028184)\n[Brand & ODM Department](https://wa.me/8617321028184)\n[Tel/whatsapp:  +86 17321028184](https://wa.me/8617321028184)\n\n[Email:  Leo@flextailgear.com](https://wa.me/8617321028184)\n[SHANGHAI FLEXTAIL TECHNOLOGY CO.,LTD.](https://wa.me/8617321028184)\n[Room103, Building No.6, No.1 Yanjiaqiao, Pudong District, ShangHai, China](https://wa.me/8617321028184)",
-        "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:1",
-        "output": "{\"verdict\":\"website_contact_unreachable_skip\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:1\",\"nextAction\":\"Contact page opened, but no verified form, mailto link, vendor/business route, or clickable Contact Us path was detected. Continue manually before marking the lead ready.\",\"subject\":\"Flextail & Vollyc | Lightweight Outdoor & 3C Electronics – Potential Cooperation\",\"draft\":\"Dear Trekitt Team,\\n\\nNice to e-meet you.\\nI am Leo, from Flextail & Vollyc.\\n\\nFlextail is our first and core brand, specializing in ultralight electric products for outdoor, travel, and home use. The brand is currently Top 1 on Amazon, with strong global sell-through and a proven product-market fit.\\nVollyc, our second brand, focuses on 3C electronics, targeting practical, high-rotation consumer use cases.\\n\\nFrom our perspective, your platform and positioning are highly aligned with Flextail’s product philosophy, especially in lightweight outdoor and travel-oriented electrics.\\n\\nWe have already contacted with your team, and we are now actively exploring opportunities in other regions.\\nAttached, you will find a brief introduction to our brands and current product catalog for your reference.\\n\\nLooking ahead, we are planning to launch over 36 new SKUs in 2026, covering multiple usage scenarios and price tiers, which we believe could be of interest to your assortment strategy.\\n\\nIf you are available, I would greatly appreciate the opportunity to arrange a short introductory video meeting to present our brands and discuss potential collaboration opportunities.\\n\\nThank you for your time and consideration. I look forward to your reply.\\n\\n[Flextail.com](https://www.flextail.com/), [vollyc.com](https://vollyc.com/)\\n\\n[Sincerely](https://wa.me/8617321028184)\\n[Best Regard](https://wa.me/8617321028184)\\n[Leo Liu](https://wa.me/8617321028184)\\n[Sales](https://wa.me/8617321028184) [& Operations Director](https://wa.me/8617321028184)\\n[Brand & ODM Department](https://wa.me/8617321028184)\\n[Tel/whatsapp:  +86 17321028184](https://wa.me/8617321028184)\\n\\n[Email:  Leo@flextailgear.com](https://wa.me/8617321028184)\\n[SHANGHAI FLEXTAIL TECHNOLOGY CO.,LTD.](https://wa.me/8617321028184)\\n[Room103, Building No.6, No.1 Yanjiaqiao, Pudong District, ShangHai, China](https://wa.me/8617321028184)\",\"sendStatus\":\"website_contact_unreachable_skip\",\"attempts\":[{\"targetUrl\":\"https://www.trekitt.co.uk/\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control\"}]}"
+        "evidence": "website_contact_entry_not_verified;contact_entry_clicked:Contact us;website_contact_all_targets_failed:1",
+        "output": "{\"verdict\":\"website_contact_unreachable_skip\",\"evidence\":\"website_contact_entry_not_verified;contact_entry_clicked:Contact us;website_contact_all_targets_failed:1\",\"nextAction\":\"Contact page opened, but no verified form, mailto link, vendor/business route, or clickable Contact Us path was detected. Continue manually before marking the lead ready.\",\"subject\":\"Flextail & Vollyc | Lightweight Outdoor & 3C Electronics – Potential Cooperation\",\"draft\":\"Dear Trekitt Team,\\n\\nNice to e-meet you.\\nI am Leo, from Flextail & Vollyc.\\n\\nFlextail is our first and core brand, specializing in ultralight electric products for outdoor, travel, and home use. The brand is currently Top 1 on Amazon, with strong global sell-through and a proven product-market fit.\\nVollyc, our second brand, focuses on 3C electronics, targeting practical, high-rotation consumer use cases.\\n\\nFrom our perspective, your platform and positioning are highly aligned with Flextail’s product philosophy, especially in lightweight outdoor and travel-oriented electrics.\\n\\nWe have already contacted with your team, and we are now actively exploring opportunities in other regions.\\nAttached, you will find a brief introduction to our brands and current product catalog for your reference.\\n\\nLooking ahead, we are planning to launch over 36 new SKUs in 2026, covering multiple usage scenarios and price tiers, which we believe could be of interest to your assortment strategy.\\n\\nIf you are available, I would greatly appreciate the opportunity to arrange a short introductory video meeting to present our brands and discuss potential collaboration opportunities.\\n\\nThank you for your time and consideration. I look forward to your reply.\\n\\n[Flextail.com](https://www.flextail.com/), [vollyc.com](https://vollyc.com/)\\n\\n[Sincerely](https://wa.me/8617321028184)\\n[Best Regard](https://wa.me/8617321028184)\\n[Leo Liu](https://wa.me/8617321028184)\\n[Sales](https://wa.me/8617321028184) [& Operations Director](https://wa.me/8617321028184)\\n[Brand & ODM Department](https://wa.me/8617321028184)\\n[Tel/whatsapp:  +86 17321028184](https://wa.me/8617321028184)\\n\\n[Email:  Leo@flextailgear.com](https://wa.me/8617321028184)\\n[SHANGHAI FLEXTAIL TECHNOLOGY CO.,LTD.](https://wa.me/8617321028184)\\n[Room103, Building No.6, No.1 Yanjiaqiao, Pudong District, ShangHai, China](https://wa.me/8617321028184)\",\"sendStatus\":\"website_contact_unreachable_skip\",\"attempts\":[{\"targetUrl\":\"https://www.trekitt.co.uk/\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;contact_entry_clicked:Contact us\"}]}"
       }
     },
     {
@@ -796,14 +796,14 @@
       "targetUrl": "https://ultralightoutdoorgear.co.uk/",
       "ok": false,
       "sendStatus": "website_contact_unreachable_skip",
-      "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:1",
+      "evidence": "website_contact_entry_not_verified;contact_entry_clicked:Contact Us;website_contact_all_targets_failed:1",
       "chromeOpen": {
         "ok": true,
         "engine": "codex-chrome-extension-cdp",
         "port": 9224,
         "targetUrl": "https://ultralightoutdoorgear.co.uk/",
-        "tabId": "768168E8C4DA55643FD58EAEB4FAF600",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/768168E8C4DA55643FD58EAEB4FAF600",
+        "tabId": "72737E25BB1B9848E91B61A5DC3CE6E0",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/72737E25BB1B9848E91B61A5DC3CE6E0",
         "title": "Ultralight Outdoor Gear | UK | Lightweight Gear Specialists"
       },
       "result": {
@@ -817,15 +817,15 @@
           "engine": "codex-chrome-extension-cdp",
           "port": 9224,
           "targetUrl": "https://ultralightoutdoorgear.co.uk/",
-          "tabId": "768168E8C4DA55643FD58EAEB4FAF600",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/768168E8C4DA55643FD58EAEB4FAF600",
+          "tabId": "72737E25BB1B9848E91B61A5DC3CE6E0",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/72737E25BB1B9848E91B61A5DC3CE6E0",
           "title": "Ultralight Outdoor Gear | UK | Lightweight Gear Specialists"
         },
         "sendStatus": "website_contact_unreachable_skip",
         "subject": "Flextail & Vollyc | Lightweight Outdoor & 3C Electronics – Potential Cooperation",
         "draft": "Dear Ultralight Outdoor Gear Team,\n\nNice to e-meet you.\nI am Leo, from Flextail & Vollyc.\n\nFlextail is our first and core brand, specializing in ultralight electric products for outdoor, travel, and home use. The brand is currently Top 1 on Amazon, with strong global sell-through and a proven product-market fit.\nVollyc, our second brand, focuses on 3C electronics, targeting practical, high-rotation consumer use cases.\n\nFrom our perspective, your platform and positioning are highly aligned with Flextail’s product philosophy, especially in lightweight outdoor and travel-oriented electrics.\n\nWe have already contacted with your team, and we are now actively exploring opportunities in other regions.\nAttached, you will find a brief introduction to our brands and current product catalog for your reference.\n\nLooking ahead, we are planning to launch over 36 new SKUs in 2026, covering multiple usage scenarios and price tiers, which we believe could be of interest to your assortment strategy.\n\nIf you are available, I would greatly appreciate the opportunity to arrange a short introductory video meeting to present our brands and discuss potential collaboration opportunities.\n\nThank you for your time and consideration. I look forward to your reply.\n\n[Flextail.com](https://www.flextail.com/), [vollyc.com](https://vollyc.com/)\n\n[Sincerely](https://wa.me/8617321028184)\n[Best Regard](https://wa.me/8617321028184)\n[Leo Liu](https://wa.me/8617321028184)\n[Sales](https://wa.me/8617321028184) [& Operations Director](https://wa.me/8617321028184)\n[Brand & ODM Department](https://wa.me/8617321028184)\n[Tel/whatsapp:  +86 17321028184](https://wa.me/8617321028184)\n\n[Email:  Leo@flextailgear.com](https://wa.me/8617321028184)\n[SHANGHAI FLEXTAIL TECHNOLOGY CO.,LTD.](https://wa.me/8617321028184)\n[Room103, Building No.6, No.1 Yanjiaqiao, Pudong District, ShangHai, China](https://wa.me/8617321028184)",
-        "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:1",
-        "output": "{\"verdict\":\"website_contact_unreachable_skip\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:1\",\"nextAction\":\"Contact page opened, but no verified form, mailto link, vendor/business route, or clickable Contact Us path was detected. Continue manually before marking the lead ready.\",\"subject\":\"Flextail & Vollyc | Lightweight Outdoor & 3C Electronics – Potential Cooperation\",\"draft\":\"Dear Ultralight Outdoor Gear Team,\\n\\nNice to e-meet you.\\nI am Leo, from Flextail & Vollyc.\\n\\nFlextail is our first and core brand, specializing in ultralight electric products for outdoor, travel, and home use. The brand is currently Top 1 on Amazon, with strong global sell-through and a proven product-market fit.\\nVollyc, our second brand, focuses on 3C electronics, targeting practical, high-rotation consumer use cases.\\n\\nFrom our perspective, your platform and positioning are highly aligned with Flextail’s product philosophy, especially in lightweight outdoor and travel-oriented electrics.\\n\\nWe have already contacted with your team, and we are now actively exploring opportunities in other regions.\\nAttached, you will find a brief introduction to our brands and current product catalog for your reference.\\n\\nLooking ahead, we are planning to launch over 36 new SKUs in 2026, covering multiple usage scenarios and price tiers, which we believe could be of interest to your assortment strategy.\\n\\nIf you are available, I would greatly appreciate the opportunity to arrange a short introductory video meeting to present our brands and discuss potential collaboration opportunities.\\n\\nThank you for your time and consideration. I look forward to your reply.\\n\\n[Flextail.com](https://www.flextail.com/), [vollyc.com](https://vollyc.com/)\\n\\n[Sincerely](https://wa.me/8617321028184)\\n[Best Regard](https://wa.me/8617321028184)\\n[Leo Liu](https://wa.me/8617321028184)\\n[Sales](https://wa.me/8617321028184) [& Operations Director](https://wa.me/8617321028184)\\n[Brand & ODM Department](https://wa.me/8617321028184)\\n[Tel/whatsapp:  +86 17321028184](https://wa.me/8617321028184)\\n\\n[Email:  Leo@flextailgear.com](https://wa.me/8617321028184)\\n[SHANGHAI FLEXTAIL TECHNOLOGY CO.,LTD.](https://wa.me/8617321028184)\\n[Room103, Building No.6, No.1 Yanjiaqiao, Pudong District, ShangHai, China](https://wa.me/8617321028184)\",\"sendStatus\":\"website_contact_unreachable_skip\",\"attempts\":[{\"targetUrl\":\"https://ultralightoutdoorgear.co.uk/\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control\"}]}"
+        "evidence": "website_contact_entry_not_verified;contact_entry_clicked:Contact Us;website_contact_all_targets_failed:1",
+        "output": "{\"verdict\":\"website_contact_unreachable_skip\",\"evidence\":\"website_contact_entry_not_verified;contact_entry_clicked:Contact Us;website_contact_all_targets_failed:1\",\"nextAction\":\"Contact page opened, but no verified form, mailto link, vendor/business route, or clickable Contact Us path was detected. Continue manually before marking the lead ready.\",\"subject\":\"Flextail & Vollyc | Lightweight Outdoor & 3C Electronics – Potential Cooperation\",\"draft\":\"Dear Ultralight Outdoor Gear Team,\\n\\nNice to e-meet you.\\nI am Leo, from Flextail & Vollyc.\\n\\nFlextail is our first and core brand, specializing in ultralight electric products for outdoor, travel, and home use. The brand is currently Top 1 on Amazon, with strong global sell-through and a proven product-market fit.\\nVollyc, our second brand, focuses on 3C electronics, targeting practical, high-rotation consumer use cases.\\n\\nFrom our perspective, your platform and positioning are highly aligned with Flextail’s product philosophy, especially in lightweight outdoor and travel-oriented electrics.\\n\\nWe have already contacted with your team, and we are now actively exploring opportunities in other regions.\\nAttached, you will find a brief introduction to our brands and current product catalog for your reference.\\n\\nLooking ahead, we are planning to launch over 36 new SKUs in 2026, covering multiple usage scenarios and price tiers, which we believe could be of interest to your assortment strategy.\\n\\nIf you are available, I would greatly appreciate the opportunity to arrange a short introductory video meeting to present our brands and discuss potential collaboration opportunities.\\n\\nThank you for your time and consideration. I look forward to your reply.\\n\\n[Flextail.com](https://www.flextail.com/), [vollyc.com](https://vollyc.com/)\\n\\n[Sincerely](https://wa.me/8617321028184)\\n[Best Regard](https://wa.me/8617321028184)\\n[Leo Liu](https://wa.me/8617321028184)\\n[Sales](https://wa.me/8617321028184) [& Operations Director](https://wa.me/8617321028184)\\n[Brand & ODM Department](https://wa.me/8617321028184)\\n[Tel/whatsapp:  +86 17321028184](https://wa.me/8617321028184)\\n\\n[Email:  Leo@flextailgear.com](https://wa.me/8617321028184)\\n[SHANGHAI FLEXTAIL TECHNOLOGY CO.,LTD.](https://wa.me/8617321028184)\\n[Room103, Building No.6, No.1 Yanjiaqiao, Pudong District, ShangHai, China](https://wa.me/8617321028184)\",\"sendStatus\":\"website_contact_unreachable_skip\",\"attempts\":[{\"targetUrl\":\"https://ultralightoutdoorgear.co.uk/\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;contact_entry_clicked:Contact Us\"}]}"
       }
     }
   ],
@@ -835,132 +835,6 @@
       "company": "Next Adventure",
       "action": "develop",
       "reason": "concrete_google_discovered_major_customer_instagram"
-    },
-    {
-      "id": "google-customer-summit-international-website-contact",
-      "company": "Summit International",
-      "action": "email_priority",
-      "reason": "marketing_attachment_missing"
-    },
-    {
-      "id": "google-customer-alpinetrek-website-contact",
-      "company": "Alpinetrek",
-      "action": "verify_target",
-      "reason": "marketing_attachment_missing"
-    },
-    {
-      "id": "google-customer-barrabes-website-contact",
-      "company": "Barrabes",
-      "action": "verify_target",
-      "reason": "marketing_attachment_missing"
-    },
-    {
-      "id": "google-customer-ekosport-website-contact",
-      "company": "Ekosport",
-      "action": "verify_target",
-      "reason": "marketing_attachment_missing"
-    },
-    {
-      "id": "google-customer-scandinavian-outdoor-website-contact",
-      "company": "Scandinavian Outdoor",
-      "action": "verify_target",
-      "reason": "marketing_attachment_missing"
-    },
-    {
-      "id": "google-customer-snowleader-website-contact",
-      "company": "Snowleader",
-      "action": "verify_target",
-      "reason": "marketing_attachment_missing"
-    },
-    {
-      "id": "google-customer-friluftsland-website-contact",
-      "company": "Friluftsland",
-      "action": "verify_target",
-      "reason": "marketing_attachment_missing"
-    },
-    {
-      "id": "google-customer-spejder-sport-website-contact",
-      "company": "Spejder Sport",
-      "action": "verify_target",
-      "reason": "marketing_attachment_missing"
-    },
-    {
-      "id": "google-customer-taunton-leisure-website-contact",
-      "company": "Taunton Leisure",
-      "action": "verify_target",
-      "reason": "marketing_attachment_missing"
-    },
-    {
-      "id": "google-customer-hardloop-website-contact",
-      "company": "Hardloop",
-      "action": "verify_target",
-      "reason": "marketing_attachment_missing"
-    },
-    {
-      "id": "google-customer-sportpursuit-website-contact",
-      "company": "SportPursuit",
-      "action": "verify_target",
-      "reason": "marketing_attachment_missing"
-    },
-    {
-      "id": "google-customer-varuste-website-contact",
-      "company": "Varuste",
-      "action": "verify_target",
-      "reason": "marketing_attachment_missing"
-    },
-    {
-      "id": "google-customer-next-adventure-website-contact",
-      "company": "Next Adventure",
-      "action": "verify_target",
-      "reason": "marketing_attachment_missing"
-    },
-    {
-      "id": "google-customer-valhalla-pure-outfitters-website-contact",
-      "company": "Valhalla Pure Outfitters",
-      "action": "verify_target",
-      "reason": "marketing_attachment_missing"
-    },
-    {
-      "id": "google-customer-kittery-trading-post-website-contact",
-      "company": "Kittery Trading Post",
-      "action": "verify_target",
-      "reason": "marketing_attachment_missing"
-    },
-    {
-      "id": "google-customer-backcountry-experience-website-contact",
-      "company": "Backcountry Experience",
-      "action": "verify_target",
-      "reason": "marketing_attachment_missing"
-    },
-    {
-      "id": "google-customer-la-cordee-website-contact",
-      "company": "La Cordee",
-      "action": "verify_target",
-      "reason": "marketing_attachment_missing"
-    },
-    {
-      "id": "google-customer-latulippe-website-contact",
-      "company": "Latulippe",
-      "action": "verify_target",
-      "reason": "marketing_attachment_missing"
-    },
-    {
-      "id": "google-customer-neptune-mountaineering-website-contact",
-      "company": "Neptune Mountaineering",
-      "action": "verify_target",
-      "reason": "marketing_attachment_missing"
-    },
-    {
-      "id": "google-customer-ute-mountaineer-website-contact",
-      "company": "Ute Mountaineer",
-      "action": "verify_target",
-      "reason": "marketing_attachment_missing"
-    },
-    {
-      "id": "google-customer-transa-website-contact",
-      "company": "Transa",
-      "action": "verify_target",
-      "reason": "marketing_attachment_missing"
     },
     {
       "id": 23,
@@ -1059,8 +933,50 @@
       "reason": "marketing_attachment_missing"
     },
     {
+      "id": "google-customer-summit-international-website-contact",
+      "company": "Summit International",
+      "action": "email_priority",
+      "reason": "marketing_attachment_missing"
+    },
+    {
+      "id": "google-customer-alpinetrek-website-contact",
+      "company": "Alpinetrek",
+      "action": "verify_target",
+      "reason": "marketing_attachment_missing"
+    },
+    {
+      "id": "google-customer-barrabes-website-contact",
+      "company": "Barrabes",
+      "action": "verify_target",
+      "reason": "marketing_attachment_missing"
+    },
+    {
       "id": "google-customer-de-wit-schijndel-website-contact",
       "company": "De Wit Schijndel",
+      "action": "verify_target",
+      "reason": "marketing_attachment_missing"
+    },
+    {
+      "id": "google-customer-ekosport-website-contact",
+      "company": "Ekosport",
+      "action": "verify_target",
+      "reason": "marketing_attachment_missing"
+    },
+    {
+      "id": "google-customer-scandinavian-outdoor-website-contact",
+      "company": "Scandinavian Outdoor",
+      "action": "verify_target",
+      "reason": "marketing_attachment_missing"
+    },
+    {
+      "id": "google-customer-snowleader-website-contact",
+      "company": "Snowleader",
+      "action": "verify_target",
+      "reason": "marketing_attachment_missing"
+    },
+    {
+      "id": "google-customer-friluftsland-website-contact",
+      "company": "Friluftsland",
       "action": "verify_target",
       "reason": "marketing_attachment_missing"
     },
@@ -1071,8 +987,86 @@
       "reason": "marketing_attachment_missing"
     },
     {
+      "id": "google-customer-spejder-sport-website-contact",
+      "company": "Spejder Sport",
+      "action": "verify_target",
+      "reason": "marketing_attachment_missing"
+    },
+    {
+      "id": "google-customer-taunton-leisure-website-contact",
+      "company": "Taunton Leisure",
+      "action": "verify_target",
+      "reason": "marketing_attachment_missing"
+    },
+    {
+      "id": "google-customer-hardloop-website-contact",
+      "company": "Hardloop",
+      "action": "verify_target",
+      "reason": "marketing_attachment_missing"
+    },
+    {
       "id": "google-customer-kampeerwereld-hendriks-website-contact",
       "company": "Kampeerwereld Hendriks",
+      "action": "verify_target",
+      "reason": "marketing_attachment_missing"
+    },
+    {
+      "id": "google-customer-sportpursuit-website-contact",
+      "company": "SportPursuit",
+      "action": "verify_target",
+      "reason": "marketing_attachment_missing"
+    },
+    {
+      "id": "google-customer-varuste-website-contact",
+      "company": "Varuste",
+      "action": "verify_target",
+      "reason": "marketing_attachment_missing"
+    },
+    {
+      "id": "google-customer-next-adventure-website-contact",
+      "company": "Next Adventure",
+      "action": "verify_target",
+      "reason": "marketing_attachment_missing"
+    },
+    {
+      "id": "google-customer-valhalla-pure-outfitters-website-contact",
+      "company": "Valhalla Pure Outfitters",
+      "action": "verify_target",
+      "reason": "marketing_attachment_missing"
+    },
+    {
+      "id": "google-customer-kittery-trading-post-website-contact",
+      "company": "Kittery Trading Post",
+      "action": "verify_target",
+      "reason": "marketing_attachment_missing"
+    },
+    {
+      "id": "google-customer-backcountry-experience-website-contact",
+      "company": "Backcountry Experience",
+      "action": "verify_target",
+      "reason": "marketing_attachment_missing"
+    },
+    {
+      "id": "google-customer-la-cordee-website-contact",
+      "company": "La Cordee",
+      "action": "verify_target",
+      "reason": "marketing_attachment_missing"
+    },
+    {
+      "id": "google-customer-latulippe-website-contact",
+      "company": "Latulippe",
+      "action": "verify_target",
+      "reason": "marketing_attachment_missing"
+    },
+    {
+      "id": "google-customer-neptune-mountaineering-website-contact",
+      "company": "Neptune Mountaineering",
+      "action": "verify_target",
+      "reason": "marketing_attachment_missing"
+    },
+    {
+      "id": "google-customer-ute-mountaineer-website-contact",
+      "company": "Ute Mountaineer",
       "action": "verify_target",
       "reason": "marketing_attachment_missing"
     },
@@ -1085,6 +1079,12 @@
     {
       "id": "google-customer-wildfire-sports-website-contact",
       "company": "Wildfire Sports",
+      "action": "verify_target",
+      "reason": "marketing_attachment_missing"
+    },
+    {
+      "id": "google-customer-transa-website-contact",
+      "company": "Transa",
       "action": "verify_target",
       "reason": "marketing_attachment_missing"
     },
@@ -1469,16 +1469,16 @@
   ],
   "systemRefresh": {
     "ok": true,
-    "stdout": "{\n  \"date\": \"2026-07-15\",\n  \"summary\": {\n    \"totalLeads\": 16,\n    \"highIcp\": 16,\n    \"readyToDevelop\": 2,\n    \"dueNow\": 57,\n    \"visibleTodayQueue\": 30,\n    \"potentialPool\": 55,\n    \"potentialPoolTarget\": 100,\n    \"customerTableHighIcp\": 20,\n    \"refillNeeded\": 45,\n    \"googleDiscovered\": 37,\n    \"facebookDiscovered\": 0,\n    \"websiteContactDiscovered\": 35,\n    \"scheduledLater\": 0,\n    \"cooldown\": 30,\n    \"emailPriority\": 0,\n    \"openAgencyMarket\": 15,\n    \"exclusiveAgencySkipped\": 1,\n    \"needsVerification\": 0,\n    \"retainedLowIcp\": 0\n  },\n  \"bugErrors\": 0,\n  \"queueFile\": \"E:\\\\New project\\\\outreach-dashboard\\\\daily-runs\\\\2026-07-15-daily-automation.json\",\n  \"csvFile\": \"E:\\\\New project\\\\outreach-dashboard\\\\daily-runs\\\\2026-07-15-daily-queue.csv\"\n}",
+    "stdout": "{\n  \"date\": \"2026-07-16\",\n  \"summary\": {\n    \"totalLeads\": 16,\n    \"highIcp\": 16,\n    \"readyToDevelop\": 2,\n    \"dueNow\": 57,\n    \"visibleTodayQueue\": 30,\n    \"potentialPool\": 55,\n    \"potentialPoolTarget\": 100,\n    \"customerTableHighIcp\": 20,\n    \"refillNeeded\": 45,\n    \"googleDiscovered\": 37,\n    \"facebookDiscovered\": 0,\n    \"websiteContactDiscovered\": 35,\n    \"scheduledLater\": 0,\n    \"cooldown\": 30,\n    \"emailPriority\": 0,\n    \"openAgencyMarket\": 15,\n    \"exclusiveAgencySkipped\": 1,\n    \"needsVerification\": 0,\n    \"retainedLowIcp\": 0\n  },\n  \"bugErrors\": 0,\n  \"queueFile\": \"E:\\\\New project\\\\outreach-dashboard\\\\daily-runs\\\\2026-07-16-daily-automation.json\",\n  \"csvFile\": \"E:\\\\New project\\\\outreach-dashboard\\\\daily-runs\\\\2026-07-16-daily-queue.csv\"\n}",
     "stderr": "",
     "error": "",
     "visibility": {
-      "updatedAt": "2026-07-15T13:08:17.211Z",
+      "updatedAt": "2026-07-15T16:05:20.983Z",
       "source": "main-refreshDailyAutomationArtifacts",
-      "runDate": "2026-07-15",
-      "artifactGeneratedAt": "2026-07-15T13:08:15.863Z",
-      "executionGeneratedAt": "2026-07-15T13:04:37.076Z",
-      "githubSyncUpdatedAt": "2026-07-15T13:04:59.482Z",
+      "runDate": "2026-07-16",
+      "artifactGeneratedAt": "2026-07-15T16:05:20.209Z",
+      "executionGeneratedAt": "2026-07-15T13:08:17.683Z",
+      "githubSyncUpdatedAt": "2026-07-15T13:09:45.142Z",
       "counts": {
         "dailyQueue": 57,
         "googleDiscovered": 37,
@@ -1524,5 +1524,5 @@
       }
     }
   },
-  "completedAt": "2026-07-15T13:08:17.683Z"
+  "completedAt": "2026-07-15T16:05:21.477Z"
 }
