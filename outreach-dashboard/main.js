@@ -314,6 +314,8 @@ function failedOpenResultShouldBlockRetry(result = {}) {
     'website_contact_entry_not_verified',
   ];
   if (recoverable.some(fragment => evidence.includes(fragment))) return false;
+  if (/identity_mismatch_expected_[\s\S]*_title_\s*$/i.test(String(result.evidence || ''))
+    || evidence.includes('identity_check_pending_empty_page')) return false;
   const hardFailures = [
     'identity_mismatch',
     'unavailable_profile_page',
@@ -1644,6 +1646,13 @@ function websiteContactInspectionExpression() {
         };
       });
     const mailtos = Array.from(document.querySelectorAll('a[href^="mailto:"]')).map((el) => el.href).filter(Boolean);
+    const socialLinks = Array.from(document.querySelectorAll('a[href]'))
+      .map((el) => String(el.href || el.getAttribute('href') || '').trim())
+      .filter((href) => /^https?:\/\//i.test(href))
+      .filter((href) => /linkedin\.com|instagram\.com|facebook\.com|fb\.com/i.test(href))
+      .filter((href) => !/\/share|\/sharer|\/intent|\/login|\/privacy|\/terms/i.test(href))
+      .filter((href, index, list) => list.indexOf(href) === index)
+      .slice(0, 8);
     const fields = Array.from(document.querySelectorAll('form input,form textarea,form select,input,textarea,select'))
       .filter(visible)
       .filter((el) => !/hidden|submit|button|reset|search/i.test(String(el.type || '')))
@@ -1676,9 +1685,40 @@ function websiteContactInspectionExpression() {
       fieldCount: fields.length,
       messageFieldCount: messageFields.length,
       actionCount: actionableControls.length,
-      actions: actionableControls.slice(0, 6)
+      actions: actionableControls.slice(0, 6),
+      socialLinks
     });
   })()`;
+}
+
+function socialFallbackFromInspection(lead = {}, inspection = {}) {
+  const links = Array.isArray(inspection && inspection.socialLinks) ? inspection.socialLinks : [];
+  const ranked = links
+    .map((url) => {
+      const text = String(url || '').toLowerCase();
+      const platform = text.includes('linkedin.com') ? 'linkedin'
+        : text.includes('facebook.com') || text.includes('fb.com') ? 'facebook'
+          : text.includes('instagram.com') ? 'instagram'
+            : '';
+      const rank = platform === 'linkedin' ? 3 : platform === 'facebook' ? 2 : platform === 'instagram' ? 1 : 0;
+      return { url, platform, rank };
+    })
+    .filter(item => item.platform && item.rank > 0)
+    .sort((a, b) => b.rank - a.rank);
+  const best = ranked[0];
+  if (!best) return null;
+  return {
+    ...lead,
+    taskId: `${lead.taskId || lead.id || lead.company || lead.name}-${best.platform}-fallback`,
+    id: `${lead.id || lead.taskId || lead.company || lead.name}-${best.platform}-fallback`,
+    platform: best.platform,
+    platformUrl: best.url,
+    targetUrl: best.url,
+    verifiedTargetUrl: best.url,
+    url: best.url,
+    action: 'develop',
+    reason: 'official_website_social_fallback',
+  };
 }
 
 function websiteContactClickExpression() {
@@ -2137,6 +2177,24 @@ async function runWebsiteContactLead(lead = {}) {
       evidence: contactFlow.evidence,
     });
     if (!contactFlow.ok) {
+      const socialFallback = socialFallbackFromInspection(lead, contactFlow.inspection);
+      if (socialFallback) {
+        await closeAutomationChromeTab(chromeOpen);
+        const socialResult = await executeLeadAutomation(socialFallback, { ignoreCooldown: true, allowParallel: true });
+        const socialOutput = parseExecutionOutput(socialResult && socialResult.output);
+        return {
+          ...socialResult,
+          mode: socialResult && socialResult.mode || 'official_website_social_fallback',
+          evidence: `${contactFlow.evidence};official_social_fallback:${socialFallback.platform};${socialOutput.evidence || socialResult.evidence || ''}`,
+          output: JSON.stringify({
+            ...socialOutput,
+            verdict: socialOutput.verdict || socialResult.sendStatus || 'approval_pending',
+            evidence: `${contactFlow.evidence};official_social_fallback:${socialFallback.platform};${socialOutput.evidence || socialResult.evidence || ''}`,
+            nextAction: socialOutput.nextAction || `Official website exposed ${socialFallback.platform}; Codex Chrome tried that social channel before website fallback.`,
+            sendStatus: socialOutput.sendStatus || socialResult.sendStatus || 'approval_pending',
+          }),
+        };
+      }
       if (lead.publicEmail || lead.contactEmail) {
         const publicEmail = lead.publicEmail || lead.contactEmail;
         contactFlow.evidence = `${contactFlow.evidence};public_email_fallback_available:${publicEmail};email_sender_not_configured`;
