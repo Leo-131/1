@@ -867,6 +867,18 @@ function copyPublicArtifact(file) {
   return true;
 }
 
+function dailyQueueGoalVisibility(summary = {}) {
+  const target = Number(summary.potentialPoolTarget || 100);
+  const potentialPool = Number(summary.potentialPool || 0);
+  const refillNeeded = Math.max(0, target - potentialPool);
+  return {
+    target,
+    potentialPool,
+    refillNeeded,
+    reached: refillNeeded === 0,
+  };
+}
+
 function writeSystemVisibilityArtifact(run) {
   const dailyRows = Array.isArray(run.dailyQueue) ? run.dailyQueue : [];
   const visibleRows = Array.isArray(run.visibleTodayQueue) ? run.visibleTodayQueue : dailyRows;
@@ -902,6 +914,7 @@ function writeSystemVisibilityArtifact(run) {
       sources: ['dailyQueue', 'cooldownQueue', 'google-lead-discovery-latest'],
       fields: ['publicEmail', 'contactEmail', 'contactPhone', 'vendorPortal', 'contactUrl', 'contactSearchUrl', 'website'],
     },
+    dailyQueueGoal: dailyQueueGoalVisibility(run.summary || {}),
   };
   fs.writeFileSync(path.join(ROOT, 'system-visibility-latest.json'), JSON.stringify(visibility, null, 2));
   fs.writeFileSync(path.join(ROOT, 'system-visibility-latest.js'), `window.SYSTEM_VISIBILITY_LATEST = ${JSON.stringify(visibility, null, 2)};\n`);

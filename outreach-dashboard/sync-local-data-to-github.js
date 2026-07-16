@@ -53,6 +53,18 @@ function writeSyncStatus(status) {
   return output;
 }
 
+function dailyQueueGoalVisibility(summary = {}) {
+  const target = Number(summary.potentialPoolTarget || 100);
+  const potentialPool = Number(summary.potentialPool || 0);
+  const refillNeeded = Math.max(0, target - potentialPool);
+  return {
+    target,
+    potentialPool,
+    refillNeeded,
+    reached: refillNeeded === 0,
+  };
+}
+
 function writeSystemVisibilityArtifact(source) {
   const latest = readJson(path.join(ROOT, 'daily-automation-latest.json'), {});
   const latestExecution = readJson(path.join(ROOT, 'daily-automation-execution-latest.json'), {});
@@ -94,6 +106,7 @@ function writeSystemVisibilityArtifact(source) {
       'github-sync/latest-status',
       'system-visibility-latest',
     ],
+    dailyQueueGoal: dailyQueueGoalVisibility(latest.summary || {}),
     contactEnrichment: {
       enabled: true,
       sources: ['dailyQueue', 'cooldownQueue', 'google-lead-discovery-latest'],

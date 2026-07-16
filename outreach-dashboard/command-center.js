@@ -1287,7 +1287,11 @@
     const visibility = latestSystemVisibility
       ? ` · visibleSections ${(latestSystemVisibility.visibleSections || []).length} · visibility ${latestSystemVisibility.updatedAt || ''}`
       : '';
-    return `<div class="cc-quality">系统已更新：Latest artifact ${esc(system.generatedAt || latestRun.date || 'unknown')} · potentialPool ${(system.potentialRows || []).length} · dailyQueue ${system.dailyRows.length} · googleDiscovered ${system.googleRows.length} · websiteContact ${system.websiteContactRows.length}${esc(visibility)}${esc(sync)}</div>`;
+    const goal = latestSystemVisibility && latestSystemVisibility.dailyQueueGoal;
+    const goalText = goal
+      ? ` · queueGoal ${goal.reached ? 'reached' : `need ${goal.refillNeeded || 0}/${goal.target || 100}`}`
+      : '';
+    return `<div class="cc-quality">系统已更新：Latest artifact ${esc(system.generatedAt || latestRun.date || 'unknown')} · potentialPool ${(system.potentialRows || []).length} · dailyQueue ${system.dailyRows.length} · googleDiscovered ${system.googleRows.length} · websiteContact ${system.websiteContactRows.length}${esc(goalText)}${esc(visibility)}${esc(sync)}</div>`;
   }
   function actionLabel(action) {
     const labels = {
