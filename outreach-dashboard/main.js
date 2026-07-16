@@ -2370,7 +2370,20 @@ async function runOpenClawLead(lead, decision, options = {}) {
   };
 }
 
-async function runCodexChromeLead(lead, decision, mode = 'codex_chrome_prepare') {
+function instagramFallbackTarget(lead = {}) {
+  const channels = lead.alternateChannels || {};
+  const candidate = channels.instagram || lead.instagramUrl || lead.instagram || '';
+  if (!candidate) return '';
+  try {
+    const url = new URL(String(candidate));
+    if (url.protocol !== 'https:' || !/instagram\.com$/i.test(url.hostname)) return '';
+    return url.href;
+  } catch {
+    return '';
+  }
+}
+
+async function runCodexChromeLead(lead, decision, mode = 'codex_chrome_prepare', options = {}) {
   const target = validateLeadTargetForPreparation(lead);
   if (!target.ok) return target;
   const chromeOpen = await openWithCodexChrome(target.targetUrl, { automationOwned: true });
@@ -2379,6 +2392,36 @@ async function runCodexChromeLead(lead, decision, mode = 'codex_chrome_prepare')
     ? await optimizeDraftWithContext(lead, decision, chromeOpen)
     : String(decision && decision.draft || '').trim();
   const draftResult = await prepareSocialDraft(chromeOpen, finalDraft, lead);
+  const facebookNeedsInstagram = !options.skipInstagramFallback
+    && /facebook_profile_no_message_button|facebook_message_button_clicked_composer_not_found/.test(String(draftResult && draftResult.evidence || ''));
+  const instagramUrl = instagramFallbackTarget(lead);
+  if (facebookNeedsInstagram && instagramUrl) {
+    const fallbackLead = {
+      ...lead,
+      platform: 'instagram',
+      platformUrl: instagramUrl,
+      targetUrl: instagramUrl,
+      verifiedTargetUrl: instagramUrl,
+      url: instagramUrl,
+    };
+    const fallbackResult = await runCodexChromeLead(
+      fallbackLead,
+      decision,
+      `${mode}_instagram_fallback`,
+      { skipInstagramFallback: true },
+    );
+    return {
+      ...fallbackResult,
+      targetUrl: instagramUrl,
+      fallbackFrom: target.targetUrl,
+      fallbackPlatform: 'instagram',
+      output: JSON.stringify({
+        ...parseExecutionOutput(fallbackResult.output),
+        fallbackFrom: target.targetUrl,
+        fallbackReason: draftResult.evidence,
+      }),
+    };
+  }
   return {
     ok: Boolean(draftResult.ok),
     engine: 'codex-chrome-extension-cdp',

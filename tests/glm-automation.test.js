@@ -702,6 +702,9 @@ test('Codex Chrome execution can auto-send approved social outreach with confirm
   assert.ok(mainSource.includes('async function prepareSocialDraft'));
   assert.ok(mainSource.includes('codex-chrome-driver.js'));
   assert.ok(mainSource.includes("runCodexChromeDriver('prepare-instagram-draft'"));
+  assert.ok(mainSource.includes('facebookNeedsInstagram'));
+  assert.ok(mainSource.includes('skipInstagramFallback'));
+  assert.ok(mainSource.includes('instagramFallbackTarget'));
   assert.ok(mainSource.includes("runCodexChromeDriver('prepare-social-draft'"));
   assert.ok(mainSource.includes('autoSend: true'));
   assert.ok(mainSource.includes('replaceExistingDraft: true'));
