@@ -138,15 +138,19 @@ function buttonExpression(keywords) {
     const keywords = ${JSON.stringify(keywords)};
     const controls = Array.from(document.querySelectorAll('button,a,div[role="button"],span[role="button"]')).map((el) => {
       const rect = el.getBoundingClientRect();
-      const text = String(el.innerText || el.textContent || el.getAttribute('aria-label') || '').replace(/\\s+/g, ' ').trim().toLowerCase();
+      const text = String(el.getAttribute('aria-label') || el.innerText || el.textContent || '').replace(/\\s+/g, ' ').trim().toLowerCase();
       return {
         text,
         x: Math.round(rect.left + rect.width / 2),
         y: Math.round(rect.top + rect.height / 2),
-        visible: rect.width > 0 && rect.height > 0
+        visible: rect.width > 0 && rect.height > 0,
+        inNav: Boolean(el.closest('nav,[role="navigation"]')),
+        disabled: Boolean(el.disabled || el.getAttribute('aria-disabled') === 'true')
       };
     });
-    return JSON.stringify(controls.find(item => item.visible && keywords.some(keyword => item.text.includes(keyword))) || null);
+    return JSON.stringify(controls.find(item => item.visible && !item.disabled && !item.inNav && keywords.some(keyword => item.text.includes(keyword)))
+      || controls.find(item => item.visible && !item.disabled && keywords.some(keyword => item.text.includes(keyword)))
+      || null);
   })()`;
 }
 
@@ -176,7 +180,7 @@ function closeBlockingOverlayExpression(platform) {
       .filter(visible)
       .map((el) => {
         const rect = el.getBoundingClientRect();
-        const text = String(el.innerText || el.textContent || el.getAttribute('aria-label') || '').replace(/\\s+/g, ' ').trim().toLowerCase();
+        const text = String(el.getAttribute('aria-label') || el.innerText || el.textContent || '').replace(/\\s+/g, ' ').trim().toLowerCase();
         return { el, text, x: rect.left + rect.width / 2, y: rect.top + rect.height / 2 };
       });
     const byLabel = controls.find(item => closeWords.some(word => item.text.includes(word)));
@@ -488,6 +492,16 @@ function setComposerTextExpression(composer, draft) {
       return Boolean(rect && rect.width > 0 && rect.height > 0 && rect.bottom > 0 && rect.top < window.innerHeight);
     };
     const textOf = (el) => String(el.innerText || el.textContent || el.value || '').trim();
+    const pointTarget = (() => {
+      const el = document.elementFromPoint(targetX, targetY);
+      return el && (
+        (el.closest && el.closest('[contenteditable="true"],[role="textbox"],textarea,input[type="text"]'))
+        || (el.querySelector && el.querySelector('[contenteditable="true"],[role="textbox"],textarea,input[type="text"]'))
+      );
+    })();
+    const activeTarget = document.activeElement && document.activeElement.closest
+      ? document.activeElement.closest('[contenteditable="true"],[role="textbox"],textarea,input[type="text"]')
+      : null;
     const candidates = Array.from(document.querySelectorAll('[role="dialog"] [contenteditable="true"],[role="dialog"] [role="textbox"],[role="dialog"] textarea,[role="dialog"] input[type="text"],[aria-modal="true"] [contenteditable="true"],[aria-modal="true"] [role="textbox"],[aria-modal="true"] textarea,[aria-modal="true"] input[type="text"],[contenteditable="true"],[role="textbox"],textarea,input[type="text"]'))
       .filter(visible)
       .map((el) => {
@@ -501,28 +515,46 @@ function setComposerTextExpression(composer, draft) {
           y: Math.round(rect.top + rect.height / 2),
           inDialog,
           messageLike,
+          pointTarget: el === pointTarget || el.contains(pointTarget),
+          activeTarget: el === activeTarget || el.contains(activeTarget),
           distance: Math.abs((rect.left + rect.width / 2) - targetX) + Math.abs((rect.top + rect.height / 2) - targetY),
           textLength: textOf(el).length
         };
       })
-      .sort((a, b) => Number(b.inDialog) - Number(a.inDialog)
+      .sort((a, b) => Number(b.pointTarget) - Number(a.pointTarget)
+        || Number(b.activeTarget) - Number(a.activeTarget)
+        || Number(b.inDialog) - Number(a.inDialog)
         || Number(b.messageLike) - Number(a.messageLike)
         || a.distance - b.distance
         || a.textLength - b.textLength);
     const picked = candidates[0];
     if (!picked) return JSON.stringify({ ok: false, evidence: 'composer_dom_target_not_found' });
     const el = picked.el;
+    ['mousedown', 'mouseup', 'click'].forEach((type) => {
+      el.dispatchEvent(new MouseEvent(type, { bubbles: true, cancelable: true, view: window }));
+    });
     el.focus();
     if (el.isContentEditable || el.getAttribute('contenteditable') === 'true') {
-      el.textContent = draft;
-      el.dispatchEvent(new InputEvent('input', { bubbles: true, inputType: 'insertText', data: draft }));
+      const selection = window.getSelection && window.getSelection();
+      if (selection && document.createRange) {
+        const range = document.createRange();
+        range.selectNodeContents(el);
+        selection.removeAllRanges();
+        selection.addRange(range);
+      }
+      const inserted = document.execCommand && document.execCommand('insertText', false, draft);
+      if (!inserted || !textOf(el).includes(draft.slice(0, Math.min(40, draft.length)))) {
+        el.textContent = draft;
+      }
+      el.dispatchEvent(new InputEvent('beforeinput', { bubbles: true, composed: true, inputType: 'insertText', data: draft }));
+      el.dispatchEvent(new InputEvent('input', { bubbles: true, composed: true, inputType: 'insertText', data: draft }));
     } else {
       const proto = el.tagName === 'TEXTAREA' ? HTMLTextAreaElement.prototype : HTMLInputElement.prototype;
       const setter = Object.getOwnPropertyDescriptor(proto, 'value') && Object.getOwnPropertyDescriptor(proto, 'value').set;
       if (setter) setter.call(el, draft);
       else el.value = draft;
-      el.dispatchEvent(new Event('input', { bubbles: true }));
-      el.dispatchEvent(new Event('change', { bubbles: true }));
+      el.dispatchEvent(new InputEvent('input', { bubbles: true, composed: true, inputType: 'insertText', data: draft }));
+      el.dispatchEvent(new Event('change', { bubbles: true, composed: true }));
     }
     const finalText = textOf(el);
     return JSON.stringify({
@@ -532,6 +564,7 @@ function setComposerTextExpression(composer, draft) {
       y: picked.y,
       inDialog: picked.inDialog,
       messageLike: picked.messageLike,
+      label: String(el.getAttribute('aria-label') || el.getAttribute('placeholder') || el.getAttribute('role') || '').slice(0, 80),
       textLength: finalText.length
     });
   })()`;
@@ -567,6 +600,7 @@ function sendConfirmationExpression(draft) {
 async function insertDraftAndVerify(tab, composer, draft, platform) {
   await clickAt(tab, composer.x, composer.y);
   await sleep(300);
+  await evaluateJson(tab, setComposerTextExpression(composer, ''), 3000).catch(() => null);
   await cdp(tab.webSocketDebuggerUrl, 'Input.insertText', { text: draft }, 5000);
   let inserted = await waitForJson(tab, composerTextExpression(draft), item => item && item.containsDraft, 2500, 300);
   if (inserted && inserted.containsDraft) return { ok: true, composer, evidence: `${platform}_draft_inserted_verified` };
@@ -635,6 +669,13 @@ function identityCheckExpression(expectedCompany, targetUrl) {
         return '';
       }
     })();
+    const locationPathCompact = (() => {
+      try {
+        return compact(location.pathname.replace(/^\\/+/, '').split('/')[0] || '');
+      } catch {
+        return '';
+      }
+    })();
     const title = String(document.title || '');
     const headers = Array.from(document.querySelectorAll('h1,h2,strong,a[aria-label],div[role="main"] span'))
       .slice(0, 80)
@@ -644,7 +685,9 @@ function identityCheckExpression(expectedCompany, targetUrl) {
     const visible = [title, headers, String(document.body && document.body.innerText || '').slice(0, 1200)].join('\\n');
     const visibleLower = visible.toLowerCase();
     const visibleCompact = compact(visible);
-    const pending = !title.trim() && !headers.trim() && visibleCompact.length < 8;
+    const genericSocialTitle = /^(\\(?\\d+\\)?\\s*)?(facebook|instagram|linkedin)$/i.test(title.trim());
+    const pending = (!title.trim() && !headers.trim() && visibleCompact.length < 8)
+      || (genericSocialTitle && !headers.trim() && !visibleCompact.includes(expectedCompact));
     if (pending) {
       return JSON.stringify({
         ok: null,
@@ -652,7 +695,7 @@ function identityCheckExpression(expectedCompany, targetUrl) {
         expectedCompany,
         title,
         url: location.href,
-        evidence: 'identity_check_pending_empty_page'
+        evidence: genericSocialTitle ? 'identity_check_pending_generic_social_title' : 'identity_check_pending_empty_page'
       });
     }
     const expectedTokens = expected.split(/\\s+/).filter(token => token.length >= 4);
@@ -663,10 +706,11 @@ function identityCheckExpression(expectedCompany, targetUrl) {
     const emptyPersonalSignal = /0\\s*(posts?|帖子)[\\s\\S]{0,80}0\\s*(followers|粉丝)[\\s\\S]{0,80}0\\s*(following|关注)/i.test(visible);
     const companyOk = expectedCompact && visibleCompact.includes(expectedCompact);
     const pathOk = pathCompact && visibleCompact.includes(pathCompact);
+    const exactSocialUrlOk = isSocial && pathCompact.length >= 4 && locationPathCompact === pathCompact;
     const staffOk = tokenHits >= 1 && employeeSignal;
     const socialCompanyOk = companyOk || (tokenHits >= Math.min(2, expectedTokens.length) && businessSignal);
     const ok = !expectedCompact || (isSocial
-      ? Boolean(socialCompanyOk || staffOk)
+      ? Boolean(socialCompanyOk || staffOk || exactSocialUrlOk)
       : Boolean(companyOk || (pathCompact.length >= 5 && pathOk)));
     const personalMismatch = isSocial && !ok && emptyPersonalSignal;
     return JSON.stringify({
@@ -675,7 +719,7 @@ function identityCheckExpression(expectedCompany, targetUrl) {
       title,
       url: location.href,
       evidence: ok
-        ? 'identity_match'
+        ? (exactSocialUrlOk && !socialCompanyOk && !staffOk ? 'identity_match_exact_social_url' : 'identity_match')
         : (personalMismatch
           ? ('personal_profile_without_company_match_expected_' + expectedCompany + '_title_' + title).slice(0, 300)
           : ('identity_mismatch_expected_' + expectedCompany + '_title_' + title).slice(0, 300))
@@ -893,7 +937,12 @@ function facebookPostLikeButtonExpression() {
 
 async function submitFacebookPostEngagement(tab) {
   const evidence = [];
-  const like = await evaluateJson(tab, facebookPostLikeButtonExpression(), 4000).catch(() => null);
+  let like = null;
+  for (let attempt = 0; attempt < 3; attempt += 1) {
+    like = await evaluateJson(tab, facebookPostLikeButtonExpression(), 4000).catch(() => null);
+    if (like && Number.isFinite(like.x) && Number.isFinite(like.y)) break;
+    await sleep(900);
+  }
   if (like && Number.isFinite(like.x) && Number.isFinite(like.y)) {
     await clickAt(tab, like.x, like.y);
     await sleep(900);
@@ -984,13 +1033,25 @@ async function ensureComposerOpen(tab, port, platform) {
     social: ['message', 'contact', '\u53d1\u6d88\u606f', '\u53d1\u9001\u6d88\u606f', '\u6d88\u606f'],
   };
   const keywords = keywordsByPlatform[platform] || keywordsByPlatform.social;
-  const button = await waitForJson(
+  const buttonExpressionForPlatform = (platform === 'instagram' || platform === 'facebook')
+    ? profileMessageButtonExpression(platform, keywords)
+    : buttonExpression(keywords);
+  let button = await waitForJson(
     tab,
-    platform === 'instagram' ? profileMessageButtonExpression(platform, keywords) : buttonExpression(keywords),
+    buttonExpressionForPlatform,
     item => item && Number.isFinite(item.x) && Number.isFinite(item.y),
     12000,
     500
-  );
+  ).catch(() => null);
+  if ((!button || !Number.isFinite(button.x)) && platform === 'facebook') {
+    button = await waitForJson(
+      tab,
+      buttonExpression(keywords),
+      item => item && Number.isFinite(item.x) && Number.isFinite(item.y),
+      5000,
+      500
+    ).catch(() => null);
+  }
   if (!button || !Number.isFinite(button.x)) {
     if (platform === 'instagram') {
       const fallbackButton = await waitForJson(tab, buttonExpression(keywords), item => item && Number.isFinite(item.x) && Number.isFinite(item.y) && item.x > 120, 3000, 500);
@@ -1189,7 +1250,7 @@ async function preparePlatformDraft(payload, platform) {
     return {
       ok: false,
       sendStatus: 'send_unconfirmed',
-      evidence: `${platform}_send_clicked_but_confirmation_missing`,
+      evidence: `${platform}_send_clicked_but_confirmation_missing;${preActions.filter(Boolean).join(';')}`,
       nextAction: 'Send confirmation missing; pause and notify operator before any retry to avoid duplicate sending.',
     };
   }
