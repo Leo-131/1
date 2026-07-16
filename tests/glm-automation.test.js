@@ -740,6 +740,13 @@ test('Codex Chrome execution can auto-send approved social outreach with confirm
   assert.ok(chromeDriverSource.includes('facebookMessengerInboxOpenExpression'));
   assert.ok(chromeDriverSource.includes('facebook_messenger_inbox_popover_open'));
   assert.ok(chromeDriverSource.includes('pressEscape'));
+  assert.ok(chromeDriverSource.includes("!item.label.includes('comment')"));
+  assert.ok(chromeDriverSource.includes("return JSON.stringify(null);"));
+  assert.ok(chromeDriverSource.includes('facebook_profile_no_message_button'));
+  assert.ok(chromeDriverSource.includes('messageUnavailable: true'));
+  assert.ok(chromeDriverSource.includes("platform === 'facebook' && !profileZone.length"));
+  assert.ok(chromeDriverSource.includes('follow_already_active'));
+  assert.ok(chromeDriverSource.includes('${platform}_engagement_completed_message_unavailable'));
   assert.ok(chromeDriverSource.includes('submitInstagramPostEngagement'));
   assert.match(chromeDriverSource, /platform === 'instagram'[\s\S]*clickOptionalAction\(tab, 'follow', platform\)[\s\S]*submitInstagramPostEngagement\(tab/);
   assert.ok(chromeDriverSource.includes('submitFacebookPostEngagement'));
@@ -783,6 +790,7 @@ test('Codex Chrome execution can auto-send approved social outreach with confirm
   assert.ok(chromeDriverSource.includes('${platform}_message_composer_opened_and_draft_inserted_no_send'));
   assert.ok(mainSource.includes("sendStatus: 'draft_prepared'"));
   assert.ok(mainSource.includes('message_composer_opened_and_draft_inserted_no_send'));
+  assert.ok(mainSource.includes("'account_followed', 'post_liked'"));
   assert.ok(!mainSource.includes("byText(['send', '发送'])"));
 });
 

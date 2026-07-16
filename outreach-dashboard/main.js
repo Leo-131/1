@@ -339,7 +339,7 @@ function websiteContactResultIsVerified(result = {}) {
 
 function recordAutomationResult(item, result) {
   const sendStatus = result && result.sendStatus;
-  if (!['sent_confirmed', 'send_unconfirmed', 'failed_open', 'draft_prepared', 'prepared_not_sent', 'website_contact_ready', 'website_contact_unreachable_skip', 'approval_pending'].includes(sendStatus)) return;
+  if (!['sent_confirmed', 'send_unconfirmed', 'failed_open', 'draft_prepared', 'prepared_not_sent', 'account_followed', 'post_liked', 'website_contact_ready', 'website_contact_unreachable_skip', 'approval_pending'].includes(sendStatus)) return;
   const output = parseExecutionOutput(result.output);
   const timestamp = new Date().toISOString();
   const entry = {

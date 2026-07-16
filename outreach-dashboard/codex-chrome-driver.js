@@ -338,6 +338,7 @@ function profileMessageButtonExpression(platform, keywords) {
       .filter(item => keywords.some(keyword => item.text.includes(keyword)))
       .filter(item => item.width >= 60 && item.height >= 24);
     const profileZone = controls.filter(item => item.x > 120 && item.y > 80 && item.y < Math.min(window.innerHeight - 80, 720));
+    if (platform === 'facebook' && !profileZone.length) return JSON.stringify(null);
     const preferred = (profileZone.length ? profileZone : controls)
       .sort((a, b) => Math.abs(a.y - 420) - Math.abs(b.y - 420) || b.width - a.width)[0];
     if (!preferred) return JSON.stringify(null);
@@ -387,9 +388,11 @@ function composerExpression(platform) {
     if (platform === 'facebook') {
       const facebookComposer = elements
         .filter(item => item.match && item.inDialog)
-        .filter(item => item.y > window.innerHeight * 0.45 || item.label.includes('message') || item.placeholder.includes('message') || item.placeholder === 'aa')
+        .filter(item => !item.label.includes('comment') && !item.label.includes('\\u5199\\u8bc4\\u8bba') && !item.placeholder.includes('comment') && !item.placeholder.includes('\\u5199\\u8bc4\\u8bba'))
+        .filter(item => item.label.includes('message') || item.placeholder.includes('message') || item.label.includes('\\u53d1\\u6d88\\u606f') || item.placeholder.includes('\\u53d1\\u6d88\\u606f') || item.placeholder === 'aa')
         .sort((a, b) => b.y - a.y)[0];
       if (facebookComposer) return JSON.stringify(facebookComposer);
+      return JSON.stringify(null);
     }
     return JSON.stringify(
       elements.find(item => item.match && item.inDialog)
@@ -1133,14 +1136,15 @@ async function ensureComposerOpen(tab, port, platform) {
     };
   }
 
+  let composer = null;
   if (platform === 'facebook') {
     await closeFacebookMessengerInbox(tab);
     await closeFacebookChatWindows(tab);
     await closeFacebookMessengerInbox(tab);
     await sleep(500);
   } else {
-    const existingComposer = await waitForJson(tab, composerExpression(platform), item => item && item.visible, 1200, 300);
-    if (existingComposer && Number.isFinite(existingComposer.x)) return existingComposer;
+    composer = await waitForJson(tab, composerExpression(platform), item => item && item.visible, 1200, 300);
+    if (composer && Number.isFinite(composer.x)) return composer;
   }
   await evaluateJson(tab, dismissDialogExpression(), 2000).catch(() => null);
   await evaluateJson(tab, closeBlockingOverlayExpression(platform), 2500).catch(() => null);
@@ -1163,20 +1167,16 @@ async function ensureComposerOpen(tab, port, platform) {
     12000,
     500
   ).catch(() => null);
-  if ((!button || !Number.isFinite(button.x)) && platform === 'facebook') {
-    button = await waitForJson(
-      tab,
-      buttonExpression(keywords),
-      item => item && Number.isFinite(item.x) && Number.isFinite(item.y),
-      5000,
-      500
-    ).catch(() => null);
-  }
   if (!button || !Number.isFinite(button.x)) {
     if (platform === 'instagram') {
       const fallbackButton = await waitForJson(tab, buttonExpression(keywords), item => item && Number.isFinite(item.x) && Number.isFinite(item.y) && item.x > 120, 3000, 500);
       if (!fallbackButton || !Number.isFinite(fallbackButton.x)) return null;
       await clickAt(tab, fallbackButton.x, fallbackButton.y);
+    } else if (platform === 'facebook') {
+      return {
+        messageUnavailable: true,
+        evidence: 'facebook_profile_no_message_button',
+      };
     } else {
       return null;
     }
@@ -1198,6 +1198,23 @@ async function ensureComposerOpen(tab, port, platform) {
     await evaluateJson(tab, dismissDialogExpression(), 2000).catch(() => null);
     composer = await waitForJson(tab, composerExpression(platform), item => item && item.visible, 8000, 500);
   }
+  if ((!composer || !Number.isFinite(composer.x)) && platform === 'facebook') {
+    await closeFacebookMessengerInbox(tab);
+    await closeFacebookChatWindows(tab);
+    const retryButton = await waitForJson(
+      tab,
+      profileMessageButtonExpression(platform, keywords),
+      item => item && Number.isFinite(item.x) && Number.isFinite(item.y),
+      5000,
+      500
+    ).catch(() => null);
+    if (retryButton && Number.isFinite(retryButton.x)) {
+      await clickAt(tab, retryButton.x, retryButton.y);
+      await sleep(1800);
+      await evaluateJson(tab, dismissDialogExpression(), 2000).catch(() => null);
+      composer = await waitForJson(tab, composerExpression(platform), item => item && item.visible, 12000, 500);
+    }
+  }
   if ((!composer || !Number.isFinite(composer.x)) && platform === 'instagram') {
     const retryButton = await waitForJson(
       tab,
@@ -1214,7 +1231,7 @@ async function ensureComposerOpen(tab, port, platform) {
       composer = await waitForJson(tab, composerExpression(platform), item => item && item.visible, 12000, 500);
     }
   }
-  if ((!composer || !Number.isFinite(composer.x)) && (platform === 'facebook' || platform === 'linkedin')) {
+  if ((!composer || !Number.isFinite(composer.x)) && platform === 'linkedin') {
     const retryButton = await waitForJson(
       tab,
       buttonExpression(keywords),
@@ -1281,21 +1298,25 @@ async function preparePlatformDraft(payload, platform) {
     };
   }
   if (!composer || !Number.isFinite(composer.x)) {
-    const followed = preActions.includes('follow_clicked');
+    const noMessageButton = Boolean(composer && composer.messageUnavailable);
+    const followed = preActions.includes('follow_clicked') || preActions.includes('follow_already_active');
     const liked = preActions.some(item => /like_clicked|post_like_clicked/.test(String(item || '')));
-    if (followed || liked) {
+    const engaged = followed || liked;
+    if (engaged) {
       return {
         ok: true,
-        sendStatus: followed ? 'account_followed' : 'post_liked',
-        evidence: `${platform}_engagement_completed_message_unavailable;${preActions.filter(Boolean).join(';')}`,
+        sendStatus: liked ? 'post_liked' : 'account_followed',
+        evidence: `${platform}_engagement_completed_message_unavailable;${composer && composer.evidence || `${platform}_message_button_clicked_composer_not_found`};${preActions.filter(Boolean).join(';')}`,
         nextAction: 'The verified account was engaged successfully. Monitor for a connection opportunity and avoid repeating the same action.',
       };
     }
     return {
       ok: false,
       sendStatus: 'failed_open',
-      evidence: `${platform}_message_button_clicked_composer_not_found`,
-      nextAction: 'Composer not detected; pause automation and notify operator only if retry would be unsafe.',
+      evidence: noMessageButton ? `${platform}_profile_no_message_button` : `${platform}_message_button_clicked_composer_not_found`,
+      nextAction: noMessageButton
+        ? 'No message button is available on this verified profile; switch to a verified alternate channel or official website contact.'
+        : 'Composer not detected; pause automation and notify operator only if retry would be unsafe.',
     };
   }
   const draft = String(payload.draft || '').trim();
