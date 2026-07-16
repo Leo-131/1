@@ -1409,7 +1409,13 @@
       return `<div class="cc-skip-card"><b>${esc(action.reason || 'recovery')}</b><span>${esc(action.action || '')}</span><em>${esc(action.description || '')}</em>${requiredEnv}</div>`;
     });
     if (queueGoal) {
-      recoveryCards.push(`<div class="cc-skip-card"><b>daily_queue_goal</b><span>${esc(queueGoal.reached ? '100 target reached' : `Need ${queueGoal.refillNeeded || 0} more high-ICP leads`)}</span><em>${esc(queueGoal.action || '')}</em></div>`);
+      const poolText = Number.isFinite(Number(queueGoal.potentialPool))
+        ? `Pool ${queueGoal.potentialPool}/${queueGoal.target || 100}`
+        : `Target ${queueGoal.target || 100}`;
+      const refillText = queueGoal.reached
+        ? '100 target reached'
+        : `Need ${queueGoal.refillNeeded || 0} more high-ICP leads`;
+      recoveryCards.push(`<div class="cc-skip-card"><b>daily_queue_goal</b><span>${esc(`${poolText} - ${refillText}`)}</span><em>${esc(queueGoal.action || '')}</em></div>`);
     }
     return `<div class="cc-skip-grid cc-recovery-actions">${recoveryCards.join('')}</div>`;
   }
