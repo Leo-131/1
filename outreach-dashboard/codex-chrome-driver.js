@@ -121,6 +121,21 @@ async function pressEnter(tab) {
   }, 2000);
 }
 
+async function pressEscape(tab) {
+  await cdp(tab.webSocketDebuggerUrl, 'Input.dispatchKeyEvent', {
+    type: 'keyDown',
+    key: 'Escape',
+    code: 'Escape',
+    windowsVirtualKeyCode: 27,
+  }, 2000);
+  await cdp(tab.webSocketDebuggerUrl, 'Input.dispatchKeyEvent', {
+    type: 'keyUp',
+    key: 'Escape',
+    code: 'Escape',
+    windowsVirtualKeyCode: 27,
+  }, 2000);
+}
+
 function hostPlatform(targetUrl) {
   try {
     const hostname = new URL(targetUrl || '').hostname.toLowerCase();
@@ -238,6 +253,58 @@ async function closeFacebookChatWindows(tab) {
     await sleep(500);
   }
   return evidence.join(';') || 'facebook_no_stale_chat_windows';
+}
+
+function facebookMessengerInboxOpenExpression() {
+  return `(() => {
+    const visible = (el) => {
+      const rect = el && el.getBoundingClientRect && el.getBoundingClientRect();
+      return Boolean(rect && rect.width > 0 && rect.height > 0 && rect.bottom > 0 && rect.top < window.innerHeight);
+    };
+    const dialogs = Array.from(document.querySelectorAll('[role="dialog"],[aria-modal="true"]'))
+      .filter(visible)
+      .map((el) => {
+        const rect = el.getBoundingClientRect();
+        const text = String(el.innerText || el.textContent || '').replace(/\\s+/g, ' ').trim().toLowerCase();
+        return {
+          text,
+          x: Math.round(rect.left),
+          y: Math.round(rect.top),
+          width: Math.round(rect.width),
+          height: Math.round(rect.height)
+        };
+      });
+    const inbox = dialogs.find(item => item.x > window.innerWidth * 0.45
+      && item.width > 250
+      && item.height > 250
+      && (item.text.includes('messenger')
+        || item.text.includes('chat')
+        || item.text.includes('\\u804a\\u5929')
+        || item.text.includes('\\u672a\\u8bfb')
+        || item.text.includes('\\u7fa4\\u804a')
+        || item.text.includes('\\u804a\\u5929\\u8bb0\\u5f55')));
+    return JSON.stringify(inbox ? {
+      open: true,
+      evidence: 'facebook_messenger_inbox_popover_open',
+      text: inbox.text.slice(0, 180),
+      x: inbox.x,
+      y: inbox.y,
+      width: inbox.width,
+      height: inbox.height
+    } : { open: false, evidence: 'facebook_messenger_inbox_popover_not_open' });
+  })()`;
+}
+
+async function closeFacebookMessengerInbox(tab) {
+  const evidence = [];
+  for (let attempt = 0; attempt < 3; attempt += 1) {
+    const state = await evaluateJson(tab, facebookMessengerInboxOpenExpression(), 2500).catch(() => null);
+    if (!state || !state.open) break;
+    evidence.push(state.evidence);
+    await pressEscape(tab).catch(() => null);
+    await sleep(500);
+  }
+  return evidence.join(';') || 'facebook_messenger_inbox_popover_not_open';
 }
 
 function profileMessageButtonExpression(platform, keywords) {
@@ -1067,7 +1134,9 @@ async function ensureComposerOpen(tab, port, platform) {
   }
 
   if (platform === 'facebook') {
+    await closeFacebookMessengerInbox(tab);
     await closeFacebookChatWindows(tab);
+    await closeFacebookMessengerInbox(tab);
     await sleep(500);
   } else {
     const existingComposer = await waitForJson(tab, composerExpression(platform), item => item && item.visible, 1200, 300);
