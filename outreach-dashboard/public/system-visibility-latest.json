@@ -1,13 +1,13 @@
 {
-  "updatedAt": "2026-07-16T14:04:18.397Z",
-  "source": "sync-local-data-to-github-writeSyncStatus",
-  "runDate": "2026-07-16",
-  "artifactGeneratedAt": "2026-07-16T14:03:57.785Z",
-  "executionGeneratedAt": "2026-07-16T14:03:59.255Z",
+  "updatedAt": "2026-07-16T17:05:17.396Z",
+  "source": "main-writeDailyExecutionArtifact",
+  "runDate": "2026-07-17",
+  "artifactGeneratedAt": "2026-07-16T17:05:15.835Z",
+  "executionGeneratedAt": "2026-07-16T17:05:17.293Z",
   "githubSyncUpdatedAt": "2026-07-16T14:04:18.257Z",
   "counts": {
-    "dailyQueue": 90,
-    "googleDiscovered": 66,
+    "dailyQueue": 88,
+    "googleDiscovered": 64,
     "websiteContact": 4,
     "cooldownQueue": 30,
     "scheduledLater": 0
@@ -33,8 +33,8 @@
   ],
   "dailyQueueGoal": {
     "target": 100,
-    "potentialPool": 90,
-    "refillNeeded": 10,
+    "potentialPool": 88,
+    "refillNeeded": 12,
     "reached": false
   },
   "contactEnrichment": {
