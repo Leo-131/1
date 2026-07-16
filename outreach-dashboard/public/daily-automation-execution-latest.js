@@ -1,7 +1,7 @@
 window.DAILY_AUTOMATION_EXECUTION_LATEST = {
   "ok": false,
   "error": "auto-run-daily timed out after 300000ms",
-  "completedAt": "2026-07-16T07:08:22.803Z",
+  "completedAt": "2026-07-16T11:44:40.178Z",
   "executionPhase": "browser_execution_timeout",
   "chromeOpened": true,
   "customerDevelopmentPerformed": false,
@@ -9,30 +9,66 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
   "realDevelopmentCount": 0,
   "reportingVerdict": "no_customer_development_performed",
   "progress": {
-    "startedAt": "2026-07-16T07:03:29.224Z",
+    "startedAt": "2026-07-16T11:36:00.033Z",
     "queueDate": "2026-07-16",
     "queueSource": "dailyQueue",
     "dailyQueueCount": 100,
-    "candidateCount": 82,
-    "executableCount": 30,
-    "skippedCount": 140,
-    "limit": 30,
-    "currentIndex": 6,
+    "candidateCount": 67,
+    "executableCount": 4,
+    "skippedCount": 192,
+    "limit": 4,
+    "currentIndex": 4,
     "currentItem": {
-      "id": "google-customer-campman-facebook",
-      "company": "Campman",
+      "id": "google-customer-massey-outfitters-facebook",
+      "company": "Massey Outfitters",
       "action": "develop",
       "platform": "facebook",
-      "targetUrl": "https://www.facebook.com/campman"
+      "targetUrl": "https://www.facebook.com/MasseysOutfitters"
     },
-    "completedCount": 5,
+    "completedCount": 4,
     "confirmedSendCount": 0,
     "preparedWebsiteCount": 0,
     "lastResult": {
-      "id": "google-customer-atmosphere-facebook",
-      "company": "Atmosphere",
+      "id": "google-customer-massey-outfitters-facebook",
+      "company": "Massey Outfitters",
       "sendStatus": "send_unconfirmed",
-      "evidence": "facebook_draft_not_inserted_after_composer_refocus;editable_count:1;composer_text_length:0;active:BODY"
+      "evidence": "facebook_draft_not_inserted_after_composer_refocus;editable_count:2;composer_text_length:1;active:BODY"
     }
-  }
+  },
+  "blockerSummary": [
+    {
+      "reason": "browser_execution_timeout",
+      "count": 1,
+      "examples": [
+        {
+          "id": "google-customer-massey-outfitters-facebook",
+          "company": "Massey Outfitters",
+          "action": "develop",
+          "platform": "facebook",
+          "targetUrl": "https://www.facebook.com/MasseysOutfitters"
+        }
+      ]
+    }
+  ],
+  "blockerCounts": {
+    "browser_execution_timeout": 1
+  },
+  "queueGoalStatus": {
+    "target": 100,
+    "potentialPool": 100,
+    "queueCount": 100,
+    "googleDiscovered": 78,
+    "refillNeeded": 0,
+    "reached": true,
+    "action": "Daily high-ICP queue target reached."
+  },
+  "recoveryHint": "Retry with a smaller DAILY_EXECUTE_LIMIT or inspect the current browser page before rerunning social outreach.",
+  "recoveryActions": [
+    {
+      "reason": "browser_execution_timeout",
+      "action": "Reduce browser execution batch",
+      "description": "Retry with a smaller DAILY_EXECUTE_LIMIT or inspect the current social page that timed out.",
+      "hint": "Retry with a smaller DAILY_EXECUTE_LIMIT or inspect the current browser page before rerunning social outreach."
+    }
+  ]
 };

@@ -213,7 +213,7 @@ const COMPANY_HISTORY_BLOCKING_STATUSES = new Set([
   'account_followed',
   'post_liked',
 ]);
-const DEFAULT_DAILY_SOCIAL_EXECUTION_LIMIT = 30;
+const DEFAULT_DAILY_SOCIAL_EXECUTION_LIMIT = 4;
 
 function historicalAutomationResultBlocksCompany(result = {}) {
   if (COMPANY_HISTORY_BLOCKING_STATUSES.has(result.status)) {
@@ -2375,7 +2375,9 @@ async function runCodexChromeLead(lead, decision, mode = 'codex_chrome_prepare')
   if (!target.ok) return target;
   const chromeOpen = await openWithCodexChrome(target.targetUrl, { automationOwned: true });
   if (!chromeOpen.ok) return { ...chromeOpen, sendStatus: 'failed_open' };
-  const finalDraft = await optimizeDraftWithContext(lead, decision, chromeOpen);
+  const finalDraft = isFollowupLead(lead)
+    ? await optimizeDraftWithContext(lead, decision, chromeOpen)
+    : String(decision && decision.draft || '').trim();
   const draftResult = await prepareSocialDraft(chromeOpen, finalDraft, lead);
   return {
     ok: Boolean(draftResult.ok),
