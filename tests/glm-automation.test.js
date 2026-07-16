@@ -57,11 +57,12 @@ test('daily queue prioritizes LinkedIn, Facebook and Instagram over website cont
 });
 
 test('website contact can execute without a configured attachment', () => {
-  assert.ok(mainSource.includes("executableQueueCandidates(latest.dailyQueue, { allowWebsiteContact: true })"));
+  assert.ok(mainSource.includes('const websiteFallback = executableQueueCandidates'));
+  assert.ok(mainSource.includes('{ allowWebsiteContact: true })'));
   assert.ok(mainSource.includes("'verify_target'"));
   assert.ok(mainSource.includes('item.url || item.contactUrl || item.website'));
   assert.ok(mainSource.includes('homepage_only_contact_path_requires_verification'));
-  assert.ok(mainSource.includes("const blocking = new Set(['sent_confirmed', 'failed_open', 'send_unconfirmed', 'account_followed', 'post_liked', 'website_contact_ready'])"));
+  assert.ok(mainSource.includes("const blocking = new Set(['sent_confirmed', 'failed_open', 'send_unconfirmed', 'account_followed', 'post_liked', 'website_contact_ready', 'website_contact_unreachable_skip'])"));
   assert.ok(!mainSource.includes("'approval_pending', 'draft_prepared', 'prepared_not_sent'"));
   assert.ok(mainSource.includes('function socialFallbackFromInspection'));
   assert.ok(mainSource.includes('official_website_social_fallback'));
@@ -82,7 +83,8 @@ test('daily execution ranks LinkedIn, Facebook and Instagram before website cont
   assert.ok(mainSource.includes("if (/\\bfacebook\\b|facebook\\.com/.test(text)) return 310"));
   assert.ok(mainSource.includes("if (/\\binstagram\\b|instagram\\.com/.test(text)) return 300"));
   assert.ok(mainSource.includes('return socialPriorityRank(right) - socialPriorityRank(left)'));
-  assert.ok(mainSource.includes('[...dueCandidates, ...scheduledExecutable, ...potentialFallback]'));
+  assert.ok(mainSource.includes('...socialPool'));
+  assert.ok(mainSource.includes('...websiteFallback.filter'));
   assert.ok(mainSource.includes('.sort(developmentPriorityCompare)'));
 });
 
@@ -728,6 +730,8 @@ test('Codex Chrome execution can auto-send approved social outreach with confirm
   assert.ok(chromeDriverSource.includes('[role="dialog"] [role="textbox"]'));
   assert.ok(chromeDriverSource.includes("el.getAttribute('role') === 'textbox'"));
   assert.ok(chromeDriverSource.includes('identity_check_pending_empty_page'));
+  assert.ok(chromeDriverSource.includes('identity_check_pending_generic_social_title'));
+  assert.ok(chromeDriverSource.includes('identity_match_exact_social_url'));
   assert.ok(chromeDriverSource.includes('item => item && !item.pending'));
   assert.ok(chromeDriverSource.includes("closest('nav,[role=\"navigation\"]')"));
   assert.ok(chromeDriverSource.includes('closeBlockingOverlayExpression'));
@@ -738,6 +742,11 @@ test('Codex Chrome execution can auto-send approved social outreach with confirm
   assert.ok(chromeDriverSource.includes('facebookStartButtonExpression'));
   assert.ok(chromeDriverSource.includes('insertDraftAndVerify'));
   assert.ok(chromeDriverSource.includes('setComposerTextExpression'));
+  assert.match(chromeDriverSource, /platform === 'instagram' \|\| platform === 'facebook'[\s\S]*profileMessageButtonExpression\(platform, keywords\)/);
+  assert.ok(chromeDriverSource.includes('pointTarget'));
+  assert.ok(chromeDriverSource.includes("new MouseEvent(type"));
+  assert.ok(chromeDriverSource.includes('composed: true'));
+  assert.ok(chromeDriverSource.includes("document.execCommand('insertText'"));
   assert.ok(chromeDriverSource.includes('composer_dom_text_set'));
   assert.ok(chromeDriverSource.includes('draft_inserted_dom_fallback'));
   assert.ok(chromeDriverSource.includes('facebook_draft_inserted_after_composer_refocus'));
@@ -776,7 +785,11 @@ test('daily execution is serial and can process a priority batch per run', () =>
   assert.ok(mainSource.includes("mode: 'serial-single-target'"));
   assert.ok(mainSource.includes('const parallelLimit = 1'));
   assert.ok(mainSource.includes('const limit = requestedLimit'));
-  assert.ok(mainSource.includes('process.env.DAILY_EXECUTE_LIMIT || 10'));
+  assert.ok(mainSource.includes('DEFAULT_DAILY_SOCIAL_EXECUTION_LIMIT = 4'));
+  assert.ok(mainSource.includes('isFollowupLead(lead)'));
+  assert.ok(mainSource.includes('process.env.DAILY_EXECUTE_LIMIT || DEFAULT_DAILY_SOCIAL_EXECUTION_LIMIT'));
+  assert.ok(mainSource.includes('executableQueueCandidates(latest.dailyQueue, { allowWebsiteContact: false })'));
+  assert.ok(mainSource.includes('const websiteFallback = executableQueueCandidates'));
   assert.ok(mainSource.includes('const isAutoRunDaily = process.argv.includes'));
   assert.ok(mainSource.includes('async function runAutoDailyAndWriteArtifact'));
   assert.ok(mainSource.includes('timeout: 120000'));
@@ -809,6 +822,7 @@ test('daily execution duplicate blocking is channel-aware', () => {
   assert.ok(mainSource.includes('historicalAutomationResultBlocksCompany(result) && setsIntersect(companyKeys, automationCompanyKeys(result))'));
   assert.ok(mainSource.includes("'approval_pending'"));
   assert.ok(mainSource.includes("'website_contact_ready'"));
+  assert.ok(mainSource.includes("'website_contact_unreachable_skip'"));
   assert.ok(mainSource.includes('email_sender_not_configured'));
   assert.ok(mainSource.includes('companyBlocking.has(result.status)'));
   assert.ok(mainSource.includes('sendStatusHasCustomerInteraction(result.status, result.evidence)'));
