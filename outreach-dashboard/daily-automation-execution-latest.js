@@ -1,57 +1,1346 @@
 window.DAILY_AUTOMATION_EXECUTION_LATEST = {
-  "ok": false,
-  "error": "auto-run-daily timed out after 300000ms",
-  "completedAt": "2026-07-16T11:44:40.178Z",
-  "executionPhase": "browser_execution_timeout",
+  "ok": true,
+  "executionPhase": "browser_execution",
+  "chromeStage": "opened",
   "chromeOpened": true,
-  "customerDevelopmentPerformed": false,
+  "chromeOpenedCount": 1,
+  "customerDevelopmentPerformed": true,
   "customerMessageSent": false,
-  "realDevelopmentCount": 0,
-  "reportingVerdict": "no_customer_development_performed",
-  "progress": {
-    "startedAt": "2026-07-16T11:36:00.033Z",
-    "queueDate": "2026-07-16",
-    "queueSource": "dailyQueue",
-    "dailyQueueCount": 100,
-    "candidateCount": 67,
-    "executableCount": 4,
-    "skippedCount": 192,
-    "limit": 4,
-    "currentIndex": 4,
-    "currentItem": {
+  "realDevelopmentCount": 1,
+  "reportingVerdict": "development_performed",
+  "engine": "Codex Chrome Extension queue bridge",
+  "mode": "serial-single-target",
+  "batchMode": "parallel-batches",
+  "parallelLimit": 1,
+  "limit": 1,
+  "queueDate": "2026-07-16",
+  "queueSource": "dailyQueue",
+  "executed": [
+    {
+      "id": "google-customer-ld-mountain-centre-facebook",
+      "company": "LD Mountain Centre",
+      "action": "develop",
+      "platform": "facebook",
+      "targetUrl": "https://www.facebook.com/LDMountainCentre",
+      "ok": true,
+      "sendStatus": "account_followed",
+      "evidence": "facebook_engagement_completed_message_unavailable;facebook_profile_no_message_button;follow_already_active;facebook_post_like_not_available",
+      "chromeOpen": {
+        "ok": true,
+        "engine": "codex-chrome-extension-cdp",
+        "port": 9224,
+        "targetUrl": "https://www.facebook.com/LDMountainCentre",
+        "tabId": "E5AD9F167DFC49FF410FB675C34E3BC9",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/E5AD9F167DFC49FF410FB675C34E3BC9",
+        "title": "Facebook"
+      },
+      "result": {
+        "ok": true,
+        "engine": "codex-chrome-extension-cdp",
+        "browserEngine": "codex-chrome-extension-cdp",
+        "mode": "codex_chrome_primary_no_autoglm",
+        "targetUrl": "https://www.facebook.com/LDMountainCentre",
+        "chromeOpen": {
+          "ok": true,
+          "engine": "codex-chrome-extension-cdp",
+          "port": 9224,
+          "targetUrl": "https://www.facebook.com/LDMountainCentre",
+          "tabId": "E5AD9F167DFC49FF410FB675C34E3BC9",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/E5AD9F167DFC49FF410FB675C34E3BC9",
+          "title": "Facebook"
+        },
+        "sendStatus": "account_followed",
+        "output": "{\"verdict\":\"safe_gate_paused\",\"evidence\":\"facebook_engagement_completed_message_unavailable;facebook_profile_no_message_button;follow_already_active;facebook_post_like_not_available\",\"nextAction\":\"The verified account was engaged successfully. Monitor for a connection opportunity and avoid repeating the same action.\",\"draft\":\"Hi LD Mountain Centre team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a retail/category buyer, the strongest fit is assortment fit, new SKU pipeline, price-tier coverage, and proven consumer demand; your verified outdoor, camping and travel retail social refill channel focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the category buyer or vendor-review owner for a short intro video meeting?\",\"sendStatus\":\"account_followed\"}",
+        "decision": {
+          "verdict": "develop",
+          "fitScore": 84,
+          "reason": "local_template_fallback_after_glm_error: GLM request failed: 429 余额不足或无可用资源包,请充值。",
+          "draft": "Hi LD Mountain Centre team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a retail/category buyer, the strongest fit is assortment fit, new SKU pipeline, price-tier coverage, and proven consumer demand; your verified outdoor, camping and travel retail social refill channel focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the category buyer or vendor-review owner for a short intro video meeting?"
+        },
+        "glmModel": "local-professional-template-fallback",
+        "followup": false
+      }
+    }
+  ],
+  "results": [
+    {
+      "id": "google-customer-ld-mountain-centre-facebook",
+      "company": "LD Mountain Centre",
+      "action": "develop",
+      "platform": "facebook",
+      "targetUrl": "https://www.facebook.com/LDMountainCentre",
+      "ok": true,
+      "sendStatus": "account_followed",
+      "evidence": "facebook_engagement_completed_message_unavailable;facebook_profile_no_message_button;follow_already_active;facebook_post_like_not_available",
+      "chromeOpen": {
+        "ok": true,
+        "engine": "codex-chrome-extension-cdp",
+        "port": 9224,
+        "targetUrl": "https://www.facebook.com/LDMountainCentre",
+        "tabId": "E5AD9F167DFC49FF410FB675C34E3BC9",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/E5AD9F167DFC49FF410FB675C34E3BC9",
+        "title": "Facebook"
+      },
+      "result": {
+        "ok": true,
+        "engine": "codex-chrome-extension-cdp",
+        "browserEngine": "codex-chrome-extension-cdp",
+        "mode": "codex_chrome_primary_no_autoglm",
+        "targetUrl": "https://www.facebook.com/LDMountainCentre",
+        "chromeOpen": {
+          "ok": true,
+          "engine": "codex-chrome-extension-cdp",
+          "port": 9224,
+          "targetUrl": "https://www.facebook.com/LDMountainCentre",
+          "tabId": "E5AD9F167DFC49FF410FB675C34E3BC9",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/E5AD9F167DFC49FF410FB675C34E3BC9",
+          "title": "Facebook"
+        },
+        "sendStatus": "account_followed",
+        "output": "{\"verdict\":\"safe_gate_paused\",\"evidence\":\"facebook_engagement_completed_message_unavailable;facebook_profile_no_message_button;follow_already_active;facebook_post_like_not_available\",\"nextAction\":\"The verified account was engaged successfully. Monitor for a connection opportunity and avoid repeating the same action.\",\"draft\":\"Hi LD Mountain Centre team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a retail/category buyer, the strongest fit is assortment fit, new SKU pipeline, price-tier coverage, and proven consumer demand; your verified outdoor, camping and travel retail social refill channel focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the category buyer or vendor-review owner for a short intro video meeting?\",\"sendStatus\":\"account_followed\"}",
+        "decision": {
+          "verdict": "develop",
+          "fitScore": 84,
+          "reason": "local_template_fallback_after_glm_error: GLM request failed: 429 余额不足或无可用资源包,请充值。",
+          "draft": "Hi LD Mountain Centre team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a retail/category buyer, the strongest fit is assortment fit, new SKU pipeline, price-tier coverage, and proven consumer demand; your verified outdoor, camping and travel retail social refill channel focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the category buyer or vendor-review owner for a short intro video meeting?"
+        },
+        "glmModel": "local-professional-template-fallback",
+        "followup": false
+      }
+    }
+  ],
+  "skipped": [
+    {
+      "id": "google-customer-above-and-beyond-facebook",
+      "company": "Above and Beyond",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_facebook"
+    },
+    {
+      "id": "google-customer-facewest-facebook",
+      "company": "Facewest",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_facebook"
+    },
+    {
+      "id": "google-customer-george-fisher-facebook",
+      "company": "George Fisher",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_facebook"
+    },
+    {
+      "id": "google-customer-mountain-equipment-facebook",
+      "company": "Mountain Equipment",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_facebook"
+    },
+    {
+      "id": "google-customer-tiso-facebook",
+      "company": "Tiso",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_facebook"
+    },
+    {
+      "id": "google-customer-72hours-facebook",
+      "company": "72hours",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_facebook"
+    },
+    {
+      "id": "google-customer-atmosphere-facebook",
+      "company": "Atmosphere",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_facebook"
+    },
+    {
+      "id": "google-customer-eastern-mountain-sports-facebook",
+      "company": "Eastern Mountain Sports",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_facebook"
+    },
+    {
+      "id": "google-customer-half-moon-outfitters-facebook",
+      "company": "Half-Moon Outfitters",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_facebook"
+    },
+    {
+      "id": "google-customer-jax-outdoor-gear-facebook",
+      "company": "Jax Outdoor Gear",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_facebook"
+    },
+    {
+      "id": "google-customer-marmot-basin-retail-facebook",
+      "company": "Marmot Basin Retail",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_facebook"
+    },
+    {
       "id": "google-customer-massey-outfitters-facebook",
       "company": "Massey Outfitters",
       "action": "develop",
-      "platform": "facebook",
-      "targetUrl": "https://www.facebook.com/MasseysOutfitters"
+      "reason": "concrete_google_discovered_major_customer_facebook"
     },
-    "completedCount": 4,
-    "confirmedSendCount": 0,
-    "preparedWebsiteCount": 0,
-    "lastResult": {
+    {
+      "id": "google-customer-moosejaw-facebook",
+      "company": "Moosejaw",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_facebook"
+    },
+    {
+      "id": "google-customer-outdoorplay-facebook",
+      "company": "Outdoorplay",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_facebook"
+    },
+    {
+      "id": "google-customer-pack-rat-outdoor-center-facebook",
+      "company": "Pack Rat Outdoor Center",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_facebook"
+    },
+    {
+      "id": "google-customer-paragon-sports-facebook",
+      "company": "Paragon Sports",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_facebook"
+    },
+    {
+      "id": "google-customer-public-lands-facebook",
+      "company": "Public Lands",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_facebook"
+    },
+    {
+      "id": "google-customer-quest-outdoors-facebook",
+      "company": "Quest Outdoors",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_facebook"
+    },
+    {
+      "id": "google-customer-ramsey-outdoor-facebook",
+      "company": "Ramsey Outdoor",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_facebook"
+    },
+    {
+      "id": "google-customer-river-sports-outfitters-facebook",
+      "company": "River Sports Outfitters",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_facebook"
+    },
+    {
+      "id": "google-customer-rock-creek-facebook",
+      "company": "Rock/Creek",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_facebook"
+    },
+    {
+      "id": "google-customer-sierra-facebook",
+      "company": "Sierra",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_facebook"
+    },
+    {
+      "id": "google-customer-sunlight-sports-facebook",
+      "company": "Sunlight Sports",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_facebook"
+    },
+    {
+      "id": "google-customer-the-last-hunt-facebook",
+      "company": "The Last Hunt",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_facebook"
+    },
+    {
+      "id": "google-customer-the-mountaineer-facebook",
+      "company": "The Mountaineer",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_facebook"
+    },
+    {
+      "id": "google-customer-8a-pl-instagram",
+      "company": "8a.pl",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_instagram"
+    },
+    {
+      "id": "google-customer-above-and-beyond-instagram",
+      "company": "Above and Beyond",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_instagram"
+    },
+    {
+      "id": "google-customer-addnature-instagram",
+      "company": "Addnature",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_instagram"
+    },
+    {
+      "id": "google-customer-blue-tomato-instagram",
+      "company": "Blue Tomato",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_instagram"
+    },
+    {
+      "id": "google-customer-campz-instagram",
+      "company": "Campz",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_instagram"
+    },
+    {
+      "id": "google-customer-doorout-instagram",
+      "company": "Doorout",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_instagram"
+    },
+    {
+      "id": "google-customer-facewest-instagram",
+      "company": "Facewest",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_instagram"
+    },
+    {
+      "id": "google-customer-george-fisher-instagram",
+      "company": "George Fisher",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_instagram"
+    },
+    {
+      "id": "google-customer-intersport-norway-instagram",
+      "company": "Intersport Norway",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_instagram"
+    },
+    {
+      "id": "google-customer-ld-mountain-centre-instagram",
+      "company": "LD Mountain Centre",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_instagram"
+    },
+    {
+      "id": "google-customer-mountain-equipment-instagram",
+      "company": "Mountain Equipment",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_instagram"
+    },
+    {
+      "id": "google-customer-sklep-podroznika-instagram",
+      "company": "Sklep Podroznika",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_instagram"
+    },
+    {
+      "id": "google-customer-sport-conrad-instagram",
+      "company": "Sport Conrad",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_instagram"
+    },
+    {
+      "id": "google-customer-sportler-instagram",
+      "company": "Sportler",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_instagram"
+    },
+    {
+      "id": "google-customer-tiso-instagram",
+      "company": "Tiso",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_instagram"
+    },
+    {
+      "id": "google-customer-trekkinn-instagram",
+      "company": "Trekkinn",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_instagram"
+    },
+    {
+      "id": "google-customer-xxl-sport-instagram",
+      "company": "XXL Sport",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_instagram"
+    },
+    {
+      "id": "google-customer-72hours-instagram",
+      "company": "72hours",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_instagram"
+    },
+    {
+      "id": "google-customer-atmosphere-instagram",
+      "company": "Atmosphere",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_instagram"
+    },
+    {
+      "id": "google-customer-eastern-mountain-sports-instagram",
+      "company": "Eastern Mountain Sports",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_instagram"
+    },
+    {
+      "id": "google-customer-half-moon-outfitters-instagram",
+      "company": "Half-Moon Outfitters",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_instagram"
+    },
+    {
+      "id": "google-customer-jax-outdoor-gear-instagram",
+      "company": "Jax Outdoor Gear",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_instagram"
+    },
+    {
+      "id": "google-customer-marmot-basin-retail-instagram",
+      "company": "Marmot Basin Retail",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_instagram"
+    },
+    {
+      "id": "google-customer-massey-outfitters-instagram",
+      "company": "Massey Outfitters",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_instagram"
+    },
+    {
+      "id": "google-customer-moosejaw-instagram",
+      "company": "Moosejaw",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_instagram"
+    },
+    {
+      "id": "google-customer-outdoorplay-instagram",
+      "company": "Outdoorplay",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_instagram"
+    },
+    {
+      "id": "google-customer-pack-rat-outdoor-center-instagram",
+      "company": "Pack Rat Outdoor Center",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_instagram"
+    },
+    {
+      "id": "google-customer-paragon-sports-instagram",
+      "company": "Paragon Sports",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_instagram"
+    },
+    {
+      "id": "google-customer-public-lands-instagram",
+      "company": "Public Lands",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_instagram"
+    },
+    {
+      "id": "google-customer-quest-outdoors-instagram",
+      "company": "Quest Outdoors",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_instagram"
+    },
+    {
+      "id": "google-customer-ramsey-outdoor-instagram",
+      "company": "Ramsey Outdoor",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_instagram"
+    },
+    {
+      "id": "google-customer-river-sports-outfitters-instagram",
+      "company": "River Sports Outfitters",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_instagram"
+    },
+    {
+      "id": "google-customer-rock-creek-instagram",
+      "company": "Rock/Creek",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_instagram"
+    },
+    {
+      "id": "google-customer-sierra-instagram",
+      "company": "Sierra",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_instagram"
+    },
+    {
+      "id": "google-customer-sunlight-sports-instagram",
+      "company": "Sunlight Sports",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_instagram"
+    },
+    {
+      "id": "google-customer-the-last-hunt-instagram",
+      "company": "The Last Hunt",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_instagram"
+    },
+    {
+      "id": "google-customer-the-mountaineer-instagram",
+      "company": "The Mountaineer",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_instagram"
+    },
+    {
+      "id": "google-customer-mammut-store-instagram",
+      "company": "Mammut Store",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_instagram"
+    },
+    {
+      "id": "google-customer-summit-international-website-contact",
+      "company": "Summit International",
+      "action": "email_priority",
+      "reason": "marketing_attachment_missing"
+    },
+    {
+      "id": "google-customer-kittery-trading-post-website-contact",
+      "company": "Kittery Trading Post",
+      "action": "verify_target",
+      "reason": "marketing_attachment_missing"
+    },
+    {
+      "id": "google-customer-outdoor-action-facebook",
+      "company": "Outdoor Action",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_facebook"
+    },
+    {
+      "id": "google-customer-paddy-pallin-facebook",
+      "company": "Paddy Pallin",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_facebook"
+    },
+    {
+      "id": "google-customer-torpedo7-facebook",
+      "company": "Torpedo7",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_facebook"
+    },
+    {
+      "id": "google-customer-wild-earth-facebook",
+      "company": "Wild Earth",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_facebook"
+    },
+    {
+      "id": "google-customer-4camping-instagram",
+      "company": "4Camping",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_instagram"
+    },
+    {
+      "id": "google-customer-outdoor-specialist-instagram",
+      "company": "Outdoor Specialist",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_instagram"
+    },
+    {
+      "id": "google-customer-outdoor-action-instagram",
+      "company": "Outdoor Action",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_instagram"
+    },
+    {
+      "id": "google-customer-paddy-pallin-instagram",
+      "company": "Paddy Pallin",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_instagram"
+    },
+    {
+      "id": "google-customer-torpedo7-instagram",
+      "company": "Torpedo7",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_instagram"
+    },
+    {
+      "id": "google-customer-wild-earth-instagram",
+      "company": "Wild Earth",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_instagram"
+    },
+    {
+      "id": 23,
+      "company": "Ace Hardware",
+      "action": "verify_target",
+      "reason": "marketing_attachment_missing"
+    },
+    {
+      "id": 7,
+      "company": "AutoZone",
+      "action": "verify_target",
+      "reason": "marketing_attachment_missing"
+    },
+    {
+      "id": 10,
+      "company": "Backcountry.com",
+      "action": "verify_target",
+      "reason": "marketing_attachment_missing"
+    },
+    {
+      "id": 20,
+      "company": "Harbor Freight",
+      "action": "verify_target",
+      "reason": "marketing_attachment_missing"
+    },
+    {
+      "id": 6,
+      "company": "L.L.Bean",
+      "action": "verify_target",
+      "reason": "marketing_attachment_missing"
+    },
+    {
+      "id": 17,
+      "company": "Target",
+      "action": "verify_target",
+      "reason": "marketing_attachment_missing"
+    },
+    {
+      "id": 22,
+      "company": "Thor Industries",
+      "action": "verify_target",
+      "reason": "marketing_attachment_missing"
+    },
+    {
+      "id": 13,
+      "company": "Walgreens",
+      "action": "verify_target",
+      "reason": "marketing_attachment_missing"
+    },
+    {
+      "id": 18,
+      "company": "Winnebago",
+      "action": "verify_target",
+      "reason": "marketing_attachment_missing"
+    },
+    {
+      "id": 11,
+      "company": "Best Buy",
+      "action": "verify_target",
+      "reason": "marketing_attachment_missing"
+    },
+    {
+      "id": 9,
+      "company": "Canadian Tire",
+      "action": "verify_target",
+      "reason": "marketing_attachment_missing"
+    },
+    {
+      "id": 19,
+      "company": "MEC (Mountain Equipment Co-op)",
+      "action": "verify_target",
+      "reason": "marketing_attachment_missing"
+    },
+    {
+      "id": 16,
+      "company": "Airstream",
+      "action": "verify_target",
+      "reason": "marketing_attachment_missing"
+    },
+    {
+      "id": 5,
+      "company": "Pacific Outdoor Group",
+      "action": "verify_target",
+      "reason": "marketing_attachment_missing"
+    },
+    {
+      "id": 14,
+      "company": "Rural King",
+      "action": "verify_target",
+      "reason": "marketing_attachment_missing"
+    },
+    {
+      "id": 21,
+      "company": "RVDA (RV Dealers Association)",
+      "action": "verify_target",
+      "reason": "marketing_attachment_missing"
+    },
+    {
+      "id": "google-customer-bivouac-outdoor-website-contact",
+      "company": "Bivouac Outdoor",
+      "action": "verify_target",
+      "reason": "marketing_attachment_missing"
+    },
+    {
+      "id": "google-customer-further-faster-website-contact",
+      "company": "Further Faster",
+      "action": "verify_target",
+      "reason": "marketing_attachment_missing"
+    },
+    {
+      "id": "sheet_1779293110195_9myxa520z",
+      "company": "ARROW TIRE DISTRIBUTORS",
+      "action": "email_priority",
+      "reason": "marketing_attachment_missing"
+    },
+    {
+      "id": "sheet_1779293110195_g43uimg3f",
+      "company": "ARROW TIRE DISTRIBUTORS",
+      "action": "email_priority",
+      "reason": "marketing_attachment_missing"
+    },
+    {
+      "id": "sheet_1779293110195_u24j2gdmq",
+      "company": "FAUNA OUTDOOR",
+      "action": "email_priority",
+      "reason": "marketing_attachment_missing"
+    },
+    {
+      "id": "sheet_1779293110195_vwshd681i",
+      "company": "FAUNA OUTDOOR",
+      "action": "email_priority",
+      "reason": "marketing_attachment_missing"
+    },
+    {
+      "id": "sheet_1779293110195_g0uwgglwc",
+      "company": "JOHN DOYLE DISTRIBUTORS",
+      "action": "email_priority",
+      "reason": "marketing_attachment_missing"
+    },
+    {
+      "id": "sheet_1779293110195_0f1r27koe",
+      "company": "TAHOE SPORTS HUB",
+      "action": "email_priority",
+      "reason": "marketing_attachment_missing"
+    },
+    {
+      "id": "google-customer-above-and-beyond-facebook",
+      "company": "Above and Beyond",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_facebook"
+    },
+    {
+      "id": "google-customer-facewest-facebook",
+      "company": "Facewest",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_facebook"
+    },
+    {
+      "id": "google-customer-george-fisher-facebook",
+      "company": "George Fisher",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_facebook"
+    },
+    {
+      "id": "google-customer-mountain-equipment-facebook",
+      "company": "Mountain Equipment",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_facebook"
+    },
+    {
+      "id": "google-customer-tiso-facebook",
+      "company": "Tiso",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_facebook"
+    },
+    {
+      "id": "google-customer-72hours-facebook",
+      "company": "72hours",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_facebook"
+    },
+    {
+      "id": "google-customer-atmosphere-facebook",
+      "company": "Atmosphere",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_facebook"
+    },
+    {
+      "id": "google-customer-eastern-mountain-sports-facebook",
+      "company": "Eastern Mountain Sports",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_facebook"
+    },
+    {
+      "id": "google-customer-half-moon-outfitters-facebook",
+      "company": "Half-Moon Outfitters",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_facebook"
+    },
+    {
+      "id": "google-customer-jax-outdoor-gear-facebook",
+      "company": "Jax Outdoor Gear",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_facebook"
+    },
+    {
+      "id": "google-customer-marmot-basin-retail-facebook",
+      "company": "Marmot Basin Retail",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_facebook"
+    },
+    {
       "id": "google-customer-massey-outfitters-facebook",
       "company": "Massey Outfitters",
-      "sendStatus": "send_unconfirmed",
-      "evidence": "facebook_draft_not_inserted_after_composer_refocus;editable_count:2;composer_text_length:1;active:BODY"
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_facebook"
+    },
+    {
+      "id": "google-customer-moosejaw-facebook",
+      "company": "Moosejaw",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_facebook"
+    },
+    {
+      "id": "google-customer-outdoorplay-facebook",
+      "company": "Outdoorplay",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_facebook"
+    },
+    {
+      "id": "google-customer-pack-rat-outdoor-center-facebook",
+      "company": "Pack Rat Outdoor Center",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_facebook"
+    },
+    {
+      "id": "google-customer-paragon-sports-facebook",
+      "company": "Paragon Sports",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_facebook"
+    },
+    {
+      "id": "google-customer-public-lands-facebook",
+      "company": "Public Lands",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_facebook"
+    },
+    {
+      "id": "google-customer-quest-outdoors-facebook",
+      "company": "Quest Outdoors",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_facebook"
+    },
+    {
+      "id": "google-customer-ramsey-outdoor-facebook",
+      "company": "Ramsey Outdoor",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_facebook"
+    },
+    {
+      "id": "google-customer-river-sports-outfitters-facebook",
+      "company": "River Sports Outfitters",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_facebook"
+    },
+    {
+      "id": "google-customer-rock-creek-facebook",
+      "company": "Rock/Creek",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_facebook"
+    },
+    {
+      "id": "google-customer-sierra-facebook",
+      "company": "Sierra",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_facebook"
+    },
+    {
+      "id": "google-customer-sunlight-sports-facebook",
+      "company": "Sunlight Sports",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_facebook"
+    },
+    {
+      "id": "google-customer-the-last-hunt-facebook",
+      "company": "The Last Hunt",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_facebook"
+    },
+    {
+      "id": "google-customer-the-mountaineer-facebook",
+      "company": "The Mountaineer",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_facebook"
+    },
+    {
+      "id": "google-customer-outdoor-action-facebook",
+      "company": "Outdoor Action",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_facebook"
+    },
+    {
+      "id": "google-customer-paddy-pallin-facebook",
+      "company": "Paddy Pallin",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_facebook"
+    },
+    {
+      "id": "google-customer-torpedo7-facebook",
+      "company": "Torpedo7",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_facebook"
+    },
+    {
+      "id": "google-customer-wild-earth-facebook",
+      "company": "Wild Earth",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_facebook"
+    },
+    {
+      "id": "google-customer-4camping-instagram",
+      "company": "4Camping",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_instagram"
+    },
+    {
+      "id": "google-customer-8a-pl-instagram",
+      "company": "8a.pl",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_instagram"
+    },
+    {
+      "id": "google-customer-above-and-beyond-instagram",
+      "company": "Above and Beyond",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_instagram"
+    },
+    {
+      "id": "google-customer-addnature-instagram",
+      "company": "Addnature",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_instagram"
+    },
+    {
+      "id": "google-customer-blue-tomato-instagram",
+      "company": "Blue Tomato",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_instagram"
+    },
+    {
+      "id": "google-customer-campz-instagram",
+      "company": "Campz",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_instagram"
+    },
+    {
+      "id": "google-customer-doorout-instagram",
+      "company": "Doorout",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_instagram"
+    },
+    {
+      "id": "google-customer-facewest-instagram",
+      "company": "Facewest",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_instagram"
+    },
+    {
+      "id": "google-customer-george-fisher-instagram",
+      "company": "George Fisher",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_instagram"
+    },
+    {
+      "id": "google-customer-intersport-norway-instagram",
+      "company": "Intersport Norway",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_instagram"
+    },
+    {
+      "id": "google-customer-ld-mountain-centre-instagram",
+      "company": "LD Mountain Centre",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_instagram"
+    },
+    {
+      "id": "google-customer-mountain-equipment-instagram",
+      "company": "Mountain Equipment",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_instagram"
+    },
+    {
+      "id": "google-customer-outdoor-specialist-instagram",
+      "company": "Outdoor Specialist",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_instagram"
+    },
+    {
+      "id": "google-customer-sklep-podroznika-instagram",
+      "company": "Sklep Podroznika",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_instagram"
+    },
+    {
+      "id": "google-customer-sport-conrad-instagram",
+      "company": "Sport Conrad",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_instagram"
+    },
+    {
+      "id": "google-customer-sportler-instagram",
+      "company": "Sportler",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_instagram"
+    },
+    {
+      "id": "google-customer-tiso-instagram",
+      "company": "Tiso",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_instagram"
+    },
+    {
+      "id": "google-customer-trekkinn-instagram",
+      "company": "Trekkinn",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_instagram"
+    },
+    {
+      "id": "google-customer-xxl-sport-instagram",
+      "company": "XXL Sport",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_instagram"
+    },
+    {
+      "id": "google-customer-72hours-instagram",
+      "company": "72hours",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_instagram"
+    },
+    {
+      "id": "google-customer-atmosphere-instagram",
+      "company": "Atmosphere",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_instagram"
+    },
+    {
+      "id": "google-customer-eastern-mountain-sports-instagram",
+      "company": "Eastern Mountain Sports",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_instagram"
+    },
+    {
+      "id": "google-customer-half-moon-outfitters-instagram",
+      "company": "Half-Moon Outfitters",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_instagram"
+    },
+    {
+      "id": "google-customer-jax-outdoor-gear-instagram",
+      "company": "Jax Outdoor Gear",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_instagram"
+    },
+    {
+      "id": "google-customer-marmot-basin-retail-instagram",
+      "company": "Marmot Basin Retail",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_instagram"
+    },
+    {
+      "id": "google-customer-massey-outfitters-instagram",
+      "company": "Massey Outfitters",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_instagram"
+    },
+    {
+      "id": "google-customer-moosejaw-instagram",
+      "company": "Moosejaw",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_instagram"
+    },
+    {
+      "id": "google-customer-outdoorplay-instagram",
+      "company": "Outdoorplay",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_instagram"
+    },
+    {
+      "id": "google-customer-pack-rat-outdoor-center-instagram",
+      "company": "Pack Rat Outdoor Center",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_instagram"
+    },
+    {
+      "id": "google-customer-paragon-sports-instagram",
+      "company": "Paragon Sports",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_instagram"
+    },
+    {
+      "id": "google-customer-public-lands-instagram",
+      "company": "Public Lands",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_instagram"
+    },
+    {
+      "id": "google-customer-quest-outdoors-instagram",
+      "company": "Quest Outdoors",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_instagram"
+    },
+    {
+      "id": "google-customer-ramsey-outdoor-instagram",
+      "company": "Ramsey Outdoor",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_instagram"
+    },
+    {
+      "id": "google-customer-river-sports-outfitters-instagram",
+      "company": "River Sports Outfitters",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_instagram"
+    },
+    {
+      "id": "google-customer-rock-creek-instagram",
+      "company": "Rock/Creek",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_instagram"
+    },
+    {
+      "id": "google-customer-sierra-instagram",
+      "company": "Sierra",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_instagram"
+    },
+    {
+      "id": "google-customer-sunlight-sports-instagram",
+      "company": "Sunlight Sports",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_instagram"
+    },
+    {
+      "id": "google-customer-the-last-hunt-instagram",
+      "company": "The Last Hunt",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_instagram"
+    },
+    {
+      "id": "google-customer-the-mountaineer-instagram",
+      "company": "The Mountaineer",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_instagram"
+    },
+    {
+      "id": "google-customer-outdoor-action-instagram",
+      "company": "Outdoor Action",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_instagram"
+    },
+    {
+      "id": "google-customer-paddy-pallin-instagram",
+      "company": "Paddy Pallin",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_instagram"
+    },
+    {
+      "id": "google-customer-torpedo7-instagram",
+      "company": "Torpedo7",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_instagram"
+    },
+    {
+      "id": "google-customer-wild-earth-instagram",
+      "company": "Wild Earth",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_instagram"
+    },
+    {
+      "id": "google-customer-mammut-store-instagram",
+      "company": "Mammut Store",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_instagram"
+    },
+    {
+      "id": "google-customer-summit-international-website-contact",
+      "company": "Summit International",
+      "action": "email_priority",
+      "reason": "marketing_attachment_missing"
+    },
+    {
+      "id": "google-customer-kittery-trading-post-website-contact",
+      "company": "Kittery Trading Post",
+      "action": "email_priority",
+      "reason": "marketing_attachment_missing"
+    },
+    {
+      "id": "google-customer-bivouac-outdoor-website-contact",
+      "company": "Bivouac Outdoor",
+      "action": "email_priority",
+      "reason": "marketing_attachment_missing"
+    },
+    {
+      "id": "google-customer-further-faster-website-contact",
+      "company": "Further Faster",
+      "action": "email_priority",
+      "reason": "marketing_attachment_missing"
+    },
+    {
+      "id": 23,
+      "company": "Ace Hardware",
+      "action": "verify_target",
+      "reason": "marketing_attachment_missing"
+    },
+    {
+      "id": 7,
+      "company": "AutoZone",
+      "action": "verify_target",
+      "reason": "marketing_attachment_missing"
+    },
+    {
+      "id": 10,
+      "company": "Backcountry.com",
+      "action": "verify_target",
+      "reason": "marketing_attachment_missing"
+    },
+    {
+      "id": 20,
+      "company": "Harbor Freight",
+      "action": "verify_target",
+      "reason": "marketing_attachment_missing"
+    },
+    {
+      "id": 6,
+      "company": "L.L.Bean",
+      "action": "verify_target",
+      "reason": "marketing_attachment_missing"
+    },
+    {
+      "id": 17,
+      "company": "Target",
+      "action": "verify_target",
+      "reason": "marketing_attachment_missing"
+    },
+    {
+      "id": 22,
+      "company": "Thor Industries",
+      "action": "verify_target",
+      "reason": "marketing_attachment_missing"
+    },
+    {
+      "id": 13,
+      "company": "Walgreens",
+      "action": "verify_target",
+      "reason": "marketing_attachment_missing"
+    },
+    {
+      "id": 18,
+      "company": "Winnebago",
+      "action": "verify_target",
+      "reason": "marketing_attachment_missing"
+    },
+    {
+      "id": 11,
+      "company": "Best Buy",
+      "action": "verify_target",
+      "reason": "marketing_attachment_missing"
+    },
+    {
+      "id": 9,
+      "company": "Canadian Tire",
+      "action": "verify_target",
+      "reason": "marketing_attachment_missing"
+    },
+    {
+      "id": 19,
+      "company": "MEC (Mountain Equipment Co-op)",
+      "action": "verify_target",
+      "reason": "marketing_attachment_missing"
+    },
+    {
+      "id": 16,
+      "company": "Airstream",
+      "action": "verify_target",
+      "reason": "marketing_attachment_missing"
+    },
+    {
+      "id": 5,
+      "company": "Pacific Outdoor Group",
+      "action": "verify_target",
+      "reason": "marketing_attachment_missing"
+    },
+    {
+      "id": 14,
+      "company": "Rural King",
+      "action": "verify_target",
+      "reason": "marketing_attachment_missing"
+    },
+    {
+      "id": 21,
+      "company": "RVDA (RV Dealers Association)",
+      "action": "verify_target",
+      "reason": "marketing_attachment_missing"
+    },
+    {
+      "id": "sheet_1779293110195_9myxa520z",
+      "company": "ARROW TIRE DISTRIBUTORS",
+      "action": "email_priority",
+      "reason": "marketing_attachment_missing"
+    },
+    {
+      "id": "sheet_1779293110195_g43uimg3f",
+      "company": "ARROW TIRE DISTRIBUTORS",
+      "action": "email_priority",
+      "reason": "marketing_attachment_missing"
+    },
+    {
+      "id": "sheet_1779293110195_u24j2gdmq",
+      "company": "FAUNA OUTDOOR",
+      "action": "email_priority",
+      "reason": "marketing_attachment_missing"
+    },
+    {
+      "id": "sheet_1779293110195_vwshd681i",
+      "company": "FAUNA OUTDOOR",
+      "action": "email_priority",
+      "reason": "marketing_attachment_missing"
+    },
+    {
+      "id": "sheet_1779293110195_g0uwgglwc",
+      "company": "JOHN DOYLE DISTRIBUTORS",
+      "action": "email_priority",
+      "reason": "marketing_attachment_missing"
+    },
+    {
+      "id": "sheet_1779293110195_0f1r27koe",
+      "company": "TAHOE SPORTS HUB",
+      "action": "email_priority",
+      "reason": "marketing_attachment_missing"
     }
+  ],
+  "summary": {
+    "totalLeads": 16,
+    "highIcp": 16,
+    "readyToDevelop": 74,
+    "dueNow": 100,
+    "visibleTodayQueue": 31,
+    "potentialPool": 100,
+    "potentialPoolTarget": 100,
+    "customerTableHighIcp": 22,
+    "refillNeeded": 0,
+    "googleDiscovered": 78,
+    "facebookDiscovered": 30,
+    "websiteContactDiscovered": 4,
+    "scheduledLater": 0,
+    "cooldown": 30,
+    "emailPriority": 0,
+    "openAgencyMarket": 15,
+    "exclusiveAgencySkipped": 1,
+    "needsVerification": 0,
+    "retainedLowIcp": 0
   },
   "blockerSummary": [
     {
-      "reason": "browser_execution_timeout",
-      "count": 1,
-      "examples": [
-        {
-          "id": "google-customer-massey-outfitters-facebook",
-          "company": "Massey Outfitters",
-          "action": "develop",
-          "platform": "facebook",
-          "targetUrl": "https://www.facebook.com/MasseysOutfitters"
-        }
-      ]
+      "reason": "concrete_google_discovered_major_customer_instagram",
+      "status": "skipped",
+      "count": 88
+    },
+    {
+      "reason": "concrete_google_discovered_major_customer_facebook",
+      "status": "skipped",
+      "count": 58
+    },
+    {
+      "reason": "marketing_attachment_missing",
+      "status": "skipped",
+      "count": 52
     }
   ],
   "blockerCounts": {
-    "browser_execution_timeout": 1
+    "concrete_google_discovered_major_customer_instagram": 88,
+    "concrete_google_discovered_major_customer_facebook": 58,
+    "marketing_attachment_missing": 52
   },
   "queueGoalStatus": {
     "target": 100,
@@ -62,13 +1351,88 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     "reached": true,
     "action": "Daily high-ICP queue target reached."
   },
-  "recoveryHint": "Retry with a smaller DAILY_EXECUTE_LIMIT or inspect the current browser page before rerunning social outreach.",
+  "userVisibleStatus": "Customer development was not performed. Blockers: concrete_google_discovered_major_customer_instagram (88); concrete_google_discovered_major_customer_facebook (58); marketing_attachment_missing (52).",
+  "recoveryHint": "Configure WEBSITE_MARKETING_FILE or MARKETING_ATTACHMENT_PATH with an approved marketing attachment before rerunning website-contact outreach. Confirm the official social profile and safe message entry before rerunning Google-discovered social outreach.",
   "recoveryActions": [
     {
-      "reason": "browser_execution_timeout",
-      "action": "Reduce browser execution batch",
-      "description": "Retry with a smaller DAILY_EXECUTE_LIMIT or inspect the current social page that timed out.",
-      "hint": "Retry with a smaller DAILY_EXECUTE_LIMIT or inspect the current browser page before rerunning social outreach."
+      "reason": "marketing_attachment_missing",
+      "action": "Add approved website outreach attachment",
+      "description": "Set WEBSITE_MARKETING_FILE or MARKETING_ATTACHMENT_PATH before rerunning website-contact outreach.",
+      "hint": "Configure WEBSITE_MARKETING_FILE or MARKETING_ATTACHMENT_PATH with an approved marketing attachment before rerunning website-contact outreach.",
+      "requiredEnv": [
+        "WEBSITE_MARKETING_FILE",
+        "MARKETING_ATTACHMENT_PATH"
+      ]
+    },
+    {
+      "reason": "google_social_profile_not_executable",
+      "action": "Complete Google social channel verification",
+      "description": "Confirm the official social profile and safe message entry before rerunning Google-discovered social outreach.",
+      "hint": "Confirm the official social profile and safe message entry before rerunning Google-discovered social outreach."
     }
-  ]
+  ],
+  "systemRefresh": {
+    "ok": true,
+    "stdout": "{\n  \"date\": \"2026-07-16\",\n  \"summary\": {\n    \"totalLeads\": 16,\n    \"highIcp\": 16,\n    \"readyToDevelop\": 72,\n    \"dueNow\": 100,\n    \"visibleTodayQueue\": 30,\n    \"potentialPool\": 100,\n    \"potentialPoolTarget\": 100,\n    \"customerTableHighIcp\": 24,\n    \"refillNeeded\": 0,\n    \"googleDiscovered\": 76,\n    \"facebookDiscovered\": 29,\n    \"websiteContactDiscovered\": 4,\n    \"scheduledLater\": 0,\n    \"cooldown\": 30,\n    \"emailPriority\": 0,\n    \"openAgencyMarket\": 15,\n    \"exclusiveAgencySkipped\": 1,\n    \"needsVerification\": 0,\n    \"retainedLowIcp\": 0\n  },\n  \"bugErrors\": 0,\n  \"queueFile\": \"E:\\\\New project\\\\outreach-dashboard\\\\daily-runs\\\\2026-07-16-daily-automation.json\",\n  \"csvFile\": \"E:\\\\New project\\\\outreach-dashboard\\\\daily-runs\\\\2026-07-16-daily-queue.csv\"\n}",
+    "stderr": "",
+    "error": "",
+    "visibility": {
+      "updatedAt": "2026-07-16T13:05:47.073Z",
+      "source": "main-refreshDailyAutomationArtifacts",
+      "runDate": "2026-07-16",
+      "artifactGeneratedAt": "2026-07-16T13:05:45.850Z",
+      "executionGeneratedAt": "2026-07-16T13:03:03.313Z",
+      "githubSyncUpdatedAt": "2026-07-16T12:22:41.901Z",
+      "counts": {
+        "dailyQueue": 100,
+        "googleDiscovered": 76,
+        "websiteContact": 4,
+        "cooldownQueue": 30,
+        "scheduledLater": 0
+      },
+      "visibleSections": [
+        "workspace",
+        "taskDetailPanel",
+        "todayQueue",
+        "customers",
+        "customerDetail",
+        "seo",
+        "automationAudit",
+        "settings",
+        "rightRail",
+        "githubSyncStatus"
+      ],
+      "refreshedArtifacts": [
+        "daily-automation-latest",
+        "daily-automation-execution-latest",
+        "google-lead-discovery-latest",
+        "github-sync/latest-status",
+        "system-visibility-latest"
+      ],
+      "dailyQueueGoal": {
+        "target": 100,
+        "potentialPool": 100,
+        "refillNeeded": 0,
+        "reached": true
+      },
+      "contactEnrichment": {
+        "enabled": true,
+        "sources": [
+          "dailyQueue",
+          "cooldownQueue",
+          "google-lead-discovery-latest"
+        ],
+        "fields": [
+          "publicEmail",
+          "contactEmail",
+          "contactPhone",
+          "vendorPortal",
+          "contactUrl",
+          "contactSearchUrl",
+          "website"
+        ]
+      }
+    }
+  },
+  "completedAt": "2026-07-16T13:05:47.888Z"
 };
