@@ -6,7 +6,7 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
   "chromeOpenedCount": 4,
   "customerDevelopmentPerformed": true,
   "customerMessageSent": true,
-  "realDevelopmentCount": 1,
+  "realDevelopmentCount": 2,
   "reportingVerdict": "development_performed",
   "engine": "Codex Chrome Extension queue bridge",
   "mode": "serial-single-target",
@@ -30,8 +30,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
         "engine": "codex-chrome-extension-cdp",
         "port": 9224,
         "targetUrl": "https://www.instagram.com/moosejawmadness/",
-        "tabId": "2AEB3640062D9B9ABCB69601C72137E6",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/2AEB3640062D9B9ABCB69601C72137E6",
+        "tabId": "8025E5B3C768E2607936FE870A293DF5",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/8025E5B3C768E2607936FE870A293DF5",
         "title": "(@moosejawmadness) · Instagram 照片和视频"
       },
       "result": {
@@ -45,8 +45,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
           "engine": "codex-chrome-extension-cdp",
           "port": 9224,
           "targetUrl": "https://www.instagram.com/moosejawmadness/",
-          "tabId": "2AEB3640062D9B9ABCB69601C72137E6",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/2AEB3640062D9B9ABCB69601C72137E6",
+          "tabId": "8025E5B3C768E2607936FE870A293DF5",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/8025E5B3C768E2607936FE870A293DF5",
           "title": "(@moosejawmadness) · Instagram 照片和视频"
         },
         "sendStatus": "failed_open",
@@ -77,8 +77,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
         "engine": "codex-chrome-extension-cdp",
         "port": 9224,
         "targetUrl": "https://www.instagram.com/outdoorplay/",
-        "tabId": "E41C4DFC6941CBBACE29E65FD6429C25",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/E41C4DFC6941CBBACE29E65FD6429C25",
+        "tabId": "F0BD7962E2DCCCB8A3F663C5389AE1D5",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/F0BD7962E2DCCCB8A3F663C5389AE1D5",
         "title": "Suzette Anderson (@outdoorplay) · Instagram 照片和视频"
       },
       "result": {
@@ -92,8 +92,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
           "engine": "codex-chrome-extension-cdp",
           "port": 9224,
           "targetUrl": "https://www.instagram.com/outdoorplay/",
-          "tabId": "E41C4DFC6941CBBACE29E65FD6429C25",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/E41C4DFC6941CBBACE29E65FD6429C25",
+          "tabId": "F0BD7962E2DCCCB8A3F663C5389AE1D5",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/F0BD7962E2DCCCB8A3F663C5389AE1D5",
           "title": "Suzette Anderson (@outdoorplay) · Instagram 照片和视频"
         },
         "sendStatus": "failed_open",
@@ -111,58 +111,11 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       }
     },
     {
-      "id": "google-customer-paddy-pallin-facebook",
-      "company": "Paddy Pallin",
+      "id": "google-customer-public-lands-facebook",
+      "company": "Public Lands",
       "action": "develop",
       "platform": "facebook",
-      "targetUrl": "https://www.facebook.com/PaddyPallin",
-      "ok": false,
-      "sendStatus": "failed_open",
-      "evidence": "instagram_unavailable_profile_page: 1\n很抱歉，无法访问此页面\n你点击的链接可能已损坏，或页面已被移除。返回 instagram。\nmeta\n关于\n博客\n工作\n帮助\napi\n隐私设置\n条款\n地点\n热门\ninstagram lite\nmeta ai\nthreads\n联系人上传和非用户\nmeta verified\n中文(简体)\nafrikaans\nالعربية\nčeština\ndansk\ndeutsch\nελληνικά\nenglish\nenglish (uk)\nespañol (españa)\nespañol\nفارسی\nsuomi\nfrançais\nעברית\nbahasa indonesia\nitaliano\n日本語\n한국어\nbahasa melayu\nnorsk\nnederlands\npolski\nportuguês (brasil)\nportuguês (portugal)\nрусский\nsvenska\nภาษาไทย\nfilipino\ntürkçe\n中文(简体)\n中文(台灣)\nবাংলা\nગુજરાતી\nहिन्दी\nhrvatski\nmagyar\nಕನ್ನಡ\nമലയാളം\nमराठी\nनेपाली\nਪੰਜਾਬੀ\nසිංහල\nslovenčina\nதமிழ்\nతెలుగు\nاردو\ntiếng việt\n中文(香港)\nбългарски\nfrançais (canada)\nromână\nсрпски\nук",
-      "chromeOpen": {
-        "ok": true,
-        "engine": "codex-chrome-extension-cdp",
-        "port": 9224,
-        "targetUrl": "https://www.instagram.com/paddypallin/",
-        "tabId": "A3E24F296E0B6E15AECAAA0D9D272653",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/A3E24F296E0B6E15AECAAA0D9D272653",
-        "title": "Instagram"
-      },
-      "result": {
-        "ok": false,
-        "engine": "codex-chrome-extension-cdp",
-        "browserEngine": "codex-chrome-extension-cdp",
-        "mode": "codex_chrome_primary_no_autoglm_instagram_fallback",
-        "targetUrl": "https://www.instagram.com/paddypallin/",
-        "chromeOpen": {
-          "ok": true,
-          "engine": "codex-chrome-extension-cdp",
-          "port": 9224,
-          "targetUrl": "https://www.instagram.com/paddypallin/",
-          "tabId": "A3E24F296E0B6E15AECAAA0D9D272653",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/A3E24F296E0B6E15AECAAA0D9D272653",
-          "title": "Instagram"
-        },
-        "sendStatus": "failed_open",
-        "output": "{\"verdict\":\"major_bug_review_needed\",\"evidence\":\"instagram_unavailable_profile_page: 1\\n很抱歉，无法访问此页面\\n你点击的链接可能已损坏，或页面已被移除。返回 instagram。\\nmeta\\n关于\\n博客\\n工作\\n帮助\\napi\\n隐私设置\\n条款\\n地点\\n热门\\ninstagram lite\\nmeta ai\\nthreads\\n联系人上传和非用户\\nmeta verified\\n中文(简体)\\nafrikaans\\nالعربية\\nčeština\\ndansk\\ndeutsch\\nελληνικά\\nenglish\\nenglish (uk)\\nespañol (españa)\\nespañol\\nفارسی\\nsuomi\\nfrançais\\nעברית\\nbahasa indonesia\\nitaliano\\n日本語\\n한국어\\nbahasa melayu\\nnorsk\\nnederlands\\npolski\\nportuguês (brasil)\\nportuguês (portugal)\\nрусский\\nsvenska\\nภาษาไทย\\nfilipino\\ntürkçe\\n中文(简体)\\n中文(台灣)\\nবাংলা\\nગુજરાતી\\nहिन्दी\\nhrvatski\\nmagyar\\nಕನ್ನಡ\\nമലയാളം\\nमराठी\\nनेपाली\\nਪੰਜਾਬੀ\\nසිංහල\\nslovenčina\\nதமிழ்\\nతెలుగు\\nاردو\\ntiếng việt\\n中文(香港)\\nбългарски\\nfrançais (canada)\\nromână\\nсрпски\\nук\",\"nextAction\":\"Do not retry this URL; switch to a verified alternate channel or official website contact.\",\"draft\":\"Hi Paddy Pallin team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a retail/category buyer, the strongest fit is assortment fit, new SKU pipeline, price-tier coverage, and proven consumer demand; your verified outdoor, camping and travel retail social refill channel focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the category buyer or vendor-review owner for a short intro video meeting?\",\"sendStatus\":\"failed_open\",\"fallbackFrom\":\"https://www.facebook.com/PaddyPallin\",\"fallbackReason\":\"facebook_profile_no_message_button\"}",
-        "fallbackFrom": "https://www.facebook.com/PaddyPallin",
-        "fallbackPlatform": "instagram",
-        "decision": {
-          "verdict": "develop",
-          "fitScore": 84,
-          "reason": "local_template_fallback_after_glm_error: GLM request failed: 429 余额不足或无可用资源包,请充值。",
-          "draft": "Hi Paddy Pallin team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a retail/category buyer, the strongest fit is assortment fit, new SKU pipeline, price-tier coverage, and proven consumer demand; your verified outdoor, camping and travel retail social refill channel focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the category buyer or vendor-review owner for a short intro video meeting?"
-        },
-        "glmModel": "local-professional-template-fallback",
-        "followup": false
-      }
-    },
-    {
-      "id": "google-customer-paragon-sports-facebook",
-      "company": "Paragon Sports",
-      "action": "develop",
-      "platform": "facebook",
-      "targetUrl": "https://www.facebook.com/ParagonSports",
+      "targetUrl": "https://www.facebook.com/publiclands",
       "ok": true,
       "sendStatus": "sent_confirmed",
       "evidence": "instagram_message_sent_confirmed_after_send_click;instagram_draft_inserted_verified;sentText:false;outgoingBubble:true;emptyComposer:true;follow_not_available;instagram_post_not_available",
@@ -170,35 +123,82 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
         "ok": true,
         "engine": "codex-chrome-extension-cdp",
         "port": 9224,
-        "targetUrl": "https://www.instagram.com/paragonsports/",
-        "tabId": "85D0C5192F544D24166F0886242342AB",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/85D0C5192F544D24166F0886242342AB",
-        "title": "Paragon Sports NYC (@paragonsports) · Instagram 照片和视频"
+        "targetUrl": "https://www.instagram.com/publiclands/",
+        "tabId": "68354C4E4EF8BEB09AA9AA685FD08647",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/68354C4E4EF8BEB09AA9AA685FD08647",
+        "title": "Public Lands Foundation (@publiclands) · Instagram 照片和视频"
       },
       "result": {
         "ok": true,
         "engine": "codex-chrome-extension-cdp",
         "browserEngine": "codex-chrome-extension-cdp",
         "mode": "codex_chrome_primary_no_autoglm_instagram_fallback",
-        "targetUrl": "https://www.instagram.com/paragonsports/",
+        "targetUrl": "https://www.instagram.com/publiclands/",
         "chromeOpen": {
           "ok": true,
           "engine": "codex-chrome-extension-cdp",
           "port": 9224,
-          "targetUrl": "https://www.instagram.com/paragonsports/",
-          "tabId": "85D0C5192F544D24166F0886242342AB",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/85D0C5192F544D24166F0886242342AB",
-          "title": "Paragon Sports NYC (@paragonsports) · Instagram 照片和视频"
+          "targetUrl": "https://www.instagram.com/publiclands/",
+          "tabId": "68354C4E4EF8BEB09AA9AA685FD08647",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/68354C4E4EF8BEB09AA9AA685FD08647",
+          "title": "Public Lands Foundation (@publiclands) · Instagram 照片和视频"
         },
         "sendStatus": "sent_confirmed",
-        "output": "{\"verdict\":\"sent_confirmed\",\"evidence\":\"instagram_message_sent_confirmed_after_send_click;instagram_draft_inserted_verified;sentText:false;outgoingBubble:true;emptyComposer:true;follow_not_available;instagram_post_not_available\",\"nextAction\":\"Record outcome and monitor for reply.\",\"draft\":\"Hi Paragon Sports team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a retail/category buyer, the strongest fit is assortment fit, new SKU pipeline, price-tier coverage, and proven consumer demand; your verified outdoor, camping and travel retail social refill channel focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the category buyer or vendor-review owner for a short intro video meeting?\",\"sendStatus\":\"sent_confirmed\",\"fallbackFrom\":\"https://www.facebook.com/ParagonSports\",\"fallbackReason\":\"facebook_engagement_completed_message_unavailable;facebook_profile_no_message_button;follow_already_active;facebook_post_like_not_available\"}",
-        "fallbackFrom": "https://www.facebook.com/ParagonSports",
+        "output": "{\"verdict\":\"sent_confirmed\",\"evidence\":\"instagram_message_sent_confirmed_after_send_click;instagram_draft_inserted_verified;sentText:false;outgoingBubble:true;emptyComposer:true;follow_not_available;instagram_post_not_available\",\"nextAction\":\"Record outcome and monitor for reply.\",\"draft\":\"Hi Public Lands team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a retail/category buyer, the strongest fit is assortment fit, new SKU pipeline, price-tier coverage, and proven consumer demand; your verified outdoor, camping and travel retail social refill channel focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the category buyer or vendor-review owner for a short intro video meeting?\",\"sendStatus\":\"sent_confirmed\",\"fallbackFrom\":\"https://www.facebook.com/publiclands\",\"fallbackReason\":\"facebook_profile_no_message_button\"}",
+        "fallbackFrom": "https://www.facebook.com/publiclands",
         "fallbackPlatform": "instagram",
         "decision": {
           "verdict": "develop",
           "fitScore": 84,
           "reason": "local_template_fallback_after_glm_error: GLM request failed: 429 余额不足或无可用资源包,请充值。",
-          "draft": "Hi Paragon Sports team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a retail/category buyer, the strongest fit is assortment fit, new SKU pipeline, price-tier coverage, and proven consumer demand; your verified outdoor, camping and travel retail social refill channel focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the category buyer or vendor-review owner for a short intro video meeting?"
+          "draft": "Hi Public Lands team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a retail/category buyer, the strongest fit is assortment fit, new SKU pipeline, price-tier coverage, and proven consumer demand; your verified outdoor, camping and travel retail social refill channel focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the category buyer or vendor-review owner for a short intro video meeting?"
+        },
+        "glmModel": "local-professional-template-fallback",
+        "followup": false
+      }
+    },
+    {
+      "id": "google-customer-quest-outdoors-facebook",
+      "company": "Quest Outdoors",
+      "action": "develop",
+      "platform": "facebook",
+      "targetUrl": "https://www.facebook.com/QuestOutdoors",
+      "ok": true,
+      "sendStatus": "sent_confirmed",
+      "evidence": "instagram_message_sent_confirmed_after_send_click;instagram_draft_inserted_verified;sentText:false;outgoingBubble:true;emptyComposer:true;follow_not_available;instagram_post_not_available",
+      "chromeOpen": {
+        "ok": true,
+        "engine": "codex-chrome-extension-cdp",
+        "port": 9224,
+        "targetUrl": "https://www.instagram.com/questoutdoors/",
+        "tabId": "959C8DD366935D46F9FE1AB4E6D27598",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/959C8DD366935D46F9FE1AB4E6D27598",
+        "title": "Quest Outdoors (@questoutdoors) · Instagram 照片和视频"
+      },
+      "result": {
+        "ok": true,
+        "engine": "codex-chrome-extension-cdp",
+        "browserEngine": "codex-chrome-extension-cdp",
+        "mode": "codex_chrome_primary_no_autoglm_instagram_fallback",
+        "targetUrl": "https://www.instagram.com/questoutdoors/",
+        "chromeOpen": {
+          "ok": true,
+          "engine": "codex-chrome-extension-cdp",
+          "port": 9224,
+          "targetUrl": "https://www.instagram.com/questoutdoors/",
+          "tabId": "959C8DD366935D46F9FE1AB4E6D27598",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/959C8DD366935D46F9FE1AB4E6D27598",
+          "title": "Quest Outdoors (@questoutdoors) · Instagram 照片和视频"
+        },
+        "sendStatus": "sent_confirmed",
+        "output": "{\"verdict\":\"sent_confirmed\",\"evidence\":\"instagram_message_sent_confirmed_after_send_click;instagram_draft_inserted_verified;sentText:false;outgoingBubble:true;emptyComposer:true;follow_not_available;instagram_post_not_available\",\"nextAction\":\"Record outcome and monitor for reply.\",\"draft\":\"Hi Quest Outdoors team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a retail/category buyer, the strongest fit is assortment fit, new SKU pipeline, price-tier coverage, and proven consumer demand; your verified outdoor, camping and travel retail social refill channel focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the category buyer or vendor-review owner for a short intro video meeting?\",\"sendStatus\":\"sent_confirmed\",\"fallbackFrom\":\"https://www.facebook.com/QuestOutdoors\",\"fallbackReason\":\"facebook_profile_no_message_button\"}",
+        "fallbackFrom": "https://www.facebook.com/QuestOutdoors",
+        "fallbackPlatform": "instagram",
+        "decision": {
+          "verdict": "develop",
+          "fitScore": 84,
+          "reason": "local_template_fallback_after_glm_error: GLM request failed: 429 余额不足或无可用资源包,请充值。",
+          "draft": "Hi Quest Outdoors team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a retail/category buyer, the strongest fit is assortment fit, new SKU pipeline, price-tier coverage, and proven consumer demand; your verified outdoor, camping and travel retail social refill channel focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the category buyer or vendor-review owner for a short intro video meeting?"
         },
         "glmModel": "local-professional-template-fallback",
         "followup": false
@@ -220,8 +220,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
         "engine": "codex-chrome-extension-cdp",
         "port": 9224,
         "targetUrl": "https://www.instagram.com/moosejawmadness/",
-        "tabId": "2AEB3640062D9B9ABCB69601C72137E6",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/2AEB3640062D9B9ABCB69601C72137E6",
+        "tabId": "8025E5B3C768E2607936FE870A293DF5",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/8025E5B3C768E2607936FE870A293DF5",
         "title": "(@moosejawmadness) · Instagram 照片和视频"
       },
       "result": {
@@ -235,8 +235,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
           "engine": "codex-chrome-extension-cdp",
           "port": 9224,
           "targetUrl": "https://www.instagram.com/moosejawmadness/",
-          "tabId": "2AEB3640062D9B9ABCB69601C72137E6",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/2AEB3640062D9B9ABCB69601C72137E6",
+          "tabId": "8025E5B3C768E2607936FE870A293DF5",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/8025E5B3C768E2607936FE870A293DF5",
           "title": "(@moosejawmadness) · Instagram 照片和视频"
         },
         "sendStatus": "failed_open",
@@ -267,8 +267,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
         "engine": "codex-chrome-extension-cdp",
         "port": 9224,
         "targetUrl": "https://www.instagram.com/outdoorplay/",
-        "tabId": "E41C4DFC6941CBBACE29E65FD6429C25",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/E41C4DFC6941CBBACE29E65FD6429C25",
+        "tabId": "F0BD7962E2DCCCB8A3F663C5389AE1D5",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/F0BD7962E2DCCCB8A3F663C5389AE1D5",
         "title": "Suzette Anderson (@outdoorplay) · Instagram 照片和视频"
       },
       "result": {
@@ -282,8 +282,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
           "engine": "codex-chrome-extension-cdp",
           "port": 9224,
           "targetUrl": "https://www.instagram.com/outdoorplay/",
-          "tabId": "E41C4DFC6941CBBACE29E65FD6429C25",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/E41C4DFC6941CBBACE29E65FD6429C25",
+          "tabId": "F0BD7962E2DCCCB8A3F663C5389AE1D5",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/F0BD7962E2DCCCB8A3F663C5389AE1D5",
           "title": "Suzette Anderson (@outdoorplay) · Instagram 照片和视频"
         },
         "sendStatus": "failed_open",
@@ -301,58 +301,11 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       }
     },
     {
-      "id": "google-customer-paddy-pallin-facebook",
-      "company": "Paddy Pallin",
+      "id": "google-customer-public-lands-facebook",
+      "company": "Public Lands",
       "action": "develop",
       "platform": "facebook",
-      "targetUrl": "https://www.facebook.com/PaddyPallin",
-      "ok": false,
-      "sendStatus": "failed_open",
-      "evidence": "instagram_unavailable_profile_page: 1\n很抱歉，无法访问此页面\n你点击的链接可能已损坏，或页面已被移除。返回 instagram。\nmeta\n关于\n博客\n工作\n帮助\napi\n隐私设置\n条款\n地点\n热门\ninstagram lite\nmeta ai\nthreads\n联系人上传和非用户\nmeta verified\n中文(简体)\nafrikaans\nالعربية\nčeština\ndansk\ndeutsch\nελληνικά\nenglish\nenglish (uk)\nespañol (españa)\nespañol\nفارسی\nsuomi\nfrançais\nעברית\nbahasa indonesia\nitaliano\n日本語\n한국어\nbahasa melayu\nnorsk\nnederlands\npolski\nportuguês (brasil)\nportuguês (portugal)\nрусский\nsvenska\nภาษาไทย\nfilipino\ntürkçe\n中文(简体)\n中文(台灣)\nবাংলা\nગુજરાતી\nहिन्दी\nhrvatski\nmagyar\nಕನ್ನಡ\nമലയാളം\nमराठी\nनेपाली\nਪੰਜਾਬੀ\nසිංහල\nslovenčina\nதமிழ்\nతెలుగు\nاردو\ntiếng việt\n中文(香港)\nбългарски\nfrançais (canada)\nromână\nсрпски\nук",
-      "chromeOpen": {
-        "ok": true,
-        "engine": "codex-chrome-extension-cdp",
-        "port": 9224,
-        "targetUrl": "https://www.instagram.com/paddypallin/",
-        "tabId": "A3E24F296E0B6E15AECAAA0D9D272653",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/A3E24F296E0B6E15AECAAA0D9D272653",
-        "title": "Instagram"
-      },
-      "result": {
-        "ok": false,
-        "engine": "codex-chrome-extension-cdp",
-        "browserEngine": "codex-chrome-extension-cdp",
-        "mode": "codex_chrome_primary_no_autoglm_instagram_fallback",
-        "targetUrl": "https://www.instagram.com/paddypallin/",
-        "chromeOpen": {
-          "ok": true,
-          "engine": "codex-chrome-extension-cdp",
-          "port": 9224,
-          "targetUrl": "https://www.instagram.com/paddypallin/",
-          "tabId": "A3E24F296E0B6E15AECAAA0D9D272653",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/A3E24F296E0B6E15AECAAA0D9D272653",
-          "title": "Instagram"
-        },
-        "sendStatus": "failed_open",
-        "output": "{\"verdict\":\"major_bug_review_needed\",\"evidence\":\"instagram_unavailable_profile_page: 1\\n很抱歉，无法访问此页面\\n你点击的链接可能已损坏，或页面已被移除。返回 instagram。\\nmeta\\n关于\\n博客\\n工作\\n帮助\\napi\\n隐私设置\\n条款\\n地点\\n热门\\ninstagram lite\\nmeta ai\\nthreads\\n联系人上传和非用户\\nmeta verified\\n中文(简体)\\nafrikaans\\nالعربية\\nčeština\\ndansk\\ndeutsch\\nελληνικά\\nenglish\\nenglish (uk)\\nespañol (españa)\\nespañol\\nفارسی\\nsuomi\\nfrançais\\nעברית\\nbahasa indonesia\\nitaliano\\n日本語\\n한국어\\nbahasa melayu\\nnorsk\\nnederlands\\npolski\\nportuguês (brasil)\\nportuguês (portugal)\\nрусский\\nsvenska\\nภาษาไทย\\nfilipino\\ntürkçe\\n中文(简体)\\n中文(台灣)\\nবাংলা\\nગુજરાતી\\nहिन्दी\\nhrvatski\\nmagyar\\nಕನ್ನಡ\\nമലയാളം\\nमराठी\\nनेपाली\\nਪੰਜਾਬੀ\\nසිංහල\\nslovenčina\\nதமிழ்\\nతెలుగు\\nاردو\\ntiếng việt\\n中文(香港)\\nбългарски\\nfrançais (canada)\\nromână\\nсрпски\\nук\",\"nextAction\":\"Do not retry this URL; switch to a verified alternate channel or official website contact.\",\"draft\":\"Hi Paddy Pallin team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a retail/category buyer, the strongest fit is assortment fit, new SKU pipeline, price-tier coverage, and proven consumer demand; your verified outdoor, camping and travel retail social refill channel focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the category buyer or vendor-review owner for a short intro video meeting?\",\"sendStatus\":\"failed_open\",\"fallbackFrom\":\"https://www.facebook.com/PaddyPallin\",\"fallbackReason\":\"facebook_profile_no_message_button\"}",
-        "fallbackFrom": "https://www.facebook.com/PaddyPallin",
-        "fallbackPlatform": "instagram",
-        "decision": {
-          "verdict": "develop",
-          "fitScore": 84,
-          "reason": "local_template_fallback_after_glm_error: GLM request failed: 429 余额不足或无可用资源包,请充值。",
-          "draft": "Hi Paddy Pallin team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a retail/category buyer, the strongest fit is assortment fit, new SKU pipeline, price-tier coverage, and proven consumer demand; your verified outdoor, camping and travel retail social refill channel focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the category buyer or vendor-review owner for a short intro video meeting?"
-        },
-        "glmModel": "local-professional-template-fallback",
-        "followup": false
-      }
-    },
-    {
-      "id": "google-customer-paragon-sports-facebook",
-      "company": "Paragon Sports",
-      "action": "develop",
-      "platform": "facebook",
-      "targetUrl": "https://www.facebook.com/ParagonSports",
+      "targetUrl": "https://www.facebook.com/publiclands",
       "ok": true,
       "sendStatus": "sent_confirmed",
       "evidence": "instagram_message_sent_confirmed_after_send_click;instagram_draft_inserted_verified;sentText:false;outgoingBubble:true;emptyComposer:true;follow_not_available;instagram_post_not_available",
@@ -360,35 +313,82 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
         "ok": true,
         "engine": "codex-chrome-extension-cdp",
         "port": 9224,
-        "targetUrl": "https://www.instagram.com/paragonsports/",
-        "tabId": "85D0C5192F544D24166F0886242342AB",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/85D0C5192F544D24166F0886242342AB",
-        "title": "Paragon Sports NYC (@paragonsports) · Instagram 照片和视频"
+        "targetUrl": "https://www.instagram.com/publiclands/",
+        "tabId": "68354C4E4EF8BEB09AA9AA685FD08647",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/68354C4E4EF8BEB09AA9AA685FD08647",
+        "title": "Public Lands Foundation (@publiclands) · Instagram 照片和视频"
       },
       "result": {
         "ok": true,
         "engine": "codex-chrome-extension-cdp",
         "browserEngine": "codex-chrome-extension-cdp",
         "mode": "codex_chrome_primary_no_autoglm_instagram_fallback",
-        "targetUrl": "https://www.instagram.com/paragonsports/",
+        "targetUrl": "https://www.instagram.com/publiclands/",
         "chromeOpen": {
           "ok": true,
           "engine": "codex-chrome-extension-cdp",
           "port": 9224,
-          "targetUrl": "https://www.instagram.com/paragonsports/",
-          "tabId": "85D0C5192F544D24166F0886242342AB",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/85D0C5192F544D24166F0886242342AB",
-          "title": "Paragon Sports NYC (@paragonsports) · Instagram 照片和视频"
+          "targetUrl": "https://www.instagram.com/publiclands/",
+          "tabId": "68354C4E4EF8BEB09AA9AA685FD08647",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/68354C4E4EF8BEB09AA9AA685FD08647",
+          "title": "Public Lands Foundation (@publiclands) · Instagram 照片和视频"
         },
         "sendStatus": "sent_confirmed",
-        "output": "{\"verdict\":\"sent_confirmed\",\"evidence\":\"instagram_message_sent_confirmed_after_send_click;instagram_draft_inserted_verified;sentText:false;outgoingBubble:true;emptyComposer:true;follow_not_available;instagram_post_not_available\",\"nextAction\":\"Record outcome and monitor for reply.\",\"draft\":\"Hi Paragon Sports team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a retail/category buyer, the strongest fit is assortment fit, new SKU pipeline, price-tier coverage, and proven consumer demand; your verified outdoor, camping and travel retail social refill channel focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the category buyer or vendor-review owner for a short intro video meeting?\",\"sendStatus\":\"sent_confirmed\",\"fallbackFrom\":\"https://www.facebook.com/ParagonSports\",\"fallbackReason\":\"facebook_engagement_completed_message_unavailable;facebook_profile_no_message_button;follow_already_active;facebook_post_like_not_available\"}",
-        "fallbackFrom": "https://www.facebook.com/ParagonSports",
+        "output": "{\"verdict\":\"sent_confirmed\",\"evidence\":\"instagram_message_sent_confirmed_after_send_click;instagram_draft_inserted_verified;sentText:false;outgoingBubble:true;emptyComposer:true;follow_not_available;instagram_post_not_available\",\"nextAction\":\"Record outcome and monitor for reply.\",\"draft\":\"Hi Public Lands team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a retail/category buyer, the strongest fit is assortment fit, new SKU pipeline, price-tier coverage, and proven consumer demand; your verified outdoor, camping and travel retail social refill channel focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the category buyer or vendor-review owner for a short intro video meeting?\",\"sendStatus\":\"sent_confirmed\",\"fallbackFrom\":\"https://www.facebook.com/publiclands\",\"fallbackReason\":\"facebook_profile_no_message_button\"}",
+        "fallbackFrom": "https://www.facebook.com/publiclands",
         "fallbackPlatform": "instagram",
         "decision": {
           "verdict": "develop",
           "fitScore": 84,
           "reason": "local_template_fallback_after_glm_error: GLM request failed: 429 余额不足或无可用资源包,请充值。",
-          "draft": "Hi Paragon Sports team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a retail/category buyer, the strongest fit is assortment fit, new SKU pipeline, price-tier coverage, and proven consumer demand; your verified outdoor, camping and travel retail social refill channel focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the category buyer or vendor-review owner for a short intro video meeting?"
+          "draft": "Hi Public Lands team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a retail/category buyer, the strongest fit is assortment fit, new SKU pipeline, price-tier coverage, and proven consumer demand; your verified outdoor, camping and travel retail social refill channel focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the category buyer or vendor-review owner for a short intro video meeting?"
+        },
+        "glmModel": "local-professional-template-fallback",
+        "followup": false
+      }
+    },
+    {
+      "id": "google-customer-quest-outdoors-facebook",
+      "company": "Quest Outdoors",
+      "action": "develop",
+      "platform": "facebook",
+      "targetUrl": "https://www.facebook.com/QuestOutdoors",
+      "ok": true,
+      "sendStatus": "sent_confirmed",
+      "evidence": "instagram_message_sent_confirmed_after_send_click;instagram_draft_inserted_verified;sentText:false;outgoingBubble:true;emptyComposer:true;follow_not_available;instagram_post_not_available",
+      "chromeOpen": {
+        "ok": true,
+        "engine": "codex-chrome-extension-cdp",
+        "port": 9224,
+        "targetUrl": "https://www.instagram.com/questoutdoors/",
+        "tabId": "959C8DD366935D46F9FE1AB4E6D27598",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/959C8DD366935D46F9FE1AB4E6D27598",
+        "title": "Quest Outdoors (@questoutdoors) · Instagram 照片和视频"
+      },
+      "result": {
+        "ok": true,
+        "engine": "codex-chrome-extension-cdp",
+        "browserEngine": "codex-chrome-extension-cdp",
+        "mode": "codex_chrome_primary_no_autoglm_instagram_fallback",
+        "targetUrl": "https://www.instagram.com/questoutdoors/",
+        "chromeOpen": {
+          "ok": true,
+          "engine": "codex-chrome-extension-cdp",
+          "port": 9224,
+          "targetUrl": "https://www.instagram.com/questoutdoors/",
+          "tabId": "959C8DD366935D46F9FE1AB4E6D27598",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/959C8DD366935D46F9FE1AB4E6D27598",
+          "title": "Quest Outdoors (@questoutdoors) · Instagram 照片和视频"
+        },
+        "sendStatus": "sent_confirmed",
+        "output": "{\"verdict\":\"sent_confirmed\",\"evidence\":\"instagram_message_sent_confirmed_after_send_click;instagram_draft_inserted_verified;sentText:false;outgoingBubble:true;emptyComposer:true;follow_not_available;instagram_post_not_available\",\"nextAction\":\"Record outcome and monitor for reply.\",\"draft\":\"Hi Quest Outdoors team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a retail/category buyer, the strongest fit is assortment fit, new SKU pipeline, price-tier coverage, and proven consumer demand; your verified outdoor, camping and travel retail social refill channel focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the category buyer or vendor-review owner for a short intro video meeting?\",\"sendStatus\":\"sent_confirmed\",\"fallbackFrom\":\"https://www.facebook.com/QuestOutdoors\",\"fallbackReason\":\"facebook_profile_no_message_button\"}",
+        "fallbackFrom": "https://www.facebook.com/QuestOutdoors",
+        "fallbackPlatform": "instagram",
+        "decision": {
+          "verdict": "develop",
+          "fitScore": 84,
+          "reason": "local_template_fallback_after_glm_error: GLM request failed: 429 余额不足或无可用资源包,请充值。",
+          "draft": "Hi Quest Outdoors team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a retail/category buyer, the strongest fit is assortment fit, new SKU pipeline, price-tier coverage, and proven consumer demand; your verified outdoor, camping and travel retail social refill channel focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the category buyer or vendor-review owner for a short intro video meeting?"
         },
         "glmModel": "local-professional-template-fallback",
         "followup": false
@@ -396,30 +396,6 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     }
   ],
   "skipped": [
-    {
-      "id": "google-customer-above-and-beyond-facebook",
-      "company": "Above and Beyond",
-      "action": "develop",
-      "reason": "concrete_google_discovered_major_customer_facebook"
-    },
-    {
-      "id": "google-customer-facewest-facebook",
-      "company": "Facewest",
-      "action": "develop",
-      "reason": "concrete_google_discovered_major_customer_facebook"
-    },
-    {
-      "id": "google-customer-george-fisher-facebook",
-      "company": "George Fisher",
-      "action": "develop",
-      "reason": "concrete_google_discovered_major_customer_facebook"
-    },
-    {
-      "id": "google-customer-tiso-facebook",
-      "company": "Tiso",
-      "action": "develop",
-      "reason": "concrete_google_discovered_major_customer_facebook"
-    },
     {
       "id": "google-customer-72hours-facebook",
       "company": "72hours",
@@ -447,18 +423,6 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     {
       "id": "google-customer-jax-outdoor-gear-facebook",
       "company": "Jax Outdoor Gear",
-      "action": "develop",
-      "reason": "concrete_google_discovered_major_customer_facebook"
-    },
-    {
-      "id": "google-customer-public-lands-facebook",
-      "company": "Public Lands",
-      "action": "develop",
-      "reason": "concrete_google_discovered_major_customer_facebook"
-    },
-    {
-      "id": "google-customer-quest-outdoors-facebook",
-      "company": "Quest Outdoors",
       "action": "develop",
       "reason": "concrete_google_discovered_major_customer_facebook"
     },
@@ -501,6 +465,138 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     {
       "id": "google-customer-the-mountaineer-facebook",
       "company": "The Mountaineer",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_facebook"
+    },
+    {
+      "id": "google-customer-72hours-instagram",
+      "company": "72hours",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_instagram"
+    },
+    {
+      "id": "google-customer-atmosphere-instagram",
+      "company": "Atmosphere",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_instagram"
+    },
+    {
+      "id": "google-customer-eastern-mountain-sports-instagram",
+      "company": "Eastern Mountain Sports",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_instagram"
+    },
+    {
+      "id": "google-customer-half-moon-outfitters-instagram",
+      "company": "Half-Moon Outfitters",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_instagram"
+    },
+    {
+      "id": "google-customer-jax-outdoor-gear-instagram",
+      "company": "Jax Outdoor Gear",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_instagram"
+    },
+    {
+      "id": "google-customer-moosejaw-instagram",
+      "company": "Moosejaw",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_instagram"
+    },
+    {
+      "id": "google-customer-outdoorplay-instagram",
+      "company": "Outdoorplay",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_instagram"
+    },
+    {
+      "id": "google-customer-public-lands-instagram",
+      "company": "Public Lands",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_instagram"
+    },
+    {
+      "id": "google-customer-quest-outdoors-instagram",
+      "company": "Quest Outdoors",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_instagram"
+    },
+    {
+      "id": "google-customer-ramsey-outdoor-instagram",
+      "company": "Ramsey Outdoor",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_instagram"
+    },
+    {
+      "id": "google-customer-river-sports-outfitters-instagram",
+      "company": "River Sports Outfitters",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_instagram"
+    },
+    {
+      "id": "google-customer-rock-creek-instagram",
+      "company": "Rock/Creek",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_instagram"
+    },
+    {
+      "id": "google-customer-sierra-instagram",
+      "company": "Sierra",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_instagram"
+    },
+    {
+      "id": "google-customer-sunlight-sports-instagram",
+      "company": "Sunlight Sports",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_instagram"
+    },
+    {
+      "id": "google-customer-the-last-hunt-instagram",
+      "company": "The Last Hunt",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_instagram"
+    },
+    {
+      "id": "google-customer-the-mountaineer-instagram",
+      "company": "The Mountaineer",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_instagram"
+    },
+    {
+      "id": "google-customer-kittery-trading-post-website-contact",
+      "company": "Kittery Trading Post",
+      "action": "verify_target",
+      "reason": "marketing_attachment_missing"
+    },
+    {
+      "id": "google-customer-above-and-beyond-facebook",
+      "company": "Above and Beyond",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_facebook"
+    },
+    {
+      "id": "google-customer-facewest-facebook",
+      "company": "Facewest",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_facebook"
+    },
+    {
+      "id": "google-customer-george-fisher-facebook",
+      "company": "George Fisher",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_facebook"
+    },
+    {
+      "id": "google-customer-tiso-facebook",
+      "company": "Tiso",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_facebook"
+    },
+    {
+      "id": "google-customer-paddy-pallin-facebook",
+      "company": "Paddy Pallin",
       "action": "develop",
       "reason": "concrete_google_discovered_major_customer_facebook"
     },
@@ -615,108 +711,6 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     {
       "id": "google-customer-xxl-sport-instagram",
       "company": "XXL Sport",
-      "action": "develop",
-      "reason": "concrete_google_discovered_major_customer_instagram"
-    },
-    {
-      "id": "google-customer-72hours-instagram",
-      "company": "72hours",
-      "action": "develop",
-      "reason": "concrete_google_discovered_major_customer_instagram"
-    },
-    {
-      "id": "google-customer-atmosphere-instagram",
-      "company": "Atmosphere",
-      "action": "develop",
-      "reason": "concrete_google_discovered_major_customer_instagram"
-    },
-    {
-      "id": "google-customer-eastern-mountain-sports-instagram",
-      "company": "Eastern Mountain Sports",
-      "action": "develop",
-      "reason": "concrete_google_discovered_major_customer_instagram"
-    },
-    {
-      "id": "google-customer-half-moon-outfitters-instagram",
-      "company": "Half-Moon Outfitters",
-      "action": "develop",
-      "reason": "concrete_google_discovered_major_customer_instagram"
-    },
-    {
-      "id": "google-customer-jax-outdoor-gear-instagram",
-      "company": "Jax Outdoor Gear",
-      "action": "develop",
-      "reason": "concrete_google_discovered_major_customer_instagram"
-    },
-    {
-      "id": "google-customer-moosejaw-instagram",
-      "company": "Moosejaw",
-      "action": "develop",
-      "reason": "concrete_google_discovered_major_customer_instagram"
-    },
-    {
-      "id": "google-customer-outdoorplay-instagram",
-      "company": "Outdoorplay",
-      "action": "develop",
-      "reason": "concrete_google_discovered_major_customer_instagram"
-    },
-    {
-      "id": "google-customer-paragon-sports-instagram",
-      "company": "Paragon Sports",
-      "action": "develop",
-      "reason": "concrete_google_discovered_major_customer_instagram"
-    },
-    {
-      "id": "google-customer-public-lands-instagram",
-      "company": "Public Lands",
-      "action": "develop",
-      "reason": "concrete_google_discovered_major_customer_instagram"
-    },
-    {
-      "id": "google-customer-quest-outdoors-instagram",
-      "company": "Quest Outdoors",
-      "action": "develop",
-      "reason": "concrete_google_discovered_major_customer_instagram"
-    },
-    {
-      "id": "google-customer-ramsey-outdoor-instagram",
-      "company": "Ramsey Outdoor",
-      "action": "develop",
-      "reason": "concrete_google_discovered_major_customer_instagram"
-    },
-    {
-      "id": "google-customer-river-sports-outfitters-instagram",
-      "company": "River Sports Outfitters",
-      "action": "develop",
-      "reason": "concrete_google_discovered_major_customer_instagram"
-    },
-    {
-      "id": "google-customer-rock-creek-instagram",
-      "company": "Rock/Creek",
-      "action": "develop",
-      "reason": "concrete_google_discovered_major_customer_instagram"
-    },
-    {
-      "id": "google-customer-sierra-instagram",
-      "company": "Sierra",
-      "action": "develop",
-      "reason": "concrete_google_discovered_major_customer_instagram"
-    },
-    {
-      "id": "google-customer-sunlight-sports-instagram",
-      "company": "Sunlight Sports",
-      "action": "develop",
-      "reason": "concrete_google_discovered_major_customer_instagram"
-    },
-    {
-      "id": "google-customer-the-last-hunt-instagram",
-      "company": "The Last Hunt",
-      "action": "develop",
-      "reason": "concrete_google_discovered_major_customer_instagram"
-    },
-    {
-      "id": "google-customer-the-mountaineer-instagram",
-      "company": "The Mountaineer",
       "action": "develop",
       "reason": "concrete_google_discovered_major_customer_instagram"
     },
@@ -847,12 +841,6 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "reason": "marketing_attachment_missing"
     },
     {
-      "id": "google-customer-kittery-trading-post-website-contact",
-      "company": "Kittery Trading Post",
-      "action": "verify_target",
-      "reason": "marketing_attachment_missing"
-    },
-    {
       "id": "google-customer-bivouac-outdoor-website-contact",
       "company": "Bivouac Outdoor",
       "action": "verify_target",
@@ -967,18 +955,6 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "reason": "concrete_google_discovered_major_customer_facebook"
     },
     {
-      "id": "google-customer-public-lands-facebook",
-      "company": "Public Lands",
-      "action": "develop",
-      "reason": "concrete_google_discovered_major_customer_facebook"
-    },
-    {
-      "id": "google-customer-quest-outdoors-facebook",
-      "company": "Quest Outdoors",
-      "action": "develop",
-      "reason": "concrete_google_discovered_major_customer_facebook"
-    },
-    {
       "id": "google-customer-ramsey-outdoor-facebook",
       "company": "Ramsey Outdoor",
       "action": "develop",
@@ -1017,6 +993,12 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     {
       "id": "google-customer-the-mountaineer-facebook",
       "company": "The Mountaineer",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_facebook"
+    },
+    {
+      "id": "google-customer-paddy-pallin-facebook",
+      "company": "Paddy Pallin",
       "action": "develop",
       "reason": "concrete_google_discovered_major_customer_facebook"
     },
@@ -1173,12 +1155,6 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     {
       "id": "google-customer-outdoorplay-instagram",
       "company": "Outdoorplay",
-      "action": "develop",
-      "reason": "concrete_google_discovered_major_customer_instagram"
-    },
-    {
-      "id": "google-customer-paragon-sports-instagram",
-      "company": "Paragon Sports",
       "action": "develop",
       "reason": "concrete_google_discovered_major_customer_instagram"
     },
@@ -1432,15 +1408,15 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
   "summary": {
     "totalLeads": 16,
     "highIcp": 16,
-    "readyToDevelop": 62,
-    "dueNow": 90,
+    "readyToDevelop": 60,
+    "dueNow": 88,
     "visibleTodayQueue": 27,
-    "potentialPool": 90,
+    "potentialPool": 88,
     "potentialPoolTarget": 100,
     "customerTableHighIcp": 24,
-    "refillNeeded": 10,
-    "googleDiscovered": 66,
-    "facebookDiscovered": 24,
+    "refillNeeded": 12,
+    "googleDiscovered": 64,
+    "facebookDiscovered": 23,
     "websiteContactDiscovered": 4,
     "scheduledLater": 0,
     "cooldown": 30,
@@ -1454,7 +1430,7 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     {
       "reason": "concrete_google_discovered_major_customer_instagram",
       "status": "skipped",
-      "count": 76
+      "count": 74
     },
     {
       "reason": "marketing_attachment_missing",
@@ -1464,40 +1440,40 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     {
       "reason": "concrete_google_discovered_major_customer_facebook",
       "status": "skipped",
-      "count": 40
+      "count": 38
     },
     {
       "reason": "failed_open",
       "status": "failed_open",
-      "count": 3
+      "count": 2
     }
   ],
   "blockerCounts": {
-    "concrete_google_discovered_major_customer_instagram": 76,
+    "concrete_google_discovered_major_customer_instagram": 74,
     "marketing_attachment_missing": 56,
-    "concrete_google_discovered_major_customer_facebook": 40,
-    "failed_open": 3
+    "concrete_google_discovered_major_customer_facebook": 38,
+    "failed_open": 2
   },
   "queueGoalStatus": {
     "target": 100,
-    "potentialPool": 90,
-    "queueCount": 90,
-    "googleDiscovered": 66,
-    "refillNeeded": 10,
+    "potentialPool": 88,
+    "queueCount": 88,
+    "googleDiscovered": 64,
+    "refillNeeded": 12,
     "reached": false,
     "action": "Add more verified high-ICP sources or unblock existing website/social leads."
   },
-  "userVisibleStatus": "Customer development was not performed. Blockers: concrete_google_discovered_major_customer_instagram (76); marketing_attachment_missing (56); concrete_google_discovered_major_customer_facebook (40).",
-  "recoveryHint": "Refill the high-ICP pool with 10 verified leads or unblock existing website/social leads before the next run. Configure WEBSITE_MARKETING_FILE or MARKETING_ATTACHMENT_PATH with an approved marketing attachment before rerunning website-contact outreach. Confirm the official social profile and safe message entry before rerunning Google-discovered social outreach. Verify the official profile opens and exposes a safe message composer, or switch to another verified channel.",
+  "userVisibleStatus": "Customer development was not performed. Blockers: concrete_google_discovered_major_customer_instagram (74); marketing_attachment_missing (56); concrete_google_discovered_major_customer_facebook (38).",
+  "recoveryHint": "Refill the high-ICP pool with 12 verified leads or unblock existing website/social leads before the next run. Configure WEBSITE_MARKETING_FILE or MARKETING_ATTACHMENT_PATH with an approved marketing attachment before rerunning website-contact outreach. Confirm the official social profile and safe message entry before rerunning Google-discovered social outreach. Verify the official profile opens and exposes a safe message composer, or switch to another verified channel.",
   "recoveryActions": [
     {
       "reason": "daily_queue_goal_not_reached",
       "action": "Refill high-ICP customer pool",
-      "description": "Add or unblock 10 verified high-ICP leads to reach the daily 100 target.",
-      "hint": "Refill the high-ICP pool with 10 verified leads or unblock existing website/social leads before the next run.",
+      "description": "Add or unblock 12 verified high-ICP leads to reach the daily 100 target.",
+      "hint": "Refill the high-ICP pool with 12 verified leads or unblock existing website/social leads before the next run.",
       "target": 100,
-      "potentialPool": 90,
-      "refillNeeded": 10
+      "potentialPool": 88,
+      "refillNeeded": 12
     },
     {
       "reason": "marketing_attachment_missing",
@@ -1524,19 +1500,19 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
   ],
   "systemRefresh": {
     "ok": true,
-    "stdout": "{\n  \"date\": \"2026-07-17\",\n  \"summary\": {\n    \"totalLeads\": 16,\n    \"highIcp\": 16,\n    \"readyToDevelop\": 60,\n    \"dueNow\": 88,\n    \"visibleTodayQueue\": 27,\n    \"potentialPool\": 88,\n    \"potentialPoolTarget\": 100,\n    \"customerTableHighIcp\": 24,\n    \"refillNeeded\": 12,\n    \"googleDiscovered\": 64,\n    \"facebookDiscovered\": 23,\n    \"websiteContactDiscovered\": 4,\n    \"scheduledLater\": 0,\n    \"cooldown\": 30,\n    \"emailPriority\": 0,\n    \"openAgencyMarket\": 15,\n    \"exclusiveAgencySkipped\": 1,\n    \"needsVerification\": 0,\n    \"retainedLowIcp\": 0\n  },\n  \"bugErrors\": 0,\n  \"queueFile\": \"E:\\\\New project\\\\outreach-dashboard\\\\daily-runs\\\\2026-07-17-daily-automation.json\",\n  \"csvFile\": \"E:\\\\New project\\\\outreach-dashboard\\\\daily-runs\\\\2026-07-17-daily-queue.csv\"\n}",
+    "stdout": "{\n  \"date\": \"2026-07-17\",\n  \"summary\": {\n    \"totalLeads\": 16,\n    \"highIcp\": 16,\n    \"readyToDevelop\": 56,\n    \"dueNow\": 84,\n    \"visibleTodayQueue\": 27,\n    \"potentialPool\": 84,\n    \"potentialPoolTarget\": 100,\n    \"customerTableHighIcp\": 24,\n    \"refillNeeded\": 16,\n    \"googleDiscovered\": 60,\n    \"facebookDiscovered\": 21,\n    \"websiteContactDiscovered\": 4,\n    \"scheduledLater\": 0,\n    \"cooldown\": 30,\n    \"emailPriority\": 0,\n    \"openAgencyMarket\": 15,\n    \"exclusiveAgencySkipped\": 1,\n    \"needsVerification\": 0,\n    \"retainedLowIcp\": 0\n  },\n  \"bugErrors\": 0,\n  \"queueFile\": \"E:\\\\New project\\\\outreach-dashboard\\\\daily-runs\\\\2026-07-17-daily-automation.json\",\n  \"csvFile\": \"E:\\\\New project\\\\outreach-dashboard\\\\daily-runs\\\\2026-07-17-daily-queue.csv\"\n}",
     "stderr": "",
     "error": "",
     "visibility": {
-      "updatedAt": "2026-07-16T17:05:16.822Z",
+      "updatedAt": "2026-07-16T20:05:43.334Z",
       "source": "main-refreshDailyAutomationArtifacts",
       "runDate": "2026-07-17",
-      "artifactGeneratedAt": "2026-07-16T17:05:15.835Z",
-      "executionGeneratedAt": "2026-07-16T14:03:59.255Z",
-      "githubSyncUpdatedAt": "2026-07-16T14:04:18.257Z",
+      "artifactGeneratedAt": "2026-07-16T20:05:42.382Z",
+      "executionGeneratedAt": "2026-07-16T17:05:17.293Z",
+      "githubSyncUpdatedAt": "2026-07-16T17:05:42.889Z",
       "counts": {
-        "dailyQueue": 88,
-        "googleDiscovered": 64,
+        "dailyQueue": 84,
+        "googleDiscovered": 60,
         "websiteContact": 4,
         "cooldownQueue": 30,
         "scheduledLater": 0
@@ -1562,8 +1538,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       ],
       "dailyQueueGoal": {
         "target": 100,
-        "potentialPool": 88,
-        "refillNeeded": 12,
+        "potentialPool": 84,
+        "refillNeeded": 16,
         "reached": false
       },
       "contactEnrichment": {
@@ -1585,5 +1561,5 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       }
     }
   },
-  "completedAt": "2026-07-16T17:05:17.293Z"
+  "completedAt": "2026-07-16T20:05:43.683Z"
 };
