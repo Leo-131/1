@@ -268,6 +268,7 @@ function syncOnce() {
     'system-visibility-latest.json',
     'system-visibility-latest.js',
     'sync-local-data-to-github.js',
+    'check-dashboard.js',
     'package.json',
   ];
   git(['add', '--', ...paths], { stdio: 'pipe' });
