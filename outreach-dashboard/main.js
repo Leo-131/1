@@ -213,6 +213,7 @@ const COMPANY_HISTORY_BLOCKING_STATUSES = new Set([
   'account_followed',
   'post_liked',
 ]);
+const DEFAULT_DAILY_SOCIAL_EXECUTION_LIMIT = 30;
 
 function historicalAutomationResultBlocksCompany(result = {}) {
   if (COMPANY_HISTORY_BLOCKING_STATUSES.has(result.status)) {
@@ -229,7 +230,7 @@ function blockingAutomationResultFor(item) {
   const exactKeys = automationExactKeys(item);
   const companyKeys = automationCompanyKeys(item);
   const itemPlatform = automationPlatformFor(item);
-  const blocking = new Set(['sent_confirmed', 'failed_open', 'send_unconfirmed', 'account_followed', 'post_liked', 'website_contact_ready']);
+  const blocking = new Set(['sent_confirmed', 'failed_open', 'send_unconfirmed', 'account_followed', 'post_liked', 'website_contact_ready', 'website_contact_unreachable_skip']);
   const companyBlocking = new Set(['sent_confirmed', 'send_unconfirmed', 'account_followed', 'post_liked']);
   return results
     .filter((result) => result && (blocking.has(result.status) || historicalAutomationResultBlocksCompany(result)))
@@ -253,6 +254,7 @@ const SAME_DAY_DEVELOPMENT_STATUSES = new Set([
   'send_unconfirmed',
   'account_followed',
   'post_liked',
+  'website_contact_unreachable_skip',
 ]);
 
 function automationLocalDay(value, timeZone = 'Asia/Shanghai') {
@@ -2611,6 +2613,10 @@ function socialPriorityRank(item = {}) {
   return 100;
 }
 
+function isSocialQueueItem(item = {}) {
+  return socialPriorityRank(item) >= 300;
+}
+
 function developmentPriorityCompare(left, right) {
   return socialPriorityRank(right) - socialPriorityRank(left)
     || Number(right.fitScore || right.dealProbabilityScore || 0) - Number(left.fitScore || left.dealProbabilityScore || 0)
@@ -2752,6 +2758,14 @@ function executionRecoveryActions(blockerSummary = [], queueGoalStatus = null) {
       hint: 'Verify the official profile opens and exposes a safe message composer, or switch to another verified channel.',
     });
   }
+  if (reasons.has('browser_execution_timeout')) {
+    actions.push({
+      reason: 'browser_execution_timeout',
+      action: 'Reduce browser execution batch',
+      description: 'Retry with a smaller DAILY_EXECUTE_LIMIT or inspect the current social page that timed out.',
+      hint: 'Retry with a smaller DAILY_EXECUTE_LIMIT or inspect the current browser page before rerunning social outreach.',
+    });
+  }
   if (reasons.has('website_contact_unreachable_skip')) {
     actions.push({
       reason: 'website_contact_unreachable_skip',
@@ -2818,25 +2832,35 @@ async function runDailyAutomationQueue(payload = {}) {
   if (!latest || !Array.isArray(latest.dailyQueue)) {
     return { ok: false, error: 'Daily automation queue is missing. Run npm run daily first.' };
   }
-  const requestedLimit = Math.max(1, Math.min(Number(payload && payload.limit || 10), 100));
+  const requestedLimit = Math.max(1, Math.min(Number(payload && payload.limit || process.env.DAILY_EXECUTE_LIMIT || DEFAULT_DAILY_SOCIAL_EXECUTION_LIMIT), 100));
   const limit = requestedLimit;
   const parallelLimit = 1;
   const previousResults = readJsonScriptArray(path.join(__dirname, 'autonomous-outreach-results.js'), 'AUTONOMOUS_OUTREACH_RESULTS');
   const sameDayCompanyKeys = sameDayAutomationCompanyKeys(previousResults);
   const attachmentReady = websiteMarketingAttachmentStatus().ok;
-  const dueCandidates = executableQueueCandidates(latest.dailyQueue, { allowWebsiteContact: true });
-  const scheduledExecutable = executableQueueCandidates(latest.scheduledLater || [], { allowWebsiteContact: true });
-  const potentialFallback = executableQueueCandidates(latest.dailyPotentialPool || [], { allowWebsiteContact: true })
+  const dueCandidates = executableQueueCandidates(latest.dailyQueue, { allowWebsiteContact: false });
+  const scheduledExecutable = executableQueueCandidates(latest.scheduledLater || [], { allowWebsiteContact: false });
+  const potentialFallback = executableQueueCandidates(latest.dailyPotentialPool || [], { allowWebsiteContact: false })
     .filter(item => !['cooldown', 'blocked_partner', 'retain_low_icp', 'skip_exclusive_agency'].includes(String(item.action || '').toLowerCase()))
     .filter(item => !item.lastTouch && !item.previouslyContacted);
+  const websiteFallback = executableQueueCandidates([
+    ...latest.dailyQueue,
+    ...(latest.scheduledLater || []),
+    ...(latest.dailyPotentialPool || []),
+  ], { allowWebsiteContact: true })
+    .filter(item => !isSocialQueueItem(item));
   const queueSource = dueCandidates.length
     ? 'dailyQueue'
     : scheduledExecutable.length
       ? 'scheduledLater'
       : 'dailyPotentialPool';
-  const candidatePool = [...dueCandidates, ...scheduledExecutable, ...potentialFallback]
+  const socialPool = [...dueCandidates, ...scheduledExecutable, ...potentialFallback]
     .filter((item, index, list) => list.findIndex(other => other.id === item.id) === index)
     .sort(developmentPriorityCompare);
+  const candidatePool = [
+    ...socialPool,
+    ...websiteFallback.filter(item => !socialPool.some(social => social.id === item.id)),
+  ].sort(developmentPriorityCompare);
   const executable = [];
   const skipped = [];
   const selectedCompanyKeys = new Set(sameDayCompanyKeys);
@@ -3029,6 +3053,15 @@ async function runAutoDailyAndWriteArtifact() {
   const watchdog = setTimeout(async () => {
     if (completed) return;
     const confirmedSendCount = Number(currentDailyExecutionProgress && currentDailyExecutionProgress.confirmedSendCount || 0);
+    const latest = readJson(path.join(__dirname, 'daily-automation-latest.json'), {});
+    const blockerSummary = [{
+      reason: 'browser_execution_timeout',
+      count: 1,
+      examples: [currentDailyExecutionProgress && currentDailyExecutionProgress.currentItem].filter(Boolean),
+    }];
+    const queueGoalStatus = executionQueueGoalStatus(latest.summary || {});
+    const recoveryActions = executionRecoveryActions(blockerSummary, queueGoalStatus);
+    const recoveryHint = recoveryActions.length ? recoveryActions.map(item => item.hint).join(' ') : undefined;
     writeDailyExecutionArtifact({
       ok: false,
       error: `auto-run-daily timed out after ${timeoutMs}ms`,
@@ -3040,6 +3073,11 @@ async function runAutoDailyAndWriteArtifact() {
       realDevelopmentCount: confirmedSendCount,
       reportingVerdict: confirmedSendCount > 0 ? 'partial_customer_development_before_timeout' : 'no_customer_development_performed',
       progress: currentDailyExecutionProgress,
+      blockerSummary,
+      blockerCounts: executionBlockerCounts(blockerSummary),
+      queueGoalStatus,
+      recoveryHint,
+      recoveryActions,
     });
     await closeAutomationTabsOpenedAfter(new Set());
     app.exit(1);
@@ -3047,7 +3085,7 @@ async function runAutoDailyAndWriteArtifact() {
   if (watchdog.unref) watchdog.unref();
 
   try {
-    const autoLimit = Math.max(1, Math.min(Number(process.env.DAILY_EXECUTE_LIMIT || 10), 100));
+    const autoLimit = Math.max(1, Math.min(Number(process.env.DAILY_EXECUTE_LIMIT || DEFAULT_DAILY_SOCIAL_EXECUTION_LIMIT), 100));
     const result = await runDailyAutomationQueue({ limit: autoLimit, parallelLimit: 1, delayMs: 2500 });
     const output = {
       ...result,

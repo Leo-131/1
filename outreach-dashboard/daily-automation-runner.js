@@ -42,15 +42,20 @@ const TOUCH_STATUSES = new Set([
   'post_liked',
   'account_followed',
   'send_unconfirmed',
+  'website_contact_unreachable_skip',
 ]);
 const SAME_DAY_DEVELOPMENT_STATUSES = new Set([
   'sent_confirmed',
   'send_unconfirmed',
   'account_followed',
   'post_liked',
+  'website_contact_unreachable_skip',
 ]);
 const HISTORICAL_DEVELOPMENT_STATUSES = new Set([
-  ...SAME_DAY_DEVELOPMENT_STATUSES,
+  'sent_confirmed',
+  'send_unconfirmed',
+  'account_followed',
+  'post_liked',
 ]);
 const WEBSITE_CONTACT_VERIFIED_EVIDENCE = 'contact_entry_verified';
 const PROTECTED_AGENCY_MARKETS = new Map([
@@ -263,7 +268,19 @@ function dedupeQueueItems(items) {
 }
 
 function preferSocialChannels(items) {
-  return (items || []).slice().sort(priorityCompare);
+  return (items || []).slice().sort((left, right) => {
+    const leftRank = socialChannelRank(left);
+    const rightRank = socialChannelRank(right);
+    return rightRank - leftRank || priorityCompare(left, right);
+  });
+}
+
+function socialChannelRank(item = {}) {
+  const text = [item.platform, item.id, item.url, item.platformUrl, item.contactUrl].filter(Boolean).join(' ').toLowerCase();
+  if (/\blinkedin\b|linkedin\.com/.test(text)) return 330;
+  if (/\bfacebook\b|facebook\.com/.test(text)) return 320;
+  if (/\binstagram\b|instagram\.com/.test(text)) return 310;
+  return 0;
 }
 
 function minutesOfDay(value) {
@@ -1210,7 +1227,7 @@ function buildDailyPotentialPool(classified, discoveryRun, context, targetSize) 
     .filter(isActivePotentialCandidate)
     .sort(priorityCompare)
     .filter(item => {
-      const key = slugKey(item.company || item.name || item.id);
+      const key = queueDedupeKey(item);
       if (!key || seen.has(key)) return false;
       seen.add(key);
       return true;
@@ -1258,8 +1275,7 @@ function buildVisibleTodayQueue(discoveryRun, context, targetSize = 3) {
       const priorDeveloped = companyKeys.some(key => history.priorDeveloped.has(key));
       if (priorDeveloped) return null;
       const untouched = !sentConfirmed && !activeCooldown && !sameDay;
-      const visibleReview = activeCooldown && touch;
-      if (!untouched && !visibleReview) return null;
+      if (!untouched) return null;
       return {
         ...item,
         id: item.id || `visible-${slugKey(item.company || item.name)}`,
@@ -1269,21 +1285,13 @@ function buildVisibleTodayQueue(discoveryRun, context, targetSize = 3) {
         contactChannelScore: contactChannelScore(item),
         dealProbabilityScore: dealProbabilityScore(item),
         priorityScore: dealProbabilityScore(item),
-        action: sentConfirmed
-          ? 'review_only'
-          : activeCooldown
-            ? 'review_only'
-            : (item.action || 'develop'),
-        reason: sentConfirmed
-          ? 'sent_confirmed_no_duplicate_review'
-          : activeCooldown
-            ? 'cooldown_visible_review'
-            : (item.reason || 'high_icp_visible_today'),
+        action: item.action || 'develop',
+        reason: item.reason || 'high_icp_visible_today',
         agencyState: item.agencyState || 'open',
         lastStatus: touch && touch.status || '',
         lastEvidence: touch && touch.evidence || '',
         lastTouch: touch && touch.timestamp || '',
-        visibleOnly: Boolean(!untouched),
+        visibleOnly: false,
         workingTime: workingTimeForTask(item, context.now || Date.now()),
       };
     })

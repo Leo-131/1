@@ -2215,5 +2215,60 @@ window.AUTONOMOUS_OUTREACH_RESULTS = [
     "evidence": "driver_error: CDP timeout: Input.dispatchMouseEvent",
     "draft": "Hi Bergfreunde team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a retail/category buyer, the strongest fit is assortment fit, new SKU pipeline, price-tier coverage, and proven consumer demand; your verified outdoor, camping, travel and consumer electronics retail channel focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the category buyer or vendor-review owner for a short intro video meeting?",
     "subject": ""
+  },
+  {
+    "task_id": "google-customer-72hours-facebook",
+    "approval_version": 1,
+    "status": "failed_open",
+    "agent": "codex-chrome-extension",
+    "timestamp": "2026-07-16T07:04:31.284Z",
+    "target_url": "https://www.facebook.com/72hours.ca",
+    "evidence": "driver_error: CDP timeout: Input.dispatchMouseEvent",
+    "draft": "Hi 72hours team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a retail/category buyer, the strongest fit is assortment fit, new SKU pipeline, price-tier coverage, and proven consumer demand; your verified outdoor, camping and travel retail social refill channel focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the category buyer or vendor-review owner for a short intro video meeting?",
+    "subject": ""
+  },
+  {
+    "task_id": "google-customer-above-and-beyond-facebook",
+    "approval_version": 1,
+    "status": "failed_open",
+    "agent": "codex-chrome-extension",
+    "timestamp": "2026-07-16T07:05:52.029Z",
+    "target_url": "https://www.facebook.com/aboveandbeyondireland",
+    "evidence": "identity_mismatch_expected_Above and Beyond_title_(1) Facebook",
+    "draft": "Hi Above and Beyond team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a retail/category buyer, the strongest fit is assortment fit, new SKU pipeline, price-tier coverage, and proven consumer demand; your verified outdoor, camping and travel retail social refill channel focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the category buyer or vendor-review owner for a short intro video meeting?",
+    "subject": ""
+  },
+  {
+    "task_id": "google-customer-absolute-snow-facebook",
+    "approval_version": 1,
+    "status": "send_unconfirmed",
+    "agent": "codex-chrome-extension",
+    "timestamp": "2026-07-16T07:06:35.357Z",
+    "target_url": "https://www.facebook.com/AbsoluteSnow",
+    "evidence": "facebook_draft_not_inserted_after_composer_refocus;editable_count:2;composer_text_length:1;active:BODY",
+    "draft": "Thanks, Absolute-Snow team. Email or WhatsApp works well. Could you share the best buyer/category contact for camping accessories vendor review? I will send a concise FLEXTAIL and Vollyc brand intro, line sheet, and current product specs through that channel.",
+    "subject": ""
+  },
+  {
+    "task_id": "google-customer-altitude-sports-facebook",
+    "approval_version": 1,
+    "status": "send_unconfirmed",
+    "agent": "codex-chrome-extension",
+    "timestamp": "2026-07-16T07:07:23.311Z",
+    "target_url": "https://www.facebook.com/AltitudeSports",
+    "evidence": "facebook_draft_not_inserted_after_composer_refocus;editable_count:2;composer_text_length:1;active:BODY",
+    "draft": "Thanks, Altitude Sports team. Email or WhatsApp works well. Could you share the best buyer/category contact for camping accessories vendor review? I will send a concise FLEXTAIL and Vollyc brand intro, line sheet, and current product specs through that channel.",
+    "subject": ""
+  },
+  {
+    "task_id": "google-customer-atmosphere-facebook",
+    "approval_version": 1,
+    "status": "send_unconfirmed",
+    "agent": "codex-chrome-extension",
+    "timestamp": "2026-07-16T07:07:54.910Z",
+    "target_url": "https://www.facebook.com/Atmosphere",
+    "evidence": "facebook_draft_not_inserted_after_composer_refocus;editable_count:1;composer_text_length:0;active:BODY",
+    "draft": "Hi Atmosphere team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a retail/category buyer, the strongest fit is assortment fit, new SKU pipeline, price-tier coverage, and proven consumer demand; your verified outdoor, camping and travel retail social refill channel focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the category buyer or vendor-review owner for a short intro video meeting?",
+    "subject": ""
   }
 ];
