@@ -735,6 +735,8 @@ test('Codex Chrome execution can auto-send approved social outreach with confirm
   assert.ok(chromeDriverSource.includes('item => item && !item.pending'));
   assert.ok(chromeDriverSource.includes("closest('nav,[role=\"navigation\"]')"));
   assert.ok(chromeDriverSource.includes('closeBlockingOverlayExpression'));
+  assert.ok(chromeDriverSource.includes('closeFacebookChatWindowsExpression'));
+  assert.ok(chromeDriverSource.includes('facebook_stale_chat_windows_closed'));
   assert.ok(chromeDriverSource.includes('submitInstagramPostEngagement'));
   assert.match(chromeDriverSource, /platform === 'instagram'[\s\S]*clickOptionalAction\(tab, 'follow', platform\)[\s\S]*submitInstagramPostEngagement\(tab/);
   assert.ok(chromeDriverSource.includes('submitFacebookPostEngagement'));

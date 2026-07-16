@@ -194,6 +194,52 @@ function closeBlockingOverlayExpression(platform) {
   })()`;
 }
 
+function closeFacebookChatWindowsExpression() {
+  return `(() => {
+    const visible = (el) => {
+      const rect = el && el.getBoundingClientRect && el.getBoundingClientRect();
+      return Boolean(rect && rect.width > 0 && rect.height > 0 && rect.bottom > 0 && rect.top < window.innerHeight);
+    };
+    const closeButtons = Array.from(document.querySelectorAll('div[aria-label],button[aria-label],[role="button"][aria-label]'))
+      .filter(visible)
+      .map((el) => {
+        const rect = el.getBoundingClientRect();
+        const label = String(el.getAttribute('aria-label') || el.innerText || el.textContent || '').replace(/\\s+/g, ' ').trim().toLowerCase();
+        return {
+          el,
+          label,
+          x: Math.round(rect.left + rect.width / 2),
+          y: Math.round(rect.top + rect.height / 2),
+          width: Math.round(rect.width),
+          height: Math.round(rect.height),
+        };
+      })
+      .filter(item => item.x > window.innerWidth * 0.45)
+      .filter(item => /close chat|close conversation|\\u5173\\u95ed\\u804a\\u5929\\u7a97\\u53e3|\\u5173\\u95ed\\u5bf9\\u8bdd|\\u5173\\u95ed/.test(item.label));
+    const clicked = [];
+    for (const item of closeButtons.slice(0, 4)) {
+      item.el.click();
+      clicked.push(item.label || 'close_chat_window');
+    }
+    return JSON.stringify({
+      clicked: clicked.length,
+      labels: clicked,
+      evidence: clicked.length ? 'facebook_stale_chat_windows_closed' : 'facebook_no_stale_chat_windows'
+    });
+  })()`;
+}
+
+async function closeFacebookChatWindows(tab) {
+  const evidence = [];
+  for (let attempt = 0; attempt < 4; attempt += 1) {
+    const result = await evaluateJson(tab, closeFacebookChatWindowsExpression(), 3000).catch(() => null);
+    if (!result || !result.clicked) break;
+    evidence.push(result.evidence || 'facebook_stale_chat_windows_closed');
+    await sleep(500);
+  }
+  return evidence.join(';') || 'facebook_no_stale_chat_windows';
+}
+
 function profileMessageButtonExpression(platform, keywords) {
   return `(() => {
     const platform = ${JSON.stringify(platform)};
@@ -1020,8 +1066,13 @@ async function ensureComposerOpen(tab, port, platform) {
     };
   }
 
-  let composer = await waitForJson(tab, composerExpression(platform), item => item && item.visible, 1200, 300);
-  if (composer && Number.isFinite(composer.x)) return composer;
+  if (platform === 'facebook') {
+    await closeFacebookChatWindows(tab);
+    await sleep(500);
+  } else {
+    const existingComposer = await waitForJson(tab, composerExpression(platform), item => item && item.visible, 1200, 300);
+    if (existingComposer && Number.isFinite(existingComposer.x)) return existingComposer;
+  }
   await evaluateJson(tab, dismissDialogExpression(), 2000).catch(() => null);
   await evaluateJson(tab, closeBlockingOverlayExpression(platform), 2500).catch(() => null);
   await sleep(400);
