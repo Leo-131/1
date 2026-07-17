@@ -1317,6 +1317,20 @@
     };
     return labels[reason] || reason || '规则未给出原因';
   }
+  function dailyDevelopedRows() {
+    return executionResultRows()
+      .filter(item => isTodayTimestamp(item.timestamp || item.resultCheckedAt || item.lastTouch))
+      .filter(item => ['sent_confirmed', 'account_followed', 'post_liked', 'website_contact_ready'].includes(String(item.sendStatus || item.status || '')))
+      .filter((item, index, list) => list.findIndex(other => String(other.taskId) === String(item.taskId)) === index)
+      .map(item => ({ ...item, developedAt: item.timestamp || item.resultCheckedAt || item.lastTouch || '', interactionEvidence: item.evidence || item.automationEvidence || '' }));
+  }
+  function dailyDevelopedPanel() {
+    const rows = dailyDevelopedRows();
+    const table = rows.length
+      ? `<div class="cc-table-wrap"><table class="cc-table"><thead><tr><th>客户</th><th>平台</th><th>开发状态</th><th>互动/发送证据</th><th>时间</th><th>入口</th></tr></thead><tbody>${rows.map(item => `<tr><td><b>${esc(item.company || item.name)}</b></td><td>${esc(item.platform || '')}</td><td><span class="cc-chip green">${esc(automationStatusLabel(item.sendStatus || item.status, item.interactionEvidence, item.duplicateRisk))}</span></td><td>${esc(item.interactionEvidence || '已记录')}</td><td>${esc(item.developedAt || '')}</td><td>${entryUrl(item) ? `<a href="${esc(entryUrl(item))}" target="_blank" rel="noopener">打开入口</a>` : ''}</td></tr>`).join('')}</tbody></table></div>`
+      : '<div class="cc-empty">今天还没有带时间证据的已开发客户</div>';
+    return `<section class="cc-panel"><div class="cc-panel-head"><h2>今日已开发客户</h2><span class="cc-sub">${rows.length} 条真实开发记录，来自最新执行 Artifact</span></div>${table}</section>`;
+  }
   function googleQueueItem(item) {
     return item && (item.source === 'google_customer_discovery' || /^google-customer-/i.test(item.taskId || item.id || ''));
   }
@@ -1555,7 +1569,7 @@
     const mode = query.get('queue') || 'potential';
     const visibleRows = latestRun ? latestQueueRows('visibleTodayQueue') : untouchedTasks();
     const list = latestRun
-      ? (mode === 'potential' ? visibleRows : mode === 'followup' ? todayFollowupTasks() : mode === 'cooldown' ? latestQueueRows('cooldownQueue') : mode === 'all' ? latestQueueRows('all') : executableDevelopmentTasks())
+      ? (mode === 'potential' ? visibleRows : mode === 'followup' ? todayFollowupTasks() : mode === 'cooldown' ? latestQueueRows('cooldownQueue') : mode === 'all' ? latestQueueRows('all') : mode === 'developed' ? dailyDevelopedRows() : executableDevelopmentTasks())
       : (mode === 'followup' ? followupTasks() : mode === 'all' ? tasks : untouchedTasks());
     const tabs = [
       ['potential', '\u53ef\u81ea\u52a8\u5f00\u53d1', visibleRows.length],
@@ -1563,10 +1577,11 @@
       ['followup', '\u8ddf\u8fdb\u4e2d', todayFollowupTasks().length],
       ['cooldown', '\u77ed\u671f\u4e0d\u91cd\u590d', latestRun ? latestQueueRows('cooldownQueue').length : 0],
       ['all', '\u5168\u90e8\u4efb\u52a1', latestRun ? latestQueueRows('all').length : tasks.length],
+      ['developed', '\u4eca\u65e5\u5df2\u5f00\u53d1', dailyDevelopedRows().length],
     ];
     return `${pageHead('\u4eca\u65e5\u961f\u5217', '\u9ed8\u8ba4\u53ea\u663e\u793a\u672a\u89e6\u8fbe\u4e14\u8eab\u4efd\u6821\u9a8c\u901a\u8fc7\u7684\u65b0\u5ba2\u6237\uff0c\u5386\u53f2\u5ba2\u6237\u5355\u72ec\u8ddf\u8fdb')}
       <div class="cc-view-tabs">${tabs.map(([key, label, count]) => `<a class="${mode === key ? 'active' : ''}" href="${urlFor('queue', { queue: key })}">${label} <b>${count}</b></a>`).join('')}</div>
-      <div class="cc-table-wrap">${taskTable(list)}</div>`;
+      ${mode === 'developed' ? dailyDevelopedPanel() : `<div class="cc-table-wrap">${taskTable(list)}</div>`}`;
   }
   function customerProfileType(record) {
     const text = [record.customerType, record.category, record.keyword, record.keyword_used, record.role, record.company, record.industry].join(' ').toLowerCase();

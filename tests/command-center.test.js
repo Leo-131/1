@@ -210,6 +210,14 @@ test('today queue separates untouched work from historical follow-ups', () => {
   assert.ok(js.includes("queue: 'followup'"));
 });
 
+test('today queue exposes verified developed customer records', () => {
+  assert.ok(js.includes('function dailyDevelopedRows'));
+  assert.ok(js.includes('function dailyDevelopedPanel'));
+  assert.ok(js.includes("mode === 'developed'"));
+  assert.ok(js.includes('interactionEvidence'));
+  assert.ok(js.includes('developedAt'));
+});
+
 test('command center customer list restores 18.4 filtering and sorting controls', () => {
   for (const token of [
     'customer-search',
