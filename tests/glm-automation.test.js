@@ -755,6 +755,8 @@ test('Codex Chrome execution can auto-send approved social outreach with confirm
   assert.ok(discoverySource.includes("status: 'identity_mismatch'"));
   assert.ok(mainSource.includes('moosejawmadness'));
   assert.ok(chromeDriverSource.includes('known_instagram_identity_mismatch_moosejawmadness'));
+  assert.ok(chromeDriverSource.includes('retryPost'));
+  assert.ok(chromeDriverSource.includes("a[href*=\"/p/\"],a[href*=\"/reel/\"],a[href*=\"/tv/\"]"));
   assert.ok(chromeDriverSource.includes('messageUnavailable: true'));
   assert.ok(chromeDriverSource.includes("platform === 'facebook' && !profileZone.length"));
   assert.ok(chromeDriverSource.includes('follow_already_active'));

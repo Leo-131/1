@@ -471,9 +471,9 @@ function instagramPostTileExpression() {
         visible: true,
       };
     };
-    const preferred = Array.from(document.querySelectorAll('main a[href*="/p/"]')).map(mapLink).find(Boolean);
+    const preferred = Array.from(document.querySelectorAll('a[href*="/p/"],a[href*="/reel/"],a[href*="/tv/"]')).map(mapLink).find(Boolean);
     if (preferred) return JSON.stringify(preferred);
-    const links = Array.from(document.querySelectorAll('main a[href*="/reel/"],main a[href*="/tv/"]'))
+    const links = Array.from(document.querySelectorAll('a[href*="/reel/"],a[href*="/tv/"]'))
       .filter(visible)
       .map((el) => {
         el.scrollIntoView({ block: 'center', inline: 'center' });
@@ -861,7 +861,8 @@ function sideEffectButtonExpression(kind, platform) {
     const negative = ${JSON.stringify(negative)};
     const controls = Array.from(document.querySelectorAll('button,a,div[role="button"],span[role="button"]')).map((el) => {
       const rect = el.getBoundingClientRect();
-      const text = String(el.innerText || el.textContent || el.getAttribute('aria-label') || '').replace(/\\s+/g, ' ').trim().toLowerCase();
+      const text = [el.innerText, el.textContent, el.getAttribute('aria-label'), el.getAttribute('title'), el.getAttribute('data-testid')]
+        .map(value => String(value || '')).join(' ').replace(/\\s+/g, ' ').trim().toLowerCase();
       return {
         text,
         tag: el.tagName,
@@ -883,7 +884,8 @@ function sideEffectButtonExpression(kind, platform) {
         if (item.tag === 'A' && /followers|following|mutualonly|\\/$|#$/.test(item.href.toLowerCase())) return false;
         if (/\\d/.test(item.text)) return false;
         return item.width >= 60 && item.height >= 24;
-      });
+      })
+      .filter(item => kind !== 'follow' || (item.x > 120 && item.y > 80 && item.y < Math.min(window.innerHeight - 80, 720)));
     const exact = candidates.find(item => keywords.some(keyword => item.text === keyword));
     const found = exact || candidates[0];
     return JSON.stringify(found || null);
@@ -1282,8 +1284,19 @@ async function preparePlatformDraft(payload, platform) {
   const preActions = [];
   if (payload.autoEngage) {
     if (platform === 'instagram') {
-      preActions.push(await clickOptionalAction(tab, 'follow', platform));
-      preActions.push(await submitInstagramPostEngagement(tab, payload.engagementComment || 'Great outdoor checklist. Useful reminder for hikers preparing a complete, lightweight kit.'));
+      let follow = await clickOptionalAction(tab, 'follow', platform);
+      if (follow === 'follow_not_available') {
+        await sleep(900);
+        follow = await clickOptionalAction(tab, 'follow', platform);
+      }
+      preActions.push(follow);
+      let post = await submitInstagramPostEngagement(tab, payload.engagementComment || 'Great outdoor checklist. Useful reminder for hikers preparing a complete, lightweight kit.');
+      if (/instagram_post_not_available|post_like_double_tap_attempted/.test(post)) {
+        await sleep(900);
+        const retryPost = await submitInstagramPostEngagement(tab, payload.engagementComment || 'Great outdoor checklist. Useful reminder for hikers preparing a complete, lightweight kit.');
+        post = `${post};retry:${retryPost}`;
+      }
+      preActions.push(post);
     } else if (platform === 'facebook') {
       preActions.push(await clickOptionalAction(tab, 'follow', platform));
       preActions.push(await submitFacebookPostEngagement(tab));
