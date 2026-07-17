@@ -16,6 +16,7 @@ const dailyRunner = require('../outreach-dashboard/daily-automation-runner');
 
 const mainSource = fs.readFileSync(path.join(__dirname, '..', 'outreach-dashboard', 'main.js'), 'utf8');
 const chromeDriverSource = fs.readFileSync(path.join(__dirname, '..', 'outreach-dashboard', 'codex-chrome-driver.js'), 'utf8');
+const discoverySource = fs.readFileSync(path.join(__dirname, '..', 'outreach-dashboard', 'google-lead-discovery-runner.js'), 'utf8');
 const dailyRunnerSource = fs.readFileSync(path.join(__dirname, '..', 'outreach-dashboard', 'daily-automation-runner.js'), 'utf8');
 const templateSource = fs.readFileSync(path.join(__dirname, '..', 'outreach-dashboard', 'api', 'templates.js'), 'utf8');
 const marketProtectionSource = fs.readFileSync(path.join(__dirname, '..', 'outreach-dashboard', 'country-market-protection.js'), 'utf8');
@@ -703,6 +704,7 @@ test('Codex Chrome execution can auto-send approved social outreach with confirm
   assert.ok(mainSource.includes('codex-chrome-driver.js'));
   assert.ok(mainSource.includes("runCodexChromeDriver('prepare-instagram-draft'"));
   assert.ok(mainSource.includes('facebookNeedsInstagram'));
+  assert.ok(mainSource.includes('lead && lead.facebookMessageUnavailable === true'));
   assert.ok(mainSource.includes('skipInstagramFallback'));
   assert.ok(mainSource.includes('instagramFallbackTarget'));
   assert.ok(mainSource.includes('hasVerifiedInstagramFallback'));
@@ -750,6 +752,9 @@ test('Codex Chrome execution can auto-send approved social outreach with confirm
   assert.ok(chromeDriverSource.includes("querySelectorAll('button,a,[role=\"button\"]')"));
   assert.ok(chromeDriverSource.includes('handleMatchesExpected'));
   assert.ok(mainSource.includes("!handle.includes(expected) && !expected.includes(handle)"));
+  assert.ok(discoverySource.includes("status: 'identity_mismatch'"));
+  assert.ok(mainSource.includes('moosejawmadness'));
+  assert.ok(chromeDriverSource.includes('known_instagram_identity_mismatch_moosejawmadness'));
   assert.ok(chromeDriverSource.includes('messageUnavailable: true'));
   assert.ok(chromeDriverSource.includes("platform === 'facebook' && !profileZone.length"));
   assert.ok(chromeDriverSource.includes('follow_already_active'));
@@ -806,6 +811,7 @@ test('daily execution is serial and can process a priority batch per run', () =>
   assert.ok(mainSource.includes('const parallelLimit = 1'));
   assert.ok(mainSource.includes('const limit = requestedLimit'));
   assert.ok(mainSource.includes('DEFAULT_DAILY_SOCIAL_EXECUTION_LIMIT = 4'));
+  assert.ok(mainSource.includes('KEEP_AUTOMATION_TABS_VISIBLE'));
   assert.ok(mainSource.includes('isFollowupLead(lead)'));
   assert.ok(mainSource.includes('process.env.DAILY_EXECUTE_LIMIT || DEFAULT_DAILY_SOCIAL_EXECUTION_LIMIT'));
   assert.ok(mainSource.includes('executableQueueCandidates(latest.dailyQueue, { allowWebsiteContact: false })'));

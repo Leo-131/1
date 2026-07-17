@@ -319,7 +319,8 @@ function profileMessageButtonExpression(platform, keywords) {
       .filter(visible)
       .map((el) => {
         const rect = el.getBoundingClientRect();
-        const text = String(el.innerText || el.textContent || el.getAttribute('aria-label') || '').replace(/\\s+/g, ' ').trim().toLowerCase();
+        const text = [el.innerText, el.textContent, el.getAttribute('aria-label'), el.getAttribute('title'), el.getAttribute('data-testid')]
+          .map(value => String(value || '')).join(' ').replace(/\\s+/g, ' ').trim().toLowerCase();
         const inNav = Boolean(el.closest('nav,[role="navigation"]'));
         const inDialog = Boolean(el.closest('[role="dialog"],[aria-modal="true"]'));
         return {
@@ -785,6 +786,9 @@ function identityCheckExpression(expectedCompany, targetUrl) {
         return '';
       }
     })();
+    if (/instagram\.com\/moosejawmadness\/?$/i.test(targetUrl)) {
+      return JSON.stringify({ ok: false, pending: false, expectedCompany, title, url: location.href, evidence: 'known_instagram_identity_mismatch_moosejawmadness' });
+    }
     const locationPathCompact = (() => {
       try {
         return compact(location.pathname.replace(/^\\/+/, '').split('/')[0] || '');

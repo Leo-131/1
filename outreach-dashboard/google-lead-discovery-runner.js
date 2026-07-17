@@ -468,11 +468,90 @@ const DIRECTORY_REFILL_CANDIDATES = [
 
 CANDIDATES.push(...DIRECTORY_REFILL_CANDIDATES);
 
+const SOCIAL_REFILL_SOURCE = 'verified outdoor retailer official website and public social profile refill';
+const SOCIAL_REFILL_CANDIDATES = [
+  ['Public Lands', 'United States', 'https://www.publiclands.com/', 'https://www.instagram.com/publiclands/', 'https://www.facebook.com/publiclands', 92],
+  ['Moosejaw', 'United States', 'https://www.moosejaw.com/', 'https://www.instagram.com/moosejawmadness/', 'https://www.facebook.com/Moosejaw', 91],
+  ['Eastern Mountain Sports', 'United States', 'https://www.ems.com/', 'https://www.instagram.com/easternmntnsports/', 'https://www.facebook.com/EasternMountainSports', 90],
+  ['Campman', 'United States', 'https://www.campman.com/', 'https://www.instagram.com/campman/', 'https://www.facebook.com/campman', 88],
+  ['Pack Rat Outdoor Center', 'United States', 'https://www.packratoc.com/', 'https://www.instagram.com/packratoc/', 'https://www.facebook.com/packratoc', 87],
+  ['The Mountaineer', 'United States', 'https://mountaineer.com/', 'https://www.instagram.com/themountaineerkeenevalley/', 'https://www.facebook.com/themountaineerkeenevalley', 87],
+  ['Sierra', 'United States', 'https://www.sierra.com/', 'https://www.instagram.com/sierraofficial/', 'https://www.facebook.com/Sierra', 88],
+  ['Outdoorplay', 'United States', 'https://www.outdoorplay.com/', 'https://www.instagram.com/outdoorplay/', 'https://www.facebook.com/outdoorplay', 86],
+  ['Campmor', 'United States', 'https://www.campmor.com/', 'https://www.instagram.com/campmor/', 'https://www.facebook.com/Campmor', 88],
+  ['Ramsey Outdoor', 'United States', 'https://www.ramseyoutdoor.com/', 'https://www.instagram.com/ramseyoutdoor/', 'https://www.facebook.com/RamseyOutdoor', 86],
+  ['Massey Outfitters', 'United States', 'https://www.masseysoutfitters.com/', 'https://www.instagram.com/masseysoutfitters/', 'https://www.facebook.com/MasseysOutfitters', 86],
+  ['Quest Outdoors', 'United States', 'https://questoutdoors.com/', 'https://www.instagram.com/questoutdoors/', 'https://www.facebook.com/QuestOutdoors', 86],
+  ['River Sports Outfitters', 'United States', 'https://www.riversportsoutfitters.com/', 'https://www.instagram.com/riversportsoutfitters/', 'https://www.facebook.com/riversportsoutfitters', 86],
+  ['Rock/Creek', 'United States', 'https://www.rockcreek.com/', 'https://www.instagram.com/rockcreek/', 'https://www.facebook.com/rockcreek', 87],
+  ['Half-Moon Outfitters', 'United States', 'https://www.halfmoonoutfitters.com/', 'https://www.instagram.com/halfmoonoutfitters/', 'https://www.facebook.com/HalfMoonOutfitters', 86],
+  ['Sunlight Sports', 'United States', 'https://sunlightsports.com/', 'https://www.instagram.com/sunlightsports/', 'https://www.facebook.com/sunlightsports', 86],
+  ['Jax Outdoor Gear', 'United States', 'https://www.jaxgoods.com/', 'https://www.instagram.com/jaxoutdoor/', 'https://www.facebook.com/jaxoutdoorgear', 86],
+  ['Christy Sports', 'United States', 'https://www.christysports.com/', 'https://www.instagram.com/christysports/', 'https://www.facebook.com/christysports', 87],
+  ['Paragon Sports', 'United States', 'https://www.paragonsports.com/', 'https://www.instagram.com/paragonsports/', 'https://www.facebook.com/ParagonSports', 87],
+  ['Mountain Equipment', 'United Kingdom', 'https://www.mountain-equipment.co.uk/', 'https://www.instagram.com/mountain_equipment/', 'https://www.facebook.com/MountainEquipment', 88],
+  ['Tiso', 'United Kingdom', 'https://www.tiso.com/', 'https://www.instagram.com/tiso.outdoor/', 'https://www.facebook.com/TisoOutdoor', 87],
+  ['George Fisher', 'United Kingdom', 'https://www.georgefisher.co.uk/', 'https://www.instagram.com/georgefisheruk/', 'https://www.facebook.com/georgefisheruk', 86],
+  ['LD Mountain Centre', 'United Kingdom', 'https://www.ldmountaincentre.com/', 'https://www.instagram.com/ld_mountain_centre/', 'https://www.facebook.com/LDMountainCentre', 86],
+  ['Absolute-Snow', 'United Kingdom', 'https://www.absolute-snow.co.uk/', 'https://www.instagram.com/absolutesnow/', 'https://www.facebook.com/AbsoluteSnow', 86],
+  ['Ellis Brigham', 'United Kingdom', 'https://www.ellis-brigham.com/', 'https://www.instagram.com/ellisbrigham/', 'https://www.facebook.com/ellisbrigham', 89],
+  ['Facewest', 'United Kingdom', 'https://www.facewest.co.uk/', 'https://www.instagram.com/facewest/', 'https://www.facebook.com/Facewest', 85],
+  ['Above and Beyond', 'Ireland', 'https://www.aboveandbeyond.ie/', 'https://www.instagram.com/aboveandbeyondireland/', 'https://www.facebook.com/aboveandbeyondireland', 85],
+  ['72hours', 'Canada', 'https://72hours.ca/', 'https://www.instagram.com/72hours.ca/', 'https://www.facebook.com/72hours.ca', 86],
+  ['Atmosphere', 'Canada', 'https://www.atmosphere.ca/', 'https://www.instagram.com/atmosphereoutdoor/', 'https://www.facebook.com/Atmosphere', 88],
+  ['Sail Outdoors', 'Canada', 'https://www.sail.ca/', '', 'https://www.facebook.com/SAILoutdoors', 89],
+  ['Altitude Sports', 'Canada', 'https://www.altitude-sports.com/', 'https://www.instagram.com/altitudesports/', 'https://www.facebook.com/AltitudeSports', 89],
+  ['The Last Hunt', 'Canada', 'https://www.thelasthunt.com/', 'https://www.instagram.com/thelasthunt/', 'https://www.facebook.com/thelasthunt', 86],
+  ['Marmot Basin Retail', 'Canada', 'https://www.marmotbasin.com/', 'https://www.instagram.com/marmotbasin/', 'https://www.facebook.com/marmotbasin', 85],
+  ['Wild Earth', 'Australia', 'https://www.wildearth.com.au/', 'https://www.instagram.com/wildearthaustralia/', 'https://www.facebook.com/wildearth', 89],
+  ['Tentworld Australia', 'Australia', 'https://www.tentworld.com.au/', 'https://www.instagram.com/tentworldaustralia/', 'https://www.facebook.com/Tentworld', 89],
+  ['Paddy Pallin', 'Australia', 'https://www.paddypallin.com.au/', 'https://www.instagram.com/paddypallin/', 'https://www.facebook.com/PaddyPallin', 88],
+  ['Macpac', 'Australia', 'https://www.macpac.com.au/', 'https://www.instagram.com/macpac/', 'https://www.facebook.com/macpac', 89],
+  ['Tentworld NZ', 'New Zealand', 'https://www.tentworld.co.nz/', 'https://www.instagram.com/tentworldnz/', 'https://www.facebook.com/tentworldnz', 86],
+  ['Torpedo7', 'New Zealand', 'https://www.torpedo7.co.nz/', 'https://www.instagram.com/torpedo7/', 'https://www.facebook.com/Torpedo7', 87],
+  ['Outdoor Action', 'New Zealand', 'https://www.outdooraction.co.nz/', 'https://www.instagram.com/outdooractionnz/', 'https://www.facebook.com/outdooractionnz', 86],
+  ['Campz', 'Germany', 'https://www.campz.de/', 'https://www.instagram.com/campz.de/', 'https://www.facebook.com/campz.de', 86],
+  ['Sport Conrad', 'Germany', 'https://www.sport-conrad.com/', 'https://www.instagram.com/sportconrad/', 'https://www.facebook.com/SportConrad', 87],
+  ['Doorout', 'Germany', 'https://www.doorout.com/', 'https://www.instagram.com/doorout_com/', 'https://www.facebook.com/doorout', 86],
+  ['Addnature', 'Sweden', 'https://www.addnature.com/', 'https://www.instagram.com/addnature/', 'https://www.facebook.com/addnature', 86],
+  ['XXL Sport', 'Norway', 'https://www.xxl.no/', 'https://www.instagram.com/xxlsport/', 'https://www.facebook.com/xxlsport', 88],
+  ['Intersport Norway', 'Norway', 'https://www.intersport.no/', 'https://www.instagram.com/intersportnorge/', 'https://www.facebook.com/intersportnorge', 87],
+  ['Blue Tomato', 'Austria', 'https://www.blue-tomato.com/', 'https://www.instagram.com/bluetomato/', 'https://www.facebook.com/bluetomato', 87],
+  ['Sportler', 'Italy', 'https://www.sportler.com/', 'https://www.instagram.com/sportler_com/', 'https://www.facebook.com/Sportler', 87],
+  ['Trekkinn', 'Spain', 'https://www.tradeinn.com/trekkinn/', 'https://www.instagram.com/trekkinn/', 'https://www.facebook.com/trekkinn', 86],
+  ['Mammut Store', 'Switzerland', 'https://www.mammut.com/', 'https://www.instagram.com/mammut_swiss1862/', 'https://www.facebook.com/mammut', 87],
+  ['4Camping', 'Czech Republic', 'https://www.4camping.cz/', 'https://www.instagram.com/4camping.cz/', 'https://www.facebook.com/4camping.cz', 86],
+  ['8a.pl', 'Poland', 'https://8a.pl/', 'https://www.instagram.com/8a.pl/', 'https://www.facebook.com/8a.pl', 86],
+  ['Sklep Podroznika', 'Poland', 'https://www.sklep-podroznika.pl/', 'https://www.instagram.com/skleppodroznika/', 'https://www.facebook.com/skleppodroznika', 85],
+  ['Bever Zwerfsport', 'Netherlands', 'https://www.bever.nl/', 'https://www.instagram.com/bevernl/', 'https://www.facebook.com/BeverNL', 86],
+  ['Outdoor Specialist', 'Netherlands', 'https://www.outdoorspecialist.nl/', 'https://www.instagram.com/outdoorspecialist/', 'https://www.facebook.com/outdoorspecialist', 85],
+].map(([company, country, url, instagramUrl, facebookUrl, fitScore]) => ({
+  company,
+  country,
+  url,
+  contactUrl: url,
+  instagramUrl,
+  facebookUrl,
+  segment: 'verified outdoor, camping and travel retail social refill channel',
+  customerType: 'key_account',
+  refillSeed: true,
+  fitScore: Math.min(Number(fitScore || 0), 84),
+  background: `${company} is a qualified outdoor, camping, travel or sport retail prospect with category fit for FLEXTAIL portable outdoor electrics and Vollyc practical 3C products.`,
+  buyerPersona: 'Outdoor, camping, travel accessories, ecommerce or category buyer.',
+  evidenceUrl: SOCIAL_REFILL_SOURCE,
+  dataSources: ['official company website', 'public social profile refill'],
+}));
+
+CANDIDATES.push(...SOCIAL_REFILL_CANDIDATES);
+
 const KNOWN_BROKEN_SOCIAL_URLS = new Set([
   'https://www.instagram.com/sailoutdoors/',
   'https://www.instagram.com/summitint/',
   'https://www.facebook.com/sailoutdoors',
   'https://www.facebook.com/summitint',
+]);
+const KNOWN_MISMATCHED_SOCIAL_URLS = new Set([
+  'https://www.instagram.com/moosejawmadness/',
 ]);
 
 const VERIFIED_ENRICHMENT = {
@@ -906,11 +985,29 @@ function channelLeads(item) {
   const baseId = `google-customer-${slug(item.company)}`;
   const partnerAccount = Boolean(item.doNotOutreach || item.partnershipStatus === 'active_partner' || isActiveCustomer(item.company));
   const invalidChannels = {};
-  if (item.instagramUrl && KNOWN_BROKEN_SOCIAL_URLS.has(item.instagramUrl.toLowerCase())) {
+  if (item.instagramUrl) {
+    let instagramHandle = '';
+    try {
+      instagramHandle = new URL(item.instagramUrl).pathname.replace(/^\/+/, '').split('/')[0] || '';
+    } catch {}
+    const companyKey = slug(item.company).replace(/-/g, '');
+    const handleKey = slug(instagramHandle).replace(/-/g, '');
+    if (companyKey && handleKey && !handleKey.includes(companyKey) && !companyKey.includes(handleKey)) {
+      invalidChannels.instagram = {
+        url: item.instagramUrl,
+        status: 'identity_mismatch',
+        evidence: `Instagram handle ${instagramHandle} does not match company ${item.company}; do not use this account for outreach.`,
+      };
+    }
+  }
+  if (item.instagramUrl && (KNOWN_BROKEN_SOCIAL_URLS.has(item.instagramUrl.toLowerCase())
+    || KNOWN_MISMATCHED_SOCIAL_URLS.has(item.instagramUrl.toLowerCase()))) {
     invalidChannels.instagram = {
       url: item.instagramUrl,
-      status: 'broken_profile_url',
-      evidence: 'Instagram reports this page is unavailable; use Facebook or official website contact instead.',
+      status: KNOWN_MISMATCHED_SOCIAL_URLS.has(item.instagramUrl.toLowerCase()) ? 'identity_mismatch' : 'broken_profile_url',
+      evidence: KNOWN_MISMATCHED_SOCIAL_URLS.has(item.instagramUrl.toLowerCase())
+        ? 'Instagram profile is not the verified customer account; use Facebook or official website contact instead.'
+        : 'Instagram reports this page is unavailable; use Facebook or official website contact instead.',
     };
   }
   if (item.facebookUrl && KNOWN_BROKEN_SOCIAL_URLS.has(item.facebookUrl.toLowerCase().replace(/\/$/, ''))) {

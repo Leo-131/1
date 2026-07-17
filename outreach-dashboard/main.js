@@ -2398,7 +2398,8 @@ async function runCodexChromeLead(lead, decision, mode = 'codex_chrome_prepare',
     : String(decision && decision.draft || '').trim();
   const draftResult = await prepareSocialDraft(chromeOpen, finalDraft, lead);
   const facebookNeedsInstagram = !options.skipInstagramFallback
-    && /facebook_profile_no_message_button|facebook_message_button_clicked_composer_not_found/.test(String(draftResult && draftResult.evidence || ''));
+    && lead && lead.facebookMessageUnavailable === true
+    && /facebook_profile_no_message_button/.test(String(draftResult && draftResult.evidence || ''));
   const instagramUrl = instagramFallbackTarget(lead);
   if (facebookNeedsInstagram && instagramUrl) {
     const fallbackLead = {
