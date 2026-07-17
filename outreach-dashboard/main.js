@@ -800,6 +800,7 @@ async function closeChromeTarget(port, tabId) {
 }
 
 async function closeAutomationTabsOpenedAfter(existingTabIds = new Set()) {
+  if (/^(1|true|yes)$/i.test(String(process.env.KEEP_AUTOMATION_TABS_VISIBLE || ''))) return 0;
   const owned = Array.from(automationOwnedChromeTabs.entries())
     .filter(([tabId]) => !existingTabIds.has(tabId));
   for (const [tabId, port] of owned) {
