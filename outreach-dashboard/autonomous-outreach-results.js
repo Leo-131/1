@@ -3348,5 +3348,49 @@ window.AUTONOMOUS_OUTREACH_RESULTS = [
     "evidence": "driver_error: Command failed: C:\\Program Files\\nodejs\\node.exe E:\\New project\\outreach-dashboard\\codex-chrome-driver.js prepare-social-draft {\"port\":9224,\"tabId\":\"1CCE90B7D6979A3F132682663CB2A379\",\"targetUrl\":\"https://www.facebook.com/thelasthunt\",\"expectedCompany\":\"The Last Hunt\",\"draft\":\"Hi The Last Hunt team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a retail/category buyer, the strongest fit is assortment fit, new SKU pipeline, price-tier coverage, and proven consumer demand; your verified outdoor, camping and travel retail social refill channel focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the category buyer or vendor-review owner for a short intro video meeting?\",\"autoSend\":true,\"autoEngage\":true,\"engagementComment\":\"Great outdoor checklist. Useful reminder for hikers preparing a complete, lightweight kit.\",\"replaceExistingDraft\":true}\n",
     "draft": "Hi The Last Hunt team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a retail/category buyer, the strongest fit is assortment fit, new SKU pipeline, price-tier coverage, and proven consumer demand; your verified outdoor, camping and travel retail social refill channel focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the category buyer or vendor-review owner for a short intro video meeting?",
     "subject": ""
+  },
+  {
+    "task_id": "google-customer-outdoorplay-facebook",
+    "approval_version": 1,
+    "status": "approval_pending",
+    "agent": "codex-chrome-extension",
+    "timestamp": "2026-07-17T11:02:43.062Z",
+    "target_url": "https://www.facebook.com/outdoorplay",
+    "evidence": "driver_error: Command failed: C:\\Program Files\\nodejs\\\\node.exe E:\\New project\\outreach-dashboard\\codex-chrome-driver.js prepare-social-draft {\"port\":9224,\"tabId\":\"DC012A7CBF1B4FB356D7EE43BE1B9DA2\",\"targetUrl\":\"https://www.facebook.com/outdoorplay\",\"expectedCompany\":\"Outdoorplay\",\"draft\":\"Hi Outdoorplay team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a retail/category buyer, the strongest fit is assortment fit, new SKU pipeline, price-tier coverage, and proven consumer demand; your verified outdoor, camping and travel retail social refill channel focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the category buyer or vendor-review owner for a short intro video meeting?\",\"autoSend\":true,\"autoEngage\":true,\"engagementComment\":\"Great outdoor checklist. Useful reminder for hikers preparing a complete, lightweight kit.\",\"replaceExistingDraft\":true}\n",
+    "draft": "Hi Outdoorplay team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a retail/category buyer, the strongest fit is assortment fit, new SKU pipeline, price-tier coverage, and proven consumer demand; your verified outdoor, camping and travel retail social refill channel focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the category buyer or vendor-review owner for a short intro video meeting?",
+    "subject": ""
+  },
+  {
+    "task_id": "google-customer-river-sports-outfitters-facebook",
+    "approval_version": 1,
+    "status": "approval_pending",
+    "agent": "codex-chrome-extension",
+    "timestamp": "2026-07-17T11:03:33.908Z",
+    "target_url": "https://www.facebook.com/riversportsoutfitters",
+    "evidence": "driver_error: Command failed: C:\\Program Files\\nodejs\\\\node.exe E:\\New project\\outreach-dashboard\\codex-chrome-driver.js prepare-social-draft {\"port\":9224,\"tabId\":\"38F8995042F4F3D87DA06C84629DF961\",\"targetUrl\":\"https://www.facebook.com/riversportsoutfitters\",\"expectedCompany\":\"River Sports Outfitters\",\"draft\":\"Hi River Sports Outfitters team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a retail/category buyer, the strongest fit is assortment fit, new SKU pipeline, price-tier coverage, and proven consumer demand; your verified outdoor, camping and travel retail social refill channel focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the category buyer or vendor-review owner for a short intro video meeting?\",\"autoSend\":true,\"autoEngage\":true,\"engagementComment\":\"Great outdoor checklist. Useful reminder for hikers preparing a complete, lightweight kit.\",\"replaceExistingDraft\":true}\n",
+    "draft": "Hi River Sports Outfitters team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a retail/category buyer, the strongest fit is assortment fit, new SKU pipeline, price-tier coverage, and proven consumer demand; your verified outdoor, camping and travel retail social refill channel focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the category buyer or vendor-review owner for a short intro video meeting?",
+    "subject": ""
+  },
+  {
+    "task_id": "google-customer-rock-creek-facebook",
+    "approval_version": 1,
+    "status": "approval_pending",
+    "agent": "codex-chrome-extension",
+    "timestamp": "2026-07-17T11:04:23.933Z",
+    "target_url": "https://www.facebook.com/rockcreek",
+    "evidence": "driver_error: Command failed: C:\\Program Files\\nodejs\\\\node.exe E:\\New project\\outreach-dashboard\\codex-chrome-driver.js prepare-social-draft {\"port\":9224,\"tabId\":\"EF388676A28C8E1FEE61F83BA8CBE745\",\"targetUrl\":\"https://www.facebook.com/rockcreek\",\"expectedCompany\":\"Rock/Creek\",\"draft\":\"Hi Rock/Creek team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a retail/category buyer, the strongest fit is assortment fit, new SKU pipeline, price-tier coverage, and proven consumer demand; your verified outdoor, camping and travel retail social refill channel focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the category buyer or vendor-review owner for a short intro video meeting?\",\"autoSend\":true,\"autoEngage\":true,\"engagementComment\":\"Great outdoor checklist. Useful reminder for hikers preparing a complete, lightweight kit.\",\"replaceExistingDraft\":true}\n",
+    "draft": "Hi Rock/Creek team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a retail/category buyer, the strongest fit is assortment fit, new SKU pipeline, price-tier coverage, and proven consumer demand; your verified outdoor, camping and travel retail social refill channel focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the category buyer or vendor-review owner for a short intro video meeting?",
+    "subject": ""
+  },
+  {
+    "task_id": "google-customer-sport-conrad-facebook",
+    "approval_version": 1,
+    "status": "approval_pending",
+    "agent": "codex-chrome-extension",
+    "timestamp": "2026-07-17T11:05:14.165Z",
+    "target_url": "https://www.facebook.com/SportConrad",
+    "evidence": "driver_error: Command failed: C:\\Program Files\\nodejs\\\\node.exe E:\\New project\\outreach-dashboard\\codex-chrome-driver.js prepare-social-draft {\"port\":9224,\"tabId\":\"C34C204AA693D6EED0DFF8191D90171A\",\"targetUrl\":\"https://www.facebook.com/SportConrad\",\"expectedCompany\":\"Sport Conrad\",\"draft\":\"Hi Sport Conrad team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a retail/category buyer, the strongest fit is assortment fit, new SKU pipeline, price-tier coverage, and proven consumer demand; your verified outdoor, camping and travel retail social refill channel focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the category buyer or vendor-review owner for a short intro video meeting?\",\"autoSend\":true,\"autoEngage\":true,\"engagementComment\":\"Great outdoor checklist. Useful reminder for hikers preparing a complete, lightweight kit.\",\"replaceExistingDraft\":true}\n",
+    "draft": "Hi Sport Conrad team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a retail/category buyer, the strongest fit is assortment fit, new SKU pipeline, price-tier coverage, and proven consumer demand; your verified outdoor, camping and travel retail social refill channel focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the category buyer or vendor-review owner for a short intro video meeting?",
+    "subject": ""
   }
 ];
