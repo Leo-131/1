@@ -2378,6 +2378,7 @@ function instagramFallbackTarget(lead = {}) {
   try {
     const url = new URL(String(candidate));
     if (url.protocol !== 'https:' || !/instagram\.com$/i.test(url.hostname)) return '';
+    if (url.href.toLowerCase() === 'https://www.instagram.com/moosejawmadness/') return '';
     const expected = String(lead.company || lead.name || '').toLowerCase().replace(/[^a-z0-9]+/g, '');
     const handle = String(url.pathname.replace(/^\/+/, '').split('/')[0] || '').toLowerCase().replace(/[^a-z0-9]+/g, '');
     if (expected && handle && !handle.includes(expected) && !expected.includes(handle)) return '';
