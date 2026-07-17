@@ -1,7 +1,7 @@
 window.DAILY_AUTOMATION_EXECUTION_LATEST = {
   "ok": false,
   "error": "auto-run-daily timed out after 300000ms",
-  "completedAt": "2026-07-17T10:19:52.402Z",
+  "completedAt": "2026-07-17T11:37:23.010Z",
   "executionPhase": "browser_execution_timeout",
   "chromeOpened": true,
   "customerDevelopmentPerformed": false,
@@ -9,7 +9,7 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
   "realDevelopmentCount": 0,
   "reportingVerdict": "no_customer_development_performed",
   "progress": {
-    "startedAt": "2026-07-17T10:14:55.169Z",
+    "startedAt": "2026-07-17T11:32:26.079Z",
     "queueDate": "2026-07-17",
     "queueSource": "dailyQueue",
     "dailyQueueCount": 82,
@@ -32,7 +32,7 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "id": "google-customer-the-last-hunt-facebook",
       "company": "The Last Hunt",
       "sendStatus": "approval_pending",
-      "evidence": "driver_error: Command failed: C:\\Program Files\\nodejs\\node.exe E:\\New project\\outreach-dashboard\\codex-chrome-driver.js prepare-social-draft {\"port\":9224,\"tabId\":\"1CCE90B7D6979A3F132682663CB2A379\",\"targetUrl\":\"https://www.facebook.com/thelasthunt\",\"expectedCompany\":\"The Last Hunt\",\"draft\":\"Hi The Last Hunt team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a retail/category buyer, the strongest fit is assortment fit, new SKU pipeline, price-tier coverage, and proven consumer demand; your verified outdoor, camping and travel retail social refill channel focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the category buyer or vendor-review owner for a short intro video meeting?\",\"autoSend\":true,\"autoEngage\":true,\"engagementComment\":\"Great outdoor checklist. Useful reminder for hikers preparing a complete, lightweight kit.\",\"replaceExistingDraft\":true}\n"
+      "evidence": "driver_error: Command failed: C:\\Program Files\\nodejs\\node.exe E:\\New project\\outreach-dashboard\\codex-chrome-driver.js prepare-social-draft {\"port\":9224,\"tabId\":\"54BADAD05BD775D20F12F44C676A6876\",\"targetUrl\":\"https://www.facebook.com/thelasthunt\",\"expectedCompany\":\"The Last Hunt\",\"draft\":\"Hi The Last Hunt team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a retail/category buyer, the strongest fit is assortment fit, new SKU pipeline, price-tier coverage, and proven consumer demand; your verified outdoor, camping and travel retail social refill channel focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the category buyer or vendor-review owner for a short intro video meeting?\",\"autoSend\":true,\"autoEngage\":true,\"engagementComment\":\"Great outdoor checklist. Useful reminder for hikers preparing a complete, lightweight kit.\",\"replaceExistingDraft\":true}\n"
     }
   },
   "blockerSummary": [

@@ -2710,9 +2710,9 @@ function hasVerifiedInstagramFallback(item = {}) {
 
 function socialPriorityRank(item = {}) {
   const text = [item.platform, item.id, item.url, item.targetUrl, item.verifiedTargetUrl].filter(Boolean).join(' ').toLowerCase();
-  if (/\blinkedin\b|linkedin\.com/.test(text)) return 320;
-  if (/\bfacebook\b|facebook\.com/.test(text)) return 310;
-  if (/\binstagram\b|instagram\.com/.test(text)) return 300;
+  if (/\blinkedin\b|linkedin\.com/.test(text)) return 340;
+  if (/\bfacebook\b|facebook\.com/.test(text)) return 330;
+  if (/\binstagram\b|instagram\.com/.test(text)) return 320;
   if (isWebsiteContactQueueItem(item)) return 0;
   return 100;
 }
