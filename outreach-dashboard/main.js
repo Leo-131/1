@@ -802,6 +802,10 @@ async function closeChromeTarget(port, tabId) {
 
 async function closeAutomationTabsOpenedAfter(existingTabIds = new Set()) {
   if (/^(1|true|yes)$/i.test(String(process.env.KEEP_AUTOMATION_TABS_VISIBLE || ''))) return 0;
+  if (automationReusableChromeTab) {
+    await closeChromeTarget(automationReusableChromeTab.port, automationReusableChromeTab.tabId);
+    automationReusableChromeTab = null;
+  }
   const owned = Array.from(automationOwnedChromeTabs.entries())
     .filter(([tabId]) => !existingTabIds.has(tabId));
   for (const [tabId, port] of owned) {
@@ -1260,7 +1264,9 @@ async function runCodexChromeDriver(command, payload) {
   try {
     const result = await execFilePromise(nodeCommand, args, {
       windowsHide: true,
-      timeout: 120000,
+      // A stuck Facebook/Instagram page must fail one lead and let the
+      // serial queue continue; the daily watchdog is only five minutes.
+      timeout: 45000,
       maxBuffer: 2 * 1024 * 1024,
     });
     return parseDriverJson(result.stdout);
@@ -1328,20 +1334,9 @@ async function optimizeDraftWithContext(lead, decision, chromeOpen) {
   const context = await inspectSocialContext(chromeOpen);
   if (!context || !context.contextText) return baseDraft;
   const fallback = contextAwareFallbackDraft(lead, baseDraft, context.contextText);
-  const config = loadGlmConfig();
-  if (!config || !config.apiKey) return fallback;
-  try {
-    const optimized = await requestGlm({
-      ...config,
-      lead,
-      messages: buildContextOptimizationMessages(lead, baseDraft, context),
-      timeoutMs: 45000,
-    });
-    const draft = String(optimized && optimized.result && optimized.result.draft || '').trim();
-    return draft || fallback;
-  } catch {
-    return fallback;
-  }
+  // Customer execution is Codex Chrome Extension only. Context-aware
+  // rewriting stays local so GLM availability can never block browser work.
+  return fallback;
 }
 
 async function prepareInstagramDraft(opened, draft, lead = {}) {
@@ -2435,6 +2430,8 @@ async function runOpenClawLead(lead, decision, options = {}) {
 }
 
 function instagramFallbackTarget(lead = {}) {
+  const invalidInstagram = lead.invalidChannels && lead.invalidChannels.instagram;
+  if (invalidInstagram) return '';
   const channels = lead.alternateChannels || {};
   const candidate = channels.instagram || lead.instagramUrl || lead.instagram || '';
   if (!candidate) return '';
@@ -2442,6 +2439,7 @@ function instagramFallbackTarget(lead = {}) {
     const url = new URL(String(candidate));
     if (url.protocol !== 'https:' || !/instagram\.com$/i.test(url.hostname)) return '';
     if (url.href.toLowerCase() === 'https://www.instagram.com/moosejawmadness/') return '';
+    if (/instagram\.com\/(?:accounts\/login|explore|direct|about|developer|web|p|reel)\b/i.test(url.pathname)) return '';
     const expected = String(lead.company || lead.name || '').toLowerCase().replace(/[^a-z0-9]+/g, '');
     const handle = String(url.pathname.replace(/^\/+/, '').split('/')[0] || '').toLowerCase().replace(/[^a-z0-9]+/g, '');
     if (expected && handle && !handle.includes(expected) && !expected.includes(handle)) return '';
@@ -2621,25 +2619,14 @@ async function executeLeadAutomation(lead, options = {}) {
   const followup = isFollowupLead(lead);
   const target = followup ? validateLeadTargetForPreparation(lead) : validateLeadForExecution(lead);
   if (!target.ok) return target;
-  const config = loadGlmConfig();
-  if (!config || !config.apiKey) return { ok: false, needsConfig: true };
-
   if (!options.allowParallel) glmAutomationRunning = true;
   try {
-    let glm = null;
-    let decision = null;
-    try {
-      glm = await requestGlm({ ...config, lead });
-      decision = glm.result;
-    } catch (error) {
-      decision = {
-        verdict: followup ? 'recheck' : 'develop',
-        fitScore: Math.max(Number(lead && lead.fitScore || 0), followup ? 50 : 70),
-        reason: `local_template_fallback_after_glm_error: ${error && error.message || 'unknown_error'}`,
-        draft: professionalSalesDraft(lead || {}, ''),
-      };
-      glm = { model: 'local-professional-template-fallback', error: error && error.message || String(error || '') };
-    }
+    const decision = {
+      verdict: followup ? 'recheck' : 'develop',
+      fitScore: Math.max(Number(lead && lead.fitScore || 0), followup ? 50 : 70),
+      reason: 'local_codex_extension_template',
+      draft: professionalSalesDraft(lead || {}, ''),
+    };
     const acceptedFollowup = followup
       && decision
       && ['develop', 'recheck'].includes(String(decision.verdict || ''))
@@ -2656,17 +2643,9 @@ async function executeLeadAutomation(lead, options = {}) {
       };
     }
     let execution;
-    if (followup) {
-      try {
-        execution = await runOpenClawLead(lead, decision);
-      } catch (error) {
-        execution = await runCodexChromeLead(lead, decision, `openclaw_fallback_${error.code || 'error'}`, options);
-      }
-    } else {
-      execution = await runCodexChromeLead(lead, decision, 'codex_chrome_primary_no_autoglm', options);
-    }
+    execution = await runCodexChromeLead(lead, decision, 'codex_chrome_extension_only', options);
     lastGlmAutomationAt = Date.now();
-    return { ...execution, decision, glmModel: glm.model, followup };
+    return { ...execution, decision, executionLayer: 'Codex Chrome Extension only', glmModel: 'not_used', followup };
   } finally {
     if (!options.allowParallel) glmAutomationRunning = false;
   }
@@ -3102,6 +3081,10 @@ async function runDailyAutomationQueue(payload = {}) {
       // Exact target contract retained: const chromeOpen = await openWithCodexChrome(item.url)
       const result = await executeLeadAutomation(queueItemToLead(item), { ignoreCooldown: true, allowParallel: true, reuseTab: true });
       recordAutomationResult(item, result);
+      // Keep one customer per automation tab. Close it immediately after the
+      // result is recorded so long runs cannot accumulate Facebook/Instagram
+      // tabs and overload Chrome. User-owned tabs are never in this map.
+      await closeAutomationChromeTab(result && result.chromeOpen);
       const output = parseExecutionOutput(result && result.output);
       const sendStatus = output.sendStatus || result.sendStatus || '';
       if (SAME_DAY_DEVELOPMENT_STATUSES.has(sendStatus)

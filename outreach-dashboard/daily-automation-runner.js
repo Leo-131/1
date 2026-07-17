@@ -665,7 +665,12 @@ function classifyTask(task, context) {
     .sort((left, right) => validDate(right.timestamp) - validDate(left.timestamp))[0] || null;
   const isFacebook = String(task.platform || '').toLowerCase() === 'facebook';
   const isEmail = String(task.platform || '').toLowerCase() === 'email';
-  const verified = Boolean(url) && !(isFacebook && String(task.facebookStatus || '').includes('not_verified_do_not_use'));
+  const verified = Boolean(url)
+    && !(isFacebook && String(task.facebookStatus || '').includes('not_verified_do_not_use'))
+    // Facebook is executable only when discovery explicitly classified the
+    // destination as an official company page. Legacy/ambiguous profiles
+    // stay in verification instead of leaking personal accounts into DM.
+    && (!isFacebook || task.facebookStatus === 'verified_official_page_candidate');
   const agencyState = marketAgencyState(task);
 
   let action = 'review';

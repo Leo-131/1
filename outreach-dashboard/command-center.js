@@ -876,10 +876,26 @@
     const text = String(value || '').trim();
     if (text && !target[key]) target[key] = text;
   }
+  function contactEmailValue(record) {
+    const value = String(record && (record.contactEmail || record.publicEmail || record.email) || '').trim();
+    if (/^leo@flextailgear\.com$/i.test(value)) return '';
+    return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value) ? value : '';
+  }
+  function contactEmailStatus(record) {
+    const email = contactEmailValue(record);
+    if (!email) return '未发现有效公开邮箱';
+    const evidence = String(record.publicEmailStatus || record.contactNote || '').toLowerCase();
+    if (/official|verified|公开|官方|contact page|public/.test(evidence)) return '可建联候选 · 官方公开';
+    return '可建联候选 · 待核验';
+  }
   function mergeContactEnrichment(target, source) {
     if (!source) return target;
-    mergeTextField(target, 'publicEmail', source.publicEmail || source.contactEmail || source.emailFrom || source.email);
-    mergeTextField(target, 'contactEmail', source.contactEmail || source.publicEmail || source.emailFrom || source.email);
+    // emailFrom is FLEXTAIL's sender identity, never the customer's address.
+    const customerEmail = source.publicEmail || source.contactEmail || source.email;
+    if (!/^leo@flextailgear\.com$/i.test(String(customerEmail || '').trim())) {
+      mergeTextField(target, 'publicEmail', customerEmail);
+      mergeTextField(target, 'contactEmail', customerEmail);
+    }
     mergeTextField(target, 'publicEmailStatus', source.publicEmailStatus || (source.publicEmail || source.contactEmail ? 'Official/public contact email from Google discovery artifact.' : ''));
     mergeTextField(target, 'contactPhone', source.contactPhone || source.phone);
     mergeUrlField(target, 'vendorPortal', source.vendorPortal || source.contactUrl);
@@ -988,6 +1004,9 @@
       if (!task && !latest && !Object.keys(contactEnrichment).length) return record;
       const source = latest || task || {};
       const enriched = { ...record };
+      if (/^leo@flextailgear\.com$/i.test(String(enriched.publicEmail || '').trim())) enriched.publicEmail = '';
+      if (/^leo@flextailgear\.com$/i.test(String(enriched.contactEmail || '').trim())) enriched.contactEmail = '';
+      if (/^leo@flextailgear\.com$/i.test(String(enriched.email || '').trim())) enriched.email = '';
       mergeContactEnrichment(enriched, contactEnrichment);
       if (source.lastTouch) enriched.lastTouch = newerTimestamp(enriched.lastTouch || enriched.date, source.lastTouch);
       if (source.sendStatus) enriched.status = automationStatusLabel(source.sendStatus, source.evidence, source.duplicateRisk) || enriched.status;
@@ -1762,7 +1781,7 @@
         <input type="hidden" name="direction" value="${direction}">
         <button class="primary" type="submit">筛选</button><a class="cc-reset" href="${urlFor('customers')}">重置筛选</a>
       </form>
-      <div class="cc-table-wrap"><table class="cc-table"><thead><tr>${head('name', '姓名')}${head('company', '公司')}<th>职位</th>${head('country', '国家')}<th>平台</th>${head('status', '状态')}${head('fitScore', 'ICP')}${head('latestUpdate', '最近更新 / 触达')}</tr></thead><tbody>${rows.map(({ record, index }) => {
+      <div class="cc-table-wrap"><table class="cc-table"><thead><tr>${head('name', '姓名')}${head('company', '公司')}<th>职位</th>${head('country', '国家')}<th>平台</th><th>可建联 Email</th>${head('status', '状态')}${head('fitScore', 'ICP')}${head('latestUpdate', '最近更新 / 触达')}</tr></thead><tbody>${rows.map(({ record, index }) => {
         const key = recordKey(record, index);
         const qualified = shouldRetainWithoutStrike(record);
         const linkClass = qualified ? '' : ' class="cc-strike-link"';
@@ -1771,7 +1790,11 @@
         const customerLinkAttrs = ` href="${profileHref}"`;
         const archiveLink = target ? `<br><a class="cc-sub-link" href="${esc(target)}" target="_blank" rel="noopener">Verified channel</a>` : '';
         const reviewNote = customerReviewNote(record);
-        return `<tr class="${qualified ? '' : 'cc-low-icp'}"><td><a${linkClass}${customerLinkAttrs} title="${esc(reviewNote)}">${esc(record.name)}</a>${archiveLink}</td><td>${esc(record.company)}<br><span class="cc-chip ${qualified ? 'green' : 'amber'}" title="${esc(reviewNote)}">${esc(reviewNote)}</span></td><td>${esc(record.role)}</td><td>${esc(normalizedCountry(record))}</td><td>${esc(record.platform)}</td><td><span class="cc-chip">${esc(record.status)}</span></td><td title="ICP score, bounded to 0-100">${icpScore(record)}</td><td>${esc(recordUpdatedAt(record))}</td></tr>`;
+        const email = contactEmailValue(record);
+        const emailCell = email
+          ? `<a class="cc-sub-link" href="mailto:${esc(email)}">${esc(email)}</a><br><span class="cc-chip green">${esc(contactEmailStatus(record))}</span>`
+          : `<span class="cc-chip amber">${esc(contactEmailStatus(record))}</span>`;
+        return `<tr class="${qualified ? '' : 'cc-low-icp'}"><td><a${linkClass}${customerLinkAttrs} title="${esc(reviewNote)}">${esc(record.name)}</a>${archiveLink}</td><td>${esc(record.company)}<br><span class="cc-chip ${qualified ? 'green' : 'amber'}" title="${esc(reviewNote)}">${esc(reviewNote)}</span></td><td>${esc(record.role)}</td><td>${esc(normalizedCountry(record))}</td><td>${esc(record.platform)}</td><td>${emailCell}</td><td><span class="cc-chip">${esc(record.status)}</span></td><td title="ICP score, bounded to 0-100">${icpScore(record)}</td><td>${esc(recordUpdatedAt(record))}</td></tr>`;
       }).join('')}</tbody></table>${rows.length ? '' : '<div class="cc-empty">没有匹配客户，请重置或调整筛选条件</div>'}</div>`;
   }
   function countryGeoCode(country) {
