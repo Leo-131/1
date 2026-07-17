@@ -2377,6 +2377,9 @@ function instagramFallbackTarget(lead = {}) {
   try {
     const url = new URL(String(candidate));
     if (url.protocol !== 'https:' || !/instagram\.com$/i.test(url.hostname)) return '';
+    const expected = String(lead.company || lead.name || '').toLowerCase().replace(/[^a-z0-9]+/g, '');
+    const handle = String(url.pathname.replace(/^\/+/, '').split('/')[0] || '').toLowerCase().replace(/[^a-z0-9]+/g, '');
+    if (expected && handle && !handle.includes(expected) && !expected.includes(handle)) return '';
     return url.href;
   } catch {
     return '';
@@ -2649,6 +2652,17 @@ function hasNoSafeMessageButton(item = {}) {
   return /profile_valid_no_message_button|profile_opened_no_message_button|no_message_button|no safe message button/i.test(text);
 }
 
+function hasVerifiedInstagramFallback(item = {}) {
+  const candidate = item.alternateChannels && item.alternateChannels.instagram;
+  if (!candidate) return false;
+  try {
+    const url = new URL(String(candidate));
+    return url.protocol === 'https:' && /instagram\.com$/i.test(url.hostname);
+  } catch {
+    return false;
+  }
+}
+
 function socialPriorityRank(item = {}) {
   const text = [item.platform, item.id, item.url, item.targetUrl, item.verifiedTargetUrl].filter(Boolean).join(' ').toLowerCase();
   if (/\blinkedin\b|linkedin\.com/.test(text)) return 320;
@@ -2674,7 +2688,7 @@ function executableQueueCandidates(items = [], options = {}) {
   return (Array.isArray(items) ? items : [])
     .filter(item => executableActions.has(item.action))
     .filter(item => item.url || item.contactUrl || item.website)
-    .filter(item => !hasNoSafeMessageButton(item))
+    .filter(item => !hasNoSafeMessageButton(item) || hasVerifiedInstagramFallback(item))
     .filter(item => allowWebsiteContact || !isWebsiteContactQueueItem(item))
     .filter(item => !blockingAutomationResultFor(item))
     .sort(developmentPriorityCompare);

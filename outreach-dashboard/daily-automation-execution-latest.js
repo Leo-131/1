@@ -30,8 +30,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
         "engine": "codex-chrome-extension-cdp",
         "port": 9224,
         "targetUrl": "https://www.instagram.com/moosejawmadness/",
-        "tabId": "05500B6FC69A83BD1E8E1CE6CBC2FEF6",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/05500B6FC69A83BD1E8E1CE6CBC2FEF6",
+        "tabId": "733019049AA9B43CA16966A9651A6D22",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/733019049AA9B43CA16966A9651A6D22",
         "title": "(@moosejawmadness) · Instagram 照片和视频"
       },
       "result": {
@@ -45,8 +45,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
           "engine": "codex-chrome-extension-cdp",
           "port": 9224,
           "targetUrl": "https://www.instagram.com/moosejawmadness/",
-          "tabId": "05500B6FC69A83BD1E8E1CE6CBC2FEF6",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/05500B6FC69A83BD1E8E1CE6CBC2FEF6",
+          "tabId": "733019049AA9B43CA16966A9651A6D22",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/733019049AA9B43CA16966A9651A6D22",
           "title": "(@moosejawmadness) · Instagram 照片和视频"
         },
         "sendStatus": "failed_open",
@@ -77,8 +77,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
         "engine": "codex-chrome-extension-cdp",
         "port": 9224,
         "targetUrl": "https://www.instagram.com/outdoorplay/",
-        "tabId": "AA17BE9C3A95D5E22E002616D3B2CDFA",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/AA17BE9C3A95D5E22E002616D3B2CDFA",
+        "tabId": "FA194C60A2FB727F15EFB542FE1701D9",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/FA194C60A2FB727F15EFB542FE1701D9",
         "title": "Suzette Anderson (@outdoorplay) · Instagram 照片和视频"
       },
       "result": {
@@ -92,8 +92,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
           "engine": "codex-chrome-extension-cdp",
           "port": 9224,
           "targetUrl": "https://www.instagram.com/outdoorplay/",
-          "tabId": "AA17BE9C3A95D5E22E002616D3B2CDFA",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/AA17BE9C3A95D5E22E002616D3B2CDFA",
+          "tabId": "FA194C60A2FB727F15EFB542FE1701D9",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/FA194C60A2FB727F15EFB542FE1701D9",
           "title": "Suzette Anderson (@outdoorplay) · Instagram 照片和视频"
         },
         "sendStatus": "failed_open",
@@ -124,8 +124,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
         "engine": "codex-chrome-extension-cdp",
         "port": 9224,
         "targetUrl": "https://www.instagram.com/riversportsoutfitters/",
-        "tabId": "6D122785FC83E592CCD0F46EBECFED26",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/6D122785FC83E592CCD0F46EBECFED26",
+        "tabId": "EE94B2FB449920292A3355E6D34FF65A",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/EE94B2FB449920292A3355E6D34FF65A",
         "title": "(@riversportsoutfitters) · Instagram 照片和视频"
       },
       "result": {
@@ -139,8 +139,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
           "engine": "codex-chrome-extension-cdp",
           "port": 9224,
           "targetUrl": "https://www.instagram.com/riversportsoutfitters/",
-          "tabId": "6D122785FC83E592CCD0F46EBECFED26",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/6D122785FC83E592CCD0F46EBECFED26",
+          "tabId": "EE94B2FB449920292A3355E6D34FF65A",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/EE94B2FB449920292A3355E6D34FF65A",
           "title": "(@riversportsoutfitters) · Instagram 照片和视频"
         },
         "sendStatus": "failed_open",
@@ -171,8 +171,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
         "engine": "codex-chrome-extension-cdp",
         "port": 9224,
         "targetUrl": "https://www.instagram.com/rockcreek/",
-        "tabId": "CC63CAD4076FD5EB6C332FE4AF76AC83",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/CC63CAD4076FD5EB6C332FE4AF76AC83",
+        "tabId": "EB3B5D3ACBD27C0ADFEA7A5163E51E18",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/EB3B5D3ACBD27C0ADFEA7A5163E51E18",
         "title": "Rock Creek Rocks (@rockcreek) · Instagram 照片和视频"
       },
       "result": {
@@ -186,8 +186,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
           "engine": "codex-chrome-extension-cdp",
           "port": 9224,
           "targetUrl": "https://www.instagram.com/rockcreek/",
-          "tabId": "CC63CAD4076FD5EB6C332FE4AF76AC83",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/CC63CAD4076FD5EB6C332FE4AF76AC83",
+          "tabId": "EB3B5D3ACBD27C0ADFEA7A5163E51E18",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/EB3B5D3ACBD27C0ADFEA7A5163E51E18",
           "title": "Rock Creek Rocks (@rockcreek) · Instagram 照片和视频"
         },
         "sendStatus": "failed_open",
@@ -220,8 +220,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
         "engine": "codex-chrome-extension-cdp",
         "port": 9224,
         "targetUrl": "https://www.instagram.com/moosejawmadness/",
-        "tabId": "05500B6FC69A83BD1E8E1CE6CBC2FEF6",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/05500B6FC69A83BD1E8E1CE6CBC2FEF6",
+        "tabId": "733019049AA9B43CA16966A9651A6D22",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/733019049AA9B43CA16966A9651A6D22",
         "title": "(@moosejawmadness) · Instagram 照片和视频"
       },
       "result": {
@@ -235,8 +235,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
           "engine": "codex-chrome-extension-cdp",
           "port": 9224,
           "targetUrl": "https://www.instagram.com/moosejawmadness/",
-          "tabId": "05500B6FC69A83BD1E8E1CE6CBC2FEF6",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/05500B6FC69A83BD1E8E1CE6CBC2FEF6",
+          "tabId": "733019049AA9B43CA16966A9651A6D22",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/733019049AA9B43CA16966A9651A6D22",
           "title": "(@moosejawmadness) · Instagram 照片和视频"
         },
         "sendStatus": "failed_open",
@@ -267,8 +267,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
         "engine": "codex-chrome-extension-cdp",
         "port": 9224,
         "targetUrl": "https://www.instagram.com/outdoorplay/",
-        "tabId": "AA17BE9C3A95D5E22E002616D3B2CDFA",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/AA17BE9C3A95D5E22E002616D3B2CDFA",
+        "tabId": "FA194C60A2FB727F15EFB542FE1701D9",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/FA194C60A2FB727F15EFB542FE1701D9",
         "title": "Suzette Anderson (@outdoorplay) · Instagram 照片和视频"
       },
       "result": {
@@ -282,8 +282,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
           "engine": "codex-chrome-extension-cdp",
           "port": 9224,
           "targetUrl": "https://www.instagram.com/outdoorplay/",
-          "tabId": "AA17BE9C3A95D5E22E002616D3B2CDFA",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/AA17BE9C3A95D5E22E002616D3B2CDFA",
+          "tabId": "FA194C60A2FB727F15EFB542FE1701D9",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/FA194C60A2FB727F15EFB542FE1701D9",
           "title": "Suzette Anderson (@outdoorplay) · Instagram 照片和视频"
         },
         "sendStatus": "failed_open",
@@ -314,8 +314,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
         "engine": "codex-chrome-extension-cdp",
         "port": 9224,
         "targetUrl": "https://www.instagram.com/riversportsoutfitters/",
-        "tabId": "6D122785FC83E592CCD0F46EBECFED26",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/6D122785FC83E592CCD0F46EBECFED26",
+        "tabId": "EE94B2FB449920292A3355E6D34FF65A",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/EE94B2FB449920292A3355E6D34FF65A",
         "title": "(@riversportsoutfitters) · Instagram 照片和视频"
       },
       "result": {
@@ -329,8 +329,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
           "engine": "codex-chrome-extension-cdp",
           "port": 9224,
           "targetUrl": "https://www.instagram.com/riversportsoutfitters/",
-          "tabId": "6D122785FC83E592CCD0F46EBECFED26",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/6D122785FC83E592CCD0F46EBECFED26",
+          "tabId": "EE94B2FB449920292A3355E6D34FF65A",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/EE94B2FB449920292A3355E6D34FF65A",
           "title": "(@riversportsoutfitters) · Instagram 照片和视频"
         },
         "sendStatus": "failed_open",
@@ -361,8 +361,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
         "engine": "codex-chrome-extension-cdp",
         "port": 9224,
         "targetUrl": "https://www.instagram.com/rockcreek/",
-        "tabId": "CC63CAD4076FD5EB6C332FE4AF76AC83",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/CC63CAD4076FD5EB6C332FE4AF76AC83",
+        "tabId": "EB3B5D3ACBD27C0ADFEA7A5163E51E18",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/EB3B5D3ACBD27C0ADFEA7A5163E51E18",
         "title": "Rock Creek Rocks (@rockcreek) · Instagram 照片和视频"
       },
       "result": {
@@ -376,8 +376,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
           "engine": "codex-chrome-extension-cdp",
           "port": 9224,
           "targetUrl": "https://www.instagram.com/rockcreek/",
-          "tabId": "CC63CAD4076FD5EB6C332FE4AF76AC83",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/CC63CAD4076FD5EB6C332FE4AF76AC83",
+          "tabId": "EB3B5D3ACBD27C0ADFEA7A5163E51E18",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/EB3B5D3ACBD27C0ADFEA7A5163E51E18",
           "title": "Rock Creek Rocks (@rockcreek) · Instagram 照片和视频"
         },
         "sendStatus": "failed_open",
@@ -1432,12 +1432,12 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     "stderr": "",
     "error": "",
     "visibility": {
-      "updatedAt": "2026-07-17T02:04:32.566Z",
+      "updatedAt": "2026-07-17T02:44:30.918Z",
       "source": "main-refreshDailyAutomationArtifacts",
       "runDate": "2026-07-17",
-      "artifactGeneratedAt": "2026-07-17T02:04:31.394Z",
-      "executionGeneratedAt": "2026-07-16T23:05:02.739Z",
-      "githubSyncUpdatedAt": "2026-07-16T23:05:25.238Z",
+      "artifactGeneratedAt": "2026-07-17T02:44:29.713Z",
+      "executionGeneratedAt": "2026-07-17T02:04:33.361Z",
+      "githubSyncUpdatedAt": "2026-07-17T02:04:52.667Z",
       "counts": {
         "dailyQueue": 82,
         "googleDiscovered": 58,
@@ -1489,5 +1489,5 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       }
     }
   },
-  "completedAt": "2026-07-17T02:04:33.361Z"
+  "completedAt": "2026-07-17T02:44:31.614Z"
 };

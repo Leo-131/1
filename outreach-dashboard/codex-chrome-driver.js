@@ -822,7 +822,9 @@ function identityCheckExpression(expectedCompany, targetUrl) {
     const emptyPersonalSignal = /0\\s*(posts?|帖子)[\\s\\S]{0,80}0\\s*(followers|粉丝)[\\s\\S]{0,80}0\\s*(following|关注)/i.test(visible);
     const companyOk = expectedCompact && visibleCompact.includes(expectedCompact);
     const pathOk = pathCompact && visibleCompact.includes(pathCompact);
-    const exactSocialUrlOk = isSocial && pathCompact.length >= 4 && locationPathCompact === pathCompact;
+    const handleMatchesExpected = expectedCompact && pathCompact
+      && (pathCompact.includes(expectedCompact) || expectedCompact.includes(pathCompact));
+    const exactSocialUrlOk = isSocial && pathCompact.length >= 4 && locationPathCompact === pathCompact && handleMatchesExpected;
     const staffOk = tokenHits >= 1 && employeeSignal;
     const socialCompanyOk = companyOk || (tokenHits >= Math.min(2, expectedTokens.length) && businessSignal);
     const ok = !expectedCompact || (isSocial

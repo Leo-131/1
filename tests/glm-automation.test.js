@@ -116,7 +116,7 @@ test('no-message social profiles are blocked from automatic execution', () => {
   assert.equal(classified.reason, 'profile_valid_no_message_button');
   assert.equal(dailyRunner.isActivePotentialCandidate(classified), false);
   assert.ok(mainSource.includes('function hasNoSafeMessageButton'));
-  assert.ok(mainSource.includes('.filter(item => !hasNoSafeMessageButton(item))'));
+  assert.ok(mainSource.includes('.filter(item => !hasNoSafeMessageButton(item) || hasVerifiedInstagramFallback(item))'));
 });
 
 test('unsubmitted website preparation does not block a verified social fallback', () => {
@@ -705,6 +705,7 @@ test('Codex Chrome execution can auto-send approved social outreach with confirm
   assert.ok(mainSource.includes('facebookNeedsInstagram'));
   assert.ok(mainSource.includes('skipInstagramFallback'));
   assert.ok(mainSource.includes('instagramFallbackTarget'));
+  assert.ok(mainSource.includes('hasVerifiedInstagramFallback'));
   assert.ok(mainSource.includes("runCodexChromeDriver('prepare-social-draft'"));
   assert.ok(mainSource.includes('autoSend: true'));
   assert.ok(mainSource.includes('replaceExistingDraft: true'));
@@ -746,6 +747,8 @@ test('Codex Chrome execution can auto-send approved social outreach with confirm
   assert.ok(chromeDriverSource.includes("!item.label.includes('comment')"));
   assert.ok(chromeDriverSource.includes("return JSON.stringify(null);"));
   assert.ok(chromeDriverSource.includes('facebook_profile_no_message_button'));
+  assert.ok(chromeDriverSource.includes('handleMatchesExpected'));
+  assert.ok(mainSource.includes("!handle.includes(expected) && !expected.includes(handle)"));
   assert.ok(chromeDriverSource.includes('messageUnavailable: true'));
   assert.ok(chromeDriverSource.includes("platform === 'facebook' && !profileZone.length"));
   assert.ok(chromeDriverSource.includes('follow_already_active'));
