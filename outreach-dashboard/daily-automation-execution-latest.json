@@ -1,7 +1,7 @@
 {
   "ok": false,
   "error": "auto-run-daily timed out after 300000ms",
-  "completedAt": "2026-07-17T06:29:59.554Z",
+  "completedAt": "2026-07-17T08:06:05.296Z",
   "executionPhase": "browser_execution_timeout",
   "chromeOpened": true,
   "customerDevelopmentPerformed": false,
@@ -9,30 +9,30 @@
   "realDevelopmentCount": 0,
   "reportingVerdict": "no_customer_development_performed",
   "progress": {
-    "startedAt": "2026-07-17T06:25:02.056Z",
+    "startedAt": "2026-07-17T08:01:07.823Z",
     "queueDate": "2026-07-17",
     "queueSource": "dailyQueue",
     "dailyQueueCount": 83,
-    "candidateCount": 38,
-    "executableCount": 38,
-    "skippedCount": 90,
-    "limit": 100,
+    "candidateCount": 37,
+    "executableCount": 4,
+    "skippedCount": 158,
+    "limit": 4,
     "currentIndex": 4,
     "currentItem": {
-      "id": "google-customer-river-sports-outfitters-facebook",
-      "company": "River Sports Outfitters",
+      "id": "google-customer-rock-creek-facebook",
+      "company": "Rock/Creek",
       "action": "develop",
       "platform": "facebook",
-      "targetUrl": "https://www.facebook.com/riversportsoutfitters"
+      "targetUrl": "https://www.facebook.com/rockcreek"
     },
     "completedCount": 3,
     "confirmedSendCount": 0,
     "preparedWebsiteCount": 0,
     "lastResult": {
-      "id": "google-customer-outdoorplay-facebook",
-      "company": "Outdoorplay",
-      "sendStatus": "failed_open",
-      "evidence": "facebook_message_button_clicked_composer_not_found"
+      "id": "google-customer-river-sports-outfitters-facebook",
+      "company": "River Sports Outfitters",
+      "sendStatus": "approval_pending",
+      "evidence": "driver_error: Command failed: C:\\Program Files\\nodejs\\node.exe E:\\New project\\outreach-dashboard\\codex-chrome-driver.js prepare-social-draft {\"port\":9224,\"tabId\":\"C8FA56AFD556CC221E51A2FED261F72F\",\"targetUrl\":\"https://www.facebook.com/riversportsoutfitters\",\"expectedCompany\":\"River Sports Outfitters\",\"draft\":\"Hi River Sports Outfitters team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a retail/category buyer, the strongest fit is assortment fit, new SKU pipeline, price-tier coverage, and proven consumer demand; your verified outdoor, camping and travel retail social refill channel focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the category buyer or vendor-review owner for a short intro video meeting?\",\"autoSend\":true,\"autoEngage\":true,\"engagementComment\":\"Great outdoor checklist. Useful reminder for hikers preparing a complete, lightweight kit.\",\"replaceExistingDraft\":true}\n"
     }
   },
   "blockerSummary": [
@@ -41,11 +41,11 @@
       "count": 1,
       "examples": [
         {
-          "id": "google-customer-river-sports-outfitters-facebook",
-          "company": "River Sports Outfitters",
+          "id": "google-customer-rock-creek-facebook",
+          "company": "Rock/Creek",
           "action": "develop",
           "platform": "facebook",
-          "targetUrl": "https://www.facebook.com/riversportsoutfitters"
+          "targetUrl": "https://www.facebook.com/rockcreek"
         }
       ]
     }
