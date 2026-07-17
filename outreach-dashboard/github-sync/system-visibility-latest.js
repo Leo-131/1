@@ -1,14 +1,13 @@
 window.SYSTEM_VISIBILITY_LATEST = {
-  "updatedAt": "2026-07-17T09:57:16.088Z",
-  "source": "sync-local-data-to-github-writeSyncStatus",
+  "updatedAt": "2026-07-17T09:58:21.234Z",
+  "source": "daily-automation-runner",
   "runDate": "2026-07-17",
-  "artifactGeneratedAt": "2026-07-17T09:55:16.474Z",
-  "executionGeneratedAt": "2026-07-17T09:55:18.962Z",
-  "githubSyncUpdatedAt": "2026-07-17T09:57:15.906Z",
+  "artifactGeneratedAt": "2026-07-17T09:58:20.001Z",
   "counts": {
+    "visibleTodayQueue": 26,
     "dailyQueue": 83,
-    "googleDiscovered": 59,
-    "websiteContact": 4,
+    "googleDiscovered": 26,
+    "websiteContact": 3,
     "cooldownQueue": 30,
     "scheduledLater": 0
   },
@@ -20,23 +19,9 @@ window.SYSTEM_VISIBILITY_LATEST = {
     "customerDetail",
     "seo",
     "automationAudit",
-    "settings",
     "rightRail",
     "githubSyncStatus"
   ],
-  "refreshedArtifacts": [
-    "daily-automation-latest",
-    "daily-automation-execution-latest",
-    "google-lead-discovery-latest",
-    "github-sync/latest-status",
-    "system-visibility-latest"
-  ],
-  "dailyQueueGoal": {
-    "target": 100,
-    "potentialPool": 83,
-    "refillNeeded": 17,
-    "reached": false
-  },
   "contactEnrichment": {
     "enabled": true,
     "sources": [
@@ -53,5 +38,11 @@ window.SYSTEM_VISIBILITY_LATEST = {
       "contactSearchUrl",
       "website"
     ]
+  },
+  "dailyQueueGoal": {
+    "target": 100,
+    "potentialPool": 83,
+    "refillNeeded": 17,
+    "reached": false
   }
 };
