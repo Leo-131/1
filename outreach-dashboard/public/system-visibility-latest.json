@@ -1,13 +1,14 @@
 {
-  "updatedAt": "2026-07-17T09:58:21.234Z",
-  "source": "daily-automation-runner",
+  "updatedAt": "2026-07-17T09:58:35.439Z",
+  "source": "sync-local-data-to-github-writeSyncStatus",
   "runDate": "2026-07-17",
   "artifactGeneratedAt": "2026-07-17T09:58:20.001Z",
+  "executionGeneratedAt": "2026-07-17T09:55:18.962Z",
+  "githubSyncUpdatedAt": "2026-07-17T09:58:35.318Z",
   "counts": {
-    "visibleTodayQueue": 26,
     "dailyQueue": 83,
-    "googleDiscovered": 26,
-    "websiteContact": 3,
+    "googleDiscovered": 59,
+    "websiteContact": 4,
     "cooldownQueue": 30,
     "scheduledLater": 0
   },
@@ -19,9 +20,23 @@
     "customerDetail",
     "seo",
     "automationAudit",
+    "settings",
     "rightRail",
     "githubSyncStatus"
   ],
+  "refreshedArtifacts": [
+    "daily-automation-latest",
+    "daily-automation-execution-latest",
+    "google-lead-discovery-latest",
+    "github-sync/latest-status",
+    "system-visibility-latest"
+  ],
+  "dailyQueueGoal": {
+    "target": 100,
+    "potentialPool": 83,
+    "refillNeeded": 17,
+    "reached": false
+  },
   "contactEnrichment": {
     "enabled": true,
     "sources": [
@@ -38,11 +53,5 @@
       "contactSearchUrl",
       "website"
     ]
-  },
-  "dailyQueueGoal": {
-    "target": 100,
-    "potentialPool": 83,
-    "refillNeeded": 17,
-    "reached": false
   }
 }
