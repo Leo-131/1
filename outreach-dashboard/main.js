@@ -820,6 +820,38 @@ async function closeAutomationChromeTab(chromeOpen) {
   return closed;
 }
 
+async function openChromeTargetWithRecovery(port, targetUrl) {
+  const endpoint = `http://127.0.0.1:${port}/json/new?${encodeURIComponent(targetUrl)}`;
+  let lastError = null;
+  for (let attempt = 0; attempt < 3; attempt += 1) {
+    try {
+      const opened = await httpJson(endpoint, 3500, 'PUT');
+      if (opened && opened.id && opened.webSocketDebuggerUrl) return opened;
+      lastError = new Error(`Chrome returned an invalid target for ${targetUrl}`);
+    } catch (error) {
+      lastError = error;
+      await sleep(400 * (attempt + 1));
+    }
+  }
+
+  // Some Chrome builds intermittently hang on /json/new while an existing
+  // blank tab is still usable. Reuse only an actually blank/new-tab target.
+  const tabs = await httpJson(`http://127.0.0.1:${port}/json/list`, 2500).catch(() => []);
+  const blank = Array.isArray(tabs) && tabs.find(item => item && item.id && item.webSocketDebuggerUrl && (
+    item.url === 'about:blank' || /^chrome:\/\/newtab\/?$/i.test(item.url || '')
+  ));
+  if (blank) {
+    try {
+      await cdpCommand(blank.webSocketDebuggerUrl, 'Page.navigate', { url: targetUrl }, 5000);
+      await sleep(900);
+      return { ...blank, url: targetUrl };
+    } catch (error) {
+      lastError = error;
+    }
+  }
+  throw lastError || new Error(`Unable to open Chrome target: ${targetUrl}`);
+}
+
 async function openWithCodexChrome(url, options = {}) {
   const parsed = validateExternalUrl(url);
   const port = await ensureCodexChromePort();
@@ -840,7 +872,22 @@ async function openWithCodexChrome(url, options = {}) {
       automationReusableChromeTab = null;
     }
   }
-  if (!opened) opened = await httpJson(`http://127.0.0.1:${port}/json/new?${encodeURIComponent(parsed.toString())}`, 2500, 'PUT');
+  if (!opened) {
+    try {
+      opened = await openChromeTargetWithRecovery(port, parsed.toString());
+    } catch (error) {
+      automationReusableChromeTab = null;
+      return {
+        ok: false,
+        engine: 'codex-chrome-extension-cdp',
+        port,
+        targetUrl: parsed.toString(),
+        status: 'failed_open',
+        error: error.message || String(error),
+        evidence: 'chrome_target_open_timeout_recovered_or_exhausted',
+      };
+    }
+  }
   if (options.automationOwned && opened && opened.id) automationOwnedChromeTabs.set(opened.id, port);
   if (options.reuseTab && opened && opened.id) automationReusableChromeTab = { port, tabId: opened.id };
   await activateChromeTarget(port, opened);
