@@ -315,7 +315,7 @@ function profileMessageButtonExpression(platform, keywords) {
       const rect = el && el.getBoundingClientRect && el.getBoundingClientRect();
       return Boolean(rect && rect.width > 0 && rect.height > 0 && rect.bottom > 0 && rect.top < window.innerHeight);
     };
-    const controls = Array.from(document.querySelectorAll('main button,main a,main div[role="button"],main span[role="button"],header button,header a,header div[role="button"],section button,section a,section div[role="button"],article button,article a,article div[role="button"]'))
+    const controls = Array.from(document.querySelectorAll('button,a,[role="button"]'))
       .filter(visible)
       .map((el) => {
         const rect = el.getBoundingClientRect();

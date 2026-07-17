@@ -747,6 +747,7 @@ test('Codex Chrome execution can auto-send approved social outreach with confirm
   assert.ok(chromeDriverSource.includes("!item.label.includes('comment')"));
   assert.ok(chromeDriverSource.includes("return JSON.stringify(null);"));
   assert.ok(chromeDriverSource.includes('facebook_profile_no_message_button'));
+  assert.ok(chromeDriverSource.includes("querySelectorAll('button,a,[role=\"button\"]')"));
   assert.ok(chromeDriverSource.includes('handleMatchesExpected'));
   assert.ok(mainSource.includes("!handle.includes(expected) && !expected.includes(handle)"));
   assert.ok(chromeDriverSource.includes('messageUnavailable: true'));
