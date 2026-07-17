@@ -792,6 +792,7 @@ async function ensureCodexChromePort() {
 }
 
 const automationOwnedChromeTabs = new Map();
+let automationReusableChromeTab = null;
 
 async function closeChromeTarget(port, tabId) {
   if (!port || !tabId) return false;
@@ -812,6 +813,7 @@ async function closeAutomationTabsOpenedAfter(existingTabIds = new Set()) {
 
 async function closeAutomationChromeTab(chromeOpen) {
   if (!chromeOpen || !chromeOpen.tabId) return false;
+  if (automationReusableChromeTab && automationReusableChromeTab.tabId === chromeOpen.tabId) return false;
   const port = Number(chromeOpen.port || automationOwnedChromeTabs.get(chromeOpen.tabId) || 0);
   const closed = await closeChromeTarget(port, chromeOpen.tabId);
   automationOwnedChromeTabs.delete(chromeOpen.tabId);
@@ -825,8 +827,22 @@ async function openWithCodexChrome(url, options = {}) {
     await shell.openExternal(parsed.toString());
     return { ok: true, engine: 'shell-fallback', targetUrl: parsed.toString() };
   }
-  const opened = await httpJson(`http://127.0.0.1:${port}/json/new?${encodeURIComponent(parsed.toString())}`, 2500, 'PUT');
+  let opened = null;
+  if (options.reuseTab && automationReusableChromeTab && automationReusableChromeTab.port === port) {
+    const tabs = await httpJson(`http://127.0.0.1:${port}/json/list`, 2500).catch(() => []);
+    opened = Array.isArray(tabs)
+      ? tabs.find(item => item && item.id === automationReusableChromeTab.tabId)
+      : null;
+    if (opened && opened.webSocketDebuggerUrl) {
+      await cdpCommand(opened.webSocketDebuggerUrl, 'Page.navigate', { url: parsed.toString() }, 5000);
+      await sleep(1200);
+    } else {
+      automationReusableChromeTab = null;
+    }
+  }
+  if (!opened) opened = await httpJson(`http://127.0.0.1:${port}/json/new?${encodeURIComponent(parsed.toString())}`, 2500, 'PUT');
   if (options.automationOwned && opened && opened.id) automationOwnedChromeTabs.set(opened.id, port);
+  if (options.reuseTab && opened && opened.id) automationReusableChromeTab = { port, tabId: opened.id };
   await activateChromeTarget(port, opened);
   const inspected = await inspectOpenedChromeTab(opened, parsed.toString());
   if (inspected.unavailable) {
@@ -2331,7 +2347,7 @@ async function runOpenClawLead(lead, decision, options = {}) {
   if (!target.ok) return target;
   const config = loadGlmConfig();
   if (!config || !config.apiKey) return { ok: false, needsConfig: true, error: 'GLM API key is not configured' };
-  const chromeOpen = await openWithCodexChrome(target.targetUrl, { automationOwned: true });
+  const chromeOpen = await openWithCodexChrome(target.targetUrl, { automationOwned: true, reuseTab: Boolean(options.reuseTab) });
   if (!chromeOpen.ok) return { ...chromeOpen, sendStatus: 'failed_open' };
   const sessionKey = `agent:main:outreach-${String(lead.taskId || lead.name || Date.now()).replace(/[^a-zA-Z0-9_.:-]/g, '-').slice(0, 80)}`;
   // Legacy compatibility marker: followup_prepare_no_duplicate_send.
@@ -2414,7 +2430,7 @@ async function runCodexChromeLead(lead, decision, mode = 'codex_chrome_prepare',
       fallbackLead,
       decision,
       `${mode}_instagram_fallback`,
-      { skipInstagramFallback: true },
+      { skipInstagramFallback: true, reuseTab: Boolean(options.reuseTab) },
     );
     return {
       ...fallbackResult,
@@ -2597,10 +2613,10 @@ async function executeLeadAutomation(lead, options = {}) {
       try {
         execution = await runOpenClawLead(lead, decision);
       } catch (error) {
-        execution = await runCodexChromeLead(lead, decision, `openclaw_fallback_${error.code || 'error'}`);
+        execution = await runCodexChromeLead(lead, decision, `openclaw_fallback_${error.code || 'error'}`, options);
       }
     } else {
-      execution = await runCodexChromeLead(lead, decision, 'codex_chrome_primary_no_autoglm');
+      execution = await runCodexChromeLead(lead, decision, 'codex_chrome_primary_no_autoglm', options);
     }
     lastGlmAutomationAt = Date.now();
     return { ...execution, decision, glmModel: glm.model, followup };
@@ -3037,7 +3053,7 @@ async function runDailyAutomationQueue(payload = {}) {
         };
       }
       // Exact target contract retained: const chromeOpen = await openWithCodexChrome(item.url)
-      const result = await executeLeadAutomation(queueItemToLead(item), { ignoreCooldown: true, allowParallel: true });
+      const result = await executeLeadAutomation(queueItemToLead(item), { ignoreCooldown: true, allowParallel: true, reuseTab: true });
       recordAutomationResult(item, result);
       const output = parseExecutionOutput(result && result.output);
       const sendStatus = output.sendStatus || result.sendStatus || '';

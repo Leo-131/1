@@ -812,6 +812,8 @@ test('daily execution is serial and can process a priority batch per run', () =>
   assert.ok(mainSource.includes('const limit = requestedLimit'));
   assert.ok(mainSource.includes('DEFAULT_DAILY_SOCIAL_EXECUTION_LIMIT = 4'));
   assert.ok(mainSource.includes('KEEP_AUTOMATION_TABS_VISIBLE'));
+  assert.ok(mainSource.includes('automationReusableChromeTab'));
+  assert.ok(mainSource.includes('reuseTab: true'));
   assert.ok(mainSource.includes('isFollowupLead(lead)'));
   assert.ok(mainSource.includes('process.env.DAILY_EXECUTE_LIMIT || DEFAULT_DAILY_SOCIAL_EXECUTION_LIMIT'));
   assert.ok(mainSource.includes('executableQueueCandidates(latest.dailyQueue, { allowWebsiteContact: false })'));
