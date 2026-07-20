@@ -4108,4 +4108,27 @@ window.AUTONOMOUS_OUTREACH_RESULTS = [
     "draft": "Hi Sportler team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a retail/category buyer, the strongest fit is assortment fit, new SKU pipeline, price-tier coverage, and proven consumer demand; your verified outdoor, camping and travel retail social refill channel focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the category buyer or vendor-review owner for a short intro video meeting?",
     "subject": ""
   }
+  ,
+  {
+    "task_id": "google-customer-wild-earth-facebook",
+    "approval_version": 1,
+    "status": "sent_confirmed",
+    "agent": "codex-chrome-extension-live",
+    "timestamp": "2026-07-20T05:41:00.000Z",
+    "target_url": "https://www.facebook.com/wildearth",
+    "evidence": "facebook_identity_verified;dm_send_clicked;composer_cleared;message_sent_alert;recipient_auto_reply_received",
+    "draft": "Hi Wild Earth team - Leo from FLEXTAIL here. Your outdoor audience and adventure community look highly relevant for our compact pumps, camping lights and portable power products. Could you please route this to the relevant partnerships or buying contact? I can share a concise line sheet, wholesale pricing and sample options by email or WhatsApp. Best, Leo",
+    "subject": ""
+  },
+  {
+    "task_id": "google-customer-addnature-facebook",
+    "approval_version": 1,
+    "status": "sent_confirmed",
+    "agent": "codex-chrome-extension-live",
+    "timestamp": "2026-07-20T05:42:00.000Z",
+    "target_url": "https://www.facebook.com/addnature",
+    "evidence": "facebook_identity_verified;start_conversation_completed;dm_send_clicked;composer_cleared;message_sent_alert;recipient_auto_reply_received;public_email_discovered:info@addnature.com",
+    "draft": "Hi Addnature team - Leo from FLEXTAIL here. Your outdoor retail community looks highly relevant for our compact pumps, camping lights and portable power products. Could you please route this to your outdoor category buyer or vendor team? I can share a concise line sheet, wholesale pricing and sample options by email or WhatsApp. Best, Leo",
+    "subject": ""
+  }
 ];
