@@ -1,4 +1,4 @@
-const CACHE_NAME = 'customer-development-system-v18-7-34-20260720-immutable-ledger';
+const CACHE_NAME = 'customer-development-system-v18-7-36-20260720-conversion-core';
 const APP_SHELL = [
   './',
   './index.html',
@@ -12,6 +12,10 @@ const APP_SHELL = [
   './github-sync/latest-status.js',
   './outreach-engine.js',
   './outreach-analytics.js',
+  './customer-event-ledger.js',
+  './sales-automation-core.js',
+  './system-readiness.js',
+  './system-readiness-latest.js',
   './autonomous-outreach-results.js',
   './verified-profile-registry.js',
   './autonomous-outreach-data.js',
@@ -55,6 +59,7 @@ self.addEventListener('fetch', (event) => {
     'autonomous-outreach-results.js',
     'autonomous-outreach-data.js',
     'command-center.js',
+    'system-readiness-latest.js',
   ];
   const isRealtimeFile = realtimeFiles.some((name) => requestUrl.pathname.endsWith(`/${name}`));
   if (isRealtimeFile) {

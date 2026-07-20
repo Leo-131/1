@@ -6,6 +6,9 @@
 
   const engine = window.OutreachEngine;
   const analytics = window.OutreachAnalytics;
+  const readiness = window.SystemReadiness;
+  const readinessData = window.SystemReadinessData || null;
+  const salesCore = window.SalesAutomationCore;
   const data = window.AUTONOMOUS_OUTREACH_DATA || { tasks: [], audit: [], settings: {} };
   if (!engine || !analytics) {
     const retryCount = Number(window.__commandCenterDependencyRetries || 0);
@@ -1487,6 +1490,55 @@
     ];
     return `<section class="cc-panel cc-email-ops"><div class="cc-panel-head"><div><h2>Email运营漏斗</h2><span class="cc-sub">同域名每日最多3封 · 首次跟进3个工作日 · 第二次跟进再等5个工作日</span></div><span class="cc-chip green">Sender: Leo@flextailgear.com</span></div><div class="cc-email-funnel">${stages.map(([key, label, note], index) => `<div class="${key === 'bounced' ? 'risk' : ''}"><span>${index + 1}. ${label}</span><b>${metrics[key]}</b><em>${note}</em></div>`).join('')}</div></section>`;
   }
+  function salesSystemReadinessPanel() {
+    if (!readiness || !readinessData) {
+      return '<section class="cc-panel"><div class="cc-panel-head"><div><h2>销售系统就绪度</h2><span class="cc-sub">就绪度快照未生成；运行 npm run readiness:refresh</span></div><span class="cc-chip amber">未刷新</span></div></section>';
+    }
+    const conversion = readiness.conversionSnapshot(customerEventLedger());
+    const cards = readinessData.connectors.map(item => `
+      <div class="cc-channel-card ${item.ready ? 'email' : ''}">
+        <span>${esc(item.label)}</span>
+        <b>${item.ready ? 'READY' : 'BLOCKED'}</b>
+        <em>${esc(item.ready ? item.providers.join(' / ') : `缺少配置：${item.missing.join(' 或 ')}`)}</em>
+      </div>`).join('');
+    const statusClass = readinessData.productionReady ? 'green' : 'amber';
+    return `<section class="cc-panel cc-email-ops"><div class="cc-panel-head"><div><h2>销售系统就绪度</h2><span class="cc-sub">只显示配置是否存在，不读取或展示密钥值；核心连接全部就绪后才允许宣布生产闭环</span></div><span class="cc-chip ${statusClass}">${readinessData.readyCount}/${readinessData.totalCount} · ${readinessData.score}%</span></div>
+      <div class="cc-channel-priority">${cards}</div>
+      <div class="cc-funnel"><div><span>确认开发企业</span><b>${conversion.sent}</b></div><div><span>收到回复</span><b>${conversion.replied}</b></div><div><span>采购资格确认</span><b>${conversion.qualified}</b></div><div><span>合格会议</span><b>${conversion.meetings}</b></div><div><span>每100家合格会议</span><b>${conversion.qualifiedMeetingsPer100}</b></div></div>
+      <div class="cc-quality">北极星指标：每100家不同高ICP企业产生的合格采购会议数。发送量是容量指标，不替代回复、会议和Pipeline。</div>
+    </section>`;
+  }
+  function crmOperationsPanel() {
+    if (!salesCore) return '';
+    const accounts = salesCore.buildCrmAccounts(customerRecords(), customerEventLedger());
+    const counts = accounts.reduce((summary, account) => {
+      summary[account.stage] = (summary[account.stage] || 0) + 1;
+      return summary;
+    }, {});
+    const stages = [
+      ['lead', '线索'], ['contacted', '已开发'], ['replied', '已回复'],
+      ['qualified', '采购资格'], ['meeting', '会议'], ['opportunity', '商机'],
+      ['sample', '样品'], ['quotation', '报价'], ['won', '成交'],
+    ];
+    const priority = accounts
+      .filter(account => !account.existingCustomer && !account.exclusiveMarket)
+      .sort((left, right) => {
+        const stageGap = salesCore.STAGE_ORDER.indexOf(right.stage) - salesCore.STAGE_ORDER.indexOf(left.stage);
+        return stageGap || right.icp - left.icp;
+      })
+      .slice(0, 6);
+    return `<section class="cc-panel"><div class="cc-panel-head"><div><h2>统一CRM与转化行动队列</h2><span class="cc-sub">公司域名/名称归一去重；积极回复和商业判断必须人工复核，退订与退信允许自动抑制</span></div><span class="cc-chip green">${accounts.length} 家唯一企业</span></div>
+      <div class="cc-funnel">${stages.map(([key, label]) => `<div><span>${label}</span><b>${counts[key] || 0}</b></div>`).join('')}</div>
+      <div class="cc-table-wrap"><table class="cc-table"><thead><tr><th>优先企业</th><th>ICP</th><th>CRM阶段</th><th>可用渠道</th><th>建议动作</th></tr></thead><tbody>${priority.map(account => {
+        const action = account.stage === 'lead' ? '补全决策人并验证联系方式'
+          : account.stage === 'contacted' ? '等待/分类回复，禁止重复首触'
+            : account.stage === 'replied' ? '人工确认意向并提供会议时间'
+              : account.stage === 'qualified' ? '安排采购会议并建立商机'
+                : '推进下一商业阶段并记录证据';
+        return `<tr><td><b>${esc(account.company || account.key)}</b></td><td>${account.icp}</td><td><span class="cc-chip">${esc(account.stage)}</span></td><td>${esc(account.channels.join(' / ') || '待补全')}</td><td>${esc(action)}</td></tr>`;
+      }).join('') || '<tr><td colspan="5">暂无可行动企业</td></tr>'}</tbody></table></div>
+    </section>`;
+  }
   function googleQueueItem(item) {
     return item && (item.source === 'google_customer_discovery' || /^google-customer-/i.test(item.taskId || item.id || ''));
   }
@@ -1689,7 +1741,7 @@
     const icpRule = `<div class="cc-icp-rule"><b>ICP 分值算法</b><span>市场潜力 25 + 行业/角色匹配 25 + 身份核验 15 + 采购意图 15 + SEO/趋势 10 + 可联系历史 10。仅 ICP &gt; ${ICP_MIN_SCORE} 进入每日新客户开发，≤${ICP_MIN_SCORE} 保留链接但划线，不自动触达。</span></div>`;
     if (!task) {
       return `${pageHead('开发工作台', 'Codex 全自动接手开发，Codex Chrome Extension 执行；仅重大异常通知介入')}
-        ${metrics}<div id="today-developed">${dailyDevelopedPanel()}</div>${emailLifecyclePanel()}${systemFreshnessNotice(system)}${connection}${icpRule}${taskDetailPanel(system)}
+        ${metrics}<div id="today-developed">${dailyDevelopedPanel()}</div>${salesSystemReadinessPanel()}${crmOperationsPanel()}${emailLifecyclePanel()}${systemFreshnessNotice(system)}${connection}${icpRule}${taskDetailPanel(system)}
         <section class="cc-panel"><div class="cc-panel-head"><h2>今日新开发</h2><a href="${urlFor('customers', { touch: 'untouched' })}">筛选候选客户</a></div>
         <div class="cc-empty">本次没有可直接自动发送的社媒任务；队列里的 Google 线索主要是官网/邮件联系入口，已在上方任务明细中列出，需按官网联系安全门处理。</div></section>
         <section class="cc-panel"><div class="cc-panel-head"><h2>跟进优先</h2><a href="${urlFor('queue', { queue: 'followup' })}">查看 ${followups.length} 条</a></div>
@@ -1698,7 +1750,7 @@
     const score = scoreForDisplay(task);
     const activeIcp = icpScore(task);
     return `${pageHead('开发工作台', 'Codex 全自动决策与执行，GLM 优化画像与文案；仅重大 bug 暂停通知')}
-      ${metrics}<div id="today-developed">${dailyDevelopedPanel()}</div>${emailLifecyclePanel()}${systemFreshnessNotice(system)}${connection}${icpRule}${taskDetailPanel(system)}
+      ${metrics}<div id="today-developed">${dailyDevelopedPanel()}</div>${salesSystemReadinessPanel()}${crmOperationsPanel()}${emailLifecyclePanel()}${systemFreshnessNotice(system)}${connection}${icpRule}${taskDetailPanel(system)}
       <section class="cc-panel"><div class="cc-panel-head"><h2>当前客户</h2><div class="cc-row-actions"><button class="primary" type="button" onclick="runGlmQueue()" ${eligibleCount ? '' : 'disabled'}>${eligibleCount ? '执行当前最高优先级客户' : '暂无待开发客户'}</button><span class="cc-chip green">${stateLabel(task.state)}</span></div></div><div class="cc-panel-body">
         <div class="cc-current"><div><h3>${platformUrl(task) ? `<a href="${esc(platformUrl(task))}" target="_blank" rel="noopener">${esc(task.company)}</a>` : esc(task.company)}</h3><div class="cc-sub">${esc(task.role || '采购/合作负责人')} · ${esc(normalizedCountry(task))} · ${esc(task.keyword)}</div><div class="cc-actions"><button type="button" onclick="openVerifiedCustomer('${esc(task.taskId)}')" ${platformUrl(task) ? '' : 'disabled'}>打开客户主页</button><button class="primary" type="button" title="${esc(autoClawAvailability(task).reason)}" onclick="runGlmDirect('${esc(task.taskId)}')" ${canRunGlm(task) ? '' : 'disabled'}>${esc(autoClawAvailability(task).label)}</button><a href="${urlFor('customer', { contact: task.taskId })}">查看系统档案</a></div></div><div class="cc-score"><strong>${score.total}</strong><span>综合开发分 / 100</span></div></div>
         <div class="cc-sub">ICP：${activeIcp}/100 · ${esc(icpExplanation(task))}</div>
