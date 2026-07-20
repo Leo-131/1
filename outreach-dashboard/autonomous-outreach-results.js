@@ -4228,5 +4228,16 @@ window.AUTONOMOUS_OUTREACH_RESULTS = [
     "evidence": "driver_error: Timeout: http://127.0.0.1:9224/json",
     "draft": "Hi Atmosphere team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a retail/category buyer, the strongest fit is assortment fit, new SKU pipeline, price-tier coverage, and proven consumer demand; your verified outdoor, camping and travel retail social refill channel focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the category buyer or vendor-review owner for a short intro video meeting?",
     "subject": ""
+  },
+  {
+    "task_id": "manual-agent-profile-partner-tele-linkedin",
+    "approval_version": 1,
+    "status": "sent_confirmed",
+    "agent": "codex-chrome-extension-dedicated-window",
+    "timestamp": "2026-07-20T07:56:00.000Z",
+    "target_url": "https://www.linkedin.com/company/partner-tele.com/",
+    "evidence": "linkedin_company_identity_verified;separate_chrome_window_used;company_followed_confirmed;dm_send_clicked;outgoing_message_visible;sender_leo_liu;sent_at_2026-07-20_15:56_asia_shanghai",
+    "draft": "Hi Partner Tele.com team — Leo from FLEXTAIL here. Your Central European distribution network for mobile accessories and small electronics looks highly relevant for our compact outdoor and travel electrics, including ultralight pumps, lighting and portable-power products. We are expanding selected distribution partnerships in open markets with a strong 2026 product pipeline. Could you route this to your category or vendor-onboarding team? I can share a concise range and commercial overview for an initial fit review. Best, Leo",
+    "subject": ""
   }
 ];
