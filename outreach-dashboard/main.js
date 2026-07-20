@@ -3103,6 +3103,7 @@ async function runDailyAutomationQueue(payload = {}) {
   const parallelLimit = 1;
   const previousResults = readJsonScriptArray(path.join(__dirname, 'autonomous-outreach-results.js'), 'AUTONOMOUS_OUTREACH_RESULTS');
   const sameDayCompanyKeys = sameDayAutomationCompanyKeys(previousResults);
+  const visibleExecutable = executableQueueCandidates(latest.visibleTodayQueue || [], { allowWebsiteContact: false });
   const dueCandidates = executableQueueCandidates(latest.dailyQueue, { allowWebsiteContact: false });
   const scheduledExecutable = executableQueueCandidates(latest.scheduledLater || [], { allowWebsiteContact: false });
   const potentialFallback = executableQueueCandidates(latest.dailyPotentialPool || [], { allowWebsiteContact: false })
@@ -3119,7 +3120,11 @@ async function runDailyAutomationQueue(payload = {}) {
     : scheduledExecutable.length
       ? 'scheduledLater'
       : 'dailyPotentialPool';
-  const socialPool = [...dueCandidates, ...scheduledExecutable, ...potentialFallback]
+  // visibleTodayQueue contains the discovery runner's already identity-checked
+  // social shortlist. Route it through the same execution, history and
+  // confirmation gates instead of leaving the dashboard's "executable" rows
+  // disconnected from the browser runner.
+  const socialPool = [...visibleExecutable, ...dueCandidates, ...scheduledExecutable, ...potentialFallback]
     .filter((item, index, list) => list.findIndex(other => other.id === item.id) === index)
     .sort(developmentPriorityCompare);
   const candidatePool = [
