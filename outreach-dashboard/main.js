@@ -2523,6 +2523,40 @@ function instagramFallbackTarget(lead = {}) {
   }
 }
 
+function alternateChannelFallbackLead(lead = {}, draftResult = {}, options = {}) {
+  const evidence = String(draftResult.evidence || '').toLowerCase();
+  const recoverable = /composer_not_found|message_button_clicked_composer_not_found|profile_no_message_button|cdp websocket error|chrome_target_not_found/.test(evidence);
+  if (!recoverable || draftResult.sendStatus === 'send_unconfirmed') return null;
+  const attempted = new Set([
+    ...(Array.isArray(options.attemptedChannels) ? options.attemptedChannels : []),
+    String(lead.platform || '').toLowerCase(),
+  ].filter(Boolean));
+  const channels = lead.alternateChannels || {};
+  const candidates = [
+    ['linkedin', channels.linkedin],
+    ['facebook', channels.facebook],
+    ['instagram', channels.instagram],
+    ['email', channels.websiteContact || lead.contactUrl || lead.website],
+  ];
+  for (const [platform, targetUrl] of candidates) {
+    if (attempted.has(platform) || !/^https:\/\//i.test(String(targetUrl || ''))) continue;
+    const fallback = {
+      ...lead,
+      id: `${automationLeadFamilyKey(lead.id || lead.taskId) || canonicalLeadKey(lead.company || lead.name)}-${platform}`,
+      taskId: `${automationLeadFamilyKey(lead.id || lead.taskId) || canonicalLeadKey(lead.company || lead.name)}-${platform}`,
+      platform,
+      action: platform === 'email' ? 'email_priority' : 'develop',
+      reason: platform === 'email' ? 'official_website_contact_channel' : `verified_${platform}_fallback`,
+      platformUrl: targetUrl,
+      targetUrl,
+      verifiedTargetUrl: targetUrl,
+      url: targetUrl,
+    };
+    if (!blockingAutomationResultFor(fallback)) return fallback;
+  }
+  return null;
+}
+
 async function runCodexChromeLead(lead, decision, mode = 'codex_chrome_prepare', options = {}) {
   const target = validateLeadTargetForPreparation(lead);
   if (!target.ok) return target;
@@ -2532,6 +2566,29 @@ async function runCodexChromeLead(lead, decision, mode = 'codex_chrome_prepare',
     ? await optimizeDraftWithContext(lead, decision, chromeOpen)
     : String(decision && decision.draft || '').trim();
   const draftResult = await prepareSocialDraft(chromeOpen, finalDraft, lead);
+  const alternateFallback = alternateChannelFallbackLead(lead, draftResult, options);
+  if (alternateFallback) {
+    await closeAutomationChromeTab(chromeOpen);
+    const fallbackResult = await executeLeadAutomation(alternateFallback, {
+      ignoreCooldown: true,
+      allowParallel: true,
+      attemptedChannels: [
+        ...(Array.isArray(options.attemptedChannels) ? options.attemptedChannels : []),
+        String(lead.platform || '').toLowerCase(),
+      ],
+    });
+    return {
+      ...fallbackResult,
+      fallbackFrom: target.targetUrl,
+      fallbackPlatform: alternateFallback.platform,
+      output: JSON.stringify({
+        ...parseExecutionOutput(fallbackResult.output),
+        fallbackFrom: target.targetUrl,
+        fallbackPlatform: alternateFallback.platform,
+        fallbackReason: draftResult.evidence,
+      }),
+    };
+  }
   const facebookNeedsInstagram = !options.skipInstagramFallback
     && lead && lead.facebookMessageUnavailable === true
     && /facebook_profile_no_message_button/.test(String(draftResult && draftResult.evidence || ''));
