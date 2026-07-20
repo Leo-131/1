@@ -1,0 +1,24 @@
+{
+  "generatedAt": "2026-07-20T13:52:00.000Z",
+  "logicalCustomerCount": 910,
+  "renderedRowCount": 1801,
+  "mailtoRowCount": 18,
+  "uniqueEmailCount": 12,
+  "verifiedNewExecutableCount": 1,
+  "sentConfirmedCount": 1,
+  "records": [
+    {"email":"sales@eet.eu","company":"EET Group","status":"already_contacted","reason":"sent_confirmed_today"},
+    {"email":"info@summitint.co","company":"Summit International","status":"already_contacted","reason":"previously_developed"},
+    {"email":"enquiries@cotswoldoutdoor.com","company":"Cotswold Outdoor","status":"already_contacted","reason":"previously_developed"},
+    {"email":"info@mec.ca","company":"MEC","status":"already_contacted","reason":"previously_developed"},
+    {"email":"international.media@decathlon.com","company":"Decathlon","status":"blocked","reason":"media_email_not_buyer_or_vendor_channel"},
+    {"email":"vendorrelations@basspro.com","company":"Bass Pro Shops / Cabela's","status":"already_contacted","reason":"sent_confirmed"},
+    {"email":"ellen@variosport.no","company":"FAUNA OUTDOOR / Vario Sport","status":"replaced_by_official_email","reason":"official_site_publishes_post_at_variosport_no"},
+    {"email":"post@variosport.no","company":"Vario Sport AS / Fauna Outdoor","status":"sent_confirmed","reason":"official_contact_page_and_sent_folder_confirmed"},
+    {"email":"sage@beautiful.ai","company":"TAHOE SPORTS HUB","status":"blocked","reason":"email_domain_identity_mismatch"},
+    {"email":"coreychampagne@msn.com","company":"TAHOE SPORTS HUB","status":"blocked","reason":"personal_email_without_official_source_verification"},
+    {"email":"doyledist@eircom.net","company":"JOHN DOYLE DISTRIBUTORS","status":"blocked","reason":"official_email_and_outdoor_category_not_verified"},
+    {"email":"mark@arrowtire.ca","company":"ARROW TIRE DISTRIBUTORS","status":"blocked","reason":"product_category_not_relevant"},
+    {"email":"terry@arrowtire.ca","company":"ARROW TIRE DISTRIBUTORS","status":"blocked","reason":"product_category_not_relevant"}
+  ]
+}
