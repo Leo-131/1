@@ -8,6 +8,7 @@ const tls = require('tls');
 const { execFile, spawn } = require('child_process');
 const { professionalSalesDraft, requestGlm } = require('./glm-service');
 const { emailSenderReadiness } = require('./email-channel');
+const { emailDomainSafety } = require('./email-operations');
 const {
   normalizeTarget,
   validateLeadForExecution,
@@ -2272,6 +2273,22 @@ async function prepareWebsiteContactForm(chromeOpen, lead, subject, draft) {
 }
 
 async function runWebsiteContactLead(lead = {}) {
+  if (lead.publicEmail || lead.contactEmail || lead.email) {
+    const previousResults = readJsonScriptArray(path.join(__dirname, 'autonomous-outreach-results.js'), 'AUTONOMOUS_OUTREACH_RESULTS');
+    const domainSafety = emailDomainSafety(previousResults, lead);
+    if (!domainSafety.ok) {
+      return {
+        ok: false,
+        skipped: true,
+        sendStatus: 'skipped',
+        mode: 'email_domain_safety_gate',
+        evidence: `${domainSafety.reason};domain:${domainSafety.domain || 'unknown'};sentToday:${domainSafety.sentToday || 0};limit:${domainSafety.limit || 0}`,
+        nextAction: domainSafety.reason === 'email_domain_daily_limit_reached'
+          ? 'Pause this domain until the next Asia/Shanghai business day; use another verified company or channel.'
+          : 'Verify an official public buyer, vendor-relations, or business email before email outreach.',
+      };
+    }
+  }
   const targets = websiteContactTargetCandidates(lead);
   if (!targets.length) {
     const target = validateWebsiteContactTarget(lead);

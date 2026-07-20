@@ -1,4 +1,4 @@
-const CACHE_NAME = 'customer-development-system-v18-7-31-20260720-email-first-workspace';
+const CACHE_NAME = 'customer-development-system-v18-7-32-20260720-email-ops-funnel';
 const APP_SHELL = [
   './',
   './index.html',
