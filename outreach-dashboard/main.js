@@ -277,7 +277,6 @@ const SAME_DAY_DEVELOPMENT_STATUSES = new Set([
   'send_unconfirmed',
   'account_followed',
   'post_liked',
-  'website_contact_unreachable_skip',
 ]);
 
 function automationLocalDay(value, timeZone = 'Asia/Shanghai') {
@@ -1331,11 +1330,16 @@ async function runCodexChromeDriver(command, payload) {
   } catch (error) {
     const parsed = parseDriverJson(error && error.stdout);
     if (parsed) return parsed;
+    const timedOut = Boolean(error && (error.killed || error.signal === 'SIGTERM' || /timed out|timeout/i.test(String(error.message || ''))));
     return {
       ok: false,
-      sendStatus: 'approval_pending',
-      evidence: `driver_error: ${error && error.message || 'unknown'}`,
-      nextAction: 'Major Codex Chrome driver failure; pause and notify operator before retry.',
+      sendStatus: timedOut ? 'failed_open' : 'approval_pending',
+      evidence: timedOut
+        ? 'driver_timeout_bounded:80000'
+        : `driver_error: ${error && error.message || 'unknown'}`,
+      nextAction: timedOut
+        ? 'The bounded driver window expired without a send confirmation; continue through another verified channel.'
+        : 'Major Codex Chrome driver failure; pause and notify operator before retry.',
     };
   }
 }
@@ -2525,7 +2529,7 @@ function instagramFallbackTarget(lead = {}) {
 
 function alternateChannelFallbackLead(lead = {}, draftResult = {}, options = {}) {
   const evidence = String(draftResult.evidence || '').toLowerCase();
-  const recoverable = /composer_not_found|message_button_clicked_composer_not_found|profile_no_message_button|cdp websocket error|chrome_target_not_found/.test(evidence);
+  const recoverable = /composer_not_found|message_button_clicked_composer_not_found|profile_no_message_button|cdp websocket error|chrome_target_not_found|driver_timeout_bounded/.test(evidence);
   if (!recoverable || draftResult.sendStatus === 'send_unconfirmed') return null;
   const attempted = new Set([
     ...(Array.isArray(options.attemptedChannels) ? options.attemptedChannels : []),
