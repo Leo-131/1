@@ -1,4 +1,4 @@
-const CACHE_NAME = 'customer-development-system-v18-7-33-20260720-timeline-truth-fix';
+const CACHE_NAME = 'customer-development-system-v18-7-34-20260720-immutable-ledger';
 const APP_SHELL = [
   './',
   './index.html',

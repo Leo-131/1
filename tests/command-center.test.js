@@ -312,7 +312,7 @@ test('all reporting sections use live automation artifacts', () => {
   assert.ok(!html.includes('System display recovered in fallback mode'));
   assert.ok(!html.includes('Display repair mode'));
   assert.ok(html.includes('commandCenterRecovery'));
-  assert.ok(serviceWorkerJs.includes('customer-development-system-v18-7-30-20260715-verified-customer-research'));
+  assert.ok(serviceWorkerJs.includes('customer-development-system-v18-7-34-20260720-immutable-ledger'));
 });
 
 test('reporting center exposes reply conversion diagnostics and CSV rates', () => {

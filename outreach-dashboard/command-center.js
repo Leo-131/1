@@ -764,6 +764,28 @@
       item && urlHandle(item.target_url || item.targetUrl),
     ].map(canonicalLeadKey).filter(Boolean);
   }
+  function customerEventLedger() {
+    return memoized('customerEventLedger', () => {
+      const ledger = window.CustomerEventLedger;
+      if (!ledger || typeof ledger.build !== 'function') return [];
+      return ledger.build({
+        results: [
+          ...(window.AUTONOMOUS_OUTREACH_RESULTS || []),
+          ...executionResults(),
+        ],
+        audit: data.audit || [],
+        records: [
+          ...legacyRecords,
+          ...tasks,
+        ],
+      });
+    });
+  }
+  function latestCustomerEvent(record, types) {
+    const ledger = window.CustomerEventLedger;
+    if (!ledger || typeof ledger.latest !== 'function') return null;
+    return ledger.latest(customerEventLedger(), record, types);
+  }
   function sameDayDevelopmentFor(record) {
     const keys = new Set(leadMatchKeys(record));
     if (!keys.size) return null;
@@ -774,19 +796,14 @@
       .sort((left, right) => Date.parse(right.timestamp) - Date.parse(left.timestamp))[0] || null;
   }
   function confirmedTouchFor(record) {
-    const keys = new Set(leadMatchKeys(record));
-    if (!keys.size) return null;
-    const auditTouches = (data.audit || [])
-      .filter(item => item && (item.result === 'sent_confirmed' || item.stage === 'sent_confirmed'))
-      .filter(item => keys.has(canonicalLeadKey(item.taskId)))
-      .filter(item => isValidTimestamp(item.timestamp))
-      .map(item => ({ timestamp: item.timestamp, evidence: item.evidence || '', status: 'sent_confirmed' }));
-    const resultTouches = (window.AUTONOMOUS_OUTREACH_RESULTS || [])
-      .filter(item => item && item.status === 'sent_confirmed')
-      .filter(item => autonomousLeadKeys(item).some(key => keys.has(key)))
-      .filter(item => isValidTimestamp(item.timestamp));
-    return [...auditTouches, ...resultTouches]
-      .sort((left, right) => Date.parse(right.timestamp) - Date.parse(left.timestamp))[0] || null;
+    const event = latestCustomerEvent(record, ['sent_confirmed']);
+    return event ? {
+      timestamp: event.timestamp,
+      evidence: event.evidence,
+      status: event.status,
+      channel: event.channel,
+      source: event.source,
+    } : null;
   }
   function isValidTimestamp(value) {
     return typeof value === 'string' && value && Number.isFinite(Date.parse(value));
@@ -800,6 +817,16 @@
   }
   function recordEventTime(record) {
     if (!record) return '';
+    const ledgerEvent = latestCustomerEvent(record, [
+      'sent_confirmed',
+      'replied',
+      'bounced',
+      'contact_captured',
+      'buyer_routed',
+      'meeting_booked',
+      'follow_up_due',
+    ]);
+    if (ledgerEvent) return ledgerEvent.timestamp;
     return [
       record.lastTouch,
       record.sentAt,
@@ -1375,14 +1402,31 @@
     return labels[reason] || reason || '规则未给出原因';
   }
   function dailyDevelopedRows() {
-    const rows = [
-      ...autonomousResultRecords(),
-      ...executionResultRows(),
-    ];
+    const ledgerRows = customerEventLedger()
+      .filter(event => event.type === 'sent_confirmed' && isTodayTimestamp(event.timestamp))
+      .map(event => {
+        const base = findTaskById(event.taskId)
+          || taskIndex.get(canonicalLeadKey(event.customerKey))
+          || {};
+        return {
+          ...base,
+          taskId: event.taskId || base.taskId || event.customerKey,
+          id: event.taskId || base.id || event.id,
+          name: base.name || base.company || resultCompanyName(event.taskId || event.customerKey),
+          company: base.company || base.name || resultCompanyName(event.taskId || event.customerKey),
+          platform: event.channel || base.platform || 'unknown',
+          targetUrl: base.targetUrl || base.url || event.evidence || '',
+          sendStatus: 'sent_confirmed',
+          status: 'sent_confirmed',
+          timestamp: event.timestamp,
+          resultCheckedAt: event.timestamp,
+          lastTouch: event.timestamp,
+          evidence: event.evidence,
+          eventSource: event.source,
+        };
+      });
     const seen = new Set();
-    return rows
-      .filter(item => isTodayTimestamp(item.timestamp || item.resultCheckedAt || item.lastTouch))
-      .filter(item => ['sent_confirmed', 'submitted_confirmed'].includes(String(item.sendStatus || item.status || '')))
+    return ledgerRows
       .filter(item => {
         const key = [
           canonicalLeadKey(item.taskId || item.id || item.company || item.name),
