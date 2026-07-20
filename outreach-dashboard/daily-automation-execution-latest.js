@@ -23,15 +23,15 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "platform": "instagram",
       "targetUrl": "https://www.instagram.com/campz.de/",
       "ok": false,
-      "sendStatus": "approval_pending",
-      "evidence": "driver_error: Command failed: C:\\Program Files\\nodejs\\node.exe E:\\New project\\outreach-dashboard\\codex-chrome-driver.js prepare-instagram-draft {\"port\":9224,\"tabId\":\"F1D67FEE8B423CB29FD3C00D02A55692\",\"targetUrl\":\"https://www.instagram.com/campz.de/\",\"expectedCompany\":\"Campz\",\"draft\":\"Hi Campz team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a retail/category buyer, the strongest fit is assortment fit, new SKU pipeline, price-tier coverage, and proven consumer demand; your verified outdoor, camping and travel retail social refill channel focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the category buyer or vendor-review owner for a short intro video meeting?\",\"autoSend\":true,\"autoEngage\":true,\"engagementComment\":\"Great outdoor checklist. Useful reminder for hikers preparing a complete, lightweight kit.\",\"replaceExistingDraft\":true}\n",
+      "sendStatus": "failed_open",
+      "evidence": "instagram_message_button_clicked_composer_not_found",
       "chromeOpen": {
         "ok": true,
         "engine": "codex-chrome-extension-cdp",
         "port": 9224,
         "targetUrl": "https://www.instagram.com/campz.de/",
-        "tabId": "F1D67FEE8B423CB29FD3C00D02A55692",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/F1D67FEE8B423CB29FD3C00D02A55692",
+        "tabId": "035CFDBD0AAF61B7AA1AFFE790FA1B22",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/035CFDBD0AAF61B7AA1AFFE790FA1B22",
         "title": ""
       },
       "result": {
@@ -45,12 +45,12 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
           "engine": "codex-chrome-extension-cdp",
           "port": 9224,
           "targetUrl": "https://www.instagram.com/campz.de/",
-          "tabId": "F1D67FEE8B423CB29FD3C00D02A55692",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/F1D67FEE8B423CB29FD3C00D02A55692",
+          "tabId": "035CFDBD0AAF61B7AA1AFFE790FA1B22",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/035CFDBD0AAF61B7AA1AFFE790FA1B22",
           "title": ""
         },
-        "sendStatus": "approval_pending",
-        "output": "{\"verdict\":\"major_bug_review_needed\",\"evidence\":\"driver_error: Command failed: C:\\\\Program Files\\\\nodejs\\\\node.exe E:\\\\New project\\\\outreach-dashboard\\\\codex-chrome-driver.js prepare-instagram-draft {\\\"port\\\":9224,\\\"tabId\\\":\\\"F1D67FEE8B423CB29FD3C00D02A55692\\\",\\\"targetUrl\\\":\\\"https://www.instagram.com/campz.de/\\\",\\\"expectedCompany\\\":\\\"Campz\\\",\\\"draft\\\":\\\"Hi Campz team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a retail/category buyer, the strongest fit is assortment fit, new SKU pipeline, price-tier coverage, and proven consumer demand; your verified outdoor, camping and travel retail social refill channel focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the category buyer or vendor-review owner for a short intro video meeting?\\\",\\\"autoSend\\\":true,\\\"autoEngage\\\":true,\\\"engagementComment\\\":\\\"Great outdoor checklist. Useful reminder for hikers preparing a complete, lightweight kit.\\\",\\\"replaceExistingDraft\\\":true}\\n\",\"nextAction\":\"Major Codex Chrome driver failure; pause and notify operator before retry.\",\"draft\":\"Hi Campz team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a retail/category buyer, the strongest fit is assortment fit, new SKU pipeline, price-tier coverage, and proven consumer demand; your verified outdoor, camping and travel retail social refill channel focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the category buyer or vendor-review owner for a short intro video meeting?\",\"sendStatus\":\"approval_pending\"}",
+        "sendStatus": "failed_open",
+        "output": "{\"verdict\":\"major_bug_review_needed\",\"evidence\":\"instagram_message_button_clicked_composer_not_found\",\"nextAction\":\"Composer not detected; pause automation and notify operator only if retry would be unsafe.\",\"draft\":\"Hi Campz team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a retail/category buyer, the strongest fit is assortment fit, new SKU pipeline, price-tier coverage, and proven consumer demand; your verified outdoor, camping and travel retail social refill channel focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the category buyer or vendor-review owner for a short intro video meeting?\",\"sendStatus\":\"failed_open\"}",
         "decision": {
           "verdict": "develop",
           "fitScore": 84,
@@ -76,8 +76,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
         "engine": "codex-chrome-extension-cdp",
         "port": 9224,
         "targetUrl": "https://www.instagram.com/doorout_com/",
-        "tabId": "F43AEF695E43DC107F64F9A5CEDF929A",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/F43AEF695E43DC107F64F9A5CEDF929A",
+        "tabId": "846814CA694A9681A3BCA3CEA1DFDFD0",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/846814CA694A9681A3BCA3CEA1DFDFD0",
         "title": ""
       },
       "result": {
@@ -91,8 +91,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
           "engine": "codex-chrome-extension-cdp",
           "port": 9224,
           "targetUrl": "https://www.instagram.com/doorout_com/",
-          "tabId": "F43AEF695E43DC107F64F9A5CEDF929A",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/F43AEF695E43DC107F64F9A5CEDF929A",
+          "tabId": "846814CA694A9681A3BCA3CEA1DFDFD0",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/846814CA694A9681A3BCA3CEA1DFDFD0",
           "title": ""
         },
         "sendStatus": "failed_open",
@@ -115,16 +115,16 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "platform": "instagram",
       "targetUrl": "https://www.instagram.com/facewest/",
       "ok": false,
-      "sendStatus": "approval_pending",
-      "evidence": "driver_error: Command failed: C:\\Program Files\\nodejs\\node.exe E:\\New project\\outreach-dashboard\\codex-chrome-driver.js prepare-instagram-draft {\"port\":9224,\"tabId\":\"2BAD0AEF0C9EAF50046BE1837982533A\",\"targetUrl\":\"https://www.instagram.com/facewest/\",\"expectedCompany\":\"Facewest\",\"draft\":\"Hi Facewest team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a retail/category buyer, the strongest fit is assortment fit, new SKU pipeline, price-tier coverage, and proven consumer demand; your verified outdoor, camping and travel retail social refill channel focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the category buyer or vendor-review owner for a short intro video meeting?\",\"autoSend\":true,\"autoEngage\":true,\"engagementComment\":\"Great outdoor checklist. Useful reminder for hikers preparing a complete, lightweight kit.\",\"replaceExistingDraft\":true}\n",
+      "sendStatus": "failed_open",
+      "evidence": "driver_error: CDP websocket error: Page.bringToFront",
       "chromeOpen": {
         "ok": true,
         "engine": "codex-chrome-extension-cdp",
         "port": 9224,
         "targetUrl": "https://www.instagram.com/facewest/",
-        "tabId": "2BAD0AEF0C9EAF50046BE1837982533A",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/2BAD0AEF0C9EAF50046BE1837982533A",
-        "title": "Bill Wong (@facewest) · Instagram 照片和视频"
+        "tabId": "07E5476C93422CD222B077310A4330A9",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/07E5476C93422CD222B077310A4330A9",
+        "title": ""
       },
       "result": {
         "ok": false,
@@ -137,12 +137,12 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
           "engine": "codex-chrome-extension-cdp",
           "port": 9224,
           "targetUrl": "https://www.instagram.com/facewest/",
-          "tabId": "2BAD0AEF0C9EAF50046BE1837982533A",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/2BAD0AEF0C9EAF50046BE1837982533A",
-          "title": "Bill Wong (@facewest) · Instagram 照片和视频"
+          "tabId": "07E5476C93422CD222B077310A4330A9",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/07E5476C93422CD222B077310A4330A9",
+          "title": ""
         },
-        "sendStatus": "approval_pending",
-        "output": "{\"verdict\":\"major_bug_review_needed\",\"evidence\":\"driver_error: Command failed: C:\\\\Program Files\\\\nodejs\\\\node.exe E:\\\\New project\\\\outreach-dashboard\\\\codex-chrome-driver.js prepare-instagram-draft {\\\"port\\\":9224,\\\"tabId\\\":\\\"2BAD0AEF0C9EAF50046BE1837982533A\\\",\\\"targetUrl\\\":\\\"https://www.instagram.com/facewest/\\\",\\\"expectedCompany\\\":\\\"Facewest\\\",\\\"draft\\\":\\\"Hi Facewest team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a retail/category buyer, the strongest fit is assortment fit, new SKU pipeline, price-tier coverage, and proven consumer demand; your verified outdoor, camping and travel retail social refill channel focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the category buyer or vendor-review owner for a short intro video meeting?\\\",\\\"autoSend\\\":true,\\\"autoEngage\\\":true,\\\"engagementComment\\\":\\\"Great outdoor checklist. Useful reminder for hikers preparing a complete, lightweight kit.\\\",\\\"replaceExistingDraft\\\":true}\\n\",\"nextAction\":\"Major Codex Chrome driver failure; pause and notify operator before retry.\",\"draft\":\"Hi Facewest team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a retail/category buyer, the strongest fit is assortment fit, new SKU pipeline, price-tier coverage, and proven consumer demand; your verified outdoor, camping and travel retail social refill channel focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the category buyer or vendor-review owner for a short intro video meeting?\",\"sendStatus\":\"approval_pending\"}",
+        "sendStatus": "failed_open",
+        "output": "{\"verdict\":\"major_bug_review_needed\",\"evidence\":\"driver_error: CDP websocket error: Page.bringToFront\",\"nextAction\":\"Automation paused; notify operator only if this is a major bug or unsafe retry risk.\",\"draft\":\"Hi Facewest team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a retail/category buyer, the strongest fit is assortment fit, new SKU pipeline, price-tier coverage, and proven consumer demand; your verified outdoor, camping and travel retail social refill channel focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the category buyer or vendor-review owner for a short intro video meeting?\",\"sendStatus\":\"failed_open\"}",
         "decision": {
           "verdict": "develop",
           "fitScore": 84,
@@ -168,8 +168,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
         "engine": "codex-chrome-extension-cdp",
         "port": 9224,
         "targetUrl": "https://www.instagram.com/jaxoutdoor/",
-        "tabId": "7BBA952436F85734C9EFD2F1D5558BFD",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/7BBA952436F85734C9EFD2F1D5558BFD",
+        "tabId": "C79272173D839D6781201AC650E32F00",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/C79272173D839D6781201AC650E32F00",
         "title": "James Hopkins (@jaxoutdoor) · Instagram 照片和视频"
       },
       "result": {
@@ -183,8 +183,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
           "engine": "codex-chrome-extension-cdp",
           "port": 9224,
           "targetUrl": "https://www.instagram.com/jaxoutdoor/",
-          "tabId": "7BBA952436F85734C9EFD2F1D5558BFD",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/7BBA952436F85734C9EFD2F1D5558BFD",
+          "tabId": "C79272173D839D6781201AC650E32F00",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/C79272173D839D6781201AC650E32F00",
           "title": "James Hopkins (@jaxoutdoor) · Instagram 照片和视频"
         },
         "sendStatus": "failed_open",
@@ -209,15 +209,15 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "platform": "instagram",
       "targetUrl": "https://www.instagram.com/campz.de/",
       "ok": false,
-      "sendStatus": "approval_pending",
-      "evidence": "driver_error: Command failed: C:\\Program Files\\nodejs\\node.exe E:\\New project\\outreach-dashboard\\codex-chrome-driver.js prepare-instagram-draft {\"port\":9224,\"tabId\":\"F1D67FEE8B423CB29FD3C00D02A55692\",\"targetUrl\":\"https://www.instagram.com/campz.de/\",\"expectedCompany\":\"Campz\",\"draft\":\"Hi Campz team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a retail/category buyer, the strongest fit is assortment fit, new SKU pipeline, price-tier coverage, and proven consumer demand; your verified outdoor, camping and travel retail social refill channel focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the category buyer or vendor-review owner for a short intro video meeting?\",\"autoSend\":true,\"autoEngage\":true,\"engagementComment\":\"Great outdoor checklist. Useful reminder for hikers preparing a complete, lightweight kit.\",\"replaceExistingDraft\":true}\n",
+      "sendStatus": "failed_open",
+      "evidence": "instagram_message_button_clicked_composer_not_found",
       "chromeOpen": {
         "ok": true,
         "engine": "codex-chrome-extension-cdp",
         "port": 9224,
         "targetUrl": "https://www.instagram.com/campz.de/",
-        "tabId": "F1D67FEE8B423CB29FD3C00D02A55692",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/F1D67FEE8B423CB29FD3C00D02A55692",
+        "tabId": "035CFDBD0AAF61B7AA1AFFE790FA1B22",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/035CFDBD0AAF61B7AA1AFFE790FA1B22",
         "title": ""
       },
       "result": {
@@ -231,12 +231,12 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
           "engine": "codex-chrome-extension-cdp",
           "port": 9224,
           "targetUrl": "https://www.instagram.com/campz.de/",
-          "tabId": "F1D67FEE8B423CB29FD3C00D02A55692",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/F1D67FEE8B423CB29FD3C00D02A55692",
+          "tabId": "035CFDBD0AAF61B7AA1AFFE790FA1B22",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/035CFDBD0AAF61B7AA1AFFE790FA1B22",
           "title": ""
         },
-        "sendStatus": "approval_pending",
-        "output": "{\"verdict\":\"major_bug_review_needed\",\"evidence\":\"driver_error: Command failed: C:\\\\Program Files\\\\nodejs\\\\node.exe E:\\\\New project\\\\outreach-dashboard\\\\codex-chrome-driver.js prepare-instagram-draft {\\\"port\\\":9224,\\\"tabId\\\":\\\"F1D67FEE8B423CB29FD3C00D02A55692\\\",\\\"targetUrl\\\":\\\"https://www.instagram.com/campz.de/\\\",\\\"expectedCompany\\\":\\\"Campz\\\",\\\"draft\\\":\\\"Hi Campz team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a retail/category buyer, the strongest fit is assortment fit, new SKU pipeline, price-tier coverage, and proven consumer demand; your verified outdoor, camping and travel retail social refill channel focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the category buyer or vendor-review owner for a short intro video meeting?\\\",\\\"autoSend\\\":true,\\\"autoEngage\\\":true,\\\"engagementComment\\\":\\\"Great outdoor checklist. Useful reminder for hikers preparing a complete, lightweight kit.\\\",\\\"replaceExistingDraft\\\":true}\\n\",\"nextAction\":\"Major Codex Chrome driver failure; pause and notify operator before retry.\",\"draft\":\"Hi Campz team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a retail/category buyer, the strongest fit is assortment fit, new SKU pipeline, price-tier coverage, and proven consumer demand; your verified outdoor, camping and travel retail social refill channel focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the category buyer or vendor-review owner for a short intro video meeting?\",\"sendStatus\":\"approval_pending\"}",
+        "sendStatus": "failed_open",
+        "output": "{\"verdict\":\"major_bug_review_needed\",\"evidence\":\"instagram_message_button_clicked_composer_not_found\",\"nextAction\":\"Composer not detected; pause automation and notify operator only if retry would be unsafe.\",\"draft\":\"Hi Campz team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a retail/category buyer, the strongest fit is assortment fit, new SKU pipeline, price-tier coverage, and proven consumer demand; your verified outdoor, camping and travel retail social refill channel focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the category buyer or vendor-review owner for a short intro video meeting?\",\"sendStatus\":\"failed_open\"}",
         "decision": {
           "verdict": "develop",
           "fitScore": 84,
@@ -262,8 +262,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
         "engine": "codex-chrome-extension-cdp",
         "port": 9224,
         "targetUrl": "https://www.instagram.com/doorout_com/",
-        "tabId": "F43AEF695E43DC107F64F9A5CEDF929A",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/F43AEF695E43DC107F64F9A5CEDF929A",
+        "tabId": "846814CA694A9681A3BCA3CEA1DFDFD0",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/846814CA694A9681A3BCA3CEA1DFDFD0",
         "title": ""
       },
       "result": {
@@ -277,8 +277,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
           "engine": "codex-chrome-extension-cdp",
           "port": 9224,
           "targetUrl": "https://www.instagram.com/doorout_com/",
-          "tabId": "F43AEF695E43DC107F64F9A5CEDF929A",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/F43AEF695E43DC107F64F9A5CEDF929A",
+          "tabId": "846814CA694A9681A3BCA3CEA1DFDFD0",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/846814CA694A9681A3BCA3CEA1DFDFD0",
           "title": ""
         },
         "sendStatus": "failed_open",
@@ -301,16 +301,16 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "platform": "instagram",
       "targetUrl": "https://www.instagram.com/facewest/",
       "ok": false,
-      "sendStatus": "approval_pending",
-      "evidence": "driver_error: Command failed: C:\\Program Files\\nodejs\\node.exe E:\\New project\\outreach-dashboard\\codex-chrome-driver.js prepare-instagram-draft {\"port\":9224,\"tabId\":\"2BAD0AEF0C9EAF50046BE1837982533A\",\"targetUrl\":\"https://www.instagram.com/facewest/\",\"expectedCompany\":\"Facewest\",\"draft\":\"Hi Facewest team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a retail/category buyer, the strongest fit is assortment fit, new SKU pipeline, price-tier coverage, and proven consumer demand; your verified outdoor, camping and travel retail social refill channel focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the category buyer or vendor-review owner for a short intro video meeting?\",\"autoSend\":true,\"autoEngage\":true,\"engagementComment\":\"Great outdoor checklist. Useful reminder for hikers preparing a complete, lightweight kit.\",\"replaceExistingDraft\":true}\n",
+      "sendStatus": "failed_open",
+      "evidence": "driver_error: CDP websocket error: Page.bringToFront",
       "chromeOpen": {
         "ok": true,
         "engine": "codex-chrome-extension-cdp",
         "port": 9224,
         "targetUrl": "https://www.instagram.com/facewest/",
-        "tabId": "2BAD0AEF0C9EAF50046BE1837982533A",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/2BAD0AEF0C9EAF50046BE1837982533A",
-        "title": "Bill Wong (@facewest) · Instagram 照片和视频"
+        "tabId": "07E5476C93422CD222B077310A4330A9",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/07E5476C93422CD222B077310A4330A9",
+        "title": ""
       },
       "result": {
         "ok": false,
@@ -323,12 +323,12 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
           "engine": "codex-chrome-extension-cdp",
           "port": 9224,
           "targetUrl": "https://www.instagram.com/facewest/",
-          "tabId": "2BAD0AEF0C9EAF50046BE1837982533A",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/2BAD0AEF0C9EAF50046BE1837982533A",
-          "title": "Bill Wong (@facewest) · Instagram 照片和视频"
+          "tabId": "07E5476C93422CD222B077310A4330A9",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/07E5476C93422CD222B077310A4330A9",
+          "title": ""
         },
-        "sendStatus": "approval_pending",
-        "output": "{\"verdict\":\"major_bug_review_needed\",\"evidence\":\"driver_error: Command failed: C:\\\\Program Files\\\\nodejs\\\\node.exe E:\\\\New project\\\\outreach-dashboard\\\\codex-chrome-driver.js prepare-instagram-draft {\\\"port\\\":9224,\\\"tabId\\\":\\\"2BAD0AEF0C9EAF50046BE1837982533A\\\",\\\"targetUrl\\\":\\\"https://www.instagram.com/facewest/\\\",\\\"expectedCompany\\\":\\\"Facewest\\\",\\\"draft\\\":\\\"Hi Facewest team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a retail/category buyer, the strongest fit is assortment fit, new SKU pipeline, price-tier coverage, and proven consumer demand; your verified outdoor, camping and travel retail social refill channel focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the category buyer or vendor-review owner for a short intro video meeting?\\\",\\\"autoSend\\\":true,\\\"autoEngage\\\":true,\\\"engagementComment\\\":\\\"Great outdoor checklist. Useful reminder for hikers preparing a complete, lightweight kit.\\\",\\\"replaceExistingDraft\\\":true}\\n\",\"nextAction\":\"Major Codex Chrome driver failure; pause and notify operator before retry.\",\"draft\":\"Hi Facewest team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a retail/category buyer, the strongest fit is assortment fit, new SKU pipeline, price-tier coverage, and proven consumer demand; your verified outdoor, camping and travel retail social refill channel focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the category buyer or vendor-review owner for a short intro video meeting?\",\"sendStatus\":\"approval_pending\"}",
+        "sendStatus": "failed_open",
+        "output": "{\"verdict\":\"major_bug_review_needed\",\"evidence\":\"driver_error: CDP websocket error: Page.bringToFront\",\"nextAction\":\"Automation paused; notify operator only if this is a major bug or unsafe retry risk.\",\"draft\":\"Hi Facewest team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a retail/category buyer, the strongest fit is assortment fit, new SKU pipeline, price-tier coverage, and proven consumer demand; your verified outdoor, camping and travel retail social refill channel focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the category buyer or vendor-review owner for a short intro video meeting?\",\"sendStatus\":\"failed_open\"}",
         "decision": {
           "verdict": "develop",
           "fitScore": 84,
@@ -354,8 +354,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
         "engine": "codex-chrome-extension-cdp",
         "port": 9224,
         "targetUrl": "https://www.instagram.com/jaxoutdoor/",
-        "tabId": "7BBA952436F85734C9EFD2F1D5558BFD",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/7BBA952436F85734C9EFD2F1D5558BFD",
+        "tabId": "C79272173D839D6781201AC650E32F00",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/C79272173D839D6781201AC650E32F00",
         "title": "James Hopkins (@jaxoutdoor) · Instagram 照片和视频"
       },
       "result": {
@@ -369,8 +369,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
           "engine": "codex-chrome-extension-cdp",
           "port": 9224,
           "targetUrl": "https://www.instagram.com/jaxoutdoor/",
-          "tabId": "7BBA952436F85734C9EFD2F1D5558BFD",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/7BBA952436F85734C9EFD2F1D5558BFD",
+          "tabId": "C79272173D839D6781201AC650E32F00",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/C79272173D839D6781201AC650E32F00",
           "title": "James Hopkins (@jaxoutdoor) · Instagram 照片和视频"
         },
         "sendStatus": "failed_open",
@@ -392,67 +392,67 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "id": "google-customer-kittery-trading-post-website-contact",
       "company": "Kittery Trading Post",
       "action": "verify_target",
-      "reason": "marketing_attachment_missing"
+      "reason": "homepage_only_contact_path_requires_verification"
     },
     {
       "id": "google-customer-bivouac-outdoor-website-contact",
       "company": "Bivouac Outdoor",
       "action": "verify_target",
-      "reason": "marketing_attachment_missing"
+      "reason": "homepage_only_contact_path_requires_verification"
     },
     {
       "id": "google-customer-further-faster-website-contact",
       "company": "Further Faster",
       "action": "verify_target",
-      "reason": "marketing_attachment_missing"
+      "reason": "homepage_only_contact_path_requires_verification"
     },
     {
       "id": "sheet_1779293110195_9myxa520z",
       "company": "ARROW TIRE DISTRIBUTORS",
       "action": "email_priority",
-      "reason": "marketing_attachment_missing"
+      "reason": "official_website_contact_channel"
     },
     {
       "id": "sheet_1779293110195_g43uimg3f",
       "company": "ARROW TIRE DISTRIBUTORS",
       "action": "email_priority",
-      "reason": "marketing_attachment_missing"
+      "reason": "official_website_contact_channel"
     },
     {
       "id": "sheet_1779293110195_u24j2gdmq",
       "company": "FAUNA OUTDOOR",
       "action": "email_priority",
-      "reason": "marketing_attachment_missing"
+      "reason": "official_website_contact_channel"
     },
     {
       "id": "sheet_1779293110195_vwshd681i",
       "company": "FAUNA OUTDOOR",
       "action": "email_priority",
-      "reason": "marketing_attachment_missing"
+      "reason": "official_website_contact_channel"
     },
     {
       "id": "sheet_1779293110195_g0uwgglwc",
       "company": "JOHN DOYLE DISTRIBUTORS",
       "action": "email_priority",
-      "reason": "marketing_attachment_missing"
+      "reason": "official_website_contact_channel"
     },
     {
       "id": "sheet_1779293110195_0f1r27koe",
       "company": "TAHOE SPORTS HUB",
       "action": "email_priority",
-      "reason": "marketing_attachment_missing"
+      "reason": "official_website_contact_channel"
     },
     {
       "id": "sheet_1779293110195_kcsohl3dy",
       "company": "TAHOE SPORTS HUB",
       "action": "email_priority",
-      "reason": "marketing_attachment_missing"
+      "reason": "official_website_contact_channel"
     },
     {
       "id": "sheet_1779293110195_4akfr27wz",
       "company": "TAHOE SPORTS HUB",
       "action": "email_priority",
-      "reason": "marketing_attachment_missing"
+      "reason": "official_website_contact_channel"
     },
     {
       "id": "google-customer-above-and-beyond-facebook",
@@ -590,115 +590,115 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "id": 23,
       "company": "Ace Hardware",
       "action": "verify_target",
-      "reason": "marketing_attachment_missing"
+      "reason": "missing_verified_profile_url"
     },
     {
       "id": 7,
       "company": "AutoZone",
       "action": "verify_target",
-      "reason": "marketing_attachment_missing"
+      "reason": "missing_verified_profile_url"
     },
     {
       "id": 10,
       "company": "Backcountry.com",
       "action": "verify_target",
-      "reason": "marketing_attachment_missing"
+      "reason": "missing_verified_profile_url"
     },
     {
       "id": 20,
       "company": "Harbor Freight",
       "action": "verify_target",
-      "reason": "marketing_attachment_missing"
+      "reason": "missing_verified_profile_url"
     },
     {
       "id": 6,
       "company": "L.L.Bean",
       "action": "verify_target",
-      "reason": "marketing_attachment_missing"
+      "reason": "missing_verified_profile_url"
     },
     {
       "id": 17,
       "company": "Target",
       "action": "verify_target",
-      "reason": "marketing_attachment_missing"
+      "reason": "missing_verified_profile_url"
     },
     {
       "id": 22,
       "company": "Thor Industries",
       "action": "verify_target",
-      "reason": "marketing_attachment_missing"
+      "reason": "missing_verified_profile_url"
     },
     {
       "id": 13,
       "company": "Walgreens",
       "action": "verify_target",
-      "reason": "marketing_attachment_missing"
+      "reason": "missing_verified_profile_url"
     },
     {
       "id": 18,
       "company": "Winnebago",
       "action": "verify_target",
-      "reason": "marketing_attachment_missing"
+      "reason": "missing_verified_profile_url"
     },
     {
       "id": 11,
       "company": "Best Buy",
       "action": "verify_target",
-      "reason": "marketing_attachment_missing"
+      "reason": "missing_verified_profile_url"
     },
     {
       "id": 9,
       "company": "Canadian Tire",
       "action": "verify_target",
-      "reason": "marketing_attachment_missing"
+      "reason": "missing_verified_profile_url"
     },
     {
       "id": 19,
       "company": "MEC (Mountain Equipment Co-op)",
       "action": "verify_target",
-      "reason": "marketing_attachment_missing"
+      "reason": "missing_verified_profile_url"
     },
     {
       "id": 16,
       "company": "Airstream",
       "action": "verify_target",
-      "reason": "marketing_attachment_missing"
+      "reason": "missing_verified_profile_url"
     },
     {
       "id": 5,
       "company": "Pacific Outdoor Group",
       "action": "verify_target",
-      "reason": "marketing_attachment_missing"
+      "reason": "missing_verified_profile_url"
     },
     {
       "id": 14,
       "company": "Rural King",
       "action": "verify_target",
-      "reason": "marketing_attachment_missing"
+      "reason": "missing_verified_profile_url"
     },
     {
       "id": 21,
       "company": "RVDA (RV Dealers Association)",
       "action": "verify_target",
-      "reason": "marketing_attachment_missing"
+      "reason": "missing_verified_profile_url"
     },
     {
       "id": "google-customer-kittery-trading-post-website-contact",
       "company": "Kittery Trading Post",
       "action": "email_priority",
-      "reason": "marketing_attachment_missing"
+      "reason": "homepage_only_contact_path_requires_verification"
     },
     {
       "id": "google-customer-bivouac-outdoor-website-contact",
       "company": "Bivouac Outdoor",
       "action": "email_priority",
-      "reason": "marketing_attachment_missing"
+      "reason": "homepage_only_contact_path_requires_verification"
     },
     {
       "id": "google-customer-further-faster-website-contact",
       "company": "Further Faster",
       "action": "email_priority",
-      "reason": "marketing_attachment_missing"
+      "reason": "homepage_only_contact_path_requires_verification"
     },
     {
       "id": "google-customer-above-and-beyond-facebook",
@@ -836,145 +836,145 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "id": "sheet_1779293110195_9myxa520z",
       "company": "ARROW TIRE DISTRIBUTORS",
       "action": "email_priority",
-      "reason": "marketing_attachment_missing"
+      "reason": "official_website_contact_channel"
     },
     {
       "id": "sheet_1779293110195_g43uimg3f",
       "company": "ARROW TIRE DISTRIBUTORS",
       "action": "email_priority",
-      "reason": "marketing_attachment_missing"
+      "reason": "official_website_contact_channel"
     },
     {
       "id": "sheet_1779293110195_u24j2gdmq",
       "company": "FAUNA OUTDOOR",
       "action": "email_priority",
-      "reason": "marketing_attachment_missing"
+      "reason": "official_website_contact_channel"
     },
     {
       "id": "sheet_1779293110195_vwshd681i",
       "company": "FAUNA OUTDOOR",
       "action": "email_priority",
-      "reason": "marketing_attachment_missing"
+      "reason": "official_website_contact_channel"
     },
     {
       "id": "sheet_1779293110195_g0uwgglwc",
       "company": "JOHN DOYLE DISTRIBUTORS",
       "action": "email_priority",
-      "reason": "marketing_attachment_missing"
+      "reason": "official_website_contact_channel"
     },
     {
       "id": "sheet_1779293110195_0f1r27koe",
       "company": "TAHOE SPORTS HUB",
       "action": "email_priority",
-      "reason": "marketing_attachment_missing"
+      "reason": "official_website_contact_channel"
     },
     {
       "id": "sheet_1779293110195_kcsohl3dy",
       "company": "TAHOE SPORTS HUB",
       "action": "email_priority",
-      "reason": "marketing_attachment_missing"
+      "reason": "official_website_contact_channel"
     },
     {
       "id": "sheet_1779293110195_4akfr27wz",
       "company": "TAHOE SPORTS HUB",
       "action": "email_priority",
-      "reason": "marketing_attachment_missing"
+      "reason": "official_website_contact_channel"
     },
     {
       "id": 23,
       "company": "Ace Hardware",
       "action": "verify_target",
-      "reason": "marketing_attachment_missing"
+      "reason": "missing_verified_profile_url"
     },
     {
       "id": 7,
       "company": "AutoZone",
       "action": "verify_target",
-      "reason": "marketing_attachment_missing"
+      "reason": "missing_verified_profile_url"
     },
     {
       "id": 10,
       "company": "Backcountry.com",
       "action": "verify_target",
-      "reason": "marketing_attachment_missing"
+      "reason": "missing_verified_profile_url"
     },
     {
       "id": 20,
       "company": "Harbor Freight",
       "action": "verify_target",
-      "reason": "marketing_attachment_missing"
+      "reason": "missing_verified_profile_url"
     },
     {
       "id": 6,
       "company": "L.L.Bean",
       "action": "verify_target",
-      "reason": "marketing_attachment_missing"
+      "reason": "missing_verified_profile_url"
     },
     {
       "id": 17,
       "company": "Target",
       "action": "verify_target",
-      "reason": "marketing_attachment_missing"
+      "reason": "missing_verified_profile_url"
     },
     {
       "id": 22,
       "company": "Thor Industries",
       "action": "verify_target",
-      "reason": "marketing_attachment_missing"
+      "reason": "missing_verified_profile_url"
     },
     {
       "id": 13,
       "company": "Walgreens",
       "action": "verify_target",
-      "reason": "marketing_attachment_missing"
+      "reason": "missing_verified_profile_url"
     },
     {
       "id": 18,
       "company": "Winnebago",
       "action": "verify_target",
-      "reason": "marketing_attachment_missing"
+      "reason": "missing_verified_profile_url"
     },
     {
       "id": 11,
       "company": "Best Buy",
       "action": "verify_target",
-      "reason": "marketing_attachment_missing"
+      "reason": "missing_verified_profile_url"
     },
     {
       "id": 9,
       "company": "Canadian Tire",
       "action": "verify_target",
-      "reason": "marketing_attachment_missing"
+      "reason": "missing_verified_profile_url"
     },
     {
       "id": 19,
       "company": "MEC (Mountain Equipment Co-op)",
       "action": "verify_target",
-      "reason": "marketing_attachment_missing"
+      "reason": "missing_verified_profile_url"
     },
     {
       "id": 16,
       "company": "Airstream",
       "action": "verify_target",
-      "reason": "marketing_attachment_missing"
+      "reason": "missing_verified_profile_url"
     },
     {
       "id": 5,
       "company": "Pacific Outdoor Group",
       "action": "verify_target",
-      "reason": "marketing_attachment_missing"
+      "reason": "missing_verified_profile_url"
     },
     {
       "id": 14,
       "company": "Rural King",
       "action": "verify_target",
-      "reason": "marketing_attachment_missing"
+      "reason": "missing_verified_profile_url"
     },
     {
       "id": 21,
       "company": "RVDA (RV Dealers Association)",
       "action": "verify_target",
-      "reason": "marketing_attachment_missing"
+      "reason": "missing_verified_profile_url"
     }
   ],
   "summary": {
@@ -1000,9 +1000,9 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
   },
   "blockerSummary": [
     {
-      "reason": "marketing_attachment_missing",
+      "reason": "missing_verified_profile_url",
       "status": "skipped",
-      "count": 54
+      "count": 32
     },
     {
       "reason": "concrete_google_discovered_major_customer_facebook",
@@ -1015,22 +1015,28 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "count": 18
     },
     {
-      "reason": "approval_pending",
-      "status": "approval_pending",
-      "count": 2
+      "reason": "official_website_contact_channel",
+      "status": "skipped",
+      "count": 16
+    },
+    {
+      "reason": "homepage_only_contact_path_requires_verification",
+      "status": "skipped",
+      "count": 6
     },
     {
       "reason": "failed_open",
       "status": "failed_open",
-      "count": 2
+      "count": 4
     }
   ],
   "blockerCounts": {
-    "marketing_attachment_missing": 54,
+    "missing_verified_profile_url": 32,
     "concrete_google_discovered_major_customer_facebook": 26,
     "concrete_google_discovered_major_customer_instagram": 18,
-    "approval_pending": 2,
-    "failed_open": 2
+    "official_website_contact_channel": 16,
+    "homepage_only_contact_path_requires_verification": 6,
+    "failed_open": 4
   },
   "queueGoalStatus": {
     "target": 100,
@@ -1041,8 +1047,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     "reached": false,
     "action": "Add more verified high-ICP sources or unblock existing website/social leads."
   },
-  "userVisibleStatus": "Customer development was not performed. Blockers: marketing_attachment_missing (54); concrete_google_discovered_major_customer_facebook (26); concrete_google_discovered_major_customer_instagram (18).",
-  "recoveryHint": "Refill the high-ICP pool with 47 verified leads or unblock existing website/social leads before the next run. Configure WEBSITE_MARKETING_FILE or MARKETING_ATTACHMENT_PATH with an approved marketing attachment before rerunning website-contact outreach. Confirm the official social profile and safe message entry before rerunning Google-discovered social outreach. Verify the official profile opens and exposes a safe message composer, or switch to another verified channel.",
+  "userVisibleStatus": "Customer development was not performed. Blockers: missing_verified_profile_url (32); concrete_google_discovered_major_customer_facebook (26); concrete_google_discovered_major_customer_instagram (18).",
+  "recoveryHint": "Refill the high-ICP pool with 47 verified leads or unblock existing website/social leads before the next run. Add a verified Facebook or Instagram profile URL before retrying social outreach. Confirm the official social profile and safe message entry before rerunning Google-discovered social outreach. Verify the official profile opens and exposes a safe message composer, or switch to another verified channel.",
   "recoveryActions": [
     {
       "reason": "daily_queue_goal_not_reached",
@@ -1054,14 +1060,10 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "refillNeeded": 47
     },
     {
-      "reason": "marketing_attachment_missing",
-      "action": "Add approved website outreach attachment",
-      "description": "Set WEBSITE_MARKETING_FILE or MARKETING_ATTACHMENT_PATH before rerunning website-contact outreach.",
-      "hint": "Configure WEBSITE_MARKETING_FILE or MARKETING_ATTACHMENT_PATH with an approved marketing attachment before rerunning website-contact outreach.",
-      "requiredEnv": [
-        "WEBSITE_MARKETING_FILE",
-        "MARKETING_ATTACHMENT_PATH"
-      ]
+      "reason": "missing_verified_profile_url",
+      "action": "Verify official social profile URL",
+      "description": "Add a verified Facebook or Instagram profile URL before retrying social outreach.",
+      "hint": "Add a verified Facebook or Instagram profile URL before retrying social outreach."
     },
     {
       "reason": "google_social_profile_not_executable",
@@ -1082,12 +1084,12 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     "stderr": "",
     "error": "",
     "visibility": {
-      "updatedAt": "2026-07-20T11:05:28.470Z",
+      "updatedAt": "2026-07-20T11:25:54.854Z",
       "source": "main-refreshDailyAutomationArtifacts",
       "runDate": "2026-07-20",
-      "artifactGeneratedAt": "2026-07-20T11:05:27.394Z",
-      "executionGeneratedAt": "2026-07-20T09:13:16.887Z",
-      "githubSyncUpdatedAt": "2026-07-20T09:14:02.122Z",
+      "artifactGeneratedAt": "2026-07-20T11:25:53.268Z",
+      "executionGeneratedAt": "2026-07-20T11:05:29.250Z",
+      "githubSyncUpdatedAt": "2026-07-20T11:05:52.774Z",
       "counts": {
         "dailyQueue": 53,
         "googleDiscovered": 29,
@@ -1139,5 +1141,5 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       }
     }
   },
-  "completedAt": "2026-07-20T11:05:29.250Z"
+  "completedAt": "2026-07-20T11:25:56.245Z"
 };

@@ -351,6 +351,23 @@ function failedOpenResultShouldBlockRetry(result = {}) {
   return true;
 }
 
+function checkpointResultIsTerminal(result = {}) {
+  const status = String(result.sendStatus || result.status || '');
+  if (['sent_confirmed', 'submitted_confirmed', 'account_followed', 'post_liked', 'website_contact_ready', 'website_contact_unreachable_skip'].includes(status)) {
+    return true;
+  }
+  if (status === 'send_unconfirmed') {
+    return sendStatusHasCustomerInteraction(status, result.evidence);
+  }
+  if (status === 'failed_open') {
+    return failedOpenResultShouldBlockRetry({
+      status,
+      evidence: result.evidence,
+    });
+  }
+  return false;
+}
+
 function websiteContactResultIsVerified(result = {}) {
   if (result.status !== 'website_contact_ready') return true;
   const evidence = String(result.evidence || '').toLowerCase();
@@ -1304,9 +1321,10 @@ async function runCodexChromeDriver(command, payload) {
   try {
     const result = await execFilePromise(nodeCommand, args, {
       windowsHide: true,
-      // A stuck Facebook/Instagram page must fail one lead and let the
-      // serial queue continue; the daily watchdog is only five minutes.
-      timeout: 45000,
+      // The driver has bounded profile, message-button and composer waits.
+      // Give those waits time to return a structured safe failure instead of
+      // killing the child halfway through and misreporting approval_pending.
+      timeout: 80000,
       maxBuffer: 2 * 1024 * 1024,
     });
     return parseDriverJson(result.stdout);
@@ -2997,7 +3015,6 @@ async function runDailyAutomationQueue(payload = {}) {
   const parallelLimit = 1;
   const previousResults = readJsonScriptArray(path.join(__dirname, 'autonomous-outreach-results.js'), 'AUTONOMOUS_OUTREACH_RESULTS');
   const sameDayCompanyKeys = sameDayAutomationCompanyKeys(previousResults);
-  const attachmentReady = websiteMarketingAttachmentStatus().ok;
   const dueCandidates = executableQueueCandidates(latest.dailyQueue, { allowWebsiteContact: false });
   const scheduledExecutable = executableQueueCandidates(latest.scheduledLater || [], { allowWebsiteContact: false });
   const potentialFallback = executableQueueCandidates(latest.dailyPotentialPool || [], { allowWebsiteContact: false })
@@ -3024,10 +3041,14 @@ async function runDailyAutomationQueue(payload = {}) {
   const executable = [];
   const skipped = [];
   const checkpoint = readDailyExecutionCheckpoint(latest.date);
+  const checkpointResults = Array.isArray(checkpoint && checkpoint.completedResults)
+    ? checkpoint.completedResults
+    : [];
   const checkpointCompletedIds = new Set(
-    Array.isArray(checkpoint && checkpoint.completedTaskIds)
-      ? checkpoint.completedTaskIds.filter(Boolean)
-      : [],
+    checkpointResults
+      .filter(checkpointResultIsTerminal)
+      .map(item => item && item.id)
+      .filter(Boolean),
   );
   const selectedCompanyKeys = new Set(sameDayCompanyKeys);
   for (const item of candidatePool) {
@@ -3059,9 +3080,11 @@ async function runDailyAutomationQueue(payload = {}) {
       id: item.id,
       company: item.company,
       action: item.action,
-      reason: !attachmentReady && isWebsiteContactQueueItem(item)
-        ? 'marketing_attachment_missing'
-        : item.reason,
+      // An unattempted website/email candidate is not blocked by a missing
+      // attachment. Attachment requirements can only be known after the
+      // verified form is inspected; prepareWebsiteContactForm records the
+      // blocker when a required file input actually exists.
+      reason: item.reason,
     }));
 
   if (!executable.length) {
@@ -3194,7 +3217,7 @@ async function runDailyAutomationQueue(payload = {}) {
     }));
     results.push(...batchResults);
     batchResults.forEach(item => {
-      if (item && item.id) completedTaskIds.add(item.id);
+      if (item && item.id && checkpointResultIsTerminal(item)) completedTaskIds.add(item.id);
     });
     currentDailyExecutionProgress = {
       ...currentDailyExecutionProgress,
