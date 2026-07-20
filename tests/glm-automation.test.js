@@ -47,15 +47,15 @@ test('daily automation default run date follows Shanghai business day', () => {
   );
 });
 
-test('daily queue prioritizes LinkedIn, Facebook and Instagram over website contact', () => {
+test('daily queue prioritizes Email, LinkedIn, Facebook and Instagram in that order', () => {
+  assert.ok(dailyRunner.channelPriorityScore({ platform: 'email', reason: 'official_website_contact_channel' })
+    > dailyRunner.channelPriorityScore({ platform: 'linkedin' }));
   assert.ok(dailyRunner.channelPriorityScore({ platform: 'linkedin' })
     > dailyRunner.channelPriorityScore({ platform: 'facebook' }));
   assert.ok(dailyRunner.channelPriorityScore({ platform: 'facebook' })
     > dailyRunner.channelPriorityScore({ platform: 'instagram' }));
-  assert.ok(dailyRunner.channelPriorityScore({ platform: 'instagram' })
-    > dailyRunner.channelPriorityScore({ platform: 'email', reason: 'official_website_contact_channel' }));
   assert.ok(dailyRunner.channelPriorityScore({ platform: 'facebook' })
-    > dailyRunner.channelPriorityScore({ platform: 'email', reason: 'official_website_contact_channel' }));
+    > dailyRunner.channelPriorityScore({ platform: 'instagram' }));
 });
 
 test('website contact can execute without a configured attachment', () => {
@@ -76,6 +76,14 @@ test('website contact can execute without a configured attachment', () => {
   assert.ok(mainSource.includes('required_attachment_missing'));
   assert.ok(mainSource.includes('website_contact_public_email_sender_required') || mainSource.includes('email_sender_not_configured'));
   assert.ok(mainSource.includes('public_email_fallback_available'));
+  assert.ok(mainSource.includes('Attachment requirements can only be known after the'));
+  assert.doesNotMatch(mainSource, /reason:\s*!attachmentReady\s*&&\s*isWebsiteContactQueueItem/);
+});
+
+test('email execution enforces a per-domain daily safety gate', () => {
+  assert.ok(mainSource.includes("require('./email-operations')"));
+  assert.ok(mainSource.includes('email_domain_safety_gate'));
+  assert.ok(mainSource.includes('email_domain_daily_limit_reached'));
 });
 
 test('daily execution ranks LinkedIn, Facebook and Instagram before website contact fallback', () => {
@@ -412,7 +420,7 @@ test('Google discovery gives autonomous refill customers social channels before 
   assert.ok(summitLeads.some(item => item.platform === 'email'));
 });
 
-test('daily queue preserves multi-channel outreach but ranks social before website contact', () => {
+test('daily queue preserves multi-channel outreach and ranks email before social channels', () => {
   const filtered = dailyRunner.preferSocialChannels([
     {
       id: 'google-customer-sail-outdoors-website-contact',
@@ -445,10 +453,11 @@ test('daily queue preserves multi-channel outreach but ranks social before websi
   assert.ok(filtered.some(item => item.id === 'google-customer-sail-outdoors-instagram'));
   assert.ok(filtered.some(item => item.id === 'google-customer-sail-outdoors-website-contact'));
   assert.ok(filtered.some(item => item.id === 'google-customer-liberty-mountain-website-contact'));
-  assert.equal(filtered[0].id, 'google-customer-sail-outdoors-facebook');
-  assert.equal(filtered[1].id, 'google-customer-sail-outdoors-instagram');
+  assert.deepEqual(filtered.slice(0, 2).map(item => item.platform), ['email', 'email']);
   assert.ok(filtered.findIndex(item => item.id === 'google-customer-sail-outdoors-website-contact')
-    > filtered.findIndex(item => item.id === 'google-customer-sail-outdoors-facebook'));
+    < filtered.findIndex(item => item.id === 'google-customer-sail-outdoors-facebook'));
+  assert.ok(filtered.findIndex(item => item.id === 'google-customer-sail-outdoors-facebook')
+    < filtered.findIndex(item => item.id === 'google-customer-sail-outdoors-instagram'));
 });
 
 test('Google discovery marks active customers as partner accounts only', () => {
@@ -535,14 +544,14 @@ test('Aqipa carries verified analyst-grade research into every channel lead', ()
   assert.ok(aqipa.dataSources.length >= 4);
 });
 
-test('LinkedIn company profiles remain distinct queue targets', () => {
+test('Email-first sorting keeps LinkedIn company profiles as distinct queue targets', () => {
   const sorted = dailyRunner.preferSocialChannels([
     { id: 'esprinet', company: 'Esprinet Group', platform: 'linkedin', url: 'https://www.linkedin.com/company/esprinet-group/', dealProbabilityScore: 250 },
     { id: 'cms', company: 'CMS Distribution', platform: 'linkedin', url: 'https://www.linkedin.com/company/cms-distribution', dealProbabilityScore: 248 },
     { id: 'cms-email', company: 'CMS Distribution', platform: 'email', url: 'https://www.cmsdistribution.com/contact-us', dealProbabilityScore: 248 },
   ]);
-  assert.deepEqual(sorted.slice(0, 2).map(item => item.id), ['esprinet', 'cms']);
-  assert.ok(dailyRunnerSource.includes("const rank = { linkedin: 0, facebook: 1, instagram: 2, email: 3 }"));
+  assert.deepEqual(sorted.map(item => item.id), ['cms-email', 'esprinet', 'cms']);
+  assert.ok(dailyRunnerSource.includes("const rank = { email: 0, linkedin: 1, facebook: 2, instagram: 3 }"));
   assert.ok(dailyRunnerSource.includes("const regionRank = { europe: 0, oceania: 1, americas: 2 }"));
 });
 
@@ -852,6 +861,28 @@ test('Codex Chrome execution can auto-send approved social outreach with confirm
   assert.ok(!mainSource.includes("byText(['send', '发送'])"));
 });
 
+test('Instagram driver returns structured results before the parent timeout and rejects non-message inputs', () => {
+  assert.ok(mainSource.includes('timeout: 80000'));
+  assert.ok(chromeDriverSource.includes('for (let attempt = 0; attempt < 3; attempt += 1)'));
+  assert.ok(chromeDriverSource.includes('search|comment|caption|filter|find'));
+  assert.ok(chromeDriverSource.includes('sort((a, b) => b.y - a.y)[0]'));
+  assert.ok(chromeDriverSource.includes("Page.bringToFront', {}, 2000).catch(() => null)"));
+});
+
+test('recoverable social composer failures fall back across verified channels without blind retries', () => {
+  assert.ok(mainSource.includes('function alternateChannelFallbackLead'));
+  assert.ok(mainSource.includes('composer_not_found|message_button_clicked_composer_not_found'));
+  assert.ok(mainSource.includes("['facebook', channels.facebook]"));
+  assert.ok(mainSource.includes("['email', channels.websiteContact || lead.contactUrl || lead.website]"));
+  assert.ok(mainSource.includes('if (!blockingAutomationResultFor(fallback)) return fallback'));
+  assert.ok(mainSource.includes('fallbackPlatform: alternateFallback.platform'));
+  assert.ok(mainSource.includes('driver_timeout_bounded:80000'));
+  const sameDayStatusesStart = mainSource.indexOf('const SAME_DAY_DEVELOPMENT_STATUSES');
+  const sameDayStatusesEnd = mainSource.indexOf('function automationLocalDay', sameDayStatusesStart);
+  assert.ok(sameDayStatusesStart >= 0 && sameDayStatusesEnd > sameDayStatusesStart);
+  assert.doesNotMatch(mainSource.slice(sameDayStatusesStart, sameDayStatusesEnd), /website_contact_unreachable_skip/);
+});
+
 test('daily execution is serial and can process a priority batch per run', () => {
   assert.ok(mainSource.includes("mode: 'serial-single-target'"));
   assert.ok(mainSource.includes('const parallelLimit = 1'));
@@ -866,15 +897,18 @@ test('daily execution is serial and can process a priority batch per run', () =>
   assert.ok(mainSource.includes('const websiteFallback = executableQueueCandidates'));
   assert.ok(mainSource.includes('const isAutoRunDaily = process.argv.includes'));
   assert.ok(mainSource.includes('async function runAutoDailyAndWriteArtifact'));
-  assert.ok(mainSource.includes('timeout: 45000'));
+  assert.ok(mainSource.includes('timeout: 80000'));
 });
 
 test('daily execution checkpoints completed tasks and resumes without duplicate processing', () => {
   assert.ok(mainSource.includes("const DAILY_EXECUTION_CHECKPOINT_FILE = 'daily-automation-execution-checkpoint.json'"));
   assert.ok(mainSource.includes('function readDailyExecutionCheckpoint'));
   assert.ok(mainSource.includes('function writeDailyExecutionCheckpoint'));
+  assert.ok(mainSource.includes('function checkpointResultIsTerminal'));
+  assert.ok(mainSource.includes('.filter(checkpointResultIsTerminal)'));
   assert.ok(mainSource.includes("reason: 'completed_in_execution_checkpoint'"));
   assert.ok(mainSource.includes('completedTaskIds: [...completedTaskIds]'));
+  assert.ok(mainSource.includes('checkpointResultIsTerminal(item)'));
   assert.ok(mainSource.includes('checkpoint: readJson(dailyExecutionCheckpointPath(), null)'));
 });
 
@@ -903,19 +937,36 @@ test('automation-owned Chrome work opens in a separate background tab without st
   assert.ok(mainSource.includes('if (!options.automationOwned) await activateChromeTarget(port, opened)'));
 });
 
+test('Windows automation runs every three hours in bounded batches', () => {
+  const installer = fs.readFileSync(path.join(__dirname, '..', 'outreach-dashboard', 'install-daily-automation-task.ps1'), 'utf8');
+  const runner = fs.readFileSync(path.join(__dirname, '..', 'outreach-dashboard', 'run-daily-customer-development.ps1'), 'utf8');
+  const config = JSON.parse(fs.readFileSync(path.join(__dirname, '..', 'outreach-dashboard', 'daily-automation-config.json'), 'utf8'));
+  assert.equal(config.checkEveryMinutes, 180);
+  assert.equal(config.executionBatchTarget, 13);
+  assert.ok(installer.includes('RepetitionInterval (New-TimeSpan -Minutes $EveryMinutes)'));
+  assert.ok(installer.includes('Get-Content $ConfigPath -Raw -Encoding UTF8'));
+  assert.ok(installer.includes('-MultipleInstances IgnoreNew'));
+  assert.ok(runner.includes('$env:DAILY_EXECUTE_LIMIT'));
+  assert.ok(runner.includes('Get-Content $ConfigPath -Raw -Encoding UTF8'));
+  assert.ok(runner.includes('[Math]::Min([Math]::Max($BatchTarget, 1), 13)'));
+});
+
 test('sales copy selects verified FLEXTAIL collateral and keeps social DMs concise', () => {
   const collateralSource = fs.readFileSync(path.join(__dirname, '..', 'outreach-dashboard', 'sales-collateral.js'), 'utf8');
   assert.ok(collateralSource.includes('https://www.flextail.com/collections/all-products'));
   assert.ok(collateralSource.includes('https://www.flextail.com/collections/camping-appliances'));
   assert.ok(collateralSource.includes('https://www.flextail.com/products/tiny-pump-2x'));
   assert.ok(glmSource.includes("const isSocial = /facebook|instagram|linkedin/.test(channel)"));
-  assert.ok(glmSource.includes("if (!isSocial) message.splice(2, 0"));
+  assert.ok(glmSource.includes("if (!isSocial) {"));
   assert.ok(glmSource.includes("/follow.?up.?2|day.?7|day.?10|close/"));
   assert.ok(glmSource.includes("/follow|day.?3|day.?5/"));
   const socialDraft = professionalSalesDraft({ company: 'Trail Shop', platform: 'Facebook', category: 'camping' }, '');
   const emailDraft = professionalSalesDraft({ company: 'Trail Shop', platform: 'Email', category: 'camping' }, '');
   assert.doesNotMatch(socialDraft, /https?:\/\//);
   assert.match(emailDraft, /https:\/\/www\.flextail\.com\//);
+  assert.match(emailDraft, /Best regards,/);
+  assert.match(emailDraft, /vendor\/category review/);
+  assert.doesNotMatch(emailDraft, /nice to e-meet you/i);
 });
 
 test('daily execution duplicate blocking is channel-aware', () => {

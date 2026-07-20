@@ -66,10 +66,19 @@ async function waitForJson(tab, expression, accepts, timeoutMs = 15000, interval
 }
 
 async function findTab(port, tabId, targetUrl) {
-  const tabs = await httpJson(`http://127.0.0.1:${port}/json`, 2500);
-  return tabs.find(tab => tab.id === tabId)
-    || tabs.find(tab => targetUrl && tab.url === targetUrl)
-    || tabs.find(tab => targetUrl && tab.url && tab.url.replace(/\/+$/, '') === targetUrl.replace(/\/+$/, ''));
+  let lastError = null;
+  for (let attempt = 0; attempt < 3; attempt += 1) {
+    try {
+      const tabs = await httpJson(`http://127.0.0.1:${port}/json`, 3500);
+      return tabs.find(tab => tab.id === tabId)
+        || tabs.find(tab => targetUrl && tab.url === targetUrl)
+        || tabs.find(tab => targetUrl && tab.url && tab.url.replace(/\/+$/, '') === targetUrl.replace(/\/+$/, ''));
+    } catch (error) {
+      lastError = error;
+      if (attempt < 2) await sleep(500 * (attempt + 1));
+    }
+  }
+  throw lastError || new Error(`Chrome target list unavailable on port ${port}`);
 }
 
 async function evaluateJson(tab, expression, timeoutMs = 8000) {
@@ -368,6 +377,7 @@ function composerExpression(platform) {
       const placeholder = String(el.getAttribute('placeholder') || '').toLowerCase();
       const text = String(el.innerText || el.value || '').trim();
       const editable = el.getAttribute('contenteditable') === 'true' || el.getAttribute('role') === 'textbox' || el.tagName === 'TEXTAREA' || el.tagName === 'INPUT';
+      const nonMessageInput = /search|comment|caption|filter|find|搜索|评论|查找/.test(label + ' ' + placeholder);
       const messageLike = label.includes('message') || placeholder.includes('message')
         || label.includes('\\u6d88\\u606f') || placeholder.includes('\\u6d88\\u606f')
         || label.includes('write') || placeholder.includes('write')
@@ -383,7 +393,7 @@ function composerExpression(platform) {
         placeholder,
         visible: visible(el),
         inDialog,
-        match: visible(el) && editable && messageLike
+        match: visible(el) && editable && messageLike && !nonMessageInput
       };
     });
     if (platform === 'facebook') {
@@ -396,8 +406,8 @@ function composerExpression(platform) {
       return JSON.stringify(null);
     }
     return JSON.stringify(
-      elements.find(item => item.match && item.inDialog)
-      || elements.find(item => item.match)
+      elements.filter(item => item.match && item.inDialog).sort((a, b) => b.y - a.y)[0]
+      || elements.filter(item => item.match).sort((a, b) => b.y - a.y)[0]
       || elements.find(item => item.visible && item.inDialog)
       || elements.find(item => item.visible)
       || null
@@ -625,7 +635,7 @@ function setComposerTextExpression(composer, draft) {
         const rect = el.getBoundingClientRect();
         const label = String(el.getAttribute('aria-label') || el.getAttribute('placeholder') || el.getAttribute('role') || '').toLowerCase();
         const inDialog = Boolean(el.closest('[role="dialog"],[aria-modal="true"]'));
-        const messageLike = /message|reply|write|text|messenger|\\u6d88\\u606f|\\u8f93\\u5165/.test(label);
+        const messageLike = /message|reply|write|text|messenger|^aa$|\\u6d88\\u606f|\\u8f93\\u5165/.test(label);
         return {
           el,
           x: Math.round(rect.left + rect.width / 2),
@@ -661,10 +671,13 @@ function setComposerTextExpression(composer, draft) {
       }
       const inserted = document.execCommand && document.execCommand('insertText', false, draft);
       if (!inserted || !textOf(el).includes(draft.slice(0, Math.min(40, draft.length)))) {
-        el.textContent = draft;
+        el.replaceChildren();
+        el.appendChild(document.createTextNode(draft));
       }
       el.dispatchEvent(new InputEvent('beforeinput', { bubbles: true, composed: true, inputType: 'insertText', data: draft }));
       el.dispatchEvent(new InputEvent('input', { bubbles: true, composed: true, inputType: 'insertText', data: draft }));
+      el.dispatchEvent(new Event('change', { bubbles: true, composed: true }));
+      el.dispatchEvent(new KeyboardEvent('keyup', { bubbles: true, composed: true, key: ' ' }));
     } else {
       const proto = el.tagName === 'TEXTAREA' ? HTMLTextAreaElement.prototype : HTMLInputElement.prototype;
       const setter = Object.getOwnPropertyDescriptor(proto, 'value') && Object.getOwnPropertyDescriptor(proto, 'value').set;
@@ -821,8 +834,10 @@ function identityCheckExpression(expectedCompany, targetUrl) {
     const expectedTokens = expected.split(/\\s+/).filter(token => token.length >= 4);
     const tokenHits = expectedTokens.filter(token => visibleCompact.includes(compact(token))).length;
     const isSocial = /instagram\\.com|facebook\\.com/.test(host);
+    const facebookProfileUrl = /facebook\\.com\\/(?:profile\\.php|people)(?:[/?#]|$)/.test(location.href.toLowerCase());
     const businessSignal = /official|company|business|retail|outdoor|camping|hiking|wholesale|distributor|brand|vendor|merchandising|buyer|procurement|partnership|category|sales|about|website/.test(visibleLower);
     const employeeSignal = /buyer|category manager|merchandising|procurement|purchasing|vendor|partnership|business development|sales manager|works at|employee/.test(visibleLower);
+    const personalProfileSignal = /add friend|friends are family|\bfriends\b|lives in|from [a-z][a-z -]{2,40}|i'm a .*\b(chameleon|person|guy|girl)|个人主页|好友|朋友/.test(visibleLower);
     const emptyPersonalSignal = /0\\s*(posts?|帖子)[\\s\\S]{0,80}0\\s*(followers|粉丝)[\\s\\S]{0,80}0\\s*(following|关注)/i.test(visible);
     const companyOk = expectedCompact && visibleCompact.includes(expectedCompact);
     const pathOk = pathCompact && visibleCompact.includes(pathCompact);
@@ -831,8 +846,9 @@ function identityCheckExpression(expectedCompany, targetUrl) {
     const exactSocialUrlOk = isSocial && pathCompact.length >= 4 && locationPathCompact === pathCompact && handleMatchesExpected;
     const staffOk = tokenHits >= 1 && employeeSignal;
     const socialCompanyOk = companyOk || (tokenHits >= Math.min(2, expectedTokens.length) && businessSignal);
+    const facebookBusinessPageOk = platform !== 'facebook' || (!facebookProfileUrl && !personalProfileSignal && businessSignal);
     const ok = !expectedCompact || (isSocial
-      ? Boolean(socialCompanyOk || staffOk || exactSocialUrlOk)
+      ? Boolean((socialCompanyOk || staffOk || exactSocialUrlOk) && facebookBusinessPageOk)
       : Boolean(companyOk || (pathCompact.length >= 5 && pathOk)));
     const personalMismatch = isSocial && !ok && emptyPersonalSignal;
     return JSON.stringify({
@@ -872,9 +888,11 @@ function sideEffectButtonExpression(kind, platform) {
         width: Math.round(rect.width),
         height: Math.round(rect.height),
         visible: rect.width > 0 && rect.height > 0,
+        inDialog: Boolean(el.closest('[role="dialog"],[aria-modal="true"]')),
+        inNav: Boolean(el.closest('nav,[role="navigation"]')),
         disabled: Boolean(el.disabled || el.getAttribute('aria-disabled') === 'true')
       };
-    }).filter(item => item.visible && !item.disabled);
+    }).filter(item => item.visible && !item.disabled && !item.inDialog && !item.inNav);
     const alreadyActive = controls.find(item => negative.some(word => item.text.includes(word)));
     if (alreadyActive) return JSON.stringify({ alreadyActive: true, text: alreadyActive.text });
     const candidates = controls
@@ -886,8 +904,11 @@ function sideEffectButtonExpression(kind, platform) {
         return item.width >= 60 && item.height >= 24;
       })
       .filter(item => kind !== 'follow' || (item.x > 120 && item.y > 80 && item.y < Math.min(window.innerHeight - 80, 720)));
-    const exact = candidates.find(item => keywords.some(keyword => item.text === keyword));
-    const found = exact || candidates[0];
+    const facebookProfileCandidates = platform === 'facebook'
+      ? candidates.filter(item => item.x > 300 && item.y > 220 && item.y < Math.min(window.innerHeight - 80, 680))
+      : candidates;
+    const exact = facebookProfileCandidates.find(item => keywords.some(keyword => item.text === keyword));
+    const found = exact || facebookProfileCandidates[0] || (platform === 'facebook' ? null : candidates[0]);
     return JSON.stringify(found || null);
   })()`;
 }
@@ -1125,7 +1146,9 @@ function unavailableProfileExpression(platform) {
 
 async function ensureComposerOpen(tab, port, platform) {
   await httpJson(`http://127.0.0.1:${port}/json/activate/${tab.id}`, 1500).catch(() => null);
-  await cdp(tab.webSocketDebuggerUrl, 'Page.bringToFront', {}, 2000);
+  // Focus is best-effort. Background automation must continue through DOM/CDP
+  // even when Chrome briefly rejects Page.bringToFront.
+  await cdp(tab.webSocketDebuggerUrl, 'Page.bringToFront', {}, 2000).catch(() => null);
 
   await waitForJson(tab, `(() => JSON.stringify({
     ready: document.readyState,
@@ -1207,6 +1230,17 @@ async function ensureComposerOpen(tab, port, platform) {
     composer = await waitForJson(tab, composerExpression(platform), item => item && item.visible, 8000, 500);
   }
   if ((!composer || !Number.isFinite(composer.x)) && platform === 'facebook') {
+    // A Facebook Messenger panel can remain open without a writable composer
+    // (personal profiles, privacy-restricted pages, or stale chat windows).
+    // Close it and stop this target instead of reopening the same dead-end UI.
+    await closeFacebookMessengerInbox(tab);
+    await closeFacebookChatWindows(tab);
+    return {
+      messageUnavailable: true,
+      evidence: 'facebook_composer_unavailable_closed_no_retry',
+    };
+  }
+  if ((!composer || !Number.isFinite(composer.x)) && platform === 'facebook') {
     await closeFacebookMessengerInbox(tab);
     await closeFacebookChatWindows(tab);
     const retryButton = await waitForJson(
@@ -1265,6 +1299,13 @@ async function preparePlatformDraft(payload, platform) {
     return { ok: false, sendStatus: 'failed_open', evidence: 'chrome_target_not_found' };
   }
 
+  if (platform === 'facebook') {
+    // Clear any Messenger panel left by a previous target before identity
+    // validation, including pages rejected as personal profiles.
+    await closeFacebookMessengerInbox(tab);
+    await closeFacebookChatWindows(tab);
+  }
+
   const identity = await waitForJson(
     tab,
     identityCheckExpression(payload.expectedCompany, payload.targetUrl),
@@ -1300,6 +1341,16 @@ async function preparePlatformDraft(payload, platform) {
     } else if (platform === 'facebook') {
       preActions.push(await clickOptionalAction(tab, 'follow', platform));
       preActions.push(await submitFacebookPostEngagement(tab));
+    } else if (platform === 'linkedin') {
+      // LinkedIn company/profile outreach is intentionally limited to the
+      // requested sequence: follow first, then open Message and send the
+      // approved DM marketing draft. Do not comment or like on LinkedIn.
+      let follow = await clickOptionalAction(tab, 'follow', platform);
+      if (follow === 'follow_not_available') {
+        await sleep(900);
+        follow = await clickOptionalAction(tab, 'follow', platform);
+      }
+      preActions.push(follow);
     } else {
       preActions.push(await submitOptionalComment(tab, payload.engagementComment || 'Great outdoor checklist. Useful reminder for hikers preparing a complete, lightweight kit.'));
       preActions.push(await clickOptionalAction(tab, 'like', platform));
