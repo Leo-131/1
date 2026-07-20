@@ -104,6 +104,27 @@ function writeDailyExecutionArtifact(output) {
   writeSystemVisibilityArtifact('main-writeDailyExecutionArtifact');
 }
 
+const DAILY_EXECUTION_CHECKPOINT_FILE = 'daily-automation-execution-checkpoint.json';
+
+function dailyExecutionCheckpointPath() {
+  return path.join(__dirname, DAILY_EXECUTION_CHECKPOINT_FILE);
+}
+
+function readDailyExecutionCheckpoint(queueDate) {
+  const checkpoint = readJson(dailyExecutionCheckpointPath(), null);
+  if (!checkpoint || checkpoint.queueDate !== queueDate || checkpoint.completed === true) return null;
+  return checkpoint;
+}
+
+function writeDailyExecutionCheckpoint(value) {
+  writeJson(dailyExecutionCheckpointPath(), {
+    version: 1,
+    updatedAt: new Date().toISOString(),
+    ...value,
+  });
+  copyPublicArtifact(DAILY_EXECUTION_CHECKPOINT_FILE);
+}
+
 function readJsonScriptArray(file, globalName) {
   try {
     if (!fs.existsSync(file)) return [];
@@ -2967,8 +2988,23 @@ async function runDailyAutomationQueue(payload = {}) {
   ].sort(developmentPriorityCompare);
   const executable = [];
   const skipped = [];
+  const checkpoint = readDailyExecutionCheckpoint(latest.date);
+  const checkpointCompletedIds = new Set(
+    Array.isArray(checkpoint && checkpoint.completedTaskIds)
+      ? checkpoint.completedTaskIds.filter(Boolean)
+      : [],
+  );
   const selectedCompanyKeys = new Set(sameDayCompanyKeys);
   for (const item of candidatePool) {
+    if (checkpointCompletedIds.has(item.id)) {
+      skipped.push({
+        id: item.id,
+        company: item.company,
+        action: item.action,
+        reason: 'completed_in_execution_checkpoint',
+      });
+      continue;
+    }
     if (itemBlockedBySameDayCompany(item, selectedCompanyKeys)) {
       skipped.push({
         id: item.id,
@@ -3039,10 +3075,20 @@ async function runDailyAutomationQueue(payload = {}) {
     completedCount: 0,
     confirmedSendCount: 0,
     preparedWebsiteCount: 0,
+    resumedFromCheckpoint: checkpointCompletedIds.size > 0,
+    checkpointCompletedCount: checkpointCompletedIds.size,
     lastResult: null,
   };
 
   const results = [];
+  const completedTaskIds = new Set(checkpointCompletedIds);
+  writeDailyExecutionCheckpoint({
+    queueDate: latest.date,
+    completed: false,
+    currentItem: null,
+    completedTaskIds: [...completedTaskIds],
+    completedResults: [],
+  });
   for (let index = 0; index < executable.length; index += parallelLimit) {
     const batch = executable.slice(index, index + parallelLimit);
     const batchResults = await Promise.all(batch.map(async (item) => {
@@ -3057,6 +3103,13 @@ async function runDailyAutomationQueue(payload = {}) {
           targetUrl: item.url,
         },
       };
+      writeDailyExecutionCheckpoint({
+        queueDate: latest.date,
+        completed: false,
+        currentItem: currentDailyExecutionProgress.currentItem,
+        completedTaskIds: [...completedTaskIds],
+        completedResults: results,
+      });
       if (itemBlockedBySameDayCompany(item, sameDayCompanyKeys)) {
         skipped.push({
           id: item.id,
@@ -3105,6 +3158,9 @@ async function runDailyAutomationQueue(payload = {}) {
       };
     }));
     results.push(...batchResults);
+    batchResults.forEach(item => {
+      if (item && item.id) completedTaskIds.add(item.id);
+    });
     currentDailyExecutionProgress = {
       ...currentDailyExecutionProgress,
       completedCount: results.length,
@@ -3118,6 +3174,14 @@ async function runDailyAutomationQueue(payload = {}) {
         evidence: batchResults[batchResults.length - 1].evidence,
       } : null,
     };
+    writeDailyExecutionCheckpoint({
+      queueDate: latest.date,
+      completed: false,
+      currentItem: null,
+      completedTaskIds: [...completedTaskIds],
+      completedResults: results,
+      progress: currentDailyExecutionProgress,
+    });
     if (batchResults.some(item => item.result && (item.result.needsConfig || item.result.needsInstall))) break;
     if (index + parallelLimit < executable.length) await sleep(Number(payload && payload.delayMs || 91000));
   }
@@ -3128,6 +3192,14 @@ async function runDailyAutomationQueue(payload = {}) {
   const queueGoalStatus = executionQueueGoalStatus(latest.summary || {});
   const recoveryActions = executionRecoveryActions(blockerSummary, queueGoalStatus);
   const recoveryHint = recoveryActions.length ? recoveryActions.map(item => item.hint).join(' ') : undefined;
+  writeDailyExecutionCheckpoint({
+    queueDate: latest.date,
+    completed: true,
+    currentItem: null,
+    completedTaskIds: [...completedTaskIds],
+    completedResults: results,
+    progress: currentDailyExecutionProgress,
+  });
 
   return {
     ok: results.some(item => item.ok),
@@ -3181,6 +3253,7 @@ async function runAutoDailyAndWriteArtifact() {
       realDevelopmentCount: confirmedSendCount,
       reportingVerdict: confirmedSendCount > 0 ? 'partial_customer_development_before_timeout' : 'no_customer_development_performed',
       progress: currentDailyExecutionProgress,
+      checkpoint: readJson(dailyExecutionCheckpointPath(), null),
       blockerSummary,
       blockerCounts: executionBlockerCounts(blockerSummary),
       queueGoalStatus,

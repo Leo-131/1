@@ -1162,6 +1162,9 @@ function legacyStatusIndicatesTouch(value) {
 }
 
 function normalizePotentialItem(item, sourceType, history, index = 0) {
+  const normalizedSource = item.source || sourceType;
+  const normalizedSourceType = item.sourceType
+    || (normalizedSource === 'google_customer_discovery' || /^google-customer-/i.test(item.id || '') ? 'google' : sourceType);
   const base = {
     ...item,
     id: item.id || `potential-${sourceType}-${slugKey(item.company || item.name || index)}`,
@@ -1172,7 +1175,8 @@ function normalizePotentialItem(item, sourceType, history, index = 0) {
     platform: String(item.platform || legacyCustomerPlatform(item) || 'research').toLowerCase(),
     fitScore: Number(item.fitScore || legacyCustomerFitScore(item)),
     fitTier: item.fitTier || (Number(item.fitScore || legacyCustomerFitScore(item)) >= 90 ? 'A' : 'B'),
-    source: item.source || sourceType,
+    source: normalizedSource,
+    sourceType: normalizedSourceType,
     website: item.website || item.url || '',
     url: item.url || item.targetUrl || item.linkedin_url || item.linkedinUrl || (/^https?:\/\//i.test(String(item.id || '')) ? item.id : '') || item.website || '',
     platformUrl: item.platformUrl || item.url || item.linkedin_url || item.linkedinUrl || (/^https?:\/\//i.test(String(item.id || '')) ? item.id : '') || item.website || '',
@@ -1398,9 +1402,9 @@ function main() {
       potentialPoolTarget,
       customerTableHighIcp: dailyPotentialPool.filter(item => item.potentialSource === 'customer_table').length,
       refillNeeded: Math.max(0, potentialPoolTarget - dailyPotentialPool.length),
-      googleDiscovered: dailyQueue.filter(item => item.source === 'google_customer_discovery' || /^google-customer-/i.test(item.id || '')).length,
-      facebookDiscovered: dailyQueue.filter(item => item.platform === 'facebook' && (item.source === 'google_customer_discovery' || /^google-customer-/i.test(item.id || ''))).length,
-      websiteContactDiscovered: dailyQueue.filter(item => item.platform === 'email' && (item.source === 'google_customer_discovery' || /^google-customer-/i.test(item.id || ''))).length,
+      googleDiscovered: dailyQueue.filter(item => item.sourceType === 'google' || item.source === 'google_customer_discovery' || /^google-customer-/i.test(item.id || '')).length,
+      facebookDiscovered: dailyQueue.filter(item => item.platform === 'facebook' && (item.sourceType === 'google' || item.source === 'google_customer_discovery' || /^google-customer-/i.test(item.id || ''))).length,
+      websiteContactDiscovered: dailyQueue.filter(item => item.platform === 'email' && (item.sourceType === 'google' || item.source === 'google_customer_discovery' || /^google-customer-/i.test(item.id || ''))).length,
       scheduledLater: scheduledLater.length,
       cooldown: cooldownQueue.length,
       emailPriority: classified.filter(item => item.action === 'email_priority').length,
