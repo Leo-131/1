@@ -1,5 +1,5 @@
 window.DAILY_AUTOMATION_LATEST = {
-  "generatedAt": "2026-07-20T07:02:49.333Z",
+  "generatedAt": "2026-07-20T07:48:31.754Z",
   "date": "2026-07-20",
   "mode": "daily-icp-first-automation-loop",
   "executionLayer": "Codex Chrome Extension only",
@@ -50,15 +50,15 @@ window.DAILY_AUTOMATION_LATEST = {
   "summary": {
     "totalLeads": 16,
     "highIcp": 16,
-    "readyToDevelop": 30,
-    "dueNow": 57,
-    "visibleTodayQueue": 15,
-    "potentialPool": 57,
+    "readyToDevelop": 28,
+    "dueNow": 55,
+    "visibleTodayQueue": 14,
+    "potentialPool": 55,
     "potentialPoolTarget": 100,
     "customerTableHighIcp": 24,
-    "refillNeeded": 43,
-    "googleDiscovered": 33,
-    "facebookDiscovered": 15,
+    "refillNeeded": 45,
+    "googleDiscovered": 31,
+    "facebookDiscovered": 14,
     "websiteContactDiscovered": 3,
     "scheduledLater": 0,
     "cooldown": 30,
@@ -76,91 +76,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "agency": 5,
       "key_account": 111
     },
-    "qualifiedQueueCount": 33
+    "qualifiedQueueCount": 31
   },
   "visibleTodayQueue": [
-    {
-      "id": "google-customer-sport-conrad-facebook",
-      "name": "Sport Conrad",
-      "company": "Sport Conrad",
-      "customerType": "key_account",
-      "discoveryMode": "autonomous_refill",
-      "country": "Germany",
-      "countryEn": "Germany",
-      "fitScore": 84,
-      "fitTier": "A",
-      "marketScore": 4.5,
-      "marketStatus": "open",
-      "agencyState": "open",
-      "agentCompany": "",
-      "keyword": "verified outdoor, camping and travel retail social refill channel",
-      "role": "Outdoor, camping, travel accessories, ecommerce or category buyer.",
-      "background": "Sport Conrad is a qualified outdoor, camping, travel or sport retail prospect with category fit for FLEXTAIL portable outdoor electrics and Vollyc practical 3C products.",
-      "buyerPersona": "Outdoor, camping, travel accessories, ecommerce or category buyer.",
-      "targetMarkets": "",
-      "excludedMarkets": "",
-      "productCategory": "verified outdoor, camping and travel retail social refill channel",
-      "businessModel": "Retail Chain",
-      "productFit": "FLEXTAIL portable pumps, outdoor power, camping lighting and compact camping accessories",
-      "opportunity": "Sport Conrad is a qualified outdoor, camping, travel or sport retail prospect with category fit for FLEXTAIL portable outdoor electrics and Vollyc practical 3C products.",
-      "linkedin_url": "",
-      "linkedin": "",
-      "publicEmail": "info@sport-conrad.de",
-      "contactEmail": "info@sport-conrad.de",
-      "vendorPortal": "https://www.sport-conrad.com/",
-      "contactPhone": "",
-      "contactNote": "",
-      "publicEmailStatus": "Public Sport Conrad contact address; route to buyer/vendor team.",
-      "website": "https://www.sport-conrad.com/",
-      "evidenceUrl": "https://www.google.com/search?q=%22Sport%20Conrad%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22Germany%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "sourceEvidenceUrl": "verified outdoor retailer official website and public social profile refill",
-      "query": "https://www.google.com/search?q=%22Sport%20Conrad%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22Germany%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "source": "google_customer_discovery",
-      "sourceType": "google",
-      "discoveryProvider": "google",
-      "channel": "",
-      "identityStatus": "verified",
-      "profiledAt": "",
-      "partnershipStatus": "",
-      "doNotOutreach": false,
-      "automationStatus": "",
-      "partnerNote": "",
-      "sendStatus": "",
-      "workingTime": {
-        "dueNow": true,
-        "timeZone": "Europe/Berlin",
-        "localTime": "Mon 09:02",
-        "window": "morning",
-        "nextBest": "now",
-        "weight": 1
-      },
-      "platform": "facebook",
-      "platformUrl": "https://www.facebook.com/SportConrad",
-      "url": "https://www.facebook.com/SportConrad",
-      "action": "develop",
-      "reason": "concrete_google_discovered_major_customer_facebook",
-      "alternateChannels": {
-        "linkedin": "",
-        "instagram": "https://www.instagram.com/sportconrad/",
-        "facebook": "https://www.facebook.com/SportConrad",
-        "websiteContact": "https://www.sport-conrad.com/"
-      },
-      "invalidChannels": {},
-      "facebookStatus": "verified_official_page_candidate",
-      "identitySource": "official Facebook page candidate + official website + Google background query",
-      "channelPriority": 2,
-      "discoveredAt": "2026-07-16T05:03:53.170Z",
-      "taskId": "google-customer-sport-conrad-facebook",
-      "targetRegion": "europe",
-      "targetRegionScore": 45,
-      "contactChannelScore": 29,
-      "dealProbabilityScore": 230,
-      "priorityScore": 230,
-      "lastStatus": "",
-      "lastEvidence": "",
-      "lastTouch": "",
-      "visibleOnly": false
-    },
     {
       "id": "google-customer-campz-facebook",
       "name": "Campz",
@@ -211,7 +129,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/Berlin",
-        "localTime": "Mon 09:02",
+        "localTime": "Mon 09:48",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -293,7 +211,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/Berlin",
-        "localTime": "Mon 09:02",
+        "localTime": "Mon 09:48",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -375,7 +293,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/Oslo",
-        "localTime": "Mon 09:02",
+        "localTime": "Mon 09:48",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -463,7 +381,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/Rome",
-        "localTime": "Mon 09:02",
+        "localTime": "Mon 09:48",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -545,7 +463,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/Warsaw",
-        "localTime": "Mon 09:02",
+        "localTime": "Mon 09:48",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -625,7 +543,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "Asia/Shanghai",
-        "localTime": "Mon 15:02",
+        "localTime": "Mon 15:48",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
@@ -705,7 +623,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/Warsaw",
-        "localTime": "Mon 09:02",
+        "localTime": "Mon 09:48",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -785,7 +703,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/Dublin",
-        "localTime": "Mon 08:02",
+        "localTime": "Mon 08:48",
         "window": "outside_work_hours",
         "nextBest": "Europe/Dublin morning",
         "weight": 0
@@ -867,7 +785,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/London",
-        "localTime": "Mon 08:02",
+        "localTime": "Mon 08:48",
         "window": "outside_work_hours",
         "nextBest": "Europe/London morning",
         "weight": 0
@@ -949,7 +867,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/London",
-        "localTime": "Mon 08:02",
+        "localTime": "Mon 08:48",
         "window": "outside_work_hours",
         "nextBest": "Europe/London morning",
         "weight": 0
@@ -1031,7 +949,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Pacific/Auckland",
-        "localTime": "Mon 19:02",
+        "localTime": "Mon 19:48",
         "window": "outside_work_hours",
         "nextBest": "Pacific/Auckland morning",
         "weight": 0
@@ -1118,7 +1036,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Pacific/Auckland",
-        "localTime": "Mon 19:02",
+        "localTime": "Mon 19:48",
         "window": "outside_work_hours",
         "nextBest": "Pacific/Auckland morning",
         "weight": 0
@@ -1205,7 +1123,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Mon 03:02",
+        "localTime": "Mon 03:48",
         "window": "outside_work_hours",
         "nextBest": "America/Toronto morning",
         "weight": 0
@@ -1287,7 +1205,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Mon 03:02",
+        "localTime": "Mon 03:48",
         "window": "outside_work_hours",
         "nextBest": "America/Toronto morning",
         "weight": 0
@@ -1321,95 +1239,6 @@ window.DAILY_AUTOMATION_LATEST = {
     }
   ],
   "dailyPotentialPool": [
-    {
-      "id": "google-customer-sport-conrad-facebook",
-      "name": "Sport Conrad",
-      "company": "Sport Conrad",
-      "customerType": "key_account",
-      "discoveryMode": "autonomous_refill",
-      "country": "Germany",
-      "countryEn": "Germany",
-      "fitScore": 84,
-      "fitTier": "A",
-      "marketScore": 4.5,
-      "marketStatus": "open",
-      "agencyState": "open",
-      "agentCompany": "",
-      "keyword": "verified outdoor, camping and travel retail social refill channel",
-      "role": "Outdoor, camping, travel accessories, ecommerce or category buyer.",
-      "background": "Sport Conrad is a qualified outdoor, camping, travel or sport retail prospect with category fit for FLEXTAIL portable outdoor electrics and Vollyc practical 3C products.",
-      "buyerPersona": "Outdoor, camping, travel accessories, ecommerce or category buyer.",
-      "targetMarkets": "",
-      "excludedMarkets": "",
-      "productCategory": "verified outdoor, camping and travel retail social refill channel",
-      "businessModel": "Retail Chain",
-      "productFit": "FLEXTAIL portable pumps, outdoor power, camping lighting and compact camping accessories",
-      "opportunity": "Sport Conrad is a qualified outdoor, camping, travel or sport retail prospect with category fit for FLEXTAIL portable outdoor electrics and Vollyc practical 3C products.",
-      "linkedin_url": "",
-      "linkedin": "",
-      "publicEmail": "info@sport-conrad.de",
-      "contactEmail": "info@sport-conrad.de",
-      "vendorPortal": "https://www.sport-conrad.com/",
-      "contactPhone": "",
-      "contactNote": "",
-      "publicEmailStatus": "Public Sport Conrad contact address; route to buyer/vendor team.",
-      "website": "https://www.sport-conrad.com/",
-      "evidenceUrl": "https://www.google.com/search?q=%22Sport%20Conrad%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22Germany%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "sourceEvidenceUrl": "verified outdoor retailer official website and public social profile refill",
-      "query": "https://www.google.com/search?q=%22Sport%20Conrad%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22Germany%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "source": "google_customer_discovery",
-      "sourceType": "google",
-      "discoveryProvider": "google",
-      "channel": "",
-      "identityStatus": "verified",
-      "profiledAt": "",
-      "partnershipStatus": "",
-      "doNotOutreach": false,
-      "automationStatus": "",
-      "partnerNote": "",
-      "sendStatus": "",
-      "workingTime": {
-        "dueNow": true,
-        "timeZone": "local-market",
-        "localTime": "2026/7/20 14:50:26",
-        "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
-      },
-      "platform": "facebook",
-      "platformUrl": "https://www.facebook.com/SportConrad",
-      "url": "https://www.facebook.com/SportConrad",
-      "action": "develop",
-      "reason": "concrete_google_discovered_major_customer_facebook",
-      "alternateChannels": {
-        "linkedin": "",
-        "instagram": "https://www.instagram.com/sportconrad/",
-        "facebook": "https://www.facebook.com/SportConrad",
-        "websiteContact": "https://www.sport-conrad.com/"
-      },
-      "invalidChannels": {},
-      "facebookStatus": "verified_official_page_candidate",
-      "identitySource": "official Facebook page candidate + official website + Google background query",
-      "channelPriority": 2,
-      "discoveredAt": "2026-07-16T05:03:53.170Z",
-      "linkedinUrl": "",
-      "linkedinSearchUrl": "https://www.linkedin.com/search/results/all/?keywords=Sport%20Conrad%20buyer%20outdoor%20LinkedIn",
-      "googleSearchUrl": "https://www.google.com/search?q=Sport%20Conrad%20outdoor%20buyer%20partnership%20contact",
-      "contactSearchUrl": "https://www.google.com/search?q=Sport%20Conrad%20outdoor%20buyer%20partnership%20contact",
-      "dataSources": [
-        "google_linkedin_social_refill"
-      ],
-      "taskId": "google-customer-sport-conrad-facebook",
-      "lastStatus": "",
-      "lastEvidence": "",
-      "lastTouch": "",
-      "previouslyContacted": false,
-      "targetRegion": "europe",
-      "targetRegionScore": 45,
-      "contactChannelScore": 29,
-      "dealProbabilityScore": 230,
-      "priorityScore": 259,
-      "potentialSource": "google_linkedin_social_refill",
-      "nextAction": "develop_after_identity_check"
-    },
     {
       "id": "google-customer-above-and-beyond-facebook",
       "name": "Above and Beyond",
@@ -1460,7 +1289,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/20 14:50:26",
+        "localTime": "2026/7/20 15:41:36",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -1549,7 +1378,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/20 14:50:26",
+        "localTime": "2026/7/20 15:41:36",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -1638,7 +1467,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/20 14:50:26",
+        "localTime": "2026/7/20 15:41:36",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -1727,7 +1556,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/20 14:50:26",
+        "localTime": "2026/7/20 15:41:36",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -1816,7 +1645,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/20 14:50:26",
+        "localTime": "2026/7/20 15:41:36",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -1911,7 +1740,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/20 14:50:26",
+        "localTime": "2026/7/20 15:41:36",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -2000,7 +1829,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/20 14:50:26",
+        "localTime": "2026/7/20 15:41:36",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -2089,7 +1918,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/20 14:50:26",
+        "localTime": "2026/7/20 15:41:36",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -2178,7 +2007,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/20 14:50:26",
+        "localTime": "2026/7/20 15:41:36",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -2267,7 +2096,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/20 14:50:26",
+        "localTime": "2026/7/20 15:41:36",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -2362,7 +2191,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/20 14:50:26",
+        "localTime": "2026/7/20 15:41:36",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -2451,7 +2280,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/20 14:50:26",
+        "localTime": "2026/7/20 15:41:36",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -2540,7 +2369,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/20 14:50:26",
+        "localTime": "2026/7/20 15:41:36",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -2635,7 +2464,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/20 14:50:26",
+        "localTime": "2026/7/20 15:41:36",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -2671,93 +2500,6 @@ window.DAILY_AUTOMATION_LATEST = {
       "contactChannelScore": 17,
       "dealProbabilityScore": 203,
       "priorityScore": 220,
-      "potentialSource": "google_linkedin_social_refill",
-      "nextAction": "develop_after_identity_check"
-    },
-    {
-      "id": "google-customer-sport-conrad-instagram",
-      "name": "Sport Conrad",
-      "company": "Sport Conrad",
-      "customerType": "key_account",
-      "discoveryMode": "autonomous_refill",
-      "country": "Germany",
-      "countryEn": "Germany",
-      "fitScore": 84,
-      "fitTier": "A",
-      "marketScore": 4.5,
-      "marketStatus": "open",
-      "agencyState": "open",
-      "agentCompany": "",
-      "keyword": "verified outdoor, camping and travel retail social refill channel",
-      "role": "Outdoor, camping, travel accessories, ecommerce or category buyer.",
-      "background": "Sport Conrad is a qualified outdoor, camping, travel or sport retail prospect with category fit for FLEXTAIL portable outdoor electrics and Vollyc practical 3C products.",
-      "buyerPersona": "Outdoor, camping, travel accessories, ecommerce or category buyer.",
-      "targetMarkets": "",
-      "excludedMarkets": "",
-      "productCategory": "verified outdoor, camping and travel retail social refill channel",
-      "businessModel": "Retail Chain",
-      "productFit": "FLEXTAIL portable pumps, outdoor power, camping lighting and compact camping accessories",
-      "opportunity": "Sport Conrad is a qualified outdoor, camping, travel or sport retail prospect with category fit for FLEXTAIL portable outdoor electrics and Vollyc practical 3C products.",
-      "linkedin_url": "",
-      "linkedin": "",
-      "publicEmail": "info@sport-conrad.de",
-      "contactEmail": "info@sport-conrad.de",
-      "vendorPortal": "https://www.sport-conrad.com/",
-      "contactPhone": "",
-      "contactNote": "",
-      "publicEmailStatus": "Public Sport Conrad contact address; route to buyer/vendor team.",
-      "website": "https://www.sport-conrad.com/",
-      "evidenceUrl": "https://www.google.com/search?q=%22Sport%20Conrad%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22Germany%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "sourceEvidenceUrl": "verified outdoor retailer official website and public social profile refill",
-      "query": "https://www.google.com/search?q=%22Sport%20Conrad%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22Germany%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "source": "google_customer_discovery",
-      "sourceType": "google",
-      "discoveryProvider": "google",
-      "channel": "",
-      "identityStatus": "verified",
-      "profiledAt": "",
-      "partnershipStatus": "",
-      "doNotOutreach": false,
-      "automationStatus": "",
-      "partnerNote": "",
-      "sendStatus": "",
-      "workingTime": {
-        "dueNow": true,
-        "timeZone": "local-market",
-        "localTime": "2026/7/20 14:50:26",
-        "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
-      },
-      "platform": "instagram",
-      "platformUrl": "https://www.instagram.com/sportconrad/",
-      "url": "https://www.instagram.com/sportconrad/",
-      "action": "develop",
-      "reason": "concrete_google_discovered_major_customer_instagram",
-      "alternateChannels": {
-        "linkedin": "",
-        "instagram": "https://www.instagram.com/sportconrad/",
-        "facebook": "https://www.facebook.com/SportConrad",
-        "websiteContact": "https://www.sport-conrad.com/"
-      },
-      "identitySource": "official website/social profile + Google background query",
-      "channelPriority": 1,
-      "discoveredAt": "2026-07-16T05:03:53.170Z",
-      "linkedinUrl": "",
-      "linkedinSearchUrl": "https://www.linkedin.com/search/results/all/?keywords=Sport%20Conrad%20buyer%20outdoor%20LinkedIn",
-      "googleSearchUrl": "https://www.google.com/search?q=Sport%20Conrad%20outdoor%20buyer%20partnership%20contact",
-      "contactSearchUrl": "https://www.google.com/search?q=Sport%20Conrad%20outdoor%20buyer%20partnership%20contact",
-      "dataSources": [
-        "google_linkedin_social_refill"
-      ],
-      "taskId": "google-customer-sport-conrad-instagram",
-      "lastStatus": "",
-      "lastEvidence": "",
-      "lastTouch": "",
-      "previouslyContacted": false,
-      "targetRegion": "europe",
-      "targetRegionScore": 45,
-      "contactChannelScore": 29,
-      "dealProbabilityScore": 230,
-      "priorityScore": 259,
       "potentialSource": "google_linkedin_social_refill",
       "nextAction": "develop_after_identity_check"
     },
@@ -2811,7 +2553,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/20 14:50:26",
+        "localTime": "2026/7/20 15:41:36",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -2898,7 +2640,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/20 14:50:26",
+        "localTime": "2026/7/20 15:41:36",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -2985,7 +2727,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/20 14:50:26",
+        "localTime": "2026/7/20 15:41:36",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -3072,7 +2814,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/20 14:50:26",
+        "localTime": "2026/7/20 15:41:36",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -3159,7 +2901,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/20 14:50:26",
+        "localTime": "2026/7/20 15:41:36",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -3246,7 +2988,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/20 14:50:26",
+        "localTime": "2026/7/20 15:41:36",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -3333,7 +3075,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/20 14:50:26",
+        "localTime": "2026/7/20 15:41:36",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -3420,7 +3162,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/20 14:50:26",
+        "localTime": "2026/7/20 15:41:36",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -3507,7 +3249,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/20 14:50:26",
+        "localTime": "2026/7/20 15:41:36",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -3594,7 +3336,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/20 14:50:26",
+        "localTime": "2026/7/20 15:41:36",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -3681,7 +3423,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/20 14:50:26",
+        "localTime": "2026/7/20 15:41:36",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -3768,7 +3510,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/20 14:50:26",
+        "localTime": "2026/7/20 15:41:36",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -3855,7 +3597,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/20 14:50:26",
+        "localTime": "2026/7/20 15:41:36",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -3942,7 +3684,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/20 14:50:26",
+        "localTime": "2026/7/20 15:41:36",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -4029,7 +3771,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/20 14:50:26",
+        "localTime": "2026/7/20 15:41:36",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -4122,7 +3864,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/20 14:50:26",
+        "localTime": "2026/7/20 15:41:36",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -4215,7 +3957,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/20 14:50:26",
+        "localTime": "2026/7/20 15:41:36",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -5373,83 +5115,6 @@ window.DAILY_AUTOMATION_LATEST = {
   ],
   "dailyQueue": [
     {
-      "id": "google-customer-sport-conrad-facebook",
-      "name": "Sport Conrad",
-      "company": "Sport Conrad",
-      "customerType": "key_account",
-      "discoveryMode": "autonomous_refill",
-      "country": "Germany",
-      "countryEn": "Germany",
-      "fitScore": 84,
-      "fitTier": "A",
-      "marketScore": 4.5,
-      "marketStatus": "open",
-      "agencyState": "open",
-      "agentCompany": "",
-      "keyword": "verified outdoor, camping and travel retail social refill channel",
-      "role": "Outdoor, camping, travel accessories, ecommerce or category buyer.",
-      "background": "Sport Conrad is a qualified outdoor, camping, travel or sport retail prospect with category fit for FLEXTAIL portable outdoor electrics and Vollyc practical 3C products.",
-      "buyerPersona": "Outdoor, camping, travel accessories, ecommerce or category buyer.",
-      "targetMarkets": "",
-      "excludedMarkets": "",
-      "productCategory": "verified outdoor, camping and travel retail social refill channel",
-      "businessModel": "Retail Chain",
-      "productFit": "FLEXTAIL portable pumps, outdoor power, camping lighting and compact camping accessories",
-      "opportunity": "Sport Conrad is a qualified outdoor, camping, travel or sport retail prospect with category fit for FLEXTAIL portable outdoor electrics and Vollyc practical 3C products.",
-      "linkedin_url": "",
-      "linkedin": "",
-      "publicEmail": "info@sport-conrad.de",
-      "contactEmail": "info@sport-conrad.de",
-      "vendorPortal": "https://www.sport-conrad.com/",
-      "contactPhone": "",
-      "contactNote": "",
-      "publicEmailStatus": "Public Sport Conrad contact address; route to buyer/vendor team.",
-      "website": "https://www.sport-conrad.com/",
-      "evidenceUrl": "https://www.google.com/search?q=%22Sport%20Conrad%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22Germany%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "sourceEvidenceUrl": "verified outdoor retailer official website and public social profile refill",
-      "query": "https://www.google.com/search?q=%22Sport%20Conrad%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22Germany%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "source": "google_customer_discovery",
-      "sourceType": "google",
-      "discoveryProvider": "google",
-      "channel": "",
-      "identityStatus": "verified",
-      "profiledAt": "",
-      "partnershipStatus": "",
-      "doNotOutreach": false,
-      "automationStatus": "",
-      "partnerNote": "",
-      "sendStatus": "",
-      "workingTime": {
-        "dueNow": true,
-        "timeZone": "Europe/Berlin",
-        "localTime": "Mon 09:02",
-        "window": "morning",
-        "nextBest": "now",
-        "weight": 1
-      },
-      "platform": "facebook",
-      "platformUrl": "https://www.facebook.com/SportConrad",
-      "url": "https://www.facebook.com/SportConrad",
-      "action": "develop",
-      "reason": "concrete_google_discovered_major_customer_facebook",
-      "alternateChannels": {
-        "linkedin": "",
-        "instagram": "https://www.instagram.com/sportconrad/",
-        "facebook": "https://www.facebook.com/SportConrad",
-        "websiteContact": "https://www.sport-conrad.com/"
-      },
-      "invalidChannels": {},
-      "facebookStatus": "verified_official_page_candidate",
-      "identitySource": "official Facebook page candidate + official website + Google background query",
-      "channelPriority": 2,
-      "discoveredAt": "2026-07-16T05:03:53.170Z",
-      "targetRegion": "europe",
-      "targetRegionScore": 45,
-      "contactChannelScore": 29,
-      "dealProbabilityScore": 230,
-      "priorityScore": 230
-    },
-    {
       "id": "google-customer-campz-facebook",
       "name": "Campz",
       "company": "Campz",
@@ -5499,7 +5164,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/Berlin",
-        "localTime": "Mon 09:02",
+        "localTime": "Mon 09:48",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -5576,7 +5241,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/Berlin",
-        "localTime": "Mon 09:02",
+        "localTime": "Mon 09:48",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -5653,7 +5318,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/Oslo",
-        "localTime": "Mon 09:02",
+        "localTime": "Mon 09:48",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -5736,7 +5401,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/Rome",
-        "localTime": "Mon 09:02",
+        "localTime": "Mon 09:48",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -5762,81 +5427,6 @@ window.DAILY_AUTOMATION_LATEST = {
       "contactChannelScore": 17,
       "dealProbabilityScore": 218,
       "priorityScore": 218
-    },
-    {
-      "id": "google-customer-sport-conrad-instagram",
-      "name": "Sport Conrad",
-      "company": "Sport Conrad",
-      "customerType": "key_account",
-      "discoveryMode": "autonomous_refill",
-      "country": "Germany",
-      "countryEn": "Germany",
-      "fitScore": 84,
-      "fitTier": "A",
-      "marketScore": 4.5,
-      "marketStatus": "open",
-      "agencyState": "open",
-      "agentCompany": "",
-      "keyword": "verified outdoor, camping and travel retail social refill channel",
-      "role": "Outdoor, camping, travel accessories, ecommerce or category buyer.",
-      "background": "Sport Conrad is a qualified outdoor, camping, travel or sport retail prospect with category fit for FLEXTAIL portable outdoor electrics and Vollyc practical 3C products.",
-      "buyerPersona": "Outdoor, camping, travel accessories, ecommerce or category buyer.",
-      "targetMarkets": "",
-      "excludedMarkets": "",
-      "productCategory": "verified outdoor, camping and travel retail social refill channel",
-      "businessModel": "Retail Chain",
-      "productFit": "FLEXTAIL portable pumps, outdoor power, camping lighting and compact camping accessories",
-      "opportunity": "Sport Conrad is a qualified outdoor, camping, travel or sport retail prospect with category fit for FLEXTAIL portable outdoor electrics and Vollyc practical 3C products.",
-      "linkedin_url": "",
-      "linkedin": "",
-      "publicEmail": "info@sport-conrad.de",
-      "contactEmail": "info@sport-conrad.de",
-      "vendorPortal": "https://www.sport-conrad.com/",
-      "contactPhone": "",
-      "contactNote": "",
-      "publicEmailStatus": "Public Sport Conrad contact address; route to buyer/vendor team.",
-      "website": "https://www.sport-conrad.com/",
-      "evidenceUrl": "https://www.google.com/search?q=%22Sport%20Conrad%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22Germany%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "sourceEvidenceUrl": "verified outdoor retailer official website and public social profile refill",
-      "query": "https://www.google.com/search?q=%22Sport%20Conrad%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22Germany%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "source": "google_customer_discovery",
-      "sourceType": "google",
-      "discoveryProvider": "google",
-      "channel": "",
-      "identityStatus": "verified",
-      "profiledAt": "",
-      "partnershipStatus": "",
-      "doNotOutreach": false,
-      "automationStatus": "",
-      "partnerNote": "",
-      "sendStatus": "",
-      "workingTime": {
-        "dueNow": true,
-        "timeZone": "Europe/Berlin",
-        "localTime": "Mon 09:02",
-        "window": "morning",
-        "nextBest": "now",
-        "weight": 1
-      },
-      "platform": "instagram",
-      "platformUrl": "https://www.instagram.com/sportconrad/",
-      "url": "https://www.instagram.com/sportconrad/",
-      "action": "develop",
-      "reason": "concrete_google_discovered_major_customer_instagram",
-      "alternateChannels": {
-        "linkedin": "",
-        "instagram": "https://www.instagram.com/sportconrad/",
-        "facebook": "https://www.facebook.com/SportConrad",
-        "websiteContact": "https://www.sport-conrad.com/"
-      },
-      "identitySource": "official website/social profile + Google background query",
-      "channelPriority": 1,
-      "discoveredAt": "2026-07-16T05:03:53.170Z",
-      "targetRegion": "europe",
-      "targetRegionScore": 45,
-      "contactChannelScore": 29,
-      "dealProbabilityScore": 230,
-      "priorityScore": 230
     },
     {
       "id": "google-customer-8a-pl-instagram",
@@ -5888,7 +5478,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/Warsaw",
-        "localTime": "Mon 09:02",
+        "localTime": "Mon 09:48",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -5963,7 +5553,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/Berlin",
-        "localTime": "Mon 09:02",
+        "localTime": "Mon 09:48",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -6038,7 +5628,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/Berlin",
-        "localTime": "Mon 09:02",
+        "localTime": "Mon 09:48",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -6113,7 +5703,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "Asia/Shanghai",
-        "localTime": "Mon 15:02",
+        "localTime": "Mon 15:48",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
@@ -6188,7 +5778,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/Warsaw",
-        "localTime": "Mon 09:02",
+        "localTime": "Mon 09:48",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -6263,7 +5853,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/Rome",
-        "localTime": "Mon 09:02",
+        "localTime": "Mon 09:48",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -6338,7 +5928,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/Dublin",
-        "localTime": "Mon 08:02",
+        "localTime": "Mon 08:48",
         "window": "outside_work_hours",
         "nextBest": "Europe/Dublin morning",
         "weight": 0
@@ -6415,7 +6005,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/London",
-        "localTime": "Mon 08:02",
+        "localTime": "Mon 08:48",
         "window": "outside_work_hours",
         "nextBest": "Europe/London morning",
         "weight": 0
@@ -6492,7 +6082,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/London",
-        "localTime": "Mon 08:02",
+        "localTime": "Mon 08:48",
         "window": "outside_work_hours",
         "nextBest": "Europe/London morning",
         "weight": 0
@@ -6569,7 +6159,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Mon 03:02",
+        "localTime": "Mon 03:48",
         "window": "outside_work_hours",
         "nextBest": "America/Toronto morning",
         "weight": 0
@@ -6646,7 +6236,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Mon 03:02",
+        "localTime": "Mon 03:48",
         "window": "outside_work_hours",
         "nextBest": "America/Toronto morning",
         "weight": 0
@@ -6723,7 +6313,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Mon 03:02",
+        "localTime": "Mon 03:48",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -6806,7 +6396,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Mon 03:02",
+        "localTime": "Mon 03:48",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -6883,7 +6473,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Mon 03:02",
+        "localTime": "Mon 03:48",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -6960,7 +6550,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Mon 03:02",
+        "localTime": "Mon 03:48",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -7043,7 +6633,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Mon 03:02",
+        "localTime": "Mon 03:48",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -7120,7 +6710,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/Dublin",
-        "localTime": "Mon 08:02",
+        "localTime": "Mon 08:48",
         "window": "outside_work_hours",
         "nextBest": "Europe/Dublin morning",
         "weight": 0
@@ -7195,7 +6785,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/London",
-        "localTime": "Mon 08:02",
+        "localTime": "Mon 08:48",
         "window": "outside_work_hours",
         "nextBest": "Europe/London morning",
         "weight": 0
@@ -7270,7 +6860,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/London",
-        "localTime": "Mon 08:02",
+        "localTime": "Mon 08:48",
         "window": "outside_work_hours",
         "nextBest": "Europe/London morning",
         "weight": 0
@@ -7345,7 +6935,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Mon 03:02",
+        "localTime": "Mon 03:48",
         "window": "outside_work_hours",
         "nextBest": "America/Toronto morning",
         "weight": 0
@@ -7420,7 +7010,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Mon 03:02",
+        "localTime": "Mon 03:48",
         "window": "outside_work_hours",
         "nextBest": "America/Toronto morning",
         "weight": 0
@@ -7495,7 +7085,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Mon 03:02",
+        "localTime": "Mon 03:48",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -7570,7 +7160,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Mon 03:02",
+        "localTime": "Mon 03:48",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -7645,7 +7235,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Mon 03:02",
+        "localTime": "Mon 03:48",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -8456,7 +8046,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Mon 03:02",
+        "localTime": "Mon 03:48",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -8538,7 +8128,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Pacific/Auckland",
-        "localTime": "Mon 19:02",
+        "localTime": "Mon 19:48",
         "window": "outside_work_hours",
         "nextBest": "Pacific/Auckland morning",
         "weight": 0
@@ -8620,7 +8210,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Pacific/Auckland",
-        "localTime": "Mon 19:02",
+        "localTime": "Mon 19:48",
         "window": "outside_work_hours",
         "nextBest": "Pacific/Auckland morning",
         "weight": 0
@@ -9072,7 +8662,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "Asia/Jakarta",
-        "localTime": "Mon 14:02",
+        "localTime": "Mon 14:48",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
@@ -9125,7 +8715,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/London",
-        "localTime": "Mon 08:02",
+        "localTime": "Mon 08:48",
         "window": "outside_work_hours",
         "nextBest": "Europe/London morning",
         "weight": 0
@@ -9178,7 +8768,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/London",
-        "localTime": "Mon 08:02",
+        "localTime": "Mon 08:48",
         "window": "outside_work_hours",
         "nextBest": "Europe/London morning",
         "weight": 0
@@ -9231,7 +8821,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/London",
-        "localTime": "Mon 08:02",
+        "localTime": "Mon 08:48",
         "window": "outside_work_hours",
         "nextBest": "Europe/London morning",
         "weight": 0
@@ -9284,7 +8874,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Mon 03:02",
+        "localTime": "Mon 03:48",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -9337,7 +8927,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Mon 03:02",
+        "localTime": "Mon 03:48",
         "window": "outside_work_hours",
         "nextBest": "America/Toronto morning",
         "weight": 0
@@ -9390,7 +8980,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Mon 03:02",
+        "localTime": "Mon 03:48",
         "window": "outside_work_hours",
         "nextBest": "America/Toronto morning",
         "weight": 0
@@ -9443,7 +9033,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Australia/Sydney",
-        "localTime": "Mon 17:02",
+        "localTime": "Mon 17:48",
         "window": "outside_work_hours",
         "nextBest": "Australia/Sydney morning",
         "weight": 0
@@ -9496,7 +9086,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Pacific/Auckland",
-        "localTime": "Mon 19:02",
+        "localTime": "Mon 19:48",
         "window": "outside_work_hours",
         "nextBest": "Pacific/Auckland morning",
         "weight": 0
@@ -9549,7 +9139,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Pacific/Auckland",
-        "localTime": "Mon 19:02",
+        "localTime": "Mon 19:48",
         "window": "outside_work_hours",
         "nextBest": "Pacific/Auckland morning",
         "weight": 0
@@ -9602,7 +9192,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Pacific/Auckland",
-        "localTime": "Mon 19:02",
+        "localTime": "Mon 19:48",
         "window": "outside_work_hours",
         "nextBest": "Pacific/Auckland morning",
         "weight": 0
@@ -9655,7 +9245,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Pacific/Auckland",
-        "localTime": "Mon 19:02",
+        "localTime": "Mon 19:48",
         "window": "outside_work_hours",
         "nextBest": "Pacific/Auckland morning",
         "weight": 0
@@ -9708,7 +9298,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Pacific/Auckland",
-        "localTime": "Mon 19:02",
+        "localTime": "Mon 19:48",
         "window": "outside_work_hours",
         "nextBest": "Pacific/Auckland morning",
         "weight": 0
@@ -9761,7 +9351,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Asia/Kolkata",
-        "localTime": "Mon 12:32",
+        "localTime": "Mon 13:18",
         "window": "outside_work_hours",
         "nextBest": "Asia/Kolkata afternoon",
         "weight": 0
@@ -9822,7 +9412,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/Rome",
-        "localTime": "Mon 09:02",
+        "localTime": "Mon 09:48",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -9914,7 +9504,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/Paris",
-        "localTime": "Mon 09:02",
+        "localTime": "Mon 09:48",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -10008,7 +9598,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/Berlin",
-        "localTime": "Mon 09:02",
+        "localTime": "Mon 09:48",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -10108,7 +9698,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "Asia/Shanghai",
-        "localTime": "Mon 15:02",
+        "localTime": "Mon 15:48",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
@@ -10137,6 +9727,86 @@ window.DAILY_AUTOMATION_LATEST = {
       "lastStatus": "sent_confirmed",
       "lastEvidence": "facebook_message_sent_confirmed_composer_cleared;follow_not_available;like_not_available",
       "lastTouch": "2026-06-26T09:22:45.266Z"
+    },
+    {
+      "id": "google-customer-sport-conrad-facebook",
+      "name": "Sport Conrad",
+      "company": "Sport Conrad",
+      "customerType": "key_account",
+      "discoveryMode": "autonomous_refill",
+      "country": "Germany",
+      "countryEn": "Germany",
+      "fitScore": 84,
+      "fitTier": "A",
+      "marketScore": 4.5,
+      "marketStatus": "open",
+      "agencyState": "open",
+      "agentCompany": "",
+      "keyword": "verified outdoor, camping and travel retail social refill channel",
+      "role": "Outdoor, camping, travel accessories, ecommerce or category buyer.",
+      "background": "Sport Conrad is a qualified outdoor, camping, travel or sport retail prospect with category fit for FLEXTAIL portable outdoor electrics and Vollyc practical 3C products.",
+      "buyerPersona": "Outdoor, camping, travel accessories, ecommerce or category buyer.",
+      "targetMarkets": "",
+      "excludedMarkets": "",
+      "productCategory": "verified outdoor, camping and travel retail social refill channel",
+      "businessModel": "Retail Chain",
+      "productFit": "FLEXTAIL portable pumps, outdoor power, camping lighting and compact camping accessories",
+      "opportunity": "Sport Conrad is a qualified outdoor, camping, travel or sport retail prospect with category fit for FLEXTAIL portable outdoor electrics and Vollyc practical 3C products.",
+      "linkedin_url": "",
+      "linkedin": "",
+      "publicEmail": "info@sport-conrad.de",
+      "contactEmail": "info@sport-conrad.de",
+      "vendorPortal": "https://www.sport-conrad.com/",
+      "contactPhone": "",
+      "contactNote": "",
+      "publicEmailStatus": "Public Sport Conrad contact address; route to buyer/vendor team.",
+      "website": "https://www.sport-conrad.com/",
+      "evidenceUrl": "https://www.google.com/search?q=%22Sport%20Conrad%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22Germany%22%20buyer%20OR%20wholesale%20OR%20contact",
+      "sourceEvidenceUrl": "verified outdoor retailer official website and public social profile refill",
+      "query": "https://www.google.com/search?q=%22Sport%20Conrad%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22Germany%22%20buyer%20OR%20wholesale%20OR%20contact",
+      "source": "google_customer_discovery",
+      "sourceType": "google",
+      "discoveryProvider": "google",
+      "channel": "",
+      "identityStatus": "verified",
+      "profiledAt": "",
+      "partnershipStatus": "",
+      "doNotOutreach": false,
+      "automationStatus": "",
+      "partnerNote": "",
+      "sendStatus": "",
+      "workingTime": {
+        "dueNow": true,
+        "timeZone": "Europe/Berlin",
+        "localTime": "Mon 09:48",
+        "window": "morning",
+        "nextBest": "now",
+        "weight": 1
+      },
+      "platform": "facebook",
+      "platformUrl": "https://www.facebook.com/SportConrad",
+      "url": "https://www.facebook.com/SportConrad",
+      "action": "cooldown",
+      "reason": "previous_customer_development_no_repeat",
+      "alternateChannels": {
+        "linkedin": "",
+        "instagram": "https://www.instagram.com/sportconrad/",
+        "facebook": "https://www.facebook.com/SportConrad",
+        "websiteContact": "https://www.sport-conrad.com/"
+      },
+      "invalidChannels": {},
+      "facebookStatus": "verified_official_page_candidate",
+      "identitySource": "official Facebook page candidate + official website + Google background query",
+      "channelPriority": 2,
+      "discoveredAt": "2026-07-16T05:03:53.170Z",
+      "targetRegion": "europe",
+      "targetRegionScore": 45,
+      "contactChannelScore": 29,
+      "dealProbabilityScore": 230,
+      "priorityScore": 230,
+      "lastStatus": "sent_confirmed",
+      "lastEvidence": "facebook_identity_verified;separate_chrome_window_used;outgoing_message_visible;message_sent_at_2026-07-20_12:28_asia_shanghai;recipient_auto_reply_received;recipient_read_indicator_visible",
+      "lastTouch": "2026-07-20T04:28:00.000Z"
     },
     {
       "id": "google-customer-addnature-facebook",
@@ -10188,7 +9858,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/Stockholm",
-        "localTime": "Mon 09:02",
+        "localTime": "Mon 09:48",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -10268,7 +9938,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/Vienna",
-        "localTime": "Mon 09:02",
+        "localTime": "Mon 09:48",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -10348,7 +10018,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/Madrid",
-        "localTime": "Mon 09:02",
+        "localTime": "Mon 09:48",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -10428,7 +10098,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/Oslo",
-        "localTime": "Mon 09:02",
+        "localTime": "Mon 09:48",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -10535,7 +10205,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/Vienna",
-        "localTime": "Mon 09:02",
+        "localTime": "Mon 09:48",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -10627,7 +10297,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/Paris",
-        "localTime": "Mon 09:02",
+        "localTime": "Mon 09:48",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -10719,7 +10389,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "Asia/Shanghai",
-        "localTime": "Mon 15:02",
+        "localTime": "Mon 15:48",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
@@ -10746,6 +10416,84 @@ window.DAILY_AUTOMATION_LATEST = {
       "lastStatus": "sent_confirmed",
       "lastEvidence": "facebook_message_sent_confirmed_composer_cleared;follow_not_available;like_not_available",
       "lastTouch": "2026-06-26T09:22:45.266Z"
+    },
+    {
+      "id": "google-customer-sport-conrad-instagram",
+      "name": "Sport Conrad",
+      "company": "Sport Conrad",
+      "customerType": "key_account",
+      "discoveryMode": "autonomous_refill",
+      "country": "Germany",
+      "countryEn": "Germany",
+      "fitScore": 84,
+      "fitTier": "A",
+      "marketScore": 4.5,
+      "marketStatus": "open",
+      "agencyState": "open",
+      "agentCompany": "",
+      "keyword": "verified outdoor, camping and travel retail social refill channel",
+      "role": "Outdoor, camping, travel accessories, ecommerce or category buyer.",
+      "background": "Sport Conrad is a qualified outdoor, camping, travel or sport retail prospect with category fit for FLEXTAIL portable outdoor electrics and Vollyc practical 3C products.",
+      "buyerPersona": "Outdoor, camping, travel accessories, ecommerce or category buyer.",
+      "targetMarkets": "",
+      "excludedMarkets": "",
+      "productCategory": "verified outdoor, camping and travel retail social refill channel",
+      "businessModel": "Retail Chain",
+      "productFit": "FLEXTAIL portable pumps, outdoor power, camping lighting and compact camping accessories",
+      "opportunity": "Sport Conrad is a qualified outdoor, camping, travel or sport retail prospect with category fit for FLEXTAIL portable outdoor electrics and Vollyc practical 3C products.",
+      "linkedin_url": "",
+      "linkedin": "",
+      "publicEmail": "info@sport-conrad.de",
+      "contactEmail": "info@sport-conrad.de",
+      "vendorPortal": "https://www.sport-conrad.com/",
+      "contactPhone": "",
+      "contactNote": "",
+      "publicEmailStatus": "Public Sport Conrad contact address; route to buyer/vendor team.",
+      "website": "https://www.sport-conrad.com/",
+      "evidenceUrl": "https://www.google.com/search?q=%22Sport%20Conrad%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22Germany%22%20buyer%20OR%20wholesale%20OR%20contact",
+      "sourceEvidenceUrl": "verified outdoor retailer official website and public social profile refill",
+      "query": "https://www.google.com/search?q=%22Sport%20Conrad%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22Germany%22%20buyer%20OR%20wholesale%20OR%20contact",
+      "source": "google_customer_discovery",
+      "sourceType": "google",
+      "discoveryProvider": "google",
+      "channel": "",
+      "identityStatus": "verified",
+      "profiledAt": "",
+      "partnershipStatus": "",
+      "doNotOutreach": false,
+      "automationStatus": "",
+      "partnerNote": "",
+      "sendStatus": "",
+      "workingTime": {
+        "dueNow": true,
+        "timeZone": "Europe/Berlin",
+        "localTime": "Mon 09:48",
+        "window": "morning",
+        "nextBest": "now",
+        "weight": 1
+      },
+      "platform": "instagram",
+      "platformUrl": "https://www.instagram.com/sportconrad/",
+      "url": "https://www.instagram.com/sportconrad/",
+      "action": "cooldown",
+      "reason": "previous_customer_development_no_repeat",
+      "alternateChannels": {
+        "linkedin": "",
+        "instagram": "https://www.instagram.com/sportconrad/",
+        "facebook": "https://www.facebook.com/SportConrad",
+        "websiteContact": "https://www.sport-conrad.com/"
+      },
+      "identitySource": "official website/social profile + Google background query",
+      "channelPriority": 1,
+      "discoveredAt": "2026-07-16T05:03:53.170Z",
+      "targetRegion": "europe",
+      "targetRegionScore": 45,
+      "contactChannelScore": 29,
+      "dealProbabilityScore": 230,
+      "priorityScore": 230,
+      "lastStatus": "sent_confirmed",
+      "lastEvidence": "facebook_identity_verified;separate_chrome_window_used;outgoing_message_visible;message_sent_at_2026-07-20_12:28_asia_shanghai;recipient_auto_reply_received;recipient_read_indicator_visible",
+      "lastTouch": "2026-07-20T04:28:00.000Z"
     },
     {
       "id": "google-customer-globetrotter-instagram",
@@ -10797,7 +10545,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/Berlin",
-        "localTime": "Mon 09:02",
+        "localTime": "Mon 09:48",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -10875,7 +10623,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/Berlin",
-        "localTime": "Mon 09:02",
+        "localTime": "Mon 09:48",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -10953,7 +10701,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/Berlin",
-        "localTime": "Mon 09:02",
+        "localTime": "Mon 09:48",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -10980,162 +10728,6 @@ window.DAILY_AUTOMATION_LATEST = {
       "lastStatus": "sent_confirmed",
       "lastEvidence": "instagram_message_sent_confirmed_after_send_click;instagram_draft_inserted_verified;sentText:false;outgoingBubble:false;emptyComposer:true;follow_not_available;instagram_post_opened;post_liked;comment_submitted",
       "lastTouch": "2026-07-15T10:17:26.027Z"
-    },
-    {
-      "id": "google-customer-camping-wagner-instagram",
-      "name": "Camping Wagner",
-      "company": "Camping Wagner",
-      "customerType": "key_account",
-      "discoveryMode": "autonomous_refill",
-      "country": "Germany",
-      "countryEn": "Germany",
-      "fitScore": 90,
-      "fitTier": "A+",
-      "marketScore": 4.5,
-      "marketStatus": "open",
-      "agencyState": "open",
-      "agentCompany": "",
-      "keyword": "verified outdoor, camping, travel and consumer electronics retail channel",
-      "role": "Outdoor electronics, camping accessories, travel products or consumer electronics category buyer.",
-      "background": "Camping Wagner is listed or qualified as an outdoor/camping specialty retail prospect with assortment fit for lightweight outdoor electrics and practical high-rotation 3C products.",
-      "buyerPersona": "Outdoor electronics, camping accessories, travel products or consumer electronics category buyer.",
-      "targetMarkets": "",
-      "excludedMarkets": "",
-      "productCategory": "verified outdoor, camping, travel and consumer electronics retail channel",
-      "businessModel": "Retail Chain",
-      "productFit": "FLEXTAIL portable pumps, outdoor power, camping lighting and compact camping accessories",
-      "opportunity": "Camping Wagner is listed or qualified as an outdoor/camping specialty retail prospect with assortment fit for lightweight outdoor electrics and practical high-rotation 3C products.",
-      "linkedin_url": "",
-      "linkedin": "",
-      "publicEmail": "",
-      "contactEmail": "",
-      "vendorPortal": "https://www.campingwagner.de/",
-      "contactPhone": "",
-      "contactNote": "",
-      "publicEmailStatus": "",
-      "website": "https://www.campingwagner.de/",
-      "evidenceUrl": "https://www.google.com/search?q=%22Camping%20Wagner%22%20%22verified%20outdoor%2C%20camping%2C%20travel%20and%20consumer%20electronics%20retail%20channel%22%20%22Germany%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "sourceEvidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
-      "query": "https://www.google.com/search?q=%22Camping%20Wagner%22%20%22verified%20outdoor%2C%20camping%2C%20travel%20and%20consumer%20electronics%20retail%20channel%22%20%22Germany%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "source": "google_customer_discovery",
-      "sourceType": "google",
-      "discoveryProvider": "google",
-      "channel": "",
-      "identityStatus": "verified",
-      "profiledAt": "",
-      "partnershipStatus": "",
-      "doNotOutreach": false,
-      "automationStatus": "",
-      "partnerNote": "",
-      "sendStatus": "",
-      "workingTime": {
-        "dueNow": true,
-        "timeZone": "Europe/Berlin",
-        "localTime": "Mon 09:02",
-        "window": "morning",
-        "nextBest": "now",
-        "weight": 1
-      },
-      "platform": "instagram",
-      "platformUrl": "https://www.instagram.com/campingwagner/",
-      "url": "https://www.instagram.com/campingwagner/",
-      "action": "cooldown",
-      "reason": "previous_customer_development_no_repeat",
-      "alternateChannels": {
-        "linkedin": "",
-        "instagram": "https://www.instagram.com/campingwagner/",
-        "facebook": "",
-        "websiteContact": "https://www.campingwagner.de/"
-      },
-      "identitySource": "official website/social profile + Google background query",
-      "channelPriority": 1,
-      "discoveredAt": "2026-07-14T04:02:10.362Z",
-      "targetRegion": "europe",
-      "targetRegionScore": 45,
-      "contactChannelScore": 17,
-      "dealProbabilityScore": 224,
-      "priorityScore": 224,
-      "lastStatus": "sent_confirmed",
-      "lastEvidence": "instagram_message_sent_confirmed_after_send_click;instagram_draft_inserted_verified;sentText:false;outgoingBubble:false;emptyComposer:true;follow_not_available;instagram_post_opened;post_liked;comment_submitted",
-      "lastTouch": "2026-07-15T10:17:46.930Z"
-    },
-    {
-      "id": "google-customer-4camping-instagram",
-      "name": "4Camping",
-      "company": "4Camping",
-      "customerType": "key_account",
-      "discoveryMode": "autonomous_refill",
-      "country": "Czech Republic",
-      "countryEn": "Czech Republic",
-      "fitScore": 84,
-      "fitTier": "A",
-      "marketScore": 4.5,
-      "marketStatus": "open",
-      "agencyState": "open",
-      "agentCompany": "",
-      "keyword": "verified outdoor, camping and travel retail social refill channel",
-      "role": "Outdoor, camping, travel accessories, ecommerce or category buyer.",
-      "background": "4Camping is a qualified outdoor, camping, travel or sport retail prospect with category fit for FLEXTAIL portable outdoor electrics and Vollyc practical 3C products.",
-      "buyerPersona": "Outdoor, camping, travel accessories, ecommerce or category buyer.",
-      "targetMarkets": "",
-      "excludedMarkets": "",
-      "productCategory": "verified outdoor, camping and travel retail social refill channel",
-      "businessModel": "Retail Chain",
-      "productFit": "FLEXTAIL portable pumps, outdoor power, camping lighting and compact camping accessories",
-      "opportunity": "4Camping is a qualified outdoor, camping, travel or sport retail prospect with category fit for FLEXTAIL portable outdoor electrics and Vollyc practical 3C products.",
-      "linkedin_url": "",
-      "linkedin": "",
-      "publicEmail": "",
-      "contactEmail": "",
-      "vendorPortal": "https://www.4camping.cz/",
-      "contactPhone": "",
-      "contactNote": "",
-      "publicEmailStatus": "",
-      "website": "https://www.4camping.cz/",
-      "evidenceUrl": "https://www.google.com/search?q=%224Camping%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22Czech%20Republic%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "sourceEvidenceUrl": "verified outdoor retailer official website and public social profile refill",
-      "query": "https://www.google.com/search?q=%224Camping%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22Czech%20Republic%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "source": "google_customer_discovery",
-      "sourceType": "google",
-      "discoveryProvider": "google",
-      "channel": "",
-      "identityStatus": "verified",
-      "profiledAt": "",
-      "partnershipStatus": "",
-      "doNotOutreach": false,
-      "automationStatus": "",
-      "partnerNote": "",
-      "sendStatus": "",
-      "workingTime": {
-        "dueNow": true,
-        "timeZone": "Asia/Shanghai",
-        "localTime": "Mon 15:02",
-        "window": "afternoon",
-        "nextBest": "now",
-        "weight": 0.9
-      },
-      "platform": "instagram",
-      "platformUrl": "https://www.instagram.com/4camping.cz/",
-      "url": "https://www.instagram.com/4camping.cz/",
-      "action": "cooldown",
-      "reason": "previous_customer_development_no_repeat",
-      "alternateChannels": {
-        "linkedin": "",
-        "instagram": "https://www.instagram.com/4camping.cz/",
-        "facebook": "https://www.facebook.com/4camping.cz",
-        "websiteContact": "https://www.4camping.cz/"
-      },
-      "identitySource": "official website/social profile + Google background query",
-      "channelPriority": 1,
-      "discoveredAt": "2026-07-16T05:03:53.170Z",
-      "targetRegion": "europe",
-      "targetRegionScore": 45,
-      "contactChannelScore": 17,
-      "dealProbabilityScore": 218,
-      "priorityScore": 218,
-      "lastStatus": "sent_confirmed",
-      "lastEvidence": "instagram_identity_verified_4camping.cz;account_followed_confirmed;latest_collaboration_post_liked_confirmed;dm_send_clicked;composer_cleared;recipient_auto_reply_received;recipient_read_indicator_visible",
-      "lastTouch": "2026-07-20T03:35:13.708Z"
     }
   ],
   "scheduledLater": [],

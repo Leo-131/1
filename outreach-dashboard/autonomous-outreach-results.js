@@ -4133,12 +4133,12 @@ window.AUTONOMOUS_OUTREACH_RESULTS = [
   {
     "task_id": "google-customer-sport-conrad-facebook",
     "approval_version": 1,
-    "status": "approval_pending",
-    "agent": "codex-chrome-extension",
-    "timestamp": "2026-07-20T06:51:58.496Z",
+    "status": "sent_confirmed",
+    "agent": "codex-chrome-extension-live-reconciled",
+    "timestamp": "2026-07-20T04:28:00.000Z",
     "target_url": "https://www.facebook.com/SportConrad",
-    "evidence": "driver_error: Command failed: C:\\Program Files\\nodejs\\node.exe E:\\New project\\outreach-dashboard\\codex-chrome-driver.js prepare-social-draft {\"port\":9224,\"tabId\":\"29974B852F8DD501D6365C8AEF3905E3\",\"targetUrl\":\"https://www.facebook.com/SportConrad\",\"expectedCompany\":\"Sport Conrad\",\"draft\":\"Hi Sport Conrad team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a retail/category buyer, the strongest fit is assortment fit, new SKU pipeline, price-tier coverage, and proven consumer demand; your verified outdoor, camping and travel retail social refill channel focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the category buyer or vendor-review owner for a short intro video meeting?\",\"autoSend\":true,\"autoEngage\":true,\"engagementComment\":\"Great outdoor checklist. Useful reminder for hikers preparing a complete, lightweight kit.\",\"replaceExistingDraft\":true}\n",
-    "draft": "Hi Sport Conrad team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a retail/category buyer, the strongest fit is assortment fit, new SKU pipeline, price-tier coverage, and proven consumer demand; your verified outdoor, camping and travel retail social refill channel focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the category buyer or vendor-review owner for a short intro video meeting?",
+    "evidence": "facebook_identity_verified;separate_chrome_window_used;outgoing_message_visible;message_sent_at_2026-07-20_12:28_asia_shanghai;recipient_auto_reply_received;recipient_read_indicator_visible",
+    "draft": "Hi Sport Conrad team — Leo from FLEXTAIL here. Your outdoor retail focus looks highly relevant for our compact pumps, camping lights and portable power products. FLEXTAIL is expanding retail partnerships with proven, giftable products for camping and hiking customers. Would your category buyer or vendor team be open to reviewing a short line sheet, wholesale pricing and sample options? I can send details by email or WhatsApp. Best, Leo",
     "subject": ""
   },
   {
@@ -4194,6 +4194,39 @@ window.AUTONOMOUS_OUTREACH_RESULTS = [
     "target_url": "https://www.linkedin.com/company/westcoast-limited/",
     "evidence": "linkedin_company_identity_verified;separate_chrome_window_used;company_followed_confirmed;dm_send_clicked;outgoing_message_visible;sender_leo_liu;sent_at_2026-07-20_15:00_asia_shanghai",
     "draft": "Hi Westcoast team — Leo from FLEXTAIL here. Your scale across UK resellers, retailers and technology brands makes Westcoast highly relevant for our compact outdoor and travel electrics, including ultralight pumps, lighting and portable-power products. We are expanding distribution partnerships in open European markets with a strong 2026 product pipeline. Could you route this to the consumer products or vendor onboarding team? I can share a concise range overview and arrange a 15-minute introduction. Best, Leo",
+    "subject": ""
+  },
+  {
+    "task_id": "manual-agent-profile-tekpoint-gmbh-linkedin",
+    "approval_version": 1,
+    "status": "sent_confirmed",
+    "agent": "codex-chrome-extension-dedicated-window",
+    "timestamp": "2026-07-20T07:45:00.000Z",
+    "target_url": "https://www.linkedin.com/company/tekpoint-gmbh/",
+    "evidence": "linkedin_company_identity_verified;separate_chrome_window_used;company_followed_confirmed;dm_send_clicked;outgoing_message_visible;sender_leo_liu;sent_at_2026-07-20_15:45_asia_shanghai",
+    "draft": "Hi Tekpoint team — Leo from FLEXTAIL here. Your pan-European smart-technology distribution network and relationships with major retailers look highly relevant for our compact outdoor and travel electrics, including ultralight pumps, lighting and portable-power products. We are expanding selected distribution partnerships in open European markets with a strong 2026 product pipeline. Could you route this to your category or vendor-onboarding team? I can share a concise range and commercial overview for an initial fit review. Best, Leo",
+    "subject": ""
+  },
+  {
+    "task_id": "manual-agent-profile-hurtel-linkedin",
+    "approval_version": 1,
+    "status": "sent_confirmed",
+    "agent": "codex-chrome-extension-dedicated-window",
+    "timestamp": "2026-07-20T07:46:00.000Z",
+    "target_url": "https://www.linkedin.com/company/hurtel",
+    "evidence": "linkedin_company_identity_verified;separate_chrome_window_used;company_followed_confirmed;dm_send_clicked;outgoing_message_visible;sender_leo_liu;sent_at_2026-07-20_15:46_asia_shanghai",
+    "draft": "Hi Hurtel team — Leo from FLEXTAIL here. Your scale in consumer electronics, lifestyle and outdoor-tech distribution across Central and Eastern Europe looks highly relevant for our compact outdoor and travel electrics, including ultralight pumps, lighting and portable-power products. We are expanding selected distribution partnerships in open markets with a strong 2026 product pipeline. Could you route this to your category or vendor-onboarding team? I can share a concise range and commercial overview for an initial fit review. Best, Leo",
+    "subject": ""
+  },
+  {
+    "task_id": "google-customer-atmosphere-instagram",
+    "approval_version": 1,
+    "status": "failed_open",
+    "agent": "codex-chrome-extension",
+    "timestamp": "2026-07-20T07:47:59.791Z",
+    "target_url": "https://www.instagram.com/atmosphereoutdoor/",
+    "evidence": "driver_error: Timeout: http://127.0.0.1:9224/json",
+    "draft": "Hi Atmosphere team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a retail/category buyer, the strongest fit is assortment fit, new SKU pipeline, price-tier coverage, and proven consumer demand; your verified outdoor, camping and travel retail social refill channel focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the category buyer or vendor-review owner for a short intro video meeting?",
     "subject": ""
   }
 ];
