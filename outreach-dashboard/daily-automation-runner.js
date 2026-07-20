@@ -229,10 +229,10 @@ function dealProbabilityScore(task) {
 function channelPriorityScore(task) {
   const platform = String(task.platform || task.channel || '').trim().toLowerCase();
   const identity = `${task.id || ''} ${task.reason || ''} ${task.url || ''}`.toLowerCase();
+  if (platform === 'email' || /website-contact|official_website_contact_channel/.test(identity)) return 400;
   if (platform === 'linkedin' || /linkedin/.test(identity)) return 340;
   if (platform === 'facebook' || /facebook/.test(identity)) return 330;
   if (platform === 'instagram' || /instagram/.test(identity)) return 320;
-  if (platform === 'email' || /website-contact|official_website_contact_channel/.test(identity)) return 0;
   return 100;
 }
 
@@ -277,6 +277,7 @@ function preferSocialChannels(items) {
 
 function socialChannelRank(item = {}) {
   const text = [item.platform, item.id, item.url, item.platformUrl, item.contactUrl].filter(Boolean).join(' ').toLowerCase();
+  if (/\bemail\b|mailto:|website-contact|official_website_contact_channel/.test(text)) return 400;
   if (/\blinkedin\b|linkedin\.com/.test(text)) return 330;
   if (/\bfacebook\b|facebook\.com/.test(text)) return 320;
   if (/\binstagram\b|instagram\.com/.test(text)) return 310;
@@ -1245,7 +1246,7 @@ function buildDailyPotentialPool(classified, discoveryRun, context, targetSize) 
 }
 
 function bestVisibleChannel(items = []) {
-  const rank = { linkedin: 0, facebook: 1, instagram: 2, email: 3 };
+  const rank = { email: 0, linkedin: 1, facebook: 2, instagram: 3 };
   return items.slice().sort((left, right) => {
     const leftRank = rank[String(left.platform || '').toLowerCase()] ?? 9;
     const rightRank = rank[String(right.platform || '').toLowerCase()] ?? 9;

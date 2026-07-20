@@ -1339,16 +1339,36 @@
   function dailyDevelopedRows() {
     return executionResultRows()
       .filter(item => isTodayTimestamp(item.timestamp || item.resultCheckedAt || item.lastTouch))
-      .filter(item => ['sent_confirmed', 'account_followed', 'post_liked', 'website_contact_ready'].includes(String(item.sendStatus || item.status || '')))
+      .filter(item => ['sent_confirmed', 'submitted_confirmed'].includes(String(item.sendStatus || item.status || '')))
       .filter((item, index, list) => list.findIndex(other => String(other.taskId) === String(item.taskId)) === index)
       .map(item => ({ ...item, developedAt: item.timestamp || item.resultCheckedAt || item.lastTouch || '', interactionEvidence: item.evidence || item.automationEvidence || '' }));
   }
+  function developedChannel(item) {
+    const text = `${item.platform || ''} ${item.targetUrl || item.url || item.taskId || ''}`.toLowerCase();
+    if (/\bemail\b|mailto:|website-contact|official_website/.test(text)) return 'email';
+    if (/linkedin/.test(text)) return 'linkedin';
+    if (/facebook|messenger/.test(text)) return 'facebook';
+    if (/instagram/.test(text)) return 'instagram';
+    return 'other';
+  }
+  function dailyDevelopedSummary(rows = dailyDevelopedRows()) {
+    const counts = { email: 0, linkedin: 0, facebook: 0, instagram: 0, other: 0 };
+    rows.forEach(item => { counts[developedChannel(item)] += 1; });
+    return counts;
+  }
   function dailyDevelopedPanel() {
     const rows = dailyDevelopedRows();
+    const counts = dailyDevelopedSummary(rows);
+    const channelCards = [
+      ['email', 'Email', '采购邮箱 / 官网提交'],
+      ['linkedin', 'LinkedIn', '公司主页建联'],
+      ['facebook', 'Facebook', 'Messenger 建联'],
+      ['instagram', 'Instagram', '企业账号 DM'],
+    ].map(([key, label, note], index) => `<div class="cc-channel-card ${key}"><span>${index + 1}. ${label}</span><b>${counts[key]}</b><em>${note}</em></div>`).join('');
     const table = rows.length
-      ? `<div class="cc-table-wrap"><table class="cc-table"><thead><tr><th>客户</th><th>平台</th><th>开发状态</th><th>互动/发送证据</th><th>时间</th><th>入口</th></tr></thead><tbody>${rows.map(item => `<tr><td><b>${esc(item.company || item.name)}</b></td><td>${esc(item.platform || '')}</td><td><span class="cc-chip green">${esc(automationStatusLabel(item.sendStatus || item.status, item.interactionEvidence, item.duplicateRisk))}</span></td><td>${esc(item.interactionEvidence || '已记录')}</td><td>${esc(item.developedAt || '')}</td><td>${entryUrl(item) ? `<a href="${esc(entryUrl(item))}" target="_blank" rel="noopener">打开入口</a>` : ''}</td></tr>`).join('')}</tbody></table></div>`
+      ? `<div class="cc-table-wrap cc-developed-table"><table class="cc-table"><thead><tr><th>客户</th><th>优先渠道</th><th>开发状态</th><th>发送证据</th><th>时间</th><th>入口</th></tr></thead><tbody>${rows.map(item => `<tr><td><b>${esc(item.company || item.name)}</b></td><td><span class="cc-channel-badge ${developedChannel(item)}">${esc(developedChannel(item).toUpperCase())}</span></td><td><span class="cc-chip green">${esc(automationStatusLabel(item.sendStatus || item.status, item.interactionEvidence, item.duplicateRisk))}</span></td><td class="cc-evidence-cell">${esc(item.interactionEvidence || '已记录')}</td><td>${esc(item.developedAt || '')}</td><td>${entryUrl(item) ? `<a href="${esc(entryUrl(item))}" target="_blank" rel="noopener">打开入口</a>` : ''}</td></tr>`).join('')}</tbody></table></div>`
       : '<div class="cc-empty">今天还没有带时间证据的已开发客户</div>';
-    return `<section class="cc-panel"><div class="cc-panel-head"><h2>今日已开发客户</h2><span class="cc-sub">${rows.length} 条真实开发记录，来自最新执行 Artifact</span></div>${table}</section>`;
+    return `<section class="cc-panel cc-developed-panel"><div class="cc-panel-head"><div><h2>今日已开发客户</h2><span class="cc-sub">仅统计 sent_confirmed / submitted_confirmed，不把打开页面、点赞或草稿计为开发</span></div><div class="cc-developed-total"><span>今日真实开发</span><b>${rows.length}</b><em>/ 100</em></div></div><div class="cc-channel-priority"><div class="cc-priority-label"><b>执行优先级</b><span>Email → LinkedIn → Facebook → Instagram</span></div>${channelCards}</div>${table}</section>`;
   }
   function googleQueueItem(item) {
     return item && (item.source === 'google_customer_discovery' || /^google-customer-/i.test(item.taskId || item.id || ''));
@@ -1543,16 +1563,16 @@
     const executionConnected = autoClawConnected();
     const system = latestSystemSummary();
     const metrics = `<div class="cc-kpis">
+      <a class="cc-kpi cc-kpi-link" href="#today-developed"><span>今日已开发</span><b>${dailyDevelopedRows().length}</b></a>
       <a class="cc-kpi cc-kpi-link" href="${urlFor('queue', { queue: 'potential' })}"><span>今日待开发</span><b>${potentialRows.length}</b></a>
       <a class="cc-kpi cc-kpi-link" href="${urlFor('queue', { queue: 'untouched' })}"><span>可自动触达</span><b>${untouched.length}</b></a>
-      <a class="cc-kpi cc-kpi-link" href="${urlFor('queue', { queue: 'followup' })}"><span>跟进中</span><b>${followups.length}</b></a>
       <a class="cc-kpi cc-kpi-link" href="${urlFor('customers', { touch: 'untouched' })}"><span>候选客户池</span><b>${customerRecords().filter(record => !recordTouched(record)).length}</b></a>
     </div>`;
     const connection = `<div class="cc-quality">${executionConnected ? 'Codex Chrome Extension 已连接：浏览器执行层可用' : 'Codex Chrome Extension 未连接：当前是网页预览，请使用桌面 APP 执行；历史客户仍会因防重复规则保持禁用'}</div>`;
     const icpRule = `<div class="cc-icp-rule"><b>ICP 分值算法</b><span>市场潜力 25 + 行业/角色匹配 25 + 身份核验 15 + 采购意图 15 + SEO/趋势 10 + 可联系历史 10。仅 ICP &gt; ${ICP_MIN_SCORE} 进入每日新客户开发，≤${ICP_MIN_SCORE} 保留链接但划线，不自动触达。</span></div>`;
     if (!task) {
       return `${pageHead('开发工作台', 'Codex 全自动接手开发，Codex Chrome Extension 执行；仅重大异常通知介入')}
-        ${metrics}${systemFreshnessNotice(system)}${connection}${icpRule}${taskDetailPanel(system)}
+        ${metrics}<div id="today-developed">${dailyDevelopedPanel()}</div>${systemFreshnessNotice(system)}${connection}${icpRule}${taskDetailPanel(system)}
         <section class="cc-panel"><div class="cc-panel-head"><h2>今日新开发</h2><a href="${urlFor('customers', { touch: 'untouched' })}">筛选候选客户</a></div>
         <div class="cc-empty">本次没有可直接自动发送的社媒任务；队列里的 Google 线索主要是官网/邮件联系入口，已在上方任务明细中列出，需按官网联系安全门处理。</div></section>
         <section class="cc-panel"><div class="cc-panel-head"><h2>跟进优先</h2><a href="${urlFor('queue', { queue: 'followup' })}">查看 ${followups.length} 条</a></div>
@@ -1561,7 +1581,7 @@
     const score = scoreForDisplay(task);
     const activeIcp = icpScore(task);
     return `${pageHead('开发工作台', 'Codex 全自动决策与执行，GLM 优化画像与文案；仅重大 bug 暂停通知')}
-      ${metrics}${systemFreshnessNotice(system)}${connection}${icpRule}${taskDetailPanel(system)}
+      ${metrics}<div id="today-developed">${dailyDevelopedPanel()}</div>${systemFreshnessNotice(system)}${connection}${icpRule}${taskDetailPanel(system)}
       <section class="cc-panel"><div class="cc-panel-head"><h2>当前客户</h2><div class="cc-row-actions"><button class="primary" type="button" onclick="runGlmQueue()" ${eligibleCount ? '' : 'disabled'}>${eligibleCount ? '执行当前最高优先级客户' : '暂无待开发客户'}</button><span class="cc-chip green">${stateLabel(task.state)}</span></div></div><div class="cc-panel-body">
         <div class="cc-current"><div><h3>${platformUrl(task) ? `<a href="${esc(platformUrl(task))}" target="_blank" rel="noopener">${esc(task.company)}</a>` : esc(task.company)}</h3><div class="cc-sub">${esc(task.role || '采购/合作负责人')} · ${esc(normalizedCountry(task))} · ${esc(task.keyword)}</div><div class="cc-actions"><button type="button" onclick="openVerifiedCustomer('${esc(task.taskId)}')" ${platformUrl(task) ? '' : 'disabled'}>打开客户主页</button><button class="primary" type="button" title="${esc(autoClawAvailability(task).reason)}" onclick="runGlmDirect('${esc(task.taskId)}')" ${canRunGlm(task) ? '' : 'disabled'}>${esc(autoClawAvailability(task).label)}</button><a href="${urlFor('customer', { contact: task.taskId })}">查看系统档案</a></div></div><div class="cc-score"><strong>${score.total}</strong><span>综合开发分 / 100</span></div></div>
         <div class="cc-sub">ICP：${activeIcp}/100 · ${esc(icpExplanation(task))}</div>
