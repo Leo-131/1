@@ -75,16 +75,35 @@ function professionalSalesDraft(lead, draft) {
   const company = cleanName(lead?.company || lead?.name || 'your team');
   const category = cleanName(lead?.keyword || lead?.productCategory || 'camping and outdoor accessories');
   const persona = leadPersona(lead);
+  const collateral = collateralForLead(lead);
+  const channel = String(lead?.platform || lead?.channel || '').toLowerCase();
+  const isSocial = /facebook|instagram|linkedin/.test(channel);
+  const stage = String(lead?.touchStage || lead?.sequenceStage || lead?.status || 'initial').toLowerCase();
   const tooGeneric = !/flextail|supplier|wholesale|vendor|category|buyer|merchant|line sheet|distribution|assortment|sku|video meeting|product-market/i.test(original)
     || /appreciate the breadth|love to learn|happy to share details|at your convenience/i.test(original)
     || original.length > 620
     || original.length < 120;
   if (original && !tooGeneric) return original;
-  return [
+  if (/follow.?up.?2|day.?7|day.?10|close/.test(stage)) {
+    return [
+      `Hi ${company} team — one last quick note from Leo at FLEXTAIL.`,
+      `If ${category} is not a current priority, no problem. If it is, who owns the category or vendor review so I can send only the most relevant range?`,
+    ].join(' ');
+  }
+  if (/follow|day.?3|day.?5/.test(stage)) {
+    return [
+      `Hi ${company} team — following up on my FLEXTAIL note.`,
+      `Our ultralight pumps, lighting and travel electrics cover multiple use cases and price tiers, which may fit your ${category} assortment.`,
+      `Would a 15-minute range review be useful, or could you point me to the category buyer?`,
+    ].join(' ');
+  }
+  const message = [
     `Hi ${company} team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand.`,
     `For a ${persona.type}, the strongest fit is ${persona.angle}; your ${category} focus looks relevant to that direction.`,
     `We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to ${persona.ask}?`,
-  ].join(' ');
+  ];
+  if (!isSocial) message.splice(2, 0, `Relevant range: ${collateral.url}`);
+  return message.join(' ');
 }
 
 function leadMessages(lead) {
@@ -104,7 +123,7 @@ function leadMessages(lead) {
     {
       role: 'user',
       content: JSON.stringify({
-        task: 'Assess the exact lead and prepare one compliant professional English B2B outreach message for manual review before sending.',
+        task: 'Assess the exact lead and prepare one compliant professional English B2B outreach message for automatic execution when safety gates pass.',
         lead,
         inferredPersona: leadPersona(lead),
         conversionObjective: 'maximize reply rate and conversion to a short phone/video meeting by using the lead-specific persona, category, channel, region, and current conversation context',
@@ -163,4 +182,5 @@ async function requestGlm(options) {
   }
 }
 
-module.exports = { leadMessages, parseJsonContent, professionalSalesDraft, requestGlm };
+module.exports = { leadMessages, leadPersona, parseJsonContent, professionalSalesDraft, requestGlm };
+const { collateralForLead } = require('./sales-collateral');

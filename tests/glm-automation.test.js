@@ -18,6 +18,7 @@ const mainSource = fs.readFileSync(path.join(__dirname, '..', 'outreach-dashboar
 const chromeDriverSource = fs.readFileSync(path.join(__dirname, '..', 'outreach-dashboard', 'codex-chrome-driver.js'), 'utf8');
 const discoverySource = fs.readFileSync(path.join(__dirname, '..', 'outreach-dashboard', 'google-lead-discovery-runner.js'), 'utf8');
 const dailyRunnerSource = fs.readFileSync(path.join(__dirname, '..', 'outreach-dashboard', 'daily-automation-runner.js'), 'utf8');
+const glmSource = fs.readFileSync(path.join(__dirname, '..', 'outreach-dashboard', 'glm-service.js'), 'utf8');
 const templateSource = fs.readFileSync(path.join(__dirname, '..', 'outreach-dashboard', 'api', 'templates.js'), 'utf8');
 const marketProtectionSource = fs.readFileSync(path.join(__dirname, '..', 'outreach-dashboard', 'country-market-protection.js'), 'utf8');
 
@@ -80,13 +81,22 @@ test('website contact can execute without a configured attachment', () => {
 test('daily execution ranks LinkedIn, Facebook and Instagram before website contact fallback', () => {
   assert.ok(mainSource.includes('function socialPriorityRank'));
   assert.ok(mainSource.includes('function developmentPriorityCompare'));
-  assert.ok(mainSource.includes("if (/\\blinkedin\\b|linkedin\\.com/.test(text)) return 320"));
-  assert.ok(mainSource.includes("if (/\\bfacebook\\b|facebook\\.com/.test(text)) return 310"));
-  assert.ok(mainSource.includes("if (/\\binstagram\\b|instagram\\.com/.test(text)) return 300"));
+  assert.ok(mainSource.includes("if (/\\blinkedin\\b|linkedin\\.com/.test(text)) return 340"));
+  assert.ok(mainSource.includes("if (/\\bfacebook\\b|facebook\\.com/.test(text)) return 330"));
+  assert.ok(mainSource.includes("if (/\\binstagram\\b|instagram\\.com/.test(text)) return 320"));
   assert.ok(mainSource.includes('return socialPriorityRank(right) - socialPriorityRank(left)'));
   assert.ok(mainSource.includes('...socialPool'));
   assert.ok(mainSource.includes('...websiteFallback.filter'));
   assert.ok(mainSource.includes('.sort(developmentPriorityCompare)'));
+});
+
+test('LinkedIn platform engagement follows before sending the approved DM without comment or like', () => {
+  assert.match(chromeDriverSource, /platform === 'linkedin'/);
+  assert.match(chromeDriverSource, /LinkedIn company\/profile outreach is intentionally limited/);
+  assert.match(chromeDriverSource, /let follow = await clickOptionalAction\(tab, 'follow', platform\)/);
+  const linkedinBranch = chromeDriverSource.match(/else if \(platform === 'linkedin'\) \{([\s\S]*?)\n    \} else \{/);
+  assert.ok(linkedinBranch, 'LinkedIn must have a dedicated engagement branch');
+  assert.doesNotMatch(linkedinBranch[1], /submitOptionalComment|clickOptionalAction\(tab, 'like'/);
 });
 
 test('no-message social profiles are blocked from automatic execution', () => {
@@ -599,6 +609,39 @@ test('Facebook execution rejects generic destinations before outreach', () => {
   assert.equal(isBlockedFacebookTarget(new URL('https://www.facebook.com/bassproshops')), false);
 });
 
+test('Facebook execution rejects personal profiles even when the URL matches', () => {
+  assert.ok(chromeDriverSource.includes('personalProfileSignal'));
+  assert.ok(chromeDriverSource.includes('facebookBusinessPageOk'));
+  assert.match(chromeDriverSource, /facebookProfileUrl/);
+  assert.match(chromeDriverSource, /platform !== 'facebook' \|\| \(!facebookProfileUrl && !personalProfileSignal && businessSignal\)/);
+  assert.match(chromeDriverSource, /friends are family|i'm a .*\\b\(chameleon\|person\|guy\|girl\)/);
+});
+
+test('Facebook composer failure closes stale Messenger UI without reopening the same dead end', () => {
+  assert.match(chromeDriverSource, /facebook_composer_unavailable_closed_no_retry/);
+  assert.match(chromeDriverSource, /closeFacebookMessengerInbox\(tab\);[\s\S]*closeFacebookChatWindows\(tab\);[\s\S]*return \{\n      messageUnavailable: true/);
+});
+
+test('customer execution is Codex Chrome Extension only and does not require GLM', () => {
+  assert.ok(mainSource.includes("executionLayer: 'Codex Chrome Extension only'"));
+  assert.ok(mainSource.includes("reason: 'local_codex_extension_template'"));
+  assert.ok(mainSource.includes("execution = await runCodexChromeLead(lead, decision, 'codex_chrome_extension_only'"));
+  assert.ok(mainSource.includes('Customer execution is Codex Chrome Extension only'));
+});
+
+test('Facebook composer writes React contenteditable state before send', () => {
+  assert.ok(chromeDriverSource.includes('el.replaceChildren()'));
+  assert.ok(chromeDriverSource.includes("new Event('change'"));
+  assert.ok(chromeDriverSource.includes("new KeyboardEvent('keyup'"));
+  assert.ok(chromeDriverSource.includes('facebook_draft_not_inserted_after_composer_refocus'));
+  assert.match(chromeDriverSource, /messageLike = .*\^aa\$/);
+});
+
+test('daily queue requires explicit official Facebook page classification', () => {
+  assert.ok(dailyRunnerSource.includes("task.facebookStatus === 'verified_official_page_candidate'"));
+  assert.ok(dailyRunnerSource.includes('Legacy/ambiguous profiles'));
+});
+
 test('automation detects broken Instagram profile pages before execution', () => {
   assert.equal(isUnavailableProfilePage({
     url: 'https://www.instagram.com/missing-brand/',
@@ -716,8 +759,7 @@ test('Codex Chrome execution can auto-send approved social outreach with confirm
   assert.ok(mainSource.includes('inspect-social-context'));
   assert.ok(mainSource.includes('optimizeDraftWithContext'));
   assert.ok(mainSource.includes('contextAwareFallbackDraft'));
-  assert.ok(mainSource.includes('local-professional-template-fallback'));
-  assert.ok(mainSource.includes('local_template_fallback_after_glm_error'));
+  assert.ok(mainSource.includes('local_codex_extension_template'));
   assert.ok(mainSource.includes('professionalSalesDraft(lead || {},'));
   assert.ok(mainSource.includes('Email or WhatsApp works well'));
   assert.ok(mainSource.includes('Flextail and Vollyc'));
@@ -766,6 +808,8 @@ test('Codex Chrome execution can auto-send approved social outreach with confirm
   assert.ok(chromeDriverSource.includes('submitFacebookPostEngagement'));
   assert.ok(chromeDriverSource.includes('facebookPostLikeButtonExpression'));
   assert.ok(chromeDriverSource.includes('facebookStartButtonExpression'));
+  assert.match(chromeDriverSource, /platform === 'facebook'[\s\S]*facebookProfileCandidates/);
+  assert.match(chromeDriverSource, /!item\.inDialog && !item\.inNav/);
   assert.ok(chromeDriverSource.includes('insertDraftAndVerify'));
   assert.ok(chromeDriverSource.includes('setComposerTextExpression'));
   assert.match(chromeDriverSource, /platform === 'instagram' \|\| platform === 'facebook'[\s\S]*profileMessageButtonExpression\(platform, keywords\)/);
@@ -822,7 +866,24 @@ test('daily execution is serial and can process a priority batch per run', () =>
   assert.ok(mainSource.includes('const websiteFallback = executableQueueCandidates'));
   assert.ok(mainSource.includes('const isAutoRunDaily = process.argv.includes'));
   assert.ok(mainSource.includes('async function runAutoDailyAndWriteArtifact'));
-  assert.ok(mainSource.includes('timeout: 120000'));
+  assert.ok(mainSource.includes('timeout: 45000'));
+});
+
+test('daily execution checkpoints completed tasks and resumes without duplicate processing', () => {
+  assert.ok(mainSource.includes("const DAILY_EXECUTION_CHECKPOINT_FILE = 'daily-automation-execution-checkpoint.json'"));
+  assert.ok(mainSource.includes('function readDailyExecutionCheckpoint'));
+  assert.ok(mainSource.includes('function writeDailyExecutionCheckpoint'));
+  assert.ok(mainSource.includes("reason: 'completed_in_execution_checkpoint'"));
+  assert.ok(mainSource.includes('completedTaskIds: [...completedTaskIds]'));
+  assert.ok(mainSource.includes('checkpoint: readJson(dailyExecutionCheckpointPath(), null)'));
+});
+
+test('Google discovery exposes normalized source metadata while retaining the legacy source', () => {
+  assert.ok(discoverySource.includes("source: 'google_customer_discovery'"));
+  assert.ok(discoverySource.includes("sourceType: 'google'"));
+  assert.ok(discoverySource.includes("discoveryProvider: 'google'"));
+  assert.ok(discoverySource.includes("channel: String(item.platform || '').toLowerCase()"));
+  assert.ok(dailyRunnerSource.includes("item.sourceType === 'google'"));
 });
 
 test('daily execution owns and closes each automation-created Chrome tab', () => {
@@ -831,7 +892,30 @@ test('daily execution owns and closes each automation-created Chrome tab', () =>
   assert.ok(mainSource.includes('{ automationOwned: true }'));
   assert.ok(mainSource.includes('await closeAutomationTabsOpenedAfter(ownedTabsAtStart)'));
   assert.ok(mainSource.includes('await closeAutomationChromeTab(chromeOpen)'));
+  assert.match(mainSource, /recordAutomationResult\(item, result\);[\s\S]*closeAutomationChromeTab\(result && result\.chromeOpen\)/);
+  assert.match(mainSource, /allowParallel: true, reuseTab: true/);
   assert.ok(mainSource.includes('const parallelLimit = 1'));
+});
+
+test('automation-owned Chrome work opens in a separate background tab without stealing focus', () => {
+  assert.ok(mainSource.includes("'Target.createTarget'"));
+  assert.ok(mainSource.includes('background: true'));
+  assert.ok(mainSource.includes('if (!options.automationOwned) await activateChromeTarget(port, opened)'));
+});
+
+test('sales copy selects verified FLEXTAIL collateral and keeps social DMs concise', () => {
+  const collateralSource = fs.readFileSync(path.join(__dirname, '..', 'outreach-dashboard', 'sales-collateral.js'), 'utf8');
+  assert.ok(collateralSource.includes('https://www.flextail.com/collections/all-products'));
+  assert.ok(collateralSource.includes('https://www.flextail.com/collections/camping-appliances'));
+  assert.ok(collateralSource.includes('https://www.flextail.com/products/tiny-pump-2x'));
+  assert.ok(glmSource.includes("const isSocial = /facebook|instagram|linkedin/.test(channel)"));
+  assert.ok(glmSource.includes("if (!isSocial) message.splice(2, 0"));
+  assert.ok(glmSource.includes("/follow.?up.?2|day.?7|day.?10|close/"));
+  assert.ok(glmSource.includes("/follow|day.?3|day.?5/"));
+  const socialDraft = professionalSalesDraft({ company: 'Trail Shop', platform: 'Facebook', category: 'camping' }, '');
+  const emailDraft = professionalSalesDraft({ company: 'Trail Shop', platform: 'Email', category: 'camping' }, '');
+  assert.doesNotMatch(socialDraft, /https?:\/\//);
+  assert.match(emailDraft, /https:\/\/www\.flextail\.com\//);
 });
 
 test('daily execution duplicate blocking is channel-aware', () => {
