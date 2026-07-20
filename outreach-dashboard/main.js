@@ -33,7 +33,7 @@ const DEFAULT_WEBSITE_CONTACT_EMAIL = 'leo@flextailgear.com';
 const DEFAULT_WEBSITE_CONTACT_FIRST_NAME = 'Leo';
 const DEFAULT_WEBSITE_CONTACT_LAST_NAME = 'Liu';
 const DEFAULT_WEBSITE_CONTACT_PHONE = '+86 17321028184';
-const DEFAULT_WEBSITE_CONTACT_SUBJECT = 'Flextail & Vollyc | Lightweight Outdoor & 3C Electronics – Potential Cooperation';
+const DEFAULT_WEBSITE_CONTACT_SUBJECT = 'FLEXTAIL retail partnership | 2026 assortment';
 
 const PLATFORM_CONFIG = {
   li: {
@@ -1632,7 +1632,7 @@ function websiteContactSubject(lead = {}) {
   return lead.websiteContactSubject || DEFAULT_WEBSITE_CONTACT_SUBJECT;
 }
 
-function marketingEmailSignature() {
+function legacyMarketingEmailSignature() {
   return `[Flextail.com](https://www.flextail.com/), [vollyc.com](https://vollyc.com/)
 
 [Sincerely](https://wa.me/8617321028184)
@@ -1647,7 +1647,7 @@ function marketingEmailSignature() {
 [Room103, Building No.6, No.1 Yanjiaqiao, Pudong District, ShangHai, China](https://wa.me/8617321028184)`;
 }
 
-function websiteContactMessage(lead = {}) {
+function legacyWebsiteContactMessage(lead = {}) {
   if (lead.websiteContactMessage) return String(lead.websiteContactMessage).trim();
   const rawName = String(lead.company || lead.name || 'Your').replace(/\s+(Inc|Ltd|Limited|LLC|Group)$/i, '').trim() || 'Your';
   return `Dear ${rawName} Team,
@@ -1669,8 +1669,34 @@ If you are available, I would greatly appreciate the opportunity to arrange a sh
 
 Thank you for your time and consideration. I look forward to your reply.
 
-${marketingEmailSignature()}
+${legacyMarketingEmailSignature()}
 `;
+}
+
+function websiteContactMessage(lead = {}) {
+  if (lead.websiteContactMessage) return String(lead.websiteContactMessage).trim();
+  const rawName = String(lead.company || lead.name || 'Your')
+    .replace(/\s+(Inc|Ltd|Limited|LLC|Group)$/i, '')
+    .trim() || 'Your';
+  const relevance = String(
+    lead.productCategory
+    || lead.keyword
+    || 'outdoor, camping and travel retail'
+  ).replace(/\s+/g, ' ').trim();
+  return `Dear ${rawName} Team,
+
+I’m Leo from FLEXTAIL. Your focus on ${relevance} looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.
+
+FLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.
+
+Would you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?
+
+Product overview: https://www.flextail.com/
+
+Best regards,
+Leo Liu
+Sales & Operations Director
+Leo@flextailgear.com`;
 }
 
 function websiteMarketingAttachmentPath() {
