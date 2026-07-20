@@ -338,7 +338,8 @@ function failedOpenResultShouldBlockRetry(result = {}) {
     'website_contact_entry_not_verified',
   ];
   if (recoverable.some(fragment => evidence.includes(fragment))) return false;
-  if (/identity_mismatch_expected_[\s\S]*_title_\s*$/i.test(String(result.evidence || ''))
+  if (/identity_mismatch_expected_[\s\S]*_title_(?:\(\d+\)\s*)?facebook\s*$/i.test(String(result.evidence || ''))
+    || /identity_mismatch_expected_[\s\S]*_title_\s*$/i.test(String(result.evidence || ''))
     || evidence.includes('identity_check_pending_empty_page')) return false;
   const hardFailures = [
     'identity_mismatch',
