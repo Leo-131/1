@@ -97,12 +97,23 @@ function professionalSalesDraft(lead, draft) {
       `Would a 15-minute range review be useful, or could you point me to the category buyer?`,
     ].join(' ');
   }
+  if (!isSocial) {
+    return [
+      `Hi ${company} team,`,
+      `I’m Leo from FLEXTAIL. Your ${category} distribution focus looks relevant for our compact outdoor and travel-electrics range, including ultralight pumps, portable lighting and power products.`,
+      `For a ${persona.type}, the potential fit is ${persona.angle}. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers.`,
+      'Would you be open to a brief vendor/category review, or could you route this to the category or vendor-onboarding owner?',
+      `Product overview: ${collateral.url}`,
+      'Best regards,',
+      'Leo Liu',
+      'FLEXTAIL',
+    ].join('\n\n');
+  }
   const message = [
     `Hi ${company} team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand.`,
     `For a ${persona.type}, the strongest fit is ${persona.angle}; your ${category} focus looks relevant to that direction.`,
     `We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to ${persona.ask}?`,
   ];
-  if (!isSocial) message.splice(2, 0, `Relevant range: ${collateral.url}`);
   return message.join(' ');
 }
 
@@ -117,7 +128,7 @@ function leadMessages(lead) {
         SALES_COPY_REFERENCE,
         'Every draft must be customized to the exact customer persona and concrete lead evidence. Optimize the message for the highest chance of a reply and a booked phone/video meeting, not for generic brand awareness.',
         'Choose the conversion angle by persona: retail/category buyer = assortment fit, price tiers and vendor review; distributor/importer = regional sell-through, margins and channel coverage; brand/ODM/sourcing = co-development and product roadmap; 3C/electronics = Vollyc rotation plus Flextail travel electrics; outdoor/travel channel = lightweight use-case fit.',
-        'The outreach draft must be 55-90 English words, mention FLEXTAIL once, connect to the lead category, include either 36+ new SKUs in 2026 or brief brand/catalog intro, ask for a short intro video meeting or the right buyer/category/vendor-review contact, and avoid generic praise, emojis, hype, discounts, false partnerships, or "send catalog" spam.',
+        'Social drafts must be 55-90 English words. Email drafts must be 90-140 words with short paragraphs, one verified product link, a professional sign-off, and one low-friction CTA. Mention FLEXTAIL once, connect to the lead category, ask for a short range-fit review or the right buyer/category/vendor-review contact, and avoid generic praise, emojis, hype, discounts, false partnerships, attachments on the first touch, or "send catalog" spam.',
       ].join(' '),
     },
     {
