@@ -846,6 +846,21 @@ async function closeAutomationChromeTab(chromeOpen) {
 }
 
 async function openChromeTargetWithRecovery(port, targetUrl) {
+  const version = await httpJson(`http://127.0.0.1:${port}/json/version`, 2500).catch(() => null);
+  if (version && version.webSocketDebuggerUrl) {
+    const created = await cdpCommand(version.webSocketDebuggerUrl, 'Target.createTarget', {
+      url: targetUrl,
+      background: true,
+    }, 5000).catch(() => null);
+    if (created && created.targetId) {
+      for (let attempt = 0; attempt < 8; attempt += 1) {
+        const tabs = await httpJson(`http://127.0.0.1:${port}/json/list`, 2500).catch(() => []);
+        const opened = Array.isArray(tabs) ? tabs.find(item => item && item.id === created.targetId) : null;
+        if (opened && opened.webSocketDebuggerUrl) return opened;
+        await sleep(250);
+      }
+    }
+  }
   const endpoint = `http://127.0.0.1:${port}/json/new?${encodeURIComponent(targetUrl)}`;
   let lastError = null;
   for (let attempt = 0; attempt < 3; attempt += 1) {
@@ -915,7 +930,9 @@ async function openWithCodexChrome(url, options = {}) {
   }
   if (options.automationOwned && opened && opened.id) automationOwnedChromeTabs.set(opened.id, port);
   if (options.reuseTab && opened && opened.id) automationReusableChromeTab = { port, tabId: opened.id };
-  await activateChromeTarget(port, opened);
+  // Automation-owned targets stay in their own background tab so a live run
+  // never steals focus from the page the operator is actively using.
+  if (!options.automationOwned) await activateChromeTarget(port, opened);
   const inspected = await inspectOpenedChromeTab(opened, parsed.toString());
   if (inspected.unavailable) {
     return {

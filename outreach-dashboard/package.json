@@ -40,6 +40,7 @@
       "codex-chrome-driver.js",
       "preload.js",
       "glm-service.js",
+      "sales-collateral.js",
       "autoglm-bridge.js",
       "build-portable-app.js",
       "dashboard-local-server.js",
