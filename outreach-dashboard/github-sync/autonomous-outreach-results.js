@@ -4261,5 +4261,27 @@ window.AUTONOMOUS_OUTREACH_RESULTS = [
     "evidence": "instagram_message_sent_confirmed_after_send_click;instagram_draft_inserted_verified;sentText:false;outgoingBubble:true;emptyComposer:true;follow_not_available;instagram_post_not_available;retry:instagram_post_not_available",
     "draft": "Hi Half-Moon Outfitters team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a retail/category buyer, the strongest fit is assortment fit, new SKU pipeline, price-tier coverage, and proven consumer demand; your verified outdoor, camping and travel retail social refill channel focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the category buyer or vendor-review owner for a short intro video meeting?",
     "subject": ""
+  },
+  {
+    "task_id": "manual-bass-pro-shops-alibaba-email",
+    "approval_version": 1,
+    "status": "sent_confirmed",
+    "agent": "codex-chrome-extension-dedicated-window",
+    "timestamp": "2026-07-20T09:01:00.000Z",
+    "target_url": "mailto:vendorrelations@basspro.com",
+    "evidence": "official_vendor_relations_email_from_verified_discovery_artifact;alibaba_mail_sender_verified_leo_at_flextailgear_com;separate_chrome_tab_used;send_confirmation_visible;sent_folder_record_visible_at_2026-07-20_17:01_asia_shanghai",
+    "draft": "Dear Bass Pro Shops Vendor Relations Team,\n\nI’m Leo Liu from FLEXTAIL, a specialist in compact outdoor electrics. Our range includes ultralight rechargeable air pumps, camping lighting and portable power products designed for high-rotation camping and travel use.\n\nBass Pro Shops and Cabela’s are a strong fit for this category, so I’d like to submit FLEXTAIL for an initial vendor and assortment review. We have proven international sell-through and a pipeline of 36+ new SKUs planned for 2026 across multiple use cases and price tiers.\n\nWould you please route this to the camping accessories buyer or advise the correct next step for vendor submission? I can provide a concise product and commercial overview.\n\nProduct range: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nSHANGHAI FLEXTAIL TECHNOLOGY CO., LTD.\nLeo@flextailgear.com\nWhatsApp: +86 173 2102 8184",
+    "subject": "FLEXTAIL portable outdoor electrics | Vendor review for camping accessories"
+  },
+  {
+    "task_id": "google-customer-facewest-instagram",
+    "approval_version": 1,
+    "status": "approval_pending",
+    "agent": "codex-chrome-extension",
+    "timestamp": "2026-07-20T09:12:35.724Z",
+    "target_url": "https://www.instagram.com/facewest/",
+    "evidence": "driver_error: Command failed: C:\\Program Files\\nodejs\\node.exe E:\\New project\\outreach-dashboard\\codex-chrome-driver.js prepare-instagram-draft {\"port\":9224,\"tabId\":\"FE38B39DAF985459DDBB3D90C713CD32\",\"targetUrl\":\"https://www.instagram.com/facewest/\",\"expectedCompany\":\"Facewest\",\"draft\":\"Hi Facewest team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a retail/category buyer, the strongest fit is assortment fit, new SKU pipeline, price-tier coverage, and proven consumer demand; your verified outdoor, camping and travel retail social refill channel focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the category buyer or vendor-review owner for a short intro video meeting?\",\"autoSend\":true,\"autoEngage\":true,\"engagementComment\":\"Great outdoor checklist. Useful reminder for hikers preparing a complete, lightweight kit.\",\"replaceExistingDraft\":true}\n",
+    "draft": "Hi Facewest team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a retail/category buyer, the strongest fit is assortment fit, new SKU pipeline, price-tier coverage, and proven consumer demand; your verified outdoor, camping and travel retail social refill channel focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the category buyer or vendor-review owner for a short intro video meeting?",
+    "subject": ""
   }
 ];
