@@ -7,6 +7,7 @@ const net = require('net');
 const tls = require('tls');
 const { execFile, spawn } = require('child_process');
 const { professionalSalesDraft, requestGlm } = require('./glm-service');
+const { emailSenderReadiness } = require('./email-channel');
 const {
   normalizeTarget,
   validateLeadForExecution,
@@ -3311,6 +3312,8 @@ app.whenReady().then(() => {
   }
   createWindow();
 });
+
+ipcMain.handle('email-channel-status', async () => emailSenderReadiness());
 
 app.on('window-all-closed', () => {
   if (!isAutoRunDaily) app.quit();
