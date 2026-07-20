@@ -186,6 +186,7 @@ test('unsubmitted website preparation allows Summit social development across da
 });
 
 test('historical development lock distinguishes user interaction from transient browser failure', () => {
+  assert.ok(mainSource.includes('facebook\\s*$'));
   assert.equal(dailyRunner.isHistoricalDevelopmentResult({
     status: 'send_unconfirmed',
     evidence: 'linkedin_draft_not_inserted_before_send',
