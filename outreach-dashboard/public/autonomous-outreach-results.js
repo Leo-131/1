@@ -4489,5 +4489,20 @@ window.AUTONOMOUS_OUTREACH_RESULTS = [
     "evidence": "alibaba_mail_sent_success_toast;sent_folder_record_confirmed;sent_folder_subject:FLEXTAIL brand distribution | KOMSA manufacturer partnership",
     "draft": "Dear KOMSA Partnership Team,\n\nI’m Leo Liu from FLEXTAIL. KOMSA’s manufacturer services, European market coverage and extensive retail network make your group highly relevant for our compact outdoor-electronics portfolio.\n\nFLEXTAIL develops ultralight rechargeable air pumps, camping lighting and portable power products designed for strong accessory margins and high retail rotation. Our 2026 pipeline includes 36+ new SKUs across multiple outdoor, travel and lifestyle use cases and price tiers. This breadth can support localized launches through KOMSA’s retail, ecommerce and specialist-dealer channels.\n\nCould you route this introduction to the manufacturer-partnership or Consumer Electronics product team for an initial brand and distribution review? I can provide a concise commercial overview, launch priorities and product roadmap.\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
     "subject": "FLEXTAIL brand distribution | KOMSA manufacturer partnership"
+  },
+  {
+    "task_id": "customer-attachment-vario-sport-email",
+    "approval_version": 1,
+    "status": "sent_confirmed",
+    "agent": "codex-chrome-extension-alibaba-mail",
+    "timestamp": "2026-07-20T13:51:00.000Z",
+    "target_url": "mailto:post@variosport.no",
+    "platform": "email",
+    "company": "Vario Sport AS / Fauna Outdoor",
+    "sender": "Leo@flextailgear.com",
+    "recipient": "post@variosport.no",
+    "evidence": "official_fauna_vario_contact_page_verified;alibaba_mail_sent_success_toast;sent_folder_record_confirmed;sent_folder_subject:FLEXTAIL outdoor electronics | Vario Sport assortment review",
+    "draft": "Dear Vario Sport Team,\n\nI’m Leo Liu from FLEXTAIL. Your Fauna outdoor range across tents, sleeping systems, backpacks and Nordic hunting equipment makes Vario Sport highly relevant for our compact outdoor-electronics portfolio.\n\nFLEXTAIL develops ultralight rechargeable air pumps, camping lighting and portable power products designed to complement camping and travel assortments with practical, high-rotation accessories. Our 2026 pipeline includes 36+ new SKUs across multiple outdoor use cases and price tiers, offering opportunities for localized Nordic launches and category expansion.\n\nCould you route this introduction to the person responsible for buying, brand partnerships or new-product review? I can provide a concise range overview, commercial proposal and launch priorities.\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
+    "subject": "FLEXTAIL outdoor electronics | Vario Sport assortment review"
   }
 ];
