@@ -358,6 +358,13 @@
       const sendStatus = result.sendStatus || result.status || result.result && result.result.sendStatus || '';
       const evidence = result.evidence || result.automationEvidence || result.result && result.result.evidence || '';
       const targetUrl = result.targetUrl || result.url || result.result && result.result.targetUrl || base.targetUrl || base.verifiedTargetUrl || '';
+      const eventTime = timestampOrEmpty(
+        result.timestamp
+        || result.sentAt
+        || result.lastTouch
+        || result.resultCheckedAt
+        || result.result && (result.result.timestamp || result.result.sentAt || result.result.lastTouch)
+      ) || completedAt;
       return {
         ...base,
         ...result,
@@ -371,16 +378,16 @@
         evidence,
         sendStatus,
         state: sendStatus === 'sent_confirmed' ? 'outcome_pending' : 'profile_scored',
-        lastTouch: sendStatus === 'sent_confirmed' ? completedAt : (result.lastTouch || base.lastTouch || completedAt),
-        resultCheckedAt: completedAt,
+        lastTouch: ['sent_confirmed', 'submitted_confirmed'].includes(sendStatus) ? eventTime : (result.lastTouch || base.lastTouch || ''),
+        resultCheckedAt: eventTime,
         discoveredAt: result.discoveredAt || base.discoveredAt || '',
         profiledAt: result.profiledAt || base.profiledAt || '',
-        approvedAt: sendStatus === 'sent_confirmed' ? completedAt : '',
-        sentAt: sendStatus === 'sent_confirmed' ? completedAt : '',
+        approvedAt: ['sent_confirmed', 'submitted_confirmed'].includes(sendStatus) ? eventTime : '',
+        sentAt: ['sent_confirmed', 'submitted_confirmed'].includes(sendStatus) ? eventTime : '',
         action: result.action || base.action || 'executed',
         reason: result.reason || result.error || evidence || base.reason || 'latest_execution_result',
         latestExecutionResult: true,
-        previouslyContacted: sendStatus === 'sent_confirmed' || Boolean(base.previouslyContacted),
+        previouslyContacted: ['sent_confirmed', 'submitted_confirmed'].includes(sendStatus) || Boolean(base.previouslyContacted),
       };
     });
   }
@@ -525,7 +532,7 @@
       const timestamp = timestampOrEmpty(item.timestamp);
       const status = item.status || '';
       const evidence = item.evidence || '';
-      const confirmed = status === 'sent_confirmed';
+      const confirmed = ['sent_confirmed', 'submitted_confirmed'].includes(status);
       const contactCaptured = /contact_entry_verified|mailto_detected|contact_form_detected|business_contact_route_detected/i.test(evidence);
       const discoveredAt = timestampOrEmpty(task.discoveredAt) || timestamp;
       const profiledAt = timestampOrEmpty(task.profiledAt);
@@ -791,8 +798,34 @@
     if (!Number.isFinite(rightTime)) return left || '';
     return rightTime > leftTime ? right : left;
   }
+  function recordEventTime(record) {
+    if (!record) return '';
+    return [
+      record.lastTouch,
+      record.sentAt,
+      record.repliedAt,
+      record.contactCapturedAt,
+      record.meetingBookedAt,
+      record.buyerRoutedAt,
+      record.followUpAt,
+      record.sentTime,
+    ].map(timestampOrEmpty).find(Boolean) || '';
+  }
   function recordUpdatedAt(record) {
-    return record && (record.lastTouch || record.resultCheckedAt || record.discoveredAt || record.profiledAt || record.date || '');
+    return recordEventTime(record);
+  }
+  function formatCustomerEventTime(record) {
+    const value = recordEventTime(record);
+    if (!value) return '';
+    return new Intl.DateTimeFormat('zh-CN', {
+      timeZone: 'Asia/Shanghai',
+      year: 'numeric',
+      month: '2-digit',
+      day: '2-digit',
+      hour: '2-digit',
+      minute: '2-digit',
+      hour12: false,
+    }).format(new Date(value));
   }
   function lastActualTouch(task) {
     return [task.lastTouch, task.sentAt, task.lastAutomationAt]
@@ -979,8 +1012,8 @@
       targetUrl: row.targetUrl || row.url || row.contactUrl || row.website || '',
       automationTaskId: row.taskId || row.id || '',
       automationEvidence: row.reason || row.evidence || '',
-      resultCheckedAt: latestRun && latestRun.generatedAt || '',
-      discoveredAt: latestRun && latestRun.generatedAt || '',
+      resultCheckedAt: row.resultCheckedAt || '',
+      discoveredAt: row.discoveredAt || '',
     };
   }
   function computeCustomerRecords() {
@@ -1031,8 +1064,13 @@
       enriched.region = country;
       enriched.automationTaskId = source.taskId || source.id || enriched.automationTaskId;
       enriched.automationEvidence = source.reason || source.evidence || source.sendStatus || enriched.automationEvidence || '';
-      enriched.resultCheckedAt = source.resultCheckedAt || (latestRun && latestRun.generatedAt) || enriched.resultCheckedAt || '';
-      enriched.discoveredAt = source.discoveredAt || enriched.discoveredAt || enriched.resultCheckedAt || '';
+      enriched.resultCheckedAt = source.resultCheckedAt || enriched.resultCheckedAt || '';
+      enriched.discoveredAt = source.discoveredAt || enriched.discoveredAt || '';
+      const confirmedTouch = confirmedTouchFor({ ...enriched, ...source });
+      if (confirmedTouch && confirmedTouch.timestamp) {
+        enriched.lastTouch = newerTimestamp(enriched.lastTouch, confirmedTouch.timestamp);
+        enriched.status = automationStatusLabel('sent_confirmed', confirmedTouch.evidence, false);
+      }
       return enriched;
     });
     latestRows.forEach(row => {
@@ -1337,10 +1375,23 @@
     return labels[reason] || reason || '规则未给出原因';
   }
   function dailyDevelopedRows() {
-    return executionResultRows()
+    const rows = [
+      ...autonomousResultRecords(),
+      ...executionResultRows(),
+    ];
+    const seen = new Set();
+    return rows
       .filter(item => isTodayTimestamp(item.timestamp || item.resultCheckedAt || item.lastTouch))
       .filter(item => ['sent_confirmed', 'submitted_confirmed'].includes(String(item.sendStatus || item.status || '')))
-      .filter((item, index, list) => list.findIndex(other => String(other.taskId) === String(item.taskId)) === index)
+      .filter(item => {
+        const key = [
+          canonicalLeadKey(item.taskId || item.id || item.company || item.name),
+          developedChannel(item),
+        ].join('|');
+        if (seen.has(key)) return false;
+        seen.add(key);
+        return true;
+      })
       .map(item => ({ ...item, developedAt: item.timestamp || item.resultCheckedAt || item.lastTouch || '', interactionEvidence: item.evidence || item.automationEvidence || '' }));
   }
   function developedChannel(item) {
@@ -1823,7 +1874,7 @@
         <input type="hidden" name="direction" value="${direction}">
         <button class="primary" type="submit">筛选</button><a class="cc-reset" href="${urlFor('customers')}">重置筛选</a>
       </form>
-      <div class="cc-table-wrap"><table class="cc-table"><thead><tr>${head('name', '姓名')}${head('company', '公司')}<th>职位</th>${head('country', '国家')}<th>平台</th><th>可建联 Email</th>${head('status', '状态')}${head('fitScore', 'ICP')}${head('latestUpdate', '最近更新 / 触达')}</tr></thead><tbody>${rows.map(({ record, index }) => {
+      <div class="cc-table-wrap"><table class="cc-table"><thead><tr>${head('name', '姓名')}${head('company', '公司')}<th>职位</th>${head('country', '国家')}<th>平台</th><th>可建联 Email</th>${head('status', '状态')}${head('fitScore', 'ICP')}${head('latestUpdate', '最近真实触达')}</tr></thead><tbody>${rows.map(({ record, index }) => {
         const key = recordKey(record, index);
         const qualified = shouldRetainWithoutStrike(record);
         const linkClass = qualified ? '' : ' class="cc-strike-link"';
@@ -1836,7 +1887,11 @@
         const emailCell = email
           ? `<a class="cc-sub-link" href="mailto:${esc(email)}">${esc(email)}</a><br><span class="cc-chip green">${esc(contactEmailStatus(record))}</span>`
           : `<span class="cc-chip amber">${esc(contactEmailStatus(record))}</span>`;
-        return `<tr class="${qualified ? '' : 'cc-low-icp'}"><td><a${linkClass}${customerLinkAttrs} title="${esc(reviewNote)}">${esc(record.name)}</a>${archiveLink}</td><td>${esc(record.company)}<br><span class="cc-chip ${qualified ? 'green' : 'amber'}" title="${esc(reviewNote)}">${esc(reviewNote)}</span></td><td>${esc(record.role)}</td><td>${esc(normalizedCountry(record))}</td><td>${esc(record.platform)}</td><td>${emailCell}</td><td><span class="cc-chip">${esc(record.status)}</span></td><td title="ICP score, bounded to 0-100">${icpScore(record)}</td><td>${esc(recordUpdatedAt(record))}</td></tr>`;
+        const eventTime = formatCustomerEventTime(record);
+        const eventTimeCell = eventTime
+          ? `<time datetime="${esc(recordEventTime(record))}" title="真实客户事件时间，按上海时区显示">${esc(eventTime)}</time>`
+          : '<span class="cc-sub">无真实触达时间</span>';
+        return `<tr class="${qualified ? '' : 'cc-low-icp'}"><td><a${linkClass}${customerLinkAttrs} title="${esc(reviewNote)}">${esc(record.name)}</a>${archiveLink}</td><td>${esc(record.company)}<br><span class="cc-chip ${qualified ? 'green' : 'amber'}" title="${esc(reviewNote)}">${esc(reviewNote)}</span></td><td>${esc(record.role)}</td><td>${esc(normalizedCountry(record))}</td><td>${esc(record.platform)}</td><td>${emailCell}</td><td><span class="cc-chip">${esc(record.status)}</span></td><td title="ICP score, bounded to 0-100">${icpScore(record)}</td><td>${eventTimeCell}</td></tr>`;
       }).join('')}</tbody></table>${rows.length ? '' : '<div class="cc-empty">没有匹配客户，请重置或调整筛选条件</div>'}</div>`;
   }
   function countryGeoCode(country) {
