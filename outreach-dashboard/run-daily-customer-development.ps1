@@ -5,6 +5,16 @@ param(
 $ErrorActionPreference = "Stop"
 $LogDir = Join-Path $ProjectRoot "daily-runs"
 New-Item -ItemType Directory -Force -Path $LogDir | Out-Null
+$ConfigPath = Join-Path $ProjectRoot "daily-automation-config.json"
+$BatchTarget = 13
+$TimeoutMinutes = 45
+if (Test-Path $ConfigPath) {
+  $Config = Get-Content $ConfigPath -Raw -Encoding UTF8 | ConvertFrom-Json
+  if ([int]$Config.executionBatchTarget -gt 0) { $BatchTarget = [int]$Config.executionBatchTarget }
+  if ([int]$Config.executionTimeoutMinutes -gt 0) { $TimeoutMinutes = [int]$Config.executionTimeoutMinutes }
+}
+$env:DAILY_EXECUTE_LIMIT = [string][Math]::Min([Math]::Max($BatchTarget, 1), 13)
+$env:DAILY_EXECUTE_TIMEOUT_MS = [string]($TimeoutMinutes * 60 * 1000)
 $Stamp = Get-Date -Format "yyyy-MM-dd-HHmmss"
 $LogPath = Join-Path $LogDir "$Stamp-windows-daily-automation.log"
 
@@ -20,7 +30,7 @@ function Run-Step {
 }
 
 Run-Step "Google discovery + daily queue" "npm run discover:daily"
-Run-Step "Codex Chrome execution" "npm run daily:execute"
+Run-Step "Codex Chrome execution (batch target $env:DAILY_EXECUTE_LIMIT)" "npm run daily:execute"
 Run-Step "GitHub safe data sync" "npm run sync:github"
 
 Add-Content $LogPath "[$(Get-Date -Format o)] DAILY CUSTOMER DEVELOPMENT COMPLETE"

@@ -1,6 +1,8 @@
 {
   "dailyStartTime": "00:05",
-  "checkEveryMinutes": 30,
+  "checkEveryMinutes": 180,
+  "executionBatchTarget": 13,
+  "executionTimeoutMinutes": 45,
   "limits": {
     "total": 100,
     "develop": 70,
