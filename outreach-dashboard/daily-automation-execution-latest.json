@@ -1,9 +1,9 @@
 {
-  "ok": true,
+  "ok": false,
   "executionPhase": "browser_execution",
   "chromeStage": "opened",
   "chromeOpened": true,
-  "chromeOpenedCount": 8,
+  "chromeOpenedCount": 1,
   "customerDevelopmentPerformed": false,
   "customerMessageSent": false,
   "realDevelopmentCount": 0,
@@ -17,486 +17,6 @@
   "queueSource": "dailyQueue",
   "executed": [
     {
-      "id": "google-customer-avidmax-outfitters-website-contact",
-      "company": "AvidMax Outfitters",
-      "action": "verify_target",
-      "platform": "email",
-      "targetUrl": "https://www.avidmax.com/",
-      "ok": false,
-      "sendStatus": "website_contact_unreachable_skip",
-      "evidence": "unavailable_profile_page: Skip to main content\n\nFREE STANDARD SHIPPING OVER $45\n\nSearch Keyword:\nLearn & Explore\nReports, Articles and more.\nRetail\nRewards\nAccount\nCart\nFly Tying\nRods\nReels\nLines\nTerminal T;website_contact_all_targets_failed:6;contact_path_strategy_v2",
-      "chromeOpen": {
-        "ok": false,
-        "engine": "codex-chrome-extension-cdp",
-        "port": 9224,
-        "targetUrl": "https://www.avidmax.com/help/contact-us",
-        "tabId": "6202F9C1C1E77D2733F80ED2FEA798EA",
-        "title": "AvidMax - Not Found",
-        "status": "failed_open",
-        "error": "profile_unavailable_or_broken_link",
-        "evidence": "unavailable_profile_page: Skip to main content\n\nFREE STANDARD SHIPPING OVER $45\n\nSearch Keyword:\nLearn & Explore\nReports, Articles and more.\nRetail\nRewards\nAccount\nCart\nFly Tying\nRods\nReels\nLines\nTerminal T"
-      },
-      "result": {
-        "ok": false,
-        "engine": "codex-chrome-extension-website-contact",
-        "browserEngine": "codex-chrome-extension-cdp",
-        "mode": "website_contact_unreachable_skip",
-        "targetUrl": "https://www.avidmax.com/help/contact-us",
-        "chromeOpen": {
-          "ok": false,
-          "engine": "codex-chrome-extension-cdp",
-          "port": 9224,
-          "targetUrl": "https://www.avidmax.com/help/contact-us",
-          "tabId": "6202F9C1C1E77D2733F80ED2FEA798EA",
-          "title": "AvidMax - Not Found",
-          "status": "failed_open",
-          "error": "profile_unavailable_or_broken_link",
-          "evidence": "unavailable_profile_page: Skip to main content\n\nFREE STANDARD SHIPPING OVER $45\n\nSearch Keyword:\nLearn & Explore\nReports, Articles and more.\nRetail\nRewards\nAccount\nCart\nFly Tying\nRods\nReels\nLines\nTerminal T"
-        },
-        "sendStatus": "website_contact_unreachable_skip",
-        "subject": "FLEXTAIL retail partnership | 2026 assortment",
-        "draft": "Dear AvidMax Outfitters Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
-        "evidence": "unavailable_profile_page: Skip to main content\n\nFREE STANDARD SHIPPING OVER $45\n\nSearch Keyword:\nLearn & Explore\nReports, Articles and more.\nRetail\nRewards\nAccount\nCart\nFly Tying\nRods\nReels\nLines\nTerminal T;website_contact_all_targets_failed:6;contact_path_strategy_v2",
-        "output": "{\"verdict\":\"website_contact_unreachable_skip\",\"evidence\":\"unavailable_profile_page: Skip to main content\\n\\nFREE STANDARD SHIPPING OVER $45\\n\\nSearch Keyword:\\nLearn & Explore\\nReports, Articles and more.\\nRetail\\nRewards\\nAccount\\nCart\\nFly Tying\\nRods\\nReels\\nLines\\nTerminal T;website_contact_all_targets_failed:6;contact_path_strategy_v2\",\"subject\":\"FLEXTAIL retail partnership | 2026 assortment\",\"draft\":\"Dear AvidMax Outfitters Team,\\n\\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\\n\\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\\n\\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\\n\\nProduct overview: https://www.flextail.com/\\n\\nBest regards,\\nLeo Liu\\nSales & Operations Director\\nLeo@flextailgear.com\",\"sendStatus\":\"website_contact_unreachable_skip\",\"attempts\":[{\"targetUrl\":\"https://www.avidmax.com/\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control\"},{\"targetUrl\":\"https://www.avidmax.com/pages/contact-us\",\"sendStatus\":\"failed_open\",\"evidence\":\"unavailable_profile_page: Skip to main content\\n\\nFREE STANDARD SHIPPING OVER $45\\n\\nSearch Keyword:\\nLearn & Explore\\nReports, Articles and more.\\nRetail\\nRewards\\nAccount\\nCart\\nFly Tying\\nRods\\nReels\\nLines\\nTerminal T\"},{\"targetUrl\":\"https://www.avidmax.com/pages/contact\",\"sendStatus\":\"failed_open\",\"evidence\":\"unavailable_profile_page: Skip to main content\\n\\nFREE STANDARD SHIPPING OVER $45\\n\\nSearch Keyword:\\nLearn & Explore\\nReports, Articles and more.\\nRetail\\nRewards\\nAccount\\nCart\\nFly Tying\\nRods\\nReels\\nLines\\nTerminal T\"},{\"targetUrl\":\"https://www.avidmax.com/contact-us\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;contact_entry_clicked:Contact Us\"},{\"targetUrl\":\"https://www.avidmax.com/contact\",\"sendStatus\":\"failed_open\",\"evidence\":\"unavailable_profile_page: Skip to main content\\n\\nFREE STANDARD SHIPPING OVER $45\\n\\nSearch Keyword:\\nLearn & Explore\\nReports, Articles and more.\\nRetail\\nRewards\\nAccount\\nCart\\nFly Tying\\nRods\\nReels\\nLines\\nTerminal T\"},{\"targetUrl\":\"https://www.avidmax.com/help/contact-us\",\"sendStatus\":\"failed_open\",\"evidence\":\"unavailable_profile_page: Skip to main content\\n\\nFREE STANDARD SHIPPING OVER $45\\n\\nSearch Keyword:\\nLearn & Explore\\nReports, Articles and more.\\nRetail\\nRewards\\nAccount\\nCart\\nFly Tying\\nRods\\nReels\\nLines\\nTerminal T\"}],\"nextAction\":\"Official website contact was unreachable or not machine-verifiable. Skip this website route now, note it clearly, and continue with LinkedIn, Facebook, Instagram, or another verified official channel.\"}"
-      }
-    },
-    {
-      "id": "google-customer-gear-west-website-contact",
-      "company": "Gear West",
-      "action": "verify_target",
-      "platform": "email",
-      "targetUrl": "https://www.gearwest.com/",
-      "ok": false,
-      "sendStatus": "website_contact_unreachable_skip",
-      "evidence": "unavailable_profile_page: Skip to content\nGift Cards\nService\nRentals\nTrade-In Program\nGear Guide\nTrail Kids Equipment Guide\n My Account\nSearch\n0\nMenu\nOops! Page not found.\n404 Error\n\nThe page you are lookin;website_contact_all_targets_failed:6;contact_path_strategy_v2",
-      "chromeOpen": {
-        "ok": false,
-        "engine": "codex-chrome-extension-cdp",
-        "port": 9224,
-        "targetUrl": "https://www.gearwest.com/help/contact-us",
-        "tabId": "A03AFDF475771CCF63B7DBB18062AD0B",
-        "title": "404 Not Found – Gear West",
-        "status": "failed_open",
-        "error": "profile_unavailable_or_broken_link",
-        "evidence": "unavailable_profile_page: Skip to content\nGift Cards\nService\nRentals\nTrade-In Program\nGear Guide\nTrail Kids Equipment Guide\n My Account\nSearch\n0\nMenu\nOops! Page not found.\n404 Error\n\nThe page you are lookin"
-      },
-      "result": {
-        "ok": false,
-        "engine": "codex-chrome-extension-website-contact",
-        "browserEngine": "codex-chrome-extension-cdp",
-        "mode": "website_contact_unreachable_skip",
-        "targetUrl": "https://www.gearwest.com/help/contact-us",
-        "chromeOpen": {
-          "ok": false,
-          "engine": "codex-chrome-extension-cdp",
-          "port": 9224,
-          "targetUrl": "https://www.gearwest.com/help/contact-us",
-          "tabId": "A03AFDF475771CCF63B7DBB18062AD0B",
-          "title": "404 Not Found – Gear West",
-          "status": "failed_open",
-          "error": "profile_unavailable_or_broken_link",
-          "evidence": "unavailable_profile_page: Skip to content\nGift Cards\nService\nRentals\nTrade-In Program\nGear Guide\nTrail Kids Equipment Guide\n My Account\nSearch\n0\nMenu\nOops! Page not found.\n404 Error\n\nThe page you are lookin"
-        },
-        "sendStatus": "website_contact_unreachable_skip",
-        "subject": "FLEXTAIL retail partnership | 2026 assortment",
-        "draft": "Dear Gear West Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
-        "evidence": "unavailable_profile_page: Skip to content\nGift Cards\nService\nRentals\nTrade-In Program\nGear Guide\nTrail Kids Equipment Guide\n My Account\nSearch\n0\nMenu\nOops! Page not found.\n404 Error\n\nThe page you are lookin;website_contact_all_targets_failed:6;contact_path_strategy_v2",
-        "output": "{\"verdict\":\"website_contact_unreachable_skip\",\"evidence\":\"unavailable_profile_page: Skip to content\\nGift Cards\\nService\\nRentals\\nTrade-In Program\\nGear Guide\\nTrail Kids Equipment Guide\\n My Account\\nSearch\\n0\\nMenu\\nOops! Page not found.\\n404 Error\\n\\nThe page you are lookin;website_contact_all_targets_failed:6;contact_path_strategy_v2\",\"subject\":\"FLEXTAIL retail partnership | 2026 assortment\",\"draft\":\"Dear Gear West Team,\\n\\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\\n\\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\\n\\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\\n\\nProduct overview: https://www.flextail.com/\\n\\nBest regards,\\nLeo Liu\\nSales & Operations Director\\nLeo@flextailgear.com\",\"sendStatus\":\"website_contact_unreachable_skip\",\"attempts\":[{\"targetUrl\":\"https://www.gearwest.com/\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control\"},{\"targetUrl\":\"https://www.gearwest.com/pages/contact-us\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;contact_entry_clicked:Contact Us\"},{\"targetUrl\":\"https://www.gearwest.com/pages/contact\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;contact_entry_clicked:Contact Us\"},{\"targetUrl\":\"https://www.gearwest.com/contact-us\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;contact_entry_clicked:Contact Us\"},{\"targetUrl\":\"https://www.gearwest.com/contact\",\"sendStatus\":\"failed_open\",\"evidence\":\"website_page_unavailable_404: Something went wrong.\\n\\nWhat happened?\\n404 Not Found\\nWhat can I do?\\nReturn to the previous page.\"},{\"targetUrl\":\"https://www.gearwest.com/help/contact-us\",\"sendStatus\":\"failed_open\",\"evidence\":\"unavailable_profile_page: Skip to content\\nGift Cards\\nService\\nRentals\\nTrade-In Program\\nGear Guide\\nTrail Kids Equipment Guide\\n My Account\\nSearch\\n0\\nMenu\\nOops! Page not found.\\n404 Error\\n\\nThe page you are lookin\"}],\"nextAction\":\"Official website contact was unreachable or not machine-verifiable. Skip this website route now, note it clearly, and continue with LinkedIn, Facebook, Instagram, or another verified official channel.\"}"
-      }
-    },
-    {
-      "id": "google-customer-72hours-facebook",
-      "company": "72hours",
-      "action": "develop",
-      "platform": "facebook",
-      "targetUrl": "https://www.facebook.com/72hours.ca",
-      "ok": true,
-      "sendStatus": "post_liked",
-      "evidence": "facebook_engagement_completed_message_unavailable;facebook_composer_unavailable_closed_no_retry;follow_not_available;post_liked;facebook_post_like_clicked",
-      "chromeOpen": {
-        "ok": true,
-        "engine": "codex-chrome-extension-cdp",
-        "port": 9224,
-        "targetUrl": "https://www.facebook.com/72hours.ca",
-        "tabId": "697F282B26293B24D5E2E1FA65B98C11",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/697F282B26293B24D5E2E1FA65B98C11",
-        "title": "Facebook"
-      },
-      "result": {
-        "ok": true,
-        "engine": "codex-chrome-extension-cdp",
-        "browserEngine": "codex-chrome-extension-cdp",
-        "mode": "codex_chrome_extension_only",
-        "targetUrl": "https://www.facebook.com/72hours.ca",
-        "chromeOpen": {
-          "ok": true,
-          "engine": "codex-chrome-extension-cdp",
-          "port": 9224,
-          "targetUrl": "https://www.facebook.com/72hours.ca",
-          "tabId": "697F282B26293B24D5E2E1FA65B98C11",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/697F282B26293B24D5E2E1FA65B98C11",
-          "title": "Facebook"
-        },
-        "sendStatus": "post_liked",
-        "output": "{\"verdict\":\"safe_gate_paused\",\"evidence\":\"facebook_engagement_completed_message_unavailable;facebook_composer_unavailable_closed_no_retry;follow_not_available;post_liked;facebook_post_like_clicked\",\"nextAction\":\"The verified account was engaged successfully. Monitor for a connection opportunity and avoid repeating the same action.\",\"draft\":\"Hi 72hours team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a retail/category buyer, the strongest fit is assortment fit, new SKU pipeline, price-tier coverage, and proven consumer demand; your verified outdoor, camping and travel retail social refill channel focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the category buyer or vendor-review owner for a short intro video meeting?\",\"sendStatus\":\"post_liked\"}",
-        "decision": {
-          "verdict": "develop",
-          "fitScore": 84,
-          "reason": "local_codex_extension_template",
-          "draft": "Hi 72hours team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a retail/category buyer, the strongest fit is assortment fit, new SKU pipeline, price-tier coverage, and proven consumer demand; your verified outdoor, camping and travel retail social refill channel focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the category buyer or vendor-review owner for a short intro video meeting?"
-        },
-        "executionLayer": "Codex Chrome Extension only",
-        "glmModel": "not_used",
-        "followup": false
-      }
-    },
-    {
-      "id": "google-customer-above-and-beyond-facebook",
-      "company": "Above and Beyond",
-      "action": "develop",
-      "platform": "facebook",
-      "targetUrl": "https://www.facebook.com/aboveandbeyondireland",
-      "ok": false,
-      "sendStatus": "website_contact_unreachable_skip",
-      "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:6;contact_path_strategy_v2",
-      "chromeOpen": {
-        "ok": true,
-        "engine": "codex-chrome-extension-cdp",
-        "port": 9224,
-        "targetUrl": "https://www.aboveandbeyond.ie/help/contact-us",
-        "tabId": "409298CACF14885FAF2B06A26ADAFC3A",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/409298CACF14885FAF2B06A26ADAFC3A",
-        "title": "www.aboveandbeyond.ie"
-      },
-      "result": {
-        "ok": false,
-        "engine": "codex-chrome-extension-website-contact",
-        "browserEngine": "codex-chrome-extension-cdp",
-        "mode": "website_contact_unreachable_skip",
-        "targetUrl": "https://www.aboveandbeyond.ie/help/contact-us",
-        "chromeOpen": {
-          "ok": true,
-          "engine": "codex-chrome-extension-cdp",
-          "port": 9224,
-          "targetUrl": "https://www.aboveandbeyond.ie/help/contact-us",
-          "tabId": "409298CACF14885FAF2B06A26ADAFC3A",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/409298CACF14885FAF2B06A26ADAFC3A",
-          "title": "www.aboveandbeyond.ie"
-        },
-        "sendStatus": "website_contact_unreachable_skip",
-        "subject": "FLEXTAIL retail partnership | 2026 assortment",
-        "draft": "Dear Above and Beyond Team,\n\nI’m Leo from FLEXTAIL. Your focus on verified outdoor, camping and travel retail social refill channel looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
-        "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:6;contact_path_strategy_v2",
-        "output": "{\"verdict\":\"website_contact_unreachable_skip\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:6;contact_path_strategy_v2\",\"nextAction\":\"Contact page opened, but no verified form, mailto link, vendor/business route, or clickable Contact Us path was detected. Continue manually before marking the lead ready.\",\"subject\":\"FLEXTAIL retail partnership | 2026 assortment\",\"draft\":\"Dear Above and Beyond Team,\\n\\nI’m Leo from FLEXTAIL. Your focus on verified outdoor, camping and travel retail social refill channel looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\\n\\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\\n\\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\\n\\nProduct overview: https://www.flextail.com/\\n\\nBest regards,\\nLeo Liu\\nSales & Operations Director\\nLeo@flextailgear.com\",\"sendStatus\":\"website_contact_unreachable_skip\",\"attempts\":[{\"targetUrl\":\"https://www.aboveandbeyond.ie/\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control\"},{\"targetUrl\":\"https://www.aboveandbeyond.ie/pages/contact-us\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control\"},{\"targetUrl\":\"https://www.aboveandbeyond.ie/pages/contact\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control\"},{\"targetUrl\":\"https://www.aboveandbeyond.ie/contact-us\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control\"},{\"targetUrl\":\"https://www.aboveandbeyond.ie/contact\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control\"},{\"targetUrl\":\"https://www.aboveandbeyond.ie/help/contact-us\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control\"}],\"fallbackFrom\":\"https://www.facebook.com/aboveandbeyondireland\",\"fallbackPlatform\":\"email\",\"fallbackReason\":\"facebook_profile_no_message_button\"}",
-        "fallbackFrom": "https://www.facebook.com/aboveandbeyondireland",
-        "fallbackPlatform": "email",
-        "decision": {
-          "verdict": "develop",
-          "fitScore": 84,
-          "reason": "local_codex_extension_template",
-          "draft": "Hi Above and Beyond team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a retail/category buyer, the strongest fit is assortment fit, new SKU pipeline, price-tier coverage, and proven consumer demand; your verified outdoor, camping and travel retail social refill channel focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the category buyer or vendor-review owner for a short intro video meeting?"
-        },
-        "executionLayer": "Codex Chrome Extension only",
-        "glmModel": "not_used",
-        "followup": false
-      }
-    },
-    {
-      "id": "google-customer-atmosphere-facebook",
-      "company": "Atmosphere",
-      "action": "develop",
-      "platform": "facebook",
-      "targetUrl": "https://www.facebook.com/Atmosphere",
-      "ok": false,
-      "sendStatus": "website_contact_unreachable_skip",
-      "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:6;contact_path_strategy_v2",
-      "chromeOpen": {
-        "ok": true,
-        "engine": "codex-chrome-extension-cdp",
-        "port": 9224,
-        "targetUrl": "https://www.atmosphere.ca/help/contact-us",
-        "tabId": "DF9E60957858ECF176DF3B87CAFFD4D0",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/DF9E60957858ECF176DF3B87CAFFD4D0",
-        "title": "Atmosphere Consolidation Notice"
-      },
-      "result": {
-        "ok": false,
-        "engine": "codex-chrome-extension-website-contact",
-        "browserEngine": "codex-chrome-extension-cdp",
-        "mode": "website_contact_unreachable_skip",
-        "targetUrl": "https://www.atmosphere.ca/help/contact-us",
-        "chromeOpen": {
-          "ok": true,
-          "engine": "codex-chrome-extension-cdp",
-          "port": 9224,
-          "targetUrl": "https://www.atmosphere.ca/help/contact-us",
-          "tabId": "DF9E60957858ECF176DF3B87CAFFD4D0",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/DF9E60957858ECF176DF3B87CAFFD4D0",
-          "title": "Atmosphere Consolidation Notice"
-        },
-        "sendStatus": "website_contact_unreachable_skip",
-        "subject": "FLEXTAIL retail partnership | 2026 assortment",
-        "draft": "Dear Atmosphere Team,\n\nI’m Leo from FLEXTAIL. Your focus on verified outdoor, camping and travel retail social refill channel looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
-        "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:6;contact_path_strategy_v2",
-        "output": "{\"verdict\":\"website_contact_unreachable_skip\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:6;contact_path_strategy_v2\",\"nextAction\":\"Contact page opened, but no verified form, mailto link, vendor/business route, or clickable Contact Us path was detected. Continue manually before marking the lead ready.\",\"subject\":\"FLEXTAIL retail partnership | 2026 assortment\",\"draft\":\"Dear Atmosphere Team,\\n\\nI’m Leo from FLEXTAIL. Your focus on verified outdoor, camping and travel retail social refill channel looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\\n\\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\\n\\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\\n\\nProduct overview: https://www.flextail.com/\\n\\nBest regards,\\nLeo Liu\\nSales & Operations Director\\nLeo@flextailgear.com\",\"sendStatus\":\"website_contact_unreachable_skip\",\"attempts\":[{\"targetUrl\":\"https://www.atmosphere.ca/\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control\"},{\"targetUrl\":\"https://www.atmosphere.ca/pages/contact-us\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control\"},{\"targetUrl\":\"https://www.atmosphere.ca/pages/contact\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control\"},{\"targetUrl\":\"https://www.atmosphere.ca/contact-us\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control\"},{\"targetUrl\":\"https://www.atmosphere.ca/contact\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control\"},{\"targetUrl\":\"https://www.atmosphere.ca/help/contact-us\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control\"}],\"fallbackFrom\":\"https://www.facebook.com/Atmosphere\",\"fallbackPlatform\":\"email\",\"fallbackReason\":\"facebook_engagement_completed_message_unavailable;facebook_profile_no_message_button;follow_already_active;facebook_post_like_not_available\"}",
-        "fallbackFrom": "https://www.facebook.com/Atmosphere",
-        "fallbackPlatform": "email",
-        "decision": {
-          "verdict": "develop",
-          "fitScore": 84,
-          "reason": "local_codex_extension_template",
-          "draft": "Hi Atmosphere team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a retail/category buyer, the strongest fit is assortment fit, new SKU pipeline, price-tier coverage, and proven consumer demand; your verified outdoor, camping and travel retail social refill channel focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the category buyer or vendor-review owner for a short intro video meeting?"
-        },
-        "executionLayer": "Codex Chrome Extension only",
-        "glmModel": "not_used",
-        "followup": false
-      }
-    },
-    {
-      "id": "google-customer-eastern-mountain-sports-facebook",
-      "company": "Eastern Mountain Sports",
-      "action": "develop",
-      "platform": "facebook",
-      "targetUrl": "https://www.facebook.com/EasternMountainSports",
-      "ok": false,
-      "sendStatus": "website_contact_unreachable_skip",
-      "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:6;contact_path_strategy_v2",
-      "chromeOpen": {
-        "ok": true,
-        "engine": "codex-chrome-extension-cdp",
-        "port": 9224,
-        "targetUrl": "https://www.ems.com/help/contact-us",
-        "tabId": "4E02A15E0A4A06D0F51075EB8F237852",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/4E02A15E0A4A06D0F51075EB8F237852",
-        "title": "Just a moment..."
-      },
-      "result": {
-        "ok": false,
-        "engine": "codex-chrome-extension-website-contact",
-        "browserEngine": "codex-chrome-extension-cdp",
-        "mode": "website_contact_unreachable_skip",
-        "targetUrl": "https://www.ems.com/help/contact-us",
-        "chromeOpen": {
-          "ok": true,
-          "engine": "codex-chrome-extension-cdp",
-          "port": 9224,
-          "targetUrl": "https://www.ems.com/help/contact-us",
-          "tabId": "4E02A15E0A4A06D0F51075EB8F237852",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/4E02A15E0A4A06D0F51075EB8F237852",
-          "title": "Just a moment..."
-        },
-        "sendStatus": "website_contact_unreachable_skip",
-        "subject": "FLEXTAIL retail partnership | 2026 assortment",
-        "draft": "Dear Eastern Mountain Sports Team,\n\nI’m Leo from FLEXTAIL. Your focus on verified outdoor, camping and travel retail social refill channel looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
-        "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:6;contact_path_strategy_v2",
-        "output": "{\"verdict\":\"website_contact_unreachable_skip\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:6;contact_path_strategy_v2\",\"nextAction\":\"Contact page opened, but no verified form, mailto link, vendor/business route, or clickable Contact Us path was detected. Continue manually before marking the lead ready.\",\"subject\":\"FLEXTAIL retail partnership | 2026 assortment\",\"draft\":\"Dear Eastern Mountain Sports Team,\\n\\nI’m Leo from FLEXTAIL. Your focus on verified outdoor, camping and travel retail social refill channel looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\\n\\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\\n\\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\\n\\nProduct overview: https://www.flextail.com/\\n\\nBest regards,\\nLeo Liu\\nSales & Operations Director\\nLeo@flextailgear.com\",\"sendStatus\":\"website_contact_unreachable_skip\",\"attempts\":[{\"targetUrl\":\"https://www.ems.com/\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control\"},{\"targetUrl\":\"https://www.ems.com/pages/contact-us\",\"sendStatus\":\"failed_open\",\"evidence\":\"website_page_unavailable_404: Skip to content\\n\\nFree Standard Shipping over $75* (details)\\n\\nSearch\\nSearch\\nLog in\\nCart\\nMENS\\nWOMENS\\nKIDS\\nOUTERWEAR\\nFOOTWEAR\\nCAMP & HIKE\\nACTIVITIES\\nBRANDS\\nSUMMER SALE\\nGet our latest \"},{\"targetUrl\":\"https://www.ems.com/pages/contact\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;contact_entry_clicked:Skip to content\"},{\"targetUrl\":\"https://www.ems.com/contact-us\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control\"},{\"targetUrl\":\"https://www.ems.com/contact\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control\"},{\"targetUrl\":\"https://www.ems.com/help/contact-us\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control\"}],\"fallbackFrom\":\"https://www.facebook.com/EasternMountainSports\",\"fallbackPlatform\":\"email\",\"fallbackReason\":\"facebook_profile_no_message_button\"}",
-        "fallbackFrom": "https://www.facebook.com/EasternMountainSports",
-        "fallbackPlatform": "email",
-        "decision": {
-          "verdict": "develop",
-          "fitScore": 84,
-          "reason": "local_codex_extension_template",
-          "draft": "Hi Eastern Mountain Sports team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a retail/category buyer, the strongest fit is assortment fit, new SKU pipeline, price-tier coverage, and proven consumer demand; your verified outdoor, camping and travel retail social refill channel focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the category buyer or vendor-review owner for a short intro video meeting?"
-        },
-        "executionLayer": "Codex Chrome Extension only",
-        "glmModel": "not_used",
-        "followup": false
-      }
-    },
-    {
-      "id": "google-customer-facewest-facebook",
-      "company": "Facewest",
-      "action": "develop",
-      "platform": "facebook",
-      "targetUrl": "https://www.facebook.com/Facewest",
-      "ok": false,
-      "sendStatus": "website_contact_unreachable_skip",
-      "evidence": "unavailable_profile_page: SKIP TO CONTENT\n\nFree UK Delivery Orders > £100 Learn more >\n\nOrder by 2pm for same day dispatch. (M-F)\n\nSearch\nLog in\nCart\nMen's Clothing\nWomen's Clothing\nOutdoor Equipment\nTravel;website_contact_all_targets_failed:6;contact_path_strategy_v2",
-      "chromeOpen": {
-        "ok": false,
-        "engine": "codex-chrome-extension-cdp",
-        "port": 9224,
-        "targetUrl": "https://www.facewest.co.uk/help/contact-us",
-        "tabId": "9DE7F297BFA96E207935A560F08014F7",
-        "title": "404 Not Found – Facewest.co.uk",
-        "status": "failed_open",
-        "error": "profile_unavailable_or_broken_link",
-        "evidence": "unavailable_profile_page: SKIP TO CONTENT\n\nFree UK Delivery Orders > £100 Learn more >\n\nOrder by 2pm for same day dispatch. (M-F)\n\nSearch\nLog in\nCart\nMen's Clothing\nWomen's Clothing\nOutdoor Equipment\nTravel"
-      },
-      "result": {
-        "ok": false,
-        "engine": "codex-chrome-extension-website-contact",
-        "browserEngine": "codex-chrome-extension-cdp",
-        "mode": "website_contact_unreachable_skip",
-        "targetUrl": "https://www.facewest.co.uk/help/contact-us",
-        "chromeOpen": {
-          "ok": false,
-          "engine": "codex-chrome-extension-cdp",
-          "port": 9224,
-          "targetUrl": "https://www.facewest.co.uk/help/contact-us",
-          "tabId": "9DE7F297BFA96E207935A560F08014F7",
-          "title": "404 Not Found – Facewest.co.uk",
-          "status": "failed_open",
-          "error": "profile_unavailable_or_broken_link",
-          "evidence": "unavailable_profile_page: SKIP TO CONTENT\n\nFree UK Delivery Orders > £100 Learn more >\n\nOrder by 2pm for same day dispatch. (M-F)\n\nSearch\nLog in\nCart\nMen's Clothing\nWomen's Clothing\nOutdoor Equipment\nTravel"
-        },
-        "sendStatus": "website_contact_unreachable_skip",
-        "subject": "FLEXTAIL retail partnership | 2026 assortment",
-        "draft": "Dear Facewest Team,\n\nI’m Leo from FLEXTAIL. Your focus on verified outdoor, camping and travel retail social refill channel looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
-        "evidence": "unavailable_profile_page: SKIP TO CONTENT\n\nFree UK Delivery Orders > £100 Learn more >\n\nOrder by 2pm for same day dispatch. (M-F)\n\nSearch\nLog in\nCart\nMen's Clothing\nWomen's Clothing\nOutdoor Equipment\nTravel;website_contact_all_targets_failed:6;contact_path_strategy_v2",
-        "output": "{\"verdict\":\"website_contact_unreachable_skip\",\"evidence\":\"unavailable_profile_page: SKIP TO CONTENT\\n\\nFree UK Delivery Orders > £100 Learn more >\\n\\nOrder by 2pm for same day dispatch. (M-F)\\n\\nSearch\\nLog in\\nCart\\nMen's Clothing\\nWomen's Clothing\\nOutdoor Equipment\\nTravel;website_contact_all_targets_failed:6;contact_path_strategy_v2\",\"subject\":\"FLEXTAIL retail partnership | 2026 assortment\",\"draft\":\"Dear Facewest Team,\\n\\nI’m Leo from FLEXTAIL. Your focus on verified outdoor, camping and travel retail social refill channel looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\\n\\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\\n\\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\\n\\nProduct overview: https://www.flextail.com/\\n\\nBest regards,\\nLeo Liu\\nSales & Operations Director\\nLeo@flextailgear.com\",\"sendStatus\":\"website_contact_unreachable_skip\",\"attempts\":[{\"targetUrl\":\"https://www.facewest.co.uk/\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;contact_entry_clicked:Contact Us\"},{\"targetUrl\":\"https://www.facewest.co.uk/pages/contact-us\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;contact_entry_clicked:Contact Us\"},{\"targetUrl\":\"https://www.facewest.co.uk/pages/contact\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;contact_entry_clicked:Contact Us\"},{\"targetUrl\":\"https://www.facewest.co.uk/contact-us\",\"sendStatus\":\"failed_open\",\"evidence\":\"website_page_unavailable_404: Something went wrong.\\n\\nWhat happened?\\n404 Not Found\\nWhat can I do?\\nReturn to the previous page.\"},{\"targetUrl\":\"https://www.facewest.co.uk/contact\",\"sendStatus\":\"failed_open\",\"evidence\":\"website_page_unavailable_404: Something went wrong.\\n\\nWhat happened?\\n404 Not Found\\nWhat can I do?\\nReturn to the previous page.\"},{\"targetUrl\":\"https://www.facewest.co.uk/help/contact-us\",\"sendStatus\":\"failed_open\",\"evidence\":\"unavailable_profile_page: SKIP TO CONTENT\\n\\nFree UK Delivery Orders > £100 Learn more >\\n\\nOrder by 2pm for same day dispatch. (M-F)\\n\\nSearch\\nLog in\\nCart\\nMen's Clothing\\nWomen's Clothing\\nOutdoor Equipment\\nTravel\"}],\"nextAction\":\"Official website contact was unreachable or not machine-verifiable. Skip this website route now, note it clearly, and continue with LinkedIn, Facebook, Instagram, or another verified official channel.\",\"fallbackFrom\":\"https://www.facebook.com/Facewest\",\"fallbackPlatform\":\"email\",\"fallbackReason\":\"facebook_profile_no_message_button\"}",
-        "fallbackFrom": "https://www.facebook.com/Facewest",
-        "fallbackPlatform": "email",
-        "decision": {
-          "verdict": "develop",
-          "fitScore": 84,
-          "reason": "local_codex_extension_template",
-          "draft": "Hi Facewest team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a retail/category buyer, the strongest fit is assortment fit, new SKU pipeline, price-tier coverage, and proven consumer demand; your verified outdoor, camping and travel retail social refill channel focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the category buyer or vendor-review owner for a short intro video meeting?"
-        },
-        "executionLayer": "Codex Chrome Extension only",
-        "glmModel": "not_used",
-        "followup": false
-      }
-    },
-    {
-      "id": "google-customer-jax-outdoor-gear-facebook",
-      "company": "Jax Outdoor Gear",
-      "action": "develop",
-      "platform": "facebook",
-      "targetUrl": "https://www.facebook.com/jaxoutdoorgear",
-      "ok": false,
-      "sendStatus": "website_contact_unreachable_skip",
-      "evidence": "unavailable_profile_page: SKIP TO CONTENT\n\nJAX Store Locations\n\nSearch\nSearch\nLog in\nBag\n404\n\nPAGE NOT FOUND\n\nSorry, the page you are looking for does not exist.\n\nBACK TO HOME\nExplore JAX\nGift Cards\nLocatio;website_contact_all_targets_failed:6;contact_path_strategy_v2",
-      "chromeOpen": {
-        "ok": false,
-        "engine": "codex-chrome-extension-cdp",
-        "port": 9224,
-        "targetUrl": "https://www.jaxgoods.com/help/contact-us",
-        "tabId": "11E683A99E8585C5EF2417BE53386E3E",
-        "title": "404 Not Found – JAXOutdoorGearFarmandRanch",
-        "status": "failed_open",
-        "error": "profile_unavailable_or_broken_link",
-        "evidence": "unavailable_profile_page: SKIP TO CONTENT\n\nJAX Store Locations\n\nSearch\nSearch\nLog in\nBag\n404\n\nPAGE NOT FOUND\n\nSorry, the page you are looking for does not exist.\n\nBACK TO HOME\nExplore JAX\nGift Cards\nLocatio"
-      },
-      "result": {
-        "ok": false,
-        "engine": "codex-chrome-extension-website-contact",
-        "browserEngine": "codex-chrome-extension-cdp",
-        "mode": "website_contact_unreachable_skip",
-        "targetUrl": "https://www.jaxgoods.com/help/contact-us",
-        "chromeOpen": {
-          "ok": false,
-          "engine": "codex-chrome-extension-cdp",
-          "port": 9224,
-          "targetUrl": "https://www.jaxgoods.com/help/contact-us",
-          "tabId": "11E683A99E8585C5EF2417BE53386E3E",
-          "title": "404 Not Found – JAXOutdoorGearFarmandRanch",
-          "status": "failed_open",
-          "error": "profile_unavailable_or_broken_link",
-          "evidence": "unavailable_profile_page: SKIP TO CONTENT\n\nJAX Store Locations\n\nSearch\nSearch\nLog in\nBag\n404\n\nPAGE NOT FOUND\n\nSorry, the page you are looking for does not exist.\n\nBACK TO HOME\nExplore JAX\nGift Cards\nLocatio"
-        },
-        "sendStatus": "website_contact_unreachable_skip",
-        "subject": "FLEXTAIL retail partnership | 2026 assortment",
-        "draft": "Dear Jax Outdoor Gear Team,\n\nI’m Leo from FLEXTAIL. Your focus on verified outdoor, camping and travel retail social refill channel looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
-        "evidence": "unavailable_profile_page: SKIP TO CONTENT\n\nJAX Store Locations\n\nSearch\nSearch\nLog in\nBag\n404\n\nPAGE NOT FOUND\n\nSorry, the page you are looking for does not exist.\n\nBACK TO HOME\nExplore JAX\nGift Cards\nLocatio;website_contact_all_targets_failed:6;contact_path_strategy_v2",
-        "output": "{\"verdict\":\"website_contact_unreachable_skip\",\"evidence\":\"unavailable_profile_page: SKIP TO CONTENT\\n\\nJAX Store Locations\\n\\nSearch\\nSearch\\nLog in\\nBag\\n404\\n\\nPAGE NOT FOUND\\n\\nSorry, the page you are looking for does not exist.\\n\\nBACK TO HOME\\nExplore JAX\\nGift Cards\\nLocatio;website_contact_all_targets_failed:6;contact_path_strategy_v2\",\"subject\":\"FLEXTAIL retail partnership | 2026 assortment\",\"draft\":\"Dear Jax Outdoor Gear Team,\\n\\nI’m Leo from FLEXTAIL. Your focus on verified outdoor, camping and travel retail social refill channel looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\\n\\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\\n\\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\\n\\nProduct overview: https://www.flextail.com/\\n\\nBest regards,\\nLeo Liu\\nSales & Operations Director\\nLeo@flextailgear.com\",\"sendStatus\":\"website_contact_unreachable_skip\",\"attempts\":[{\"targetUrl\":\"https://www.jaxgoods.com/\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;contact_entry_clicked:SKIP TO CONTENT\"},{\"targetUrl\":\"https://www.jaxgoods.com/pages/contact-us\",\"sendStatus\":\"failed_open\",\"evidence\":\"unavailable_profile_page: SKIP TO CONTENT\\n\\nJAX Store Locations\\n\\nSearch\\nSearch\\nLog in\\nBag\\n404\\n\\nPAGE NOT FOUND\\n\\nSorry, the page you are looking for does not exist.\\n\\nBACK TO HOME\\nExplore JAX\\nGift Cards\\nLocatio\"},{\"targetUrl\":\"https://www.jaxgoods.com/pages/contact\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;contact_entry_clicked:SKIP TO CONTENT\"},{\"targetUrl\":\"https://www.jaxgoods.com/contact-us\",\"sendStatus\":\"failed_open\",\"evidence\":\"website_page_unavailable_404: Something went wrong.\\n\\nWhat happened?\\n404 Not Found\\nWhat can I do?\\nReturn to the previous page.\"},{\"targetUrl\":\"https://www.jaxgoods.com/contact\",\"sendStatus\":\"failed_open\",\"evidence\":\"website_page_unavailable_404: Something went wrong.\\n\\nWhat happened?\\n404 Not Found\\nWhat can I do?\\nReturn to the previous page.\"},{\"targetUrl\":\"https://www.jaxgoods.com/help/contact-us\",\"sendStatus\":\"failed_open\",\"evidence\":\"unavailable_profile_page: SKIP TO CONTENT\\n\\nJAX Store Locations\\n\\nSearch\\nSearch\\nLog in\\nBag\\n404\\n\\nPAGE NOT FOUND\\n\\nSorry, the page you are looking for does not exist.\\n\\nBACK TO HOME\\nExplore JAX\\nGift Cards\\nLocatio\"}],\"nextAction\":\"Official website contact was unreachable or not machine-verifiable. Skip this website route now, note it clearly, and continue with LinkedIn, Facebook, Instagram, or another verified official channel.\",\"fallbackFrom\":\"https://www.facebook.com/jaxoutdoorgear\",\"fallbackPlatform\":\"instagram\",\"fallbackReason\":\"facebook_profile_no_message_button\"}",
-        "fallbackFrom": "https://www.facebook.com/jaxoutdoorgear",
-        "fallbackPlatform": "instagram",
-        "decision": {
-          "verdict": "develop",
-          "fitScore": 84,
-          "reason": "local_codex_extension_template",
-          "draft": "Hi Jax Outdoor Gear team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a retail/category buyer, the strongest fit is assortment fit, new SKU pipeline, price-tier coverage, and proven consumer demand; your verified outdoor, camping and travel retail social refill channel focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the category buyer or vendor-review owner for a short intro video meeting?"
-        },
-        "executionLayer": "Codex Chrome Extension only",
-        "glmModel": "not_used",
-        "followup": false
-      }
-    },
-    {
-      "id": "google-customer-tentworld-australia-facebook",
-      "company": "Tentworld Australia",
-      "action": "develop",
-      "platform": "facebook",
-      "targetUrl": "https://www.facebook.com/Tentworld",
-      "ok": false,
-      "sendStatus": "failed_open",
-      "evidence": "instagram_unavailable_profile_page: 1\n很抱歉，无法访问此页面\n你点击的链接可能已损坏，或页面已被移除。返回 instagram。\nmeta\n关于\n博客\n工作\n帮助\napi\n隐私设置\n条款\n地点\n热门\ninstagram lite\nmeta ai\nthreads\n联系人上传和非用户\nmeta verified\n中文(简体)\nafrikaans\nالعربية\nčeština\ndansk\ndeutsch\nελληνικά\nenglish\nenglish (uk)\nespañol (españa)\nespañol\nفارسی\nsuomi\nfrançais\nעברית\nbahasa indonesia\nitaliano\n日本語\n한국어\nbahasa melayu\nnorsk\nnederlands\npolski\nportuguês (brasil)\nportuguês (portugal)\nрусский\nsvenska\nภาษาไทย\nfilipino\ntürkçe\n中文(简体)\n中文(台灣)\nবাংলা\nગુજરાતી\nहिन्दी\nhrvatski\nmagyar\nಕನ್ನಡ\nമലയാളം\nमराठी\nनेपाली\nਪੰਜਾਬੀ\nසිංහල\nslovenčina\nதமிழ்\nతెలుగు\nاردو\ntiếng việt\n中文(香港)\nбългарски\nfrançais (canada)\nromână\nсрпски\nук",
-      "chromeOpen": {
-        "ok": true,
-        "engine": "codex-chrome-extension-cdp",
-        "port": 9224,
-        "targetUrl": "https://www.instagram.com/tentworldaustralia/",
-        "tabId": "D302920948890683B0BD9E0E093E6EDD",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/D302920948890683B0BD9E0E093E6EDD",
-        "title": "Instagram"
-      },
-      "result": {
-        "ok": false,
-        "engine": "codex-chrome-extension-cdp",
-        "browserEngine": "codex-chrome-extension-cdp",
-        "mode": "codex_chrome_extension_only",
-        "targetUrl": "https://www.instagram.com/tentworldaustralia/",
-        "chromeOpen": {
-          "ok": true,
-          "engine": "codex-chrome-extension-cdp",
-          "port": 9224,
-          "targetUrl": "https://www.instagram.com/tentworldaustralia/",
-          "tabId": "D302920948890683B0BD9E0E093E6EDD",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/D302920948890683B0BD9E0E093E6EDD",
-          "title": "Instagram"
-        },
-        "sendStatus": "failed_open",
-        "output": "{\"verdict\":\"major_bug_review_needed\",\"evidence\":\"instagram_unavailable_profile_page: 1\\n很抱歉，无法访问此页面\\n你点击的链接可能已损坏，或页面已被移除。返回 instagram。\\nmeta\\n关于\\n博客\\n工作\\n帮助\\napi\\n隐私设置\\n条款\\n地点\\n热门\\ninstagram lite\\nmeta ai\\nthreads\\n联系人上传和非用户\\nmeta verified\\n中文(简体)\\nafrikaans\\nالعربية\\nčeština\\ndansk\\ndeutsch\\nελληνικά\\nenglish\\nenglish (uk)\\nespañol (españa)\\nespañol\\nفارسی\\nsuomi\\nfrançais\\nעברית\\nbahasa indonesia\\nitaliano\\n日本語\\n한국어\\nbahasa melayu\\nnorsk\\nnederlands\\npolski\\nportuguês (brasil)\\nportuguês (portugal)\\nрусский\\nsvenska\\nภาษาไทย\\nfilipino\\ntürkçe\\n中文(简体)\\n中文(台灣)\\nবাংলা\\nગુજરાતી\\nहिन्दी\\nhrvatski\\nmagyar\\nಕನ್ನಡ\\nമലയാളം\\nमराठी\\nनेपाली\\nਪੰਜਾਬੀ\\nසිංහල\\nslovenčina\\nதமிழ்\\nతెలుగు\\nاردو\\ntiếng việt\\n中文(香港)\\nбългарски\\nfrançais (canada)\\nromână\\nсрпски\\nук\",\"nextAction\":\"Do not retry this URL; switch to a verified alternate channel or official website contact.\",\"draft\":\"Hi Tentworld Australia team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a retail/category buyer, the strongest fit is assortment fit, new SKU pipeline, price-tier coverage, and proven consumer demand; your verified outdoor, camping and travel retail social refill channel focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the category buyer or vendor-review owner for a short intro video meeting?\",\"sendStatus\":\"failed_open\",\"fallbackFrom\":\"https://www.facebook.com/Tentworld\",\"fallbackPlatform\":\"instagram\",\"fallbackReason\":\"facebook_profile_no_message_button\"}",
-        "decision": {
-          "verdict": "develop",
-          "fitScore": 84,
-          "reason": "local_codex_extension_template",
-          "draft": "Hi Tentworld Australia team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a retail/category buyer, the strongest fit is assortment fit, new SKU pipeline, price-tier coverage, and proven consumer demand; your verified outdoor, camping and travel retail social refill channel focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the category buyer or vendor-review owner for a short intro video meeting?"
-        },
-        "executionLayer": "Codex Chrome Extension only",
-        "glmModel": "not_used",
-        "followup": false,
-        "fallbackFrom": "https://www.facebook.com/Tentworld",
-        "fallbackPlatform": "instagram"
-      }
-    },
-    {
-      "id": "google-customer-tentworld-nz-facebook",
-      "company": "Tentworld NZ",
-      "action": "develop",
-      "platform": "facebook",
-      "targetUrl": "https://www.facebook.com/tentworldnz",
-      "ok": false,
-      "sendStatus": "failed_open",
-      "evidence": "unavailable_profile_page: 很抱歉，无法访问此页面\n你点击的链接可能已损坏，或页面已被移除。返回 Instagram。\nMeta\n关于\n博客\n工作\n帮助\nAPI\n隐私设置\n条款\n地点\n热门\nInstagram Lite\nMeta AI\nThreads\n联系人上传和非用户\nMeta Verified\n中文(简体)\nAfrikaans\nالعربية\nČeština\nDansk\nDeuts",
-      "chromeOpen": null,
-      "result": {
-        "ok": false,
-        "engine": "codex-chrome-extension-cdp",
-        "port": 9224,
-        "targetUrl": "https://www.instagram.com/tentworldnz/",
-        "tabId": "9601050F40390ADD23E478A3BF809ABD",
-        "title": "Instagram",
-        "status": "failed_open",
-        "error": "profile_unavailable_or_broken_link",
-        "evidence": "unavailable_profile_page: 很抱歉，无法访问此页面\n你点击的链接可能已损坏，或页面已被移除。返回 Instagram。\nMeta\n关于\n博客\n工作\n帮助\nAPI\n隐私设置\n条款\n地点\n热门\nInstagram Lite\nMeta AI\nThreads\n联系人上传和非用户\nMeta Verified\n中文(简体)\nAfrikaans\nالعربية\nČeština\nDansk\nDeuts",
-        "sendStatus": "failed_open",
-        "decision": {
-          "verdict": "develop",
-          "fitScore": 84,
-          "reason": "local_codex_extension_template",
-          "draft": "Hi Tentworld NZ team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a retail/category buyer, the strongest fit is assortment fit, new SKU pipeline, price-tier coverage, and proven consumer demand; your verified outdoor, camping and travel retail social refill channel focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the category buyer or vendor-review owner for a short intro video meeting?"
-        },
-        "executionLayer": "Codex Chrome Extension only",
-        "glmModel": "not_used",
-        "followup": false,
-        "fallbackFrom": "https://www.facebook.com/tentworldnz",
-        "fallbackPlatform": "instagram",
-        "output": "{\"fallbackFrom\":\"https://www.facebook.com/tentworldnz\",\"fallbackPlatform\":\"instagram\",\"fallbackReason\":\"facebook_profile_no_message_button\"}"
-      }
-    },
-    {
       "id": "google-customer-bergfreunde-instagram",
       "company": "Bergfreunde",
       "action": "develop",
@@ -510,8 +30,8 @@
         "engine": "codex-chrome-extension-cdp",
         "port": 9224,
         "targetUrl": "https://www.instagram.com/bergfreunde/",
-        "tabId": "275627C4BAADE50FF521CBB01AC0F2F5",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/275627C4BAADE50FF521CBB01AC0F2F5",
+        "tabId": "72551E0CBABF2D1993327884A45A4E33",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/72551E0CBABF2D1993327884A45A4E33",
         "title": "Bergfreunde (@bergfreunde) · Instagram 照片和视频"
       },
       "result": {
@@ -525,8 +45,8 @@
           "engine": "codex-chrome-extension-cdp",
           "port": 9224,
           "targetUrl": "https://www.instagram.com/bergfreunde/",
-          "tabId": "275627C4BAADE50FF521CBB01AC0F2F5",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/275627C4BAADE50FF521CBB01AC0F2F5",
+          "tabId": "72551E0CBABF2D1993327884A45A4E33",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/72551E0CBABF2D1993327884A45A4E33",
           "title": "Bergfreunde (@bergfreunde) · Instagram 照片和视频"
         },
         "sendStatus": "failed_open",
@@ -543,50 +63,54 @@
       }
     },
     {
-      "id": "google-customer-campz-instagram",
-      "company": "Campz",
+      "id": "google-customer-jax-outdoor-gear-instagram",
+      "company": "Jax Outdoor Gear",
       "action": "develop",
       "platform": "instagram",
-      "targetUrl": "https://www.instagram.com/campz.de/",
+      "targetUrl": "https://www.instagram.com/jaxoutdoor/",
       "ok": false,
       "sendStatus": "website_contact_unreachable_skip",
-      "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:6;contact_path_strategy_v2",
+      "evidence": "unavailable_profile_page: SKIP TO CONTENT\n\nJAX Store Locations\n\nSearch\nSearch\nLog in\nBag\n404\n\nPAGE NOT FOUND\n\nSorry, the page you are looking for does not exist.\n\nBACK TO HOME\nExplore JAX\nGift Cards\nLocatio;website_contact_all_targets_failed:6;contact_path_strategy_v2",
       "chromeOpen": {
-        "ok": true,
+        "ok": false,
         "engine": "codex-chrome-extension-cdp",
         "port": 9224,
-        "targetUrl": "https://www.campz.de/help/contact-us",
-        "tabId": "2591ADEB861A2318B5D793CC7BC0B763",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/2591ADEB861A2318B5D793CC7BC0B763",
-        "title": "410 Gone"
+        "targetUrl": "https://www.jaxgoods.com/help/contact-us",
+        "tabId": "47CAF97AFE031AE2A96B68667FDB5017",
+        "title": "404 Not Found – JAXOutdoorGearFarmandRanch",
+        "status": "failed_open",
+        "error": "profile_unavailable_or_broken_link",
+        "evidence": "unavailable_profile_page: SKIP TO CONTENT\n\nJAX Store Locations\n\nSearch\nSearch\nLog in\nBag\n404\n\nPAGE NOT FOUND\n\nSorry, the page you are looking for does not exist.\n\nBACK TO HOME\nExplore JAX\nGift Cards\nLocatio"
       },
       "result": {
         "ok": false,
         "engine": "codex-chrome-extension-website-contact",
         "browserEngine": "codex-chrome-extension-cdp",
         "mode": "website_contact_unreachable_skip",
-        "targetUrl": "https://www.campz.de/help/contact-us",
+        "targetUrl": "https://www.jaxgoods.com/help/contact-us",
         "chromeOpen": {
-          "ok": true,
+          "ok": false,
           "engine": "codex-chrome-extension-cdp",
           "port": 9224,
-          "targetUrl": "https://www.campz.de/help/contact-us",
-          "tabId": "2591ADEB861A2318B5D793CC7BC0B763",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/2591ADEB861A2318B5D793CC7BC0B763",
-          "title": "410 Gone"
+          "targetUrl": "https://www.jaxgoods.com/help/contact-us",
+          "tabId": "47CAF97AFE031AE2A96B68667FDB5017",
+          "title": "404 Not Found – JAXOutdoorGearFarmandRanch",
+          "status": "failed_open",
+          "error": "profile_unavailable_or_broken_link",
+          "evidence": "unavailable_profile_page: SKIP TO CONTENT\n\nJAX Store Locations\n\nSearch\nSearch\nLog in\nBag\n404\n\nPAGE NOT FOUND\n\nSorry, the page you are looking for does not exist.\n\nBACK TO HOME\nExplore JAX\nGift Cards\nLocatio"
         },
         "sendStatus": "website_contact_unreachable_skip",
         "subject": "FLEXTAIL retail partnership | 2026 assortment",
-        "draft": "Dear Campz Team,\n\nI’m Leo from FLEXTAIL. Your focus on verified outdoor, camping and travel retail social refill channel looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
-        "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:6;contact_path_strategy_v2",
-        "output": "{\"verdict\":\"website_contact_unreachable_skip\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:6;contact_path_strategy_v2\",\"nextAction\":\"Contact page opened, but no verified form, mailto link, vendor/business route, or clickable Contact Us path was detected. Continue manually before marking the lead ready.\",\"subject\":\"FLEXTAIL retail partnership | 2026 assortment\",\"draft\":\"Dear Campz Team,\\n\\nI’m Leo from FLEXTAIL. Your focus on verified outdoor, camping and travel retail social refill channel looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\\n\\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\\n\\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\\n\\nProduct overview: https://www.flextail.com/\\n\\nBest regards,\\nLeo Liu\\nSales & Operations Director\\nLeo@flextailgear.com\",\"sendStatus\":\"website_contact_unreachable_skip\",\"attempts\":[{\"targetUrl\":\"https://www.campz.de/\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control\"},{\"targetUrl\":\"https://www.campz.de/pages/contact-us\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control\"},{\"targetUrl\":\"https://www.campz.de/pages/contact\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control\"},{\"targetUrl\":\"https://www.campz.de/contact-us\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control\"},{\"targetUrl\":\"https://www.campz.de/contact\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control\"},{\"targetUrl\":\"https://www.campz.de/help/contact-us\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control\"}],\"fallbackFrom\":\"https://www.instagram.com/campz.de/\",\"fallbackPlatform\":\"email\",\"fallbackReason\":\"instagram_message_button_clicked_composer_not_found\"}",
-        "fallbackFrom": "https://www.instagram.com/campz.de/",
+        "draft": "Dear Jax Outdoor Gear Team,\n\nI’m Leo from FLEXTAIL. Your focus on verified outdoor, camping and travel retail social refill channel looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
+        "evidence": "unavailable_profile_page: SKIP TO CONTENT\n\nJAX Store Locations\n\nSearch\nSearch\nLog in\nBag\n404\n\nPAGE NOT FOUND\n\nSorry, the page you are looking for does not exist.\n\nBACK TO HOME\nExplore JAX\nGift Cards\nLocatio;website_contact_all_targets_failed:6;contact_path_strategy_v2",
+        "output": "{\"verdict\":\"website_contact_unreachable_skip\",\"evidence\":\"unavailable_profile_page: SKIP TO CONTENT\\n\\nJAX Store Locations\\n\\nSearch\\nSearch\\nLog in\\nBag\\n404\\n\\nPAGE NOT FOUND\\n\\nSorry, the page you are looking for does not exist.\\n\\nBACK TO HOME\\nExplore JAX\\nGift Cards\\nLocatio;website_contact_all_targets_failed:6;contact_path_strategy_v2\",\"subject\":\"FLEXTAIL retail partnership | 2026 assortment\",\"draft\":\"Dear Jax Outdoor Gear Team,\\n\\nI’m Leo from FLEXTAIL. Your focus on verified outdoor, camping and travel retail social refill channel looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\\n\\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\\n\\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\\n\\nProduct overview: https://www.flextail.com/\\n\\nBest regards,\\nLeo Liu\\nSales & Operations Director\\nLeo@flextailgear.com\",\"sendStatus\":\"website_contact_unreachable_skip\",\"attempts\":[{\"targetUrl\":\"https://www.jaxgoods.com/\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;contact_entry_clicked:SKIP TO CONTENT\"},{\"targetUrl\":\"https://www.jaxgoods.com/pages/contact-us\",\"sendStatus\":\"failed_open\",\"evidence\":\"unavailable_profile_page: SKIP TO CONTENT\\n\\nJAX Store Locations\\n\\nSearch\\nSearch\\nLog in\\nBag\\n404\\n\\nPAGE NOT FOUND\\n\\nSorry, the page you are looking for does not exist.\\n\\nBACK TO HOME\\nExplore JAX\\nGift Cards\\nLocatio\"},{\"targetUrl\":\"https://www.jaxgoods.com/pages/contact\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;contact_entry_clicked:SKIP TO CONTENT\"},{\"targetUrl\":\"https://www.jaxgoods.com/contact-us\",\"sendStatus\":\"failed_open\",\"evidence\":\"website_page_unavailable_404: Something went wrong.\\n\\nWhat happened?\\n404 Not Found\\nWhat can I do?\\nReturn to the previous page.\"},{\"targetUrl\":\"https://www.jaxgoods.com/contact\",\"sendStatus\":\"failed_open\",\"evidence\":\"website_page_unavailable_404: Something went wrong.\\n\\nWhat happened?\\n404 Not Found\\nWhat can I do?\\nReturn to the previous page.\"},{\"targetUrl\":\"https://www.jaxgoods.com/help/contact-us\",\"sendStatus\":\"failed_open\",\"evidence\":\"unavailable_profile_page: SKIP TO CONTENT\\n\\nJAX Store Locations\\n\\nSearch\\nSearch\\nLog in\\nBag\\n404\\n\\nPAGE NOT FOUND\\n\\nSorry, the page you are looking for does not exist.\\n\\nBACK TO HOME\\nExplore JAX\\nGift Cards\\nLocatio\"}],\"nextAction\":\"Official website contact was unreachable or not machine-verifiable. Skip this website route now, note it clearly, and continue with LinkedIn, Facebook, Instagram, or another verified official channel.\",\"fallbackFrom\":\"https://www.instagram.com/jaxoutdoor/\",\"fallbackPlatform\":\"email\",\"fallbackReason\":\"instagram_message_button_clicked_composer_not_found\"}",
+        "fallbackFrom": "https://www.instagram.com/jaxoutdoor/",
         "fallbackPlatform": "email",
         "decision": {
           "verdict": "develop",
           "fitScore": 84,
           "reason": "local_codex_extension_template",
-          "draft": "Hi Campz team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a retail/category buyer, the strongest fit is assortment fit, new SKU pipeline, price-tier coverage, and proven consumer demand; your verified outdoor, camping and travel retail social refill channel focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the category buyer or vendor-review owner for a short intro video meeting?"
+          "draft": "Hi Jax Outdoor Gear team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a retail/category buyer, the strongest fit is assortment fit, new SKU pipeline, price-tier coverage, and proven consumer demand; your verified outdoor, camping and travel retail social refill channel focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the category buyer or vendor-review owner for a short intro video meeting?"
         },
         "executionLayer": "Codex Chrome Extension only",
         "glmModel": "not_used",
@@ -594,50 +118,54 @@
       }
     },
     {
-      "id": "google-customer-doorout-instagram",
-      "company": "Doorout",
+      "id": "google-customer-sportler-instagram",
+      "company": "Sportler",
       "action": "develop",
       "platform": "instagram",
-      "targetUrl": "https://www.instagram.com/doorout_com/",
+      "targetUrl": "https://www.instagram.com/sportler_com/",
       "ok": false,
       "sendStatus": "website_contact_unreachable_skip",
-      "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:6;contact_path_strategy_v2",
+      "evidence": "website_page_unavailable_403: 访问 www.sportler.com 的请求遭到拒绝\n\n您未获授权，无法查看此网页。\n\nHTTP ERROR 403\n重新加载;website_contact_all_targets_failed:6;contact_path_strategy_v2",
       "chromeOpen": {
-        "ok": true,
+        "ok": false,
         "engine": "codex-chrome-extension-cdp",
         "port": 9224,
-        "targetUrl": "https://www.doorout.com/help/contact-us",
-        "tabId": "338E8207810B6BAE923D225FD40DCD50",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/338E8207810B6BAE923D225FD40DCD50",
-        "title": ""
+        "targetUrl": "https://www.sportler.com/help/contact-us",
+        "tabId": "A2CB0A824C670AB505C38BFCABDA1883",
+        "title": "www.sportler.com",
+        "status": "failed_open",
+        "error": "profile_unavailable_or_broken_link",
+        "evidence": "website_page_unavailable_403: 访问 www.sportler.com 的请求遭到拒绝\n\n您未获授权，无法查看此网页。\n\nHTTP ERROR 403\n重新加载"
       },
       "result": {
         "ok": false,
         "engine": "codex-chrome-extension-website-contact",
         "browserEngine": "codex-chrome-extension-cdp",
         "mode": "website_contact_unreachable_skip",
-        "targetUrl": "https://www.doorout.com/help/contact-us",
+        "targetUrl": "https://www.sportler.com/help/contact-us",
         "chromeOpen": {
-          "ok": true,
+          "ok": false,
           "engine": "codex-chrome-extension-cdp",
           "port": 9224,
-          "targetUrl": "https://www.doorout.com/help/contact-us",
-          "tabId": "338E8207810B6BAE923D225FD40DCD50",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/338E8207810B6BAE923D225FD40DCD50",
-          "title": ""
+          "targetUrl": "https://www.sportler.com/help/contact-us",
+          "tabId": "A2CB0A824C670AB505C38BFCABDA1883",
+          "title": "www.sportler.com",
+          "status": "failed_open",
+          "error": "profile_unavailable_or_broken_link",
+          "evidence": "website_page_unavailable_403: 访问 www.sportler.com 的请求遭到拒绝\n\n您未获授权，无法查看此网页。\n\nHTTP ERROR 403\n重新加载"
         },
         "sendStatus": "website_contact_unreachable_skip",
         "subject": "FLEXTAIL retail partnership | 2026 assortment",
-        "draft": "Dear Doorout Team,\n\nI’m Leo from FLEXTAIL. Your focus on verified outdoor, camping and travel retail social refill channel looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
-        "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:6;contact_path_strategy_v2",
-        "output": "{\"verdict\":\"website_contact_unreachable_skip\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:6;contact_path_strategy_v2\",\"nextAction\":\"Contact page opened, but no verified form, mailto link, vendor/business route, or clickable Contact Us path was detected. Continue manually before marking the lead ready.\",\"subject\":\"FLEXTAIL retail partnership | 2026 assortment\",\"draft\":\"Dear Doorout Team,\\n\\nI’m Leo from FLEXTAIL. Your focus on verified outdoor, camping and travel retail social refill channel looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\\n\\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\\n\\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\\n\\nProduct overview: https://www.flextail.com/\\n\\nBest regards,\\nLeo Liu\\nSales & Operations Director\\nLeo@flextailgear.com\",\"sendStatus\":\"website_contact_unreachable_skip\",\"attempts\":[{\"targetUrl\":\"https://www.doorout.com/\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control\"},{\"targetUrl\":\"https://www.doorout.com/pages/contact-us\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control\"},{\"targetUrl\":\"https://www.doorout.com/pages/contact\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control\"},{\"targetUrl\":\"https://www.doorout.com/contact-us\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control\"},{\"targetUrl\":\"https://www.doorout.com/contact\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control\"},{\"targetUrl\":\"https://www.doorout.com/help/contact-us\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control\"}],\"fallbackFrom\":\"https://www.instagram.com/doorout_com/\",\"fallbackPlatform\":\"email\",\"fallbackReason\":\"instagram_message_button_clicked_composer_not_found\"}",
-        "fallbackFrom": "https://www.instagram.com/doorout_com/",
+        "draft": "Dear Sportler Team,\n\nI’m Leo from FLEXTAIL. Your focus on verified outdoor, camping and travel retail social refill channel looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
+        "evidence": "website_page_unavailable_403: 访问 www.sportler.com 的请求遭到拒绝\n\n您未获授权，无法查看此网页。\n\nHTTP ERROR 403\n重新加载;website_contact_all_targets_failed:6;contact_path_strategy_v2",
+        "output": "{\"verdict\":\"website_contact_unreachable_skip\",\"evidence\":\"website_page_unavailable_403: 访问 www.sportler.com 的请求遭到拒绝\\n\\n您未获授权，无法查看此网页。\\n\\nHTTP ERROR 403\\n重新加载;website_contact_all_targets_failed:6;contact_path_strategy_v2\",\"subject\":\"FLEXTAIL retail partnership | 2026 assortment\",\"draft\":\"Dear Sportler Team,\\n\\nI’m Leo from FLEXTAIL. Your focus on verified outdoor, camping and travel retail social refill channel looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\\n\\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\\n\\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\\n\\nProduct overview: https://www.flextail.com/\\n\\nBest regards,\\nLeo Liu\\nSales & Operations Director\\nLeo@flextailgear.com\",\"sendStatus\":\"website_contact_unreachable_skip\",\"attempts\":[{\"targetUrl\":\"https://www.sportler.com/\",\"sendStatus\":\"failed_open\",\"evidence\":\"website_page_unavailable_403: 访问 www.sportler.com 的请求遭到拒绝\\n\\n您未获授权，无法查看此网页。\\n\\nHTTP ERROR 403\\n重新加载\"},{\"targetUrl\":\"https://www.sportler.com/pages/contact-us\",\"sendStatus\":\"failed_open\",\"evidence\":\"website_page_unavailable_403: 访问 www.sportler.com 的请求遭到拒绝\\n\\n您未获授权，无法查看此网页。\\n\\nHTTP ERROR 403\\n重新加载\"},{\"targetUrl\":\"https://www.sportler.com/pages/contact\",\"sendStatus\":\"failed_open\",\"evidence\":\"website_page_unavailable_403: 访问 www.sportler.com 的请求遭到拒绝\\n\\n您未获授权，无法查看此网页。\\n\\nHTTP ERROR 403\\n重新加载\"},{\"targetUrl\":\"https://www.sportler.com/contact-us\",\"sendStatus\":\"failed_open\",\"evidence\":\"website_page_unavailable_403: 访问 www.sportler.com 的请求遭到拒绝\\n\\n您未获授权，无法查看此网页。\\n\\nHTTP ERROR 403\\n重新加载\"},{\"targetUrl\":\"https://www.sportler.com/contact\",\"sendStatus\":\"failed_open\",\"evidence\":\"website_page_unavailable_403: 访问 www.sportler.com 的请求遭到拒绝\\n\\n您未获授权，无法查看此网页。\\n\\nHTTP ERROR 403\\n重新加载\"},{\"targetUrl\":\"https://www.sportler.com/help/contact-us\",\"sendStatus\":\"failed_open\",\"evidence\":\"website_page_unavailable_403: 访问 www.sportler.com 的请求遭到拒绝\\n\\n您未获授权，无法查看此网页。\\n\\nHTTP ERROR 403\\n重新加载\"}],\"nextAction\":\"Official website contact was unreachable or not machine-verifiable. Skip this website route now, note it clearly, and continue with LinkedIn, Facebook, Instagram, or another verified official channel.\",\"fallbackFrom\":\"https://www.instagram.com/sportler_com/\",\"fallbackPlatform\":\"email\",\"fallbackReason\":\"instagram_engagement_completed_message_unavailable;instagram_message_button_clicked_composer_not_found;follow_already_active;instagram_post_opened;post_liked;comment_submitted\"}",
+        "fallbackFrom": "https://www.instagram.com/sportler_com/",
         "fallbackPlatform": "email",
         "decision": {
           "verdict": "develop",
           "fitScore": 84,
           "reason": "local_codex_extension_template",
-          "draft": "Hi Doorout team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a retail/category buyer, the strongest fit is assortment fit, new SKU pipeline, price-tier coverage, and proven consumer demand; your verified outdoor, camping and travel retail social refill channel focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the category buyer or vendor-review owner for a short intro video meeting?"
+          "draft": "Hi Sportler team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a retail/category buyer, the strongest fit is assortment fit, new SKU pipeline, price-tier coverage, and proven consumer demand; your verified outdoor, camping and travel retail social refill channel focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the category buyer or vendor-review owner for a short intro video meeting?"
         },
         "executionLayer": "Codex Chrome Extension only",
         "glmModel": "not_used",
@@ -647,486 +175,6 @@
   ],
   "results": [
     {
-      "id": "google-customer-avidmax-outfitters-website-contact",
-      "company": "AvidMax Outfitters",
-      "action": "verify_target",
-      "platform": "email",
-      "targetUrl": "https://www.avidmax.com/",
-      "ok": false,
-      "sendStatus": "website_contact_unreachable_skip",
-      "evidence": "unavailable_profile_page: Skip to main content\n\nFREE STANDARD SHIPPING OVER $45\n\nSearch Keyword:\nLearn & Explore\nReports, Articles and more.\nRetail\nRewards\nAccount\nCart\nFly Tying\nRods\nReels\nLines\nTerminal T;website_contact_all_targets_failed:6;contact_path_strategy_v2",
-      "chromeOpen": {
-        "ok": false,
-        "engine": "codex-chrome-extension-cdp",
-        "port": 9224,
-        "targetUrl": "https://www.avidmax.com/help/contact-us",
-        "tabId": "6202F9C1C1E77D2733F80ED2FEA798EA",
-        "title": "AvidMax - Not Found",
-        "status": "failed_open",
-        "error": "profile_unavailable_or_broken_link",
-        "evidence": "unavailable_profile_page: Skip to main content\n\nFREE STANDARD SHIPPING OVER $45\n\nSearch Keyword:\nLearn & Explore\nReports, Articles and more.\nRetail\nRewards\nAccount\nCart\nFly Tying\nRods\nReels\nLines\nTerminal T"
-      },
-      "result": {
-        "ok": false,
-        "engine": "codex-chrome-extension-website-contact",
-        "browserEngine": "codex-chrome-extension-cdp",
-        "mode": "website_contact_unreachable_skip",
-        "targetUrl": "https://www.avidmax.com/help/contact-us",
-        "chromeOpen": {
-          "ok": false,
-          "engine": "codex-chrome-extension-cdp",
-          "port": 9224,
-          "targetUrl": "https://www.avidmax.com/help/contact-us",
-          "tabId": "6202F9C1C1E77D2733F80ED2FEA798EA",
-          "title": "AvidMax - Not Found",
-          "status": "failed_open",
-          "error": "profile_unavailable_or_broken_link",
-          "evidence": "unavailable_profile_page: Skip to main content\n\nFREE STANDARD SHIPPING OVER $45\n\nSearch Keyword:\nLearn & Explore\nReports, Articles and more.\nRetail\nRewards\nAccount\nCart\nFly Tying\nRods\nReels\nLines\nTerminal T"
-        },
-        "sendStatus": "website_contact_unreachable_skip",
-        "subject": "FLEXTAIL retail partnership | 2026 assortment",
-        "draft": "Dear AvidMax Outfitters Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
-        "evidence": "unavailable_profile_page: Skip to main content\n\nFREE STANDARD SHIPPING OVER $45\n\nSearch Keyword:\nLearn & Explore\nReports, Articles and more.\nRetail\nRewards\nAccount\nCart\nFly Tying\nRods\nReels\nLines\nTerminal T;website_contact_all_targets_failed:6;contact_path_strategy_v2",
-        "output": "{\"verdict\":\"website_contact_unreachable_skip\",\"evidence\":\"unavailable_profile_page: Skip to main content\\n\\nFREE STANDARD SHIPPING OVER $45\\n\\nSearch Keyword:\\nLearn & Explore\\nReports, Articles and more.\\nRetail\\nRewards\\nAccount\\nCart\\nFly Tying\\nRods\\nReels\\nLines\\nTerminal T;website_contact_all_targets_failed:6;contact_path_strategy_v2\",\"subject\":\"FLEXTAIL retail partnership | 2026 assortment\",\"draft\":\"Dear AvidMax Outfitters Team,\\n\\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\\n\\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\\n\\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\\n\\nProduct overview: https://www.flextail.com/\\n\\nBest regards,\\nLeo Liu\\nSales & Operations Director\\nLeo@flextailgear.com\",\"sendStatus\":\"website_contact_unreachable_skip\",\"attempts\":[{\"targetUrl\":\"https://www.avidmax.com/\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control\"},{\"targetUrl\":\"https://www.avidmax.com/pages/contact-us\",\"sendStatus\":\"failed_open\",\"evidence\":\"unavailable_profile_page: Skip to main content\\n\\nFREE STANDARD SHIPPING OVER $45\\n\\nSearch Keyword:\\nLearn & Explore\\nReports, Articles and more.\\nRetail\\nRewards\\nAccount\\nCart\\nFly Tying\\nRods\\nReels\\nLines\\nTerminal T\"},{\"targetUrl\":\"https://www.avidmax.com/pages/contact\",\"sendStatus\":\"failed_open\",\"evidence\":\"unavailable_profile_page: Skip to main content\\n\\nFREE STANDARD SHIPPING OVER $45\\n\\nSearch Keyword:\\nLearn & Explore\\nReports, Articles and more.\\nRetail\\nRewards\\nAccount\\nCart\\nFly Tying\\nRods\\nReels\\nLines\\nTerminal T\"},{\"targetUrl\":\"https://www.avidmax.com/contact-us\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;contact_entry_clicked:Contact Us\"},{\"targetUrl\":\"https://www.avidmax.com/contact\",\"sendStatus\":\"failed_open\",\"evidence\":\"unavailable_profile_page: Skip to main content\\n\\nFREE STANDARD SHIPPING OVER $45\\n\\nSearch Keyword:\\nLearn & Explore\\nReports, Articles and more.\\nRetail\\nRewards\\nAccount\\nCart\\nFly Tying\\nRods\\nReels\\nLines\\nTerminal T\"},{\"targetUrl\":\"https://www.avidmax.com/help/contact-us\",\"sendStatus\":\"failed_open\",\"evidence\":\"unavailable_profile_page: Skip to main content\\n\\nFREE STANDARD SHIPPING OVER $45\\n\\nSearch Keyword:\\nLearn & Explore\\nReports, Articles and more.\\nRetail\\nRewards\\nAccount\\nCart\\nFly Tying\\nRods\\nReels\\nLines\\nTerminal T\"}],\"nextAction\":\"Official website contact was unreachable or not machine-verifiable. Skip this website route now, note it clearly, and continue with LinkedIn, Facebook, Instagram, or another verified official channel.\"}"
-      }
-    },
-    {
-      "id": "google-customer-gear-west-website-contact",
-      "company": "Gear West",
-      "action": "verify_target",
-      "platform": "email",
-      "targetUrl": "https://www.gearwest.com/",
-      "ok": false,
-      "sendStatus": "website_contact_unreachable_skip",
-      "evidence": "unavailable_profile_page: Skip to content\nGift Cards\nService\nRentals\nTrade-In Program\nGear Guide\nTrail Kids Equipment Guide\n My Account\nSearch\n0\nMenu\nOops! Page not found.\n404 Error\n\nThe page you are lookin;website_contact_all_targets_failed:6;contact_path_strategy_v2",
-      "chromeOpen": {
-        "ok": false,
-        "engine": "codex-chrome-extension-cdp",
-        "port": 9224,
-        "targetUrl": "https://www.gearwest.com/help/contact-us",
-        "tabId": "A03AFDF475771CCF63B7DBB18062AD0B",
-        "title": "404 Not Found – Gear West",
-        "status": "failed_open",
-        "error": "profile_unavailable_or_broken_link",
-        "evidence": "unavailable_profile_page: Skip to content\nGift Cards\nService\nRentals\nTrade-In Program\nGear Guide\nTrail Kids Equipment Guide\n My Account\nSearch\n0\nMenu\nOops! Page not found.\n404 Error\n\nThe page you are lookin"
-      },
-      "result": {
-        "ok": false,
-        "engine": "codex-chrome-extension-website-contact",
-        "browserEngine": "codex-chrome-extension-cdp",
-        "mode": "website_contact_unreachable_skip",
-        "targetUrl": "https://www.gearwest.com/help/contact-us",
-        "chromeOpen": {
-          "ok": false,
-          "engine": "codex-chrome-extension-cdp",
-          "port": 9224,
-          "targetUrl": "https://www.gearwest.com/help/contact-us",
-          "tabId": "A03AFDF475771CCF63B7DBB18062AD0B",
-          "title": "404 Not Found – Gear West",
-          "status": "failed_open",
-          "error": "profile_unavailable_or_broken_link",
-          "evidence": "unavailable_profile_page: Skip to content\nGift Cards\nService\nRentals\nTrade-In Program\nGear Guide\nTrail Kids Equipment Guide\n My Account\nSearch\n0\nMenu\nOops! Page not found.\n404 Error\n\nThe page you are lookin"
-        },
-        "sendStatus": "website_contact_unreachable_skip",
-        "subject": "FLEXTAIL retail partnership | 2026 assortment",
-        "draft": "Dear Gear West Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
-        "evidence": "unavailable_profile_page: Skip to content\nGift Cards\nService\nRentals\nTrade-In Program\nGear Guide\nTrail Kids Equipment Guide\n My Account\nSearch\n0\nMenu\nOops! Page not found.\n404 Error\n\nThe page you are lookin;website_contact_all_targets_failed:6;contact_path_strategy_v2",
-        "output": "{\"verdict\":\"website_contact_unreachable_skip\",\"evidence\":\"unavailable_profile_page: Skip to content\\nGift Cards\\nService\\nRentals\\nTrade-In Program\\nGear Guide\\nTrail Kids Equipment Guide\\n My Account\\nSearch\\n0\\nMenu\\nOops! Page not found.\\n404 Error\\n\\nThe page you are lookin;website_contact_all_targets_failed:6;contact_path_strategy_v2\",\"subject\":\"FLEXTAIL retail partnership | 2026 assortment\",\"draft\":\"Dear Gear West Team,\\n\\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\\n\\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\\n\\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\\n\\nProduct overview: https://www.flextail.com/\\n\\nBest regards,\\nLeo Liu\\nSales & Operations Director\\nLeo@flextailgear.com\",\"sendStatus\":\"website_contact_unreachable_skip\",\"attempts\":[{\"targetUrl\":\"https://www.gearwest.com/\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control\"},{\"targetUrl\":\"https://www.gearwest.com/pages/contact-us\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;contact_entry_clicked:Contact Us\"},{\"targetUrl\":\"https://www.gearwest.com/pages/contact\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;contact_entry_clicked:Contact Us\"},{\"targetUrl\":\"https://www.gearwest.com/contact-us\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;contact_entry_clicked:Contact Us\"},{\"targetUrl\":\"https://www.gearwest.com/contact\",\"sendStatus\":\"failed_open\",\"evidence\":\"website_page_unavailable_404: Something went wrong.\\n\\nWhat happened?\\n404 Not Found\\nWhat can I do?\\nReturn to the previous page.\"},{\"targetUrl\":\"https://www.gearwest.com/help/contact-us\",\"sendStatus\":\"failed_open\",\"evidence\":\"unavailable_profile_page: Skip to content\\nGift Cards\\nService\\nRentals\\nTrade-In Program\\nGear Guide\\nTrail Kids Equipment Guide\\n My Account\\nSearch\\n0\\nMenu\\nOops! Page not found.\\n404 Error\\n\\nThe page you are lookin\"}],\"nextAction\":\"Official website contact was unreachable or not machine-verifiable. Skip this website route now, note it clearly, and continue with LinkedIn, Facebook, Instagram, or another verified official channel.\"}"
-      }
-    },
-    {
-      "id": "google-customer-72hours-facebook",
-      "company": "72hours",
-      "action": "develop",
-      "platform": "facebook",
-      "targetUrl": "https://www.facebook.com/72hours.ca",
-      "ok": true,
-      "sendStatus": "post_liked",
-      "evidence": "facebook_engagement_completed_message_unavailable;facebook_composer_unavailable_closed_no_retry;follow_not_available;post_liked;facebook_post_like_clicked",
-      "chromeOpen": {
-        "ok": true,
-        "engine": "codex-chrome-extension-cdp",
-        "port": 9224,
-        "targetUrl": "https://www.facebook.com/72hours.ca",
-        "tabId": "697F282B26293B24D5E2E1FA65B98C11",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/697F282B26293B24D5E2E1FA65B98C11",
-        "title": "Facebook"
-      },
-      "result": {
-        "ok": true,
-        "engine": "codex-chrome-extension-cdp",
-        "browserEngine": "codex-chrome-extension-cdp",
-        "mode": "codex_chrome_extension_only",
-        "targetUrl": "https://www.facebook.com/72hours.ca",
-        "chromeOpen": {
-          "ok": true,
-          "engine": "codex-chrome-extension-cdp",
-          "port": 9224,
-          "targetUrl": "https://www.facebook.com/72hours.ca",
-          "tabId": "697F282B26293B24D5E2E1FA65B98C11",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/697F282B26293B24D5E2E1FA65B98C11",
-          "title": "Facebook"
-        },
-        "sendStatus": "post_liked",
-        "output": "{\"verdict\":\"safe_gate_paused\",\"evidence\":\"facebook_engagement_completed_message_unavailable;facebook_composer_unavailable_closed_no_retry;follow_not_available;post_liked;facebook_post_like_clicked\",\"nextAction\":\"The verified account was engaged successfully. Monitor for a connection opportunity and avoid repeating the same action.\",\"draft\":\"Hi 72hours team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a retail/category buyer, the strongest fit is assortment fit, new SKU pipeline, price-tier coverage, and proven consumer demand; your verified outdoor, camping and travel retail social refill channel focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the category buyer or vendor-review owner for a short intro video meeting?\",\"sendStatus\":\"post_liked\"}",
-        "decision": {
-          "verdict": "develop",
-          "fitScore": 84,
-          "reason": "local_codex_extension_template",
-          "draft": "Hi 72hours team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a retail/category buyer, the strongest fit is assortment fit, new SKU pipeline, price-tier coverage, and proven consumer demand; your verified outdoor, camping and travel retail social refill channel focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the category buyer or vendor-review owner for a short intro video meeting?"
-        },
-        "executionLayer": "Codex Chrome Extension only",
-        "glmModel": "not_used",
-        "followup": false
-      }
-    },
-    {
-      "id": "google-customer-above-and-beyond-facebook",
-      "company": "Above and Beyond",
-      "action": "develop",
-      "platform": "facebook",
-      "targetUrl": "https://www.facebook.com/aboveandbeyondireland",
-      "ok": false,
-      "sendStatus": "website_contact_unreachable_skip",
-      "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:6;contact_path_strategy_v2",
-      "chromeOpen": {
-        "ok": true,
-        "engine": "codex-chrome-extension-cdp",
-        "port": 9224,
-        "targetUrl": "https://www.aboveandbeyond.ie/help/contact-us",
-        "tabId": "409298CACF14885FAF2B06A26ADAFC3A",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/409298CACF14885FAF2B06A26ADAFC3A",
-        "title": "www.aboveandbeyond.ie"
-      },
-      "result": {
-        "ok": false,
-        "engine": "codex-chrome-extension-website-contact",
-        "browserEngine": "codex-chrome-extension-cdp",
-        "mode": "website_contact_unreachable_skip",
-        "targetUrl": "https://www.aboveandbeyond.ie/help/contact-us",
-        "chromeOpen": {
-          "ok": true,
-          "engine": "codex-chrome-extension-cdp",
-          "port": 9224,
-          "targetUrl": "https://www.aboveandbeyond.ie/help/contact-us",
-          "tabId": "409298CACF14885FAF2B06A26ADAFC3A",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/409298CACF14885FAF2B06A26ADAFC3A",
-          "title": "www.aboveandbeyond.ie"
-        },
-        "sendStatus": "website_contact_unreachable_skip",
-        "subject": "FLEXTAIL retail partnership | 2026 assortment",
-        "draft": "Dear Above and Beyond Team,\n\nI’m Leo from FLEXTAIL. Your focus on verified outdoor, camping and travel retail social refill channel looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
-        "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:6;contact_path_strategy_v2",
-        "output": "{\"verdict\":\"website_contact_unreachable_skip\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:6;contact_path_strategy_v2\",\"nextAction\":\"Contact page opened, but no verified form, mailto link, vendor/business route, or clickable Contact Us path was detected. Continue manually before marking the lead ready.\",\"subject\":\"FLEXTAIL retail partnership | 2026 assortment\",\"draft\":\"Dear Above and Beyond Team,\\n\\nI’m Leo from FLEXTAIL. Your focus on verified outdoor, camping and travel retail social refill channel looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\\n\\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\\n\\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\\n\\nProduct overview: https://www.flextail.com/\\n\\nBest regards,\\nLeo Liu\\nSales & Operations Director\\nLeo@flextailgear.com\",\"sendStatus\":\"website_contact_unreachable_skip\",\"attempts\":[{\"targetUrl\":\"https://www.aboveandbeyond.ie/\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control\"},{\"targetUrl\":\"https://www.aboveandbeyond.ie/pages/contact-us\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control\"},{\"targetUrl\":\"https://www.aboveandbeyond.ie/pages/contact\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control\"},{\"targetUrl\":\"https://www.aboveandbeyond.ie/contact-us\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control\"},{\"targetUrl\":\"https://www.aboveandbeyond.ie/contact\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control\"},{\"targetUrl\":\"https://www.aboveandbeyond.ie/help/contact-us\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control\"}],\"fallbackFrom\":\"https://www.facebook.com/aboveandbeyondireland\",\"fallbackPlatform\":\"email\",\"fallbackReason\":\"facebook_profile_no_message_button\"}",
-        "fallbackFrom": "https://www.facebook.com/aboveandbeyondireland",
-        "fallbackPlatform": "email",
-        "decision": {
-          "verdict": "develop",
-          "fitScore": 84,
-          "reason": "local_codex_extension_template",
-          "draft": "Hi Above and Beyond team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a retail/category buyer, the strongest fit is assortment fit, new SKU pipeline, price-tier coverage, and proven consumer demand; your verified outdoor, camping and travel retail social refill channel focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the category buyer or vendor-review owner for a short intro video meeting?"
-        },
-        "executionLayer": "Codex Chrome Extension only",
-        "glmModel": "not_used",
-        "followup": false
-      }
-    },
-    {
-      "id": "google-customer-atmosphere-facebook",
-      "company": "Atmosphere",
-      "action": "develop",
-      "platform": "facebook",
-      "targetUrl": "https://www.facebook.com/Atmosphere",
-      "ok": false,
-      "sendStatus": "website_contact_unreachable_skip",
-      "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:6;contact_path_strategy_v2",
-      "chromeOpen": {
-        "ok": true,
-        "engine": "codex-chrome-extension-cdp",
-        "port": 9224,
-        "targetUrl": "https://www.atmosphere.ca/help/contact-us",
-        "tabId": "DF9E60957858ECF176DF3B87CAFFD4D0",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/DF9E60957858ECF176DF3B87CAFFD4D0",
-        "title": "Atmosphere Consolidation Notice"
-      },
-      "result": {
-        "ok": false,
-        "engine": "codex-chrome-extension-website-contact",
-        "browserEngine": "codex-chrome-extension-cdp",
-        "mode": "website_contact_unreachable_skip",
-        "targetUrl": "https://www.atmosphere.ca/help/contact-us",
-        "chromeOpen": {
-          "ok": true,
-          "engine": "codex-chrome-extension-cdp",
-          "port": 9224,
-          "targetUrl": "https://www.atmosphere.ca/help/contact-us",
-          "tabId": "DF9E60957858ECF176DF3B87CAFFD4D0",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/DF9E60957858ECF176DF3B87CAFFD4D0",
-          "title": "Atmosphere Consolidation Notice"
-        },
-        "sendStatus": "website_contact_unreachable_skip",
-        "subject": "FLEXTAIL retail partnership | 2026 assortment",
-        "draft": "Dear Atmosphere Team,\n\nI’m Leo from FLEXTAIL. Your focus on verified outdoor, camping and travel retail social refill channel looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
-        "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:6;contact_path_strategy_v2",
-        "output": "{\"verdict\":\"website_contact_unreachable_skip\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:6;contact_path_strategy_v2\",\"nextAction\":\"Contact page opened, but no verified form, mailto link, vendor/business route, or clickable Contact Us path was detected. Continue manually before marking the lead ready.\",\"subject\":\"FLEXTAIL retail partnership | 2026 assortment\",\"draft\":\"Dear Atmosphere Team,\\n\\nI’m Leo from FLEXTAIL. Your focus on verified outdoor, camping and travel retail social refill channel looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\\n\\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\\n\\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\\n\\nProduct overview: https://www.flextail.com/\\n\\nBest regards,\\nLeo Liu\\nSales & Operations Director\\nLeo@flextailgear.com\",\"sendStatus\":\"website_contact_unreachable_skip\",\"attempts\":[{\"targetUrl\":\"https://www.atmosphere.ca/\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control\"},{\"targetUrl\":\"https://www.atmosphere.ca/pages/contact-us\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control\"},{\"targetUrl\":\"https://www.atmosphere.ca/pages/contact\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control\"},{\"targetUrl\":\"https://www.atmosphere.ca/contact-us\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control\"},{\"targetUrl\":\"https://www.atmosphere.ca/contact\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control\"},{\"targetUrl\":\"https://www.atmosphere.ca/help/contact-us\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control\"}],\"fallbackFrom\":\"https://www.facebook.com/Atmosphere\",\"fallbackPlatform\":\"email\",\"fallbackReason\":\"facebook_engagement_completed_message_unavailable;facebook_profile_no_message_button;follow_already_active;facebook_post_like_not_available\"}",
-        "fallbackFrom": "https://www.facebook.com/Atmosphere",
-        "fallbackPlatform": "email",
-        "decision": {
-          "verdict": "develop",
-          "fitScore": 84,
-          "reason": "local_codex_extension_template",
-          "draft": "Hi Atmosphere team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a retail/category buyer, the strongest fit is assortment fit, new SKU pipeline, price-tier coverage, and proven consumer demand; your verified outdoor, camping and travel retail social refill channel focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the category buyer or vendor-review owner for a short intro video meeting?"
-        },
-        "executionLayer": "Codex Chrome Extension only",
-        "glmModel": "not_used",
-        "followup": false
-      }
-    },
-    {
-      "id": "google-customer-eastern-mountain-sports-facebook",
-      "company": "Eastern Mountain Sports",
-      "action": "develop",
-      "platform": "facebook",
-      "targetUrl": "https://www.facebook.com/EasternMountainSports",
-      "ok": false,
-      "sendStatus": "website_contact_unreachable_skip",
-      "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:6;contact_path_strategy_v2",
-      "chromeOpen": {
-        "ok": true,
-        "engine": "codex-chrome-extension-cdp",
-        "port": 9224,
-        "targetUrl": "https://www.ems.com/help/contact-us",
-        "tabId": "4E02A15E0A4A06D0F51075EB8F237852",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/4E02A15E0A4A06D0F51075EB8F237852",
-        "title": "Just a moment..."
-      },
-      "result": {
-        "ok": false,
-        "engine": "codex-chrome-extension-website-contact",
-        "browserEngine": "codex-chrome-extension-cdp",
-        "mode": "website_contact_unreachable_skip",
-        "targetUrl": "https://www.ems.com/help/contact-us",
-        "chromeOpen": {
-          "ok": true,
-          "engine": "codex-chrome-extension-cdp",
-          "port": 9224,
-          "targetUrl": "https://www.ems.com/help/contact-us",
-          "tabId": "4E02A15E0A4A06D0F51075EB8F237852",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/4E02A15E0A4A06D0F51075EB8F237852",
-          "title": "Just a moment..."
-        },
-        "sendStatus": "website_contact_unreachable_skip",
-        "subject": "FLEXTAIL retail partnership | 2026 assortment",
-        "draft": "Dear Eastern Mountain Sports Team,\n\nI’m Leo from FLEXTAIL. Your focus on verified outdoor, camping and travel retail social refill channel looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
-        "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:6;contact_path_strategy_v2",
-        "output": "{\"verdict\":\"website_contact_unreachable_skip\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:6;contact_path_strategy_v2\",\"nextAction\":\"Contact page opened, but no verified form, mailto link, vendor/business route, or clickable Contact Us path was detected. Continue manually before marking the lead ready.\",\"subject\":\"FLEXTAIL retail partnership | 2026 assortment\",\"draft\":\"Dear Eastern Mountain Sports Team,\\n\\nI’m Leo from FLEXTAIL. Your focus on verified outdoor, camping and travel retail social refill channel looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\\n\\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\\n\\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\\n\\nProduct overview: https://www.flextail.com/\\n\\nBest regards,\\nLeo Liu\\nSales & Operations Director\\nLeo@flextailgear.com\",\"sendStatus\":\"website_contact_unreachable_skip\",\"attempts\":[{\"targetUrl\":\"https://www.ems.com/\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control\"},{\"targetUrl\":\"https://www.ems.com/pages/contact-us\",\"sendStatus\":\"failed_open\",\"evidence\":\"website_page_unavailable_404: Skip to content\\n\\nFree Standard Shipping over $75* (details)\\n\\nSearch\\nSearch\\nLog in\\nCart\\nMENS\\nWOMENS\\nKIDS\\nOUTERWEAR\\nFOOTWEAR\\nCAMP & HIKE\\nACTIVITIES\\nBRANDS\\nSUMMER SALE\\nGet our latest \"},{\"targetUrl\":\"https://www.ems.com/pages/contact\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;contact_entry_clicked:Skip to content\"},{\"targetUrl\":\"https://www.ems.com/contact-us\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control\"},{\"targetUrl\":\"https://www.ems.com/contact\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control\"},{\"targetUrl\":\"https://www.ems.com/help/contact-us\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control\"}],\"fallbackFrom\":\"https://www.facebook.com/EasternMountainSports\",\"fallbackPlatform\":\"email\",\"fallbackReason\":\"facebook_profile_no_message_button\"}",
-        "fallbackFrom": "https://www.facebook.com/EasternMountainSports",
-        "fallbackPlatform": "email",
-        "decision": {
-          "verdict": "develop",
-          "fitScore": 84,
-          "reason": "local_codex_extension_template",
-          "draft": "Hi Eastern Mountain Sports team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a retail/category buyer, the strongest fit is assortment fit, new SKU pipeline, price-tier coverage, and proven consumer demand; your verified outdoor, camping and travel retail social refill channel focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the category buyer or vendor-review owner for a short intro video meeting?"
-        },
-        "executionLayer": "Codex Chrome Extension only",
-        "glmModel": "not_used",
-        "followup": false
-      }
-    },
-    {
-      "id": "google-customer-facewest-facebook",
-      "company": "Facewest",
-      "action": "develop",
-      "platform": "facebook",
-      "targetUrl": "https://www.facebook.com/Facewest",
-      "ok": false,
-      "sendStatus": "website_contact_unreachable_skip",
-      "evidence": "unavailable_profile_page: SKIP TO CONTENT\n\nFree UK Delivery Orders > £100 Learn more >\n\nOrder by 2pm for same day dispatch. (M-F)\n\nSearch\nLog in\nCart\nMen's Clothing\nWomen's Clothing\nOutdoor Equipment\nTravel;website_contact_all_targets_failed:6;contact_path_strategy_v2",
-      "chromeOpen": {
-        "ok": false,
-        "engine": "codex-chrome-extension-cdp",
-        "port": 9224,
-        "targetUrl": "https://www.facewest.co.uk/help/contact-us",
-        "tabId": "9DE7F297BFA96E207935A560F08014F7",
-        "title": "404 Not Found – Facewest.co.uk",
-        "status": "failed_open",
-        "error": "profile_unavailable_or_broken_link",
-        "evidence": "unavailable_profile_page: SKIP TO CONTENT\n\nFree UK Delivery Orders > £100 Learn more >\n\nOrder by 2pm for same day dispatch. (M-F)\n\nSearch\nLog in\nCart\nMen's Clothing\nWomen's Clothing\nOutdoor Equipment\nTravel"
-      },
-      "result": {
-        "ok": false,
-        "engine": "codex-chrome-extension-website-contact",
-        "browserEngine": "codex-chrome-extension-cdp",
-        "mode": "website_contact_unreachable_skip",
-        "targetUrl": "https://www.facewest.co.uk/help/contact-us",
-        "chromeOpen": {
-          "ok": false,
-          "engine": "codex-chrome-extension-cdp",
-          "port": 9224,
-          "targetUrl": "https://www.facewest.co.uk/help/contact-us",
-          "tabId": "9DE7F297BFA96E207935A560F08014F7",
-          "title": "404 Not Found – Facewest.co.uk",
-          "status": "failed_open",
-          "error": "profile_unavailable_or_broken_link",
-          "evidence": "unavailable_profile_page: SKIP TO CONTENT\n\nFree UK Delivery Orders > £100 Learn more >\n\nOrder by 2pm for same day dispatch. (M-F)\n\nSearch\nLog in\nCart\nMen's Clothing\nWomen's Clothing\nOutdoor Equipment\nTravel"
-        },
-        "sendStatus": "website_contact_unreachable_skip",
-        "subject": "FLEXTAIL retail partnership | 2026 assortment",
-        "draft": "Dear Facewest Team,\n\nI’m Leo from FLEXTAIL. Your focus on verified outdoor, camping and travel retail social refill channel looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
-        "evidence": "unavailable_profile_page: SKIP TO CONTENT\n\nFree UK Delivery Orders > £100 Learn more >\n\nOrder by 2pm for same day dispatch. (M-F)\n\nSearch\nLog in\nCart\nMen's Clothing\nWomen's Clothing\nOutdoor Equipment\nTravel;website_contact_all_targets_failed:6;contact_path_strategy_v2",
-        "output": "{\"verdict\":\"website_contact_unreachable_skip\",\"evidence\":\"unavailable_profile_page: SKIP TO CONTENT\\n\\nFree UK Delivery Orders > £100 Learn more >\\n\\nOrder by 2pm for same day dispatch. (M-F)\\n\\nSearch\\nLog in\\nCart\\nMen's Clothing\\nWomen's Clothing\\nOutdoor Equipment\\nTravel;website_contact_all_targets_failed:6;contact_path_strategy_v2\",\"subject\":\"FLEXTAIL retail partnership | 2026 assortment\",\"draft\":\"Dear Facewest Team,\\n\\nI’m Leo from FLEXTAIL. Your focus on verified outdoor, camping and travel retail social refill channel looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\\n\\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\\n\\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\\n\\nProduct overview: https://www.flextail.com/\\n\\nBest regards,\\nLeo Liu\\nSales & Operations Director\\nLeo@flextailgear.com\",\"sendStatus\":\"website_contact_unreachable_skip\",\"attempts\":[{\"targetUrl\":\"https://www.facewest.co.uk/\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;contact_entry_clicked:Contact Us\"},{\"targetUrl\":\"https://www.facewest.co.uk/pages/contact-us\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;contact_entry_clicked:Contact Us\"},{\"targetUrl\":\"https://www.facewest.co.uk/pages/contact\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;contact_entry_clicked:Contact Us\"},{\"targetUrl\":\"https://www.facewest.co.uk/contact-us\",\"sendStatus\":\"failed_open\",\"evidence\":\"website_page_unavailable_404: Something went wrong.\\n\\nWhat happened?\\n404 Not Found\\nWhat can I do?\\nReturn to the previous page.\"},{\"targetUrl\":\"https://www.facewest.co.uk/contact\",\"sendStatus\":\"failed_open\",\"evidence\":\"website_page_unavailable_404: Something went wrong.\\n\\nWhat happened?\\n404 Not Found\\nWhat can I do?\\nReturn to the previous page.\"},{\"targetUrl\":\"https://www.facewest.co.uk/help/contact-us\",\"sendStatus\":\"failed_open\",\"evidence\":\"unavailable_profile_page: SKIP TO CONTENT\\n\\nFree UK Delivery Orders > £100 Learn more >\\n\\nOrder by 2pm for same day dispatch. (M-F)\\n\\nSearch\\nLog in\\nCart\\nMen's Clothing\\nWomen's Clothing\\nOutdoor Equipment\\nTravel\"}],\"nextAction\":\"Official website contact was unreachable or not machine-verifiable. Skip this website route now, note it clearly, and continue with LinkedIn, Facebook, Instagram, or another verified official channel.\",\"fallbackFrom\":\"https://www.facebook.com/Facewest\",\"fallbackPlatform\":\"email\",\"fallbackReason\":\"facebook_profile_no_message_button\"}",
-        "fallbackFrom": "https://www.facebook.com/Facewest",
-        "fallbackPlatform": "email",
-        "decision": {
-          "verdict": "develop",
-          "fitScore": 84,
-          "reason": "local_codex_extension_template",
-          "draft": "Hi Facewest team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a retail/category buyer, the strongest fit is assortment fit, new SKU pipeline, price-tier coverage, and proven consumer demand; your verified outdoor, camping and travel retail social refill channel focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the category buyer or vendor-review owner for a short intro video meeting?"
-        },
-        "executionLayer": "Codex Chrome Extension only",
-        "glmModel": "not_used",
-        "followup": false
-      }
-    },
-    {
-      "id": "google-customer-jax-outdoor-gear-facebook",
-      "company": "Jax Outdoor Gear",
-      "action": "develop",
-      "platform": "facebook",
-      "targetUrl": "https://www.facebook.com/jaxoutdoorgear",
-      "ok": false,
-      "sendStatus": "website_contact_unreachable_skip",
-      "evidence": "unavailable_profile_page: SKIP TO CONTENT\n\nJAX Store Locations\n\nSearch\nSearch\nLog in\nBag\n404\n\nPAGE NOT FOUND\n\nSorry, the page you are looking for does not exist.\n\nBACK TO HOME\nExplore JAX\nGift Cards\nLocatio;website_contact_all_targets_failed:6;contact_path_strategy_v2",
-      "chromeOpen": {
-        "ok": false,
-        "engine": "codex-chrome-extension-cdp",
-        "port": 9224,
-        "targetUrl": "https://www.jaxgoods.com/help/contact-us",
-        "tabId": "11E683A99E8585C5EF2417BE53386E3E",
-        "title": "404 Not Found – JAXOutdoorGearFarmandRanch",
-        "status": "failed_open",
-        "error": "profile_unavailable_or_broken_link",
-        "evidence": "unavailable_profile_page: SKIP TO CONTENT\n\nJAX Store Locations\n\nSearch\nSearch\nLog in\nBag\n404\n\nPAGE NOT FOUND\n\nSorry, the page you are looking for does not exist.\n\nBACK TO HOME\nExplore JAX\nGift Cards\nLocatio"
-      },
-      "result": {
-        "ok": false,
-        "engine": "codex-chrome-extension-website-contact",
-        "browserEngine": "codex-chrome-extension-cdp",
-        "mode": "website_contact_unreachable_skip",
-        "targetUrl": "https://www.jaxgoods.com/help/contact-us",
-        "chromeOpen": {
-          "ok": false,
-          "engine": "codex-chrome-extension-cdp",
-          "port": 9224,
-          "targetUrl": "https://www.jaxgoods.com/help/contact-us",
-          "tabId": "11E683A99E8585C5EF2417BE53386E3E",
-          "title": "404 Not Found – JAXOutdoorGearFarmandRanch",
-          "status": "failed_open",
-          "error": "profile_unavailable_or_broken_link",
-          "evidence": "unavailable_profile_page: SKIP TO CONTENT\n\nJAX Store Locations\n\nSearch\nSearch\nLog in\nBag\n404\n\nPAGE NOT FOUND\n\nSorry, the page you are looking for does not exist.\n\nBACK TO HOME\nExplore JAX\nGift Cards\nLocatio"
-        },
-        "sendStatus": "website_contact_unreachable_skip",
-        "subject": "FLEXTAIL retail partnership | 2026 assortment",
-        "draft": "Dear Jax Outdoor Gear Team,\n\nI’m Leo from FLEXTAIL. Your focus on verified outdoor, camping and travel retail social refill channel looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
-        "evidence": "unavailable_profile_page: SKIP TO CONTENT\n\nJAX Store Locations\n\nSearch\nSearch\nLog in\nBag\n404\n\nPAGE NOT FOUND\n\nSorry, the page you are looking for does not exist.\n\nBACK TO HOME\nExplore JAX\nGift Cards\nLocatio;website_contact_all_targets_failed:6;contact_path_strategy_v2",
-        "output": "{\"verdict\":\"website_contact_unreachable_skip\",\"evidence\":\"unavailable_profile_page: SKIP TO CONTENT\\n\\nJAX Store Locations\\n\\nSearch\\nSearch\\nLog in\\nBag\\n404\\n\\nPAGE NOT FOUND\\n\\nSorry, the page you are looking for does not exist.\\n\\nBACK TO HOME\\nExplore JAX\\nGift Cards\\nLocatio;website_contact_all_targets_failed:6;contact_path_strategy_v2\",\"subject\":\"FLEXTAIL retail partnership | 2026 assortment\",\"draft\":\"Dear Jax Outdoor Gear Team,\\n\\nI’m Leo from FLEXTAIL. Your focus on verified outdoor, camping and travel retail social refill channel looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\\n\\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\\n\\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\\n\\nProduct overview: https://www.flextail.com/\\n\\nBest regards,\\nLeo Liu\\nSales & Operations Director\\nLeo@flextailgear.com\",\"sendStatus\":\"website_contact_unreachable_skip\",\"attempts\":[{\"targetUrl\":\"https://www.jaxgoods.com/\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;contact_entry_clicked:SKIP TO CONTENT\"},{\"targetUrl\":\"https://www.jaxgoods.com/pages/contact-us\",\"sendStatus\":\"failed_open\",\"evidence\":\"unavailable_profile_page: SKIP TO CONTENT\\n\\nJAX Store Locations\\n\\nSearch\\nSearch\\nLog in\\nBag\\n404\\n\\nPAGE NOT FOUND\\n\\nSorry, the page you are looking for does not exist.\\n\\nBACK TO HOME\\nExplore JAX\\nGift Cards\\nLocatio\"},{\"targetUrl\":\"https://www.jaxgoods.com/pages/contact\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;contact_entry_clicked:SKIP TO CONTENT\"},{\"targetUrl\":\"https://www.jaxgoods.com/contact-us\",\"sendStatus\":\"failed_open\",\"evidence\":\"website_page_unavailable_404: Something went wrong.\\n\\nWhat happened?\\n404 Not Found\\nWhat can I do?\\nReturn to the previous page.\"},{\"targetUrl\":\"https://www.jaxgoods.com/contact\",\"sendStatus\":\"failed_open\",\"evidence\":\"website_page_unavailable_404: Something went wrong.\\n\\nWhat happened?\\n404 Not Found\\nWhat can I do?\\nReturn to the previous page.\"},{\"targetUrl\":\"https://www.jaxgoods.com/help/contact-us\",\"sendStatus\":\"failed_open\",\"evidence\":\"unavailable_profile_page: SKIP TO CONTENT\\n\\nJAX Store Locations\\n\\nSearch\\nSearch\\nLog in\\nBag\\n404\\n\\nPAGE NOT FOUND\\n\\nSorry, the page you are looking for does not exist.\\n\\nBACK TO HOME\\nExplore JAX\\nGift Cards\\nLocatio\"}],\"nextAction\":\"Official website contact was unreachable or not machine-verifiable. Skip this website route now, note it clearly, and continue with LinkedIn, Facebook, Instagram, or another verified official channel.\",\"fallbackFrom\":\"https://www.facebook.com/jaxoutdoorgear\",\"fallbackPlatform\":\"instagram\",\"fallbackReason\":\"facebook_profile_no_message_button\"}",
-        "fallbackFrom": "https://www.facebook.com/jaxoutdoorgear",
-        "fallbackPlatform": "instagram",
-        "decision": {
-          "verdict": "develop",
-          "fitScore": 84,
-          "reason": "local_codex_extension_template",
-          "draft": "Hi Jax Outdoor Gear team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a retail/category buyer, the strongest fit is assortment fit, new SKU pipeline, price-tier coverage, and proven consumer demand; your verified outdoor, camping and travel retail social refill channel focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the category buyer or vendor-review owner for a short intro video meeting?"
-        },
-        "executionLayer": "Codex Chrome Extension only",
-        "glmModel": "not_used",
-        "followup": false
-      }
-    },
-    {
-      "id": "google-customer-tentworld-australia-facebook",
-      "company": "Tentworld Australia",
-      "action": "develop",
-      "platform": "facebook",
-      "targetUrl": "https://www.facebook.com/Tentworld",
-      "ok": false,
-      "sendStatus": "failed_open",
-      "evidence": "instagram_unavailable_profile_page: 1\n很抱歉，无法访问此页面\n你点击的链接可能已损坏，或页面已被移除。返回 instagram。\nmeta\n关于\n博客\n工作\n帮助\napi\n隐私设置\n条款\n地点\n热门\ninstagram lite\nmeta ai\nthreads\n联系人上传和非用户\nmeta verified\n中文(简体)\nafrikaans\nالعربية\nčeština\ndansk\ndeutsch\nελληνικά\nenglish\nenglish (uk)\nespañol (españa)\nespañol\nفارسی\nsuomi\nfrançais\nעברית\nbahasa indonesia\nitaliano\n日本語\n한국어\nbahasa melayu\nnorsk\nnederlands\npolski\nportuguês (brasil)\nportuguês (portugal)\nрусский\nsvenska\nภาษาไทย\nfilipino\ntürkçe\n中文(简体)\n中文(台灣)\nবাংলা\nગુજરાતી\nहिन्दी\nhrvatski\nmagyar\nಕನ್ನಡ\nമലയാളം\nमराठी\nनेपाली\nਪੰਜਾਬੀ\nසිංහල\nslovenčina\nதமிழ்\nతెలుగు\nاردو\ntiếng việt\n中文(香港)\nбългарски\nfrançais (canada)\nromână\nсрпски\nук",
-      "chromeOpen": {
-        "ok": true,
-        "engine": "codex-chrome-extension-cdp",
-        "port": 9224,
-        "targetUrl": "https://www.instagram.com/tentworldaustralia/",
-        "tabId": "D302920948890683B0BD9E0E093E6EDD",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/D302920948890683B0BD9E0E093E6EDD",
-        "title": "Instagram"
-      },
-      "result": {
-        "ok": false,
-        "engine": "codex-chrome-extension-cdp",
-        "browserEngine": "codex-chrome-extension-cdp",
-        "mode": "codex_chrome_extension_only",
-        "targetUrl": "https://www.instagram.com/tentworldaustralia/",
-        "chromeOpen": {
-          "ok": true,
-          "engine": "codex-chrome-extension-cdp",
-          "port": 9224,
-          "targetUrl": "https://www.instagram.com/tentworldaustralia/",
-          "tabId": "D302920948890683B0BD9E0E093E6EDD",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/D302920948890683B0BD9E0E093E6EDD",
-          "title": "Instagram"
-        },
-        "sendStatus": "failed_open",
-        "output": "{\"verdict\":\"major_bug_review_needed\",\"evidence\":\"instagram_unavailable_profile_page: 1\\n很抱歉，无法访问此页面\\n你点击的链接可能已损坏，或页面已被移除。返回 instagram。\\nmeta\\n关于\\n博客\\n工作\\n帮助\\napi\\n隐私设置\\n条款\\n地点\\n热门\\ninstagram lite\\nmeta ai\\nthreads\\n联系人上传和非用户\\nmeta verified\\n中文(简体)\\nafrikaans\\nالعربية\\nčeština\\ndansk\\ndeutsch\\nελληνικά\\nenglish\\nenglish (uk)\\nespañol (españa)\\nespañol\\nفارسی\\nsuomi\\nfrançais\\nעברית\\nbahasa indonesia\\nitaliano\\n日本語\\n한국어\\nbahasa melayu\\nnorsk\\nnederlands\\npolski\\nportuguês (brasil)\\nportuguês (portugal)\\nрусский\\nsvenska\\nภาษาไทย\\nfilipino\\ntürkçe\\n中文(简体)\\n中文(台灣)\\nবাংলা\\nગુજરાતી\\nहिन्दी\\nhrvatski\\nmagyar\\nಕನ್ನಡ\\nമലയാളം\\nमराठी\\nनेपाली\\nਪੰਜਾਬੀ\\nසිංහල\\nslovenčina\\nதமிழ்\\nతెలుగు\\nاردو\\ntiếng việt\\n中文(香港)\\nбългарски\\nfrançais (canada)\\nromână\\nсрпски\\nук\",\"nextAction\":\"Do not retry this URL; switch to a verified alternate channel or official website contact.\",\"draft\":\"Hi Tentworld Australia team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a retail/category buyer, the strongest fit is assortment fit, new SKU pipeline, price-tier coverage, and proven consumer demand; your verified outdoor, camping and travel retail social refill channel focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the category buyer or vendor-review owner for a short intro video meeting?\",\"sendStatus\":\"failed_open\",\"fallbackFrom\":\"https://www.facebook.com/Tentworld\",\"fallbackPlatform\":\"instagram\",\"fallbackReason\":\"facebook_profile_no_message_button\"}",
-        "decision": {
-          "verdict": "develop",
-          "fitScore": 84,
-          "reason": "local_codex_extension_template",
-          "draft": "Hi Tentworld Australia team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a retail/category buyer, the strongest fit is assortment fit, new SKU pipeline, price-tier coverage, and proven consumer demand; your verified outdoor, camping and travel retail social refill channel focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the category buyer or vendor-review owner for a short intro video meeting?"
-        },
-        "executionLayer": "Codex Chrome Extension only",
-        "glmModel": "not_used",
-        "followup": false,
-        "fallbackFrom": "https://www.facebook.com/Tentworld",
-        "fallbackPlatform": "instagram"
-      }
-    },
-    {
-      "id": "google-customer-tentworld-nz-facebook",
-      "company": "Tentworld NZ",
-      "action": "develop",
-      "platform": "facebook",
-      "targetUrl": "https://www.facebook.com/tentworldnz",
-      "ok": false,
-      "sendStatus": "failed_open",
-      "evidence": "unavailable_profile_page: 很抱歉，无法访问此页面\n你点击的链接可能已损坏，或页面已被移除。返回 Instagram。\nMeta\n关于\n博客\n工作\n帮助\nAPI\n隐私设置\n条款\n地点\n热门\nInstagram Lite\nMeta AI\nThreads\n联系人上传和非用户\nMeta Verified\n中文(简体)\nAfrikaans\nالعربية\nČeština\nDansk\nDeuts",
-      "chromeOpen": null,
-      "result": {
-        "ok": false,
-        "engine": "codex-chrome-extension-cdp",
-        "port": 9224,
-        "targetUrl": "https://www.instagram.com/tentworldnz/",
-        "tabId": "9601050F40390ADD23E478A3BF809ABD",
-        "title": "Instagram",
-        "status": "failed_open",
-        "error": "profile_unavailable_or_broken_link",
-        "evidence": "unavailable_profile_page: 很抱歉，无法访问此页面\n你点击的链接可能已损坏，或页面已被移除。返回 Instagram。\nMeta\n关于\n博客\n工作\n帮助\nAPI\n隐私设置\n条款\n地点\n热门\nInstagram Lite\nMeta AI\nThreads\n联系人上传和非用户\nMeta Verified\n中文(简体)\nAfrikaans\nالعربية\nČeština\nDansk\nDeuts",
-        "sendStatus": "failed_open",
-        "decision": {
-          "verdict": "develop",
-          "fitScore": 84,
-          "reason": "local_codex_extension_template",
-          "draft": "Hi Tentworld NZ team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a retail/category buyer, the strongest fit is assortment fit, new SKU pipeline, price-tier coverage, and proven consumer demand; your verified outdoor, camping and travel retail social refill channel focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the category buyer or vendor-review owner for a short intro video meeting?"
-        },
-        "executionLayer": "Codex Chrome Extension only",
-        "glmModel": "not_used",
-        "followup": false,
-        "fallbackFrom": "https://www.facebook.com/tentworldnz",
-        "fallbackPlatform": "instagram",
-        "output": "{\"fallbackFrom\":\"https://www.facebook.com/tentworldnz\",\"fallbackPlatform\":\"instagram\",\"fallbackReason\":\"facebook_profile_no_message_button\"}"
-      }
-    },
-    {
       "id": "google-customer-bergfreunde-instagram",
       "company": "Bergfreunde",
       "action": "develop",
@@ -1140,8 +188,8 @@
         "engine": "codex-chrome-extension-cdp",
         "port": 9224,
         "targetUrl": "https://www.instagram.com/bergfreunde/",
-        "tabId": "275627C4BAADE50FF521CBB01AC0F2F5",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/275627C4BAADE50FF521CBB01AC0F2F5",
+        "tabId": "72551E0CBABF2D1993327884A45A4E33",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/72551E0CBABF2D1993327884A45A4E33",
         "title": "Bergfreunde (@bergfreunde) · Instagram 照片和视频"
       },
       "result": {
@@ -1155,8 +203,8 @@
           "engine": "codex-chrome-extension-cdp",
           "port": 9224,
           "targetUrl": "https://www.instagram.com/bergfreunde/",
-          "tabId": "275627C4BAADE50FF521CBB01AC0F2F5",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/275627C4BAADE50FF521CBB01AC0F2F5",
+          "tabId": "72551E0CBABF2D1993327884A45A4E33",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/72551E0CBABF2D1993327884A45A4E33",
           "title": "Bergfreunde (@bergfreunde) · Instagram 照片和视频"
         },
         "sendStatus": "failed_open",
@@ -1173,50 +221,54 @@
       }
     },
     {
-      "id": "google-customer-campz-instagram",
-      "company": "Campz",
+      "id": "google-customer-jax-outdoor-gear-instagram",
+      "company": "Jax Outdoor Gear",
       "action": "develop",
       "platform": "instagram",
-      "targetUrl": "https://www.instagram.com/campz.de/",
+      "targetUrl": "https://www.instagram.com/jaxoutdoor/",
       "ok": false,
       "sendStatus": "website_contact_unreachable_skip",
-      "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:6;contact_path_strategy_v2",
+      "evidence": "unavailable_profile_page: SKIP TO CONTENT\n\nJAX Store Locations\n\nSearch\nSearch\nLog in\nBag\n404\n\nPAGE NOT FOUND\n\nSorry, the page you are looking for does not exist.\n\nBACK TO HOME\nExplore JAX\nGift Cards\nLocatio;website_contact_all_targets_failed:6;contact_path_strategy_v2",
       "chromeOpen": {
-        "ok": true,
+        "ok": false,
         "engine": "codex-chrome-extension-cdp",
         "port": 9224,
-        "targetUrl": "https://www.campz.de/help/contact-us",
-        "tabId": "2591ADEB861A2318B5D793CC7BC0B763",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/2591ADEB861A2318B5D793CC7BC0B763",
-        "title": "410 Gone"
+        "targetUrl": "https://www.jaxgoods.com/help/contact-us",
+        "tabId": "47CAF97AFE031AE2A96B68667FDB5017",
+        "title": "404 Not Found – JAXOutdoorGearFarmandRanch",
+        "status": "failed_open",
+        "error": "profile_unavailable_or_broken_link",
+        "evidence": "unavailable_profile_page: SKIP TO CONTENT\n\nJAX Store Locations\n\nSearch\nSearch\nLog in\nBag\n404\n\nPAGE NOT FOUND\n\nSorry, the page you are looking for does not exist.\n\nBACK TO HOME\nExplore JAX\nGift Cards\nLocatio"
       },
       "result": {
         "ok": false,
         "engine": "codex-chrome-extension-website-contact",
         "browserEngine": "codex-chrome-extension-cdp",
         "mode": "website_contact_unreachable_skip",
-        "targetUrl": "https://www.campz.de/help/contact-us",
+        "targetUrl": "https://www.jaxgoods.com/help/contact-us",
         "chromeOpen": {
-          "ok": true,
+          "ok": false,
           "engine": "codex-chrome-extension-cdp",
           "port": 9224,
-          "targetUrl": "https://www.campz.de/help/contact-us",
-          "tabId": "2591ADEB861A2318B5D793CC7BC0B763",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/2591ADEB861A2318B5D793CC7BC0B763",
-          "title": "410 Gone"
+          "targetUrl": "https://www.jaxgoods.com/help/contact-us",
+          "tabId": "47CAF97AFE031AE2A96B68667FDB5017",
+          "title": "404 Not Found – JAXOutdoorGearFarmandRanch",
+          "status": "failed_open",
+          "error": "profile_unavailable_or_broken_link",
+          "evidence": "unavailable_profile_page: SKIP TO CONTENT\n\nJAX Store Locations\n\nSearch\nSearch\nLog in\nBag\n404\n\nPAGE NOT FOUND\n\nSorry, the page you are looking for does not exist.\n\nBACK TO HOME\nExplore JAX\nGift Cards\nLocatio"
         },
         "sendStatus": "website_contact_unreachable_skip",
         "subject": "FLEXTAIL retail partnership | 2026 assortment",
-        "draft": "Dear Campz Team,\n\nI’m Leo from FLEXTAIL. Your focus on verified outdoor, camping and travel retail social refill channel looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
-        "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:6;contact_path_strategy_v2",
-        "output": "{\"verdict\":\"website_contact_unreachable_skip\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:6;contact_path_strategy_v2\",\"nextAction\":\"Contact page opened, but no verified form, mailto link, vendor/business route, or clickable Contact Us path was detected. Continue manually before marking the lead ready.\",\"subject\":\"FLEXTAIL retail partnership | 2026 assortment\",\"draft\":\"Dear Campz Team,\\n\\nI’m Leo from FLEXTAIL. Your focus on verified outdoor, camping and travel retail social refill channel looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\\n\\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\\n\\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\\n\\nProduct overview: https://www.flextail.com/\\n\\nBest regards,\\nLeo Liu\\nSales & Operations Director\\nLeo@flextailgear.com\",\"sendStatus\":\"website_contact_unreachable_skip\",\"attempts\":[{\"targetUrl\":\"https://www.campz.de/\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control\"},{\"targetUrl\":\"https://www.campz.de/pages/contact-us\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control\"},{\"targetUrl\":\"https://www.campz.de/pages/contact\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control\"},{\"targetUrl\":\"https://www.campz.de/contact-us\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control\"},{\"targetUrl\":\"https://www.campz.de/contact\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control\"},{\"targetUrl\":\"https://www.campz.de/help/contact-us\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control\"}],\"fallbackFrom\":\"https://www.instagram.com/campz.de/\",\"fallbackPlatform\":\"email\",\"fallbackReason\":\"instagram_message_button_clicked_composer_not_found\"}",
-        "fallbackFrom": "https://www.instagram.com/campz.de/",
+        "draft": "Dear Jax Outdoor Gear Team,\n\nI’m Leo from FLEXTAIL. Your focus on verified outdoor, camping and travel retail social refill channel looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
+        "evidence": "unavailable_profile_page: SKIP TO CONTENT\n\nJAX Store Locations\n\nSearch\nSearch\nLog in\nBag\n404\n\nPAGE NOT FOUND\n\nSorry, the page you are looking for does not exist.\n\nBACK TO HOME\nExplore JAX\nGift Cards\nLocatio;website_contact_all_targets_failed:6;contact_path_strategy_v2",
+        "output": "{\"verdict\":\"website_contact_unreachable_skip\",\"evidence\":\"unavailable_profile_page: SKIP TO CONTENT\\n\\nJAX Store Locations\\n\\nSearch\\nSearch\\nLog in\\nBag\\n404\\n\\nPAGE NOT FOUND\\n\\nSorry, the page you are looking for does not exist.\\n\\nBACK TO HOME\\nExplore JAX\\nGift Cards\\nLocatio;website_contact_all_targets_failed:6;contact_path_strategy_v2\",\"subject\":\"FLEXTAIL retail partnership | 2026 assortment\",\"draft\":\"Dear Jax Outdoor Gear Team,\\n\\nI’m Leo from FLEXTAIL. Your focus on verified outdoor, camping and travel retail social refill channel looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\\n\\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\\n\\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\\n\\nProduct overview: https://www.flextail.com/\\n\\nBest regards,\\nLeo Liu\\nSales & Operations Director\\nLeo@flextailgear.com\",\"sendStatus\":\"website_contact_unreachable_skip\",\"attempts\":[{\"targetUrl\":\"https://www.jaxgoods.com/\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;contact_entry_clicked:SKIP TO CONTENT\"},{\"targetUrl\":\"https://www.jaxgoods.com/pages/contact-us\",\"sendStatus\":\"failed_open\",\"evidence\":\"unavailable_profile_page: SKIP TO CONTENT\\n\\nJAX Store Locations\\n\\nSearch\\nSearch\\nLog in\\nBag\\n404\\n\\nPAGE NOT FOUND\\n\\nSorry, the page you are looking for does not exist.\\n\\nBACK TO HOME\\nExplore JAX\\nGift Cards\\nLocatio\"},{\"targetUrl\":\"https://www.jaxgoods.com/pages/contact\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;contact_entry_clicked:SKIP TO CONTENT\"},{\"targetUrl\":\"https://www.jaxgoods.com/contact-us\",\"sendStatus\":\"failed_open\",\"evidence\":\"website_page_unavailable_404: Something went wrong.\\n\\nWhat happened?\\n404 Not Found\\nWhat can I do?\\nReturn to the previous page.\"},{\"targetUrl\":\"https://www.jaxgoods.com/contact\",\"sendStatus\":\"failed_open\",\"evidence\":\"website_page_unavailable_404: Something went wrong.\\n\\nWhat happened?\\n404 Not Found\\nWhat can I do?\\nReturn to the previous page.\"},{\"targetUrl\":\"https://www.jaxgoods.com/help/contact-us\",\"sendStatus\":\"failed_open\",\"evidence\":\"unavailable_profile_page: SKIP TO CONTENT\\n\\nJAX Store Locations\\n\\nSearch\\nSearch\\nLog in\\nBag\\n404\\n\\nPAGE NOT FOUND\\n\\nSorry, the page you are looking for does not exist.\\n\\nBACK TO HOME\\nExplore JAX\\nGift Cards\\nLocatio\"}],\"nextAction\":\"Official website contact was unreachable or not machine-verifiable. Skip this website route now, note it clearly, and continue with LinkedIn, Facebook, Instagram, or another verified official channel.\",\"fallbackFrom\":\"https://www.instagram.com/jaxoutdoor/\",\"fallbackPlatform\":\"email\",\"fallbackReason\":\"instagram_message_button_clicked_composer_not_found\"}",
+        "fallbackFrom": "https://www.instagram.com/jaxoutdoor/",
         "fallbackPlatform": "email",
         "decision": {
           "verdict": "develop",
           "fitScore": 84,
           "reason": "local_codex_extension_template",
-          "draft": "Hi Campz team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a retail/category buyer, the strongest fit is assortment fit, new SKU pipeline, price-tier coverage, and proven consumer demand; your verified outdoor, camping and travel retail social refill channel focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the category buyer or vendor-review owner for a short intro video meeting?"
+          "draft": "Hi Jax Outdoor Gear team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a retail/category buyer, the strongest fit is assortment fit, new SKU pipeline, price-tier coverage, and proven consumer demand; your verified outdoor, camping and travel retail social refill channel focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the category buyer or vendor-review owner for a short intro video meeting?"
         },
         "executionLayer": "Codex Chrome Extension only",
         "glmModel": "not_used",
@@ -1224,50 +276,54 @@
       }
     },
     {
-      "id": "google-customer-doorout-instagram",
-      "company": "Doorout",
+      "id": "google-customer-sportler-instagram",
+      "company": "Sportler",
       "action": "develop",
       "platform": "instagram",
-      "targetUrl": "https://www.instagram.com/doorout_com/",
+      "targetUrl": "https://www.instagram.com/sportler_com/",
       "ok": false,
       "sendStatus": "website_contact_unreachable_skip",
-      "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:6;contact_path_strategy_v2",
+      "evidence": "website_page_unavailable_403: 访问 www.sportler.com 的请求遭到拒绝\n\n您未获授权，无法查看此网页。\n\nHTTP ERROR 403\n重新加载;website_contact_all_targets_failed:6;contact_path_strategy_v2",
       "chromeOpen": {
-        "ok": true,
+        "ok": false,
         "engine": "codex-chrome-extension-cdp",
         "port": 9224,
-        "targetUrl": "https://www.doorout.com/help/contact-us",
-        "tabId": "338E8207810B6BAE923D225FD40DCD50",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/338E8207810B6BAE923D225FD40DCD50",
-        "title": ""
+        "targetUrl": "https://www.sportler.com/help/contact-us",
+        "tabId": "A2CB0A824C670AB505C38BFCABDA1883",
+        "title": "www.sportler.com",
+        "status": "failed_open",
+        "error": "profile_unavailable_or_broken_link",
+        "evidence": "website_page_unavailable_403: 访问 www.sportler.com 的请求遭到拒绝\n\n您未获授权，无法查看此网页。\n\nHTTP ERROR 403\n重新加载"
       },
       "result": {
         "ok": false,
         "engine": "codex-chrome-extension-website-contact",
         "browserEngine": "codex-chrome-extension-cdp",
         "mode": "website_contact_unreachable_skip",
-        "targetUrl": "https://www.doorout.com/help/contact-us",
+        "targetUrl": "https://www.sportler.com/help/contact-us",
         "chromeOpen": {
-          "ok": true,
+          "ok": false,
           "engine": "codex-chrome-extension-cdp",
           "port": 9224,
-          "targetUrl": "https://www.doorout.com/help/contact-us",
-          "tabId": "338E8207810B6BAE923D225FD40DCD50",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/338E8207810B6BAE923D225FD40DCD50",
-          "title": ""
+          "targetUrl": "https://www.sportler.com/help/contact-us",
+          "tabId": "A2CB0A824C670AB505C38BFCABDA1883",
+          "title": "www.sportler.com",
+          "status": "failed_open",
+          "error": "profile_unavailable_or_broken_link",
+          "evidence": "website_page_unavailable_403: 访问 www.sportler.com 的请求遭到拒绝\n\n您未获授权，无法查看此网页。\n\nHTTP ERROR 403\n重新加载"
         },
         "sendStatus": "website_contact_unreachable_skip",
         "subject": "FLEXTAIL retail partnership | 2026 assortment",
-        "draft": "Dear Doorout Team,\n\nI’m Leo from FLEXTAIL. Your focus on verified outdoor, camping and travel retail social refill channel looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
-        "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:6;contact_path_strategy_v2",
-        "output": "{\"verdict\":\"website_contact_unreachable_skip\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:6;contact_path_strategy_v2\",\"nextAction\":\"Contact page opened, but no verified form, mailto link, vendor/business route, or clickable Contact Us path was detected. Continue manually before marking the lead ready.\",\"subject\":\"FLEXTAIL retail partnership | 2026 assortment\",\"draft\":\"Dear Doorout Team,\\n\\nI’m Leo from FLEXTAIL. Your focus on verified outdoor, camping and travel retail social refill channel looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\\n\\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\\n\\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\\n\\nProduct overview: https://www.flextail.com/\\n\\nBest regards,\\nLeo Liu\\nSales & Operations Director\\nLeo@flextailgear.com\",\"sendStatus\":\"website_contact_unreachable_skip\",\"attempts\":[{\"targetUrl\":\"https://www.doorout.com/\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control\"},{\"targetUrl\":\"https://www.doorout.com/pages/contact-us\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control\"},{\"targetUrl\":\"https://www.doorout.com/pages/contact\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control\"},{\"targetUrl\":\"https://www.doorout.com/contact-us\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control\"},{\"targetUrl\":\"https://www.doorout.com/contact\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control\"},{\"targetUrl\":\"https://www.doorout.com/help/contact-us\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control\"}],\"fallbackFrom\":\"https://www.instagram.com/doorout_com/\",\"fallbackPlatform\":\"email\",\"fallbackReason\":\"instagram_message_button_clicked_composer_not_found\"}",
-        "fallbackFrom": "https://www.instagram.com/doorout_com/",
+        "draft": "Dear Sportler Team,\n\nI’m Leo from FLEXTAIL. Your focus on verified outdoor, camping and travel retail social refill channel looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
+        "evidence": "website_page_unavailable_403: 访问 www.sportler.com 的请求遭到拒绝\n\n您未获授权，无法查看此网页。\n\nHTTP ERROR 403\n重新加载;website_contact_all_targets_failed:6;contact_path_strategy_v2",
+        "output": "{\"verdict\":\"website_contact_unreachable_skip\",\"evidence\":\"website_page_unavailable_403: 访问 www.sportler.com 的请求遭到拒绝\\n\\n您未获授权，无法查看此网页。\\n\\nHTTP ERROR 403\\n重新加载;website_contact_all_targets_failed:6;contact_path_strategy_v2\",\"subject\":\"FLEXTAIL retail partnership | 2026 assortment\",\"draft\":\"Dear Sportler Team,\\n\\nI’m Leo from FLEXTAIL. Your focus on verified outdoor, camping and travel retail social refill channel looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\\n\\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\\n\\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\\n\\nProduct overview: https://www.flextail.com/\\n\\nBest regards,\\nLeo Liu\\nSales & Operations Director\\nLeo@flextailgear.com\",\"sendStatus\":\"website_contact_unreachable_skip\",\"attempts\":[{\"targetUrl\":\"https://www.sportler.com/\",\"sendStatus\":\"failed_open\",\"evidence\":\"website_page_unavailable_403: 访问 www.sportler.com 的请求遭到拒绝\\n\\n您未获授权，无法查看此网页。\\n\\nHTTP ERROR 403\\n重新加载\"},{\"targetUrl\":\"https://www.sportler.com/pages/contact-us\",\"sendStatus\":\"failed_open\",\"evidence\":\"website_page_unavailable_403: 访问 www.sportler.com 的请求遭到拒绝\\n\\n您未获授权，无法查看此网页。\\n\\nHTTP ERROR 403\\n重新加载\"},{\"targetUrl\":\"https://www.sportler.com/pages/contact\",\"sendStatus\":\"failed_open\",\"evidence\":\"website_page_unavailable_403: 访问 www.sportler.com 的请求遭到拒绝\\n\\n您未获授权，无法查看此网页。\\n\\nHTTP ERROR 403\\n重新加载\"},{\"targetUrl\":\"https://www.sportler.com/contact-us\",\"sendStatus\":\"failed_open\",\"evidence\":\"website_page_unavailable_403: 访问 www.sportler.com 的请求遭到拒绝\\n\\n您未获授权，无法查看此网页。\\n\\nHTTP ERROR 403\\n重新加载\"},{\"targetUrl\":\"https://www.sportler.com/contact\",\"sendStatus\":\"failed_open\",\"evidence\":\"website_page_unavailable_403: 访问 www.sportler.com 的请求遭到拒绝\\n\\n您未获授权，无法查看此网页。\\n\\nHTTP ERROR 403\\n重新加载\"},{\"targetUrl\":\"https://www.sportler.com/help/contact-us\",\"sendStatus\":\"failed_open\",\"evidence\":\"website_page_unavailable_403: 访问 www.sportler.com 的请求遭到拒绝\\n\\n您未获授权，无法查看此网页。\\n\\nHTTP ERROR 403\\n重新加载\"}],\"nextAction\":\"Official website contact was unreachable or not machine-verifiable. Skip this website route now, note it clearly, and continue with LinkedIn, Facebook, Instagram, or another verified official channel.\",\"fallbackFrom\":\"https://www.instagram.com/sportler_com/\",\"fallbackPlatform\":\"email\",\"fallbackReason\":\"instagram_engagement_completed_message_unavailable;instagram_message_button_clicked_composer_not_found;follow_already_active;instagram_post_opened;post_liked;comment_submitted\"}",
+        "fallbackFrom": "https://www.instagram.com/sportler_com/",
         "fallbackPlatform": "email",
         "decision": {
           "verdict": "develop",
           "fitScore": 84,
           "reason": "local_codex_extension_template",
-          "draft": "Hi Doorout team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a retail/category buyer, the strongest fit is assortment fit, new SKU pipeline, price-tier coverage, and proven consumer demand; your verified outdoor, camping and travel retail social refill channel focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the category buyer or vendor-review owner for a short intro video meeting?"
+          "draft": "Hi Sportler team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a retail/category buyer, the strongest fit is assortment fit, new SKU pipeline, price-tier coverage, and proven consumer demand; your verified outdoor, camping and travel retail social refill channel focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the category buyer or vendor-review owner for a short intro video meeting?"
         },
         "executionLayer": "Codex Chrome Extension only",
         "glmModel": "not_used",
@@ -1283,32 +339,20 @@
       "reason": "homepage_only_contact_path_requires_verification"
     },
     {
-      "id": "google-customer-bivouac-outdoor-website-contact",
-      "company": "Bivouac Outdoor",
-      "action": "verify_target",
-      "reason": "homepage_only_contact_path_requires_verification"
-    },
-    {
       "id": "google-customer-wildfire-sports-website-contact",
       "company": "Wildfire Sports",
       "action": "verify_target",
       "reason": "homepage_only_contact_path_requires_verification"
     },
     {
-      "id": "google-customer-further-faster-website-contact",
-      "company": "Further Faster",
-      "action": "verify_target",
-      "reason": "homepage_only_contact_path_requires_verification"
+      "id": "google-customer-tentworld-australia-facebook",
+      "company": "Tentworld Australia",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_facebook"
     },
     {
       "id": "google-customer-tentworld-australia-instagram",
       "company": "Tentworld Australia",
-      "action": "develop",
-      "reason": "concrete_google_discovered_major_customer_instagram"
-    },
-    {
-      "id": "google-customer-tentworld-nz-instagram",
-      "company": "Tentworld NZ",
       "action": "develop",
       "reason": "concrete_google_discovered_major_customer_instagram"
     },
@@ -1511,6 +555,30 @@
       "reason": "homepage_only_contact_path_requires_verification"
     },
     {
+      "id": "google-customer-avidmax-outfitters-website-contact",
+      "company": "AvidMax Outfitters",
+      "action": "verify_target",
+      "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
+      "id": "google-customer-gear-west-website-contact",
+      "company": "Gear West",
+      "action": "verify_target",
+      "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
+      "id": "google-customer-bivouac-outdoor-website-contact",
+      "company": "Bivouac Outdoor",
+      "action": "verify_target",
+      "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
+      "id": "google-customer-further-faster-website-contact",
+      "company": "Further Faster",
+      "action": "verify_target",
+      "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
       "id": "google-customer-transa-website-contact",
       "company": "Transa",
       "action": "verify_target",
@@ -1565,6 +633,12 @@
       "reason": "official_website_contact_channel"
     },
     {
+      "id": "google-customer-above-and-beyond-facebook",
+      "company": "Above and Beyond",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_facebook"
+    },
+    {
       "id": "google-customer-campz-facebook",
       "company": "Campz",
       "action": "develop",
@@ -1573,6 +647,12 @@
     {
       "id": "google-customer-doorout-facebook",
       "company": "Doorout",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_facebook"
+    },
+    {
+      "id": "google-customer-facewest-facebook",
+      "company": "Facewest",
       "action": "develop",
       "reason": "concrete_google_discovered_major_customer_facebook"
     },
@@ -1595,6 +675,30 @@
       "reason": "concrete_google_discovered_major_customer_facebook"
     },
     {
+      "id": "google-customer-72hours-facebook",
+      "company": "72hours",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_facebook"
+    },
+    {
+      "id": "google-customer-atmosphere-facebook",
+      "company": "Atmosphere",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_facebook"
+    },
+    {
+      "id": "google-customer-eastern-mountain-sports-facebook",
+      "company": "Eastern Mountain Sports",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_facebook"
+    },
+    {
+      "id": "google-customer-jax-outdoor-gear-facebook",
+      "company": "Jax Outdoor Gear",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_facebook"
+    },
+    {
       "id": "google-customer-moosejaw-facebook",
       "company": "Moosejaw",
       "action": "develop",
@@ -1607,6 +711,12 @@
       "reason": "concrete_google_discovered_major_customer_facebook"
     },
     {
+      "id": "google-customer-tentworld-nz-facebook",
+      "company": "Tentworld NZ",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_facebook"
+    },
+    {
       "id": "google-customer-8a-pl-instagram",
       "company": "8a.pl",
       "action": "develop",
@@ -1615,6 +725,18 @@
     {
       "id": "google-customer-above-and-beyond-instagram",
       "company": "Above and Beyond",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_instagram"
+    },
+    {
+      "id": "google-customer-campz-instagram",
+      "company": "Campz",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_instagram"
+    },
+    {
+      "id": "google-customer-doorout-instagram",
+      "company": "Doorout",
       "action": "develop",
       "reason": "concrete_google_discovered_major_customer_instagram"
     },
@@ -1639,12 +761,6 @@
     {
       "id": "google-customer-sklep-podroznika-instagram",
       "company": "Sklep Podroznika",
-      "action": "develop",
-      "reason": "concrete_google_discovered_major_customer_instagram"
-    },
-    {
-      "id": "google-customer-sportler-instagram",
-      "company": "Sportler",
       "action": "develop",
       "reason": "concrete_google_discovered_major_customer_instagram"
     },
@@ -1679,14 +795,14 @@
       "reason": "concrete_google_discovered_major_customer_instagram"
     },
     {
-      "id": "google-customer-jax-outdoor-gear-instagram",
-      "company": "Jax Outdoor Gear",
+      "id": "google-customer-the-mountaineer-instagram",
+      "company": "The Mountaineer",
       "action": "develop",
       "reason": "concrete_google_discovered_major_customer_instagram"
     },
     {
-      "id": "google-customer-the-mountaineer-instagram",
-      "company": "The Mountaineer",
+      "id": "google-customer-tentworld-nz-instagram",
+      "company": "Tentworld NZ",
       "action": "develop",
       "reason": "concrete_google_discovered_major_customer_instagram"
     },
@@ -1985,6 +1101,18 @@
       "reason": "homepage_only_contact_path_requires_verification"
     },
     {
+      "id": "google-customer-avidmax-outfitters-website-contact",
+      "company": "AvidMax Outfitters",
+      "action": "email_priority",
+      "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
+      "id": "google-customer-gear-west-website-contact",
+      "company": "Gear West",
+      "action": "email_priority",
+      "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
       "id": "google-customer-tentworld-website-contact",
       "company": "Tentworld",
       "action": "email_priority",
@@ -2015,6 +1143,12 @@
       "reason": "homepage_only_contact_path_requires_verification"
     },
     {
+      "id": "google-customer-above-and-beyond-facebook",
+      "company": "Above and Beyond",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_facebook"
+    },
+    {
       "id": "google-customer-campz-facebook",
       "company": "Campz",
       "action": "develop",
@@ -2023,6 +1157,12 @@
     {
       "id": "google-customer-doorout-facebook",
       "company": "Doorout",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_facebook"
+    },
+    {
+      "id": "google-customer-facewest-facebook",
+      "company": "Facewest",
       "action": "develop",
       "reason": "concrete_google_discovered_major_customer_facebook"
     },
@@ -2045,6 +1185,30 @@
       "reason": "concrete_google_discovered_major_customer_facebook"
     },
     {
+      "id": "google-customer-72hours-facebook",
+      "company": "72hours",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_facebook"
+    },
+    {
+      "id": "google-customer-atmosphere-facebook",
+      "company": "Atmosphere",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_facebook"
+    },
+    {
+      "id": "google-customer-eastern-mountain-sports-facebook",
+      "company": "Eastern Mountain Sports",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_facebook"
+    },
+    {
+      "id": "google-customer-jax-outdoor-gear-facebook",
+      "company": "Jax Outdoor Gear",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_facebook"
+    },
+    {
       "id": "google-customer-moosejaw-facebook",
       "company": "Moosejaw",
       "action": "develop",
@@ -2057,6 +1221,18 @@
       "reason": "concrete_google_discovered_major_customer_facebook"
     },
     {
+      "id": "google-customer-tentworld-australia-facebook",
+      "company": "Tentworld Australia",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_facebook"
+    },
+    {
+      "id": "google-customer-tentworld-nz-facebook",
+      "company": "Tentworld NZ",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_facebook"
+    },
+    {
       "id": "google-customer-8a-pl-instagram",
       "company": "8a.pl",
       "action": "develop",
@@ -2065,6 +1241,18 @@
     {
       "id": "google-customer-above-and-beyond-instagram",
       "company": "Above and Beyond",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_instagram"
+    },
+    {
+      "id": "google-customer-campz-instagram",
+      "company": "Campz",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_instagram"
+    },
+    {
+      "id": "google-customer-doorout-instagram",
+      "company": "Doorout",
       "action": "develop",
       "reason": "concrete_google_discovered_major_customer_instagram"
     },
@@ -2089,12 +1277,6 @@
     {
       "id": "google-customer-sklep-podroznika-instagram",
       "company": "Sklep Podroznika",
-      "action": "develop",
-      "reason": "concrete_google_discovered_major_customer_instagram"
-    },
-    {
-      "id": "google-customer-sportler-instagram",
-      "company": "Sportler",
       "action": "develop",
       "reason": "concrete_google_discovered_major_customer_instagram"
     },
@@ -2125,12 +1307,6 @@
     {
       "id": "google-customer-atmosphere-instagram",
       "company": "Atmosphere",
-      "action": "develop",
-      "reason": "concrete_google_discovered_major_customer_instagram"
-    },
-    {
-      "id": "google-customer-jax-outdoor-gear-instagram",
-      "company": "Jax Outdoor Gear",
       "action": "develop",
       "reason": "concrete_google_discovered_major_customer_instagram"
     },
@@ -2322,7 +1498,7 @@
     {
       "reason": "homepage_only_contact_path_requires_verification",
       "status": "skipped",
-      "count": 76
+      "count": 80
     },
     {
       "reason": "concrete_google_discovered_major_customer_instagram",
@@ -2335,28 +1511,28 @@
       "count": 32
     },
     {
+      "reason": "concrete_google_discovered_major_customer_facebook",
+      "status": "skipped",
+      "count": 30
+    },
+    {
       "reason": "official_website_contact_channel",
       "status": "skipped",
       "count": 16
     },
     {
-      "reason": "concrete_google_discovered_major_customer_facebook",
-      "status": "skipped",
-      "count": 14
-    },
-    {
       "reason": "failed_open",
       "status": "failed_open",
-      "count": 3
+      "count": 1
     }
   ],
   "blockerCounts": {
-    "homepage_only_contact_path_requires_verification": 76,
+    "homepage_only_contact_path_requires_verification": 80,
     "concrete_google_discovered_major_customer_instagram": 32,
     "missing_verified_profile_url": 32,
+    "concrete_google_discovered_major_customer_facebook": 30,
     "official_website_contact_channel": 16,
-    "concrete_google_discovered_major_customer_facebook": 14,
-    "failed_open": 3
+    "failed_open": 1
   },
   "queueGoalStatus": {
     "target": 100,
@@ -2367,7 +1543,7 @@
     "reached": false,
     "action": "Add more verified high-ICP sources or unblock existing website/social leads."
   },
-  "userVisibleStatus": "Customer development was not performed. Blockers: homepage_only_contact_path_requires_verification (76); concrete_google_discovered_major_customer_instagram (32); missing_verified_profile_url (32).",
+  "userVisibleStatus": "Customer development was not performed. Blockers: homepage_only_contact_path_requires_verification (80); concrete_google_discovered_major_customer_instagram (32); missing_verified_profile_url (32).",
   "recoveryHint": "Refill the high-ICP pool with 2 verified leads or unblock existing website/social leads before the next run. Add a verified Facebook or Instagram profile URL before retrying social outreach. Confirm the official social profile and safe message entry before rerunning Google-discovered social outreach. Verify the official profile opens and exposes a safe message composer, or switch to another verified channel.",
   "recoveryActions": [
     {
@@ -2404,12 +1580,12 @@
     "stderr": "",
     "error": "",
     "visibility": {
-      "updatedAt": "2026-07-21T04:21:07.570Z",
+      "updatedAt": "2026-07-21T05:05:50.685Z",
       "source": "main-refreshDailyAutomationArtifacts",
       "runDate": "2026-07-21",
-      "artifactGeneratedAt": "2026-07-21T04:21:06.358Z",
-      "executionGeneratedAt": "2026-07-21T03:43:28.448Z",
-      "githubSyncUpdatedAt": "2026-07-21T03:43:56.617Z",
+      "artifactGeneratedAt": "2026-07-21T05:05:49.125Z",
+      "executionGeneratedAt": "2026-07-21T04:21:08.394Z",
+      "githubSyncUpdatedAt": "2026-07-21T04:21:55.578Z",
       "counts": {
         "dailyQueue": 98,
         "googleDiscovered": 74,
@@ -2471,5 +1647,5 @@
       "ALIBABA_SMTP_SECURITY_PASSWORD"
     ]
   },
-  "completedAt": "2026-07-21T04:21:08.394Z"
+  "completedAt": "2026-07-21T05:05:51.952Z"
 }
