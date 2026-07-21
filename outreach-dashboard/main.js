@@ -287,7 +287,7 @@ function blockingAutomationResultFor(item) {
   const itemPlatform = automationPlatformFor(item);
   const blocking = new Set(['sent_confirmed', 'failed_open', 'send_unconfirmed', 'account_followed', 'post_liked', 'website_contact_ready', 'website_contact_unreachable_skip']);
   const companyBlocking = new Set(['sent_confirmed', 'send_unconfirmed', 'account_followed', 'post_liked']);
-  if (isWebsiteContactQueueItem(item)) {
+  if (isWebsiteContactQueueItem(item) && !verifiedBusinessEmailTarget(item).ok) {
     const cutoff = Date.now() - 30 * 24 * 60 * 60 * 1000;
     const failedDays = new Set(results
       .filter(result => result && result.status === 'website_contact_unreachable_skip')
@@ -306,6 +306,11 @@ function blockingAutomationResultFor(item) {
   }
   return results
     .filter((result) => result && (blocking.has(result.status) || historicalAutomationResultBlocksCompany(result)))
+    // A page/form failure is channel-specific. If discovery later supplies a
+    // verified official business email, that stronger alternate channel must
+    // remain executable on the same day.
+    .filter((result) => !(verifiedBusinessEmailTarget(item).ok
+      && ['website_contact_ready', 'website_contact_unreachable_skip'].includes(result.status)))
     // A prepared/unreachable website path is a bounded attempt, not a
     // permanent suppression. Keep the same Shanghai-day lock to prevent
     // duplicate submissions, then allow the official path to be inspected

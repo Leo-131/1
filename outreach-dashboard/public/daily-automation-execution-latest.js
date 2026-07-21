@@ -1,9 +1,9 @@
 window.DAILY_AUTOMATION_EXECUTION_LATEST = {
   "ok": false,
-  "executionPhase": "no_browser_execution",
-  "chromeStage": "not_started",
-  "chromeOpened": false,
-  "chromeOpenedCount": 0,
+  "executionPhase": "browser_execution",
+  "chromeStage": "opened",
+  "chromeOpened": true,
+  "chromeOpenedCount": 1,
   "customerDevelopmentPerformed": false,
   "customerMessageSent": false,
   "realDevelopmentCount": 0,
@@ -17,125 +17,97 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
   "queueSource": "dailyQueue",
   "executed": [
     {
-      "id": "sheet_1779293110195_9myxa520z",
-      "company": "ARROW TIRE DISTRIBUTORS",
-      "action": "email_priority",
-      "platform": "email",
-      "targetUrl": "",
+      "id": "google-customer-bergfreunde-instagram",
+      "company": "Bergfreunde",
+      "action": "develop",
+      "platform": "instagram",
+      "targetUrl": "https://www.instagram.com/bergfreunde/",
       "ok": false,
-      "sendStatus": "skipped",
-      "evidence": "email_verifier_not_configured;contact_path_strategy_v2",
-      "chromeOpen": null,
+      "sendStatus": "failed_open",
+      "evidence": "instagram_message_button_clicked_composer_not_found",
+      "chromeOpen": {
+        "ok": true,
+        "engine": "codex-chrome-extension-cdp",
+        "port": 9224,
+        "targetUrl": "https://www.instagram.com/bergfreunde/",
+        "tabId": "4EF595227F85BE5D93D33DAC2285E971",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/4EF595227F85BE5D93D33DAC2285E971",
+        "title": "Bergfreunde (@bergfreunde) · Instagram 照片和视频"
+      },
       "result": {
         "ok": false,
-        "skipped": true,
-        "sendStatus": "skipped",
-        "reason": "email_verifier_not_configured",
-        "evidence": "email_verifier_not_configured;contact_path_strategy_v2",
-        "mode": "email_target_verification_gate",
-        "output": "{\"evidence\":\"email_verifier_not_configured;contact_path_strategy_v2\"}"
-      }
-    },
-    {
-      "id": "sheet_1779293110195_g43uimg3f",
-      "company": "ARROW TIRE DISTRIBUTORS",
-      "action": "email_priority",
-      "platform": "email",
-      "targetUrl": "",
-      "ok": false,
-      "sendStatus": "skipped",
-      "evidence": "email_verifier_not_configured;contact_path_strategy_v2",
-      "chromeOpen": null,
-      "result": {
-        "ok": false,
-        "skipped": true,
-        "sendStatus": "skipped",
-        "reason": "email_verifier_not_configured",
-        "evidence": "email_verifier_not_configured;contact_path_strategy_v2",
-        "mode": "email_target_verification_gate",
-        "output": "{\"evidence\":\"email_verifier_not_configured;contact_path_strategy_v2\"}"
-      }
-    },
-    {
-      "id": "sheet_1779293110195_u24j2gdmq",
-      "company": "FAUNA OUTDOOR",
-      "action": "email_priority",
-      "platform": "email",
-      "targetUrl": "",
-      "ok": false,
-      "sendStatus": "skipped",
-      "evidence": "email_verifier_not_configured;contact_path_strategy_v2",
-      "chromeOpen": null,
-      "result": {
-        "ok": false,
-        "skipped": true,
-        "sendStatus": "skipped",
-        "reason": "email_verifier_not_configured",
-        "evidence": "email_verifier_not_configured;contact_path_strategy_v2",
-        "mode": "email_target_verification_gate",
-        "output": "{\"evidence\":\"email_verifier_not_configured;contact_path_strategy_v2\"}"
+        "engine": "codex-chrome-extension-cdp",
+        "browserEngine": "codex-chrome-extension-cdp",
+        "mode": "codex_chrome_extension_only",
+        "targetUrl": "https://www.instagram.com/bergfreunde/",
+        "chromeOpen": {
+          "ok": true,
+          "engine": "codex-chrome-extension-cdp",
+          "port": 9224,
+          "targetUrl": "https://www.instagram.com/bergfreunde/",
+          "tabId": "4EF595227F85BE5D93D33DAC2285E971",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/4EF595227F85BE5D93D33DAC2285E971",
+          "title": "Bergfreunde (@bergfreunde) · Instagram 照片和视频"
+        },
+        "sendStatus": "failed_open",
+        "output": "{\"verdict\":\"major_bug_review_needed\",\"evidence\":\"instagram_message_button_clicked_composer_not_found\",\"nextAction\":\"Composer not detected; pause automation and notify operator only if retry would be unsafe.\",\"draft\":\"Hi Bergfreunde team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a retail/category buyer, the strongest fit is assortment fit, new SKU pipeline, price-tier coverage, and proven consumer demand; your verified outdoor, camping, travel and consumer electronics retail channel focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the category buyer or vendor-review owner for a short intro video meeting?\",\"sendStatus\":\"failed_open\"}",
+        "decision": {
+          "verdict": "develop",
+          "fitScore": 91,
+          "reason": "local_codex_extension_template",
+          "draft": "Hi Bergfreunde team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a retail/category buyer, the strongest fit is assortment fit, new SKU pipeline, price-tier coverage, and proven consumer demand; your verified outdoor, camping, travel and consumer electronics retail channel focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the category buyer or vendor-review owner for a short intro video meeting?"
+        },
+        "executionLayer": "Codex Chrome Extension only",
+        "glmModel": "not_used",
+        "followup": false
       }
     }
   ],
   "results": [
     {
-      "id": "sheet_1779293110195_9myxa520z",
-      "company": "ARROW TIRE DISTRIBUTORS",
-      "action": "email_priority",
-      "platform": "email",
-      "targetUrl": "",
+      "id": "google-customer-bergfreunde-instagram",
+      "company": "Bergfreunde",
+      "action": "develop",
+      "platform": "instagram",
+      "targetUrl": "https://www.instagram.com/bergfreunde/",
       "ok": false,
-      "sendStatus": "skipped",
-      "evidence": "email_verifier_not_configured;contact_path_strategy_v2",
-      "chromeOpen": null,
+      "sendStatus": "failed_open",
+      "evidence": "instagram_message_button_clicked_composer_not_found",
+      "chromeOpen": {
+        "ok": true,
+        "engine": "codex-chrome-extension-cdp",
+        "port": 9224,
+        "targetUrl": "https://www.instagram.com/bergfreunde/",
+        "tabId": "4EF595227F85BE5D93D33DAC2285E971",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/4EF595227F85BE5D93D33DAC2285E971",
+        "title": "Bergfreunde (@bergfreunde) · Instagram 照片和视频"
+      },
       "result": {
         "ok": false,
-        "skipped": true,
-        "sendStatus": "skipped",
-        "reason": "email_verifier_not_configured",
-        "evidence": "email_verifier_not_configured;contact_path_strategy_v2",
-        "mode": "email_target_verification_gate",
-        "output": "{\"evidence\":\"email_verifier_not_configured;contact_path_strategy_v2\"}"
-      }
-    },
-    {
-      "id": "sheet_1779293110195_g43uimg3f",
-      "company": "ARROW TIRE DISTRIBUTORS",
-      "action": "email_priority",
-      "platform": "email",
-      "targetUrl": "",
-      "ok": false,
-      "sendStatus": "skipped",
-      "evidence": "email_verifier_not_configured;contact_path_strategy_v2",
-      "chromeOpen": null,
-      "result": {
-        "ok": false,
-        "skipped": true,
-        "sendStatus": "skipped",
-        "reason": "email_verifier_not_configured",
-        "evidence": "email_verifier_not_configured;contact_path_strategy_v2",
-        "mode": "email_target_verification_gate",
-        "output": "{\"evidence\":\"email_verifier_not_configured;contact_path_strategy_v2\"}"
-      }
-    },
-    {
-      "id": "sheet_1779293110195_u24j2gdmq",
-      "company": "FAUNA OUTDOOR",
-      "action": "email_priority",
-      "platform": "email",
-      "targetUrl": "",
-      "ok": false,
-      "sendStatus": "skipped",
-      "evidence": "email_verifier_not_configured;contact_path_strategy_v2",
-      "chromeOpen": null,
-      "result": {
-        "ok": false,
-        "skipped": true,
-        "sendStatus": "skipped",
-        "reason": "email_verifier_not_configured",
-        "evidence": "email_verifier_not_configured;contact_path_strategy_v2",
-        "mode": "email_target_verification_gate",
-        "output": "{\"evidence\":\"email_verifier_not_configured;contact_path_strategy_v2\"}"
+        "engine": "codex-chrome-extension-cdp",
+        "browserEngine": "codex-chrome-extension-cdp",
+        "mode": "codex_chrome_extension_only",
+        "targetUrl": "https://www.instagram.com/bergfreunde/",
+        "chromeOpen": {
+          "ok": true,
+          "engine": "codex-chrome-extension-cdp",
+          "port": 9224,
+          "targetUrl": "https://www.instagram.com/bergfreunde/",
+          "tabId": "4EF595227F85BE5D93D33DAC2285E971",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/4EF595227F85BE5D93D33DAC2285E971",
+          "title": "Bergfreunde (@bergfreunde) · Instagram 照片和视频"
+        },
+        "sendStatus": "failed_open",
+        "output": "{\"verdict\":\"major_bug_review_needed\",\"evidence\":\"instagram_message_button_clicked_composer_not_found\",\"nextAction\":\"Composer not detected; pause automation and notify operator only if retry would be unsafe.\",\"draft\":\"Hi Bergfreunde team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a retail/category buyer, the strongest fit is assortment fit, new SKU pipeline, price-tier coverage, and proven consumer demand; your verified outdoor, camping, travel and consumer electronics retail channel focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the category buyer or vendor-review owner for a short intro video meeting?\",\"sendStatus\":\"failed_open\"}",
+        "decision": {
+          "verdict": "develop",
+          "fitScore": 91,
+          "reason": "local_codex_extension_template",
+          "draft": "Hi Bergfreunde team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a retail/category buyer, the strongest fit is assortment fit, new SKU pipeline, price-tier coverage, and proven consumer demand; your verified outdoor, camping, travel and consumer electronics retail channel focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the category buyer or vendor-review owner for a short intro video meeting?"
+        },
+        "executionLayer": "Codex Chrome Extension only",
+        "glmModel": "not_used",
+        "followup": false
       }
     }
   ],
@@ -393,6 +365,24 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "reason": "homepage_only_contact_path_requires_verification"
     },
     {
+      "id": "sheet_1779293110195_9myxa520z",
+      "company": "ARROW TIRE DISTRIBUTORS",
+      "action": "email_priority",
+      "reason": "official_website_contact_channel"
+    },
+    {
+      "id": "sheet_1779293110195_g43uimg3f",
+      "company": "ARROW TIRE DISTRIBUTORS",
+      "action": "email_priority",
+      "reason": "official_website_contact_channel"
+    },
+    {
+      "id": "sheet_1779293110195_u24j2gdmq",
+      "company": "FAUNA OUTDOOR",
+      "action": "email_priority",
+      "reason": "official_website_contact_channel"
+    },
+    {
       "id": "sheet_1779293110195_vwshd681i",
       "company": "FAUNA OUTDOOR",
       "action": "email_priority",
@@ -505,12 +495,6 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "company": "Tentworld NZ",
       "action": "develop",
       "reason": "concrete_google_discovered_major_customer_facebook"
-    },
-    {
-      "id": "google-customer-bergfreunde-instagram",
-      "company": "Bergfreunde",
-      "action": "develop",
-      "reason": "concrete_google_discovered_major_customer_instagram"
     },
     {
       "id": "google-customer-8a-pl-instagram",
@@ -1041,12 +1025,6 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "reason": "concrete_google_discovered_major_customer_facebook"
     },
     {
-      "id": "google-customer-bergfreunde-instagram",
-      "company": "Bergfreunde",
-      "action": "develop",
-      "reason": "concrete_google_discovered_major_customer_instagram"
-    },
-    {
       "id": "google-customer-8a-pl-instagram",
       "company": "8a.pl",
       "action": "develop",
@@ -1153,6 +1131,24 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "company": "Tentworld NZ",
       "action": "develop",
       "reason": "concrete_google_discovered_major_customer_instagram"
+    },
+    {
+      "id": "sheet_1779293110195_9myxa520z",
+      "company": "ARROW TIRE DISTRIBUTORS",
+      "action": "email_priority",
+      "reason": "official_website_contact_channel"
+    },
+    {
+      "id": "sheet_1779293110195_g43uimg3f",
+      "company": "ARROW TIRE DISTRIBUTORS",
+      "action": "email_priority",
+      "reason": "official_website_contact_channel"
+    },
+    {
+      "id": "sheet_1779293110195_u24j2gdmq",
+      "company": "FAUNA OUTDOOR",
+      "action": "email_priority",
+      "reason": "official_website_contact_channel"
     },
     {
       "id": "sheet_1779293110195_vwshd681i",
@@ -1311,7 +1307,7 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     {
       "reason": "concrete_google_discovered_major_customer_instagram",
       "status": "skipped",
-      "count": 38
+      "count": 36
     },
     {
       "reason": "missing_verified_profile_url",
@@ -1326,21 +1322,21 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     {
       "reason": "official_website_contact_channel",
       "status": "skipped",
-      "count": 10
+      "count": 16
     },
     {
-      "reason": "email_verifier_not_configured",
-      "status": "skipped",
-      "count": 3
+      "reason": "failed_open",
+      "status": "failed_open",
+      "count": 1
     }
   ],
   "blockerCounts": {
     "homepage_only_contact_path_requires_verification": 80,
-    "concrete_google_discovered_major_customer_instagram": 38,
+    "concrete_google_discovered_major_customer_instagram": 36,
     "missing_verified_profile_url": 32,
     "concrete_google_discovered_major_customer_facebook": 30,
-    "official_website_contact_channel": 10,
-    "email_verifier_not_configured": 3
+    "official_website_contact_channel": 16,
+    "failed_open": 1
   },
   "queueGoalStatus": {
     "target": 100,
@@ -1351,8 +1347,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     "reached": false,
     "action": "Add more verified high-ICP sources or unblock existing website/social leads."
   },
-  "userVisibleStatus": "Customer development was not performed. Blockers: homepage_only_contact_path_requires_verification (80); concrete_google_discovered_major_customer_instagram (38); missing_verified_profile_url (32).",
-  "recoveryHint": "Refill the high-ICP pool with 2 verified leads or unblock existing website/social leads before the next run. Add a verified Facebook or Instagram profile URL before retrying social outreach. Confirm the official social profile and safe message entry before rerunning Google-discovered social outreach.",
+  "userVisibleStatus": "Customer development was not performed. Blockers: homepage_only_contact_path_requires_verification (80); concrete_google_discovered_major_customer_instagram (36); missing_verified_profile_url (32).",
+  "recoveryHint": "Refill the high-ICP pool with 2 verified leads or unblock existing website/social leads before the next run. Add a verified Facebook or Instagram profile URL before retrying social outreach. Confirm the official social profile and safe message entry before rerunning Google-discovered social outreach. Verify the official profile opens and exposes a safe message composer, or switch to another verified channel.",
   "recoveryActions": [
     {
       "reason": "daily_queue_goal_not_reached",
@@ -1374,6 +1370,12 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "action": "Complete Google social channel verification",
       "description": "Confirm the official social profile and safe message entry before rerunning Google-discovered social outreach.",
       "hint": "Confirm the official social profile and safe message entry before rerunning Google-discovered social outreach."
+    },
+    {
+      "reason": "failed_open",
+      "action": "Verify profile accessibility",
+      "description": "Open the official profile manually or switch to another verified channel before retrying.",
+      "hint": "Verify the official profile opens and exposes a safe message composer, or switch to another verified channel."
     }
   ],
   "systemRefresh": {
@@ -1382,12 +1384,12 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     "stderr": "",
     "error": "",
     "visibility": {
-      "updatedAt": "2026-07-21T05:21:38.064Z",
+      "updatedAt": "2026-07-21T05:24:58.947Z",
       "source": "main-refreshDailyAutomationArtifacts",
       "runDate": "2026-07-21",
-      "artifactGeneratedAt": "2026-07-21T05:21:35.810Z",
-      "executionGeneratedAt": "2026-07-21T05:05:51.952Z",
-      "githubSyncUpdatedAt": "2026-07-21T05:06:14.752Z",
+      "artifactGeneratedAt": "2026-07-21T05:24:57.837Z",
+      "executionGeneratedAt": "2026-07-21T05:21:40.168Z",
+      "githubSyncUpdatedAt": "2026-07-21T05:23:21.016Z",
       "counts": {
         "dailyQueue": 98,
         "googleDiscovered": 74,
@@ -1449,5 +1451,5 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "ALIBABA_SMTP_SECURITY_PASSWORD"
     ]
   },
-  "completedAt": "2026-07-21T05:21:40.168Z"
+  "completedAt": "2026-07-21T05:24:59.930Z"
 };
