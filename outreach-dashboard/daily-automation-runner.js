@@ -39,23 +39,18 @@ const DEFAULT_DAILY_LIMIT = 100;
 const DEFAULT_POTENTIAL_POOL_TARGET = 100;
 const TOUCH_STATUSES = new Set([
   'sent_confirmed',
-  'post_liked',
-  'account_followed',
+  'submitted_confirmed',
   'send_unconfirmed',
-  'website_contact_unreachable_skip',
 ]);
 const SAME_DAY_DEVELOPMENT_STATUSES = new Set([
   'sent_confirmed',
+  'submitted_confirmed',
   'send_unconfirmed',
-  'account_followed',
-  'post_liked',
-  'website_contact_unreachable_skip',
 ]);
 const HISTORICAL_DEVELOPMENT_STATUSES = new Set([
   'sent_confirmed',
+  'submitted_confirmed',
   'send_unconfirmed',
-  'account_followed',
-  'post_liked',
 ]);
 const WEBSITE_CONTACT_VERIFIED_EVIDENCE = 'contact_entry_verified';
 const PROTECTED_AGENCY_MARKETS = new Map([

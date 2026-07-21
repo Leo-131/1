@@ -262,7 +262,8 @@ function blockingAutomationResultFor(item) {
     // duplicate submissions, then allow the official path to be inspected
     // again on a later business day.
     .filter((result) => !['website_contact_ready', 'website_contact_unreachable_skip'].includes(result.status)
-      || isSameAutomationDay(result.timestamp))
+      || (isSameAutomationDay(result.timestamp)
+        && String(result.evidence || '').includes(WEBSITE_CONTACT_STRATEGY_MARKER)))
     .filter((result) => result.status !== 'send_unconfirmed' || sendStatusHasCustomerInteraction(result.status, result.evidence))
     .filter((result) => result.status !== 'failed_open' || failedOpenResultShouldBlockRetry(result) || historicalAutomationResultBlocksCompany(result))
     .find((result) => {
@@ -284,6 +285,7 @@ const SAME_DAY_DEVELOPMENT_STATUSES = new Set([
   'account_followed',
   'post_liked',
 ]);
+const WEBSITE_CONTACT_STRATEGY_MARKER = 'contact_path_strategy_v2';
 
 function automationLocalDay(value, timeZone = 'Asia/Shanghai') {
   const time = typeof value === 'number' ? value : Date.parse(value || '');
@@ -299,6 +301,23 @@ function automationLocalDay(value, timeZone = 'Asia/Shanghai') {
 function isSameAutomationDay(value, now = Date.now()) {
   const day = automationLocalDay(value);
   return Boolean(day && day === automationLocalDay(now));
+}
+
+function markWebsiteContactStrategyResult(result = {}) {
+  const appendMarker = value => {
+    const text = String(value || '');
+    return text.includes(WEBSITE_CONTACT_STRATEGY_MARKER)
+      ? text
+      : `${text}${text ? ';' : ''}${WEBSITE_CONTACT_STRATEGY_MARKER}`;
+  };
+  let output = result.output;
+  try {
+    const parsed = JSON.parse(String(output || '{}'));
+    output = JSON.stringify({ ...parsed, evidence: appendMarker(parsed.evidence || result.evidence) });
+  } catch {
+    // Preserve non-JSON diagnostic output while marking the top-level result.
+  }
+  return { ...result, evidence: appendMarker(result.evidence), output };
 }
 
 function sameDayDevelopmentResult(result = {}, now = Date.now()) {
@@ -1755,9 +1774,26 @@ function websiteContactTargetCandidates(lead = {}) {
     lead.url,
     lead.website,
   ];
+  const expandedCandidates = [];
+  for (const value of rawCandidates) {
+    expandedCandidates.push(value);
+    try {
+      const parsed = new URL(String(value || ''));
+      if (parsed.protocol !== 'https:' || parsed.pathname.replace(/\/+$/, '') !== '') continue;
+      [
+        '/pages/contact-us',
+        '/pages/contact',
+        '/contact-us',
+        '/contact',
+        '/help/contact-us',
+      ].forEach(contactPath => expandedCandidates.push(new URL(contactPath, parsed.origin).href));
+    } catch {
+      // Invalid candidates are rejected by validateWebsiteContactTarget below.
+    }
+  }
   const seen = new Set();
   const candidates = [];
-  for (const value of rawCandidates) {
+  for (const value of expandedCandidates) {
     const checked = validateWebsiteContactTarget({ contactUrl: value });
     if (!checked.ok) continue;
     const key = checked.targetUrl.replace(/\/$/, '').toLowerCase();
@@ -1901,6 +1937,8 @@ function websiteContactClickExpression() {
     const textOf = (el) => String(el && (el.innerText || el.textContent || el.getAttribute('aria-label') || el.getAttribute('title') || '') || '').replace(/\\s+/g, ' ').trim();
     const positive = /contact us|get in touch|send us a message|submit a request|business enquiry|business inquiry|trade enquiry|trade inquiry|sales enquiry|enquir|inquir|vendor|supplier|wholesale|partnership|corporate sales|become a supplier|email us|customer service enquiry|support request|request form|contactez-nous|nous contacter|kontakt|cont[aá]ctanos|contattaci|contato/i;
     const negative = /continue shopping|search|sign in|login|cart|wishlist|store locator|track order|return policy|privacy|terms|newsletter|language|translate|accessibility|live chat/i;
+    const negativeHref = /\\/collections?\\/|\\/products?\\/|\\/categories?\\/|\\/catalog(?:ue)?\\/|\\/search(?:[/?#]|$)|(?:[?&#]|\\/)filter[:=/]|(?:[?&#]|\\/)vendor[:=/]|\\/sale(?:[/?#]|$)/i;
+    const positiveHref = /\\/(?:contact(?:-us)?|customer-service|support|help\\/contact-us|vendor|supplier|wholesale|partnership)(?:[/?#]|$)/i;
     const registrableHost = (host) => {
       const parts = String(host || '').toLowerCase().replace(/^www\./, '').split('.').filter(Boolean);
       const publicSuffix = parts.slice(-2).join('.');
@@ -1923,7 +1961,13 @@ function websiteContactClickExpression() {
         }
         return { el, text, href, haystack, sameHost, x: Math.round(rect.left + rect.width / 2), y: Math.round(rect.top + rect.height / 2) };
       })
-      .filter((item) => positive.test(item.haystack) && !negative.test(item.haystack) && item.sameHost);
+      .filter((item) => {
+        const conciseText = String(item.text || '').length <= 120 && positive.test(item.text);
+        return (conciseText || positiveHref.test(item.href))
+          && !negative.test(item.haystack)
+          && !negativeHref.test(item.href)
+          && item.sameHost;
+      });
     const ranked = candidates.sort((left, right) => {
       const exactLeft = /^(contact us|get in touch|submit a request|send us a message|contactez-nous|nous contacter|kontakt|cont[aá]ctanos|contattaci|contato)$/i.test(left.text) ? 1 : 0;
       const exactRight = /^(contact us|get in touch|submit a request|send us a message|contactez-nous|nous contacter|kontakt|cont[aá]ctanos|contattaci|contato)$/i.test(right.text) ? 1 : 0;
@@ -2780,7 +2824,7 @@ async function executeLeadAutomation(lead, options = {}) {
     || lead && lead.action === 'email_priority'
     || /official_website_contact_channel|website_contact/i.test(String(lead && lead.reason || ''));
   if (isWebsiteContact) {
-    const result = await runWebsiteContactLead(lead);
+    const result = markWebsiteContactStrategyResult(await runWebsiteContactLead(lead));
     lastGlmAutomationAt = Date.now();
     return result;
   }
@@ -3135,7 +3179,9 @@ async function runDailyAutomationQueue(payload = {}) {
   const candidatePool = [
     ...socialPool,
     ...websiteFallback.filter(item => !socialPool.some(social => social.id === item.id)),
-  ].sort(developmentPriorityCompare);
+  ]
+    .filter((item, index, list) => list.findIndex(other => other.id === item.id) === index)
+    .sort(developmentPriorityCompare);
   const executable = [];
   const skipped = [];
   const checkpoint = readDailyExecutionCheckpoint(latest.date);
@@ -3440,6 +3486,9 @@ async function runAutoDailyAndWriteArtifact() {
     completed = true;
     clearTimeout(watchdog);
     app.exit(0);
+    // Electron can retain a Chromium utility process after the artifact is
+    // complete. Bound CLI lifetime without affecting the normal desktop app.
+    setTimeout(() => process.exit(0), 1500);
   }
 }
 
