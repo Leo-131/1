@@ -396,6 +396,43 @@ const CANDIDATES = [
     evidenceUrl: 'https://www.cmsdistribution.com/contact-us',
     dataSources: ['CMS official company website', 'CMS official contact form', 'official LinkedIn company page'],
   },
+  {
+    company: 'EET Group',
+    country: 'Denmark',
+    url: 'https://www.eetgroup.com/en-eu/',
+    linkedinUrl: 'https://www.linkedin.com/company/eet-group-a-s/',
+    linkedinDirectOutreach: true,
+    contactUrl: 'https://www.eetgroup.com/en-eu/eet/become-a-supplier',
+    publicEmail: 'sales@eet.eu',
+    segment: 'pan-European consumer electronics and value-added technology distributor',
+    customerType: 'agency',
+    refillSeed: true,
+    fitScore: 99,
+    background: 'Pan-European distributor operating across 24 markets with more than 30,000 buying customers, a supplier-onboarding form, and consumer electronics, travel accessories, gadgets and smart-home categories.',
+    buyerPersona: 'Supplier onboarding, consumer electronics business line, vendor partnerships, or retail distribution director.',
+    targetMarkets: 'Nordics, Germany, France, Italy, Spain, Portugal, United Kingdom and Ireland',
+    excludedMarkets: 'Switzerland, Romania, Greece and Hungary',
+    evidenceUrl: 'https://www.eetgroup.com/en-eu/eet/become-a-supplier',
+    dataSources: ['EET official group website', 'EET official supplier form', 'official LinkedIn company page'],
+  },
+  {
+    company: 'KOMSA',
+    country: 'Germany',
+    url: 'https://komsa.com/en/',
+    linkedinUrl: 'https://www.linkedin.com/company/komsa/',
+    linkedinDirectOutreach: true,
+    contactUrl: 'https://komsa.com/en/contact/',
+    segment: 'European consumer electronics sales marketing and distribution group',
+    customerType: 'agency',
+    refillSeed: true,
+    fitScore: 98,
+    background: 'Large privately owned European technology sales, marketing and service group with 200 technology partners, 30,000 retail partners, 75,000 points of sale and consumer electronics, smart-home, gaming and e-mobility coverage.',
+    buyerPersona: 'Manufacturer partnerships, product management, consumer electronics distribution, or vendor onboarding director.',
+    targetMarkets: 'Germany, United Kingdom, Ireland and France',
+    excludedMarkets: 'Switzerland, Romania, Greece and Hungary',
+    evidenceUrl: 'https://komsa.com/en/contact/',
+    dataSources: ['KOMSA official company profile', 'KOMSA official contact form', 'official LinkedIn company page'],
+  },
 ];
 
 const DIRECTORY_REFILL_SOURCE = 'https://outdoorretailer.com/retailers-of-interest/';
@@ -465,6 +502,24 @@ const DIRECTORY_REFILL_CANDIDATES = [
   evidenceUrl: DIRECTORY_REFILL_SOURCE,
   dataSources: ['Outdoor Retailer retailer directory', 'official company website'],
 }));
+
+const DIRECTORY_PUBLIC_CONTACT_ENRICHMENT = {
+  'Wildfire Sports': ['enquiries@wildfiresports.com.au', 'Official public business email on the Wildfire Sports contact page; route to category buyer or vendor-review owner.'],
+  'Bivouac Outdoor': ['web@bivouac.co.nz', 'Official public business email on the Bivouac Outdoor contact page; route to category buyer or vendor-review owner.'],
+  'Further Faster': ['hello@furtherfaster.co.nz', 'Official public business email on the Further Faster website; the company also publicly states that it distributes outdoor brands in New Zealand.'],
+};
+for (const candidate of DIRECTORY_REFILL_CANDIDATES) {
+  const enrichment = DIRECTORY_PUBLIC_CONTACT_ENRICHMENT[candidate.company];
+  if (enrichment) {
+    candidate.publicEmail = enrichment[0];
+    candidate.contactEmail = enrichment[0];
+    candidate.publicEmailStatus = enrichment[1];
+    candidate.emailVerificationStatus = 'official_public_business_email';
+    candidate.emailEvidence = candidate.company === 'Further Faster'
+      ? 'official_homepage_and_where_to_buy_distribution_page'
+      : 'official_contact_page';
+  }
+}
 
 CANDIDATES.push(...DIRECTORY_REFILL_CANDIDATES);
 
@@ -541,6 +596,22 @@ const SOCIAL_REFILL_CANDIDATES = [
   evidenceUrl: SOCIAL_REFILL_SOURCE,
   dataSources: ['official company website', 'public social profile refill'],
 }));
+
+// Source-backed public routing addresses for the current refill batch.
+// These are not claimed buyer emails; route the message to the buyer/vendor team.
+const PUBLIC_CONTACT_ENRICHMENT = {
+  Outdoorplay: ['customerservice@outdoorplay.com', 'Official Outdoorplay contact page; route to buyer/vendor team.'],
+  'Sport Conrad': ['info@sport-conrad.de', 'Public Sport Conrad contact address; route to buyer/vendor team.'],
+  'Rock/Creek': ['companyrockcreek@gmail.com', 'Public Rock Creek contact address; route to buyer/vendor team.'],
+};
+for (const candidate of SOCIAL_REFILL_CANDIDATES) {
+  const enrichment = PUBLIC_CONTACT_ENRICHMENT[candidate.company];
+  if (enrichment) {
+    candidate.publicEmail = enrichment[0];
+    candidate.contactEmail = enrichment[0];
+    candidate.publicEmailStatus = enrichment[1];
+  }
+}
 
 CANDIDATES.push(...SOCIAL_REFILL_CANDIDATES);
 
@@ -879,10 +950,10 @@ function slug(value) {
 }
 
 function websiteContactSubject(item) {
-  return 'Flextail & Vollyc | Lightweight Outdoor & 3C Electronics – Potential Cooperation';
+  return 'FLEXTAIL retail partnership | 2026 assortment';
 }
 
-function marketingEmailSignature() {
+function legacyMarketingEmailSignature() {
   return `[Flextail.com](https://www.flextail.com/), [vollyc.com](https://vollyc.com/)
 
 [Sincerely](https://wa.me/8617321028184)
@@ -897,7 +968,7 @@ function marketingEmailSignature() {
 [Room103, Building No.6, No.1 Yanjiaqiao, Pudong District, ShangHai, China](https://wa.me/8617321028184)`;
 }
 
-function websiteContactMessage(item) {
+function legacyWebsiteContactMessage(item) {
   const teamName = String(item.company || 'Your').replace(/\s+(Inc|Ltd|Limited|LLC|Group)$/i, '').trim() || 'Your';
   return `Dear ${teamName} Team,
 
@@ -918,8 +989,33 @@ If you are available, I would greatly appreciate the opportunity to arrange a sh
 
 Thank you for your time and consideration. I look forward to your reply.
 
-${marketingEmailSignature()}
+${legacyMarketingEmailSignature()}
 `;
+}
+
+function websiteContactMessage(item) {
+  const teamName = String(item.company || 'Your')
+    .replace(/\s+(Inc|Ltd|Limited|LLC|Group)$/i, '')
+    .trim() || 'Your';
+  const relevance = String(
+    item.productCategory
+    || item.keyword
+    || 'outdoor, camping and travel retail'
+  ).replace(/\s+/g, ' ').trim();
+  return `Dear ${teamName} Team,
+
+I’m Leo from FLEXTAIL. Your focus on ${relevance} looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.
+
+FLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.
+
+Would you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?
+
+Product overview: https://www.flextail.com/
+
+Best regards,
+Leo Liu
+Sales & Operations Director
+Leo@flextailgear.com`;
 }
 
 function baseLead(item, id, evidenceUrl) {
@@ -964,6 +1060,9 @@ function baseLead(item, id, evidenceUrl) {
     sourceEvidenceUrl: item.evidenceUrl || item.url,
     query: evidenceUrl,
     source: 'google_customer_discovery',
+    sourceType: 'google',
+    discoveryProvider: 'google',
+    channel: String(item.platform || '').toLowerCase(),
     identityStatus: 'verified',
     profiledAt: enrichment.decisionMaker && enrichment.dataSources ? new Date().toISOString() : '',
     partnershipStatus: partnerAccount ? 'active_partner' : (item.partnershipStatus || ''),

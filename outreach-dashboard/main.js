@@ -12,10 +12,20 @@ const { emailDomainSafety } = require('./email-operations');
 const {
   recipientEmail,
   verifiedBusinessEmailTarget,
+  validateFirstTouchEmail,
   sendAndConfirmAlibabaEmail,
   scanAlibabaBounces,
 } = require('./alibaba-email-delivery');
 const { configuredProvider, verifyEmailAddress } = require('./email-verification');
+const {
+  ALIBABA_WEBMAIL_SENT_URL,
+  composeStartExpression,
+  composeFillExpression,
+  composeInspectionExpression,
+  composeSendExpression,
+  sendToastExpression,
+  sentFolderConfirmationExpression,
+} = require('./alibaba-webmail-automation');
 const {
   normalizeTarget,
   validateLeadForExecution,
@@ -2455,6 +2465,88 @@ function officialMailtoLead(lead = {}, inspection = {}, evidenceUrl = '') {
   };
 }
 
+async function runAlibabaWebmailEmailLead(lead = {}, subject = '', draft = '') {
+  const target = verifiedBusinessEmailTarget(lead);
+  if (!target.ok) return { ok: false, skipped: true, sendStatus: 'skipped', reason: target.reason, evidence: target.reason };
+  const contentValidation = validateFirstTouchEmail({
+    from: 'Leo@flextailgear.com',
+    to: target.recipient,
+    subject,
+    text: draft,
+    attachments: [],
+  });
+  if (!contentValidation.ok) {
+    return {
+      ok: false,
+      skipped: true,
+      sendStatus: 'skipped',
+      reason: 'first_touch_email_policy_failed',
+      evidence: `first_touch_email_policy_failed:${contentValidation.errors.join('|')}`,
+      contentValidation,
+    };
+  }
+  const chromeOpen = await openWithCodexChrome(ALIBABA_WEBMAIL_SENT_URL, { automationOwned: true });
+  if (!chromeOpen || !chromeOpen.ok || !chromeOpen.webSocketDebuggerUrl) {
+    return {
+      ok: false,
+      skipped: true,
+      sendStatus: 'skipped',
+      reason: 'alibaba_webmail_session_unavailable',
+      evidence: chromeOpen && (chromeOpen.evidence || chromeOpen.error) || 'alibaba_webmail_session_unavailable',
+    };
+  }
+  try {
+    const compose = await evaluateChromeTabJson(chromeOpen, composeStartExpression(), 8000);
+    if (!compose || !compose.ok) return { ok: false, sendStatus: 'approval_pending', reason: 'alibaba_webmail_compose_unavailable', evidence: compose && compose.evidence || 'alibaba_webmail_compose_unavailable' };
+    await sleep(1400);
+    const payload = { recipient: target.recipient, subject, text: draft };
+    const filled = await evaluateChromeTabJson(chromeOpen, composeFillExpression(payload), 8000);
+    await sleep(500);
+    const inspected = await evaluateChromeTabJson(chromeOpen, composeInspectionExpression(payload), 8000);
+    if (!filled || !filled.ok || !inspected || !inspected.ok) {
+      return { ok: false, sendStatus: 'approval_pending', reason: 'alibaba_webmail_draft_verification_failed', evidence: `${filled && filled.evidence || 'fill_missing'};${inspected && inspected.evidence || 'inspection_missing'}` };
+    }
+    const sent = await evaluateChromeTabJson(chromeOpen, composeSendExpression(payload), 8000);
+    if (!sent || !sent.sendClicked) return { ok: false, sendStatus: 'approval_pending', reason: 'alibaba_webmail_send_not_clicked', evidence: sent && sent.evidence || 'alibaba_webmail_send_not_clicked' };
+    let toast = null;
+    for (let attempt = 0; attempt < 10; attempt += 1) {
+      await sleep(500);
+      toast = await evaluateChromeTabJson(chromeOpen, sendToastExpression(), 5000).catch(() => null);
+      if (toast && toast.confirmed) break;
+    }
+    await navigateChromeTab(chromeOpen, ALIBABA_WEBMAIL_SENT_URL);
+    let sentFolder = null;
+    for (let attempt = 0; attempt < 12; attempt += 1) {
+      await sleep(750);
+      sentFolder = await evaluateChromeTabJson(chromeOpen, sentFolderConfirmationExpression(payload), 5000).catch(() => null);
+      if (sentFolder && sentFolder.confirmed) break;
+    }
+    const confirmed = Boolean(sentFolder && sentFolder.confirmed);
+    return {
+      ok: confirmed,
+      sendStatus: confirmed ? 'sent_confirmed' : 'send_unconfirmed',
+      reason: confirmed ? 'sent_folder_message_confirmed' : 'sent_folder_confirmation_missing',
+      evidence: `official_public_business_email;alibaba_webmail_session_reused;${sent.evidence};${toast && toast.evidence || 'send_toast_not_observed'};${sentFolder && sentFolder.evidence || 'sent_folder_record_missing'}`,
+      recipientEmail: target.recipient,
+      targetUrl: `mailto:${target.recipient}`,
+      subject,
+      draft,
+      engine: 'alibaba-enterprise-mail-web-session',
+      mode: confirmed ? 'alibaba_webmail_sent_folder_confirmed' : 'alibaba_webmail_delivery_unconfirmed',
+      contentValidation,
+      output: JSON.stringify({
+        verdict: confirmed ? 'sent_confirmed' : 'send_unconfirmed',
+        sendStatus: confirmed ? 'sent_confirmed' : 'send_unconfirmed',
+        evidence: `${sent.evidence};${toast && toast.evidence || 'send_toast_not_observed'};${sentFolder && sentFolder.evidence || 'sent_folder_record_missing'}`,
+        nextAction: confirmed ? 'Alibaba Mail web session sent the message and the exact subject is visible in Sent.' : 'Do not resend automatically; inspect the webmail Sent folder evidence.',
+        recipientEmail: target.recipient,
+      }),
+    };
+  } finally {
+    await closeAutomationChromeTab(chromeOpen);
+  }
+}
+
 async function runVerifiedAlibabaEmailLead(lead = {}, subject = '', draft = '') {
   const previousResults = readJsonScriptArray(path.join(__dirname, 'autonomous-outreach-results.js'), 'AUTONOMOUS_OUTREACH_RESULTS');
   const domainSafety = emailDomainSafety(previousResults, lead);
@@ -2471,11 +2563,14 @@ async function runVerifiedAlibabaEmailLead(lead = {}, subject = '', draft = '') 
         : 'Verify an official public buyer, vendor-relations, or business email before email outreach.',
     };
   }
-  const result = await sendAndConfirmAlibabaEmail({ lead, subject, text: draft });
+  let result = await sendAndConfirmAlibabaEmail({ lead, subject, text: draft });
+  if (result.reason === 'email_sender_not_configured') {
+    result = await runAlibabaWebmailEmailLead(lead, subject, draft);
+  }
   return {
     ...result,
-    engine: 'alibaba-enterprise-mail-smtp-imap',
-    mode: result.sendStatus === 'sent_confirmed' ? 'alibaba_email_sent_folder_confirmed' : 'alibaba_email_delivery_unconfirmed',
+    engine: result.engine || 'alibaba-enterprise-mail-smtp-imap',
+    mode: result.mode || (result.sendStatus === 'sent_confirmed' ? 'alibaba_email_sent_folder_confirmed' : 'alibaba_email_delivery_unconfirmed'),
     targetUrl: domainSafety.recipient ? `mailto:${domainSafety.recipient}` : '',
     subject,
     draft,
@@ -3083,7 +3178,9 @@ function isSocialQueueItem(item = {}) {
 }
 
 function developmentPriorityCompare(left, right) {
-  return socialPriorityRank(right) - socialPriorityRank(left)
+  const verifiedEmailDelta = Number(verifiedBusinessEmailTarget(right).ok) - Number(verifiedBusinessEmailTarget(left).ok);
+  return verifiedEmailDelta
+    || socialPriorityRank(right) - socialPriorityRank(left)
     || Number(right.fitScore || right.dealProbabilityScore || 0) - Number(left.fitScore || left.dealProbabilityScore || 0)
     || String(left.company || left.name || '').localeCompare(String(right.company || right.name || ''));
 }

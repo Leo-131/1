@@ -2,6 +2,7 @@ const test = require('node:test');
 const assert = require('node:assert/strict');
 const fs = require('fs');
 const path = require('path');
+const vm = require('node:vm');
 
 const { leadMessages, parseJsonContent, professionalSalesDraft, requestGlm } = require('../outreach-dashboard/glm-service');
 const { buildDiscoveryRun, buildLeads } = require('../outreach-dashboard/google-lead-discovery-runner');
@@ -86,16 +87,23 @@ test('email execution enforces a per-domain daily safety gate', () => {
   assert.ok(mainSource.includes('email_domain_daily_limit_reached'));
 });
 
-test('daily execution ranks LinkedIn, Facebook and Instagram before website contact fallback', () => {
+test('daily execution ranks verified email then Email, LinkedIn, Facebook and Instagram', () => {
   assert.ok(mainSource.includes('function socialPriorityRank'));
   assert.ok(mainSource.includes('function developmentPriorityCompare'));
   assert.ok(mainSource.includes("if (/\\blinkedin\\b|linkedin\\.com/.test(text)) return 340"));
   assert.ok(mainSource.includes("if (/\\bfacebook\\b|facebook\\.com/.test(text)) return 330"));
   assert.ok(mainSource.includes("if (/\\binstagram\\b|instagram\\.com/.test(text)) return 320"));
-  assert.ok(mainSource.includes('return socialPriorityRank(right) - socialPriorityRank(left)'));
+  assert.ok(mainSource.includes('return verifiedEmailDelta'));
+  assert.ok(mainSource.includes('|| socialPriorityRank(right) - socialPriorityRank(left)'));
   assert.ok(mainSource.includes('...socialPool'));
   assert.ok(mainSource.includes('...websiteFallback.filter'));
   assert.ok(mainSource.includes('.sort(developmentPriorityCompare)'));
+});
+
+test('official public business email outranks unverifiable email rows without requiring Hunter or ZeroBounce', () => {
+  assert.ok(mainSource.includes('const verifiedEmailDelta = Number(verifiedBusinessEmailTarget(right).ok)'));
+  assert.ok(mainSource.includes('|| (recipientEmail(item) && configuredProvider().id)'));
+  assert.ok(mainSource.includes('result = await runAlibabaWebmailEmailLead(lead, subject, draft)'));
 });
 
 test('LinkedIn platform engagement follows before sending the approved DM without comment or like', () => {
@@ -284,14 +292,11 @@ test('GLM messages include lead-specific persona and conversion objective', () =
   assert.match(payload.schema.draft, /customer-persona-specific/);
 });
 
-test('email templates follow Flextail and Vollyc reference copy', () => {
+test('message template API retains the approved FLEXTAIL brand references', () => {
   assert.ok(templateSource.includes('Flextail & Vollyc'));
-  assert.ok(templateSource.includes('Top 1 on Amazon'));
-  assert.ok(templateSource.includes('over 36 new SKUs in 2026'));
-  assert.ok(templateSource.includes('short introductory video meeting'));
-  assert.ok(templateSource.includes('[Flextail.com](https://www.flextail.com/)'));
-  assert.ok(templateSource.includes('[Tel/whatsapp:  +86 17321028184](https://wa.me/8617321028184)'));
-  assert.ok(templateSource.includes('[Email:  Leo@flextailgear.com](https://wa.me/8617321028184)'));
+  assert.ok(templateSource.includes('36+ new SKUs'));
+  assert.ok(templateSource.includes('https://www.flextail.com/'));
+  assert.ok(templateSource.includes('Leo@flextailgear.com'));
 });
 
 test('Google discovery preserves LinkedIn information while creating executable social and website channels', () => {
@@ -302,12 +307,13 @@ test('Google discovery preserves LinkedIn information while creating executable 
   const emailLead = cabela.find(item => item.platform === 'email');
   assert.equal(emailLead.action, 'email_priority');
   assert.equal(emailLead.emailFrom, 'leo@flextailgear.com');
-  assert.equal(emailLead.websiteContactSubject, 'Flextail & Vollyc | Lightweight Outdoor & 3C Electronics – Potential Cooperation');
+  assert.equal(emailLead.websiteContactSubject, 'FLEXTAIL retail partnership | 2026 assortment');
   assert.match(emailLead.websiteContactMessage, /Dear Cabela's Team/);
-  assert.match(emailLead.websiteContactMessage, /Flextail’s product philosophy/);
-  assert.match(emailLead.websiteContactMessage, /\[Flextail\.com\]\(https:\/\/www\.flextail\.com\/\)/);
-  assert.match(emailLead.websiteContactMessage, /\[Leo Liu\]\(https:\/\/wa\.me\/8617321028184\)/);
-  assert.match(emailLead.websiteContactMessage, /\[Brand & ODM Department\]\(https:\/\/wa\.me\/8617321028184\)/);
+  assert.match(emailLead.websiteContactMessage, /category buyer or vendor-onboarding team/);
+  assert.match(emailLead.websiteContactMessage, /https:\/\/www\.flextail\.com\//);
+  assert.doesNotMatch(emailLead.websiteContactMessage, /Attached|attachment/i);
+  const wordCount = emailLead.websiteContactMessage.trim().split(/\s+/).length;
+  assert.ok(wordCount >= 90 && wordCount <= 140, `expected 90-140 words, received ${wordCount}`);
   assert.equal(emailLead.publicEmail, 'vendorrelations@basspro.com');
   assert.match(emailLead.linkedinUrl, /linkedin\.com/);
   assert.match(emailLead.vendorPortal, /cabelas|basspro/i);
@@ -520,7 +526,7 @@ test('INNPRO exclusive markets are blocked even when source data says open', () 
 
 test('European large distributor candidates are high ICP and social first', () => {
   const leads = buildLeads(200);
-  for (const company of ['Aqipa', 'Esprinet Group', 'CMS Distribution']) {
+  for (const company of ['Aqipa', 'Esprinet Group', 'CMS Distribution', 'EET Group', 'KOMSA']) {
     const companyLeads = leads.filter(item => item.company === company);
     assert.ok(companyLeads.length > 0, `${company} should be in the discovery pool`);
     assert.ok(companyLeads.every(item => item.fitScore > 70));
@@ -529,6 +535,8 @@ test('European large distributor candidates are high ICP and social first', () =
   }
   assert.ok(leads.some(item => item.company === 'Esprinet Group' && item.platform === 'linkedin'));
   assert.ok(leads.some(item => item.company === 'CMS Distribution' && item.platform === 'linkedin'));
+  assert.ok(leads.some(item => item.company === 'EET Group' && item.platform === 'email' && /become-a-supplier/.test(item.contactUrl)));
+  assert.ok(leads.some(item => item.company === 'KOMSA' && item.platform === 'linkedin'));
   assert.ok(leads.some(item => item.company === 'Aqipa' && item.platform === 'email' && /support\.aqipa\.com/.test(item.contactUrl)));
 });
 
@@ -702,8 +710,8 @@ test('website contact automation must verify contact entry before ready status',
   assert.ok(mainSource.includes('const ready = mailtos.length > 0 || hasContactForm;'));
   assert.ok(mainSource.includes("const DEFAULT_WEBSITE_CONTACT_FIRST_NAME = 'Leo'"));
   assert.ok(mainSource.includes("const DEFAULT_WEBSITE_CONTACT_LAST_NAME = 'Liu'"));
-  assert.ok(mainSource.includes('Flextail & Vollyc | Lightweight Outdoor & 3C Electronics – Potential Cooperation'));
-  assert.ok(mainSource.includes('Flextail’s product philosophy'));
+  assert.ok(mainSource.includes('FLEXTAIL retail partnership | 2026 assortment'));
+  assert.ok(mainSource.includes('category buyer or vendor-onboarding team'));
   assert.ok(mainSource.includes('hiddenRequiredDropdowns'));
   assert.ok(mainSource.includes('required_fields_missing'));
   assert.ok(mainSource.includes('process.env.WEBSITE_MARKETING_FILE'));
@@ -740,10 +748,32 @@ test('website contact automation must verify contact entry before ready status',
   assert.ok(mainSource.includes("sendStatus: 'website_contact_ready'"));
   assert.ok(dailyRunnerSource.includes('function isVerifiedWebsiteContactResult'));
   assert.ok(dailyRunnerSource.includes('isTouchResult(result)'));
+  assert.ok(mainSource.includes("sendStatus: confirmed ? 'submitted_confirmed' : 'send_unconfirmed'"));
+});
+
+test('website discovery probes common same-origin contact paths without product-link false positives', () => {
+  assert.ok(mainSource.includes("'/pages/contact-us'"));
+  assert.ok(mainSource.includes("'/contact-us'"));
+  assert.ok(mainSource.includes('negativeHref'));
+  assert.ok(mainSource.includes('positiveHref'));
+  assert.ok(mainSource.includes('const negativeHref = /\\\\/collections'));
+  assert.ok(mainSource.includes("String(item.text || '').length <= 120"));
+  assert.ok(mainSource.includes('markWebsiteContactStrategyResult(await runWebsiteContactLead(lead))'));
+  const start = mainSource.indexOf('function websiteContactClickExpression()');
+  const end = mainSource.indexOf('async function inspectWebsiteContactFlow', start);
+  const clickExpressionFactory = vm.runInNewContext(`(${mainSource.slice(start, end).trim()})`);
+  assert.doesNotThrow(() => new vm.Script(clickExpressionFactory()));
+  assert.ok(mainSource.includes('mailtos: mailtos.slice(0, 8)'));
+  assert.ok(mainSource.includes('officialMailtoLead(lead, contactFlow.inspection'));
+  assert.ok(mainSource.includes('runVerifiedAlibabaEmailLead'));
+  assert.ok(mainSource.includes('runAlibabaWebmailEmailLead'));
+  assert.ok(mainSource.includes('alibaba-enterprise-mail-web-session'));
+  assert.ok(mainSource.includes('sendAndConfirmAlibabaEmail'));
+  assert.ok(mainSource.includes('verifyEmailAddress(recipientEmail(lead))'));
 });
 
 test('Google discovery uses a live Bever contact details URL instead of the retired 404 page', () => {
-  const leads = buildLeads(120);
+  const leads = buildLeads(240);
   const beverContact = leads.find(item => item.id === 'google-customer-bever-website-contact');
   assert.ok(beverContact);
   assert.equal(beverContact.contactUrl, 'https://www.bever.nl/klantenservice/contactgegevens.html');
@@ -888,17 +918,36 @@ test('daily execution is serial and can process a priority batch per run', () =>
   assert.ok(mainSource.includes("mode: 'serial-single-target'"));
   assert.ok(mainSource.includes('const parallelLimit = 1'));
   assert.ok(mainSource.includes('const limit = requestedLimit'));
-  assert.ok(mainSource.includes('DEFAULT_DAILY_SOCIAL_EXECUTION_LIMIT = 4'));
+  assert.ok(mainSource.includes('DEFAULT_DAILY_SOCIAL_EXECUTION_LIMIT = 13'));
   assert.ok(mainSource.includes('KEEP_AUTOMATION_TABS_VISIBLE'));
   assert.ok(mainSource.includes('automationReusableChromeTab'));
   assert.ok(mainSource.includes('reuseTab: true'));
   assert.ok(mainSource.includes('isFollowupLead(lead)'));
   assert.ok(mainSource.includes('process.env.DAILY_EXECUTE_LIMIT || DEFAULT_DAILY_SOCIAL_EXECUTION_LIMIT'));
+  assert.ok(mainSource.includes('process.env.DAILY_EXECUTE_TIMEOUT_MS || 2700000'));
+  assert.ok(mainSource.includes("['sent_confirmed', 'submitted_confirmed'].includes(item.sendStatus)"));
   assert.ok(mainSource.includes('executableQueueCandidates(latest.dailyQueue, { allowWebsiteContact: false })'));
   assert.ok(mainSource.includes('const websiteFallback = executableQueueCandidates'));
   assert.ok(mainSource.includes('const isAutoRunDaily = process.argv.includes'));
   assert.ok(mainSource.includes('async function runAutoDailyAndWriteArtifact'));
   assert.ok(mainSource.includes('timeout: 80000'));
+});
+
+test('real customer development excludes likes and follows', () => {
+  const start = mainSource.indexOf('const REAL_CUSTOMER_DEVELOPMENT_STATUSES');
+  const end = mainSource.indexOf('function buildExecutionTruth', start);
+  const block = mainSource.slice(start, end);
+  assert.match(block, /sent_confirmed/);
+  assert.match(block, /submitted_confirmed/);
+  assert.doesNotMatch(block, /account_followed|post_liked/);
+});
+
+test('Alibaba bounce reconciliation downgrades confirmed email without deleting evidence', () => {
+  assert.ok(mainSource.includes('async function reconcileAlibabaBounceResults'));
+  assert.ok(mainSource.includes("result.status === 'sent_confirmed'"));
+  assert.ok(mainSource.includes("match.status = 'bounced'"));
+  assert.ok(mainSource.includes('bounceReconciliation'));
+  assert.ok(mainSource.includes("'submitted_confirmed', 'bounced', 'send_unconfirmed'"));
 });
 
 test('daily execution checkpoints completed tasks and resumes without duplicate processing', () => {
@@ -911,6 +960,17 @@ test('daily execution checkpoints completed tasks and resumes without duplicate 
   assert.ok(mainSource.includes('completedTaskIds: [...completedTaskIds]'));
   assert.ok(mainSource.includes('checkpointResultIsTerminal(item)'));
   assert.ok(mainSource.includes('checkpoint: readJson(dailyExecutionCheckpointPath(), null)'));
+});
+
+test('daily execution deduplicates merged website candidates and exits after artifact completion', () => {
+  assert.ok(mainSource.includes("list.findIndex(other => other.id === item.id) === index"));
+  assert.ok(mainSource.includes('setTimeout(() => process.exit(0), 1500)'));
+});
+
+test('email recovery cards expose sender and verifier configuration without secrets', () => {
+  assert.ok(mainSource.includes("reason: 'email_sender_not_configured'"));
+  assert.ok(mainSource.includes("requiredEnv: ['OUTREACH_EMAIL_FROM', 'ALIBABA_SMTP_USER', 'ALIBABA_SMTP_SECURITY_PASSWORD']"));
+  assert.ok(mainSource.includes("requiredEnv: ['HUNTER_API_KEY', 'ZEROBOUNCE_API_KEY', 'NEVERBOUNCE_API_KEY']"));
 });
 
 test('Google discovery exposes normalized source metadata while retaining the legacy source', () => {
@@ -980,6 +1040,11 @@ test('daily execution duplicate blocking is channel-aware', () => {
   assert.ok(mainSource.includes('function failedOpenResultShouldBlockRetry'));
   assert.ok(mainSource.includes('message_button_clicked_composer_not_found'));
   assert.ok(mainSource.includes("result.status !== 'failed_open' || failedOpenResultShouldBlockRetry(result)"));
+  assert.ok(mainSource.includes("['website_contact_ready', 'website_contact_unreachable_skip'].includes(result.status)"));
+  assert.ok(mainSource.includes('isSameAutomationDay(result.timestamp)'));
+  assert.ok(mainSource.includes('WEBSITE_CONTACT_STRATEGY_MARKER'));
+  assert.ok(mainSource.includes("status: 'website_failure_circuit_open'"));
+  assert.ok(mainSource.includes('failedDays.size >= 3'));
   assert.ok(mainSource.includes('function automationPlatformFor'));
   assert.ok(mainSource.includes('const exactKeys = automationExactKeys(item)'));
   assert.ok(mainSource.includes('const itemPlatform = automationPlatformFor(item)'));
@@ -1009,6 +1074,17 @@ test('daily queue generator blocks same-day repeat development by company', () =
   assert.ok(dailyRunnerSource.includes('sameDayDeveloped'));
   assert.ok(dailyRunnerSource.includes('same_day_customer_already_developed'));
   assert.ok(dailyRunnerSource.includes('context.sameDayByCompany'));
+});
+
+test('queue touch truth excludes likes, follows, and unreachable website attempts', () => {
+  for (const constantName of ['TOUCH_STATUSES', 'SAME_DAY_DEVELOPMENT_STATUSES', 'HISTORICAL_DEVELOPMENT_STATUSES']) {
+    const start = dailyRunnerSource.indexOf(`const ${constantName}`);
+    const end = dailyRunnerSource.indexOf(']);', start) + 3;
+    const block = dailyRunnerSource.slice(start, end);
+    assert.match(block, /sent_confirmed/);
+    assert.match(block, /submitted_confirmed/);
+    assert.doesNotMatch(block, /post_liked|account_followed|website_contact_unreachable_skip/);
+  }
 });
 
 test('daily queue generator blocks cross-channel repeats for already developed companies', () => {
@@ -1074,7 +1150,7 @@ test('daily queue generator blocks cross-channel repeats for already developed c
   assert.ok(dailyRunner.companyLeadKeys(sailInstagram).some(key => history.sentConfirmed.has(key)));
 });
 
-test('discovery cooldown expires ordinary touches but preserves confirmed DM protection', () => {
+test('discovery ignores likes and follows while preserving confirmed DM protection', () => {
   const now = Date.parse('2026-07-09T00:00:00.000Z');
   const history = dailyRunner.knownTouchIndex([
     {
@@ -1098,6 +1174,6 @@ test('discovery cooldown expires ordinary touches but preserves confirmed DM pro
   ], [], now);
 
   assert.ok(!history.activeCooldown.has('bassproshops'));
-  assert.ok(history.activeCooldown.has('mec'));
+  assert.ok(!history.activeCooldown.has('mec'));
   assert.ok(history.sentConfirmed.has('bever'));
 });

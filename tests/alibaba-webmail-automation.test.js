@@ -1,0 +1,36 @@
+const test = require('node:test');
+const assert = require('node:assert/strict');
+const vm = require('node:vm');
+const {
+  ALIBABA_WEBMAIL_SENT_URL,
+  composeStartExpression,
+  composeFillExpression,
+  composeInspectionExpression,
+  composeSendExpression,
+  sendToastExpression,
+  sentFolderConfirmationExpression,
+} = require('../outreach-dashboard/alibaba-webmail-automation');
+
+test('Alibaba webmail automation targets the authenticated Sent route', () => {
+  assert.equal(ALIBABA_WEBMAIL_SENT_URL, 'https://qiye.aliyun.com/alimail/entries/v5.1/mail/sentitems/all');
+});
+
+test('Alibaba webmail expressions are valid JavaScript and keep exact recipient/subject evidence', () => {
+  const payload = {
+    recipient: 'hello@furtherfaster.co.nz',
+    subject: 'FLEXTAIL outdoor electronics | Further Faster range review',
+    text: 'A safe first-touch message',
+  };
+  const expressions = [
+    composeStartExpression(),
+    composeFillExpression(payload),
+    composeInspectionExpression(payload),
+    composeSendExpression(payload),
+    sendToastExpression(),
+    sentFolderConfirmationExpression(payload),
+  ];
+  for (const expression of expressions) assert.doesNotThrow(() => new vm.Script(expression));
+  assert.match(composeFillExpression(payload), /iframe\.e_iframe/);
+  assert.match(composeSendExpression(payload), /send_button_not_unique/);
+  assert.match(sentFolderConfirmationExpression(payload), /sent_folder_record_confirmed/);
+});
