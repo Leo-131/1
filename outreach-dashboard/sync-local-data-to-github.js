@@ -275,7 +275,13 @@ function syncOnce() {
     'system-visibility-latest.js',
     'sync-local-data-to-github.js',
     'check-dashboard.js',
+    'email-channel.js',
+    'email-operations.js',
+    'alibaba-email-delivery.js',
+    'email-verification.js',
     'package.json',
+    'package-lock.json',
+    'docs/plans/2026-07-21-nonzero-daily-execution-design.md',
   ];
   git(['add', '--', ...paths], { stdio: 'pipe' });
   if (!hasChanges(paths)) {

@@ -10,6 +10,13 @@ const { professionalSalesDraft, requestGlm } = require('./glm-service');
 const { emailSenderReadiness } = require('./email-channel');
 const { emailDomainSafety } = require('./email-operations');
 const {
+  recipientEmail,
+  verifiedBusinessEmailTarget,
+  sendAndConfirmAlibabaEmail,
+  scanAlibabaBounces,
+} = require('./alibaba-email-delivery');
+const { configuredProvider, verifyEmailAddress } = require('./email-verification');
+const {
   normalizeTarget,
   validateLeadForExecution,
   isBlockedFacebookTarget,
@@ -90,12 +97,27 @@ function readJson(file, fallback) {
   }
 }
 
+function retryTransientFileOperation(operation, attempts = 6) {
+  let lastError;
+  for (let attempt = 0; attempt < attempts; attempt += 1) {
+    try {
+      return operation();
+    } catch (error) {
+      lastError = error;
+      const transient = error && ['EBUSY', 'EACCES', 'EPERM', 'UNKNOWN'].includes(error.code);
+      if (!transient || attempt === attempts - 1) throw error;
+      Atomics.wait(new Int32Array(new SharedArrayBuffer(4)), 0, 0, 40 * (attempt + 1));
+    }
+  }
+  throw lastError;
+}
+
 function writeJson(file, value) {
-  fs.writeFileSync(file, `${JSON.stringify(value, null, 2)}\n`, { mode: 0o600 });
+  retryTransientFileOperation(() => fs.writeFileSync(file, `${JSON.stringify(value, null, 2)}\n`, { mode: 0o600 }));
 }
 
 function writeJsonScript(file, globalName, value) {
-  fs.writeFileSync(file, `window.${globalName} = ${JSON.stringify(value, null, 2)};\n`);
+  retryTransientFileOperation(() => fs.writeFileSync(file, `window.${globalName} = ${JSON.stringify(value, null, 2)};\n`));
 }
 
 function writeDailyExecutionArtifact(output) {
@@ -141,7 +163,7 @@ function readJsonScriptArray(file, globalName) {
 }
 
 function writeJsonScriptArray(file, globalName, value) {
-  fs.writeFileSync(file, `window.${globalName} = ${JSON.stringify(value, null, 2)};\n`);
+  retryTransientFileOperation(() => fs.writeFileSync(file, `window.${globalName} = ${JSON.stringify(value, null, 2)};\n`));
 }
 
 function parseExecutionOutput(output) {
@@ -255,6 +277,23 @@ function blockingAutomationResultFor(item) {
   const itemPlatform = automationPlatformFor(item);
   const blocking = new Set(['sent_confirmed', 'failed_open', 'send_unconfirmed', 'account_followed', 'post_liked', 'website_contact_ready', 'website_contact_unreachable_skip']);
   const companyBlocking = new Set(['sent_confirmed', 'send_unconfirmed', 'account_followed', 'post_liked']);
+  if (isWebsiteContactQueueItem(item)) {
+    const cutoff = Date.now() - 30 * 24 * 60 * 60 * 1000;
+    const failedDays = new Set(results
+      .filter(result => result && result.status === 'website_contact_unreachable_skip')
+      .filter(result => String(result.evidence || '').includes(WEBSITE_CONTACT_STRATEGY_MARKER))
+      .filter(result => Date.parse(result.timestamp || '') >= cutoff)
+      .filter(result => setsIntersect(exactKeys, automationExactKeys(result))
+        || setsIntersect(companyKeys, automationCompanyKeys(result)))
+      .map(result => automationLocalDay(result.timestamp))
+      .filter(Boolean));
+    if (failedDays.size >= 3) {
+      return {
+        status: 'website_failure_circuit_open',
+        evidence: `website_failure_circuit_open;failed_days:${failedDays.size};window_days:30`,
+      };
+    }
+  }
   return results
     .filter((result) => result && (blocking.has(result.status) || historicalAutomationResultBlocksCompany(result)))
     // A prepared/unreachable website path is a bounded attempt, not a
@@ -404,19 +443,23 @@ function websiteContactResultIsVerified(result = {}) {
 
 function recordAutomationResult(item, result) {
   const sendStatus = result && result.sendStatus;
-  if (!['sent_confirmed', 'send_unconfirmed', 'failed_open', 'draft_prepared', 'prepared_not_sent', 'account_followed', 'post_liked', 'website_contact_ready', 'website_contact_unreachable_skip', 'approval_pending'].includes(sendStatus)) return;
+  if (!['sent_confirmed', 'submitted_confirmed', 'bounced', 'send_unconfirmed', 'failed_open', 'draft_prepared', 'prepared_not_sent', 'account_followed', 'post_liked', 'website_contact_ready', 'website_contact_unreachable_skip', 'approval_pending'].includes(sendStatus)) return;
   const output = parseExecutionOutput(result.output);
   const timestamp = new Date().toISOString();
   const entry = {
     task_id: item.id,
     approval_version: 1,
     status: sendStatus,
-    agent: 'codex-chrome-extension',
+    agent: result.engine === 'alibaba-enterprise-mail-smtp-imap' ? 'alibaba-enterprise-mail' : 'codex-chrome-extension',
     timestamp,
     target_url: result.targetUrl || (result.chromeOpen && result.chromeOpen.targetUrl) || item.url || '',
     evidence: output.evidence || result.evidence || sendStatus,
     draft: output.draft || result.draft || '',
     subject: output.subject || result.subject || '',
+    recipientEmail: output.recipientEmail || result.recipientEmail || '',
+    messageId: output.messageId || result.messageId || '',
+    sentFolder: result.sentFolder || '',
+    sentUid: result.sentUid || null,
   };
   const file = path.join(__dirname, 'autonomous-outreach-results.js');
   const results = readJsonScriptArray(file, 'AUTONOMOUS_OUTREACH_RESULTS');
@@ -435,8 +478,32 @@ function copyPublicArtifact(file) {
   const to = path.join(__dirname, 'public', file);
   if (!fs.existsSync(from)) return false;
   fs.mkdirSync(path.dirname(to), { recursive: true });
-  fs.copyFileSync(from, to);
+  retryTransientFileOperation(() => fs.copyFileSync(from, to));
   return true;
+}
+
+async function reconcileAlibabaBounceResults() {
+  const scan = await scanAlibabaBounces();
+  if (!scan.ok) return { ok: false, reason: scan.reason, updated: 0, requiredEnv: scan.requiredEnv || [] };
+  const file = path.join(__dirname, 'autonomous-outreach-results.js');
+  const results = readJsonScriptArray(file, 'AUTONOMOUS_OUTREACH_RESULTS');
+  let updated = 0;
+  for (const bounce of scan.bounces || []) {
+    const match = results.find(result => result
+      && result.status === 'sent_confirmed'
+      && ((bounce.messageId && result.messageId === bounce.messageId)
+        || (bounce.recipient && String(result.recipientEmail || '').toLowerCase() === bounce.recipient)));
+    if (!match) continue;
+    match.status = 'bounced';
+    match.bouncedAt = bounce.receivedAt || new Date().toISOString();
+    match.evidence = `${match.evidence || 'sent_confirmed'};bounce_confirmed:${bounce.diagnostic || bounce.uid || 'dsn'}`;
+    updated += 1;
+  }
+  if (updated) {
+    writeJsonScriptArray(file, 'AUTONOMOUS_OUTREACH_RESULTS', results);
+    copyPublicArtifact('autonomous-outreach-results.js');
+  }
+  return { ok: true, reason: scan.reason, scanned: (scan.bounces || []).length, updated };
 }
 
 function dailyQueueGoalVisibility(summary = {}) {
@@ -1887,6 +1954,7 @@ function websiteContactInspectionExpression() {
       url: location.href,
       title: document.title,
       mailtoCount: mailtos.length,
+      mailtos: mailtos.slice(0, 8),
       fieldCount: fields.length,
       messageFieldCount: messageFields.length,
       actionCount: actionableControls.length,
@@ -2361,7 +2429,7 @@ async function prepareWebsiteContactForm(chromeOpen, lead, subject, draft) {
   const attachmentEvidence = attachment.ok ? attachment.evidence : `${attachment.evidence};optional_attachment_omitted`;
   return {
     ok: confirmed,
-    sendStatus: confirmed ? 'sent_confirmed' : 'send_unconfirmed',
+    sendStatus: confirmed ? 'submitted_confirmed' : 'send_unconfirmed',
     evidence: `${filled && filled.evidence || 'website_contact_form_fields_prepared'};${attachmentEvidence};${submitted && submitted.evidence || 'submit_result_missing'};${confirmation && confirmation.evidence || 'website_contact_submission_confirmation_missing'}`,
     filled,
     attachment,
@@ -2371,30 +2439,99 @@ async function prepareWebsiteContactForm(chromeOpen, lead, subject, draft) {
   };
 }
 
+function officialMailtoLead(lead = {}, inspection = {}, evidenceUrl = '') {
+  const values = Array.isArray(inspection && inspection.mailtos) ? inspection.mailtos : [];
+  const recipient = values
+    .map(value => String(value || '').replace(/^mailto:/i, '').split('?')[0].trim())
+    .find(value => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value));
+  if (!recipient) return null;
+  return {
+    ...lead,
+    publicEmail: recipient,
+    contactEmail: recipient,
+    emailVerificationStatus: 'official_website_mailto',
+    publicEmailStatus: 'Official public business email from verified website mailto',
+    emailEvidence: `official_website_mailto:${evidenceUrl || inspection.url || ''}`,
+  };
+}
+
+async function runVerifiedAlibabaEmailLead(lead = {}, subject = '', draft = '') {
+  const previousResults = readJsonScriptArray(path.join(__dirname, 'autonomous-outreach-results.js'), 'AUTONOMOUS_OUTREACH_RESULTS');
+  const domainSafety = emailDomainSafety(previousResults, lead);
+  if (!domainSafety.ok) {
+    return {
+      ok: false,
+      skipped: true,
+      sendStatus: 'skipped',
+      reason: domainSafety.reason,
+      mode: 'email_domain_safety_gate',
+      evidence: `${domainSafety.reason};domain:${domainSafety.domain || 'unknown'};sentToday:${domainSafety.sentToday || 0};limit:${domainSafety.limit || 0}`,
+      nextAction: domainSafety.reason === 'email_domain_daily_limit_reached'
+        ? 'Pause this domain until the next Asia/Shanghai business day; use another verified company or channel.'
+        : 'Verify an official public buyer, vendor-relations, or business email before email outreach.',
+    };
+  }
+  const result = await sendAndConfirmAlibabaEmail({ lead, subject, text: draft });
+  return {
+    ...result,
+    engine: 'alibaba-enterprise-mail-smtp-imap',
+    mode: result.sendStatus === 'sent_confirmed' ? 'alibaba_email_sent_folder_confirmed' : 'alibaba_email_delivery_unconfirmed',
+    targetUrl: domainSafety.recipient ? `mailto:${domainSafety.recipient}` : '',
+    subject,
+    draft,
+    output: JSON.stringify({
+      verdict: result.sendStatus || 'approval_pending',
+      sendStatus: result.sendStatus || 'approval_pending',
+      evidence: result.evidence || result.reason || '',
+      nextAction: result.sendStatus === 'sent_confirmed'
+        ? 'Alibaba Mail accepted the message and the matching record exists in Sent.'
+        : result.reason === 'email_sender_not_configured'
+          ? 'Configure the Alibaba Mail environment variables before rerunning verified email outreach.'
+          : 'Do not resend automatically; inspect the Alibaba Mail delivery and Sent-folder evidence.',
+      recipientEmail: result.recipientEmail || domainSafety.recipient,
+      messageId: result.messageId || '',
+    }),
+  };
+}
+
 async function runWebsiteContactLead(lead = {}) {
-  if (lead.publicEmail || lead.contactEmail || lead.email) {
-    const previousResults = readJsonScriptArray(path.join(__dirname, 'autonomous-outreach-results.js'), 'AUTONOMOUS_OUTREACH_RESULTS');
-    const domainSafety = emailDomainSafety(previousResults, lead);
-    if (!domainSafety.ok) {
+  const subject = websiteContactSubject(lead);
+  const draft = websiteContactMessage(lead);
+  const targets = websiteContactTargetCandidates(lead);
+  let emailLead = lead;
+  let directEmail = verifiedBusinessEmailTarget(emailLead);
+  let emailVerification = null;
+  if (!directEmail.ok && recipientEmail(lead)) {
+    emailVerification = await verifyEmailAddress(recipientEmail(lead));
+    if (emailVerification.deliverable) {
+      emailLead = {
+        ...lead,
+        emailVerificationStatus: 'deliverable',
+        publicEmailStatus: `Verified deliverable business email via ${emailVerification.provider}`,
+        emailEvidence: `${emailVerification.provider}:${emailVerification.verifiedAt}`,
+      };
+      directEmail = verifiedBusinessEmailTarget(emailLead);
+    }
+  }
+  let emailPreflight = null;
+  if (directEmail.ok) {
+    emailPreflight = await runVerifiedAlibabaEmailLead(emailLead, subject, draft);
+    if (emailPreflight.reason !== 'email_sender_not_configured' || !targets.length) return emailPreflight;
+  }
+  if (!targets.length) {
+    if (lead.publicEmail || lead.contactEmail || lead.email) {
       return {
         ok: false,
         skipped: true,
         sendStatus: 'skipped',
-        mode: 'email_domain_safety_gate',
-        evidence: `${domainSafety.reason};domain:${domainSafety.domain || 'unknown'};sentToday:${domainSafety.sentToday || 0};limit:${domainSafety.limit || 0}`,
-        nextAction: domainSafety.reason === 'email_domain_daily_limit_reached'
-          ? 'Pause this domain until the next Asia/Shanghai business day; use another verified company or channel.'
-          : 'Verify an official public buyer, vendor-relations, or business email before email outreach.',
+        reason: emailVerification && emailVerification.reason || directEmail.reason,
+        evidence: emailVerification && emailVerification.reason || directEmail.reason,
+        mode: 'email_target_verification_gate',
       };
     }
-  }
-  const targets = websiteContactTargetCandidates(lead);
-  if (!targets.length) {
     const target = validateWebsiteContactTarget(lead);
     if (!target.ok) return target;
   }
-  const subject = websiteContactSubject(lead);
-  const draft = websiteContactMessage(lead);
   const attempts = [];
   let lastResult = null;
   for (const target of targets) {
@@ -2439,10 +2576,10 @@ async function runWebsiteContactLead(lead = {}) {
         sendStatus: contactFlow.sendStatus || 'approval_pending',
         subject,
         draft,
-        evidence: contactFlow.evidence,
+        evidence: `${contactFlow.evidence}${emailPreflight ? `;${emailPreflight.evidence || emailPreflight.reason || ''}` : ''}`,
         output: JSON.stringify({
           verdict: contactFlow.sendStatus || 'approval_pending',
-          evidence: `${contactFlow.evidence};website_contact_target_attempts:${attempts.length}`,
+          evidence: `${contactFlow.evidence}${emailPreflight ? `;${emailPreflight.evidence || emailPreflight.reason || ''}` : ''};website_contact_target_attempts:${attempts.length}`,
           nextAction: contactFlow.nextAction,
           subject,
           draft,
@@ -2453,7 +2590,19 @@ async function runWebsiteContactLead(lead = {}) {
       await closeAutomationChromeTab(chromeOpen);
       continue;
     }
+    const officialMailto = officialMailtoLead(lead, contactFlow.inspection, target.targetUrl);
+    if (officialMailto) {
+      const emailResult = await runVerifiedAlibabaEmailLead(officialMailto, subject, draft);
+      if (emailResult.reason !== 'email_sender_not_configured') {
+        await closeAutomationChromeTab(chromeOpen);
+        return emailResult;
+      }
+      emailPreflight = emailResult;
+    }
     const formPreparation = await prepareWebsiteContactForm(chromeOpen, lead, subject, draft);
+    if (emailPreflight) {
+      formPreparation.evidence = `${emailPreflight.evidence || emailPreflight.reason || 'email_preflight_blocked'};${formPreparation.evidence || ''}`;
+    }
     attempts[attempts.length - 1] = {
       ...attempts[attempts.length - 1],
       sendStatus: formPreparation.sendStatus || contactFlow.sendStatus || 'approval_pending',
@@ -2494,10 +2643,10 @@ async function runWebsiteContactLead(lead = {}) {
       attempts,
     };
     return {
-      ok: formPreparation.sendStatus === 'sent_confirmed',
+      ok: formPreparation.sendStatus === 'submitted_confirmed',
       engine: 'codex-chrome-extension-website-contact',
       browserEngine: chromeOpen.engine,
-      mode: formPreparation.sendStatus === 'sent_confirmed' ? 'website_contact_submitted_confirmed' : 'website_contact_submit_unconfirmed',
+      mode: formPreparation.sendStatus === 'submitted_confirmed' ? 'website_contact_submitted_confirmed' : 'website_contact_submit_unconfirmed',
       targetUrl: target.targetUrl,
       chromeOpen,
       sendStatus: formPreparation.sendStatus,
@@ -2944,7 +3093,9 @@ function executableQueueCandidates(items = [], options = {}) {
   const allowWebsiteContact = options.allowWebsiteContact !== false;
   return (Array.isArray(items) ? items : [])
     .filter(item => executableActions.has(item.action))
-    .filter(item => item.url || item.contactUrl || item.website)
+    .filter(item => item.url || item.contactUrl || item.website
+      || verifiedBusinessEmailTarget(item).ok
+      || (recipientEmail(item) && configuredProvider().id))
     .filter(item => !hasNoSafeMessageButton(item) || hasVerifiedInstagramFallback(item))
     .filter(item => allowWebsiteContact || !isWebsiteContactQueueItem(item))
     .filter(item => !blockingAutomationResultFor(item))
@@ -2961,7 +3112,7 @@ const REAL_CUSTOMER_DEVELOPMENT_STATUSES = new Set([
 function buildExecutionTruth(results = []) {
   const rows = Array.isArray(results) ? results : [];
   const chromeOpenedCount = rows.filter(item => item && item.chromeOpen && item.chromeOpen.ok).length;
-  const customerMessageSent = rows.some(item => item && item.sendStatus === 'sent_confirmed');
+    const customerMessageSent = rows.some(item => item && ['sent_confirmed', 'submitted_confirmed'].includes(item.sendStatus));
   const realDevelopmentCount = rows.filter(item => item && REAL_CUSTOMER_DEVELOPMENT_STATUSES.has(item.sendStatus)).length;
   return {
     executionPhase: chromeOpenedCount ? 'browser_execution' : 'no_browser_execution',
@@ -3038,6 +3189,32 @@ function executionRecoveryActions(blockerSummary = [], queueGoalStatus = null) {
       description: 'Set WEBSITE_MARKETING_FILE or MARKETING_ATTACHMENT_PATH before rerunning website-contact outreach.',
       hint: 'Configure WEBSITE_MARKETING_FILE or MARKETING_ATTACHMENT_PATH with an approved marketing attachment before rerunning website-contact outreach.',
       requiredEnv: ['WEBSITE_MARKETING_FILE', 'MARKETING_ATTACHMENT_PATH'],
+    });
+  }
+  if (reasons.has('email_sender_not_configured')) {
+    actions.push({
+      reason: 'email_sender_not_configured',
+      action: 'Configure Alibaba Mail delivery confirmation',
+      description: 'Set the FLEXTAIL sender, Alibaba SMTP user, and Alibaba third-party security password.',
+      hint: 'Configure Alibaba Mail SMTP/IMAP credentials so verified business emails can be sent and confirmed in Sent.',
+      requiredEnv: ['OUTREACH_EMAIL_FROM', 'ALIBABA_SMTP_USER', 'ALIBABA_SMTP_SECURITY_PASSWORD'],
+    });
+  }
+  if (reasons.has('public_business_email_requires_verification') || reasons.has('verified_public_email_missing')) {
+    actions.push({
+      reason: 'email_target_verification_required',
+      action: 'Verify public business email evidence',
+      description: 'Use an official website mailto address or a deliverable result from the configured email verifier.',
+      hint: 'Verify the recipient as an official public business email before enabling email outreach.',
+      requiredEnv: ['HUNTER_API_KEY', 'ZEROBOUNCE_API_KEY', 'NEVERBOUNCE_API_KEY'],
+    });
+  }
+  if (reasons.has('website_contact_unreachable_skip')) {
+    actions.push({
+      reason: 'website_contact_unreachable_skip',
+      action: 'Use verified alternate channel',
+      description: 'The official website route was exhausted; continue with verified Email, LinkedIn, Facebook, or Instagram evidence.',
+      hint: 'Use a verified alternate channel instead of repeatedly probing the failed website route.',
     });
   }
   if (reasons.has('missing_verified_profile_url')) {
@@ -3217,6 +3394,7 @@ async function runDailyAutomationQueue(payload = {}) {
     executable.push(item);
     if (executable.length >= limit) break;
   }
+  const bounceReconciliation = await reconcileAlibabaBounceResults();
   [...latest.dailyQueue, ...(latest.scheduledLater || []), ...(latest.dailyPotentialPool || [])]
     .filter(item => !executable.some(run => run.id === item.id))
     .filter(item => !skipped.some(run => run.id === item.id))
@@ -3260,6 +3438,7 @@ async function runDailyAutomationQueue(payload = {}) {
       blockerCounts,
       queueGoalStatus,
       summary: latest.summary || {},
+      bounceReconciliation,
     };
   }
 
@@ -3424,6 +3603,7 @@ async function runDailyAutomationQueue(payload = {}) {
     recoveryHint,
     recoveryActions,
     systemRefresh,
+    bounceReconciliation,
   };
 }
 
