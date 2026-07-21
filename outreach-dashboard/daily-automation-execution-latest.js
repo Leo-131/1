@@ -1,9 +1,9 @@
 window.DAILY_AUTOMATION_EXECUTION_LATEST = {
   "ok": false,
-  "executionPhase": "browser_execution",
-  "chromeStage": "opened",
-  "chromeOpened": true,
-  "chromeOpenedCount": 1,
+  "executionPhase": "no_browser_execution",
+  "chromeStage": "not_started",
+  "chromeOpened": false,
+  "chromeOpenedCount": 0,
   "customerDevelopmentPerformed": false,
   "customerMessageSent": false,
   "realDevelopmentCount": 0,
@@ -17,107 +17,147 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
   "queueSource": "dailyQueue",
   "executed": [
     {
-      "id": "google-customer-bergfreunde-instagram",
-      "company": "Bergfreunde",
-      "action": "develop",
-      "platform": "instagram",
-      "targetUrl": "https://www.instagram.com/bergfreunde/",
+      "id": "google-customer-bivouac-outdoor-website-contact",
+      "company": "Bivouac Outdoor",
+      "action": "verify_target",
+      "platform": "email",
+      "targetUrl": "https://www.bivouac.co.nz/",
       "ok": false,
-      "sendStatus": "failed_open",
-      "evidence": "instagram_message_button_clicked_composer_not_found",
-      "chromeOpen": {
-        "ok": true,
-        "engine": "codex-chrome-extension-cdp",
-        "port": 9224,
-        "targetUrl": "https://www.instagram.com/bergfreunde/",
-        "tabId": "4EF595227F85BE5D93D33DAC2285E971",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/4EF595227F85BE5D93D33DAC2285E971",
-        "title": "Bergfreunde (@bergfreunde) · Instagram 照片和视频"
-      },
+      "sendStatus": "approval_pending",
+      "evidence": "alibaba_webmail_compose_unavailable;contact_path_strategy_v2",
+      "chromeOpen": null,
       "result": {
         "ok": false,
-        "engine": "codex-chrome-extension-cdp",
-        "browserEngine": "codex-chrome-extension-cdp",
-        "mode": "codex_chrome_extension_only",
-        "targetUrl": "https://www.instagram.com/bergfreunde/",
-        "chromeOpen": {
-          "ok": true,
-          "engine": "codex-chrome-extension-cdp",
-          "port": 9224,
-          "targetUrl": "https://www.instagram.com/bergfreunde/",
-          "tabId": "4EF595227F85BE5D93D33DAC2285E971",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/4EF595227F85BE5D93D33DAC2285E971",
-          "title": "Bergfreunde (@bergfreunde) · Instagram 照片和视频"
-        },
-        "sendStatus": "failed_open",
-        "output": "{\"verdict\":\"major_bug_review_needed\",\"evidence\":\"instagram_message_button_clicked_composer_not_found\",\"nextAction\":\"Composer not detected; pause automation and notify operator only if retry would be unsafe.\",\"draft\":\"Hi Bergfreunde team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a retail/category buyer, the strongest fit is assortment fit, new SKU pipeline, price-tier coverage, and proven consumer demand; your verified outdoor, camping, travel and consumer electronics retail channel focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the category buyer or vendor-review owner for a short intro video meeting?\",\"sendStatus\":\"failed_open\"}",
-        "decision": {
-          "verdict": "develop",
-          "fitScore": 91,
-          "reason": "local_codex_extension_template",
-          "draft": "Hi Bergfreunde team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a retail/category buyer, the strongest fit is assortment fit, new SKU pipeline, price-tier coverage, and proven consumer demand; your verified outdoor, camping, travel and consumer electronics retail channel focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the category buyer or vendor-review owner for a short intro video meeting?"
-        },
-        "executionLayer": "Codex Chrome Extension only",
-        "glmModel": "not_used",
-        "followup": false
+        "sendStatus": "approval_pending",
+        "reason": "alibaba_webmail_compose_unavailable",
+        "evidence": "alibaba_webmail_compose_unavailable;contact_path_strategy_v2",
+        "engine": "alibaba-enterprise-mail-smtp-imap",
+        "mode": "alibaba_email_delivery_unconfirmed",
+        "targetUrl": "mailto:web@bivouac.co.nz",
+        "subject": "FLEXTAIL retail partnership | 2026 assortment",
+        "draft": "Dear Bivouac Outdoor Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
+        "output": "{\"verdict\":\"approval_pending\",\"sendStatus\":\"approval_pending\",\"evidence\":\"alibaba_webmail_compose_unavailable;contact_path_strategy_v2\",\"nextAction\":\"Do not resend automatically; inspect the Alibaba Mail delivery and Sent-folder evidence.\",\"recipientEmail\":\"web@bivouac.co.nz\",\"messageId\":\"\"}"
+      }
+    },
+    {
+      "id": "google-customer-wildfire-sports-website-contact",
+      "company": "Wildfire Sports",
+      "action": "verify_target",
+      "platform": "email",
+      "targetUrl": "https://www.wildfiresports.com.au/",
+      "ok": false,
+      "sendStatus": "approval_pending",
+      "evidence": "alibaba_webmail_compose_unavailable;contact_path_strategy_v2",
+      "chromeOpen": null,
+      "result": {
+        "ok": false,
+        "sendStatus": "approval_pending",
+        "reason": "alibaba_webmail_compose_unavailable",
+        "evidence": "alibaba_webmail_compose_unavailable;contact_path_strategy_v2",
+        "engine": "alibaba-enterprise-mail-smtp-imap",
+        "mode": "alibaba_email_delivery_unconfirmed",
+        "targetUrl": "mailto:enquiries@wildfiresports.com.au",
+        "subject": "FLEXTAIL retail partnership | 2026 assortment",
+        "draft": "Dear Wildfire Sports Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
+        "output": "{\"verdict\":\"approval_pending\",\"sendStatus\":\"approval_pending\",\"evidence\":\"alibaba_webmail_compose_unavailable;contact_path_strategy_v2\",\"nextAction\":\"Do not resend automatically; inspect the Alibaba Mail delivery and Sent-folder evidence.\",\"recipientEmail\":\"enquiries@wildfiresports.com.au\",\"messageId\":\"\"}"
+      }
+    },
+    {
+      "id": "google-customer-further-faster-website-contact",
+      "company": "Further Faster",
+      "action": "verify_target",
+      "platform": "email",
+      "targetUrl": "https://www.furtherfaster.co.nz/",
+      "ok": false,
+      "sendStatus": "approval_pending",
+      "evidence": "alibaba_webmail_compose_button_missing;contact_path_strategy_v2",
+      "chromeOpen": null,
+      "result": {
+        "ok": false,
+        "sendStatus": "approval_pending",
+        "reason": "alibaba_webmail_compose_unavailable",
+        "evidence": "alibaba_webmail_compose_button_missing;contact_path_strategy_v2",
+        "engine": "alibaba-enterprise-mail-smtp-imap",
+        "mode": "alibaba_email_delivery_unconfirmed",
+        "targetUrl": "mailto:hello@furtherfaster.co.nz",
+        "subject": "FLEXTAIL retail partnership | 2026 assortment",
+        "draft": "Dear Further Faster Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
+        "output": "{\"verdict\":\"approval_pending\",\"sendStatus\":\"approval_pending\",\"evidence\":\"alibaba_webmail_compose_button_missing;contact_path_strategy_v2\",\"nextAction\":\"Do not resend automatically; inspect the Alibaba Mail delivery and Sent-folder evidence.\",\"recipientEmail\":\"hello@furtherfaster.co.nz\",\"messageId\":\"\"}"
       }
     }
   ],
   "results": [
     {
-      "id": "google-customer-bergfreunde-instagram",
-      "company": "Bergfreunde",
-      "action": "develop",
-      "platform": "instagram",
-      "targetUrl": "https://www.instagram.com/bergfreunde/",
+      "id": "google-customer-bivouac-outdoor-website-contact",
+      "company": "Bivouac Outdoor",
+      "action": "verify_target",
+      "platform": "email",
+      "targetUrl": "https://www.bivouac.co.nz/",
       "ok": false,
-      "sendStatus": "failed_open",
-      "evidence": "instagram_message_button_clicked_composer_not_found",
-      "chromeOpen": {
-        "ok": true,
-        "engine": "codex-chrome-extension-cdp",
-        "port": 9224,
-        "targetUrl": "https://www.instagram.com/bergfreunde/",
-        "tabId": "4EF595227F85BE5D93D33DAC2285E971",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/4EF595227F85BE5D93D33DAC2285E971",
-        "title": "Bergfreunde (@bergfreunde) · Instagram 照片和视频"
-      },
+      "sendStatus": "approval_pending",
+      "evidence": "alibaba_webmail_compose_unavailable;contact_path_strategy_v2",
+      "chromeOpen": null,
       "result": {
         "ok": false,
-        "engine": "codex-chrome-extension-cdp",
-        "browserEngine": "codex-chrome-extension-cdp",
-        "mode": "codex_chrome_extension_only",
-        "targetUrl": "https://www.instagram.com/bergfreunde/",
-        "chromeOpen": {
-          "ok": true,
-          "engine": "codex-chrome-extension-cdp",
-          "port": 9224,
-          "targetUrl": "https://www.instagram.com/bergfreunde/",
-          "tabId": "4EF595227F85BE5D93D33DAC2285E971",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/4EF595227F85BE5D93D33DAC2285E971",
-          "title": "Bergfreunde (@bergfreunde) · Instagram 照片和视频"
-        },
-        "sendStatus": "failed_open",
-        "output": "{\"verdict\":\"major_bug_review_needed\",\"evidence\":\"instagram_message_button_clicked_composer_not_found\",\"nextAction\":\"Composer not detected; pause automation and notify operator only if retry would be unsafe.\",\"draft\":\"Hi Bergfreunde team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a retail/category buyer, the strongest fit is assortment fit, new SKU pipeline, price-tier coverage, and proven consumer demand; your verified outdoor, camping, travel and consumer electronics retail channel focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the category buyer or vendor-review owner for a short intro video meeting?\",\"sendStatus\":\"failed_open\"}",
-        "decision": {
-          "verdict": "develop",
-          "fitScore": 91,
-          "reason": "local_codex_extension_template",
-          "draft": "Hi Bergfreunde team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a retail/category buyer, the strongest fit is assortment fit, new SKU pipeline, price-tier coverage, and proven consumer demand; your verified outdoor, camping, travel and consumer electronics retail channel focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the category buyer or vendor-review owner for a short intro video meeting?"
-        },
-        "executionLayer": "Codex Chrome Extension only",
-        "glmModel": "not_used",
-        "followup": false
+        "sendStatus": "approval_pending",
+        "reason": "alibaba_webmail_compose_unavailable",
+        "evidence": "alibaba_webmail_compose_unavailable;contact_path_strategy_v2",
+        "engine": "alibaba-enterprise-mail-smtp-imap",
+        "mode": "alibaba_email_delivery_unconfirmed",
+        "targetUrl": "mailto:web@bivouac.co.nz",
+        "subject": "FLEXTAIL retail partnership | 2026 assortment",
+        "draft": "Dear Bivouac Outdoor Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
+        "output": "{\"verdict\":\"approval_pending\",\"sendStatus\":\"approval_pending\",\"evidence\":\"alibaba_webmail_compose_unavailable;contact_path_strategy_v2\",\"nextAction\":\"Do not resend automatically; inspect the Alibaba Mail delivery and Sent-folder evidence.\",\"recipientEmail\":\"web@bivouac.co.nz\",\"messageId\":\"\"}"
       }
-    }
-  ],
-  "skipped": [
+    },
     {
       "id": "google-customer-wildfire-sports-website-contact",
       "company": "Wildfire Sports",
       "action": "verify_target",
-      "reason": "homepage_only_contact_path_requires_verification"
+      "platform": "email",
+      "targetUrl": "https://www.wildfiresports.com.au/",
+      "ok": false,
+      "sendStatus": "approval_pending",
+      "evidence": "alibaba_webmail_compose_unavailable;contact_path_strategy_v2",
+      "chromeOpen": null,
+      "result": {
+        "ok": false,
+        "sendStatus": "approval_pending",
+        "reason": "alibaba_webmail_compose_unavailable",
+        "evidence": "alibaba_webmail_compose_unavailable;contact_path_strategy_v2",
+        "engine": "alibaba-enterprise-mail-smtp-imap",
+        "mode": "alibaba_email_delivery_unconfirmed",
+        "targetUrl": "mailto:enquiries@wildfiresports.com.au",
+        "subject": "FLEXTAIL retail partnership | 2026 assortment",
+        "draft": "Dear Wildfire Sports Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
+        "output": "{\"verdict\":\"approval_pending\",\"sendStatus\":\"approval_pending\",\"evidence\":\"alibaba_webmail_compose_unavailable;contact_path_strategy_v2\",\"nextAction\":\"Do not resend automatically; inspect the Alibaba Mail delivery and Sent-folder evidence.\",\"recipientEmail\":\"enquiries@wildfiresports.com.au\",\"messageId\":\"\"}"
+      }
     },
+    {
+      "id": "google-customer-further-faster-website-contact",
+      "company": "Further Faster",
+      "action": "verify_target",
+      "platform": "email",
+      "targetUrl": "https://www.furtherfaster.co.nz/",
+      "ok": false,
+      "sendStatus": "approval_pending",
+      "evidence": "alibaba_webmail_compose_button_missing;contact_path_strategy_v2",
+      "chromeOpen": null,
+      "result": {
+        "ok": false,
+        "sendStatus": "approval_pending",
+        "reason": "alibaba_webmail_compose_unavailable",
+        "evidence": "alibaba_webmail_compose_button_missing;contact_path_strategy_v2",
+        "engine": "alibaba-enterprise-mail-smtp-imap",
+        "mode": "alibaba_email_delivery_unconfirmed",
+        "targetUrl": "mailto:hello@furtherfaster.co.nz",
+        "subject": "FLEXTAIL retail partnership | 2026 assortment",
+        "draft": "Dear Further Faster Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
+        "output": "{\"verdict\":\"approval_pending\",\"sendStatus\":\"approval_pending\",\"evidence\":\"alibaba_webmail_compose_button_missing;contact_path_strategy_v2\",\"nextAction\":\"Do not resend automatically; inspect the Alibaba Mail delivery and Sent-folder evidence.\",\"recipientEmail\":\"hello@furtherfaster.co.nz\",\"messageId\":\"\"}"
+      }
+    }
+  ],
+  "skipped": [
     {
       "id": "google-customer-tentworld-website-contact",
       "company": "Tentworld",
@@ -347,18 +387,6 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "reason": "homepage_only_contact_path_requires_verification"
     },
     {
-      "id": "google-customer-bivouac-outdoor-website-contact",
-      "company": "Bivouac Outdoor",
-      "action": "verify_target",
-      "reason": "homepage_only_contact_path_requires_verification"
-    },
-    {
-      "id": "google-customer-further-faster-website-contact",
-      "company": "Further Faster",
-      "action": "verify_target",
-      "reason": "homepage_only_contact_path_requires_verification"
-    },
-    {
       "id": "google-customer-transa-website-contact",
       "company": "Transa",
       "action": "verify_target",
@@ -495,6 +523,12 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "company": "Tentworld NZ",
       "action": "develop",
       "reason": "concrete_google_discovered_major_customer_facebook"
+    },
+    {
+      "id": "google-customer-bergfreunde-instagram",
+      "company": "Bergfreunde",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_instagram"
     },
     {
       "id": "google-customer-8a-pl-instagram",
@@ -905,24 +939,6 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "reason": "homepage_only_contact_path_requires_verification"
     },
     {
-      "id": "google-customer-bivouac-outdoor-website-contact",
-      "company": "Bivouac Outdoor",
-      "action": "email_priority",
-      "reason": "homepage_only_contact_path_requires_verification"
-    },
-    {
-      "id": "google-customer-wildfire-sports-website-contact",
-      "company": "Wildfire Sports",
-      "action": "email_priority",
-      "reason": "homepage_only_contact_path_requires_verification"
-    },
-    {
-      "id": "google-customer-further-faster-website-contact",
-      "company": "Further Faster",
-      "action": "email_priority",
-      "reason": "homepage_only_contact_path_requires_verification"
-    },
-    {
       "id": "google-customer-tentworld-website-contact",
       "company": "Tentworld",
       "action": "email_priority",
@@ -1023,6 +1039,12 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "company": "Tentworld NZ",
       "action": "develop",
       "reason": "concrete_google_discovered_major_customer_facebook"
+    },
+    {
+      "id": "google-customer-bergfreunde-instagram",
+      "company": "Bergfreunde",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_instagram"
     },
     {
       "id": "google-customer-8a-pl-instagram",
@@ -1302,12 +1324,12 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     {
       "reason": "homepage_only_contact_path_requires_verification",
       "status": "skipped",
-      "count": 80
+      "count": 74
     },
     {
       "reason": "concrete_google_discovered_major_customer_instagram",
       "status": "skipped",
-      "count": 36
+      "count": 38
     },
     {
       "reason": "missing_verified_profile_url",
@@ -1325,18 +1347,18 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "count": 16
     },
     {
-      "reason": "failed_open",
-      "status": "failed_open",
-      "count": 1
+      "reason": "alibaba_webmail_compose_unavailable",
+      "status": "approval_pending",
+      "count": 3
     }
   ],
   "blockerCounts": {
-    "homepage_only_contact_path_requires_verification": 80,
-    "concrete_google_discovered_major_customer_instagram": 36,
+    "homepage_only_contact_path_requires_verification": 74,
+    "concrete_google_discovered_major_customer_instagram": 38,
     "missing_verified_profile_url": 32,
     "concrete_google_discovered_major_customer_facebook": 30,
     "official_website_contact_channel": 16,
-    "failed_open": 1
+    "alibaba_webmail_compose_unavailable": 3
   },
   "queueGoalStatus": {
     "target": 100,
@@ -1347,8 +1369,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     "reached": false,
     "action": "Add more verified high-ICP sources or unblock existing website/social leads."
   },
-  "userVisibleStatus": "Customer development was not performed. Blockers: homepage_only_contact_path_requires_verification (80); concrete_google_discovered_major_customer_instagram (36); missing_verified_profile_url (32).",
-  "recoveryHint": "Refill the high-ICP pool with 2 verified leads or unblock existing website/social leads before the next run. Add a verified Facebook or Instagram profile URL before retrying social outreach. Confirm the official social profile and safe message entry before rerunning Google-discovered social outreach. Verify the official profile opens and exposes a safe message composer, or switch to another verified channel.",
+  "userVisibleStatus": "Customer development was not performed. Blockers: homepage_only_contact_path_requires_verification (74); concrete_google_discovered_major_customer_instagram (38); missing_verified_profile_url (32).",
+  "recoveryHint": "Refill the high-ICP pool with 2 verified leads or unblock existing website/social leads before the next run. Add a verified Facebook or Instagram profile URL before retrying social outreach. Confirm the official social profile and safe message entry before rerunning Google-discovered social outreach.",
   "recoveryActions": [
     {
       "reason": "daily_queue_goal_not_reached",
@@ -1370,12 +1392,6 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "action": "Complete Google social channel verification",
       "description": "Confirm the official social profile and safe message entry before rerunning Google-discovered social outreach.",
       "hint": "Confirm the official social profile and safe message entry before rerunning Google-discovered social outreach."
-    },
-    {
-      "reason": "failed_open",
-      "action": "Verify profile accessibility",
-      "description": "Open the official profile manually or switch to another verified channel before retrying.",
-      "hint": "Verify the official profile opens and exposes a safe message composer, or switch to another verified channel."
     }
   ],
   "systemRefresh": {
@@ -1384,12 +1400,12 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     "stderr": "",
     "error": "",
     "visibility": {
-      "updatedAt": "2026-07-21T05:24:58.947Z",
+      "updatedAt": "2026-07-21T05:28:05.927Z",
       "source": "main-refreshDailyAutomationArtifacts",
       "runDate": "2026-07-21",
-      "artifactGeneratedAt": "2026-07-21T05:24:57.837Z",
-      "executionGeneratedAt": "2026-07-21T05:21:40.168Z",
-      "githubSyncUpdatedAt": "2026-07-21T05:23:21.016Z",
+      "artifactGeneratedAt": "2026-07-21T05:28:04.159Z",
+      "executionGeneratedAt": "2026-07-21T05:24:59.930Z",
+      "githubSyncUpdatedAt": "2026-07-21T05:26:29.299Z",
       "counts": {
         "dailyQueue": 98,
         "googleDiscovered": 74,
@@ -1451,5 +1467,5 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "ALIBABA_SMTP_SECURITY_PASSWORD"
     ]
   },
-  "completedAt": "2026-07-21T05:24:59.930Z"
+  "completedAt": "2026-07-21T05:28:06.381Z"
 };
