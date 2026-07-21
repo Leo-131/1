@@ -236,7 +236,7 @@ const COMPANY_HISTORY_BLOCKING_STATUSES = new Set([
   'account_followed',
   'post_liked',
 ]);
-const DEFAULT_DAILY_SOCIAL_EXECUTION_LIMIT = 4;
+const DEFAULT_DAILY_SOCIAL_EXECUTION_LIMIT = 13;
 
 function historicalAutomationResultBlocksCompany(result = {}) {
   if (COMPANY_HISTORY_BLOCKING_STATUSES.has(result.status)) {
@@ -257,6 +257,12 @@ function blockingAutomationResultFor(item) {
   const companyBlocking = new Set(['sent_confirmed', 'send_unconfirmed', 'account_followed', 'post_liked']);
   return results
     .filter((result) => result && (blocking.has(result.status) || historicalAutomationResultBlocksCompany(result)))
+    // A prepared/unreachable website path is a bounded attempt, not a
+    // permanent suppression. Keep the same Shanghai-day lock to prevent
+    // duplicate submissions, then allow the official path to be inspected
+    // again on a later business day.
+    .filter((result) => !['website_contact_ready', 'website_contact_unreachable_skip'].includes(result.status)
+      || isSameAutomationDay(result.timestamp))
     .filter((result) => result.status !== 'send_unconfirmed' || sendStatusHasCustomerInteraction(result.status, result.evidence))
     .filter((result) => result.status !== 'failed_open' || failedOpenResultShouldBlockRetry(result) || historicalAutomationResultBlocksCompany(result))
     .find((result) => {
@@ -2905,8 +2911,7 @@ let currentDailyExecutionProgress = null;
 
 const REAL_CUSTOMER_DEVELOPMENT_STATUSES = new Set([
   'sent_confirmed',
-  'account_followed',
-  'post_liked',
+  'submitted_confirmed',
 ]);
 
 function buildExecutionTruth(results = []) {
