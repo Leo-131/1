@@ -24,19 +24,19 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "targetUrl": "https://www.bivouac.co.nz/",
       "ok": false,
       "sendStatus": "approval_pending",
-      "evidence": "alibaba_webmail_draft_inserted;alibaba_webmail_draft_verification_failed;contact_path_strategy_v2",
+      "evidence": "alibaba_webmail_compose_button_missing;contact_path_strategy_v2",
       "chromeOpen": null,
       "result": {
         "ok": false,
         "sendStatus": "approval_pending",
-        "reason": "alibaba_webmail_draft_verification_failed",
-        "evidence": "alibaba_webmail_draft_inserted;alibaba_webmail_draft_verification_failed;contact_path_strategy_v2",
+        "reason": "alibaba_webmail_compose_unavailable",
+        "evidence": "alibaba_webmail_compose_button_missing;contact_path_strategy_v2",
         "engine": "alibaba-enterprise-mail-smtp-imap",
         "mode": "alibaba_email_delivery_unconfirmed",
         "targetUrl": "mailto:web@bivouac.co.nz",
         "subject": "FLEXTAIL retail partnership | 2026 assortment",
         "draft": "Dear Bivouac Outdoor Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
-        "output": "{\"verdict\":\"approval_pending\",\"sendStatus\":\"approval_pending\",\"evidence\":\"alibaba_webmail_draft_inserted;alibaba_webmail_draft_verification_failed;contact_path_strategy_v2\",\"nextAction\":\"Do not resend automatically; inspect the Alibaba Mail delivery and Sent-folder evidence.\",\"recipientEmail\":\"web@bivouac.co.nz\",\"messageId\":\"\"}"
+        "output": "{\"verdict\":\"approval_pending\",\"sendStatus\":\"approval_pending\",\"evidence\":\"alibaba_webmail_compose_button_missing;contact_path_strategy_v2\",\"nextAction\":\"Do not resend automatically; inspect the Alibaba Mail delivery and Sent-folder evidence.\",\"recipientEmail\":\"web@bivouac.co.nz\",\"messageId\":\"\"}"
       }
     },
     {
@@ -47,19 +47,19 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "targetUrl": "https://www.wildfiresports.com.au/",
       "ok": false,
       "sendStatus": "approval_pending",
-      "evidence": "alibaba_webmail_draft_inserted;alibaba_webmail_draft_verification_failed;contact_path_strategy_v2",
+      "evidence": "alibaba_webmail_compose_button_missing;contact_path_strategy_v2",
       "chromeOpen": null,
       "result": {
         "ok": false,
         "sendStatus": "approval_pending",
-        "reason": "alibaba_webmail_draft_verification_failed",
-        "evidence": "alibaba_webmail_draft_inserted;alibaba_webmail_draft_verification_failed;contact_path_strategy_v2",
+        "reason": "alibaba_webmail_compose_unavailable",
+        "evidence": "alibaba_webmail_compose_button_missing;contact_path_strategy_v2",
         "engine": "alibaba-enterprise-mail-smtp-imap",
         "mode": "alibaba_email_delivery_unconfirmed",
         "targetUrl": "mailto:enquiries@wildfiresports.com.au",
         "subject": "FLEXTAIL retail partnership | 2026 assortment",
         "draft": "Dear Wildfire Sports Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
-        "output": "{\"verdict\":\"approval_pending\",\"sendStatus\":\"approval_pending\",\"evidence\":\"alibaba_webmail_draft_inserted;alibaba_webmail_draft_verification_failed;contact_path_strategy_v2\",\"nextAction\":\"Do not resend automatically; inspect the Alibaba Mail delivery and Sent-folder evidence.\",\"recipientEmail\":\"enquiries@wildfiresports.com.au\",\"messageId\":\"\"}"
+        "output": "{\"verdict\":\"approval_pending\",\"sendStatus\":\"approval_pending\",\"evidence\":\"alibaba_webmail_compose_button_missing;contact_path_strategy_v2\",\"nextAction\":\"Do not resend automatically; inspect the Alibaba Mail delivery and Sent-folder evidence.\",\"recipientEmail\":\"enquiries@wildfiresports.com.au\",\"messageId\":\"\"}"
       }
     },
     {
@@ -76,9 +76,9 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
         "engine": "codex-chrome-extension-cdp",
         "port": 9224,
         "targetUrl": "https://www.instagram.com/bergfreunde/",
-        "tabId": "7719AB3343D52A634A8A296043653985",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/7719AB3343D52A634A8A296043653985",
-        "title": ""
+        "tabId": "08DDACD8BD10BB7883F4084516F73234",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/08DDACD8BD10BB7883F4084516F73234",
+        "title": "Bergfreunde (@bergfreunde) · Instagram 照片和视频"
       },
       "result": {
         "ok": false,
@@ -91,9 +91,9 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
           "engine": "codex-chrome-extension-cdp",
           "port": 9224,
           "targetUrl": "https://www.instagram.com/bergfreunde/",
-          "tabId": "7719AB3343D52A634A8A296043653985",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/7719AB3343D52A634A8A296043653985",
-          "title": ""
+          "tabId": "08DDACD8BD10BB7883F4084516F73234",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/08DDACD8BD10BB7883F4084516F73234",
+          "title": "Bergfreunde (@bergfreunde) · Instagram 照片和视频"
         },
         "sendStatus": "failed_open",
         "output": "{\"verdict\":\"major_bug_review_needed\",\"evidence\":\"instagram_message_button_clicked_composer_not_found\",\"nextAction\":\"Composer not detected; pause automation and notify operator only if retry would be unsafe.\",\"draft\":\"Hi Bergfreunde team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a retail/category buyer, the strongest fit is assortment fit, new SKU pipeline, price-tier coverage, and proven consumer demand; your verified outdoor, camping, travel and consumer electronics retail channel focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the category buyer or vendor-review owner for a short intro video meeting?\",\"sendStatus\":\"failed_open\"}",
@@ -118,19 +118,19 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "targetUrl": "https://www.bivouac.co.nz/",
       "ok": false,
       "sendStatus": "approval_pending",
-      "evidence": "alibaba_webmail_draft_inserted;alibaba_webmail_draft_verification_failed;contact_path_strategy_v2",
+      "evidence": "alibaba_webmail_compose_button_missing;contact_path_strategy_v2",
       "chromeOpen": null,
       "result": {
         "ok": false,
         "sendStatus": "approval_pending",
-        "reason": "alibaba_webmail_draft_verification_failed",
-        "evidence": "alibaba_webmail_draft_inserted;alibaba_webmail_draft_verification_failed;contact_path_strategy_v2",
+        "reason": "alibaba_webmail_compose_unavailable",
+        "evidence": "alibaba_webmail_compose_button_missing;contact_path_strategy_v2",
         "engine": "alibaba-enterprise-mail-smtp-imap",
         "mode": "alibaba_email_delivery_unconfirmed",
         "targetUrl": "mailto:web@bivouac.co.nz",
         "subject": "FLEXTAIL retail partnership | 2026 assortment",
         "draft": "Dear Bivouac Outdoor Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
-        "output": "{\"verdict\":\"approval_pending\",\"sendStatus\":\"approval_pending\",\"evidence\":\"alibaba_webmail_draft_inserted;alibaba_webmail_draft_verification_failed;contact_path_strategy_v2\",\"nextAction\":\"Do not resend automatically; inspect the Alibaba Mail delivery and Sent-folder evidence.\",\"recipientEmail\":\"web@bivouac.co.nz\",\"messageId\":\"\"}"
+        "output": "{\"verdict\":\"approval_pending\",\"sendStatus\":\"approval_pending\",\"evidence\":\"alibaba_webmail_compose_button_missing;contact_path_strategy_v2\",\"nextAction\":\"Do not resend automatically; inspect the Alibaba Mail delivery and Sent-folder evidence.\",\"recipientEmail\":\"web@bivouac.co.nz\",\"messageId\":\"\"}"
       }
     },
     {
@@ -141,19 +141,19 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "targetUrl": "https://www.wildfiresports.com.au/",
       "ok": false,
       "sendStatus": "approval_pending",
-      "evidence": "alibaba_webmail_draft_inserted;alibaba_webmail_draft_verification_failed;contact_path_strategy_v2",
+      "evidence": "alibaba_webmail_compose_button_missing;contact_path_strategy_v2",
       "chromeOpen": null,
       "result": {
         "ok": false,
         "sendStatus": "approval_pending",
-        "reason": "alibaba_webmail_draft_verification_failed",
-        "evidence": "alibaba_webmail_draft_inserted;alibaba_webmail_draft_verification_failed;contact_path_strategy_v2",
+        "reason": "alibaba_webmail_compose_unavailable",
+        "evidence": "alibaba_webmail_compose_button_missing;contact_path_strategy_v2",
         "engine": "alibaba-enterprise-mail-smtp-imap",
         "mode": "alibaba_email_delivery_unconfirmed",
         "targetUrl": "mailto:enquiries@wildfiresports.com.au",
         "subject": "FLEXTAIL retail partnership | 2026 assortment",
         "draft": "Dear Wildfire Sports Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
-        "output": "{\"verdict\":\"approval_pending\",\"sendStatus\":\"approval_pending\",\"evidence\":\"alibaba_webmail_draft_inserted;alibaba_webmail_draft_verification_failed;contact_path_strategy_v2\",\"nextAction\":\"Do not resend automatically; inspect the Alibaba Mail delivery and Sent-folder evidence.\",\"recipientEmail\":\"enquiries@wildfiresports.com.au\",\"messageId\":\"\"}"
+        "output": "{\"verdict\":\"approval_pending\",\"sendStatus\":\"approval_pending\",\"evidence\":\"alibaba_webmail_compose_button_missing;contact_path_strategy_v2\",\"nextAction\":\"Do not resend automatically; inspect the Alibaba Mail delivery and Sent-folder evidence.\",\"recipientEmail\":\"enquiries@wildfiresports.com.au\",\"messageId\":\"\"}"
       }
     },
     {
@@ -170,9 +170,9 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
         "engine": "codex-chrome-extension-cdp",
         "port": 9224,
         "targetUrl": "https://www.instagram.com/bergfreunde/",
-        "tabId": "7719AB3343D52A634A8A296043653985",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/7719AB3343D52A634A8A296043653985",
-        "title": ""
+        "tabId": "08DDACD8BD10BB7883F4084516F73234",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/08DDACD8BD10BB7883F4084516F73234",
+        "title": "Bergfreunde (@bergfreunde) · Instagram 照片和视频"
       },
       "result": {
         "ok": false,
@@ -185,9 +185,9 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
           "engine": "codex-chrome-extension-cdp",
           "port": 9224,
           "targetUrl": "https://www.instagram.com/bergfreunde/",
-          "tabId": "7719AB3343D52A634A8A296043653985",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/7719AB3343D52A634A8A296043653985",
-          "title": ""
+          "tabId": "08DDACD8BD10BB7883F4084516F73234",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/08DDACD8BD10BB7883F4084516F73234",
+          "title": "Bergfreunde (@bergfreunde) · Instagram 照片和视频"
         },
         "sendStatus": "failed_open",
         "output": "{\"verdict\":\"major_bug_review_needed\",\"evidence\":\"instagram_message_button_clicked_composer_not_found\",\"nextAction\":\"Composer not detected; pause automation and notify operator only if retry would be unsafe.\",\"draft\":\"Hi Bergfreunde team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a retail/category buyer, the strongest fit is assortment fit, new SKU pipeline, price-tier coverage, and proven consumer demand; your verified outdoor, camping, travel and consumer electronics retail channel focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the category buyer or vendor-review owner for a short intro video meeting?\",\"sendStatus\":\"failed_open\"}",
@@ -205,92 +205,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
   ],
   "skipped": [
     {
-      "id": "google-customer-trekitt-website-contact",
-      "company": "Trekitt",
-      "action": "verify_target",
-      "reason": "homepage_only_contact_path_requires_verification"
-    },
-    {
-      "id": "google-customer-ultralight-outdoor-gear-website-contact",
-      "company": "Ultralight Outdoor Gear",
-      "action": "verify_target",
-      "reason": "homepage_only_contact_path_requires_verification"
-    },
-    {
-      "id": "google-customer-alpinetrek-website-contact",
-      "company": "Alpinetrek",
-      "action": "verify_target",
-      "reason": "homepage_only_contact_path_requires_verification"
-    },
-    {
-      "id": "google-customer-taunton-leisure-website-contact",
-      "company": "Taunton Leisure",
-      "action": "verify_target",
-      "reason": "homepage_only_contact_path_requires_verification"
-    },
-    {
-      "id": "google-customer-sportpursuit-website-contact",
-      "company": "SportPursuit",
-      "action": "verify_target",
-      "reason": "homepage_only_contact_path_requires_verification"
-    },
-    {
-      "id": "google-customer-above-and-beyond-facebook",
-      "company": "Above and Beyond",
-      "action": "develop",
-      "reason": "concrete_google_discovered_major_customer_facebook"
-    },
-    {
-      "id": "google-customer-facewest-facebook",
-      "company": "Facewest",
-      "action": "develop",
-      "reason": "concrete_google_discovered_major_customer_facebook"
-    },
-    {
-      "id": "google-customer-ld-mountain-centre-facebook",
-      "company": "LD Mountain Centre",
-      "action": "develop",
-      "reason": "concrete_google_discovered_major_customer_facebook"
-    },
-    {
-      "id": "google-customer-tiso-facebook",
-      "company": "Tiso",
-      "action": "develop",
-      "reason": "concrete_google_discovered_major_customer_facebook"
-    },
-    {
-      "id": "google-customer-above-and-beyond-instagram",
-      "company": "Above and Beyond",
-      "action": "develop",
-      "reason": "concrete_google_discovered_major_customer_instagram"
-    },
-    {
-      "id": "google-customer-facewest-instagram",
-      "company": "Facewest",
-      "action": "develop",
-      "reason": "concrete_google_discovered_major_customer_instagram"
-    },
-    {
-      "id": "google-customer-ld-mountain-centre-instagram",
-      "company": "LD Mountain Centre",
-      "action": "develop",
-      "reason": "concrete_google_discovered_major_customer_instagram"
-    },
-    {
-      "id": "google-customer-tiso-instagram",
-      "company": "Tiso",
-      "action": "develop",
-      "reason": "concrete_google_discovered_major_customer_instagram"
-    },
-    {
       "id": "google-customer-bergfreunde-website-contact",
       "company": "Bergfreunde",
-      "action": "verify_target",
-      "reason": "homepage_only_contact_path_requires_verification"
-    },
-    {
-      "id": "google-customer-obelink-website-contact",
-      "company": "Obelink",
       "action": "verify_target",
       "reason": "homepage_only_contact_path_requires_verification"
     },
@@ -319,14 +235,26 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "reason": "homepage_only_contact_path_requires_verification"
     },
     {
-      "id": "google-customer-barrabes-website-contact",
-      "company": "Barrabes",
+      "id": "google-customer-trekitt-website-contact",
+      "company": "Trekitt",
       "action": "verify_target",
       "reason": "homepage_only_contact_path_requires_verification"
     },
     {
-      "id": "google-customer-de-wit-schijndel-website-contact",
-      "company": "De Wit Schijndel",
+      "id": "google-customer-ultralight-outdoor-gear-website-contact",
+      "company": "Ultralight Outdoor Gear",
+      "action": "verify_target",
+      "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
+      "id": "google-customer-alpinetrek-website-contact",
+      "company": "Alpinetrek",
+      "action": "verify_target",
+      "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
+      "id": "google-customer-barrabes-website-contact",
+      "company": "Barrabes",
       "action": "verify_target",
       "reason": "homepage_only_contact_path_requires_verification"
     },
@@ -355,14 +283,14 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "reason": "homepage_only_contact_path_requires_verification"
     },
     {
-      "id": "google-customer-outdoorxl-website-contact",
-      "company": "OutdoorXL",
+      "id": "google-customer-spejder-sport-website-contact",
+      "company": "Spejder Sport",
       "action": "verify_target",
       "reason": "homepage_only_contact_path_requires_verification"
     },
     {
-      "id": "google-customer-spejder-sport-website-contact",
-      "company": "Spejder Sport",
+      "id": "google-customer-taunton-leisure-website-contact",
+      "company": "Taunton Leisure",
       "action": "verify_target",
       "reason": "homepage_only_contact_path_requires_verification"
     },
@@ -373,8 +301,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "reason": "homepage_only_contact_path_requires_verification"
     },
     {
-      "id": "google-customer-kampeerwereld-hendriks-website-contact",
-      "company": "Kampeerwereld Hendriks",
+      "id": "google-customer-sportpursuit-website-contact",
+      "company": "SportPursuit",
       "action": "verify_target",
       "reason": "homepage_only_contact_path_requires_verification"
     },
@@ -463,14 +391,206 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "reason": "homepage_only_contact_path_requires_verification"
     },
     {
-      "id": "google-customer-tentworld-website-contact",
-      "company": "Tentworld",
+      "id": "google-customer-transa-website-contact",
+      "company": "Transa",
       "action": "verify_target",
       "reason": "homepage_only_contact_path_requires_verification"
     },
     {
-      "id": "google-customer-transa-website-contact",
-      "company": "Transa",
+      "id": "google-customer-above-and-beyond-facebook",
+      "company": "Above and Beyond",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_facebook"
+    },
+    {
+      "id": "google-customer-campz-facebook",
+      "company": "Campz",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_facebook"
+    },
+    {
+      "id": "google-customer-doorout-facebook",
+      "company": "Doorout",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_facebook"
+    },
+    {
+      "id": "google-customer-facewest-facebook",
+      "company": "Facewest",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_facebook"
+    },
+    {
+      "id": "google-customer-ld-mountain-centre-facebook",
+      "company": "LD Mountain Centre",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_facebook"
+    },
+    {
+      "id": "google-customer-tiso-facebook",
+      "company": "Tiso",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_facebook"
+    },
+    {
+      "id": "google-customer-rock-creek-facebook",
+      "company": "Rock/Creek",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_facebook"
+    },
+    {
+      "id": "google-customer-72hours-facebook",
+      "company": "72hours",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_facebook"
+    },
+    {
+      "id": "google-customer-atmosphere-facebook",
+      "company": "Atmosphere",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_facebook"
+    },
+    {
+      "id": "google-customer-eastern-mountain-sports-facebook",
+      "company": "Eastern Mountain Sports",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_facebook"
+    },
+    {
+      "id": "google-customer-jax-outdoor-gear-facebook",
+      "company": "Jax Outdoor Gear",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_facebook"
+    },
+    {
+      "id": "google-customer-moosejaw-facebook",
+      "company": "Moosejaw",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_facebook"
+    },
+    {
+      "id": "google-customer-the-mountaineer-facebook",
+      "company": "The Mountaineer",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_facebook"
+    },
+    {
+      "id": "google-customer-8a-pl-instagram",
+      "company": "8a.pl",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_instagram"
+    },
+    {
+      "id": "google-customer-above-and-beyond-instagram",
+      "company": "Above and Beyond",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_instagram"
+    },
+    {
+      "id": "google-customer-campz-instagram",
+      "company": "Campz",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_instagram"
+    },
+    {
+      "id": "google-customer-doorout-instagram",
+      "company": "Doorout",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_instagram"
+    },
+    {
+      "id": "google-customer-facewest-instagram",
+      "company": "Facewest",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_instagram"
+    },
+    {
+      "id": "google-customer-ld-mountain-centre-instagram",
+      "company": "LD Mountain Centre",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_instagram"
+    },
+    {
+      "id": "google-customer-sklep-podroznika-instagram",
+      "company": "Sklep Podroznika",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_instagram"
+    },
+    {
+      "id": "google-customer-sportler-instagram",
+      "company": "Sportler",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_instagram"
+    },
+    {
+      "id": "google-customer-tiso-instagram",
+      "company": "Tiso",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_instagram"
+    },
+    {
+      "id": "google-customer-rock-creek-instagram",
+      "company": "Rock/Creek",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_instagram"
+    },
+    {
+      "id": "google-customer-next-adventure-instagram",
+      "company": "Next Adventure",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_instagram"
+    },
+    {
+      "id": "google-customer-72hours-instagram",
+      "company": "72hours",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_instagram"
+    },
+    {
+      "id": "google-customer-atmosphere-instagram",
+      "company": "Atmosphere",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_instagram"
+    },
+    {
+      "id": "google-customer-jax-outdoor-gear-instagram",
+      "company": "Jax Outdoor Gear",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_instagram"
+    },
+    {
+      "id": "google-customer-the-mountaineer-instagram",
+      "company": "The Mountaineer",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_instagram"
+    },
+    {
+      "id": "google-customer-obelink-website-contact",
+      "company": "Obelink",
+      "action": "verify_target",
+      "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
+      "id": "google-customer-de-wit-schijndel-website-contact",
+      "company": "De Wit Schijndel",
+      "action": "verify_target",
+      "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
+      "id": "google-customer-outdoorxl-website-contact",
+      "company": "OutdoorXL",
+      "action": "verify_target",
+      "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
+      "id": "google-customer-kampeerwereld-hendriks-website-contact",
+      "company": "Kampeerwereld Hendriks",
+      "action": "verify_target",
+      "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
+      "id": "google-customer-tentworld-website-contact",
+      "company": "Tentworld",
       "action": "verify_target",
       "reason": "homepage_only_contact_path_requires_verification"
     },
@@ -523,60 +643,6 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "reason": "official_website_contact_channel"
     },
     {
-      "id": "google-customer-campz-facebook",
-      "company": "Campz",
-      "action": "develop",
-      "reason": "concrete_google_discovered_major_customer_facebook"
-    },
-    {
-      "id": "google-customer-doorout-facebook",
-      "company": "Doorout",
-      "action": "develop",
-      "reason": "concrete_google_discovered_major_customer_facebook"
-    },
-    {
-      "id": "google-customer-rock-creek-facebook",
-      "company": "Rock/Creek",
-      "action": "develop",
-      "reason": "concrete_google_discovered_major_customer_facebook"
-    },
-    {
-      "id": "google-customer-72hours-facebook",
-      "company": "72hours",
-      "action": "develop",
-      "reason": "concrete_google_discovered_major_customer_facebook"
-    },
-    {
-      "id": "google-customer-atmosphere-facebook",
-      "company": "Atmosphere",
-      "action": "develop",
-      "reason": "concrete_google_discovered_major_customer_facebook"
-    },
-    {
-      "id": "google-customer-eastern-mountain-sports-facebook",
-      "company": "Eastern Mountain Sports",
-      "action": "develop",
-      "reason": "concrete_google_discovered_major_customer_facebook"
-    },
-    {
-      "id": "google-customer-jax-outdoor-gear-facebook",
-      "company": "Jax Outdoor Gear",
-      "action": "develop",
-      "reason": "concrete_google_discovered_major_customer_facebook"
-    },
-    {
-      "id": "google-customer-moosejaw-facebook",
-      "company": "Moosejaw",
-      "action": "develop",
-      "reason": "concrete_google_discovered_major_customer_facebook"
-    },
-    {
-      "id": "google-customer-the-mountaineer-facebook",
-      "company": "The Mountaineer",
-      "action": "develop",
-      "reason": "concrete_google_discovered_major_customer_facebook"
-    },
-    {
       "id": "google-customer-tentworld-australia-facebook",
       "company": "Tentworld Australia",
       "action": "develop",
@@ -589,74 +655,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "reason": "concrete_google_discovered_major_customer_facebook"
     },
     {
-      "id": "google-customer-8a-pl-instagram",
-      "company": "8a.pl",
-      "action": "develop",
-      "reason": "concrete_google_discovered_major_customer_instagram"
-    },
-    {
-      "id": "google-customer-campz-instagram",
-      "company": "Campz",
-      "action": "develop",
-      "reason": "concrete_google_discovered_major_customer_instagram"
-    },
-    {
-      "id": "google-customer-doorout-instagram",
-      "company": "Doorout",
-      "action": "develop",
-      "reason": "concrete_google_discovered_major_customer_instagram"
-    },
-    {
       "id": "google-customer-outdoor-specialist-instagram",
       "company": "Outdoor Specialist",
-      "action": "develop",
-      "reason": "concrete_google_discovered_major_customer_instagram"
-    },
-    {
-      "id": "google-customer-sklep-podroznika-instagram",
-      "company": "Sklep Podroznika",
-      "action": "develop",
-      "reason": "concrete_google_discovered_major_customer_instagram"
-    },
-    {
-      "id": "google-customer-sportler-instagram",
-      "company": "Sportler",
-      "action": "develop",
-      "reason": "concrete_google_discovered_major_customer_instagram"
-    },
-    {
-      "id": "google-customer-rock-creek-instagram",
-      "company": "Rock/Creek",
-      "action": "develop",
-      "reason": "concrete_google_discovered_major_customer_instagram"
-    },
-    {
-      "id": "google-customer-next-adventure-instagram",
-      "company": "Next Adventure",
-      "action": "develop",
-      "reason": "concrete_google_discovered_major_customer_instagram"
-    },
-    {
-      "id": "google-customer-72hours-instagram",
-      "company": "72hours",
-      "action": "develop",
-      "reason": "concrete_google_discovered_major_customer_instagram"
-    },
-    {
-      "id": "google-customer-atmosphere-instagram",
-      "company": "Atmosphere",
-      "action": "develop",
-      "reason": "concrete_google_discovered_major_customer_instagram"
-    },
-    {
-      "id": "google-customer-jax-outdoor-gear-instagram",
-      "company": "Jax Outdoor Gear",
-      "action": "develop",
-      "reason": "concrete_google_discovered_major_customer_instagram"
-    },
-    {
-      "id": "google-customer-the-mountaineer-instagram",
-      "company": "The Mountaineer",
       "action": "develop",
       "reason": "concrete_google_discovered_major_customer_instagram"
     },
@@ -1381,7 +1381,7 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "count": 16
     },
     {
-      "reason": "alibaba_webmail_draft_verification_failed",
+      "reason": "alibaba_webmail_compose_unavailable",
       "status": "approval_pending",
       "count": 2
     },
@@ -1397,7 +1397,7 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     "missing_verified_profile_url": 32,
     "concrete_google_discovered_major_customer_facebook": 30,
     "official_website_contact_channel": 16,
-    "alibaba_webmail_draft_verification_failed": 2,
+    "alibaba_webmail_compose_unavailable": 2,
     "failed_open": 1
   },
   "queueGoalStatus": {
@@ -1441,17 +1441,17 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     }
   ],
   "systemRefresh": {
-    "ok": false,
-    "stdout": "",
-    "stderr": "node:fs:3104\r\n  binding.copyFile(\r\n          ^\r\n\r\nError: UNKNOWN: unknown error, copyfile 'E:\\New project\\outreach-dashboard\\daily-automation-latest.js' -> 'E:\\New project\\outreach-dashboard\\public\\daily-automation-latest.js'\r\n    at Object.copyFileSync (node:fs:3104:11)\r\n    at copyPublicArtifact (E:\\New project\\outreach-dashboard\\daily-automation-runner.js:884:6)\r\n    at Array.forEach (<anonymous>)\r\n    at writeSystemVisibilityArtifact (E:\\New project\\outreach-dashboard\\daily-automation-runner.js:948:5)\r\n    at writeRunArtifacts (E:\\New project\\outreach-dashboard\\daily-automation-runner.js:875:3)\r\n    at main (E:\\New project\\outreach-dashboard\\daily-automation-runner.js:1428:17)\r\n    at Object.<anonymous> (E:\\New project\\outreach-dashboard\\daily-automation-runner.js:1448:3)\r\n    at Module._compile (node:internal/modules/cjs/loader:1812:14)\r\n    at Object..js (node:internal/modules/cjs/loader:1943:10)\r\n    at Module.load (node:internal/modules/cjs/loader:1533:32) {\r\n  errno: -4094,\r\n  code: 'UNKNOWN',\r\n  syscall: 'copyfile',\r\n  path: 'E:\\\\New project\\\\outreach-dashboard\\\\daily-automation-latest.js',\r\n  dest: 'E:\\\\New project\\\\outreach-dashboard\\\\public\\\\daily-automation-latest.js'\r\n}\r\n\r\nNode.js v24.14.0",
-    "error": "Command failed: node E:\\New project\\outreach-dashboard\\daily-automation-runner.js --fix\nnode:fs:3104\r\n  binding.copyFile(\r\n          ^\r\n\r\nError: UNKNOWN: unknown error, copyfile 'E:\\New project\\outreach-dashboard\\daily-automation-latest.js' -> 'E:\\New project\\outreach-dashboard\\public\\daily-automation-latest.js'\r\n    at Object.copyFileSync (node:fs:3104:11)\r\n    at copyPublicArtifact (E:\\New project\\outreach-dashboard\\daily-automation-runner.js:884:6)\r\n    at Array.forEach (<anonymous>)\r\n    at writeSystemVisibilityArtifact (E:\\New project\\outreach-dashboard\\daily-automation-runner.js:948:5)\r\n    at writeRunArtifacts (E:\\New project\\outreach-dashboard\\daily-automation-runner.js:875:3)\r\n    at main (E:\\New project\\outreach-dashboard\\daily-automation-runner.js:1428:17)\r\n    at Object.<anonymous> (E:\\New project\\outreach-dashboard\\daily-automation-runner.js:1448:3)\r\n    at Module._compile (node:internal/modules/cjs/loader:1812:14)\r\n    at Object..js (node:internal/modules/cjs/loader:1943:10)\r\n    at Module.load (node:internal/modules/cjs/loader:1533:32) {\r\n  errno: -4094,\r\n  code: 'UNKNOWN',\r\n  syscall: 'copyfile',\r\n  path: 'E:\\\\New project\\\\outreach-dashboard\\\\daily-automation-latest.js',\r\n  dest: 'E:\\\\New project\\\\outreach-dashboard\\\\public\\\\daily-automation-latest.js'\r\n}\r\n\r\nNode.js v24.14.0\r\n",
+    "ok": true,
+    "stdout": "{\n  \"date\": \"2026-07-21\",\n  \"summary\": {\n    \"totalLeads\": 16,\n    \"highIcp\": 16,\n    \"readyToDevelop\": 34,\n    \"dueNow\": 97,\n    \"visibleTodayQueue\": 43,\n    \"potentialPool\": 97,\n    \"potentialPoolTarget\": 100,\n    \"customerTableHighIcp\": 24,\n    \"refillNeeded\": 3,\n    \"googleDiscovered\": 73,\n    \"facebookDiscovered\": 15,\n    \"websiteContactDiscovered\": 39,\n    \"scheduledLater\": 0,\n    \"cooldown\": 30,\n    \"emailPriority\": 0,\n    \"openAgencyMarket\": 15,\n    \"exclusiveAgencySkipped\": 1,\n    \"needsVerification\": 0,\n    \"retainedLowIcp\": 0\n  },\n  \"bugErrors\": 0,\n  \"queueFile\": \"E:\\\\New project\\\\outreach-dashboard\\\\daily-runs\\\\2026-07-21-daily-automation.json\",\n  \"csvFile\": \"E:\\\\New project\\\\outreach-dashboard\\\\daily-runs\\\\2026-07-21-daily-queue.csv\"\n}",
+    "stderr": "",
+    "error": "",
     "visibility": {
-      "updatedAt": "2026-07-21T10:20:03.908Z",
+      "updatedAt": "2026-07-21T13:06:50.159Z",
       "source": "main-refreshDailyAutomationArtifacts",
       "runDate": "2026-07-21",
-      "artifactGeneratedAt": "2026-07-21T10:20:01.504Z",
-      "executionGeneratedAt": "2026-07-21T07:06:49.986Z",
-      "githubSyncUpdatedAt": "2026-07-21T07:07:10.064Z",
+      "artifactGeneratedAt": "2026-07-21T13:06:48.878Z",
+      "executionGeneratedAt": "2026-07-21T10:20:05.360Z",
+      "githubSyncUpdatedAt": "2026-07-21T10:20:47.792Z",
       "counts": {
         "dailyQueue": 97,
         "googleDiscovered": 73,
@@ -1513,5 +1513,5 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "ALIBABA_SMTP_SECURITY_PASSWORD"
     ]
   },
-  "completedAt": "2026-07-21T10:20:05.360Z"
+  "completedAt": "2026-07-21T13:06:51.342Z"
 };
