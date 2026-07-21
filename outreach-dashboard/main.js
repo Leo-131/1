@@ -3366,7 +3366,7 @@ async function runDailyAutomationQueue(payload = {}) {
     currentDailyExecutionProgress = {
       ...currentDailyExecutionProgress,
       completedCount: results.length,
-      confirmedSendCount: results.filter(item => item.sendStatus === 'sent_confirmed').length,
+      confirmedSendCount: results.filter(item => ['sent_confirmed', 'submitted_confirmed'].includes(item.sendStatus)).length,
       preparedWebsiteCount: results.filter(item => item.sendStatus === 'website_contact_ready').length,
       skippedCount: skipped.length,
       lastResult: batchResults[batchResults.length - 1] ? {
@@ -3431,7 +3431,7 @@ ipcMain.handle('run-daily-automation-queue', async (_event, payload) => runDaily
 
 async function runAutoDailyAndWriteArtifact() {
   let completed = false;
-  const timeoutMs = Math.max(60000, Number(process.env.DAILY_EXECUTE_TIMEOUT_MS || 300000));
+  const timeoutMs = Math.max(60000, Number(process.env.DAILY_EXECUTE_TIMEOUT_MS || 2700000));
   const watchdog = setTimeout(async () => {
     if (completed) return;
     const confirmedSendCount = Number(currentDailyExecutionProgress && currentDailyExecutionProgress.confirmedSendCount || 0);
