@@ -33,6 +33,8 @@ test('Alibaba webmail expressions are valid JavaScript and keep exact recipient/
   assert.match(composeStartExpression(), /shadowRoot/);
   assert.match(composeStartExpression(), /contentDocument/);
   assert.match(composeStartExpression(), /鍐欓偖浠/);
+  assert.match(composeFillExpression(payload), /ownerDocument/);
+  assert.match(composeFillExpression(payload), /shadowRoot/);
   assert.match(composeFillExpression(payload), /iframe\.e_iframe/);
   assert.match(composeSendExpression(payload), /send_button_not_unique/);
   assert.match(sentFolderConfirmationExpression(payload), /sent_folder_record_confirmed/);

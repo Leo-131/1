@@ -45,16 +45,30 @@ function composeStartExpression() {
 
 function composeFieldsExpression() {
   return `(() => {
-    const inputs = Array.from(document.querySelectorAll('input:not([type="hidden"]),textarea'));
+    const roots = [document];
+    for (let index = 0; index < roots.length; index += 1) {
+      const root = roots[index];
+      for (const element of root.querySelectorAll('*')) {
+        if (element.shadowRoot && !roots.includes(element.shadowRoot)) roots.push(element.shadowRoot);
+        if (element.tagName === 'IFRAME') {
+          try {
+            if (element.contentDocument && !roots.includes(element.contentDocument)) roots.push(element.contentDocument);
+          } catch {}
+        }
+      }
+    }
+    const inputs = roots.flatMap(root => Array.from(root.querySelectorAll('input:not([type="hidden"]),textarea')));
     const labelOf = input => [input.getAttribute('aria-label'), input.getAttribute('placeholder'), input.name, input.id, input.parentElement?.innerText].filter(Boolean).join(' ');
     const recipientPattern = /\b(to|recipient|email)\b|\u6536\u4ef6\u4eba|\u6536\u4ef6/i;
     const subjectPattern = /\bsubject\b|\u4e3b\u9898/i;
     const recipientInput = inputs.find(input => recipientPattern.test(labelOf(input)))
-      || document.querySelector('input[role="combobox"]')
+      || roots.map(root => root.querySelector('input[role="combobox"]')).find(Boolean)
       || null;
     const subjectInput = inputs.find(input => subjectPattern.test(labelOf(input))) || null;
-    const editorFrame = document.querySelector('iframe.e_iframe, iframe[title*="editor" i], iframe[title*="\u7f16\u8f91" i]');
-    const editorBody = editorFrame?.contentDocument?.body || document.querySelector('[contenteditable="true"]') || null;
+    const editorFrame = roots.map(root => root.querySelector('iframe.e_iframe, iframe[title*="editor" i], iframe[title*="\u7f16\u8f91" i]')).find(Boolean);
+    const editorBody = editorFrame?.contentDocument?.body
+      || roots.map(root => root.querySelector('[contenteditable="true"],[role="textbox"]')).find(Boolean)
+      || null;
     return { recipientInput, subjectInput, editorBody };
   })()`;
 }
@@ -65,7 +79,8 @@ function composeFillExpression({ recipient, subject, text } = {}) {
     const subject = ${serialized(subject)};
     const bodyText = ${serialized(text)};
     const setValue = (element, value) => {
-      const prototype = element.tagName === 'TEXTAREA' ? HTMLTextAreaElement.prototype : HTMLInputElement.prototype;
+      const view = element.ownerDocument?.defaultView || window;
+      const prototype = element.tagName === 'TEXTAREA' ? view.HTMLTextAreaElement.prototype : view.HTMLInputElement.prototype;
       const descriptor = Object.getOwnPropertyDescriptor(prototype, 'value');
       if (descriptor?.set) descriptor.set.call(element, value);
       else element.value = value;
