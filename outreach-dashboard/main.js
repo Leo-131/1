@@ -1404,9 +1404,20 @@ async function evaluateChromeTabJson(opened, expression, timeoutMs = 8000) {
 async function clickChromeTabAt(opened, x, y) {
   if (!opened || !opened.webSocketDebuggerUrl || !Number.isFinite(x) || !Number.isFinite(y)) return false;
   await cdpCommand(opened.webSocketDebuggerUrl, 'Page.bringToFront', {}, 2000);
-  await cdpCommand(opened.webSocketDebuggerUrl, 'Input.dispatchMouseEvent', { type: 'mouseMoved', x, y, button: 'none' }, 2000);
-  await cdpCommand(opened.webSocketDebuggerUrl, 'Input.dispatchMouseEvent', { type: 'mousePressed', x, y, button: 'left', clickCount: 1 }, 2000);
-  await cdpCommand(opened.webSocketDebuggerUrl, 'Input.dispatchMouseEvent', { type: 'mouseReleased', x, y, button: 'left', clickCount: 1 }, 2000);
+  try {
+    await cdpCommand(opened.webSocketDebuggerUrl, 'Input.dispatchMouseEvent', { type: 'mouseMoved', x, y, button: 'none' }, 2000);
+    await cdpCommand(opened.webSocketDebuggerUrl, 'Input.dispatchMouseEvent', { type: 'mousePressed', x, y, button: 'left', clickCount: 1 }, 2000);
+    await cdpCommand(opened.webSocketDebuggerUrl, 'Input.dispatchMouseEvent', { type: 'mouseReleased', x, y, button: 'left', clickCount: 1 }, 2000);
+  } catch (error) {
+    const domClicked = await evaluateChromeTabJson(opened, `(() => {
+      const element = document.elementFromPoint(${Math.round(x)}, ${Math.round(y)});
+      const target = element && (element.closest('button,a,[role="button"]') || element);
+      if (!target) return JSON.stringify({ ok: false, evidence: 'dom_click_target_missing' });
+      target.click();
+      return JSON.stringify({ ok: true, evidence: 'dom_click_fallback_succeeded' });
+    })()`, 5000).catch(() => null);
+    if (!domClicked || !domClicked.ok) throw error;
+  }
   return true;
 }
 
@@ -1593,26 +1604,7 @@ async function prepareInstagramDraft(opened, draft, lead = {}) {
       nextAction: 'Clicking the visible Instagram profile Message action by coordinates.',
     };
   }
-  await cdpCommand(opened.webSocketDebuggerUrl, 'Input.dispatchMouseEvent', {
-    type: 'mouseMoved',
-    x: button.x,
-    y: button.y,
-    button: 'none',
-  }, 1500);
-  await cdpCommand(opened.webSocketDebuggerUrl, 'Input.dispatchMouseEvent', {
-    type: 'mousePressed',
-    x: button.x,
-    y: button.y,
-    button: 'left',
-    clickCount: 1,
-  }, 1500);
-  await cdpCommand(opened.webSocketDebuggerUrl, 'Input.dispatchMouseEvent', {
-    type: 'mouseReleased',
-    x: button.x,
-    y: button.y,
-    button: 'left',
-    clickCount: 1,
-  }, 1500);
+  await clickChromeTabAt(opened, button.x, button.y);
   await sleep(2200);
 
   const draftExpression = `
@@ -2536,11 +2528,22 @@ async function runAlibabaWebmailEmailLead(lead = {}, subject = '', draft = '') {
     };
   }
   try {
-    const compose = await evaluateChromeTabJson(chromeOpen, composeStartExpression(), 8000);
+    let compose = null;
+    for (let attempt = 0; attempt < 10; attempt += 1) {
+      compose = await evaluateChromeTabJson(chromeOpen, composeStartExpression(), 8000).catch(() => null);
+      if (compose && compose.ok) break;
+      if (compose && compose.evidence === 'alibaba_webmail_login_required') break;
+      await sleep(700);
+    }
     if (!compose || !compose.ok) return { ok: false, sendStatus: 'approval_pending', reason: 'alibaba_webmail_compose_unavailable', evidence: compose && compose.evidence || 'alibaba_webmail_compose_unavailable' };
-    await sleep(1400);
+    await sleep(700);
     const payload = { recipient: target.recipient, subject, text: draft };
-    const filled = await evaluateChromeTabJson(chromeOpen, composeFillExpression(payload), 8000);
+    let filled = null;
+    for (let attempt = 0; attempt < 12; attempt += 1) {
+      filled = await evaluateChromeTabJson(chromeOpen, composeFillExpression(payload), 8000).catch(() => null);
+      if (filled && filled.ok) break;
+      await sleep(500);
+    }
     await sleep(500);
     const inspected = await evaluateChromeTabJson(chromeOpen, composeInspectionExpression(payload), 8000);
     if (!filled || !filled.ok || !inspected || !inspected.ok) {

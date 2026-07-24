@@ -28,15 +28,23 @@ function composeStartExpression() {
     }
     const composePattern = /\b(compose|new message|write mail|new mail)\b|\u5199\u90ae\u4ef6|\u64b0\u5199|\u65b0\u5efa\u90ae\u4ef6|鍐欓偖浠|鎾板啓/i;
     const candidates = roots.flatMap(root => Array.from(root.querySelectorAll('button,[role="button"],a,div[tabindex],[data-testid],[class]')))
-      .filter(element => {
-        const identity = [textOf(element), element.getAttribute?.('data-testid'), element.getAttribute?.('class'), element.getAttribute?.('href')].filter(Boolean).join(' ');
-        return isVisible(element) && !element.disabled && (composePattern.test(identity) || /(?:^|[-_\\s])(compose|write-mail|new-mail)(?:$|[-_\\s])/i.test(identity));
-      });
+      .map(element => {
+        const label = textOf(element);
+        const identity = [label, element.getAttribute?.('aria-label'), element.getAttribute?.('data-testid'), element.getAttribute?.('class'), element.getAttribute?.('href')].filter(Boolean).join(' ');
+        const semantic = element.tagName === 'BUTTON' || element.getAttribute?.('role') === 'button';
+        return { element, label, identity, semantic };
+      })
+      .filter(item => isVisible(item.element) && !item.element.disabled
+        && (item.semantic || item.label.length <= 120)
+        && (composePattern.test(item.identity) || /(?:^|[-_\\s])(compose|write-mail|new-mail)(?:$|[-_\\s])/i.test(item.identity)))
+      .sort((left, right) => Number(right.semantic) - Number(left.semantic) || left.label.length - right.label.length)
+      .map(item => item.element);
     const compose = candidates[0] || null;
     if (!compose) {
-      const pageText = document.body?.innerText || '';
-      const loginRequired = /\b(sign in|log in|login)\b|\u767b\u5f55/i.test(pageText);
-      return JSON.stringify({ ok: false, evidence: loginRequired ? 'alibaba_webmail_login_required' : 'alibaba_webmail_compose_button_missing' });
+      const loginControl = roots.flatMap(root => Array.from(root.querySelectorAll('input[type="password"],form[action*="login" i],button[type="submit"]')))
+        .find(element => isVisible(element));
+      const loginRequired = Boolean(loginControl) || /(?:^|\\.)login\\.|\\/login(?:[/?#]|$)/i.test(location.href);
+      return JSON.stringify({ ok: false, evidence: loginRequired ? 'alibaba_webmail_login_required' : 'alibaba_webmail_compose_button_missing', url: location.href, title: document.title });
     }
     compose.click();
     return JSON.stringify({ ok: true, evidence: 'alibaba_webmail_compose_open_clicked', control: compose.tagName, label: textOf(compose).slice(0, 80) });
@@ -57,15 +65,33 @@ function composeFieldsExpression() {
         }
       }
     }
-    const inputs = roots.flatMap(root => Array.from(root.querySelectorAll('input:not([type="hidden"]),textarea')));
-    const labelOf = input => [input.getAttribute('aria-label'), input.getAttribute('placeholder'), input.name, input.id, input.parentElement?.innerText].filter(Boolean).join(' ');
+    const inputs = roots.flatMap(root => Array.from(root.querySelectorAll('input:not([type="hidden"]),textarea,[role="combobox"]')));
+    const labelOf = input => {
+      const labelledBy = input.getAttribute?.('aria-labelledby');
+      const labelledText = labelledBy && input.ownerDocument?.getElementById?.(labelledBy)?.innerText;
+      const ancestorText = [];
+      for (let node = input.parentElement, depth = 0; node && depth < 5; node = node.parentElement, depth += 1) {
+        const text = String(node.innerText || '').trim();
+        if (text && text.length <= 240) ancestorText.push(text);
+      }
+      return [input.getAttribute?.('aria-label'), input.getAttribute?.('placeholder'), input.name, input.id, labelledText, ...ancestorText].filter(Boolean).join(' ');
+    };
     const recipientPattern = /\b(to|recipient|email)\b|\u6536\u4ef6\u4eba|\u6536\u4ef6/i;
     const subjectPattern = /\bsubject\b|\u4e3b\u9898/i;
     const recipientInput = inputs.find(input => recipientPattern.test(labelOf(input)))
       || roots.map(root => root.querySelector('input[role="combobox"]')).find(Boolean)
       || null;
     const subjectInput = inputs.find(input => subjectPattern.test(labelOf(input))) || null;
-    const editorFrame = roots.map(root => root.querySelector('iframe.e_iframe, iframe[title*="editor" i], iframe[title*="\u7f16\u8f91" i]')).find(Boolean);
+    const editorFrame = roots.map(root => root.querySelector('iframe.e_iframe')).find(Boolean)
+      || roots.flatMap(root => Array.from(root.querySelectorAll('iframe')))
+      .find(frame => {
+        try {
+          const body = frame.contentDocument?.body;
+          return Boolean(body && (body.isContentEditable || body.getAttribute('contenteditable') === 'true' || body.querySelector('[contenteditable="true"]')));
+        } catch {
+          return false;
+        }
+      });
     const editorBody = editorFrame?.contentDocument?.body
       || roots.map(root => root.querySelector('[contenteditable="true"],[role="textbox"]')).find(Boolean)
       || null;
