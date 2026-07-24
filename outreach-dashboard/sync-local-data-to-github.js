@@ -249,6 +249,7 @@ function syncOnce() {
     'command-center.js',
     'daily-automation-runner.js',
     'main.js',
+    'codex-chrome-driver.js',
     'outreach-dashboard.html',
     'service-worker.js',
     'public/command-center.js',

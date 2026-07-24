@@ -1323,7 +1323,11 @@ async function preparePlatformDraft(payload, platform) {
   }
 
   const preActions = [];
-  if (payload.autoEngage) {
+  // Cold outreach must never publish comments, likes or follows as a
+  // prerequisite for a private message. Keep this fail-closed even if a stale
+  // caller still sends autoEngage=true.
+  const allowPublicEngagement = false;
+  if (allowPublicEngagement && payload.autoEngage) {
     if (platform === 'instagram') {
       let follow = await clickOptionalAction(tab, 'follow', platform);
       if (follow === 'follow_not_available') {
