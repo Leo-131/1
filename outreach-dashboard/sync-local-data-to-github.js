@@ -218,6 +218,8 @@ function syncOnce() {
     '',
   ].join('\n'));
   copyIfExists(latestRun, path.join(OUT, 'daily-run.json'));
+  copyIfExists(latestRun, path.join(ROOT, 'public', 'daily-runs', `${latestDate}-daily-automation.json`));
+  copyIfExists(latestRun, path.join(ROOT, 'public', 'github-sync', 'daily-run.json'));
   copyIfExists(latestCsv, path.join(OUT, 'daily-queue.csv'));
   copyIfExists(path.join(ROOT, 'google-lead-discovery-latest.csv'), path.join(OUT, 'google-discovery.csv'));
   copyIfExists(path.join(ROOT, 'system-visibility-latest.json'), path.join(OUT, 'system-visibility-latest.json'));
@@ -291,8 +293,12 @@ function syncOnce() {
     'package-lock.json',
     'docs/plans/2026-07-21-nonzero-daily-execution-design.md',
   ];
+  const publicDailyRun = `public/daily-runs/${latestDate}-daily-automation.json`;
+  if (fs.existsSync(path.join(ROOT, publicDailyRun))) {
+    git(['add', '-f', '--', publicDailyRun], { stdio: 'pipe' });
+  }
   git(['add', '--', ...paths], { stdio: 'pipe' });
-  if (!hasChanges(paths)) {
+  if (!hasChanges([...paths, publicDailyRun])) {
     writeSyncStatus({
       ok: true,
       pushed: false,

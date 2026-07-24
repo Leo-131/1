@@ -906,7 +906,8 @@ test('recoverable social composer failures fall back across verified channels wi
   assert.ok(mainSource.includes('function alternateChannelFallbackLead'));
   assert.ok(mainSource.includes('composer_not_found|message_button_clicked_composer_not_found'));
   assert.ok(mainSource.includes("['facebook', channels.facebook]"));
-  assert.ok(mainSource.includes("['email', channels.websiteContact || lead.contactUrl || lead.website]"));
+  assert.ok(mainSource.includes("['email', cameFromWebsiteSocialFallback ? '' : (channels.websiteContact || lead.contactUrl || lead.website)]"));
+  assert.ok(mainSource.includes('cameFromWebsiteSocialFallback'));
   assert.ok(mainSource.includes('if (!blockingAutomationResultFor(fallback)) return fallback'));
   assert.ok(mainSource.includes('fallbackPlatform: alternateFallback.platform'));
   assert.ok(mainSource.includes('driver_timeout_bounded:80000'));

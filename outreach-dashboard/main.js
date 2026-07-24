@@ -2001,7 +2001,21 @@ function websiteContactInspectionExpression() {
 }
 
 function socialFallbackFromInspection(lead = {}, inspection = {}) {
-  const links = Array.isArray(inspection && inspection.socialLinks) ? inspection.socialLinks : [];
+  const alternateChannels = lead.alternateChannels && typeof lead.alternateChannels === 'object'
+    ? lead.alternateChannels
+    : {};
+  const links = [
+    ...(Array.isArray(inspection && inspection.socialLinks) ? inspection.socialLinks : []),
+    lead.linkedinUrl,
+    lead.linkedin_url,
+    lead.facebookUrl,
+    lead.facebook_url,
+    lead.instagramUrl,
+    lead.instagram_url,
+    alternateChannels.linkedin,
+    alternateChannels.facebook,
+    alternateChannels.instagram,
+  ].filter((url, index, list) => /^https?:\/\//i.test(String(url || '')) && list.indexOf(url) === index);
   const ranked = links
     .map((url) => {
       const text = String(url || '').toLowerCase();
@@ -2878,6 +2892,7 @@ function alternateChannelFallbackLead(lead = {}, draftResult = {}, options = {})
   const evidence = String(draftResult.evidence || '').toLowerCase();
   const recoverable = /composer_not_found|message_button_clicked_composer_not_found|profile_no_message_button|cdp websocket error|chrome_target_not_found|driver_timeout_bounded/.test(evidence);
   if (!recoverable || draftResult.sendStatus === 'send_unconfirmed') return null;
+  const cameFromWebsiteSocialFallback = String(lead.reason || '').toLowerCase() === 'official_website_social_fallback';
   const attempted = new Set([
     ...(Array.isArray(options.attemptedChannels) ? options.attemptedChannels : []),
     String(lead.platform || '').toLowerCase(),
@@ -2887,7 +2902,7 @@ function alternateChannelFallbackLead(lead = {}, draftResult = {}, options = {})
     ['linkedin', channels.linkedin],
     ['facebook', channels.facebook],
     ['instagram', channels.instagram],
-    ['email', channels.websiteContact || lead.contactUrl || lead.website],
+    ['email', cameFromWebsiteSocialFallback ? '' : (channels.websiteContact || lead.contactUrl || lead.website)],
   ];
   for (const [platform, targetUrl] of candidates) {
     if (attempted.has(platform) || !/^https:\/\//i.test(String(targetUrl || ''))) continue;

@@ -14,9 +14,24 @@ function composeStartExpression() {
   return `(() => {
     const textOf = element => String(element?.innerText || element?.textContent || element?.getAttribute?.('aria-label') || element?.getAttribute?.('title') || '').trim();
     const isVisible = element => Boolean(element && element.getClientRects && element.getClientRects().length);
-    const composePattern = /\b(compose|new message|write mail)\b|\u5199\u90ae\u4ef6|\u64b0\u5199|\u65b0\u5efa\u90ae\u4ef6/i;
-    const candidates = Array.from(document.querySelectorAll('button,[role="button"],a,div[tabindex]'))
-      .filter(element => isVisible(element) && composePattern.test(textOf(element)));
+    const roots = [document];
+    for (let index = 0; index < roots.length; index += 1) {
+      const root = roots[index];
+      for (const element of root.querySelectorAll('*')) {
+        if (element.shadowRoot && !roots.includes(element.shadowRoot)) roots.push(element.shadowRoot);
+        if (element.tagName === 'IFRAME') {
+          try {
+            if (element.contentDocument && !roots.includes(element.contentDocument)) roots.push(element.contentDocument);
+          } catch {}
+        }
+      }
+    }
+    const composePattern = /\b(compose|new message|write mail|new mail)\b|\u5199\u90ae\u4ef6|\u64b0\u5199|\u65b0\u5efa\u90ae\u4ef6|鍐欓偖浠|鎾板啓/i;
+    const candidates = roots.flatMap(root => Array.from(root.querySelectorAll('button,[role="button"],a,div[tabindex],[data-testid],[class]')))
+      .filter(element => {
+        const identity = [textOf(element), element.getAttribute?.('data-testid'), element.getAttribute?.('class'), element.getAttribute?.('href')].filter(Boolean).join(' ');
+        return isVisible(element) && !element.disabled && (composePattern.test(identity) || /(?:^|[-_\\s])(compose|write-mail|new-mail)(?:$|[-_\\s])/i.test(identity));
+      });
     const compose = candidates[0] || null;
     if (!compose) {
       const pageText = document.body?.innerText || '';
