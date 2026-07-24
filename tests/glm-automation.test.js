@@ -787,6 +787,7 @@ test('Codex Chrome execution can auto-send approved social outreach with confirm
   assert.ok(mainSource.includes('async function prepareInstagramDraft'));
   assert.ok(mainSource.includes('dom_click_fallback_succeeded'));
   assert.ok(mainSource.includes('await clickChromeTabAt(opened, button.x, button.y)'));
+  assert.ok(mainSource.includes('recipientReady:${Boolean(inspected.recipientReady)}'));
   assert.ok(mainSource.includes('async function prepareSocialDraft'));
   assert.ok(mainSource.includes('codex-chrome-driver.js'));
   assert.ok(mainSource.includes("runCodexChromeDriver('prepare-instagram-draft'"));

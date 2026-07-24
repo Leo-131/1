@@ -2547,7 +2547,10 @@ async function runAlibabaWebmailEmailLead(lead = {}, subject = '', draft = '') {
     await sleep(500);
     const inspected = await evaluateChromeTabJson(chromeOpen, composeInspectionExpression(payload), 8000);
     if (!filled || !filled.ok || !inspected || !inspected.ok) {
-      return { ok: false, sendStatus: 'approval_pending', reason: 'alibaba_webmail_draft_verification_failed', evidence: `${filled && filled.evidence || 'fill_missing'};${inspected && inspected.evidence || 'inspection_missing'}` };
+      const inspectionFlags = inspected
+        ? `recipientReady:${Boolean(inspected.recipientReady)};subjectReady:${Boolean(inspected.subjectReady)};bodyReady:${Boolean(inspected.bodyReady)}`
+        : 'inspection_flags_missing';
+      return { ok: false, sendStatus: 'approval_pending', reason: 'alibaba_webmail_draft_verification_failed', evidence: `${filled && filled.evidence || 'fill_missing'};${inspected && inspected.evidence || 'inspection_missing'};${inspectionFlags}` };
     }
     const sent = await evaluateChromeTabJson(chromeOpen, composeSendExpression(payload), 8000);
     if (!sent || !sent.sendClicked) return { ok: false, sendStatus: 'approval_pending', reason: 'alibaba_webmail_send_not_clicked', evidence: sent && sent.evidence || 'alibaba_webmail_send_not_clicked' };
