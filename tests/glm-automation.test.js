@@ -117,6 +117,17 @@ test('LinkedIn platform engagement follows before sending the approved DM withou
   assert.doesNotMatch(linkedinBranch[1], /submitOptionalComment|clickOptionalAction\(tab, 'like'/);
 });
 
+test('social outreach never enables public engagement before a verified private message', () => {
+  const instagramBlock = mainSource.slice(
+    mainSource.indexOf('async function prepareInstagramDraft'),
+    mainSource.indexOf('function validateLeadTargetForPreparation')
+  );
+  assert.doesNotMatch(instagramBlock, /autoEngage:\s*true/);
+  assert.match(instagramBlock, /autoEngage:\s*false/);
+  assert.match(chromeDriverSource, /const allowPublicEngagement = false/);
+  assert.match(chromeDriverSource, /if \(allowPublicEngagement && payload\.autoEngage\)/);
+});
+
 test('no-message social profiles are blocked from automatic execution', () => {
   const result = {
     task_id: 'verified-Instagram-triedandtrout',

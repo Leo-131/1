@@ -1558,8 +1558,9 @@ async function prepareInstagramDraft(opened, draft, lead = {}) {
     expectedCompany: lead && (lead.company || lead.name),
     draft: safeDraft,
     autoSend: true,
-    autoEngage: true,
-    engagementComment: lead && lead.engagementComment || 'Great outdoor checklist. Useful reminder for hikers preparing a complete, lightweight kit.',
+    // Public comments, likes and follows are not customer development and can
+    // create repeated visible engagement when a DM route later fails.
+    autoEngage: false,
     replaceExistingDraft: true,
   });
   if (driverResult) return driverResult;
@@ -1692,8 +1693,8 @@ async function prepareSocialDraft(opened, draft, lead = {}) {
     expectedCompany: lead && (lead.company || lead.name),
     draft: safeDraft,
     autoSend: true,
-    autoEngage: true,
-    engagementComment: lead && lead.engagementComment || 'Great outdoor checklist. Useful reminder for hikers preparing a complete, lightweight kit.',
+    // Only a verified private-message route may receive the approved draft.
+    autoEngage: false,
     replaceExistingDraft: true,
   });
   if (driverResult) return driverResult;
