@@ -229,7 +229,19 @@ function sendToastExpression() {
 function sentFolderConfirmationExpression({ subject } = {}) {
   return `(() => {
     const subject = ${serialized(subject)};
-    const rows = Array.from(document.querySelectorAll('article,tr,[role="row"],li'));
+    const roots = [document];
+    for (let index = 0; index < roots.length; index += 1) {
+      const root = roots[index];
+      for (const element of root.querySelectorAll('*')) {
+        if (element.shadowRoot && !roots.includes(element.shadowRoot)) roots.push(element.shadowRoot);
+        if (element.tagName === 'IFRAME') {
+          try {
+            if (element.contentDocument && !roots.includes(element.contentDocument)) roots.push(element.contentDocument);
+          } catch {}
+        }
+      }
+    }
+    const rows = roots.flatMap(root => Array.from(root.querySelectorAll('article,tr,[role="row"],li')));
     const match = rows.find(row => String(row.innerText || row.textContent || '').includes(subject));
     return JSON.stringify({ ok: Boolean(match), confirmed: Boolean(match), evidence: match ? 'sent_folder_record_confirmed' : 'sent_folder_record_missing', subject });
   })()`;

@@ -50,4 +50,5 @@ test('Alibaba webmail expressions are valid JavaScript and keep exact recipient/
   assert.match(composeInspectionExpression(payload), /replace\(\/\\u00a0\/g/);
   assert.match(composeSendExpression(payload), /send_button_not_unique/);
   assert.match(sentFolderConfirmationExpression(payload), /sent_folder_record_confirmed/);
+  assert.match(sentFolderConfirmationExpression(payload), /shadowRoot/);
 });

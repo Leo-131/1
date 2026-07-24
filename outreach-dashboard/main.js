@@ -2600,7 +2600,7 @@ async function runAlibabaWebmailEmailLead(lead = {}, subject = '', draft = '') {
     }
     await navigateChromeTab(chromeOpen, ALIBABA_WEBMAIL_SENT_URL);
     let sentFolder = null;
-    for (let attempt = 0; attempt < 12; attempt += 1) {
+    for (let attempt = 0; attempt < 40; attempt += 1) {
       await sleep(750);
       sentFolder = await evaluateChromeTabJson(chromeOpen, sentFolderConfirmationExpression(payload), 5000).catch(() => null);
       if (sentFolder && sentFolder.confirmed) break;
@@ -2631,6 +2631,42 @@ async function runAlibabaWebmailEmailLead(lead = {}, subject = '', draft = '') {
   }
 }
 
+async function verifyPriorAlibabaWebmailSend(lead = {}, subject = '') {
+  const target = verifiedBusinessEmailTarget(lead);
+  if (!target.ok) return null;
+  const chromeOpen = await openWithCodexChrome(ALIBABA_WEBMAIL_SENT_URL, { automationOwned: true });
+  if (!chromeOpen || !chromeOpen.ok || !chromeOpen.webSocketDebuggerUrl) {
+    return {
+      ok: false,
+      sendStatus: 'send_unconfirmed',
+      reason: 'prior_unconfirmed_sent_folder_unavailable',
+      evidence: chromeOpen && (chromeOpen.evidence || chromeOpen.error) || 'prior_unconfirmed_sent_folder_unavailable',
+    };
+  }
+  try {
+    let sentFolder = null;
+    for (let attempt = 0; attempt < 40; attempt += 1) {
+      await sleep(750);
+      sentFolder = await evaluateChromeTabJson(chromeOpen, sentFolderConfirmationExpression({ subject }), 5000).catch(() => null);
+      if (sentFolder && sentFolder.confirmed) break;
+    }
+    const confirmed = Boolean(sentFolder && sentFolder.confirmed);
+    return {
+      ok: confirmed,
+      sendStatus: confirmed ? 'sent_confirmed' : 'send_unconfirmed',
+      reason: confirmed ? 'prior_unconfirmed_sent_folder_recovered' : 'prior_unconfirmed_sent_folder_still_missing',
+      evidence: `prior_send_unconfirmed_no_resend;${sentFolder && sentFolder.evidence || 'sent_folder_record_missing'}`,
+      recipientEmail: target.recipient,
+      targetUrl: `mailto:${target.recipient}`,
+      subject,
+      engine: 'alibaba-enterprise-mail-web-session',
+      mode: confirmed ? 'alibaba_webmail_sent_folder_recovered' : 'alibaba_webmail_delivery_unconfirmed',
+    };
+  } finally {
+    await closeAutomationChromeTab(chromeOpen);
+  }
+}
+
 async function runVerifiedAlibabaEmailLead(lead = {}, subject = '', draft = '') {
   const previousResults = readJsonScriptArray(path.join(__dirname, 'autonomous-outreach-results.js'), 'AUTONOMOUS_OUTREACH_RESULTS');
   const domainSafety = emailDomainSafety(previousResults, lead);
@@ -2645,6 +2681,26 @@ async function runVerifiedAlibabaEmailLead(lead = {}, subject = '', draft = '') 
       nextAction: domainSafety.reason === 'email_domain_daily_limit_reached'
         ? 'Pause this domain until the next Asia/Shanghai business day; use another verified company or channel.'
         : 'Verify an official public buyer, vendor-relations, or business email before email outreach.',
+    };
+  }
+  const priorUnconfirmed = previousResults.find(item => item
+    && item.status === 'send_unconfirmed'
+    && String(item.recipientEmail || '').toLowerCase() === String(domainSafety.recipient || '').toLowerCase()
+    && String(item.subject || '') === String(subject || ''));
+  if (priorUnconfirmed) {
+    const recovered = await verifyPriorAlibabaWebmailSend(lead, subject);
+    return {
+      ...recovered,
+      draft,
+      output: JSON.stringify({
+        verdict: recovered.sendStatus,
+        sendStatus: recovered.sendStatus,
+        evidence: recovered.evidence,
+        nextAction: recovered.sendStatus === 'sent_confirmed'
+          ? 'The prior unconfirmed send is now visible in Sent; no resend occurred.'
+          : 'The prior send remains unconfirmed; do not resend automatically.',
+        recipientEmail: recovered.recipientEmail || domainSafety.recipient,
+      }),
     };
   }
   let result = await sendAndConfirmAlibabaEmail({ lead, subject, text: draft });

@@ -790,6 +790,7 @@ test('Codex Chrome execution can auto-send approved social outreach with confirm
   assert.ok(mainSource.includes('recipientReady:${Boolean(inspected.recipientReady)}'));
   assert.ok(mainSource.includes("windowsVirtualKeyCode: 13"));
   assert.ok(mainSource.includes("'Input.insertText'"));
+  assert.ok(mainSource.includes('prior_send_unconfirmed_no_resend'));
   assert.ok(mainSource.includes('async function prepareSocialDraft'));
   assert.ok(mainSource.includes('codex-chrome-driver.js'));
   assert.ok(mainSource.includes("runCodexChromeDriver('prepare-instagram-draft'"));
