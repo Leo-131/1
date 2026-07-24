@@ -2544,10 +2544,23 @@ async function runAlibabaWebmailEmailLead(lead = {}, subject = '', draft = '') {
       if (filled && filled.ok) break;
       await sleep(500);
     }
+    let recipientStage = null;
     if (filled && filled.ok) {
       await cdpCommand(chromeOpen.webSocketDebuggerUrl, 'Input.insertText', {
         text: target.recipient,
       }, 3000);
+      recipientStage = await evaluateChromeTabJson(chromeOpen, `(() => {
+        const active = document.activeElement;
+        const rect = active?.getBoundingClientRect?.();
+        return JSON.stringify({
+          valueMatch: String(active?.value || '').toLowerCase() === ${JSON.stringify(target.recipient.toLowerCase())},
+          type: active?.getAttribute?.('type') || '',
+          role: active?.getAttribute?.('role') || '',
+          className: String(active?.className || '').slice(0, 120),
+          x: Math.round(rect?.x || 0),
+          y: Math.round(rect?.y || 0),
+        });
+      })()`, 5000).catch(() => null);
       await cdpCommand(chromeOpen.webSocketDebuggerUrl, 'Input.dispatchKeyEvent', {
         type: 'keyDown',
         key: 'Enter',
@@ -2568,7 +2581,10 @@ async function runAlibabaWebmailEmailLead(lead = {}, subject = '', draft = '') {
       const inspectionFlags = inspected
         ? `recipientReady:${Boolean(inspected.recipientReady)};subjectReady:${Boolean(inspected.subjectReady)};bodyReady:${Boolean(inspected.bodyReady)}`
         : 'inspection_flags_missing';
-      return { ok: false, sendStatus: 'approval_pending', reason: 'alibaba_webmail_draft_verification_failed', evidence: `${filled && filled.evidence || 'fill_missing'};${inspected && inspected.evidence || 'inspection_missing'};${inspectionFlags}` };
+      const recipientStageEvidence = recipientStage
+        ? `recipientStageValueMatch:${Boolean(recipientStage.valueMatch)};recipientStageType:${recipientStage.type || 'none'};recipientStageRole:${recipientStage.role || 'none'};recipientStageClass:${recipientStage.className || 'none'};recipientStageXY:${recipientStage.x || 0},${recipientStage.y || 0}`
+        : 'recipient_stage_missing';
+      return { ok: false, sendStatus: 'approval_pending', reason: 'alibaba_webmail_draft_verification_failed', evidence: `${filled && filled.evidence || 'fill_missing'};${inspected && inspected.evidence || 'inspection_missing'};${inspectionFlags};${recipientStageEvidence}` };
     }
     const sent = await evaluateChromeTabJson(chromeOpen, composeSendExpression(payload), 8000);
     if (!sent || !sent.sendClicked) return { ok: false, sendStatus: 'approval_pending', reason: 'alibaba_webmail_send_not_clicked', evidence: sent && sent.evidence || 'alibaba_webmail_send_not_clicked' };
