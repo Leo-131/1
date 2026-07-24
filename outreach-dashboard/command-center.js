@@ -1498,11 +1498,14 @@
     const cards = readinessData.connectors.map(item => `
       <div class="cc-channel-card ${item.ready ? 'email' : ''}">
         <span>${esc(item.label)}</span>
-        <b>${item.ready ? 'READY' : 'BLOCKED'}</b>
-        <em>${esc(item.ready ? item.providers.join(' / ') : `缺少配置：${item.missing.join(' 或 ')}`)}</em>
+        <b>${item.ready ? 'READY' : '可选 · 未配置'}</b>
+        <em>${esc(item.ready ? item.providers.join(' / ') : `缺少：${item.missing.join(' 或 ')}`)}</em>
       </div>`).join('');
-    const statusClass = readinessData.productionReady ? 'green' : 'amber';
-    return `<section class="cc-panel cc-email-ops"><div class="cc-panel-head"><div><h2>销售系统就绪度</h2><span class="cc-sub">只显示配置是否存在，不读取或展示密钥值；核心连接全部就绪后才允许宣布生产闭环</span></div><span class="cc-chip ${statusClass}">${readinessData.readyCount}/${readinessData.totalCount} · ${readinessData.score}%</span></div>
+    const coreReady = readinessData.coreReady === true;
+    const statusClass = coreReady ? 'green' : 'amber';
+    const coreReadyCount = Number(readinessData.coreReadyCount || 0);
+    const coreTotalCount = Number(readinessData.coreTotalCount || 0);
+    return `<section class="cc-panel cc-email-ops"><div class="cc-panel-head"><div><h2>销售系统就绪度</h2><span class="cc-sub">核心安全闭环与外部连接分开评估；未配置的可选连接不会伪装成故障，也不会显示密钥值</span></div><span class="cc-chip ${statusClass}">核心 ${coreReadyCount}/${coreTotalCount} · 连接 ${readinessData.readyCount}/${readinessData.totalCount}</span></div>
       <div class="cc-channel-priority">${cards}</div>
       <div class="cc-funnel"><div><span>确认开发企业</span><b>${conversion.sent}</b></div><div><span>收到回复</span><b>${conversion.replied}</b></div><div><span>采购资格确认</span><b>${conversion.qualified}</b></div><div><span>合格会议</span><b>${conversion.meetings}</b></div><div><span>每100家合格会议</span><b>${conversion.qualifiedMeetingsPer100}</b></div></div>
       <div class="cc-quality">北极星指标：每100家不同高ICP企业产生的合格采购会议数。发送量是容量指标，不替代回复、会议和Pipeline。</div>

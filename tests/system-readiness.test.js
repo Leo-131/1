@@ -26,7 +26,7 @@ test('readiness requires a complete provider option instead of mixing credential
   assert.deepEqual(result.connectors.find(item => item.id === 'crm').missing, ['HUBSPOT_ACCESS_TOKEN']);
 });
 
-test('third-party email verification is advisory rather than a hard production gate', () => {
+test('external connectors are advisory rather than hard production gates', () => {
   const result = readiness.assess({
     HUBSPOT_ACCESS_TOKEN: 'crm',
     APOLLO_API_KEY: 'enrichment',
@@ -36,7 +36,27 @@ test('third-party email verification is advisory rather than a hard production g
   });
   assert.equal(result.connectors.find(item => item.id === 'email_verification').ready, false);
   assert.equal(result.productionReady, true);
-  assert.deepEqual(result.advisoryConnectorIds, ['email_verification']);
+  assert.equal(result.coreReady, true);
+  assert.equal(result.coreReadyCount, 4);
+  assert.equal(result.coreTotalCount, 4);
+  assert.deepEqual(result.requiredConnectorIds, []);
+  assert.deepEqual(result.advisoryConnectorIds, [
+    'crm',
+    'enrichment',
+    'email_verification',
+    'alibaba_mail',
+    'approval_alerts',
+    'meeting_routing',
+  ]);
+});
+
+test('missing optional connector credentials do not report the core sales system as blocked', () => {
+  const result = readiness.assess({});
+  assert.equal(result.readyCount, 0);
+  assert.equal(result.connectorCoverageScore, 0);
+  assert.equal(result.coreScore, 100);
+  assert.equal(result.productionReady, true);
+  assert.ok(result.connectors.every(item => item.status === 'not_configured'));
 });
 
 test('conversion snapshot uses unique companies and confirmed customer events', () => {

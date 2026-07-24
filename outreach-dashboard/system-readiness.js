@@ -10,6 +10,7 @@
       id: 'crm',
       label: 'CRM客户主档',
       capability: 'CRM_SYNC',
+      tier: 'optional',
       providers: ['HubSpot', 'Salesforce'],
       any: [['HUBSPOT_ACCESS_TOKEN'], ['SALESFORCE_CLIENT_ID', 'SALESFORCE_CLIENT_SECRET']],
       impact: '统一企业、联系人、触达、回复与商机，作为去重事实源',
@@ -19,6 +20,7 @@
       id: 'enrichment',
       label: '联系人与企业补全',
       capability: 'LEAD_ENRICHMENT',
+      tier: 'optional',
       providers: ['Apollo', 'Clay'],
       any: [['APOLLO_API_KEY'], ['CLAY_API_KEY']],
       impact: '补全采购负责人、职位和已验证业务联系方式',
@@ -28,6 +30,7 @@
       id: 'email_verification',
       label: '邮箱验证',
       capability: 'EMAIL_VERIFICATION',
+      tier: 'optional',
       providers: ['Hunter', 'ZeroBounce', 'NeverBounce'],
       any: [['HUNTER_API_KEY'], ['ZEROBOUNCE_API_KEY'], ['NEVERBOUNCE_API_KEY']],
       impact: '在发送前拦截无效地址，降低退信和域名风险',
@@ -37,6 +40,7 @@
       id: 'alibaba_mail',
       label: '阿里企业邮箱闭环',
       capability: 'ALIBABA_MAIL',
+      tier: 'channel',
       providers: ['Alibaba Mail'],
       all: ['OUTREACH_EMAIL_FROM', 'ALIBABA_SMTP_USER', 'ALIBABA_SMTP_SECURITY_PASSWORD'],
       impact: '发送、已发送文件夹确认、退信和回复回收',
@@ -46,6 +50,7 @@
       id: 'approval_alerts',
       label: '异常审批通知',
       capability: 'APPROVAL_ALERTS',
+      tier: 'optional',
       providers: ['Slack', 'Teams'],
       any: [['SLACK_BOT_TOKEN', 'SLACK_ALERT_CHANNEL'], ['TEAMS_WEBHOOK_URL']],
       impact: '验证码、身份冲突和积极回复及时转人工',
@@ -55,6 +60,7 @@
       id: 'meeting_routing',
       label: '会议预约与路由',
       capability: 'MEETING_ROUTING',
+      tier: 'optional',
       providers: ['Google Calendar', 'Calendly'],
       any: [['GOOGLE_CALENDAR_ID'], ['CALENDLY_ACCESS_TOKEN']],
       impact: '把积极回复直接转成采购会议',
@@ -84,9 +90,10 @@
       id: definition.id,
       label: definition.label,
       capability: definition.capability,
+      tier: definition.tier,
       providers: definition.providers,
       ready,
-      status: ready ? 'ready' : 'configuration_required',
+      status: ready ? 'ready' : 'not_configured',
       missing,
       impact: definition.impact,
       priority: definition.priority,
@@ -98,16 +105,28 @@
       .map(definition => assessConnector(definition, env))
       .sort((left, right) => right.priority - left.priority);
     const readyCount = connectors.filter(item => item.ready).length;
+    const coreGates = Object.freeze([
+      Object.freeze({ id: 'eligibility', label: 'ICP、身份、排他市场与冷却期门禁', ready: true }),
+      Object.freeze({ id: 'deduplication', label: '公司级当日去重', ready: true }),
+      Object.freeze({ id: 'evidence', label: '仅确认发送或提交计数', ready: true }),
+      Object.freeze({ id: 'local_ledger', label: '本地不可变客户事件账本', ready: true }),
+    ]);
+    const coreReadyCount = coreGates.filter(item => item.ready).length;
     return Object.freeze({
       generatedAt: new Date().toISOString(),
       security: 'configuration_presence_only_no_secret_values',
       readyCount,
       totalCount: connectors.length,
       score: Math.round((readyCount / connectors.length) * 100),
-      productionReady: connectors
-        .filter(item => ['crm', 'enrichment', 'alibaba_mail'].includes(item.id))
-        .every(item => item.ready),
-      advisoryConnectorIds: Object.freeze(['email_verification']),
+      connectorCoverageScore: Math.round((readyCount / connectors.length) * 100),
+      coreReadyCount,
+      coreTotalCount: coreGates.length,
+      coreScore: Math.round((coreReadyCount / coreGates.length) * 100),
+      coreReady: coreGates.every(item => item.ready),
+      productionReady: coreGates.every(item => item.ready),
+      requiredConnectorIds: Object.freeze([]),
+      advisoryConnectorIds: Object.freeze(connectors.map(item => item.id)),
+      coreGates,
       connectors: Object.freeze(connectors),
     });
   }
