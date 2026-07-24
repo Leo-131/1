@@ -74,7 +74,10 @@ function composeFieldsExpression() {
         const text = String(node.innerText || '').trim();
         if (text && text.length <= 240) ancestorText.push(text);
       }
-      return [input.getAttribute?.('aria-label'), input.getAttribute?.('placeholder'), input.name, input.id, labelledText, ...ancestorText].filter(Boolean).join(' ');
+      return [input.getAttribute?.('aria-label'), input.getAttribute?.('placeholder'), input.name, input.id, labelledText, ...ancestorText]
+        .filter(Boolean)
+        .join(' ')
+        .replace(/\\s+/g, '');
     };
     const recipientPattern = /\b(to|recipient|email)\b|\u6536\u4ef6\u4eba|\u6536\u4ef6/i;
     const subjectPattern = /\bsubject\b|\u4e3b\u9898/i;
@@ -134,11 +137,25 @@ function composeInspectionExpression({ recipient, subject, text } = {}) {
     const subject = ${serialized(subject)};
     const expectedBody = ${serialized(text)};
     const fields = ${composeFieldsExpression()};
+    const normalize = value => String(value || '').replace(/\\r\\n/g, '\\n').replace(/\\u00a0/g, ' ').replace(/[ \\t]+$/gm, '').trim();
+    const recipientNeedle = recipient.toLowerCase();
     const recipientText = document.body?.innerText || '';
-    const actualBody = fields.editorBody ? (fields.editorBody.innerText || '').trim() : '';
-    const recipientReady = recipientText.toLowerCase().includes(recipient.toLowerCase());
+    const recipientSignals = Array.from(document.querySelectorAll('input,[title],[aria-label],[data-email],[data-value]'))
+      .flatMap(element => [
+        element.value,
+        element.getAttribute?.('title'),
+        element.getAttribute?.('aria-label'),
+        element.getAttribute?.('data-email'),
+        element.getAttribute?.('data-value'),
+        element.textContent,
+      ])
+      .filter(Boolean)
+      .map(value => String(value).toLowerCase());
+    const actualBody = fields.editorBody ? normalize(fields.editorBody.innerText || fields.editorBody.textContent || '') : '';
+    const recipientReady = recipientText.toLowerCase().includes(recipientNeedle)
+      || recipientSignals.some(value => value.includes(recipientNeedle));
     const subjectReady = Boolean(fields.subjectInput && fields.subjectInput.value === subject);
-    const bodyReady = actualBody === expectedBody.trim();
+    const bodyReady = actualBody === normalize(expectedBody);
     return JSON.stringify({ ok: recipientReady && subjectReady && bodyReady, recipientReady, subjectReady, bodyReady, evidence: recipientReady && subjectReady && bodyReady ? 'alibaba_webmail_draft_verified' : 'alibaba_webmail_draft_verification_failed' });
   })()`;
 }
