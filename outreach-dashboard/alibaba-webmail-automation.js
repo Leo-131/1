@@ -66,23 +66,34 @@ function composeFieldsExpression() {
       }
     }
     const inputs = roots.flatMap(root => Array.from(root.querySelectorAll('input:not([type="hidden"]),textarea,[role="combobox"]')));
-    const labelOf = input => {
+    const directLabelOf = input => {
       const labelledBy = input.getAttribute?.('aria-labelledby');
       const labelledText = labelledBy && input.ownerDocument?.getElementById?.(labelledBy)?.innerText;
+      return [input.getAttribute?.('aria-label'), input.getAttribute?.('placeholder'), input.name, input.id, labelledText]
+        .filter(Boolean)
+        .join(' ')
+        .replace(/\\s+/g, '');
+    };
+    const labelOf = input => {
       const ancestorText = [];
       for (let node = input.parentElement, depth = 0; node && depth < 5; node = node.parentElement, depth += 1) {
         const text = String(node.innerText || '').trim();
         if (text && text.length <= 240) ancestorText.push(text);
       }
-      return [input.getAttribute?.('aria-label'), input.getAttribute?.('placeholder'), input.name, input.id, labelledText, ...ancestorText]
+      return [directLabelOf(input), ...ancestorText]
         .filter(Boolean)
         .join(' ')
         .replace(/\\s+/g, '');
     };
     const recipientPattern = /\b(to|recipient|email)\b|\u6536\u4ef6\u4eba|\u6536\u4ef6/i;
     const subjectPattern = /\bsubject\b|\u4e3b\u9898/i;
-    const recipientInput = inputs.find(input => recipientPattern.test(labelOf(input)))
-      || roots.map(root => root.querySelector('input[role="combobox"]')).find(Boolean)
+    const recipientInput = inputs.find(input => recipientPattern.test(directLabelOf(input)))
+      || roots.flatMap(root => Array.from(root.querySelectorAll('input[role="combobox"]')))
+        .filter(input => {
+          const rect = input.getBoundingClientRect?.();
+          return Boolean(rect && rect.width > 0 && rect.height > 0);
+        })
+        .sort((left, right) => right.getBoundingClientRect().width - left.getBoundingClientRect().width)[0]
       || null;
     const subjectInput = inputs.find(input => subjectPattern.test(labelOf(input))) || null;
     const editorFrame = roots.map(root => root.querySelector('iframe.e_iframe')).find(Boolean)
@@ -126,7 +137,24 @@ function composeFillExpression({ recipient, subject, text } = {}) {
     editorBody.dispatchEvent(new Event('change', { bubbles: true }));
     recipientInput.focus();
     setValue(recipientInput, '');
-    return JSON.stringify({ ok: true, evidence: 'alibaba_webmail_content_inserted_recipient_focused', recipient, subject, bodyLength: bodyText.length });
+    const recipientRect = recipientInput.getBoundingClientRect?.();
+    const recipientRoot = recipientInput.getRootNode?.();
+    return JSON.stringify({
+      ok: true,
+      evidence: 'alibaba_webmail_content_inserted_recipient_focused',
+      recipient,
+      subject,
+      bodyLength: bodyText.length,
+      recipientControl: {
+        tag: recipientInput.tagName,
+        type: recipientInput.getAttribute?.('type') || '',
+        role: recipientInput.getAttribute?.('role') || '',
+        className: String(recipientInput.className || '').slice(0, 120),
+        x: Math.round(recipientRect?.x || 0),
+        y: Math.round(recipientRect?.y || 0),
+        shadowRoot: Boolean(recipientRoot && recipientRoot.host),
+      },
+    });
   })()`;
 }
 

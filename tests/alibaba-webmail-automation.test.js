@@ -39,6 +39,8 @@ test('Alibaba webmail expressions are valid JavaScript and keep exact recipient/
   assert.match(composeFillExpression(payload), /shadowRoot/);
   assert.ok(composeFillExpression(payload).includes(".replace(/\\s+/g, '')"));
   assert.match(composeFillExpression(payload), /\[role="combobox"\]/);
+  assert.match(composeFillExpression(payload), /directLabelOf/);
+  assert.match(composeFillExpression(payload), /getBoundingClientRect\(\)\.width/);
   assert.match(composeFillExpression(payload), /iframe\.e_iframe/);
   assert.match(composeFillExpression(payload), /querySelectorAll\('iframe'\)/);
   assert.match(composeFillExpression(payload), /content_inserted_recipient_focused/);
