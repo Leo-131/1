@@ -32,6 +32,13 @@ const {
   isBlockedFacebookTarget,
   isUnavailableProfilePage,
 } = require('./autoglm-bridge');
+const {
+  browserAgentForResult,
+  browserTransportForResult,
+  executionTransportSummary,
+  stableActionHash,
+  validateExtensionReceipt,
+} = require('./browser-transport');
 
 for (const stream of [process.stdout, process.stderr]) {
   if (stream && stream.on) {
@@ -465,7 +472,8 @@ function recordAutomationResult(item, result) {
     task_id: item.id,
     approval_version: 1,
     status: sendStatus,
-    agent: result.engine === 'alibaba-enterprise-mail-smtp-imap' ? 'alibaba-enterprise-mail' : 'codex-chrome-extension',
+    agent: browserAgentForResult(result),
+    browserTransportUsed: browserTransportForResult(result),
     timestamp,
     target_url: result.targetUrl || (result.chromeOpen && result.chromeOpen.targetUrl) || item.url || '',
     evidence: output.evidence || result.evidence || sendStatus,
@@ -476,6 +484,19 @@ function recordAutomationResult(item, result) {
     sentFolder: result.sentFolder || '',
     sentUid: result.sentUid || null,
   };
+  const receiptValidation = validateExtensionReceipt(result.extensionReceipt, {
+    taskId: item.id,
+    targetUrl: entry.target_url,
+    actionHash: stableActionHash({
+      taskId: item.id,
+      company: item.company || result.company || '',
+      targetUrl: entry.target_url,
+      actionType: item.action || result.mode || '',
+      subject: entry.subject,
+      draft: entry.draft,
+    }),
+  });
+  if (receiptValidation.ok) entry.extensionReceipt = result.extensionReceipt;
   const file = path.join(__dirname, 'autonomous-outreach-results.js');
   const results = readJsonScriptArray(file, 'AUTONOMOUS_OUTREACH_RESULTS');
   const duplicate = results.some(existing => existing.task_id === entry.task_id
@@ -3214,9 +3235,10 @@ const REAL_CUSTOMER_DEVELOPMENT_STATUSES = new Set([
 function buildExecutionTruth(results = []) {
   const rows = Array.isArray(results) ? results : [];
   const chromeOpenedCount = rows.filter(item => item && item.chromeOpen && item.chromeOpen.ok).length;
-    const customerMessageSent = rows.some(item => item && ['sent_confirmed', 'submitted_confirmed'].includes(item.sendStatus));
+  const customerMessageSent = rows.some(item => item && ['sent_confirmed', 'submitted_confirmed'].includes(item.sendStatus));
   const realDevelopmentCount = rows.filter(item => item && REAL_CUSTOMER_DEVELOPMENT_STATUSES.has(item.sendStatus)).length;
   return {
+    ...executionTransportSummary(rows),
     executionPhase: chromeOpenedCount ? 'browser_execution' : 'no_browser_execution',
     chromeStage: chromeOpenedCount ? 'opened' : 'not_started',
     chromeOpened: chromeOpenedCount > 0,
@@ -3523,6 +3545,10 @@ async function runDailyAutomationQueue(payload = {}) {
     return {
       ok: false,
       skippedOnly: true,
+      browserTransportRequested: 'codex-extension-first',
+      browserTransportUsed: 'none',
+      browserTransportFallbackReason: '',
+      extensionReceiptCount: 0,
       executionPhase: 'no_executable_tasks',
       chromeStage: 'not_started',
       chromeOpened: false,
@@ -3687,7 +3713,7 @@ async function runDailyAutomationQueue(payload = {}) {
   return {
     ok: results.some(item => item.ok),
     ...buildExecutionTruth(results),
-    engine: 'Codex Chrome Extension queue bridge',
+    engine: 'Browser transport queue bridge',
     mode: 'serial-single-target',
     batchMode: 'parallel-batches',
     parallelLimit,
@@ -3730,6 +3756,10 @@ async function runAutoDailyAndWriteArtifact() {
       ok: false,
       error: `auto-run-daily timed out after ${timeoutMs}ms`,
       completedAt: new Date().toISOString(),
+      browserTransportRequested: 'codex-extension-first',
+      browserTransportUsed: 'cdp',
+      browserTransportFallbackReason: 'extension_bridge_not_available_process_local_cdp',
+      extensionReceiptCount: 0,
       executionPhase: 'browser_execution_timeout',
       chromeOpened: true,
       customerDevelopmentPerformed: confirmedSendCount > 0,
@@ -3762,6 +3792,10 @@ async function runAutoDailyAndWriteArtifact() {
       ok: false,
       error: error.message || String(error),
       completedAt: new Date().toISOString(),
+      browserTransportRequested: 'codex-extension-first',
+      browserTransportUsed: 'none',
+      browserTransportFallbackReason: 'execution_failed_before_transport_confirmation',
+      extensionReceiptCount: 0,
     };
     writeDailyExecutionArtifact(output);
   } finally {

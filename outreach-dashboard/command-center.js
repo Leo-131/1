@@ -606,7 +606,7 @@
       timestamp: item.timestamp || '',
       taskId: item.task_id || '',
       stage: 'automation_result',
-      agent: item.agent || 'codex-chrome-extension',
+      agent: item.agent || 'unknown-browser-transport',
       result: item.status || '',
       evidence: item.evidence || '',
     }));
@@ -1587,6 +1587,16 @@
     const bucketRows = executionBlockerBucketRows(skipped);
     const chromeEntered = (latestExecution && latestExecution.chromeOpened === true)
       || results.some(item => item && (item.chromeOpen && item.chromeOpen.ok || item.ok || item.status || item.evidence || item.automationEvidence));
+    const transportUsed = latestExecution && latestExecution.browserTransportUsed || 'unknown';
+    const transportLabel = transportUsed === 'codex-extension'
+      ? 'Codex Chrome Extension'
+      : transportUsed === 'cdp'
+        ? 'Chrome CDP fallback'
+        : transportUsed === 'mixed'
+          ? 'Mixed browser transports'
+          : transportUsed === 'none'
+            ? 'No browser transport'
+            : 'Unreported browser transport';
     const chromeStage = noBrowserExecution
       ? 'Chrome not opened - no development performed'
       : latestExecution && latestExecution.skippedOnly
@@ -1616,7 +1626,15 @@
       headline = 'No customer development was performed; safety gates left no executable task';
       nextAction = 'Wait for a new safe queue item or manually review the blocked/cooldown entries; do not report this run as development.';
     }
-    return { skipped, results, bucketRows, chromeStage, headline, nextAction, noBrowserExecution };
+    return {
+      skipped,
+      results,
+      bucketRows,
+      chromeStage: `${chromeStage} · Actual transport: ${transportLabel}`,
+      headline,
+      nextAction,
+      noBrowserExecution,
+    };
   }
   function executionRecoveryCards() {
     const actions = Array.isArray(latestExecution && latestExecution.recoveryActions)
