@@ -2544,6 +2544,21 @@ async function runAlibabaWebmailEmailLead(lead = {}, subject = '', draft = '') {
       if (filled && filled.ok) break;
       await sleep(500);
     }
+    if (filled && filled.ok) {
+      await cdpCommand(chromeOpen.webSocketDebuggerUrl, 'Input.dispatchKeyEvent', {
+        type: 'keyDown',
+        key: 'Enter',
+        code: 'Enter',
+        windowsVirtualKeyCode: 13,
+      }, 3000);
+      await cdpCommand(chromeOpen.webSocketDebuggerUrl, 'Input.dispatchKeyEvent', {
+        type: 'keyUp',
+        key: 'Enter',
+        code: 'Enter',
+        windowsVirtualKeyCode: 13,
+      }, 3000);
+      await sleep(500);
+    }
     await sleep(500);
     const inspected = await evaluateChromeTabJson(chromeOpen, composeInspectionExpression(payload), 8000);
     if (!filled || !filled.ok || !inspected || !inspected.ok) {
