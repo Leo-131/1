@@ -125,8 +125,8 @@ function composeFillExpression({ recipient, subject, text } = {}) {
     editorBody.dispatchEvent(new InputEvent('input', { bubbles: true, inputType: 'insertText', data: bodyText }));
     editorBody.dispatchEvent(new Event('change', { bubbles: true }));
     recipientInput.focus();
-    setValue(recipientInput, recipient);
-    return JSON.stringify({ ok: true, evidence: 'alibaba_webmail_draft_inserted_recipient_focused', recipient, subject, bodyLength: bodyText.length });
+    setValue(recipientInput, '');
+    return JSON.stringify({ ok: true, evidence: 'alibaba_webmail_content_inserted_recipient_focused', recipient, subject, bodyLength: bodyText.length });
   })()`;
 }
 

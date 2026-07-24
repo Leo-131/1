@@ -2545,6 +2545,9 @@ async function runAlibabaWebmailEmailLead(lead = {}, subject = '', draft = '') {
       await sleep(500);
     }
     if (filled && filled.ok) {
+      await cdpCommand(chromeOpen.webSocketDebuggerUrl, 'Input.insertText', {
+        text: target.recipient,
+      }, 3000);
       await cdpCommand(chromeOpen.webSocketDebuggerUrl, 'Input.dispatchKeyEvent', {
         type: 'keyDown',
         key: 'Enter',
