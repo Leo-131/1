@@ -138,8 +138,20 @@ function composeInspectionExpression({ recipient, subject, text } = {}) {
     const fields = ${composeFieldsExpression()};
     const normalize = value => String(value || '').replace(/\\r\\n/g, '\\n').replace(/\\u00a0/g, ' ').replace(/[ \\t]+$/gm, '').trim();
     const recipientNeedle = recipient.toLowerCase();
-    const recipientText = document.body?.innerText || '';
-    const recipientSignals = Array.from(document.querySelectorAll('input,[title],[aria-label],[data-email],[data-value]'))
+    const roots = [document];
+    for (let index = 0; index < roots.length; index += 1) {
+      const root = roots[index];
+      for (const element of root.querySelectorAll('*')) {
+        if (element.shadowRoot && !roots.includes(element.shadowRoot)) roots.push(element.shadowRoot);
+        if (element.tagName === 'IFRAME') {
+          try {
+            if (element.contentDocument && !roots.includes(element.contentDocument)) roots.push(element.contentDocument);
+          } catch {}
+        }
+      }
+    }
+    const recipientText = roots.map(root => root.body?.innerText || root.host?.innerText || '').join('\\n');
+    const recipientSignals = roots.flatMap(root => Array.from(root.querySelectorAll('input,[title],[aria-label],[data-email],[data-value]')))
       .flatMap(element => [
         element.value,
         element.getAttribute?.('title'),
