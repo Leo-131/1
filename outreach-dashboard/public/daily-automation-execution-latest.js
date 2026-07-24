@@ -28,19 +28,19 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "targetUrl": "https://www.bivouac.co.nz/",
       "ok": false,
       "sendStatus": "approval_pending",
-      "evidence": "alibaba_webmail_compose_button_missing;contact_path_strategy_v2",
+      "evidence": "alibaba_webmail_login_required;contact_path_strategy_v2",
       "chromeOpen": null,
       "result": {
         "ok": false,
         "sendStatus": "approval_pending",
         "reason": "alibaba_webmail_compose_unavailable",
-        "evidence": "alibaba_webmail_compose_button_missing;contact_path_strategy_v2",
+        "evidence": "alibaba_webmail_login_required;contact_path_strategy_v2",
         "engine": "alibaba-enterprise-mail-smtp-imap",
         "mode": "alibaba_email_delivery_unconfirmed",
         "targetUrl": "mailto:web@bivouac.co.nz",
         "subject": "FLEXTAIL retail partnership | 2026 assortment",
         "draft": "Dear Bivouac Outdoor Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
-        "output": "{\"verdict\":\"approval_pending\",\"sendStatus\":\"approval_pending\",\"evidence\":\"alibaba_webmail_compose_button_missing;contact_path_strategy_v2\",\"nextAction\":\"Do not resend automatically; inspect the Alibaba Mail delivery and Sent-folder evidence.\",\"recipientEmail\":\"web@bivouac.co.nz\",\"messageId\":\"\"}"
+        "output": "{\"verdict\":\"approval_pending\",\"sendStatus\":\"approval_pending\",\"evidence\":\"alibaba_webmail_login_required;contact_path_strategy_v2\",\"nextAction\":\"Do not resend automatically; inspect the Alibaba Mail delivery and Sent-folder evidence.\",\"recipientEmail\":\"web@bivouac.co.nz\",\"messageId\":\"\"}"
       }
     },
     {
@@ -51,19 +51,19 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "targetUrl": "https://www.wildfiresports.com.au/",
       "ok": false,
       "sendStatus": "approval_pending",
-      "evidence": "alibaba_webmail_compose_fields_missing;alibaba_webmail_draft_verification_failed;contact_path_strategy_v2",
+      "evidence": "alibaba_webmail_login_required;contact_path_strategy_v2",
       "chromeOpen": null,
       "result": {
         "ok": false,
         "sendStatus": "approval_pending",
-        "reason": "alibaba_webmail_draft_verification_failed",
-        "evidence": "alibaba_webmail_compose_fields_missing;alibaba_webmail_draft_verification_failed;contact_path_strategy_v2",
+        "reason": "alibaba_webmail_compose_unavailable",
+        "evidence": "alibaba_webmail_login_required;contact_path_strategy_v2",
         "engine": "alibaba-enterprise-mail-smtp-imap",
         "mode": "alibaba_email_delivery_unconfirmed",
         "targetUrl": "mailto:enquiries@wildfiresports.com.au",
         "subject": "FLEXTAIL retail partnership | 2026 assortment",
         "draft": "Dear Wildfire Sports Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
-        "output": "{\"verdict\":\"approval_pending\",\"sendStatus\":\"approval_pending\",\"evidence\":\"alibaba_webmail_compose_fields_missing;alibaba_webmail_draft_verification_failed;contact_path_strategy_v2\",\"nextAction\":\"Do not resend automatically; inspect the Alibaba Mail delivery and Sent-folder evidence.\",\"recipientEmail\":\"enquiries@wildfiresports.com.au\",\"messageId\":\"\"}"
+        "output": "{\"verdict\":\"approval_pending\",\"sendStatus\":\"approval_pending\",\"evidence\":\"alibaba_webmail_login_required;contact_path_strategy_v2\",\"nextAction\":\"Do not resend automatically; inspect the Alibaba Mail delivery and Sent-folder evidence.\",\"recipientEmail\":\"enquiries@wildfiresports.com.au\",\"messageId\":\"\"}"
       }
     },
     {
@@ -80,8 +80,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
         "engine": "codex-chrome-extension-cdp",
         "port": 9224,
         "targetUrl": "https://www.obelink.nl/help/contact-us",
-        "tabId": "6142769CEA52BCA1AAF5136886E5C313",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/6142769CEA52BCA1AAF5136886E5C313",
+        "tabId": "89F40D0664F81B63296DB2AE8C790A79",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/89F40D0664F81B63296DB2AE8C790A79",
         "title": "Kampeerwinkel Obelink - Specialist in kamperen & outdoor!"
       },
       "result": {
@@ -95,8 +95,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
           "engine": "codex-chrome-extension-cdp",
           "port": 9224,
           "targetUrl": "https://www.obelink.nl/help/contact-us",
-          "tabId": "6142769CEA52BCA1AAF5136886E5C313",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/6142769CEA52BCA1AAF5136886E5C313",
+          "tabId": "89F40D0664F81B63296DB2AE8C790A79",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/89F40D0664F81B63296DB2AE8C790A79",
           "title": "Kampeerwinkel Obelink - Specialist in kamperen & outdoor!"
         },
         "sendStatus": "website_contact_unreachable_skip",
@@ -120,8 +120,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
         "engine": "codex-chrome-extension-cdp",
         "port": 9224,
         "targetUrl": "https://www.auvieuxcampeur.fr/help/contact-us",
-        "tabId": "4454571F581ED079D1C79A77C0F7BD40",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/4454571F581ED079D1C79A77C0F7BD40",
+        "tabId": "498240F377C2526300DC7558CEF7CCEC",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/498240F377C2526300DC7558CEF7CCEC",
         "title": "Just a moment..."
       },
       "result": {
@@ -135,8 +135,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
           "engine": "codex-chrome-extension-cdp",
           "port": 9224,
           "targetUrl": "https://www.auvieuxcampeur.fr/help/contact-us",
-          "tabId": "4454571F581ED079D1C79A77C0F7BD40",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/4454571F581ED079D1C79A77C0F7BD40",
+          "tabId": "498240F377C2526300DC7558CEF7CCEC",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/498240F377C2526300DC7558CEF7CCEC",
           "title": "Just a moment..."
         },
         "sendStatus": "website_contact_unreachable_skip",
@@ -160,8 +160,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
         "engine": "codex-chrome-extension-cdp",
         "port": 9224,
         "targetUrl": "https://www.instagram.com/bergfreunde/",
-        "tabId": "A77EBCB65F23DFAE4F3C6FF6C9E9D58A",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/A77EBCB65F23DFAE4F3C6FF6C9E9D58A",
+        "tabId": "DD352B3A2EA3E2AD88E18B6ABDFD11F7",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/DD352B3A2EA3E2AD88E18B6ABDFD11F7",
         "title": "Bergfreunde (@bergfreunde) · Instagram 照片和视频"
       },
       "result": {
@@ -175,8 +175,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
           "engine": "codex-chrome-extension-cdp",
           "port": 9224,
           "targetUrl": "https://www.instagram.com/bergfreunde/",
-          "tabId": "A77EBCB65F23DFAE4F3C6FF6C9E9D58A",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/A77EBCB65F23DFAE4F3C6FF6C9E9D58A",
+          "tabId": "DD352B3A2EA3E2AD88E18B6ABDFD11F7",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/DD352B3A2EA3E2AD88E18B6ABDFD11F7",
           "title": "Bergfreunde (@bergfreunde) · Instagram 照片和视频"
         },
         "sendStatus": "failed_open",
@@ -207,7 +207,7 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
         "engine": "codex-chrome-extension-cdp",
         "port": 9224,
         "targetUrl": "https://www.naturkompaniet.se/help/contact-us",
-        "tabId": "4DF115AC3F452736CA78F3F52823574C",
+        "tabId": "489FD2B40C82265201FE42CF3D58E0D1",
         "title": "404",
         "status": "failed_open",
         "error": "profile_unavailable_or_broken_link",
@@ -224,7 +224,7 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
           "engine": "codex-chrome-extension-cdp",
           "port": 9224,
           "targetUrl": "https://www.naturkompaniet.se/help/contact-us",
-          "tabId": "4DF115AC3F452736CA78F3F52823574C",
+          "tabId": "489FD2B40C82265201FE42CF3D58E0D1",
           "title": "404",
           "status": "failed_open",
           "error": "profile_unavailable_or_broken_link",
@@ -234,7 +234,7 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
         "subject": "FLEXTAIL retail partnership | 2026 assortment",
         "draft": "Dear Naturkompaniet Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
         "evidence": "website_page_unavailable_404: Gå till huvudinnehåll\nFri frakt över 595 kr\n30 dagars öppet köp\nFri hemleverans över 595 kr\nMed kärlek för naturen\nVåra butiker\nLogga in\nNyheter\nDam\nAllt inom Dam\nDamkläder\nDamskor;website_contact_all_targets_failed:6;contact_path_strategy_v2",
-        "output": "{\"verdict\":\"website_contact_unreachable_skip\",\"evidence\":\"website_page_unavailable_404: Gå till huvudinnehåll\\nFri frakt över 595 kr\\n30 dagars öppet köp\\nFri hemleverans över 595 kr\\nMed kärlek för naturen\\nVåra butiker\\nLogga in\\nNyheter\\nDam\\nAllt inom Dam\\nDamkläder\\nDamskor;website_contact_all_targets_failed:6;contact_path_strategy_v2\",\"subject\":\"FLEXTAIL retail partnership | 2026 assortment\",\"draft\":\"Dear Naturkompaniet Team,\\n\\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\\n\\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\\n\\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\\n\\nProduct overview: https://www.flextail.com/\\n\\nBest regards,\\nLeo Liu\\nSales & Operations Director\\nLeo@flextailgear.com\",\"sendStatus\":\"website_contact_unreachable_skip\",\"attempts\":[{\"targetUrl\":\"https://www.naturkompaniet.se/\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control\"},{\"targetUrl\":\"https://www.naturkompaniet.se/pages/contact-us\",\"sendStatus\":\"failed_open\",\"evidence\":\"website_page_unavailable_404: Gå till huvudinnehåll\\nFri frakt över 595 kr\\n30 dagars öppet köp\\nFri hemleverans över 595 kr\\nMed kärlek för naturen\\nVåra butiker\\nLogga in\\nNyheter\\nDam\\nAllt inom Dam\\nDamkläder\\nDamskor\"},{\"targetUrl\":\"https://www.naturkompaniet.se/pages/contact\",\"sendStatus\":\"failed_open\",\"evidence\":\"website_page_unavailable_404: Gå till huvudinnehåll\\nFri frakt över 595 kr\\n30 dagars öppet köp\\nFri hemleverans över 595 kr\\nMed kärlek för naturen\\nVåra butiker\\nLogga in\\nNyheter\\nDam\\nAllt inom Dam\\nDamkläder\\nDamskor\"},{\"targetUrl\":\"https://www.naturkompaniet.se/contact-us\",\"sendStatus\":\"failed_open\",\"evidence\":\"website_page_unavailable_404: 404\"},{\"targetUrl\":\"https://www.naturkompaniet.se/contact\",\"sendStatus\":\"failed_open\",\"evidence\":\"website_page_unavailable_404: 404\"},{\"targetUrl\":\"https://www.naturkompaniet.se/help/contact-us\",\"sendStatus\":\"failed_open\",\"evidence\":\"website_page_unavailable_404: Gå till huvudinnehåll\\nFri frakt över 595 kr\\n30 dagars öppet köp\\nFri hemleverans över 595 kr\\nMed kärlek för naturen\\nVåra butiker\\nLogga in\\nNyheter\\nDam\\nAllt inom Dam\\nDamkläder\\nDamskor\"}],\"nextAction\":\"Official website contact was unreachable or not machine-verifiable. Skip this website route now, note it clearly, and continue with LinkedIn, Facebook, Instagram, or another verified official channel.\"}"
+        "output": "{\"verdict\":\"website_contact_unreachable_skip\",\"evidence\":\"website_page_unavailable_404: Gå till huvudinnehåll\\nFri frakt över 595 kr\\n30 dagars öppet köp\\nFri hemleverans över 595 kr\\nMed kärlek för naturen\\nVåra butiker\\nLogga in\\nNyheter\\nDam\\nAllt inom Dam\\nDamkläder\\nDamskor;website_contact_all_targets_failed:6;contact_path_strategy_v2\",\"subject\":\"FLEXTAIL retail partnership | 2026 assortment\",\"draft\":\"Dear Naturkompaniet Team,\\n\\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\\n\\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\\n\\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\\n\\nProduct overview: https://www.flextail.com/\\n\\nBest regards,\\nLeo Liu\\nSales & Operations Director\\nLeo@flextailgear.com\",\"sendStatus\":\"website_contact_unreachable_skip\",\"attempts\":[{\"targetUrl\":\"https://www.naturkompaniet.se/\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control\"},{\"targetUrl\":\"https://www.naturkompaniet.se/pages/contact-us\",\"sendStatus\":\"failed_open\",\"evidence\":\"website_page_unavailable_404: Gå till huvudinnehåll\\nFri frakt över 595 kr\\n30 dagars öppet köp\\nFri hemleverans över 595 kr\\nMed kärlek för naturen\\nVåra butiker\\nLogga in\\nNyheter\\nDam\\nAllt inom Dam\\nDamkläder\\nDamskor\"},{\"targetUrl\":\"https://www.naturkompaniet.se/pages/contact\",\"sendStatus\":\"failed_open\",\"evidence\":\"website_page_unavailable_404: Gå till huvudinnehåll\\nFri frakt över 595 kr\\n30 dagars öppet köp\\nFri hemleverans över 595 kr\\nMed kärlek för naturen\\nVåra butiker\\nLogga in\\nNyheter\\nDam\\nAllt inom Dam\\nDamkläder\\nDamskor\"},{\"targetUrl\":\"https://www.naturkompaniet.se/contact-us\",\"sendStatus\":\"failed_open\",\"evidence\":\"website_page_unavailable_404: Gå till huvudinnehåll\\nFri frakt över 595 kr\\n30 dagars öppet köp\\nFri hemleverans över 595 kr\\nMed kärlek för naturen\\nVåra butiker\\nLogga in\\nNyheter\\nDam\\nAllt inom Dam\\nDamkläder\\nDamskor\"},{\"targetUrl\":\"https://www.naturkompaniet.se/contact\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control\"},{\"targetUrl\":\"https://www.naturkompaniet.se/help/contact-us\",\"sendStatus\":\"failed_open\",\"evidence\":\"website_page_unavailable_404: Gå till huvudinnehåll\\nFri frakt över 595 kr\\n30 dagars öppet köp\\nFri hemleverans över 595 kr\\nMed kärlek för naturen\\nVåra butiker\\nLogga in\\nNyheter\\nDam\\nAllt inom Dam\\nDamkläder\\nDamskor\"}],\"nextAction\":\"Official website contact was unreachable or not machine-verifiable. Skip this website route now, note it clearly, and continue with LinkedIn, Facebook, Instagram, or another verified official channel.\"}"
       }
     },
     {
@@ -251,8 +251,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
         "engine": "codex-chrome-extension-cdp",
         "port": 9224,
         "targetUrl": "https://www.tentworld.com.au/help/contact-us",
-        "tabId": "56BC96A2F84281FF7C9A236DC70E0E00",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/56BC96A2F84281FF7C9A236DC70E0E00",
+        "tabId": "4A30A38EF08FCBDB63D6E6DAEA555E1F",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/4A30A38EF08FCBDB63D6E6DAEA555E1F",
         "title": "Home Page - Tentworld"
       },
       "result": {
@@ -266,15 +266,15 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
           "engine": "codex-chrome-extension-cdp",
           "port": 9224,
           "targetUrl": "https://www.tentworld.com.au/help/contact-us",
-          "tabId": "56BC96A2F84281FF7C9A236DC70E0E00",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/56BC96A2F84281FF7C9A236DC70E0E00",
+          "tabId": "4A30A38EF08FCBDB63D6E6DAEA555E1F",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/4A30A38EF08FCBDB63D6E6DAEA555E1F",
           "title": "Home Page - Tentworld"
         },
         "sendStatus": "website_contact_unreachable_skip",
         "subject": "FLEXTAIL retail partnership | 2026 assortment",
         "draft": "Dear Tentworld Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
         "evidence": "website_contact_entry_not_verified;contact_entry_clicked:Contact Us;website_contact_all_targets_failed:6;contact_path_strategy_v2",
-        "output": "{\"verdict\":\"website_contact_unreachable_skip\",\"evidence\":\"website_contact_entry_not_verified;contact_entry_clicked:Contact Us;website_contact_all_targets_failed:6;contact_path_strategy_v2\",\"nextAction\":\"Contact page opened, but no verified form, mailto link, vendor/business route, or clickable Contact Us path was detected. Continue manually before marking the lead ready.\",\"subject\":\"FLEXTAIL retail partnership | 2026 assortment\",\"draft\":\"Dear Tentworld Team,\\n\\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\\n\\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\\n\\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\\n\\nProduct overview: https://www.flextail.com/\\n\\nBest regards,\\nLeo Liu\\nSales & Operations Director\\nLeo@flextailgear.com\",\"sendStatus\":\"website_contact_unreachable_skip\",\"attempts\":[{\"targetUrl\":\"https://www.tentworld.com.au/\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control\"},{\"targetUrl\":\"https://www.tentworld.com.au/pages/contact-us\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;contact_entry_clicked:Contact Us\"},{\"targetUrl\":\"https://www.tentworld.com.au/pages/contact\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control\"},{\"targetUrl\":\"https://www.tentworld.com.au/contact-us\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;contact_entry_clicked:Contact Us\"},{\"targetUrl\":\"https://www.tentworld.com.au/contact\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;contact_entry_clicked:Contact Us\"},{\"targetUrl\":\"https://www.tentworld.com.au/help/contact-us\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;contact_entry_clicked:Contact Us\"}]}"
+        "output": "{\"verdict\":\"website_contact_unreachable_skip\",\"evidence\":\"website_contact_entry_not_verified;contact_entry_clicked:Contact Us;website_contact_all_targets_failed:6;contact_path_strategy_v2\",\"nextAction\":\"Contact page opened, but no verified form, mailto link, vendor/business route, or clickable Contact Us path was detected. Continue manually before marking the lead ready.\",\"subject\":\"FLEXTAIL retail partnership | 2026 assortment\",\"draft\":\"Dear Tentworld Team,\\n\\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\\n\\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\\n\\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\\n\\nProduct overview: https://www.flextail.com/\\n\\nBest regards,\\nLeo Liu\\nSales & Operations Director\\nLeo@flextailgear.com\",\"sendStatus\":\"website_contact_unreachable_skip\",\"attempts\":[{\"targetUrl\":\"https://www.tentworld.com.au/\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control\"},{\"targetUrl\":\"https://www.tentworld.com.au/pages/contact-us\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control\"},{\"targetUrl\":\"https://www.tentworld.com.au/pages/contact\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control\"},{\"targetUrl\":\"https://www.tentworld.com.au/contact-us\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control\"},{\"targetUrl\":\"https://www.tentworld.com.au/contact\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;contact_entry_clicked:Contact Us\"},{\"targetUrl\":\"https://www.tentworld.com.au/help/contact-us\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;contact_entry_clicked:Contact Us\"}]}"
       }
     },
     {
@@ -291,7 +291,7 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
         "engine": "codex-chrome-extension-cdp",
         "port": 9224,
         "targetUrl": "https://vpo.ca/help/contact-us",
-        "tabId": "AB6216C84AC836C2165DB702CA2E7FFF",
+        "tabId": "C50F71AF6909008BD0D041A161CB2764",
         "title": "Valhalla Pure Outfitters | VPO Canada",
         "status": "failed_open",
         "error": "profile_unavailable_or_broken_link",
@@ -308,7 +308,7 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
           "engine": "codex-chrome-extension-cdp",
           "port": 9224,
           "targetUrl": "https://vpo.ca/help/contact-us",
-          "tabId": "AB6216C84AC836C2165DB702CA2E7FFF",
+          "tabId": "C50F71AF6909008BD0D041A161CB2764",
           "title": "Valhalla Pure Outfitters | VPO Canada",
           "status": "failed_open",
           "error": "profile_unavailable_or_broken_link",
@@ -335,8 +335,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
         "engine": "codex-chrome-extension-cdp",
         "port": 9224,
         "targetUrl": "https://www.alpinetrek.co.uk/help/contact-us",
-        "tabId": "E43EB1D4AD6FAC02A4E829F0977B894D",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/E43EB1D4AD6FAC02A4E829F0977B894D",
+        "tabId": "AEE9AEB627BB7E657FCCEF46EC3CFCC2",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/AEE9AEB627BB7E657FCCEF46EC3CFCC2",
         "title": "Attention Required! | Cloudflare"
       },
       "result": {
@@ -350,8 +350,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
           "engine": "codex-chrome-extension-cdp",
           "port": 9224,
           "targetUrl": "https://www.alpinetrek.co.uk/help/contact-us",
-          "tabId": "E43EB1D4AD6FAC02A4E829F0977B894D",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/E43EB1D4AD6FAC02A4E829F0977B894D",
+          "tabId": "AEE9AEB627BB7E657FCCEF46EC3CFCC2",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/AEE9AEB627BB7E657FCCEF46EC3CFCC2",
           "title": "Attention Required! | Cloudflare"
         },
         "sendStatus": "website_contact_unreachable_skip",
@@ -375,8 +375,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
         "engine": "codex-chrome-extension-cdp",
         "port": 9224,
         "targetUrl": "https://www.ekosport.fr/help/contact-us",
-        "tabId": "96511EA0BF19EAACFDB46F4B8E838329",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/96511EA0BF19EAACFDB46F4B8E838329",
+        "tabId": "792C28CB884D55EE1E8D18658CF83807",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/792C28CB884D55EE1E8D18658CF83807",
         "title": "Attention Required! | Cloudflare"
       },
       "result": {
@@ -390,8 +390,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
           "engine": "codex-chrome-extension-cdp",
           "port": 9224,
           "targetUrl": "https://www.ekosport.fr/help/contact-us",
-          "tabId": "96511EA0BF19EAACFDB46F4B8E838329",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/96511EA0BF19EAACFDB46F4B8E838329",
+          "tabId": "792C28CB884D55EE1E8D18658CF83807",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/792C28CB884D55EE1E8D18658CF83807",
           "title": "Attention Required! | Cloudflare"
         },
         "sendStatus": "website_contact_unreachable_skip",
@@ -415,9 +415,9 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
         "engine": "codex-chrome-extension-cdp",
         "port": 9224,
         "targetUrl": "https://scandinavianoutdoor.com/help/contact-us",
-        "tabId": "1C9C18C53E07D507BA27F828AAE18467",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/1C9C18C53E07D507BA27F828AAE18467",
-        "title": ""
+        "tabId": "68F7B49B5E92F75FA2F1AF931733AD9E",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/68F7B49B5E92F75FA2F1AF931733AD9E",
+        "title": "Scandinavian Outdoor"
       },
       "result": {
         "ok": false,
@@ -430,9 +430,9 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
           "engine": "codex-chrome-extension-cdp",
           "port": 9224,
           "targetUrl": "https://scandinavianoutdoor.com/help/contact-us",
-          "tabId": "1C9C18C53E07D507BA27F828AAE18467",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/1C9C18C53E07D507BA27F828AAE18467",
-          "title": ""
+          "tabId": "68F7B49B5E92F75FA2F1AF931733AD9E",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/68F7B49B5E92F75FA2F1AF931733AD9E",
+          "title": "Scandinavian Outdoor"
         },
         "sendStatus": "website_contact_unreachable_skip",
         "subject": "FLEXTAIL retail partnership | 2026 assortment",
@@ -455,9 +455,9 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
         "engine": "codex-chrome-extension-cdp",
         "port": 9224,
         "targetUrl": "https://www.snowleader.com/help/contact-us",
-        "tabId": "F391D9CE72CE0554E0B0AB368AB7A5A7",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/F391D9CE72CE0554E0B0AB368AB7A5A7",
-        "title": "Snowleader : Equipement ski, streetwear, matériel montagne, vêtements montagne"
+        "tabId": "63EF571E9F48CBEA912D937F37658901",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/63EF571E9F48CBEA912D937F37658901",
+        "title": "Just a moment..."
       },
       "result": {
         "ok": false,
@@ -470,9 +470,9 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
           "engine": "codex-chrome-extension-cdp",
           "port": 9224,
           "targetUrl": "https://www.snowleader.com/help/contact-us",
-          "tabId": "F391D9CE72CE0554E0B0AB368AB7A5A7",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/F391D9CE72CE0554E0B0AB368AB7A5A7",
-          "title": "Snowleader : Equipement ski, streetwear, matériel montagne, vêtements montagne"
+          "tabId": "63EF571E9F48CBEA912D937F37658901",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/63EF571E9F48CBEA912D937F37658901",
+          "title": "Just a moment..."
         },
         "sendStatus": "website_contact_unreachable_skip",
         "subject": "FLEXTAIL retail partnership | 2026 assortment",
@@ -495,8 +495,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
         "engine": "codex-chrome-extension-cdp",
         "port": 9224,
         "targetUrl": "https://www.transa.ch/help/contact-us",
-        "tabId": "B9A4F22858DA0F38E39533C900F048DD",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/B9A4F22858DA0F38E39533C900F048DD",
+        "tabId": "27A66963C023B38676254126215EDC9F",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/27A66963C023B38676254126215EDC9F",
         "title": "High-quality travel and outdoor equipment - Transa.ch"
       },
       "result": {
@@ -510,8 +510,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
           "engine": "codex-chrome-extension-cdp",
           "port": 9224,
           "targetUrl": "https://www.transa.ch/help/contact-us",
-          "tabId": "B9A4F22858DA0F38E39533C900F048DD",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/B9A4F22858DA0F38E39533C900F048DD",
+          "tabId": "27A66963C023B38676254126215EDC9F",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/27A66963C023B38676254126215EDC9F",
           "title": "High-quality travel and outdoor equipment - Transa.ch"
         },
         "sendStatus": "website_contact_unreachable_skip",
@@ -531,19 +531,19 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "targetUrl": "https://www.bivouac.co.nz/",
       "ok": false,
       "sendStatus": "approval_pending",
-      "evidence": "alibaba_webmail_compose_button_missing;contact_path_strategy_v2",
+      "evidence": "alibaba_webmail_login_required;contact_path_strategy_v2",
       "chromeOpen": null,
       "result": {
         "ok": false,
         "sendStatus": "approval_pending",
         "reason": "alibaba_webmail_compose_unavailable",
-        "evidence": "alibaba_webmail_compose_button_missing;contact_path_strategy_v2",
+        "evidence": "alibaba_webmail_login_required;contact_path_strategy_v2",
         "engine": "alibaba-enterprise-mail-smtp-imap",
         "mode": "alibaba_email_delivery_unconfirmed",
         "targetUrl": "mailto:web@bivouac.co.nz",
         "subject": "FLEXTAIL retail partnership | 2026 assortment",
         "draft": "Dear Bivouac Outdoor Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
-        "output": "{\"verdict\":\"approval_pending\",\"sendStatus\":\"approval_pending\",\"evidence\":\"alibaba_webmail_compose_button_missing;contact_path_strategy_v2\",\"nextAction\":\"Do not resend automatically; inspect the Alibaba Mail delivery and Sent-folder evidence.\",\"recipientEmail\":\"web@bivouac.co.nz\",\"messageId\":\"\"}"
+        "output": "{\"verdict\":\"approval_pending\",\"sendStatus\":\"approval_pending\",\"evidence\":\"alibaba_webmail_login_required;contact_path_strategy_v2\",\"nextAction\":\"Do not resend automatically; inspect the Alibaba Mail delivery and Sent-folder evidence.\",\"recipientEmail\":\"web@bivouac.co.nz\",\"messageId\":\"\"}"
       }
     },
     {
@@ -554,19 +554,19 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "targetUrl": "https://www.wildfiresports.com.au/",
       "ok": false,
       "sendStatus": "approval_pending",
-      "evidence": "alibaba_webmail_compose_fields_missing;alibaba_webmail_draft_verification_failed;contact_path_strategy_v2",
+      "evidence": "alibaba_webmail_login_required;contact_path_strategy_v2",
       "chromeOpen": null,
       "result": {
         "ok": false,
         "sendStatus": "approval_pending",
-        "reason": "alibaba_webmail_draft_verification_failed",
-        "evidence": "alibaba_webmail_compose_fields_missing;alibaba_webmail_draft_verification_failed;contact_path_strategy_v2",
+        "reason": "alibaba_webmail_compose_unavailable",
+        "evidence": "alibaba_webmail_login_required;contact_path_strategy_v2",
         "engine": "alibaba-enterprise-mail-smtp-imap",
         "mode": "alibaba_email_delivery_unconfirmed",
         "targetUrl": "mailto:enquiries@wildfiresports.com.au",
         "subject": "FLEXTAIL retail partnership | 2026 assortment",
         "draft": "Dear Wildfire Sports Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
-        "output": "{\"verdict\":\"approval_pending\",\"sendStatus\":\"approval_pending\",\"evidence\":\"alibaba_webmail_compose_fields_missing;alibaba_webmail_draft_verification_failed;contact_path_strategy_v2\",\"nextAction\":\"Do not resend automatically; inspect the Alibaba Mail delivery and Sent-folder evidence.\",\"recipientEmail\":\"enquiries@wildfiresports.com.au\",\"messageId\":\"\"}"
+        "output": "{\"verdict\":\"approval_pending\",\"sendStatus\":\"approval_pending\",\"evidence\":\"alibaba_webmail_login_required;contact_path_strategy_v2\",\"nextAction\":\"Do not resend automatically; inspect the Alibaba Mail delivery and Sent-folder evidence.\",\"recipientEmail\":\"enquiries@wildfiresports.com.au\",\"messageId\":\"\"}"
       }
     },
     {
@@ -583,8 +583,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
         "engine": "codex-chrome-extension-cdp",
         "port": 9224,
         "targetUrl": "https://www.obelink.nl/help/contact-us",
-        "tabId": "6142769CEA52BCA1AAF5136886E5C313",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/6142769CEA52BCA1AAF5136886E5C313",
+        "tabId": "89F40D0664F81B63296DB2AE8C790A79",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/89F40D0664F81B63296DB2AE8C790A79",
         "title": "Kampeerwinkel Obelink - Specialist in kamperen & outdoor!"
       },
       "result": {
@@ -598,8 +598,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
           "engine": "codex-chrome-extension-cdp",
           "port": 9224,
           "targetUrl": "https://www.obelink.nl/help/contact-us",
-          "tabId": "6142769CEA52BCA1AAF5136886E5C313",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/6142769CEA52BCA1AAF5136886E5C313",
+          "tabId": "89F40D0664F81B63296DB2AE8C790A79",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/89F40D0664F81B63296DB2AE8C790A79",
           "title": "Kampeerwinkel Obelink - Specialist in kamperen & outdoor!"
         },
         "sendStatus": "website_contact_unreachable_skip",
@@ -623,8 +623,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
         "engine": "codex-chrome-extension-cdp",
         "port": 9224,
         "targetUrl": "https://www.auvieuxcampeur.fr/help/contact-us",
-        "tabId": "4454571F581ED079D1C79A77C0F7BD40",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/4454571F581ED079D1C79A77C0F7BD40",
+        "tabId": "498240F377C2526300DC7558CEF7CCEC",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/498240F377C2526300DC7558CEF7CCEC",
         "title": "Just a moment..."
       },
       "result": {
@@ -638,8 +638,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
           "engine": "codex-chrome-extension-cdp",
           "port": 9224,
           "targetUrl": "https://www.auvieuxcampeur.fr/help/contact-us",
-          "tabId": "4454571F581ED079D1C79A77C0F7BD40",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/4454571F581ED079D1C79A77C0F7BD40",
+          "tabId": "498240F377C2526300DC7558CEF7CCEC",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/498240F377C2526300DC7558CEF7CCEC",
           "title": "Just a moment..."
         },
         "sendStatus": "website_contact_unreachable_skip",
@@ -663,8 +663,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
         "engine": "codex-chrome-extension-cdp",
         "port": 9224,
         "targetUrl": "https://www.instagram.com/bergfreunde/",
-        "tabId": "A77EBCB65F23DFAE4F3C6FF6C9E9D58A",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/A77EBCB65F23DFAE4F3C6FF6C9E9D58A",
+        "tabId": "DD352B3A2EA3E2AD88E18B6ABDFD11F7",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/DD352B3A2EA3E2AD88E18B6ABDFD11F7",
         "title": "Bergfreunde (@bergfreunde) · Instagram 照片和视频"
       },
       "result": {
@@ -678,8 +678,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
           "engine": "codex-chrome-extension-cdp",
           "port": 9224,
           "targetUrl": "https://www.instagram.com/bergfreunde/",
-          "tabId": "A77EBCB65F23DFAE4F3C6FF6C9E9D58A",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/A77EBCB65F23DFAE4F3C6FF6C9E9D58A",
+          "tabId": "DD352B3A2EA3E2AD88E18B6ABDFD11F7",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/DD352B3A2EA3E2AD88E18B6ABDFD11F7",
           "title": "Bergfreunde (@bergfreunde) · Instagram 照片和视频"
         },
         "sendStatus": "failed_open",
@@ -710,7 +710,7 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
         "engine": "codex-chrome-extension-cdp",
         "port": 9224,
         "targetUrl": "https://www.naturkompaniet.se/help/contact-us",
-        "tabId": "4DF115AC3F452736CA78F3F52823574C",
+        "tabId": "489FD2B40C82265201FE42CF3D58E0D1",
         "title": "404",
         "status": "failed_open",
         "error": "profile_unavailable_or_broken_link",
@@ -727,7 +727,7 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
           "engine": "codex-chrome-extension-cdp",
           "port": 9224,
           "targetUrl": "https://www.naturkompaniet.se/help/contact-us",
-          "tabId": "4DF115AC3F452736CA78F3F52823574C",
+          "tabId": "489FD2B40C82265201FE42CF3D58E0D1",
           "title": "404",
           "status": "failed_open",
           "error": "profile_unavailable_or_broken_link",
@@ -737,7 +737,7 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
         "subject": "FLEXTAIL retail partnership | 2026 assortment",
         "draft": "Dear Naturkompaniet Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
         "evidence": "website_page_unavailable_404: Gå till huvudinnehåll\nFri frakt över 595 kr\n30 dagars öppet köp\nFri hemleverans över 595 kr\nMed kärlek för naturen\nVåra butiker\nLogga in\nNyheter\nDam\nAllt inom Dam\nDamkläder\nDamskor;website_contact_all_targets_failed:6;contact_path_strategy_v2",
-        "output": "{\"verdict\":\"website_contact_unreachable_skip\",\"evidence\":\"website_page_unavailable_404: Gå till huvudinnehåll\\nFri frakt över 595 kr\\n30 dagars öppet köp\\nFri hemleverans över 595 kr\\nMed kärlek för naturen\\nVåra butiker\\nLogga in\\nNyheter\\nDam\\nAllt inom Dam\\nDamkläder\\nDamskor;website_contact_all_targets_failed:6;contact_path_strategy_v2\",\"subject\":\"FLEXTAIL retail partnership | 2026 assortment\",\"draft\":\"Dear Naturkompaniet Team,\\n\\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\\n\\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\\n\\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\\n\\nProduct overview: https://www.flextail.com/\\n\\nBest regards,\\nLeo Liu\\nSales & Operations Director\\nLeo@flextailgear.com\",\"sendStatus\":\"website_contact_unreachable_skip\",\"attempts\":[{\"targetUrl\":\"https://www.naturkompaniet.se/\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control\"},{\"targetUrl\":\"https://www.naturkompaniet.se/pages/contact-us\",\"sendStatus\":\"failed_open\",\"evidence\":\"website_page_unavailable_404: Gå till huvudinnehåll\\nFri frakt över 595 kr\\n30 dagars öppet köp\\nFri hemleverans över 595 kr\\nMed kärlek för naturen\\nVåra butiker\\nLogga in\\nNyheter\\nDam\\nAllt inom Dam\\nDamkläder\\nDamskor\"},{\"targetUrl\":\"https://www.naturkompaniet.se/pages/contact\",\"sendStatus\":\"failed_open\",\"evidence\":\"website_page_unavailable_404: Gå till huvudinnehåll\\nFri frakt över 595 kr\\n30 dagars öppet köp\\nFri hemleverans över 595 kr\\nMed kärlek för naturen\\nVåra butiker\\nLogga in\\nNyheter\\nDam\\nAllt inom Dam\\nDamkläder\\nDamskor\"},{\"targetUrl\":\"https://www.naturkompaniet.se/contact-us\",\"sendStatus\":\"failed_open\",\"evidence\":\"website_page_unavailable_404: 404\"},{\"targetUrl\":\"https://www.naturkompaniet.se/contact\",\"sendStatus\":\"failed_open\",\"evidence\":\"website_page_unavailable_404: 404\"},{\"targetUrl\":\"https://www.naturkompaniet.se/help/contact-us\",\"sendStatus\":\"failed_open\",\"evidence\":\"website_page_unavailable_404: Gå till huvudinnehåll\\nFri frakt över 595 kr\\n30 dagars öppet köp\\nFri hemleverans över 595 kr\\nMed kärlek för naturen\\nVåra butiker\\nLogga in\\nNyheter\\nDam\\nAllt inom Dam\\nDamkläder\\nDamskor\"}],\"nextAction\":\"Official website contact was unreachable or not machine-verifiable. Skip this website route now, note it clearly, and continue with LinkedIn, Facebook, Instagram, or another verified official channel.\"}"
+        "output": "{\"verdict\":\"website_contact_unreachable_skip\",\"evidence\":\"website_page_unavailable_404: Gå till huvudinnehåll\\nFri frakt över 595 kr\\n30 dagars öppet köp\\nFri hemleverans över 595 kr\\nMed kärlek för naturen\\nVåra butiker\\nLogga in\\nNyheter\\nDam\\nAllt inom Dam\\nDamkläder\\nDamskor;website_contact_all_targets_failed:6;contact_path_strategy_v2\",\"subject\":\"FLEXTAIL retail partnership | 2026 assortment\",\"draft\":\"Dear Naturkompaniet Team,\\n\\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\\n\\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\\n\\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\\n\\nProduct overview: https://www.flextail.com/\\n\\nBest regards,\\nLeo Liu\\nSales & Operations Director\\nLeo@flextailgear.com\",\"sendStatus\":\"website_contact_unreachable_skip\",\"attempts\":[{\"targetUrl\":\"https://www.naturkompaniet.se/\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control\"},{\"targetUrl\":\"https://www.naturkompaniet.se/pages/contact-us\",\"sendStatus\":\"failed_open\",\"evidence\":\"website_page_unavailable_404: Gå till huvudinnehåll\\nFri frakt över 595 kr\\n30 dagars öppet köp\\nFri hemleverans över 595 kr\\nMed kärlek för naturen\\nVåra butiker\\nLogga in\\nNyheter\\nDam\\nAllt inom Dam\\nDamkläder\\nDamskor\"},{\"targetUrl\":\"https://www.naturkompaniet.se/pages/contact\",\"sendStatus\":\"failed_open\",\"evidence\":\"website_page_unavailable_404: Gå till huvudinnehåll\\nFri frakt över 595 kr\\n30 dagars öppet köp\\nFri hemleverans över 595 kr\\nMed kärlek för naturen\\nVåra butiker\\nLogga in\\nNyheter\\nDam\\nAllt inom Dam\\nDamkläder\\nDamskor\"},{\"targetUrl\":\"https://www.naturkompaniet.se/contact-us\",\"sendStatus\":\"failed_open\",\"evidence\":\"website_page_unavailable_404: Gå till huvudinnehåll\\nFri frakt över 595 kr\\n30 dagars öppet köp\\nFri hemleverans över 595 kr\\nMed kärlek för naturen\\nVåra butiker\\nLogga in\\nNyheter\\nDam\\nAllt inom Dam\\nDamkläder\\nDamskor\"},{\"targetUrl\":\"https://www.naturkompaniet.se/contact\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control\"},{\"targetUrl\":\"https://www.naturkompaniet.se/help/contact-us\",\"sendStatus\":\"failed_open\",\"evidence\":\"website_page_unavailable_404: Gå till huvudinnehåll\\nFri frakt över 595 kr\\n30 dagars öppet köp\\nFri hemleverans över 595 kr\\nMed kärlek för naturen\\nVåra butiker\\nLogga in\\nNyheter\\nDam\\nAllt inom Dam\\nDamkläder\\nDamskor\"}],\"nextAction\":\"Official website contact was unreachable or not machine-verifiable. Skip this website route now, note it clearly, and continue with LinkedIn, Facebook, Instagram, or another verified official channel.\"}"
       }
     },
     {
@@ -754,8 +754,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
         "engine": "codex-chrome-extension-cdp",
         "port": 9224,
         "targetUrl": "https://www.tentworld.com.au/help/contact-us",
-        "tabId": "56BC96A2F84281FF7C9A236DC70E0E00",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/56BC96A2F84281FF7C9A236DC70E0E00",
+        "tabId": "4A30A38EF08FCBDB63D6E6DAEA555E1F",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/4A30A38EF08FCBDB63D6E6DAEA555E1F",
         "title": "Home Page - Tentworld"
       },
       "result": {
@@ -769,15 +769,15 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
           "engine": "codex-chrome-extension-cdp",
           "port": 9224,
           "targetUrl": "https://www.tentworld.com.au/help/contact-us",
-          "tabId": "56BC96A2F84281FF7C9A236DC70E0E00",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/56BC96A2F84281FF7C9A236DC70E0E00",
+          "tabId": "4A30A38EF08FCBDB63D6E6DAEA555E1F",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/4A30A38EF08FCBDB63D6E6DAEA555E1F",
           "title": "Home Page - Tentworld"
         },
         "sendStatus": "website_contact_unreachable_skip",
         "subject": "FLEXTAIL retail partnership | 2026 assortment",
         "draft": "Dear Tentworld Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
         "evidence": "website_contact_entry_not_verified;contact_entry_clicked:Contact Us;website_contact_all_targets_failed:6;contact_path_strategy_v2",
-        "output": "{\"verdict\":\"website_contact_unreachable_skip\",\"evidence\":\"website_contact_entry_not_verified;contact_entry_clicked:Contact Us;website_contact_all_targets_failed:6;contact_path_strategy_v2\",\"nextAction\":\"Contact page opened, but no verified form, mailto link, vendor/business route, or clickable Contact Us path was detected. Continue manually before marking the lead ready.\",\"subject\":\"FLEXTAIL retail partnership | 2026 assortment\",\"draft\":\"Dear Tentworld Team,\\n\\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\\n\\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\\n\\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\\n\\nProduct overview: https://www.flextail.com/\\n\\nBest regards,\\nLeo Liu\\nSales & Operations Director\\nLeo@flextailgear.com\",\"sendStatus\":\"website_contact_unreachable_skip\",\"attempts\":[{\"targetUrl\":\"https://www.tentworld.com.au/\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control\"},{\"targetUrl\":\"https://www.tentworld.com.au/pages/contact-us\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;contact_entry_clicked:Contact Us\"},{\"targetUrl\":\"https://www.tentworld.com.au/pages/contact\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control\"},{\"targetUrl\":\"https://www.tentworld.com.au/contact-us\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;contact_entry_clicked:Contact Us\"},{\"targetUrl\":\"https://www.tentworld.com.au/contact\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;contact_entry_clicked:Contact Us\"},{\"targetUrl\":\"https://www.tentworld.com.au/help/contact-us\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;contact_entry_clicked:Contact Us\"}]}"
+        "output": "{\"verdict\":\"website_contact_unreachable_skip\",\"evidence\":\"website_contact_entry_not_verified;contact_entry_clicked:Contact Us;website_contact_all_targets_failed:6;contact_path_strategy_v2\",\"nextAction\":\"Contact page opened, but no verified form, mailto link, vendor/business route, or clickable Contact Us path was detected. Continue manually before marking the lead ready.\",\"subject\":\"FLEXTAIL retail partnership | 2026 assortment\",\"draft\":\"Dear Tentworld Team,\\n\\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\\n\\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\\n\\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\\n\\nProduct overview: https://www.flextail.com/\\n\\nBest regards,\\nLeo Liu\\nSales & Operations Director\\nLeo@flextailgear.com\",\"sendStatus\":\"website_contact_unreachable_skip\",\"attempts\":[{\"targetUrl\":\"https://www.tentworld.com.au/\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control\"},{\"targetUrl\":\"https://www.tentworld.com.au/pages/contact-us\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control\"},{\"targetUrl\":\"https://www.tentworld.com.au/pages/contact\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control\"},{\"targetUrl\":\"https://www.tentworld.com.au/contact-us\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control\"},{\"targetUrl\":\"https://www.tentworld.com.au/contact\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;contact_entry_clicked:Contact Us\"},{\"targetUrl\":\"https://www.tentworld.com.au/help/contact-us\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;contact_entry_clicked:Contact Us\"}]}"
       }
     },
     {
@@ -794,7 +794,7 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
         "engine": "codex-chrome-extension-cdp",
         "port": 9224,
         "targetUrl": "https://vpo.ca/help/contact-us",
-        "tabId": "AB6216C84AC836C2165DB702CA2E7FFF",
+        "tabId": "C50F71AF6909008BD0D041A161CB2764",
         "title": "Valhalla Pure Outfitters | VPO Canada",
         "status": "failed_open",
         "error": "profile_unavailable_or_broken_link",
@@ -811,7 +811,7 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
           "engine": "codex-chrome-extension-cdp",
           "port": 9224,
           "targetUrl": "https://vpo.ca/help/contact-us",
-          "tabId": "AB6216C84AC836C2165DB702CA2E7FFF",
+          "tabId": "C50F71AF6909008BD0D041A161CB2764",
           "title": "Valhalla Pure Outfitters | VPO Canada",
           "status": "failed_open",
           "error": "profile_unavailable_or_broken_link",
@@ -838,8 +838,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
         "engine": "codex-chrome-extension-cdp",
         "port": 9224,
         "targetUrl": "https://www.alpinetrek.co.uk/help/contact-us",
-        "tabId": "E43EB1D4AD6FAC02A4E829F0977B894D",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/E43EB1D4AD6FAC02A4E829F0977B894D",
+        "tabId": "AEE9AEB627BB7E657FCCEF46EC3CFCC2",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/AEE9AEB627BB7E657FCCEF46EC3CFCC2",
         "title": "Attention Required! | Cloudflare"
       },
       "result": {
@@ -853,8 +853,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
           "engine": "codex-chrome-extension-cdp",
           "port": 9224,
           "targetUrl": "https://www.alpinetrek.co.uk/help/contact-us",
-          "tabId": "E43EB1D4AD6FAC02A4E829F0977B894D",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/E43EB1D4AD6FAC02A4E829F0977B894D",
+          "tabId": "AEE9AEB627BB7E657FCCEF46EC3CFCC2",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/AEE9AEB627BB7E657FCCEF46EC3CFCC2",
           "title": "Attention Required! | Cloudflare"
         },
         "sendStatus": "website_contact_unreachable_skip",
@@ -878,8 +878,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
         "engine": "codex-chrome-extension-cdp",
         "port": 9224,
         "targetUrl": "https://www.ekosport.fr/help/contact-us",
-        "tabId": "96511EA0BF19EAACFDB46F4B8E838329",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/96511EA0BF19EAACFDB46F4B8E838329",
+        "tabId": "792C28CB884D55EE1E8D18658CF83807",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/792C28CB884D55EE1E8D18658CF83807",
         "title": "Attention Required! | Cloudflare"
       },
       "result": {
@@ -893,8 +893,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
           "engine": "codex-chrome-extension-cdp",
           "port": 9224,
           "targetUrl": "https://www.ekosport.fr/help/contact-us",
-          "tabId": "96511EA0BF19EAACFDB46F4B8E838329",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/96511EA0BF19EAACFDB46F4B8E838329",
+          "tabId": "792C28CB884D55EE1E8D18658CF83807",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/792C28CB884D55EE1E8D18658CF83807",
           "title": "Attention Required! | Cloudflare"
         },
         "sendStatus": "website_contact_unreachable_skip",
@@ -918,9 +918,9 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
         "engine": "codex-chrome-extension-cdp",
         "port": 9224,
         "targetUrl": "https://scandinavianoutdoor.com/help/contact-us",
-        "tabId": "1C9C18C53E07D507BA27F828AAE18467",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/1C9C18C53E07D507BA27F828AAE18467",
-        "title": ""
+        "tabId": "68F7B49B5E92F75FA2F1AF931733AD9E",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/68F7B49B5E92F75FA2F1AF931733AD9E",
+        "title": "Scandinavian Outdoor"
       },
       "result": {
         "ok": false,
@@ -933,9 +933,9 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
           "engine": "codex-chrome-extension-cdp",
           "port": 9224,
           "targetUrl": "https://scandinavianoutdoor.com/help/contact-us",
-          "tabId": "1C9C18C53E07D507BA27F828AAE18467",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/1C9C18C53E07D507BA27F828AAE18467",
-          "title": ""
+          "tabId": "68F7B49B5E92F75FA2F1AF931733AD9E",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/68F7B49B5E92F75FA2F1AF931733AD9E",
+          "title": "Scandinavian Outdoor"
         },
         "sendStatus": "website_contact_unreachable_skip",
         "subject": "FLEXTAIL retail partnership | 2026 assortment",
@@ -958,9 +958,9 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
         "engine": "codex-chrome-extension-cdp",
         "port": 9224,
         "targetUrl": "https://www.snowleader.com/help/contact-us",
-        "tabId": "F391D9CE72CE0554E0B0AB368AB7A5A7",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/F391D9CE72CE0554E0B0AB368AB7A5A7",
-        "title": "Snowleader : Equipement ski, streetwear, matériel montagne, vêtements montagne"
+        "tabId": "63EF571E9F48CBEA912D937F37658901",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/63EF571E9F48CBEA912D937F37658901",
+        "title": "Just a moment..."
       },
       "result": {
         "ok": false,
@@ -973,9 +973,9 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
           "engine": "codex-chrome-extension-cdp",
           "port": 9224,
           "targetUrl": "https://www.snowleader.com/help/contact-us",
-          "tabId": "F391D9CE72CE0554E0B0AB368AB7A5A7",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/F391D9CE72CE0554E0B0AB368AB7A5A7",
-          "title": "Snowleader : Equipement ski, streetwear, matériel montagne, vêtements montagne"
+          "tabId": "63EF571E9F48CBEA912D937F37658901",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/63EF571E9F48CBEA912D937F37658901",
+          "title": "Just a moment..."
         },
         "sendStatus": "website_contact_unreachable_skip",
         "subject": "FLEXTAIL retail partnership | 2026 assortment",
@@ -998,8 +998,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
         "engine": "codex-chrome-extension-cdp",
         "port": 9224,
         "targetUrl": "https://www.transa.ch/help/contact-us",
-        "tabId": "B9A4F22858DA0F38E39533C900F048DD",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/B9A4F22858DA0F38E39533C900F048DD",
+        "tabId": "27A66963C023B38676254126215EDC9F",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/27A66963C023B38676254126215EDC9F",
         "title": "High-quality travel and outdoor equipment - Transa.ch"
       },
       "result": {
@@ -1013,8 +1013,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
           "engine": "codex-chrome-extension-cdp",
           "port": 9224,
           "targetUrl": "https://www.transa.ch/help/contact-us",
-          "tabId": "B9A4F22858DA0F38E39533C900F048DD",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/B9A4F22858DA0F38E39533C900F048DD",
+          "tabId": "27A66963C023B38676254126215EDC9F",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/27A66963C023B38676254126215EDC9F",
           "title": "High-quality travel and outdoor equipment - Transa.ch"
         },
         "sendStatus": "website_contact_unreachable_skip",
@@ -1027,14 +1027,50 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
   ],
   "skipped": [
     {
+      "id": "google-customer-fjellsport-website-contact",
+      "company": "Fjellsport",
+      "action": "verify_target",
+      "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
+      "id": "google-customer-outnorth-website-contact",
+      "company": "Outnorth",
+      "action": "verify_target",
+      "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
+      "id": "google-customer-barrabes-website-contact",
+      "company": "Barrabes",
+      "action": "verify_target",
+      "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
       "id": "google-customer-de-wit-schijndel-website-contact",
       "company": "De Wit Schijndel",
       "action": "verify_target",
       "reason": "homepage_only_contact_path_requires_verification"
     },
     {
+      "id": "google-customer-friluftsland-website-contact",
+      "company": "Friluftsland",
+      "action": "verify_target",
+      "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
       "id": "google-customer-outdoorxl-website-contact",
       "company": "OutdoorXL",
+      "action": "verify_target",
+      "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
+      "id": "google-customer-spejder-sport-website-contact",
+      "company": "Spejder Sport",
+      "action": "verify_target",
+      "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
+      "id": "google-customer-hardloop-website-contact",
+      "company": "Hardloop",
       "action": "verify_target",
       "reason": "homepage_only_contact_path_requires_verification"
     },
@@ -1051,10 +1087,40 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "reason": "homepage_only_contact_path_requires_verification"
     },
     {
-      "id": "google-customer-tentworld-australia-facebook",
-      "company": "Tentworld Australia",
+      "id": "google-customer-campz-facebook",
+      "company": "Campz",
       "action": "develop",
       "reason": "concrete_google_discovered_major_customer_facebook"
+    },
+    {
+      "id": "google-customer-doorout-facebook",
+      "company": "Doorout",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_facebook"
+    },
+    {
+      "id": "google-customer-bergfreunde-instagram",
+      "company": "Bergfreunde",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_instagram"
+    },
+    {
+      "id": "google-customer-8a-pl-instagram",
+      "company": "8a.pl",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_instagram"
+    },
+    {
+      "id": "google-customer-campz-instagram",
+      "company": "Campz",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_instagram"
+    },
+    {
+      "id": "google-customer-doorout-instagram",
+      "company": "Doorout",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_instagram"
     },
     {
       "id": "google-customer-outdoor-specialist-instagram",
@@ -1063,22 +1129,16 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "reason": "concrete_google_discovered_major_customer_instagram"
     },
     {
-      "id": "google-customer-tentworld-australia-instagram",
-      "company": "Tentworld Australia",
+      "id": "google-customer-sklep-podroznika-instagram",
+      "company": "Sklep Podroznika",
       "action": "develop",
       "reason": "concrete_google_discovered_major_customer_instagram"
     },
     {
-      "id": "google-customer-fjellsport-website-contact",
-      "company": "Fjellsport",
-      "action": "verify_target",
-      "reason": "homepage_only_contact_path_requires_verification"
-    },
-    {
-      "id": "google-customer-outnorth-website-contact",
-      "company": "Outnorth",
-      "action": "verify_target",
-      "reason": "homepage_only_contact_path_requires_verification"
+      "id": "google-customer-sportler-instagram",
+      "company": "Sportler",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_instagram"
     },
     {
       "id": "google-customer-trekitt-website-contact",
@@ -1093,32 +1153,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "reason": "homepage_only_contact_path_requires_verification"
     },
     {
-      "id": "google-customer-barrabes-website-contact",
-      "company": "Barrabes",
-      "action": "verify_target",
-      "reason": "homepage_only_contact_path_requires_verification"
-    },
-    {
-      "id": "google-customer-friluftsland-website-contact",
-      "company": "Friluftsland",
-      "action": "verify_target",
-      "reason": "homepage_only_contact_path_requires_verification"
-    },
-    {
-      "id": "google-customer-spejder-sport-website-contact",
-      "company": "Spejder Sport",
-      "action": "verify_target",
-      "reason": "homepage_only_contact_path_requires_verification"
-    },
-    {
       "id": "google-customer-taunton-leisure-website-contact",
       "company": "Taunton Leisure",
-      "action": "verify_target",
-      "reason": "homepage_only_contact_path_requires_verification"
-    },
-    {
-      "id": "google-customer-hardloop-website-contact",
-      "company": "Hardloop",
       "action": "verify_target",
       "reason": "homepage_only_contact_path_requires_verification"
     },
@@ -1255,18 +1291,6 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "reason": "concrete_google_discovered_major_customer_facebook"
     },
     {
-      "id": "google-customer-campz-facebook",
-      "company": "Campz",
-      "action": "develop",
-      "reason": "concrete_google_discovered_major_customer_facebook"
-    },
-    {
-      "id": "google-customer-doorout-facebook",
-      "company": "Doorout",
-      "action": "develop",
-      "reason": "concrete_google_discovered_major_customer_facebook"
-    },
-    {
       "id": "google-customer-facewest-facebook",
       "company": "Facewest",
       "action": "develop",
@@ -1327,38 +1351,20 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "reason": "concrete_google_discovered_major_customer_facebook"
     },
     {
+      "id": "google-customer-tentworld-australia-facebook",
+      "company": "Tentworld Australia",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_facebook"
+    },
+    {
       "id": "google-customer-tentworld-nz-facebook",
       "company": "Tentworld NZ",
       "action": "develop",
       "reason": "concrete_google_discovered_major_customer_facebook"
     },
     {
-      "id": "google-customer-bergfreunde-instagram",
-      "company": "Bergfreunde",
-      "action": "develop",
-      "reason": "concrete_google_discovered_major_customer_instagram"
-    },
-    {
-      "id": "google-customer-8a-pl-instagram",
-      "company": "8a.pl",
-      "action": "develop",
-      "reason": "concrete_google_discovered_major_customer_instagram"
-    },
-    {
       "id": "google-customer-above-and-beyond-instagram",
       "company": "Above and Beyond",
-      "action": "develop",
-      "reason": "concrete_google_discovered_major_customer_instagram"
-    },
-    {
-      "id": "google-customer-campz-instagram",
-      "company": "Campz",
-      "action": "develop",
-      "reason": "concrete_google_discovered_major_customer_instagram"
-    },
-    {
-      "id": "google-customer-doorout-instagram",
-      "company": "Doorout",
       "action": "develop",
       "reason": "concrete_google_discovered_major_customer_instagram"
     },
@@ -1371,18 +1377,6 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     {
       "id": "google-customer-ld-mountain-centre-instagram",
       "company": "LD Mountain Centre",
-      "action": "develop",
-      "reason": "concrete_google_discovered_major_customer_instagram"
-    },
-    {
-      "id": "google-customer-sklep-podroznika-instagram",
-      "company": "Sklep Podroznika",
-      "action": "develop",
-      "reason": "concrete_google_discovered_major_customer_instagram"
-    },
-    {
-      "id": "google-customer-sportler-instagram",
-      "company": "Sportler",
       "action": "develop",
       "reason": "concrete_google_discovered_major_customer_instagram"
     },
@@ -1425,6 +1419,12 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     {
       "id": "google-customer-the-mountaineer-instagram",
       "company": "The Mountaineer",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_instagram"
+    },
+    {
+      "id": "google-customer-tentworld-australia-instagram",
+      "company": "Tentworld Australia",
       "action": "develop",
       "reason": "concrete_google_discovered_major_customer_instagram"
     },
@@ -2085,12 +2085,7 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     {
       "reason": "alibaba_webmail_compose_unavailable",
       "status": "approval_pending",
-      "count": 1
-    },
-    {
-      "reason": "alibaba_webmail_draft_verification_failed",
-      "status": "approval_pending",
-      "count": 1
+      "count": 2
     },
     {
       "reason": "failed_open",
@@ -2104,8 +2099,7 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     "missing_verified_profile_url": 32,
     "concrete_google_discovered_major_customer_facebook": 30,
     "official_website_contact_channel": 16,
-    "alibaba_webmail_compose_unavailable": 1,
-    "alibaba_webmail_draft_verification_failed": 1,
+    "alibaba_webmail_compose_unavailable": 2,
     "failed_open": 1
   },
   "queueGoalStatus": {
@@ -2154,12 +2148,12 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     "stderr": "",
     "error": "",
     "visibility": {
-      "updatedAt": "2026-07-24T06:10:07.144Z",
+      "updatedAt": "2026-07-24T07:12:27.340Z",
       "source": "main-refreshDailyAutomationArtifacts",
       "runDate": "2026-07-24",
-      "artifactGeneratedAt": "2026-07-24T06:10:06.171Z",
-      "executionGeneratedAt": "2026-07-24T05:57:46.191Z",
-      "githubSyncUpdatedAt": "2026-07-24T05:59:04.925Z",
+      "artifactGeneratedAt": "2026-07-24T07:12:25.786Z",
+      "executionGeneratedAt": "2026-07-24T06:10:07.570Z",
+      "githubSyncUpdatedAt": "2026-07-24T06:10:56.496Z",
       "counts": {
         "dailyQueue": 97,
         "googleDiscovered": 73,
@@ -2221,5 +2215,5 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "ALIBABA_SMTP_SECURITY_PASSWORD"
     ]
   },
-  "completedAt": "2026-07-24T06:10:07.570Z"
+  "completedAt": "2026-07-24T07:12:28.107Z"
 };
