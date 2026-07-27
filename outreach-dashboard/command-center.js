@@ -528,6 +528,16 @@
       .replace(/[-_]+/g, ' ')
       .replace(/\b\w/g, char => char.toUpperCase());
   }
+  function replySignalFromEvidence(item) {
+    const evidence = String(item && item.evidence || '');
+    const hasReply = /recipient_(?:auto_)?reply_received|recipient_replied|inbound_reply_(?:received|visible)|reply_bubble_visible/i.test(evidence);
+    if (!hasReply) return null;
+    return {
+      type: /recipient_auto_reply_received|automated_reply/i.test(evidence) ? 'automated' : 'human',
+      timestamp: timestampOrEmpty(item.timestamp),
+      evidence,
+    };
+  }
   function autonomousResultRecords() {
     return (window.AUTONOMOUS_OUTREACH_RESULTS || []).map((item, index) => {
       const taskId = item.task_id || `autonomous-result-${index}`;
@@ -535,8 +545,9 @@
       const timestamp = timestampOrEmpty(item.timestamp);
       const status = item.status || '';
       const evidence = item.evidence || '';
+      const reply = replySignalFromEvidence(item);
       const confirmed = ['sent_confirmed', 'submitted_confirmed'].includes(status);
-      const contactCaptured = /contact_entry_verified|mailto_detected|contact_form_detected|business_contact_route_detected/i.test(evidence);
+      const contactCaptured = /customer_contact_shared|recipient_shared_(?:email|whatsapp)|buyer_contact_received|contact_details_received/i.test(evidence);
       const discoveredAt = timestampOrEmpty(task.discoveredAt) || timestamp;
       const profiledAt = timestampOrEmpty(task.profiledAt);
       const approvedAt = confirmed ? timestamp : timestampOrEmpty(task.approvedAt);
@@ -562,6 +573,10 @@
         profiledAt,
         approvedAt,
         sentAt: confirmed ? timestamp : '',
+        repliedAt: confirmed && reply ? reply.timestamp : '',
+        replyType: confirmed && reply ? reply.type : '',
+        replyEvidence: confirmed && reply ? reply.evidence : '',
+        replyTimestampSource: confirmed && reply ? 'automation_result_timestamp' : '',
         autoSkippedAt: status === 'failed_open' || status === 'skipped' ? timestamp : '',
         contactCapturedAt: contactCaptured ? timestamp : task.contactCapturedAt || '',
         resultCheckedAt: timestamp,
@@ -573,22 +588,39 @@
     const records = [
       ...latestReportRecords(),
       ...executionReportRecords([]),
+      ...(data.tasks || []),
       ...autonomousResultRecords(),
     ];
-    const seen = new Set();
-    return records
+    const merged = new Map();
+    records
       .filter(item => item && (item.taskId || item.id || item.company || item.name))
       .sort((left, right) => Date.parse(recordUpdatedAt(right) || '') - Date.parse(recordUpdatedAt(left) || ''))
-      .filter(item => {
+      .forEach(item => {
         const key = [
           item.taskId || item.id || item.company || item.name,
           item.sendStatus || item.state || '',
           item.sentAt || item.approvedAt || item.resultCheckedAt || item.lastTouch || '',
         ].join('|');
-        if (seen.has(key)) return false;
-        seen.add(key);
-        return true;
+        const existing = merged.get(key);
+        if (!existing) {
+          merged.set(key, item);
+          return;
+        }
+        const replyCandidate = newerTimestamp(existing.repliedAt, item.repliedAt);
+        const replySource = replyCandidate === item.repliedAt ? item : existing;
+        merged.set(key, {
+          ...item,
+          ...existing,
+          repliedAt: replyCandidate,
+          replyType: replySource.replyType || existing.replyType || item.replyType || '',
+          replyEvidence: replySource.replyEvidence || existing.replyEvidence || item.replyEvidence || '',
+          replyTimestampSource: replySource.replyTimestampSource || existing.replyTimestampSource || item.replyTimestampSource || '',
+          contactCapturedAt: newerTimestamp(existing.contactCapturedAt, item.contactCapturedAt),
+          opportunityAt: newerTimestamp(existing.opportunityAt, item.opportunityAt),
+          evidence: replySource.replyEvidence || existing.evidence || item.evidence || '',
+        });
       });
+    return [...merged.values()];
   }
   function liveOperationalRecords() {
     return memoized('liveOperationalRecords', computeLiveOperationalRecords);
@@ -676,24 +708,20 @@
     'account_followed',
     'post_liked',
   ]);
+  const AUTOMATION_DAY_FORMATTER = new Intl.DateTimeFormat('en-CA', {
+    timeZone: 'Asia/Shanghai',
+    year: 'numeric',
+    month: '2-digit',
+    day: '2-digit',
+  });
+  const AUTOMATION_TODAY = AUTOMATION_DAY_FORMATTER.format(new Date());
   function automationLocalDay(value) {
     const time = Date.parse(value || '');
     if (!Number.isFinite(time)) return '';
-    return new Intl.DateTimeFormat('en-CA', {
-      timeZone: 'Asia/Shanghai',
-      year: 'numeric',
-      month: '2-digit',
-      day: '2-digit',
-    }).format(new Date(time));
+    return AUTOMATION_DAY_FORMATTER.format(new Date(time));
   }
   function isTodayTimestamp(value) {
-    const today = new Intl.DateTimeFormat('en-CA', {
-      timeZone: 'Asia/Shanghai',
-      year: 'numeric',
-      month: '2-digit',
-      day: '2-digit',
-    }).format(new Date());
-    return automationLocalDay(value) === today;
+    return automationLocalDay(value) === AUTOMATION_TODAY;
   }
   function urlHandle(value) {
     const match = String(value || '').match(/instagram\.com\/([^/?#]+)/i);
@@ -790,13 +818,23 @@
     return ledger.latest(customerEventLedger(), record, types);
   }
   function sameDayDevelopmentFor(record) {
-    const keys = new Set(leadMatchKeys(record));
-    if (!keys.size) return null;
-    return (window.AUTONOMOUS_OUTREACH_RESULTS || [])
-      .filter(item => item && SAME_DAY_DEVELOPMENT_STATUSES.has(item.status))
-      .filter(item => isTodayTimestamp(item.timestamp))
-      .filter(item => autonomousLeadKeys(item).some(key => keys.has(key)))
-      .sort((left, right) => Date.parse(right.timestamp) - Date.parse(left.timestamp))[0] || null;
+    const index = memoized('sameDayDevelopmentIndex', () => {
+      const byKey = new Map();
+      (window.AUTONOMOUS_OUTREACH_RESULTS || []).forEach(item => {
+        if (!item || !SAME_DAY_DEVELOPMENT_STATUSES.has(item.status) || !isTodayTimestamp(item.timestamp)) return;
+        autonomousLeadKeys(item).forEach(key => {
+          const existing = byKey.get(key);
+          if (!existing || Date.parse(item.timestamp) > Date.parse(existing.timestamp)) byKey.set(key, item);
+        });
+      });
+      return byKey;
+    });
+    let newest = null;
+    leadMatchKeys(record).forEach(key => {
+      const item = index.get(key);
+      if (item && (!newest || Date.parse(item.timestamp) > Date.parse(newest.timestamp))) newest = item;
+    });
+    return newest;
   }
   function confirmedTouchFor(record) {
     const event = latestCustomerEvent(record, ['sent_confirmed']);
@@ -1233,6 +1271,10 @@
     const row = item => `<tr><td>${esc(item.dimension)}</td><td>${esc(item.label)}</td><td>${item.sent}</td><td>${item.replied}</td><td>${rate(item.rates && item.rates.replyRate)}</td><td>${esc(item.confidence)}</td></tr>`;
     return `<section class="cc-panel"><div class="cc-panel-head"><h2>回复转化率诊断</h2><span class="cc-sub">发现→回复 ${rateDetail(rates.discoveryToReplyRate, report.metrics.replied, report.metrics.discovered)} · 发送→回复 ${rateDetail(rates.replyRate, report.metrics.replied, report.metrics.sent)} · 回复→联系方式 ${rateDetail(rates.replyToContactRate, report.metrics.contactCaptured, report.metrics.replied)}</span></div><div class="cc-panel-body"><div class="cc-funnel"><div><span>发现到发送</span><b>${rateDetail(rates.discoveryToSendRate, report.metrics.sent, report.metrics.discovered)}</b></div><div><span>发现到回复</span><b>${rateDetail(rates.discoveryToReplyRate, report.metrics.replied, report.metrics.discovered)}</b></div><div><span>发送到回复</span><b>${rateDetail(rates.replyRate, report.metrics.replied, report.metrics.sent)}</b></div><div><span>回复到联系方式</span><b>${rateDetail(rates.replyToContactRate, report.metrics.contactCaptured, report.metrics.replied)}</b></div></div><div class="cc-report-grid"><section class="cc-panel"><div class="cc-panel-head"><h2>高回复细分</h2></div><div class="cc-table-wrap"><table class="cc-table"><thead><tr><th>维度</th><th>细分</th><th>发送</th><th>回复</th><th>回复率</th><th>置信度</th></tr></thead><tbody>${topRows.length ? topRows.map(row).join('') : '<tr><td colspan="6">暂无已确认发送样本</td></tr>'}</tbody></table></div></section><section class="cc-panel"><div class="cc-panel-head"><h2>低回复预警</h2></div><div class="cc-table-wrap"><table class="cc-table"><thead><tr><th>维度</th><th>细分</th><th>发送</th><th>回复</th><th>回复率</th><th>置信度</th></tr></thead><tbody>${lowRows.length ? lowRows.map(row).join('') : '<tr><td colspan="6">暂无达到样本阈值的低回复项</td></tr>'}</tbody></table></div></section></div></div></section>`;
   }
+  function replyTypePanel(report) {
+    const diagnostics = report.replyDiagnostics || { human: 0, automated: 0, unclassified: 0 };
+    return `<section class="cc-panel"><div class="cc-panel-head"><h2>\u56de\u590d\u8bc1\u636e\u5206\u7c7b</h2><span class="cc-sub">\u81ea\u52a8\u56de\u590d\u4f1a\u8fdb\u5165\u603b\u56de\u590d\u6570\uff0c\u4f46\u4e0d\u4f1a\u5192\u5145\u4eba\u5de5\u91c7\u8d2d\u610f\u5411</span></div><div class="cc-panel-body"><div class="cc-funnel"><div><span>\u4eba\u5de5\u56de\u590d</span><b>${diagnostics.human}</b></div><div><span>\u81ea\u52a8\u56de\u590d</span><b>${diagnostics.automated}</b></div><div><span>\u672a\u5206\u7c7b\u56de\u590d</span><b>${diagnostics.unclassified}</b></div><div><span>\u5168\u90e8\u53ef\u5ba1\u8ba1\u56de\u590d</span><b>${report.metrics.replied}</b></div></div></div></section>`;
+  }
   function reportBreakdown(title, rows) {
     if (!rows.length) return `<section class="cc-panel"><div class="cc-panel-head"><h2>${title}</h2></div><div class="cc-empty">本周期暂无可统计数据</div></section>`;
     return `<section class="cc-panel"><div class="cc-panel-head"><h2>${title}</h2></div><div class="cc-table-wrap"><table class="cc-table"><thead><tr><th>分类</th><th>发现</th><th>确认发送</th><th>回复</th><th>联系方式</th><th>机会</th><th>回复率</th></tr></thead><tbody>${rows.map(item => `<tr><td>${esc(item.label)}</td><td>${item.metrics.discovered}</td><td>${item.metrics.sent}</td><td>${item.metrics.replied}</td><td>${item.metrics.contactCaptured}</td><td>${item.metrics.opportunity}</td><td>${rate(item.rates.replyRate)}</td></tr>`).join('')}</tbody></table></div></section>`;
@@ -1333,6 +1375,7 @@
       ${selectedMetric ? reportMetricDetail(report, selectedMetric, selectedMetricLabel) : ''}
       <section class="cc-panel"><div class="cc-panel-head"><h2>转化漏斗</h2><span class="cc-sub">回复率 ${rate(report.rates.replyRate)} · 联系方式率 ${rate(report.rates.contactCaptureRate)} · 机会率 ${rate(report.rates.opportunityRate)}</span></div><div class="cc-panel-body"><div class="cc-funnel">${funnelMetrics.map(([key, label]) => `<div><span>${label}</span><b>${report.metrics[key]}</b></div>`).join('')}</div></div></section>
       ${replyConversionPanel(report)}
+      ${replyTypePanel(report)}
       ${qualityTotal ? `<div class="cc-quality">数据质量：${report.dataQuality.missingTimestamps} 个应有时间缺失，${report.dataQuality.invalidTimestamps} 个时间无效；这些事件未计入周期结果。</div>` : ''}
       ${report.hasData ? `<div class="cc-report-grid">${reportBreakdown('平台', report.breakdowns.platform)}${reportBreakdown('国家 / 市场', report.breakdowns.countryMarket)}${reportBreakdown('关键词', report.breakdowns.keyword)}${reportBreakdown('消息模板', report.breakdowns.template)}${reportBreakdown('ICP 层级', report.breakdowns.icpTier)}</div>` : '<div class="cc-empty cc-report-empty">本周期暂无带有效时间证据的开发记录</div>'}`;
   }
@@ -2691,7 +2734,13 @@
     document.body.classList.remove('command-center-booting');
   } catch (error) {
     console.error('Command center startup failed', error);
-    document.body.classList.remove('command-center-active');
+    document.body.classList.add('command-center-active');
+    const failedShell = document.createElement('div');
+    failedShell.className = 'cc-shell';
+    failedShell.id = 'command-center-shell';
+    failedShell.dataset.startupFailure = '1';
+    failedShell.innerHTML = '<main class="cc-main"><section class="cc-panel"><h1>\u5ba2\u6237\u5f00\u53d1\u7cfb\u7edf\u542f\u52a8\u5931\u8d25</h1><p>\u7cfb\u7edf\u5df2\u505c\u6b62\u65e0\u9650\u52a0\u8f7d\u3002\u8bf7\u5237\u65b0\u9875\u9762\uff1b\u82e5\u95ee\u9898\u6301\u7eed\uff0c\u8bf7\u68c0\u67e5\u6700\u65b0\u7684\u672c\u5730\u6570\u636e\u8d44\u6e90\u3002</p><button type="button" onclick="location.reload()">\u91cd\u65b0\u52a0\u8f7d</button></section></main>';
+    document.body.appendChild(failedShell);
     document.body.classList.remove('command-center-booting');
   }
   const reportPeriod = document.getElementById('report-period');

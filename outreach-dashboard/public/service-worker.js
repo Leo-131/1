@@ -1,4 +1,4 @@
-const CACHE_NAME = 'customer-development-system-v18-7-36-20260720-conversion-core';
+const CACHE_NAME = 'customer-development-system-v18-7-37-20260727-smooth-startup';
 const APP_SHELL = [
   './',
   './index.html',
