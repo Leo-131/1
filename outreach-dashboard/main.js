@@ -912,10 +912,9 @@ function httpJson(url, timeoutMs = 2000, method = 'GET') {
 }
 
 async function activeChromeDebugPort() {
-  // Prefer the operator's existing authenticated Chrome session. The old
-  // order selected the automation-owned 9224 profile first, bypassing the
-  // user's real Chrome session and its connected Codex extension.
-  for (const port of [9222, 9225, 9223, 9224]) {
+  // Customer-development automation must never attach to the operator's
+  // primary Chrome (9222). Only the dedicated automation profile is eligible.
+  for (const port of [9224]) {
     try {
       await httpJson(`http://127.0.0.1:${port}/json/version`, 1200);
       return port;
@@ -948,7 +947,7 @@ async function ensureCodexChromePort() {
       `--user-data-dir=${profile}`,
       '--no-first-run',
       '--no-default-browser-check',
-      '--start-maximized',
+      '--start-minimized',
       '--new-window',
       'http://127.0.0.1:4174/outreach-dashboard.html?view=workspace',
     ], { detached: true, stdio: 'ignore', windowsHide: false });

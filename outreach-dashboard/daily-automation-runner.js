@@ -1373,7 +1373,7 @@ function main() {
     generatedAt: new Date(now).toISOString(),
     date,
     mode: 'daily-icp-first-automation-loop',
-    executionLayer: 'Codex Chrome Extension only',
+    executionLayer: 'Dedicated Chrome automation profile only; primary Chrome attachment forbidden',
     limits: {
       dailyLimit: picked.quota.total.target,
       quota: picked.quota,

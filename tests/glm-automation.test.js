@@ -662,11 +662,13 @@ test('customer execution truthfully labels CDP unless a valid extension receipt 
   assert.doesNotMatch(mainSource, /executionLayer: 'Codex Chrome Extension only'/);
 });
 
-test('Chrome recovery prefers the authenticated operator session and avoids a blank startup page', () => {
-  assert.ok(mainSource.includes('for (const port of [9222, 9225, 9223, 9224])'));
+test('Chrome recovery isolates automation from the operator primary browser', () => {
+  assert.ok(mainSource.includes('for (const port of [9224])'));
+  assert.equal(mainSource.includes('for (const port of [9222'), false);
   assert.ok(mainSource.includes("'http://127.0.0.1:4174/outreach-dashboard.html?view=workspace'"));
   assert.doesNotMatch(mainSource, /'--new-window',\s*'about:blank'/);
   assert.doesNotMatch(mainSource, /engine: 'codex-chrome-extension-cdp'/);
+  assert.ok(mainSource.includes("'--start-minimized'"));
 });
 
 test('Facebook composer writes React contenteditable state before send', () => {
