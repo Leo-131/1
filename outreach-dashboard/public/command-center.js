@@ -1502,7 +1502,9 @@
         <em>${esc(item.ready
           ? item.status === 'ready_connected_session'
             ? `${item.providerSource} · 有效至 ${item.expiresAt}`
-            : item.providers.join(' / ')
+            : item.status === 'ready_builtin'
+              ? `${item.providerLabel} · built-in safety loop`
+              : item.providers.join(' / ')
           : `缺少：${item.missing.join(' 或 ')}`)}</em>
       </div>`).join('');
     const coreReady = readinessData.coreReady === true;

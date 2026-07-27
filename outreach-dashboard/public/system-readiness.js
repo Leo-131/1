@@ -13,6 +13,11 @@
       tier: 'optional',
       providers: ['HubSpot', 'Salesforce'],
       any: [['HUBSPOT_ACCESS_TOKEN'], ['SALESFORCE_CLIENT_ID', 'SALESFORCE_CLIENT_SECRET']],
+      builtin: {
+        provider: 'Local CRM Event Ledger',
+        mode: 'builtin_local_crm_ledger',
+        coverage: 'company_deduplication_contacts_channels_stages_events',
+      },
       impact: '统一企业、联系人、触达、回复与商机，作为去重事实源',
       priority: 100,
     },
@@ -23,6 +28,11 @@
       tier: 'optional',
       providers: ['Apollo', 'Clay'],
       any: [['APOLLO_API_KEY'], ['CLAY_API_KEY']],
+      builtin: {
+        provider: 'Verified Discovery Registry',
+        mode: 'builtin_verified_discovery',
+        coverage: 'google_discovery_local_database_verified_profiles',
+      },
       impact: '补全采购负责人、职位和已验证业务联系方式',
       priority: 98,
     },
@@ -33,6 +43,11 @@
       tier: 'optional',
       providers: ['Hunter', 'ZeroBounce', 'NeverBounce'],
       any: [['HUNTER_API_KEY'], ['ZEROBOUNCE_API_KEY'], ['NEVERBOUNCE_API_KEY']],
+      builtin: {
+        provider: 'Official-source Email Safety Guard',
+        mode: 'builtin_official_source_email_guard',
+        coverage: 'syntax_business_domain_official_source_fail_closed',
+      },
       impact: '在发送前拦截无效地址，降低退信和域名风险',
       priority: 96,
     },
@@ -54,6 +69,11 @@
       tier: 'optional',
       providers: ['Slack', 'Teams'],
       any: [['SLACK_BOT_TOKEN', 'SLACK_ALERT_CHANNEL'], ['TEAMS_WEBHOOK_URL']],
+      builtin: {
+        provider: 'Local Automation Audit Queue',
+        mode: 'builtin_local_approval_queue',
+        coverage: 'captcha_identity_duplicate_confirmation_and_positive_reply_review',
+      },
       impact: '验证码、身份冲突和积极回复及时转人工',
       priority: 78,
     },
@@ -97,7 +117,8 @@
     const anyReady = !definition.any || definition.any.some(group => groupReady(env, group));
     const credentialReady = allReady && anyReady;
     const proof = verifiedProof(definition, proofs, now);
-    const ready = credentialReady || Boolean(proof);
+    const builtin = definition.builtin || null;
+    const ready = credentialReady || Boolean(proof) || Boolean(builtin);
     const requiredGroups = definition.all
       ? [definition.all]
       : definition.any || [];
@@ -111,8 +132,28 @@
       tier: definition.tier,
       providers: definition.providers,
       ready,
-      status: proof ? 'ready_connected_session' : ready ? 'ready' : 'not_configured',
-      providerSource: proof ? proof.mode : credentialReady ? 'environment_configuration' : '',
+      status: proof
+        ? 'ready_connected_session'
+        : credentialReady
+          ? 'ready'
+          : builtin
+            ? 'ready_builtin'
+            : 'not_configured',
+      providerSource: proof
+        ? proof.mode
+        : credentialReady
+          ? 'environment_configuration'
+          : builtin
+            ? builtin.mode
+            : '',
+      providerLabel: proof
+        ? definition.providers[0]
+        : credentialReady
+          ? definition.providers.join(' / ')
+          : builtin
+            ? builtin.provider
+            : '',
+      coverage: builtin && !proof && !credentialReady ? builtin.coverage : '',
       verifiedAt: proof ? proof.verifiedAt : '',
       expiresAt: proof ? proof.expiresAt : '',
       missing,
