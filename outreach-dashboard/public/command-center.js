@@ -1204,7 +1204,7 @@
   function nav() {
     return `<aside class="cc-sidebar"><div class="cc-brand"><b>Customer Development</b><span>Codex Decision - Codex Chrome Extension</span></div>
       <nav class="cc-nav">${views.map(([key, label]) => `<a class="${view === key ? 'active' : ''}" href="${urlFor(key)}">${label}</a>`).join('')}</nav>
-      <div class="cc-agent">Brain: Codex<br>Executor: Codex Chrome Extension<br>Browser control: Codex Chrome Extension only<br>Mode: ICP&gt;70 - one target at a time</div></aside>`;
+      <div class="cc-agent">Brain: Codex<br>Executor: verified browser transport<br>Browser control: Extension receipt required; CDP fallback is labeled separately<br>Mode: ICP&gt;70 - one target at a time</div></aside>`;
   }
   function pageHead(title, subtitle) {
     return `<div class="cc-page-head"><div><h1>${title}</h1><p>${subtitle}</p></div><span class="cc-status">自动决策运行中</span></div>`;

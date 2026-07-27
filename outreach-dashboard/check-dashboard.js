@@ -87,7 +87,7 @@ if (openMarket.priorityScore <= exclusiveMarket.priorityScore) {
   throw new Error('open agency markets must outrank exclusive agency regions');
 }
 
-if (!main.includes('openWithCodexChrome') || !main.includes('codex-chrome-extension-cdp')) {
+if (!main.includes('openWithCodexChrome') || !main.includes('codex-chrome-cdp')) {
   throw new Error('Codex Chrome CDP bridge is missing');
 }
 

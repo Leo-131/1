@@ -912,7 +912,10 @@ function httpJson(url, timeoutMs = 2000, method = 'GET') {
 }
 
 async function activeChromeDebugPort() {
-  for (const port of [9225, 9224, 9223, 9222]) {
+  // Prefer the operator's existing authenticated Chrome session. The old
+  // order selected the automation-owned 9224 profile first, bypassing the
+  // user's real Chrome session and its connected Codex extension.
+  for (const port of [9222, 9225, 9223, 9224]) {
     try {
       await httpJson(`http://127.0.0.1:${port}/json/version`, 1200);
       return port;
@@ -947,7 +950,7 @@ async function ensureCodexChromePort() {
       '--no-default-browser-check',
       '--start-maximized',
       '--new-window',
-      'about:blank',
+      'http://127.0.0.1:4174/outreach-dashboard.html?view=workspace',
     ], { detached: true, stdio: 'ignore', windowsHide: false });
     chromeProcess.unref();
   }
@@ -1066,7 +1069,7 @@ async function openWithCodexChrome(url, options = {}) {
       automationReusableChromeTab = null;
       return {
         ok: false,
-        engine: 'codex-chrome-extension-cdp',
+        engine: 'codex-chrome-cdp',
         port,
         targetUrl: parsed.toString(),
         status: 'failed_open',
@@ -1084,7 +1087,7 @@ async function openWithCodexChrome(url, options = {}) {
   if (inspected.unavailable) {
     return {
       ok: false,
-      engine: 'codex-chrome-extension-cdp',
+      engine: 'codex-chrome-cdp',
       port,
       targetUrl: parsed.toString(),
       tabId: opened.id || '',
@@ -1096,7 +1099,7 @@ async function openWithCodexChrome(url, options = {}) {
   }
   return {
     ok: true,
-    engine: 'codex-chrome-extension-cdp',
+    engine: 'codex-chrome-cdp',
     port,
     targetUrl: parsed.toString(),
     tabId: opened.id || '',
@@ -1536,8 +1539,9 @@ async function optimizeDraftWithContext(lead, decision, chromeOpen) {
   const context = await inspectSocialContext(chromeOpen);
   if (!context || !context.contextText) return baseDraft;
   const fallback = contextAwareFallbackDraft(lead, baseDraft, context.contextText);
-  // Customer execution is Codex Chrome Extension only. Context-aware
-  // rewriting stays local so GLM availability can never block browser work.
+  // Process-local automation uses CDP. A result may only be called Codex
+  // Chrome Extension execution when it carries a validated extension receipt.
+  // Rewriting stays local so GLM availability cannot block browser work.
   return fallback;
 }
 
@@ -3089,7 +3093,7 @@ async function runCodexChromeLead(lead, decision, mode = 'codex_chrome_prepare',
   }
   return {
     ok: Boolean(draftResult.ok),
-    engine: 'codex-chrome-extension-cdp',
+    engine: 'codex-chrome-cdp',
     browserEngine: chromeOpen.engine,
     mode,
     targetUrl: target.targetUrl,
@@ -3241,9 +3245,17 @@ async function executeLeadAutomation(lead, options = {}) {
       };
     }
     let execution;
-    execution = await runCodexChromeLead(lead, decision, 'codex_chrome_extension_only', options);
+    execution = await runCodexChromeLead(lead, decision, 'codex_chrome_cdp', options);
     lastGlmAutomationAt = Date.now();
-    return { ...execution, decision, executionLayer: 'Codex Chrome Extension only', glmModel: 'not_used', followup };
+    return {
+      ...execution,
+      decision,
+      executionLayer: browserTransportForResult(execution) === 'codex-extension'
+        ? 'Codex Chrome Extension'
+        : 'Chrome CDP fallback',
+      glmModel: 'not_used',
+      followup,
+    };
   } finally {
     if (!options.allowParallel) glmAutomationRunning = false;
   }

@@ -653,11 +653,20 @@ test('Facebook composer failure closes stale Messenger UI without reopening the 
   assert.match(chromeDriverSource, /closeFacebookMessengerInbox\(tab\);[\s\S]*closeFacebookChatWindows\(tab\);[\s\S]*return \{\n      messageUnavailable: true/);
 });
 
-test('customer execution is Codex Chrome Extension only and does not require GLM', () => {
-  assert.ok(mainSource.includes("executionLayer: 'Codex Chrome Extension only'"));
+test('customer execution truthfully labels CDP unless a valid extension receipt exists', () => {
+  assert.ok(mainSource.includes("executionLayer: browserTransportForResult(execution) === 'codex-extension'"));
+  assert.ok(mainSource.includes("? 'Codex Chrome Extension'"));
+  assert.ok(mainSource.includes(": 'Chrome CDP fallback'"));
   assert.ok(mainSource.includes("reason: 'local_codex_extension_template'"));
-  assert.ok(mainSource.includes("execution = await runCodexChromeLead(lead, decision, 'codex_chrome_extension_only'"));
-  assert.ok(mainSource.includes('Customer execution is Codex Chrome Extension only'));
+  assert.ok(mainSource.includes("execution = await runCodexChromeLead(lead, decision, 'codex_chrome_cdp'"));
+  assert.doesNotMatch(mainSource, /executionLayer: 'Codex Chrome Extension only'/);
+});
+
+test('Chrome recovery prefers the authenticated operator session and avoids a blank startup page', () => {
+  assert.ok(mainSource.includes('for (const port of [9222, 9225, 9223, 9224])'));
+  assert.ok(mainSource.includes("'http://127.0.0.1:4174/outreach-dashboard.html?view=workspace'"));
+  assert.doesNotMatch(mainSource, /'--new-window',\s*'about:blank'/);
+  assert.doesNotMatch(mainSource, /engine: 'codex-chrome-extension-cdp'/);
 });
 
 test('Facebook composer writes React contenteditable state before send', () => {
