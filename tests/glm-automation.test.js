@@ -949,6 +949,8 @@ test('daily execution is serial and can process a priority batch per run', () =>
   assert.ok(mainSource.includes("mode: 'serial-single-target'"));
   assert.ok(mainSource.includes('const parallelLimit = 1'));
   assert.ok(mainSource.includes('const limit = Math.min(requestedLimit, remainingDailyGap)'));
+  assert.ok(mainSource.includes("app.disableHardwareAcceleration()"));
+  assert.ok(mainSource.includes("app.commandLine.appendSwitch('disable-gpu')"));
   assert.ok(mainSource.includes('DEFAULT_DAILY_SOCIAL_EXECUTION_LIMIT = DAILY_CONFIRMED_COMPANY_TARGET'));
   assert.ok(mainSource.includes('const remainingDailyGap = Math.max(0, DAILY_CONFIRMED_COMPANY_TARGET - confirmedToday)'));
   assert.ok(mainSource.includes('const limit = Math.min(requestedLimit, remainingDailyGap)'));

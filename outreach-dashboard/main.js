@@ -52,6 +52,15 @@ let glmAutomationRunning = false;
 let lastGlmAutomationAt = 0;
 let managedChromeStarted = false;
 const isAutoRunDaily = process.argv.includes('--auto-run-daily');
+if (isAutoRunDaily) {
+  // The daily executor does not render customer pages itself; all outreach is
+  // performed in the dedicated Chrome process on port 9224. Keep Electron on
+  // software rendering so a Windows GPU reset cannot blank or terminate the
+  // orchestration window while a checkpointed batch is running.
+  app.disableHardwareAcceleration();
+  app.commandLine.appendSwitch('disable-gpu');
+  app.commandLine.appendSwitch('disable-gpu-compositing');
+}
 const WEBSITE_CONTACT_VERIFIED_EVIDENCE = 'contact_entry_verified';
 const DEFAULT_WEBSITE_CONTACT_EMAIL = 'leo@flextailgear.com';
 const DEFAULT_WEBSITE_CONTACT_FIRST_NAME = 'Leo';
