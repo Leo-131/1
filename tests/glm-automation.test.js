@@ -948,8 +948,10 @@ test('recoverable social composer failures fall back across verified channels wi
 test('daily execution is serial and can process a priority batch per run', () => {
   assert.ok(mainSource.includes("mode: 'serial-single-target'"));
   assert.ok(mainSource.includes('const parallelLimit = 1'));
-  assert.ok(mainSource.includes('const limit = requestedLimit'));
-  assert.ok(mainSource.includes('DEFAULT_DAILY_SOCIAL_EXECUTION_LIMIT = 13'));
+  assert.ok(mainSource.includes('const limit = Math.min(requestedLimit, remainingDailyGap)'));
+  assert.ok(mainSource.includes('DEFAULT_DAILY_SOCIAL_EXECUTION_LIMIT = DAILY_CONFIRMED_COMPANY_TARGET'));
+  assert.ok(mainSource.includes('const remainingDailyGap = Math.max(0, DAILY_CONFIRMED_COMPANY_TARGET - confirmedToday)'));
+  assert.ok(mainSource.includes('const limit = Math.min(requestedLimit, remainingDailyGap)'));
   assert.ok(mainSource.includes('KEEP_AUTOMATION_TABS_VISIBLE'));
   assert.ok(mainSource.includes('automationReusableChromeTab'));
   assert.ok(mainSource.includes('reuseTab: true'));

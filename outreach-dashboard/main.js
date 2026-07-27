@@ -275,7 +275,8 @@ const COMPANY_HISTORY_BLOCKING_STATUSES = new Set([
   'account_followed',
   'post_liked',
 ]);
-const DEFAULT_DAILY_SOCIAL_EXECUTION_LIMIT = 13;
+const DAILY_CONFIRMED_COMPANY_TARGET = 100;
+const DEFAULT_DAILY_SOCIAL_EXECUTION_LIMIT = DAILY_CONFIRMED_COMPANY_TARGET;
 
 function historicalAutomationResultBlocksCompany(result = {}) {
   if (COMPANY_HISTORY_BLOCKING_STATUSES.has(result.status)) {
@@ -406,6 +407,19 @@ function sameDayAutomationCompanyKeys(results = [], now = Date.now()) {
     automationCompanyKeys(result).forEach(key => keys.add(key));
   }
   return keys;
+}
+
+function sameDayConfirmedCompanyCount(results = [], now = Date.now()) {
+  const companies = [];
+  for (const result of results) {
+    if (!result
+      || !['sent_confirmed', 'submitted_confirmed'].includes(result.status)
+      || !isSameAutomationDay(result.timestamp, now)) continue;
+    const keys = automationCompanyKeys(result);
+    if (!keys.size || companies.some(existing => setsIntersect(existing, keys))) continue;
+    companies.push(keys);
+  }
+  return companies.length;
 }
 
 function itemBlockedBySameDayCompany(item, companyKeys) {
@@ -3576,9 +3590,11 @@ async function runDailyAutomationQueue(payload = {}) {
     return { ok: false, error: 'Daily automation queue is missing. Run npm run daily first.' };
   }
   const requestedLimit = Math.max(1, Math.min(Number(payload && payload.limit || process.env.DAILY_EXECUTE_LIMIT || DEFAULT_DAILY_SOCIAL_EXECUTION_LIMIT), 100));
-  const limit = requestedLimit;
   const parallelLimit = 1;
   const previousResults = readJsonScriptArray(path.join(__dirname, 'autonomous-outreach-results.js'), 'AUTONOMOUS_OUTREACH_RESULTS');
+  const confirmedToday = sameDayConfirmedCompanyCount(previousResults);
+  const remainingDailyGap = Math.max(0, DAILY_CONFIRMED_COMPANY_TARGET - confirmedToday);
+  const limit = Math.min(requestedLimit, remainingDailyGap);
   const sameDayCompanyKeys = sameDayAutomationCompanyKeys(previousResults);
   const visibleExecutable = executableQueueCandidates(latest.visibleTodayQueue || [], { allowWebsiteContact: false });
   const dueCandidates = executableQueueCandidates(latest.dailyQueue, { allowWebsiteContact: false });
@@ -3624,6 +3640,7 @@ async function runDailyAutomationQueue(payload = {}) {
   );
   const selectedCompanyKeys = new Set(sameDayCompanyKeys);
   for (const item of candidatePool) {
+    if (executable.length >= limit) break;
     if (checkpointCompletedIds.has(item.id)) {
       skipped.push({
         id: item.id,
@@ -3643,7 +3660,6 @@ async function runDailyAutomationQueue(payload = {}) {
       continue;
     }
     executable.push(item);
-    if (executable.length >= limit) break;
   }
   const bounceReconciliation = await reconcileAlibabaBounceResults();
   [...latest.dailyQueue, ...(latest.scheduledLater || []), ...(latest.dailyPotentialPool || [])]
@@ -3706,6 +3722,8 @@ async function runDailyAutomationQueue(payload = {}) {
     executableCount: executable.length,
     skippedCount: skipped.length,
     limit,
+    confirmedToday,
+    remainingDailyGap,
     currentIndex: 0,
     currentItem: null,
     completedCount: 0,
