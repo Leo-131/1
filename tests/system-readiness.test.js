@@ -59,6 +59,46 @@ test('missing optional connector credentials do not report the core sales system
   assert.ok(result.connectors.every(item => item.status === 'not_configured'));
 });
 
+test('fresh connected-session proofs enable only explicitly supported connectors', () => {
+  const now = new Date('2026-07-27T05:20:00.000Z');
+  const result = readiness.assess({}, {
+    alibaba_mail: {
+      status: 'verified',
+      mode: 'codex_chrome_extension_session',
+      verifiedAt: '2026-07-27T05:15:00.000Z',
+      expiresAt: '2026-07-28T05:15:00.000Z',
+    },
+    meeting_routing: {
+      status: 'verified',
+      mode: 'connected_google_calendar',
+      verifiedAt: '2026-07-27T05:18:00.000Z',
+      expiresAt: '2026-07-28T05:18:00.000Z',
+    },
+    crm: {
+      status: 'verified',
+      mode: 'unapproved_local_claim',
+      verifiedAt: '2026-07-27T05:18:00.000Z',
+      expiresAt: '2026-07-28T05:18:00.000Z',
+    },
+  }, { now });
+  assert.equal(result.readyCount, 2);
+  assert.equal(result.connectors.find(item => item.id === 'alibaba_mail').status, 'ready_connected_session');
+  assert.equal(result.connectors.find(item => item.id === 'meeting_routing').providerSource, 'connected_google_calendar');
+  assert.equal(result.connectors.find(item => item.id === 'crm').ready, false);
+});
+
+test('expired connected-session proofs fail closed', () => {
+  const result = readiness.assess({}, {
+    alibaba_mail: {
+      status: 'verified',
+      mode: 'codex_chrome_extension_session',
+      verifiedAt: '2026-07-26T05:15:00.000Z',
+      expiresAt: '2026-07-27T05:15:00.000Z',
+    },
+  }, { now: new Date('2026-07-27T05:20:00.000Z') });
+  assert.equal(result.connectors.find(item => item.id === 'alibaba_mail').ready, false);
+});
+
 test('conversion snapshot uses unique companies and confirmed customer events', () => {
   const events = [
     { customerKey: 'acme', type: 'sent_confirmed' },

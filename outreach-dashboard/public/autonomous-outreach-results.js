@@ -6451,5 +6451,21 @@ window.AUTONOMOUS_OUTREACH_RESULTS = [
     "messageId": "",
     "sentFolder": "",
     "sentUid": null
+  },
+  {
+    "task_id": "google-customer-tentworld-australia-facebook",
+    "approval_version": 1,
+    "status": "sent_confirmed",
+    "agent": "codex-chrome-extension-live",
+    "browserTransportUsed": "codex-extension",
+    "timestamp": "2026-07-27T13:44:00.000+08:00",
+    "target_url": "https://www.facebook.com/Tentworld",
+    "evidence": "official_facebook_identity_verified;message_control_unique;send_clicked;facebook_alert_message_sent;outgoing_bubble_visible;composer_cleared",
+    "draft": "Hi Tentworld team — Leo from FLEXTAIL here. Your long-standing focus on quality camping gear for Australian outdoor customers is a strong fit for our compact pumps, camping lights and portable power products. FLEXTAIL is preparing 36+ new SKUs for 2026 across several use cases and price tiers. Would you be able to connect me with the category buyer or vendor-review owner for a short introduction and assortment review? Product overview: https://www.flextail.com/",
+    "subject": "",
+    "recipientEmail": "",
+    "messageId": "",
+    "sentFolder": "",
+    "sentUid": null
   }
 ];

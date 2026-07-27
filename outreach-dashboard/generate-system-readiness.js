@@ -5,7 +5,11 @@ const path = require('node:path');
 const readiness = require('./system-readiness');
 
 const ROOT = __dirname;
-const snapshot = readiness.assess(process.env);
+const proofPath = path.join(ROOT, 'connector-capability-proofs.json');
+const proofs = fs.existsSync(proofPath)
+  ? JSON.parse(fs.readFileSync(proofPath, 'utf8'))
+  : {};
+const snapshot = readiness.assess(process.env, proofs);
 const json = `${JSON.stringify(snapshot, null, 2)}\n`;
 const script = `window.SystemReadinessData = ${JSON.stringify(snapshot, null, 2)};\n`;
 
@@ -16,6 +20,9 @@ for (const directory of [ROOT, path.join(ROOT, 'public')]) {
   if (directory !== ROOT) {
     fs.copyFileSync(path.join(ROOT, 'system-readiness.js'), path.join(directory, 'system-readiness.js'));
     fs.copyFileSync(path.join(ROOT, 'sales-automation-core.js'), path.join(directory, 'sales-automation-core.js'));
+    if (fs.existsSync(proofPath)) {
+      fs.copyFileSync(proofPath, path.join(directory, 'connector-capability-proofs.json'));
+    }
   }
 }
 

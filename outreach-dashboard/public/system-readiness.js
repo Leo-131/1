@@ -43,6 +43,7 @@
       tier: 'channel',
       providers: ['Alibaba Mail'],
       all: ['OUTREACH_EMAIL_FROM', 'ALIBABA_SMTP_USER', 'ALIBABA_SMTP_SECURITY_PASSWORD'],
+      proofModes: ['codex_chrome_extension_session'],
       impact: '发送、已发送文件夹确认、退信和回复回收',
       priority: 95,
     },
@@ -63,6 +64,7 @@
       tier: 'optional',
       providers: ['Google Calendar', 'Calendly'],
       any: [['GOOGLE_CALENDAR_ID'], ['CALENDLY_ACCESS_TOKEN']],
+      proofModes: ['connected_google_calendar'],
       impact: '把积极回复直接转成采购会议',
       priority: 76,
     },
@@ -76,10 +78,26 @@
     return Array.isArray(group) && group.length > 0 && group.every(key => present(env, key));
   }
 
-  function assessConnector(definition, env) {
+  function verifiedProof(definition, proofs, now = new Date()) {
+    const proof = proofs && proofs[definition.id];
+    if (!proof || proof.status !== 'verified') return null;
+    if (!Array.isArray(definition.proofModes) || !definition.proofModes.includes(proof.mode)) return null;
+    const verifiedAt = Date.parse(proof.verifiedAt || '');
+    const expiresAt = Date.parse(proof.expiresAt || '');
+    if (!Number.isFinite(verifiedAt) || !Number.isFinite(expiresAt) || expiresAt <= now.getTime()) return null;
+    return Object.freeze({
+      mode: proof.mode,
+      verifiedAt: new Date(verifiedAt).toISOString(),
+      expiresAt: new Date(expiresAt).toISOString(),
+    });
+  }
+
+  function assessConnector(definition, env, proofs, now) {
     const allReady = !definition.all || groupReady(env, definition.all);
     const anyReady = !definition.any || definition.any.some(group => groupReady(env, group));
-    const ready = allReady && anyReady;
+    const credentialReady = allReady && anyReady;
+    const proof = verifiedProof(definition, proofs, now);
+    const ready = credentialReady || Boolean(proof);
     const requiredGroups = definition.all
       ? [definition.all]
       : definition.any || [];
@@ -93,16 +111,20 @@
       tier: definition.tier,
       providers: definition.providers,
       ready,
-      status: ready ? 'ready' : 'not_configured',
+      status: proof ? 'ready_connected_session' : ready ? 'ready' : 'not_configured',
+      providerSource: proof ? proof.mode : credentialReady ? 'environment_configuration' : '',
+      verifiedAt: proof ? proof.verifiedAt : '',
+      expiresAt: proof ? proof.expiresAt : '',
       missing,
       impact: definition.impact,
       priority: definition.priority,
     });
   }
 
-  function assess(env = {}) {
+  function assess(env = {}, proofs = {}, options = {}) {
+    const now = options.now instanceof Date ? options.now : new Date();
     const connectors = CONNECTORS
-      .map(definition => assessConnector(definition, env))
+      .map(definition => assessConnector(definition, env, proofs, now))
       .sort((left, right) => right.priority - left.priority);
     const readyCount = connectors.filter(item => item.ready).length;
     const coreGates = Object.freeze([

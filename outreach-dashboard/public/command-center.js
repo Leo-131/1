@@ -1499,7 +1499,11 @@
       <div class="cc-channel-card ${item.ready ? 'email' : ''}">
         <span>${esc(item.label)}</span>
         <b>${item.ready ? 'READY' : '可选 · 未配置'}</b>
-        <em>${esc(item.ready ? item.providers.join(' / ') : `缺少：${item.missing.join(' 或 ')}`)}</em>
+        <em>${esc(item.ready
+          ? item.status === 'ready_connected_session'
+            ? `${item.providerSource} · 有效至 ${item.expiresAt}`
+            : item.providers.join(' / ')
+          : `缺少：${item.missing.join(' 或 ')}`)}</em>
       </div>`).join('');
     const coreReady = readinessData.coreReady === true;
     const statusClass = coreReady ? 'green' : 'amber';
