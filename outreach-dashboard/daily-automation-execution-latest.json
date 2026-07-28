@@ -17,7 +17,7 @@
   "batchMode": "parallel-batches",
   "parallelLimit": 1,
   "limit": 100,
-  "queueDate": "2026-07-28",
+  "queueDate": "2026-07-29",
   "queueSource": "dailyQueue",
   "executed": [
     {
@@ -82,8 +82,8 @@
         "engine": "codex-chrome-cdp",
         "port": 9224,
         "targetUrl": "https://www.alpinetrek.co.uk/help/contact-us",
-        "tabId": "D8B3CC1BC785853ED447A32493932E03",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/D8B3CC1BC785853ED447A32493932E03",
+        "tabId": "1B83F55BC7D04386BFB0F2E6A489E87B",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/1B83F55BC7D04386BFB0F2E6A489E87B",
         "title": "Attention Required! | Cloudflare"
       },
       "result": {
@@ -97,8 +97,8 @@
           "engine": "codex-chrome-cdp",
           "port": 9224,
           "targetUrl": "https://www.alpinetrek.co.uk/help/contact-us",
-          "tabId": "D8B3CC1BC785853ED447A32493932E03",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/D8B3CC1BC785853ED447A32493932E03",
+          "tabId": "1B83F55BC7D04386BFB0F2E6A489E87B",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/1B83F55BC7D04386BFB0F2E6A489E87B",
           "title": "Attention Required! | Cloudflare"
         },
         "sendStatus": "website_contact_unreachable_skip",
@@ -122,9 +122,9 @@
         "engine": "codex-chrome-cdp",
         "port": 9224,
         "targetUrl": "https://scandinavianoutdoor.com/help/contact-us",
-        "tabId": "488FD5FA005D9D997E36C77858E66D57",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/488FD5FA005D9D997E36C77858E66D57",
-        "title": ""
+        "tabId": "E2B8B8F46C9C118E8D2A14ED720C7C33",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/E2B8B8F46C9C118E8D2A14ED720C7C33",
+        "title": "Scandinavian Outdoor"
       },
       "result": {
         "ok": false,
@@ -137,9 +137,9 @@
           "engine": "codex-chrome-cdp",
           "port": 9224,
           "targetUrl": "https://scandinavianoutdoor.com/help/contact-us",
-          "tabId": "488FD5FA005D9D997E36C77858E66D57",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/488FD5FA005D9D997E36C77858E66D57",
-          "title": ""
+          "tabId": "E2B8B8F46C9C118E8D2A14ED720C7C33",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/E2B8B8F46C9C118E8D2A14ED720C7C33",
+          "title": "Scandinavian Outdoor"
         },
         "sendStatus": "website_contact_unreachable_skip",
         "subject": "FLEXTAIL retail partnership | 2026 assortment",
@@ -162,8 +162,8 @@
         "engine": "codex-chrome-cdp",
         "port": 9224,
         "targetUrl": "https://www.snowleader.com/help/contact-us",
-        "tabId": "F58EBEE542792834F2DD6A7DDE5B56BF",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/F58EBEE542792834F2DD6A7DDE5B56BF",
+        "tabId": "BFB6AC9ED991EF701428719B3AACC005",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/BFB6AC9ED991EF701428719B3AACC005",
         "title": "Just a moment..."
       },
       "result": {
@@ -177,8 +177,8 @@
           "engine": "codex-chrome-cdp",
           "port": 9224,
           "targetUrl": "https://www.snowleader.com/help/contact-us",
-          "tabId": "F58EBEE542792834F2DD6A7DDE5B56BF",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/F58EBEE542792834F2DD6A7DDE5B56BF",
+          "tabId": "BFB6AC9ED991EF701428719B3AACC005",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/BFB6AC9ED991EF701428719B3AACC005",
           "title": "Just a moment..."
         },
         "sendStatus": "website_contact_unreachable_skip",
@@ -202,8 +202,8 @@
         "engine": "codex-chrome-cdp",
         "port": 9224,
         "targetUrl": "https://www.transa.ch/help/contact-us",
-        "tabId": "D20BF36789E301A6AB5487088C1EA4B2",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/D20BF36789E301A6AB5487088C1EA4B2",
+        "tabId": "B48A7FCD5902D37D1FBA40CC38A6E881",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/B48A7FCD5902D37D1FBA40CC38A6E881",
         "title": "High-quality travel and outdoor equipment - Transa.ch"
       },
       "result": {
@@ -217,8 +217,8 @@
           "engine": "codex-chrome-cdp",
           "port": 9224,
           "targetUrl": "https://www.transa.ch/help/contact-us",
-          "tabId": "D20BF36789E301A6AB5487088C1EA4B2",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/D20BF36789E301A6AB5487088C1EA4B2",
+          "tabId": "B48A7FCD5902D37D1FBA40CC38A6E881",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/B48A7FCD5902D37D1FBA40CC38A6E881",
           "title": "High-quality travel and outdoor equipment - Transa.ch"
         },
         "sendStatus": "website_contact_unreachable_skip",
@@ -242,7 +242,7 @@
         "engine": "codex-chrome-cdp",
         "port": 9224,
         "targetUrl": "https://www.backcountryexperience.com/help/contact-us",
-        "tabId": "4C944646824433BDE32A64C901FA2266",
+        "tabId": "D5E9D04888FAA8B21C2D41EE6FDE88E7",
         "title": "",
         "status": "failed_open",
         "error": "profile_unavailable_or_broken_link",
@@ -259,7 +259,7 @@
           "engine": "codex-chrome-cdp",
           "port": 9224,
           "targetUrl": "https://www.backcountryexperience.com/help/contact-us",
-          "tabId": "4C944646824433BDE32A64C901FA2266",
+          "tabId": "D5E9D04888FAA8B21C2D41EE6FDE88E7",
           "title": "",
           "status": "failed_open",
           "error": "profile_unavailable_or_broken_link",
@@ -269,7 +269,7 @@
         "subject": "FLEXTAIL retail partnership | 2026 assortment",
         "draft": "Dear Backcountry Experience Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
         "evidence": "website_page_unavailable_404: Not Found\n;website_contact_all_targets_failed:6;contact_path_strategy_v2",
-        "output": "{\"verdict\":\"website_contact_unreachable_skip\",\"evidence\":\"website_page_unavailable_404: Not Found\\n;website_contact_all_targets_failed:6;contact_path_strategy_v2\",\"subject\":\"FLEXTAIL retail partnership | 2026 assortment\",\"draft\":\"Dear Backcountry Experience Team,\\n\\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\\n\\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\\n\\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\\n\\nProduct overview: https://www.flextail.com/\\n\\nBest regards,\\nLeo Liu\\nSales & Operations Director\\nLeo@flextailgear.com\",\"sendStatus\":\"website_contact_unreachable_skip\",\"attempts\":[{\"targetUrl\":\"https://www.backcountryexperience.com/\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control\"},{\"targetUrl\":\"https://www.backcountryexperience.com/pages/contact-us\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control\"},{\"targetUrl\":\"https://www.backcountryexperience.com/pages/contact\",\"sendStatus\":\"failed_open\",\"evidence\":\"website_page_unavailable_404: Not Found\\n\"},{\"targetUrl\":\"https://www.backcountryexperience.com/contact-us\",\"sendStatus\":\"failed_open\",\"evidence\":\"website_page_unavailable_404: 找不到 www.backcountryexperience.com 的网页\\n\\n找不到与以下网址对应的网页：https://www.backcountryexperience.com/contact-us\\n\\nHTTP ERROR 404\\n重新加载\"},{\"targetUrl\":\"https://www.backcountryexperience.com/contact\",\"sendStatus\":\"failed_open\",\"evidence\":\"website_page_unavailable_404: HTTP Status: 404 (not found)\"},{\"targetUrl\":\"https://www.backcountryexperience.com/help/contact-us\",\"sendStatus\":\"failed_open\",\"evidence\":\"website_page_unavailable_404: Not Found\\n\"}],\"nextAction\":\"Official website contact was unreachable or not machine-verifiable. Skip this website route now, note it clearly, and continue with LinkedIn, Facebook, Instagram, or another verified official channel.\"}"
+        "output": "{\"verdict\":\"website_contact_unreachable_skip\",\"evidence\":\"website_page_unavailable_404: Not Found\\n;website_contact_all_targets_failed:6;contact_path_strategy_v2\",\"subject\":\"FLEXTAIL retail partnership | 2026 assortment\",\"draft\":\"Dear Backcountry Experience Team,\\n\\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\\n\\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\\n\\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\\n\\nProduct overview: https://www.flextail.com/\\n\\nBest regards,\\nLeo Liu\\nSales & Operations Director\\nLeo@flextailgear.com\",\"sendStatus\":\"website_contact_unreachable_skip\",\"attempts\":[{\"targetUrl\":\"https://www.backcountryexperience.com/\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control\"},{\"targetUrl\":\"https://www.backcountryexperience.com/pages/contact-us\",\"sendStatus\":\"failed_open\",\"evidence\":\"website_page_unavailable_404: Not Found\\n\"},{\"targetUrl\":\"https://www.backcountryexperience.com/pages/contact\",\"sendStatus\":\"failed_open\",\"evidence\":\"website_page_unavailable_404: Not Found\\n\"},{\"targetUrl\":\"https://www.backcountryexperience.com/contact-us\",\"sendStatus\":\"failed_open\",\"evidence\":\"website_page_unavailable_404: 找不到 www.backcountryexperience.com 的网页\\n\\n找不到与以下网址对应的网页：https://www.backcountryexperience.com/contact-us\\n\\nHTTP ERROR 404\\n重新加载\"},{\"targetUrl\":\"https://www.backcountryexperience.com/contact\",\"sendStatus\":\"failed_open\",\"evidence\":\"website_page_unavailable_404: HTTP Status: 404 (not found)\"},{\"targetUrl\":\"https://www.backcountryexperience.com/help/contact-us\",\"sendStatus\":\"failed_open\",\"evidence\":\"website_page_unavailable_404: Not Found\\n\"}],\"nextAction\":\"Official website contact was unreachable or not machine-verifiable. Skip this website route now, note it clearly, and continue with LinkedIn, Facebook, Instagram, or another verified official channel.\"}"
       }
     },
     {
@@ -286,8 +286,8 @@
         "engine": "codex-chrome-cdp",
         "port": 9224,
         "targetUrl": "https://www.outdoorxl.nl/help/contact-us",
-        "tabId": "3F11B18B4FC197372AD01BF6259ADC17",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/3F11B18B4FC197372AD01BF6259ADC17",
+        "tabId": "C89D90E7A782D84096517AF612627BBE",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/C89D90E7A782D84096517AF612627BBE",
         "title": "Just a moment..."
       },
       "result": {
@@ -301,8 +301,8 @@
           "engine": "codex-chrome-cdp",
           "port": 9224,
           "targetUrl": "https://www.outdoorxl.nl/help/contact-us",
-          "tabId": "3F11B18B4FC197372AD01BF6259ADC17",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/3F11B18B4FC197372AD01BF6259ADC17",
+          "tabId": "C89D90E7A782D84096517AF612627BBE",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/C89D90E7A782D84096517AF612627BBE",
           "title": "Just a moment..."
         },
         "sendStatus": "website_contact_unreachable_skip",
@@ -320,14 +320,14 @@
       "targetUrl": "https://www.spejdersport.dk/",
       "ok": false,
       "sendStatus": "website_contact_unreachable_skip",
-      "evidence": "website_contact_entry_not_verified;contact_entry_clicked:Kontakt os;website_contact_all_targets_failed:6;contact_path_strategy_v2",
+      "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:6;contact_path_strategy_v2",
       "chromeOpen": {
         "ok": true,
         "engine": "codex-chrome-cdp",
         "port": 9224,
         "targetUrl": "https://www.spejdersport.dk/help/contact-us",
-        "tabId": "C7762237E53FF6C84CE16A402CDBD452",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/C7762237E53FF6C84CE16A402CDBD452",
+        "tabId": "D96C76359C268FDA89757966383299D8",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/D96C76359C268FDA89757966383299D8",
         "title": "Spejder Sport A/S"
       },
       "result": {
@@ -341,15 +341,15 @@
           "engine": "codex-chrome-cdp",
           "port": 9224,
           "targetUrl": "https://www.spejdersport.dk/help/contact-us",
-          "tabId": "C7762237E53FF6C84CE16A402CDBD452",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/C7762237E53FF6C84CE16A402CDBD452",
+          "tabId": "D96C76359C268FDA89757966383299D8",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/D96C76359C268FDA89757966383299D8",
           "title": "Spejder Sport A/S"
         },
         "sendStatus": "website_contact_unreachable_skip",
         "subject": "FLEXTAIL retail partnership | 2026 assortment",
         "draft": "Dear Spejder Sport Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
-        "evidence": "website_contact_entry_not_verified;contact_entry_clicked:Kontakt os;website_contact_all_targets_failed:6;contact_path_strategy_v2",
-        "output": "{\"verdict\":\"website_contact_unreachable_skip\",\"evidence\":\"website_contact_entry_not_verified;contact_entry_clicked:Kontakt os;website_contact_all_targets_failed:6;contact_path_strategy_v2\",\"nextAction\":\"Contact page opened, but no verified form, mailto link, vendor/business route, or clickable Contact Us path was detected. Continue manually before marking the lead ready.\",\"subject\":\"FLEXTAIL retail partnership | 2026 assortment\",\"draft\":\"Dear Spejder Sport Team,\\n\\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\\n\\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\\n\\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\\n\\nProduct overview: https://www.flextail.com/\\n\\nBest regards,\\nLeo Liu\\nSales & Operations Director\\nLeo@flextailgear.com\",\"sendStatus\":\"website_contact_unreachable_skip\",\"attempts\":[{\"targetUrl\":\"https://www.spejdersport.dk/\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;contact_entry_clicked:Kontakt os\"},{\"targetUrl\":\"https://www.spejdersport.dk/pages/contact-us\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control\"},{\"targetUrl\":\"https://www.spejdersport.dk/pages/contact\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;contact_entry_clicked:Kontakt os\"},{\"targetUrl\":\"https://www.spejdersport.dk/contact-us\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control\"},{\"targetUrl\":\"https://www.spejdersport.dk/contact\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control\"},{\"targetUrl\":\"https://www.spejdersport.dk/help/contact-us\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;contact_entry_clicked:Kontakt os\"}]}"
+        "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:6;contact_path_strategy_v2",
+        "output": "{\"verdict\":\"website_contact_unreachable_skip\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:6;contact_path_strategy_v2\",\"nextAction\":\"Contact page opened, but no verified form, mailto link, vendor/business route, or clickable Contact Us path was detected. Continue manually before marking the lead ready.\",\"subject\":\"FLEXTAIL retail partnership | 2026 assortment\",\"draft\":\"Dear Spejder Sport Team,\\n\\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\\n\\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\\n\\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\\n\\nProduct overview: https://www.flextail.com/\\n\\nBest regards,\\nLeo Liu\\nSales & Operations Director\\nLeo@flextailgear.com\",\"sendStatus\":\"website_contact_unreachable_skip\",\"attempts\":[{\"targetUrl\":\"https://www.spejdersport.dk/\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;contact_entry_clicked:Kontakt os\"},{\"targetUrl\":\"https://www.spejdersport.dk/pages/contact-us\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;contact_entry_clicked:Kontakt os\"},{\"targetUrl\":\"https://www.spejdersport.dk/pages/contact\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;contact_entry_clicked:Kontakt os\"},{\"targetUrl\":\"https://www.spejdersport.dk/contact-us\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;contact_entry_clicked:Kontakt os\"},{\"targetUrl\":\"https://www.spejdersport.dk/contact\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control\"},{\"targetUrl\":\"https://www.spejdersport.dk/help/contact-us\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control\"}]}"
       }
     },
     {
@@ -366,8 +366,8 @@
         "engine": "codex-chrome-cdp",
         "port": 9224,
         "targetUrl": "https://latulippe.com/help/contact-us",
-        "tabId": "F1828BCF77E655DD7978DA49BF83EBE5",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/F1828BCF77E655DD7978DA49BF83EBE5",
+        "tabId": "563CE649B901F73C6F9B81D5B7F9EE44",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/563CE649B901F73C6F9B81D5B7F9EE44",
         "title": "Attention Required! | Cloudflare"
       },
       "result": {
@@ -381,8 +381,8 @@
           "engine": "codex-chrome-cdp",
           "port": 9224,
           "targetUrl": "https://latulippe.com/help/contact-us",
-          "tabId": "F1828BCF77E655DD7978DA49BF83EBE5",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/F1828BCF77E655DD7978DA49BF83EBE5",
+          "tabId": "563CE649B901F73C6F9B81D5B7F9EE44",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/563CE649B901F73C6F9B81D5B7F9EE44",
           "title": "Attention Required! | Cloudflare"
         },
         "sendStatus": "website_contact_unreachable_skip",
@@ -406,8 +406,8 @@
         "engine": "codex-chrome-cdp",
         "port": 9224,
         "targetUrl": "https://www.sportpursuit.com/help/contact-us",
-        "tabId": "6F98B072894E3222A830AED6DF7A1EB9",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/6F98B072894E3222A830AED6DF7A1EB9",
+        "tabId": "0DE2C00984972EE679FDEDC7739F91C4",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/0DE2C00984972EE679FDEDC7739F91C4",
         "title": ""
       },
       "result": {
@@ -421,8 +421,8 @@
           "engine": "codex-chrome-cdp",
           "port": 9224,
           "targetUrl": "https://www.sportpursuit.com/help/contact-us",
-          "tabId": "6F98B072894E3222A830AED6DF7A1EB9",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/6F98B072894E3222A830AED6DF7A1EB9",
+          "tabId": "0DE2C00984972EE679FDEDC7739F91C4",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/0DE2C00984972EE679FDEDC7739F91C4",
           "title": ""
         },
         "sendStatus": "website_contact_unreachable_skip",
@@ -446,8 +446,8 @@
         "engine": "codex-chrome-cdp",
         "port": 9224,
         "targetUrl": "https://utemountaineer.com/help/contact-us",
-        "tabId": "AA2D9F28250E0732A0987F7FA6AD0757",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/AA2D9F28250E0732A0987F7FA6AD0757",
+        "tabId": "593BF6232C9C4CBB34026288A097DE6B",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/593BF6232C9C4CBB34026288A097DE6B",
         "title": "Ute Mountaineer"
       },
       "result": {
@@ -461,8 +461,8 @@
           "engine": "codex-chrome-cdp",
           "port": 9224,
           "targetUrl": "https://utemountaineer.com/help/contact-us",
-          "tabId": "AA2D9F28250E0732A0987F7FA6AD0757",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/AA2D9F28250E0732A0987F7FA6AD0757",
+          "tabId": "593BF6232C9C4CBB34026288A097DE6B",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/593BF6232C9C4CBB34026288A097DE6B",
           "title": "Ute Mountaineer"
         },
         "sendStatus": "website_contact_unreachable_skip",
@@ -486,8 +486,8 @@
         "engine": "codex-chrome-cdp",
         "port": 9224,
         "targetUrl": "https://varuste.net/help/contact-us",
-        "tabId": "F9F358526FAFB0E1AF062E0297188FA1",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/F9F358526FAFB0E1AF062E0297188FA1",
+        "tabId": "5EF905CBCBFC5896E1271D1E42EEDFDA",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/5EF905CBCBFC5896E1271D1E42EEDFDA",
         "title": "Ulkoiluvarusteet netistä | Varuste.net"
       },
       "result": {
@@ -501,8 +501,8 @@
           "engine": "codex-chrome-cdp",
           "port": 9224,
           "targetUrl": "https://varuste.net/help/contact-us",
-          "tabId": "F9F358526FAFB0E1AF062E0297188FA1",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/F9F358526FAFB0E1AF062E0297188FA1",
+          "tabId": "5EF905CBCBFC5896E1271D1E42EEDFDA",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/5EF905CBCBFC5896E1271D1E42EEDFDA",
           "title": "Ulkoiluvarusteet netistä | Varuste.net"
         },
         "sendStatus": "website_contact_unreachable_skip",
@@ -526,8 +526,8 @@
         "engine": "codex-chrome-cdp",
         "port": 9224,
         "targetUrl": "https://www.hikingshack.com/help/contact-us",
-        "tabId": "A654F7EFD6B2D64EDF79BC4F7B8D8B00",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/A654F7EFD6B2D64EDF79BC4F7B8D8B00",
+        "tabId": "F628C3844ED267CBF13209048E14F4C9",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/F628C3844ED267CBF13209048E14F4C9",
         "title": "Just a moment..."
       },
       "result": {
@@ -541,8 +541,8 @@
           "engine": "codex-chrome-cdp",
           "port": 9224,
           "targetUrl": "https://www.hikingshack.com/help/contact-us",
-          "tabId": "A654F7EFD6B2D64EDF79BC4F7B8D8B00",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/A654F7EFD6B2D64EDF79BC4F7B8D8B00",
+          "tabId": "F628C3844ED267CBF13209048E14F4C9",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/F628C3844ED267CBF13209048E14F4C9",
           "title": "Just a moment..."
         },
         "sendStatus": "website_contact_unreachable_skip",
@@ -566,8 +566,8 @@
         "engine": "codex-chrome-cdp",
         "port": 9224,
         "targetUrl": "https://www.bentgate.com/help/contact-us",
-        "tabId": "9820D1EC21763546AE11300CCF101869",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/9820D1EC21763546AE11300CCF101869",
+        "tabId": "FB65BB6D8244E32A99E90F9DAEDA96BF",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/FB65BB6D8244E32A99E90F9DAEDA96BF",
         "title": "Bentgate Mountaineering in Golden, CO - Bentgate Mountaineering"
       },
       "result": {
@@ -581,15 +581,15 @@
           "engine": "codex-chrome-cdp",
           "port": 9224,
           "targetUrl": "https://www.bentgate.com/help/contact-us",
-          "tabId": "9820D1EC21763546AE11300CCF101869",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/9820D1EC21763546AE11300CCF101869",
+          "tabId": "FB65BB6D8244E32A99E90F9DAEDA96BF",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/FB65BB6D8244E32A99E90F9DAEDA96BF",
           "title": "Bentgate Mountaineering in Golden, CO - Bentgate Mountaineering"
         },
         "sendStatus": "website_contact_unreachable_skip",
         "subject": "FLEXTAIL retail partnership | 2026 assortment",
         "draft": "Dear Bentgate Mountaineering Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
         "evidence": "website_contact_entry_not_verified;contact_entry_clicked:https://www.bentgate.com/help/contact-us/;website_contact_all_targets_failed:6;contact_path_strategy_v2",
-        "output": "{\"verdict\":\"website_contact_unreachable_skip\",\"evidence\":\"website_contact_entry_not_verified;contact_entry_clicked:https://www.bentgate.com/help/contact-us/;website_contact_all_targets_failed:6;contact_path_strategy_v2\",\"nextAction\":\"Contact page opened, but no verified form, mailto link, vendor/business route, or clickable Contact Us path was detected. Continue manually before marking the lead ready.\",\"subject\":\"FLEXTAIL retail partnership | 2026 assortment\",\"draft\":\"Dear Bentgate Mountaineering Team,\\n\\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\\n\\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\\n\\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\\n\\nProduct overview: https://www.flextail.com/\\n\\nBest regards,\\nLeo Liu\\nSales & Operations Director\\nLeo@flextailgear.com\",\"sendStatus\":\"website_contact_unreachable_skip\",\"attempts\":[{\"targetUrl\":\"https://www.bentgate.com/\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control\"},{\"targetUrl\":\"https://www.bentgate.com/pages/contact-us\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;contact_entry_clicked:https://www.bentgate.com/pages/contact-us/\"},{\"targetUrl\":\"https://www.bentgate.com/pages/contact\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;contact_entry_clicked:https://www.bentgate.com/pages/contact/\"},{\"targetUrl\":\"https://www.bentgate.com/contact-us\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;contact_entry_clicked:https://www.bentgate.com/contact-us/\"},{\"targetUrl\":\"https://www.bentgate.com/contact\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;contact_entry_clicked:https://www.bentgate.com/contact/\"},{\"targetUrl\":\"https://www.bentgate.com/help/contact-us\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;contact_entry_clicked:https://www.bentgate.com/help/contact-us/\"}]}"
+        "output": "{\"verdict\":\"website_contact_unreachable_skip\",\"evidence\":\"website_contact_entry_not_verified;contact_entry_clicked:https://www.bentgate.com/help/contact-us/;website_contact_all_targets_failed:6;contact_path_strategy_v2\",\"nextAction\":\"Contact page opened, but no verified form, mailto link, vendor/business route, or clickable Contact Us path was detected. Continue manually before marking the lead ready.\",\"subject\":\"FLEXTAIL retail partnership | 2026 assortment\",\"draft\":\"Dear Bentgate Mountaineering Team,\\n\\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\\n\\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\\n\\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\\n\\nProduct overview: https://www.flextail.com/\\n\\nBest regards,\\nLeo Liu\\nSales & Operations Director\\nLeo@flextailgear.com\",\"sendStatus\":\"website_contact_unreachable_skip\",\"attempts\":[{\"targetUrl\":\"https://www.bentgate.com/\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;contact_entry_clicked:EMAIL US\"},{\"targetUrl\":\"https://www.bentgate.com/pages/contact-us\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;contact_entry_clicked:https://www.bentgate.com/pages/contact-us/\"},{\"targetUrl\":\"https://www.bentgate.com/pages/contact\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;contact_entry_clicked:https://www.bentgate.com/pages/contact/\"},{\"targetUrl\":\"https://www.bentgate.com/contact-us\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;contact_entry_clicked:https://www.bentgate.com/contact-us/\"},{\"targetUrl\":\"https://www.bentgate.com/contact\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;contact_entry_clicked:https://www.bentgate.com/contact/\"},{\"targetUrl\":\"https://www.bentgate.com/help/contact-us\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;contact_entry_clicked:https://www.bentgate.com/help/contact-us/\"}]}"
       }
     },
     {
@@ -606,8 +606,8 @@
         "engine": "codex-chrome-cdp",
         "port": 9224,
         "targetUrl": "https://thegreatoutdoorshop.com/help/contact-us",
-        "tabId": "A44D2614248B17D6ED9E3CF6DE97BD26",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/A44D2614248B17D6ED9E3CF6DE97BD26",
+        "tabId": "0568EB207CC8C8EECD467CD00C31C521",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/0568EB207CC8C8EECD467CD00C31C521",
         "title": "thegreatoutdoorshop.com"
       },
       "result": {
@@ -621,8 +621,8 @@
           "engine": "codex-chrome-cdp",
           "port": 9224,
           "targetUrl": "https://thegreatoutdoorshop.com/help/contact-us",
-          "tabId": "A44D2614248B17D6ED9E3CF6DE97BD26",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/A44D2614248B17D6ED9E3CF6DE97BD26",
+          "tabId": "0568EB207CC8C8EECD467CD00C31C521",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/0568EB207CC8C8EECD467CD00C31C521",
           "title": "thegreatoutdoorshop.com"
         },
         "sendStatus": "website_contact_unreachable_skip",
@@ -646,7 +646,7 @@
         "engine": "codex-chrome-cdp",
         "port": 9224,
         "targetUrl": "https://www.gearwest.com/help/contact-us",
-        "tabId": "DC0319956F51E1055A5973741559B181",
+        "tabId": "4B048E188ED8909649BAF477988F55D1",
         "title": "404 Not Found – Gear West",
         "status": "failed_open",
         "error": "profile_unavailable_or_broken_link",
@@ -663,7 +663,7 @@
           "engine": "codex-chrome-cdp",
           "port": 9224,
           "targetUrl": "https://www.gearwest.com/help/contact-us",
-          "tabId": "DC0319956F51E1055A5973741559B181",
+          "tabId": "4B048E188ED8909649BAF477988F55D1",
           "title": "404 Not Found – Gear West",
           "status": "failed_open",
           "error": "profile_unavailable_or_broken_link",
@@ -690,8 +690,8 @@
         "engine": "codex-chrome-cdp",
         "port": 9224,
         "targetUrl": "https://www.facebook.com/aboveandbeyondireland",
-        "tabId": "4F5BB87BD34C58E98E8331808527FDF3",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/4F5BB87BD34C58E98E8331808527FDF3",
+        "tabId": "16454F5E081068A3F168EB34429BDA0E",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/16454F5E081068A3F168EB34429BDA0E",
         "title": "Facebook"
       },
       "result": {
@@ -705,8 +705,8 @@
           "engine": "codex-chrome-cdp",
           "port": 9224,
           "targetUrl": "https://www.facebook.com/aboveandbeyondireland",
-          "tabId": "4F5BB87BD34C58E98E8331808527FDF3",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/4F5BB87BD34C58E98E8331808527FDF3",
+          "tabId": "16454F5E081068A3F168EB34429BDA0E",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/16454F5E081068A3F168EB34429BDA0E",
           "title": "Facebook"
         },
         "sendStatus": "failed_open",
@@ -739,8 +739,8 @@
         "engine": "codex-chrome-cdp",
         "port": 9224,
         "targetUrl": "https://www.facebook.com/Atmosphere",
-        "tabId": "1134793E45D30C33B30D6DB4EB06B509",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/1134793E45D30C33B30D6DB4EB06B509",
+        "tabId": "D68A58AF61704EC270F19934C2F70C81",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/D68A58AF61704EC270F19934C2F70C81",
         "title": "Facebook"
       },
       "result": {
@@ -754,8 +754,8 @@
           "engine": "codex-chrome-cdp",
           "port": 9224,
           "targetUrl": "https://www.facebook.com/Atmosphere",
-          "tabId": "1134793E45D30C33B30D6DB4EB06B509",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/1134793E45D30C33B30D6DB4EB06B509",
+          "tabId": "D68A58AF61704EC270F19934C2F70C81",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/D68A58AF61704EC270F19934C2F70C81",
           "title": "Facebook"
         },
         "sendStatus": "failed_open",
@@ -788,8 +788,8 @@
         "engine": "codex-chrome-cdp",
         "port": 9224,
         "targetUrl": "https://www.facebook.com/EasternMountainSports",
-        "tabId": "B7BD7173DE75ADDE474706E03D47C8A5",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/B7BD7173DE75ADDE474706E03D47C8A5",
+        "tabId": "96022A4BAC9CEB44371BD292FA6077E9",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/96022A4BAC9CEB44371BD292FA6077E9",
         "title": "Facebook"
       },
       "result": {
@@ -803,8 +803,8 @@
           "engine": "codex-chrome-cdp",
           "port": 9224,
           "targetUrl": "https://www.facebook.com/EasternMountainSports",
-          "tabId": "B7BD7173DE75ADDE474706E03D47C8A5",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/B7BD7173DE75ADDE474706E03D47C8A5",
+          "tabId": "96022A4BAC9CEB44371BD292FA6077E9",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/96022A4BAC9CEB44371BD292FA6077E9",
           "title": "Facebook"
         },
         "sendStatus": "failed_open",
@@ -837,8 +837,8 @@
         "engine": "codex-chrome-cdp",
         "port": 9224,
         "targetUrl": "https://www.instagram.com/jaxoutdoor/",
-        "tabId": "295BAC0B98139476DF81915DDE16AD01",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/295BAC0B98139476DF81915DDE16AD01",
+        "tabId": "9D972B4AA6C88D9E04FC40D6C432AE9B",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/9D972B4AA6C88D9E04FC40D6C432AE9B",
         "title": "Instagram"
       },
       "result": {
@@ -852,8 +852,8 @@
           "engine": "codex-chrome-cdp",
           "port": 9224,
           "targetUrl": "https://www.instagram.com/jaxoutdoor/",
-          "tabId": "295BAC0B98139476DF81915DDE16AD01",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/295BAC0B98139476DF81915DDE16AD01",
+          "tabId": "9D972B4AA6C88D9E04FC40D6C432AE9B",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/9D972B4AA6C88D9E04FC40D6C432AE9B",
           "title": "Instagram"
         },
         "sendStatus": "send_unconfirmed",
@@ -885,8 +885,8 @@
         "engine": "codex-chrome-cdp",
         "port": 9224,
         "targetUrl": "https://www.instagram.com/campz.de/",
-        "tabId": "51C2B0BA248C49708998EABEA02CDE58",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/51C2B0BA248C49708998EABEA02CDE58",
+        "tabId": "58491478EFC139C56F6AF10EAF8ED295",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/58491478EFC139C56F6AF10EAF8ED295",
         "title": "Instagram"
       },
       "result": {
@@ -900,8 +900,8 @@
           "engine": "codex-chrome-cdp",
           "port": 9224,
           "targetUrl": "https://www.instagram.com/campz.de/",
-          "tabId": "51C2B0BA248C49708998EABEA02CDE58",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/51C2B0BA248C49708998EABEA02CDE58",
+          "tabId": "58491478EFC139C56F6AF10EAF8ED295",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/58491478EFC139C56F6AF10EAF8ED295",
           "title": "Instagram"
         },
         "sendStatus": "send_unconfirmed",
@@ -931,8 +931,8 @@
         "engine": "codex-chrome-cdp",
         "port": 9224,
         "targetUrl": "https://www.instagram.com/doorout_com/",
-        "tabId": "6E5ADDE7F1166C52827ACDC98547E25A",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/6E5ADDE7F1166C52827ACDC98547E25A",
+        "tabId": "FCD1C5C3ABDDEBE1EB528717A3EA0D11",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/FCD1C5C3ABDDEBE1EB528717A3EA0D11",
         "title": "Instagram"
       },
       "result": {
@@ -946,8 +946,8 @@
           "engine": "codex-chrome-cdp",
           "port": 9224,
           "targetUrl": "https://www.instagram.com/doorout_com/",
-          "tabId": "6E5ADDE7F1166C52827ACDC98547E25A",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/6E5ADDE7F1166C52827ACDC98547E25A",
+          "tabId": "FCD1C5C3ABDDEBE1EB528717A3EA0D11",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/FCD1C5C3ABDDEBE1EB528717A3EA0D11",
           "title": "Instagram"
         },
         "sendStatus": "send_unconfirmed",
@@ -977,8 +977,8 @@
         "engine": "codex-chrome-cdp",
         "port": 9224,
         "targetUrl": "https://www.instagram.com/jaxoutdoor/",
-        "tabId": "778B84812726F928B8A204384E9949B9",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/778B84812726F928B8A204384E9949B9",
+        "tabId": "5554EA6F0EB0FC4B2F762062053DD50E",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/5554EA6F0EB0FC4B2F762062053DD50E",
         "title": "Instagram"
       },
       "result": {
@@ -992,8 +992,8 @@
           "engine": "codex-chrome-cdp",
           "port": 9224,
           "targetUrl": "https://www.instagram.com/jaxoutdoor/",
-          "tabId": "778B84812726F928B8A204384E9949B9",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/778B84812726F928B8A204384E9949B9",
+          "tabId": "5554EA6F0EB0FC4B2F762062053DD50E",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/5554EA6F0EB0FC4B2F762062053DD50E",
           "title": "Instagram"
         },
         "sendStatus": "send_unconfirmed",
@@ -1023,8 +1023,8 @@
         "engine": "codex-chrome-cdp",
         "port": 9224,
         "targetUrl": "https://www.instagram.com/sportler_com/",
-        "tabId": "C874EC533172BADB0840488D4C704F69",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/C874EC533172BADB0840488D4C704F69",
+        "tabId": "27143F7CCB00DC7E3B76910A517473AE",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/27143F7CCB00DC7E3B76910A517473AE",
         "title": "Instagram"
       },
       "result": {
@@ -1038,8 +1038,8 @@
           "engine": "codex-chrome-cdp",
           "port": 9224,
           "targetUrl": "https://www.instagram.com/sportler_com/",
-          "tabId": "C874EC533172BADB0840488D4C704F69",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/C874EC533172BADB0840488D4C704F69",
+          "tabId": "27143F7CCB00DC7E3B76910A517473AE",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/27143F7CCB00DC7E3B76910A517473AE",
           "title": "Instagram"
         },
         "sendStatus": "send_unconfirmed",
@@ -1119,8 +1119,8 @@
         "engine": "codex-chrome-cdp",
         "port": 9224,
         "targetUrl": "https://www.alpinetrek.co.uk/help/contact-us",
-        "tabId": "D8B3CC1BC785853ED447A32493932E03",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/D8B3CC1BC785853ED447A32493932E03",
+        "tabId": "1B83F55BC7D04386BFB0F2E6A489E87B",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/1B83F55BC7D04386BFB0F2E6A489E87B",
         "title": "Attention Required! | Cloudflare"
       },
       "result": {
@@ -1134,8 +1134,8 @@
           "engine": "codex-chrome-cdp",
           "port": 9224,
           "targetUrl": "https://www.alpinetrek.co.uk/help/contact-us",
-          "tabId": "D8B3CC1BC785853ED447A32493932E03",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/D8B3CC1BC785853ED447A32493932E03",
+          "tabId": "1B83F55BC7D04386BFB0F2E6A489E87B",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/1B83F55BC7D04386BFB0F2E6A489E87B",
           "title": "Attention Required! | Cloudflare"
         },
         "sendStatus": "website_contact_unreachable_skip",
@@ -1159,9 +1159,9 @@
         "engine": "codex-chrome-cdp",
         "port": 9224,
         "targetUrl": "https://scandinavianoutdoor.com/help/contact-us",
-        "tabId": "488FD5FA005D9D997E36C77858E66D57",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/488FD5FA005D9D997E36C77858E66D57",
-        "title": ""
+        "tabId": "E2B8B8F46C9C118E8D2A14ED720C7C33",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/E2B8B8F46C9C118E8D2A14ED720C7C33",
+        "title": "Scandinavian Outdoor"
       },
       "result": {
         "ok": false,
@@ -1174,9 +1174,9 @@
           "engine": "codex-chrome-cdp",
           "port": 9224,
           "targetUrl": "https://scandinavianoutdoor.com/help/contact-us",
-          "tabId": "488FD5FA005D9D997E36C77858E66D57",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/488FD5FA005D9D997E36C77858E66D57",
-          "title": ""
+          "tabId": "E2B8B8F46C9C118E8D2A14ED720C7C33",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/E2B8B8F46C9C118E8D2A14ED720C7C33",
+          "title": "Scandinavian Outdoor"
         },
         "sendStatus": "website_contact_unreachable_skip",
         "subject": "FLEXTAIL retail partnership | 2026 assortment",
@@ -1199,8 +1199,8 @@
         "engine": "codex-chrome-cdp",
         "port": 9224,
         "targetUrl": "https://www.snowleader.com/help/contact-us",
-        "tabId": "F58EBEE542792834F2DD6A7DDE5B56BF",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/F58EBEE542792834F2DD6A7DDE5B56BF",
+        "tabId": "BFB6AC9ED991EF701428719B3AACC005",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/BFB6AC9ED991EF701428719B3AACC005",
         "title": "Just a moment..."
       },
       "result": {
@@ -1214,8 +1214,8 @@
           "engine": "codex-chrome-cdp",
           "port": 9224,
           "targetUrl": "https://www.snowleader.com/help/contact-us",
-          "tabId": "F58EBEE542792834F2DD6A7DDE5B56BF",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/F58EBEE542792834F2DD6A7DDE5B56BF",
+          "tabId": "BFB6AC9ED991EF701428719B3AACC005",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/BFB6AC9ED991EF701428719B3AACC005",
           "title": "Just a moment..."
         },
         "sendStatus": "website_contact_unreachable_skip",
@@ -1239,8 +1239,8 @@
         "engine": "codex-chrome-cdp",
         "port": 9224,
         "targetUrl": "https://www.transa.ch/help/contact-us",
-        "tabId": "D20BF36789E301A6AB5487088C1EA4B2",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/D20BF36789E301A6AB5487088C1EA4B2",
+        "tabId": "B48A7FCD5902D37D1FBA40CC38A6E881",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/B48A7FCD5902D37D1FBA40CC38A6E881",
         "title": "High-quality travel and outdoor equipment - Transa.ch"
       },
       "result": {
@@ -1254,8 +1254,8 @@
           "engine": "codex-chrome-cdp",
           "port": 9224,
           "targetUrl": "https://www.transa.ch/help/contact-us",
-          "tabId": "D20BF36789E301A6AB5487088C1EA4B2",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/D20BF36789E301A6AB5487088C1EA4B2",
+          "tabId": "B48A7FCD5902D37D1FBA40CC38A6E881",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/B48A7FCD5902D37D1FBA40CC38A6E881",
           "title": "High-quality travel and outdoor equipment - Transa.ch"
         },
         "sendStatus": "website_contact_unreachable_skip",
@@ -1279,7 +1279,7 @@
         "engine": "codex-chrome-cdp",
         "port": 9224,
         "targetUrl": "https://www.backcountryexperience.com/help/contact-us",
-        "tabId": "4C944646824433BDE32A64C901FA2266",
+        "tabId": "D5E9D04888FAA8B21C2D41EE6FDE88E7",
         "title": "",
         "status": "failed_open",
         "error": "profile_unavailable_or_broken_link",
@@ -1296,7 +1296,7 @@
           "engine": "codex-chrome-cdp",
           "port": 9224,
           "targetUrl": "https://www.backcountryexperience.com/help/contact-us",
-          "tabId": "4C944646824433BDE32A64C901FA2266",
+          "tabId": "D5E9D04888FAA8B21C2D41EE6FDE88E7",
           "title": "",
           "status": "failed_open",
           "error": "profile_unavailable_or_broken_link",
@@ -1306,7 +1306,7 @@
         "subject": "FLEXTAIL retail partnership | 2026 assortment",
         "draft": "Dear Backcountry Experience Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
         "evidence": "website_page_unavailable_404: Not Found\n;website_contact_all_targets_failed:6;contact_path_strategy_v2",
-        "output": "{\"verdict\":\"website_contact_unreachable_skip\",\"evidence\":\"website_page_unavailable_404: Not Found\\n;website_contact_all_targets_failed:6;contact_path_strategy_v2\",\"subject\":\"FLEXTAIL retail partnership | 2026 assortment\",\"draft\":\"Dear Backcountry Experience Team,\\n\\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\\n\\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\\n\\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\\n\\nProduct overview: https://www.flextail.com/\\n\\nBest regards,\\nLeo Liu\\nSales & Operations Director\\nLeo@flextailgear.com\",\"sendStatus\":\"website_contact_unreachable_skip\",\"attempts\":[{\"targetUrl\":\"https://www.backcountryexperience.com/\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control\"},{\"targetUrl\":\"https://www.backcountryexperience.com/pages/contact-us\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control\"},{\"targetUrl\":\"https://www.backcountryexperience.com/pages/contact\",\"sendStatus\":\"failed_open\",\"evidence\":\"website_page_unavailable_404: Not Found\\n\"},{\"targetUrl\":\"https://www.backcountryexperience.com/contact-us\",\"sendStatus\":\"failed_open\",\"evidence\":\"website_page_unavailable_404: 找不到 www.backcountryexperience.com 的网页\\n\\n找不到与以下网址对应的网页：https://www.backcountryexperience.com/contact-us\\n\\nHTTP ERROR 404\\n重新加载\"},{\"targetUrl\":\"https://www.backcountryexperience.com/contact\",\"sendStatus\":\"failed_open\",\"evidence\":\"website_page_unavailable_404: HTTP Status: 404 (not found)\"},{\"targetUrl\":\"https://www.backcountryexperience.com/help/contact-us\",\"sendStatus\":\"failed_open\",\"evidence\":\"website_page_unavailable_404: Not Found\\n\"}],\"nextAction\":\"Official website contact was unreachable or not machine-verifiable. Skip this website route now, note it clearly, and continue with LinkedIn, Facebook, Instagram, or another verified official channel.\"}"
+        "output": "{\"verdict\":\"website_contact_unreachable_skip\",\"evidence\":\"website_page_unavailable_404: Not Found\\n;website_contact_all_targets_failed:6;contact_path_strategy_v2\",\"subject\":\"FLEXTAIL retail partnership | 2026 assortment\",\"draft\":\"Dear Backcountry Experience Team,\\n\\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\\n\\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\\n\\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\\n\\nProduct overview: https://www.flextail.com/\\n\\nBest regards,\\nLeo Liu\\nSales & Operations Director\\nLeo@flextailgear.com\",\"sendStatus\":\"website_contact_unreachable_skip\",\"attempts\":[{\"targetUrl\":\"https://www.backcountryexperience.com/\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control\"},{\"targetUrl\":\"https://www.backcountryexperience.com/pages/contact-us\",\"sendStatus\":\"failed_open\",\"evidence\":\"website_page_unavailable_404: Not Found\\n\"},{\"targetUrl\":\"https://www.backcountryexperience.com/pages/contact\",\"sendStatus\":\"failed_open\",\"evidence\":\"website_page_unavailable_404: Not Found\\n\"},{\"targetUrl\":\"https://www.backcountryexperience.com/contact-us\",\"sendStatus\":\"failed_open\",\"evidence\":\"website_page_unavailable_404: 找不到 www.backcountryexperience.com 的网页\\n\\n找不到与以下网址对应的网页：https://www.backcountryexperience.com/contact-us\\n\\nHTTP ERROR 404\\n重新加载\"},{\"targetUrl\":\"https://www.backcountryexperience.com/contact\",\"sendStatus\":\"failed_open\",\"evidence\":\"website_page_unavailable_404: HTTP Status: 404 (not found)\"},{\"targetUrl\":\"https://www.backcountryexperience.com/help/contact-us\",\"sendStatus\":\"failed_open\",\"evidence\":\"website_page_unavailable_404: Not Found\\n\"}],\"nextAction\":\"Official website contact was unreachable or not machine-verifiable. Skip this website route now, note it clearly, and continue with LinkedIn, Facebook, Instagram, or another verified official channel.\"}"
       }
     },
     {
@@ -1323,8 +1323,8 @@
         "engine": "codex-chrome-cdp",
         "port": 9224,
         "targetUrl": "https://www.outdoorxl.nl/help/contact-us",
-        "tabId": "3F11B18B4FC197372AD01BF6259ADC17",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/3F11B18B4FC197372AD01BF6259ADC17",
+        "tabId": "C89D90E7A782D84096517AF612627BBE",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/C89D90E7A782D84096517AF612627BBE",
         "title": "Just a moment..."
       },
       "result": {
@@ -1338,8 +1338,8 @@
           "engine": "codex-chrome-cdp",
           "port": 9224,
           "targetUrl": "https://www.outdoorxl.nl/help/contact-us",
-          "tabId": "3F11B18B4FC197372AD01BF6259ADC17",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/3F11B18B4FC197372AD01BF6259ADC17",
+          "tabId": "C89D90E7A782D84096517AF612627BBE",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/C89D90E7A782D84096517AF612627BBE",
           "title": "Just a moment..."
         },
         "sendStatus": "website_contact_unreachable_skip",
@@ -1357,14 +1357,14 @@
       "targetUrl": "https://www.spejdersport.dk/",
       "ok": false,
       "sendStatus": "website_contact_unreachable_skip",
-      "evidence": "website_contact_entry_not_verified;contact_entry_clicked:Kontakt os;website_contact_all_targets_failed:6;contact_path_strategy_v2",
+      "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:6;contact_path_strategy_v2",
       "chromeOpen": {
         "ok": true,
         "engine": "codex-chrome-cdp",
         "port": 9224,
         "targetUrl": "https://www.spejdersport.dk/help/contact-us",
-        "tabId": "C7762237E53FF6C84CE16A402CDBD452",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/C7762237E53FF6C84CE16A402CDBD452",
+        "tabId": "D96C76359C268FDA89757966383299D8",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/D96C76359C268FDA89757966383299D8",
         "title": "Spejder Sport A/S"
       },
       "result": {
@@ -1378,15 +1378,15 @@
           "engine": "codex-chrome-cdp",
           "port": 9224,
           "targetUrl": "https://www.spejdersport.dk/help/contact-us",
-          "tabId": "C7762237E53FF6C84CE16A402CDBD452",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/C7762237E53FF6C84CE16A402CDBD452",
+          "tabId": "D96C76359C268FDA89757966383299D8",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/D96C76359C268FDA89757966383299D8",
           "title": "Spejder Sport A/S"
         },
         "sendStatus": "website_contact_unreachable_skip",
         "subject": "FLEXTAIL retail partnership | 2026 assortment",
         "draft": "Dear Spejder Sport Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
-        "evidence": "website_contact_entry_not_verified;contact_entry_clicked:Kontakt os;website_contact_all_targets_failed:6;contact_path_strategy_v2",
-        "output": "{\"verdict\":\"website_contact_unreachable_skip\",\"evidence\":\"website_contact_entry_not_verified;contact_entry_clicked:Kontakt os;website_contact_all_targets_failed:6;contact_path_strategy_v2\",\"nextAction\":\"Contact page opened, but no verified form, mailto link, vendor/business route, or clickable Contact Us path was detected. Continue manually before marking the lead ready.\",\"subject\":\"FLEXTAIL retail partnership | 2026 assortment\",\"draft\":\"Dear Spejder Sport Team,\\n\\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\\n\\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\\n\\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\\n\\nProduct overview: https://www.flextail.com/\\n\\nBest regards,\\nLeo Liu\\nSales & Operations Director\\nLeo@flextailgear.com\",\"sendStatus\":\"website_contact_unreachable_skip\",\"attempts\":[{\"targetUrl\":\"https://www.spejdersport.dk/\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;contact_entry_clicked:Kontakt os\"},{\"targetUrl\":\"https://www.spejdersport.dk/pages/contact-us\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control\"},{\"targetUrl\":\"https://www.spejdersport.dk/pages/contact\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;contact_entry_clicked:Kontakt os\"},{\"targetUrl\":\"https://www.spejdersport.dk/contact-us\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control\"},{\"targetUrl\":\"https://www.spejdersport.dk/contact\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control\"},{\"targetUrl\":\"https://www.spejdersport.dk/help/contact-us\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;contact_entry_clicked:Kontakt os\"}]}"
+        "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:6;contact_path_strategy_v2",
+        "output": "{\"verdict\":\"website_contact_unreachable_skip\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:6;contact_path_strategy_v2\",\"nextAction\":\"Contact page opened, but no verified form, mailto link, vendor/business route, or clickable Contact Us path was detected. Continue manually before marking the lead ready.\",\"subject\":\"FLEXTAIL retail partnership | 2026 assortment\",\"draft\":\"Dear Spejder Sport Team,\\n\\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\\n\\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\\n\\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\\n\\nProduct overview: https://www.flextail.com/\\n\\nBest regards,\\nLeo Liu\\nSales & Operations Director\\nLeo@flextailgear.com\",\"sendStatus\":\"website_contact_unreachable_skip\",\"attempts\":[{\"targetUrl\":\"https://www.spejdersport.dk/\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;contact_entry_clicked:Kontakt os\"},{\"targetUrl\":\"https://www.spejdersport.dk/pages/contact-us\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;contact_entry_clicked:Kontakt os\"},{\"targetUrl\":\"https://www.spejdersport.dk/pages/contact\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;contact_entry_clicked:Kontakt os\"},{\"targetUrl\":\"https://www.spejdersport.dk/contact-us\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;contact_entry_clicked:Kontakt os\"},{\"targetUrl\":\"https://www.spejdersport.dk/contact\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control\"},{\"targetUrl\":\"https://www.spejdersport.dk/help/contact-us\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control\"}]}"
       }
     },
     {
@@ -1403,8 +1403,8 @@
         "engine": "codex-chrome-cdp",
         "port": 9224,
         "targetUrl": "https://latulippe.com/help/contact-us",
-        "tabId": "F1828BCF77E655DD7978DA49BF83EBE5",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/F1828BCF77E655DD7978DA49BF83EBE5",
+        "tabId": "563CE649B901F73C6F9B81D5B7F9EE44",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/563CE649B901F73C6F9B81D5B7F9EE44",
         "title": "Attention Required! | Cloudflare"
       },
       "result": {
@@ -1418,8 +1418,8 @@
           "engine": "codex-chrome-cdp",
           "port": 9224,
           "targetUrl": "https://latulippe.com/help/contact-us",
-          "tabId": "F1828BCF77E655DD7978DA49BF83EBE5",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/F1828BCF77E655DD7978DA49BF83EBE5",
+          "tabId": "563CE649B901F73C6F9B81D5B7F9EE44",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/563CE649B901F73C6F9B81D5B7F9EE44",
           "title": "Attention Required! | Cloudflare"
         },
         "sendStatus": "website_contact_unreachable_skip",
@@ -1443,8 +1443,8 @@
         "engine": "codex-chrome-cdp",
         "port": 9224,
         "targetUrl": "https://www.sportpursuit.com/help/contact-us",
-        "tabId": "6F98B072894E3222A830AED6DF7A1EB9",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/6F98B072894E3222A830AED6DF7A1EB9",
+        "tabId": "0DE2C00984972EE679FDEDC7739F91C4",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/0DE2C00984972EE679FDEDC7739F91C4",
         "title": ""
       },
       "result": {
@@ -1458,8 +1458,8 @@
           "engine": "codex-chrome-cdp",
           "port": 9224,
           "targetUrl": "https://www.sportpursuit.com/help/contact-us",
-          "tabId": "6F98B072894E3222A830AED6DF7A1EB9",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/6F98B072894E3222A830AED6DF7A1EB9",
+          "tabId": "0DE2C00984972EE679FDEDC7739F91C4",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/0DE2C00984972EE679FDEDC7739F91C4",
           "title": ""
         },
         "sendStatus": "website_contact_unreachable_skip",
@@ -1483,8 +1483,8 @@
         "engine": "codex-chrome-cdp",
         "port": 9224,
         "targetUrl": "https://utemountaineer.com/help/contact-us",
-        "tabId": "AA2D9F28250E0732A0987F7FA6AD0757",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/AA2D9F28250E0732A0987F7FA6AD0757",
+        "tabId": "593BF6232C9C4CBB34026288A097DE6B",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/593BF6232C9C4CBB34026288A097DE6B",
         "title": "Ute Mountaineer"
       },
       "result": {
@@ -1498,8 +1498,8 @@
           "engine": "codex-chrome-cdp",
           "port": 9224,
           "targetUrl": "https://utemountaineer.com/help/contact-us",
-          "tabId": "AA2D9F28250E0732A0987F7FA6AD0757",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/AA2D9F28250E0732A0987F7FA6AD0757",
+          "tabId": "593BF6232C9C4CBB34026288A097DE6B",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/593BF6232C9C4CBB34026288A097DE6B",
           "title": "Ute Mountaineer"
         },
         "sendStatus": "website_contact_unreachable_skip",
@@ -1523,8 +1523,8 @@
         "engine": "codex-chrome-cdp",
         "port": 9224,
         "targetUrl": "https://varuste.net/help/contact-us",
-        "tabId": "F9F358526FAFB0E1AF062E0297188FA1",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/F9F358526FAFB0E1AF062E0297188FA1",
+        "tabId": "5EF905CBCBFC5896E1271D1E42EEDFDA",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/5EF905CBCBFC5896E1271D1E42EEDFDA",
         "title": "Ulkoiluvarusteet netistä | Varuste.net"
       },
       "result": {
@@ -1538,8 +1538,8 @@
           "engine": "codex-chrome-cdp",
           "port": 9224,
           "targetUrl": "https://varuste.net/help/contact-us",
-          "tabId": "F9F358526FAFB0E1AF062E0297188FA1",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/F9F358526FAFB0E1AF062E0297188FA1",
+          "tabId": "5EF905CBCBFC5896E1271D1E42EEDFDA",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/5EF905CBCBFC5896E1271D1E42EEDFDA",
           "title": "Ulkoiluvarusteet netistä | Varuste.net"
         },
         "sendStatus": "website_contact_unreachable_skip",
@@ -1563,8 +1563,8 @@
         "engine": "codex-chrome-cdp",
         "port": 9224,
         "targetUrl": "https://www.hikingshack.com/help/contact-us",
-        "tabId": "A654F7EFD6B2D64EDF79BC4F7B8D8B00",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/A654F7EFD6B2D64EDF79BC4F7B8D8B00",
+        "tabId": "F628C3844ED267CBF13209048E14F4C9",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/F628C3844ED267CBF13209048E14F4C9",
         "title": "Just a moment..."
       },
       "result": {
@@ -1578,8 +1578,8 @@
           "engine": "codex-chrome-cdp",
           "port": 9224,
           "targetUrl": "https://www.hikingshack.com/help/contact-us",
-          "tabId": "A654F7EFD6B2D64EDF79BC4F7B8D8B00",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/A654F7EFD6B2D64EDF79BC4F7B8D8B00",
+          "tabId": "F628C3844ED267CBF13209048E14F4C9",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/F628C3844ED267CBF13209048E14F4C9",
           "title": "Just a moment..."
         },
         "sendStatus": "website_contact_unreachable_skip",
@@ -1603,8 +1603,8 @@
         "engine": "codex-chrome-cdp",
         "port": 9224,
         "targetUrl": "https://www.bentgate.com/help/contact-us",
-        "tabId": "9820D1EC21763546AE11300CCF101869",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/9820D1EC21763546AE11300CCF101869",
+        "tabId": "FB65BB6D8244E32A99E90F9DAEDA96BF",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/FB65BB6D8244E32A99E90F9DAEDA96BF",
         "title": "Bentgate Mountaineering in Golden, CO - Bentgate Mountaineering"
       },
       "result": {
@@ -1618,15 +1618,15 @@
           "engine": "codex-chrome-cdp",
           "port": 9224,
           "targetUrl": "https://www.bentgate.com/help/contact-us",
-          "tabId": "9820D1EC21763546AE11300CCF101869",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/9820D1EC21763546AE11300CCF101869",
+          "tabId": "FB65BB6D8244E32A99E90F9DAEDA96BF",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/FB65BB6D8244E32A99E90F9DAEDA96BF",
           "title": "Bentgate Mountaineering in Golden, CO - Bentgate Mountaineering"
         },
         "sendStatus": "website_contact_unreachable_skip",
         "subject": "FLEXTAIL retail partnership | 2026 assortment",
         "draft": "Dear Bentgate Mountaineering Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
         "evidence": "website_contact_entry_not_verified;contact_entry_clicked:https://www.bentgate.com/help/contact-us/;website_contact_all_targets_failed:6;contact_path_strategy_v2",
-        "output": "{\"verdict\":\"website_contact_unreachable_skip\",\"evidence\":\"website_contact_entry_not_verified;contact_entry_clicked:https://www.bentgate.com/help/contact-us/;website_contact_all_targets_failed:6;contact_path_strategy_v2\",\"nextAction\":\"Contact page opened, but no verified form, mailto link, vendor/business route, or clickable Contact Us path was detected. Continue manually before marking the lead ready.\",\"subject\":\"FLEXTAIL retail partnership | 2026 assortment\",\"draft\":\"Dear Bentgate Mountaineering Team,\\n\\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\\n\\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\\n\\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\\n\\nProduct overview: https://www.flextail.com/\\n\\nBest regards,\\nLeo Liu\\nSales & Operations Director\\nLeo@flextailgear.com\",\"sendStatus\":\"website_contact_unreachable_skip\",\"attempts\":[{\"targetUrl\":\"https://www.bentgate.com/\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control\"},{\"targetUrl\":\"https://www.bentgate.com/pages/contact-us\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;contact_entry_clicked:https://www.bentgate.com/pages/contact-us/\"},{\"targetUrl\":\"https://www.bentgate.com/pages/contact\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;contact_entry_clicked:https://www.bentgate.com/pages/contact/\"},{\"targetUrl\":\"https://www.bentgate.com/contact-us\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;contact_entry_clicked:https://www.bentgate.com/contact-us/\"},{\"targetUrl\":\"https://www.bentgate.com/contact\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;contact_entry_clicked:https://www.bentgate.com/contact/\"},{\"targetUrl\":\"https://www.bentgate.com/help/contact-us\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;contact_entry_clicked:https://www.bentgate.com/help/contact-us/\"}]}"
+        "output": "{\"verdict\":\"website_contact_unreachable_skip\",\"evidence\":\"website_contact_entry_not_verified;contact_entry_clicked:https://www.bentgate.com/help/contact-us/;website_contact_all_targets_failed:6;contact_path_strategy_v2\",\"nextAction\":\"Contact page opened, but no verified form, mailto link, vendor/business route, or clickable Contact Us path was detected. Continue manually before marking the lead ready.\",\"subject\":\"FLEXTAIL retail partnership | 2026 assortment\",\"draft\":\"Dear Bentgate Mountaineering Team,\\n\\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\\n\\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\\n\\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\\n\\nProduct overview: https://www.flextail.com/\\n\\nBest regards,\\nLeo Liu\\nSales & Operations Director\\nLeo@flextailgear.com\",\"sendStatus\":\"website_contact_unreachable_skip\",\"attempts\":[{\"targetUrl\":\"https://www.bentgate.com/\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;contact_entry_clicked:EMAIL US\"},{\"targetUrl\":\"https://www.bentgate.com/pages/contact-us\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;contact_entry_clicked:https://www.bentgate.com/pages/contact-us/\"},{\"targetUrl\":\"https://www.bentgate.com/pages/contact\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;contact_entry_clicked:https://www.bentgate.com/pages/contact/\"},{\"targetUrl\":\"https://www.bentgate.com/contact-us\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;contact_entry_clicked:https://www.bentgate.com/contact-us/\"},{\"targetUrl\":\"https://www.bentgate.com/contact\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;contact_entry_clicked:https://www.bentgate.com/contact/\"},{\"targetUrl\":\"https://www.bentgate.com/help/contact-us\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;contact_entry_clicked:https://www.bentgate.com/help/contact-us/\"}]}"
       }
     },
     {
@@ -1643,8 +1643,8 @@
         "engine": "codex-chrome-cdp",
         "port": 9224,
         "targetUrl": "https://thegreatoutdoorshop.com/help/contact-us",
-        "tabId": "A44D2614248B17D6ED9E3CF6DE97BD26",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/A44D2614248B17D6ED9E3CF6DE97BD26",
+        "tabId": "0568EB207CC8C8EECD467CD00C31C521",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/0568EB207CC8C8EECD467CD00C31C521",
         "title": "thegreatoutdoorshop.com"
       },
       "result": {
@@ -1658,8 +1658,8 @@
           "engine": "codex-chrome-cdp",
           "port": 9224,
           "targetUrl": "https://thegreatoutdoorshop.com/help/contact-us",
-          "tabId": "A44D2614248B17D6ED9E3CF6DE97BD26",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/A44D2614248B17D6ED9E3CF6DE97BD26",
+          "tabId": "0568EB207CC8C8EECD467CD00C31C521",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/0568EB207CC8C8EECD467CD00C31C521",
           "title": "thegreatoutdoorshop.com"
         },
         "sendStatus": "website_contact_unreachable_skip",
@@ -1683,7 +1683,7 @@
         "engine": "codex-chrome-cdp",
         "port": 9224,
         "targetUrl": "https://www.gearwest.com/help/contact-us",
-        "tabId": "DC0319956F51E1055A5973741559B181",
+        "tabId": "4B048E188ED8909649BAF477988F55D1",
         "title": "404 Not Found – Gear West",
         "status": "failed_open",
         "error": "profile_unavailable_or_broken_link",
@@ -1700,7 +1700,7 @@
           "engine": "codex-chrome-cdp",
           "port": 9224,
           "targetUrl": "https://www.gearwest.com/help/contact-us",
-          "tabId": "DC0319956F51E1055A5973741559B181",
+          "tabId": "4B048E188ED8909649BAF477988F55D1",
           "title": "404 Not Found – Gear West",
           "status": "failed_open",
           "error": "profile_unavailable_or_broken_link",
@@ -1727,8 +1727,8 @@
         "engine": "codex-chrome-cdp",
         "port": 9224,
         "targetUrl": "https://www.facebook.com/aboveandbeyondireland",
-        "tabId": "4F5BB87BD34C58E98E8331808527FDF3",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/4F5BB87BD34C58E98E8331808527FDF3",
+        "tabId": "16454F5E081068A3F168EB34429BDA0E",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/16454F5E081068A3F168EB34429BDA0E",
         "title": "Facebook"
       },
       "result": {
@@ -1742,8 +1742,8 @@
           "engine": "codex-chrome-cdp",
           "port": 9224,
           "targetUrl": "https://www.facebook.com/aboveandbeyondireland",
-          "tabId": "4F5BB87BD34C58E98E8331808527FDF3",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/4F5BB87BD34C58E98E8331808527FDF3",
+          "tabId": "16454F5E081068A3F168EB34429BDA0E",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/16454F5E081068A3F168EB34429BDA0E",
           "title": "Facebook"
         },
         "sendStatus": "failed_open",
@@ -1776,8 +1776,8 @@
         "engine": "codex-chrome-cdp",
         "port": 9224,
         "targetUrl": "https://www.facebook.com/Atmosphere",
-        "tabId": "1134793E45D30C33B30D6DB4EB06B509",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/1134793E45D30C33B30D6DB4EB06B509",
+        "tabId": "D68A58AF61704EC270F19934C2F70C81",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/D68A58AF61704EC270F19934C2F70C81",
         "title": "Facebook"
       },
       "result": {
@@ -1791,8 +1791,8 @@
           "engine": "codex-chrome-cdp",
           "port": 9224,
           "targetUrl": "https://www.facebook.com/Atmosphere",
-          "tabId": "1134793E45D30C33B30D6DB4EB06B509",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/1134793E45D30C33B30D6DB4EB06B509",
+          "tabId": "D68A58AF61704EC270F19934C2F70C81",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/D68A58AF61704EC270F19934C2F70C81",
           "title": "Facebook"
         },
         "sendStatus": "failed_open",
@@ -1825,8 +1825,8 @@
         "engine": "codex-chrome-cdp",
         "port": 9224,
         "targetUrl": "https://www.facebook.com/EasternMountainSports",
-        "tabId": "B7BD7173DE75ADDE474706E03D47C8A5",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/B7BD7173DE75ADDE474706E03D47C8A5",
+        "tabId": "96022A4BAC9CEB44371BD292FA6077E9",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/96022A4BAC9CEB44371BD292FA6077E9",
         "title": "Facebook"
       },
       "result": {
@@ -1840,8 +1840,8 @@
           "engine": "codex-chrome-cdp",
           "port": 9224,
           "targetUrl": "https://www.facebook.com/EasternMountainSports",
-          "tabId": "B7BD7173DE75ADDE474706E03D47C8A5",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/B7BD7173DE75ADDE474706E03D47C8A5",
+          "tabId": "96022A4BAC9CEB44371BD292FA6077E9",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/96022A4BAC9CEB44371BD292FA6077E9",
           "title": "Facebook"
         },
         "sendStatus": "failed_open",
@@ -1874,8 +1874,8 @@
         "engine": "codex-chrome-cdp",
         "port": 9224,
         "targetUrl": "https://www.instagram.com/jaxoutdoor/",
-        "tabId": "295BAC0B98139476DF81915DDE16AD01",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/295BAC0B98139476DF81915DDE16AD01",
+        "tabId": "9D972B4AA6C88D9E04FC40D6C432AE9B",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/9D972B4AA6C88D9E04FC40D6C432AE9B",
         "title": "Instagram"
       },
       "result": {
@@ -1889,8 +1889,8 @@
           "engine": "codex-chrome-cdp",
           "port": 9224,
           "targetUrl": "https://www.instagram.com/jaxoutdoor/",
-          "tabId": "295BAC0B98139476DF81915DDE16AD01",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/295BAC0B98139476DF81915DDE16AD01",
+          "tabId": "9D972B4AA6C88D9E04FC40D6C432AE9B",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/9D972B4AA6C88D9E04FC40D6C432AE9B",
           "title": "Instagram"
         },
         "sendStatus": "send_unconfirmed",
@@ -1922,8 +1922,8 @@
         "engine": "codex-chrome-cdp",
         "port": 9224,
         "targetUrl": "https://www.instagram.com/campz.de/",
-        "tabId": "51C2B0BA248C49708998EABEA02CDE58",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/51C2B0BA248C49708998EABEA02CDE58",
+        "tabId": "58491478EFC139C56F6AF10EAF8ED295",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/58491478EFC139C56F6AF10EAF8ED295",
         "title": "Instagram"
       },
       "result": {
@@ -1937,8 +1937,8 @@
           "engine": "codex-chrome-cdp",
           "port": 9224,
           "targetUrl": "https://www.instagram.com/campz.de/",
-          "tabId": "51C2B0BA248C49708998EABEA02CDE58",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/51C2B0BA248C49708998EABEA02CDE58",
+          "tabId": "58491478EFC139C56F6AF10EAF8ED295",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/58491478EFC139C56F6AF10EAF8ED295",
           "title": "Instagram"
         },
         "sendStatus": "send_unconfirmed",
@@ -1968,8 +1968,8 @@
         "engine": "codex-chrome-cdp",
         "port": 9224,
         "targetUrl": "https://www.instagram.com/doorout_com/",
-        "tabId": "6E5ADDE7F1166C52827ACDC98547E25A",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/6E5ADDE7F1166C52827ACDC98547E25A",
+        "tabId": "FCD1C5C3ABDDEBE1EB528717A3EA0D11",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/FCD1C5C3ABDDEBE1EB528717A3EA0D11",
         "title": "Instagram"
       },
       "result": {
@@ -1983,8 +1983,8 @@
           "engine": "codex-chrome-cdp",
           "port": 9224,
           "targetUrl": "https://www.instagram.com/doorout_com/",
-          "tabId": "6E5ADDE7F1166C52827ACDC98547E25A",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/6E5ADDE7F1166C52827ACDC98547E25A",
+          "tabId": "FCD1C5C3ABDDEBE1EB528717A3EA0D11",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/FCD1C5C3ABDDEBE1EB528717A3EA0D11",
           "title": "Instagram"
         },
         "sendStatus": "send_unconfirmed",
@@ -2014,8 +2014,8 @@
         "engine": "codex-chrome-cdp",
         "port": 9224,
         "targetUrl": "https://www.instagram.com/jaxoutdoor/",
-        "tabId": "778B84812726F928B8A204384E9949B9",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/778B84812726F928B8A204384E9949B9",
+        "tabId": "5554EA6F0EB0FC4B2F762062053DD50E",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/5554EA6F0EB0FC4B2F762062053DD50E",
         "title": "Instagram"
       },
       "result": {
@@ -2029,8 +2029,8 @@
           "engine": "codex-chrome-cdp",
           "port": 9224,
           "targetUrl": "https://www.instagram.com/jaxoutdoor/",
-          "tabId": "778B84812726F928B8A204384E9949B9",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/778B84812726F928B8A204384E9949B9",
+          "tabId": "5554EA6F0EB0FC4B2F762062053DD50E",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/5554EA6F0EB0FC4B2F762062053DD50E",
           "title": "Instagram"
         },
         "sendStatus": "send_unconfirmed",
@@ -2060,8 +2060,8 @@
         "engine": "codex-chrome-cdp",
         "port": 9224,
         "targetUrl": "https://www.instagram.com/sportler_com/",
-        "tabId": "C874EC533172BADB0840488D4C704F69",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/C874EC533172BADB0840488D4C704F69",
+        "tabId": "27143F7CCB00DC7E3B76910A517473AE",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/27143F7CCB00DC7E3B76910A517473AE",
         "title": "Instagram"
       },
       "result": {
@@ -2075,8 +2075,8 @@
           "engine": "codex-chrome-cdp",
           "port": 9224,
           "targetUrl": "https://www.instagram.com/sportler_com/",
-          "tabId": "C874EC533172BADB0840488D4C704F69",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/C874EC533172BADB0840488D4C704F69",
+          "tabId": "27143F7CCB00DC7E3B76910A517473AE",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/27143F7CCB00DC7E3B76910A517473AE",
           "title": "Instagram"
         },
         "sendStatus": "send_unconfirmed",
@@ -2094,6 +2094,12 @@
     }
   ],
   "skipped": [
+    {
+      "id": "google-customer-obelink-website-contact",
+      "company": "Obelink",
+      "action": "verify_target",
+      "reason": "homepage_only_contact_path_requires_verification"
+    },
     {
       "id": "google-customer-au-vieux-campeur-website-contact",
       "company": "Au Vieux Campeur",
@@ -2137,6 +2143,12 @@
       "reason": "homepage_only_contact_path_requires_verification"
     },
     {
+      "id": "google-customer-de-wit-schijndel-website-contact",
+      "company": "De Wit Schijndel",
+      "action": "verify_target",
+      "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
       "id": "google-customer-ekosport-website-contact",
       "company": "Ekosport",
       "action": "verify_target",
@@ -2157,6 +2169,12 @@
     {
       "id": "google-customer-hardloop-website-contact",
       "company": "Hardloop",
+      "action": "verify_target",
+      "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
+      "id": "google-customer-kampeerwereld-hendriks-website-contact",
+      "company": "Kampeerwereld Hendriks",
       "action": "verify_target",
       "reason": "homepage_only_contact_path_requires_verification"
     },
@@ -2187,126 +2205,6 @@
     {
       "id": "google-customer-avidmax-outfitters-website-contact",
       "company": "AvidMax Outfitters",
-      "action": "verify_target",
-      "reason": "homepage_only_contact_path_requires_verification"
-    },
-    {
-      "id": "google-customer-campz-facebook",
-      "company": "Campz",
-      "action": "develop",
-      "reason": "concrete_google_discovered_major_customer_facebook"
-    },
-    {
-      "id": "google-customer-doorout-facebook",
-      "company": "Doorout",
-      "action": "develop",
-      "reason": "concrete_google_discovered_major_customer_facebook"
-    },
-    {
-      "id": "google-customer-ld-mountain-centre-facebook",
-      "company": "LD Mountain Centre",
-      "action": "develop",
-      "reason": "concrete_google_discovered_major_customer_facebook"
-    },
-    {
-      "id": "google-customer-tiso-facebook",
-      "company": "Tiso",
-      "action": "develop",
-      "reason": "concrete_google_discovered_major_customer_facebook"
-    },
-    {
-      "id": "google-customer-rock-creek-facebook",
-      "company": "Rock/Creek",
-      "action": "develop",
-      "reason": "concrete_google_discovered_major_customer_facebook"
-    },
-    {
-      "id": "google-customer-72hours-facebook",
-      "company": "72hours",
-      "action": "develop",
-      "reason": "concrete_google_discovered_major_customer_facebook"
-    },
-    {
-      "id": "google-customer-moosejaw-facebook",
-      "company": "Moosejaw",
-      "action": "develop",
-      "reason": "concrete_google_discovered_major_customer_facebook"
-    },
-    {
-      "id": "google-customer-the-mountaineer-facebook",
-      "company": "The Mountaineer",
-      "action": "develop",
-      "reason": "concrete_google_discovered_major_customer_facebook"
-    },
-    {
-      "id": "google-customer-8a-pl-instagram",
-      "company": "8a.pl",
-      "action": "develop",
-      "reason": "concrete_google_discovered_major_customer_instagram"
-    },
-    {
-      "id": "google-customer-above-and-beyond-instagram",
-      "company": "Above and Beyond",
-      "action": "develop",
-      "reason": "concrete_google_discovered_major_customer_instagram"
-    },
-    {
-      "id": "google-customer-ld-mountain-centre-instagram",
-      "company": "LD Mountain Centre",
-      "action": "develop",
-      "reason": "concrete_google_discovered_major_customer_instagram"
-    },
-    {
-      "id": "google-customer-sklep-podroznika-instagram",
-      "company": "Sklep Podroznika",
-      "action": "develop",
-      "reason": "concrete_google_discovered_major_customer_instagram"
-    },
-    {
-      "id": "google-customer-tiso-instagram",
-      "company": "Tiso",
-      "action": "develop",
-      "reason": "concrete_google_discovered_major_customer_instagram"
-    },
-    {
-      "id": "google-customer-rock-creek-instagram",
-      "company": "Rock/Creek",
-      "action": "develop",
-      "reason": "concrete_google_discovered_major_customer_instagram"
-    },
-    {
-      "id": "google-customer-72hours-instagram",
-      "company": "72hours",
-      "action": "develop",
-      "reason": "concrete_google_discovered_major_customer_instagram"
-    },
-    {
-      "id": "google-customer-atmosphere-instagram",
-      "company": "Atmosphere",
-      "action": "develop",
-      "reason": "concrete_google_discovered_major_customer_instagram"
-    },
-    {
-      "id": "google-customer-the-mountaineer-instagram",
-      "company": "The Mountaineer",
-      "action": "develop",
-      "reason": "concrete_google_discovered_major_customer_instagram"
-    },
-    {
-      "id": "google-customer-obelink-website-contact",
-      "company": "Obelink",
-      "action": "verify_target",
-      "reason": "homepage_only_contact_path_requires_verification"
-    },
-    {
-      "id": "google-customer-de-wit-schijndel-website-contact",
-      "company": "De Wit Schijndel",
-      "action": "verify_target",
-      "reason": "homepage_only_contact_path_requires_verification"
-    },
-    {
-      "id": "google-customer-kampeerwereld-hendriks-website-contact",
-      "company": "Kampeerwereld Hendriks",
       "action": "verify_target",
       "reason": "homepage_only_contact_path_requires_verification"
     },
@@ -2365,14 +2263,116 @@
       "reason": "official_website_contact_channel"
     },
     {
+      "id": "google-customer-campz-facebook",
+      "company": "Campz",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_facebook"
+    },
+    {
+      "id": "google-customer-doorout-facebook",
+      "company": "Doorout",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_facebook"
+    },
+    {
+      "id": "google-customer-ld-mountain-centre-facebook",
+      "company": "LD Mountain Centre",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_facebook"
+    },
+    {
+      "id": "google-customer-tiso-facebook",
+      "company": "Tiso",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_facebook"
+    },
+    {
+      "id": "google-customer-rock-creek-facebook",
+      "company": "Rock/Creek",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_facebook"
+    },
+    {
+      "id": "google-customer-72hours-facebook",
+      "company": "72hours",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_facebook"
+    },
+    {
+      "id": "google-customer-moosejaw-facebook",
+      "company": "Moosejaw",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_facebook"
+    },
+    {
+      "id": "google-customer-the-mountaineer-facebook",
+      "company": "The Mountaineer",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_facebook"
+    },
+    {
       "id": "google-customer-tentworld-nz-facebook",
       "company": "Tentworld NZ",
       "action": "develop",
       "reason": "concrete_google_discovered_major_customer_facebook"
     },
     {
+      "id": "google-customer-8a-pl-instagram",
+      "company": "8a.pl",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_instagram"
+    },
+    {
+      "id": "google-customer-above-and-beyond-instagram",
+      "company": "Above and Beyond",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_instagram"
+    },
+    {
+      "id": "google-customer-ld-mountain-centre-instagram",
+      "company": "LD Mountain Centre",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_instagram"
+    },
+    {
       "id": "google-customer-outdoor-specialist-instagram",
       "company": "Outdoor Specialist",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_instagram"
+    },
+    {
+      "id": "google-customer-sklep-podroznika-instagram",
+      "company": "Sklep Podroznika",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_instagram"
+    },
+    {
+      "id": "google-customer-tiso-instagram",
+      "company": "Tiso",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_instagram"
+    },
+    {
+      "id": "google-customer-rock-creek-instagram",
+      "company": "Rock/Creek",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_instagram"
+    },
+    {
+      "id": "google-customer-72hours-instagram",
+      "company": "72hours",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_instagram"
+    },
+    {
+      "id": "google-customer-atmosphere-instagram",
+      "company": "Atmosphere",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_instagram"
+    },
+    {
+      "id": "google-customer-the-mountaineer-instagram",
+      "company": "The Mountaineer",
       "action": "develop",
       "reason": "concrete_google_discovered_major_customer_instagram"
     },
@@ -2978,16 +2978,16 @@
   ],
   "systemRefresh": {
     "ok": true,
-    "stdout": "{\n  \"date\": \"2026-07-28\",\n  \"summary\": {\n    \"totalLeads\": 16,\n    \"highIcp\": 16,\n    \"readyToDevelop\": 28,\n    \"dueNow\": 89,\n    \"visibleTodayQueue\": 40,\n    \"potentialPool\": 89,\n    \"potentialPoolTarget\": 100,\n    \"customerTableHighIcp\": 24,\n    \"refillNeeded\": 11,\n    \"googleDiscovered\": 65,\n    \"facebookDiscovered\": 13,\n    \"websiteContactDiscovered\": 37,\n    \"scheduledLater\": 0,\n    \"cooldown\": 30,\n    \"emailPriority\": 0,\n    \"openAgencyMarket\": 15,\n    \"exclusiveAgencySkipped\": 1,\n    \"needsVerification\": 0,\n    \"retainedLowIcp\": 0\n  },\n  \"bugErrors\": 0,\n  \"queueFile\": \"E:\\\\New project\\\\outreach-dashboard\\\\daily-runs\\\\2026-07-28-daily-automation.json\",\n  \"csvFile\": \"E:\\\\New project\\\\outreach-dashboard\\\\daily-runs\\\\2026-07-28-daily-queue.csv\"\n}",
+    "stdout": "{\n  \"date\": \"2026-07-29\",\n  \"summary\": {\n    \"totalLeads\": 16,\n    \"highIcp\": 16,\n    \"readyToDevelop\": 28,\n    \"dueNow\": 89,\n    \"visibleTodayQueue\": 40,\n    \"potentialPool\": 89,\n    \"potentialPoolTarget\": 100,\n    \"customerTableHighIcp\": 24,\n    \"refillNeeded\": 11,\n    \"googleDiscovered\": 65,\n    \"facebookDiscovered\": 13,\n    \"websiteContactDiscovered\": 37,\n    \"scheduledLater\": 0,\n    \"cooldown\": 30,\n    \"emailPriority\": 0,\n    \"openAgencyMarket\": 15,\n    \"exclusiveAgencySkipped\": 1,\n    \"needsVerification\": 0,\n    \"retainedLowIcp\": 0\n  },\n  \"bugErrors\": 0,\n  \"queueFile\": \"E:\\\\New project\\\\outreach-dashboard\\\\daily-runs\\\\2026-07-29-daily-automation.json\",\n  \"csvFile\": \"E:\\\\New project\\\\outreach-dashboard\\\\daily-runs\\\\2026-07-29-daily-queue.csv\"\n}",
     "stderr": "",
     "error": "",
     "visibility": {
-      "updatedAt": "2026-07-28T14:21:19.516Z",
+      "updatedAt": "2026-07-28T17:21:10.418Z",
       "source": "main-refreshDailyAutomationArtifacts",
-      "runDate": "2026-07-28",
-      "artifactGeneratedAt": "2026-07-28T14:21:18.935Z",
-      "executionGeneratedAt": "2026-07-28T13:12:51.290Z",
-      "githubSyncUpdatedAt": "2026-07-28T13:13:03.279Z",
+      "runDate": "2026-07-29",
+      "artifactGeneratedAt": "2026-07-28T17:21:09.843Z",
+      "executionGeneratedAt": "2026-07-28T16:12:51.378Z",
+      "githubSyncUpdatedAt": "2026-07-28T14:21:39.849Z",
       "counts": {
         "dailyQueue": 89,
         "googleDiscovered": 65,
@@ -3049,5 +3049,5 @@
       "ALIBABA_SMTP_SECURITY_PASSWORD"
     ]
   },
-  "completedAt": "2026-07-28T14:21:19.658Z"
+  "completedAt": "2026-07-28T17:21:10.573Z"
 }
