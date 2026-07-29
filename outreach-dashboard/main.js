@@ -321,6 +321,17 @@ function blockingAutomationResultFor(item) {
       };
     }
   }
+  const sameDayFailedAttempts = results
+    .filter(result => result && result.status === 'failed_open' && isSameAutomationDay(result.timestamp))
+    .filter(result => setsIntersect(exactKeys, automationExactKeys(result))
+      || (setsIntersect(companyKeys, automationCompanyKeys(result))
+        && automationPlatformFor(result) === itemPlatform));
+  if (sameDayFailedAttempts.length >= 2) {
+    return {
+      status: 'same_day_retry_circuit_open',
+      evidence: `same_day_retry_circuit_open;failed_attempts:${sameDayFailedAttempts.length}`,
+    };
+  }
   return results
     .filter((result) => result && (blocking.has(result.status) || historicalAutomationResultBlocksCompany(result)))
     // A page/form failure is channel-specific. If discovery later supplies a
@@ -484,6 +495,7 @@ function failedOpenResultShouldBlockRetry(result = {}) {
   }
   if (evidence.includes('profile_no_message_button')
     || evidence.includes('message_control_not_available')) return true;
+  if (evidence.includes('personal_profile_without_company_match')) return true;
   const recoverable = [
     'message_button_clicked_composer_not_found',
     'composer_not_found',

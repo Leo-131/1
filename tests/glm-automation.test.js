@@ -671,6 +671,10 @@ test('Facebook identity validation rejects personal profiles and requires outgoi
   assert.ok(chromeDriverSource.includes('strictPersonalProfileSignal'));
   assert.ok(chromeDriverSource.includes('businessSignal && socialCompanyOk'));
   assert.ok(chromeDriverSource.includes("confirmed: Boolean(outgoingBubble && !hasDraftInComposer)"));
+  assert.ok(chromeDriverSource.includes("Page.reload"));
+  assert.ok(chromeDriverSource.includes("confirmPersistedSentMessage"));
+  assert.ok(chromeDriverSource.includes("matchedMessageText"));
+  assert.ok(chromeDriverSource.includes("persisted_after_reload"));
   assert.ok(chromeDriverSource.includes('const allowPublicEngagement = false'));
   assert.equal(isBlockedFacebookTarget(new URL('https://www.facebook.com/doorout')), true);
 });
@@ -1040,6 +1044,13 @@ test('verified Instagram fallback continues after a Facebook personal-profile mi
   assert.ok(mainSource.includes("['facebook', channels.facebook]"));
   assert.ok(mainSource.includes("['instagram', channels.instagram]"));
   assert.ok(mainSource.includes('fallbackDepth: fallbackDepth + 1'));
+});
+
+test('same-day failed targets open a bounded retry circuit instead of consuming every batch', () => {
+  assert.ok(mainSource.includes('const sameDayFailedAttempts = results'));
+  assert.ok(mainSource.includes('sameDayFailedAttempts.length >= 2'));
+  assert.ok(mainSource.includes('same_day_retry_circuit_open;failed_attempts:'));
+  assert.ok(mainSource.includes("evidence.includes('personal_profile_without_company_match')"));
 });
 
 test('daily execution is serial and can process a priority batch per run', () => {

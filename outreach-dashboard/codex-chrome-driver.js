@@ -718,17 +718,30 @@ function setComposerTextExpression(composer, draft) {
 function sendConfirmationExpression(draft) {
   return `(() => {
     const draft = ${JSON.stringify(String(draft || '').trim())};
-    const sample = draft.slice(0, Math.min(40, draft.length));
+    const normalize = value => String(value || '').replace(/\\s+/g, ' ').trim();
+    const normalizedDraft = normalize(draft);
+    const sample = normalizedDraft.slice(0, Math.min(80, normalizedDraft.length));
     const controls = Array.from(document.querySelectorAll('[role="dialog"] [contenteditable="true"],[role="dialog"] [role="textbox"],[role="dialog"] textarea,[role="dialog"] input[type="text"],[aria-modal="true"] [contenteditable="true"],[aria-modal="true"] [role="textbox"],[aria-modal="true"] textarea,[aria-modal="true"] input[type="text"],[contenteditable="true"],[role="textbox"],textarea,input[type="text"]'))
       .filter((el) => {
         const rect = el.getBoundingClientRect();
         return rect.width > 0 && rect.height > 0;
       });
-    const composerText = controls.map(el => String(el.innerText || el.textContent || el.value || '').trim()).join('\\n');
-    const pageText = String(document.body && document.body.innerText || '').slice(-12000);
+    const composerText = normalize(controls.map(el => String(el.innerText || el.textContent || el.value || '')).join('\\n'));
     const hasDraftInComposer = Boolean(sample && composerText.includes(sample));
+    const visibleTextNodes = Array.from(document.querySelectorAll('div,span,p'))
+      .filter(el => !controls.some(control => control === el || control.contains(el) || el.contains(control)))
+      .filter(el => {
+        const rect = el.getBoundingClientRect();
+        const style = getComputedStyle(el);
+        return rect.width > 0 && rect.height > 0 && style.visibility !== 'hidden' && style.display !== 'none';
+      })
+      .filter(el => !Array.from(el.children).some(child => normalize(child.innerText || child.textContent).includes(sample)))
+      .map(el => normalize(el.innerText || el.textContent))
+      .filter(Boolean);
+    const matchedMessageText = visibleTextNodes.find(text => sample && text.includes(sample) && text.includes(normalizedDraft.slice(-Math.min(40, normalizedDraft.length)))) || '';
+    const pageText = normalize(document.body && document.body.innerText || '').slice(-12000);
     const sentText = /\\b(sent|delivered|message sent)\\b|\\u5df2\\u53d1\\u9001|\\u6d88\\u606f\\u5df2\\u53d1\\u9001/i.test(pageText);
-    const outgoingBubble = Boolean(sample && pageText.includes(sample) && !hasDraftInComposer);
+    const outgoingBubble = Boolean(matchedMessageText && !hasDraftInComposer);
     const emptyComposer = controls.length === 0 || controls.every(el => !String(el.innerText || el.textContent || el.value || '').trim());
     return JSON.stringify({
       confirmed: Boolean(outgoingBubble && !hasDraftInComposer),
@@ -737,9 +750,22 @@ function sendConfirmationExpression(draft) {
       emptyComposer,
       hasDraftInComposer,
       composerCount: controls.length,
-      composerTextLength: composerText.length
+      composerTextLength: composerText.length,
+      matchedMessageLength: matchedMessageText.length
     });
   })()`;
+}
+
+async function confirmPersistedSentMessage(tab, draft) {
+  await cdp(tab.webSocketDebuggerUrl, 'Page.reload', { ignoreCache: true }, 5000);
+  await sleep(3500);
+  return waitForJson(
+    tab,
+    sendConfirmationExpression(draft),
+    item => item && item.confirmed,
+    12000,
+    600,
+  );
 }
 
 async function insertDraftAndVerify(tab, composer, draft, platform) {
@@ -1521,12 +1547,12 @@ async function preparePlatformDraft(payload, platform) {
             code: 'Enter',
             windowsVirtualKeyCode: 13,
           }, 2000);
-          const enterSent = await waitForJson(tab, sendConfirmationExpression(draft), item => item && item.confirmed, 12000, 500);
+          const enterSent = await confirmPersistedSentMessage(tab, draft);
           if (enterSent && enterSent.confirmed) {
             return {
               ok: true,
               sendStatus: 'sent_confirmed',
-              evidence: `instagram_message_sent_confirmed_after_enter;${insertResult.evidence};sentText:${Boolean(enterSent.sentText)};outgoingBubble:${Boolean(enterSent.outgoingBubble)};emptyComposer:${Boolean(enterSent.emptyComposer)};${preActions.filter(Boolean).join(';')}`,
+              evidence: `instagram_message_sent_confirmed_after_enter;persisted_after_reload;${insertResult.evidence};sentText:${Boolean(enterSent.sentText)};outgoingBubble:${Boolean(enterSent.outgoingBubble)};emptyComposer:${Boolean(enterSent.emptyComposer)};${preActions.filter(Boolean).join(';')}`,
               nextAction: 'Record outcome and monitor for reply.',
             };
           }
@@ -1546,12 +1572,12 @@ async function preparePlatformDraft(payload, platform) {
       };
     }
     await clickAt(tab, sendButton.x, sendButton.y);
-    const sent = await waitForJson(tab, sendConfirmationExpression(draft), item => item && item.confirmed, 12000, 500);
+    const sent = await confirmPersistedSentMessage(tab, draft);
     if (sent && sent.confirmed) {
       return {
         ok: true,
         sendStatus: 'sent_confirmed',
-        evidence: `${platform}_message_sent_confirmed_after_send_click;${insertResult.evidence};sentText:${Boolean(sent.sentText)};outgoingBubble:${Boolean(sent.outgoingBubble)};emptyComposer:${Boolean(sent.emptyComposer)};${preActions.filter(Boolean).join(';')}`,
+        evidence: `${platform}_message_sent_confirmed_after_send_click;persisted_after_reload;${insertResult.evidence};sentText:${Boolean(sent.sentText)};outgoingBubble:${Boolean(sent.outgoingBubble)};emptyComposer:${Boolean(sent.emptyComposer)};${preActions.filter(Boolean).join(';')}`,
         nextAction: 'Record outcome and monitor for reply.',
       };
     }
@@ -1622,4 +1648,6 @@ if (require.main === module) {
 
 module.exports = {
   identityCheckExpression,
+  sendConfirmationExpression,
+  confirmPersistedSentMessage,
 };
