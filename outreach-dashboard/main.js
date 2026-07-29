@@ -343,7 +343,7 @@ function blockingAutomationResultFor(item) {
     // generic identity-string false negative after the verifier is fixed.
     .filter((result) => !(item.officialSocialProfileVerified
       && result.status === 'failed_open'
-      && /^(?:facebook|instagram)_identity_not_verified_fail_closed$/i.test(String(result.evidence || ''))))
+      && isFixedIdentityVerifierFailure(result)))
     .find((result) => {
       if (historicalAutomationResultBlocksCompany(result) && setsIntersect(companyKeys, automationCompanyKeys(result))) return true;
       const resultExactKeys = automationExactKeys(result);
@@ -484,6 +484,12 @@ function failedOpenResultShouldBlockRetry(result = {}) {
   ];
   if (hardFailures.some(fragment => evidence.includes(fragment))) return true;
   return true;
+}
+
+function isFixedIdentityVerifierFailure(result = {}) {
+  const evidence = String(result.evidence || '');
+  return /^(?:facebook|instagram)_identity_not_verified_fail_closed$/i.test(evidence)
+    || /^identity_check_runtime_error:SyntaxError: Invalid regular expression flags$/i.test(evidence);
 }
 
 function checkpointResultIsTerminal(result = {}) {
@@ -3758,7 +3764,7 @@ async function runDailyAutomationQueue(payload = {}) {
     const checkpointResult = checkpointResultsById.get(item.id);
     const verifiedProfileIdentityRetry = Boolean(item.officialSocialProfileVerified
       && checkpointResult
-      && /^(?:facebook|instagram)_identity_not_verified_fail_closed$/i.test(String(checkpointResult.evidence || '')));
+      && isFixedIdentityVerifierFailure(checkpointResult));
     if (checkpointCompletedIds.has(item.id) && !verifiedProfileIdentityRetry) {
       skipped.push({
         id: item.id,

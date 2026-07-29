@@ -7433,5 +7433,39 @@ window.AUTONOMOUS_OUTREACH_RESULTS = [
     "messageId": "",
     "sentFolder": "",
     "sentUid": null
+  },
+  {
+    "task_id": "google-customer-jax-outdoor-gear-instagram",
+    "company": "Jax Outdoor Gear",
+    "approval_version": 1,
+    "status": "failed_open",
+    "agent": "codex-chrome-cdp",
+    "browserTransportUsed": "cdp",
+    "timestamp": "2026-07-29T09:18:39.566Z",
+    "target_url": "https://www.instagram.com/jaxoutdoor/",
+    "evidence": "website_contact_entry_not_verified;contact_entry_clicked:SKIP TO CONTENT;official_social_fallback:facebook;personal_profile_without_company_match_expected_Jax Outdoor Gear_title_Facebook;contact_path_strategy_v2",
+    "draft": "Hi Jax Outdoor Gear team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a retail/category buyer, the strongest fit is assortment fit, new SKU pipeline, price-tier coverage, and proven consumer demand; your verified outdoor, camping and travel retail social refill channel focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the category buyer or vendor-review owner for a short intro video meeting?",
+    "subject": "",
+    "recipientEmail": "",
+    "messageId": "",
+    "sentFolder": "",
+    "sentUid": null
+  },
+  {
+    "task_id": "google-customer-camp-studio-thailand-instagram",
+    "company": "Camp Studio Thailand",
+    "approval_version": 1,
+    "status": "sent_confirmed",
+    "agent": "codex-chrome-cdp",
+    "browserTransportUsed": "cdp",
+    "timestamp": "2026-07-29T09:20:00.455Z",
+    "target_url": "https://www.instagram.com/campstudio.chiangmai/",
+    "evidence": "instagram_message_sent_confirmed_after_send_click;instagram_draft_inserted_verified;sentText:false;outgoingBubble:true;emptyComposer:true;follow_not_available;instagram_post_not_available;retry:instagram_post_opened;post_liked;comment_submitted",
+    "draft": "Hi Camp Studio Thailand team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a distributor/importer, the strongest fit is regional sell-through, channel fit, margin-ready product line, and whether they cover outdoor/travel electronics buyers; your camping retailer network focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the owner of distribution evaluation or the best time for a short intro video meeting?",
+    "subject": "",
+    "recipientEmail": "",
+    "messageId": "",
+    "sentFolder": "",
+    "sentUid": null
   }
 ];

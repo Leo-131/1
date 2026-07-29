@@ -681,6 +681,13 @@ test('generated identity expression compiles before CDP injection', () => {
   assert.doesNotThrow(() => new vm.Script(expression));
 });
 
+test('fixed identity verifier failures can be retried only for source-backed official profiles', () => {
+  assert.ok(mainSource.includes('function isFixedIdentityVerifierFailure'));
+  assert.ok(mainSource.includes('identity_check_runtime_error:SyntaxError: Invalid regular expression flags'));
+  assert.match(mainSource, /item\.officialSocialProfileVerified[\s\S]*isFixedIdentityVerifierFailure\(result\)/);
+  assert.match(mainSource, /item\.officialSocialProfileVerified[\s\S]*isFixedIdentityVerifierFailure\(checkpointResult\)/);
+});
+
 test('social execution explicitly fails closed for CAPTCHA, login loss, and platform rate limits', () => {
   assert.ok(chromeDriverSource.includes('function platformSafetyBlockerExpression'));
   assert.ok(chromeDriverSource.includes('captcha_or_human_verification'));
