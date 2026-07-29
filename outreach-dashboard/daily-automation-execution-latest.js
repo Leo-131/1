@@ -1,13 +1,13 @@
 window.DAILY_AUTOMATION_EXECUTION_LATEST = {
   "ok": false,
   "browserTransportRequested": "codex-extension-first",
-  "browserTransportUsed": "none",
-  "browserTransportFallbackReason": "",
+  "browserTransportUsed": "cdp",
+  "browserTransportFallbackReason": "extension_bridge_not_available_process_local_cdp",
   "extensionReceiptCount": 0,
-  "executionPhase": "no_browser_execution",
-  "chromeStage": "not_started",
-  "chromeOpened": false,
-  "chromeOpenedCount": 0,
+  "executionPhase": "browser_execution",
+  "chromeStage": "opened",
+  "chromeOpened": true,
+  "chromeOpenedCount": 4,
   "customerDevelopmentPerformed": false,
   "customerMessageSent": false,
   "realDevelopmentCount": 0,
@@ -18,8 +18,56 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
   "parallelLimit": 1,
   "limit": 13,
   "queueDate": "2026-07-29",
-  "queueSource": "dailyPotentialPool",
+  "queueSource": "dailyQueue",
   "executed": [
+    {
+      "id": "google-customer-72hours-website-contact",
+      "company": "72hours",
+      "action": "verify_target",
+      "platform": "email",
+      "targetUrl": "https://72hours.ca/",
+      "ok": false,
+      "sendStatus": "failed_open",
+      "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;personal_profile_without_company_match_expected_72hours_title_Facebook;contact_path_strategy_v2",
+      "timestamp": "2026-07-29T11:17:01.234Z",
+      "chromeOpen": {
+        "ok": true,
+        "engine": "codex-chrome-cdp",
+        "port": 9224,
+        "targetUrl": "https://www.facebook.com/72hours.ca",
+        "tabId": "1252E359CA8AF920F4129B798107FA70",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/1252E359CA8AF920F4129B798107FA70",
+        "title": "Facebook"
+      },
+      "result": {
+        "ok": false,
+        "engine": "codex-chrome-cdp",
+        "browserEngine": "codex-chrome-cdp",
+        "mode": "codex_chrome_cdp",
+        "targetUrl": "https://www.facebook.com/72hours.ca",
+        "chromeOpen": {
+          "ok": true,
+          "engine": "codex-chrome-cdp",
+          "port": 9224,
+          "targetUrl": "https://www.facebook.com/72hours.ca",
+          "tabId": "1252E359CA8AF920F4129B798107FA70",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/1252E359CA8AF920F4129B798107FA70",
+          "title": "Facebook"
+        },
+        "sendStatus": "failed_open",
+        "output": "{\"verdict\":\"major_bug_review_needed\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;personal_profile_without_company_match_expected_72hours_title_Facebook;contact_path_strategy_v2\",\"nextAction\":\"Wrong or unmatched account opened; record as major bug and move to next verified customer.\",\"draft\":\"Hi 72hours team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a retail/category buyer, the strongest fit is assortment fit, new SKU pipeline, price-tier coverage, and proven consumer demand; your verified outdoor, camping and travel retail social refill channel focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the category buyer or vendor-review owner for a short intro video meeting?\",\"sendStatus\":\"failed_open\"}",
+        "decision": {
+          "verdict": "develop",
+          "fitScore": 84,
+          "reason": "local_codex_extension_template",
+          "draft": "Hi 72hours team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a retail/category buyer, the strongest fit is assortment fit, new SKU pipeline, price-tier coverage, and proven consumer demand; your verified outdoor, camping and travel retail social refill channel focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the category buyer or vendor-review owner for a short intro video meeting?"
+        },
+        "executionLayer": "Chrome CDP fallback",
+        "glmModel": "not_used",
+        "followup": false,
+        "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;personal_profile_without_company_match_expected_72hours_title_Facebook;contact_path_strategy_v2"
+      }
+    },
     {
       "id": "google-customer-doorout-website-contact",
       "company": "Doorout",
@@ -29,7 +77,7 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "ok": false,
       "sendStatus": "approval_pending",
       "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;;contact_path_strategy_v2",
-      "timestamp": "2026-07-29T11:10:25.091Z",
+      "timestamp": "2026-07-29T11:17:06.157Z",
       "chromeOpen": null,
       "result": {
         "ok": false,
@@ -37,11 +85,209 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
         "mode": "official_website_social_fallback",
         "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;;contact_path_strategy_v2",
         "output": "{\"verdict\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;;contact_path_strategy_v2\",\"nextAction\":\"Official website exposed facebook; Codex Chrome tried that social channel before website fallback.\",\"sendStatus\":\"approval_pending\"}"
+      }
+    },
+    {
+      "id": "google-customer-ld-mountain-centre-website-contact",
+      "company": "LD Mountain Centre",
+      "action": "verify_target",
+      "platform": "email",
+      "targetUrl": "https://www.ldmountaincentre.com/",
+      "ok": false,
+      "sendStatus": "failed_open",
+      "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;instagram_unavailable_profile_page: 很抱歉，无法访问此页面\n你点击的链接可能已损坏，或页面已被移除。返回 instagram。\nmeta\n关于\n博客\n工作\n帮助\napi\n隐私设置\n条款\n地点\n热门\ninstagram lite\nmeta ai\nthreads\n联系人上传和非用户\nmeta verified\n中文(简体)\nafrikaans\nالعربية\nčeština\ndansk\ndeutsch\nελληνικά\nenglish\nenglish (uk)\nespañol (españa)\nespañol\nفارسی\nsuomi\nfrançais\nעברית\nbahasa indonesia\nitaliano\n日本語\n한국어\nbahasa melayu\nnorsk\nnederlands\npolski\nportuguês (brasil)\nportuguês (portugal)\nрусский\nsvenska\nภาษาไทย\nfilipino\ntürkçe\n中文(简体)\n中文(台灣)\nবাংলা\nગુજરાતી\nहिन्दी\nhrvatski\nmagyar\nಕನ್ನಡ\nമലയാളം\nमराठी\nनेपाली\nਪੰਜਾਬੀ\nසිංහල\nslovenčina\nதமிழ்\nతెలుగు\nاردو\ntiếng việt\n中文(香港)\nбългарски\nfrançais (canada)\nromână\nсрпски\nукра;contact_path_strategy_v2",
+      "timestamp": "2026-07-29T11:17:27.947Z",
+      "chromeOpen": {
+        "ok": true,
+        "engine": "codex-chrome-cdp",
+        "port": 9224,
+        "targetUrl": "https://www.instagram.com/ld_mountain_centre/",
+        "tabId": "6CD276DEEF627F2D3A0AD030D7504078",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/6CD276DEEF627F2D3A0AD030D7504078",
+        "title": ""
+      },
+      "result": {
+        "ok": false,
+        "engine": "codex-chrome-cdp",
+        "browserEngine": "codex-chrome-cdp",
+        "mode": "codex_chrome_cdp",
+        "targetUrl": "https://www.instagram.com/ld_mountain_centre/",
+        "chromeOpen": {
+          "ok": true,
+          "engine": "codex-chrome-cdp",
+          "port": 9224,
+          "targetUrl": "https://www.instagram.com/ld_mountain_centre/",
+          "tabId": "6CD276DEEF627F2D3A0AD030D7504078",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/6CD276DEEF627F2D3A0AD030D7504078",
+          "title": ""
+        },
+        "sendStatus": "failed_open",
+        "output": "{\"verdict\":\"major_bug_review_needed\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;instagram_unavailable_profile_page: 很抱歉，无法访问此页面\\n你点击的链接可能已损坏，或页面已被移除。返回 instagram。\\nmeta\\n关于\\n博客\\n工作\\n帮助\\napi\\n隐私设置\\n条款\\n地点\\n热门\\ninstagram lite\\nmeta ai\\nthreads\\n联系人上传和非用户\\nmeta verified\\n中文(简体)\\nafrikaans\\nالعربية\\nčeština\\ndansk\\ndeutsch\\nελληνικά\\nenglish\\nenglish (uk)\\nespañol (españa)\\nespañol\\nفارسی\\nsuomi\\nfrançais\\nעברית\\nbahasa indonesia\\nitaliano\\n日本語\\n한국어\\nbahasa melayu\\nnorsk\\nnederlands\\npolski\\nportuguês (brasil)\\nportuguês (portugal)\\nрусский\\nsvenska\\nภาษาไทย\\nfilipino\\ntürkçe\\n中文(简体)\\n中文(台灣)\\nবাংলা\\nગુજરાતી\\nहिन्दी\\nhrvatski\\nmagyar\\nಕನ್ನಡ\\nമലയാളം\\nमराठी\\nनेपाली\\nਪੰਜਾਬੀ\\nසිංහල\\nslovenčina\\nதமிழ்\\nతెలుగు\\nاردو\\ntiếng việt\\n中文(香港)\\nбългарски\\nfrançais (canada)\\nromână\\nсрпски\\nукра;contact_path_strategy_v2\",\"nextAction\":\"Do not retry this URL; switch to a verified alternate channel or official website contact.\",\"draft\":\"Hi LD Mountain Centre team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a retail/category buyer, the strongest fit is assortment fit, new SKU pipeline, price-tier coverage, and proven consumer demand; your verified outdoor, camping and travel retail social refill channel focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the category buyer or vendor-review owner for a short intro video meeting?\",\"sendStatus\":\"failed_open\",\"fallbackFrom\":\"https://www.facebook.com/LDMountainCentre\",\"fallbackPlatform\":\"instagram\",\"fallbackReason\":\"personal_profile_without_company_match_expected_LD Mountain Centre_title_Facebook\"}",
+        "decision": {
+          "verdict": "develop",
+          "fitScore": 84,
+          "reason": "local_codex_extension_template",
+          "draft": "Hi LD Mountain Centre team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a retail/category buyer, the strongest fit is assortment fit, new SKU pipeline, price-tier coverage, and proven consumer demand; your verified outdoor, camping and travel retail social refill channel focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the category buyer or vendor-review owner for a short intro video meeting?"
+        },
+        "executionLayer": "Chrome CDP fallback",
+        "glmModel": "not_used",
+        "followup": false,
+        "fallbackFrom": "https://www.facebook.com/LDMountainCentre",
+        "fallbackPlatform": "instagram",
+        "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;instagram_unavailable_profile_page: 很抱歉，无法访问此页面\n你点击的链接可能已损坏，或页面已被移除。返回 instagram。\nmeta\n关于\n博客\n工作\n帮助\napi\n隐私设置\n条款\n地点\n热门\ninstagram lite\nmeta ai\nthreads\n联系人上传和非用户\nmeta verified\n中文(简体)\nafrikaans\nالعربية\nčeština\ndansk\ndeutsch\nελληνικά\nenglish\nenglish (uk)\nespañol (españa)\nespañol\nفارسی\nsuomi\nfrançais\nעברית\nbahasa indonesia\nitaliano\n日本語\n한국어\nbahasa melayu\nnorsk\nnederlands\npolski\nportuguês (brasil)\nportuguês (portugal)\nрусский\nsvenska\nภาษาไทย\nfilipino\ntürkçe\n中文(简体)\n中文(台灣)\nবাংলা\nગુજરાતી\nहिन्दी\nhrvatski\nmagyar\nಕನ್ನಡ\nമലയാളം\nमराठी\nनेपाली\nਪੰਜਾਬੀ\nසිංහල\nslovenčina\nதமிழ்\nతెలుగు\nاردو\ntiếng việt\n中文(香港)\nбългарски\nfrançais (canada)\nromână\nсрпски\nукра;contact_path_strategy_v2"
+      }
+    },
+    {
+      "id": "google-customer-rock-creek-website-contact",
+      "company": "Rock/Creek",
+      "action": "verify_target",
+      "platform": "email",
+      "targetUrl": "https://www.rockcreek.com/",
+      "ok": false,
+      "sendStatus": "failed_open",
+      "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;instagram_message_button_clicked_composer_not_found;contact_path_strategy_v2",
+      "timestamp": "2026-07-29T11:18:05.092Z",
+      "chromeOpen": {
+        "ok": true,
+        "engine": "codex-chrome-cdp",
+        "port": 9224,
+        "targetUrl": "https://www.instagram.com/rockcreek/",
+        "tabId": "C63D865A2ACBB1F75ACA3F060D1B773C",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/C63D865A2ACBB1F75ACA3F060D1B773C",
+        "title": "Rock Creek Rocks (@rockcreek) · Instagram 照片和视频"
+      },
+      "result": {
+        "ok": false,
+        "engine": "codex-chrome-cdp",
+        "browserEngine": "codex-chrome-cdp",
+        "mode": "codex_chrome_cdp",
+        "targetUrl": "https://www.instagram.com/rockcreek/",
+        "chromeOpen": {
+          "ok": true,
+          "engine": "codex-chrome-cdp",
+          "port": 9224,
+          "targetUrl": "https://www.instagram.com/rockcreek/",
+          "tabId": "C63D865A2ACBB1F75ACA3F060D1B773C",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/C63D865A2ACBB1F75ACA3F060D1B773C",
+          "title": "Rock Creek Rocks (@rockcreek) · Instagram 照片和视频"
+        },
+        "sendStatus": "failed_open",
+        "output": "{\"verdict\":\"major_bug_review_needed\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;instagram_message_button_clicked_composer_not_found;contact_path_strategy_v2\",\"nextAction\":\"Composer not detected; pause automation and notify operator only if retry would be unsafe.\",\"draft\":\"Hi Rock/Creek team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a retail/category buyer, the strongest fit is assortment fit, new SKU pipeline, price-tier coverage, and proven consumer demand; your verified outdoor, camping and travel retail social refill channel focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the category buyer or vendor-review owner for a short intro video meeting?\",\"sendStatus\":\"failed_open\",\"fallbackFrom\":\"https://www.facebook.com/rockcreek\",\"fallbackPlatform\":\"instagram\",\"fallbackReason\":\"personal_profile_without_company_match_expected_Rock/Creek_title_Facebook\"}",
+        "decision": {
+          "verdict": "develop",
+          "fitScore": 84,
+          "reason": "local_codex_extension_template",
+          "draft": "Hi Rock/Creek team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a retail/category buyer, the strongest fit is assortment fit, new SKU pipeline, price-tier coverage, and proven consumer demand; your verified outdoor, camping and travel retail social refill channel focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the category buyer or vendor-review owner for a short intro video meeting?"
+        },
+        "executionLayer": "Chrome CDP fallback",
+        "glmModel": "not_used",
+        "followup": false,
+        "fallbackFrom": "https://www.facebook.com/rockcreek",
+        "fallbackPlatform": "instagram",
+        "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;instagram_message_button_clicked_composer_not_found;contact_path_strategy_v2"
+      }
+    },
+    {
+      "id": "google-customer-sklep-podroznika-website-contact",
+      "company": "Sklep Podroznika",
+      "action": "verify_target",
+      "platform": "email",
+      "targetUrl": "https://www.sklep-podroznika.pl/",
+      "ok": false,
+      "sendStatus": "send_unconfirmed",
+      "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;instagram_send_clicked_but_confirmation_missing;;contact_path_strategy_v2",
+      "timestamp": "2026-07-29T11:18:46.646Z",
+      "chromeOpen": {
+        "ok": true,
+        "engine": "codex-chrome-cdp",
+        "port": 9224,
+        "targetUrl": "https://www.instagram.com/skleppodroznika/",
+        "tabId": "74F0FDB4AFEF3F85A47D9B1822014EDA",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/74F0FDB4AFEF3F85A47D9B1822014EDA",
+        "title": "Sklep Podróżnika Obieżyświat (@skleppodroznika) · Instagram 照片和视频"
+      },
+      "result": {
+        "ok": false,
+        "engine": "codex-chrome-cdp",
+        "browserEngine": "codex-chrome-cdp",
+        "mode": "codex_chrome_cdp",
+        "targetUrl": "https://www.instagram.com/skleppodroznika/",
+        "chromeOpen": {
+          "ok": true,
+          "engine": "codex-chrome-cdp",
+          "port": 9224,
+          "targetUrl": "https://www.instagram.com/skleppodroznika/",
+          "tabId": "74F0FDB4AFEF3F85A47D9B1822014EDA",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/74F0FDB4AFEF3F85A47D9B1822014EDA",
+          "title": "Sklep Podróżnika Obieżyświat (@skleppodroznika) · Instagram 照片和视频"
+        },
+        "sendStatus": "send_unconfirmed",
+        "output": "{\"verdict\":\"major_bug_review_needed\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;instagram_send_clicked_but_confirmation_missing;;contact_path_strategy_v2\",\"nextAction\":\"Send confirmation missing; pause and notify operator before any retry to avoid duplicate sending.\",\"draft\":\"Hi Sklep Podroznika team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a retail/category buyer, the strongest fit is assortment fit, new SKU pipeline, price-tier coverage, and proven consumer demand; your verified outdoor, camping and travel retail social refill channel focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the category buyer or vendor-review owner for a short intro video meeting?\",\"sendStatus\":\"send_unconfirmed\",\"fallbackFrom\":\"https://www.facebook.com/skleppodroznika\",\"fallbackPlatform\":\"instagram\",\"fallbackReason\":\"personal_profile_without_company_match_expected_Sklep Podroznika_title_Facebook\"}",
+        "decision": {
+          "verdict": "develop",
+          "fitScore": 84,
+          "reason": "local_codex_extension_template",
+          "draft": "Hi Sklep Podroznika team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a retail/category buyer, the strongest fit is assortment fit, new SKU pipeline, price-tier coverage, and proven consumer demand; your verified outdoor, camping and travel retail social refill channel focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the category buyer or vendor-review owner for a short intro video meeting?"
+        },
+        "executionLayer": "Chrome CDP fallback",
+        "glmModel": "not_used",
+        "followup": false,
+        "fallbackFrom": "https://www.facebook.com/skleppodroznika",
+        "fallbackPlatform": "instagram",
+        "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;instagram_send_clicked_but_confirmation_missing;;contact_path_strategy_v2"
       }
     }
   ],
   "results": [
     {
+      "id": "google-customer-72hours-website-contact",
+      "company": "72hours",
+      "action": "verify_target",
+      "platform": "email",
+      "targetUrl": "https://72hours.ca/",
+      "ok": false,
+      "sendStatus": "failed_open",
+      "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;personal_profile_without_company_match_expected_72hours_title_Facebook;contact_path_strategy_v2",
+      "timestamp": "2026-07-29T11:17:01.234Z",
+      "chromeOpen": {
+        "ok": true,
+        "engine": "codex-chrome-cdp",
+        "port": 9224,
+        "targetUrl": "https://www.facebook.com/72hours.ca",
+        "tabId": "1252E359CA8AF920F4129B798107FA70",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/1252E359CA8AF920F4129B798107FA70",
+        "title": "Facebook"
+      },
+      "result": {
+        "ok": false,
+        "engine": "codex-chrome-cdp",
+        "browserEngine": "codex-chrome-cdp",
+        "mode": "codex_chrome_cdp",
+        "targetUrl": "https://www.facebook.com/72hours.ca",
+        "chromeOpen": {
+          "ok": true,
+          "engine": "codex-chrome-cdp",
+          "port": 9224,
+          "targetUrl": "https://www.facebook.com/72hours.ca",
+          "tabId": "1252E359CA8AF920F4129B798107FA70",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/1252E359CA8AF920F4129B798107FA70",
+          "title": "Facebook"
+        },
+        "sendStatus": "failed_open",
+        "output": "{\"verdict\":\"major_bug_review_needed\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;personal_profile_without_company_match_expected_72hours_title_Facebook;contact_path_strategy_v2\",\"nextAction\":\"Wrong or unmatched account opened; record as major bug and move to next verified customer.\",\"draft\":\"Hi 72hours team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a retail/category buyer, the strongest fit is assortment fit, new SKU pipeline, price-tier coverage, and proven consumer demand; your verified outdoor, camping and travel retail social refill channel focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the category buyer or vendor-review owner for a short intro video meeting?\",\"sendStatus\":\"failed_open\"}",
+        "decision": {
+          "verdict": "develop",
+          "fitScore": 84,
+          "reason": "local_codex_extension_template",
+          "draft": "Hi 72hours team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a retail/category buyer, the strongest fit is assortment fit, new SKU pipeline, price-tier coverage, and proven consumer demand; your verified outdoor, camping and travel retail social refill channel focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the category buyer or vendor-review owner for a short intro video meeting?"
+        },
+        "executionLayer": "Chrome CDP fallback",
+        "glmModel": "not_used",
+        "followup": false,
+        "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;personal_profile_without_company_match_expected_72hours_title_Facebook;contact_path_strategy_v2"
+      }
+    },
+    {
       "id": "google-customer-doorout-website-contact",
       "company": "Doorout",
       "action": "verify_target",
@@ -50,7 +296,7 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "ok": false,
       "sendStatus": "approval_pending",
       "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;;contact_path_strategy_v2",
-      "timestamp": "2026-07-29T11:10:25.091Z",
+      "timestamp": "2026-07-29T11:17:06.157Z",
       "chromeOpen": null,
       "result": {
         "ok": false,
@@ -59,9 +305,195 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
         "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;;contact_path_strategy_v2",
         "output": "{\"verdict\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;;contact_path_strategy_v2\",\"nextAction\":\"Official website exposed facebook; Codex Chrome tried that social channel before website fallback.\",\"sendStatus\":\"approval_pending\"}"
       }
+    },
+    {
+      "id": "google-customer-ld-mountain-centre-website-contact",
+      "company": "LD Mountain Centre",
+      "action": "verify_target",
+      "platform": "email",
+      "targetUrl": "https://www.ldmountaincentre.com/",
+      "ok": false,
+      "sendStatus": "failed_open",
+      "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;instagram_unavailable_profile_page: 很抱歉，无法访问此页面\n你点击的链接可能已损坏，或页面已被移除。返回 instagram。\nmeta\n关于\n博客\n工作\n帮助\napi\n隐私设置\n条款\n地点\n热门\ninstagram lite\nmeta ai\nthreads\n联系人上传和非用户\nmeta verified\n中文(简体)\nafrikaans\nالعربية\nčeština\ndansk\ndeutsch\nελληνικά\nenglish\nenglish (uk)\nespañol (españa)\nespañol\nفارسی\nsuomi\nfrançais\nעברית\nbahasa indonesia\nitaliano\n日本語\n한국어\nbahasa melayu\nnorsk\nnederlands\npolski\nportuguês (brasil)\nportuguês (portugal)\nрусский\nsvenska\nภาษาไทย\nfilipino\ntürkçe\n中文(简体)\n中文(台灣)\nবাংলা\nગુજરાતી\nहिन्दी\nhrvatski\nmagyar\nಕನ್ನಡ\nമലയാളം\nमराठी\nनेपाली\nਪੰਜਾਬੀ\nසිංහල\nslovenčina\nதமிழ்\nతెలుగు\nاردو\ntiếng việt\n中文(香港)\nбългарски\nfrançais (canada)\nromână\nсрпски\nукра;contact_path_strategy_v2",
+      "timestamp": "2026-07-29T11:17:27.947Z",
+      "chromeOpen": {
+        "ok": true,
+        "engine": "codex-chrome-cdp",
+        "port": 9224,
+        "targetUrl": "https://www.instagram.com/ld_mountain_centre/",
+        "tabId": "6CD276DEEF627F2D3A0AD030D7504078",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/6CD276DEEF627F2D3A0AD030D7504078",
+        "title": ""
+      },
+      "result": {
+        "ok": false,
+        "engine": "codex-chrome-cdp",
+        "browserEngine": "codex-chrome-cdp",
+        "mode": "codex_chrome_cdp",
+        "targetUrl": "https://www.instagram.com/ld_mountain_centre/",
+        "chromeOpen": {
+          "ok": true,
+          "engine": "codex-chrome-cdp",
+          "port": 9224,
+          "targetUrl": "https://www.instagram.com/ld_mountain_centre/",
+          "tabId": "6CD276DEEF627F2D3A0AD030D7504078",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/6CD276DEEF627F2D3A0AD030D7504078",
+          "title": ""
+        },
+        "sendStatus": "failed_open",
+        "output": "{\"verdict\":\"major_bug_review_needed\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;instagram_unavailable_profile_page: 很抱歉，无法访问此页面\\n你点击的链接可能已损坏，或页面已被移除。返回 instagram。\\nmeta\\n关于\\n博客\\n工作\\n帮助\\napi\\n隐私设置\\n条款\\n地点\\n热门\\ninstagram lite\\nmeta ai\\nthreads\\n联系人上传和非用户\\nmeta verified\\n中文(简体)\\nafrikaans\\nالعربية\\nčeština\\ndansk\\ndeutsch\\nελληνικά\\nenglish\\nenglish (uk)\\nespañol (españa)\\nespañol\\nفارسی\\nsuomi\\nfrançais\\nעברית\\nbahasa indonesia\\nitaliano\\n日本語\\n한국어\\nbahasa melayu\\nnorsk\\nnederlands\\npolski\\nportuguês (brasil)\\nportuguês (portugal)\\nрусский\\nsvenska\\nภาษาไทย\\nfilipino\\ntürkçe\\n中文(简体)\\n中文(台灣)\\nবাংলা\\nગુજરાતી\\nहिन्दी\\nhrvatski\\nmagyar\\nಕನ್ನಡ\\nമലയാളം\\nमराठी\\nनेपाली\\nਪੰਜਾਬੀ\\nසිංහල\\nslovenčina\\nதமிழ்\\nతెలుగు\\nاردو\\ntiếng việt\\n中文(香港)\\nбългарски\\nfrançais (canada)\\nromână\\nсрпски\\nукра;contact_path_strategy_v2\",\"nextAction\":\"Do not retry this URL; switch to a verified alternate channel or official website contact.\",\"draft\":\"Hi LD Mountain Centre team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a retail/category buyer, the strongest fit is assortment fit, new SKU pipeline, price-tier coverage, and proven consumer demand; your verified outdoor, camping and travel retail social refill channel focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the category buyer or vendor-review owner for a short intro video meeting?\",\"sendStatus\":\"failed_open\",\"fallbackFrom\":\"https://www.facebook.com/LDMountainCentre\",\"fallbackPlatform\":\"instagram\",\"fallbackReason\":\"personal_profile_without_company_match_expected_LD Mountain Centre_title_Facebook\"}",
+        "decision": {
+          "verdict": "develop",
+          "fitScore": 84,
+          "reason": "local_codex_extension_template",
+          "draft": "Hi LD Mountain Centre team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a retail/category buyer, the strongest fit is assortment fit, new SKU pipeline, price-tier coverage, and proven consumer demand; your verified outdoor, camping and travel retail social refill channel focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the category buyer or vendor-review owner for a short intro video meeting?"
+        },
+        "executionLayer": "Chrome CDP fallback",
+        "glmModel": "not_used",
+        "followup": false,
+        "fallbackFrom": "https://www.facebook.com/LDMountainCentre",
+        "fallbackPlatform": "instagram",
+        "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;instagram_unavailable_profile_page: 很抱歉，无法访问此页面\n你点击的链接可能已损坏，或页面已被移除。返回 instagram。\nmeta\n关于\n博客\n工作\n帮助\napi\n隐私设置\n条款\n地点\n热门\ninstagram lite\nmeta ai\nthreads\n联系人上传和非用户\nmeta verified\n中文(简体)\nafrikaans\nالعربية\nčeština\ndansk\ndeutsch\nελληνικά\nenglish\nenglish (uk)\nespañol (españa)\nespañol\nفارسی\nsuomi\nfrançais\nעברית\nbahasa indonesia\nitaliano\n日本語\n한국어\nbahasa melayu\nnorsk\nnederlands\npolski\nportuguês (brasil)\nportuguês (portugal)\nрусский\nsvenska\nภาษาไทย\nfilipino\ntürkçe\n中文(简体)\n中文(台灣)\nবাংলা\nગુજરાતી\nहिन्दी\nhrvatski\nmagyar\nಕನ್ನಡ\nമലയാളം\nमराठी\nनेपाली\nਪੰਜਾਬੀ\nසිංහල\nslovenčina\nதமிழ்\nతెలుగు\nاردو\ntiếng việt\n中文(香港)\nбългарски\nfrançais (canada)\nromână\nсрпски\nукра;contact_path_strategy_v2"
+      }
+    },
+    {
+      "id": "google-customer-rock-creek-website-contact",
+      "company": "Rock/Creek",
+      "action": "verify_target",
+      "platform": "email",
+      "targetUrl": "https://www.rockcreek.com/",
+      "ok": false,
+      "sendStatus": "failed_open",
+      "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;instagram_message_button_clicked_composer_not_found;contact_path_strategy_v2",
+      "timestamp": "2026-07-29T11:18:05.092Z",
+      "chromeOpen": {
+        "ok": true,
+        "engine": "codex-chrome-cdp",
+        "port": 9224,
+        "targetUrl": "https://www.instagram.com/rockcreek/",
+        "tabId": "C63D865A2ACBB1F75ACA3F060D1B773C",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/C63D865A2ACBB1F75ACA3F060D1B773C",
+        "title": "Rock Creek Rocks (@rockcreek) · Instagram 照片和视频"
+      },
+      "result": {
+        "ok": false,
+        "engine": "codex-chrome-cdp",
+        "browserEngine": "codex-chrome-cdp",
+        "mode": "codex_chrome_cdp",
+        "targetUrl": "https://www.instagram.com/rockcreek/",
+        "chromeOpen": {
+          "ok": true,
+          "engine": "codex-chrome-cdp",
+          "port": 9224,
+          "targetUrl": "https://www.instagram.com/rockcreek/",
+          "tabId": "C63D865A2ACBB1F75ACA3F060D1B773C",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/C63D865A2ACBB1F75ACA3F060D1B773C",
+          "title": "Rock Creek Rocks (@rockcreek) · Instagram 照片和视频"
+        },
+        "sendStatus": "failed_open",
+        "output": "{\"verdict\":\"major_bug_review_needed\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;instagram_message_button_clicked_composer_not_found;contact_path_strategy_v2\",\"nextAction\":\"Composer not detected; pause automation and notify operator only if retry would be unsafe.\",\"draft\":\"Hi Rock/Creek team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a retail/category buyer, the strongest fit is assortment fit, new SKU pipeline, price-tier coverage, and proven consumer demand; your verified outdoor, camping and travel retail social refill channel focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the category buyer or vendor-review owner for a short intro video meeting?\",\"sendStatus\":\"failed_open\",\"fallbackFrom\":\"https://www.facebook.com/rockcreek\",\"fallbackPlatform\":\"instagram\",\"fallbackReason\":\"personal_profile_without_company_match_expected_Rock/Creek_title_Facebook\"}",
+        "decision": {
+          "verdict": "develop",
+          "fitScore": 84,
+          "reason": "local_codex_extension_template",
+          "draft": "Hi Rock/Creek team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a retail/category buyer, the strongest fit is assortment fit, new SKU pipeline, price-tier coverage, and proven consumer demand; your verified outdoor, camping and travel retail social refill channel focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the category buyer or vendor-review owner for a short intro video meeting?"
+        },
+        "executionLayer": "Chrome CDP fallback",
+        "glmModel": "not_used",
+        "followup": false,
+        "fallbackFrom": "https://www.facebook.com/rockcreek",
+        "fallbackPlatform": "instagram",
+        "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;instagram_message_button_clicked_composer_not_found;contact_path_strategy_v2"
+      }
+    },
+    {
+      "id": "google-customer-sklep-podroznika-website-contact",
+      "company": "Sklep Podroznika",
+      "action": "verify_target",
+      "platform": "email",
+      "targetUrl": "https://www.sklep-podroznika.pl/",
+      "ok": false,
+      "sendStatus": "send_unconfirmed",
+      "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;instagram_send_clicked_but_confirmation_missing;;contact_path_strategy_v2",
+      "timestamp": "2026-07-29T11:18:46.646Z",
+      "chromeOpen": {
+        "ok": true,
+        "engine": "codex-chrome-cdp",
+        "port": 9224,
+        "targetUrl": "https://www.instagram.com/skleppodroznika/",
+        "tabId": "74F0FDB4AFEF3F85A47D9B1822014EDA",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/74F0FDB4AFEF3F85A47D9B1822014EDA",
+        "title": "Sklep Podróżnika Obieżyświat (@skleppodroznika) · Instagram 照片和视频"
+      },
+      "result": {
+        "ok": false,
+        "engine": "codex-chrome-cdp",
+        "browserEngine": "codex-chrome-cdp",
+        "mode": "codex_chrome_cdp",
+        "targetUrl": "https://www.instagram.com/skleppodroznika/",
+        "chromeOpen": {
+          "ok": true,
+          "engine": "codex-chrome-cdp",
+          "port": 9224,
+          "targetUrl": "https://www.instagram.com/skleppodroznika/",
+          "tabId": "74F0FDB4AFEF3F85A47D9B1822014EDA",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/74F0FDB4AFEF3F85A47D9B1822014EDA",
+          "title": "Sklep Podróżnika Obieżyświat (@skleppodroznika) · Instagram 照片和视频"
+        },
+        "sendStatus": "send_unconfirmed",
+        "output": "{\"verdict\":\"major_bug_review_needed\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;instagram_send_clicked_but_confirmation_missing;;contact_path_strategy_v2\",\"nextAction\":\"Send confirmation missing; pause and notify operator before any retry to avoid duplicate sending.\",\"draft\":\"Hi Sklep Podroznika team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a retail/category buyer, the strongest fit is assortment fit, new SKU pipeline, price-tier coverage, and proven consumer demand; your verified outdoor, camping and travel retail social refill channel focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the category buyer or vendor-review owner for a short intro video meeting?\",\"sendStatus\":\"send_unconfirmed\",\"fallbackFrom\":\"https://www.facebook.com/skleppodroznika\",\"fallbackPlatform\":\"instagram\",\"fallbackReason\":\"personal_profile_without_company_match_expected_Sklep Podroznika_title_Facebook\"}",
+        "decision": {
+          "verdict": "develop",
+          "fitScore": 84,
+          "reason": "local_codex_extension_template",
+          "draft": "Hi Sklep Podroznika team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a retail/category buyer, the strongest fit is assortment fit, new SKU pipeline, price-tier coverage, and proven consumer demand; your verified outdoor, camping and travel retail social refill channel focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the category buyer or vendor-review owner for a short intro video meeting?"
+        },
+        "executionLayer": "Chrome CDP fallback",
+        "glmModel": "not_used",
+        "followup": false,
+        "fallbackFrom": "https://www.facebook.com/skleppodroznika",
+        "fallbackPlatform": "instagram",
+        "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;instagram_send_clicked_but_confirmation_missing;;contact_path_strategy_v2"
+      }
     }
   ],
   "skipped": [
+    {
+      "id": "google-customer-72hours-facebook",
+      "company": "72hours",
+      "action": "develop",
+      "reason": "same_day_customer_already_developed"
+    },
+    {
+      "id": "google-customer-ld-mountain-centre-facebook",
+      "company": "LD Mountain Centre",
+      "action": "develop",
+      "reason": "same_day_customer_already_developed"
+    },
+    {
+      "id": "google-customer-sklep-podroznika-facebook",
+      "company": "Sklep Podroznika",
+      "action": "develop",
+      "reason": "same_day_customer_already_developed"
+    },
+    {
+      "id": "google-customer-ld-mountain-centre-instagram",
+      "company": "LD Mountain Centre",
+      "action": "develop",
+      "reason": "same_day_customer_already_developed"
+    },
+    {
+      "id": "google-customer-rock-creek-instagram",
+      "company": "Rock/Creek",
+      "action": "develop",
+      "reason": "same_day_customer_already_developed"
+    },
+    {
+      "id": "google-customer-sklep-podroznika-instagram",
+      "company": "Sklep Podroznika",
+      "action": "develop",
+      "reason": "same_day_customer_already_developed"
+    },
     {
       "id": "google-customer-scandinavian-outdoor-website-contact",
       "company": "Scandinavian Outdoor",
@@ -177,12 +609,6 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "reason": "homepage_only_contact_path_requires_verification"
     },
     {
-      "id": "google-customer-ld-mountain-centre-website-contact",
-      "company": "LD Mountain Centre",
-      "action": "verify_target",
-      "reason": "homepage_only_contact_path_requires_verification"
-    },
-    {
       "id": "google-customer-outdoor-specialist-website-contact",
       "company": "Outdoor Specialist",
       "action": "verify_target",
@@ -191,12 +617,6 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     {
       "id": "google-customer-outdoorxl-website-contact",
       "company": "OutdoorXL",
-      "action": "verify_target",
-      "reason": "homepage_only_contact_path_requires_verification"
-    },
-    {
-      "id": "google-customer-sklep-podroznika-website-contact",
-      "company": "Sklep Podroznika",
       "action": "verify_target",
       "reason": "homepage_only_contact_path_requires_verification"
     },
@@ -237,12 +657,6 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "reason": "homepage_only_contact_path_requires_verification"
     },
     {
-      "id": "google-customer-rock-creek-website-contact",
-      "company": "Rock/Creek",
-      "action": "verify_target",
-      "reason": "homepage_only_contact_path_requires_verification"
-    },
-    {
       "id": "google-customer-valhalla-pure-outfitters-website-contact",
       "company": "Valhalla Pure Outfitters",
       "action": "verify_target",
@@ -251,12 +665,6 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     {
       "id": "google-customer-kittery-trading-post-website-contact",
       "company": "Kittery Trading Post",
-      "action": "verify_target",
-      "reason": "homepage_only_contact_path_requires_verification"
-    },
-    {
-      "id": "google-customer-72hours-website-contact",
-      "company": "72hours",
       "action": "verify_target",
       "reason": "homepage_only_contact_path_requires_verification"
     },
@@ -465,20 +873,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "reason": "concrete_google_discovered_major_customer_facebook"
     },
     {
-      "id": "google-customer-ld-mountain-centre-facebook",
-      "company": "LD Mountain Centre",
-      "action": "develop",
-      "reason": "concrete_google_discovered_major_customer_facebook"
-    },
-    {
       "id": "google-customer-outdoor-specialist-facebook",
       "company": "Outdoor Specialist",
-      "action": "develop",
-      "reason": "concrete_google_discovered_major_customer_facebook"
-    },
-    {
-      "id": "google-customer-sklep-podroznika-facebook",
-      "company": "Sklep Podroznika",
       "action": "develop",
       "reason": "concrete_google_discovered_major_customer_facebook"
     },
@@ -491,12 +887,6 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     {
       "id": "google-customer-rock-creek-facebook",
       "company": "Rock/Creek",
-      "action": "develop",
-      "reason": "concrete_google_discovered_major_customer_facebook"
-    },
-    {
-      "id": "google-customer-72hours-facebook",
-      "company": "72hours",
       "action": "develop",
       "reason": "concrete_google_discovered_major_customer_facebook"
     },
@@ -567,32 +957,14 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "reason": "concrete_google_discovered_major_customer_instagram"
     },
     {
-      "id": "google-customer-ld-mountain-centre-instagram",
-      "company": "LD Mountain Centre",
-      "action": "develop",
-      "reason": "concrete_google_discovered_major_customer_instagram"
-    },
-    {
       "id": "google-customer-outdoor-specialist-instagram",
       "company": "Outdoor Specialist",
       "action": "develop",
       "reason": "concrete_google_discovered_major_customer_instagram"
     },
     {
-      "id": "google-customer-sklep-podroznika-instagram",
-      "company": "Sklep Podroznika",
-      "action": "develop",
-      "reason": "concrete_google_discovered_major_customer_instagram"
-    },
-    {
       "id": "google-customer-tiso-instagram",
       "company": "Tiso",
-      "action": "develop",
-      "reason": "concrete_google_discovered_major_customer_instagram"
-    },
-    {
-      "id": "google-customer-rock-creek-instagram",
-      "company": "Rock/Creek",
       "action": "develop",
       "reason": "concrete_google_discovered_major_customer_instagram"
     },
@@ -753,20 +1125,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "reason": "homepage_only_contact_path_requires_verification"
     },
     {
-      "id": "google-customer-ld-mountain-centre-website-contact",
-      "company": "LD Mountain Centre",
-      "action": "email_priority",
-      "reason": "homepage_only_contact_path_requires_verification"
-    },
-    {
       "id": "google-customer-outdoor-specialist-website-contact",
       "company": "Outdoor Specialist",
-      "action": "email_priority",
-      "reason": "homepage_only_contact_path_requires_verification"
-    },
-    {
-      "id": "google-customer-sklep-podroznika-website-contact",
-      "company": "Sklep Podroznika",
       "action": "email_priority",
       "reason": "homepage_only_contact_path_requires_verification"
     },
@@ -825,12 +1185,6 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "reason": "homepage_only_contact_path_requires_verification"
     },
     {
-      "id": "google-customer-rock-creek-website-contact",
-      "company": "Rock/Creek",
-      "action": "email_priority",
-      "reason": "homepage_only_contact_path_requires_verification"
-    },
-    {
       "id": "google-customer-valhalla-pure-outfitters-website-contact",
       "company": "Valhalla Pure Outfitters",
       "action": "email_priority",
@@ -839,12 +1193,6 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     {
       "id": "google-customer-kittery-trading-post-website-contact",
       "company": "Kittery Trading Post",
-      "action": "email_priority",
-      "reason": "homepage_only_contact_path_requires_verification"
-    },
-    {
-      "id": "google-customer-72hours-website-contact",
-      "company": "72hours",
       "action": "email_priority",
       "reason": "homepage_only_contact_path_requires_verification"
     },
@@ -1005,20 +1353,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "reason": "concrete_google_discovered_major_customer_facebook"
     },
     {
-      "id": "google-customer-ld-mountain-centre-facebook",
-      "company": "LD Mountain Centre",
-      "action": "develop",
-      "reason": "concrete_google_discovered_major_customer_facebook"
-    },
-    {
       "id": "google-customer-outdoor-specialist-facebook",
       "company": "Outdoor Specialist",
-      "action": "develop",
-      "reason": "concrete_google_discovered_major_customer_facebook"
-    },
-    {
-      "id": "google-customer-sklep-podroznika-facebook",
-      "company": "Sklep Podroznika",
       "action": "develop",
       "reason": "concrete_google_discovered_major_customer_facebook"
     },
@@ -1031,12 +1367,6 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     {
       "id": "google-customer-rock-creek-facebook",
       "company": "Rock/Creek",
-      "action": "develop",
-      "reason": "concrete_google_discovered_major_customer_facebook"
-    },
-    {
-      "id": "google-customer-72hours-facebook",
-      "company": "72hours",
       "action": "develop",
       "reason": "concrete_google_discovered_major_customer_facebook"
     },
@@ -1107,32 +1437,14 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "reason": "concrete_google_discovered_major_customer_instagram"
     },
     {
-      "id": "google-customer-ld-mountain-centre-instagram",
-      "company": "LD Mountain Centre",
-      "action": "develop",
-      "reason": "concrete_google_discovered_major_customer_instagram"
-    },
-    {
       "id": "google-customer-outdoor-specialist-instagram",
       "company": "Outdoor Specialist",
       "action": "develop",
       "reason": "concrete_google_discovered_major_customer_instagram"
     },
     {
-      "id": "google-customer-sklep-podroznika-instagram",
-      "company": "Sklep Podroznika",
-      "action": "develop",
-      "reason": "concrete_google_discovered_major_customer_instagram"
-    },
-    {
       "id": "google-customer-tiso-instagram",
       "company": "Tiso",
-      "action": "develop",
-      "reason": "concrete_google_discovered_major_customer_instagram"
-    },
-    {
-      "id": "google-customer-rock-creek-instagram",
-      "company": "Rock/Creek",
       "action": "develop",
       "reason": "concrete_google_discovered_major_customer_instagram"
     },
@@ -1277,17 +1589,17 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     {
       "reason": "homepage_only_contact_path_requires_verification",
       "status": "skipped",
-      "count": 108
+      "count": 100
     },
     {
       "reason": "concrete_google_discovered_major_customer_facebook",
       "status": "skipped",
-      "count": 36
+      "count": 30
     },
     {
       "reason": "concrete_google_discovered_major_customer_instagram",
       "status": "skipped",
-      "count": 28
+      "count": 22
     },
     {
       "reason": "official_website_contact_channel",
@@ -1300,18 +1612,36 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "count": 9
     },
     {
+      "reason": "same_day_customer_already_developed",
+      "status": "skipped",
+      "count": 6
+    },
+    {
+      "reason": "failed_open",
+      "status": "failed_open",
+      "count": 3
+    },
+    {
       "reason": "approval_pending",
       "status": "approval_pending",
+      "count": 1
+    },
+    {
+      "reason": "send_unconfirmed",
+      "status": "send_unconfirmed",
       "count": 1
     }
   ],
   "blockerCounts": {
-    "homepage_only_contact_path_requires_verification": 108,
-    "concrete_google_discovered_major_customer_facebook": 36,
-    "concrete_google_discovered_major_customer_instagram": 28,
+    "homepage_only_contact_path_requires_verification": 100,
+    "concrete_google_discovered_major_customer_facebook": 30,
+    "concrete_google_discovered_major_customer_instagram": 22,
     "official_website_contact_channel": 16,
     "missing_verified_profile_url": 9,
-    "approval_pending": 1
+    "same_day_customer_already_developed": 6,
+    "failed_open": 3,
+    "approval_pending": 1,
+    "send_unconfirmed": 1
   },
   "queueGoalStatus": {
     "target": 100,
@@ -1323,8 +1653,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     "action": "Daily high-ICP queue target reached."
   },
   "platformCircuitState": {},
-  "userVisibleStatus": "Customer development was not performed. Blockers: homepage_only_contact_path_requires_verification (108); concrete_google_discovered_major_customer_facebook (36); concrete_google_discovered_major_customer_instagram (28).",
-  "recoveryHint": "Add a verified Facebook or Instagram profile URL before retrying social outreach. Confirm the official social profile and safe message entry before rerunning Google-discovered social outreach.",
+  "userVisibleStatus": "Customer development was not performed. Blockers: homepage_only_contact_path_requires_verification (100); concrete_google_discovered_major_customer_facebook (30); concrete_google_discovered_major_customer_instagram (22).",
+  "recoveryHint": "Add a verified Facebook or Instagram profile URL before retrying social outreach. Confirm the official social profile and safe message entry before rerunning Google-discovered social outreach. Verify the official profile opens and exposes a safe message composer, or switch to another verified channel.",
   "recoveryActions": [
     {
       "reason": "missing_verified_profile_url",
@@ -1337,24 +1667,30 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "action": "Complete Google social channel verification",
       "description": "Confirm the official social profile and safe message entry before rerunning Google-discovered social outreach.",
       "hint": "Confirm the official social profile and safe message entry before rerunning Google-discovered social outreach."
+    },
+    {
+      "reason": "failed_open",
+      "action": "Verify profile accessibility",
+      "description": "Open the official profile manually or switch to another verified channel before retrying.",
+      "hint": "Verify the official profile opens and exposes a safe message composer, or switch to another verified channel."
     }
   ],
   "systemRefresh": {
     "ok": true,
-    "stdout": "{\n  \"date\": \"2026-07-29\",\n  \"summary\": {\n    \"totalLeads\": 16,\n    \"highIcp\": 16,\n    \"readyToDevelop\": 32,\n    \"dueNow\": 99,\n    \"visibleTodayQueue\": 41,\n    \"potentialPool\": 100,\n    \"potentialPoolTarget\": 100,\n    \"customerTableHighIcp\": 13,\n    \"refillNeeded\": 0,\n    \"executableCompanies\": 18,\n    \"executableReserveTarget\": 130,\n    \"executableReserveNeeded\": 112,\n    \"executableByChannel\": {\n      \"facebook\": 18,\n      \"instagram\": 14\n    },\n    \"googleDiscovered\": 87,\n    \"facebookDiscovered\": 18,\n    \"websiteContactDiscovered\": 55,\n    \"scheduledLater\": 0,\n    \"cooldown\": 30,\n    \"emailPriority\": 0,\n    \"openAgencyMarket\": 15,\n    \"exclusiveAgencySkipped\": 1,\n    \"needsVerification\": 0,\n    \"retainedLowIcp\": 0\n  },\n  \"bugErrors\": 0,\n  \"queueFile\": \"E:\\\\New project\\\\outreach-dashboard\\\\daily-runs\\\\2026-07-29-daily-automation.json\",\n  \"csvFile\": \"E:\\\\New project\\\\outreach-dashboard\\\\daily-runs\\\\2026-07-29-daily-queue.csv\"\n}",
+    "stdout": "{\n  \"date\": \"2026-07-29\",\n  \"summary\": {\n    \"totalLeads\": 16,\n    \"highIcp\": 16,\n    \"readyToDevelop\": 30,\n    \"dueNow\": 99,\n    \"visibleTodayQueue\": 40,\n    \"potentialPool\": 100,\n    \"potentialPoolTarget\": 100,\n    \"customerTableHighIcp\": 16,\n    \"refillNeeded\": 0,\n    \"executableCompanies\": 17,\n    \"executableReserveTarget\": 130,\n    \"executableReserveNeeded\": 113,\n    \"executableByChannel\": {\n      \"facebook\": 17,\n      \"instagram\": 13\n    },\n    \"googleDiscovered\": 84,\n    \"facebookDiscovered\": 17,\n    \"websiteContactDiscovered\": 54,\n    \"scheduledLater\": 0,\n    \"cooldown\": 30,\n    \"emailPriority\": 0,\n    \"openAgencyMarket\": 15,\n    \"exclusiveAgencySkipped\": 1,\n    \"needsVerification\": 0,\n    \"retainedLowIcp\": 0\n  },\n  \"bugErrors\": 0,\n  \"queueFile\": \"E:\\\\New project\\\\outreach-dashboard\\\\daily-runs\\\\2026-07-29-daily-automation.json\",\n  \"csvFile\": \"E:\\\\New project\\\\outreach-dashboard\\\\daily-runs\\\\2026-07-29-daily-queue.csv\"\n}",
     "stderr": "",
     "error": "",
     "visibility": {
-      "updatedAt": "2026-07-29T11:10:27.440Z",
+      "updatedAt": "2026-07-29T11:18:49.073Z",
       "source": "main-refreshDailyAutomationArtifacts",
       "runDate": "2026-07-29",
-      "artifactGeneratedAt": "2026-07-29T11:10:25.464Z",
-      "executionGeneratedAt": "2026-07-29T11:01:50.943Z",
-      "githubSyncUpdatedAt": "2026-07-29T10:44:51.860Z",
+      "artifactGeneratedAt": "2026-07-29T11:18:46.946Z",
+      "executionGeneratedAt": "2026-07-29T11:10:28.004Z",
+      "githubSyncUpdatedAt": "2026-07-29T11:11:07.931Z",
       "counts": {
         "dailyQueue": 99,
-        "googleDiscovered": 87,
-        "websiteContact": 55,
+        "googleDiscovered": 84,
+        "websiteContact": 54,
         "cooldownQueue": 30,
         "scheduledLater": 0
       },
@@ -1413,5 +1749,5 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     ]
   },
   "ledgerReconciliationCount": 1,
-  "completedAt": "2026-07-29T11:10:28.004Z"
+  "completedAt": "2026-07-29T11:18:50.209Z"
 };

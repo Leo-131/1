@@ -66,7 +66,7 @@ test('website contact can execute without a configured attachment', () => {
   assert.ok(mainSource.includes("'verify_target'"));
   assert.ok(mainSource.includes('item.url || item.contactUrl || item.website'));
   assert.ok(mainSource.includes('homepage_only_contact_path_requires_verification'));
-  assert.ok(mainSource.includes("const blocking = new Set(['sent_confirmed', 'failed_open', 'send_unconfirmed', 'account_followed', 'post_liked', 'website_contact_ready', 'website_contact_unreachable_skip'])"));
+  assert.ok(mainSource.includes("const blocking = new Set(['sent_confirmed', 'failed_open', 'send_unconfirmed', 'website_contact_ready', 'website_contact_unreachable_skip'])"));
   assert.ok(!mainSource.includes("'approval_pending', 'draft_prepared', 'prepared_not_sent'"));
   assert.ok(mainSource.includes('function socialFallbackFromInspection'));
   assert.ok(mainSource.includes('official_website_social_fallback'));
@@ -1084,6 +1084,17 @@ test('real customer development excludes likes and follows', () => {
   assert.match(block, /sent_confirmed/);
   assert.match(block, /submitted_confirmed/);
   assert.doesNotMatch(block, /account_followed|post_liked/);
+});
+
+test('historical likes and follows do not block a later real customer message', () => {
+  assert.doesNotMatch(
+    mainSource.slice(
+      mainSource.indexOf('const COMPANY_HISTORY_BLOCKING_STATUSES'),
+      mainSource.indexOf('const DAILY_CONFIRMED_COMPANY_TARGET'),
+    ),
+    /account_followed|post_liked/,
+  );
+  assert.ok(mainSource.includes("const companyBlocking = new Set(['sent_confirmed', 'send_unconfirmed'])"));
 });
 
 test('Alibaba bounce reconciliation downgrades confirmed email without deleting evidence', () => {

@@ -281,8 +281,6 @@ function setsIntersect(left, right) {
 const COMPANY_HISTORY_BLOCKING_STATUSES = new Set([
   'sent_confirmed',
   'send_unconfirmed',
-  'account_followed',
-  'post_liked',
 ]);
 const DAILY_CONFIRMED_COMPANY_TARGET = 100;
 const DEFAULT_DAILY_SOCIAL_EXECUTION_LIMIT = 13;
@@ -302,8 +300,8 @@ function blockingAutomationResultFor(item) {
   const exactKeys = automationExactKeys(item);
   const companyKeys = automationCompanyKeys(item);
   const itemPlatform = automationPlatformFor(item);
-  const blocking = new Set(['sent_confirmed', 'failed_open', 'send_unconfirmed', 'account_followed', 'post_liked', 'website_contact_ready', 'website_contact_unreachable_skip']);
-  const companyBlocking = new Set(['sent_confirmed', 'send_unconfirmed', 'account_followed', 'post_liked']);
+  const blocking = new Set(['sent_confirmed', 'failed_open', 'send_unconfirmed', 'website_contact_ready', 'website_contact_unreachable_skip']);
+  const companyBlocking = new Set(['sent_confirmed', 'send_unconfirmed']);
   if (isWebsiteContactQueueItem(item) && !verifiedBusinessEmailTarget(item).ok) {
     const cutoff = Date.now() - 30 * 24 * 60 * 60 * 1000;
     const failedDays = new Set(results
