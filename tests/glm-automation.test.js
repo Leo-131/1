@@ -118,16 +118,16 @@ test('LinkedIn platform engagement follows before sending the approved DM withou
   assert.doesNotMatch(linkedinBranch[1], /submitOptionalComment|clickOptionalAction\(tab, 'like'/);
 });
 
-test('social engagement is enabled only inside the post-identity execution path', () => {
+test('cold social outreach never publishes public engagement as a DM prerequisite', () => {
   const instagramBlock = mainSource.slice(
     mainSource.indexOf('async function prepareInstagramDraft'),
     mainSource.indexOf('function validateLeadTargetForPreparation')
   );
-  assert.match(instagramBlock, /autoEngage:\s*true/);
-  assert.doesNotMatch(instagramBlock, /autoEngage:\s*false/);
-  assert.match(chromeDriverSource, /const allowPublicEngagement = true/);
+  assert.match(instagramBlock, /autoEngage:\s*false/);
+  assert.doesNotMatch(instagramBlock, /autoEngage:\s*true/);
+  assert.match(chromeDriverSource, /const allowPublicEngagement = false/);
   assert.match(chromeDriverSource, /if \(allowPublicEngagement && payload\.autoEngage\)/);
-  assert.ok(chromeDriverSource.indexOf('if (!identity || identity.ok !== true)') < chromeDriverSource.indexOf('const allowPublicEngagement = true'));
+  assert.ok(chromeDriverSource.indexOf('if (!identity || identity.ok !== true)') < chromeDriverSource.indexOf('const allowPublicEngagement = false'));
 });
 
 test('no-message social profiles are blocked from automatic execution', () => {
@@ -662,7 +662,7 @@ test('Facebook identity validation rejects personal profiles and requires outgoi
   assert.ok(chromeDriverSource.includes('strictPersonalProfileSignal'));
   assert.ok(chromeDriverSource.includes('businessSignal && socialCompanyOk'));
   assert.ok(chromeDriverSource.includes("confirmed: Boolean(outgoingBubble && !hasDraftInComposer)"));
-  assert.ok(chromeDriverSource.includes('const allowPublicEngagement = true'));
+  assert.ok(chromeDriverSource.includes('const allowPublicEngagement = false'));
   assert.equal(isBlockedFacebookTarget(new URL('https://www.facebook.com/doorout')), true);
 });
 
