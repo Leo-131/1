@@ -1,9 +1,10 @@
 window.GITHUB_SYNC_LATEST = {
-  "updatedAt": "2026-07-29T12:48:37.447Z",
-  "ok": true,
-  "pushed": true,
+  "updatedAt": "2026-07-29T12:54:05.181Z",
+  "ok": false,
+  "pushed": false,
   "branch": "vercel-main-sync",
-  "localCommit": "a7edc54b36c4ceae5c00400197b030acad6f239a",
-  "remoteCommit": "a7edc54b36c4ceae5c00400197b030acad6f239a",
-  "message": "sync: local outreach data 2026-07-29"
+  "localCommit": "a6ef207e21c6cace4b2c6380c2d13f7b6baebf4b",
+  "remoteCommit": "b9a1128f71e8e7fd16a16268e2a8ef1b057b2848",
+  "message": "sync: local outreach data 2026-07-29",
+  "error": "Command failed: git commit -m sync: github status 2026-07-29"
 };
