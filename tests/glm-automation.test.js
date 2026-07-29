@@ -14,6 +14,7 @@ const {
   validateLeadForExecution,
 } = require('../outreach-dashboard/autoglm-bridge');
 const dailyRunner = require('../outreach-dashboard/daily-automation-runner');
+const { identityCheckExpression } = require('../outreach-dashboard/codex-chrome-driver');
 
 const mainSource = fs.readFileSync(path.join(__dirname, '..', 'outreach-dashboard', 'main.js'), 'utf8');
 const chromeDriverSource = fs.readFileSync(path.join(__dirname, '..', 'outreach-dashboard', 'codex-chrome-driver.js'), 'utf8');
@@ -663,6 +664,21 @@ test('Facebook identity validation rejects personal profiles and requires outgoi
   assert.ok(chromeDriverSource.includes("confirmed: Boolean(outgoingBubble && !hasDraftInComposer)"));
   assert.ok(chromeDriverSource.includes('const allowPublicEngagement = true'));
   assert.equal(isBlockedFacebookTarget(new URL('https://www.facebook.com/doorout')), true);
+});
+
+test('identity failures preserve the underlying CDP runtime diagnostic', () => {
+  assert.ok(chromeDriverSource.includes('identity_check_runtime_error:${identity.error}'));
+  assert.ok(chromeDriverSource.includes('identityDiagnostic: identity || null'));
+  assert.ok(chromeDriverSource.includes('result.exceptionDetails.exception.description'));
+});
+
+test('generated identity expression compiles before CDP injection', () => {
+  const expression = identityCheckExpression(
+    'Camp Studio Thailand',
+    'https://www.instagram.com/campstudio.chiangmai/',
+    true,
+  );
+  assert.doesNotThrow(() => new vm.Script(expression));
 });
 
 test('social execution explicitly fails closed for CAPTCHA, login loss, and platform rate limits', () => {

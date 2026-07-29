@@ -87,7 +87,9 @@ async function evaluateJson(tab, expression, timeoutMs = 8000) {
     returnByValue: true,
   }, timeoutMs);
   if (result && result.exceptionDetails) {
-    throw new Error(result.exceptionDetails.text || 'Runtime.evaluate exception');
+    const detail = result.exceptionDetails.exception
+      && (result.exceptionDetails.exception.description || result.exceptionDetails.exception.value);
+    throw new Error(detail || result.exceptionDetails.text || 'Runtime.evaluate exception');
   }
   return JSON.parse(result && result.result && result.result.value || 'null');
 }
@@ -813,7 +815,7 @@ function identityCheckExpression(expectedCompany, targetUrl, officialProfileVeri
         return '';
       }
     })();
-    if (/instagram\.com\/moosejawmadness\/?$/i.test(targetUrl)) {
+    if (/instagram\\.com\\/moosejawmadness\\/?$/i.test(targetUrl)) {
       return JSON.stringify({ ok: false, pending: false, expectedCompany, title, url: location.href, evidence: 'known_instagram_identity_mismatch_moosejawmadness' });
     }
     const locationPathCompact = (() => {
@@ -1367,10 +1369,15 @@ async function preparePlatformDraft(payload, platform) {
     500
   ).catch(() => null);
   if (!identity || identity.ok !== true) {
+    const identityEvidence = identity && (
+      identity.evidence
+      || (identity.error ? `identity_check_runtime_error:${identity.error}` : '')
+    );
     return {
       ok: false,
       sendStatus: 'failed_open',
-      evidence: identity && identity.evidence || `${platform}_identity_not_verified_fail_closed`,
+      evidence: identityEvidence || `${platform}_identity_not_verified_fail_closed`,
+      identityDiagnostic: identity || null,
       nextAction: 'Wrong or unmatched account opened; record as major bug and move to next verified customer.',
     };
   }
@@ -1612,3 +1619,7 @@ if (require.main === module) {
     process.exitCode = 1;
   });
 }
+
+module.exports = {
+  identityCheckExpression,
+};
