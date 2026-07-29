@@ -1025,6 +1025,13 @@ test('latest completed execution is reconciled into the same-day ledger before s
   assert.ok(mainSource.includes("company: item.company || result.company || ''"));
 });
 
+test('known personal-profile identity mismatches cannot be reconciled as confirmed development', () => {
+  assert.ok(mainSource.includes('function knownInvalidIdentityResult'));
+  assert.ok(mainSource.includes("company === 'doorout'"));
+  assert.ok(mainSource.includes("evidence.includes('official_social_fallback:facebook')"));
+  assert.ok(mainSource.includes('if (knownInvalidIdentityResult(entry)) return'));
+});
+
 test('daily execution deduplicates merged website candidates and exits after artifact completion', () => {
   assert.ok(mainSource.includes("list.findIndex(other => other.id === item.id) === index"));
   assert.ok(mainSource.includes('setTimeout(() => process.exit(0), 1500)'));

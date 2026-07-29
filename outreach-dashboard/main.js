@@ -425,12 +425,23 @@ function sameDayConfirmedCompanyCount(results = [], now = Date.now()) {
   for (const result of results) {
     if (!result
       || !['sent_confirmed', 'submitted_confirmed'].includes(result.status)
-      || !isSameAutomationDay(result.timestamp, now)) continue;
+      || !isSameAutomationDay(result.timestamp, now)
+      || knownInvalidIdentityResult(result)) continue;
     const keys = automationCompanyKeys(result);
     if (!keys.size || companies.some(existing => setsIntersect(existing, keys))) continue;
     companies.push(keys);
   }
   return companies.length;
+}
+
+function knownInvalidIdentityResult(result = {}) {
+  const company = String(result.company || '').trim().toLowerCase();
+  const target = String(result.target_url || result.targetUrl || '').toLowerCase();
+  const evidence = String(result.evidence || '').toLowerCase();
+  return company === 'doorout'
+    && (target.includes('facebook.com/doorout')
+      || evidence.includes('official_social_fallback:facebook')
+      || evidence.includes('recipient_personal_profile:masaaki_hayashi'));
 }
 
 function itemBlockedBySameDayCompany(item, companyKeys) {
@@ -513,6 +524,7 @@ function recordAutomationResult(item, result) {
     sentFolder: result.sentFolder || '',
     sentUid: result.sentUid || null,
   };
+  if (knownInvalidIdentityResult(entry)) return;
   const receiptValidation = validateExtensionReceipt(result.extensionReceipt, {
     taskId: item.id,
     targetUrl: entry.target_url,
