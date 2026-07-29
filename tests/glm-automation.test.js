@@ -357,6 +357,11 @@ test('Google discovery blocks known personal or mismatched Instagram handles', (
   assert.equal(summitContact.invalidChannels.instagram.status, 'broken_profile_url');
 });
 
+test('Google discovery accepts a social handle cross-verified by the official company website', () => {
+  assert.ok(discoverySource.includes('officialSocialProfileVerified: true'));
+  assert.ok(discoverySource.includes('if (!item.officialSocialProfileVerified'));
+});
+
 test('Google discovery blocks known unavailable Facebook pages before queue generation', () => {
   const leads = buildLeads(120);
   assert.equal(leads.some(item => item.id === 'google-customer-sail-outdoors-facebook'), false);

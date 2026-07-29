@@ -52,6 +52,7 @@ const CANDIDATES = [
     country: 'Thailand',
     url: 'https://www.campstudio.co.th/',
     instagramUrl: 'https://www.instagram.com/campstudio.chiangmai/',
+    officialSocialProfileVerified: true,
     contactUrl: 'https://www.campstudio.co.th/contact',
     segment: 'camping retailer network',
     fitScore: 86,
@@ -63,6 +64,7 @@ const CANDIDATES = [
     country: 'United Arab Emirates',
     url: 'https://gecko-overland.com/',
     instagramUrl: 'https://www.instagram.com/geckooverland_uae/',
+    officialSocialProfileVerified: true,
     contactUrl: 'https://gecko-overland.com/contact/',
     segment: 'camping and overland retailer',
     fitScore: 80,
@@ -74,6 +76,7 @@ const CANDIDATES = [
     country: 'United States',
     url: 'https://www.basecamp-outfitters.com/',
     instagramUrl: 'https://www.instagram.com/basecampoutfitters_roslynwa/',
+    officialSocialProfileVerified: true,
     contactUrl: 'https://www.basecamp-outfitters.com/',
     segment: 'outdoor specialty retailer',
     fitScore: 74,
@@ -85,6 +88,7 @@ const CANDIDATES = [
     country: 'United States',
     url: 'https://www.nwogco.com/',
     instagramUrl: 'https://www.instagram.com/newworldoutdoorgearco/',
+    officialSocialProfileVerified: true,
     contactUrl: 'https://www.nwogco.com/',
     segment: 'outdoor gear retailer',
     fitScore: 72,
@@ -1135,7 +1139,11 @@ function channelLeads(item) {
     } catch {}
     const companyKey = slug(item.company).replace(/-/g, '');
     const handleKey = slug(instagramHandle).replace(/-/g, '');
-    if (companyKey && handleKey && !handleKey.includes(companyKey) && !companyKey.includes(handleKey)) {
+    if (!item.officialSocialProfileVerified
+      && companyKey
+      && handleKey
+      && !handleKey.includes(companyKey)
+      && !companyKey.includes(handleKey)) {
       invalidChannels.instagram = {
         url: item.instagramUrl,
         status: 'identity_mismatch',
