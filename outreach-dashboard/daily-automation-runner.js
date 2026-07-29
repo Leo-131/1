@@ -36,7 +36,7 @@ const CONFIG = loadConfig();
 const ICP_THRESHOLD = Number(CONFIG.cadence.icpThreshold || 70);
 const COOLDOWN_DAYS = Number(CONFIG.cadence.cooldownDays || 7);
 const DEFAULT_DAILY_LIMIT = 100;
-const DEFAULT_POTENTIAL_POOL_TARGET = 800;
+const DEFAULT_POTENTIAL_POOL_TARGET = 100;
 const TOUCH_STATUSES = new Set([
   'sent_confirmed',
   'submitted_confirmed',

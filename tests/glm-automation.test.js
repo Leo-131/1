@@ -990,8 +990,8 @@ test('daily execution is serial and can process a priority batch per run', () =>
   assert.ok(mainSource.includes('const limit = Math.min(requestedLimit, remainingDailyGap)'));
   assert.ok(mainSource.includes("app.disableHardwareAcceleration()"));
   assert.ok(mainSource.includes("app.commandLine.appendSwitch('disable-gpu')"));
-  assert.ok(mainSource.includes('DAILY_CONFIRMED_COMPANY_TARGET = 800'));
-  assert.ok(mainSource.includes('DEFAULT_DAILY_SOCIAL_EXECUTION_LIMIT = 100'));
+  assert.ok(mainSource.includes('DAILY_CONFIRMED_COMPANY_TARGET = 100'));
+  assert.ok(mainSource.includes('DEFAULT_DAILY_SOCIAL_EXECUTION_LIMIT = 13'));
   assert.ok(mainSource.includes('const remainingDailyGap = Math.max(0, DAILY_CONFIRMED_COMPANY_TARGET - confirmedToday)'));
   assert.ok(mainSource.includes('const limit = Math.min(requestedLimit, remainingDailyGap)'));
   assert.ok(mainSource.includes('KEEP_AUTOMATION_TABS_VISIBLE'));
@@ -1093,7 +1093,7 @@ test('Windows automation runs every three hours in bounded batches', () => {
   const runner = fs.readFileSync(path.join(__dirname, '..', 'outreach-dashboard', 'run-daily-customer-development.ps1'), 'utf8');
   const config = JSON.parse(fs.readFileSync(path.join(__dirname, '..', 'outreach-dashboard', 'daily-automation-config.json'), 'utf8'));
   assert.equal(config.checkEveryMinutes, 180);
-  assert.equal(config.executionBatchTarget, 100);
+  assert.equal(config.executionBatchTarget, 13);
   assert.ok(installer.includes('RepetitionInterval (New-TimeSpan -Minutes $EveryMinutes)'));
   assert.ok(installer.includes('Get-Content $ConfigPath -Raw -Encoding UTF8'));
   assert.ok(installer.includes('-MultipleInstances IgnoreNew'));

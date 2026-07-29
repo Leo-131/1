@@ -284,8 +284,8 @@ const COMPANY_HISTORY_BLOCKING_STATUSES = new Set([
   'account_followed',
   'post_liked',
 ]);
-const DAILY_CONFIRMED_COMPANY_TARGET = 800;
-const DEFAULT_DAILY_SOCIAL_EXECUTION_LIMIT = 100;
+const DAILY_CONFIRMED_COMPANY_TARGET = 100;
+const DEFAULT_DAILY_SOCIAL_EXECUTION_LIMIT = 13;
 
 function historicalAutomationResultBlocksCompany(result = {}) {
   if (COMPANY_HISTORY_BLOCKING_STATUSES.has(result.status)) {
