@@ -657,6 +657,14 @@ test('Facebook identity validation rejects personal profiles and requires outgoi
   assert.equal(isBlockedFacebookTarget(new URL('https://www.facebook.com/doorout')), true);
 });
 
+test('social execution explicitly fails closed for CAPTCHA, login loss, and platform rate limits', () => {
+  assert.ok(chromeDriverSource.includes('function platformSafetyBlockerExpression'));
+  assert.ok(chromeDriverSource.includes('captcha_or_human_verification'));
+  assert.ok(chromeDriverSource.includes('platform_rate_limit_or_action_block'));
+  assert.ok(chromeDriverSource.includes('dedicated_browser_login_required'));
+  assert.ok(chromeDriverSource.includes('Skip this target without retrying'));
+});
+
 test('Facebook composer failure closes stale Messenger UI without reopening the same dead end', () => {
   assert.match(chromeDriverSource, /facebook_composer_unavailable_closed_no_retry/);
   assert.match(chromeDriverSource, /closeFacebookMessengerInbox\(tab\);[\s\S]*closeFacebookChatWindows\(tab\);[\s\S]*return \{\n      messageUnavailable: true/);

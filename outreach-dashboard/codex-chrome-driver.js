@@ -1159,6 +1159,29 @@ function unavailableProfileExpression(platform) {
   })()`;
 }
 
+function platformSafetyBlockerExpression(platform) {
+  return `(() => {
+    const platform = ${JSON.stringify(platform)};
+    const body = String(document.body && document.body.innerText || '').toLowerCase();
+    const title = String(document.title || '').toLowerCase();
+    const text = [title, body.slice(0, 6000)].join('\\n');
+    const captcha = /captcha|security check|verify you are human|confirm you are human|checkpoint|\\u9a8c\\u8bc1\\u7801|\\u5b89\\u5168\\u9a8c\\u8bc1|\\u8bf7\\u9a8c\\u8bc1/.test(text);
+    const rateLimited = /too many requests|rate limit|try again later|temporarily blocked|temporarily restricted|action blocked|we limit how often|\\u64cd\\u4f5c\\u8fc7\\u4e8e\\u9891\\u7e41|\\u8bf7\\u7a0d\\u540e\\u518d\\u8bd5|\\u6682\\u65f6\\u53d7\\u9650|\\u64cd\\u4f5c\\u5df2\\u88ab\\u963b\\u6b62/.test(text);
+    const loginRequired = /log in to continue|login to continue|sign in to continue|you must log in|\\u767b\\u5f55\\u4ee5\\u7ee7\\u7eed|\\u8bf7\\u5148\\u767b\\u5f55/.test(text);
+    const reason = captcha ? 'captcha_or_human_verification'
+      : rateLimited ? 'platform_rate_limit_or_action_block'
+        : loginRequired ? 'dedicated_browser_login_required'
+          : '';
+    return JSON.stringify({
+      blocked: Boolean(reason),
+      platform,
+      reason,
+      title: document.title || '',
+      url: location.href,
+    });
+  })()`;
+}
+
 async function ensureComposerOpen(tab, port, platform) {
   await httpJson(`http://127.0.0.1:${port}/json/activate/${tab.id}`, 1500).catch(() => null);
   // Focus is best-effort. Background automation must continue through DOM/CDP
@@ -1319,6 +1342,17 @@ async function preparePlatformDraft(payload, platform) {
     // validation, including pages rejected as personal profiles.
     await closeFacebookMessengerInbox(tab);
     await closeFacebookChatWindows(tab);
+  }
+
+  const safetyBlocker = await evaluateJson(tab, platformSafetyBlockerExpression(platform), 5000).catch(() => null);
+  if (safetyBlocker && safetyBlocker.blocked) {
+    return {
+      ok: false,
+      skipped: true,
+      sendStatus: 'failed_open',
+      evidence: `${platform}_safety_blocked:${safetyBlocker.reason}`,
+      nextAction: 'Skip this target without retrying; preserve evidence and wait for the external safety condition to clear.',
+    };
   }
 
   const identity = await waitForJson(
