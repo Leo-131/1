@@ -339,6 +339,11 @@ function blockingAutomationResultFor(item) {
       || sendStatusHasCustomerInteraction(result.status, result.evidence)
       || /prior_send_unconfirmed_no_resend|sent_folder_record_missing/i.test(String(result.evidence || '')))
     .filter((result) => result.status !== 'failed_open' || failedOpenResultShouldBlockRetry(result) || historicalAutomationResultBlocksCompany(result))
+    // A source-backed official-profile flag can recover exactly one prior
+    // generic identity-string false negative after the verifier is fixed.
+    .filter((result) => !(item.officialSocialProfileVerified
+      && result.status === 'failed_open'
+      && /^(?:facebook|instagram)_identity_not_verified_fail_closed$/i.test(String(result.evidence || ''))))
     .find((result) => {
       if (historicalAutomationResultBlocksCompany(result) && setsIntersect(companyKeys, automationCompanyKeys(result))) return true;
       const resultExactKeys = automationExactKeys(result);
@@ -1623,6 +1628,7 @@ async function prepareInstagramDraft(opened, draft, lead = {}) {
     tabId: opened && opened.tabId,
     targetUrl: opened && opened.targetUrl,
     expectedCompany: lead && (lead.company || lead.name),
+    officialProfileVerified: Boolean(lead && lead.officialSocialProfileVerified),
     draft: safeDraft,
     autoSend: true,
     // Public comments, likes and follows are not customer development and can
@@ -1758,6 +1764,7 @@ async function prepareSocialDraft(opened, draft, lead = {}) {
     tabId: opened && opened.tabId,
     targetUrl: opened && opened.targetUrl,
     expectedCompany: lead && (lead.company || lead.name),
+    officialProfileVerified: Boolean(lead && lead.officialSocialProfileVerified),
     draft: safeDraft,
     autoSend: true,
     // Only a verified private-message route may receive the approved draft.
@@ -3742,10 +3749,17 @@ async function runDailyAutomationQueue(payload = {}) {
       .map(item => item && item.id)
       .filter(Boolean),
   );
+  const checkpointResultsById = new Map(
+    checkpointResults.filter(Boolean).map(item => [item.id, item]),
+  );
   const selectedCompanyKeys = new Set(sameDayCompanyKeys);
   for (const item of candidatePool) {
     if (executable.length >= limit) break;
-    if (checkpointCompletedIds.has(item.id)) {
+    const checkpointResult = checkpointResultsById.get(item.id);
+    const verifiedProfileIdentityRetry = Boolean(item.officialSocialProfileVerified
+      && checkpointResult
+      && /^(?:facebook|instagram)_identity_not_verified_fail_closed$/i.test(String(checkpointResult.evidence || '')));
+    if (checkpointCompletedIds.has(item.id) && !verifiedProfileIdentityRetry) {
       skipped.push({
         id: item.id,
         company: item.company,

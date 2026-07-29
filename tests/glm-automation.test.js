@@ -360,6 +360,8 @@ test('Google discovery blocks known personal or mismatched Instagram handles', (
 test('Google discovery accepts a social handle cross-verified by the official company website', () => {
   assert.ok(discoverySource.includes('officialSocialProfileVerified: true'));
   assert.ok(discoverySource.includes('if (!item.officialSocialProfileVerified'));
+  assert.ok(mainSource.includes('officialProfileVerified: Boolean(lead && lead.officialSocialProfileVerified)'));
+  assert.ok(chromeDriverSource.includes('identityCheckExpression(payload.expectedCompany, payload.targetUrl, payload.officialProfileVerified)'));
 });
 
 test('Google discovery blocks known unavailable Facebook pages before queue generation', () => {

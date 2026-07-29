@@ -790,10 +790,11 @@ async function insertDraftAndVerify(tab, composer, draft, platform) {
   return { ok: false, composer, evidence: `${platform}_draft_not_inserted_before_send` };
 }
 
-function identityCheckExpression(expectedCompany, targetUrl) {
+function identityCheckExpression(expectedCompany, targetUrl, officialProfileVerified = false) {
   return `(() => {
     const expectedCompany = ${JSON.stringify(String(expectedCompany || '').trim())};
     const targetUrl = ${JSON.stringify(String(targetUrl || '').trim())};
+    const officialProfileVerified = ${JSON.stringify(Boolean(officialProfileVerified))};
     const normalize = (value) => String(value || '').toLowerCase().replace(/&/g, ' and ').replace(/[^a-z0-9]+/g, ' ').trim();
     const compact = (value) => normalize(value).replace(/\\s+/g, '');
     const expected = normalize(expectedCompany);
@@ -857,7 +858,10 @@ function identityCheckExpression(expectedCompany, targetUrl) {
     const pathOk = pathCompact && visibleCompact.includes(pathCompact);
     const handleMatchesExpected = expectedCompact && pathCompact
       && (pathCompact.includes(expectedCompact) || expectedCompact.includes(pathCompact));
-    const exactSocialUrlOk = isSocial && pathCompact.length >= 4 && locationPathCompact === pathCompact && handleMatchesExpected;
+    const exactSocialUrlOk = isSocial
+      && pathCompact.length >= 4
+      && locationPathCompact === pathCompact
+      && (handleMatchesExpected || officialProfileVerified);
     const staffOk = tokenHits >= 1 && employeeSignal;
     const socialCompanyOk = companyOk || (tokenHits >= Math.min(2, expectedTokens.length) && businessSignal);
     const isFacebook = /facebook\\.com/.test(host);
@@ -1357,7 +1361,7 @@ async function preparePlatformDraft(payload, platform) {
 
   const identity = await waitForJson(
     tab,
-    identityCheckExpression(payload.expectedCompany, payload.targetUrl),
+    identityCheckExpression(payload.expectedCompany, payload.targetUrl, payload.officialProfileVerified),
     item => item && !item.pending,
     12000,
     500
