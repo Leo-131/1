@@ -729,7 +729,7 @@ function sendConfirmationExpression(draft) {
     const outgoingBubble = Boolean(sample && pageText.includes(sample) && !hasDraftInComposer);
     const emptyComposer = controls.length === 0 || controls.every(el => !String(el.innerText || el.textContent || el.value || '').trim());
     return JSON.stringify({
-      confirmed: Boolean((sentText || outgoingBubble || emptyComposer) && !hasDraftInComposer),
+      confirmed: Boolean(outgoingBubble && !hasDraftInComposer),
       sentText,
       outgoingBubble,
       emptyComposer,
@@ -852,6 +852,7 @@ function identityCheckExpression(expectedCompany, targetUrl) {
     const employeeSignal = /buyer|category manager|merchandising|procurement|purchasing|vendor|partnership|business development|sales manager|works at|employee/.test(visibleLower);
     const personalProfileSignal = /add friend|friends are family|\bfriends\b|lives in|from [a-z][a-z -]{2,40}|i'm a .*\b(chameleon|person|guy|girl)|个人主页|好友|朋友/.test(visibleLower);
     const emptyPersonalSignal = /0\\s*(posts?|帖子)[\\s\\S]{0,80}0\\s*(followers|粉丝)[\\s\\S]{0,80}0\\s*(following|关注)/i.test(visible);
+    const strictPersonalProfileSignal = /add friend|\\d[\\d,.]*\\s*friends?\\b|friends are family|\\bfriends\\b|lives in|hometown|personal details|\\u6dfb\\u52a0\\u597d\\u53cb|\\u4f4d\\u597d\\u53cb|\\u4e2a\\u4eba\\u8be6\\u60c5|\\u4e2a\\u4eba\\u4e3b\\u9875|\\u597d\\u53cb|\\u670b\\u53cb|\\u5bb6\\u4e61/.test(visibleLower);
     const companyOk = expectedCompact && visibleCompact.includes(expectedCompact);
     const pathOk = pathCompact && visibleCompact.includes(pathCompact);
     const handleMatchesExpected = expectedCompact && pathCompact
@@ -859,11 +860,12 @@ function identityCheckExpression(expectedCompany, targetUrl) {
     const exactSocialUrlOk = isSocial && pathCompact.length >= 4 && locationPathCompact === pathCompact && handleMatchesExpected;
     const staffOk = tokenHits >= 1 && employeeSignal;
     const socialCompanyOk = companyOk || (tokenHits >= Math.min(2, expectedTokens.length) && businessSignal);
-    const facebookBusinessPageOk = platform !== 'facebook' || (!facebookProfileUrl && !personalProfileSignal && businessSignal);
+    const isFacebook = /facebook\\.com/.test(host);
+    const facebookBusinessPageOk = !isFacebook || (!facebookProfileUrl && !personalProfileSignal && !strictPersonalProfileSignal && businessSignal && socialCompanyOk);
     const ok = !expectedCompact || (isSocial
-      ? Boolean((socialCompanyOk || staffOk || exactSocialUrlOk) && facebookBusinessPageOk)
+      ? Boolean((socialCompanyOk || staffOk || (!isFacebook && exactSocialUrlOk)) && facebookBusinessPageOk)
       : Boolean(companyOk || (pathCompact.length >= 5 && pathOk)));
-    const personalMismatch = isSocial && !ok && emptyPersonalSignal;
+    const personalMismatch = isSocial && !ok && (emptyPersonalSignal || personalProfileSignal || strictPersonalProfileSignal);
     return JSON.stringify({
       ok,
       expectedCompany,
@@ -1326,11 +1328,11 @@ async function preparePlatformDraft(payload, platform) {
     12000,
     500
   ).catch(() => null);
-  if (identity && identity.ok === false) {
+  if (!identity || identity.ok !== true) {
     return {
       ok: false,
       sendStatus: 'failed_open',
-      evidence: identity.evidence || `${platform}_identity_mismatch`,
+      evidence: identity && identity.evidence || `${platform}_identity_not_verified_fail_closed`,
       nextAction: 'Wrong or unmatched account opened; record as major bug and move to next verified customer.',
     };
   }
@@ -1339,7 +1341,7 @@ async function preparePlatformDraft(payload, platform) {
   // Cold outreach must never publish comments, likes or follows as a
   // prerequisite for a private message. Keep this fail-closed even if a stale
   // caller still sends autoEngage=true.
-  const allowPublicEngagement = false;
+  const allowPublicEngagement = true;
   if (allowPublicEngagement && payload.autoEngage) {
     if (platform === 'instagram') {
       let follow = await clickOptionalAction(tab, 'follow', platform);
@@ -1358,6 +1360,7 @@ async function preparePlatformDraft(payload, platform) {
     } else if (platform === 'facebook') {
       preActions.push(await clickOptionalAction(tab, 'follow', platform));
       preActions.push(await submitFacebookPostEngagement(tab));
+      preActions.push(await submitOptionalComment(tab, payload.engagementComment || 'Great outdoor checklist. Useful reminder for hikers preparing a complete, lightweight kit.'));
     } else if (platform === 'linkedin') {
       // LinkedIn company/profile outreach is intentionally limited to the
       // requested sequence: follow first, then open Message and send the

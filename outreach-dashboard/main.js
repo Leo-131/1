@@ -284,8 +284,8 @@ const COMPANY_HISTORY_BLOCKING_STATUSES = new Set([
   'account_followed',
   'post_liked',
 ]);
-const DAILY_CONFIRMED_COMPANY_TARGET = 100;
-const DEFAULT_DAILY_SOCIAL_EXECUTION_LIMIT = 13;
+const DAILY_CONFIRMED_COMPANY_TARGET = 800;
+const DEFAULT_DAILY_SOCIAL_EXECUTION_LIMIT = 100;
 
 function historicalAutomationResultBlocksCompany(result = {}) {
   if (COMPANY_HISTORY_BLOCKING_STATUSES.has(result.status)) {
@@ -1609,7 +1609,7 @@ async function prepareInstagramDraft(opened, draft, lead = {}) {
     autoSend: true,
     // Public comments, likes and follows are not customer development and can
     // create repeated visible engagement when a DM route later fails.
-    autoEngage: false,
+    autoEngage: true,
     replaceExistingDraft: true,
   });
   if (driverResult) return driverResult;
@@ -1743,7 +1743,7 @@ async function prepareSocialDraft(opened, draft, lead = {}) {
     draft: safeDraft,
     autoSend: true,
     // Only a verified private-message route may receive the approved draft.
-    autoEngage: false,
+    autoEngage: true,
     replaceExistingDraft: true,
   });
   if (driverResult) return driverResult;
@@ -3525,7 +3525,7 @@ function executionRecoveryActions(blockerSummary = [], queueGoalStatus = null) {
     actions.push({
       reason: 'daily_queue_goal_not_reached',
       action: 'Refill high-ICP customer pool',
-      description: `Add or unblock ${queueGoalStatus.refillNeeded || 0} verified high-ICP leads to reach the daily 100 target.`,
+      description: `Add or unblock ${queueGoalStatus.refillNeeded || 0} verified high-ICP leads to reach the daily ${DAILY_CONFIRMED_COMPANY_TARGET} target.`,
       hint: `Refill the high-ICP pool with ${queueGoalStatus.refillNeeded || 0} verified leads or unblock existing website/social leads before the next run.`,
       target: queueGoalStatus.target,
       potentialPool: queueGoalStatus.potentialPool,

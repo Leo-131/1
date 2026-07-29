@@ -117,15 +117,16 @@ test('LinkedIn platform engagement follows before sending the approved DM withou
   assert.doesNotMatch(linkedinBranch[1], /submitOptionalComment|clickOptionalAction\(tab, 'like'/);
 });
 
-test('social outreach never enables public engagement before a verified private message', () => {
+test('social engagement is enabled only inside the post-identity execution path', () => {
   const instagramBlock = mainSource.slice(
     mainSource.indexOf('async function prepareInstagramDraft'),
     mainSource.indexOf('function validateLeadTargetForPreparation')
   );
-  assert.doesNotMatch(instagramBlock, /autoEngage:\s*true/);
-  assert.match(instagramBlock, /autoEngage:\s*false/);
-  assert.match(chromeDriverSource, /const allowPublicEngagement = false/);
+  assert.match(instagramBlock, /autoEngage:\s*true/);
+  assert.doesNotMatch(instagramBlock, /autoEngage:\s*false/);
+  assert.match(chromeDriverSource, /const allowPublicEngagement = true/);
   assert.match(chromeDriverSource, /if \(allowPublicEngagement && payload\.autoEngage\)/);
+  assert.ok(chromeDriverSource.indexOf('if (!identity || identity.ok !== true)') < chromeDriverSource.indexOf('const allowPublicEngagement = true'));
 });
 
 test('no-message social profiles are blocked from automatic execution', () => {
@@ -644,8 +645,16 @@ test('Facebook execution rejects personal profiles even when the URL matches', (
   assert.ok(chromeDriverSource.includes('personalProfileSignal'));
   assert.ok(chromeDriverSource.includes('facebookBusinessPageOk'));
   assert.match(chromeDriverSource, /facebookProfileUrl/);
-  assert.match(chromeDriverSource, /platform !== 'facebook' \|\| \(!facebookProfileUrl && !personalProfileSignal && businessSignal\)/);
+  assert.match(chromeDriverSource, /!isFacebook \|\| \(!facebookProfileUrl && !personalProfileSignal && !strictPersonalProfileSignal && businessSignal && socialCompanyOk\)/);
   assert.match(chromeDriverSource, /friends are family|i'm a .*\\b\(chameleon\|person\|guy\|girl\)/);
+});
+
+test('Facebook identity validation rejects personal profiles and requires outgoing-bubble proof', () => {
+  assert.ok(chromeDriverSource.includes('strictPersonalProfileSignal'));
+  assert.ok(chromeDriverSource.includes('businessSignal && socialCompanyOk'));
+  assert.ok(chromeDriverSource.includes("confirmed: Boolean(outgoingBubble && !hasDraftInComposer)"));
+  assert.ok(chromeDriverSource.includes('const allowPublicEngagement = true'));
+  assert.equal(isBlockedFacebookTarget(new URL('https://www.facebook.com/doorout')), true);
 });
 
 test('Facebook composer failure closes stale Messenger UI without reopening the same dead end', () => {
@@ -961,7 +970,8 @@ test('daily execution is serial and can process a priority batch per run', () =>
   assert.ok(mainSource.includes('const limit = Math.min(requestedLimit, remainingDailyGap)'));
   assert.ok(mainSource.includes("app.disableHardwareAcceleration()"));
   assert.ok(mainSource.includes("app.commandLine.appendSwitch('disable-gpu')"));
-  assert.ok(mainSource.includes('DEFAULT_DAILY_SOCIAL_EXECUTION_LIMIT = 13'));
+  assert.ok(mainSource.includes('DAILY_CONFIRMED_COMPANY_TARGET = 800'));
+  assert.ok(mainSource.includes('DEFAULT_DAILY_SOCIAL_EXECUTION_LIMIT = 100'));
   assert.ok(mainSource.includes('const remainingDailyGap = Math.max(0, DAILY_CONFIRMED_COMPANY_TARGET - confirmedToday)'));
   assert.ok(mainSource.includes('const limit = Math.min(requestedLimit, remainingDailyGap)'));
   assert.ok(mainSource.includes('KEEP_AUTOMATION_TABS_VISIBLE'));
@@ -1056,13 +1066,13 @@ test('Windows automation runs every three hours in bounded batches', () => {
   const runner = fs.readFileSync(path.join(__dirname, '..', 'outreach-dashboard', 'run-daily-customer-development.ps1'), 'utf8');
   const config = JSON.parse(fs.readFileSync(path.join(__dirname, '..', 'outreach-dashboard', 'daily-automation-config.json'), 'utf8'));
   assert.equal(config.checkEveryMinutes, 180);
-  assert.equal(config.executionBatchTarget, 13);
+  assert.equal(config.executionBatchTarget, 100);
   assert.ok(installer.includes('RepetitionInterval (New-TimeSpan -Minutes $EveryMinutes)'));
   assert.ok(installer.includes('Get-Content $ConfigPath -Raw -Encoding UTF8'));
   assert.ok(installer.includes('-MultipleInstances IgnoreNew'));
   assert.ok(runner.includes('$env:DAILY_EXECUTE_LIMIT'));
   assert.ok(runner.includes('Get-Content $ConfigPath -Raw -Encoding UTF8'));
-  assert.ok(runner.includes('[Math]::Min([Math]::Max($BatchTarget, 1), 13)'));
+  assert.ok(runner.includes('[Math]::Min([Math]::Max($BatchTarget, 1), 100)'));
 });
 
 test('sales copy selects verified FLEXTAIL collateral and keeps social DMs concise', () => {

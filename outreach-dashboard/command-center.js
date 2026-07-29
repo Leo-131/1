@@ -336,7 +336,6 @@
   }
   function currentTask() {
     return executableDevelopmentTasks().sort(dealPriorityCompare)[0]
-      || (latestRun ? [...latestQueueRows('visibleTodayQueue')].sort(dealPriorityCompare)[0] : null)
       || null;
   }
   function executionResultKey(result) {
@@ -1509,7 +1508,7 @@
     const table = rows.length
       ? `<div class="cc-table-wrap cc-developed-table"><table class="cc-table"><thead><tr><th>客户</th><th>优先渠道</th><th>开发状态</th><th>发送证据</th><th>时间</th><th>入口</th></tr></thead><tbody>${rows.map(item => `<tr><td><b>${esc(item.company || item.name)}</b></td><td><span class="cc-channel-badge ${developedChannel(item)}">${esc(developedChannel(item).toUpperCase())}</span></td><td><span class="cc-chip green">${esc(automationStatusLabel(item.sendStatus || item.status, item.interactionEvidence, item.duplicateRisk))}</span></td><td class="cc-evidence-cell">${esc(item.interactionEvidence || '已记录')}</td><td>${esc(item.developedAt || '')}</td><td>${entryUrl(item) ? `<a href="${esc(entryUrl(item))}" target="_blank" rel="noopener">打开入口</a>` : ''}</td></tr>`).join('')}</tbody></table></div>`
       : '<div class="cc-empty">今天还没有带时间证据的已开发客户</div>';
-    return `<section class="cc-panel cc-developed-panel"><div class="cc-panel-head"><div><h2>今日已开发客户</h2><span class="cc-sub">仅统计 sent_confirmed / submitted_confirmed，不把打开页面、点赞或草稿计为开发</span></div><div class="cc-developed-total"><span>今日真实开发</span><b>${rows.length}</b><em>/ 100</em></div></div><div class="cc-channel-priority"><div class="cc-priority-label"><b>执行优先级</b><span>Email → LinkedIn → Facebook → Instagram</span></div>${channelCards}</div>${table}</section>`;
+    return `<section class="cc-panel cc-developed-panel"><div class="cc-panel-head"><div><h2>今日已开发客户</h2><span class="cc-sub">仅统计 sent_confirmed / submitted_confirmed，不把打开页面、点赞或草稿计为开发</span></div><div class="cc-developed-total"><span>今日真实开发</span><b>${rows.length}</b><em>/ 800</em></div></div><div class="cc-channel-priority"><div class="cc-priority-label"><b>执行优先级</b><span>Email → LinkedIn → Facebook → Instagram</span></div>${channelCards}</div>${table}</section>`;
   }
   function emailLifecyclePanel() {
     const rows = executionResultRows()
@@ -1845,7 +1844,7 @@
   }
   function queue() {
     const mode = query.get('queue') || 'potential';
-    const visibleRows = latestRun ? latestQueueRows('visibleTodayQueue') : untouchedTasks();
+    const visibleRows = executableDevelopmentTasks();
     const list = latestRun
       ? (mode === 'potential' ? visibleRows : mode === 'followup' ? todayFollowupTasks() : mode === 'cooldown' ? latestQueueRows('cooldownQueue') : mode === 'all' ? latestQueueRows('all') : mode === 'developed' ? dailyDevelopedRows() : executableDevelopmentTasks())
       : (mode === 'followup' ? followupTasks() : mode === 'all' ? tasks : untouchedTasks());
