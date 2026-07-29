@@ -1112,6 +1112,7 @@ function baseLead(item, id, evidenceUrl) {
     discoveryProvider: 'google',
     channel: String(item.platform || '').toLowerCase(),
     identityStatus: 'verified',
+    officialSocialProfileVerified: item.officialSocialProfileVerified === true,
     profiledAt: enrichment.decisionMaker && enrichment.dataSources ? new Date().toISOString() : '',
     partnershipStatus: partnerAccount ? 'active_partner' : (item.partnershipStatus || ''),
     doNotOutreach: partnerAccount,

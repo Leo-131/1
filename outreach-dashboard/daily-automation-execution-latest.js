@@ -7,7 +7,7 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
   "executionPhase": "browser_execution",
   "chromeStage": "opened",
   "chromeOpened": true,
-  "chromeOpenedCount": 2,
+  "chromeOpenedCount": 3,
   "customerDevelopmentPerformed": false,
   "customerMessageSent": false,
   "realDevelopmentCount": 0,
@@ -29,14 +29,14 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "ok": false,
       "sendStatus": "failed_open",
       "evidence": "facebook_identity_not_verified_fail_closed",
-      "timestamp": "2026-07-29T09:00:01.738Z",
+      "timestamp": "2026-07-29T09:02:29.225Z",
       "chromeOpen": {
         "ok": true,
         "engine": "codex-chrome-cdp",
         "port": 9224,
         "targetUrl": "https://www.facebook.com/jaxoutdoorgear",
-        "tabId": "CFD5C883AC1EBBCF704123B2B12ED227",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/CFD5C883AC1EBBCF704123B2B12ED227",
+        "tabId": "17D2E1DD7EC87ECA402ED68C4B43C97F",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/17D2E1DD7EC87ECA402ED68C4B43C97F",
         "title": "Facebook"
       },
       "result": {
@@ -50,8 +50,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
           "engine": "codex-chrome-cdp",
           "port": 9224,
           "targetUrl": "https://www.facebook.com/jaxoutdoorgear",
-          "tabId": "CFD5C883AC1EBBCF704123B2B12ED227",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/CFD5C883AC1EBBCF704123B2B12ED227",
+          "tabId": "17D2E1DD7EC87ECA402ED68C4B43C97F",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/17D2E1DD7EC87ECA402ED68C4B43C97F",
           "title": "Facebook"
         },
         "sendStatus": "failed_open",
@@ -68,6 +68,53 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       }
     },
     {
+      "id": "google-customer-camp-studio-thailand-instagram",
+      "company": "Camp Studio Thailand",
+      "action": "develop",
+      "platform": "instagram",
+      "targetUrl": "https://www.instagram.com/campstudio.chiangmai/",
+      "ok": false,
+      "sendStatus": "failed_open",
+      "evidence": "instagram_identity_not_verified_fail_closed",
+      "timestamp": "2026-07-29T09:02:50.326Z",
+      "chromeOpen": {
+        "ok": true,
+        "engine": "codex-chrome-cdp",
+        "port": 9224,
+        "targetUrl": "https://www.instagram.com/campstudio.chiangmai/",
+        "tabId": "B0F99CBA64845DFF426C88D521554401",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/B0F99CBA64845DFF426C88D521554401",
+        "title": "CAMP STUDIO THAILAND (@campstudio.chiangmai) · Instagram 照片和视频"
+      },
+      "result": {
+        "ok": false,
+        "engine": "codex-chrome-cdp",
+        "browserEngine": "codex-chrome-cdp",
+        "mode": "codex_chrome_cdp",
+        "targetUrl": "https://www.instagram.com/campstudio.chiangmai/",
+        "chromeOpen": {
+          "ok": true,
+          "engine": "codex-chrome-cdp",
+          "port": 9224,
+          "targetUrl": "https://www.instagram.com/campstudio.chiangmai/",
+          "tabId": "B0F99CBA64845DFF426C88D521554401",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/B0F99CBA64845DFF426C88D521554401",
+          "title": "CAMP STUDIO THAILAND (@campstudio.chiangmai) · Instagram 照片和视频"
+        },
+        "sendStatus": "failed_open",
+        "output": "{\"verdict\":\"major_bug_review_needed\",\"evidence\":\"instagram_identity_not_verified_fail_closed\",\"nextAction\":\"Wrong or unmatched account opened; record as major bug and move to next verified customer.\",\"draft\":\"Hi Camp Studio Thailand team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a distributor/importer, the strongest fit is regional sell-through, channel fit, margin-ready product line, and whether they cover outdoor/travel electronics buyers; your camping retailer network focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the owner of distribution evaluation or the best time for a short intro video meeting?\",\"sendStatus\":\"failed_open\"}",
+        "decision": {
+          "verdict": "develop",
+          "fitScore": 86,
+          "reason": "local_codex_extension_template",
+          "draft": "Hi Camp Studio Thailand team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a distributor/importer, the strongest fit is regional sell-through, channel fit, margin-ready product line, and whether they cover outdoor/travel electronics buyers; your camping retailer network focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the owner of distribution evaluation or the best time for a short intro video meeting?"
+        },
+        "executionLayer": "Chrome CDP fallback",
+        "glmModel": "not_used",
+        "followup": false
+      }
+    },
+    {
       "id": "google-customer-doorout-instagram",
       "company": "Doorout",
       "action": "develop",
@@ -76,14 +123,14 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "ok": false,
       "sendStatus": "failed_open",
       "evidence": "instagram_identity_not_verified_fail_closed",
-      "timestamp": "2026-07-29T09:00:22.147Z",
+      "timestamp": "2026-07-29T09:03:10.400Z",
       "chromeOpen": {
         "ok": true,
         "engine": "codex-chrome-cdp",
         "port": 9224,
         "targetUrl": "https://www.instagram.com/doorout_com/",
-        "tabId": "FB6FE063529D8E70D2AC4C61C71824A4",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/FB6FE063529D8E70D2AC4C61C71824A4",
+        "tabId": "2E394EDD4C8E598B379F8DD407ACEC0E",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/2E394EDD4C8E598B379F8DD407ACEC0E",
         "title": "Doorout | Outdoor erleben (@doorout_com) · Instagram 照片和视频"
       },
       "result": {
@@ -97,8 +144,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
           "engine": "codex-chrome-cdp",
           "port": 9224,
           "targetUrl": "https://www.instagram.com/doorout_com/",
-          "tabId": "FB6FE063529D8E70D2AC4C61C71824A4",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/FB6FE063529D8E70D2AC4C61C71824A4",
+          "tabId": "2E394EDD4C8E598B379F8DD407ACEC0E",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/2E394EDD4C8E598B379F8DD407ACEC0E",
           "title": "Doorout | Outdoor erleben (@doorout_com) · Instagram 照片和视频"
         },
         "sendStatus": "failed_open",
@@ -125,14 +172,14 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "ok": false,
       "sendStatus": "failed_open",
       "evidence": "facebook_identity_not_verified_fail_closed",
-      "timestamp": "2026-07-29T09:00:01.738Z",
+      "timestamp": "2026-07-29T09:02:29.225Z",
       "chromeOpen": {
         "ok": true,
         "engine": "codex-chrome-cdp",
         "port": 9224,
         "targetUrl": "https://www.facebook.com/jaxoutdoorgear",
-        "tabId": "CFD5C883AC1EBBCF704123B2B12ED227",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/CFD5C883AC1EBBCF704123B2B12ED227",
+        "tabId": "17D2E1DD7EC87ECA402ED68C4B43C97F",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/17D2E1DD7EC87ECA402ED68C4B43C97F",
         "title": "Facebook"
       },
       "result": {
@@ -146,8 +193,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
           "engine": "codex-chrome-cdp",
           "port": 9224,
           "targetUrl": "https://www.facebook.com/jaxoutdoorgear",
-          "tabId": "CFD5C883AC1EBBCF704123B2B12ED227",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/CFD5C883AC1EBBCF704123B2B12ED227",
+          "tabId": "17D2E1DD7EC87ECA402ED68C4B43C97F",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/17D2E1DD7EC87ECA402ED68C4B43C97F",
           "title": "Facebook"
         },
         "sendStatus": "failed_open",
@@ -164,6 +211,53 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       }
     },
     {
+      "id": "google-customer-camp-studio-thailand-instagram",
+      "company": "Camp Studio Thailand",
+      "action": "develop",
+      "platform": "instagram",
+      "targetUrl": "https://www.instagram.com/campstudio.chiangmai/",
+      "ok": false,
+      "sendStatus": "failed_open",
+      "evidence": "instagram_identity_not_verified_fail_closed",
+      "timestamp": "2026-07-29T09:02:50.326Z",
+      "chromeOpen": {
+        "ok": true,
+        "engine": "codex-chrome-cdp",
+        "port": 9224,
+        "targetUrl": "https://www.instagram.com/campstudio.chiangmai/",
+        "tabId": "B0F99CBA64845DFF426C88D521554401",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/B0F99CBA64845DFF426C88D521554401",
+        "title": "CAMP STUDIO THAILAND (@campstudio.chiangmai) · Instagram 照片和视频"
+      },
+      "result": {
+        "ok": false,
+        "engine": "codex-chrome-cdp",
+        "browserEngine": "codex-chrome-cdp",
+        "mode": "codex_chrome_cdp",
+        "targetUrl": "https://www.instagram.com/campstudio.chiangmai/",
+        "chromeOpen": {
+          "ok": true,
+          "engine": "codex-chrome-cdp",
+          "port": 9224,
+          "targetUrl": "https://www.instagram.com/campstudio.chiangmai/",
+          "tabId": "B0F99CBA64845DFF426C88D521554401",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/B0F99CBA64845DFF426C88D521554401",
+          "title": "CAMP STUDIO THAILAND (@campstudio.chiangmai) · Instagram 照片和视频"
+        },
+        "sendStatus": "failed_open",
+        "output": "{\"verdict\":\"major_bug_review_needed\",\"evidence\":\"instagram_identity_not_verified_fail_closed\",\"nextAction\":\"Wrong or unmatched account opened; record as major bug and move to next verified customer.\",\"draft\":\"Hi Camp Studio Thailand team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a distributor/importer, the strongest fit is regional sell-through, channel fit, margin-ready product line, and whether they cover outdoor/travel electronics buyers; your camping retailer network focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the owner of distribution evaluation or the best time for a short intro video meeting?\",\"sendStatus\":\"failed_open\"}",
+        "decision": {
+          "verdict": "develop",
+          "fitScore": 86,
+          "reason": "local_codex_extension_template",
+          "draft": "Hi Camp Studio Thailand team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a distributor/importer, the strongest fit is regional sell-through, channel fit, margin-ready product line, and whether they cover outdoor/travel electronics buyers; your camping retailer network focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the owner of distribution evaluation or the best time for a short intro video meeting?"
+        },
+        "executionLayer": "Chrome CDP fallback",
+        "glmModel": "not_used",
+        "followup": false
+      }
+    },
+    {
       "id": "google-customer-doorout-instagram",
       "company": "Doorout",
       "action": "develop",
@@ -172,14 +266,14 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "ok": false,
       "sendStatus": "failed_open",
       "evidence": "instagram_identity_not_verified_fail_closed",
-      "timestamp": "2026-07-29T09:00:22.147Z",
+      "timestamp": "2026-07-29T09:03:10.400Z",
       "chromeOpen": {
         "ok": true,
         "engine": "codex-chrome-cdp",
         "port": 9224,
         "targetUrl": "https://www.instagram.com/doorout_com/",
-        "tabId": "FB6FE063529D8E70D2AC4C61C71824A4",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/FB6FE063529D8E70D2AC4C61C71824A4",
+        "tabId": "2E394EDD4C8E598B379F8DD407ACEC0E",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/2E394EDD4C8E598B379F8DD407ACEC0E",
         "title": "Doorout | Outdoor erleben (@doorout_com) · Instagram 照片和视频"
       },
       "result": {
@@ -193,8 +287,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
           "engine": "codex-chrome-cdp",
           "port": 9224,
           "targetUrl": "https://www.instagram.com/doorout_com/",
-          "tabId": "FB6FE063529D8E70D2AC4C61C71824A4",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/FB6FE063529D8E70D2AC4C61C71824A4",
+          "tabId": "2E394EDD4C8E598B379F8DD407ACEC0E",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/2E394EDD4C8E598B379F8DD407ACEC0E",
           "title": "Doorout | Outdoor erleben (@doorout_com) · Instagram 照片和视频"
         },
         "sendStatus": "failed_open",
@@ -615,12 +709,6 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "reason": "concrete_google_discovered_major_customer_instagram"
     },
     {
-      "id": "google-customer-camp-studio-thailand-instagram",
-      "company": "Camp Studio Thailand",
-      "action": "develop",
-      "reason": "concrete_google_discovered_major_customer_instagram"
-    },
-    {
       "id": "google-customer-72hours-instagram",
       "company": "72hours",
       "action": "develop",
@@ -1089,12 +1177,6 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "reason": "concrete_google_discovered_major_customer_instagram"
     },
     {
-      "id": "google-customer-camp-studio-thailand-instagram",
-      "company": "Camp Studio Thailand",
-      "action": "develop",
-      "reason": "concrete_google_discovered_major_customer_instagram"
-    },
-    {
       "id": "google-customer-72hours-instagram",
       "company": "72hours",
       "action": "develop",
@@ -1296,12 +1378,12 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "count": 32
     },
     {
-      "reason": "concrete_google_discovered_major_customer_instagram",
+      "reason": "concrete_google_discovered_major_customer_facebook",
       "status": "skipped",
-      "count": 26
+      "count": 24
     },
     {
-      "reason": "concrete_google_discovered_major_customer_facebook",
+      "reason": "concrete_google_discovered_major_customer_instagram",
       "status": "skipped",
       "count": 24
     },
@@ -1313,7 +1395,7 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     {
       "reason": "failed_open",
       "status": "failed_open",
-      "count": 2
+      "count": 3
     },
     {
       "reason": "same_day_customer_already_developed",
@@ -1324,10 +1406,10 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
   "blockerCounts": {
     "homepage_only_contact_path_requires_verification": 74,
     "missing_verified_profile_url": 32,
-    "concrete_google_discovered_major_customer_instagram": 26,
     "concrete_google_discovered_major_customer_facebook": 24,
+    "concrete_google_discovered_major_customer_instagram": 24,
     "official_website_contact_channel": 18,
-    "failed_open": 2,
+    "failed_open": 3,
     "same_day_customer_already_developed": 1
   },
   "queueGoalStatus": {
@@ -1339,7 +1421,7 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     "reached": false,
     "action": "Add more verified high-ICP sources or unblock existing website/social leads."
   },
-  "userVisibleStatus": "Customer development was not performed. Blockers: homepage_only_contact_path_requires_verification (74); missing_verified_profile_url (32); concrete_google_discovered_major_customer_instagram (26).",
+  "userVisibleStatus": "Customer development was not performed. Blockers: homepage_only_contact_path_requires_verification (74); missing_verified_profile_url (32); concrete_google_discovered_major_customer_facebook (24).",
   "recoveryHint": "Refill the high-ICP pool with 10 verified leads or unblock existing website/social leads before the next run. Add a verified Facebook or Instagram profile URL before retrying social outreach. Confirm the official social profile and safe message entry before rerunning Google-discovered social outreach. Verify the official profile opens and exposes a safe message composer, or switch to another verified channel.",
   "recoveryActions": [
     {
@@ -1376,12 +1458,12 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     "stderr": "",
     "error": "",
     "visibility": {
-      "updatedAt": "2026-07-29T09:00:23.329Z",
+      "updatedAt": "2026-07-29T09:03:11.643Z",
       "source": "main-refreshDailyAutomationArtifacts",
       "runDate": "2026-07-29",
-      "artifactGeneratedAt": "2026-07-29T09:00:22.293Z",
-      "executionGeneratedAt": "2026-07-29T08:57:15.381Z",
-      "githubSyncUpdatedAt": "2026-07-29T08:58:06.718Z",
+      "artifactGeneratedAt": "2026-07-29T09:03:10.587Z",
+      "executionGeneratedAt": "2026-07-29T09:00:24.110Z",
+      "githubSyncUpdatedAt": "2026-07-29T09:01:15.223Z",
       "counts": {
         "dailyQueue": 90,
         "googleDiscovered": 66,
@@ -1443,6 +1525,6 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "ALIBABA_SMTP_SECURITY_PASSWORD"
     ]
   },
-  "ledgerReconciliationCount": 3,
-  "completedAt": "2026-07-29T09:00:24.110Z"
+  "ledgerReconciliationCount": 2,
+  "completedAt": "2026-07-29T09:03:12.182Z"
 };

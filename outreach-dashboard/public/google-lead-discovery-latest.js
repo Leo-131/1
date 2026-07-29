@@ -1,5 +1,5 @@
 window.GOOGLE_LEAD_DISCOVERY_LATEST = {
-  "generatedAt": "2026-07-29T08:59:24.263Z",
+  "generatedAt": "2026-07-29T09:01:48.843Z",
   "mode": "google-concrete-customer-discovery",
   "objective": "continuously refill verified agency and key-account prospects above ICP 70, exclude active customers, then convert them into exact official social and website outreach targets",
   "discoveryRefillAttempted": true,
@@ -55,6 +55,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -64,7 +65,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/29 16:59:24",
+        "localTime": "2026/7/29 17:01:48",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "linkedin",
@@ -123,6 +124,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -132,7 +134,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/29 16:59:24",
+        "localTime": "2026/7/29 17:01:48",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "linkedin",
@@ -191,6 +193,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -200,7 +203,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/29 16:59:24",
+        "localTime": "2026/7/29 17:01:48",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -266,6 +269,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -275,7 +279,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/29 16:59:24",
+        "localTime": "2026/7/29 17:01:48",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -341,6 +345,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -350,7 +355,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/29 16:59:24",
+        "localTime": "2026/7/29 17:01:48",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "linkedin",
@@ -423,6 +428,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
       "profiledAt": "2026-07-14T04:02:10.343Z",
       "partnershipStatus": "active_partner",
       "doNotOutreach": true,
@@ -432,7 +438,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/29 16:59:24",
+        "localTime": "2026/7/29 17:01:48",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -518,6 +524,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
       "profiledAt": "2026-07-15T12:52:31.390Z",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -527,7 +534,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/29 16:59:24",
+        "localTime": "2026/7/29 17:01:48",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -600,6 +607,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
       "profiledAt": "2026-07-14T04:02:10.359Z",
       "partnershipStatus": "active_partner",
       "doNotOutreach": true,
@@ -609,7 +617,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/29 16:59:24",
+        "localTime": "2026/7/29 17:01:48",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -684,6 +692,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
       "profiledAt": "2026-07-14T04:02:10.359Z",
       "partnershipStatus": "active_partner",
       "doNotOutreach": true,
@@ -693,7 +702,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/29 16:59:24",
+        "localTime": "2026/7/29 17:01:48",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -786,6 +795,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
       "profiledAt": "2026-07-15T12:52:31.390Z",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -795,7 +805,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/29 16:59:24",
+        "localTime": "2026/7/29 17:01:48",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -861,6 +871,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -870,7 +881,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/29 16:59:24",
+        "localTime": "2026/7/29 17:01:48",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -936,6 +947,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -945,7 +957,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/29 16:59:24",
+        "localTime": "2026/7/29 17:01:48",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "linkedin",
@@ -1004,6 +1016,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -1013,7 +1026,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/29 16:59:24",
+        "localTime": "2026/7/29 17:01:48",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -1093,6 +1106,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
       "profiledAt": "2026-07-14T04:02:10.359Z",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -1102,7 +1116,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/29 16:59:24",
+        "localTime": "2026/7/29 17:01:48",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -1175,6 +1189,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
       "profiledAt": "2026-07-14T04:02:10.359Z",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -1184,7 +1199,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/29 16:59:24",
+        "localTime": "2026/7/29 17:01:48",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -1259,6 +1274,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
       "profiledAt": "2026-07-14T04:02:10.359Z",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -1268,7 +1284,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/29 16:59:24",
+        "localTime": "2026/7/29 17:01:48",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -1334,6 +1350,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
       "profiledAt": "",
       "partnershipStatus": "active_partner",
       "doNotOutreach": true,
@@ -1343,7 +1360,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/29 16:59:24",
+        "localTime": "2026/7/29 17:01:48",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -1423,6 +1440,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
       "profiledAt": "2026-07-14T04:02:10.360Z",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -1432,7 +1450,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/29 16:59:24",
+        "localTime": "2026/7/29 17:01:48",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -1491,6 +1509,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -1500,7 +1519,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/29 16:59:24",
+        "localTime": "2026/7/29 17:01:48",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -1573,6 +1592,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
       "profiledAt": "2026-07-14T04:02:10.360Z",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -1582,7 +1602,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/29 16:59:24",
+        "localTime": "2026/7/29 17:01:48",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -1643,6 +1663,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -1652,7 +1673,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/29 16:59:24",
+        "localTime": "2026/7/29 17:01:48",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -1727,6 +1748,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
       "profiledAt": "2026-07-14T04:02:10.360Z",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -1736,7 +1758,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/29 16:59:24",
+        "localTime": "2026/7/29 17:01:48",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -1802,6 +1824,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -1811,7 +1834,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/29 16:59:24",
+        "localTime": "2026/7/29 17:01:48",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -1891,6 +1914,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
       "profiledAt": "2026-07-14T04:02:10.360Z",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -1900,7 +1924,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/29 16:59:24",
+        "localTime": "2026/7/29 17:01:48",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -1959,6 +1983,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -1968,7 +1993,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/29 16:59:24",
+        "localTime": "2026/7/29 17:01:48",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -2041,6 +2066,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
       "profiledAt": "2026-07-14T04:02:10.360Z",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -2050,7 +2076,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/29 16:59:24",
+        "localTime": "2026/7/29 17:01:48",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -2111,6 +2137,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -2120,7 +2147,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/29 16:59:24",
+        "localTime": "2026/7/29 17:01:48",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -2195,6 +2222,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
       "profiledAt": "2026-07-14T04:02:10.360Z",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -2204,7 +2232,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/29 16:59:24",
+        "localTime": "2026/7/29 17:01:48",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -2270,6 +2298,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -2279,7 +2308,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/29 16:59:24",
+        "localTime": "2026/7/29 17:01:48",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -2359,6 +2388,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
       "profiledAt": "2026-07-14T04:02:10.360Z",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -2368,7 +2398,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/29 16:59:24",
+        "localTime": "2026/7/29 17:01:48",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -2427,6 +2457,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -2436,7 +2467,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/29 16:59:24",
+        "localTime": "2026/7/29 17:01:48",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -2509,6 +2540,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
       "profiledAt": "2026-07-14T04:02:10.360Z",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -2518,7 +2550,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/29 16:59:24",
+        "localTime": "2026/7/29 17:01:48",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -2579,6 +2611,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -2588,7 +2621,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/29 16:59:24",
+        "localTime": "2026/7/29 17:01:48",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -2663,6 +2696,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
       "profiledAt": "2026-07-14T04:02:10.360Z",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -2672,7 +2706,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/29 16:59:24",
+        "localTime": "2026/7/29 17:01:48",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -2738,6 +2772,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -2747,7 +2782,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/29 16:59:24",
+        "localTime": "2026/7/29 17:01:48",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -2813,6 +2848,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -2822,7 +2858,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/29 16:59:24",
+        "localTime": "2026/7/29 17:01:48",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -2903,6 +2939,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
       "profiledAt": "2026-07-14T04:02:10.360Z",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -2912,7 +2949,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/29 16:59:24",
+        "localTime": "2026/7/29 17:01:48",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -2971,6 +3008,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -2980,7 +3018,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/29 16:59:24",
+        "localTime": "2026/7/29 17:01:48",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -3054,6 +3092,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
       "profiledAt": "2026-07-14T04:02:10.360Z",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -3063,7 +3102,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/29 16:59:24",
+        "localTime": "2026/7/29 17:01:48",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -3139,6 +3178,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
       "profiledAt": "2026-07-14T04:02:10.360Z",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -3148,7 +3188,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/29 16:59:24",
+        "localTime": "2026/7/29 17:01:48",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -3214,6 +3254,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
       "profiledAt": "",
       "partnershipStatus": "active_partner",
       "doNotOutreach": true,
@@ -3223,7 +3264,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/29 16:59:24",
+        "localTime": "2026/7/29 17:01:48",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -3289,6 +3330,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -3298,7 +3340,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/29 16:59:24",
+        "localTime": "2026/7/29 17:01:48",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -3364,6 +3406,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -3373,7 +3416,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/29 16:59:24",
+        "localTime": "2026/7/29 17:01:48",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -3432,6 +3475,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -3441,7 +3485,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/29 16:59:24",
+        "localTime": "2026/7/29 17:01:48",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -3514,6 +3558,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
       "profiledAt": "2026-07-14T04:02:10.360Z",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -3523,7 +3568,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/29 16:59:24",
+        "localTime": "2026/7/29 17:01:48",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -3600,6 +3645,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -3609,7 +3655,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/29 16:59:24",
+        "localTime": "2026/7/29 17:01:48",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -3675,6 +3721,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -3684,7 +3731,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/29 16:59:24",
+        "localTime": "2026/7/29 17:01:48",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -3750,6 +3797,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -3759,7 +3807,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/29 16:59:24",
+        "localTime": "2026/7/29 17:01:48",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -3831,6 +3879,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -3840,7 +3889,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/29 16:59:24",
+        "localTime": "2026/7/29 17:01:48",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -3920,6 +3969,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
       "profiledAt": "2026-07-14T04:02:10.360Z",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -3929,7 +3979,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/29 16:59:24",
+        "localTime": "2026/7/29 17:01:48",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -4002,6 +4052,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
       "profiledAt": "2026-07-14T04:02:10.360Z",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -4011,7 +4062,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/29 16:59:24",
+        "localTime": "2026/7/29 17:01:48",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -4070,6 +4121,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -4079,7 +4131,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/29 16:59:24",
+        "localTime": "2026/7/29 17:01:48",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -4138,6 +4190,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -4147,7 +4200,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/29 16:59:24",
+        "localTime": "2026/7/29 17:01:48",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -4206,6 +4259,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -4215,7 +4269,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/29 16:59:24",
+        "localTime": "2026/7/29 17:01:48",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -4288,6 +4342,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
       "profiledAt": "2026-07-14T04:02:10.360Z",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -4297,7 +4352,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/29 16:59:24",
+        "localTime": "2026/7/29 17:01:48",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -4372,6 +4427,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
       "profiledAt": "2026-07-14T04:02:10.360Z",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -4381,7 +4437,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/29 16:59:24",
+        "localTime": "2026/7/29 17:01:48",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -4462,6 +4518,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
       "profiledAt": "2026-07-14T04:02:10.360Z",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -4471,7 +4528,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/29 16:59:24",
+        "localTime": "2026/7/29 17:01:48",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -4546,6 +4603,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
       "profiledAt": "2026-07-14T04:02:10.360Z",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -4555,7 +4613,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/29 16:59:24",
+        "localTime": "2026/7/29 17:01:48",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -4635,6 +4693,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
       "profiledAt": "2026-07-14T04:02:10.360Z",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -4644,7 +4703,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/29 16:59:24",
+        "localTime": "2026/7/29 17:01:48",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -4730,6 +4789,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
       "profiledAt": "2026-07-14T04:02:10.360Z",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -4739,7 +4799,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/29 16:59:24",
+        "localTime": "2026/7/29 17:01:48",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -4819,6 +4879,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
       "profiledAt": "2026-07-14T04:02:10.360Z",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -4828,7 +4889,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/29 16:59:24",
+        "localTime": "2026/7/29 17:01:48",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -4905,6 +4966,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -4914,7 +4976,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/29 16:59:24",
+        "localTime": "2026/7/29 17:01:48",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -4980,6 +5042,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -4989,7 +5052,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/29 16:59:24",
+        "localTime": "2026/7/29 17:01:48",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -5055,6 +5118,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -5064,7 +5128,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/29 16:59:24",
+        "localTime": "2026/7/29 17:01:48",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -5130,6 +5194,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -5139,7 +5204,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/29 16:59:24",
+        "localTime": "2026/7/29 17:01:48",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -5205,6 +5270,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -5214,7 +5280,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/29 16:59:24",
+        "localTime": "2026/7/29 17:01:48",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -5280,6 +5346,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -5289,7 +5356,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/29 16:59:24",
+        "localTime": "2026/7/29 17:01:48",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -5355,6 +5422,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -5364,7 +5432,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/29 16:59:24",
+        "localTime": "2026/7/29 17:01:48",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -5430,6 +5498,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -5439,7 +5508,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/29 16:59:24",
+        "localTime": "2026/7/29 17:01:48",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -5505,6 +5574,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -5514,7 +5584,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/29 16:59:24",
+        "localTime": "2026/7/29 17:01:48",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -5580,6 +5650,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -5589,7 +5660,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/29 16:59:24",
+        "localTime": "2026/7/29 17:01:48",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -5669,6 +5740,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
       "profiledAt": "2026-07-14T04:02:10.360Z",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -5678,7 +5750,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/29 16:59:24",
+        "localTime": "2026/7/29 17:01:48",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -5737,6 +5809,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -5746,7 +5819,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/29 16:59:24",
+        "localTime": "2026/7/29 17:01:48",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -5819,6 +5892,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
       "profiledAt": "2026-07-14T04:02:10.360Z",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -5828,7 +5902,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/29 16:59:24",
+        "localTime": "2026/7/29 17:01:48",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -5889,6 +5963,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -5898,7 +5973,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/29 16:59:24",
+        "localTime": "2026/7/29 17:01:48",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -5973,6 +6048,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
       "profiledAt": "2026-07-14T04:02:10.360Z",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -5982,7 +6058,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/29 16:59:24",
+        "localTime": "2026/7/29 17:01:48",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -6048,6 +6124,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -6057,7 +6134,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/29 16:59:24",
+        "localTime": "2026/7/29 17:01:48",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -6123,6 +6200,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -6132,7 +6210,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/29 16:59:24",
+        "localTime": "2026/7/29 17:01:48",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -6198,6 +6276,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -6207,7 +6286,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/29 16:59:24",
+        "localTime": "2026/7/29 17:01:48",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -6273,6 +6352,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -6282,7 +6362,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/29 16:59:24",
+        "localTime": "2026/7/29 17:01:48",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -6348,6 +6428,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -6357,7 +6438,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/29 16:59:24",
+        "localTime": "2026/7/29 17:01:48",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -6423,6 +6504,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -6432,7 +6514,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/29 16:59:24",
+        "localTime": "2026/7/29 17:01:48",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -6498,6 +6580,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -6507,7 +6590,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/29 16:59:24",
+        "localTime": "2026/7/29 17:01:48",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -6573,6 +6656,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -6582,7 +6666,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/29 16:59:24",
+        "localTime": "2026/7/29 17:01:48",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -6648,6 +6732,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -6657,7 +6742,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/29 16:59:24",
+        "localTime": "2026/7/29 17:01:48",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -6723,6 +6808,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -6732,7 +6818,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/29 16:59:24",
+        "localTime": "2026/7/29 17:01:48",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -6812,6 +6898,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
       "profiledAt": "2026-07-14T04:02:10.360Z",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -6821,7 +6908,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/29 16:59:24",
+        "localTime": "2026/7/29 17:01:48",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -6880,6 +6967,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -6889,7 +6977,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/29 16:59:24",
+        "localTime": "2026/7/29 17:01:48",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -6948,6 +7036,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -6957,7 +7046,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/29 16:59:24",
+        "localTime": "2026/7/29 17:01:48",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -7016,6 +7105,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -7025,7 +7115,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/29 16:59:24",
+        "localTime": "2026/7/29 17:01:48",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -7084,6 +7174,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -7093,7 +7184,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/29 16:59:24",
+        "localTime": "2026/7/29 17:01:48",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -7166,6 +7257,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
       "profiledAt": "2026-07-14T04:02:10.360Z",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -7175,7 +7267,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/29 16:59:24",
+        "localTime": "2026/7/29 17:01:48",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -7236,6 +7328,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -7245,7 +7338,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/29 16:59:24",
+        "localTime": "2026/7/29 17:01:48",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -7320,6 +7413,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
       "profiledAt": "2026-07-14T04:02:10.360Z",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -7329,7 +7423,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/29 16:59:24",
+        "localTime": "2026/7/29 17:01:48",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -7395,6 +7489,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -7404,7 +7499,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/29 16:59:24",
+        "localTime": "2026/7/29 17:01:48",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -7470,6 +7565,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -7479,7 +7575,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/29 16:59:24",
+        "localTime": "2026/7/29 17:01:48",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -7545,6 +7641,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -7554,7 +7651,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/29 16:59:24",
+        "localTime": "2026/7/29 17:01:48",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -7620,6 +7717,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -7629,7 +7727,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/29 16:59:24",
+        "localTime": "2026/7/29 17:01:48",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -7695,6 +7793,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -7704,7 +7803,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/29 16:59:24",
+        "localTime": "2026/7/29 17:01:48",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -7770,6 +7869,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -7779,7 +7879,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/29 16:59:24",
+        "localTime": "2026/7/29 17:01:48",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -7845,6 +7945,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -7854,7 +7955,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/29 16:59:24",
+        "localTime": "2026/7/29 17:01:48",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -7920,6 +8021,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -7929,7 +8031,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/29 16:59:24",
+        "localTime": "2026/7/29 17:01:48",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -7995,6 +8097,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -8004,7 +8107,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/29 16:59:24",
+        "localTime": "2026/7/29 17:01:48",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -8070,6 +8173,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -8079,7 +8183,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/29 16:59:24",
+        "localTime": "2026/7/29 17:01:48",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -8145,6 +8249,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -8154,7 +8259,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/29 16:59:24",
+        "localTime": "2026/7/29 17:01:48",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -8213,6 +8318,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -8222,7 +8328,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/29 16:59:24",
+        "localTime": "2026/7/29 17:01:48",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -8281,6 +8387,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -8290,7 +8397,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/29 16:59:24",
+        "localTime": "2026/7/29 17:01:48",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -8351,6 +8458,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -8360,7 +8468,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/29 16:59:24",
+        "localTime": "2026/7/29 17:01:48",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -8426,6 +8534,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -8435,7 +8544,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/29 16:59:24",
+        "localTime": "2026/7/29 17:01:48",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -8501,6 +8610,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -8510,7 +8620,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/29 16:59:24",
+        "localTime": "2026/7/29 17:01:48",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -8576,6 +8686,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -8585,7 +8696,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/29 16:59:24",
+        "localTime": "2026/7/29 17:01:48",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -8651,6 +8762,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -8660,7 +8772,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/29 16:59:24",
+        "localTime": "2026/7/29 17:01:48",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -8726,6 +8838,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -8735,7 +8848,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/29 16:59:24",
+        "localTime": "2026/7/29 17:01:48",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -8801,6 +8914,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -8810,7 +8924,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/29 16:59:24",
+        "localTime": "2026/7/29 17:01:48",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -8876,6 +8990,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -8885,7 +9000,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/29 16:59:24",
+        "localTime": "2026/7/29 17:01:48",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -8951,6 +9066,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -8960,7 +9076,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/29 16:59:24",
+        "localTime": "2026/7/29 17:01:48",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -9026,6 +9142,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -9035,7 +9152,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/29 16:59:24",
+        "localTime": "2026/7/29 17:01:48",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -9101,6 +9218,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
+      "officialSocialProfileVerified": true,
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -9110,7 +9228,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/29 16:59:24",
+        "localTime": "2026/7/29 17:01:48",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -9183,6 +9301,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
       "profiledAt": "2026-07-14T04:02:10.360Z",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -9192,7 +9311,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/29 16:59:24",
+        "localTime": "2026/7/29 17:01:48",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -9251,6 +9370,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -9260,7 +9380,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/29 16:59:24",
+        "localTime": "2026/7/29 17:01:48",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -9333,6 +9453,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
       "profiledAt": "2026-07-14T04:02:10.360Z",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -9342,7 +9463,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/29 16:59:24",
+        "localTime": "2026/7/29 17:01:48",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -9403,6 +9524,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -9412,7 +9534,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/29 16:59:24",
+        "localTime": "2026/7/29 17:01:48",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -9473,6 +9595,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
+      "officialSocialProfileVerified": true,
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -9482,7 +9605,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/29 16:59:24",
+        "localTime": "2026/7/29 17:01:48",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -9562,6 +9685,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
       "profiledAt": "2026-07-14T04:02:10.360Z",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -9571,7 +9695,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/29 16:59:24",
+        "localTime": "2026/7/29 17:01:48",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -9637,6 +9761,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -9646,7 +9771,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/29 16:59:24",
+        "localTime": "2026/7/29 17:01:48",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -9712,6 +9837,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -9721,7 +9847,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/29 16:59:24",
+        "localTime": "2026/7/29 17:01:48",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -9787,6 +9913,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -9796,7 +9923,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/29 16:59:24",
+        "localTime": "2026/7/29 17:01:48",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -9862,6 +9989,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -9871,7 +9999,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/29 16:59:24",
+        "localTime": "2026/7/29 17:01:48",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -9937,6 +10065,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -9946,7 +10075,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/29 16:59:24",
+        "localTime": "2026/7/29 17:01:48",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -10012,6 +10141,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -10021,7 +10151,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/29 16:59:24",
+        "localTime": "2026/7/29 17:01:48",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -10087,6 +10217,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -10096,7 +10227,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/29 16:59:24",
+        "localTime": "2026/7/29 17:01:48",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -10162,6 +10293,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -10171,7 +10303,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/29 16:59:24",
+        "localTime": "2026/7/29 17:01:48",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -10230,6 +10362,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -10239,7 +10372,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/29 16:59:24",
+        "localTime": "2026/7/29 17:01:48",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -10298,6 +10431,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -10307,7 +10441,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/29 16:59:24",
+        "localTime": "2026/7/29 17:01:48",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -10366,6 +10500,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -10375,7 +10510,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/29 16:59:24",
+        "localTime": "2026/7/29 17:01:48",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -10434,6 +10569,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -10443,7 +10579,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/29 16:59:24",
+        "localTime": "2026/7/29 17:01:48",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -10502,6 +10638,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -10511,7 +10648,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/29 16:59:24",
+        "localTime": "2026/7/29 17:01:48",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -10570,6 +10707,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -10579,7 +10717,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/29 16:59:24",
+        "localTime": "2026/7/29 17:01:48",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -10638,6 +10776,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -10647,7 +10786,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/29 16:59:24",
+        "localTime": "2026/7/29 17:01:48",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -10706,6 +10845,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -10715,7 +10855,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/29 16:59:24",
+        "localTime": "2026/7/29 17:01:48",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -10774,6 +10914,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -10783,7 +10924,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/29 16:59:24",
+        "localTime": "2026/7/29 17:01:48",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -10842,6 +10983,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -10851,7 +10993,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/29 16:59:24",
+        "localTime": "2026/7/29 17:01:48",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -10910,6 +11052,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -10919,7 +11062,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/29 16:59:24",
+        "localTime": "2026/7/29 17:01:48",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -10978,6 +11121,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -10987,7 +11131,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/29 16:59:24",
+        "localTime": "2026/7/29 17:01:48",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -11046,6 +11190,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -11055,7 +11200,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/29 16:59:24",
+        "localTime": "2026/7/29 17:01:48",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -11114,6 +11259,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -11123,7 +11269,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/29 16:59:24",
+        "localTime": "2026/7/29 17:01:48",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -11182,6 +11328,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -11191,7 +11338,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/29 16:59:24",
+        "localTime": "2026/7/29 17:01:48",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -11250,6 +11397,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -11259,7 +11407,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/29 16:59:24",
+        "localTime": "2026/7/29 17:01:48",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -11318,6 +11466,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -11327,7 +11476,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/29 16:59:24",
+        "localTime": "2026/7/29 17:01:48",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -11386,6 +11535,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -11395,7 +11545,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/29 16:59:24",
+        "localTime": "2026/7/29 17:01:48",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -11454,6 +11604,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -11463,7 +11614,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/29 16:59:24",
+        "localTime": "2026/7/29 17:01:48",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -11522,6 +11673,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -11531,7 +11683,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/29 16:59:24",
+        "localTime": "2026/7/29 17:01:48",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -11590,6 +11742,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -11599,7 +11752,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/29 16:59:24",
+        "localTime": "2026/7/29 17:01:48",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -11658,6 +11811,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -11667,7 +11821,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/29 16:59:24",
+        "localTime": "2026/7/29 17:01:48",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -11726,6 +11880,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -11735,7 +11890,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/29 16:59:24",
+        "localTime": "2026/7/29 17:01:48",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -11794,6 +11949,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -11803,7 +11959,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/29 16:59:24",
+        "localTime": "2026/7/29 17:01:48",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -11862,6 +12018,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -11871,7 +12028,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/29 16:59:24",
+        "localTime": "2026/7/29 17:01:48",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -11930,6 +12087,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -11939,7 +12097,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/29 16:59:24",
+        "localTime": "2026/7/29 17:01:48",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -11998,6 +12156,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -12007,7 +12166,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/29 16:59:24",
+        "localTime": "2026/7/29 17:01:48",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -12066,6 +12225,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -12075,7 +12235,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/29 16:59:24",
+        "localTime": "2026/7/29 17:01:48",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -12134,6 +12294,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -12143,7 +12304,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/29 16:59:24",
+        "localTime": "2026/7/29 17:01:48",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -12202,6 +12363,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -12211,7 +12373,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/29 16:59:24",
+        "localTime": "2026/7/29 17:01:48",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -12270,6 +12432,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -12279,7 +12442,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/29 16:59:24",
+        "localTime": "2026/7/29 17:01:48",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -12338,6 +12501,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -12347,7 +12511,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/29 16:59:24",
+        "localTime": "2026/7/29 17:01:48",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -12406,6 +12570,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -12415,7 +12580,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/29 16:59:24",
+        "localTime": "2026/7/29 17:01:48",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -12474,6 +12639,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -12483,7 +12649,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/29 16:59:24",
+        "localTime": "2026/7/29 17:01:48",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -12542,6 +12708,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -12551,7 +12718,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/29 16:59:24",
+        "localTime": "2026/7/29 17:01:48",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -12610,6 +12777,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -12619,7 +12787,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/29 16:59:24",
+        "localTime": "2026/7/29 17:01:48",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -12678,6 +12846,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -12687,7 +12856,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/29 16:59:24",
+        "localTime": "2026/7/29 17:01:48",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -12746,6 +12915,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -12755,7 +12925,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/29 16:59:24",
+        "localTime": "2026/7/29 17:01:48",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -12814,6 +12984,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -12823,7 +12994,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/29 16:59:24",
+        "localTime": "2026/7/29 17:01:48",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -12882,6 +13053,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -12891,7 +13063,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/29 16:59:24",
+        "localTime": "2026/7/29 17:01:48",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -12950,6 +13122,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -12959,7 +13132,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/29 16:59:24",
+        "localTime": "2026/7/29 17:01:48",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -13018,6 +13191,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -13027,7 +13201,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/29 16:59:24",
+        "localTime": "2026/7/29 17:01:48",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -13086,6 +13260,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -13095,7 +13270,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/29 16:59:24",
+        "localTime": "2026/7/29 17:01:48",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -13154,6 +13329,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -13163,7 +13339,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/29 16:59:24",
+        "localTime": "2026/7/29 17:01:48",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -13222,6 +13398,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -13231,7 +13408,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/29 16:59:24",
+        "localTime": "2026/7/29 17:01:48",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -13290,6 +13467,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -13299,7 +13477,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/29 16:59:24",
+        "localTime": "2026/7/29 17:01:48",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -13358,6 +13536,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -13367,7 +13546,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/29 16:59:24",
+        "localTime": "2026/7/29 17:01:48",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -13428,6 +13607,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -13437,7 +13617,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/29 16:59:24",
+        "localTime": "2026/7/29 17:01:48",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -13504,6 +13684,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -13513,7 +13694,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/29 16:59:24",
+        "localTime": "2026/7/29 17:01:48",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -13580,6 +13761,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -13589,7 +13771,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/29 16:59:24",
+        "localTime": "2026/7/29 17:01:48",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -13650,6 +13832,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -13659,7 +13842,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/29 16:59:24",
+        "localTime": "2026/7/29 17:01:48",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -13726,6 +13909,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -13735,7 +13919,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/29 16:59:24",
+        "localTime": "2026/7/29 17:01:48",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -13796,6 +13980,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -13805,7 +13990,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/29 16:59:24",
+        "localTime": "2026/7/29 17:01:48",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -13866,6 +14051,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -13875,7 +14061,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/29 16:59:24",
+        "localTime": "2026/7/29 17:01:48",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -13936,6 +14122,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -13945,7 +14132,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/29 16:59:24",
+        "localTime": "2026/7/29 17:01:48",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -14006,6 +14193,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -14015,7 +14203,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/29 16:59:24",
+        "localTime": "2026/7/29 17:01:48",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -14076,6 +14264,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -14085,7 +14274,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/29 16:59:24",
+        "localTime": "2026/7/29 17:01:48",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -14152,6 +14341,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -14161,7 +14351,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/29 16:59:24",
+        "localTime": "2026/7/29 17:01:48",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -14222,6 +14412,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -14231,7 +14422,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/29 16:59:24",
+        "localTime": "2026/7/29 17:01:48",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -14292,6 +14483,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -14301,7 +14493,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/29 16:59:24",
+        "localTime": "2026/7/29 17:01:48",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -14362,6 +14554,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -14371,7 +14564,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/29 16:59:24",
+        "localTime": "2026/7/29 17:01:48",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -14432,6 +14625,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -14441,7 +14635,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/29 16:59:24",
+        "localTime": "2026/7/29 17:01:48",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -14502,6 +14696,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -14511,7 +14706,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/29 16:59:24",
+        "localTime": "2026/7/29 17:01:48",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -14572,6 +14767,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -14581,7 +14777,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/29 16:59:24",
+        "localTime": "2026/7/29 17:01:48",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -14642,6 +14838,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -14651,7 +14848,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/29 16:59:24",
+        "localTime": "2026/7/29 17:01:48",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -14712,6 +14909,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -14721,7 +14919,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/29 16:59:24",
+        "localTime": "2026/7/29 17:01:48",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -14782,6 +14980,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -14791,7 +14990,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/29 16:59:24",
+        "localTime": "2026/7/29 17:01:48",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -14852,6 +15051,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -14861,7 +15061,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/29 16:59:24",
+        "localTime": "2026/7/29 17:01:48",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -14922,6 +15122,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -14931,7 +15132,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/29 16:59:24",
+        "localTime": "2026/7/29 17:01:48",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -14992,6 +15193,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -15001,7 +15203,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/29 16:59:24",
+        "localTime": "2026/7/29 17:01:48",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -15062,6 +15264,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -15071,7 +15274,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/29 16:59:24",
+        "localTime": "2026/7/29 17:01:48",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -15132,6 +15335,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -15141,7 +15345,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/29 16:59:24",
+        "localTime": "2026/7/29 17:01:48",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -15202,6 +15406,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -15211,7 +15416,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/29 16:59:24",
+        "localTime": "2026/7/29 17:01:48",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -15272,6 +15477,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -15281,7 +15487,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/29 16:59:24",
+        "localTime": "2026/7/29 17:01:48",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -15342,6 +15548,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -15351,7 +15558,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/29 16:59:24",
+        "localTime": "2026/7/29 17:01:48",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -15412,6 +15619,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -15421,7 +15629,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/29 16:59:24",
+        "localTime": "2026/7/29 17:01:48",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -15482,6 +15690,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -15491,7 +15700,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/29 16:59:24",
+        "localTime": "2026/7/29 17:01:48",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -15552,6 +15761,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -15561,7 +15771,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/29 16:59:24",
+        "localTime": "2026/7/29 17:01:48",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -15622,6 +15832,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -15631,7 +15842,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/29 16:59:24",
+        "localTime": "2026/7/29 17:01:48",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -15692,6 +15903,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -15701,7 +15913,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/29 16:59:24",
+        "localTime": "2026/7/29 17:01:48",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -15762,6 +15974,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -15771,7 +15984,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/29 16:59:24",
+        "localTime": "2026/7/29 17:01:48",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -15832,6 +16045,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -15841,7 +16055,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/29 16:59:24",
+        "localTime": "2026/7/29 17:01:48",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -15902,6 +16116,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -15911,7 +16126,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/29 16:59:24",
+        "localTime": "2026/7/29 17:01:48",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -15972,6 +16187,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -15981,7 +16197,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/29 16:59:24",
+        "localTime": "2026/7/29 17:01:48",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -16042,6 +16258,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -16051,7 +16268,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/29 16:59:24",
+        "localTime": "2026/7/29 17:01:48",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -16112,6 +16329,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -16121,7 +16339,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/29 16:59:24",
+        "localTime": "2026/7/29 17:01:48",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -16182,6 +16400,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -16191,7 +16410,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/29 16:59:24",
+        "localTime": "2026/7/29 17:01:48",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -16252,6 +16471,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -16261,7 +16481,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/29 16:59:24",
+        "localTime": "2026/7/29 17:01:48",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
