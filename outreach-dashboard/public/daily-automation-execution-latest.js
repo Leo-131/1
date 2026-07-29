@@ -7,7 +7,7 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
   "executionPhase": "browser_execution",
   "chromeStage": "opened",
   "chromeOpened": true,
-  "chromeOpenedCount": 3,
+  "chromeOpenedCount": 1,
   "customerDevelopmentPerformed": false,
   "customerMessageSent": false,
   "realDevelopmentCount": 0,
@@ -21,22 +21,22 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
   "queueSource": "dailyQueue",
   "executed": [
     {
-      "id": "google-customer-jax-outdoor-gear-facebook",
+      "id": "google-customer-jax-outdoor-gear-instagram",
       "company": "Jax Outdoor Gear",
       "action": "develop",
-      "platform": "facebook",
-      "targetUrl": "https://www.facebook.com/jaxoutdoorgear",
+      "platform": "instagram",
+      "targetUrl": "https://www.instagram.com/jaxoutdoor/",
       "ok": false,
       "sendStatus": "failed_open",
-      "evidence": "identity_check_runtime_error:SyntaxError: Invalid regular expression flags",
-      "timestamp": "2026-07-29T09:13:30.814Z",
+      "evidence": "website_contact_entry_not_verified;contact_entry_clicked:SKIP TO CONTENT;official_social_fallback:facebook;personal_profile_without_company_match_expected_Jax Outdoor Gear_title_Facebook;contact_path_strategy_v2",
+      "timestamp": "2026-07-29T09:17:02.720Z",
       "chromeOpen": {
         "ok": true,
         "engine": "codex-chrome-cdp",
         "port": 9224,
         "targetUrl": "https://www.facebook.com/jaxoutdoorgear",
-        "tabId": "ABC1D6CA749D40D424C12FA0FC79FB00",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/ABC1D6CA749D40D424C12FA0FC79FB00",
+        "tabId": "4C2D6BA107EB48E79E26D3D48F4E95F3",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/4C2D6BA107EB48E79E26D3D48F4E95F3",
         "title": ""
       },
       "result": {
@@ -50,12 +50,12 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
           "engine": "codex-chrome-cdp",
           "port": 9224,
           "targetUrl": "https://www.facebook.com/jaxoutdoorgear",
-          "tabId": "ABC1D6CA749D40D424C12FA0FC79FB00",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/ABC1D6CA749D40D424C12FA0FC79FB00",
+          "tabId": "4C2D6BA107EB48E79E26D3D48F4E95F3",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/4C2D6BA107EB48E79E26D3D48F4E95F3",
           "title": ""
         },
         "sendStatus": "failed_open",
-        "output": "{\"verdict\":\"major_bug_review_needed\",\"evidence\":\"identity_check_runtime_error:SyntaxError: Invalid regular expression flags\",\"nextAction\":\"Wrong or unmatched account opened; record as major bug and move to next verified customer.\",\"draft\":\"Hi Jax Outdoor Gear team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a retail/category buyer, the strongest fit is assortment fit, new SKU pipeline, price-tier coverage, and proven consumer demand; your verified outdoor, camping and travel retail social refill channel focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the category buyer or vendor-review owner for a short intro video meeting?\",\"sendStatus\":\"failed_open\"}",
+        "output": "{\"verdict\":\"major_bug_review_needed\",\"evidence\":\"website_contact_entry_not_verified;contact_entry_clicked:SKIP TO CONTENT;official_social_fallback:facebook;personal_profile_without_company_match_expected_Jax Outdoor Gear_title_Facebook;contact_path_strategy_v2\",\"nextAction\":\"Wrong or unmatched account opened; record as major bug and move to next verified customer.\",\"draft\":\"Hi Jax Outdoor Gear team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a retail/category buyer, the strongest fit is assortment fit, new SKU pipeline, price-tier coverage, and proven consumer demand; your verified outdoor, camping and travel retail social refill channel focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the category buyer or vendor-review owner for a short intro video meeting?\",\"sendStatus\":\"failed_open\",\"fallbackFrom\":\"https://www.instagram.com/jaxoutdoor/\",\"fallbackPlatform\":\"email\",\"fallbackReason\":\"instagram_message_button_clicked_composer_not_found\"}",
         "decision": {
           "verdict": "develop",
           "fitScore": 84,
@@ -64,122 +64,31 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
         },
         "executionLayer": "Chrome CDP fallback",
         "glmModel": "not_used",
-        "followup": false
-      }
-    },
-    {
-      "id": "google-customer-camp-studio-thailand-instagram",
-      "company": "Camp Studio Thailand",
-      "action": "develop",
-      "platform": "instagram",
-      "targetUrl": "https://www.instagram.com/campstudio.chiangmai/",
-      "ok": false,
-      "sendStatus": "failed_open",
-      "evidence": "identity_check_runtime_error:SyntaxError: Invalid regular expression flags",
-      "timestamp": "2026-07-29T09:13:49.315Z",
-      "chromeOpen": {
-        "ok": true,
-        "engine": "codex-chrome-cdp",
-        "port": 9224,
-        "targetUrl": "https://www.instagram.com/campstudio.chiangmai/",
-        "tabId": "F5BB6B7AD83F22F073CAB60251528698",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/F5BB6B7AD83F22F073CAB60251528698",
-        "title": "CAMP STUDIO THAILAND (@campstudio.chiangmai) · Instagram 照片和视频"
-      },
-      "result": {
-        "ok": false,
-        "engine": "codex-chrome-cdp",
-        "browserEngine": "codex-chrome-cdp",
-        "mode": "codex_chrome_cdp",
-        "targetUrl": "https://www.instagram.com/campstudio.chiangmai/",
-        "chromeOpen": {
-          "ok": true,
-          "engine": "codex-chrome-cdp",
-          "port": 9224,
-          "targetUrl": "https://www.instagram.com/campstudio.chiangmai/",
-          "tabId": "F5BB6B7AD83F22F073CAB60251528698",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/F5BB6B7AD83F22F073CAB60251528698",
-          "title": "CAMP STUDIO THAILAND (@campstudio.chiangmai) · Instagram 照片和视频"
-        },
-        "sendStatus": "failed_open",
-        "output": "{\"verdict\":\"major_bug_review_needed\",\"evidence\":\"identity_check_runtime_error:SyntaxError: Invalid regular expression flags\",\"nextAction\":\"Wrong or unmatched account opened; record as major bug and move to next verified customer.\",\"draft\":\"Hi Camp Studio Thailand team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a distributor/importer, the strongest fit is regional sell-through, channel fit, margin-ready product line, and whether they cover outdoor/travel electronics buyers; your camping retailer network focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the owner of distribution evaluation or the best time for a short intro video meeting?\",\"sendStatus\":\"failed_open\"}",
-        "decision": {
-          "verdict": "develop",
-          "fitScore": 86,
-          "reason": "local_codex_extension_template",
-          "draft": "Hi Camp Studio Thailand team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a distributor/importer, the strongest fit is regional sell-through, channel fit, margin-ready product line, and whether they cover outdoor/travel electronics buyers; your camping retailer network focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the owner of distribution evaluation or the best time for a short intro video meeting?"
-        },
-        "executionLayer": "Chrome CDP fallback",
-        "glmModel": "not_used",
-        "followup": false
-      }
-    },
-    {
-      "id": "google-customer-doorout-instagram",
-      "company": "Doorout",
-      "action": "develop",
-      "platform": "instagram",
-      "targetUrl": "https://www.instagram.com/doorout_com/",
-      "ok": false,
-      "sendStatus": "failed_open",
-      "evidence": "identity_check_runtime_error:SyntaxError: Invalid regular expression flags",
-      "timestamp": "2026-07-29T09:14:09.437Z",
-      "chromeOpen": {
-        "ok": true,
-        "engine": "codex-chrome-cdp",
-        "port": 9224,
-        "targetUrl": "https://www.instagram.com/doorout_com/",
-        "tabId": "A1FE597FB26B1858B019F2A30F69DFEC",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/A1FE597FB26B1858B019F2A30F69DFEC",
-        "title": "Doorout | Outdoor erleben (@doorout_com) · Instagram 照片和视频"
-      },
-      "result": {
-        "ok": false,
-        "engine": "codex-chrome-cdp",
-        "browserEngine": "codex-chrome-cdp",
-        "mode": "codex_chrome_cdp",
-        "targetUrl": "https://www.instagram.com/doorout_com/",
-        "chromeOpen": {
-          "ok": true,
-          "engine": "codex-chrome-cdp",
-          "port": 9224,
-          "targetUrl": "https://www.instagram.com/doorout_com/",
-          "tabId": "A1FE597FB26B1858B019F2A30F69DFEC",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/A1FE597FB26B1858B019F2A30F69DFEC",
-          "title": "Doorout | Outdoor erleben (@doorout_com) · Instagram 照片和视频"
-        },
-        "sendStatus": "failed_open",
-        "output": "{\"verdict\":\"major_bug_review_needed\",\"evidence\":\"identity_check_runtime_error:SyntaxError: Invalid regular expression flags\",\"nextAction\":\"Wrong or unmatched account opened; record as major bug and move to next verified customer.\",\"draft\":\"Hi Doorout team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a retail/category buyer, the strongest fit is assortment fit, new SKU pipeline, price-tier coverage, and proven consumer demand; your verified outdoor, camping and travel retail social refill channel focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the category buyer or vendor-review owner for a short intro video meeting?\",\"sendStatus\":\"failed_open\"}",
-        "decision": {
-          "verdict": "develop",
-          "fitScore": 84,
-          "reason": "local_codex_extension_template",
-          "draft": "Hi Doorout team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a retail/category buyer, the strongest fit is assortment fit, new SKU pipeline, price-tier coverage, and proven consumer demand; your verified outdoor, camping and travel retail social refill channel focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the category buyer or vendor-review owner for a short intro video meeting?"
-        },
-        "executionLayer": "Chrome CDP fallback",
-        "glmModel": "not_used",
-        "followup": false
+        "followup": false,
+        "evidence": "website_contact_entry_not_verified;contact_entry_clicked:SKIP TO CONTENT;official_social_fallback:facebook;personal_profile_without_company_match_expected_Jax Outdoor Gear_title_Facebook;contact_path_strategy_v2",
+        "fallbackFrom": "https://www.instagram.com/jaxoutdoor/",
+        "fallbackPlatform": "email"
       }
     }
   ],
   "results": [
     {
-      "id": "google-customer-jax-outdoor-gear-facebook",
+      "id": "google-customer-jax-outdoor-gear-instagram",
       "company": "Jax Outdoor Gear",
       "action": "develop",
-      "platform": "facebook",
-      "targetUrl": "https://www.facebook.com/jaxoutdoorgear",
+      "platform": "instagram",
+      "targetUrl": "https://www.instagram.com/jaxoutdoor/",
       "ok": false,
       "sendStatus": "failed_open",
-      "evidence": "identity_check_runtime_error:SyntaxError: Invalid regular expression flags",
-      "timestamp": "2026-07-29T09:13:30.814Z",
+      "evidence": "website_contact_entry_not_verified;contact_entry_clicked:SKIP TO CONTENT;official_social_fallback:facebook;personal_profile_without_company_match_expected_Jax Outdoor Gear_title_Facebook;contact_path_strategy_v2",
+      "timestamp": "2026-07-29T09:17:02.720Z",
       "chromeOpen": {
         "ok": true,
         "engine": "codex-chrome-cdp",
         "port": 9224,
         "targetUrl": "https://www.facebook.com/jaxoutdoorgear",
-        "tabId": "ABC1D6CA749D40D424C12FA0FC79FB00",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/ABC1D6CA749D40D424C12FA0FC79FB00",
+        "tabId": "4C2D6BA107EB48E79E26D3D48F4E95F3",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/4C2D6BA107EB48E79E26D3D48F4E95F3",
         "title": ""
       },
       "result": {
@@ -193,12 +102,12 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
           "engine": "codex-chrome-cdp",
           "port": 9224,
           "targetUrl": "https://www.facebook.com/jaxoutdoorgear",
-          "tabId": "ABC1D6CA749D40D424C12FA0FC79FB00",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/ABC1D6CA749D40D424C12FA0FC79FB00",
+          "tabId": "4C2D6BA107EB48E79E26D3D48F4E95F3",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/4C2D6BA107EB48E79E26D3D48F4E95F3",
           "title": ""
         },
         "sendStatus": "failed_open",
-        "output": "{\"verdict\":\"major_bug_review_needed\",\"evidence\":\"identity_check_runtime_error:SyntaxError: Invalid regular expression flags\",\"nextAction\":\"Wrong or unmatched account opened; record as major bug and move to next verified customer.\",\"draft\":\"Hi Jax Outdoor Gear team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a retail/category buyer, the strongest fit is assortment fit, new SKU pipeline, price-tier coverage, and proven consumer demand; your verified outdoor, camping and travel retail social refill channel focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the category buyer or vendor-review owner for a short intro video meeting?\",\"sendStatus\":\"failed_open\"}",
+        "output": "{\"verdict\":\"major_bug_review_needed\",\"evidence\":\"website_contact_entry_not_verified;contact_entry_clicked:SKIP TO CONTENT;official_social_fallback:facebook;personal_profile_without_company_match_expected_Jax Outdoor Gear_title_Facebook;contact_path_strategy_v2\",\"nextAction\":\"Wrong or unmatched account opened; record as major bug and move to next verified customer.\",\"draft\":\"Hi Jax Outdoor Gear team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a retail/category buyer, the strongest fit is assortment fit, new SKU pipeline, price-tier coverage, and proven consumer demand; your verified outdoor, camping and travel retail social refill channel focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the category buyer or vendor-review owner for a short intro video meeting?\",\"sendStatus\":\"failed_open\",\"fallbackFrom\":\"https://www.instagram.com/jaxoutdoor/\",\"fallbackPlatform\":\"email\",\"fallbackReason\":\"instagram_message_button_clicked_composer_not_found\"}",
         "decision": {
           "verdict": "develop",
           "fitScore": 84,
@@ -207,111 +116,14 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
         },
         "executionLayer": "Chrome CDP fallback",
         "glmModel": "not_used",
-        "followup": false
-      }
-    },
-    {
-      "id": "google-customer-camp-studio-thailand-instagram",
-      "company": "Camp Studio Thailand",
-      "action": "develop",
-      "platform": "instagram",
-      "targetUrl": "https://www.instagram.com/campstudio.chiangmai/",
-      "ok": false,
-      "sendStatus": "failed_open",
-      "evidence": "identity_check_runtime_error:SyntaxError: Invalid regular expression flags",
-      "timestamp": "2026-07-29T09:13:49.315Z",
-      "chromeOpen": {
-        "ok": true,
-        "engine": "codex-chrome-cdp",
-        "port": 9224,
-        "targetUrl": "https://www.instagram.com/campstudio.chiangmai/",
-        "tabId": "F5BB6B7AD83F22F073CAB60251528698",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/F5BB6B7AD83F22F073CAB60251528698",
-        "title": "CAMP STUDIO THAILAND (@campstudio.chiangmai) · Instagram 照片和视频"
-      },
-      "result": {
-        "ok": false,
-        "engine": "codex-chrome-cdp",
-        "browserEngine": "codex-chrome-cdp",
-        "mode": "codex_chrome_cdp",
-        "targetUrl": "https://www.instagram.com/campstudio.chiangmai/",
-        "chromeOpen": {
-          "ok": true,
-          "engine": "codex-chrome-cdp",
-          "port": 9224,
-          "targetUrl": "https://www.instagram.com/campstudio.chiangmai/",
-          "tabId": "F5BB6B7AD83F22F073CAB60251528698",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/F5BB6B7AD83F22F073CAB60251528698",
-          "title": "CAMP STUDIO THAILAND (@campstudio.chiangmai) · Instagram 照片和视频"
-        },
-        "sendStatus": "failed_open",
-        "output": "{\"verdict\":\"major_bug_review_needed\",\"evidence\":\"identity_check_runtime_error:SyntaxError: Invalid regular expression flags\",\"nextAction\":\"Wrong or unmatched account opened; record as major bug and move to next verified customer.\",\"draft\":\"Hi Camp Studio Thailand team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a distributor/importer, the strongest fit is regional sell-through, channel fit, margin-ready product line, and whether they cover outdoor/travel electronics buyers; your camping retailer network focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the owner of distribution evaluation or the best time for a short intro video meeting?\",\"sendStatus\":\"failed_open\"}",
-        "decision": {
-          "verdict": "develop",
-          "fitScore": 86,
-          "reason": "local_codex_extension_template",
-          "draft": "Hi Camp Studio Thailand team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a distributor/importer, the strongest fit is regional sell-through, channel fit, margin-ready product line, and whether they cover outdoor/travel electronics buyers; your camping retailer network focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the owner of distribution evaluation or the best time for a short intro video meeting?"
-        },
-        "executionLayer": "Chrome CDP fallback",
-        "glmModel": "not_used",
-        "followup": false
-      }
-    },
-    {
-      "id": "google-customer-doorout-instagram",
-      "company": "Doorout",
-      "action": "develop",
-      "platform": "instagram",
-      "targetUrl": "https://www.instagram.com/doorout_com/",
-      "ok": false,
-      "sendStatus": "failed_open",
-      "evidence": "identity_check_runtime_error:SyntaxError: Invalid regular expression flags",
-      "timestamp": "2026-07-29T09:14:09.437Z",
-      "chromeOpen": {
-        "ok": true,
-        "engine": "codex-chrome-cdp",
-        "port": 9224,
-        "targetUrl": "https://www.instagram.com/doorout_com/",
-        "tabId": "A1FE597FB26B1858B019F2A30F69DFEC",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/A1FE597FB26B1858B019F2A30F69DFEC",
-        "title": "Doorout | Outdoor erleben (@doorout_com) · Instagram 照片和视频"
-      },
-      "result": {
-        "ok": false,
-        "engine": "codex-chrome-cdp",
-        "browserEngine": "codex-chrome-cdp",
-        "mode": "codex_chrome_cdp",
-        "targetUrl": "https://www.instagram.com/doorout_com/",
-        "chromeOpen": {
-          "ok": true,
-          "engine": "codex-chrome-cdp",
-          "port": 9224,
-          "targetUrl": "https://www.instagram.com/doorout_com/",
-          "tabId": "A1FE597FB26B1858B019F2A30F69DFEC",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/A1FE597FB26B1858B019F2A30F69DFEC",
-          "title": "Doorout | Outdoor erleben (@doorout_com) · Instagram 照片和视频"
-        },
-        "sendStatus": "failed_open",
-        "output": "{\"verdict\":\"major_bug_review_needed\",\"evidence\":\"identity_check_runtime_error:SyntaxError: Invalid regular expression flags\",\"nextAction\":\"Wrong or unmatched account opened; record as major bug and move to next verified customer.\",\"draft\":\"Hi Doorout team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a retail/category buyer, the strongest fit is assortment fit, new SKU pipeline, price-tier coverage, and proven consumer demand; your verified outdoor, camping and travel retail social refill channel focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the category buyer or vendor-review owner for a short intro video meeting?\",\"sendStatus\":\"failed_open\"}",
-        "decision": {
-          "verdict": "develop",
-          "fitScore": 84,
-          "reason": "local_codex_extension_template",
-          "draft": "Hi Doorout team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a retail/category buyer, the strongest fit is assortment fit, new SKU pipeline, price-tier coverage, and proven consumer demand; your verified outdoor, camping and travel retail social refill channel focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the category buyer or vendor-review owner for a short intro video meeting?"
-        },
-        "executionLayer": "Chrome CDP fallback",
-        "glmModel": "not_used",
-        "followup": false
+        "followup": false,
+        "evidence": "website_contact_entry_not_verified;contact_entry_clicked:SKIP TO CONTENT;official_social_fallback:facebook;personal_profile_without_company_match_expected_Jax Outdoor Gear_title_Facebook;contact_path_strategy_v2",
+        "fallbackFrom": "https://www.instagram.com/jaxoutdoor/",
+        "fallbackPlatform": "email"
       }
     }
   ],
   "skipped": [
-    {
-      "id": "google-customer-jax-outdoor-gear-instagram",
-      "company": "Jax Outdoor Gear",
-      "action": "develop",
-      "reason": "same_day_customer_already_developed"
-    },
     {
       "id": "google-customer-au-vieux-campeur-website-contact",
       "company": "Au Vieux Campeur",
@@ -453,6 +265,12 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     {
       "id": "google-customer-campz-instagram",
       "company": "Campz",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_instagram"
+    },
+    {
+      "id": "google-customer-doorout-instagram",
+      "company": "Doorout",
       "action": "develop",
       "reason": "concrete_google_discovered_major_customer_instagram"
     },
@@ -679,6 +497,12 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "reason": "concrete_google_discovered_major_customer_facebook"
     },
     {
+      "id": "google-customer-jax-outdoor-gear-facebook",
+      "company": "Jax Outdoor Gear",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_facebook"
+    },
+    {
       "id": "google-customer-moosejaw-facebook",
       "company": "Moosejaw",
       "action": "develop",
@@ -705,6 +529,12 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     {
       "id": "google-customer-rock-creek-instagram",
       "company": "Rock/Creek",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_instagram"
+    },
+    {
+      "id": "google-customer-camp-studio-thailand-instagram",
+      "company": "Camp Studio Thailand",
       "action": "develop",
       "reason": "concrete_google_discovered_major_customer_instagram"
     },
@@ -1111,6 +941,12 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "reason": "concrete_google_discovered_major_customer_facebook"
     },
     {
+      "id": "google-customer-jax-outdoor-gear-facebook",
+      "company": "Jax Outdoor Gear",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_facebook"
+    },
+    {
       "id": "google-customer-moosejaw-facebook",
       "company": "Moosejaw",
       "action": "develop",
@@ -1147,6 +983,12 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "reason": "concrete_google_discovered_major_customer_instagram"
     },
     {
+      "id": "google-customer-doorout-instagram",
+      "company": "Doorout",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_instagram"
+    },
+    {
       "id": "google-customer-ld-mountain-centre-instagram",
       "company": "LD Mountain Centre",
       "action": "develop",
@@ -1173,6 +1015,12 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     {
       "id": "google-customer-rock-creek-instagram",
       "company": "Rock/Creek",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_instagram"
+    },
+    {
+      "id": "google-customer-camp-studio-thailand-instagram",
+      "company": "Camp Studio Thailand",
       "action": "develop",
       "reason": "concrete_google_discovered_major_customer_instagram"
     },
@@ -1378,14 +1226,14 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "count": 32
     },
     {
-      "reason": "concrete_google_discovered_major_customer_facebook",
-      "status": "skipped",
-      "count": 24
-    },
-    {
       "reason": "concrete_google_discovered_major_customer_instagram",
       "status": "skipped",
-      "count": 24
+      "count": 28
+    },
+    {
+      "reason": "concrete_google_discovered_major_customer_facebook",
+      "status": "skipped",
+      "count": 26
     },
     {
       "reason": "official_website_contact_channel",
@@ -1395,22 +1243,16 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     {
       "reason": "failed_open",
       "status": "failed_open",
-      "count": 3
-    },
-    {
-      "reason": "same_day_customer_already_developed",
-      "status": "skipped",
       "count": 1
     }
   ],
   "blockerCounts": {
     "homepage_only_contact_path_requires_verification": 74,
     "missing_verified_profile_url": 32,
-    "concrete_google_discovered_major_customer_facebook": 24,
-    "concrete_google_discovered_major_customer_instagram": 24,
+    "concrete_google_discovered_major_customer_instagram": 28,
+    "concrete_google_discovered_major_customer_facebook": 26,
     "official_website_contact_channel": 18,
-    "failed_open": 3,
-    "same_day_customer_already_developed": 1
+    "failed_open": 1
   },
   "queueGoalStatus": {
     "target": 100,
@@ -1421,7 +1263,7 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     "reached": false,
     "action": "Add more verified high-ICP sources or unblock existing website/social leads."
   },
-  "userVisibleStatus": "Customer development was not performed. Blockers: homepage_only_contact_path_requires_verification (74); missing_verified_profile_url (32); concrete_google_discovered_major_customer_facebook (24).",
+  "userVisibleStatus": "Customer development was not performed. Blockers: homepage_only_contact_path_requires_verification (74); missing_verified_profile_url (32); concrete_google_discovered_major_customer_instagram (28).",
   "recoveryHint": "Refill the high-ICP pool with 10 verified leads or unblock existing website/social leads before the next run. Add a verified Facebook or Instagram profile URL before retrying social outreach. Confirm the official social profile and safe message entry before rerunning Google-discovered social outreach. Verify the official profile opens and exposes a safe message composer, or switch to another verified channel.",
   "recoveryActions": [
     {
@@ -1458,12 +1300,12 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     "stderr": "",
     "error": "",
     "visibility": {
-      "updatedAt": "2026-07-29T09:14:10.683Z",
+      "updatedAt": "2026-07-29T09:17:03.902Z",
       "source": "main-refreshDailyAutomationArtifacts",
       "runDate": "2026-07-29",
-      "artifactGeneratedAt": "2026-07-29T09:14:09.620Z",
-      "executionGeneratedAt": "2026-07-29T09:03:12.182Z",
-      "githubSyncUpdatedAt": "2026-07-29T09:03:58.017Z",
+      "artifactGeneratedAt": "2026-07-29T09:17:02.859Z",
+      "executionGeneratedAt": "2026-07-29T09:14:11.125Z",
+      "githubSyncUpdatedAt": "2026-07-29T09:15:33.806Z",
       "counts": {
         "dailyQueue": 90,
         "googleDiscovered": 66,
@@ -1526,5 +1368,5 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     ]
   },
   "ledgerReconciliationCount": 3,
-  "completedAt": "2026-07-29T09:14:11.125Z"
+  "completedAt": "2026-07-29T09:17:04.886Z"
 };
