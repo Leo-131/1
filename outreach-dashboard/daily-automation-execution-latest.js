@@ -7,7 +7,7 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
   "executionPhase": "browser_execution",
   "chromeStage": "opened",
   "chromeOpened": true,
-  "chromeOpenedCount": 11,
+  "chromeOpenedCount": 12,
   "customerDevelopmentPerformed": false,
   "customerMessageSent": false,
   "realDevelopmentCount": 0,
@@ -29,15 +29,15 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "ok": false,
       "sendStatus": "failed_open",
       "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;personal_profile_without_company_match_expected_8a.pl_title_Facebook;contact_path_strategy_v2",
-      "timestamp": "2026-07-29T10:30:57.723Z",
+      "timestamp": "2026-07-29T10:35:50.446Z",
       "chromeOpen": {
         "ok": true,
         "engine": "codex-chrome-cdp",
         "port": 9224,
         "targetUrl": "https://www.facebook.com/8a.pl",
-        "tabId": "586D29CED02E3BD1BE6F2E0CCEE73F43",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/586D29CED02E3BD1BE6F2E0CCEE73F43",
-        "title": "Facebook"
+        "tabId": "C9CA1E757F919EC6130C881859311B8E",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/C9CA1E757F919EC6130C881859311B8E",
+        "title": ""
       },
       "result": {
         "ok": false,
@@ -50,9 +50,9 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
           "engine": "codex-chrome-cdp",
           "port": 9224,
           "targetUrl": "https://www.facebook.com/8a.pl",
-          "tabId": "586D29CED02E3BD1BE6F2E0CCEE73F43",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/586D29CED02E3BD1BE6F2E0CCEE73F43",
-          "title": "Facebook"
+          "tabId": "C9CA1E757F919EC6130C881859311B8E",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/C9CA1E757F919EC6130C881859311B8E",
+          "title": ""
         },
         "sendStatus": "failed_open",
         "output": "{\"verdict\":\"major_bug_review_needed\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;personal_profile_without_company_match_expected_8a.pl_title_Facebook;contact_path_strategy_v2\",\"nextAction\":\"Wrong or unmatched account opened; record as major bug and move to next verified customer.\",\"draft\":\"Hi 8a.pl team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a retail/category buyer, the strongest fit is assortment fit, new SKU pipeline, price-tier coverage, and proven consumer demand; your verified outdoor, camping and travel retail social refill channel focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the category buyer or vendor-review owner for a short intro video meeting?\",\"sendStatus\":\"failed_open\"}",
@@ -77,14 +77,14 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "ok": false,
       "sendStatus": "failed_open",
       "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;personal_profile_without_company_match_expected_Above and Beyond_title_Facebook;contact_path_strategy_v2",
-      "timestamp": "2026-07-29T10:31:06.908Z",
+      "timestamp": "2026-07-29T10:36:02.112Z",
       "chromeOpen": {
         "ok": true,
         "engine": "codex-chrome-cdp",
         "port": 9224,
         "targetUrl": "https://www.facebook.com/aboveandbeyondireland",
-        "tabId": "751B40BDE7A5EADA801B4D19EA4C5464",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/751B40BDE7A5EADA801B4D19EA4C5464",
+        "tabId": "FA09B3021D2187439FCE52B37E1D69D7",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/FA09B3021D2187439FCE52B37E1D69D7",
         "title": "Facebook"
       },
       "result": {
@@ -98,8 +98,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
           "engine": "codex-chrome-cdp",
           "port": 9224,
           "targetUrl": "https://www.facebook.com/aboveandbeyondireland",
-          "tabId": "751B40BDE7A5EADA801B4D19EA4C5464",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/751B40BDE7A5EADA801B4D19EA4C5464",
+          "tabId": "FA09B3021D2187439FCE52B37E1D69D7",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/FA09B3021D2187439FCE52B37E1D69D7",
           "title": "Facebook"
         },
         "sendStatus": "failed_open",
@@ -125,15 +125,15 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "ok": false,
       "sendStatus": "failed_open",
       "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;personal_profile_without_company_match_expected_Atmosphere_title_Facebook;contact_path_strategy_v2",
-      "timestamp": "2026-07-29T10:31:19.599Z",
+      "timestamp": "2026-07-29T10:36:15.464Z",
       "chromeOpen": {
         "ok": true,
         "engine": "codex-chrome-cdp",
         "port": 9224,
         "targetUrl": "https://www.facebook.com/Atmosphere",
-        "tabId": "DDBF7382CCB4A72F326BBD0CD7B6335F",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/DDBF7382CCB4A72F326BBD0CD7B6335F",
-        "title": "Facebook"
+        "tabId": "83179BEB76AA792CCCDC09BE43461427",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/83179BEB76AA792CCCDC09BE43461427",
+        "title": ""
       },
       "result": {
         "ok": false,
@@ -146,9 +146,9 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
           "engine": "codex-chrome-cdp",
           "port": 9224,
           "targetUrl": "https://www.facebook.com/Atmosphere",
-          "tabId": "DDBF7382CCB4A72F326BBD0CD7B6335F",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/DDBF7382CCB4A72F326BBD0CD7B6335F",
-          "title": "Facebook"
+          "tabId": "83179BEB76AA792CCCDC09BE43461427",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/83179BEB76AA792CCCDC09BE43461427",
+          "title": ""
         },
         "sendStatus": "failed_open",
         "output": "{\"verdict\":\"major_bug_review_needed\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;personal_profile_without_company_match_expected_Atmosphere_title_Facebook;contact_path_strategy_v2\",\"nextAction\":\"Wrong or unmatched account opened; record as major bug and move to next verified customer.\",\"draft\":\"Hi Atmosphere team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a retail/category buyer, the strongest fit is assortment fit, new SKU pipeline, price-tier coverage, and proven consumer demand; your verified outdoor, camping and travel retail social refill channel focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the category buyer or vendor-review owner for a short intro video meeting?\",\"sendStatus\":\"failed_open\"}",
@@ -173,14 +173,14 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "ok": false,
       "sendStatus": "failed_open",
       "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;personal_profile_without_company_match_expected_Campz_title_Facebook;contact_path_strategy_v2",
-      "timestamp": "2026-07-29T10:31:34.285Z",
+      "timestamp": "2026-07-29T10:36:30.390Z",
       "chromeOpen": {
         "ok": true,
         "engine": "codex-chrome-cdp",
         "port": 9224,
         "targetUrl": "https://www.facebook.com/campz.de",
-        "tabId": "805C1B462DE065AC931DF83D709D5A86",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/805C1B462DE065AC931DF83D709D5A86",
+        "tabId": "2660FB18B3419D8CA64154671C07C10D",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/2660FB18B3419D8CA64154671C07C10D",
         "title": "Facebook"
       },
       "result": {
@@ -194,8 +194,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
           "engine": "codex-chrome-cdp",
           "port": 9224,
           "targetUrl": "https://www.facebook.com/campz.de",
-          "tabId": "805C1B462DE065AC931DF83D709D5A86",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/805C1B462DE065AC931DF83D709D5A86",
+          "tabId": "2660FB18B3419D8CA64154671C07C10D",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/2660FB18B3419D8CA64154671C07C10D",
           "title": "Facebook"
         },
         "sendStatus": "failed_open",
@@ -221,7 +221,7 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "ok": false,
       "sendStatus": "approval_pending",
       "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;;contact_path_strategy_v2",
-      "timestamp": "2026-07-29T10:31:39.270Z",
+      "timestamp": "2026-07-29T10:36:35.369Z",
       "chromeOpen": null,
       "result": {
         "ok": false,
@@ -229,51 +229,6 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
         "mode": "official_website_social_fallback",
         "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;;contact_path_strategy_v2",
         "output": "{\"verdict\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;;contact_path_strategy_v2\",\"nextAction\":\"Official website exposed facebook; Codex Chrome tried that social channel before website fallback.\",\"sendStatus\":\"approval_pending\"}"
-      }
-    },
-    {
-      "id": "google-customer-durango-outdoor-exchange-website-contact",
-      "company": "Durango Outdoor Exchange",
-      "action": "verify_target",
-      "platform": "email",
-      "targetUrl": "https://durangooutdoorexchange.com/",
-      "ok": false,
-      "sendStatus": "website_contact_unreachable_skip",
-      "evidence": "unavailable_profile_page: CONSIGNOR LOGIN\n \nWHO WE ARE\n \nSUSTAINABILITY EFFORTS\n \nGIFT CARDS\n \nSELL YOUR GEAR\n \nSHOP \n0\n\nACCEPTING GEAR DROP OFFS MON-SAT 10AM-5PM. NO CONSIGNMENT ACCEPTANCE ON SUNDAYS.\n\n   ;website_contact_all_targets_failed:6;contact_path_strategy_v2",
-      "timestamp": "2026-07-29T10:32:00.866Z",
-      "chromeOpen": {
-        "ok": false,
-        "engine": "codex-chrome-cdp",
-        "port": 9224,
-        "targetUrl": "https://durangooutdoorexchange.com/help/contact-us",
-        "tabId": "634E33A7BCF7324A0244577F5CCDEC2C",
-        "title": "404 Not Found – Durango Outdoor Exchange",
-        "status": "failed_open",
-        "error": "profile_unavailable_or_broken_link",
-        "evidence": "unavailable_profile_page: CONSIGNOR LOGIN\n \nWHO WE ARE\n \nSUSTAINABILITY EFFORTS\n \nGIFT CARDS\n \nSELL YOUR GEAR\n \nSHOP \n0\n\nACCEPTING GEAR DROP OFFS MON-SAT 10AM-5PM. NO CONSIGNMENT ACCEPTANCE ON SUNDAYS.\n\n   "
-      },
-      "result": {
-        "ok": false,
-        "engine": "dedicated-chrome-cdp-website-contact",
-        "browserEngine": "codex-chrome-cdp",
-        "mode": "website_contact_unreachable_skip",
-        "targetUrl": "https://durangooutdoorexchange.com/help/contact-us",
-        "chromeOpen": {
-          "ok": false,
-          "engine": "codex-chrome-cdp",
-          "port": 9224,
-          "targetUrl": "https://durangooutdoorexchange.com/help/contact-us",
-          "tabId": "634E33A7BCF7324A0244577F5CCDEC2C",
-          "title": "404 Not Found – Durango Outdoor Exchange",
-          "status": "failed_open",
-          "error": "profile_unavailable_or_broken_link",
-          "evidence": "unavailable_profile_page: CONSIGNOR LOGIN\n \nWHO WE ARE\n \nSUSTAINABILITY EFFORTS\n \nGIFT CARDS\n \nSELL YOUR GEAR\n \nSHOP \n0\n\nACCEPTING GEAR DROP OFFS MON-SAT 10AM-5PM. NO CONSIGNMENT ACCEPTANCE ON SUNDAYS.\n\n   "
-        },
-        "sendStatus": "website_contact_unreachable_skip",
-        "subject": "FLEXTAIL retail partnership | 2026 assortment",
-        "draft": "Dear Durango Outdoor Exchange Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
-        "evidence": "unavailable_profile_page: CONSIGNOR LOGIN\n \nWHO WE ARE\n \nSUSTAINABILITY EFFORTS\n \nGIFT CARDS\n \nSELL YOUR GEAR\n \nSHOP \n0\n\nACCEPTING GEAR DROP OFFS MON-SAT 10AM-5PM. NO CONSIGNMENT ACCEPTANCE ON SUNDAYS.\n\n   ;website_contact_all_targets_failed:6;contact_path_strategy_v2",
-        "output": "{\"verdict\":\"website_contact_unreachable_skip\",\"evidence\":\"unavailable_profile_page: CONSIGNOR LOGIN\\n \\nWHO WE ARE\\n \\nSUSTAINABILITY EFFORTS\\n \\nGIFT CARDS\\n \\nSELL YOUR GEAR\\n \\nSHOP \\n0\\n\\nACCEPTING GEAR DROP OFFS MON-SAT 10AM-5PM. NO CONSIGNMENT ACCEPTANCE ON SUNDAYS.\\n\\n   ;website_contact_all_targets_failed:6;contact_path_strategy_v2\",\"subject\":\"FLEXTAIL retail partnership | 2026 assortment\",\"draft\":\"Dear Durango Outdoor Exchange Team,\\n\\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\\n\\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\\n\\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\\n\\nProduct overview: https://www.flextail.com/\\n\\nBest regards,\\nLeo Liu\\nSales & Operations Director\\nLeo@flextailgear.com\",\"sendStatus\":\"website_contact_unreachable_skip\",\"attempts\":[{\"targetUrl\":\"https://durangooutdoorexchange.com/\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control\"},{\"targetUrl\":\"https://durangooutdoorexchange.com/pages/contact-us\",\"sendStatus\":\"failed_open\",\"evidence\":\"unavailable_profile_page: ACCEPTING GEAR DROP OFFS MON-SAT 10AM-5PM. NO CONSIGNMENT ACCEPTANCE ON SUNDAYS.\\n\\n   \\n1-970-259-0171\\n0\\n LOGIN\\nCONSIGNOR LOGIN\\n \\nWHO WE ARE\\n \\nSUSTAINABILITY EFFORTS\\n \\nGIFT CARDS\\n \\nS\"},{\"targetUrl\":\"https://durangooutdoorexchange.com/pages/contact\",\"sendStatus\":\"failed_open\",\"evidence\":\"unavailable_profile_page: ACCEPTING GEAR DROP OFFS MON-SAT 10AM-5PM. NO CONSIGNMENT ACCEPTANCE ON SUNDAYS.\\n\\n   \\n1-970-259-0171\\n0\\n LOGIN\\nCONSIGNOR LOGIN\\n \\nWHO WE ARE\\n \\nSUSTAINABILITY EFFORTS\\n \\nGIFT CARDS\\n \\nS\"},{\"targetUrl\":\"https://durangooutdoorexchange.com/contact-us\",\"sendStatus\":\"failed_open\",\"evidence\":\"website_page_unavailable_404: Something went wrong.\\n\\nWhat happened?\\n404 Not Found\\nWhat can I do?\\nReturn to the previous page.\"},{\"targetUrl\":\"https://durangooutdoorexchange.com/contact\",\"sendStatus\":\"failed_open\",\"evidence\":\"website_page_unavailable_404: Something went wrong.\\n\\nWhat happened?\\n404 Not Found\\nWhat can I do?\\nReturn to the previous page.\"},{\"targetUrl\":\"https://durangooutdoorexchange.com/help/contact-us\",\"sendStatus\":\"failed_open\",\"evidence\":\"unavailable_profile_page: CONSIGNOR LOGIN\\n \\nWHO WE ARE\\n \\nSUSTAINABILITY EFFORTS\\n \\nGIFT CARDS\\n \\nSELL YOUR GEAR\\n \\nSHOP \\n0\\n\\nACCEPTING GEAR DROP OFFS MON-SAT 10AM-5PM. NO CONSIGNMENT ACCEPTANCE ON SUNDAYS.\\n\\n   \"}],\"nextAction\":\"Official website contact was unreachable or not machine-verifiable. Skip this website route now, note it clearly, and continue with LinkedIn, Facebook, Instagram, or another verified official channel.\"}"
       }
     },
     {
@@ -285,14 +240,14 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "ok": false,
       "sendStatus": "failed_open",
       "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;personal_profile_without_company_match_expected_Eastern Mountain Sports_title_Facebook;contact_path_strategy_v2",
-      "timestamp": "2026-07-29T10:32:12.016Z",
+      "timestamp": "2026-07-29T10:36:46.619Z",
       "chromeOpen": {
         "ok": true,
         "engine": "codex-chrome-cdp",
         "port": 9224,
         "targetUrl": "https://www.facebook.com/EasternMountainSports",
-        "tabId": "2D025FDA57F04C75868E786607EA0339",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/2D025FDA57F04C75868E786607EA0339",
+        "tabId": "E505E695661D99BA981D08721E2D0D05",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/E505E695661D99BA981D08721E2D0D05",
         "title": "Facebook"
       },
       "result": {
@@ -306,8 +261,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
           "engine": "codex-chrome-cdp",
           "port": 9224,
           "targetUrl": "https://www.facebook.com/EasternMountainSports",
-          "tabId": "2D025FDA57F04C75868E786607EA0339",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/2D025FDA57F04C75868E786607EA0339",
+          "tabId": "E505E695661D99BA981D08721E2D0D05",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/E505E695661D99BA981D08721E2D0D05",
           "title": "Facebook"
         },
         "sendStatus": "failed_open",
@@ -332,15 +287,15 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "targetUrl": "https://www.intersport.no/",
       "ok": false,
       "sendStatus": "failed_open",
-      "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;personal_profile_without_company_match_expected_Intersport Norway_title_Facebook;contact_path_strategy_v2",
-      "timestamp": "2026-07-29T10:32:27.820Z",
+      "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;identity_mismatch_expected_Intersport Norway_title_Facebook;contact_path_strategy_v2",
+      "timestamp": "2026-07-29T10:36:57.329Z",
       "chromeOpen": {
         "ok": true,
         "engine": "codex-chrome-cdp",
         "port": 9224,
         "targetUrl": "https://www.facebook.com/intersportnorge",
-        "tabId": "7BC8070E216FBFB1046555D2CF45A605",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/7BC8070E216FBFB1046555D2CF45A605",
+        "tabId": "0DE9205C5C2B2F584B715E1324C53D5C",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/0DE9205C5C2B2F584B715E1324C53D5C",
         "title": "Facebook"
       },
       "result": {
@@ -354,12 +309,12 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
           "engine": "codex-chrome-cdp",
           "port": 9224,
           "targetUrl": "https://www.facebook.com/intersportnorge",
-          "tabId": "7BC8070E216FBFB1046555D2CF45A605",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/7BC8070E216FBFB1046555D2CF45A605",
+          "tabId": "0DE9205C5C2B2F584B715E1324C53D5C",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/0DE9205C5C2B2F584B715E1324C53D5C",
           "title": "Facebook"
         },
         "sendStatus": "failed_open",
-        "output": "{\"verdict\":\"major_bug_review_needed\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;personal_profile_without_company_match_expected_Intersport Norway_title_Facebook;contact_path_strategy_v2\",\"nextAction\":\"Wrong or unmatched account opened; record as major bug and move to next verified customer.\",\"draft\":\"Hi Intersport Norway team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a retail/category buyer, the strongest fit is assortment fit, new SKU pipeline, price-tier coverage, and proven consumer demand; your verified outdoor, camping and travel retail social refill channel focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the category buyer or vendor-review owner for a short intro video meeting?\",\"sendStatus\":\"failed_open\"}",
+        "output": "{\"verdict\":\"major_bug_review_needed\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;identity_mismatch_expected_Intersport Norway_title_Facebook;contact_path_strategy_v2\",\"nextAction\":\"Wrong or unmatched account opened; record as major bug and move to next verified customer.\",\"draft\":\"Hi Intersport Norway team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a retail/category buyer, the strongest fit is assortment fit, new SKU pipeline, price-tier coverage, and proven consumer demand; your verified outdoor, camping and travel retail social refill channel focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the category buyer or vendor-review owner for a short intro video meeting?\",\"sendStatus\":\"failed_open\"}",
         "decision": {
           "verdict": "develop",
           "fitScore": 84,
@@ -369,7 +324,7 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
         "executionLayer": "Chrome CDP fallback",
         "glmModel": "not_used",
         "followup": false,
-        "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;personal_profile_without_company_match_expected_Intersport Norway_title_Facebook;contact_path_strategy_v2"
+        "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;identity_mismatch_expected_Intersport Norway_title_Facebook;contact_path_strategy_v2"
       }
     },
     {
@@ -380,34 +335,34 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "targetUrl": "https://www.jaxgoods.com/",
       "ok": false,
       "sendStatus": "failed_open",
-      "evidence": "website_contact_entry_not_verified;contact_entry_clicked:SKIP TO CONTENT;official_social_fallback:facebook;personal_profile_without_company_match_expected_Jax Outdoor Gear_title_Facebook;contact_path_strategy_v2",
-      "timestamp": "2026-07-29T10:32:54.581Z",
+      "evidence": "website_contact_entry_not_verified;contact_entry_clicked:SKIP TO CONTENT;official_social_fallback:facebook;instagram_message_button_clicked_composer_not_found;contact_path_strategy_v2",
+      "timestamp": "2026-07-29T10:37:46.066Z",
       "chromeOpen": {
         "ok": true,
         "engine": "codex-chrome-cdp",
         "port": 9224,
-        "targetUrl": "https://www.facebook.com/jaxoutdoorgear",
-        "tabId": "F71A01853A1FA386E409C5D60826FDAD",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/F71A01853A1FA386E409C5D60826FDAD",
-        "title": "Facebook"
+        "targetUrl": "https://www.instagram.com/jaxoutdoor/",
+        "tabId": "DE5A2686E1AF52D7C21B188983DA43E6",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/DE5A2686E1AF52D7C21B188983DA43E6",
+        "title": "James Hopkins (@jaxoutdoor) · Instagram 照片和视频"
       },
       "result": {
         "ok": false,
         "engine": "codex-chrome-cdp",
         "browserEngine": "codex-chrome-cdp",
         "mode": "codex_chrome_cdp",
-        "targetUrl": "https://www.facebook.com/jaxoutdoorgear",
+        "targetUrl": "https://www.instagram.com/jaxoutdoor/",
         "chromeOpen": {
           "ok": true,
           "engine": "codex-chrome-cdp",
           "port": 9224,
-          "targetUrl": "https://www.facebook.com/jaxoutdoorgear",
-          "tabId": "F71A01853A1FA386E409C5D60826FDAD",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/F71A01853A1FA386E409C5D60826FDAD",
-          "title": "Facebook"
+          "targetUrl": "https://www.instagram.com/jaxoutdoor/",
+          "tabId": "DE5A2686E1AF52D7C21B188983DA43E6",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/DE5A2686E1AF52D7C21B188983DA43E6",
+          "title": "James Hopkins (@jaxoutdoor) · Instagram 照片和视频"
         },
         "sendStatus": "failed_open",
-        "output": "{\"verdict\":\"major_bug_review_needed\",\"evidence\":\"website_contact_entry_not_verified;contact_entry_clicked:SKIP TO CONTENT;official_social_fallback:facebook;personal_profile_without_company_match_expected_Jax Outdoor Gear_title_Facebook;contact_path_strategy_v2\",\"nextAction\":\"Wrong or unmatched account opened; record as major bug and move to next verified customer.\",\"draft\":\"Hi Jax Outdoor Gear team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a retail/category buyer, the strongest fit is assortment fit, new SKU pipeline, price-tier coverage, and proven consumer demand; your verified outdoor, camping and travel retail social refill channel focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the category buyer or vendor-review owner for a short intro video meeting?\",\"sendStatus\":\"failed_open\"}",
+        "output": "{\"verdict\":\"major_bug_review_needed\",\"evidence\":\"website_contact_entry_not_verified;contact_entry_clicked:SKIP TO CONTENT;official_social_fallback:facebook;instagram_message_button_clicked_composer_not_found;contact_path_strategy_v2\",\"nextAction\":\"Composer not detected; pause automation and notify operator only if retry would be unsafe.\",\"draft\":\"Hi Jax Outdoor Gear team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a retail/category buyer, the strongest fit is assortment fit, new SKU pipeline, price-tier coverage, and proven consumer demand; your verified outdoor, camping and travel retail social refill channel focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the category buyer or vendor-review owner for a short intro video meeting?\",\"sendStatus\":\"failed_open\",\"fallbackFrom\":\"https://www.facebook.com/jaxoutdoorgear\",\"fallbackPlatform\":\"instagram\",\"fallbackReason\":\"personal_profile_without_company_match_expected_Jax Outdoor Gear_title_Facebook\"}",
         "decision": {
           "verdict": "develop",
           "fitScore": 84,
@@ -417,7 +372,9 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
         "executionLayer": "Chrome CDP fallback",
         "glmModel": "not_used",
         "followup": false,
-        "evidence": "website_contact_entry_not_verified;contact_entry_clicked:SKIP TO CONTENT;official_social_fallback:facebook;personal_profile_without_company_match_expected_Jax Outdoor Gear_title_Facebook;contact_path_strategy_v2"
+        "fallbackFrom": "https://www.facebook.com/jaxoutdoorgear",
+        "fallbackPlatform": "instagram",
+        "evidence": "website_contact_entry_not_verified;contact_entry_clicked:SKIP TO CONTENT;official_social_fallback:facebook;instagram_message_button_clicked_composer_not_found;contact_path_strategy_v2"
       }
     },
     {
@@ -429,14 +386,14 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "ok": false,
       "sendStatus": "failed_open",
       "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;personal_profile_without_company_match_expected_Mammut Store_title_Facebook;contact_path_strategy_v2",
-      "timestamp": "2026-07-29T10:33:10.496Z",
+      "timestamp": "2026-07-29T10:38:01.397Z",
       "chromeOpen": {
         "ok": true,
         "engine": "codex-chrome-cdp",
         "port": 9224,
         "targetUrl": "https://www.facebook.com/mammut",
-        "tabId": "7D6E9B5316DF3AAE18FEC07642331DD2",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/7D6E9B5316DF3AAE18FEC07642331DD2",
+        "tabId": "5EFC989055076EF60D0BD3C3007D8834",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/5EFC989055076EF60D0BD3C3007D8834",
         "title": "Facebook"
       },
       "result": {
@@ -450,8 +407,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
           "engine": "codex-chrome-cdp",
           "port": 9224,
           "targetUrl": "https://www.facebook.com/mammut",
-          "tabId": "7D6E9B5316DF3AAE18FEC07642331DD2",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/7D6E9B5316DF3AAE18FEC07642331DD2",
+          "tabId": "5EFC989055076EF60D0BD3C3007D8834",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/5EFC989055076EF60D0BD3C3007D8834",
           "title": "Facebook"
         },
         "sendStatus": "failed_open",
@@ -477,14 +434,14 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "ok": false,
       "sendStatus": "failed_open",
       "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;personal_profile_without_company_match_expected_Moosejaw_title_Facebook;contact_path_strategy_v2",
-      "timestamp": "2026-07-29T10:33:21.821Z",
+      "timestamp": "2026-07-29T10:38:12.743Z",
       "chromeOpen": {
         "ok": true,
         "engine": "codex-chrome-cdp",
         "port": 9224,
         "targetUrl": "https://www.facebook.com/Moosejaw",
-        "tabId": "7DBF3849CE3694A6D7F36947E6772D63",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/7DBF3849CE3694A6D7F36947E6772D63",
+        "tabId": "5DF44C0A5B21A7889AA4E7BFA992AE18",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/5DF44C0A5B21A7889AA4E7BFA992AE18",
         "title": "Facebook"
       },
       "result": {
@@ -498,8 +455,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
           "engine": "codex-chrome-cdp",
           "port": 9224,
           "targetUrl": "https://www.facebook.com/Moosejaw",
-          "tabId": "7DBF3849CE3694A6D7F36947E6772D63",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/7DBF3849CE3694A6D7F36947E6772D63",
+          "tabId": "5DF44C0A5B21A7889AA4E7BFA992AE18",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/5DF44C0A5B21A7889AA4E7BFA992AE18",
           "title": "Facebook"
         },
         "sendStatus": "failed_open",
@@ -525,14 +482,14 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "ok": false,
       "sendStatus": "failed_open",
       "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;personal_profile_without_company_match_expected_Outdoor Specialist_title_Facebook;contact_path_strategy_v2",
-      "timestamp": "2026-07-29T10:33:33.738Z",
+      "timestamp": "2026-07-29T10:38:24.375Z",
       "chromeOpen": {
         "ok": true,
         "engine": "codex-chrome-cdp",
         "port": 9224,
         "targetUrl": "https://www.facebook.com/outdoorspecialist",
-        "tabId": "2DD3255A3428B8260C9F635ED7D66ACE",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/2DD3255A3428B8260C9F635ED7D66ACE",
+        "tabId": "40C15C809440E035DE5A6293A0B5B6E4",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/40C15C809440E035DE5A6293A0B5B6E4",
         "title": "Facebook"
       },
       "result": {
@@ -546,8 +503,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
           "engine": "codex-chrome-cdp",
           "port": 9224,
           "targetUrl": "https://www.facebook.com/outdoorspecialist",
-          "tabId": "2DD3255A3428B8260C9F635ED7D66ACE",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/2DD3255A3428B8260C9F635ED7D66ACE",
+          "tabId": "40C15C809440E035DE5A6293A0B5B6E4",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/40C15C809440E035DE5A6293A0B5B6E4",
           "title": "Facebook"
         },
         "sendStatus": "failed_open",
@@ -573,14 +530,14 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "ok": false,
       "sendStatus": "failed_open",
       "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;personal_profile_without_company_match_expected_The Mountaineer_title_Facebook;contact_path_strategy_v2",
-      "timestamp": "2026-07-29T10:33:44.861Z",
+      "timestamp": "2026-07-29T10:38:39.571Z",
       "chromeOpen": {
         "ok": true,
         "engine": "codex-chrome-cdp",
         "port": 9224,
         "targetUrl": "https://www.facebook.com/themountaineerkeenevalley",
-        "tabId": "04453265EBAE7F673C7D0B31347C240F",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/04453265EBAE7F673C7D0B31347C240F",
+        "tabId": "388DD9D1CF4274E1964672E26EA1BC5F",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/388DD9D1CF4274E1964672E26EA1BC5F",
         "title": "Facebook"
       },
       "result": {
@@ -594,8 +551,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
           "engine": "codex-chrome-cdp",
           "port": 9224,
           "targetUrl": "https://www.facebook.com/themountaineerkeenevalley",
-          "tabId": "04453265EBAE7F673C7D0B31347C240F",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/04453265EBAE7F673C7D0B31347C240F",
+          "tabId": "388DD9D1CF4274E1964672E26EA1BC5F",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/388DD9D1CF4274E1964672E26EA1BC5F",
           "title": "Facebook"
         },
         "sendStatus": "failed_open",
@@ -610,6 +567,54 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
         "glmModel": "not_used",
         "followup": false,
         "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;personal_profile_without_company_match_expected_The Mountaineer_title_Facebook;contact_path_strategy_v2"
+      }
+    },
+    {
+      "id": "google-customer-tiso-website-contact",
+      "company": "Tiso",
+      "action": "verify_target",
+      "platform": "email",
+      "targetUrl": "https://www.tiso.com/",
+      "ok": false,
+      "sendStatus": "failed_open",
+      "evidence": "website_contact_entry_not_verified;contact_entry_clicked:Contact Us;official_social_fallback:facebook;personal_profile_without_company_match_expected_Tiso_title_Facebook;contact_path_strategy_v2",
+      "timestamp": "2026-07-29T10:39:11.942Z",
+      "chromeOpen": {
+        "ok": true,
+        "engine": "codex-chrome-cdp",
+        "port": 9224,
+        "targetUrl": "https://www.facebook.com/TisoOutdoor",
+        "tabId": "728EDA229CDCF3F576CA3AEAE0055491",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/728EDA229CDCF3F576CA3AEAE0055491",
+        "title": "Facebook"
+      },
+      "result": {
+        "ok": false,
+        "engine": "codex-chrome-cdp",
+        "browserEngine": "codex-chrome-cdp",
+        "mode": "codex_chrome_cdp",
+        "targetUrl": "https://www.facebook.com/TisoOutdoor",
+        "chromeOpen": {
+          "ok": true,
+          "engine": "codex-chrome-cdp",
+          "port": 9224,
+          "targetUrl": "https://www.facebook.com/TisoOutdoor",
+          "tabId": "728EDA229CDCF3F576CA3AEAE0055491",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/728EDA229CDCF3F576CA3AEAE0055491",
+          "title": "Facebook"
+        },
+        "sendStatus": "failed_open",
+        "output": "{\"verdict\":\"major_bug_review_needed\",\"evidence\":\"website_contact_entry_not_verified;contact_entry_clicked:Contact Us;official_social_fallback:facebook;personal_profile_without_company_match_expected_Tiso_title_Facebook;contact_path_strategy_v2\",\"nextAction\":\"Wrong or unmatched account opened; record as major bug and move to next verified customer.\",\"draft\":\"Hi Tiso team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a retail/category buyer, the strongest fit is assortment fit, new SKU pipeline, price-tier coverage, and proven consumer demand; your verified outdoor, camping and travel retail social refill channel focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the category buyer or vendor-review owner for a short intro video meeting?\",\"sendStatus\":\"failed_open\"}",
+        "decision": {
+          "verdict": "develop",
+          "fitScore": 84,
+          "reason": "local_codex_extension_template",
+          "draft": "Hi Tiso team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a retail/category buyer, the strongest fit is assortment fit, new SKU pipeline, price-tier coverage, and proven consumer demand; your verified outdoor, camping and travel retail social refill channel focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the category buyer or vendor-review owner for a short intro video meeting?"
+        },
+        "executionLayer": "Chrome CDP fallback",
+        "glmModel": "not_used",
+        "followup": false,
+        "evidence": "website_contact_entry_not_verified;contact_entry_clicked:Contact Us;official_social_fallback:facebook;personal_profile_without_company_match_expected_Tiso_title_Facebook;contact_path_strategy_v2"
       }
     }
   ],
@@ -623,15 +628,15 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "ok": false,
       "sendStatus": "failed_open",
       "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;personal_profile_without_company_match_expected_8a.pl_title_Facebook;contact_path_strategy_v2",
-      "timestamp": "2026-07-29T10:30:57.723Z",
+      "timestamp": "2026-07-29T10:35:50.446Z",
       "chromeOpen": {
         "ok": true,
         "engine": "codex-chrome-cdp",
         "port": 9224,
         "targetUrl": "https://www.facebook.com/8a.pl",
-        "tabId": "586D29CED02E3BD1BE6F2E0CCEE73F43",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/586D29CED02E3BD1BE6F2E0CCEE73F43",
-        "title": "Facebook"
+        "tabId": "C9CA1E757F919EC6130C881859311B8E",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/C9CA1E757F919EC6130C881859311B8E",
+        "title": ""
       },
       "result": {
         "ok": false,
@@ -644,9 +649,9 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
           "engine": "codex-chrome-cdp",
           "port": 9224,
           "targetUrl": "https://www.facebook.com/8a.pl",
-          "tabId": "586D29CED02E3BD1BE6F2E0CCEE73F43",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/586D29CED02E3BD1BE6F2E0CCEE73F43",
-          "title": "Facebook"
+          "tabId": "C9CA1E757F919EC6130C881859311B8E",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/C9CA1E757F919EC6130C881859311B8E",
+          "title": ""
         },
         "sendStatus": "failed_open",
         "output": "{\"verdict\":\"major_bug_review_needed\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;personal_profile_without_company_match_expected_8a.pl_title_Facebook;contact_path_strategy_v2\",\"nextAction\":\"Wrong or unmatched account opened; record as major bug and move to next verified customer.\",\"draft\":\"Hi 8a.pl team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a retail/category buyer, the strongest fit is assortment fit, new SKU pipeline, price-tier coverage, and proven consumer demand; your verified outdoor, camping and travel retail social refill channel focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the category buyer or vendor-review owner for a short intro video meeting?\",\"sendStatus\":\"failed_open\"}",
@@ -671,14 +676,14 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "ok": false,
       "sendStatus": "failed_open",
       "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;personal_profile_without_company_match_expected_Above and Beyond_title_Facebook;contact_path_strategy_v2",
-      "timestamp": "2026-07-29T10:31:06.908Z",
+      "timestamp": "2026-07-29T10:36:02.112Z",
       "chromeOpen": {
         "ok": true,
         "engine": "codex-chrome-cdp",
         "port": 9224,
         "targetUrl": "https://www.facebook.com/aboveandbeyondireland",
-        "tabId": "751B40BDE7A5EADA801B4D19EA4C5464",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/751B40BDE7A5EADA801B4D19EA4C5464",
+        "tabId": "FA09B3021D2187439FCE52B37E1D69D7",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/FA09B3021D2187439FCE52B37E1D69D7",
         "title": "Facebook"
       },
       "result": {
@@ -692,8 +697,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
           "engine": "codex-chrome-cdp",
           "port": 9224,
           "targetUrl": "https://www.facebook.com/aboveandbeyondireland",
-          "tabId": "751B40BDE7A5EADA801B4D19EA4C5464",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/751B40BDE7A5EADA801B4D19EA4C5464",
+          "tabId": "FA09B3021D2187439FCE52B37E1D69D7",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/FA09B3021D2187439FCE52B37E1D69D7",
           "title": "Facebook"
         },
         "sendStatus": "failed_open",
@@ -719,15 +724,15 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "ok": false,
       "sendStatus": "failed_open",
       "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;personal_profile_without_company_match_expected_Atmosphere_title_Facebook;contact_path_strategy_v2",
-      "timestamp": "2026-07-29T10:31:19.599Z",
+      "timestamp": "2026-07-29T10:36:15.464Z",
       "chromeOpen": {
         "ok": true,
         "engine": "codex-chrome-cdp",
         "port": 9224,
         "targetUrl": "https://www.facebook.com/Atmosphere",
-        "tabId": "DDBF7382CCB4A72F326BBD0CD7B6335F",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/DDBF7382CCB4A72F326BBD0CD7B6335F",
-        "title": "Facebook"
+        "tabId": "83179BEB76AA792CCCDC09BE43461427",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/83179BEB76AA792CCCDC09BE43461427",
+        "title": ""
       },
       "result": {
         "ok": false,
@@ -740,9 +745,9 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
           "engine": "codex-chrome-cdp",
           "port": 9224,
           "targetUrl": "https://www.facebook.com/Atmosphere",
-          "tabId": "DDBF7382CCB4A72F326BBD0CD7B6335F",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/DDBF7382CCB4A72F326BBD0CD7B6335F",
-          "title": "Facebook"
+          "tabId": "83179BEB76AA792CCCDC09BE43461427",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/83179BEB76AA792CCCDC09BE43461427",
+          "title": ""
         },
         "sendStatus": "failed_open",
         "output": "{\"verdict\":\"major_bug_review_needed\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;personal_profile_without_company_match_expected_Atmosphere_title_Facebook;contact_path_strategy_v2\",\"nextAction\":\"Wrong or unmatched account opened; record as major bug and move to next verified customer.\",\"draft\":\"Hi Atmosphere team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a retail/category buyer, the strongest fit is assortment fit, new SKU pipeline, price-tier coverage, and proven consumer demand; your verified outdoor, camping and travel retail social refill channel focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the category buyer or vendor-review owner for a short intro video meeting?\",\"sendStatus\":\"failed_open\"}",
@@ -767,14 +772,14 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "ok": false,
       "sendStatus": "failed_open",
       "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;personal_profile_without_company_match_expected_Campz_title_Facebook;contact_path_strategy_v2",
-      "timestamp": "2026-07-29T10:31:34.285Z",
+      "timestamp": "2026-07-29T10:36:30.390Z",
       "chromeOpen": {
         "ok": true,
         "engine": "codex-chrome-cdp",
         "port": 9224,
         "targetUrl": "https://www.facebook.com/campz.de",
-        "tabId": "805C1B462DE065AC931DF83D709D5A86",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/805C1B462DE065AC931DF83D709D5A86",
+        "tabId": "2660FB18B3419D8CA64154671C07C10D",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/2660FB18B3419D8CA64154671C07C10D",
         "title": "Facebook"
       },
       "result": {
@@ -788,8 +793,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
           "engine": "codex-chrome-cdp",
           "port": 9224,
           "targetUrl": "https://www.facebook.com/campz.de",
-          "tabId": "805C1B462DE065AC931DF83D709D5A86",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/805C1B462DE065AC931DF83D709D5A86",
+          "tabId": "2660FB18B3419D8CA64154671C07C10D",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/2660FB18B3419D8CA64154671C07C10D",
           "title": "Facebook"
         },
         "sendStatus": "failed_open",
@@ -815,7 +820,7 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "ok": false,
       "sendStatus": "approval_pending",
       "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;;contact_path_strategy_v2",
-      "timestamp": "2026-07-29T10:31:39.270Z",
+      "timestamp": "2026-07-29T10:36:35.369Z",
       "chromeOpen": null,
       "result": {
         "ok": false,
@@ -823,51 +828,6 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
         "mode": "official_website_social_fallback",
         "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;;contact_path_strategy_v2",
         "output": "{\"verdict\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;;contact_path_strategy_v2\",\"nextAction\":\"Official website exposed facebook; Codex Chrome tried that social channel before website fallback.\",\"sendStatus\":\"approval_pending\"}"
-      }
-    },
-    {
-      "id": "google-customer-durango-outdoor-exchange-website-contact",
-      "company": "Durango Outdoor Exchange",
-      "action": "verify_target",
-      "platform": "email",
-      "targetUrl": "https://durangooutdoorexchange.com/",
-      "ok": false,
-      "sendStatus": "website_contact_unreachable_skip",
-      "evidence": "unavailable_profile_page: CONSIGNOR LOGIN\n \nWHO WE ARE\n \nSUSTAINABILITY EFFORTS\n \nGIFT CARDS\n \nSELL YOUR GEAR\n \nSHOP \n0\n\nACCEPTING GEAR DROP OFFS MON-SAT 10AM-5PM. NO CONSIGNMENT ACCEPTANCE ON SUNDAYS.\n\n   ;website_contact_all_targets_failed:6;contact_path_strategy_v2",
-      "timestamp": "2026-07-29T10:32:00.866Z",
-      "chromeOpen": {
-        "ok": false,
-        "engine": "codex-chrome-cdp",
-        "port": 9224,
-        "targetUrl": "https://durangooutdoorexchange.com/help/contact-us",
-        "tabId": "634E33A7BCF7324A0244577F5CCDEC2C",
-        "title": "404 Not Found – Durango Outdoor Exchange",
-        "status": "failed_open",
-        "error": "profile_unavailable_or_broken_link",
-        "evidence": "unavailable_profile_page: CONSIGNOR LOGIN\n \nWHO WE ARE\n \nSUSTAINABILITY EFFORTS\n \nGIFT CARDS\n \nSELL YOUR GEAR\n \nSHOP \n0\n\nACCEPTING GEAR DROP OFFS MON-SAT 10AM-5PM. NO CONSIGNMENT ACCEPTANCE ON SUNDAYS.\n\n   "
-      },
-      "result": {
-        "ok": false,
-        "engine": "dedicated-chrome-cdp-website-contact",
-        "browserEngine": "codex-chrome-cdp",
-        "mode": "website_contact_unreachable_skip",
-        "targetUrl": "https://durangooutdoorexchange.com/help/contact-us",
-        "chromeOpen": {
-          "ok": false,
-          "engine": "codex-chrome-cdp",
-          "port": 9224,
-          "targetUrl": "https://durangooutdoorexchange.com/help/contact-us",
-          "tabId": "634E33A7BCF7324A0244577F5CCDEC2C",
-          "title": "404 Not Found – Durango Outdoor Exchange",
-          "status": "failed_open",
-          "error": "profile_unavailable_or_broken_link",
-          "evidence": "unavailable_profile_page: CONSIGNOR LOGIN\n \nWHO WE ARE\n \nSUSTAINABILITY EFFORTS\n \nGIFT CARDS\n \nSELL YOUR GEAR\n \nSHOP \n0\n\nACCEPTING GEAR DROP OFFS MON-SAT 10AM-5PM. NO CONSIGNMENT ACCEPTANCE ON SUNDAYS.\n\n   "
-        },
-        "sendStatus": "website_contact_unreachable_skip",
-        "subject": "FLEXTAIL retail partnership | 2026 assortment",
-        "draft": "Dear Durango Outdoor Exchange Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
-        "evidence": "unavailable_profile_page: CONSIGNOR LOGIN\n \nWHO WE ARE\n \nSUSTAINABILITY EFFORTS\n \nGIFT CARDS\n \nSELL YOUR GEAR\n \nSHOP \n0\n\nACCEPTING GEAR DROP OFFS MON-SAT 10AM-5PM. NO CONSIGNMENT ACCEPTANCE ON SUNDAYS.\n\n   ;website_contact_all_targets_failed:6;contact_path_strategy_v2",
-        "output": "{\"verdict\":\"website_contact_unreachable_skip\",\"evidence\":\"unavailable_profile_page: CONSIGNOR LOGIN\\n \\nWHO WE ARE\\n \\nSUSTAINABILITY EFFORTS\\n \\nGIFT CARDS\\n \\nSELL YOUR GEAR\\n \\nSHOP \\n0\\n\\nACCEPTING GEAR DROP OFFS MON-SAT 10AM-5PM. NO CONSIGNMENT ACCEPTANCE ON SUNDAYS.\\n\\n   ;website_contact_all_targets_failed:6;contact_path_strategy_v2\",\"subject\":\"FLEXTAIL retail partnership | 2026 assortment\",\"draft\":\"Dear Durango Outdoor Exchange Team,\\n\\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\\n\\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\\n\\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\\n\\nProduct overview: https://www.flextail.com/\\n\\nBest regards,\\nLeo Liu\\nSales & Operations Director\\nLeo@flextailgear.com\",\"sendStatus\":\"website_contact_unreachable_skip\",\"attempts\":[{\"targetUrl\":\"https://durangooutdoorexchange.com/\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control\"},{\"targetUrl\":\"https://durangooutdoorexchange.com/pages/contact-us\",\"sendStatus\":\"failed_open\",\"evidence\":\"unavailable_profile_page: ACCEPTING GEAR DROP OFFS MON-SAT 10AM-5PM. NO CONSIGNMENT ACCEPTANCE ON SUNDAYS.\\n\\n   \\n1-970-259-0171\\n0\\n LOGIN\\nCONSIGNOR LOGIN\\n \\nWHO WE ARE\\n \\nSUSTAINABILITY EFFORTS\\n \\nGIFT CARDS\\n \\nS\"},{\"targetUrl\":\"https://durangooutdoorexchange.com/pages/contact\",\"sendStatus\":\"failed_open\",\"evidence\":\"unavailable_profile_page: ACCEPTING GEAR DROP OFFS MON-SAT 10AM-5PM. NO CONSIGNMENT ACCEPTANCE ON SUNDAYS.\\n\\n   \\n1-970-259-0171\\n0\\n LOGIN\\nCONSIGNOR LOGIN\\n \\nWHO WE ARE\\n \\nSUSTAINABILITY EFFORTS\\n \\nGIFT CARDS\\n \\nS\"},{\"targetUrl\":\"https://durangooutdoorexchange.com/contact-us\",\"sendStatus\":\"failed_open\",\"evidence\":\"website_page_unavailable_404: Something went wrong.\\n\\nWhat happened?\\n404 Not Found\\nWhat can I do?\\nReturn to the previous page.\"},{\"targetUrl\":\"https://durangooutdoorexchange.com/contact\",\"sendStatus\":\"failed_open\",\"evidence\":\"website_page_unavailable_404: Something went wrong.\\n\\nWhat happened?\\n404 Not Found\\nWhat can I do?\\nReturn to the previous page.\"},{\"targetUrl\":\"https://durangooutdoorexchange.com/help/contact-us\",\"sendStatus\":\"failed_open\",\"evidence\":\"unavailable_profile_page: CONSIGNOR LOGIN\\n \\nWHO WE ARE\\n \\nSUSTAINABILITY EFFORTS\\n \\nGIFT CARDS\\n \\nSELL YOUR GEAR\\n \\nSHOP \\n0\\n\\nACCEPTING GEAR DROP OFFS MON-SAT 10AM-5PM. NO CONSIGNMENT ACCEPTANCE ON SUNDAYS.\\n\\n   \"}],\"nextAction\":\"Official website contact was unreachable or not machine-verifiable. Skip this website route now, note it clearly, and continue with LinkedIn, Facebook, Instagram, or another verified official channel.\"}"
       }
     },
     {
@@ -879,14 +839,14 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "ok": false,
       "sendStatus": "failed_open",
       "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;personal_profile_without_company_match_expected_Eastern Mountain Sports_title_Facebook;contact_path_strategy_v2",
-      "timestamp": "2026-07-29T10:32:12.016Z",
+      "timestamp": "2026-07-29T10:36:46.619Z",
       "chromeOpen": {
         "ok": true,
         "engine": "codex-chrome-cdp",
         "port": 9224,
         "targetUrl": "https://www.facebook.com/EasternMountainSports",
-        "tabId": "2D025FDA57F04C75868E786607EA0339",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/2D025FDA57F04C75868E786607EA0339",
+        "tabId": "E505E695661D99BA981D08721E2D0D05",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/E505E695661D99BA981D08721E2D0D05",
         "title": "Facebook"
       },
       "result": {
@@ -900,8 +860,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
           "engine": "codex-chrome-cdp",
           "port": 9224,
           "targetUrl": "https://www.facebook.com/EasternMountainSports",
-          "tabId": "2D025FDA57F04C75868E786607EA0339",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/2D025FDA57F04C75868E786607EA0339",
+          "tabId": "E505E695661D99BA981D08721E2D0D05",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/E505E695661D99BA981D08721E2D0D05",
           "title": "Facebook"
         },
         "sendStatus": "failed_open",
@@ -926,15 +886,15 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "targetUrl": "https://www.intersport.no/",
       "ok": false,
       "sendStatus": "failed_open",
-      "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;personal_profile_without_company_match_expected_Intersport Norway_title_Facebook;contact_path_strategy_v2",
-      "timestamp": "2026-07-29T10:32:27.820Z",
+      "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;identity_mismatch_expected_Intersport Norway_title_Facebook;contact_path_strategy_v2",
+      "timestamp": "2026-07-29T10:36:57.329Z",
       "chromeOpen": {
         "ok": true,
         "engine": "codex-chrome-cdp",
         "port": 9224,
         "targetUrl": "https://www.facebook.com/intersportnorge",
-        "tabId": "7BC8070E216FBFB1046555D2CF45A605",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/7BC8070E216FBFB1046555D2CF45A605",
+        "tabId": "0DE9205C5C2B2F584B715E1324C53D5C",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/0DE9205C5C2B2F584B715E1324C53D5C",
         "title": "Facebook"
       },
       "result": {
@@ -948,12 +908,12 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
           "engine": "codex-chrome-cdp",
           "port": 9224,
           "targetUrl": "https://www.facebook.com/intersportnorge",
-          "tabId": "7BC8070E216FBFB1046555D2CF45A605",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/7BC8070E216FBFB1046555D2CF45A605",
+          "tabId": "0DE9205C5C2B2F584B715E1324C53D5C",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/0DE9205C5C2B2F584B715E1324C53D5C",
           "title": "Facebook"
         },
         "sendStatus": "failed_open",
-        "output": "{\"verdict\":\"major_bug_review_needed\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;personal_profile_without_company_match_expected_Intersport Norway_title_Facebook;contact_path_strategy_v2\",\"nextAction\":\"Wrong or unmatched account opened; record as major bug and move to next verified customer.\",\"draft\":\"Hi Intersport Norway team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a retail/category buyer, the strongest fit is assortment fit, new SKU pipeline, price-tier coverage, and proven consumer demand; your verified outdoor, camping and travel retail social refill channel focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the category buyer or vendor-review owner for a short intro video meeting?\",\"sendStatus\":\"failed_open\"}",
+        "output": "{\"verdict\":\"major_bug_review_needed\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;identity_mismatch_expected_Intersport Norway_title_Facebook;contact_path_strategy_v2\",\"nextAction\":\"Wrong or unmatched account opened; record as major bug and move to next verified customer.\",\"draft\":\"Hi Intersport Norway team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a retail/category buyer, the strongest fit is assortment fit, new SKU pipeline, price-tier coverage, and proven consumer demand; your verified outdoor, camping and travel retail social refill channel focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the category buyer or vendor-review owner for a short intro video meeting?\",\"sendStatus\":\"failed_open\"}",
         "decision": {
           "verdict": "develop",
           "fitScore": 84,
@@ -963,7 +923,7 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
         "executionLayer": "Chrome CDP fallback",
         "glmModel": "not_used",
         "followup": false,
-        "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;personal_profile_without_company_match_expected_Intersport Norway_title_Facebook;contact_path_strategy_v2"
+        "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;identity_mismatch_expected_Intersport Norway_title_Facebook;contact_path_strategy_v2"
       }
     },
     {
@@ -974,34 +934,34 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "targetUrl": "https://www.jaxgoods.com/",
       "ok": false,
       "sendStatus": "failed_open",
-      "evidence": "website_contact_entry_not_verified;contact_entry_clicked:SKIP TO CONTENT;official_social_fallback:facebook;personal_profile_without_company_match_expected_Jax Outdoor Gear_title_Facebook;contact_path_strategy_v2",
-      "timestamp": "2026-07-29T10:32:54.581Z",
+      "evidence": "website_contact_entry_not_verified;contact_entry_clicked:SKIP TO CONTENT;official_social_fallback:facebook;instagram_message_button_clicked_composer_not_found;contact_path_strategy_v2",
+      "timestamp": "2026-07-29T10:37:46.066Z",
       "chromeOpen": {
         "ok": true,
         "engine": "codex-chrome-cdp",
         "port": 9224,
-        "targetUrl": "https://www.facebook.com/jaxoutdoorgear",
-        "tabId": "F71A01853A1FA386E409C5D60826FDAD",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/F71A01853A1FA386E409C5D60826FDAD",
-        "title": "Facebook"
+        "targetUrl": "https://www.instagram.com/jaxoutdoor/",
+        "tabId": "DE5A2686E1AF52D7C21B188983DA43E6",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/DE5A2686E1AF52D7C21B188983DA43E6",
+        "title": "James Hopkins (@jaxoutdoor) · Instagram 照片和视频"
       },
       "result": {
         "ok": false,
         "engine": "codex-chrome-cdp",
         "browserEngine": "codex-chrome-cdp",
         "mode": "codex_chrome_cdp",
-        "targetUrl": "https://www.facebook.com/jaxoutdoorgear",
+        "targetUrl": "https://www.instagram.com/jaxoutdoor/",
         "chromeOpen": {
           "ok": true,
           "engine": "codex-chrome-cdp",
           "port": 9224,
-          "targetUrl": "https://www.facebook.com/jaxoutdoorgear",
-          "tabId": "F71A01853A1FA386E409C5D60826FDAD",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/F71A01853A1FA386E409C5D60826FDAD",
-          "title": "Facebook"
+          "targetUrl": "https://www.instagram.com/jaxoutdoor/",
+          "tabId": "DE5A2686E1AF52D7C21B188983DA43E6",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/DE5A2686E1AF52D7C21B188983DA43E6",
+          "title": "James Hopkins (@jaxoutdoor) · Instagram 照片和视频"
         },
         "sendStatus": "failed_open",
-        "output": "{\"verdict\":\"major_bug_review_needed\",\"evidence\":\"website_contact_entry_not_verified;contact_entry_clicked:SKIP TO CONTENT;official_social_fallback:facebook;personal_profile_without_company_match_expected_Jax Outdoor Gear_title_Facebook;contact_path_strategy_v2\",\"nextAction\":\"Wrong or unmatched account opened; record as major bug and move to next verified customer.\",\"draft\":\"Hi Jax Outdoor Gear team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a retail/category buyer, the strongest fit is assortment fit, new SKU pipeline, price-tier coverage, and proven consumer demand; your verified outdoor, camping and travel retail social refill channel focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the category buyer or vendor-review owner for a short intro video meeting?\",\"sendStatus\":\"failed_open\"}",
+        "output": "{\"verdict\":\"major_bug_review_needed\",\"evidence\":\"website_contact_entry_not_verified;contact_entry_clicked:SKIP TO CONTENT;official_social_fallback:facebook;instagram_message_button_clicked_composer_not_found;contact_path_strategy_v2\",\"nextAction\":\"Composer not detected; pause automation and notify operator only if retry would be unsafe.\",\"draft\":\"Hi Jax Outdoor Gear team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a retail/category buyer, the strongest fit is assortment fit, new SKU pipeline, price-tier coverage, and proven consumer demand; your verified outdoor, camping and travel retail social refill channel focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the category buyer or vendor-review owner for a short intro video meeting?\",\"sendStatus\":\"failed_open\",\"fallbackFrom\":\"https://www.facebook.com/jaxoutdoorgear\",\"fallbackPlatform\":\"instagram\",\"fallbackReason\":\"personal_profile_without_company_match_expected_Jax Outdoor Gear_title_Facebook\"}",
         "decision": {
           "verdict": "develop",
           "fitScore": 84,
@@ -1011,7 +971,9 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
         "executionLayer": "Chrome CDP fallback",
         "glmModel": "not_used",
         "followup": false,
-        "evidence": "website_contact_entry_not_verified;contact_entry_clicked:SKIP TO CONTENT;official_social_fallback:facebook;personal_profile_without_company_match_expected_Jax Outdoor Gear_title_Facebook;contact_path_strategy_v2"
+        "fallbackFrom": "https://www.facebook.com/jaxoutdoorgear",
+        "fallbackPlatform": "instagram",
+        "evidence": "website_contact_entry_not_verified;contact_entry_clicked:SKIP TO CONTENT;official_social_fallback:facebook;instagram_message_button_clicked_composer_not_found;contact_path_strategy_v2"
       }
     },
     {
@@ -1023,14 +985,14 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "ok": false,
       "sendStatus": "failed_open",
       "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;personal_profile_without_company_match_expected_Mammut Store_title_Facebook;contact_path_strategy_v2",
-      "timestamp": "2026-07-29T10:33:10.496Z",
+      "timestamp": "2026-07-29T10:38:01.397Z",
       "chromeOpen": {
         "ok": true,
         "engine": "codex-chrome-cdp",
         "port": 9224,
         "targetUrl": "https://www.facebook.com/mammut",
-        "tabId": "7D6E9B5316DF3AAE18FEC07642331DD2",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/7D6E9B5316DF3AAE18FEC07642331DD2",
+        "tabId": "5EFC989055076EF60D0BD3C3007D8834",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/5EFC989055076EF60D0BD3C3007D8834",
         "title": "Facebook"
       },
       "result": {
@@ -1044,8 +1006,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
           "engine": "codex-chrome-cdp",
           "port": 9224,
           "targetUrl": "https://www.facebook.com/mammut",
-          "tabId": "7D6E9B5316DF3AAE18FEC07642331DD2",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/7D6E9B5316DF3AAE18FEC07642331DD2",
+          "tabId": "5EFC989055076EF60D0BD3C3007D8834",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/5EFC989055076EF60D0BD3C3007D8834",
           "title": "Facebook"
         },
         "sendStatus": "failed_open",
@@ -1071,14 +1033,14 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "ok": false,
       "sendStatus": "failed_open",
       "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;personal_profile_without_company_match_expected_Moosejaw_title_Facebook;contact_path_strategy_v2",
-      "timestamp": "2026-07-29T10:33:21.821Z",
+      "timestamp": "2026-07-29T10:38:12.743Z",
       "chromeOpen": {
         "ok": true,
         "engine": "codex-chrome-cdp",
         "port": 9224,
         "targetUrl": "https://www.facebook.com/Moosejaw",
-        "tabId": "7DBF3849CE3694A6D7F36947E6772D63",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/7DBF3849CE3694A6D7F36947E6772D63",
+        "tabId": "5DF44C0A5B21A7889AA4E7BFA992AE18",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/5DF44C0A5B21A7889AA4E7BFA992AE18",
         "title": "Facebook"
       },
       "result": {
@@ -1092,8 +1054,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
           "engine": "codex-chrome-cdp",
           "port": 9224,
           "targetUrl": "https://www.facebook.com/Moosejaw",
-          "tabId": "7DBF3849CE3694A6D7F36947E6772D63",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/7DBF3849CE3694A6D7F36947E6772D63",
+          "tabId": "5DF44C0A5B21A7889AA4E7BFA992AE18",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/5DF44C0A5B21A7889AA4E7BFA992AE18",
           "title": "Facebook"
         },
         "sendStatus": "failed_open",
@@ -1119,14 +1081,14 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "ok": false,
       "sendStatus": "failed_open",
       "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;personal_profile_without_company_match_expected_Outdoor Specialist_title_Facebook;contact_path_strategy_v2",
-      "timestamp": "2026-07-29T10:33:33.738Z",
+      "timestamp": "2026-07-29T10:38:24.375Z",
       "chromeOpen": {
         "ok": true,
         "engine": "codex-chrome-cdp",
         "port": 9224,
         "targetUrl": "https://www.facebook.com/outdoorspecialist",
-        "tabId": "2DD3255A3428B8260C9F635ED7D66ACE",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/2DD3255A3428B8260C9F635ED7D66ACE",
+        "tabId": "40C15C809440E035DE5A6293A0B5B6E4",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/40C15C809440E035DE5A6293A0B5B6E4",
         "title": "Facebook"
       },
       "result": {
@@ -1140,8 +1102,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
           "engine": "codex-chrome-cdp",
           "port": 9224,
           "targetUrl": "https://www.facebook.com/outdoorspecialist",
-          "tabId": "2DD3255A3428B8260C9F635ED7D66ACE",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/2DD3255A3428B8260C9F635ED7D66ACE",
+          "tabId": "40C15C809440E035DE5A6293A0B5B6E4",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/40C15C809440E035DE5A6293A0B5B6E4",
           "title": "Facebook"
         },
         "sendStatus": "failed_open",
@@ -1167,14 +1129,14 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "ok": false,
       "sendStatus": "failed_open",
       "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;personal_profile_without_company_match_expected_The Mountaineer_title_Facebook;contact_path_strategy_v2",
-      "timestamp": "2026-07-29T10:33:44.861Z",
+      "timestamp": "2026-07-29T10:38:39.571Z",
       "chromeOpen": {
         "ok": true,
         "engine": "codex-chrome-cdp",
         "port": 9224,
         "targetUrl": "https://www.facebook.com/themountaineerkeenevalley",
-        "tabId": "04453265EBAE7F673C7D0B31347C240F",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/04453265EBAE7F673C7D0B31347C240F",
+        "tabId": "388DD9D1CF4274E1964672E26EA1BC5F",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/388DD9D1CF4274E1964672E26EA1BC5F",
         "title": "Facebook"
       },
       "result": {
@@ -1188,8 +1150,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
           "engine": "codex-chrome-cdp",
           "port": 9224,
           "targetUrl": "https://www.facebook.com/themountaineerkeenevalley",
-          "tabId": "04453265EBAE7F673C7D0B31347C240F",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/04453265EBAE7F673C7D0B31347C240F",
+          "tabId": "388DD9D1CF4274E1964672E26EA1BC5F",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/388DD9D1CF4274E1964672E26EA1BC5F",
           "title": "Facebook"
         },
         "sendStatus": "failed_open",
@@ -1205,87 +1167,57 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
         "followup": false,
         "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;personal_profile_without_company_match_expected_The Mountaineer_title_Facebook;contact_path_strategy_v2"
       }
-    }
-  ],
-  "skipped": [
-    {
-      "id": "google-customer-trekitt-website-contact",
-      "company": "Trekitt",
-      "action": "verify_target",
-      "reason": "homepage_only_contact_path_requires_verification"
-    },
-    {
-      "id": "google-customer-ultralight-outdoor-gear-website-contact",
-      "company": "Ultralight Outdoor Gear",
-      "action": "verify_target",
-      "reason": "homepage_only_contact_path_requires_verification"
-    },
-    {
-      "id": "google-customer-alpinetrek-website-contact",
-      "company": "Alpinetrek",
-      "action": "verify_target",
-      "reason": "homepage_only_contact_path_requires_verification"
-    },
-    {
-      "id": "google-customer-ld-mountain-centre-website-contact",
-      "company": "LD Mountain Centre",
-      "action": "verify_target",
-      "reason": "homepage_only_contact_path_requires_verification"
-    },
-    {
-      "id": "google-customer-taunton-leisure-website-contact",
-      "company": "Taunton Leisure",
-      "action": "verify_target",
-      "reason": "homepage_only_contact_path_requires_verification"
     },
     {
       "id": "google-customer-tiso-website-contact",
       "company": "Tiso",
       "action": "verify_target",
-      "reason": "homepage_only_contact_path_requires_verification"
-    },
-    {
-      "id": "google-customer-sportpursuit-website-contact",
-      "company": "SportPursuit",
-      "action": "verify_target",
-      "reason": "homepage_only_contact_path_requires_verification"
-    },
-    {
-      "id": "google-customer-above-and-beyond-facebook",
-      "company": "Above and Beyond",
-      "action": "develop",
-      "reason": "concrete_google_discovered_major_customer_facebook"
-    },
-    {
-      "id": "google-customer-ld-mountain-centre-facebook",
-      "company": "LD Mountain Centre",
-      "action": "develop",
-      "reason": "concrete_google_discovered_major_customer_facebook"
-    },
-    {
-      "id": "google-customer-tiso-facebook",
-      "company": "Tiso",
-      "action": "develop",
-      "reason": "concrete_google_discovered_major_customer_facebook"
-    },
-    {
-      "id": "google-customer-above-and-beyond-instagram",
-      "company": "Above and Beyond",
-      "action": "develop",
-      "reason": "concrete_google_discovered_major_customer_instagram"
-    },
-    {
-      "id": "google-customer-ld-mountain-centre-instagram",
-      "company": "LD Mountain Centre",
-      "action": "develop",
-      "reason": "concrete_google_discovered_major_customer_instagram"
-    },
-    {
-      "id": "google-customer-tiso-instagram",
-      "company": "Tiso",
-      "action": "develop",
-      "reason": "concrete_google_discovered_major_customer_instagram"
-    },
+      "platform": "email",
+      "targetUrl": "https://www.tiso.com/",
+      "ok": false,
+      "sendStatus": "failed_open",
+      "evidence": "website_contact_entry_not_verified;contact_entry_clicked:Contact Us;official_social_fallback:facebook;personal_profile_without_company_match_expected_Tiso_title_Facebook;contact_path_strategy_v2",
+      "timestamp": "2026-07-29T10:39:11.942Z",
+      "chromeOpen": {
+        "ok": true,
+        "engine": "codex-chrome-cdp",
+        "port": 9224,
+        "targetUrl": "https://www.facebook.com/TisoOutdoor",
+        "tabId": "728EDA229CDCF3F576CA3AEAE0055491",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/728EDA229CDCF3F576CA3AEAE0055491",
+        "title": "Facebook"
+      },
+      "result": {
+        "ok": false,
+        "engine": "codex-chrome-cdp",
+        "browserEngine": "codex-chrome-cdp",
+        "mode": "codex_chrome_cdp",
+        "targetUrl": "https://www.facebook.com/TisoOutdoor",
+        "chromeOpen": {
+          "ok": true,
+          "engine": "codex-chrome-cdp",
+          "port": 9224,
+          "targetUrl": "https://www.facebook.com/TisoOutdoor",
+          "tabId": "728EDA229CDCF3F576CA3AEAE0055491",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/728EDA229CDCF3F576CA3AEAE0055491",
+          "title": "Facebook"
+        },
+        "sendStatus": "failed_open",
+        "output": "{\"verdict\":\"major_bug_review_needed\",\"evidence\":\"website_contact_entry_not_verified;contact_entry_clicked:Contact Us;official_social_fallback:facebook;personal_profile_without_company_match_expected_Tiso_title_Facebook;contact_path_strategy_v2\",\"nextAction\":\"Wrong or unmatched account opened; record as major bug and move to next verified customer.\",\"draft\":\"Hi Tiso team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a retail/category buyer, the strongest fit is assortment fit, new SKU pipeline, price-tier coverage, and proven consumer demand; your verified outdoor, camping and travel retail social refill channel focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the category buyer or vendor-review owner for a short intro video meeting?\",\"sendStatus\":\"failed_open\"}",
+        "decision": {
+          "verdict": "develop",
+          "fitScore": 84,
+          "reason": "local_codex_extension_template",
+          "draft": "Hi Tiso team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a retail/category buyer, the strongest fit is assortment fit, new SKU pipeline, price-tier coverage, and proven consumer demand; your verified outdoor, camping and travel retail social refill channel focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the category buyer or vendor-review owner for a short intro video meeting?"
+        },
+        "executionLayer": "Chrome CDP fallback",
+        "glmModel": "not_used",
+        "followup": false,
+        "evidence": "website_contact_entry_not_verified;contact_entry_clicked:Contact Us;official_social_fallback:facebook;personal_profile_without_company_match_expected_Tiso_title_Facebook;contact_path_strategy_v2"
+      }
+    }
+  ],
+  "skipped": [
     {
       "id": "google-customer-obelink-website-contact",
       "company": "Obelink",
@@ -1313,6 +1245,24 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     {
       "id": "google-customer-outnorth-website-contact",
       "company": "Outnorth",
+      "action": "verify_target",
+      "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
+      "id": "google-customer-trekitt-website-contact",
+      "company": "Trekitt",
+      "action": "verify_target",
+      "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
+      "id": "google-customer-ultralight-outdoor-gear-website-contact",
+      "company": "Ultralight Outdoor Gear",
+      "action": "verify_target",
+      "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
+      "id": "google-customer-alpinetrek-website-contact",
+      "company": "Alpinetrek",
       "action": "verify_target",
       "reason": "homepage_only_contact_path_requires_verification"
     },
@@ -1353,6 +1303,12 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "reason": "homepage_only_contact_path_requires_verification"
     },
     {
+      "id": "google-customer-ld-mountain-centre-website-contact",
+      "company": "LD Mountain Centre",
+      "action": "verify_target",
+      "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
       "id": "google-customer-outdoorxl-website-contact",
       "company": "OutdoorXL",
       "action": "verify_target",
@@ -1371,6 +1327,12 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "reason": "homepage_only_contact_path_requires_verification"
     },
     {
+      "id": "google-customer-taunton-leisure-website-contact",
+      "company": "Taunton Leisure",
+      "action": "verify_target",
+      "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
       "id": "google-customer-hardloop-website-contact",
       "company": "Hardloop",
       "action": "verify_target",
@@ -1379,6 +1341,12 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     {
       "id": "google-customer-kampeerwereld-hendriks-website-contact",
       "company": "Kampeerwereld Hendriks",
+      "action": "verify_target",
+      "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
+      "id": "google-customer-sportpursuit-website-contact",
+      "company": "SportPursuit",
       "action": "verify_target",
       "reason": "homepage_only_contact_path_requires_verification"
     },
@@ -1473,6 +1441,12 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "reason": "homepage_only_contact_path_requires_verification"
     },
     {
+      "id": "google-customer-durango-outdoor-exchange-website-contact",
+      "company": "Durango Outdoor Exchange",
+      "action": "verify_target",
+      "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
       "id": "google-customer-basecamp-outfitters-roslyn-website-contact",
       "company": "Basecamp Outfitters Roslyn",
       "action": "verify_target",
@@ -1557,6 +1531,12 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "reason": "concrete_google_discovered_major_customer_facebook"
     },
     {
+      "id": "google-customer-above-and-beyond-facebook",
+      "company": "Above and Beyond",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_facebook"
+    },
+    {
       "id": "google-customer-campz-facebook",
       "company": "Campz",
       "action": "develop",
@@ -1575,6 +1555,12 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "reason": "concrete_google_discovered_major_customer_facebook"
     },
     {
+      "id": "google-customer-ld-mountain-centre-facebook",
+      "company": "LD Mountain Centre",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_facebook"
+    },
+    {
       "id": "google-customer-outdoor-specialist-facebook",
       "company": "Outdoor Specialist",
       "action": "develop",
@@ -1583,6 +1569,12 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     {
       "id": "google-customer-sklep-podroznika-facebook",
       "company": "Sklep Podroznika",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_facebook"
+    },
+    {
+      "id": "google-customer-tiso-facebook",
+      "company": "Tiso",
       "action": "develop",
       "reason": "concrete_google_discovered_major_customer_facebook"
     },
@@ -1647,6 +1639,12 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "reason": "concrete_google_discovered_major_customer_instagram"
     },
     {
+      "id": "google-customer-above-and-beyond-instagram",
+      "company": "Above and Beyond",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_instagram"
+    },
+    {
       "id": "google-customer-campz-instagram",
       "company": "Campz",
       "action": "develop",
@@ -1659,6 +1657,12 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "reason": "concrete_google_discovered_major_customer_instagram"
     },
     {
+      "id": "google-customer-ld-mountain-centre-instagram",
+      "company": "LD Mountain Centre",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_instagram"
+    },
+    {
       "id": "google-customer-outdoor-specialist-instagram",
       "company": "Outdoor Specialist",
       "action": "develop",
@@ -1667,6 +1671,12 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     {
       "id": "google-customer-sklep-podroznika-instagram",
       "company": "Sklep Podroznika",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_instagram"
+    },
+    {
+      "id": "google-customer-tiso-instagram",
+      "company": "Tiso",
       "action": "develop",
       "reason": "concrete_google_discovered_major_customer_instagram"
     },
@@ -1815,12 +1825,6 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "reason": "homepage_only_contact_path_requires_verification"
     },
     {
-      "id": "google-customer-tiso-website-contact",
-      "company": "Tiso",
-      "action": "email_priority",
-      "reason": "homepage_only_contact_path_requires_verification"
-    },
-    {
       "id": "google-customer-friluftsland-website-contact",
       "company": "Friluftsland",
       "action": "email_priority",
@@ -1949,6 +1953,12 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     {
       "id": "google-customer-gear-west-website-contact",
       "company": "Gear West",
+      "action": "email_priority",
+      "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
+      "id": "google-customer-durango-outdoor-exchange-website-contact",
+      "company": "Durango Outdoor Exchange",
       "action": "email_priority",
       "reason": "homepage_only_contact_path_requires_verification"
     },
@@ -2300,7 +2310,7 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     {
       "reason": "failed_open",
       "status": "failed_open",
-      "count": 11
+      "count": 12
     },
     {
       "reason": "approval_pending",
@@ -2313,7 +2323,7 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     "concrete_google_discovered_major_customer_facebook": 36,
     "concrete_google_discovered_major_customer_instagram": 34,
     "official_website_contact_channel": 15,
-    "failed_open": 11,
+    "failed_open": 12,
     "approval_pending": 1
   },
   "queueGoalStatus": {
@@ -2348,12 +2358,12 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     "stderr": "",
     "error": "",
     "visibility": {
-      "updatedAt": "2026-07-29T10:33:46.724Z",
+      "updatedAt": "2026-07-29T10:39:13.366Z",
       "source": "main-refreshDailyAutomationArtifacts",
       "runDate": "2026-07-29",
-      "artifactGeneratedAt": "2026-07-29T10:33:45.081Z",
-      "executionGeneratedAt": "2026-07-29T09:24:00.422Z",
-      "githubSyncUpdatedAt": "2026-07-29T09:24:30.703Z",
+      "artifactGeneratedAt": "2026-07-29T10:39:12.202Z",
+      "executionGeneratedAt": "2026-07-29T10:33:47.711Z",
+      "githubSyncUpdatedAt": "2026-07-29T10:34:29.258Z",
       "counts": {
         "dailyQueue": 99,
         "googleDiscovered": 93,
@@ -2415,6 +2425,6 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "ALIBABA_SMTP_SECURITY_PASSWORD"
     ]
   },
-  "ledgerReconciliationCount": 1,
-  "completedAt": "2026-07-29T10:33:47.711Z"
+  "ledgerReconciliationCount": 13,
+  "completedAt": "2026-07-29T10:39:13.754Z"
 };

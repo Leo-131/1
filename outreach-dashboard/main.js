@@ -3125,7 +3125,7 @@ function instagramFallbackTarget(lead = {}) {
 
 function alternateChannelFallbackLead(lead = {}, draftResult = {}, options = {}) {
   const evidence = String(draftResult.evidence || '').toLowerCase();
-  const recoverable = /composer_not_found|message_button_clicked_composer_not_found|profile_no_message_button|cdp websocket error|chrome_target_not_found|driver_timeout_bounded/.test(evidence);
+  const recoverable = /composer_not_found|message_button_clicked_composer_not_found|profile_no_message_button|personal_profile_without_company_match|identity_mismatch_expected|cdp websocket error|chrome_target_not_found|driver_timeout_bounded/.test(evidence);
   if (!recoverable || draftResult.sendStatus === 'send_unconfirmed') return null;
   const cameFromWebsiteSocialFallback = String(lead.reason || '').toLowerCase() === 'official_website_social_fallback';
   const attempted = new Set([

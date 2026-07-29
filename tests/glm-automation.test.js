@@ -1035,6 +1035,13 @@ test('recoverable social composer failures fall back across verified channels wi
   assert.doesNotMatch(mainSource.slice(sameDayStatusesStart, sameDayStatusesEnd), /website_contact_unreachable_skip/);
 });
 
+test('verified Instagram fallback continues after a Facebook personal-profile mismatch', () => {
+  assert.match(mainSource, /personal_profile_without_company_match\|identity_mismatch_expected/);
+  assert.ok(mainSource.includes("['facebook', channels.facebook]"));
+  assert.ok(mainSource.includes("['instagram', channels.instagram]"));
+  assert.ok(mainSource.includes('fallbackDepth: fallbackDepth + 1'));
+});
+
 test('daily execution is serial and can process a priority batch per run', () => {
   assert.ok(mainSource.includes("mode: 'serial-single-target'"));
   assert.ok(mainSource.includes('const parallelLimit = 1'));
