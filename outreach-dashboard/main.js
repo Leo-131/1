@@ -3370,7 +3370,16 @@ async function executeLeadAutomation(lead, options = {}) {
   if (!options.ignoreCooldown && Date.now() - lastGlmAutomationAt < 90000) {
     return { ok: false, cooldown: true, error: 'Serial cooldown is active' };
   }
-  const isWebsiteContact = String(lead && lead.platform || '').toLowerCase() === 'email'
+  const platform = String(lead && lead.platform || '').toLowerCase();
+  const isVerifiedEmail = platform === 'email' && verifiedBusinessEmailTarget(lead).ok;
+  if (isVerifiedEmail) {
+    const subject = websiteContactSubject(lead);
+    const draft = websiteContactMessage(lead);
+    const result = await runVerifiedAlibabaEmailLead(lead, subject, draft);
+    lastGlmAutomationAt = Date.now();
+    return result;
+  }
+  const isWebsiteContact = platform === 'website_form'
     || lead && lead.action === 'email_priority'
     || /official_website_contact_channel|website_contact/i.test(String(lead && lead.reason || ''));
   if (isWebsiteContact) {
@@ -3452,7 +3461,7 @@ function isWebsiteContactQueueItem(item = {}) {
     item.contactUrl,
     item.website,
   ].filter(Boolean).join(' ').toLowerCase();
-  return /\bemail\b|email_priority|verify_target|website-contact|official_website_contact_channel|website_contact|homepage_only_contact_path_requires_verification/.test(text);
+  return /website_form|verify_target|website-contact|official_website_contact_channel|website_contact|homepage_only_contact_path_requires_verification/.test(text);
 }
 
 function hasNoSafeMessageButton(item = {}) {
@@ -3480,7 +3489,8 @@ function hasVerifiedInstagramFallback(item = {}) {
 
 function socialPriorityRank(item = {}) {
   const text = [item.platform, item.id, item.url, item.targetUrl, item.verifiedTargetUrl].filter(Boolean).join(' ').toLowerCase();
-  if (isWebsiteContactQueueItem(item)) return 400;
+  if (String(item.platform || '').toLowerCase() === 'email' && verifiedBusinessEmailTarget(item).ok) return 400;
+  if (isWebsiteContactQueueItem(item)) return 380;
   if (/\blinkedin\b|linkedin\.com/.test(text)) return 340;
   if (/\bfacebook\b|facebook\.com/.test(text)) return 330;
   if (/\binstagram\b|instagram\.com/.test(text)) return 320;

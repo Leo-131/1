@@ -49,8 +49,10 @@ test('daily automation default run date follows Shanghai business day', () => {
   );
 });
 
-test('daily queue prioritizes Email, LinkedIn, Facebook and Instagram in that order', () => {
-  assert.ok(dailyRunner.channelPriorityScore({ platform: 'email', reason: 'official_website_contact_channel' })
+test('daily queue prioritizes verified Email, website forms, LinkedIn, Facebook and Instagram in that order', () => {
+  assert.ok(dailyRunner.channelPriorityScore({ platform: 'email' })
+    > dailyRunner.channelPriorityScore({ platform: 'website_form', reason: 'official_website_contact_channel' }));
+  assert.ok(dailyRunner.channelPriorityScore({ platform: 'website_form', reason: 'official_website_contact_channel' })
     > dailyRunner.channelPriorityScore({ platform: 'linkedin' }));
   assert.ok(dailyRunner.channelPriorityScore({ platform: 'linkedin' })
     > dailyRunner.channelPriorityScore({ platform: 'facebook' }));
@@ -319,24 +321,24 @@ test('Google discovery preserves LinkedIn information while creating executable 
   const cabela = leads.filter(item => item.company === "Cabela's");
   assert.ok(cabela.some(item => item.platform === 'instagram' && /instagram\.com\/cabelas/i.test(item.url)));
   assert.ok(cabela.some(item => item.platform === 'facebook' && /facebook\.com\/Cabelas/i.test(item.url)));
-  const emailLead = cabela.find(item => item.platform === 'email');
-  assert.equal(emailLead.action, 'email_priority');
-  assert.equal(emailLead.emailFrom, 'leo@flextailgear.com');
-  assert.equal(emailLead.websiteContactSubject, 'FLEXTAIL retail partnership | 2026 assortment');
-  assert.match(emailLead.websiteContactMessage, /Dear Cabela's Team/);
-  assert.match(emailLead.websiteContactMessage, /category buyer or vendor-onboarding team/);
-  assert.match(emailLead.websiteContactMessage, /https:\/\/www\.flextail\.com\//);
-  assert.doesNotMatch(emailLead.websiteContactMessage, /Attached|attachment/i);
-  const wordCount = emailLead.websiteContactMessage.trim().split(/\s+/).length;
+  const websiteLead = cabela.find(item => item.platform === 'website_form');
+  assert.equal(websiteLead.action, 'email_priority');
+  assert.equal(websiteLead.emailFrom, 'leo@flextailgear.com');
+  assert.equal(websiteLead.websiteContactSubject, 'FLEXTAIL retail partnership | 2026 assortment');
+  assert.match(websiteLead.websiteContactMessage, /Dear Cabela's Team/);
+  assert.match(websiteLead.websiteContactMessage, /category buyer or vendor-onboarding team/);
+  assert.match(websiteLead.websiteContactMessage, /https:\/\/www\.flextail\.com\//);
+  assert.doesNotMatch(websiteLead.websiteContactMessage, /Attached|attachment/i);
+  const wordCount = websiteLead.websiteContactMessage.trim().split(/\s+/).length;
   assert.ok(wordCount >= 90 && wordCount <= 140, `expected 90-140 words, received ${wordCount}`);
-  assert.equal(emailLead.publicEmail, 'vendorrelations@basspro.com');
-  assert.match(emailLead.linkedinUrl, /linkedin\.com/);
-  assert.match(emailLead.vendorPortal, /cabelas|basspro/i);
-  assert.match(emailLead.companyScale, /employee|retail|locations/i);
-  assert.match(emailLead.contactSearchUrl, /contact|buyer|wholesale|vendor/i);
-  assert.ok(emailLead.alternateChannels.instagram);
-  assert.ok(emailLead.alternateChannels.facebook);
-  assert.ok(emailLead.alternateChannels.linkedin);
+  assert.equal(websiteLead.publicEmail, 'vendorrelations@basspro.com');
+  assert.match(websiteLead.linkedinUrl, /linkedin\.com/);
+  assert.match(websiteLead.vendorPortal, /cabelas|basspro/i);
+  assert.match(websiteLead.companyScale, /employee|retail|locations/i);
+  assert.match(websiteLead.contactSearchUrl, /contact|buyer|wholesale|vendor/i);
+  assert.ok(websiteLead.alternateChannels.instagram);
+  assert.ok(websiteLead.alternateChannels.facebook);
+  assert.ok(websiteLead.alternateChannels.linkedin);
 });
 
 test('Google discovery reroutes known broken Instagram links to alternate channels', () => {
@@ -428,7 +430,7 @@ test('online directory refill adds Flextail and Vollyc matched outdoor retailers
 
 test('homepage-only directory prospects require contact-path verification before execution', () => {
   const run = buildDiscoveryRun(200);
-  const website = run.leads.find(item => item.company === 'Obelink' && item.platform === 'email');
+  const website = run.leads.find(item => item.company === 'Obelink' && item.platform === 'website_form');
   assert.equal(website.action, 'verify_target');
   assert.equal(website.reason, 'homepage_only_contact_path_requires_verification');
 });
@@ -440,14 +442,14 @@ test('Google discovery gives autonomous refill customers social channels before 
     assert.ok(companyLeads.some(item => item.platform === 'instagram'));
     assert.ok(companyLeads.some(item => item.platform === 'facebook'));
     assert.ok(companyLeads.findIndex(item => item.platform === 'instagram')
-      < companyLeads.findIndex(item => item.platform === 'email'));
+      < companyLeads.findIndex(item => item.platform === 'website_form'));
     assert.ok(companyLeads.findIndex(item => item.platform === 'facebook')
-      < companyLeads.findIndex(item => item.platform === 'email'));
+      < companyLeads.findIndex(item => item.platform === 'website_form'));
   }
   const summitLeads = leads.filter(item => item.company === 'Summit International');
   assert.ok(!summitLeads.some(item => item.platform === 'facebook'));
   assert.ok(!summitLeads.some(item => item.platform === 'instagram'));
-  assert.ok(summitLeads.some(item => item.platform === 'email'));
+  assert.ok(summitLeads.some(item => item.platform === 'website_form'));
 });
 
 test('daily queue preserves multi-channel outreach and ranks email before social channels', () => {
@@ -455,7 +457,7 @@ test('daily queue preserves multi-channel outreach and ranks email before social
     {
       id: 'google-customer-sail-outdoors-website-contact',
       company: 'Sail Outdoors',
-      platform: 'email',
+      platform: 'website_form',
       url: 'https://www.sail.ca/en/contact-us',
       reason: 'official_website_contact_channel',
     },
@@ -474,7 +476,7 @@ test('daily queue preserves multi-channel outreach and ranks email before social
     {
       id: 'google-customer-liberty-mountain-website-contact',
       company: 'Liberty Mountain',
-      platform: 'email',
+      platform: 'website_form',
       url: 'https://libertymountain.com/find-a-rep',
       reason: 'official_website_contact_channel',
     },
@@ -483,7 +485,7 @@ test('daily queue preserves multi-channel outreach and ranks email before social
   assert.ok(filtered.some(item => item.id === 'google-customer-sail-outdoors-instagram'));
   assert.ok(filtered.some(item => item.id === 'google-customer-sail-outdoors-website-contact'));
   assert.ok(filtered.some(item => item.id === 'google-customer-liberty-mountain-website-contact'));
-  assert.deepEqual(filtered.slice(0, 2).map(item => item.platform), ['email', 'email']);
+  assert.deepEqual(filtered.slice(0, 2).map(item => item.platform), ['website_form', 'website_form']);
   assert.ok(filtered.findIndex(item => item.id === 'google-customer-sail-outdoors-website-contact')
     < filtered.findIndex(item => item.id === 'google-customer-sail-outdoors-facebook'));
   assert.ok(filtered.findIndex(item => item.id === 'google-customer-sail-outdoors-facebook')
@@ -558,9 +560,9 @@ test('European large distributor candidates are high ICP and social first', () =
   }
   assert.ok(leads.some(item => item.company === 'Esprinet Group' && item.platform === 'linkedin'));
   assert.ok(leads.some(item => item.company === 'CMS Distribution' && item.platform === 'linkedin'));
-  assert.ok(leads.some(item => item.company === 'EET Group' && item.platform === 'email' && /become-a-supplier/.test(item.contactUrl)));
+  assert.ok(leads.some(item => item.company === 'EET Group' && item.platform === 'website_form' && /become-a-supplier/.test(item.contactUrl)));
   assert.ok(leads.some(item => item.company === 'KOMSA' && item.platform === 'linkedin'));
-  assert.ok(leads.some(item => item.company === 'Aqipa' && item.platform === 'email' && /support\.aqipa\.com/.test(item.contactUrl)));
+  assert.ok(leads.some(item => item.company === 'Aqipa' && item.platform === 'website_form' && /support\.aqipa\.com/.test(item.contactUrl)));
 });
 
 test('Aqipa carries verified analyst-grade research into every channel lead', () => {
@@ -580,7 +582,7 @@ test('Email-first sorting keeps LinkedIn company profiles as distinct queue targ
   const sorted = dailyRunner.preferSocialChannels([
     { id: 'esprinet', company: 'Esprinet Group', platform: 'linkedin', url: 'https://www.linkedin.com/company/esprinet-group/', dealProbabilityScore: 250 },
     { id: 'cms', company: 'CMS Distribution', platform: 'linkedin', url: 'https://www.linkedin.com/company/cms-distribution', dealProbabilityScore: 248 },
-    { id: 'cms-email', company: 'CMS Distribution', platform: 'email', url: 'https://www.cmsdistribution.com/contact-us', dealProbabilityScore: 248 },
+    { id: 'cms-email', company: 'CMS Distribution', platform: 'website_form', url: 'https://www.cmsdistribution.com/contact-us', dealProbabilityScore: 248 },
   ]);
   assert.deepEqual(sorted.map(item => item.id), ['cms-email', 'esprinet', 'cms']);
   assert.ok(dailyRunnerSource.includes("const rank = { email: 0, linkedin: 1, facebook: 2, instagram: 3 }"));
@@ -1299,7 +1301,7 @@ test('daily queue generator blocks cross-channel repeats for already developed c
     id: 'google-customer-bever-website-contact',
     company: 'Bever',
     name: 'Bever',
-    platform: 'email',
+    platform: 'website_form',
     contactUrl: 'https://www.bever.nl/klantenservice/contactgegevens.html',
   };
   const goOutdoorsFacebook = {
@@ -1313,7 +1315,7 @@ test('daily queue generator blocks cross-channel repeats for already developed c
     id: 'google-customer-sail-outdoors-website-contact',
     company: 'Sail Outdoors',
     name: 'Sail Outdoors',
-    platform: 'email',
+    platform: 'website_form',
     website: 'https://www.sail.ca/',
     contactUrl: 'https://www.sail.ca/en/contact-us',
   };

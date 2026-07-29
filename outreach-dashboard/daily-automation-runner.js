@@ -224,7 +224,8 @@ function dealProbabilityScore(task) {
 function channelPriorityScore(task) {
   const platform = String(task.platform || task.channel || '').trim().toLowerCase();
   const identity = `${task.id || ''} ${task.reason || ''} ${task.url || ''}`.toLowerCase();
-  if (platform === 'email' || /website-contact|official_website_contact_channel/.test(identity)) return 400;
+  if (platform === 'email') return 400;
+  if (platform === 'website_form' || /website-contact|official_website_contact_channel/.test(identity)) return 380;
   if (platform === 'linkedin' || /linkedin/.test(identity)) return 340;
   if (platform === 'facebook' || /facebook/.test(identity)) return 330;
   if (platform === 'instagram' || /instagram/.test(identity)) return 320;
@@ -272,7 +273,8 @@ function preferSocialChannels(items) {
 
 function socialChannelRank(item = {}) {
   const text = [item.platform, item.id, item.url, item.platformUrl, item.contactUrl].filter(Boolean).join(' ').toLowerCase();
-  if (/\bemail\b|mailto:|website-contact|official_website_contact_channel/.test(text)) return 400;
+  if (String(item.platform || '').toLowerCase() === 'email' || /mailto:/.test(text)) return 400;
+  if (String(item.platform || '').toLowerCase() === 'website_form' || /website-contact|official_website_contact_channel/.test(text)) return 390;
   if (/\blinkedin\b|linkedin\.com/.test(text)) return 330;
   if (/\bfacebook\b|facebook\.com/.test(text)) return 320;
   if (/\binstagram\b|instagram\.com/.test(text)) return 310;
@@ -493,7 +495,7 @@ function isSameDayDevelopmentResult(result = {}, now = Date.now()) {
 function channelLeadKeys(item) {
   const platform = cleanKey(item.platform || 'unknown');
   const handle = profileHandle(item.platformUrl || item.url);
-  const isWebsiteContact = platform === 'email' || /website-contact/i.test(String(item.id || item.url || item.contactUrl || ''));
+  const isWebsiteContact = platform === 'websiteform' || /website-contact/i.test(String(item.id || item.url || item.contactUrl || ''));
   const base = [
     item.id,
     item.platformUrl,

@@ -1222,7 +1222,8 @@ function channelLeads(item) {
   }
   leads.push({
     ...baseLead(item, `${baseId}-website-contact`, evidenceUrl),
-    platform: 'email',
+    platform: 'website_form',
+    channelType: 'website_form',
     platformUrl: item.contactUrl || item.url,
     url: item.contactUrl || item.url,
     contactUrl: item.contactUrl || item.url,
