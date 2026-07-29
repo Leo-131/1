@@ -285,7 +285,7 @@ const COMPANY_HISTORY_BLOCKING_STATUSES = new Set([
   'post_liked',
 ]);
 const DAILY_CONFIRMED_COMPANY_TARGET = 100;
-const DEFAULT_DAILY_SOCIAL_EXECUTION_LIMIT = DAILY_CONFIRMED_COMPANY_TARGET;
+const DEFAULT_DAILY_SOCIAL_EXECUTION_LIMIT = 13;
 
 function historicalAutomationResultBlocksCompany(result = {}) {
   if (COMPANY_HISTORY_BLOCKING_STATUSES.has(result.status)) {
@@ -2830,7 +2830,7 @@ async function runWebsiteContactLead(lead = {}) {
       }
       lastResult = {
         ok: false,
-        engine: 'codex-chrome-extension-website-contact',
+        engine: 'dedicated-chrome-cdp-website-contact',
         browserEngine: chromeOpen && chromeOpen.engine,
         mode: 'website_contact_prepare_manual_submit',
         targetUrl: target.targetUrl,
@@ -2873,7 +2873,7 @@ async function runWebsiteContactLead(lead = {}) {
     if (formPreparation.sendStatus === 'approval_pending') {
       lastResult = {
         ok: false,
-        engine: 'codex-chrome-extension-website-contact',
+        engine: 'dedicated-chrome-cdp-website-contact',
         browserEngine: chromeOpen && chromeOpen.engine,
         mode: 'website_contact_prepare_marketing_file',
         targetUrl: target.targetUrl,
@@ -2906,7 +2906,7 @@ async function runWebsiteContactLead(lead = {}) {
     };
     return {
       ok: formPreparation.sendStatus === 'submitted_confirmed',
-      engine: 'codex-chrome-extension-website-contact',
+      engine: 'dedicated-chrome-cdp-website-contact',
       browserEngine: chromeOpen.engine,
       mode: formPreparation.sendStatus === 'submitted_confirmed' ? 'website_contact_submitted_confirmed' : 'website_contact_submit_unconfirmed',
       targetUrl: target.targetUrl,
@@ -3669,6 +3669,7 @@ async function runDailyAutomationQueue(payload = {}) {
       continue;
     }
     executable.push(item);
+    automationCompanyKeys(item).forEach(key => selectedCompanyKeys.add(key));
   }
   const bounceReconciliation = await reconcileAlibabaBounceResults();
   [...latest.dailyQueue, ...(latest.scheduledLater || []), ...(latest.dailyPotentialPool || [])]

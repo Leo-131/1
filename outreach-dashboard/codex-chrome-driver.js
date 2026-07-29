@@ -1445,6 +1445,38 @@ async function preparePlatformDraft(payload, platform) {
     await sleep(800);
     const sendButton = await waitForJson(tab, sendButtonExpression(composer), item => item && Number.isFinite(item.x) && Number.isFinite(item.y), 8000, 400);
     if (!sendButton || !Number.isFinite(sendButton.x)) {
+      if (platform === 'instagram') {
+        const composerState = await evaluateJson(tab, composerTextExpression(draft), 3000).catch(() => null);
+        if (composerState && composerState.containsDraft) {
+          await cdp(tab.webSocketDebuggerUrl, 'Input.dispatchKeyEvent', {
+            type: 'keyDown',
+            key: 'Enter',
+            code: 'Enter',
+            windowsVirtualKeyCode: 13,
+          }, 2000);
+          await cdp(tab.webSocketDebuggerUrl, 'Input.dispatchKeyEvent', {
+            type: 'keyUp',
+            key: 'Enter',
+            code: 'Enter',
+            windowsVirtualKeyCode: 13,
+          }, 2000);
+          const enterSent = await waitForJson(tab, sendConfirmationExpression(draft), item => item && item.confirmed, 12000, 500);
+          if (enterSent && enterSent.confirmed) {
+            return {
+              ok: true,
+              sendStatus: 'sent_confirmed',
+              evidence: `instagram_message_sent_confirmed_after_enter;${insertResult.evidence};sentText:${Boolean(enterSent.sentText)};outgoingBubble:${Boolean(enterSent.outgoingBubble)};emptyComposer:${Boolean(enterSent.emptyComposer)};${preActions.filter(Boolean).join(';')}`,
+              nextAction: 'Record outcome and monitor for reply.',
+            };
+          }
+          return {
+            ok: false,
+            sendStatus: 'send_unconfirmed',
+            evidence: `instagram_enter_send_attempted_but_confirmation_missing;${preActions.filter(Boolean).join(';')}`,
+            nextAction: 'Send confirmation missing after the verified Enter fallback; pause before any retry to avoid duplicate sending.',
+          };
+        }
+      }
       return {
         ok: false,
         sendStatus: 'send_unconfirmed',

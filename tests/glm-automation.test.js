@@ -951,7 +951,7 @@ test('daily execution is serial and can process a priority batch per run', () =>
   assert.ok(mainSource.includes('const limit = Math.min(requestedLimit, remainingDailyGap)'));
   assert.ok(mainSource.includes("app.disableHardwareAcceleration()"));
   assert.ok(mainSource.includes("app.commandLine.appendSwitch('disable-gpu')"));
-  assert.ok(mainSource.includes('DEFAULT_DAILY_SOCIAL_EXECUTION_LIMIT = DAILY_CONFIRMED_COMPANY_TARGET'));
+  assert.ok(mainSource.includes('DEFAULT_DAILY_SOCIAL_EXECUTION_LIMIT = 13'));
   assert.ok(mainSource.includes('const remainingDailyGap = Math.max(0, DAILY_CONFIRMED_COMPANY_TARGET - confirmedToday)'));
   assert.ok(mainSource.includes('const limit = Math.min(requestedLimit, remainingDailyGap)'));
   assert.ok(mainSource.includes('KEEP_AUTOMATION_TABS_VISIBLE'));
@@ -1071,6 +1071,7 @@ test('daily execution duplicate blocking is channel-aware', () => {
   assert.ok(mainSource.includes('sameDayAutomationCompanyKeys'));
   assert.ok(mainSource.includes('same_day_customer_already_developed'));
   assert.ok(mainSource.includes('const selectedCompanyKeys = new Set(sameDayCompanyKeys)'));
+  assert.ok(mainSource.includes('automationCompanyKeys(item).forEach(key => selectedCompanyKeys.add(key))'));
   assert.ok(mainSource.includes('itemBlockedBySameDayCompany(item, sameDayCompanyKeys)'));
   assert.ok(mainSource.includes('function failedOpenResultShouldBlockRetry'));
   assert.ok(mainSource.includes('message_button_clicked_composer_not_found'));
@@ -1095,6 +1096,15 @@ test('daily execution duplicate blocking is channel-aware', () => {
   assert.ok(mainSource.includes('if (!itemPlatform || !resultPlatform || itemPlatform !== resultPlatform) return false'));
   assert.ok(mainSource.includes("'website_contact_unreachable_skip'"));
   assert.ok(!mainSource.includes("'sent_confirmed', 'failed_open', 'send_unconfirmed', 'skipped'"));
+});
+
+test('dedicated website and Instagram execution report truthful transport and confirm Enter fallback', () => {
+  assert.ok(mainSource.includes("engine: 'dedicated-chrome-cdp-website-contact'"));
+  assert.doesNotMatch(mainSource, /engine: 'codex-chrome-extension-website-contact'/);
+  assert.ok(chromeDriverSource.includes("platform === 'instagram'"));
+  assert.ok(chromeDriverSource.includes('instagram_message_sent_confirmed_after_enter'));
+  assert.ok(chromeDriverSource.includes('instagram_enter_send_attempted_but_confirmation_missing'));
+  assert.ok(chromeDriverSource.includes("windowsVirtualKeyCode: 13"));
 });
 
 test('uninserted social draft does not block same-company website fallback', () => {
