@@ -51,6 +51,7 @@
       "dashboard-local-server.js",
       "daily-automation-runner.js",
       "google-lead-discovery-runner.js",
+      "verified-external-candidates.json",
       "google-lead-discovery-latest.js",
       "daily-automation-execution-latest.js",
       "system-visibility-latest.json",

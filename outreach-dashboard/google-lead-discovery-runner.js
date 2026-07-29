@@ -5,6 +5,7 @@ const ROOT = __dirname;
 const OUT_JSON = path.join(ROOT, 'google-lead-discovery-latest.json');
 const OUT_JS = path.join(ROOT, 'google-lead-discovery-latest.js');
 const OUT_CSV = path.join(ROOT, 'google-lead-discovery-latest.csv');
+const VERIFIED_EXTERNAL_CANDIDATES_PATH = path.join(ROOT, 'verified-external-candidates.json');
 const QUALIFIED_ICP_THRESHOLD = 70;
 const EXCLUSIVE_AGENCY_MARKETS = new Map([
   ['switzerland', 'INNPRO Robert Błędowski Sp. z o.o.'],
@@ -44,6 +45,29 @@ function isActiveCustomer(company) {
 
 function exclusiveAgentForCountry(country) {
   return EXCLUSIVE_AGENCY_MARKETS.get(String(country || '').trim().toLowerCase()) || '';
+}
+
+function loadVerifiedExternalCandidates() {
+  const parsed = JSON.parse(fs.readFileSync(VERIFIED_EXTERNAL_CANDIDATES_PATH, 'utf8'));
+  if (!Array.isArray(parsed)) throw new Error('verified external candidates must be an array');
+  return parsed.map((candidate, index) => {
+    const required = ['company', 'country', 'url', 'contactUrl', 'segment', 'fitScore', 'evidenceUrl', 'externalVerificationStatus'];
+    const missing = required.filter(field => !String(candidate && candidate[field] || '').trim());
+    if (missing.length) {
+      throw new Error(`verified external candidate ${index + 1} missing: ${missing.join(', ')}`);
+    }
+    if (Number(candidate.fitScore) < QUALIFIED_ICP_THRESHOLD) {
+      throw new Error(`verified external candidate ${candidate.company} is below ICP threshold`);
+    }
+    if (!/^official_(supplier_form|supplier_route|supplier_email)_verified$/.test(candidate.externalVerificationStatus)) {
+      throw new Error(`verified external candidate ${candidate.company} lacks accepted supplier-route evidence`);
+    }
+    return {
+      ...candidate,
+      refillSeed: true,
+      discoverySupplyLayer: 'verified_external_candidate_registry',
+    };
+  });
 }
 
 const CANDIDATES = [
@@ -570,6 +594,7 @@ for (const candidate of DIRECTORY_REFILL_CANDIDATES) {
 }
 
 CANDIDATES.push(...DIRECTORY_REFILL_CANDIDATES);
+CANDIDATES.push(...loadVerifiedExternalCandidates());
 
 const SOCIAL_REFILL_SOURCE = 'verified outdoor retailer official website and public social profile refill';
 const SOCIAL_REFILL_CANDIDATES = [

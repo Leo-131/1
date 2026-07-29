@@ -390,8 +390,30 @@ test('Google discovery autonomously refills verified agency and key-account cand
   assert.ok(refillLeads.every(item => /^https:\/\//.test(item.contactUrl || item.url || '')));
 });
 
+test('Google discovery loads auditable external supplier routes without treating homepages as contact evidence', () => {
+  const leads = buildLeads(400);
+  const outdoorNature = leads.find(item => item.id === 'google-customer-outdoor-nature-website-contact');
+  const leftPoint = leads.find(item => item.id === 'google-customer-left-point-distribution-website-contact');
+  const flameOutdoors = leads.find(item => item.id === 'google-customer-flameoutdoors-website-contact');
+
+  assert.ok(outdoorNature);
+  assert.equal(outdoorNature.platform, 'website_form');
+  assert.equal(outdoorNature.action, 'email_priority');
+  assert.equal(outdoorNature.contactUrl, 'https://www.outdoornature.com.au/become-a-supplier/');
+  assert.equal(outdoorNature.sourceEvidenceUrl, outdoorNature.contactUrl);
+  assert.equal(outdoorNature.discoveryMode, 'autonomous_refill');
+
+  assert.ok(leftPoint);
+  assert.equal(leftPoint.customerType, 'agency');
+  assert.equal(leftPoint.sourceEvidenceUrl, 'https://www.leftpointdistribution.com/en-eu/aboutus.php');
+
+  assert.ok(flameOutdoors);
+  assert.equal(flameOutdoors.publicEmail, 'sales@flameoutdoors.com');
+  assert.equal(flameOutdoors.sourceEvidenceUrl, 'https://flameoutdoors.com/pages/authorized-dealer');
+});
+
 test('Google discovery keeps a refill pool for new prospects after current customers are developed', () => {
-  const run = buildDiscoveryRun(120);
+  const run = buildDiscoveryRun(160);
   assert.ok(run.candidatePoolCount >= 23);
   assert.ok(run.qualifiedNonPartnerCompanyCount >= 8);
   assert.ok(run.activeCustomerExcludedCount >= 3);

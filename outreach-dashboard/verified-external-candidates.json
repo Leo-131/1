@@ -1,0 +1,58 @@
+[
+  {
+    "company": "Outdoor Nature",
+    "country": "Australia",
+    "url": "https://www.outdoornature.com.au/",
+    "contactUrl": "https://www.outdoornature.com.au/become-a-supplier/",
+    "segment": "outdoor, hiking, camping, travel and adventure retailer",
+    "customerType": "key_account",
+    "fitScore": 92,
+    "background": "Australian outdoor retailer whose official supplier page explicitly invites outdoor, hiking, camping, travel and adventure product submissions.",
+    "buyerPersona": "Supplier onboarding, category buying or merchandising owner.",
+    "evidenceUrl": "https://www.outdoornature.com.au/become-a-supplier/",
+    "dataSources": [
+      "official company website",
+      "official become-a-supplier form"
+    ],
+    "externalVerificationStatus": "official_supplier_form_verified"
+  },
+  {
+    "company": "Left Point Distribution",
+    "country": "Netherlands",
+    "url": "https://www.leftpointdistribution.com/",
+    "contactUrl": "https://www.leftpointdistribution.com/en-eu/aboutus.php",
+    "segment": "European surf, outdoor and adventure sports distributor",
+    "customerType": "agency",
+    "fitScore": 88,
+    "background": "European adventure-sports distributor whose official company page explicitly invites prospective suppliers to contact the business.",
+    "buyerPersona": "Brand partnerships, supplier onboarding or product distribution director.",
+    "evidenceUrl": "https://www.leftpointdistribution.com/en-eu/aboutus.php",
+    "dataSources": [
+      "official company website",
+      "official supplier invitation"
+    ],
+    "externalVerificationStatus": "official_supplier_route_verified"
+  },
+  {
+    "company": "FlameOutdoors",
+    "country": "United States",
+    "url": "https://flameoutdoors.com/",
+    "contactUrl": "https://flameoutdoors.com/pages/authorized-dealer",
+    "publicEmail": "sales@flameoutdoors.com",
+    "contactEmail": "sales@flameoutdoors.com",
+    "publicEmailStatus": "Official supplier email published on the FlameOutdoors authorized-dealer page.",
+    "emailVerificationStatus": "official_public_business_email",
+    "emailEvidence": "official_supplier_page",
+    "segment": "premium outdoor cooking and camping retailer",
+    "customerType": "key_account",
+    "fitScore": 78,
+    "background": "Outdoor cooking retailer whose official authorized-dealer page states that it is looking to work with premium outdoor brands and publishes a supplier email.",
+    "buyerPersona": "Supplier partnerships, outdoor category buying or merchandising owner.",
+    "evidenceUrl": "https://flameoutdoors.com/pages/authorized-dealer",
+    "dataSources": [
+      "official company website",
+      "official supplier email page"
+    ],
+    "externalVerificationStatus": "official_supplier_email_verified"
+  }
+]

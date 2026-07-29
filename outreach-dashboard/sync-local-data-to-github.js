@@ -284,6 +284,7 @@ function syncOnce() {
     'alibaba-webmail-automation.js',
     'email-verification.js',
     'google-lead-discovery-runner.js',
+    'verified-external-candidates.json',
     'generate-system-readiness.js',
     'system-readiness.js',
     'public/system-readiness.js',
@@ -355,6 +356,7 @@ if (WATCH) {
   [
     'daily-automation-latest.json',
     'autonomous-outreach-results.js',
+    'verified-external-candidates.json',
     'daily-runs',
   ].forEach((name) => {
     const target = path.join(ROOT, name);
