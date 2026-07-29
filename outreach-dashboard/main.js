@@ -450,6 +450,12 @@ function itemBlockedBySameDayCompany(item, companyKeys) {
 
 function failedOpenResultShouldBlockRetry(result = {}) {
   const evidence = String(result.evidence || '').toLowerCase();
+  const temporarySafetyFailure = /captcha_or_human_verification|platform_rate_limit_or_action_block|dedicated_browser_login_required|identity_not_verified_fail_closed/.test(evidence);
+  if (temporarySafetyFailure) {
+    const failedAt = Date.parse(result.timestamp || result.resultCheckedAt || '');
+    const retryAfterMs = 3 * 60 * 60 * 1000;
+    return !Number.isFinite(failedAt) || Date.now() - failedAt < retryAfterMs;
+  }
   if (evidence.includes('profile_no_message_button')
     || evidence.includes('message_control_not_available')) return true;
   const recoverable = [
@@ -3906,6 +3912,7 @@ async function runDailyAutomationQueue(payload = {}) {
         ok: Boolean(result && result.ok),
         sendStatus,
         evidence: output.evidence || result.evidence || '',
+        timestamp: new Date().toISOString(),
         chromeOpen: result && result.chromeOpen || null,
         result,
       };

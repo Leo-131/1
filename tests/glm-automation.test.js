@@ -665,6 +665,18 @@ test('social execution explicitly fails closed for CAPTCHA, login loss, and plat
   assert.ok(chromeDriverSource.includes('Skip this target without retrying'));
 });
 
+test('temporary platform safety failures become re-verifiable after a three-hour cooldown', () => {
+  const block = mainSource.slice(
+    mainSource.indexOf('function failedOpenResultShouldBlockRetry'),
+    mainSource.indexOf('function checkpointResultIsTerminal')
+  );
+  assert.ok(block.includes('temporarySafetyFailure'));
+  assert.ok(block.includes('3 * 60 * 60 * 1000'));
+  assert.ok(block.includes('Date.now() - failedAt < retryAfterMs'));
+  assert.ok(block.includes('profile_no_message_button'));
+  assert.ok(mainSource.includes('timestamp: new Date().toISOString()'));
+});
+
 test('Facebook composer failure closes stale Messenger UI without reopening the same dead end', () => {
   assert.match(chromeDriverSource, /facebook_composer_unavailable_closed_no_retry/);
   assert.match(chromeDriverSource, /closeFacebookMessengerInbox\(tab\);[\s\S]*closeFacebookChatWindows\(tab\);[\s\S]*return \{\n      messageUnavailable: true/);
