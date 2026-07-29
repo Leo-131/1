@@ -335,7 +335,9 @@ function blockingAutomationResultFor(item) {
     .filter((result) => !['website_contact_ready', 'website_contact_unreachable_skip'].includes(result.status)
       || (isSameAutomationDay(result.timestamp)
         && String(result.evidence || '').includes(WEBSITE_CONTACT_STRATEGY_MARKER)))
-    .filter((result) => result.status !== 'send_unconfirmed' || sendStatusHasCustomerInteraction(result.status, result.evidence))
+    .filter((result) => result.status !== 'send_unconfirmed'
+      || sendStatusHasCustomerInteraction(result.status, result.evidence)
+      || /prior_send_unconfirmed_no_resend|sent_folder_record_missing/i.test(String(result.evidence || '')))
     .filter((result) => result.status !== 'failed_open' || failedOpenResultShouldBlockRetry(result) || historicalAutomationResultBlocksCompany(result))
     .find((result) => {
       if (historicalAutomationResultBlocksCompany(result) && setsIntersect(companyKeys, automationCompanyKeys(result))) return true;
@@ -437,6 +439,8 @@ function itemBlockedBySameDayCompany(item, companyKeys) {
 
 function failedOpenResultShouldBlockRetry(result = {}) {
   const evidence = String(result.evidence || '').toLowerCase();
+  if (evidence.includes('profile_no_message_button')
+    || evidence.includes('message_control_not_available')) return true;
   const recoverable = [
     'message_button_clicked_composer_not_found',
     'composer_not_found',
@@ -466,7 +470,8 @@ function checkpointResultIsTerminal(result = {}) {
     return true;
   }
   if (status === 'send_unconfirmed') {
-    return sendStatusHasCustomerInteraction(status, result.evidence);
+    return sendStatusHasCustomerInteraction(status, result.evidence)
+      || /prior_send_unconfirmed_no_resend|sent_folder_record_missing/i.test(String(result.evidence || ''));
   }
   if (status === 'failed_open') {
     return failedOpenResultShouldBlockRetry({
@@ -493,6 +498,7 @@ function recordAutomationResult(item, result) {
   const timestamp = new Date().toISOString();
   const entry = {
     task_id: item.id,
+    company: item.company || result.company || '',
     approval_version: 1,
     status: sendStatus,
     agent: browserAgentForResult(result),
@@ -525,7 +531,8 @@ function recordAutomationResult(item, result) {
   const duplicate = results.some(existing => existing.task_id === entry.task_id
     && existing.status === entry.status
     && existing.target_url === entry.target_url
-    && existing.evidence === entry.evidence);
+    && existing.evidence === entry.evidence
+    && automationLocalDay(existing.timestamp) === automationLocalDay(entry.timestamp));
   if (!duplicate) {
     results.push(entry);
     writeJsonScriptArray(file, 'AUTONOMOUS_OUTREACH_RESULTS', results);
@@ -896,7 +903,11 @@ function createPlatformWindow(platform, credential) {
 
 function execFilePromise(file, args, options) {
   return new Promise((resolve, reject) => {
-    execFile(file, args, options, (error, stdout, stderr) => {
+    let settled = false;
+    const child = execFile(file, args, options, (error, stdout, stderr) => {
+      if (settled) return;
+      settled = true;
+      clearTimeout(hardTimeout);
       if (error) {
         error.stdout = stdout;
         error.stderr = stderr;
@@ -905,6 +916,18 @@ function execFilePromise(file, args, options) {
       }
       resolve({ stdout, stderr });
     });
+    const timeoutMs = Math.max(0, Number(options && options.timeout || 0));
+    const hardTimeout = timeoutMs
+      ? setTimeout(() => {
+        if (settled) return;
+        settled = true;
+        try { child.kill('SIGKILL'); } catch {}
+        const error = new Error(`Child process hard timeout after ${timeoutMs}ms`);
+        error.code = 'ETIMEDOUT';
+        error.killed = true;
+        reject(error);
+      }, timeoutMs + 1000)
+      : null;
   });
 }
 
@@ -2658,6 +2681,30 @@ async function runAlibabaWebmailEmailLead(lead = {}, subject = '', draft = '') {
   }
 }
 
+function reconcileLatestExecutionResultsToLedger() {
+  const latest = readJson(path.join(__dirname, 'daily-automation-execution-latest.json'), null);
+  if (!latest || !isSameAutomationDay(latest.completedAt) || !Array.isArray(latest.results)) return 0;
+  let reconciled = 0;
+  for (const row of latest.results) {
+    if (!row || !row.id || !row.sendStatus || row.sendStatus === 'skipped') continue;
+    const result = {
+      ...(row.result || {}),
+      sendStatus: row.sendStatus,
+      evidence: row.evidence || row.result && row.result.evidence || '',
+      targetUrl: row.targetUrl || row.result && row.result.targetUrl || '',
+      chromeOpen: row.chromeOpen || row.result && row.result.chromeOpen || null,
+    };
+    recordAutomationResult({
+      id: row.id,
+      company: row.company || '',
+      action: row.action || '',
+      url: row.targetUrl || '',
+    }, result);
+    reconciled += 1;
+  }
+  return reconciled;
+}
+
 async function verifyPriorAlibabaWebmailSend(lead = {}, subject = '') {
   const target = verifiedBusinessEmailTarget(lead);
   if (!target.ok) return null;
@@ -2756,7 +2803,7 @@ async function runVerifiedAlibabaEmailLead(lead = {}, subject = '', draft = '') 
   };
 }
 
-async function runWebsiteContactLead(lead = {}) {
+async function runWebsiteContactLead(lead = {}, options = {}) {
   const subject = websiteContactSubject(lead);
   const draft = websiteContactMessage(lead);
   const targets = websiteContactTargetCandidates(lead);
@@ -2806,9 +2853,18 @@ async function runWebsiteContactLead(lead = {}) {
     });
     if (!contactFlow.ok) {
       const socialFallback = socialFallbackFromInspection(lead, contactFlow.inspection);
-      if (socialFallback) {
+      const attemptedTargets = new Set((options.attemptedTargets || []).map(value => String(value || '').toLowerCase()));
+      const socialFallbackTarget = String(socialFallback && (socialFallback.targetUrl || socialFallback.url) || '').toLowerCase();
+      if (socialFallback
+        && Number(options.fallbackDepth || 0) < 3
+        && !attemptedTargets.has(socialFallbackTarget)) {
         await closeAutomationChromeTab(chromeOpen);
-        const socialResult = await executeLeadAutomation(socialFallback, { ignoreCooldown: true, allowParallel: true });
+        const socialResult = await executeLeadAutomation(socialFallback, {
+          ignoreCooldown: true,
+          allowParallel: true,
+          fallbackDepth: Number(options.fallbackDepth || 0) + 1,
+          attemptedTargets: [...attemptedTargets, String(target.targetUrl || '').toLowerCase()],
+        });
         const socialOutput = parseExecutionOutput(socialResult && socialResult.output);
         return {
           ...socialResult,
@@ -3024,6 +3080,7 @@ function alternateChannelFallbackLead(lead = {}, draftResult = {}, options = {})
     ...(Array.isArray(options.attemptedChannels) ? options.attemptedChannels : []),
     String(lead.platform || '').toLowerCase(),
   ].filter(Boolean));
+  const attemptedTargets = new Set((options.attemptedTargets || []).map(value => String(value || '').toLowerCase()));
   const channels = lead.alternateChannels || {};
   const candidates = [
     ['linkedin', channels.linkedin],
@@ -3032,7 +3089,9 @@ function alternateChannelFallbackLead(lead = {}, draftResult = {}, options = {})
     ['email', cameFromWebsiteSocialFallback ? '' : (channels.websiteContact || lead.contactUrl || lead.website)],
   ];
   for (const [platform, targetUrl] of candidates) {
-    if (attempted.has(platform) || !/^https:\/\//i.test(String(targetUrl || ''))) continue;
+    if (attempted.has(platform)
+      || attemptedTargets.has(String(targetUrl || '').toLowerCase())
+      || !/^https:\/\//i.test(String(targetUrl || ''))) continue;
     const fallback = {
       ...lead,
       id: `${automationLeadFamilyKey(lead.id || lead.taskId) || canonicalLeadKey(lead.company || lead.name)}-${platform}`,
@@ -3059,7 +3118,10 @@ async function runCodexChromeLead(lead, decision, mode = 'codex_chrome_prepare',
     ? await optimizeDraftWithContext(lead, decision, chromeOpen)
     : String(decision && decision.draft || '').trim();
   const draftResult = await prepareSocialDraft(chromeOpen, finalDraft, lead);
-  const alternateFallback = alternateChannelFallbackLead(lead, draftResult, options);
+  const fallbackDepth = Number(options.fallbackDepth || 0);
+  const alternateFallback = fallbackDepth < 3
+    ? alternateChannelFallbackLead(lead, draftResult, options)
+    : null;
   if (alternateFallback) {
     await closeAutomationChromeTab(chromeOpen);
     const fallbackResult = await executeLeadAutomation(alternateFallback, {
@@ -3069,6 +3131,11 @@ async function runCodexChromeLead(lead, decision, mode = 'codex_chrome_prepare',
         ...(Array.isArray(options.attemptedChannels) ? options.attemptedChannels : []),
         String(lead.platform || '').toLowerCase(),
       ],
+      attemptedTargets: [
+        ...(Array.isArray(options.attemptedTargets) ? options.attemptedTargets : []),
+        String(target.targetUrl || '').toLowerCase(),
+      ],
+      fallbackDepth: fallbackDepth + 1,
     });
     return {
       ...fallbackResult,
@@ -3086,7 +3153,11 @@ async function runCodexChromeLead(lead, decision, mode = 'codex_chrome_prepare',
     && lead && lead.facebookMessageUnavailable === true
     && /facebook_profile_no_message_button/.test(String(draftResult && draftResult.evidence || ''));
   const instagramUrl = instagramFallbackTarget(lead);
-  if (facebookNeedsInstagram && instagramUrl) {
+  const attemptedTargets = new Set((options.attemptedTargets || []).map(value => String(value || '').toLowerCase()));
+  if (facebookNeedsInstagram
+    && fallbackDepth < 3
+    && instagramUrl
+    && !attemptedTargets.has(String(instagramUrl).toLowerCase())) {
     const fallbackLead = {
       ...lead,
       platform: 'instagram',
@@ -3099,7 +3170,12 @@ async function runCodexChromeLead(lead, decision, mode = 'codex_chrome_prepare',
       fallbackLead,
       decision,
       `${mode}_instagram_fallback`,
-      { skipInstagramFallback: true, reuseTab: Boolean(options.reuseTab) },
+      {
+        skipInstagramFallback: true,
+        reuseTab: Boolean(options.reuseTab),
+        fallbackDepth: fallbackDepth + 1,
+        attemptedTargets: [...attemptedTargets, String(target.targetUrl || '').toLowerCase()],
+      },
     );
     return {
       ...fallbackResult,
@@ -3236,7 +3312,7 @@ async function executeLeadAutomation(lead, options = {}) {
     || lead && lead.action === 'email_priority'
     || /official_website_contact_channel|website_contact/i.test(String(lead && lead.reason || ''));
   if (isWebsiteContact) {
-    const result = markWebsiteContactStrategyResult(await runWebsiteContactLead(lead));
+    const result = markWebsiteContactStrategyResult(await runWebsiteContactLead(lead, options));
     lastGlmAutomationAt = Date.now();
     return result;
   }
@@ -3598,6 +3674,7 @@ async function runDailyAutomationQueue(payload = {}) {
   if (!latest || !Array.isArray(latest.dailyQueue)) {
     return { ok: false, error: 'Daily automation queue is missing. Run npm run daily first.' };
   }
+  const ledgerReconciliationCount = reconcileLatestExecutionResultsToLedger();
   const requestedLimit = Math.max(1, Math.min(Number(payload && payload.limit || process.env.DAILY_EXECUTE_LIMIT || DEFAULT_DAILY_SOCIAL_EXECUTION_LIMIT), 100));
   const parallelLimit = 1;
   const previousResults = readJsonScriptArray(path.join(__dirname, 'autonomous-outreach-results.js'), 'AUTONOMOUS_OUTREACH_RESULTS');
@@ -3887,6 +3964,7 @@ async function runDailyAutomationQueue(payload = {}) {
     recoveryActions,
     systemRefresh,
     bounceReconciliation,
+    ledgerReconciliationCount,
   };
 }
 

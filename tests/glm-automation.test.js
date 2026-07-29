@@ -782,7 +782,7 @@ test('website discovery probes common same-origin contact paths without product-
   assert.ok(mainSource.includes('positiveHref'));
   assert.ok(mainSource.includes('const negativeHref = /\\\\/collections'));
   assert.ok(mainSource.includes("String(item.text || '').length <= 120"));
-  assert.ok(mainSource.includes('markWebsiteContactStrategyResult(await runWebsiteContactLead(lead))'));
+  assert.ok(mainSource.includes('markWebsiteContactStrategyResult(await runWebsiteContactLead(lead, options))'));
   const start = mainSource.indexOf('function websiteContactClickExpression()');
   const end = mainSource.indexOf('async function inspectWebsiteContactFlow', start);
   const clickExpressionFactory = vm.runInNewContext(`(${mainSource.slice(start, end).trim()})`);
@@ -852,6 +852,8 @@ test('Codex Chrome execution can auto-send approved social outreach with confirm
   assert.ok(chromeDriverSource.includes('identity_match_exact_social_url'));
   assert.ok(chromeDriverSource.includes('item => item && !item.pending'));
   assert.ok(chromeDriverSource.includes("closest('nav,[role=\"navigation\"]')"));
+  assert.ok(chromeDriverSource.includes('floatingMessengerComposer'));
+  assert.ok(chromeDriverSource.includes('window.innerWidth * 0.55'));
   assert.ok(chromeDriverSource.includes('closeBlockingOverlayExpression'));
   assert.ok(chromeDriverSource.includes('closeFacebookChatWindowsExpression'));
   assert.ok(chromeDriverSource.includes('facebook_stale_chat_windows_closed'));
@@ -930,6 +932,12 @@ test('Instagram driver returns structured results before the parent timeout and 
   assert.ok(chromeDriverSource.includes("Page.bringToFront', {}, 2000).catch(() => null)"));
 });
 
+test('driver child process has an independent hard timeout', () => {
+  assert.ok(mainSource.includes('Child process hard timeout after'));
+  assert.ok(mainSource.includes("child.kill('SIGKILL')"));
+  assert.ok(mainSource.includes("error.code = 'ETIMEDOUT'"));
+});
+
 test('recoverable social composer failures fall back across verified channels without blind retries', () => {
   assert.ok(mainSource.includes('function alternateChannelFallbackLead'));
   assert.ok(mainSource.includes('composer_not_found|message_button_clicked_composer_not_found'));
@@ -939,6 +947,8 @@ test('recoverable social composer failures fall back across verified channels wi
   assert.ok(mainSource.includes('if (!blockingAutomationResultFor(fallback)) return fallback'));
   assert.ok(mainSource.includes('fallbackPlatform: alternateFallback.platform'));
   assert.ok(mainSource.includes('driver_timeout_bounded:80000'));
+  assert.ok(mainSource.includes('fallbackDepth < 3'));
+  assert.ok(mainSource.includes("attemptedTargets.has(String(targetUrl || '').toLowerCase())"));
   const sameDayStatusesStart = mainSource.indexOf('const SAME_DAY_DEVELOPMENT_STATUSES');
   const sameDayStatusesEnd = mainSource.indexOf('function automationLocalDay', sameDayStatusesStart);
   assert.ok(sameDayStatusesStart >= 0 && sameDayStatusesEnd > sameDayStatusesStart);
@@ -994,7 +1004,15 @@ test('daily execution checkpoints completed tasks and resumes without duplicate 
   assert.ok(mainSource.includes("reason: 'completed_in_execution_checkpoint'"));
   assert.ok(mainSource.includes('completedTaskIds: [...completedTaskIds]'));
   assert.ok(mainSource.includes('checkpointResultIsTerminal(item)'));
+  assert.ok(mainSource.includes('prior_send_unconfirmed_no_resend|sent_folder_record_missing'));
   assert.ok(mainSource.includes('checkpoint: readJson(dailyExecutionCheckpointPath(), null)'));
+});
+
+test('latest completed execution is reconciled into the same-day ledger before selecting another batch', () => {
+  assert.ok(mainSource.includes('function reconcileLatestExecutionResultsToLedger'));
+  assert.ok(mainSource.includes('const ledgerReconciliationCount = reconcileLatestExecutionResultsToLedger()'));
+  assert.ok(mainSource.includes('automationLocalDay(existing.timestamp) === automationLocalDay(entry.timestamp)'));
+  assert.ok(mainSource.includes("company: item.company || result.company || ''"));
 });
 
 test('daily execution deduplicates merged website candidates and exits after artifact completion', () => {
@@ -1074,6 +1092,7 @@ test('daily execution duplicate blocking is channel-aware', () => {
   assert.ok(mainSource.includes('automationCompanyKeys(item).forEach(key => selectedCompanyKeys.add(key))'));
   assert.ok(mainSource.includes('itemBlockedBySameDayCompany(item, sameDayCompanyKeys)'));
   assert.ok(mainSource.includes('function failedOpenResultShouldBlockRetry'));
+  assert.ok(mainSource.includes("evidence.includes('profile_no_message_button')"));
   assert.ok(mainSource.includes('message_button_clicked_composer_not_found'));
   assert.ok(mainSource.includes("result.status !== 'failed_open' || failedOpenResultShouldBlockRetry(result)"));
   assert.ok(mainSource.includes("['website_contact_ready', 'website_contact_unreachable_skip'].includes(result.status)"));
@@ -1110,7 +1129,7 @@ test('dedicated website and Instagram execution report truthful transport and co
 test('uninserted social draft does not block same-company website fallback', () => {
   assert.ok(mainSource.includes('function sendStatusHasCustomerInteraction'));
   assert.ok(mainSource.includes('sendStatusHasCustomerInteraction(sendStatus, output.evidence || result.evidence ||'));
-  assert.ok(mainSource.includes("result.status !== 'send_unconfirmed' || sendStatusHasCustomerInteraction"));
+  assert.match(mainSource, /result\.status !== 'send_unconfirmed'[\s\S]*sendStatusHasCustomerInteraction\(result\.status, result\.evidence\)/);
 });
 
 test('daily queue generator blocks same-day repeat development by company', () => {

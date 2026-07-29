@@ -403,6 +403,19 @@ function composerExpression(platform) {
         .filter(item => item.label.includes('message') || item.placeholder.includes('message') || item.label.includes('\\u53d1\\u6d88\\u606f') || item.placeholder.includes('\\u53d1\\u6d88\\u606f') || item.placeholder === 'aa')
         .sort((a, b) => b.y - a.y)[0];
       if (facebookComposer) return JSON.stringify(facebookComposer);
+      const floatingMessengerComposer = elements
+        .filter(item => item.match && !item.inDialog)
+        .filter(item => item.x > window.innerWidth * 0.55 && item.y > window.innerHeight * 0.55)
+        .filter(item => !item.label.includes('comment') && !item.label.includes('\\u5199\\u8bc4\\u8bba') && !item.placeholder.includes('comment') && !item.placeholder.includes('\\u5199\\u8bc4\\u8bba'))
+        .filter(item => item.label.includes('message')
+          || item.placeholder.includes('message')
+          || item.label.includes('\\u6d88\\u606f')
+          || item.placeholder.includes('\\u6d88\\u606f')
+          || item.placeholder === 'aa'
+          || (!item.label && !item.placeholder));
+      if (floatingMessengerComposer.length) {
+        return JSON.stringify(floatingMessengerComposer.sort((a, b) => b.y - a.y || b.x - a.x)[0]);
+      }
       return JSON.stringify(null);
     }
     return JSON.stringify(
