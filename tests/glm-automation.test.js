@@ -620,6 +620,15 @@ test('daily automation targets one hundred high-ICP prospects by default', () =>
   assert.ok(dailyRunnerSource.includes("['develop', Math.max(DEFAULT_DAILY_LIMIT"));
 });
 
+test('daily discovery emits the full verified channel pool and reports executable capacity', () => {
+  const packageJson = JSON.parse(fs.readFileSync(path.join(__dirname, '..', 'outreach-dashboard', 'package.json'), 'utf8'));
+  assert.match(packageJson.scripts['discover:daily'], /--limit=400/);
+  assert.ok(dailyRunnerSource.includes('function channelReadinessSummary'));
+  assert.ok(dailyRunnerSource.includes('executableReserveTarget: 130'));
+  assert.ok(dailyRunnerSource.includes('executableReserveNeeded: readiness.reserveNeededFor100'));
+  assert.ok(dailyRunnerSource.includes('executableByChannel: readiness.byChannel'));
+});
+
 test('AutoGLM only accepts exact supported platform URLs and blocks repeat contact', () => {
   assert.equal(validateLeadForExecution({
     verifiedTargetUrl: 'https://www.instagram.com/campmor/',
@@ -694,6 +703,17 @@ test('social execution explicitly fails closed for CAPTCHA, login loss, and plat
   assert.ok(chromeDriverSource.includes('platform_rate_limit_or_action_block'));
   assert.ok(chromeDriverSource.includes('dedicated_browser_login_required'));
   assert.ok(chromeDriverSource.includes('Skip this target without retrying'));
+});
+
+test('daily execution opens a platform-only circuit after repeated same-day safety failures', () => {
+  assert.ok(mainSource.includes('function platformSafetyCircuitState'));
+  assert.ok(mainSource.includes('platform_safety_circuit_open'));
+  assert.ok(mainSource.includes('failures >= 3'));
+  assert.ok(mainSource.includes('const platformCircuitState = platformSafetyCircuitState(previousResults)'));
+  assert.ok(mainSource.includes('platformCircuitState[itemPlatform].open'));
+  const queueStart = mainSource.indexOf('async function runDailyAutomationQueue');
+  const queueEnd = mainSource.indexOf("ipcMain.handle('run-daily-automation-queue'", queueStart);
+  assert.ok(mainSource.slice(queueStart, queueEnd).includes('const platformCircuitState = platformSafetyCircuitState(previousResults)'));
 });
 
 test('temporary platform safety failures become re-verifiable after a three-hour cooldown', () => {

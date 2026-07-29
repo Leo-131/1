@@ -1240,6 +1240,41 @@ function buildDailyPotentialPool(classified, discoveryRun, context, targetSize) 
     .slice(0, targetSize);
 }
 
+function channelReadinessSummary(items = []) {
+  const companies = new Map();
+  for (const item of Array.isArray(items) ? items : []) {
+    const companyKey = slugKey(item.company || item.name || item.id);
+    if (!companyKey) continue;
+    const row = companies.get(companyKey) || {
+      company: item.company || item.name || companyKey,
+      channels: new Set(),
+      ready: false,
+    };
+    const reason = String(item.reason || '');
+    const action = String(item.action || '');
+    const platform = String(item.platform || item.channel || '').toLowerCase();
+    const hasTarget = Boolean(item.url || item.contactUrl || item.website || item.publicEmail || item.contactEmail);
+    const blocked = /homepage_only_contact_path_requires_verification|missing_verified_profile_url|active_partner_no_new_outreach|exclusive_agency_region/.test(reason);
+    const executableAction = ['develop', 'discover_and_develop', 'email_priority', 'retry_or_alternate_channel'].includes(action);
+    if (hasTarget && executableAction && !blocked) {
+      row.ready = true;
+      row.channels.add(platform || 'website');
+    }
+    companies.set(companyKey, row);
+  }
+  const rows = [...companies.values()];
+  const ready = rows.filter(item => item.ready);
+  return {
+    totalCompanies: rows.length,
+    executableCompanies: ready.length,
+    reserveNeededFor100: Math.max(0, 130 - ready.length),
+    byChannel: ready.reduce((counts, item) => {
+      item.channels.forEach(channel => { counts[channel] = (counts[channel] || 0) + 1; });
+      return counts;
+    }, {}),
+  };
+}
+
 function bestVisibleChannel(items = []) {
   const rank = { email: 0, linkedin: 1, facebook: 2, instagram: 3 };
   return items.slice().sort((left, right) => {
@@ -1369,6 +1404,7 @@ function main() {
     .filter(item => CONFIG.cadence.respectTargetWorkingHours !== false && !(item.workingTime && item.workingTime.dueNow))
     .sort(priorityCompare)
     .slice(0, 20);
+  const readiness = channelReadinessSummary(dailyPotentialPool);
   const run = {
     generatedAt: new Date(now).toISOString(),
     date,
@@ -1398,6 +1434,10 @@ function main() {
       potentialPoolTarget,
       customerTableHighIcp: dailyPotentialPool.filter(item => item.potentialSource === 'customer_table').length,
       refillNeeded: Math.max(0, potentialPoolTarget - dailyPotentialPool.length),
+      executableCompanies: readiness.executableCompanies,
+      executableReserveTarget: 130,
+      executableReserveNeeded: readiness.reserveNeededFor100,
+      executableByChannel: readiness.byChannel,
       googleDiscovered: dailyQueue.filter(item => item.sourceType === 'google' || item.source === 'google_customer_discovery' || /^google-customer-/i.test(item.id || '')).length,
       facebookDiscovered: dailyQueue.filter(item => item.platform === 'facebook' && (item.sourceType === 'google' || item.source === 'google_customer_discovery' || /^google-customer-/i.test(item.id || ''))).length,
       websiteContactDiscovered: dailyQueue.filter(item => item.platform === 'email' && (item.sourceType === 'google' || item.source === 'google_customer_discovery' || /^google-customer-/i.test(item.id || ''))).length,

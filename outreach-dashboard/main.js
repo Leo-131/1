@@ -439,6 +439,27 @@ function sameDayConfirmedCompanyCount(results = [], now = Date.now()) {
   return companies.length;
 }
 
+function platformSafetyCircuitState(results = [], now = Date.now()) {
+  const safetyPattern = /captcha_or_human_verification|platform_rate_limit_or_action_block|dedicated_browser_login_required|account_checkpoint|temporarily_blocked/i;
+  const counts = new Map();
+  for (const result of Array.isArray(results) ? results : []) {
+    if (!result || !isSameAutomationDay(result.timestamp, now)) continue;
+    if (!safetyPattern.test(String(result.evidence || ''))) continue;
+    const platform = automationPlatformFor(result);
+    if (!platform) continue;
+    counts.set(platform, (counts.get(platform) || 0) + 1);
+  }
+  return [...counts.entries()].reduce((state, [platform, failures]) => {
+    state[platform] = {
+      failures,
+      threshold: 3,
+      open: failures >= 3,
+      reason: failures >= 3 ? 'platform_safety_circuit_open' : 'platform_safety_circuit_closed',
+    };
+    return state;
+  }, {});
+}
+
 function knownInvalidIdentityResult(result = {}) {
   const company = String(result.company || '').trim().toLowerCase();
   const target = String(result.target_url || result.targetUrl || '').toLowerCase();
@@ -3709,6 +3730,7 @@ async function runDailyAutomationQueue(payload = {}) {
   const requestedLimit = Math.max(1, Math.min(Number(payload && payload.limit || process.env.DAILY_EXECUTE_LIMIT || DEFAULT_DAILY_SOCIAL_EXECUTION_LIMIT), 100));
   const parallelLimit = 1;
   const previousResults = readJsonScriptArray(path.join(__dirname, 'autonomous-outreach-results.js'), 'AUTONOMOUS_OUTREACH_RESULTS');
+  const platformCircuitState = platformSafetyCircuitState(previousResults);
   const confirmedToday = sameDayConfirmedCompanyCount(previousResults);
   const remainingDailyGap = Math.max(0, DAILY_CONFIRMED_COMPANY_TARGET - confirmedToday);
   const limit = Math.min(requestedLimit, remainingDailyGap);
@@ -3761,6 +3783,18 @@ async function runDailyAutomationQueue(payload = {}) {
   const selectedCompanyKeys = new Set(sameDayCompanyKeys);
   for (const item of candidatePool) {
     if (executable.length >= limit) break;
+    const itemPlatform = automationPlatformFor(item);
+    if (itemPlatform && platformCircuitState[itemPlatform] && platformCircuitState[itemPlatform].open) {
+      skipped.push({
+        id: item.id,
+        company: item.company,
+        action: item.action,
+        reason: 'platform_safety_circuit_open',
+        platform: itemPlatform,
+        evidence: `same_day_safety_failures:${platformCircuitState[itemPlatform].failures}`,
+      });
+      continue;
+    }
     const checkpointResult = checkpointResultsById.get(item.id);
     const verifiedProfileIdentityRetry = Boolean(item.officialSocialProfileVerified
       && checkpointResult
@@ -3998,6 +4032,7 @@ async function runDailyAutomationQueue(payload = {}) {
     blockerSummary,
     blockerCounts,
     queueGoalStatus,
+    platformCircuitState,
     userVisibleStatus,
     recoveryHint,
     recoveryActions,
