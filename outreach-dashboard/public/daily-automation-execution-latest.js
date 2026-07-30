@@ -29,14 +29,14 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "ok": false,
       "sendStatus": "approval_pending",
       "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;;contact_path_strategy_v2",
-      "timestamp": "2026-07-30T05:55:23.328Z",
+      "timestamp": "2026-07-30T06:12:10.466Z",
       "chromeOpen": {
         "ok": true,
         "engine": "codex-chrome-cdp",
         "port": 9224,
         "targetUrl": "https://www.doorout.com/",
-        "tabId": "5BF484A37DE06CCEB25F518EA1066E03",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/5BF484A37DE06CCEB25F518EA1066E03",
+        "tabId": "9A74E5ABC8C86E33A6585593F9B46D76",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/9A74E5ABC8C86E33A6585593F9B46D76",
         "title": ""
       },
       "result": {
@@ -47,8 +47,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
           "engine": "codex-chrome-cdp",
           "port": 9224,
           "targetUrl": "https://www.doorout.com/",
-          "tabId": "5BF484A37DE06CCEB25F518EA1066E03",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/5BF484A37DE06CCEB25F518EA1066E03",
+          "tabId": "9A74E5ABC8C86E33A6585593F9B46D76",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/9A74E5ABC8C86E33A6585593F9B46D76",
           "title": ""
         },
         "mode": "official_website_social_fallback",
@@ -67,14 +67,14 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "ok": false,
       "sendStatus": "approval_pending",
       "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;;contact_path_strategy_v2",
-      "timestamp": "2026-07-30T05:55:23.328Z",
+      "timestamp": "2026-07-30T06:12:10.466Z",
       "chromeOpen": {
         "ok": true,
         "engine": "codex-chrome-cdp",
         "port": 9224,
         "targetUrl": "https://www.doorout.com/",
-        "tabId": "5BF484A37DE06CCEB25F518EA1066E03",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/5BF484A37DE06CCEB25F518EA1066E03",
+        "tabId": "9A74E5ABC8C86E33A6585593F9B46D76",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/9A74E5ABC8C86E33A6585593F9B46D76",
         "title": ""
       },
       "result": {
@@ -85,8 +85,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
           "engine": "codex-chrome-cdp",
           "port": 9224,
           "targetUrl": "https://www.doorout.com/",
-          "tabId": "5BF484A37DE06CCEB25F518EA1066E03",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/5BF484A37DE06CCEB25F518EA1066E03",
+          "tabId": "9A74E5ABC8C86E33A6585593F9B46D76",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/9A74E5ABC8C86E33A6585593F9B46D76",
           "title": ""
         },
         "mode": "official_website_social_fallback",
@@ -96,6 +96,54 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     }
   ],
   "skipped": [
+    {
+      "id": "google-customer-left-point-distribution-website-contact",
+      "company": "Left Point Distribution",
+      "action": "email_priority",
+      "reason": "official_website_contact_channel"
+    },
+    {
+      "id": "google-customer-obelink-website-contact",
+      "company": "Obelink",
+      "action": "email_priority",
+      "reason": "official_website_contact_channel"
+    },
+    {
+      "id": "google-customer-de-wit-schijndel-website-contact",
+      "company": "De Wit Schijndel",
+      "action": "verify_target",
+      "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
+      "id": "google-customer-scandinavian-outdoor-website-contact",
+      "company": "Scandinavian Outdoor",
+      "action": "verify_target",
+      "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
+      "id": "google-customer-outdoor-specialist-website-contact",
+      "company": "Outdoor Specialist",
+      "action": "verify_target",
+      "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
+      "id": "google-customer-outdoorxl-website-contact",
+      "company": "OutdoorXL",
+      "action": "verify_target",
+      "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
+      "id": "google-customer-kampeerwereld-hendriks-website-contact",
+      "company": "Kampeerwereld Hendriks",
+      "action": "verify_target",
+      "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
+      "id": "google-customer-varuste-website-contact",
+      "company": "Varuste",
+      "action": "verify_target",
+      "reason": "homepage_only_contact_path_requires_verification"
+    },
     {
       "id": "google-customer-wildfire-sports-website-contact",
       "company": "Wildfire Sports",
@@ -113,6 +161,18 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "company": "Tentworld",
       "action": "verify_target",
       "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
+      "id": "google-customer-outdoor-specialist-facebook",
+      "company": "Outdoor Specialist",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_facebook"
+    },
+    {
+      "id": "google-customer-outdoor-specialist-instagram",
+      "company": "Outdoor Specialist",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_instagram"
     },
     {
       "id": "sheet_1779293110195_9myxa520z",
@@ -159,18 +219,6 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     {
       "id": "sheet_1779293110195_4akfr27wz",
       "company": "TAHOE SPORTS HUB",
-      "action": "email_priority",
-      "reason": "official_website_contact_channel"
-    },
-    {
-      "id": "google-customer-left-point-distribution-website-contact",
-      "company": "Left Point Distribution",
-      "action": "email_priority",
-      "reason": "official_website_contact_channel"
-    },
-    {
-      "id": "google-customer-obelink-website-contact",
-      "company": "Obelink",
       "action": "email_priority",
       "reason": "official_website_contact_channel"
     },
@@ -223,20 +271,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "reason": "homepage_only_contact_path_requires_verification"
     },
     {
-      "id": "google-customer-de-wit-schijndel-website-contact",
-      "company": "De Wit Schijndel",
-      "action": "verify_target",
-      "reason": "homepage_only_contact_path_requires_verification"
-    },
-    {
       "id": "google-customer-ekosport-website-contact",
       "company": "Ekosport",
-      "action": "verify_target",
-      "reason": "homepage_only_contact_path_requires_verification"
-    },
-    {
-      "id": "google-customer-scandinavian-outdoor-website-contact",
-      "company": "Scandinavian Outdoor",
       "action": "verify_target",
       "reason": "homepage_only_contact_path_requires_verification"
     },
@@ -283,18 +319,6 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "reason": "homepage_only_contact_path_requires_verification"
     },
     {
-      "id": "google-customer-outdoor-specialist-website-contact",
-      "company": "Outdoor Specialist",
-      "action": "verify_target",
-      "reason": "homepage_only_contact_path_requires_verification"
-    },
-    {
-      "id": "google-customer-outdoorxl-website-contact",
-      "company": "OutdoorXL",
-      "action": "verify_target",
-      "reason": "homepage_only_contact_path_requires_verification"
-    },
-    {
       "id": "google-customer-spejder-sport-website-contact",
       "company": "Spejder Sport",
       "action": "verify_target",
@@ -319,20 +343,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "reason": "homepage_only_contact_path_requires_verification"
     },
     {
-      "id": "google-customer-kampeerwereld-hendriks-website-contact",
-      "company": "Kampeerwereld Hendriks",
-      "action": "verify_target",
-      "reason": "homepage_only_contact_path_requires_verification"
-    },
-    {
       "id": "google-customer-sportpursuit-website-contact",
       "company": "SportPursuit",
-      "action": "verify_target",
-      "reason": "homepage_only_contact_path_requires_verification"
-    },
-    {
-      "id": "google-customer-varuste-website-contact",
-      "company": "Varuste",
       "action": "verify_target",
       "reason": "homepage_only_contact_path_requires_verification"
     },
@@ -511,12 +523,6 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "reason": "concrete_google_discovered_major_customer_facebook"
     },
     {
-      "id": "google-customer-outdoor-specialist-facebook",
-      "company": "Outdoor Specialist",
-      "action": "develop",
-      "reason": "concrete_google_discovered_major_customer_facebook"
-    },
-    {
       "id": "google-customer-tiso-facebook",
       "company": "Tiso",
       "action": "develop",
@@ -603,12 +609,6 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     {
       "id": "google-customer-ld-mountain-centre-instagram",
       "company": "LD Mountain Centre",
-      "action": "develop",
-      "reason": "concrete_google_discovered_major_customer_instagram"
-    },
-    {
-      "id": "google-customer-outdoor-specialist-instagram",
-      "company": "Outdoor Specialist",
       "action": "develop",
       "reason": "concrete_google_discovered_major_customer_instagram"
     },
@@ -1380,12 +1380,12 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     "stderr": "",
     "error": "",
     "visibility": {
-      "updatedAt": "2026-07-30T05:55:25.857Z",
+      "updatedAt": "2026-07-30T06:12:12.259Z",
       "source": "main-refreshDailyAutomationArtifacts",
       "runDate": "2026-07-30",
-      "artifactGeneratedAt": "2026-07-30T05:55:23.729Z",
-      "executionGeneratedAt": "2026-07-30T05:14:24.639Z",
-      "githubSyncUpdatedAt": "2026-07-30T05:14:53.722Z",
+      "artifactGeneratedAt": "2026-07-30T06:12:10.912Z",
+      "executionGeneratedAt": "2026-07-30T05:55:26.629Z",
+      "githubSyncUpdatedAt": "2026-07-30T05:56:18.568Z",
       "counts": {
         "dailyQueue": 99,
         "googleDiscovered": 86,
@@ -1447,6 +1447,6 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "ALIBABA_SMTP_SECURITY_PASSWORD"
     ]
   },
-  "ledgerReconciliationCount": 2,
-  "completedAt": "2026-07-30T05:55:26.629Z"
+  "ledgerReconciliationCount": 1,
+  "completedAt": "2026-07-30T06:12:12.791Z"
 };

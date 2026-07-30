@@ -40,6 +40,7 @@ const {
   stableActionHash,
   validateExtensionReceipt,
 } = require('./browser-transport');
+const { refreshRuntime, validatePolicies } = require('./outreach-runtime');
 
 for (const stream of [process.stdout, process.stderr]) {
   if (stream && stream.on) {
@@ -4226,6 +4227,29 @@ ipcMain.handle('run-daily-automation-queue', async (_event, payload) => runDaily
 
 async function runAutoDailyAndWriteArtifact() {
   let completed = false;
+  const policyPreflight = validatePolicies();
+  if (!policyPreflight.ok) {
+    const output = {
+      ok: false,
+      error: 'CONFIG_MISSING',
+      completedAt: new Date().toISOString(),
+      browserTransportRequested: 'dedicated Chrome/CDP',
+      browserTransportUsed: 'none',
+      executionPhase: 'no_browser_execution',
+      chromeOpened: false,
+      customerDevelopmentPerformed: false,
+      customerMessageSent: false,
+      realDevelopmentCount: 0,
+      reportingVerdict: 'configuration_missing_fail_closed',
+      blockerSummary: policyPreflight.issues.map(reason => ({ reason, status: 'blocked', count: 1 })),
+      userVisibleStatus: `Customer sending was blocked by policy preflight: ${policyPreflight.issues.join('; ')}`,
+      recoveryHint: 'Restore the required versioned policy files and regenerate runtime context.',
+    };
+    writeDailyExecutionArtifact(output);
+    refreshRuntime({ phase: 'config-missing' });
+    app.exit(0);
+    return;
+  }
   const timeoutMs = Math.max(60000, Number(process.env.DAILY_EXECUTE_TIMEOUT_MS || 2700000));
   const watchdog = setTimeout(async () => {
     if (completed) return;

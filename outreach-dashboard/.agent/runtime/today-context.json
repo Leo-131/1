@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-30T06:12:33.624Z",
+  "phase": "pre-sync",
+  "shanghaiDate": "2026-07-30",
+  "policyVersion": "2026-07-30",
+  "policyStatus": "READY",
+  "sendingAllowed": true,
+  "activeBlocks": [],
+  "limits": {
+    "dailyTarget": 100,
+    "defaultRunLimit": 13,
+    "runMaximumMinutes": 45
+  },
+  "confirmedToday": 1,
+  "remainingToday": 99,
+  "queue": {
+    "potentialPool": 100,
+    "refillNeeded": 0,
+    "executableCompanies": 20,
+    "executableReserveNeeded": 110
+  },
+  "latestExecution": {
+    "completedAt": "2026-07-30T06:12:12.791Z",
+    "phase": "browser_execution",
+    "realDevelopmentCount": 0,
+    "reportingVerdict": "no_customer_development_performed"
+  },
+  "browser": {
+    "requiredTransport": "dedicated Chrome/CDP",
+    "cdpPort": 9224,
+    "primaryChromePortProhibited": 9222
+  },
+  "git": {
+    "branch": "vercel-main-sync",
+    "localHead": "d93e4d83fc240ee9e8241ed2519c1e4efc0a77c8",
+    "upstreamHead": "dcf7e86b443f3a95232e892c31c13bd85566e17e"
+  }
+}

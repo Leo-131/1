@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "policyVersion": "2026-07-30",
+  "dailyTarget": 100,
+  "defaultRunLimit": 13,
+  "runMaximumMinutes": 45,
+  "confirmedStatuses": [
+    "sent_confirmed",
+    "submitted_confirmed"
+  ],
+  "requiredFiles": [
+    "outreach-policy.md",
+    "browser-policy.md",
+    "git-policy.md"
+  ]
+}
