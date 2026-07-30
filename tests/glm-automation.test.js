@@ -84,6 +84,14 @@ test('website contact can execute without a configured attachment', () => {
   assert.doesNotMatch(mainSource, /reason:\s*!attachmentReady\s*&&\s*isWebsiteContactQueueItem/);
 });
 
+test('a pre-send Alibaba authentication failure falls back to verified website or social routes', () => {
+  assert.ok(mainSource.includes('function canFallbackAfterEmailPreflight'));
+  assert.ok(mainSource.includes("'alibaba_webmail_login_required'"));
+  assert.ok(mainSource.includes("'alibaba_webmail_session_unavailable'"));
+  assert.ok(mainSource.includes('if (!canFallbackAfterEmailPreflight(emailPreflight) || !targets.length) return emailPreflight'));
+  assert.ok(mainSource.includes("result.sendStatus === 'send_unconfirmed'"));
+});
+
 test('email execution enforces a per-domain daily safety gate', () => {
   assert.ok(mainSource.includes("require('./email-operations')"));
   assert.ok(mainSource.includes('email_domain_safety_gate'));

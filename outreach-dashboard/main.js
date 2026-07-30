@@ -2986,6 +2986,17 @@ async function runVerifiedAlibabaEmailLead(lead = {}, subject = '', draft = '') 
   };
 }
 
+function canFallbackAfterEmailPreflight(result = {}) {
+  if (!result || result.ok || result.sendStatus === 'sent_confirmed' || result.sendStatus === 'send_unconfirmed') return false;
+  const evidence = `${result.reason || ''};${result.evidence || ''}`.toLowerCase();
+  return [
+    'email_sender_not_configured',
+    'alibaba_webmail_session_unavailable',
+    'alibaba_webmail_login_required',
+    'alibaba_webmail_compose_unavailable',
+  ].some(marker => evidence.includes(marker));
+}
+
 async function runWebsiteContactLead(lead = {}, options = {}) {
   const subject = websiteContactSubject(lead);
   const draft = websiteContactMessage(lead);
@@ -3008,7 +3019,7 @@ async function runWebsiteContactLead(lead = {}, options = {}) {
   let emailPreflight = null;
   if (directEmail.ok) {
     emailPreflight = await runVerifiedAlibabaEmailLead(emailLead, subject, draft);
-    if (emailPreflight.reason !== 'email_sender_not_configured' || !targets.length) return emailPreflight;
+    if (!canFallbackAfterEmailPreflight(emailPreflight) || !targets.length) return emailPreflight;
   }
   if (!targets.length) {
     if (lead.publicEmail || lead.contactEmail || lead.email) {
