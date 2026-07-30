@@ -1,10 +1,9 @@
 window.GITHUB_SYNC_LATEST = {
-  "updatedAt": "2026-07-30T12:43:45.922Z",
-  "ok": false,
-  "pushed": false,
+  "updatedAt": "2026-07-30T13:06:07.955Z",
+  "ok": true,
+  "pushed": true,
   "branch": "vercel-main-sync",
-  "localCommit": "c4b82d66c685d435a449f13f52e6f1504e4074a1",
-  "remoteCommit": "7df227acd054283393cf469253c88469364e9ac4",
-  "message": "sync: local outreach data 2026-07-30",
-  "error": "Command failed: git -c gc.auto=0 add -- github-sync/latest-status.json github-sync/latest-status.js github-sync/system-visibility-latest.json github-sync/system-visibility-latest.js public/github-sync/latest-status.json public/github-sync/latest-status.js public/system-visibility-latest.json public/system-visibility-latest.js system-visibility-latest.json system-visibility-latest.js\nwarning: in the working copy of 'outreach-dashboard/github-sync/latest-status.js', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'outreach-dashboard/github-sync/latest-status.json', LF will be replaced by CRLF the next time Git touches it\nerror: unable to write file .git/objects/96/28c20e1555cb6f1449545ad3ce4390dc0492df: Function not implemented\nerror: outreach-dashboard/github-sync/latest-status.json: failed to insert into database\nerror: unable to index file 'outreach-dashboard/github-sync/latest-status.json'\nfatal: updating files failed\n"
+  "localCommit": "0e40fa83b5dea7c0f3494a488836598b512e1352",
+  "remoteCommit": "0e40fa83b5dea7c0f3494a488836598b512e1352",
+  "message": "sync: local outreach data 2026-07-30"
 };
