@@ -2781,29 +2781,31 @@ async function runAlibabaWebmailEmailLead(lead = {}, subject = '', draft = '') {
       await sleep(500);
     }
     let recipientStage = null;
-    if (filled && filled.ok) {
+    if (filled && filled.ok && !filled.recipientValueMatch) {
       const recipientControl = filled.recipientControl || {};
       const recipientX = Number(recipientControl.x || 0) + Number(recipientControl.width || 0) / 2;
       const recipientY = Number(recipientControl.y || 0) + Number(recipientControl.height || 0) / 2;
-      await cdpCommand(chromeOpen.webSocketDebuggerUrl, 'Input.dispatchMouseEvent', {
-        type: 'mouseMoved',
-        x: recipientX,
-        y: recipientY,
-      }, 3000);
-      await cdpCommand(chromeOpen.webSocketDebuggerUrl, 'Input.dispatchMouseEvent', {
-        type: 'mousePressed',
-        x: recipientX,
-        y: recipientY,
-        button: 'left',
-        clickCount: 1,
-      }, 3000);
-      await cdpCommand(chromeOpen.webSocketDebuggerUrl, 'Input.dispatchMouseEvent', {
-        type: 'mouseReleased',
-        x: recipientX,
-        y: recipientY,
-        button: 'left',
-        clickCount: 1,
-      }, 3000);
+      if (Number(recipientControl.width || 0) > 0 && Number(recipientControl.height || 0) > 0) {
+        await cdpCommand(chromeOpen.webSocketDebuggerUrl, 'Input.dispatchMouseEvent', {
+          type: 'mouseMoved',
+          x: recipientX,
+          y: recipientY,
+        }, 3000);
+        await cdpCommand(chromeOpen.webSocketDebuggerUrl, 'Input.dispatchMouseEvent', {
+          type: 'mousePressed',
+          x: recipientX,
+          y: recipientY,
+          button: 'left',
+          clickCount: 1,
+        }, 3000);
+        await cdpCommand(chromeOpen.webSocketDebuggerUrl, 'Input.dispatchMouseEvent', {
+          type: 'mouseReleased',
+          x: recipientX,
+          y: recipientY,
+          button: 'left',
+          clickCount: 1,
+        }, 3000);
+      }
       await cdpCommand(chromeOpen.webSocketDebuggerUrl, 'Input.insertText', {
         text: target.recipient,
       }, 3000);
@@ -2824,6 +2826,7 @@ async function runAlibabaWebmailEmailLead(lead = {}, subject = '', draft = '') {
     await sleep(500);
     const inspected = await evaluateChromeTabJson(chromeOpen, composeInspectionExpression(payload), 8000);
     if (!filled || !filled.ok || !inspected || !inspected.ok) {
+      preserveTabForReview = preserveAutomationChromeTab(chromeOpen);
       const inspectionFlags = inspected
         ? `recipientReady:${Boolean(inspected.recipientReady)};subjectReady:${Boolean(inspected.subjectReady)};bodyReady:${Boolean(inspected.bodyReady)}`
         : 'inspection_flags_missing';
@@ -2834,7 +2837,7 @@ async function runAlibabaWebmailEmailLead(lead = {}, subject = '', draft = '') {
       const recipientControlEvidence = control
         ? `recipientControl:${control.tag || 'none'},${control.type || 'none'},${control.role || 'none'},${control.className || 'none'};recipientControlXY:${control.x || 0},${control.y || 0};recipientControlShadow:${Boolean(control.shadowRoot)}`
         : 'recipient_control_missing';
-      return { ok: false, sendStatus: 'approval_pending', reason: 'alibaba_webmail_draft_verification_failed', evidence: `${filled && filled.evidence || 'fill_missing'};${inspected && inspected.evidence || 'inspection_missing'};${inspectionFlags};${recipientStageEvidence};${recipientControlEvidence}` };
+      return { ok: false, sendStatus: 'approval_pending', reason: 'alibaba_webmail_draft_verification_failed', evidence: `${filled && filled.evidence || 'fill_missing'};${inspected && inspected.evidence || 'inspection_missing'};${inspectionFlags};${recipientStageEvidence};${recipientControlEvidence};composer_preserved_for_manual_review:${preserveTabForReview}` };
     }
     const sendControl = await evaluateChromeTabJson(chromeOpen, composeSendExpression(payload), 8000);
     if (!sendControl || !sendControl.sendReady) return { ok: false, sendStatus: 'approval_pending', reason: 'alibaba_webmail_send_control_not_verified', evidence: sendControl && sendControl.evidence || 'alibaba_webmail_send_control_not_verified' };

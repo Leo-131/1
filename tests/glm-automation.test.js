@@ -23,6 +23,7 @@ const dailyRunnerSource = fs.readFileSync(path.join(__dirname, '..', 'outreach-d
 const glmSource = fs.readFileSync(path.join(__dirname, '..', 'outreach-dashboard', 'glm-service.js'), 'utf8');
 const templateSource = fs.readFileSync(path.join(__dirname, '..', 'outreach-dashboard', 'api', 'templates.js'), 'utf8');
 const marketProtectionSource = fs.readFileSync(path.join(__dirname, '..', 'outreach-dashboard', 'country-market-protection.js'), 'utf8');
+const alibabaWebmailSource = fs.readFileSync(path.join(__dirname, '..', 'outreach-dashboard', 'alibaba-webmail-automation.js'), 'utf8');
 
 function emptyClassificationContext(now = Date.parse('2026-07-14T08:00:00.000Z')) {
   return {
@@ -97,6 +98,10 @@ test('a pre-send Alibaba authentication failure falls back to verified website o
   assert.ok(mainSource.includes('async function probeAlibabaWebmailSession'));
   assert.ok(mainSource.includes('alibaba_webmail_authenticated_compose_visible'));
   assert.ok(mainSource.includes('liveAlibabaWebmailSessionReady = Boolean(alibabaSessionProbe && alibabaSessionProbe.ok)'));
+  assert.ok(mainSource.includes('filled && filled.ok && !filled.recipientValueMatch'));
+  assert.ok(mainSource.includes('composer_preserved_for_manual_review:${preserveTabForReview}'));
+  assert.ok(alibabaWebmailSource.includes('recipientValueMatch'));
+  assert.ok(alibabaWebmailSource.includes("setValue(recipientInput, recipient)"));
 });
 
 test('email execution enforces a per-domain daily safety gate', () => {

@@ -131,6 +131,10 @@ function composeFillExpression({ recipient, subject, text } = {}) {
     const fields = ${composeFieldsExpression()};
     const { recipientInput, subjectInput, editorBody } = fields;
     if (!recipientInput || !subjectInput || !editorBody) return JSON.stringify({ ok: false, evidence: 'alibaba_webmail_compose_fields_missing', recipientInput: Boolean(recipientInput), subjectInput: Boolean(subjectInput), editorBody: Boolean(editorBody) });
+    recipientInput.focus();
+    setValue(recipientInput, recipient);
+    recipientInput.dispatchEvent(new KeyboardEvent('keydown', { bubbles: true, key: 'Enter', code: 'Enter', keyCode: 13, which: 13 }));
+    recipientInput.dispatchEvent(new KeyboardEvent('keyup', { bubbles: true, key: 'Enter', code: 'Enter', keyCode: 13, which: 13 }));
     setValue(subjectInput, subject);
     editorBody.focus();
     editorBody.innerText = bodyText;
@@ -142,6 +146,7 @@ function composeFillExpression({ recipient, subject, text } = {}) {
       ok: true,
       evidence: 'alibaba_webmail_content_inserted_recipient_control_verified',
       recipient,
+      recipientValueMatch: String(recipientInput.value || '').toLowerCase().includes(recipient.toLowerCase()),
       subject,
       bodyLength: bodyText.length,
       recipientControl: {
