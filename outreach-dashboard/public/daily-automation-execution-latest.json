@@ -29,14 +29,14 @@
       "ok": false,
       "sendStatus": "approval_pending",
       "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;;contact_path_strategy_v2",
-      "timestamp": "2026-07-30T05:04:38.884Z",
+      "timestamp": "2026-07-30T05:07:17.897Z",
       "chromeOpen": {
         "ok": true,
         "engine": "codex-chrome-cdp",
         "port": 9224,
         "targetUrl": "https://www.doorout.com/",
-        "tabId": "E1D558D9423E5958F05BE6CB5BAE1A81",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/E1D558D9423E5958F05BE6CB5BAE1A81",
+        "tabId": "7DDF85B04F6A38648467305E900C347B",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/7DDF85B04F6A38648467305E900C347B",
         "title": ""
       },
       "result": {
@@ -47,8 +47,8 @@
           "engine": "codex-chrome-cdp",
           "port": 9224,
           "targetUrl": "https://www.doorout.com/",
-          "tabId": "E1D558D9423E5958F05BE6CB5BAE1A81",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/E1D558D9423E5958F05BE6CB5BAE1A81",
+          "tabId": "7DDF85B04F6A38648467305E900C347B",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/7DDF85B04F6A38648467305E900C347B",
           "title": ""
         },
         "mode": "official_website_social_fallback",
@@ -67,14 +67,14 @@
       "ok": false,
       "sendStatus": "approval_pending",
       "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;;contact_path_strategy_v2",
-      "timestamp": "2026-07-30T05:04:38.884Z",
+      "timestamp": "2026-07-30T05:07:17.897Z",
       "chromeOpen": {
         "ok": true,
         "engine": "codex-chrome-cdp",
         "port": 9224,
         "targetUrl": "https://www.doorout.com/",
-        "tabId": "E1D558D9423E5958F05BE6CB5BAE1A81",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/E1D558D9423E5958F05BE6CB5BAE1A81",
+        "tabId": "7DDF85B04F6A38648467305E900C347B",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/7DDF85B04F6A38648467305E900C347B",
         "title": ""
       },
       "result": {
@@ -85,8 +85,8 @@
           "engine": "codex-chrome-cdp",
           "port": 9224,
           "targetUrl": "https://www.doorout.com/",
-          "tabId": "E1D558D9423E5958F05BE6CB5BAE1A81",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/E1D558D9423E5958F05BE6CB5BAE1A81",
+          "tabId": "7DDF85B04F6A38648467305E900C347B",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/7DDF85B04F6A38648467305E900C347B",
           "title": ""
         },
         "mode": "official_website_social_fallback",
@@ -675,12 +675,6 @@
     {
       "id": 20,
       "company": "Harbor Freight",
-      "action": "verify_target",
-      "reason": "missing_verified_profile_url"
-    },
-    {
-      "id": 6,
-      "company": "L.L.Bean",
       "action": "verify_target",
       "reason": "missing_verified_profile_url"
     },
@@ -1283,7 +1277,7 @@
     "totalLeads": 16,
     "highIcp": 16,
     "readyToDevelop": 30,
-    "dueNow": 99,
+    "dueNow": 98,
     "visibleTodayQueue": 42,
     "potentialPool": 100,
     "potentialPoolTarget": 100,
@@ -1332,7 +1326,7 @@
     {
       "reason": "missing_verified_profile_url",
       "status": "skipped",
-      "count": 11
+      "count": 10
     },
     {
       "reason": "approval_pending",
@@ -1345,13 +1339,13 @@
     "concrete_google_discovered_major_customer_facebook": 34,
     "concrete_google_discovered_major_customer_instagram": 26,
     "official_website_contact_channel": 20,
-    "missing_verified_profile_url": 11,
+    "missing_verified_profile_url": 10,
     "approval_pending": 1
   },
   "queueGoalStatus": {
     "target": 100,
     "potentialPool": 100,
-    "queueCount": 99,
+    "queueCount": 98,
     "googleDiscovered": 86,
     "refillNeeded": 0,
     "reached": true,
@@ -1376,18 +1370,18 @@
   ],
   "systemRefresh": {
     "ok": true,
-    "stdout": "{\n  \"date\": \"2026-07-30\",\n  \"summary\": {\n    \"totalLeads\": 16,\n    \"highIcp\": 16,\n    \"readyToDevelop\": 30,\n    \"dueNow\": 99,\n    \"visibleTodayQueue\": 42,\n    \"potentialPool\": 100,\n    \"potentialPoolTarget\": 100,\n    \"customerTableHighIcp\": 14,\n    \"refillNeeded\": 0,\n    \"executableCompanies\": 19,\n    \"executableReserveTarget\": 130,\n    \"executableReserveNeeded\": 111,\n    \"executableByChannel\": {\n      \"website_form\": 2,\n      \"facebook\": 17,\n      \"instagram\": 13\n    },\n    \"googleDiscovered\": 86,\n    \"facebookDiscovered\": 17,\n    \"websiteContactDiscovered\": 0,\n    \"scheduledLater\": 0,\n    \"cooldown\": 30,\n    \"emailPriority\": 0,\n    \"openAgencyMarket\": 15,\n    \"exclusiveAgencySkipped\": 1,\n    \"needsVerification\": 0,\n    \"retainedLowIcp\": 0\n  },\n  \"bugErrors\": 0,\n  \"queueFile\": \"E:\\\\New project\\\\outreach-dashboard\\\\daily-runs\\\\2026-07-30-daily-automation.json\",\n  \"csvFile\": \"E:\\\\New project\\\\outreach-dashboard\\\\daily-runs\\\\2026-07-30-daily-queue.csv\"\n}",
+    "stdout": "{\n  \"date\": \"2026-07-30\",\n  \"summary\": {\n    \"totalLeads\": 16,\n    \"highIcp\": 16,\n    \"readyToDevelop\": 30,\n    \"dueNow\": 98,\n    \"visibleTodayQueue\": 42,\n    \"potentialPool\": 100,\n    \"potentialPoolTarget\": 100,\n    \"customerTableHighIcp\": 14,\n    \"refillNeeded\": 0,\n    \"executableCompanies\": 19,\n    \"executableReserveTarget\": 130,\n    \"executableReserveNeeded\": 111,\n    \"executableByChannel\": {\n      \"website_form\": 2,\n      \"facebook\": 17,\n      \"instagram\": 13\n    },\n    \"googleDiscovered\": 86,\n    \"facebookDiscovered\": 17,\n    \"websiteContactDiscovered\": 0,\n    \"scheduledLater\": 0,\n    \"cooldown\": 30,\n    \"emailPriority\": 0,\n    \"openAgencyMarket\": 15,\n    \"exclusiveAgencySkipped\": 1,\n    \"needsVerification\": 0,\n    \"retainedLowIcp\": 0\n  },\n  \"bugErrors\": 0,\n  \"queueFile\": \"E:\\\\New project\\\\outreach-dashboard\\\\daily-runs\\\\2026-07-30-daily-automation.json\",\n  \"csvFile\": \"E:\\\\New project\\\\outreach-dashboard\\\\daily-runs\\\\2026-07-30-daily-queue.csv\"\n}",
     "stderr": "",
     "error": "",
     "visibility": {
-      "updatedAt": "2026-07-30T05:04:40.363Z",
+      "updatedAt": "2026-07-30T05:07:19.305Z",
       "source": "main-refreshDailyAutomationArtifacts",
       "runDate": "2026-07-30",
-      "artifactGeneratedAt": "2026-07-30T05:04:39.221Z",
-      "executionGeneratedAt": "2026-07-30T04:54:38.829Z",
-      "githubSyncUpdatedAt": "2026-07-30T04:55:01.952Z",
+      "artifactGeneratedAt": "2026-07-30T05:07:18.182Z",
+      "executionGeneratedAt": "2026-07-30T05:04:40.858Z",
+      "githubSyncUpdatedAt": "2026-07-30T05:05:01.924Z",
       "counts": {
-        "dailyQueue": 99,
+        "dailyQueue": 98,
         "googleDiscovered": 86,
         "websiteContact": 56,
         "cooldownQueue": 30,
@@ -1448,5 +1442,5 @@
     ]
   },
   "ledgerReconciliationCount": 1,
-  "completedAt": "2026-07-30T05:04:40.858Z"
+  "completedAt": "2026-07-30T05:07:19.806Z"
 }

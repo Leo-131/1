@@ -54,5 +54,22 @@
       "official supplier email page"
     ],
     "externalVerificationStatus": "official_supplier_email_verified"
+  },
+  {
+    "company": "Obelink",
+    "country": "Netherlands",
+    "url": "https://www.obelink.nl/",
+    "contactUrl": "https://www.obelink.nl/obelink-partnerprogramma",
+    "segment": "European camping and outdoor marketplace retailer",
+    "customerType": "key_account",
+    "fitScore": 93,
+    "background": "European camping specialist whose official partner programme explicitly invites brands with products in camping, outdoor, travel and electrical categories to apply.",
+    "buyerPersona": "Marketplace partner onboarding, category buying or supplier partnerships owner.",
+    "evidenceUrl": "https://www.obelink.nl/obelink-partnerprogramma",
+    "dataSources": [
+      "official company website",
+      "official marketplace partner application form"
+    ],
+    "externalVerificationStatus": "official_supplier_form_verified"
   }
 ]
