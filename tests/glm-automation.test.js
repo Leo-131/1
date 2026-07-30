@@ -414,6 +414,13 @@ test('Google discovery loads auditable external supplier routes without treating
   assert.equal(flameOutdoors.sourceEvidenceUrl, 'https://flameoutdoors.com/pages/authorized-dealer');
 });
 
+test('daily queue preserves official email provenance needed by the Alibaba execution gate', () => {
+  assert.ok(dailyRunnerSource.includes("contactEmail: task.contactEmail || task.publicEmail || ''"));
+  assert.ok(dailyRunnerSource.includes("emailVerificationStatus: task.emailVerificationStatus || ''"));
+  assert.ok(dailyRunnerSource.includes("emailEvidence: task.emailEvidence || ''"));
+  assert.ok(dailyRunnerSource.includes("evidenceUrl: task.evidenceUrl || ''"));
+});
+
 test('Google discovery keeps a refill pool for new prospects after current customers are developed', () => {
   const run = buildDiscoveryRun(160);
   assert.ok(run.candidatePoolCount >= 23);

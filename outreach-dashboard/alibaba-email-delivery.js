@@ -37,7 +37,7 @@ function verifiedBusinessEmailTarget(lead = {}) {
     lead.identitySource,
     lead.emailEvidence,
   ].filter(Boolean).join(' ').toLowerCase();
-  const verified = /official_website_mailto|verified|deliverable|official public|official business|public business email/.test(evidence);
+  const verified = /official_website_mailto|verified|deliverable|official public|official business|public business email|official supplier email|official procurement email|official vendor email/.test(evidence);
   if (!verified) return { ok: false, reason: 'public_business_email_requires_verification', recipient, domain };
   return { ok: true, reason: 'verified_public_business_email', recipient, domain, evidence: clean(evidence).slice(0, 240) };
 }
