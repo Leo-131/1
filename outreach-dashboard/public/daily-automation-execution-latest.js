@@ -1,13 +1,13 @@
 window.DAILY_AUTOMATION_EXECUTION_LATEST = {
   "ok": false,
   "browserTransportRequested": "codex-extension-first",
-  "browserTransportUsed": "cdp",
-  "browserTransportFallbackReason": "extension_bridge_not_available_process_local_cdp",
+  "browserTransportUsed": "none",
+  "browserTransportFallbackReason": "",
   "extensionReceiptCount": 0,
-  "executionPhase": "browser_execution",
-  "chromeStage": "opened",
-  "chromeOpened": true,
-  "chromeOpenedCount": 1,
+  "executionPhase": "no_browser_execution",
+  "chromeStage": "not_started",
+  "chromeOpened": false,
+  "chromeOpenedCount": 0,
   "customerDevelopmentPerformed": false,
   "customerMessageSent": false,
   "realDevelopmentCount": 0,
@@ -18,7 +18,7 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
   "parallelLimit": 1,
   "limit": 13,
   "queueDate": "2026-07-30",
-  "queueSource": "dailyQueue",
+  "queueSource": "dailyPotentialPool",
   "executed": [
     {
       "id": "google-customer-doorout-website-contact",
@@ -29,7 +29,7 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "ok": false,
       "sendStatus": "approval_pending",
       "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;;contact_path_strategy_v2",
-      "timestamp": "2026-07-29T17:02:50.796Z",
+      "timestamp": "2026-07-30T01:17:49.506Z",
       "chromeOpen": null,
       "result": {
         "ok": false,
@@ -37,58 +37,6 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
         "mode": "official_website_social_fallback",
         "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;;contact_path_strategy_v2",
         "output": "{\"verdict\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;;contact_path_strategy_v2\",\"nextAction\":\"Official website exposed facebook; Codex Chrome tried that social channel before website fallback.\",\"sendStatus\":\"approval_pending\"}"
-      }
-    },
-    {
-      "id": "google-customer-ld-mountain-centre-facebook",
-      "company": "LD Mountain Centre",
-      "action": "develop",
-      "platform": "facebook",
-      "targetUrl": "https://www.facebook.com/LDMountainCentre",
-      "ok": false,
-      "sendStatus": "website_contact_unreachable_skip",
-      "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:6;contact_path_strategy_v2",
-      "timestamp": "2026-07-29T17:03:24.387Z",
-      "chromeOpen": {
-        "ok": true,
-        "engine": "codex-chrome-cdp",
-        "port": 9224,
-        "targetUrl": "https://www.ldmountaincentre.com/help/contact-us",
-        "tabId": "BE51854075A93E09F344AB38DB100656",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/BE51854075A93E09F344AB38DB100656",
-        "title": "Are you human?"
-      },
-      "result": {
-        "ok": false,
-        "engine": "dedicated-chrome-cdp-website-contact",
-        "browserEngine": "codex-chrome-cdp",
-        "mode": "website_contact_unreachable_skip",
-        "targetUrl": "https://www.ldmountaincentre.com/help/contact-us",
-        "chromeOpen": {
-          "ok": true,
-          "engine": "codex-chrome-cdp",
-          "port": 9224,
-          "targetUrl": "https://www.ldmountaincentre.com/help/contact-us",
-          "tabId": "BE51854075A93E09F344AB38DB100656",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/BE51854075A93E09F344AB38DB100656",
-          "title": "Are you human?"
-        },
-        "sendStatus": "website_contact_unreachable_skip",
-        "subject": "FLEXTAIL retail partnership | 2026 assortment",
-        "draft": "Dear LD Mountain Centre Team,\n\nI’m Leo from FLEXTAIL. Your focus on verified outdoor, camping and travel retail social refill channel looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
-        "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:6;contact_path_strategy_v2",
-        "output": "{\"verdict\":\"website_contact_unreachable_skip\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:6;contact_path_strategy_v2\",\"nextAction\":\"Contact page opened, but no verified form, mailto link, vendor/business route, or clickable Contact Us path was detected. Continue manually before marking the lead ready.\",\"subject\":\"FLEXTAIL retail partnership | 2026 assortment\",\"draft\":\"Dear LD Mountain Centre Team,\\n\\nI’m Leo from FLEXTAIL. Your focus on verified outdoor, camping and travel retail social refill channel looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\\n\\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\\n\\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\\n\\nProduct overview: https://www.flextail.com/\\n\\nBest regards,\\nLeo Liu\\nSales & Operations Director\\nLeo@flextailgear.com\",\"sendStatus\":\"website_contact_unreachable_skip\",\"attempts\":[{\"targetUrl\":\"https://www.ldmountaincentre.com/\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control\"},{\"targetUrl\":\"https://www.ldmountaincentre.com/pages/contact-us\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control\"},{\"targetUrl\":\"https://www.ldmountaincentre.com/pages/contact\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control\"},{\"targetUrl\":\"https://www.ldmountaincentre.com/contact-us\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control\"},{\"targetUrl\":\"https://www.ldmountaincentre.com/contact\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control\"},{\"targetUrl\":\"https://www.ldmountaincentre.com/help/contact-us\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control\"}],\"fallbackFrom\":\"https://www.facebook.com/LDMountainCentre\",\"fallbackPlatform\":\"email\",\"fallbackReason\":\"personal_profile_without_company_match_expected_LD Mountain Centre_title_Facebook\"}",
-        "fallbackFrom": "https://www.facebook.com/LDMountainCentre",
-        "fallbackPlatform": "email",
-        "decision": {
-          "verdict": "develop",
-          "fitScore": 84,
-          "reason": "local_codex_extension_template",
-          "draft": "Hi LD Mountain Centre team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a retail/category buyer, the strongest fit is assortment fit, new SKU pipeline, price-tier coverage, and proven consumer demand; your verified outdoor, camping and travel retail social refill channel focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the category buyer or vendor-review owner for a short intro video meeting?"
-        },
-        "executionLayer": "Chrome CDP fallback",
-        "glmModel": "not_used",
-        "followup": false
       }
     }
   ],
@@ -102,7 +50,7 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "ok": false,
       "sendStatus": "approval_pending",
       "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;;contact_path_strategy_v2",
-      "timestamp": "2026-07-29T17:02:50.796Z",
+      "timestamp": "2026-07-30T01:17:49.506Z",
       "chromeOpen": null,
       "result": {
         "ok": false,
@@ -111,61 +59,75 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
         "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;;contact_path_strategy_v2",
         "output": "{\"verdict\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;;contact_path_strategy_v2\",\"nextAction\":\"Official website exposed facebook; Codex Chrome tried that social channel before website fallback.\",\"sendStatus\":\"approval_pending\"}"
       }
-    },
-    {
-      "id": "google-customer-ld-mountain-centre-facebook",
-      "company": "LD Mountain Centre",
-      "action": "develop",
-      "platform": "facebook",
-      "targetUrl": "https://www.facebook.com/LDMountainCentre",
-      "ok": false,
-      "sendStatus": "website_contact_unreachable_skip",
-      "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:6;contact_path_strategy_v2",
-      "timestamp": "2026-07-29T17:03:24.387Z",
-      "chromeOpen": {
-        "ok": true,
-        "engine": "codex-chrome-cdp",
-        "port": 9224,
-        "targetUrl": "https://www.ldmountaincentre.com/help/contact-us",
-        "tabId": "BE51854075A93E09F344AB38DB100656",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/BE51854075A93E09F344AB38DB100656",
-        "title": "Are you human?"
-      },
-      "result": {
-        "ok": false,
-        "engine": "dedicated-chrome-cdp-website-contact",
-        "browserEngine": "codex-chrome-cdp",
-        "mode": "website_contact_unreachable_skip",
-        "targetUrl": "https://www.ldmountaincentre.com/help/contact-us",
-        "chromeOpen": {
-          "ok": true,
-          "engine": "codex-chrome-cdp",
-          "port": 9224,
-          "targetUrl": "https://www.ldmountaincentre.com/help/contact-us",
-          "tabId": "BE51854075A93E09F344AB38DB100656",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/BE51854075A93E09F344AB38DB100656",
-          "title": "Are you human?"
-        },
-        "sendStatus": "website_contact_unreachable_skip",
-        "subject": "FLEXTAIL retail partnership | 2026 assortment",
-        "draft": "Dear LD Mountain Centre Team,\n\nI’m Leo from FLEXTAIL. Your focus on verified outdoor, camping and travel retail social refill channel looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
-        "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:6;contact_path_strategy_v2",
-        "output": "{\"verdict\":\"website_contact_unreachable_skip\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:6;contact_path_strategy_v2\",\"nextAction\":\"Contact page opened, but no verified form, mailto link, vendor/business route, or clickable Contact Us path was detected. Continue manually before marking the lead ready.\",\"subject\":\"FLEXTAIL retail partnership | 2026 assortment\",\"draft\":\"Dear LD Mountain Centre Team,\\n\\nI’m Leo from FLEXTAIL. Your focus on verified outdoor, camping and travel retail social refill channel looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\\n\\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\\n\\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\\n\\nProduct overview: https://www.flextail.com/\\n\\nBest regards,\\nLeo Liu\\nSales & Operations Director\\nLeo@flextailgear.com\",\"sendStatus\":\"website_contact_unreachable_skip\",\"attempts\":[{\"targetUrl\":\"https://www.ldmountaincentre.com/\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control\"},{\"targetUrl\":\"https://www.ldmountaincentre.com/pages/contact-us\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control\"},{\"targetUrl\":\"https://www.ldmountaincentre.com/pages/contact\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control\"},{\"targetUrl\":\"https://www.ldmountaincentre.com/contact-us\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control\"},{\"targetUrl\":\"https://www.ldmountaincentre.com/contact\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control\"},{\"targetUrl\":\"https://www.ldmountaincentre.com/help/contact-us\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control\"}],\"fallbackFrom\":\"https://www.facebook.com/LDMountainCentre\",\"fallbackPlatform\":\"email\",\"fallbackReason\":\"personal_profile_without_company_match_expected_LD Mountain Centre_title_Facebook\"}",
-        "fallbackFrom": "https://www.facebook.com/LDMountainCentre",
-        "fallbackPlatform": "email",
-        "decision": {
-          "verdict": "develop",
-          "fitScore": 84,
-          "reason": "local_codex_extension_template",
-          "draft": "Hi LD Mountain Centre team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a retail/category buyer, the strongest fit is assortment fit, new SKU pipeline, price-tier coverage, and proven consumer demand; your verified outdoor, camping and travel retail social refill channel focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the category buyer or vendor-review owner for a short intro video meeting?"
-        },
-        "executionLayer": "Chrome CDP fallback",
-        "glmModel": "not_used",
-        "followup": false
-      }
     }
   ],
   "skipped": [
+    {
+      "id": "google-customer-left-point-distribution-website-contact",
+      "company": "Left Point Distribution",
+      "action": "email_priority",
+      "reason": "official_website_contact_channel"
+    },
+    {
+      "id": "google-customer-obelink-website-contact",
+      "company": "Obelink",
+      "action": "verify_target",
+      "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
+      "id": "google-customer-de-wit-schijndel-website-contact",
+      "company": "De Wit Schijndel",
+      "action": "verify_target",
+      "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
+      "id": "google-customer-outdoor-specialist-website-contact",
+      "company": "Outdoor Specialist",
+      "action": "verify_target",
+      "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
+      "id": "google-customer-outdoorxl-website-contact",
+      "company": "OutdoorXL",
+      "action": "verify_target",
+      "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
+      "id": "google-customer-kampeerwereld-hendriks-website-contact",
+      "company": "Kampeerwereld Hendriks",
+      "action": "verify_target",
+      "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
+      "id": "google-customer-wildfire-sports-website-contact",
+      "company": "Wildfire Sports",
+      "action": "verify_target",
+      "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
+      "id": "google-customer-outdoor-nature-website-contact",
+      "company": "Outdoor Nature",
+      "action": "email_priority",
+      "reason": "official_website_contact_channel"
+    },
+    {
+      "id": "google-customer-tentworld-website-contact",
+      "company": "Tentworld",
+      "action": "verify_target",
+      "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
+      "id": "google-customer-outdoor-specialist-facebook",
+      "company": "Outdoor Specialist",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_facebook"
+    },
+    {
+      "id": "google-customer-outdoor-specialist-instagram",
+      "company": "Outdoor Specialist",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_instagram"
+    },
     {
       "id": "sheet_1779293110195_9myxa520z",
       "company": "ARROW TIRE DISTRIBUTORS",
@@ -215,18 +177,6 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "reason": "official_website_contact_channel"
     },
     {
-      "id": "google-customer-left-point-distribution-website-contact",
-      "company": "Left Point Distribution",
-      "action": "email_priority",
-      "reason": "official_website_contact_channel"
-    },
-    {
-      "id": "google-customer-obelink-website-contact",
-      "company": "Obelink",
-      "action": "verify_target",
-      "reason": "homepage_only_contact_path_requires_verification"
-    },
-    {
       "id": "google-customer-au-vieux-campeur-website-contact",
       "company": "Au Vieux Campeur",
       "action": "verify_target",
@@ -271,12 +221,6 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     {
       "id": "google-customer-barrabes-website-contact",
       "company": "Barrabes",
-      "action": "verify_target",
-      "reason": "homepage_only_contact_path_requires_verification"
-    },
-    {
-      "id": "google-customer-de-wit-schijndel-website-contact",
-      "company": "De Wit Schijndel",
       "action": "verify_target",
       "reason": "homepage_only_contact_path_requires_verification"
     },
@@ -335,18 +279,6 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "reason": "homepage_only_contact_path_requires_verification"
     },
     {
-      "id": "google-customer-outdoor-specialist-website-contact",
-      "company": "Outdoor Specialist",
-      "action": "verify_target",
-      "reason": "homepage_only_contact_path_requires_verification"
-    },
-    {
-      "id": "google-customer-outdoorxl-website-contact",
-      "company": "OutdoorXL",
-      "action": "verify_target",
-      "reason": "homepage_only_contact_path_requires_verification"
-    },
-    {
       "id": "google-customer-spejder-sport-website-contact",
       "company": "Spejder Sport",
       "action": "verify_target",
@@ -367,12 +299,6 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     {
       "id": "google-customer-hardloop-website-contact",
       "company": "Hardloop",
-      "action": "verify_target",
-      "reason": "homepage_only_contact_path_requires_verification"
-    },
-    {
-      "id": "google-customer-kampeerwereld-hendriks-website-contact",
-      "company": "Kampeerwereld Hendriks",
       "action": "verify_target",
       "reason": "homepage_only_contact_path_requires_verification"
     },
@@ -521,24 +447,6 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "reason": "homepage_only_contact_path_requires_verification"
     },
     {
-      "id": "google-customer-wildfire-sports-website-contact",
-      "company": "Wildfire Sports",
-      "action": "verify_target",
-      "reason": "homepage_only_contact_path_requires_verification"
-    },
-    {
-      "id": "google-customer-outdoor-nature-website-contact",
-      "company": "Outdoor Nature",
-      "action": "email_priority",
-      "reason": "official_website_contact_channel"
-    },
-    {
-      "id": "google-customer-tentworld-website-contact",
-      "company": "Tentworld",
-      "action": "verify_target",
-      "reason": "homepage_only_contact_path_requires_verification"
-    },
-    {
       "id": "google-customer-transa-website-contact",
       "company": "Transa",
       "action": "verify_target",
@@ -581,8 +489,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "reason": "concrete_google_discovered_major_customer_facebook"
     },
     {
-      "id": "google-customer-outdoor-specialist-facebook",
-      "company": "Outdoor Specialist",
+      "id": "google-customer-ld-mountain-centre-facebook",
+      "company": "LD Mountain Centre",
       "action": "develop",
       "reason": "concrete_google_discovered_major_customer_facebook"
     },
@@ -673,12 +581,6 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     {
       "id": "google-customer-ld-mountain-centre-instagram",
       "company": "LD Mountain Centre",
-      "action": "develop",
-      "reason": "concrete_google_discovered_major_customer_instagram"
-    },
-    {
-      "id": "google-customer-outdoor-specialist-instagram",
-      "company": "Outdoor Specialist",
       "action": "develop",
       "reason": "concrete_google_discovered_major_customer_instagram"
     },
@@ -1111,6 +1013,12 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     {
       "id": "google-customer-intersport-norway-facebook",
       "company": "Intersport Norway",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_facebook"
+    },
+    {
+      "id": "google-customer-ld-mountain-centre-facebook",
+      "company": "LD Mountain Centre",
       "action": "develop",
       "reason": "concrete_google_discovered_major_customer_facebook"
     },
@@ -1375,7 +1283,7 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     {
       "reason": "concrete_google_discovered_major_customer_facebook",
       "status": "skipped",
-      "count": 32
+      "count": 34
     },
     {
       "reason": "concrete_google_discovered_major_customer_instagram",
@@ -1400,7 +1308,7 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
   ],
   "blockerCounts": {
     "homepage_only_contact_path_requires_verification": 106,
-    "concrete_google_discovered_major_customer_facebook": 32,
+    "concrete_google_discovered_major_customer_facebook": 34,
     "concrete_google_discovered_major_customer_instagram": 26,
     "official_website_contact_channel": 22,
     "missing_verified_profile_url": 9,
@@ -1416,7 +1324,7 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     "action": "Daily high-ICP queue target reached."
   },
   "platformCircuitState": {},
-  "userVisibleStatus": "Customer development was not performed. Blockers: homepage_only_contact_path_requires_verification (106); concrete_google_discovered_major_customer_facebook (32); concrete_google_discovered_major_customer_instagram (26).",
+  "userVisibleStatus": "Customer development was not performed. Blockers: homepage_only_contact_path_requires_verification (106); concrete_google_discovered_major_customer_facebook (34); concrete_google_discovered_major_customer_instagram (26).",
   "recoveryHint": "Add a verified Facebook or Instagram profile URL before retrying social outreach. Confirm the official social profile and safe message entry before rerunning Google-discovered social outreach.",
   "recoveryActions": [
     {
@@ -1438,12 +1346,12 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     "stderr": "",
     "error": "",
     "visibility": {
-      "updatedAt": "2026-07-29T17:03:25.690Z",
+      "updatedAt": "2026-07-30T01:18:01.629Z",
       "source": "main-refreshDailyAutomationArtifacts",
       "runDate": "2026-07-30",
-      "artifactGeneratedAt": "2026-07-29T17:03:24.573Z",
-      "executionGeneratedAt": "2026-07-29T16:10:17.099Z",
-      "githubSyncUpdatedAt": "2026-07-29T16:10:39.721Z",
+      "artifactGeneratedAt": "2026-07-30T01:17:52.115Z",
+      "executionGeneratedAt": "2026-07-29T17:03:26.077Z",
+      "githubSyncUpdatedAt": "2026-07-29T17:04:05.227Z",
       "counts": {
         "dailyQueue": 99,
         "googleDiscovered": 87,
@@ -1505,6 +1413,6 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "ALIBABA_SMTP_SECURITY_PASSWORD"
     ]
   },
-  "ledgerReconciliationCount": 9,
-  "completedAt": "2026-07-29T17:03:26.077Z"
+  "ledgerReconciliationCount": 2,
+  "completedAt": "2026-07-30T01:18:05.897Z"
 };
