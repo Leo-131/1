@@ -29,7 +29,7 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "ok": false,
       "sendStatus": "approval_pending",
       "evidence": "alibaba_webmail_login_required",
-      "timestamp": "2026-07-30T04:01:08.715Z",
+      "timestamp": "2026-07-30T04:02:40.506Z",
       "chromeOpen": null,
       "result": {
         "ok": false,
@@ -53,14 +53,14 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "ok": false,
       "sendStatus": "approval_pending",
       "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;;contact_path_strategy_v2",
-      "timestamp": "2026-07-30T04:01:13.806Z",
+      "timestamp": "2026-07-30T04:02:45.814Z",
       "chromeOpen": {
         "ok": true,
         "engine": "codex-chrome-cdp",
         "port": 9224,
         "targetUrl": "https://www.doorout.com/",
-        "tabId": "211D20A9843FAC703D0ADED1B7DB3647",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/211D20A9843FAC703D0ADED1B7DB3647",
+        "tabId": "33E4C341C59AFD0FECA8E260FDEC47D7",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/33E4C341C59AFD0FECA8E260FDEC47D7",
         "title": ""
       },
       "result": {
@@ -71,8 +71,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
           "engine": "codex-chrome-cdp",
           "port": 9224,
           "targetUrl": "https://www.doorout.com/",
-          "tabId": "211D20A9843FAC703D0ADED1B7DB3647",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/211D20A9843FAC703D0ADED1B7DB3647",
+          "tabId": "33E4C341C59AFD0FECA8E260FDEC47D7",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/33E4C341C59AFD0FECA8E260FDEC47D7",
           "title": ""
         },
         "mode": "official_website_social_fallback",
@@ -91,7 +91,7 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "ok": false,
       "sendStatus": "approval_pending",
       "evidence": "alibaba_webmail_login_required",
-      "timestamp": "2026-07-30T04:01:08.715Z",
+      "timestamp": "2026-07-30T04:02:40.506Z",
       "chromeOpen": null,
       "result": {
         "ok": false,
@@ -115,14 +115,14 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "ok": false,
       "sendStatus": "approval_pending",
       "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;;contact_path_strategy_v2",
-      "timestamp": "2026-07-30T04:01:13.806Z",
+      "timestamp": "2026-07-30T04:02:45.814Z",
       "chromeOpen": {
         "ok": true,
         "engine": "codex-chrome-cdp",
         "port": 9224,
         "targetUrl": "https://www.doorout.com/",
-        "tabId": "211D20A9843FAC703D0ADED1B7DB3647",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/211D20A9843FAC703D0ADED1B7DB3647",
+        "tabId": "33E4C341C59AFD0FECA8E260FDEC47D7",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/33E4C341C59AFD0FECA8E260FDEC47D7",
         "title": ""
       },
       "result": {
@@ -133,8 +133,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
           "engine": "codex-chrome-cdp",
           "port": 9224,
           "targetUrl": "https://www.doorout.com/",
-          "tabId": "211D20A9843FAC703D0ADED1B7DB3647",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/211D20A9843FAC703D0ADED1B7DB3647",
+          "tabId": "33E4C341C59AFD0FECA8E260FDEC47D7",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/33E4C341C59AFD0FECA8E260FDEC47D7",
           "title": ""
         },
         "mode": "official_website_social_fallback",
@@ -1422,12 +1422,12 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     "stderr": "",
     "error": "",
     "visibility": {
-      "updatedAt": "2026-07-30T04:01:15.033Z",
+      "updatedAt": "2026-07-30T04:02:48.023Z",
       "source": "main-refreshDailyAutomationArtifacts",
       "runDate": "2026-07-30",
-      "artifactGeneratedAt": "2026-07-30T04:01:14.054Z",
-      "executionGeneratedAt": "2026-07-30T03:57:25.754Z",
-      "githubSyncUpdatedAt": "2026-07-30T03:58:09.397Z",
+      "artifactGeneratedAt": "2026-07-30T04:02:46.339Z",
+      "executionGeneratedAt": "2026-07-30T04:01:15.482Z",
+      "githubSyncUpdatedAt": "2026-07-30T04:02:47.787Z",
       "counts": {
         "dailyQueue": 99,
         "googleDiscovered": 87,
@@ -1489,6 +1489,6 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "ALIBABA_SMTP_SECURITY_PASSWORD"
     ]
   },
-  "ledgerReconciliationCount": 1,
-  "completedAt": "2026-07-30T04:01:15.482Z"
+  "ledgerReconciliationCount": 2,
+  "completedAt": "2026-07-30T04:02:49.030Z"
 };

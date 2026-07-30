@@ -1,9 +1,10 @@
 window.GITHUB_SYNC_LATEST = {
-  "updatedAt": "2026-07-30T04:01:49.510Z",
-  "ok": true,
-  "pushed": true,
+  "updatedAt": "2026-07-30T04:02:50.677Z",
+  "ok": false,
+  "pushed": false,
   "branch": "vercel-main-sync",
-  "localCommit": "14915e82e99e7e3bedf692fb8954895785f1a1eb",
-  "remoteCommit": "14915e82e99e7e3bedf692fb8954895785f1a1eb",
-  "message": "sync: local outreach data 2026-07-30"
+  "localCommit": "bbda0ddfff242fbb2629e3f8d28275137668f4c1",
+  "remoteCommit": "32212b787d23446afd128c63de1b900ba21491a5",
+  "message": "sync: local outreach data 2026-07-30",
+  "error": "Command failed: git add -- github-sync/latest-status.json github-sync/latest-status.js github-sync/system-visibility-latest.json github-sync/system-visibility-latest.js public/github-sync/latest-status.json public/github-sync/latest-status.js public/system-visibility-latest.json public/system-visibility-latest.js system-visibility-latest.json system-visibility-latest.js\nwarning: in the working copy of 'outreach-dashboard/github-sync/latest-status.js', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'outreach-dashboard/github-sync/latest-status.json', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'outreach-dashboard/github-sync/system-visibility-latest.js', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'outreach-dashboard/github-sync/system-visibility-latest.json', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'outreach-dashboard/public/github-sync/latest-status.js', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'outreach-dashboard/public/github-sync/latest-status.json', LF will be replaced by CRLF the next time Git touches it\nerror: short read while indexing outreach-dashboard/public/system-visibility-latest.js\nerror: outreach-dashboard/public/system-visibility-latest.js: failed to insert into database\nerror: unable to index file 'outreach-dashboard/public/system-visibility-latest.js'\nfatal: updating files failed\n"
 };
