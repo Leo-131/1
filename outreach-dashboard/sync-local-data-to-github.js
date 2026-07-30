@@ -123,7 +123,9 @@ function writeSystemVisibilityArtifact(source) {
 }
 
 function git(args, options = {}) {
-  const output = execFileSync('git', args, {
+  // Avoid an implicit auto-GC turning an otherwise valid bounded sync into a
+  // repository-wide repack. Object-store repair is a separate operator action.
+  const output = execFileSync('git', ['-c', 'gc.auto=0', ...args], {
     cwd: ROOT,
     encoding: 'utf8',
     stdio: options.stdio || 'pipe',

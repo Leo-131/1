@@ -29,14 +29,14 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "ok": false,
       "sendStatus": "approval_pending",
       "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;;contact_path_strategy_v2",
-      "timestamp": "2026-07-30T07:05:49.738Z",
+      "timestamp": "2026-07-30T07:26:24.773Z",
       "chromeOpen": {
         "ok": true,
         "engine": "codex-chrome-cdp",
         "port": 9224,
         "targetUrl": "https://www.doorout.com/",
-        "tabId": "E9DF1C2984D7A3311BC4BF3B8E86FD3E",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/E9DF1C2984D7A3311BC4BF3B8E86FD3E",
+        "tabId": "FCFB577892603A0A937BCA684B66888E",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/FCFB577892603A0A937BCA684B66888E",
         "title": ""
       },
       "result": {
@@ -47,8 +47,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
           "engine": "codex-chrome-cdp",
           "port": 9224,
           "targetUrl": "https://www.doorout.com/",
-          "tabId": "E9DF1C2984D7A3311BC4BF3B8E86FD3E",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/E9DF1C2984D7A3311BC4BF3B8E86FD3E",
+          "tabId": "FCFB577892603A0A937BCA684B66888E",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/FCFB577892603A0A937BCA684B66888E",
           "title": ""
         },
         "mode": "official_website_social_fallback",
@@ -67,14 +67,14 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "ok": false,
       "sendStatus": "approval_pending",
       "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;;contact_path_strategy_v2",
-      "timestamp": "2026-07-30T07:05:49.738Z",
+      "timestamp": "2026-07-30T07:26:24.773Z",
       "chromeOpen": {
         "ok": true,
         "engine": "codex-chrome-cdp",
         "port": 9224,
         "targetUrl": "https://www.doorout.com/",
-        "tabId": "E9DF1C2984D7A3311BC4BF3B8E86FD3E",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/E9DF1C2984D7A3311BC4BF3B8E86FD3E",
+        "tabId": "FCFB577892603A0A937BCA684B66888E",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/FCFB577892603A0A937BCA684B66888E",
         "title": ""
       },
       "result": {
@@ -85,8 +85,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
           "engine": "codex-chrome-cdp",
           "port": 9224,
           "targetUrl": "https://www.doorout.com/",
-          "tabId": "E9DF1C2984D7A3311BC4BF3B8E86FD3E",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/E9DF1C2984D7A3311BC4BF3B8E86FD3E",
+          "tabId": "FCFB577892603A0A937BCA684B66888E",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/FCFB577892603A0A937BCA684B66888E",
           "title": ""
         },
         "mode": "official_website_social_fallback",
@@ -1380,12 +1380,12 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     "stderr": "",
     "error": "",
     "visibility": {
-      "updatedAt": "2026-07-30T07:05:51.119Z",
+      "updatedAt": "2026-07-30T07:26:26.034Z",
       "source": "main-refreshDailyAutomationArtifacts",
       "runDate": "2026-07-30",
-      "artifactGeneratedAt": "2026-07-30T07:05:50.011Z",
-      "executionGeneratedAt": "2026-07-30T06:33:23.925Z",
-      "githubSyncUpdatedAt": "2026-07-30T06:33:57.971Z",
+      "artifactGeneratedAt": "2026-07-30T07:26:25.035Z",
+      "executionGeneratedAt": "2026-07-30T07:05:51.906Z",
+      "githubSyncUpdatedAt": "2026-07-30T07:06:15.036Z",
       "counts": {
         "dailyQueue": 99,
         "googleDiscovered": 86,
@@ -1448,5 +1448,5 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     ]
   },
   "ledgerReconciliationCount": 1,
-  "completedAt": "2026-07-30T07:05:51.906Z"
+  "completedAt": "2026-07-30T07:26:26.591Z"
 };
