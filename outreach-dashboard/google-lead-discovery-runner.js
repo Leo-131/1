@@ -640,7 +640,7 @@ const SOCIAL_REFILL_CANDIDATES = [
   ['Outdoor Action', 'New Zealand', 'https://www.outdooraction.co.nz/', 'https://www.instagram.com/outdooractionnz/', 'https://www.facebook.com/outdooractionnz', 86],
   ['Campz', 'Germany', 'https://www.campz.de/', 'https://www.instagram.com/campz.de/', 'https://www.facebook.com/campz.de', 86],
   ['Sport Conrad', 'Germany', 'https://www.sport-conrad.com/', 'https://www.instagram.com/sportconrad/', 'https://www.facebook.com/SportConrad', 87],
-  ['Doorout', 'Germany', 'https://www.doorout.com/', 'https://www.instagram.com/doorout_com/', 'https://www.facebook.com/doorout', 86],
+  ['Doorout', 'Germany', 'https://www.doorout.com/', 'https://www.instagram.com/doorout_com/', 'https://www.facebook.com/dooroutcom', 86],
   ['Addnature', 'Sweden', 'https://www.addnature.com/', 'https://www.instagram.com/addnature/', 'https://www.facebook.com/addnature', 86],
   ['XXL Sport', 'Norway', 'https://www.xxl.no/', 'https://www.instagram.com/xxlsport/', 'https://www.facebook.com/xxlsport', 88],
   ['Intersport Norway', 'Norway', 'https://www.intersport.no/', 'https://www.instagram.com/intersportnorge/', 'https://www.facebook.com/intersportnorge', 87],
@@ -649,10 +649,13 @@ const SOCIAL_REFILL_CANDIDATES = [
   ['Trekkinn', 'Spain', 'https://www.tradeinn.com/trekkinn/', 'https://www.instagram.com/trekkinn/', 'https://www.facebook.com/trekkinn', 86],
   ['Mammut Store', 'Switzerland', 'https://www.mammut.com/', 'https://www.instagram.com/mammut_swiss1862/', 'https://www.facebook.com/mammut', 87],
   ['4Camping', 'Czech Republic', 'https://www.4camping.cz/', 'https://www.instagram.com/4camping.cz/', 'https://www.facebook.com/4camping.cz', 86],
-  ['8a.pl', 'Poland', 'https://8a.pl/', 'https://www.instagram.com/8a.pl/', 'https://www.facebook.com/8a.pl', 86],
+  ['8a.pl', 'Poland', 'https://8a.pl/', 'https://www.instagram.com/8apl/', 'https://www.facebook.com/sklep8apl', 86],
   ['Sklep Podroznika', 'Poland', 'https://www.sklep-podroznika.pl/', 'https://www.instagram.com/skleppodroznika/', 'https://www.facebook.com/skleppodroznika', 85],
   ['Bever Zwerfsport', 'Netherlands', 'https://www.bever.nl/', 'https://www.instagram.com/bevernl/', 'https://www.facebook.com/BeverNL', 86],
-  ['Outdoor Specialist', 'Netherlands', 'https://www.outdoorspecialist.nl/', 'https://www.instagram.com/outdoorspecialist/', 'https://www.facebook.com/outdoorspecialist', 85],
+  // The consortium is real, but no current first-party source proves ownership
+  // of the legacy /outdoorspecialist social handles. Keep its official website
+  // candidate and fail closed on social until an exact official link is found.
+  ['Outdoor Specialist', 'Netherlands', 'https://www.outdoorspecialist.nl/', '', '', 85],
 ].map(([company, country, url, instagramUrl, facebookUrl, fitScore]) => ({
   company,
   country,
@@ -668,6 +671,12 @@ const SOCIAL_REFILL_CANDIDATES = [
   buyerPersona: 'Outdoor, camping, travel accessories, ecommerce or category buyer.',
   evidenceUrl: SOCIAL_REFILL_SOURCE,
   dataSources: ['official company website', 'public social profile refill'],
+  officialSocialProfileVerified: company === 'Doorout' || company === '8a.pl',
+  socialProfileEvidenceUrl: company === 'Doorout'
+    ? 'https://www.doorout.com/'
+    : (company === '8a.pl'
+      ? 'https://8a.pl/media/pliki/polityka_prywatno%C5%9Bci_FB_8a.pdf'
+      : ''),
 }));
 
 // Source-backed public routing addresses for the current refill batch.

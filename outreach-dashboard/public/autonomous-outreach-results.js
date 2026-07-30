@@ -9005,5 +9005,22 @@ window.AUTONOMOUS_OUTREACH_RESULTS = [
     "messageId": "",
     "sentFolder": "",
     "sentUid": null
+  },
+  {
+    "task_id": "google-customer-8a-pl-website-contact",
+    "company": "8a.pl",
+    "approval_version": 1,
+    "status": "failed_open",
+    "agent": "non-browser-automation",
+    "browserTransportUsed": "none",
+    "timestamp": "2026-07-30T09:49:06.445Z",
+    "target_url": "https://8a.pl/",
+    "evidence": "customer_execution_timeout:90000;queue_continued_to_next_customer",
+    "draft": "",
+    "subject": "",
+    "recipientEmail": "",
+    "messageId": "",
+    "sentFolder": "",
+    "sentUid": null
   }
 ];

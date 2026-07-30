@@ -722,6 +722,19 @@ test('Facebook identity validation rejects personal profiles and requires outgoi
   assert.ok(chromeDriverSource.includes("persisted_after_reload"));
   assert.ok(chromeDriverSource.includes('const allowPublicEngagement = false'));
   assert.equal(isBlockedFacebookTarget(new URL('https://www.facebook.com/doorout')), true);
+  assert.equal(isBlockedFacebookTarget(new URL('https://www.facebook.com/dooroutcom')), false);
+});
+
+test('source-backed social refill targets use exact official handles and quarantine ambiguous legacy URLs', () => {
+  assert.ok(discoverySource.includes("'https://www.facebook.com/dooroutcom'"));
+  assert.ok(discoverySource.includes("'https://www.instagram.com/doorout_com/'"));
+  assert.ok(!discoverySource.includes("'https://www.facebook.com/8a.pl'"));
+  assert.ok(!discoverySource.includes("'https://www.instagram.com/8a.pl/'"));
+  assert.ok(discoverySource.includes("'https://www.facebook.com/sklep8apl'"));
+  assert.ok(discoverySource.includes("'https://www.instagram.com/8apl/'"));
+  assert.match(discoverySource, /\['Outdoor Specialist', 'Netherlands', 'https:\/\/www\.outdoorspecialist\.nl\/', '', '', 85\]/);
+  assert.ok(discoverySource.includes("officialSocialProfileVerified: company === 'Doorout' || company === '8a.pl'"));
+  assert.ok(discoverySource.includes('polityka_prywatno%C5%9Bci_FB_8a.pdf'));
 });
 
 test('identity failures preserve the underlying CDP runtime diagnostic', () => {

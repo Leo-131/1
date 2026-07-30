@@ -7,7 +7,7 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
   "executionPhase": "browser_execution",
   "chromeStage": "opened",
   "chromeOpened": true,
-  "chromeOpenedCount": 3,
+  "chromeOpenedCount": 1,
   "customerDevelopmentPerformed": false,
   "customerMessageSent": false,
   "realDevelopmentCount": 0,
@@ -21,58 +21,43 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
   "queueSource": "dailyQueue",
   "executed": [
     {
+      "id": "google-customer-8a-pl-website-contact",
+      "company": "8a.pl",
+      "action": "verify_target",
+      "platform": "website_form",
+      "targetUrl": "https://8a.pl/",
+      "ok": false,
+      "sendStatus": "failed_open",
+      "evidence": "customer_execution_timeout:90000;queue_continued_to_next_customer",
+      "timestamp": "2026-07-30T09:49:06.584Z",
+      "chromeOpen": null,
+      "result": {
+        "ok": false,
+        "timedOut": true,
+        "sendStatus": "failed_open",
+        "reason": "customer_execution_timeout",
+        "evidence": "customer_execution_timeout:90000;queue_continued_to_next_customer",
+        "chromeOpen": null,
+        "output": "{\"verdict\":\"failed_open\",\"sendStatus\":\"failed_open\",\"evidence\":\"customer_execution_timeout:90000;queue_continued_to_next_customer\",\"nextAction\":\"The customer exceeded its bounded execution window. Its automation tabs were closed and the queue continued without retrying or claiming a send.\",\"company\":\"8a.pl\"}"
+      }
+    },
+    {
       "id": "google-customer-doorout-website-contact",
       "company": "Doorout",
       "action": "verify_target",
       "platform": "website_form",
       "targetUrl": "https://www.doorout.com/",
       "ok": false,
-      "sendStatus": "approval_pending",
-      "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;;contact_path_strategy_v2",
-      "timestamp": "2026-07-30T09:40:46.463Z",
+      "sendStatus": "send_unconfirmed",
+      "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;facebook_send_clicked_but_confirmation_missing;;contact_path_strategy_v2",
+      "timestamp": "2026-07-30T09:49:41.789Z",
       "chromeOpen": {
         "ok": true,
         "engine": "codex-chrome-cdp",
         "port": 9224,
-        "targetUrl": "https://www.doorout.com/",
-        "tabId": "F5E878FB1C4CC4CC8138F8092AEDBE98",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/F5E878FB1C4CC4CC8138F8092AEDBE98",
-        "title": ""
-      },
-      "result": {
-        "ok": false,
-        "error": "Facebook outreach requires an exact verified page/profile URL",
-        "chromeOpen": {
-          "ok": true,
-          "engine": "codex-chrome-cdp",
-          "port": 9224,
-          "targetUrl": "https://www.doorout.com/",
-          "tabId": "F5E878FB1C4CC4CC8138F8092AEDBE98",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/F5E878FB1C4CC4CC8138F8092AEDBE98",
-          "title": ""
-        },
-        "mode": "official_website_social_fallback",
-        "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;;contact_path_strategy_v2",
-        "output": "{\"verdict\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;;contact_path_strategy_v2\",\"nextAction\":\"Official website exposed facebook; Codex Chrome tried that social channel before website fallback.\",\"sendStatus\":\"approval_pending\"}"
-      }
-    },
-    {
-      "id": "google-customer-8a-pl-facebook",
-      "company": "8a.pl",
-      "action": "develop",
-      "platform": "facebook",
-      "targetUrl": "https://www.facebook.com/8a.pl",
-      "ok": false,
-      "sendStatus": "failed_open",
-      "evidence": "identity_mismatch_expected_8a.pl_title_Facebook",
-      "timestamp": "2026-07-30T09:40:56.870Z",
-      "chromeOpen": {
-        "ok": true,
-        "engine": "codex-chrome-cdp",
-        "port": 9224,
-        "targetUrl": "https://www.facebook.com/8a.pl",
-        "tabId": "4137B3640EAC33B713C4B83C4C618010",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/4137B3640EAC33B713C4B83C4C618010",
+        "targetUrl": "https://www.facebook.com/dooroutcom",
+        "tabId": "C1010E3BFE1D02573DE483FAA495F3AB",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/C1010E3BFE1D02573DE483FAA495F3AB",
         "title": "Facebook"
       },
       "result": {
@@ -80,131 +65,70 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
         "engine": "codex-chrome-cdp",
         "browserEngine": "codex-chrome-cdp",
         "mode": "codex_chrome_cdp",
-        "targetUrl": "https://www.facebook.com/8a.pl",
+        "targetUrl": "https://www.facebook.com/dooroutcom",
         "chromeOpen": {
           "ok": true,
           "engine": "codex-chrome-cdp",
           "port": 9224,
-          "targetUrl": "https://www.facebook.com/8a.pl",
-          "tabId": "4137B3640EAC33B713C4B83C4C618010",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/4137B3640EAC33B713C4B83C4C618010",
+          "targetUrl": "https://www.facebook.com/dooroutcom",
+          "tabId": "C1010E3BFE1D02573DE483FAA495F3AB",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/C1010E3BFE1D02573DE483FAA495F3AB",
           "title": "Facebook"
         },
-        "sendStatus": "failed_open",
-        "output": "{\"verdict\":\"major_bug_review_needed\",\"evidence\":\"identity_mismatch_expected_8a.pl_title_Facebook\",\"nextAction\":\"Wrong or unmatched account opened; record as major bug and move to next verified customer.\",\"draft\":\"Hi 8a.pl team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a retail/category buyer, the strongest fit is assortment fit, new SKU pipeline, price-tier coverage, and proven consumer demand; your verified outdoor, camping and travel retail social refill channel focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the category buyer or vendor-review owner for a short intro video meeting?\",\"sendStatus\":\"failed_open\"}",
+        "sendStatus": "send_unconfirmed",
+        "output": "{\"verdict\":\"major_bug_review_needed\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;facebook_send_clicked_but_confirmation_missing;;contact_path_strategy_v2\",\"nextAction\":\"Send confirmation missing; pause and notify operator before any retry to avoid duplicate sending.\",\"draft\":\"Hi Doorout team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a retail/category buyer, the strongest fit is assortment fit, new SKU pipeline, price-tier coverage, and proven consumer demand; your verified outdoor, camping and travel retail social refill channel focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the category buyer or vendor-review owner for a short intro video meeting?\",\"sendStatus\":\"send_unconfirmed\"}",
         "decision": {
           "verdict": "develop",
           "fitScore": 84,
           "reason": "local_codex_extension_template",
-          "draft": "Hi 8a.pl team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a retail/category buyer, the strongest fit is assortment fit, new SKU pipeline, price-tier coverage, and proven consumer demand; your verified outdoor, camping and travel retail social refill channel focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the category buyer or vendor-review owner for a short intro video meeting?"
+          "draft": "Hi Doorout team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a retail/category buyer, the strongest fit is assortment fit, new SKU pipeline, price-tier coverage, and proven consumer demand; your verified outdoor, camping and travel retail social refill channel focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the category buyer or vendor-review owner for a short intro video meeting?"
         },
         "executionLayer": "Chrome CDP fallback",
         "glmModel": "not_used",
-        "followup": false
-      }
-    },
-    {
-      "id": "google-customer-outdoor-specialist-facebook",
-      "company": "Outdoor Specialist",
-      "action": "develop",
-      "platform": "facebook",
-      "targetUrl": "https://www.facebook.com/outdoorspecialist",
-      "ok": false,
-      "sendStatus": "failed_open",
-      "evidence": "personal_profile_without_company_match_expected_Outdoor Specialist_title_Facebook",
-      "timestamp": "2026-07-30T09:41:03.220Z",
-      "chromeOpen": {
-        "ok": true,
-        "engine": "codex-chrome-cdp",
-        "port": 9224,
-        "targetUrl": "https://www.facebook.com/outdoorspecialist",
-        "tabId": "9F72945566F89DF2FE90ACF4C867DDAD",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/9F72945566F89DF2FE90ACF4C867DDAD",
-        "title": "Facebook"
-      },
-      "result": {
-        "ok": false,
-        "engine": "codex-chrome-cdp",
-        "browserEngine": "codex-chrome-cdp",
-        "mode": "codex_chrome_cdp",
-        "targetUrl": "https://www.facebook.com/outdoorspecialist",
-        "chromeOpen": {
-          "ok": true,
-          "engine": "codex-chrome-cdp",
-          "port": 9224,
-          "targetUrl": "https://www.facebook.com/outdoorspecialist",
-          "tabId": "9F72945566F89DF2FE90ACF4C867DDAD",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/9F72945566F89DF2FE90ACF4C867DDAD",
-          "title": "Facebook"
-        },
-        "sendStatus": "failed_open",
-        "output": "{\"verdict\":\"major_bug_review_needed\",\"evidence\":\"personal_profile_without_company_match_expected_Outdoor Specialist_title_Facebook\",\"nextAction\":\"Wrong or unmatched account opened; record as major bug and move to next verified customer.\",\"draft\":\"Hi Outdoor Specialist team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a retail/category buyer, the strongest fit is assortment fit, new SKU pipeline, price-tier coverage, and proven consumer demand; your verified outdoor, camping and travel retail social refill channel focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the category buyer or vendor-review owner for a short intro video meeting?\",\"sendStatus\":\"failed_open\"}",
-        "decision": {
-          "verdict": "develop",
-          "fitScore": 84,
-          "reason": "local_codex_extension_template",
-          "draft": "Hi Outdoor Specialist team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a retail/category buyer, the strongest fit is assortment fit, new SKU pipeline, price-tier coverage, and proven consumer demand; your verified outdoor, camping and travel retail social refill channel focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the category buyer or vendor-review owner for a short intro video meeting?"
-        },
-        "executionLayer": "Chrome CDP fallback",
-        "glmModel": "not_used",
-        "followup": false
+        "followup": false,
+        "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;facebook_send_clicked_but_confirmation_missing;;contact_path_strategy_v2"
       }
     }
   ],
   "results": [
     {
+      "id": "google-customer-8a-pl-website-contact",
+      "company": "8a.pl",
+      "action": "verify_target",
+      "platform": "website_form",
+      "targetUrl": "https://8a.pl/",
+      "ok": false,
+      "sendStatus": "failed_open",
+      "evidence": "customer_execution_timeout:90000;queue_continued_to_next_customer",
+      "timestamp": "2026-07-30T09:49:06.584Z",
+      "chromeOpen": null,
+      "result": {
+        "ok": false,
+        "timedOut": true,
+        "sendStatus": "failed_open",
+        "reason": "customer_execution_timeout",
+        "evidence": "customer_execution_timeout:90000;queue_continued_to_next_customer",
+        "chromeOpen": null,
+        "output": "{\"verdict\":\"failed_open\",\"sendStatus\":\"failed_open\",\"evidence\":\"customer_execution_timeout:90000;queue_continued_to_next_customer\",\"nextAction\":\"The customer exceeded its bounded execution window. Its automation tabs were closed and the queue continued without retrying or claiming a send.\",\"company\":\"8a.pl\"}"
+      }
+    },
+    {
       "id": "google-customer-doorout-website-contact",
       "company": "Doorout",
       "action": "verify_target",
       "platform": "website_form",
       "targetUrl": "https://www.doorout.com/",
       "ok": false,
-      "sendStatus": "approval_pending",
-      "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;;contact_path_strategy_v2",
-      "timestamp": "2026-07-30T09:40:46.463Z",
+      "sendStatus": "send_unconfirmed",
+      "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;facebook_send_clicked_but_confirmation_missing;;contact_path_strategy_v2",
+      "timestamp": "2026-07-30T09:49:41.789Z",
       "chromeOpen": {
         "ok": true,
         "engine": "codex-chrome-cdp",
         "port": 9224,
-        "targetUrl": "https://www.doorout.com/",
-        "tabId": "F5E878FB1C4CC4CC8138F8092AEDBE98",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/F5E878FB1C4CC4CC8138F8092AEDBE98",
-        "title": ""
-      },
-      "result": {
-        "ok": false,
-        "error": "Facebook outreach requires an exact verified page/profile URL",
-        "chromeOpen": {
-          "ok": true,
-          "engine": "codex-chrome-cdp",
-          "port": 9224,
-          "targetUrl": "https://www.doorout.com/",
-          "tabId": "F5E878FB1C4CC4CC8138F8092AEDBE98",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/F5E878FB1C4CC4CC8138F8092AEDBE98",
-          "title": ""
-        },
-        "mode": "official_website_social_fallback",
-        "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;;contact_path_strategy_v2",
-        "output": "{\"verdict\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;;contact_path_strategy_v2\",\"nextAction\":\"Official website exposed facebook; Codex Chrome tried that social channel before website fallback.\",\"sendStatus\":\"approval_pending\"}"
-      }
-    },
-    {
-      "id": "google-customer-8a-pl-facebook",
-      "company": "8a.pl",
-      "action": "develop",
-      "platform": "facebook",
-      "targetUrl": "https://www.facebook.com/8a.pl",
-      "ok": false,
-      "sendStatus": "failed_open",
-      "evidence": "identity_mismatch_expected_8a.pl_title_Facebook",
-      "timestamp": "2026-07-30T09:40:56.870Z",
-      "chromeOpen": {
-        "ok": true,
-        "engine": "codex-chrome-cdp",
-        "port": 9224,
-        "targetUrl": "https://www.facebook.com/8a.pl",
-        "tabId": "4137B3640EAC33B713C4B83C4C618010",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/4137B3640EAC33B713C4B83C4C618010",
+        "targetUrl": "https://www.facebook.com/dooroutcom",
+        "tabId": "C1010E3BFE1D02573DE483FAA495F3AB",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/C1010E3BFE1D02573DE483FAA495F3AB",
         "title": "Facebook"
       },
       "result": {
@@ -212,78 +136,38 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
         "engine": "codex-chrome-cdp",
         "browserEngine": "codex-chrome-cdp",
         "mode": "codex_chrome_cdp",
-        "targetUrl": "https://www.facebook.com/8a.pl",
+        "targetUrl": "https://www.facebook.com/dooroutcom",
         "chromeOpen": {
           "ok": true,
           "engine": "codex-chrome-cdp",
           "port": 9224,
-          "targetUrl": "https://www.facebook.com/8a.pl",
-          "tabId": "4137B3640EAC33B713C4B83C4C618010",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/4137B3640EAC33B713C4B83C4C618010",
+          "targetUrl": "https://www.facebook.com/dooroutcom",
+          "tabId": "C1010E3BFE1D02573DE483FAA495F3AB",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/C1010E3BFE1D02573DE483FAA495F3AB",
           "title": "Facebook"
         },
-        "sendStatus": "failed_open",
-        "output": "{\"verdict\":\"major_bug_review_needed\",\"evidence\":\"identity_mismatch_expected_8a.pl_title_Facebook\",\"nextAction\":\"Wrong or unmatched account opened; record as major bug and move to next verified customer.\",\"draft\":\"Hi 8a.pl team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a retail/category buyer, the strongest fit is assortment fit, new SKU pipeline, price-tier coverage, and proven consumer demand; your verified outdoor, camping and travel retail social refill channel focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the category buyer or vendor-review owner for a short intro video meeting?\",\"sendStatus\":\"failed_open\"}",
+        "sendStatus": "send_unconfirmed",
+        "output": "{\"verdict\":\"major_bug_review_needed\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;facebook_send_clicked_but_confirmation_missing;;contact_path_strategy_v2\",\"nextAction\":\"Send confirmation missing; pause and notify operator before any retry to avoid duplicate sending.\",\"draft\":\"Hi Doorout team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a retail/category buyer, the strongest fit is assortment fit, new SKU pipeline, price-tier coverage, and proven consumer demand; your verified outdoor, camping and travel retail social refill channel focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the category buyer or vendor-review owner for a short intro video meeting?\",\"sendStatus\":\"send_unconfirmed\"}",
         "decision": {
           "verdict": "develop",
           "fitScore": 84,
           "reason": "local_codex_extension_template",
-          "draft": "Hi 8a.pl team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a retail/category buyer, the strongest fit is assortment fit, new SKU pipeline, price-tier coverage, and proven consumer demand; your verified outdoor, camping and travel retail social refill channel focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the category buyer or vendor-review owner for a short intro video meeting?"
+          "draft": "Hi Doorout team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a retail/category buyer, the strongest fit is assortment fit, new SKU pipeline, price-tier coverage, and proven consumer demand; your verified outdoor, camping and travel retail social refill channel focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the category buyer or vendor-review owner for a short intro video meeting?"
         },
         "executionLayer": "Chrome CDP fallback",
         "glmModel": "not_used",
-        "followup": false
-      }
-    },
-    {
-      "id": "google-customer-outdoor-specialist-facebook",
-      "company": "Outdoor Specialist",
-      "action": "develop",
-      "platform": "facebook",
-      "targetUrl": "https://www.facebook.com/outdoorspecialist",
-      "ok": false,
-      "sendStatus": "failed_open",
-      "evidence": "personal_profile_without_company_match_expected_Outdoor Specialist_title_Facebook",
-      "timestamp": "2026-07-30T09:41:03.220Z",
-      "chromeOpen": {
-        "ok": true,
-        "engine": "codex-chrome-cdp",
-        "port": 9224,
-        "targetUrl": "https://www.facebook.com/outdoorspecialist",
-        "tabId": "9F72945566F89DF2FE90ACF4C867DDAD",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/9F72945566F89DF2FE90ACF4C867DDAD",
-        "title": "Facebook"
-      },
-      "result": {
-        "ok": false,
-        "engine": "codex-chrome-cdp",
-        "browserEngine": "codex-chrome-cdp",
-        "mode": "codex_chrome_cdp",
-        "targetUrl": "https://www.facebook.com/outdoorspecialist",
-        "chromeOpen": {
-          "ok": true,
-          "engine": "codex-chrome-cdp",
-          "port": 9224,
-          "targetUrl": "https://www.facebook.com/outdoorspecialist",
-          "tabId": "9F72945566F89DF2FE90ACF4C867DDAD",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/9F72945566F89DF2FE90ACF4C867DDAD",
-          "title": "Facebook"
-        },
-        "sendStatus": "failed_open",
-        "output": "{\"verdict\":\"major_bug_review_needed\",\"evidence\":\"personal_profile_without_company_match_expected_Outdoor Specialist_title_Facebook\",\"nextAction\":\"Wrong or unmatched account opened; record as major bug and move to next verified customer.\",\"draft\":\"Hi Outdoor Specialist team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a retail/category buyer, the strongest fit is assortment fit, new SKU pipeline, price-tier coverage, and proven consumer demand; your verified outdoor, camping and travel retail social refill channel focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the category buyer or vendor-review owner for a short intro video meeting?\",\"sendStatus\":\"failed_open\"}",
-        "decision": {
-          "verdict": "develop",
-          "fitScore": 84,
-          "reason": "local_codex_extension_template",
-          "draft": "Hi Outdoor Specialist team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a retail/category buyer, the strongest fit is assortment fit, new SKU pipeline, price-tier coverage, and proven consumer demand; your verified outdoor, camping and travel retail social refill channel focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the category buyer or vendor-review owner for a short intro video meeting?"
-        },
-        "executionLayer": "Chrome CDP fallback",
-        "glmModel": "not_used",
-        "followup": false
+        "followup": false,
+        "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;facebook_send_clicked_but_confirmation_missing;;contact_path_strategy_v2"
       }
     }
   ],
   "skipped": [
+    {
+      "id": "google-customer-8a-pl-facebook",
+      "company": "8a.pl",
+      "action": "develop",
+      "reason": "same_day_customer_already_developed"
+    },
     {
       "id": "google-customer-doorout-instagram",
       "company": "Doorout",
@@ -489,12 +373,6 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "reason": "homepage_only_contact_path_requires_verification"
     },
     {
-      "id": "google-customer-8a-pl-website-contact",
-      "company": "8a.pl",
-      "action": "verify_target",
-      "reason": "homepage_only_contact_path_requires_verification"
-    },
-    {
       "id": "google-customer-campz-website-contact",
       "company": "Campz",
       "action": "verify_target",
@@ -509,12 +387,6 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     {
       "id": "google-customer-intersport-norway-website-contact",
       "company": "Intersport Norway",
-      "action": "verify_target",
-      "reason": "homepage_only_contact_path_requires_verification"
-    },
-    {
-      "id": "google-customer-outdoor-specialist-website-contact",
-      "company": "Outdoor Specialist",
       "action": "verify_target",
       "reason": "homepage_only_contact_path_requires_verification"
     },
@@ -551,6 +423,12 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     {
       "id": "google-customer-rock-creek-website-contact",
       "company": "Rock/Creek",
+      "action": "verify_target",
+      "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
+      "id": "google-customer-outdoor-specialist-website-contact",
+      "company": "Outdoor Specialist",
       "action": "verify_target",
       "reason": "homepage_only_contact_path_requires_verification"
     },
@@ -789,12 +667,6 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "reason": "concrete_google_discovered_major_customer_instagram"
     },
     {
-      "id": "google-customer-outdoor-specialist-instagram",
-      "company": "Outdoor Specialist",
-      "action": "develop",
-      "reason": "concrete_google_discovered_major_customer_instagram"
-    },
-    {
       "id": "google-customer-rock-creek-instagram",
       "company": "Rock/Creek",
       "action": "develop",
@@ -857,6 +729,18 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     {
       "id": 6,
       "company": "L.L.Bean",
+      "action": "verify_target",
+      "reason": "missing_verified_profile_url"
+    },
+    {
+      "id": 17,
+      "company": "Target",
+      "action": "verify_target",
+      "reason": "missing_verified_profile_url"
+    },
+    {
+      "id": 22,
+      "company": "Thor Industries",
       "action": "verify_target",
       "reason": "missing_verified_profile_url"
     },
@@ -945,12 +829,6 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "reason": "homepage_only_contact_path_requires_verification"
     },
     {
-      "id": "google-customer-8a-pl-website-contact",
-      "company": "8a.pl",
-      "action": "verify_target",
-      "reason": "homepage_only_contact_path_requires_verification"
-    },
-    {
       "id": "google-customer-above-and-beyond-website-contact",
       "company": "Above and Beyond",
       "action": "verify_target",
@@ -971,12 +849,6 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     {
       "id": "google-customer-ld-mountain-centre-website-contact",
       "company": "LD Mountain Centre",
-      "action": "verify_target",
-      "reason": "homepage_only_contact_path_requires_verification"
-    },
-    {
-      "id": "google-customer-outdoor-specialist-website-contact",
-      "company": "Outdoor Specialist",
       "action": "verify_target",
       "reason": "homepage_only_contact_path_requires_verification"
     },
@@ -1037,6 +909,12 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     {
       "id": "google-customer-rock-creek-website-contact",
       "company": "Rock/Creek",
+      "action": "verify_target",
+      "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
+      "id": "google-customer-outdoor-specialist-website-contact",
+      "company": "Outdoor Specialist",
       "action": "verify_target",
       "reason": "homepage_only_contact_path_requires_verification"
     },
@@ -1305,12 +1183,6 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "reason": "concrete_google_discovered_major_customer_instagram"
     },
     {
-      "id": "google-customer-outdoor-specialist-instagram",
-      "company": "Outdoor Specialist",
-      "action": "develop",
-      "reason": "concrete_google_discovered_major_customer_instagram"
-    },
-    {
       "id": "google-customer-tiso-instagram",
       "company": "Tiso",
       "action": "develop",
@@ -1435,28 +1307,40 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "company": "Target",
       "action": "verify_target",
       "reason": "missing_verified_profile_url"
+    },
+    {
+      "id": 22,
+      "company": "Thor Industries",
+      "action": "verify_target",
+      "reason": "missing_verified_profile_url"
+    },
+    {
+      "id": 13,
+      "company": "Walgreens",
+      "action": "verify_target",
+      "reason": "missing_verified_profile_url"
     }
   ],
   "summary": {
     "totalLeads": 16,
     "highIcp": 16,
-    "readyToDevelop": 30,
+    "readyToDevelop": 28,
     "dueNow": 99,
     "visibleTodayQueue": 42,
     "potentialPool": 100,
     "potentialPoolTarget": 100,
-    "customerTableHighIcp": 14,
+    "customerTableHighIcp": 16,
     "refillNeeded": 0,
-    "executableCompanies": 20,
+    "executableCompanies": 19,
     "executableReserveTarget": 130,
-    "executableReserveNeeded": 110,
+    "executableReserveNeeded": 111,
     "executableByChannel": {
       "website_form": 3,
-      "facebook": 17,
-      "instagram": 13
+      "facebook": 16,
+      "instagram": 12
     },
-    "googleDiscovered": 86,
-    "facebookDiscovered": 17,
+    "googleDiscovered": 84,
+    "facebookDiscovered": 16,
     "websiteContactDiscovered": 0,
     "scheduledLater": 0,
     "cooldown": 30,
@@ -1470,7 +1354,7 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     {
       "reason": "homepage_only_contact_path_requires_verification",
       "status": "skipped",
-      "count": 104
+      "count": 102
     },
     {
       "reason": "concrete_google_discovered_major_customer_facebook",
@@ -1480,7 +1364,7 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     {
       "reason": "concrete_google_discovered_major_customer_instagram",
       "status": "skipped",
-      "count": 24
+      "count": 22
     },
     {
       "reason": "official_website_contact_channel",
@@ -1490,46 +1374,46 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     {
       "reason": "missing_verified_profile_url",
       "status": "skipped",
-      "count": 11
-    },
-    {
-      "reason": "failed_open",
-      "status": "failed_open",
-      "count": 2
-    },
-    {
-      "reason": "approval_pending",
-      "status": "approval_pending",
-      "count": 1
+      "count": 15
     },
     {
       "reason": "same_day_customer_already_developed",
       "status": "skipped",
+      "count": 2
+    },
+    {
+      "reason": "customer_execution_timeout",
+      "status": "failed_open",
+      "count": 1
+    },
+    {
+      "reason": "send_unconfirmed",
+      "status": "send_unconfirmed",
       "count": 1
     }
   ],
   "blockerCounts": {
-    "homepage_only_contact_path_requires_verification": 104,
+    "homepage_only_contact_path_requires_verification": 102,
     "concrete_google_discovered_major_customer_facebook": 30,
-    "concrete_google_discovered_major_customer_instagram": 24,
+    "concrete_google_discovered_major_customer_instagram": 22,
     "official_website_contact_channel": 22,
-    "missing_verified_profile_url": 11,
-    "failed_open": 2,
-    "approval_pending": 1,
-    "same_day_customer_already_developed": 1
+    "missing_verified_profile_url": 15,
+    "same_day_customer_already_developed": 2,
+    "customer_execution_timeout": 1,
+    "send_unconfirmed": 1
   },
   "queueGoalStatus": {
     "target": 100,
     "potentialPool": 100,
     "queueCount": 99,
-    "googleDiscovered": 86,
+    "googleDiscovered": 84,
     "refillNeeded": 0,
     "reached": true,
     "action": "Daily high-ICP queue target reached."
   },
   "platformCircuitState": {},
-  "userVisibleStatus": "Customer development was not performed. Blockers: homepage_only_contact_path_requires_verification (104); concrete_google_discovered_major_customer_facebook (30); concrete_google_discovered_major_customer_instagram (24).",
-  "recoveryHint": "Add a verified Facebook or Instagram profile URL before retrying social outreach. Confirm the official social profile and safe message entry before rerunning Google-discovered social outreach. Verify the official profile opens and exposes a safe message composer, or switch to another verified channel.",
+  "userVisibleStatus": "Customer development was not performed. Blockers: homepage_only_contact_path_requires_verification (102); concrete_google_discovered_major_customer_facebook (30); concrete_google_discovered_major_customer_instagram (22).",
+  "recoveryHint": "Add a verified Facebook or Instagram profile URL before retrying social outreach. Confirm the official social profile and safe message entry before rerunning Google-discovered social outreach.",
   "recoveryActions": [
     {
       "reason": "missing_verified_profile_url",
@@ -1542,29 +1426,23 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "action": "Complete Google social channel verification",
       "description": "Confirm the official social profile and safe message entry before rerunning Google-discovered social outreach.",
       "hint": "Confirm the official social profile and safe message entry before rerunning Google-discovered social outreach."
-    },
-    {
-      "reason": "failed_open",
-      "action": "Verify profile accessibility",
-      "description": "Open the official profile manually or switch to another verified channel before retrying.",
-      "hint": "Verify the official profile opens and exposes a safe message composer, or switch to another verified channel."
     }
   ],
   "systemRefresh": {
     "ok": true,
-    "stdout": "{\n  \"date\": \"2026-07-30\",\n  \"summary\": {\n    \"totalLeads\": 16,\n    \"highIcp\": 16,\n    \"readyToDevelop\": 30,\n    \"dueNow\": 99,\n    \"visibleTodayQueue\": 42,\n    \"potentialPool\": 100,\n    \"potentialPoolTarget\": 100,\n    \"customerTableHighIcp\": 14,\n    \"refillNeeded\": 0,\n    \"executableCompanies\": 20,\n    \"executableReserveTarget\": 130,\n    \"executableReserveNeeded\": 110,\n    \"executableByChannel\": {\n      \"website_form\": 3,\n      \"facebook\": 17,\n      \"instagram\": 13\n    },\n    \"googleDiscovered\": 86,\n    \"facebookDiscovered\": 17,\n    \"websiteContactDiscovered\": 0,\n    \"scheduledLater\": 0,\n    \"cooldown\": 30,\n    \"emailPriority\": 0,\n    \"openAgencyMarket\": 15,\n    \"exclusiveAgencySkipped\": 1,\n    \"needsVerification\": 0,\n    \"retainedLowIcp\": 0\n  },\n  \"bugErrors\": 0,\n  \"queueFile\": \"E:\\\\New project\\\\outreach-dashboard\\\\daily-runs\\\\2026-07-30-daily-automation.json\",\n  \"csvFile\": \"E:\\\\New project\\\\outreach-dashboard\\\\daily-runs\\\\2026-07-30-daily-queue.csv\"\n}",
+    "stdout": "{\n  \"date\": \"2026-07-30\",\n  \"summary\": {\n    \"totalLeads\": 16,\n    \"highIcp\": 16,\n    \"readyToDevelop\": 28,\n    \"dueNow\": 99,\n    \"visibleTodayQueue\": 42,\n    \"potentialPool\": 100,\n    \"potentialPoolTarget\": 100,\n    \"customerTableHighIcp\": 16,\n    \"refillNeeded\": 0,\n    \"executableCompanies\": 19,\n    \"executableReserveTarget\": 130,\n    \"executableReserveNeeded\": 111,\n    \"executableByChannel\": {\n      \"website_form\": 3,\n      \"facebook\": 16,\n      \"instagram\": 12\n    },\n    \"googleDiscovered\": 84,\n    \"facebookDiscovered\": 16,\n    \"websiteContactDiscovered\": 0,\n    \"scheduledLater\": 0,\n    \"cooldown\": 30,\n    \"emailPriority\": 0,\n    \"openAgencyMarket\": 15,\n    \"exclusiveAgencySkipped\": 1,\n    \"needsVerification\": 0,\n    \"retainedLowIcp\": 0\n  },\n  \"bugErrors\": 0,\n  \"queueFile\": \"E:\\\\New project\\\\outreach-dashboard\\\\daily-runs\\\\2026-07-30-daily-automation.json\",\n  \"csvFile\": \"E:\\\\New project\\\\outreach-dashboard\\\\daily-runs\\\\2026-07-30-daily-queue.csv\"\n}",
     "stderr": "",
     "error": "",
     "visibility": {
-      "updatedAt": "2026-07-30T09:41:05.272Z",
+      "updatedAt": "2026-07-30T09:49:43.674Z",
       "source": "main-refreshDailyAutomationArtifacts",
       "runDate": "2026-07-30",
-      "artifactGeneratedAt": "2026-07-30T09:41:03.603Z",
-      "executionGeneratedAt": "2026-07-30T09:03:52.175Z",
-      "githubSyncUpdatedAt": "2026-07-30T08:48:52.107Z",
+      "artifactGeneratedAt": "2026-07-30T09:49:42.161Z",
+      "executionGeneratedAt": "2026-07-30T09:41:05.979Z",
+      "githubSyncUpdatedAt": "2026-07-30T09:42:03.934Z",
       "counts": {
         "dailyQueue": 99,
-        "googleDiscovered": 86,
+        "googleDiscovered": 84,
         "websiteContact": 56,
         "cooldownQueue": 30,
         "scheduledLater": 0
@@ -1624,5 +1502,5 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     ]
   },
   "ledgerReconciliationCount": 3,
-  "completedAt": "2026-07-30T09:41:05.979Z"
+  "completedAt": "2026-07-30T09:49:44.407Z"
 };
