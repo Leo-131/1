@@ -27,21 +27,27 @@
       "platform": "website_form",
       "targetUrl": "https://flameoutdoors.com/pages/authorized-dealer",
       "ok": false,
-      "sendStatus": "approval_pending",
-      "evidence": "alibaba_webmail_login_required",
-      "timestamp": "2026-07-30T04:05:42.649Z",
+      "sendStatus": "send_unconfirmed",
+      "evidence": "official_public_business_email;alibaba_webmail_session_reused;alibaba_webmail_send_clicked;alibaba_mail_send_confirmation_waiting;sent_folder_record_missing",
+      "timestamp": "2026-07-30T04:32:00.279Z",
       "chromeOpen": null,
       "result": {
         "ok": false,
-        "sendStatus": "approval_pending",
-        "reason": "alibaba_webmail_compose_unavailable",
-        "evidence": "alibaba_webmail_login_required",
-        "engine": "alibaba-enterprise-mail-smtp-imap",
-        "mode": "alibaba_email_delivery_unconfirmed",
+        "sendStatus": "send_unconfirmed",
+        "reason": "sent_folder_confirmation_missing",
+        "evidence": "official_public_business_email;alibaba_webmail_session_reused;alibaba_webmail_send_clicked;alibaba_mail_send_confirmation_waiting;sent_folder_record_missing",
+        "recipientEmail": "sales@flameoutdoors.com",
         "targetUrl": "mailto:sales@flameoutdoors.com",
         "subject": "FLEXTAIL retail partnership | 2026 assortment",
         "draft": "Dear FlameOutdoors Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
-        "output": "{\"verdict\":\"approval_pending\",\"sendStatus\":\"approval_pending\",\"evidence\":\"alibaba_webmail_login_required\",\"nextAction\":\"Do not resend automatically; inspect the Alibaba Mail delivery and Sent-folder evidence.\",\"recipientEmail\":\"sales@flameoutdoors.com\",\"messageId\":\"\"}"
+        "engine": "alibaba-enterprise-mail-web-session",
+        "mode": "alibaba_webmail_delivery_unconfirmed",
+        "contentValidation": {
+          "ok": true,
+          "errors": [],
+          "words": 108
+        },
+        "output": "{\"verdict\":\"send_unconfirmed\",\"sendStatus\":\"send_unconfirmed\",\"evidence\":\"official_public_business_email;alibaba_webmail_session_reused;alibaba_webmail_send_clicked;alibaba_mail_send_confirmation_waiting;sent_folder_record_missing\",\"nextAction\":\"Do not resend automatically; inspect the Alibaba Mail delivery and Sent-folder evidence.\",\"recipientEmail\":\"sales@flameoutdoors.com\",\"messageId\":\"\"}"
       }
     },
     {
@@ -53,14 +59,14 @@
       "ok": false,
       "sendStatus": "approval_pending",
       "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;;contact_path_strategy_v2",
-      "timestamp": "2026-07-30T04:05:48.264Z",
+      "timestamp": "2026-07-30T04:32:05.239Z",
       "chromeOpen": {
         "ok": true,
         "engine": "codex-chrome-cdp",
         "port": 9224,
         "targetUrl": "https://www.doorout.com/",
-        "tabId": "C29154C4A648B2F9B59EB041FF82E9B8",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/C29154C4A648B2F9B59EB041FF82E9B8",
+        "tabId": "B65B9186EAE0B370180EBD02C33B6D20",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/B65B9186EAE0B370180EBD02C33B6D20",
         "title": ""
       },
       "result": {
@@ -71,8 +77,8 @@
           "engine": "codex-chrome-cdp",
           "port": 9224,
           "targetUrl": "https://www.doorout.com/",
-          "tabId": "C29154C4A648B2F9B59EB041FF82E9B8",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/C29154C4A648B2F9B59EB041FF82E9B8",
+          "tabId": "B65B9186EAE0B370180EBD02C33B6D20",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/B65B9186EAE0B370180EBD02C33B6D20",
           "title": ""
         },
         "mode": "official_website_social_fallback",
@@ -89,21 +95,27 @@
       "platform": "website_form",
       "targetUrl": "https://flameoutdoors.com/pages/authorized-dealer",
       "ok": false,
-      "sendStatus": "approval_pending",
-      "evidence": "alibaba_webmail_login_required",
-      "timestamp": "2026-07-30T04:05:42.649Z",
+      "sendStatus": "send_unconfirmed",
+      "evidence": "official_public_business_email;alibaba_webmail_session_reused;alibaba_webmail_send_clicked;alibaba_mail_send_confirmation_waiting;sent_folder_record_missing",
+      "timestamp": "2026-07-30T04:32:00.279Z",
       "chromeOpen": null,
       "result": {
         "ok": false,
-        "sendStatus": "approval_pending",
-        "reason": "alibaba_webmail_compose_unavailable",
-        "evidence": "alibaba_webmail_login_required",
-        "engine": "alibaba-enterprise-mail-smtp-imap",
-        "mode": "alibaba_email_delivery_unconfirmed",
+        "sendStatus": "send_unconfirmed",
+        "reason": "sent_folder_confirmation_missing",
+        "evidence": "official_public_business_email;alibaba_webmail_session_reused;alibaba_webmail_send_clicked;alibaba_mail_send_confirmation_waiting;sent_folder_record_missing",
+        "recipientEmail": "sales@flameoutdoors.com",
         "targetUrl": "mailto:sales@flameoutdoors.com",
         "subject": "FLEXTAIL retail partnership | 2026 assortment",
         "draft": "Dear FlameOutdoors Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
-        "output": "{\"verdict\":\"approval_pending\",\"sendStatus\":\"approval_pending\",\"evidence\":\"alibaba_webmail_login_required\",\"nextAction\":\"Do not resend automatically; inspect the Alibaba Mail delivery and Sent-folder evidence.\",\"recipientEmail\":\"sales@flameoutdoors.com\",\"messageId\":\"\"}"
+        "engine": "alibaba-enterprise-mail-web-session",
+        "mode": "alibaba_webmail_delivery_unconfirmed",
+        "contentValidation": {
+          "ok": true,
+          "errors": [],
+          "words": 108
+        },
+        "output": "{\"verdict\":\"send_unconfirmed\",\"sendStatus\":\"send_unconfirmed\",\"evidence\":\"official_public_business_email;alibaba_webmail_session_reused;alibaba_webmail_send_clicked;alibaba_mail_send_confirmation_waiting;sent_folder_record_missing\",\"nextAction\":\"Do not resend automatically; inspect the Alibaba Mail delivery and Sent-folder evidence.\",\"recipientEmail\":\"sales@flameoutdoors.com\",\"messageId\":\"\"}"
       }
     },
     {
@@ -115,14 +127,14 @@
       "ok": false,
       "sendStatus": "approval_pending",
       "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;;contact_path_strategy_v2",
-      "timestamp": "2026-07-30T04:05:48.264Z",
+      "timestamp": "2026-07-30T04:32:05.239Z",
       "chromeOpen": {
         "ok": true,
         "engine": "codex-chrome-cdp",
         "port": 9224,
         "targetUrl": "https://www.doorout.com/",
-        "tabId": "C29154C4A648B2F9B59EB041FF82E9B8",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/C29154C4A648B2F9B59EB041FF82E9B8",
+        "tabId": "B65B9186EAE0B370180EBD02C33B6D20",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/B65B9186EAE0B370180EBD02C33B6D20",
         "title": ""
       },
       "result": {
@@ -133,8 +145,8 @@
           "engine": "codex-chrome-cdp",
           "port": 9224,
           "targetUrl": "https://www.doorout.com/",
-          "tabId": "C29154C4A648B2F9B59EB041FF82E9B8",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/C29154C4A648B2F9B59EB041FF82E9B8",
+          "tabId": "B65B9186EAE0B370180EBD02C33B6D20",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/B65B9186EAE0B370180EBD02C33B6D20",
           "title": ""
         },
         "mode": "official_website_social_fallback",
@@ -1371,13 +1383,13 @@
       "count": 9
     },
     {
-      "reason": "alibaba_webmail_compose_unavailable",
+      "reason": "approval_pending",
       "status": "approval_pending",
       "count": 1
     },
     {
-      "reason": "approval_pending",
-      "status": "approval_pending",
+      "reason": "sent_folder_confirmation_missing",
+      "status": "send_unconfirmed",
       "count": 1
     }
   ],
@@ -1387,8 +1399,8 @@
     "concrete_google_discovered_major_customer_instagram": 26,
     "official_website_contact_channel": 20,
     "missing_verified_profile_url": 9,
-    "alibaba_webmail_compose_unavailable": 1,
-    "approval_pending": 1
+    "approval_pending": 1,
+    "sent_folder_confirmation_missing": 1
   },
   "queueGoalStatus": {
     "target": 100,
@@ -1422,12 +1434,12 @@
     "stderr": "",
     "error": "",
     "visibility": {
-      "updatedAt": "2026-07-30T04:05:51.815Z",
+      "updatedAt": "2026-07-30T04:32:06.543Z",
       "source": "main-refreshDailyAutomationArtifacts",
       "runDate": "2026-07-30",
-      "artifactGeneratedAt": "2026-07-30T04:05:49.203Z",
-      "executionGeneratedAt": "2026-07-30T04:02:49.030Z",
-      "githubSyncUpdatedAt": "2026-07-30T04:03:29.588Z",
+      "artifactGeneratedAt": "2026-07-30T04:32:05.476Z",
+      "executionGeneratedAt": "2026-07-30T04:05:53.223Z",
+      "githubSyncUpdatedAt": "2026-07-30T04:06:34.207Z",
       "counts": {
         "dailyQueue": 99,
         "googleDiscovered": 87,
@@ -1490,5 +1502,5 @@
     ]
   },
   "ledgerReconciliationCount": 2,
-  "completedAt": "2026-07-30T04:05:53.223Z"
+  "completedAt": "2026-07-30T04:32:07.357Z"
 }
