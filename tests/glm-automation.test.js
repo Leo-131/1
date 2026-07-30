@@ -401,6 +401,7 @@ test('Google discovery loads auditable external supplier routes without treating
   const outdoorNature = leads.find(item => item.id === 'google-customer-outdoor-nature-website-contact');
   const leftPoint = leads.find(item => item.id === 'google-customer-left-point-distribution-website-contact');
   const flameOutdoors = leads.find(item => item.id === 'google-customer-flameoutdoors-website-contact');
+  const obelink = leads.find(item => item.id === 'google-customer-obelink-website-contact');
 
   assert.ok(outdoorNature);
   assert.equal(outdoorNature.platform, 'website_form');
@@ -416,6 +417,11 @@ test('Google discovery loads auditable external supplier routes without treating
   assert.ok(flameOutdoors);
   assert.equal(flameOutdoors.publicEmail, 'sales@flameoutdoors.com');
   assert.equal(flameOutdoors.sourceEvidenceUrl, 'https://flameoutdoors.com/pages/authorized-dealer');
+
+  assert.ok(obelink);
+  assert.equal(obelink.action, 'email_priority');
+  assert.equal(obelink.contactUrl, 'https://www.obelink.nl/obelink-partnerprogramma');
+  assert.equal(obelink.sourceEvidenceUrl, obelink.contactUrl);
 });
 
 test('daily queue preserves official email provenance needed by the Alibaba execution gate', () => {
@@ -465,7 +471,7 @@ test('online directory refill adds Flextail and Vollyc matched outdoor retailers
 
 test('homepage-only directory prospects require contact-path verification before execution', () => {
   const run = buildDiscoveryRun(200);
-  const website = run.leads.find(item => item.company === 'Obelink' && item.platform === 'website_form');
+  const website = run.leads.find(item => item.company === 'Garage Grown Gear' && item.platform === 'website_form');
   assert.equal(website.action, 'verify_target');
   assert.equal(website.reason, 'homepage_only_contact_path_requires_verification');
 });

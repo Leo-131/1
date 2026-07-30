@@ -29,14 +29,14 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "ok": false,
       "sendStatus": "approval_pending",
       "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;;contact_path_strategy_v2",
-      "timestamp": "2026-07-30T05:07:17.897Z",
+      "timestamp": "2026-07-30T05:10:29.662Z",
       "chromeOpen": {
         "ok": true,
         "engine": "codex-chrome-cdp",
         "port": 9224,
         "targetUrl": "https://www.doorout.com/",
-        "tabId": "7DDF85B04F6A38648467305E900C347B",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/7DDF85B04F6A38648467305E900C347B",
+        "tabId": "A93CA60FC291F377E62E290B38AE1807",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/A93CA60FC291F377E62E290B38AE1807",
         "title": ""
       },
       "result": {
@@ -47,8 +47,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
           "engine": "codex-chrome-cdp",
           "port": 9224,
           "targetUrl": "https://www.doorout.com/",
-          "tabId": "7DDF85B04F6A38648467305E900C347B",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/7DDF85B04F6A38648467305E900C347B",
+          "tabId": "A93CA60FC291F377E62E290B38AE1807",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/A93CA60FC291F377E62E290B38AE1807",
           "title": ""
         },
         "mode": "official_website_social_fallback",
@@ -67,14 +67,14 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "ok": false,
       "sendStatus": "approval_pending",
       "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;;contact_path_strategy_v2",
-      "timestamp": "2026-07-30T05:07:17.897Z",
+      "timestamp": "2026-07-30T05:10:29.662Z",
       "chromeOpen": {
         "ok": true,
         "engine": "codex-chrome-cdp",
         "port": 9224,
         "targetUrl": "https://www.doorout.com/",
-        "tabId": "7DDF85B04F6A38648467305E900C347B",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/7DDF85B04F6A38648467305E900C347B",
+        "tabId": "A93CA60FC291F377E62E290B38AE1807",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/A93CA60FC291F377E62E290B38AE1807",
         "title": ""
       },
       "result": {
@@ -85,8 +85,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
           "engine": "codex-chrome-cdp",
           "port": 9224,
           "targetUrl": "https://www.doorout.com/",
-          "tabId": "7DDF85B04F6A38648467305E900C347B",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/7DDF85B04F6A38648467305E900C347B",
+          "tabId": "A93CA60FC291F377E62E290B38AE1807",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/A93CA60FC291F377E62E290B38AE1807",
           "title": ""
         },
         "mode": "official_website_social_fallback",
@@ -171,8 +171,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     {
       "id": "google-customer-obelink-website-contact",
       "company": "Obelink",
-      "action": "verify_target",
-      "reason": "homepage_only_contact_path_requires_verification"
+      "action": "email_priority",
+      "reason": "official_website_contact_channel"
     },
     {
       "id": "google-customer-au-vieux-campeur-website-contact",
@@ -679,6 +679,12 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "reason": "missing_verified_profile_url"
     },
     {
+      "id": 6,
+      "company": "L.L.Bean",
+      "action": "verify_target",
+      "reason": "missing_verified_profile_url"
+    },
+    {
       "id": "google-customer-left-point-distribution-website-contact",
       "company": "Left Point Distribution",
       "action": "email_priority",
@@ -687,8 +693,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     {
       "id": "google-customer-obelink-website-contact",
       "company": "Obelink",
-      "action": "verify_target",
-      "reason": "homepage_only_contact_path_requires_verification"
+      "action": "email_priority",
+      "reason": "official_website_contact_channel"
     },
     {
       "id": "google-customer-au-vieux-campeur-website-contact",
@@ -1277,17 +1283,17 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     "totalLeads": 16,
     "highIcp": 16,
     "readyToDevelop": 30,
-    "dueNow": 98,
+    "dueNow": 99,
     "visibleTodayQueue": 42,
     "potentialPool": 100,
     "potentialPoolTarget": 100,
     "customerTableHighIcp": 14,
     "refillNeeded": 0,
-    "executableCompanies": 19,
+    "executableCompanies": 20,
     "executableReserveTarget": 130,
-    "executableReserveNeeded": 111,
+    "executableReserveNeeded": 110,
     "executableByChannel": {
-      "website_form": 2,
+      "website_form": 3,
       "facebook": 17,
       "instagram": 13
     },
@@ -1306,7 +1312,7 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     {
       "reason": "homepage_only_contact_path_requires_verification",
       "status": "skipped",
-      "count": 106
+      "count": 104
     },
     {
       "reason": "concrete_google_discovered_major_customer_facebook",
@@ -1321,12 +1327,12 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     {
       "reason": "official_website_contact_channel",
       "status": "skipped",
-      "count": 20
+      "count": 22
     },
     {
       "reason": "missing_verified_profile_url",
       "status": "skipped",
-      "count": 10
+      "count": 11
     },
     {
       "reason": "approval_pending",
@@ -1335,24 +1341,24 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     }
   ],
   "blockerCounts": {
-    "homepage_only_contact_path_requires_verification": 106,
+    "homepage_only_contact_path_requires_verification": 104,
     "concrete_google_discovered_major_customer_facebook": 34,
     "concrete_google_discovered_major_customer_instagram": 26,
-    "official_website_contact_channel": 20,
-    "missing_verified_profile_url": 10,
+    "official_website_contact_channel": 22,
+    "missing_verified_profile_url": 11,
     "approval_pending": 1
   },
   "queueGoalStatus": {
     "target": 100,
     "potentialPool": 100,
-    "queueCount": 98,
+    "queueCount": 99,
     "googleDiscovered": 86,
     "refillNeeded": 0,
     "reached": true,
     "action": "Daily high-ICP queue target reached."
   },
   "platformCircuitState": {},
-  "userVisibleStatus": "Customer development was not performed. Blockers: homepage_only_contact_path_requires_verification (106); concrete_google_discovered_major_customer_facebook (34); concrete_google_discovered_major_customer_instagram (26).",
+  "userVisibleStatus": "Customer development was not performed. Blockers: homepage_only_contact_path_requires_verification (104); concrete_google_discovered_major_customer_facebook (34); concrete_google_discovered_major_customer_instagram (26).",
   "recoveryHint": "Add a verified Facebook or Instagram profile URL before retrying social outreach. Confirm the official social profile and safe message entry before rerunning Google-discovered social outreach.",
   "recoveryActions": [
     {
@@ -1370,18 +1376,18 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
   ],
   "systemRefresh": {
     "ok": true,
-    "stdout": "{\n  \"date\": \"2026-07-30\",\n  \"summary\": {\n    \"totalLeads\": 16,\n    \"highIcp\": 16,\n    \"readyToDevelop\": 30,\n    \"dueNow\": 98,\n    \"visibleTodayQueue\": 42,\n    \"potentialPool\": 100,\n    \"potentialPoolTarget\": 100,\n    \"customerTableHighIcp\": 14,\n    \"refillNeeded\": 0,\n    \"executableCompanies\": 19,\n    \"executableReserveTarget\": 130,\n    \"executableReserveNeeded\": 111,\n    \"executableByChannel\": {\n      \"website_form\": 2,\n      \"facebook\": 17,\n      \"instagram\": 13\n    },\n    \"googleDiscovered\": 86,\n    \"facebookDiscovered\": 17,\n    \"websiteContactDiscovered\": 0,\n    \"scheduledLater\": 0,\n    \"cooldown\": 30,\n    \"emailPriority\": 0,\n    \"openAgencyMarket\": 15,\n    \"exclusiveAgencySkipped\": 1,\n    \"needsVerification\": 0,\n    \"retainedLowIcp\": 0\n  },\n  \"bugErrors\": 0,\n  \"queueFile\": \"E:\\\\New project\\\\outreach-dashboard\\\\daily-runs\\\\2026-07-30-daily-automation.json\",\n  \"csvFile\": \"E:\\\\New project\\\\outreach-dashboard\\\\daily-runs\\\\2026-07-30-daily-queue.csv\"\n}",
+    "stdout": "{\n  \"date\": \"2026-07-30\",\n  \"summary\": {\n    \"totalLeads\": 16,\n    \"highIcp\": 16,\n    \"readyToDevelop\": 30,\n    \"dueNow\": 99,\n    \"visibleTodayQueue\": 42,\n    \"potentialPool\": 100,\n    \"potentialPoolTarget\": 100,\n    \"customerTableHighIcp\": 14,\n    \"refillNeeded\": 0,\n    \"executableCompanies\": 20,\n    \"executableReserveTarget\": 130,\n    \"executableReserveNeeded\": 110,\n    \"executableByChannel\": {\n      \"website_form\": 3,\n      \"facebook\": 17,\n      \"instagram\": 13\n    },\n    \"googleDiscovered\": 86,\n    \"facebookDiscovered\": 17,\n    \"websiteContactDiscovered\": 0,\n    \"scheduledLater\": 0,\n    \"cooldown\": 30,\n    \"emailPriority\": 0,\n    \"openAgencyMarket\": 15,\n    \"exclusiveAgencySkipped\": 1,\n    \"needsVerification\": 0,\n    \"retainedLowIcp\": 0\n  },\n  \"bugErrors\": 0,\n  \"queueFile\": \"E:\\\\New project\\\\outreach-dashboard\\\\daily-runs\\\\2026-07-30-daily-automation.json\",\n  \"csvFile\": \"E:\\\\New project\\\\outreach-dashboard\\\\daily-runs\\\\2026-07-30-daily-queue.csv\"\n}",
     "stderr": "",
     "error": "",
     "visibility": {
-      "updatedAt": "2026-07-30T05:07:19.305Z",
+      "updatedAt": "2026-07-30T05:10:30.982Z",
       "source": "main-refreshDailyAutomationArtifacts",
       "runDate": "2026-07-30",
-      "artifactGeneratedAt": "2026-07-30T05:07:18.182Z",
-      "executionGeneratedAt": "2026-07-30T05:04:40.858Z",
-      "githubSyncUpdatedAt": "2026-07-30T05:05:01.924Z",
+      "artifactGeneratedAt": "2026-07-30T05:10:29.934Z",
+      "executionGeneratedAt": "2026-07-30T05:07:19.806Z",
+      "githubSyncUpdatedAt": "2026-07-30T05:07:36.951Z",
       "counts": {
-        "dailyQueue": 98,
+        "dailyQueue": 99,
         "googleDiscovered": 86,
         "websiteContact": 56,
         "cooldownQueue": 30,
@@ -1442,5 +1448,5 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     ]
   },
   "ledgerReconciliationCount": 1,
-  "completedAt": "2026-07-30T05:07:19.806Z"
+  "completedAt": "2026-07-30T05:10:31.557Z"
 };

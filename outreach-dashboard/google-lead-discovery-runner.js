@@ -1131,6 +1131,7 @@ function baseLead(item, id, evidenceUrl) {
     website: item.url,
     evidenceUrl,
     sourceEvidenceUrl: item.evidenceUrl || item.url,
+    externalVerificationStatus: item.externalVerificationStatus || '',
     query: evidenceUrl,
     source: 'google_customer_discovery',
     sourceType: 'google',
@@ -1273,8 +1274,15 @@ function channelLeads(item) {
 }
 
 function buildLeads(limit = 40) {
-  return CANDIDATES
+  const leadsById = new Map();
+  CANDIDATES
     .flatMap(channelLeads)
+    .forEach(lead => {
+      if (!leadsById.has(lead.id) || /^official_supplier_/.test(lead.externalVerificationStatus)) {
+        leadsById.set(lead.id, lead);
+      }
+    });
+  return [...leadsById.values()]
     .sort((left, right) => right.fitScore - left.fitScore || left.channelPriority - right.channelPriority)
     .slice(0, limit);
 }
