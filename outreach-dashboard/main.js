@@ -368,9 +368,12 @@ function blockingAutomationResultFor(item) {
     .filter((result) => result && (blocking.has(result.status) || historicalAutomationResultBlocksCompany(result)))
     // A page/form failure is channel-specific. If discovery later supplies a
     // verified official business email, that stronger alternate channel must
-    // remain executable on the same day.
+    // remain executable on the same day. Once that email path has also been
+    // attempted and blocked before send by authentication, do not replay the
+    // same company again that day; advance to the next safe customer.
     .filter((result) => !(verifiedBusinessEmailTarget(item).ok
-      && ['website_contact_ready', 'website_contact_unreachable_skip'].includes(result.status)))
+      && ['website_contact_ready', 'website_contact_unreachable_skip'].includes(result.status)
+      && !/alibaba_webmail_login_required|alibaba_webmail_session_unavailable/i.test(String(result.evidence || ''))))
     // A prepared/unreachable website path is a bounded attempt, not a
     // permanent suppression. Keep the same Shanghai-day lock to prevent
     // duplicate submissions, then allow the official path to be inspected

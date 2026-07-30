@@ -91,6 +91,7 @@ test('a pre-send Alibaba authentication failure falls back to verified website o
   assert.ok(mainSource.includes('if (!canFallbackAfterEmailPreflight(emailPreflight) || !targets.length) return emailPreflight'));
   assert.ok(mainSource.includes("result.sendStatus === 'send_unconfirmed'"));
   assert.ok(mainSource.includes('if (isVerifiedEmail && !isWebsiteContact)'));
+  assert.ok(mainSource.includes('alibaba_webmail_login_required|alibaba_webmail_session_unavailable'));
 });
 
 test('email execution enforces a per-domain daily safety gate', () => {
