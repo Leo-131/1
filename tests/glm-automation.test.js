@@ -73,6 +73,8 @@ test('website contact can execute without a configured attachment', () => {
   assert.ok(mainSource.includes('function socialFallbackFromInspection'));
   assert.ok(mainSource.includes('official_website_social_fallback'));
   assert.ok(mainSource.includes('socialLinks'));
+  assert.ok(mainSource.includes('verifiedByOfficialWebsite'));
+  assert.ok(mainSource.includes('socialProfileEvidenceUrl: verifiedByOfficialWebsite'));
   assert.ok(mainSource.includes('identity_check_pending_empty_page'));
   assert.ok(!mainSource.includes('website_contact_preflight_blocked'));
   assert.ok(mainSource.includes('website_contact_form_no_file_input'));
@@ -92,6 +94,9 @@ test('a pre-send Alibaba authentication failure falls back to verified website o
   assert.ok(mainSource.includes("result.sendStatus === 'send_unconfirmed'"));
   assert.ok(mainSource.includes('if (isVerifiedEmail && !isWebsiteContact)'));
   assert.ok(mainSource.includes('alibaba_webmail_login_required|alibaba_webmail_session_unavailable'));
+  assert.ok(mainSource.includes('async function probeAlibabaWebmailSession'));
+  assert.ok(mainSource.includes('alibaba_webmail_authenticated_compose_visible'));
+  assert.ok(mainSource.includes('liveAlibabaWebmailSessionReady = Boolean(alibabaSessionProbe && alibabaSessionProbe.ok)'));
 });
 
 test('email execution enforces a per-domain daily safety gate', () => {

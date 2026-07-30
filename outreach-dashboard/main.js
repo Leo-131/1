@@ -373,7 +373,8 @@ function blockingAutomationResultFor(item) {
     // same company again that day; advance to the next safe customer.
     .filter((result) => !(verifiedBusinessEmailTarget(item).ok
       && ['website_contact_ready', 'website_contact_unreachable_skip'].includes(result.status)
-      && !/alibaba_webmail_login_required|alibaba_webmail_session_unavailable/i.test(String(result.evidence || ''))))
+      && (!/alibaba_webmail_login_required|alibaba_webmail_session_unavailable/i.test(String(result.evidence || ''))
+        || liveAlibabaWebmailSessionReady)))
     // A prepared/unreachable website path is a bounded attempt, not a
     // permanent suppression. Keep the same Shanghai-day lock to prevent
     // duplicate submissions, then allow the official path to be inspected
@@ -410,6 +411,7 @@ const SAME_DAY_DEVELOPMENT_STATUSES = new Set([
   'post_liked',
 ]);
 const WEBSITE_CONTACT_STRATEGY_MARKER = 'contact_path_strategy_v2';
+let liveAlibabaWebmailSessionReady = false;
 
 function automationLocalDay(value, timeZone = 'Asia/Shanghai') {
   const time = typeof value === 'number' ? value : Date.parse(value || '');
@@ -2183,8 +2185,9 @@ function socialFallbackFromInspection(lead = {}, inspection = {}) {
   const alternateChannels = lead.alternateChannels && typeof lead.alternateChannels === 'object'
     ? lead.alternateChannels
     : {};
+  const officialWebsiteLinks = Array.isArray(inspection && inspection.socialLinks) ? inspection.socialLinks : [];
   const links = [
-    ...(Array.isArray(inspection && inspection.socialLinks) ? inspection.socialLinks : []),
+    ...officialWebsiteLinks,
     lead.linkedinUrl,
     lead.linkedin_url,
     lead.facebookUrl,
@@ -2209,6 +2212,7 @@ function socialFallbackFromInspection(lead = {}, inspection = {}) {
     .sort((a, b) => b.rank - a.rank);
   const best = ranked[0];
   if (!best) return null;
+  const verifiedByOfficialWebsite = officialWebsiteLinks.some(url => String(url || '').toLowerCase() === String(best.url || '').toLowerCase());
   return {
     ...lead,
     taskId: `${lead.taskId || lead.id || lead.company || lead.name}-${best.platform}-fallback`,
@@ -2220,6 +2224,10 @@ function socialFallbackFromInspection(lead = {}, inspection = {}) {
     url: best.url,
     action: 'develop',
     reason: 'official_website_social_fallback',
+    officialSocialProfileVerified: verifiedByOfficialWebsite || lead.officialSocialProfileVerified === true,
+    socialProfileEvidenceUrl: verifiedByOfficialWebsite
+      ? (inspection.url || lead.contactUrl || lead.website || lead.url || '')
+      : (lead.socialProfileEvidenceUrl || ''),
   };
 }
 
@@ -2682,6 +2690,46 @@ function officialMailtoLead(lead = {}, inspection = {}, evidenceUrl = '') {
     publicEmailStatus: 'Official public business email from verified website mailto',
     emailEvidence: `official_website_mailto:${evidenceUrl || inspection.url || ''}`,
   };
+}
+
+async function probeAlibabaWebmailSession() {
+  const chromeOpen = await openWithCodexChrome(ALIBABA_WEBMAIL_SENT_URL, { automationOwned: true });
+  if (!chromeOpen || !chromeOpen.ok || !chromeOpen.webSocketDebuggerUrl) {
+    return { ok: false, evidence: 'alibaba_webmail_session_unavailable' };
+  }
+  try {
+    const inspection = await evaluateChromeTabJson(chromeOpen, `(() => {
+      const visible = (element) => Boolean(element && element.getClientRects && element.getClientRects().length);
+      const textOf = (element) => String(element?.innerText || element?.textContent || element?.getAttribute?.('aria-label') || element?.getAttribute?.('title') || '').trim();
+      const roots = [document];
+      for (let index = 0; index < roots.length; index += 1) {
+        const root = roots[index];
+        for (const element of root.querySelectorAll('*')) {
+          if (element.shadowRoot && !roots.includes(element.shadowRoot)) roots.push(element.shadowRoot);
+          if (element.tagName === 'IFRAME') {
+            try {
+              if (element.contentDocument && !roots.includes(element.contentDocument)) roots.push(element.contentDocument);
+            } catch {}
+          }
+        }
+      }
+      const loginControl = roots.flatMap(root => Array.from(root.querySelectorAll('input[type="password"],form[action*="login" i]'))).find(visible);
+      const composePattern = /\\b(compose|new message|write mail|new mail)\\b|写邮件|撰写|新建邮件/i;
+      const compose = roots.flatMap(root => Array.from(root.querySelectorAll('button,[role="button"],a,div[tabindex],[data-testid],[class]')))
+        .find(element => visible(element) && composePattern.test([textOf(element), element.getAttribute?.('aria-label'), element.getAttribute?.('data-testid'), element.getAttribute?.('class')].filter(Boolean).join(' ')));
+      return JSON.stringify({
+        ok: Boolean(compose && !loginControl),
+        evidence: compose && !loginControl ? 'alibaba_webmail_authenticated_compose_visible' : (loginControl ? 'alibaba_webmail_login_required' : 'alibaba_webmail_compose_button_missing'),
+        url: location.href,
+        title: document.title,
+      });
+    })()`, 8000).catch(() => null);
+    return inspection && inspection.ok
+      ? inspection
+      : { ok: false, evidence: inspection && inspection.evidence || 'alibaba_webmail_session_probe_failed' };
+  } finally {
+    await closeAutomationChromeTab(chromeOpen);
+  }
 }
 
 async function runAlibabaWebmailEmailLead(lead = {}, subject = '', draft = '') {
@@ -3969,6 +4017,8 @@ async function runDailyAutomationQueue(payload = {}) {
   if (!latest || !Array.isArray(latest.dailyQueue)) {
     return { ok: false, error: 'Daily automation queue is missing. Run npm run daily first.' };
   }
+  const alibabaSessionProbe = await probeAlibabaWebmailSession();
+  liveAlibabaWebmailSessionReady = Boolean(alibabaSessionProbe && alibabaSessionProbe.ok);
   const ledgerReconciliationCount = reconcileLatestExecutionResultsToLedger();
   const requestedLimit = Math.max(1, Math.min(Number(payload && payload.limit || process.env.DAILY_EXECUTE_LIMIT || DEFAULT_DAILY_SOCIAL_EXECUTION_LIMIT), MAXIMUM_DAILY_SOCIAL_EXECUTION_LIMIT));
   const parallelLimit = 1;
@@ -4287,6 +4337,7 @@ async function runDailyAutomationQueue(payload = {}) {
     recoveryHint,
     recoveryActions,
     systemRefresh,
+    alibabaSessionProbe,
     bounceReconciliation,
     ledgerReconciliationCount,
   };
