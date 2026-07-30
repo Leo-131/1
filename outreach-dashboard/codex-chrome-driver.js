@@ -882,9 +882,9 @@ function identityCheckExpression(expectedCompany, targetUrl, officialProfileVeri
     const facebookProfileUrl = /facebook\\.com\\/(?:profile\\.php|people)(?:[/?#]|$)/.test(location.href.toLowerCase());
     const businessSignal = /official|company|business|retail|outdoor|camping|hiking|wholesale|distributor|brand|vendor|merchandising|buyer|procurement|partnership|category|sales|about|website/.test(visibleLower);
     const employeeSignal = /buyer|category manager|merchandising|procurement|purchasing|vendor|partnership|business development|sales manager|works at|employee/.test(visibleLower);
-    const personalProfileSignal = /add friend|friends are family|\bfriends\b|lives in|from [a-z][a-z -]{2,40}|i'm a .*\b(chameleon|person|guy|girl)|个人主页|好友|朋友/.test(visibleLower);
+    const personalProfileSignal = /add friend|friends are family|lives in|from [a-z][a-z -]{2,40}|i'm a .*\b(chameleon|person|guy|girl)|个人主页|好友|朋友/.test(visibleLower);
     const emptyPersonalSignal = /0\\s*(posts?|帖子)[\\s\\S]{0,80}0\\s*(followers|粉丝)[\\s\\S]{0,80}0\\s*(following|关注)/i.test(visible);
-    const strictPersonalProfileSignal = /add friend|\\d[\\d,.]*\\s*friends?\\b|friends are family|\\bfriends\\b|lives in|hometown|personal details|\\u6dfb\\u52a0\\u597d\\u53cb|\\u4f4d\\u597d\\u53cb|\\u4e2a\\u4eba\\u8be6\\u60c5|\\u4e2a\\u4eba\\u4e3b\\u9875|\\u597d\\u53cb|\\u670b\\u53cb|\\u5bb6\\u4e61/.test(visibleLower);
+    const strictPersonalProfileSignal = /add friend|\\d[\\d,.]*\\s*friends?\\b|friends are family|lives in|hometown|personal details|\\u6dfb\\u52a0\\u597d\\u53cb|\\u4f4d\\u597d\\u53cb|\\u4e2a\\u4eba\\u8be6\\u60c5|\\u4e2a\\u4eba\\u4e3b\\u9875|\\u597d\\u53cb|\\u670b\\u53cb|\\u5bb6\\u4e61/.test(visibleLower);
     const unavailableProfileSignal = /content isn.t available|page isn.t available|page not found|this content is unavailable|\\u65e0\\u6cd5\\u8bbf\\u95ee\\u6b64\\u9875\\u9762|\\u9875\\u9762\\u4e0d\\u5b58\\u5728|\\u5185\\u5bb9\\u4e0d\\u53ef\\u7528/.test(visibleLower);
     const companyOk = expectedCompact && visibleCompact.includes(expectedCompact);
     const pathOk = pathCompact && visibleCompact.includes(pathCompact);
