@@ -29,14 +29,14 @@
       "ok": false,
       "sendStatus": "approval_pending",
       "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;;contact_path_strategy_v2",
-      "timestamp": "2026-07-30T04:54:36.824Z",
+      "timestamp": "2026-07-30T05:04:38.884Z",
       "chromeOpen": {
         "ok": true,
         "engine": "codex-chrome-cdp",
         "port": 9224,
         "targetUrl": "https://www.doorout.com/",
-        "tabId": "412B2E773F81C758973C2268AEF81969",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/412B2E773F81C758973C2268AEF81969",
+        "tabId": "E1D558D9423E5958F05BE6CB5BAE1A81",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/E1D558D9423E5958F05BE6CB5BAE1A81",
         "title": ""
       },
       "result": {
@@ -47,8 +47,8 @@
           "engine": "codex-chrome-cdp",
           "port": 9224,
           "targetUrl": "https://www.doorout.com/",
-          "tabId": "412B2E773F81C758973C2268AEF81969",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/412B2E773F81C758973C2268AEF81969",
+          "tabId": "E1D558D9423E5958F05BE6CB5BAE1A81",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/E1D558D9423E5958F05BE6CB5BAE1A81",
           "title": ""
         },
         "mode": "official_website_social_fallback",
@@ -67,14 +67,14 @@
       "ok": false,
       "sendStatus": "approval_pending",
       "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;;contact_path_strategy_v2",
-      "timestamp": "2026-07-30T04:54:36.824Z",
+      "timestamp": "2026-07-30T05:04:38.884Z",
       "chromeOpen": {
         "ok": true,
         "engine": "codex-chrome-cdp",
         "port": 9224,
         "targetUrl": "https://www.doorout.com/",
-        "tabId": "412B2E773F81C758973C2268AEF81969",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/412B2E773F81C758973C2268AEF81969",
+        "tabId": "E1D558D9423E5958F05BE6CB5BAE1A81",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/E1D558D9423E5958F05BE6CB5BAE1A81",
         "title": ""
       },
       "result": {
@@ -85,8 +85,8 @@
           "engine": "codex-chrome-cdp",
           "port": 9224,
           "targetUrl": "https://www.doorout.com/",
-          "tabId": "412B2E773F81C758973C2268AEF81969",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/412B2E773F81C758973C2268AEF81969",
+          "tabId": "E1D558D9423E5958F05BE6CB5BAE1A81",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/E1D558D9423E5958F05BE6CB5BAE1A81",
           "title": ""
         },
         "mode": "official_website_social_fallback",
@@ -341,12 +341,6 @@
       "company": "Rock/Creek",
       "action": "verify_target",
       "reason": "homepage_only_contact_path_requires_verification"
-    },
-    {
-      "id": "google-customer-flameoutdoors-website-contact",
-      "company": "FlameOutdoors",
-      "action": "email_priority",
-      "reason": "official_website_contact_channel"
     },
     {
       "id": "google-customer-valhalla-pure-outfitters-website-contact",
@@ -685,6 +679,12 @@
       "reason": "missing_verified_profile_url"
     },
     {
+      "id": 6,
+      "company": "L.L.Bean",
+      "action": "verify_target",
+      "reason": "missing_verified_profile_url"
+    },
+    {
       "id": "google-customer-left-point-distribution-website-contact",
       "company": "Left Point Distribution",
       "action": "email_priority",
@@ -863,12 +863,6 @@
       "company": "Rock/Creek",
       "action": "verify_target",
       "reason": "homepage_only_contact_path_requires_verification"
-    },
-    {
-      "id": "google-customer-flameoutdoors-website-contact",
-      "company": "FlameOutdoors",
-      "action": "email_priority",
-      "reason": "official_website_contact_channel"
     },
     {
       "id": "google-customer-valhalla-pure-outfitters-website-contact",
@@ -1277,6 +1271,12 @@
       "company": "L.L.Bean",
       "action": "verify_target",
       "reason": "missing_verified_profile_url"
+    },
+    {
+      "id": 17,
+      "company": "Target",
+      "action": "verify_target",
+      "reason": "missing_verified_profile_url"
     }
   ],
   "summary": {
@@ -1287,17 +1287,17 @@
     "visibleTodayQueue": 42,
     "potentialPool": 100,
     "potentialPoolTarget": 100,
-    "customerTableHighIcp": 13,
+    "customerTableHighIcp": 14,
     "refillNeeded": 0,
-    "executableCompanies": 20,
+    "executableCompanies": 19,
     "executableReserveTarget": 130,
-    "executableReserveNeeded": 110,
+    "executableReserveNeeded": 111,
     "executableByChannel": {
-      "website_form": 3,
+      "website_form": 2,
       "facebook": 17,
       "instagram": 13
     },
-    "googleDiscovered": 87,
+    "googleDiscovered": 86,
     "facebookDiscovered": 17,
     "websiteContactDiscovered": 0,
     "scheduledLater": 0,
@@ -1327,12 +1327,12 @@
     {
       "reason": "official_website_contact_channel",
       "status": "skipped",
-      "count": 22
+      "count": 20
     },
     {
       "reason": "missing_verified_profile_url",
       "status": "skipped",
-      "count": 9
+      "count": 11
     },
     {
       "reason": "approval_pending",
@@ -1344,15 +1344,15 @@
     "homepage_only_contact_path_requires_verification": 106,
     "concrete_google_discovered_major_customer_facebook": 34,
     "concrete_google_discovered_major_customer_instagram": 26,
-    "official_website_contact_channel": 22,
-    "missing_verified_profile_url": 9,
+    "official_website_contact_channel": 20,
+    "missing_verified_profile_url": 11,
     "approval_pending": 1
   },
   "queueGoalStatus": {
     "target": 100,
     "potentialPool": 100,
     "queueCount": 99,
-    "googleDiscovered": 87,
+    "googleDiscovered": 86,
     "refillNeeded": 0,
     "reached": true,
     "action": "Daily high-ICP queue target reached."
@@ -1380,12 +1380,12 @@
     "stderr": "",
     "error": "",
     "visibility": {
-      "updatedAt": "2026-07-30T04:54:38.068Z",
+      "updatedAt": "2026-07-30T05:04:40.363Z",
       "source": "main-refreshDailyAutomationArtifacts",
       "runDate": "2026-07-30",
-      "artifactGeneratedAt": "2026-07-30T04:54:37.073Z",
-      "executionGeneratedAt": "2026-07-30T04:32:07.357Z",
-      "githubSyncUpdatedAt": "2026-07-30T04:33:18.950Z",
+      "artifactGeneratedAt": "2026-07-30T05:04:39.221Z",
+      "executionGeneratedAt": "2026-07-30T04:54:38.829Z",
+      "githubSyncUpdatedAt": "2026-07-30T04:55:01.952Z",
       "counts": {
         "dailyQueue": 99,
         "googleDiscovered": 86,
@@ -1447,6 +1447,6 @@
       "ALIBABA_SMTP_SECURITY_PASSWORD"
     ]
   },
-  "ledgerReconciliationCount": 2,
-  "completedAt": "2026-07-30T04:54:38.829Z"
+  "ledgerReconciliationCount": 1,
+  "completedAt": "2026-07-30T05:04:40.858Z"
 }
