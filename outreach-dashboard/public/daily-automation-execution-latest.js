@@ -13,7 +13,7 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
   "customerMessageSent": false,
   "realDevelopmentCount": 0,
   "reportingVerdict": "no_customer_development_performed",
-  "userVisibleStatus": "Customer development was not performed. Blockers: homepage_only_contact_path_requires_verification (50); missing_verified_profile_url (16); concrete_google_discovered_major_customer_facebook (13).",
+  "userVisibleStatus": "Customer development was not performed. Blockers: homepage_only_contact_path_requires_verification (51); missing_verified_profile_url (16); concrete_google_discovered_major_customer_facebook (13).",
   "recoveryHint": "Refill the high-ICP pool with 1 verified leads or unblock existing website/social leads before the next run. Add a verified Facebook or Instagram profile URL before retrying social outreach. Confirm the official social profile and safe message entry before rerunning Google-discovered social outreach.",
   "recoveryActions": [
     {
@@ -41,176 +41,26 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
   "error": "No executable tasks. Website-contact, social, cooldown, exclusive-agency, and verification safety gates left nothing safe to prepare.",
   "skipped": [
     {
-      "id": "google-customer-rock-creek-website-contact",
-      "company": "Rock/Creek",
+      "id": "google-customer-bivouac-outdoor-website-contact",
+      "company": "Bivouac Outdoor",
       "action": "verify_target",
       "reason": "homepage_only_contact_path_requires_verification"
     },
     {
-      "id": "google-customer-valhalla-pure-outfitters-website-contact",
-      "company": "Valhalla Pure Outfitters",
+      "id": "google-customer-tentworld-nz-website-contact",
+      "company": "Tentworld NZ",
       "action": "verify_target",
       "reason": "homepage_only_contact_path_requires_verification"
     },
     {
-      "id": "google-customer-kittery-trading-post-website-contact",
-      "company": "Kittery Trading Post",
-      "action": "verify_target",
-      "reason": "homepage_only_contact_path_requires_verification"
-    },
-    {
-      "id": "google-customer-72hours-website-contact",
-      "company": "72hours",
-      "action": "verify_target",
-      "reason": "homepage_only_contact_path_requires_verification"
-    },
-    {
-      "id": "google-customer-atmosphere-website-contact",
-      "company": "Atmosphere",
-      "action": "verify_target",
-      "reason": "homepage_only_contact_path_requires_verification"
-    },
-    {
-      "id": "google-customer-backcountry-experience-website-contact",
-      "company": "Backcountry Experience",
-      "action": "verify_target",
-      "reason": "homepage_only_contact_path_requires_verification"
-    },
-    {
-      "id": "google-customer-eastern-mountain-sports-website-contact",
-      "company": "Eastern Mountain Sports",
-      "action": "verify_target",
-      "reason": "homepage_only_contact_path_requires_verification"
-    },
-    {
-      "id": "google-customer-la-cordee-website-contact",
-      "company": "La Cordee",
-      "action": "verify_target",
-      "reason": "homepage_only_contact_path_requires_verification"
-    },
-    {
-      "id": "google-customer-moosejaw-website-contact",
-      "company": "Moosejaw",
-      "action": "verify_target",
-      "reason": "homepage_only_contact_path_requires_verification"
-    },
-    {
-      "id": "google-customer-the-mountaineer-website-contact",
-      "company": "The Mountaineer",
-      "action": "verify_target",
-      "reason": "homepage_only_contact_path_requires_verification"
-    },
-    {
-      "id": "google-customer-latulippe-website-contact",
-      "company": "Latulippe",
-      "action": "verify_target",
-      "reason": "homepage_only_contact_path_requires_verification"
-    },
-    {
-      "id": "google-customer-neptune-mountaineering-website-contact",
-      "company": "Neptune Mountaineering",
-      "action": "verify_target",
-      "reason": "homepage_only_contact_path_requires_verification"
-    },
-    {
-      "id": "google-customer-ute-mountaineer-website-contact",
-      "company": "Ute Mountaineer",
-      "action": "verify_target",
-      "reason": "homepage_only_contact_path_requires_verification"
-    },
-    {
-      "id": "google-customer-arizona-hiking-shack-website-contact",
-      "company": "Arizona Hiking Shack",
-      "action": "verify_target",
-      "reason": "homepage_only_contact_path_requires_verification"
-    },
-    {
-      "id": "google-customer-bentgate-mountaineering-website-contact",
-      "company": "Bentgate Mountaineering",
-      "action": "verify_target",
-      "reason": "homepage_only_contact_path_requires_verification"
-    },
-    {
-      "id": "google-customer-the-great-outdoor-shop-website-contact",
-      "company": "The Great Outdoor Shop",
-      "action": "verify_target",
-      "reason": "homepage_only_contact_path_requires_verification"
-    },
-    {
-      "id": "google-customer-avidmax-outfitters-website-contact",
-      "company": "AvidMax Outfitters",
-      "action": "verify_target",
-      "reason": "homepage_only_contact_path_requires_verification"
-    },
-    {
-      "id": "google-customer-gear-west-website-contact",
-      "company": "Gear West",
-      "action": "verify_target",
-      "reason": "homepage_only_contact_path_requires_verification"
-    },
-    {
-      "id": "google-customer-durango-outdoor-exchange-website-contact",
-      "company": "Durango Outdoor Exchange",
-      "action": "verify_target",
-      "reason": "homepage_only_contact_path_requires_verification"
-    },
-    {
-      "id": "google-customer-rock-creek-facebook",
-      "company": "Rock/Creek",
+      "id": "google-customer-tentworld-nz-facebook",
+      "company": "Tentworld NZ",
       "action": "develop",
       "reason": "concrete_google_discovered_major_customer_facebook"
     },
     {
-      "id": "google-customer-72hours-facebook",
-      "company": "72hours",
-      "action": "develop",
-      "reason": "concrete_google_discovered_major_customer_facebook"
-    },
-    {
-      "id": "google-customer-atmosphere-facebook",
-      "company": "Atmosphere",
-      "action": "develop",
-      "reason": "concrete_google_discovered_major_customer_facebook"
-    },
-    {
-      "id": "google-customer-eastern-mountain-sports-facebook",
-      "company": "Eastern Mountain Sports",
-      "action": "develop",
-      "reason": "concrete_google_discovered_major_customer_facebook"
-    },
-    {
-      "id": "google-customer-moosejaw-facebook",
-      "company": "Moosejaw",
-      "action": "develop",
-      "reason": "concrete_google_discovered_major_customer_facebook"
-    },
-    {
-      "id": "google-customer-the-mountaineer-facebook",
-      "company": "The Mountaineer",
-      "action": "develop",
-      "reason": "concrete_google_discovered_major_customer_facebook"
-    },
-    {
-      "id": "google-customer-rock-creek-instagram",
-      "company": "Rock/Creek",
-      "action": "develop",
-      "reason": "concrete_google_discovered_major_customer_instagram"
-    },
-    {
-      "id": "google-customer-72hours-instagram",
-      "company": "72hours",
-      "action": "develop",
-      "reason": "concrete_google_discovered_major_customer_instagram"
-    },
-    {
-      "id": "google-customer-atmosphere-instagram",
-      "company": "Atmosphere",
-      "action": "develop",
-      "reason": "concrete_google_discovered_major_customer_instagram"
-    },
-    {
-      "id": "google-customer-the-mountaineer-instagram",
-      "company": "The Mountaineer",
+      "id": "google-customer-tentworld-nz-instagram",
+      "company": "Tentworld NZ",
       "action": "develop",
       "reason": "concrete_google_discovered_major_customer_instagram"
     },
@@ -425,14 +275,122 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "reason": "homepage_only_contact_path_requires_verification"
     },
     {
+      "id": "google-customer-rock-creek-website-contact",
+      "company": "Rock/Creek",
+      "action": "verify_target",
+      "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
       "id": "google-customer-outdoor-specialist-website-contact",
       "company": "Outdoor Specialist",
       "action": "verify_target",
       "reason": "homepage_only_contact_path_requires_verification"
     },
     {
-      "id": "google-customer-bivouac-outdoor-website-contact",
-      "company": "Bivouac Outdoor",
+      "id": "google-customer-valhalla-pure-outfitters-website-contact",
+      "company": "Valhalla Pure Outfitters",
+      "action": "verify_target",
+      "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
+      "id": "google-customer-kittery-trading-post-website-contact",
+      "company": "Kittery Trading Post",
+      "action": "verify_target",
+      "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
+      "id": "google-customer-72hours-website-contact",
+      "company": "72hours",
+      "action": "verify_target",
+      "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
+      "id": "google-customer-atmosphere-website-contact",
+      "company": "Atmosphere",
+      "action": "verify_target",
+      "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
+      "id": "google-customer-backcountry-experience-website-contact",
+      "company": "Backcountry Experience",
+      "action": "verify_target",
+      "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
+      "id": "google-customer-eastern-mountain-sports-website-contact",
+      "company": "Eastern Mountain Sports",
+      "action": "verify_target",
+      "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
+      "id": "google-customer-la-cordee-website-contact",
+      "company": "La Cordee",
+      "action": "verify_target",
+      "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
+      "id": "google-customer-moosejaw-website-contact",
+      "company": "Moosejaw",
+      "action": "verify_target",
+      "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
+      "id": "google-customer-the-mountaineer-website-contact",
+      "company": "The Mountaineer",
+      "action": "verify_target",
+      "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
+      "id": "google-customer-latulippe-website-contact",
+      "company": "Latulippe",
+      "action": "verify_target",
+      "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
+      "id": "google-customer-neptune-mountaineering-website-contact",
+      "company": "Neptune Mountaineering",
+      "action": "verify_target",
+      "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
+      "id": "google-customer-ute-mountaineer-website-contact",
+      "company": "Ute Mountaineer",
+      "action": "verify_target",
+      "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
+      "id": "google-customer-arizona-hiking-shack-website-contact",
+      "company": "Arizona Hiking Shack",
+      "action": "verify_target",
+      "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
+      "id": "google-customer-bentgate-mountaineering-website-contact",
+      "company": "Bentgate Mountaineering",
+      "action": "verify_target",
+      "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
+      "id": "google-customer-the-great-outdoor-shop-website-contact",
+      "company": "The Great Outdoor Shop",
+      "action": "verify_target",
+      "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
+      "id": "google-customer-avidmax-outfitters-website-contact",
+      "company": "AvidMax Outfitters",
+      "action": "verify_target",
+      "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
+      "id": "google-customer-gear-west-website-contact",
+      "company": "Gear West",
+      "action": "verify_target",
+      "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
+      "id": "google-customer-durango-outdoor-exchange-website-contact",
+      "company": "Durango Outdoor Exchange",
       "action": "verify_target",
       "reason": "homepage_only_contact_path_requires_verification"
     },
@@ -447,12 +405,6 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "company": "Outdoor Nature",
       "action": "email_priority",
       "reason": "official_website_contact_channel"
-    },
-    {
-      "id": "google-customer-tentworld-website-contact",
-      "company": "Tentworld",
-      "action": "verify_target",
-      "reason": "homepage_only_contact_path_requires_verification"
     },
     {
       "id": "google-customer-transa-website-contact",
@@ -497,8 +449,38 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "reason": "concrete_google_discovered_major_customer_facebook"
     },
     {
-      "id": "google-customer-tentworld-nz-facebook",
-      "company": "Tentworld NZ",
+      "id": "google-customer-rock-creek-facebook",
+      "company": "Rock/Creek",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_facebook"
+    },
+    {
+      "id": "google-customer-72hours-facebook",
+      "company": "72hours",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_facebook"
+    },
+    {
+      "id": "google-customer-atmosphere-facebook",
+      "company": "Atmosphere",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_facebook"
+    },
+    {
+      "id": "google-customer-eastern-mountain-sports-facebook",
+      "company": "Eastern Mountain Sports",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_facebook"
+    },
+    {
+      "id": "google-customer-moosejaw-facebook",
+      "company": "Moosejaw",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_facebook"
+    },
+    {
+      "id": "google-customer-the-mountaineer-facebook",
+      "company": "The Mountaineer",
       "action": "develop",
       "reason": "concrete_google_discovered_major_customer_facebook"
     },
@@ -533,8 +515,26 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "reason": "concrete_google_discovered_major_customer_instagram"
     },
     {
-      "id": "google-customer-tentworld-nz-instagram",
-      "company": "Tentworld NZ",
+      "id": "google-customer-rock-creek-instagram",
+      "company": "Rock/Creek",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_instagram"
+    },
+    {
+      "id": "google-customer-72hours-instagram",
+      "company": "72hours",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_instagram"
+    },
+    {
+      "id": "google-customer-atmosphere-instagram",
+      "company": "Atmosphere",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_instagram"
+    },
+    {
+      "id": "google-customer-the-mountaineer-instagram",
+      "company": "The Mountaineer",
       "action": "develop",
       "reason": "concrete_google_discovered_major_customer_instagram"
     },
@@ -633,13 +633,19 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "company": "RVDA (RV Dealers Association)",
       "action": "verify_target",
       "reason": "missing_verified_profile_url"
+    },
+    {
+      "id": "google-customer-tentworld-website-contact",
+      "company": "Tentworld",
+      "action": "verify_target",
+      "reason": "homepage_only_contact_path_requires_verification"
     }
   ],
   "blockerSummary": [
     {
       "reason": "homepage_only_contact_path_requires_verification",
       "status": "skipped",
-      "count": 50
+      "count": 51
     },
     {
       "reason": "missing_verified_profile_url",
@@ -663,7 +669,7 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     }
   ],
   "blockerCounts": {
-    "homepage_only_contact_path_requires_verification": 50,
+    "homepage_only_contact_path_requires_verification": 51,
     "missing_verified_profile_url": 16,
     "concrete_google_discovered_major_customer_facebook": 13,
     "official_website_contact_channel": 11,
@@ -717,5 +723,5 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "ALIBABA_SMTP_SECURITY_PASSWORD"
     ]
   },
-  "completedAt": "2026-07-30T19:05:48.933Z"
+  "completedAt": "2026-07-30T21:03:02.954Z"
 };
