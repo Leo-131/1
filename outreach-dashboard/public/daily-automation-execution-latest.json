@@ -29,7 +29,7 @@
       "ok": false,
       "sendStatus": "approval_pending",
       "evidence": "alibaba_webmail_login_required",
-      "timestamp": "2026-07-30T04:02:40.506Z",
+      "timestamp": "2026-07-30T04:05:42.649Z",
       "chromeOpen": null,
       "result": {
         "ok": false,
@@ -53,14 +53,14 @@
       "ok": false,
       "sendStatus": "approval_pending",
       "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;;contact_path_strategy_v2",
-      "timestamp": "2026-07-30T04:02:45.814Z",
+      "timestamp": "2026-07-30T04:05:48.264Z",
       "chromeOpen": {
         "ok": true,
         "engine": "codex-chrome-cdp",
         "port": 9224,
         "targetUrl": "https://www.doorout.com/",
-        "tabId": "33E4C341C59AFD0FECA8E260FDEC47D7",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/33E4C341C59AFD0FECA8E260FDEC47D7",
+        "tabId": "C29154C4A648B2F9B59EB041FF82E9B8",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/C29154C4A648B2F9B59EB041FF82E9B8",
         "title": ""
       },
       "result": {
@@ -71,8 +71,8 @@
           "engine": "codex-chrome-cdp",
           "port": 9224,
           "targetUrl": "https://www.doorout.com/",
-          "tabId": "33E4C341C59AFD0FECA8E260FDEC47D7",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/33E4C341C59AFD0FECA8E260FDEC47D7",
+          "tabId": "C29154C4A648B2F9B59EB041FF82E9B8",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/C29154C4A648B2F9B59EB041FF82E9B8",
           "title": ""
         },
         "mode": "official_website_social_fallback",
@@ -91,7 +91,7 @@
       "ok": false,
       "sendStatus": "approval_pending",
       "evidence": "alibaba_webmail_login_required",
-      "timestamp": "2026-07-30T04:02:40.506Z",
+      "timestamp": "2026-07-30T04:05:42.649Z",
       "chromeOpen": null,
       "result": {
         "ok": false,
@@ -115,14 +115,14 @@
       "ok": false,
       "sendStatus": "approval_pending",
       "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;;contact_path_strategy_v2",
-      "timestamp": "2026-07-30T04:02:45.814Z",
+      "timestamp": "2026-07-30T04:05:48.264Z",
       "chromeOpen": {
         "ok": true,
         "engine": "codex-chrome-cdp",
         "port": 9224,
         "targetUrl": "https://www.doorout.com/",
-        "tabId": "33E4C341C59AFD0FECA8E260FDEC47D7",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/33E4C341C59AFD0FECA8E260FDEC47D7",
+        "tabId": "C29154C4A648B2F9B59EB041FF82E9B8",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/C29154C4A648B2F9B59EB041FF82E9B8",
         "title": ""
       },
       "result": {
@@ -133,8 +133,8 @@
           "engine": "codex-chrome-cdp",
           "port": 9224,
           "targetUrl": "https://www.doorout.com/",
-          "tabId": "33E4C341C59AFD0FECA8E260FDEC47D7",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/33E4C341C59AFD0FECA8E260FDEC47D7",
+          "tabId": "C29154C4A648B2F9B59EB041FF82E9B8",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/C29154C4A648B2F9B59EB041FF82E9B8",
           "title": ""
         },
         "mode": "official_website_social_fallback",
@@ -1422,12 +1422,12 @@
     "stderr": "",
     "error": "",
     "visibility": {
-      "updatedAt": "2026-07-30T04:02:48.023Z",
+      "updatedAt": "2026-07-30T04:05:51.815Z",
       "source": "main-refreshDailyAutomationArtifacts",
       "runDate": "2026-07-30",
-      "artifactGeneratedAt": "2026-07-30T04:02:46.339Z",
-      "executionGeneratedAt": "2026-07-30T04:01:15.482Z",
-      "githubSyncUpdatedAt": "2026-07-30T04:02:47.787Z",
+      "artifactGeneratedAt": "2026-07-30T04:05:49.203Z",
+      "executionGeneratedAt": "2026-07-30T04:02:49.030Z",
+      "githubSyncUpdatedAt": "2026-07-30T04:03:29.588Z",
       "counts": {
         "dailyQueue": 99,
         "googleDiscovered": 87,
@@ -1490,5 +1490,5 @@
     ]
   },
   "ledgerReconciliationCount": 2,
-  "completedAt": "2026-07-30T04:02:49.030Z"
+  "completedAt": "2026-07-30T04:05:53.223Z"
 }
