@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-30T09:49:42.161Z",
+  "generatedAt": "2026-07-30T10:10:36.850Z",
   "date": "2026-07-30",
   "mode": "daily-icp-first-automation-loop",
   "executionLayer": "Dedicated Chrome automation profile only; primary Chrome attachment forbidden",
@@ -50,23 +50,23 @@
   "summary": {
     "totalLeads": 16,
     "highIcp": 16,
-    "readyToDevelop": 28,
+    "readyToDevelop": 26,
     "dueNow": 99,
-    "visibleTodayQueue": 42,
+    "visibleTodayQueue": 41,
     "potentialPool": 100,
     "potentialPoolTarget": 100,
-    "customerTableHighIcp": 16,
+    "customerTableHighIcp": 19,
     "refillNeeded": 0,
-    "executableCompanies": 19,
+    "executableCompanies": 18,
     "executableReserveTarget": 130,
-    "executableReserveNeeded": 111,
+    "executableReserveNeeded": 112,
     "executableByChannel": {
       "website_form": 3,
-      "facebook": 16,
-      "instagram": 12
+      "facebook": 15,
+      "instagram": 11
     },
-    "googleDiscovered": 84,
-    "facebookDiscovered": 16,
+    "googleDiscovered": 81,
+    "facebookDiscovered": 15,
     "websiteContactDiscovered": 0,
     "scheduledLater": 0,
     "cooldown": 30,
@@ -84,7 +84,7 @@
       "agency": 8,
       "key_account": 114
     },
-    "qualifiedQueueCount": 85
+    "qualifiedQueueCount": 82
   },
   "visibleTodayQueue": [
     {
@@ -139,7 +139,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Asia/Shanghai",
-        "localTime": "Thu 17:49",
+        "localTime": "Thu 18:10",
         "window": "outside_work_hours",
         "nextBest": "Asia/Shanghai morning",
         "weight": 0
@@ -229,7 +229,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/Paris",
-        "localTime": "Thu 11:49",
+        "localTime": "Thu 12:10",
         "window": "outside_work_hours",
         "nextBest": "Europe/Paris afternoon",
         "weight": 0
@@ -319,7 +319,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/London",
-        "localTime": "Thu 10:49",
+        "localTime": "Thu 11:10",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -409,7 +409,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/London",
-        "localTime": "Thu 10:49",
+        "localTime": "Thu 11:10",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -499,7 +499,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/Oslo",
-        "localTime": "Thu 11:49",
+        "localTime": "Thu 12:10",
         "window": "outside_work_hours",
         "nextBest": "Europe/Oslo afternoon",
         "weight": 0
@@ -589,7 +589,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/Stockholm",
-        "localTime": "Thu 11:49",
+        "localTime": "Thu 12:10",
         "window": "outside_work_hours",
         "nextBest": "Europe/Stockholm afternoon",
         "weight": 0
@@ -679,7 +679,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/Stockholm",
-        "localTime": "Thu 11:49",
+        "localTime": "Thu 12:10",
         "window": "outside_work_hours",
         "nextBest": "Europe/Stockholm afternoon",
         "weight": 0
@@ -769,7 +769,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/London",
-        "localTime": "Thu 10:49",
+        "localTime": "Thu 11:10",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -859,7 +859,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/Madrid",
-        "localTime": "Thu 11:49",
+        "localTime": "Thu 12:10",
         "window": "outside_work_hours",
         "nextBest": "Europe/Madrid afternoon",
         "weight": 0
@@ -949,7 +949,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Asia/Shanghai",
-        "localTime": "Thu 17:49",
+        "localTime": "Thu 18:10",
         "window": "outside_work_hours",
         "nextBest": "Asia/Shanghai morning",
         "weight": 0
@@ -1039,7 +1039,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/Paris",
-        "localTime": "Thu 11:49",
+        "localTime": "Thu 12:10",
         "window": "outside_work_hours",
         "nextBest": "Europe/Paris afternoon",
         "weight": 0
@@ -1129,7 +1129,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/Helsinki",
-        "localTime": "Thu 12:49",
+        "localTime": "Thu 13:10",
         "window": "outside_work_hours",
         "nextBest": "Europe/Helsinki afternoon",
         "weight": 0
@@ -1219,7 +1219,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/Paris",
-        "localTime": "Thu 11:49",
+        "localTime": "Thu 12:10",
         "window": "outside_work_hours",
         "nextBest": "Europe/Paris afternoon",
         "weight": 0
@@ -1309,7 +1309,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/Zurich",
-        "localTime": "Thu 11:49",
+        "localTime": "Thu 12:10",
         "window": "outside_work_hours",
         "nextBest": "Europe/Zurich afternoon",
         "weight": 0
@@ -1399,7 +1399,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/London",
-        "localTime": "Thu 10:49",
+        "localTime": "Thu 11:10",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -1489,7 +1489,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Asia/Shanghai",
-        "localTime": "Thu 17:49",
+        "localTime": "Thu 18:10",
         "window": "outside_work_hours",
         "nextBest": "Asia/Shanghai morning",
         "weight": 0
@@ -1579,7 +1579,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/Copenhagen",
-        "localTime": "Thu 11:49",
+        "localTime": "Thu 12:10",
         "window": "outside_work_hours",
         "nextBest": "Europe/Copenhagen afternoon",
         "weight": 0
@@ -1669,7 +1669,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Asia/Shanghai",
-        "localTime": "Thu 17:49",
+        "localTime": "Thu 18:10",
         "window": "outside_work_hours",
         "nextBest": "Asia/Shanghai morning",
         "weight": 0
@@ -1759,7 +1759,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/Copenhagen",
-        "localTime": "Thu 11:49",
+        "localTime": "Thu 12:10",
         "window": "outside_work_hours",
         "nextBest": "Europe/Copenhagen afternoon",
         "weight": 0
@@ -1849,7 +1849,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/London",
-        "localTime": "Thu 10:49",
+        "localTime": "Thu 11:10",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -1939,7 +1939,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/Paris",
-        "localTime": "Thu 11:49",
+        "localTime": "Thu 12:10",
         "window": "outside_work_hours",
         "nextBest": "Europe/Paris afternoon",
         "weight": 0
@@ -2029,7 +2029,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Asia/Shanghai",
-        "localTime": "Thu 17:49",
+        "localTime": "Thu 18:10",
         "window": "outside_work_hours",
         "nextBest": "Asia/Shanghai morning",
         "weight": 0
@@ -2119,7 +2119,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/Helsinki",
-        "localTime": "Thu 12:49",
+        "localTime": "Thu 13:10",
         "window": "outside_work_hours",
         "nextBest": "Europe/Helsinki afternoon",
         "weight": 0
@@ -2209,7 +2209,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/Dublin",
-        "localTime": "Thu 10:49",
+        "localTime": "Thu 11:10",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -2293,7 +2293,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/London",
-        "localTime": "Thu 10:49",
+        "localTime": "Thu 11:10",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -2377,7 +2377,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/London",
-        "localTime": "Thu 10:49",
+        "localTime": "Thu 11:10",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -2461,7 +2461,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Asia/Shanghai",
-        "localTime": "Thu 17:49",
+        "localTime": "Thu 18:10",
         "window": "outside_work_hours",
         "nextBest": "Asia/Shanghai morning",
         "weight": 0
@@ -2494,90 +2494,6 @@
       "contactChannelScore": 13,
       "dealProbabilityScore": 214,
       "priorityScore": 214,
-      "lastStatus": "",
-      "lastEvidence": "",
-      "lastTouch": "",
-      "visibleOnly": false
-    },
-    {
-      "id": "google-customer-8a-pl-facebook",
-      "name": "8a.pl",
-      "company": "8a.pl",
-      "customerType": "key_account",
-      "discoveryMode": "autonomous_refill",
-      "country": "Poland",
-      "countryEn": "Poland",
-      "fitScore": 84,
-      "fitTier": "A",
-      "marketScore": 4.5,
-      "marketStatus": "open",
-      "agencyState": "open",
-      "agentCompany": "",
-      "keyword": "verified outdoor, camping and travel retail social refill channel",
-      "role": "Outdoor, camping, travel accessories, ecommerce or category buyer.",
-      "background": "8a.pl is a qualified outdoor, camping, travel or sport retail prospect with category fit for FLEXTAIL portable outdoor electrics and Vollyc practical 3C products.",
-      "buyerPersona": "Outdoor, camping, travel accessories, ecommerce or category buyer.",
-      "targetMarkets": "",
-      "excludedMarkets": "",
-      "productCategory": "verified outdoor, camping and travel retail social refill channel",
-      "businessModel": "Retail Chain",
-      "productFit": "FLEXTAIL portable pumps, outdoor power, camping lighting and compact camping accessories",
-      "opportunity": "8a.pl is a qualified outdoor, camping, travel or sport retail prospect with category fit for FLEXTAIL portable outdoor electrics and Vollyc practical 3C products.",
-      "linkedin_url": "",
-      "linkedin": "",
-      "publicEmail": "",
-      "contactEmail": "",
-      "vendorPortal": "https://8a.pl/",
-      "contactPhone": "",
-      "contactNote": "",
-      "publicEmailStatus": "",
-      "website": "https://8a.pl/",
-      "evidenceUrl": "https://www.google.com/search?q=%228a.pl%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22Poland%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "sourceEvidenceUrl": "verified outdoor retailer official website and public social profile refill",
-      "externalVerificationStatus": "",
-      "query": "https://www.google.com/search?q=%228a.pl%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22Poland%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "source": "google_customer_discovery",
-      "sourceType": "google",
-      "discoveryProvider": "google",
-      "channel": "",
-      "identityStatus": "verified",
-      "officialSocialProfileVerified": true,
-      "profiledAt": "",
-      "partnershipStatus": "",
-      "doNotOutreach": false,
-      "automationStatus": "",
-      "partnerNote": "",
-      "sendStatus": "",
-      "workingTime": {
-        "dueNow": false,
-        "timeZone": "Europe/Warsaw",
-        "localTime": "Thu 11:49",
-        "window": "outside_work_hours",
-        "nextBest": "Europe/Warsaw afternoon",
-        "weight": 0
-      },
-      "platform": "facebook",
-      "platformUrl": "https://www.facebook.com/sklep8apl",
-      "url": "https://www.facebook.com/sklep8apl",
-      "action": "develop",
-      "reason": "concrete_google_discovered_major_customer_facebook",
-      "alternateChannels": {
-        "linkedin": "",
-        "instagram": "https://www.instagram.com/8apl/",
-        "facebook": "https://www.facebook.com/sklep8apl",
-        "websiteContact": "https://8a.pl/"
-      },
-      "invalidChannels": {},
-      "facebookStatus": "verified_official_page_candidate",
-      "identitySource": "official Facebook page candidate + official website + Google background query",
-      "channelPriority": 2,
-      "discoveredAt": "2026-07-16T05:03:53.170Z",
-      "taskId": "google-customer-8a-pl-facebook",
-      "targetRegion": "europe",
-      "targetRegionScore": 45,
-      "contactChannelScore": 17,
-      "dealProbabilityScore": 218,
-      "priorityScore": 218,
       "lastStatus": "",
       "lastEvidence": "",
       "lastTouch": "",
@@ -2635,7 +2551,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/Berlin",
-        "localTime": "Thu 11:49",
+        "localTime": "Thu 12:10",
         "window": "outside_work_hours",
         "nextBest": "Europe/Berlin afternoon",
         "weight": 0
@@ -2719,7 +2635,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/Berlin",
-        "localTime": "Thu 11:49",
+        "localTime": "Thu 12:10",
         "window": "outside_work_hours",
         "nextBest": "Europe/Berlin afternoon",
         "weight": 0
@@ -2803,7 +2719,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/Oslo",
-        "localTime": "Thu 11:49",
+        "localTime": "Thu 12:10",
         "window": "outside_work_hours",
         "nextBest": "Europe/Oslo afternoon",
         "weight": 0
@@ -2893,7 +2809,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/Zurich",
-        "localTime": "Thu 11:49",
+        "localTime": "Thu 12:10",
         "window": "outside_work_hours",
         "nextBest": "Europe/Zurich afternoon",
         "weight": 0
@@ -2983,7 +2899,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Australia/Sydney",
-        "localTime": "Thu 19:49",
+        "localTime": "Thu 20:10",
         "window": "outside_work_hours",
         "nextBest": "Australia/Sydney morning",
         "weight": 0
@@ -3073,7 +2989,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Australia/Sydney",
-        "localTime": "Thu 19:49",
+        "localTime": "Thu 20:10",
         "window": "outside_work_hours",
         "nextBest": "Australia/Sydney morning",
         "weight": 0
@@ -3163,7 +3079,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Pacific/Auckland",
-        "localTime": "Thu 21:49",
+        "localTime": "Thu 22:10",
         "window": "outside_work_hours",
         "nextBest": "Pacific/Auckland morning",
         "weight": 0
@@ -3253,7 +3169,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Australia/Sydney",
-        "localTime": "Thu 19:49",
+        "localTime": "Thu 20:10",
         "window": "outside_work_hours",
         "nextBest": "Australia/Sydney morning",
         "weight": 0
@@ -3343,7 +3259,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Pacific/Auckland",
-        "localTime": "Thu 21:49",
+        "localTime": "Thu 22:10",
         "window": "outside_work_hours",
         "nextBest": "Pacific/Auckland morning",
         "weight": 0
@@ -3427,7 +3343,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Thu 05:49",
+        "localTime": "Thu 06:10",
         "window": "outside_work_hours",
         "nextBest": "America/Toronto morning",
         "weight": 0
@@ -3517,7 +3433,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Thu 05:49",
+        "localTime": "Thu 06:10",
         "window": "outside_work_hours",
         "nextBest": "America/Toronto morning",
         "weight": 0
@@ -3607,7 +3523,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Thu 05:49",
+        "localTime": "Thu 06:10",
         "window": "outside_work_hours",
         "nextBest": "America/Toronto morning",
         "weight": 0
@@ -3697,7 +3613,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Thu 05:49",
+        "localTime": "Thu 06:10",
         "window": "outside_work_hours",
         "nextBest": "America/Toronto morning",
         "weight": 0
@@ -3781,7 +3697,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Thu 05:49",
+        "localTime": "Thu 06:10",
         "window": "outside_work_hours",
         "nextBest": "America/Toronto morning",
         "weight": 0
@@ -3867,7 +3783,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/30 17:47:01",
+        "localTime": "2026/7/30 18:10:36",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -3963,7 +3879,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/30 17:47:01",
+        "localTime": "2026/7/30 18:10:36",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -4059,7 +3975,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/30 17:47:01",
+        "localTime": "2026/7/30 18:10:36",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -4155,7 +4071,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/30 17:47:01",
+        "localTime": "2026/7/30 18:10:36",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -4251,7 +4167,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/30 17:47:01",
+        "localTime": "2026/7/30 18:10:36",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -4347,7 +4263,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/30 17:47:01",
+        "localTime": "2026/7/30 18:10:36",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -4443,7 +4359,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/30 17:47:01",
+        "localTime": "2026/7/30 18:10:36",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -4539,7 +4455,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/30 17:47:01",
+        "localTime": "2026/7/30 18:10:36",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -4635,7 +4551,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/30 17:47:01",
+        "localTime": "2026/7/30 18:10:36",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -4731,7 +4647,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/30 17:47:01",
+        "localTime": "2026/7/30 18:10:36",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -4827,7 +4743,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/30 17:47:01",
+        "localTime": "2026/7/30 18:10:36",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -4923,7 +4839,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/30 17:47:01",
+        "localTime": "2026/7/30 18:10:36",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -5019,7 +4935,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/30 17:47:01",
+        "localTime": "2026/7/30 18:10:36",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -5115,7 +5031,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/30 17:47:01",
+        "localTime": "2026/7/30 18:10:36",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -5156,102 +5072,6 @@
       "contactChannelScore": 13,
       "dealProbabilityScore": 219,
       "priorityScore": 232,
-      "potentialSource": "google_linkedin_social_refill",
-      "nextAction": "background_check_then_verify_channel"
-    },
-    {
-      "id": "google-customer-8a-pl-website-contact",
-      "name": "8a.pl",
-      "company": "8a.pl",
-      "customerType": "key_account",
-      "discoveryMode": "autonomous_refill",
-      "country": "Poland",
-      "countryEn": "Poland",
-      "fitScore": 84,
-      "fitTier": "A",
-      "marketScore": 4.5,
-      "marketStatus": "open",
-      "agencyState": "open",
-      "agentCompany": "",
-      "keyword": "verified outdoor, camping and travel retail social refill channel",
-      "role": "Outdoor, camping, travel accessories, ecommerce or category buyer.",
-      "background": "8a.pl is a qualified outdoor, camping, travel or sport retail prospect with category fit for FLEXTAIL portable outdoor electrics and Vollyc practical 3C products.",
-      "buyerPersona": "Outdoor, camping, travel accessories, ecommerce or category buyer.",
-      "targetMarkets": "",
-      "excludedMarkets": "",
-      "productCategory": "verified outdoor, camping and travel retail social refill channel",
-      "businessModel": "Retail Chain",
-      "productFit": "FLEXTAIL portable pumps, outdoor power, camping lighting and compact camping accessories",
-      "opportunity": "8a.pl is a qualified outdoor, camping, travel or sport retail prospect with category fit for FLEXTAIL portable outdoor electrics and Vollyc practical 3C products.",
-      "linkedin_url": "",
-      "linkedin": "",
-      "publicEmail": "",
-      "contactEmail": "",
-      "vendorPortal": "https://8a.pl/",
-      "contactPhone": "",
-      "contactNote": "",
-      "publicEmailStatus": "",
-      "website": "https://8a.pl/",
-      "evidenceUrl": "https://www.google.com/search?q=%228a.pl%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22Poland%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "sourceEvidenceUrl": "verified outdoor retailer official website and public social profile refill",
-      "externalVerificationStatus": "",
-      "query": "https://www.google.com/search?q=%228a.pl%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22Poland%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "source": "google_customer_discovery",
-      "sourceType": "google",
-      "discoveryProvider": "google",
-      "channel": "",
-      "identityStatus": "verified",
-      "officialSocialProfileVerified": true,
-      "profiledAt": "",
-      "partnershipStatus": "",
-      "doNotOutreach": false,
-      "automationStatus": "",
-      "partnerNote": "",
-      "sendStatus": "",
-      "workingTime": {
-        "dueNow": true,
-        "timeZone": "local-market",
-        "localTime": "2026/7/30 17:47:01",
-        "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
-      },
-      "platform": "website_form",
-      "channelType": "website_form",
-      "platformUrl": "https://8a.pl/",
-      "url": "https://8a.pl/",
-      "contactUrl": "https://8a.pl/",
-      "contactSearchUrl": "https://www.google.com/search?q=site%3A8a.pl%20%228a.pl%22%20contact%20buyer%20wholesale%20email%20vendor",
-      "emailFrom": "leo@flextailgear.com",
-      "websiteContactSubject": "FLEXTAIL retail partnership | 2026 assortment",
-      "websiteContactMessage": "Dear 8a.pl Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
-      "websiteContactFlow": "open_official_contact_us_fill_attach_auto_submit",
-      "action": "verify_target",
-      "reason": "homepage_only_contact_path_requires_verification",
-      "alternateChannels": {
-        "linkedin": "",
-        "instagram": "https://www.instagram.com/8apl/",
-        "facebook": "https://www.facebook.com/sklep8apl",
-        "websiteContact": "https://8a.pl/"
-      },
-      "invalidChannels": {},
-      "identitySource": "official homepage found; exact buyer/contact path still requires verification",
-      "channelPriority": 3,
-      "discoveredAt": "2026-07-16T05:03:53.170Z",
-      "linkedinUrl": "",
-      "linkedinSearchUrl": "https://www.linkedin.com/search/results/all/?keywords=8a.pl%20buyer%20outdoor%20LinkedIn",
-      "googleSearchUrl": "https://www.google.com/search?q=site%3A8a.pl%20%228a.pl%22%20contact%20buyer%20wholesale%20email%20vendor",
-      "dataSources": [
-        "google_linkedin_social_refill"
-      ],
-      "taskId": "google-customer-8a-pl-website-contact",
-      "lastStatus": "",
-      "lastEvidence": "",
-      "lastTouch": "",
-      "previouslyContacted": false,
-      "targetRegion": "europe",
-      "targetRegionScore": 45,
-      "contactChannelScore": 17,
-      "dealProbabilityScore": 218,
-      "priorityScore": 235,
       "potentialSource": "google_linkedin_social_refill",
       "nextAction": "background_check_then_verify_channel"
     },
@@ -5307,7 +5127,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/30 17:47:01",
+        "localTime": "2026/7/30 18:10:36",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -5403,7 +5223,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/30 17:47:01",
+        "localTime": "2026/7/30 18:10:36",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -5499,7 +5319,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/30 17:47:01",
+        "localTime": "2026/7/30 18:10:36",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -5595,7 +5415,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/30 17:47:01",
+        "localTime": "2026/7/30 18:10:36",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -5697,7 +5517,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/30 17:47:01",
+        "localTime": "2026/7/30 18:10:36",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -5793,7 +5613,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/30 17:47:01",
+        "localTime": "2026/7/30 18:10:36",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -5889,7 +5709,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/30 17:47:01",
+        "localTime": "2026/7/30 18:10:36",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -5985,7 +5805,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/30 17:47:01",
+        "localTime": "2026/7/30 18:10:36",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -6081,7 +5901,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/30 17:47:01",
+        "localTime": "2026/7/30 18:10:36",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -6177,7 +5997,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/30 17:47:01",
+        "localTime": "2026/7/30 18:10:36",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -6273,7 +6093,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/30 17:47:01",
+        "localTime": "2026/7/30 18:10:36",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -6369,7 +6189,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/30 17:47:01",
+        "localTime": "2026/7/30 18:10:36",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -6465,7 +6285,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/30 17:47:01",
+        "localTime": "2026/7/30 18:10:36",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -6561,7 +6381,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/30 17:47:01",
+        "localTime": "2026/7/30 18:10:36",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -6657,7 +6477,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/30 17:47:01",
+        "localTime": "2026/7/30 18:10:36",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -6753,7 +6573,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/30 17:47:01",
+        "localTime": "2026/7/30 18:10:36",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -6849,7 +6669,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/30 17:47:01",
+        "localTime": "2026/7/30 18:10:36",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -6945,7 +6765,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/30 17:47:01",
+        "localTime": "2026/7/30 18:10:36",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -7041,7 +6861,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/30 17:47:01",
+        "localTime": "2026/7/30 18:10:36",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -7137,7 +6957,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/30 17:47:01",
+        "localTime": "2026/7/30 18:10:36",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -7233,7 +7053,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/30 17:47:01",
+        "localTime": "2026/7/30 18:10:36",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -7335,7 +7155,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/30 17:47:01",
+        "localTime": "2026/7/30 18:10:36",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -7431,7 +7251,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/30 17:47:01",
+        "localTime": "2026/7/30 18:10:36",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -7533,7 +7353,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/30 17:47:01",
+        "localTime": "2026/7/30 18:10:36",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -7629,7 +7449,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/30 17:47:01",
+        "localTime": "2026/7/30 18:10:36",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -7725,7 +7545,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/30 17:47:01",
+        "localTime": "2026/7/30 18:10:36",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -7821,7 +7641,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/30 17:47:01",
+        "localTime": "2026/7/30 18:10:36",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -7917,7 +7737,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/30 17:47:01",
+        "localTime": "2026/7/30 18:10:36",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -8013,7 +7833,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/30 17:47:01",
+        "localTime": "2026/7/30 18:10:36",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -8109,7 +7929,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/30 17:47:01",
+        "localTime": "2026/7/30 18:10:36",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -8205,7 +8025,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/30 17:47:01",
+        "localTime": "2026/7/30 18:10:36",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -8301,7 +8121,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/30 17:47:01",
+        "localTime": "2026/7/30 18:10:36",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -8397,7 +8217,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/30 17:47:01",
+        "localTime": "2026/7/30 18:10:36",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -8493,7 +8313,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/30 17:47:01",
+        "localTime": "2026/7/30 18:10:36",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -8589,7 +8409,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/30 17:47:01",
+        "localTime": "2026/7/30 18:10:36",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -8685,7 +8505,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/30 17:47:01",
+        "localTime": "2026/7/30 18:10:36",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -8781,7 +8601,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/30 17:47:01",
+        "localTime": "2026/7/30 18:10:36",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -8877,7 +8697,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/30 17:47:01",
+        "localTime": "2026/7/30 18:10:36",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -8973,7 +8793,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/30 17:47:01",
+        "localTime": "2026/7/30 18:10:36",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -9069,7 +8889,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/30 17:47:01",
+        "localTime": "2026/7/30 18:10:36",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -9165,7 +8985,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/30 17:47:01",
+        "localTime": "2026/7/30 18:10:36",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -9214,97 +9034,6 @@
       "priorityScore": 157,
       "potentialSource": "google_linkedin_social_refill",
       "nextAction": "background_check_then_verify_channel"
-    },
-    {
-      "id": "google-customer-8a-pl-facebook",
-      "name": "8a.pl",
-      "company": "8a.pl",
-      "customerType": "key_account",
-      "discoveryMode": "autonomous_refill",
-      "country": "Poland",
-      "countryEn": "Poland",
-      "fitScore": 84,
-      "fitTier": "A",
-      "marketScore": 4.5,
-      "marketStatus": "open",
-      "agencyState": "open",
-      "agentCompany": "",
-      "keyword": "verified outdoor, camping and travel retail social refill channel",
-      "role": "Outdoor, camping, travel accessories, ecommerce or category buyer.",
-      "background": "8a.pl is a qualified outdoor, camping, travel or sport retail prospect with category fit for FLEXTAIL portable outdoor electrics and Vollyc practical 3C products.",
-      "buyerPersona": "Outdoor, camping, travel accessories, ecommerce or category buyer.",
-      "targetMarkets": "",
-      "excludedMarkets": "",
-      "productCategory": "verified outdoor, camping and travel retail social refill channel",
-      "businessModel": "Retail Chain",
-      "productFit": "FLEXTAIL portable pumps, outdoor power, camping lighting and compact camping accessories",
-      "opportunity": "8a.pl is a qualified outdoor, camping, travel or sport retail prospect with category fit for FLEXTAIL portable outdoor electrics and Vollyc practical 3C products.",
-      "linkedin_url": "",
-      "linkedin": "",
-      "publicEmail": "",
-      "contactEmail": "",
-      "vendorPortal": "https://8a.pl/",
-      "contactPhone": "",
-      "contactNote": "",
-      "publicEmailStatus": "",
-      "website": "https://8a.pl/",
-      "evidenceUrl": "https://www.google.com/search?q=%228a.pl%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22Poland%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "sourceEvidenceUrl": "verified outdoor retailer official website and public social profile refill",
-      "externalVerificationStatus": "",
-      "query": "https://www.google.com/search?q=%228a.pl%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22Poland%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "source": "google_customer_discovery",
-      "sourceType": "google",
-      "discoveryProvider": "google",
-      "channel": "",
-      "identityStatus": "verified",
-      "officialSocialProfileVerified": true,
-      "profiledAt": "",
-      "partnershipStatus": "",
-      "doNotOutreach": false,
-      "automationStatus": "",
-      "partnerNote": "",
-      "sendStatus": "",
-      "workingTime": {
-        "dueNow": true,
-        "timeZone": "local-market",
-        "localTime": "2026/7/30 17:47:01",
-        "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
-      },
-      "platform": "facebook",
-      "platformUrl": "https://www.facebook.com/sklep8apl",
-      "url": "https://www.facebook.com/sklep8apl",
-      "action": "develop",
-      "reason": "concrete_google_discovered_major_customer_facebook",
-      "alternateChannels": {
-        "linkedin": "",
-        "instagram": "https://www.instagram.com/8apl/",
-        "facebook": "https://www.facebook.com/sklep8apl",
-        "websiteContact": "https://8a.pl/"
-      },
-      "invalidChannels": {},
-      "facebookStatus": "verified_official_page_candidate",
-      "identitySource": "official Facebook page candidate + official website + Google background query",
-      "channelPriority": 2,
-      "discoveredAt": "2026-07-16T05:03:53.170Z",
-      "linkedinUrl": "",
-      "linkedinSearchUrl": "https://www.linkedin.com/search/results/all/?keywords=8a.pl%20buyer%20outdoor%20LinkedIn",
-      "googleSearchUrl": "https://www.google.com/search?q=8a.pl%20outdoor%20buyer%20partnership%20contact",
-      "contactSearchUrl": "https://www.google.com/search?q=8a.pl%20outdoor%20buyer%20partnership%20contact",
-      "dataSources": [
-        "google_linkedin_social_refill"
-      ],
-      "taskId": "google-customer-8a-pl-facebook",
-      "lastStatus": "",
-      "lastEvidence": "",
-      "lastTouch": "",
-      "previouslyContacted": false,
-      "targetRegion": "europe",
-      "targetRegionScore": 45,
-      "contactChannelScore": 17,
-      "dealProbabilityScore": 218,
-      "priorityScore": 235,
-      "potentialSource": "google_linkedin_social_refill",
-      "nextAction": "develop_after_identity_check"
     },
     {
       "id": "google-customer-above-and-beyond-facebook",
@@ -9358,7 +9087,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/30 17:47:01",
+        "localTime": "2026/7/30 18:10:36",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -9449,7 +9178,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/30 17:47:01",
+        "localTime": "2026/7/30 18:10:36",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -9540,7 +9269,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/30 17:47:01",
+        "localTime": "2026/7/30 18:10:36",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -9631,7 +9360,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/30 17:47:01",
+        "localTime": "2026/7/30 18:10:36",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -9728,7 +9457,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/30 17:47:01",
+        "localTime": "2026/7/30 18:10:36",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -9819,7 +9548,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/30 17:47:01",
+        "localTime": "2026/7/30 18:10:36",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -9910,7 +9639,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/30 17:47:01",
+        "localTime": "2026/7/30 18:10:36",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -10001,7 +9730,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/30 17:47:01",
+        "localTime": "2026/7/30 18:10:36",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -10092,7 +9821,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/30 17:47:01",
+        "localTime": "2026/7/30 18:10:36",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -10183,7 +9912,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/30 17:47:01",
+        "localTime": "2026/7/30 18:10:36",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -10280,7 +10009,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/30 17:47:01",
+        "localTime": "2026/7/30 18:10:36",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -10371,7 +10100,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/30 17:47:01",
+        "localTime": "2026/7/30 18:10:36",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -10468,7 +10197,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/30 17:47:01",
+        "localTime": "2026/7/30 18:10:36",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -10559,7 +10288,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/30 17:47:01",
+        "localTime": "2026/7/30 18:10:36",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -10650,7 +10379,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/30 17:47:01",
+        "localTime": "2026/7/30 18:10:36",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -10692,95 +10421,6 @@
       "contactChannelScore": 17,
       "dealProbabilityScore": 140,
       "priorityScore": 157,
-      "potentialSource": "google_linkedin_social_refill",
-      "nextAction": "develop_after_identity_check"
-    },
-    {
-      "id": "google-customer-8a-pl-instagram",
-      "name": "8a.pl",
-      "company": "8a.pl",
-      "customerType": "key_account",
-      "discoveryMode": "autonomous_refill",
-      "country": "Poland",
-      "countryEn": "Poland",
-      "fitScore": 84,
-      "fitTier": "A",
-      "marketScore": 4.5,
-      "marketStatus": "open",
-      "agencyState": "open",
-      "agentCompany": "",
-      "keyword": "verified outdoor, camping and travel retail social refill channel",
-      "role": "Outdoor, camping, travel accessories, ecommerce or category buyer.",
-      "background": "8a.pl is a qualified outdoor, camping, travel or sport retail prospect with category fit for FLEXTAIL portable outdoor electrics and Vollyc practical 3C products.",
-      "buyerPersona": "Outdoor, camping, travel accessories, ecommerce or category buyer.",
-      "targetMarkets": "",
-      "excludedMarkets": "",
-      "productCategory": "verified outdoor, camping and travel retail social refill channel",
-      "businessModel": "Retail Chain",
-      "productFit": "FLEXTAIL portable pumps, outdoor power, camping lighting and compact camping accessories",
-      "opportunity": "8a.pl is a qualified outdoor, camping, travel or sport retail prospect with category fit for FLEXTAIL portable outdoor electrics and Vollyc practical 3C products.",
-      "linkedin_url": "",
-      "linkedin": "",
-      "publicEmail": "",
-      "contactEmail": "",
-      "vendorPortal": "https://8a.pl/",
-      "contactPhone": "",
-      "contactNote": "",
-      "publicEmailStatus": "",
-      "website": "https://8a.pl/",
-      "evidenceUrl": "https://www.google.com/search?q=%228a.pl%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22Poland%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "sourceEvidenceUrl": "verified outdoor retailer official website and public social profile refill",
-      "externalVerificationStatus": "",
-      "query": "https://www.google.com/search?q=%228a.pl%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22Poland%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "source": "google_customer_discovery",
-      "sourceType": "google",
-      "discoveryProvider": "google",
-      "channel": "",
-      "identityStatus": "verified",
-      "officialSocialProfileVerified": true,
-      "profiledAt": "",
-      "partnershipStatus": "",
-      "doNotOutreach": false,
-      "automationStatus": "",
-      "partnerNote": "",
-      "sendStatus": "",
-      "workingTime": {
-        "dueNow": true,
-        "timeZone": "local-market",
-        "localTime": "2026/7/30 17:47:01",
-        "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
-      },
-      "platform": "instagram",
-      "platformUrl": "https://www.instagram.com/8apl/",
-      "url": "https://www.instagram.com/8apl/",
-      "action": "develop",
-      "reason": "concrete_google_discovered_major_customer_instagram",
-      "alternateChannels": {
-        "linkedin": "",
-        "instagram": "https://www.instagram.com/8apl/",
-        "facebook": "https://www.facebook.com/sklep8apl",
-        "websiteContact": "https://8a.pl/"
-      },
-      "identitySource": "official website/social profile + Google background query",
-      "channelPriority": 1,
-      "discoveredAt": "2026-07-16T05:03:53.170Z",
-      "linkedinUrl": "",
-      "linkedinSearchUrl": "https://www.linkedin.com/search/results/all/?keywords=8a.pl%20buyer%20outdoor%20LinkedIn",
-      "googleSearchUrl": "https://www.google.com/search?q=8a.pl%20outdoor%20buyer%20partnership%20contact",
-      "contactSearchUrl": "https://www.google.com/search?q=8a.pl%20outdoor%20buyer%20partnership%20contact",
-      "dataSources": [
-        "google_linkedin_social_refill"
-      ],
-      "taskId": "google-customer-8a-pl-instagram",
-      "lastStatus": "",
-      "lastEvidence": "",
-      "lastTouch": "",
-      "previouslyContacted": false,
-      "targetRegion": "europe",
-      "targetRegionScore": 45,
-      "contactChannelScore": 17,
-      "dealProbabilityScore": 218,
-      "priorityScore": 235,
       "potentialSource": "google_linkedin_social_refill",
       "nextAction": "develop_after_identity_check"
     },
@@ -10836,7 +10476,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/30 17:47:01",
+        "localTime": "2026/7/30 18:10:36",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -10925,7 +10565,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/30 17:47:01",
+        "localTime": "2026/7/30 18:10:36",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -11014,7 +10654,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/30 17:47:01",
+        "localTime": "2026/7/30 18:10:36",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -11103,7 +10743,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/30 17:47:01",
+        "localTime": "2026/7/30 18:10:36",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -11192,7 +10832,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/30 17:47:01",
+        "localTime": "2026/7/30 18:10:36",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -11281,7 +10921,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/30 17:47:01",
+        "localTime": "2026/7/30 18:10:36",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -11370,7 +11010,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/30 17:47:01",
+        "localTime": "2026/7/30 18:10:36",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -11459,7 +11099,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/30 17:47:01",
+        "localTime": "2026/7/30 18:10:36",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -11548,7 +11188,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/30 17:47:01",
+        "localTime": "2026/7/30 18:10:36",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -11637,7 +11277,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/30 17:47:01",
+        "localTime": "2026/7/30 18:10:36",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -11726,7 +11366,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/30 17:47:01",
+        "localTime": "2026/7/30 18:10:36",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -12506,6 +12146,144 @@
       "priorityScore": 100,
       "potentialSource": "customer_table",
       "nextAction": "background_check_then_verify_channel"
+    },
+    {
+      "id": 18,
+      "name": "Brian Scott",
+      "company": "Winnebago",
+      "role": "Procurement Manager",
+      "category": "rv",
+      "ka_flag": false,
+      "priority": "?",
+      "status": "Pending",
+      "keyword_used": "OEM RV power supplier",
+      "message": "Hi Brian,\n\nWe're interested in OEM partnerships with RV manufacturers. Winnebago's quality standards align with ours.\n\nBest,\nDavid",
+      "source": "outreach_data",
+      "country": "",
+      "countryEn": "",
+      "platform": "research",
+      "fitScore": 100,
+      "fitTier": "A",
+      "sourceType": "customer_table",
+      "website": "",
+      "url": "",
+      "platformUrl": "",
+      "linkedinUrl": "",
+      "linkedinSearchUrl": "https://www.linkedin.com/search/results/all/?keywords=Winnebago%20buyer%20outdoor%20LinkedIn",
+      "googleSearchUrl": "https://www.google.com/search?q=Winnebago%20outdoor%20buyer%20partnership%20contact",
+      "contactSearchUrl": "https://www.google.com/search?q=Winnebago%20outdoor%20buyer%20partnership%20contact",
+      "dataSources": [
+        "customer_table"
+      ],
+      "background": "Hi Brian,\n\nWe're interested in OEM partnerships with RV manufacturers. Winnebago's quality standards align with ours.\n\nBest,\nDavid",
+      "buyerPersona": "Procurement Manager",
+      "marketStatus": "",
+      "taskId": 18,
+      "action": "verify_target",
+      "reason": "missing_verified_profile_url",
+      "lastStatus": "",
+      "lastEvidence": "",
+      "lastTouch": "",
+      "previouslyContacted": false,
+      "targetRegion": "other",
+      "targetRegionScore": 0,
+      "contactChannelScore": 0,
+      "dealProbabilityScore": 100,
+      "priorityScore": 100,
+      "potentialSource": "customer_table",
+      "nextAction": "background_check_then_verify_channel"
+    },
+    {
+      "id": 11,
+      "name": "Chris Brown",
+      "company": "Best Buy",
+      "role": "Regional Buyer",
+      "category": "ka",
+      "ka_flag": false,
+      "priority": "?",
+      "status": "Pending",
+      "keyword_used": "electronics retail buyer",
+      "message": "Hi Chris,\n\nFlextail portable power stations are perfect for the consumer electronics category. We're looking for retail partners.\n\nBest,\nDavid",
+      "source": "outreach_data",
+      "country": "",
+      "countryEn": "",
+      "platform": "research",
+      "fitScore": 99,
+      "fitTier": "A",
+      "sourceType": "customer_table",
+      "website": "",
+      "url": "",
+      "platformUrl": "",
+      "linkedinUrl": "",
+      "linkedinSearchUrl": "https://www.linkedin.com/search/results/all/?keywords=Best%20Buy%20buyer%20outdoor%20LinkedIn",
+      "googleSearchUrl": "https://www.google.com/search?q=Best%20Buy%20outdoor%20buyer%20partnership%20contact",
+      "contactSearchUrl": "https://www.google.com/search?q=Best%20Buy%20outdoor%20buyer%20partnership%20contact",
+      "dataSources": [
+        "customer_table"
+      ],
+      "background": "Hi Chris,\n\nFlextail portable power stations are perfect for the consumer electronics category. We're looking for retail partners.\n\nBest,\nDavid",
+      "buyerPersona": "Regional Buyer",
+      "marketStatus": "",
+      "taskId": 11,
+      "action": "verify_target",
+      "reason": "missing_verified_profile_url",
+      "lastStatus": "",
+      "lastEvidence": "",
+      "lastTouch": "",
+      "previouslyContacted": false,
+      "targetRegion": "other",
+      "targetRegionScore": 0,
+      "contactChannelScore": 0,
+      "dealProbabilityScore": 99,
+      "priorityScore": 99,
+      "potentialSource": "customer_table",
+      "nextAction": "background_check_then_verify_channel"
+    },
+    {
+      "id": 9,
+      "name": "Mark Johnson",
+      "company": "Canadian Tire",
+      "role": "Senior Buyer - Electronics",
+      "category": "ka",
+      "ka_flag": false,
+      "priority": "?",
+      "status": "Pending",
+      "keyword_used": "hypermarket buyer electronics",
+      "message": "Hi Mark,\n\nFlextail portable power stations are making waves in the outdoor market. We'd love to discuss a partnership with Canadian Tire.\n\nBest,\nDavid",
+      "source": "outreach_data",
+      "country": "",
+      "countryEn": "",
+      "platform": "research",
+      "fitScore": 99,
+      "fitTier": "A",
+      "sourceType": "customer_table",
+      "website": "",
+      "url": "",
+      "platformUrl": "",
+      "linkedinUrl": "",
+      "linkedinSearchUrl": "https://www.linkedin.com/search/results/all/?keywords=Canadian%20Tire%20buyer%20outdoor%20LinkedIn",
+      "googleSearchUrl": "https://www.google.com/search?q=Canadian%20Tire%20outdoor%20buyer%20partnership%20contact",
+      "contactSearchUrl": "https://www.google.com/search?q=Canadian%20Tire%20outdoor%20buyer%20partnership%20contact",
+      "dataSources": [
+        "customer_table"
+      ],
+      "background": "Hi Mark,\n\nFlextail portable power stations are making waves in the outdoor market. We'd love to discuss a partnership with Canadian Tire.\n\nBest,\nDavid",
+      "buyerPersona": "Senior Buyer - Electronics",
+      "marketStatus": "",
+      "taskId": 9,
+      "action": "verify_target",
+      "reason": "missing_verified_profile_url",
+      "lastStatus": "",
+      "lastEvidence": "",
+      "lastTouch": "",
+      "previouslyContacted": false,
+      "targetRegion": "other",
+      "targetRegionScore": 0,
+      "contactChannelScore": 0,
+      "dealProbabilityScore": 99,
+      "priorityScore": 99,
+      "potentialSource": "customer_table",
+      "nextAction": "background_check_then_verify_channel"
     }
   ],
   "dailyQueue": [
@@ -12561,7 +12339,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/London",
-        "localTime": "Thu 10:49",
+        "localTime": "Thu 11:10",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -12646,7 +12424,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/London",
-        "localTime": "Thu 10:49",
+        "localTime": "Thu 11:10",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -12731,7 +12509,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/London",
-        "localTime": "Thu 10:49",
+        "localTime": "Thu 11:10",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -12816,7 +12594,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/Dublin",
-        "localTime": "Thu 10:49",
+        "localTime": "Thu 11:10",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -12901,7 +12679,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/London",
-        "localTime": "Thu 10:49",
+        "localTime": "Thu 11:10",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -12986,7 +12764,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/London",
-        "localTime": "Thu 10:49",
+        "localTime": "Thu 11:10",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -13071,7 +12849,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/London",
-        "localTime": "Thu 10:49",
+        "localTime": "Thu 11:10",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -13156,7 +12934,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/London",
-        "localTime": "Thu 10:49",
+        "localTime": "Thu 11:10",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -13241,7 +13019,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/Dublin",
-        "localTime": "Thu 10:49",
+        "localTime": "Thu 11:10",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -13320,7 +13098,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/London",
-        "localTime": "Thu 10:49",
+        "localTime": "Thu 11:10",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -13399,7 +13177,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/London",
-        "localTime": "Thu 10:49",
+        "localTime": "Thu 11:10",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -13478,7 +13256,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/Dublin",
-        "localTime": "Thu 10:49",
+        "localTime": "Thu 11:10",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -13555,7 +13333,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/London",
-        "localTime": "Thu 10:49",
+        "localTime": "Thu 11:10",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -13632,7 +13410,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/London",
-        "localTime": "Thu 10:49",
+        "localTime": "Thu 11:10",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -14085,7 +13863,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Asia/Shanghai",
-        "localTime": "Thu 17:49",
+        "localTime": "Thu 18:10",
         "window": "outside_work_hours",
         "nextBest": "Asia/Shanghai morning",
         "weight": 0
@@ -14170,7 +13948,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Asia/Shanghai",
-        "localTime": "Thu 17:49",
+        "localTime": "Thu 18:10",
         "window": "outside_work_hours",
         "nextBest": "Asia/Shanghai morning",
         "weight": 0
@@ -14255,7 +14033,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/Paris",
-        "localTime": "Thu 11:49",
+        "localTime": "Thu 12:10",
         "window": "outside_work_hours",
         "nextBest": "Europe/Paris afternoon",
         "weight": 0
@@ -14340,7 +14118,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/Oslo",
-        "localTime": "Thu 11:49",
+        "localTime": "Thu 12:10",
         "window": "outside_work_hours",
         "nextBest": "Europe/Oslo afternoon",
         "weight": 0
@@ -14425,7 +14203,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/Stockholm",
-        "localTime": "Thu 11:49",
+        "localTime": "Thu 12:10",
         "window": "outside_work_hours",
         "nextBest": "Europe/Stockholm afternoon",
         "weight": 0
@@ -14510,7 +14288,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/Stockholm",
-        "localTime": "Thu 11:49",
+        "localTime": "Thu 12:10",
         "window": "outside_work_hours",
         "nextBest": "Europe/Stockholm afternoon",
         "weight": 0
@@ -14595,7 +14373,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/Madrid",
-        "localTime": "Thu 11:49",
+        "localTime": "Thu 12:10",
         "window": "outside_work_hours",
         "nextBest": "Europe/Madrid afternoon",
         "weight": 0
@@ -14680,7 +14458,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Asia/Shanghai",
-        "localTime": "Thu 17:49",
+        "localTime": "Thu 18:10",
         "window": "outside_work_hours",
         "nextBest": "Asia/Shanghai morning",
         "weight": 0
@@ -14765,7 +14543,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/Paris",
-        "localTime": "Thu 11:49",
+        "localTime": "Thu 12:10",
         "window": "outside_work_hours",
         "nextBest": "Europe/Paris afternoon",
         "weight": 0
@@ -14850,7 +14628,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/Helsinki",
-        "localTime": "Thu 12:49",
+        "localTime": "Thu 13:10",
         "window": "outside_work_hours",
         "nextBest": "Europe/Helsinki afternoon",
         "weight": 0
@@ -14935,7 +14713,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/Paris",
-        "localTime": "Thu 11:49",
+        "localTime": "Thu 12:10",
         "window": "outside_work_hours",
         "nextBest": "Europe/Paris afternoon",
         "weight": 0
@@ -14967,91 +14745,6 @@
       "contactChannelScore": 13,
       "dealProbabilityScore": 219,
       "priorityScore": 219
-    },
-    {
-      "id": "google-customer-8a-pl-website-contact",
-      "name": "8a.pl",
-      "company": "8a.pl",
-      "customerType": "key_account",
-      "discoveryMode": "autonomous_refill",
-      "country": "Poland",
-      "countryEn": "Poland",
-      "fitScore": 84,
-      "fitTier": "A",
-      "marketScore": 4.5,
-      "marketStatus": "open",
-      "agencyState": "open",
-      "agentCompany": "",
-      "keyword": "verified outdoor, camping and travel retail social refill channel",
-      "role": "Outdoor, camping, travel accessories, ecommerce or category buyer.",
-      "background": "8a.pl is a qualified outdoor, camping, travel or sport retail prospect with category fit for FLEXTAIL portable outdoor electrics and Vollyc practical 3C products.",
-      "buyerPersona": "Outdoor, camping, travel accessories, ecommerce or category buyer.",
-      "targetMarkets": "",
-      "excludedMarkets": "",
-      "productCategory": "verified outdoor, camping and travel retail social refill channel",
-      "businessModel": "Retail Chain",
-      "productFit": "FLEXTAIL portable pumps, outdoor power, camping lighting and compact camping accessories",
-      "opportunity": "8a.pl is a qualified outdoor, camping, travel or sport retail prospect with category fit for FLEXTAIL portable outdoor electrics and Vollyc practical 3C products.",
-      "linkedin_url": "",
-      "linkedin": "",
-      "publicEmail": "",
-      "contactEmail": "",
-      "vendorPortal": "https://8a.pl/",
-      "contactPhone": "",
-      "contactNote": "",
-      "publicEmailStatus": "",
-      "website": "https://8a.pl/",
-      "evidenceUrl": "https://www.google.com/search?q=%228a.pl%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22Poland%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "sourceEvidenceUrl": "verified outdoor retailer official website and public social profile refill",
-      "externalVerificationStatus": "",
-      "query": "https://www.google.com/search?q=%228a.pl%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22Poland%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "source": "google_customer_discovery",
-      "sourceType": "google",
-      "discoveryProvider": "google",
-      "channel": "",
-      "identityStatus": "verified",
-      "officialSocialProfileVerified": true,
-      "profiledAt": "",
-      "partnershipStatus": "",
-      "doNotOutreach": false,
-      "automationStatus": "",
-      "partnerNote": "",
-      "sendStatus": "",
-      "workingTime": {
-        "dueNow": false,
-        "timeZone": "Europe/Warsaw",
-        "localTime": "Thu 11:49",
-        "window": "outside_work_hours",
-        "nextBest": "Europe/Warsaw afternoon",
-        "weight": 0
-      },
-      "platform": "website_form",
-      "channelType": "website_form",
-      "platformUrl": "https://8a.pl/",
-      "url": "https://8a.pl/",
-      "contactUrl": "https://8a.pl/",
-      "contactSearchUrl": "https://www.google.com/search?q=site%3A8a.pl%20%228a.pl%22%20contact%20buyer%20wholesale%20email%20vendor",
-      "emailFrom": "leo@flextailgear.com",
-      "websiteContactSubject": "FLEXTAIL retail partnership | 2026 assortment",
-      "websiteContactMessage": "Dear 8a.pl Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
-      "websiteContactFlow": "open_official_contact_us_fill_attach_auto_submit",
-      "action": "verify_target",
-      "reason": "homepage_only_contact_path_requires_verification",
-      "alternateChannels": {
-        "linkedin": "",
-        "instagram": "https://www.instagram.com/8apl/",
-        "facebook": "https://www.facebook.com/sklep8apl",
-        "websiteContact": "https://8a.pl/"
-      },
-      "invalidChannels": {},
-      "identitySource": "official homepage found; exact buyer/contact path still requires verification",
-      "channelPriority": 3,
-      "discoveredAt": "2026-07-16T05:03:53.170Z",
-      "targetRegion": "europe",
-      "targetRegionScore": 45,
-      "contactChannelScore": 17,
-      "dealProbabilityScore": 218,
-      "priorityScore": 218
     },
     {
       "id": "google-customer-campz-website-contact",
@@ -15105,7 +14798,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/Berlin",
-        "localTime": "Thu 11:49",
+        "localTime": "Thu 12:10",
         "window": "outside_work_hours",
         "nextBest": "Europe/Berlin afternoon",
         "weight": 0
@@ -15190,7 +14883,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/Berlin",
-        "localTime": "Thu 11:49",
+        "localTime": "Thu 12:10",
         "window": "outside_work_hours",
         "nextBest": "Europe/Berlin afternoon",
         "weight": 0
@@ -15275,7 +14968,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/Copenhagen",
-        "localTime": "Thu 11:49",
+        "localTime": "Thu 12:10",
         "window": "outside_work_hours",
         "nextBest": "Europe/Copenhagen afternoon",
         "weight": 0
@@ -15360,7 +15053,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/Oslo",
-        "localTime": "Thu 11:49",
+        "localTime": "Thu 12:10",
         "window": "outside_work_hours",
         "nextBest": "Europe/Oslo afternoon",
         "weight": 0
@@ -15451,7 +15144,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Asia/Shanghai",
-        "localTime": "Thu 17:49",
+        "localTime": "Thu 18:10",
         "window": "outside_work_hours",
         "nextBest": "Asia/Shanghai morning",
         "weight": 0
@@ -15536,7 +15229,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/Copenhagen",
-        "localTime": "Thu 11:49",
+        "localTime": "Thu 12:10",
         "window": "outside_work_hours",
         "nextBest": "Europe/Copenhagen afternoon",
         "weight": 0
@@ -15621,7 +15314,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/Paris",
-        "localTime": "Thu 11:49",
+        "localTime": "Thu 12:10",
         "window": "outside_work_hours",
         "nextBest": "Europe/Paris afternoon",
         "weight": 0
@@ -15706,7 +15399,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Asia/Shanghai",
-        "localTime": "Thu 17:49",
+        "localTime": "Thu 18:10",
         "window": "outside_work_hours",
         "nextBest": "Asia/Shanghai morning",
         "weight": 0
@@ -15791,7 +15484,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/Helsinki",
-        "localTime": "Thu 12:49",
+        "localTime": "Thu 13:10",
         "window": "outside_work_hours",
         "nextBest": "Europe/Helsinki afternoon",
         "weight": 0
@@ -15876,7 +15569,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Thu 05:49",
+        "localTime": "Thu 06:10",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -15961,7 +15654,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Asia/Shanghai",
-        "localTime": "Thu 17:49",
+        "localTime": "Thu 18:10",
         "window": "outside_work_hours",
         "nextBest": "Asia/Shanghai morning",
         "weight": 0
@@ -16046,7 +15739,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Thu 05:49",
+        "localTime": "Thu 06:10",
         "window": "outside_work_hours",
         "nextBest": "America/Toronto morning",
         "weight": 0
@@ -16131,7 +15824,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Thu 05:49",
+        "localTime": "Thu 06:10",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -16216,7 +15909,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Thu 05:49",
+        "localTime": "Thu 06:10",
         "window": "outside_work_hours",
         "nextBest": "America/Toronto morning",
         "weight": 0
@@ -16301,7 +15994,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Thu 05:49",
+        "localTime": "Thu 06:10",
         "window": "outside_work_hours",
         "nextBest": "America/Toronto morning",
         "weight": 0
@@ -16386,7 +16079,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Thu 05:49",
+        "localTime": "Thu 06:10",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -16471,7 +16164,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Thu 05:49",
+        "localTime": "Thu 06:10",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -16562,7 +16255,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Thu 05:49",
+        "localTime": "Thu 06:10",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -16647,7 +16340,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Thu 05:49",
+        "localTime": "Thu 06:10",
         "window": "outside_work_hours",
         "nextBest": "America/Toronto morning",
         "weight": 0
@@ -16732,7 +16425,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Thu 05:49",
+        "localTime": "Thu 06:10",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -16823,7 +16516,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Thu 05:49",
+        "localTime": "Thu 06:10",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -16908,7 +16601,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Thu 05:49",
+        "localTime": "Thu 06:10",
         "window": "outside_work_hours",
         "nextBest": "America/Toronto morning",
         "weight": 0
@@ -16993,7 +16686,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Thu 05:49",
+        "localTime": "Thu 06:10",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -17078,7 +16771,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Thu 05:49",
+        "localTime": "Thu 06:10",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -17163,7 +16856,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Thu 05:49",
+        "localTime": "Thu 06:10",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -17248,7 +16941,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Thu 05:49",
+        "localTime": "Thu 06:10",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -17333,7 +17026,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Thu 05:49",
+        "localTime": "Thu 06:10",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -17418,7 +17111,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Thu 05:49",
+        "localTime": "Thu 06:10",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -17503,7 +17196,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Thu 05:49",
+        "localTime": "Thu 06:10",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -17588,7 +17281,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Thu 05:49",
+        "localTime": "Thu 06:10",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -17673,7 +17366,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Pacific/Auckland",
-        "localTime": "Thu 21:49",
+        "localTime": "Thu 22:10",
         "window": "outside_work_hours",
         "nextBest": "Pacific/Auckland morning",
         "weight": 0
@@ -17758,7 +17451,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Australia/Sydney",
-        "localTime": "Thu 19:49",
+        "localTime": "Thu 20:10",
         "window": "outside_work_hours",
         "nextBest": "Australia/Sydney morning",
         "weight": 0
@@ -17843,7 +17536,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Australia/Sydney",
-        "localTime": "Thu 19:49",
+        "localTime": "Thu 20:10",
         "window": "outside_work_hours",
         "nextBest": "Australia/Sydney morning",
         "weight": 0
@@ -17928,7 +17621,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Australia/Sydney",
-        "localTime": "Thu 19:49",
+        "localTime": "Thu 20:10",
         "window": "outside_work_hours",
         "nextBest": "Australia/Sydney morning",
         "weight": 0
@@ -18013,7 +17706,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/Zurich",
-        "localTime": "Thu 11:49",
+        "localTime": "Thu 12:10",
         "window": "outside_work_hours",
         "nextBest": "Europe/Zurich afternoon",
         "weight": 0
@@ -18098,7 +17791,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/Zurich",
-        "localTime": "Thu 11:49",
+        "localTime": "Thu 12:10",
         "window": "outside_work_hours",
         "nextBest": "Europe/Zurich afternoon",
         "weight": 0
@@ -18136,85 +17829,6 @@
       "contactChannelScore": 17,
       "dealProbabilityScore": 140,
       "priorityScore": 140
-    },
-    {
-      "id": "google-customer-8a-pl-facebook",
-      "name": "8a.pl",
-      "company": "8a.pl",
-      "customerType": "key_account",
-      "discoveryMode": "autonomous_refill",
-      "country": "Poland",
-      "countryEn": "Poland",
-      "fitScore": 84,
-      "fitTier": "A",
-      "marketScore": 4.5,
-      "marketStatus": "open",
-      "agencyState": "open",
-      "agentCompany": "",
-      "keyword": "verified outdoor, camping and travel retail social refill channel",
-      "role": "Outdoor, camping, travel accessories, ecommerce or category buyer.",
-      "background": "8a.pl is a qualified outdoor, camping, travel or sport retail prospect with category fit for FLEXTAIL portable outdoor electrics and Vollyc practical 3C products.",
-      "buyerPersona": "Outdoor, camping, travel accessories, ecommerce or category buyer.",
-      "targetMarkets": "",
-      "excludedMarkets": "",
-      "productCategory": "verified outdoor, camping and travel retail social refill channel",
-      "businessModel": "Retail Chain",
-      "productFit": "FLEXTAIL portable pumps, outdoor power, camping lighting and compact camping accessories",
-      "opportunity": "8a.pl is a qualified outdoor, camping, travel or sport retail prospect with category fit for FLEXTAIL portable outdoor electrics and Vollyc practical 3C products.",
-      "linkedin_url": "",
-      "linkedin": "",
-      "publicEmail": "",
-      "contactEmail": "",
-      "vendorPortal": "https://8a.pl/",
-      "contactPhone": "",
-      "contactNote": "",
-      "publicEmailStatus": "",
-      "website": "https://8a.pl/",
-      "evidenceUrl": "https://www.google.com/search?q=%228a.pl%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22Poland%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "sourceEvidenceUrl": "verified outdoor retailer official website and public social profile refill",
-      "externalVerificationStatus": "",
-      "query": "https://www.google.com/search?q=%228a.pl%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22Poland%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "source": "google_customer_discovery",
-      "sourceType": "google",
-      "discoveryProvider": "google",
-      "channel": "",
-      "identityStatus": "verified",
-      "officialSocialProfileVerified": true,
-      "profiledAt": "",
-      "partnershipStatus": "",
-      "doNotOutreach": false,
-      "automationStatus": "",
-      "partnerNote": "",
-      "sendStatus": "",
-      "workingTime": {
-        "dueNow": false,
-        "timeZone": "Europe/Warsaw",
-        "localTime": "Thu 11:49",
-        "window": "outside_work_hours",
-        "nextBest": "Europe/Warsaw afternoon",
-        "weight": 0
-      },
-      "platform": "facebook",
-      "platformUrl": "https://www.facebook.com/sklep8apl",
-      "url": "https://www.facebook.com/sklep8apl",
-      "action": "develop",
-      "reason": "concrete_google_discovered_major_customer_facebook",
-      "alternateChannels": {
-        "linkedin": "",
-        "instagram": "https://www.instagram.com/8apl/",
-        "facebook": "https://www.facebook.com/sklep8apl",
-        "websiteContact": "https://8a.pl/"
-      },
-      "invalidChannels": {},
-      "facebookStatus": "verified_official_page_candidate",
-      "identitySource": "official Facebook page candidate + official website + Google background query",
-      "channelPriority": 2,
-      "discoveredAt": "2026-07-16T05:03:53.170Z",
-      "targetRegion": "europe",
-      "targetRegionScore": 45,
-      "contactChannelScore": 17,
-      "dealProbabilityScore": 218,
-      "priorityScore": 218
     },
     {
       "id": "google-customer-campz-facebook",
@@ -18268,7 +17882,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/Berlin",
-        "localTime": "Thu 11:49",
+        "localTime": "Thu 12:10",
         "window": "outside_work_hours",
         "nextBest": "Europe/Berlin afternoon",
         "weight": 0
@@ -18347,7 +17961,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/Berlin",
-        "localTime": "Thu 11:49",
+        "localTime": "Thu 12:10",
         "window": "outside_work_hours",
         "nextBest": "Europe/Berlin afternoon",
         "weight": 0
@@ -18426,7 +18040,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/Oslo",
-        "localTime": "Thu 11:49",
+        "localTime": "Thu 12:10",
         "window": "outside_work_hours",
         "nextBest": "Europe/Oslo afternoon",
         "weight": 0
@@ -18511,7 +18125,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Thu 05:49",
+        "localTime": "Thu 06:10",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -18590,7 +18204,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Thu 05:49",
+        "localTime": "Thu 06:10",
         "window": "outside_work_hours",
         "nextBest": "America/Toronto morning",
         "weight": 0
@@ -18669,7 +18283,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Thu 05:49",
+        "localTime": "Thu 06:10",
         "window": "outside_work_hours",
         "nextBest": "America/Toronto morning",
         "weight": 0
@@ -18748,7 +18362,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Thu 05:49",
+        "localTime": "Thu 06:10",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -18833,7 +18447,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Thu 05:49",
+        "localTime": "Thu 06:10",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -18912,7 +18526,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Thu 05:49",
+        "localTime": "Thu 06:10",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -18997,7 +18611,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Thu 05:49",
+        "localTime": "Thu 06:10",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -19076,7 +18690,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Pacific/Auckland",
-        "localTime": "Thu 21:49",
+        "localTime": "Thu 22:10",
         "window": "outside_work_hours",
         "nextBest": "Pacific/Auckland morning",
         "weight": 0
@@ -19155,7 +18769,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/Zurich",
-        "localTime": "Thu 11:49",
+        "localTime": "Thu 12:10",
         "window": "outside_work_hours",
         "nextBest": "Europe/Zurich afternoon",
         "weight": 0
@@ -19187,83 +18801,6 @@
       "contactChannelScore": 17,
       "dealProbabilityScore": 140,
       "priorityScore": 140
-    },
-    {
-      "id": "google-customer-8a-pl-instagram",
-      "name": "8a.pl",
-      "company": "8a.pl",
-      "customerType": "key_account",
-      "discoveryMode": "autonomous_refill",
-      "country": "Poland",
-      "countryEn": "Poland",
-      "fitScore": 84,
-      "fitTier": "A",
-      "marketScore": 4.5,
-      "marketStatus": "open",
-      "agencyState": "open",
-      "agentCompany": "",
-      "keyword": "verified outdoor, camping and travel retail social refill channel",
-      "role": "Outdoor, camping, travel accessories, ecommerce or category buyer.",
-      "background": "8a.pl is a qualified outdoor, camping, travel or sport retail prospect with category fit for FLEXTAIL portable outdoor electrics and Vollyc practical 3C products.",
-      "buyerPersona": "Outdoor, camping, travel accessories, ecommerce or category buyer.",
-      "targetMarkets": "",
-      "excludedMarkets": "",
-      "productCategory": "verified outdoor, camping and travel retail social refill channel",
-      "businessModel": "Retail Chain",
-      "productFit": "FLEXTAIL portable pumps, outdoor power, camping lighting and compact camping accessories",
-      "opportunity": "8a.pl is a qualified outdoor, camping, travel or sport retail prospect with category fit for FLEXTAIL portable outdoor electrics and Vollyc practical 3C products.",
-      "linkedin_url": "",
-      "linkedin": "",
-      "publicEmail": "",
-      "contactEmail": "",
-      "vendorPortal": "https://8a.pl/",
-      "contactPhone": "",
-      "contactNote": "",
-      "publicEmailStatus": "",
-      "website": "https://8a.pl/",
-      "evidenceUrl": "https://www.google.com/search?q=%228a.pl%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22Poland%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "sourceEvidenceUrl": "verified outdoor retailer official website and public social profile refill",
-      "externalVerificationStatus": "",
-      "query": "https://www.google.com/search?q=%228a.pl%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22Poland%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "source": "google_customer_discovery",
-      "sourceType": "google",
-      "discoveryProvider": "google",
-      "channel": "",
-      "identityStatus": "verified",
-      "officialSocialProfileVerified": true,
-      "profiledAt": "",
-      "partnershipStatus": "",
-      "doNotOutreach": false,
-      "automationStatus": "",
-      "partnerNote": "",
-      "sendStatus": "",
-      "workingTime": {
-        "dueNow": false,
-        "timeZone": "Europe/Warsaw",
-        "localTime": "Thu 11:49",
-        "window": "outside_work_hours",
-        "nextBest": "Europe/Warsaw afternoon",
-        "weight": 0
-      },
-      "platform": "instagram",
-      "platformUrl": "https://www.instagram.com/8apl/",
-      "url": "https://www.instagram.com/8apl/",
-      "action": "develop",
-      "reason": "concrete_google_discovered_major_customer_instagram",
-      "alternateChannels": {
-        "linkedin": "",
-        "instagram": "https://www.instagram.com/8apl/",
-        "facebook": "https://www.facebook.com/sklep8apl",
-        "websiteContact": "https://8a.pl/"
-      },
-      "identitySource": "official website/social profile + Google background query",
-      "channelPriority": 1,
-      "discoveredAt": "2026-07-16T05:03:53.170Z",
-      "targetRegion": "europe",
-      "targetRegionScore": 45,
-      "contactChannelScore": 17,
-      "dealProbabilityScore": 218,
-      "priorityScore": 218
     },
     {
       "id": "google-customer-campz-instagram",
@@ -19317,7 +18854,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/Berlin",
-        "localTime": "Thu 11:49",
+        "localTime": "Thu 12:10",
         "window": "outside_work_hours",
         "nextBest": "Europe/Berlin afternoon",
         "weight": 0
@@ -19394,7 +18931,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/Berlin",
-        "localTime": "Thu 11:49",
+        "localTime": "Thu 12:10",
         "window": "outside_work_hours",
         "nextBest": "Europe/Berlin afternoon",
         "weight": 0
@@ -19471,7 +19008,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Thu 05:49",
+        "localTime": "Thu 06:10",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -19548,7 +19085,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Thu 05:49",
+        "localTime": "Thu 06:10",
         "window": "outside_work_hours",
         "nextBest": "America/Toronto morning",
         "weight": 0
@@ -19625,7 +19162,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Thu 05:49",
+        "localTime": "Thu 06:10",
         "window": "outside_work_hours",
         "nextBest": "America/Toronto morning",
         "weight": 0
@@ -19702,7 +19239,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Thu 05:49",
+        "localTime": "Thu 06:10",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -19779,7 +19316,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Thu 05:49",
+        "localTime": "Thu 06:10",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -19856,7 +19393,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Pacific/Auckland",
-        "localTime": "Thu 21:49",
+        "localTime": "Thu 22:10",
         "window": "outside_work_hours",
         "nextBest": "Pacific/Auckland morning",
         "weight": 0
@@ -20202,6 +19739,144 @@
       "priorityScore": 100,
       "potentialSource": "customer_table",
       "nextAction": "background_check_then_verify_channel"
+    },
+    {
+      "id": 13,
+      "name": "Nicole Adams",
+      "company": "Walgreens",
+      "role": "Category Manager",
+      "category": "retail",
+      "ka_flag": false,
+      "priority": "?",
+      "status": "Pending",
+      "keyword_used": "retail chain buyer",
+      "message": "Hi Nicole,\n\nFlextail's portable power stations could be a great addition to Walgreens' outdoor/travel category.\n\nBest,\nDavid",
+      "source": "outreach_data",
+      "country": "",
+      "countryEn": "",
+      "platform": "research",
+      "fitScore": 100,
+      "fitTier": "A",
+      "sourceType": "customer_table",
+      "website": "",
+      "url": "",
+      "platformUrl": "",
+      "linkedinUrl": "",
+      "linkedinSearchUrl": "https://www.linkedin.com/search/results/all/?keywords=Walgreens%20buyer%20outdoor%20LinkedIn",
+      "googleSearchUrl": "https://www.google.com/search?q=Walgreens%20outdoor%20buyer%20partnership%20contact",
+      "contactSearchUrl": "https://www.google.com/search?q=Walgreens%20outdoor%20buyer%20partnership%20contact",
+      "dataSources": [
+        "customer_table"
+      ],
+      "background": "Hi Nicole,\n\nFlextail's portable power stations could be a great addition to Walgreens' outdoor/travel category.\n\nBest,\nDavid",
+      "buyerPersona": "Category Manager",
+      "marketStatus": "",
+      "taskId": 13,
+      "action": "verify_target",
+      "reason": "missing_verified_profile_url",
+      "lastStatus": "",
+      "lastEvidence": "",
+      "lastTouch": "",
+      "previouslyContacted": false,
+      "targetRegion": "other",
+      "targetRegionScore": 0,
+      "contactChannelScore": 0,
+      "dealProbabilityScore": 100,
+      "priorityScore": 100,
+      "potentialSource": "customer_table",
+      "nextAction": "background_check_then_verify_channel"
+    },
+    {
+      "id": 18,
+      "name": "Brian Scott",
+      "company": "Winnebago",
+      "role": "Procurement Manager",
+      "category": "rv",
+      "ka_flag": false,
+      "priority": "?",
+      "status": "Pending",
+      "keyword_used": "OEM RV power supplier",
+      "message": "Hi Brian,\n\nWe're interested in OEM partnerships with RV manufacturers. Winnebago's quality standards align with ours.\n\nBest,\nDavid",
+      "source": "outreach_data",
+      "country": "",
+      "countryEn": "",
+      "platform": "research",
+      "fitScore": 100,
+      "fitTier": "A",
+      "sourceType": "customer_table",
+      "website": "",
+      "url": "",
+      "platformUrl": "",
+      "linkedinUrl": "",
+      "linkedinSearchUrl": "https://www.linkedin.com/search/results/all/?keywords=Winnebago%20buyer%20outdoor%20LinkedIn",
+      "googleSearchUrl": "https://www.google.com/search?q=Winnebago%20outdoor%20buyer%20partnership%20contact",
+      "contactSearchUrl": "https://www.google.com/search?q=Winnebago%20outdoor%20buyer%20partnership%20contact",
+      "dataSources": [
+        "customer_table"
+      ],
+      "background": "Hi Brian,\n\nWe're interested in OEM partnerships with RV manufacturers. Winnebago's quality standards align with ours.\n\nBest,\nDavid",
+      "buyerPersona": "Procurement Manager",
+      "marketStatus": "",
+      "taskId": 18,
+      "action": "verify_target",
+      "reason": "missing_verified_profile_url",
+      "lastStatus": "",
+      "lastEvidence": "",
+      "lastTouch": "",
+      "previouslyContacted": false,
+      "targetRegion": "other",
+      "targetRegionScore": 0,
+      "contactChannelScore": 0,
+      "dealProbabilityScore": 100,
+      "priorityScore": 100,
+      "potentialSource": "customer_table",
+      "nextAction": "background_check_then_verify_channel"
+    },
+    {
+      "id": 11,
+      "name": "Chris Brown",
+      "company": "Best Buy",
+      "role": "Regional Buyer",
+      "category": "ka",
+      "ka_flag": false,
+      "priority": "?",
+      "status": "Pending",
+      "keyword_used": "electronics retail buyer",
+      "message": "Hi Chris,\n\nFlextail portable power stations are perfect for the consumer electronics category. We're looking for retail partners.\n\nBest,\nDavid",
+      "source": "outreach_data",
+      "country": "",
+      "countryEn": "",
+      "platform": "research",
+      "fitScore": 99,
+      "fitTier": "A",
+      "sourceType": "customer_table",
+      "website": "",
+      "url": "",
+      "platformUrl": "",
+      "linkedinUrl": "",
+      "linkedinSearchUrl": "https://www.linkedin.com/search/results/all/?keywords=Best%20Buy%20buyer%20outdoor%20LinkedIn",
+      "googleSearchUrl": "https://www.google.com/search?q=Best%20Buy%20outdoor%20buyer%20partnership%20contact",
+      "contactSearchUrl": "https://www.google.com/search?q=Best%20Buy%20outdoor%20buyer%20partnership%20contact",
+      "dataSources": [
+        "customer_table"
+      ],
+      "background": "Hi Chris,\n\nFlextail portable power stations are perfect for the consumer electronics category. We're looking for retail partners.\n\nBest,\nDavid",
+      "buyerPersona": "Regional Buyer",
+      "marketStatus": "",
+      "taskId": 11,
+      "action": "verify_target",
+      "reason": "missing_verified_profile_url",
+      "lastStatus": "",
+      "lastEvidence": "",
+      "lastTouch": "",
+      "previouslyContacted": false,
+      "targetRegion": "other",
+      "targetRegionScore": 0,
+      "contactChannelScore": 0,
+      "dealProbabilityScore": 99,
+      "priorityScore": 99,
+      "potentialSource": "customer_table",
+      "nextAction": "background_check_then_verify_channel"
     }
   ],
   "cooldownQueue": [
@@ -20251,7 +19926,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/London",
-        "localTime": "Thu 10:49",
+        "localTime": "Thu 11:10",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -20308,7 +19983,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/London",
-        "localTime": "Thu 10:49",
+        "localTime": "Thu 11:10",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -20365,7 +20040,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/London",
-        "localTime": "Thu 10:49",
+        "localTime": "Thu 11:10",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -20422,7 +20097,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Asia/Kolkata",
-        "localTime": "Thu 15:19",
+        "localTime": "Thu 15:40",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
@@ -20479,7 +20154,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Thu 05:49",
+        "localTime": "Thu 06:10",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -20536,7 +20211,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Thu 05:49",
+        "localTime": "Thu 06:10",
         "window": "outside_work_hours",
         "nextBest": "America/Toronto morning",
         "weight": 0
@@ -20593,7 +20268,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Thu 05:49",
+        "localTime": "Thu 06:10",
         "window": "outside_work_hours",
         "nextBest": "America/Toronto morning",
         "weight": 0
@@ -20650,7 +20325,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Asia/Jakarta",
-        "localTime": "Thu 16:49",
+        "localTime": "Thu 17:10",
         "window": "outside_work_hours",
         "nextBest": "Asia/Jakarta morning",
         "weight": 0
@@ -20707,7 +20382,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Australia/Sydney",
-        "localTime": "Thu 19:49",
+        "localTime": "Thu 20:10",
         "window": "outside_work_hours",
         "nextBest": "Australia/Sydney morning",
         "weight": 0
@@ -20764,7 +20439,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Pacific/Auckland",
-        "localTime": "Thu 21:49",
+        "localTime": "Thu 22:10",
         "window": "outside_work_hours",
         "nextBest": "Pacific/Auckland morning",
         "weight": 0
@@ -20821,7 +20496,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Pacific/Auckland",
-        "localTime": "Thu 21:49",
+        "localTime": "Thu 22:10",
         "window": "outside_work_hours",
         "nextBest": "Pacific/Auckland morning",
         "weight": 0
@@ -20878,7 +20553,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Pacific/Auckland",
-        "localTime": "Thu 21:49",
+        "localTime": "Thu 22:10",
         "window": "outside_work_hours",
         "nextBest": "Pacific/Auckland morning",
         "weight": 0
@@ -20935,7 +20610,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Pacific/Auckland",
-        "localTime": "Thu 21:49",
+        "localTime": "Thu 22:10",
         "window": "outside_work_hours",
         "nextBest": "Pacific/Auckland morning",
         "weight": 0
@@ -20992,7 +20667,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Pacific/Auckland",
-        "localTime": "Thu 21:49",
+        "localTime": "Thu 22:10",
         "window": "outside_work_hours",
         "nextBest": "Pacific/Auckland morning",
         "weight": 0
@@ -21069,7 +20744,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/London",
-        "localTime": "Thu 10:49",
+        "localTime": "Thu 11:10",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -21168,7 +20843,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/Dublin",
-        "localTime": "Thu 10:49",
+        "localTime": "Thu 11:10",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -21270,7 +20945,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/London",
-        "localTime": "Thu 10:49",
+        "localTime": "Thu 11:10",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -21372,7 +21047,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/London",
-        "localTime": "Thu 10:49",
+        "localTime": "Thu 11:10",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -21460,7 +21135,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/London",
-        "localTime": "Thu 10:49",
+        "localTime": "Thu 11:10",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -21548,7 +21223,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/London",
-        "localTime": "Thu 10:49",
+        "localTime": "Thu 11:10",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -21636,7 +21311,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/London",
-        "localTime": "Thu 10:49",
+        "localTime": "Thu 11:10",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -21724,7 +21399,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/London",
-        "localTime": "Thu 10:49",
+        "localTime": "Thu 11:10",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -21812,7 +21487,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/London",
-        "localTime": "Thu 10:49",
+        "localTime": "Thu 11:10",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -21900,7 +21575,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/London",
-        "localTime": "Thu 10:49",
+        "localTime": "Thu 11:10",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -21988,7 +21663,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/Dublin",
-        "localTime": "Thu 10:49",
+        "localTime": "Thu 11:10",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -22082,7 +21757,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/London",
-        "localTime": "Thu 10:49",
+        "localTime": "Thu 11:10",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -22178,7 +21853,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/London",
-        "localTime": "Thu 10:49",
+        "localTime": "Thu 11:10",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -22260,7 +21935,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/London",
-        "localTime": "Thu 10:49",
+        "localTime": "Thu 11:10",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -22342,7 +22017,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/London",
-        "localTime": "Thu 10:49",
+        "localTime": "Thu 11:10",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -22424,7 +22099,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/London",
-        "localTime": "Thu 10:49",
+        "localTime": "Thu 11:10",
         "window": "morning",
         "nextBest": "now",
         "weight": 1

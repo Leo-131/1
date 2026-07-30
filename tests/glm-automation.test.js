@@ -1173,7 +1173,8 @@ test('daily execution is serial and can process a priority batch per run', () =>
   assert.ok(mainSource.includes("app.disableHardwareAcceleration()"));
   assert.ok(mainSource.includes("app.commandLine.appendSwitch('disable-gpu')"));
   assert.ok(mainSource.includes('DAILY_CONFIRMED_COMPANY_TARGET = 100'));
-  assert.ok(mainSource.includes('DEFAULT_DAILY_SOCIAL_EXECUTION_LIMIT = 13'));
+  assert.ok(mainSource.includes('DEFAULT_DAILY_SOCIAL_EXECUTION_LIMIT = 25'));
+  assert.ok(mainSource.includes('MAXIMUM_DAILY_SOCIAL_EXECUTION_LIMIT = 50'));
   assert.ok(mainSource.includes('const remainingDailyGap = Math.max(0, DAILY_CONFIRMED_COMPANY_TARGET - confirmedToday)'));
   assert.ok(mainSource.includes('const limit = Math.min(requestedLimit, remainingDailyGap)'));
   assert.ok(mainSource.includes('KEEP_AUTOMATION_TABS_VISIBLE'));
@@ -1241,7 +1242,8 @@ test('latest completed execution is reconciled into the same-day ledger before s
 test('known personal-profile identity mismatches cannot be reconciled as confirmed development', () => {
   assert.ok(mainSource.includes('function knownInvalidIdentityResult'));
   assert.ok(mainSource.includes("company === 'doorout'"));
-  assert.ok(mainSource.includes("evidence.includes('official_social_fallback:facebook')"));
+  assert.ok(mainSource.includes("parsed.pathname.replace(/\\/+$/, '').toLowerCase() === '/doorout'"));
+  assert.ok(!mainSource.includes("evidence.includes('official_social_fallback:facebook')"));
   assert.ok(mainSource.includes('if (knownInvalidIdentityResult(entry)) return'));
 });
 

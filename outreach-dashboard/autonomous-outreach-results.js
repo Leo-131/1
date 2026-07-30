@@ -9022,5 +9022,39 @@ window.AUTONOMOUS_OUTREACH_RESULTS = [
     "messageId": "",
     "sentFolder": "",
     "sentUid": null
+  },
+  {
+    "task_id": "google-customer-8a-pl-facebook",
+    "company": "8a.pl",
+    "approval_version": 1,
+    "status": "send_unconfirmed",
+    "agent": "codex-chrome-cdp",
+    "browserTransportUsed": "cdp",
+    "timestamp": "2026-07-30T09:54:44.828Z",
+    "target_url": "https://www.facebook.com/sklep8apl",
+    "evidence": "facebook_send_clicked_but_confirmation_missing;",
+    "draft": "Hi 8a.pl team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a retail/category buyer, the strongest fit is assortment fit, new SKU pipeline, price-tier coverage, and proven consumer demand; your verified outdoor, camping and travel retail social refill channel focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the category buyer or vendor-review owner for a short intro video meeting?",
+    "subject": "",
+    "recipientEmail": "",
+    "messageId": "",
+    "sentFolder": "",
+    "sentUid": null
+  },
+  {
+    "task_id": "google-customer-doorout-website-contact",
+    "company": "Doorout",
+    "approval_version": 1,
+    "status": "sent_confirmed",
+    "agent": "codex-chrome-cdp",
+    "browserTransportUsed": "cdp",
+    "timestamp": "2026-07-30T10:10:51.526Z",
+    "target_url": "https://www.doorout.com/",
+    "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;facebook_message_sent_confirmed_after_send_click;persisted_after_reload;facebook_draft_inserted_verified;sentText:true;outgoingBubble:true;emptyComposer:true;;contact_path_strategy_v2",
+    "draft": "Hi Doorout team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a retail/category buyer, the strongest fit is assortment fit, new SKU pipeline, price-tier coverage, and proven consumer demand; your verified outdoor, camping and travel retail social refill channel focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the category buyer or vendor-review owner for a short intro video meeting?",
+    "subject": "",
+    "recipientEmail": "",
+    "messageId": "",
+    "sentFolder": "",
+    "sentUid": null
   }
 ];

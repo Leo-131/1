@@ -2,7 +2,8 @@
   "schemaVersion": 1,
   "policyVersion": "2026-07-30",
   "dailyTarget": 100,
-  "defaultRunLimit": 13,
+  "defaultRunLimit": 25,
+  "maximumRunLimit": 50,
   "runMaximumMinutes": 45,
   "confirmedStatuses": [
     "sent_confirmed",

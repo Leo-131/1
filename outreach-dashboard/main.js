@@ -285,7 +285,8 @@ const COMPANY_HISTORY_BLOCKING_STATUSES = new Set([
   'send_unconfirmed',
 ]);
 const DAILY_CONFIRMED_COMPANY_TARGET = 100;
-const DEFAULT_DAILY_SOCIAL_EXECUTION_LIMIT = 13;
+const DEFAULT_DAILY_SOCIAL_EXECUTION_LIMIT = 25;
+const MAXIMUM_DAILY_SOCIAL_EXECUTION_LIMIT = 50;
 const DEFAULT_CUSTOMER_EXECUTION_TIMEOUT_MS = 90000;
 const MIN_CUSTOMER_EXECUTION_TIMEOUT_MS = 30000;
 const MAX_CUSTOMER_EXECUTION_TIMEOUT_MS = 180000;
@@ -506,9 +507,14 @@ function knownInvalidIdentityResult(result = {}) {
   const company = String(result.company || '').trim().toLowerCase();
   const target = String(result.target_url || result.targetUrl || '').toLowerCase();
   const evidence = String(result.evidence || '').toLowerCase();
+  let legacyDooroutFacebookTarget = false;
+  try {
+    const parsed = new URL(target);
+    legacyDooroutFacebookTarget = /^(?:www\.)?facebook\.com$/i.test(parsed.hostname)
+      && parsed.pathname.replace(/\/+$/, '').toLowerCase() === '/doorout';
+  } catch {}
   return company === 'doorout'
-    && (target.includes('facebook.com/doorout')
-      || evidence.includes('official_social_fallback:facebook')
+    && (legacyDooroutFacebookTarget
       || evidence.includes('recipient_personal_profile:masaaki_hayashi'));
 }
 
@@ -3948,7 +3954,7 @@ async function runDailyAutomationQueue(payload = {}) {
     return { ok: false, error: 'Daily automation queue is missing. Run npm run daily first.' };
   }
   const ledgerReconciliationCount = reconcileLatestExecutionResultsToLedger();
-  const requestedLimit = Math.max(1, Math.min(Number(payload && payload.limit || process.env.DAILY_EXECUTE_LIMIT || DEFAULT_DAILY_SOCIAL_EXECUTION_LIMIT), 100));
+  const requestedLimit = Math.max(1, Math.min(Number(payload && payload.limit || process.env.DAILY_EXECUTE_LIMIT || DEFAULT_DAILY_SOCIAL_EXECUTION_LIMIT), MAXIMUM_DAILY_SOCIAL_EXECUTION_LIMIT));
   const parallelLimit = 1;
   const preSendStatusRepairCount = repairPreSendUnconfirmedResults();
   const previousResults = readJsonScriptArray(path.join(__dirname, 'autonomous-outreach-results.js'), 'AUTONOMOUS_OUTREACH_RESULTS');
@@ -4338,7 +4344,7 @@ async function runAutoDailyAndWriteArtifact() {
   if (watchdog.unref) watchdog.unref();
 
   try {
-    const autoLimit = Math.max(1, Math.min(Number(process.env.DAILY_EXECUTE_LIMIT || DEFAULT_DAILY_SOCIAL_EXECUTION_LIMIT), 100));
+    const autoLimit = Math.max(1, Math.min(Number(process.env.DAILY_EXECUTE_LIMIT || DEFAULT_DAILY_SOCIAL_EXECUTION_LIMIT), MAXIMUM_DAILY_SOCIAL_EXECUTION_LIMIT));
     const result = await runDailyAutomationQueue({ limit: autoLimit, parallelLimit: 1, delayMs: 2500 });
     const output = {
       ...result,

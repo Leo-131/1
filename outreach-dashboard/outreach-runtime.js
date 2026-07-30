@@ -71,7 +71,8 @@ function validatePolicies(root = ROOT) {
   } else {
     if (manifest.schemaVersion !== EXPECTED_SCHEMA_VERSION) issues.push('policy_schema_version_mismatch');
     if (manifest.dailyTarget !== 100) issues.push('daily_target_must_equal_100');
-    if (manifest.defaultRunLimit !== 13) issues.push('default_run_limit_must_equal_13');
+    if (manifest.defaultRunLimit !== 25) issues.push('default_run_limit_must_equal_25');
+    if (manifest.maximumRunLimit !== 50) issues.push('maximum_run_limit_must_equal_50');
     if (manifest.runMaximumMinutes !== 45) issues.push('run_maximum_minutes_must_equal_45');
     const statuses = Array.isArray(manifest.confirmedStatuses) ? manifest.confirmedStatuses : [];
     if (statuses.join(',') !== 'sent_confirmed,submitted_confirmed') issues.push('confirmed_status_contract_mismatch');
@@ -121,7 +122,8 @@ function buildContext({ phase = 'manual', now = new Date() } = {}) {
     activeBlocks: policy.issues,
     limits: {
       dailyTarget: 100,
-      defaultRunLimit: 13,
+      defaultRunLimit: policy.manifest && policy.manifest.defaultRunLimit || 25,
+      maximumRunLimit: policy.manifest && policy.manifest.maximumRunLimit || 50,
       runMaximumMinutes: 45,
     },
     confirmedToday: confirmedCompanies.length,

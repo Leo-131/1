@@ -13,7 +13,8 @@ function policyFixture() {
     schemaVersion: 1,
     policyVersion: 'test',
     dailyTarget: 100,
-    defaultRunLimit: 13,
+    defaultRunLimit: 25,
+    maximumRunLimit: 50,
     runMaximumMinutes: 45,
     confirmedStatuses: ['sent_confirmed', 'submitted_confirmed'],
     requiredFiles: ['outreach-policy.md', 'browser-policy.md', 'git-policy.md'],
@@ -24,7 +25,7 @@ function policyFixture() {
   return root;
 }
 
-test('policy validation accepts the production 100/13/45 contract', () => {
+test('policy validation accepts the production 100/25/50/45 contract', () => {
   const root = policyFixture();
   assert.equal(runtime.validatePolicies(root).ok, true);
 });
@@ -45,6 +46,15 @@ test('policy validation rejects unsafe throughput expansion', () => {
   manifest.dailyTarget = 800;
   fs.writeFileSync(manifestPath, JSON.stringify(manifest));
   assert.ok(runtime.validatePolicies(root).issues.includes('daily_target_must_equal_100'));
+});
+
+test('policy validation rejects a run maximum above fifty', () => {
+  const root = policyFixture();
+  const manifestPath = path.join(root, '.agent', 'policies', 'manifest.json');
+  const manifest = JSON.parse(fs.readFileSync(manifestPath, 'utf8'));
+  manifest.maximumRunLimit = 51;
+  fs.writeFileSync(manifestPath, JSON.stringify(manifest));
+  assert.ok(runtime.validatePolicies(root).issues.includes('maximum_run_limit_must_equal_50'));
 });
 
 test('Shanghai result dates are derived from timestamps rather than UTC string prefixes', () => {

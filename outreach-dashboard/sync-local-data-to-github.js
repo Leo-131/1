@@ -8,6 +8,28 @@ const WATCH = process.argv.includes('--watch');
 const PUSH = !process.argv.includes('--no-push');
 const DEBOUNCE_MS = 30000;
 
+function retryTransientFileOperation(operation, attempts = 8) {
+  let lastError;
+  for (let attempt = 0; attempt < attempts; attempt += 1) {
+    try {
+      return operation();
+    } catch (error) {
+      lastError = error;
+      const transient = error && ['EBUSY', 'EACCES', 'EPERM', 'UNKNOWN'].includes(error.code);
+      if (!transient || attempt === attempts - 1) throw error;
+      Atomics.wait(new Int32Array(new SharedArrayBuffer(4)), 0, 0, 75 * (attempt + 1));
+    }
+  }
+  throw lastError;
+}
+
+function atomicWriteFile(file, content) {
+  fs.mkdirSync(path.dirname(file), { recursive: true });
+  const temp = `${file}.${process.pid}.tmp`;
+  retryTransientFileOperation(() => fs.writeFileSync(temp, content));
+  retryTransientFileOperation(() => fs.renameSync(temp, file));
+}
+
 function readJson(file, fallback = null) {
   try {
     return JSON.parse(fs.readFileSync(file, 'utf8'));
@@ -29,12 +51,12 @@ function redact(value) {
 function copyIfExists(from, to) {
   if (!fs.existsSync(from)) return false;
   fs.mkdirSync(path.dirname(to), { recursive: true });
-  fs.copyFileSync(from, to);
+  retryTransientFileOperation(() => fs.copyFileSync(from, to));
   return true;
 }
 
 function writeJsonScript(file, globalName, value) {
-  fs.writeFileSync(file, `window.${globalName} = ${JSON.stringify(value, null, 2)};\n`);
+  atomicWriteFile(file, `window.${globalName} = ${JSON.stringify(value, null, 2)};\n`);
 }
 
 function writeSyncStatus(status) {
@@ -43,11 +65,11 @@ function writeSyncStatus(status) {
     ...status,
   };
   fs.mkdirSync(OUT, { recursive: true });
-  fs.writeFileSync(path.join(OUT, 'latest-status.json'), JSON.stringify(output, null, 2));
+  atomicWriteFile(path.join(OUT, 'latest-status.json'), JSON.stringify(output, null, 2));
   writeJsonScript(path.join(OUT, 'latest-status.js'), 'GITHUB_SYNC_LATEST', output);
   const publicOut = path.join(ROOT, 'public', 'github-sync');
   fs.mkdirSync(publicOut, { recursive: true });
-  fs.writeFileSync(path.join(publicOut, 'latest-status.json'), JSON.stringify(output, null, 2));
+  atomicWriteFile(path.join(publicOut, 'latest-status.json'), JSON.stringify(output, null, 2));
   writeJsonScript(path.join(publicOut, 'latest-status.js'), 'GITHUB_SYNC_LATEST', output);
   writeSystemVisibilityArtifact('sync-local-data-to-github-writeSyncStatus');
   return output;
@@ -113,7 +135,7 @@ function writeSystemVisibilityArtifact(source) {
       fields: ['publicEmail', 'contactEmail', 'contactPhone', 'vendorPortal', 'contactUrl', 'contactSearchUrl', 'website'],
     },
   };
-  fs.writeFileSync(path.join(ROOT, 'system-visibility-latest.json'), JSON.stringify(visibility, null, 2));
+  atomicWriteFile(path.join(ROOT, 'system-visibility-latest.json'), JSON.stringify(visibility, null, 2));
   writeJsonScript(path.join(ROOT, 'system-visibility-latest.js'), 'SYSTEM_VISIBILITY_LATEST', visibility);
   copyIfExists(path.join(ROOT, 'system-visibility-latest.json'), path.join(ROOT, 'public', 'system-visibility-latest.json'));
   copyIfExists(path.join(ROOT, 'system-visibility-latest.js'), path.join(ROOT, 'public', 'system-visibility-latest.js'));
@@ -205,10 +227,10 @@ function syncOnce() {
   const latestRun = path.join(ROOT, 'daily-runs', `${latestDate}-daily-automation.json`);
   const latestCsv = path.join(ROOT, 'daily-runs', `${latestDate}-daily-queue.csv`);
 
-  fs.writeFileSync(path.join(OUT, 'latest-daily-automation.json'), JSON.stringify(latest, null, 2));
+  atomicWriteFile(path.join(OUT, 'latest-daily-automation.json'), JSON.stringify(latest, null, 2));
   const googleDiscovery = redact(readJson(path.join(ROOT, 'google-lead-discovery-latest.json'), {}));
-  fs.writeFileSync(path.join(OUT, 'latest-google-discovery.json'), JSON.stringify(googleDiscovery, null, 2));
-  fs.writeFileSync(path.join(OUT, 'README.md'), [
+  atomicWriteFile(path.join(OUT, 'latest-google-discovery.json'), JSON.stringify(googleDiscovery, null, 2));
+  atomicWriteFile(path.join(OUT, 'README.md'), [
     '# Local Outreach Sync',
     '',
     `Updated: ${new Date().toISOString()}`,
