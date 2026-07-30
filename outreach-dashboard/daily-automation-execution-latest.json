@@ -7,7 +7,7 @@
   "executionPhase": "browser_execution",
   "chromeStage": "opened",
   "chromeOpened": true,
-  "chromeOpenedCount": 1,
+  "chromeOpenedCount": 2,
   "customerDevelopmentPerformed": false,
   "customerMessageSent": false,
   "realDevelopmentCount": 0,
@@ -21,6 +21,47 @@
   "queueSource": "dailyPotentialPool",
   "executed": [
     {
+      "id": "google-customer-obelink-website-contact",
+      "company": "Obelink",
+      "action": "email_priority",
+      "platform": "website_form",
+      "targetUrl": "https://www.obelink.nl/obelink-partnerprogramma",
+      "ok": false,
+      "sendStatus": "website_contact_unreachable_skip",
+      "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:7;contact_path_strategy_v2",
+      "timestamp": "2026-07-30T05:14:16.818Z",
+      "chromeOpen": {
+        "ok": true,
+        "engine": "codex-chrome-cdp",
+        "port": 9224,
+        "targetUrl": "https://www.obelink.nl/help/contact-us",
+        "tabId": "2462F5DDA4048CA3297DAA09A5835149",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/2462F5DDA4048CA3297DAA09A5835149",
+        "title": "Kampeerwinkel Obelink - Specialist in kamperen & outdoor!"
+      },
+      "result": {
+        "ok": false,
+        "engine": "dedicated-chrome-cdp-website-contact",
+        "browserEngine": "codex-chrome-cdp",
+        "mode": "website_contact_unreachable_skip",
+        "targetUrl": "https://www.obelink.nl/help/contact-us",
+        "chromeOpen": {
+          "ok": true,
+          "engine": "codex-chrome-cdp",
+          "port": 9224,
+          "targetUrl": "https://www.obelink.nl/help/contact-us",
+          "tabId": "2462F5DDA4048CA3297DAA09A5835149",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/2462F5DDA4048CA3297DAA09A5835149",
+          "title": "Kampeerwinkel Obelink - Specialist in kamperen & outdoor!"
+        },
+        "sendStatus": "website_contact_unreachable_skip",
+        "subject": "FLEXTAIL retail partnership | 2026 assortment",
+        "draft": "Dear Obelink Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
+        "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:7;contact_path_strategy_v2",
+        "output": "{\"verdict\":\"website_contact_unreachable_skip\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:7;contact_path_strategy_v2\",\"nextAction\":\"Contact page opened, but no verified form, mailto link, vendor/business route, or clickable Contact Us path was detected. Continue manually before marking the lead ready.\",\"subject\":\"FLEXTAIL retail partnership | 2026 assortment\",\"draft\":\"Dear Obelink Team,\\n\\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\\n\\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\\n\\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\\n\\nProduct overview: https://www.flextail.com/\\n\\nBest regards,\\nLeo Liu\\nSales & Operations Director\\nLeo@flextailgear.com\",\"sendStatus\":\"website_contact_unreachable_skip\",\"attempts\":[{\"targetUrl\":\"https://www.obelink.nl/obelink-partnerprogramma\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control\"},{\"targetUrl\":\"https://www.obelink.nl/\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control\"},{\"targetUrl\":\"https://www.obelink.nl/pages/contact-us\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control\"},{\"targetUrl\":\"https://www.obelink.nl/pages/contact\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control\"},{\"targetUrl\":\"https://www.obelink.nl/contact-us\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control\"},{\"targetUrl\":\"https://www.obelink.nl/contact\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control\"},{\"targetUrl\":\"https://www.obelink.nl/help/contact-us\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control\"}]}"
+      }
+    },
+    {
       "id": "google-customer-doorout-website-contact",
       "company": "Doorout",
       "action": "verify_target",
@@ -29,14 +70,14 @@
       "ok": false,
       "sendStatus": "approval_pending",
       "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;;contact_path_strategy_v2",
-      "timestamp": "2026-07-30T05:10:29.662Z",
+      "timestamp": "2026-07-30T05:14:21.724Z",
       "chromeOpen": {
         "ok": true,
         "engine": "codex-chrome-cdp",
         "port": 9224,
         "targetUrl": "https://www.doorout.com/",
-        "tabId": "A93CA60FC291F377E62E290B38AE1807",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/A93CA60FC291F377E62E290B38AE1807",
+        "tabId": "357B2E211632D42ABA137AB16A93ABE3",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/357B2E211632D42ABA137AB16A93ABE3",
         "title": ""
       },
       "result": {
@@ -47,8 +88,8 @@
           "engine": "codex-chrome-cdp",
           "port": 9224,
           "targetUrl": "https://www.doorout.com/",
-          "tabId": "A93CA60FC291F377E62E290B38AE1807",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/A93CA60FC291F377E62E290B38AE1807",
+          "tabId": "357B2E211632D42ABA137AB16A93ABE3",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/357B2E211632D42ABA137AB16A93ABE3",
           "title": ""
         },
         "mode": "official_website_social_fallback",
@@ -59,6 +100,47 @@
   ],
   "results": [
     {
+      "id": "google-customer-obelink-website-contact",
+      "company": "Obelink",
+      "action": "email_priority",
+      "platform": "website_form",
+      "targetUrl": "https://www.obelink.nl/obelink-partnerprogramma",
+      "ok": false,
+      "sendStatus": "website_contact_unreachable_skip",
+      "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:7;contact_path_strategy_v2",
+      "timestamp": "2026-07-30T05:14:16.818Z",
+      "chromeOpen": {
+        "ok": true,
+        "engine": "codex-chrome-cdp",
+        "port": 9224,
+        "targetUrl": "https://www.obelink.nl/help/contact-us",
+        "tabId": "2462F5DDA4048CA3297DAA09A5835149",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/2462F5DDA4048CA3297DAA09A5835149",
+        "title": "Kampeerwinkel Obelink - Specialist in kamperen & outdoor!"
+      },
+      "result": {
+        "ok": false,
+        "engine": "dedicated-chrome-cdp-website-contact",
+        "browserEngine": "codex-chrome-cdp",
+        "mode": "website_contact_unreachable_skip",
+        "targetUrl": "https://www.obelink.nl/help/contact-us",
+        "chromeOpen": {
+          "ok": true,
+          "engine": "codex-chrome-cdp",
+          "port": 9224,
+          "targetUrl": "https://www.obelink.nl/help/contact-us",
+          "tabId": "2462F5DDA4048CA3297DAA09A5835149",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/2462F5DDA4048CA3297DAA09A5835149",
+          "title": "Kampeerwinkel Obelink - Specialist in kamperen & outdoor!"
+        },
+        "sendStatus": "website_contact_unreachable_skip",
+        "subject": "FLEXTAIL retail partnership | 2026 assortment",
+        "draft": "Dear Obelink Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
+        "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:7;contact_path_strategy_v2",
+        "output": "{\"verdict\":\"website_contact_unreachable_skip\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:7;contact_path_strategy_v2\",\"nextAction\":\"Contact page opened, but no verified form, mailto link, vendor/business route, or clickable Contact Us path was detected. Continue manually before marking the lead ready.\",\"subject\":\"FLEXTAIL retail partnership | 2026 assortment\",\"draft\":\"Dear Obelink Team,\\n\\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\\n\\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\\n\\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\\n\\nProduct overview: https://www.flextail.com/\\n\\nBest regards,\\nLeo Liu\\nSales & Operations Director\\nLeo@flextailgear.com\",\"sendStatus\":\"website_contact_unreachable_skip\",\"attempts\":[{\"targetUrl\":\"https://www.obelink.nl/obelink-partnerprogramma\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control\"},{\"targetUrl\":\"https://www.obelink.nl/\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control\"},{\"targetUrl\":\"https://www.obelink.nl/pages/contact-us\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control\"},{\"targetUrl\":\"https://www.obelink.nl/pages/contact\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control\"},{\"targetUrl\":\"https://www.obelink.nl/contact-us\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control\"},{\"targetUrl\":\"https://www.obelink.nl/contact\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control\"},{\"targetUrl\":\"https://www.obelink.nl/help/contact-us\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control\"}]}"
+      }
+    },
+    {
       "id": "google-customer-doorout-website-contact",
       "company": "Doorout",
       "action": "verify_target",
@@ -67,14 +149,14 @@
       "ok": false,
       "sendStatus": "approval_pending",
       "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;;contact_path_strategy_v2",
-      "timestamp": "2026-07-30T05:10:29.662Z",
+      "timestamp": "2026-07-30T05:14:21.724Z",
       "chromeOpen": {
         "ok": true,
         "engine": "codex-chrome-cdp",
         "port": 9224,
         "targetUrl": "https://www.doorout.com/",
-        "tabId": "A93CA60FC291F377E62E290B38AE1807",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/A93CA60FC291F377E62E290B38AE1807",
+        "tabId": "357B2E211632D42ABA137AB16A93ABE3",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/357B2E211632D42ABA137AB16A93ABE3",
         "title": ""
       },
       "result": {
@@ -85,8 +167,8 @@
           "engine": "codex-chrome-cdp",
           "port": 9224,
           "targetUrl": "https://www.doorout.com/",
-          "tabId": "A93CA60FC291F377E62E290B38AE1807",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/A93CA60FC291F377E62E290B38AE1807",
+          "tabId": "357B2E211632D42ABA137AB16A93ABE3",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/357B2E211632D42ABA137AB16A93ABE3",
           "title": ""
         },
         "mode": "official_website_social_fallback",
@@ -165,12 +247,6 @@
     {
       "id": "google-customer-left-point-distribution-website-contact",
       "company": "Left Point Distribution",
-      "action": "email_priority",
-      "reason": "official_website_contact_channel"
-    },
-    {
-      "id": "google-customer-obelink-website-contact",
-      "company": "Obelink",
       "action": "email_priority",
       "reason": "official_website_contact_channel"
     },
@@ -687,12 +763,6 @@
     {
       "id": "google-customer-left-point-distribution-website-contact",
       "company": "Left Point Distribution",
-      "action": "email_priority",
-      "reason": "official_website_contact_channel"
-    },
-    {
-      "id": "google-customer-obelink-website-contact",
-      "company": "Obelink",
       "action": "email_priority",
       "reason": "official_website_contact_channel"
     },
@@ -1327,7 +1397,7 @@
     {
       "reason": "official_website_contact_channel",
       "status": "skipped",
-      "count": 22
+      "count": 20
     },
     {
       "reason": "missing_verified_profile_url",
@@ -1344,7 +1414,7 @@
     "homepage_only_contact_path_requires_verification": 104,
     "concrete_google_discovered_major_customer_facebook": 34,
     "concrete_google_discovered_major_customer_instagram": 26,
-    "official_website_contact_channel": 22,
+    "official_website_contact_channel": 20,
     "missing_verified_profile_url": 11,
     "approval_pending": 1
   },
@@ -1380,12 +1450,12 @@
     "stderr": "",
     "error": "",
     "visibility": {
-      "updatedAt": "2026-07-30T05:10:30.982Z",
+      "updatedAt": "2026-07-30T05:14:24.202Z",
       "source": "main-refreshDailyAutomationArtifacts",
       "runDate": "2026-07-30",
-      "artifactGeneratedAt": "2026-07-30T05:10:29.934Z",
-      "executionGeneratedAt": "2026-07-30T05:07:19.806Z",
-      "githubSyncUpdatedAt": "2026-07-30T05:07:36.951Z",
+      "artifactGeneratedAt": "2026-07-30T05:14:22.073Z",
+      "executionGeneratedAt": "2026-07-30T05:10:31.557Z",
+      "githubSyncUpdatedAt": "2026-07-30T05:10:56.504Z",
       "counts": {
         "dailyQueue": 99,
         "googleDiscovered": 86,
@@ -1448,5 +1518,5 @@
     ]
   },
   "ledgerReconciliationCount": 1,
-  "completedAt": "2026-07-30T05:10:31.557Z"
+  "completedAt": "2026-07-30T05:14:24.639Z"
 }

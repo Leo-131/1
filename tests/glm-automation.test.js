@@ -1112,6 +1112,8 @@ test('same-day failed targets open a bounded retry circuit instead of consuming 
   assert.ok(mainSource.includes('const sameDayFailedAttempts = results'));
   assert.ok(mainSource.includes('sameDayFailedAttempts.length >= 2'));
   assert.ok(mainSource.includes('same_day_retry_circuit_open;failed_attempts:'));
+  assert.ok(mainSource.includes('verifiedSupplierRoute'));
+  assert.ok(mainSource.includes('resultTargetKey === itemTargetKey'));
   assert.ok(mainSource.includes("evidence.includes('personal_profile_without_company_match')"));
 });
 

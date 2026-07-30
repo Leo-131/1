@@ -308,12 +308,20 @@ function blockingAutomationResultFor(item) {
   const companyBlocking = new Set(['sent_confirmed', 'send_unconfirmed']);
   if (isWebsiteContactQueueItem(item) && !verifiedBusinessEmailTarget(item).ok) {
     const cutoff = Date.now() - 30 * 24 * 60 * 60 * 1000;
+    const verifiedSupplierRoute = /^official_supplier_(?:form|route)_verified$/.test(String(item.externalVerificationStatus || ''));
+    const itemTargetKey = canonicalExactAutomationKey(item.contactUrl || item.url || item.website);
     const failedDays = new Set(results
       .filter(result => result && result.status === 'website_contact_unreachable_skip')
       .filter(result => String(result.evidence || '').includes(WEBSITE_CONTACT_STRATEGY_MARKER))
       .filter(result => Date.parse(result.timestamp || '') >= cutoff)
-      .filter(result => setsIntersect(exactKeys, automationExactKeys(result))
-        || setsIntersect(companyKeys, automationCompanyKeys(result)))
+      .filter(result => {
+        if (verifiedSupplierRoute) {
+          const resultTargetKey = canonicalExactAutomationKey(result.target_url || result.targetUrl || result.url);
+          return Boolean(itemTargetKey && resultTargetKey === itemTargetKey);
+        }
+        return setsIntersect(exactKeys, automationExactKeys(result))
+          || setsIntersect(companyKeys, automationCompanyKeys(result));
+      })
       .map(result => automationLocalDay(result.timestamp))
       .filter(Boolean));
     if (failedDays.size >= 3) {
