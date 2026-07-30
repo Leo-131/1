@@ -1536,7 +1536,7 @@ async function preparePlatformDraft(payload, platform) {
   if (!insertResult.ok) {
     return {
       ok: false,
-      sendStatus: 'send_unconfirmed',
+      sendStatus: 'failed_open',
       evidence: insertResult.evidence,
       nextAction: 'Marketing draft was not detected in the message composer; do not click Send or retry blindly.',
     };

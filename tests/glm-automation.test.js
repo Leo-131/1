@@ -808,6 +808,12 @@ test('Facebook composer failure closes stale Messenger UI without reopening the 
   assert.match(chromeDriverSource, /closeFacebookMessengerInbox\(tab\);[\s\S]*closeFacebookChatWindows\(tab\);[\s\S]*return \{\n      messageUnavailable: true/);
 });
 
+test('a draft insertion failure is not mislabeled as an uncertain send', () => {
+  assert.match(chromeDriverSource, /!insertResult\.ok[\s\S]*sendStatus: 'failed_open'[\s\S]*draft was not detected/i);
+  assert.ok(mainSource.includes('function repairPreSendUnconfirmedResults'));
+  assert.ok(mainSource.includes('pre_send_failure_status_repaired'));
+});
+
 test('customer execution truthfully labels CDP unless a valid extension receipt exists', () => {
   assert.ok(mainSource.includes("executionLayer: browserTransportForResult(execution) === 'codex-extension'"));
   assert.ok(mainSource.includes("? 'Codex Chrome Extension'"));

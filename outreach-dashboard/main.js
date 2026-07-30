@@ -585,7 +585,11 @@ function websiteContactResultIsVerified(result = {}) {
 }
 
 function recordAutomationResult(item, result) {
-  const sendStatus = result && result.sendStatus;
+  const rawEvidence = String(result && result.evidence || '');
+  const sendStatus = result && result.sendStatus === 'send_unconfirmed'
+    && /draft_not_inserted_before_send/i.test(rawEvidence)
+    ? 'failed_open'
+    : result && result.sendStatus;
   if (!['sent_confirmed', 'submitted_confirmed', 'bounced', 'send_unconfirmed', 'failed_open', 'draft_prepared', 'prepared_not_sent', 'account_followed', 'post_liked', 'website_contact_ready', 'website_contact_unreachable_skip', 'approval_pending'].includes(sendStatus)) return;
   const output = parseExecutionOutput(result.output);
   const timestamp = new Date().toISOString();
@@ -640,6 +644,25 @@ function copyPublicArtifact(file) {
   fs.mkdirSync(path.dirname(to), { recursive: true });
   retryTransientFileOperation(() => fs.copyFileSync(from, to));
   return true;
+}
+
+function repairPreSendUnconfirmedResults() {
+  const file = path.join(__dirname, 'autonomous-outreach-results.js');
+  const results = readJsonScriptArray(file, 'AUTONOMOUS_OUTREACH_RESULTS');
+  let repaired = 0;
+  for (const result of results) {
+    if (!result
+      || result.status !== 'send_unconfirmed'
+      || !/draft_not_inserted_before_send/i.test(String(result.evidence || ''))) continue;
+    result.status = 'failed_open';
+    result.evidence = `${result.evidence};pre_send_failure_status_repaired`;
+    repaired += 1;
+  }
+  if (repaired) {
+    writeJsonScriptArray(file, 'AUTONOMOUS_OUTREACH_RESULTS', results);
+    copyPublicArtifact('autonomous-outreach-results.js');
+  }
+  return repaired;
 }
 
 async function reconcileAlibabaBounceResults() {
@@ -3926,6 +3949,7 @@ async function runDailyAutomationQueue(payload = {}) {
   const ledgerReconciliationCount = reconcileLatestExecutionResultsToLedger();
   const requestedLimit = Math.max(1, Math.min(Number(payload && payload.limit || process.env.DAILY_EXECUTE_LIMIT || DEFAULT_DAILY_SOCIAL_EXECUTION_LIMIT), 100));
   const parallelLimit = 1;
+  const preSendStatusRepairCount = repairPreSendUnconfirmedResults();
   const previousResults = readJsonScriptArray(path.join(__dirname, 'autonomous-outreach-results.js'), 'AUTONOMOUS_OUTREACH_RESULTS');
   const platformCircuitState = platformSafetyCircuitState(previousResults);
   const confirmedToday = sameDayConfirmedCompanyCount(previousResults);
@@ -4080,6 +4104,7 @@ async function runDailyAutomationQueue(payload = {}) {
     limit,
     confirmedToday,
     remainingDailyGap,
+    preSendStatusRepairCount,
     currentIndex: 0,
     currentItem: null,
     completedCount: 0,
