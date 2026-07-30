@@ -284,6 +284,9 @@ const COMPANY_HISTORY_BLOCKING_STATUSES = new Set([
 ]);
 const DAILY_CONFIRMED_COMPANY_TARGET = 100;
 const DEFAULT_DAILY_SOCIAL_EXECUTION_LIMIT = 13;
+const DEFAULT_CUSTOMER_EXECUTION_TIMEOUT_MS = 90000;
+const MIN_CUSTOMER_EXECUTION_TIMEOUT_MS = 30000;
+const MAX_CUSTOMER_EXECUTION_TIMEOUT_MS = 180000;
 
 function historicalAutomationResultBlocksCompany(result = {}) {
   if (COMPANY_HISTORY_BLOCKING_STATUSES.has(result.status)) {
@@ -2906,8 +2909,19 @@ async function runWebsiteContactLead(lead = {}, options = {}) {
   const attempts = [];
   let lastResult = null;
   for (const target of targets) {
+    if (options.signal && options.signal.aborted) {
+      return customerExecutionTimeoutResult(lead, options.customerTimeoutMs);
+    }
     const chromeOpen = await openWithCodexChrome(target.targetUrl, { automationOwned: true });
+    if (options.signal && options.signal.aborted) {
+      await closeAutomationChromeTab(chromeOpen);
+      return customerExecutionTimeoutResult(lead, options.customerTimeoutMs);
+    }
     const contactFlow = await inspectWebsiteContactFlow(chromeOpen);
+    if (options.signal && options.signal.aborted) {
+      await closeAutomationChromeTab(chromeOpen);
+      return customerExecutionTimeoutResult(lead, options.customerTimeoutMs, chromeOpen);
+    }
     attempts.push({
       targetUrl: target.targetUrl,
       sendStatus: contactFlow.sendStatus || 'approval_pending',
@@ -2921,15 +2935,21 @@ async function runWebsiteContactLead(lead = {}, options = {}) {
         && Number(options.fallbackDepth || 0) < 3
         && !attemptedTargets.has(socialFallbackTarget)) {
         await closeAutomationChromeTab(chromeOpen);
+        if (options.signal && options.signal.aborted) {
+          return customerExecutionTimeoutResult(lead, options.customerTimeoutMs, chromeOpen);
+        }
         const socialResult = await executeLeadAutomation(socialFallback, {
           ignoreCooldown: true,
           allowParallel: true,
           fallbackDepth: Number(options.fallbackDepth || 0) + 1,
           attemptedTargets: [...attemptedTargets, String(target.targetUrl || '').toLowerCase()],
+          signal: options.signal,
+          customerTimeoutMs: options.customerTimeoutMs,
         });
         const socialOutput = parseExecutionOutput(socialResult && socialResult.output);
         return {
           ...socialResult,
+          chromeOpen: socialResult && socialResult.chromeOpen || chromeOpen,
           mode: socialResult && socialResult.mode || 'official_website_social_fallback',
           evidence: `${contactFlow.evidence};official_social_fallback:${socialFallback.platform};${socialOutput.evidence || socialResult.evidence || ''}`,
           output: JSON.stringify({
@@ -2972,6 +2992,7 @@ async function runWebsiteContactLead(lead = {}, options = {}) {
     }
     const officialMailto = officialMailtoLead(lead, contactFlow.inspection, target.targetUrl);
     if (officialMailto) {
+      if (typeof options.enterCriticalSection === 'function') options.enterCriticalSection('verified_email_send_confirmation');
       const emailResult = await runVerifiedAlibabaEmailLead(officialMailto, subject, draft);
       if (emailResult.reason !== 'email_sender_not_configured') {
         await closeAutomationChromeTab(chromeOpen);
@@ -3366,6 +3387,9 @@ function sleep(ms) {
 async function executeLeadAutomation(lead, options = {}) {
   const ownedTabsAtStart = new Set(automationOwnedChromeTabs.keys());
   try {
+  if (options.signal && options.signal.aborted) {
+    return customerExecutionTimeoutResult(lead, options.customerTimeoutMs);
+  }
   if (!options.allowParallel && glmAutomationRunning) return { ok: false, busy: true, error: 'Another customer is running' };
   if (!options.ignoreCooldown && Date.now() - lastGlmAutomationAt < 90000) {
     return { ok: false, cooldown: true, error: 'Serial cooldown is active' };
@@ -3373,6 +3397,7 @@ async function executeLeadAutomation(lead, options = {}) {
   const platform = String(lead && lead.platform || '').toLowerCase();
   const isVerifiedEmail = platform === 'email' && verifiedBusinessEmailTarget(lead).ok;
   if (isVerifiedEmail) {
+    if (typeof options.enterCriticalSection === 'function') options.enterCriticalSection('verified_email_send_confirmation');
     const subject = websiteContactSubject(lead);
     const draft = websiteContactMessage(lead);
     const result = await runVerifiedAlibabaEmailLead(lead, subject, draft);
@@ -3414,6 +3439,9 @@ async function executeLeadAutomation(lead, options = {}) {
       };
     }
     let execution;
+    if (options.signal && options.signal.aborted) {
+      return customerExecutionTimeoutResult(lead, options.customerTimeoutMs);
+    }
     execution = await runCodexChromeLead(lead, decision, 'codex_chrome_cdp', options);
     lastGlmAutomationAt = Date.now();
     return {
@@ -3521,6 +3549,63 @@ function executableQueueCandidates(items = [], options = {}) {
     .filter(item => allowWebsiteContact || !isWebsiteContactQueueItem(item))
     .filter(item => !blockingAutomationResultFor(item))
     .sort(developmentPriorityCompare);
+}
+
+function customerExecutionTimeoutMs(payload = {}) {
+  const configured = Number(payload.customerTimeoutMs
+    || process.env.DAILY_CUSTOMER_TIMEOUT_MS
+    || DEFAULT_CUSTOMER_EXECUTION_TIMEOUT_MS);
+  if (!Number.isFinite(configured)) return DEFAULT_CUSTOMER_EXECUTION_TIMEOUT_MS;
+  return Math.max(MIN_CUSTOMER_EXECUTION_TIMEOUT_MS, Math.min(configured, MAX_CUSTOMER_EXECUTION_TIMEOUT_MS));
+}
+
+function customerExecutionTimeoutResult(item = {}, timeoutMs = DEFAULT_CUSTOMER_EXECUTION_TIMEOUT_MS, chromeOpen = null) {
+  const boundedTimeoutMs = Number(timeoutMs) || DEFAULT_CUSTOMER_EXECUTION_TIMEOUT_MS;
+  return {
+    ok: false,
+    timedOut: true,
+    sendStatus: 'failed_open',
+    reason: 'customer_execution_timeout',
+    evidence: `customer_execution_timeout:${boundedTimeoutMs};queue_continued_to_next_customer`,
+    chromeOpen,
+    output: JSON.stringify({
+      verdict: 'failed_open',
+      sendStatus: 'failed_open',
+      evidence: `customer_execution_timeout:${boundedTimeoutMs};queue_continued_to_next_customer`,
+      nextAction: 'The customer exceeded its bounded execution window. Its automation tabs were closed and the queue continued without retrying or claiming a send.',
+      company: item.company || item.name || '',
+    }),
+  };
+}
+
+async function executeLeadWithCustomerWatchdog(item, options = {}) {
+  const timeoutMs = customerExecutionTimeoutMs(options);
+  const controller = new AbortController();
+  const ownedTabsAtStart = new Set(automationOwnedChromeTabs.keys());
+  const watchdogState = { criticalSection: '' };
+  let timeoutId;
+  const executionPromise = executeLeadAutomation(queueItemToLead(item), {
+    ...options,
+    signal: controller.signal,
+    customerTimeoutMs: timeoutMs,
+    enterCriticalSection(reason) {
+      watchdogState.criticalSection = String(reason || 'send_confirmation');
+      clearTimeout(timeoutId);
+    },
+  });
+  const timeoutPromise = new Promise(resolve => {
+    timeoutId = setTimeout(() => {
+      if (!watchdogState.criticalSection) resolve(null);
+    }, timeoutMs);
+  });
+  const result = await Promise.race([executionPromise, timeoutPromise]);
+  clearTimeout(timeoutId);
+  if (result) return result;
+
+  controller.abort();
+  await closeAutomationTabsOpenedAfter(ownedTabsAtStart);
+  executionPromise.catch(() => null);
+  return customerExecutionTimeoutResult(item, timeoutMs);
 }
 
 let currentDailyExecutionProgress = null;
@@ -3965,7 +4050,12 @@ async function runDailyAutomationQueue(payload = {}) {
         };
       }
       // Exact target contract retained: const chromeOpen = await openWithCodexChrome(item.url)
-      const result = await executeLeadAutomation(queueItemToLead(item), { ignoreCooldown: true, allowParallel: true, reuseTab: true });
+      const result = await executeLeadWithCustomerWatchdog(item, {
+        ignoreCooldown: true,
+        allowParallel: true,
+        reuseTab: true,
+        customerTimeoutMs: payload && payload.customerTimeoutMs,
+      });
       recordAutomationResult(item, result);
       // Keep one customer per automation tab. Close it immediately after the
       // result is recorded so long runs cannot accumulate Facebook/Instagram

@@ -1046,6 +1046,25 @@ test('driver child process has an independent hard timeout', () => {
   assert.ok(mainSource.includes("error.code = 'ETIMEDOUT'"));
 });
 
+test('each customer has a bounded watchdog and the queue continues after timeout', () => {
+  assert.ok(mainSource.includes('DEFAULT_CUSTOMER_EXECUTION_TIMEOUT_MS = 90000'));
+  assert.ok(mainSource.includes('DAILY_CUSTOMER_TIMEOUT_MS'));
+  assert.ok(mainSource.includes('executeLeadWithCustomerWatchdog'));
+  assert.ok(mainSource.includes('customer_execution_timeout'));
+  assert.ok(mainSource.includes('queue_continued_to_next_customer'));
+  assert.ok(mainSource.includes('controller.abort()'));
+  assert.ok(mainSource.includes('await closeAutomationTabsOpenedAfter(ownedTabsAtStart)'));
+  assert.ok(mainSource.includes("enterCriticalSection('verified_email_send_confirmation')"));
+  assert.ok(mainSource.includes('if (!watchdogState.criticalSection) resolve(null)'));
+  assert.match(mainSource, /executeLeadWithCustomerWatchdog\(item,[\s\S]*recordAutomationResult\(item, result\)/);
+});
+
+test('website social fallback preserves prior dedicated Chrome evidence', () => {
+  assert.ok(mainSource.includes('chromeOpen: socialResult && socialResult.chromeOpen || chromeOpen'));
+  assert.ok(mainSource.includes('signal: options.signal'));
+  assert.ok(mainSource.includes('customerTimeoutMs: options.customerTimeoutMs'));
+});
+
 test('recoverable social composer failures fall back across verified channels without blind retries', () => {
   assert.ok(mainSource.includes('function alternateChannelFallbackLead'));
   assert.ok(mainSource.includes('composer_not_found|message_button_clicked_composer_not_found'));
@@ -1182,7 +1201,7 @@ test('daily execution owns and closes each automation-created Chrome tab', () =>
   assert.ok(mainSource.includes('await closeAutomationTabsOpenedAfter(ownedTabsAtStart)'));
   assert.ok(mainSource.includes('await closeAutomationChromeTab(chromeOpen)'));
   assert.match(mainSource, /recordAutomationResult\(item, result\);[\s\S]*closeAutomationChromeTab\(result && result\.chromeOpen\)/);
-  assert.match(mainSource, /allowParallel: true, reuseTab: true/);
+  assert.match(mainSource, /allowParallel:\s*true,[\s\S]{0,120}reuseTab:\s*true/);
   assert.ok(mainSource.includes('const parallelLimit = 1'));
 });
 
