@@ -705,8 +705,10 @@ test('Facebook execution rejects generic destinations before outreach', () => {
 test('Facebook execution rejects personal profiles even when the URL matches', () => {
   assert.ok(chromeDriverSource.includes('personalProfileSignal'));
   assert.ok(chromeDriverSource.includes('facebookBusinessPageOk'));
+  assert.ok(chromeDriverSource.includes('facebookExactHandlePageOk'));
+  assert.ok(chromeDriverSource.includes('unavailableProfileSignal'));
   assert.match(chromeDriverSource, /facebookProfileUrl/);
-  assert.match(chromeDriverSource, /!isFacebook \|\| \(!facebookProfileUrl && !personalProfileSignal && !strictPersonalProfileSignal && businessSignal && socialCompanyOk\)/);
+  assert.match(chromeDriverSource, /!facebookProfileUrl[\s\S]*!personalProfileSignal[\s\S]*!strictPersonalProfileSignal[\s\S]*!unavailableProfileSignal/);
   assert.match(chromeDriverSource, /friends are family|i'm a .*\\b\(chameleon\|person\|guy\|girl\)/);
 });
 
@@ -737,11 +739,36 @@ test('generated identity expression compiles before CDP injection', () => {
   assert.doesNotThrow(() => new vm.Script(expression));
 });
 
+test('Facebook identity accepts an exact company handle after the page is ready but keeps personal and unavailable pages blocked', () => {
+  const expression = identityCheckExpression(
+    'LD Mountain Centre',
+    'https://www.facebook.com/LDMountainCentre',
+    false,
+  );
+  const evaluate = (bodyText) => JSON.parse(vm.runInNewContext(expression, {
+    location: {
+      href: 'https://www.facebook.com/LDMountainCentre',
+      pathname: '/LDMountainCentre',
+    },
+    document: {
+      title: 'Facebook',
+      body: { innerText: bodyText },
+      querySelectorAll: () => [],
+    },
+    URL,
+  }));
+  assert.equal(evaluate('Outdoor retail company page with camping equipment, website details, and business information.').ok, true);
+  assert.equal(evaluate('Add friend. Lives in London. 250 friends. Personal details and family updates.').ok, false);
+  assert.equal(evaluate("This content isn't available right now. The page may have been removed.").ok, false);
+});
+
 test('fixed identity verifier failures can be retried only for source-backed official profiles', () => {
   assert.ok(mainSource.includes('function isFixedIdentityVerifierFailure'));
+  assert.ok(mainSource.includes('function exactSocialHandleMatchesCompany'));
   assert.ok(mainSource.includes('identity_check_runtime_error:SyntaxError: Invalid regular expression flags'));
-  assert.match(mainSource, /item\.officialSocialProfileVerified[\s\S]*isFixedIdentityVerifierFailure\(result\)/);
-  assert.match(mainSource, /item\.officialSocialProfileVerified[\s\S]*isFixedIdentityVerifierFailure\(checkpointResult\)/);
+  assert.match(mainSource, /item\.officialSocialProfileVerified \|\| exactSocialHandleMatchesCompany\(item\)[\s\S]*isFixedIdentityVerifierFailure\(result\)/);
+  assert.match(mainSource, /item\.officialSocialProfileVerified \|\| exactSocialHandleMatchesCompany\(item\)[\s\S]*isFixedIdentityVerifierFailure\(checkpointResult\)/);
+  assert.match(mainSource, /personal_profile_without_company_match\|identity_mismatch/);
 });
 
 test('social execution explicitly fails closed for CAPTCHA, login loss, and platform rate limits', () => {

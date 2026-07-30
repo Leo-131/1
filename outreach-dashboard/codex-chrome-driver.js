@@ -862,7 +862,10 @@ function identityCheckExpression(expectedCompany, targetUrl, officialProfileVeri
     const visibleCompact = compact(visible);
     const genericSocialTitle = /^(\\(?\\d+\\)?\\s*)?(facebook|instagram|linkedin)$/i.test(title.trim());
     const pending = (!title.trim() && !headers.trim() && visibleCompact.length < 8)
-      || (genericSocialTitle && !headers.trim() && !visibleCompact.includes(expectedCompact));
+      || (genericSocialTitle
+        && !headers.trim()
+        && !visibleCompact.includes(expectedCompact)
+        && visibleCompact.length < 40);
     if (pending) {
       return JSON.stringify({
         ok: null,
@@ -882,6 +885,7 @@ function identityCheckExpression(expectedCompany, targetUrl, officialProfileVeri
     const personalProfileSignal = /add friend|friends are family|\bfriends\b|lives in|from [a-z][a-z -]{2,40}|i'm a .*\b(chameleon|person|guy|girl)|个人主页|好友|朋友/.test(visibleLower);
     const emptyPersonalSignal = /0\\s*(posts?|帖子)[\\s\\S]{0,80}0\\s*(followers|粉丝)[\\s\\S]{0,80}0\\s*(following|关注)/i.test(visible);
     const strictPersonalProfileSignal = /add friend|\\d[\\d,.]*\\s*friends?\\b|friends are family|\\bfriends\\b|lives in|hometown|personal details|\\u6dfb\\u52a0\\u597d\\u53cb|\\u4f4d\\u597d\\u53cb|\\u4e2a\\u4eba\\u8be6\\u60c5|\\u4e2a\\u4eba\\u4e3b\\u9875|\\u597d\\u53cb|\\u670b\\u53cb|\\u5bb6\\u4e61/.test(visibleLower);
+    const unavailableProfileSignal = /content isn.t available|page isn.t available|page not found|this content is unavailable|\\u65e0\\u6cd5\\u8bbf\\u95ee\\u6b64\\u9875\\u9762|\\u9875\\u9762\\u4e0d\\u5b58\\u5728|\\u5185\\u5bb9\\u4e0d\\u53ef\\u7528/.test(visibleLower);
     const companyOk = expectedCompact && visibleCompact.includes(expectedCompact);
     const pathOk = pathCompact && visibleCompact.includes(pathCompact);
     const handleMatchesExpected = expectedCompact && pathCompact
@@ -893,9 +897,18 @@ function identityCheckExpression(expectedCompany, targetUrl, officialProfileVeri
     const staffOk = tokenHits >= 1 && employeeSignal;
     const socialCompanyOk = companyOk || (tokenHits >= Math.min(2, expectedTokens.length) && businessSignal);
     const isFacebook = /facebook\\.com/.test(host);
-    const facebookBusinessPageOk = !isFacebook || (!facebookProfileUrl && !personalProfileSignal && !strictPersonalProfileSignal && businessSignal && socialCompanyOk);
+    const facebookExactHandlePageOk = isFacebook
+      && exactSocialUrlOk
+      && handleMatchesExpected
+      && visibleCompact.length >= 40
+      && !unavailableProfileSignal;
+    const facebookBusinessPageOk = !isFacebook || (!facebookProfileUrl
+      && !personalProfileSignal
+      && !strictPersonalProfileSignal
+      && !unavailableProfileSignal
+      && ((businessSignal && socialCompanyOk) || facebookExactHandlePageOk));
     const ok = !expectedCompact || (isSocial
-      ? Boolean((socialCompanyOk || staffOk || (!isFacebook && exactSocialUrlOk)) && facebookBusinessPageOk)
+      ? Boolean((socialCompanyOk || staffOk || exactSocialUrlOk) && facebookBusinessPageOk)
       : Boolean(companyOk || (pathCompact.length >= 5 && pathOk)));
     const personalMismatch = isSocial && !ok && (emptyPersonalSignal || personalProfileSignal || strictPersonalProfileSignal);
     return JSON.stringify({

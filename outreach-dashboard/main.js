@@ -299,6 +299,25 @@ function historicalAutomationResultBlocksCompany(result = {}) {
     .test(String(result.evidence || ''));
 }
 
+function exactSocialHandleMatchesCompany(item = {}) {
+  const candidate = item.url || item.platformUrl || item.verifiedTargetUrl || item.targetUrl || '';
+  try {
+    const url = new URL(String(candidate));
+    if (!/^(?:www\.)?(?:facebook|instagram)\.com$/i.test(url.hostname)) return false;
+    const handle = String(url.pathname.replace(/^\/+/, '').split('/')[0] || '')
+      .toLowerCase()
+      .replace(/[^a-z0-9]+/g, '');
+    const company = String(item.company || item.name || '')
+      .toLowerCase()
+      .replace(/[^a-z0-9]+/g, '');
+    return handle.length >= 4
+      && company.length >= 4
+      && (handle.includes(company) || company.includes(handle));
+  } catch {
+    return false;
+  }
+}
+
 function blockingAutomationResultFor(item) {
   const file = path.join(__dirname, 'autonomous-outreach-results.js');
   const results = readJsonScriptArray(file, 'AUTONOMOUS_OUTREACH_RESULTS');
@@ -334,6 +353,7 @@ function blockingAutomationResultFor(item) {
   }
   const sameDayFailedAttempts = results
     .filter(result => result && result.status === 'failed_open' && isSameAutomationDay(result.timestamp))
+    .filter(result => !(exactSocialHandleMatchesCompany(item) && isFixedIdentityVerifierFailure(result)))
     .filter(result => setsIntersect(exactKeys, automationExactKeys(result))
       || (setsIntersect(companyKeys, automationCompanyKeys(result))
         && automationPlatformFor(result) === itemPlatform));
@@ -363,7 +383,7 @@ function blockingAutomationResultFor(item) {
     .filter((result) => result.status !== 'failed_open' || failedOpenResultShouldBlockRetry(result) || historicalAutomationResultBlocksCompany(result))
     // A source-backed official-profile flag can recover exactly one prior
     // generic identity-string false negative after the verifier is fixed.
-    .filter((result) => !(item.officialSocialProfileVerified
+    .filter((result) => !((item.officialSocialProfileVerified || exactSocialHandleMatchesCompany(item))
       && result.status === 'failed_open'
       && isFixedIdentityVerifierFailure(result)))
     .find((result) => {
@@ -533,7 +553,8 @@ function failedOpenResultShouldBlockRetry(result = {}) {
 function isFixedIdentityVerifierFailure(result = {}) {
   const evidence = String(result.evidence || '');
   return /^(?:facebook|instagram)_identity_not_verified_fail_closed$/i.test(evidence)
-    || /^identity_check_runtime_error:SyntaxError: Invalid regular expression flags$/i.test(evidence);
+    || /^identity_check_runtime_error:SyntaxError: Invalid regular expression flags$/i.test(evidence)
+    || /^(?:personal_profile_without_company_match|identity_mismatch)_expected_[\s\S]+_title_(?:\(\d+\)\s*)?facebook$/i.test(evidence);
 }
 
 function checkpointResultIsTerminal(result = {}) {
@@ -3972,7 +3993,7 @@ async function runDailyAutomationQueue(payload = {}) {
       continue;
     }
     const checkpointResult = checkpointResultsById.get(item.id);
-    const verifiedProfileIdentityRetry = Boolean(item.officialSocialProfileVerified
+    const verifiedProfileIdentityRetry = Boolean((item.officialSocialProfileVerified || exactSocialHandleMatchesCompany(item))
       && checkpointResult
       && isFixedIdentityVerifierFailure(checkpointResult));
     if (checkpointCompletedIds.has(item.id) && !verifiedProfileIdentityRetry) {
