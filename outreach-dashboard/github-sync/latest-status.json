@@ -1,10 +1,9 @@
 {
-  "updatedAt": "2026-07-30T04:02:50.677Z",
-  "ok": false,
-  "pushed": false,
+  "updatedAt": "2026-07-30T04:03:29.588Z",
+  "ok": true,
+  "pushed": true,
   "branch": "vercel-main-sync",
-  "localCommit": "bbda0ddfff242fbb2629e3f8d28275137668f4c1",
-  "remoteCommit": "32212b787d23446afd128c63de1b900ba21491a5",
-  "message": "sync: local outreach data 2026-07-30",
-  "error": "Command failed: git add -- github-sync/latest-status.json github-sync/latest-status.js github-sync/system-visibility-latest.json github-sync/system-visibility-latest.js public/github-sync/latest-status.json public/github-sync/latest-status.js public/system-visibility-latest.json public/system-visibility-latest.js system-visibility-latest.json system-visibility-latest.js\nwarning: in the working copy of 'outreach-dashboard/github-sync/latest-status.js', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'outreach-dashboard/github-sync/latest-status.json', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'outreach-dashboard/github-sync/system-visibility-latest.js', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'outreach-dashboard/github-sync/system-visibility-latest.json', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'outreach-dashboard/public/github-sync/latest-status.js', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'outreach-dashboard/public/github-sync/latest-status.json', LF will be replaced by CRLF the next time Git touches it\nerror: short read while indexing outreach-dashboard/public/system-visibility-latest.js\nerror: outreach-dashboard/public/system-visibility-latest.js: failed to insert into database\nerror: unable to index file 'outreach-dashboard/public/system-visibility-latest.js'\nfatal: updating files failed\n"
+  "localCommit": "7e7d25ac49a04776bc3349fe6ca8f7a335d4ea70",
+  "remoteCommit": "7e7d25ac49a04776bc3349fe6ca8f7a335d4ea70",
+  "message": "sync: local outreach data 2026-07-30"
 }
