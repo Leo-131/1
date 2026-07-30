@@ -766,6 +766,7 @@ test('fixed identity verifier failures can be retried only for source-backed off
   assert.ok(mainSource.includes('function isFixedIdentityVerifierFailure'));
   assert.ok(mainSource.includes('function exactSocialHandleMatchesCompany'));
   assert.ok(mainSource.includes('identity_check_runtime_error:SyntaxError: Invalid regular expression flags'));
+  assert.match(mainSource, /\(\?:\^\|;\).*personal_profile_without_company_match/);
   assert.match(mainSource, /item\.officialSocialProfileVerified \|\| exactSocialHandleMatchesCompany\(item\)[\s\S]*isFixedIdentityVerifierFailure\(result\)/);
   assert.match(mainSource, /item\.officialSocialProfileVerified \|\| exactSocialHandleMatchesCompany\(item\)[\s\S]*isFixedIdentityVerifierFailure\(checkpointResult\)/);
   assert.match(mainSource, /personal_profile_without_company_match\|identity_mismatch/);

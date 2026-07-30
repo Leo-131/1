@@ -554,7 +554,7 @@ function isFixedIdentityVerifierFailure(result = {}) {
   const evidence = String(result.evidence || '');
   return /^(?:facebook|instagram)_identity_not_verified_fail_closed$/i.test(evidence)
     || /^identity_check_runtime_error:SyntaxError: Invalid regular expression flags$/i.test(evidence)
-    || /^(?:personal_profile_without_company_match|identity_mismatch)_expected_[\s\S]+_title_(?:\(\d+\)\s*)?facebook$/i.test(evidence);
+    || /(?:^|;)(?:personal_profile_without_company_match|identity_mismatch)_expected_[^;]+_title_(?:\(\d+\)\s*)?facebook(?:;|$)/i.test(evidence);
 }
 
 function checkpointResultIsTerminal(result = {}) {
