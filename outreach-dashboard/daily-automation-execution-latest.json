@@ -29,13 +29,13 @@
       "ok": false,
       "sendStatus": "website_contact_unreachable_skip",
       "evidence": "website_page_unavailable_404: Fri frakt over 1200,-\n\n100 dagers åpent kjøp og fri retur\n\nKlimakompensert lynrask levering \n\nHerre\nDame\nUtstyr\nSko og støvler\nBarn\nAktiviteter\nSALG\nNyheter\nFjellsportpris\nGavekort;public_email_fallback_available:kundeservice@fjellsport.no;email_sender_not_configured;alibaba_webmail_login_required;website_contact_all_targets_failed:6;contact_path_strategy_v2",
-      "timestamp": "2026-07-30T11:39:54.574Z",
+      "timestamp": "2026-07-30T11:44:47.115Z",
       "chromeOpen": {
         "ok": false,
         "engine": "codex-chrome-cdp",
         "port": 9224,
         "targetUrl": "https://www.fjellsport.no/help/contact-us",
-        "tabId": "E50F347C5074B2C7C119FB7CAFD8F7D1",
+        "tabId": "E7D4CCF5D9055F372485726B6DA6A95F",
         "title": "",
         "status": "failed_open",
         "error": "profile_unavailable_or_broken_link",
@@ -52,7 +52,7 @@
           "engine": "codex-chrome-cdp",
           "port": 9224,
           "targetUrl": "https://www.fjellsport.no/help/contact-us",
-          "tabId": "E50F347C5074B2C7C119FB7CAFD8F7D1",
+          "tabId": "E7D4CCF5D9055F372485726B6DA6A95F",
           "title": "",
           "status": "failed_open",
           "error": "profile_unavailable_or_broken_link",
@@ -62,28 +62,7 @@
         "subject": "FLEXTAIL retail partnership | 2026 assortment",
         "draft": "Dear Fjellsport Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
         "evidence": "website_page_unavailable_404: Fri frakt over 1200,-\n\n100 dagers åpent kjøp og fri retur\n\nKlimakompensert lynrask levering \n\nHerre\nDame\nUtstyr\nSko og støvler\nBarn\nAktiviteter\nSALG\nNyheter\nFjellsportpris\nGavekort;public_email_fallback_available:kundeservice@fjellsport.no;email_sender_not_configured;alibaba_webmail_login_required;website_contact_all_targets_failed:6;contact_path_strategy_v2",
-        "output": "{\"verdict\":\"website_contact_unreachable_skip\",\"evidence\":\"website_page_unavailable_404: Fri frakt over 1200,-\\n\\n100 dagers åpent kjøp og fri retur\\n\\nKlimakompensert lynrask levering \\n\\nHerre\\nDame\\nUtstyr\\nSko og støvler\\nBarn\\nAktiviteter\\nSALG\\nNyheter\\nFjellsportpris\\nGavekort;public_email_fallback_available:kundeservice@fjellsport.no;email_sender_not_configured;alibaba_webmail_login_required;website_contact_all_targets_failed:6;contact_path_strategy_v2\",\"nextAction\":\"Email delivery to kundeservice@fjellsport.no requires a configured sender; continue with another verified contact path or LinkedIn, Facebook, or Instagram instead of claiming a send.\",\"subject\":\"FLEXTAIL retail partnership | 2026 assortment\",\"draft\":\"Dear Fjellsport Team,\\n\\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\\n\\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\\n\\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\\n\\nProduct overview: https://www.flextail.com/\\n\\nBest regards,\\nLeo Liu\\nSales & Operations Director\\nLeo@flextailgear.com\",\"sendStatus\":\"website_contact_unreachable_skip\",\"attempts\":[{\"targetUrl\":\"https://www.fjellsport.no/\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control\"},{\"targetUrl\":\"https://www.fjellsport.no/pages/contact-us\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;contact_entry_clicked:https://www.fjellsport.no/pages/contact-us\"},{\"targetUrl\":\"https://www.fjellsport.no/pages/contact\",\"sendStatus\":\"failed_open\",\"evidence\":\"website_page_unavailable_404: Fri frakt over 1200,-\\n\\n100 dagers åpent kjøp og fri retur\\n\\nKlimakompensert lynrask levering \\n\\nHerre\\nDame\\nUtstyr\\nSko og støvler\\nBarn\\nAktiviteter\\nSALG\\nNyheter\\nFjellsportpris\\nGavekort\"},{\"targetUrl\":\"https://www.fjellsport.no/contact-us\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;contact_entry_clicked:https://www.fjellsport.no/contact-us\"},{\"targetUrl\":\"https://www.fjellsport.no/contact\",\"sendStatus\":\"failed_open\",\"evidence\":\"website_page_unavailable_404: Fri frakt over 1200,-\\n\\n100 dagers åpent kjøp og fri retur\\n\\nKlimakompensert lynrask levering \\n\\nHerre\\nDame\\nUtstyr\\nSko og støvler\\nBarn\\nAktiviteter\\nSALG\\nNyheter\\nFjellsportpris\\nGavekort\"},{\"targetUrl\":\"https://www.fjellsport.no/help/contact-us\",\"sendStatus\":\"failed_open\",\"evidence\":\"website_page_unavailable_404: Fri frakt over 1200,-\\n\\n100 dagers åpent kjøp og fri retur\\n\\nKlimakompensert lynrask levering \\n\\nHerre\\nDame\\nUtstyr\\nSko og støvler\\nBarn\\nAktiviteter\\nSALG\\nNyheter\\nFjellsportpris\\nGavekort\"}]}"
-      }
-    },
-    {
-      "id": "google-customer-outnorth-website-contact",
-      "company": "Outnorth",
-      "action": "verify_target",
-      "platform": "website_form",
-      "targetUrl": "https://www.outnorth.com/",
-      "ok": false,
-      "sendStatus": "failed_open",
-      "evidence": "customer_execution_timeout:90000;queue_continued_to_next_customer",
-      "timestamp": "2026-07-30T11:41:27.454Z",
-      "chromeOpen": null,
-      "result": {
-        "ok": false,
-        "timedOut": true,
-        "sendStatus": "failed_open",
-        "reason": "customer_execution_timeout",
-        "evidence": "customer_execution_timeout:90000;queue_continued_to_next_customer",
-        "chromeOpen": null,
-        "output": "{\"verdict\":\"failed_open\",\"sendStatus\":\"failed_open\",\"evidence\":\"customer_execution_timeout:90000;queue_continued_to_next_customer\",\"nextAction\":\"The customer exceeded its bounded execution window. Its automation tabs were closed and the queue continued without retrying or claiming a send.\",\"company\":\"Outnorth\"}"
+        "output": "{\"verdict\":\"website_contact_unreachable_skip\",\"evidence\":\"website_page_unavailable_404: Fri frakt over 1200,-\\n\\n100 dagers åpent kjøp og fri retur\\n\\nKlimakompensert lynrask levering \\n\\nHerre\\nDame\\nUtstyr\\nSko og støvler\\nBarn\\nAktiviteter\\nSALG\\nNyheter\\nFjellsportpris\\nGavekort;public_email_fallback_available:kundeservice@fjellsport.no;email_sender_not_configured;alibaba_webmail_login_required;website_contact_all_targets_failed:6;contact_path_strategy_v2\",\"nextAction\":\"Email delivery to kundeservice@fjellsport.no requires a configured sender; continue with another verified contact path or LinkedIn, Facebook, or Instagram instead of claiming a send.\",\"subject\":\"FLEXTAIL retail partnership | 2026 assortment\",\"draft\":\"Dear Fjellsport Team,\\n\\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\\n\\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\\n\\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\\n\\nProduct overview: https://www.flextail.com/\\n\\nBest regards,\\nLeo Liu\\nSales & Operations Director\\nLeo@flextailgear.com\",\"sendStatus\":\"website_contact_unreachable_skip\",\"attempts\":[{\"targetUrl\":\"https://www.fjellsport.no/\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;contact_entry_clicked:Kontakt oss\"},{\"targetUrl\":\"https://www.fjellsport.no/pages/contact-us\",\"sendStatus\":\"failed_open\",\"evidence\":\"website_page_unavailable_404: Fri frakt over 1200,-\\n\\n100 dagers åpent kjøp og fri retur\\n\\nKlimakompensert lynrask levering \\n\\nHerre\\nDame\\nUtstyr\\nSko og støvler\\nBarn\\nAktiviteter\\nSALG\\nNyheter\\nFjellsportpris\\nGavekort\"},{\"targetUrl\":\"https://www.fjellsport.no/pages/contact\",\"sendStatus\":\"failed_open\",\"evidence\":\"website_page_unavailable_404: Fri frakt over 1200,-\\n\\n100 dagers åpent kjøp og fri retur\\n\\nKlimakompensert lynrask levering \\n\\nHerre\\nDame\\nUtstyr\\nSko og støvler\\nBarn\\nAktiviteter\\nSALG\\nNyheter\\nFjellsportpris\\nGavekort\"},{\"targetUrl\":\"https://www.fjellsport.no/contact-us\",\"sendStatus\":\"failed_open\",\"evidence\":\"website_page_unavailable_404: Fri frakt over 1200,-\\n\\n100 dagers åpent kjøp og fri retur\\n\\nKlimakompensert lynrask levering \\n\\nHerre\\nDame\\nUtstyr\\nSko og støvler\\nBarn\\nAktiviteter\\nSALG\\nNyheter\\nFjellsportpris\\nGavekort\"},{\"targetUrl\":\"https://www.fjellsport.no/contact\",\"sendStatus\":\"failed_open\",\"evidence\":\"website_page_unavailable_404: Fri frakt over 1200,-\\n\\n100 dagers åpent kjøp og fri retur\\n\\nKlimakompensert lynrask levering \\n\\nHerre\\nDame\\nUtstyr\\nSko og støvler\\nBarn\\nAktiviteter\\nSALG\\nNyheter\\nFjellsportpris\\nGavekort\"},{\"targetUrl\":\"https://www.fjellsport.no/help/contact-us\",\"sendStatus\":\"failed_open\",\"evidence\":\"website_page_unavailable_404: Fri frakt over 1200,-\\n\\n100 dagers åpent kjøp og fri retur\\n\\nKlimakompensert lynrask levering \\n\\nHerre\\nDame\\nUtstyr\\nSko og støvler\\nBarn\\nAktiviteter\\nSALG\\nNyheter\\nFjellsportpris\\nGavekort\"}]}"
       }
     },
     {
@@ -95,14 +74,14 @@
       "ok": false,
       "sendStatus": "website_contact_unreachable_skip",
       "evidence": "website_contact_entry_not_verified;no_contact_entry_control;public_email_fallback_available:info@scandinavianoutdoor.com;email_sender_not_configured;alibaba_webmail_login_required;website_contact_all_targets_failed:6;contact_path_strategy_v2",
-      "timestamp": "2026-07-30T11:41:49.965Z",
+      "timestamp": "2026-07-30T11:45:10.525Z",
       "chromeOpen": {
         "ok": true,
         "engine": "codex-chrome-cdp",
         "port": 9224,
         "targetUrl": "https://scandinavianoutdoor.com/help/contact-us",
-        "tabId": "2F9A11E5875AD37DF9D3FE4F903A3BF2",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/2F9A11E5875AD37DF9D3FE4F903A3BF2",
+        "tabId": "38E6CD8D427A37A8A11F0F80AF64057E",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/38E6CD8D427A37A8A11F0F80AF64057E",
         "title": ""
       },
       "result": {
@@ -116,8 +95,8 @@
           "engine": "codex-chrome-cdp",
           "port": 9224,
           "targetUrl": "https://scandinavianoutdoor.com/help/contact-us",
-          "tabId": "2F9A11E5875AD37DF9D3FE4F903A3BF2",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/2F9A11E5875AD37DF9D3FE4F903A3BF2",
+          "tabId": "38E6CD8D427A37A8A11F0F80AF64057E",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/38E6CD8D427A37A8A11F0F80AF64057E",
           "title": ""
         },
         "sendStatus": "website_contact_unreachable_skip",
@@ -136,14 +115,14 @@
       "ok": false,
       "sendStatus": "website_contact_unreachable_skip",
       "evidence": "website_contact_entry_not_verified;no_contact_entry_control;public_email_fallback_available:info@varuste.net;email_sender_not_configured;alibaba_webmail_login_required;website_contact_all_targets_failed:6;contact_path_strategy_v2",
-      "timestamp": "2026-07-30T11:42:32.499Z",
+      "timestamp": "2026-07-30T11:45:49.291Z",
       "chromeOpen": {
         "ok": true,
         "engine": "codex-chrome-cdp",
         "port": 9224,
         "targetUrl": "https://varuste.net/help/contact-us",
-        "tabId": "F5A3BC850C8B3A9B95E0B55CA316784F",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/F5A3BC850C8B3A9B95E0B55CA316784F",
+        "tabId": "78761C313CDC373BC71B3A1D93625692",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/78761C313CDC373BC71B3A1D93625692",
         "title": "Ulkoiluvarusteet netistä | Varuste.net"
       },
       "result": {
@@ -157,8 +136,8 @@
           "engine": "codex-chrome-cdp",
           "port": 9224,
           "targetUrl": "https://varuste.net/help/contact-us",
-          "tabId": "F5A3BC850C8B3A9B95E0B55CA316784F",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/F5A3BC850C8B3A9B95E0B55CA316784F",
+          "tabId": "78761C313CDC373BC71B3A1D93625692",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/78761C313CDC373BC71B3A1D93625692",
           "title": "Ulkoiluvarusteet netistä | Varuste.net"
         },
         "sendStatus": "website_contact_unreachable_skip",
@@ -179,13 +158,13 @@
       "ok": false,
       "sendStatus": "website_contact_unreachable_skip",
       "evidence": "website_page_unavailable_404: Fri frakt over 1200,-\n\n100 dagers åpent kjøp og fri retur\n\nKlimakompensert lynrask levering \n\nHerre\nDame\nUtstyr\nSko og støvler\nBarn\nAktiviteter\nSALG\nNyheter\nFjellsportpris\nGavekort;public_email_fallback_available:kundeservice@fjellsport.no;email_sender_not_configured;alibaba_webmail_login_required;website_contact_all_targets_failed:6;contact_path_strategy_v2",
-      "timestamp": "2026-07-30T11:39:54.574Z",
+      "timestamp": "2026-07-30T11:44:47.115Z",
       "chromeOpen": {
         "ok": false,
         "engine": "codex-chrome-cdp",
         "port": 9224,
         "targetUrl": "https://www.fjellsport.no/help/contact-us",
-        "tabId": "E50F347C5074B2C7C119FB7CAFD8F7D1",
+        "tabId": "E7D4CCF5D9055F372485726B6DA6A95F",
         "title": "",
         "status": "failed_open",
         "error": "profile_unavailable_or_broken_link",
@@ -202,7 +181,7 @@
           "engine": "codex-chrome-cdp",
           "port": 9224,
           "targetUrl": "https://www.fjellsport.no/help/contact-us",
-          "tabId": "E50F347C5074B2C7C119FB7CAFD8F7D1",
+          "tabId": "E7D4CCF5D9055F372485726B6DA6A95F",
           "title": "",
           "status": "failed_open",
           "error": "profile_unavailable_or_broken_link",
@@ -212,28 +191,7 @@
         "subject": "FLEXTAIL retail partnership | 2026 assortment",
         "draft": "Dear Fjellsport Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
         "evidence": "website_page_unavailable_404: Fri frakt over 1200,-\n\n100 dagers åpent kjøp og fri retur\n\nKlimakompensert lynrask levering \n\nHerre\nDame\nUtstyr\nSko og støvler\nBarn\nAktiviteter\nSALG\nNyheter\nFjellsportpris\nGavekort;public_email_fallback_available:kundeservice@fjellsport.no;email_sender_not_configured;alibaba_webmail_login_required;website_contact_all_targets_failed:6;contact_path_strategy_v2",
-        "output": "{\"verdict\":\"website_contact_unreachable_skip\",\"evidence\":\"website_page_unavailable_404: Fri frakt over 1200,-\\n\\n100 dagers åpent kjøp og fri retur\\n\\nKlimakompensert lynrask levering \\n\\nHerre\\nDame\\nUtstyr\\nSko og støvler\\nBarn\\nAktiviteter\\nSALG\\nNyheter\\nFjellsportpris\\nGavekort;public_email_fallback_available:kundeservice@fjellsport.no;email_sender_not_configured;alibaba_webmail_login_required;website_contact_all_targets_failed:6;contact_path_strategy_v2\",\"nextAction\":\"Email delivery to kundeservice@fjellsport.no requires a configured sender; continue with another verified contact path or LinkedIn, Facebook, or Instagram instead of claiming a send.\",\"subject\":\"FLEXTAIL retail partnership | 2026 assortment\",\"draft\":\"Dear Fjellsport Team,\\n\\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\\n\\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\\n\\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\\n\\nProduct overview: https://www.flextail.com/\\n\\nBest regards,\\nLeo Liu\\nSales & Operations Director\\nLeo@flextailgear.com\",\"sendStatus\":\"website_contact_unreachable_skip\",\"attempts\":[{\"targetUrl\":\"https://www.fjellsport.no/\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control\"},{\"targetUrl\":\"https://www.fjellsport.no/pages/contact-us\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;contact_entry_clicked:https://www.fjellsport.no/pages/contact-us\"},{\"targetUrl\":\"https://www.fjellsport.no/pages/contact\",\"sendStatus\":\"failed_open\",\"evidence\":\"website_page_unavailable_404: Fri frakt over 1200,-\\n\\n100 dagers åpent kjøp og fri retur\\n\\nKlimakompensert lynrask levering \\n\\nHerre\\nDame\\nUtstyr\\nSko og støvler\\nBarn\\nAktiviteter\\nSALG\\nNyheter\\nFjellsportpris\\nGavekort\"},{\"targetUrl\":\"https://www.fjellsport.no/contact-us\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;contact_entry_clicked:https://www.fjellsport.no/contact-us\"},{\"targetUrl\":\"https://www.fjellsport.no/contact\",\"sendStatus\":\"failed_open\",\"evidence\":\"website_page_unavailable_404: Fri frakt over 1200,-\\n\\n100 dagers åpent kjøp og fri retur\\n\\nKlimakompensert lynrask levering \\n\\nHerre\\nDame\\nUtstyr\\nSko og støvler\\nBarn\\nAktiviteter\\nSALG\\nNyheter\\nFjellsportpris\\nGavekort\"},{\"targetUrl\":\"https://www.fjellsport.no/help/contact-us\",\"sendStatus\":\"failed_open\",\"evidence\":\"website_page_unavailable_404: Fri frakt over 1200,-\\n\\n100 dagers åpent kjøp og fri retur\\n\\nKlimakompensert lynrask levering \\n\\nHerre\\nDame\\nUtstyr\\nSko og støvler\\nBarn\\nAktiviteter\\nSALG\\nNyheter\\nFjellsportpris\\nGavekort\"}]}"
-      }
-    },
-    {
-      "id": "google-customer-outnorth-website-contact",
-      "company": "Outnorth",
-      "action": "verify_target",
-      "platform": "website_form",
-      "targetUrl": "https://www.outnorth.com/",
-      "ok": false,
-      "sendStatus": "failed_open",
-      "evidence": "customer_execution_timeout:90000;queue_continued_to_next_customer",
-      "timestamp": "2026-07-30T11:41:27.454Z",
-      "chromeOpen": null,
-      "result": {
-        "ok": false,
-        "timedOut": true,
-        "sendStatus": "failed_open",
-        "reason": "customer_execution_timeout",
-        "evidence": "customer_execution_timeout:90000;queue_continued_to_next_customer",
-        "chromeOpen": null,
-        "output": "{\"verdict\":\"failed_open\",\"sendStatus\":\"failed_open\",\"evidence\":\"customer_execution_timeout:90000;queue_continued_to_next_customer\",\"nextAction\":\"The customer exceeded its bounded execution window. Its automation tabs were closed and the queue continued without retrying or claiming a send.\",\"company\":\"Outnorth\"}"
+        "output": "{\"verdict\":\"website_contact_unreachable_skip\",\"evidence\":\"website_page_unavailable_404: Fri frakt over 1200,-\\n\\n100 dagers åpent kjøp og fri retur\\n\\nKlimakompensert lynrask levering \\n\\nHerre\\nDame\\nUtstyr\\nSko og støvler\\nBarn\\nAktiviteter\\nSALG\\nNyheter\\nFjellsportpris\\nGavekort;public_email_fallback_available:kundeservice@fjellsport.no;email_sender_not_configured;alibaba_webmail_login_required;website_contact_all_targets_failed:6;contact_path_strategy_v2\",\"nextAction\":\"Email delivery to kundeservice@fjellsport.no requires a configured sender; continue with another verified contact path or LinkedIn, Facebook, or Instagram instead of claiming a send.\",\"subject\":\"FLEXTAIL retail partnership | 2026 assortment\",\"draft\":\"Dear Fjellsport Team,\\n\\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\\n\\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\\n\\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\\n\\nProduct overview: https://www.flextail.com/\\n\\nBest regards,\\nLeo Liu\\nSales & Operations Director\\nLeo@flextailgear.com\",\"sendStatus\":\"website_contact_unreachable_skip\",\"attempts\":[{\"targetUrl\":\"https://www.fjellsport.no/\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;contact_entry_clicked:Kontakt oss\"},{\"targetUrl\":\"https://www.fjellsport.no/pages/contact-us\",\"sendStatus\":\"failed_open\",\"evidence\":\"website_page_unavailable_404: Fri frakt over 1200,-\\n\\n100 dagers åpent kjøp og fri retur\\n\\nKlimakompensert lynrask levering \\n\\nHerre\\nDame\\nUtstyr\\nSko og støvler\\nBarn\\nAktiviteter\\nSALG\\nNyheter\\nFjellsportpris\\nGavekort\"},{\"targetUrl\":\"https://www.fjellsport.no/pages/contact\",\"sendStatus\":\"failed_open\",\"evidence\":\"website_page_unavailable_404: Fri frakt over 1200,-\\n\\n100 dagers åpent kjøp og fri retur\\n\\nKlimakompensert lynrask levering \\n\\nHerre\\nDame\\nUtstyr\\nSko og støvler\\nBarn\\nAktiviteter\\nSALG\\nNyheter\\nFjellsportpris\\nGavekort\"},{\"targetUrl\":\"https://www.fjellsport.no/contact-us\",\"sendStatus\":\"failed_open\",\"evidence\":\"website_page_unavailable_404: Fri frakt over 1200,-\\n\\n100 dagers åpent kjøp og fri retur\\n\\nKlimakompensert lynrask levering \\n\\nHerre\\nDame\\nUtstyr\\nSko og støvler\\nBarn\\nAktiviteter\\nSALG\\nNyheter\\nFjellsportpris\\nGavekort\"},{\"targetUrl\":\"https://www.fjellsport.no/contact\",\"sendStatus\":\"failed_open\",\"evidence\":\"website_page_unavailable_404: Fri frakt over 1200,-\\n\\n100 dagers åpent kjøp og fri retur\\n\\nKlimakompensert lynrask levering \\n\\nHerre\\nDame\\nUtstyr\\nSko og støvler\\nBarn\\nAktiviteter\\nSALG\\nNyheter\\nFjellsportpris\\nGavekort\"},{\"targetUrl\":\"https://www.fjellsport.no/help/contact-us\",\"sendStatus\":\"failed_open\",\"evidence\":\"website_page_unavailable_404: Fri frakt over 1200,-\\n\\n100 dagers åpent kjøp og fri retur\\n\\nKlimakompensert lynrask levering \\n\\nHerre\\nDame\\nUtstyr\\nSko og støvler\\nBarn\\nAktiviteter\\nSALG\\nNyheter\\nFjellsportpris\\nGavekort\"}]}"
       }
     },
     {
@@ -245,14 +203,14 @@
       "ok": false,
       "sendStatus": "website_contact_unreachable_skip",
       "evidence": "website_contact_entry_not_verified;no_contact_entry_control;public_email_fallback_available:info@scandinavianoutdoor.com;email_sender_not_configured;alibaba_webmail_login_required;website_contact_all_targets_failed:6;contact_path_strategy_v2",
-      "timestamp": "2026-07-30T11:41:49.965Z",
+      "timestamp": "2026-07-30T11:45:10.525Z",
       "chromeOpen": {
         "ok": true,
         "engine": "codex-chrome-cdp",
         "port": 9224,
         "targetUrl": "https://scandinavianoutdoor.com/help/contact-us",
-        "tabId": "2F9A11E5875AD37DF9D3FE4F903A3BF2",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/2F9A11E5875AD37DF9D3FE4F903A3BF2",
+        "tabId": "38E6CD8D427A37A8A11F0F80AF64057E",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/38E6CD8D427A37A8A11F0F80AF64057E",
         "title": ""
       },
       "result": {
@@ -266,8 +224,8 @@
           "engine": "codex-chrome-cdp",
           "port": 9224,
           "targetUrl": "https://scandinavianoutdoor.com/help/contact-us",
-          "tabId": "2F9A11E5875AD37DF9D3FE4F903A3BF2",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/2F9A11E5875AD37DF9D3FE4F903A3BF2",
+          "tabId": "38E6CD8D427A37A8A11F0F80AF64057E",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/38E6CD8D427A37A8A11F0F80AF64057E",
           "title": ""
         },
         "sendStatus": "website_contact_unreachable_skip",
@@ -286,14 +244,14 @@
       "ok": false,
       "sendStatus": "website_contact_unreachable_skip",
       "evidence": "website_contact_entry_not_verified;no_contact_entry_control;public_email_fallback_available:info@varuste.net;email_sender_not_configured;alibaba_webmail_login_required;website_contact_all_targets_failed:6;contact_path_strategy_v2",
-      "timestamp": "2026-07-30T11:42:32.499Z",
+      "timestamp": "2026-07-30T11:45:49.291Z",
       "chromeOpen": {
         "ok": true,
         "engine": "codex-chrome-cdp",
         "port": 9224,
         "targetUrl": "https://varuste.net/help/contact-us",
-        "tabId": "F5A3BC850C8B3A9B95E0B55CA316784F",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/F5A3BC850C8B3A9B95E0B55CA316784F",
+        "tabId": "78761C313CDC373BC71B3A1D93625692",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/78761C313CDC373BC71B3A1D93625692",
         "title": "Ulkoiluvarusteet netistä | Varuste.net"
       },
       "result": {
@@ -307,8 +265,8 @@
           "engine": "codex-chrome-cdp",
           "port": 9224,
           "targetUrl": "https://varuste.net/help/contact-us",
-          "tabId": "F5A3BC850C8B3A9B95E0B55CA316784F",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/F5A3BC850C8B3A9B95E0B55CA316784F",
+          "tabId": "78761C313CDC373BC71B3A1D93625692",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/78761C313CDC373BC71B3A1D93625692",
           "title": "Ulkoiluvarusteet netistä | Varuste.net"
         },
         "sendStatus": "website_contact_unreachable_skip",
@@ -373,6 +331,12 @@
       "company": "Left Point Distribution",
       "action": "email_priority",
       "reason": "official_website_contact_channel"
+    },
+    {
+      "id": "google-customer-outnorth-website-contact",
+      "company": "Outnorth",
+      "action": "verify_target",
+      "reason": "homepage_only_contact_path_requires_verification"
     },
     {
       "id": "google-customer-obelink-website-contact",
@@ -895,6 +859,12 @@
       "company": "Left Point Distribution",
       "action": "email_priority",
       "reason": "official_website_contact_channel"
+    },
+    {
+      "id": "google-customer-outnorth-website-contact",
+      "company": "Outnorth",
+      "action": "verify_target",
+      "reason": "homepage_only_contact_path_requires_verification"
     },
     {
       "id": "google-customer-obelink-website-contact",
@@ -1500,7 +1470,7 @@
     {
       "reason": "homepage_only_contact_path_requires_verification",
       "status": "skipped",
-      "count": 94
+      "count": 96
     },
     {
       "reason": "concrete_google_discovered_major_customer_facebook",
@@ -1521,20 +1491,14 @@
       "reason": "concrete_google_discovered_major_customer_instagram",
       "status": "skipped",
       "count": 20
-    },
-    {
-      "reason": "customer_execution_timeout",
-      "status": "failed_open",
-      "count": 1
     }
   ],
   "blockerCounts": {
-    "homepage_only_contact_path_requires_verification": 94,
+    "homepage_only_contact_path_requires_verification": 96,
     "concrete_google_discovered_major_customer_facebook": 28,
     "missing_verified_profile_url": 27,
     "official_website_contact_channel": 22,
-    "concrete_google_discovered_major_customer_instagram": 20,
-    "customer_execution_timeout": 1
+    "concrete_google_discovered_major_customer_instagram": 20
   },
   "queueGoalStatus": {
     "target": 100,
@@ -1546,7 +1510,7 @@
     "action": "Daily high-ICP queue target reached."
   },
   "platformCircuitState": {},
-  "userVisibleStatus": "Customer development was not performed. Blockers: homepage_only_contact_path_requires_verification (94); concrete_google_discovered_major_customer_facebook (28); missing_verified_profile_url (27).",
+  "userVisibleStatus": "Customer development was not performed. Blockers: homepage_only_contact_path_requires_verification (96); concrete_google_discovered_major_customer_facebook (28); missing_verified_profile_url (27).",
   "recoveryHint": "Add a verified Facebook or Instagram profile URL before retrying social outreach. Confirm the official social profile and safe message entry before rerunning Google-discovered social outreach.",
   "recoveryActions": [
     {
@@ -1568,12 +1532,12 @@
     "stderr": "",
     "error": "",
     "visibility": {
-      "updatedAt": "2026-07-30T11:42:36.564Z",
+      "updatedAt": "2026-07-30T11:45:50.817Z",
       "source": "main-refreshDailyAutomationArtifacts",
       "runDate": "2026-07-30",
-      "artifactGeneratedAt": "2026-07-30T11:42:33.268Z",
-      "executionGeneratedAt": "2026-07-30T11:35:38.278Z",
-      "githubSyncUpdatedAt": "2026-07-30T11:36:07.833Z",
+      "artifactGeneratedAt": "2026-07-30T11:45:49.699Z",
+      "executionGeneratedAt": "2026-07-30T11:42:37.881Z",
+      "githubSyncUpdatedAt": "2026-07-30T11:43:07.959Z",
       "counts": {
         "dailyQueue": 99,
         "googleDiscovered": 78,
@@ -1636,5 +1600,5 @@
     ]
   },
   "ledgerReconciliationCount": 4,
-  "completedAt": "2026-07-30T11:42:37.881Z"
+  "completedAt": "2026-07-30T11:45:51.278Z"
 }
