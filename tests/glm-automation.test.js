@@ -829,7 +829,9 @@ test('Chrome recovery isolates automation from the operator primary browser', ()
   assert.ok(mainSource.includes("'http://127.0.0.1:4174/outreach-dashboard.html?view=workspace'"));
   assert.doesNotMatch(mainSource, /'--new-window',\s*'about:blank'/);
   assert.doesNotMatch(mainSource, /engine: 'codex-chrome-extension-cdp'/);
-  assert.ok(mainSource.includes("'--start-minimized'"));
+  assert.ok(mainSource.includes('windowsHide: false'));
+  assert.ok(!mainSource.includes("'--start-minimized'"));
+  assert.ok(mainSource.includes("`--user-data-dir=${profile}`"));
 });
 
 test('Facebook composer writes React contenteditable state before send', () => {
@@ -1260,10 +1262,13 @@ test('daily execution owns and closes each automation-created Chrome tab', () =>
   assert.ok(mainSource.includes('const parallelLimit = 1'));
 });
 
-test('automation-owned Chrome work opens in a separate background tab without stealing focus', () => {
+test('automation-owned Chrome work is visible in the dedicated 9224 window', () => {
   assert.ok(mainSource.includes("'Target.createTarget'"));
-  assert.ok(mainSource.includes('background: true'));
-  assert.ok(mainSource.includes('if (!options.automationOwned) await activateChromeTarget(port, opened)'));
+  assert.ok(mainSource.includes('background: false'));
+  assert.ok(mainSource.includes("process.env.SHOW_AUTOMATION_CHROME || 'true'"));
+  assert.ok(mainSource.includes('if (!options.automationOwned || showAutomationChrome) await activateChromeTarget(port, opened)'));
+  assert.ok(!mainSource.includes("'--start-minimized'"));
+  assert.ok(mainSource.includes('for (const port of [9224])'));
 });
 
 test('Windows automation runs every three hours in bounded batches', () => {

@@ -1110,7 +1110,6 @@ async function ensureCodexChromePort() {
       `--user-data-dir=${profile}`,
       '--no-first-run',
       '--no-default-browser-check',
-      '--start-minimized',
       '--new-window',
       'http://127.0.0.1:4174/outreach-dashboard.html?view=workspace',
     ], { detached: true, stdio: 'ignore', windowsHide: false });
@@ -1170,7 +1169,7 @@ async function openChromeTargetWithRecovery(port, targetUrl) {
   if (version && version.webSocketDebuggerUrl) {
     const created = await cdpCommand(version.webSocketDebuggerUrl, 'Target.createTarget', {
       url: targetUrl,
-      background: true,
+      background: false,
     }, 5000).catch(() => null);
     if (created && created.targetId) {
       for (let attempt = 0; attempt < 8; attempt += 1) {
@@ -1250,9 +1249,11 @@ async function openWithCodexChrome(url, options = {}) {
   }
   if (options.automationOwned && opened && opened.id) automationOwnedChromeTabs.set(opened.id, port);
   if (options.reuseTab && opened && opened.id) automationReusableChromeTab = { port, tabId: opened.id };
-  // Automation-owned targets stay in their own background tab so a live run
-  // never steals focus from the page the operator is actively using.
-  if (!options.automationOwned) await activateChromeTarget(port, opened);
+  // Production runs are observable by default: only the dedicated 9224
+  // window is restored and its current customer tab is activated. The
+  // operator's primary Chrome/9222 is never inspected or focused.
+  const showAutomationChrome = !/^(0|false|no)$/i.test(String(process.env.SHOW_AUTOMATION_CHROME || 'true'));
+  if (!options.automationOwned || showAutomationChrome) await activateChromeTarget(port, opened);
   const inspected = await inspectOpenedChromeTab(opened, parsed.toString());
   if (inspected.unavailable) {
     return {
