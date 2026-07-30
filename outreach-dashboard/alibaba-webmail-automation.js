@@ -66,6 +66,10 @@ function composeFieldsExpression() {
       }
     }
     const inputs = roots.flatMap(root => Array.from(root.querySelectorAll('input:not([type="hidden"]),textarea,[role="combobox"]')));
+    const isVisible = input => {
+      const rect = input?.getBoundingClientRect?.();
+      return Boolean(rect && rect.width > 0 && rect.height > 0);
+    };
     const directLabelOf = input => {
       const labelledBy = input.getAttribute?.('aria-labelledby');
       const labelledText = labelledBy && input.ownerDocument?.getElementById?.(labelledBy)?.innerText;
@@ -87,12 +91,9 @@ function composeFieldsExpression() {
     };
     const recipientPattern = /\b(to|recipient|email)\b|\u6536\u4ef6\u4eba|\u6536\u4ef6/i;
     const subjectPattern = /\bsubject\b|\u4e3b\u9898/i;
-    const recipientInput = inputs.find(input => recipientPattern.test(directLabelOf(input)))
+    const recipientInput = inputs.find(input => isVisible(input) && recipientPattern.test(directLabelOf(input)))
       || roots.flatMap(root => Array.from(root.querySelectorAll('input[role="combobox"]')))
-        .filter(input => {
-          const rect = input.getBoundingClientRect?.();
-          return Boolean(rect && rect.width > 0 && rect.height > 0);
-        })
+        .filter(isVisible)
         .sort((left, right) => right.getBoundingClientRect().width - left.getBoundingClientRect().width)[0]
       || null;
     const subjectInput = inputs.find(input => subjectPattern.test(labelOf(input))) || null;
@@ -135,13 +136,11 @@ function composeFillExpression({ recipient, subject, text } = {}) {
     editorBody.innerText = bodyText;
     editorBody.dispatchEvent(new InputEvent('input', { bubbles: true, inputType: 'insertText', data: bodyText }));
     editorBody.dispatchEvent(new Event('change', { bubbles: true }));
-    recipientInput.focus();
-    setValue(recipientInput, '');
     const recipientRect = recipientInput.getBoundingClientRect?.();
     const recipientRoot = recipientInput.getRootNode?.();
     return JSON.stringify({
       ok: true,
-      evidence: 'alibaba_webmail_content_inserted_recipient_focused',
+      evidence: 'alibaba_webmail_content_inserted_recipient_control_verified',
       recipient,
       subject,
       bodyLength: bodyText.length,
@@ -152,6 +151,8 @@ function composeFillExpression({ recipient, subject, text } = {}) {
         className: String(recipientInput.className || '').slice(0, 120),
         x: Math.round(recipientRect?.x || 0),
         y: Math.round(recipientRect?.y || 0),
+        width: Math.round(recipientRect?.width || 0),
+        height: Math.round(recipientRect?.height || 0),
         shadowRoot: Boolean(recipientRoot && recipientRoot.host),
       },
     });
@@ -205,16 +206,56 @@ function composeSendExpression({ recipient, subject } = {}) {
     const subject = ${serialized(subject)};
     const fields = ${composeFieldsExpression()};
     const pageText = document.body?.innerText || '';
-    if (!pageText.toLowerCase().includes(recipient.toLowerCase()) || !fields.subjectInput || fields.subjectInput.value !== subject) return JSON.stringify({ ok: false, sendClicked: false, evidence: 'alibaba_webmail_pre_send_identity_check_failed' });
+    if (!pageText.toLowerCase().includes(recipient.toLowerCase()) || !fields.subjectInput || fields.subjectInput.value !== subject) return JSON.stringify({ ok: false, sendReady: false, evidence: 'alibaba_webmail_pre_send_identity_check_failed' });
     const textOf = element => String(element?.innerText || element?.textContent || element?.getAttribute?.('aria-label') || '').trim();
-    const sendPattern = /^send$/i.test.bind(/^send$/i);
     const candidates = Array.from(document.querySelectorAll('button,[role="button"]')).filter(button => {
       const label = textOf(button);
-      return /^send$/i.test(label) || /^\u53d1\u9001$/.test(label);
+      const rect = button.getBoundingClientRect?.();
+      return Boolean(rect && rect.width > 0 && rect.height > 0)
+        && !button.disabled
+        && (/^send$/i.test(label) || /^\u53d1\u9001$/.test(label));
     });
-    if (candidates.length !== 1) return JSON.stringify({ ok: false, sendClicked: false, evidence: 'alibaba_webmail_send_button_not_unique', count: candidates.length });
-    candidates[0].click();
-    return JSON.stringify({ ok: true, sendClicked: true, evidence: 'alibaba_webmail_send_clicked' });
+    if (candidates.length !== 1) return JSON.stringify({ ok: false, sendReady: false, evidence: 'alibaba_webmail_send_button_not_unique', count: candidates.length });
+    const button = candidates[0];
+    const rect = button.getBoundingClientRect();
+    return JSON.stringify({
+      ok: true,
+      sendReady: true,
+      evidence: 'alibaba_webmail_send_control_verified',
+      x: rect.x + rect.width / 2,
+      y: rect.y + rect.height / 2,
+      width: rect.width,
+      height: rect.height,
+      label: textOf(button),
+    });
+  })()`;
+}
+
+function postSendStateExpression({ subject } = {}) {
+  return `(() => {
+    const subject = ${serialized(subject)};
+    const fields = ${composeFieldsExpression()};
+    const text = document.body?.innerText || '';
+    const successToast = /\b(message sent|mail sent)\b|\u53d1\u9001\u6210\u529f|\u90ae\u4ef6\u53d1\u9001\u6210\u529f/i.test(text);
+    const composerStillOpen = Boolean(fields.subjectInput && fields.subjectInput.value === subject);
+    const blockingDialog = Array.from(document.querySelectorAll('[role="dialog"],.ant-modal,.next-dialog'))
+      .filter(element => element.getClientRects?.().length)
+      .map(element => String(element.innerText || element.textContent || '').trim())
+      .filter(Boolean)
+      .slice(0, 5);
+    return JSON.stringify({
+      ok: successToast || !composerStillOpen,
+      successToast,
+      composerStillOpen,
+      blockingDialog,
+      evidence: successToast
+        ? 'alibaba_mail_sent_success_toast'
+        : !composerStillOpen
+          ? 'alibaba_webmail_composer_closed_after_physical_click'
+          : blockingDialog.length
+            ? 'alibaba_webmail_send_blocking_dialog_visible'
+            : 'alibaba_webmail_composer_still_open_after_physical_click',
+    });
   })()`;
 }
 
@@ -247,4 +288,4 @@ function sentFolderConfirmationExpression({ subject } = {}) {
   })()`;
 }
 
-module.exports = { ALIBABA_WEBMAIL_SENT_URL, composeStartExpression, composeFillExpression, composeInspectionExpression, composeSendExpression, sendToastExpression, sentFolderConfirmationExpression };
+module.exports = { ALIBABA_WEBMAIL_SENT_URL, composeStartExpression, composeFillExpression, composeInspectionExpression, composeSendExpression, postSendStateExpression, sendToastExpression, sentFolderConfirmationExpression };

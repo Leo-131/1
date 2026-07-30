@@ -7,6 +7,7 @@ const {
   composeFillExpression,
   composeInspectionExpression,
   composeSendExpression,
+  postSendStateExpression,
   sendToastExpression,
   sentFolderConfirmationExpression,
 } = require('../outreach-dashboard/alibaba-webmail-automation');
@@ -26,6 +27,7 @@ test('Alibaba webmail expressions are valid JavaScript and keep exact recipient/
     composeFillExpression(payload),
     composeInspectionExpression(payload),
     composeSendExpression(payload),
+    postSendStateExpression(payload),
     sendToastExpression(),
     sentFolderConfirmationExpression(payload),
   ];
@@ -43,12 +45,20 @@ test('Alibaba webmail expressions are valid JavaScript and keep exact recipient/
   assert.match(composeFillExpression(payload), /getBoundingClientRect\(\)\.width/);
   assert.match(composeFillExpression(payload), /iframe\.e_iframe/);
   assert.match(composeFillExpression(payload), /querySelectorAll\('iframe'\)/);
-  assert.match(composeFillExpression(payload), /content_inserted_recipient_focused/);
+  assert.match(composeFillExpression(payload), /content_inserted_recipient_control_verified/);
+  assert.match(composeFillExpression(payload), /isVisible/);
+  assert.doesNotMatch(composeFillExpression(payload), /setValue\(recipientInput, recipient\)/);
+  assert.match(composeFillExpression(payload), /width: Math\.round\(recipientRect\?\.width \|\| 0\)/);
   assert.match(composeInspectionExpression(payload), /data-email/);
   assert.match(composeInspectionExpression(payload), /recipientSignals/);
   assert.match(composeInspectionExpression(payload), /root\.host/);
   assert.match(composeInspectionExpression(payload), /replace\(\/\\u00a0\/g/);
   assert.match(composeSendExpression(payload), /send_button_not_unique/);
+  assert.match(composeSendExpression(payload), /send_control_verified/);
+  assert.match(composeSendExpression(payload), /getBoundingClientRect/);
+  assert.doesNotMatch(composeSendExpression(payload), /\.click\(\)/);
+  assert.match(postSendStateExpression(payload), /composerStillOpen/);
+  assert.match(postSendStateExpression(payload), /blockingDialog/);
   assert.match(sentFolderConfirmationExpression(payload), /sent_folder_record_confirmed/);
   assert.match(sentFolderConfirmationExpression(payload), /shadowRoot/);
 });

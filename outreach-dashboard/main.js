@@ -23,6 +23,7 @@ const {
   composeFillExpression,
   composeInspectionExpression,
   composeSendExpression,
+  postSendStateExpression,
   sendToastExpression,
   sentFolderConfirmationExpression,
 } = require('./alibaba-webmail-automation');
@@ -1096,11 +1097,19 @@ async function closeAutomationTabsOpenedAfter(existingTabIds = new Set()) {
 
 async function closeAutomationChromeTab(chromeOpen) {
   if (!chromeOpen || !chromeOpen.tabId) return false;
+  if (chromeOpen.preservedForManualReview) return false;
   if (automationReusableChromeTab && automationReusableChromeTab.tabId === chromeOpen.tabId) return false;
   const port = Number(chromeOpen.port || automationOwnedChromeTabs.get(chromeOpen.tabId) || 0);
   const closed = await closeChromeTarget(port, chromeOpen.tabId);
   automationOwnedChromeTabs.delete(chromeOpen.tabId);
   return closed;
+}
+
+function preserveAutomationChromeTab(chromeOpen) {
+  if (!chromeOpen || !chromeOpen.tabId) return false;
+  automationOwnedChromeTabs.delete(chromeOpen.tabId);
+  chromeOpen.preservedForManualReview = true;
+  return true;
 }
 
 async function openChromeTargetWithRecovery(port, targetUrl) {
@@ -2642,6 +2651,7 @@ async function runAlibabaWebmailEmailLead(lead = {}, subject = '', draft = '') {
       evidence: chromeOpen && (chromeOpen.evidence || chromeOpen.error) || 'alibaba_webmail_session_unavailable',
     };
   }
+  let preserveTabForReview = false;
   try {
     let compose = null;
     for (let attempt = 0; attempt < 10; attempt += 1) {
@@ -2661,9 +2671,32 @@ async function runAlibabaWebmailEmailLead(lead = {}, subject = '', draft = '') {
     }
     let recipientStage = null;
     if (filled && filled.ok) {
+      const recipientControl = filled.recipientControl || {};
+      const recipientX = Number(recipientControl.x || 0) + Number(recipientControl.width || 0) / 2;
+      const recipientY = Number(recipientControl.y || 0) + Number(recipientControl.height || 0) / 2;
+      await cdpCommand(chromeOpen.webSocketDebuggerUrl, 'Input.dispatchMouseEvent', {
+        type: 'mouseMoved',
+        x: recipientX,
+        y: recipientY,
+      }, 3000);
+      await cdpCommand(chromeOpen.webSocketDebuggerUrl, 'Input.dispatchMouseEvent', {
+        type: 'mousePressed',
+        x: recipientX,
+        y: recipientY,
+        button: 'left',
+        clickCount: 1,
+      }, 3000);
+      await cdpCommand(chromeOpen.webSocketDebuggerUrl, 'Input.dispatchMouseEvent', {
+        type: 'mouseReleased',
+        x: recipientX,
+        y: recipientY,
+        button: 'left',
+        clickCount: 1,
+      }, 3000);
       await cdpCommand(chromeOpen.webSocketDebuggerUrl, 'Input.insertText', {
         text: target.recipient,
       }, 3000);
+      await sleep(500);
       recipientStage = await evaluateChromeTabJson(chromeOpen, `(() => {
         const active = document.activeElement;
         const rect = active?.getBoundingClientRect?.();
@@ -2676,19 +2709,6 @@ async function runAlibabaWebmailEmailLead(lead = {}, subject = '', draft = '') {
           y: Math.round(rect?.y || 0),
         });
       })()`, 5000).catch(() => null);
-      await cdpCommand(chromeOpen.webSocketDebuggerUrl, 'Input.dispatchKeyEvent', {
-        type: 'keyDown',
-        key: 'Enter',
-        code: 'Enter',
-        windowsVirtualKeyCode: 13,
-      }, 3000);
-      await cdpCommand(chromeOpen.webSocketDebuggerUrl, 'Input.dispatchKeyEvent', {
-        type: 'keyUp',
-        key: 'Enter',
-        code: 'Enter',
-        windowsVirtualKeyCode: 13,
-      }, 3000);
-      await sleep(500);
     }
     await sleep(500);
     const inspected = await evaluateChromeTabJson(chromeOpen, composeInspectionExpression(payload), 8000);
@@ -2705,13 +2725,51 @@ async function runAlibabaWebmailEmailLead(lead = {}, subject = '', draft = '') {
         : 'recipient_control_missing';
       return { ok: false, sendStatus: 'approval_pending', reason: 'alibaba_webmail_draft_verification_failed', evidence: `${filled && filled.evidence || 'fill_missing'};${inspected && inspected.evidence || 'inspection_missing'};${inspectionFlags};${recipientStageEvidence};${recipientControlEvidence}` };
     }
-    const sent = await evaluateChromeTabJson(chromeOpen, composeSendExpression(payload), 8000);
-    if (!sent || !sent.sendClicked) return { ok: false, sendStatus: 'approval_pending', reason: 'alibaba_webmail_send_not_clicked', evidence: sent && sent.evidence || 'alibaba_webmail_send_not_clicked' };
+    const sendControl = await evaluateChromeTabJson(chromeOpen, composeSendExpression(payload), 8000);
+    if (!sendControl || !sendControl.sendReady) return { ok: false, sendStatus: 'approval_pending', reason: 'alibaba_webmail_send_control_not_verified', evidence: sendControl && sendControl.evidence || 'alibaba_webmail_send_control_not_verified' };
+    await cdpCommand(chromeOpen.webSocketDebuggerUrl, 'Input.dispatchMouseEvent', {
+      type: 'mouseMoved',
+      x: sendControl.x,
+      y: sendControl.y,
+    }, 3000);
+    await cdpCommand(chromeOpen.webSocketDebuggerUrl, 'Input.dispatchMouseEvent', {
+      type: 'mousePressed',
+      x: sendControl.x,
+      y: sendControl.y,
+      button: 'left',
+      clickCount: 1,
+    }, 3000);
+    await cdpCommand(chromeOpen.webSocketDebuggerUrl, 'Input.dispatchMouseEvent', {
+      type: 'mouseReleased',
+      x: sendControl.x,
+      y: sendControl.y,
+      button: 'left',
+      clickCount: 1,
+    }, 3000);
+    const physicalClickEvidence = 'alibaba_webmail_send_physical_click_dispatched';
+    let postSend = null;
     let toast = null;
-    for (let attempt = 0; attempt < 10; attempt += 1) {
+    for (let attempt = 0; attempt < 20; attempt += 1) {
       await sleep(500);
+      postSend = await evaluateChromeTabJson(chromeOpen, postSendStateExpression(payload), 5000).catch(() => null);
       toast = await evaluateChromeTabJson(chromeOpen, sendToastExpression(), 5000).catch(() => null);
-      if (toast && toast.confirmed) break;
+      if (toast && toast.confirmed || postSend && postSend.ok) break;
+    }
+    if (!postSend || !postSend.ok) {
+      preserveTabForReview = preserveAutomationChromeTab(chromeOpen);
+      return {
+        ok: false,
+        sendStatus: 'send_unconfirmed',
+        reason: 'alibaba_webmail_physical_send_not_accepted',
+        evidence: `official_public_business_email;alibaba_webmail_session_reused;${sendControl.evidence};${physicalClickEvidence};${postSend && postSend.evidence || 'post_send_state_missing'};composer_preserved_for_manual_review:${preserveTabForReview}`,
+        recipientEmail: target.recipient,
+        targetUrl: `mailto:${target.recipient}`,
+        subject,
+        draft,
+        chromeOpen,
+        engine: 'alibaba-enterprise-mail-web-session',
+        mode: 'alibaba_webmail_send_not_accepted',
+      };
     }
     await navigateChromeTab(chromeOpen, ALIBABA_WEBMAIL_SENT_URL);
     let sentFolder = null;
@@ -2725,7 +2783,7 @@ async function runAlibabaWebmailEmailLead(lead = {}, subject = '', draft = '') {
       ok: confirmed,
       sendStatus: confirmed ? 'sent_confirmed' : 'send_unconfirmed',
       reason: confirmed ? 'sent_folder_message_confirmed' : 'sent_folder_confirmation_missing',
-      evidence: `official_public_business_email;alibaba_webmail_session_reused;${sent.evidence};${toast && toast.evidence || 'send_toast_not_observed'};${sentFolder && sentFolder.evidence || 'sent_folder_record_missing'}`,
+      evidence: `official_public_business_email;alibaba_webmail_session_reused;${sendControl.evidence};${physicalClickEvidence};${postSend.evidence};${toast && toast.evidence || 'send_toast_not_observed'};${sentFolder && sentFolder.evidence || 'sent_folder_record_missing'}`,
       recipientEmail: target.recipient,
       targetUrl: `mailto:${target.recipient}`,
       subject,
@@ -2736,13 +2794,13 @@ async function runAlibabaWebmailEmailLead(lead = {}, subject = '', draft = '') {
       output: JSON.stringify({
         verdict: confirmed ? 'sent_confirmed' : 'send_unconfirmed',
         sendStatus: confirmed ? 'sent_confirmed' : 'send_unconfirmed',
-        evidence: `${sent.evidence};${toast && toast.evidence || 'send_toast_not_observed'};${sentFolder && sentFolder.evidence || 'sent_folder_record_missing'}`,
+        evidence: `${sendControl.evidence};${physicalClickEvidence};${postSend.evidence};${toast && toast.evidence || 'send_toast_not_observed'};${sentFolder && sentFolder.evidence || 'sent_folder_record_missing'}`,
         nextAction: confirmed ? 'Alibaba Mail web session sent the message and the exact subject is visible in Sent.' : 'Do not resend automatically; inspect the webmail Sent folder evidence.',
         recipientEmail: target.recipient,
       }),
     };
   } finally {
-    await closeAutomationChromeTab(chromeOpen);
+    if (!preserveTabForReview) await closeAutomationChromeTab(chromeOpen);
   }
 }
 

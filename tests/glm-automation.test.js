@@ -110,6 +110,10 @@ test('official public business email outranks unverifiable email rows without re
   assert.ok(mainSource.includes('verifiedBusinessEmailTarget(item).ok'));
   assert.ok(mainSource.includes('const isVerifiedEmail = verifiedBusinessEmailTarget(lead).ok'));
   assert.doesNotMatch(mainSource, /platform === 'email' && verifiedBusinessEmailTarget\(lead\)\.ok/);
+  assert.ok(mainSource.includes("'Input.dispatchMouseEvent'"));
+  assert.ok(mainSource.includes('alibaba_webmail_send_physical_click_dispatched'));
+  assert.ok(mainSource.includes('preserveAutomationChromeTab(chromeOpen)'));
+  assert.match(mainSource, /'Input\.insertText', \{\s*text: target\.recipient/);
   assert.ok(mainSource.includes("&& ['website_contact_ready', 'website_contact_unreachable_skip'].includes(result.status)"));
 });
 
@@ -927,7 +931,7 @@ test('Codex Chrome execution can auto-send approved social outreach with confirm
   assert.ok(mainSource.includes('dom_click_fallback_succeeded'));
   assert.ok(mainSource.includes('await clickChromeTabAt(opened, button.x, button.y)'));
   assert.ok(mainSource.includes('recipientReady:${Boolean(inspected.recipientReady)}'));
-  assert.ok(mainSource.includes("windowsVirtualKeyCode: 13"));
+  assert.doesNotMatch(mainSource, /windowsVirtualKeyCode: 13/);
   assert.ok(mainSource.includes("'Input.insertText'"));
   assert.ok(mainSource.includes('prior_send_unconfirmed_no_resend'));
   assert.ok(mainSource.includes('async function prepareSocialDraft'));

@@ -21,36 +21,6 @@
   "queueSource": "dailyPotentialPool",
   "executed": [
     {
-      "id": "google-customer-flameoutdoors-website-contact",
-      "company": "FlameOutdoors",
-      "action": "email_priority",
-      "platform": "website_form",
-      "targetUrl": "https://flameoutdoors.com/pages/authorized-dealer",
-      "ok": false,
-      "sendStatus": "send_unconfirmed",
-      "evidence": "official_public_business_email;alibaba_webmail_session_reused;alibaba_webmail_send_clicked;alibaba_mail_send_confirmation_waiting;sent_folder_record_missing",
-      "timestamp": "2026-07-30T04:32:00.279Z",
-      "chromeOpen": null,
-      "result": {
-        "ok": false,
-        "sendStatus": "send_unconfirmed",
-        "reason": "sent_folder_confirmation_missing",
-        "evidence": "official_public_business_email;alibaba_webmail_session_reused;alibaba_webmail_send_clicked;alibaba_mail_send_confirmation_waiting;sent_folder_record_missing",
-        "recipientEmail": "sales@flameoutdoors.com",
-        "targetUrl": "mailto:sales@flameoutdoors.com",
-        "subject": "FLEXTAIL retail partnership | 2026 assortment",
-        "draft": "Dear FlameOutdoors Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
-        "engine": "alibaba-enterprise-mail-web-session",
-        "mode": "alibaba_webmail_delivery_unconfirmed",
-        "contentValidation": {
-          "ok": true,
-          "errors": [],
-          "words": 108
-        },
-        "output": "{\"verdict\":\"send_unconfirmed\",\"sendStatus\":\"send_unconfirmed\",\"evidence\":\"official_public_business_email;alibaba_webmail_session_reused;alibaba_webmail_send_clicked;alibaba_mail_send_confirmation_waiting;sent_folder_record_missing\",\"nextAction\":\"Do not resend automatically; inspect the Alibaba Mail delivery and Sent-folder evidence.\",\"recipientEmail\":\"sales@flameoutdoors.com\",\"messageId\":\"\"}"
-      }
-    },
-    {
       "id": "google-customer-doorout-website-contact",
       "company": "Doorout",
       "action": "verify_target",
@@ -59,14 +29,14 @@
       "ok": false,
       "sendStatus": "approval_pending",
       "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;;contact_path_strategy_v2",
-      "timestamp": "2026-07-30T04:32:05.239Z",
+      "timestamp": "2026-07-30T04:54:36.824Z",
       "chromeOpen": {
         "ok": true,
         "engine": "codex-chrome-cdp",
         "port": 9224,
         "targetUrl": "https://www.doorout.com/",
-        "tabId": "B65B9186EAE0B370180EBD02C33B6D20",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/B65B9186EAE0B370180EBD02C33B6D20",
+        "tabId": "412B2E773F81C758973C2268AEF81969",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/412B2E773F81C758973C2268AEF81969",
         "title": ""
       },
       "result": {
@@ -77,8 +47,8 @@
           "engine": "codex-chrome-cdp",
           "port": 9224,
           "targetUrl": "https://www.doorout.com/",
-          "tabId": "B65B9186EAE0B370180EBD02C33B6D20",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/B65B9186EAE0B370180EBD02C33B6D20",
+          "tabId": "412B2E773F81C758973C2268AEF81969",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/412B2E773F81C758973C2268AEF81969",
           "title": ""
         },
         "mode": "official_website_social_fallback",
@@ -89,36 +59,6 @@
   ],
   "results": [
     {
-      "id": "google-customer-flameoutdoors-website-contact",
-      "company": "FlameOutdoors",
-      "action": "email_priority",
-      "platform": "website_form",
-      "targetUrl": "https://flameoutdoors.com/pages/authorized-dealer",
-      "ok": false,
-      "sendStatus": "send_unconfirmed",
-      "evidence": "official_public_business_email;alibaba_webmail_session_reused;alibaba_webmail_send_clicked;alibaba_mail_send_confirmation_waiting;sent_folder_record_missing",
-      "timestamp": "2026-07-30T04:32:00.279Z",
-      "chromeOpen": null,
-      "result": {
-        "ok": false,
-        "sendStatus": "send_unconfirmed",
-        "reason": "sent_folder_confirmation_missing",
-        "evidence": "official_public_business_email;alibaba_webmail_session_reused;alibaba_webmail_send_clicked;alibaba_mail_send_confirmation_waiting;sent_folder_record_missing",
-        "recipientEmail": "sales@flameoutdoors.com",
-        "targetUrl": "mailto:sales@flameoutdoors.com",
-        "subject": "FLEXTAIL retail partnership | 2026 assortment",
-        "draft": "Dear FlameOutdoors Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
-        "engine": "alibaba-enterprise-mail-web-session",
-        "mode": "alibaba_webmail_delivery_unconfirmed",
-        "contentValidation": {
-          "ok": true,
-          "errors": [],
-          "words": 108
-        },
-        "output": "{\"verdict\":\"send_unconfirmed\",\"sendStatus\":\"send_unconfirmed\",\"evidence\":\"official_public_business_email;alibaba_webmail_session_reused;alibaba_webmail_send_clicked;alibaba_mail_send_confirmation_waiting;sent_folder_record_missing\",\"nextAction\":\"Do not resend automatically; inspect the Alibaba Mail delivery and Sent-folder evidence.\",\"recipientEmail\":\"sales@flameoutdoors.com\",\"messageId\":\"\"}"
-      }
-    },
-    {
       "id": "google-customer-doorout-website-contact",
       "company": "Doorout",
       "action": "verify_target",
@@ -127,14 +67,14 @@
       "ok": false,
       "sendStatus": "approval_pending",
       "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;;contact_path_strategy_v2",
-      "timestamp": "2026-07-30T04:32:05.239Z",
+      "timestamp": "2026-07-30T04:54:36.824Z",
       "chromeOpen": {
         "ok": true,
         "engine": "codex-chrome-cdp",
         "port": 9224,
         "targetUrl": "https://www.doorout.com/",
-        "tabId": "B65B9186EAE0B370180EBD02C33B6D20",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/B65B9186EAE0B370180EBD02C33B6D20",
+        "tabId": "412B2E773F81C758973C2268AEF81969",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/412B2E773F81C758973C2268AEF81969",
         "title": ""
       },
       "result": {
@@ -145,8 +85,8 @@
           "engine": "codex-chrome-cdp",
           "port": 9224,
           "targetUrl": "https://www.doorout.com/",
-          "tabId": "B65B9186EAE0B370180EBD02C33B6D20",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/B65B9186EAE0B370180EBD02C33B6D20",
+          "tabId": "412B2E773F81C758973C2268AEF81969",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/412B2E773F81C758973C2268AEF81969",
           "title": ""
         },
         "mode": "official_website_social_fallback",
@@ -156,12 +96,6 @@
     }
   ],
   "skipped": [
-    {
-      "id": "google-customer-bivouac-outdoor-website-contact",
-      "company": "Bivouac Outdoor",
-      "action": "verify_target",
-      "reason": "homepage_only_contact_path_requires_verification"
-    },
     {
       "id": "google-customer-wildfire-sports-website-contact",
       "company": "Wildfire Sports",
@@ -179,18 +113,6 @@
       "company": "Tentworld",
       "action": "verify_target",
       "reason": "homepage_only_contact_path_requires_verification"
-    },
-    {
-      "id": "google-customer-tentworld-nz-facebook",
-      "company": "Tentworld NZ",
-      "action": "develop",
-      "reason": "concrete_google_discovered_major_customer_facebook"
-    },
-    {
-      "id": "google-customer-tentworld-nz-instagram",
-      "company": "Tentworld NZ",
-      "action": "develop",
-      "reason": "concrete_google_discovered_major_customer_instagram"
     },
     {
       "id": "sheet_1779293110195_9myxa520z",
@@ -421,6 +343,12 @@
       "reason": "homepage_only_contact_path_requires_verification"
     },
     {
+      "id": "google-customer-flameoutdoors-website-contact",
+      "company": "FlameOutdoors",
+      "action": "email_priority",
+      "reason": "official_website_contact_channel"
+    },
+    {
       "id": "google-customer-valhalla-pure-outfitters-website-contact",
       "company": "Valhalla Pure Outfitters",
       "action": "verify_target",
@@ -535,6 +463,12 @@
       "reason": "homepage_only_contact_path_requires_verification"
     },
     {
+      "id": "google-customer-bivouac-outdoor-website-contact",
+      "company": "Bivouac Outdoor",
+      "action": "verify_target",
+      "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
       "id": "google-customer-transa-website-contact",
       "company": "Transa",
       "action": "verify_target",
@@ -637,6 +571,12 @@
       "reason": "concrete_google_discovered_major_customer_facebook"
     },
     {
+      "id": "google-customer-tentworld-nz-facebook",
+      "company": "Tentworld NZ",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_facebook"
+    },
+    {
       "id": "google-customer-mammut-store-facebook",
       "company": "Mammut Store",
       "action": "develop",
@@ -711,6 +651,12 @@
     {
       "id": "google-customer-the-mountaineer-instagram",
       "company": "The Mountaineer",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_instagram"
+    },
+    {
+      "id": "google-customer-tentworld-nz-instagram",
+      "company": "Tentworld NZ",
       "action": "develop",
       "reason": "concrete_google_discovered_major_customer_instagram"
     },
@@ -917,6 +863,12 @@
       "company": "Rock/Creek",
       "action": "verify_target",
       "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
+      "id": "google-customer-flameoutdoors-website-contact",
+      "company": "FlameOutdoors",
+      "action": "email_priority",
+      "reason": "official_website_contact_channel"
     },
     {
       "id": "google-customer-valhalla-pure-outfitters-website-contact",
@@ -1375,7 +1327,7 @@
     {
       "reason": "official_website_contact_channel",
       "status": "skipped",
-      "count": 20
+      "count": 22
     },
     {
       "reason": "missing_verified_profile_url",
@@ -1386,21 +1338,15 @@
       "reason": "approval_pending",
       "status": "approval_pending",
       "count": 1
-    },
-    {
-      "reason": "sent_folder_confirmation_missing",
-      "status": "send_unconfirmed",
-      "count": 1
     }
   ],
   "blockerCounts": {
     "homepage_only_contact_path_requires_verification": 106,
     "concrete_google_discovered_major_customer_facebook": 34,
     "concrete_google_discovered_major_customer_instagram": 26,
-    "official_website_contact_channel": 20,
+    "official_website_contact_channel": 22,
     "missing_verified_profile_url": 9,
-    "approval_pending": 1,
-    "sent_folder_confirmation_missing": 1
+    "approval_pending": 1
   },
   "queueGoalStatus": {
     "target": 100,
@@ -1430,20 +1376,20 @@
   ],
   "systemRefresh": {
     "ok": true,
-    "stdout": "{\n  \"date\": \"2026-07-30\",\n  \"summary\": {\n    \"totalLeads\": 16,\n    \"highIcp\": 16,\n    \"readyToDevelop\": 30,\n    \"dueNow\": 99,\n    \"visibleTodayQueue\": 42,\n    \"potentialPool\": 100,\n    \"potentialPoolTarget\": 100,\n    \"customerTableHighIcp\": 13,\n    \"refillNeeded\": 0,\n    \"executableCompanies\": 20,\n    \"executableReserveTarget\": 130,\n    \"executableReserveNeeded\": 110,\n    \"executableByChannel\": {\n      \"website_form\": 3,\n      \"facebook\": 17,\n      \"instagram\": 13\n    },\n    \"googleDiscovered\": 87,\n    \"facebookDiscovered\": 17,\n    \"websiteContactDiscovered\": 0,\n    \"scheduledLater\": 0,\n    \"cooldown\": 30,\n    \"emailPriority\": 0,\n    \"openAgencyMarket\": 15,\n    \"exclusiveAgencySkipped\": 1,\n    \"needsVerification\": 0,\n    \"retainedLowIcp\": 0\n  },\n  \"bugErrors\": 0,\n  \"queueFile\": \"E:\\\\New project\\\\outreach-dashboard\\\\daily-runs\\\\2026-07-30-daily-automation.json\",\n  \"csvFile\": \"E:\\\\New project\\\\outreach-dashboard\\\\daily-runs\\\\2026-07-30-daily-queue.csv\"\n}",
+    "stdout": "{\n  \"date\": \"2026-07-30\",\n  \"summary\": {\n    \"totalLeads\": 16,\n    \"highIcp\": 16,\n    \"readyToDevelop\": 30,\n    \"dueNow\": 99,\n    \"visibleTodayQueue\": 42,\n    \"potentialPool\": 100,\n    \"potentialPoolTarget\": 100,\n    \"customerTableHighIcp\": 14,\n    \"refillNeeded\": 0,\n    \"executableCompanies\": 19,\n    \"executableReserveTarget\": 130,\n    \"executableReserveNeeded\": 111,\n    \"executableByChannel\": {\n      \"website_form\": 2,\n      \"facebook\": 17,\n      \"instagram\": 13\n    },\n    \"googleDiscovered\": 86,\n    \"facebookDiscovered\": 17,\n    \"websiteContactDiscovered\": 0,\n    \"scheduledLater\": 0,\n    \"cooldown\": 30,\n    \"emailPriority\": 0,\n    \"openAgencyMarket\": 15,\n    \"exclusiveAgencySkipped\": 1,\n    \"needsVerification\": 0,\n    \"retainedLowIcp\": 0\n  },\n  \"bugErrors\": 0,\n  \"queueFile\": \"E:\\\\New project\\\\outreach-dashboard\\\\daily-runs\\\\2026-07-30-daily-automation.json\",\n  \"csvFile\": \"E:\\\\New project\\\\outreach-dashboard\\\\daily-runs\\\\2026-07-30-daily-queue.csv\"\n}",
     "stderr": "",
     "error": "",
     "visibility": {
-      "updatedAt": "2026-07-30T04:32:06.543Z",
+      "updatedAt": "2026-07-30T04:54:38.068Z",
       "source": "main-refreshDailyAutomationArtifacts",
       "runDate": "2026-07-30",
-      "artifactGeneratedAt": "2026-07-30T04:32:05.476Z",
-      "executionGeneratedAt": "2026-07-30T04:05:53.223Z",
-      "githubSyncUpdatedAt": "2026-07-30T04:06:34.207Z",
+      "artifactGeneratedAt": "2026-07-30T04:54:37.073Z",
+      "executionGeneratedAt": "2026-07-30T04:32:07.357Z",
+      "githubSyncUpdatedAt": "2026-07-30T04:33:18.950Z",
       "counts": {
         "dailyQueue": 99,
-        "googleDiscovered": 87,
-        "websiteContact": 57,
+        "googleDiscovered": 86,
+        "websiteContact": 56,
         "cooldownQueue": 30,
         "scheduledLater": 0
       },
@@ -1502,5 +1448,5 @@
     ]
   },
   "ledgerReconciliationCount": 2,
-  "completedAt": "2026-07-30T04:32:07.357Z"
+  "completedAt": "2026-07-30T04:54:38.829Z"
 }
