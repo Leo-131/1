@@ -99,7 +99,7 @@ test('a pre-send Alibaba authentication failure falls back to verified website o
   assert.ok(mainSource.includes('alibaba_webmail_authenticated_compose_visible'));
   assert.ok(mainSource.includes('liveAlibabaWebmailSessionReady = Boolean(alibabaSessionProbe && alibabaSessionProbe.ok)'));
   assert.ok(mainSource.includes('filled && filled.ok && !filled.recipientValueMatch'));
-  assert.ok(mainSource.includes('composer_preserved_for_manual_review:${preserveTabForReview}'));
+  assert.ok(mainSource.includes('composer_preserved_for_technical_evidence:${preserveTabForEvidence}'));
   assert.ok(alibabaWebmailSource.includes('recipientValueMatch'));
   assert.ok(alibabaWebmailSource.includes("setValue(recipientInput, recipient)"));
 });
@@ -996,6 +996,11 @@ test('website discovery probes common same-origin contact paths without product-
   assert.ok(mainSource.includes('runVerifiedAlibabaEmailLead'));
   assert.ok(mainSource.includes('runAlibabaWebmailEmailLead'));
   assert.ok(mainSource.includes('alibaba-enterprise-mail-web-session'));
+  assert.ok(mainSource.includes("const autoSendAuthorization = 'verified_email_auto_send_no_manual_review'"));
+  assert.ok(mainSource.includes("reason: 'alibaba_webmail_draft_verification_failed'"));
+  assert.ok(mainSource.includes('composer_preserved_for_technical_evidence'));
+  assert.ok(mainSource.includes('manualApprovalRequired: false'));
+  assert.ok(mainSource.includes('autoSendAuthorized: true'));
   assert.ok(mainSource.includes('sendAndConfirmAlibabaEmail'));
   assert.ok(mainSource.includes('verifyEmailAddress(recipientEmail(lead))'));
 });

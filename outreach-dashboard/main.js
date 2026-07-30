@@ -2762,7 +2762,8 @@ async function runAlibabaWebmailEmailLead(lead = {}, subject = '', draft = '') {
       evidence: chromeOpen && (chromeOpen.evidence || chromeOpen.error) || 'alibaba_webmail_session_unavailable',
     };
   }
-  let preserveTabForReview = false;
+  const autoSendAuthorization = 'verified_email_auto_send_no_manual_review';
+  let preserveTabForEvidence = false;
   try {
     let compose = null;
     for (let attempt = 0; attempt < 10; attempt += 1) {
@@ -2771,7 +2772,14 @@ async function runAlibabaWebmailEmailLead(lead = {}, subject = '', draft = '') {
       if (compose && compose.evidence === 'alibaba_webmail_login_required') break;
       await sleep(700);
     }
-    if (!compose || !compose.ok) return { ok: false, sendStatus: 'approval_pending', reason: 'alibaba_webmail_compose_unavailable', evidence: compose && compose.evidence || 'alibaba_webmail_compose_unavailable' };
+    if (!compose || !compose.ok) return {
+      ok: false,
+      sendStatus: 'failed_open',
+      reason: 'alibaba_webmail_compose_unavailable',
+      evidence: `${autoSendAuthorization};${compose && compose.evidence || 'alibaba_webmail_compose_unavailable'}`,
+      manualApprovalRequired: false,
+      autoSendAuthorized: true,
+    };
     await sleep(700);
     const payload = { recipient: target.recipient, subject, text: draft };
     let filled = null;
@@ -2826,7 +2834,7 @@ async function runAlibabaWebmailEmailLead(lead = {}, subject = '', draft = '') {
     await sleep(500);
     const inspected = await evaluateChromeTabJson(chromeOpen, composeInspectionExpression(payload), 8000);
     if (!filled || !filled.ok || !inspected || !inspected.ok) {
-      preserveTabForReview = preserveAutomationChromeTab(chromeOpen);
+      preserveTabForEvidence = preserveAutomationChromeTab(chromeOpen);
       const inspectionFlags = inspected
         ? `recipientReady:${Boolean(inspected.recipientReady)};subjectReady:${Boolean(inspected.subjectReady)};bodyReady:${Boolean(inspected.bodyReady)}`
         : 'inspection_flags_missing';
@@ -2837,10 +2845,24 @@ async function runAlibabaWebmailEmailLead(lead = {}, subject = '', draft = '') {
       const recipientControlEvidence = control
         ? `recipientControl:${control.tag || 'none'},${control.type || 'none'},${control.role || 'none'},${control.className || 'none'};recipientControlXY:${control.x || 0},${control.y || 0};recipientControlShadow:${Boolean(control.shadowRoot)}`
         : 'recipient_control_missing';
-      return { ok: false, sendStatus: 'approval_pending', reason: 'alibaba_webmail_draft_verification_failed', evidence: `${filled && filled.evidence || 'fill_missing'};${inspected && inspected.evidence || 'inspection_missing'};${inspectionFlags};${recipientStageEvidence};${recipientControlEvidence};composer_preserved_for_manual_review:${preserveTabForReview}` };
+      return {
+        ok: false,
+        sendStatus: 'failed_open',
+        reason: 'alibaba_webmail_draft_verification_failed',
+        evidence: `${autoSendAuthorization};${filled && filled.evidence || 'fill_missing'};${inspected && inspected.evidence || 'inspection_missing'};${inspectionFlags};${recipientStageEvidence};${recipientControlEvidence};composer_preserved_for_technical_evidence:${preserveTabForEvidence}`,
+        manualApprovalRequired: false,
+        autoSendAuthorized: true,
+      };
     }
     const sendControl = await evaluateChromeTabJson(chromeOpen, composeSendExpression(payload), 8000);
-    if (!sendControl || !sendControl.sendReady) return { ok: false, sendStatus: 'approval_pending', reason: 'alibaba_webmail_send_control_not_verified', evidence: sendControl && sendControl.evidence || 'alibaba_webmail_send_control_not_verified' };
+    if (!sendControl || !sendControl.sendReady) return {
+      ok: false,
+      sendStatus: 'failed_open',
+      reason: 'alibaba_webmail_send_control_not_verified',
+      evidence: `${autoSendAuthorization};${sendControl && sendControl.evidence || 'alibaba_webmail_send_control_not_verified'}`,
+      manualApprovalRequired: false,
+      autoSendAuthorized: true,
+    };
     await cdpCommand(chromeOpen.webSocketDebuggerUrl, 'Input.dispatchMouseEvent', {
       type: 'mouseMoved',
       x: sendControl.x,
@@ -2870,12 +2892,12 @@ async function runAlibabaWebmailEmailLead(lead = {}, subject = '', draft = '') {
       if (toast && toast.confirmed || postSend && postSend.ok) break;
     }
     if (!postSend || !postSend.ok) {
-      preserveTabForReview = preserveAutomationChromeTab(chromeOpen);
+      preserveTabForEvidence = preserveAutomationChromeTab(chromeOpen);
       return {
         ok: false,
         sendStatus: 'send_unconfirmed',
         reason: 'alibaba_webmail_physical_send_not_accepted',
-        evidence: `official_public_business_email;alibaba_webmail_session_reused;${sendControl.evidence};${physicalClickEvidence};${postSend && postSend.evidence || 'post_send_state_missing'};composer_preserved_for_manual_review:${preserveTabForReview}`,
+        evidence: `official_public_business_email;${autoSendAuthorization};alibaba_webmail_session_reused;${sendControl.evidence};${physicalClickEvidence};${postSend && postSend.evidence || 'post_send_state_missing'};composer_preserved_for_delivery_evidence:${preserveTabForEvidence}`,
         recipientEmail: target.recipient,
         targetUrl: `mailto:${target.recipient}`,
         subject,
@@ -2883,6 +2905,8 @@ async function runAlibabaWebmailEmailLead(lead = {}, subject = '', draft = '') {
         chromeOpen,
         engine: 'alibaba-enterprise-mail-web-session',
         mode: 'alibaba_webmail_send_not_accepted',
+        manualApprovalRequired: false,
+        autoSendAuthorized: true,
       };
     }
     await navigateChromeTab(chromeOpen, ALIBABA_WEBMAIL_SENT_URL);
@@ -2897,13 +2921,15 @@ async function runAlibabaWebmailEmailLead(lead = {}, subject = '', draft = '') {
       ok: confirmed,
       sendStatus: confirmed ? 'sent_confirmed' : 'send_unconfirmed',
       reason: confirmed ? 'sent_folder_message_confirmed' : 'sent_folder_confirmation_missing',
-      evidence: `official_public_business_email;alibaba_webmail_session_reused;${sendControl.evidence};${physicalClickEvidence};${postSend.evidence};${toast && toast.evidence || 'send_toast_not_observed'};${sentFolder && sentFolder.evidence || 'sent_folder_record_missing'}`,
+      evidence: `official_public_business_email;${autoSendAuthorization};alibaba_webmail_session_reused;${sendControl.evidence};${physicalClickEvidence};${postSend.evidence};${toast && toast.evidence || 'send_toast_not_observed'};${sentFolder && sentFolder.evidence || 'sent_folder_record_missing'}`,
       recipientEmail: target.recipient,
       targetUrl: `mailto:${target.recipient}`,
       subject,
       draft,
       engine: 'alibaba-enterprise-mail-web-session',
       mode: confirmed ? 'alibaba_webmail_sent_folder_confirmed' : 'alibaba_webmail_delivery_unconfirmed',
+      manualApprovalRequired: false,
+      autoSendAuthorized: true,
       contentValidation,
       output: JSON.stringify({
         verdict: confirmed ? 'sent_confirmed' : 'send_unconfirmed',
@@ -2914,7 +2940,7 @@ async function runAlibabaWebmailEmailLead(lead = {}, subject = '', draft = '') {
       }),
     };
   } finally {
-    if (!preserveTabForReview) await closeAutomationChromeTab(chromeOpen);
+    if (!preserveTabForEvidence) await closeAutomationChromeTab(chromeOpen);
   }
 }
 
