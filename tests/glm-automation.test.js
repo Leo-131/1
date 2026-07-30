@@ -737,6 +737,14 @@ test('source-backed social refill targets use exact official handles and quarant
   assert.ok(discoverySource.includes('polityka_prywatno%C5%9Bci_FB_8a.pdf'));
 });
 
+test('official directory contacts preserve company-domain emails and first-party evidence URLs', () => {
+  assert.ok(discoverySource.includes("'Scandinavian Outdoor': ['info@scandinavianoutdoor.com'"));
+  assert.ok(discoverySource.includes("'Varuste': ['info@varuste.net'"));
+  assert.ok(discoverySource.includes("'Fjellsport': ['kundeservice@fjellsport.no'"));
+  assert.ok(discoverySource.includes("'Outnorth': ['info@outnorth.com'"));
+  assert.ok(discoverySource.includes('candidate.emailEvidenceUrl = enrichment[2] || candidate.url'));
+});
+
 test('identity failures preserve the underlying CDP runtime diagnostic', () => {
   assert.ok(chromeDriverSource.includes('identity_check_runtime_error:${identity.error}'));
   assert.ok(chromeDriverSource.includes('identityDiagnostic: identity || null'));

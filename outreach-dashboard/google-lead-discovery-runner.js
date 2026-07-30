@@ -579,6 +579,10 @@ const DIRECTORY_PUBLIC_CONTACT_ENRICHMENT = {
   'Wildfire Sports': ['enquiries@wildfiresports.com.au', 'Official public business email on the Wildfire Sports contact page; route to category buyer or vendor-review owner.'],
   'Bivouac Outdoor': ['web@bivouac.co.nz', 'Official public business email on the Bivouac Outdoor contact page; route to category buyer or vendor-review owner.'],
   'Further Faster': ['hello@furtherfaster.co.nz', 'Official public business email on the Further Faster website; the company also publicly states that it distributes outdoor brands in New Zealand.'],
+  'Scandinavian Outdoor': ['info@scandinavianoutdoor.com', 'Official public company-domain email on the Scandinavian Outdoor customer-service page; route the supplier proposal to the category buyer or vendor-review owner.', 'https://scandinavianoutdoor.com/page/customer-service/'],
+  'Varuste': ['info@varuste.net', 'Official public company-domain email published by Varuste; route the supplier proposal to the category buyer or vendor-review owner.', 'https://varuste.net/'],
+  'Fjellsport': ['kundeservice@fjellsport.no', 'Official public company-domain contact published in the Fjellsport privacy and contact information; route the supplier proposal to the category buyer or vendor-review owner.', 'https://www.fjellsport.no/faq/personvern'],
+  'Outnorth': ['info@outnorth.com', 'Official public company-domain email on the Outnorth contact page; route the supplier proposal to the category buyer or vendor-review owner.', 'https://www.outnorth.com/int/faq/contact'],
 };
 for (const candidate of DIRECTORY_REFILL_CANDIDATES) {
   const enrichment = DIRECTORY_PUBLIC_CONTACT_ENRICHMENT[candidate.company];
@@ -590,6 +594,7 @@ for (const candidate of DIRECTORY_REFILL_CANDIDATES) {
     candidate.emailEvidence = candidate.company === 'Further Faster'
       ? 'official_homepage_and_where_to_buy_distribution_page'
       : 'official_contact_page';
+    candidate.emailEvidenceUrl = enrichment[2] || candidate.url;
   }
 }
 
