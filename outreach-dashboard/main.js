@@ -3395,7 +3395,11 @@ async function executeLeadAutomation(lead, options = {}) {
     return { ok: false, cooldown: true, error: 'Serial cooldown is active' };
   }
   const platform = String(lead && lead.platform || '').toLowerCase();
-  const isVerifiedEmail = platform === 'email' && verifiedBusinessEmailTarget(lead).ok;
+  // Discovery can preserve the originating website-form label even after an
+  // official supplier email is verified. Channel truth outranks that legacy
+  // label: a verified business email must enter the Alibaba Mail confirmation
+  // path before any lower-priority website or social fallback.
+  const isVerifiedEmail = verifiedBusinessEmailTarget(lead).ok;
   if (isVerifiedEmail) {
     if (typeof options.enterCriticalSection === 'function') options.enterCriticalSection('verified_email_send_confirmation');
     const subject = websiteContactSubject(lead);

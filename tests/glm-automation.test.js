@@ -108,6 +108,8 @@ test('official public business email outranks unverifiable email rows without re
   assert.ok(mainSource.includes('|| (recipientEmail(item) && configuredProvider().id)'));
   assert.ok(mainSource.includes('result = await runAlibabaWebmailEmailLead(lead, subject, draft)'));
   assert.ok(mainSource.includes('verifiedBusinessEmailTarget(item).ok'));
+  assert.ok(mainSource.includes('const isVerifiedEmail = verifiedBusinessEmailTarget(lead).ok'));
+  assert.doesNotMatch(mainSource, /platform === 'email' && verifiedBusinessEmailTarget\(lead\)\.ok/);
   assert.ok(mainSource.includes("&& ['website_contact_ready', 'website_contact_unreachable_skip'].includes(result.status)"));
 });
 

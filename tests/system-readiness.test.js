@@ -67,7 +67,7 @@ test('fresh connected-session proofs combine with approved built-in connectors',
   const result = readiness.assess({}, {
     alibaba_mail: {
       status: 'verified',
-      mode: 'codex_chrome_extension_session',
+      mode: 'dedicated_chrome_cdp_session',
       verifiedAt: '2026-07-27T05:15:00.000Z',
       expiresAt: '2026-07-28T05:15:00.000Z',
     },
@@ -95,7 +95,7 @@ test('expired connected-session proofs fail closed', () => {
   const result = readiness.assess({}, {
     alibaba_mail: {
       status: 'verified',
-      mode: 'codex_chrome_extension_session',
+      mode: 'dedicated_chrome_cdp_session',
       verifiedAt: '2026-07-26T05:15:00.000Z',
       expiresAt: '2026-07-27T05:15:00.000Z',
     },
