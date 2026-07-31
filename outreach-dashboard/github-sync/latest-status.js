@@ -1,9 +1,10 @@
 window.GITHUB_SYNC_LATEST = {
-  "updatedAt": "2026-07-31T00:06:18.909Z",
-  "ok": true,
-  "pushed": true,
+  "updatedAt": "2026-07-31T01:06:07.722Z",
+  "ok": false,
+  "pushed": false,
   "branch": "vercel-main-sync",
-  "localCommit": "49964e8580f1dcbf14cf42d5bebd02915a427a86",
-  "remoteCommit": "49964e8580f1dcbf14cf42d5bebd02915a427a86",
-  "message": "sync: local outreach data 2026-07-31"
+  "localCommit": "6b043f2457ed93fcf2f055b7fe4221667c1a17e6",
+  "remoteCommit": "f99b627b9dd6e6b9a77a9377c867f821f1789824",
+  "message": "sync: local outreach data 2026-07-31",
+  "error": "Command failed: git -c gc.auto=0 add -- github-sync/latest-status.json github-sync/latest-status.js github-sync/system-visibility-latest.json github-sync/system-visibility-latest.js public/github-sync/latest-status.json public/github-sync/latest-status.js public/system-visibility-latest.json public/system-visibility-latest.js system-visibility-latest.json system-visibility-latest.js\nwarning: in the working copy of 'outreach-dashboard/github-sync/latest-status.js', LF will be replaced by CRLF the next time Git touches it\nerror: unable to write file .git/objects/dc/658672f83db42845c2f82bfbef9fb6aa176dea: Function not implemented\nerror: outreach-dashboard/github-sync/latest-status.js: failed to insert into database\nerror: unable to index file 'outreach-dashboard/github-sync/latest-status.js'\nfatal: updating files failed\n"
 };

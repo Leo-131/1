@@ -2789,7 +2789,7 @@ async function runAlibabaWebmailEmailLead(lead = {}, subject = '', draft = '') {
       await sleep(500);
     }
     let recipientStage = null;
-    if (filled && filled.ok && !filled.recipientValueMatch) {
+    if (filled && filled.ok && !filled.recipientValueMatch && !filled.recipientCommittedMatch) {
       const recipientControl = filled.recipientControl || {};
       const recipientX = Number(recipientControl.x || 0) + Number(recipientControl.width || 0) / 2;
       const recipientY = Number(recipientControl.y || 0) + Number(recipientControl.height || 0) / 2;

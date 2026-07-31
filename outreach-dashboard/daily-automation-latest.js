@@ -1,5 +1,5 @@
 window.DAILY_AUTOMATION_LATEST = {
-  "generatedAt": "2026-07-31T01:05:09.863Z",
+  "generatedAt": "2026-07-31T01:54:58.762Z",
   "date": "2026-07-31",
   "mode": "daily-icp-first-automation-loop",
   "executionLayer": "Dedicated Chrome automation profile only; primary Chrome attachment forbidden",
@@ -139,7 +139,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "Asia/Shanghai",
-        "localTime": "Fri 09:05",
+        "localTime": "Fri 09:54",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -229,7 +229,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/Paris",
-        "localTime": "Fri 03:05",
+        "localTime": "Fri 03:54",
         "window": "outside_work_hours",
         "nextBest": "Europe/Paris morning",
         "weight": 0
@@ -319,7 +319,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/Oslo",
-        "localTime": "Fri 03:05",
+        "localTime": "Fri 03:54",
         "window": "outside_work_hours",
         "nextBest": "Europe/Oslo morning",
         "weight": 0
@@ -409,7 +409,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/Stockholm",
-        "localTime": "Fri 03:05",
+        "localTime": "Fri 03:54",
         "window": "outside_work_hours",
         "nextBest": "Europe/Stockholm morning",
         "weight": 0
@@ -499,7 +499,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/Stockholm",
-        "localTime": "Fri 03:05",
+        "localTime": "Fri 03:54",
         "window": "outside_work_hours",
         "nextBest": "Europe/Stockholm morning",
         "weight": 0
@@ -589,7 +589,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/London",
-        "localTime": "Fri 02:05",
+        "localTime": "Fri 02:54",
         "window": "outside_work_hours",
         "nextBest": "Europe/London morning",
         "weight": 0
@@ -679,7 +679,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/London",
-        "localTime": "Fri 02:05",
+        "localTime": "Fri 02:54",
         "window": "outside_work_hours",
         "nextBest": "Europe/London morning",
         "weight": 0
@@ -769,7 +769,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "Asia/Shanghai",
-        "localTime": "Fri 09:05",
+        "localTime": "Fri 09:54",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -859,7 +859,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/Helsinki",
-        "localTime": "Fri 04:05",
+        "localTime": "Fri 04:54",
         "window": "outside_work_hours",
         "nextBest": "Europe/Helsinki morning",
         "weight": 0
@@ -949,7 +949,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/London",
-        "localTime": "Fri 02:05",
+        "localTime": "Fri 02:54",
         "window": "outside_work_hours",
         "nextBest": "Europe/London morning",
         "weight": 0
@@ -1039,7 +1039,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/Madrid",
-        "localTime": "Fri 03:05",
+        "localTime": "Fri 03:54",
         "window": "outside_work_hours",
         "nextBest": "Europe/Madrid morning",
         "weight": 0
@@ -1129,7 +1129,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/Paris",
-        "localTime": "Fri 03:05",
+        "localTime": "Fri 03:54",
         "window": "outside_work_hours",
         "nextBest": "Europe/Paris morning",
         "weight": 0
@@ -1219,7 +1219,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/Paris",
-        "localTime": "Fri 03:05",
+        "localTime": "Fri 03:54",
         "window": "outside_work_hours",
         "nextBest": "Europe/Paris morning",
         "weight": 0
@@ -1309,7 +1309,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/Zurich",
-        "localTime": "Fri 03:05",
+        "localTime": "Fri 03:54",
         "window": "outside_work_hours",
         "nextBest": "Europe/Zurich morning",
         "weight": 0
@@ -1399,7 +1399,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "Asia/Shanghai",
-        "localTime": "Fri 09:05",
+        "localTime": "Fri 09:54",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -1489,7 +1489,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "Asia/Shanghai",
-        "localTime": "Fri 09:05",
+        "localTime": "Fri 09:54",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -1579,7 +1579,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/Copenhagen",
-        "localTime": "Fri 03:05",
+        "localTime": "Fri 03:54",
         "window": "outside_work_hours",
         "nextBest": "Europe/Copenhagen morning",
         "weight": 0
@@ -1669,7 +1669,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/Copenhagen",
-        "localTime": "Fri 03:05",
+        "localTime": "Fri 03:54",
         "window": "outside_work_hours",
         "nextBest": "Europe/Copenhagen morning",
         "weight": 0
@@ -1759,7 +1759,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/London",
-        "localTime": "Fri 02:05",
+        "localTime": "Fri 02:54",
         "window": "outside_work_hours",
         "nextBest": "Europe/London morning",
         "weight": 0
@@ -1849,7 +1849,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "Asia/Shanghai",
-        "localTime": "Fri 09:05",
+        "localTime": "Fri 09:54",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -1939,7 +1939,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/Helsinki",
-        "localTime": "Fri 04:05",
+        "localTime": "Fri 04:54",
         "window": "outside_work_hours",
         "nextBest": "Europe/Helsinki morning",
         "weight": 0
@@ -2029,7 +2029,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/Paris",
-        "localTime": "Fri 03:05",
+        "localTime": "Fri 03:54",
         "window": "outside_work_hours",
         "nextBest": "Europe/Paris morning",
         "weight": 0
@@ -2119,7 +2119,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/London",
-        "localTime": "Fri 02:05",
+        "localTime": "Fri 02:54",
         "window": "outside_work_hours",
         "nextBest": "Europe/London morning",
         "weight": 0
@@ -2209,7 +2209,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "Asia/Shanghai",
-        "localTime": "Fri 09:05",
+        "localTime": "Fri 09:54",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -2299,7 +2299,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/Dublin",
-        "localTime": "Fri 02:05",
+        "localTime": "Fri 02:54",
         "window": "outside_work_hours",
         "nextBest": "Europe/Dublin morning",
         "weight": 0
@@ -2383,7 +2383,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/Berlin",
-        "localTime": "Fri 03:05",
+        "localTime": "Fri 03:54",
         "window": "outside_work_hours",
         "nextBest": "Europe/Berlin morning",
         "weight": 0
@@ -2467,7 +2467,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/Oslo",
-        "localTime": "Fri 03:05",
+        "localTime": "Fri 03:54",
         "window": "outside_work_hours",
         "nextBest": "Europe/Oslo morning",
         "weight": 0
@@ -2557,7 +2557,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/London",
-        "localTime": "Fri 02:05",
+        "localTime": "Fri 02:54",
         "window": "outside_work_hours",
         "nextBest": "Europe/London morning",
         "weight": 0
@@ -2641,7 +2641,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/London",
-        "localTime": "Fri 02:05",
+        "localTime": "Fri 02:54",
         "window": "outside_work_hours",
         "nextBest": "Europe/London morning",
         "weight": 0
@@ -2725,7 +2725,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/Zurich",
-        "localTime": "Fri 03:05",
+        "localTime": "Fri 03:54",
         "window": "outside_work_hours",
         "nextBest": "Europe/Zurich morning",
         "weight": 0
@@ -2813,12 +2813,12 @@ window.DAILY_AUTOMATION_LATEST = {
       "partnerNote": "",
       "sendStatus": "",
       "workingTime": {
-        "dueNow": true,
+        "dueNow": false,
         "timeZone": "Australia/Sydney",
-        "localTime": "Fri 11:05",
-        "window": "morning",
-        "nextBest": "now",
-        "weight": 1
+        "localTime": "Fri 11:54",
+        "window": "outside_work_hours",
+        "nextBest": "Australia/Sydney afternoon",
+        "weight": 0
       },
       "platform": "website_form",
       "channelType": "website_form",
@@ -2903,12 +2903,12 @@ window.DAILY_AUTOMATION_LATEST = {
       "partnerNote": "",
       "sendStatus": "",
       "workingTime": {
-        "dueNow": true,
+        "dueNow": false,
         "timeZone": "Australia/Sydney",
-        "localTime": "Fri 11:05",
-        "window": "morning",
-        "nextBest": "now",
-        "weight": 1
+        "localTime": "Fri 11:54",
+        "window": "outside_work_hours",
+        "nextBest": "Australia/Sydney afternoon",
+        "weight": 0
       },
       "platform": "website_form",
       "channelType": "website_form",
@@ -2995,7 +2995,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Pacific/Auckland",
-        "localTime": "Fri 13:05",
+        "localTime": "Fri 13:54",
         "window": "outside_work_hours",
         "nextBest": "Pacific/Auckland afternoon",
         "weight": 0
@@ -3083,12 +3083,12 @@ window.DAILY_AUTOMATION_LATEST = {
       "partnerNote": "",
       "sendStatus": "",
       "workingTime": {
-        "dueNow": true,
+        "dueNow": false,
         "timeZone": "Australia/Sydney",
-        "localTime": "Fri 11:05",
-        "window": "morning",
-        "nextBest": "now",
-        "weight": 1
+        "localTime": "Fri 11:54",
+        "window": "outside_work_hours",
+        "nextBest": "Australia/Sydney afternoon",
+        "weight": 0
       },
       "platform": "website_form",
       "channelType": "website_form",
@@ -3175,7 +3175,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Pacific/Auckland",
-        "localTime": "Fri 13:05",
+        "localTime": "Fri 13:54",
         "window": "outside_work_hours",
         "nextBest": "Pacific/Auckland afternoon",
         "weight": 0
@@ -3259,7 +3259,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Thu 21:05",
+        "localTime": "Thu 21:54",
         "window": "outside_work_hours",
         "nextBest": "America/Toronto morning",
         "weight": 0
@@ -3349,7 +3349,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Thu 21:05",
+        "localTime": "Thu 21:54",
         "window": "outside_work_hours",
         "nextBest": "America/Toronto morning",
         "weight": 0
@@ -3439,7 +3439,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Thu 21:05",
+        "localTime": "Thu 21:54",
         "window": "outside_work_hours",
         "nextBest": "America/Toronto morning",
         "weight": 0
@@ -3529,7 +3529,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Thu 21:05",
+        "localTime": "Thu 21:54",
         "window": "outside_work_hours",
         "nextBest": "America/Toronto morning",
         "weight": 0
@@ -3613,7 +3613,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Thu 21:05",
+        "localTime": "Thu 21:54",
         "window": "outside_work_hours",
         "nextBest": "America/Toronto morning",
         "weight": 0
@@ -3699,7 +3699,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/31 09:05:09",
+        "localTime": "2026/7/31 09:54:58",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -3795,7 +3795,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/31 09:05:09",
+        "localTime": "2026/7/31 09:54:58",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -3891,7 +3891,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/31 09:05:09",
+        "localTime": "2026/7/31 09:54:58",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -3987,7 +3987,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/31 09:05:09",
+        "localTime": "2026/7/31 09:54:58",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -4083,7 +4083,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/31 09:05:09",
+        "localTime": "2026/7/31 09:54:58",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -4179,7 +4179,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/31 09:05:09",
+        "localTime": "2026/7/31 09:54:58",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -4275,7 +4275,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/31 09:05:09",
+        "localTime": "2026/7/31 09:54:58",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -4371,7 +4371,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/31 09:05:09",
+        "localTime": "2026/7/31 09:54:58",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -4467,7 +4467,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/31 09:05:09",
+        "localTime": "2026/7/31 09:54:58",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -4563,7 +4563,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/31 09:05:09",
+        "localTime": "2026/7/31 09:54:58",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -4659,7 +4659,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/31 09:05:09",
+        "localTime": "2026/7/31 09:54:58",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -4755,7 +4755,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/31 09:05:09",
+        "localTime": "2026/7/31 09:54:58",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -4851,7 +4851,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/31 09:05:09",
+        "localTime": "2026/7/31 09:54:58",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -4947,7 +4947,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/31 09:05:09",
+        "localTime": "2026/7/31 09:54:58",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -5043,7 +5043,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/31 09:05:09",
+        "localTime": "2026/7/31 09:54:58",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -5139,7 +5139,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/31 09:05:09",
+        "localTime": "2026/7/31 09:54:58",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -5235,7 +5235,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/31 09:05:09",
+        "localTime": "2026/7/31 09:54:58",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -5331,7 +5331,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/31 09:05:09",
+        "localTime": "2026/7/31 09:54:58",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -5433,7 +5433,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/31 09:05:09",
+        "localTime": "2026/7/31 09:54:58",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -5529,7 +5529,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/31 09:05:09",
+        "localTime": "2026/7/31 09:54:58",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -5625,7 +5625,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/31 09:05:09",
+        "localTime": "2026/7/31 09:54:58",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -5721,7 +5721,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/31 09:05:09",
+        "localTime": "2026/7/31 09:54:58",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -5817,7 +5817,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/31 09:05:09",
+        "localTime": "2026/7/31 09:54:58",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -5913,7 +5913,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/31 09:05:09",
+        "localTime": "2026/7/31 09:54:58",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -6009,7 +6009,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/31 09:05:09",
+        "localTime": "2026/7/31 09:54:58",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -6105,7 +6105,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/31 09:05:09",
+        "localTime": "2026/7/31 09:54:58",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -6201,7 +6201,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/31 09:05:09",
+        "localTime": "2026/7/31 09:54:58",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -6297,7 +6297,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/31 09:05:09",
+        "localTime": "2026/7/31 09:54:58",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -6393,7 +6393,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/31 09:05:09",
+        "localTime": "2026/7/31 09:54:58",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -6489,7 +6489,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/31 09:05:09",
+        "localTime": "2026/7/31 09:54:58",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -6585,7 +6585,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/31 09:05:09",
+        "localTime": "2026/7/31 09:54:58",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -6681,7 +6681,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/31 09:05:09",
+        "localTime": "2026/7/31 09:54:58",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -6777,7 +6777,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/31 09:05:09",
+        "localTime": "2026/7/31 09:54:58",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -6873,7 +6873,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/31 09:05:09",
+        "localTime": "2026/7/31 09:54:58",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -6975,7 +6975,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/31 09:05:09",
+        "localTime": "2026/7/31 09:54:58",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -7077,7 +7077,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/31 09:05:09",
+        "localTime": "2026/7/31 09:54:58",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -7173,7 +7173,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/31 09:05:09",
+        "localTime": "2026/7/31 09:54:58",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -7269,7 +7269,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/31 09:05:09",
+        "localTime": "2026/7/31 09:54:58",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -7365,7 +7365,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/31 09:05:09",
+        "localTime": "2026/7/31 09:54:58",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -7461,7 +7461,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/31 09:05:09",
+        "localTime": "2026/7/31 09:54:58",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -7557,7 +7557,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/31 09:05:09",
+        "localTime": "2026/7/31 09:54:58",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -7653,7 +7653,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/31 09:05:09",
+        "localTime": "2026/7/31 09:54:58",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -7749,7 +7749,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/31 09:05:09",
+        "localTime": "2026/7/31 09:54:58",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -7845,7 +7845,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/31 09:05:09",
+        "localTime": "2026/7/31 09:54:58",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -7941,7 +7941,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/31 09:05:09",
+        "localTime": "2026/7/31 09:54:58",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -8037,7 +8037,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/31 09:05:09",
+        "localTime": "2026/7/31 09:54:58",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -8133,7 +8133,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/31 09:05:09",
+        "localTime": "2026/7/31 09:54:58",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -8229,7 +8229,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/31 09:05:09",
+        "localTime": "2026/7/31 09:54:58",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -8325,7 +8325,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/31 09:05:09",
+        "localTime": "2026/7/31 09:54:58",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -8421,7 +8421,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/31 09:05:09",
+        "localTime": "2026/7/31 09:54:58",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -8517,7 +8517,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/31 09:05:09",
+        "localTime": "2026/7/31 09:54:58",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -8613,7 +8613,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/31 09:05:09",
+        "localTime": "2026/7/31 09:54:58",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -8709,7 +8709,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/31 09:05:09",
+        "localTime": "2026/7/31 09:54:58",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -8811,7 +8811,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/31 09:05:09",
+        "localTime": "2026/7/31 09:54:58",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -8902,7 +8902,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/31 09:05:09",
+        "localTime": "2026/7/31 09:54:58",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -8993,7 +8993,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/31 09:05:09",
+        "localTime": "2026/7/31 09:54:58",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -9090,7 +9090,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/31 09:05:09",
+        "localTime": "2026/7/31 09:54:58",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -9181,7 +9181,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/31 09:05:09",
+        "localTime": "2026/7/31 09:54:58",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -9272,7 +9272,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/31 09:05:09",
+        "localTime": "2026/7/31 09:54:58",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -9363,7 +9363,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/31 09:05:09",
+        "localTime": "2026/7/31 09:54:58",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -9454,7 +9454,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/31 09:05:09",
+        "localTime": "2026/7/31 09:54:58",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -9545,7 +9545,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/31 09:05:09",
+        "localTime": "2026/7/31 09:54:58",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -9642,7 +9642,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/31 09:05:09",
+        "localTime": "2026/7/31 09:54:58",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -9739,7 +9739,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/31 09:05:09",
+        "localTime": "2026/7/31 09:54:58",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -9830,7 +9830,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/31 09:05:09",
+        "localTime": "2026/7/31 09:54:58",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -9921,7 +9921,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/31 09:05:09",
+        "localTime": "2026/7/31 09:54:58",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -10018,7 +10018,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/31 09:05:09",
+        "localTime": "2026/7/31 09:54:58",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -10107,7 +10107,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/31 09:05:09",
+        "localTime": "2026/7/31 09:54:58",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -10196,7 +10196,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/31 09:05:09",
+        "localTime": "2026/7/31 09:54:58",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -10285,7 +10285,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/31 09:05:09",
+        "localTime": "2026/7/31 09:54:58",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -10374,7 +10374,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/31 09:05:09",
+        "localTime": "2026/7/31 09:54:58",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -10463,7 +10463,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/31 09:05:09",
+        "localTime": "2026/7/31 09:54:58",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -10552,7 +10552,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/31 09:05:09",
+        "localTime": "2026/7/31 09:54:58",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -10641,7 +10641,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/31 09:05:09",
+        "localTime": "2026/7/31 09:54:58",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -10730,7 +10730,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/7/31 09:05:09",
+        "localTime": "2026/7/31 09:54:58",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -11933,7 +11933,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "Asia/Shanghai",
-        "localTime": "Fri 09:05",
+        "localTime": "Fri 09:54",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -12018,7 +12018,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "Asia/Shanghai",
-        "localTime": "Fri 09:05",
+        "localTime": "Fri 09:54",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -12103,7 +12103,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "Asia/Shanghai",
-        "localTime": "Fri 09:05",
+        "localTime": "Fri 09:54",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -12188,7 +12188,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "Asia/Shanghai",
-        "localTime": "Fri 09:05",
+        "localTime": "Fri 09:54",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -12273,7 +12273,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "Asia/Shanghai",
-        "localTime": "Fri 09:05",
+        "localTime": "Fri 09:54",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -12358,7 +12358,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "Asia/Shanghai",
-        "localTime": "Fri 09:05",
+        "localTime": "Fri 09:54",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -12390,261 +12390,6 @@ window.DAILY_AUTOMATION_LATEST = {
       "contactChannelScore": 13,
       "dealProbabilityScore": 214,
       "priorityScore": 214
-    },
-    {
-      "id": "google-customer-tentworld-website-contact",
-      "name": "Tentworld",
-      "company": "Tentworld",
-      "customerType": "key_account",
-      "discoveryMode": "autonomous_refill",
-      "country": "Australia",
-      "countryEn": "Australia",
-      "fitScore": 90,
-      "fitTier": "A+",
-      "marketScore": 4.5,
-      "marketStatus": "open",
-      "agencyState": "open",
-      "agentCompany": "",
-      "keyword": "verified outdoor, camping, travel and consumer electronics retail channel",
-      "role": "Outdoor electronics, camping accessories, travel products or consumer electronics category buyer.",
-      "background": "Tentworld is listed or qualified as an outdoor/camping specialty retail prospect with assortment fit for lightweight outdoor electrics and practical high-rotation 3C products.",
-      "buyerPersona": "Outdoor electronics, camping accessories, travel products or consumer electronics category buyer.",
-      "targetMarkets": "",
-      "excludedMarkets": "",
-      "productCategory": "verified outdoor, camping, travel and consumer electronics retail channel",
-      "businessModel": "Retail Chain",
-      "productFit": "FLEXTAIL portable pumps, outdoor power, camping lighting and compact camping accessories",
-      "opportunity": "Tentworld is listed or qualified as an outdoor/camping specialty retail prospect with assortment fit for lightweight outdoor electrics and practical high-rotation 3C products.",
-      "linkedin_url": "",
-      "linkedin": "",
-      "publicEmail": "contact@tentworld.com.au",
-      "contactEmail": "contact@tentworld.com.au",
-      "vendorPortal": "https://www.tentworld.com.au/contact-us",
-      "contactPhone": "",
-      "contactNote": "",
-      "publicEmailStatus": "Official public company-domain email published by Tentworld; route the supplier proposal to the category buyer or vendor-review owner.",
-      "website": "https://www.tentworld.com.au/",
-      "evidenceUrl": "https://www.google.com/search?q=%22Tentworld%22%20%22verified%20outdoor%2C%20camping%2C%20travel%20and%20consumer%20electronics%20retail%20channel%22%20%22Australia%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "sourceEvidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
-      "externalVerificationStatus": "",
-      "query": "https://www.google.com/search?q=%22Tentworld%22%20%22verified%20outdoor%2C%20camping%2C%20travel%20and%20consumer%20electronics%20retail%20channel%22%20%22Australia%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "source": "google_customer_discovery",
-      "sourceType": "google",
-      "discoveryProvider": "google",
-      "channel": "",
-      "identityStatus": "verified",
-      "officialSocialProfileVerified": false,
-      "profiledAt": "",
-      "partnershipStatus": "",
-      "doNotOutreach": false,
-      "automationStatus": "",
-      "partnerNote": "",
-      "sendStatus": "",
-      "workingTime": {
-        "dueNow": true,
-        "timeZone": "Australia/Sydney",
-        "localTime": "Fri 11:05",
-        "window": "morning",
-        "nextBest": "now",
-        "weight": 1
-      },
-      "platform": "website_form",
-      "channelType": "website_form",
-      "platformUrl": "https://www.tentworld.com.au/contact-us",
-      "url": "https://www.tentworld.com.au/contact-us",
-      "contactUrl": "https://www.tentworld.com.au/contact-us",
-      "contactSearchUrl": "https://www.google.com/search?q=site%3Awww.tentworld.com.au%20%22Tentworld%22%20contact%20buyer%20wholesale%20email%20vendor",
-      "emailFrom": "leo@flextailgear.com",
-      "websiteContactSubject": "FLEXTAIL retail partnership | 2026 assortment",
-      "websiteContactMessage": "Dear Tentworld Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
-      "websiteContactFlow": "open_official_contact_us_fill_attach_auto_submit",
-      "action": "email_priority",
-      "reason": "official_website_contact_channel",
-      "alternateChannels": {
-        "linkedin": "",
-        "instagram": "",
-        "facebook": "",
-        "websiteContact": "https://www.tentworld.com.au/contact-us"
-      },
-      "invalidChannels": {},
-      "identitySource": "official website contact path + Google buyer/contact query",
-      "channelPriority": 3,
-      "discoveredAt": "2026-07-14T04:02:10.362Z",
-      "targetRegion": "oceania",
-      "targetRegionScore": 0,
-      "contactChannelScore": 25,
-      "dealProbabilityScore": 187,
-      "priorityScore": 187
-    },
-    {
-      "id": "google-customer-wildfire-sports-website-contact",
-      "name": "Wildfire Sports",
-      "company": "Wildfire Sports",
-      "customerType": "key_account",
-      "discoveryMode": "autonomous_refill",
-      "country": "Australia",
-      "countryEn": "Australia",
-      "fitScore": 87,
-      "fitTier": "A",
-      "marketScore": 4.5,
-      "marketStatus": "open",
-      "agencyState": "open",
-      "agentCompany": "",
-      "keyword": "verified outdoor, camping, travel and consumer electronics retail channel",
-      "role": "Outdoor electronics, camping accessories, travel products or consumer electronics category buyer.",
-      "background": "Wildfire Sports is listed or qualified as an outdoor/camping specialty retail prospect with assortment fit for lightweight outdoor electrics and practical high-rotation 3C products.",
-      "buyerPersona": "Outdoor electronics, camping accessories, travel products or consumer electronics category buyer.",
-      "targetMarkets": "",
-      "excludedMarkets": "",
-      "productCategory": "verified outdoor, camping, travel and consumer electronics retail channel",
-      "businessModel": "Retail Chain",
-      "productFit": "FLEXTAIL portable pumps, outdoor power, camping lighting and compact camping accessories",
-      "opportunity": "Wildfire Sports is listed or qualified as an outdoor/camping specialty retail prospect with assortment fit for lightweight outdoor electrics and practical high-rotation 3C products.",
-      "linkedin_url": "",
-      "linkedin": "",
-      "publicEmail": "enquiries@wildfiresports.com.au",
-      "contactEmail": "enquiries@wildfiresports.com.au",
-      "vendorPortal": "https://www.wildfiresports.com.au/contact-us",
-      "contactPhone": "",
-      "contactNote": "",
-      "publicEmailStatus": "Official public business email on the Wildfire Sports contact page; route to category buyer or vendor-review owner.",
-      "website": "https://www.wildfiresports.com.au/",
-      "evidenceUrl": "https://www.google.com/search?q=%22Wildfire%20Sports%22%20%22verified%20outdoor%2C%20camping%2C%20travel%20and%20consumer%20electronics%20retail%20channel%22%20%22Australia%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "sourceEvidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
-      "externalVerificationStatus": "",
-      "query": "https://www.google.com/search?q=%22Wildfire%20Sports%22%20%22verified%20outdoor%2C%20camping%2C%20travel%20and%20consumer%20electronics%20retail%20channel%22%20%22Australia%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "source": "google_customer_discovery",
-      "sourceType": "google",
-      "discoveryProvider": "google",
-      "channel": "",
-      "identityStatus": "verified",
-      "officialSocialProfileVerified": false,
-      "profiledAt": "",
-      "partnershipStatus": "",
-      "doNotOutreach": false,
-      "automationStatus": "",
-      "partnerNote": "",
-      "sendStatus": "",
-      "workingTime": {
-        "dueNow": true,
-        "timeZone": "Australia/Sydney",
-        "localTime": "Fri 11:05",
-        "window": "morning",
-        "nextBest": "now",
-        "weight": 1
-      },
-      "platform": "website_form",
-      "channelType": "website_form",
-      "platformUrl": "https://www.wildfiresports.com.au/contact-us",
-      "url": "https://www.wildfiresports.com.au/contact-us",
-      "contactUrl": "https://www.wildfiresports.com.au/contact-us",
-      "contactSearchUrl": "https://www.google.com/search?q=site%3Awww.wildfiresports.com.au%20%22Wildfire%20Sports%22%20contact%20buyer%20wholesale%20email%20vendor",
-      "emailFrom": "leo@flextailgear.com",
-      "websiteContactSubject": "FLEXTAIL retail partnership | 2026 assortment",
-      "websiteContactMessage": "Dear Wildfire Sports Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
-      "websiteContactFlow": "open_official_contact_us_fill_attach_auto_submit",
-      "action": "email_priority",
-      "reason": "official_website_contact_channel",
-      "alternateChannels": {
-        "linkedin": "",
-        "instagram": "",
-        "facebook": "",
-        "websiteContact": "https://www.wildfiresports.com.au/contact-us"
-      },
-      "invalidChannels": {},
-      "identitySource": "official website contact path + Google buyer/contact query",
-      "channelPriority": 3,
-      "discoveredAt": "2026-07-14T04:02:10.362Z",
-      "targetRegion": "oceania",
-      "targetRegionScore": 0,
-      "contactChannelScore": 25,
-      "dealProbabilityScore": 184,
-      "priorityScore": 184
-    },
-    {
-      "id": "google-customer-outdoor-nature-website-contact",
-      "name": "Outdoor Nature",
-      "company": "Outdoor Nature",
-      "customerType": "key_account",
-      "discoveryMode": "autonomous_refill",
-      "country": "Australia",
-      "countryEn": "Australia",
-      "fitScore": 92,
-      "fitTier": "A+",
-      "marketScore": 4.5,
-      "marketStatus": "open",
-      "agencyState": "open",
-      "agentCompany": "",
-      "keyword": "outdoor, hiking, camping, travel and adventure retailer",
-      "role": "Supplier onboarding, category buying or merchandising owner.",
-      "background": "Australian outdoor retailer whose official supplier page explicitly invites outdoor, hiking, camping, travel and adventure product submissions.",
-      "buyerPersona": "Supplier onboarding, category buying or merchandising owner.",
-      "targetMarkets": "",
-      "excludedMarkets": "",
-      "productCategory": "outdoor, hiking, camping, travel and adventure retailer",
-      "businessModel": "Retail Chain",
-      "productFit": "FLEXTAIL portable pumps, outdoor power, camping lighting and compact camping accessories",
-      "opportunity": "Australian outdoor retailer whose official supplier page explicitly invites outdoor, hiking, camping, travel and adventure product submissions.",
-      "linkedin_url": "",
-      "linkedin": "",
-      "publicEmail": "",
-      "contactEmail": "",
-      "vendorPortal": "https://www.outdoornature.com.au/become-a-supplier/",
-      "contactPhone": "",
-      "contactNote": "",
-      "publicEmailStatus": "",
-      "website": "https://www.outdoornature.com.au/",
-      "evidenceUrl": "https://www.google.com/search?q=%22Outdoor%20Nature%22%20%22outdoor%2C%20hiking%2C%20camping%2C%20travel%20and%20adventure%20retailer%22%20%22Australia%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "sourceEvidenceUrl": "https://www.outdoornature.com.au/become-a-supplier/",
-      "externalVerificationStatus": "official_supplier_form_verified",
-      "query": "https://www.google.com/search?q=%22Outdoor%20Nature%22%20%22outdoor%2C%20hiking%2C%20camping%2C%20travel%20and%20adventure%20retailer%22%20%22Australia%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "source": "google_customer_discovery",
-      "sourceType": "google",
-      "discoveryProvider": "google",
-      "channel": "",
-      "identityStatus": "verified",
-      "officialSocialProfileVerified": false,
-      "profiledAt": "",
-      "partnershipStatus": "",
-      "doNotOutreach": false,
-      "automationStatus": "",
-      "partnerNote": "",
-      "sendStatus": "",
-      "workingTime": {
-        "dueNow": true,
-        "timeZone": "Australia/Sydney",
-        "localTime": "Fri 11:05",
-        "window": "morning",
-        "nextBest": "now",
-        "weight": 1
-      },
-      "platform": "website_form",
-      "channelType": "website_form",
-      "platformUrl": "https://www.outdoornature.com.au/become-a-supplier/",
-      "url": "https://www.outdoornature.com.au/become-a-supplier/",
-      "contactUrl": "https://www.outdoornature.com.au/become-a-supplier/",
-      "contactSearchUrl": "https://www.google.com/search?q=site%3Awww.outdoornature.com.au%20%22Outdoor%20Nature%22%20contact%20buyer%20wholesale%20email%20vendor",
-      "emailFrom": "leo@flextailgear.com",
-      "websiteContactSubject": "FLEXTAIL retail partnership | 2026 assortment",
-      "websiteContactMessage": "Dear Outdoor Nature Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
-      "websiteContactFlow": "open_official_contact_us_fill_attach_auto_submit",
-      "action": "email_priority",
-      "reason": "official_website_contact_channel",
-      "alternateChannels": {
-        "linkedin": "",
-        "instagram": "",
-        "facebook": "",
-        "websiteContact": "https://www.outdoornature.com.au/become-a-supplier/"
-      },
-      "invalidChannels": {},
-      "identitySource": "official website contact path + Google buyer/contact query",
-      "channelPriority": 3,
-      "discoveredAt": "2026-07-29T12:52:55.130Z",
-      "targetRegion": "oceania",
-      "targetRegionScore": 0,
-      "contactChannelScore": 13,
-      "dealProbabilityScore": 177,
-      "priorityScore": 177
     },
     {
       "id": "sheet_1779293110195_9myxa520z",
@@ -13074,7 +12819,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/Oslo",
-        "localTime": "Fri 03:05",
+        "localTime": "Fri 03:54",
         "window": "outside_work_hours",
         "nextBest": "Europe/Oslo morning",
         "weight": 0
@@ -13159,7 +12904,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/Stockholm",
-        "localTime": "Fri 03:05",
+        "localTime": "Fri 03:54",
         "window": "outside_work_hours",
         "nextBest": "Europe/Stockholm morning",
         "weight": 0
@@ -13244,7 +12989,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/Helsinki",
-        "localTime": "Fri 04:05",
+        "localTime": "Fri 04:54",
         "window": "outside_work_hours",
         "nextBest": "Europe/Helsinki morning",
         "weight": 0
@@ -13329,7 +13074,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/Helsinki",
-        "localTime": "Fri 04:05",
+        "localTime": "Fri 04:54",
         "window": "outside_work_hours",
         "nextBest": "Europe/Helsinki morning",
         "weight": 0
@@ -13414,7 +13159,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/Paris",
-        "localTime": "Fri 03:05",
+        "localTime": "Fri 03:54",
         "window": "outside_work_hours",
         "nextBest": "Europe/Paris morning",
         "weight": 0
@@ -13499,7 +13244,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/Stockholm",
-        "localTime": "Fri 03:05",
+        "localTime": "Fri 03:54",
         "window": "outside_work_hours",
         "nextBest": "Europe/Stockholm morning",
         "weight": 0
@@ -13584,7 +13329,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/London",
-        "localTime": "Fri 02:05",
+        "localTime": "Fri 02:54",
         "window": "outside_work_hours",
         "nextBest": "Europe/London morning",
         "weight": 0
@@ -13669,7 +13414,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/London",
-        "localTime": "Fri 02:05",
+        "localTime": "Fri 02:54",
         "window": "outside_work_hours",
         "nextBest": "Europe/London morning",
         "weight": 0
@@ -13754,7 +13499,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/London",
-        "localTime": "Fri 02:05",
+        "localTime": "Fri 02:54",
         "window": "outside_work_hours",
         "nextBest": "Europe/London morning",
         "weight": 0
@@ -13839,7 +13584,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/Madrid",
-        "localTime": "Fri 03:05",
+        "localTime": "Fri 03:54",
         "window": "outside_work_hours",
         "nextBest": "Europe/Madrid morning",
         "weight": 0
@@ -13924,7 +13669,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/Paris",
-        "localTime": "Fri 03:05",
+        "localTime": "Fri 03:54",
         "window": "outside_work_hours",
         "nextBest": "Europe/Paris morning",
         "weight": 0
@@ -14009,7 +13754,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/Paris",
-        "localTime": "Fri 03:05",
+        "localTime": "Fri 03:54",
         "window": "outside_work_hours",
         "nextBest": "Europe/Paris morning",
         "weight": 0
@@ -14094,7 +13839,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/Dublin",
-        "localTime": "Fri 02:05",
+        "localTime": "Fri 02:54",
         "window": "outside_work_hours",
         "nextBest": "Europe/Dublin morning",
         "weight": 0
@@ -14179,7 +13924,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/Berlin",
-        "localTime": "Fri 03:05",
+        "localTime": "Fri 03:54",
         "window": "outside_work_hours",
         "nextBest": "Europe/Berlin morning",
         "weight": 0
@@ -14264,7 +14009,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/Copenhagen",
-        "localTime": "Fri 03:05",
+        "localTime": "Fri 03:54",
         "window": "outside_work_hours",
         "nextBest": "Europe/Copenhagen morning",
         "weight": 0
@@ -14349,7 +14094,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/Oslo",
-        "localTime": "Fri 03:05",
+        "localTime": "Fri 03:54",
         "window": "outside_work_hours",
         "nextBest": "Europe/Oslo morning",
         "weight": 0
@@ -14440,7 +14185,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/London",
-        "localTime": "Fri 02:05",
+        "localTime": "Fri 02:54",
         "window": "outside_work_hours",
         "nextBest": "Europe/London morning",
         "weight": 0
@@ -14525,7 +14270,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/Copenhagen",
-        "localTime": "Fri 03:05",
+        "localTime": "Fri 03:54",
         "window": "outside_work_hours",
         "nextBest": "Europe/Copenhagen morning",
         "weight": 0
@@ -14610,7 +14355,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/London",
-        "localTime": "Fri 02:05",
+        "localTime": "Fri 02:54",
         "window": "outside_work_hours",
         "nextBest": "Europe/London morning",
         "weight": 0
@@ -14695,7 +14440,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/London",
-        "localTime": "Fri 02:05",
+        "localTime": "Fri 02:54",
         "window": "outside_work_hours",
         "nextBest": "Europe/London morning",
         "weight": 0
@@ -14780,7 +14525,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/Paris",
-        "localTime": "Fri 03:05",
+        "localTime": "Fri 03:54",
         "window": "outside_work_hours",
         "nextBest": "Europe/Paris morning",
         "weight": 0
@@ -14865,7 +14610,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/London",
-        "localTime": "Fri 02:05",
+        "localTime": "Fri 02:54",
         "window": "outside_work_hours",
         "nextBest": "Europe/London morning",
         "weight": 0
@@ -14950,7 +14695,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Thu 21:05",
+        "localTime": "Thu 21:54",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -15035,7 +14780,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Thu 21:05",
+        "localTime": "Thu 21:54",
         "window": "outside_work_hours",
         "nextBest": "America/Toronto morning",
         "weight": 0
@@ -15120,7 +14865,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Thu 21:05",
+        "localTime": "Thu 21:54",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -15205,7 +14950,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Thu 21:05",
+        "localTime": "Thu 21:54",
         "window": "outside_work_hours",
         "nextBest": "America/Toronto morning",
         "weight": 0
@@ -15290,7 +15035,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Thu 21:05",
+        "localTime": "Thu 21:54",
         "window": "outside_work_hours",
         "nextBest": "America/Toronto morning",
         "weight": 0
@@ -15375,7 +15120,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Thu 21:05",
+        "localTime": "Thu 21:54",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -15460,7 +15205,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Thu 21:05",
+        "localTime": "Thu 21:54",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -15551,7 +15296,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Thu 21:05",
+        "localTime": "Thu 21:54",
         "window": "outside_work_hours",
         "nextBest": "America/Toronto morning",
         "weight": 0
@@ -15636,7 +15381,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Thu 21:05",
+        "localTime": "Thu 21:54",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -15727,7 +15472,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Thu 21:05",
+        "localTime": "Thu 21:54",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -15812,7 +15557,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Thu 21:05",
+        "localTime": "Thu 21:54",
         "window": "outside_work_hours",
         "nextBest": "America/Toronto morning",
         "weight": 0
@@ -15897,7 +15642,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Thu 21:05",
+        "localTime": "Thu 21:54",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -15982,7 +15727,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Thu 21:05",
+        "localTime": "Thu 21:54",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -16067,7 +15812,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Thu 21:05",
+        "localTime": "Thu 21:54",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -16152,7 +15897,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Thu 21:05",
+        "localTime": "Thu 21:54",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -16237,7 +15982,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Thu 21:05",
+        "localTime": "Thu 21:54",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -16322,7 +16067,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Thu 21:05",
+        "localTime": "Thu 21:54",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -16407,7 +16152,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Thu 21:05",
+        "localTime": "Thu 21:54",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -16492,7 +16237,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Thu 21:05",
+        "localTime": "Thu 21:54",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -16524,6 +16269,91 @@ window.DAILY_AUTOMATION_LATEST = {
       "contactChannelScore": 13,
       "dealProbabilityScore": 199,
       "priorityScore": 199
+    },
+    {
+      "id": "google-customer-tentworld-website-contact",
+      "name": "Tentworld",
+      "company": "Tentworld",
+      "customerType": "key_account",
+      "discoveryMode": "autonomous_refill",
+      "country": "Australia",
+      "countryEn": "Australia",
+      "fitScore": 90,
+      "fitTier": "A+",
+      "marketScore": 4.5,
+      "marketStatus": "open",
+      "agencyState": "open",
+      "agentCompany": "",
+      "keyword": "verified outdoor, camping, travel and consumer electronics retail channel",
+      "role": "Outdoor electronics, camping accessories, travel products or consumer electronics category buyer.",
+      "background": "Tentworld is listed or qualified as an outdoor/camping specialty retail prospect with assortment fit for lightweight outdoor electrics and practical high-rotation 3C products.",
+      "buyerPersona": "Outdoor electronics, camping accessories, travel products or consumer electronics category buyer.",
+      "targetMarkets": "",
+      "excludedMarkets": "",
+      "productCategory": "verified outdoor, camping, travel and consumer electronics retail channel",
+      "businessModel": "Retail Chain",
+      "productFit": "FLEXTAIL portable pumps, outdoor power, camping lighting and compact camping accessories",
+      "opportunity": "Tentworld is listed or qualified as an outdoor/camping specialty retail prospect with assortment fit for lightweight outdoor electrics and practical high-rotation 3C products.",
+      "linkedin_url": "",
+      "linkedin": "",
+      "publicEmail": "contact@tentworld.com.au",
+      "contactEmail": "contact@tentworld.com.au",
+      "vendorPortal": "https://www.tentworld.com.au/contact-us",
+      "contactPhone": "",
+      "contactNote": "",
+      "publicEmailStatus": "Official public company-domain email published by Tentworld; route the supplier proposal to the category buyer or vendor-review owner.",
+      "website": "https://www.tentworld.com.au/",
+      "evidenceUrl": "https://www.google.com/search?q=%22Tentworld%22%20%22verified%20outdoor%2C%20camping%2C%20travel%20and%20consumer%20electronics%20retail%20channel%22%20%22Australia%22%20buyer%20OR%20wholesale%20OR%20contact",
+      "sourceEvidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
+      "externalVerificationStatus": "",
+      "query": "https://www.google.com/search?q=%22Tentworld%22%20%22verified%20outdoor%2C%20camping%2C%20travel%20and%20consumer%20electronics%20retail%20channel%22%20%22Australia%22%20buyer%20OR%20wholesale%20OR%20contact",
+      "source": "google_customer_discovery",
+      "sourceType": "google",
+      "discoveryProvider": "google",
+      "channel": "",
+      "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
+      "profiledAt": "",
+      "partnershipStatus": "",
+      "doNotOutreach": false,
+      "automationStatus": "",
+      "partnerNote": "",
+      "sendStatus": "",
+      "workingTime": {
+        "dueNow": false,
+        "timeZone": "Australia/Sydney",
+        "localTime": "Fri 11:54",
+        "window": "outside_work_hours",
+        "nextBest": "Australia/Sydney afternoon",
+        "weight": 0
+      },
+      "platform": "website_form",
+      "channelType": "website_form",
+      "platformUrl": "https://www.tentworld.com.au/contact-us",
+      "url": "https://www.tentworld.com.au/contact-us",
+      "contactUrl": "https://www.tentworld.com.au/contact-us",
+      "contactSearchUrl": "https://www.google.com/search?q=site%3Awww.tentworld.com.au%20%22Tentworld%22%20contact%20buyer%20wholesale%20email%20vendor",
+      "emailFrom": "leo@flextailgear.com",
+      "websiteContactSubject": "FLEXTAIL retail partnership | 2026 assortment",
+      "websiteContactMessage": "Dear Tentworld Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
+      "websiteContactFlow": "open_official_contact_us_fill_attach_auto_submit",
+      "action": "email_priority",
+      "reason": "official_website_contact_channel",
+      "alternateChannels": {
+        "linkedin": "",
+        "instagram": "",
+        "facebook": "",
+        "websiteContact": "https://www.tentworld.com.au/contact-us"
+      },
+      "invalidChannels": {},
+      "identitySource": "official website contact path + Google buyer/contact query",
+      "channelPriority": 3,
+      "discoveredAt": "2026-07-14T04:02:10.362Z",
+      "targetRegion": "oceania",
+      "targetRegionScore": 0,
+      "contactChannelScore": 25,
+      "dealProbabilityScore": 187,
+      "priorityScore": 187
     },
     {
       "id": "google-customer-bivouac-outdoor-website-contact",
@@ -16577,7 +16407,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Pacific/Auckland",
-        "localTime": "Fri 13:05",
+        "localTime": "Fri 13:54",
         "window": "outside_work_hours",
         "nextBest": "Pacific/Auckland afternoon",
         "weight": 0
@@ -16609,6 +16439,176 @@ window.DAILY_AUTOMATION_LATEST = {
       "contactChannelScore": 25,
       "dealProbabilityScore": 186,
       "priorityScore": 186
+    },
+    {
+      "id": "google-customer-wildfire-sports-website-contact",
+      "name": "Wildfire Sports",
+      "company": "Wildfire Sports",
+      "customerType": "key_account",
+      "discoveryMode": "autonomous_refill",
+      "country": "Australia",
+      "countryEn": "Australia",
+      "fitScore": 87,
+      "fitTier": "A",
+      "marketScore": 4.5,
+      "marketStatus": "open",
+      "agencyState": "open",
+      "agentCompany": "",
+      "keyword": "verified outdoor, camping, travel and consumer electronics retail channel",
+      "role": "Outdoor electronics, camping accessories, travel products or consumer electronics category buyer.",
+      "background": "Wildfire Sports is listed or qualified as an outdoor/camping specialty retail prospect with assortment fit for lightweight outdoor electrics and practical high-rotation 3C products.",
+      "buyerPersona": "Outdoor electronics, camping accessories, travel products or consumer electronics category buyer.",
+      "targetMarkets": "",
+      "excludedMarkets": "",
+      "productCategory": "verified outdoor, camping, travel and consumer electronics retail channel",
+      "businessModel": "Retail Chain",
+      "productFit": "FLEXTAIL portable pumps, outdoor power, camping lighting and compact camping accessories",
+      "opportunity": "Wildfire Sports is listed or qualified as an outdoor/camping specialty retail prospect with assortment fit for lightweight outdoor electrics and practical high-rotation 3C products.",
+      "linkedin_url": "",
+      "linkedin": "",
+      "publicEmail": "enquiries@wildfiresports.com.au",
+      "contactEmail": "enquiries@wildfiresports.com.au",
+      "vendorPortal": "https://www.wildfiresports.com.au/contact-us",
+      "contactPhone": "",
+      "contactNote": "",
+      "publicEmailStatus": "Official public business email on the Wildfire Sports contact page; route to category buyer or vendor-review owner.",
+      "website": "https://www.wildfiresports.com.au/",
+      "evidenceUrl": "https://www.google.com/search?q=%22Wildfire%20Sports%22%20%22verified%20outdoor%2C%20camping%2C%20travel%20and%20consumer%20electronics%20retail%20channel%22%20%22Australia%22%20buyer%20OR%20wholesale%20OR%20contact",
+      "sourceEvidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
+      "externalVerificationStatus": "",
+      "query": "https://www.google.com/search?q=%22Wildfire%20Sports%22%20%22verified%20outdoor%2C%20camping%2C%20travel%20and%20consumer%20electronics%20retail%20channel%22%20%22Australia%22%20buyer%20OR%20wholesale%20OR%20contact",
+      "source": "google_customer_discovery",
+      "sourceType": "google",
+      "discoveryProvider": "google",
+      "channel": "",
+      "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
+      "profiledAt": "",
+      "partnershipStatus": "",
+      "doNotOutreach": false,
+      "automationStatus": "",
+      "partnerNote": "",
+      "sendStatus": "",
+      "workingTime": {
+        "dueNow": false,
+        "timeZone": "Australia/Sydney",
+        "localTime": "Fri 11:54",
+        "window": "outside_work_hours",
+        "nextBest": "Australia/Sydney afternoon",
+        "weight": 0
+      },
+      "platform": "website_form",
+      "channelType": "website_form",
+      "platformUrl": "https://www.wildfiresports.com.au/contact-us",
+      "url": "https://www.wildfiresports.com.au/contact-us",
+      "contactUrl": "https://www.wildfiresports.com.au/contact-us",
+      "contactSearchUrl": "https://www.google.com/search?q=site%3Awww.wildfiresports.com.au%20%22Wildfire%20Sports%22%20contact%20buyer%20wholesale%20email%20vendor",
+      "emailFrom": "leo@flextailgear.com",
+      "websiteContactSubject": "FLEXTAIL retail partnership | 2026 assortment",
+      "websiteContactMessage": "Dear Wildfire Sports Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
+      "websiteContactFlow": "open_official_contact_us_fill_attach_auto_submit",
+      "action": "email_priority",
+      "reason": "official_website_contact_channel",
+      "alternateChannels": {
+        "linkedin": "",
+        "instagram": "",
+        "facebook": "",
+        "websiteContact": "https://www.wildfiresports.com.au/contact-us"
+      },
+      "invalidChannels": {},
+      "identitySource": "official website contact path + Google buyer/contact query",
+      "channelPriority": 3,
+      "discoveredAt": "2026-07-14T04:02:10.362Z",
+      "targetRegion": "oceania",
+      "targetRegionScore": 0,
+      "contactChannelScore": 25,
+      "dealProbabilityScore": 184,
+      "priorityScore": 184
+    },
+    {
+      "id": "google-customer-outdoor-nature-website-contact",
+      "name": "Outdoor Nature",
+      "company": "Outdoor Nature",
+      "customerType": "key_account",
+      "discoveryMode": "autonomous_refill",
+      "country": "Australia",
+      "countryEn": "Australia",
+      "fitScore": 92,
+      "fitTier": "A+",
+      "marketScore": 4.5,
+      "marketStatus": "open",
+      "agencyState": "open",
+      "agentCompany": "",
+      "keyword": "outdoor, hiking, camping, travel and adventure retailer",
+      "role": "Supplier onboarding, category buying or merchandising owner.",
+      "background": "Australian outdoor retailer whose official supplier page explicitly invites outdoor, hiking, camping, travel and adventure product submissions.",
+      "buyerPersona": "Supplier onboarding, category buying or merchandising owner.",
+      "targetMarkets": "",
+      "excludedMarkets": "",
+      "productCategory": "outdoor, hiking, camping, travel and adventure retailer",
+      "businessModel": "Retail Chain",
+      "productFit": "FLEXTAIL portable pumps, outdoor power, camping lighting and compact camping accessories",
+      "opportunity": "Australian outdoor retailer whose official supplier page explicitly invites outdoor, hiking, camping, travel and adventure product submissions.",
+      "linkedin_url": "",
+      "linkedin": "",
+      "publicEmail": "",
+      "contactEmail": "",
+      "vendorPortal": "https://www.outdoornature.com.au/become-a-supplier/",
+      "contactPhone": "",
+      "contactNote": "",
+      "publicEmailStatus": "",
+      "website": "https://www.outdoornature.com.au/",
+      "evidenceUrl": "https://www.google.com/search?q=%22Outdoor%20Nature%22%20%22outdoor%2C%20hiking%2C%20camping%2C%20travel%20and%20adventure%20retailer%22%20%22Australia%22%20buyer%20OR%20wholesale%20OR%20contact",
+      "sourceEvidenceUrl": "https://www.outdoornature.com.au/become-a-supplier/",
+      "externalVerificationStatus": "official_supplier_form_verified",
+      "query": "https://www.google.com/search?q=%22Outdoor%20Nature%22%20%22outdoor%2C%20hiking%2C%20camping%2C%20travel%20and%20adventure%20retailer%22%20%22Australia%22%20buyer%20OR%20wholesale%20OR%20contact",
+      "source": "google_customer_discovery",
+      "sourceType": "google",
+      "discoveryProvider": "google",
+      "channel": "",
+      "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
+      "profiledAt": "",
+      "partnershipStatus": "",
+      "doNotOutreach": false,
+      "automationStatus": "",
+      "partnerNote": "",
+      "sendStatus": "",
+      "workingTime": {
+        "dueNow": false,
+        "timeZone": "Australia/Sydney",
+        "localTime": "Fri 11:54",
+        "window": "outside_work_hours",
+        "nextBest": "Australia/Sydney afternoon",
+        "weight": 0
+      },
+      "platform": "website_form",
+      "channelType": "website_form",
+      "platformUrl": "https://www.outdoornature.com.au/become-a-supplier/",
+      "url": "https://www.outdoornature.com.au/become-a-supplier/",
+      "contactUrl": "https://www.outdoornature.com.au/become-a-supplier/",
+      "contactSearchUrl": "https://www.google.com/search?q=site%3Awww.outdoornature.com.au%20%22Outdoor%20Nature%22%20contact%20buyer%20wholesale%20email%20vendor",
+      "emailFrom": "leo@flextailgear.com",
+      "websiteContactSubject": "FLEXTAIL retail partnership | 2026 assortment",
+      "websiteContactMessage": "Dear Outdoor Nature Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
+      "websiteContactFlow": "open_official_contact_us_fill_attach_auto_submit",
+      "action": "email_priority",
+      "reason": "official_website_contact_channel",
+      "alternateChannels": {
+        "linkedin": "",
+        "instagram": "",
+        "facebook": "",
+        "websiteContact": "https://www.outdoornature.com.au/become-a-supplier/"
+      },
+      "invalidChannels": {},
+      "identitySource": "official website contact path + Google buyer/contact query",
+      "channelPriority": 3,
+      "discoveredAt": "2026-07-29T12:52:55.130Z",
+      "targetRegion": "oceania",
+      "targetRegionScore": 0,
+      "contactChannelScore": 13,
+      "dealProbabilityScore": 177,
+      "priorityScore": 177
     },
     {
       "id": "google-customer-transa-website-contact",
@@ -16662,7 +16662,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/Zurich",
-        "localTime": "Fri 03:05",
+        "localTime": "Fri 03:54",
         "window": "outside_work_hours",
         "nextBest": "Europe/Zurich morning",
         "weight": 0
@@ -16747,7 +16747,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/Zurich",
-        "localTime": "Fri 03:05",
+        "localTime": "Fri 03:54",
         "window": "outside_work_hours",
         "nextBest": "Europe/Zurich morning",
         "weight": 0
@@ -16838,7 +16838,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/Dublin",
-        "localTime": "Fri 02:05",
+        "localTime": "Fri 02:54",
         "window": "outside_work_hours",
         "nextBest": "Europe/Dublin morning",
         "weight": 0
@@ -16917,7 +16917,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/Berlin",
-        "localTime": "Fri 03:05",
+        "localTime": "Fri 03:54",
         "window": "outside_work_hours",
         "nextBest": "Europe/Berlin morning",
         "weight": 0
@@ -16996,7 +16996,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/Oslo",
-        "localTime": "Fri 03:05",
+        "localTime": "Fri 03:54",
         "window": "outside_work_hours",
         "nextBest": "Europe/Oslo morning",
         "weight": 0
@@ -17081,7 +17081,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/London",
-        "localTime": "Fri 02:05",
+        "localTime": "Fri 02:54",
         "window": "outside_work_hours",
         "nextBest": "Europe/London morning",
         "weight": 0
@@ -17160,7 +17160,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/London",
-        "localTime": "Fri 02:05",
+        "localTime": "Fri 02:54",
         "window": "outside_work_hours",
         "nextBest": "Europe/London morning",
         "weight": 0
@@ -17239,7 +17239,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Thu 21:05",
+        "localTime": "Thu 21:54",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -17318,7 +17318,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Thu 21:05",
+        "localTime": "Thu 21:54",
         "window": "outside_work_hours",
         "nextBest": "America/Toronto morning",
         "weight": 0
@@ -17397,7 +17397,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Thu 21:05",
+        "localTime": "Thu 21:54",
         "window": "outside_work_hours",
         "nextBest": "America/Toronto morning",
         "weight": 0
@@ -17476,7 +17476,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Thu 21:05",
+        "localTime": "Thu 21:54",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -17561,7 +17561,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Thu 21:05",
+        "localTime": "Thu 21:54",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -17646,7 +17646,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Thu 21:05",
+        "localTime": "Thu 21:54",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -17725,7 +17725,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Pacific/Auckland",
-        "localTime": "Fri 13:05",
+        "localTime": "Fri 13:54",
         "window": "outside_work_hours",
         "nextBest": "Pacific/Auckland afternoon",
         "weight": 0
@@ -17804,7 +17804,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/Zurich",
-        "localTime": "Fri 03:05",
+        "localTime": "Fri 03:54",
         "window": "outside_work_hours",
         "nextBest": "Europe/Zurich morning",
         "weight": 0
@@ -17889,7 +17889,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/Dublin",
-        "localTime": "Fri 02:05",
+        "localTime": "Fri 02:54",
         "window": "outside_work_hours",
         "nextBest": "Europe/Dublin morning",
         "weight": 0
@@ -17966,7 +17966,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/Berlin",
-        "localTime": "Fri 03:05",
+        "localTime": "Fri 03:54",
         "window": "outside_work_hours",
         "nextBest": "Europe/Berlin morning",
         "weight": 0
@@ -18043,7 +18043,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/London",
-        "localTime": "Fri 02:05",
+        "localTime": "Fri 02:54",
         "window": "outside_work_hours",
         "nextBest": "Europe/London morning",
         "weight": 0
@@ -18120,7 +18120,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/London",
-        "localTime": "Fri 02:05",
+        "localTime": "Fri 02:54",
         "window": "outside_work_hours",
         "nextBest": "Europe/London morning",
         "weight": 0
@@ -18197,7 +18197,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Thu 21:05",
+        "localTime": "Thu 21:54",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -18274,7 +18274,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Thu 21:05",
+        "localTime": "Thu 21:54",
         "window": "outside_work_hours",
         "nextBest": "America/Toronto morning",
         "weight": 0
@@ -18351,7 +18351,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Thu 21:05",
+        "localTime": "Thu 21:54",
         "window": "outside_work_hours",
         "nextBest": "America/Toronto morning",
         "weight": 0
@@ -18428,7 +18428,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Thu 21:05",
+        "localTime": "Thu 21:54",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -18505,7 +18505,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Pacific/Auckland",
-        "localTime": "Fri 13:05",
+        "localTime": "Fri 13:54",
         "window": "outside_work_hours",
         "nextBest": "Pacific/Auckland afternoon",
         "weight": 0
@@ -19269,63 +19269,6 @@ window.DAILY_AUTOMATION_LATEST = {
   ],
   "cooldownQueue": [
     {
-      "id": "verified-Instagram-anacondastores",
-      "name": "anacondastores",
-      "company": "Anaconda Stores AU (60K followers, verified, largest outdoor retailer)",
-      "platform": "instagram",
-      "country": "澳大利亚",
-      "countryEn": "Australia",
-      "fitScore": 85,
-      "fitTier": "A",
-      "marketScore": 4.8,
-      "marketStatus": "可开拓",
-      "agencyState": "open",
-      "url": "https://www.instagram.com/anacondastores/",
-      "website": "",
-      "platformUrl": "https://www.instagram.com/anacondastores/",
-      "invalidChannels": null,
-      "facebookStatus": "not_verified_do_not_use",
-      "instagramStatus": "",
-      "contactUrl": "",
-      "contactSearchUrl": "",
-      "emailFrom": "",
-      "websiteContactSubject": "",
-      "websiteContactMessage": "",
-      "websiteContactFlow": "",
-      "publicEmail": "",
-      "contactEmail": "",
-      "publicEmailStatus": "",
-      "emailVerificationStatus": "",
-      "emailEvidence": "",
-      "evidenceUrl": "",
-      "contactPhone": "",
-      "vendorPortal": "",
-      "linkedinUrl": "",
-      "headquarters": "",
-      "founded": "",
-      "companyScale": "",
-      "dataSources": null,
-      "alternateChannels": null,
-      "lastStatus": "sent_confirmed",
-      "lastEvidence": "instagram_message_sent_confirmed_composer_cleared;instagram_post_opened;post_liked;comment_submitted;follow_already_active",
-      "lastTouch": "2026-06-30T13:16:18.266Z",
-      "action": "cooldown",
-      "reason": "previous_sent_confirmed_no_duplicate_dm",
-      "workingTime": {
-        "dueNow": true,
-        "timeZone": "Australia/Sydney",
-        "localTime": "Fri 11:05",
-        "window": "morning",
-        "nextBest": "now",
-        "weight": 1
-      },
-      "targetRegion": "oceania",
-      "targetRegionScore": 0,
-      "contactChannelScore": 0,
-      "dealProbabilityScore": 161,
-      "priorityScore": 161
-    },
-    {
       "id": "verified-Instagram-ellisbrigham",
       "name": "ellisbrigham",
       "company": "Ellis Brigham UK (33K followers, since 1933)",
@@ -19371,7 +19314,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/London",
-        "localTime": "Fri 02:05",
+        "localTime": "Fri 02:54",
         "window": "outside_work_hours",
         "nextBest": "Europe/London morning",
         "weight": 0
@@ -19428,7 +19371,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/London",
-        "localTime": "Fri 02:05",
+        "localTime": "Fri 02:54",
         "window": "outside_work_hours",
         "nextBest": "Europe/London morning",
         "weight": 0
@@ -19485,7 +19428,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/London",
-        "localTime": "Fri 02:05",
+        "localTime": "Fri 02:54",
         "window": "outside_work_hours",
         "nextBest": "Europe/London morning",
         "weight": 0
@@ -19542,7 +19485,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Thu 21:05",
+        "localTime": "Thu 21:54",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -19599,7 +19542,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Thu 21:05",
+        "localTime": "Thu 21:54",
         "window": "outside_work_hours",
         "nextBest": "America/Toronto morning",
         "weight": 0
@@ -19656,7 +19599,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Thu 21:05",
+        "localTime": "Thu 21:54",
         "window": "outside_work_hours",
         "nextBest": "America/Toronto morning",
         "weight": 0
@@ -19713,7 +19656,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Asia/Jakarta",
-        "localTime": "Fri 08:05",
+        "localTime": "Fri 08:54",
         "window": "outside_work_hours",
         "nextBest": "Asia/Jakarta morning",
         "weight": 0
@@ -19723,6 +19666,63 @@ window.DAILY_AUTOMATION_LATEST = {
       "contactChannelScore": 0,
       "dealProbabilityScore": 172,
       "priorityScore": 172
+    },
+    {
+      "id": "verified-Instagram-anacondastores",
+      "name": "anacondastores",
+      "company": "Anaconda Stores AU (60K followers, verified, largest outdoor retailer)",
+      "platform": "instagram",
+      "country": "澳大利亚",
+      "countryEn": "Australia",
+      "fitScore": 85,
+      "fitTier": "A",
+      "marketScore": 4.8,
+      "marketStatus": "可开拓",
+      "agencyState": "open",
+      "url": "https://www.instagram.com/anacondastores/",
+      "website": "",
+      "platformUrl": "https://www.instagram.com/anacondastores/",
+      "invalidChannels": null,
+      "facebookStatus": "not_verified_do_not_use",
+      "instagramStatus": "",
+      "contactUrl": "",
+      "contactSearchUrl": "",
+      "emailFrom": "",
+      "websiteContactSubject": "",
+      "websiteContactMessage": "",
+      "websiteContactFlow": "",
+      "publicEmail": "",
+      "contactEmail": "",
+      "publicEmailStatus": "",
+      "emailVerificationStatus": "",
+      "emailEvidence": "",
+      "evidenceUrl": "",
+      "contactPhone": "",
+      "vendorPortal": "",
+      "linkedinUrl": "",
+      "headquarters": "",
+      "founded": "",
+      "companyScale": "",
+      "dataSources": null,
+      "alternateChannels": null,
+      "lastStatus": "sent_confirmed",
+      "lastEvidence": "instagram_message_sent_confirmed_composer_cleared;instagram_post_opened;post_liked;comment_submitted;follow_already_active",
+      "lastTouch": "2026-06-30T13:16:18.266Z",
+      "action": "cooldown",
+      "reason": "previous_sent_confirmed_no_duplicate_dm",
+      "workingTime": {
+        "dueNow": false,
+        "timeZone": "Australia/Sydney",
+        "localTime": "Fri 11:54",
+        "window": "outside_work_hours",
+        "nextBest": "Australia/Sydney afternoon",
+        "weight": 0
+      },
+      "targetRegion": "oceania",
+      "targetRegionScore": 0,
+      "contactChannelScore": 0,
+      "dealProbabilityScore": 161,
+      "priorityScore": 161
     },
     {
       "id": "verified-Instagram-huntingandfishingnewzealand",
@@ -19770,7 +19770,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Pacific/Auckland",
-        "localTime": "Fri 13:05",
+        "localTime": "Fri 13:54",
         "window": "outside_work_hours",
         "nextBest": "Pacific/Auckland afternoon",
         "weight": 0
@@ -19827,7 +19827,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Pacific/Auckland",
-        "localTime": "Fri 13:05",
+        "localTime": "Fri 13:54",
         "window": "outside_work_hours",
         "nextBest": "Pacific/Auckland afternoon",
         "weight": 0
@@ -19884,7 +19884,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Pacific/Auckland",
-        "localTime": "Fri 13:05",
+        "localTime": "Fri 13:54",
         "window": "outside_work_hours",
         "nextBest": "Pacific/Auckland afternoon",
         "weight": 0
@@ -19941,7 +19941,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Pacific/Auckland",
-        "localTime": "Fri 13:05",
+        "localTime": "Fri 13:54",
         "window": "outside_work_hours",
         "nextBest": "Pacific/Auckland afternoon",
         "weight": 0
@@ -19998,7 +19998,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Pacific/Auckland",
-        "localTime": "Fri 13:05",
+        "localTime": "Fri 13:54",
         "window": "outside_work_hours",
         "nextBest": "Pacific/Auckland afternoon",
         "weight": 0
@@ -20055,7 +20055,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Asia/Kolkata",
-        "localTime": "Fri 06:35",
+        "localTime": "Fri 07:24",
         "window": "outside_work_hours",
         "nextBest": "Asia/Kolkata morning",
         "weight": 0
@@ -20132,7 +20132,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "Asia/Shanghai",
-        "localTime": "Fri 09:05",
+        "localTime": "Fri 09:54",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -20220,7 +20220,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "Asia/Shanghai",
-        "localTime": "Fri 09:05",
+        "localTime": "Fri 09:54",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -20308,7 +20308,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "Asia/Shanghai",
-        "localTime": "Fri 09:05",
+        "localTime": "Fri 09:54",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -20402,7 +20402,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "Asia/Shanghai",
-        "localTime": "Fri 09:05",
+        "localTime": "Fri 09:54",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -20437,651 +20437,6 @@ window.DAILY_AUTOMATION_LATEST = {
       "lastStatus": "send_unconfirmed",
       "lastEvidence": "instagram_message_sent_confirmed_after_send_click;instagram_draft_inserted_verified;sentText:false;outgoingBubble:true;emptyComposer:true;follow_not_available;instagram_post_not_available;retry:instagram_post_opened;post_liked;comment_submitted;downgraded_missing_persisted_conversation_history",
       "lastTouch": "2026-07-29T09:20:00.455Z"
-    },
-    {
-      "linkedinUrl": "https://au.linkedin.com/company/anaconda-group-pty-ltd",
-      "founded": "2004",
-      "headquarters": "South Melbourne, Victoria, Australia",
-      "companyScale": "501-1,000 employees on LinkedIn; large Australian camping/adventure retail chain",
-      "coverage": "Australia",
-      "mainBrands": "Camping, fishing, hiking, 4WD, outdoor lifestyle and adventure retail brands",
-      "salesChannel": "Stores and ecommerce",
-      "buyingCapability": "High; Australian national outdoor chain under Spotlight Group holdings",
-      "decisionMaker": "Camping/4WD/outdoor equipment buyer or category manager",
-      "publicEmail": "info@spotlightgroup.com",
-      "publicEmailStatus": "Parent/group public contact email; direct buyer email not publicly verified.",
-      "contactPhone": "1300 558 990",
-      "vendorPortal": "https://help.anacondastores.com/hc/en-au",
-      "linkedinCompany": "https://au.linkedin.com/company/anaconda-group-pty-ltd",
-      "contactNote": "Use official enquiry form or group contact; request camping/4WD category buyer routing.",
-      "dataSources": [
-        "Anaconda LinkedIn",
-        "Anaconda help centre",
-        "Spotlight Group Anaconda page"
-      ],
-      "id": "google-customer-anaconda-website-contact",
-      "name": "Anaconda",
-      "company": "Anaconda",
-      "customerType": "key_account",
-      "discoveryMode": "baseline_verified_pool",
-      "country": "Australia",
-      "countryEn": "Australia",
-      "fitScore": 92,
-      "fitTier": "A+",
-      "marketScore": 4.5,
-      "marketStatus": "open",
-      "agencyState": "open",
-      "agentCompany": "",
-      "keyword": "outdoor retail chain",
-      "role": "Camping / 4WD / outdoor equipment buyer.",
-      "background": "Australian outdoor retailer for camping, hiking, fishing, 4WD, and outdoor lifestyle equipment.",
-      "buyerPersona": "Camping / 4WD / outdoor equipment buyer.",
-      "targetMarkets": "",
-      "excludedMarkets": "",
-      "productCategory": "outdoor retail chain",
-      "businessModel": "Retail Chain",
-      "productFit": "FLEXTAIL portable pumps, outdoor power, camping lighting and compact camping accessories",
-      "opportunity": "Australian outdoor retailer for camping, hiking, fishing, 4WD, and outdoor lifestyle equipment.",
-      "linkedin_url": "https://au.linkedin.com/company/anaconda-group-pty-ltd",
-      "linkedin": "https://au.linkedin.com/company/anaconda-group-pty-ltd",
-      "contactEmail": "info@spotlightgroup.com",
-      "website": "https://www.anacondastores.com/",
-      "evidenceUrl": "https://www.google.com/search?q=%22Anaconda%22%20%22outdoor%20retail%20chain%22%20%22Australia%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "sourceEvidenceUrl": "https://www.anacondastores.com/",
-      "externalVerificationStatus": "",
-      "query": "https://www.google.com/search?q=%22Anaconda%22%20%22outdoor%20retail%20chain%22%20%22Australia%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "source": "google_customer_discovery",
-      "sourceType": "google",
-      "discoveryProvider": "google",
-      "channel": "",
-      "identityStatus": "verified",
-      "officialSocialProfileVerified": false,
-      "profiledAt": "2026-07-14T04:02:10.360Z",
-      "partnershipStatus": "",
-      "doNotOutreach": false,
-      "automationStatus": "",
-      "partnerNote": "",
-      "sendStatus": "",
-      "workingTime": {
-        "dueNow": true,
-        "timeZone": "Australia/Sydney",
-        "localTime": "Fri 11:05",
-        "window": "morning",
-        "nextBest": "now",
-        "weight": 1
-      },
-      "platform": "website_form",
-      "channelType": "website_form",
-      "platformUrl": "https://www.anacondastores.com/contact-us",
-      "url": "https://www.anacondastores.com/contact-us",
-      "contactUrl": "https://www.anacondastores.com/contact-us",
-      "contactSearchUrl": "https://www.google.com/search?q=site%3Awww.anacondastores.com%20%22Anaconda%22%20contact%20buyer%20wholesale%20email%20vendor",
-      "emailFrom": "leo@flextailgear.com",
-      "websiteContactSubject": "FLEXTAIL retail partnership | 2026 assortment",
-      "websiteContactMessage": "Dear Anaconda Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
-      "websiteContactFlow": "open_official_contact_us_fill_attach_auto_submit",
-      "action": "cooldown",
-      "reason": "previous_customer_development_no_repeat",
-      "alternateChannels": {
-        "linkedin": "https://au.linkedin.com/company/anaconda-group-pty-ltd",
-        "instagram": "https://www.instagram.com/anacondastores/",
-        "facebook": "https://www.facebook.com/AnacondaStores",
-        "websiteContact": "https://www.anacondastores.com/contact-us"
-      },
-      "invalidChannels": {},
-      "identitySource": "official website contact path + Google buyer/contact query",
-      "channelPriority": 3,
-      "discoveredAt": "2026-07-14T04:02:10.362Z",
-      "targetRegion": "oceania",
-      "targetRegionScore": 0,
-      "contactChannelScore": 29,
-      "dealProbabilityScore": 193,
-      "priorityScore": 193,
-      "lastStatus": "sent_confirmed",
-      "lastEvidence": "instagram_message_sent_confirmed_composer_cleared;instagram_post_opened;post_liked;comment_submitted;follow_already_active",
-      "lastTouch": "2026-06-30T13:16:18.266Z"
-    },
-    {
-      "linkedinUrl": "https://au.linkedin.com/company/boating-camping-fishing",
-      "founded": "2005",
-      "headquarters": "Strathpine, Queensland, Australia",
-      "companyScale": "1,001-5,000 employees; largest outdoor retailer in Australia per company profile",
-      "coverage": "Australia",
-      "mainBrands": "Boating, camping, fishing and outdoor brands under Super Retail Group",
-      "salesChannel": "Stores and ecommerce; Super Retail Group trade partner processes",
-      "buyingCapability": "High; Super Retail Group trade partner route",
-      "decisionMaker": "Camping/outdoor accessories category manager or Super Retail Group trade partner contact",
-      "publicEmail": "",
-      "publicEmailStatus": "No public buyer email verified; use Super Retail Group trade partner/contact route.",
-      "contactPhone": "",
-      "vendorPortal": "https://www.superretailgroup.com.au/working-with-us/Trade/",
-      "linkedinCompany": "https://au.linkedin.com/company/boating-camping-fishing",
-      "contactNote": "Use Super Retail Group trade partner information; do not use generic AP emails for sales pitch.",
-      "dataSources": [
-        "BCF LinkedIn",
-        "Super Retail Group trade partner page"
-      ],
-      "id": "google-customer-bcf-website-contact",
-      "name": "BCF",
-      "company": "BCF",
-      "customerType": "key_account",
-      "discoveryMode": "baseline_verified_pool",
-      "country": "Australia",
-      "countryEn": "Australia",
-      "fitScore": 89,
-      "fitTier": "A",
-      "marketScore": 4.5,
-      "marketStatus": "open",
-      "agencyState": "open",
-      "agentCompany": "",
-      "keyword": "outdoor retail chain",
-      "role": "Camping or outdoor accessories buyer.",
-      "background": "Australian boating, camping, and fishing retailer with strong fit for compact outdoor power and camping accessories.",
-      "buyerPersona": "Camping or outdoor accessories buyer.",
-      "targetMarkets": "",
-      "excludedMarkets": "",
-      "productCategory": "outdoor retail chain",
-      "businessModel": "Retail Chain",
-      "productFit": "FLEXTAIL portable pumps, outdoor power, camping lighting and compact camping accessories",
-      "opportunity": "Australian boating, camping, and fishing retailer with strong fit for compact outdoor power and camping accessories.",
-      "linkedin_url": "https://au.linkedin.com/company/boating-camping-fishing",
-      "linkedin": "https://au.linkedin.com/company/boating-camping-fishing",
-      "contactEmail": "",
-      "website": "https://www.bcf.com.au/",
-      "evidenceUrl": "https://www.google.com/search?q=%22BCF%22%20%22outdoor%20retail%20chain%22%20%22Australia%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "sourceEvidenceUrl": "https://www.bcf.com.au/",
-      "externalVerificationStatus": "",
-      "query": "https://www.google.com/search?q=%22BCF%22%20%22outdoor%20retail%20chain%22%20%22Australia%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "source": "google_customer_discovery",
-      "sourceType": "google",
-      "discoveryProvider": "google",
-      "channel": "",
-      "identityStatus": "verified",
-      "officialSocialProfileVerified": false,
-      "profiledAt": "2026-07-14T04:02:10.360Z",
-      "partnershipStatus": "",
-      "doNotOutreach": false,
-      "automationStatus": "",
-      "partnerNote": "",
-      "sendStatus": "",
-      "workingTime": {
-        "dueNow": true,
-        "timeZone": "Australia/Sydney",
-        "localTime": "Fri 11:05",
-        "window": "morning",
-        "nextBest": "now",
-        "weight": 1
-      },
-      "platform": "website_form",
-      "channelType": "website_form",
-      "platformUrl": "https://www.bcf.com.au/contact-us",
-      "url": "https://www.bcf.com.au/contact-us",
-      "contactUrl": "https://www.bcf.com.au/contact-us",
-      "contactSearchUrl": "https://www.google.com/search?q=site%3Awww.bcf.com.au%20%22BCF%22%20contact%20buyer%20wholesale%20email%20vendor",
-      "emailFrom": "leo@flextailgear.com",
-      "websiteContactSubject": "FLEXTAIL retail partnership | 2026 assortment",
-      "websiteContactMessage": "Dear BCF Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
-      "websiteContactFlow": "open_official_contact_us_fill_attach_auto_submit",
-      "action": "cooldown",
-      "reason": "previous_customer_development_no_repeat",
-      "alternateChannels": {
-        "linkedin": "https://au.linkedin.com/company/boating-camping-fishing",
-        "instagram": "https://www.instagram.com/bcf.australia/",
-        "facebook": "https://www.facebook.com/BCFAustralia",
-        "websiteContact": "https://www.bcf.com.au/contact-us"
-      },
-      "invalidChannels": {},
-      "identitySource": "official website contact path + Google buyer/contact query",
-      "channelPriority": 3,
-      "discoveredAt": "2026-07-14T04:02:10.362Z",
-      "targetRegion": "oceania",
-      "targetRegionScore": 0,
-      "contactChannelScore": 17,
-      "dealProbabilityScore": 178,
-      "priorityScore": 178,
-      "lastStatus": "sent_confirmed",
-      "lastEvidence": "facebook_message_sent_confirmed_composer_cleared",
-      "lastTouch": "2026-06-26T06:11:43.204Z"
-    },
-    {
-      "id": "google-customer-snowys-outdoors-website-contact",
-      "name": "Snowys Outdoors",
-      "company": "Snowys Outdoors",
-      "customerType": "key_account",
-      "discoveryMode": "autonomous_refill",
-      "country": "Australia",
-      "countryEn": "Australia",
-      "fitScore": 87,
-      "fitTier": "A",
-      "marketScore": 4.5,
-      "marketStatus": "open",
-      "agencyState": "open",
-      "agentCompany": "",
-      "keyword": "camping and hiking ecommerce retailer",
-      "role": "Camping gear buyer, ecommerce category manager, or outdoor accessories partnership contact.",
-      "background": "Australian camping and hiking retailer focused on camping gear, travel equipment, outdoor accessories, and ecommerce fulfillment.",
-      "buyerPersona": "Camping gear buyer, ecommerce category manager, or outdoor accessories partnership contact.",
-      "targetMarkets": "",
-      "excludedMarkets": "",
-      "productCategory": "camping and hiking ecommerce retailer",
-      "businessModel": "Retail Chain",
-      "productFit": "FLEXTAIL portable pumps, outdoor power, camping lighting and compact camping accessories",
-      "opportunity": "Australian camping and hiking retailer focused on camping gear, travel equipment, outdoor accessories, and ecommerce fulfillment.",
-      "linkedin_url": "",
-      "linkedin": "",
-      "publicEmail": "",
-      "contactEmail": "",
-      "vendorPortal": "https://www.snowys.com.au/contact-us",
-      "contactPhone": "",
-      "contactNote": "",
-      "publicEmailStatus": "",
-      "website": "https://www.snowys.com.au/",
-      "evidenceUrl": "https://www.google.com/search?q=%22Snowys%20Outdoors%22%20%22camping%20and%20hiking%20ecommerce%20retailer%22%20%22Australia%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "sourceEvidenceUrl": "https://www.snowys.com.au/",
-      "externalVerificationStatus": "",
-      "query": "https://www.google.com/search?q=%22Snowys%20Outdoors%22%20%22camping%20and%20hiking%20ecommerce%20retailer%22%20%22Australia%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "source": "google_customer_discovery",
-      "sourceType": "google",
-      "discoveryProvider": "google",
-      "channel": "",
-      "identityStatus": "verified",
-      "officialSocialProfileVerified": false,
-      "profiledAt": "",
-      "partnershipStatus": "",
-      "doNotOutreach": false,
-      "automationStatus": "",
-      "partnerNote": "",
-      "sendStatus": "",
-      "workingTime": {
-        "dueNow": true,
-        "timeZone": "Australia/Sydney",
-        "localTime": "Fri 11:05",
-        "window": "morning",
-        "nextBest": "now",
-        "weight": 1
-      },
-      "platform": "website_form",
-      "channelType": "website_form",
-      "platformUrl": "https://www.snowys.com.au/contact-us",
-      "url": "https://www.snowys.com.au/contact-us",
-      "contactUrl": "https://www.snowys.com.au/contact-us",
-      "contactSearchUrl": "https://www.google.com/search?q=site%3Awww.snowys.com.au%20%22Snowys%20Outdoors%22%20contact%20buyer%20wholesale%20email%20vendor",
-      "emailFrom": "leo@flextailgear.com",
-      "websiteContactSubject": "FLEXTAIL retail partnership | 2026 assortment",
-      "websiteContactMessage": "Dear Snowys Outdoors Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
-      "websiteContactFlow": "open_official_contact_us_fill_attach_auto_submit",
-      "action": "cooldown",
-      "reason": "previous_customer_development_no_repeat",
-      "alternateChannels": {
-        "linkedin": "",
-        "instagram": "https://www.instagram.com/snowys_outdoors/",
-        "facebook": "https://www.facebook.com/SnowysOutdoors/",
-        "websiteContact": "https://www.snowys.com.au/contact-us"
-      },
-      "invalidChannels": {},
-      "identitySource": "official website contact path + Google buyer/contact query",
-      "channelPriority": 3,
-      "discoveredAt": "2026-07-14T04:02:10.362Z",
-      "targetRegion": "oceania",
-      "targetRegionScore": 0,
-      "contactChannelScore": 17,
-      "dealProbabilityScore": 176,
-      "priorityScore": 176,
-      "lastStatus": "send_unconfirmed",
-      "lastEvidence": "facebook_send_clicked_but_confirmation_missing",
-      "lastTouch": "2026-07-14T08:08:24.977Z"
-    },
-    {
-      "id": "google-customer-macpac-website-contact",
-      "name": "Macpac",
-      "company": "Macpac",
-      "customerType": "key_account",
-      "discoveryMode": "autonomous_refill",
-      "country": "Australia",
-      "countryEn": "Australia",
-      "fitScore": 84,
-      "fitTier": "A",
-      "marketScore": 4.5,
-      "marketStatus": "open",
-      "agencyState": "open",
-      "agentCompany": "",
-      "keyword": "verified outdoor, camping and travel retail social refill channel",
-      "role": "Outdoor, camping, travel accessories, ecommerce or category buyer.",
-      "background": "Macpac is a qualified outdoor, camping, travel or sport retail prospect with category fit for FLEXTAIL portable outdoor electrics and Vollyc practical 3C products.",
-      "buyerPersona": "Outdoor, camping, travel accessories, ecommerce or category buyer.",
-      "targetMarkets": "",
-      "excludedMarkets": "",
-      "productCategory": "verified outdoor, camping and travel retail social refill channel",
-      "businessModel": "Retail Chain",
-      "productFit": "FLEXTAIL portable pumps, outdoor power, camping lighting and compact camping accessories",
-      "opportunity": "Macpac is a qualified outdoor, camping, travel or sport retail prospect with category fit for FLEXTAIL portable outdoor electrics and Vollyc practical 3C products.",
-      "linkedin_url": "",
-      "linkedin": "",
-      "publicEmail": "",
-      "contactEmail": "",
-      "vendorPortal": "https://www.macpac.com.au/",
-      "contactPhone": "",
-      "contactNote": "",
-      "publicEmailStatus": "",
-      "website": "https://www.macpac.com.au/",
-      "evidenceUrl": "https://www.google.com/search?q=%22Macpac%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22Australia%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "sourceEvidenceUrl": "verified outdoor retailer official website and public social profile refill",
-      "externalVerificationStatus": "",
-      "query": "https://www.google.com/search?q=%22Macpac%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22Australia%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "source": "google_customer_discovery",
-      "sourceType": "google",
-      "discoveryProvider": "google",
-      "channel": "",
-      "identityStatus": "verified",
-      "officialSocialProfileVerified": false,
-      "profiledAt": "",
-      "partnershipStatus": "",
-      "doNotOutreach": false,
-      "automationStatus": "",
-      "partnerNote": "",
-      "sendStatus": "",
-      "workingTime": {
-        "dueNow": true,
-        "timeZone": "Australia/Sydney",
-        "localTime": "Fri 11:05",
-        "window": "morning",
-        "nextBest": "now",
-        "weight": 1
-      },
-      "platform": "website_form",
-      "channelType": "website_form",
-      "platformUrl": "https://www.macpac.com.au/",
-      "url": "https://www.macpac.com.au/",
-      "contactUrl": "https://www.macpac.com.au/",
-      "contactSearchUrl": "https://www.google.com/search?q=site%3Awww.macpac.com.au%20%22Macpac%22%20contact%20buyer%20wholesale%20email%20vendor",
-      "emailFrom": "leo@flextailgear.com",
-      "websiteContactSubject": "FLEXTAIL retail partnership | 2026 assortment",
-      "websiteContactMessage": "Dear Macpac Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
-      "websiteContactFlow": "open_official_contact_us_fill_attach_auto_submit",
-      "action": "cooldown",
-      "reason": "previous_customer_development_no_repeat",
-      "alternateChannels": {
-        "linkedin": "",
-        "instagram": "https://www.instagram.com/macpac/",
-        "facebook": "https://www.facebook.com/macpac",
-        "websiteContact": "https://www.macpac.com.au/"
-      },
-      "invalidChannels": {},
-      "identitySource": "official homepage found; exact buyer/contact path still requires verification",
-      "channelPriority": 3,
-      "discoveredAt": "2026-07-16T05:03:53.170Z",
-      "targetRegion": "oceania",
-      "targetRegionScore": 0,
-      "contactChannelScore": 17,
-      "dealProbabilityScore": 173,
-      "priorityScore": 173,
-      "lastStatus": "sent_confirmed",
-      "lastEvidence": "instagram_message_sent_confirmed_composer_cleared;instagram_post_opened;post_liked;comment_submitted;follow_already_active",
-      "lastTouch": "2026-06-30T21:03:40.471Z"
-    },
-    {
-      "id": "google-customer-paddy-pallin-website-contact",
-      "name": "Paddy Pallin",
-      "company": "Paddy Pallin",
-      "customerType": "key_account",
-      "discoveryMode": "autonomous_refill",
-      "country": "Australia",
-      "countryEn": "Australia",
-      "fitScore": 84,
-      "fitTier": "A",
-      "marketScore": 4.5,
-      "marketStatus": "open",
-      "agencyState": "open",
-      "agentCompany": "",
-      "keyword": "verified outdoor, camping and travel retail social refill channel",
-      "role": "Outdoor, camping, travel accessories, ecommerce or category buyer.",
-      "background": "Paddy Pallin is a qualified outdoor, camping, travel or sport retail prospect with category fit for FLEXTAIL portable outdoor electrics and Vollyc practical 3C products.",
-      "buyerPersona": "Outdoor, camping, travel accessories, ecommerce or category buyer.",
-      "targetMarkets": "",
-      "excludedMarkets": "",
-      "productCategory": "verified outdoor, camping and travel retail social refill channel",
-      "businessModel": "Retail Chain",
-      "productFit": "FLEXTAIL portable pumps, outdoor power, camping lighting and compact camping accessories",
-      "opportunity": "Paddy Pallin is a qualified outdoor, camping, travel or sport retail prospect with category fit for FLEXTAIL portable outdoor electrics and Vollyc practical 3C products.",
-      "linkedin_url": "",
-      "linkedin": "",
-      "publicEmail": "",
-      "contactEmail": "",
-      "vendorPortal": "https://www.paddypallin.com.au/",
-      "contactPhone": "",
-      "contactNote": "",
-      "publicEmailStatus": "",
-      "website": "https://www.paddypallin.com.au/",
-      "evidenceUrl": "https://www.google.com/search?q=%22Paddy%20Pallin%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22Australia%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "sourceEvidenceUrl": "verified outdoor retailer official website and public social profile refill",
-      "externalVerificationStatus": "",
-      "query": "https://www.google.com/search?q=%22Paddy%20Pallin%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22Australia%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "source": "google_customer_discovery",
-      "sourceType": "google",
-      "discoveryProvider": "google",
-      "channel": "",
-      "identityStatus": "verified",
-      "officialSocialProfileVerified": false,
-      "profiledAt": "",
-      "partnershipStatus": "",
-      "doNotOutreach": false,
-      "automationStatus": "",
-      "partnerNote": "",
-      "sendStatus": "",
-      "workingTime": {
-        "dueNow": true,
-        "timeZone": "Australia/Sydney",
-        "localTime": "Fri 11:05",
-        "window": "morning",
-        "nextBest": "now",
-        "weight": 1
-      },
-      "platform": "website_form",
-      "channelType": "website_form",
-      "platformUrl": "https://www.paddypallin.com.au/",
-      "url": "https://www.paddypallin.com.au/",
-      "contactUrl": "https://www.paddypallin.com.au/",
-      "contactSearchUrl": "https://www.google.com/search?q=site%3Awww.paddypallin.com.au%20%22Paddy%20Pallin%22%20contact%20buyer%20wholesale%20email%20vendor",
-      "emailFrom": "leo@flextailgear.com",
-      "websiteContactSubject": "FLEXTAIL retail partnership | 2026 assortment",
-      "websiteContactMessage": "Dear Paddy Pallin Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
-      "websiteContactFlow": "open_official_contact_us_fill_attach_auto_submit",
-      "action": "cooldown",
-      "reason": "previous_customer_development_no_repeat",
-      "alternateChannels": {
-        "linkedin": "",
-        "instagram": "https://www.instagram.com/paddypallin/",
-        "facebook": "https://www.facebook.com/PaddyPallin",
-        "websiteContact": "https://www.paddypallin.com.au/"
-      },
-      "invalidChannels": {},
-      "identitySource": "official homepage found; exact buyer/contact path still requires verification",
-      "channelPriority": 3,
-      "discoveredAt": "2026-07-16T05:03:53.170Z",
-      "targetRegion": "oceania",
-      "targetRegionScore": 0,
-      "contactChannelScore": 17,
-      "dealProbabilityScore": 173,
-      "priorityScore": 173,
-      "lastStatus": "sent_confirmed",
-      "lastEvidence": "facebook_identity_verified;account_followed_confirmed;dm_send_clicked;composer_cleared;message_sent_alert;sent_message_visible_in_conversation",
-      "lastTouch": "2026-07-20T04:27:00.000Z"
-    },
-    {
-      "id": "google-customer-tentworld-australia-website-contact",
-      "name": "Tentworld Australia",
-      "company": "Tentworld Australia",
-      "customerType": "key_account",
-      "discoveryMode": "autonomous_refill",
-      "country": "Australia",
-      "countryEn": "Australia",
-      "fitScore": 84,
-      "fitTier": "A",
-      "marketScore": 4.5,
-      "marketStatus": "open",
-      "agencyState": "open",
-      "agentCompany": "",
-      "keyword": "verified outdoor, camping and travel retail social refill channel",
-      "role": "Outdoor, camping, travel accessories, ecommerce or category buyer.",
-      "background": "Tentworld Australia is a qualified outdoor, camping, travel or sport retail prospect with category fit for FLEXTAIL portable outdoor electrics and Vollyc practical 3C products.",
-      "buyerPersona": "Outdoor, camping, travel accessories, ecommerce or category buyer.",
-      "targetMarkets": "",
-      "excludedMarkets": "",
-      "productCategory": "verified outdoor, camping and travel retail social refill channel",
-      "businessModel": "Retail Chain",
-      "productFit": "FLEXTAIL portable pumps, outdoor power, camping lighting and compact camping accessories",
-      "opportunity": "Tentworld Australia is a qualified outdoor, camping, travel or sport retail prospect with category fit for FLEXTAIL portable outdoor electrics and Vollyc practical 3C products.",
-      "linkedin_url": "",
-      "linkedin": "",
-      "publicEmail": "",
-      "contactEmail": "",
-      "vendorPortal": "https://www.tentworld.com.au/",
-      "contactPhone": "",
-      "contactNote": "",
-      "publicEmailStatus": "",
-      "website": "https://www.tentworld.com.au/",
-      "evidenceUrl": "https://www.google.com/search?q=%22Tentworld%20Australia%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22Australia%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "sourceEvidenceUrl": "verified outdoor retailer official website and public social profile refill",
-      "externalVerificationStatus": "",
-      "query": "https://www.google.com/search?q=%22Tentworld%20Australia%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22Australia%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "source": "google_customer_discovery",
-      "sourceType": "google",
-      "discoveryProvider": "google",
-      "channel": "",
-      "identityStatus": "verified",
-      "officialSocialProfileVerified": false,
-      "profiledAt": "",
-      "partnershipStatus": "",
-      "doNotOutreach": false,
-      "automationStatus": "",
-      "partnerNote": "",
-      "sendStatus": "",
-      "workingTime": {
-        "dueNow": true,
-        "timeZone": "Australia/Sydney",
-        "localTime": "Fri 11:05",
-        "window": "morning",
-        "nextBest": "now",
-        "weight": 1
-      },
-      "platform": "website_form",
-      "channelType": "website_form",
-      "platformUrl": "https://www.tentworld.com.au/",
-      "url": "https://www.tentworld.com.au/",
-      "contactUrl": "https://www.tentworld.com.au/",
-      "contactSearchUrl": "https://www.google.com/search?q=site%3Awww.tentworld.com.au%20%22Tentworld%20Australia%22%20contact%20buyer%20wholesale%20email%20vendor",
-      "emailFrom": "leo@flextailgear.com",
-      "websiteContactSubject": "FLEXTAIL retail partnership | 2026 assortment",
-      "websiteContactMessage": "Dear Tentworld Australia Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
-      "websiteContactFlow": "open_official_contact_us_fill_attach_auto_submit",
-      "action": "cooldown",
-      "reason": "previous_customer_development_no_repeat",
-      "alternateChannels": {
-        "linkedin": "",
-        "instagram": "https://www.instagram.com/tentworldaustralia/",
-        "facebook": "https://www.facebook.com/Tentworld",
-        "websiteContact": "https://www.tentworld.com.au/"
-      },
-      "invalidChannels": {},
-      "identitySource": "official homepage found; exact buyer/contact path still requires verification",
-      "channelPriority": 3,
-      "discoveredAt": "2026-07-16T05:03:53.170Z",
-      "targetRegion": "oceania",
-      "targetRegionScore": 0,
-      "contactChannelScore": 17,
-      "dealProbabilityScore": 173,
-      "priorityScore": 173,
-      "lastStatus": "sent_confirmed",
-      "lastEvidence": "official_facebook_identity_verified;message_control_unique;send_clicked;facebook_alert_message_sent;outgoing_bubble_visible;composer_cleared",
-      "lastTouch": "2026-07-27T13:44:00.000+08:00"
-    },
-    {
-      "id": "google-customer-wild-earth-website-contact",
-      "name": "Wild Earth",
-      "company": "Wild Earth",
-      "customerType": "key_account",
-      "discoveryMode": "autonomous_refill",
-      "country": "Australia",
-      "countryEn": "Australia",
-      "fitScore": 84,
-      "fitTier": "A",
-      "marketScore": 4.5,
-      "marketStatus": "open",
-      "agencyState": "open",
-      "agentCompany": "",
-      "keyword": "verified outdoor, camping and travel retail social refill channel",
-      "role": "Outdoor, camping, travel accessories, ecommerce or category buyer.",
-      "background": "Wild Earth is a qualified outdoor, camping, travel or sport retail prospect with category fit for FLEXTAIL portable outdoor electrics and Vollyc practical 3C products.",
-      "buyerPersona": "Outdoor, camping, travel accessories, ecommerce or category buyer.",
-      "targetMarkets": "",
-      "excludedMarkets": "",
-      "productCategory": "verified outdoor, camping and travel retail social refill channel",
-      "businessModel": "Retail Chain",
-      "productFit": "FLEXTAIL portable pumps, outdoor power, camping lighting and compact camping accessories",
-      "opportunity": "Wild Earth is a qualified outdoor, camping, travel or sport retail prospect with category fit for FLEXTAIL portable outdoor electrics and Vollyc practical 3C products.",
-      "linkedin_url": "",
-      "linkedin": "",
-      "publicEmail": "",
-      "contactEmail": "",
-      "vendorPortal": "https://www.wildearth.com.au/",
-      "contactPhone": "",
-      "contactNote": "",
-      "publicEmailStatus": "",
-      "website": "https://www.wildearth.com.au/",
-      "evidenceUrl": "https://www.google.com/search?q=%22Wild%20Earth%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22Australia%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "sourceEvidenceUrl": "verified outdoor retailer official website and public social profile refill",
-      "externalVerificationStatus": "",
-      "query": "https://www.google.com/search?q=%22Wild%20Earth%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22Australia%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "source": "google_customer_discovery",
-      "sourceType": "google",
-      "discoveryProvider": "google",
-      "channel": "",
-      "identityStatus": "verified",
-      "officialSocialProfileVerified": false,
-      "profiledAt": "",
-      "partnershipStatus": "",
-      "doNotOutreach": false,
-      "automationStatus": "",
-      "partnerNote": "",
-      "sendStatus": "",
-      "workingTime": {
-        "dueNow": true,
-        "timeZone": "Australia/Sydney",
-        "localTime": "Fri 11:05",
-        "window": "morning",
-        "nextBest": "now",
-        "weight": 1
-      },
-      "platform": "website_form",
-      "channelType": "website_form",
-      "platformUrl": "https://www.wildearth.com.au/",
-      "url": "https://www.wildearth.com.au/",
-      "contactUrl": "https://www.wildearth.com.au/",
-      "contactSearchUrl": "https://www.google.com/search?q=site%3Awww.wildearth.com.au%20%22Wild%20Earth%22%20contact%20buyer%20wholesale%20email%20vendor",
-      "emailFrom": "leo@flextailgear.com",
-      "websiteContactSubject": "FLEXTAIL retail partnership | 2026 assortment",
-      "websiteContactMessage": "Dear Wild Earth Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
-      "websiteContactFlow": "open_official_contact_us_fill_attach_auto_submit",
-      "action": "cooldown",
-      "reason": "previous_customer_development_no_repeat",
-      "alternateChannels": {
-        "linkedin": "",
-        "instagram": "https://www.instagram.com/wildearthaustralia/",
-        "facebook": "https://www.facebook.com/wildearth",
-        "websiteContact": "https://www.wildearth.com.au/"
-      },
-      "invalidChannels": {},
-      "identitySource": "official homepage found; exact buyer/contact path still requires verification",
-      "channelPriority": 3,
-      "discoveredAt": "2026-07-16T05:03:53.170Z",
-      "targetRegion": "oceania",
-      "targetRegionScore": 0,
-      "contactChannelScore": 17,
-      "dealProbabilityScore": 173,
-      "priorityScore": 173,
-      "lastStatus": "sent_confirmed",
-      "lastEvidence": "facebook_identity_verified;dm_send_clicked;composer_cleared;message_sent_alert;recipient_auto_reply_received",
-      "lastTouch": "2026-07-20T05:41:00.000Z"
     },
     {
       "id": "google-customer-gecko-overland-website-contact",
@@ -21135,7 +20490,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "Asia/Shanghai",
-        "localTime": "Fri 09:05",
+        "localTime": "Fri 09:54",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -21237,7 +20592,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "Asia/Shanghai",
-        "localTime": "Fri 09:05",
+        "localTime": "Fri 09:54",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -21319,7 +20674,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "Asia/Shanghai",
-        "localTime": "Fri 09:05",
+        "localTime": "Fri 09:54",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -21401,7 +20756,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "Asia/Shanghai",
-        "localTime": "Fri 09:05",
+        "localTime": "Fri 09:54",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -21438,57 +20793,56 @@ window.DAILY_AUTOMATION_LATEST = {
       "lastTouch": "2026-06-26T09:22:45.266Z"
     },
     {
-      "linkedinUrl": "https://au.linkedin.com/company/anaconda-group-pty-ltd",
-      "founded": "2004",
-      "headquarters": "South Melbourne, Victoria, Australia",
-      "companyScale": "501-1,000 employees on LinkedIn; large Australian camping/adventure retail chain",
-      "coverage": "Australia",
-      "mainBrands": "Camping, fishing, hiking, 4WD, outdoor lifestyle and adventure retail brands",
-      "salesChannel": "Stores and ecommerce",
-      "buyingCapability": "High; Australian national outdoor chain under Spotlight Group holdings",
-      "decisionMaker": "Camping/4WD/outdoor equipment buyer or category manager",
-      "publicEmail": "info@spotlightgroup.com",
-      "publicEmailStatus": "Parent/group public contact email; direct buyer email not publicly verified.",
-      "contactPhone": "1300 558 990",
-      "vendorPortal": "https://help.anacondastores.com/hc/en-au",
-      "linkedinCompany": "https://au.linkedin.com/company/anaconda-group-pty-ltd",
-      "contactNote": "Use official enquiry form or group contact; request camping/4WD category buyer routing.",
+      "linkedinUrl": "https://nl.linkedin.com/company/bever",
+      "founded": "1977",
+      "headquarters": "Pijnacker, South Holland, Netherlands",
+      "companyScale": "Dutch outdoor retail chain; 40 stores reported by public company sources",
+      "coverage": "Netherlands",
+      "mainBrands": "Outdoor apparel, footwear, camping, hiking and travel gear brands",
+      "salesChannel": "Stores, ecommerce, customer service/contact form and social channels",
+      "buyingCapability": "Medium/High; national Netherlands outdoor specialist",
+      "decisionMaker": "Outdoor equipment/category buyer or B2B/partnership contact",
+      "publicEmail": "klantenservice@bever.nl",
+      "publicEmailStatus": "Official customer service email; buyer email not publicly verified.",
+      "contactPhone": "+31 85 888 50 88",
+      "vendorPortal": "https://www.bever.nl/klantenservice/contactgegevens.html",
+      "linkedinCompany": "https://nl.linkedin.com/company/bever",
+      "contactNote": "Use official email/contact form to request category buyer routing; WhatsApp/customer channels are for service.",
       "dataSources": [
-        "Anaconda LinkedIn",
-        "Anaconda help centre",
-        "Spotlight Group Anaconda page"
+        "Bever official contact page",
+        "Bever LinkedIn/public company sources"
       ],
-      "id": "google-customer-anaconda-facebook",
-      "name": "Anaconda",
-      "company": "Anaconda",
+      "id": "google-customer-bever-instagram",
+      "name": "Bever",
+      "company": "Bever",
       "customerType": "key_account",
       "discoveryMode": "baseline_verified_pool",
-      "country": "Australia",
-      "countryEn": "Australia",
-      "fitScore": 92,
-      "fitTier": "A+",
+      "country": "Netherlands",
+      "countryEn": "Netherlands",
+      "fitScore": 86,
+      "fitTier": "A",
       "marketScore": 4.5,
       "marketStatus": "open",
       "agencyState": "open",
       "agentCompany": "",
       "keyword": "outdoor retail chain",
-      "role": "Camping / 4WD / outdoor equipment buyer.",
-      "background": "Australian outdoor retailer for camping, hiking, fishing, 4WD, and outdoor lifestyle equipment.",
-      "buyerPersona": "Camping / 4WD / outdoor equipment buyer.",
+      "role": "Outdoor equipment buyer or category manager.",
+      "background": "Dutch outdoor retailer for hiking, camping, travel, and outdoor apparel/equipment.",
+      "buyerPersona": "Outdoor equipment buyer or category manager.",
       "targetMarkets": "",
       "excludedMarkets": "",
       "productCategory": "outdoor retail chain",
       "businessModel": "Retail Chain",
       "productFit": "FLEXTAIL portable pumps, outdoor power, camping lighting and compact camping accessories",
-      "opportunity": "Australian outdoor retailer for camping, hiking, fishing, 4WD, and outdoor lifestyle equipment.",
-      "linkedin_url": "https://au.linkedin.com/company/anaconda-group-pty-ltd",
-      "linkedin": "https://au.linkedin.com/company/anaconda-group-pty-ltd",
-      "contactEmail": "info@spotlightgroup.com",
-      "website": "https://www.anacondastores.com/",
-      "evidenceUrl": "https://www.google.com/search?q=%22Anaconda%22%20%22outdoor%20retail%20chain%22%20%22Australia%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "sourceEvidenceUrl": "https://www.anacondastores.com/",
+      "opportunity": "Dutch outdoor retailer for hiking, camping, travel, and outdoor apparel/equipment.",
+      "linkedin_url": "https://nl.linkedin.com/company/bever",
+      "linkedin": "https://nl.linkedin.com/company/bever",
+      "contactEmail": "klantenservice@bever.nl",
+      "website": "https://www.bever.nl/",
+      "evidenceUrl": "https://www.google.com/search?q=%22Bever%22%20%22outdoor%20retail%20chain%22%20%22Netherlands%22%20buyer%20OR%20wholesale%20OR%20contact",
+      "sourceEvidenceUrl": "https://www.bever.nl/",
       "externalVerificationStatus": "",
-      "query": "https://www.google.com/search?q=%22Anaconda%22%20%22outdoor%20retail%20chain%22%20%22Australia%22%20buyer%20OR%20wholesale%20OR%20contact",
+      "query": "https://www.google.com/search?q=%22Bever%22%20%22outdoor%20retail%20chain%22%20%22Netherlands%22%20buyer%20OR%20wholesale%20OR%20contact",
       "source": "google_customer_discovery",
       "sourceType": "google",
       "discoveryProvider": "google",
@@ -21503,36 +20857,678 @@ window.DAILY_AUTOMATION_LATEST = {
       "sendStatus": "",
       "workingTime": {
         "dueNow": true,
-        "timeZone": "Australia/Sydney",
-        "localTime": "Fri 11:05",
+        "timeZone": "Asia/Shanghai",
+        "localTime": "Fri 09:54",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
       },
-      "platform": "facebook",
-      "platformUrl": "https://www.facebook.com/AnacondaStores",
-      "url": "https://www.facebook.com/AnacondaStores",
+      "platform": "instagram",
+      "platformUrl": "https://www.instagram.com/bevernl/",
+      "url": "https://www.instagram.com/bevernl/",
       "action": "cooldown",
       "reason": "previous_customer_development_no_repeat",
       "alternateChannels": {
-        "linkedin": "https://au.linkedin.com/company/anaconda-group-pty-ltd",
-        "instagram": "https://www.instagram.com/anacondastores/",
-        "facebook": "https://www.facebook.com/AnacondaStores",
-        "websiteContact": "https://www.anacondastores.com/contact-us"
+        "linkedin": "https://nl.linkedin.com/company/bever",
+        "instagram": "https://www.instagram.com/bevernl/",
+        "facebook": "https://www.facebook.com/BeverNL",
+        "websiteContact": "https://www.bever.nl/klantenservice/contactgegevens.html"
+      },
+      "identitySource": "official website/social profile + Google background query",
+      "channelPriority": 1,
+      "discoveredAt": "2026-07-14T04:02:10.362Z",
+      "targetRegion": "europe",
+      "targetRegionScore": 45,
+      "contactChannelScore": 29,
+      "dealProbabilityScore": 232,
+      "priorityScore": 232,
+      "lastStatus": "sent_confirmed",
+      "lastEvidence": "facebook_message_sent_confirmed_composer_cleared;follow_not_available;like_not_available",
+      "lastTouch": "2026-06-26T09:22:45.266Z"
+    },
+    {
+      "id": "google-customer-4camping-instagram",
+      "name": "4Camping",
+      "company": "4Camping",
+      "customerType": "key_account",
+      "discoveryMode": "autonomous_refill",
+      "country": "Czech Republic",
+      "countryEn": "Czech Republic",
+      "fitScore": 84,
+      "fitTier": "A",
+      "marketScore": 4.5,
+      "marketStatus": "open",
+      "agencyState": "open",
+      "agentCompany": "",
+      "keyword": "verified outdoor, camping and travel retail social refill channel",
+      "role": "Outdoor, camping, travel accessories, ecommerce or category buyer.",
+      "background": "4Camping is a qualified outdoor, camping, travel or sport retail prospect with category fit for FLEXTAIL portable outdoor electrics and Vollyc practical 3C products.",
+      "buyerPersona": "Outdoor, camping, travel accessories, ecommerce or category buyer.",
+      "targetMarkets": "",
+      "excludedMarkets": "",
+      "productCategory": "verified outdoor, camping and travel retail social refill channel",
+      "businessModel": "Retail Chain",
+      "productFit": "FLEXTAIL portable pumps, outdoor power, camping lighting and compact camping accessories",
+      "opportunity": "4Camping is a qualified outdoor, camping, travel or sport retail prospect with category fit for FLEXTAIL portable outdoor electrics and Vollyc practical 3C products.",
+      "linkedin_url": "",
+      "linkedin": "",
+      "publicEmail": "",
+      "contactEmail": "",
+      "vendorPortal": "https://www.4camping.cz/",
+      "contactPhone": "",
+      "contactNote": "",
+      "publicEmailStatus": "",
+      "website": "https://www.4camping.cz/",
+      "evidenceUrl": "https://www.google.com/search?q=%224Camping%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22Czech%20Republic%22%20buyer%20OR%20wholesale%20OR%20contact",
+      "sourceEvidenceUrl": "verified outdoor retailer official website and public social profile refill",
+      "externalVerificationStatus": "",
+      "query": "https://www.google.com/search?q=%224Camping%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22Czech%20Republic%22%20buyer%20OR%20wholesale%20OR%20contact",
+      "source": "google_customer_discovery",
+      "sourceType": "google",
+      "discoveryProvider": "google",
+      "channel": "",
+      "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
+      "profiledAt": "",
+      "partnershipStatus": "",
+      "doNotOutreach": false,
+      "automationStatus": "",
+      "partnerNote": "",
+      "sendStatus": "",
+      "workingTime": {
+        "dueNow": true,
+        "timeZone": "Asia/Shanghai",
+        "localTime": "Fri 09:54",
+        "window": "morning",
+        "nextBest": "now",
+        "weight": 1
+      },
+      "platform": "instagram",
+      "platformUrl": "https://www.instagram.com/4camping.cz/",
+      "url": "https://www.instagram.com/4camping.cz/",
+      "action": "cooldown",
+      "reason": "previous_customer_development_no_repeat",
+      "alternateChannels": {
+        "linkedin": "",
+        "instagram": "https://www.instagram.com/4camping.cz/",
+        "facebook": "https://www.facebook.com/4camping.cz",
+        "websiteContact": "https://www.4camping.cz/"
+      },
+      "identitySource": "official website/social profile + Google background query",
+      "channelPriority": 1,
+      "discoveredAt": "2026-07-16T05:03:53.170Z",
+      "targetRegion": "europe",
+      "targetRegionScore": 45,
+      "contactChannelScore": 17,
+      "dealProbabilityScore": 218,
+      "priorityScore": 218,
+      "lastStatus": "sent_confirmed",
+      "lastEvidence": "instagram_identity_verified_4camping.cz;account_followed_confirmed;latest_collaboration_post_liked_confirmed;dm_send_clicked;composer_cleared;recipient_auto_reply_received;recipient_read_indicator_visible",
+      "lastTouch": "2026-07-20T03:35:13.708Z"
+    },
+    {
+      "id": "google-customer-camp-studio-thailand-instagram",
+      "name": "Camp Studio Thailand",
+      "company": "Camp Studio Thailand",
+      "customerType": "key_account",
+      "discoveryMode": "baseline_verified_pool",
+      "country": "Thailand",
+      "countryEn": "Thailand",
+      "fitScore": 86,
+      "fitTier": "A",
+      "marketScore": 4.5,
+      "marketStatus": "open",
+      "agencyState": "open",
+      "agentCompany": "",
+      "keyword": "camping retailer network",
+      "role": "Camping accessories buyer or supplier partnership manager.",
+      "background": "Thai camping retailer with a multi-store dealer network and an official contact form linked from its website.",
+      "buyerPersona": "Camping accessories buyer or supplier partnership manager.",
+      "targetMarkets": "",
+      "excludedMarkets": "",
+      "productCategory": "camping retailer network",
+      "businessModel": "Retail Chain",
+      "productFit": "FLEXTAIL portable pumps, outdoor power, camping lighting and compact camping accessories",
+      "opportunity": "Thai camping retailer with a multi-store dealer network and an official contact form linked from its website.",
+      "linkedin_url": "",
+      "linkedin": "",
+      "publicEmail": "",
+      "contactEmail": "",
+      "vendorPortal": "https://www.campstudio.co.th/contact",
+      "contactPhone": "",
+      "contactNote": "",
+      "publicEmailStatus": "",
+      "website": "https://www.campstudio.co.th/",
+      "evidenceUrl": "https://www.google.com/search?q=%22Camp%20Studio%20Thailand%22%20%22camping%20retailer%20network%22%20%22Thailand%22%20buyer%20OR%20wholesale%20OR%20contact",
+      "sourceEvidenceUrl": "https://www.campstudio.co.th/",
+      "externalVerificationStatus": "",
+      "query": "https://www.google.com/search?q=%22Camp%20Studio%20Thailand%22%20%22camping%20retailer%20network%22%20%22Thailand%22%20buyer%20OR%20wholesale%20OR%20contact",
+      "source": "google_customer_discovery",
+      "sourceType": "google",
+      "discoveryProvider": "google",
+      "channel": "",
+      "identityStatus": "verified",
+      "officialSocialProfileVerified": true,
+      "profiledAt": "",
+      "partnershipStatus": "",
+      "doNotOutreach": false,
+      "automationStatus": "",
+      "partnerNote": "",
+      "sendStatus": "",
+      "workingTime": {
+        "dueNow": true,
+        "timeZone": "Asia/Shanghai",
+        "localTime": "Fri 09:54",
+        "window": "morning",
+        "nextBest": "now",
+        "weight": 1
+      },
+      "platform": "instagram",
+      "platformUrl": "https://www.instagram.com/campstudio.chiangmai/",
+      "url": "https://www.instagram.com/campstudio.chiangmai/",
+      "action": "cooldown",
+      "reason": "previous_customer_development_no_repeat",
+      "alternateChannels": {
+        "linkedin": "",
+        "instagram": "https://www.instagram.com/campstudio.chiangmai/",
+        "facebook": "",
+        "websiteContact": "https://www.campstudio.co.th/contact"
+      },
+      "identitySource": "official website/social profile + Google background query",
+      "channelPriority": 1,
+      "discoveredAt": "2026-07-29T08:01:56.219Z",
+      "targetRegion": "southeast_asia",
+      "targetRegionScore": 35,
+      "contactChannelScore": 17,
+      "dealProbabilityScore": 210,
+      "priorityScore": 210,
+      "lastStatus": "send_unconfirmed",
+      "lastEvidence": "instagram_message_sent_confirmed_after_send_click;instagram_draft_inserted_verified;sentText:false;outgoingBubble:true;emptyComposer:true;follow_not_available;instagram_post_not_available;retry:instagram_post_opened;post_liked;comment_submitted;downgraded_missing_persisted_conversation_history",
+      "lastTouch": "2026-07-29T09:20:00.455Z"
+    },
+    {
+      "id": "google-customer-gecko-overland-instagram",
+      "name": "Gecko Overland",
+      "company": "Gecko Overland",
+      "customerType": "key_account",
+      "discoveryMode": "baseline_verified_pool",
+      "country": "United Arab Emirates",
+      "countryEn": "United Arab Emirates",
+      "fitScore": 80,
+      "fitTier": "A",
+      "marketScore": 4.5,
+      "marketStatus": "open",
+      "agencyState": "open",
+      "agentCompany": "",
+      "keyword": "camping and overland retailer",
+      "role": "Camping accessories buyer or retail partnership manager.",
+      "background": "Dubai camping and overland retailer with an official contact form and official Instagram profile.",
+      "buyerPersona": "Camping accessories buyer or retail partnership manager.",
+      "targetMarkets": "",
+      "excludedMarkets": "",
+      "productCategory": "camping and overland retailer",
+      "businessModel": "Retail Chain",
+      "productFit": "FLEXTAIL portable pumps, outdoor power, camping lighting and compact camping accessories",
+      "opportunity": "Dubai camping and overland retailer with an official contact form and official Instagram profile.",
+      "linkedin_url": "",
+      "linkedin": "",
+      "publicEmail": "",
+      "contactEmail": "",
+      "vendorPortal": "https://gecko-overland.com/contact/",
+      "contactPhone": "",
+      "contactNote": "",
+      "publicEmailStatus": "",
+      "website": "https://gecko-overland.com/",
+      "evidenceUrl": "https://www.google.com/search?q=%22Gecko%20Overland%22%20%22camping%20and%20overland%20retailer%22%20%22United%20Arab%20Emirates%22%20buyer%20OR%20wholesale%20OR%20contact",
+      "sourceEvidenceUrl": "https://gecko-overland.com/",
+      "externalVerificationStatus": "",
+      "query": "https://www.google.com/search?q=%22Gecko%20Overland%22%20%22camping%20and%20overland%20retailer%22%20%22United%20Arab%20Emirates%22%20buyer%20OR%20wholesale%20OR%20contact",
+      "source": "google_customer_discovery",
+      "sourceType": "google",
+      "discoveryProvider": "google",
+      "channel": "",
+      "identityStatus": "verified",
+      "officialSocialProfileVerified": true,
+      "profiledAt": "",
+      "partnershipStatus": "",
+      "doNotOutreach": false,
+      "automationStatus": "",
+      "partnerNote": "",
+      "sendStatus": "",
+      "workingTime": {
+        "dueNow": true,
+        "timeZone": "Asia/Shanghai",
+        "localTime": "Fri 09:54",
+        "window": "morning",
+        "nextBest": "now",
+        "weight": 1
+      },
+      "platform": "instagram",
+      "platformUrl": "https://www.instagram.com/geckooverland_uae/",
+      "url": "https://www.instagram.com/geckooverland_uae/",
+      "action": "cooldown",
+      "reason": "previous_customer_development_no_repeat",
+      "alternateChannels": {
+        "linkedin": "",
+        "instagram": "https://www.instagram.com/geckooverland_uae/",
+        "facebook": "",
+        "websiteContact": "https://gecko-overland.com/contact/"
+      },
+      "identitySource": "official website/social profile + Google background query",
+      "channelPriority": 1,
+      "discoveredAt": "2026-07-29T09:22:31.075Z",
+      "targetRegion": "other",
+      "targetRegionScore": 0,
+      "contactChannelScore": 17,
+      "dealProbabilityScore": 169,
+      "priorityScore": 169,
+      "lastStatus": "send_unconfirmed",
+      "lastEvidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:instagram;instagram_message_sent_confirmed_after_send_click;instagram_draft_inserted_verified;sentText:false;outgoingBubble:true;emptyComposer:true;;contact_path_strategy_v2;downgraded_missing_persisted_conversation_history",
+      "lastTouch": "2026-07-29T11:01:31.936Z"
+    },
+    {
+      "id": "google-customer-eet-group-website-contact",
+      "name": "EET Group",
+      "company": "EET Group",
+      "customerType": "agency",
+      "discoveryMode": "autonomous_refill",
+      "country": "Denmark",
+      "countryEn": "Denmark",
+      "fitScore": 99,
+      "fitTier": "A+",
+      "marketScore": 4.5,
+      "marketStatus": "open",
+      "agencyState": "open",
+      "agentCompany": "",
+      "keyword": "pan-European consumer electronics and value-added technology distributor",
+      "role": "Supplier onboarding, consumer electronics business line, vendor partnerships, or retail distribution director.",
+      "background": "Pan-European distributor operating across 24 markets with more than 30,000 buying customers, a supplier-onboarding form, and consumer electronics, travel accessories, gadgets and smart-home categories.",
+      "buyerPersona": "Supplier onboarding, consumer electronics business line, vendor partnerships, or retail distribution director.",
+      "targetMarkets": "Nordics, Germany, France, Italy, Spain, Portugal, United Kingdom and Ireland",
+      "excludedMarkets": "Switzerland, Romania, Greece and Hungary",
+      "productCategory": "pan-European consumer electronics and value-added technology distributor",
+      "businessModel": "Retail Chain",
+      "productFit": "FLEXTAIL portable pumps, outdoor power, camping lighting and compact camping accessories",
+      "opportunity": "Pan-European distributor operating across 24 markets with more than 30,000 buying customers, a supplier-onboarding form, and consumer electronics, travel accessories, gadgets and smart-home categories.",
+      "linkedin_url": "https://www.linkedin.com/company/eet-group-a-s/",
+      "linkedin": "https://www.linkedin.com/company/eet-group-a-s/",
+      "publicEmail": "sales@eet.eu",
+      "contactEmail": "sales@eet.eu",
+      "vendorPortal": "https://www.eetgroup.com/en-eu/eet/become-a-supplier",
+      "contactPhone": "",
+      "contactNote": "",
+      "publicEmailStatus": "",
+      "website": "https://www.eetgroup.com/en-eu/",
+      "evidenceUrl": "https://www.google.com/search?q=%22EET%20Group%22%20%22pan-European%20consumer%20electronics%20and%20value-added%20technology%20distributor%22%20%22Denmark%22%20buyer%20OR%20wholesale%20OR%20contact",
+      "sourceEvidenceUrl": "https://www.eetgroup.com/en-eu/eet/become-a-supplier",
+      "externalVerificationStatus": "",
+      "query": "https://www.google.com/search?q=%22EET%20Group%22%20%22pan-European%20consumer%20electronics%20and%20value-added%20technology%20distributor%22%20%22Denmark%22%20buyer%20OR%20wholesale%20OR%20contact",
+      "source": "google_customer_discovery",
+      "sourceType": "google",
+      "discoveryProvider": "google",
+      "channel": "",
+      "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
+      "profiledAt": "",
+      "partnershipStatus": "",
+      "doNotOutreach": false,
+      "automationStatus": "",
+      "partnerNote": "",
+      "sendStatus": "",
+      "workingTime": {
+        "dueNow": false,
+        "timeZone": "Europe/Copenhagen",
+        "localTime": "Fri 03:54",
+        "window": "outside_work_hours",
+        "nextBest": "Europe/Copenhagen morning",
+        "weight": 0
+      },
+      "platform": "website_form",
+      "channelType": "website_form",
+      "platformUrl": "https://www.eetgroup.com/en-eu/eet/become-a-supplier",
+      "url": "https://www.eetgroup.com/en-eu/eet/become-a-supplier",
+      "contactUrl": "https://www.eetgroup.com/en-eu/eet/become-a-supplier",
+      "contactSearchUrl": "https://www.google.com/search?q=site%3Awww.eetgroup.com%20%22EET%20Group%22%20contact%20buyer%20wholesale%20email%20vendor",
+      "emailFrom": "leo@flextailgear.com",
+      "websiteContactSubject": "FLEXTAIL retail partnership | 2026 assortment",
+      "websiteContactMessage": "Dear EET Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
+      "websiteContactFlow": "open_official_contact_us_fill_attach_auto_submit",
+      "action": "cooldown",
+      "reason": "previous_customer_development_no_repeat",
+      "alternateChannels": {
+        "linkedin": "https://www.linkedin.com/company/eet-group-a-s/",
+        "instagram": "",
+        "facebook": "",
+        "websiteContact": "https://www.eetgroup.com/en-eu/eet/become-a-supplier"
       },
       "invalidChannels": {},
-      "facebookStatus": "verified_official_page_candidate",
-      "identitySource": "official Facebook page candidate + official website + Google background query",
-      "channelPriority": 2,
-      "discoveredAt": "2026-07-14T04:02:10.362Z",
-      "targetRegion": "oceania",
-      "targetRegionScore": 0,
+      "identitySource": "official website contact path + Google buyer/contact query",
+      "channelPriority": 3,
+      "discoveredAt": "2026-07-20T13:25:02.177Z",
+      "targetRegion": "europe",
+      "targetRegionScore": 45,
       "contactChannelScore": 29,
-      "dealProbabilityScore": 193,
-      "priorityScore": 193,
+      "dealProbabilityScore": 270,
+      "priorityScore": 270,
       "lastStatus": "sent_confirmed",
-      "lastEvidence": "instagram_message_sent_confirmed_composer_cleared;instagram_post_opened;post_liked;comment_submitted;follow_already_active",
-      "lastTouch": "2026-06-30T13:16:18.266Z"
+      "lastEvidence": "alibaba_mail_sent_success_toast;sent_folder_record_confirmed;sent_folder_time:21:34;sent_folder_subject:FLEXTAIL distribution partnership | EET supplier review",
+      "lastTouch": "2026-07-20T13:34:00.000Z"
+    },
+    {
+      "linkedinUrl": "https://uk.linkedin.com/company/summit-international",
+      "founded": "",
+      "headquarters": "Basildon, Essex, United Kingdom",
+      "companyScale": "UK based importer and distributor for the outdoor B2B trade sector",
+      "coverage": "United Kingdom / Europe",
+      "mainBrands": "Camping, sports and outdoor leisure products for trade customers",
+      "salesChannel": "B2B distribution, showrooms, official contact form and trade website",
+      "buyingCapability": "High; outdoor B2B importer/distributor with retailer and wholesale channels",
+      "decisionMaker": "Brand partnerships, buying, or distribution director for outdoor products",
+      "publicEmail": "info@summitint.co",
+      "publicEmailStatus": "Official public contact email from Summit International contact page; buyer email not publicly verified.",
+      "contactPhone": "+44 (0) 1268 505 171",
+      "vendorPortal": "https://www.summitint.co/contact/",
+      "linkedinCompany": "https://uk.linkedin.com/company/summit-international",
+      "contactNote": "Use official contact form or info email to request buying/distribution contact routing.",
+      "dataSources": [
+        "Summit International official contact page",
+        "Summit International LinkedIn/public company sources"
+      ],
+      "id": "google-customer-summit-international-website-contact",
+      "name": "Summit International",
+      "company": "Summit International",
+      "customerType": "agency",
+      "discoveryMode": "autonomous_refill",
+      "country": "United Kingdom",
+      "countryEn": "United Kingdom",
+      "fitScore": 90,
+      "fitTier": "A+",
+      "marketScore": 4.5,
+      "marketStatus": "open",
+      "agencyState": "open",
+      "agentCompany": "",
+      "keyword": "outdoor importer and distributor",
+      "role": "Brand partnerships, buying, or distribution director for outdoor products.",
+      "background": "UK outdoor B2B importer and distributor supplying retailers, wholesalers, supermarkets, and independent businesses across camping and hiking categories.",
+      "buyerPersona": "Brand partnerships, buying, or distribution director for outdoor products.",
+      "targetMarkets": "",
+      "excludedMarkets": "",
+      "productCategory": "outdoor importer and distributor",
+      "businessModel": "Retail Chain",
+      "productFit": "FLEXTAIL portable pumps, outdoor power, camping lighting and compact camping accessories",
+      "opportunity": "UK outdoor B2B importer and distributor supplying retailers, wholesalers, supermarkets, and independent businesses across camping and hiking categories.",
+      "linkedin_url": "https://uk.linkedin.com/company/summit-international",
+      "linkedin": "https://uk.linkedin.com/company/summit-international",
+      "contactEmail": "info@summitint.co",
+      "website": "https://www.summitint.co/",
+      "evidenceUrl": "https://www.google.com/search?q=%22Summit%20International%22%20%22outdoor%20importer%20and%20distributor%22%20%22United%20Kingdom%22%20buyer%20OR%20wholesale%20OR%20contact",
+      "sourceEvidenceUrl": "https://www.summitint.co/",
+      "externalVerificationStatus": "",
+      "query": "https://www.google.com/search?q=%22Summit%20International%22%20%22outdoor%20importer%20and%20distributor%22%20%22United%20Kingdom%22%20buyer%20OR%20wholesale%20OR%20contact",
+      "source": "google_customer_discovery",
+      "sourceType": "google",
+      "discoveryProvider": "google",
+      "channel": "",
+      "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
+      "profiledAt": "2026-07-14T04:02:10.360Z",
+      "partnershipStatus": "",
+      "doNotOutreach": false,
+      "automationStatus": "",
+      "partnerNote": "",
+      "sendStatus": "",
+      "workingTime": {
+        "dueNow": false,
+        "timeZone": "Europe/London",
+        "localTime": "Fri 02:54",
+        "window": "outside_work_hours",
+        "nextBest": "Europe/London morning",
+        "weight": 0
+      },
+      "platform": "website_form",
+      "channelType": "website_form",
+      "platformUrl": "https://www.summitint.co/contact/",
+      "url": "https://www.summitint.co/contact/",
+      "contactUrl": "https://www.summitint.co/contact/",
+      "contactSearchUrl": "https://www.google.com/search?q=site%3Awww.summitint.co%20%22Summit%20International%22%20contact%20buyer%20wholesale%20email%20vendor",
+      "emailFrom": "leo@flextailgear.com",
+      "websiteContactSubject": "FLEXTAIL retail partnership | 2026 assortment",
+      "websiteContactMessage": "Dear Summit International Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
+      "websiteContactFlow": "open_official_contact_us_fill_attach_auto_submit",
+      "action": "cooldown",
+      "reason": "previous_customer_development_no_repeat",
+      "alternateChannels": {
+        "linkedin": "https://uk.linkedin.com/company/summit-international",
+        "instagram": "",
+        "facebook": "",
+        "websiteContact": "https://www.summitint.co/contact/"
+      },
+      "invalidChannels": {
+        "instagram": {
+          "url": "https://www.instagram.com/summitint/",
+          "status": "broken_profile_url",
+          "evidence": "Instagram reports this page is unavailable; use Facebook or official website contact instead."
+        },
+        "facebook": {
+          "url": "https://www.facebook.com/summitint",
+          "status": "broken_profile_url",
+          "evidence": "Facebook reports this content is unavailable; use official website contact or another verified company profile instead."
+        }
+      },
+      "identitySource": "official website contact path + Google buyer/contact query",
+      "channelPriority": 3,
+      "discoveredAt": "2026-07-14T04:02:10.362Z",
+      "targetRegion": "europe",
+      "targetRegionScore": 45,
+      "contactChannelScore": 29,
+      "dealProbabilityScore": 261,
+      "priorityScore": 261,
+      "lastStatus": "sent_confirmed",
+      "lastEvidence": "linkedin_following_confirmed;linkedin_dm_sent_confirmed;linkedin_thread_sent_at_2026-07-17T18:10:00+08:00",
+      "lastTouch": "2026-07-17T18:10:00+08:00"
+    },
+    {
+      "id": "google-customer-esprinet-group-website-contact",
+      "name": "Esprinet Group",
+      "company": "Esprinet Group",
+      "customerType": "agency",
+      "discoveryMode": "autonomous_refill",
+      "country": "Italy",
+      "countryEn": "Italy",
+      "fitScore": 99,
+      "fitTier": "A+",
+      "marketScore": 4.5,
+      "marketStatus": "open",
+      "agencyState": "open",
+      "agentCompany": "",
+      "keyword": "Southern Europe technology and consumer electronics distributor",
+      "role": "Supplier onboarding, producer partnerships, consumer electronics category, or vendor management director.",
+      "background": "Large Southern European technology and consumer electronics distributor serving about 30,000 resellers and working with more than 850 manufacturers.",
+      "buyerPersona": "Supplier onboarding, producer partnerships, consumer electronics category, or vendor management director.",
+      "targetMarkets": "Italy, Spain and Portugal",
+      "excludedMarkets": "Switzerland, Romania, Greece and Hungary",
+      "productCategory": "Southern Europe technology and consumer electronics distributor",
+      "businessModel": "Retail Chain",
+      "productFit": "FLEXTAIL portable pumps, outdoor power, camping lighting and compact camping accessories",
+      "opportunity": "Large Southern European technology and consumer electronics distributor serving about 30,000 resellers and working with more than 850 manufacturers.",
+      "linkedin_url": "https://www.linkedin.com/company/esprinet-group/",
+      "linkedin": "https://www.linkedin.com/company/esprinet-group/",
+      "publicEmail": "",
+      "contactEmail": "",
+      "vendorPortal": "https://www.esprinet.com/en/become-a-supplier/",
+      "contactPhone": "",
+      "contactNote": "",
+      "publicEmailStatus": "",
+      "website": "https://www.esprinet.com/en/",
+      "evidenceUrl": "https://www.google.com/search?q=%22Esprinet%20Group%22%20%22Southern%20Europe%20technology%20and%20consumer%20electronics%20distributor%22%20%22Italy%22%20buyer%20OR%20wholesale%20OR%20contact",
+      "sourceEvidenceUrl": "https://www.esprinet.com/en/become-a-supplier/",
+      "externalVerificationStatus": "",
+      "query": "https://www.google.com/search?q=%22Esprinet%20Group%22%20%22Southern%20Europe%20technology%20and%20consumer%20electronics%20distributor%22%20%22Italy%22%20buyer%20OR%20wholesale%20OR%20contact",
+      "source": "google_customer_discovery",
+      "sourceType": "google",
+      "discoveryProvider": "google",
+      "channel": "",
+      "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
+      "profiledAt": "",
+      "partnershipStatus": "",
+      "doNotOutreach": false,
+      "automationStatus": "",
+      "partnerNote": "",
+      "sendStatus": "",
+      "workingTime": {
+        "dueNow": false,
+        "timeZone": "Europe/Rome",
+        "localTime": "Fri 03:54",
+        "window": "outside_work_hours",
+        "nextBest": "Europe/Rome morning",
+        "weight": 0
+      },
+      "platform": "website_form",
+      "channelType": "website_form",
+      "platformUrl": "https://www.esprinet.com/en/become-a-supplier/",
+      "url": "https://www.esprinet.com/en/become-a-supplier/",
+      "contactUrl": "https://www.esprinet.com/en/become-a-supplier/",
+      "contactSearchUrl": "https://www.google.com/search?q=site%3Awww.esprinet.com%20%22Esprinet%20Group%22%20contact%20buyer%20wholesale%20email%20vendor",
+      "emailFrom": "leo@flextailgear.com",
+      "websiteContactSubject": "FLEXTAIL retail partnership | 2026 assortment",
+      "websiteContactMessage": "Dear Esprinet Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
+      "websiteContactFlow": "open_official_contact_us_fill_attach_auto_submit",
+      "action": "cooldown",
+      "reason": "previous_customer_development_no_repeat",
+      "alternateChannels": {
+        "linkedin": "https://www.linkedin.com/company/esprinet-group/",
+        "instagram": "",
+        "facebook": "",
+        "websiteContact": "https://www.esprinet.com/en/become-a-supplier/"
+      },
+      "invalidChannels": {},
+      "identitySource": "official website contact path + Google buyer/contact query",
+      "channelPriority": 3,
+      "discoveredAt": "2026-07-14T04:02:10.362Z",
+      "targetRegion": "europe",
+      "targetRegionScore": 45,
+      "contactChannelScore": 17,
+      "dealProbabilityScore": 258,
+      "priorityScore": 258,
+      "lastStatus": "send_unconfirmed",
+      "lastEvidence": "linkedin_send_clicked_but_confirmation_missing",
+      "lastTouch": "2026-07-14T06:21:55.239Z"
+    },
+    {
+      "founded": "1990",
+      "headquarters": "Kundl, Tyrol, Austria",
+      "companyScale": "Pan-European and Australian operations; automated logistics infrastructure exceeding 43,000 picks per day",
+      "businessModel": "Premium Value-Added Distributor / Brand Growth Accelerator",
+      "marketPosition": "Pan-European premium lifestyle and consumer electronics distribution leader",
+      "corePositioning": "International growth accelerator and distributor for premium lifestyle gear",
+      "industryPosition": "Established in 1990; expanded from Austria into pan-European distribution and took over Pioneer & Onkyo Europe distribution operations in 2018",
+      "coverage": "Europe and Australia",
+      "mainBrands": "GoPro, Marshall, TEAC, Esoteric, Pioneer, Onkyo, Braun Audio, JLab and other premium lifestyle/consumer electronics brands",
+      "productCategory": "Premium audio, consumer electronics, action gear, lifestyle technology, e-mobility, home appliances and accessories",
+      "buyingCapability": "Very high; pan-European demand planning, SAP/EDI retail integration, automated warehousing, distribution, ecommerce and marketplace management",
+      "decisionMaker": "Brand Operations Management Team, Brand Sales Director, vendor partnerships or category director",
+      "productFit": "Zero Power 10000C, Zero Lantern and Max Repeller S positioned as premium lifestyle technology accessories",
+      "productRationale": "FLEXTAIL design-led compact electronics can extend Aqipa action gear and premium lifestyle portfolios as high-margin accessories",
+      "crossCategoryPositioning": "Premium Lifestyle Tech Accessories for portable audio, travel, patio and action-gear users",
+      "buyerValue": "Award-winning design, high-margin add-on potential, pan-European compliance readiness and 2026 product pipeline",
+      "recommendedOpening": "Present FLEXTAIL as a premium lifestyle technology brand, not a low-cost camping-equipment supplier; lead with design awards, margins and EU compliance readiness",
+      "opportunity": "Use Aqipa as a pan-European growth partner for premium outdoor and lifestyle electronics across its retailer, ecommerce and key-account network",
+      "competition": "Existing premium accessory and lifestyle technology brands in Aqipa portfolio; differentiation must come from design, compact performance and margin",
+      "brandRisk": "High brand-fit threshold: packaging, content and sell-in materials must match Aqipa premium portfolio standards",
+      "complianceRisk": "EU battery/electronics review requires CE, RoHS, REACH, WEEE and UN38.3 documentation where applicable",
+      "commercialRisk": "Large distributor terms, market investment, exclusivity scope, rebates and payment terms require commercial review",
+      "decisionCycleRisk": "Likely multi-stage brand, category, compliance and commercial review; plan for a 3-6 month onboarding cycle",
+      "executiveConclusion": "Aqipa is not an Entry / Niche prospect. It is a premium pan-European value-added distributor and brand growth accelerator founded in 1990, with strong consumer-electronics, premium-audio, action-gear, ecommerce and logistics capabilities. FLEXTAIL should approach Aqipa as a premium lifestyle technology brand and pursue its Brand Operations Management or vendor-partnership team.",
+      "dataSources": [
+        "https://www.aqipa.com/en-FR/the-gear-guide/aqipa-news/aqipas-35-year-journey-from-tyrolean-garage-to-european-tech-powerhouse/",
+        "https://www.aqipa.com/en-IT",
+        "https://support.aqipa.com/en-US/kb/articles/anfrage-partner-werden",
+        "https://www.aqipa.com/en-GB/the-gear-guide/insights/challenges-pan-european-distribution/",
+        "https://support.aqipa.com/en-GB/kb/articles/pdf/aqipa-high-end-esoteric-webshop"
+      ],
+      "id": "google-customer-aqipa-website-contact",
+      "name": "Aqipa",
+      "company": "Aqipa",
+      "customerType": "agency",
+      "discoveryMode": "autonomous_refill",
+      "country": "Austria",
+      "countryEn": "Austria",
+      "fitScore": 98,
+      "fitTier": "A+",
+      "marketScore": 4.5,
+      "marketStatus": "open",
+      "agencyState": "open",
+      "agentCompany": "",
+      "keyword": "pan-European premium consumer electronics and action gear distributor",
+      "role": "Brand Operations Management, vendor partnerships, distribution markets, or category director.",
+      "background": "Pan-European value-added distributor and brand growth accelerator for premium consumer electronics, lifestyle, accessories, home appliances, e-mobility, and action gear.",
+      "buyerPersona": "Brand Operations Management, vendor partnerships, distribution markets, or category director.",
+      "targetMarkets": "Germany, Austria, France, Italy, Spain, Portugal, United Kingdom and Nordics",
+      "excludedMarkets": "Switzerland, Romania, Greece, Hungary, Netherlands, Belgium, Poland, Czechia, Slovakia, Estonia, Lithuania and Slovenia",
+      "linkedin_url": "",
+      "linkedin": "",
+      "publicEmail": "",
+      "contactEmail": "",
+      "vendorPortal": "https://support.aqipa.com/en-US/new-ticket",
+      "contactPhone": "",
+      "contactNote": "",
+      "publicEmailStatus": "",
+      "website": "https://www.aqipa.com/",
+      "evidenceUrl": "https://www.google.com/search?q=%22Aqipa%22%20%22pan-European%20premium%20consumer%20electronics%20and%20action%20gear%20distributor%22%20%22Austria%22%20buyer%20OR%20wholesale%20OR%20contact",
+      "sourceEvidenceUrl": "https://support.aqipa.com/en-US/kb/articles/anfrage-partner-werden",
+      "externalVerificationStatus": "",
+      "query": "https://www.google.com/search?q=%22Aqipa%22%20%22pan-European%20premium%20consumer%20electronics%20and%20action%20gear%20distributor%22%20%22Austria%22%20buyer%20OR%20wholesale%20OR%20contact",
+      "source": "google_customer_discovery",
+      "sourceType": "google",
+      "discoveryProvider": "google",
+      "channel": "",
+      "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
+      "profiledAt": "2026-07-15T12:52:31.390Z",
+      "partnershipStatus": "",
+      "doNotOutreach": false,
+      "automationStatus": "",
+      "partnerNote": "",
+      "sendStatus": "",
+      "workingTime": {
+        "dueNow": false,
+        "timeZone": "Europe/Vienna",
+        "localTime": "Fri 03:54",
+        "window": "outside_work_hours",
+        "nextBest": "Europe/Vienna morning",
+        "weight": 0
+      },
+      "platform": "website_form",
+      "channelType": "website_form",
+      "platformUrl": "https://support.aqipa.com/en-US/new-ticket",
+      "url": "https://support.aqipa.com/en-US/new-ticket",
+      "contactUrl": "https://support.aqipa.com/en-US/new-ticket",
+      "contactSearchUrl": "https://www.google.com/search?q=site%3Awww.aqipa.com%20%22Aqipa%22%20contact%20buyer%20wholesale%20email%20vendor",
+      "emailFrom": "leo@flextailgear.com",
+      "websiteContactSubject": "FLEXTAIL retail partnership | 2026 assortment",
+      "websiteContactMessage": "Dear Aqipa Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
+      "websiteContactFlow": "open_official_contact_us_fill_attach_auto_submit",
+      "action": "cooldown",
+      "reason": "previous_customer_development_no_repeat",
+      "alternateChannels": {
+        "linkedin": "",
+        "instagram": "https://www.instagram.com/aqipa.gearguru/",
+        "facebook": "",
+        "websiteContact": "https://support.aqipa.com/en-US/new-ticket"
+      },
+      "invalidChannels": {},
+      "identitySource": "official homepage found; exact buyer/contact path still requires verification",
+      "channelPriority": 3,
+      "discoveredAt": "2026-07-14T04:02:10.362Z",
+      "targetRegion": "europe",
+      "targetRegionScore": 45,
+      "contactChannelScore": 17,
+      "dealProbabilityScore": 257,
+      "priorityScore": 257,
+      "lastStatus": "sent_confirmed",
+      "lastEvidence": "instagram_message_sent_confirmed_after_send_click;instagram_draft_inserted_verified;sentText:false;outgoingBubble:false;emptyComposer:true;follow_not_available;instagram_post_opened;post_liked;comment_submitted",
+      "lastTouch": "2026-07-15T10:15:32.125Z"
     }
   ],
   "scheduledLater": [],

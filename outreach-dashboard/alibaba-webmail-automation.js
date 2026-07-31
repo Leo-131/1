@@ -135,6 +135,19 @@ function composeFillExpression({ recipient, subject, text } = {}) {
     setValue(recipientInput, recipient);
     recipientInput.dispatchEvent(new KeyboardEvent('keydown', { bubbles: true, key: 'Enter', code: 'Enter', keyCode: 13, which: 13 }));
     recipientInput.dispatchEvent(new KeyboardEvent('keyup', { bubbles: true, key: 'Enter', code: 'Enter', keyCode: 13, which: 13 }));
+    const recipientNeedle = recipient.toLowerCase();
+    const recipientContainer = recipientInput.closest?.('[class*="recipient"],[class*="address"],[class*="select"],[class*="mail"]')
+      || recipientInput.parentElement?.parentElement
+      || recipientInput.parentElement;
+    const committedRecipientSignals = [
+      recipientContainer?.innerText,
+      recipientContainer?.textContent,
+      recipientContainer?.getAttribute?.('title'),
+      recipientContainer?.getAttribute?.('data-value'),
+      recipientContainer?.getAttribute?.('data-email'),
+      recipientInput.ownerDocument?.body?.innerText,
+    ].filter(Boolean).map(value => String(value).toLowerCase());
+    const recipientCommittedMatch = committedRecipientSignals.some(value => value.includes(recipientNeedle));
     setValue(subjectInput, subject);
     editorBody.focus();
     editorBody.innerText = bodyText;
@@ -147,6 +160,7 @@ function composeFillExpression({ recipient, subject, text } = {}) {
       evidence: 'alibaba_webmail_content_inserted_recipient_control_verified',
       recipient,
       recipientValueMatch: String(recipientInput.value || '').toLowerCase().includes(recipient.toLowerCase()),
+      recipientCommittedMatch,
       subject,
       bodyLength: bodyText.length,
       recipientControl: {
@@ -185,7 +199,7 @@ function composeInspectionExpression({ recipient, subject, text } = {}) {
       }
     }
     const recipientText = roots.map(root => root.body?.innerText || root.host?.innerText || '').join('\\n');
-    const recipientSignals = roots.flatMap(root => Array.from(root.querySelectorAll('input,[title],[aria-label],[data-email],[data-value]')))
+    const recipientSignals = roots.flatMap(root => Array.from(root.querySelectorAll('input,[title],[aria-label],[data-email],[data-value],[class*="recipient"],[class*="address"],[class*="select"]')))
       .flatMap(element => [
         element.value,
         element.getAttribute?.('title'),
