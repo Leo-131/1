@@ -354,6 +354,7 @@ function blockingAutomationResultFor(item) {
   }
   const sameDayFailedAttempts = results
     .filter(result => result && result.status === 'failed_open' && isSameAutomationDay(result.timestamp))
+    .filter(result => !isFixedAlibabaRecipientVerifierFailure(result))
     .filter(result => !(exactSocialHandleMatchesCompany(item) && isFixedIdentityVerifierFailure(result)))
     .filter(result => setsIntersect(exactKeys, automationExactKeys(result))
       || (setsIntersect(companyKeys, automationCompanyKeys(result))
@@ -529,6 +530,7 @@ function itemBlockedBySameDayCompany(item, companyKeys) {
 
 function failedOpenResultShouldBlockRetry(result = {}) {
   const evidence = String(result.evidence || '').toLowerCase();
+  if (isFixedAlibabaRecipientVerifierFailure(result)) return false;
   const temporarySafetyFailure = /captcha_or_human_verification|platform_rate_limit_or_action_block|dedicated_browser_login_required|identity_not_verified_fail_closed/.test(evidence);
   if (temporarySafetyFailure) {
     const failedAt = Date.parse(result.timestamp || result.resultCheckedAt || '');
@@ -559,6 +561,16 @@ function failedOpenResultShouldBlockRetry(result = {}) {
   ];
   if (hardFailures.some(fragment => evidence.includes(fragment))) return true;
   return true;
+}
+
+function isFixedAlibabaRecipientVerifierFailure(result = {}) {
+  const evidence = String(result.evidence || '').toLowerCase();
+  if (/message_sent|send_clicked_but_confirmation_missing|submit_clicked/i.test(evidence)) return false;
+  return evidence.includes('alibaba_webmail_draft_verification_failed')
+    && evidence.includes('recipientready:false')
+    && evidence.includes('subjectready:true')
+    && evidence.includes('bodyready:true')
+    && evidence.includes('ant-select-selection-search-input');
 }
 
 function isFixedIdentityVerifierFailure(result = {}) {
