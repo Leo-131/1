@@ -16,7 +16,7 @@
   "mode": "serial-single-target",
   "batchMode": "parallel-batches",
   "parallelLimit": 1,
-  "limit": 25,
+  "limit": 13,
   "queueDate": "2026-07-31",
   "queueSource": "dailyPotentialPool",
   "executed": [
@@ -29,7 +29,7 @@
       "ok": false,
       "sendStatus": "failed_open",
       "evidence": "verified_email_auto_send_no_manual_review;alibaba_webmail_content_inserted_recipient_control_verified;alibaba_webmail_draft_verification_failed;recipientReady:false;subjectReady:true;bodyReady:true;recipient_stage_missing;recipientControl:INPUT,search,combobox,ant-select-selection-search-input hide-clear;recipientControlXY:0,0;recipientControlShadow:false;composer_preserved_for_technical_evidence:true;contact_path_strategy_v2",
-      "timestamp": "2026-07-31T02:16:02.019Z",
+      "timestamp": "2026-07-31T04:06:00.948Z",
       "chromeOpen": null,
       "result": {
         "ok": false,
@@ -55,7 +55,7 @@
       "ok": false,
       "sendStatus": "failed_open",
       "evidence": "verified_email_auto_send_no_manual_review;alibaba_webmail_content_inserted_recipient_control_verified;alibaba_webmail_draft_verification_failed;recipientReady:false;subjectReady:true;bodyReady:true;recipient_stage_missing;recipientControl:INPUT,search,combobox,ant-select-selection-search-input hide-clear;recipientControlXY:0,0;recipientControlShadow:false;composer_preserved_for_technical_evidence:true;contact_path_strategy_v2",
-      "timestamp": "2026-07-31T02:16:14.240Z",
+      "timestamp": "2026-07-31T04:06:14.486Z",
       "chromeOpen": null,
       "result": {
         "ok": false,
@@ -81,7 +81,7 @@
       "ok": false,
       "sendStatus": "failed_open",
       "evidence": "verified_email_auto_send_no_manual_review;alibaba_webmail_content_inserted_recipient_control_verified;alibaba_webmail_draft_verification_failed;recipientReady:false;subjectReady:true;bodyReady:true;recipient_stage_missing;recipientControl:INPUT,search,combobox,ant-select-selection-search-input hide-clear;recipientControlXY:0,0;recipientControlShadow:false;composer_preserved_for_technical_evidence:true;contact_path_strategy_v2",
-      "timestamp": "2026-07-31T02:16:26.001Z",
+      "timestamp": "2026-07-31T04:06:26.838Z",
       "chromeOpen": null,
       "result": {
         "ok": false,
@@ -107,7 +107,7 @@
       "ok": false,
       "sendStatus": "failed_open",
       "evidence": "verified_email_auto_send_no_manual_review;alibaba_webmail_content_inserted_recipient_control_verified;alibaba_webmail_draft_verification_failed;recipientReady:false;subjectReady:true;bodyReady:true;recipient_stage_missing;recipientControl:INPUT,search,combobox,ant-select-selection-search-input hide-clear;recipientControlXY:0,0;recipientControlShadow:false;composer_preserved_for_technical_evidence:true;contact_path_strategy_v2",
-      "timestamp": "2026-07-31T02:16:38.668Z",
+      "timestamp": "2026-07-31T04:06:38.392Z",
       "chromeOpen": null,
       "result": {
         "ok": false,
@@ -135,7 +135,7 @@
       "ok": false,
       "sendStatus": "failed_open",
       "evidence": "verified_email_auto_send_no_manual_review;alibaba_webmail_content_inserted_recipient_control_verified;alibaba_webmail_draft_verification_failed;recipientReady:false;subjectReady:true;bodyReady:true;recipient_stage_missing;recipientControl:INPUT,search,combobox,ant-select-selection-search-input hide-clear;recipientControlXY:0,0;recipientControlShadow:false;composer_preserved_for_technical_evidence:true;contact_path_strategy_v2",
-      "timestamp": "2026-07-31T02:16:02.019Z",
+      "timestamp": "2026-07-31T04:06:00.948Z",
       "chromeOpen": null,
       "result": {
         "ok": false,
@@ -161,7 +161,7 @@
       "ok": false,
       "sendStatus": "failed_open",
       "evidence": "verified_email_auto_send_no_manual_review;alibaba_webmail_content_inserted_recipient_control_verified;alibaba_webmail_draft_verification_failed;recipientReady:false;subjectReady:true;bodyReady:true;recipient_stage_missing;recipientControl:INPUT,search,combobox,ant-select-selection-search-input hide-clear;recipientControlXY:0,0;recipientControlShadow:false;composer_preserved_for_technical_evidence:true;contact_path_strategy_v2",
-      "timestamp": "2026-07-31T02:16:14.240Z",
+      "timestamp": "2026-07-31T04:06:14.486Z",
       "chromeOpen": null,
       "result": {
         "ok": false,
@@ -187,7 +187,7 @@
       "ok": false,
       "sendStatus": "failed_open",
       "evidence": "verified_email_auto_send_no_manual_review;alibaba_webmail_content_inserted_recipient_control_verified;alibaba_webmail_draft_verification_failed;recipientReady:false;subjectReady:true;bodyReady:true;recipient_stage_missing;recipientControl:INPUT,search,combobox,ant-select-selection-search-input hide-clear;recipientControlXY:0,0;recipientControlShadow:false;composer_preserved_for_technical_evidence:true;contact_path_strategy_v2",
-      "timestamp": "2026-07-31T02:16:26.001Z",
+      "timestamp": "2026-07-31T04:06:26.838Z",
       "chromeOpen": null,
       "result": {
         "ok": false,
@@ -213,7 +213,7 @@
       "ok": false,
       "sendStatus": "failed_open",
       "evidence": "verified_email_auto_send_no_manual_review;alibaba_webmail_content_inserted_recipient_control_verified;alibaba_webmail_draft_verification_failed;recipientReady:false;subjectReady:true;bodyReady:true;recipient_stage_missing;recipientControl:INPUT,search,combobox,ant-select-selection-search-input hide-clear;recipientControlXY:0,0;recipientControlShadow:false;composer_preserved_for_technical_evidence:true;contact_path_strategy_v2",
-      "timestamp": "2026-07-31T02:16:38.668Z",
+      "timestamp": "2026-07-31T04:06:38.392Z",
       "chromeOpen": null,
       "result": {
         "ok": false,
@@ -233,52 +233,22 @@
   ],
   "skipped": [
     {
-      "id": "google-customer-left-point-distribution-website-contact",
-      "company": "Left Point Distribution",
-      "action": "email_priority",
-      "reason": "official_website_contact_channel"
-    },
-    {
-      "id": "google-customer-obelink-website-contact",
-      "company": "Obelink",
-      "action": "email_priority",
-      "reason": "official_website_contact_channel"
-    },
-    {
-      "id": "google-customer-de-wit-schijndel-website-contact",
-      "company": "De Wit Schijndel",
-      "action": "verify_target",
-      "reason": "homepage_only_contact_path_requires_verification"
-    },
-    {
-      "id": "google-customer-outdoorxl-website-contact",
-      "company": "OutdoorXL",
-      "action": "verify_target",
-      "reason": "homepage_only_contact_path_requires_verification"
-    },
-    {
-      "id": "google-customer-kampeerwereld-hendriks-website-contact",
-      "company": "Kampeerwereld Hendriks",
-      "action": "verify_target",
-      "reason": "homepage_only_contact_path_requires_verification"
-    },
-    {
-      "id": "google-customer-outdoor-specialist-website-contact",
-      "company": "Outdoor Specialist",
-      "action": "verify_target",
-      "reason": "homepage_only_contact_path_requires_verification"
-    },
-    {
       "id": "google-customer-bivouac-outdoor-website-contact",
       "company": "Bivouac Outdoor",
       "action": "verify_target",
       "reason": "homepage_only_contact_path_requires_verification"
     },
     {
-      "id": "google-customer-tentworld-nz-website-contact",
-      "company": "Tentworld NZ",
-      "action": "verify_target",
-      "reason": "homepage_only_contact_path_requires_verification"
+      "id": "google-customer-wildfire-sports-website-contact",
+      "company": "Wildfire Sports",
+      "action": "email_priority",
+      "reason": "official_website_contact_channel"
+    },
+    {
+      "id": "google-customer-outdoor-nature-website-contact",
+      "company": "Outdoor Nature",
+      "action": "email_priority",
+      "reason": "official_website_contact_channel"
     },
     {
       "id": "google-customer-tentworld-nz-facebook",
@@ -341,8 +311,20 @@
       "reason": "official_website_contact_channel"
     },
     {
+      "id": "google-customer-left-point-distribution-website-contact",
+      "company": "Left Point Distribution",
+      "action": "email_priority",
+      "reason": "official_website_contact_channel"
+    },
+    {
       "id": "google-customer-outnorth-website-contact",
       "company": "Outnorth",
+      "action": "email_priority",
+      "reason": "official_website_contact_channel"
+    },
+    {
+      "id": "google-customer-obelink-website-contact",
+      "company": "Obelink",
       "action": "email_priority",
       "reason": "official_website_contact_channel"
     },
@@ -379,6 +361,12 @@
     {
       "id": "google-customer-barrabes-website-contact",
       "company": "Barrabes",
+      "action": "verify_target",
+      "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
+      "id": "google-customer-de-wit-schijndel-website-contact",
+      "company": "De Wit Schijndel",
       "action": "verify_target",
       "reason": "homepage_only_contact_path_requires_verification"
     },
@@ -425,6 +413,12 @@
       "reason": "homepage_only_contact_path_requires_verification"
     },
     {
+      "id": "google-customer-outdoorxl-website-contact",
+      "company": "OutdoorXL",
+      "action": "verify_target",
+      "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
       "id": "google-customer-spejder-sport-website-contact",
       "company": "Spejder Sport",
       "action": "verify_target",
@@ -449,6 +443,12 @@
       "reason": "homepage_only_contact_path_requires_verification"
     },
     {
+      "id": "google-customer-kampeerwereld-hendriks-website-contact",
+      "company": "Kampeerwereld Hendriks",
+      "action": "verify_target",
+      "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
       "id": "google-customer-sportpursuit-website-contact",
       "company": "SportPursuit",
       "action": "verify_target",
@@ -457,6 +457,12 @@
     {
       "id": "google-customer-rock-creek-website-contact",
       "company": "Rock/Creek",
+      "action": "verify_target",
+      "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
+      "id": "google-customer-outdoor-specialist-website-contact",
+      "company": "Outdoor Specialist",
       "action": "verify_target",
       "reason": "homepage_only_contact_path_requires_verification"
     },
@@ -567,18 +573,6 @@
       "company": "Durango Outdoor Exchange",
       "action": "verify_target",
       "reason": "homepage_only_contact_path_requires_verification"
-    },
-    {
-      "id": "google-customer-wildfire-sports-website-contact",
-      "company": "Wildfire Sports",
-      "action": "email_priority",
-      "reason": "official_website_contact_channel"
-    },
-    {
-      "id": "google-customer-outdoor-nature-website-contact",
-      "company": "Outdoor Nature",
-      "action": "email_priority",
-      "reason": "official_website_contact_channel"
     },
     {
       "id": "google-customer-transa-website-contact",
@@ -1412,7 +1406,7 @@
     {
       "reason": "homepage_only_contact_path_requires_verification",
       "status": "skipped",
-      "count": 89
+      "count": 88
     },
     {
       "reason": "missing_verified_profile_url",
@@ -1441,7 +1435,7 @@
     }
   ],
   "blockerCounts": {
-    "homepage_only_contact_path_requires_verification": 89,
+    "homepage_only_contact_path_requires_verification": 88,
     "missing_verified_profile_url": 32,
     "concrete_google_discovered_major_customer_facebook": 26,
     "official_website_contact_channel": 26,
@@ -1458,7 +1452,7 @@
     "action": "Add more verified high-ICP sources or unblock existing website/social leads."
   },
   "platformCircuitState": {},
-  "userVisibleStatus": "Customer development was not performed. Blockers: homepage_only_contact_path_requires_verification (89); missing_verified_profile_url (32); concrete_google_discovered_major_customer_facebook (26).",
+  "userVisibleStatus": "Customer development was not performed. Blockers: homepage_only_contact_path_requires_verification (88); missing_verified_profile_url (32); concrete_google_discovered_major_customer_facebook (26).",
   "recoveryHint": "Refill the high-ICP pool with 1 verified leads or unblock existing website/social leads before the next run. Add a verified Facebook or Instagram profile URL before retrying social outreach. Confirm the official social profile and safe message entry before rerunning Google-discovered social outreach.",
   "recoveryActions": [
     {
@@ -1489,12 +1483,12 @@
     "stderr": "",
     "error": "",
     "visibility": {
-      "updatedAt": "2026-07-31T02:16:40.133Z",
+      "updatedAt": "2026-07-31T04:06:42.954Z",
       "source": "main-refreshDailyAutomationArtifacts",
       "runDate": "2026-07-31",
-      "artifactGeneratedAt": "2026-07-31T02:16:39.002Z",
-      "executionGeneratedAt": "2026-07-31T01:55:29.368Z",
-      "githubSyncUpdatedAt": "2026-07-31T01:55:51.303Z",
+      "artifactGeneratedAt": "2026-07-31T04:06:39.214Z",
+      "executionGeneratedAt": "2026-07-31T02:16:40.577Z",
+      "githubSyncUpdatedAt": "2026-07-31T02:17:06.861Z",
       "counts": {
         "dailyQueue": 99,
         "googleDiscovered": 75,
@@ -1562,6 +1556,6 @@
       "ALIBABA_SMTP_SECURITY_PASSWORD"
     ]
   },
-  "ledgerReconciliationCount": 0,
-  "completedAt": "2026-07-31T02:16:40.577Z"
+  "ledgerReconciliationCount": 4,
+  "completedAt": "2026-07-31T04:06:44.964Z"
 }
