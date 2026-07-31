@@ -576,7 +576,8 @@ const DIRECTORY_REFILL_CANDIDATES = [
 }));
 
 const DIRECTORY_PUBLIC_CONTACT_ENRICHMENT = {
-  'Wildfire Sports': ['enquiries@wildfiresports.com.au', 'Official public business email on the Wildfire Sports contact page; route to category buyer or vendor-review owner.'],
+  'Tentworld': ['contact@tentworld.com.au', 'Official public company-domain email published by Tentworld; route the supplier proposal to the category buyer or vendor-review owner.', 'https://www.tentworld.com.au/contact-us'],
+  'Wildfire Sports': ['enquiries@wildfiresports.com.au', 'Official public business email on the Wildfire Sports contact page; route to category buyer or vendor-review owner.', 'https://www.wildfiresports.com.au/contact-us'],
   'Bivouac Outdoor': ['web@bivouac.co.nz', 'Official public business email on the Bivouac Outdoor contact page; route to category buyer or vendor-review owner.'],
   'Further Faster': ['hello@furtherfaster.co.nz', 'Official public business email on the Further Faster website; the company also publicly states that it distributes outdoor brands in New Zealand.'],
   'Scandinavian Outdoor': ['info@scandinavianoutdoor.com', 'Official public company-domain email on the Scandinavian Outdoor customer-service page; route the supplier proposal to the category buyer or vendor-review owner.', 'https://scandinavianoutdoor.com/page/customer-service/'],
@@ -595,6 +596,7 @@ for (const candidate of DIRECTORY_REFILL_CANDIDATES) {
       ? 'official_homepage_and_where_to_buy_distribution_page'
       : 'official_contact_page';
     candidate.emailEvidenceUrl = enrichment[2] || candidate.url;
+    candidate.contactUrl = enrichment[2] || candidate.contactUrl;
   }
 }
 

@@ -759,6 +759,9 @@ test('source-backed social refill targets use exact official handles and quarant
 
 test('official directory contacts preserve company-domain emails and first-party evidence URLs', () => {
   assert.ok(discoverySource.includes("'Scandinavian Outdoor': ['info@scandinavianoutdoor.com'"));
+  assert.ok(discoverySource.includes("'Tentworld': ['contact@tentworld.com.au'"));
+  assert.ok(discoverySource.includes("'Wildfire Sports': ['enquiries@wildfiresports.com.au'"));
+  assert.ok(discoverySource.includes('candidate.contactUrl = enrichment[2] || candidate.contactUrl'));
   assert.ok(discoverySource.includes("'Varuste': ['info@varuste.net'"));
   assert.ok(discoverySource.includes("'Fjellsport': ['kundeservice@fjellsport.no'"));
   assert.ok(discoverySource.includes("'Outnorth': ['info@outnorth.com'"));
