@@ -125,7 +125,7 @@ function readJson(file, fallback) {
   }
 }
 
-function retryTransientFileOperation(operation, attempts = 6) {
+function retryTransientFileOperation(operation, attempts = 10) {
   let lastError;
   for (let attempt = 0; attempt < attempts; attempt += 1) {
     try {
@@ -134,7 +134,11 @@ function retryTransientFileOperation(operation, attempts = 6) {
       lastError = error;
       const transient = error && ['EBUSY', 'EACCES', 'EPERM', 'UNKNOWN'].includes(error.code);
       if (!transient || attempt === attempts - 1) throw error;
-      Atomics.wait(new Int32Array(new SharedArrayBuffer(4)), 0, 0, 40 * (attempt + 1));
+      // Windows can briefly hold generated dashboard artifacts while Chrome,
+      // the local server, or an indexer reads them. Keep the retry bounded,
+      // but long enough that a safe terminal result is not replaced by an
+      // execution-failed-before-transport artifact.
+      Atomics.wait(new Int32Array(new SharedArrayBuffer(4)), 0, 0, 100 * (attempt + 1));
     }
   }
   throw lastError;
