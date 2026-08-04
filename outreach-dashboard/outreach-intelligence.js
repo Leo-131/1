@@ -40,7 +40,7 @@ function companyId(item = {}) {
 }
 
 function channelOf(item = {}) {
-  const text = clean([item.channel, item.platform, item.target_url, item.url, item.task_id].join(' '));
+  const text = clean([item.channel, item.platform, item.target_url, item.url, item.contactUrl, item.publicEmail, item.contactEmail, item.task_id].join(' '));
   if (text.includes('linkedin')) return 'linkedin';
   if (text.includes('facebook')) return 'facebook';
   if (text.includes('instagram')) return 'instagram';
@@ -52,7 +52,7 @@ function channelOf(item = {}) {
 function evidenceScore(item = {}) {
   const platform = channelOf(item);
   const status = clean([item.emailVerificationStatus, item.externalVerificationStatus, item.publicEmailStatus, item.identityStatus].join(' '));
-  const evidenceUrl = item.evidenceUrl || item.socialProfileEvidenceUrl || item.emailEvidenceUrl || '';
+  const evidenceUrl = item.socialProfileEvidenceUrl || item.sourceEvidenceUrl || item.emailEvidenceUrl || item.evidenceUrl || '';
   const organizationReferences = [item.website, item.contactUrl, item.url, item.publicEmail, item.contactEmail].filter(Boolean);
   const firstParty = Boolean(evidenceUrl
     && organizationReferences.some(reference => sameOrganizationDomain(evidenceUrl, reference))
