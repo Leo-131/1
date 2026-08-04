@@ -10858,5 +10858,22 @@ window.AUTONOMOUS_OUTREACH_RESULTS = [
     "messageId": "",
     "sentFolder": "",
     "sentUid": null
+  },
+  {
+    "task_id": "google-customer-tentworld-website-contact",
+    "company": "Tentworld",
+    "approval_version": 1,
+    "status": "failed_open",
+    "agent": "alibaba-enterprise-mail",
+    "browserTransportUsed": "none",
+    "timestamp": "2026-08-04T04:06:02.706Z",
+    "target_url": "https://www.tentworld.com.au/contact-us",
+    "evidence": "verified_email_auto_send_no_manual_review;alibaba_webmail_content_inserted_recipient_control_verified;alibaba_webmail_draft_verification_failed;recipientReady:true;subjectReady:true;bodyReady:false;recipientStageValueMatch:false;recipientStageType:none;recipientStageRole:none;recipientStageClass:e_iframe e_scroll;recipientStageXY:0,336;recipientControl:INPUT,search,combobox,ant-select-selection-search-input hide-clear;recipientControlXY:0,0;recipientControlShadow:false;composer_preserved_for_technical_evidence:true;contact_path_strategy_v2",
+    "draft": "Dear Tentworld Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
+    "subject": "FLEXTAIL retail partnership | 2026 assortment",
+    "recipientEmail": "contact@tentworld.com.au",
+    "messageId": "",
+    "sentFolder": "",
+    "sentUid": null
   }
 ];

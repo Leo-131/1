@@ -16,36 +16,10 @@
   "mode": "serial-single-target",
   "batchMode": "parallel-batches",
   "parallelLimit": 1,
-  "limit": 25,
+  "limit": 13,
   "queueDate": "2026-08-04",
   "queueSource": "dailyPotentialPool",
   "executed": [
-    {
-      "id": "google-customer-tentworld-website-contact",
-      "company": "Tentworld",
-      "action": "email_priority",
-      "platform": "website_form",
-      "targetUrl": "https://www.tentworld.com.au/contact-us",
-      "ok": false,
-      "sendStatus": "failed_open",
-      "evidence": "verified_email_auto_send_no_manual_review;alibaba_webmail_content_inserted_recipient_control_verified;alibaba_webmail_draft_verification_failed;recipientReady:true;subjectReady:true;bodyReady:false;recipientStageValueMatch:false;recipientStageType:none;recipientStageRole:none;recipientStageClass:e_iframe e_scroll;recipientStageXY:0,336;recipientControl:INPUT,search,combobox,ant-select-selection-search-input hide-clear;recipientControlXY:0,0;recipientControlShadow:false;composer_preserved_for_technical_evidence:true;contact_path_strategy_v2",
-      "timestamp": "2026-08-04T03:36:03.918Z",
-      "chromeOpen": null,
-      "result": {
-        "ok": false,
-        "sendStatus": "failed_open",
-        "reason": "alibaba_webmail_draft_verification_failed",
-        "evidence": "verified_email_auto_send_no_manual_review;alibaba_webmail_content_inserted_recipient_control_verified;alibaba_webmail_draft_verification_failed;recipientReady:true;subjectReady:true;bodyReady:false;recipientStageValueMatch:false;recipientStageType:none;recipientStageRole:none;recipientStageClass:e_iframe e_scroll;recipientStageXY:0,336;recipientControl:INPUT,search,combobox,ant-select-selection-search-input hide-clear;recipientControlXY:0,0;recipientControlShadow:false;composer_preserved_for_technical_evidence:true;contact_path_strategy_v2",
-        "manualApprovalRequired": false,
-        "autoSendAuthorized": true,
-        "engine": "alibaba-enterprise-mail-smtp-imap",
-        "mode": "alibaba_email_delivery_unconfirmed",
-        "targetUrl": "mailto:contact@tentworld.com.au",
-        "subject": "FLEXTAIL retail partnership | 2026 assortment",
-        "draft": "Dear Tentworld Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
-        "output": "{\"verdict\":\"failed_open\",\"sendStatus\":\"failed_open\",\"evidence\":\"verified_email_auto_send_no_manual_review;alibaba_webmail_content_inserted_recipient_control_verified;alibaba_webmail_draft_verification_failed;recipientReady:true;subjectReady:true;bodyReady:false;recipientStageValueMatch:false;recipientStageType:none;recipientStageRole:none;recipientStageClass:e_iframe e_scroll;recipientStageXY:0,336;recipientControl:INPUT,search,combobox,ant-select-selection-search-input hide-clear;recipientControlXY:0,0;recipientControlShadow:false;composer_preserved_for_technical_evidence:true;contact_path_strategy_v2\",\"nextAction\":\"Do not resend automatically; inspect the Alibaba Mail delivery and Sent-folder evidence.\",\"recipientEmail\":\"contact@tentworld.com.au\",\"messageId\":\"\"}"
-      }
-    },
     {
       "id": "google-customer-varuste-website-contact",
       "company": "Varuste",
@@ -55,7 +29,7 @@
       "ok": false,
       "sendStatus": "failed_open",
       "evidence": "verified_email_auto_send_no_manual_review;alibaba_webmail_content_inserted_recipient_control_verified;alibaba_webmail_draft_verification_failed;recipientReady:false;subjectReady:true;bodyReady:true;recipient_stage_missing;recipientControl:INPUT,search,combobox,ant-select-selection-search-input hide-clear;recipientControlXY:0,0;recipientControlShadow:false;composer_preserved_for_technical_evidence:true;contact_path_strategy_v2",
-      "timestamp": "2026-08-04T03:36:16.930Z",
+      "timestamp": "2026-08-04T04:06:28.990Z",
       "chromeOpen": null,
       "result": {
         "ok": false,
@@ -75,32 +49,6 @@
   ],
   "results": [
     {
-      "id": "google-customer-tentworld-website-contact",
-      "company": "Tentworld",
-      "action": "email_priority",
-      "platform": "website_form",
-      "targetUrl": "https://www.tentworld.com.au/contact-us",
-      "ok": false,
-      "sendStatus": "failed_open",
-      "evidence": "verified_email_auto_send_no_manual_review;alibaba_webmail_content_inserted_recipient_control_verified;alibaba_webmail_draft_verification_failed;recipientReady:true;subjectReady:true;bodyReady:false;recipientStageValueMatch:false;recipientStageType:none;recipientStageRole:none;recipientStageClass:e_iframe e_scroll;recipientStageXY:0,336;recipientControl:INPUT,search,combobox,ant-select-selection-search-input hide-clear;recipientControlXY:0,0;recipientControlShadow:false;composer_preserved_for_technical_evidence:true;contact_path_strategy_v2",
-      "timestamp": "2026-08-04T03:36:03.918Z",
-      "chromeOpen": null,
-      "result": {
-        "ok": false,
-        "sendStatus": "failed_open",
-        "reason": "alibaba_webmail_draft_verification_failed",
-        "evidence": "verified_email_auto_send_no_manual_review;alibaba_webmail_content_inserted_recipient_control_verified;alibaba_webmail_draft_verification_failed;recipientReady:true;subjectReady:true;bodyReady:false;recipientStageValueMatch:false;recipientStageType:none;recipientStageRole:none;recipientStageClass:e_iframe e_scroll;recipientStageXY:0,336;recipientControl:INPUT,search,combobox,ant-select-selection-search-input hide-clear;recipientControlXY:0,0;recipientControlShadow:false;composer_preserved_for_technical_evidence:true;contact_path_strategy_v2",
-        "manualApprovalRequired": false,
-        "autoSendAuthorized": true,
-        "engine": "alibaba-enterprise-mail-smtp-imap",
-        "mode": "alibaba_email_delivery_unconfirmed",
-        "targetUrl": "mailto:contact@tentworld.com.au",
-        "subject": "FLEXTAIL retail partnership | 2026 assortment",
-        "draft": "Dear Tentworld Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
-        "output": "{\"verdict\":\"failed_open\",\"sendStatus\":\"failed_open\",\"evidence\":\"verified_email_auto_send_no_manual_review;alibaba_webmail_content_inserted_recipient_control_verified;alibaba_webmail_draft_verification_failed;recipientReady:true;subjectReady:true;bodyReady:false;recipientStageValueMatch:false;recipientStageType:none;recipientStageRole:none;recipientStageClass:e_iframe e_scroll;recipientStageXY:0,336;recipientControl:INPUT,search,combobox,ant-select-selection-search-input hide-clear;recipientControlXY:0,0;recipientControlShadow:false;composer_preserved_for_technical_evidence:true;contact_path_strategy_v2\",\"nextAction\":\"Do not resend automatically; inspect the Alibaba Mail delivery and Sent-folder evidence.\",\"recipientEmail\":\"contact@tentworld.com.au\",\"messageId\":\"\"}"
-      }
-    },
-    {
       "id": "google-customer-varuste-website-contact",
       "company": "Varuste",
       "action": "verify_target",
@@ -109,7 +57,7 @@
       "ok": false,
       "sendStatus": "failed_open",
       "evidence": "verified_email_auto_send_no_manual_review;alibaba_webmail_content_inserted_recipient_control_verified;alibaba_webmail_draft_verification_failed;recipientReady:false;subjectReady:true;bodyReady:true;recipient_stage_missing;recipientControl:INPUT,search,combobox,ant-select-selection-search-input hide-clear;recipientControlXY:0,0;recipientControlShadow:false;composer_preserved_for_technical_evidence:true;contact_path_strategy_v2",
-      "timestamp": "2026-08-04T03:36:16.930Z",
+      "timestamp": "2026-08-04T04:06:28.990Z",
       "chromeOpen": null,
       "result": {
         "ok": false,
@@ -129,16 +77,28 @@
   ],
   "skipped": [
     {
+      "id": "google-customer-tentworld-website-contact",
+      "company": "Tentworld",
+      "action": "email_priority",
+      "reason": "official_website_contact_channel"
+    },
+    {
       "id": "google-customer-bivouac-outdoor-website-contact",
       "company": "Bivouac Outdoor",
       "action": "verify_target",
       "reason": "homepage_only_contact_path_requires_verification"
     },
     {
-      "id": "google-customer-tentworld-nz-website-contact",
-      "company": "Tentworld NZ",
-      "action": "verify_target",
-      "reason": "homepage_only_contact_path_requires_verification"
+      "id": "google-customer-wildfire-sports-website-contact",
+      "company": "Wildfire Sports",
+      "action": "email_priority",
+      "reason": "official_website_contact_channel"
+    },
+    {
+      "id": "google-customer-outdoor-nature-website-contact",
+      "company": "Outdoor Nature",
+      "action": "email_priority",
+      "reason": "official_website_contact_channel"
     },
     {
       "id": "google-customer-tentworld-nz-facebook",
@@ -469,18 +429,6 @@
       "company": "Durango Outdoor Exchange",
       "action": "verify_target",
       "reason": "homepage_only_contact_path_requires_verification"
-    },
-    {
-      "id": "google-customer-wildfire-sports-website-contact",
-      "company": "Wildfire Sports",
-      "action": "email_priority",
-      "reason": "official_website_contact_channel"
-    },
-    {
-      "id": "google-customer-outdoor-nature-website-contact",
-      "company": "Outdoor Nature",
-      "action": "email_priority",
-      "reason": "official_website_contact_channel"
     },
     {
       "id": "google-customer-transa-website-contact",
@@ -979,6 +927,12 @@
       "company": "Durango Outdoor Exchange",
       "action": "verify_target",
       "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
+      "id": "google-customer-tentworld-website-contact",
+      "company": "Tentworld",
+      "action": "email_priority",
+      "reason": "official_website_contact_channel"
     },
     {
       "id": "google-customer-bivouac-outdoor-website-contact",
@@ -1320,7 +1274,7 @@
     {
       "reason": "homepage_only_contact_path_requires_verification",
       "status": "skipped",
-      "count": 89
+      "count": 88
     },
     {
       "reason": "missing_verified_profile_url",
@@ -1330,7 +1284,7 @@
     {
       "reason": "official_website_contact_channel",
       "status": "skipped",
-      "count": 28
+      "count": 30
     },
     {
       "reason": "concrete_google_discovered_major_customer_facebook",
@@ -1345,16 +1299,16 @@
     {
       "reason": "alibaba_webmail_draft_verification_failed",
       "status": "failed_open",
-      "count": 2
+      "count": 1
     }
   ],
   "blockerCounts": {
-    "homepage_only_contact_path_requires_verification": 89,
+    "homepage_only_contact_path_requires_verification": 88,
     "missing_verified_profile_url": 32,
-    "official_website_contact_channel": 28,
+    "official_website_contact_channel": 30,
     "concrete_google_discovered_major_customer_facebook": 26,
     "concrete_google_discovered_major_customer_instagram": 18,
-    "alibaba_webmail_draft_verification_failed": 2
+    "alibaba_webmail_draft_verification_failed": 1
   },
   "queueGoalStatus": {
     "target": 100,
@@ -1366,7 +1320,7 @@
     "action": "Add more verified high-ICP sources or unblock existing website/social leads."
   },
   "platformCircuitState": {},
-  "userVisibleStatus": "Customer development was not performed. Blockers: homepage_only_contact_path_requires_verification (89); missing_verified_profile_url (32); official_website_contact_channel (28).",
+  "userVisibleStatus": "Customer development was not performed. Blockers: homepage_only_contact_path_requires_verification (88); missing_verified_profile_url (32); official_website_contact_channel (30).",
   "recoveryHint": "Refill the high-ICP pool with 2 verified leads or unblock existing website/social leads before the next run. Add a verified Facebook or Instagram profile URL before retrying social outreach. Confirm the official social profile and safe message entry before rerunning Google-discovered social outreach.",
   "recoveryActions": [
     {
@@ -1397,12 +1351,12 @@
     "stderr": "",
     "error": "",
     "visibility": {
-      "updatedAt": "2026-08-04T03:36:19.627Z",
+      "updatedAt": "2026-08-04T04:06:32.266Z",
       "source": "main-refreshDailyAutomationArtifacts",
       "runDate": "2026-08-04",
-      "artifactGeneratedAt": "2026-08-04T03:36:17.401Z",
-      "executionGeneratedAt": "2026-08-04T03:28:55.162Z",
-      "githubSyncUpdatedAt": "2026-08-04T03:29:41.312Z",
+      "artifactGeneratedAt": "2026-08-04T04:06:29.352Z",
+      "executionGeneratedAt": "2026-08-04T03:36:20.753Z",
+      "githubSyncUpdatedAt": "2026-08-04T03:37:03.763Z",
       "counts": {
         "dailyQueue": 98,
         "googleDiscovered": 74,
@@ -1470,6 +1424,6 @@
       "ALIBABA_SMTP_SECURITY_PASSWORD"
     ]
   },
-  "ledgerReconciliationCount": 4,
-  "completedAt": "2026-08-04T03:36:20.753Z"
+  "ledgerReconciliationCount": 2,
+  "completedAt": "2026-08-04T04:06:33.757Z"
 }
