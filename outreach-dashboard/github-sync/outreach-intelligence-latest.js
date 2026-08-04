@@ -1,6 +1,6 @@
 window.OUTREACH_INTELLIGENCE_LATEST = {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-04T12:37:16.455Z",
+  "generatedAt": "2026-08-04T12:59:53.584Z",
   "companies": [
     {
       "companyId": "company_992d96a6c170243f",
@@ -107,6 +107,12 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
           "status": "failed_open",
           "timestamp": "2026-08-04T12:01:10.714Z",
           "channel": "linkedin",
+          "evidence": "website_contact_entry_not_verified;contact_entry_clicked:Become a Supplier;official_social_fallback:linkedin;identity_mismatch_expected_Esprinet Group_title_(22) LinkedIn;contact_path_strategy_v2"
+        },
+        {
+          "status": "failed_open",
+          "timestamp": "2026-08-04T12:37:47.238Z",
+          "channel": "website_form",
           "evidence": "website_contact_entry_not_verified;contact_entry_clicked:Become a Supplier;official_social_fallback:linkedin;identity_mismatch_expected_Esprinet Group_title_(22) LinkedIn;contact_path_strategy_v2"
         }
       ]
@@ -223,6 +229,12 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
           "timestamp": "2026-08-04T12:01:43.395Z",
           "channel": "website_form",
           "evidence": "customer_execution_timeout:30000;queue_continued_to_next_customer"
+        },
+        {
+          "status": "failed_open",
+          "timestamp": "2026-08-04T12:38:40.768Z",
+          "channel": "linkedin",
+          "evidence": "website_contact_entry_not_verified;contact_entry_clicked:Skip to content;official_social_fallback:linkedin;identity_mismatch_expected_CMS Distribution_title_(22) LinkedIn;contact_path_strategy_v2"
         }
       ]
     },
@@ -1040,6 +1052,12 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
           "status": "failed_open",
           "timestamp": "2026-08-04T12:01:55.728Z",
           "channel": "instagram",
+          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:instagram;chrome_target_not_found;contact_path_strategy_v2"
+        },
+        {
+          "status": "failed_open",
+          "timestamp": "2026-08-04T12:37:47.604Z",
+          "channel": "website_form",
           "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:instagram;chrome_target_not_found;contact_path_strategy_v2"
         }
       ]
@@ -2120,6 +2138,12 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
           "timestamp": "2026-08-04T12:03:03.924Z",
           "channel": "facebook",
           "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;identity_mismatch_expected_Above and Beyond_title_Facebook;contact_path_strategy_v2"
+        },
+        {
+          "status": "failed_open",
+          "timestamp": "2026-08-04T12:37:47.796Z",
+          "channel": "website_form",
+          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;identity_mismatch_expected_Above and Beyond_title_Facebook;contact_path_strategy_v2"
         }
       ]
     },
@@ -2308,6 +2332,12 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
           "timestamp": "2026-08-04T12:03:48.646Z",
           "channel": "facebook",
           "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;identity_mismatch_expected_Campz_title_Facebook;contact_path_strategy_v2"
+        },
+        {
+          "status": "failed_open",
+          "timestamp": "2026-08-04T12:37:47.926Z",
+          "channel": "website_form",
+          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;identity_mismatch_expected_Campz_title_Facebook;contact_path_strategy_v2"
         }
       ]
     },
@@ -2422,6 +2452,12 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
           "status": "failed_open",
           "timestamp": "2026-08-04T12:04:11.277Z",
           "channel": "facebook",
+          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;identity_mismatch_expected_Intersport Norway_title_Facebook;contact_path_strategy_v2"
+        },
+        {
+          "status": "failed_open",
+          "timestamp": "2026-08-04T12:37:48.077Z",
+          "channel": "website_form",
           "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;identity_mismatch_expected_Intersport Norway_title_Facebook;contact_path_strategy_v2"
         }
       ]
@@ -2641,6 +2677,12 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
           "timestamp": "2026-08-04T12:05:17.109Z",
           "channel": "website_form",
           "evidence": "customer_execution_timeout:30000;queue_continued_to_next_customer"
+        },
+        {
+          "status": "failed_open",
+          "timestamp": "2026-08-04T12:43:03.029Z",
+          "channel": "facebook",
+          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;facebook_profile_no_message_button;contact_path_strategy_v2"
         }
       ]
     },
@@ -2781,6 +2823,18 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
           "timestamp": "2026-08-04T12:06:43.746Z",
           "channel": "facebook",
           "evidence": "website_contact_entry_not_verified;contact_entry_clicked:Contact Us;official_social_fallback:facebook;identity_mismatch_expected_Tiso_title_(1) Facebook;contact_path_strategy_v2"
+        },
+        {
+          "status": "failed_open",
+          "timestamp": "2026-08-04T12:37:48.787Z",
+          "channel": "website_form",
+          "evidence": "website_contact_entry_not_verified;contact_entry_clicked:Contact Us;official_social_fallback:facebook;identity_mismatch_expected_Tiso_title_(1) Facebook;contact_path_strategy_v2"
+        },
+        {
+          "status": "failed_open",
+          "timestamp": "2026-08-04T12:44:37.159Z",
+          "channel": "facebook",
+          "evidence": "website_contact_entry_not_verified;contact_entry_clicked:Contact Us;official_social_fallback:facebook;identity_mismatch_expected_Tiso_title_Facebook;contact_path_strategy_v2"
         }
       ]
     },
@@ -3571,6 +3625,12 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
           "timestamp": "2026-08-04T12:06:08.160Z",
           "channel": "facebook",
           "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;personal_profile_without_company_match_expected_Rock/Creek_title_Facebook;contact_path_strategy_v2"
+        },
+        {
+          "status": "failed_open",
+          "timestamp": "2026-08-04T12:37:48.576Z",
+          "channel": "website_form",
+          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;personal_profile_without_company_match_expected_Rock/Creek_title_Facebook;contact_path_strategy_v2"
         }
       ]
     },
@@ -3777,6 +3837,12 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
           "status": "failed_open",
           "timestamp": "2026-08-04T12:02:22.556Z",
           "channel": "instagram",
+          "evidence": "website_contact_entry_not_verified;contact_entry_clicked:Contact Us;official_social_fallback:instagram;unavailable_profile_page: 很抱歉，无法访问此页面\n你点击的链接可能已损坏，或页面已被移除。返回 Instagram。\nMeta\n关于\n博客\n工作\n帮助\nAPI\n隐私设置\n条款\n地点\n热门\nInstagram Lite\nMeta AI\nThreads\n联系人上传和非用户\nMeta Verified\n中文(简体)\nAfrikaans\nالعربية\nČeština\nDansk\nDeuts;contact_path_strategy_v2"
+        },
+        {
+          "status": "failed_open",
+          "timestamp": "2026-08-04T12:37:47.687Z",
+          "channel": "website_form",
           "evidence": "website_contact_entry_not_verified;contact_entry_clicked:Contact Us;official_social_fallback:instagram;unavailable_profile_page: 很抱歉，无法访问此页面\n你点击的链接可能已损坏，或页面已被移除。返回 Instagram。\nMeta\n关于\n博客\n工作\n帮助\nAPI\n隐私设置\n条款\n地点\n热门\nInstagram Lite\nMeta AI\nThreads\n联系人上传和非用户\nMeta Verified\n中文(简体)\nAfrikaans\nالعربية\nČeština\nDansk\nDeuts;contact_path_strategy_v2"
         }
       ]
@@ -4027,188 +4093,6 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
       ]
     },
     {
-      "companyId": "company_7792cb512161a428",
-      "company": "72hours",
-      "keys": [
-        "72hours",
-        "72hoursca"
-      ],
-      "domains": [
-        "72hours.ca"
-      ],
-      "channels": [
-        "website_form",
-        "facebook",
-        "instagram"
-      ],
-      "evidence": [
-        {
-          "channel": "website_form",
-          "score": 0,
-          "verified": false,
-          "reasons": [
-            "unverified_external_evidence_rejected"
-          ],
-          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
-          "checkedAt": ""
-        },
-        {
-          "channel": "facebook",
-          "score": 0,
-          "verified": false,
-          "reasons": [
-            "unverified_external_evidence_rejected"
-          ],
-          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
-          "checkedAt": ""
-        },
-        {
-          "channel": "instagram",
-          "score": 0,
-          "verified": false,
-          "reasons": [
-            "unverified_external_evidence_rejected"
-          ],
-          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
-          "checkedAt": ""
-        },
-        {
-          "channel": "website_form",
-          "score": 0,
-          "verified": false,
-          "reasons": [
-            "unverified_external_evidence_rejected"
-          ],
-          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
-          "checkedAt": ""
-        },
-        {
-          "channel": "facebook",
-          "score": 0,
-          "verified": false,
-          "reasons": [
-            "unverified_external_evidence_rejected"
-          ],
-          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
-          "checkedAt": ""
-        },
-        {
-          "channel": "instagram",
-          "score": 0,
-          "verified": false,
-          "reasons": [
-            "unverified_external_evidence_rejected"
-          ],
-          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
-          "checkedAt": ""
-        },
-        {
-          "channel": "instagram",
-          "score": 0,
-          "verified": false,
-          "reasons": [
-            "unverified_external_evidence_rejected"
-          ],
-          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
-          "checkedAt": ""
-        },
-        {
-          "channel": "facebook",
-          "score": 0,
-          "verified": false,
-          "reasons": [
-            "unverified_external_evidence_rejected"
-          ],
-          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
-          "checkedAt": ""
-        },
-        {
-          "channel": "website_form",
-          "score": 0,
-          "verified": false,
-          "reasons": [
-            "unverified_external_evidence_rejected"
-          ],
-          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
-          "checkedAt": ""
-        }
-      ],
-      "history": [
-        {
-          "status": "failed_open",
-          "timestamp": "2026-07-16T07:04:31.284Z",
-          "channel": "facebook",
-          "evidence": "driver_error: CDP timeout: Input.dispatchMouseEvent"
-        },
-        {
-          "status": "send_unconfirmed",
-          "timestamp": "2026-07-16T11:17:42.014Z",
-          "channel": "facebook",
-          "evidence": "facebook_draft_not_inserted_after_composer_refocus;editable_count:2;composer_text_length:1;active:BODY"
-        },
-        {
-          "status": "failed_open",
-          "timestamp": "2026-07-16T11:31:29.559Z",
-          "channel": "facebook",
-          "evidence": "identity_mismatch_expected_72hours_title_Facebook"
-        },
-        {
-          "status": "failed_open",
-          "timestamp": "2026-07-17T09:07:28.138Z",
-          "channel": "instagram",
-          "evidence": "unavailable_profile_page: 很抱歉，无法访问此页面\n你点击的链接可能已损坏，或页面已被移除。返回 Instagram。\nMeta\n关于\n博客\n工作\n帮助\nAPI\n隐私设置\n条款\n地点\n热门\nInstagram Lite\nMeta AI\nThreads\n联系人上传和非用户\nMeta Verified\n中文(简体)\nAfrikaans\nالعربية\nČeština\nDansk\nDeuts"
-        },
-        {
-          "status": "website_contact_unreachable_skip",
-          "timestamp": "2026-07-20T11:52:13.300Z",
-          "channel": "facebook",
-          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:1"
-        },
-        {
-          "status": "post_liked",
-          "timestamp": "2026-07-21T04:08:34.062Z",
-          "channel": "facebook",
-          "evidence": "facebook_engagement_completed_message_unavailable;facebook_composer_unavailable_closed_no_retry;follow_not_available;post_liked;facebook_post_like_clicked"
-        },
-        {
-          "status": "failed_open",
-          "timestamp": "2026-07-29T11:17:01.049Z",
-          "channel": "facebook",
-          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;personal_profile_without_company_match_expected_72hours_title_Facebook;contact_path_strategy_v2"
-        },
-        {
-          "status": "failed_open",
-          "timestamp": "2026-07-29T12:46:55.787Z",
-          "channel": "website_form",
-          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;personal_profile_without_company_match_expected_72hours_title_Facebook;contact_path_strategy_v2"
-        },
-        {
-          "status": "failed_open",
-          "timestamp": "2026-07-30T08:36:02.345Z",
-          "channel": "facebook",
-          "evidence": "personal_profile_without_company_match_expected_72hours_title_Facebook"
-        },
-        {
-          "status": "failed_open",
-          "timestamp": "2026-07-30T08:43:22.016Z",
-          "channel": "facebook",
-          "evidence": "facebook_draft_not_inserted_before_send;pre_send_failure_status_repaired"
-        },
-        {
-          "status": "failed_open",
-          "timestamp": "2026-07-30T08:47:18.504Z",
-          "channel": "facebook",
-          "evidence": "facebook_draft_not_inserted_before_send"
-        },
-        {
-          "status": "failed_open",
-          "timestamp": "2026-08-04T12:02:55.309Z",
-          "channel": "website_form",
-          "evidence": "customer_execution_timeout:30000;queue_continued_to_next_customer"
-        }
-      ]
-    },
-    {
       "companyId": "company_bfd5a8ed7357ec4d",
       "company": "Atmosphere",
       "keys": [
@@ -4387,6 +4271,12 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
           "timestamp": "2026-08-04T12:03:36.730Z",
           "channel": "facebook",
           "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;facebook_profile_no_message_button;contact_path_strategy_v2"
+        },
+        {
+          "status": "failed_open",
+          "timestamp": "2026-08-04T12:37:47.865Z",
+          "channel": "website_form",
+          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;facebook_profile_no_message_button;contact_path_strategy_v2"
         }
       ]
     },
@@ -4520,248 +4410,12 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
           "timestamp": "2026-08-04T12:04:00.045Z",
           "channel": "facebook",
           "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;identity_mismatch_expected_Eastern Mountain Sports_title_Facebook;contact_path_strategy_v2"
-        }
-      ]
-    },
-    {
-      "companyId": "company_b39cc30585b47213",
-      "company": "Jax Outdoor Gear",
-      "keys": [
-        "jaxoutdoorgear",
-        "jaxgoodscom"
-      ],
-      "domains": [
-        "jaxgoods.com"
-      ],
-      "channels": [
-        "website_form",
-        "facebook",
-        "instagram"
-      ],
-      "evidence": [
+        },
         {
+          "status": "failed_open",
+          "timestamp": "2026-08-04T12:37:47.999Z",
           "channel": "website_form",
-          "score": 0,
-          "verified": false,
-          "reasons": [
-            "unverified_external_evidence_rejected"
-          ],
-          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
-          "checkedAt": ""
-        },
-        {
-          "channel": "facebook",
-          "score": 0,
-          "verified": false,
-          "reasons": [
-            "unverified_external_evidence_rejected"
-          ],
-          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
-          "checkedAt": ""
-        },
-        {
-          "channel": "instagram",
-          "score": 0,
-          "verified": false,
-          "reasons": [
-            "unverified_external_evidence_rejected"
-          ],
-          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
-          "checkedAt": ""
-        },
-        {
-          "channel": "website_form",
-          "score": 0,
-          "verified": false,
-          "reasons": [
-            "unverified_external_evidence_rejected"
-          ],
-          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
-          "checkedAt": ""
-        },
-        {
-          "channel": "facebook",
-          "score": 0,
-          "verified": false,
-          "reasons": [
-            "unverified_external_evidence_rejected"
-          ],
-          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
-          "checkedAt": ""
-        },
-        {
-          "channel": "instagram",
-          "score": 0,
-          "verified": false,
-          "reasons": [
-            "unverified_external_evidence_rejected"
-          ],
-          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
-          "checkedAt": ""
-        },
-        {
-          "channel": "instagram",
-          "score": 0,
-          "verified": false,
-          "reasons": [
-            "unverified_external_evidence_rejected"
-          ],
-          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
-          "checkedAt": ""
-        },
-        {
-          "channel": "facebook",
-          "score": 0,
-          "verified": false,
-          "reasons": [
-            "unverified_external_evidence_rejected"
-          ],
-          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
-          "checkedAt": ""
-        },
-        {
-          "channel": "website_form",
-          "score": 0,
-          "verified": false,
-          "reasons": [
-            "unverified_external_evidence_rejected"
-          ],
-          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
-          "checkedAt": ""
-        }
-      ],
-      "history": [
-        {
-          "status": "failed_open",
-          "timestamp": "2026-07-16T11:33:51.609Z",
-          "channel": "facebook",
-          "evidence": "identity_mismatch_expected_Jax Outdoor Gear_title_Facebook"
-        },
-        {
-          "status": "approval_pending",
-          "timestamp": "2026-07-17T09:14:18.570Z",
-          "channel": "instagram",
-          "evidence": "driver_error: Command failed: C:\\Program Files\\nodejs\\node.exe E:\\New project\\outreach-dashboard\\codex-chrome-driver.js prepare-instagram-draft {\"port\":9224,\"tabId\":\"55EB0366E2A7C532F41F0658AD075C1B\",\"targetUrl\":\"https://www.instagram.com/jaxoutdoor/\",\"expectedCompany\":\"Jax Outdoor Gear\",\"draft\":\"Hi Jax Outdoor Gear team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a retail/category buyer, the strongest fit is assortment fit, new SKU pipeline, price-tier coverage, and proven consumer demand; your verified outdoor, camping and travel retail social refill channel focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the category buyer or vendor-review owner for a short intro video meeting?\",\"autoSend\":true,\"autoEngage\":true,\"engagementComment\":\"Great outdoor checklist. Useful reminder for hikers preparing a complete, lightweight kit.\",\"replaceExistingDraft\":true}\n"
-        },
-        {
-          "status": "failed_open",
-          "timestamp": "2026-07-20T04:01:49.093Z",
-          "channel": "instagram",
-          "evidence": "instagram_message_button_clicked_composer_not_found"
-        },
-        {
-          "status": "website_contact_unreachable_skip",
-          "timestamp": "2026-07-20T11:31:05.831Z",
-          "channel": "instagram",
-          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:1"
-        },
-        {
-          "status": "website_contact_unreachable_skip",
-          "timestamp": "2026-07-21T04:16:11.104Z",
-          "channel": "facebook",
-          "evidence": "unavailable_profile_page: SKIP TO CONTENT\n\nJAX Store Locations\n\nSearch\nSearch\nLog in\nBag\n404\n\nPAGE NOT FOUND\n\nSorry, the page you are looking for does not exist.\n\nBACK TO HOME\nExplore JAX\nGift Cards\nLocatio;website_contact_all_targets_failed:6;contact_path_strategy_v2"
-        },
-        {
-          "status": "website_contact_unreachable_skip",
-          "timestamp": "2026-07-21T05:04:12.969Z",
-          "channel": "instagram",
-          "evidence": "unavailable_profile_page: SKIP TO CONTENT\n\nJAX Store Locations\n\nSearch\nSearch\nLog in\nBag\n404\n\nPAGE NOT FOUND\n\nSorry, the page you are looking for does not exist.\n\nBACK TO HOME\nExplore JAX\nGift Cards\nLocatio;website_contact_all_targets_failed:6;contact_path_strategy_v2"
-        },
-        {
-          "status": "send_unconfirmed",
-          "timestamp": "2026-07-27T13:30:52.985Z",
-          "channel": "facebook",
-          "evidence": "instagram_draft_inserted_send_button_not_found"
-        },
-        {
-          "status": "send_unconfirmed",
-          "timestamp": "2026-07-27T13:33:03.915Z",
-          "channel": "instagram",
-          "evidence": "instagram_draft_inserted_send_button_not_found"
-        },
-        {
-          "status": "send_unconfirmed",
-          "timestamp": "2026-07-29T04:38:32.751Z",
-          "channel": "facebook",
-          "evidence": "confirmation_invalidated;outgoingBubble:false;empty_composer_is_not_delivery_proof;do_not_count_or_auto_resend"
-        },
-        {
-          "status": "failed_open",
-          "timestamp": "2026-07-29T05:28:19.367Z",
-          "channel": "facebook",
-          "evidence": "facebook_identity_not_verified_fail_closed"
-        },
-        {
-          "status": "failed_open",
-          "timestamp": "2026-07-29T05:34:37.535Z",
-          "channel": "instagram",
-          "evidence": "instagram_identity_not_verified_fail_closed"
-        },
-        {
-          "status": "failed_open",
-          "timestamp": "2026-07-29T09:13:30.698Z",
-          "channel": "facebook",
-          "evidence": "identity_check_runtime_error:SyntaxError: Invalid regular expression flags"
-        },
-        {
-          "status": "failed_open",
-          "timestamp": "2026-07-29T09:17:02.614Z",
-          "channel": "facebook",
-          "evidence": "website_contact_entry_not_verified;contact_entry_clicked:SKIP TO CONTENT;official_social_fallback:facebook;personal_profile_without_company_match_expected_Jax Outdoor Gear_title_Facebook;contact_path_strategy_v2"
-        },
-        {
-          "status": "failed_open",
-          "timestamp": "2026-07-29T09:18:39.566Z",
-          "channel": "instagram",
-          "evidence": "website_contact_entry_not_verified;contact_entry_clicked:SKIP TO CONTENT;official_social_fallback:facebook;personal_profile_without_company_match_expected_Jax Outdoor Gear_title_Facebook;contact_path_strategy_v2"
-        },
-        {
-          "status": "failed_open",
-          "timestamp": "2026-07-29T10:32:54.495Z",
-          "channel": "facebook",
-          "evidence": "website_contact_entry_not_verified;contact_entry_clicked:SKIP TO CONTENT;official_social_fallback:facebook;personal_profile_without_company_match_expected_Jax Outdoor Gear_title_Facebook;contact_path_strategy_v2"
-        },
-        {
-          "status": "failed_open",
-          "timestamp": "2026-07-29T10:35:24.925Z",
-          "channel": "website_form",
-          "evidence": "website_contact_entry_not_verified;contact_entry_clicked:SKIP TO CONTENT;official_social_fallback:facebook;personal_profile_without_company_match_expected_Jax Outdoor Gear_title_Facebook;contact_path_strategy_v2"
-        },
-        {
-          "status": "failed_open",
-          "timestamp": "2026-07-29T10:37:45.968Z",
-          "channel": "instagram",
-          "evidence": "website_contact_entry_not_verified;contact_entry_clicked:SKIP TO CONTENT;official_social_fallback:facebook;instagram_message_button_clicked_composer_not_found;contact_path_strategy_v2"
-        },
-        {
-          "status": "failed_open",
-          "timestamp": "2026-07-29T10:40:05.689Z",
-          "channel": "website_form",
-          "evidence": "website_contact_entry_not_verified;contact_entry_clicked:SKIP TO CONTENT;official_social_fallback:facebook;instagram_message_button_clicked_composer_not_found;contact_path_strategy_v2"
-        },
-        {
-          "status": "failed_open",
-          "timestamp": "2026-07-30T08:36:43.237Z",
-          "channel": "facebook",
-          "evidence": "instagram_message_button_clicked_composer_not_found"
-        },
-        {
-          "status": "failed_open",
-          "timestamp": "2026-07-30T08:39:22.966Z",
-          "channel": "facebook",
-          "evidence": "instagram_message_button_clicked_composer_not_found"
-        },
-        {
-          "status": "send_unconfirmed",
-          "timestamp": "2026-07-30T16:09:07.606Z",
-          "channel": "facebook",
-          "evidence": "facebook_send_clicked_but_confirmation_missing;"
-        },
-        {
-          "status": "failed_open",
-          "timestamp": "2026-08-04T12:04:44.138Z",
-          "channel": "website_form",
-          "evidence": "customer_execution_timeout:30000;queue_continued_to_next_customer"
+          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;identity_mismatch_expected_Eastern Mountain Sports_title_Facebook;contact_path_strategy_v2"
         }
       ]
     },
@@ -4871,6 +4525,18 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
           "timestamp": "2026-08-04T12:05:58.111Z",
           "channel": "facebook",
           "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;identity_mismatch_expected_Moosejaw_title_(1) Facebook;contact_path_strategy_v2"
+        },
+        {
+          "status": "failed_open",
+          "timestamp": "2026-08-04T12:37:48.400Z",
+          "channel": "website_form",
+          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;identity_mismatch_expected_Moosejaw_title_(1) Facebook;contact_path_strategy_v2"
+        },
+        {
+          "status": "failed_open",
+          "timestamp": "2026-08-04T12:43:50.890Z",
+          "channel": "facebook",
+          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;identity_mismatch_expected_Moosejaw_title_Facebook;contact_path_strategy_v2"
         }
       ]
     },
@@ -5005,6 +4671,18 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
           "timestamp": "2026-08-04T12:06:18.930Z",
           "channel": "facebook",
           "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;identity_mismatch_expected_The Mountaineer_title_(1) Facebook;contact_path_strategy_v2"
+        },
+        {
+          "status": "failed_open",
+          "timestamp": "2026-08-04T12:37:48.665Z",
+          "channel": "website_form",
+          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;identity_mismatch_expected_The Mountaineer_title_(1) Facebook;contact_path_strategy_v2"
+        },
+        {
+          "status": "failed_open",
+          "timestamp": "2026-08-04T12:44:11.964Z",
+          "channel": "facebook",
+          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;identity_mismatch_expected_The Mountaineer_title_Facebook;contact_path_strategy_v2"
         }
       ]
     },
@@ -6489,115 +6167,6 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
       ]
     },
     {
-      "companyId": "company_7d3e60103956de7c",
-      "company": "Mammut Store",
-      "keys": [
-        "mammutstore",
-        "mammutcom"
-      ],
-      "domains": [
-        "mammut.com"
-      ],
-      "channels": [
-        "website_form",
-        "facebook"
-      ],
-      "evidence": [
-        {
-          "channel": "website_form",
-          "score": 0,
-          "verified": false,
-          "reasons": [
-            "unverified_external_evidence_rejected"
-          ],
-          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
-          "checkedAt": ""
-        },
-        {
-          "channel": "facebook",
-          "score": 0,
-          "verified": false,
-          "reasons": [
-            "unverified_external_evidence_rejected"
-          ],
-          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
-          "checkedAt": ""
-        },
-        {
-          "channel": "website_form",
-          "score": 0,
-          "verified": false,
-          "reasons": [
-            "unverified_external_evidence_rejected"
-          ],
-          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
-          "checkedAt": ""
-        },
-        {
-          "channel": "facebook",
-          "score": 0,
-          "verified": false,
-          "reasons": [
-            "unverified_external_evidence_rejected"
-          ],
-          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
-          "checkedAt": ""
-        },
-        {
-          "channel": "facebook",
-          "score": 0,
-          "verified": false,
-          "reasons": [
-            "unverified_external_evidence_rejected"
-          ],
-          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
-          "checkedAt": ""
-        },
-        {
-          "channel": "website_form",
-          "score": 0,
-          "verified": false,
-          "reasons": [
-            "unverified_external_evidence_rejected"
-          ],
-          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
-          "checkedAt": ""
-        }
-      ],
-      "history": [
-        {
-          "status": "failed_open",
-          "timestamp": "2026-07-29T10:33:10.390Z",
-          "channel": "facebook",
-          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;personal_profile_without_company_match_expected_Mammut Store_title_Facebook;contact_path_strategy_v2"
-        },
-        {
-          "status": "failed_open",
-          "timestamp": "2026-07-29T10:35:24.980Z",
-          "channel": "website_form",
-          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;personal_profile_without_company_match_expected_Mammut Store_title_Facebook;contact_path_strategy_v2"
-        },
-        {
-          "status": "failed_open",
-          "timestamp": "2026-07-30T08:36:49.358Z",
-          "channel": "facebook",
-          "evidence": "personal_profile_without_company_match_expected_Mammut Store_title_Facebook"
-        },
-        {
-          "status": "failed_open",
-          "timestamp": "2026-07-30T08:44:28.813Z",
-          "channel": "facebook",
-          "evidence": "facebook_profile_no_message_button"
-        },
-        {
-          "status": "failed_open",
-          "timestamp": "2026-08-04T12:05:49.882Z",
-          "channel": "website_form",
-          "evidence": "customer_execution_timeout:30000;queue_continued_to_next_customer"
-        }
-      ]
-    },
-    {
       "companyId": "company_56032ffffa26d964",
       "company": "Tentworld NZ",
       "keys": [
@@ -7026,6 +6595,214 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
         "llbean",
         "lisachang",
         "6"
+      ],
+      "domains": [],
+      "channels": [],
+      "evidence": [],
+      "history": [
+        {
+          "status": "Pending",
+          "timestamp": "",
+          "channel": "research",
+          "evidence": ""
+        },
+        {
+          "status": "Pending",
+          "timestamp": "",
+          "channel": "research",
+          "evidence": ""
+        }
+      ]
+    },
+    {
+      "companyId": "company_34a04005bcaf206e",
+      "company": "Target",
+      "keys": [
+        "target",
+        "stephanieliu",
+        "17"
+      ],
+      "domains": [],
+      "channels": [],
+      "evidence": [],
+      "history": [
+        {
+          "status": "Pending",
+          "timestamp": "",
+          "channel": "research",
+          "evidence": ""
+        },
+        {
+          "status": "Pending",
+          "timestamp": "",
+          "channel": "research",
+          "evidence": ""
+        }
+      ]
+    },
+    {
+      "companyId": "company_b463fd62424100e3",
+      "company": "Thor Industries",
+      "keys": [
+        "thorindustries",
+        "jasonpark",
+        "22"
+      ],
+      "domains": [],
+      "channels": [],
+      "evidence": [],
+      "history": [
+        {
+          "status": "Pending",
+          "timestamp": "",
+          "channel": "research",
+          "evidence": ""
+        },
+        {
+          "status": "Pending",
+          "timestamp": "",
+          "channel": "research",
+          "evidence": ""
+        }
+      ]
+    },
+    {
+      "companyId": "company_982dc8af9a41efad",
+      "company": "Walgreens",
+      "keys": [
+        "walgreens",
+        "nicoleadams",
+        "13"
+      ],
+      "domains": [],
+      "channels": [],
+      "evidence": [],
+      "history": [
+        {
+          "status": "Pending",
+          "timestamp": "",
+          "channel": "research",
+          "evidence": ""
+        },
+        {
+          "status": "Pending",
+          "timestamp": "",
+          "channel": "research",
+          "evidence": ""
+        }
+      ]
+    },
+    {
+      "companyId": "company_e6fd68ce9d22187e",
+      "company": "Winnebago",
+      "keys": [
+        "winnebago",
+        "brianscott",
+        "18"
+      ],
+      "domains": [],
+      "channels": [],
+      "evidence": [],
+      "history": [
+        {
+          "status": "Pending",
+          "timestamp": "",
+          "channel": "research",
+          "evidence": ""
+        },
+        {
+          "status": "Pending",
+          "timestamp": "",
+          "channel": "research",
+          "evidence": ""
+        }
+      ]
+    },
+    {
+      "companyId": "company_554ba2997b63432b",
+      "company": "Best Buy",
+      "keys": [
+        "bestbuy",
+        "chrisbrown",
+        "11"
+      ],
+      "domains": [],
+      "channels": [],
+      "evidence": [],
+      "history": [
+        {
+          "status": "Pending",
+          "timestamp": "",
+          "channel": "research",
+          "evidence": ""
+        },
+        {
+          "status": "Pending",
+          "timestamp": "",
+          "channel": "research",
+          "evidence": ""
+        }
+      ]
+    },
+    {
+      "companyId": "company_2a629ca230d1606d",
+      "company": "Canadian Tire",
+      "keys": [
+        "canadiantire",
+        "markjohnson",
+        "9"
+      ],
+      "domains": [],
+      "channels": [],
+      "evidence": [],
+      "history": [
+        {
+          "status": "Pending",
+          "timestamp": "",
+          "channel": "research",
+          "evidence": ""
+        },
+        {
+          "status": "Pending",
+          "timestamp": "",
+          "channel": "research",
+          "evidence": ""
+        }
+      ]
+    },
+    {
+      "companyId": "company_33378252cdcdf260",
+      "company": "MEC (Mountain Equipment Co-op)",
+      "keys": [
+        "mecmountainequipmentcoop",
+        "michellechen",
+        "19"
+      ],
+      "domains": [],
+      "channels": [],
+      "evidence": [],
+      "history": [
+        {
+          "status": "Pending",
+          "timestamp": "",
+          "channel": "research",
+          "evidence": ""
+        },
+        {
+          "status": "Pending",
+          "timestamp": "",
+          "channel": "research",
+          "evidence": ""
+        }
+      ]
+    },
+    {
+      "companyId": "company_8a3d7287b3054c4b",
+      "company": "Airstream",
+      "keys": [
+        "airstream",
+        "ryancooper",
+        "16"
       ],
       "domains": [],
       "channels": [],
@@ -10558,6 +10335,194 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
       ]
     },
     {
+      "companyId": "company_b39cc30585b47213",
+      "company": "Jax Outdoor Gear",
+      "keys": [
+        "jaxoutdoorgear",
+        "jaxgoodscom"
+      ],
+      "domains": [
+        "jaxgoods.com"
+      ],
+      "channels": [
+        "instagram",
+        "facebook",
+        "website_form"
+      ],
+      "evidence": [
+        {
+          "channel": "instagram",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
+          "checkedAt": ""
+        },
+        {
+          "channel": "facebook",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
+          "checkedAt": ""
+        },
+        {
+          "channel": "website_form",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
+          "checkedAt": ""
+        }
+      ],
+      "history": [
+        {
+          "status": "failed_open",
+          "timestamp": "2026-07-16T11:33:51.609Z",
+          "channel": "facebook",
+          "evidence": "identity_mismatch_expected_Jax Outdoor Gear_title_Facebook"
+        },
+        {
+          "status": "approval_pending",
+          "timestamp": "2026-07-17T09:14:18.570Z",
+          "channel": "instagram",
+          "evidence": "driver_error: Command failed: C:\\Program Files\\nodejs\\node.exe E:\\New project\\outreach-dashboard\\codex-chrome-driver.js prepare-instagram-draft {\"port\":9224,\"tabId\":\"55EB0366E2A7C532F41F0658AD075C1B\",\"targetUrl\":\"https://www.instagram.com/jaxoutdoor/\",\"expectedCompany\":\"Jax Outdoor Gear\",\"draft\":\"Hi Jax Outdoor Gear team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a retail/category buyer, the strongest fit is assortment fit, new SKU pipeline, price-tier coverage, and proven consumer demand; your verified outdoor, camping and travel retail social refill channel focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the category buyer or vendor-review owner for a short intro video meeting?\",\"autoSend\":true,\"autoEngage\":true,\"engagementComment\":\"Great outdoor checklist. Useful reminder for hikers preparing a complete, lightweight kit.\",\"replaceExistingDraft\":true}\n"
+        },
+        {
+          "status": "failed_open",
+          "timestamp": "2026-07-20T04:01:49.093Z",
+          "channel": "instagram",
+          "evidence": "instagram_message_button_clicked_composer_not_found"
+        },
+        {
+          "status": "website_contact_unreachable_skip",
+          "timestamp": "2026-07-20T11:31:05.831Z",
+          "channel": "instagram",
+          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:1"
+        },
+        {
+          "status": "website_contact_unreachable_skip",
+          "timestamp": "2026-07-21T04:16:11.104Z",
+          "channel": "facebook",
+          "evidence": "unavailable_profile_page: SKIP TO CONTENT\n\nJAX Store Locations\n\nSearch\nSearch\nLog in\nBag\n404\n\nPAGE NOT FOUND\n\nSorry, the page you are looking for does not exist.\n\nBACK TO HOME\nExplore JAX\nGift Cards\nLocatio;website_contact_all_targets_failed:6;contact_path_strategy_v2"
+        },
+        {
+          "status": "website_contact_unreachable_skip",
+          "timestamp": "2026-07-21T05:04:12.969Z",
+          "channel": "instagram",
+          "evidence": "unavailable_profile_page: SKIP TO CONTENT\n\nJAX Store Locations\n\nSearch\nSearch\nLog in\nBag\n404\n\nPAGE NOT FOUND\n\nSorry, the page you are looking for does not exist.\n\nBACK TO HOME\nExplore JAX\nGift Cards\nLocatio;website_contact_all_targets_failed:6;contact_path_strategy_v2"
+        },
+        {
+          "status": "send_unconfirmed",
+          "timestamp": "2026-07-27T13:30:52.985Z",
+          "channel": "facebook",
+          "evidence": "instagram_draft_inserted_send_button_not_found"
+        },
+        {
+          "status": "send_unconfirmed",
+          "timestamp": "2026-07-27T13:33:03.915Z",
+          "channel": "instagram",
+          "evidence": "instagram_draft_inserted_send_button_not_found"
+        },
+        {
+          "status": "send_unconfirmed",
+          "timestamp": "2026-07-29T04:38:32.751Z",
+          "channel": "facebook",
+          "evidence": "confirmation_invalidated;outgoingBubble:false;empty_composer_is_not_delivery_proof;do_not_count_or_auto_resend"
+        },
+        {
+          "status": "failed_open",
+          "timestamp": "2026-07-29T05:28:19.367Z",
+          "channel": "facebook",
+          "evidence": "facebook_identity_not_verified_fail_closed"
+        },
+        {
+          "status": "failed_open",
+          "timestamp": "2026-07-29T05:34:37.535Z",
+          "channel": "instagram",
+          "evidence": "instagram_identity_not_verified_fail_closed"
+        },
+        {
+          "status": "failed_open",
+          "timestamp": "2026-07-29T09:13:30.698Z",
+          "channel": "facebook",
+          "evidence": "identity_check_runtime_error:SyntaxError: Invalid regular expression flags"
+        },
+        {
+          "status": "failed_open",
+          "timestamp": "2026-07-29T09:17:02.614Z",
+          "channel": "facebook",
+          "evidence": "website_contact_entry_not_verified;contact_entry_clicked:SKIP TO CONTENT;official_social_fallback:facebook;personal_profile_without_company_match_expected_Jax Outdoor Gear_title_Facebook;contact_path_strategy_v2"
+        },
+        {
+          "status": "failed_open",
+          "timestamp": "2026-07-29T09:18:39.566Z",
+          "channel": "instagram",
+          "evidence": "website_contact_entry_not_verified;contact_entry_clicked:SKIP TO CONTENT;official_social_fallback:facebook;personal_profile_without_company_match_expected_Jax Outdoor Gear_title_Facebook;contact_path_strategy_v2"
+        },
+        {
+          "status": "failed_open",
+          "timestamp": "2026-07-29T10:32:54.495Z",
+          "channel": "facebook",
+          "evidence": "website_contact_entry_not_verified;contact_entry_clicked:SKIP TO CONTENT;official_social_fallback:facebook;personal_profile_without_company_match_expected_Jax Outdoor Gear_title_Facebook;contact_path_strategy_v2"
+        },
+        {
+          "status": "failed_open",
+          "timestamp": "2026-07-29T10:35:24.925Z",
+          "channel": "website_form",
+          "evidence": "website_contact_entry_not_verified;contact_entry_clicked:SKIP TO CONTENT;official_social_fallback:facebook;personal_profile_without_company_match_expected_Jax Outdoor Gear_title_Facebook;contact_path_strategy_v2"
+        },
+        {
+          "status": "failed_open",
+          "timestamp": "2026-07-29T10:37:45.968Z",
+          "channel": "instagram",
+          "evidence": "website_contact_entry_not_verified;contact_entry_clicked:SKIP TO CONTENT;official_social_fallback:facebook;instagram_message_button_clicked_composer_not_found;contact_path_strategy_v2"
+        },
+        {
+          "status": "failed_open",
+          "timestamp": "2026-07-29T10:40:05.689Z",
+          "channel": "website_form",
+          "evidence": "website_contact_entry_not_verified;contact_entry_clicked:SKIP TO CONTENT;official_social_fallback:facebook;instagram_message_button_clicked_composer_not_found;contact_path_strategy_v2"
+        },
+        {
+          "status": "failed_open",
+          "timestamp": "2026-07-30T08:36:43.237Z",
+          "channel": "facebook",
+          "evidence": "instagram_message_button_clicked_composer_not_found"
+        },
+        {
+          "status": "failed_open",
+          "timestamp": "2026-07-30T08:39:22.966Z",
+          "channel": "facebook",
+          "evidence": "instagram_message_button_clicked_composer_not_found"
+        },
+        {
+          "status": "send_unconfirmed",
+          "timestamp": "2026-07-30T16:09:07.606Z",
+          "channel": "facebook",
+          "evidence": "facebook_send_clicked_but_confirmation_missing;"
+        },
+        {
+          "status": "failed_open",
+          "timestamp": "2026-08-04T12:04:44.138Z",
+          "channel": "website_form",
+          "evidence": "customer_execution_timeout:30000;queue_continued_to_next_customer"
+        },
+        {
+          "status": "send_unconfirmed",
+          "timestamp": "2026-08-04T12:42:32.951Z",
+          "channel": "facebook",
+          "evidence": "website_contact_entry_not_verified;contact_entry_clicked:SKIP TO CONTENT;official_social_fallback:facebook;facebook_send_clicked_but_confirmation_missing;verified_draft_present_before_irreversible_action;explicit_send_control_verified;facebook_draft_inserted_verified;;contact_path_strategy_v2"
+        }
+      ]
+    },
+    {
       "companyId": "company_a64148148dccba80",
       "company": "Christy Sports",
       "keys": [
@@ -11059,6 +11024,134 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
           "timestamp": "2026-07-27T16:16:00.000+08:00",
           "channel": "facebook",
           "evidence": "official_facebook_identity_verified;message_control_unique;send_enter_pressed;facebook_alert_message_sent;outgoing_bubble_visible;composer_cleared"
+        }
+      ]
+    },
+    {
+      "companyId": "company_7792cb512161a428",
+      "company": "72hours",
+      "keys": [
+        "72hours",
+        "72hoursca"
+      ],
+      "domains": [
+        "72hours.ca"
+      ],
+      "channels": [
+        "instagram",
+        "facebook",
+        "website_form"
+      ],
+      "evidence": [
+        {
+          "channel": "instagram",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
+          "checkedAt": ""
+        },
+        {
+          "channel": "facebook",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
+          "checkedAt": ""
+        },
+        {
+          "channel": "website_form",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
+          "checkedAt": ""
+        }
+      ],
+      "history": [
+        {
+          "status": "failed_open",
+          "timestamp": "2026-07-16T07:04:31.284Z",
+          "channel": "facebook",
+          "evidence": "driver_error: CDP timeout: Input.dispatchMouseEvent"
+        },
+        {
+          "status": "send_unconfirmed",
+          "timestamp": "2026-07-16T11:17:42.014Z",
+          "channel": "facebook",
+          "evidence": "facebook_draft_not_inserted_after_composer_refocus;editable_count:2;composer_text_length:1;active:BODY"
+        },
+        {
+          "status": "failed_open",
+          "timestamp": "2026-07-16T11:31:29.559Z",
+          "channel": "facebook",
+          "evidence": "identity_mismatch_expected_72hours_title_Facebook"
+        },
+        {
+          "status": "failed_open",
+          "timestamp": "2026-07-17T09:07:28.138Z",
+          "channel": "instagram",
+          "evidence": "unavailable_profile_page: 很抱歉，无法访问此页面\n你点击的链接可能已损坏，或页面已被移除。返回 Instagram。\nMeta\n关于\n博客\n工作\n帮助\nAPI\n隐私设置\n条款\n地点\n热门\nInstagram Lite\nMeta AI\nThreads\n联系人上传和非用户\nMeta Verified\n中文(简体)\nAfrikaans\nالعربية\nČeština\nDansk\nDeuts"
+        },
+        {
+          "status": "website_contact_unreachable_skip",
+          "timestamp": "2026-07-20T11:52:13.300Z",
+          "channel": "facebook",
+          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:1"
+        },
+        {
+          "status": "post_liked",
+          "timestamp": "2026-07-21T04:08:34.062Z",
+          "channel": "facebook",
+          "evidence": "facebook_engagement_completed_message_unavailable;facebook_composer_unavailable_closed_no_retry;follow_not_available;post_liked;facebook_post_like_clicked"
+        },
+        {
+          "status": "failed_open",
+          "timestamp": "2026-07-29T11:17:01.049Z",
+          "channel": "facebook",
+          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;personal_profile_without_company_match_expected_72hours_title_Facebook;contact_path_strategy_v2"
+        },
+        {
+          "status": "failed_open",
+          "timestamp": "2026-07-29T12:46:55.787Z",
+          "channel": "website_form",
+          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;personal_profile_without_company_match_expected_72hours_title_Facebook;contact_path_strategy_v2"
+        },
+        {
+          "status": "failed_open",
+          "timestamp": "2026-07-30T08:36:02.345Z",
+          "channel": "facebook",
+          "evidence": "personal_profile_without_company_match_expected_72hours_title_Facebook"
+        },
+        {
+          "status": "failed_open",
+          "timestamp": "2026-07-30T08:43:22.016Z",
+          "channel": "facebook",
+          "evidence": "facebook_draft_not_inserted_before_send;pre_send_failure_status_repaired"
+        },
+        {
+          "status": "failed_open",
+          "timestamp": "2026-07-30T08:47:18.504Z",
+          "channel": "facebook",
+          "evidence": "facebook_draft_not_inserted_before_send"
+        },
+        {
+          "status": "failed_open",
+          "timestamp": "2026-08-04T12:02:55.309Z",
+          "channel": "website_form",
+          "evidence": "customer_execution_timeout:30000;queue_continued_to_next_customer"
+        },
+        {
+          "status": "send_unconfirmed",
+          "timestamp": "2026-08-04T12:40:32.240Z",
+          "channel": "facebook",
+          "evidence": "website_contact_entry_not_verified;contact_entry_clicked:Contact Us;official_social_fallback:facebook;facebook_send_clicked_but_confirmation_missing;verified_draft_present_before_irreversible_action;explicit_send_control_verified;facebook_draft_inserted_verified;;contact_path_strategy_v2"
         }
       ]
     },
@@ -12647,6 +12740,81 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
       ]
     },
     {
+      "companyId": "company_7d3e60103956de7c",
+      "company": "Mammut Store",
+      "keys": [
+        "mammutstore",
+        "mammutcom"
+      ],
+      "domains": [
+        "mammut.com"
+      ],
+      "channels": [
+        "facebook",
+        "website_form"
+      ],
+      "evidence": [
+        {
+          "channel": "facebook",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
+          "checkedAt": ""
+        },
+        {
+          "channel": "website_form",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
+          "checkedAt": ""
+        }
+      ],
+      "history": [
+        {
+          "status": "failed_open",
+          "timestamp": "2026-07-29T10:33:10.390Z",
+          "channel": "facebook",
+          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;personal_profile_without_company_match_expected_Mammut Store_title_Facebook;contact_path_strategy_v2"
+        },
+        {
+          "status": "failed_open",
+          "timestamp": "2026-07-29T10:35:24.980Z",
+          "channel": "website_form",
+          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;personal_profile_without_company_match_expected_Mammut Store_title_Facebook;contact_path_strategy_v2"
+        },
+        {
+          "status": "failed_open",
+          "timestamp": "2026-07-30T08:36:49.358Z",
+          "channel": "facebook",
+          "evidence": "personal_profile_without_company_match_expected_Mammut Store_title_Facebook"
+        },
+        {
+          "status": "failed_open",
+          "timestamp": "2026-07-30T08:44:28.813Z",
+          "channel": "facebook",
+          "evidence": "facebook_profile_no_message_button"
+        },
+        {
+          "status": "failed_open",
+          "timestamp": "2026-08-04T12:05:49.882Z",
+          "channel": "website_form",
+          "evidence": "customer_execution_timeout:30000;queue_continued_to_next_customer"
+        },
+        {
+          "status": "send_unconfirmed",
+          "timestamp": "2026-08-04T12:43:42.821Z",
+          "channel": "facebook",
+          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;facebook_send_clicked_but_confirmation_missing;verified_draft_present_before_irreversible_action;explicit_send_control_verified;facebook_draft_inserted_verified;;contact_path_strategy_v2"
+        }
+      ]
+    },
+    {
       "companyId": "company_e45ef472a8a0e2ed",
       "company": "Gecko Overland",
       "keys": [
@@ -14026,6 +14194,16 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
       "evidence": "instagram_message_sent_confirmed_after_send_click;instagram_draft_inserted_verified;sentText:false;outgoingBubble:true;emptyComposer:true;follow_not_available;instagram_post_not_available"
     },
     {
+      "companyId": "company_b39cc30585b47213",
+      "company": "Jax Outdoor Gear",
+      "permanent": true,
+      "crossChannel": true,
+      "reason": "previous_customer_development_no_repeat",
+      "sourceStatus": "send_unconfirmed",
+      "sourceTimestamp": "2026-08-04T12:42:32.951Z",
+      "evidence": "website_contact_entry_not_verified;contact_entry_clicked:SKIP TO CONTENT;official_social_fallback:facebook;facebook_send_clicked_but_confirmation_missing;verified_draft_present_before_irreversible_action;explicit_send_control_verified;facebook_draft_inserted_verified;;contact_path_strategy_v2"
+    },
+    {
       "companyId": "company_a64148148dccba80",
       "company": "Christy Sports",
       "permanent": true,
@@ -14084,6 +14262,16 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
       "sourceStatus": "sent_confirmed",
       "sourceTimestamp": "2026-07-27T16:16:00.000+08:00",
       "evidence": "official_facebook_identity_verified;message_control_unique;send_enter_pressed;facebook_alert_message_sent;outgoing_bubble_visible;composer_cleared"
+    },
+    {
+      "companyId": "company_7792cb512161a428",
+      "company": "72hours",
+      "permanent": true,
+      "crossChannel": true,
+      "reason": "previous_customer_development_no_repeat",
+      "sourceStatus": "send_unconfirmed",
+      "sourceTimestamp": "2026-08-04T12:40:32.240Z",
+      "evidence": "website_contact_entry_not_verified;contact_entry_clicked:Contact Us;official_social_fallback:facebook;facebook_send_clicked_but_confirmation_missing;verified_draft_present_before_irreversible_action;explicit_send_control_verified;facebook_draft_inserted_verified;;contact_path_strategy_v2"
     },
     {
       "companyId": "company_a9ebbedb2253bf40",
@@ -14274,6 +14462,16 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
       "sourceStatus": "sent_confirmed",
       "sourceTimestamp": "2026-07-16T13:30:40.822Z",
       "evidence": "instagram_message_sent_confirmed_after_send_click;instagram_draft_inserted_verified;sentText:false;outgoingBubble:true;emptyComposer:true;follow_not_available;instagram_post_not_available"
+    },
+    {
+      "companyId": "company_7d3e60103956de7c",
+      "company": "Mammut Store",
+      "permanent": true,
+      "crossChannel": true,
+      "reason": "previous_customer_development_no_repeat",
+      "sourceStatus": "send_unconfirmed",
+      "sourceTimestamp": "2026-08-04T12:43:42.821Z",
+      "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;facebook_send_clicked_but_confirmation_missing;verified_draft_present_before_irreversible_action;explicit_send_control_verified;facebook_draft_inserted_verified;;contact_path_strategy_v2"
     },
     {
       "companyId": "company_e45ef472a8a0e2ed",
@@ -14677,11 +14875,11 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
     ]
   },
   "ownerSummary": {
-    "generatedAt": "2026-08-04T12:37:16.455Z",
+    "generatedAt": "2026-08-04T12:59:53.584Z",
     "phase": "autonomous_sales_operating_system_v1",
     "kpis": {
-      "companies": 177,
-      "permanentlySuppressed": 100,
+      "companies": 185,
+      "permanentlySuppressed": 103,
       "plannedActions": 3,
       "verifiedEvidenceRoutes": 39
     },
