@@ -4,6 +4,21 @@ const path = require('path');
 const ROOT = __dirname;
 const RUN_DIR = path.join(ROOT, 'daily-runs');
 const CONFIG_PATH = path.join(ROOT, 'daily-automation-config.json');
+const TRANSIENT_FILE_ERROR_CODES = new Set(['EBUSY', 'EACCES', 'EPERM', 'UNKNOWN']);
+
+function writeFileWithRetry(file, data, attempts = 10) {
+  let lastError;
+  for (let attempt = 0; attempt < attempts; attempt += 1) {
+    try {
+      return fs.writeFileSync(file, data);
+    } catch (error) {
+      lastError = error;
+      if (!TRANSIENT_FILE_ERROR_CODES.has(error && error.code) || attempt === attempts - 1) throw error;
+      Atomics.wait(new Int32Array(new SharedArrayBuffer(4)), 0, 0, 100);
+    }
+  }
+  throw lastError;
+}
 const DEFAULT_CONFIG = {
   limits: { total: 100, develop: 70, emailPriority: 15, retryOrAlternate: 10, verifyTarget: 5 },
   cadence: {
@@ -866,7 +881,7 @@ function writeRunArtifacts(run) {
   fs.mkdirSync(RUN_DIR, { recursive: true });
   const jsonPath = path.join(RUN_DIR, `${run.date}-daily-automation.json`);
   const csvPath = path.join(RUN_DIR, `${run.date}-daily-queue.csv`);
-  fs.writeFileSync(jsonPath, JSON.stringify(run, null, 2));
+  writeFileWithRetry(jsonPath, JSON.stringify(run, null, 2));
   const columns = ['rank', 'id', 'name', 'company', 'platform', 'country', 'targetRegion', 'marketStatus', 'agencyState', 'fitScore', 'marketScore', 'dealProbabilityScore', 'priorityScore', 'contactChannelScore', 'targetRegionScore', 'action', 'dueNow', 'localTime', 'nextBest', 'reason', 'url', 'contactUrl', 'contactSearchUrl', 'emailFrom', 'publicEmail', 'websiteContactSubject', 'websiteContactMessage', 'contactPhone', 'vendorPortal', 'linkedinUrl', 'headquarters', 'founded', 'companyScale'];
   const rows = run.dailyQueue.map((item, index) => ({
     rank: index + 1,
@@ -875,9 +890,9 @@ function writeRunArtifacts(run) {
     localTime: item.workingTime && item.workingTime.localTime || '',
     nextBest: item.workingTime && item.workingTime.nextBest || '',
   }));
-  fs.writeFileSync(csvPath, [columns.join(','), ...rows.map(row => columns.map(column => csvCell(row[column])).join(','))].join('\n'));
-  fs.writeFileSync(path.join(ROOT, 'daily-automation-latest.json'), JSON.stringify(run, null, 2));
-  fs.writeFileSync(path.join(ROOT, 'daily-automation-latest.js'), `window.DAILY_AUTOMATION_LATEST = ${JSON.stringify(run, null, 2)};\n`);
+  writeFileWithRetry(csvPath, [columns.join(','), ...rows.map(row => columns.map(column => csvCell(row[column])).join(','))].join('\n'));
+  writeFileWithRetry(path.join(ROOT, 'daily-automation-latest.json'), JSON.stringify(run, null, 2));
+  writeFileWithRetry(path.join(ROOT, 'daily-automation-latest.js'), `window.DAILY_AUTOMATION_LATEST = ${JSON.stringify(run, null, 2)};\n`);
   writeSystemVisibilityArtifact(run);
   return { jsonPath, csvPath };
 }
@@ -1506,5 +1521,6 @@ module.exports = {
   isHistoricalDevelopmentResult,
   legacyStatusIndicatesTouch,
   knownTouchIndex,
+  writeFileWithRetry,
   preferSocialChannels,
 };

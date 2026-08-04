@@ -60,3 +60,21 @@ test('policy validation rejects a run maximum above fifty', () => {
 test('Shanghai result dates are derived from timestamps rather than UTC string prefixes', () => {
   assert.equal(runtime.resultDate({ timestamp: '2026-07-29T16:30:00.000Z' }), '2026-07-30');
 });
+
+test('runtime retries bounded transient Windows file-operation failures', () => {
+  let calls = 0;
+  const result = runtime.retryTransientFileOperation(() => {
+    calls += 1;
+    if (calls < 3) throw Object.assign(new Error('locked'), { code: 'EPERM' });
+    return 'written';
+  }, 3, 0);
+  assert.equal(result, 'written');
+  assert.equal(calls, 3);
+});
+
+test('daily artifact writer uses the bounded transient write helper', () => {
+  const source = fs.readFileSync(path.join(__dirname, '..', 'outreach-dashboard', 'daily-automation-runner.js'), 'utf8');
+  for (const artifact of ['daily-automation-latest.json', 'daily-automation-latest.js']) {
+    assert.match(source, new RegExp(`writeFileWithRetry\\(path\\.join\\(ROOT, '${artifact.replace('.', '\\.')}'`));
+  }
+});

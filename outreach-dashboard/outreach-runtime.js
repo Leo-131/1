@@ -11,6 +11,21 @@ const TODAY_CONTEXT_PATH = path.join(RUNTIME_ROOT, 'today-context.json');
 const PREVIOUS_RUN_PATH = path.join(RUNTIME_ROOT, 'previous-run.json');
 const EXPECTED_SCHEMA_VERSION = 1;
 const CONFIRMED_STATUSES = new Set(['sent_confirmed', 'submitted_confirmed']);
+const TRANSIENT_FILE_ERROR_CODES = new Set(['EBUSY', 'EACCES', 'EPERM', 'UNKNOWN']);
+
+function retryTransientFileOperation(operation, attempts = 10, delayMs = 100) {
+  let lastError;
+  for (let attempt = 0; attempt < attempts; attempt += 1) {
+    try {
+      return operation();
+    } catch (error) {
+      lastError = error;
+      if (!TRANSIENT_FILE_ERROR_CODES.has(error && error.code) || attempt === attempts - 1) throw error;
+      Atomics.wait(new Int32Array(new SharedArrayBuffer(4)), 0, 0, delayMs);
+    }
+  }
+  throw lastError;
+}
 
 function readJson(file, fallback = null) {
   try {
@@ -34,8 +49,13 @@ function readJsonScriptArray(file, globalName) {
 function writeJsonAtomic(file, value) {
   fs.mkdirSync(path.dirname(file), { recursive: true });
   const temp = `${file}.${process.pid}.${Date.now()}.tmp`;
-  fs.writeFileSync(temp, `${JSON.stringify(value, null, 2)}\n`, { mode: 0o600 });
-  fs.renameSync(temp, file);
+  retryTransientFileOperation(() => fs.writeFileSync(temp, `${JSON.stringify(value, null, 2)}\n`, { mode: 0o600 }));
+  try {
+    retryTransientFileOperation(() => fs.renameSync(temp, file));
+  } catch (error) {
+    try { fs.unlinkSync(temp); } catch {}
+    throw error;
+  }
 }
 
 function shanghaiDate(now = new Date()) {
@@ -185,6 +205,7 @@ module.exports = {
   buildContext,
   companyKey,
   readJsonScriptArray,
+  retryTransientFileOperation,
   refreshRuntime,
   resultDate,
   shanghaiDate,
