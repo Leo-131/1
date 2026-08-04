@@ -72,9 +72,17 @@ function evidenceScore(item = {}) {
 function isCustomerInteraction(result = {}) {
   const status = clean(result.status || result.sendStatus);
   if (BLOCKING_STATUSES.has(status)) {
-    return status !== 'send_unconfirmed' || /send_clicked|message_sent|submit_clicked|sent_folder_record_missing/i.test(String(result.evidence || ''));
+    if (status !== 'send_unconfirmed') return true;
+    const evidence = String(result.evidence || '');
+    if (/message_sent|persisted_after_reload|sent_folder_record_missing/i.test(evidence)) return true;
+    return /send_clicked|enter_send_attempted|submit_clicked/i.test(evidence)
+      && /verified_draft_present_before_irreversible_action|alibaba_webmail_send_physical_click_dispatched|website_contact_form_submit_clicked/i.test(evidence);
   }
-  return status === 'failed_open' && /composer_preserved_for_technical_evidence|alibaba_webmail_content_inserted|message_sent|send_clicked/i.test(String(result.evidence || ''));
+  if (status !== 'failed_open') return false;
+  const evidence = String(result.evidence || '');
+  return /message_sent|persisted_after_reload/i.test(evidence)
+    || (/send_clicked|enter_send_attempted/i.test(evidence)
+      && /verified_draft_present_before_irreversible_action/i.test(evidence));
 }
 
 function buildCompanyTruth({ leads = [], results = [], records = [] } = {}) {

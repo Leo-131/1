@@ -1310,6 +1310,9 @@ test('daily execution checkpoints completed tasks and resumes without duplicate 
   assert.ok(mainSource.includes('checkpointResultIsTerminal(item)'));
   assert.ok(mainSource.includes('prior_send_unconfirmed_no_resend|sent_folder_record_missing'));
   assert.ok(mainSource.includes('checkpoint: readJson(dailyExecutionCheckpointPath(), null)'));
+  assert.ok(mainSource.includes("rule: 'completed checkpoints are ignored; only terminal results from an active interrupted checkpoint suppress their exact task id'"));
+  assert.ok(mainSource.includes('snapshotCompleted: Boolean(checkpointSnapshot && checkpointSnapshot.completed === true)'));
+  assert.ok(mainSource.includes('activeResume: Boolean(checkpoint)'));
 });
 
 test('latest completed execution is reconciled into the same-day ledger before selecting another batch', () => {
@@ -1451,18 +1454,19 @@ test('email performs a final company-wide permanent dedupe check immediately bef
   assert.ok(sendGate.indexOf('priorCompanyContact') < sendGate.indexOf('sendAndConfirmAlibabaEmail'));
 });
 
-test('a preserved populated email composer permanently blocks reopening that company', () => {
+test('a preserved populated email composer stays route-specific and never suppresses the whole company', () => {
   const blockerStart = mainSource.indexOf('function historicalAutomationResultBlocksCompany');
   const blockerEnd = mainSource.indexOf('function exactSocialHandleMatchesCompany', blockerStart);
   const blocker = mainSource.slice(blockerStart, blockerEnd);
   assert.match(blocker, /result\.status !== 'failed_open'/);
-  assert.match(blocker, /composer_preserved_for_technical_evidence/);
-  assert.match(blocker, /alibaba_webmail_content_inserted/);
+  assert.doesNotMatch(blocker, /composer_preserved_for_technical_evidence/);
+  assert.doesNotMatch(blocker, /alibaba_webmail_content_inserted/);
   const discoveryBlockerStart = dailyRunnerSource.indexOf('function isHistoricalDevelopmentResult');
   const discoveryBlockerEnd = dailyRunnerSource.indexOf('function noSafeMessageButtonEvidence', discoveryBlockerStart);
   const discoveryBlocker = dailyRunnerSource.slice(discoveryBlockerStart, discoveryBlockerEnd);
-  assert.match(discoveryBlocker, /composer_preserved_for_technical_evidence/);
-  assert.match(discoveryBlocker, /alibaba_webmail_content_inserted/);
+  assert.doesNotMatch(discoveryBlocker, /composer_preserved_for_technical_evidence/);
+  assert.doesNotMatch(discoveryBlocker, /alibaba_webmail_content_inserted/);
+  assert.ok(mainSource.includes('composer_preserved_for_technical_evidence'));
 });
 
 test('dedicated website and Instagram execution report truthful transport and confirm Enter fallback', () => {

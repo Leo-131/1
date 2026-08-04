@@ -304,7 +304,7 @@ function historicalAutomationResultBlocksCompany(result = {}) {
   }
   if (result.status !== 'failed_open') return false;
   const evidence = String(result.evidence || '');
-  return /message_sent|composer_preserved_for_technical_evidence|alibaba_webmail_content_inserted/i.test(evidence)
+  return /message_sent|persisted_after_reload/i.test(evidence)
     || (/send_clicked_but_confirmation_missing|enter_send_attempted_but_confirmation_missing/i.test(evidence)
       && /verified_draft_present_before_irreversible_action/i.test(evidence));
 }
@@ -4267,6 +4267,7 @@ async function runDailyAutomationQueue(payload = {}) {
     .sort(developmentPriorityCompare);
   const executable = [];
   const skipped = [];
+  const checkpointSnapshot = readJson(dailyExecutionCheckpointPath(), null);
   const checkpoint = readDailyExecutionCheckpoint(latest.date);
   const checkpointResults = Array.isArray(checkpoint && checkpoint.completedResults)
     ? checkpoint.completedResults
@@ -4280,6 +4281,13 @@ async function runDailyAutomationQueue(payload = {}) {
   const checkpointResultsById = new Map(
     checkpointResults.filter(Boolean).map(item => [item.id, item]),
   );
+  const checkpointAudit = {
+    snapshotPresent: Boolean(checkpointSnapshot),
+    snapshotCompleted: Boolean(checkpointSnapshot && checkpointSnapshot.completed === true),
+    activeResume: Boolean(checkpoint),
+    terminalTaskCount: checkpointCompletedIds.size,
+    rule: 'completed checkpoints are ignored; only terminal results from an active interrupted checkpoint suppress their exact task id',
+  };
   const selectedCompanyKeys = new Set(sameDayCompanyKeys);
   for (const item of candidatePool) {
     if (executable.length >= limit) break;
@@ -4370,6 +4378,7 @@ async function runDailyAutomationQueue(payload = {}) {
       blockerSummary,
       blockerCounts,
       queueGoalStatus,
+      checkpointAudit,
       summary: latest.summary || {},
       bounceReconciliation,
     };
@@ -4541,6 +4550,7 @@ async function runDailyAutomationQueue(payload = {}) {
     blockerSummary,
     blockerCounts,
     queueGoalStatus,
+    checkpointAudit,
     platformCircuitState,
     userVisibleStatus,
     recoveryHint,

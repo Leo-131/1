@@ -5,13 +5,25 @@ const os = require('os');
 const path = require('path');
 const intelligence = require('../outreach-dashboard/outreach-intelligence');
 
-test('company truth merges channel variants and creates permanent cross-channel suppression', () => {
-  const companies = intelligence.buildCompanyTruth({ leads: [{ company: 'Acme Outdoor', website: 'https://acme.example', platform: 'facebook' }], results: [{ company: 'Acme Outdoor', status: 'send_unconfirmed', evidence: 'send_clicked_but_confirmation_missing', timestamp: '2026-08-04T01:00:00Z' }] });
+test('company truth suppresses only confirmed or evidence-chained irreversible customer interaction', () => {
+  const companies = intelligence.buildCompanyTruth({ leads: [{ company: 'Acme Outdoor', website: 'https://acme.example', platform: 'facebook' }], results: [{ company: 'Acme Outdoor', status: 'send_unconfirmed', evidence: 'send_clicked_but_confirmation_missing;verified_draft_present_before_irreversible_action', timestamp: '2026-08-04T01:00:00Z' }] });
   assert.equal(companies.length, 1);
   const ledger = intelligence.buildSuppressionLedger(companies);
   assert.equal(ledger.length, 1);
   assert.equal(ledger[0].permanent, true);
   assert.equal(ledger[0].crossChannel, true);
+});
+
+test('bare click markers, preserved drafts, and technical failures never suppress a whole company', () => {
+  const companies = intelligence.buildCompanyTruth({
+    leads: [{ company: 'Retry Outdoor', website: 'https://retry.example', platform: 'facebook' }],
+    results: [
+      { company: 'Retry Outdoor', status: 'send_unconfirmed', evidence: 'facebook_send_clicked_but_confirmation_missing' },
+      { company: 'Retry Outdoor', status: 'failed_open', evidence: 'composer_preserved_for_technical_evidence:true;alibaba_webmail_content_inserted' },
+      { company: 'Retry Outdoor', status: 'failed_open', evidence: 'chrome_target_not_found' },
+    ],
+  });
+  assert.equal(intelligence.buildSuppressionLedger(companies).length, 0);
 });
 
 test('evidence scoring rejects guesses and accepts first-party cross verified routes', () => {

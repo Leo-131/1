@@ -496,7 +496,7 @@ function isHistoricalDevelopmentResult(result = {}) {
   if (HISTORICAL_DEVELOPMENT_STATUSES.has(result.status)) return isTouchResult(result);
   if (result.status !== 'failed_open') return false;
   const evidence = String(result.evidence || '');
-  return /message_sent|composer_preserved_for_technical_evidence|alibaba_webmail_content_inserted/i.test(evidence)
+  return /message_sent|persisted_after_reload/i.test(evidence)
     || (/send_clicked_but_confirmation_missing|enter_send_attempted_but_confirmation_missing/i.test(evidence)
       && /verified_draft_present_before_irreversible_action/i.test(evidence));
 }
