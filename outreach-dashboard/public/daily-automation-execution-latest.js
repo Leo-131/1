@@ -16,7 +16,7 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
   "mode": "serial-single-target",
   "batchMode": "parallel-batches",
   "parallelLimit": 1,
-  "limit": 25,
+  "limit": 50,
   "queueDate": "2026-08-04",
   "queueSource": "dailyPotentialPool",
   "executed": [
@@ -29,14 +29,14 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "ok": false,
       "sendStatus": "failed_open",
       "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;facebook_profile_no_message_button;contact_path_strategy_v2",
-      "timestamp": "2026-08-04T13:35:01.227Z",
+      "timestamp": "2026-08-04T13:38:29.945Z",
       "chromeOpen": {
         "ok": true,
         "engine": "codex-chrome-cdp",
         "port": 9224,
         "targetUrl": "https://www.facebook.com/LDMountainCentre",
-        "tabId": "95828893841FA4A6077D0398FDB909C0",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/95828893841FA4A6077D0398FDB909C0",
+        "tabId": "E3308D29EFA95ACBC8EAB0106E1BDCFF",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/E3308D29EFA95ACBC8EAB0106E1BDCFF",
         "title": "Facebook"
       },
       "result": {
@@ -50,8 +50,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
           "engine": "codex-chrome-cdp",
           "port": 9224,
           "targetUrl": "https://www.facebook.com/LDMountainCentre",
-          "tabId": "95828893841FA4A6077D0398FDB909C0",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/95828893841FA4A6077D0398FDB909C0",
+          "tabId": "E3308D29EFA95ACBC8EAB0106E1BDCFF",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/E3308D29EFA95ACBC8EAB0106E1BDCFF",
           "title": "Facebook"
         },
         "sendStatus": "failed_open",
@@ -79,14 +79,14 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "ok": false,
       "sendStatus": "failed_open",
       "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;facebook_profile_no_message_button;contact_path_strategy_v2",
-      "timestamp": "2026-08-04T13:35:01.227Z",
+      "timestamp": "2026-08-04T13:38:29.945Z",
       "chromeOpen": {
         "ok": true,
         "engine": "codex-chrome-cdp",
         "port": 9224,
         "targetUrl": "https://www.facebook.com/LDMountainCentre",
-        "tabId": "95828893841FA4A6077D0398FDB909C0",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/95828893841FA4A6077D0398FDB909C0",
+        "tabId": "E3308D29EFA95ACBC8EAB0106E1BDCFF",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/E3308D29EFA95ACBC8EAB0106E1BDCFF",
         "title": "Facebook"
       },
       "result": {
@@ -100,8 +100,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
           "engine": "codex-chrome-cdp",
           "port": 9224,
           "targetUrl": "https://www.facebook.com/LDMountainCentre",
-          "tabId": "95828893841FA4A6077D0398FDB909C0",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/95828893841FA4A6077D0398FDB909C0",
+          "tabId": "E3308D29EFA95ACBC8EAB0106E1BDCFF",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/E3308D29EFA95ACBC8EAB0106E1BDCFF",
           "title": "Facebook"
         },
         "sendStatus": "failed_open",
@@ -1609,12 +1609,12 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     "stderr": "",
     "error": "",
     "visibility": {
-      "updatedAt": "2026-08-04T13:35:02.445Z",
+      "updatedAt": "2026-08-04T13:38:31.192Z",
       "source": "main-refreshDailyAutomationArtifacts",
       "runDate": "2026-08-04",
-      "artifactGeneratedAt": "2026-08-04T13:35:01.397Z",
-      "executionGeneratedAt": "2026-08-04T13:32:56.074Z",
-      "githubSyncUpdatedAt": "2026-08-04T13:06:46.058Z",
+      "artifactGeneratedAt": "2026-08-04T13:38:30.126Z",
+      "executionGeneratedAt": "2026-08-04T13:35:03.297Z",
+      "githubSyncUpdatedAt": "2026-08-04T13:35:51.581Z",
       "counts": {
         "dailyQueue": 99,
         "googleDiscovered": 77,
@@ -1667,8 +1667,10 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     }
   },
   "alibabaSessionProbe": {
-    "ok": false,
-    "evidence": "alibaba_webmail_compose_button_missing"
+    "ok": true,
+    "evidence": "alibaba_webmail_authenticated_compose_visible",
+    "url": "https://qiye.aliyun.com/alimail/entries/v5.1/mail/sentitems/all",
+    "title": "阿里邮箱"
   },
   "bounceReconciliation": {
     "ok": false,
@@ -1680,6 +1682,6 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "ALIBABA_SMTP_SECURITY_PASSWORD"
     ]
   },
-  "ledgerReconciliationCount": 13,
-  "completedAt": "2026-08-04T13:35:03.297Z"
+  "ledgerReconciliationCount": 1,
+  "completedAt": "2026-08-04T13:38:31.852Z"
 };
