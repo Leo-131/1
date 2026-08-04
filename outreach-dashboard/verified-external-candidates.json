@@ -71,5 +71,49 @@
       "official marketplace partner application form"
     ],
     "externalVerificationStatus": "official_supplier_form_verified"
+  },
+  {
+    "company": "Campervan Gift",
+    "country": "United Kingdom",
+    "url": "https://www.campervangift.co.uk/",
+    "contactUrl": "https://www.campervangift.co.uk/become-a-supplier/",
+    "publicEmail": "sales@campervangift.co.uk",
+    "contactEmail": "sales@campervangift.co.uk",
+    "publicEmailStatus": "Official supplier email published on the Campervan Gift become-a-supplier page.",
+    "emailVerificationStatus": "official_public_business_email",
+    "emailEvidence": "official_supplier_page",
+    "segment": "campervan, travel and outdoor-lifestyle retailer",
+    "customerType": "key_account",
+    "fitScore": 82,
+    "background": "UK campervan and travel retailer whose official supplier page invites new products for its sourcing team and publishes a supplier email.",
+    "buyerPersona": "Sourcing, supplier onboarding or travel-category buying owner.",
+    "evidenceUrl": "https://www.campervangift.co.uk/become-a-supplier/",
+    "dataSources": [
+      "official company website",
+      "official supplier email page"
+    ],
+    "externalVerificationStatus": "official_supplier_email_verified"
+  },
+  {
+    "company": "BBQ Fans",
+    "country": "United States",
+    "url": "https://www.bbqfans.com/",
+    "contactUrl": "https://www.bbqfans.com/become-a-supplier/",
+    "publicEmail": "sales@bbqfans.com",
+    "contactEmail": "sales@bbqfans.com",
+    "publicEmailStatus": "Official supplier email published on the BBQ Fans become-a-supplier page.",
+    "emailVerificationStatus": "official_public_business_email",
+    "emailEvidence": "official_supplier_page",
+    "segment": "outdoor cooking and camping retailer",
+    "customerType": "key_account",
+    "fitScore": 79,
+    "background": "Outdoor cooking retailer whose official supplier page invites relevant product suppliers and publishes its supplier email.",
+    "buyerPersona": "Supplier partnerships, outdoor cooking category buying or merchandising owner.",
+    "evidenceUrl": "https://www.bbqfans.com/become-a-supplier/",
+    "dataSources": [
+      "official company website",
+      "official supplier email page"
+    ],
+    "externalVerificationStatus": "official_supplier_email_verified"
   }
 ]
