@@ -29,7 +29,7 @@
       "ok": false,
       "sendStatus": "failed_open",
       "evidence": "verified_email_auto_send_no_manual_review;alibaba_webmail_content_inserted_recipient_control_verified;alibaba_webmail_draft_verification_failed;recipientReady:false;subjectReady:true;bodyReady:true;recipientStageValueMatch:true;recipientStageType:search;recipientStageRole:combobox;recipientStageClass:ant-select-selection-search-input;recipientStageXY:252,13;recipientControl:INPUT,search,combobox,ant-select-selection-search-input hide-clear;recipientControlXY:0,0;recipientControlShadow:false;composer_preserved_for_technical_evidence:true;contact_path_strategy_v2",
-      "timestamp": "2026-08-04T10:24:18.699Z",
+      "timestamp": "2026-08-04T11:03:13.795Z",
       "chromeOpen": null,
       "result": {
         "ok": false,
@@ -57,7 +57,7 @@
       "ok": false,
       "sendStatus": "failed_open",
       "evidence": "verified_email_auto_send_no_manual_review;alibaba_webmail_content_inserted_recipient_control_verified;alibaba_webmail_draft_verification_failed;recipientReady:false;subjectReady:true;bodyReady:true;recipientStageValueMatch:true;recipientStageType:search;recipientStageRole:combobox;recipientStageClass:ant-select-selection-search-input;recipientStageXY:252,13;recipientControl:INPUT,search,combobox,ant-select-selection-search-input hide-clear;recipientControlXY:0,0;recipientControlShadow:false;composer_preserved_for_technical_evidence:true;contact_path_strategy_v2",
-      "timestamp": "2026-08-04T10:24:18.699Z",
+      "timestamp": "2026-08-04T11:03:13.795Z",
       "chromeOpen": null,
       "result": {
         "ok": false,
@@ -77,116 +77,11 @@
   ],
   "skipped": [
     {
-      "id": "google-customer-cms-distribution-website-contact",
-      "company": "CMS Distribution",
-      "action": "email_priority",
-      "platform": "website_form",
-      "reason": "official_website_contact_channel"
-    },
-    {
-      "id": "google-customer-trekitt-website-contact",
-      "company": "Trekitt",
+      "id": "google-customer-varuste-website-contact",
+      "company": "Varuste",
       "action": "verify_target",
       "platform": "website_form",
       "reason": "homepage_only_contact_path_requires_verification"
-    },
-    {
-      "id": "google-customer-ultralight-outdoor-gear-website-contact",
-      "company": "Ultralight Outdoor Gear",
-      "action": "verify_target",
-      "platform": "website_form",
-      "reason": "homepage_only_contact_path_requires_verification"
-    },
-    {
-      "id": "google-customer-alpinetrek-website-contact",
-      "company": "Alpinetrek",
-      "action": "verify_target",
-      "platform": "website_form",
-      "reason": "homepage_only_contact_path_requires_verification"
-    },
-    {
-      "id": "google-customer-above-and-beyond-website-contact",
-      "company": "Above and Beyond",
-      "action": "verify_target",
-      "platform": "website_form",
-      "reason": "homepage_only_contact_path_requires_verification"
-    },
-    {
-      "id": "google-customer-ld-mountain-centre-website-contact",
-      "company": "LD Mountain Centre",
-      "action": "verify_target",
-      "platform": "website_form",
-      "reason": "homepage_only_contact_path_requires_verification"
-    },
-    {
-      "id": "google-customer-taunton-leisure-website-contact",
-      "company": "Taunton Leisure",
-      "action": "verify_target",
-      "platform": "website_form",
-      "reason": "homepage_only_contact_path_requires_verification"
-    },
-    {
-      "id": "google-customer-tiso-website-contact",
-      "company": "Tiso",
-      "action": "verify_target",
-      "platform": "website_form",
-      "reason": "homepage_only_contact_path_requires_verification"
-    },
-    {
-      "id": "google-customer-sportpursuit-website-contact",
-      "company": "SportPursuit",
-      "action": "verify_target",
-      "platform": "website_form",
-      "reason": "homepage_only_contact_path_requires_verification"
-    },
-    {
-      "id": "google-customer-cms-distribution-linkedin",
-      "company": "CMS Distribution",
-      "action": "develop",
-      "platform": "linkedin",
-      "reason": "social_profile_not_first_party_verified"
-    },
-    {
-      "id": "google-customer-above-and-beyond-facebook",
-      "company": "Above and Beyond",
-      "action": "develop",
-      "platform": "facebook",
-      "reason": "social_profile_not_first_party_verified"
-    },
-    {
-      "id": "google-customer-ld-mountain-centre-facebook",
-      "company": "LD Mountain Centre",
-      "action": "develop",
-      "platform": "facebook",
-      "reason": "social_profile_not_first_party_verified"
-    },
-    {
-      "id": "google-customer-tiso-facebook",
-      "company": "Tiso",
-      "action": "develop",
-      "platform": "facebook",
-      "reason": "social_profile_not_first_party_verified"
-    },
-    {
-      "id": "google-customer-above-and-beyond-instagram",
-      "company": "Above and Beyond",
-      "action": "develop",
-      "platform": "instagram",
-      "reason": "social_profile_not_first_party_verified"
-    },
-    {
-      "id": "google-customer-ld-mountain-centre-instagram",
-      "company": "LD Mountain Centre",
-      "action": "develop",
-      "platform": "instagram",
-      "reason": "social_profile_not_first_party_verified"
-    },
-    {
-      "id": "google-customer-tiso-instagram",
-      "company": "Tiso",
-      "action": "develop",
-      "platform": "instagram",
-      "reason": "social_profile_not_first_party_verified"
     },
     {
       "id": "sheet_1779293110195_9myxa520z",
@@ -252,6 +147,13 @@
       "reason": "official_website_contact_channel"
     },
     {
+      "id": "google-customer-cms-distribution-website-contact",
+      "company": "CMS Distribution",
+      "action": "email_priority",
+      "platform": "website_form",
+      "reason": "official_website_contact_channel"
+    },
+    {
       "id": "google-customer-left-point-distribution-website-contact",
       "company": "Left Point Distribution",
       "action": "email_priority",
@@ -271,13 +173,6 @@
       "action": "email_priority",
       "platform": "website_form",
       "reason": "official_website_contact_channel"
-    },
-    {
-      "id": "google-customer-varuste-website-contact",
-      "company": "Varuste",
-      "action": "verify_target",
-      "platform": "website_form",
-      "reason": "homepage_only_contact_path_requires_verification"
     },
     {
       "id": "google-customer-bergfreunde-website-contact",
@@ -303,6 +198,27 @@
     {
       "id": "google-customer-naturkompaniet-website-contact",
       "company": "Naturkompaniet",
+      "action": "verify_target",
+      "platform": "website_form",
+      "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
+      "id": "google-customer-trekitt-website-contact",
+      "company": "Trekitt",
+      "action": "verify_target",
+      "platform": "website_form",
+      "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
+      "id": "google-customer-ultralight-outdoor-gear-website-contact",
+      "company": "Ultralight Outdoor Gear",
+      "action": "verify_target",
+      "platform": "website_form",
+      "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
+      "id": "google-customer-alpinetrek-website-contact",
+      "company": "Alpinetrek",
       "action": "verify_target",
       "platform": "website_form",
       "reason": "homepage_only_contact_path_requires_verification"
@@ -336,6 +252,13 @@
       "reason": "homepage_only_contact_path_requires_verification"
     },
     {
+      "id": "google-customer-above-and-beyond-website-contact",
+      "company": "Above and Beyond",
+      "action": "verify_target",
+      "platform": "website_form",
+      "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
       "id": "google-customer-campz-website-contact",
       "company": "Campz",
       "action": "verify_target",
@@ -357,6 +280,13 @@
       "reason": "homepage_only_contact_path_requires_verification"
     },
     {
+      "id": "google-customer-ld-mountain-centre-website-contact",
+      "company": "LD Mountain Centre",
+      "action": "verify_target",
+      "platform": "website_form",
+      "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
       "id": "google-customer-outdoorxl-website-contact",
       "company": "OutdoorXL",
       "action": "verify_target",
@@ -371,6 +301,20 @@
       "reason": "homepage_only_contact_path_requires_verification"
     },
     {
+      "id": "google-customer-taunton-leisure-website-contact",
+      "company": "Taunton Leisure",
+      "action": "verify_target",
+      "platform": "website_form",
+      "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
+      "id": "google-customer-tiso-website-contact",
+      "company": "Tiso",
+      "action": "verify_target",
+      "platform": "website_form",
+      "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
       "id": "google-customer-hardloop-website-contact",
       "company": "Hardloop",
       "action": "verify_target",
@@ -380,6 +324,13 @@
     {
       "id": "google-customer-kampeerwereld-hendriks-website-contact",
       "company": "Kampeerwereld Hendriks",
+      "action": "verify_target",
+      "platform": "website_form",
+      "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
+      "id": "google-customer-sportpursuit-website-contact",
+      "company": "SportPursuit",
       "action": "verify_target",
       "platform": "website_form",
       "reason": "homepage_only_contact_path_requires_verification"
@@ -595,6 +546,20 @@
       "reason": "social_profile_not_first_party_verified"
     },
     {
+      "id": "google-customer-cms-distribution-linkedin",
+      "company": "CMS Distribution",
+      "action": "develop",
+      "platform": "linkedin",
+      "reason": "social_profile_not_first_party_verified"
+    },
+    {
+      "id": "google-customer-above-and-beyond-facebook",
+      "company": "Above and Beyond",
+      "action": "develop",
+      "platform": "facebook",
+      "reason": "social_profile_not_first_party_verified"
+    },
+    {
       "id": "google-customer-campz-facebook",
       "company": "Campz",
       "action": "develop",
@@ -604,6 +569,20 @@
     {
       "id": "google-customer-intersport-norway-facebook",
       "company": "Intersport Norway",
+      "action": "develop",
+      "platform": "facebook",
+      "reason": "social_profile_not_first_party_verified"
+    },
+    {
+      "id": "google-customer-ld-mountain-centre-facebook",
+      "company": "LD Mountain Centre",
+      "action": "develop",
+      "platform": "facebook",
+      "reason": "social_profile_not_first_party_verified"
+    },
+    {
+      "id": "google-customer-tiso-facebook",
+      "company": "Tiso",
       "action": "develop",
       "platform": "facebook",
       "reason": "social_profile_not_first_party_verified"
@@ -679,8 +658,29 @@
       "reason": "social_profile_not_first_party_verified"
     },
     {
+      "id": "google-customer-above-and-beyond-instagram",
+      "company": "Above and Beyond",
+      "action": "develop",
+      "platform": "instagram",
+      "reason": "social_profile_not_first_party_verified"
+    },
+    {
       "id": "google-customer-campz-instagram",
       "company": "Campz",
+      "action": "develop",
+      "platform": "instagram",
+      "reason": "social_profile_not_first_party_verified"
+    },
+    {
+      "id": "google-customer-ld-mountain-centre-instagram",
+      "company": "LD Mountain Centre",
+      "action": "develop",
+      "platform": "instagram",
+      "reason": "social_profile_not_first_party_verified"
+    },
+    {
+      "id": "google-customer-tiso-instagram",
+      "company": "Tiso",
       "action": "develop",
       "platform": "instagram",
       "reason": "social_profile_not_first_party_verified"
@@ -1559,12 +1559,12 @@
     "stderr": "",
     "error": "",
     "visibility": {
-      "updatedAt": "2026-08-04T10:24:24.153Z",
+      "updatedAt": "2026-08-04T11:03:16.626Z",
       "source": "main-refreshDailyAutomationArtifacts",
       "runDate": "2026-08-04",
-      "artifactGeneratedAt": "2026-08-04T10:24:19.899Z",
-      "executionGeneratedAt": "2026-08-04T10:18:27.115Z",
-      "githubSyncUpdatedAt": "2026-08-04T10:19:25.446Z",
+      "artifactGeneratedAt": "2026-08-04T11:03:14.422Z",
+      "executionGeneratedAt": "2026-08-04T10:24:26.670Z",
+      "githubSyncUpdatedAt": "2026-08-04T10:25:46.348Z",
       "counts": {
         "dailyQueue": 99,
         "googleDiscovered": 87,
@@ -1617,8 +1617,10 @@
     }
   },
   "alibabaSessionProbe": {
-    "ok": false,
-    "evidence": "alibaba_webmail_compose_button_missing"
+    "ok": true,
+    "evidence": "alibaba_webmail_authenticated_compose_visible",
+    "url": "https://qiye.aliyun.com/alimail/entries/v5.1/mail/sentitems/all",
+    "title": "阿里邮箱"
   },
   "bounceReconciliation": {
     "ok": false,
@@ -1630,6 +1632,6 @@
       "ALIBABA_SMTP_SECURITY_PASSWORD"
     ]
   },
-  "ledgerReconciliationCount": 16,
-  "completedAt": "2026-08-04T10:24:26.670Z"
+  "ledgerReconciliationCount": 1,
+  "completedAt": "2026-08-04T11:03:17.448Z"
 }
