@@ -42,6 +42,7 @@ const {
   validateExtensionReceipt,
 } = require('./browser-transport');
 const { refreshRuntime, validatePolicies } = require('./outreach-runtime');
+const { acquireSendTransaction, releaseSendTransaction } = require('./outreach-intelligence');
 
 for (const stream of [process.stdout, process.stderr]) {
   if (stream && stream.on) {
@@ -3142,9 +3143,25 @@ async function runVerifiedAlibabaEmailLead(lead = {}, subject = '', draft = '') 
       }),
     };
   }
-  let result = await sendAndConfirmAlibabaEmail({ lead, subject, text: draft });
-  if (result.reason === 'email_sender_not_configured') {
-    result = await runAlibabaWebmailEmailLead(lead, subject, draft);
+  const transaction = acquireSendTransaction(__dirname, lead);
+  if (!transaction.ok) {
+    return {
+      ok: false,
+      skipped: true,
+      sendStatus: 'skipped',
+      reason: transaction.reason,
+      mode: 'irreversible_send_transaction_gate',
+      evidence: `${transaction.reason};companyId:${transaction.companyId};no_send_performed`,
+    };
+  }
+  let result;
+  try {
+    result = await sendAndConfirmAlibabaEmail({ lead, subject, text: draft });
+    if (result.reason === 'email_sender_not_configured') {
+      result = await runAlibabaWebmailEmailLead(lead, subject, draft);
+    }
+  } finally {
+    releaseSendTransaction(transaction);
   }
   return {
     ...result,

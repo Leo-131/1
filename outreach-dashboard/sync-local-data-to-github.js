@@ -250,6 +250,8 @@ function syncOnce() {
   copyIfExists(path.join(ROOT, 'system-visibility-latest.js'), path.join(OUT, 'system-visibility-latest.js'));
   copyIfExists(path.join(ROOT, 'autonomous-outreach-results.js'), path.join(OUT, 'autonomous-outreach-results.js'));
   copyIfExists(path.join(ROOT, 'autonomous-outreach-results.js'), path.join(ROOT, 'public', 'autonomous-outreach-results.js'));
+  copyIfExists(path.join(ROOT, 'outreach-intelligence-latest.json'), path.join(OUT, 'outreach-intelligence-latest.json'));
+  copyIfExists(path.join(ROOT, 'outreach-intelligence-latest.js'), path.join(OUT, 'outreach-intelligence-latest.js'));
   copyIfExists(
     path.join(ROOT, 'customer-attachment-email-audit-latest.json'),
     path.join(ROOT, 'public', 'customer-attachment-email-audit-latest.json'),
@@ -292,6 +294,8 @@ function syncOnce() {
     'public/system-visibility-latest.js',
     'public/system-visibility-latest.json',
     'public/autonomous-outreach-results.js',
+    'public/outreach-intelligence-latest.json',
+    'public/outreach-intelligence-latest.js',
     'public/customer-attachment-email-audit-latest.json',
     'daily-automation-latest.js',
     'daily-automation-latest.json',
@@ -301,6 +305,10 @@ function syncOnce() {
     'daily-automation-execution-latest.js',
     'daily-automation-execution-latest.json',
     'autonomous-outreach-results.js',
+    'outreach-intelligence.js',
+    'generate-outreach-intelligence.js',
+    'outreach-intelligence-latest.json',
+    'outreach-intelligence-latest.js',
     'customer-attachment-email-audit-latest.json',
     'system-visibility-latest.json',
     'system-visibility-latest.js',
@@ -321,6 +329,7 @@ function syncOnce() {
     '../tests/alibaba-webmail-automation.test.js',
     '../tests/outreach-runtime.test.js',
     '../tests/glm-automation.test.js',
+    '../tests/outreach-intelligence.test.js',
     '../tests/system-readiness.test.js',
     'package.json',
     'package-lock.json',
