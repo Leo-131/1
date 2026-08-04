@@ -12541,5 +12541,21 @@ window.AUTONOMOUS_OUTREACH_RESULTS = [
     "messageId": "",
     "sentFolder": "",
     "sentUid": null
+  },
+  {
+    "task_id": "google-customer-cms-distribution-owner-confirmed-history",
+    "company": "CMS Distribution",
+    "approval_version": 1,
+    "status": "send_unconfirmed",
+    "agent": "business-owner-confirmation",
+    "timestamp": "2026-07-14T08:07:55.732Z",
+    "target_url": "https://www.cmsdistribution.com/",
+    "evidence": "owner_confirmed_prior_customer_development;historical_contact_no_repeat;confirmed_by_business_owner_2026-08-04;do_not_contact_again",
+    "draft": "",
+    "subject": "",
+    "recipientEmail": "",
+    "messageId": "",
+    "sentFolder": "",
+    "sentUid": null
   }
 ];

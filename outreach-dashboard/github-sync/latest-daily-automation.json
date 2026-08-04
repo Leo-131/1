@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-04T13:05:53.247Z",
+  "generatedAt": "2026-08-04T13:35:01.397Z",
   "date": "2026-08-04",
   "mode": "daily-icp-first-automation-loop",
   "executionLayer": "Dedicated Chrome automation profile only; primary Chrome attachment forbidden",
@@ -50,23 +50,23 @@
   "summary": {
     "totalLeads": 16,
     "highIcp": 16,
-    "readyToDevelop": 23,
+    "readyToDevelop": 22,
     "dueNow": 99,
-    "visibleTodayQueue": 41,
+    "visibleTodayQueue": 40,
     "potentialPool": 100,
     "potentialPoolTarget": 100,
-    "customerTableHighIcp": 21,
+    "customerTableHighIcp": 23,
     "refillNeeded": 0,
-    "executableCompanies": 11,
+    "executableCompanies": 10,
     "executableReserveTarget": 130,
-    "executableReserveNeeded": 119,
+    "executableReserveNeeded": 120,
     "executableByChannel": {
-      "website_form": 11
+      "website_form": 10
     },
     "verifiedSocialCompanies": 0,
     "verifiedSocialReserveTarget": 20,
     "verifiedSocialReserveNeeded": 20,
-    "googleDiscovered": 79,
+    "googleDiscovered": 77,
     "facebookDiscovered": 11,
     "websiteContactDiscovered": 0,
     "scheduledLater": 0,
@@ -85,7 +85,7 @@
       "agency": 8,
       "key_account": 118
     },
-    "qualifiedQueueCount": 80
+    "qualifiedQueueCount": 78
   },
   "visibleTodayQueue": [
     {
@@ -142,7 +142,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/Rome",
-        "localTime": "Tue 15:05",
+        "localTime": "Tue 15:35",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
@@ -167,90 +167,6 @@
       "contactChannelScore": 17,
       "dealProbabilityScore": 258,
       "priorityScore": 258,
-      "lastStatus": "",
-      "lastEvidence": "",
-      "lastTouch": "",
-      "visibleOnly": false
-    },
-    {
-      "id": "google-customer-cms-distribution-linkedin",
-      "name": "CMS Distribution",
-      "company": "CMS Distribution",
-      "customerType": "agency",
-      "discoveryMode": "autonomous_refill",
-      "country": "Ireland",
-      "countryEn": "Ireland",
-      "fitScore": 97,
-      "fitTier": "A+",
-      "marketScore": 4.5,
-      "marketStatus": "open",
-      "agencyState": "open",
-      "agentCompany": "",
-      "keyword": "European value-added consumer electronics and technology distributor",
-      "role": "Vendor partnerships, consumer product sales, brand management, or distribution director.",
-      "background": "Value-added technology distributor representing more than 200 manufacturers, with consumer electronics, retail and B2B channel coverage in the UK, Ireland and wider Europe.",
-      "buyerPersona": "Vendor partnerships, consumer product sales, brand management, or distribution director.",
-      "targetMarkets": "Ireland, United Kingdom, France and Nordics",
-      "excludedMarkets": "Switzerland, Romania, Greece, Hungary, Netherlands, Belgium, Poland, Czechia, Slovakia, Estonia, Lithuania and Slovenia",
-      "productCategory": "European value-added consumer electronics and technology distributor",
-      "businessModel": "Retail Chain",
-      "productFit": "FLEXTAIL portable pumps, outdoor power, camping lighting and compact camping accessories",
-      "opportunity": "Value-added technology distributor representing more than 200 manufacturers, with consumer electronics, retail and B2B channel coverage in the UK, Ireland and wider Europe.",
-      "linkedin_url": "https://www.linkedin.com/company/cms-distribution",
-      "linkedin": "https://www.linkedin.com/company/cms-distribution",
-      "publicEmail": "",
-      "contactEmail": "",
-      "vendorPortal": "https://www.cmsdistribution.com/contact-us",
-      "contactPhone": "",
-      "contactNote": "",
-      "publicEmailStatus": "",
-      "website": "https://www.cmsdistribution.com/",
-      "evidenceUrl": "https://www.google.com/search?q=%22CMS%20Distribution%22%20%22European%20value-added%20consumer%20electronics%20and%20technology%20distributor%22%20%22Ireland%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "sourceEvidenceUrl": "https://www.cmsdistribution.com/contact-us",
-      "externalVerificationStatus": "",
-      "query": "https://www.google.com/search?q=%22CMS%20Distribution%22%20%22European%20value-added%20consumer%20electronics%20and%20technology%20distributor%22%20%22Ireland%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "source": "google_customer_discovery",
-      "sourceType": "google",
-      "discoveryProvider": "google",
-      "channel": "",
-      "identityStatus": "verified",
-      "officialSocialProfileVerified": false,
-      "socialProfileEvidenceUrl": "",
-      "socialProfileVerifiedAt": "",
-      "profiledAt": "",
-      "partnershipStatus": "",
-      "doNotOutreach": false,
-      "automationStatus": "",
-      "partnerNote": "",
-      "sendStatus": "",
-      "workingTime": {
-        "dueNow": true,
-        "timeZone": "Europe/Dublin",
-        "localTime": "Tue 14:05",
-        "window": "afternoon",
-        "nextBest": "now",
-        "weight": 0.9
-      },
-      "platform": "linkedin",
-      "platformUrl": "https://www.linkedin.com/company/cms-distribution",
-      "url": "https://www.linkedin.com/company/cms-distribution",
-      "action": "develop",
-      "reason": "verified_linkedin_profile_ready",
-      "alternateChannels": {
-        "linkedin": "https://www.linkedin.com/company/cms-distribution",
-        "instagram": "",
-        "facebook": "",
-        "websiteContact": "https://www.cmsdistribution.com/contact-us"
-      },
-      "identitySource": "verified LinkedIn profile + official website + Google background query",
-      "channelPriority": 0,
-      "discoveredAt": "2026-07-14T04:02:10.362Z",
-      "taskId": "google-customer-cms-distribution-linkedin",
-      "targetRegion": "europe",
-      "targetRegionScore": 45,
-      "contactChannelScore": 17,
-      "dealProbabilityScore": 256,
-      "priorityScore": 256,
       "lastStatus": "",
       "lastEvidence": "",
       "lastTouch": "",
@@ -310,7 +226,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Asia/Shanghai",
-        "localTime": "Tue 21:05",
+        "localTime": "Tue 21:35",
         "window": "outside_work_hours",
         "nextBest": "Asia/Shanghai morning",
         "weight": 0
@@ -402,7 +318,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/Paris",
-        "localTime": "Tue 15:05",
+        "localTime": "Tue 15:35",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
@@ -494,7 +410,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/Berlin",
-        "localTime": "Tue 15:05",
+        "localTime": "Tue 15:35",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
@@ -578,7 +494,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/Oslo",
-        "localTime": "Tue 15:05",
+        "localTime": "Tue 15:35",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
@@ -670,7 +586,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/Stockholm",
-        "localTime": "Tue 15:05",
+        "localTime": "Tue 15:35",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
@@ -762,7 +678,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/Stockholm",
-        "localTime": "Tue 15:05",
+        "localTime": "Tue 15:35",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
@@ -854,7 +770,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/London",
-        "localTime": "Tue 14:05",
+        "localTime": "Tue 14:35",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
@@ -946,7 +862,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/London",
-        "localTime": "Tue 14:05",
+        "localTime": "Tue 14:35",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
@@ -1038,7 +954,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/London",
-        "localTime": "Tue 14:05",
+        "localTime": "Tue 14:35",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
@@ -1130,7 +1046,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/Madrid",
-        "localTime": "Tue 15:05",
+        "localTime": "Tue 15:35",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
@@ -1222,7 +1138,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/Paris",
-        "localTime": "Tue 15:05",
+        "localTime": "Tue 15:35",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
@@ -1314,7 +1230,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/Paris",
-        "localTime": "Tue 15:05",
+        "localTime": "Tue 15:35",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
@@ -1406,7 +1322,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/Zurich",
-        "localTime": "Tue 15:05",
+        "localTime": "Tue 15:35",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
@@ -1498,7 +1414,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Asia/Shanghai",
-        "localTime": "Tue 21:05",
+        "localTime": "Tue 21:35",
         "window": "outside_work_hours",
         "nextBest": "Asia/Shanghai morning",
         "weight": 0
@@ -1590,7 +1506,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/Copenhagen",
-        "localTime": "Tue 15:05",
+        "localTime": "Tue 15:35",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
@@ -1682,7 +1598,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/Copenhagen",
-        "localTime": "Tue 15:05",
+        "localTime": "Tue 15:35",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
@@ -1774,7 +1690,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/London",
-        "localTime": "Tue 14:05",
+        "localTime": "Tue 14:35",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
@@ -1866,7 +1782,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Asia/Shanghai",
-        "localTime": "Tue 21:05",
+        "localTime": "Tue 21:35",
         "window": "outside_work_hours",
         "nextBest": "Asia/Shanghai morning",
         "weight": 0
@@ -1958,7 +1874,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Asia/Shanghai",
-        "localTime": "Tue 21:05",
+        "localTime": "Tue 21:35",
         "window": "outside_work_hours",
         "nextBest": "Asia/Shanghai morning",
         "weight": 0
@@ -1991,98 +1907,6 @@
       "contactChannelScore": 13,
       "dealProbabilityScore": 218,
       "priorityScore": 218,
-      "lastStatus": "",
-      "lastEvidence": "",
-      "lastTouch": "",
-      "visibleOnly": false
-    },
-    {
-      "id": "google-customer-varuste-website-contact",
-      "name": "Varuste",
-      "company": "Varuste",
-      "customerType": "key_account",
-      "discoveryMode": "autonomous_refill",
-      "country": "Finland",
-      "countryEn": "Finland",
-      "fitScore": 87,
-      "fitTier": "A",
-      "marketScore": 4.5,
-      "marketStatus": "open",
-      "agencyState": "open",
-      "agentCompany": "",
-      "keyword": "verified outdoor, camping, travel and consumer electronics retail channel",
-      "role": "Outdoor electronics, camping accessories, travel products or consumer electronics category buyer.",
-      "background": "Varuste is listed or qualified as an outdoor/camping specialty retail prospect with assortment fit for lightweight outdoor electrics and practical high-rotation 3C products.",
-      "buyerPersona": "Outdoor electronics, camping accessories, travel products or consumer electronics category buyer.",
-      "targetMarkets": "",
-      "excludedMarkets": "",
-      "productCategory": "verified outdoor, camping, travel and consumer electronics retail channel",
-      "businessModel": "Retail Chain",
-      "productFit": "FLEXTAIL portable pumps, outdoor power, camping lighting and compact camping accessories",
-      "opportunity": "Varuste is listed or qualified as an outdoor/camping specialty retail prospect with assortment fit for lightweight outdoor electrics and practical high-rotation 3C products.",
-      "linkedin_url": "",
-      "linkedin": "",
-      "publicEmail": "info@varuste.net",
-      "contactEmail": "info@varuste.net",
-      "vendorPortal": "https://varuste.net/",
-      "contactPhone": "",
-      "contactNote": "",
-      "publicEmailStatus": "Official public company-domain email published by Varuste; route the supplier proposal to the category buyer or vendor-review owner.",
-      "website": "https://varuste.net/",
-      "evidenceUrl": "https://www.google.com/search?q=%22Varuste%22%20%22verified%20outdoor%2C%20camping%2C%20travel%20and%20consumer%20electronics%20retail%20channel%22%20%22Finland%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "sourceEvidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
-      "externalVerificationStatus": "",
-      "query": "https://www.google.com/search?q=%22Varuste%22%20%22verified%20outdoor%2C%20camping%2C%20travel%20and%20consumer%20electronics%20retail%20channel%22%20%22Finland%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "source": "google_customer_discovery",
-      "sourceType": "google",
-      "discoveryProvider": "google",
-      "channel": "",
-      "identityStatus": "verified",
-      "officialSocialProfileVerified": false,
-      "socialProfileEvidenceUrl": "",
-      "socialProfileVerifiedAt": "",
-      "profiledAt": "",
-      "partnershipStatus": "",
-      "doNotOutreach": false,
-      "automationStatus": "",
-      "partnerNote": "",
-      "sendStatus": "",
-      "workingTime": {
-        "dueNow": true,
-        "timeZone": "Europe/Helsinki",
-        "localTime": "Tue 16:05",
-        "window": "afternoon",
-        "nextBest": "now",
-        "weight": 0.9
-      },
-      "platform": "website_form",
-      "channelType": "website_form",
-      "platformUrl": "https://varuste.net/",
-      "url": "https://varuste.net/",
-      "contactUrl": "https://varuste.net/",
-      "contactSearchUrl": "https://www.google.com/search?q=site%3Avaruste.net%20%22Varuste%22%20contact%20buyer%20wholesale%20email%20vendor",
-      "emailFrom": "leo@flextailgear.com",
-      "websiteContactSubject": "FLEXTAIL retail partnership | 2026 assortment",
-      "websiteContactMessage": "Dear Varuste Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
-      "websiteContactFlow": "open_official_contact_us_fill_attach_auto_submit",
-      "action": "verify_target",
-      "reason": "homepage_only_contact_path_requires_verification",
-      "alternateChannels": {
-        "linkedin": "",
-        "instagram": "",
-        "facebook": "",
-        "websiteContact": "https://varuste.net/"
-      },
-      "invalidChannels": {},
-      "identitySource": "official homepage found; exact buyer/contact path still requires verification",
-      "channelPriority": 3,
-      "discoveredAt": "2026-07-14T04:02:10.362Z",
-      "taskId": "google-customer-varuste-website-contact",
-      "targetRegion": "europe",
-      "targetRegionScore": 45,
-      "contactChannelScore": 25,
-      "dealProbabilityScore": 229,
-      "priorityScore": 229,
       "lastStatus": "",
       "lastEvidence": "",
       "lastTouch": "",
@@ -2142,7 +1966,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/Paris",
-        "localTime": "Tue 15:05",
+        "localTime": "Tue 15:35",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
@@ -2234,7 +2058,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/London",
-        "localTime": "Tue 14:05",
+        "localTime": "Tue 14:35",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
@@ -2267,6 +2091,98 @@
       "contactChannelScore": 13,
       "dealProbabilityScore": 217,
       "priorityScore": 217,
+      "lastStatus": "",
+      "lastEvidence": "",
+      "lastTouch": "",
+      "visibleOnly": false
+    },
+    {
+      "id": "google-customer-varuste-website-contact",
+      "name": "Varuste",
+      "company": "Varuste",
+      "customerType": "key_account",
+      "discoveryMode": "autonomous_refill",
+      "country": "Finland",
+      "countryEn": "Finland",
+      "fitScore": 87,
+      "fitTier": "A",
+      "marketScore": 4.5,
+      "marketStatus": "open",
+      "agencyState": "open",
+      "agentCompany": "",
+      "keyword": "verified outdoor, camping, travel and consumer electronics retail channel",
+      "role": "Outdoor electronics, camping accessories, travel products or consumer electronics category buyer.",
+      "background": "Varuste is listed or qualified as an outdoor/camping specialty retail prospect with assortment fit for lightweight outdoor electrics and practical high-rotation 3C products.",
+      "buyerPersona": "Outdoor electronics, camping accessories, travel products or consumer electronics category buyer.",
+      "targetMarkets": "",
+      "excludedMarkets": "",
+      "productCategory": "verified outdoor, camping, travel and consumer electronics retail channel",
+      "businessModel": "Retail Chain",
+      "productFit": "FLEXTAIL portable pumps, outdoor power, camping lighting and compact camping accessories",
+      "opportunity": "Varuste is listed or qualified as an outdoor/camping specialty retail prospect with assortment fit for lightweight outdoor electrics and practical high-rotation 3C products.",
+      "linkedin_url": "",
+      "linkedin": "",
+      "publicEmail": "info@varuste.net",
+      "contactEmail": "info@varuste.net",
+      "vendorPortal": "https://varuste.net/",
+      "contactPhone": "",
+      "contactNote": "",
+      "publicEmailStatus": "Official public company-domain email published by Varuste; route the supplier proposal to the category buyer or vendor-review owner.",
+      "website": "https://varuste.net/",
+      "evidenceUrl": "https://www.google.com/search?q=%22Varuste%22%20%22verified%20outdoor%2C%20camping%2C%20travel%20and%20consumer%20electronics%20retail%20channel%22%20%22Finland%22%20buyer%20OR%20wholesale%20OR%20contact",
+      "sourceEvidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
+      "externalVerificationStatus": "",
+      "query": "https://www.google.com/search?q=%22Varuste%22%20%22verified%20outdoor%2C%20camping%2C%20travel%20and%20consumer%20electronics%20retail%20channel%22%20%22Finland%22%20buyer%20OR%20wholesale%20OR%20contact",
+      "source": "google_customer_discovery",
+      "sourceType": "google",
+      "discoveryProvider": "google",
+      "channel": "",
+      "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
+      "socialProfileEvidenceUrl": "",
+      "socialProfileVerifiedAt": "",
+      "profiledAt": "",
+      "partnershipStatus": "",
+      "doNotOutreach": false,
+      "automationStatus": "",
+      "partnerNote": "",
+      "sendStatus": "",
+      "workingTime": {
+        "dueNow": false,
+        "timeZone": "Europe/Helsinki",
+        "localTime": "Tue 16:35",
+        "window": "outside_work_hours",
+        "nextBest": "Europe/Helsinki morning",
+        "weight": 0
+      },
+      "platform": "website_form",
+      "channelType": "website_form",
+      "platformUrl": "https://varuste.net/",
+      "url": "https://varuste.net/",
+      "contactUrl": "https://varuste.net/",
+      "contactSearchUrl": "https://www.google.com/search?q=site%3Avaruste.net%20%22Varuste%22%20contact%20buyer%20wholesale%20email%20vendor",
+      "emailFrom": "leo@flextailgear.com",
+      "websiteContactSubject": "FLEXTAIL retail partnership | 2026 assortment",
+      "websiteContactMessage": "Dear Varuste Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
+      "websiteContactFlow": "open_official_contact_us_fill_attach_auto_submit",
+      "action": "verify_target",
+      "reason": "homepage_only_contact_path_requires_verification",
+      "alternateChannels": {
+        "linkedin": "",
+        "instagram": "",
+        "facebook": "",
+        "websiteContact": "https://varuste.net/"
+      },
+      "invalidChannels": {},
+      "identitySource": "official homepage found; exact buyer/contact path still requires verification",
+      "channelPriority": 3,
+      "discoveredAt": "2026-07-14T04:02:10.362Z",
+      "taskId": "google-customer-varuste-website-contact",
+      "targetRegion": "europe",
+      "targetRegionScore": 45,
+      "contactChannelScore": 25,
+      "dealProbabilityScore": 229,
+      "priorityScore": 229,
       "lastStatus": "",
       "lastEvidence": "",
       "lastTouch": "",
@@ -2326,7 +2242,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Asia/Shanghai",
-        "localTime": "Tue 21:05",
+        "localTime": "Tue 21:35",
         "window": "outside_work_hours",
         "nextBest": "Asia/Shanghai morning",
         "weight": 0
@@ -2418,7 +2334,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/Dublin",
-        "localTime": "Tue 14:05",
+        "localTime": "Tue 14:35",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
@@ -2504,7 +2420,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/Berlin",
-        "localTime": "Tue 15:05",
+        "localTime": "Tue 15:35",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
@@ -2590,7 +2506,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/Oslo",
-        "localTime": "Tue 15:05",
+        "localTime": "Tue 15:35",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
@@ -2682,7 +2598,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/London",
-        "localTime": "Tue 14:05",
+        "localTime": "Tue 14:35",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
@@ -2768,7 +2684,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/London",
-        "localTime": "Tue 14:05",
+        "localTime": "Tue 14:35",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
@@ -2854,7 +2770,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Asia/Shanghai",
-        "localTime": "Tue 21:05",
+        "localTime": "Tue 21:35",
         "window": "outside_work_hours",
         "nextBest": "Asia/Shanghai morning",
         "weight": 0
@@ -2946,7 +2862,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/London",
-        "localTime": "Tue 14:05",
+        "localTime": "Tue 14:35",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
@@ -3038,7 +2954,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Australia/Sydney",
-        "localTime": "Tue 23:05",
+        "localTime": "Tue 23:35",
         "window": "outside_work_hours",
         "nextBest": "Australia/Sydney morning",
         "weight": 0
@@ -3130,7 +3046,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Australia/Sydney",
-        "localTime": "Tue 23:05",
+        "localTime": "Tue 23:35",
         "window": "outside_work_hours",
         "nextBest": "Australia/Sydney morning",
         "weight": 0
@@ -3222,7 +3138,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Pacific/Auckland",
-        "localTime": "Wed 01:05",
+        "localTime": "Wed 01:35",
         "window": "outside_work_hours",
         "nextBest": "Pacific/Auckland morning",
         "weight": 0
@@ -3314,7 +3230,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Australia/Sydney",
-        "localTime": "Tue 23:05",
+        "localTime": "Tue 23:35",
         "window": "outside_work_hours",
         "nextBest": "Australia/Sydney morning",
         "weight": 0
@@ -3406,7 +3322,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Pacific/Auckland",
-        "localTime": "Wed 01:05",
+        "localTime": "Wed 01:35",
         "window": "outside_work_hours",
         "nextBest": "Pacific/Auckland morning",
         "weight": 0
@@ -3492,7 +3408,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/Toronto",
-        "localTime": "Tue 09:05",
+        "localTime": "Tue 09:35",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -3584,7 +3500,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/Toronto",
-        "localTime": "Tue 09:05",
+        "localTime": "Tue 09:35",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -3676,7 +3592,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/Toronto",
-        "localTime": "Tue 09:05",
+        "localTime": "Tue 09:35",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -3768,7 +3684,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/Toronto",
-        "localTime": "Tue 09:05",
+        "localTime": "Tue 09:35",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -3856,7 +3772,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/4 21:05:19",
+        "localTime": "2026/8/4 21:33:53",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -3897,104 +3813,6 @@
       "contactChannelScore": 17,
       "dealProbabilityScore": 258,
       "priorityScore": 275,
-      "potentialSource": "google_linkedin_social_refill",
-      "nextAction": "official_website_or_email_contact"
-    },
-    {
-      "id": "google-customer-cms-distribution-website-contact",
-      "name": "CMS Distribution",
-      "company": "CMS Distribution",
-      "customerType": "agency",
-      "discoveryMode": "autonomous_refill",
-      "country": "Ireland",
-      "countryEn": "Ireland",
-      "fitScore": 97,
-      "fitTier": "A+",
-      "marketScore": 4.5,
-      "marketStatus": "open",
-      "agencyState": "open",
-      "agentCompany": "",
-      "keyword": "European value-added consumer electronics and technology distributor",
-      "role": "Vendor partnerships, consumer product sales, brand management, or distribution director.",
-      "background": "Value-added technology distributor representing more than 200 manufacturers, with consumer electronics, retail and B2B channel coverage in the UK, Ireland and wider Europe.",
-      "buyerPersona": "Vendor partnerships, consumer product sales, brand management, or distribution director.",
-      "targetMarkets": "Ireland, United Kingdom, France and Nordics",
-      "excludedMarkets": "Switzerland, Romania, Greece, Hungary, Netherlands, Belgium, Poland, Czechia, Slovakia, Estonia, Lithuania and Slovenia",
-      "productCategory": "European value-added consumer electronics and technology distributor",
-      "businessModel": "Retail Chain",
-      "productFit": "FLEXTAIL portable pumps, outdoor power, camping lighting and compact camping accessories",
-      "opportunity": "Value-added technology distributor representing more than 200 manufacturers, with consumer electronics, retail and B2B channel coverage in the UK, Ireland and wider Europe.",
-      "linkedin_url": "https://www.linkedin.com/company/cms-distribution",
-      "linkedin": "https://www.linkedin.com/company/cms-distribution",
-      "publicEmail": "",
-      "contactEmail": "",
-      "vendorPortal": "https://www.cmsdistribution.com/contact-us",
-      "contactPhone": "",
-      "contactNote": "",
-      "publicEmailStatus": "",
-      "website": "https://www.cmsdistribution.com/",
-      "evidenceUrl": "https://www.google.com/search?q=%22CMS%20Distribution%22%20%22European%20value-added%20consumer%20electronics%20and%20technology%20distributor%22%20%22Ireland%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "sourceEvidenceUrl": "https://www.cmsdistribution.com/contact-us",
-      "externalVerificationStatus": "",
-      "query": "https://www.google.com/search?q=%22CMS%20Distribution%22%20%22European%20value-added%20consumer%20electronics%20and%20technology%20distributor%22%20%22Ireland%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "source": "google_customer_discovery",
-      "sourceType": "google",
-      "discoveryProvider": "google",
-      "channel": "",
-      "identityStatus": "verified",
-      "officialSocialProfileVerified": false,
-      "socialProfileEvidenceUrl": "",
-      "socialProfileVerifiedAt": "",
-      "profiledAt": "",
-      "partnershipStatus": "",
-      "doNotOutreach": false,
-      "automationStatus": "",
-      "partnerNote": "",
-      "sendStatus": "",
-      "workingTime": {
-        "dueNow": true,
-        "timeZone": "local-market",
-        "localTime": "2026/8/4 21:05:19",
-        "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
-      },
-      "platform": "website_form",
-      "channelType": "website_form",
-      "platformUrl": "https://www.cmsdistribution.com/contact-us",
-      "url": "https://www.cmsdistribution.com/contact-us",
-      "contactUrl": "https://www.cmsdistribution.com/contact-us",
-      "contactSearchUrl": "https://www.google.com/search?q=site%3Awww.cmsdistribution.com%20%22CMS%20Distribution%22%20contact%20buyer%20wholesale%20email%20vendor",
-      "emailFrom": "leo@flextailgear.com",
-      "websiteContactSubject": "FLEXTAIL retail partnership | 2026 assortment",
-      "websiteContactMessage": "Dear CMS Distribution Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
-      "websiteContactFlow": "open_official_contact_us_fill_attach_auto_submit",
-      "action": "email_priority",
-      "reason": "official_website_contact_channel",
-      "alternateChannels": {
-        "linkedin": "https://www.linkedin.com/company/cms-distribution",
-        "instagram": "",
-        "facebook": "",
-        "websiteContact": "https://www.cmsdistribution.com/contact-us"
-      },
-      "invalidChannels": {},
-      "identitySource": "official website contact path + Google buyer/contact query",
-      "channelPriority": 3,
-      "discoveredAt": "2026-07-14T04:02:10.362Z",
-      "linkedinUrl": "https://www.linkedin.com/company/cms-distribution",
-      "linkedinSearchUrl": "https://www.linkedin.com/company/cms-distribution",
-      "googleSearchUrl": "https://www.google.com/search?q=site%3Awww.cmsdistribution.com%20%22CMS%20Distribution%22%20contact%20buyer%20wholesale%20email%20vendor",
-      "dataSources": [
-        "google_linkedin_social_refill"
-      ],
-      "taskId": "google-customer-cms-distribution-website-contact",
-      "lastStatus": "",
-      "lastEvidence": "",
-      "lastTouch": "",
-      "previouslyContacted": false,
-      "targetRegion": "europe",
-      "targetRegionScore": 45,
-      "contactChannelScore": 17,
-      "dealProbabilityScore": 256,
-      "priorityScore": 273,
       "potentialSource": "google_linkedin_social_refill",
       "nextAction": "official_website_or_email_contact"
     },
@@ -4052,7 +3870,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/4 21:05:19",
+        "localTime": "2026/8/4 21:33:53",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -4150,7 +3968,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/4 21:05:19",
+        "localTime": "2026/8/4 21:33:53",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -4248,7 +4066,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/4 21:05:19",
+        "localTime": "2026/8/4 21:33:53",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -4346,7 +4164,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/4 21:05:19",
+        "localTime": "2026/8/4 21:33:53",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -4444,7 +4262,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/4 21:05:19",
+        "localTime": "2026/8/4 21:33:53",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -4542,7 +4360,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/4 21:05:19",
+        "localTime": "2026/8/4 21:33:53",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -4640,7 +4458,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/4 21:05:19",
+        "localTime": "2026/8/4 21:33:53",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -4738,7 +4556,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/4 21:05:19",
+        "localTime": "2026/8/4 21:33:53",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -4836,7 +4654,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/4 21:05:19",
+        "localTime": "2026/8/4 21:33:53",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -4934,7 +4752,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/4 21:05:19",
+        "localTime": "2026/8/4 21:33:53",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -5032,7 +4850,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/4 21:05:19",
+        "localTime": "2026/8/4 21:33:53",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -5130,7 +4948,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/4 21:05:19",
+        "localTime": "2026/8/4 21:33:53",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -5228,7 +5046,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/4 21:05:19",
+        "localTime": "2026/8/4 21:33:53",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -5326,7 +5144,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/4 21:05:19",
+        "localTime": "2026/8/4 21:33:53",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -5424,7 +5242,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/4 21:05:19",
+        "localTime": "2026/8/4 21:33:53",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -5522,7 +5340,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/4 21:05:19",
+        "localTime": "2026/8/4 21:33:53",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -5620,7 +5438,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/4 21:05:19",
+        "localTime": "2026/8/4 21:33:53",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -5718,7 +5536,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/4 21:05:19",
+        "localTime": "2026/8/4 21:33:53",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -5816,7 +5634,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/4 21:05:19",
+        "localTime": "2026/8/4 21:33:53",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -5920,7 +5738,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/4 21:05:19",
+        "localTime": "2026/8/4 21:33:53",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -6018,7 +5836,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/4 21:05:19",
+        "localTime": "2026/8/4 21:33:53",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -6116,7 +5934,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/4 21:05:19",
+        "localTime": "2026/8/4 21:33:53",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -6214,7 +6032,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/4 21:05:19",
+        "localTime": "2026/8/4 21:33:53",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -6312,7 +6130,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/4 21:05:19",
+        "localTime": "2026/8/4 21:33:53",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -6410,7 +6228,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/4 21:05:19",
+        "localTime": "2026/8/4 21:33:53",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -6508,7 +6326,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/4 21:05:19",
+        "localTime": "2026/8/4 21:33:53",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -6606,7 +6424,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/4 21:05:19",
+        "localTime": "2026/8/4 21:33:53",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -6704,7 +6522,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/4 21:05:19",
+        "localTime": "2026/8/4 21:33:53",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -6802,7 +6620,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/4 21:05:19",
+        "localTime": "2026/8/4 21:33:53",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -6900,7 +6718,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/4 21:05:19",
+        "localTime": "2026/8/4 21:33:53",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -6998,7 +6816,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/4 21:05:19",
+        "localTime": "2026/8/4 21:33:53",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -7096,7 +6914,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/4 21:05:19",
+        "localTime": "2026/8/4 21:33:53",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -7194,7 +7012,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/4 21:05:19",
+        "localTime": "2026/8/4 21:33:53",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -7292,7 +7110,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/4 21:05:19",
+        "localTime": "2026/8/4 21:33:53",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -7390,7 +7208,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/4 21:05:19",
+        "localTime": "2026/8/4 21:33:53",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -7488,7 +7306,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/4 21:05:19",
+        "localTime": "2026/8/4 21:33:53",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -7592,7 +7410,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/4 21:05:19",
+        "localTime": "2026/8/4 21:33:53",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -7696,7 +7514,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/4 21:05:19",
+        "localTime": "2026/8/4 21:33:53",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -7794,7 +7612,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/4 21:05:19",
+        "localTime": "2026/8/4 21:33:53",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -7892,7 +7710,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/4 21:05:19",
+        "localTime": "2026/8/4 21:33:53",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -7990,7 +7808,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/4 21:05:19",
+        "localTime": "2026/8/4 21:33:53",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -8088,7 +7906,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/4 21:05:19",
+        "localTime": "2026/8/4 21:33:53",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -8186,7 +8004,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/4 21:05:19",
+        "localTime": "2026/8/4 21:33:53",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -8284,7 +8102,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/4 21:05:19",
+        "localTime": "2026/8/4 21:33:53",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -8382,7 +8200,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/4 21:05:19",
+        "localTime": "2026/8/4 21:33:53",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -8480,7 +8298,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/4 21:05:19",
+        "localTime": "2026/8/4 21:33:53",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -8578,7 +8396,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/4 21:05:19",
+        "localTime": "2026/8/4 21:33:53",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -8676,7 +8494,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/4 21:05:19",
+        "localTime": "2026/8/4 21:33:53",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -8774,7 +8592,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/4 21:05:19",
+        "localTime": "2026/8/4 21:33:53",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -8872,7 +8690,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/4 21:05:19",
+        "localTime": "2026/8/4 21:33:53",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -8970,7 +8788,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/4 21:05:19",
+        "localTime": "2026/8/4 21:33:53",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -9068,7 +8886,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/4 21:05:19",
+        "localTime": "2026/8/4 21:33:53",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -9166,7 +8984,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/4 21:05:19",
+        "localTime": "2026/8/4 21:33:53",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -9264,7 +9082,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/4 21:05:19",
+        "localTime": "2026/8/4 21:33:53",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -9362,7 +9180,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/4 21:05:19",
+        "localTime": "2026/8/4 21:33:53",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "linkedin",
@@ -9396,97 +9214,6 @@
       "contactChannelScore": 17,
       "dealProbabilityScore": 258,
       "priorityScore": 275,
-      "potentialSource": "google_linkedin_social_refill",
-      "nextAction": "background_check_then_verify_channel"
-    },
-    {
-      "id": "google-customer-cms-distribution-linkedin",
-      "name": "CMS Distribution",
-      "company": "CMS Distribution",
-      "customerType": "agency",
-      "discoveryMode": "autonomous_refill",
-      "country": "Ireland",
-      "countryEn": "Ireland",
-      "fitScore": 97,
-      "fitTier": "A+",
-      "marketScore": 4.5,
-      "marketStatus": "open",
-      "agencyState": "open",
-      "agentCompany": "",
-      "keyword": "European value-added consumer electronics and technology distributor",
-      "role": "Vendor partnerships, consumer product sales, brand management, or distribution director.",
-      "background": "Value-added technology distributor representing more than 200 manufacturers, with consumer electronics, retail and B2B channel coverage in the UK, Ireland and wider Europe.",
-      "buyerPersona": "Vendor partnerships, consumer product sales, brand management, or distribution director.",
-      "targetMarkets": "Ireland, United Kingdom, France and Nordics",
-      "excludedMarkets": "Switzerland, Romania, Greece, Hungary, Netherlands, Belgium, Poland, Czechia, Slovakia, Estonia, Lithuania and Slovenia",
-      "productCategory": "European value-added consumer electronics and technology distributor",
-      "businessModel": "Retail Chain",
-      "productFit": "FLEXTAIL portable pumps, outdoor power, camping lighting and compact camping accessories",
-      "opportunity": "Value-added technology distributor representing more than 200 manufacturers, with consumer electronics, retail and B2B channel coverage in the UK, Ireland and wider Europe.",
-      "linkedin_url": "https://www.linkedin.com/company/cms-distribution",
-      "linkedin": "https://www.linkedin.com/company/cms-distribution",
-      "publicEmail": "",
-      "contactEmail": "",
-      "vendorPortal": "https://www.cmsdistribution.com/contact-us",
-      "contactPhone": "",
-      "contactNote": "",
-      "publicEmailStatus": "",
-      "website": "https://www.cmsdistribution.com/",
-      "evidenceUrl": "https://www.google.com/search?q=%22CMS%20Distribution%22%20%22European%20value-added%20consumer%20electronics%20and%20technology%20distributor%22%20%22Ireland%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "sourceEvidenceUrl": "https://www.cmsdistribution.com/contact-us",
-      "externalVerificationStatus": "",
-      "query": "https://www.google.com/search?q=%22CMS%20Distribution%22%20%22European%20value-added%20consumer%20electronics%20and%20technology%20distributor%22%20%22Ireland%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "source": "google_customer_discovery",
-      "sourceType": "google",
-      "discoveryProvider": "google",
-      "channel": "",
-      "identityStatus": "verified",
-      "officialSocialProfileVerified": false,
-      "socialProfileEvidenceUrl": "",
-      "socialProfileVerifiedAt": "",
-      "profiledAt": "",
-      "partnershipStatus": "",
-      "doNotOutreach": false,
-      "automationStatus": "",
-      "partnerNote": "",
-      "sendStatus": "",
-      "workingTime": {
-        "dueNow": true,
-        "timeZone": "local-market",
-        "localTime": "2026/8/4 21:05:19",
-        "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
-      },
-      "platform": "linkedin",
-      "platformUrl": "https://www.linkedin.com/company/cms-distribution",
-      "url": "https://www.linkedin.com/company/cms-distribution",
-      "action": "verify_target",
-      "reason": "linkedin_channel_requires_supported_executor",
-      "alternateChannels": {
-        "linkedin": "https://www.linkedin.com/company/cms-distribution",
-        "instagram": "",
-        "facebook": "",
-        "websiteContact": "https://www.cmsdistribution.com/contact-us"
-      },
-      "identitySource": "verified LinkedIn profile + official website + Google background query",
-      "channelPriority": 0,
-      "discoveredAt": "2026-07-14T04:02:10.362Z",
-      "linkedinUrl": "https://www.linkedin.com/company/cms-distribution",
-      "linkedinSearchUrl": "https://www.linkedin.com/company/cms-distribution",
-      "googleSearchUrl": "https://www.google.com/search?q=CMS%20Distribution%20outdoor%20buyer%20partnership%20contact",
-      "contactSearchUrl": "https://www.google.com/search?q=CMS%20Distribution%20outdoor%20buyer%20partnership%20contact",
-      "dataSources": [
-        "google_linkedin_social_refill"
-      ],
-      "taskId": "google-customer-cms-distribution-linkedin",
-      "lastStatus": "",
-      "lastEvidence": "",
-      "lastTouch": "",
-      "previouslyContacted": false,
-      "targetRegion": "europe",
-      "targetRegionScore": 45,
-      "contactChannelScore": 17,
-      "dealProbabilityScore": 256,
-      "priorityScore": 273,
       "potentialSource": "google_linkedin_social_refill",
       "nextAction": "background_check_then_verify_channel"
     },
@@ -9544,7 +9271,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/4 21:05:19",
+        "localTime": "2026/8/4 21:33:53",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -9637,7 +9364,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/4 21:05:19",
+        "localTime": "2026/8/4 21:33:53",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -9730,7 +9457,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/4 21:05:19",
+        "localTime": "2026/8/4 21:33:53",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -9829,7 +9556,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/4 21:05:19",
+        "localTime": "2026/8/4 21:33:53",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -9922,7 +9649,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/4 21:05:19",
+        "localTime": "2026/8/4 21:33:53",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -10015,7 +9742,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/4 21:05:19",
+        "localTime": "2026/8/4 21:33:53",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -10108,7 +9835,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/4 21:05:19",
+        "localTime": "2026/8/4 21:33:53",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -10201,7 +9928,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/4 21:05:19",
+        "localTime": "2026/8/4 21:33:53",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -10300,7 +10027,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/4 21:05:19",
+        "localTime": "2026/8/4 21:33:53",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -10399,7 +10126,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/4 21:05:19",
+        "localTime": "2026/8/4 21:33:53",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -10492,7 +10219,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/4 21:05:19",
+        "localTime": "2026/8/4 21:33:53",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -10585,7 +10312,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/4 21:05:19",
+        "localTime": "2026/8/4 21:33:53",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -10676,7 +10403,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/4 21:05:19",
+        "localTime": "2026/8/4 21:33:53",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -10767,7 +10494,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/4 21:05:19",
+        "localTime": "2026/8/4 21:33:53",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -10858,7 +10585,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/4 21:05:19",
+        "localTime": "2026/8/4 21:33:53",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -10949,7 +10676,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/4 21:05:19",
+        "localTime": "2026/8/4 21:33:53",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -11040,7 +10767,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/4 21:05:19",
+        "localTime": "2026/8/4 21:33:53",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -11131,7 +10858,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/4 21:05:19",
+        "localTime": "2026/8/4 21:33:53",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -11222,7 +10949,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/4 21:05:19",
+        "localTime": "2026/8/4 21:33:53",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -11313,7 +11040,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/4 21:05:19",
+        "localTime": "2026/8/4 21:33:53",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -11404,7 +11131,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/4 21:05:19",
+        "localTime": "2026/8/4 21:33:53",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -12414,6 +12141,98 @@
       "priorityScore": 91,
       "potentialSource": "customer_table",
       "nextAction": "background_check_then_verify_channel"
+    },
+    {
+      "id": 5,
+      "name": "David Park",
+      "company": "Pacific Outdoor Group",
+      "role": "CEO",
+      "category": "agent",
+      "ka_flag": false,
+      "priority": "?",
+      "status": "Pending",
+      "keyword_used": "CEO outdoor brand",
+      "message": "Hi David,\n\nI'm the founder of Flextail. We're exploring distribution partnerships in the North American market.\n\nYour company came highly recommended. Would love to connect.\n\nBest,\nDavid",
+      "source": "outreach_data",
+      "country": "",
+      "countryEn": "",
+      "platform": "research",
+      "fitScore": 91,
+      "fitTier": "A",
+      "sourceType": "customer_table",
+      "website": "",
+      "url": "",
+      "platformUrl": "",
+      "linkedinUrl": "",
+      "linkedinSearchUrl": "https://www.linkedin.com/search/results/all/?keywords=Pacific%20Outdoor%20Group%20buyer%20outdoor%20LinkedIn",
+      "googleSearchUrl": "https://www.google.com/search?q=Pacific%20Outdoor%20Group%20outdoor%20buyer%20partnership%20contact",
+      "contactSearchUrl": "https://www.google.com/search?q=Pacific%20Outdoor%20Group%20outdoor%20buyer%20partnership%20contact",
+      "dataSources": [
+        "customer_table"
+      ],
+      "background": "Hi David,\n\nI'm the founder of Flextail. We're exploring distribution partnerships in the North American market.\n\nYour company came highly recommended. Would love to connect.\n\nBest,\nDavid",
+      "buyerPersona": "CEO",
+      "marketStatus": "",
+      "taskId": 5,
+      "action": "verify_target",
+      "reason": "missing_verified_profile_url",
+      "lastStatus": "",
+      "lastEvidence": "",
+      "lastTouch": "",
+      "previouslyContacted": false,
+      "targetRegion": "other",
+      "targetRegionScore": 0,
+      "contactChannelScore": 0,
+      "dealProbabilityScore": 91,
+      "priorityScore": 91,
+      "potentialSource": "customer_table",
+      "nextAction": "background_check_then_verify_channel"
+    },
+    {
+      "id": 14,
+      "name": "Tom Martinez",
+      "company": "Rural King",
+      "role": "Owner",
+      "category": "agent",
+      "ka_flag": false,
+      "priority": "?",
+      "status": "Pending",
+      "keyword_used": "owner sporting goods store",
+      "message": "Hi Tom,\n\nWe're interested in partnering with independent sporting goods stores. Rural King would be a great fit.\n\nBest,\nDavid",
+      "source": "outreach_data",
+      "country": "",
+      "countryEn": "",
+      "platform": "research",
+      "fitScore": 91,
+      "fitTier": "A",
+      "sourceType": "customer_table",
+      "website": "",
+      "url": "",
+      "platformUrl": "",
+      "linkedinUrl": "",
+      "linkedinSearchUrl": "https://www.linkedin.com/search/results/all/?keywords=Rural%20King%20buyer%20outdoor%20LinkedIn",
+      "googleSearchUrl": "https://www.google.com/search?q=Rural%20King%20outdoor%20buyer%20partnership%20contact",
+      "contactSearchUrl": "https://www.google.com/search?q=Rural%20King%20outdoor%20buyer%20partnership%20contact",
+      "dataSources": [
+        "customer_table"
+      ],
+      "background": "Hi Tom,\n\nWe're interested in partnering with independent sporting goods stores. Rural King would be a great fit.\n\nBest,\nDavid",
+      "buyerPersona": "Owner",
+      "marketStatus": "",
+      "taskId": 14,
+      "action": "verify_target",
+      "reason": "missing_verified_profile_url",
+      "lastStatus": "",
+      "lastEvidence": "",
+      "lastTouch": "",
+      "previouslyContacted": false,
+      "targetRegion": "other",
+      "targetRegionScore": 0,
+      "contactChannelScore": 0,
+      "dealProbabilityScore": 91,
+      "priorityScore": 91,
+      "potentialSource": "customer_table",
+      "nextAction": "background_check_then_verify_channel"
     }
   ],
   "dailyQueue": [
@@ -12471,7 +12290,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/Rome",
-        "localTime": "Tue 15:05",
+        "localTime": "Tue 15:35",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
@@ -12503,93 +12322,6 @@
       "contactChannelScore": 17,
       "dealProbabilityScore": 258,
       "priorityScore": 258
-    },
-    {
-      "id": "google-customer-cms-distribution-website-contact",
-      "name": "CMS Distribution",
-      "company": "CMS Distribution",
-      "customerType": "agency",
-      "discoveryMode": "autonomous_refill",
-      "country": "Ireland",
-      "countryEn": "Ireland",
-      "fitScore": 97,
-      "fitTier": "A+",
-      "marketScore": 4.5,
-      "marketStatus": "open",
-      "agencyState": "open",
-      "agentCompany": "",
-      "keyword": "European value-added consumer electronics and technology distributor",
-      "role": "Vendor partnerships, consumer product sales, brand management, or distribution director.",
-      "background": "Value-added technology distributor representing more than 200 manufacturers, with consumer electronics, retail and B2B channel coverage in the UK, Ireland and wider Europe.",
-      "buyerPersona": "Vendor partnerships, consumer product sales, brand management, or distribution director.",
-      "targetMarkets": "Ireland, United Kingdom, France and Nordics",
-      "excludedMarkets": "Switzerland, Romania, Greece, Hungary, Netherlands, Belgium, Poland, Czechia, Slovakia, Estonia, Lithuania and Slovenia",
-      "productCategory": "European value-added consumer electronics and technology distributor",
-      "businessModel": "Retail Chain",
-      "productFit": "FLEXTAIL portable pumps, outdoor power, camping lighting and compact camping accessories",
-      "opportunity": "Value-added technology distributor representing more than 200 manufacturers, with consumer electronics, retail and B2B channel coverage in the UK, Ireland and wider Europe.",
-      "linkedin_url": "https://www.linkedin.com/company/cms-distribution",
-      "linkedin": "https://www.linkedin.com/company/cms-distribution",
-      "publicEmail": "",
-      "contactEmail": "",
-      "vendorPortal": "https://www.cmsdistribution.com/contact-us",
-      "contactPhone": "",
-      "contactNote": "",
-      "publicEmailStatus": "",
-      "website": "https://www.cmsdistribution.com/",
-      "evidenceUrl": "https://www.google.com/search?q=%22CMS%20Distribution%22%20%22European%20value-added%20consumer%20electronics%20and%20technology%20distributor%22%20%22Ireland%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "sourceEvidenceUrl": "https://www.cmsdistribution.com/contact-us",
-      "externalVerificationStatus": "",
-      "query": "https://www.google.com/search?q=%22CMS%20Distribution%22%20%22European%20value-added%20consumer%20electronics%20and%20technology%20distributor%22%20%22Ireland%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "source": "google_customer_discovery",
-      "sourceType": "google",
-      "discoveryProvider": "google",
-      "channel": "",
-      "identityStatus": "verified",
-      "officialSocialProfileVerified": false,
-      "socialProfileEvidenceUrl": "",
-      "socialProfileVerifiedAt": "",
-      "profiledAt": "",
-      "partnershipStatus": "",
-      "doNotOutreach": false,
-      "automationStatus": "",
-      "partnerNote": "",
-      "sendStatus": "",
-      "workingTime": {
-        "dueNow": true,
-        "timeZone": "Europe/Dublin",
-        "localTime": "Tue 14:05",
-        "window": "afternoon",
-        "nextBest": "now",
-        "weight": 0.9
-      },
-      "platform": "website_form",
-      "channelType": "website_form",
-      "platformUrl": "https://www.cmsdistribution.com/contact-us",
-      "url": "https://www.cmsdistribution.com/contact-us",
-      "contactUrl": "https://www.cmsdistribution.com/contact-us",
-      "contactSearchUrl": "https://www.google.com/search?q=site%3Awww.cmsdistribution.com%20%22CMS%20Distribution%22%20contact%20buyer%20wholesale%20email%20vendor",
-      "emailFrom": "leo@flextailgear.com",
-      "websiteContactSubject": "FLEXTAIL retail partnership | 2026 assortment",
-      "websiteContactMessage": "Dear CMS Distribution Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
-      "websiteContactFlow": "open_official_contact_us_fill_attach_auto_submit",
-      "action": "email_priority",
-      "reason": "official_website_contact_channel",
-      "alternateChannels": {
-        "linkedin": "https://www.linkedin.com/company/cms-distribution",
-        "instagram": "",
-        "facebook": "",
-        "websiteContact": "https://www.cmsdistribution.com/contact-us"
-      },
-      "invalidChannels": {},
-      "identitySource": "official website contact path + Google buyer/contact query",
-      "channelPriority": 3,
-      "discoveredAt": "2026-07-14T04:02:10.362Z",
-      "targetRegion": "europe",
-      "targetRegionScore": 45,
-      "contactChannelScore": 17,
-      "dealProbabilityScore": 256,
-      "priorityScore": 256
     },
     {
       "id": "google-customer-fjellsport-website-contact",
@@ -12645,7 +12377,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/Oslo",
-        "localTime": "Tue 15:05",
+        "localTime": "Tue 15:35",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
@@ -12732,7 +12464,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/Stockholm",
-        "localTime": "Tue 15:05",
+        "localTime": "Tue 15:35",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
@@ -12764,93 +12496,6 @@
       "contactChannelScore": 25,
       "dealProbabilityScore": 232,
       "priorityScore": 232
-    },
-    {
-      "id": "google-customer-varuste-website-contact",
-      "name": "Varuste",
-      "company": "Varuste",
-      "customerType": "key_account",
-      "discoveryMode": "autonomous_refill",
-      "country": "Finland",
-      "countryEn": "Finland",
-      "fitScore": 87,
-      "fitTier": "A",
-      "marketScore": 4.5,
-      "marketStatus": "open",
-      "agencyState": "open",
-      "agentCompany": "",
-      "keyword": "verified outdoor, camping, travel and consumer electronics retail channel",
-      "role": "Outdoor electronics, camping accessories, travel products or consumer electronics category buyer.",
-      "background": "Varuste is listed or qualified as an outdoor/camping specialty retail prospect with assortment fit for lightweight outdoor electrics and practical high-rotation 3C products.",
-      "buyerPersona": "Outdoor electronics, camping accessories, travel products or consumer electronics category buyer.",
-      "targetMarkets": "",
-      "excludedMarkets": "",
-      "productCategory": "verified outdoor, camping, travel and consumer electronics retail channel",
-      "businessModel": "Retail Chain",
-      "productFit": "FLEXTAIL portable pumps, outdoor power, camping lighting and compact camping accessories",
-      "opportunity": "Varuste is listed or qualified as an outdoor/camping specialty retail prospect with assortment fit for lightweight outdoor electrics and practical high-rotation 3C products.",
-      "linkedin_url": "",
-      "linkedin": "",
-      "publicEmail": "info@varuste.net",
-      "contactEmail": "info@varuste.net",
-      "vendorPortal": "https://varuste.net/",
-      "contactPhone": "",
-      "contactNote": "",
-      "publicEmailStatus": "Official public company-domain email published by Varuste; route the supplier proposal to the category buyer or vendor-review owner.",
-      "website": "https://varuste.net/",
-      "evidenceUrl": "https://www.google.com/search?q=%22Varuste%22%20%22verified%20outdoor%2C%20camping%2C%20travel%20and%20consumer%20electronics%20retail%20channel%22%20%22Finland%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "sourceEvidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
-      "externalVerificationStatus": "",
-      "query": "https://www.google.com/search?q=%22Varuste%22%20%22verified%20outdoor%2C%20camping%2C%20travel%20and%20consumer%20electronics%20retail%20channel%22%20%22Finland%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "source": "google_customer_discovery",
-      "sourceType": "google",
-      "discoveryProvider": "google",
-      "channel": "",
-      "identityStatus": "verified",
-      "officialSocialProfileVerified": false,
-      "socialProfileEvidenceUrl": "",
-      "socialProfileVerifiedAt": "",
-      "profiledAt": "",
-      "partnershipStatus": "",
-      "doNotOutreach": false,
-      "automationStatus": "",
-      "partnerNote": "",
-      "sendStatus": "",
-      "workingTime": {
-        "dueNow": true,
-        "timeZone": "Europe/Helsinki",
-        "localTime": "Tue 16:05",
-        "window": "afternoon",
-        "nextBest": "now",
-        "weight": 0.9
-      },
-      "platform": "website_form",
-      "channelType": "website_form",
-      "platformUrl": "https://varuste.net/",
-      "url": "https://varuste.net/",
-      "contactUrl": "https://varuste.net/",
-      "contactSearchUrl": "https://www.google.com/search?q=site%3Avaruste.net%20%22Varuste%22%20contact%20buyer%20wholesale%20email%20vendor",
-      "emailFrom": "leo@flextailgear.com",
-      "websiteContactSubject": "FLEXTAIL retail partnership | 2026 assortment",
-      "websiteContactMessage": "Dear Varuste Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
-      "websiteContactFlow": "open_official_contact_us_fill_attach_auto_submit",
-      "action": "verify_target",
-      "reason": "homepage_only_contact_path_requires_verification",
-      "alternateChannels": {
-        "linkedin": "",
-        "instagram": "",
-        "facebook": "",
-        "websiteContact": "https://varuste.net/"
-      },
-      "invalidChannels": {},
-      "identitySource": "official homepage found; exact buyer/contact path still requires verification",
-      "channelPriority": 3,
-      "discoveredAt": "2026-07-14T04:02:10.362Z",
-      "targetRegion": "europe",
-      "targetRegionScore": 45,
-      "contactChannelScore": 25,
-      "dealProbabilityScore": 229,
-      "priorityScore": 229
     },
     {
       "id": "google-customer-bergfreunde-website-contact",
@@ -12906,7 +12551,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/Berlin",
-        "localTime": "Tue 15:05",
+        "localTime": "Tue 15:35",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
@@ -12993,7 +12638,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/London",
-        "localTime": "Tue 14:05",
+        "localTime": "Tue 14:35",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
@@ -13080,7 +12725,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/Paris",
-        "localTime": "Tue 15:05",
+        "localTime": "Tue 15:35",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
@@ -13167,7 +12812,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/Stockholm",
-        "localTime": "Tue 15:05",
+        "localTime": "Tue 15:35",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
@@ -13254,7 +12899,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/London",
-        "localTime": "Tue 14:05",
+        "localTime": "Tue 14:35",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
@@ -13341,7 +12986,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/London",
-        "localTime": "Tue 14:05",
+        "localTime": "Tue 14:35",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
@@ -13428,7 +13073,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/London",
-        "localTime": "Tue 14:05",
+        "localTime": "Tue 14:35",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
@@ -13515,7 +13160,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/Madrid",
-        "localTime": "Tue 15:05",
+        "localTime": "Tue 15:35",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
@@ -13602,7 +13247,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/Paris",
-        "localTime": "Tue 15:05",
+        "localTime": "Tue 15:35",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
@@ -13689,7 +13334,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/Paris",
-        "localTime": "Tue 15:05",
+        "localTime": "Tue 15:35",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
@@ -13776,7 +13421,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/Dublin",
-        "localTime": "Tue 14:05",
+        "localTime": "Tue 14:35",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
@@ -13863,7 +13508,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/Berlin",
-        "localTime": "Tue 15:05",
+        "localTime": "Tue 15:35",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
@@ -13950,7 +13595,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/Copenhagen",
-        "localTime": "Tue 15:05",
+        "localTime": "Tue 15:35",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
@@ -14037,7 +13682,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/Oslo",
-        "localTime": "Tue 15:05",
+        "localTime": "Tue 15:35",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
@@ -14130,7 +13775,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/London",
-        "localTime": "Tue 14:05",
+        "localTime": "Tue 14:35",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
@@ -14217,7 +13862,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/Copenhagen",
-        "localTime": "Tue 15:05",
+        "localTime": "Tue 15:35",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
@@ -14304,7 +13949,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/London",
-        "localTime": "Tue 14:05",
+        "localTime": "Tue 14:35",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
@@ -14391,7 +14036,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/London",
-        "localTime": "Tue 14:05",
+        "localTime": "Tue 14:35",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
@@ -14478,7 +14123,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/Paris",
-        "localTime": "Tue 15:05",
+        "localTime": "Tue 15:35",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
@@ -14565,7 +14210,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/London",
-        "localTime": "Tue 14:05",
+        "localTime": "Tue 14:35",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
@@ -14652,7 +14297,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/New_York",
-        "localTime": "Tue 09:05",
+        "localTime": "Tue 09:35",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -14739,7 +14384,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/New_York",
-        "localTime": "Tue 09:05",
+        "localTime": "Tue 09:35",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -14826,7 +14471,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/New_York",
-        "localTime": "Tue 09:05",
+        "localTime": "Tue 09:35",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -14913,7 +14558,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/Toronto",
-        "localTime": "Tue 09:05",
+        "localTime": "Tue 09:35",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -15000,7 +14645,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/New_York",
-        "localTime": "Tue 09:05",
+        "localTime": "Tue 09:35",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -15087,7 +14732,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/Toronto",
-        "localTime": "Tue 09:05",
+        "localTime": "Tue 09:35",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -15174,7 +14819,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/New_York",
-        "localTime": "Tue 09:05",
+        "localTime": "Tue 09:35",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -15261,7 +14906,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/New_York",
-        "localTime": "Tue 09:05",
+        "localTime": "Tue 09:35",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -15354,7 +14999,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/Toronto",
-        "localTime": "Tue 09:05",
+        "localTime": "Tue 09:35",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -15441,7 +15086,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/New_York",
-        "localTime": "Tue 09:05",
+        "localTime": "Tue 09:35",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -15534,7 +15179,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/New_York",
-        "localTime": "Tue 09:05",
+        "localTime": "Tue 09:35",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -15621,7 +15266,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/Toronto",
-        "localTime": "Tue 09:05",
+        "localTime": "Tue 09:35",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -15708,7 +15353,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/New_York",
-        "localTime": "Tue 09:05",
+        "localTime": "Tue 09:35",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -15795,7 +15440,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/New_York",
-        "localTime": "Tue 09:05",
+        "localTime": "Tue 09:35",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -15882,7 +15527,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/New_York",
-        "localTime": "Tue 09:05",
+        "localTime": "Tue 09:35",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -15969,7 +15614,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/New_York",
-        "localTime": "Tue 09:05",
+        "localTime": "Tue 09:35",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -16056,7 +15701,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/New_York",
-        "localTime": "Tue 09:05",
+        "localTime": "Tue 09:35",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -16143,7 +15788,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/New_York",
-        "localTime": "Tue 09:05",
+        "localTime": "Tue 09:35",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -16230,7 +15875,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/New_York",
-        "localTime": "Tue 09:05",
+        "localTime": "Tue 09:35",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -16317,7 +15962,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/New_York",
-        "localTime": "Tue 09:05",
+        "localTime": "Tue 09:35",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -16404,7 +16049,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/Zurich",
-        "localTime": "Tue 15:05",
+        "localTime": "Tue 15:35",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
@@ -16491,7 +16136,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/Rome",
-        "localTime": "Tue 15:05",
+        "localTime": "Tue 15:35",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
@@ -16515,85 +16160,6 @@
       "contactChannelScore": 17,
       "dealProbabilityScore": 258,
       "priorityScore": 258
-    },
-    {
-      "id": "google-customer-cms-distribution-linkedin",
-      "name": "CMS Distribution",
-      "company": "CMS Distribution",
-      "customerType": "agency",
-      "discoveryMode": "autonomous_refill",
-      "country": "Ireland",
-      "countryEn": "Ireland",
-      "fitScore": 97,
-      "fitTier": "A+",
-      "marketScore": 4.5,
-      "marketStatus": "open",
-      "agencyState": "open",
-      "agentCompany": "",
-      "keyword": "European value-added consumer electronics and technology distributor",
-      "role": "Vendor partnerships, consumer product sales, brand management, or distribution director.",
-      "background": "Value-added technology distributor representing more than 200 manufacturers, with consumer electronics, retail and B2B channel coverage in the UK, Ireland and wider Europe.",
-      "buyerPersona": "Vendor partnerships, consumer product sales, brand management, or distribution director.",
-      "targetMarkets": "Ireland, United Kingdom, France and Nordics",
-      "excludedMarkets": "Switzerland, Romania, Greece, Hungary, Netherlands, Belgium, Poland, Czechia, Slovakia, Estonia, Lithuania and Slovenia",
-      "productCategory": "European value-added consumer electronics and technology distributor",
-      "businessModel": "Retail Chain",
-      "productFit": "FLEXTAIL portable pumps, outdoor power, camping lighting and compact camping accessories",
-      "opportunity": "Value-added technology distributor representing more than 200 manufacturers, with consumer electronics, retail and B2B channel coverage in the UK, Ireland and wider Europe.",
-      "linkedin_url": "https://www.linkedin.com/company/cms-distribution",
-      "linkedin": "https://www.linkedin.com/company/cms-distribution",
-      "publicEmail": "",
-      "contactEmail": "",
-      "vendorPortal": "https://www.cmsdistribution.com/contact-us",
-      "contactPhone": "",
-      "contactNote": "",
-      "publicEmailStatus": "",
-      "website": "https://www.cmsdistribution.com/",
-      "evidenceUrl": "https://www.google.com/search?q=%22CMS%20Distribution%22%20%22European%20value-added%20consumer%20electronics%20and%20technology%20distributor%22%20%22Ireland%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "sourceEvidenceUrl": "https://www.cmsdistribution.com/contact-us",
-      "externalVerificationStatus": "",
-      "query": "https://www.google.com/search?q=%22CMS%20Distribution%22%20%22European%20value-added%20consumer%20electronics%20and%20technology%20distributor%22%20%22Ireland%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "source": "google_customer_discovery",
-      "sourceType": "google",
-      "discoveryProvider": "google",
-      "channel": "",
-      "identityStatus": "verified",
-      "officialSocialProfileVerified": false,
-      "socialProfileEvidenceUrl": "",
-      "socialProfileVerifiedAt": "",
-      "profiledAt": "",
-      "partnershipStatus": "",
-      "doNotOutreach": false,
-      "automationStatus": "",
-      "partnerNote": "",
-      "sendStatus": "",
-      "workingTime": {
-        "dueNow": true,
-        "timeZone": "Europe/Dublin",
-        "localTime": "Tue 14:05",
-        "window": "afternoon",
-        "nextBest": "now",
-        "weight": 0.9
-      },
-      "platform": "linkedin",
-      "platformUrl": "https://www.linkedin.com/company/cms-distribution",
-      "url": "https://www.linkedin.com/company/cms-distribution",
-      "action": "develop",
-      "reason": "verified_linkedin_profile_ready",
-      "alternateChannels": {
-        "linkedin": "https://www.linkedin.com/company/cms-distribution",
-        "instagram": "",
-        "facebook": "",
-        "websiteContact": "https://www.cmsdistribution.com/contact-us"
-      },
-      "identitySource": "verified LinkedIn profile + official website + Google background query",
-      "channelPriority": 0,
-      "discoveredAt": "2026-07-14T04:02:10.362Z",
-      "targetRegion": "europe",
-      "targetRegionScore": 45,
-      "contactChannelScore": 17,
-      "dealProbabilityScore": 256,
-      "priorityScore": 256
     },
     {
       "id": "google-customer-above-and-beyond-facebook",
@@ -16649,7 +16215,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/Dublin",
-        "localTime": "Tue 14:05",
+        "localTime": "Tue 14:35",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
@@ -16730,7 +16296,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/Berlin",
-        "localTime": "Tue 15:05",
+        "localTime": "Tue 15:35",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
@@ -16811,7 +16377,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/Oslo",
-        "localTime": "Tue 15:05",
+        "localTime": "Tue 15:35",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
@@ -16898,7 +16464,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/London",
-        "localTime": "Tue 14:05",
+        "localTime": "Tue 14:35",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
@@ -16979,7 +16545,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/London",
-        "localTime": "Tue 14:05",
+        "localTime": "Tue 14:35",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
@@ -17060,7 +16626,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/New_York",
-        "localTime": "Tue 09:05",
+        "localTime": "Tue 09:35",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -17141,7 +16707,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/Toronto",
-        "localTime": "Tue 09:05",
+        "localTime": "Tue 09:35",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -17222,7 +16788,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/New_York",
-        "localTime": "Tue 09:05",
+        "localTime": "Tue 09:35",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -17309,7 +16875,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/New_York",
-        "localTime": "Tue 09:05",
+        "localTime": "Tue 09:35",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -17396,7 +16962,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/New_York",
-        "localTime": "Tue 09:05",
+        "localTime": "Tue 09:35",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -17477,7 +17043,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/Berlin",
-        "localTime": "Tue 15:05",
+        "localTime": "Tue 15:35",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
@@ -17556,7 +17122,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/Dublin",
-        "localTime": "Tue 14:05",
+        "localTime": "Tue 14:35",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
@@ -17635,7 +17201,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/Berlin",
-        "localTime": "Tue 15:05",
+        "localTime": "Tue 15:35",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
@@ -17714,7 +17280,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/London",
-        "localTime": "Tue 14:05",
+        "localTime": "Tue 14:35",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
@@ -17793,7 +17359,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/London",
-        "localTime": "Tue 14:05",
+        "localTime": "Tue 14:35",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
@@ -17872,7 +17438,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/New_York",
-        "localTime": "Tue 09:05",
+        "localTime": "Tue 09:35",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -17951,7 +17517,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/New_York",
-        "localTime": "Tue 09:05",
+        "localTime": "Tue 09:35",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -18030,7 +17596,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/Toronto",
-        "localTime": "Tue 09:05",
+        "localTime": "Tue 09:35",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -18109,7 +17675,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/New_York",
-        "localTime": "Tue 09:05",
+        "localTime": "Tue 09:35",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -18564,7 +18130,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Asia/Shanghai",
-        "localTime": "Tue 21:05",
+        "localTime": "Tue 21:35",
         "window": "outside_work_hours",
         "nextBest": "Asia/Shanghai morning",
         "weight": 0
@@ -18596,6 +18162,93 @@
       "contactChannelScore": 13,
       "dealProbabilityScore": 243,
       "priorityScore": 243
+    },
+    {
+      "id": "google-customer-varuste-website-contact",
+      "name": "Varuste",
+      "company": "Varuste",
+      "customerType": "key_account",
+      "discoveryMode": "autonomous_refill",
+      "country": "Finland",
+      "countryEn": "Finland",
+      "fitScore": 87,
+      "fitTier": "A",
+      "marketScore": 4.5,
+      "marketStatus": "open",
+      "agencyState": "open",
+      "agentCompany": "",
+      "keyword": "verified outdoor, camping, travel and consumer electronics retail channel",
+      "role": "Outdoor electronics, camping accessories, travel products or consumer electronics category buyer.",
+      "background": "Varuste is listed or qualified as an outdoor/camping specialty retail prospect with assortment fit for lightweight outdoor electrics and practical high-rotation 3C products.",
+      "buyerPersona": "Outdoor electronics, camping accessories, travel products or consumer electronics category buyer.",
+      "targetMarkets": "",
+      "excludedMarkets": "",
+      "productCategory": "verified outdoor, camping, travel and consumer electronics retail channel",
+      "businessModel": "Retail Chain",
+      "productFit": "FLEXTAIL portable pumps, outdoor power, camping lighting and compact camping accessories",
+      "opportunity": "Varuste is listed or qualified as an outdoor/camping specialty retail prospect with assortment fit for lightweight outdoor electrics and practical high-rotation 3C products.",
+      "linkedin_url": "",
+      "linkedin": "",
+      "publicEmail": "info@varuste.net",
+      "contactEmail": "info@varuste.net",
+      "vendorPortal": "https://varuste.net/",
+      "contactPhone": "",
+      "contactNote": "",
+      "publicEmailStatus": "Official public company-domain email published by Varuste; route the supplier proposal to the category buyer or vendor-review owner.",
+      "website": "https://varuste.net/",
+      "evidenceUrl": "https://www.google.com/search?q=%22Varuste%22%20%22verified%20outdoor%2C%20camping%2C%20travel%20and%20consumer%20electronics%20retail%20channel%22%20%22Finland%22%20buyer%20OR%20wholesale%20OR%20contact",
+      "sourceEvidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
+      "externalVerificationStatus": "",
+      "query": "https://www.google.com/search?q=%22Varuste%22%20%22verified%20outdoor%2C%20camping%2C%20travel%20and%20consumer%20electronics%20retail%20channel%22%20%22Finland%22%20buyer%20OR%20wholesale%20OR%20contact",
+      "source": "google_customer_discovery",
+      "sourceType": "google",
+      "discoveryProvider": "google",
+      "channel": "",
+      "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
+      "socialProfileEvidenceUrl": "",
+      "socialProfileVerifiedAt": "",
+      "profiledAt": "",
+      "partnershipStatus": "",
+      "doNotOutreach": false,
+      "automationStatus": "",
+      "partnerNote": "",
+      "sendStatus": "",
+      "workingTime": {
+        "dueNow": false,
+        "timeZone": "Europe/Helsinki",
+        "localTime": "Tue 16:35",
+        "window": "outside_work_hours",
+        "nextBest": "Europe/Helsinki morning",
+        "weight": 0
+      },
+      "platform": "website_form",
+      "channelType": "website_form",
+      "platformUrl": "https://varuste.net/",
+      "url": "https://varuste.net/",
+      "contactUrl": "https://varuste.net/",
+      "contactSearchUrl": "https://www.google.com/search?q=site%3Avaruste.net%20%22Varuste%22%20contact%20buyer%20wholesale%20email%20vendor",
+      "emailFrom": "leo@flextailgear.com",
+      "websiteContactSubject": "FLEXTAIL retail partnership | 2026 assortment",
+      "websiteContactMessage": "Dear Varuste Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
+      "websiteContactFlow": "open_official_contact_us_fill_attach_auto_submit",
+      "action": "verify_target",
+      "reason": "homepage_only_contact_path_requires_verification",
+      "alternateChannels": {
+        "linkedin": "",
+        "instagram": "",
+        "facebook": "",
+        "websiteContact": "https://varuste.net/"
+      },
+      "invalidChannels": {},
+      "identitySource": "official homepage found; exact buyer/contact path still requires verification",
+      "channelPriority": 3,
+      "discoveredAt": "2026-07-14T04:02:10.362Z",
+      "targetRegion": "europe",
+      "targetRegionScore": 45,
+      "contactChannelScore": 25,
+      "dealProbabilityScore": 229,
+      "priorityScore": 229
     },
     {
       "id": "google-customer-obelink-website-contact",
@@ -18651,7 +18304,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Asia/Shanghai",
-        "localTime": "Tue 21:05",
+        "localTime": "Tue 21:35",
         "window": "outside_work_hours",
         "nextBest": "Asia/Shanghai morning",
         "weight": 0
@@ -18738,7 +18391,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Asia/Shanghai",
-        "localTime": "Tue 21:05",
+        "localTime": "Tue 21:35",
         "window": "outside_work_hours",
         "nextBest": "Asia/Shanghai morning",
         "weight": 0
@@ -18825,7 +18478,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Asia/Shanghai",
-        "localTime": "Tue 21:05",
+        "localTime": "Tue 21:35",
         "window": "outside_work_hours",
         "nextBest": "Asia/Shanghai morning",
         "weight": 0
@@ -18912,7 +18565,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Asia/Shanghai",
-        "localTime": "Tue 21:05",
+        "localTime": "Tue 21:35",
         "window": "outside_work_hours",
         "nextBest": "Asia/Shanghai morning",
         "weight": 0
@@ -18999,7 +18652,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Asia/Shanghai",
-        "localTime": "Tue 21:05",
+        "localTime": "Tue 21:35",
         "window": "outside_work_hours",
         "nextBest": "Asia/Shanghai morning",
         "weight": 0
@@ -19086,7 +18739,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Australia/Sydney",
-        "localTime": "Tue 23:05",
+        "localTime": "Tue 23:35",
         "window": "outside_work_hours",
         "nextBest": "Australia/Sydney morning",
         "weight": 0
@@ -19173,7 +18826,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Pacific/Auckland",
-        "localTime": "Wed 01:05",
+        "localTime": "Wed 01:35",
         "window": "outside_work_hours",
         "nextBest": "Pacific/Auckland morning",
         "weight": 0
@@ -19260,7 +18913,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Australia/Sydney",
-        "localTime": "Tue 23:05",
+        "localTime": "Tue 23:35",
         "window": "outside_work_hours",
         "nextBest": "Australia/Sydney morning",
         "weight": 0
@@ -19347,7 +19000,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Australia/Sydney",
-        "localTime": "Tue 23:05",
+        "localTime": "Tue 23:35",
         "window": "outside_work_hours",
         "nextBest": "Australia/Sydney morning",
         "weight": 0
@@ -19434,7 +19087,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Pacific/Auckland",
-        "localTime": "Wed 01:05",
+        "localTime": "Wed 01:35",
         "window": "outside_work_hours",
         "nextBest": "Pacific/Auckland morning",
         "weight": 0
@@ -19515,7 +19168,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Pacific/Auckland",
-        "localTime": "Wed 01:05",
+        "localTime": "Wed 01:35",
         "window": "outside_work_hours",
         "nextBest": "Pacific/Auckland morning",
         "weight": 0
@@ -20091,6 +19744,98 @@
       "priorityScore": 99,
       "potentialSource": "customer_table",
       "nextAction": "background_check_then_verify_channel"
+    },
+    {
+      "id": 16,
+      "name": "Ryan Cooper",
+      "company": "Airstream",
+      "role": "Director of Product Development",
+      "category": "rv",
+      "ka_flag": false,
+      "priority": "?",
+      "status": "Pending",
+      "keyword_used": "RV power solutions",
+      "message": "Hi Ryan,\n\nFlextail's power stations are designed specifically for RV applications. Airstream customers demand quality.\n\nBest,\nDavid",
+      "source": "outreach_data",
+      "country": "",
+      "countryEn": "",
+      "platform": "research",
+      "fitScore": 91,
+      "fitTier": "A",
+      "sourceType": "customer_table",
+      "website": "",
+      "url": "",
+      "platformUrl": "",
+      "linkedinUrl": "",
+      "linkedinSearchUrl": "https://www.linkedin.com/search/results/all/?keywords=Airstream%20buyer%20outdoor%20LinkedIn",
+      "googleSearchUrl": "https://www.google.com/search?q=Airstream%20outdoor%20buyer%20partnership%20contact",
+      "contactSearchUrl": "https://www.google.com/search?q=Airstream%20outdoor%20buyer%20partnership%20contact",
+      "dataSources": [
+        "customer_table"
+      ],
+      "background": "Hi Ryan,\n\nFlextail's power stations are designed specifically for RV applications. Airstream customers demand quality.\n\nBest,\nDavid",
+      "buyerPersona": "Director of Product Development",
+      "marketStatus": "",
+      "taskId": 16,
+      "action": "verify_target",
+      "reason": "missing_verified_profile_url",
+      "lastStatus": "",
+      "lastEvidence": "",
+      "lastTouch": "",
+      "previouslyContacted": false,
+      "targetRegion": "other",
+      "targetRegionScore": 0,
+      "contactChannelScore": 0,
+      "dealProbabilityScore": 91,
+      "priorityScore": 91,
+      "potentialSource": "customer_table",
+      "nextAction": "background_check_then_verify_channel"
+    },
+    {
+      "id": 5,
+      "name": "David Park",
+      "company": "Pacific Outdoor Group",
+      "role": "CEO",
+      "category": "agent",
+      "ka_flag": false,
+      "priority": "?",
+      "status": "Pending",
+      "keyword_used": "CEO outdoor brand",
+      "message": "Hi David,\n\nI'm the founder of Flextail. We're exploring distribution partnerships in the North American market.\n\nYour company came highly recommended. Would love to connect.\n\nBest,\nDavid",
+      "source": "outreach_data",
+      "country": "",
+      "countryEn": "",
+      "platform": "research",
+      "fitScore": 91,
+      "fitTier": "A",
+      "sourceType": "customer_table",
+      "website": "",
+      "url": "",
+      "platformUrl": "",
+      "linkedinUrl": "",
+      "linkedinSearchUrl": "https://www.linkedin.com/search/results/all/?keywords=Pacific%20Outdoor%20Group%20buyer%20outdoor%20LinkedIn",
+      "googleSearchUrl": "https://www.google.com/search?q=Pacific%20Outdoor%20Group%20outdoor%20buyer%20partnership%20contact",
+      "contactSearchUrl": "https://www.google.com/search?q=Pacific%20Outdoor%20Group%20outdoor%20buyer%20partnership%20contact",
+      "dataSources": [
+        "customer_table"
+      ],
+      "background": "Hi David,\n\nI'm the founder of Flextail. We're exploring distribution partnerships in the North American market.\n\nYour company came highly recommended. Would love to connect.\n\nBest,\nDavid",
+      "buyerPersona": "CEO",
+      "marketStatus": "",
+      "taskId": 5,
+      "action": "verify_target",
+      "reason": "missing_verified_profile_url",
+      "lastStatus": "",
+      "lastEvidence": "",
+      "lastTouch": "",
+      "previouslyContacted": false,
+      "targetRegion": "other",
+      "targetRegionScore": 0,
+      "contactChannelScore": 0,
+      "dealProbabilityScore": 91,
+      "priorityScore": 91,
+      "potentialSource": "customer_table",
+      "nextAction": "background_check_then_verify_channel"
     }
   ],
   "cooldownQueue": [
@@ -20140,7 +19885,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/London",
-        "localTime": "Tue 14:05",
+        "localTime": "Tue 14:35",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
@@ -20197,7 +19942,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/London",
-        "localTime": "Tue 14:05",
+        "localTime": "Tue 14:35",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
@@ -20254,7 +19999,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/London",
-        "localTime": "Tue 14:05",
+        "localTime": "Tue 14:35",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
@@ -20311,7 +20056,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/New_York",
-        "localTime": "Tue 09:05",
+        "localTime": "Tue 09:35",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -20368,7 +20113,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/Toronto",
-        "localTime": "Tue 09:05",
+        "localTime": "Tue 09:35",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -20425,7 +20170,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/Toronto",
-        "localTime": "Tue 09:05",
+        "localTime": "Tue 09:35",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -20482,7 +20227,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Asia/Jakarta",
-        "localTime": "Tue 20:05",
+        "localTime": "Tue 20:35",
         "window": "outside_work_hours",
         "nextBest": "Asia/Jakarta morning",
         "weight": 0
@@ -20539,7 +20284,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Australia/Sydney",
-        "localTime": "Tue 23:05",
+        "localTime": "Tue 23:35",
         "window": "outside_work_hours",
         "nextBest": "Australia/Sydney morning",
         "weight": 0
@@ -20596,7 +20341,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Pacific/Auckland",
-        "localTime": "Wed 01:05",
+        "localTime": "Wed 01:35",
         "window": "outside_work_hours",
         "nextBest": "Pacific/Auckland morning",
         "weight": 0
@@ -20653,7 +20398,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Pacific/Auckland",
-        "localTime": "Wed 01:05",
+        "localTime": "Wed 01:35",
         "window": "outside_work_hours",
         "nextBest": "Pacific/Auckland morning",
         "weight": 0
@@ -20710,7 +20455,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Pacific/Auckland",
-        "localTime": "Wed 01:05",
+        "localTime": "Wed 01:35",
         "window": "outside_work_hours",
         "nextBest": "Pacific/Auckland morning",
         "weight": 0
@@ -20767,7 +20512,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Pacific/Auckland",
-        "localTime": "Wed 01:05",
+        "localTime": "Wed 01:35",
         "window": "outside_work_hours",
         "nextBest": "Pacific/Auckland morning",
         "weight": 0
@@ -20824,7 +20569,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Pacific/Auckland",
-        "localTime": "Wed 01:05",
+        "localTime": "Wed 01:35",
         "window": "outside_work_hours",
         "nextBest": "Pacific/Auckland morning",
         "weight": 0
@@ -20881,7 +20626,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Asia/Kolkata",
-        "localTime": "Tue 18:35",
+        "localTime": "Tue 19:05",
         "window": "outside_work_hours",
         "nextBest": "Asia/Kolkata morning",
         "weight": 0
@@ -20946,7 +20691,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/Copenhagen",
-        "localTime": "Tue 15:05",
+        "localTime": "Tue 15:35",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
@@ -21050,7 +20795,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/London",
-        "localTime": "Tue 14:05",
+        "localTime": "Tue 14:35",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
@@ -21178,7 +20923,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/Vienna",
-        "localTime": "Tue 15:05",
+        "localTime": "Tue 15:35",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
@@ -21268,7 +21013,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/Berlin",
-        "localTime": "Tue 15:05",
+        "localTime": "Tue 15:35",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
@@ -21303,6 +21048,96 @@
       "lastStatus": "sent_confirmed",
       "lastEvidence": "alibaba_mail_sent_success_toast;sent_folder_record_confirmed;sent_folder_subject:FLEXTAIL brand distribution | KOMSA manufacturer partnership",
       "lastTouch": "2026-07-20T13:41:00.000Z"
+    },
+    {
+      "id": "google-customer-cms-distribution-website-contact",
+      "name": "CMS Distribution",
+      "company": "CMS Distribution",
+      "customerType": "agency",
+      "discoveryMode": "autonomous_refill",
+      "country": "Ireland",
+      "countryEn": "Ireland",
+      "fitScore": 97,
+      "fitTier": "A+",
+      "marketScore": 4.5,
+      "marketStatus": "open",
+      "agencyState": "open",
+      "agentCompany": "",
+      "keyword": "European value-added consumer electronics and technology distributor",
+      "role": "Vendor partnerships, consumer product sales, brand management, or distribution director.",
+      "background": "Value-added technology distributor representing more than 200 manufacturers, with consumer electronics, retail and B2B channel coverage in the UK, Ireland and wider Europe.",
+      "buyerPersona": "Vendor partnerships, consumer product sales, brand management, or distribution director.",
+      "targetMarkets": "Ireland, United Kingdom, France and Nordics",
+      "excludedMarkets": "Switzerland, Romania, Greece, Hungary, Netherlands, Belgium, Poland, Czechia, Slovakia, Estonia, Lithuania and Slovenia",
+      "productCategory": "European value-added consumer electronics and technology distributor",
+      "businessModel": "Retail Chain",
+      "productFit": "FLEXTAIL portable pumps, outdoor power, camping lighting and compact camping accessories",
+      "opportunity": "Value-added technology distributor representing more than 200 manufacturers, with consumer electronics, retail and B2B channel coverage in the UK, Ireland and wider Europe.",
+      "linkedin_url": "https://www.linkedin.com/company/cms-distribution",
+      "linkedin": "https://www.linkedin.com/company/cms-distribution",
+      "publicEmail": "",
+      "contactEmail": "",
+      "vendorPortal": "https://www.cmsdistribution.com/contact-us",
+      "contactPhone": "",
+      "contactNote": "",
+      "publicEmailStatus": "",
+      "website": "https://www.cmsdistribution.com/",
+      "evidenceUrl": "https://www.google.com/search?q=%22CMS%20Distribution%22%20%22European%20value-added%20consumer%20electronics%20and%20technology%20distributor%22%20%22Ireland%22%20buyer%20OR%20wholesale%20OR%20contact",
+      "sourceEvidenceUrl": "https://www.cmsdistribution.com/contact-us",
+      "externalVerificationStatus": "",
+      "query": "https://www.google.com/search?q=%22CMS%20Distribution%22%20%22European%20value-added%20consumer%20electronics%20and%20technology%20distributor%22%20%22Ireland%22%20buyer%20OR%20wholesale%20OR%20contact",
+      "source": "google_customer_discovery",
+      "sourceType": "google",
+      "discoveryProvider": "google",
+      "channel": "",
+      "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
+      "socialProfileEvidenceUrl": "",
+      "socialProfileVerifiedAt": "",
+      "profiledAt": "",
+      "partnershipStatus": "",
+      "doNotOutreach": false,
+      "automationStatus": "",
+      "partnerNote": "",
+      "sendStatus": "",
+      "workingTime": {
+        "dueNow": true,
+        "timeZone": "Europe/Dublin",
+        "localTime": "Tue 14:35",
+        "window": "afternoon",
+        "nextBest": "now",
+        "weight": 0.9
+      },
+      "platform": "website_form",
+      "channelType": "website_form",
+      "platformUrl": "https://www.cmsdistribution.com/contact-us",
+      "url": "https://www.cmsdistribution.com/contact-us",
+      "contactUrl": "https://www.cmsdistribution.com/contact-us",
+      "contactSearchUrl": "https://www.google.com/search?q=site%3Awww.cmsdistribution.com%20%22CMS%20Distribution%22%20contact%20buyer%20wholesale%20email%20vendor",
+      "emailFrom": "leo@flextailgear.com",
+      "websiteContactSubject": "FLEXTAIL retail partnership | 2026 assortment",
+      "websiteContactMessage": "Dear CMS Distribution Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
+      "websiteContactFlow": "open_official_contact_us_fill_attach_auto_submit",
+      "action": "cooldown",
+      "reason": "previous_customer_development_no_repeat",
+      "alternateChannels": {
+        "linkedin": "https://www.linkedin.com/company/cms-distribution",
+        "instagram": "",
+        "facebook": "",
+        "websiteContact": "https://www.cmsdistribution.com/contact-us"
+      },
+      "invalidChannels": {},
+      "identitySource": "official website contact path + Google buyer/contact query",
+      "channelPriority": 3,
+      "discoveredAt": "2026-07-14T04:02:10.362Z",
+      "targetRegion": "europe",
+      "targetRegionScore": 45,
+      "contactChannelScore": 17,
+      "dealProbabilityScore": 256,
+      "priorityScore": 256,
+      "lastStatus": "send_unconfirmed",
+      "lastEvidence": "owner_confirmed_prior_customer_development;historical_contact_no_repeat;confirmed_by_business_owner_2026-08-04;do_not_contact_again",
+      "lastTouch": "2026-07-14T08:07:55.732Z"
     },
     {
       "id": "google-customer-liberty-mountain-website-contact",
@@ -21358,7 +21193,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/New_York",
-        "localTime": "Tue 09:05",
+        "localTime": "Tue 09:35",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -21462,7 +21297,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/London",
-        "localTime": "Tue 14:05",
+        "localTime": "Tue 14:35",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
@@ -21566,7 +21401,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/Paris",
-        "localTime": "Tue 15:05",
+        "localTime": "Tue 15:35",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
@@ -21670,7 +21505,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/Berlin",
-        "localTime": "Tue 15:05",
+        "localTime": "Tue 15:35",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
@@ -21711,96 +21546,6 @@
       "lastStatus": "sent_confirmed",
       "lastEvidence": "facebook_message_sent_confirmed_composer_cleared",
       "lastTouch": "2026-06-26T06:08:17.009Z"
-    },
-    {
-      "id": "google-customer-scandinavian-outdoor-website-contact",
-      "name": "Scandinavian Outdoor",
-      "company": "Scandinavian Outdoor",
-      "customerType": "key_account",
-      "discoveryMode": "autonomous_refill",
-      "country": "Finland",
-      "countryEn": "Finland",
-      "fitScore": 89,
-      "fitTier": "A",
-      "marketScore": 4.5,
-      "marketStatus": "open",
-      "agencyState": "open",
-      "agentCompany": "",
-      "keyword": "verified outdoor, camping, travel and consumer electronics retail channel",
-      "role": "Outdoor electronics, camping accessories, travel products or consumer electronics category buyer.",
-      "background": "Scandinavian Outdoor is listed or qualified as an outdoor/camping specialty retail prospect with assortment fit for lightweight outdoor electrics and practical high-rotation 3C products.",
-      "buyerPersona": "Outdoor electronics, camping accessories, travel products or consumer electronics category buyer.",
-      "targetMarkets": "",
-      "excludedMarkets": "",
-      "productCategory": "verified outdoor, camping, travel and consumer electronics retail channel",
-      "businessModel": "Retail Chain",
-      "productFit": "FLEXTAIL portable pumps, outdoor power, camping lighting and compact camping accessories",
-      "opportunity": "Scandinavian Outdoor is listed or qualified as an outdoor/camping specialty retail prospect with assortment fit for lightweight outdoor electrics and practical high-rotation 3C products.",
-      "linkedin_url": "",
-      "linkedin": "",
-      "publicEmail": "info@scandinavianoutdoor.com",
-      "contactEmail": "info@scandinavianoutdoor.com",
-      "vendorPortal": "https://scandinavianoutdoor.com/page/customer-service/",
-      "contactPhone": "",
-      "contactNote": "",
-      "publicEmailStatus": "Official public company-domain email on the Scandinavian Outdoor customer-service page; route the supplier proposal to the category buyer or vendor-review owner.",
-      "website": "https://scandinavianoutdoor.com/",
-      "evidenceUrl": "https://www.google.com/search?q=%22Scandinavian%20Outdoor%22%20%22verified%20outdoor%2C%20camping%2C%20travel%20and%20consumer%20electronics%20retail%20channel%22%20%22Finland%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "sourceEvidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
-      "externalVerificationStatus": "",
-      "query": "https://www.google.com/search?q=%22Scandinavian%20Outdoor%22%20%22verified%20outdoor%2C%20camping%2C%20travel%20and%20consumer%20electronics%20retail%20channel%22%20%22Finland%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "source": "google_customer_discovery",
-      "sourceType": "google",
-      "discoveryProvider": "google",
-      "channel": "",
-      "identityStatus": "verified",
-      "officialSocialProfileVerified": false,
-      "socialProfileEvidenceUrl": "",
-      "socialProfileVerifiedAt": "",
-      "profiledAt": "",
-      "partnershipStatus": "",
-      "doNotOutreach": false,
-      "automationStatus": "",
-      "partnerNote": "",
-      "sendStatus": "",
-      "workingTime": {
-        "dueNow": true,
-        "timeZone": "Europe/Helsinki",
-        "localTime": "Tue 16:05",
-        "window": "afternoon",
-        "nextBest": "now",
-        "weight": 0.9
-      },
-      "platform": "website_form",
-      "channelType": "website_form",
-      "platformUrl": "https://scandinavianoutdoor.com/page/customer-service/",
-      "url": "https://scandinavianoutdoor.com/page/customer-service/",
-      "contactUrl": "https://scandinavianoutdoor.com/page/customer-service/",
-      "contactSearchUrl": "https://www.google.com/search?q=site%3Ascandinavianoutdoor.com%20%22Scandinavian%20Outdoor%22%20contact%20buyer%20wholesale%20email%20vendor",
-      "emailFrom": "leo@flextailgear.com",
-      "websiteContactSubject": "FLEXTAIL retail partnership | 2026 assortment",
-      "websiteContactMessage": "Dear Scandinavian Outdoor Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
-      "websiteContactFlow": "open_official_contact_us_fill_attach_auto_submit",
-      "action": "cooldown",
-      "reason": "previous_customer_development_no_repeat",
-      "alternateChannels": {
-        "linkedin": "",
-        "instagram": "",
-        "facebook": "",
-        "websiteContact": "https://scandinavianoutdoor.com/page/customer-service/"
-      },
-      "invalidChannels": {},
-      "identitySource": "official website contact path + Google buyer/contact query",
-      "channelPriority": 3,
-      "discoveredAt": "2026-07-14T04:02:10.362Z",
-      "targetRegion": "europe",
-      "targetRegionScore": 45,
-      "contactChannelScore": 25,
-      "dealProbabilityScore": 231,
-      "priorityScore": 231,
-      "lastStatus": "sent_confirmed",
-      "lastEvidence": "official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed;contact_path_strategy_v2",
-      "lastTouch": "2026-08-04T03:35:36.106Z"
     },
     {
       "id": "google-customer-sport-conrad-website-contact",
@@ -21856,7 +21601,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/Berlin",
-        "localTime": "Tue 15:05",
+        "localTime": "Tue 15:35",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
@@ -21960,7 +21705,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/New_York",
-        "localTime": "Tue 09:05",
+        "localTime": "Tue 09:35",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -22064,7 +21809,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/London",
-        "localTime": "Tue 14:05",
+        "localTime": "Tue 14:35",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
@@ -22168,7 +21913,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/New_York",
-        "localTime": "Tue 09:05",
+        "localTime": "Tue 09:35",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -22258,7 +22003,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/Berlin",
-        "localTime": "Tue 15:05",
+        "localTime": "Tue 15:35",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
@@ -22362,7 +22107,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "America/Toronto",
-        "localTime": "Tue 09:05",
+        "localTime": "Tue 09:35",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -22452,7 +22197,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/Berlin",
-        "localTime": "Tue 15:05",
+        "localTime": "Tue 15:35",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9

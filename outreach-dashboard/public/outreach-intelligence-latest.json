@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-04T12:59:53.584Z",
+  "generatedAt": "2026-08-04T13:33:55.747Z",
   "companies": [
     {
       "companyId": "company_992d96a6c170243f",
@@ -114,127 +114,6 @@
           "timestamp": "2026-08-04T12:37:47.238Z",
           "channel": "website_form",
           "evidence": "website_contact_entry_not_verified;contact_entry_clicked:Become a Supplier;official_social_fallback:linkedin;identity_mismatch_expected_Esprinet Group_title_(22) LinkedIn;contact_path_strategy_v2"
-        }
-      ]
-    },
-    {
-      "companyId": "company_26740a539a1a8594",
-      "company": "CMS Distribution",
-      "keys": [
-        "cmsdistribution",
-        "cmsdistributioncom"
-      ],
-      "domains": [
-        "cmsdistribution.com"
-      ],
-      "channels": [
-        "website_form",
-        "linkedin"
-      ],
-      "evidence": [
-        {
-          "channel": "website_form",
-          "score": 80,
-          "verified": false,
-          "reasons": [
-            "first_party_evidence"
-          ],
-          "evidenceUrl": "https://www.cmsdistribution.com/contact-us",
-          "checkedAt": ""
-        },
-        {
-          "channel": "website_form",
-          "score": 80,
-          "verified": false,
-          "reasons": [
-            "first_party_evidence"
-          ],
-          "evidenceUrl": "https://www.cmsdistribution.com/contact-us",
-          "checkedAt": ""
-        },
-        {
-          "channel": "website_form",
-          "score": 80,
-          "verified": false,
-          "reasons": [
-            "first_party_evidence"
-          ],
-          "evidenceUrl": "https://www.cmsdistribution.com/contact-us",
-          "checkedAt": ""
-        },
-        {
-          "channel": "linkedin",
-          "score": 0,
-          "verified": false,
-          "reasons": [
-            "unverified_external_evidence_rejected"
-          ],
-          "evidenceUrl": "https://www.cmsdistribution.com/contact-us",
-          "checkedAt": ""
-        },
-        {
-          "channel": "linkedin",
-          "score": 0,
-          "verified": false,
-          "reasons": [
-            "unverified_external_evidence_rejected"
-          ],
-          "evidenceUrl": "https://www.cmsdistribution.com/contact-us",
-          "checkedAt": ""
-        },
-        {
-          "channel": "linkedin",
-          "score": 0,
-          "verified": false,
-          "reasons": [
-            "unverified_external_evidence_rejected"
-          ],
-          "evidenceUrl": "https://www.cmsdistribution.com/contact-us",
-          "checkedAt": ""
-        }
-      ],
-      "history": [
-        {
-          "status": "failed_open",
-          "timestamp": "2026-07-14T06:13:36.882Z",
-          "channel": "linkedin",
-          "evidence": "linkedin_draft_not_inserted_before_send;pre_send_failure_status_repaired"
-        },
-        {
-          "status": "website_contact_unreachable_skip",
-          "timestamp": "2026-07-14T06:25:16.174Z",
-          "channel": "website_form",
-          "evidence": "website_contact_entry_not_verified;contact_entry_clicked:Skip to content;website_contact_all_targets_failed:2"
-        },
-        {
-          "status": "send_unconfirmed",
-          "timestamp": "2026-07-14T08:07:55.732Z",
-          "channel": "linkedin",
-          "evidence": "linkedin_send_clicked_but_confirmation_missing"
-        },
-        {
-          "status": "failed_open",
-          "timestamp": "2026-08-04T10:09:16.735Z",
-          "channel": "linkedin",
-          "evidence": "website_contact_entry_not_verified;contact_entry_clicked:Skip to content;official_social_fallback:linkedin;identity_mismatch_expected_CMS Distribution_title_(21) LinkedIn;contact_path_strategy_v2"
-        },
-        {
-          "status": "failed_open",
-          "timestamp": "2026-08-04T10:23:55.946Z",
-          "channel": "website_form",
-          "evidence": "website_contact_entry_not_verified;contact_entry_clicked:Skip to content;official_social_fallback:linkedin;identity_mismatch_expected_CMS Distribution_title_(21) LinkedIn;contact_path_strategy_v2"
-        },
-        {
-          "status": "failed_open",
-          "timestamp": "2026-08-04T12:01:43.395Z",
-          "channel": "website_form",
-          "evidence": "customer_execution_timeout:30000;queue_continued_to_next_customer"
-        },
-        {
-          "status": "failed_open",
-          "timestamp": "2026-08-04T12:38:40.768Z",
-          "channel": "linkedin",
-          "evidence": "website_contact_entry_not_verified;contact_entry_clicked:Skip to content;official_social_fallback:linkedin;identity_mismatch_expected_CMS Distribution_title_(22) LinkedIn;contact_path_strategy_v2"
         }
       ]
     },
@@ -2683,6 +2562,12 @@
           "timestamp": "2026-08-04T12:43:03.029Z",
           "channel": "facebook",
           "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;facebook_profile_no_message_button;contact_path_strategy_v2"
+        },
+        {
+          "status": "failed_open",
+          "timestamp": "2026-08-04T13:01:14.268Z",
+          "channel": "website_form",
+          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;facebook_profile_no_message_button;contact_path_strategy_v2"
         }
       ]
     },
@@ -2834,6 +2719,12 @@
           "status": "failed_open",
           "timestamp": "2026-08-04T12:44:37.159Z",
           "channel": "facebook",
+          "evidence": "website_contact_entry_not_verified;contact_entry_clicked:Contact Us;official_social_fallback:facebook;identity_mismatch_expected_Tiso_title_Facebook;contact_path_strategy_v2"
+        },
+        {
+          "status": "failed_open",
+          "timestamp": "2026-08-04T13:01:14.896Z",
+          "channel": "website_form",
           "evidence": "website_contact_entry_not_verified;contact_entry_clicked:Contact Us;official_social_fallback:facebook;identity_mismatch_expected_Tiso_title_Facebook;contact_path_strategy_v2"
         }
       ]
@@ -4537,6 +4428,12 @@
           "timestamp": "2026-08-04T12:43:50.890Z",
           "channel": "facebook",
           "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;identity_mismatch_expected_Moosejaw_title_Facebook;contact_path_strategy_v2"
+        },
+        {
+          "status": "failed_open",
+          "timestamp": "2026-08-04T13:01:14.540Z",
+          "channel": "website_form",
+          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;identity_mismatch_expected_Moosejaw_title_Facebook;contact_path_strategy_v2"
         }
       ]
     },
@@ -4682,6 +4579,12 @@
           "status": "failed_open",
           "timestamp": "2026-08-04T12:44:11.964Z",
           "channel": "facebook",
+          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;identity_mismatch_expected_The Mountaineer_title_Facebook;contact_path_strategy_v2"
+        },
+        {
+          "status": "failed_open",
+          "timestamp": "2026-08-04T13:01:14.716Z",
+          "channel": "website_form",
           "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;identity_mismatch_expected_The Mountaineer_title_Facebook;contact_path_strategy_v2"
         }
       ]
@@ -6813,6 +6716,58 @@
           "timestamp": "",
           "channel": "research",
           "evidence": ""
+        },
+        {
+          "status": "Pending",
+          "timestamp": "",
+          "channel": "research",
+          "evidence": ""
+        }
+      ]
+    },
+    {
+      "companyId": "company_5de833e71233775b",
+      "company": "Pacific Outdoor Group",
+      "keys": [
+        "pacificoutdoorgroup",
+        "davidpark",
+        "5"
+      ],
+      "domains": [],
+      "channels": [],
+      "evidence": [],
+      "history": [
+        {
+          "status": "Pending",
+          "timestamp": "",
+          "channel": "research",
+          "evidence": ""
+        },
+        {
+          "status": "Pending",
+          "timestamp": "",
+          "channel": "research",
+          "evidence": ""
+        }
+      ]
+    },
+    {
+      "companyId": "company_f775f64326d180ac",
+      "company": "Rural King",
+      "keys": [
+        "ruralking",
+        "tommartinez",
+        "14"
+      ],
+      "domains": [],
+      "channels": [],
+      "evidence": [],
+      "history": [
+        {
+          "status": "Pending",
+          "timestamp": "",
+          "channel": "research",
+          "evidence": ""
         }
       ]
     },
@@ -7042,6 +6997,100 @@
           "timestamp": "2026-07-15T10:15:32.125Z",
           "channel": "instagram",
           "evidence": "instagram_message_sent_confirmed_after_send_click;instagram_draft_inserted_verified;sentText:false;outgoingBubble:false;emptyComposer:true;follow_not_available;instagram_post_opened;post_liked;comment_submitted"
+        }
+      ]
+    },
+    {
+      "companyId": "company_26740a539a1a8594",
+      "company": "CMS Distribution",
+      "keys": [
+        "cmsdistribution",
+        "cmsdistributioncom",
+        "cmsdistributionownerconfirmedhistory"
+      ],
+      "domains": [
+        "cmsdistribution.com"
+      ],
+      "channels": [
+        "linkedin",
+        "website_form"
+      ],
+      "evidence": [
+        {
+          "channel": "website_form",
+          "score": 80,
+          "verified": false,
+          "reasons": [
+            "first_party_evidence"
+          ],
+          "evidenceUrl": "https://www.cmsdistribution.com/contact-us",
+          "checkedAt": ""
+        },
+        {
+          "channel": "linkedin",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "https://www.cmsdistribution.com/contact-us",
+          "checkedAt": ""
+        }
+      ],
+      "history": [
+        {
+          "status": "failed_open",
+          "timestamp": "2026-07-14T06:13:36.882Z",
+          "channel": "linkedin",
+          "evidence": "linkedin_draft_not_inserted_before_send;pre_send_failure_status_repaired"
+        },
+        {
+          "status": "website_contact_unreachable_skip",
+          "timestamp": "2026-07-14T06:25:16.174Z",
+          "channel": "website_form",
+          "evidence": "website_contact_entry_not_verified;contact_entry_clicked:Skip to content;website_contact_all_targets_failed:2"
+        },
+        {
+          "status": "send_unconfirmed",
+          "timestamp": "2026-07-14T08:07:55.732Z",
+          "channel": "linkedin",
+          "evidence": "linkedin_send_clicked_but_confirmation_missing"
+        },
+        {
+          "status": "send_unconfirmed",
+          "timestamp": "2026-07-14T08:07:55.732Z",
+          "channel": "research",
+          "evidence": "owner_confirmed_prior_customer_development;historical_contact_no_repeat;confirmed_by_business_owner_2026-08-04;do_not_contact_again"
+        },
+        {
+          "status": "failed_open",
+          "timestamp": "2026-08-04T10:09:16.735Z",
+          "channel": "linkedin",
+          "evidence": "website_contact_entry_not_verified;contact_entry_clicked:Skip to content;official_social_fallback:linkedin;identity_mismatch_expected_CMS Distribution_title_(21) LinkedIn;contact_path_strategy_v2"
+        },
+        {
+          "status": "failed_open",
+          "timestamp": "2026-08-04T10:23:55.946Z",
+          "channel": "website_form",
+          "evidence": "website_contact_entry_not_verified;contact_entry_clicked:Skip to content;official_social_fallback:linkedin;identity_mismatch_expected_CMS Distribution_title_(21) LinkedIn;contact_path_strategy_v2"
+        },
+        {
+          "status": "failed_open",
+          "timestamp": "2026-08-04T12:01:43.395Z",
+          "channel": "website_form",
+          "evidence": "customer_execution_timeout:30000;queue_continued_to_next_customer"
+        },
+        {
+          "status": "failed_open",
+          "timestamp": "2026-08-04T12:38:40.768Z",
+          "channel": "linkedin",
+          "evidence": "website_contact_entry_not_verified;contact_entry_clicked:Skip to content;official_social_fallback:linkedin;identity_mismatch_expected_CMS Distribution_title_(22) LinkedIn;contact_path_strategy_v2"
+        },
+        {
+          "status": "failed_open",
+          "timestamp": "2026-08-04T13:01:12.304Z",
+          "channel": "website_form",
+          "evidence": "website_contact_entry_not_verified;contact_entry_clicked:Skip to content;official_social_fallback:linkedin;identity_mismatch_expected_CMS Distribution_title_(22) LinkedIn;contact_path_strategy_v2"
         }
       ]
     },
@@ -10519,6 +10568,12 @@
           "timestamp": "2026-08-04T12:42:32.951Z",
           "channel": "facebook",
           "evidence": "website_contact_entry_not_verified;contact_entry_clicked:SKIP TO CONTENT;official_social_fallback:facebook;facebook_send_clicked_but_confirmation_missing;verified_draft_present_before_irreversible_action;explicit_send_control_verified;facebook_draft_inserted_verified;;contact_path_strategy_v2"
+        },
+        {
+          "status": "send_unconfirmed",
+          "timestamp": "2026-08-04T13:01:14.100Z",
+          "channel": "website_form",
+          "evidence": "website_contact_entry_not_verified;contact_entry_clicked:SKIP TO CONTENT;official_social_fallback:facebook;facebook_send_clicked_but_confirmation_missing;verified_draft_present_before_irreversible_action;explicit_send_control_verified;facebook_draft_inserted_verified;;contact_path_strategy_v2"
         }
       ]
     },
@@ -11151,6 +11206,12 @@
           "status": "send_unconfirmed",
           "timestamp": "2026-08-04T12:40:32.240Z",
           "channel": "facebook",
+          "evidence": "website_contact_entry_not_verified;contact_entry_clicked:Contact Us;official_social_fallback:facebook;facebook_send_clicked_but_confirmation_missing;verified_draft_present_before_irreversible_action;explicit_send_control_verified;facebook_draft_inserted_verified;;contact_path_strategy_v2"
+        },
+        {
+          "status": "send_unconfirmed",
+          "timestamp": "2026-08-04T13:01:13.267Z",
+          "channel": "website_form",
           "evidence": "website_contact_entry_not_verified;contact_entry_clicked:Contact Us;official_social_fallback:facebook;facebook_send_clicked_but_confirmation_missing;verified_draft_present_before_irreversible_action;explicit_send_control_verified;facebook_draft_inserted_verified;;contact_path_strategy_v2"
         }
       ]
@@ -12811,6 +12872,12 @@
           "timestamp": "2026-08-04T12:43:42.821Z",
           "channel": "facebook",
           "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;facebook_send_clicked_but_confirmation_missing;verified_draft_present_before_irreversible_action;explicit_send_control_verified;facebook_draft_inserted_verified;;contact_path_strategy_v2"
+        },
+        {
+          "status": "send_unconfirmed",
+          "timestamp": "2026-08-04T13:01:14.406Z",
+          "channel": "website_form",
+          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;facebook_send_clicked_but_confirmation_missing;verified_draft_present_before_irreversible_action;explicit_send_control_verified;facebook_draft_inserted_verified;;contact_path_strategy_v2"
         }
       ]
     },
@@ -13794,6 +13861,16 @@
       "evidence": "instagram_message_sent_confirmed_after_send_click;instagram_draft_inserted_verified;sentText:false;outgoingBubble:false;emptyComposer:true;follow_not_available;instagram_post_opened;post_liked;comment_submitted"
     },
     {
+      "companyId": "company_26740a539a1a8594",
+      "company": "CMS Distribution",
+      "permanent": true,
+      "crossChannel": true,
+      "reason": "previous_customer_development_no_repeat",
+      "sourceStatus": "send_unconfirmed",
+      "sourceTimestamp": "2026-07-14T08:07:55.732Z",
+      "evidence": "owner_confirmed_prior_customer_development;historical_contact_no_repeat;confirmed_by_business_owner_2026-08-04;do_not_contact_again"
+    },
+    {
       "companyId": "company_22b8724f1eac233e",
       "company": "Bass Pro Shops",
       "permanent": true,
@@ -14200,7 +14277,7 @@
       "crossChannel": true,
       "reason": "previous_customer_development_no_repeat",
       "sourceStatus": "send_unconfirmed",
-      "sourceTimestamp": "2026-08-04T12:42:32.951Z",
+      "sourceTimestamp": "2026-08-04T13:01:14.100Z",
       "evidence": "website_contact_entry_not_verified;contact_entry_clicked:SKIP TO CONTENT;official_social_fallback:facebook;facebook_send_clicked_but_confirmation_missing;verified_draft_present_before_irreversible_action;explicit_send_control_verified;facebook_draft_inserted_verified;;contact_path_strategy_v2"
     },
     {
@@ -14270,7 +14347,7 @@
       "crossChannel": true,
       "reason": "previous_customer_development_no_repeat",
       "sourceStatus": "send_unconfirmed",
-      "sourceTimestamp": "2026-08-04T12:40:32.240Z",
+      "sourceTimestamp": "2026-08-04T13:01:13.267Z",
       "evidence": "website_contact_entry_not_verified;contact_entry_clicked:Contact Us;official_social_fallback:facebook;facebook_send_clicked_but_confirmation_missing;verified_draft_present_before_irreversible_action;explicit_send_control_verified;facebook_draft_inserted_verified;;contact_path_strategy_v2"
     },
     {
@@ -14470,7 +14547,7 @@
       "crossChannel": true,
       "reason": "previous_customer_development_no_repeat",
       "sourceStatus": "send_unconfirmed",
-      "sourceTimestamp": "2026-08-04T12:43:42.821Z",
+      "sourceTimestamp": "2026-08-04T13:01:14.406Z",
       "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;facebook_send_clicked_but_confirmation_missing;verified_draft_present_before_irreversible_action;explicit_send_control_verified;facebook_draft_inserted_verified;;contact_path_strategy_v2"
     },
     {
@@ -14875,11 +14952,11 @@
     ]
   },
   "ownerSummary": {
-    "generatedAt": "2026-08-04T12:59:53.584Z",
+    "generatedAt": "2026-08-04T13:33:55.747Z",
     "phase": "autonomous_sales_operating_system_v1",
     "kpis": {
-      "companies": 185,
-      "permanentlySuppressed": 103,
+      "companies": 187,
+      "permanentlySuppressed": 104,
       "plannedActions": 3,
       "verifiedEvidenceRoutes": 39
     },

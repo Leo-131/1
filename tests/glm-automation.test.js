@@ -1222,7 +1222,7 @@ test('verified Instagram fallback continues after a Facebook personal-profile mi
 
 test('same-day failed targets open a bounded retry circuit instead of consuming every batch', () => {
   assert.ok(mainSource.includes('const sameDayFailedAttempts = results'));
-  assert.ok(mainSource.includes('sameDayFailedAttempts.length >= 2'));
+  assert.ok(mainSource.includes('sameDayFailedAttempts.length >= 1'));
   assert.ok(mainSource.includes('same_day_retry_circuit_open;failed_attempts:'));
   assert.ok(mainSource.includes('verifiedSupplierRoute'));
   assert.ok(mainSource.includes('resultTargetKey === itemTargetKey'));
@@ -1242,7 +1242,7 @@ test('daily execution is serial and can process a priority batch per run', () =>
   assert.ok(mainSource.includes('const limit = Math.min(requestedLimit, remainingDailyGap)'));
   assert.ok(mainSource.includes('KEEP_AUTOMATION_TABS_VISIBLE'));
   assert.ok(mainSource.includes('automationReusableChromeTab'));
-  assert.ok(mainSource.includes('reuseTab: true'));
+  assert.ok(mainSource.includes('reuseTab: false'));
   assert.ok(mainSource.includes('isFollowupLead(lead)'));
   assert.ok(mainSource.includes('process.env.DAILY_EXECUTE_LIMIT || DEFAULT_DAILY_SOCIAL_EXECUTION_LIMIT'));
   assert.ok(mainSource.includes('process.env.DAILY_EXECUTE_TIMEOUT_MS || 2700000'));
@@ -1356,7 +1356,7 @@ test('daily execution owns and closes each automation-created Chrome tab', () =>
   assert.ok(mainSource.includes('await closeAutomationTabsOpenedAfter(ownedTabsAtStart)'));
   assert.ok(mainSource.includes('await closeAutomationChromeTab(chromeOpen)'));
   assert.match(mainSource, /recordAutomationResult\(item, result\);[\s\S]*closeAutomationChromeTab\(result && result\.chromeOpen\)/);
-  assert.match(mainSource, /allowParallel:\s*true,[\s\S]{0,120}reuseTab:\s*true/);
+  assert.match(mainSource, /allowParallel:\s*true,[\s\S]{0,120}reuseTab:\s*false/);
   assert.ok(mainSource.includes('const parallelLimit = 1'));
 });
 
@@ -1435,6 +1435,13 @@ test('daily execution duplicate blocking is channel-aware', () => {
   assert.ok(!mainSource.includes("'sent_confirmed', 'failed_open', 'send_unconfirmed', 'skipped'"));
 });
 
+test('same-day failed customer advances without cross-run replay and closes its automation tab', () => {
+  assert.match(mainSource, /sameDayFailedAttempts\.length >= 1/);
+  assert.match(mainSource, /block\.status === 'same_day_retry_circuit_open'\) return false/);
+  assert.match(mainSource, /reuseTab: false/);
+  assert.match(mainSource, /await closeAutomationChromeTab\(result && result\.chromeOpen\)/);
+});
+
 test('email performs a final company-wide permanent dedupe check immediately before sending', () => {
   const companyStatusesStart = mainSource.indexOf('const COMPANY_HISTORY_BLOCKING_STATUSES');
   const companyStatusesEnd = mainSource.indexOf(']);', companyStatusesStart) + 3;
@@ -1511,7 +1518,8 @@ test('website pre-send failures continue to first-party verified social instead 
   assert.match(mainSource, /websiteInteractionUncertain = \/send_unconfirmed\|submit_unconfirmed\|send_physical_click\|submit_physical_click\|customer_interaction\//);
   assert.ok(mainSource.includes('verifiedSocialFallback.officialSocialProfileVerified === true'));
   assert.ok(mainSource.includes('function websiteCanReinspectForFirstPartySocial'));
-  assert.ok(mainSource.includes('!blockingAutomationResultFor(item) || websiteCanReinspectForFirstPartySocial(item)'));
+  assert.ok(mainSource.includes("if (block.status === 'same_day_retry_circuit_open') return false"));
+  assert.ok(mainSource.includes('return websiteCanReinspectForFirstPartySocial(item)'));
 });
 
 test('daily queue generator blocks same-day repeat development by company', () => {

@@ -26,6 +26,22 @@ test('bare click markers, preserved drafts, and technical failures never suppres
   assert.equal(intelligence.buildSuppressionLedger(companies).length, 0);
 });
 
+test('owner-confirmed prior customer development permanently suppresses the company without requiring legacy click-chain evidence', () => {
+  const companies = intelligence.buildCompanyTruth({
+    leads: [{ company: 'CMS Distribution', website: 'https://cmsdistribution.com' }],
+    results: [{
+      company: 'CMS Distribution',
+      status: 'send_unconfirmed',
+      evidence: 'owner_confirmed_prior_customer_development;historical_contact_no_repeat',
+      timestamp: '2026-07-14T08:07:55.732Z',
+    }],
+  });
+  const ledger = intelligence.buildSuppressionLedger(companies);
+  assert.equal(ledger.length, 1);
+  assert.equal(ledger[0].permanent, true);
+  assert.equal(ledger[0].crossChannel, true);
+});
+
 test('evidence scoring rejects guesses and accepts first-party cross verified routes', () => {
   assert.equal(intelligence.evidenceScore({ platform: 'facebook', url: 'https://facebook.com/acme' }).score, 0);
   assert.equal(intelligence.evidenceScore({ platform: 'facebook', website: 'https://acme.example', officialSocialProfileVerified: true, socialProfileEvidenceUrl: 'https://acme.example' }).score, 95);

@@ -369,7 +369,7 @@ function blockingAutomationResultFor(item) {
     .filter(result => setsIntersect(exactKeys, automationExactKeys(result))
       || (setsIntersect(companyKeys, automationCompanyKeys(result))
         && automationPlatformFor(result) === itemPlatform));
-  if (sameDayFailedAttempts.length >= 2) {
+  if (sameDayFailedAttempts.length >= 1) {
     return {
       status: 'same_day_retry_circuit_open',
       evidence: `same_day_retry_circuit_open;failed_attempts:${sameDayFailedAttempts.length}`,
@@ -468,6 +468,7 @@ function sameDayDevelopmentResult(result = {}, now = Date.now()) {
 function sendStatusHasCustomerInteraction(status, evidence = '') {
   if (status !== 'send_unconfirmed') return true;
   const text = String(evidence || '');
+  if (/owner_confirmed_prior_customer_development/i.test(text)) return true;
   if (/message_sent|submitted_confirmed|persisted_after_reload/i.test(text)) return true;
   return /send_clicked_but_confirmation_missing|enter_send_attempted_but_confirmation_missing|submit_clicked/i.test(text)
     && /verified_draft_present_before_irreversible_action/i.test(text);
@@ -4008,7 +4009,12 @@ function executableQueueCandidates(items = [], options = {}) {
     // attempt, but it must not prevent reopening the first-party website to
     // validate and execute an advertised official social route. Send-time
     // company and uncertainty gates still prevent any duplicate interaction.
-    .filter(item => !blockingAutomationResultFor(item) || websiteCanReinspectForFirstPartySocial(item))
+    .filter(item => {
+      const block = blockingAutomationResultFor(item);
+      if (!block) return true;
+      if (block.status === 'same_day_retry_circuit_open') return false;
+      return websiteCanReinspectForFirstPartySocial(item);
+    })
     .sort(developmentPriorityCompare);
 }
 
@@ -4537,7 +4543,7 @@ async function runDailyAutomationQueue(payload = {}) {
       const result = await executeLeadWithCustomerWatchdog(item, {
         ignoreCooldown: true,
         allowParallel: true,
-        reuseTab: true,
+        reuseTab: false,
         customerTimeoutMs: payload && payload.customerTimeoutMs,
       });
       recordAutomationResult(item, result);

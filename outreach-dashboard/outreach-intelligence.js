@@ -74,6 +74,7 @@ function isCustomerInteraction(result = {}) {
   if (BLOCKING_STATUSES.has(status)) {
     if (status !== 'send_unconfirmed') return true;
     const evidence = String(result.evidence || '');
+    if (/owner_confirmed_prior_customer_development/i.test(evidence)) return true;
     if (/message_sent|persisted_after_reload|sent_folder_record_missing/i.test(evidence)) return true;
     return /send_clicked|enter_send_attempted|submit_clicked/i.test(evidence)
       && /verified_draft_present_before_irreversible_action|alibaba_webmail_send_physical_click_dispatched|website_contact_form_submit_clicked/i.test(evidence);
