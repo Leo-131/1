@@ -26,7 +26,7 @@ function composeStartExpression() {
         }
       }
     }
-    const composePattern = /\b(compose|new message|write mail|new mail)\b|\u5199\u90ae\u4ef6|\u64b0\u5199|\u65b0\u5efa\u90ae\u4ef6|鍐欓偖浠|鎾板啓/i;
+    const composePattern = /\b(compose|new message|write mail|new mail)\b|\u5199\u90ae\u4ef6|\u64b0\u5199|\u65b0\u5efa\u90ae\u4ef6/i;
     const candidates = roots.flatMap(root => Array.from(root.querySelectorAll('button,[role="button"],a,div[tabindex],[data-testid],[class]')))
       .map(element => {
         const label = textOf(element);

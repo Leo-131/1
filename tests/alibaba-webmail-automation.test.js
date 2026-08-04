@@ -36,7 +36,7 @@ test('Alibaba webmail expressions are valid JavaScript and keep exact recipient/
   assert.match(composeStartExpression(), /contentDocument/);
   assert.match(composeStartExpression(), /input\[type="password"\]/);
   assert.match(composeStartExpression(), /aria-label/);
-  assert.match(composeStartExpression(), /鍐欓偖浠/);
+  assert.match(composeStartExpression(), /写邮件/);
   assert.match(composeFillExpression(payload), /ownerDocument/);
   assert.match(composeFillExpression(payload), /shadowRoot/);
   assert.ok(composeFillExpression(payload).includes(".replace(/\\s+/g, '')"));
