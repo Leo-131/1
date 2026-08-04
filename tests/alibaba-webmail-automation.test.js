@@ -5,6 +5,7 @@ const {
   ALIBABA_WEBMAIL_SENT_URL,
   composeStartExpression,
   composeFillExpression,
+  composeSubjectFocusExpression,
   composeInspectionExpression,
   composeSendExpression,
   postSendStateExpression,
@@ -53,9 +54,16 @@ test('Alibaba webmail expressions are valid JavaScript and keep exact recipient/
   assert.doesNotMatch(composeFillExpression(payload), /recipientInput\.value \|\| ''\)\.toLowerCase\(\)\.includes/);
   assert.match(composeFillExpression(payload), /committedRecipientSignals/);
   assert.match(composeFillExpression(payload), /width: Math\.round\(recipientRect\?\.width \|\| 0\)/);
+  assert.match(composeFillExpression(payload), /subjectValueMatch/);
+  assert.match(composeFillExpression(payload), /subjectControl/);
+  assert.match(composeFillExpression(payload), /\[contenteditable="true"\]/);
+  assert.match(composeInspectionExpression(payload), /subjectInput\.value \?\?/);
+  assert.match(composeSubjectFocusExpression(), /subject_control_focused_for_physical_fill/);
   assert.match(composeInspectionExpression(payload), /data-email/);
   assert.match(composeInspectionExpression(payload), /recipientSignals/);
   assert.match(composeInspectionExpression(payload), /recipientTokens\.includes\(recipientNeedle\)/);
+  assert.match(composeInspectionExpression(payload), /recipientControlExactMatch/);
+  assert.match(composeInspectionExpression(payload), /recipientControlValue === recipientNeedle/);
   assert.match(composeInspectionExpression(payload), /\[class\*="recipient"\]/);
   assert.match(composeInspectionExpression(payload), /root\.host/);
   assert.match(composeInspectionExpression(payload), /replace\(\/\\u00a0\/g/);

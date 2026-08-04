@@ -1264,6 +1264,16 @@ test('Alibaba recipient fallback clears stale text and commits the exact address
   assert.ok(mainSource.includes("type: 'keyDown', key: 'Backspace', code: 'Backspace'"));
   assert.ok(mainSource.includes("type: 'keyDown', key: 'Enter', code: 'Enter'"));
   assert.ok(mainSource.includes('recipient_control_focused_for_physical_fill'));
+  assert.ok(alibabaWebmailSource.includes('recipientControlExactMatch'));
+});
+
+test('Alibaba subject fallback physically fills the verified subject and safely retries the fixed pre-send verifier failure', () => {
+  assert.ok(mainSource.includes('composeSubjectFocusExpression'));
+  assert.ok(alibabaWebmailSource.includes('alibaba_webmail_subject_control_focused_for_physical_fill'));
+  assert.ok(mainSource.includes("text: subject"));
+  assert.ok(mainSource.includes('function isFixedAlibabaSubjectVerifierFailure'));
+  assert.ok(mainSource.includes("evidence.includes('subjectready:false')"));
+  assert.ok(mainSource.includes('isFixedAlibabaRecipientVerifierFailure(result) || isFixedAlibabaSubjectVerifierFailure(result)'));
 });
 
 test('daily execution checkpoints completed tasks and resumes without duplicate processing', () => {

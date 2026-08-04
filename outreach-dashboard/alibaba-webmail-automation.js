@@ -65,7 +65,7 @@ function composeFieldsExpression() {
         }
       }
     }
-    const inputs = roots.flatMap(root => Array.from(root.querySelectorAll('input:not([type="hidden"]),textarea,[role="combobox"]')));
+    const inputs = roots.flatMap(root => Array.from(root.querySelectorAll('input:not([type="hidden"]),textarea,[role="combobox"],[contenteditable="true"]')));
     const isVisible = input => {
       const rect = input?.getBoundingClientRect?.();
       return Boolean(rect && rect.width > 0 && rect.height > 0);
@@ -96,7 +96,7 @@ function composeFieldsExpression() {
         .filter(isVisible)
         .sort((left, right) => right.getBoundingClientRect().width - left.getBoundingClientRect().width)[0]
       || null;
-    const subjectInput = inputs.find(input => subjectPattern.test(labelOf(input))) || null;
+    const subjectInput = inputs.find(input => isVisible(input) && subjectPattern.test(labelOf(input))) || null;
     const editorFrame = roots.map(root => root.querySelector('iframe.e_iframe')).find(Boolean)
       || roots.flatMap(root => Array.from(root.querySelectorAll('iframe')))
       .find(frame => {
@@ -121,11 +121,13 @@ function composeFillExpression({ recipient, subject, text } = {}) {
     const bodyText = ${serialized(text)};
     const setValue = (element, value) => {
       const view = element.ownerDocument?.defaultView || window;
+      const isTextControl = element.tagName === 'INPUT' || element.tagName === 'TEXTAREA';
       const prototype = element.tagName === 'TEXTAREA' ? view.HTMLTextAreaElement.prototype : view.HTMLInputElement.prototype;
-      const descriptor = Object.getOwnPropertyDescriptor(prototype, 'value');
+      const descriptor = isTextControl ? Object.getOwnPropertyDescriptor(prototype, 'value') : null;
       if (descriptor?.set) descriptor.set.call(element, value);
-      else element.value = value;
-      element.dispatchEvent(new Event('input', { bubbles: true }));
+      else if (isTextControl) element.value = value;
+      else element.textContent = value;
+      element.dispatchEvent(new InputEvent('input', { bubbles: true, inputType: 'insertText', data: value }));
       element.dispatchEvent(new Event('change', { bubbles: true }));
     };
     const fields = ${composeFieldsExpression()};
@@ -157,6 +159,7 @@ function composeFillExpression({ recipient, subject, text } = {}) {
     editorBody.dispatchEvent(new InputEvent('input', { bubbles: true, inputType: 'insertText', data: bodyText }));
     editorBody.dispatchEvent(new Event('change', { bubbles: true }));
     const recipientRect = recipientInput.getBoundingClientRect?.();
+    const subjectRect = subjectInput.getBoundingClientRect?.();
     const recipientRoot = recipientInput.getRootNode?.();
     return JSON.stringify({
       ok: true,
@@ -165,6 +168,7 @@ function composeFillExpression({ recipient, subject, text } = {}) {
       recipientValueMatch: String(recipientInput.value || '').trim().toLowerCase() === recipient.toLowerCase(),
       recipientCommittedMatch,
       subject,
+      subjectValueMatch: String(subjectInput.value ?? subjectInput.innerText ?? subjectInput.textContent ?? '').trim() === subject,
       bodyLength: bodyText.length,
       recipientControl: {
         tag: recipientInput.tagName,
@@ -176,6 +180,16 @@ function composeFillExpression({ recipient, subject, text } = {}) {
         width: Math.round(recipientRect?.width || 0),
         height: Math.round(recipientRect?.height || 0),
         shadowRoot: Boolean(recipientRoot && recipientRoot.host),
+      },
+      subjectControl: {
+        tag: subjectInput.tagName,
+        type: subjectInput.getAttribute?.('type') || '',
+        role: subjectInput.getAttribute?.('role') || '',
+        className: String(subjectInput.className || '').slice(0, 120),
+        x: Math.round(subjectRect?.x || 0),
+        y: Math.round(subjectRect?.y || 0),
+        width: Math.round(subjectRect?.width || 0),
+        height: Math.round(subjectRect?.height || 0),
       },
     });
   })()`;
@@ -217,10 +231,28 @@ function composeInspectionExpression({ recipient, subject, text } = {}) {
     const recipientTokens = recipientSignals
       .flatMap(value => value.match(/[a-z0-9.!#$%&'*+/=?^_\x60{|}~-]+@[a-z0-9.-]+\.[a-z]{2,}/gi) || [])
       .map(value => value.toLowerCase());
-    const recipientReady = recipientTokens.includes(recipientNeedle);
-    const subjectReady = Boolean(fields.subjectInput && fields.subjectInput.value === subject);
+    const recipientControlValue = String(fields.recipientInput?.value || '').trim().toLowerCase();
+    const recipientControlExactMatch = recipientControlValue === recipientNeedle;
+    const recipientReady = recipientTokens.includes(recipientNeedle) || recipientControlExactMatch;
+    const subjectReady = Boolean(fields.subjectInput && String(fields.subjectInput.value ?? fields.subjectInput.innerText ?? fields.subjectInput.textContent ?? '').trim() === subject);
     const bodyReady = actualBody === normalize(expectedBody);
-    return JSON.stringify({ ok: recipientReady && subjectReady && bodyReady, recipientReady, subjectReady, bodyReady, evidence: recipientReady && subjectReady && bodyReady ? 'alibaba_webmail_draft_verified' : 'alibaba_webmail_draft_verification_failed' });
+    return JSON.stringify({ ok: recipientReady && subjectReady && bodyReady, recipientReady, recipientControlExactMatch, subjectReady, bodyReady, evidence: recipientReady && subjectReady && bodyReady ? 'alibaba_webmail_draft_verified' : 'alibaba_webmail_draft_verification_failed' });
+  })()`;
+}
+
+function composeSubjectFocusExpression() {
+  return `(() => {
+    const fields = ${composeFieldsExpression()};
+    const subjectInput = fields.subjectInput;
+    if (!subjectInput) return JSON.stringify({ ok: false, evidence: 'alibaba_webmail_subject_control_missing' });
+    subjectInput.focus();
+    if (typeof subjectInput.select === 'function') subjectInput.select();
+    return JSON.stringify({
+      ok: document.activeElement === subjectInput || subjectInput.getRootNode?.().activeElement === subjectInput,
+      evidence: 'alibaba_webmail_subject_control_focused_for_physical_fill',
+      tag: subjectInput.tagName,
+      role: subjectInput.getAttribute?.('role') || '',
+    });
   })()`;
 }
 
@@ -230,7 +262,10 @@ function composeSendExpression({ recipient, subject } = {}) {
     const subject = ${serialized(subject)};
     const fields = ${composeFieldsExpression()};
     const pageText = document.body?.innerText || '';
-    if (!pageText.toLowerCase().includes(recipient.toLowerCase()) || !fields.subjectInput || fields.subjectInput.value !== subject) return JSON.stringify({ ok: false, sendReady: false, evidence: 'alibaba_webmail_pre_send_identity_check_failed' });
+    const recipientControlValue = String(fields.recipientInput?.value || '').trim().toLowerCase();
+    const recipientReady = recipientControlValue === recipient.toLowerCase() || pageText.toLowerCase().includes(recipient.toLowerCase());
+    const actualSubject = String(fields.subjectInput?.value ?? fields.subjectInput?.innerText ?? fields.subjectInput?.textContent ?? '').trim();
+    if (!recipientReady || !fields.subjectInput || actualSubject !== subject) return JSON.stringify({ ok: false, sendReady: false, evidence: 'alibaba_webmail_pre_send_identity_check_failed' });
     const textOf = element => String(element?.innerText || element?.textContent || element?.getAttribute?.('aria-label') || '').trim();
     const candidates = Array.from(document.querySelectorAll('button,[role="button"]')).filter(button => {
       const label = textOf(button);
@@ -261,7 +296,7 @@ function postSendStateExpression({ subject } = {}) {
     const fields = ${composeFieldsExpression()};
     const text = document.body?.innerText || '';
     const successToast = /\b(message sent|mail sent)\b|\u53d1\u9001\u6210\u529f|\u90ae\u4ef6\u53d1\u9001\u6210\u529f/i.test(text);
-    const composerStillOpen = Boolean(fields.subjectInput && fields.subjectInput.value === subject);
+    const composerStillOpen = Boolean(fields.subjectInput && String(fields.subjectInput.value ?? fields.subjectInput.innerText ?? fields.subjectInput.textContent ?? '').trim() === subject);
     const blockingDialog = Array.from(document.querySelectorAll('[role="dialog"],.ant-modal,.next-dialog'))
       .filter(element => element.getClientRects?.().length)
       .map(element => String(element.innerText || element.textContent || '').trim())
@@ -312,4 +347,4 @@ function sentFolderConfirmationExpression({ subject } = {}) {
   })()`;
 }
 
-module.exports = { ALIBABA_WEBMAIL_SENT_URL, composeStartExpression, composeFillExpression, composeInspectionExpression, composeSendExpression, postSendStateExpression, sendToastExpression, sentFolderConfirmationExpression };
+module.exports = { ALIBABA_WEBMAIL_SENT_URL, composeStartExpression, composeFillExpression, composeSubjectFocusExpression, composeInspectionExpression, composeSendExpression, postSendStateExpression, sendToastExpression, sentFolderConfirmationExpression };

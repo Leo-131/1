@@ -21,6 +21,7 @@ const {
   ALIBABA_WEBMAIL_SENT_URL,
   composeStartExpression,
   composeFillExpression,
+  composeSubjectFocusExpression,
   composeInspectionExpression,
   composeSendExpression,
   postSendStateExpression,
@@ -359,6 +360,7 @@ function blockingAutomationResultFor(item) {
   const sameDayFailedAttempts = results
     .filter(result => result && result.status === 'failed_open' && isSameAutomationDay(result.timestamp))
     .filter(result => !isFixedAlibabaRecipientVerifierFailure(result))
+    .filter(result => !isFixedAlibabaSubjectVerifierFailure(result))
     .filter(result => !(exactSocialHandleMatchesCompany(item) && isFixedIdentityVerifierFailure(result)))
     .filter(result => setsIntersect(exactKeys, automationExactKeys(result))
       || (setsIntersect(companyKeys, automationCompanyKeys(result))
@@ -534,7 +536,7 @@ function itemBlockedBySameDayCompany(item, companyKeys) {
 
 function failedOpenResultShouldBlockRetry(result = {}) {
   const evidence = String(result.evidence || '').toLowerCase();
-  if (isFixedAlibabaRecipientVerifierFailure(result)) return false;
+  if (isFixedAlibabaRecipientVerifierFailure(result) || isFixedAlibabaSubjectVerifierFailure(result)) return false;
   const temporarySafetyFailure = /captcha_or_human_verification|platform_rate_limit_or_action_block|dedicated_browser_login_required|identity_not_verified_fail_closed/.test(evidence);
   if (temporarySafetyFailure) {
     const failedAt = Date.parse(result.timestamp || result.resultCheckedAt || '');
@@ -575,6 +577,15 @@ function isFixedAlibabaRecipientVerifierFailure(result = {}) {
     && evidence.includes('subjectready:true')
     && evidence.includes('bodyready:true')
     && evidence.includes('ant-select-selection-search-input');
+}
+
+function isFixedAlibabaSubjectVerifierFailure(result = {}) {
+  const evidence = String(result.evidence || '').toLowerCase();
+  if (/message_sent|send_clicked_but_confirmation_missing|submit_clicked/i.test(evidence)) return false;
+  return evidence.includes('alibaba_webmail_draft_verification_failed')
+    && evidence.includes('recipientready:true')
+    && evidence.includes('subjectready:false')
+    && evidence.includes('bodyready:true');
 }
 
 function isFixedIdentityVerifierFailure(result = {}) {
@@ -2876,6 +2887,19 @@ async function runAlibabaWebmailEmailLead(lead = {}, subject = '', draft = '') {
           y: Math.round(rect?.y || 0),
         });
       })()`, 5000).catch(() => null);
+    }
+    const subjectFocused = await evaluateChromeTabJson(chromeOpen, composeSubjectFocusExpression(), 5000).catch(() => null);
+    if (subjectFocused && subjectFocused.ok) {
+      await cdpCommand(chromeOpen.webSocketDebuggerUrl, 'Input.dispatchKeyEvent', {
+        type: 'keyDown', key: 'a', code: 'KeyA', modifiers: 2,
+      }, 3000);
+      await cdpCommand(chromeOpen.webSocketDebuggerUrl, 'Input.dispatchKeyEvent', {
+        type: 'keyUp', key: 'a', code: 'KeyA', modifiers: 2,
+      }, 3000);
+      await cdpCommand(chromeOpen.webSocketDebuggerUrl, 'Input.insertText', {
+        text: subject,
+      }, 3000);
+      await sleep(350);
     }
     await sleep(500);
     const inspected = await evaluateChromeTabJson(chromeOpen, composeInspectionExpression(payload), 8000);
