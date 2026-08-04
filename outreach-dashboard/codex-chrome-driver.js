@@ -590,18 +590,12 @@ function sendButtonExpression(composer) {
     const nearExplicitSend = nearControls
       .filter(sendText)
       .sort((a, b) => Math.abs(a.y - centerY) - Math.abs(b.y - centerY) || b.x - a.x)[0];
-    if (nearExplicitSend) return JSON.stringify(nearExplicitSend);
-    const nearComposer = nearControls
-      .sort((a, b) => Math.abs(a.y - centerY) - Math.abs(b.y - centerY) || b.x - a.x)[0];
-    if (nearComposer) return JSON.stringify(nearComposer);
+    if (nearExplicitSend) return JSON.stringify({ ...nearExplicitSend, explicitSendControl: true });
     const byText = controls
       .filter(sendText)
       .sort((a, b) => Math.abs(a.y - centerY) - Math.abs(b.y - centerY) || Math.abs(a.x - centerX) - Math.abs(b.x - centerX))[0];
-    if (byText) return JSON.stringify(byText);
-    const rightMost = controls
-      .filter(item => item.x > centerX && Math.abs(item.y - centerY) < 95)
-      .sort((a, b) => Math.abs(a.y - centerY) - Math.abs(b.y - centerY) || b.x - a.x)[0];
-    return JSON.stringify(rightMost || null);
+    if (byText) return JSON.stringify({ ...byText, explicitSendControl: true });
+    return JSON.stringify(null);
   })()`;
 }
 
@@ -1543,9 +1537,10 @@ async function preparePlatformDraft(payload, platform) {
   }
   if (payload.autoSend) {
     await sleep(800);
-    const sendButton = await waitForJson(tab, sendButtonExpression(composer), item => item && Number.isFinite(item.x) && Number.isFinite(item.y), 8000, 400);
-    if (!sendButton || !Number.isFinite(sendButton.x)) {
-      if (platform === 'instagram') {
+    const sendButton = await waitForJson(tab, sendButtonExpression(composer), item => item && item.explicitSendControl === true && Number.isFinite(item.x) && Number.isFinite(item.y), 8000, 400);
+    if (!sendButton || !Number.isFinite(sendButton.x) || sendButton.explicitSendControl !== true) {
+      if (platform === 'instagram' || platform === 'facebook') {
+        await clickAt(tab, composer.x, composer.y);
         const composerState = await evaluateJson(tab, composerTextExpression(draft), 3000).catch(() => null);
         if (composerState && composerState.containsDraft) {
           await cdp(tab.webSocketDebuggerUrl, 'Input.dispatchKeyEvent', {
@@ -1565,14 +1560,14 @@ async function preparePlatformDraft(payload, platform) {
             return {
               ok: true,
               sendStatus: 'sent_confirmed',
-              evidence: `instagram_message_sent_confirmed_after_enter;persisted_after_reload;${insertResult.evidence};sentText:${Boolean(enterSent.sentText)};outgoingBubble:${Boolean(enterSent.outgoingBubble)};emptyComposer:${Boolean(enterSent.emptyComposer)};${preActions.filter(Boolean).join(';')}`,
+              evidence: `${platform}_message_sent_confirmed_after_enter;persisted_after_reload;verified_draft_present_before_irreversible_action;${insertResult.evidence};sentText:${Boolean(enterSent.sentText)};outgoingBubble:${Boolean(enterSent.outgoingBubble)};emptyComposer:${Boolean(enterSent.emptyComposer)};${preActions.filter(Boolean).join(';')}`,
               nextAction: 'Record outcome and monitor for reply.',
             };
           }
           return {
             ok: false,
             sendStatus: 'send_unconfirmed',
-            evidence: `instagram_enter_send_attempted_but_confirmation_missing;${preActions.filter(Boolean).join(';')}`,
+            evidence: `${platform}_enter_send_attempted_but_confirmation_missing;verified_draft_present_before_irreversible_action;${insertResult.evidence};${preActions.filter(Boolean).join(';')}`,
             nextAction: 'Send confirmation missing after the verified Enter fallback; pause before any retry to avoid duplicate sending.',
           };
         }
@@ -1580,8 +1575,8 @@ async function preparePlatformDraft(payload, platform) {
       return {
         ok: false,
         sendStatus: 'send_unconfirmed',
-        evidence: `${platform}_draft_inserted_send_button_not_found`,
-        nextAction: 'Draft inserted but Send button was not detected; pause to avoid unsafe duplicate sending.',
+        evidence: `${platform}_draft_inserted_explicit_send_control_not_found;no_irreversible_action_performed;${insertResult.evidence}`,
+        nextAction: 'An explicit Send control was not detected and the verified Enter path was unavailable; record a technical failure and continue to another verified channel.',
       };
     }
     await clickAt(tab, sendButton.x, sendButton.y);
@@ -1590,14 +1585,14 @@ async function preparePlatformDraft(payload, platform) {
       return {
         ok: true,
         sendStatus: 'sent_confirmed',
-        evidence: `${platform}_message_sent_confirmed_after_send_click;persisted_after_reload;${insertResult.evidence};sentText:${Boolean(sent.sentText)};outgoingBubble:${Boolean(sent.outgoingBubble)};emptyComposer:${Boolean(sent.emptyComposer)};${preActions.filter(Boolean).join(';')}`,
+      evidence: `${platform}_message_sent_confirmed_after_send_click;persisted_after_reload;verified_draft_present_before_irreversible_action;explicit_send_control_verified;${insertResult.evidence};sentText:${Boolean(sent.sentText)};outgoingBubble:${Boolean(sent.outgoingBubble)};emptyComposer:${Boolean(sent.emptyComposer)};${preActions.filter(Boolean).join(';')}`,
         nextAction: 'Record outcome and monitor for reply.',
       };
     }
     return {
       ok: false,
       sendStatus: 'send_unconfirmed',
-      evidence: `${platform}_send_clicked_but_confirmation_missing;${preActions.filter(Boolean).join(';')}`,
+      evidence: `${platform}_send_clicked_but_confirmation_missing;verified_draft_present_before_irreversible_action;explicit_send_control_verified;${insertResult.evidence};${preActions.filter(Boolean).join(';')}`,
       nextAction: 'Send confirmation missing; pause and notify operator before any retry to avoid duplicate sending.',
     };
   }

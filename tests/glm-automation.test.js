@@ -254,6 +254,10 @@ test('historical development lock distinguishes user interaction from transient 
   assert.equal(dailyRunner.isHistoricalDevelopmentResult({
     status: 'send_unconfirmed',
     evidence: 'send_clicked_but_confirmation_missing',
+  }), false);
+  assert.equal(dailyRunner.isHistoricalDevelopmentResult({
+    status: 'send_unconfirmed',
+    evidence: 'send_clicked_but_confirmation_missing;verified_draft_present_before_irreversible_action',
   }), true);
   assert.equal(dailyRunner.isHistoricalDevelopmentResult({
     status: 'failed_open',
@@ -266,6 +270,10 @@ test('historical development lock distinguishes user interaction from transient 
   assert.equal(dailyRunner.isHistoricalDevelopmentResult({
     status: 'failed_open',
     evidence: 'facebook_send_clicked_but_confirmation_missing',
+  }), false);
+  assert.equal(dailyRunner.isHistoricalDevelopmentResult({
+    status: 'failed_open',
+    evidence: 'facebook_send_clicked_but_confirmation_missing;verified_draft_present_before_irreversible_action',
   }), true);
 });
 
@@ -1461,9 +1469,21 @@ test('dedicated website and Instagram execution report truthful transport and co
   assert.ok(mainSource.includes("engine: 'dedicated-chrome-cdp-website-contact'"));
   assert.doesNotMatch(mainSource, /engine: 'codex-chrome-extension-website-contact'/);
   assert.ok(chromeDriverSource.includes("platform === 'instagram'"));
-  assert.ok(chromeDriverSource.includes('instagram_message_sent_confirmed_after_enter'));
-  assert.ok(chromeDriverSource.includes('instagram_enter_send_attempted_but_confirmation_missing'));
+  assert.ok(chromeDriverSource.includes('${platform}_message_sent_confirmed_after_enter'));
+  assert.ok(chromeDriverSource.includes('${platform}_enter_send_attempted_but_confirmation_missing'));
   assert.ok(chromeDriverSource.includes("windowsVirtualKeyCode: 13"));
+});
+
+test('social send never clicks an unlabeled nearby control and interaction evidence requires a verified draft chain', () => {
+  const sendButtonStart = chromeDriverSource.indexOf('function sendButtonExpression');
+  const sendButtonEnd = chromeDriverSource.indexOf('function composerTextExpression', sendButtonStart);
+  const sendButtonSource = chromeDriverSource.slice(sendButtonStart, sendButtonEnd);
+  assert.ok(sendButtonSource.includes('explicitSendControl: true'));
+  assert.doesNotMatch(sendButtonSource, /const nearComposer|const rightMost/);
+  assert.ok(chromeDriverSource.includes('verified_draft_present_before_irreversible_action'));
+  assert.ok(chromeDriverSource.includes("platform === 'instagram' || platform === 'facebook'"));
+  assert.match(mainSource, /send_clicked_but_confirmation_missing\|enter_send_attempted_but_confirmation_missing\|submit_clicked[\s\S]*verified_draft_present_before_irreversible_action/);
+  assert.match(dailyRunnerSource, /send_clicked_but_confirmation_missing\|enter_send_attempted_but_confirmation_missing\|submit_clicked[\s\S]*verified_draft_present_before_irreversible_action/);
 });
 
 test('uninserted social draft does not block same-company website fallback', () => {

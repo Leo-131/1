@@ -303,8 +303,10 @@ function historicalAutomationResultBlocksCompany(result = {}) {
     return sendStatusHasCustomerInteraction(result.status, result.evidence);
   }
   if (result.status !== 'failed_open') return false;
-  return /message_sent|send_clicked_but_confirmation_missing|composer_preserved_for_technical_evidence|alibaba_webmail_content_inserted/i
-    .test(String(result.evidence || ''));
+  const evidence = String(result.evidence || '');
+  return /message_sent|composer_preserved_for_technical_evidence|alibaba_webmail_content_inserted/i.test(evidence)
+    || (/send_clicked_but_confirmation_missing|enter_send_attempted_but_confirmation_missing/i.test(evidence)
+      && /verified_draft_present_before_irreversible_action/i.test(evidence));
 }
 
 function exactSocialHandleMatchesCompany(item = {}) {
@@ -465,7 +467,10 @@ function sameDayDevelopmentResult(result = {}, now = Date.now()) {
 
 function sendStatusHasCustomerInteraction(status, evidence = '') {
   if (status !== 'send_unconfirmed') return true;
-  return /send_clicked_but_confirmation_missing|message_sent|submit_clicked/i.test(String(evidence || ''));
+  const text = String(evidence || '');
+  if (/message_sent|submitted_confirmed|persisted_after_reload/i.test(text)) return true;
+  return /send_clicked_but_confirmation_missing|enter_send_attempted_but_confirmation_missing|submit_clicked/i.test(text)
+    && /verified_draft_present_before_irreversible_action/i.test(text);
 }
 
 function isVerifiedSameDayWebsiteResult(result = {}) {
