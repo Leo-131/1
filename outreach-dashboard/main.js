@@ -3831,6 +3831,7 @@ function executableQueueCandidates(items = [], options = {}) {
       || verifiedBusinessEmailTarget(item).ok
       || (recipientEmail(item) && configuredProvider().id))
     .filter(item => !hasNoSafeMessageButton(item) || hasVerifiedInstagramFallback(item))
+    .filter(item => !isSocialQueueItem(item) || item.officialSocialProfileVerified === true)
     .filter(item => allowWebsiteContact || !isWebsiteContactQueueItem(item))
     .filter(item => !blockingAutomationResultFor(item))
     .sort(developmentPriorityCompare);
@@ -4228,11 +4229,14 @@ async function runDailyAutomationQueue(payload = {}) {
       id: item.id,
       company: item.company,
       action: item.action,
+      platform: item.platform || '',
       // An unattempted website/email candidate is not blocked by a missing
       // attachment. Attachment requirements can only be known after the
       // verified form is inspected; prepareWebsiteContactForm records the
       // blocker when a required file input actually exists.
-      reason: item.reason,
+      reason: isSocialQueueItem(item) && item.officialSocialProfileVerified !== true
+        ? 'social_profile_not_first_party_verified'
+        : item.reason,
     }));
 
   if (!executable.length) {

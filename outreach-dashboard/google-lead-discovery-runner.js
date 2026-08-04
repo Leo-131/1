@@ -678,12 +678,13 @@ const SOCIAL_REFILL_CANDIDATES = [
   buyerPersona: 'Outdoor, camping, travel accessories, ecommerce or category buyer.',
   evidenceUrl: SOCIAL_REFILL_SOURCE,
   dataSources: ['official company website', 'public social profile refill'],
-  officialSocialProfileVerified: company === 'Doorout' || company === '8a.pl',
+  officialSocialProfileVerified: company === 'Doorout' || company === '8a.pl' || company === 'Wild Earth',
   socialProfileEvidenceUrl: company === 'Doorout'
     ? 'https://www.doorout.com/'
     : (company === '8a.pl'
       ? 'https://8a.pl/media/pliki/polityka_prywatno%C5%9Bci_FB_8a.pdf'
-      : ''),
+      : (company === 'Wild Earth' ? 'https://www.wildearth.com.au/' : '')),
+  socialProfileVerifiedAt: company === 'Wild Earth' ? '2026-08-04T07:00:00.000Z' : '',
 }));
 
 // Source-backed public routing addresses for the current refill batch.
@@ -1155,6 +1156,8 @@ function baseLead(item, id, evidenceUrl) {
     channel: String(item.platform || '').toLowerCase(),
     identityStatus: 'verified',
     officialSocialProfileVerified: item.officialSocialProfileVerified === true,
+    socialProfileEvidenceUrl: item.socialProfileEvidenceUrl || '',
+    socialProfileVerifiedAt: item.socialProfileVerifiedAt || '',
     profiledAt: enrichment.decisionMaker && enrichment.dataSources ? new Date().toISOString() : '',
     partnershipStatus: partnerAccount ? 'active_partner' : (item.partnershipStatus || ''),
     doNotOutreach: partnerAccount,

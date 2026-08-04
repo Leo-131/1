@@ -694,6 +694,16 @@ test('daily discovery emits the full verified channel pool and reports executabl
   assert.ok(dailyRunnerSource.includes('executableReserveTarget: 130'));
   assert.ok(dailyRunnerSource.includes('executableReserveNeeded: readiness.reserveNeededFor100'));
   assert.ok(dailyRunnerSource.includes('executableByChannel: readiness.byChannel'));
+  assert.ok(dailyRunnerSource.includes('verifiedSocialCompanies: readiness.verifiedSocialCompanies'));
+  assert.ok(dailyRunnerSource.includes('verifiedSocialReserveNeeded'));
+  assert.ok(dailyRunnerSource.includes('const reservedSocial = verifiedSocial.slice(0, socialReserveTarget)'));
+});
+
+test('daily execution requires first-party verified social profiles and reports unverified social rows truthfully', () => {
+  assert.ok(mainSource.includes("!isSocialQueueItem(item) || item.officialSocialProfileVerified === true"));
+  assert.ok(mainSource.includes("'social_profile_not_first_party_verified'"));
+  assert.ok(discoverySource.includes("company === 'Wild Earth'"));
+  assert.ok(discoverySource.includes("'https://www.wildearth.com.au/'"));
 });
 
 test('AutoGLM only accepts exact supported platform URLs and blocks repeat contact', () => {

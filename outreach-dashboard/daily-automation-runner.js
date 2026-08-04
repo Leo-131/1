@@ -1249,7 +1249,7 @@ function buildDailyPotentialPool(classified, discoveryRun, context, targetSize) 
     .filter(item => !isKnownPartnerCompany(item))
     .map((item, index) => normalizePotentialItem(item, 'google_linkedin_social_refill', history, index));
   const seen = new Set();
-  return [...currentPlan, ...embedded, ...discovered]
+  const deduped = [...currentPlan, ...embedded, ...discovered]
     .filter(isActivePotentialCandidate)
     .sort(priorityCompare)
     .filter(item => {
@@ -1257,8 +1257,17 @@ function buildDailyPotentialPool(classified, discoveryRun, context, targetSize) 
       if (!key || seen.has(key)) return false;
       seen.add(key);
       return true;
-    })
-    .slice(0, targetSize);
+    });
+  // Preserve a verified social reserve before the channel-priority sort fills
+  // the whole pool with website/email rows. This changes only cross-company
+  // coverage: the execution layer still picks one highest-priority channel per
+  // company and keeps all identity, duplicate and confirmation gates.
+  const verifiedSocial = deduped.filter(item => ['facebook', 'instagram', 'linkedin'].includes(String(item.platform || '').toLowerCase())
+    && item.officialSocialProfileVerified === true);
+  const socialReserveTarget = Math.min(25, Math.max(1, Math.ceil(targetSize * 0.2)));
+  const reservedSocial = verifiedSocial.slice(0, socialReserveTarget);
+  const reservedIds = new Set(reservedSocial.map(item => item.id));
+  return [...reservedSocial, ...deduped.filter(item => !reservedIds.has(item.id))].slice(0, targetSize);
 }
 
 function channelReadinessSummary(items = []) {
@@ -1275,7 +1284,9 @@ function channelReadinessSummary(items = []) {
     const action = String(item.action || '');
     const platform = String(item.platform || item.channel || '').toLowerCase();
     const hasTarget = Boolean(item.url || item.contactUrl || item.website || item.publicEmail || item.contactEmail);
-    const blocked = /homepage_only_contact_path_requires_verification|missing_verified_profile_url|active_partner_no_new_outreach|exclusive_agency_region/.test(reason);
+    const social = ['facebook', 'instagram', 'linkedin'].includes(platform);
+    const blocked = /homepage_only_contact_path_requires_verification|missing_verified_profile_url|active_partner_no_new_outreach|exclusive_agency_region/.test(reason)
+      || (social && item.officialSocialProfileVerified !== true);
     const executableAction = ['develop', 'discover_and_develop', 'email_priority', 'retry_or_alternate_channel'].includes(action);
     if (hasTarget && executableAction && !blocked) {
       row.ready = true;
@@ -1293,6 +1304,7 @@ function channelReadinessSummary(items = []) {
       item.channels.forEach(channel => { counts[channel] = (counts[channel] || 0) + 1; });
       return counts;
     }, {}),
+    verifiedSocialCompanies: ready.filter(item => [...item.channels].some(channel => ['facebook', 'instagram', 'linkedin'].includes(channel))).length,
   };
 }
 
@@ -1459,6 +1471,9 @@ function main() {
       executableReserveTarget: 130,
       executableReserveNeeded: readiness.reserveNeededFor100,
       executableByChannel: readiness.byChannel,
+      verifiedSocialCompanies: readiness.verifiedSocialCompanies,
+      verifiedSocialReserveTarget: 20,
+      verifiedSocialReserveNeeded: Math.max(0, 20 - readiness.verifiedSocialCompanies),
       googleDiscovered: dailyQueue.filter(item => item.sourceType === 'google' || item.source === 'google_customer_discovery' || /^google-customer-/i.test(item.id || '')).length,
       facebookDiscovered: dailyQueue.filter(item => item.platform === 'facebook' && (item.sourceType === 'google' || item.source === 'google_customer_discovery' || /^google-customer-/i.test(item.id || ''))).length,
       websiteContactDiscovered: dailyQueue.filter(item => item.platform === 'email' && (item.sourceType === 'google' || item.source === 'google_customer_discovery' || /^google-customer-/i.test(item.id || ''))).length,
