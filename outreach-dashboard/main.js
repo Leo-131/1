@@ -3848,14 +3848,21 @@ const REAL_CUSTOMER_DEVELOPMENT_STATUSES = new Set([
 
 function buildExecutionTruth(results = []) {
   const rows = Array.isArray(results) ? results : [];
-  const chromeOpenedCount = rows.filter(item => item && item.chromeOpen && item.chromeOpen.ok).length;
+  const transport = executionTransportSummary(rows);
+  const explicitChromeOpenedCount = rows.filter(item => item && item.chromeOpen && item.chromeOpen.ok).length;
+  const browserResultCount = rows.filter(item => {
+    const result = item && item.result && typeof item.result === 'object' ? item.result : {};
+    return /web-session|browser|cdp/i.test([result.engine, result.mode, item && item.evidence].filter(Boolean).join(' '));
+  }).length;
+  const chromeOpenedCount = Math.max(explicitChromeOpenedCount, browserResultCount);
+  const browserUsed = chromeOpenedCount > 0 || transport.browserTransportUsed === 'cdp';
   const customerMessageSent = rows.some(item => item && ['sent_confirmed', 'submitted_confirmed'].includes(item.sendStatus));
   const realDevelopmentCount = rows.filter(item => item && REAL_CUSTOMER_DEVELOPMENT_STATUSES.has(item.sendStatus)).length;
   return {
-    ...executionTransportSummary(rows),
-    executionPhase: chromeOpenedCount ? 'browser_execution' : 'no_browser_execution',
-    chromeStage: chromeOpenedCount ? 'opened' : 'not_started',
-    chromeOpened: chromeOpenedCount > 0,
+    ...transport,
+    executionPhase: browserUsed ? 'browser_execution' : 'no_browser_execution',
+    chromeStage: browserUsed ? 'opened' : 'not_started',
+    chromeOpened: browserUsed,
     chromeOpenedCount,
     customerDevelopmentPerformed: realDevelopmentCount > 0,
     customerMessageSent,
