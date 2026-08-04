@@ -3188,12 +3188,44 @@ async function runVerifiedAlibabaEmailLead(lead = {}, subject = '', draft = '') 
 function canFallbackAfterEmailPreflight(result = {}) {
   if (!result || result.ok || result.sendStatus === 'sent_confirmed' || result.sendStatus === 'send_unconfirmed') return false;
   const evidence = `${result.reason || ''};${result.evidence || ''}`.toLowerCase();
+  if (/physical_send|send_physical_click|composer_preserved|customer_interaction/.test(evidence)) return false;
   return [
     'email_sender_not_configured',
     'alibaba_webmail_session_unavailable',
     'alibaba_webmail_login_required',
     'alibaba_webmail_compose_unavailable',
+    'email_target_verification_required',
+    'public_business_email_requires_verification',
+    'verified_public_email_missing',
   ].some(marker => evidence.includes(marker));
+}
+
+async function executeVerifiedSocialFallbackAfterEmail(lead = {}, emailResult = {}, options = {}) {
+  if (!canFallbackAfterEmailPreflight(emailResult)) return emailResult;
+  const fallbackLead = socialFallbackFromInspection(lead, {});
+  if (!fallbackLead || fallbackLead.officialSocialProfileVerified !== true) return emailResult;
+  const fallbackResult = await executeLeadAutomation(fallbackLead, {
+    ...options,
+    ignoreCooldown: true,
+    allowParallel: true,
+    attemptedChannels: [
+      ...(Array.isArray(options.attemptedChannels) ? options.attemptedChannels : []),
+      'email',
+    ],
+    fallbackDepth: Number(options.fallbackDepth || 0) + 1,
+  });
+  return {
+    ...fallbackResult,
+    fallbackFrom: `mailto:${recipientEmail(lead)}`,
+    fallbackPlatform: fallbackLead.platform,
+    emailPreflightStatus: emailResult.sendStatus || emailResult.reason || 'failed_open',
+    output: JSON.stringify({
+      ...parseExecutionOutput(fallbackResult.output),
+      fallbackFrom: `mailto:${recipientEmail(lead)}`,
+      fallbackPlatform: fallbackLead.platform,
+      fallbackReason: emailResult.reason || emailResult.evidence || 'email_preflight_failed',
+    }),
+  };
 }
 
 async function runWebsiteContactLead(lead = {}, options = {}) {
@@ -3737,7 +3769,20 @@ async function executeLeadAutomation(lead, options = {}) {
     if (typeof options.enterCriticalSection === 'function') options.enterCriticalSection('verified_email_send_confirmation');
     const subject = websiteContactSubject(lead);
     const draft = websiteContactMessage(lead);
-    const result = await runVerifiedAlibabaEmailLead(lead, subject, draft);
+    const emailResult = await runVerifiedAlibabaEmailLead(lead, subject, draft);
+    const result = await executeVerifiedSocialFallbackAfterEmail(lead, emailResult, options);
+    lastGlmAutomationAt = Date.now();
+    return result;
+  }
+  if (platform === 'email' && !isWebsiteContact && !isVerifiedEmail) {
+    const emailGate = {
+      ok: false,
+      skipped: true,
+      sendStatus: 'skipped',
+      reason: 'email_target_verification_required',
+      evidence: 'email_target_verification_required;no_email_send_performed',
+    };
+    const result = await executeVerifiedSocialFallbackAfterEmail(lead, emailGate, options);
     lastGlmAutomationAt = Date.now();
     return result;
   }

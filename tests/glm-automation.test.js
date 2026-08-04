@@ -104,6 +104,11 @@ test('a pre-send Alibaba authentication failure falls back to verified website o
   assert.ok(mainSource.includes("evidence.includes('ant-select-selection-search-input')"));
   assert.ok(mainSource.includes('.filter(result => !isFixedAlibabaRecipientVerifierFailure(result))'));
   assert.ok(mainSource.includes('composer_preserved_for_technical_evidence:${preserveTabForEvidence}'));
+  assert.ok(mainSource.includes('async function executeVerifiedSocialFallbackAfterEmail'));
+  assert.ok(mainSource.includes('const result = await executeVerifiedSocialFallbackAfterEmail(lead, emailResult, options)'));
+  assert.ok(mainSource.includes("platform === 'email' && !isWebsiteContact && !isVerifiedEmail"));
+  assert.ok(mainSource.includes("fallbackPlatform: fallbackLead.platform"));
+  assert.match(mainSource, /physical_send\|send_physical_click\|composer_preserved\|customer_interaction/);
   assert.ok(alibabaWebmailSource.includes('recipientValueMatch'));
   assert.ok(alibabaWebmailSource.includes("setValue(recipientInput, recipient)"));
 });

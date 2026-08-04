@@ -1,228 +1,7 @@
 window.OUTREACH_INTELLIGENCE_LATEST = {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-04T09:54:41.448Z",
+  "generatedAt": "2026-08-04T10:02:58.738Z",
   "companies": [
-    {
-      "companyId": "company_244d3bcb522ff8fb",
-      "company": "Brave Hardy",
-      "keys": [
-        "bravehardy",
-        "bravehardycom"
-      ],
-      "domains": [
-        "bravehardy.com"
-      ],
-      "channels": [
-        "facebook",
-        "instagram",
-        "website_form"
-      ],
-      "evidence": [
-        {
-          "channel": "website_form",
-          "score": 100,
-          "verified": true,
-          "reasons": [
-            "official_business_route"
-          ],
-          "evidenceUrl": "https://www.bravehardy.com/pages/contact",
-          "checkedAt": "2026-08-04T09:55:00.000Z"
-        },
-        {
-          "channel": "facebook",
-          "score": 95,
-          "verified": true,
-          "reasons": [
-            "official_site_cross_verified_social"
-          ],
-          "evidenceUrl": "https://www.bravehardy.com/pages/contact",
-          "checkedAt": "2026-08-04T09:55:00.000Z"
-        },
-        {
-          "channel": "instagram",
-          "score": 95,
-          "verified": true,
-          "reasons": [
-            "official_site_cross_verified_social"
-          ],
-          "evidenceUrl": "https://www.bravehardy.com/pages/contact",
-          "checkedAt": "2026-08-04T09:55:00.000Z"
-        },
-        {
-          "channel": "website_form",
-          "score": 95,
-          "verified": true,
-          "reasons": [
-            "official_site_cross_verified_social"
-          ],
-          "evidenceUrl": "https://www.bravehardy.com/pages/contact",
-          "checkedAt": "2026-08-04T09:55:00.000Z"
-        },
-        {
-          "channel": "website_form",
-          "score": 95,
-          "verified": true,
-          "reasons": [
-            "official_site_cross_verified_social"
-          ],
-          "evidenceUrl": "https://www.bravehardy.com/pages/contact",
-          "checkedAt": "2026-08-04T09:55:00.000Z"
-        },
-        {
-          "channel": "facebook",
-          "score": 95,
-          "verified": true,
-          "reasons": [
-            "official_site_cross_verified_social"
-          ],
-          "evidenceUrl": "https://www.bravehardy.com/pages/contact",
-          "checkedAt": "2026-08-04T09:55:00.000Z"
-        },
-        {
-          "channel": "instagram",
-          "score": 95,
-          "verified": true,
-          "reasons": [
-            "official_site_cross_verified_social"
-          ],
-          "evidenceUrl": "https://www.bravehardy.com/pages/contact",
-          "checkedAt": "2026-08-04T09:55:00.000Z"
-        },
-        {
-          "channel": "instagram",
-          "score": 95,
-          "verified": true,
-          "reasons": [
-            "official_site_cross_verified_social"
-          ],
-          "evidenceUrl": "https://www.bravehardy.com/pages/contact",
-          "checkedAt": "2026-08-04T09:55:00.000Z"
-        },
-        {
-          "channel": "facebook",
-          "score": 95,
-          "verified": true,
-          "reasons": [
-            "official_site_cross_verified_social"
-          ],
-          "evidenceUrl": "https://www.bravehardy.com/pages/contact",
-          "checkedAt": "2026-08-04T09:55:00.000Z"
-        },
-        {
-          "channel": "website_form",
-          "score": 95,
-          "verified": true,
-          "reasons": [
-            "official_site_cross_verified_social"
-          ],
-          "evidenceUrl": "https://www.bravehardy.com/pages/contact",
-          "checkedAt": "2026-08-04T09:55:00.000Z"
-        }
-      ],
-      "history": [
-        {
-          "status": "website_contact_unreachable_skip",
-          "timestamp": "2026-08-04T09:53:14.080Z",
-          "channel": "website_form",
-          "evidence": "unavailable_profile_page: SKIP TO CONTENT\n\nWhat you see is what we have! Our real-time stock levels are 100% accurate.\n\nWe deliver to your door, anywhere in South Africa.\n\nVisit Our Store\nContact Us\nSearch\n;public_email_fallback_available:sales@bravehardy.com;email_sender_not_configured;website_contact_all_targets_failed:6;contact_path_strategy_v2"
-        }
-      ]
-    },
-    {
-      "companyId": "company_4dc42d57da9f890c",
-      "company": "Technical Outdoor Indonesia",
-      "keys": [
-        "technicaloutdoorindonesia",
-        "technicaloutdoorcom"
-      ],
-      "domains": [
-        "technicaloutdoor.com"
-      ],
-      "channels": [
-        "instagram",
-        "website_form"
-      ],
-      "evidence": [
-        {
-          "channel": "research",
-          "score": 100,
-          "verified": true,
-          "reasons": [
-            "official_business_route"
-          ],
-          "evidenceUrl": "https://www.technicaloutdoor.com/welcome/",
-          "checkedAt": "2026-08-04T09:55:00.000Z"
-        },
-        {
-          "channel": "instagram",
-          "score": 95,
-          "verified": true,
-          "reasons": [
-            "official_site_cross_verified_social"
-          ],
-          "evidenceUrl": "https://www.technicaloutdoor.com/welcome/",
-          "checkedAt": "2026-08-04T09:55:00.000Z"
-        },
-        {
-          "channel": "website_form",
-          "score": 95,
-          "verified": true,
-          "reasons": [
-            "official_site_cross_verified_social"
-          ],
-          "evidenceUrl": "https://www.technicaloutdoor.com/welcome/",
-          "checkedAt": "2026-08-04T09:55:00.000Z"
-        },
-        {
-          "channel": "website_form",
-          "score": 95,
-          "verified": true,
-          "reasons": [
-            "official_site_cross_verified_social"
-          ],
-          "evidenceUrl": "https://www.technicaloutdoor.com/welcome/",
-          "checkedAt": "2026-08-04T09:55:00.000Z"
-        },
-        {
-          "channel": "instagram",
-          "score": 95,
-          "verified": true,
-          "reasons": [
-            "official_site_cross_verified_social"
-          ],
-          "evidenceUrl": "https://www.technicaloutdoor.com/welcome/",
-          "checkedAt": "2026-08-04T09:55:00.000Z"
-        },
-        {
-          "channel": "instagram",
-          "score": 95,
-          "verified": true,
-          "reasons": [
-            "official_site_cross_verified_social"
-          ],
-          "evidenceUrl": "https://www.technicaloutdoor.com/welcome/",
-          "checkedAt": "2026-08-04T09:55:00.000Z"
-        },
-        {
-          "channel": "website_form",
-          "score": 95,
-          "verified": true,
-          "reasons": [
-            "official_site_cross_verified_social"
-          ],
-          "evidenceUrl": "https://www.technicaloutdoor.com/welcome/",
-          "checkedAt": "2026-08-04T09:55:00.000Z"
-        }
-      ],
-      "history": [
-        {
-          "status": "failed_open",
-          "timestamp": "2026-08-04T09:52:26.291Z",
-          "channel": "website_form",
-          "evidence": "customer_execution_timeout:90000;queue_continued_to_next_customer"
-        }
-      ]
-    },
     {
       "companyId": "company_ca049a336c94b7d9",
       "company": "Left Point Distribution",
@@ -9103,6 +8882,67 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
       ]
     },
     {
+      "companyId": "company_4dc42d57da9f890c",
+      "company": "Technical Outdoor Indonesia",
+      "keys": [
+        "technicaloutdoorindonesia",
+        "technicaloutdoorcom"
+      ],
+      "domains": [
+        "technicaloutdoor.com"
+      ],
+      "channels": [
+        "instagram",
+        "website_form"
+      ],
+      "evidence": [
+        {
+          "channel": "research",
+          "score": 100,
+          "verified": true,
+          "reasons": [
+            "official_business_route"
+          ],
+          "evidenceUrl": "https://www.technicaloutdoor.com/welcome/",
+          "checkedAt": "2026-08-04T09:55:00.000Z"
+        },
+        {
+          "channel": "instagram",
+          "score": 95,
+          "verified": true,
+          "reasons": [
+            "official_site_cross_verified_social"
+          ],
+          "evidenceUrl": "https://www.technicaloutdoor.com/welcome/",
+          "checkedAt": "2026-08-04T09:55:00.000Z"
+        },
+        {
+          "channel": "website_form",
+          "score": 95,
+          "verified": true,
+          "reasons": [
+            "official_site_cross_verified_social"
+          ],
+          "evidenceUrl": "https://www.technicaloutdoor.com/welcome/",
+          "checkedAt": "2026-08-04T09:55:00.000Z"
+        }
+      ],
+      "history": [
+        {
+          "status": "failed_open",
+          "timestamp": "2026-08-04T09:52:26.291Z",
+          "channel": "website_form",
+          "evidence": "customer_execution_timeout:90000;queue_continued_to_next_customer"
+        },
+        {
+          "status": "send_unconfirmed",
+          "timestamp": "2026-08-04T09:56:31.252Z",
+          "channel": "instagram",
+          "evidence": "instagram_send_clicked_but_confirmation_missing;"
+        }
+      ]
+    },
+    {
       "companyId": "company_05114ab76b18fc9f",
       "company": "Further Faster",
       "keys": [
@@ -9165,6 +9005,84 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
           "timestamp": "2026-07-21T05:29:00.000Z",
           "channel": "email",
           "evidence": "official_homepage_and_where_to_buy_distribution_page;alibaba_mail_sender_verified_leo_at_flextailgear_com;separate_chrome_tab_used;alibaba_mail_sent_success_visible;sent_folder_record_confirmed;sent_folder_time:13:29;sent_folder_subject:FLEXTAIL outdoor electronics | Further Faster range review"
+        }
+      ]
+    },
+    {
+      "companyId": "company_244d3bcb522ff8fb",
+      "company": "Brave Hardy",
+      "keys": [
+        "bravehardy",
+        "bravehardycom"
+      ],
+      "domains": [
+        "bravehardy.com"
+      ],
+      "channels": [
+        "instagram",
+        "facebook",
+        "website_form"
+      ],
+      "evidence": [
+        {
+          "channel": "website_form",
+          "score": 100,
+          "verified": true,
+          "reasons": [
+            "official_business_route"
+          ],
+          "evidenceUrl": "https://www.bravehardy.com/pages/contact",
+          "checkedAt": "2026-08-04T09:55:00.000Z"
+        },
+        {
+          "channel": "instagram",
+          "score": 95,
+          "verified": true,
+          "reasons": [
+            "official_site_cross_verified_social"
+          ],
+          "evidenceUrl": "https://www.bravehardy.com/pages/contact",
+          "checkedAt": "2026-08-04T09:55:00.000Z"
+        },
+        {
+          "channel": "facebook",
+          "score": 95,
+          "verified": true,
+          "reasons": [
+            "official_site_cross_verified_social"
+          ],
+          "evidenceUrl": "https://www.bravehardy.com/pages/contact",
+          "checkedAt": "2026-08-04T09:55:00.000Z"
+        },
+        {
+          "channel": "website_form",
+          "score": 95,
+          "verified": true,
+          "reasons": [
+            "official_site_cross_verified_social"
+          ],
+          "evidenceUrl": "https://www.bravehardy.com/pages/contact",
+          "checkedAt": "2026-08-04T09:55:00.000Z"
+        }
+      ],
+      "history": [
+        {
+          "status": "website_contact_unreachable_skip",
+          "timestamp": "2026-08-04T09:53:14.080Z",
+          "channel": "website_form",
+          "evidence": "unavailable_profile_page: SKIP TO CONTENT\n\nWhat you see is what we have! Our real-time stock levels are 100% accurate.\n\nWe deliver to your door, anywhere in South Africa.\n\nVisit Our Store\nContact Us\nSearch\n;public_email_fallback_available:sales@bravehardy.com;email_sender_not_configured;website_contact_all_targets_failed:6;contact_path_strategy_v2"
+        },
+        {
+          "status": "website_contact_unreachable_skip",
+          "timestamp": "2026-08-04T09:55:13.267Z",
+          "channel": "website_form",
+          "evidence": "unavailable_profile_page: SKIP TO CONTENT\n\nWhat you see is what we have! Our real-time stock levels are 100% accurate.\n\nWe deliver to your door, anywhere in South Africa.\n\nVisit Our Store\nContact Us\nSearch\n;public_email_fallback_available:sales@bravehardy.com;email_sender_not_configured;website_contact_all_targets_failed:6;contact_path_strategy_v2"
+        },
+        {
+          "status": "send_unconfirmed",
+          "timestamp": "2026-08-04T09:55:57.252Z",
+          "channel": "facebook",
+          "evidence": "facebook_send_clicked_but_confirmation_missing;"
         }
       ]
     },
@@ -13656,6 +13574,16 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
       "evidence": "facebook_send_clicked_but_confirmation_missing"
     },
     {
+      "companyId": "company_4dc42d57da9f890c",
+      "company": "Technical Outdoor Indonesia",
+      "permanent": true,
+      "crossChannel": true,
+      "reason": "previous_customer_development_no_repeat",
+      "sourceStatus": "send_unconfirmed",
+      "sourceTimestamp": "2026-08-04T09:56:31.252Z",
+      "evidence": "instagram_send_clicked_but_confirmation_missing;"
+    },
+    {
       "companyId": "company_05114ab76b18fc9f",
       "company": "Further Faster",
       "permanent": true,
@@ -13664,6 +13592,16 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
       "sourceStatus": "sent_confirmed",
       "sourceTimestamp": "2026-07-21T05:29:00.000Z",
       "evidence": "official_homepage_and_where_to_buy_distribution_page;alibaba_mail_sender_verified_leo_at_flextailgear_com;separate_chrome_tab_used;alibaba_mail_sent_success_visible;sent_folder_record_confirmed;sent_folder_time:13:29;sent_folder_subject:FLEXTAIL outdoor electronics | Further Faster range review"
+    },
+    {
+      "companyId": "company_244d3bcb522ff8fb",
+      "company": "Brave Hardy",
+      "permanent": true,
+      "crossChannel": true,
+      "reason": "previous_customer_development_no_repeat",
+      "sourceStatus": "send_unconfirmed",
+      "sourceTimestamp": "2026-08-04T09:55:57.252Z",
+      "evidence": "facebook_send_clicked_but_confirmation_missing;"
     },
     {
       "companyId": "company_e7273e7cc7cae1e8",
@@ -14289,31 +14227,6 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
   "portfolio": {
     "actions": [
       {
-        "companyId": "company_244d3bcb522ff8fb",
-        "company": "Brave Hardy",
-        "action": "first_touch",
-        "channel": "website_form",
-        "evidenceScore": 100,
-        "evidenceUrl": "https://www.bravehardy.com/pages/contact",
-        "alternatives": [
-          "facebook",
-          "instagram"
-        ],
-        "reason": "highest_priority_verified_channel"
-      },
-      {
-        "companyId": "company_4dc42d57da9f890c",
-        "company": "Technical Outdoor Indonesia",
-        "action": "first_touch",
-        "channel": "website_form",
-        "evidenceScore": 95,
-        "evidenceUrl": "https://www.technicaloutdoor.com/welcome/",
-        "alternatives": [
-          "instagram"
-        ],
-        "reason": "highest_priority_verified_channel"
-      },
-      {
         "companyId": "company_ca049a336c94b7d9",
         "company": "Left Point Distribution",
         "action": "first_touch",
@@ -14353,14 +14266,14 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
     },
     "used": {
       "email": 0,
-      "website_form": 5,
+      "website_form": 3,
       "linkedin": 0,
       "facebook": 0,
       "instagram": 0
     },
     "gaps": {
       "email": 10,
-      "website_form": 0,
+      "website_form": 2,
       "linkedin": 4,
       "facebook": 3,
       "instagram": 3
@@ -14462,40 +14375,15 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
     ]
   },
   "ownerSummary": {
-    "generatedAt": "2026-08-04T09:54:41.448Z",
+    "generatedAt": "2026-08-04T10:02:58.738Z",
     "phase": "autonomous_sales_operating_system_v1",
     "kpis": {
       "companies": 188,
-      "permanentlySuppressed": 104,
-      "plannedActions": 5,
-      "verifiedEvidenceRoutes": 49
+      "permanentlySuppressed": 106,
+      "plannedActions": 3,
+      "verifiedEvidenceRoutes": 39
     },
     "decisions": [
-      {
-        "companyId": "company_244d3bcb522ff8fb",
-        "company": "Brave Hardy",
-        "action": "first_touch",
-        "channel": "website_form",
-        "evidenceScore": 100,
-        "evidenceUrl": "https://www.bravehardy.com/pages/contact",
-        "alternatives": [
-          "facebook",
-          "instagram"
-        ],
-        "reason": "highest_priority_verified_channel"
-      },
-      {
-        "companyId": "company_4dc42d57da9f890c",
-        "company": "Technical Outdoor Indonesia",
-        "action": "first_touch",
-        "channel": "website_form",
-        "evidenceScore": 95,
-        "evidenceUrl": "https://www.technicaloutdoor.com/welcome/",
-        "alternatives": [
-          "instagram"
-        ],
-        "reason": "highest_priority_verified_channel"
-      },
       {
         "companyId": "company_ca049a336c94b7d9",
         "company": "Left Point Distribution",
@@ -14533,7 +14421,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
         "severity": "warning",
         "detail": {
           "email": 10,
-          "website_form": 0,
+          "website_form": 2,
           "linkedin": 4,
           "facebook": 3,
           "instagram": 3
