@@ -330,7 +330,18 @@ function exactSocialHandleMatchesCompany(item = {}) {
 
 function blockingAutomationResultFor(item) {
   const file = path.join(__dirname, 'autonomous-outreach-results.js');
-  const results = readJsonScriptArray(file, 'AUTONOMOUS_OUTREACH_RESULTS');
+  const ledgerResults = readJsonScriptArray(file, 'AUTONOMOUS_OUTREACH_RESULTS');
+  const latestExecution = readJson(path.join(__dirname, 'daily-automation-execution-latest.json'), {});
+  const latestExecutionResults = Array.isArray(latestExecution.executed)
+    ? latestExecution.executed.map(result => ({
+      ...result,
+      task_id: result.task_id || result.id,
+      status: result.status || result.sendStatus,
+      target_url: result.target_url || result.targetUrl,
+      timestamp: result.timestamp || latestExecution.completedAt || latestExecution.generatedAt,
+    }))
+    : [];
+  const results = [...ledgerResults, ...latestExecutionResults];
   const exactKeys = automationExactKeys(item);
   const companyKeys = automationCompanyKeys(item);
   const itemPlatform = automationPlatformFor(item);
