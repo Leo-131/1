@@ -3976,6 +3976,15 @@ function isSocialQueueItem(item = {}) {
   return !isWebsiteContactQueueItem(item) && socialPriorityRank(item) >= 300;
 }
 
+function websiteCanReinspectForFirstPartySocial(item = {}) {
+  if (!isWebsiteContactQueueItem(item) || item.officialSocialProfileVerified === true) return false;
+  const channels = item.alternateChannels && typeof item.alternateChannels === 'object'
+    ? item.alternateChannels
+    : {};
+  return [channels.linkedin, channels.facebook, channels.instagram]
+    .some(url => /^https:\/\//i.test(String(url || '')));
+}
+
 function developmentPriorityCompare(left, right) {
   const verifiedEmailDelta = Number(verifiedBusinessEmailTarget(right).ok) - Number(verifiedBusinessEmailTarget(left).ok);
   return verifiedEmailDelta
@@ -3995,7 +4004,11 @@ function executableQueueCandidates(items = [], options = {}) {
     .filter(item => !hasNoSafeMessageButton(item) || hasVerifiedInstagramFallback(item))
     .filter(item => !isSocialQueueItem(item) || item.officialSocialProfileVerified === true)
     .filter(item => allowWebsiteContact || !isWebsiteContactQueueItem(item))
-    .filter(item => !blockingAutomationResultFor(item))
+    // A prior pre-send website/browser failure may retire that exact form
+    // attempt, but it must not prevent reopening the first-party website to
+    // validate and execute an advertised official social route. Send-time
+    // company and uncertainty gates still prevent any duplicate interaction.
+    .filter(item => !blockingAutomationResultFor(item) || websiteCanReinspectForFirstPartySocial(item))
     .sort(developmentPriorityCompare);
 }
 

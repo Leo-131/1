@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-04T11:55:13.787Z",
+  "generatedAt": "2026-08-04T11:59:44.730Z",
   "companies": [
     {
       "companyId": "company_992d96a6c170243f",
@@ -1110,6 +1110,12 @@
         {
           "status": "website_contact_unreachable_skip",
           "timestamp": "2026-08-04T11:29:52.758Z",
+          "channel": "website_form",
+          "evidence": "unavailable_profile_page: 0800 014 8686\nSign in\nor\nRegister\n Cart\nSearch\nCATEGORIES\nGIFT IDEAS\nSHOP BY TYPE\nCOLLECTIONS\nCUSTOMER SERVICE\nABOUT US\n   \nHOME  错误\n404 Error - Page not found\n\nUh oh, looks like t;public_email_fallback_available:sales@campervangift.co.uk;email_sender_not_configured;email_route_preserved_draft_no_reopen;no_email_composer_opened;no_send_performed;recipient:sales@campervangift.co.uk;website_contact_all_targets_failed:7;contact_path_strategy_v2"
+        },
+        {
+          "status": "website_contact_unreachable_skip",
+          "timestamp": "2026-08-04T11:55:40.842Z",
           "channel": "website_form",
           "evidence": "unavailable_profile_page: 0800 014 8686\nSign in\nor\nRegister\n Cart\nSearch\nCATEGORIES\nGIFT IDEAS\nSHOP BY TYPE\nCOLLECTIONS\nCUSTOMER SERVICE\nABOUT US\n   \nHOME  错误\n404 Error - Page not found\n\nUh oh, looks like t;public_email_fallback_available:sales@campervangift.co.uk;email_sender_not_configured;email_route_preserved_draft_no_reopen;no_email_composer_opened;no_send_performed;recipient:sales@campervangift.co.uk;website_contact_all_targets_failed:7;contact_path_strategy_v2"
         }
@@ -14563,7 +14569,7 @@
     ]
   },
   "ownerSummary": {
-    "generatedAt": "2026-08-04T11:55:13.787Z",
+    "generatedAt": "2026-08-04T11:59:44.730Z",
     "phase": "autonomous_sales_operating_system_v1",
     "kpis": {
       "companies": 177,

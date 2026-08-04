@@ -1510,6 +1510,8 @@ test('website pre-send failures continue to first-party verified social instead 
   assert.ok(mainSource.includes('website_presend_social_fallback'));
   assert.match(mainSource, /websiteInteractionUncertain = \/send_unconfirmed\|submit_unconfirmed\|send_physical_click\|submit_physical_click\|customer_interaction\//);
   assert.ok(mainSource.includes('verifiedSocialFallback.officialSocialProfileVerified === true'));
+  assert.ok(mainSource.includes('function websiteCanReinspectForFirstPartySocial'));
+  assert.ok(mainSource.includes('!blockingAutomationResultFor(item) || websiteCanReinspectForFirstPartySocial(item)'));
 });
 
 test('daily queue generator blocks same-day repeat development by company', () => {
