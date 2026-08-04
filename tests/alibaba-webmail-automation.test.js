@@ -49,10 +49,13 @@ test('Alibaba webmail expressions are valid JavaScript and keep exact recipient/
   assert.match(composeFillExpression(payload), /isVisible/);
   assert.match(composeFillExpression(payload), /setValue\(recipientInput, recipient\)/);
   assert.match(composeFillExpression(payload), /recipientCommittedMatch/);
+  assert.match(composeFillExpression(payload), /recipientTokens\.includes\(recipientNeedle\)/);
+  assert.doesNotMatch(composeFillExpression(payload), /recipientInput\.value \|\| ''\)\.toLowerCase\(\)\.includes/);
   assert.match(composeFillExpression(payload), /committedRecipientSignals/);
   assert.match(composeFillExpression(payload), /width: Math\.round\(recipientRect\?\.width \|\| 0\)/);
   assert.match(composeInspectionExpression(payload), /data-email/);
   assert.match(composeInspectionExpression(payload), /recipientSignals/);
+  assert.match(composeInspectionExpression(payload), /recipientTokens\.includes\(recipientNeedle\)/);
   assert.match(composeInspectionExpression(payload), /\[class\*="recipient"\]/);
   assert.match(composeInspectionExpression(payload), /root\.host/);
   assert.match(composeInspectionExpression(payload), /replace\(\/\\u00a0\/g/);

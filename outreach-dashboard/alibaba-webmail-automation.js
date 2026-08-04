@@ -147,7 +147,10 @@ function composeFillExpression({ recipient, subject, text } = {}) {
       recipientContainer?.getAttribute?.('data-email'),
       recipientInput.ownerDocument?.body?.innerText,
     ].filter(Boolean).map(value => String(value).toLowerCase());
-    const recipientCommittedMatch = committedRecipientSignals.some(value => value.includes(recipientNeedle));
+    const recipientTokens = committedRecipientSignals
+      .flatMap(value => value.match(/[a-z0-9.!#$%&'*+/=?^_\x60{|}~-]+@[a-z0-9.-]+\.[a-z]{2,}/gi) || [])
+      .map(value => value.toLowerCase());
+    const recipientCommittedMatch = recipientTokens.includes(recipientNeedle);
     setValue(subjectInput, subject);
     editorBody.focus();
     editorBody.innerText = bodyText;
@@ -159,7 +162,7 @@ function composeFillExpression({ recipient, subject, text } = {}) {
       ok: true,
       evidence: 'alibaba_webmail_content_inserted_recipient_control_verified',
       recipient,
-      recipientValueMatch: String(recipientInput.value || '').toLowerCase().includes(recipient.toLowerCase()),
+      recipientValueMatch: String(recipientInput.value || '').trim().toLowerCase() === recipient.toLowerCase(),
       recipientCommittedMatch,
       subject,
       bodyLength: bodyText.length,
@@ -211,8 +214,10 @@ function composeInspectionExpression({ recipient, subject, text } = {}) {
       .filter(Boolean)
       .map(value => String(value).toLowerCase());
     const actualBody = fields.editorBody ? normalize(fields.editorBody.innerText || fields.editorBody.textContent || '') : '';
-    const recipientReady = recipientText.toLowerCase().includes(recipientNeedle)
-      || recipientSignals.some(value => value.includes(recipientNeedle));
+    const recipientTokens = recipientSignals
+      .flatMap(value => value.match(/[a-z0-9.!#$%&'*+/=?^_\x60{|}~-]+@[a-z0-9.-]+\.[a-z]{2,}/gi) || [])
+      .map(value => value.toLowerCase());
+    const recipientReady = recipientTokens.includes(recipientNeedle);
     const subjectReady = Boolean(fields.subjectInput && fields.subjectInput.value === subject);
     const bodyReady = actualBody === normalize(expectedBody);
     return JSON.stringify({ ok: recipientReady && subjectReady && bodyReady, recipientReady, subjectReady, bodyReady, evidence: recipientReady && subjectReady && bodyReady ? 'alibaba_webmail_draft_verified' : 'alibaba_webmail_draft_verification_failed' });

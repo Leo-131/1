@@ -2805,7 +2805,7 @@ async function runAlibabaWebmailEmailLead(lead = {}, subject = '', draft = '') {
       await sleep(500);
     }
     let recipientStage = null;
-    if (filled && filled.ok && !filled.recipientValueMatch && !filled.recipientCommittedMatch) {
+    if (filled && filled.ok && !filled.recipientCommittedMatch) {
       const recipientControl = filled.recipientControl || {};
       const recipientX = Number(recipientControl.x || 0) + Number(recipientControl.width || 0) / 2;
       const recipientY = Number(recipientControl.y || 0) + Number(recipientControl.height || 0) / 2;
@@ -2830,10 +2830,40 @@ async function runAlibabaWebmailEmailLead(lead = {}, subject = '', draft = '') {
           clickCount: 1,
         }, 3000);
       }
+      const recipientFocused = await evaluateChromeTabJson(chromeOpen, `(() => {
+        const candidates = Array.from(document.querySelectorAll('input[role="combobox"],input.ant-select-selection-search-input'));
+        const input = candidates.find(element => /to|recipient|email|收件/i.test([
+          element.getAttribute('aria-label'), element.getAttribute('placeholder'), element.closest('[class*="select"]')?.innerText,
+        ].filter(Boolean).join(' '))) || candidates[0] || null;
+        if (!input) return JSON.stringify({ ok: false, evidence: 'recipient_control_not_found_for_physical_fill' });
+        input.focus();
+        return JSON.stringify({ ok: document.activeElement === input, evidence: 'recipient_control_focused_for_physical_fill', role: input.getAttribute('role') || '', type: input.getAttribute('type') || '' });
+      })()`, 5000).catch(() => null);
+      if (recipientFocused && recipientFocused.ok) {
+      await cdpCommand(chromeOpen.webSocketDebuggerUrl, 'Input.dispatchKeyEvent', {
+        type: 'keyDown', key: 'a', code: 'KeyA', modifiers: 2,
+      }, 3000);
+      await cdpCommand(chromeOpen.webSocketDebuggerUrl, 'Input.dispatchKeyEvent', {
+        type: 'keyUp', key: 'a', code: 'KeyA', modifiers: 2,
+      }, 3000);
+      await cdpCommand(chromeOpen.webSocketDebuggerUrl, 'Input.dispatchKeyEvent', {
+        type: 'keyDown', key: 'Backspace', code: 'Backspace',
+      }, 3000);
+      await cdpCommand(chromeOpen.webSocketDebuggerUrl, 'Input.dispatchKeyEvent', {
+        type: 'keyUp', key: 'Backspace', code: 'Backspace',
+      }, 3000);
       await cdpCommand(chromeOpen.webSocketDebuggerUrl, 'Input.insertText', {
         text: target.recipient,
       }, 3000);
+      await sleep(900);
+      await cdpCommand(chromeOpen.webSocketDebuggerUrl, 'Input.dispatchKeyEvent', {
+        type: 'keyDown', key: 'Enter', code: 'Enter',
+      }, 3000);
+      await cdpCommand(chromeOpen.webSocketDebuggerUrl, 'Input.dispatchKeyEvent', {
+        type: 'keyUp', key: 'Enter', code: 'Enter',
+      }, 3000);
       await sleep(500);
+      }
       recipientStage = await evaluateChromeTabJson(chromeOpen, `(() => {
         const active = document.activeElement;
         const rect = active?.getBoundingClientRect?.();
