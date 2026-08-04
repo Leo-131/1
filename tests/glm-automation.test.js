@@ -24,6 +24,8 @@ const glmSource = fs.readFileSync(path.join(__dirname, '..', 'outreach-dashboard
 const templateSource = fs.readFileSync(path.join(__dirname, '..', 'outreach-dashboard', 'api', 'templates.js'), 'utf8');
 const marketProtectionSource = fs.readFileSync(path.join(__dirname, '..', 'outreach-dashboard', 'country-market-protection.js'), 'utf8');
 const alibabaWebmailSource = fs.readFileSync(path.join(__dirname, '..', 'outreach-dashboard', 'alibaba-webmail-automation.js'), 'utf8');
+const outreachPolicySource = fs.readFileSync(path.join(__dirname, '..', 'outreach-dashboard', '.agent', 'policies', 'outreach-policy.md'), 'utf8');
+const optimizedPromptSource = fs.readFileSync(path.join(__dirname, '..', 'outreach-dashboard', 'docs', 'daily-google-lead-outreach-optimized-prompt.md'), 'utf8');
 
 function emptyClassificationContext(now = Date.parse('2026-07-14T08:00:00.000Z')) {
   return {
@@ -1443,6 +1445,10 @@ test('same-day failed customer advances without cross-run replay and closes its 
   assert.match(mainSource, /block\.status === 'same_day_retry_circuit_open'\) return false/);
   assert.match(mainSource, /reuseTab: false/);
   assert.match(mainSource, /await closeAutomationChromeTab\(result && result\.chromeOpen\)/);
+  assert.match(outreachPolicySource, /Once that execution records `failed_open`, retire the entire company/);
+  assert.match(optimizedPromptSource, /Distinguish in-task fallback from cross-run replay/);
+  assert.match(optimizedPromptSource, /A single blocked company must never terminate or monopolize the batch/);
+  assert.match(optimizedPromptSource, /temporary Shanghai-day failure circuit/);
 });
 
 test('email performs a final company-wide permanent dedupe check immediately before sending', () => {
