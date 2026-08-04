@@ -1419,6 +1419,25 @@ test('daily execution duplicate blocking is channel-aware', () => {
   assert.ok(!mainSource.includes("'sent_confirmed', 'failed_open', 'send_unconfirmed', 'skipped'"));
 });
 
+test('email performs a final company-wide permanent dedupe check immediately before sending', () => {
+  const companyStatusesStart = mainSource.indexOf('const COMPANY_HISTORY_BLOCKING_STATUSES');
+  const companyStatusesEnd = mainSource.indexOf(']);', companyStatusesStart) + 3;
+  const companyStatuses = mainSource.slice(companyStatusesStart, companyStatusesEnd);
+  assert.match(companyStatuses, /sent_confirmed/);
+  assert.match(companyStatuses, /submitted_confirmed/);
+  assert.match(companyStatuses, /send_unconfirmed/);
+  const sendGateStart = mainSource.indexOf('async function runVerifiedAlibabaEmailLead');
+  const sendGateEnd = mainSource.indexOf('function canFallbackAfterEmailPreflight', sendGateStart);
+  const sendGate = mainSource.slice(sendGateStart, sendGateEnd);
+  assert.match(sendGate, /const sendTimeResults = readJsonScriptArray/);
+  assert.match(sendGate, /historicalAutomationResultBlocksCompany\(item\)/);
+  assert.match(sendGate, /setsIntersect\(leadCompanyKeys, automationCompanyKeys\(item\)\)/);
+  assert.match(sendGate, /reason: 'previous_customer_development_no_repeat'/);
+  assert.match(sendGate, /mode: 'irreversible_send_company_dedupe_gate'/);
+  assert.match(sendGate, /no_send_performed/);
+  assert.ok(sendGate.indexOf('priorCompanyContact') < sendGate.indexOf('sendAndConfirmAlibabaEmail'));
+});
+
 test('dedicated website and Instagram execution report truthful transport and confirm Enter fallback', () => {
   assert.ok(mainSource.includes("engine: 'dedicated-chrome-cdp-website-contact'"));
   assert.doesNotMatch(mainSource, /engine: 'codex-chrome-extension-website-contact'/);

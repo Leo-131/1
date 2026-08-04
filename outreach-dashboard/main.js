@@ -287,6 +287,7 @@ function setsIntersect(left, right) {
 
 const COMPANY_HISTORY_BLOCKING_STATUSES = new Set([
   'sent_confirmed',
+  'submitted_confirmed',
   'send_unconfirmed',
 ]);
 const DAILY_CONFIRMED_COMPANY_TARGET = 100;
@@ -3090,7 +3091,17 @@ async function runVerifiedAlibabaEmailLead(lead = {}, subject = '', draft = '') 
         : 'Verify an official public buyer, vendor-relations, or business email before email outreach.',
     };
   }
-  const priorUnconfirmed = previousResults.find(item => item
+  // Re-read and enforce the irreversible-action guard at send time. Queue and
+  // checkpoint data can be older than a previous run, so selection-time
+  // dedupe alone is not sufficient. Any confirmed or uncertain customer
+  // interaction permanently blocks every channel for the same company.
+  const sendTimeResults = readJsonScriptArray(path.join(__dirname, 'autonomous-outreach-results.js'), 'AUTONOMOUS_OUTREACH_RESULTS');
+  const leadCompanyKeys = automationCompanyKeys(lead);
+  const priorCompanyContact = sendTimeResults
+    .filter(item => historicalAutomationResultBlocksCompany(item))
+    .filter(item => setsIntersect(leadCompanyKeys, automationCompanyKeys(item)))
+    .sort((left, right) => Date.parse(right.timestamp || '') - Date.parse(left.timestamp || ''))[0] || null;
+  const priorUnconfirmed = sendTimeResults.find(item => item
     && item.status === 'send_unconfirmed'
     && String(item.recipientEmail || '').toLowerCase() === String(domainSafety.recipient || '').toLowerCase()
     && String(item.subject || '') === String(subject || ''));
@@ -3107,6 +3118,27 @@ async function runVerifiedAlibabaEmailLead(lead = {}, subject = '', draft = '') 
           ? 'The prior unconfirmed send is now visible in Sent; no resend occurred.'
           : 'The prior send remains unconfirmed; do not resend automatically.',
         recipientEmail: recovered.recipientEmail || domainSafety.recipient,
+      }),
+    };
+  }
+  if (priorCompanyContact) {
+    return {
+      ok: false,
+      skipped: true,
+      sendStatus: 'skipped',
+      reason: 'previous_customer_development_no_repeat',
+      mode: 'irreversible_send_company_dedupe_gate',
+      evidence: `previous_customer_development_no_repeat;prior_status:${priorCompanyContact.status};prior_timestamp:${priorCompanyContact.timestamp || 'unknown'};no_send_performed`,
+      recipientEmail: domainSafety.recipient,
+      targetUrl: domainSafety.recipient ? `mailto:${domainSafety.recipient}` : '',
+      subject,
+      draft,
+      output: JSON.stringify({
+        verdict: 'skipped',
+        sendStatus: 'skipped',
+        evidence: `previous_customer_development_no_repeat;prior_status:${priorCompanyContact.status};no_send_performed`,
+        nextAction: 'This company has already been contacted. Do not contact it again through email, website forms, or social channels.',
+        recipientEmail: domainSafety.recipient,
       }),
     };
   }
