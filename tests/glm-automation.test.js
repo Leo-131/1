@@ -1467,6 +1467,14 @@ test('a preserved populated email composer stays route-specific and never suppre
   assert.doesNotMatch(discoveryBlocker, /composer_preserved_for_technical_evidence/);
   assert.doesNotMatch(discoveryBlocker, /alibaba_webmail_content_inserted/);
   assert.ok(mainSource.includes('composer_preserved_for_technical_evidence'));
+  const sendGateStart = mainSource.indexOf('async function runVerifiedAlibabaEmailLead');
+  const sendGateEnd = mainSource.indexOf('function canFallbackAfterEmailPreflight', sendGateStart);
+  const sendGate = mainSource.slice(sendGateStart, sendGateEnd);
+  assert.ok(sendGate.includes("reason: 'email_route_preserved_draft_no_reopen'"));
+  assert.ok(sendGate.includes("mode: 'email_route_level_duplicate_gate'"));
+  assert.ok(sendGate.includes('no_email_composer_opened;no_send_performed'));
+  assert.ok(sendGate.indexOf('const preservedRoute') < sendGate.indexOf('const sendTimeResults'));
+  assert.ok(mainSource.includes("'email_route_preserved_draft_no_reopen'"));
 });
 
 test('dedicated website and Instagram execution report truthful transport and confirm Enter fallback', () => {

@@ -3097,6 +3097,29 @@ async function runVerifiedAlibabaEmailLead(lead = {}, subject = '', draft = '') 
         : 'Verify an official public buyer, vendor-relations, or business email before email outreach.',
     };
   }
+  const normalizedRecipient = String(domainSafety.recipient || '').trim().toLowerCase();
+  const preservedRoute = previousResults
+    .filter(item => item && item.status === 'failed_open')
+    .filter(item => /composer_preserved_for_technical_evidence:true/i.test(String(item.evidence || '')))
+    .filter(item => /alibaba_webmail_content_inserted/i.test(String(item.evidence || '')))
+    .filter(item => setsIntersect(automationCompanyKeys(lead), automationCompanyKeys(item)))
+    .filter(item => String(item.recipientEmail || '').trim().toLowerCase() === normalizedRecipient)
+    .filter(item => !subject || !item.subject || String(item.subject) === String(subject))
+    .sort((left, right) => Date.parse(right.timestamp || '') - Date.parse(left.timestamp || ''))[0] || null;
+  if (preservedRoute) {
+    return {
+      ok: false,
+      skipped: true,
+      sendStatus: 'failed_open',
+      reason: 'email_route_preserved_draft_no_reopen',
+      mode: 'email_route_level_duplicate_gate',
+      evidence: `email_route_preserved_draft_no_reopen;no_email_composer_opened;no_send_performed;recipient:${normalizedRecipient}`,
+      recipientEmail: normalizedRecipient,
+      subject,
+      draft,
+      nextAction: 'Do not reopen or refill this email route. Continue with another first-party-verified channel for the same company.',
+    };
+  }
   // Re-read and enforce the irreversible-action guard at send time. Queue and
   // checkpoint data can be older than a previous run, so selection-time
   // dedupe alone is not sufficient. Any confirmed or uncertain customer
@@ -3199,6 +3222,7 @@ function canFallbackAfterEmailPreflight(result = {}) {
     'alibaba_webmail_session_unavailable',
     'alibaba_webmail_login_required',
     'alibaba_webmail_compose_unavailable',
+    'email_route_preserved_draft_no_reopen',
     'email_target_verification_required',
     'public_business_email_requires_verification',
     'verified_public_email_missing',

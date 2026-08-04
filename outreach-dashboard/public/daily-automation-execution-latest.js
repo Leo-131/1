@@ -1,13 +1,13 @@
 window.DAILY_AUTOMATION_EXECUTION_LATEST = {
   "ok": false,
   "browserTransportRequested": "codex-extension-first",
-  "browserTransportUsed": "none",
-  "browserTransportFallbackReason": "",
+  "browserTransportUsed": "cdp",
+  "browserTransportFallbackReason": "extension_bridge_not_available_process_local_cdp",
   "extensionReceiptCount": 0,
-  "executionPhase": "no_browser_execution",
-  "chromeStage": "not_started",
-  "chromeOpened": false,
-  "chromeOpenedCount": 0,
+  "executionPhase": "browser_execution",
+  "chromeStage": "opened",
+  "chromeOpened": true,
+  "chromeOpenedCount": 1,
   "customerDevelopmentPerformed": false,
   "customerMessageSent": false,
   "realDevelopmentCount": 0,
@@ -27,23 +27,42 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "platform": "website_form",
       "targetUrl": "https://www.campervangift.co.uk/become-a-supplier/",
       "ok": false,
-      "sendStatus": "failed_open",
-      "evidence": "verified_email_auto_send_no_manual_review;alibaba_webmail_content_inserted_recipient_control_verified;alibaba_webmail_draft_verification_failed;recipientReady:false;subjectReady:true;bodyReady:true;recipientStageValueMatch:true;recipientStageType:search;recipientStageRole:combobox;recipientStageClass:ant-select-selection-search-input;recipientStageXY:252,13;recipientControl:INPUT,search,combobox,ant-select-selection-search-input hide-clear;recipientControlXY:0,0;recipientControlShadow:false;composer_preserved_for_technical_evidence:true;contact_path_strategy_v2",
-      "timestamp": "2026-08-04T11:03:13.795Z",
-      "chromeOpen": null,
+      "sendStatus": "website_contact_unreachable_skip",
+      "evidence": "unavailable_profile_page: 0800 014 8686\nSign in\nor\nRegister\n Cart\nSearch\nCATEGORIES\nGIFT IDEAS\nSHOP BY TYPE\nCOLLECTIONS\nCUSTOMER SERVICE\nABOUT US\n   \nHOME  错误\n404 Error - Page not found\n\nUh oh, looks like t;public_email_fallback_available:sales@campervangift.co.uk;email_sender_not_configured;email_route_preserved_draft_no_reopen;no_email_composer_opened;no_send_performed;recipient:sales@campervangift.co.uk;website_contact_all_targets_failed:7;contact_path_strategy_v2",
+      "timestamp": "2026-08-04T11:29:52.903Z",
+      "chromeOpen": {
+        "ok": false,
+        "engine": "codex-chrome-cdp",
+        "port": 9224,
+        "targetUrl": "https://www.campervangift.co.uk/help/contact-us",
+        "tabId": "DAFAEA3E9A7131FE9C92E9E421AB3670",
+        "title": "CamperVan Gift Limited - Not Found",
+        "status": "failed_open",
+        "error": "profile_unavailable_or_broken_link",
+        "evidence": "unavailable_profile_page: 0800 014 8686\nSign in\nor\nRegister\n Cart\nSearch\nCATEGORIES\nGIFT IDEAS\nSHOP BY TYPE\nCOLLECTIONS\nCUSTOMER SERVICE\nABOUT US\n   \nHOME  错误\n404 Error - Page not found\n\nUh oh, looks like t"
+      },
       "result": {
         "ok": false,
-        "sendStatus": "failed_open",
-        "reason": "alibaba_webmail_draft_verification_failed",
-        "evidence": "verified_email_auto_send_no_manual_review;alibaba_webmail_content_inserted_recipient_control_verified;alibaba_webmail_draft_verification_failed;recipientReady:false;subjectReady:true;bodyReady:true;recipientStageValueMatch:true;recipientStageType:search;recipientStageRole:combobox;recipientStageClass:ant-select-selection-search-input;recipientStageXY:252,13;recipientControl:INPUT,search,combobox,ant-select-selection-search-input hide-clear;recipientControlXY:0,0;recipientControlShadow:false;composer_preserved_for_technical_evidence:true;contact_path_strategy_v2",
-        "manualApprovalRequired": false,
-        "autoSendAuthorized": true,
-        "engine": "alibaba-enterprise-mail-smtp-imap",
-        "mode": "alibaba_email_delivery_unconfirmed",
-        "targetUrl": "mailto:sales@campervangift.co.uk",
+        "engine": "dedicated-chrome-cdp-website-contact",
+        "browserEngine": "codex-chrome-cdp",
+        "mode": "website_contact_unreachable_skip",
+        "targetUrl": "https://www.campervangift.co.uk/help/contact-us",
+        "chromeOpen": {
+          "ok": false,
+          "engine": "codex-chrome-cdp",
+          "port": 9224,
+          "targetUrl": "https://www.campervangift.co.uk/help/contact-us",
+          "tabId": "DAFAEA3E9A7131FE9C92E9E421AB3670",
+          "title": "CamperVan Gift Limited - Not Found",
+          "status": "failed_open",
+          "error": "profile_unavailable_or_broken_link",
+          "evidence": "unavailable_profile_page: 0800 014 8686\nSign in\nor\nRegister\n Cart\nSearch\nCATEGORIES\nGIFT IDEAS\nSHOP BY TYPE\nCOLLECTIONS\nCUSTOMER SERVICE\nABOUT US\n   \nHOME  错误\n404 Error - Page not found\n\nUh oh, looks like t"
+        },
+        "sendStatus": "website_contact_unreachable_skip",
         "subject": "FLEXTAIL retail partnership | 2026 assortment",
         "draft": "Dear Campervan Gift Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
-        "output": "{\"verdict\":\"failed_open\",\"sendStatus\":\"failed_open\",\"evidence\":\"verified_email_auto_send_no_manual_review;alibaba_webmail_content_inserted_recipient_control_verified;alibaba_webmail_draft_verification_failed;recipientReady:false;subjectReady:true;bodyReady:true;recipientStageValueMatch:true;recipientStageType:search;recipientStageRole:combobox;recipientStageClass:ant-select-selection-search-input;recipientStageXY:252,13;recipientControl:INPUT,search,combobox,ant-select-selection-search-input hide-clear;recipientControlXY:0,0;recipientControlShadow:false;composer_preserved_for_technical_evidence:true;contact_path_strategy_v2\",\"nextAction\":\"Do not resend automatically; inspect the Alibaba Mail delivery and Sent-folder evidence.\",\"recipientEmail\":\"sales@campervangift.co.uk\",\"messageId\":\"\"}"
+        "evidence": "unavailable_profile_page: 0800 014 8686\nSign in\nor\nRegister\n Cart\nSearch\nCATEGORIES\nGIFT IDEAS\nSHOP BY TYPE\nCOLLECTIONS\nCUSTOMER SERVICE\nABOUT US\n   \nHOME  错误\n404 Error - Page not found\n\nUh oh, looks like t;public_email_fallback_available:sales@campervangift.co.uk;email_sender_not_configured;email_route_preserved_draft_no_reopen;no_email_composer_opened;no_send_performed;recipient:sales@campervangift.co.uk;website_contact_all_targets_failed:7;contact_path_strategy_v2",
+        "output": "{\"verdict\":\"website_contact_unreachable_skip\",\"evidence\":\"unavailable_profile_page: 0800 014 8686\\nSign in\\nor\\nRegister\\n Cart\\nSearch\\nCATEGORIES\\nGIFT IDEAS\\nSHOP BY TYPE\\nCOLLECTIONS\\nCUSTOMER SERVICE\\nABOUT US\\n   \\nHOME  错误\\n404 Error - Page not found\\n\\nUh oh, looks like t;public_email_fallback_available:sales@campervangift.co.uk;email_sender_not_configured;email_route_preserved_draft_no_reopen;no_email_composer_opened;no_send_performed;recipient:sales@campervangift.co.uk;website_contact_all_targets_failed:7;contact_path_strategy_v2\",\"nextAction\":\"Email delivery to sales@campervangift.co.uk requires a configured sender; continue with another verified contact path or LinkedIn, Facebook, or Instagram instead of claiming a send.\",\"subject\":\"FLEXTAIL retail partnership | 2026 assortment\",\"draft\":\"Dear Campervan Gift Team,\\n\\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\\n\\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\\n\\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\\n\\nProduct overview: https://www.flextail.com/\\n\\nBest regards,\\nLeo Liu\\nSales & Operations Director\\nLeo@flextailgear.com\",\"sendStatus\":\"website_contact_unreachable_skip\",\"attempts\":[{\"targetUrl\":\"https://www.campervangift.co.uk/become-a-supplier/\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;contact_entry_clicked:CONTACT US\"},{\"targetUrl\":\"https://www.campervangift.co.uk/\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;contact_entry_clicked:CONTACT US\"},{\"targetUrl\":\"https://www.campervangift.co.uk/pages/contact-us\",\"sendStatus\":\"failed_open\",\"evidence\":\"unavailable_profile_page: 0800 014 8686\\nSign in\\nor\\nRegister\\n Cart\\nSearch\\nCATEGORIES\\nGIFT IDEAS\\nSHOP BY TYPE\\nCOLLECTIONS\\nCUSTOMER SERVICE\\nABOUT US\\n   \\nHOME  错误\\n404 Error - Page not found\\n\\nUh oh, looks like t\"},{\"targetUrl\":\"https://www.campervangift.co.uk/pages/contact\",\"sendStatus\":\"failed_open\",\"evidence\":\"unavailable_profile_page: 0800 014 8686\\nSign in\\nor\\nRegister\\n Cart\\nSearch\\nCATEGORIES\\nGIFT IDEAS\\nSHOP BY TYPE\\nCOLLECTIONS\\nCUSTOMER SERVICE\\nABOUT US\\n   \\nHOME  错误\\n404 Error - Page not found\\n\\nUh oh, looks like t\"},{\"targetUrl\":\"https://www.campervangift.co.uk/contact-us\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;contact_entry_clicked:CONTACT US\"},{\"targetUrl\":\"https://www.campervangift.co.uk/contact\",\"sendStatus\":\"failed_open\",\"evidence\":\"unavailable_profile_page: 0800 014 8686\\nSign in\\nor\\nRegister\\n Cart\\nSearch\\nCATEGORIES\\nGIFT IDEAS\\nSHOP BY TYPE\\nCOLLECTIONS\\nCUSTOMER SERVICE\\nABOUT US\\n   \\nHOME  错误\\n404 Error - Page not found\\n\\nUh oh, looks like t\"},{\"targetUrl\":\"https://www.campervangift.co.uk/help/contact-us\",\"sendStatus\":\"failed_open\",\"evidence\":\"unavailable_profile_page: 0800 014 8686\\nSign in\\nor\\nRegister\\n Cart\\nSearch\\nCATEGORIES\\nGIFT IDEAS\\nSHOP BY TYPE\\nCOLLECTIONS\\nCUSTOMER SERVICE\\nABOUT US\\n   \\nHOME  错误\\n404 Error - Page not found\\n\\nUh oh, looks like t\"}]}"
       }
     }
   ],
@@ -55,23 +74,42 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "platform": "website_form",
       "targetUrl": "https://www.campervangift.co.uk/become-a-supplier/",
       "ok": false,
-      "sendStatus": "failed_open",
-      "evidence": "verified_email_auto_send_no_manual_review;alibaba_webmail_content_inserted_recipient_control_verified;alibaba_webmail_draft_verification_failed;recipientReady:false;subjectReady:true;bodyReady:true;recipientStageValueMatch:true;recipientStageType:search;recipientStageRole:combobox;recipientStageClass:ant-select-selection-search-input;recipientStageXY:252,13;recipientControl:INPUT,search,combobox,ant-select-selection-search-input hide-clear;recipientControlXY:0,0;recipientControlShadow:false;composer_preserved_for_technical_evidence:true;contact_path_strategy_v2",
-      "timestamp": "2026-08-04T11:03:13.795Z",
-      "chromeOpen": null,
+      "sendStatus": "website_contact_unreachable_skip",
+      "evidence": "unavailable_profile_page: 0800 014 8686\nSign in\nor\nRegister\n Cart\nSearch\nCATEGORIES\nGIFT IDEAS\nSHOP BY TYPE\nCOLLECTIONS\nCUSTOMER SERVICE\nABOUT US\n   \nHOME  错误\n404 Error - Page not found\n\nUh oh, looks like t;public_email_fallback_available:sales@campervangift.co.uk;email_sender_not_configured;email_route_preserved_draft_no_reopen;no_email_composer_opened;no_send_performed;recipient:sales@campervangift.co.uk;website_contact_all_targets_failed:7;contact_path_strategy_v2",
+      "timestamp": "2026-08-04T11:29:52.903Z",
+      "chromeOpen": {
+        "ok": false,
+        "engine": "codex-chrome-cdp",
+        "port": 9224,
+        "targetUrl": "https://www.campervangift.co.uk/help/contact-us",
+        "tabId": "DAFAEA3E9A7131FE9C92E9E421AB3670",
+        "title": "CamperVan Gift Limited - Not Found",
+        "status": "failed_open",
+        "error": "profile_unavailable_or_broken_link",
+        "evidence": "unavailable_profile_page: 0800 014 8686\nSign in\nor\nRegister\n Cart\nSearch\nCATEGORIES\nGIFT IDEAS\nSHOP BY TYPE\nCOLLECTIONS\nCUSTOMER SERVICE\nABOUT US\n   \nHOME  错误\n404 Error - Page not found\n\nUh oh, looks like t"
+      },
       "result": {
         "ok": false,
-        "sendStatus": "failed_open",
-        "reason": "alibaba_webmail_draft_verification_failed",
-        "evidence": "verified_email_auto_send_no_manual_review;alibaba_webmail_content_inserted_recipient_control_verified;alibaba_webmail_draft_verification_failed;recipientReady:false;subjectReady:true;bodyReady:true;recipientStageValueMatch:true;recipientStageType:search;recipientStageRole:combobox;recipientStageClass:ant-select-selection-search-input;recipientStageXY:252,13;recipientControl:INPUT,search,combobox,ant-select-selection-search-input hide-clear;recipientControlXY:0,0;recipientControlShadow:false;composer_preserved_for_technical_evidence:true;contact_path_strategy_v2",
-        "manualApprovalRequired": false,
-        "autoSendAuthorized": true,
-        "engine": "alibaba-enterprise-mail-smtp-imap",
-        "mode": "alibaba_email_delivery_unconfirmed",
-        "targetUrl": "mailto:sales@campervangift.co.uk",
+        "engine": "dedicated-chrome-cdp-website-contact",
+        "browserEngine": "codex-chrome-cdp",
+        "mode": "website_contact_unreachable_skip",
+        "targetUrl": "https://www.campervangift.co.uk/help/contact-us",
+        "chromeOpen": {
+          "ok": false,
+          "engine": "codex-chrome-cdp",
+          "port": 9224,
+          "targetUrl": "https://www.campervangift.co.uk/help/contact-us",
+          "tabId": "DAFAEA3E9A7131FE9C92E9E421AB3670",
+          "title": "CamperVan Gift Limited - Not Found",
+          "status": "failed_open",
+          "error": "profile_unavailable_or_broken_link",
+          "evidence": "unavailable_profile_page: 0800 014 8686\nSign in\nor\nRegister\n Cart\nSearch\nCATEGORIES\nGIFT IDEAS\nSHOP BY TYPE\nCOLLECTIONS\nCUSTOMER SERVICE\nABOUT US\n   \nHOME  错误\n404 Error - Page not found\n\nUh oh, looks like t"
+        },
+        "sendStatus": "website_contact_unreachable_skip",
         "subject": "FLEXTAIL retail partnership | 2026 assortment",
         "draft": "Dear Campervan Gift Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
-        "output": "{\"verdict\":\"failed_open\",\"sendStatus\":\"failed_open\",\"evidence\":\"verified_email_auto_send_no_manual_review;alibaba_webmail_content_inserted_recipient_control_verified;alibaba_webmail_draft_verification_failed;recipientReady:false;subjectReady:true;bodyReady:true;recipientStageValueMatch:true;recipientStageType:search;recipientStageRole:combobox;recipientStageClass:ant-select-selection-search-input;recipientStageXY:252,13;recipientControl:INPUT,search,combobox,ant-select-selection-search-input hide-clear;recipientControlXY:0,0;recipientControlShadow:false;composer_preserved_for_technical_evidence:true;contact_path_strategy_v2\",\"nextAction\":\"Do not resend automatically; inspect the Alibaba Mail delivery and Sent-folder evidence.\",\"recipientEmail\":\"sales@campervangift.co.uk\",\"messageId\":\"\"}"
+        "evidence": "unavailable_profile_page: 0800 014 8686\nSign in\nor\nRegister\n Cart\nSearch\nCATEGORIES\nGIFT IDEAS\nSHOP BY TYPE\nCOLLECTIONS\nCUSTOMER SERVICE\nABOUT US\n   \nHOME  错误\n404 Error - Page not found\n\nUh oh, looks like t;public_email_fallback_available:sales@campervangift.co.uk;email_sender_not_configured;email_route_preserved_draft_no_reopen;no_email_composer_opened;no_send_performed;recipient:sales@campervangift.co.uk;website_contact_all_targets_failed:7;contact_path_strategy_v2",
+        "output": "{\"verdict\":\"website_contact_unreachable_skip\",\"evidence\":\"unavailable_profile_page: 0800 014 8686\\nSign in\\nor\\nRegister\\n Cart\\nSearch\\nCATEGORIES\\nGIFT IDEAS\\nSHOP BY TYPE\\nCOLLECTIONS\\nCUSTOMER SERVICE\\nABOUT US\\n   \\nHOME  错误\\n404 Error - Page not found\\n\\nUh oh, looks like t;public_email_fallback_available:sales@campervangift.co.uk;email_sender_not_configured;email_route_preserved_draft_no_reopen;no_email_composer_opened;no_send_performed;recipient:sales@campervangift.co.uk;website_contact_all_targets_failed:7;contact_path_strategy_v2\",\"nextAction\":\"Email delivery to sales@campervangift.co.uk requires a configured sender; continue with another verified contact path or LinkedIn, Facebook, or Instagram instead of claiming a send.\",\"subject\":\"FLEXTAIL retail partnership | 2026 assortment\",\"draft\":\"Dear Campervan Gift Team,\\n\\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\\n\\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\\n\\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\\n\\nProduct overview: https://www.flextail.com/\\n\\nBest regards,\\nLeo Liu\\nSales & Operations Director\\nLeo@flextailgear.com\",\"sendStatus\":\"website_contact_unreachable_skip\",\"attempts\":[{\"targetUrl\":\"https://www.campervangift.co.uk/become-a-supplier/\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;contact_entry_clicked:CONTACT US\"},{\"targetUrl\":\"https://www.campervangift.co.uk/\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;contact_entry_clicked:CONTACT US\"},{\"targetUrl\":\"https://www.campervangift.co.uk/pages/contact-us\",\"sendStatus\":\"failed_open\",\"evidence\":\"unavailable_profile_page: 0800 014 8686\\nSign in\\nor\\nRegister\\n Cart\\nSearch\\nCATEGORIES\\nGIFT IDEAS\\nSHOP BY TYPE\\nCOLLECTIONS\\nCUSTOMER SERVICE\\nABOUT US\\n   \\nHOME  错误\\n404 Error - Page not found\\n\\nUh oh, looks like t\"},{\"targetUrl\":\"https://www.campervangift.co.uk/pages/contact\",\"sendStatus\":\"failed_open\",\"evidence\":\"unavailable_profile_page: 0800 014 8686\\nSign in\\nor\\nRegister\\n Cart\\nSearch\\nCATEGORIES\\nGIFT IDEAS\\nSHOP BY TYPE\\nCOLLECTIONS\\nCUSTOMER SERVICE\\nABOUT US\\n   \\nHOME  错误\\n404 Error - Page not found\\n\\nUh oh, looks like t\"},{\"targetUrl\":\"https://www.campervangift.co.uk/contact-us\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;contact_entry_clicked:CONTACT US\"},{\"targetUrl\":\"https://www.campervangift.co.uk/contact\",\"sendStatus\":\"failed_open\",\"evidence\":\"unavailable_profile_page: 0800 014 8686\\nSign in\\nor\\nRegister\\n Cart\\nSearch\\nCATEGORIES\\nGIFT IDEAS\\nSHOP BY TYPE\\nCOLLECTIONS\\nCUSTOMER SERVICE\\nABOUT US\\n   \\nHOME  错误\\n404 Error - Page not found\\n\\nUh oh, looks like t\"},{\"targetUrl\":\"https://www.campervangift.co.uk/help/contact-us\",\"sendStatus\":\"failed_open\",\"evidence\":\"unavailable_profile_page: 0800 014 8686\\nSign in\\nor\\nRegister\\n Cart\\nSearch\\nCATEGORIES\\nGIFT IDEAS\\nSHOP BY TYPE\\nCOLLECTIONS\\nCUSTOMER SERVICE\\nABOUT US\\n   \\nHOME  错误\\n404 Error - Page not found\\n\\nUh oh, looks like t\"}]}"
       }
     }
   ],
@@ -1511,11 +1549,6 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "reason": "linkedin_channel_requires_supported_executor",
       "status": "skipped",
       "count": 2
-    },
-    {
-      "reason": "alibaba_webmail_draft_verification_failed",
-      "status": "failed_open",
-      "count": 1
     }
   ],
   "blockerCounts": {
@@ -1523,8 +1556,7 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     "social_profile_not_first_party_verified": 54,
     "official_website_contact_channel": 36,
     "missing_verified_profile_url": 9,
-    "linkedin_channel_requires_supported_executor": 2,
-    "alibaba_webmail_draft_verification_failed": 1
+    "linkedin_channel_requires_supported_executor": 2
   },
   "queueGoalStatus": {
     "target": 100,
@@ -1559,12 +1591,12 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     "stderr": "",
     "error": "",
     "visibility": {
-      "updatedAt": "2026-08-04T11:03:16.626Z",
+      "updatedAt": "2026-08-04T11:29:54.361Z",
       "source": "main-refreshDailyAutomationArtifacts",
       "runDate": "2026-08-04",
-      "artifactGeneratedAt": "2026-08-04T11:03:14.422Z",
-      "executionGeneratedAt": "2026-08-04T10:24:26.670Z",
-      "githubSyncUpdatedAt": "2026-08-04T10:25:46.348Z",
+      "artifactGeneratedAt": "2026-08-04T11:29:53.154Z",
+      "executionGeneratedAt": "2026-08-04T11:03:17.448Z",
+      "githubSyncUpdatedAt": "2026-08-04T11:03:57.534Z",
       "counts": {
         "dailyQueue": 99,
         "googleDiscovered": 87,
@@ -1633,5 +1665,5 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     ]
   },
   "ledgerReconciliationCount": 1,
-  "completedAt": "2026-08-04T11:03:17.448Z"
+  "completedAt": "2026-08-04T11:29:55.636Z"
 };
