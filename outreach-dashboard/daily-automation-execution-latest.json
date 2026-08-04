@@ -29,14 +29,14 @@
       "ok": false,
       "sendStatus": "failed_open",
       "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;facebook_profile_no_message_button;contact_path_strategy_v2",
-      "timestamp": "2026-08-04T13:38:29.945Z",
+      "timestamp": "2026-08-04T13:41:09.277Z",
       "chromeOpen": {
         "ok": true,
         "engine": "codex-chrome-cdp",
         "port": 9224,
         "targetUrl": "https://www.facebook.com/LDMountainCentre",
-        "tabId": "E3308D29EFA95ACBC8EAB0106E1BDCFF",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/E3308D29EFA95ACBC8EAB0106E1BDCFF",
+        "tabId": "EAE8C18192D9A7636518B2C8006FED53",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/EAE8C18192D9A7636518B2C8006FED53",
         "title": "Facebook"
       },
       "result": {
@@ -50,8 +50,8 @@
           "engine": "codex-chrome-cdp",
           "port": 9224,
           "targetUrl": "https://www.facebook.com/LDMountainCentre",
-          "tabId": "E3308D29EFA95ACBC8EAB0106E1BDCFF",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/E3308D29EFA95ACBC8EAB0106E1BDCFF",
+          "tabId": "EAE8C18192D9A7636518B2C8006FED53",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/EAE8C18192D9A7636518B2C8006FED53",
           "title": "Facebook"
         },
         "sendStatus": "failed_open",
@@ -79,14 +79,14 @@
       "ok": false,
       "sendStatus": "failed_open",
       "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;facebook_profile_no_message_button;contact_path_strategy_v2",
-      "timestamp": "2026-08-04T13:38:29.945Z",
+      "timestamp": "2026-08-04T13:41:09.277Z",
       "chromeOpen": {
         "ok": true,
         "engine": "codex-chrome-cdp",
         "port": 9224,
         "targetUrl": "https://www.facebook.com/LDMountainCentre",
-        "tabId": "E3308D29EFA95ACBC8EAB0106E1BDCFF",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/E3308D29EFA95ACBC8EAB0106E1BDCFF",
+        "tabId": "EAE8C18192D9A7636518B2C8006FED53",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/EAE8C18192D9A7636518B2C8006FED53",
         "title": "Facebook"
       },
       "result": {
@@ -100,8 +100,8 @@
           "engine": "codex-chrome-cdp",
           "port": 9224,
           "targetUrl": "https://www.facebook.com/LDMountainCentre",
-          "tabId": "E3308D29EFA95ACBC8EAB0106E1BDCFF",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/E3308D29EFA95ACBC8EAB0106E1BDCFF",
+          "tabId": "EAE8C18192D9A7636518B2C8006FED53",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/EAE8C18192D9A7636518B2C8006FED53",
           "title": "Facebook"
         },
         "sendStatus": "failed_open",
@@ -1609,12 +1609,12 @@
     "stderr": "",
     "error": "",
     "visibility": {
-      "updatedAt": "2026-08-04T13:38:31.192Z",
+      "updatedAt": "2026-08-04T13:41:10.787Z",
       "source": "main-refreshDailyAutomationArtifacts",
       "runDate": "2026-08-04",
-      "artifactGeneratedAt": "2026-08-04T13:38:30.126Z",
-      "executionGeneratedAt": "2026-08-04T13:35:03.297Z",
-      "githubSyncUpdatedAt": "2026-08-04T13:35:51.581Z",
+      "artifactGeneratedAt": "2026-08-04T13:41:09.543Z",
+      "executionGeneratedAt": "2026-08-04T13:38:31.852Z",
+      "githubSyncUpdatedAt": "2026-08-04T13:39:10.099Z",
       "counts": {
         "dailyQueue": 99,
         "googleDiscovered": 77,
@@ -1683,5 +1683,5 @@
     ]
   },
   "ledgerReconciliationCount": 1,
-  "completedAt": "2026-08-04T13:38:31.852Z"
+  "completedAt": "2026-08-04T13:41:12.168Z"
 }

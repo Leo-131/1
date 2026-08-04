@@ -368,7 +368,8 @@ function blockingAutomationResultFor(item) {
     .filter(result => !(exactSocialHandleMatchesCompany(item) && isFixedIdentityVerifierFailure(result)))
     .filter(result => setsIntersect(exactKeys, automationExactKeys(result))
       || (setsIntersect(companyKeys, automationCompanyKeys(result))
-        && automationPlatformFor(result) === itemPlatform));
+        && (automationPlatformFor(result) === itemPlatform
+          || (itemPlatform === 'website' && /official_social_fallback:/i.test(String(result.evidence || ''))))));
   if (sameDayFailedAttempts.length >= 1) {
     return {
       status: 'same_day_retry_circuit_open',

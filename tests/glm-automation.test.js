@@ -1437,6 +1437,7 @@ test('daily execution duplicate blocking is channel-aware', () => {
 
 test('same-day failed customer advances without cross-run replay and closes its automation tab', () => {
   assert.match(mainSource, /sameDayFailedAttempts\.length >= 1/);
+  assert.match(mainSource, /itemPlatform === 'website' && \/official_social_fallback:/);
   assert.match(mainSource, /block\.status === 'same_day_retry_circuit_open'\) return false/);
   assert.match(mainSource, /reuseTab: false/);
   assert.match(mainSource, /await closeAutomationChromeTab\(result && result\.chromeOpen\)/);
