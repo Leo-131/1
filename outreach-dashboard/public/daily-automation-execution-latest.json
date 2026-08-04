@@ -16,7 +16,7 @@
   "mode": "serial-single-target",
   "batchMode": "parallel-batches",
   "parallelLimit": 1,
-  "limit": 25,
+  "limit": 50,
   "queueDate": "2026-08-04",
   "queueSource": "dailyPotentialPool",
   "executed": [
@@ -29,13 +29,13 @@
       "ok": false,
       "sendStatus": "website_contact_unreachable_skip",
       "evidence": "unavailable_profile_page: 0800 014 8686\nSign in\nor\nRegister\n Cart\nSearch\nCATEGORIES\nGIFT IDEAS\nSHOP BY TYPE\nCOLLECTIONS\nCUSTOMER SERVICE\nABOUT US\n   \nHOME  错误\n404 Error - Page not found\n\nUh oh, looks like t;public_email_fallback_available:sales@campervangift.co.uk;email_sender_not_configured;email_route_preserved_draft_no_reopen;no_email_composer_opened;no_send_performed;recipient:sales@campervangift.co.uk;website_contact_all_targets_failed:7;contact_path_strategy_v2",
-      "timestamp": "2026-08-04T11:29:52.903Z",
+      "timestamp": "2026-08-04T11:57:13.999Z",
       "chromeOpen": {
         "ok": false,
         "engine": "codex-chrome-cdp",
         "port": 9224,
         "targetUrl": "https://www.campervangift.co.uk/help/contact-us",
-        "tabId": "DAFAEA3E9A7131FE9C92E9E421AB3670",
+        "tabId": "A28BC7C8E38BF925D1FD4FC6459BA9CC",
         "title": "CamperVan Gift Limited - Not Found",
         "status": "failed_open",
         "error": "profile_unavailable_or_broken_link",
@@ -52,7 +52,7 @@
           "engine": "codex-chrome-cdp",
           "port": 9224,
           "targetUrl": "https://www.campervangift.co.uk/help/contact-us",
-          "tabId": "DAFAEA3E9A7131FE9C92E9E421AB3670",
+          "tabId": "A28BC7C8E38BF925D1FD4FC6459BA9CC",
           "title": "CamperVan Gift Limited - Not Found",
           "status": "failed_open",
           "error": "profile_unavailable_or_broken_link",
@@ -62,7 +62,7 @@
         "subject": "FLEXTAIL retail partnership | 2026 assortment",
         "draft": "Dear Campervan Gift Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
         "evidence": "unavailable_profile_page: 0800 014 8686\nSign in\nor\nRegister\n Cart\nSearch\nCATEGORIES\nGIFT IDEAS\nSHOP BY TYPE\nCOLLECTIONS\nCUSTOMER SERVICE\nABOUT US\n   \nHOME  错误\n404 Error - Page not found\n\nUh oh, looks like t;public_email_fallback_available:sales@campervangift.co.uk;email_sender_not_configured;email_route_preserved_draft_no_reopen;no_email_composer_opened;no_send_performed;recipient:sales@campervangift.co.uk;website_contact_all_targets_failed:7;contact_path_strategy_v2",
-        "output": "{\"verdict\":\"website_contact_unreachable_skip\",\"evidence\":\"unavailable_profile_page: 0800 014 8686\\nSign in\\nor\\nRegister\\n Cart\\nSearch\\nCATEGORIES\\nGIFT IDEAS\\nSHOP BY TYPE\\nCOLLECTIONS\\nCUSTOMER SERVICE\\nABOUT US\\n   \\nHOME  错误\\n404 Error - Page not found\\n\\nUh oh, looks like t;public_email_fallback_available:sales@campervangift.co.uk;email_sender_not_configured;email_route_preserved_draft_no_reopen;no_email_composer_opened;no_send_performed;recipient:sales@campervangift.co.uk;website_contact_all_targets_failed:7;contact_path_strategy_v2\",\"nextAction\":\"Email delivery to sales@campervangift.co.uk requires a configured sender; continue with another verified contact path or LinkedIn, Facebook, or Instagram instead of claiming a send.\",\"subject\":\"FLEXTAIL retail partnership | 2026 assortment\",\"draft\":\"Dear Campervan Gift Team,\\n\\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\\n\\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\\n\\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\\n\\nProduct overview: https://www.flextail.com/\\n\\nBest regards,\\nLeo Liu\\nSales & Operations Director\\nLeo@flextailgear.com\",\"sendStatus\":\"website_contact_unreachable_skip\",\"attempts\":[{\"targetUrl\":\"https://www.campervangift.co.uk/become-a-supplier/\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;contact_entry_clicked:CONTACT US\"},{\"targetUrl\":\"https://www.campervangift.co.uk/\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;contact_entry_clicked:CONTACT US\"},{\"targetUrl\":\"https://www.campervangift.co.uk/pages/contact-us\",\"sendStatus\":\"failed_open\",\"evidence\":\"unavailable_profile_page: 0800 014 8686\\nSign in\\nor\\nRegister\\n Cart\\nSearch\\nCATEGORIES\\nGIFT IDEAS\\nSHOP BY TYPE\\nCOLLECTIONS\\nCUSTOMER SERVICE\\nABOUT US\\n   \\nHOME  错误\\n404 Error - Page not found\\n\\nUh oh, looks like t\"},{\"targetUrl\":\"https://www.campervangift.co.uk/pages/contact\",\"sendStatus\":\"failed_open\",\"evidence\":\"unavailable_profile_page: 0800 014 8686\\nSign in\\nor\\nRegister\\n Cart\\nSearch\\nCATEGORIES\\nGIFT IDEAS\\nSHOP BY TYPE\\nCOLLECTIONS\\nCUSTOMER SERVICE\\nABOUT US\\n   \\nHOME  错误\\n404 Error - Page not found\\n\\nUh oh, looks like t\"},{\"targetUrl\":\"https://www.campervangift.co.uk/contact-us\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;contact_entry_clicked:CONTACT US\"},{\"targetUrl\":\"https://www.campervangift.co.uk/contact\",\"sendStatus\":\"failed_open\",\"evidence\":\"unavailable_profile_page: 0800 014 8686\\nSign in\\nor\\nRegister\\n Cart\\nSearch\\nCATEGORIES\\nGIFT IDEAS\\nSHOP BY TYPE\\nCOLLECTIONS\\nCUSTOMER SERVICE\\nABOUT US\\n   \\nHOME  错误\\n404 Error - Page not found\\n\\nUh oh, looks like t\"},{\"targetUrl\":\"https://www.campervangift.co.uk/help/contact-us\",\"sendStatus\":\"failed_open\",\"evidence\":\"unavailable_profile_page: 0800 014 8686\\nSign in\\nor\\nRegister\\n Cart\\nSearch\\nCATEGORIES\\nGIFT IDEAS\\nSHOP BY TYPE\\nCOLLECTIONS\\nCUSTOMER SERVICE\\nABOUT US\\n   \\nHOME  错误\\n404 Error - Page not found\\n\\nUh oh, looks like t\"}]}"
+        "output": "{\"verdict\":\"website_contact_unreachable_skip\",\"evidence\":\"unavailable_profile_page: 0800 014 8686\\nSign in\\nor\\nRegister\\n Cart\\nSearch\\nCATEGORIES\\nGIFT IDEAS\\nSHOP BY TYPE\\nCOLLECTIONS\\nCUSTOMER SERVICE\\nABOUT US\\n   \\nHOME  错误\\n404 Error - Page not found\\n\\nUh oh, looks like t;public_email_fallback_available:sales@campervangift.co.uk;email_sender_not_configured;email_route_preserved_draft_no_reopen;no_email_composer_opened;no_send_performed;recipient:sales@campervangift.co.uk;website_contact_all_targets_failed:7;contact_path_strategy_v2\",\"nextAction\":\"Email delivery to sales@campervangift.co.uk requires a configured sender; continue with another verified contact path or LinkedIn, Facebook, or Instagram instead of claiming a send.\",\"subject\":\"FLEXTAIL retail partnership | 2026 assortment\",\"draft\":\"Dear Campervan Gift Team,\\n\\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\\n\\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\\n\\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\\n\\nProduct overview: https://www.flextail.com/\\n\\nBest regards,\\nLeo Liu\\nSales & Operations Director\\nLeo@flextailgear.com\",\"sendStatus\":\"website_contact_unreachable_skip\",\"attempts\":[{\"targetUrl\":\"https://www.campervangift.co.uk/become-a-supplier/\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;contact_entry_clicked:CONTACT US\"},{\"targetUrl\":\"https://www.campervangift.co.uk/\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;contact_entry_clicked:CONTACT US\"},{\"targetUrl\":\"https://www.campervangift.co.uk/pages/contact-us\",\"sendStatus\":\"failed_open\",\"evidence\":\"unavailable_profile_page: 0800 014 8686\\nSign in\\nor\\nRegister\\n Cart\\nSearch\\nCATEGORIES\\nGIFT IDEAS\\nSHOP BY TYPE\\nCOLLECTIONS\\nCUSTOMER SERVICE\\nABOUT US\\n   \\nHOME  错误\\n404 Error - Page not found\\n\\nUh oh, looks like t\"},{\"targetUrl\":\"https://www.campervangift.co.uk/pages/contact\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;contact_entry_clicked:CONTACT US\"},{\"targetUrl\":\"https://www.campervangift.co.uk/contact-us\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;contact_entry_clicked:CONTACT US\"},{\"targetUrl\":\"https://www.campervangift.co.uk/contact\",\"sendStatus\":\"failed_open\",\"evidence\":\"unavailable_profile_page: 0800 014 8686\\nSign in\\nor\\nRegister\\n Cart\\nSearch\\nCATEGORIES\\nGIFT IDEAS\\nSHOP BY TYPE\\nCOLLECTIONS\\nCUSTOMER SERVICE\\nABOUT US\\n   \\nHOME  错误\\n404 Error - Page not found\\n\\nUh oh, looks like t\"},{\"targetUrl\":\"https://www.campervangift.co.uk/help/contact-us\",\"sendStatus\":\"failed_open\",\"evidence\":\"unavailable_profile_page: 0800 014 8686\\nSign in\\nor\\nRegister\\n Cart\\nSearch\\nCATEGORIES\\nGIFT IDEAS\\nSHOP BY TYPE\\nCOLLECTIONS\\nCUSTOMER SERVICE\\nABOUT US\\n   \\nHOME  错误\\n404 Error - Page not found\\n\\nUh oh, looks like t\"}]}"
       }
     }
   ],
@@ -76,13 +76,13 @@
       "ok": false,
       "sendStatus": "website_contact_unreachable_skip",
       "evidence": "unavailable_profile_page: 0800 014 8686\nSign in\nor\nRegister\n Cart\nSearch\nCATEGORIES\nGIFT IDEAS\nSHOP BY TYPE\nCOLLECTIONS\nCUSTOMER SERVICE\nABOUT US\n   \nHOME  错误\n404 Error - Page not found\n\nUh oh, looks like t;public_email_fallback_available:sales@campervangift.co.uk;email_sender_not_configured;email_route_preserved_draft_no_reopen;no_email_composer_opened;no_send_performed;recipient:sales@campervangift.co.uk;website_contact_all_targets_failed:7;contact_path_strategy_v2",
-      "timestamp": "2026-08-04T11:29:52.903Z",
+      "timestamp": "2026-08-04T11:57:13.999Z",
       "chromeOpen": {
         "ok": false,
         "engine": "codex-chrome-cdp",
         "port": 9224,
         "targetUrl": "https://www.campervangift.co.uk/help/contact-us",
-        "tabId": "DAFAEA3E9A7131FE9C92E9E421AB3670",
+        "tabId": "A28BC7C8E38BF925D1FD4FC6459BA9CC",
         "title": "CamperVan Gift Limited - Not Found",
         "status": "failed_open",
         "error": "profile_unavailable_or_broken_link",
@@ -99,7 +99,7 @@
           "engine": "codex-chrome-cdp",
           "port": 9224,
           "targetUrl": "https://www.campervangift.co.uk/help/contact-us",
-          "tabId": "DAFAEA3E9A7131FE9C92E9E421AB3670",
+          "tabId": "A28BC7C8E38BF925D1FD4FC6459BA9CC",
           "title": "CamperVan Gift Limited - Not Found",
           "status": "failed_open",
           "error": "profile_unavailable_or_broken_link",
@@ -109,7 +109,7 @@
         "subject": "FLEXTAIL retail partnership | 2026 assortment",
         "draft": "Dear Campervan Gift Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
         "evidence": "unavailable_profile_page: 0800 014 8686\nSign in\nor\nRegister\n Cart\nSearch\nCATEGORIES\nGIFT IDEAS\nSHOP BY TYPE\nCOLLECTIONS\nCUSTOMER SERVICE\nABOUT US\n   \nHOME  错误\n404 Error - Page not found\n\nUh oh, looks like t;public_email_fallback_available:sales@campervangift.co.uk;email_sender_not_configured;email_route_preserved_draft_no_reopen;no_email_composer_opened;no_send_performed;recipient:sales@campervangift.co.uk;website_contact_all_targets_failed:7;contact_path_strategy_v2",
-        "output": "{\"verdict\":\"website_contact_unreachable_skip\",\"evidence\":\"unavailable_profile_page: 0800 014 8686\\nSign in\\nor\\nRegister\\n Cart\\nSearch\\nCATEGORIES\\nGIFT IDEAS\\nSHOP BY TYPE\\nCOLLECTIONS\\nCUSTOMER SERVICE\\nABOUT US\\n   \\nHOME  错误\\n404 Error - Page not found\\n\\nUh oh, looks like t;public_email_fallback_available:sales@campervangift.co.uk;email_sender_not_configured;email_route_preserved_draft_no_reopen;no_email_composer_opened;no_send_performed;recipient:sales@campervangift.co.uk;website_contact_all_targets_failed:7;contact_path_strategy_v2\",\"nextAction\":\"Email delivery to sales@campervangift.co.uk requires a configured sender; continue with another verified contact path or LinkedIn, Facebook, or Instagram instead of claiming a send.\",\"subject\":\"FLEXTAIL retail partnership | 2026 assortment\",\"draft\":\"Dear Campervan Gift Team,\\n\\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\\n\\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\\n\\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\\n\\nProduct overview: https://www.flextail.com/\\n\\nBest regards,\\nLeo Liu\\nSales & Operations Director\\nLeo@flextailgear.com\",\"sendStatus\":\"website_contact_unreachable_skip\",\"attempts\":[{\"targetUrl\":\"https://www.campervangift.co.uk/become-a-supplier/\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;contact_entry_clicked:CONTACT US\"},{\"targetUrl\":\"https://www.campervangift.co.uk/\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;contact_entry_clicked:CONTACT US\"},{\"targetUrl\":\"https://www.campervangift.co.uk/pages/contact-us\",\"sendStatus\":\"failed_open\",\"evidence\":\"unavailable_profile_page: 0800 014 8686\\nSign in\\nor\\nRegister\\n Cart\\nSearch\\nCATEGORIES\\nGIFT IDEAS\\nSHOP BY TYPE\\nCOLLECTIONS\\nCUSTOMER SERVICE\\nABOUT US\\n   \\nHOME  错误\\n404 Error - Page not found\\n\\nUh oh, looks like t\"},{\"targetUrl\":\"https://www.campervangift.co.uk/pages/contact\",\"sendStatus\":\"failed_open\",\"evidence\":\"unavailable_profile_page: 0800 014 8686\\nSign in\\nor\\nRegister\\n Cart\\nSearch\\nCATEGORIES\\nGIFT IDEAS\\nSHOP BY TYPE\\nCOLLECTIONS\\nCUSTOMER SERVICE\\nABOUT US\\n   \\nHOME  错误\\n404 Error - Page not found\\n\\nUh oh, looks like t\"},{\"targetUrl\":\"https://www.campervangift.co.uk/contact-us\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;contact_entry_clicked:CONTACT US\"},{\"targetUrl\":\"https://www.campervangift.co.uk/contact\",\"sendStatus\":\"failed_open\",\"evidence\":\"unavailable_profile_page: 0800 014 8686\\nSign in\\nor\\nRegister\\n Cart\\nSearch\\nCATEGORIES\\nGIFT IDEAS\\nSHOP BY TYPE\\nCOLLECTIONS\\nCUSTOMER SERVICE\\nABOUT US\\n   \\nHOME  错误\\n404 Error - Page not found\\n\\nUh oh, looks like t\"},{\"targetUrl\":\"https://www.campervangift.co.uk/help/contact-us\",\"sendStatus\":\"failed_open\",\"evidence\":\"unavailable_profile_page: 0800 014 8686\\nSign in\\nor\\nRegister\\n Cart\\nSearch\\nCATEGORIES\\nGIFT IDEAS\\nSHOP BY TYPE\\nCOLLECTIONS\\nCUSTOMER SERVICE\\nABOUT US\\n   \\nHOME  错误\\n404 Error - Page not found\\n\\nUh oh, looks like t\"}]}"
+        "output": "{\"verdict\":\"website_contact_unreachable_skip\",\"evidence\":\"unavailable_profile_page: 0800 014 8686\\nSign in\\nor\\nRegister\\n Cart\\nSearch\\nCATEGORIES\\nGIFT IDEAS\\nSHOP BY TYPE\\nCOLLECTIONS\\nCUSTOMER SERVICE\\nABOUT US\\n   \\nHOME  错误\\n404 Error - Page not found\\n\\nUh oh, looks like t;public_email_fallback_available:sales@campervangift.co.uk;email_sender_not_configured;email_route_preserved_draft_no_reopen;no_email_composer_opened;no_send_performed;recipient:sales@campervangift.co.uk;website_contact_all_targets_failed:7;contact_path_strategy_v2\",\"nextAction\":\"Email delivery to sales@campervangift.co.uk requires a configured sender; continue with another verified contact path or LinkedIn, Facebook, or Instagram instead of claiming a send.\",\"subject\":\"FLEXTAIL retail partnership | 2026 assortment\",\"draft\":\"Dear Campervan Gift Team,\\n\\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\\n\\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\\n\\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\\n\\nProduct overview: https://www.flextail.com/\\n\\nBest regards,\\nLeo Liu\\nSales & Operations Director\\nLeo@flextailgear.com\",\"sendStatus\":\"website_contact_unreachable_skip\",\"attempts\":[{\"targetUrl\":\"https://www.campervangift.co.uk/become-a-supplier/\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;contact_entry_clicked:CONTACT US\"},{\"targetUrl\":\"https://www.campervangift.co.uk/\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;contact_entry_clicked:CONTACT US\"},{\"targetUrl\":\"https://www.campervangift.co.uk/pages/contact-us\",\"sendStatus\":\"failed_open\",\"evidence\":\"unavailable_profile_page: 0800 014 8686\\nSign in\\nor\\nRegister\\n Cart\\nSearch\\nCATEGORIES\\nGIFT IDEAS\\nSHOP BY TYPE\\nCOLLECTIONS\\nCUSTOMER SERVICE\\nABOUT US\\n   \\nHOME  错误\\n404 Error - Page not found\\n\\nUh oh, looks like t\"},{\"targetUrl\":\"https://www.campervangift.co.uk/pages/contact\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;contact_entry_clicked:CONTACT US\"},{\"targetUrl\":\"https://www.campervangift.co.uk/contact-us\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;contact_entry_clicked:CONTACT US\"},{\"targetUrl\":\"https://www.campervangift.co.uk/contact\",\"sendStatus\":\"failed_open\",\"evidence\":\"unavailable_profile_page: 0800 014 8686\\nSign in\\nor\\nRegister\\n Cart\\nSearch\\nCATEGORIES\\nGIFT IDEAS\\nSHOP BY TYPE\\nCOLLECTIONS\\nCUSTOMER SERVICE\\nABOUT US\\n   \\nHOME  错误\\n404 Error - Page not found\\n\\nUh oh, looks like t\"},{\"targetUrl\":\"https://www.campervangift.co.uk/help/contact-us\",\"sendStatus\":\"failed_open\",\"evidence\":\"unavailable_profile_page: 0800 014 8686\\nSign in\\nor\\nRegister\\n Cart\\nSearch\\nCATEGORIES\\nGIFT IDEAS\\nSHOP BY TYPE\\nCOLLECTIONS\\nCUSTOMER SERVICE\\nABOUT US\\n   \\nHOME  错误\\n404 Error - Page not found\\n\\nUh oh, looks like t\"}]}"
       }
     }
   ],
@@ -1591,12 +1591,12 @@
     "stderr": "",
     "error": "",
     "visibility": {
-      "updatedAt": "2026-08-04T11:29:54.361Z",
+      "updatedAt": "2026-08-04T11:57:15.740Z",
       "source": "main-refreshDailyAutomationArtifacts",
       "runDate": "2026-08-04",
-      "artifactGeneratedAt": "2026-08-04T11:29:53.154Z",
-      "executionGeneratedAt": "2026-08-04T11:03:17.448Z",
-      "githubSyncUpdatedAt": "2026-08-04T11:03:57.534Z",
+      "artifactGeneratedAt": "2026-08-04T11:57:14.367Z",
+      "executionGeneratedAt": "2026-08-04T11:29:55.636Z",
+      "githubSyncUpdatedAt": "2026-08-04T11:30:32.733Z",
       "counts": {
         "dailyQueue": 99,
         "googleDiscovered": 87,
@@ -1649,10 +1649,8 @@
     }
   },
   "alibabaSessionProbe": {
-    "ok": true,
-    "evidence": "alibaba_webmail_authenticated_compose_visible",
-    "url": "https://qiye.aliyun.com/alimail/entries/v5.1/mail/sentitems/all",
-    "title": "阿里邮箱"
+    "ok": false,
+    "evidence": "alibaba_webmail_compose_button_missing"
   },
   "bounceReconciliation": {
     "ok": false,
@@ -1665,5 +1663,5 @@
     ]
   },
   "ledgerReconciliationCount": 1,
-  "completedAt": "2026-08-04T11:29:55.636Z"
+  "completedAt": "2026-08-04T11:57:16.671Z"
 }

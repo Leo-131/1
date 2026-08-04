@@ -11742,5 +11742,22 @@ window.AUTONOMOUS_OUTREACH_RESULTS = [
     "messageId": "",
     "sentFolder": "",
     "sentUid": null
+  },
+  {
+    "task_id": "google-customer-campervan-gift-website-contact",
+    "company": "Campervan Gift",
+    "approval_version": 1,
+    "status": "website_contact_unreachable_skip",
+    "agent": "codex-chrome-cdp",
+    "browserTransportUsed": "cdp",
+    "timestamp": "2026-08-04T11:55:40.842Z",
+    "target_url": "https://www.campervangift.co.uk/become-a-supplier/",
+    "evidence": "unavailable_profile_page: 0800 014 8686\nSign in\nor\nRegister\n Cart\nSearch\nCATEGORIES\nGIFT IDEAS\nSHOP BY TYPE\nCOLLECTIONS\nCUSTOMER SERVICE\nABOUT US\n   \nHOME  错误\n404 Error - Page not found\n\nUh oh, looks like t;public_email_fallback_available:sales@campervangift.co.uk;email_sender_not_configured;email_route_preserved_draft_no_reopen;no_email_composer_opened;no_send_performed;recipient:sales@campervangift.co.uk;website_contact_all_targets_failed:7;contact_path_strategy_v2",
+    "draft": "Dear Campervan Gift Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
+    "subject": "FLEXTAIL retail partnership | 2026 assortment",
+    "recipientEmail": "",
+    "messageId": "",
+    "sentFolder": "",
+    "sentUid": null
   }
 ];

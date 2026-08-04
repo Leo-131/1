@@ -3398,6 +3398,45 @@ async function runWebsiteContactLead(lead = {}, options = {}) {
       sendStatus: formPreparation.sendStatus || contactFlow.sendStatus || 'approval_pending',
       evidence: `${contactFlow.evidence};${formPreparation.evidence}`,
     };
+    // A verified website route must not strand the company when the form is
+    // unusable before submission. The inspection is first-party evidence for
+    // any social links it exposed, so continue immediately on that verified
+    // route. Never cross over after an irreversible click or uncertain submit.
+    const websitePreSendFailure = ['approval_pending', 'failed_open', 'skipped', 'website_contact_unreachable_skip']
+      .includes(String(formPreparation.sendStatus || '').toLowerCase());
+    const websiteFailureEvidence = String(formPreparation.evidence || '').toLowerCase();
+    const websiteInteractionUncertain = /send_unconfirmed|submit_unconfirmed|send_physical_click|submit_physical_click|customer_interaction/.test(websiteFailureEvidence);
+    const verifiedSocialFallback = websitePreSendFailure && !websiteInteractionUncertain
+      ? socialFallbackFromInspection(lead, contactFlow.inspection)
+      : null;
+    if (verifiedSocialFallback
+      && verifiedSocialFallback.officialSocialProfileVerified === true
+      && Number(options.fallbackDepth || 0) < 3) {
+      await closeAutomationChromeTab(chromeOpen);
+      const socialResult = await executeLeadAutomation(verifiedSocialFallback, {
+        ...options,
+        ignoreCooldown: true,
+        allowParallel: true,
+        fallbackDepth: Number(options.fallbackDepth || 0) + 1,
+        attemptedTargets: [
+          ...(Array.isArray(options.attemptedTargets) ? options.attemptedTargets : []),
+          String(target.targetUrl || '').toLowerCase(),
+        ],
+      });
+      const socialOutput = parseExecutionOutput(socialResult && socialResult.output);
+      return {
+        ...socialResult,
+        fallbackFrom: target.targetUrl,
+        fallbackPlatform: verifiedSocialFallback.platform,
+        evidence: `${contactFlow.evidence};${formPreparation.evidence};website_presend_social_fallback:${verifiedSocialFallback.platform};${socialOutput.evidence || socialResult.evidence || ''}`,
+        output: JSON.stringify({
+          ...socialOutput,
+          fallbackFrom: target.targetUrl,
+          fallbackPlatform: verifiedSocialFallback.platform,
+          fallbackReason: formPreparation.evidence || formPreparation.sendStatus || 'website_presend_failure',
+        }),
+      };
+    }
     if (formPreparation.sendStatus === 'approval_pending') {
       lastResult = {
         ok: false,

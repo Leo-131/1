@@ -1504,6 +1504,14 @@ test('uninserted social draft does not block same-company website fallback', () 
   assert.match(mainSource, /result\.status !== 'send_unconfirmed'[\s\S]*sendStatusHasCustomerInteraction\(result\.status, result\.evidence\)/);
 });
 
+test('website pre-send failures continue to first-party verified social instead of stranding the company', () => {
+  assert.ok(mainSource.includes('const websitePreSendFailure'));
+  assert.ok(mainSource.includes('const verifiedSocialFallback = websitePreSendFailure && !websiteInteractionUncertain'));
+  assert.ok(mainSource.includes('website_presend_social_fallback'));
+  assert.match(mainSource, /websiteInteractionUncertain = \/send_unconfirmed\|submit_unconfirmed\|send_physical_click\|submit_physical_click\|customer_interaction\//);
+  assert.ok(mainSource.includes('verifiedSocialFallback.officialSocialProfileVerified === true'));
+});
+
 test('daily queue generator blocks same-day repeat development by company', () => {
   assert.ok(dailyRunnerSource.includes('SAME_DAY_DEVELOPMENT_STATUSES'));
   assert.ok(dailyRunnerSource.includes('function companyLeadKeys'));
