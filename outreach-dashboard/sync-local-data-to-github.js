@@ -334,6 +334,7 @@ function syncOnce() {
     'package.json',
     'package-lock.json',
     'docs/plans/2026-07-21-nonzero-daily-execution-design.md',
+    'docs/plans/2026-08-04-autonomous-sales-intelligence-design.md',
   ];
   const publicDailyRun = `public/daily-runs/${latestDate}-daily-automation.json`;
   if (fs.existsSync(path.join(ROOT, publicDailyRun))) {

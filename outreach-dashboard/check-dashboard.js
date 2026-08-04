@@ -15,6 +15,11 @@ if (!html.includes('function openKpiDetailPage(key)')) {
 const preload = fs.readFileSync('preload.js', 'utf8');
 const main = fs.readFileSync('main.js', 'utf8');
 const commandCenter = fs.readFileSync('command-center.js', 'utf8');
+if (!html.includes('outreach-intelligence-latest.js')
+  || !commandCenter.includes('OUTREACH_INTELLIGENCE_LATEST')
+  || !commandCenter.includes('Autonomous Sales Intelligence')) {
+  throw new Error('Autonomous sales intelligence artifact is not visible in the Dashboard');
+}
 if (!preload.includes('runDailyAutomationQueue') || !main.includes("run-daily-automation-queue")) {
   throw new Error('Codex Chrome daily queue bridge is missing');
 }
