@@ -16,7 +16,7 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
   "mode": "serial-single-target",
   "batchMode": "parallel-batches",
   "parallelLimit": 1,
-  "limit": 13,
+  "limit": 25,
   "queueDate": "2026-08-04",
   "queueSource": "dailyPotentialPool",
   "executed": [
@@ -29,7 +29,7 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "ok": false,
       "sendStatus": "failed_open",
       "evidence": "verified_email_auto_send_no_manual_review;alibaba_webmail_content_inserted_recipient_control_verified;alibaba_webmail_draft_verification_failed;recipientReady:false;subjectReady:true;bodyReady:true;recipient_stage_missing;recipientControl:INPUT,search,combobox,ant-select-selection-search-input hide-clear;recipientControlXY:0,0;recipientControlShadow:false;composer_preserved_for_technical_evidence:true;contact_path_strategy_v2",
-      "timestamp": "2026-08-04T04:06:28.990Z",
+      "timestamp": "2026-08-04T05:03:26.577Z",
       "chromeOpen": null,
       "result": {
         "ok": false,
@@ -57,7 +57,7 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "ok": false,
       "sendStatus": "failed_open",
       "evidence": "verified_email_auto_send_no_manual_review;alibaba_webmail_content_inserted_recipient_control_verified;alibaba_webmail_draft_verification_failed;recipientReady:false;subjectReady:true;bodyReady:true;recipient_stage_missing;recipientControl:INPUT,search,combobox,ant-select-selection-search-input hide-clear;recipientControlXY:0,0;recipientControlShadow:false;composer_preserved_for_technical_evidence:true;contact_path_strategy_v2",
-      "timestamp": "2026-08-04T04:06:28.990Z",
+      "timestamp": "2026-08-04T05:03:26.577Z",
       "chromeOpen": null,
       "result": {
         "ok": false,
@@ -83,12 +83,6 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "reason": "official_website_contact_channel"
     },
     {
-      "id": "google-customer-bivouac-outdoor-website-contact",
-      "company": "Bivouac Outdoor",
-      "action": "verify_target",
-      "reason": "homepage_only_contact_path_requires_verification"
-    },
-    {
       "id": "google-customer-wildfire-sports-website-contact",
       "company": "Wildfire Sports",
       "action": "email_priority",
@@ -99,18 +93,6 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "company": "Outdoor Nature",
       "action": "email_priority",
       "reason": "official_website_contact_channel"
-    },
-    {
-      "id": "google-customer-tentworld-nz-facebook",
-      "company": "Tentworld NZ",
-      "action": "develop",
-      "reason": "concrete_google_discovered_major_customer_facebook"
-    },
-    {
-      "id": "google-customer-tentworld-nz-instagram",
-      "company": "Tentworld NZ",
-      "action": "develop",
-      "reason": "concrete_google_discovered_major_customer_instagram"
     },
     {
       "id": "sheet_1779293110195_9myxa520z",
@@ -431,6 +413,12 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "reason": "homepage_only_contact_path_requires_verification"
     },
     {
+      "id": "google-customer-bivouac-outdoor-website-contact",
+      "company": "Bivouac Outdoor",
+      "action": "verify_target",
+      "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
       "id": "google-customer-transa-website-contact",
       "company": "Transa",
       "action": "verify_target",
@@ -509,6 +497,12 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "reason": "concrete_google_discovered_major_customer_facebook"
     },
     {
+      "id": "google-customer-tentworld-nz-facebook",
+      "company": "Tentworld NZ",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_facebook"
+    },
+    {
       "id": "google-customer-mammut-store-facebook",
       "company": "Mammut Store",
       "action": "develop",
@@ -559,6 +553,12 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     {
       "id": "google-customer-the-mountaineer-instagram",
       "company": "The Mountaineer",
+      "action": "develop",
+      "reason": "concrete_google_discovered_major_customer_instagram"
+    },
+    {
+      "id": "google-customer-tentworld-nz-instagram",
+      "company": "Tentworld NZ",
       "action": "develop",
       "reason": "concrete_google_discovered_major_customer_instagram"
     },
@@ -1351,12 +1351,12 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     "stderr": "",
     "error": "",
     "visibility": {
-      "updatedAt": "2026-08-04T04:06:32.266Z",
+      "updatedAt": "2026-08-04T05:03:28.052Z",
       "source": "main-refreshDailyAutomationArtifacts",
       "runDate": "2026-08-04",
-      "artifactGeneratedAt": "2026-08-04T04:06:29.352Z",
-      "executionGeneratedAt": "2026-08-04T03:36:20.753Z",
-      "githubSyncUpdatedAt": "2026-08-04T03:37:03.763Z",
+      "artifactGeneratedAt": "2026-08-04T05:03:26.884Z",
+      "executionGeneratedAt": "2026-08-04T04:06:33.757Z",
+      "githubSyncUpdatedAt": "2026-08-04T04:07:19.689Z",
       "counts": {
         "dailyQueue": 98,
         "googleDiscovered": 74,
@@ -1424,6 +1424,6 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "ALIBABA_SMTP_SECURITY_PASSWORD"
     ]
   },
-  "ledgerReconciliationCount": 2,
-  "completedAt": "2026-08-04T04:06:33.757Z"
+  "ledgerReconciliationCount": 1,
+  "completedAt": "2026-08-04T05:03:29.037Z"
 };
