@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-04T12:06:44.060Z",
+  "generatedAt": "2026-08-04T12:44:37.489Z",
   "date": "2026-08-04",
   "mode": "daily-icp-first-automation-loop",
   "executionLayer": "Dedicated Chrome automation profile only; primary Chrome attachment forbidden",
@@ -50,12 +50,12 @@
   "summary": {
     "totalLeads": 16,
     "highIcp": 16,
-    "readyToDevelop": 28,
+    "readyToDevelop": 23,
     "dueNow": 99,
-    "visibleTodayQueue": 43,
+    "visibleTodayQueue": 41,
     "potentialPool": 100,
     "potentialPoolTarget": 100,
-    "customerTableHighIcp": 13,
+    "customerTableHighIcp": 21,
     "refillNeeded": 0,
     "executableCompanies": 11,
     "executableReserveTarget": 130,
@@ -66,8 +66,8 @@
     "verifiedSocialCompanies": 0,
     "verifiedSocialReserveTarget": 20,
     "verifiedSocialReserveNeeded": 20,
-    "googleDiscovered": 87,
-    "facebookDiscovered": 14,
+    "googleDiscovered": 79,
+    "facebookDiscovered": 11,
     "websiteContactDiscovered": 0,
     "scheduledLater": 0,
     "cooldown": 30,
@@ -85,7 +85,7 @@
       "agency": 8,
       "key_account": 118
     },
-    "qualifiedQueueCount": 88
+    "qualifiedQueueCount": 80
   },
   "visibleTodayQueue": [
     {
@@ -142,7 +142,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/Rome",
-        "localTime": "Tue 14:06",
+        "localTime": "Tue 14:44",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
@@ -226,7 +226,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/Dublin",
-        "localTime": "Tue 13:06",
+        "localTime": "Tue 13:44",
         "window": "outside_work_hours",
         "nextBest": "Europe/Dublin afternoon",
         "weight": 0
@@ -310,7 +310,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Asia/Shanghai",
-        "localTime": "Tue 20:06",
+        "localTime": "Tue 20:44",
         "window": "outside_work_hours",
         "nextBest": "Asia/Shanghai morning",
         "weight": 0
@@ -402,7 +402,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/Paris",
-        "localTime": "Tue 14:06",
+        "localTime": "Tue 14:44",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
@@ -494,7 +494,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/Berlin",
-        "localTime": "Tue 14:06",
+        "localTime": "Tue 14:44",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
@@ -578,7 +578,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/Oslo",
-        "localTime": "Tue 14:06",
+        "localTime": "Tue 14:44",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
@@ -670,7 +670,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/Stockholm",
-        "localTime": "Tue 14:06",
+        "localTime": "Tue 14:44",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
@@ -762,7 +762,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/Stockholm",
-        "localTime": "Tue 14:06",
+        "localTime": "Tue 14:44",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
@@ -854,7 +854,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/London",
-        "localTime": "Tue 13:06",
+        "localTime": "Tue 13:44",
         "window": "outside_work_hours",
         "nextBest": "Europe/London afternoon",
         "weight": 0
@@ -946,7 +946,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/London",
-        "localTime": "Tue 13:06",
+        "localTime": "Tue 13:44",
         "window": "outside_work_hours",
         "nextBest": "Europe/London afternoon",
         "weight": 0
@@ -1038,7 +1038,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/Madrid",
-        "localTime": "Tue 14:06",
+        "localTime": "Tue 14:44",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
@@ -1130,7 +1130,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/Paris",
-        "localTime": "Tue 14:06",
+        "localTime": "Tue 14:44",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
@@ -1222,7 +1222,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/Paris",
-        "localTime": "Tue 14:06",
+        "localTime": "Tue 14:44",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
@@ -1314,7 +1314,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/Zurich",
-        "localTime": "Tue 14:06",
+        "localTime": "Tue 14:44",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
@@ -1406,7 +1406,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/London",
-        "localTime": "Tue 13:06",
+        "localTime": "Tue 13:44",
         "window": "outside_work_hours",
         "nextBest": "Europe/London afternoon",
         "weight": 0
@@ -1498,7 +1498,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Asia/Shanghai",
-        "localTime": "Tue 20:06",
+        "localTime": "Tue 20:44",
         "window": "outside_work_hours",
         "nextBest": "Asia/Shanghai morning",
         "weight": 0
@@ -1590,7 +1590,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/Copenhagen",
-        "localTime": "Tue 14:06",
+        "localTime": "Tue 14:44",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
@@ -1682,7 +1682,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/Copenhagen",
-        "localTime": "Tue 14:06",
+        "localTime": "Tue 14:44",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
@@ -1774,7 +1774,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Asia/Shanghai",
-        "localTime": "Tue 20:06",
+        "localTime": "Tue 20:44",
         "window": "outside_work_hours",
         "nextBest": "Asia/Shanghai morning",
         "weight": 0
@@ -1866,7 +1866,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Asia/Shanghai",
-        "localTime": "Tue 20:06",
+        "localTime": "Tue 20:44",
         "window": "outside_work_hours",
         "nextBest": "Asia/Shanghai morning",
         "weight": 0
@@ -1958,7 +1958,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/London",
-        "localTime": "Tue 13:06",
+        "localTime": "Tue 13:44",
         "window": "outside_work_hours",
         "nextBest": "Europe/London afternoon",
         "weight": 0
@@ -2050,7 +2050,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/Helsinki",
-        "localTime": "Tue 15:06",
+        "localTime": "Tue 15:44",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
@@ -2142,7 +2142,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/Paris",
-        "localTime": "Tue 14:06",
+        "localTime": "Tue 14:44",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
@@ -2234,7 +2234,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Asia/Shanghai",
-        "localTime": "Tue 20:06",
+        "localTime": "Tue 20:44",
         "window": "outside_work_hours",
         "nextBest": "Asia/Shanghai morning",
         "weight": 0
@@ -2326,7 +2326,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/London",
-        "localTime": "Tue 13:06",
+        "localTime": "Tue 13:44",
         "window": "outside_work_hours",
         "nextBest": "Europe/London afternoon",
         "weight": 0
@@ -2418,7 +2418,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/Berlin",
-        "localTime": "Tue 14:06",
+        "localTime": "Tue 14:44",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
@@ -2504,7 +2504,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/Oslo",
-        "localTime": "Tue 14:06",
+        "localTime": "Tue 14:44",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
@@ -2537,98 +2537,6 @@
       "contactChannelScore": 17,
       "dealProbabilityScore": 218,
       "priorityScore": 218,
-      "lastStatus": "",
-      "lastEvidence": "",
-      "lastTouch": "",
-      "visibleOnly": false
-    },
-    {
-      "id": "google-customer-mammut-store-facebook",
-      "name": "Mammut Store",
-      "company": "Mammut Store",
-      "customerType": "key_account",
-      "discoveryMode": "autonomous_refill",
-      "country": "Switzerland",
-      "countryEn": "Switzerland",
-      "fitScore": 84,
-      "fitTier": "A",
-      "marketScore": 4.5,
-      "marketStatus": "exclusive",
-      "agencyState": "exclusive",
-      "agentCompany": "INNPRO Robert Błędowski Sp. z o.o.",
-      "keyword": "verified outdoor, camping and travel retail social refill channel",
-      "role": "Outdoor, camping, travel accessories, ecommerce or category buyer.",
-      "background": "Mammut Store is a qualified outdoor, camping, travel or sport retail prospect with category fit for FLEXTAIL portable outdoor electrics and Vollyc practical 3C products.",
-      "buyerPersona": "Outdoor, camping, travel accessories, ecommerce or category buyer.",
-      "targetMarkets": "",
-      "excludedMarkets": "",
-      "productCategory": "verified outdoor, camping and travel retail social refill channel",
-      "businessModel": "Retail Chain",
-      "productFit": "FLEXTAIL portable pumps, outdoor power, camping lighting and compact camping accessories",
-      "opportunity": "Mammut Store is a qualified outdoor, camping, travel or sport retail prospect with category fit for FLEXTAIL portable outdoor electrics and Vollyc practical 3C products.",
-      "linkedin_url": "",
-      "linkedin": "",
-      "publicEmail": "",
-      "contactEmail": "",
-      "vendorPortal": "https://www.mammut.com/",
-      "contactPhone": "",
-      "contactNote": "",
-      "publicEmailStatus": "",
-      "website": "https://www.mammut.com/",
-      "evidenceUrl": "https://www.google.com/search?q=%22Mammut%20Store%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22Switzerland%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "sourceEvidenceUrl": "verified outdoor retailer official website and public social profile refill",
-      "externalVerificationStatus": "",
-      "query": "https://www.google.com/search?q=%22Mammut%20Store%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22Switzerland%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "source": "google_customer_discovery",
-      "sourceType": "google",
-      "discoveryProvider": "google",
-      "channel": "",
-      "identityStatus": "verified",
-      "officialSocialProfileVerified": false,
-      "socialProfileEvidenceUrl": "",
-      "socialProfileVerifiedAt": "",
-      "profiledAt": "",
-      "partnershipStatus": "",
-      "doNotOutreach": false,
-      "automationStatus": "",
-      "partnerNote": "",
-      "sendStatus": "",
-      "workingTime": {
-        "dueNow": true,
-        "timeZone": "Europe/Zurich",
-        "localTime": "Tue 14:06",
-        "window": "afternoon",
-        "nextBest": "now",
-        "weight": 0.9
-      },
-      "platform": "facebook",
-      "platformUrl": "https://www.facebook.com/mammut",
-      "url": "https://www.facebook.com/mammut",
-      "action": "develop",
-      "reason": "concrete_google_discovered_major_customer_facebook",
-      "alternateChannels": {
-        "linkedin": "",
-        "instagram": "",
-        "facebook": "https://www.facebook.com/mammut",
-        "websiteContact": "https://www.mammut.com/"
-      },
-      "invalidChannels": {
-        "instagram": {
-          "url": "https://www.instagram.com/mammut_swiss1862/",
-          "status": "identity_mismatch",
-          "evidence": "Instagram handle mammut_swiss1862 does not match company Mammut Store; do not use this account for outreach."
-        }
-      },
-      "facebookStatus": "verified_official_page_candidate",
-      "identitySource": "official Facebook page candidate + official website + Google background query",
-      "channelPriority": 2,
-      "discoveredAt": "2026-07-29T09:22:31.075Z",
-      "taskId": "google-customer-mammut-store-facebook",
-      "targetRegion": "europe",
-      "targetRegionScore": 45,
-      "contactChannelScore": 17,
-      "dealProbabilityScore": 140,
-      "priorityScore": 140,
       "lastStatus": "",
       "lastEvidence": "",
       "lastTouch": "",
@@ -2688,7 +2596,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Asia/Shanghai",
-        "localTime": "Tue 20:06",
+        "localTime": "Tue 20:44",
         "window": "outside_work_hours",
         "nextBest": "Asia/Shanghai morning",
         "weight": 0
@@ -2780,7 +2688,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/Dublin",
-        "localTime": "Tue 13:06",
+        "localTime": "Tue 13:44",
         "window": "outside_work_hours",
         "nextBest": "Europe/Dublin afternoon",
         "weight": 0
@@ -2866,7 +2774,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/London",
-        "localTime": "Tue 13:06",
+        "localTime": "Tue 13:44",
         "window": "outside_work_hours",
         "nextBest": "Europe/London afternoon",
         "weight": 0
@@ -2952,7 +2860,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/London",
-        "localTime": "Tue 13:06",
+        "localTime": "Tue 13:44",
         "window": "outside_work_hours",
         "nextBest": "Europe/London afternoon",
         "weight": 0
@@ -3038,7 +2946,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/London",
-        "localTime": "Tue 13:06",
+        "localTime": "Tue 13:44",
         "window": "outside_work_hours",
         "nextBest": "Europe/London afternoon",
         "weight": 0
@@ -3130,7 +3038,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Australia/Sydney",
-        "localTime": "Tue 22:06",
+        "localTime": "Tue 22:44",
         "window": "outside_work_hours",
         "nextBest": "Australia/Sydney morning",
         "weight": 0
@@ -3222,7 +3130,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Australia/Sydney",
-        "localTime": "Tue 22:06",
+        "localTime": "Tue 22:44",
         "window": "outside_work_hours",
         "nextBest": "Australia/Sydney morning",
         "weight": 0
@@ -3314,7 +3222,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Pacific/Auckland",
-        "localTime": "Wed 00:06",
+        "localTime": "Wed 00:44",
         "window": "outside_work_hours",
         "nextBest": "Pacific/Auckland morning",
         "weight": 0
@@ -3406,7 +3314,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Australia/Sydney",
-        "localTime": "Tue 22:06",
+        "localTime": "Tue 22:44",
         "window": "outside_work_hours",
         "nextBest": "Australia/Sydney morning",
         "weight": 0
@@ -3498,7 +3406,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Pacific/Auckland",
-        "localTime": "Wed 00:06",
+        "localTime": "Wed 00:44",
         "window": "outside_work_hours",
         "nextBest": "Pacific/Auckland morning",
         "weight": 0
@@ -3584,7 +3492,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Tue 08:06",
+        "localTime": "Tue 08:44",
         "window": "outside_work_hours",
         "nextBest": "America/Toronto morning",
         "weight": 0
@@ -3676,7 +3584,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Tue 08:06",
+        "localTime": "Tue 08:44",
         "window": "outside_work_hours",
         "nextBest": "America/Toronto morning",
         "weight": 0
@@ -3768,7 +3676,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Tue 08:06",
+        "localTime": "Tue 08:44",
         "window": "outside_work_hours",
         "nextBest": "America/Toronto morning",
         "weight": 0
@@ -3801,92 +3709,6 @@
       "contactChannelScore": 13,
       "dealProbabilityScore": 202,
       "priorityScore": 202,
-      "lastStatus": "",
-      "lastEvidence": "",
-      "lastTouch": "",
-      "visibleOnly": false
-    },
-    {
-      "id": "google-customer-72hours-facebook",
-      "name": "72hours",
-      "company": "72hours",
-      "customerType": "key_account",
-      "discoveryMode": "autonomous_refill",
-      "country": "Canada",
-      "countryEn": "Canada",
-      "fitScore": 84,
-      "fitTier": "A",
-      "marketScore": 4.5,
-      "marketStatus": "open",
-      "agencyState": "open",
-      "agentCompany": "",
-      "keyword": "verified outdoor, camping and travel retail social refill channel",
-      "role": "Outdoor, camping, travel accessories, ecommerce or category buyer.",
-      "background": "72hours is a qualified outdoor, camping, travel or sport retail prospect with category fit for FLEXTAIL portable outdoor electrics and Vollyc practical 3C products.",
-      "buyerPersona": "Outdoor, camping, travel accessories, ecommerce or category buyer.",
-      "targetMarkets": "",
-      "excludedMarkets": "",
-      "productCategory": "verified outdoor, camping and travel retail social refill channel",
-      "businessModel": "Retail Chain",
-      "productFit": "FLEXTAIL portable pumps, outdoor power, camping lighting and compact camping accessories",
-      "opportunity": "72hours is a qualified outdoor, camping, travel or sport retail prospect with category fit for FLEXTAIL portable outdoor electrics and Vollyc practical 3C products.",
-      "linkedin_url": "",
-      "linkedin": "",
-      "publicEmail": "",
-      "contactEmail": "",
-      "vendorPortal": "https://72hours.ca/",
-      "contactPhone": "",
-      "contactNote": "",
-      "publicEmailStatus": "",
-      "website": "https://72hours.ca/",
-      "evidenceUrl": "https://www.google.com/search?q=%2272hours%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22Canada%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "sourceEvidenceUrl": "verified outdoor retailer official website and public social profile refill",
-      "externalVerificationStatus": "",
-      "query": "https://www.google.com/search?q=%2272hours%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22Canada%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "source": "google_customer_discovery",
-      "sourceType": "google",
-      "discoveryProvider": "google",
-      "channel": "",
-      "identityStatus": "verified",
-      "officialSocialProfileVerified": false,
-      "socialProfileEvidenceUrl": "",
-      "socialProfileVerifiedAt": "",
-      "profiledAt": "",
-      "partnershipStatus": "",
-      "doNotOutreach": false,
-      "automationStatus": "",
-      "partnerNote": "",
-      "sendStatus": "",
-      "workingTime": {
-        "dueNow": false,
-        "timeZone": "America/Toronto",
-        "localTime": "Tue 08:06",
-        "window": "outside_work_hours",
-        "nextBest": "America/Toronto morning",
-        "weight": 0
-      },
-      "platform": "facebook",
-      "platformUrl": "https://www.facebook.com/72hours.ca",
-      "url": "https://www.facebook.com/72hours.ca",
-      "action": "develop",
-      "reason": "concrete_google_discovered_major_customer_facebook",
-      "alternateChannels": {
-        "linkedin": "",
-        "instagram": "https://www.instagram.com/72hours.ca/",
-        "facebook": "https://www.facebook.com/72hours.ca",
-        "websiteContact": "https://72hours.ca/"
-      },
-      "invalidChannels": {},
-      "facebookStatus": "verified_official_page_candidate",
-      "identitySource": "official Facebook page candidate + official website + Google background query",
-      "channelPriority": 2,
-      "discoveredAt": "2026-07-16T05:03:53.170Z",
-      "taskId": "google-customer-72hours-facebook",
-      "targetRegion": "americas",
-      "targetRegionScore": 30,
-      "contactChannelScore": 17,
-      "dealProbabilityScore": 203,
-      "priorityScore": 203,
       "lastStatus": "",
       "lastEvidence": "",
       "lastTouch": "",
@@ -3946,7 +3768,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Tue 08:06",
+        "localTime": "Tue 08:44",
         "window": "outside_work_hours",
         "nextBest": "America/Toronto morning",
         "weight": 0
@@ -4034,7 +3856,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/4 19:59:43",
+        "localTime": "2026/8/4 20:37:12",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -4132,7 +3954,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/4 19:59:43",
+        "localTime": "2026/8/4 20:37:12",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -4230,7 +4052,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/4 19:59:43",
+        "localTime": "2026/8/4 20:37:12",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -4328,7 +4150,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/4 19:59:43",
+        "localTime": "2026/8/4 20:37:12",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -4426,7 +4248,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/4 19:59:43",
+        "localTime": "2026/8/4 20:37:12",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -4524,7 +4346,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/4 19:59:43",
+        "localTime": "2026/8/4 20:37:12",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -4622,7 +4444,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/4 19:59:43",
+        "localTime": "2026/8/4 20:37:12",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -4720,7 +4542,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/4 19:59:43",
+        "localTime": "2026/8/4 20:37:12",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -4818,7 +4640,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/4 19:59:43",
+        "localTime": "2026/8/4 20:37:12",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -4916,7 +4738,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/4 19:59:43",
+        "localTime": "2026/8/4 20:37:12",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -5014,7 +4836,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/4 19:59:43",
+        "localTime": "2026/8/4 20:37:12",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -5112,7 +4934,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/4 19:59:43",
+        "localTime": "2026/8/4 20:37:12",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -5210,7 +5032,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/4 19:59:43",
+        "localTime": "2026/8/4 20:37:12",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -5308,7 +5130,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/4 19:59:43",
+        "localTime": "2026/8/4 20:37:12",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -5406,7 +5228,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/4 19:59:43",
+        "localTime": "2026/8/4 20:37:12",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -5504,7 +5326,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/4 19:59:43",
+        "localTime": "2026/8/4 20:37:12",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -5602,7 +5424,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/4 19:59:43",
+        "localTime": "2026/8/4 20:37:12",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -5700,7 +5522,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/4 19:59:43",
+        "localTime": "2026/8/4 20:37:12",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -5798,7 +5620,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/4 19:59:43",
+        "localTime": "2026/8/4 20:37:12",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -5896,7 +5718,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/4 19:59:43",
+        "localTime": "2026/8/4 20:37:12",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -5994,7 +5816,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/4 19:59:43",
+        "localTime": "2026/8/4 20:37:12",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -6098,7 +5920,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/4 19:59:43",
+        "localTime": "2026/8/4 20:37:12",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -6196,7 +6018,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/4 19:59:43",
+        "localTime": "2026/8/4 20:37:12",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -6294,7 +6116,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/4 19:59:43",
+        "localTime": "2026/8/4 20:37:12",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -6392,7 +6214,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/4 19:59:43",
+        "localTime": "2026/8/4 20:37:12",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -6490,7 +6312,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/4 19:59:43",
+        "localTime": "2026/8/4 20:37:12",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -6588,7 +6410,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/4 19:59:43",
+        "localTime": "2026/8/4 20:37:12",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -6686,7 +6508,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/4 19:59:43",
+        "localTime": "2026/8/4 20:37:12",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -6784,7 +6606,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/4 19:59:43",
+        "localTime": "2026/8/4 20:37:12",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -6882,7 +6704,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/4 19:59:43",
+        "localTime": "2026/8/4 20:37:12",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -6980,7 +6802,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/4 19:59:43",
+        "localTime": "2026/8/4 20:37:12",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -7078,7 +6900,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/4 19:59:43",
+        "localTime": "2026/8/4 20:37:12",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -7176,7 +6998,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/4 19:59:43",
+        "localTime": "2026/8/4 20:37:12",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -7274,7 +7096,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/4 19:59:43",
+        "localTime": "2026/8/4 20:37:12",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -7372,7 +7194,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/4 19:59:43",
+        "localTime": "2026/8/4 20:37:12",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -7470,7 +7292,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/4 19:59:43",
+        "localTime": "2026/8/4 20:37:12",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -7511,104 +7333,6 @@
       "contactChannelScore": 13,
       "dealProbabilityScore": 204,
       "priorityScore": 217,
-      "potentialSource": "google_linkedin_social_refill",
-      "nextAction": "background_check_then_verify_channel"
-    },
-    {
-      "id": "google-customer-72hours-website-contact",
-      "name": "72hours",
-      "company": "72hours",
-      "customerType": "key_account",
-      "discoveryMode": "autonomous_refill",
-      "country": "Canada",
-      "countryEn": "Canada",
-      "fitScore": 84,
-      "fitTier": "A",
-      "marketScore": 4.5,
-      "marketStatus": "open",
-      "agencyState": "open",
-      "agentCompany": "",
-      "keyword": "verified outdoor, camping and travel retail social refill channel",
-      "role": "Outdoor, camping, travel accessories, ecommerce or category buyer.",
-      "background": "72hours is a qualified outdoor, camping, travel or sport retail prospect with category fit for FLEXTAIL portable outdoor electrics and Vollyc practical 3C products.",
-      "buyerPersona": "Outdoor, camping, travel accessories, ecommerce or category buyer.",
-      "targetMarkets": "",
-      "excludedMarkets": "",
-      "productCategory": "verified outdoor, camping and travel retail social refill channel",
-      "businessModel": "Retail Chain",
-      "productFit": "FLEXTAIL portable pumps, outdoor power, camping lighting and compact camping accessories",
-      "opportunity": "72hours is a qualified outdoor, camping, travel or sport retail prospect with category fit for FLEXTAIL portable outdoor electrics and Vollyc practical 3C products.",
-      "linkedin_url": "",
-      "linkedin": "",
-      "publicEmail": "",
-      "contactEmail": "",
-      "vendorPortal": "https://72hours.ca/",
-      "contactPhone": "",
-      "contactNote": "",
-      "publicEmailStatus": "",
-      "website": "https://72hours.ca/",
-      "evidenceUrl": "https://www.google.com/search?q=%2272hours%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22Canada%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "sourceEvidenceUrl": "verified outdoor retailer official website and public social profile refill",
-      "externalVerificationStatus": "",
-      "query": "https://www.google.com/search?q=%2272hours%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22Canada%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "source": "google_customer_discovery",
-      "sourceType": "google",
-      "discoveryProvider": "google",
-      "channel": "",
-      "identityStatus": "verified",
-      "officialSocialProfileVerified": false,
-      "socialProfileEvidenceUrl": "",
-      "socialProfileVerifiedAt": "",
-      "profiledAt": "",
-      "partnershipStatus": "",
-      "doNotOutreach": false,
-      "automationStatus": "",
-      "partnerNote": "",
-      "sendStatus": "",
-      "workingTime": {
-        "dueNow": true,
-        "timeZone": "local-market",
-        "localTime": "2026/8/4 19:59:43",
-        "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
-      },
-      "platform": "website_form",
-      "channelType": "website_form",
-      "platformUrl": "https://72hours.ca/",
-      "url": "https://72hours.ca/",
-      "contactUrl": "https://72hours.ca/",
-      "contactSearchUrl": "https://www.google.com/search?q=site%3A72hours.ca%20%2272hours%22%20contact%20buyer%20wholesale%20email%20vendor",
-      "emailFrom": "leo@flextailgear.com",
-      "websiteContactSubject": "FLEXTAIL retail partnership | 2026 assortment",
-      "websiteContactMessage": "Dear 72hours Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
-      "websiteContactFlow": "open_official_contact_us_fill_attach_auto_submit",
-      "action": "verify_target",
-      "reason": "homepage_only_contact_path_requires_verification",
-      "alternateChannels": {
-        "linkedin": "",
-        "instagram": "https://www.instagram.com/72hours.ca/",
-        "facebook": "https://www.facebook.com/72hours.ca",
-        "websiteContact": "https://72hours.ca/"
-      },
-      "invalidChannels": {},
-      "identitySource": "official homepage found; exact buyer/contact path still requires verification",
-      "channelPriority": 3,
-      "discoveredAt": "2026-07-16T05:03:53.170Z",
-      "linkedinUrl": "",
-      "linkedinSearchUrl": "https://www.linkedin.com/search/results/all/?keywords=72hours%20buyer%20outdoor%20LinkedIn",
-      "googleSearchUrl": "https://www.google.com/search?q=site%3A72hours.ca%20%2272hours%22%20contact%20buyer%20wholesale%20email%20vendor",
-      "dataSources": [
-        "google_linkedin_social_refill"
-      ],
-      "taskId": "google-customer-72hours-website-contact",
-      "lastStatus": "",
-      "lastEvidence": "",
-      "lastTouch": "",
-      "previouslyContacted": false,
-      "targetRegion": "americas",
-      "targetRegionScore": 30,
-      "contactChannelScore": 17,
-      "dealProbabilityScore": 203,
-      "priorityScore": 220,
       "potentialSource": "google_linkedin_social_refill",
       "nextAction": "background_check_then_verify_channel"
     },
@@ -7666,7 +7390,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/4 19:59:43",
+        "localTime": "2026/8/4 20:37:12",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -7764,7 +7488,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/4 19:59:43",
+        "localTime": "2026/8/4 20:37:12",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -7802,104 +7526,6 @@
         "google_linkedin_social_refill"
       ],
       "taskId": "google-customer-eastern-mountain-sports-website-contact",
-      "lastStatus": "",
-      "lastEvidence": "",
-      "lastTouch": "",
-      "previouslyContacted": false,
-      "targetRegion": "americas",
-      "targetRegionScore": 30,
-      "contactChannelScore": 17,
-      "dealProbabilityScore": 203,
-      "priorityScore": 220,
-      "potentialSource": "google_linkedin_social_refill",
-      "nextAction": "background_check_then_verify_channel"
-    },
-    {
-      "id": "google-customer-jax-outdoor-gear-website-contact",
-      "name": "Jax Outdoor Gear",
-      "company": "Jax Outdoor Gear",
-      "customerType": "key_account",
-      "discoveryMode": "autonomous_refill",
-      "country": "United States",
-      "countryEn": "United States",
-      "fitScore": 84,
-      "fitTier": "A",
-      "marketScore": 4.5,
-      "marketStatus": "open",
-      "agencyState": "open",
-      "agentCompany": "",
-      "keyword": "verified outdoor, camping and travel retail social refill channel",
-      "role": "Outdoor, camping, travel accessories, ecommerce or category buyer.",
-      "background": "Jax Outdoor Gear is a qualified outdoor, camping, travel or sport retail prospect with category fit for FLEXTAIL portable outdoor electrics and Vollyc practical 3C products.",
-      "buyerPersona": "Outdoor, camping, travel accessories, ecommerce or category buyer.",
-      "targetMarkets": "",
-      "excludedMarkets": "",
-      "productCategory": "verified outdoor, camping and travel retail social refill channel",
-      "businessModel": "Retail Chain",
-      "productFit": "FLEXTAIL portable pumps, outdoor power, camping lighting and compact camping accessories",
-      "opportunity": "Jax Outdoor Gear is a qualified outdoor, camping, travel or sport retail prospect with category fit for FLEXTAIL portable outdoor electrics and Vollyc practical 3C products.",
-      "linkedin_url": "",
-      "linkedin": "",
-      "publicEmail": "",
-      "contactEmail": "",
-      "vendorPortal": "https://www.jaxgoods.com/",
-      "contactPhone": "",
-      "contactNote": "",
-      "publicEmailStatus": "",
-      "website": "https://www.jaxgoods.com/",
-      "evidenceUrl": "https://www.google.com/search?q=%22Jax%20Outdoor%20Gear%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "sourceEvidenceUrl": "verified outdoor retailer official website and public social profile refill",
-      "externalVerificationStatus": "",
-      "query": "https://www.google.com/search?q=%22Jax%20Outdoor%20Gear%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "source": "google_customer_discovery",
-      "sourceType": "google",
-      "discoveryProvider": "google",
-      "channel": "",
-      "identityStatus": "verified",
-      "officialSocialProfileVerified": false,
-      "socialProfileEvidenceUrl": "",
-      "socialProfileVerifiedAt": "",
-      "profiledAt": "",
-      "partnershipStatus": "",
-      "doNotOutreach": false,
-      "automationStatus": "",
-      "partnerNote": "",
-      "sendStatus": "",
-      "workingTime": {
-        "dueNow": true,
-        "timeZone": "local-market",
-        "localTime": "2026/8/4 19:59:43",
-        "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
-      },
-      "platform": "website_form",
-      "channelType": "website_form",
-      "platformUrl": "https://www.jaxgoods.com/",
-      "url": "https://www.jaxgoods.com/",
-      "contactUrl": "https://www.jaxgoods.com/",
-      "contactSearchUrl": "https://www.google.com/search?q=site%3Awww.jaxgoods.com%20%22Jax%20Outdoor%20Gear%22%20contact%20buyer%20wholesale%20email%20vendor",
-      "emailFrom": "leo@flextailgear.com",
-      "websiteContactSubject": "FLEXTAIL retail partnership | 2026 assortment",
-      "websiteContactMessage": "Dear Jax Outdoor Gear Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
-      "websiteContactFlow": "open_official_contact_us_fill_attach_auto_submit",
-      "action": "verify_target",
-      "reason": "homepage_only_contact_path_requires_verification",
-      "alternateChannels": {
-        "linkedin": "",
-        "instagram": "https://www.instagram.com/jaxoutdoor/",
-        "facebook": "https://www.facebook.com/jaxoutdoorgear",
-        "websiteContact": "https://www.jaxgoods.com/"
-      },
-      "invalidChannels": {},
-      "identitySource": "official homepage found; exact buyer/contact path still requires verification",
-      "channelPriority": 3,
-      "discoveredAt": "2026-07-16T05:03:53.170Z",
-      "linkedinUrl": "",
-      "linkedinSearchUrl": "https://www.linkedin.com/search/results/all/?keywords=Jax%20Outdoor%20Gear%20buyer%20outdoor%20LinkedIn",
-      "googleSearchUrl": "https://www.google.com/search?q=site%3Awww.jaxgoods.com%20%22Jax%20Outdoor%20Gear%22%20contact%20buyer%20wholesale%20email%20vendor",
-      "dataSources": [
-        "google_linkedin_social_refill"
-      ],
-      "taskId": "google-customer-jax-outdoor-gear-website-contact",
       "lastStatus": "",
       "lastEvidence": "",
       "lastTouch": "",
@@ -7966,7 +7592,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/4 19:59:43",
+        "localTime": "2026/8/4 20:37:12",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -8070,7 +7696,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/4 19:59:43",
+        "localTime": "2026/8/4 20:37:12",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -8168,7 +7794,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/4 19:59:43",
+        "localTime": "2026/8/4 20:37:12",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -8266,7 +7892,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/4 19:59:43",
+        "localTime": "2026/8/4 20:37:12",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -8364,7 +7990,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/4 19:59:43",
+        "localTime": "2026/8/4 20:37:12",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -8462,7 +8088,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/4 19:59:43",
+        "localTime": "2026/8/4 20:37:12",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -8560,7 +8186,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/4 19:59:43",
+        "localTime": "2026/8/4 20:37:12",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -8658,7 +8284,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/4 19:59:43",
+        "localTime": "2026/8/4 20:37:12",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -8756,7 +8382,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/4 19:59:43",
+        "localTime": "2026/8/4 20:37:12",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -8854,7 +8480,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/4 19:59:43",
+        "localTime": "2026/8/4 20:37:12",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -8952,7 +8578,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/4 19:59:43",
+        "localTime": "2026/8/4 20:37:12",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -9050,7 +8676,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/4 19:59:43",
+        "localTime": "2026/8/4 20:37:12",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -9148,7 +8774,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/4 19:59:43",
+        "localTime": "2026/8/4 20:37:12",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -9246,7 +8872,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/4 19:59:43",
+        "localTime": "2026/8/4 20:37:12",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -9344,7 +8970,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/4 19:59:43",
+        "localTime": "2026/8/4 20:37:12",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -9442,7 +9068,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/4 19:59:43",
+        "localTime": "2026/8/4 20:37:12",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -9540,7 +9166,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/4 19:59:43",
+        "localTime": "2026/8/4 20:37:12",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -9638,7 +9264,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/4 19:59:43",
+        "localTime": "2026/8/4 20:37:12",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -9679,110 +9305,6 @@
       "contactChannelScore": 13,
       "dealProbabilityScore": 141,
       "priorityScore": 154,
-      "potentialSource": "google_linkedin_social_refill",
-      "nextAction": "background_check_then_verify_channel"
-    },
-    {
-      "id": "google-customer-mammut-store-website-contact",
-      "name": "Mammut Store",
-      "company": "Mammut Store",
-      "customerType": "key_account",
-      "discoveryMode": "autonomous_refill",
-      "country": "Switzerland",
-      "countryEn": "Switzerland",
-      "fitScore": 84,
-      "fitTier": "A",
-      "marketScore": 4.5,
-      "marketStatus": "exclusive",
-      "agencyState": "exclusive",
-      "agentCompany": "INNPRO Robert Błędowski Sp. z o.o.",
-      "keyword": "verified outdoor, camping and travel retail social refill channel",
-      "role": "Outdoor, camping, travel accessories, ecommerce or category buyer.",
-      "background": "Mammut Store is a qualified outdoor, camping, travel or sport retail prospect with category fit for FLEXTAIL portable outdoor electrics and Vollyc practical 3C products.",
-      "buyerPersona": "Outdoor, camping, travel accessories, ecommerce or category buyer.",
-      "targetMarkets": "",
-      "excludedMarkets": "",
-      "productCategory": "verified outdoor, camping and travel retail social refill channel",
-      "businessModel": "Retail Chain",
-      "productFit": "FLEXTAIL portable pumps, outdoor power, camping lighting and compact camping accessories",
-      "opportunity": "Mammut Store is a qualified outdoor, camping, travel or sport retail prospect with category fit for FLEXTAIL portable outdoor electrics and Vollyc practical 3C products.",
-      "linkedin_url": "",
-      "linkedin": "",
-      "publicEmail": "",
-      "contactEmail": "",
-      "vendorPortal": "https://www.mammut.com/",
-      "contactPhone": "",
-      "contactNote": "",
-      "publicEmailStatus": "",
-      "website": "https://www.mammut.com/",
-      "evidenceUrl": "https://www.google.com/search?q=%22Mammut%20Store%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22Switzerland%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "sourceEvidenceUrl": "verified outdoor retailer official website and public social profile refill",
-      "externalVerificationStatus": "",
-      "query": "https://www.google.com/search?q=%22Mammut%20Store%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22Switzerland%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "source": "google_customer_discovery",
-      "sourceType": "google",
-      "discoveryProvider": "google",
-      "channel": "",
-      "identityStatus": "verified",
-      "officialSocialProfileVerified": false,
-      "socialProfileEvidenceUrl": "",
-      "socialProfileVerifiedAt": "",
-      "profiledAt": "",
-      "partnershipStatus": "",
-      "doNotOutreach": false,
-      "automationStatus": "",
-      "partnerNote": "",
-      "sendStatus": "",
-      "workingTime": {
-        "dueNow": true,
-        "timeZone": "local-market",
-        "localTime": "2026/8/4 19:59:43",
-        "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
-      },
-      "platform": "website_form",
-      "channelType": "website_form",
-      "platformUrl": "https://www.mammut.com/",
-      "url": "https://www.mammut.com/",
-      "contactUrl": "https://www.mammut.com/",
-      "contactSearchUrl": "https://www.google.com/search?q=site%3Awww.mammut.com%20%22Mammut%20Store%22%20contact%20buyer%20wholesale%20email%20vendor",
-      "emailFrom": "leo@flextailgear.com",
-      "websiteContactSubject": "FLEXTAIL retail partnership | 2026 assortment",
-      "websiteContactMessage": "Dear Mammut Store Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
-      "websiteContactFlow": "open_official_contact_us_fill_attach_auto_submit",
-      "action": "verify_target",
-      "reason": "homepage_only_contact_path_requires_verification",
-      "alternateChannels": {
-        "linkedin": "",
-        "instagram": "",
-        "facebook": "https://www.facebook.com/mammut",
-        "websiteContact": "https://www.mammut.com/"
-      },
-      "invalidChannels": {
-        "instagram": {
-          "url": "https://www.instagram.com/mammut_swiss1862/",
-          "status": "identity_mismatch",
-          "evidence": "Instagram handle mammut_swiss1862 does not match company Mammut Store; do not use this account for outreach."
-        }
-      },
-      "identitySource": "official homepage found; exact buyer/contact path still requires verification",
-      "channelPriority": 3,
-      "discoveredAt": "2026-07-29T09:22:31.075Z",
-      "linkedinUrl": "",
-      "linkedinSearchUrl": "https://www.linkedin.com/search/results/all/?keywords=Mammut%20Store%20buyer%20outdoor%20LinkedIn",
-      "googleSearchUrl": "https://www.google.com/search?q=site%3Awww.mammut.com%20%22Mammut%20Store%22%20contact%20buyer%20wholesale%20email%20vendor",
-      "dataSources": [
-        "google_linkedin_social_refill"
-      ],
-      "taskId": "google-customer-mammut-store-website-contact",
-      "lastStatus": "",
-      "lastEvidence": "",
-      "lastTouch": "",
-      "previouslyContacted": false,
-      "targetRegion": "europe",
-      "targetRegionScore": 45,
-      "contactChannelScore": 17,
-      "dealProbabilityScore": 140,
-      "priorityScore": 157,
       "potentialSource": "google_linkedin_social_refill",
       "nextAction": "background_check_then_verify_channel"
     },
@@ -9840,7 +9362,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/4 19:59:43",
+        "localTime": "2026/8/4 20:37:12",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "linkedin",
@@ -9931,7 +9453,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/4 19:59:43",
+        "localTime": "2026/8/4 20:37:12",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "linkedin",
@@ -10022,7 +9544,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/4 19:59:43",
+        "localTime": "2026/8/4 20:37:12",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -10115,7 +9637,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/4 19:59:43",
+        "localTime": "2026/8/4 20:37:12",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -10208,7 +9730,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/4 19:59:43",
+        "localTime": "2026/8/4 20:37:12",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -10307,7 +9829,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/4 19:59:43",
+        "localTime": "2026/8/4 20:37:12",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -10400,7 +9922,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/4 19:59:43",
+        "localTime": "2026/8/4 20:37:12",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -10493,7 +10015,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/4 19:59:43",
+        "localTime": "2026/8/4 20:37:12",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -10529,99 +10051,6 @@
       "contactChannelScore": 29,
       "dealProbabilityScore": 215,
       "priorityScore": 244,
-      "potentialSource": "google_linkedin_social_refill",
-      "nextAction": "develop_after_identity_check"
-    },
-    {
-      "id": "google-customer-72hours-facebook",
-      "name": "72hours",
-      "company": "72hours",
-      "customerType": "key_account",
-      "discoveryMode": "autonomous_refill",
-      "country": "Canada",
-      "countryEn": "Canada",
-      "fitScore": 84,
-      "fitTier": "A",
-      "marketScore": 4.5,
-      "marketStatus": "open",
-      "agencyState": "open",
-      "agentCompany": "",
-      "keyword": "verified outdoor, camping and travel retail social refill channel",
-      "role": "Outdoor, camping, travel accessories, ecommerce or category buyer.",
-      "background": "72hours is a qualified outdoor, camping, travel or sport retail prospect with category fit for FLEXTAIL portable outdoor electrics and Vollyc practical 3C products.",
-      "buyerPersona": "Outdoor, camping, travel accessories, ecommerce or category buyer.",
-      "targetMarkets": "",
-      "excludedMarkets": "",
-      "productCategory": "verified outdoor, camping and travel retail social refill channel",
-      "businessModel": "Retail Chain",
-      "productFit": "FLEXTAIL portable pumps, outdoor power, camping lighting and compact camping accessories",
-      "opportunity": "72hours is a qualified outdoor, camping, travel or sport retail prospect with category fit for FLEXTAIL portable outdoor electrics and Vollyc practical 3C products.",
-      "linkedin_url": "",
-      "linkedin": "",
-      "publicEmail": "",
-      "contactEmail": "",
-      "vendorPortal": "https://72hours.ca/",
-      "contactPhone": "",
-      "contactNote": "",
-      "publicEmailStatus": "",
-      "website": "https://72hours.ca/",
-      "evidenceUrl": "https://www.google.com/search?q=%2272hours%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22Canada%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "sourceEvidenceUrl": "verified outdoor retailer official website and public social profile refill",
-      "externalVerificationStatus": "",
-      "query": "https://www.google.com/search?q=%2272hours%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22Canada%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "source": "google_customer_discovery",
-      "sourceType": "google",
-      "discoveryProvider": "google",
-      "channel": "",
-      "identityStatus": "verified",
-      "officialSocialProfileVerified": false,
-      "socialProfileEvidenceUrl": "",
-      "socialProfileVerifiedAt": "",
-      "profiledAt": "",
-      "partnershipStatus": "",
-      "doNotOutreach": false,
-      "automationStatus": "",
-      "partnerNote": "",
-      "sendStatus": "",
-      "workingTime": {
-        "dueNow": true,
-        "timeZone": "local-market",
-        "localTime": "2026/8/4 19:59:43",
-        "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
-      },
-      "platform": "facebook",
-      "platformUrl": "https://www.facebook.com/72hours.ca",
-      "url": "https://www.facebook.com/72hours.ca",
-      "action": "develop",
-      "reason": "concrete_google_discovered_major_customer_facebook",
-      "alternateChannels": {
-        "linkedin": "",
-        "instagram": "https://www.instagram.com/72hours.ca/",
-        "facebook": "https://www.facebook.com/72hours.ca",
-        "websiteContact": "https://72hours.ca/"
-      },
-      "invalidChannels": {},
-      "facebookStatus": "verified_official_page_candidate",
-      "identitySource": "official Facebook page candidate + official website + Google background query",
-      "channelPriority": 2,
-      "discoveredAt": "2026-07-16T05:03:53.170Z",
-      "linkedinUrl": "",
-      "linkedinSearchUrl": "https://www.linkedin.com/search/results/all/?keywords=72hours%20buyer%20outdoor%20LinkedIn",
-      "googleSearchUrl": "https://www.google.com/search?q=72hours%20outdoor%20buyer%20partnership%20contact",
-      "contactSearchUrl": "https://www.google.com/search?q=72hours%20outdoor%20buyer%20partnership%20contact",
-      "dataSources": [
-        "google_linkedin_social_refill"
-      ],
-      "taskId": "google-customer-72hours-facebook",
-      "lastStatus": "",
-      "lastEvidence": "",
-      "lastTouch": "",
-      "previouslyContacted": false,
-      "targetRegion": "americas",
-      "targetRegionScore": 30,
-      "contactChannelScore": 17,
-      "dealProbabilityScore": 203,
-      "priorityScore": 220,
       "potentialSource": "google_linkedin_social_refill",
       "nextAction": "develop_after_identity_check"
     },
@@ -10679,7 +10108,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/4 19:59:43",
+        "localTime": "2026/8/4 20:37:12",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -10772,7 +10201,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/4 19:59:43",
+        "localTime": "2026/8/4 20:37:12",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -10805,99 +10234,6 @@
         "google_linkedin_social_refill"
       ],
       "taskId": "google-customer-eastern-mountain-sports-facebook",
-      "lastStatus": "",
-      "lastEvidence": "",
-      "lastTouch": "",
-      "previouslyContacted": false,
-      "targetRegion": "americas",
-      "targetRegionScore": 30,
-      "contactChannelScore": 17,
-      "dealProbabilityScore": 203,
-      "priorityScore": 220,
-      "potentialSource": "google_linkedin_social_refill",
-      "nextAction": "develop_after_identity_check"
-    },
-    {
-      "id": "google-customer-jax-outdoor-gear-facebook",
-      "name": "Jax Outdoor Gear",
-      "company": "Jax Outdoor Gear",
-      "customerType": "key_account",
-      "discoveryMode": "autonomous_refill",
-      "country": "United States",
-      "countryEn": "United States",
-      "fitScore": 84,
-      "fitTier": "A",
-      "marketScore": 4.5,
-      "marketStatus": "open",
-      "agencyState": "open",
-      "agentCompany": "",
-      "keyword": "verified outdoor, camping and travel retail social refill channel",
-      "role": "Outdoor, camping, travel accessories, ecommerce or category buyer.",
-      "background": "Jax Outdoor Gear is a qualified outdoor, camping, travel or sport retail prospect with category fit for FLEXTAIL portable outdoor electrics and Vollyc practical 3C products.",
-      "buyerPersona": "Outdoor, camping, travel accessories, ecommerce or category buyer.",
-      "targetMarkets": "",
-      "excludedMarkets": "",
-      "productCategory": "verified outdoor, camping and travel retail social refill channel",
-      "businessModel": "Retail Chain",
-      "productFit": "FLEXTAIL portable pumps, outdoor power, camping lighting and compact camping accessories",
-      "opportunity": "Jax Outdoor Gear is a qualified outdoor, camping, travel or sport retail prospect with category fit for FLEXTAIL portable outdoor electrics and Vollyc practical 3C products.",
-      "linkedin_url": "",
-      "linkedin": "",
-      "publicEmail": "",
-      "contactEmail": "",
-      "vendorPortal": "https://www.jaxgoods.com/",
-      "contactPhone": "",
-      "contactNote": "",
-      "publicEmailStatus": "",
-      "website": "https://www.jaxgoods.com/",
-      "evidenceUrl": "https://www.google.com/search?q=%22Jax%20Outdoor%20Gear%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "sourceEvidenceUrl": "verified outdoor retailer official website and public social profile refill",
-      "externalVerificationStatus": "",
-      "query": "https://www.google.com/search?q=%22Jax%20Outdoor%20Gear%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "source": "google_customer_discovery",
-      "sourceType": "google",
-      "discoveryProvider": "google",
-      "channel": "",
-      "identityStatus": "verified",
-      "officialSocialProfileVerified": false,
-      "socialProfileEvidenceUrl": "",
-      "socialProfileVerifiedAt": "",
-      "profiledAt": "",
-      "partnershipStatus": "",
-      "doNotOutreach": false,
-      "automationStatus": "",
-      "partnerNote": "",
-      "sendStatus": "",
-      "workingTime": {
-        "dueNow": true,
-        "timeZone": "local-market",
-        "localTime": "2026/8/4 19:59:43",
-        "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
-      },
-      "platform": "facebook",
-      "platformUrl": "https://www.facebook.com/jaxoutdoorgear",
-      "url": "https://www.facebook.com/jaxoutdoorgear",
-      "action": "develop",
-      "reason": "concrete_google_discovered_major_customer_facebook",
-      "alternateChannels": {
-        "linkedin": "",
-        "instagram": "https://www.instagram.com/jaxoutdoor/",
-        "facebook": "https://www.facebook.com/jaxoutdoorgear",
-        "websiteContact": "https://www.jaxgoods.com/"
-      },
-      "invalidChannels": {},
-      "facebookStatus": "verified_official_page_candidate",
-      "identitySource": "official Facebook page candidate + official website + Google background query",
-      "channelPriority": 2,
-      "discoveredAt": "2026-07-16T05:03:53.170Z",
-      "linkedinUrl": "",
-      "linkedinSearchUrl": "https://www.linkedin.com/search/results/all/?keywords=Jax%20Outdoor%20Gear%20buyer%20outdoor%20LinkedIn",
-      "googleSearchUrl": "https://www.google.com/search?q=Jax%20Outdoor%20Gear%20outdoor%20buyer%20partnership%20contact",
-      "contactSearchUrl": "https://www.google.com/search?q=Jax%20Outdoor%20Gear%20outdoor%20buyer%20partnership%20contact",
-      "dataSources": [
-        "google_linkedin_social_refill"
-      ],
-      "taskId": "google-customer-jax-outdoor-gear-facebook",
       "lastStatus": "",
       "lastEvidence": "",
       "lastTouch": "",
@@ -10964,7 +10300,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/4 19:59:43",
+        "localTime": "2026/8/4 20:37:12",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -11063,7 +10399,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/4 19:59:43",
+        "localTime": "2026/8/4 20:37:12",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -11156,7 +10492,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/4 19:59:43",
+        "localTime": "2026/8/4 20:37:12",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -11192,105 +10528,6 @@
       "contactChannelScore": 17,
       "dealProbabilityScore": 173,
       "priorityScore": 190,
-      "potentialSource": "google_linkedin_social_refill",
-      "nextAction": "develop_after_identity_check"
-    },
-    {
-      "id": "google-customer-mammut-store-facebook",
-      "name": "Mammut Store",
-      "company": "Mammut Store",
-      "customerType": "key_account",
-      "discoveryMode": "autonomous_refill",
-      "country": "Switzerland",
-      "countryEn": "Switzerland",
-      "fitScore": 84,
-      "fitTier": "A",
-      "marketScore": 4.5,
-      "marketStatus": "exclusive",
-      "agencyState": "exclusive",
-      "agentCompany": "INNPRO Robert Błędowski Sp. z o.o.",
-      "keyword": "verified outdoor, camping and travel retail social refill channel",
-      "role": "Outdoor, camping, travel accessories, ecommerce or category buyer.",
-      "background": "Mammut Store is a qualified outdoor, camping, travel or sport retail prospect with category fit for FLEXTAIL portable outdoor electrics and Vollyc practical 3C products.",
-      "buyerPersona": "Outdoor, camping, travel accessories, ecommerce or category buyer.",
-      "targetMarkets": "",
-      "excludedMarkets": "",
-      "productCategory": "verified outdoor, camping and travel retail social refill channel",
-      "businessModel": "Retail Chain",
-      "productFit": "FLEXTAIL portable pumps, outdoor power, camping lighting and compact camping accessories",
-      "opportunity": "Mammut Store is a qualified outdoor, camping, travel or sport retail prospect with category fit for FLEXTAIL portable outdoor electrics and Vollyc practical 3C products.",
-      "linkedin_url": "",
-      "linkedin": "",
-      "publicEmail": "",
-      "contactEmail": "",
-      "vendorPortal": "https://www.mammut.com/",
-      "contactPhone": "",
-      "contactNote": "",
-      "publicEmailStatus": "",
-      "website": "https://www.mammut.com/",
-      "evidenceUrl": "https://www.google.com/search?q=%22Mammut%20Store%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22Switzerland%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "sourceEvidenceUrl": "verified outdoor retailer official website and public social profile refill",
-      "externalVerificationStatus": "",
-      "query": "https://www.google.com/search?q=%22Mammut%20Store%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22Switzerland%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "source": "google_customer_discovery",
-      "sourceType": "google",
-      "discoveryProvider": "google",
-      "channel": "",
-      "identityStatus": "verified",
-      "officialSocialProfileVerified": false,
-      "socialProfileEvidenceUrl": "",
-      "socialProfileVerifiedAt": "",
-      "profiledAt": "",
-      "partnershipStatus": "",
-      "doNotOutreach": false,
-      "automationStatus": "",
-      "partnerNote": "",
-      "sendStatus": "",
-      "workingTime": {
-        "dueNow": true,
-        "timeZone": "local-market",
-        "localTime": "2026/8/4 19:59:43",
-        "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
-      },
-      "platform": "facebook",
-      "platformUrl": "https://www.facebook.com/mammut",
-      "url": "https://www.facebook.com/mammut",
-      "action": "develop",
-      "reason": "concrete_google_discovered_major_customer_facebook",
-      "alternateChannels": {
-        "linkedin": "",
-        "instagram": "",
-        "facebook": "https://www.facebook.com/mammut",
-        "websiteContact": "https://www.mammut.com/"
-      },
-      "invalidChannels": {
-        "instagram": {
-          "url": "https://www.instagram.com/mammut_swiss1862/",
-          "status": "identity_mismatch",
-          "evidence": "Instagram handle mammut_swiss1862 does not match company Mammut Store; do not use this account for outreach."
-        }
-      },
-      "facebookStatus": "verified_official_page_candidate",
-      "identitySource": "official Facebook page candidate + official website + Google background query",
-      "channelPriority": 2,
-      "discoveredAt": "2026-07-29T09:22:31.075Z",
-      "linkedinUrl": "",
-      "linkedinSearchUrl": "https://www.linkedin.com/search/results/all/?keywords=Mammut%20Store%20buyer%20outdoor%20LinkedIn",
-      "googleSearchUrl": "https://www.google.com/search?q=Mammut%20Store%20outdoor%20buyer%20partnership%20contact",
-      "contactSearchUrl": "https://www.google.com/search?q=Mammut%20Store%20outdoor%20buyer%20partnership%20contact",
-      "dataSources": [
-        "google_linkedin_social_refill"
-      ],
-      "taskId": "google-customer-mammut-store-facebook",
-      "lastStatus": "",
-      "lastEvidence": "",
-      "lastTouch": "",
-      "previouslyContacted": false,
-      "targetRegion": "europe",
-      "targetRegionScore": 45,
-      "contactChannelScore": 17,
-      "dealProbabilityScore": 140,
-      "priorityScore": 157,
       "potentialSource": "google_linkedin_social_refill",
       "nextAction": "develop_after_identity_check"
     },
@@ -11348,7 +10585,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/4 19:59:43",
+        "localTime": "2026/8/4 20:37:12",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -11439,7 +10676,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/4 19:59:43",
+        "localTime": "2026/8/4 20:37:12",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -11530,7 +10767,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/4 19:59:43",
+        "localTime": "2026/8/4 20:37:12",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -11621,7 +10858,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/4 19:59:43",
+        "localTime": "2026/8/4 20:37:12",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -11712,7 +10949,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/4 19:59:43",
+        "localTime": "2026/8/4 20:37:12",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -11803,7 +11040,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/4 19:59:43",
+        "localTime": "2026/8/4 20:37:12",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -11894,7 +11131,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/4 19:59:43",
+        "localTime": "2026/8/4 20:37:12",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -11928,97 +11165,6 @@
       "contactChannelScore": 17,
       "dealProbabilityScore": 207,
       "priorityScore": 224,
-      "potentialSource": "google_linkedin_social_refill",
-      "nextAction": "develop_after_identity_check"
-    },
-    {
-      "id": "google-customer-72hours-instagram",
-      "name": "72hours",
-      "company": "72hours",
-      "customerType": "key_account",
-      "discoveryMode": "autonomous_refill",
-      "country": "Canada",
-      "countryEn": "Canada",
-      "fitScore": 84,
-      "fitTier": "A",
-      "marketScore": 4.5,
-      "marketStatus": "open",
-      "agencyState": "open",
-      "agentCompany": "",
-      "keyword": "verified outdoor, camping and travel retail social refill channel",
-      "role": "Outdoor, camping, travel accessories, ecommerce or category buyer.",
-      "background": "72hours is a qualified outdoor, camping, travel or sport retail prospect with category fit for FLEXTAIL portable outdoor electrics and Vollyc practical 3C products.",
-      "buyerPersona": "Outdoor, camping, travel accessories, ecommerce or category buyer.",
-      "targetMarkets": "",
-      "excludedMarkets": "",
-      "productCategory": "verified outdoor, camping and travel retail social refill channel",
-      "businessModel": "Retail Chain",
-      "productFit": "FLEXTAIL portable pumps, outdoor power, camping lighting and compact camping accessories",
-      "opportunity": "72hours is a qualified outdoor, camping, travel or sport retail prospect with category fit for FLEXTAIL portable outdoor electrics and Vollyc practical 3C products.",
-      "linkedin_url": "",
-      "linkedin": "",
-      "publicEmail": "",
-      "contactEmail": "",
-      "vendorPortal": "https://72hours.ca/",
-      "contactPhone": "",
-      "contactNote": "",
-      "publicEmailStatus": "",
-      "website": "https://72hours.ca/",
-      "evidenceUrl": "https://www.google.com/search?q=%2272hours%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22Canada%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "sourceEvidenceUrl": "verified outdoor retailer official website and public social profile refill",
-      "externalVerificationStatus": "",
-      "query": "https://www.google.com/search?q=%2272hours%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22Canada%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "source": "google_customer_discovery",
-      "sourceType": "google",
-      "discoveryProvider": "google",
-      "channel": "",
-      "identityStatus": "verified",
-      "officialSocialProfileVerified": false,
-      "socialProfileEvidenceUrl": "",
-      "socialProfileVerifiedAt": "",
-      "profiledAt": "",
-      "partnershipStatus": "",
-      "doNotOutreach": false,
-      "automationStatus": "",
-      "partnerNote": "",
-      "sendStatus": "",
-      "workingTime": {
-        "dueNow": true,
-        "timeZone": "local-market",
-        "localTime": "2026/8/4 19:59:43",
-        "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
-      },
-      "platform": "instagram",
-      "platformUrl": "https://www.instagram.com/72hours.ca/",
-      "url": "https://www.instagram.com/72hours.ca/",
-      "action": "develop",
-      "reason": "concrete_google_discovered_major_customer_instagram",
-      "alternateChannels": {
-        "linkedin": "",
-        "instagram": "https://www.instagram.com/72hours.ca/",
-        "facebook": "https://www.facebook.com/72hours.ca",
-        "websiteContact": "https://72hours.ca/"
-      },
-      "identitySource": "official website/social profile + Google background query",
-      "channelPriority": 1,
-      "discoveredAt": "2026-07-16T05:03:53.170Z",
-      "linkedinUrl": "",
-      "linkedinSearchUrl": "https://www.linkedin.com/search/results/all/?keywords=72hours%20buyer%20outdoor%20LinkedIn",
-      "googleSearchUrl": "https://www.google.com/search?q=72hours%20outdoor%20buyer%20partnership%20contact",
-      "contactSearchUrl": "https://www.google.com/search?q=72hours%20outdoor%20buyer%20partnership%20contact",
-      "dataSources": [
-        "google_linkedin_social_refill"
-      ],
-      "taskId": "google-customer-72hours-instagram",
-      "lastStatus": "",
-      "lastEvidence": "",
-      "lastTouch": "",
-      "previouslyContacted": false,
-      "targetRegion": "americas",
-      "targetRegionScore": 30,
-      "contactChannelScore": 17,
-      "dealProbabilityScore": 203,
-      "priorityScore": 220,
       "potentialSource": "google_linkedin_social_refill",
       "nextAction": "develop_after_identity_check"
     },
@@ -12076,7 +11222,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/4 19:59:43",
+        "localTime": "2026/8/4 20:37:12",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -12101,97 +11247,6 @@
         "google_linkedin_social_refill"
       ],
       "taskId": "google-customer-atmosphere-instagram",
-      "lastStatus": "",
-      "lastEvidence": "",
-      "lastTouch": "",
-      "previouslyContacted": false,
-      "targetRegion": "americas",
-      "targetRegionScore": 30,
-      "contactChannelScore": 17,
-      "dealProbabilityScore": 203,
-      "priorityScore": 220,
-      "potentialSource": "google_linkedin_social_refill",
-      "nextAction": "develop_after_identity_check"
-    },
-    {
-      "id": "google-customer-jax-outdoor-gear-instagram",
-      "name": "Jax Outdoor Gear",
-      "company": "Jax Outdoor Gear",
-      "customerType": "key_account",
-      "discoveryMode": "autonomous_refill",
-      "country": "United States",
-      "countryEn": "United States",
-      "fitScore": 84,
-      "fitTier": "A",
-      "marketScore": 4.5,
-      "marketStatus": "open",
-      "agencyState": "open",
-      "agentCompany": "",
-      "keyword": "verified outdoor, camping and travel retail social refill channel",
-      "role": "Outdoor, camping, travel accessories, ecommerce or category buyer.",
-      "background": "Jax Outdoor Gear is a qualified outdoor, camping, travel or sport retail prospect with category fit for FLEXTAIL portable outdoor electrics and Vollyc practical 3C products.",
-      "buyerPersona": "Outdoor, camping, travel accessories, ecommerce or category buyer.",
-      "targetMarkets": "",
-      "excludedMarkets": "",
-      "productCategory": "verified outdoor, camping and travel retail social refill channel",
-      "businessModel": "Retail Chain",
-      "productFit": "FLEXTAIL portable pumps, outdoor power, camping lighting and compact camping accessories",
-      "opportunity": "Jax Outdoor Gear is a qualified outdoor, camping, travel or sport retail prospect with category fit for FLEXTAIL portable outdoor electrics and Vollyc practical 3C products.",
-      "linkedin_url": "",
-      "linkedin": "",
-      "publicEmail": "",
-      "contactEmail": "",
-      "vendorPortal": "https://www.jaxgoods.com/",
-      "contactPhone": "",
-      "contactNote": "",
-      "publicEmailStatus": "",
-      "website": "https://www.jaxgoods.com/",
-      "evidenceUrl": "https://www.google.com/search?q=%22Jax%20Outdoor%20Gear%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "sourceEvidenceUrl": "verified outdoor retailer official website and public social profile refill",
-      "externalVerificationStatus": "",
-      "query": "https://www.google.com/search?q=%22Jax%20Outdoor%20Gear%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "source": "google_customer_discovery",
-      "sourceType": "google",
-      "discoveryProvider": "google",
-      "channel": "",
-      "identityStatus": "verified",
-      "officialSocialProfileVerified": false,
-      "socialProfileEvidenceUrl": "",
-      "socialProfileVerifiedAt": "",
-      "profiledAt": "",
-      "partnershipStatus": "",
-      "doNotOutreach": false,
-      "automationStatus": "",
-      "partnerNote": "",
-      "sendStatus": "",
-      "workingTime": {
-        "dueNow": true,
-        "timeZone": "local-market",
-        "localTime": "2026/8/4 19:59:43",
-        "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
-      },
-      "platform": "instagram",
-      "platformUrl": "https://www.instagram.com/jaxoutdoor/",
-      "url": "https://www.instagram.com/jaxoutdoor/",
-      "action": "develop",
-      "reason": "concrete_google_discovered_major_customer_instagram",
-      "alternateChannels": {
-        "linkedin": "",
-        "instagram": "https://www.instagram.com/jaxoutdoor/",
-        "facebook": "https://www.facebook.com/jaxoutdoorgear",
-        "websiteContact": "https://www.jaxgoods.com/"
-      },
-      "identitySource": "official website/social profile + Google background query",
-      "channelPriority": 1,
-      "discoveredAt": "2026-07-16T05:03:53.170Z",
-      "linkedinUrl": "",
-      "linkedinSearchUrl": "https://www.linkedin.com/search/results/all/?keywords=Jax%20Outdoor%20Gear%20buyer%20outdoor%20LinkedIn",
-      "googleSearchUrl": "https://www.google.com/search?q=Jax%20Outdoor%20Gear%20outdoor%20buyer%20partnership%20contact",
-      "contactSearchUrl": "https://www.google.com/search?q=Jax%20Outdoor%20Gear%20outdoor%20buyer%20partnership%20contact",
-      "dataSources": [
-        "google_linkedin_social_refill"
-      ],
-      "taskId": "google-customer-jax-outdoor-gear-instagram",
       "lastStatus": "",
       "lastEvidence": "",
       "lastTouch": "",
@@ -12258,7 +11313,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/4 19:59:43",
+        "localTime": "2026/8/4 20:37:12",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -12349,7 +11404,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/4 19:59:43",
+        "localTime": "2026/8/4 20:37:12",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -12991,6 +12046,374 @@
       "priorityScore": 100,
       "potentialSource": "customer_table",
       "nextAction": "background_check_then_verify_channel"
+    },
+    {
+      "id": 17,
+      "name": "Stephanie Liu",
+      "company": "Target",
+      "role": "Senior Buyer",
+      "category": "ka",
+      "ka_flag": false,
+      "priority": "?",
+      "status": "Pending",
+      "keyword_used": "retail director electronics",
+      "message": "Hi Stephanie,\n\nFlextail portable power stations are positioned for mass market retail. Target's outdoor section could be perfect.\n\nBest,\nDavid",
+      "source": "outreach_data",
+      "country": "",
+      "countryEn": "",
+      "platform": "research",
+      "fitScore": 100,
+      "fitTier": "A",
+      "sourceType": "customer_table",
+      "website": "",
+      "url": "",
+      "platformUrl": "",
+      "linkedinUrl": "",
+      "linkedinSearchUrl": "https://www.linkedin.com/search/results/all/?keywords=Target%20buyer%20outdoor%20LinkedIn",
+      "googleSearchUrl": "https://www.google.com/search?q=Target%20outdoor%20buyer%20partnership%20contact",
+      "contactSearchUrl": "https://www.google.com/search?q=Target%20outdoor%20buyer%20partnership%20contact",
+      "dataSources": [
+        "customer_table"
+      ],
+      "background": "Hi Stephanie,\n\nFlextail portable power stations are positioned for mass market retail. Target's outdoor section could be perfect.\n\nBest,\nDavid",
+      "buyerPersona": "Senior Buyer",
+      "marketStatus": "",
+      "taskId": 17,
+      "action": "verify_target",
+      "reason": "missing_verified_profile_url",
+      "lastStatus": "",
+      "lastEvidence": "",
+      "lastTouch": "",
+      "previouslyContacted": false,
+      "targetRegion": "other",
+      "targetRegionScore": 0,
+      "contactChannelScore": 0,
+      "dealProbabilityScore": 100,
+      "priorityScore": 100,
+      "potentialSource": "customer_table",
+      "nextAction": "background_check_then_verify_channel"
+    },
+    {
+      "id": 22,
+      "name": "Jason Park",
+      "company": "Thor Industries",
+      "role": "Strategic Sourcing Director",
+      "category": "rv",
+      "ka_flag": false,
+      "priority": "?",
+      "status": "Pending",
+      "keyword_used": "strategic sourcing manager",
+      "message": "Hi Jason,\n\nThor Industries is a leader in recreational vehicles. Flextail could provide reliable power solutions for your OEM.\n\nBest,\nDavid",
+      "source": "outreach_data",
+      "country": "",
+      "countryEn": "",
+      "platform": "research",
+      "fitScore": 100,
+      "fitTier": "A",
+      "sourceType": "customer_table",
+      "website": "",
+      "url": "",
+      "platformUrl": "",
+      "linkedinUrl": "",
+      "linkedinSearchUrl": "https://www.linkedin.com/search/results/all/?keywords=Thor%20Industries%20buyer%20outdoor%20LinkedIn",
+      "googleSearchUrl": "https://www.google.com/search?q=Thor%20Industries%20outdoor%20buyer%20partnership%20contact",
+      "contactSearchUrl": "https://www.google.com/search?q=Thor%20Industries%20outdoor%20buyer%20partnership%20contact",
+      "dataSources": [
+        "customer_table"
+      ],
+      "background": "Hi Jason,\n\nThor Industries is a leader in recreational vehicles. Flextail could provide reliable power solutions for your OEM.\n\nBest,\nDavid",
+      "buyerPersona": "Strategic Sourcing Director",
+      "marketStatus": "",
+      "taskId": 22,
+      "action": "verify_target",
+      "reason": "missing_verified_profile_url",
+      "lastStatus": "",
+      "lastEvidence": "",
+      "lastTouch": "",
+      "previouslyContacted": false,
+      "targetRegion": "other",
+      "targetRegionScore": 0,
+      "contactChannelScore": 0,
+      "dealProbabilityScore": 100,
+      "priorityScore": 100,
+      "potentialSource": "customer_table",
+      "nextAction": "background_check_then_verify_channel"
+    },
+    {
+      "id": 13,
+      "name": "Nicole Adams",
+      "company": "Walgreens",
+      "role": "Category Manager",
+      "category": "retail",
+      "ka_flag": false,
+      "priority": "?",
+      "status": "Pending",
+      "keyword_used": "retail chain buyer",
+      "message": "Hi Nicole,\n\nFlextail's portable power stations could be a great addition to Walgreens' outdoor/travel category.\n\nBest,\nDavid",
+      "source": "outreach_data",
+      "country": "",
+      "countryEn": "",
+      "platform": "research",
+      "fitScore": 100,
+      "fitTier": "A",
+      "sourceType": "customer_table",
+      "website": "",
+      "url": "",
+      "platformUrl": "",
+      "linkedinUrl": "",
+      "linkedinSearchUrl": "https://www.linkedin.com/search/results/all/?keywords=Walgreens%20buyer%20outdoor%20LinkedIn",
+      "googleSearchUrl": "https://www.google.com/search?q=Walgreens%20outdoor%20buyer%20partnership%20contact",
+      "contactSearchUrl": "https://www.google.com/search?q=Walgreens%20outdoor%20buyer%20partnership%20contact",
+      "dataSources": [
+        "customer_table"
+      ],
+      "background": "Hi Nicole,\n\nFlextail's portable power stations could be a great addition to Walgreens' outdoor/travel category.\n\nBest,\nDavid",
+      "buyerPersona": "Category Manager",
+      "marketStatus": "",
+      "taskId": 13,
+      "action": "verify_target",
+      "reason": "missing_verified_profile_url",
+      "lastStatus": "",
+      "lastEvidence": "",
+      "lastTouch": "",
+      "previouslyContacted": false,
+      "targetRegion": "other",
+      "targetRegionScore": 0,
+      "contactChannelScore": 0,
+      "dealProbabilityScore": 100,
+      "priorityScore": 100,
+      "potentialSource": "customer_table",
+      "nextAction": "background_check_then_verify_channel"
+    },
+    {
+      "id": 18,
+      "name": "Brian Scott",
+      "company": "Winnebago",
+      "role": "Procurement Manager",
+      "category": "rv",
+      "ka_flag": false,
+      "priority": "?",
+      "status": "Pending",
+      "keyword_used": "OEM RV power supplier",
+      "message": "Hi Brian,\n\nWe're interested in OEM partnerships with RV manufacturers. Winnebago's quality standards align with ours.\n\nBest,\nDavid",
+      "source": "outreach_data",
+      "country": "",
+      "countryEn": "",
+      "platform": "research",
+      "fitScore": 100,
+      "fitTier": "A",
+      "sourceType": "customer_table",
+      "website": "",
+      "url": "",
+      "platformUrl": "",
+      "linkedinUrl": "",
+      "linkedinSearchUrl": "https://www.linkedin.com/search/results/all/?keywords=Winnebago%20buyer%20outdoor%20LinkedIn",
+      "googleSearchUrl": "https://www.google.com/search?q=Winnebago%20outdoor%20buyer%20partnership%20contact",
+      "contactSearchUrl": "https://www.google.com/search?q=Winnebago%20outdoor%20buyer%20partnership%20contact",
+      "dataSources": [
+        "customer_table"
+      ],
+      "background": "Hi Brian,\n\nWe're interested in OEM partnerships with RV manufacturers. Winnebago's quality standards align with ours.\n\nBest,\nDavid",
+      "buyerPersona": "Procurement Manager",
+      "marketStatus": "",
+      "taskId": 18,
+      "action": "verify_target",
+      "reason": "missing_verified_profile_url",
+      "lastStatus": "",
+      "lastEvidence": "",
+      "lastTouch": "",
+      "previouslyContacted": false,
+      "targetRegion": "other",
+      "targetRegionScore": 0,
+      "contactChannelScore": 0,
+      "dealProbabilityScore": 100,
+      "priorityScore": 100,
+      "potentialSource": "customer_table",
+      "nextAction": "background_check_then_verify_channel"
+    },
+    {
+      "id": 11,
+      "name": "Chris Brown",
+      "company": "Best Buy",
+      "role": "Regional Buyer",
+      "category": "ka",
+      "ka_flag": false,
+      "priority": "?",
+      "status": "Pending",
+      "keyword_used": "electronics retail buyer",
+      "message": "Hi Chris,\n\nFlextail portable power stations are perfect for the consumer electronics category. We're looking for retail partners.\n\nBest,\nDavid",
+      "source": "outreach_data",
+      "country": "",
+      "countryEn": "",
+      "platform": "research",
+      "fitScore": 99,
+      "fitTier": "A",
+      "sourceType": "customer_table",
+      "website": "",
+      "url": "",
+      "platformUrl": "",
+      "linkedinUrl": "",
+      "linkedinSearchUrl": "https://www.linkedin.com/search/results/all/?keywords=Best%20Buy%20buyer%20outdoor%20LinkedIn",
+      "googleSearchUrl": "https://www.google.com/search?q=Best%20Buy%20outdoor%20buyer%20partnership%20contact",
+      "contactSearchUrl": "https://www.google.com/search?q=Best%20Buy%20outdoor%20buyer%20partnership%20contact",
+      "dataSources": [
+        "customer_table"
+      ],
+      "background": "Hi Chris,\n\nFlextail portable power stations are perfect for the consumer electronics category. We're looking for retail partners.\n\nBest,\nDavid",
+      "buyerPersona": "Regional Buyer",
+      "marketStatus": "",
+      "taskId": 11,
+      "action": "verify_target",
+      "reason": "missing_verified_profile_url",
+      "lastStatus": "",
+      "lastEvidence": "",
+      "lastTouch": "",
+      "previouslyContacted": false,
+      "targetRegion": "other",
+      "targetRegionScore": 0,
+      "contactChannelScore": 0,
+      "dealProbabilityScore": 99,
+      "priorityScore": 99,
+      "potentialSource": "customer_table",
+      "nextAction": "background_check_then_verify_channel"
+    },
+    {
+      "id": 9,
+      "name": "Mark Johnson",
+      "company": "Canadian Tire",
+      "role": "Senior Buyer - Electronics",
+      "category": "ka",
+      "ka_flag": false,
+      "priority": "?",
+      "status": "Pending",
+      "keyword_used": "hypermarket buyer electronics",
+      "message": "Hi Mark,\n\nFlextail portable power stations are making waves in the outdoor market. We'd love to discuss a partnership with Canadian Tire.\n\nBest,\nDavid",
+      "source": "outreach_data",
+      "country": "",
+      "countryEn": "",
+      "platform": "research",
+      "fitScore": 99,
+      "fitTier": "A",
+      "sourceType": "customer_table",
+      "website": "",
+      "url": "",
+      "platformUrl": "",
+      "linkedinUrl": "",
+      "linkedinSearchUrl": "https://www.linkedin.com/search/results/all/?keywords=Canadian%20Tire%20buyer%20outdoor%20LinkedIn",
+      "googleSearchUrl": "https://www.google.com/search?q=Canadian%20Tire%20outdoor%20buyer%20partnership%20contact",
+      "contactSearchUrl": "https://www.google.com/search?q=Canadian%20Tire%20outdoor%20buyer%20partnership%20contact",
+      "dataSources": [
+        "customer_table"
+      ],
+      "background": "Hi Mark,\n\nFlextail portable power stations are making waves in the outdoor market. We'd love to discuss a partnership with Canadian Tire.\n\nBest,\nDavid",
+      "buyerPersona": "Senior Buyer - Electronics",
+      "marketStatus": "",
+      "taskId": 9,
+      "action": "verify_target",
+      "reason": "missing_verified_profile_url",
+      "lastStatus": "",
+      "lastEvidence": "",
+      "lastTouch": "",
+      "previouslyContacted": false,
+      "targetRegion": "other",
+      "targetRegionScore": 0,
+      "contactChannelScore": 0,
+      "dealProbabilityScore": 99,
+      "priorityScore": 99,
+      "potentialSource": "customer_table",
+      "nextAction": "background_check_then_verify_channel"
+    },
+    {
+      "id": 19,
+      "name": "Michelle Chen",
+      "company": "MEC (Mountain Equipment Co-op)",
+      "role": "Buyer - Electronics",
+      "category": "camping",
+      "ka_flag": false,
+      "priority": "?",
+      "status": "Pending",
+      "keyword_used": "buyer outdoor products Canada",
+      "message": "Hi Michelle,\n\nFlextail is looking to expand in the Canadian outdoor market. MEC's reputation for quality aligns with our brand.\n\nBest,\nDavid",
+      "source": "outreach_data",
+      "country": "",
+      "countryEn": "",
+      "platform": "research",
+      "fitScore": 99,
+      "fitTier": "A",
+      "sourceType": "customer_table",
+      "website": "",
+      "url": "",
+      "platformUrl": "",
+      "linkedinUrl": "",
+      "linkedinSearchUrl": "https://www.linkedin.com/search/results/all/?keywords=MEC%20(Mountain%20Equipment%20Co-op)%20buyer%20outdoor%20LinkedIn",
+      "googleSearchUrl": "https://www.google.com/search?q=MEC%20(Mountain%20Equipment%20Co-op)%20outdoor%20buyer%20partnership%20contact",
+      "contactSearchUrl": "https://www.google.com/search?q=MEC%20(Mountain%20Equipment%20Co-op)%20outdoor%20buyer%20partnership%20contact",
+      "dataSources": [
+        "customer_table"
+      ],
+      "background": "Hi Michelle,\n\nFlextail is looking to expand in the Canadian outdoor market. MEC's reputation for quality aligns with our brand.\n\nBest,\nDavid",
+      "buyerPersona": "Buyer - Electronics",
+      "marketStatus": "",
+      "taskId": 19,
+      "action": "verify_target",
+      "reason": "missing_verified_profile_url",
+      "lastStatus": "",
+      "lastEvidence": "",
+      "lastTouch": "",
+      "previouslyContacted": false,
+      "targetRegion": "other",
+      "targetRegionScore": 0,
+      "contactChannelScore": 0,
+      "dealProbabilityScore": 99,
+      "priorityScore": 99,
+      "potentialSource": "customer_table",
+      "nextAction": "background_check_then_verify_channel"
+    },
+    {
+      "id": 16,
+      "name": "Ryan Cooper",
+      "company": "Airstream",
+      "role": "Director of Product Development",
+      "category": "rv",
+      "ka_flag": false,
+      "priority": "?",
+      "status": "Pending",
+      "keyword_used": "RV power solutions",
+      "message": "Hi Ryan,\n\nFlextail's power stations are designed specifically for RV applications. Airstream customers demand quality.\n\nBest,\nDavid",
+      "source": "outreach_data",
+      "country": "",
+      "countryEn": "",
+      "platform": "research",
+      "fitScore": 91,
+      "fitTier": "A",
+      "sourceType": "customer_table",
+      "website": "",
+      "url": "",
+      "platformUrl": "",
+      "linkedinUrl": "",
+      "linkedinSearchUrl": "https://www.linkedin.com/search/results/all/?keywords=Airstream%20buyer%20outdoor%20LinkedIn",
+      "googleSearchUrl": "https://www.google.com/search?q=Airstream%20outdoor%20buyer%20partnership%20contact",
+      "contactSearchUrl": "https://www.google.com/search?q=Airstream%20outdoor%20buyer%20partnership%20contact",
+      "dataSources": [
+        "customer_table"
+      ],
+      "background": "Hi Ryan,\n\nFlextail's power stations are designed specifically for RV applications. Airstream customers demand quality.\n\nBest,\nDavid",
+      "buyerPersona": "Director of Product Development",
+      "marketStatus": "",
+      "taskId": 16,
+      "action": "verify_target",
+      "reason": "missing_verified_profile_url",
+      "lastStatus": "",
+      "lastEvidence": "",
+      "lastTouch": "",
+      "previouslyContacted": false,
+      "targetRegion": "other",
+      "targetRegionScore": 0,
+      "contactChannelScore": 0,
+      "dealProbabilityScore": 91,
+      "priorityScore": 91,
+      "potentialSource": "customer_table",
+      "nextAction": "background_check_then_verify_channel"
     }
   ],
   "dailyQueue": [
@@ -13048,7 +12471,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/Rome",
-        "localTime": "Tue 14:06",
+        "localTime": "Tue 14:44",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
@@ -13135,7 +12558,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/Oslo",
-        "localTime": "Tue 14:06",
+        "localTime": "Tue 14:44",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
@@ -13222,7 +12645,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/Stockholm",
-        "localTime": "Tue 14:06",
+        "localTime": "Tue 14:44",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
@@ -13309,7 +12732,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/Helsinki",
-        "localTime": "Tue 15:06",
+        "localTime": "Tue 15:44",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
@@ -13396,7 +12819,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/Berlin",
-        "localTime": "Tue 14:06",
+        "localTime": "Tue 14:44",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
@@ -13483,7 +12906,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/Paris",
-        "localTime": "Tue 14:06",
+        "localTime": "Tue 14:44",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
@@ -13570,7 +12993,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/Stockholm",
-        "localTime": "Tue 14:06",
+        "localTime": "Tue 14:44",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
@@ -13657,7 +13080,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/Madrid",
-        "localTime": "Tue 14:06",
+        "localTime": "Tue 14:44",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
@@ -13744,7 +13167,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/Paris",
-        "localTime": "Tue 14:06",
+        "localTime": "Tue 14:44",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
@@ -13831,7 +13254,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/Paris",
-        "localTime": "Tue 14:06",
+        "localTime": "Tue 14:44",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
@@ -13918,7 +13341,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/Berlin",
-        "localTime": "Tue 14:06",
+        "localTime": "Tue 14:44",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
@@ -14005,7 +13428,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/Copenhagen",
-        "localTime": "Tue 14:06",
+        "localTime": "Tue 14:44",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
@@ -14092,7 +13515,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/Oslo",
-        "localTime": "Tue 14:06",
+        "localTime": "Tue 14:44",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
@@ -14185,7 +13608,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/Copenhagen",
-        "localTime": "Tue 14:06",
+        "localTime": "Tue 14:44",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
@@ -14272,7 +13695,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/Paris",
-        "localTime": "Tue 14:06",
+        "localTime": "Tue 14:44",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
@@ -14359,7 +13782,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/Zurich",
-        "localTime": "Tue 14:06",
+        "localTime": "Tue 14:44",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
@@ -14391,99 +13814,6 @@
       "contactChannelScore": 13,
       "dealProbabilityScore": 141,
       "priorityScore": 141
-    },
-    {
-      "id": "google-customer-mammut-store-website-contact",
-      "name": "Mammut Store",
-      "company": "Mammut Store",
-      "customerType": "key_account",
-      "discoveryMode": "autonomous_refill",
-      "country": "Switzerland",
-      "countryEn": "Switzerland",
-      "fitScore": 84,
-      "fitTier": "A",
-      "marketScore": 4.5,
-      "marketStatus": "exclusive",
-      "agencyState": "exclusive",
-      "agentCompany": "INNPRO Robert Błędowski Sp. z o.o.",
-      "keyword": "verified outdoor, camping and travel retail social refill channel",
-      "role": "Outdoor, camping, travel accessories, ecommerce or category buyer.",
-      "background": "Mammut Store is a qualified outdoor, camping, travel or sport retail prospect with category fit for FLEXTAIL portable outdoor electrics and Vollyc practical 3C products.",
-      "buyerPersona": "Outdoor, camping, travel accessories, ecommerce or category buyer.",
-      "targetMarkets": "",
-      "excludedMarkets": "",
-      "productCategory": "verified outdoor, camping and travel retail social refill channel",
-      "businessModel": "Retail Chain",
-      "productFit": "FLEXTAIL portable pumps, outdoor power, camping lighting and compact camping accessories",
-      "opportunity": "Mammut Store is a qualified outdoor, camping, travel or sport retail prospect with category fit for FLEXTAIL portable outdoor electrics and Vollyc practical 3C products.",
-      "linkedin_url": "",
-      "linkedin": "",
-      "publicEmail": "",
-      "contactEmail": "",
-      "vendorPortal": "https://www.mammut.com/",
-      "contactPhone": "",
-      "contactNote": "",
-      "publicEmailStatus": "",
-      "website": "https://www.mammut.com/",
-      "evidenceUrl": "https://www.google.com/search?q=%22Mammut%20Store%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22Switzerland%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "sourceEvidenceUrl": "verified outdoor retailer official website and public social profile refill",
-      "externalVerificationStatus": "",
-      "query": "https://www.google.com/search?q=%22Mammut%20Store%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22Switzerland%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "source": "google_customer_discovery",
-      "sourceType": "google",
-      "discoveryProvider": "google",
-      "channel": "",
-      "identityStatus": "verified",
-      "officialSocialProfileVerified": false,
-      "socialProfileEvidenceUrl": "",
-      "socialProfileVerifiedAt": "",
-      "profiledAt": "",
-      "partnershipStatus": "",
-      "doNotOutreach": false,
-      "automationStatus": "",
-      "partnerNote": "",
-      "sendStatus": "",
-      "workingTime": {
-        "dueNow": true,
-        "timeZone": "Europe/Zurich",
-        "localTime": "Tue 14:06",
-        "window": "afternoon",
-        "nextBest": "now",
-        "weight": 0.9
-      },
-      "platform": "website_form",
-      "channelType": "website_form",
-      "platformUrl": "https://www.mammut.com/",
-      "url": "https://www.mammut.com/",
-      "contactUrl": "https://www.mammut.com/",
-      "contactSearchUrl": "https://www.google.com/search?q=site%3Awww.mammut.com%20%22Mammut%20Store%22%20contact%20buyer%20wholesale%20email%20vendor",
-      "emailFrom": "leo@flextailgear.com",
-      "websiteContactSubject": "FLEXTAIL retail partnership | 2026 assortment",
-      "websiteContactMessage": "Dear Mammut Store Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
-      "websiteContactFlow": "open_official_contact_us_fill_attach_auto_submit",
-      "action": "verify_target",
-      "reason": "homepage_only_contact_path_requires_verification",
-      "alternateChannels": {
-        "linkedin": "",
-        "instagram": "",
-        "facebook": "https://www.facebook.com/mammut",
-        "websiteContact": "https://www.mammut.com/"
-      },
-      "invalidChannels": {
-        "instagram": {
-          "url": "https://www.instagram.com/mammut_swiss1862/",
-          "status": "identity_mismatch",
-          "evidence": "Instagram handle mammut_swiss1862 does not match company Mammut Store; do not use this account for outreach."
-        }
-      },
-      "identitySource": "official homepage found; exact buyer/contact path still requires verification",
-      "channelPriority": 3,
-      "discoveredAt": "2026-07-29T09:22:31.075Z",
-      "targetRegion": "europe",
-      "targetRegionScore": 45,
-      "contactChannelScore": 17,
-      "dealProbabilityScore": 140,
-      "priorityScore": 140
     },
     {
       "id": "google-customer-esprinet-group-linkedin",
@@ -14539,7 +13869,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/Rome",
-        "localTime": "Tue 14:06",
+        "localTime": "Tue 14:44",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
@@ -14618,7 +13948,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/Berlin",
-        "localTime": "Tue 14:06",
+        "localTime": "Tue 14:44",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
@@ -14699,7 +14029,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/Oslo",
-        "localTime": "Tue 14:06",
+        "localTime": "Tue 14:44",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
@@ -14731,93 +14061,6 @@
       "contactChannelScore": 17,
       "dealProbabilityScore": 218,
       "priorityScore": 218
-    },
-    {
-      "id": "google-customer-mammut-store-facebook",
-      "name": "Mammut Store",
-      "company": "Mammut Store",
-      "customerType": "key_account",
-      "discoveryMode": "autonomous_refill",
-      "country": "Switzerland",
-      "countryEn": "Switzerland",
-      "fitScore": 84,
-      "fitTier": "A",
-      "marketScore": 4.5,
-      "marketStatus": "exclusive",
-      "agencyState": "exclusive",
-      "agentCompany": "INNPRO Robert Błędowski Sp. z o.o.",
-      "keyword": "verified outdoor, camping and travel retail social refill channel",
-      "role": "Outdoor, camping, travel accessories, ecommerce or category buyer.",
-      "background": "Mammut Store is a qualified outdoor, camping, travel or sport retail prospect with category fit for FLEXTAIL portable outdoor electrics and Vollyc practical 3C products.",
-      "buyerPersona": "Outdoor, camping, travel accessories, ecommerce or category buyer.",
-      "targetMarkets": "",
-      "excludedMarkets": "",
-      "productCategory": "verified outdoor, camping and travel retail social refill channel",
-      "businessModel": "Retail Chain",
-      "productFit": "FLEXTAIL portable pumps, outdoor power, camping lighting and compact camping accessories",
-      "opportunity": "Mammut Store is a qualified outdoor, camping, travel or sport retail prospect with category fit for FLEXTAIL portable outdoor electrics and Vollyc practical 3C products.",
-      "linkedin_url": "",
-      "linkedin": "",
-      "publicEmail": "",
-      "contactEmail": "",
-      "vendorPortal": "https://www.mammut.com/",
-      "contactPhone": "",
-      "contactNote": "",
-      "publicEmailStatus": "",
-      "website": "https://www.mammut.com/",
-      "evidenceUrl": "https://www.google.com/search?q=%22Mammut%20Store%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22Switzerland%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "sourceEvidenceUrl": "verified outdoor retailer official website and public social profile refill",
-      "externalVerificationStatus": "",
-      "query": "https://www.google.com/search?q=%22Mammut%20Store%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22Switzerland%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "source": "google_customer_discovery",
-      "sourceType": "google",
-      "discoveryProvider": "google",
-      "channel": "",
-      "identityStatus": "verified",
-      "officialSocialProfileVerified": false,
-      "socialProfileEvidenceUrl": "",
-      "socialProfileVerifiedAt": "",
-      "profiledAt": "",
-      "partnershipStatus": "",
-      "doNotOutreach": false,
-      "automationStatus": "",
-      "partnerNote": "",
-      "sendStatus": "",
-      "workingTime": {
-        "dueNow": true,
-        "timeZone": "Europe/Zurich",
-        "localTime": "Tue 14:06",
-        "window": "afternoon",
-        "nextBest": "now",
-        "weight": 0.9
-      },
-      "platform": "facebook",
-      "platformUrl": "https://www.facebook.com/mammut",
-      "url": "https://www.facebook.com/mammut",
-      "action": "develop",
-      "reason": "concrete_google_discovered_major_customer_facebook",
-      "alternateChannels": {
-        "linkedin": "",
-        "instagram": "",
-        "facebook": "https://www.facebook.com/mammut",
-        "websiteContact": "https://www.mammut.com/"
-      },
-      "invalidChannels": {
-        "instagram": {
-          "url": "https://www.instagram.com/mammut_swiss1862/",
-          "status": "identity_mismatch",
-          "evidence": "Instagram handle mammut_swiss1862 does not match company Mammut Store; do not use this account for outreach."
-        }
-      },
-      "facebookStatus": "verified_official_page_candidate",
-      "identitySource": "official Facebook page candidate + official website + Google background query",
-      "channelPriority": 2,
-      "discoveredAt": "2026-07-29T09:22:31.075Z",
-      "targetRegion": "europe",
-      "targetRegionScore": 45,
-      "contactChannelScore": 17,
-      "dealProbabilityScore": 140,
-      "priorityScore": 140
     },
     {
       "id": "google-customer-bergfreunde-instagram",
@@ -14873,7 +14116,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/Berlin",
-        "localTime": "Tue 14:06",
+        "localTime": "Tue 14:44",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
@@ -14952,7 +14195,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/Berlin",
-        "localTime": "Tue 14:06",
+        "localTime": "Tue 14:44",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
@@ -15407,7 +14650,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/Dublin",
-        "localTime": "Tue 13:06",
+        "localTime": "Tue 13:44",
         "window": "outside_work_hours",
         "nextBest": "Europe/Dublin afternoon",
         "weight": 0
@@ -15494,7 +14737,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Asia/Shanghai",
-        "localTime": "Tue 20:06",
+        "localTime": "Tue 20:44",
         "window": "outside_work_hours",
         "nextBest": "Asia/Shanghai morning",
         "weight": 0
@@ -15581,7 +14824,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/London",
-        "localTime": "Tue 13:06",
+        "localTime": "Tue 13:44",
         "window": "outside_work_hours",
         "nextBest": "Europe/London afternoon",
         "weight": 0
@@ -15668,7 +14911,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Asia/Shanghai",
-        "localTime": "Tue 20:06",
+        "localTime": "Tue 20:44",
         "window": "outside_work_hours",
         "nextBest": "Asia/Shanghai morning",
         "weight": 0
@@ -15755,7 +14998,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/London",
-        "localTime": "Tue 13:06",
+        "localTime": "Tue 13:44",
         "window": "outside_work_hours",
         "nextBest": "Europe/London afternoon",
         "weight": 0
@@ -15842,7 +15085,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/London",
-        "localTime": "Tue 13:06",
+        "localTime": "Tue 13:44",
         "window": "outside_work_hours",
         "nextBest": "Europe/London afternoon",
         "weight": 0
@@ -15929,7 +15172,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/London",
-        "localTime": "Tue 13:06",
+        "localTime": "Tue 13:44",
         "window": "outside_work_hours",
         "nextBest": "Europe/London afternoon",
         "weight": 0
@@ -16016,7 +15259,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Asia/Shanghai",
-        "localTime": "Tue 20:06",
+        "localTime": "Tue 20:44",
         "window": "outside_work_hours",
         "nextBest": "Asia/Shanghai morning",
         "weight": 0
@@ -16103,7 +15346,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/Dublin",
-        "localTime": "Tue 13:06",
+        "localTime": "Tue 13:44",
         "window": "outside_work_hours",
         "nextBest": "Europe/Dublin afternoon",
         "weight": 0
@@ -16190,7 +15433,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/London",
-        "localTime": "Tue 13:06",
+        "localTime": "Tue 13:44",
         "window": "outside_work_hours",
         "nextBest": "Europe/London afternoon",
         "weight": 0
@@ -16277,7 +15520,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Asia/Shanghai",
-        "localTime": "Tue 20:06",
+        "localTime": "Tue 20:44",
         "window": "outside_work_hours",
         "nextBest": "Asia/Shanghai morning",
         "weight": 0
@@ -16364,7 +15607,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/London",
-        "localTime": "Tue 13:06",
+        "localTime": "Tue 13:44",
         "window": "outside_work_hours",
         "nextBest": "Europe/London afternoon",
         "weight": 0
@@ -16451,7 +15694,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/London",
-        "localTime": "Tue 13:06",
+        "localTime": "Tue 13:44",
         "window": "outside_work_hours",
         "nextBest": "Europe/London afternoon",
         "weight": 0
@@ -16538,7 +15781,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Asia/Shanghai",
-        "localTime": "Tue 20:06",
+        "localTime": "Tue 20:44",
         "window": "outside_work_hours",
         "nextBest": "Asia/Shanghai morning",
         "weight": 0
@@ -16625,7 +15868,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/London",
-        "localTime": "Tue 13:06",
+        "localTime": "Tue 13:44",
         "window": "outside_work_hours",
         "nextBest": "Europe/London afternoon",
         "weight": 0
@@ -16712,7 +15955,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Tue 08:06",
+        "localTime": "Tue 08:44",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -16799,7 +16042,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Asia/Shanghai",
-        "localTime": "Tue 20:06",
+        "localTime": "Tue 20:44",
         "window": "outside_work_hours",
         "nextBest": "Asia/Shanghai morning",
         "weight": 0
@@ -16886,7 +16129,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Tue 08:06",
+        "localTime": "Tue 08:44",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -16973,7 +16216,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Tue 08:06",
+        "localTime": "Tue 08:44",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -17060,7 +16303,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Tue 08:06",
+        "localTime": "Tue 08:44",
         "window": "outside_work_hours",
         "nextBest": "America/Toronto morning",
         "weight": 0
@@ -17147,7 +16390,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Tue 08:06",
+        "localTime": "Tue 08:44",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -17179,93 +16422,6 @@
       "contactChannelScore": 13,
       "dealProbabilityScore": 204,
       "priorityScore": 204
-    },
-    {
-      "id": "google-customer-72hours-website-contact",
-      "name": "72hours",
-      "company": "72hours",
-      "customerType": "key_account",
-      "discoveryMode": "autonomous_refill",
-      "country": "Canada",
-      "countryEn": "Canada",
-      "fitScore": 84,
-      "fitTier": "A",
-      "marketScore": 4.5,
-      "marketStatus": "open",
-      "agencyState": "open",
-      "agentCompany": "",
-      "keyword": "verified outdoor, camping and travel retail social refill channel",
-      "role": "Outdoor, camping, travel accessories, ecommerce or category buyer.",
-      "background": "72hours is a qualified outdoor, camping, travel or sport retail prospect with category fit for FLEXTAIL portable outdoor electrics and Vollyc practical 3C products.",
-      "buyerPersona": "Outdoor, camping, travel accessories, ecommerce or category buyer.",
-      "targetMarkets": "",
-      "excludedMarkets": "",
-      "productCategory": "verified outdoor, camping and travel retail social refill channel",
-      "businessModel": "Retail Chain",
-      "productFit": "FLEXTAIL portable pumps, outdoor power, camping lighting and compact camping accessories",
-      "opportunity": "72hours is a qualified outdoor, camping, travel or sport retail prospect with category fit for FLEXTAIL portable outdoor electrics and Vollyc practical 3C products.",
-      "linkedin_url": "",
-      "linkedin": "",
-      "publicEmail": "",
-      "contactEmail": "",
-      "vendorPortal": "https://72hours.ca/",
-      "contactPhone": "",
-      "contactNote": "",
-      "publicEmailStatus": "",
-      "website": "https://72hours.ca/",
-      "evidenceUrl": "https://www.google.com/search?q=%2272hours%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22Canada%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "sourceEvidenceUrl": "verified outdoor retailer official website and public social profile refill",
-      "externalVerificationStatus": "",
-      "query": "https://www.google.com/search?q=%2272hours%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22Canada%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "source": "google_customer_discovery",
-      "sourceType": "google",
-      "discoveryProvider": "google",
-      "channel": "",
-      "identityStatus": "verified",
-      "officialSocialProfileVerified": false,
-      "socialProfileEvidenceUrl": "",
-      "socialProfileVerifiedAt": "",
-      "profiledAt": "",
-      "partnershipStatus": "",
-      "doNotOutreach": false,
-      "automationStatus": "",
-      "partnerNote": "",
-      "sendStatus": "",
-      "workingTime": {
-        "dueNow": false,
-        "timeZone": "America/Toronto",
-        "localTime": "Tue 08:06",
-        "window": "outside_work_hours",
-        "nextBest": "America/Toronto morning",
-        "weight": 0
-      },
-      "platform": "website_form",
-      "channelType": "website_form",
-      "platformUrl": "https://72hours.ca/",
-      "url": "https://72hours.ca/",
-      "contactUrl": "https://72hours.ca/",
-      "contactSearchUrl": "https://www.google.com/search?q=site%3A72hours.ca%20%2272hours%22%20contact%20buyer%20wholesale%20email%20vendor",
-      "emailFrom": "leo@flextailgear.com",
-      "websiteContactSubject": "FLEXTAIL retail partnership | 2026 assortment",
-      "websiteContactMessage": "Dear 72hours Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
-      "websiteContactFlow": "open_official_contact_us_fill_attach_auto_submit",
-      "action": "verify_target",
-      "reason": "homepage_only_contact_path_requires_verification",
-      "alternateChannels": {
-        "linkedin": "",
-        "instagram": "https://www.instagram.com/72hours.ca/",
-        "facebook": "https://www.facebook.com/72hours.ca",
-        "websiteContact": "https://72hours.ca/"
-      },
-      "invalidChannels": {},
-      "identitySource": "official homepage found; exact buyer/contact path still requires verification",
-      "channelPriority": 3,
-      "discoveredAt": "2026-07-16T05:03:53.170Z",
-      "targetRegion": "americas",
-      "targetRegionScore": 30,
-      "contactChannelScore": 17,
-      "dealProbabilityScore": 203,
-      "priorityScore": 203
     },
     {
       "id": "google-customer-atmosphere-website-contact",
@@ -17321,7 +16477,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Tue 08:06",
+        "localTime": "Tue 08:44",
         "window": "outside_work_hours",
         "nextBest": "America/Toronto morning",
         "weight": 0
@@ -17408,7 +16564,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Tue 08:06",
+        "localTime": "Tue 08:44",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -17495,7 +16651,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Tue 08:06",
+        "localTime": "Tue 08:44",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -17525,93 +16681,6 @@
           "evidence": "Instagram handle easternmntnsports does not match company Eastern Mountain Sports; do not use this account for outreach."
         }
       },
-      "identitySource": "official homepage found; exact buyer/contact path still requires verification",
-      "channelPriority": 3,
-      "discoveredAt": "2026-07-16T05:03:53.170Z",
-      "targetRegion": "americas",
-      "targetRegionScore": 30,
-      "contactChannelScore": 17,
-      "dealProbabilityScore": 203,
-      "priorityScore": 203
-    },
-    {
-      "id": "google-customer-jax-outdoor-gear-website-contact",
-      "name": "Jax Outdoor Gear",
-      "company": "Jax Outdoor Gear",
-      "customerType": "key_account",
-      "discoveryMode": "autonomous_refill",
-      "country": "United States",
-      "countryEn": "United States",
-      "fitScore": 84,
-      "fitTier": "A",
-      "marketScore": 4.5,
-      "marketStatus": "open",
-      "agencyState": "open",
-      "agentCompany": "",
-      "keyword": "verified outdoor, camping and travel retail social refill channel",
-      "role": "Outdoor, camping, travel accessories, ecommerce or category buyer.",
-      "background": "Jax Outdoor Gear is a qualified outdoor, camping, travel or sport retail prospect with category fit for FLEXTAIL portable outdoor electrics and Vollyc practical 3C products.",
-      "buyerPersona": "Outdoor, camping, travel accessories, ecommerce or category buyer.",
-      "targetMarkets": "",
-      "excludedMarkets": "",
-      "productCategory": "verified outdoor, camping and travel retail social refill channel",
-      "businessModel": "Retail Chain",
-      "productFit": "FLEXTAIL portable pumps, outdoor power, camping lighting and compact camping accessories",
-      "opportunity": "Jax Outdoor Gear is a qualified outdoor, camping, travel or sport retail prospect with category fit for FLEXTAIL portable outdoor electrics and Vollyc practical 3C products.",
-      "linkedin_url": "",
-      "linkedin": "",
-      "publicEmail": "",
-      "contactEmail": "",
-      "vendorPortal": "https://www.jaxgoods.com/",
-      "contactPhone": "",
-      "contactNote": "",
-      "publicEmailStatus": "",
-      "website": "https://www.jaxgoods.com/",
-      "evidenceUrl": "https://www.google.com/search?q=%22Jax%20Outdoor%20Gear%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "sourceEvidenceUrl": "verified outdoor retailer official website and public social profile refill",
-      "externalVerificationStatus": "",
-      "query": "https://www.google.com/search?q=%22Jax%20Outdoor%20Gear%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "source": "google_customer_discovery",
-      "sourceType": "google",
-      "discoveryProvider": "google",
-      "channel": "",
-      "identityStatus": "verified",
-      "officialSocialProfileVerified": false,
-      "socialProfileEvidenceUrl": "",
-      "socialProfileVerifiedAt": "",
-      "profiledAt": "",
-      "partnershipStatus": "",
-      "doNotOutreach": false,
-      "automationStatus": "",
-      "partnerNote": "",
-      "sendStatus": "",
-      "workingTime": {
-        "dueNow": false,
-        "timeZone": "America/New_York",
-        "localTime": "Tue 08:06",
-        "window": "outside_work_hours",
-        "nextBest": "America/New_York morning",
-        "weight": 0
-      },
-      "platform": "website_form",
-      "channelType": "website_form",
-      "platformUrl": "https://www.jaxgoods.com/",
-      "url": "https://www.jaxgoods.com/",
-      "contactUrl": "https://www.jaxgoods.com/",
-      "contactSearchUrl": "https://www.google.com/search?q=site%3Awww.jaxgoods.com%20%22Jax%20Outdoor%20Gear%22%20contact%20buyer%20wholesale%20email%20vendor",
-      "emailFrom": "leo@flextailgear.com",
-      "websiteContactSubject": "FLEXTAIL retail partnership | 2026 assortment",
-      "websiteContactMessage": "Dear Jax Outdoor Gear Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
-      "websiteContactFlow": "open_official_contact_us_fill_attach_auto_submit",
-      "action": "verify_target",
-      "reason": "homepage_only_contact_path_requires_verification",
-      "alternateChannels": {
-        "linkedin": "",
-        "instagram": "https://www.instagram.com/jaxoutdoor/",
-        "facebook": "https://www.facebook.com/jaxoutdoorgear",
-        "websiteContact": "https://www.jaxgoods.com/"
-      },
-      "invalidChannels": {},
       "identitySource": "official homepage found; exact buyer/contact path still requires verification",
       "channelPriority": 3,
       "discoveredAt": "2026-07-16T05:03:53.170Z",
@@ -17675,7 +16744,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Tue 08:06",
+        "localTime": "Tue 08:44",
         "window": "outside_work_hours",
         "nextBest": "America/Toronto morning",
         "weight": 0
@@ -17762,7 +16831,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Tue 08:06",
+        "localTime": "Tue 08:44",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -17855,7 +16924,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Tue 08:06",
+        "localTime": "Tue 08:44",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -17942,7 +17011,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Tue 08:06",
+        "localTime": "Tue 08:44",
         "window": "outside_work_hours",
         "nextBest": "America/Toronto morning",
         "weight": 0
@@ -18029,7 +17098,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Tue 08:06",
+        "localTime": "Tue 08:44",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -18116,7 +17185,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Tue 08:06",
+        "localTime": "Tue 08:44",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -18203,7 +17272,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Tue 08:06",
+        "localTime": "Tue 08:44",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -18290,7 +17359,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Tue 08:06",
+        "localTime": "Tue 08:44",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -18377,7 +17446,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Tue 08:06",
+        "localTime": "Tue 08:44",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -18464,7 +17533,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Tue 08:06",
+        "localTime": "Tue 08:44",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -18551,7 +17620,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Tue 08:06",
+        "localTime": "Tue 08:44",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -18638,7 +17707,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Tue 08:06",
+        "localTime": "Tue 08:44",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -18725,7 +17794,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Australia/Sydney",
-        "localTime": "Tue 22:06",
+        "localTime": "Tue 22:44",
         "window": "outside_work_hours",
         "nextBest": "Australia/Sydney morning",
         "weight": 0
@@ -18812,7 +17881,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Pacific/Auckland",
-        "localTime": "Wed 00:06",
+        "localTime": "Wed 00:44",
         "window": "outside_work_hours",
         "nextBest": "Pacific/Auckland morning",
         "weight": 0
@@ -18899,7 +17968,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Australia/Sydney",
-        "localTime": "Tue 22:06",
+        "localTime": "Tue 22:44",
         "window": "outside_work_hours",
         "nextBest": "Australia/Sydney morning",
         "weight": 0
@@ -18986,7 +18055,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Australia/Sydney",
-        "localTime": "Tue 22:06",
+        "localTime": "Tue 22:44",
         "window": "outside_work_hours",
         "nextBest": "Australia/Sydney morning",
         "weight": 0
@@ -19073,7 +18142,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/Dublin",
-        "localTime": "Tue 13:06",
+        "localTime": "Tue 13:44",
         "window": "outside_work_hours",
         "nextBest": "Europe/Dublin afternoon",
         "weight": 0
@@ -19152,7 +18221,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/Dublin",
-        "localTime": "Tue 13:06",
+        "localTime": "Tue 13:44",
         "window": "outside_work_hours",
         "nextBest": "Europe/Dublin afternoon",
         "weight": 0
@@ -19233,7 +18302,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/London",
-        "localTime": "Tue 13:06",
+        "localTime": "Tue 13:44",
         "window": "outside_work_hours",
         "nextBest": "Europe/London afternoon",
         "weight": 0
@@ -19314,7 +18383,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/London",
-        "localTime": "Tue 13:06",
+        "localTime": "Tue 13:44",
         "window": "outside_work_hours",
         "nextBest": "Europe/London afternoon",
         "weight": 0
@@ -19395,7 +18464,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Tue 08:06",
+        "localTime": "Tue 08:44",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -19421,87 +18490,6 @@
       "contactChannelScore": 29,
       "dealProbabilityScore": 215,
       "priorityScore": 215
-    },
-    {
-      "id": "google-customer-72hours-facebook",
-      "name": "72hours",
-      "company": "72hours",
-      "customerType": "key_account",
-      "discoveryMode": "autonomous_refill",
-      "country": "Canada",
-      "countryEn": "Canada",
-      "fitScore": 84,
-      "fitTier": "A",
-      "marketScore": 4.5,
-      "marketStatus": "open",
-      "agencyState": "open",
-      "agentCompany": "",
-      "keyword": "verified outdoor, camping and travel retail social refill channel",
-      "role": "Outdoor, camping, travel accessories, ecommerce or category buyer.",
-      "background": "72hours is a qualified outdoor, camping, travel or sport retail prospect with category fit for FLEXTAIL portable outdoor electrics and Vollyc practical 3C products.",
-      "buyerPersona": "Outdoor, camping, travel accessories, ecommerce or category buyer.",
-      "targetMarkets": "",
-      "excludedMarkets": "",
-      "productCategory": "verified outdoor, camping and travel retail social refill channel",
-      "businessModel": "Retail Chain",
-      "productFit": "FLEXTAIL portable pumps, outdoor power, camping lighting and compact camping accessories",
-      "opportunity": "72hours is a qualified outdoor, camping, travel or sport retail prospect with category fit for FLEXTAIL portable outdoor electrics and Vollyc practical 3C products.",
-      "linkedin_url": "",
-      "linkedin": "",
-      "publicEmail": "",
-      "contactEmail": "",
-      "vendorPortal": "https://72hours.ca/",
-      "contactPhone": "",
-      "contactNote": "",
-      "publicEmailStatus": "",
-      "website": "https://72hours.ca/",
-      "evidenceUrl": "https://www.google.com/search?q=%2272hours%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22Canada%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "sourceEvidenceUrl": "verified outdoor retailer official website and public social profile refill",
-      "externalVerificationStatus": "",
-      "query": "https://www.google.com/search?q=%2272hours%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22Canada%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "source": "google_customer_discovery",
-      "sourceType": "google",
-      "discoveryProvider": "google",
-      "channel": "",
-      "identityStatus": "verified",
-      "officialSocialProfileVerified": false,
-      "socialProfileEvidenceUrl": "",
-      "socialProfileVerifiedAt": "",
-      "profiledAt": "",
-      "partnershipStatus": "",
-      "doNotOutreach": false,
-      "automationStatus": "",
-      "partnerNote": "",
-      "sendStatus": "",
-      "workingTime": {
-        "dueNow": false,
-        "timeZone": "America/Toronto",
-        "localTime": "Tue 08:06",
-        "window": "outside_work_hours",
-        "nextBest": "America/Toronto morning",
-        "weight": 0
-      },
-      "platform": "facebook",
-      "platformUrl": "https://www.facebook.com/72hours.ca",
-      "url": "https://www.facebook.com/72hours.ca",
-      "action": "develop",
-      "reason": "concrete_google_discovered_major_customer_facebook",
-      "alternateChannels": {
-        "linkedin": "",
-        "instagram": "https://www.instagram.com/72hours.ca/",
-        "facebook": "https://www.facebook.com/72hours.ca",
-        "websiteContact": "https://72hours.ca/"
-      },
-      "invalidChannels": {},
-      "facebookStatus": "verified_official_page_candidate",
-      "identitySource": "official Facebook page candidate + official website + Google background query",
-      "channelPriority": 2,
-      "discoveredAt": "2026-07-16T05:03:53.170Z",
-      "targetRegion": "americas",
-      "targetRegionScore": 30,
-      "contactChannelScore": 17,
-      "dealProbabilityScore": 203,
-      "priorityScore": 203
     },
     {
       "id": "google-customer-atmosphere-facebook",
@@ -19557,7 +18545,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Tue 08:06",
+        "localTime": "Tue 08:44",
         "window": "outside_work_hours",
         "nextBest": "America/Toronto morning",
         "weight": 0
@@ -19638,7 +18626,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Tue 08:06",
+        "localTime": "Tue 08:44",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -19661,87 +18649,6 @@
           "evidence": "Instagram handle easternmntnsports does not match company Eastern Mountain Sports; do not use this account for outreach."
         }
       },
-      "facebookStatus": "verified_official_page_candidate",
-      "identitySource": "official Facebook page candidate + official website + Google background query",
-      "channelPriority": 2,
-      "discoveredAt": "2026-07-16T05:03:53.170Z",
-      "targetRegion": "americas",
-      "targetRegionScore": 30,
-      "contactChannelScore": 17,
-      "dealProbabilityScore": 203,
-      "priorityScore": 203
-    },
-    {
-      "id": "google-customer-jax-outdoor-gear-facebook",
-      "name": "Jax Outdoor Gear",
-      "company": "Jax Outdoor Gear",
-      "customerType": "key_account",
-      "discoveryMode": "autonomous_refill",
-      "country": "United States",
-      "countryEn": "United States",
-      "fitScore": 84,
-      "fitTier": "A",
-      "marketScore": 4.5,
-      "marketStatus": "open",
-      "agencyState": "open",
-      "agentCompany": "",
-      "keyword": "verified outdoor, camping and travel retail social refill channel",
-      "role": "Outdoor, camping, travel accessories, ecommerce or category buyer.",
-      "background": "Jax Outdoor Gear is a qualified outdoor, camping, travel or sport retail prospect with category fit for FLEXTAIL portable outdoor electrics and Vollyc practical 3C products.",
-      "buyerPersona": "Outdoor, camping, travel accessories, ecommerce or category buyer.",
-      "targetMarkets": "",
-      "excludedMarkets": "",
-      "productCategory": "verified outdoor, camping and travel retail social refill channel",
-      "businessModel": "Retail Chain",
-      "productFit": "FLEXTAIL portable pumps, outdoor power, camping lighting and compact camping accessories",
-      "opportunity": "Jax Outdoor Gear is a qualified outdoor, camping, travel or sport retail prospect with category fit for FLEXTAIL portable outdoor electrics and Vollyc practical 3C products.",
-      "linkedin_url": "",
-      "linkedin": "",
-      "publicEmail": "",
-      "contactEmail": "",
-      "vendorPortal": "https://www.jaxgoods.com/",
-      "contactPhone": "",
-      "contactNote": "",
-      "publicEmailStatus": "",
-      "website": "https://www.jaxgoods.com/",
-      "evidenceUrl": "https://www.google.com/search?q=%22Jax%20Outdoor%20Gear%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "sourceEvidenceUrl": "verified outdoor retailer official website and public social profile refill",
-      "externalVerificationStatus": "",
-      "query": "https://www.google.com/search?q=%22Jax%20Outdoor%20Gear%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "source": "google_customer_discovery",
-      "sourceType": "google",
-      "discoveryProvider": "google",
-      "channel": "",
-      "identityStatus": "verified",
-      "officialSocialProfileVerified": false,
-      "socialProfileEvidenceUrl": "",
-      "socialProfileVerifiedAt": "",
-      "profiledAt": "",
-      "partnershipStatus": "",
-      "doNotOutreach": false,
-      "automationStatus": "",
-      "partnerNote": "",
-      "sendStatus": "",
-      "workingTime": {
-        "dueNow": false,
-        "timeZone": "America/New_York",
-        "localTime": "Tue 08:06",
-        "window": "outside_work_hours",
-        "nextBest": "America/New_York morning",
-        "weight": 0
-      },
-      "platform": "facebook",
-      "platformUrl": "https://www.facebook.com/jaxoutdoorgear",
-      "url": "https://www.facebook.com/jaxoutdoorgear",
-      "action": "develop",
-      "reason": "concrete_google_discovered_major_customer_facebook",
-      "alternateChannels": {
-        "linkedin": "",
-        "instagram": "https://www.instagram.com/jaxoutdoor/",
-        "facebook": "https://www.facebook.com/jaxoutdoorgear",
-        "websiteContact": "https://www.jaxgoods.com/"
-      },
-      "invalidChannels": {},
       "facebookStatus": "verified_official_page_candidate",
       "identitySource": "official Facebook page candidate + official website + Google background query",
       "channelPriority": 2,
@@ -19806,7 +18713,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Tue 08:06",
+        "localTime": "Tue 08:44",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -19893,7 +18800,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Tue 08:06",
+        "localTime": "Tue 08:44",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -19974,7 +18881,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Pacific/Auckland",
-        "localTime": "Wed 00:06",
+        "localTime": "Wed 00:44",
         "window": "outside_work_hours",
         "nextBest": "Pacific/Auckland morning",
         "weight": 0
@@ -20055,7 +18962,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/Dublin",
-        "localTime": "Tue 13:06",
+        "localTime": "Tue 13:44",
         "window": "outside_work_hours",
         "nextBest": "Europe/Dublin afternoon",
         "weight": 0
@@ -20134,7 +19041,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/London",
-        "localTime": "Tue 13:06",
+        "localTime": "Tue 13:44",
         "window": "outside_work_hours",
         "nextBest": "Europe/London afternoon",
         "weight": 0
@@ -20213,7 +19120,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/London",
-        "localTime": "Tue 13:06",
+        "localTime": "Tue 13:44",
         "window": "outside_work_hours",
         "nextBest": "Europe/London afternoon",
         "weight": 0
@@ -20292,7 +19199,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Tue 08:06",
+        "localTime": "Tue 08:44",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -20371,7 +19278,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Tue 08:06",
+        "localTime": "Tue 08:44",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -20395,85 +19302,6 @@
       "contactChannelScore": 17,
       "dealProbabilityScore": 207,
       "priorityScore": 207
-    },
-    {
-      "id": "google-customer-72hours-instagram",
-      "name": "72hours",
-      "company": "72hours",
-      "customerType": "key_account",
-      "discoveryMode": "autonomous_refill",
-      "country": "Canada",
-      "countryEn": "Canada",
-      "fitScore": 84,
-      "fitTier": "A",
-      "marketScore": 4.5,
-      "marketStatus": "open",
-      "agencyState": "open",
-      "agentCompany": "",
-      "keyword": "verified outdoor, camping and travel retail social refill channel",
-      "role": "Outdoor, camping, travel accessories, ecommerce or category buyer.",
-      "background": "72hours is a qualified outdoor, camping, travel or sport retail prospect with category fit for FLEXTAIL portable outdoor electrics and Vollyc practical 3C products.",
-      "buyerPersona": "Outdoor, camping, travel accessories, ecommerce or category buyer.",
-      "targetMarkets": "",
-      "excludedMarkets": "",
-      "productCategory": "verified outdoor, camping and travel retail social refill channel",
-      "businessModel": "Retail Chain",
-      "productFit": "FLEXTAIL portable pumps, outdoor power, camping lighting and compact camping accessories",
-      "opportunity": "72hours is a qualified outdoor, camping, travel or sport retail prospect with category fit for FLEXTAIL portable outdoor electrics and Vollyc practical 3C products.",
-      "linkedin_url": "",
-      "linkedin": "",
-      "publicEmail": "",
-      "contactEmail": "",
-      "vendorPortal": "https://72hours.ca/",
-      "contactPhone": "",
-      "contactNote": "",
-      "publicEmailStatus": "",
-      "website": "https://72hours.ca/",
-      "evidenceUrl": "https://www.google.com/search?q=%2272hours%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22Canada%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "sourceEvidenceUrl": "verified outdoor retailer official website and public social profile refill",
-      "externalVerificationStatus": "",
-      "query": "https://www.google.com/search?q=%2272hours%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22Canada%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "source": "google_customer_discovery",
-      "sourceType": "google",
-      "discoveryProvider": "google",
-      "channel": "",
-      "identityStatus": "verified",
-      "officialSocialProfileVerified": false,
-      "socialProfileEvidenceUrl": "",
-      "socialProfileVerifiedAt": "",
-      "profiledAt": "",
-      "partnershipStatus": "",
-      "doNotOutreach": false,
-      "automationStatus": "",
-      "partnerNote": "",
-      "sendStatus": "",
-      "workingTime": {
-        "dueNow": false,
-        "timeZone": "America/Toronto",
-        "localTime": "Tue 08:06",
-        "window": "outside_work_hours",
-        "nextBest": "America/Toronto morning",
-        "weight": 0
-      },
-      "platform": "instagram",
-      "platformUrl": "https://www.instagram.com/72hours.ca/",
-      "url": "https://www.instagram.com/72hours.ca/",
-      "action": "develop",
-      "reason": "concrete_google_discovered_major_customer_instagram",
-      "alternateChannels": {
-        "linkedin": "",
-        "instagram": "https://www.instagram.com/72hours.ca/",
-        "facebook": "https://www.facebook.com/72hours.ca",
-        "websiteContact": "https://72hours.ca/"
-      },
-      "identitySource": "official website/social profile + Google background query",
-      "channelPriority": 1,
-      "discoveredAt": "2026-07-16T05:03:53.170Z",
-      "targetRegion": "americas",
-      "targetRegionScore": 30,
-      "contactChannelScore": 17,
-      "dealProbabilityScore": 203,
-      "priorityScore": 203
     },
     {
       "id": "google-customer-atmosphere-instagram",
@@ -20529,7 +19357,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Tue 08:06",
+        "localTime": "Tue 08:44",
         "window": "outside_work_hours",
         "nextBest": "America/Toronto morning",
         "weight": 0
@@ -20544,85 +19372,6 @@
         "instagram": "https://www.instagram.com/atmosphereoutdoor/",
         "facebook": "https://www.facebook.com/Atmosphere",
         "websiteContact": "https://www.atmosphere.ca/"
-      },
-      "identitySource": "official website/social profile + Google background query",
-      "channelPriority": 1,
-      "discoveredAt": "2026-07-16T05:03:53.170Z",
-      "targetRegion": "americas",
-      "targetRegionScore": 30,
-      "contactChannelScore": 17,
-      "dealProbabilityScore": 203,
-      "priorityScore": 203
-    },
-    {
-      "id": "google-customer-jax-outdoor-gear-instagram",
-      "name": "Jax Outdoor Gear",
-      "company": "Jax Outdoor Gear",
-      "customerType": "key_account",
-      "discoveryMode": "autonomous_refill",
-      "country": "United States",
-      "countryEn": "United States",
-      "fitScore": 84,
-      "fitTier": "A",
-      "marketScore": 4.5,
-      "marketStatus": "open",
-      "agencyState": "open",
-      "agentCompany": "",
-      "keyword": "verified outdoor, camping and travel retail social refill channel",
-      "role": "Outdoor, camping, travel accessories, ecommerce or category buyer.",
-      "background": "Jax Outdoor Gear is a qualified outdoor, camping, travel or sport retail prospect with category fit for FLEXTAIL portable outdoor electrics and Vollyc practical 3C products.",
-      "buyerPersona": "Outdoor, camping, travel accessories, ecommerce or category buyer.",
-      "targetMarkets": "",
-      "excludedMarkets": "",
-      "productCategory": "verified outdoor, camping and travel retail social refill channel",
-      "businessModel": "Retail Chain",
-      "productFit": "FLEXTAIL portable pumps, outdoor power, camping lighting and compact camping accessories",
-      "opportunity": "Jax Outdoor Gear is a qualified outdoor, camping, travel or sport retail prospect with category fit for FLEXTAIL portable outdoor electrics and Vollyc practical 3C products.",
-      "linkedin_url": "",
-      "linkedin": "",
-      "publicEmail": "",
-      "contactEmail": "",
-      "vendorPortal": "https://www.jaxgoods.com/",
-      "contactPhone": "",
-      "contactNote": "",
-      "publicEmailStatus": "",
-      "website": "https://www.jaxgoods.com/",
-      "evidenceUrl": "https://www.google.com/search?q=%22Jax%20Outdoor%20Gear%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "sourceEvidenceUrl": "verified outdoor retailer official website and public social profile refill",
-      "externalVerificationStatus": "",
-      "query": "https://www.google.com/search?q=%22Jax%20Outdoor%20Gear%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "source": "google_customer_discovery",
-      "sourceType": "google",
-      "discoveryProvider": "google",
-      "channel": "",
-      "identityStatus": "verified",
-      "officialSocialProfileVerified": false,
-      "socialProfileEvidenceUrl": "",
-      "socialProfileVerifiedAt": "",
-      "profiledAt": "",
-      "partnershipStatus": "",
-      "doNotOutreach": false,
-      "automationStatus": "",
-      "partnerNote": "",
-      "sendStatus": "",
-      "workingTime": {
-        "dueNow": false,
-        "timeZone": "America/New_York",
-        "localTime": "Tue 08:06",
-        "window": "outside_work_hours",
-        "nextBest": "America/New_York morning",
-        "weight": 0
-      },
-      "platform": "instagram",
-      "platformUrl": "https://www.instagram.com/jaxoutdoor/",
-      "url": "https://www.instagram.com/jaxoutdoor/",
-      "action": "develop",
-      "reason": "concrete_google_discovered_major_customer_instagram",
-      "alternateChannels": {
-        "linkedin": "",
-        "instagram": "https://www.instagram.com/jaxoutdoor/",
-        "facebook": "https://www.facebook.com/jaxoutdoorgear",
-        "websiteContact": "https://www.jaxgoods.com/"
       },
       "identitySource": "official website/social profile + Google background query",
       "channelPriority": 1,
@@ -20687,7 +19436,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Tue 08:06",
+        "localTime": "Tue 08:44",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -20766,7 +19515,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Pacific/Auckland",
-        "localTime": "Wed 00:06",
+        "localTime": "Wed 00:44",
         "window": "outside_work_hours",
         "nextBest": "Pacific/Auckland morning",
         "weight": 0
@@ -20974,6 +19723,374 @@
       "priorityScore": 100,
       "potentialSource": "customer_table",
       "nextAction": "background_check_then_verify_channel"
+    },
+    {
+      "id": 6,
+      "name": "Lisa Chang",
+      "company": "L.L.Bean",
+      "role": "Head of Buying",
+      "category": "camping",
+      "ka_flag": false,
+      "priority": "?",
+      "status": "Pending",
+      "keyword_used": "outdoor equipment importer",
+      "message": "Hi Lisa,\n\nFlextail makes reliable portable power stations for outdoor adventures. We're interested in working with established outdoor retailers.\n\nBest,\nDavid",
+      "source": "outreach_data",
+      "country": "",
+      "countryEn": "",
+      "platform": "research",
+      "fitScore": 100,
+      "fitTier": "A",
+      "sourceType": "customer_table",
+      "website": "",
+      "url": "",
+      "platformUrl": "",
+      "linkedinUrl": "",
+      "linkedinSearchUrl": "https://www.linkedin.com/search/results/all/?keywords=L.L.Bean%20buyer%20outdoor%20LinkedIn",
+      "googleSearchUrl": "https://www.google.com/search?q=L.L.Bean%20outdoor%20buyer%20partnership%20contact",
+      "contactSearchUrl": "https://www.google.com/search?q=L.L.Bean%20outdoor%20buyer%20partnership%20contact",
+      "dataSources": [
+        "customer_table"
+      ],
+      "background": "Hi Lisa,\n\nFlextail makes reliable portable power stations for outdoor adventures. We're interested in working with established outdoor retailers.\n\nBest,\nDavid",
+      "buyerPersona": "Head of Buying",
+      "marketStatus": "",
+      "taskId": 6,
+      "action": "verify_target",
+      "reason": "missing_verified_profile_url",
+      "lastStatus": "",
+      "lastEvidence": "",
+      "lastTouch": "",
+      "previouslyContacted": false,
+      "targetRegion": "other",
+      "targetRegionScore": 0,
+      "contactChannelScore": 0,
+      "dealProbabilityScore": 100,
+      "priorityScore": 100,
+      "potentialSource": "customer_table",
+      "nextAction": "background_check_then_verify_channel"
+    },
+    {
+      "id": 17,
+      "name": "Stephanie Liu",
+      "company": "Target",
+      "role": "Senior Buyer",
+      "category": "ka",
+      "ka_flag": false,
+      "priority": "?",
+      "status": "Pending",
+      "keyword_used": "retail director electronics",
+      "message": "Hi Stephanie,\n\nFlextail portable power stations are positioned for mass market retail. Target's outdoor section could be perfect.\n\nBest,\nDavid",
+      "source": "outreach_data",
+      "country": "",
+      "countryEn": "",
+      "platform": "research",
+      "fitScore": 100,
+      "fitTier": "A",
+      "sourceType": "customer_table",
+      "website": "",
+      "url": "",
+      "platformUrl": "",
+      "linkedinUrl": "",
+      "linkedinSearchUrl": "https://www.linkedin.com/search/results/all/?keywords=Target%20buyer%20outdoor%20LinkedIn",
+      "googleSearchUrl": "https://www.google.com/search?q=Target%20outdoor%20buyer%20partnership%20contact",
+      "contactSearchUrl": "https://www.google.com/search?q=Target%20outdoor%20buyer%20partnership%20contact",
+      "dataSources": [
+        "customer_table"
+      ],
+      "background": "Hi Stephanie,\n\nFlextail portable power stations are positioned for mass market retail. Target's outdoor section could be perfect.\n\nBest,\nDavid",
+      "buyerPersona": "Senior Buyer",
+      "marketStatus": "",
+      "taskId": 17,
+      "action": "verify_target",
+      "reason": "missing_verified_profile_url",
+      "lastStatus": "",
+      "lastEvidence": "",
+      "lastTouch": "",
+      "previouslyContacted": false,
+      "targetRegion": "other",
+      "targetRegionScore": 0,
+      "contactChannelScore": 0,
+      "dealProbabilityScore": 100,
+      "priorityScore": 100,
+      "potentialSource": "customer_table",
+      "nextAction": "background_check_then_verify_channel"
+    },
+    {
+      "id": 22,
+      "name": "Jason Park",
+      "company": "Thor Industries",
+      "role": "Strategic Sourcing Director",
+      "category": "rv",
+      "ka_flag": false,
+      "priority": "?",
+      "status": "Pending",
+      "keyword_used": "strategic sourcing manager",
+      "message": "Hi Jason,\n\nThor Industries is a leader in recreational vehicles. Flextail could provide reliable power solutions for your OEM.\n\nBest,\nDavid",
+      "source": "outreach_data",
+      "country": "",
+      "countryEn": "",
+      "platform": "research",
+      "fitScore": 100,
+      "fitTier": "A",
+      "sourceType": "customer_table",
+      "website": "",
+      "url": "",
+      "platformUrl": "",
+      "linkedinUrl": "",
+      "linkedinSearchUrl": "https://www.linkedin.com/search/results/all/?keywords=Thor%20Industries%20buyer%20outdoor%20LinkedIn",
+      "googleSearchUrl": "https://www.google.com/search?q=Thor%20Industries%20outdoor%20buyer%20partnership%20contact",
+      "contactSearchUrl": "https://www.google.com/search?q=Thor%20Industries%20outdoor%20buyer%20partnership%20contact",
+      "dataSources": [
+        "customer_table"
+      ],
+      "background": "Hi Jason,\n\nThor Industries is a leader in recreational vehicles. Flextail could provide reliable power solutions for your OEM.\n\nBest,\nDavid",
+      "buyerPersona": "Strategic Sourcing Director",
+      "marketStatus": "",
+      "taskId": 22,
+      "action": "verify_target",
+      "reason": "missing_verified_profile_url",
+      "lastStatus": "",
+      "lastEvidence": "",
+      "lastTouch": "",
+      "previouslyContacted": false,
+      "targetRegion": "other",
+      "targetRegionScore": 0,
+      "contactChannelScore": 0,
+      "dealProbabilityScore": 100,
+      "priorityScore": 100,
+      "potentialSource": "customer_table",
+      "nextAction": "background_check_then_verify_channel"
+    },
+    {
+      "id": 13,
+      "name": "Nicole Adams",
+      "company": "Walgreens",
+      "role": "Category Manager",
+      "category": "retail",
+      "ka_flag": false,
+      "priority": "?",
+      "status": "Pending",
+      "keyword_used": "retail chain buyer",
+      "message": "Hi Nicole,\n\nFlextail's portable power stations could be a great addition to Walgreens' outdoor/travel category.\n\nBest,\nDavid",
+      "source": "outreach_data",
+      "country": "",
+      "countryEn": "",
+      "platform": "research",
+      "fitScore": 100,
+      "fitTier": "A",
+      "sourceType": "customer_table",
+      "website": "",
+      "url": "",
+      "platformUrl": "",
+      "linkedinUrl": "",
+      "linkedinSearchUrl": "https://www.linkedin.com/search/results/all/?keywords=Walgreens%20buyer%20outdoor%20LinkedIn",
+      "googleSearchUrl": "https://www.google.com/search?q=Walgreens%20outdoor%20buyer%20partnership%20contact",
+      "contactSearchUrl": "https://www.google.com/search?q=Walgreens%20outdoor%20buyer%20partnership%20contact",
+      "dataSources": [
+        "customer_table"
+      ],
+      "background": "Hi Nicole,\n\nFlextail's portable power stations could be a great addition to Walgreens' outdoor/travel category.\n\nBest,\nDavid",
+      "buyerPersona": "Category Manager",
+      "marketStatus": "",
+      "taskId": 13,
+      "action": "verify_target",
+      "reason": "missing_verified_profile_url",
+      "lastStatus": "",
+      "lastEvidence": "",
+      "lastTouch": "",
+      "previouslyContacted": false,
+      "targetRegion": "other",
+      "targetRegionScore": 0,
+      "contactChannelScore": 0,
+      "dealProbabilityScore": 100,
+      "priorityScore": 100,
+      "potentialSource": "customer_table",
+      "nextAction": "background_check_then_verify_channel"
+    },
+    {
+      "id": 18,
+      "name": "Brian Scott",
+      "company": "Winnebago",
+      "role": "Procurement Manager",
+      "category": "rv",
+      "ka_flag": false,
+      "priority": "?",
+      "status": "Pending",
+      "keyword_used": "OEM RV power supplier",
+      "message": "Hi Brian,\n\nWe're interested in OEM partnerships with RV manufacturers. Winnebago's quality standards align with ours.\n\nBest,\nDavid",
+      "source": "outreach_data",
+      "country": "",
+      "countryEn": "",
+      "platform": "research",
+      "fitScore": 100,
+      "fitTier": "A",
+      "sourceType": "customer_table",
+      "website": "",
+      "url": "",
+      "platformUrl": "",
+      "linkedinUrl": "",
+      "linkedinSearchUrl": "https://www.linkedin.com/search/results/all/?keywords=Winnebago%20buyer%20outdoor%20LinkedIn",
+      "googleSearchUrl": "https://www.google.com/search?q=Winnebago%20outdoor%20buyer%20partnership%20contact",
+      "contactSearchUrl": "https://www.google.com/search?q=Winnebago%20outdoor%20buyer%20partnership%20contact",
+      "dataSources": [
+        "customer_table"
+      ],
+      "background": "Hi Brian,\n\nWe're interested in OEM partnerships with RV manufacturers. Winnebago's quality standards align with ours.\n\nBest,\nDavid",
+      "buyerPersona": "Procurement Manager",
+      "marketStatus": "",
+      "taskId": 18,
+      "action": "verify_target",
+      "reason": "missing_verified_profile_url",
+      "lastStatus": "",
+      "lastEvidence": "",
+      "lastTouch": "",
+      "previouslyContacted": false,
+      "targetRegion": "other",
+      "targetRegionScore": 0,
+      "contactChannelScore": 0,
+      "dealProbabilityScore": 100,
+      "priorityScore": 100,
+      "potentialSource": "customer_table",
+      "nextAction": "background_check_then_verify_channel"
+    },
+    {
+      "id": 11,
+      "name": "Chris Brown",
+      "company": "Best Buy",
+      "role": "Regional Buyer",
+      "category": "ka",
+      "ka_flag": false,
+      "priority": "?",
+      "status": "Pending",
+      "keyword_used": "electronics retail buyer",
+      "message": "Hi Chris,\n\nFlextail portable power stations are perfect for the consumer electronics category. We're looking for retail partners.\n\nBest,\nDavid",
+      "source": "outreach_data",
+      "country": "",
+      "countryEn": "",
+      "platform": "research",
+      "fitScore": 99,
+      "fitTier": "A",
+      "sourceType": "customer_table",
+      "website": "",
+      "url": "",
+      "platformUrl": "",
+      "linkedinUrl": "",
+      "linkedinSearchUrl": "https://www.linkedin.com/search/results/all/?keywords=Best%20Buy%20buyer%20outdoor%20LinkedIn",
+      "googleSearchUrl": "https://www.google.com/search?q=Best%20Buy%20outdoor%20buyer%20partnership%20contact",
+      "contactSearchUrl": "https://www.google.com/search?q=Best%20Buy%20outdoor%20buyer%20partnership%20contact",
+      "dataSources": [
+        "customer_table"
+      ],
+      "background": "Hi Chris,\n\nFlextail portable power stations are perfect for the consumer electronics category. We're looking for retail partners.\n\nBest,\nDavid",
+      "buyerPersona": "Regional Buyer",
+      "marketStatus": "",
+      "taskId": 11,
+      "action": "verify_target",
+      "reason": "missing_verified_profile_url",
+      "lastStatus": "",
+      "lastEvidence": "",
+      "lastTouch": "",
+      "previouslyContacted": false,
+      "targetRegion": "other",
+      "targetRegionScore": 0,
+      "contactChannelScore": 0,
+      "dealProbabilityScore": 99,
+      "priorityScore": 99,
+      "potentialSource": "customer_table",
+      "nextAction": "background_check_then_verify_channel"
+    },
+    {
+      "id": 9,
+      "name": "Mark Johnson",
+      "company": "Canadian Tire",
+      "role": "Senior Buyer - Electronics",
+      "category": "ka",
+      "ka_flag": false,
+      "priority": "?",
+      "status": "Pending",
+      "keyword_used": "hypermarket buyer electronics",
+      "message": "Hi Mark,\n\nFlextail portable power stations are making waves in the outdoor market. We'd love to discuss a partnership with Canadian Tire.\n\nBest,\nDavid",
+      "source": "outreach_data",
+      "country": "",
+      "countryEn": "",
+      "platform": "research",
+      "fitScore": 99,
+      "fitTier": "A",
+      "sourceType": "customer_table",
+      "website": "",
+      "url": "",
+      "platformUrl": "",
+      "linkedinUrl": "",
+      "linkedinSearchUrl": "https://www.linkedin.com/search/results/all/?keywords=Canadian%20Tire%20buyer%20outdoor%20LinkedIn",
+      "googleSearchUrl": "https://www.google.com/search?q=Canadian%20Tire%20outdoor%20buyer%20partnership%20contact",
+      "contactSearchUrl": "https://www.google.com/search?q=Canadian%20Tire%20outdoor%20buyer%20partnership%20contact",
+      "dataSources": [
+        "customer_table"
+      ],
+      "background": "Hi Mark,\n\nFlextail portable power stations are making waves in the outdoor market. We'd love to discuss a partnership with Canadian Tire.\n\nBest,\nDavid",
+      "buyerPersona": "Senior Buyer - Electronics",
+      "marketStatus": "",
+      "taskId": 9,
+      "action": "verify_target",
+      "reason": "missing_verified_profile_url",
+      "lastStatus": "",
+      "lastEvidence": "",
+      "lastTouch": "",
+      "previouslyContacted": false,
+      "targetRegion": "other",
+      "targetRegionScore": 0,
+      "contactChannelScore": 0,
+      "dealProbabilityScore": 99,
+      "priorityScore": 99,
+      "potentialSource": "customer_table",
+      "nextAction": "background_check_then_verify_channel"
+    },
+    {
+      "id": 19,
+      "name": "Michelle Chen",
+      "company": "MEC (Mountain Equipment Co-op)",
+      "role": "Buyer - Electronics",
+      "category": "camping",
+      "ka_flag": false,
+      "priority": "?",
+      "status": "Pending",
+      "keyword_used": "buyer outdoor products Canada",
+      "message": "Hi Michelle,\n\nFlextail is looking to expand in the Canadian outdoor market. MEC's reputation for quality aligns with our brand.\n\nBest,\nDavid",
+      "source": "outreach_data",
+      "country": "",
+      "countryEn": "",
+      "platform": "research",
+      "fitScore": 99,
+      "fitTier": "A",
+      "sourceType": "customer_table",
+      "website": "",
+      "url": "",
+      "platformUrl": "",
+      "linkedinUrl": "",
+      "linkedinSearchUrl": "https://www.linkedin.com/search/results/all/?keywords=MEC%20(Mountain%20Equipment%20Co-op)%20buyer%20outdoor%20LinkedIn",
+      "googleSearchUrl": "https://www.google.com/search?q=MEC%20(Mountain%20Equipment%20Co-op)%20outdoor%20buyer%20partnership%20contact",
+      "contactSearchUrl": "https://www.google.com/search?q=MEC%20(Mountain%20Equipment%20Co-op)%20outdoor%20buyer%20partnership%20contact",
+      "dataSources": [
+        "customer_table"
+      ],
+      "background": "Hi Michelle,\n\nFlextail is looking to expand in the Canadian outdoor market. MEC's reputation for quality aligns with our brand.\n\nBest,\nDavid",
+      "buyerPersona": "Buyer - Electronics",
+      "marketStatus": "",
+      "taskId": 19,
+      "action": "verify_target",
+      "reason": "missing_verified_profile_url",
+      "lastStatus": "",
+      "lastEvidence": "",
+      "lastTouch": "",
+      "previouslyContacted": false,
+      "targetRegion": "other",
+      "targetRegionScore": 0,
+      "contactChannelScore": 0,
+      "dealProbabilityScore": 99,
+      "priorityScore": 99,
+      "potentialSource": "customer_table",
+      "nextAction": "background_check_then_verify_channel"
     }
   ],
   "cooldownQueue": [
@@ -21023,7 +20140,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/London",
-        "localTime": "Tue 13:06",
+        "localTime": "Tue 13:44",
         "window": "outside_work_hours",
         "nextBest": "Europe/London afternoon",
         "weight": 0
@@ -21080,7 +20197,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/London",
-        "localTime": "Tue 13:06",
+        "localTime": "Tue 13:44",
         "window": "outside_work_hours",
         "nextBest": "Europe/London afternoon",
         "weight": 0
@@ -21137,7 +20254,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/London",
-        "localTime": "Tue 13:06",
+        "localTime": "Tue 13:44",
         "window": "outside_work_hours",
         "nextBest": "Europe/London afternoon",
         "weight": 0
@@ -21194,7 +20311,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Tue 08:06",
+        "localTime": "Tue 08:44",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -21251,7 +20368,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Tue 08:06",
+        "localTime": "Tue 08:44",
         "window": "outside_work_hours",
         "nextBest": "America/Toronto morning",
         "weight": 0
@@ -21308,7 +20425,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Tue 08:06",
+        "localTime": "Tue 08:44",
         "window": "outside_work_hours",
         "nextBest": "America/Toronto morning",
         "weight": 0
@@ -21365,7 +20482,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Asia/Jakarta",
-        "localTime": "Tue 19:06",
+        "localTime": "Tue 19:44",
         "window": "outside_work_hours",
         "nextBest": "Asia/Jakarta morning",
         "weight": 0
@@ -21422,7 +20539,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Australia/Sydney",
-        "localTime": "Tue 22:06",
+        "localTime": "Tue 22:44",
         "window": "outside_work_hours",
         "nextBest": "Australia/Sydney morning",
         "weight": 0
@@ -21479,7 +20596,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Pacific/Auckland",
-        "localTime": "Wed 00:06",
+        "localTime": "Wed 00:44",
         "window": "outside_work_hours",
         "nextBest": "Pacific/Auckland morning",
         "weight": 0
@@ -21536,7 +20653,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Pacific/Auckland",
-        "localTime": "Wed 00:06",
+        "localTime": "Wed 00:44",
         "window": "outside_work_hours",
         "nextBest": "Pacific/Auckland morning",
         "weight": 0
@@ -21593,7 +20710,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Pacific/Auckland",
-        "localTime": "Wed 00:06",
+        "localTime": "Wed 00:44",
         "window": "outside_work_hours",
         "nextBest": "Pacific/Auckland morning",
         "weight": 0
@@ -21650,7 +20767,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Pacific/Auckland",
-        "localTime": "Wed 00:06",
+        "localTime": "Wed 00:44",
         "window": "outside_work_hours",
         "nextBest": "Pacific/Auckland morning",
         "weight": 0
@@ -21707,7 +20824,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Pacific/Auckland",
-        "localTime": "Wed 00:06",
+        "localTime": "Wed 00:44",
         "window": "outside_work_hours",
         "nextBest": "Pacific/Auckland morning",
         "weight": 0
@@ -21764,7 +20881,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Asia/Kolkata",
-        "localTime": "Tue 17:36",
+        "localTime": "Tue 18:14",
         "window": "outside_work_hours",
         "nextBest": "Asia/Kolkata morning",
         "weight": 0
@@ -21829,7 +20946,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/Copenhagen",
-        "localTime": "Tue 14:06",
+        "localTime": "Tue 14:44",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
@@ -21946,7 +21063,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/Vienna",
-        "localTime": "Tue 14:06",
+        "localTime": "Tue 14:44",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
@@ -22036,7 +21153,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/Berlin",
-        "localTime": "Tue 14:06",
+        "localTime": "Tue 14:44",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
@@ -22140,7 +21257,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/Paris",
-        "localTime": "Tue 14:06",
+        "localTime": "Tue 14:44",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
@@ -22244,7 +21361,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/Berlin",
-        "localTime": "Tue 14:06",
+        "localTime": "Tue 14:44",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
@@ -22340,7 +21457,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/Helsinki",
-        "localTime": "Tue 15:06",
+        "localTime": "Tue 15:44",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
@@ -22430,7 +21547,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/Berlin",
-        "localTime": "Tue 14:06",
+        "localTime": "Tue 14:44",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
@@ -22520,7 +21637,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/Berlin",
-        "localTime": "Tue 14:06",
+        "localTime": "Tue 14:44",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
@@ -22610,7 +21727,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/Berlin",
-        "localTime": "Tue 14:06",
+        "localTime": "Tue 14:44",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
@@ -22700,7 +21817,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/Berlin",
-        "localTime": "Tue 14:06",
+        "localTime": "Tue 14:44",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
@@ -22790,7 +21907,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/Berlin",
-        "localTime": "Tue 14:06",
+        "localTime": "Tue 14:44",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
@@ -22886,7 +22003,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/Warsaw",
-        "localTime": "Tue 14:06",
+        "localTime": "Tue 14:44",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
@@ -22976,7 +22093,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/Stockholm",
-        "localTime": "Tue 14:06",
+        "localTime": "Tue 14:44",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
@@ -23066,7 +22183,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/Vienna",
-        "localTime": "Tue 14:06",
+        "localTime": "Tue 14:44",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
@@ -23156,7 +22273,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/Berlin",
-        "localTime": "Tue 14:06",
+        "localTime": "Tue 14:44",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
@@ -23246,7 +22363,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/Warsaw",
-        "localTime": "Tue 14:06",
+        "localTime": "Tue 14:44",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
