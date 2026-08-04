@@ -492,7 +492,7 @@ function isTouchResult(result = {}) {
 function isHistoricalDevelopmentResult(result = {}) {
   if (HISTORICAL_DEVELOPMENT_STATUSES.has(result.status)) return isTouchResult(result);
   if (result.status !== 'failed_open') return false;
-  return /message_sent|send_clicked_but_confirmation_missing/i
+  return /message_sent|send_clicked_but_confirmation_missing|composer_preserved_for_technical_evidence|alibaba_webmail_content_inserted/i
     .test(String(result.evidence || ''));
 }
 

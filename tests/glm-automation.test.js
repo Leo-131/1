@@ -1438,6 +1438,20 @@ test('email performs a final company-wide permanent dedupe check immediately bef
   assert.ok(sendGate.indexOf('priorCompanyContact') < sendGate.indexOf('sendAndConfirmAlibabaEmail'));
 });
 
+test('a preserved populated email composer permanently blocks reopening that company', () => {
+  const blockerStart = mainSource.indexOf('function historicalAutomationResultBlocksCompany');
+  const blockerEnd = mainSource.indexOf('function exactSocialHandleMatchesCompany', blockerStart);
+  const blocker = mainSource.slice(blockerStart, blockerEnd);
+  assert.match(blocker, /result\.status !== 'failed_open'/);
+  assert.match(blocker, /composer_preserved_for_technical_evidence/);
+  assert.match(blocker, /alibaba_webmail_content_inserted/);
+  const discoveryBlockerStart = dailyRunnerSource.indexOf('function isHistoricalDevelopmentResult');
+  const discoveryBlockerEnd = dailyRunnerSource.indexOf('function noSafeMessageButtonEvidence', discoveryBlockerStart);
+  const discoveryBlocker = dailyRunnerSource.slice(discoveryBlockerStart, discoveryBlockerEnd);
+  assert.match(discoveryBlocker, /composer_preserved_for_technical_evidence/);
+  assert.match(discoveryBlocker, /alibaba_webmail_content_inserted/);
+});
+
 test('dedicated website and Instagram execution report truthful transport and confirm Enter fallback', () => {
   assert.ok(mainSource.includes("engine: 'dedicated-chrome-cdp-website-contact'"));
   assert.doesNotMatch(mainSource, /engine: 'codex-chrome-extension-website-contact'/);
