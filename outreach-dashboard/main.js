@@ -377,10 +377,12 @@ function blockingAutomationResultFor(item) {
     .filter(result => !isFixedAlibabaRecipientVerifierFailure(result))
     .filter(result => !isFixedAlibabaSubjectVerifierFailure(result))
     .filter(result => !(exactSocialHandleMatchesCompany(item) && isFixedIdentityVerifierFailure(result)))
+    // A technical failure retires the company for the rest of the Shanghai
+    // day, regardless of which official channel the browser fell back to.
+    // This prevents a website -> Facebook/Instagram fallback from selecting
+    // the same customer again on the next full run instead of advancing.
     .filter(result => setsIntersect(exactKeys, automationExactKeys(result))
-      || (setsIntersect(companyKeys, automationCompanyKeys(result))
-        && (automationPlatformFor(result) === itemPlatform
-          || (itemPlatform === 'website' && /official_social_fallback:/i.test(String(result.evidence || ''))))));
+      || setsIntersect(companyKeys, automationCompanyKeys(result)));
   if (sameDayFailedAttempts.length >= 1) {
     return {
       status: 'same_day_retry_circuit_open',

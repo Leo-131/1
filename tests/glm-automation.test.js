@@ -1439,7 +1439,7 @@ test('same-day failed customer advances without cross-run replay and closes its 
   assert.match(mainSource, /const latestExecutionResults = Array\.isArray\(latestExecution\.executed\)/);
   assert.match(mainSource, /const results = \[\.\.\.ledgerResults, \.\.\.latestExecutionResults\]/);
   assert.match(mainSource, /sameDayFailedAttempts\.length >= 1/);
-  assert.match(mainSource, /itemPlatform === 'website' && \/official_social_fallback:/);
+  assert.match(mainSource, /setsIntersect\(companyKeys, automationCompanyKeys\(result\)\)/);
   assert.match(mainSource, /block\.status === 'same_day_retry_circuit_open'\) return false/);
   assert.match(mainSource, /reuseTab: false/);
   assert.match(mainSource, /await closeAutomationChromeTab\(result && result\.chromeOpen\)/);
@@ -1522,6 +1522,7 @@ test('website pre-send failures continue to first-party verified social instead 
   assert.ok(mainSource.includes('verifiedSocialFallback.officialSocialProfileVerified === true'));
   assert.ok(mainSource.includes('function websiteCanReinspectForFirstPartySocial'));
   assert.ok(mainSource.includes("if (block.status === 'same_day_retry_circuit_open') return false"));
+  assert.ok(mainSource.includes('A technical failure retires the company for the rest of the Shanghai'));
   assert.ok(mainSource.includes('return websiteCanReinspectForFirstPartySocial(item)'));
 });
 
