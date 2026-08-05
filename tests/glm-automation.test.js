@@ -1250,10 +1250,21 @@ test('daily execution is serial and can process a priority batch per run', () =>
   assert.ok(mainSource.includes('process.env.DAILY_EXECUTE_TIMEOUT_MS || 2700000'));
   assert.ok(mainSource.includes("['sent_confirmed', 'submitted_confirmed'].includes(item.sendStatus)"));
   assert.ok(mainSource.includes('executableQueueCandidates(latest.dailyQueue, { allowWebsiteContact: false })'));
+  assert.ok(mainSource.includes('item.executionReadiness && item.executionReadiness.ready === true'));
   assert.ok(mainSource.includes('const websiteFallback = executableQueueCandidates'));
   assert.ok(mainSource.includes('const isAutoRunDaily = process.argv.includes'));
   assert.ok(mainSource.includes('async function runAutoDailyAndWriteArtifact'));
   assert.ok(mainSource.includes('timeout: 80000'));
+});
+
+test('discovery and execution share evidence-backed channel readiness and expose enrichment backlog', () => {
+  assert.ok(dailyRunnerSource.includes('function channelExecutionReadiness'));
+  assert.ok(dailyRunnerSource.includes("gate: 'official_supplier_route'"));
+  assert.ok(dailyRunnerSource.includes("reason: 'website_contact_capability_not_verified'"));
+  assert.ok(dailyRunnerSource.includes('enrichmentBacklogCount: enrichmentBacklog.length'));
+  assert.ok(dailyRunnerSource.includes('enrichmentBacklog,'));
+  assert.match(outreachPolicySource, /A URL alone is not an executable channel/);
+  assert.match(optimizedPromptSource, /Treat `executionReadiness` as the single source of truth/);
 });
 
 test('real customer development excludes likes and follows', () => {

@@ -1214,7 +1214,7 @@ function normalizePotentialItem(item, sourceType, history, index = 0) {
   };
   const status = potentialStatusFor(base, history);
   const legacyTouched = legacyStatusIndicatesTouch(base.lastStatus || base.status);
-  return {
+  const normalized = {
     ...base,
     taskId: base.id,
     action: status.action,
@@ -1237,6 +1237,35 @@ function normalizePotentialItem(item, sourceType, history, index = 0) {
           ? 'official_website_or_email_contact'
           : 'develop_after_identity_check',
   };
+  normalized.executionReadiness = channelExecutionReadiness(normalized);
+  return normalized;
+}
+
+function channelExecutionReadiness(item = {}) {
+  const platform = String(item.platform || item.channel || '').toLowerCase();
+  const target = item.url || item.contactUrl || item.platformUrl || item.website || '';
+  const officialStatus = String(item.externalVerificationStatus || '').toLowerCase();
+  const social = ['facebook', 'instagram', 'linkedin'].includes(platform);
+  if (social) {
+    return item.officialSocialProfileVerified === true && /^https:\/\//i.test(String(target))
+      ? { ready: true, gate: 'first_party_verified_social', evidenceUrl: item.socialProfileEvidenceUrl || item.sourceEvidenceUrl || item.website || '' }
+      : { ready: false, gate: 'enrichment_required', reason: 'social_profile_not_first_party_verified' };
+  }
+  const verifiedEmail = /^official_supplier_email_verified$/.test(officialStatus)
+    || /^official_public_business_email$/i.test(String(item.emailVerificationStatus || ''));
+  if (platform === 'email' || item.publicEmail || item.contactEmail) {
+    return verifiedEmail
+      ? { ready: true, gate: 'official_business_email', evidenceUrl: item.evidenceUrl || item.sourceEvidenceUrl || '' }
+      : { ready: false, gate: 'enrichment_required', reason: 'public_business_email_requires_verification' };
+  }
+  const verifiedWebsiteRoute = /^official_(?:supplier_(?:form|route)|contact_form)_verified$/.test(officialStatus)
+    || item.contactCapabilityVerified === true;
+  if (platform === 'website_form' || /website|contact|supplier|vendor/i.test([item.channelType, item.reason, item.action].join(' '))) {
+    return verifiedWebsiteRoute && /^https:\/\//i.test(String(target))
+      ? { ready: true, gate: 'official_supplier_route', evidenceUrl: item.evidenceUrl || item.sourceEvidenceUrl || item.contactUrl || '' }
+      : { ready: false, gate: 'enrichment_required', reason: 'website_contact_capability_not_verified' };
+  }
+  return { ready: false, gate: 'enrichment_required', reason: 'verified_executable_channel_missing' };
 }
 
 function buildDailyPotentialPool(classified, discoveryRun, context, targetSize) {
@@ -1286,15 +1315,9 @@ function channelReadinessSummary(items = []) {
       channels: new Set(),
       ready: false,
     };
-    const reason = String(item.reason || '');
-    const action = String(item.action || '');
     const platform = String(item.platform || item.channel || '').toLowerCase();
-    const hasTarget = Boolean(item.url || item.contactUrl || item.website || item.publicEmail || item.contactEmail);
-    const social = ['facebook', 'instagram', 'linkedin'].includes(platform);
-    const blocked = /homepage_only_contact_path_requires_verification|missing_verified_profile_url|active_partner_no_new_outreach|exclusive_agency_region/.test(reason)
-      || (social && item.officialSocialProfileVerified !== true);
-    const executableAction = ['develop', 'discover_and_develop', 'email_priority', 'retry_or_alternate_channel'].includes(action);
-    if (hasTarget && executableAction && !blocked) {
+    const readiness = item.executionReadiness || channelExecutionReadiness(item);
+    if (readiness.ready === true) {
       row.ready = true;
       row.channels.add(platform || 'website');
     }
@@ -1311,6 +1334,7 @@ function channelReadinessSummary(items = []) {
       return counts;
     }, {}),
     verifiedSocialCompanies: ready.filter(item => [...item.channels].some(channel => ['facebook', 'instagram', 'linkedin'].includes(channel))).length,
+    enrichmentRequiredCompanies: rows.length - ready.length,
   };
 }
 
@@ -1444,6 +1468,17 @@ function main() {
     .sort(priorityCompare)
     .slice(0, 20);
   const readiness = channelReadinessSummary(dailyPotentialPool);
+  const enrichmentBacklog = dailyPotentialPool
+    .filter(item => !(item.executionReadiness || channelExecutionReadiness(item)).ready)
+    .map(item => ({
+      id: item.id,
+      company: item.company,
+      platform: item.platform,
+      reason: (item.executionReadiness || channelExecutionReadiness(item)).reason,
+      officialWebsite: item.website || '',
+      evidenceUrl: item.sourceEvidenceUrl || item.evidenceUrl || '',
+      requiredEvidence: 'first_party_official_channel_and_executable_control',
+    }));
   const run = {
     generatedAt: new Date(now).toISOString(),
     date,
@@ -1480,6 +1515,7 @@ function main() {
       verifiedSocialCompanies: readiness.verifiedSocialCompanies,
       verifiedSocialReserveTarget: 20,
       verifiedSocialReserveNeeded: Math.max(0, 20 - readiness.verifiedSocialCompanies),
+      enrichmentBacklogCount: enrichmentBacklog.length,
       googleDiscovered: dailyQueue.filter(item => item.sourceType === 'google' || item.source === 'google_customer_discovery' || /^google-customer-/i.test(item.id || '')).length,
       facebookDiscovered: dailyQueue.filter(item => item.platform === 'facebook' && (item.sourceType === 'google' || item.source === 'google_customer_discovery' || /^google-customer-/i.test(item.id || ''))).length,
       websiteContactDiscovered: dailyQueue.filter(item => item.platform === 'email' && (item.sourceType === 'google' || item.source === 'google_customer_discovery' || /^google-customer-/i.test(item.id || ''))).length,
@@ -1501,6 +1537,7 @@ function main() {
     visibleTodayQueue,
     dailyPotentialPool,
     dailyQueue,
+    enrichmentBacklog,
     cooldownQueue,
     scheduledLater,
     bugChecks: buildBugChecks(plan, classified, results),
@@ -1544,4 +1581,5 @@ module.exports = {
   knownTouchIndex,
   writeFileWithRetry,
   preferSocialChannels,
+  channelExecutionReadiness,
 };

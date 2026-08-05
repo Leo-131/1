@@ -1421,7 +1421,9 @@
     const goalText = goal
       ? ` · queueGoal ${goal.reached ? 'reached' : `need ${goal.refillNeeded || 0}/${goal.target || 100}`}`
       : '';
-    return `<div class="cc-quality">系统已更新：Latest artifact ${esc(system.generatedAt || latestRun.date || 'unknown')} · potentialPool ${(system.potentialRows || []).length} · dailyQueue ${system.dailyRows.length} · googleDiscovered ${system.googleRows.length} · websiteContact ${system.websiteContactRows.length}${esc(goalText)}${esc(visibility)}${esc(sync)}</div>`;
+    const executableCount = latestRun && latestRun.summary ? Number(latestRun.summary.executableCompanies || 0) : 0;
+    const enrichmentCount = latestRun && latestRun.summary ? Number(latestRun.summary.enrichmentBacklogCount || 0) : 0;
+    return `<div class="cc-quality">系统已更新：Latest artifact ${esc(system.generatedAt || latestRun.date || 'unknown')} · potentialPool ${(system.potentialRows || []).length} · executable ${executableCount} · enrichment backlog ${enrichmentCount} · dailyQueue ${system.dailyRows.length} · googleDiscovered ${system.googleRows.length} · websiteContact ${system.websiteContactRows.length}${esc(goalText)}${esc(visibility)}${esc(sync)}</div>`;
   }
   function actionLabel(action) {
     const labels = {
@@ -2504,7 +2506,7 @@
             : `本次执行失败：${latestExecution.error || '未知错误'}`
         : '尚未加载执行结果。';
       return `<aside class="cc-rail"><h2>Codex 决策</h2>
-        <div class="cc-rail-section"><h2>本次运行</h2><div class="cc-evidence">potentialPool：${(system.potentialRows || []).length}<br>dailyQueue：${system.dailyRows.length}<br>Google discovered：${system.googleRows.length}<br>websiteContact：${system.websiteContactRows.length}<br>${esc(executionText)}</div></div>
+        <div class="cc-rail-section"><h2>本次运行</h2><div class="cc-evidence">potentialPool：${(system.potentialRows || []).length}<br>executable：${latestRun && latestRun.summary ? Number(latestRun.summary.executableCompanies || 0) : 0}<br>enrichment backlog：${latestRun && latestRun.summary ? Number(latestRun.summary.enrichmentBacklogCount || 0) : 0}<br>dailyQueue：${system.dailyRows.length}<br>Google discovered：${system.googleRows.length}<br>websiteContact：${system.websiteContactRows.length}<br>${esc(executionText)}</div></div>
         <div class="cc-rail-section"><h2>下一步</h2><div class="cc-evidence">优先处理上方“任务明细”里的官网/邮件入口；当前没有符合自动社媒发送条件的客户。</div></div>
       </aside>`;
     }

@@ -4013,6 +4013,7 @@ function executableQueueCandidates(items = [], options = {}) {
   const allowWebsiteContact = options.allowWebsiteContact !== false;
   return (Array.isArray(items) ? items : [])
     .filter(item => executableActions.has(item.action))
+    .filter(item => item.executionReadiness && item.executionReadiness.ready === true)
     .filter(item => item.url || item.contactUrl || item.website
       || verifiedBusinessEmailTarget(item).ok
       || (recipientEmail(item) && configuredProvider().id))
@@ -4437,9 +4438,11 @@ async function runDailyAutomationQueue(payload = {}) {
       // attachment. Attachment requirements can only be known after the
       // verified form is inspected; prepareWebsiteContactForm records the
       // blocker when a required file input actually exists.
-      reason: isSocialQueueItem(item) && item.officialSocialProfileVerified !== true
-        ? 'social_profile_not_first_party_verified'
-        : item.reason,
+      reason: item.executionReadiness && item.executionReadiness.ready !== true
+        ? item.executionReadiness.reason || 'verified_executable_channel_missing'
+        : isSocialQueueItem(item) && item.officialSocialProfileVerified !== true
+          ? 'social_profile_not_first_party_verified'
+          : item.reason,
     }));
 
   if (!executable.length) {

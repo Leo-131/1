@@ -16,3 +16,4 @@ Policy version: 2026-07-30
 - Website forms require visible submission confirmation. Social messages require persistent visible outgoing-message evidence.
 - The daily maximum is 100 distinct confirmed companies. The default bounded run selects up to 25 companies, may be explicitly raised to at most 50, and always stops at 45 minutes.
 - Missing, stale, or contradictory evidence must fail closed.
+- Discovery and execution must share one `executionReadiness` decision. A URL alone is not an executable channel: website routes require first-party-verified supplier/form capability, email requires an official public business recipient, and social requires a first-party-cross-verified exact profile. Evidence-incomplete rows belong in the enrichment backlog and must not open Chrome or inflate executable-company counts.
