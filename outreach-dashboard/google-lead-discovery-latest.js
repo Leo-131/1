@@ -1,5 +1,5 @@
 window.GOOGLE_LEAD_DISCOVERY_LATEST = {
-  "generatedAt": "2026-08-05T04:05:13.427Z",
+  "generatedAt": "2026-08-05T05:09:47.604Z",
   "mode": "google-concrete-customer-discovery",
   "objective": "continuously refill verified agency and key-account prospects above ICP 70, exclude active customers, then convert them into exact official social and website outreach targets",
   "discoveryRefillAttempted": true,
@@ -49,7 +49,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "website": "https://www.esprinet.com/en/",
       "evidenceUrl": "https://www.google.com/search?q=%22Esprinet%20Group%22%20%22Southern%20Europe%20technology%20and%20consumer%20electronics%20distributor%22%20%22Italy%22%20buyer%20OR%20wholesale%20OR%20contact",
       "sourceEvidenceUrl": "https://www.esprinet.com/en/become-a-supplier/",
-      "externalVerificationStatus": "",
+      "externalVerificationStatus": "official_supplier_form_verified",
       "query": "https://www.google.com/search?q=%22Esprinet%20Group%22%20%22Southern%20Europe%20technology%20and%20consumer%20electronics%20distributor%22%20%22Italy%22%20buyer%20OR%20wholesale%20OR%20contact",
       "source": "google_customer_discovery",
       "sourceType": "google",
@@ -68,7 +68,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "linkedin",
@@ -84,7 +84,19 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       },
       "identitySource": "verified LinkedIn profile + official website + Google background query",
       "channelPriority": 0,
-      "discoveredAt": "2026-07-14T04:02:10.362Z"
+      "discoveredAt": "2026-07-14T04:02:10.362Z",
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-05T05:09:33.656Z",
+        "evidenceUrl": "https://www.esprinet.com/en/become-a-supplier/",
+        "httpStatus": 200,
+        "signals": [
+          "form_control",
+          "supplier_invitation"
+        ],
+        "error": ""
+      },
+      "contactCapabilityVerified": true
     },
     {
       "id": "google-customer-eet-group-linkedin",
@@ -140,7 +152,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "linkedin",
@@ -156,7 +168,17 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       },
       "identitySource": "verified LinkedIn profile + official website + Google background query",
       "channelPriority": 0,
-      "discoveredAt": "2026-07-20T13:25:02.177Z"
+      "discoveredAt": "2026-07-20T13:25:02.177Z",
+      "firstPartyChannelVerification": {
+        "status": "unreachable",
+        "verifiedAt": "2026-08-05T05:09:34.389Z",
+        "evidenceUrl": "https://www.eetgroup.com/en-eu/eet/become-a-supplier",
+        "httpStatus": 403,
+        "signals": [],
+        "error": ""
+      },
+      "emailVerificationStatus": "official_public_business_email",
+      "emailEvidence": "first_party_live_page_cache"
     },
     {
       "id": "google-customer-esprinet-group-website-contact",
@@ -193,7 +215,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "website": "https://www.esprinet.com/en/",
       "evidenceUrl": "https://www.google.com/search?q=%22Esprinet%20Group%22%20%22Southern%20Europe%20technology%20and%20consumer%20electronics%20distributor%22%20%22Italy%22%20buyer%20OR%20wholesale%20OR%20contact",
       "sourceEvidenceUrl": "https://www.esprinet.com/en/become-a-supplier/",
-      "externalVerificationStatus": "",
+      "externalVerificationStatus": "official_supplier_form_verified",
       "query": "https://www.google.com/search?q=%22Esprinet%20Group%22%20%22Southern%20Europe%20technology%20and%20consumer%20electronics%20distributor%22%20%22Italy%22%20buyer%20OR%20wholesale%20OR%20contact",
       "source": "google_customer_discovery",
       "sourceType": "google",
@@ -212,7 +234,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -236,7 +258,19 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "invalidChannels": {},
       "identitySource": "official website contact path + Google buyer/contact query",
       "channelPriority": 3,
-      "discoveredAt": "2026-07-14T04:02:10.362Z"
+      "discoveredAt": "2026-07-14T04:02:10.362Z",
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-05T05:09:33.656Z",
+        "evidenceUrl": "https://www.esprinet.com/en/become-a-supplier/",
+        "httpStatus": 200,
+        "signals": [
+          "form_control",
+          "supplier_invitation"
+        ],
+        "error": ""
+      },
+      "contactCapabilityVerified": true
     },
     {
       "id": "google-customer-eet-group-website-contact",
@@ -292,7 +326,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -316,7 +350,17 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "invalidChannels": {},
       "identitySource": "official website contact path + Google buyer/contact query",
       "channelPriority": 3,
-      "discoveredAt": "2026-07-20T13:25:02.177Z"
+      "discoveredAt": "2026-07-20T13:25:02.177Z",
+      "firstPartyChannelVerification": {
+        "status": "unreachable",
+        "verifiedAt": "2026-08-05T05:09:34.389Z",
+        "evidenceUrl": "https://www.eetgroup.com/en-eu/eet/become-a-supplier",
+        "httpStatus": 403,
+        "signals": [],
+        "error": ""
+      },
+      "emailVerificationStatus": "official_public_business_email",
+      "emailEvidence": "first_party_live_page_cache"
     },
     {
       "id": "google-customer-komsa-linkedin",
@@ -353,7 +397,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "website": "https://komsa.com/en/",
       "evidenceUrl": "https://www.google.com/search?q=%22KOMSA%22%20%22European%20consumer%20electronics%20sales%20marketing%20and%20distribution%20group%22%20%22Germany%22%20buyer%20OR%20wholesale%20OR%20contact",
       "sourceEvidenceUrl": "https://komsa.com/en/contact/",
-      "externalVerificationStatus": "",
+      "externalVerificationStatus": "official_contact_form_verified",
       "query": "https://www.google.com/search?q=%22KOMSA%22%20%22European%20consumer%20electronics%20sales%20marketing%20and%20distribution%20group%22%20%22Germany%22%20buyer%20OR%20wholesale%20OR%20contact",
       "source": "google_customer_discovery",
       "sourceType": "google",
@@ -372,7 +416,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "linkedin",
@@ -388,7 +432,19 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       },
       "identitySource": "verified LinkedIn profile + official website + Google background query",
       "channelPriority": 0,
-      "discoveredAt": "2026-07-20T13:25:02.177Z"
+      "discoveredAt": "2026-07-20T13:25:02.177Z",
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-05T05:09:36.856Z",
+        "evidenceUrl": "https://komsa.com/en/contact",
+        "httpStatus": 200,
+        "signals": [
+          "form_control",
+          "contact_invitation"
+        ],
+        "error": ""
+      },
+      "contactCapabilityVerified": true
     },
     {
       "linkedinUrl": "https://www.linkedin.com/company/rei",
@@ -458,7 +514,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -529,8 +585,8 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "excludedMarkets": "Switzerland, Romania, Greece, Hungary, Netherlands, Belgium, Poland, Czechia, Slovakia, Estonia, Lithuania and Slovenia",
       "linkedin_url": "",
       "linkedin": "",
-      "publicEmail": "",
-      "contactEmail": "",
+      "publicEmail": "service-emea@premiumaudiocompany.com",
+      "contactEmail": "service-emea@premiumaudiocompany.com",
       "vendorPortal": "https://support.aqipa.com/en-US/new-ticket",
       "contactPhone": "",
       "contactNote": "",
@@ -538,7 +594,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "website": "https://www.aqipa.com/",
       "evidenceUrl": "https://www.google.com/search?q=%22Aqipa%22%20%22pan-European%20premium%20consumer%20electronics%20and%20action%20gear%20distributor%22%20%22Austria%22%20buyer%20OR%20wholesale%20OR%20contact",
       "sourceEvidenceUrl": "https://support.aqipa.com/en-US/kb/articles/anfrage-partner-werden",
-      "externalVerificationStatus": "",
+      "externalVerificationStatus": "official_contact_form_verified",
       "query": "https://www.google.com/search?q=%22Aqipa%22%20%22pan-European%20premium%20consumer%20electronics%20and%20action%20gear%20distributor%22%20%22Austria%22%20buyer%20OR%20wholesale%20OR%20contact",
       "source": "google_customer_discovery",
       "sourceType": "google",
@@ -557,7 +613,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -573,7 +629,22 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       },
       "identitySource": "official website/social profile + Google background query",
       "channelPriority": 1,
-      "discoveredAt": "2026-07-14T04:02:10.362Z"
+      "discoveredAt": "2026-07-14T04:02:10.362Z",
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-05T05:09:35.020Z",
+        "evidenceUrl": "https://support.aqipa.com/en-US/new-ticket",
+        "httpStatus": 200,
+        "signals": [
+          "form_control",
+          "public_business_email",
+          "contact_invitation"
+        ],
+        "error": ""
+      },
+      "contactCapabilityVerified": true,
+      "emailVerificationStatus": "official_public_business_email",
+      "emailEvidence": "first_party_live_page_cache"
     },
     {
       "linkedinUrl": "https://www.linkedin.com/company/rei",
@@ -643,7 +714,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -731,7 +802,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -810,8 +881,8 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "excludedMarkets": "Switzerland, Romania, Greece, Hungary, Netherlands, Belgium, Poland, Czechia, Slovakia, Estonia, Lithuania and Slovenia",
       "linkedin_url": "",
       "linkedin": "",
-      "publicEmail": "",
-      "contactEmail": "",
+      "publicEmail": "service-emea@premiumaudiocompany.com",
+      "contactEmail": "service-emea@premiumaudiocompany.com",
       "vendorPortal": "https://support.aqipa.com/en-US/new-ticket",
       "contactPhone": "",
       "contactNote": "",
@@ -819,7 +890,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "website": "https://www.aqipa.com/",
       "evidenceUrl": "https://www.google.com/search?q=%22Aqipa%22%20%22pan-European%20premium%20consumer%20electronics%20and%20action%20gear%20distributor%22%20%22Austria%22%20buyer%20OR%20wholesale%20OR%20contact",
       "sourceEvidenceUrl": "https://support.aqipa.com/en-US/kb/articles/anfrage-partner-werden",
-      "externalVerificationStatus": "",
+      "externalVerificationStatus": "official_contact_form_verified",
       "query": "https://www.google.com/search?q=%22Aqipa%22%20%22pan-European%20premium%20consumer%20electronics%20and%20action%20gear%20distributor%22%20%22Austria%22%20buyer%20OR%20wholesale%20OR%20contact",
       "source": "google_customer_discovery",
       "sourceType": "google",
@@ -838,7 +909,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -862,7 +933,22 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "invalidChannels": {},
       "identitySource": "official homepage found; exact buyer/contact path still requires verification",
       "channelPriority": 3,
-      "discoveredAt": "2026-07-14T04:02:10.362Z"
+      "discoveredAt": "2026-07-14T04:02:10.362Z",
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-05T05:09:35.020Z",
+        "evidenceUrl": "https://support.aqipa.com/en-US/new-ticket",
+        "httpStatus": 200,
+        "signals": [
+          "form_control",
+          "public_business_email",
+          "contact_invitation"
+        ],
+        "error": ""
+      },
+      "contactCapabilityVerified": true,
+      "emailVerificationStatus": "official_public_business_email",
+      "emailEvidence": "first_party_live_page_cache"
     },
     {
       "id": "google-customer-komsa-website-contact",
@@ -899,7 +985,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "website": "https://komsa.com/en/",
       "evidenceUrl": "https://www.google.com/search?q=%22KOMSA%22%20%22European%20consumer%20electronics%20sales%20marketing%20and%20distribution%20group%22%20%22Germany%22%20buyer%20OR%20wholesale%20OR%20contact",
       "sourceEvidenceUrl": "https://komsa.com/en/contact/",
-      "externalVerificationStatus": "",
+      "externalVerificationStatus": "official_contact_form_verified",
       "query": "https://www.google.com/search?q=%22KOMSA%22%20%22European%20consumer%20electronics%20sales%20marketing%20and%20distribution%20group%22%20%22Germany%22%20buyer%20OR%20wholesale%20OR%20contact",
       "source": "google_customer_discovery",
       "sourceType": "google",
@@ -918,7 +1004,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -942,7 +1028,19 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "invalidChannels": {},
       "identitySource": "official website contact path + Google buyer/contact query",
       "channelPriority": 3,
-      "discoveredAt": "2026-07-20T13:25:02.177Z"
+      "discoveredAt": "2026-07-20T13:25:02.177Z",
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-05T05:09:36.856Z",
+        "evidenceUrl": "https://komsa.com/en/contact",
+        "httpStatus": 200,
+        "signals": [
+          "form_control",
+          "contact_invitation"
+        ],
+        "error": ""
+      },
+      "contactCapabilityVerified": true
     },
     {
       "id": "google-customer-cms-distribution-linkedin",
@@ -986,9 +1084,9 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
-      "officialSocialProfileVerified": false,
-      "socialProfileEvidenceUrl": "",
-      "socialProfileVerifiedAt": "",
+      "officialSocialProfileVerified": true,
+      "socialProfileEvidenceUrl": "https://www.cmsdistribution.com/contact-us",
+      "socialProfileVerifiedAt": "2026-08-05T05:09:34.181Z",
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -998,7 +1096,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "linkedin",
@@ -1014,7 +1112,17 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       },
       "identitySource": "verified LinkedIn profile + official website + Google background query",
       "channelPriority": 0,
-      "discoveredAt": "2026-07-14T04:02:10.362Z"
+      "discoveredAt": "2026-07-14T04:02:10.362Z",
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-05T05:09:34.181Z",
+        "evidenceUrl": "https://www.cmsdistribution.com/contact-us",
+        "httpStatus": 200,
+        "signals": [
+          "contact_invitation"
+        ],
+        "error": ""
+      }
     },
     {
       "id": "google-customer-cms-distribution-website-contact",
@@ -1070,7 +1178,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -1094,7 +1202,17 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "invalidChannels": {},
       "identitySource": "official website contact path + Google buyer/contact query",
       "channelPriority": 3,
-      "discoveredAt": "2026-07-14T04:02:10.362Z"
+      "discoveredAt": "2026-07-14T04:02:10.362Z",
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-05T05:09:34.181Z",
+        "evidenceUrl": "https://www.cmsdistribution.com/contact-us",
+        "httpStatus": 200,
+        "signals": [
+          "contact_invitation"
+        ],
+        "error": ""
+      }
     },
     {
       "linkedinUrl": "https://www.linkedin.com/company/bassproshops",
@@ -1164,7 +1282,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -1180,7 +1298,20 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       },
       "identitySource": "official website/social profile + Google background query",
       "channelPriority": 1,
-      "discoveredAt": "2026-07-14T04:02:10.362Z"
+      "discoveredAt": "2026-07-14T04:02:10.362Z",
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-05T05:09:37.919Z",
+        "evidenceUrl": "https://vendorportal.basspro.com/default.aspx",
+        "httpStatus": 200,
+        "signals": [
+          "form_control",
+          "public_business_email"
+        ],
+        "error": ""
+      },
+      "emailVerificationStatus": "official_public_business_email",
+      "emailEvidence": "first_party_live_page_cache"
     },
     {
       "linkedinUrl": "https://www.linkedin.com/company/bassproshops",
@@ -1250,7 +1381,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -1268,7 +1399,20 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "facebookStatus": "verified_official_page_candidate",
       "identitySource": "official Facebook page candidate + official website + Google background query",
       "channelPriority": 2,
-      "discoveredAt": "2026-07-14T04:02:10.362Z"
+      "discoveredAt": "2026-07-14T04:02:10.362Z",
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-05T05:09:37.919Z",
+        "evidenceUrl": "https://vendorportal.basspro.com/default.aspx",
+        "httpStatus": 200,
+        "signals": [
+          "form_control",
+          "public_business_email"
+        ],
+        "error": ""
+      },
+      "emailVerificationStatus": "official_public_business_email",
+      "emailEvidence": "first_party_live_page_cache"
     },
     {
       "linkedinUrl": "https://www.linkedin.com/company/bassproshops",
@@ -1338,7 +1482,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -1362,7 +1506,20 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "invalidChannels": {},
       "identitySource": "official website contact path + Google buyer/contact query",
       "channelPriority": 3,
-      "discoveredAt": "2026-07-14T04:02:10.362Z"
+      "discoveredAt": "2026-07-14T04:02:10.362Z",
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-05T05:09:37.919Z",
+        "evidenceUrl": "https://vendorportal.basspro.com/default.aspx",
+        "httpStatus": 200,
+        "signals": [
+          "form_control",
+          "public_business_email"
+        ],
+        "error": ""
+      },
+      "emailVerificationStatus": "official_public_business_email",
+      "emailEvidence": "first_party_live_page_cache"
     },
     {
       "id": "google-customer-academy-sports-outdoors-website-contact",
@@ -1418,7 +1575,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -1493,16 +1650,16 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "website": "https://www.cabelas.com/",
       "evidenceUrl": "https://www.google.com/search?q=%22Cabela's%22%20%22outdoor%20retail%20chain%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
       "sourceEvidenceUrl": "https://www.cabelas.com/",
-      "externalVerificationStatus": "",
+      "externalVerificationStatus": "official_contact_form_verified",
       "query": "https://www.google.com/search?q=%22Cabela's%22%20%22outdoor%20retail%20chain%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
       "source": "google_customer_discovery",
       "sourceType": "google",
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
-      "officialSocialProfileVerified": false,
-      "socialProfileEvidenceUrl": "",
-      "socialProfileVerifiedAt": "",
+      "officialSocialProfileVerified": true,
+      "socialProfileEvidenceUrl": "https://help.cabelas.com/company-information-ff566349/how-can-i-sell-my-product-through-cabelas-cf904a21",
+      "socialProfileVerifiedAt": "2026-08-05T05:09:39.303Z",
       "profiledAt": "2026-07-14T04:02:10.360Z",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -1512,7 +1669,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -1528,7 +1685,22 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       },
       "identitySource": "official website/social profile + Google background query",
       "channelPriority": 1,
-      "discoveredAt": "2026-07-14T04:02:10.362Z"
+      "discoveredAt": "2026-07-14T04:02:10.362Z",
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-05T05:09:39.303Z",
+        "evidenceUrl": "https://help.cabelas.com/company-information-ff566349/how-can-i-sell-my-product-through-cabelas-cf904a21",
+        "httpStatus": 200,
+        "signals": [
+          "form_control",
+          "public_business_email",
+          "contact_invitation"
+        ],
+        "error": ""
+      },
+      "contactCapabilityVerified": true,
+      "emailVerificationStatus": "official_public_business_email",
+      "emailEvidence": "first_party_live_page_cache"
     },
     {
       "id": "google-customer-liberty-mountain-instagram",
@@ -1584,7 +1756,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -1600,7 +1772,15 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       },
       "identitySource": "official website/social profile + Google background query",
       "channelPriority": 1,
-      "discoveredAt": "2026-07-14T04:02:10.362Z"
+      "discoveredAt": "2026-07-14T04:02:10.362Z",
+      "firstPartyChannelVerification": {
+        "status": "unreachable",
+        "verifiedAt": "2026-08-05T05:09:37.169Z",
+        "evidenceUrl": "https://libertymountain.com/find-a-rep",
+        "httpStatus": 403,
+        "signals": [],
+        "error": ""
+      }
     },
     {
       "linkedinUrl": "https://www.linkedin.com/company/cabela%27s",
@@ -1651,16 +1831,16 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "website": "https://www.cabelas.com/",
       "evidenceUrl": "https://www.google.com/search?q=%22Cabela's%22%20%22outdoor%20retail%20chain%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
       "sourceEvidenceUrl": "https://www.cabelas.com/",
-      "externalVerificationStatus": "",
+      "externalVerificationStatus": "official_contact_form_verified",
       "query": "https://www.google.com/search?q=%22Cabela's%22%20%22outdoor%20retail%20chain%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
       "source": "google_customer_discovery",
       "sourceType": "google",
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
-      "officialSocialProfileVerified": false,
-      "socialProfileEvidenceUrl": "",
-      "socialProfileVerifiedAt": "",
+      "officialSocialProfileVerified": true,
+      "socialProfileEvidenceUrl": "https://help.cabelas.com/company-information-ff566349/how-can-i-sell-my-product-through-cabelas-cf904a21",
+      "socialProfileVerifiedAt": "2026-08-05T05:09:39.303Z",
       "profiledAt": "2026-07-14T04:02:10.360Z",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -1670,7 +1850,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -1688,7 +1868,22 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "facebookStatus": "verified_official_page_candidate",
       "identitySource": "official Facebook page candidate + official website + Google background query",
       "channelPriority": 2,
-      "discoveredAt": "2026-07-14T04:02:10.362Z"
+      "discoveredAt": "2026-07-14T04:02:10.362Z",
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-05T05:09:39.303Z",
+        "evidenceUrl": "https://help.cabelas.com/company-information-ff566349/how-can-i-sell-my-product-through-cabelas-cf904a21",
+        "httpStatus": 200,
+        "signals": [
+          "form_control",
+          "public_business_email",
+          "contact_invitation"
+        ],
+        "error": ""
+      },
+      "contactCapabilityVerified": true,
+      "emailVerificationStatus": "official_public_business_email",
+      "emailEvidence": "first_party_live_page_cache"
     },
     {
       "id": "google-customer-liberty-mountain-facebook",
@@ -1744,7 +1939,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -1762,7 +1957,15 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "facebookStatus": "verified_official_page_candidate",
       "identitySource": "official Facebook page candidate + official website + Google background query",
       "channelPriority": 2,
-      "discoveredAt": "2026-07-14T04:02:10.362Z"
+      "discoveredAt": "2026-07-14T04:02:10.362Z",
+      "firstPartyChannelVerification": {
+        "status": "unreachable",
+        "verifiedAt": "2026-08-05T05:09:37.169Z",
+        "evidenceUrl": "https://libertymountain.com/find-a-rep",
+        "httpStatus": 403,
+        "signals": [],
+        "error": ""
+      }
     },
     {
       "linkedinUrl": "https://www.linkedin.com/company/cabela%27s",
@@ -1813,7 +2016,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "website": "https://www.cabelas.com/",
       "evidenceUrl": "https://www.google.com/search?q=%22Cabela's%22%20%22outdoor%20retail%20chain%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
       "sourceEvidenceUrl": "https://www.cabelas.com/",
-      "externalVerificationStatus": "",
+      "externalVerificationStatus": "official_contact_form_verified",
       "query": "https://www.google.com/search?q=%22Cabela's%22%20%22outdoor%20retail%20chain%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
       "source": "google_customer_discovery",
       "sourceType": "google",
@@ -1832,7 +2035,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -1856,7 +2059,22 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "invalidChannels": {},
       "identitySource": "official website contact path + Google buyer/contact query",
       "channelPriority": 3,
-      "discoveredAt": "2026-07-14T04:02:10.362Z"
+      "discoveredAt": "2026-07-14T04:02:10.362Z",
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-05T05:09:39.303Z",
+        "evidenceUrl": "https://help.cabelas.com/company-information-ff566349/how-can-i-sell-my-product-through-cabelas-cf904a21",
+        "httpStatus": 200,
+        "signals": [
+          "form_control",
+          "public_business_email",
+          "contact_invitation"
+        ],
+        "error": ""
+      },
+      "contactCapabilityVerified": true,
+      "emailVerificationStatus": "official_public_business_email",
+      "emailEvidence": "first_party_live_page_cache"
     },
     {
       "id": "google-customer-liberty-mountain-website-contact",
@@ -1912,7 +2130,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -1936,7 +2154,15 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "invalidChannels": {},
       "identitySource": "official website contact path + Google buyer/contact query",
       "channelPriority": 3,
-      "discoveredAt": "2026-07-14T04:02:10.362Z"
+      "discoveredAt": "2026-07-14T04:02:10.362Z",
+      "firstPartyChannelVerification": {
+        "status": "unreachable",
+        "verifiedAt": "2026-08-05T05:09:37.169Z",
+        "evidenceUrl": "https://libertymountain.com/find-a-rep",
+        "httpStatus": 403,
+        "signals": [],
+        "error": ""
+      }
     },
     {
       "linkedinUrl": "https://ca.linkedin.com/company/mountainequipmentcompany",
@@ -2006,7 +2232,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -2022,7 +2248,17 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       },
       "identitySource": "official website/social profile + Google background query",
       "channelPriority": 1,
-      "discoveredAt": "2026-07-14T04:02:10.362Z"
+      "discoveredAt": "2026-07-14T04:02:10.362Z",
+      "firstPartyChannelVerification": {
+        "status": "unreachable",
+        "verifiedAt": "2026-08-05T05:09:37.107Z",
+        "evidenceUrl": "https://www.mec.ca/en/contact-us",
+        "httpStatus": 403,
+        "signals": [],
+        "error": ""
+      },
+      "emailVerificationStatus": "official_public_business_email",
+      "emailEvidence": "first_party_live_page_cache"
     },
     {
       "id": "google-customer-backcountry-instagram",
@@ -2078,7 +2314,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -2094,7 +2330,15 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       },
       "identitySource": "official website/social profile + Google background query",
       "channelPriority": 1,
-      "discoveredAt": "2026-07-14T04:02:10.362Z"
+      "discoveredAt": "2026-07-14T04:02:10.362Z",
+      "firstPartyChannelVerification": {
+        "status": "unreachable",
+        "verifiedAt": "2026-08-05T05:09:39.526Z",
+        "evidenceUrl": "https://www.backcountry.com/sc/contact-us",
+        "httpStatus": 403,
+        "signals": [],
+        "error": ""
+      }
     },
     {
       "linkedinUrl": "https://ca.linkedin.com/company/mountainequipmentcompany",
@@ -2164,7 +2408,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -2182,7 +2426,17 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "facebookStatus": "verified_official_page_candidate",
       "identitySource": "official Facebook page candidate + official website + Google background query",
       "channelPriority": 2,
-      "discoveredAt": "2026-07-14T04:02:10.362Z"
+      "discoveredAt": "2026-07-14T04:02:10.362Z",
+      "firstPartyChannelVerification": {
+        "status": "unreachable",
+        "verifiedAt": "2026-08-05T05:09:37.107Z",
+        "evidenceUrl": "https://www.mec.ca/en/contact-us",
+        "httpStatus": 403,
+        "signals": [],
+        "error": ""
+      },
+      "emailVerificationStatus": "official_public_business_email",
+      "emailEvidence": "first_party_live_page_cache"
     },
     {
       "id": "google-customer-backcountry-facebook",
@@ -2238,7 +2492,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -2256,7 +2510,15 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "facebookStatus": "verified_official_page_candidate",
       "identitySource": "official Facebook page candidate + official website + Google background query",
       "channelPriority": 2,
-      "discoveredAt": "2026-07-14T04:02:10.362Z"
+      "discoveredAt": "2026-07-14T04:02:10.362Z",
+      "firstPartyChannelVerification": {
+        "status": "unreachable",
+        "verifiedAt": "2026-08-05T05:09:39.526Z",
+        "evidenceUrl": "https://www.backcountry.com/sc/contact-us",
+        "httpStatus": 403,
+        "signals": [],
+        "error": ""
+      }
     },
     {
       "linkedinUrl": "https://ca.linkedin.com/company/mountainequipmentcompany",
@@ -2326,7 +2588,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -2350,7 +2612,17 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "invalidChannels": {},
       "identitySource": "official website contact path + Google buyer/contact query",
       "channelPriority": 3,
-      "discoveredAt": "2026-07-14T04:02:10.362Z"
+      "discoveredAt": "2026-07-14T04:02:10.362Z",
+      "firstPartyChannelVerification": {
+        "status": "unreachable",
+        "verifiedAt": "2026-08-05T05:09:37.107Z",
+        "evidenceUrl": "https://www.mec.ca/en/contact-us",
+        "httpStatus": 403,
+        "signals": [],
+        "error": ""
+      },
+      "emailVerificationStatus": "official_public_business_email",
+      "emailEvidence": "first_party_live_page_cache"
     },
     {
       "id": "google-customer-backcountry-website-contact",
@@ -2406,7 +2678,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -2430,7 +2702,15 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "invalidChannels": {},
       "identitySource": "official website contact path + Google buyer/contact query",
       "channelPriority": 3,
-      "discoveredAt": "2026-07-14T04:02:10.362Z"
+      "discoveredAt": "2026-07-14T04:02:10.362Z",
+      "firstPartyChannelVerification": {
+        "status": "unreachable",
+        "verifiedAt": "2026-08-05T05:09:39.526Z",
+        "evidenceUrl": "https://www.backcountry.com/sc/contact-us",
+        "httpStatus": 403,
+        "signals": [],
+        "error": ""
+      }
     },
     {
       "linkedinUrl": "https://uk.linkedin.com/company/go-outdoors-ltd",
@@ -2481,16 +2761,16 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "website": "https://www.gooutdoors.co.uk/",
       "evidenceUrl": "https://www.google.com/search?q=%22GO%20Outdoors%22%20%22outdoor%20retail%20chain%22%20%22United%20Kingdom%22%20buyer%20OR%20wholesale%20OR%20contact",
       "sourceEvidenceUrl": "https://www.gooutdoors.co.uk/",
-      "externalVerificationStatus": "",
+      "externalVerificationStatus": "official_contact_form_verified",
       "query": "https://www.google.com/search?q=%22GO%20Outdoors%22%20%22outdoor%20retail%20chain%22%20%22United%20Kingdom%22%20buyer%20OR%20wholesale%20OR%20contact",
       "source": "google_customer_discovery",
       "sourceType": "google",
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
-      "officialSocialProfileVerified": false,
-      "socialProfileEvidenceUrl": "",
-      "socialProfileVerifiedAt": "",
+      "officialSocialProfileVerified": true,
+      "socialProfileEvidenceUrl": "https://www.gooutdoors.co.uk/",
+      "socialProfileVerifiedAt": "2026-08-05T05:09:52.509Z",
       "profiledAt": "2026-07-14T04:02:10.360Z",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -2500,7 +2780,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -2516,7 +2796,19 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       },
       "identitySource": "official website/social profile + Google background query",
       "channelPriority": 1,
-      "discoveredAt": "2026-07-14T04:02:10.362Z"
+      "discoveredAt": "2026-07-14T04:02:10.362Z",
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-05T05:09:52.509Z",
+        "evidenceUrl": "https://www.gooutdoors.co.uk/",
+        "httpStatus": 200,
+        "signals": [
+          "form_control",
+          "contact_invitation"
+        ],
+        "error": ""
+      },
+      "contactCapabilityVerified": true
     },
     {
       "id": "google-customer-sportsman-s-warehouse-instagram",
@@ -2572,7 +2864,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -2588,7 +2880,15 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       },
       "identitySource": "official website/social profile + Google background query",
       "channelPriority": 1,
-      "discoveredAt": "2026-07-14T04:02:10.362Z"
+      "discoveredAt": "2026-07-14T04:02:10.362Z",
+      "firstPartyChannelVerification": {
+        "status": "unreachable",
+        "verifiedAt": "2026-08-05T05:09:51.064Z",
+        "evidenceUrl": "https://www.sportsmans.com/contact-us",
+        "httpStatus": 0,
+        "signals": [],
+        "error": "fetch failed"
+      }
     },
     {
       "linkedinUrl": "https://uk.linkedin.com/company/go-outdoors-ltd",
@@ -2639,16 +2939,16 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "website": "https://www.gooutdoors.co.uk/",
       "evidenceUrl": "https://www.google.com/search?q=%22GO%20Outdoors%22%20%22outdoor%20retail%20chain%22%20%22United%20Kingdom%22%20buyer%20OR%20wholesale%20OR%20contact",
       "sourceEvidenceUrl": "https://www.gooutdoors.co.uk/",
-      "externalVerificationStatus": "",
+      "externalVerificationStatus": "official_contact_form_verified",
       "query": "https://www.google.com/search?q=%22GO%20Outdoors%22%20%22outdoor%20retail%20chain%22%20%22United%20Kingdom%22%20buyer%20OR%20wholesale%20OR%20contact",
       "source": "google_customer_discovery",
       "sourceType": "google",
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
-      "officialSocialProfileVerified": false,
-      "socialProfileEvidenceUrl": "",
-      "socialProfileVerifiedAt": "",
+      "officialSocialProfileVerified": true,
+      "socialProfileEvidenceUrl": "https://www.gooutdoors.co.uk/",
+      "socialProfileVerifiedAt": "2026-08-05T05:09:52.509Z",
       "profiledAt": "2026-07-14T04:02:10.360Z",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -2658,7 +2958,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -2676,7 +2976,19 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "facebookStatus": "verified_official_page_candidate",
       "identitySource": "official Facebook page candidate + official website + Google background query",
       "channelPriority": 2,
-      "discoveredAt": "2026-07-14T04:02:10.362Z"
+      "discoveredAt": "2026-07-14T04:02:10.362Z",
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-05T05:09:52.509Z",
+        "evidenceUrl": "https://www.gooutdoors.co.uk/",
+        "httpStatus": 200,
+        "signals": [
+          "form_control",
+          "contact_invitation"
+        ],
+        "error": ""
+      },
+      "contactCapabilityVerified": true
     },
     {
       "id": "google-customer-sportsman-s-warehouse-facebook",
@@ -2732,7 +3044,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -2750,7 +3062,15 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "facebookStatus": "verified_official_page_candidate",
       "identitySource": "official Facebook page candidate + official website + Google background query",
       "channelPriority": 2,
-      "discoveredAt": "2026-07-14T04:02:10.362Z"
+      "discoveredAt": "2026-07-14T04:02:10.362Z",
+      "firstPartyChannelVerification": {
+        "status": "unreachable",
+        "verifiedAt": "2026-08-05T05:09:51.064Z",
+        "evidenceUrl": "https://www.sportsmans.com/contact-us",
+        "httpStatus": 0,
+        "signals": [],
+        "error": "fetch failed"
+      }
     },
     {
       "linkedinUrl": "https://uk.linkedin.com/company/go-outdoors-ltd",
@@ -2801,7 +3121,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "website": "https://www.gooutdoors.co.uk/",
       "evidenceUrl": "https://www.google.com/search?q=%22GO%20Outdoors%22%20%22outdoor%20retail%20chain%22%20%22United%20Kingdom%22%20buyer%20OR%20wholesale%20OR%20contact",
       "sourceEvidenceUrl": "https://www.gooutdoors.co.uk/",
-      "externalVerificationStatus": "",
+      "externalVerificationStatus": "official_contact_form_verified",
       "query": "https://www.google.com/search?q=%22GO%20Outdoors%22%20%22outdoor%20retail%20chain%22%20%22United%20Kingdom%22%20buyer%20OR%20wholesale%20OR%20contact",
       "source": "google_customer_discovery",
       "sourceType": "google",
@@ -2820,7 +3140,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -2844,7 +3164,19 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "invalidChannels": {},
       "identitySource": "official website contact path + Google buyer/contact query",
       "channelPriority": 3,
-      "discoveredAt": "2026-07-14T04:02:10.362Z"
+      "discoveredAt": "2026-07-14T04:02:10.362Z",
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-05T05:09:52.509Z",
+        "evidenceUrl": "https://www.gooutdoors.co.uk/",
+        "httpStatus": 200,
+        "signals": [
+          "form_control",
+          "contact_invitation"
+        ],
+        "error": ""
+      },
+      "contactCapabilityVerified": true
     },
     {
       "id": "google-customer-sportsman-s-warehouse-website-contact",
@@ -2900,7 +3232,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -2924,7 +3256,15 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "invalidChannels": {},
       "identitySource": "official website contact path + Google buyer/contact query",
       "channelPriority": 3,
-      "discoveredAt": "2026-07-14T04:02:10.362Z"
+      "discoveredAt": "2026-07-14T04:02:10.362Z",
+      "firstPartyChannelVerification": {
+        "status": "unreachable",
+        "verifiedAt": "2026-08-05T05:09:51.064Z",
+        "evidenceUrl": "https://www.sportsmans.com/contact-us",
+        "httpStatus": 0,
+        "signals": [],
+        "error": "fetch failed"
+      }
     },
     {
       "id": "google-customer-obelink-website-contact",
@@ -2980,7 +3320,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -3004,7 +3344,17 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "invalidChannels": {},
       "identitySource": "official website contact path + Google buyer/contact query",
       "channelPriority": 3,
-      "discoveredAt": "2026-07-14T04:02:10.362Z"
+      "discoveredAt": "2026-07-14T04:02:10.362Z",
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-05T05:09:52.176Z",
+        "evidenceUrl": "https://www.obelink.nl/obelink-partnerprogramma/",
+        "httpStatus": 200,
+        "signals": [
+          "form_control"
+        ],
+        "error": ""
+      }
     },
     {
       "linkedinUrl": "https://au.linkedin.com/company/anaconda-group-pty-ltd",
@@ -3075,7 +3425,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -3091,7 +3441,15 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       },
       "identitySource": "official website/social profile + Google background query",
       "channelPriority": 1,
-      "discoveredAt": "2026-07-14T04:02:10.362Z"
+      "discoveredAt": "2026-07-14T04:02:10.362Z",
+      "firstPartyChannelVerification": {
+        "status": "unreachable",
+        "verifiedAt": "2026-08-05T05:09:53.159Z",
+        "evidenceUrl": "https://help.anacondastores.com/hc/en-au",
+        "httpStatus": 403,
+        "signals": [],
+        "error": ""
+      }
     },
     {
       "id": "google-customer-globetrotter-instagram",
@@ -3147,7 +3505,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -3163,7 +3521,15 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       },
       "identitySource": "official website/social profile + Google background query",
       "channelPriority": 1,
-      "discoveredAt": "2026-07-14T04:02:10.362Z"
+      "discoveredAt": "2026-07-14T04:02:10.362Z",
+      "firstPartyChannelVerification": {
+        "status": "unreachable",
+        "verifiedAt": "2026-08-05T05:09:54.247Z",
+        "evidenceUrl": "https://www.globetrotter.de/",
+        "httpStatus": 403,
+        "signals": [],
+        "error": ""
+      }
     },
     {
       "linkedinUrl": "https://au.linkedin.com/company/anaconda-group-pty-ltd",
@@ -3234,7 +3600,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -3252,7 +3618,15 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "facebookStatus": "verified_official_page_candidate",
       "identitySource": "official Facebook page candidate + official website + Google background query",
       "channelPriority": 2,
-      "discoveredAt": "2026-07-14T04:02:10.362Z"
+      "discoveredAt": "2026-07-14T04:02:10.362Z",
+      "firstPartyChannelVerification": {
+        "status": "unreachable",
+        "verifiedAt": "2026-08-05T05:09:53.159Z",
+        "evidenceUrl": "https://help.anacondastores.com/hc/en-au",
+        "httpStatus": 403,
+        "signals": [],
+        "error": ""
+      }
     },
     {
       "linkedinUrl": "https://au.linkedin.com/company/anaconda-group-pty-ltd",
@@ -3323,7 +3697,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -3347,7 +3721,15 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "invalidChannels": {},
       "identitySource": "official website contact path + Google buyer/contact query",
       "channelPriority": 3,
-      "discoveredAt": "2026-07-14T04:02:10.362Z"
+      "discoveredAt": "2026-07-14T04:02:10.362Z",
+      "firstPartyChannelVerification": {
+        "status": "unreachable",
+        "verifiedAt": "2026-08-05T05:09:53.159Z",
+        "evidenceUrl": "https://help.anacondastores.com/hc/en-au",
+        "httpStatus": 403,
+        "signals": [],
+        "error": ""
+      }
     },
     {
       "id": "google-customer-scheels-website-contact",
@@ -3403,7 +3785,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -3483,7 +3865,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -3507,7 +3889,15 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "invalidChannels": {},
       "identitySource": "official homepage found; exact buyer/contact path still requires verification",
       "channelPriority": 3,
-      "discoveredAt": "2026-07-14T04:02:10.362Z"
+      "discoveredAt": "2026-07-14T04:02:10.362Z",
+      "firstPartyChannelVerification": {
+        "status": "unreachable",
+        "verifiedAt": "2026-08-05T05:09:54.247Z",
+        "evidenceUrl": "https://www.globetrotter.de/",
+        "httpStatus": 403,
+        "signals": [],
+        "error": ""
+      }
     },
     {
       "id": "google-customer-outdoor-nature-website-contact",
@@ -3563,7 +3953,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -3587,7 +3977,20 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "invalidChannels": {},
       "identitySource": "official website contact path + Google buyer/contact query",
       "channelPriority": 3,
-      "discoveredAt": "2026-07-29T12:52:55.130Z"
+      "discoveredAt": "2026-07-29T12:52:55.130Z",
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-05T05:09:56.229Z",
+        "evidenceUrl": "https://www.outdoornature.com.au/become-a-supplier/",
+        "httpStatus": 200,
+        "signals": [
+          "form_control",
+          "supplier_invitation",
+          "contact_invitation"
+        ],
+        "error": ""
+      },
+      "contactCapabilityVerified": true
     },
     {
       "id": "google-customer-garage-grown-gear-instagram",
@@ -3643,7 +4046,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -3659,7 +4062,15 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       },
       "identitySource": "official website/social profile + Google background query",
       "channelPriority": 1,
-      "discoveredAt": "2026-07-14T04:02:10.362Z"
+      "discoveredAt": "2026-07-14T04:02:10.362Z",
+      "firstPartyChannelVerification": {
+        "status": "unreachable",
+        "verifiedAt": "2026-08-05T05:09:53.344Z",
+        "evidenceUrl": "https://www.garagegrowngear.com/",
+        "httpStatus": 403,
+        "signals": [],
+        "error": ""
+      }
     },
     {
       "id": "google-customer-bergfreunde-instagram",
@@ -3715,7 +4126,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -3731,7 +4142,15 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       },
       "identitySource": "official website/social profile + Google background query",
       "channelPriority": 1,
-      "discoveredAt": "2026-07-14T04:02:10.362Z"
+      "discoveredAt": "2026-07-14T04:02:10.362Z",
+      "firstPartyChannelVerification": {
+        "status": "unreachable",
+        "verifiedAt": "2026-08-05T05:09:53.309Z",
+        "evidenceUrl": "https://www.bergfreunde.eu/",
+        "httpStatus": 403,
+        "signals": [],
+        "error": ""
+      }
     },
     {
       "linkedinUrl": "https://ca.linkedin.com/company/sailpleinairoutdoors",
@@ -3743,7 +4162,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "salesChannel": "Stores and ecommerce",
       "buyingCapability": "Medium/High; regional Canadian outdoor chain",
       "decisionMaker": "Camping/outdoor equipment department buyer or merchandising manager",
-      "publicEmail": "",
+      "publicEmail": "info@sail.ca",
       "publicEmailStatus": "No public buyer email verified; Instagram profile is broken, use Facebook or official contact page.",
       "contactPhone": "",
       "vendorPortal": "https://www.sail.ca/en/contact-us",
@@ -3778,11 +4197,11 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "opportunity": "Canadian outdoor retailer for camping, fishing, hunting, apparel, and equipment.",
       "linkedin_url": "https://ca.linkedin.com/company/sailpleinairoutdoors",
       "linkedin": "https://ca.linkedin.com/company/sailpleinairoutdoors",
-      "contactEmail": "",
+      "contactEmail": "info@sail.ca",
       "website": "https://www.sail.ca/",
       "evidenceUrl": "https://www.google.com/search?q=%22Sail%20Outdoors%22%20%22outdoor%20retail%20chain%22%20%22Canada%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "sourceEvidenceUrl": "https://www.sail.ca/",
-      "externalVerificationStatus": "",
+      "sourceEvidenceUrl": "https://www.sail.ca/en/contact-us",
+      "externalVerificationStatus": "official_contact_form_verified",
       "query": "https://www.google.com/search?q=%22Sail%20Outdoors%22%20%22outdoor%20retail%20chain%22%20%22Canada%22%20buyer%20OR%20wholesale%20OR%20contact",
       "source": "google_customer_discovery",
       "sourceType": "google",
@@ -3801,7 +4220,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -3836,7 +4255,22 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       },
       "identitySource": "official website contact path + Google buyer/contact query",
       "channelPriority": 3,
-      "discoveredAt": "2026-07-14T04:02:10.362Z"
+      "discoveredAt": "2026-07-14T04:02:10.362Z",
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-05T05:09:57.544Z",
+        "evidenceUrl": "https://www.sail.ca/en/contact-us",
+        "httpStatus": 200,
+        "signals": [
+          "form_control",
+          "public_business_email",
+          "contact_invitation"
+        ],
+        "error": ""
+      },
+      "contactCapabilityVerified": true,
+      "emailVerificationStatus": "official_public_business_email",
+      "emailEvidence": "first_party_live_page"
     },
     {
       "id": "google-customer-garage-grown-gear-website-contact",
@@ -3892,7 +4326,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -3916,7 +4350,15 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "invalidChannels": {},
       "identitySource": "official homepage found; exact buyer/contact path still requires verification",
       "channelPriority": 3,
-      "discoveredAt": "2026-07-14T04:02:10.362Z"
+      "discoveredAt": "2026-07-14T04:02:10.362Z",
+      "firstPartyChannelVerification": {
+        "status": "unreachable",
+        "verifiedAt": "2026-08-05T05:09:53.344Z",
+        "evidenceUrl": "https://www.garagegrowngear.com/",
+        "httpStatus": 403,
+        "signals": [],
+        "error": ""
+      }
     },
     {
       "id": "google-customer-bergfreunde-website-contact",
@@ -3972,7 +4414,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -3996,7 +4438,15 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "invalidChannels": {},
       "identitySource": "official homepage found; exact buyer/contact path still requires verification",
       "channelPriority": 3,
-      "discoveredAt": "2026-07-14T04:02:10.362Z"
+      "discoveredAt": "2026-07-14T04:02:10.362Z",
+      "firstPartyChannelVerification": {
+        "status": "unreachable",
+        "verifiedAt": "2026-08-05T05:09:53.309Z",
+        "evidenceUrl": "https://www.bergfreunde.eu/",
+        "httpStatus": 403,
+        "signals": [],
+        "error": ""
+      }
     },
     {
       "id": "google-customer-fritz-berger-website-contact",
@@ -4052,7 +4502,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -4082,7 +4532,17 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       },
       "identitySource": "official homepage found; exact buyer/contact path still requires verification",
       "channelPriority": 3,
-      "discoveredAt": "2026-07-14T04:02:10.362Z"
+      "discoveredAt": "2026-07-14T04:02:10.362Z",
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-05T05:09:57.917Z",
+        "evidenceUrl": "https://www.fritz-berger.de/",
+        "httpStatus": 200,
+        "signals": [
+          "form_control"
+        ],
+        "error": ""
+      }
     },
     {
       "id": "google-customer-au-vieux-campeur-website-contact",
@@ -4138,7 +4598,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -4162,7 +4622,15 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "invalidChannels": {},
       "identitySource": "official homepage found; exact buyer/contact path still requires verification",
       "channelPriority": 3,
-      "discoveredAt": "2026-07-14T04:02:10.362Z"
+      "discoveredAt": "2026-07-14T04:02:10.362Z",
+      "firstPartyChannelVerification": {
+        "status": "unreachable",
+        "verifiedAt": "2026-08-05T05:09:56.347Z",
+        "evidenceUrl": "https://www.auvieuxcampeur.fr/",
+        "httpStatus": 403,
+        "signals": [],
+        "error": ""
+      }
     },
     {
       "linkedinUrl": "https://uk.linkedin.com/company/cotswold-outdoor",
@@ -4213,16 +4681,16 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "website": "https://www.cotswoldoutdoor.com/",
       "evidenceUrl": "https://www.google.com/search?q=%22Cotswold%20Outdoor%22%20%22outdoor%20retail%20chain%22%20%22United%20Kingdom%22%20buyer%20OR%20wholesale%20OR%20contact",
       "sourceEvidenceUrl": "https://www.cotswoldoutdoor.com/",
-      "externalVerificationStatus": "",
+      "externalVerificationStatus": "official_contact_form_verified",
       "query": "https://www.google.com/search?q=%22Cotswold%20Outdoor%22%20%22outdoor%20retail%20chain%22%20%22United%20Kingdom%22%20buyer%20OR%20wholesale%20OR%20contact",
       "source": "google_customer_discovery",
       "sourceType": "google",
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
-      "officialSocialProfileVerified": false,
-      "socialProfileEvidenceUrl": "",
-      "socialProfileVerifiedAt": "",
+      "officialSocialProfileVerified": true,
+      "socialProfileEvidenceUrl": "https://www.cotswoldoutdoor.com/",
+      "socialProfileVerifiedAt": "2026-08-05T05:09:57.640Z",
       "profiledAt": "2026-07-14T04:02:10.360Z",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -4232,7 +4700,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -4248,7 +4716,19 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       },
       "identitySource": "official website/social profile + Google background query",
       "channelPriority": 1,
-      "discoveredAt": "2026-07-14T04:02:10.362Z"
+      "discoveredAt": "2026-07-14T04:02:10.362Z",
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-05T05:09:57.640Z",
+        "evidenceUrl": "https://www.cotswoldoutdoor.com/",
+        "httpStatus": 200,
+        "signals": [
+          "form_control",
+          "contact_invitation"
+        ],
+        "error": ""
+      },
+      "contactCapabilityVerified": true
     },
     {
       "linkedinUrl": "https://www.linkedin.com/company/decathlon-group",
@@ -4318,7 +4798,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -4334,7 +4814,17 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       },
       "identitySource": "official website/social profile + Google background query",
       "channelPriority": 1,
-      "discoveredAt": "2026-07-14T04:02:10.362Z"
+      "discoveredAt": "2026-07-14T04:02:10.362Z",
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-05T05:09:59.156Z",
+        "evidenceUrl": "https://www.decathlon.fr/help/app/contact",
+        "httpStatus": 200,
+        "signals": [
+          "form_control"
+        ],
+        "error": ""
+      }
     },
     {
       "id": "google-customer-campsaver-instagram",
@@ -4370,17 +4860,17 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "publicEmailStatus": "",
       "website": "https://www.campsaver.com/",
       "evidenceUrl": "https://www.google.com/search?q=%22CampSaver%22%20%22verified%20outdoor%2C%20camping%2C%20travel%20and%20consumer%20electronics%20retail%20channel%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "sourceEvidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
-      "externalVerificationStatus": "",
+      "sourceEvidenceUrl": "https://www.campsaver.com/",
+      "externalVerificationStatus": "official_supplier_form_verified",
       "query": "https://www.google.com/search?q=%22CampSaver%22%20%22verified%20outdoor%2C%20camping%2C%20travel%20and%20consumer%20electronics%20retail%20channel%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
       "source": "google_customer_discovery",
       "sourceType": "google",
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
-      "officialSocialProfileVerified": false,
-      "socialProfileEvidenceUrl": "",
-      "socialProfileVerifiedAt": "",
+      "officialSocialProfileVerified": true,
+      "socialProfileEvidenceUrl": "https://www.campsaver.com/",
+      "socialProfileVerifiedAt": "2026-08-05T05:09:59.186Z",
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -4390,7 +4880,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -4406,7 +4896,20 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       },
       "identitySource": "official website/social profile + Google background query",
       "channelPriority": 1,
-      "discoveredAt": "2026-07-14T04:02:10.362Z"
+      "discoveredAt": "2026-07-14T04:02:10.362Z",
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-05T05:09:59.186Z",
+        "evidenceUrl": "https://www.campsaver.com/",
+        "httpStatus": 200,
+        "signals": [
+          "form_control",
+          "supplier_invitation",
+          "contact_invitation"
+        ],
+        "error": ""
+      },
+      "contactCapabilityVerified": true
     },
     {
       "id": "google-customer-bergzeit-instagram",
@@ -4462,7 +4965,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -4478,7 +4981,15 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       },
       "identitySource": "official website/social profile + Google background query",
       "channelPriority": 1,
-      "discoveredAt": "2026-07-14T04:02:10.362Z"
+      "discoveredAt": "2026-07-14T04:02:10.362Z",
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-05T05:10:01.407Z",
+        "evidenceUrl": "https://www.bergzeit.de/",
+        "httpStatus": 200,
+        "signals": [],
+        "error": ""
+      }
     },
     {
       "id": "google-customer-camping-wagner-instagram",
@@ -4534,7 +5045,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -4550,7 +5061,15 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       },
       "identitySource": "official website/social profile + Google background query",
       "channelPriority": 1,
-      "discoveredAt": "2026-07-14T04:02:10.362Z"
+      "discoveredAt": "2026-07-14T04:02:10.362Z",
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-05T05:10:00.579Z",
+        "evidenceUrl": "https://www.campingwagner.de/de/",
+        "httpStatus": 200,
+        "signals": [],
+        "error": ""
+      }
     },
     {
       "linkedinUrl": "https://uk.linkedin.com/company/cotswold-outdoor",
@@ -4601,16 +5120,16 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "website": "https://www.cotswoldoutdoor.com/",
       "evidenceUrl": "https://www.google.com/search?q=%22Cotswold%20Outdoor%22%20%22outdoor%20retail%20chain%22%20%22United%20Kingdom%22%20buyer%20OR%20wholesale%20OR%20contact",
       "sourceEvidenceUrl": "https://www.cotswoldoutdoor.com/",
-      "externalVerificationStatus": "",
+      "externalVerificationStatus": "official_contact_form_verified",
       "query": "https://www.google.com/search?q=%22Cotswold%20Outdoor%22%20%22outdoor%20retail%20chain%22%20%22United%20Kingdom%22%20buyer%20OR%20wholesale%20OR%20contact",
       "source": "google_customer_discovery",
       "sourceType": "google",
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
-      "officialSocialProfileVerified": false,
-      "socialProfileEvidenceUrl": "",
-      "socialProfileVerifiedAt": "",
+      "officialSocialProfileVerified": true,
+      "socialProfileEvidenceUrl": "https://www.cotswoldoutdoor.com/",
+      "socialProfileVerifiedAt": "2026-08-05T05:09:57.640Z",
       "profiledAt": "2026-07-14T04:02:10.360Z",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -4620,7 +5139,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -4638,7 +5157,19 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "facebookStatus": "verified_official_page_candidate",
       "identitySource": "official Facebook page candidate + official website + Google background query",
       "channelPriority": 2,
-      "discoveredAt": "2026-07-14T04:02:10.362Z"
+      "discoveredAt": "2026-07-14T04:02:10.362Z",
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-05T05:09:57.640Z",
+        "evidenceUrl": "https://www.cotswoldoutdoor.com/",
+        "httpStatus": 200,
+        "signals": [
+          "form_control",
+          "contact_invitation"
+        ],
+        "error": ""
+      },
+      "contactCapabilityVerified": true
     },
     {
       "linkedinUrl": "https://www.linkedin.com/company/decathlon-group",
@@ -4708,7 +5239,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -4732,7 +5263,15 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "facebookStatus": "verified_official_page_candidate",
       "identitySource": "official Facebook page candidate + official website + Google background query",
       "channelPriority": 2,
-      "discoveredAt": "2026-07-14T04:02:10.362Z"
+      "discoveredAt": "2026-07-14T04:02:10.362Z",
+      "firstPartyChannelVerification": {
+        "status": "unreachable",
+        "verifiedAt": "2026-08-05T05:10:01.657Z",
+        "evidenceUrl": "https://www.decathlon.de/help/app/contact",
+        "httpStatus": 403,
+        "signals": [],
+        "error": ""
+      }
     },
     {
       "linkedinUrl": "https://www.linkedin.com/company/decathlon-group",
@@ -4802,7 +5341,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -4820,7 +5359,17 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "facebookStatus": "verified_official_page_candidate",
       "identitySource": "official Facebook page candidate + official website + Google background query",
       "channelPriority": 2,
-      "discoveredAt": "2026-07-14T04:02:10.362Z"
+      "discoveredAt": "2026-07-14T04:02:10.362Z",
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-05T05:09:59.156Z",
+        "evidenceUrl": "https://www.decathlon.fr/help/app/contact",
+        "httpStatus": 200,
+        "signals": [
+          "form_control"
+        ],
+        "error": ""
+      }
     },
     {
       "linkedinUrl": "https://uk.linkedin.com/company/cotswold-outdoor",
@@ -4871,7 +5420,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "website": "https://www.cotswoldoutdoor.com/",
       "evidenceUrl": "https://www.google.com/search?q=%22Cotswold%20Outdoor%22%20%22outdoor%20retail%20chain%22%20%22United%20Kingdom%22%20buyer%20OR%20wholesale%20OR%20contact",
       "sourceEvidenceUrl": "https://www.cotswoldoutdoor.com/",
-      "externalVerificationStatus": "",
+      "externalVerificationStatus": "official_contact_form_verified",
       "query": "https://www.google.com/search?q=%22Cotswold%20Outdoor%22%20%22outdoor%20retail%20chain%22%20%22United%20Kingdom%22%20buyer%20OR%20wholesale%20OR%20contact",
       "source": "google_customer_discovery",
       "sourceType": "google",
@@ -4890,7 +5439,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -4914,7 +5463,19 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "invalidChannels": {},
       "identitySource": "official website contact path + Google buyer/contact query",
       "channelPriority": 3,
-      "discoveredAt": "2026-07-14T04:02:10.362Z"
+      "discoveredAt": "2026-07-14T04:02:10.362Z",
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-05T05:09:57.640Z",
+        "evidenceUrl": "https://www.cotswoldoutdoor.com/",
+        "httpStatus": 200,
+        "signals": [
+          "form_control",
+          "contact_invitation"
+        ],
+        "error": ""
+      },
+      "contactCapabilityVerified": true
     },
     {
       "linkedinUrl": "https://www.linkedin.com/company/decathlon-group",
@@ -4984,7 +5545,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -5014,7 +5575,15 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       },
       "identitySource": "official website contact path + Google buyer/contact query",
       "channelPriority": 3,
-      "discoveredAt": "2026-07-14T04:02:10.362Z"
+      "discoveredAt": "2026-07-14T04:02:10.362Z",
+      "firstPartyChannelVerification": {
+        "status": "unreachable",
+        "verifiedAt": "2026-08-05T05:10:01.657Z",
+        "evidenceUrl": "https://www.decathlon.de/help/app/contact",
+        "httpStatus": 403,
+        "signals": [],
+        "error": ""
+      }
     },
     {
       "linkedinUrl": "https://www.linkedin.com/company/decathlon-group",
@@ -5084,7 +5653,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -5108,7 +5677,17 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "invalidChannels": {},
       "identitySource": "official website contact path + Google buyer/contact query",
       "channelPriority": 3,
-      "discoveredAt": "2026-07-14T04:02:10.362Z"
+      "discoveredAt": "2026-07-14T04:02:10.362Z",
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-05T05:09:59.156Z",
+        "evidenceUrl": "https://www.decathlon.fr/help/app/contact",
+        "httpStatus": 200,
+        "signals": [
+          "form_control"
+        ],
+        "error": ""
+      }
     },
     {
       "linkedinUrl": "https://uk.linkedin.com/company/summit-international",
@@ -5158,8 +5737,8 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "contactEmail": "info@summitint.co",
       "website": "https://www.summitint.co/",
       "evidenceUrl": "https://www.google.com/search?q=%22Summit%20International%22%20%22outdoor%20importer%20and%20distributor%22%20%22United%20Kingdom%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "sourceEvidenceUrl": "https://www.summitint.co/",
-      "externalVerificationStatus": "",
+      "sourceEvidenceUrl": "https://www.summitint.co/contact/",
+      "externalVerificationStatus": "official_contact_form_verified",
       "query": "https://www.google.com/search?q=%22Summit%20International%22%20%22outdoor%20importer%20and%20distributor%22%20%22United%20Kingdom%22%20buyer%20OR%20wholesale%20OR%20contact",
       "source": "google_customer_discovery",
       "sourceType": "google",
@@ -5178,7 +5757,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -5213,7 +5792,19 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       },
       "identitySource": "official website contact path + Google buyer/contact query",
       "channelPriority": 3,
-      "discoveredAt": "2026-07-14T04:02:10.362Z"
+      "discoveredAt": "2026-07-14T04:02:10.362Z",
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-05T05:10:02.731Z",
+        "evidenceUrl": "https://www.summitint.co/contact/",
+        "httpStatus": 200,
+        "signals": [
+          "form_control",
+          "contact_invitation"
+        ],
+        "error": ""
+      },
+      "contactCapabilityVerified": true
     },
     {
       "id": "google-customer-campsaver-website-contact",
@@ -5249,8 +5840,8 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "publicEmailStatus": "",
       "website": "https://www.campsaver.com/",
       "evidenceUrl": "https://www.google.com/search?q=%22CampSaver%22%20%22verified%20outdoor%2C%20camping%2C%20travel%20and%20consumer%20electronics%20retail%20channel%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "sourceEvidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
-      "externalVerificationStatus": "",
+      "sourceEvidenceUrl": "https://www.campsaver.com/",
+      "externalVerificationStatus": "official_supplier_form_verified",
       "query": "https://www.google.com/search?q=%22CampSaver%22%20%22verified%20outdoor%2C%20camping%2C%20travel%20and%20consumer%20electronics%20retail%20channel%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
       "source": "google_customer_discovery",
       "sourceType": "google",
@@ -5269,7 +5860,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -5293,7 +5884,20 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "invalidChannels": {},
       "identitySource": "official homepage found; exact buyer/contact path still requires verification",
       "channelPriority": 3,
-      "discoveredAt": "2026-07-14T04:02:10.362Z"
+      "discoveredAt": "2026-07-14T04:02:10.362Z",
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-05T05:09:59.186Z",
+        "evidenceUrl": "https://www.campsaver.com/",
+        "httpStatus": 200,
+        "signals": [
+          "form_control",
+          "supplier_invitation",
+          "contact_invitation"
+        ],
+        "error": ""
+      },
+      "contactCapabilityVerified": true
     },
     {
       "id": "google-customer-valhalla-pure-outfitters-website-contact",
@@ -5349,7 +5953,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -5373,7 +5977,15 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "invalidChannels": {},
       "identitySource": "official homepage found; exact buyer/contact path still requires verification",
       "channelPriority": 3,
-      "discoveredAt": "2026-07-14T04:02:10.362Z"
+      "discoveredAt": "2026-07-14T04:02:10.362Z",
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-05T05:10:02.754Z",
+        "evidenceUrl": "https://vpo.ca/",
+        "httpStatus": 200,
+        "signals": [],
+        "error": ""
+      }
     },
     {
       "id": "google-customer-tentworld-website-contact",
@@ -5429,7 +6041,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -5453,7 +6065,15 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "invalidChannels": {},
       "identitySource": "official website contact path + Google buyer/contact query",
       "channelPriority": 3,
-      "discoveredAt": "2026-07-14T04:02:10.362Z"
+      "discoveredAt": "2026-07-14T04:02:10.362Z",
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-05T05:10:02.983Z",
+        "evidenceUrl": "https://www.tentworld.com.au/",
+        "httpStatus": 200,
+        "signals": [],
+        "error": ""
+      }
     },
     {
       "id": "google-customer-trekitt-website-contact",
@@ -5489,8 +6109,8 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "publicEmailStatus": "",
       "website": "https://www.trekitt.co.uk/",
       "evidenceUrl": "https://www.google.com/search?q=%22Trekitt%22%20%22verified%20outdoor%2C%20camping%2C%20travel%20and%20consumer%20electronics%20retail%20channel%22%20%22United%20Kingdom%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "sourceEvidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
-      "externalVerificationStatus": "",
+      "sourceEvidenceUrl": "https://www.trekitt.co.uk/",
+      "externalVerificationStatus": "official_contact_form_verified",
       "query": "https://www.google.com/search?q=%22Trekitt%22%20%22verified%20outdoor%2C%20camping%2C%20travel%20and%20consumer%20electronics%20retail%20channel%22%20%22United%20Kingdom%22%20buyer%20OR%20wholesale%20OR%20contact",
       "source": "google_customer_discovery",
       "sourceType": "google",
@@ -5509,7 +6129,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -5533,7 +6153,19 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "invalidChannels": {},
       "identitySource": "official homepage found; exact buyer/contact path still requires verification",
       "channelPriority": 3,
-      "discoveredAt": "2026-07-14T04:02:10.362Z"
+      "discoveredAt": "2026-07-14T04:02:10.362Z",
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-05T05:10:03.853Z",
+        "evidenceUrl": "https://www.trekitt.co.uk/",
+        "httpStatus": 200,
+        "signals": [
+          "form_control",
+          "contact_invitation"
+        ],
+        "error": ""
+      },
+      "contactCapabilityVerified": true
     },
     {
       "id": "google-customer-ultralight-outdoor-gear-website-contact",
@@ -5561,16 +6193,16 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "opportunity": "Ultralight Outdoor Gear is listed or qualified as an outdoor/camping specialty retail prospect with assortment fit for lightweight outdoor electrics and practical high-rotation 3C products.",
       "linkedin_url": "",
       "linkedin": "",
-      "publicEmail": "",
-      "contactEmail": "",
+      "publicEmail": "customer.service@ultralightoutdoorgear.co.uk",
+      "contactEmail": "customer.service@ultralightoutdoorgear.co.uk",
       "vendorPortal": "https://ultralightoutdoorgear.co.uk/",
       "contactPhone": "",
       "contactNote": "",
       "publicEmailStatus": "",
       "website": "https://ultralightoutdoorgear.co.uk/",
       "evidenceUrl": "https://www.google.com/search?q=%22Ultralight%20Outdoor%20Gear%22%20%22verified%20outdoor%2C%20camping%2C%20travel%20and%20consumer%20electronics%20retail%20channel%22%20%22United%20Kingdom%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "sourceEvidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
-      "externalVerificationStatus": "",
+      "sourceEvidenceUrl": "https://ultralightoutdoorgear.co.uk/",
+      "externalVerificationStatus": "official_contact_form_verified",
       "query": "https://www.google.com/search?q=%22Ultralight%20Outdoor%20Gear%22%20%22verified%20outdoor%2C%20camping%2C%20travel%20and%20consumer%20electronics%20retail%20channel%22%20%22United%20Kingdom%22%20buyer%20OR%20wholesale%20OR%20contact",
       "source": "google_customer_discovery",
       "sourceType": "google",
@@ -5589,7 +6221,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -5613,7 +6245,22 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "invalidChannels": {},
       "identitySource": "official homepage found; exact buyer/contact path still requires verification",
       "channelPriority": 3,
-      "discoveredAt": "2026-07-14T04:02:10.362Z"
+      "discoveredAt": "2026-07-14T04:02:10.362Z",
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-05T05:10:04.275Z",
+        "evidenceUrl": "https://ultralightoutdoorgear.co.uk/",
+        "httpStatus": 200,
+        "signals": [
+          "form_control",
+          "public_business_email",
+          "contact_invitation"
+        ],
+        "error": ""
+      },
+      "contactCapabilityVerified": true,
+      "emailVerificationStatus": "official_public_business_email",
+      "emailEvidence": "first_party_live_page"
     },
     {
       "id": "google-customer-bergzeit-website-contact",
@@ -5669,7 +6316,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -5693,7 +6340,15 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "invalidChannels": {},
       "identitySource": "official homepage found; exact buyer/contact path still requires verification",
       "channelPriority": 3,
-      "discoveredAt": "2026-07-14T04:02:10.362Z"
+      "discoveredAt": "2026-07-14T04:02:10.362Z",
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-05T05:10:01.407Z",
+        "evidenceUrl": "https://www.bergzeit.de/",
+        "httpStatus": 200,
+        "signals": [],
+        "error": ""
+      }
     },
     {
       "id": "google-customer-camping-wagner-website-contact",
@@ -5749,7 +6404,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -5773,7 +6428,15 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "invalidChannels": {},
       "identitySource": "official homepage found; exact buyer/contact path still requires verification",
       "channelPriority": 3,
-      "discoveredAt": "2026-07-14T04:02:10.362Z"
+      "discoveredAt": "2026-07-14T04:02:10.362Z",
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-05T05:10:00.579Z",
+        "evidenceUrl": "https://www.campingwagner.de/de/",
+        "httpStatus": 200,
+        "signals": [],
+        "error": ""
+      }
     },
     {
       "id": "google-customer-outnorth-website-contact",
@@ -5809,8 +6472,8 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "publicEmailStatus": "Official public company-domain email on the Outnorth contact page; route the supplier proposal to the category buyer or vendor-review owner.",
       "website": "https://www.outnorth.com/",
       "evidenceUrl": "https://www.google.com/search?q=%22Outnorth%22%20%22verified%20outdoor%2C%20camping%2C%20travel%20and%20consumer%20electronics%20retail%20channel%22%20%22Sweden%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "sourceEvidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
-      "externalVerificationStatus": "",
+      "sourceEvidenceUrl": "https://www.outnorth.com/int/faq/contact",
+      "externalVerificationStatus": "official_contact_form_verified",
       "query": "https://www.google.com/search?q=%22Outnorth%22%20%22verified%20outdoor%2C%20camping%2C%20travel%20and%20consumer%20electronics%20retail%20channel%22%20%22Sweden%22%20buyer%20OR%20wholesale%20OR%20contact",
       "source": "google_customer_discovery",
       "sourceType": "google",
@@ -5829,7 +6492,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -5853,7 +6516,19 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "invalidChannels": {},
       "identitySource": "official website contact path + Google buyer/contact query",
       "channelPriority": 3,
-      "discoveredAt": "2026-07-14T04:02:10.362Z"
+      "discoveredAt": "2026-07-14T04:02:10.362Z",
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-05T05:10:04.443Z",
+        "evidenceUrl": "https://www.outnorth.com/int/faq/contact",
+        "httpStatus": 200,
+        "signals": [
+          "form_control",
+          "contact_invitation"
+        ],
+        "error": ""
+      },
+      "contactCapabilityVerified": true
     },
     {
       "id": "google-customer-naturkompaniet-website-contact",
@@ -5881,8 +6556,8 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "opportunity": "Naturkompaniet is listed or qualified as an outdoor/camping specialty retail prospect with assortment fit for lightweight outdoor electrics and practical high-rotation 3C products.",
       "linkedin_url": "",
       "linkedin": "",
-      "publicEmail": "",
-      "contactEmail": "",
+      "publicEmail": "info@naturkompaniet.se",
+      "contactEmail": "info@naturkompaniet.se",
       "vendorPortal": "https://www.naturkompaniet.se/",
       "contactPhone": "",
       "contactNote": "",
@@ -5909,7 +6584,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -5933,7 +6608,20 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "invalidChannels": {},
       "identitySource": "official homepage found; exact buyer/contact path still requires verification",
       "channelPriority": 3,
-      "discoveredAt": "2026-07-14T04:02:10.362Z"
+      "discoveredAt": "2026-07-14T04:02:10.362Z",
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-05T05:10:04.494Z",
+        "evidenceUrl": "https://www.naturkompaniet.se/",
+        "httpStatus": 200,
+        "signals": [
+          "form_control",
+          "public_business_email"
+        ],
+        "error": ""
+      },
+      "emailVerificationStatus": "official_public_business_email",
+      "emailEvidence": "first_party_live_page"
     },
     {
       "id": "google-customer-fjellsport-website-contact",
@@ -5989,7 +6677,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -6013,7 +6701,17 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "invalidChannels": {},
       "identitySource": "official website contact path + Google buyer/contact query",
       "channelPriority": 3,
-      "discoveredAt": "2026-07-14T04:02:10.362Z"
+      "discoveredAt": "2026-07-14T04:02:10.362Z",
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-05T05:10:05.835Z",
+        "evidenceUrl": "https://www.fjellsport.no/faq/personvern",
+        "httpStatus": 200,
+        "signals": [
+          "form_control"
+        ],
+        "error": ""
+      }
     },
     {
       "linkedinUrl": "https://au.linkedin.com/company/boating-camping-fishing",
@@ -6083,7 +6781,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -6155,7 +6853,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -6241,7 +6939,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -6315,7 +7013,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -6403,7 +7101,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -6483,7 +7181,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -6563,7 +7261,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -6643,7 +7341,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -6723,7 +7421,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -6803,7 +7501,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -6883,7 +7581,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -6963,7 +7661,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -7043,7 +7741,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -7123,7 +7821,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -7203,7 +7901,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -7297,7 +7995,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -7369,7 +8067,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -7441,7 +8139,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -7513,7 +8211,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -7585,7 +8283,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -7671,7 +8369,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -7745,7 +8443,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -7833,7 +8531,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -7913,7 +8611,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -7993,7 +8691,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -8073,7 +8771,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -8153,7 +8851,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -8233,7 +8931,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -8313,7 +9011,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -8393,7 +9091,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -8473,7 +9171,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -8553,7 +9251,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -8633,7 +9331,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -8713,7 +9411,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -8793,7 +9491,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -8865,7 +9563,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -8937,7 +9635,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -9011,7 +9709,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -9091,7 +9789,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -9171,7 +9869,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -9251,7 +9949,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -9331,7 +10029,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -9411,7 +10109,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -9491,7 +10189,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -9571,7 +10269,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -9651,7 +10349,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -9731,7 +10429,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -9811,7 +10509,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -9897,7 +10595,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -9969,7 +10667,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -10041,7 +10739,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -10127,7 +10825,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -10201,7 +10899,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -10275,7 +10973,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -10369,7 +11067,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -10449,7 +11147,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -10529,7 +11227,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -10609,7 +11307,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -10689,7 +11387,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -10749,8 +11447,8 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "publicEmailStatus": "Official public business email on the Further Faster website; the company also publicly states that it distributes outdoor brands in New Zealand.",
       "website": "https://www.furtherfaster.co.nz/",
       "evidenceUrl": "https://www.google.com/search?q=%22Further%20Faster%22%20%22verified%20outdoor%2C%20camping%2C%20travel%20and%20consumer%20electronics%20retail%20channel%22%20%22New%20Zealand%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "sourceEvidenceUrl": "https://www.furtherfaster.co.nz/",
-      "externalVerificationStatus": "official_contact_form_verified",
+      "sourceEvidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
+      "externalVerificationStatus": "",
       "query": "https://www.google.com/search?q=%22Further%20Faster%22%20%22verified%20outdoor%2C%20camping%2C%20travel%20and%20consumer%20electronics%20retail%20channel%22%20%22New%20Zealand%22%20buyer%20OR%20wholesale%20OR%20contact",
       "source": "google_customer_discovery",
       "sourceType": "google",
@@ -10769,7 +11467,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -10793,20 +11491,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "invalidChannels": {},
       "identitySource": "official homepage found; exact buyer/contact path still requires verification",
       "channelPriority": 3,
-      "discoveredAt": "2026-07-16T05:03:53.170Z",
-      "firstPartyChannelVerification": {
-        "status": "checked",
-        "verifiedAt": "2026-08-05T04:05:15.351Z",
-        "evidenceUrl": "https://www.furtherfaster.co.nz/",
-        "httpStatus": 200,
-        "signals": [
-          "form_control",
-          "public_business_email",
-          "contact_invitation"
-        ],
-        "error": ""
-      },
-      "contactCapabilityVerified": true
+      "discoveredAt": "2026-07-16T05:03:53.170Z"
     },
     {
       "id": "google-customer-technical-outdoor-indonesia-website-contact",
@@ -10862,7 +11547,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -10922,8 +11607,8 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "publicEmailStatus": "",
       "website": "https://www.avidmax.com/",
       "evidenceUrl": "https://www.google.com/search?q=%22AvidMax%20Outfitters%22%20%22verified%20outdoor%2C%20camping%2C%20travel%20and%20consumer%20electronics%20retail%20channel%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "sourceEvidenceUrl": "https://www.avidmax.com/",
-      "externalVerificationStatus": "official_contact_form_verified",
+      "sourceEvidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
+      "externalVerificationStatus": "",
       "query": "https://www.google.com/search?q=%22AvidMax%20Outfitters%22%20%22verified%20outdoor%2C%20camping%2C%20travel%20and%20consumer%20electronics%20retail%20channel%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
       "source": "google_customer_discovery",
       "sourceType": "google",
@@ -10942,7 +11627,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -10966,19 +11651,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "invalidChannels": {},
       "identitySource": "official homepage found; exact buyer/contact path still requires verification",
       "channelPriority": 3,
-      "discoveredAt": "2026-07-16T05:03:53.170Z",
-      "firstPartyChannelVerification": {
-        "status": "checked",
-        "verifiedAt": "2026-08-05T04:05:15.905Z",
-        "evidenceUrl": "https://www.avidmax.com/",
-        "httpStatus": 200,
-        "signals": [
-          "form_control",
-          "contact_invitation"
-        ],
-        "error": ""
-      },
-      "contactCapabilityVerified": true
+      "discoveredAt": "2026-07-16T05:03:53.170Z"
     },
     {
       "id": "google-customer-gear-west-website-contact",
@@ -11014,8 +11687,8 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "publicEmailStatus": "",
       "website": "https://www.gearwest.com/",
       "evidenceUrl": "https://www.google.com/search?q=%22Gear%20West%22%20%22verified%20outdoor%2C%20camping%2C%20travel%20and%20consumer%20electronics%20retail%20channel%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "sourceEvidenceUrl": "https://www.gearwest.com/",
-      "externalVerificationStatus": "official_contact_form_verified",
+      "sourceEvidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
+      "externalVerificationStatus": "",
       "query": "https://www.google.com/search?q=%22Gear%20West%22%20%22verified%20outdoor%2C%20camping%2C%20travel%20and%20consumer%20electronics%20retail%20channel%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
       "source": "google_customer_discovery",
       "sourceType": "google",
@@ -11034,7 +11707,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -11058,19 +11731,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "invalidChannels": {},
       "identitySource": "official homepage found; exact buyer/contact path still requires verification",
       "channelPriority": 3,
-      "discoveredAt": "2026-07-16T05:03:53.170Z",
-      "firstPartyChannelVerification": {
-        "status": "checked",
-        "verifiedAt": "2026-08-05T04:05:16.900Z",
-        "evidenceUrl": "https://www.gearwest.com/",
-        "httpStatus": 200,
-        "signals": [
-          "form_control",
-          "contact_invitation"
-        ],
-        "error": ""
-      },
-      "contactCapabilityVerified": true
+      "discoveredAt": "2026-07-16T05:03:53.170Z"
     },
     {
       "id": "google-customer-brave-hardy-instagram",
@@ -11107,7 +11768,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "website": "https://www.bravehardy.com/",
       "evidenceUrl": "https://www.google.com/search?q=%22Brave%20Hardy%22%20%22outdoor%20equipment%20retailer%20and%20wholesaler%22%20%22South%20Africa%22%20buyer%20OR%20wholesale%20OR%20contact",
       "sourceEvidenceUrl": "https://www.bravehardy.com/pages/contact",
-      "externalVerificationStatus": "official_supplier_form_verified",
+      "externalVerificationStatus": "official_supplier_email_verified",
       "query": "https://www.google.com/search?q=%22Brave%20Hardy%22%20%22outdoor%20equipment%20retailer%20and%20wholesaler%22%20%22South%20Africa%22%20buyer%20OR%20wholesale%20OR%20contact",
       "source": "google_customer_discovery",
       "sourceType": "google",
@@ -11116,7 +11777,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "identityStatus": "verified",
       "officialSocialProfileVerified": true,
       "socialProfileEvidenceUrl": "https://www.bravehardy.com/pages/contact",
-      "socialProfileVerifiedAt": "2026-08-05T04:05:15.855Z",
+      "socialProfileVerifiedAt": "2026-08-04T09:55:00.000Z",
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -11126,7 +11787,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -11142,21 +11803,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       },
       "identitySource": "official website/social profile + Google background query",
       "channelPriority": 1,
-      "discoveredAt": "2026-08-04T08:45:35.991Z",
-      "firstPartyChannelVerification": {
-        "status": "checked",
-        "verifiedAt": "2026-08-05T04:05:15.855Z",
-        "evidenceUrl": "https://www.bravehardy.com/pages/contact",
-        "httpStatus": 200,
-        "signals": [
-          "form_control",
-          "public_business_email",
-          "supplier_invitation",
-          "contact_invitation"
-        ],
-        "error": ""
-      },
-      "contactCapabilityVerified": true
+      "discoveredAt": "2026-08-04T08:45:35.991Z"
     },
     {
       "id": "google-customer-public-lands-instagram",
@@ -11212,7 +11859,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -11228,17 +11875,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       },
       "identitySource": "official website/social profile + Google background query",
       "channelPriority": 1,
-      "discoveredAt": "2026-07-16T05:03:53.170Z",
-      "firstPartyChannelVerification": {
-        "status": "checked",
-        "verifiedAt": "2026-08-05T04:05:18.598Z",
-        "evidenceUrl": "https://www.publiclands.com/",
-        "httpStatus": 200,
-        "signals": [
-          "form_control"
-        ],
-        "error": ""
-      }
+      "discoveredAt": "2026-07-16T05:03:53.170Z"
     },
     {
       "id": "google-customer-campman-instagram",
@@ -11266,25 +11903,25 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "opportunity": "Campman is a qualified outdoor, camping, travel or sport retail prospect with category fit for FLEXTAIL portable outdoor electrics and Vollyc practical 3C products.",
       "linkedin_url": "",
       "linkedin": "",
-      "publicEmail": "info@campman.com",
-      "contactEmail": "info@campman.com",
+      "publicEmail": "",
+      "contactEmail": "",
       "vendorPortal": "https://www.campman.com/",
       "contactPhone": "",
       "contactNote": "",
       "publicEmailStatus": "",
       "website": "https://www.campman.com/",
       "evidenceUrl": "https://www.google.com/search?q=%22Campman%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "sourceEvidenceUrl": "https://www.campman.com/",
-      "externalVerificationStatus": "official_contact_form_verified",
+      "sourceEvidenceUrl": "verified outdoor retailer official website and public social profile refill",
+      "externalVerificationStatus": "",
       "query": "https://www.google.com/search?q=%22Campman%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
       "source": "google_customer_discovery",
       "sourceType": "google",
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
-      "officialSocialProfileVerified": true,
-      "socialProfileEvidenceUrl": "https://www.campman.com/",
-      "socialProfileVerifiedAt": "2026-08-05T04:05:19.320Z",
+      "officialSocialProfileVerified": false,
+      "socialProfileEvidenceUrl": "",
+      "socialProfileVerifiedAt": "",
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -11294,7 +11931,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -11310,22 +11947,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       },
       "identitySource": "official website/social profile + Google background query",
       "channelPriority": 1,
-      "discoveredAt": "2026-07-16T05:03:53.170Z",
-      "firstPartyChannelVerification": {
-        "status": "checked",
-        "verifiedAt": "2026-08-05T04:05:19.320Z",
-        "evidenceUrl": "https://www.campman.com/",
-        "httpStatus": 200,
-        "signals": [
-          "form_control",
-          "public_business_email",
-          "contact_invitation"
-        ],
-        "error": ""
-      },
-      "contactCapabilityVerified": true,
-      "emailVerificationStatus": "official_public_business_email",
-      "emailEvidence": "first_party_live_page"
+      "discoveredAt": "2026-07-16T05:03:53.170Z"
     },
     {
       "id": "google-customer-the-mountaineer-instagram",
@@ -11381,7 +12003,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -11397,17 +12019,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       },
       "identitySource": "official website/social profile + Google background query",
       "channelPriority": 1,
-      "discoveredAt": "2026-07-16T05:03:53.170Z",
-      "firstPartyChannelVerification": {
-        "status": "checked",
-        "verifiedAt": "2026-08-05T04:05:18.855Z",
-        "evidenceUrl": "https://mountaineer.com/",
-        "httpStatus": 200,
-        "signals": [
-          "form_control"
-        ],
-        "error": ""
-      }
+      "discoveredAt": "2026-07-16T05:03:53.170Z"
     },
     {
       "id": "google-customer-sierra-instagram",
@@ -11463,7 +12075,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -11479,15 +12091,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       },
       "identitySource": "official website/social profile + Google background query",
       "channelPriority": 1,
-      "discoveredAt": "2026-07-16T05:03:53.170Z",
-      "firstPartyChannelVerification": {
-        "status": "unreachable",
-        "verifiedAt": "2026-08-05T04:05:17.343Z",
-        "evidenceUrl": "https://www.sierra.com/",
-        "httpStatus": 403,
-        "signals": [],
-        "error": ""
-      }
+      "discoveredAt": "2026-07-16T05:03:53.170Z"
     },
     {
       "id": "google-customer-outdoorplay-instagram",
@@ -11523,8 +12127,8 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "publicEmailStatus": "Official Outdoorplay contact page; route to buyer/vendor team.",
       "website": "https://www.outdoorplay.com/",
       "evidenceUrl": "https://www.google.com/search?q=%22Outdoorplay%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "sourceEvidenceUrl": "https://www.outdoorplay.com/",
-      "externalVerificationStatus": "official_contact_form_verified",
+      "sourceEvidenceUrl": "verified outdoor retailer official website and public social profile refill",
+      "externalVerificationStatus": "",
       "query": "https://www.google.com/search?q=%22Outdoorplay%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
       "source": "google_customer_discovery",
       "sourceType": "google",
@@ -11543,7 +12147,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -11559,20 +12163,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       },
       "identitySource": "official website/social profile + Google background query",
       "channelPriority": 1,
-      "discoveredAt": "2026-07-16T05:03:53.170Z",
-      "firstPartyChannelVerification": {
-        "status": "checked",
-        "verifiedAt": "2026-08-05T04:05:20.062Z",
-        "evidenceUrl": "https://www.outdoorplay.com/",
-        "httpStatus": 200,
-        "signals": [
-          "form_control",
-          "public_business_email",
-          "contact_invitation"
-        ],
-        "error": ""
-      },
-      "contactCapabilityVerified": true
+      "discoveredAt": "2026-07-16T05:03:53.170Z"
     },
     {
       "id": "google-customer-campmor-instagram",
@@ -11600,25 +12191,25 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "opportunity": "Campmor is a qualified outdoor, camping, travel or sport retail prospect with category fit for FLEXTAIL portable outdoor electrics and Vollyc practical 3C products.",
       "linkedin_url": "",
       "linkedin": "",
-      "publicEmail": "customerservice@campmor.com",
-      "contactEmail": "customerservice@campmor.com",
+      "publicEmail": "",
+      "contactEmail": "",
       "vendorPortal": "https://www.campmor.com/",
       "contactPhone": "",
       "contactNote": "",
       "publicEmailStatus": "",
       "website": "https://www.campmor.com/",
       "evidenceUrl": "https://www.google.com/search?q=%22Campmor%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "sourceEvidenceUrl": "https://www.campmor.com/",
-      "externalVerificationStatus": "official_contact_form_verified",
+      "sourceEvidenceUrl": "verified outdoor retailer official website and public social profile refill",
+      "externalVerificationStatus": "",
       "query": "https://www.google.com/search?q=%22Campmor%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
       "source": "google_customer_discovery",
       "sourceType": "google",
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
-      "officialSocialProfileVerified": true,
-      "socialProfileEvidenceUrl": "https://www.campmor.com/",
-      "socialProfileVerifiedAt": "2026-08-05T04:05:20.158Z",
+      "officialSocialProfileVerified": false,
+      "socialProfileEvidenceUrl": "",
+      "socialProfileVerifiedAt": "",
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -11628,7 +12219,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -11644,22 +12235,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       },
       "identitySource": "official website/social profile + Google background query",
       "channelPriority": 1,
-      "discoveredAt": "2026-07-16T05:03:53.170Z",
-      "firstPartyChannelVerification": {
-        "status": "checked",
-        "verifiedAt": "2026-08-05T04:05:20.158Z",
-        "evidenceUrl": "https://www.campmor.com/",
-        "httpStatus": 200,
-        "signals": [
-          "form_control",
-          "public_business_email",
-          "contact_invitation"
-        ],
-        "error": ""
-      },
-      "contactCapabilityVerified": true,
-      "emailVerificationStatus": "official_public_business_email",
-      "emailEvidence": "first_party_live_page"
+      "discoveredAt": "2026-07-16T05:03:53.170Z"
     },
     {
       "id": "google-customer-ramsey-outdoor-instagram",
@@ -11695,17 +12271,17 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "publicEmailStatus": "",
       "website": "https://www.ramseyoutdoor.com/",
       "evidenceUrl": "https://www.google.com/search?q=%22Ramsey%20Outdoor%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "sourceEvidenceUrl": "https://ramseyoutdoor.com/",
-      "externalVerificationStatus": "official_contact_form_verified",
+      "sourceEvidenceUrl": "verified outdoor retailer official website and public social profile refill",
+      "externalVerificationStatus": "",
       "query": "https://www.google.com/search?q=%22Ramsey%20Outdoor%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
       "source": "google_customer_discovery",
       "sourceType": "google",
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
-      "officialSocialProfileVerified": true,
-      "socialProfileEvidenceUrl": "https://ramseyoutdoor.com/",
-      "socialProfileVerifiedAt": "2026-08-05T04:05:23.093Z",
+      "officialSocialProfileVerified": false,
+      "socialProfileEvidenceUrl": "",
+      "socialProfileVerifiedAt": "",
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -11715,7 +12291,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -11731,19 +12307,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       },
       "identitySource": "official website/social profile + Google background query",
       "channelPriority": 1,
-      "discoveredAt": "2026-07-16T05:03:53.170Z",
-      "firstPartyChannelVerification": {
-        "status": "checked",
-        "verifiedAt": "2026-08-05T04:05:23.093Z",
-        "evidenceUrl": "https://ramseyoutdoor.com/",
-        "httpStatus": 200,
-        "signals": [
-          "form_control",
-          "contact_invitation"
-        ],
-        "error": ""
-      },
-      "contactCapabilityVerified": true
+      "discoveredAt": "2026-07-16T05:03:53.170Z"
     },
     {
       "id": "google-customer-quest-outdoors-instagram",
@@ -11799,7 +12363,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -11815,15 +12379,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       },
       "identitySource": "official website/social profile + Google background query",
       "channelPriority": 1,
-      "discoveredAt": "2026-07-16T05:03:53.170Z",
-      "firstPartyChannelVerification": {
-        "status": "unreachable",
-        "verifiedAt": "2026-08-05T04:05:21.551Z",
-        "evidenceUrl": "https://questoutdoors.com/",
-        "httpStatus": 404,
-        "signals": [],
-        "error": ""
-      }
+      "discoveredAt": "2026-07-16T05:03:53.170Z"
     },
     {
       "id": "google-customer-river-sports-outfitters-instagram",
@@ -11859,8 +12415,8 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "publicEmailStatus": "",
       "website": "https://www.riversportsoutfitters.com/",
       "evidenceUrl": "https://www.google.com/search?q=%22River%20Sports%20Outfitters%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "sourceEvidenceUrl": "https://www.riversportsoutfitters.com/",
-      "externalVerificationStatus": "official_contact_form_verified",
+      "sourceEvidenceUrl": "verified outdoor retailer official website and public social profile refill",
+      "externalVerificationStatus": "",
       "query": "https://www.google.com/search?q=%22River%20Sports%20Outfitters%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
       "source": "google_customer_discovery",
       "sourceType": "google",
@@ -11879,7 +12435,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -11895,19 +12451,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       },
       "identitySource": "official website/social profile + Google background query",
       "channelPriority": 1,
-      "discoveredAt": "2026-07-16T05:03:53.170Z",
-      "firstPartyChannelVerification": {
-        "status": "checked",
-        "verifiedAt": "2026-08-05T04:05:24.170Z",
-        "evidenceUrl": "https://www.riversportsoutfitters.com/",
-        "httpStatus": 200,
-        "signals": [
-          "form_control",
-          "contact_invitation"
-        ],
-        "error": ""
-      },
-      "contactCapabilityVerified": true
+      "discoveredAt": "2026-07-16T05:03:53.170Z"
     },
     {
       "id": "google-customer-rock-creek-instagram",
@@ -11963,7 +12507,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -11979,15 +12523,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       },
       "identitySource": "official website/social profile + Google background query",
       "channelPriority": 1,
-      "discoveredAt": "2026-07-16T05:03:53.170Z",
-      "firstPartyChannelVerification": {
-        "status": "unreachable",
-        "verifiedAt": "2026-08-05T04:05:24.413Z",
-        "evidenceUrl": "https://www.rockcreek.com/",
-        "httpStatus": 0,
-        "signals": [],
-        "error": "fetch failed"
-      }
+      "discoveredAt": "2026-07-16T05:03:53.170Z"
     },
     {
       "id": "google-customer-half-moon-outfitters-instagram",
@@ -12023,17 +12559,17 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "publicEmailStatus": "",
       "website": "https://www.halfmoonoutfitters.com/",
       "evidenceUrl": "https://www.google.com/search?q=%22Half-Moon%20Outfitters%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "sourceEvidenceUrl": "https://www.halfmoonoutfitters.com/",
-      "externalVerificationStatus": "official_contact_form_verified",
+      "sourceEvidenceUrl": "verified outdoor retailer official website and public social profile refill",
+      "externalVerificationStatus": "",
       "query": "https://www.google.com/search?q=%22Half-Moon%20Outfitters%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
       "source": "google_customer_discovery",
       "sourceType": "google",
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
-      "officialSocialProfileVerified": true,
-      "socialProfileEvidenceUrl": "https://www.halfmoonoutfitters.com/",
-      "socialProfileVerifiedAt": "2026-08-05T04:05:23.700Z",
+      "officialSocialProfileVerified": false,
+      "socialProfileEvidenceUrl": "",
+      "socialProfileVerifiedAt": "",
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -12043,7 +12579,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -12059,19 +12595,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       },
       "identitySource": "official website/social profile + Google background query",
       "channelPriority": 1,
-      "discoveredAt": "2026-07-16T05:03:53.170Z",
-      "firstPartyChannelVerification": {
-        "status": "checked",
-        "verifiedAt": "2026-08-05T04:05:23.700Z",
-        "evidenceUrl": "https://www.halfmoonoutfitters.com/",
-        "httpStatus": 200,
-        "signals": [
-          "form_control",
-          "contact_invitation"
-        ],
-        "error": ""
-      },
-      "contactCapabilityVerified": true
+      "discoveredAt": "2026-07-16T05:03:53.170Z"
     },
     {
       "id": "google-customer-sunlight-sports-instagram",
@@ -12099,8 +12623,8 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "opportunity": "Sunlight Sports is a qualified outdoor, camping, travel or sport retail prospect with category fit for FLEXTAIL portable outdoor electrics and Vollyc practical 3C products.",
       "linkedin_url": "",
       "linkedin": "",
-      "publicEmail": "info@sunlightsports.com",
-      "contactEmail": "info@sunlightsports.com",
+      "publicEmail": "",
+      "contactEmail": "",
       "vendorPortal": "https://sunlightsports.com/",
       "contactPhone": "",
       "contactNote": "",
@@ -12127,7 +12651,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -12143,20 +12667,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       },
       "identitySource": "official website/social profile + Google background query",
       "channelPriority": 1,
-      "discoveredAt": "2026-07-16T05:03:53.170Z",
-      "firstPartyChannelVerification": {
-        "status": "checked",
-        "verifiedAt": "2026-08-05T04:05:25.172Z",
-        "evidenceUrl": "https://www.sunlightsports.com/",
-        "httpStatus": 200,
-        "signals": [
-          "form_control",
-          "public_business_email"
-        ],
-        "error": ""
-      },
-      "emailVerificationStatus": "official_public_business_email",
-      "emailEvidence": "first_party_live_page"
+      "discoveredAt": "2026-07-16T05:03:53.170Z"
     },
     {
       "id": "google-customer-jax-outdoor-gear-instagram",
@@ -12212,7 +12723,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -12228,17 +12739,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       },
       "identitySource": "official website/social profile + Google background query",
       "channelPriority": 1,
-      "discoveredAt": "2026-07-16T05:03:53.170Z",
-      "firstPartyChannelVerification": {
-        "status": "checked",
-        "verifiedAt": "2026-08-05T04:05:26.662Z",
-        "evidenceUrl": "https://jaxgoods.com/",
-        "httpStatus": 200,
-        "signals": [
-          "form_control"
-        ],
-        "error": ""
-      }
+      "discoveredAt": "2026-07-16T05:03:53.170Z"
     },
     {
       "id": "google-customer-christy-sports-instagram",
@@ -12274,17 +12775,17 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "publicEmailStatus": "",
       "website": "https://www.christysports.com/",
       "evidenceUrl": "https://www.google.com/search?q=%22Christy%20Sports%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "sourceEvidenceUrl": "https://www.christysports.com/",
-      "externalVerificationStatus": "official_contact_form_verified",
+      "sourceEvidenceUrl": "verified outdoor retailer official website and public social profile refill",
+      "externalVerificationStatus": "",
       "query": "https://www.google.com/search?q=%22Christy%20Sports%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
       "source": "google_customer_discovery",
       "sourceType": "google",
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
-      "officialSocialProfileVerified": true,
-      "socialProfileEvidenceUrl": "https://www.christysports.com/",
-      "socialProfileVerifiedAt": "2026-08-05T04:05:27.585Z",
+      "officialSocialProfileVerified": false,
+      "socialProfileEvidenceUrl": "",
+      "socialProfileVerifiedAt": "",
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -12294,7 +12795,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -12310,19 +12811,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       },
       "identitySource": "official website/social profile + Google background query",
       "channelPriority": 1,
-      "discoveredAt": "2026-07-16T05:03:53.170Z",
-      "firstPartyChannelVerification": {
-        "status": "checked",
-        "verifiedAt": "2026-08-05T04:05:27.585Z",
-        "evidenceUrl": "https://www.christysports.com/",
-        "httpStatus": 200,
-        "signals": [
-          "form_control",
-          "contact_invitation"
-        ],
-        "error": ""
-      },
-      "contactCapabilityVerified": true
+      "discoveredAt": "2026-07-16T05:03:53.170Z"
     },
     {
       "id": "google-customer-paragon-sports-instagram",
@@ -12350,25 +12839,25 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "opportunity": "Paragon Sports is a qualified outdoor, camping, travel or sport retail prospect with category fit for FLEXTAIL portable outdoor electrics and Vollyc practical 3C products.",
       "linkedin_url": "",
       "linkedin": "",
-      "publicEmail": "customerservice@paragonsports.com",
-      "contactEmail": "customerservice@paragonsports.com",
+      "publicEmail": "",
+      "contactEmail": "",
       "vendorPortal": "https://www.paragonsports.com/",
       "contactPhone": "",
       "contactNote": "",
       "publicEmailStatus": "",
       "website": "https://www.paragonsports.com/",
       "evidenceUrl": "https://www.google.com/search?q=%22Paragon%20Sports%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "sourceEvidenceUrl": "https://paragonsports.com/",
-      "externalVerificationStatus": "official_contact_form_verified",
+      "sourceEvidenceUrl": "verified outdoor retailer official website and public social profile refill",
+      "externalVerificationStatus": "",
       "query": "https://www.google.com/search?q=%22Paragon%20Sports%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
       "source": "google_customer_discovery",
       "sourceType": "google",
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
-      "officialSocialProfileVerified": true,
-      "socialProfileEvidenceUrl": "https://paragonsports.com/",
-      "socialProfileVerifiedAt": "2026-08-05T04:05:28.181Z",
+      "officialSocialProfileVerified": false,
+      "socialProfileEvidenceUrl": "",
+      "socialProfileVerifiedAt": "",
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -12378,7 +12867,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -12394,22 +12883,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       },
       "identitySource": "official website/social profile + Google background query",
       "channelPriority": 1,
-      "discoveredAt": "2026-07-16T05:03:53.170Z",
-      "firstPartyChannelVerification": {
-        "status": "checked",
-        "verifiedAt": "2026-08-05T04:05:28.181Z",
-        "evidenceUrl": "https://paragonsports.com/",
-        "httpStatus": 200,
-        "signals": [
-          "form_control",
-          "public_business_email",
-          "contact_invitation"
-        ],
-        "error": ""
-      },
-      "contactCapabilityVerified": true,
-      "emailVerificationStatus": "official_public_business_email",
-      "emailEvidence": "first_party_live_page"
+      "discoveredAt": "2026-07-16T05:03:53.170Z"
     },
     {
       "id": "google-customer-mountain-equipment-instagram",
@@ -12445,8 +12919,8 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "publicEmailStatus": "",
       "website": "https://www.mountain-equipment.co.uk/",
       "evidenceUrl": "https://www.google.com/search?q=%22Mountain%20Equipment%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22United%20Kingdom%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "sourceEvidenceUrl": "https://www.mountain-equipment.com/",
-      "externalVerificationStatus": "official_contact_form_verified",
+      "sourceEvidenceUrl": "verified outdoor retailer official website and public social profile refill",
+      "externalVerificationStatus": "",
       "query": "https://www.google.com/search?q=%22Mountain%20Equipment%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22United%20Kingdom%22%20buyer%20OR%20wholesale%20OR%20contact",
       "source": "google_customer_discovery",
       "sourceType": "google",
@@ -12465,7 +12939,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -12481,19 +12955,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       },
       "identitySource": "official website/social profile + Google background query",
       "channelPriority": 1,
-      "discoveredAt": "2026-07-16T05:03:53.170Z",
-      "firstPartyChannelVerification": {
-        "status": "checked",
-        "verifiedAt": "2026-08-05T04:05:27.340Z",
-        "evidenceUrl": "https://www.mountain-equipment.com/",
-        "httpStatus": 200,
-        "signals": [
-          "form_control",
-          "contact_invitation"
-        ],
-        "error": ""
-      },
-      "contactCapabilityVerified": true
+      "discoveredAt": "2026-07-16T05:03:53.170Z"
     },
     {
       "id": "google-customer-tiso-instagram",
@@ -12529,8 +12991,8 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "publicEmailStatus": "",
       "website": "https://www.tiso.com/",
       "evidenceUrl": "https://www.google.com/search?q=%22Tiso%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22United%20Kingdom%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "sourceEvidenceUrl": "https://www.tiso.com/",
-      "externalVerificationStatus": "official_contact_form_verified",
+      "sourceEvidenceUrl": "verified outdoor retailer official website and public social profile refill",
+      "externalVerificationStatus": "",
       "query": "https://www.google.com/search?q=%22Tiso%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22United%20Kingdom%22%20buyer%20OR%20wholesale%20OR%20contact",
       "source": "google_customer_discovery",
       "sourceType": "google",
@@ -12549,7 +13011,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -12565,19 +13027,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       },
       "identitySource": "official website/social profile + Google background query",
       "channelPriority": 1,
-      "discoveredAt": "2026-07-16T05:03:53.170Z",
-      "firstPartyChannelVerification": {
-        "status": "checked",
-        "verifiedAt": "2026-08-05T04:05:29.704Z",
-        "evidenceUrl": "https://www.tiso.com/",
-        "httpStatus": 200,
-        "signals": [
-          "form_control",
-          "contact_invitation"
-        ],
-        "error": ""
-      },
-      "contactCapabilityVerified": true
+      "discoveredAt": "2026-07-16T05:03:53.170Z"
     },
     {
       "id": "google-customer-george-fisher-instagram",
@@ -12613,8 +13063,8 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "publicEmailStatus": "",
       "website": "https://www.georgefisher.co.uk/",
       "evidenceUrl": "https://www.google.com/search?q=%22George%20Fisher%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22United%20Kingdom%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "sourceEvidenceUrl": "https://www.tiso.com/pages/george-fisher-landing?utm_source=georgefisher",
-      "externalVerificationStatus": "official_contact_form_verified",
+      "sourceEvidenceUrl": "verified outdoor retailer official website and public social profile refill",
+      "externalVerificationStatus": "",
       "query": "https://www.google.com/search?q=%22George%20Fisher%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22United%20Kingdom%22%20buyer%20OR%20wholesale%20OR%20contact",
       "source": "google_customer_discovery",
       "sourceType": "google",
@@ -12633,7 +13083,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -12649,19 +13099,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       },
       "identitySource": "official website/social profile + Google background query",
       "channelPriority": 1,
-      "discoveredAt": "2026-07-16T05:03:53.170Z",
-      "firstPartyChannelVerification": {
-        "status": "checked",
-        "verifiedAt": "2026-08-05T04:05:30.805Z",
-        "evidenceUrl": "https://www.tiso.com/pages/george-fisher-landing?utm_source=georgefisher",
-        "httpStatus": 200,
-        "signals": [
-          "form_control",
-          "contact_invitation"
-        ],
-        "error": ""
-      },
-      "contactCapabilityVerified": true
+      "discoveredAt": "2026-07-16T05:03:53.170Z"
     },
     {
       "id": "google-customer-ld-mountain-centre-instagram",
@@ -12717,7 +13155,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -12733,15 +13171,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       },
       "identitySource": "official website/social profile + Google background query",
       "channelPriority": 1,
-      "discoveredAt": "2026-07-16T05:03:53.170Z",
-      "firstPartyChannelVerification": {
-        "status": "checked",
-        "verifiedAt": "2026-08-05T04:05:31.378Z",
-        "evidenceUrl": "https://www.ldmountaincentre.com/",
-        "httpStatus": 200,
-        "signals": [],
-        "error": ""
-      }
+      "discoveredAt": "2026-07-16T05:03:53.170Z"
     },
     {
       "id": "google-customer-absolute-snow-instagram",
@@ -12797,7 +13227,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -12813,15 +13243,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       },
       "identitySource": "official website/social profile + Google background query",
       "channelPriority": 1,
-      "discoveredAt": "2026-07-16T05:03:53.170Z",
-      "firstPartyChannelVerification": {
-        "status": "unreachable",
-        "verifiedAt": "2026-08-05T04:05:28.745Z",
-        "evidenceUrl": "https://www.absolute-snow.co.uk/",
-        "httpStatus": 403,
-        "signals": [],
-        "error": ""
-      }
+      "discoveredAt": "2026-07-16T05:03:53.170Z"
     },
     {
       "id": "google-customer-ellis-brigham-instagram",
@@ -12877,7 +13299,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -12893,15 +13315,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       },
       "identitySource": "official website/social profile + Google background query",
       "channelPriority": 1,
-      "discoveredAt": "2026-07-16T05:03:53.170Z",
-      "firstPartyChannelVerification": {
-        "status": "checked",
-        "verifiedAt": "2026-08-05T04:05:31.892Z",
-        "evidenceUrl": "https://www.ellis-brigham.com/",
-        "httpStatus": 200,
-        "signals": [],
-        "error": ""
-      }
+      "discoveredAt": "2026-07-16T05:03:53.170Z"
     },
     {
       "id": "google-customer-facewest-instagram",
@@ -12938,7 +13352,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "website": "https://www.facewest.co.uk/",
       "evidenceUrl": "https://www.google.com/search?q=%22Facewest%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22United%20Kingdom%22%20buyer%20OR%20wholesale%20OR%20contact",
       "sourceEvidenceUrl": "verified outdoor retailer official website and public social profile refill",
-      "externalVerificationStatus": "",
+      "externalVerificationStatus": "official_contact_form_verified",
       "query": "https://www.google.com/search?q=%22Facewest%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22United%20Kingdom%22%20buyer%20OR%20wholesale%20OR%20contact",
       "source": "google_customer_discovery",
       "sourceType": "google",
@@ -12957,7 +13371,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -12973,7 +13387,19 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       },
       "identitySource": "official website/social profile + Google background query",
       "channelPriority": 1,
-      "discoveredAt": "2026-07-16T05:03:53.170Z"
+      "discoveredAt": "2026-07-16T05:03:53.170Z",
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-05T05:07:38.402Z",
+        "evidenceUrl": "https://www.facewest.co.uk/",
+        "httpStatus": 200,
+        "signals": [
+          "form_control",
+          "contact_invitation"
+        ],
+        "error": ""
+      },
+      "contactCapabilityVerified": true
     },
     {
       "id": "google-customer-above-and-beyond-instagram",
@@ -13029,7 +13455,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -13045,7 +13471,15 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       },
       "identitySource": "official website/social profile + Google background query",
       "channelPriority": 1,
-      "discoveredAt": "2026-07-16T05:03:53.170Z"
+      "discoveredAt": "2026-07-16T05:03:53.170Z",
+      "firstPartyChannelVerification": {
+        "status": "unreachable",
+        "verifiedAt": "2026-08-05T05:07:37.367Z",
+        "evidenceUrl": "https://www.aboveandbeyond.ie/",
+        "httpStatus": 0,
+        "signals": [],
+        "error": "fetch failed"
+      }
     },
     {
       "id": "google-customer-72hours-instagram",
@@ -13073,8 +13507,8 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "opportunity": "72hours is a qualified outdoor, camping, travel or sport retail prospect with category fit for FLEXTAIL portable outdoor electrics and Vollyc practical 3C products.",
       "linkedin_url": "",
       "linkedin": "",
-      "publicEmail": "",
-      "contactEmail": "",
+      "publicEmail": "orders@72hours.ca",
+      "contactEmail": "orders@72hours.ca",
       "vendorPortal": "https://72hours.ca/",
       "contactPhone": "",
       "contactNote": "",
@@ -13082,7 +13516,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "website": "https://72hours.ca/",
       "evidenceUrl": "https://www.google.com/search?q=%2272hours%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22Canada%22%20buyer%20OR%20wholesale%20OR%20contact",
       "sourceEvidenceUrl": "verified outdoor retailer official website and public social profile refill",
-      "externalVerificationStatus": "",
+      "externalVerificationStatus": "official_contact_form_verified",
       "query": "https://www.google.com/search?q=%2272hours%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22Canada%22%20buyer%20OR%20wholesale%20OR%20contact",
       "source": "google_customer_discovery",
       "sourceType": "google",
@@ -13101,7 +13535,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -13117,7 +13551,22 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       },
       "identitySource": "official website/social profile + Google background query",
       "channelPriority": 1,
-      "discoveredAt": "2026-07-16T05:03:53.170Z"
+      "discoveredAt": "2026-07-16T05:03:53.170Z",
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-05T05:07:37.802Z",
+        "evidenceUrl": "https://72hours.ca/",
+        "httpStatus": 200,
+        "signals": [
+          "form_control",
+          "public_business_email",
+          "contact_invitation"
+        ],
+        "error": ""
+      },
+      "contactCapabilityVerified": true,
+      "emailVerificationStatus": "official_public_business_email",
+      "emailEvidence": "first_party_live_page_cache"
     },
     {
       "id": "google-customer-atmosphere-instagram",
@@ -13173,7 +13622,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -13189,7 +13638,17 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       },
       "identitySource": "official website/social profile + Google background query",
       "channelPriority": 1,
-      "discoveredAt": "2026-07-16T05:03:53.170Z"
+      "discoveredAt": "2026-07-16T05:03:53.170Z",
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-05T05:07:40.862Z",
+        "evidenceUrl": "https://www.atmosphere.ca/",
+        "httpStatus": 200,
+        "signals": [
+          "contact_invitation"
+        ],
+        "error": ""
+      }
     },
     {
       "id": "google-customer-altitude-sports-instagram",
@@ -13233,9 +13692,9 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
-      "officialSocialProfileVerified": false,
-      "socialProfileEvidenceUrl": "",
-      "socialProfileVerifiedAt": "",
+      "officialSocialProfileVerified": true,
+      "socialProfileEvidenceUrl": "https://www.altitude-sports.com/",
+      "socialProfileVerifiedAt": "2026-08-05T05:07:41.568Z",
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -13245,7 +13704,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -13261,7 +13720,17 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       },
       "identitySource": "official website/social profile + Google background query",
       "channelPriority": 1,
-      "discoveredAt": "2026-07-16T05:03:53.170Z"
+      "discoveredAt": "2026-07-16T05:03:53.170Z",
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-05T05:07:41.568Z",
+        "evidenceUrl": "https://www.altitude-sports.com/",
+        "httpStatus": 200,
+        "signals": [
+          "form_control"
+        ],
+        "error": ""
+      }
     },
     {
       "id": "google-customer-the-last-hunt-instagram",
@@ -13317,7 +13786,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -13333,7 +13802,17 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       },
       "identitySource": "official website/social profile + Google background query",
       "channelPriority": 1,
-      "discoveredAt": "2026-07-16T05:03:53.170Z"
+      "discoveredAt": "2026-07-16T05:03:53.170Z",
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-05T05:07:41.698Z",
+        "evidenceUrl": "https://www.thelasthunt.com/",
+        "httpStatus": 200,
+        "signals": [
+          "form_control"
+        ],
+        "error": ""
+      }
     },
     {
       "id": "google-customer-marmot-basin-retail-instagram",
@@ -13389,7 +13868,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -13405,7 +13884,15 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       },
       "identitySource": "official website/social profile + Google background query",
       "channelPriority": 1,
-      "discoveredAt": "2026-07-16T05:03:53.170Z"
+      "discoveredAt": "2026-07-16T05:03:53.170Z",
+      "firstPartyChannelVerification": {
+        "status": "unreachable",
+        "verifiedAt": "2026-08-05T05:07:41.234Z",
+        "evidenceUrl": "https://www.marmotbasin.com/",
+        "httpStatus": 0,
+        "signals": [],
+        "error": "fetch failed"
+      }
     },
     {
       "id": "google-customer-wild-earth-instagram",
@@ -13451,7 +13938,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "identityStatus": "verified",
       "officialSocialProfileVerified": true,
       "socialProfileEvidenceUrl": "https://www.wildearth.com.au/",
-      "socialProfileVerifiedAt": "2026-08-04T07:00:00.000Z",
+      "socialProfileVerifiedAt": "2026-08-05T05:07:41.313Z",
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -13461,7 +13948,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -13477,7 +13964,15 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       },
       "identitySource": "official website/social profile + Google background query",
       "channelPriority": 1,
-      "discoveredAt": "2026-07-16T05:03:53.170Z"
+      "discoveredAt": "2026-07-16T05:03:53.170Z",
+      "firstPartyChannelVerification": {
+        "status": "unreachable",
+        "verifiedAt": "2026-08-05T05:07:41.313Z",
+        "evidenceUrl": "https://www.wildearth.com.au/",
+        "httpStatus": 403,
+        "signals": [],
+        "error": ""
+      }
     },
     {
       "id": "google-customer-tentworld-australia-instagram",
@@ -13533,7 +14028,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -13549,7 +14044,15 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       },
       "identitySource": "official website/social profile + Google background query",
       "channelPriority": 1,
-      "discoveredAt": "2026-07-16T05:03:53.170Z"
+      "discoveredAt": "2026-07-16T05:03:53.170Z",
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-05T05:07:42.483Z",
+        "evidenceUrl": "https://www.tentworld.com.au/",
+        "httpStatus": 200,
+        "signals": [],
+        "error": ""
+      }
     },
     {
       "id": "google-customer-paddy-pallin-instagram",
@@ -13586,7 +14089,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "website": "https://www.paddypallin.com.au/",
       "evidenceUrl": "https://www.google.com/search?q=%22Paddy%20Pallin%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22Australia%22%20buyer%20OR%20wholesale%20OR%20contact",
       "sourceEvidenceUrl": "verified outdoor retailer official website and public social profile refill",
-      "externalVerificationStatus": "",
+      "externalVerificationStatus": "official_contact_form_verified",
       "query": "https://www.google.com/search?q=%22Paddy%20Pallin%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22Australia%22%20buyer%20OR%20wholesale%20OR%20contact",
       "source": "google_customer_discovery",
       "sourceType": "google",
@@ -13605,7 +14108,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -13621,7 +14124,19 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       },
       "identitySource": "official website/social profile + Google background query",
       "channelPriority": 1,
-      "discoveredAt": "2026-07-16T05:03:53.170Z"
+      "discoveredAt": "2026-07-16T05:03:53.170Z",
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-05T05:07:42.172Z",
+        "evidenceUrl": "https://www.paddypallin.com.au/",
+        "httpStatus": 200,
+        "signals": [
+          "form_control",
+          "contact_invitation"
+        ],
+        "error": ""
+      },
+      "contactCapabilityVerified": true
     },
     {
       "id": "google-customer-macpac-instagram",
@@ -13658,16 +14173,16 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "website": "https://www.macpac.com.au/",
       "evidenceUrl": "https://www.google.com/search?q=%22Macpac%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22Australia%22%20buyer%20OR%20wholesale%20OR%20contact",
       "sourceEvidenceUrl": "verified outdoor retailer official website and public social profile refill",
-      "externalVerificationStatus": "",
+      "externalVerificationStatus": "official_contact_form_verified",
       "query": "https://www.google.com/search?q=%22Macpac%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22Australia%22%20buyer%20OR%20wholesale%20OR%20contact",
       "source": "google_customer_discovery",
       "sourceType": "google",
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
-      "officialSocialProfileVerified": false,
-      "socialProfileEvidenceUrl": "",
-      "socialProfileVerifiedAt": "",
+      "officialSocialProfileVerified": true,
+      "socialProfileEvidenceUrl": "https://www.macpac.com.au/",
+      "socialProfileVerifiedAt": "2026-08-05T05:07:42.422Z",
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -13677,7 +14192,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -13693,7 +14208,19 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       },
       "identitySource": "official website/social profile + Google background query",
       "channelPriority": 1,
-      "discoveredAt": "2026-07-16T05:03:53.170Z"
+      "discoveredAt": "2026-07-16T05:03:53.170Z",
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-05T05:07:42.422Z",
+        "evidenceUrl": "https://www.macpac.com.au/",
+        "httpStatus": 200,
+        "signals": [
+          "form_control",
+          "contact_invitation"
+        ],
+        "error": ""
+      },
+      "contactCapabilityVerified": true
     },
     {
       "id": "google-customer-tentworld-nz-instagram",
@@ -13749,7 +14276,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -13765,7 +14292,15 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       },
       "identitySource": "official website/social profile + Google background query",
       "channelPriority": 1,
-      "discoveredAt": "2026-07-16T05:03:53.170Z"
+      "discoveredAt": "2026-07-16T05:03:53.170Z",
+      "firstPartyChannelVerification": {
+        "status": "unreachable",
+        "verifiedAt": "2026-08-05T05:07:47.567Z",
+        "evidenceUrl": "https://www.tentworld.co.nz/",
+        "httpStatus": 0,
+        "signals": [],
+        "error": "fetch failed"
+      }
     },
     {
       "id": "google-customer-torpedo7-instagram",
@@ -13809,9 +14344,9 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
-      "officialSocialProfileVerified": false,
-      "socialProfileEvidenceUrl": "",
-      "socialProfileVerifiedAt": "",
+      "officialSocialProfileVerified": true,
+      "socialProfileEvidenceUrl": "https://www.torpedo7.co.nz/",
+      "socialProfileVerifiedAt": "2026-08-05T05:07:48.708Z",
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -13821,7 +14356,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -13837,7 +14372,17 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       },
       "identitySource": "official website/social profile + Google background query",
       "channelPriority": 1,
-      "discoveredAt": "2026-07-16T05:03:53.170Z"
+      "discoveredAt": "2026-07-16T05:03:53.170Z",
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-05T05:07:48.708Z",
+        "evidenceUrl": "https://www.torpedo7.co.nz/",
+        "httpStatus": 200,
+        "signals": [
+          "form_control"
+        ],
+        "error": ""
+      }
     },
     {
       "id": "google-customer-outdoor-action-instagram",
@@ -13874,7 +14419,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "website": "https://www.outdooraction.co.nz/",
       "evidenceUrl": "https://www.google.com/search?q=%22Outdoor%20Action%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22New%20Zealand%22%20buyer%20OR%20wholesale%20OR%20contact",
       "sourceEvidenceUrl": "verified outdoor retailer official website and public social profile refill",
-      "externalVerificationStatus": "",
+      "externalVerificationStatus": "official_contact_form_verified",
       "query": "https://www.google.com/search?q=%22Outdoor%20Action%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22New%20Zealand%22%20buyer%20OR%20wholesale%20OR%20contact",
       "source": "google_customer_discovery",
       "sourceType": "google",
@@ -13893,7 +14438,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -13909,7 +14454,19 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       },
       "identitySource": "official website/social profile + Google background query",
       "channelPriority": 1,
-      "discoveredAt": "2026-07-16T05:03:53.170Z"
+      "discoveredAt": "2026-07-16T05:03:53.170Z",
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-05T05:07:48.512Z",
+        "evidenceUrl": "https://www.outdooraction.co.nz/",
+        "httpStatus": 200,
+        "signals": [
+          "form_control",
+          "contact_invitation"
+        ],
+        "error": ""
+      },
+      "contactCapabilityVerified": true
     },
     {
       "id": "google-customer-campz-instagram",
@@ -13965,7 +14522,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -13981,7 +14538,15 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       },
       "identitySource": "official website/social profile + Google background query",
       "channelPriority": 1,
-      "discoveredAt": "2026-07-16T05:03:53.170Z"
+      "discoveredAt": "2026-07-16T05:03:53.170Z",
+      "firstPartyChannelVerification": {
+        "status": "unreachable",
+        "verifiedAt": "2026-08-05T05:07:49.090Z",
+        "evidenceUrl": "https://www.bergfreunde.de/?campz=1",
+        "httpStatus": 403,
+        "signals": [],
+        "error": ""
+      }
     },
     {
       "id": "google-customer-sport-conrad-instagram",
@@ -14025,9 +14590,9 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
-      "officialSocialProfileVerified": false,
-      "socialProfileEvidenceUrl": "",
-      "socialProfileVerifiedAt": "",
+      "officialSocialProfileVerified": true,
+      "socialProfileEvidenceUrl": "https://www.sport-conrad.com/",
+      "socialProfileVerifiedAt": "2026-08-05T05:07:51.492Z",
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -14037,7 +14602,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -14053,7 +14618,19 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       },
       "identitySource": "official website/social profile + Google background query",
       "channelPriority": 1,
-      "discoveredAt": "2026-07-16T05:03:53.170Z"
+      "discoveredAt": "2026-07-16T05:03:53.170Z",
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-05T05:07:51.492Z",
+        "evidenceUrl": "https://www.sport-conrad.com/",
+        "httpStatus": 200,
+        "signals": [
+          "form_control"
+        ],
+        "error": ""
+      },
+      "emailVerificationStatus": "official_public_business_email",
+      "emailEvidence": "first_party_live_page_cache"
     },
     {
       "id": "google-customer-doorout-instagram",
@@ -14099,7 +14676,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "identityStatus": "verified",
       "officialSocialProfileVerified": true,
       "socialProfileEvidenceUrl": "https://www.doorout.com/",
-      "socialProfileVerifiedAt": "",
+      "socialProfileVerifiedAt": "2026-08-05T05:08:01.499Z",
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -14109,7 +14686,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -14125,7 +14702,15 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       },
       "identitySource": "official website/social profile + Google background query",
       "channelPriority": 1,
-      "discoveredAt": "2026-07-16T05:03:53.170Z"
+      "discoveredAt": "2026-07-16T05:03:53.170Z",
+      "firstPartyChannelVerification": {
+        "status": "unreachable",
+        "verifiedAt": "2026-08-05T05:08:01.499Z",
+        "evidenceUrl": "https://www.doorout.com/",
+        "httpStatus": 0,
+        "signals": [],
+        "error": "timeout"
+      }
     },
     {
       "id": "google-customer-addnature-instagram",
@@ -14181,7 +14766,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -14197,7 +14782,15 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       },
       "identitySource": "official website/social profile + Google background query",
       "channelPriority": 1,
-      "discoveredAt": "2026-07-16T05:03:53.170Z"
+      "discoveredAt": "2026-07-16T05:03:53.170Z",
+      "firstPartyChannelVerification": {
+        "status": "unreachable",
+        "verifiedAt": "2026-08-05T05:07:54.602Z",
+        "evidenceUrl": "https://www.addnature.com/",
+        "httpStatus": 0,
+        "signals": [],
+        "error": "fetch failed"
+      }
     },
     {
       "id": "google-customer-xxl-sport-instagram",
@@ -14253,7 +14846,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -14269,7 +14862,17 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       },
       "identitySource": "official website/social profile + Google background query",
       "channelPriority": 1,
-      "discoveredAt": "2026-07-16T05:03:53.170Z"
+      "discoveredAt": "2026-07-16T05:03:53.170Z",
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-05T05:07:53.580Z",
+        "evidenceUrl": "https://www.xxl.no/",
+        "httpStatus": 200,
+        "signals": [
+          "form_control"
+        ],
+        "error": ""
+      }
     },
     {
       "id": "google-customer-blue-tomato-instagram",
@@ -14313,9 +14916,9 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
-      "officialSocialProfileVerified": false,
-      "socialProfileEvidenceUrl": "",
-      "socialProfileVerifiedAt": "",
+      "officialSocialProfileVerified": true,
+      "socialProfileEvidenceUrl": "https://www.blue-tomato.com/de-DE/",
+      "socialProfileVerifiedAt": "2026-08-05T05:07:53.197Z",
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -14325,7 +14928,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -14341,7 +14944,17 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       },
       "identitySource": "official website/social profile + Google background query",
       "channelPriority": 1,
-      "discoveredAt": "2026-07-16T05:03:53.170Z"
+      "discoveredAt": "2026-07-16T05:03:53.170Z",
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-05T05:07:53.197Z",
+        "evidenceUrl": "https://www.blue-tomato.com/de-DE/",
+        "httpStatus": 200,
+        "signals": [
+          "form_control"
+        ],
+        "error": ""
+      }
     },
     {
       "id": "google-customer-sportler-instagram",
@@ -14397,7 +15010,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -14413,7 +15026,15 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       },
       "identitySource": "official website/social profile + Google background query",
       "channelPriority": 1,
-      "discoveredAt": "2026-07-16T05:03:53.170Z"
+      "discoveredAt": "2026-07-16T05:03:53.170Z",
+      "firstPartyChannelVerification": {
+        "status": "unreachable",
+        "verifiedAt": "2026-08-05T05:08:02.631Z",
+        "evidenceUrl": "https://www.sportler.com/",
+        "httpStatus": 403,
+        "signals": [],
+        "error": ""
+      }
     },
     {
       "id": "google-customer-trekkinn-instagram",
@@ -14450,7 +15071,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "website": "https://www.tradeinn.com/trekkinn/",
       "evidenceUrl": "https://www.google.com/search?q=%22Trekkinn%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22Spain%22%20buyer%20OR%20wholesale%20OR%20contact",
       "sourceEvidenceUrl": "verified outdoor retailer official website and public social profile refill",
-      "externalVerificationStatus": "",
+      "externalVerificationStatus": "official_contact_form_verified",
       "query": "https://www.google.com/search?q=%22Trekkinn%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22Spain%22%20buyer%20OR%20wholesale%20OR%20contact",
       "source": "google_customer_discovery",
       "sourceType": "google",
@@ -14469,7 +15090,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -14485,7 +15106,19 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       },
       "identitySource": "official website/social profile + Google background query",
       "channelPriority": 1,
-      "discoveredAt": "2026-07-16T05:03:53.170Z"
+      "discoveredAt": "2026-07-16T05:03:53.170Z",
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-05T05:08:02.572Z",
+        "evidenceUrl": "https://www.tradeinn.com/trekkinn/en",
+        "httpStatus": 200,
+        "signals": [
+          "form_control",
+          "contact_invitation"
+        ],
+        "error": ""
+      },
+      "contactCapabilityVerified": true
     },
     {
       "id": "google-customer-4camping-instagram",
@@ -14513,8 +15146,8 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "opportunity": "4Camping is a qualified outdoor, camping, travel or sport retail prospect with category fit for FLEXTAIL portable outdoor electrics and Vollyc practical 3C products.",
       "linkedin_url": "",
       "linkedin": "",
-      "publicEmail": "",
-      "contactEmail": "",
+      "publicEmail": "objednavky@4camping.cz",
+      "contactEmail": "objednavky@4camping.cz",
       "vendorPortal": "https://www.4camping.cz/",
       "contactPhone": "",
       "contactNote": "",
@@ -14529,9 +15162,9 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
-      "officialSocialProfileVerified": false,
-      "socialProfileEvidenceUrl": "",
-      "socialProfileVerifiedAt": "",
+      "officialSocialProfileVerified": true,
+      "socialProfileEvidenceUrl": "https://www.4camping.cz/",
+      "socialProfileVerifiedAt": "2026-08-05T05:08:03.911Z",
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -14541,7 +15174,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -14557,7 +15190,20 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       },
       "identitySource": "official website/social profile + Google background query",
       "channelPriority": 1,
-      "discoveredAt": "2026-07-16T05:03:53.170Z"
+      "discoveredAt": "2026-07-16T05:03:53.170Z",
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-05T05:08:03.911Z",
+        "evidenceUrl": "https://www.4camping.cz/",
+        "httpStatus": 200,
+        "signals": [
+          "form_control",
+          "public_business_email"
+        ],
+        "error": ""
+      },
+      "emailVerificationStatus": "official_public_business_email",
+      "emailEvidence": "first_party_live_page_cache"
     },
     {
       "id": "google-customer-8a-pl-instagram",
@@ -14602,8 +15248,8 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "channel": "",
       "identityStatus": "verified",
       "officialSocialProfileVerified": true,
-      "socialProfileEvidenceUrl": "https://8a.pl/media/pliki/polityka_prywatno%C5%9Bci_FB_8a.pdf",
-      "socialProfileVerifiedAt": "",
+      "socialProfileEvidenceUrl": "https://8a.pl/",
+      "socialProfileVerifiedAt": "2026-08-05T05:08:01.691Z",
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -14613,7 +15259,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -14629,7 +15275,15 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       },
       "identitySource": "official website/social profile + Google background query",
       "channelPriority": 1,
-      "discoveredAt": "2026-07-16T05:03:53.170Z"
+      "discoveredAt": "2026-07-16T05:03:53.170Z",
+      "firstPartyChannelVerification": {
+        "status": "unreachable",
+        "verifiedAt": "2026-08-05T05:08:01.691Z",
+        "evidenceUrl": "https://8a.pl/",
+        "httpStatus": 403,
+        "signals": [],
+        "error": ""
+      }
     },
     {
       "id": "google-customer-sklep-podroznika-instagram",
@@ -14685,7 +15339,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -14701,7 +15355,15 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       },
       "identitySource": "official website/social profile + Google background query",
       "channelPriority": 1,
-      "discoveredAt": "2026-07-16T05:03:53.170Z"
+      "discoveredAt": "2026-07-16T05:03:53.170Z",
+      "firstPartyChannelVerification": {
+        "status": "unreachable",
+        "verifiedAt": "2026-08-05T05:08:04.825Z",
+        "evidenceUrl": "https://www.sklep-podroznika.pl/",
+        "httpStatus": 0,
+        "signals": [],
+        "error": "fetch failed"
+      }
     },
     {
       "id": "google-customer-brave-hardy-facebook",
@@ -14738,7 +15400,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "website": "https://www.bravehardy.com/",
       "evidenceUrl": "https://www.google.com/search?q=%22Brave%20Hardy%22%20%22outdoor%20equipment%20retailer%20and%20wholesaler%22%20%22South%20Africa%22%20buyer%20OR%20wholesale%20OR%20contact",
       "sourceEvidenceUrl": "https://www.bravehardy.com/pages/contact",
-      "externalVerificationStatus": "official_supplier_form_verified",
+      "externalVerificationStatus": "official_supplier_email_verified",
       "query": "https://www.google.com/search?q=%22Brave%20Hardy%22%20%22outdoor%20equipment%20retailer%20and%20wholesaler%22%20%22South%20Africa%22%20buyer%20OR%20wholesale%20OR%20contact",
       "source": "google_customer_discovery",
       "sourceType": "google",
@@ -14747,7 +15409,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "identityStatus": "verified",
       "officialSocialProfileVerified": true,
       "socialProfileEvidenceUrl": "https://www.bravehardy.com/pages/contact",
-      "socialProfileVerifiedAt": "2026-08-05T04:05:15.855Z",
+      "socialProfileVerifiedAt": "2026-08-04T09:55:00.000Z",
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -14757,7 +15419,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -14775,21 +15437,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "facebookStatus": "verified_official_page_candidate",
       "identitySource": "official Facebook page candidate + official website + Google background query",
       "channelPriority": 2,
-      "discoveredAt": "2026-08-04T08:45:35.991Z",
-      "firstPartyChannelVerification": {
-        "status": "checked",
-        "verifiedAt": "2026-08-05T04:05:15.855Z",
-        "evidenceUrl": "https://www.bravehardy.com/pages/contact",
-        "httpStatus": 200,
-        "signals": [
-          "form_control",
-          "public_business_email",
-          "supplier_invitation",
-          "contact_invitation"
-        ],
-        "error": ""
-      },
-      "contactCapabilityVerified": true
+      "discoveredAt": "2026-08-04T08:45:35.991Z"
     },
     {
       "id": "google-customer-public-lands-facebook",
@@ -14845,7 +15493,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -14863,17 +15511,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "facebookStatus": "verified_official_page_candidate",
       "identitySource": "official Facebook page candidate + official website + Google background query",
       "channelPriority": 2,
-      "discoveredAt": "2026-07-16T05:03:53.170Z",
-      "firstPartyChannelVerification": {
-        "status": "checked",
-        "verifiedAt": "2026-08-05T04:05:18.598Z",
-        "evidenceUrl": "https://www.publiclands.com/",
-        "httpStatus": 200,
-        "signals": [
-          "form_control"
-        ],
-        "error": ""
-      }
+      "discoveredAt": "2026-07-16T05:03:53.170Z"
     },
     {
       "id": "google-customer-moosejaw-facebook",
@@ -14929,7 +15567,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -14953,7 +15591,17 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "facebookStatus": "verified_official_page_candidate",
       "identitySource": "official Facebook page candidate + official website + Google background query",
       "channelPriority": 2,
-      "discoveredAt": "2026-07-16T05:03:53.170Z"
+      "discoveredAt": "2026-07-16T05:03:53.170Z",
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-05T05:09:21.924Z",
+        "evidenceUrl": "https://www.publiclands.com/?segment=mjtopl",
+        "httpStatus": 200,
+        "signals": [
+          "form_control"
+        ],
+        "error": ""
+      }
     },
     {
       "id": "google-customer-eastern-mountain-sports-facebook",
@@ -15009,7 +15657,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -15033,7 +15681,17 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "facebookStatus": "verified_official_page_candidate",
       "identitySource": "official Facebook page candidate + official website + Google background query",
       "channelPriority": 2,
-      "discoveredAt": "2026-07-16T05:03:53.170Z"
+      "discoveredAt": "2026-07-16T05:03:53.170Z",
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-05T05:09:20.656Z",
+        "evidenceUrl": "https://www.ems.com/",
+        "httpStatus": 200,
+        "signals": [
+          "form_control"
+        ],
+        "error": ""
+      }
     },
     {
       "id": "google-customer-campman-facebook",
@@ -15061,16 +15719,16 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "opportunity": "Campman is a qualified outdoor, camping, travel or sport retail prospect with category fit for FLEXTAIL portable outdoor electrics and Vollyc practical 3C products.",
       "linkedin_url": "",
       "linkedin": "",
-      "publicEmail": "info@campman.com",
-      "contactEmail": "info@campman.com",
+      "publicEmail": "",
+      "contactEmail": "",
       "vendorPortal": "https://www.campman.com/",
       "contactPhone": "",
       "contactNote": "",
       "publicEmailStatus": "",
       "website": "https://www.campman.com/",
       "evidenceUrl": "https://www.google.com/search?q=%22Campman%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "sourceEvidenceUrl": "https://www.campman.com/",
-      "externalVerificationStatus": "official_contact_form_verified",
+      "sourceEvidenceUrl": "verified outdoor retailer official website and public social profile refill",
+      "externalVerificationStatus": "",
       "query": "https://www.google.com/search?q=%22Campman%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
       "source": "google_customer_discovery",
       "sourceType": "google",
@@ -15089,7 +15747,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -15107,22 +15765,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "facebookStatus": "verified_official_page_candidate",
       "identitySource": "official Facebook page candidate + official website + Google background query",
       "channelPriority": 2,
-      "discoveredAt": "2026-07-16T05:03:53.170Z",
-      "firstPartyChannelVerification": {
-        "status": "checked",
-        "verifiedAt": "2026-08-05T04:05:19.320Z",
-        "evidenceUrl": "https://www.campman.com/",
-        "httpStatus": 200,
-        "signals": [
-          "form_control",
-          "public_business_email",
-          "contact_invitation"
-        ],
-        "error": ""
-      },
-      "contactCapabilityVerified": true,
-      "emailVerificationStatus": "official_public_business_email",
-      "emailEvidence": "first_party_live_page"
+      "discoveredAt": "2026-07-16T05:03:53.170Z"
     },
     {
       "id": "google-customer-pack-rat-outdoor-center-facebook",
@@ -15178,7 +15821,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -15202,7 +15845,17 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "facebookStatus": "verified_official_page_candidate",
       "identitySource": "official Facebook page candidate + official website + Google background query",
       "channelPriority": 2,
-      "discoveredAt": "2026-07-16T05:03:53.170Z"
+      "discoveredAt": "2026-07-16T05:03:53.170Z",
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-05T05:09:22.541Z",
+        "evidenceUrl": "https://packratoc.com/",
+        "httpStatus": 200,
+        "signals": [
+          "form_control"
+        ],
+        "error": ""
+      }
     },
     {
       "id": "google-customer-the-mountaineer-facebook",
@@ -15258,7 +15911,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -15276,17 +15929,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "facebookStatus": "verified_official_page_candidate",
       "identitySource": "official Facebook page candidate + official website + Google background query",
       "channelPriority": 2,
-      "discoveredAt": "2026-07-16T05:03:53.170Z",
-      "firstPartyChannelVerification": {
-        "status": "checked",
-        "verifiedAt": "2026-08-05T04:05:18.855Z",
-        "evidenceUrl": "https://mountaineer.com/",
-        "httpStatus": 200,
-        "signals": [
-          "form_control"
-        ],
-        "error": ""
-      }
+      "discoveredAt": "2026-07-16T05:03:53.170Z"
     },
     {
       "id": "google-customer-sierra-facebook",
@@ -15342,7 +15985,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -15360,15 +16003,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "facebookStatus": "verified_official_page_candidate",
       "identitySource": "official Facebook page candidate + official website + Google background query",
       "channelPriority": 2,
-      "discoveredAt": "2026-07-16T05:03:53.170Z",
-      "firstPartyChannelVerification": {
-        "status": "unreachable",
-        "verifiedAt": "2026-08-05T04:05:17.343Z",
-        "evidenceUrl": "https://www.sierra.com/",
-        "httpStatus": 403,
-        "signals": [],
-        "error": ""
-      }
+      "discoveredAt": "2026-07-16T05:03:53.170Z"
     },
     {
       "id": "google-customer-outdoorplay-facebook",
@@ -15404,8 +16039,8 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "publicEmailStatus": "Official Outdoorplay contact page; route to buyer/vendor team.",
       "website": "https://www.outdoorplay.com/",
       "evidenceUrl": "https://www.google.com/search?q=%22Outdoorplay%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "sourceEvidenceUrl": "https://www.outdoorplay.com/",
-      "externalVerificationStatus": "official_contact_form_verified",
+      "sourceEvidenceUrl": "verified outdoor retailer official website and public social profile refill",
+      "externalVerificationStatus": "",
       "query": "https://www.google.com/search?q=%22Outdoorplay%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
       "source": "google_customer_discovery",
       "sourceType": "google",
@@ -15424,7 +16059,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -15442,20 +16077,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "facebookStatus": "verified_official_page_candidate",
       "identitySource": "official Facebook page candidate + official website + Google background query",
       "channelPriority": 2,
-      "discoveredAt": "2026-07-16T05:03:53.170Z",
-      "firstPartyChannelVerification": {
-        "status": "checked",
-        "verifiedAt": "2026-08-05T04:05:20.062Z",
-        "evidenceUrl": "https://www.outdoorplay.com/",
-        "httpStatus": 200,
-        "signals": [
-          "form_control",
-          "public_business_email",
-          "contact_invitation"
-        ],
-        "error": ""
-      },
-      "contactCapabilityVerified": true
+      "discoveredAt": "2026-07-16T05:03:53.170Z"
     },
     {
       "id": "google-customer-campmor-facebook",
@@ -15483,25 +16105,25 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "opportunity": "Campmor is a qualified outdoor, camping, travel or sport retail prospect with category fit for FLEXTAIL portable outdoor electrics and Vollyc practical 3C products.",
       "linkedin_url": "",
       "linkedin": "",
-      "publicEmail": "customerservice@campmor.com",
-      "contactEmail": "customerservice@campmor.com",
+      "publicEmail": "",
+      "contactEmail": "",
       "vendorPortal": "https://www.campmor.com/",
       "contactPhone": "",
       "contactNote": "",
       "publicEmailStatus": "",
       "website": "https://www.campmor.com/",
       "evidenceUrl": "https://www.google.com/search?q=%22Campmor%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "sourceEvidenceUrl": "https://www.campmor.com/",
-      "externalVerificationStatus": "official_contact_form_verified",
+      "sourceEvidenceUrl": "verified outdoor retailer official website and public social profile refill",
+      "externalVerificationStatus": "",
       "query": "https://www.google.com/search?q=%22Campmor%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
       "source": "google_customer_discovery",
       "sourceType": "google",
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
-      "officialSocialProfileVerified": true,
-      "socialProfileEvidenceUrl": "https://www.campmor.com/",
-      "socialProfileVerifiedAt": "2026-08-05T04:05:20.158Z",
+      "officialSocialProfileVerified": false,
+      "socialProfileEvidenceUrl": "",
+      "socialProfileVerifiedAt": "",
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -15511,7 +16133,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -15529,22 +16151,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "facebookStatus": "verified_official_page_candidate",
       "identitySource": "official Facebook page candidate + official website + Google background query",
       "channelPriority": 2,
-      "discoveredAt": "2026-07-16T05:03:53.170Z",
-      "firstPartyChannelVerification": {
-        "status": "checked",
-        "verifiedAt": "2026-08-05T04:05:20.158Z",
-        "evidenceUrl": "https://www.campmor.com/",
-        "httpStatus": 200,
-        "signals": [
-          "form_control",
-          "public_business_email",
-          "contact_invitation"
-        ],
-        "error": ""
-      },
-      "contactCapabilityVerified": true,
-      "emailVerificationStatus": "official_public_business_email",
-      "emailEvidence": "first_party_live_page"
+      "discoveredAt": "2026-07-16T05:03:53.170Z"
     },
     {
       "id": "google-customer-ramsey-outdoor-facebook",
@@ -15580,17 +16187,17 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "publicEmailStatus": "",
       "website": "https://www.ramseyoutdoor.com/",
       "evidenceUrl": "https://www.google.com/search?q=%22Ramsey%20Outdoor%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "sourceEvidenceUrl": "https://ramseyoutdoor.com/",
-      "externalVerificationStatus": "official_contact_form_verified",
+      "sourceEvidenceUrl": "verified outdoor retailer official website and public social profile refill",
+      "externalVerificationStatus": "",
       "query": "https://www.google.com/search?q=%22Ramsey%20Outdoor%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
       "source": "google_customer_discovery",
       "sourceType": "google",
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
-      "officialSocialProfileVerified": true,
-      "socialProfileEvidenceUrl": "https://ramseyoutdoor.com/",
-      "socialProfileVerifiedAt": "2026-08-05T04:05:23.093Z",
+      "officialSocialProfileVerified": false,
+      "socialProfileEvidenceUrl": "",
+      "socialProfileVerifiedAt": "",
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -15600,7 +16207,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -15618,19 +16225,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "facebookStatus": "verified_official_page_candidate",
       "identitySource": "official Facebook page candidate + official website + Google background query",
       "channelPriority": 2,
-      "discoveredAt": "2026-07-16T05:03:53.170Z",
-      "firstPartyChannelVerification": {
-        "status": "checked",
-        "verifiedAt": "2026-08-05T04:05:23.093Z",
-        "evidenceUrl": "https://ramseyoutdoor.com/",
-        "httpStatus": 200,
-        "signals": [
-          "form_control",
-          "contact_invitation"
-        ],
-        "error": ""
-      },
-      "contactCapabilityVerified": true
+      "discoveredAt": "2026-07-16T05:03:53.170Z"
     },
     {
       "id": "google-customer-massey-outfitters-facebook",
@@ -15674,9 +16269,9 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
-      "officialSocialProfileVerified": false,
-      "socialProfileEvidenceUrl": "",
-      "socialProfileVerifiedAt": "",
+      "officialSocialProfileVerified": true,
+      "socialProfileEvidenceUrl": "https://www.masseysoutfitters.com/",
+      "socialProfileVerifiedAt": "2026-08-05T05:09:21.216Z",
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -15686,7 +16281,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -15710,7 +16305,17 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "facebookStatus": "verified_official_page_candidate",
       "identitySource": "official Facebook page candidate + official website + Google background query",
       "channelPriority": 2,
-      "discoveredAt": "2026-07-16T05:03:53.170Z"
+      "discoveredAt": "2026-07-16T05:03:53.170Z",
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-05T05:09:21.216Z",
+        "evidenceUrl": "https://www.masseysoutfitters.com/",
+        "httpStatus": 200,
+        "signals": [
+          "contact_invitation"
+        ],
+        "error": ""
+      }
     },
     {
       "id": "google-customer-quest-outdoors-facebook",
@@ -15766,7 +16371,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -15784,15 +16389,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "facebookStatus": "verified_official_page_candidate",
       "identitySource": "official Facebook page candidate + official website + Google background query",
       "channelPriority": 2,
-      "discoveredAt": "2026-07-16T05:03:53.170Z",
-      "firstPartyChannelVerification": {
-        "status": "unreachable",
-        "verifiedAt": "2026-08-05T04:05:21.551Z",
-        "evidenceUrl": "https://questoutdoors.com/",
-        "httpStatus": 404,
-        "signals": [],
-        "error": ""
-      }
+      "discoveredAt": "2026-07-16T05:03:53.170Z"
     },
     {
       "id": "google-customer-river-sports-outfitters-facebook",
@@ -15828,17 +16425,17 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "publicEmailStatus": "",
       "website": "https://www.riversportsoutfitters.com/",
       "evidenceUrl": "https://www.google.com/search?q=%22River%20Sports%20Outfitters%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "sourceEvidenceUrl": "https://www.riversportsoutfitters.com/",
-      "externalVerificationStatus": "official_contact_form_verified",
+      "sourceEvidenceUrl": "verified outdoor retailer official website and public social profile refill",
+      "externalVerificationStatus": "",
       "query": "https://www.google.com/search?q=%22River%20Sports%20Outfitters%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
       "source": "google_customer_discovery",
       "sourceType": "google",
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
-      "officialSocialProfileVerified": true,
-      "socialProfileEvidenceUrl": "https://www.riversportsoutfitters.com/",
-      "socialProfileVerifiedAt": "2026-08-05T04:05:24.170Z",
+      "officialSocialProfileVerified": false,
+      "socialProfileEvidenceUrl": "",
+      "socialProfileVerifiedAt": "",
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -15848,7 +16445,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -15866,19 +16463,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "facebookStatus": "verified_official_page_candidate",
       "identitySource": "official Facebook page candidate + official website + Google background query",
       "channelPriority": 2,
-      "discoveredAt": "2026-07-16T05:03:53.170Z",
-      "firstPartyChannelVerification": {
-        "status": "checked",
-        "verifiedAt": "2026-08-05T04:05:24.170Z",
-        "evidenceUrl": "https://www.riversportsoutfitters.com/",
-        "httpStatus": 200,
-        "signals": [
-          "form_control",
-          "contact_invitation"
-        ],
-        "error": ""
-      },
-      "contactCapabilityVerified": true
+      "discoveredAt": "2026-07-16T05:03:53.170Z"
     },
     {
       "id": "google-customer-rock-creek-facebook",
@@ -15934,7 +16519,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -15952,15 +16537,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "facebookStatus": "verified_official_page_candidate",
       "identitySource": "official Facebook page candidate + official website + Google background query",
       "channelPriority": 2,
-      "discoveredAt": "2026-07-16T05:03:53.170Z",
-      "firstPartyChannelVerification": {
-        "status": "unreachable",
-        "verifiedAt": "2026-08-05T04:05:24.413Z",
-        "evidenceUrl": "https://www.rockcreek.com/",
-        "httpStatus": 0,
-        "signals": [],
-        "error": "fetch failed"
-      }
+      "discoveredAt": "2026-07-16T05:03:53.170Z"
     },
     {
       "id": "google-customer-half-moon-outfitters-facebook",
@@ -15996,8 +16573,8 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "publicEmailStatus": "",
       "website": "https://www.halfmoonoutfitters.com/",
       "evidenceUrl": "https://www.google.com/search?q=%22Half-Moon%20Outfitters%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "sourceEvidenceUrl": "https://www.halfmoonoutfitters.com/",
-      "externalVerificationStatus": "official_contact_form_verified",
+      "sourceEvidenceUrl": "verified outdoor retailer official website and public social profile refill",
+      "externalVerificationStatus": "",
       "query": "https://www.google.com/search?q=%22Half-Moon%20Outfitters%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
       "source": "google_customer_discovery",
       "sourceType": "google",
@@ -16016,7 +16593,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -16034,19 +16611,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "facebookStatus": "verified_official_page_candidate",
       "identitySource": "official Facebook page candidate + official website + Google background query",
       "channelPriority": 2,
-      "discoveredAt": "2026-07-16T05:03:53.170Z",
-      "firstPartyChannelVerification": {
-        "status": "checked",
-        "verifiedAt": "2026-08-05T04:05:23.700Z",
-        "evidenceUrl": "https://www.halfmoonoutfitters.com/",
-        "httpStatus": 200,
-        "signals": [
-          "form_control",
-          "contact_invitation"
-        ],
-        "error": ""
-      },
-      "contactCapabilityVerified": true
+      "discoveredAt": "2026-07-16T05:03:53.170Z"
     },
     {
       "id": "google-customer-sunlight-sports-facebook",
@@ -16074,8 +16639,8 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "opportunity": "Sunlight Sports is a qualified outdoor, camping, travel or sport retail prospect with category fit for FLEXTAIL portable outdoor electrics and Vollyc practical 3C products.",
       "linkedin_url": "",
       "linkedin": "",
-      "publicEmail": "info@sunlightsports.com",
-      "contactEmail": "info@sunlightsports.com",
+      "publicEmail": "",
+      "contactEmail": "",
       "vendorPortal": "https://sunlightsports.com/",
       "contactPhone": "",
       "contactNote": "",
@@ -16102,7 +16667,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -16120,20 +16685,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "facebookStatus": "verified_official_page_candidate",
       "identitySource": "official Facebook page candidate + official website + Google background query",
       "channelPriority": 2,
-      "discoveredAt": "2026-07-16T05:03:53.170Z",
-      "firstPartyChannelVerification": {
-        "status": "checked",
-        "verifiedAt": "2026-08-05T04:05:25.172Z",
-        "evidenceUrl": "https://www.sunlightsports.com/",
-        "httpStatus": 200,
-        "signals": [
-          "form_control",
-          "public_business_email"
-        ],
-        "error": ""
-      },
-      "emailVerificationStatus": "official_public_business_email",
-      "emailEvidence": "first_party_live_page"
+      "discoveredAt": "2026-07-16T05:03:53.170Z"
     },
     {
       "id": "google-customer-jax-outdoor-gear-facebook",
@@ -16177,9 +16729,9 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
-      "officialSocialProfileVerified": true,
-      "socialProfileEvidenceUrl": "https://jaxgoods.com/",
-      "socialProfileVerifiedAt": "2026-08-05T04:05:26.662Z",
+      "officialSocialProfileVerified": false,
+      "socialProfileEvidenceUrl": "",
+      "socialProfileVerifiedAt": "",
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -16189,7 +16741,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -16207,17 +16759,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "facebookStatus": "verified_official_page_candidate",
       "identitySource": "official Facebook page candidate + official website + Google background query",
       "channelPriority": 2,
-      "discoveredAt": "2026-07-16T05:03:53.170Z",
-      "firstPartyChannelVerification": {
-        "status": "checked",
-        "verifiedAt": "2026-08-05T04:05:26.662Z",
-        "evidenceUrl": "https://jaxgoods.com/",
-        "httpStatus": 200,
-        "signals": [
-          "form_control"
-        ],
-        "error": ""
-      }
+      "discoveredAt": "2026-07-16T05:03:53.170Z"
     },
     {
       "id": "google-customer-christy-sports-facebook",
@@ -16253,17 +16795,17 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "publicEmailStatus": "",
       "website": "https://www.christysports.com/",
       "evidenceUrl": "https://www.google.com/search?q=%22Christy%20Sports%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "sourceEvidenceUrl": "https://www.christysports.com/",
-      "externalVerificationStatus": "official_contact_form_verified",
+      "sourceEvidenceUrl": "verified outdoor retailer official website and public social profile refill",
+      "externalVerificationStatus": "",
       "query": "https://www.google.com/search?q=%22Christy%20Sports%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
       "source": "google_customer_discovery",
       "sourceType": "google",
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
-      "officialSocialProfileVerified": true,
-      "socialProfileEvidenceUrl": "https://www.christysports.com/",
-      "socialProfileVerifiedAt": "2026-08-05T04:05:27.585Z",
+      "officialSocialProfileVerified": false,
+      "socialProfileEvidenceUrl": "",
+      "socialProfileVerifiedAt": "",
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -16273,7 +16815,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -16291,19 +16833,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "facebookStatus": "verified_official_page_candidate",
       "identitySource": "official Facebook page candidate + official website + Google background query",
       "channelPriority": 2,
-      "discoveredAt": "2026-07-16T05:03:53.170Z",
-      "firstPartyChannelVerification": {
-        "status": "checked",
-        "verifiedAt": "2026-08-05T04:05:27.585Z",
-        "evidenceUrl": "https://www.christysports.com/",
-        "httpStatus": 200,
-        "signals": [
-          "form_control",
-          "contact_invitation"
-        ],
-        "error": ""
-      },
-      "contactCapabilityVerified": true
+      "discoveredAt": "2026-07-16T05:03:53.170Z"
     },
     {
       "id": "google-customer-paragon-sports-facebook",
@@ -16331,25 +16861,25 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "opportunity": "Paragon Sports is a qualified outdoor, camping, travel or sport retail prospect with category fit for FLEXTAIL portable outdoor electrics and Vollyc practical 3C products.",
       "linkedin_url": "",
       "linkedin": "",
-      "publicEmail": "customerservice@paragonsports.com",
-      "contactEmail": "customerservice@paragonsports.com",
+      "publicEmail": "",
+      "contactEmail": "",
       "vendorPortal": "https://www.paragonsports.com/",
       "contactPhone": "",
       "contactNote": "",
       "publicEmailStatus": "",
       "website": "https://www.paragonsports.com/",
       "evidenceUrl": "https://www.google.com/search?q=%22Paragon%20Sports%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "sourceEvidenceUrl": "https://paragonsports.com/",
-      "externalVerificationStatus": "official_contact_form_verified",
+      "sourceEvidenceUrl": "verified outdoor retailer official website and public social profile refill",
+      "externalVerificationStatus": "",
       "query": "https://www.google.com/search?q=%22Paragon%20Sports%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
       "source": "google_customer_discovery",
       "sourceType": "google",
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
-      "officialSocialProfileVerified": true,
-      "socialProfileEvidenceUrl": "https://paragonsports.com/",
-      "socialProfileVerifiedAt": "2026-08-05T04:05:28.181Z",
+      "officialSocialProfileVerified": false,
+      "socialProfileEvidenceUrl": "",
+      "socialProfileVerifiedAt": "",
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -16359,7 +16889,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -16377,22 +16907,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "facebookStatus": "verified_official_page_candidate",
       "identitySource": "official Facebook page candidate + official website + Google background query",
       "channelPriority": 2,
-      "discoveredAt": "2026-07-16T05:03:53.170Z",
-      "firstPartyChannelVerification": {
-        "status": "checked",
-        "verifiedAt": "2026-08-05T04:05:28.181Z",
-        "evidenceUrl": "https://paragonsports.com/",
-        "httpStatus": 200,
-        "signals": [
-          "form_control",
-          "public_business_email",
-          "contact_invitation"
-        ],
-        "error": ""
-      },
-      "contactCapabilityVerified": true,
-      "emailVerificationStatus": "official_public_business_email",
-      "emailEvidence": "first_party_live_page"
+      "discoveredAt": "2026-07-16T05:03:53.170Z"
     },
     {
       "id": "google-customer-mountain-equipment-facebook",
@@ -16428,8 +16943,8 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "publicEmailStatus": "",
       "website": "https://www.mountain-equipment.co.uk/",
       "evidenceUrl": "https://www.google.com/search?q=%22Mountain%20Equipment%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22United%20Kingdom%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "sourceEvidenceUrl": "https://www.mountain-equipment.com/",
-      "externalVerificationStatus": "official_contact_form_verified",
+      "sourceEvidenceUrl": "verified outdoor retailer official website and public social profile refill",
+      "externalVerificationStatus": "",
       "query": "https://www.google.com/search?q=%22Mountain%20Equipment%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22United%20Kingdom%22%20buyer%20OR%20wholesale%20OR%20contact",
       "source": "google_customer_discovery",
       "sourceType": "google",
@@ -16448,7 +16963,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -16466,19 +16981,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "facebookStatus": "verified_official_page_candidate",
       "identitySource": "official Facebook page candidate + official website + Google background query",
       "channelPriority": 2,
-      "discoveredAt": "2026-07-16T05:03:53.170Z",
-      "firstPartyChannelVerification": {
-        "status": "checked",
-        "verifiedAt": "2026-08-05T04:05:27.340Z",
-        "evidenceUrl": "https://www.mountain-equipment.com/",
-        "httpStatus": 200,
-        "signals": [
-          "form_control",
-          "contact_invitation"
-        ],
-        "error": ""
-      },
-      "contactCapabilityVerified": true
+      "discoveredAt": "2026-07-16T05:03:53.170Z"
     },
     {
       "id": "google-customer-tiso-facebook",
@@ -16514,8 +17017,8 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "publicEmailStatus": "",
       "website": "https://www.tiso.com/",
       "evidenceUrl": "https://www.google.com/search?q=%22Tiso%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22United%20Kingdom%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "sourceEvidenceUrl": "https://www.tiso.com/",
-      "externalVerificationStatus": "official_contact_form_verified",
+      "sourceEvidenceUrl": "verified outdoor retailer official website and public social profile refill",
+      "externalVerificationStatus": "",
       "query": "https://www.google.com/search?q=%22Tiso%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22United%20Kingdom%22%20buyer%20OR%20wholesale%20OR%20contact",
       "source": "google_customer_discovery",
       "sourceType": "google",
@@ -16534,7 +17037,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -16552,19 +17055,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "facebookStatus": "verified_official_page_candidate",
       "identitySource": "official Facebook page candidate + official website + Google background query",
       "channelPriority": 2,
-      "discoveredAt": "2026-07-16T05:03:53.170Z",
-      "firstPartyChannelVerification": {
-        "status": "checked",
-        "verifiedAt": "2026-08-05T04:05:29.704Z",
-        "evidenceUrl": "https://www.tiso.com/",
-        "httpStatus": 200,
-        "signals": [
-          "form_control",
-          "contact_invitation"
-        ],
-        "error": ""
-      },
-      "contactCapabilityVerified": true
+      "discoveredAt": "2026-07-16T05:03:53.170Z"
     },
     {
       "id": "google-customer-george-fisher-facebook",
@@ -16600,8 +17091,8 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "publicEmailStatus": "",
       "website": "https://www.georgefisher.co.uk/",
       "evidenceUrl": "https://www.google.com/search?q=%22George%20Fisher%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22United%20Kingdom%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "sourceEvidenceUrl": "https://www.tiso.com/pages/george-fisher-landing?utm_source=georgefisher",
-      "externalVerificationStatus": "official_contact_form_verified",
+      "sourceEvidenceUrl": "verified outdoor retailer official website and public social profile refill",
+      "externalVerificationStatus": "",
       "query": "https://www.google.com/search?q=%22George%20Fisher%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22United%20Kingdom%22%20buyer%20OR%20wholesale%20OR%20contact",
       "source": "google_customer_discovery",
       "sourceType": "google",
@@ -16620,7 +17111,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -16638,19 +17129,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "facebookStatus": "verified_official_page_candidate",
       "identitySource": "official Facebook page candidate + official website + Google background query",
       "channelPriority": 2,
-      "discoveredAt": "2026-07-16T05:03:53.170Z",
-      "firstPartyChannelVerification": {
-        "status": "checked",
-        "verifiedAt": "2026-08-05T04:05:30.805Z",
-        "evidenceUrl": "https://www.tiso.com/pages/george-fisher-landing?utm_source=georgefisher",
-        "httpStatus": 200,
-        "signals": [
-          "form_control",
-          "contact_invitation"
-        ],
-        "error": ""
-      },
-      "contactCapabilityVerified": true
+      "discoveredAt": "2026-07-16T05:03:53.170Z"
     },
     {
       "id": "google-customer-ld-mountain-centre-facebook",
@@ -16706,7 +17185,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -16724,15 +17203,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "facebookStatus": "verified_official_page_candidate",
       "identitySource": "official Facebook page candidate + official website + Google background query",
       "channelPriority": 2,
-      "discoveredAt": "2026-07-16T05:03:53.170Z",
-      "firstPartyChannelVerification": {
-        "status": "checked",
-        "verifiedAt": "2026-08-05T04:05:31.378Z",
-        "evidenceUrl": "https://www.ldmountaincentre.com/",
-        "httpStatus": 200,
-        "signals": [],
-        "error": ""
-      }
+      "discoveredAt": "2026-07-16T05:03:53.170Z"
     },
     {
       "id": "google-customer-absolute-snow-facebook",
@@ -16788,7 +17259,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -16806,15 +17277,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "facebookStatus": "verified_official_page_candidate",
       "identitySource": "official Facebook page candidate + official website + Google background query",
       "channelPriority": 2,
-      "discoveredAt": "2026-07-16T05:03:53.170Z",
-      "firstPartyChannelVerification": {
-        "status": "unreachable",
-        "verifiedAt": "2026-08-05T04:05:28.745Z",
-        "evidenceUrl": "https://www.absolute-snow.co.uk/",
-        "httpStatus": 403,
-        "signals": [],
-        "error": ""
-      }
+      "discoveredAt": "2026-07-16T05:03:53.170Z"
     },
     {
       "id": "google-customer-ellis-brigham-facebook",
@@ -16870,7 +17333,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -16888,15 +17351,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "facebookStatus": "verified_official_page_candidate",
       "identitySource": "official Facebook page candidate + official website + Google background query",
       "channelPriority": 2,
-      "discoveredAt": "2026-07-16T05:03:53.170Z",
-      "firstPartyChannelVerification": {
-        "status": "checked",
-        "verifiedAt": "2026-08-05T04:05:31.892Z",
-        "evidenceUrl": "https://www.ellis-brigham.com/",
-        "httpStatus": 200,
-        "signals": [],
-        "error": ""
-      }
+      "discoveredAt": "2026-07-16T05:03:53.170Z"
     },
     {
       "id": "google-customer-facewest-facebook",
@@ -16933,16 +17388,16 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "website": "https://www.facewest.co.uk/",
       "evidenceUrl": "https://www.google.com/search?q=%22Facewest%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22United%20Kingdom%22%20buyer%20OR%20wholesale%20OR%20contact",
       "sourceEvidenceUrl": "verified outdoor retailer official website and public social profile refill",
-      "externalVerificationStatus": "",
+      "externalVerificationStatus": "official_contact_form_verified",
       "query": "https://www.google.com/search?q=%22Facewest%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22United%20Kingdom%22%20buyer%20OR%20wholesale%20OR%20contact",
       "source": "google_customer_discovery",
       "sourceType": "google",
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
-      "officialSocialProfileVerified": false,
-      "socialProfileEvidenceUrl": "",
-      "socialProfileVerifiedAt": "",
+      "officialSocialProfileVerified": true,
+      "socialProfileEvidenceUrl": "https://www.facewest.co.uk/",
+      "socialProfileVerifiedAt": "2026-08-05T05:07:38.402Z",
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -16952,7 +17407,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -16970,7 +17425,19 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "facebookStatus": "verified_official_page_candidate",
       "identitySource": "official Facebook page candidate + official website + Google background query",
       "channelPriority": 2,
-      "discoveredAt": "2026-07-16T05:03:53.170Z"
+      "discoveredAt": "2026-07-16T05:03:53.170Z",
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-05T05:07:38.402Z",
+        "evidenceUrl": "https://www.facewest.co.uk/",
+        "httpStatus": 200,
+        "signals": [
+          "form_control",
+          "contact_invitation"
+        ],
+        "error": ""
+      },
+      "contactCapabilityVerified": true
     },
     {
       "id": "google-customer-above-and-beyond-facebook",
@@ -17026,7 +17493,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -17044,7 +17511,15 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "facebookStatus": "verified_official_page_candidate",
       "identitySource": "official Facebook page candidate + official website + Google background query",
       "channelPriority": 2,
-      "discoveredAt": "2026-07-16T05:03:53.170Z"
+      "discoveredAt": "2026-07-16T05:03:53.170Z",
+      "firstPartyChannelVerification": {
+        "status": "unreachable",
+        "verifiedAt": "2026-08-05T05:07:37.367Z",
+        "evidenceUrl": "https://www.aboveandbeyond.ie/",
+        "httpStatus": 0,
+        "signals": [],
+        "error": "fetch failed"
+      }
     },
     {
       "id": "google-customer-72hours-facebook",
@@ -17072,8 +17547,8 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "opportunity": "72hours is a qualified outdoor, camping, travel or sport retail prospect with category fit for FLEXTAIL portable outdoor electrics and Vollyc practical 3C products.",
       "linkedin_url": "",
       "linkedin": "",
-      "publicEmail": "",
-      "contactEmail": "",
+      "publicEmail": "orders@72hours.ca",
+      "contactEmail": "orders@72hours.ca",
       "vendorPortal": "https://72hours.ca/",
       "contactPhone": "",
       "contactNote": "",
@@ -17081,16 +17556,16 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "website": "https://72hours.ca/",
       "evidenceUrl": "https://www.google.com/search?q=%2272hours%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22Canada%22%20buyer%20OR%20wholesale%20OR%20contact",
       "sourceEvidenceUrl": "verified outdoor retailer official website and public social profile refill",
-      "externalVerificationStatus": "",
+      "externalVerificationStatus": "official_contact_form_verified",
       "query": "https://www.google.com/search?q=%2272hours%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22Canada%22%20buyer%20OR%20wholesale%20OR%20contact",
       "source": "google_customer_discovery",
       "sourceType": "google",
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
-      "officialSocialProfileVerified": false,
-      "socialProfileEvidenceUrl": "",
-      "socialProfileVerifiedAt": "",
+      "officialSocialProfileVerified": true,
+      "socialProfileEvidenceUrl": "https://72hours.ca/",
+      "socialProfileVerifiedAt": "2026-08-05T05:07:37.802Z",
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -17100,7 +17575,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -17118,7 +17593,22 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "facebookStatus": "verified_official_page_candidate",
       "identitySource": "official Facebook page candidate + official website + Google background query",
       "channelPriority": 2,
-      "discoveredAt": "2026-07-16T05:03:53.170Z"
+      "discoveredAt": "2026-07-16T05:03:53.170Z",
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-05T05:07:37.802Z",
+        "evidenceUrl": "https://72hours.ca/",
+        "httpStatus": 200,
+        "signals": [
+          "form_control",
+          "public_business_email",
+          "contact_invitation"
+        ],
+        "error": ""
+      },
+      "contactCapabilityVerified": true,
+      "emailVerificationStatus": "official_public_business_email",
+      "emailEvidence": "first_party_live_page_cache"
     },
     {
       "id": "google-customer-atmosphere-facebook",
@@ -17174,7 +17664,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -17192,7 +17682,17 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "facebookStatus": "verified_official_page_candidate",
       "identitySource": "official Facebook page candidate + official website + Google background query",
       "channelPriority": 2,
-      "discoveredAt": "2026-07-16T05:03:53.170Z"
+      "discoveredAt": "2026-07-16T05:03:53.170Z",
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-05T05:07:40.862Z",
+        "evidenceUrl": "https://www.atmosphere.ca/",
+        "httpStatus": 200,
+        "signals": [
+          "contact_invitation"
+        ],
+        "error": ""
+      }
     },
     {
       "id": "google-customer-altitude-sports-facebook",
@@ -17248,7 +17748,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -17266,7 +17766,17 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "facebookStatus": "verified_official_page_candidate",
       "identitySource": "official Facebook page candidate + official website + Google background query",
       "channelPriority": 2,
-      "discoveredAt": "2026-07-16T05:03:53.170Z"
+      "discoveredAt": "2026-07-16T05:03:53.170Z",
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-05T05:07:41.568Z",
+        "evidenceUrl": "https://www.altitude-sports.com/",
+        "httpStatus": 200,
+        "signals": [
+          "form_control"
+        ],
+        "error": ""
+      }
     },
     {
       "id": "google-customer-the-last-hunt-facebook",
@@ -17310,9 +17820,9 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
-      "officialSocialProfileVerified": false,
-      "socialProfileEvidenceUrl": "",
-      "socialProfileVerifiedAt": "",
+      "officialSocialProfileVerified": true,
+      "socialProfileEvidenceUrl": "https://www.thelasthunt.com/",
+      "socialProfileVerifiedAt": "2026-08-05T05:07:41.698Z",
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -17322,7 +17832,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -17340,7 +17850,17 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "facebookStatus": "verified_official_page_candidate",
       "identitySource": "official Facebook page candidate + official website + Google background query",
       "channelPriority": 2,
-      "discoveredAt": "2026-07-16T05:03:53.170Z"
+      "discoveredAt": "2026-07-16T05:03:53.170Z",
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-05T05:07:41.698Z",
+        "evidenceUrl": "https://www.thelasthunt.com/",
+        "httpStatus": 200,
+        "signals": [
+          "form_control"
+        ],
+        "error": ""
+      }
     },
     {
       "id": "google-customer-marmot-basin-retail-facebook",
@@ -17396,7 +17916,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -17414,7 +17934,15 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "facebookStatus": "verified_official_page_candidate",
       "identitySource": "official Facebook page candidate + official website + Google background query",
       "channelPriority": 2,
-      "discoveredAt": "2026-07-16T05:03:53.170Z"
+      "discoveredAt": "2026-07-16T05:03:53.170Z",
+      "firstPartyChannelVerification": {
+        "status": "unreachable",
+        "verifiedAt": "2026-08-05T05:07:41.234Z",
+        "evidenceUrl": "https://www.marmotbasin.com/",
+        "httpStatus": 0,
+        "signals": [],
+        "error": "fetch failed"
+      }
     },
     {
       "id": "google-customer-wild-earth-facebook",
@@ -17460,7 +17988,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "identityStatus": "verified",
       "officialSocialProfileVerified": true,
       "socialProfileEvidenceUrl": "https://www.wildearth.com.au/",
-      "socialProfileVerifiedAt": "2026-08-04T07:00:00.000Z",
+      "socialProfileVerifiedAt": "2026-08-05T05:07:41.313Z",
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -17470,7 +17998,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -17488,7 +18016,15 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "facebookStatus": "verified_official_page_candidate",
       "identitySource": "official Facebook page candidate + official website + Google background query",
       "channelPriority": 2,
-      "discoveredAt": "2026-07-16T05:03:53.170Z"
+      "discoveredAt": "2026-07-16T05:03:53.170Z",
+      "firstPartyChannelVerification": {
+        "status": "unreachable",
+        "verifiedAt": "2026-08-05T05:07:41.313Z",
+        "evidenceUrl": "https://www.wildearth.com.au/",
+        "httpStatus": 403,
+        "signals": [],
+        "error": ""
+      }
     },
     {
       "id": "google-customer-tentworld-australia-facebook",
@@ -17544,7 +18080,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -17562,7 +18098,15 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "facebookStatus": "verified_official_page_candidate",
       "identitySource": "official Facebook page candidate + official website + Google background query",
       "channelPriority": 2,
-      "discoveredAt": "2026-07-16T05:03:53.170Z"
+      "discoveredAt": "2026-07-16T05:03:53.170Z",
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-05T05:07:42.483Z",
+        "evidenceUrl": "https://www.tentworld.com.au/",
+        "httpStatus": 200,
+        "signals": [],
+        "error": ""
+      }
     },
     {
       "id": "google-customer-paddy-pallin-facebook",
@@ -17599,16 +18143,16 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "website": "https://www.paddypallin.com.au/",
       "evidenceUrl": "https://www.google.com/search?q=%22Paddy%20Pallin%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22Australia%22%20buyer%20OR%20wholesale%20OR%20contact",
       "sourceEvidenceUrl": "verified outdoor retailer official website and public social profile refill",
-      "externalVerificationStatus": "",
+      "externalVerificationStatus": "official_contact_form_verified",
       "query": "https://www.google.com/search?q=%22Paddy%20Pallin%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22Australia%22%20buyer%20OR%20wholesale%20OR%20contact",
       "source": "google_customer_discovery",
       "sourceType": "google",
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
-      "officialSocialProfileVerified": false,
-      "socialProfileEvidenceUrl": "",
-      "socialProfileVerifiedAt": "",
+      "officialSocialProfileVerified": true,
+      "socialProfileEvidenceUrl": "https://www.paddypallin.com.au/",
+      "socialProfileVerifiedAt": "2026-08-05T05:07:42.172Z",
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -17618,7 +18162,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -17636,7 +18180,19 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "facebookStatus": "verified_official_page_candidate",
       "identitySource": "official Facebook page candidate + official website + Google background query",
       "channelPriority": 2,
-      "discoveredAt": "2026-07-16T05:03:53.170Z"
+      "discoveredAt": "2026-07-16T05:03:53.170Z",
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-05T05:07:42.172Z",
+        "evidenceUrl": "https://www.paddypallin.com.au/",
+        "httpStatus": 200,
+        "signals": [
+          "form_control",
+          "contact_invitation"
+        ],
+        "error": ""
+      },
+      "contactCapabilityVerified": true
     },
     {
       "id": "google-customer-macpac-facebook",
@@ -17673,16 +18229,16 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "website": "https://www.macpac.com.au/",
       "evidenceUrl": "https://www.google.com/search?q=%22Macpac%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22Australia%22%20buyer%20OR%20wholesale%20OR%20contact",
       "sourceEvidenceUrl": "verified outdoor retailer official website and public social profile refill",
-      "externalVerificationStatus": "",
+      "externalVerificationStatus": "official_contact_form_verified",
       "query": "https://www.google.com/search?q=%22Macpac%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22Australia%22%20buyer%20OR%20wholesale%20OR%20contact",
       "source": "google_customer_discovery",
       "sourceType": "google",
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
-      "officialSocialProfileVerified": false,
-      "socialProfileEvidenceUrl": "",
-      "socialProfileVerifiedAt": "",
+      "officialSocialProfileVerified": true,
+      "socialProfileEvidenceUrl": "https://www.macpac.com.au/",
+      "socialProfileVerifiedAt": "2026-08-05T05:07:42.422Z",
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -17692,7 +18248,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -17710,7 +18266,19 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "facebookStatus": "verified_official_page_candidate",
       "identitySource": "official Facebook page candidate + official website + Google background query",
       "channelPriority": 2,
-      "discoveredAt": "2026-07-16T05:03:53.170Z"
+      "discoveredAt": "2026-07-16T05:03:53.170Z",
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-05T05:07:42.422Z",
+        "evidenceUrl": "https://www.macpac.com.au/",
+        "httpStatus": 200,
+        "signals": [
+          "form_control",
+          "contact_invitation"
+        ],
+        "error": ""
+      },
+      "contactCapabilityVerified": true
     },
     {
       "id": "google-customer-tentworld-nz-facebook",
@@ -17766,7 +18334,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -17784,7 +18352,15 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "facebookStatus": "verified_official_page_candidate",
       "identitySource": "official Facebook page candidate + official website + Google background query",
       "channelPriority": 2,
-      "discoveredAt": "2026-07-16T05:03:53.170Z"
+      "discoveredAt": "2026-07-16T05:03:53.170Z",
+      "firstPartyChannelVerification": {
+        "status": "unreachable",
+        "verifiedAt": "2026-08-05T05:07:47.567Z",
+        "evidenceUrl": "https://www.tentworld.co.nz/",
+        "httpStatus": 0,
+        "signals": [],
+        "error": "fetch failed"
+      }
     },
     {
       "id": "google-customer-torpedo7-facebook",
@@ -17828,9 +18404,9 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
-      "officialSocialProfileVerified": false,
-      "socialProfileEvidenceUrl": "",
-      "socialProfileVerifiedAt": "",
+      "officialSocialProfileVerified": true,
+      "socialProfileEvidenceUrl": "https://www.torpedo7.co.nz/",
+      "socialProfileVerifiedAt": "2026-08-05T05:07:48.708Z",
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -17840,7 +18416,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -17858,7 +18434,17 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "facebookStatus": "verified_official_page_candidate",
       "identitySource": "official Facebook page candidate + official website + Google background query",
       "channelPriority": 2,
-      "discoveredAt": "2026-07-16T05:03:53.170Z"
+      "discoveredAt": "2026-07-16T05:03:53.170Z",
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-05T05:07:48.708Z",
+        "evidenceUrl": "https://www.torpedo7.co.nz/",
+        "httpStatus": 200,
+        "signals": [
+          "form_control"
+        ],
+        "error": ""
+      }
     },
     {
       "id": "google-customer-outdoor-action-facebook",
@@ -17895,7 +18481,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "website": "https://www.outdooraction.co.nz/",
       "evidenceUrl": "https://www.google.com/search?q=%22Outdoor%20Action%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22New%20Zealand%22%20buyer%20OR%20wholesale%20OR%20contact",
       "sourceEvidenceUrl": "verified outdoor retailer official website and public social profile refill",
-      "externalVerificationStatus": "",
+      "externalVerificationStatus": "official_contact_form_verified",
       "query": "https://www.google.com/search?q=%22Outdoor%20Action%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22New%20Zealand%22%20buyer%20OR%20wholesale%20OR%20contact",
       "source": "google_customer_discovery",
       "sourceType": "google",
@@ -17914,7 +18500,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -17932,7 +18518,19 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "facebookStatus": "verified_official_page_candidate",
       "identitySource": "official Facebook page candidate + official website + Google background query",
       "channelPriority": 2,
-      "discoveredAt": "2026-07-16T05:03:53.170Z"
+      "discoveredAt": "2026-07-16T05:03:53.170Z",
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-05T05:07:48.512Z",
+        "evidenceUrl": "https://www.outdooraction.co.nz/",
+        "httpStatus": 200,
+        "signals": [
+          "form_control",
+          "contact_invitation"
+        ],
+        "error": ""
+      },
+      "contactCapabilityVerified": true
     },
     {
       "id": "google-customer-campz-facebook",
@@ -17988,7 +18586,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -18006,7 +18604,15 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "facebookStatus": "verified_official_page_candidate",
       "identitySource": "official Facebook page candidate + official website + Google background query",
       "channelPriority": 2,
-      "discoveredAt": "2026-07-16T05:03:53.170Z"
+      "discoveredAt": "2026-07-16T05:03:53.170Z",
+      "firstPartyChannelVerification": {
+        "status": "unreachable",
+        "verifiedAt": "2026-08-05T05:07:49.090Z",
+        "evidenceUrl": "https://www.bergfreunde.de/?campz=1",
+        "httpStatus": 403,
+        "signals": [],
+        "error": ""
+      }
     },
     {
       "id": "google-customer-sport-conrad-facebook",
@@ -18050,9 +18656,9 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
-      "officialSocialProfileVerified": false,
-      "socialProfileEvidenceUrl": "",
-      "socialProfileVerifiedAt": "",
+      "officialSocialProfileVerified": true,
+      "socialProfileEvidenceUrl": "https://www.sport-conrad.com/",
+      "socialProfileVerifiedAt": "2026-08-05T05:07:51.492Z",
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -18062,7 +18668,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -18080,7 +18686,19 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "facebookStatus": "verified_official_page_candidate",
       "identitySource": "official Facebook page candidate + official website + Google background query",
       "channelPriority": 2,
-      "discoveredAt": "2026-07-16T05:03:53.170Z"
+      "discoveredAt": "2026-07-16T05:03:53.170Z",
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-05T05:07:51.492Z",
+        "evidenceUrl": "https://www.sport-conrad.com/",
+        "httpStatus": 200,
+        "signals": [
+          "form_control"
+        ],
+        "error": ""
+      },
+      "emailVerificationStatus": "official_public_business_email",
+      "emailEvidence": "first_party_live_page_cache"
     },
     {
       "id": "google-customer-doorout-facebook",
@@ -18126,7 +18744,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "identityStatus": "verified",
       "officialSocialProfileVerified": true,
       "socialProfileEvidenceUrl": "https://www.doorout.com/",
-      "socialProfileVerifiedAt": "",
+      "socialProfileVerifiedAt": "2026-08-05T05:08:01.499Z",
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -18136,7 +18754,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -18154,7 +18772,15 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "facebookStatus": "verified_official_page_candidate",
       "identitySource": "official Facebook page candidate + official website + Google background query",
       "channelPriority": 2,
-      "discoveredAt": "2026-07-16T05:03:53.170Z"
+      "discoveredAt": "2026-07-16T05:03:53.170Z",
+      "firstPartyChannelVerification": {
+        "status": "unreachable",
+        "verifiedAt": "2026-08-05T05:08:01.499Z",
+        "evidenceUrl": "https://www.doorout.com/",
+        "httpStatus": 0,
+        "signals": [],
+        "error": "timeout"
+      }
     },
     {
       "id": "google-customer-addnature-facebook",
@@ -18210,7 +18836,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -18228,7 +18854,15 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "facebookStatus": "verified_official_page_candidate",
       "identitySource": "official Facebook page candidate + official website + Google background query",
       "channelPriority": 2,
-      "discoveredAt": "2026-07-16T05:03:53.170Z"
+      "discoveredAt": "2026-07-16T05:03:53.170Z",
+      "firstPartyChannelVerification": {
+        "status": "unreachable",
+        "verifiedAt": "2026-08-05T05:07:54.602Z",
+        "evidenceUrl": "https://www.addnature.com/",
+        "httpStatus": 0,
+        "signals": [],
+        "error": "fetch failed"
+      }
     },
     {
       "id": "google-customer-xxl-sport-facebook",
@@ -18284,7 +18918,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -18302,7 +18936,17 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "facebookStatus": "verified_official_page_candidate",
       "identitySource": "official Facebook page candidate + official website + Google background query",
       "channelPriority": 2,
-      "discoveredAt": "2026-07-16T05:03:53.170Z"
+      "discoveredAt": "2026-07-16T05:03:53.170Z",
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-05T05:07:53.580Z",
+        "evidenceUrl": "https://www.xxl.no/",
+        "httpStatus": 200,
+        "signals": [
+          "form_control"
+        ],
+        "error": ""
+      }
     },
     {
       "id": "google-customer-intersport-norway-facebook",
@@ -18346,9 +18990,9 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
-      "officialSocialProfileVerified": false,
-      "socialProfileEvidenceUrl": "",
-      "socialProfileVerifiedAt": "",
+      "officialSocialProfileVerified": true,
+      "socialProfileEvidenceUrl": "https://www.intersport.no/",
+      "socialProfileVerifiedAt": "2026-08-05T05:09:24.342Z",
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -18358,7 +19002,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -18382,7 +19026,15 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "facebookStatus": "verified_official_page_candidate",
       "identitySource": "official Facebook page candidate + official website + Google background query",
       "channelPriority": 2,
-      "discoveredAt": "2026-07-29T09:22:31.075Z"
+      "discoveredAt": "2026-07-29T09:22:31.075Z",
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-05T05:09:24.342Z",
+        "evidenceUrl": "https://www.intersport.no/",
+        "httpStatus": 200,
+        "signals": [],
+        "error": ""
+      }
     },
     {
       "id": "google-customer-blue-tomato-facebook",
@@ -18426,9 +19078,9 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
-      "officialSocialProfileVerified": false,
-      "socialProfileEvidenceUrl": "",
-      "socialProfileVerifiedAt": "",
+      "officialSocialProfileVerified": true,
+      "socialProfileEvidenceUrl": "https://www.blue-tomato.com/de-DE/",
+      "socialProfileVerifiedAt": "2026-08-05T05:07:53.197Z",
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -18438,7 +19090,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -18456,7 +19108,17 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "facebookStatus": "verified_official_page_candidate",
       "identitySource": "official Facebook page candidate + official website + Google background query",
       "channelPriority": 2,
-      "discoveredAt": "2026-07-16T05:03:53.170Z"
+      "discoveredAt": "2026-07-16T05:03:53.170Z",
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-05T05:07:53.197Z",
+        "evidenceUrl": "https://www.blue-tomato.com/de-DE/",
+        "httpStatus": 200,
+        "signals": [
+          "form_control"
+        ],
+        "error": ""
+      }
     },
     {
       "id": "google-customer-sportler-facebook",
@@ -18512,7 +19174,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -18530,7 +19192,15 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "facebookStatus": "verified_official_page_candidate",
       "identitySource": "official Facebook page candidate + official website + Google background query",
       "channelPriority": 2,
-      "discoveredAt": "2026-07-16T05:03:53.170Z"
+      "discoveredAt": "2026-07-16T05:03:53.170Z",
+      "firstPartyChannelVerification": {
+        "status": "unreachable",
+        "verifiedAt": "2026-08-05T05:08:02.631Z",
+        "evidenceUrl": "https://www.sportler.com/",
+        "httpStatus": 403,
+        "signals": [],
+        "error": ""
+      }
     },
     {
       "id": "google-customer-trekkinn-facebook",
@@ -18567,16 +19237,16 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "website": "https://www.tradeinn.com/trekkinn/",
       "evidenceUrl": "https://www.google.com/search?q=%22Trekkinn%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22Spain%22%20buyer%20OR%20wholesale%20OR%20contact",
       "sourceEvidenceUrl": "verified outdoor retailer official website and public social profile refill",
-      "externalVerificationStatus": "",
+      "externalVerificationStatus": "official_contact_form_verified",
       "query": "https://www.google.com/search?q=%22Trekkinn%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22Spain%22%20buyer%20OR%20wholesale%20OR%20contact",
       "source": "google_customer_discovery",
       "sourceType": "google",
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
-      "officialSocialProfileVerified": false,
-      "socialProfileEvidenceUrl": "",
-      "socialProfileVerifiedAt": "",
+      "officialSocialProfileVerified": true,
+      "socialProfileEvidenceUrl": "https://www.tradeinn.com/trekkinn/en",
+      "socialProfileVerifiedAt": "2026-08-05T05:08:02.572Z",
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -18586,7 +19256,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -18604,7 +19274,19 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "facebookStatus": "verified_official_page_candidate",
       "identitySource": "official Facebook page candidate + official website + Google background query",
       "channelPriority": 2,
-      "discoveredAt": "2026-07-16T05:03:53.170Z"
+      "discoveredAt": "2026-07-16T05:03:53.170Z",
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-05T05:08:02.572Z",
+        "evidenceUrl": "https://www.tradeinn.com/trekkinn/en",
+        "httpStatus": 200,
+        "signals": [
+          "form_control",
+          "contact_invitation"
+        ],
+        "error": ""
+      },
+      "contactCapabilityVerified": true
     },
     {
       "id": "google-customer-mammut-store-facebook",
@@ -18660,7 +19342,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -18684,7 +19366,15 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "facebookStatus": "verified_official_page_candidate",
       "identitySource": "official Facebook page candidate + official website + Google background query",
       "channelPriority": 2,
-      "discoveredAt": "2026-07-29T09:22:31.075Z"
+      "discoveredAt": "2026-07-29T09:22:31.075Z",
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-05T05:09:23.913Z",
+        "evidenceUrl": "https://www.mammut.com/int/en",
+        "httpStatus": 200,
+        "signals": [],
+        "error": ""
+      }
     },
     {
       "id": "google-customer-4camping-facebook",
@@ -18712,8 +19402,8 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "opportunity": "4Camping is a qualified outdoor, camping, travel or sport retail prospect with category fit for FLEXTAIL portable outdoor electrics and Vollyc practical 3C products.",
       "linkedin_url": "",
       "linkedin": "",
-      "publicEmail": "",
-      "contactEmail": "",
+      "publicEmail": "objednavky@4camping.cz",
+      "contactEmail": "objednavky@4camping.cz",
       "vendorPortal": "https://www.4camping.cz/",
       "contactPhone": "",
       "contactNote": "",
@@ -18740,7 +19430,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -18758,7 +19448,20 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "facebookStatus": "verified_official_page_candidate",
       "identitySource": "official Facebook page candidate + official website + Google background query",
       "channelPriority": 2,
-      "discoveredAt": "2026-07-16T05:03:53.170Z"
+      "discoveredAt": "2026-07-16T05:03:53.170Z",
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-05T05:08:03.911Z",
+        "evidenceUrl": "https://www.4camping.cz/",
+        "httpStatus": 200,
+        "signals": [
+          "form_control",
+          "public_business_email"
+        ],
+        "error": ""
+      },
+      "emailVerificationStatus": "official_public_business_email",
+      "emailEvidence": "first_party_live_page_cache"
     },
     {
       "id": "google-customer-8a-pl-facebook",
@@ -18803,8 +19506,8 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "channel": "",
       "identityStatus": "verified",
       "officialSocialProfileVerified": true,
-      "socialProfileEvidenceUrl": "https://8a.pl/media/pliki/polityka_prywatno%C5%9Bci_FB_8a.pdf",
-      "socialProfileVerifiedAt": "",
+      "socialProfileEvidenceUrl": "https://8a.pl/",
+      "socialProfileVerifiedAt": "2026-08-05T05:08:01.691Z",
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -18814,7 +19517,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -18832,7 +19535,15 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "facebookStatus": "verified_official_page_candidate",
       "identitySource": "official Facebook page candidate + official website + Google background query",
       "channelPriority": 2,
-      "discoveredAt": "2026-07-16T05:03:53.170Z"
+      "discoveredAt": "2026-07-16T05:03:53.170Z",
+      "firstPartyChannelVerification": {
+        "status": "unreachable",
+        "verifiedAt": "2026-08-05T05:08:01.691Z",
+        "evidenceUrl": "https://8a.pl/",
+        "httpStatus": 403,
+        "signals": [],
+        "error": ""
+      }
     },
     {
       "id": "google-customer-sklep-podroznika-facebook",
@@ -18888,7 +19599,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -18906,7 +19617,15 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "facebookStatus": "verified_official_page_candidate",
       "identitySource": "official Facebook page candidate + official website + Google background query",
       "channelPriority": 2,
-      "discoveredAt": "2026-07-16T05:03:53.170Z"
+      "discoveredAt": "2026-07-16T05:03:53.170Z",
+      "firstPartyChannelVerification": {
+        "status": "unreachable",
+        "verifiedAt": "2026-08-05T05:08:04.825Z",
+        "evidenceUrl": "https://www.sklep-podroznika.pl/",
+        "httpStatus": 0,
+        "signals": [],
+        "error": "fetch failed"
+      }
     },
     {
       "id": "google-customer-bever-zwerfsport-facebook",
@@ -18950,9 +19669,9 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "discoveryProvider": "google",
       "channel": "",
       "identityStatus": "verified",
-      "officialSocialProfileVerified": false,
-      "socialProfileEvidenceUrl": "",
-      "socialProfileVerifiedAt": "",
+      "officialSocialProfileVerified": true,
+      "socialProfileEvidenceUrl": "https://www.bever.nl/",
+      "socialProfileVerifiedAt": "2026-08-05T05:09:23.078Z",
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -18962,7 +19681,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -18986,7 +19705,17 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "facebookStatus": "verified_official_page_candidate",
       "identitySource": "official Facebook page candidate + official website + Google background query",
       "channelPriority": 2,
-      "discoveredAt": "2026-07-29T09:22:31.075Z"
+      "discoveredAt": "2026-07-29T09:22:31.075Z",
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-05T05:09:23.078Z",
+        "evidenceUrl": "https://www.bever.nl/",
+        "httpStatus": 200,
+        "signals": [
+          "form_control"
+        ],
+        "error": ""
+      }
     },
     {
       "id": "google-customer-durango-outdoor-exchange-website-contact",
@@ -19014,8 +19743,8 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "opportunity": "Durango Outdoor Exchange is listed or qualified as an outdoor/camping specialty retail prospect with assortment fit for lightweight outdoor electrics and practical high-rotation 3C products.",
       "linkedin_url": "",
       "linkedin": "",
-      "publicEmail": "",
-      "contactEmail": "",
+      "publicEmail": "info@durangooutdoorexchange.com",
+      "contactEmail": "info@durangooutdoorexchange.com",
       "vendorPortal": "https://durangooutdoorexchange.com/",
       "contactPhone": "",
       "contactNote": "",
@@ -19023,7 +19752,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "website": "https://durangooutdoorexchange.com/",
       "evidenceUrl": "https://www.google.com/search?q=%22Durango%20Outdoor%20Exchange%22%20%22verified%20outdoor%2C%20camping%2C%20travel%20and%20consumer%20electronics%20retail%20channel%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
       "sourceEvidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
-      "externalVerificationStatus": "",
+      "externalVerificationStatus": "official_contact_form_verified",
       "query": "https://www.google.com/search?q=%22Durango%20Outdoor%20Exchange%22%20%22verified%20outdoor%2C%20camping%2C%20travel%20and%20consumer%20electronics%20retail%20channel%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
       "source": "google_customer_discovery",
       "sourceType": "google",
@@ -19042,7 +19771,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -19066,7 +19795,22 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "invalidChannels": {},
       "identitySource": "official homepage found; exact buyer/contact path still requires verification",
       "channelPriority": 3,
-      "discoveredAt": "2026-07-29T09:22:31.075Z"
+      "discoveredAt": "2026-07-29T09:22:31.075Z",
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-05T05:09:23.464Z",
+        "evidenceUrl": "https://durangooutdoorexchange.com/",
+        "httpStatus": 200,
+        "signals": [
+          "form_control",
+          "public_business_email",
+          "contact_invitation"
+        ],
+        "error": ""
+      },
+      "contactCapabilityVerified": true,
+      "emailVerificationStatus": "official_public_business_email",
+      "emailEvidence": "first_party_live_page_cache"
     },
     {
       "id": "google-customer-brave-hardy-website-contact",
@@ -19103,7 +19847,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "website": "https://www.bravehardy.com/",
       "evidenceUrl": "https://www.google.com/search?q=%22Brave%20Hardy%22%20%22outdoor%20equipment%20retailer%20and%20wholesaler%22%20%22South%20Africa%22%20buyer%20OR%20wholesale%20OR%20contact",
       "sourceEvidenceUrl": "https://www.bravehardy.com/pages/contact",
-      "externalVerificationStatus": "official_supplier_form_verified",
+      "externalVerificationStatus": "official_supplier_email_verified",
       "query": "https://www.google.com/search?q=%22Brave%20Hardy%22%20%22outdoor%20equipment%20retailer%20and%20wholesaler%22%20%22South%20Africa%22%20buyer%20OR%20wholesale%20OR%20contact",
       "source": "google_customer_discovery",
       "sourceType": "google",
@@ -19122,7 +19866,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -19146,21 +19890,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "invalidChannels": {},
       "identitySource": "official website contact path + Google buyer/contact query",
       "channelPriority": 3,
-      "discoveredAt": "2026-08-04T08:45:35.991Z",
-      "firstPartyChannelVerification": {
-        "status": "checked",
-        "verifiedAt": "2026-08-05T04:05:15.855Z",
-        "evidenceUrl": "https://www.bravehardy.com/pages/contact",
-        "httpStatus": 200,
-        "signals": [
-          "form_control",
-          "public_business_email",
-          "supplier_invitation",
-          "contact_invitation"
-        ],
-        "error": ""
-      },
-      "contactCapabilityVerified": true
+      "discoveredAt": "2026-08-04T08:45:35.991Z"
     },
     {
       "id": "google-customer-public-lands-website-contact",
@@ -19216,7 +19946,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -19240,17 +19970,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "invalidChannels": {},
       "identitySource": "official homepage found; exact buyer/contact path still requires verification",
       "channelPriority": 3,
-      "discoveredAt": "2026-07-16T05:03:53.170Z",
-      "firstPartyChannelVerification": {
-        "status": "checked",
-        "verifiedAt": "2026-08-05T04:05:18.598Z",
-        "evidenceUrl": "https://www.publiclands.com/",
-        "httpStatus": 200,
-        "signals": [
-          "form_control"
-        ],
-        "error": ""
-      }
+      "discoveredAt": "2026-07-16T05:03:53.170Z"
     },
     {
       "id": "google-customer-moosejaw-website-contact",
@@ -19306,7 +20026,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -19336,7 +20056,17 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       },
       "identitySource": "official homepage found; exact buyer/contact path still requires verification",
       "channelPriority": 3,
-      "discoveredAt": "2026-07-16T05:03:53.170Z"
+      "discoveredAt": "2026-07-16T05:03:53.170Z",
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-05T05:09:21.924Z",
+        "evidenceUrl": "https://www.publiclands.com/?segment=mjtopl",
+        "httpStatus": 200,
+        "signals": [
+          "form_control"
+        ],
+        "error": ""
+      }
     },
     {
       "id": "google-customer-eastern-mountain-sports-website-contact",
@@ -19392,7 +20122,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -19422,7 +20152,17 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       },
       "identitySource": "official homepage found; exact buyer/contact path still requires verification",
       "channelPriority": 3,
-      "discoveredAt": "2026-07-16T05:03:53.170Z"
+      "discoveredAt": "2026-07-16T05:03:53.170Z",
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-05T05:09:20.656Z",
+        "evidenceUrl": "https://www.ems.com/",
+        "httpStatus": 200,
+        "signals": [
+          "form_control"
+        ],
+        "error": ""
+      }
     },
     {
       "id": "google-customer-campman-website-contact",
@@ -19450,16 +20190,16 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "opportunity": "Campman is a qualified outdoor, camping, travel or sport retail prospect with category fit for FLEXTAIL portable outdoor electrics and Vollyc practical 3C products.",
       "linkedin_url": "",
       "linkedin": "",
-      "publicEmail": "info@campman.com",
-      "contactEmail": "info@campman.com",
+      "publicEmail": "",
+      "contactEmail": "",
       "vendorPortal": "https://www.campman.com/",
       "contactPhone": "",
       "contactNote": "",
       "publicEmailStatus": "",
       "website": "https://www.campman.com/",
       "evidenceUrl": "https://www.google.com/search?q=%22Campman%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "sourceEvidenceUrl": "https://www.campman.com/",
-      "externalVerificationStatus": "official_contact_form_verified",
+      "sourceEvidenceUrl": "verified outdoor retailer official website and public social profile refill",
+      "externalVerificationStatus": "",
       "query": "https://www.google.com/search?q=%22Campman%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
       "source": "google_customer_discovery",
       "sourceType": "google",
@@ -19478,7 +20218,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -19502,22 +20242,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "invalidChannels": {},
       "identitySource": "official homepage found; exact buyer/contact path still requires verification",
       "channelPriority": 3,
-      "discoveredAt": "2026-07-16T05:03:53.170Z",
-      "firstPartyChannelVerification": {
-        "status": "checked",
-        "verifiedAt": "2026-08-05T04:05:19.320Z",
-        "evidenceUrl": "https://www.campman.com/",
-        "httpStatus": 200,
-        "signals": [
-          "form_control",
-          "public_business_email",
-          "contact_invitation"
-        ],
-        "error": ""
-      },
-      "contactCapabilityVerified": true,
-      "emailVerificationStatus": "official_public_business_email",
-      "emailEvidence": "first_party_live_page"
+      "discoveredAt": "2026-07-16T05:03:53.170Z"
     },
     {
       "id": "google-customer-pack-rat-outdoor-center-website-contact",
@@ -19573,7 +20298,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -19603,7 +20328,17 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       },
       "identitySource": "official homepage found; exact buyer/contact path still requires verification",
       "channelPriority": 3,
-      "discoveredAt": "2026-07-16T05:03:53.170Z"
+      "discoveredAt": "2026-07-16T05:03:53.170Z",
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-05T05:09:22.541Z",
+        "evidenceUrl": "https://packratoc.com/",
+        "httpStatus": 200,
+        "signals": [
+          "form_control"
+        ],
+        "error": ""
+      }
     },
     {
       "id": "google-customer-the-mountaineer-website-contact",
@@ -19659,7 +20394,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -19683,17 +20418,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "invalidChannels": {},
       "identitySource": "official homepage found; exact buyer/contact path still requires verification",
       "channelPriority": 3,
-      "discoveredAt": "2026-07-16T05:03:53.170Z",
-      "firstPartyChannelVerification": {
-        "status": "checked",
-        "verifiedAt": "2026-08-05T04:05:18.855Z",
-        "evidenceUrl": "https://mountaineer.com/",
-        "httpStatus": 200,
-        "signals": [
-          "form_control"
-        ],
-        "error": ""
-      }
+      "discoveredAt": "2026-07-16T05:03:53.170Z"
     },
     {
       "id": "google-customer-sierra-website-contact",
@@ -19749,7 +20474,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -19773,15 +20498,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "invalidChannels": {},
       "identitySource": "official homepage found; exact buyer/contact path still requires verification",
       "channelPriority": 3,
-      "discoveredAt": "2026-07-16T05:03:53.170Z",
-      "firstPartyChannelVerification": {
-        "status": "unreachable",
-        "verifiedAt": "2026-08-05T04:05:17.343Z",
-        "evidenceUrl": "https://www.sierra.com/",
-        "httpStatus": 403,
-        "signals": [],
-        "error": ""
-      }
+      "discoveredAt": "2026-07-16T05:03:53.170Z"
     },
     {
       "id": "google-customer-outdoorplay-website-contact",
@@ -19817,8 +20534,8 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "publicEmailStatus": "Official Outdoorplay contact page; route to buyer/vendor team.",
       "website": "https://www.outdoorplay.com/",
       "evidenceUrl": "https://www.google.com/search?q=%22Outdoorplay%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "sourceEvidenceUrl": "https://www.outdoorplay.com/",
-      "externalVerificationStatus": "official_contact_form_verified",
+      "sourceEvidenceUrl": "verified outdoor retailer official website and public social profile refill",
+      "externalVerificationStatus": "",
       "query": "https://www.google.com/search?q=%22Outdoorplay%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
       "source": "google_customer_discovery",
       "sourceType": "google",
@@ -19837,7 +20554,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -19861,20 +20578,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "invalidChannels": {},
       "identitySource": "official homepage found; exact buyer/contact path still requires verification",
       "channelPriority": 3,
-      "discoveredAt": "2026-07-16T05:03:53.170Z",
-      "firstPartyChannelVerification": {
-        "status": "checked",
-        "verifiedAt": "2026-08-05T04:05:20.062Z",
-        "evidenceUrl": "https://www.outdoorplay.com/",
-        "httpStatus": 200,
-        "signals": [
-          "form_control",
-          "public_business_email",
-          "contact_invitation"
-        ],
-        "error": ""
-      },
-      "contactCapabilityVerified": true
+      "discoveredAt": "2026-07-16T05:03:53.170Z"
     },
     {
       "id": "google-customer-campmor-website-contact",
@@ -19902,16 +20606,16 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "opportunity": "Campmor is a qualified outdoor, camping, travel or sport retail prospect with category fit for FLEXTAIL portable outdoor electrics and Vollyc practical 3C products.",
       "linkedin_url": "",
       "linkedin": "",
-      "publicEmail": "customerservice@campmor.com",
-      "contactEmail": "customerservice@campmor.com",
+      "publicEmail": "",
+      "contactEmail": "",
       "vendorPortal": "https://www.campmor.com/",
       "contactPhone": "",
       "contactNote": "",
       "publicEmailStatus": "",
       "website": "https://www.campmor.com/",
       "evidenceUrl": "https://www.google.com/search?q=%22Campmor%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "sourceEvidenceUrl": "https://www.campmor.com/",
-      "externalVerificationStatus": "official_contact_form_verified",
+      "sourceEvidenceUrl": "verified outdoor retailer official website and public social profile refill",
+      "externalVerificationStatus": "",
       "query": "https://www.google.com/search?q=%22Campmor%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
       "source": "google_customer_discovery",
       "sourceType": "google",
@@ -19930,7 +20634,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -19954,22 +20658,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "invalidChannels": {},
       "identitySource": "official homepage found; exact buyer/contact path still requires verification",
       "channelPriority": 3,
-      "discoveredAt": "2026-07-16T05:03:53.170Z",
-      "firstPartyChannelVerification": {
-        "status": "checked",
-        "verifiedAt": "2026-08-05T04:05:20.158Z",
-        "evidenceUrl": "https://www.campmor.com/",
-        "httpStatus": 200,
-        "signals": [
-          "form_control",
-          "public_business_email",
-          "contact_invitation"
-        ],
-        "error": ""
-      },
-      "contactCapabilityVerified": true,
-      "emailVerificationStatus": "official_public_business_email",
-      "emailEvidence": "first_party_live_page"
+      "discoveredAt": "2026-07-16T05:03:53.170Z"
     },
     {
       "id": "google-customer-ramsey-outdoor-website-contact",
@@ -20005,8 +20694,8 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "publicEmailStatus": "",
       "website": "https://www.ramseyoutdoor.com/",
       "evidenceUrl": "https://www.google.com/search?q=%22Ramsey%20Outdoor%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "sourceEvidenceUrl": "https://ramseyoutdoor.com/",
-      "externalVerificationStatus": "official_contact_form_verified",
+      "sourceEvidenceUrl": "verified outdoor retailer official website and public social profile refill",
+      "externalVerificationStatus": "",
       "query": "https://www.google.com/search?q=%22Ramsey%20Outdoor%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
       "source": "google_customer_discovery",
       "sourceType": "google",
@@ -20025,7 +20714,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -20049,19 +20738,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "invalidChannels": {},
       "identitySource": "official homepage found; exact buyer/contact path still requires verification",
       "channelPriority": 3,
-      "discoveredAt": "2026-07-16T05:03:53.170Z",
-      "firstPartyChannelVerification": {
-        "status": "checked",
-        "verifiedAt": "2026-08-05T04:05:23.093Z",
-        "evidenceUrl": "https://ramseyoutdoor.com/",
-        "httpStatus": 200,
-        "signals": [
-          "form_control",
-          "contact_invitation"
-        ],
-        "error": ""
-      },
-      "contactCapabilityVerified": true
+      "discoveredAt": "2026-07-16T05:03:53.170Z"
     },
     {
       "id": "google-customer-massey-outfitters-website-contact",
@@ -20117,7 +20794,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -20147,7 +20824,17 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       },
       "identitySource": "official homepage found; exact buyer/contact path still requires verification",
       "channelPriority": 3,
-      "discoveredAt": "2026-07-16T05:03:53.170Z"
+      "discoveredAt": "2026-07-16T05:03:53.170Z",
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-05T05:09:21.216Z",
+        "evidenceUrl": "https://www.masseysoutfitters.com/",
+        "httpStatus": 200,
+        "signals": [
+          "contact_invitation"
+        ],
+        "error": ""
+      }
     },
     {
       "id": "google-customer-quest-outdoors-website-contact",
@@ -20203,7 +20890,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -20227,15 +20914,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "invalidChannels": {},
       "identitySource": "official homepage found; exact buyer/contact path still requires verification",
       "channelPriority": 3,
-      "discoveredAt": "2026-07-16T05:03:53.170Z",
-      "firstPartyChannelVerification": {
-        "status": "unreachable",
-        "verifiedAt": "2026-08-05T04:05:21.551Z",
-        "evidenceUrl": "https://questoutdoors.com/",
-        "httpStatus": 404,
-        "signals": [],
-        "error": ""
-      }
+      "discoveredAt": "2026-07-16T05:03:53.170Z"
     },
     {
       "id": "google-customer-river-sports-outfitters-website-contact",
@@ -20271,8 +20950,8 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "publicEmailStatus": "",
       "website": "https://www.riversportsoutfitters.com/",
       "evidenceUrl": "https://www.google.com/search?q=%22River%20Sports%20Outfitters%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "sourceEvidenceUrl": "https://www.riversportsoutfitters.com/",
-      "externalVerificationStatus": "official_contact_form_verified",
+      "sourceEvidenceUrl": "verified outdoor retailer official website and public social profile refill",
+      "externalVerificationStatus": "",
       "query": "https://www.google.com/search?q=%22River%20Sports%20Outfitters%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
       "source": "google_customer_discovery",
       "sourceType": "google",
@@ -20291,7 +20970,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -20315,19 +20994,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "invalidChannels": {},
       "identitySource": "official homepage found; exact buyer/contact path still requires verification",
       "channelPriority": 3,
-      "discoveredAt": "2026-07-16T05:03:53.170Z",
-      "firstPartyChannelVerification": {
-        "status": "checked",
-        "verifiedAt": "2026-08-05T04:05:24.170Z",
-        "evidenceUrl": "https://www.riversportsoutfitters.com/",
-        "httpStatus": 200,
-        "signals": [
-          "form_control",
-          "contact_invitation"
-        ],
-        "error": ""
-      },
-      "contactCapabilityVerified": true
+      "discoveredAt": "2026-07-16T05:03:53.170Z"
     },
     {
       "id": "google-customer-rock-creek-website-contact",
@@ -20383,7 +21050,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -20407,15 +21074,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "invalidChannels": {},
       "identitySource": "official homepage found; exact buyer/contact path still requires verification",
       "channelPriority": 3,
-      "discoveredAt": "2026-07-16T05:03:53.170Z",
-      "firstPartyChannelVerification": {
-        "status": "unreachable",
-        "verifiedAt": "2026-08-05T04:05:24.413Z",
-        "evidenceUrl": "https://www.rockcreek.com/",
-        "httpStatus": 0,
-        "signals": [],
-        "error": "fetch failed"
-      }
+      "discoveredAt": "2026-07-16T05:03:53.170Z"
     },
     {
       "id": "google-customer-half-moon-outfitters-website-contact",
@@ -20451,8 +21110,8 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "publicEmailStatus": "",
       "website": "https://www.halfmoonoutfitters.com/",
       "evidenceUrl": "https://www.google.com/search?q=%22Half-Moon%20Outfitters%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "sourceEvidenceUrl": "https://www.halfmoonoutfitters.com/",
-      "externalVerificationStatus": "official_contact_form_verified",
+      "sourceEvidenceUrl": "verified outdoor retailer official website and public social profile refill",
+      "externalVerificationStatus": "",
       "query": "https://www.google.com/search?q=%22Half-Moon%20Outfitters%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
       "source": "google_customer_discovery",
       "sourceType": "google",
@@ -20471,7 +21130,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -20495,19 +21154,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "invalidChannels": {},
       "identitySource": "official homepage found; exact buyer/contact path still requires verification",
       "channelPriority": 3,
-      "discoveredAt": "2026-07-16T05:03:53.170Z",
-      "firstPartyChannelVerification": {
-        "status": "checked",
-        "verifiedAt": "2026-08-05T04:05:23.700Z",
-        "evidenceUrl": "https://www.halfmoonoutfitters.com/",
-        "httpStatus": 200,
-        "signals": [
-          "form_control",
-          "contact_invitation"
-        ],
-        "error": ""
-      },
-      "contactCapabilityVerified": true
+      "discoveredAt": "2026-07-16T05:03:53.170Z"
     },
     {
       "id": "google-customer-sunlight-sports-website-contact",
@@ -20535,8 +21182,8 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "opportunity": "Sunlight Sports is a qualified outdoor, camping, travel or sport retail prospect with category fit for FLEXTAIL portable outdoor electrics and Vollyc practical 3C products.",
       "linkedin_url": "",
       "linkedin": "",
-      "publicEmail": "info@sunlightsports.com",
-      "contactEmail": "info@sunlightsports.com",
+      "publicEmail": "",
+      "contactEmail": "",
       "vendorPortal": "https://sunlightsports.com/",
       "contactPhone": "",
       "contactNote": "",
@@ -20563,7 +21210,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -20587,20 +21234,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "invalidChannels": {},
       "identitySource": "official homepage found; exact buyer/contact path still requires verification",
       "channelPriority": 3,
-      "discoveredAt": "2026-07-16T05:03:53.170Z",
-      "firstPartyChannelVerification": {
-        "status": "checked",
-        "verifiedAt": "2026-08-05T04:05:25.172Z",
-        "evidenceUrl": "https://www.sunlightsports.com/",
-        "httpStatus": 200,
-        "signals": [
-          "form_control",
-          "public_business_email"
-        ],
-        "error": ""
-      },
-      "emailVerificationStatus": "official_public_business_email",
-      "emailEvidence": "first_party_live_page"
+      "discoveredAt": "2026-07-16T05:03:53.170Z"
     },
     {
       "id": "google-customer-jax-outdoor-gear-website-contact",
@@ -20656,7 +21290,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -20680,17 +21314,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "invalidChannels": {},
       "identitySource": "official homepage found; exact buyer/contact path still requires verification",
       "channelPriority": 3,
-      "discoveredAt": "2026-07-16T05:03:53.170Z",
-      "firstPartyChannelVerification": {
-        "status": "checked",
-        "verifiedAt": "2026-08-05T04:05:26.662Z",
-        "evidenceUrl": "https://jaxgoods.com/",
-        "httpStatus": 200,
-        "signals": [
-          "form_control"
-        ],
-        "error": ""
-      }
+      "discoveredAt": "2026-07-16T05:03:53.170Z"
     },
     {
       "id": "google-customer-christy-sports-website-contact",
@@ -20726,8 +21350,8 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "publicEmailStatus": "",
       "website": "https://www.christysports.com/",
       "evidenceUrl": "https://www.google.com/search?q=%22Christy%20Sports%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "sourceEvidenceUrl": "https://www.christysports.com/",
-      "externalVerificationStatus": "official_contact_form_verified",
+      "sourceEvidenceUrl": "verified outdoor retailer official website and public social profile refill",
+      "externalVerificationStatus": "",
       "query": "https://www.google.com/search?q=%22Christy%20Sports%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
       "source": "google_customer_discovery",
       "sourceType": "google",
@@ -20746,7 +21370,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -20770,19 +21394,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "invalidChannels": {},
       "identitySource": "official homepage found; exact buyer/contact path still requires verification",
       "channelPriority": 3,
-      "discoveredAt": "2026-07-16T05:03:53.170Z",
-      "firstPartyChannelVerification": {
-        "status": "checked",
-        "verifiedAt": "2026-08-05T04:05:27.585Z",
-        "evidenceUrl": "https://www.christysports.com/",
-        "httpStatus": 200,
-        "signals": [
-          "form_control",
-          "contact_invitation"
-        ],
-        "error": ""
-      },
-      "contactCapabilityVerified": true
+      "discoveredAt": "2026-07-16T05:03:53.170Z"
     },
     {
       "id": "google-customer-paragon-sports-website-contact",
@@ -20810,16 +21422,16 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "opportunity": "Paragon Sports is a qualified outdoor, camping, travel or sport retail prospect with category fit for FLEXTAIL portable outdoor electrics and Vollyc practical 3C products.",
       "linkedin_url": "",
       "linkedin": "",
-      "publicEmail": "customerservice@paragonsports.com",
-      "contactEmail": "customerservice@paragonsports.com",
+      "publicEmail": "",
+      "contactEmail": "",
       "vendorPortal": "https://www.paragonsports.com/",
       "contactPhone": "",
       "contactNote": "",
       "publicEmailStatus": "",
       "website": "https://www.paragonsports.com/",
       "evidenceUrl": "https://www.google.com/search?q=%22Paragon%20Sports%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "sourceEvidenceUrl": "https://paragonsports.com/",
-      "externalVerificationStatus": "official_contact_form_verified",
+      "sourceEvidenceUrl": "verified outdoor retailer official website and public social profile refill",
+      "externalVerificationStatus": "",
       "query": "https://www.google.com/search?q=%22Paragon%20Sports%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
       "source": "google_customer_discovery",
       "sourceType": "google",
@@ -20838,7 +21450,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -20862,22 +21474,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "invalidChannels": {},
       "identitySource": "official homepage found; exact buyer/contact path still requires verification",
       "channelPriority": 3,
-      "discoveredAt": "2026-07-16T05:03:53.170Z",
-      "firstPartyChannelVerification": {
-        "status": "checked",
-        "verifiedAt": "2026-08-05T04:05:28.181Z",
-        "evidenceUrl": "https://paragonsports.com/",
-        "httpStatus": 200,
-        "signals": [
-          "form_control",
-          "public_business_email",
-          "contact_invitation"
-        ],
-        "error": ""
-      },
-      "contactCapabilityVerified": true,
-      "emailVerificationStatus": "official_public_business_email",
-      "emailEvidence": "first_party_live_page"
+      "discoveredAt": "2026-07-16T05:03:53.170Z"
     },
     {
       "id": "google-customer-mountain-equipment-website-contact",
@@ -20913,8 +21510,8 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "publicEmailStatus": "",
       "website": "https://www.mountain-equipment.co.uk/",
       "evidenceUrl": "https://www.google.com/search?q=%22Mountain%20Equipment%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22United%20Kingdom%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "sourceEvidenceUrl": "https://www.mountain-equipment.com/",
-      "externalVerificationStatus": "official_contact_form_verified",
+      "sourceEvidenceUrl": "verified outdoor retailer official website and public social profile refill",
+      "externalVerificationStatus": "",
       "query": "https://www.google.com/search?q=%22Mountain%20Equipment%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22United%20Kingdom%22%20buyer%20OR%20wholesale%20OR%20contact",
       "source": "google_customer_discovery",
       "sourceType": "google",
@@ -20933,7 +21530,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -20957,19 +21554,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "invalidChannels": {},
       "identitySource": "official homepage found; exact buyer/contact path still requires verification",
       "channelPriority": 3,
-      "discoveredAt": "2026-07-16T05:03:53.170Z",
-      "firstPartyChannelVerification": {
-        "status": "checked",
-        "verifiedAt": "2026-08-05T04:05:27.340Z",
-        "evidenceUrl": "https://www.mountain-equipment.com/",
-        "httpStatus": 200,
-        "signals": [
-          "form_control",
-          "contact_invitation"
-        ],
-        "error": ""
-      },
-      "contactCapabilityVerified": true
+      "discoveredAt": "2026-07-16T05:03:53.170Z"
     },
     {
       "id": "google-customer-tiso-website-contact",
@@ -21005,8 +21590,8 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "publicEmailStatus": "",
       "website": "https://www.tiso.com/",
       "evidenceUrl": "https://www.google.com/search?q=%22Tiso%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22United%20Kingdom%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "sourceEvidenceUrl": "https://www.tiso.com/",
-      "externalVerificationStatus": "official_contact_form_verified",
+      "sourceEvidenceUrl": "verified outdoor retailer official website and public social profile refill",
+      "externalVerificationStatus": "",
       "query": "https://www.google.com/search?q=%22Tiso%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22United%20Kingdom%22%20buyer%20OR%20wholesale%20OR%20contact",
       "source": "google_customer_discovery",
       "sourceType": "google",
@@ -21025,7 +21610,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -21049,19 +21634,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "invalidChannels": {},
       "identitySource": "official homepage found; exact buyer/contact path still requires verification",
       "channelPriority": 3,
-      "discoveredAt": "2026-07-16T05:03:53.170Z",
-      "firstPartyChannelVerification": {
-        "status": "checked",
-        "verifiedAt": "2026-08-05T04:05:29.704Z",
-        "evidenceUrl": "https://www.tiso.com/",
-        "httpStatus": 200,
-        "signals": [
-          "form_control",
-          "contact_invitation"
-        ],
-        "error": ""
-      },
-      "contactCapabilityVerified": true
+      "discoveredAt": "2026-07-16T05:03:53.170Z"
     },
     {
       "id": "google-customer-george-fisher-website-contact",
@@ -21097,8 +21670,8 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "publicEmailStatus": "",
       "website": "https://www.georgefisher.co.uk/",
       "evidenceUrl": "https://www.google.com/search?q=%22George%20Fisher%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22United%20Kingdom%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "sourceEvidenceUrl": "https://www.tiso.com/pages/george-fisher-landing?utm_source=georgefisher",
-      "externalVerificationStatus": "official_contact_form_verified",
+      "sourceEvidenceUrl": "verified outdoor retailer official website and public social profile refill",
+      "externalVerificationStatus": "",
       "query": "https://www.google.com/search?q=%22George%20Fisher%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22United%20Kingdom%22%20buyer%20OR%20wholesale%20OR%20contact",
       "source": "google_customer_discovery",
       "sourceType": "google",
@@ -21117,7 +21690,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -21141,19 +21714,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "invalidChannels": {},
       "identitySource": "official homepage found; exact buyer/contact path still requires verification",
       "channelPriority": 3,
-      "discoveredAt": "2026-07-16T05:03:53.170Z",
-      "firstPartyChannelVerification": {
-        "status": "checked",
-        "verifiedAt": "2026-08-05T04:05:30.805Z",
-        "evidenceUrl": "https://www.tiso.com/pages/george-fisher-landing?utm_source=georgefisher",
-        "httpStatus": 200,
-        "signals": [
-          "form_control",
-          "contact_invitation"
-        ],
-        "error": ""
-      },
-      "contactCapabilityVerified": true
+      "discoveredAt": "2026-07-16T05:03:53.170Z"
     },
     {
       "id": "google-customer-ld-mountain-centre-website-contact",
@@ -21209,7 +21770,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -21233,15 +21794,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "invalidChannels": {},
       "identitySource": "official homepage found; exact buyer/contact path still requires verification",
       "channelPriority": 3,
-      "discoveredAt": "2026-07-16T05:03:53.170Z",
-      "firstPartyChannelVerification": {
-        "status": "checked",
-        "verifiedAt": "2026-08-05T04:05:31.378Z",
-        "evidenceUrl": "https://www.ldmountaincentre.com/",
-        "httpStatus": 200,
-        "signals": [],
-        "error": ""
-      }
+      "discoveredAt": "2026-07-16T05:03:53.170Z"
     },
     {
       "id": "google-customer-absolute-snow-website-contact",
@@ -21297,7 +21850,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -21321,15 +21874,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "invalidChannels": {},
       "identitySource": "official homepage found; exact buyer/contact path still requires verification",
       "channelPriority": 3,
-      "discoveredAt": "2026-07-16T05:03:53.170Z",
-      "firstPartyChannelVerification": {
-        "status": "unreachable",
-        "verifiedAt": "2026-08-05T04:05:28.745Z",
-        "evidenceUrl": "https://www.absolute-snow.co.uk/",
-        "httpStatus": 403,
-        "signals": [],
-        "error": ""
-      }
+      "discoveredAt": "2026-07-16T05:03:53.170Z"
     },
     {
       "id": "google-customer-ellis-brigham-website-contact",
@@ -21385,7 +21930,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -21409,15 +21954,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "invalidChannels": {},
       "identitySource": "official homepage found; exact buyer/contact path still requires verification",
       "channelPriority": 3,
-      "discoveredAt": "2026-07-16T05:03:53.170Z",
-      "firstPartyChannelVerification": {
-        "status": "checked",
-        "verifiedAt": "2026-08-05T04:05:31.892Z",
-        "evidenceUrl": "https://www.ellis-brigham.com/",
-        "httpStatus": 200,
-        "signals": [],
-        "error": ""
-      }
+      "discoveredAt": "2026-07-16T05:03:53.170Z"
     },
     {
       "id": "google-customer-facewest-website-contact",
@@ -21454,7 +21991,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "website": "https://www.facewest.co.uk/",
       "evidenceUrl": "https://www.google.com/search?q=%22Facewest%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22United%20Kingdom%22%20buyer%20OR%20wholesale%20OR%20contact",
       "sourceEvidenceUrl": "verified outdoor retailer official website and public social profile refill",
-      "externalVerificationStatus": "",
+      "externalVerificationStatus": "official_contact_form_verified",
       "query": "https://www.google.com/search?q=%22Facewest%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22United%20Kingdom%22%20buyer%20OR%20wholesale%20OR%20contact",
       "source": "google_customer_discovery",
       "sourceType": "google",
@@ -21473,7 +22010,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -21497,7 +22034,19 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "invalidChannels": {},
       "identitySource": "official homepage found; exact buyer/contact path still requires verification",
       "channelPriority": 3,
-      "discoveredAt": "2026-07-16T05:03:53.170Z"
+      "discoveredAt": "2026-07-16T05:03:53.170Z",
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-05T05:07:38.402Z",
+        "evidenceUrl": "https://www.facewest.co.uk/",
+        "httpStatus": 200,
+        "signals": [
+          "form_control",
+          "contact_invitation"
+        ],
+        "error": ""
+      },
+      "contactCapabilityVerified": true
     },
     {
       "id": "google-customer-above-and-beyond-website-contact",
@@ -21553,7 +22102,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -21577,7 +22126,15 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "invalidChannels": {},
       "identitySource": "official homepage found; exact buyer/contact path still requires verification",
       "channelPriority": 3,
-      "discoveredAt": "2026-07-16T05:03:53.170Z"
+      "discoveredAt": "2026-07-16T05:03:53.170Z",
+      "firstPartyChannelVerification": {
+        "status": "unreachable",
+        "verifiedAt": "2026-08-05T05:07:37.367Z",
+        "evidenceUrl": "https://www.aboveandbeyond.ie/",
+        "httpStatus": 0,
+        "signals": [],
+        "error": "fetch failed"
+      }
     },
     {
       "id": "google-customer-72hours-website-contact",
@@ -21605,8 +22162,8 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "opportunity": "72hours is a qualified outdoor, camping, travel or sport retail prospect with category fit for FLEXTAIL portable outdoor electrics and Vollyc practical 3C products.",
       "linkedin_url": "",
       "linkedin": "",
-      "publicEmail": "",
-      "contactEmail": "",
+      "publicEmail": "orders@72hours.ca",
+      "contactEmail": "orders@72hours.ca",
       "vendorPortal": "https://72hours.ca/",
       "contactPhone": "",
       "contactNote": "",
@@ -21614,7 +22171,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "website": "https://72hours.ca/",
       "evidenceUrl": "https://www.google.com/search?q=%2272hours%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22Canada%22%20buyer%20OR%20wholesale%20OR%20contact",
       "sourceEvidenceUrl": "verified outdoor retailer official website and public social profile refill",
-      "externalVerificationStatus": "",
+      "externalVerificationStatus": "official_contact_form_verified",
       "query": "https://www.google.com/search?q=%2272hours%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22Canada%22%20buyer%20OR%20wholesale%20OR%20contact",
       "source": "google_customer_discovery",
       "sourceType": "google",
@@ -21633,7 +22190,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -21657,7 +22214,22 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "invalidChannels": {},
       "identitySource": "official homepage found; exact buyer/contact path still requires verification",
       "channelPriority": 3,
-      "discoveredAt": "2026-07-16T05:03:53.170Z"
+      "discoveredAt": "2026-07-16T05:03:53.170Z",
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-05T05:07:37.802Z",
+        "evidenceUrl": "https://72hours.ca/",
+        "httpStatus": 200,
+        "signals": [
+          "form_control",
+          "public_business_email",
+          "contact_invitation"
+        ],
+        "error": ""
+      },
+      "contactCapabilityVerified": true,
+      "emailVerificationStatus": "official_public_business_email",
+      "emailEvidence": "first_party_live_page_cache"
     },
     {
       "id": "google-customer-atmosphere-website-contact",
@@ -21713,7 +22285,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -21737,7 +22309,17 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "invalidChannels": {},
       "identitySource": "official homepage found; exact buyer/contact path still requires verification",
       "channelPriority": 3,
-      "discoveredAt": "2026-07-16T05:03:53.170Z"
+      "discoveredAt": "2026-07-16T05:03:53.170Z",
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-05T05:07:40.862Z",
+        "evidenceUrl": "https://www.atmosphere.ca/",
+        "httpStatus": 200,
+        "signals": [
+          "contact_invitation"
+        ],
+        "error": ""
+      }
     },
     {
       "id": "google-customer-altitude-sports-website-contact",
@@ -21793,7 +22375,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -21817,7 +22399,17 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "invalidChannels": {},
       "identitySource": "official homepage found; exact buyer/contact path still requires verification",
       "channelPriority": 3,
-      "discoveredAt": "2026-07-16T05:03:53.170Z"
+      "discoveredAt": "2026-07-16T05:03:53.170Z",
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-05T05:07:41.568Z",
+        "evidenceUrl": "https://www.altitude-sports.com/",
+        "httpStatus": 200,
+        "signals": [
+          "form_control"
+        ],
+        "error": ""
+      }
     },
     {
       "id": "google-customer-the-last-hunt-website-contact",
@@ -21873,7 +22465,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -21897,7 +22489,17 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "invalidChannels": {},
       "identitySource": "official homepage found; exact buyer/contact path still requires verification",
       "channelPriority": 3,
-      "discoveredAt": "2026-07-16T05:03:53.170Z"
+      "discoveredAt": "2026-07-16T05:03:53.170Z",
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-05T05:07:41.698Z",
+        "evidenceUrl": "https://www.thelasthunt.com/",
+        "httpStatus": 200,
+        "signals": [
+          "form_control"
+        ],
+        "error": ""
+      }
     },
     {
       "id": "google-customer-marmot-basin-retail-website-contact",
@@ -21953,7 +22555,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -21977,7 +22579,15 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "invalidChannels": {},
       "identitySource": "official homepage found; exact buyer/contact path still requires verification",
       "channelPriority": 3,
-      "discoveredAt": "2026-07-16T05:03:53.170Z"
+      "discoveredAt": "2026-07-16T05:03:53.170Z",
+      "firstPartyChannelVerification": {
+        "status": "unreachable",
+        "verifiedAt": "2026-08-05T05:07:41.234Z",
+        "evidenceUrl": "https://www.marmotbasin.com/",
+        "httpStatus": 0,
+        "signals": [],
+        "error": "fetch failed"
+      }
     },
     {
       "id": "google-customer-wild-earth-website-contact",
@@ -22023,7 +22633,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "identityStatus": "verified",
       "officialSocialProfileVerified": true,
       "socialProfileEvidenceUrl": "https://www.wildearth.com.au/",
-      "socialProfileVerifiedAt": "2026-08-04T07:00:00.000Z",
+      "socialProfileVerifiedAt": "2026-08-05T05:07:41.313Z",
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -22033,7 +22643,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -22057,7 +22667,15 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "invalidChannels": {},
       "identitySource": "official homepage found; exact buyer/contact path still requires verification",
       "channelPriority": 3,
-      "discoveredAt": "2026-07-16T05:03:53.170Z"
+      "discoveredAt": "2026-07-16T05:03:53.170Z",
+      "firstPartyChannelVerification": {
+        "status": "unreachable",
+        "verifiedAt": "2026-08-05T05:07:41.313Z",
+        "evidenceUrl": "https://www.wildearth.com.au/",
+        "httpStatus": 403,
+        "signals": [],
+        "error": ""
+      }
     },
     {
       "id": "google-customer-tentworld-australia-website-contact",
@@ -22113,7 +22731,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -22137,7 +22755,15 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "invalidChannels": {},
       "identitySource": "official homepage found; exact buyer/contact path still requires verification",
       "channelPriority": 3,
-      "discoveredAt": "2026-07-16T05:03:53.170Z"
+      "discoveredAt": "2026-07-16T05:03:53.170Z",
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-05T05:07:42.483Z",
+        "evidenceUrl": "https://www.tentworld.com.au/",
+        "httpStatus": 200,
+        "signals": [],
+        "error": ""
+      }
     },
     {
       "id": "google-customer-paddy-pallin-website-contact",
@@ -22174,7 +22800,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "website": "https://www.paddypallin.com.au/",
       "evidenceUrl": "https://www.google.com/search?q=%22Paddy%20Pallin%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22Australia%22%20buyer%20OR%20wholesale%20OR%20contact",
       "sourceEvidenceUrl": "verified outdoor retailer official website and public social profile refill",
-      "externalVerificationStatus": "",
+      "externalVerificationStatus": "official_contact_form_verified",
       "query": "https://www.google.com/search?q=%22Paddy%20Pallin%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22Australia%22%20buyer%20OR%20wholesale%20OR%20contact",
       "source": "google_customer_discovery",
       "sourceType": "google",
@@ -22193,7 +22819,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -22217,7 +22843,19 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "invalidChannels": {},
       "identitySource": "official homepage found; exact buyer/contact path still requires verification",
       "channelPriority": 3,
-      "discoveredAt": "2026-07-16T05:03:53.170Z"
+      "discoveredAt": "2026-07-16T05:03:53.170Z",
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-05T05:07:42.172Z",
+        "evidenceUrl": "https://www.paddypallin.com.au/",
+        "httpStatus": 200,
+        "signals": [
+          "form_control",
+          "contact_invitation"
+        ],
+        "error": ""
+      },
+      "contactCapabilityVerified": true
     },
     {
       "id": "google-customer-macpac-website-contact",
@@ -22254,7 +22892,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "website": "https://www.macpac.com.au/",
       "evidenceUrl": "https://www.google.com/search?q=%22Macpac%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22Australia%22%20buyer%20OR%20wholesale%20OR%20contact",
       "sourceEvidenceUrl": "verified outdoor retailer official website and public social profile refill",
-      "externalVerificationStatus": "",
+      "externalVerificationStatus": "official_contact_form_verified",
       "query": "https://www.google.com/search?q=%22Macpac%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22Australia%22%20buyer%20OR%20wholesale%20OR%20contact",
       "source": "google_customer_discovery",
       "sourceType": "google",
@@ -22273,7 +22911,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -22297,7 +22935,19 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "invalidChannels": {},
       "identitySource": "official homepage found; exact buyer/contact path still requires verification",
       "channelPriority": 3,
-      "discoveredAt": "2026-07-16T05:03:53.170Z"
+      "discoveredAt": "2026-07-16T05:03:53.170Z",
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-05T05:07:42.422Z",
+        "evidenceUrl": "https://www.macpac.com.au/",
+        "httpStatus": 200,
+        "signals": [
+          "form_control",
+          "contact_invitation"
+        ],
+        "error": ""
+      },
+      "contactCapabilityVerified": true
     },
     {
       "id": "google-customer-tentworld-nz-website-contact",
@@ -22353,7 +23003,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -22377,7 +23027,15 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "invalidChannels": {},
       "identitySource": "official homepage found; exact buyer/contact path still requires verification",
       "channelPriority": 3,
-      "discoveredAt": "2026-07-16T05:03:53.170Z"
+      "discoveredAt": "2026-07-16T05:03:53.170Z",
+      "firstPartyChannelVerification": {
+        "status": "unreachable",
+        "verifiedAt": "2026-08-05T05:07:47.567Z",
+        "evidenceUrl": "https://www.tentworld.co.nz/",
+        "httpStatus": 0,
+        "signals": [],
+        "error": "fetch failed"
+      }
     },
     {
       "id": "google-customer-torpedo7-website-contact",
@@ -22433,7 +23091,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -22457,7 +23115,17 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "invalidChannels": {},
       "identitySource": "official homepage found; exact buyer/contact path still requires verification",
       "channelPriority": 3,
-      "discoveredAt": "2026-07-16T05:03:53.170Z"
+      "discoveredAt": "2026-07-16T05:03:53.170Z",
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-05T05:07:48.708Z",
+        "evidenceUrl": "https://www.torpedo7.co.nz/",
+        "httpStatus": 200,
+        "signals": [
+          "form_control"
+        ],
+        "error": ""
+      }
     },
     {
       "id": "google-customer-outdoor-action-website-contact",
@@ -22494,7 +23162,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "website": "https://www.outdooraction.co.nz/",
       "evidenceUrl": "https://www.google.com/search?q=%22Outdoor%20Action%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22New%20Zealand%22%20buyer%20OR%20wholesale%20OR%20contact",
       "sourceEvidenceUrl": "verified outdoor retailer official website and public social profile refill",
-      "externalVerificationStatus": "",
+      "externalVerificationStatus": "official_contact_form_verified",
       "query": "https://www.google.com/search?q=%22Outdoor%20Action%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22New%20Zealand%22%20buyer%20OR%20wholesale%20OR%20contact",
       "source": "google_customer_discovery",
       "sourceType": "google",
@@ -22513,7 +23181,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -22537,7 +23205,19 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "invalidChannels": {},
       "identitySource": "official homepage found; exact buyer/contact path still requires verification",
       "channelPriority": 3,
-      "discoveredAt": "2026-07-16T05:03:53.170Z"
+      "discoveredAt": "2026-07-16T05:03:53.170Z",
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-05T05:07:48.512Z",
+        "evidenceUrl": "https://www.outdooraction.co.nz/",
+        "httpStatus": 200,
+        "signals": [
+          "form_control",
+          "contact_invitation"
+        ],
+        "error": ""
+      },
+      "contactCapabilityVerified": true
     },
     {
       "id": "google-customer-campz-website-contact",
@@ -22593,7 +23273,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -22617,7 +23297,15 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "invalidChannels": {},
       "identitySource": "official homepage found; exact buyer/contact path still requires verification",
       "channelPriority": 3,
-      "discoveredAt": "2026-07-16T05:03:53.170Z"
+      "discoveredAt": "2026-07-16T05:03:53.170Z",
+      "firstPartyChannelVerification": {
+        "status": "unreachable",
+        "verifiedAt": "2026-08-05T05:07:49.090Z",
+        "evidenceUrl": "https://www.bergfreunde.de/?campz=1",
+        "httpStatus": 403,
+        "signals": [],
+        "error": ""
+      }
     },
     {
       "id": "google-customer-sport-conrad-website-contact",
@@ -22673,7 +23361,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -22697,7 +23385,19 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "invalidChannels": {},
       "identitySource": "official homepage found; exact buyer/contact path still requires verification",
       "channelPriority": 3,
-      "discoveredAt": "2026-07-16T05:03:53.170Z"
+      "discoveredAt": "2026-07-16T05:03:53.170Z",
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-05T05:07:51.492Z",
+        "evidenceUrl": "https://www.sport-conrad.com/",
+        "httpStatus": 200,
+        "signals": [
+          "form_control"
+        ],
+        "error": ""
+      },
+      "emailVerificationStatus": "official_public_business_email",
+      "emailEvidence": "first_party_live_page_cache"
     },
     {
       "id": "google-customer-doorout-website-contact",
@@ -22743,7 +23443,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "identityStatus": "verified",
       "officialSocialProfileVerified": true,
       "socialProfileEvidenceUrl": "https://www.doorout.com/",
-      "socialProfileVerifiedAt": "",
+      "socialProfileVerifiedAt": "2026-08-05T05:08:01.499Z",
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -22753,7 +23453,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -22777,7 +23477,15 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "invalidChannels": {},
       "identitySource": "official homepage found; exact buyer/contact path still requires verification",
       "channelPriority": 3,
-      "discoveredAt": "2026-07-16T05:03:53.170Z"
+      "discoveredAt": "2026-07-16T05:03:53.170Z",
+      "firstPartyChannelVerification": {
+        "status": "unreachable",
+        "verifiedAt": "2026-08-05T05:08:01.499Z",
+        "evidenceUrl": "https://www.doorout.com/",
+        "httpStatus": 0,
+        "signals": [],
+        "error": "timeout"
+      }
     },
     {
       "id": "google-customer-addnature-website-contact",
@@ -22833,7 +23541,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -22857,7 +23565,15 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "invalidChannels": {},
       "identitySource": "official homepage found; exact buyer/contact path still requires verification",
       "channelPriority": 3,
-      "discoveredAt": "2026-07-16T05:03:53.170Z"
+      "discoveredAt": "2026-07-16T05:03:53.170Z",
+      "firstPartyChannelVerification": {
+        "status": "unreachable",
+        "verifiedAt": "2026-08-05T05:07:54.602Z",
+        "evidenceUrl": "https://www.addnature.com/",
+        "httpStatus": 0,
+        "signals": [],
+        "error": "fetch failed"
+      }
     },
     {
       "id": "google-customer-xxl-sport-website-contact",
@@ -22913,7 +23629,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -22937,7 +23653,17 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "invalidChannels": {},
       "identitySource": "official homepage found; exact buyer/contact path still requires verification",
       "channelPriority": 3,
-      "discoveredAt": "2026-07-16T05:03:53.170Z"
+      "discoveredAt": "2026-07-16T05:03:53.170Z",
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-05T05:07:53.580Z",
+        "evidenceUrl": "https://www.xxl.no/",
+        "httpStatus": 200,
+        "signals": [
+          "form_control"
+        ],
+        "error": ""
+      }
     },
     {
       "id": "google-customer-intersport-norway-website-contact",
@@ -22993,7 +23719,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -23023,7 +23749,15 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       },
       "identitySource": "official homepage found; exact buyer/contact path still requires verification",
       "channelPriority": 3,
-      "discoveredAt": "2026-07-29T09:22:31.075Z"
+      "discoveredAt": "2026-07-29T09:22:31.075Z",
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-05T05:09:24.342Z",
+        "evidenceUrl": "https://www.intersport.no/",
+        "httpStatus": 200,
+        "signals": [],
+        "error": ""
+      }
     },
     {
       "id": "google-customer-blue-tomato-website-contact",
@@ -23079,7 +23813,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -23103,7 +23837,17 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "invalidChannels": {},
       "identitySource": "official homepage found; exact buyer/contact path still requires verification",
       "channelPriority": 3,
-      "discoveredAt": "2026-07-16T05:03:53.170Z"
+      "discoveredAt": "2026-07-16T05:03:53.170Z",
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-05T05:07:53.197Z",
+        "evidenceUrl": "https://www.blue-tomato.com/de-DE/",
+        "httpStatus": 200,
+        "signals": [
+          "form_control"
+        ],
+        "error": ""
+      }
     },
     {
       "id": "google-customer-sportler-website-contact",
@@ -23159,7 +23903,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -23183,7 +23927,15 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "invalidChannels": {},
       "identitySource": "official homepage found; exact buyer/contact path still requires verification",
       "channelPriority": 3,
-      "discoveredAt": "2026-07-16T05:03:53.170Z"
+      "discoveredAt": "2026-07-16T05:03:53.170Z",
+      "firstPartyChannelVerification": {
+        "status": "unreachable",
+        "verifiedAt": "2026-08-05T05:08:02.631Z",
+        "evidenceUrl": "https://www.sportler.com/",
+        "httpStatus": 403,
+        "signals": [],
+        "error": ""
+      }
     },
     {
       "id": "google-customer-trekkinn-website-contact",
@@ -23220,7 +23972,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "website": "https://www.tradeinn.com/trekkinn/",
       "evidenceUrl": "https://www.google.com/search?q=%22Trekkinn%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22Spain%22%20buyer%20OR%20wholesale%20OR%20contact",
       "sourceEvidenceUrl": "verified outdoor retailer official website and public social profile refill",
-      "externalVerificationStatus": "",
+      "externalVerificationStatus": "official_contact_form_verified",
       "query": "https://www.google.com/search?q=%22Trekkinn%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22Spain%22%20buyer%20OR%20wholesale%20OR%20contact",
       "source": "google_customer_discovery",
       "sourceType": "google",
@@ -23239,7 +23991,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -23263,7 +24015,19 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "invalidChannels": {},
       "identitySource": "official homepage found; exact buyer/contact path still requires verification",
       "channelPriority": 3,
-      "discoveredAt": "2026-07-16T05:03:53.170Z"
+      "discoveredAt": "2026-07-16T05:03:53.170Z",
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-05T05:08:02.572Z",
+        "evidenceUrl": "https://www.tradeinn.com/trekkinn/en",
+        "httpStatus": 200,
+        "signals": [
+          "form_control",
+          "contact_invitation"
+        ],
+        "error": ""
+      },
+      "contactCapabilityVerified": true
     },
     {
       "id": "google-customer-mammut-store-website-contact",
@@ -23319,7 +24083,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -23349,7 +24113,15 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       },
       "identitySource": "official homepage found; exact buyer/contact path still requires verification",
       "channelPriority": 3,
-      "discoveredAt": "2026-07-29T09:22:31.075Z"
+      "discoveredAt": "2026-07-29T09:22:31.075Z",
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-05T05:09:23.913Z",
+        "evidenceUrl": "https://www.mammut.com/int/en",
+        "httpStatus": 200,
+        "signals": [],
+        "error": ""
+      }
     },
     {
       "id": "google-customer-4camping-website-contact",
@@ -23377,8 +24149,8 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "opportunity": "4Camping is a qualified outdoor, camping, travel or sport retail prospect with category fit for FLEXTAIL portable outdoor electrics and Vollyc practical 3C products.",
       "linkedin_url": "",
       "linkedin": "",
-      "publicEmail": "",
-      "contactEmail": "",
+      "publicEmail": "objednavky@4camping.cz",
+      "contactEmail": "objednavky@4camping.cz",
       "vendorPortal": "https://www.4camping.cz/",
       "contactPhone": "",
       "contactNote": "",
@@ -23405,7 +24177,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -23429,7 +24201,20 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "invalidChannels": {},
       "identitySource": "official homepage found; exact buyer/contact path still requires verification",
       "channelPriority": 3,
-      "discoveredAt": "2026-07-16T05:03:53.170Z"
+      "discoveredAt": "2026-07-16T05:03:53.170Z",
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-05T05:08:03.911Z",
+        "evidenceUrl": "https://www.4camping.cz/",
+        "httpStatus": 200,
+        "signals": [
+          "form_control",
+          "public_business_email"
+        ],
+        "error": ""
+      },
+      "emailVerificationStatus": "official_public_business_email",
+      "emailEvidence": "first_party_live_page_cache"
     },
     {
       "id": "google-customer-8a-pl-website-contact",
@@ -23474,8 +24259,8 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "channel": "",
       "identityStatus": "verified",
       "officialSocialProfileVerified": true,
-      "socialProfileEvidenceUrl": "https://8a.pl/media/pliki/polityka_prywatno%C5%9Bci_FB_8a.pdf",
-      "socialProfileVerifiedAt": "",
+      "socialProfileEvidenceUrl": "https://8a.pl/",
+      "socialProfileVerifiedAt": "2026-08-05T05:08:01.691Z",
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -23485,7 +24270,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -23509,7 +24294,15 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "invalidChannels": {},
       "identitySource": "official homepage found; exact buyer/contact path still requires verification",
       "channelPriority": 3,
-      "discoveredAt": "2026-07-16T05:03:53.170Z"
+      "discoveredAt": "2026-07-16T05:03:53.170Z",
+      "firstPartyChannelVerification": {
+        "status": "unreachable",
+        "verifiedAt": "2026-08-05T05:08:01.691Z",
+        "evidenceUrl": "https://8a.pl/",
+        "httpStatus": 403,
+        "signals": [],
+        "error": ""
+      }
     },
     {
       "id": "google-customer-sklep-podroznika-website-contact",
@@ -23565,7 +24358,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -23589,7 +24382,15 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "invalidChannels": {},
       "identitySource": "official homepage found; exact buyer/contact path still requires verification",
       "channelPriority": 3,
-      "discoveredAt": "2026-07-16T05:03:53.170Z"
+      "discoveredAt": "2026-07-16T05:03:53.170Z",
+      "firstPartyChannelVerification": {
+        "status": "unreachable",
+        "verifiedAt": "2026-08-05T05:08:04.825Z",
+        "evidenceUrl": "https://www.sklep-podroznika.pl/",
+        "httpStatus": 0,
+        "signals": [],
+        "error": "fetch failed"
+      }
     },
     {
       "id": "google-customer-bever-zwerfsport-website-contact",
@@ -23645,7 +24446,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -23675,7 +24476,17 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       },
       "identitySource": "official homepage found; exact buyer/contact path still requires verification",
       "channelPriority": 3,
-      "discoveredAt": "2026-07-29T09:22:31.075Z"
+      "discoveredAt": "2026-07-29T09:22:31.075Z",
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-05T05:09:23.078Z",
+        "evidenceUrl": "https://www.bever.nl/",
+        "httpStatus": 200,
+        "signals": [
+          "form_control"
+        ],
+        "error": ""
+      }
     },
     {
       "id": "google-customer-outdoor-specialist-website-contact",
@@ -23731,7 +24542,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -23755,7 +24566,17 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "invalidChannels": {},
       "identitySource": "official homepage found; exact buyer/contact path still requires verification",
       "channelPriority": 3,
-      "discoveredAt": "2026-07-16T05:03:53.170Z"
+      "discoveredAt": "2026-07-16T05:03:53.170Z",
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-05T05:09:30.351Z",
+        "evidenceUrl": "https://www.outdoor-experts.nl/nl/",
+        "httpStatus": 200,
+        "signals": [
+          "form_control"
+        ],
+        "error": ""
+      }
     },
     {
       "id": "google-customer-campervan-gift-website-contact",
@@ -23792,7 +24613,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "website": "https://www.campervangift.co.uk/",
       "evidenceUrl": "https://www.google.com/search?q=%22Campervan%20Gift%22%20%22campervan%2C%20travel%20and%20outdoor-lifestyle%20retailer%22%20%22United%20Kingdom%22%20buyer%20OR%20wholesale%20OR%20contact",
       "sourceEvidenceUrl": "https://www.campervangift.co.uk/become-a-supplier/",
-      "externalVerificationStatus": "official_supplier_email_verified",
+      "externalVerificationStatus": "official_supplier_form_verified",
       "query": "https://www.google.com/search?q=%22Campervan%20Gift%22%20%22campervan%2C%20travel%20and%20outdoor-lifestyle%20retailer%22%20%22United%20Kingdom%22%20buyer%20OR%20wholesale%20OR%20contact",
       "source": "google_customer_discovery",
       "sourceType": "google",
@@ -23811,7 +24632,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -23835,7 +24656,23 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "invalidChannels": {},
       "identitySource": "official website contact path + Google buyer/contact query",
       "channelPriority": 3,
-      "discoveredAt": "2026-08-04T05:11:51.932Z"
+      "discoveredAt": "2026-08-04T05:11:51.932Z",
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-05T05:09:26.620Z",
+        "evidenceUrl": "https://www.campervangift.co.uk/become-a-supplier/",
+        "httpStatus": 200,
+        "signals": [
+          "form_control",
+          "public_business_email",
+          "supplier_invitation",
+          "contact_invitation"
+        ],
+        "error": ""
+      },
+      "contactCapabilityVerified": true,
+      "emailVerificationStatus": "official_public_business_email",
+      "emailEvidence": "first_party_live_page_cache"
     },
     {
       "id": "google-customer-gecko-overland-instagram",
@@ -23863,8 +24700,8 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "opportunity": "Dubai camping and overland retailer with an official contact form and official Instagram profile.",
       "linkedin_url": "",
       "linkedin": "",
-      "publicEmail": "",
-      "contactEmail": "",
+      "publicEmail": "info@gecko-overland.com",
+      "contactEmail": "info@gecko-overland.com",
       "vendorPortal": "https://gecko-overland.com/contact/",
       "contactPhone": "",
       "contactNote": "",
@@ -23872,7 +24709,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "website": "https://gecko-overland.com/",
       "evidenceUrl": "https://www.google.com/search?q=%22Gecko%20Overland%22%20%22camping%20and%20overland%20retailer%22%20%22United%20Arab%20Emirates%22%20buyer%20OR%20wholesale%20OR%20contact",
       "sourceEvidenceUrl": "https://gecko-overland.com/",
-      "externalVerificationStatus": "",
+      "externalVerificationStatus": "official_contact_form_verified",
       "query": "https://www.google.com/search?q=%22Gecko%20Overland%22%20%22camping%20and%20overland%20retailer%22%20%22United%20Arab%20Emirates%22%20buyer%20OR%20wholesale%20OR%20contact",
       "source": "google_customer_discovery",
       "sourceType": "google",
@@ -23880,8 +24717,8 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "channel": "",
       "identityStatus": "verified",
       "officialSocialProfileVerified": true,
-      "socialProfileEvidenceUrl": "",
-      "socialProfileVerifiedAt": "",
+      "socialProfileEvidenceUrl": "https://gecko-overland.com/contact/",
+      "socialProfileVerifiedAt": "2026-08-05T05:09:28.265Z",
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -23891,7 +24728,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -23907,7 +24744,22 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       },
       "identitySource": "official website/social profile + Google background query",
       "channelPriority": 1,
-      "discoveredAt": "2026-07-29T09:22:31.075Z"
+      "discoveredAt": "2026-07-29T09:22:31.075Z",
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-05T05:09:28.265Z",
+        "evidenceUrl": "https://gecko-overland.com/contact/",
+        "httpStatus": 200,
+        "signals": [
+          "form_control",
+          "public_business_email",
+          "contact_invitation"
+        ],
+        "error": ""
+      },
+      "contactCapabilityVerified": true,
+      "emailVerificationStatus": "official_public_business_email",
+      "emailEvidence": "first_party_live_page_cache"
     },
     {
       "id": "google-customer-gecko-overland-website-contact",
@@ -23935,8 +24787,8 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "opportunity": "Dubai camping and overland retailer with an official contact form and official Instagram profile.",
       "linkedin_url": "",
       "linkedin": "",
-      "publicEmail": "",
-      "contactEmail": "",
+      "publicEmail": "info@gecko-overland.com",
+      "contactEmail": "info@gecko-overland.com",
       "vendorPortal": "https://gecko-overland.com/contact/",
       "contactPhone": "",
       "contactNote": "",
@@ -23944,7 +24796,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "website": "https://gecko-overland.com/",
       "evidenceUrl": "https://www.google.com/search?q=%22Gecko%20Overland%22%20%22camping%20and%20overland%20retailer%22%20%22United%20Arab%20Emirates%22%20buyer%20OR%20wholesale%20OR%20contact",
       "sourceEvidenceUrl": "https://gecko-overland.com/",
-      "externalVerificationStatus": "",
+      "externalVerificationStatus": "official_contact_form_verified",
       "query": "https://www.google.com/search?q=%22Gecko%20Overland%22%20%22camping%20and%20overland%20retailer%22%20%22United%20Arab%20Emirates%22%20buyer%20OR%20wholesale%20OR%20contact",
       "source": "google_customer_discovery",
       "sourceType": "google",
@@ -23952,8 +24804,8 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "channel": "",
       "identityStatus": "verified",
       "officialSocialProfileVerified": true,
-      "socialProfileEvidenceUrl": "",
-      "socialProfileVerifiedAt": "",
+      "socialProfileEvidenceUrl": "https://gecko-overland.com/contact/",
+      "socialProfileVerifiedAt": "2026-08-05T05:09:28.265Z",
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -23963,7 +24815,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -23987,7 +24839,22 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "invalidChannels": {},
       "identitySource": "official website contact path + Google buyer/contact query",
       "channelPriority": 3,
-      "discoveredAt": "2026-07-29T09:22:31.075Z"
+      "discoveredAt": "2026-07-29T09:22:31.075Z",
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-05T05:09:28.265Z",
+        "evidenceUrl": "https://gecko-overland.com/contact/",
+        "httpStatus": 200,
+        "signals": [
+          "form_control",
+          "public_business_email",
+          "contact_invitation"
+        ],
+        "error": ""
+      },
+      "contactCapabilityVerified": true,
+      "emailVerificationStatus": "official_public_business_email",
+      "emailEvidence": "first_party_live_page_cache"
     },
     {
       "id": "google-customer-bbq-fans-website-contact",
@@ -24024,7 +24891,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "website": "https://www.bbqfans.com/",
       "evidenceUrl": "https://www.google.com/search?q=%22BBQ%20Fans%22%20%22outdoor%20cooking%20and%20camping%20retailer%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
       "sourceEvidenceUrl": "https://www.bbqfans.com/become-a-supplier/",
-      "externalVerificationStatus": "official_supplier_email_verified",
+      "externalVerificationStatus": "official_supplier_form_verified",
       "query": "https://www.google.com/search?q=%22BBQ%20Fans%22%20%22outdoor%20cooking%20and%20camping%20retailer%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
       "source": "google_customer_discovery",
       "sourceType": "google",
@@ -24043,7 +24910,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -24067,7 +24934,22 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "invalidChannels": {},
       "identitySource": "official website contact path + Google buyer/contact query",
       "channelPriority": 3,
-      "discoveredAt": "2026-08-04T05:11:51.932Z"
+      "discoveredAt": "2026-08-04T05:11:51.932Z",
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-05T05:09:26.773Z",
+        "evidenceUrl": "https://www.bbqfans.com/become-a-supplier/",
+        "httpStatus": 200,
+        "signals": [
+          "form_control",
+          "supplier_invitation",
+          "contact_invitation"
+        ],
+        "error": ""
+      },
+      "contactCapabilityVerified": true,
+      "emailVerificationStatus": "official_public_business_email",
+      "emailEvidence": "first_party_live_page_cache"
     },
     {
       "id": "google-customer-flameoutdoors-website-contact",
@@ -24123,7 +25005,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -24147,7 +25029,17 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "invalidChannels": {},
       "identitySource": "official website contact path + Google buyer/contact query",
       "channelPriority": 3,
-      "discoveredAt": "2026-07-29T12:52:55.130Z"
+      "discoveredAt": "2026-07-29T12:52:55.130Z",
+      "firstPartyChannelVerification": {
+        "status": "unreachable",
+        "verifiedAt": "2026-08-05T05:09:31.304Z",
+        "evidenceUrl": "https://flameoutdoors.com/pages/authorized-dealer",
+        "httpStatus": 402,
+        "signals": [],
+        "error": ""
+      },
+      "emailVerificationStatus": "official_public_business_email",
+      "emailEvidence": "first_party_live_page_cache"
     },
     {
       "id": "google-customer-basecamp-outfitters-roslyn-instagram",
@@ -24192,8 +25084,8 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "channel": "",
       "identityStatus": "verified",
       "officialSocialProfileVerified": true,
-      "socialProfileEvidenceUrl": "",
-      "socialProfileVerifiedAt": "",
+      "socialProfileEvidenceUrl": "https://www.basecamp-outfitters.com/",
+      "socialProfileVerifiedAt": "2026-08-05T05:09:30.981Z",
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -24203,7 +25095,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -24219,7 +25111,17 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       },
       "identitySource": "official website/social profile + Google background query",
       "channelPriority": 1,
-      "discoveredAt": "2026-07-29T09:22:31.075Z"
+      "discoveredAt": "2026-07-29T09:22:31.075Z",
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-05T05:09:30.981Z",
+        "evidenceUrl": "https://www.basecamp-outfitters.com/",
+        "httpStatus": 200,
+        "signals": [
+          "form_control"
+        ],
+        "error": ""
+      }
     },
     {
       "id": "google-customer-basecamp-outfitters-roslyn-website-contact",
@@ -24264,8 +25166,8 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "channel": "",
       "identityStatus": "verified",
       "officialSocialProfileVerified": true,
-      "socialProfileEvidenceUrl": "",
-      "socialProfileVerifiedAt": "",
+      "socialProfileEvidenceUrl": "https://www.basecamp-outfitters.com/",
+      "socialProfileVerifiedAt": "2026-08-05T05:09:30.981Z",
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -24275,7 +25177,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -24299,7 +25201,17 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "invalidChannels": {},
       "identitySource": "official homepage found; exact buyer/contact path still requires verification",
       "channelPriority": 3,
-      "discoveredAt": "2026-07-29T09:22:31.075Z"
+      "discoveredAt": "2026-07-29T09:22:31.075Z",
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-05T05:09:30.981Z",
+        "evidenceUrl": "https://www.basecamp-outfitters.com/",
+        "httpStatus": 200,
+        "signals": [
+          "form_control"
+        ],
+        "error": ""
+      }
     },
     {
       "id": "google-customer-new-world-outdoor-gear-co-instagram",
@@ -24327,8 +25239,8 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "opportunity": "Outdoor gear retailer whose official website links its official Instagram account and contact section.",
       "linkedin_url": "",
       "linkedin": "",
-      "publicEmail": "",
-      "contactEmail": "",
+      "publicEmail": "NEWWORLDOUTDOORGEARCO@GMAIL.COM",
+      "contactEmail": "NEWWORLDOUTDOORGEARCO@GMAIL.COM",
       "vendorPortal": "https://www.nwogco.com/",
       "contactPhone": "",
       "contactNote": "",
@@ -24344,8 +25256,8 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "channel": "",
       "identityStatus": "verified",
       "officialSocialProfileVerified": true,
-      "socialProfileEvidenceUrl": "",
-      "socialProfileVerifiedAt": "",
+      "socialProfileEvidenceUrl": "https://www.nwogco.com/",
+      "socialProfileVerifiedAt": "2026-08-05T05:09:31.528Z",
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -24355,7 +25267,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -24371,7 +25283,19 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       },
       "identitySource": "official website/social profile + Google background query",
       "channelPriority": 1,
-      "discoveredAt": "2026-07-29T09:22:31.075Z"
+      "discoveredAt": "2026-07-29T09:22:31.075Z",
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-05T05:09:31.528Z",
+        "evidenceUrl": "https://www.nwogco.com/",
+        "httpStatus": 200,
+        "signals": [
+          "public_business_email"
+        ],
+        "error": ""
+      },
+      "emailVerificationStatus": "official_public_business_email",
+      "emailEvidence": "first_party_live_page_cache"
     },
     {
       "id": "google-customer-new-world-outdoor-gear-co-website-contact",
@@ -24399,8 +25323,8 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "opportunity": "Outdoor gear retailer whose official website links its official Instagram account and contact section.",
       "linkedin_url": "",
       "linkedin": "",
-      "publicEmail": "",
-      "contactEmail": "",
+      "publicEmail": "NEWWORLDOUTDOORGEARCO@GMAIL.COM",
+      "contactEmail": "NEWWORLDOUTDOORGEARCO@GMAIL.COM",
       "vendorPortal": "https://www.nwogco.com/",
       "contactPhone": "",
       "contactNote": "",
@@ -24416,8 +25340,8 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "channel": "",
       "identityStatus": "verified",
       "officialSocialProfileVerified": true,
-      "socialProfileEvidenceUrl": "",
-      "socialProfileVerifiedAt": "",
+      "socialProfileEvidenceUrl": "https://www.nwogco.com/",
+      "socialProfileVerifiedAt": "2026-08-05T05:09:31.528Z",
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -24427,7 +25351,7 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/5 12:05:13",
+        "localTime": "2026/8/5 13:09:47",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -24451,89 +25375,187 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
       "invalidChannels": {},
       "identitySource": "official homepage found; exact buyer/contact path still requires verification",
       "channelPriority": 3,
-      "discoveredAt": "2026-07-29T09:22:31.075Z"
+      "discoveredAt": "2026-07-29T09:22:31.075Z",
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-05T05:09:31.528Z",
+        "evidenceUrl": "https://www.nwogco.com/",
+        "httpStatus": 200,
+        "signals": [
+          "public_business_email"
+        ],
+        "error": ""
+      },
+      "emailVerificationStatus": "official_public_business_email",
+      "emailEvidence": "first_party_live_page_cache"
     }
   ],
   "firstPartyEnrichment": {
-    "completedAt": "2026-08-05T04:05:31.892Z",
+    "completedAt": "2026-08-05T05:10:05.835Z",
     "attemptedCompanies": 25,
-    "verifiedCompanies": 19,
+    "verifiedCompanies": 14,
+    "cachedCompanies": 75,
     "results": [
       {
-        "company": "Further Faster",
+        "company": "GO Outdoors",
         "ok": true,
-        "evidenceUrl": "https://www.furtherfaster.co.nz/",
-        "signals": [
-          "form_control",
-          "public_business_email",
-          "contact_invitation"
-        ]
-      },
-      {
-        "company": "AvidMax Outfitters",
-        "ok": true,
-        "evidenceUrl": "https://www.avidmax.com/",
+        "evidenceUrl": "https://www.gooutdoors.co.uk/",
         "signals": [
           "form_control",
           "contact_invitation"
         ]
       },
       {
-        "company": "Gear West",
+        "company": "Sportsman's Warehouse",
+        "ok": false,
+        "evidenceUrl": "https://www.sportsmans.com/contact-us",
+        "signals": []
+      },
+      {
+        "company": "Obelink",
         "ok": true,
-        "evidenceUrl": "https://www.gearwest.com/",
+        "evidenceUrl": "https://www.obelink.nl/obelink-partnerprogramma/",
         "signals": [
-          "form_control",
-          "contact_invitation"
+          "form_control"
         ]
       },
       {
-        "company": "Brave Hardy",
+        "company": "Anaconda",
+        "ok": false,
+        "evidenceUrl": "https://help.anacondastores.com/hc/en-au",
+        "signals": []
+      },
+      {
+        "company": "Globetrotter",
+        "ok": false,
+        "evidenceUrl": "https://www.globetrotter.de/",
+        "signals": []
+      },
+      {
+        "company": "Outdoor Nature",
         "ok": true,
-        "evidenceUrl": "https://www.bravehardy.com/pages/contact",
+        "evidenceUrl": "https://www.outdoornature.com.au/become-a-supplier/",
         "signals": [
           "form_control",
-          "public_business_email",
           "supplier_invitation",
           "contact_invitation"
         ]
       },
       {
-        "company": "Public Lands",
+        "company": "Garage Grown Gear",
+        "ok": false,
+        "evidenceUrl": "https://www.garagegrowngear.com/",
+        "signals": []
+      },
+      {
+        "company": "Bergfreunde",
+        "ok": false,
+        "evidenceUrl": "https://www.bergfreunde.eu/",
+        "signals": []
+      },
+      {
+        "company": "Sail Outdoors",
         "ok": true,
-        "evidenceUrl": "https://www.publiclands.com/",
+        "evidenceUrl": "https://www.sail.ca/en/contact-us",
+        "signals": [
+          "form_control",
+          "public_business_email",
+          "contact_invitation"
+        ]
+      },
+      {
+        "company": "Fritz Berger",
+        "ok": true,
+        "evidenceUrl": "https://www.fritz-berger.de/",
         "signals": [
           "form_control"
         ]
       },
       {
-        "company": "Campman",
+        "company": "Au Vieux Campeur",
+        "ok": false,
+        "evidenceUrl": "https://www.auvieuxcampeur.fr/",
+        "signals": []
+      },
+      {
+        "company": "Cotswold Outdoor",
         "ok": true,
-        "evidenceUrl": "https://www.campman.com/",
+        "evidenceUrl": "https://www.cotswoldoutdoor.com/",
         "signals": [
           "form_control",
-          "public_business_email",
           "contact_invitation"
         ]
       },
       {
-        "company": "The Mountaineer",
+        "company": "Decathlon France",
         "ok": true,
-        "evidenceUrl": "https://mountaineer.com/",
+        "evidenceUrl": "https://www.decathlon.fr/help/app/contact",
         "signals": [
           "form_control"
         ]
       },
       {
-        "company": "Sierra",
-        "ok": false,
-        "evidenceUrl": "https://www.sierra.com/",
+        "company": "CampSaver",
+        "ok": true,
+        "evidenceUrl": "https://www.campsaver.com/",
+        "signals": [
+          "form_control",
+          "supplier_invitation",
+          "contact_invitation"
+        ]
+      },
+      {
+        "company": "Bergzeit",
+        "ok": true,
+        "evidenceUrl": "https://www.bergzeit.de/",
         "signals": []
       },
       {
-        "company": "Outdoorplay",
+        "company": "Camping Wagner",
         "ok": true,
-        "evidenceUrl": "https://www.outdoorplay.com/",
+        "evidenceUrl": "https://www.campingwagner.de/de/",
+        "signals": []
+      },
+      {
+        "company": "Decathlon Germany",
+        "ok": false,
+        "evidenceUrl": "https://www.decathlon.de/help/app/contact",
+        "signals": []
+      },
+      {
+        "company": "Summit International",
+        "ok": true,
+        "evidenceUrl": "https://www.summitint.co/contact/",
+        "signals": [
+          "form_control",
+          "contact_invitation"
+        ]
+      },
+      {
+        "company": "Valhalla Pure Outfitters",
+        "ok": true,
+        "evidenceUrl": "https://vpo.ca/",
+        "signals": []
+      },
+      {
+        "company": "Tentworld",
+        "ok": true,
+        "evidenceUrl": "https://www.tentworld.com.au/",
+        "signals": []
+      },
+      {
+        "company": "Trekitt",
+        "ok": true,
+        "evidenceUrl": "https://www.trekitt.co.uk/",
+        "signals": [
+          "form_control",
+          "contact_invitation"
+        ]
+      },
+      {
+        "company": "Ultralight Outdoor Gear",
+        "ok": true,
+        "evidenceUrl": "https://ultralightoutdoorgear.co.uk/",
         "signals": [
           "form_control",
           "public_business_email",
@@ -24541,134 +25563,30 @@ window.GOOGLE_LEAD_DISCOVERY_LATEST = {
         ]
       },
       {
-        "company": "Campmor",
+        "company": "Outnorth",
         "ok": true,
-        "evidenceUrl": "https://www.campmor.com/",
-        "signals": [
-          "form_control",
-          "public_business_email",
-          "contact_invitation"
-        ]
-      },
-      {
-        "company": "Ramsey Outdoor",
-        "ok": true,
-        "evidenceUrl": "https://ramseyoutdoor.com/",
+        "evidenceUrl": "https://www.outnorth.com/int/faq/contact",
         "signals": [
           "form_control",
           "contact_invitation"
         ]
       },
       {
-        "company": "Quest Outdoors",
-        "ok": false,
-        "evidenceUrl": "https://questoutdoors.com/",
-        "signals": []
-      },
-      {
-        "company": "River Sports Outfitters",
+        "company": "Naturkompaniet",
         "ok": true,
-        "evidenceUrl": "https://www.riversportsoutfitters.com/",
-        "signals": [
-          "form_control",
-          "contact_invitation"
-        ]
-      },
-      {
-        "company": "Rock/Creek",
-        "ok": false,
-        "evidenceUrl": "https://www.rockcreek.com/",
-        "signals": []
-      },
-      {
-        "company": "Half-Moon Outfitters",
-        "ok": true,
-        "evidenceUrl": "https://www.halfmoonoutfitters.com/",
-        "signals": [
-          "form_control",
-          "contact_invitation"
-        ]
-      },
-      {
-        "company": "Sunlight Sports",
-        "ok": true,
-        "evidenceUrl": "https://www.sunlightsports.com/",
+        "evidenceUrl": "https://www.naturkompaniet.se/",
         "signals": [
           "form_control",
           "public_business_email"
         ]
       },
       {
-        "company": "Jax Outdoor Gear",
+        "company": "Fjellsport",
         "ok": true,
-        "evidenceUrl": "https://jaxgoods.com/",
+        "evidenceUrl": "https://www.fjellsport.no/faq/personvern",
         "signals": [
           "form_control"
         ]
-      },
-      {
-        "company": "Christy Sports",
-        "ok": true,
-        "evidenceUrl": "https://www.christysports.com/",
-        "signals": [
-          "form_control",
-          "contact_invitation"
-        ]
-      },
-      {
-        "company": "Paragon Sports",
-        "ok": true,
-        "evidenceUrl": "https://paragonsports.com/",
-        "signals": [
-          "form_control",
-          "public_business_email",
-          "contact_invitation"
-        ]
-      },
-      {
-        "company": "Mountain Equipment",
-        "ok": true,
-        "evidenceUrl": "https://www.mountain-equipment.com/",
-        "signals": [
-          "form_control",
-          "contact_invitation"
-        ]
-      },
-      {
-        "company": "Tiso",
-        "ok": true,
-        "evidenceUrl": "https://www.tiso.com/",
-        "signals": [
-          "form_control",
-          "contact_invitation"
-        ]
-      },
-      {
-        "company": "George Fisher",
-        "ok": true,
-        "evidenceUrl": "https://www.tiso.com/pages/george-fisher-landing?utm_source=georgefisher",
-        "signals": [
-          "form_control",
-          "contact_invitation"
-        ]
-      },
-      {
-        "company": "LD Mountain Centre",
-        "ok": true,
-        "evidenceUrl": "https://www.ldmountaincentre.com/",
-        "signals": []
-      },
-      {
-        "company": "Absolute-Snow",
-        "ok": false,
-        "evidenceUrl": "https://www.absolute-snow.co.uk/",
-        "signals": []
-      },
-      {
-        "company": "Ellis Brigham",
-        "ok": true,
-        "evidenceUrl": "https://www.ellis-brigham.com/",
-        "signals": []
       }
     ]
   }

@@ -37,7 +37,12 @@ function verifiedBusinessEmailTarget(lead = {}) {
     lead.identitySource,
     lead.emailEvidence,
   ].filter(Boolean).join(' ').toLowerCase();
-  const verified = /official_website_mailto|verified|deliverable|official public|official business|public business email|official supplier email|official procurement email|official vendor email/.test(evidence);
+  // Verification producers persist stable machine tokens (underscores), while
+  // older imports may contain human-readable labels. Treat both forms as the
+  // same evidence so a live first-party verification is not discarded by the
+  // downstream send gate.
+  const normalizedEvidence = evidence.replace(/[_-]+/g, ' ');
+  const verified = /official website mailto|verified|deliverable|official public|official business|public business email|official supplier email|official procurement email|official vendor email/.test(normalizedEvidence);
   if (!verified) return { ok: false, reason: 'public_business_email_requires_verification', recipient, domain };
   return { ok: true, reason: 'verified_public_business_email', recipient, domain, evidence: clean(evidence).slice(0, 240) };
 }

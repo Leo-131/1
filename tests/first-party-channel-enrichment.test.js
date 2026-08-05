@@ -1,6 +1,6 @@
 const test = require('node:test');
 const assert = require('node:assert/strict');
-const { inspectOfficialPage, safeOfficialUrl, sameSocialProfile } = require('../outreach-dashboard/enrich-first-party-channels');
+const { inspectOfficialPage, safeOfficialUrl, sameSocialProfile, applyCachedVerification } = require('../outreach-dashboard/enrich-first-party-channels');
 
 test('first-party page inspection recognizes executable controls and exact official social links', () => {
   const html = '<h1>Become a supplier</h1><form><input name="email"><textarea></textarea></form><a href="https://instagram.com/acme/">Instagram</a>';
@@ -30,4 +30,20 @@ test('enrichment persists a rotating cursor so later runs research the next comp
   assert.match(source, /first-party-enrichment-state\.json/);
   assert.match(source, /\(start \+ results\.length\) % allGroups\.length/);
   assert.match(source, /allGroups\.slice\(start\).*allGroups\.slice\(0, start\)/s);
+  assert.match(source, /rows\.some\(row => row\.firstPartyChannelVerification\)/);
+});
+
+test('cached first-party evidence is replayed after the discovery artifact is rebuilt', () => {
+  const rows = [{ company: 'Acme', platform: 'website_form', url: 'https://acme.example/contact' }, { company: 'Acme', platform: 'instagram', url: 'https://instagram.com/acme' }];
+  applyCachedVerification(rows, {
+    firstPartyChannelVerification: { status: 'checked', evidenceUrl: 'https://acme.example/contact', verifiedAt: '2026-08-05T00:00:00.000Z' },
+    contactCapabilityVerified: true,
+    externalVerificationStatus: 'official_contact_form_verified',
+    publicEmail: 'buyer@acme.example',
+    emailVerificationStatus: 'official_public_business_email',
+    socialProfiles: ['https://www.instagram.com/acme/'],
+  });
+  assert.equal(rows[0].contactCapabilityVerified, true);
+  assert.equal(rows[0].publicEmail, 'buyer@acme.example');
+  assert.equal(rows[1].officialSocialProfileVerified, true);
 });

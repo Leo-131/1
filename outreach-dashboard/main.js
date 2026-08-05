@@ -4362,6 +4362,12 @@ async function runDailyAutomationQueue(payload = {}) {
   ]
     .filter((item, index, list) => list.findIndex(other => other.id === item.id) === index)
     .sort(developmentPriorityCompare);
+  const readyRowsForAudit = [
+    ...latest.dailyQueue,
+    ...(latest.scheduledLater || []),
+    ...(latest.dailyPotentialPool || []),
+  ].filter((item, index, list) => item && item.executionReadiness && item.executionReadiness.ready === true
+    && list.findIndex(other => other.id === item.id) === index);
   const executable = [];
   const skipped = [];
   const checkpointSnapshot = readJson(dailyExecutionCheckpointPath(), null);
@@ -4478,6 +4484,21 @@ async function runDailyAutomationQueue(payload = {}) {
       blockerCounts,
       queueGoalStatus,
       checkpointAudit,
+      candidateSelectionAudit: readyRowsForAudit.map(item => {
+        const block = blockingAutomationResultFor(item);
+        return {
+          id: item.id,
+          company: item.company,
+          action: item.action,
+          platform: item.platform,
+          readiness: item.executionReadiness,
+          hasTarget: Boolean(item.url || item.contactUrl || item.website || verifiedBusinessEmailTarget(item).ok),
+          inCandidatePool: candidatePool.some(candidate => candidate.id === item.id),
+          sameDayCompanyBlocked: itemBlockedBySameDayCompany(item, selectedCompanyKeys),
+          blockingStatus: block && block.status || '',
+          blockingEvidence: block && block.evidence || '',
+        };
+      }),
       summary: latest.summary || {},
       bounceReconciliation,
     };

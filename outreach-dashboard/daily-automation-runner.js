@@ -268,7 +268,11 @@ function queueDedupeKey(item) {
 }
 
 function dedupeQueueItems(items) {
-  const sorted = items.slice().sort(priorityCompare);
+  const sorted = items.slice().sort((left, right) => {
+    const readinessDelta = Number(Boolean(right && right.executionReadiness && right.executionReadiness.ready === true))
+      - Number(Boolean(left && left.executionReadiness && left.executionReadiness.ready === true));
+    return readinessDelta || priorityCompare(left, right);
+  });
   const seen = new Set();
   return sorted.filter((item) => {
     const key = queueDedupeKey(item);
@@ -276,6 +280,18 @@ function dedupeQueueItems(items) {
     seen.add(key);
     return true;
   });
+}
+
+function promoteExecutionReadyQueueRows(primaryRows = [], potentialRows = []) {
+  const verifiedByCompany = new Map();
+  for (const item of potentialRows) {
+    if (!(item && item.executionReadiness && item.executionReadiness.ready === true)) continue;
+    const key = slugKey(item.company || item.name || item.id);
+    if (!key) continue;
+    const current = verifiedByCompany.get(key);
+    if (!current || priorityCompare(item, current) < 0) verifiedByCompany.set(key, item);
+  }
+  return primaryRows.map(item => verifiedByCompany.get(slugKey(item.company || item.name || item.id)) || item);
 }
 
 function preferSocialChannels(items) {
@@ -1238,6 +1254,17 @@ function normalizePotentialItem(item, sourceType, history, index = 0) {
           : 'develop_after_identity_check',
   };
   normalized.executionReadiness = channelExecutionReadiness(normalized);
+  if (normalized.executionReadiness.ready === true && normalized.action === 'verify_target') {
+    if (normalized.executionReadiness.gate === 'official_business_email') {
+      normalized.action = 'email_priority';
+      normalized.reason = 'official_public_business_email_verified';
+      normalized.nextAction = 'official_business_email_contact';
+    } else if (normalized.executionReadiness.gate === 'official_supplier_route') {
+      normalized.action = 'develop';
+      normalized.reason = 'official_website_contact_channel';
+      normalized.nextAction = 'official_supplier_route_contact';
+    }
+  }
   return normalized;
 }
 
@@ -1451,7 +1478,10 @@ function main() {
   const newDiscovery = discoveryQueue(DEFAULT_DAILY_LIMIT, context);
   const touchedDiscovery = discoveryCooldownQueue(20, context);
   const remainingLimit = Math.max(0, picked.quota.total.target - newDiscovery.length);
-  const primaryQueue = [...newDiscovery, ...picked.queue.slice(0, remainingLimit)];
+  const primaryQueue = promoteExecutionReadyQueueRows(
+    [...newDiscovery, ...picked.queue.slice(0, remainingLimit)],
+    dailyPotentialPool,
+  );
   const primaryCompanies = new Set(primaryQueue.map(item => slugKey(item.company || item.name)).filter(Boolean));
   const refillQueue = dailyPotentialPool
     .filter(item => !primaryCompanies.has(slugKey(item.company || item.name)))
@@ -1583,4 +1613,6 @@ module.exports = {
   writeFileWithRetry,
   preferSocialChannels,
   channelExecutionReadiness,
+  dedupeQueueItems,
+  promoteExecutionReadyQueueRows,
 };

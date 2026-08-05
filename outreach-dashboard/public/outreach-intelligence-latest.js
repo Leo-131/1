@@ -1,7 +1,130 @@
 window.OUTREACH_INTELLIGENCE_LATEST = {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-05T04:05:34.887Z",
+  "generatedAt": "2026-08-05T05:10:07.836Z",
   "companies": [
+    {
+      "companyId": "company_819cc04fe9060117",
+      "company": "Intersport Norway",
+      "keys": [
+        "intersportnorway",
+        "intersportno"
+      ],
+      "domains": [
+        "intersport.no"
+      ],
+      "channels": [
+        "facebook",
+        "website_form"
+      ],
+      "evidence": [
+        {
+          "channel": "facebook",
+          "score": 95,
+          "verified": true,
+          "reasons": [
+            "official_site_cross_verified_social"
+          ],
+          "evidenceUrl": "https://www.intersport.no/",
+          "checkedAt": "2026-08-05T05:09:24.342Z"
+        },
+        {
+          "channel": "facebook",
+          "score": 95,
+          "verified": true,
+          "reasons": [
+            "official_site_cross_verified_social"
+          ],
+          "evidenceUrl": "https://www.intersport.no/",
+          "checkedAt": "2026-08-05T05:09:24.342Z"
+        },
+        {
+          "channel": "facebook",
+          "score": 95,
+          "verified": true,
+          "reasons": [
+            "official_site_cross_verified_social"
+          ],
+          "evidenceUrl": "https://www.intersport.no/",
+          "checkedAt": "2026-08-05T05:09:24.342Z"
+        },
+        {
+          "channel": "website_form",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
+          "checkedAt": ""
+        },
+        {
+          "channel": "website_form",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
+          "checkedAt": ""
+        }
+      ],
+      "history": [
+        {
+          "status": "failed_open",
+          "timestamp": "2026-07-17T03:08:23.123Z",
+          "channel": "facebook",
+          "evidence": "facebook_profile_no_message_button"
+        },
+        {
+          "status": "failed_open",
+          "timestamp": "2026-07-29T10:32:27.741Z",
+          "channel": "facebook",
+          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;personal_profile_without_company_match_expected_Intersport Norway_title_Facebook;contact_path_strategy_v2"
+        },
+        {
+          "status": "failed_open",
+          "timestamp": "2026-07-29T10:35:24.888Z",
+          "channel": "website_form",
+          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;personal_profile_without_company_match_expected_Intersport Norway_title_Facebook;contact_path_strategy_v2"
+        },
+        {
+          "status": "failed_open",
+          "timestamp": "2026-07-29T10:36:57.221Z",
+          "channel": "facebook",
+          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;identity_mismatch_expected_Intersport Norway_title_Facebook;contact_path_strategy_v2"
+        },
+        {
+          "status": "failed_open",
+          "timestamp": "2026-07-29T10:40:05.598Z",
+          "channel": "website_form",
+          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;identity_mismatch_expected_Intersport Norway_title_Facebook;contact_path_strategy_v2"
+        },
+        {
+          "status": "failed_open",
+          "timestamp": "2026-08-04T12:04:11.277Z",
+          "channel": "facebook",
+          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;identity_mismatch_expected_Intersport Norway_title_Facebook;contact_path_strategy_v2"
+        },
+        {
+          "status": "failed_open",
+          "timestamp": "2026-08-04T12:37:48.077Z",
+          "channel": "website_form",
+          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;identity_mismatch_expected_Intersport Norway_title_Facebook;contact_path_strategy_v2"
+        },
+        {
+          "status": "failed_open",
+          "timestamp": "2026-08-05T02:00:11.658Z",
+          "channel": "facebook",
+          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;identity_mismatch_expected_Intersport Norway_title_www.facebook.com;contact_path_strategy_v2"
+        },
+        {
+          "status": "failed_open",
+          "timestamp": "2026-08-05T03:01:21.601Z",
+          "channel": "website_form",
+          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;identity_mismatch_expected_Intersport Norway_title_www.facebook.com;contact_path_strategy_v2"
+        }
+      ]
+    },
     {
       "companyId": "company_992d96a6c170243f",
       "company": "Esprinet Group",
@@ -19,40 +142,30 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
       "evidence": [
         {
           "channel": "website_form",
-          "score": 80,
-          "verified": false,
+          "score": 100,
+          "verified": true,
           "reasons": [
-            "first_party_evidence"
+            "official_business_route"
           ],
           "evidenceUrl": "https://www.esprinet.com/en/become-a-supplier/",
           "checkedAt": ""
         },
         {
           "channel": "website_form",
-          "score": 80,
-          "verified": false,
+          "score": 100,
+          "verified": true,
           "reasons": [
-            "first_party_evidence"
+            "official_business_route"
           ],
           "evidenceUrl": "https://www.esprinet.com/en/become-a-supplier/",
           "checkedAt": ""
         },
         {
           "channel": "website_form",
-          "score": 80,
-          "verified": false,
+          "score": 100,
+          "verified": true,
           "reasons": [
-            "first_party_evidence"
-          ],
-          "evidenceUrl": "https://www.esprinet.com/en/become-a-supplier/",
-          "checkedAt": ""
-        },
-        {
-          "channel": "linkedin",
-          "score": 0,
-          "verified": false,
-          "reasons": [
-            "unverified_external_evidence_rejected"
+            "official_business_route"
           ],
           "evidenceUrl": "https://www.esprinet.com/en/become-a-supplier/",
           "checkedAt": ""
@@ -441,18 +554,17 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
       ]
     },
     {
-      "companyId": "company_513b53e283883f91",
-      "company": "Outnorth",
+      "companyId": "company_f2905733b544c0f2",
+      "company": "Naturkompaniet",
       "keys": [
-        "outnorth",
-        "outnorthcom"
+        "naturkompaniet",
+        "naturkompanietse"
       ],
       "domains": [
-        "outnorth.com"
+        "naturkompaniet.se"
       ],
       "channels": [
-        "website_form",
-        "email"
+        "website_form"
       ],
       "evidence": [
         {
@@ -483,6 +595,91 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "unverified_external_evidence_rejected"
           ],
           "evidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
+          "checkedAt": ""
+        }
+      ],
+      "history": [
+        {
+          "status": "approval_pending",
+          "timestamp": "2026-07-14T03:06:44.378Z",
+          "channel": "website_form",
+          "evidence": "contact_entry_verified;mailto_detected;initial_page_verified;website_contact_form_fields_prepared;marketing_attachment_missing;text_only_manual_submit_required;website_contact_target_attempts:1"
+        },
+        {
+          "status": "website_contact_unreachable_skip",
+          "timestamp": "2026-07-15T10:13:32.706Z",
+          "channel": "website_form",
+          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:1"
+        },
+        {
+          "status": "website_contact_unreachable_skip",
+          "timestamp": "2026-07-16T02:01:14.364Z",
+          "channel": "website_form",
+          "evidence": "website_contact_entry_not_verified;no_contact_route_detected;website_contact_all_targets_failed:1"
+        },
+        {
+          "status": "website_contact_unreachable_skip",
+          "timestamp": "2026-07-21T02:17:42.346Z",
+          "channel": "website_form",
+          "evidence": "website_page_unavailable_404: 404;website_contact_all_targets_failed:6;contact_path_strategy_v2"
+        },
+        {
+          "status": "website_contact_unreachable_skip",
+          "timestamp": "2026-07-22T11:03:58.088Z",
+          "channel": "website_form",
+          "evidence": "website_page_unavailable_404: Gå till huvudinnehåll\nFri frakt över 595 kr\n30 dagars öppet köp\nFri hemleverans över 595 kr\nMed kärlek för naturen\nVåra butiker\nLogga in\nNyheter\nDam\nAllt inom Dam\nDamkläder\nDamskor;website_contact_all_targets_failed:6;contact_path_strategy_v2"
+        },
+        {
+          "status": "website_contact_unreachable_skip",
+          "timestamp": "2026-07-26T22:08:19.201Z",
+          "channel": "website_form",
+          "evidence": "website_contact_entry_not_verified;no_contact_route_detected;website_contact_all_targets_failed:6;contact_path_strategy_v2"
+        }
+      ]
+    },
+    {
+      "companyId": "company_513b53e283883f91",
+      "company": "Outnorth",
+      "keys": [
+        "outnorth",
+        "outnorthcom"
+      ],
+      "domains": [
+        "outnorth.com"
+      ],
+      "channels": [
+        "website_form",
+        "email"
+      ],
+      "evidence": [
+        {
+          "channel": "website_form",
+          "score": 80,
+          "verified": false,
+          "reasons": [
+            "first_party_evidence"
+          ],
+          "evidenceUrl": "https://www.outnorth.com/int/faq/contact",
+          "checkedAt": ""
+        },
+        {
+          "channel": "website_form",
+          "score": 80,
+          "verified": false,
+          "reasons": [
+            "first_party_evidence"
+          ],
+          "evidenceUrl": "https://www.outnorth.com/int/faq/contact",
+          "checkedAt": ""
+        },
+        {
+          "channel": "website_form",
+          "score": 80,
+          "verified": false,
+          "reasons": [
+            "first_party_evidence"
+          ],
+          "evidenceUrl": "https://www.outnorth.com/int/faq/contact",
           "checkedAt": ""
         }
       ],
@@ -546,6 +743,90 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
           "timestamp": "2026-07-30T11:41:27.380Z",
           "channel": "website_form",
           "evidence": "customer_execution_timeout:90000;queue_continued_to_next_customer"
+        }
+      ]
+    },
+    {
+      "companyId": "company_5b717df33a01ec42",
+      "company": "Ultralight Outdoor Gear",
+      "keys": [
+        "ultralightoutdoorgear",
+        "ultralightoutdoorgearcouk"
+      ],
+      "domains": [
+        "ultralightoutdoorgear.co.uk"
+      ],
+      "channels": [
+        "website_form"
+      ],
+      "evidence": [
+        {
+          "channel": "website_form",
+          "score": 100,
+          "verified": true,
+          "reasons": [
+            "official_business_route"
+          ],
+          "evidenceUrl": "https://ultralightoutdoorgear.co.uk/",
+          "checkedAt": ""
+        },
+        {
+          "channel": "website_form",
+          "score": 100,
+          "verified": true,
+          "reasons": [
+            "official_business_route"
+          ],
+          "evidenceUrl": "https://ultralightoutdoorgear.co.uk/",
+          "checkedAt": ""
+        },
+        {
+          "channel": "website_form",
+          "score": 100,
+          "verified": true,
+          "reasons": [
+            "official_business_route"
+          ],
+          "evidenceUrl": "https://ultralightoutdoorgear.co.uk/",
+          "checkedAt": ""
+        }
+      ],
+      "history": [
+        {
+          "status": "website_contact_unreachable_skip",
+          "timestamp": "2026-07-14T03:07:14.514Z",
+          "channel": "website_form",
+          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:1"
+        },
+        {
+          "status": "website_contact_unreachable_skip",
+          "timestamp": "2026-07-15T16:05:20.027Z",
+          "channel": "website_form",
+          "evidence": "website_contact_entry_not_verified;contact_entry_clicked:Contact Us;website_contact_all_targets_failed:1"
+        },
+        {
+          "status": "website_contact_unreachable_skip",
+          "timestamp": "2026-07-16T02:02:15.894Z",
+          "channel": "website_form",
+          "evidence": "website_contact_entry_not_verified;no_contact_route_detected;website_contact_all_targets_failed:1"
+        },
+        {
+          "status": "website_contact_unreachable_skip",
+          "timestamp": "2026-07-21T02:21:23.585Z",
+          "channel": "website_form",
+          "evidence": "unavailable_profile_page: Skip to main content\nPrevious\nSpend over £25 and get our Anniversary Neck Tube for 1p\nFree UK Delivery when you spend over £ 15\nTime Saver Guide to Choosing a Waterproof Jacket\nSpe;website_contact_all_targets_failed:6;contact_path_strategy_v2"
+        },
+        {
+          "status": "website_contact_unreachable_skip",
+          "timestamp": "2026-07-21T16:13:15.769Z",
+          "channel": "website_form",
+          "evidence": "website_page_unavailable_404: Ultralight Outdoor Gear - Not Found;website_contact_all_targets_failed:6;contact_path_strategy_v2"
+        },
+        {
+          "status": "website_contact_unreachable_skip",
+          "timestamp": "2026-07-22T17:08:32.090Z",
+          "channel": "website_form",
+          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:6;contact_path_strategy_v2"
         }
       ]
     },
@@ -981,7 +1262,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
       ],
       "evidence": [
         {
-          "channel": "research",
+          "channel": "website_form",
           "score": 100,
           "verified": true,
           "reasons": [
@@ -992,30 +1273,30 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
         },
         {
           "channel": "website_form",
-          "score": 80,
-          "verified": false,
+          "score": 100,
+          "verified": true,
           "reasons": [
-            "first_party_evidence"
+            "official_business_route"
           ],
           "evidenceUrl": "https://www.campervangift.co.uk/become-a-supplier/",
           "checkedAt": ""
         },
         {
           "channel": "website_form",
-          "score": 80,
-          "verified": false,
+          "score": 100,
+          "verified": true,
           "reasons": [
-            "first_party_evidence"
+            "official_business_route"
           ],
           "evidenceUrl": "https://www.campervangift.co.uk/become-a-supplier/",
           "checkedAt": ""
         },
         {
-          "channel": "website_form",
-          "score": 80,
-          "verified": false,
+          "channel": "research",
+          "score": 100,
+          "verified": true,
           "reasons": [
-            "first_party_evidence"
+            "official_business_route"
           ],
           "evidenceUrl": "https://www.campervangift.co.uk/become-a-supplier/",
           "checkedAt": ""
@@ -1269,90 +1550,6 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
       ]
     },
     {
-      "companyId": "company_f2905733b544c0f2",
-      "company": "Naturkompaniet",
-      "keys": [
-        "naturkompaniet",
-        "naturkompanietse"
-      ],
-      "domains": [
-        "naturkompaniet.se"
-      ],
-      "channels": [
-        "website_form"
-      ],
-      "evidence": [
-        {
-          "channel": "website_form",
-          "score": 0,
-          "verified": false,
-          "reasons": [
-            "unverified_external_evidence_rejected"
-          ],
-          "evidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
-          "checkedAt": ""
-        },
-        {
-          "channel": "website_form",
-          "score": 0,
-          "verified": false,
-          "reasons": [
-            "unverified_external_evidence_rejected"
-          ],
-          "evidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
-          "checkedAt": ""
-        },
-        {
-          "channel": "website_form",
-          "score": 0,
-          "verified": false,
-          "reasons": [
-            "unverified_external_evidence_rejected"
-          ],
-          "evidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
-          "checkedAt": ""
-        }
-      ],
-      "history": [
-        {
-          "status": "approval_pending",
-          "timestamp": "2026-07-14T03:06:44.378Z",
-          "channel": "website_form",
-          "evidence": "contact_entry_verified;mailto_detected;initial_page_verified;website_contact_form_fields_prepared;marketing_attachment_missing;text_only_manual_submit_required;website_contact_target_attempts:1"
-        },
-        {
-          "status": "website_contact_unreachable_skip",
-          "timestamp": "2026-07-15T10:13:32.706Z",
-          "channel": "website_form",
-          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:1"
-        },
-        {
-          "status": "website_contact_unreachable_skip",
-          "timestamp": "2026-07-16T02:01:14.364Z",
-          "channel": "website_form",
-          "evidence": "website_contact_entry_not_verified;no_contact_route_detected;website_contact_all_targets_failed:1"
-        },
-        {
-          "status": "website_contact_unreachable_skip",
-          "timestamp": "2026-07-21T02:17:42.346Z",
-          "channel": "website_form",
-          "evidence": "website_page_unavailable_404: 404;website_contact_all_targets_failed:6;contact_path_strategy_v2"
-        },
-        {
-          "status": "website_contact_unreachable_skip",
-          "timestamp": "2026-07-22T11:03:58.088Z",
-          "channel": "website_form",
-          "evidence": "website_page_unavailable_404: Gå till huvudinnehåll\nFri frakt över 595 kr\n30 dagars öppet köp\nFri hemleverans över 595 kr\nMed kärlek för naturen\nVåra butiker\nLogga in\nNyheter\nDam\nAllt inom Dam\nDamkläder\nDamskor;website_contact_all_targets_failed:6;contact_path_strategy_v2"
-        },
-        {
-          "status": "website_contact_unreachable_skip",
-          "timestamp": "2026-07-26T22:08:19.201Z",
-          "channel": "website_form",
-          "evidence": "website_contact_entry_not_verified;no_contact_route_detected;website_contact_all_targets_failed:6;contact_path_strategy_v2"
-        }
-      ]
-    },
-    {
       "companyId": "company_e76c722a1203ce12",
       "company": "Trekitt",
       "keys": [
@@ -1368,32 +1565,32 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
       "evidence": [
         {
           "channel": "website_form",
-          "score": 0,
+          "score": 80,
           "verified": false,
           "reasons": [
-            "unverified_external_evidence_rejected"
+            "first_party_evidence"
           ],
-          "evidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
+          "evidenceUrl": "https://www.trekitt.co.uk/",
           "checkedAt": ""
         },
         {
           "channel": "website_form",
-          "score": 0,
+          "score": 80,
           "verified": false,
           "reasons": [
-            "unverified_external_evidence_rejected"
+            "first_party_evidence"
           ],
-          "evidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
+          "evidenceUrl": "https://www.trekitt.co.uk/",
           "checkedAt": ""
         },
         {
           "channel": "website_form",
-          "score": 0,
+          "score": 80,
           "verified": false,
           "reasons": [
-            "unverified_external_evidence_rejected"
+            "first_party_evidence"
           ],
-          "evidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
+          "evidenceUrl": "https://www.trekitt.co.uk/",
           "checkedAt": ""
         }
       ],
@@ -1433,90 +1630,6 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
           "timestamp": "2026-07-22T16:12:49.202Z",
           "channel": "website_form",
           "evidence": "unavailable_profile_page: Page not found;website_contact_all_targets_failed:6;contact_path_strategy_v2"
-        }
-      ]
-    },
-    {
-      "companyId": "company_5b717df33a01ec42",
-      "company": "Ultralight Outdoor Gear",
-      "keys": [
-        "ultralightoutdoorgear",
-        "ultralightoutdoorgearcouk"
-      ],
-      "domains": [
-        "ultralightoutdoorgear.co.uk"
-      ],
-      "channels": [
-        "website_form"
-      ],
-      "evidence": [
-        {
-          "channel": "website_form",
-          "score": 0,
-          "verified": false,
-          "reasons": [
-            "unverified_external_evidence_rejected"
-          ],
-          "evidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
-          "checkedAt": ""
-        },
-        {
-          "channel": "website_form",
-          "score": 0,
-          "verified": false,
-          "reasons": [
-            "unverified_external_evidence_rejected"
-          ],
-          "evidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
-          "checkedAt": ""
-        },
-        {
-          "channel": "website_form",
-          "score": 0,
-          "verified": false,
-          "reasons": [
-            "unverified_external_evidence_rejected"
-          ],
-          "evidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
-          "checkedAt": ""
-        }
-      ],
-      "history": [
-        {
-          "status": "website_contact_unreachable_skip",
-          "timestamp": "2026-07-14T03:07:14.514Z",
-          "channel": "website_form",
-          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:1"
-        },
-        {
-          "status": "website_contact_unreachable_skip",
-          "timestamp": "2026-07-15T16:05:20.027Z",
-          "channel": "website_form",
-          "evidence": "website_contact_entry_not_verified;contact_entry_clicked:Contact Us;website_contact_all_targets_failed:1"
-        },
-        {
-          "status": "website_contact_unreachable_skip",
-          "timestamp": "2026-07-16T02:02:15.894Z",
-          "channel": "website_form",
-          "evidence": "website_contact_entry_not_verified;no_contact_route_detected;website_contact_all_targets_failed:1"
-        },
-        {
-          "status": "website_contact_unreachable_skip",
-          "timestamp": "2026-07-21T02:21:23.585Z",
-          "channel": "website_form",
-          "evidence": "unavailable_profile_page: Skip to main content\nPrevious\nSpend over £25 and get our Anniversary Neck Tube for 1p\nFree UK Delivery when you spend over £ 15\nTime Saver Guide to Choosing a Waterproof Jacket\nSpe;website_contact_all_targets_failed:6;contact_path_strategy_v2"
-        },
-        {
-          "status": "website_contact_unreachable_skip",
-          "timestamp": "2026-07-21T16:13:15.769Z",
-          "channel": "website_form",
-          "evidence": "website_page_unavailable_404: Ultralight Outdoor Gear - Not Found;website_contact_all_targets_failed:6;contact_path_strategy_v2"
-        },
-        {
-          "status": "website_contact_unreachable_skip",
-          "timestamp": "2026-07-22T17:08:32.090Z",
-          "channel": "website_form",
-          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:6;contact_path_strategy_v2"
         }
       ]
     },
@@ -2269,139 +2382,6 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
       ]
     },
     {
-      "companyId": "company_819cc04fe9060117",
-      "company": "Intersport Norway",
-      "keys": [
-        "intersportnorway",
-        "intersportno"
-      ],
-      "domains": [
-        "intersport.no"
-      ],
-      "channels": [
-        "website_form",
-        "facebook"
-      ],
-      "evidence": [
-        {
-          "channel": "website_form",
-          "score": 0,
-          "verified": false,
-          "reasons": [
-            "unverified_external_evidence_rejected"
-          ],
-          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
-          "checkedAt": ""
-        },
-        {
-          "channel": "facebook",
-          "score": 0,
-          "verified": false,
-          "reasons": [
-            "unverified_external_evidence_rejected"
-          ],
-          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
-          "checkedAt": ""
-        },
-        {
-          "channel": "website_form",
-          "score": 0,
-          "verified": false,
-          "reasons": [
-            "unverified_external_evidence_rejected"
-          ],
-          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
-          "checkedAt": ""
-        },
-        {
-          "channel": "facebook",
-          "score": 0,
-          "verified": false,
-          "reasons": [
-            "unverified_external_evidence_rejected"
-          ],
-          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
-          "checkedAt": ""
-        },
-        {
-          "channel": "facebook",
-          "score": 0,
-          "verified": false,
-          "reasons": [
-            "unverified_external_evidence_rejected"
-          ],
-          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
-          "checkedAt": ""
-        },
-        {
-          "channel": "website_form",
-          "score": 0,
-          "verified": false,
-          "reasons": [
-            "unverified_external_evidence_rejected"
-          ],
-          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
-          "checkedAt": ""
-        }
-      ],
-      "history": [
-        {
-          "status": "failed_open",
-          "timestamp": "2026-07-17T03:08:23.123Z",
-          "channel": "facebook",
-          "evidence": "facebook_profile_no_message_button"
-        },
-        {
-          "status": "failed_open",
-          "timestamp": "2026-07-29T10:32:27.741Z",
-          "channel": "facebook",
-          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;personal_profile_without_company_match_expected_Intersport Norway_title_Facebook;contact_path_strategy_v2"
-        },
-        {
-          "status": "failed_open",
-          "timestamp": "2026-07-29T10:35:24.888Z",
-          "channel": "website_form",
-          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;personal_profile_without_company_match_expected_Intersport Norway_title_Facebook;contact_path_strategy_v2"
-        },
-        {
-          "status": "failed_open",
-          "timestamp": "2026-07-29T10:36:57.221Z",
-          "channel": "facebook",
-          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;identity_mismatch_expected_Intersport Norway_title_Facebook;contact_path_strategy_v2"
-        },
-        {
-          "status": "failed_open",
-          "timestamp": "2026-07-29T10:40:05.598Z",
-          "channel": "website_form",
-          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;identity_mismatch_expected_Intersport Norway_title_Facebook;contact_path_strategy_v2"
-        },
-        {
-          "status": "failed_open",
-          "timestamp": "2026-08-04T12:04:11.277Z",
-          "channel": "facebook",
-          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;identity_mismatch_expected_Intersport Norway_title_Facebook;contact_path_strategy_v2"
-        },
-        {
-          "status": "failed_open",
-          "timestamp": "2026-08-04T12:37:48.077Z",
-          "channel": "website_form",
-          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;identity_mismatch_expected_Intersport Norway_title_Facebook;contact_path_strategy_v2"
-        },
-        {
-          "status": "failed_open",
-          "timestamp": "2026-08-05T02:00:11.658Z",
-          "channel": "facebook",
-          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;identity_mismatch_expected_Intersport Norway_title_www.facebook.com;contact_path_strategy_v2"
-        },
-        {
-          "status": "failed_open",
-          "timestamp": "2026-08-05T03:01:21.601Z",
-          "channel": "website_form",
-          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;identity_mismatch_expected_Intersport Norway_title_www.facebook.com;contact_path_strategy_v2"
-        }
-      ]
-    },
-    {
       "companyId": "company_e4a228cde5d155b2",
       "company": "LD Mountain Centre",
       "keys": [
@@ -2661,92 +2641,92 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
       "evidence": [
         {
           "channel": "website_form",
-          "score": 80,
+          "score": 0,
           "verified": false,
           "reasons": [
-            "first_party_evidence"
+            "unverified_external_evidence_rejected"
           ],
-          "evidenceUrl": "https://www.tiso.com/",
+          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
+          "checkedAt": ""
+        },
+        {
+          "channel": "facebook",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
+          "checkedAt": ""
+        },
+        {
+          "channel": "instagram",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
           "checkedAt": ""
         },
         {
           "channel": "website_form",
-          "score": 80,
+          "score": 0,
           "verified": false,
           "reasons": [
-            "first_party_evidence"
+            "unverified_external_evidence_rejected"
           ],
-          "evidenceUrl": "https://www.tiso.com/",
+          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
+          "checkedAt": ""
+        },
+        {
+          "channel": "facebook",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
+          "checkedAt": ""
+        },
+        {
+          "channel": "instagram",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
+          "checkedAt": ""
+        },
+        {
+          "channel": "instagram",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
+          "checkedAt": ""
+        },
+        {
+          "channel": "facebook",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
           "checkedAt": ""
         },
         {
           "channel": "website_form",
-          "score": 80,
-          "verified": false,
-          "reasons": [
-            "first_party_evidence"
-          ],
-          "evidenceUrl": "https://www.tiso.com/",
-          "checkedAt": ""
-        },
-        {
-          "channel": "facebook",
           "score": 0,
           "verified": false,
           "reasons": [
             "unverified_external_evidence_rejected"
           ],
-          "evidenceUrl": "https://www.tiso.com/",
-          "checkedAt": ""
-        },
-        {
-          "channel": "instagram",
-          "score": 0,
-          "verified": false,
-          "reasons": [
-            "unverified_external_evidence_rejected"
-          ],
-          "evidenceUrl": "https://www.tiso.com/",
-          "checkedAt": ""
-        },
-        {
-          "channel": "facebook",
-          "score": 0,
-          "verified": false,
-          "reasons": [
-            "unverified_external_evidence_rejected"
-          ],
-          "evidenceUrl": "https://www.tiso.com/",
-          "checkedAt": ""
-        },
-        {
-          "channel": "instagram",
-          "score": 0,
-          "verified": false,
-          "reasons": [
-            "unverified_external_evidence_rejected"
-          ],
-          "evidenceUrl": "https://www.tiso.com/",
-          "checkedAt": ""
-        },
-        {
-          "channel": "instagram",
-          "score": 0,
-          "verified": false,
-          "reasons": [
-            "unverified_external_evidence_rejected"
-          ],
-          "evidenceUrl": "https://www.tiso.com/",
-          "checkedAt": ""
-        },
-        {
-          "channel": "facebook",
-          "score": 0,
-          "verified": false,
-          "reasons": [
-            "unverified_external_evidence_rejected"
-          ],
-          "evidenceUrl": "https://www.tiso.com/",
+          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
           "checkedAt": ""
         }
       ],
@@ -3323,11 +3303,14 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
       "keys": [
         "rockcreek",
         "rockcreekcom",
-        "gmailcom"
+        "gmailcom",
+        "newworldoutdoorgearco",
+        "nwogcocom"
       ],
       "domains": [
         "rockcreek.com",
-        "gmail.com"
+        "gmail.com",
+        "nwogco.com"
       ],
       "channels": [
         "website_form",
@@ -3335,6 +3318,26 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
         "instagram"
       ],
       "evidence": [
+        {
+          "channel": "instagram",
+          "score": 100,
+          "verified": true,
+          "reasons": [
+            "official_business_route"
+          ],
+          "evidenceUrl": "https://www.nwogco.com/",
+          "checkedAt": "2026-08-05T05:09:31.528Z"
+        },
+        {
+          "channel": "website_form",
+          "score": 100,
+          "verified": true,
+          "reasons": [
+            "official_business_route"
+          ],
+          "evidenceUrl": "https://www.nwogco.com/",
+          "checkedAt": "2026-08-05T05:09:31.528Z"
+        },
         {
           "channel": "website_form",
           "score": 0,
@@ -3516,6 +3519,18 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
           "timestamp": "2026-07-20T05:01:56.256Z",
           "channel": "instagram",
           "evidence": "instagram_engagement_completed_message_unavailable;instagram_message_button_clicked_composer_not_found;follow_already_active;instagram_post_opened;post_liked;comment_submitted"
+        },
+        {
+          "status": "send_unconfirmed",
+          "timestamp": "2026-07-29T10:48:00.271Z",
+          "channel": "instagram",
+          "evidence": "website_contact_entry_not_verified;contact_entry_clicked:CONTACT;official_social_fallback:instagram;instagram_message_sent_confirmed_after_send_click;instagram_draft_inserted_verified;sentText:false;outgoingBubble:true;emptyComposer:true;;contact_path_strategy_v2;downgraded_missing_persisted_conversation_history"
+        },
+        {
+          "status": "send_unconfirmed",
+          "timestamp": "2026-07-29T11:01:32.828Z",
+          "channel": "website_form",
+          "evidence": "website_contact_entry_not_verified;contact_entry_clicked:CONTACT;official_social_fallback:instagram;instagram_message_sent_confirmed_after_send_click;instagram_draft_inserted_verified;sentText:false;outgoingBubble:true;emptyComposer:true;;contact_path_strategy_v2;downgraded_missing_persisted_conversation_history"
         },
         {
           "status": "failed_open",
@@ -3702,6 +3717,96 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
       ]
     },
     {
+      "companyId": "company_7580a97286e5f239",
+      "company": "Durango Outdoor Exchange",
+      "keys": [
+        "durangooutdoorexchange",
+        "durangooutdoorexchangecom"
+      ],
+      "domains": [
+        "durangooutdoorexchange.com"
+      ],
+      "channels": [
+        "website_form"
+      ],
+      "evidence": [
+        {
+          "channel": "website_form",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
+          "checkedAt": ""
+        },
+        {
+          "channel": "website_form",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
+          "checkedAt": ""
+        },
+        {
+          "channel": "website_form",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
+          "checkedAt": ""
+        }
+      ],
+      "history": [
+        {
+          "status": "website_contact_ready",
+          "timestamp": "2026-07-14T04:03:00.059Z",
+          "channel": "website_form",
+          "evidence": "contact_entry_verified;mailto_detected;initial_page_verified;website_contact_form_fields_prepared;marketing_attachment_missing;text_only_manual_submit_required;website_contact_target_attempts:1"
+        },
+        {
+          "status": "website_contact_unreachable_skip",
+          "timestamp": "2026-07-29T10:32:00.787Z",
+          "channel": "website_form",
+          "evidence": "unavailable_profile_page: CONSIGNOR LOGIN\n \nWHO WE ARE\n \nSUSTAINABILITY EFFORTS\n \nGIFT CARDS\n \nSELL YOUR GEAR\n \nSHOP \n0\n\nACCEPTING GEAR DROP OFFS MON-SAT 10AM-5PM. NO CONSIGNMENT ACCEPTANCE ON SUNDAYS.\n\n   ;website_contact_all_targets_failed:6;contact_path_strategy_v2"
+        },
+        {
+          "status": "website_contact_unreachable_skip",
+          "timestamp": "2026-07-29T10:35:24.770Z",
+          "channel": "website_form",
+          "evidence": "unavailable_profile_page: CONSIGNOR LOGIN\n \nWHO WE ARE\n \nSUSTAINABILITY EFFORTS\n \nGIFT CARDS\n \nSELL YOUR GEAR\n \nSHOP \n0\n\nACCEPTING GEAR DROP OFFS MON-SAT 10AM-5PM. NO CONSIGNMENT ACCEPTANCE ON SUNDAYS.\n\n   ;website_contact_all_targets_failed:6;contact_path_strategy_v2"
+        },
+        {
+          "status": "website_contact_unreachable_skip",
+          "timestamp": "2026-07-29T16:08:49.399Z",
+          "channel": "website_form",
+          "evidence": "unavailable_profile_page: CONSIGNOR LOGIN\n \nWHO WE ARE\n \nSUSTAINABILITY EFFORTS\n \nGIFT CARDS\n \nSELL YOUR GEAR\n \nSHOP \n0\n\nACCEPTING GEAR DROP OFFS MON-SAT 10AM-5PM. NO CONSIGNMENT ACCEPTANCE ON SUNDAYS.\n\n   ;website_contact_all_targets_failed:6;contact_path_strategy_v2"
+        },
+        {
+          "status": "website_contact_unreachable_skip",
+          "timestamp": "2026-07-29T17:02:28.042Z",
+          "channel": "website_form",
+          "evidence": "unavailable_profile_page: CONSIGNOR LOGIN\n \nWHO WE ARE\n \nSUSTAINABILITY EFFORTS\n \nGIFT CARDS\n \nSELL YOUR GEAR\n \nSHOP \n0\n\nACCEPTING GEAR DROP OFFS MON-SAT 10AM-5PM. NO CONSIGNMENT ACCEPTANCE ON SUNDAYS.\n\n   ;website_contact_all_targets_failed:6;contact_path_strategy_v2"
+        },
+        {
+          "status": "website_contact_unreachable_skip",
+          "timestamp": "2026-07-30T16:07:28.621Z",
+          "channel": "website_form",
+          "evidence": "unavailable_profile_page: CONSIGNOR LOGIN\n \nWHO WE ARE\n \nSUSTAINABILITY EFFORTS\n \nGIFT CARDS\n \nSELL YOUR GEAR\n \nSHOP \n0\n\nACCEPTING GEAR DROP OFFS MON-SAT 10AM-5PM. NO CONSIGNMENT ACCEPTANCE ON SUNDAYS.\n\n   ;website_contact_all_targets_failed:6;contact_path_strategy_v2"
+        },
+        {
+          "status": "website_contact_unreachable_skip",
+          "timestamp": "2026-07-30T18:01:08.168Z",
+          "channel": "website_form",
+          "evidence": "unavailable_profile_page: CONSIGNOR LOGIN\n \nWHO WE ARE\n \nSUSTAINABILITY EFFORTS\n \nGIFT CARDS\n \nSELL YOUR GEAR\n \nSHOP \n0\n\nACCEPTING GEAR DROP OFFS MON-SAT 10AM-5PM. NO CONSIGNMENT ACCEPTANCE ON SUNDAYS.\n\n   ;website_contact_all_targets_failed:6;contact_path_strategy_v2"
+        }
+      ]
+    },
+    {
       "companyId": "company_5eb35eb0563d7a2b",
       "company": "Next Adventure",
       "keys": [
@@ -3862,7 +3967,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
       ],
       "evidence": [
         {
-          "channel": "research",
+          "channel": "website_form",
           "score": 100,
           "verified": true,
           "reasons": [
@@ -3873,30 +3978,30 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
         },
         {
           "channel": "website_form",
-          "score": 80,
-          "verified": false,
+          "score": 100,
+          "verified": true,
           "reasons": [
-            "first_party_evidence"
+            "official_business_route"
           ],
           "evidenceUrl": "https://www.bbqfans.com/become-a-supplier/",
           "checkedAt": ""
         },
         {
           "channel": "website_form",
-          "score": 80,
-          "verified": false,
+          "score": 100,
+          "verified": true,
           "reasons": [
-            "first_party_evidence"
+            "official_business_route"
           ],
           "evidenceUrl": "https://www.bbqfans.com/become-a-supplier/",
           "checkedAt": ""
         },
         {
-          "channel": "website_form",
-          "score": 80,
-          "verified": false,
+          "channel": "research",
+          "score": 100,
+          "verified": true,
           "reasons": [
-            "first_party_evidence"
+            "official_business_route"
           ],
           "evidenceUrl": "https://www.bbqfans.com/become-a-supplier/",
           "checkedAt": ""
@@ -5343,32 +5448,32 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
       "evidence": [
         {
           "channel": "website_form",
-          "score": 80,
+          "score": 0,
           "verified": false,
           "reasons": [
-            "first_party_evidence"
+            "unverified_external_evidence_rejected"
           ],
-          "evidenceUrl": "https://www.avidmax.com/",
+          "evidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
           "checkedAt": ""
         },
         {
           "channel": "website_form",
-          "score": 80,
+          "score": 0,
           "verified": false,
           "reasons": [
-            "first_party_evidence"
+            "unverified_external_evidence_rejected"
           ],
-          "evidenceUrl": "https://www.avidmax.com/",
+          "evidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
           "checkedAt": ""
         },
         {
           "channel": "website_form",
-          "score": 80,
+          "score": 0,
           "verified": false,
           "reasons": [
-            "first_party_evidence"
+            "unverified_external_evidence_rejected"
           ],
-          "evidenceUrl": "https://www.avidmax.com/",
+          "evidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
           "checkedAt": ""
         }
       ],
@@ -5415,32 +5520,32 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
       "evidence": [
         {
           "channel": "website_form",
-          "score": 80,
+          "score": 0,
           "verified": false,
           "reasons": [
-            "first_party_evidence"
+            "unverified_external_evidence_rejected"
           ],
-          "evidenceUrl": "https://www.gearwest.com/",
+          "evidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
           "checkedAt": ""
         },
         {
           "channel": "website_form",
-          "score": 80,
+          "score": 0,
           "verified": false,
           "reasons": [
-            "first_party_evidence"
+            "unverified_external_evidence_rejected"
           ],
-          "evidenceUrl": "https://www.gearwest.com/",
+          "evidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
           "checkedAt": ""
         },
         {
           "channel": "website_form",
-          "score": 80,
+          "score": 0,
           "verified": false,
           "reasons": [
-            "first_party_evidence"
+            "unverified_external_evidence_rejected"
           ],
-          "evidenceUrl": "https://www.gearwest.com/",
+          "evidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
           "checkedAt": ""
         }
       ],
@@ -5468,96 +5573,6 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
           "timestamp": "2026-07-29T02:55:10.674Z",
           "channel": "website_form",
           "evidence": "unavailable_profile_page: Skip to content\nGift Cards\nService\nRentals\nTrade-In Program\nGear Guide\nTrail Kids Equipment Guide\n My Account\nSearch\n0\nMenu\nOops! Page not found.\n404 Error\n\nThe page you are lookin;website_contact_all_targets_failed:6;contact_path_strategy_v2"
-        }
-      ]
-    },
-    {
-      "companyId": "company_7580a97286e5f239",
-      "company": "Durango Outdoor Exchange",
-      "keys": [
-        "durangooutdoorexchange",
-        "durangooutdoorexchangecom"
-      ],
-      "domains": [
-        "durangooutdoorexchange.com"
-      ],
-      "channels": [
-        "website_form"
-      ],
-      "evidence": [
-        {
-          "channel": "website_form",
-          "score": 0,
-          "verified": false,
-          "reasons": [
-            "unverified_external_evidence_rejected"
-          ],
-          "evidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
-          "checkedAt": ""
-        },
-        {
-          "channel": "website_form",
-          "score": 0,
-          "verified": false,
-          "reasons": [
-            "unverified_external_evidence_rejected"
-          ],
-          "evidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
-          "checkedAt": ""
-        },
-        {
-          "channel": "website_form",
-          "score": 0,
-          "verified": false,
-          "reasons": [
-            "unverified_external_evidence_rejected"
-          ],
-          "evidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
-          "checkedAt": ""
-        }
-      ],
-      "history": [
-        {
-          "status": "website_contact_ready",
-          "timestamp": "2026-07-14T04:03:00.059Z",
-          "channel": "website_form",
-          "evidence": "contact_entry_verified;mailto_detected;initial_page_verified;website_contact_form_fields_prepared;marketing_attachment_missing;text_only_manual_submit_required;website_contact_target_attempts:1"
-        },
-        {
-          "status": "website_contact_unreachable_skip",
-          "timestamp": "2026-07-29T10:32:00.787Z",
-          "channel": "website_form",
-          "evidence": "unavailable_profile_page: CONSIGNOR LOGIN\n \nWHO WE ARE\n \nSUSTAINABILITY EFFORTS\n \nGIFT CARDS\n \nSELL YOUR GEAR\n \nSHOP \n0\n\nACCEPTING GEAR DROP OFFS MON-SAT 10AM-5PM. NO CONSIGNMENT ACCEPTANCE ON SUNDAYS.\n\n   ;website_contact_all_targets_failed:6;contact_path_strategy_v2"
-        },
-        {
-          "status": "website_contact_unreachable_skip",
-          "timestamp": "2026-07-29T10:35:24.770Z",
-          "channel": "website_form",
-          "evidence": "unavailable_profile_page: CONSIGNOR LOGIN\n \nWHO WE ARE\n \nSUSTAINABILITY EFFORTS\n \nGIFT CARDS\n \nSELL YOUR GEAR\n \nSHOP \n0\n\nACCEPTING GEAR DROP OFFS MON-SAT 10AM-5PM. NO CONSIGNMENT ACCEPTANCE ON SUNDAYS.\n\n   ;website_contact_all_targets_failed:6;contact_path_strategy_v2"
-        },
-        {
-          "status": "website_contact_unreachable_skip",
-          "timestamp": "2026-07-29T16:08:49.399Z",
-          "channel": "website_form",
-          "evidence": "unavailable_profile_page: CONSIGNOR LOGIN\n \nWHO WE ARE\n \nSUSTAINABILITY EFFORTS\n \nGIFT CARDS\n \nSELL YOUR GEAR\n \nSHOP \n0\n\nACCEPTING GEAR DROP OFFS MON-SAT 10AM-5PM. NO CONSIGNMENT ACCEPTANCE ON SUNDAYS.\n\n   ;website_contact_all_targets_failed:6;contact_path_strategy_v2"
-        },
-        {
-          "status": "website_contact_unreachable_skip",
-          "timestamp": "2026-07-29T17:02:28.042Z",
-          "channel": "website_form",
-          "evidence": "unavailable_profile_page: CONSIGNOR LOGIN\n \nWHO WE ARE\n \nSUSTAINABILITY EFFORTS\n \nGIFT CARDS\n \nSELL YOUR GEAR\n \nSHOP \n0\n\nACCEPTING GEAR DROP OFFS MON-SAT 10AM-5PM. NO CONSIGNMENT ACCEPTANCE ON SUNDAYS.\n\n   ;website_contact_all_targets_failed:6;contact_path_strategy_v2"
-        },
-        {
-          "status": "website_contact_unreachable_skip",
-          "timestamp": "2026-07-30T16:07:28.621Z",
-          "channel": "website_form",
-          "evidence": "unavailable_profile_page: CONSIGNOR LOGIN\n \nWHO WE ARE\n \nSUSTAINABILITY EFFORTS\n \nGIFT CARDS\n \nSELL YOUR GEAR\n \nSHOP \n0\n\nACCEPTING GEAR DROP OFFS MON-SAT 10AM-5PM. NO CONSIGNMENT ACCEPTANCE ON SUNDAYS.\n\n   ;website_contact_all_targets_failed:6;contact_path_strategy_v2"
-        },
-        {
-          "status": "website_contact_unreachable_skip",
-          "timestamp": "2026-07-30T18:01:08.168Z",
-          "channel": "website_form",
-          "evidence": "unavailable_profile_page: CONSIGNOR LOGIN\n \nWHO WE ARE\n \nSUSTAINABILITY EFFORTS\n \nGIFT CARDS\n \nSELL YOUR GEAR\n \nSHOP \n0\n\nACCEPTING GEAR DROP OFFS MON-SAT 10AM-5PM. NO CONSIGNMENT ACCEPTANCE ON SUNDAYS.\n\n   ;website_contact_all_targets_failed:6;contact_path_strategy_v2"
         }
       ]
     },
@@ -6948,10 +6963,10 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
       "evidence": [
         {
           "channel": "website_form",
-          "score": 80,
-          "verified": false,
+          "score": 100,
+          "verified": true,
           "reasons": [
-            "first_party_evidence"
+            "official_business_route"
           ],
           "evidenceUrl": "https://www.eetgroup.com/en-eu/eet/become-a-supplier",
           "checkedAt": ""
@@ -7109,10 +7124,12 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
       "keys": [
         "aqipa",
         "aqipacom",
+        "premiumaudiocompanycom",
         "supportaqipacom"
       ],
       "domains": [
         "aqipa.com",
+        "premiumaudiocompany.com",
         "support.aqipa.com"
       ],
       "channels": [
@@ -7122,10 +7139,10 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
       "evidence": [
         {
           "channel": "website_form",
-          "score": 80,
-          "verified": false,
+          "score": 100,
+          "verified": true,
           "reasons": [
-            "first_party_evidence"
+            "official_business_route"
           ],
           "evidenceUrl": "https://support.aqipa.com/en-US/kb/articles/anfrage-partner-werden",
           "checkedAt": ""
@@ -7173,21 +7190,21 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
       ],
       "evidence": [
         {
+          "channel": "linkedin",
+          "score": 95,
+          "verified": true,
+          "reasons": [
+            "official_site_cross_verified_social"
+          ],
+          "evidenceUrl": "https://www.cmsdistribution.com/contact-us",
+          "checkedAt": "2026-08-05T05:09:34.181Z"
+        },
+        {
           "channel": "website_form",
           "score": 80,
           "verified": false,
           "reasons": [
             "first_party_evidence"
-          ],
-          "evidenceUrl": "https://www.cmsdistribution.com/contact-us",
-          "checkedAt": ""
-        },
-        {
-          "channel": "linkedin",
-          "score": 0,
-          "verified": false,
-          "reasons": [
-            "unverified_external_evidence_rejected"
           ],
           "evidenceUrl": "https://www.cmsdistribution.com/contact-us",
           "checkedAt": ""
@@ -7273,20 +7290,40 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
       "evidence": [
         {
           "channel": "website_form",
-          "score": 80,
-          "verified": false,
+          "score": 100,
+          "verified": true,
           "reasons": [
-            "first_party_evidence"
+            "official_business_route"
           ],
           "evidenceUrl": "https://www.basspro.com/",
           "checkedAt": ""
+        },
+        {
+          "channel": "instagram",
+          "score": 100,
+          "verified": true,
+          "reasons": [
+            "official_business_route"
+          ],
+          "evidenceUrl": "https://help.cabelas.com/company-information-ff566349/how-can-i-sell-my-product-through-cabelas-cf904a21",
+          "checkedAt": "2026-08-05T05:09:39.303Z"
+        },
+        {
+          "channel": "facebook",
+          "score": 100,
+          "verified": true,
+          "reasons": [
+            "official_business_route"
+          ],
+          "evidenceUrl": "https://help.cabelas.com/company-information-ff566349/how-can-i-sell-my-product-through-cabelas-cf904a21",
+          "checkedAt": "2026-08-05T05:09:39.303Z"
         },
         {
           "channel": "website_form",
-          "score": 80,
-          "verified": false,
+          "score": 100,
+          "verified": true,
           "reasons": [
-            "first_party_evidence"
+            "official_business_route"
           ],
           "evidenceUrl": "https://www.cabelas.com/",
           "checkedAt": ""
@@ -7309,26 +7346,6 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "unverified_external_evidence_rejected"
           ],
           "evidenceUrl": "https://www.basspro.com/",
-          "checkedAt": ""
-        },
-        {
-          "channel": "instagram",
-          "score": 0,
-          "verified": false,
-          "reasons": [
-            "unverified_external_evidence_rejected"
-          ],
-          "evidenceUrl": "https://www.cabelas.com/",
-          "checkedAt": ""
-        },
-        {
-          "channel": "facebook",
-          "score": 0,
-          "verified": false,
-          "reasons": [
-            "unverified_external_evidence_rejected"
-          ],
-          "evidenceUrl": "https://www.cabelas.com/",
           "checkedAt": ""
         }
       ],
@@ -7535,10 +7552,10 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
       "evidence": [
         {
           "channel": "website_form",
-          "score": 80,
-          "verified": false,
+          "score": 100,
+          "verified": true,
           "reasons": [
-            "first_party_evidence"
+            "official_business_route"
           ],
           "evidenceUrl": "https://www.mec.ca/",
           "checkedAt": ""
@@ -7638,31 +7655,31 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
       ],
       "evidence": [
         {
+          "channel": "instagram",
+          "score": 95,
+          "verified": true,
+          "reasons": [
+            "official_site_cross_verified_social"
+          ],
+          "evidenceUrl": "https://www.gooutdoors.co.uk/",
+          "checkedAt": "2026-08-05T05:09:52.509Z"
+        },
+        {
+          "channel": "facebook",
+          "score": 95,
+          "verified": true,
+          "reasons": [
+            "official_site_cross_verified_social"
+          ],
+          "evidenceUrl": "https://www.gooutdoors.co.uk/",
+          "checkedAt": "2026-08-05T05:09:52.509Z"
+        },
+        {
           "channel": "website_form",
           "score": 80,
           "verified": false,
           "reasons": [
             "first_party_evidence"
-          ],
-          "evidenceUrl": "https://www.gooutdoors.co.uk/",
-          "checkedAt": ""
-        },
-        {
-          "channel": "instagram",
-          "score": 0,
-          "verified": false,
-          "reasons": [
-            "unverified_external_evidence_rejected"
-          ],
-          "evidenceUrl": "https://www.gooutdoors.co.uk/",
-          "checkedAt": ""
-        },
-        {
-          "channel": "facebook",
-          "score": 0,
-          "verified": false,
-          "reasons": [
-            "unverified_external_evidence_rejected"
           ],
           "evidenceUrl": "https://www.gooutdoors.co.uk/",
           "checkedAt": ""
@@ -8059,12 +8076,12 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
       "evidence": [
         {
           "channel": "website_form",
-          "score": 80,
-          "verified": false,
+          "score": 100,
+          "verified": true,
           "reasons": [
-            "first_party_evidence"
+            "official_business_route"
           ],
-          "evidenceUrl": "https://www.sail.ca/",
+          "evidenceUrl": "https://www.sail.ca/en/contact-us",
           "checkedAt": ""
         }
       ],
@@ -8183,31 +8200,31 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
       ],
       "evidence": [
         {
+          "channel": "instagram",
+          "score": 95,
+          "verified": true,
+          "reasons": [
+            "official_site_cross_verified_social"
+          ],
+          "evidenceUrl": "https://www.cotswoldoutdoor.com/",
+          "checkedAt": "2026-08-05T05:09:57.640Z"
+        },
+        {
+          "channel": "facebook",
+          "score": 95,
+          "verified": true,
+          "reasons": [
+            "official_site_cross_verified_social"
+          ],
+          "evidenceUrl": "https://www.cotswoldoutdoor.com/",
+          "checkedAt": "2026-08-05T05:09:57.640Z"
+        },
+        {
           "channel": "website_form",
           "score": 80,
           "verified": false,
           "reasons": [
             "first_party_evidence"
-          ],
-          "evidenceUrl": "https://www.cotswoldoutdoor.com/",
-          "checkedAt": ""
-        },
-        {
-          "channel": "instagram",
-          "score": 0,
-          "verified": false,
-          "reasons": [
-            "unverified_external_evidence_rejected"
-          ],
-          "evidenceUrl": "https://www.cotswoldoutdoor.com/",
-          "checkedAt": ""
-        },
-        {
-          "channel": "facebook",
-          "score": 0,
-          "verified": false,
-          "reasons": [
-            "unverified_external_evidence_rejected"
           ],
           "evidenceUrl": "https://www.cotswoldoutdoor.com/",
           "checkedAt": ""
@@ -8374,22 +8391,22 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
       "evidence": [
         {
           "channel": "instagram",
-          "score": 0,
-          "verified": false,
+          "score": 100,
+          "verified": true,
           "reasons": [
-            "unverified_external_evidence_rejected"
+            "official_business_route"
           ],
-          "evidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
-          "checkedAt": ""
+          "evidenceUrl": "https://www.campsaver.com/",
+          "checkedAt": "2026-08-05T05:09:59.186Z"
         },
         {
           "channel": "website_form",
-          "score": 0,
-          "verified": false,
+          "score": 100,
+          "verified": true,
           "reasons": [
-            "unverified_external_evidence_rejected"
+            "official_business_route"
           ],
-          "evidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
+          "evidenceUrl": "https://www.campsaver.com/",
           "checkedAt": ""
         }
       ],
@@ -8540,7 +8557,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
           "reasons": [
             "first_party_evidence"
           ],
-          "evidenceUrl": "https://www.summitint.co/",
+          "evidenceUrl": "https://www.summitint.co/contact/",
           "checkedAt": ""
         }
       ],
@@ -9384,6 +9401,16 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
       ],
       "evidence": [
         {
+          "channel": "facebook",
+          "score": 95,
+          "verified": true,
+          "reasons": [
+            "official_site_cross_verified_social"
+          ],
+          "evidenceUrl": "https://www.bever.nl/",
+          "checkedAt": "2026-08-05T05:09:23.078Z"
+        },
+        {
           "channel": "website_form",
           "score": 80,
           "verified": false,
@@ -9411,16 +9438,6 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "unverified_external_evidence_rejected"
           ],
           "evidenceUrl": "https://www.bever.nl/",
-          "checkedAt": ""
-        },
-        {
-          "channel": "facebook",
-          "score": 0,
-          "verified": false,
-          "reasons": [
-            "unverified_external_evidence_rejected"
-          ],
-          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
           "checkedAt": ""
         },
         {
@@ -9626,12 +9643,12 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
       "evidence": [
         {
           "channel": "website_form",
-          "score": 80,
+          "score": 0,
           "verified": false,
           "reasons": [
-            "first_party_evidence"
+            "unverified_external_evidence_rejected"
           ],
-          "evidenceUrl": "https://www.furtherfaster.co.nz/",
+          "evidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
           "checkedAt": ""
         }
       ],
@@ -9691,26 +9708,6 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
       ],
       "evidence": [
         {
-          "channel": "instagram",
-          "score": 100,
-          "verified": true,
-          "reasons": [
-            "official_business_route"
-          ],
-          "evidenceUrl": "https://www.bravehardy.com/pages/contact",
-          "checkedAt": "2026-08-05T04:05:15.855Z"
-        },
-        {
-          "channel": "facebook",
-          "score": 100,
-          "verified": true,
-          "reasons": [
-            "official_business_route"
-          ],
-          "evidenceUrl": "https://www.bravehardy.com/pages/contact",
-          "checkedAt": "2026-08-05T04:05:15.855Z"
-        },
-        {
           "channel": "website_form",
           "score": 100,
           "verified": true,
@@ -9721,11 +9718,31 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
           "checkedAt": "2026-08-04T09:55:00.000Z"
         },
         {
-          "channel": "website_form",
-          "score": 100,
+          "channel": "instagram",
+          "score": 95,
           "verified": true,
           "reasons": [
-            "official_business_route"
+            "official_site_cross_verified_social"
+          ],
+          "evidenceUrl": "https://www.bravehardy.com/pages/contact",
+          "checkedAt": "2026-08-04T09:55:00.000Z"
+        },
+        {
+          "channel": "facebook",
+          "score": 95,
+          "verified": true,
+          "reasons": [
+            "official_site_cross_verified_social"
+          ],
+          "evidenceUrl": "https://www.bravehardy.com/pages/contact",
+          "checkedAt": "2026-08-04T09:55:00.000Z"
+        },
+        {
+          "channel": "website_form",
+          "score": 95,
+          "verified": true,
+          "reasons": [
+            "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://www.bravehardy.com/pages/contact",
           "checkedAt": "2026-08-04T09:55:00.000Z"
@@ -9832,22 +9849,12 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
       "evidence": [
         {
           "channel": "instagram",
-          "score": 100,
-          "verified": true,
+          "score": 0,
+          "verified": false,
           "reasons": [
-            "official_business_route"
+            "unverified_external_evidence_rejected"
           ],
-          "evidenceUrl": "https://www.campman.com/",
-          "checkedAt": "2026-08-05T04:05:19.320Z"
-        },
-        {
-          "channel": "website_form",
-          "score": 100,
-          "verified": true,
-          "reasons": [
-            "official_business_route"
-          ],
-          "evidenceUrl": "https://www.campman.com/",
+          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
           "checkedAt": ""
         },
         {
@@ -9857,7 +9864,17 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
           "reasons": [
             "unverified_external_evidence_rejected"
           ],
-          "evidenceUrl": "https://www.campman.com/",
+          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
+          "checkedAt": ""
+        },
+        {
+          "channel": "website_form",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
           "checkedAt": ""
         }
       ],
@@ -9949,23 +9966,13 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
       ],
       "evidence": [
         {
-          "channel": "website_form",
-          "score": 80,
-          "verified": false,
-          "reasons": [
-            "first_party_evidence"
-          ],
-          "evidenceUrl": "https://www.outdoorplay.com/",
-          "checkedAt": ""
-        },
-        {
           "channel": "instagram",
           "score": 0,
           "verified": false,
           "reasons": [
             "unverified_external_evidence_rejected"
           ],
-          "evidenceUrl": "https://www.outdoorplay.com/",
+          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
           "checkedAt": ""
         },
         {
@@ -9975,7 +9982,17 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
           "reasons": [
             "unverified_external_evidence_rejected"
           ],
-          "evidenceUrl": "https://www.outdoorplay.com/",
+          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
+          "checkedAt": ""
+        },
+        {
+          "channel": "website_form",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
           "checkedAt": ""
         }
       ],
@@ -10120,32 +10137,32 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
       "evidence": [
         {
           "channel": "instagram",
-          "score": 100,
-          "verified": true,
+          "score": 0,
+          "verified": false,
           "reasons": [
-            "official_business_route"
+            "unverified_external_evidence_rejected"
           ],
-          "evidenceUrl": "https://www.campmor.com/",
-          "checkedAt": "2026-08-05T04:05:20.158Z"
+          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
+          "checkedAt": ""
         },
         {
           "channel": "facebook",
-          "score": 100,
-          "verified": true,
+          "score": 0,
+          "verified": false,
           "reasons": [
-            "official_business_route"
+            "unverified_external_evidence_rejected"
           ],
-          "evidenceUrl": "https://www.campmor.com/",
-          "checkedAt": "2026-08-05T04:05:20.158Z"
+          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
+          "checkedAt": ""
         },
         {
           "channel": "website_form",
-          "score": 100,
-          "verified": true,
+          "score": 0,
+          "verified": false,
           "reasons": [
-            "official_business_route"
+            "unverified_external_evidence_rejected"
           ],
-          "evidenceUrl": "https://www.campmor.com/",
+          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
           "checkedAt": ""
         }
       ],
@@ -10169,32 +10186,32 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
       "evidence": [
         {
           "channel": "instagram",
-          "score": 95,
-          "verified": true,
+          "score": 0,
+          "verified": false,
           "reasons": [
-            "official_site_cross_verified_social"
+            "unverified_external_evidence_rejected"
           ],
-          "evidenceUrl": "https://ramseyoutdoor.com/",
-          "checkedAt": "2026-08-05T04:05:23.093Z"
+          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
+          "checkedAt": ""
         },
         {
           "channel": "facebook",
-          "score": 95,
-          "verified": true,
+          "score": 0,
+          "verified": false,
           "reasons": [
-            "official_site_cross_verified_social"
+            "unverified_external_evidence_rejected"
           ],
-          "evidenceUrl": "https://ramseyoutdoor.com/",
-          "checkedAt": "2026-08-05T04:05:23.093Z"
+          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
+          "checkedAt": ""
         },
         {
           "channel": "website_form",
-          "score": 80,
+          "score": 0,
           "verified": false,
           "reasons": [
-            "first_party_evidence"
+            "unverified_external_evidence_rejected"
           ],
-          "evidenceUrl": "https://ramseyoutdoor.com/",
+          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
           "checkedAt": ""
         }
       ],
@@ -10280,33 +10297,33 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
       ],
       "evidence": [
         {
-          "channel": "facebook",
-          "score": 95,
-          "verified": true,
-          "reasons": [
-            "official_site_cross_verified_social"
-          ],
-          "evidenceUrl": "https://www.riversportsoutfitters.com/",
-          "checkedAt": "2026-08-05T04:05:24.170Z"
-        },
-        {
-          "channel": "website_form",
-          "score": 80,
-          "verified": false,
-          "reasons": [
-            "first_party_evidence"
-          ],
-          "evidenceUrl": "https://www.riversportsoutfitters.com/",
-          "checkedAt": ""
-        },
-        {
           "channel": "instagram",
           "score": 0,
           "verified": false,
           "reasons": [
             "unverified_external_evidence_rejected"
           ],
-          "evidenceUrl": "https://www.riversportsoutfitters.com/",
+          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
+          "checkedAt": ""
+        },
+        {
+          "channel": "facebook",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
+          "checkedAt": ""
+        },
+        {
+          "channel": "website_form",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
           "checkedAt": ""
         }
       ],
@@ -10427,22 +10444,12 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
       "evidence": [
         {
           "channel": "instagram",
-          "score": 95,
-          "verified": true,
-          "reasons": [
-            "official_site_cross_verified_social"
-          ],
-          "evidenceUrl": "https://www.halfmoonoutfitters.com/",
-          "checkedAt": "2026-08-05T04:05:23.700Z"
-        },
-        {
-          "channel": "website_form",
-          "score": 80,
+          "score": 0,
           "verified": false,
           "reasons": [
-            "first_party_evidence"
+            "unverified_external_evidence_rejected"
           ],
-          "evidenceUrl": "https://www.halfmoonoutfitters.com/",
+          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
           "checkedAt": ""
         },
         {
@@ -10452,7 +10459,17 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
           "reasons": [
             "unverified_external_evidence_rejected"
           ],
-          "evidenceUrl": "https://www.halfmoonoutfitters.com/",
+          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
+          "checkedAt": ""
+        },
+        {
+          "channel": "website_form",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
           "checkedAt": ""
         }
       ],
@@ -10556,17 +10573,17 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
       ],
       "evidence": [
         {
-          "channel": "facebook",
-          "score": 95,
-          "verified": true,
+          "channel": "instagram",
+          "score": 0,
+          "verified": false,
           "reasons": [
-            "official_site_cross_verified_social"
+            "unverified_external_evidence_rejected"
           ],
-          "evidenceUrl": "https://jaxgoods.com/",
-          "checkedAt": "2026-08-05T04:05:26.662Z"
+          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
+          "checkedAt": ""
         },
         {
-          "channel": "instagram",
+          "channel": "facebook",
           "score": 0,
           "verified": false,
           "reasons": [
@@ -10751,32 +10768,32 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
       "evidence": [
         {
           "channel": "instagram",
-          "score": 95,
-          "verified": true,
+          "score": 0,
+          "verified": false,
           "reasons": [
-            "official_site_cross_verified_social"
+            "unverified_external_evidence_rejected"
           ],
-          "evidenceUrl": "https://www.christysports.com/",
-          "checkedAt": "2026-08-05T04:05:27.585Z"
+          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
+          "checkedAt": ""
         },
         {
           "channel": "facebook",
-          "score": 95,
-          "verified": true,
+          "score": 0,
+          "verified": false,
           "reasons": [
-            "official_site_cross_verified_social"
+            "unverified_external_evidence_rejected"
           ],
-          "evidenceUrl": "https://www.christysports.com/",
-          "checkedAt": "2026-08-05T04:05:27.585Z"
+          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
+          "checkedAt": ""
         },
         {
           "channel": "website_form",
-          "score": 80,
+          "score": 0,
           "verified": false,
           "reasons": [
-            "first_party_evidence"
+            "unverified_external_evidence_rejected"
           ],
-          "evidenceUrl": "https://www.christysports.com/",
+          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
           "checkedAt": ""
         }
       ],
@@ -10825,32 +10842,32 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
       "evidence": [
         {
           "channel": "instagram",
-          "score": 100,
-          "verified": true,
+          "score": 0,
+          "verified": false,
           "reasons": [
-            "official_business_route"
+            "unverified_external_evidence_rejected"
           ],
-          "evidenceUrl": "https://paragonsports.com/",
-          "checkedAt": "2026-08-05T04:05:28.181Z"
+          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
+          "checkedAt": ""
         },
         {
           "channel": "facebook",
-          "score": 100,
-          "verified": true,
+          "score": 0,
+          "verified": false,
           "reasons": [
-            "official_business_route"
+            "unverified_external_evidence_rejected"
           ],
-          "evidenceUrl": "https://paragonsports.com/",
-          "checkedAt": "2026-08-05T04:05:28.181Z"
+          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
+          "checkedAt": ""
         },
         {
           "channel": "website_form",
-          "score": 100,
-          "verified": true,
+          "score": 0,
+          "verified": false,
           "reasons": [
-            "official_business_route"
+            "unverified_external_evidence_rejected"
           ],
-          "evidenceUrl": "https://paragonsports.com/",
+          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
           "checkedAt": ""
         }
       ],
@@ -10886,7 +10903,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
           "reasons": [
             "unverified_external_evidence_rejected"
           ],
-          "evidenceUrl": "https://www.mountain-equipment.com/",
+          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
           "checkedAt": ""
         },
         {
@@ -10896,7 +10913,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
           "reasons": [
             "unverified_external_evidence_rejected"
           ],
-          "evidenceUrl": "https://www.mountain-equipment.com/",
+          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
           "checkedAt": ""
         },
         {
@@ -10906,7 +10923,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
           "reasons": [
             "unverified_external_evidence_rejected"
           ],
-          "evidenceUrl": "https://www.mountain-equipment.com/",
+          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
           "checkedAt": ""
         }
       ],
@@ -10942,7 +10959,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
           "reasons": [
             "unverified_external_evidence_rejected"
           ],
-          "evidenceUrl": "https://www.tiso.com/pages/george-fisher-landing?utm_source=georgefisher",
+          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
           "checkedAt": ""
         },
         {
@@ -10952,7 +10969,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
           "reasons": [
             "unverified_external_evidence_rejected"
           ],
-          "evidenceUrl": "https://www.tiso.com/pages/george-fisher-landing?utm_source=georgefisher",
+          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
           "checkedAt": ""
         },
         {
@@ -10962,7 +10979,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
           "reasons": [
             "unverified_external_evidence_rejected"
           ],
-          "evidenceUrl": "https://www.tiso.com/pages/george-fisher-landing?utm_source=georgefisher",
+          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
           "checkedAt": ""
         }
       ],
@@ -11139,17 +11156,17 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
       ],
       "evidence": [
         {
-          "channel": "instagram",
-          "score": 0,
-          "verified": false,
+          "channel": "facebook",
+          "score": 95,
+          "verified": true,
           "reasons": [
-            "unverified_external_evidence_rejected"
+            "official_site_cross_verified_social"
           ],
-          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
-          "checkedAt": ""
+          "evidenceUrl": "https://www.facewest.co.uk/",
+          "checkedAt": "2026-08-05T05:07:38.402Z"
         },
         {
-          "channel": "facebook",
+          "channel": "instagram",
           "score": 0,
           "verified": false,
           "reasons": [
@@ -11255,17 +11272,17 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
       ],
       "evidence": [
         {
-          "channel": "instagram",
-          "score": 0,
-          "verified": false,
+          "channel": "facebook",
+          "score": 100,
+          "verified": true,
           "reasons": [
-            "unverified_external_evidence_rejected"
+            "official_business_route"
           ],
-          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
-          "checkedAt": ""
+          "evidenceUrl": "https://72hours.ca/",
+          "checkedAt": "2026-08-05T05:07:37.802Z"
         },
         {
-          "channel": "facebook",
+          "channel": "instagram",
           "score": 0,
           "verified": false,
           "reasons": [
@@ -11390,13 +11407,13 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
       "evidence": [
         {
           "channel": "instagram",
-          "score": 0,
-          "verified": false,
+          "score": 95,
+          "verified": true,
           "reasons": [
-            "unverified_external_evidence_rejected"
+            "official_site_cross_verified_social"
           ],
-          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
-          "checkedAt": ""
+          "evidenceUrl": "https://www.altitude-sports.com/",
+          "checkedAt": "2026-08-05T05:07:41.568Z"
         },
         {
           "channel": "facebook",
@@ -11463,17 +11480,17 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
       ],
       "evidence": [
         {
-          "channel": "instagram",
-          "score": 0,
-          "verified": false,
+          "channel": "facebook",
+          "score": 95,
+          "verified": true,
           "reasons": [
-            "unverified_external_evidence_rejected"
+            "official_site_cross_verified_social"
           ],
-          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
-          "checkedAt": ""
+          "evidenceUrl": "https://www.thelasthunt.com/",
+          "checkedAt": "2026-08-05T05:07:41.698Z"
         },
         {
-          "channel": "facebook",
+          "channel": "instagram",
           "score": 0,
           "verified": false,
           "reasons": [
@@ -11636,7 +11653,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://www.wildearth.com.au/",
-          "checkedAt": "2026-08-04T07:00:00.000Z"
+          "checkedAt": "2026-08-05T05:07:41.313Z"
         },
         {
           "channel": "facebook",
@@ -11646,7 +11663,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://www.wildearth.com.au/",
-          "checkedAt": "2026-08-04T07:00:00.000Z"
+          "checkedAt": "2026-08-05T05:07:41.313Z"
         },
         {
           "channel": "website_form",
@@ -11656,7 +11673,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://www.wildearth.com.au/",
-          "checkedAt": "2026-08-04T07:00:00.000Z"
+          "checkedAt": "2026-08-05T05:07:41.313Z"
         }
       ],
       "history": [
@@ -11703,17 +11720,17 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
       ],
       "evidence": [
         {
-          "channel": "instagram",
-          "score": 0,
-          "verified": false,
+          "channel": "facebook",
+          "score": 95,
+          "verified": true,
           "reasons": [
-            "unverified_external_evidence_rejected"
+            "official_site_cross_verified_social"
           ],
-          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
-          "checkedAt": ""
+          "evidenceUrl": "https://www.paddypallin.com.au/",
+          "checkedAt": "2026-08-05T05:07:42.172Z"
         },
         {
-          "channel": "facebook",
+          "channel": "instagram",
           "score": 0,
           "verified": false,
           "reasons": [
@@ -11766,23 +11783,23 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
       "evidence": [
         {
           "channel": "instagram",
-          "score": 0,
-          "verified": false,
+          "score": 95,
+          "verified": true,
           "reasons": [
-            "unverified_external_evidence_rejected"
+            "official_site_cross_verified_social"
           ],
-          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
-          "checkedAt": ""
+          "evidenceUrl": "https://www.macpac.com.au/",
+          "checkedAt": "2026-08-05T05:07:42.422Z"
         },
         {
           "channel": "facebook",
-          "score": 0,
-          "verified": false,
+          "score": 95,
+          "verified": true,
           "reasons": [
-            "unverified_external_evidence_rejected"
+            "official_site_cross_verified_social"
           ],
-          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
-          "checkedAt": ""
+          "evidenceUrl": "https://www.macpac.com.au/",
+          "checkedAt": "2026-08-05T05:07:42.422Z"
         },
         {
           "channel": "website_form",
@@ -11815,23 +11832,23 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
       "evidence": [
         {
           "channel": "instagram",
-          "score": 0,
-          "verified": false,
+          "score": 95,
+          "verified": true,
           "reasons": [
-            "unverified_external_evidence_rejected"
+            "official_site_cross_verified_social"
           ],
-          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
-          "checkedAt": ""
+          "evidenceUrl": "https://www.torpedo7.co.nz/",
+          "checkedAt": "2026-08-05T05:07:48.708Z"
         },
         {
           "channel": "facebook",
-          "score": 0,
-          "verified": false,
+          "score": 95,
+          "verified": true,
           "reasons": [
-            "unverified_external_evidence_rejected"
+            "official_site_cross_verified_social"
           ],
-          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
-          "checkedAt": ""
+          "evidenceUrl": "https://www.torpedo7.co.nz/",
+          "checkedAt": "2026-08-05T05:07:48.708Z"
         },
         {
           "channel": "website_form",
@@ -11953,23 +11970,23 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
       "evidence": [
         {
           "channel": "instagram",
-          "score": 0,
-          "verified": false,
+          "score": 100,
+          "verified": true,
           "reasons": [
-            "unverified_external_evidence_rejected"
+            "official_business_route"
           ],
-          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
-          "checkedAt": ""
+          "evidenceUrl": "https://www.sport-conrad.com/",
+          "checkedAt": "2026-08-05T05:07:51.492Z"
         },
         {
           "channel": "facebook",
-          "score": 0,
-          "verified": false,
+          "score": 100,
+          "verified": true,
           "reasons": [
-            "unverified_external_evidence_rejected"
+            "official_business_route"
           ],
-          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
-          "checkedAt": ""
+          "evidenceUrl": "https://www.sport-conrad.com/",
+          "checkedAt": "2026-08-05T05:07:51.492Z"
         },
         {
           "channel": "website_form",
@@ -12105,7 +12122,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://www.doorout.com/",
-          "checkedAt": ""
+          "checkedAt": "2026-08-05T05:08:01.499Z"
         },
         {
           "channel": "facebook",
@@ -12115,7 +12132,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://www.doorout.com/",
-          "checkedAt": ""
+          "checkedAt": "2026-08-05T05:08:01.499Z"
         },
         {
           "channel": "website_form",
@@ -12125,7 +12142,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://www.doorout.com/",
-          "checkedAt": ""
+          "checkedAt": "2026-08-05T05:08:01.499Z"
         }
       ],
       "history": [
@@ -12369,23 +12386,23 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
       "evidence": [
         {
           "channel": "instagram",
-          "score": 0,
-          "verified": false,
+          "score": 95,
+          "verified": true,
           "reasons": [
-            "unverified_external_evidence_rejected"
+            "official_site_cross_verified_social"
           ],
-          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
-          "checkedAt": ""
+          "evidenceUrl": "https://www.blue-tomato.com/de-DE/",
+          "checkedAt": "2026-08-05T05:07:53.197Z"
         },
         {
           "channel": "facebook",
-          "score": 0,
-          "verified": false,
+          "score": 95,
+          "verified": true,
           "reasons": [
-            "unverified_external_evidence_rejected"
+            "official_site_cross_verified_social"
           ],
-          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
-          "checkedAt": ""
+          "evidenceUrl": "https://www.blue-tomato.com/de-DE/",
+          "checkedAt": "2026-08-05T05:07:53.197Z"
         },
         {
           "channel": "website_form",
@@ -12540,17 +12557,17 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
       ],
       "evidence": [
         {
-          "channel": "instagram",
-          "score": 0,
-          "verified": false,
+          "channel": "facebook",
+          "score": 95,
+          "verified": true,
           "reasons": [
-            "unverified_external_evidence_rejected"
+            "official_site_cross_verified_social"
           ],
-          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
-          "checkedAt": ""
+          "evidenceUrl": "https://www.tradeinn.com/trekkinn/en",
+          "checkedAt": "2026-08-05T05:08:02.572Z"
         },
         {
-          "channel": "facebook",
+          "channel": "instagram",
           "score": 0,
           "verified": false,
           "reasons": [
@@ -12615,13 +12632,13 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
       "evidence": [
         {
           "channel": "instagram",
-          "score": 0,
-          "verified": false,
+          "score": 100,
+          "verified": true,
           "reasons": [
-            "unverified_external_evidence_rejected"
+            "official_business_route"
           ],
-          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
-          "checkedAt": ""
+          "evidenceUrl": "https://www.4camping.cz/",
+          "checkedAt": "2026-08-05T05:08:03.911Z"
         },
         {
           "channel": "facebook",
@@ -12681,8 +12698,8 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
           "reasons": [
             "official_site_cross_verified_social"
           ],
-          "evidenceUrl": "https://8a.pl/media/pliki/polityka_prywatno%C5%9Bci_FB_8a.pdf",
-          "checkedAt": ""
+          "evidenceUrl": "https://8a.pl/",
+          "checkedAt": "2026-08-05T05:08:01.691Z"
         },
         {
           "channel": "facebook",
@@ -12691,8 +12708,8 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
           "reasons": [
             "official_site_cross_verified_social"
           ],
-          "evidenceUrl": "https://8a.pl/media/pliki/polityka_prywatno%C5%9Bci_FB_8a.pdf",
-          "checkedAt": ""
+          "evidenceUrl": "https://8a.pl/",
+          "checkedAt": "2026-08-05T05:08:01.691Z"
         },
         {
           "channel": "website_form",
@@ -12701,8 +12718,8 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
           "reasons": [
             "official_site_cross_verified_social"
           ],
-          "evidenceUrl": "https://8a.pl/media/pliki/polityka_prywatno%C5%9Bci_FB_8a.pdf",
-          "checkedAt": ""
+          "evidenceUrl": "https://8a.pl/",
+          "checkedAt": "2026-08-05T05:08:01.691Z"
         }
       ],
       "history": [
@@ -12922,13 +12939,13 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
       "evidence": [
         {
           "channel": "facebook",
-          "score": 0,
-          "verified": false,
+          "score": 95,
+          "verified": true,
           "reasons": [
-            "unverified_external_evidence_rejected"
+            "official_site_cross_verified_social"
           ],
-          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
-          "checkedAt": ""
+          "evidenceUrl": "https://www.masseysoutfitters.com/",
+          "checkedAt": "2026-08-05T05:09:21.216Z"
         },
         {
           "channel": "website_form",
@@ -13054,23 +13071,23 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
       "evidence": [
         {
           "channel": "instagram",
-          "score": 95,
+          "score": 100,
           "verified": true,
           "reasons": [
-            "official_site_cross_verified_social"
+            "official_business_route"
           ],
-          "evidenceUrl": "https://gecko-overland.com/",
-          "checkedAt": ""
+          "evidenceUrl": "https://gecko-overland.com/contact/",
+          "checkedAt": "2026-08-05T05:09:28.265Z"
         },
         {
           "channel": "website_form",
-          "score": 95,
+          "score": 100,
           "verified": true,
           "reasons": [
-            "official_site_cross_verified_social"
+            "official_business_route"
           ],
-          "evidenceUrl": "https://gecko-overland.com/",
-          "checkedAt": ""
+          "evidenceUrl": "https://gecko-overland.com/contact/",
+          "checkedAt": "2026-08-05T05:09:28.265Z"
         }
       ],
       "history": [
@@ -13104,7 +13121,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
       ],
       "evidence": [
         {
-          "channel": "research",
+          "channel": "website_form",
           "score": 100,
           "verified": true,
           "reasons": [
@@ -13114,11 +13131,11 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
           "checkedAt": ""
         },
         {
-          "channel": "website_form",
-          "score": 80,
-          "verified": false,
+          "channel": "research",
+          "score": 100,
+          "verified": true,
           "reasons": [
-            "first_party_evidence"
+            "official_business_route"
           ],
           "evidenceUrl": "https://flameoutdoors.com/pages/authorized-dealer",
           "checkedAt": ""
@@ -13198,7 +13215,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://www.basecamp-outfitters.com/",
-          "checkedAt": ""
+          "checkedAt": "2026-08-05T05:09:30.981Z"
         },
         {
           "channel": "website_form",
@@ -13208,7 +13225,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://www.basecamp-outfitters.com/",
-          "checkedAt": ""
+          "checkedAt": "2026-08-05T05:09:30.981Z"
         }
       ],
       "history": [
@@ -13223,57 +13240,6 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
           "timestamp": "2026-07-29T11:01:32.654Z",
           "channel": "website_form",
           "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:instagram;instagram_message_sent_confirmed_after_send_click;instagram_draft_inserted_verified;sentText:false;outgoingBubble:true;emptyComposer:true;;contact_path_strategy_v2;downgraded_missing_persisted_conversation_history"
-        }
-      ]
-    },
-    {
-      "companyId": "company_45f7486909af16a6",
-      "company": "New World Outdoor Gear Co",
-      "keys": [
-        "newworldoutdoorgearco",
-        "nwogcocom"
-      ],
-      "domains": [
-        "nwogco.com"
-      ],
-      "channels": [
-        "instagram",
-        "website_form"
-      ],
-      "evidence": [
-        {
-          "channel": "instagram",
-          "score": 95,
-          "verified": true,
-          "reasons": [
-            "official_site_cross_verified_social"
-          ],
-          "evidenceUrl": "https://www.nwogco.com/",
-          "checkedAt": ""
-        },
-        {
-          "channel": "website_form",
-          "score": 95,
-          "verified": true,
-          "reasons": [
-            "official_site_cross_verified_social"
-          ],
-          "evidenceUrl": "https://www.nwogco.com/",
-          "checkedAt": ""
-        }
-      ],
-      "history": [
-        {
-          "status": "send_unconfirmed",
-          "timestamp": "2026-07-29T10:48:00.271Z",
-          "channel": "instagram",
-          "evidence": "website_contact_entry_not_verified;contact_entry_clicked:CONTACT;official_social_fallback:instagram;instagram_message_sent_confirmed_after_send_click;instagram_draft_inserted_verified;sentText:false;outgoingBubble:true;emptyComposer:true;;contact_path_strategy_v2;downgraded_missing_persisted_conversation_history"
-        },
-        {
-          "status": "send_unconfirmed",
-          "timestamp": "2026-07-29T11:01:32.828Z",
-          "channel": "website_form",
-          "evidence": "website_contact_entry_not_verified;contact_entry_clicked:CONTACT;official_social_fallback:instagram;instagram_message_sent_confirmed_after_send_click;instagram_draft_inserted_verified;sentText:false;outgoingBubble:true;emptyComposer:true;;contact_path_strategy_v2;downgraded_missing_persisted_conversation_history"
         }
       ]
     },
@@ -13935,6 +13901,16 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
       "sourceStatus": "send_unconfirmed",
       "sourceTimestamp": "2026-08-04T07:01:10.014Z",
       "evidence": "official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_missing;contact_path_strategy_v2"
+    },
+    {
+      "companyId": "company_8d4303a619379cef",
+      "company": "Rock/Creek",
+      "permanent": true,
+      "crossChannel": true,
+      "reason": "previous_customer_development_no_repeat",
+      "sourceStatus": "send_unconfirmed",
+      "sourceTimestamp": "2026-07-29T11:01:32.828Z",
+      "evidence": "website_contact_entry_not_verified;contact_entry_clicked:CONTACT;official_social_fallback:instagram;instagram_message_sent_confirmed_after_send_click;instagram_draft_inserted_verified;sentText:false;outgoingBubble:true;emptyComposer:true;;contact_path_strategy_v2;downgraded_missing_persisted_conversation_history"
     },
     {
       "companyId": "company_3730ead171dee679",
@@ -14737,16 +14713,6 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
       "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:instagram;instagram_message_sent_confirmed_after_send_click;instagram_draft_inserted_verified;sentText:false;outgoingBubble:true;emptyComposer:true;;contact_path_strategy_v2;downgraded_missing_persisted_conversation_history"
     },
     {
-      "companyId": "company_45f7486909af16a6",
-      "company": "New World Outdoor Gear Co",
-      "permanent": true,
-      "crossChannel": true,
-      "reason": "previous_customer_development_no_repeat",
-      "sourceStatus": "send_unconfirmed",
-      "sourceTimestamp": "2026-07-29T11:01:32.828Z",
-      "evidence": "website_contact_entry_not_verified;contact_entry_clicked:CONTACT;official_social_fallback:instagram;instagram_message_sent_confirmed_after_send_click;instagram_draft_inserted_verified;sentText:false;outgoingBubble:true;emptyComposer:true;;contact_path_strategy_v2;downgraded_missing_persisted_conversation_history"
-    },
-    {
       "companyId": "company_9c1ccfd7b8c70dee",
       "company": "verifiedinstagramcampmor",
       "permanent": true,
@@ -14960,12 +14926,52 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
   "portfolio": {
     "actions": [
       {
+        "companyId": "company_819cc04fe9060117",
+        "company": "Intersport Norway",
+        "action": "first_touch",
+        "channel": "facebook",
+        "evidenceScore": 95,
+        "evidenceUrl": "https://www.intersport.no/",
+        "alternatives": [],
+        "reason": "highest_priority_verified_channel"
+      },
+      {
+        "companyId": "company_992d96a6c170243f",
+        "company": "Esprinet Group",
+        "action": "first_touch",
+        "channel": "website_form",
+        "evidenceScore": 100,
+        "evidenceUrl": "https://www.esprinet.com/en/become-a-supplier/",
+        "alternatives": [],
+        "reason": "highest_priority_verified_channel"
+      },
+      {
         "companyId": "company_ca049a336c94b7d9",
         "company": "Left Point Distribution",
         "action": "first_touch",
         "channel": "website_form",
         "evidenceScore": 100,
         "evidenceUrl": "https://www.leftpointdistribution.com/en-eu/aboutus.php",
+        "alternatives": [],
+        "reason": "highest_priority_verified_channel"
+      },
+      {
+        "companyId": "company_5b717df33a01ec42",
+        "company": "Ultralight Outdoor Gear",
+        "action": "first_touch",
+        "channel": "website_form",
+        "evidenceScore": 100,
+        "evidenceUrl": "https://ultralightoutdoorgear.co.uk/",
+        "alternatives": [],
+        "reason": "highest_priority_verified_channel"
+      },
+      {
+        "companyId": "company_b01fae48f138bc63",
+        "company": "Campervan Gift",
+        "action": "first_touch",
+        "channel": "website_form",
+        "evidenceScore": 100,
+        "evidenceUrl": "https://www.campervangift.co.uk/become-a-supplier/",
         "alternatives": [],
         "reason": "highest_priority_verified_channel"
       },
@@ -14980,24 +14986,13 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
         "reason": "highest_priority_verified_channel"
       },
       {
-        "companyId": "company_d43133da7d17b52b",
-        "company": "Outdoor Nature",
+        "companyId": "company_236e5b58a80fbad1",
+        "company": "Macpac",
         "action": "first_touch",
-        "channel": "website_form",
-        "evidenceScore": 100,
-        "evidenceUrl": "https://www.outdoornature.com.au/become-a-supplier/",
-        "alternatives": [],
-        "reason": "highest_priority_verified_channel"
-      },
-      {
-        "companyId": "company_703b301a9fbe92e0",
-        "company": "Campmor",
-        "action": "first_touch",
-        "channel": "website_form",
-        "evidenceScore": 100,
-        "evidenceUrl": "https://www.campmor.com/",
+        "channel": "facebook",
+        "evidenceScore": 95,
+        "evidenceUrl": "https://www.macpac.com.au/",
         "alternatives": [
-          "facebook",
           "instagram"
         ],
         "reason": "highest_priority_verified_channel"
@@ -15012,23 +15007,32 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
     },
     "used": {
       "email": 0,
-      "website_form": 4,
+      "website_form": 5,
       "linkedin": 0,
-      "facebook": 0,
+      "facebook": 2,
       "instagram": 0
     },
     "gaps": {
       "email": 10,
-      "website_form": 1,
+      "website_form": 0,
       "linkedin": 4,
-      "facebook": 3,
+      "facebook": 1,
       "instagram": 3
     }
   },
   "learning": {
     "channels": [
       {
-        "channel": "linkedin",
+        "channel": "facebook",
+        "confirmed": 34,
+        "replies": 0,
+        "opportunities": 0,
+        "replyRate": 0,
+        "opportunityRate": 0,
+        "confidence": "high"
+      },
+      {
+        "channel": "website_form",
         "confirmed": 6,
         "replies": 0,
         "opportunities": 0,
@@ -15037,7 +15041,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
         "confidence": "medium"
       },
       {
-        "channel": "website_form",
+        "channel": "linkedin",
         "confirmed": 6,
         "replies": 0,
         "opportunities": 0,
@@ -15064,15 +15068,6 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
         "confidence": "high"
       },
       {
-        "channel": "facebook",
-        "confirmed": 34,
-        "replies": 0,
-        "opportunities": 0,
-        "replyRate": 0,
-        "opportunityRate": 0,
-        "confidence": "high"
-      },
-      {
         "channel": "research",
         "confirmed": 0,
         "replies": 0,
@@ -15085,14 +15080,21 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
     "experiments": [
       {
         "dimension": "channel",
-        "variant": "linkedin",
-        "sampleSize": 6,
+        "variant": "facebook",
+        "sampleSize": 34,
         "observedReplyRate": 0,
         "recommendation": "use_as_bounded_allocation_signal"
       },
       {
         "dimension": "channel",
         "variant": "website_form",
+        "sampleSize": 6,
+        "observedReplyRate": 0,
+        "recommendation": "use_as_bounded_allocation_signal"
+      },
+      {
+        "dimension": "channel",
+        "variant": "linkedin",
         "sampleSize": 6,
         "observedReplyRate": 0,
         "recommendation": "use_as_bounded_allocation_signal"
@@ -15110,26 +15112,39 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
         "sampleSize": 33,
         "observedReplyRate": 0,
         "recommendation": "use_as_bounded_allocation_signal"
-      },
-      {
-        "dimension": "channel",
-        "variant": "facebook",
-        "sampleSize": 34,
-        "observedReplyRate": 0,
-        "recommendation": "use_as_bounded_allocation_signal"
       }
     ]
   },
   "ownerSummary": {
-    "generatedAt": "2026-08-05T04:05:34.887Z",
+    "generatedAt": "2026-08-05T05:10:07.836Z",
     "phase": "autonomous_sales_operating_system_v1",
     "kpis": {
-      "companies": 187,
+      "companies": 186,
       "permanentlySuppressed": 104,
-      "plannedActions": 4,
-      "verifiedEvidenceRoutes": 54
+      "plannedActions": 7,
+      "verifiedEvidenceRoutes": 87
     },
     "decisions": [
+      {
+        "companyId": "company_819cc04fe9060117",
+        "company": "Intersport Norway",
+        "action": "first_touch",
+        "channel": "facebook",
+        "evidenceScore": 95,
+        "evidenceUrl": "https://www.intersport.no/",
+        "alternatives": [],
+        "reason": "highest_priority_verified_channel"
+      },
+      {
+        "companyId": "company_992d96a6c170243f",
+        "company": "Esprinet Group",
+        "action": "first_touch",
+        "channel": "website_form",
+        "evidenceScore": 100,
+        "evidenceUrl": "https://www.esprinet.com/en/become-a-supplier/",
+        "alternatives": [],
+        "reason": "highest_priority_verified_channel"
+      },
       {
         "companyId": "company_ca049a336c94b7d9",
         "company": "Left Point Distribution",
@@ -15137,6 +15152,26 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
         "channel": "website_form",
         "evidenceScore": 100,
         "evidenceUrl": "https://www.leftpointdistribution.com/en-eu/aboutus.php",
+        "alternatives": [],
+        "reason": "highest_priority_verified_channel"
+      },
+      {
+        "companyId": "company_5b717df33a01ec42",
+        "company": "Ultralight Outdoor Gear",
+        "action": "first_touch",
+        "channel": "website_form",
+        "evidenceScore": 100,
+        "evidenceUrl": "https://ultralightoutdoorgear.co.uk/",
+        "alternatives": [],
+        "reason": "highest_priority_verified_channel"
+      },
+      {
+        "companyId": "company_b01fae48f138bc63",
+        "company": "Campervan Gift",
+        "action": "first_touch",
+        "channel": "website_form",
+        "evidenceScore": 100,
+        "evidenceUrl": "https://www.campervangift.co.uk/become-a-supplier/",
         "alternatives": [],
         "reason": "highest_priority_verified_channel"
       },
@@ -15151,24 +15186,13 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
         "reason": "highest_priority_verified_channel"
       },
       {
-        "companyId": "company_d43133da7d17b52b",
-        "company": "Outdoor Nature",
+        "companyId": "company_236e5b58a80fbad1",
+        "company": "Macpac",
         "action": "first_touch",
-        "channel": "website_form",
-        "evidenceScore": 100,
-        "evidenceUrl": "https://www.outdoornature.com.au/become-a-supplier/",
-        "alternatives": [],
-        "reason": "highest_priority_verified_channel"
-      },
-      {
-        "companyId": "company_703b301a9fbe92e0",
-        "company": "Campmor",
-        "action": "first_touch",
-        "channel": "website_form",
-        "evidenceScore": 100,
-        "evidenceUrl": "https://www.campmor.com/",
+        "channel": "facebook",
+        "evidenceScore": 95,
+        "evidenceUrl": "https://www.macpac.com.au/",
         "alternatives": [
-          "facebook",
           "instagram"
         ],
         "reason": "highest_priority_verified_channel"
@@ -15180,9 +15204,9 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
         "severity": "warning",
         "detail": {
           "email": 10,
-          "website_form": 1,
+          "website_form": 0,
           "linkedin": 4,
-          "facebook": 3,
+          "facebook": 1,
           "instagram": 3
         }
       }
@@ -15190,7 +15214,16 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
     "learning": {
       "channels": [
         {
-          "channel": "linkedin",
+          "channel": "facebook",
+          "confirmed": 34,
+          "replies": 0,
+          "opportunities": 0,
+          "replyRate": 0,
+          "opportunityRate": 0,
+          "confidence": "high"
+        },
+        {
+          "channel": "website_form",
           "confirmed": 6,
           "replies": 0,
           "opportunities": 0,
@@ -15199,7 +15232,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
           "confidence": "medium"
         },
         {
-          "channel": "website_form",
+          "channel": "linkedin",
           "confirmed": 6,
           "replies": 0,
           "opportunities": 0,
@@ -15226,15 +15259,6 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
           "confidence": "high"
         },
         {
-          "channel": "facebook",
-          "confirmed": 34,
-          "replies": 0,
-          "opportunities": 0,
-          "replyRate": 0,
-          "opportunityRate": 0,
-          "confidence": "high"
-        },
-        {
           "channel": "research",
           "confirmed": 0,
           "replies": 0,
@@ -15247,14 +15271,21 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
       "experiments": [
         {
           "dimension": "channel",
-          "variant": "linkedin",
-          "sampleSize": 6,
+          "variant": "facebook",
+          "sampleSize": 34,
           "observedReplyRate": 0,
           "recommendation": "use_as_bounded_allocation_signal"
         },
         {
           "dimension": "channel",
           "variant": "website_form",
+          "sampleSize": 6,
+          "observedReplyRate": 0,
+          "recommendation": "use_as_bounded_allocation_signal"
+        },
+        {
+          "dimension": "channel",
+          "variant": "linkedin",
           "sampleSize": 6,
           "observedReplyRate": 0,
           "recommendation": "use_as_bounded_allocation_signal"
@@ -15270,13 +15301,6 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
           "dimension": "channel",
           "variant": "instagram",
           "sampleSize": 33,
-          "observedReplyRate": 0,
-          "recommendation": "use_as_bounded_allocation_signal"
-        },
-        {
-          "dimension": "channel",
-          "variant": "facebook",
-          "sampleSize": 34,
           "observedReplyRate": 0,
           "recommendation": "use_as_bounded_allocation_signal"
         }

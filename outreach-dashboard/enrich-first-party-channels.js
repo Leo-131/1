@@ -61,6 +61,38 @@ function sameSocialProfile(left, right) {
   return clean(left) && clean(left) === clean(right);
 }
 
+function cachedVerificationFromRows(rows = []) {
+  const verified = rows.find(row => row.firstPartyChannelVerification && row.firstPartyChannelVerification.status === 'checked') || rows[0] || {};
+  return {
+    firstPartyChannelVerification: verified.firstPartyChannelVerification || null,
+    contactCapabilityVerified: rows.some(row => row.contactCapabilityVerified === true),
+    externalVerificationStatus: rows.map(row => row.externalVerificationStatus).find(value => /^official_/.test(String(value || ''))) || '',
+    publicEmail: rows.map(row => row.publicEmail || row.contactEmail).find(Boolean) || '',
+    emailVerificationStatus: rows.map(row => row.emailVerificationStatus).find(Boolean) || '',
+    socialProfiles: rows.filter(row => row.officialSocialProfileVerified === true).map(row => row.platformUrl || row.url).filter(Boolean),
+  };
+}
+
+function applyCachedVerification(rows = [], cached = {}) {
+  for (const row of rows) {
+    if (cached.firstPartyChannelVerification) row.firstPartyChannelVerification = cached.firstPartyChannelVerification;
+    if (cached.contactCapabilityVerified) row.contactCapabilityVerified = true;
+    if (cached.externalVerificationStatus) row.externalVerificationStatus = cached.externalVerificationStatus;
+    if (cached.publicEmail) {
+      row.publicEmail = cached.publicEmail;
+      row.contactEmail = cached.publicEmail;
+      row.emailVerificationStatus = cached.emailVerificationStatus || 'official_public_business_email';
+      row.emailEvidence = 'first_party_live_page_cache';
+    }
+    if ((cached.socialProfiles || []).some(url => sameSocialProfile(url, row.platformUrl || row.url))) {
+      row.officialSocialProfileVerified = true;
+      row.socialProfileEvidenceUrl = cached.firstPartyChannelVerification && cached.firstPartyChannelVerification.evidenceUrl || '';
+      row.socialProfileVerifiedAt = cached.firstPartyChannelVerification && cached.firstPartyChannelVerification.verifiedAt || '';
+    }
+  }
+  return rows;
+}
+
 async function enrichCompany(rows) {
   const company = rows[0] && rows[0].company;
   // sourceEvidenceUrl may be a directory or research page. Only company-owned
@@ -106,7 +138,7 @@ async function enrichCompany(rows) {
       row.emailEvidence = 'first_party_live_page';
     }
   }
-  return { company, ok: Boolean(best && best.ok), evidenceUrl: best && best.finalUrl || '', signals: inspected.signals };
+  return { company, ok: Boolean(best && best.ok), evidenceUrl: best && best.finalUrl || '', signals: inspected.signals, cache: cachedVerificationFromRows(rows) };
 }
 
 async function main() {
@@ -120,7 +152,14 @@ async function main() {
     groups.get(key).push(row);
   }
   const limit = Math.max(1, Math.min(Number(process.env.FIRST_PARTY_ENRICH_LIMIT || DEFAULT_LIMIT), 50));
-  const state = fs.existsSync(STATE_PATH) ? JSON.parse(fs.readFileSync(STATE_PATH, 'utf8')) : { cursor: 0 };
+  const state = fs.existsSync(STATE_PATH) ? JSON.parse(fs.readFileSync(STATE_PATH, 'utf8')) : { cursor: 0, verifications: {} };
+  const verifications = state.verifications && typeof state.verifications === 'object' ? state.verifications : {};
+  for (const [key, rows] of groups) {
+    if (!verifications[key] && rows.some(row => row.firstPartyChannelVerification)) {
+      verifications[key] = cachedVerificationFromRows(rows);
+    }
+  }
+  for (const [key, rows] of groups) applyCachedVerification(rows, verifications[key]);
   const allGroups = [...groups.values()];
   const start = allGroups.length ? Math.max(0, Number(state.cursor || 0)) % allGroups.length : 0;
   const pending = [...allGroups.slice(start), ...allGroups.slice(0, start)].slice(0, limit);
@@ -128,8 +167,9 @@ async function main() {
   for (let index = 0; index < pending.length; index += 4) {
     results.push(...await Promise.all(pending.slice(index, index + 4).map(enrichCompany)));
   }
-  artifact.firstPartyEnrichment = { completedAt: new Date().toISOString(), attemptedCompanies: results.length, verifiedCompanies: results.filter(item => item.ok && item.signals.length).length, results };
-  fs.writeFileSync(STATE_PATH, `${JSON.stringify({ updatedAt: artifact.firstPartyEnrichment.completedAt, cursor: allGroups.length ? (start + results.length) % allGroups.length : 0, companyCount: allGroups.length }, null, 2)}\n`);
+  for (const result of results) verifications[normalizedCompany(result.company)] = result.cache;
+  artifact.firstPartyEnrichment = { completedAt: new Date().toISOString(), attemptedCompanies: results.length, verifiedCompanies: results.filter(item => item.ok && item.signals.length).length, cachedCompanies: Object.keys(verifications).length, results: results.map(({ cache, ...result }) => result) };
+  fs.writeFileSync(STATE_PATH, `${JSON.stringify({ updatedAt: artifact.firstPartyEnrichment.completedAt, cursor: allGroups.length ? (start + results.length) % allGroups.length : 0, companyCount: allGroups.length, verifications }, null, 2)}\n`);
   fs.writeFileSync(JSON_PATH, `${JSON.stringify(artifact, null, 2)}\n`);
   fs.writeFileSync(JS_PATH, `window.GOOGLE_LEAD_DISCOVERY_LATEST = ${JSON.stringify(artifact, null, 2)};\n`);
   console.log(JSON.stringify(artifact.firstPartyEnrichment, null, 2));
@@ -137,4 +177,4 @@ async function main() {
 
 if (require.main === module) main().catch(error => { console.error(error); process.exitCode = 1; });
 
-module.exports = { inspectOfficialPage, safeOfficialUrl, sameSocialProfile };
+module.exports = { inspectOfficialPage, safeOfficialUrl, sameSocialProfile, applyCachedVerification, cachedVerificationFromRows };

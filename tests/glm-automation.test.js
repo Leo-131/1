@@ -148,6 +148,17 @@ test('official public business email outranks unverifiable email rows without re
   assert.ok(mainSource.includes("&& ['website_contact_ready', 'website_contact_unreachable_skip'].includes(result.status)"));
 });
 
+test('live first-party machine verification token passes the business email gate', () => {
+  const { verifiedBusinessEmailTarget } = require('../outreach-dashboard/alibaba-email-delivery');
+  const result = verifiedBusinessEmailTarget({
+    publicEmail: 'buyer@example-retailer.com',
+    emailVerificationStatus: 'official_public_business_email',
+    emailEvidence: 'first_party_live_page',
+  });
+  assert.equal(result.ok, true);
+  assert.equal(result.recipient, 'buyer@example-retailer.com');
+});
+
 test('LinkedIn platform engagement follows before sending the approved DM without comment or like', () => {
   assert.match(chromeDriverSource, /platform === 'linkedin'/);
   assert.match(chromeDriverSource, /LinkedIn company\/profile outreach is intentionally limited/);
@@ -1266,6 +1277,17 @@ test('discovery and execution share evidence-backed channel readiness and expose
   assert.ok(dailyRunnerSource.includes('enrichmentBacklog,'));
   assert.match(outreachPolicySource, /A URL alone is not an executable channel/);
   assert.match(optimizedPromptSource, /Treat `executionReadiness` as the single source of truth/);
+});
+
+test('live verified rows replace stale primary company rows before queue selection', () => {
+  const stale = { id: 'stale-acme', company: 'Acme Outdoor', platform: 'website_form', action: 'verify_target', reason: 'homepage_only_contact_path_requires_verification', fitScore: 90 };
+  const verified = { id: 'verified-acme', company: 'Acme Outdoor', platform: 'website_form', action: 'develop', reason: 'official_website_contact_channel', fitScore: 90, executionReadiness: { ready: true, gate: 'official_supplier_route' } };
+  assert.deepEqual(dailyRunner.promoteExecutionReadyQueueRows([stale], [verified]), [verified]);
+  assert.deepEqual(dailyRunner.dedupeQueueItems([stale, { ...verified, id: stale.id }])[0].executionReadiness, verified.executionReadiness);
+  assert.ok(dailyRunnerSource.includes('const primaryQueue = promoteExecutionReadyQueueRows'));
+  assert.ok(dailyRunnerSource.includes("normalized.action = 'email_priority'"));
+  assert.ok(dailyRunnerSource.includes("normalized.action = 'develop'"));
+  assert.ok(mainSource.includes('candidateSelectionAudit: readyRowsForAudit.map'));
 });
 
 test('real customer development excludes likes and follows', () => {

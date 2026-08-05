@@ -1,5 +1,1328 @@
 {
-  "updatedAt": "2026-08-05T04:05:31.892Z",
-  "cursor": 100,
-  "companyCount": 140
+  "updatedAt": "2026-08-05T05:10:05.835Z",
+  "cursor": 35,
+  "companyCount": 140,
+  "verifications": {
+    "facewest": {
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-05T05:07:38.402Z",
+        "evidenceUrl": "https://www.facewest.co.uk/",
+        "httpStatus": 200,
+        "signals": [
+          "form_control",
+          "contact_invitation"
+        ],
+        "error": ""
+      },
+      "contactCapabilityVerified": true,
+      "externalVerificationStatus": "official_contact_form_verified",
+      "publicEmail": "",
+      "emailVerificationStatus": "",
+      "socialProfiles": [
+        "https://www.facebook.com/Facewest"
+      ]
+    },
+    "above and beyond": {
+      "firstPartyChannelVerification": {
+        "status": "unreachable",
+        "verifiedAt": "2026-08-05T05:07:37.367Z",
+        "evidenceUrl": "https://www.aboveandbeyond.ie/",
+        "httpStatus": 0,
+        "signals": [],
+        "error": "fetch failed"
+      },
+      "contactCapabilityVerified": false,
+      "externalVerificationStatus": "",
+      "publicEmail": "",
+      "emailVerificationStatus": "",
+      "socialProfiles": []
+    },
+    "72hours": {
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-05T05:07:37.802Z",
+        "evidenceUrl": "https://72hours.ca/",
+        "httpStatus": 200,
+        "signals": [
+          "form_control",
+          "public_business_email",
+          "contact_invitation"
+        ],
+        "error": ""
+      },
+      "contactCapabilityVerified": true,
+      "externalVerificationStatus": "official_contact_form_verified",
+      "publicEmail": "orders@72hours.ca",
+      "emailVerificationStatus": "official_public_business_email",
+      "socialProfiles": [
+        "https://www.facebook.com/72hours.ca"
+      ]
+    },
+    "atmosphere": {
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-05T05:07:40.862Z",
+        "evidenceUrl": "https://www.atmosphere.ca/",
+        "httpStatus": 200,
+        "signals": [
+          "contact_invitation"
+        ],
+        "error": ""
+      },
+      "contactCapabilityVerified": false,
+      "externalVerificationStatus": "",
+      "publicEmail": "",
+      "emailVerificationStatus": "",
+      "socialProfiles": []
+    },
+    "altitude sports": {
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-05T05:07:41.568Z",
+        "evidenceUrl": "https://www.altitude-sports.com/",
+        "httpStatus": 200,
+        "signals": [
+          "form_control"
+        ],
+        "error": ""
+      },
+      "contactCapabilityVerified": false,
+      "externalVerificationStatus": "",
+      "publicEmail": "",
+      "emailVerificationStatus": "",
+      "socialProfiles": [
+        "https://www.instagram.com/altitudesports/"
+      ]
+    },
+    "the last hunt": {
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-05T05:07:41.698Z",
+        "evidenceUrl": "https://www.thelasthunt.com/",
+        "httpStatus": 200,
+        "signals": [
+          "form_control"
+        ],
+        "error": ""
+      },
+      "contactCapabilityVerified": false,
+      "externalVerificationStatus": "",
+      "publicEmail": "",
+      "emailVerificationStatus": "",
+      "socialProfiles": [
+        "https://www.facebook.com/thelasthunt"
+      ]
+    },
+    "marmot basin retail": {
+      "firstPartyChannelVerification": {
+        "status": "unreachable",
+        "verifiedAt": "2026-08-05T05:07:41.234Z",
+        "evidenceUrl": "https://www.marmotbasin.com/",
+        "httpStatus": 0,
+        "signals": [],
+        "error": "fetch failed"
+      },
+      "contactCapabilityVerified": false,
+      "externalVerificationStatus": "",
+      "publicEmail": "",
+      "emailVerificationStatus": "",
+      "socialProfiles": []
+    },
+    "wild earth": {
+      "firstPartyChannelVerification": {
+        "status": "unreachable",
+        "verifiedAt": "2026-08-05T05:07:41.313Z",
+        "evidenceUrl": "https://www.wildearth.com.au/",
+        "httpStatus": 403,
+        "signals": [],
+        "error": ""
+      },
+      "contactCapabilityVerified": false,
+      "externalVerificationStatus": "",
+      "publicEmail": "",
+      "emailVerificationStatus": "",
+      "socialProfiles": [
+        "https://www.instagram.com/wildearthaustralia/",
+        "https://www.facebook.com/wildearth",
+        "https://www.wildearth.com.au/"
+      ]
+    },
+    "tentworld australia": {
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-05T05:07:42.483Z",
+        "evidenceUrl": "https://www.tentworld.com.au/",
+        "httpStatus": 200,
+        "signals": [],
+        "error": ""
+      },
+      "contactCapabilityVerified": false,
+      "externalVerificationStatus": "",
+      "publicEmail": "",
+      "emailVerificationStatus": "",
+      "socialProfiles": []
+    },
+    "paddy pallin": {
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-05T05:07:42.172Z",
+        "evidenceUrl": "https://www.paddypallin.com.au/",
+        "httpStatus": 200,
+        "signals": [
+          "form_control",
+          "contact_invitation"
+        ],
+        "error": ""
+      },
+      "contactCapabilityVerified": true,
+      "externalVerificationStatus": "official_contact_form_verified",
+      "publicEmail": "",
+      "emailVerificationStatus": "",
+      "socialProfiles": [
+        "https://www.facebook.com/PaddyPallin"
+      ]
+    },
+    "macpac": {
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-05T05:07:42.422Z",
+        "evidenceUrl": "https://www.macpac.com.au/",
+        "httpStatus": 200,
+        "signals": [
+          "form_control",
+          "contact_invitation"
+        ],
+        "error": ""
+      },
+      "contactCapabilityVerified": true,
+      "externalVerificationStatus": "official_contact_form_verified",
+      "publicEmail": "",
+      "emailVerificationStatus": "",
+      "socialProfiles": [
+        "https://www.instagram.com/macpac/",
+        "https://www.facebook.com/macpac"
+      ]
+    },
+    "tentworld nz": {
+      "firstPartyChannelVerification": {
+        "status": "unreachable",
+        "verifiedAt": "2026-08-05T05:07:47.567Z",
+        "evidenceUrl": "https://www.tentworld.co.nz/",
+        "httpStatus": 0,
+        "signals": [],
+        "error": "fetch failed"
+      },
+      "contactCapabilityVerified": false,
+      "externalVerificationStatus": "",
+      "publicEmail": "",
+      "emailVerificationStatus": "",
+      "socialProfiles": []
+    },
+    "torpedo7": {
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-05T05:07:48.708Z",
+        "evidenceUrl": "https://www.torpedo7.co.nz/",
+        "httpStatus": 200,
+        "signals": [
+          "form_control"
+        ],
+        "error": ""
+      },
+      "contactCapabilityVerified": false,
+      "externalVerificationStatus": "",
+      "publicEmail": "",
+      "emailVerificationStatus": "",
+      "socialProfiles": [
+        "https://www.instagram.com/torpedo7/",
+        "https://www.facebook.com/Torpedo7"
+      ]
+    },
+    "outdoor action": {
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-05T05:07:48.512Z",
+        "evidenceUrl": "https://www.outdooraction.co.nz/",
+        "httpStatus": 200,
+        "signals": [
+          "form_control",
+          "contact_invitation"
+        ],
+        "error": ""
+      },
+      "contactCapabilityVerified": true,
+      "externalVerificationStatus": "official_contact_form_verified",
+      "publicEmail": "",
+      "emailVerificationStatus": "",
+      "socialProfiles": []
+    },
+    "campz": {
+      "firstPartyChannelVerification": {
+        "status": "unreachable",
+        "verifiedAt": "2026-08-05T05:07:49.090Z",
+        "evidenceUrl": "https://www.bergfreunde.de/?campz=1",
+        "httpStatus": 403,
+        "signals": [],
+        "error": ""
+      },
+      "contactCapabilityVerified": false,
+      "externalVerificationStatus": "",
+      "publicEmail": "",
+      "emailVerificationStatus": "",
+      "socialProfiles": []
+    },
+    "sport conrad": {
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-05T05:07:51.492Z",
+        "evidenceUrl": "https://www.sport-conrad.com/",
+        "httpStatus": 200,
+        "signals": [
+          "form_control"
+        ],
+        "error": ""
+      },
+      "contactCapabilityVerified": false,
+      "externalVerificationStatus": "",
+      "publicEmail": "info@sport-conrad.de",
+      "emailVerificationStatus": "",
+      "socialProfiles": [
+        "https://www.instagram.com/sportconrad/",
+        "https://www.facebook.com/SportConrad"
+      ]
+    },
+    "doorout": {
+      "firstPartyChannelVerification": {
+        "status": "unreachable",
+        "verifiedAt": "2026-08-05T05:08:01.499Z",
+        "evidenceUrl": "https://www.doorout.com/",
+        "httpStatus": 0,
+        "signals": [],
+        "error": "timeout"
+      },
+      "contactCapabilityVerified": false,
+      "externalVerificationStatus": "",
+      "publicEmail": "",
+      "emailVerificationStatus": "",
+      "socialProfiles": [
+        "https://www.instagram.com/doorout_com/",
+        "https://www.facebook.com/dooroutcom",
+        "https://www.doorout.com/"
+      ]
+    },
+    "addnature": {
+      "firstPartyChannelVerification": {
+        "status": "unreachable",
+        "verifiedAt": "2026-08-05T05:07:54.602Z",
+        "evidenceUrl": "https://www.addnature.com/",
+        "httpStatus": 0,
+        "signals": [],
+        "error": "fetch failed"
+      },
+      "contactCapabilityVerified": false,
+      "externalVerificationStatus": "",
+      "publicEmail": "",
+      "emailVerificationStatus": "",
+      "socialProfiles": []
+    },
+    "xxl sport": {
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-05T05:07:53.580Z",
+        "evidenceUrl": "https://www.xxl.no/",
+        "httpStatus": 200,
+        "signals": [
+          "form_control"
+        ],
+        "error": ""
+      },
+      "contactCapabilityVerified": false,
+      "externalVerificationStatus": "",
+      "publicEmail": "",
+      "emailVerificationStatus": "",
+      "socialProfiles": []
+    },
+    "blue tomato": {
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-05T05:07:53.197Z",
+        "evidenceUrl": "https://www.blue-tomato.com/de-DE/",
+        "httpStatus": 200,
+        "signals": [
+          "form_control"
+        ],
+        "error": ""
+      },
+      "contactCapabilityVerified": false,
+      "externalVerificationStatus": "",
+      "publicEmail": "",
+      "emailVerificationStatus": "",
+      "socialProfiles": [
+        "https://www.instagram.com/bluetomato/",
+        "https://www.facebook.com/bluetomato"
+      ]
+    },
+    "sportler": {
+      "firstPartyChannelVerification": {
+        "status": "unreachable",
+        "verifiedAt": "2026-08-05T05:08:02.631Z",
+        "evidenceUrl": "https://www.sportler.com/",
+        "httpStatus": 403,
+        "signals": [],
+        "error": ""
+      },
+      "contactCapabilityVerified": false,
+      "externalVerificationStatus": "",
+      "publicEmail": "",
+      "emailVerificationStatus": "",
+      "socialProfiles": []
+    },
+    "trekkinn": {
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-05T05:08:02.572Z",
+        "evidenceUrl": "https://www.tradeinn.com/trekkinn/en",
+        "httpStatus": 200,
+        "signals": [
+          "form_control",
+          "contact_invitation"
+        ],
+        "error": ""
+      },
+      "contactCapabilityVerified": true,
+      "externalVerificationStatus": "official_contact_form_verified",
+      "publicEmail": "",
+      "emailVerificationStatus": "",
+      "socialProfiles": [
+        "https://www.facebook.com/trekkinn"
+      ]
+    },
+    "4camping": {
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-05T05:08:03.911Z",
+        "evidenceUrl": "https://www.4camping.cz/",
+        "httpStatus": 200,
+        "signals": [
+          "form_control",
+          "public_business_email"
+        ],
+        "error": ""
+      },
+      "contactCapabilityVerified": false,
+      "externalVerificationStatus": "",
+      "publicEmail": "objednavky@4camping.cz",
+      "emailVerificationStatus": "official_public_business_email",
+      "socialProfiles": [
+        "https://www.instagram.com/4camping.cz/"
+      ]
+    },
+    "8a pl": {
+      "firstPartyChannelVerification": {
+        "status": "unreachable",
+        "verifiedAt": "2026-08-05T05:08:01.691Z",
+        "evidenceUrl": "https://8a.pl/",
+        "httpStatus": 403,
+        "signals": [],
+        "error": ""
+      },
+      "contactCapabilityVerified": false,
+      "externalVerificationStatus": "",
+      "publicEmail": "",
+      "emailVerificationStatus": "",
+      "socialProfiles": [
+        "https://www.instagram.com/8apl/",
+        "https://www.facebook.com/sklep8apl",
+        "https://8a.pl/"
+      ]
+    },
+    "sklep podroznika": {
+      "firstPartyChannelVerification": {
+        "status": "unreachable",
+        "verifiedAt": "2026-08-05T05:08:04.825Z",
+        "evidenceUrl": "https://www.sklep-podroznika.pl/",
+        "httpStatus": 0,
+        "signals": [],
+        "error": "fetch failed"
+      },
+      "contactCapabilityVerified": false,
+      "externalVerificationStatus": "",
+      "publicEmail": "",
+      "emailVerificationStatus": "",
+      "socialProfiles": []
+    },
+    "moosejaw": {
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-05T05:09:21.924Z",
+        "evidenceUrl": "https://www.publiclands.com/?segment=mjtopl",
+        "httpStatus": 200,
+        "signals": [
+          "form_control"
+        ],
+        "error": ""
+      },
+      "contactCapabilityVerified": false,
+      "externalVerificationStatus": "",
+      "publicEmail": "",
+      "emailVerificationStatus": "",
+      "socialProfiles": []
+    },
+    "eastern mountain sports": {
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-05T05:09:20.656Z",
+        "evidenceUrl": "https://www.ems.com/",
+        "httpStatus": 200,
+        "signals": [
+          "form_control"
+        ],
+        "error": ""
+      },
+      "contactCapabilityVerified": false,
+      "externalVerificationStatus": "",
+      "publicEmail": "",
+      "emailVerificationStatus": "",
+      "socialProfiles": []
+    },
+    "pack rat outdoor center": {
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-05T05:09:22.541Z",
+        "evidenceUrl": "https://packratoc.com/",
+        "httpStatus": 200,
+        "signals": [
+          "form_control"
+        ],
+        "error": ""
+      },
+      "contactCapabilityVerified": false,
+      "externalVerificationStatus": "",
+      "publicEmail": "",
+      "emailVerificationStatus": "",
+      "socialProfiles": []
+    },
+    "massey outfitters": {
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-05T05:09:21.216Z",
+        "evidenceUrl": "https://www.masseysoutfitters.com/",
+        "httpStatus": 200,
+        "signals": [
+          "contact_invitation"
+        ],
+        "error": ""
+      },
+      "contactCapabilityVerified": false,
+      "externalVerificationStatus": "",
+      "publicEmail": "",
+      "emailVerificationStatus": "",
+      "socialProfiles": [
+        "https://www.facebook.com/MasseysOutfitters"
+      ]
+    },
+    "intersport norway": {
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-05T05:09:24.342Z",
+        "evidenceUrl": "https://www.intersport.no/",
+        "httpStatus": 200,
+        "signals": [],
+        "error": ""
+      },
+      "contactCapabilityVerified": false,
+      "externalVerificationStatus": "",
+      "publicEmail": "",
+      "emailVerificationStatus": "",
+      "socialProfiles": [
+        "https://www.facebook.com/intersportnorge"
+      ]
+    },
+    "mammut store": {
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-05T05:09:23.913Z",
+        "evidenceUrl": "https://www.mammut.com/int/en",
+        "httpStatus": 200,
+        "signals": [],
+        "error": ""
+      },
+      "contactCapabilityVerified": false,
+      "externalVerificationStatus": "",
+      "publicEmail": "",
+      "emailVerificationStatus": "",
+      "socialProfiles": []
+    },
+    "bever zwerfsport": {
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-05T05:09:23.078Z",
+        "evidenceUrl": "https://www.bever.nl/",
+        "httpStatus": 200,
+        "signals": [
+          "form_control"
+        ],
+        "error": ""
+      },
+      "contactCapabilityVerified": false,
+      "externalVerificationStatus": "",
+      "publicEmail": "",
+      "emailVerificationStatus": "",
+      "socialProfiles": [
+        "https://www.facebook.com/BeverNL"
+      ]
+    },
+    "durango outdoor exchange": {
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-05T05:09:23.464Z",
+        "evidenceUrl": "https://durangooutdoorexchange.com/",
+        "httpStatus": 200,
+        "signals": [
+          "form_control",
+          "public_business_email",
+          "contact_invitation"
+        ],
+        "error": ""
+      },
+      "contactCapabilityVerified": true,
+      "externalVerificationStatus": "official_contact_form_verified",
+      "publicEmail": "info@durangooutdoorexchange.com",
+      "emailVerificationStatus": "official_public_business_email",
+      "socialProfiles": []
+    },
+    "outdoor specialist": {
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-05T05:09:30.351Z",
+        "evidenceUrl": "https://www.outdoor-experts.nl/nl/",
+        "httpStatus": 200,
+        "signals": [
+          "form_control"
+        ],
+        "error": ""
+      },
+      "contactCapabilityVerified": false,
+      "externalVerificationStatus": "",
+      "publicEmail": "",
+      "emailVerificationStatus": "",
+      "socialProfiles": []
+    },
+    "campervan gift": {
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-05T05:09:26.620Z",
+        "evidenceUrl": "https://www.campervangift.co.uk/become-a-supplier/",
+        "httpStatus": 200,
+        "signals": [
+          "form_control",
+          "public_business_email",
+          "supplier_invitation",
+          "contact_invitation"
+        ],
+        "error": ""
+      },
+      "contactCapabilityVerified": true,
+      "externalVerificationStatus": "official_supplier_form_verified",
+      "publicEmail": "sales@campervangift.co.uk",
+      "emailVerificationStatus": "",
+      "socialProfiles": []
+    },
+    "gecko overland": {
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-05T05:09:28.265Z",
+        "evidenceUrl": "https://gecko-overland.com/contact/",
+        "httpStatus": 200,
+        "signals": [
+          "form_control",
+          "public_business_email",
+          "contact_invitation"
+        ],
+        "error": ""
+      },
+      "contactCapabilityVerified": true,
+      "externalVerificationStatus": "official_contact_form_verified",
+      "publicEmail": "info@gecko-overland.com",
+      "emailVerificationStatus": "official_public_business_email",
+      "socialProfiles": [
+        "https://www.instagram.com/geckooverland_uae/",
+        "https://gecko-overland.com/contact/"
+      ]
+    },
+    "bbq fans": {
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-05T05:09:26.773Z",
+        "evidenceUrl": "https://www.bbqfans.com/become-a-supplier/",
+        "httpStatus": 200,
+        "signals": [
+          "form_control",
+          "supplier_invitation",
+          "contact_invitation"
+        ],
+        "error": ""
+      },
+      "contactCapabilityVerified": true,
+      "externalVerificationStatus": "official_supplier_form_verified",
+      "publicEmail": "sales@bbqfans.com",
+      "emailVerificationStatus": "",
+      "socialProfiles": []
+    },
+    "flameoutdoors": {
+      "firstPartyChannelVerification": {
+        "status": "unreachable",
+        "verifiedAt": "2026-08-05T05:09:31.304Z",
+        "evidenceUrl": "https://flameoutdoors.com/pages/authorized-dealer",
+        "httpStatus": 402,
+        "signals": [],
+        "error": ""
+      },
+      "contactCapabilityVerified": false,
+      "externalVerificationStatus": "official_supplier_email_verified",
+      "publicEmail": "sales@flameoutdoors.com",
+      "emailVerificationStatus": "",
+      "socialProfiles": []
+    },
+    "basecamp outfitters roslyn": {
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-05T05:09:30.981Z",
+        "evidenceUrl": "https://www.basecamp-outfitters.com/",
+        "httpStatus": 200,
+        "signals": [
+          "form_control"
+        ],
+        "error": ""
+      },
+      "contactCapabilityVerified": false,
+      "externalVerificationStatus": "",
+      "publicEmail": "",
+      "emailVerificationStatus": "",
+      "socialProfiles": [
+        "https://www.instagram.com/basecampoutfitters_roslynwa/",
+        "https://www.basecamp-outfitters.com/"
+      ]
+    },
+    "new world outdoor gear co": {
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-05T05:09:31.528Z",
+        "evidenceUrl": "https://www.nwogco.com/",
+        "httpStatus": 200,
+        "signals": [
+          "public_business_email"
+        ],
+        "error": ""
+      },
+      "contactCapabilityVerified": false,
+      "externalVerificationStatus": "",
+      "publicEmail": "NEWWORLDOUTDOORGEARCO@GMAIL.COM",
+      "emailVerificationStatus": "official_public_business_email",
+      "socialProfiles": [
+        "https://www.instagram.com/newworldoutdoorgearco/",
+        "https://www.nwogco.com/"
+      ]
+    },
+    "esprinet group": {
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-05T05:09:33.656Z",
+        "evidenceUrl": "https://www.esprinet.com/en/become-a-supplier/",
+        "httpStatus": 200,
+        "signals": [
+          "form_control",
+          "supplier_invitation"
+        ],
+        "error": ""
+      },
+      "contactCapabilityVerified": true,
+      "externalVerificationStatus": "official_supplier_form_verified",
+      "publicEmail": "",
+      "emailVerificationStatus": "",
+      "socialProfiles": []
+    },
+    "eet group": {
+      "firstPartyChannelVerification": {
+        "status": "unreachable",
+        "verifiedAt": "2026-08-05T05:09:34.389Z",
+        "evidenceUrl": "https://www.eetgroup.com/en-eu/eet/become-a-supplier",
+        "httpStatus": 403,
+        "signals": [],
+        "error": ""
+      },
+      "contactCapabilityVerified": false,
+      "externalVerificationStatus": "",
+      "publicEmail": "sales@eet.eu",
+      "emailVerificationStatus": "",
+      "socialProfiles": []
+    },
+    "komsa": {
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-05T05:09:36.856Z",
+        "evidenceUrl": "https://komsa.com/en/contact",
+        "httpStatus": 200,
+        "signals": [
+          "form_control",
+          "contact_invitation"
+        ],
+        "error": ""
+      },
+      "contactCapabilityVerified": true,
+      "externalVerificationStatus": "official_contact_form_verified",
+      "publicEmail": "",
+      "emailVerificationStatus": "",
+      "socialProfiles": []
+    },
+    "aqipa": {
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-05T05:09:35.020Z",
+        "evidenceUrl": "https://support.aqipa.com/en-US/new-ticket",
+        "httpStatus": 200,
+        "signals": [
+          "form_control",
+          "public_business_email",
+          "contact_invitation"
+        ],
+        "error": ""
+      },
+      "contactCapabilityVerified": true,
+      "externalVerificationStatus": "official_contact_form_verified",
+      "publicEmail": "service-emea@premiumaudiocompany.com",
+      "emailVerificationStatus": "official_public_business_email",
+      "socialProfiles": []
+    },
+    "cms distribution": {
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-05T05:09:34.181Z",
+        "evidenceUrl": "https://www.cmsdistribution.com/contact-us",
+        "httpStatus": 200,
+        "signals": [
+          "contact_invitation"
+        ],
+        "error": ""
+      },
+      "contactCapabilityVerified": false,
+      "externalVerificationStatus": "",
+      "publicEmail": "",
+      "emailVerificationStatus": "",
+      "socialProfiles": [
+        "https://www.linkedin.com/company/cms-distribution"
+      ]
+    },
+    "bass pro shops": {
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-05T05:09:37.919Z",
+        "evidenceUrl": "https://vendorportal.basspro.com/default.aspx",
+        "httpStatus": 200,
+        "signals": [
+          "form_control",
+          "public_business_email"
+        ],
+        "error": ""
+      },
+      "contactCapabilityVerified": false,
+      "externalVerificationStatus": "",
+      "publicEmail": "vendorrelations@basspro.com",
+      "emailVerificationStatus": "",
+      "socialProfiles": []
+    },
+    "cabela s": {
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-05T05:09:39.303Z",
+        "evidenceUrl": "https://help.cabelas.com/company-information-ff566349/how-can-i-sell-my-product-through-cabelas-cf904a21",
+        "httpStatus": 200,
+        "signals": [
+          "form_control",
+          "public_business_email",
+          "contact_invitation"
+        ],
+        "error": ""
+      },
+      "contactCapabilityVerified": true,
+      "externalVerificationStatus": "official_contact_form_verified",
+      "publicEmail": "vendorrelations@basspro.com",
+      "emailVerificationStatus": "",
+      "socialProfiles": [
+        "https://www.instagram.com/cabelas/",
+        "https://www.facebook.com/Cabelas"
+      ]
+    },
+    "liberty mountain": {
+      "firstPartyChannelVerification": {
+        "status": "unreachable",
+        "verifiedAt": "2026-08-05T05:09:37.169Z",
+        "evidenceUrl": "https://libertymountain.com/find-a-rep",
+        "httpStatus": 403,
+        "signals": [],
+        "error": ""
+      },
+      "contactCapabilityVerified": false,
+      "externalVerificationStatus": "",
+      "publicEmail": "",
+      "emailVerificationStatus": "",
+      "socialProfiles": []
+    },
+    "mec": {
+      "firstPartyChannelVerification": {
+        "status": "unreachable",
+        "verifiedAt": "2026-08-05T05:09:37.107Z",
+        "evidenceUrl": "https://www.mec.ca/en/contact-us",
+        "httpStatus": 403,
+        "signals": [],
+        "error": ""
+      },
+      "contactCapabilityVerified": false,
+      "externalVerificationStatus": "",
+      "publicEmail": "info@mec.ca",
+      "emailVerificationStatus": "",
+      "socialProfiles": []
+    },
+    "backcountry": {
+      "firstPartyChannelVerification": {
+        "status": "unreachable",
+        "verifiedAt": "2026-08-05T05:09:39.526Z",
+        "evidenceUrl": "https://www.backcountry.com/sc/contact-us",
+        "httpStatus": 403,
+        "signals": [],
+        "error": ""
+      },
+      "contactCapabilityVerified": false,
+      "externalVerificationStatus": "",
+      "publicEmail": "",
+      "emailVerificationStatus": "",
+      "socialProfiles": []
+    },
+    "go outdoors": {
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-05T05:09:52.509Z",
+        "evidenceUrl": "https://www.gooutdoors.co.uk/",
+        "httpStatus": 200,
+        "signals": [
+          "form_control",
+          "contact_invitation"
+        ],
+        "error": ""
+      },
+      "contactCapabilityVerified": true,
+      "externalVerificationStatus": "official_contact_form_verified",
+      "publicEmail": "",
+      "emailVerificationStatus": "",
+      "socialProfiles": [
+        "https://www.instagram.com/gooutdoors/",
+        "https://www.facebook.com/GOoutdoorsUK/"
+      ]
+    },
+    "sportsman s warehouse": {
+      "firstPartyChannelVerification": {
+        "status": "unreachable",
+        "verifiedAt": "2026-08-05T05:09:51.064Z",
+        "evidenceUrl": "https://www.sportsmans.com/contact-us",
+        "httpStatus": 0,
+        "signals": [],
+        "error": "fetch failed"
+      },
+      "contactCapabilityVerified": false,
+      "externalVerificationStatus": "",
+      "publicEmail": "",
+      "emailVerificationStatus": "",
+      "socialProfiles": []
+    },
+    "obelink": {
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-05T05:09:52.176Z",
+        "evidenceUrl": "https://www.obelink.nl/obelink-partnerprogramma/",
+        "httpStatus": 200,
+        "signals": [
+          "form_control"
+        ],
+        "error": ""
+      },
+      "contactCapabilityVerified": false,
+      "externalVerificationStatus": "official_supplier_form_verified",
+      "publicEmail": "",
+      "emailVerificationStatus": "",
+      "socialProfiles": []
+    },
+    "anaconda": {
+      "firstPartyChannelVerification": {
+        "status": "unreachable",
+        "verifiedAt": "2026-08-05T05:09:53.159Z",
+        "evidenceUrl": "https://help.anacondastores.com/hc/en-au",
+        "httpStatus": 403,
+        "signals": [],
+        "error": ""
+      },
+      "contactCapabilityVerified": false,
+      "externalVerificationStatus": "",
+      "publicEmail": "info@spotlightgroup.com",
+      "emailVerificationStatus": "",
+      "socialProfiles": []
+    },
+    "globetrotter": {
+      "firstPartyChannelVerification": {
+        "status": "unreachable",
+        "verifiedAt": "2026-08-05T05:09:54.247Z",
+        "evidenceUrl": "https://www.globetrotter.de/",
+        "httpStatus": 403,
+        "signals": [],
+        "error": ""
+      },
+      "contactCapabilityVerified": false,
+      "externalVerificationStatus": "",
+      "publicEmail": "",
+      "emailVerificationStatus": "",
+      "socialProfiles": []
+    },
+    "outdoor nature": {
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-05T05:09:56.229Z",
+        "evidenceUrl": "https://www.outdoornature.com.au/become-a-supplier/",
+        "httpStatus": 200,
+        "signals": [
+          "form_control",
+          "supplier_invitation",
+          "contact_invitation"
+        ],
+        "error": ""
+      },
+      "contactCapabilityVerified": true,
+      "externalVerificationStatus": "official_supplier_form_verified",
+      "publicEmail": "",
+      "emailVerificationStatus": "",
+      "socialProfiles": []
+    },
+    "garage grown gear": {
+      "firstPartyChannelVerification": {
+        "status": "unreachable",
+        "verifiedAt": "2026-08-05T05:09:53.344Z",
+        "evidenceUrl": "https://www.garagegrowngear.com/",
+        "httpStatus": 403,
+        "signals": [],
+        "error": ""
+      },
+      "contactCapabilityVerified": false,
+      "externalVerificationStatus": "",
+      "publicEmail": "",
+      "emailVerificationStatus": "",
+      "socialProfiles": []
+    },
+    "bergfreunde": {
+      "firstPartyChannelVerification": {
+        "status": "unreachable",
+        "verifiedAt": "2026-08-05T05:09:53.309Z",
+        "evidenceUrl": "https://www.bergfreunde.eu/",
+        "httpStatus": 403,
+        "signals": [],
+        "error": ""
+      },
+      "contactCapabilityVerified": false,
+      "externalVerificationStatus": "",
+      "publicEmail": "",
+      "emailVerificationStatus": "",
+      "socialProfiles": []
+    },
+    "sail outdoors": {
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-05T05:09:57.544Z",
+        "evidenceUrl": "https://www.sail.ca/en/contact-us",
+        "httpStatus": 200,
+        "signals": [
+          "form_control",
+          "public_business_email",
+          "contact_invitation"
+        ],
+        "error": ""
+      },
+      "contactCapabilityVerified": true,
+      "externalVerificationStatus": "official_contact_form_verified",
+      "publicEmail": "info@sail.ca",
+      "emailVerificationStatus": "official_public_business_email",
+      "socialProfiles": []
+    },
+    "fritz berger": {
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-05T05:09:57.917Z",
+        "evidenceUrl": "https://www.fritz-berger.de/",
+        "httpStatus": 200,
+        "signals": [
+          "form_control"
+        ],
+        "error": ""
+      },
+      "contactCapabilityVerified": false,
+      "externalVerificationStatus": "",
+      "publicEmail": "",
+      "emailVerificationStatus": "",
+      "socialProfiles": []
+    },
+    "au vieux campeur": {
+      "firstPartyChannelVerification": {
+        "status": "unreachable",
+        "verifiedAt": "2026-08-05T05:09:56.347Z",
+        "evidenceUrl": "https://www.auvieuxcampeur.fr/",
+        "httpStatus": 403,
+        "signals": [],
+        "error": ""
+      },
+      "contactCapabilityVerified": false,
+      "externalVerificationStatus": "",
+      "publicEmail": "",
+      "emailVerificationStatus": "",
+      "socialProfiles": []
+    },
+    "cotswold outdoor": {
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-05T05:09:57.640Z",
+        "evidenceUrl": "https://www.cotswoldoutdoor.com/",
+        "httpStatus": 200,
+        "signals": [
+          "form_control",
+          "contact_invitation"
+        ],
+        "error": ""
+      },
+      "contactCapabilityVerified": true,
+      "externalVerificationStatus": "official_contact_form_verified",
+      "publicEmail": "enquiries@cotswoldoutdoor.com",
+      "emailVerificationStatus": "",
+      "socialProfiles": [
+        "https://www.instagram.com/cotswoldoutdoor/",
+        "https://www.facebook.com/CotswoldOutdoor"
+      ]
+    },
+    "decathlon france": {
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-05T05:09:59.156Z",
+        "evidenceUrl": "https://www.decathlon.fr/help/app/contact",
+        "httpStatus": 200,
+        "signals": [
+          "form_control"
+        ],
+        "error": ""
+      },
+      "contactCapabilityVerified": false,
+      "externalVerificationStatus": "",
+      "publicEmail": "international.media@decathlon.com",
+      "emailVerificationStatus": "",
+      "socialProfiles": []
+    },
+    "campsaver": {
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-05T05:09:59.186Z",
+        "evidenceUrl": "https://www.campsaver.com/",
+        "httpStatus": 200,
+        "signals": [
+          "form_control",
+          "supplier_invitation",
+          "contact_invitation"
+        ],
+        "error": ""
+      },
+      "contactCapabilityVerified": true,
+      "externalVerificationStatus": "official_supplier_form_verified",
+      "publicEmail": "",
+      "emailVerificationStatus": "",
+      "socialProfiles": [
+        "https://www.instagram.com/campsaver/"
+      ]
+    },
+    "bergzeit": {
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-05T05:10:01.407Z",
+        "evidenceUrl": "https://www.bergzeit.de/",
+        "httpStatus": 200,
+        "signals": [],
+        "error": ""
+      },
+      "contactCapabilityVerified": false,
+      "externalVerificationStatus": "",
+      "publicEmail": "",
+      "emailVerificationStatus": "",
+      "socialProfiles": []
+    },
+    "camping wagner": {
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-05T05:10:00.579Z",
+        "evidenceUrl": "https://www.campingwagner.de/de/",
+        "httpStatus": 200,
+        "signals": [],
+        "error": ""
+      },
+      "contactCapabilityVerified": false,
+      "externalVerificationStatus": "",
+      "publicEmail": "",
+      "emailVerificationStatus": "",
+      "socialProfiles": []
+    },
+    "decathlon germany": {
+      "firstPartyChannelVerification": {
+        "status": "unreachable",
+        "verifiedAt": "2026-08-05T05:10:01.657Z",
+        "evidenceUrl": "https://www.decathlon.de/help/app/contact",
+        "httpStatus": 403,
+        "signals": [],
+        "error": ""
+      },
+      "contactCapabilityVerified": false,
+      "externalVerificationStatus": "",
+      "publicEmail": "international.media@decathlon.com",
+      "emailVerificationStatus": "",
+      "socialProfiles": []
+    },
+    "summit international": {
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-05T05:10:02.731Z",
+        "evidenceUrl": "https://www.summitint.co/contact/",
+        "httpStatus": 200,
+        "signals": [
+          "form_control",
+          "contact_invitation"
+        ],
+        "error": ""
+      },
+      "contactCapabilityVerified": true,
+      "externalVerificationStatus": "official_contact_form_verified",
+      "publicEmail": "info@summitint.co",
+      "emailVerificationStatus": "",
+      "socialProfiles": []
+    },
+    "valhalla pure outfitters": {
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-05T05:10:02.754Z",
+        "evidenceUrl": "https://vpo.ca/",
+        "httpStatus": 200,
+        "signals": [],
+        "error": ""
+      },
+      "contactCapabilityVerified": false,
+      "externalVerificationStatus": "",
+      "publicEmail": "",
+      "emailVerificationStatus": "",
+      "socialProfiles": []
+    },
+    "tentworld": {
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-05T05:10:02.983Z",
+        "evidenceUrl": "https://www.tentworld.com.au/",
+        "httpStatus": 200,
+        "signals": [],
+        "error": ""
+      },
+      "contactCapabilityVerified": false,
+      "externalVerificationStatus": "",
+      "publicEmail": "contact@tentworld.com.au",
+      "emailVerificationStatus": "",
+      "socialProfiles": []
+    },
+    "trekitt": {
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-05T05:10:03.853Z",
+        "evidenceUrl": "https://www.trekitt.co.uk/",
+        "httpStatus": 200,
+        "signals": [
+          "form_control",
+          "contact_invitation"
+        ],
+        "error": ""
+      },
+      "contactCapabilityVerified": true,
+      "externalVerificationStatus": "official_contact_form_verified",
+      "publicEmail": "",
+      "emailVerificationStatus": "",
+      "socialProfiles": []
+    },
+    "ultralight outdoor gear": {
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-05T05:10:04.275Z",
+        "evidenceUrl": "https://ultralightoutdoorgear.co.uk/",
+        "httpStatus": 200,
+        "signals": [
+          "form_control",
+          "public_business_email",
+          "contact_invitation"
+        ],
+        "error": ""
+      },
+      "contactCapabilityVerified": true,
+      "externalVerificationStatus": "official_contact_form_verified",
+      "publicEmail": "customer.service@ultralightoutdoorgear.co.uk",
+      "emailVerificationStatus": "official_public_business_email",
+      "socialProfiles": []
+    },
+    "outnorth": {
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-05T05:10:04.443Z",
+        "evidenceUrl": "https://www.outnorth.com/int/faq/contact",
+        "httpStatus": 200,
+        "signals": [
+          "form_control",
+          "contact_invitation"
+        ],
+        "error": ""
+      },
+      "contactCapabilityVerified": true,
+      "externalVerificationStatus": "official_contact_form_verified",
+      "publicEmail": "info@outnorth.com",
+      "emailVerificationStatus": "",
+      "socialProfiles": []
+    },
+    "naturkompaniet": {
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-05T05:10:04.494Z",
+        "evidenceUrl": "https://www.naturkompaniet.se/",
+        "httpStatus": 200,
+        "signals": [
+          "form_control",
+          "public_business_email"
+        ],
+        "error": ""
+      },
+      "contactCapabilityVerified": false,
+      "externalVerificationStatus": "",
+      "publicEmail": "info@naturkompaniet.se",
+      "emailVerificationStatus": "official_public_business_email",
+      "socialProfiles": []
+    },
+    "fjellsport": {
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-05T05:10:05.835Z",
+        "evidenceUrl": "https://www.fjellsport.no/faq/personvern",
+        "httpStatus": 200,
+        "signals": [
+          "form_control"
+        ],
+        "error": ""
+      },
+      "contactCapabilityVerified": false,
+      "externalVerificationStatus": "",
+      "publicEmail": "kundeservice@fjellsport.no",
+      "emailVerificationStatus": "",
+      "socialProfiles": []
+    }
+  }
 }
