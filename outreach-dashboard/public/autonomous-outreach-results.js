@@ -13441,5 +13441,22 @@ window.AUTONOMOUS_OUTREACH_RESULTS = [
     "messageId": "",
     "sentFolder": "",
     "sentUid": null
+  },
+  {
+    "task_id": "manual-prime-outdoor-store-email-2026-08-05",
+    "company": "Prime Outdoor Store",
+    "approval_version": 1,
+    "status": "sent_confirmed",
+    "agent": "codex-chrome-extension",
+    "browserTransportUsed": "attached-dedicated-chrome",
+    "timestamp": "2026-08-05T12:34:00.000Z",
+    "target_url": "mailto:info@primeoutdoorstore.com",
+    "evidence": "official_supplier_page:https://primeoutdoorstore.com/pages/supplier;official_public_business_email;recipient_edit_state_exact_match:info@primeoutdoorstore.com;sender_identity_verified:Leo@flextailgear.com;alibaba_webmail_send_physical_click;composer_closed_to_inbox;undo_control_visible;sent_folder_exact_subject_visible:2026-08-05T20:34+08:00",
+    "draft": "Dear Prime Outdoor Store Team,\n\nI’m Leo from FLEXTAIL. I found your official supplier page and saw that you are actively inviting outdoor equipment brands to explore partnerships.\n\nFLEXTAIL develops compact outdoor electrics including portable air pumps, camping lighting and lightweight power solutions. Our products are designed for high-rotation outdoor and travel assortments, and we are preparing 36+ new SKUs for 2026 across several use cases and price tiers.\n\nWould your buying team be open to reviewing a concise product line sheet and supplier proposal for the UK market?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nleo@flextailgear.com",
+    "subject": "FLEXTAIL supplier partnership | compact outdoor electrics",
+    "recipientEmail": "info@primeoutdoorstore.com",
+    "messageId": "",
+    "sentFolder": "Sent",
+    "sentUid": null
   }
 ];

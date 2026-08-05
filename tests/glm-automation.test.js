@@ -98,6 +98,8 @@ test('a pre-send Alibaba authentication failure falls back to verified website o
   assert.ok(mainSource.includes('if (isVerifiedEmail && !isWebsiteContact)'));
   assert.ok(mainSource.includes('alibaba_webmail_login_required|alibaba_webmail_session_unavailable'));
   assert.ok(mainSource.includes('async function probeAlibabaWebmailSession'));
+  assert.ok(mainSource.includes('automationOwned: true, reuseTab: true'));
+  assert.ok(mainSource.includes('consecutiveLoginObservations >= 6'));
   assert.ok(mainSource.includes('alibaba_webmail_authenticated_compose_visible'));
   assert.ok(mainSource.includes('liveAlibabaWebmailSessionReady = Boolean(alibabaSessionProbe && alibabaSessionProbe.ok)'));
   assert.ok(mainSource.includes('filled && filled.ok && !filled.recipientCommittedMatch'));

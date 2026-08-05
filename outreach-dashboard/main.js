@@ -2745,12 +2745,14 @@ function officialMailtoLead(lead = {}, inspection = {}, evidenceUrl = '') {
 }
 
 async function probeAlibabaWebmailSession() {
-  const chromeOpen = await openWithCodexChrome(ALIBABA_WEBMAIL_SENT_URL, { automationOwned: true });
+  const chromeOpen = await openWithCodexChrome(ALIBABA_WEBMAIL_SENT_URL, { automationOwned: true, reuseTab: true });
   if (!chromeOpen || !chromeOpen.ok || !chromeOpen.webSocketDebuggerUrl) {
     return { ok: false, evidence: 'alibaba_webmail_session_unavailable' };
   }
   try {
-    const inspection = await evaluateChromeTabJson(chromeOpen, `(() => {
+    let inspection = null;
+    for (let attempt = 0; attempt < 6; attempt += 1) {
+      inspection = await evaluateChromeTabJson(chromeOpen, `(() => {
       const visible = (element) => Boolean(element && element.getClientRects && element.getClientRects().length);
       const textOf = (element) => String(element?.innerText || element?.textContent || element?.getAttribute?.('aria-label') || element?.getAttribute?.('title') || '').trim();
       const roots = [document];
@@ -2775,7 +2777,13 @@ async function probeAlibabaWebmailSession() {
         url: location.href,
         title: document.title,
       });
-    })()`, 8000).catch(() => null);
+      })()`, 8000).catch(() => null);
+      if (inspection && inspection.ok) break;
+      // Alibaba Mail briefly renders its login shell while restoring an
+      // already-authenticated session. Require a stable login state before
+      // failing the route instead of repeatedly starting credential flows.
+      if (attempt < 5) await sleep(700);
+    }
     return inspection && inspection.ok
       ? inspection
       : { ok: false, evidence: inspection && inspection.evidence || 'alibaba_webmail_session_probe_failed' };
@@ -2804,7 +2812,7 @@ async function runAlibabaWebmailEmailLead(lead = {}, subject = '', draft = '') {
       contentValidation,
     };
   }
-  const chromeOpen = await openWithCodexChrome(ALIBABA_WEBMAIL_SENT_URL, { automationOwned: true });
+  const chromeOpen = await openWithCodexChrome(ALIBABA_WEBMAIL_SENT_URL, { automationOwned: true, reuseTab: true });
   if (!chromeOpen || !chromeOpen.ok || !chromeOpen.webSocketDebuggerUrl) {
     return {
       ok: false,
@@ -2818,10 +2826,16 @@ async function runAlibabaWebmailEmailLead(lead = {}, subject = '', draft = '') {
   let preserveTabForEvidence = false;
   try {
     let compose = null;
+    let consecutiveLoginObservations = 0;
     for (let attempt = 0; attempt < 10; attempt += 1) {
       compose = await evaluateChromeTabJson(chromeOpen, composeStartExpression(), 8000).catch(() => null);
       if (compose && compose.ok) break;
-      if (compose && compose.evidence === 'alibaba_webmail_login_required') break;
+      if (compose && compose.evidence === 'alibaba_webmail_login_required') {
+        consecutiveLoginObservations += 1;
+        if (consecutiveLoginObservations >= 6) break;
+      } else {
+        consecutiveLoginObservations = 0;
+      }
       await sleep(700);
     }
     if (!compose || !compose.ok) return {
