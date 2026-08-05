@@ -1173,7 +1173,7 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "readiness": {
         "ready": true,
         "gate": "official_supplier_route",
-        "evidenceUrl": "https://www.neptunemountaineering.com/"
+        "evidenceUrl": "https://neptunemountaineering.com/"
       },
       "hasTarget": true,
       "inCandidatePool": false,
@@ -1327,10 +1327,14 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     "retainedLowIcp": 0
   },
   "bounceReconciliation": {
-    "ok": true,
-    "reason": "no_recent_bounces",
-    "scanned": 0,
-    "updated": 0
+    "ok": false,
+    "reason": "email_sender_not_configured",
+    "updated": 0,
+    "requiredEnv": [
+      "OUTREACH_EMAIL_FROM",
+      "ALIBABA_SMTP_USER",
+      "ALIBABA_SMTP_SECURITY_PASSWORD"
+    ]
   },
-  "completedAt": "2026-08-05T07:07:23.821Z"
+  "completedAt": "2026-08-05T07:09:01.203Z"
 };
