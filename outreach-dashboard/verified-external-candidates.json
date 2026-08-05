@@ -164,5 +164,35 @@
     "dataSources": ["official company website", "official wholesale enquiries page"],
     "externalVerificationStatus": "official_supplier_email_verified",
     "verifiedAt": "2026-08-04T08:50:00.000Z"
+  },
+  {
+    "company": "Tractor Supply Company",
+    "country": "United States",
+    "url": "https://www.tractorsupply.com/",
+    "contactUrl": "https://www.tractorsupply.com/tsc/cms/policies-information/vendor-information",
+    "segment": "rural lifestyle, outdoor sporting goods and outdoor power equipment retailer",
+    "customerType": "key_account",
+    "fitScore": 90,
+    "background": "Large US rural-lifestyle retailer whose current official Vendor Center invites potential vendor partners and explicitly lists outdoor sporting goods and outdoor power equipment among buyer categories.",
+    "buyerPersona": "Outdoor sporting goods buyer, outdoor power equipment buyer or vendor onboarding owner.",
+    "evidenceUrl": "https://www.tractorsupply.com/tsc/cms/policies-information/vendor-information",
+    "dataSources": ["official company website", "official potential vendor partner submission page"],
+    "externalVerificationStatus": "official_supplier_form_verified",
+    "verifiedAt": "2026-08-05T09:03:00.000Z"
+  },
+  {
+    "company": "RONA",
+    "country": "Canada",
+    "url": "https://www.rona.ca/",
+    "contactUrl": "https://vendors.rona.ca/product-supplier",
+    "segment": "home improvement, hardware and outdoor products retailer",
+    "customerType": "key_account",
+    "fitScore": 78,
+    "background": "Canadian retailer and wholesaler with more than 425 stores whose official vendor portal accepts innovative product-listing applications from prospective suppliers.",
+    "buyerPersona": "Outdoor products, hardware or seasonal category buyer and supplier onboarding owner.",
+    "evidenceUrl": "https://vendors.rona.ca/product-supplier",
+    "dataSources": ["official company vendor portal", "official product supplier application page"],
+    "externalVerificationStatus": "official_supplier_form_verified",
+    "verifiedAt": "2026-08-05T09:03:00.000Z"
   }
 ]
