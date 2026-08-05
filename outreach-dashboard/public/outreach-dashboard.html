@@ -11,17 +11,13 @@
 (function resetLocalDashboardCache(){
   const isLocal = ['127.0.0.1','localhost','::1'].includes(location.hostname);
   if(!isLocal || !('serviceWorker' in navigator)) return;
-  const key = 'local-dashboard-cache-reset-20260714-icp-score-fix';
-  if(sessionStorage.getItem(key)) return;
-  sessionStorage.setItem(key,'1');
+  const key = 'local-dashboard-cache-reset-20260727-smooth-startup';
+  if(localStorage.getItem(key)) return;
+  localStorage.setItem(key,'1');
   Promise.all([
     navigator.serviceWorker.getRegistrations().then(regs=>Promise.all(regs.map(reg=>reg.unregister()))).catch(()=>{}),
     typeof caches !== 'undefined' ? caches.keys().then(keys=>Promise.all(keys.map(name=>caches.delete(name)))).catch(()=>{}) : Promise.resolve()
-  ]).then(()=>{
-    const next = new URL(location.href);
-    next.searchParams.set('cacheReset','20260714-icp-score-fix');
-    location.replace(next.toString());
-  });
+  ]).catch(()=>{});
 })();
 </script>
 <link rel="manifest" href="./manifest.webmanifest">
@@ -2326,14 +2322,14 @@ function exportCSV(){
   const blob=new Blob([header+rows],{type:'text/csv;charset=utf-8;'});
   const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='customer-contacts-'+new Date().toISOString().slice(0,10)+'.csv';a.click();
 }
-if('serviceWorker' in navigator){
+if('serviceWorker' in navigator && !['127.0.0.1','localhost','::1'].includes(location.hostname)){
   navigator.serviceWorker.addEventListener('controllerchange',()=>{
-    const key='sw-refresh-20260714-icp-score-fix';
+    const key='sw-refresh-20260727-smooth-startup';
     if(sessionStorage.getItem(key)) return;
     sessionStorage.setItem(key,'1');
     window.location.reload();
   });
-  window.addEventListener('load',()=>navigator.serviceWorker.register('./service-worker.js?v=20260714-icp-score-fix').then(reg=>reg.update()).catch(()=>{}));
+  window.addEventListener('load',()=>navigator.serviceWorker.register('./service-worker.js?v=20260727-smooth-startup').then(reg=>reg.update()).catch(()=>{}));
 }
 initializeKpiDetailPage();
 </script>
@@ -2344,6 +2340,7 @@ initializeKpiDetailPage();
 <script src="./system-readiness.js?v=20260720-conversion-ops"></script>
 <script src="./system-readiness-latest.js?v=20260720-conversion-ops"></script>
 <script src="./autonomous-outreach-results.js?v=20260714-icp-score-fix"></script>
+<script src="./outreach-intelligence-latest.js?v=20260804-intelligence-v1"></script>
 <script src="./verified-profile-registry.js?v=20260612-profile-calibration"></script>
 <script src="./autonomous-outreach-data.js?v=20260618-icp-priority"></script>
 <script src="./command-center.js?v=20260720-immutable-ledger"></script>

@@ -49,6 +49,7 @@
   const latestGithubSync = window.GITHUB_SYNC_LATEST || null;
   const latestGoogleDiscovery = window.GOOGLE_LEAD_DISCOVERY_LATEST || null;
   const latestSystemVisibility = window.SYSTEM_VISIBILITY_LATEST || null;
+  const latestIntelligence = window.OUTREACH_INTELLIGENCE_LATEST || null;
   const taskIndex = buildTaskIndex(tasks);
   const COOLDOWN_DAYS = Number(data.settings && data.settings.cooldownDays || 7);
   const ICP_MIN_SCORE = Number(data.settings && data.settings.minimumScore || 70);
@@ -336,7 +337,6 @@
   }
   function currentTask() {
     return executableDevelopmentTasks().sort(dealPriorityCompare)[0]
-      || (latestRun ? [...latestQueueRows('visibleTodayQueue')].sort(dealPriorityCompare)[0] : null)
       || null;
   }
   function executionResultKey(result) {
@@ -1421,7 +1421,9 @@
     const goalText = goal
       ? ` · queueGoal ${goal.reached ? 'reached' : `need ${goal.refillNeeded || 0}/${goal.target || 100}`}`
       : '';
-    return `<div class="cc-quality">系统已更新：Latest artifact ${esc(system.generatedAt || latestRun.date || 'unknown')} · potentialPool ${(system.potentialRows || []).length} · dailyQueue ${system.dailyRows.length} · googleDiscovered ${system.googleRows.length} · websiteContact ${system.websiteContactRows.length}${esc(goalText)}${esc(visibility)}${esc(sync)}</div>`;
+    const executableCount = latestRun && latestRun.summary ? Number(latestRun.summary.executableCompanies || 0) : 0;
+    const enrichmentCount = latestRun && latestRun.summary ? Number(latestRun.summary.enrichmentBacklogCount || 0) : 0;
+    return `<div class="cc-quality">系统已更新：Latest artifact ${esc(system.generatedAt || latestRun.date || 'unknown')} · potentialPool ${(system.potentialRows || []).length} · executable ${executableCount} · enrichment backlog ${enrichmentCount} · dailyQueue ${system.dailyRows.length} · googleDiscovered ${system.googleRows.length} · websiteContact ${system.websiteContactRows.length}${esc(goalText)}${esc(visibility)}${esc(sync)}</div>`;
   }
   function actionLabel(action) {
     const labels = {
@@ -1801,6 +1803,13 @@
     const eligibleCount = untouched.filter(canRunGlm).length;
     const executionConnected = autoClawConnected();
     const system = latestSystemSummary();
+    const intelligencePanel = latestIntelligence && latestIntelligence.ownerSummary ? (() => {
+      const owner = latestIntelligence.ownerSummary;
+      const kpi = owner.kpis || {};
+      const exceptions = owner.exceptions || [];
+      const decisions = owner.decisions || [];
+      return `<section class="cc-panel"><div class="cc-panel-head"><div><h2>Autonomous Sales Intelligence</h2><span class="cc-sub">企业真值 · 永久防重 · 证据规划 · 结果学习</span></div><span class="cc-chip green">${esc(owner.phase || 'intelligence')}</span></div><div class="cc-panel-body"><div class="cc-funnel"><div><span>统一企业</span><b>${kpi.companies || 0}</b></div><div><span>永久抑制</span><b>${kpi.permanentlySuppressed || 0}</b></div><div><span>已验证渠道</span><b>${kpi.verifiedEvidenceRoutes || 0}</b></div><div><span>安全计划</span><b>${kpi.plannedActions || 0}</b></div></div><div class="cc-quality">老板摘要：${decisions.length} 个安全行动 · ${exceptions.length} 个系统例外；所有行动仍受 ICP、身份、防重与确认门禁约束。</div></div></section>`;
+    })() : '';
     const metrics = `<div class="cc-kpis">
       <a class="cc-kpi cc-kpi-link" href="#today-developed"><span>今日已开发</span><b>${dailyDevelopedRows().length}</b></a>
       <a class="cc-kpi cc-kpi-link" href="${urlFor('queue', { queue: 'potential' })}"><span>今日待开发</span><b>${potentialRows.length}</b></a>
@@ -1811,7 +1820,7 @@
     const icpRule = `<div class="cc-icp-rule"><b>ICP 分值算法</b><span>市场潜力 25 + 行业/角色匹配 25 + 身份核验 15 + 采购意图 15 + SEO/趋势 10 + 可联系历史 10。仅 ICP &gt; ${ICP_MIN_SCORE} 进入每日新客户开发，≤${ICP_MIN_SCORE} 保留链接但划线，不自动触达。</span></div>`;
     if (!task) {
       return `${pageHead('开发工作台', 'Codex 全自动接手开发，Codex Chrome Extension 执行；仅重大异常通知介入')}
-        ${metrics}<div id="today-developed">${dailyDevelopedPanel()}</div>${salesSystemReadinessPanel()}${crmOperationsPanel()}${emailLifecyclePanel()}${systemFreshnessNotice(system)}${connection}${icpRule}${taskDetailPanel(system)}
+        ${metrics}${intelligencePanel}<div id="today-developed">${dailyDevelopedPanel()}</div>${salesSystemReadinessPanel()}${crmOperationsPanel()}${emailLifecyclePanel()}${systemFreshnessNotice(system)}${connection}${icpRule}${taskDetailPanel(system)}
         <section class="cc-panel"><div class="cc-panel-head"><h2>今日新开发</h2><a href="${urlFor('customers', { touch: 'untouched' })}">筛选候选客户</a></div>
         <div class="cc-empty">本次没有可直接自动发送的社媒任务；队列里的 Google 线索主要是官网/邮件联系入口，已在上方任务明细中列出，需按官网联系安全门处理。</div></section>
         <section class="cc-panel"><div class="cc-panel-head"><h2>跟进优先</h2><a href="${urlFor('queue', { queue: 'followup' })}">查看 ${followups.length} 条</a></div>
@@ -1820,7 +1829,7 @@
     const score = scoreForDisplay(task);
     const activeIcp = icpScore(task);
     return `${pageHead('开发工作台', 'Codex 全自动决策与执行，GLM 优化画像与文案；仅重大 bug 暂停通知')}
-      ${metrics}<div id="today-developed">${dailyDevelopedPanel()}</div>${salesSystemReadinessPanel()}${crmOperationsPanel()}${emailLifecyclePanel()}${systemFreshnessNotice(system)}${connection}${icpRule}${taskDetailPanel(system)}
+      ${metrics}${intelligencePanel}<div id="today-developed">${dailyDevelopedPanel()}</div>${salesSystemReadinessPanel()}${crmOperationsPanel()}${emailLifecyclePanel()}${systemFreshnessNotice(system)}${connection}${icpRule}${taskDetailPanel(system)}
       <section class="cc-panel"><div class="cc-panel-head"><h2>当前客户</h2><div class="cc-row-actions"><button class="primary" type="button" onclick="runGlmQueue()" ${eligibleCount ? '' : 'disabled'}>${eligibleCount ? '执行当前最高优先级客户' : '暂无待开发客户'}</button><span class="cc-chip green">${stateLabel(task.state)}</span></div></div><div class="cc-panel-body">
         <div class="cc-current"><div><h3>${platformUrl(task) ? `<a href="${esc(platformUrl(task))}" target="_blank" rel="noopener">${esc(task.company)}</a>` : esc(task.company)}</h3><div class="cc-sub">${esc(task.role || '采购/合作负责人')} · ${esc(normalizedCountry(task))} · ${esc(task.keyword)}</div><div class="cc-actions"><button type="button" onclick="openVerifiedCustomer('${esc(task.taskId)}')" ${platformUrl(task) ? '' : 'disabled'}>打开客户主页</button><button class="primary" type="button" title="${esc(autoClawAvailability(task).reason)}" onclick="runGlmDirect('${esc(task.taskId)}')" ${canRunGlm(task) ? '' : 'disabled'}>${esc(autoClawAvailability(task).label)}</button><a href="${urlFor('customer', { contact: task.taskId })}">查看系统档案</a></div></div><div class="cc-score"><strong>${score.total}</strong><span>综合开发分 / 100</span></div></div>
         <div class="cc-sub">ICP：${activeIcp}/100 · ${esc(icpExplanation(task))}</div>
@@ -1845,7 +1854,7 @@
   }
   function queue() {
     const mode = query.get('queue') || 'potential';
-    const visibleRows = latestRun ? latestQueueRows('visibleTodayQueue') : untouchedTasks();
+    const visibleRows = executableDevelopmentTasks();
     const list = latestRun
       ? (mode === 'potential' ? visibleRows : mode === 'followup' ? todayFollowupTasks() : mode === 'cooldown' ? latestQueueRows('cooldownQueue') : mode === 'all' ? latestQueueRows('all') : mode === 'developed' ? dailyDevelopedRows() : executableDevelopmentTasks())
       : (mode === 'followup' ? followupTasks() : mode === 'all' ? tasks : untouchedTasks());
@@ -2497,7 +2506,7 @@
             : `本次执行失败：${latestExecution.error || '未知错误'}`
         : '尚未加载执行结果。';
       return `<aside class="cc-rail"><h2>Codex 决策</h2>
-        <div class="cc-rail-section"><h2>本次运行</h2><div class="cc-evidence">potentialPool：${(system.potentialRows || []).length}<br>dailyQueue：${system.dailyRows.length}<br>Google discovered：${system.googleRows.length}<br>websiteContact：${system.websiteContactRows.length}<br>${esc(executionText)}</div></div>
+        <div class="cc-rail-section"><h2>本次运行</h2><div class="cc-evidence">potentialPool：${(system.potentialRows || []).length}<br>executable：${latestRun && latestRun.summary ? Number(latestRun.summary.executableCompanies || 0) : 0}<br>enrichment backlog：${latestRun && latestRun.summary ? Number(latestRun.summary.enrichmentBacklogCount || 0) : 0}<br>dailyQueue：${system.dailyRows.length}<br>Google discovered：${system.googleRows.length}<br>websiteContact：${system.websiteContactRows.length}<br>${esc(executionText)}</div></div>
         <div class="cc-rail-section"><h2>下一步</h2><div class="cc-evidence">优先处理上方“任务明细”里的官网/邮件入口；当前没有符合自动社媒发送条件的客户。</div></div>
       </aside>`;
     }
