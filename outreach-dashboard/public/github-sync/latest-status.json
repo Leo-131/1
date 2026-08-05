@@ -1,10 +1,10 @@
 {
-  "updatedAt": "2026-08-05T07:09:03.264Z",
+  "updatedAt": "2026-08-05T07:09:47.587Z",
   "ok": false,
   "pushed": false,
   "branch": "vercel-main-sync",
-  "localCommit": "c1ae9994171e81a331dc1790e1e5c5b40199a555",
-  "remoteCommit": "98aad66c107e3b8e775993e75172a26323cdfdfe",
+  "localCommit": "7d2497d47a284554352defe1abc487429fe4b7c2",
+  "remoteCommit": "c1ae9994171e81a331dc1790e1e5c5b40199a555",
   "message": "sync: local outreach data 2026-08-05",
-  "error": "Command failed: git -c gc.auto=0 add -- github-sync/latest-status.json github-sync/latest-status.js github-sync/system-visibility-latest.json github-sync/system-visibility-latest.js public/github-sync/latest-status.json public/github-sync/latest-status.js public/system-visibility-latest.json public/system-visibility-latest.js system-visibility-latest.json system-visibility-latest.js\nwarning: in the working copy of 'outreach-dashboard/github-sync/latest-status.js', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'outreach-dashboard/github-sync/latest-status.json', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'outreach-dashboard/github-sync/system-visibility-latest.js', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'outreach-dashboard/github-sync/system-visibility-latest.json', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'outreach-dashboard/public/github-sync/latest-status.js', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'outreach-dashboard/public/github-sync/latest-status.json', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'outreach-dashboard/public/system-visibility-latest.js', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'outreach-dashboard/public/system-visibility-latest.json', LF will be replaced by CRLF the next time Git touches it\nerror: short read while indexing outreach-dashboard/system-visibility-latest.js\nerror: outreach-dashboard/system-visibility-latest.js: failed to insert into database\nerror: unable to index file 'outreach-dashboard/system-visibility-latest.js'\nfatal: updating files failed\n"
+  "error": "Command failed: git -c gc.auto=0 commit -m sync: github status 2026-08-05"
 }
