@@ -4,6 +4,13 @@ const {
   alibabaEmailConfig,
   emailSenderReadiness,
 } = require('../outreach-dashboard/email-channel');
+const secureCredentialStore = require('../outreach-dashboard/secure-credential-store');
+
+test('protected Alibaba credential path stays outside the repository', () => {
+  const file = secureCredentialStore.alibabaCredentialPath({ APPDATA: 'C:\\Users\\operator\\AppData\\Roaming' });
+  assert.match(file, /AppData[\\/]Roaming[\\/]FLEXTAIL[\\/]alibaba-mail\.dpapi$/);
+  assert.doesNotMatch(file, /outreach-dashboard/i);
+});
 
 test('Alibaba Mail defaults to official SSL endpoints', () => {
   const config = alibabaEmailConfig({});

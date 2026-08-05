@@ -1483,6 +1483,10 @@ test('same-day failed customer advances without cross-run replay and closes its 
   assert.match(optimizedPromptSource, /Distinguish in-task fallback from cross-run replay/);
   assert.match(optimizedPromptSource, /A single blocked company must never terminate or monopolize the batch/);
   assert.match(optimizedPromptSource, /temporary Shanghai-day failure circuit/);
+  assert.match(outreachPolicySource, /Email is a preferred route, never a batch-wide dependency/);
+  assert.match(outreachPolicySource, /executable code, a regression test/);
+  assert.match(optimizedPromptSource, /Email authentication is route-specific, never batch-wide/);
+  assert.match(optimizedPromptSource, /executable code, regression tests, Policy/);
 });
 
 test('email performs a final company-wide permanent dedupe check immediately before sending', () => {

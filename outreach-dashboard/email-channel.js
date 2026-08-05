@@ -2,6 +2,7 @@ const DEFAULT_ALIBABA_SMTP_HOST = 'smtp.qiye.aliyun.com';
 const DEFAULT_ALIBABA_SMTP_PORT = 465;
 const DEFAULT_ALIBABA_IMAP_HOST = 'imap.qiye.aliyun.com';
 const DEFAULT_ALIBABA_IMAP_PORT = 993;
+const { protectedAlibabaPassword } = require('./secure-credential-store');
 
 function clean(value) {
   return String(value || '').trim();
@@ -26,7 +27,7 @@ function alibabaEmailConfig(env = process.env) {
     imapSecure: true,
     from: clean(env.OUTREACH_EMAIL_FROM),
     username: clean(env.ALIBABA_SMTP_USER),
-    securityPassword: clean(env.ALIBABA_SMTP_SECURITY_PASSWORD),
+    securityPassword: clean(env.ALIBABA_SMTP_SECURITY_PASSWORD) || protectedAlibabaPassword(env),
   };
 }
 
