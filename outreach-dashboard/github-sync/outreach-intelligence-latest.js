@@ -1,6 +1,6 @@
 window.OUTREACH_INTELLIGENCE_LATEST = {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-05T13:05:54.063Z",
+  "generatedAt": "2026-08-05T13:13:51.327Z",
   "companies": [
     {
       "companyId": "company_819cc04fe9060117",
@@ -550,32 +550,32 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
       "evidence": [
         {
           "channel": "website_form",
-          "score": 0,
-          "verified": false,
+          "score": 100,
+          "verified": true,
           "reasons": [
-            "unverified_external_evidence_rejected"
+            "official_business_route"
           ],
-          "evidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
+          "evidenceUrl": "https://www.outnorth.com/int/faq/contact",
           "checkedAt": ""
         },
         {
           "channel": "website_form",
-          "score": 0,
-          "verified": false,
+          "score": 100,
+          "verified": true,
           "reasons": [
-            "unverified_external_evidence_rejected"
+            "official_business_route"
           ],
-          "evidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
+          "evidenceUrl": "https://www.outnorth.com/int/faq/contact",
           "checkedAt": ""
         },
         {
           "channel": "website_form",
-          "score": 0,
-          "verified": false,
+          "score": 100,
+          "verified": true,
           "reasons": [
-            "unverified_external_evidence_rejected"
+            "official_business_route"
           ],
-          "evidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
+          "evidenceUrl": "https://www.outnorth.com/int/faq/contact",
           "checkedAt": ""
         }
       ],
@@ -1367,32 +1367,32 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
       "evidence": [
         {
           "channel": "website_form",
-          "score": 0,
+          "score": 80,
           "verified": false,
           "reasons": [
-            "unverified_external_evidence_rejected"
+            "first_party_evidence"
           ],
-          "evidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
+          "evidenceUrl": "https://www.trekitt.co.uk/",
           "checkedAt": ""
         },
         {
           "channel": "website_form",
-          "score": 0,
+          "score": 80,
           "verified": false,
           "reasons": [
-            "unverified_external_evidence_rejected"
+            "first_party_evidence"
           ],
-          "evidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
+          "evidenceUrl": "https://www.trekitt.co.uk/",
           "checkedAt": ""
         },
         {
           "channel": "website_form",
-          "score": 0,
+          "score": 80,
           "verified": false,
           "reasons": [
-            "unverified_external_evidence_rejected"
+            "first_party_evidence"
           ],
-          "evidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
+          "evidenceUrl": "https://www.trekitt.co.uk/",
           "checkedAt": ""
         }
       ],
@@ -2644,13 +2644,15 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
       "company": "Taunton Leisure",
       "keys": [
         "tauntonleisure",
-        "tauntonleisurecom"
+        "tauntonleisurecom",
+        "manualtauntonleisureemail20260805"
       ],
       "domains": [
         "tauntonleisure.com"
       ],
       "channels": [
-        "website_form"
+        "website_form",
+        "email"
       ],
       "evidence": [
         {
@@ -2708,6 +2710,12 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
           "timestamp": "2026-07-27T02:10:34.940Z",
           "channel": "website_form",
           "evidence": "unavailable_profile_page: Sale\nClothing\nCamping\nFootwear\nRucksacks\nEquipment\nBrands\nHelp\nSave up to 47% in our Summer Sale\nFree UK Delivery Over £50 Rewards Our Stores\n❮\nSummer Sale - Now On View Collection;website_contact_all_targets_failed:6;contact_path_strategy_v2"
+        },
+        {
+          "status": "bounced",
+          "timestamp": "2026-08-05T13:06:00.000Z",
+          "channel": "email",
+          "evidence": "official_buyer_contact:https://help.tauntonleisure.com/support/solutions/articles/36000299324-how-do-i-contact-one-of-your-buyers-;sent_folder_exact_subject_and_company_body_visible:2026-08-05T21:06+08:00;postmaster_delivery_failure_visible:2026-08-05T21:12+08:00;delivery_failed_do_not_count_or_retry"
         }
       ]
     },
@@ -2917,7 +2925,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://www.nwogco.com/",
-          "checkedAt": "2026-08-05T08:54:25.629Z"
+          "checkedAt": "2026-08-05T13:05:29.963Z"
         },
         {
           "channel": "website_form",
@@ -6316,7 +6324,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
           "reasons": [
             "first_party_evidence"
           ],
-          "evidenceUrl": "https://komsa.com/en/contact",
+          "evidenceUrl": "https://komsa.com/en/contact/",
           "checkedAt": ""
         },
         {
@@ -6326,7 +6334,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
           "reasons": [
             "unverified_external_evidence_rejected"
           ],
-          "evidenceUrl": "https://komsa.com/en/contact",
+          "evidenceUrl": "https://komsa.com/en/contact/",
           "checkedAt": ""
         }
       ],
@@ -6350,7 +6358,8 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
       "company": "REI Co-op",
       "keys": [
         "reicoop",
-        "reicom"
+        "reicom",
+        "manualreicoopemail20260805"
       ],
       "domains": [
         "rei.com"
@@ -6358,7 +6367,8 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
       "channels": [
         "instagram",
         "facebook",
-        "website_form"
+        "website_form",
+        "email"
       ],
       "evidence": [
         {
@@ -6410,6 +6420,12 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
           "timestamp": "",
           "channel": "website_form",
           "evidence": ""
+        },
+        {
+          "status": "sent_confirmed",
+          "timestamp": "2026-08-05T13:07:00.000Z",
+          "channel": "email",
+          "evidence": "official_prospective_vendor_contact:https://www.rei.com/about-rei/contact-us;recipient_exact_input:member@rei.com;sender_identity_verified:Leo@flextailgear.com;subject_body_consistency_gate_passed;send_click_once;composer_closed;sent_toast_visible;sent_folder_exact_subject_and_company_body_visible:2026-08-05T21:07+08:00"
         }
       ]
     },
@@ -6439,7 +6455,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
           "reasons": [
             "official_business_route"
           ],
-          "evidenceUrl": "https://support.aqipa.com/en-US/new-ticket",
+          "evidenceUrl": "https://support.aqipa.com/en-US/kb/articles/anfrage-partner-werden",
           "checkedAt": ""
         },
         {
@@ -6449,7 +6465,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
           "reasons": [
             "unverified_external_evidence_rejected"
           ],
-          "evidenceUrl": "https://support.aqipa.com/en-US/new-ticket",
+          "evidenceUrl": "https://support.aqipa.com/en-US/kb/articles/anfrage-partner-werden",
           "checkedAt": ""
         }
       ],
@@ -6622,7 +6638,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
           "reasons": [
             "official_business_route"
           ],
-          "evidenceUrl": "https://help.cabelas.com/company-information-ff566349/how-can-i-sell-my-product-through-cabelas-cf904a21",
+          "evidenceUrl": "https://www.cabelas.com/",
           "checkedAt": ""
         },
         {
@@ -6945,7 +6961,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
           "status": "sent_confirmed",
           "timestamp": "2026-08-05T13:03:00.000Z",
           "channel": "email",
-          "evidence": "official_public_business_email;recipient_exact_input:info@mec.ca;sender_identity_verified:Leo@flextailgear.com;subject_body_consistency_gate_passed;send_click_once;composer_closed;sent_toast_visible;sent_folder_exact_subject_and_company_body_visible:2026-08-05T21:03+08:00"
+          "evidence": "official_public_business_email;recipient_exact_input:info@mec.ca;sender_identity_verified:Leo@flextailgear.com;subject_body_consistency_gate_passed;send_click_once;composer_closed;sent_toast_visible;sent_folder_exact_subject_and_company_body_visible:2026-08-05T21:03+08:00;inbound_service_acknowledgement_visible:2026-08-05T21:04+08:00"
         }
       ]
     },
@@ -6992,7 +7008,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
           "reasons": [
             "first_party_evidence"
           ],
-          "evidenceUrl": "https://www.gooutdoors.co.uk/pages/contact",
+          "evidenceUrl": "https://www.gooutdoors.co.uk/",
           "checkedAt": ""
         }
       ],
@@ -7392,7 +7408,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
           "reasons": [
             "official_business_route"
           ],
-          "evidenceUrl": "https://www.sail.ca/",
+          "evidenceUrl": "https://www.sail.ca/en/contact-us",
           "checkedAt": ""
         }
       ],
@@ -7520,7 +7536,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://www.cotswoldoutdoor.com/",
-          "checkedAt": "2026-08-05T10:01:29.941Z"
+          "checkedAt": "2026-08-05T13:13:29.257Z"
         },
         {
           "channel": "facebook",
@@ -7530,7 +7546,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://www.cotswoldoutdoor.com/",
-          "checkedAt": "2026-08-05T10:01:29.941Z"
+          "checkedAt": "2026-08-05T13:13:29.257Z"
         },
         {
           "channel": "website_form",
@@ -7716,16 +7732,16 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://www.campsaver.com/",
-          "checkedAt": "2026-08-05T10:01:32.253Z"
+          "checkedAt": "2026-08-05T13:13:39.110Z"
         },
         {
           "channel": "website_form",
-          "score": 0,
-          "verified": false,
+          "score": 100,
+          "verified": true,
           "reasons": [
-            "unverified_external_evidence_rejected"
+            "official_business_route"
           ],
-          "evidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
+          "evidenceUrl": "https://www.campsaver.com/",
           "checkedAt": ""
         }
       ],
@@ -7878,7 +7894,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
           "reasons": [
             "official_business_route"
           ],
-          "evidenceUrl": "https://www.summitint.co/",
+          "evidenceUrl": "https://www.summitint.co/contact/",
           "checkedAt": ""
         }
       ],
@@ -7950,12 +7966,12 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
       "evidence": [
         {
           "channel": "website_form",
-          "score": 0,
-          "verified": false,
+          "score": 100,
+          "verified": true,
           "reasons": [
-            "unverified_external_evidence_rejected"
+            "official_business_route"
           ],
-          "evidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
+          "evidenceUrl": "https://ultralightoutdoorgear.co.uk/",
           "checkedAt": ""
         }
       ],
@@ -12891,12 +12907,12 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
       "evidence": [
         {
           "channel": "website_form",
-          "score": 100,
-          "verified": true,
+          "score": 0,
+          "verified": false,
           "reasons": [
-            "official_business_route"
+            "unverified_external_evidence_rejected"
           ],
-          "evidenceUrl": "https://durangooutdoorexchange.com/",
+          "evidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
           "checkedAt": ""
         }
       ],
@@ -13002,7 +13018,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://gecko-overland.com/contact/",
-          "checkedAt": "2026-08-05T08:54:25.022Z"
+          "checkedAt": "2026-08-05T13:05:29.613Z"
         }
       ],
       "history": [
@@ -13140,7 +13156,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://www.basecamp-outfitters.com/",
-          "checkedAt": "2026-08-05T08:54:25.596Z"
+          "checkedAt": "2026-08-05T13:05:30.218Z"
         }
       ],
       "history": [
@@ -13815,6 +13831,93 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
           "evidence": "official_supplier_page:https://primeoutdoorstore.com/pages/supplier;official_public_business_email;recipient_edit_state_exact_match:info@primeoutdoorstore.com;sender_identity_verified:Leo@flextailgear.com;alibaba_webmail_send_physical_click;composer_closed_to_inbox;undo_control_visible;sent_folder_exact_subject_visible:2026-08-05T20:34+08:00"
         }
       ]
+    },
+    {
+      "companyId": "company_be93c5bbbd8bb93d",
+      "company": "Outdoor Gear Exchange",
+      "keys": [
+        "outdoorgearexchange",
+        "manualoutdoorgearexchangewebsitecontact20260805",
+        "gearxcom"
+      ],
+      "domains": [
+        "gearx.com"
+      ],
+      "channels": [
+        "website_form"
+      ],
+      "evidence": [],
+      "history": [
+        {
+          "status": "submitted_confirmed",
+          "timestamp": "2026-08-05T13:11:00.000Z",
+          "channel": "website_form",
+          "evidence": "official_contact_form:https://www.gearx.com/pages/contact;sender_identity_exact:leo@flextailgear.com;name_email_message_consistency_gate_passed;submit_click_once;confirmation_heading_visible:Thanks for contacting us. We'll get back to you as soon as possible.:2026-08-05T21:11+08:00"
+        }
+      ]
+    },
+    {
+      "companyId": "company_e4fdb0015f63b02a",
+      "company": "Gearhead Outfitters",
+      "keys": [
+        "gearheadoutfitters",
+        "manualgearheadoutfittersemail20260805"
+      ],
+      "domains": [],
+      "channels": [
+        "email"
+      ],
+      "evidence": [],
+      "history": [
+        {
+          "status": "sent_confirmed",
+          "timestamp": "2026-08-05T13:10:00.000Z",
+          "channel": "email",
+          "evidence": "official_contact:https://gearheadoutfitters.com/pages/contact-us;recipient_exact_input:support@gho.com;sender_identity_verified:Leo@flextailgear.com;subject_body_consistency_gate_passed;send_click_once;composer_closed;sent_toast_visible;sent_folder_exact_subject_and_company_body_visible;inbound_request_received_ticket_33583:2026-08-05T21:10+08:00"
+        }
+      ]
+    },
+    {
+      "companyId": "company_9c2158bbc6c2370d",
+      "company": "Mountain High Outfitters",
+      "keys": [
+        "mountainhighoutfitters",
+        "manualmountainhighoutfittersemail20260805"
+      ],
+      "domains": [],
+      "channels": [
+        "email"
+      ],
+      "evidence": [],
+      "history": [
+        {
+          "status": "bounced",
+          "timestamp": "2026-08-05T13:10:30.000Z",
+          "channel": "email",
+          "evidence": "official_contact:https://mountainhighoutfitters.com/pages/contact-us;sent_folder_exact_subject_and_company_body_visible;dsn_address_not_found_visible:2026-08-05T21:10+08:00;delivery_failed_do_not_count_or_retry"
+        }
+      ]
+    },
+    {
+      "companyId": "company_52d12f93abf45f2e",
+      "company": "Walkabout Outfitter",
+      "keys": [
+        "walkaboutoutfitter",
+        "manualwalkaboutoutfitteremail20260805"
+      ],
+      "domains": [],
+      "channels": [
+        "email"
+      ],
+      "evidence": [],
+      "history": [
+        {
+          "status": "sent_confirmed",
+          "timestamp": "2026-08-05T13:12:30.000Z",
+          "channel": "email",
+          "evidence": "official_mailto:https://www.walkaboutoutfitter.com/pages/contact-us;recipient_exact_input:info@walkaboutoutfitter.com;sender_identity_verified:Leo@flextailgear.com;subject_body_consistency_gate_passed;send_click_once;composer_closed;sent_toast_visible;sent_folder_exact_subject_and_company_body_visible:2026-08-05T21:12+08:00"
+        }
+      ]
     }
   ],
   "suppressions": [
@@ -13919,6 +14022,16 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
       "evidence": "alibaba_mail_sent_success_toast;sent_folder_record_confirmed;sent_folder_subject:FLEXTAIL brand distribution | KOMSA manufacturer partnership"
     },
     {
+      "companyId": "company_68fe6dfc47ea5d52",
+      "company": "REI Co-op",
+      "permanent": true,
+      "crossChannel": true,
+      "reason": "previous_customer_development_no_repeat",
+      "sourceStatus": "sent_confirmed",
+      "sourceTimestamp": "2026-08-05T13:07:00.000Z",
+      "evidence": "official_prospective_vendor_contact:https://www.rei.com/about-rei/contact-us;recipient_exact_input:member@rei.com;sender_identity_verified:Leo@flextailgear.com;subject_body_consistency_gate_passed;send_click_once;composer_closed;sent_toast_visible;sent_folder_exact_subject_and_company_body_visible:2026-08-05T21:07+08:00"
+    },
+    {
       "companyId": "company_e68327ccb67c6a2a",
       "company": "Aqipa",
       "permanent": true,
@@ -13966,7 +14079,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
       "reason": "previous_customer_development_no_repeat",
       "sourceStatus": "sent_confirmed",
       "sourceTimestamp": "2026-08-05T13:03:00.000Z",
-      "evidence": "official_public_business_email;recipient_exact_input:info@mec.ca;sender_identity_verified:Leo@flextailgear.com;subject_body_consistency_gate_passed;send_click_once;composer_closed;sent_toast_visible;sent_folder_exact_subject_and_company_body_visible:2026-08-05T21:03+08:00"
+      "evidence": "official_public_business_email;recipient_exact_input:info@mec.ca;sender_identity_verified:Leo@flextailgear.com;subject_body_consistency_gate_passed;send_click_once;composer_closed;sent_toast_visible;sent_folder_exact_subject_and_company_body_visible:2026-08-05T21:03+08:00;inbound_service_acknowledgement_visible:2026-08-05T21:04+08:00"
     },
     {
       "companyId": "company_d7728e8e8c5ed74c",
@@ -14947,6 +15060,36 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
       "sourceStatus": "sent_confirmed",
       "sourceTimestamp": "2026-08-05T12:34:00.000Z",
       "evidence": "official_supplier_page:https://primeoutdoorstore.com/pages/supplier;official_public_business_email;recipient_edit_state_exact_match:info@primeoutdoorstore.com;sender_identity_verified:Leo@flextailgear.com;alibaba_webmail_send_physical_click;composer_closed_to_inbox;undo_control_visible;sent_folder_exact_subject_visible:2026-08-05T20:34+08:00"
+    },
+    {
+      "companyId": "company_be93c5bbbd8bb93d",
+      "company": "Outdoor Gear Exchange",
+      "permanent": true,
+      "crossChannel": true,
+      "reason": "previous_customer_development_no_repeat",
+      "sourceStatus": "submitted_confirmed",
+      "sourceTimestamp": "2026-08-05T13:11:00.000Z",
+      "evidence": "official_contact_form:https://www.gearx.com/pages/contact;sender_identity_exact:leo@flextailgear.com;name_email_message_consistency_gate_passed;submit_click_once;confirmation_heading_visible:Thanks for contacting us. We'll get back to you as soon as possible.:2026-08-05T21:11+08:00"
+    },
+    {
+      "companyId": "company_e4fdb0015f63b02a",
+      "company": "Gearhead Outfitters",
+      "permanent": true,
+      "crossChannel": true,
+      "reason": "previous_customer_development_no_repeat",
+      "sourceStatus": "sent_confirmed",
+      "sourceTimestamp": "2026-08-05T13:10:00.000Z",
+      "evidence": "official_contact:https://gearheadoutfitters.com/pages/contact-us;recipient_exact_input:support@gho.com;sender_identity_verified:Leo@flextailgear.com;subject_body_consistency_gate_passed;send_click_once;composer_closed;sent_toast_visible;sent_folder_exact_subject_and_company_body_visible;inbound_request_received_ticket_33583:2026-08-05T21:10+08:00"
+    },
+    {
+      "companyId": "company_52d12f93abf45f2e",
+      "company": "Walkabout Outfitter",
+      "permanent": true,
+      "crossChannel": true,
+      "reason": "previous_customer_development_no_repeat",
+      "sourceStatus": "sent_confirmed",
+      "sourceTimestamp": "2026-08-05T13:12:30.000Z",
+      "evidence": "official_mailto:https://www.walkaboutoutfitter.com/pages/contact-us;recipient_exact_input:info@walkaboutoutfitter.com;sender_identity_verified:Leo@flextailgear.com;subject_body_consistency_gate_passed;send_click_once;composer_closed;sent_toast_visible;sent_folder_exact_subject_and_company_body_visible:2026-08-05T21:12+08:00"
     }
   ],
   "portfolio": {
@@ -14982,6 +15125,16 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
         "reason": "highest_priority_verified_channel"
       },
       {
+        "companyId": "company_513b53e283883f91",
+        "company": "Outnorth",
+        "action": "first_touch",
+        "channel": "website_form",
+        "evidenceScore": 100,
+        "evidenceUrl": "https://www.outnorth.com/int/faq/contact",
+        "alternatives": [],
+        "reason": "highest_priority_verified_channel"
+      },
+      {
         "companyId": "company_b01fae48f138bc63",
         "company": "Campervan Gift",
         "action": "first_touch",
@@ -14998,16 +15151,6 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
         "channel": "website_form",
         "evidenceScore": 100,
         "evidenceUrl": "https://www.obelink.nl/obelink-partnerprogramma",
-        "alternatives": [],
-        "reason": "highest_priority_verified_channel"
-      },
-      {
-        "companyId": "company_1c7da5005c6bfbaf",
-        "company": "Tractor Supply Company",
-        "action": "first_touch",
-        "channel": "website_form",
-        "evidenceScore": 100,
-        "evidenceUrl": "https://www.tractorsupply.com/tsc/cms/policies-information/vendor-information",
         "alternatives": [],
         "reason": "highest_priority_verified_channel"
       },
@@ -15059,7 +15202,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
       },
       {
         "channel": "website_form",
-        "confirmed": 14,
+        "confirmed": 15,
         "replies": 0,
         "opportunities": 0,
         "replyRate": 0,
@@ -15077,7 +15220,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
       },
       {
         "channel": "email",
-        "confirmed": 25,
+        "confirmed": 28,
         "replies": 0,
         "opportunities": 0,
         "replyRate": 0,
@@ -15114,7 +15257,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
       {
         "dimension": "channel",
         "variant": "website_form",
-        "sampleSize": 14,
+        "sampleSize": 15,
         "observedReplyRate": 0,
         "recommendation": "use_as_bounded_allocation_signal"
       },
@@ -15128,7 +15271,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
       {
         "dimension": "channel",
         "variant": "email",
-        "sampleSize": 25,
+        "sampleSize": 28,
         "observedReplyRate": 0,
         "recommendation": "use_as_bounded_allocation_signal"
       },
@@ -15142,13 +15285,13 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
     ]
   },
   "ownerSummary": {
-    "generatedAt": "2026-08-05T13:05:54.063Z",
+    "generatedAt": "2026-08-05T13:13:51.327Z",
     "phase": "autonomous_sales_operating_system_v1",
     "kpis": {
-      "companies": 189,
-      "permanentlySuppressed": 113,
+      "companies": 193,
+      "permanentlySuppressed": 117,
       "plannedActions": 7,
-      "verifiedEvidenceRoutes": 121
+      "verifiedEvidenceRoutes": 125
     },
     "decisions": [
       {
@@ -15182,6 +15325,16 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
         "reason": "highest_priority_verified_channel"
       },
       {
+        "companyId": "company_513b53e283883f91",
+        "company": "Outnorth",
+        "action": "first_touch",
+        "channel": "website_form",
+        "evidenceScore": 100,
+        "evidenceUrl": "https://www.outnorth.com/int/faq/contact",
+        "alternatives": [],
+        "reason": "highest_priority_verified_channel"
+      },
+      {
         "companyId": "company_b01fae48f138bc63",
         "company": "Campervan Gift",
         "action": "first_touch",
@@ -15198,16 +15351,6 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
         "channel": "website_form",
         "evidenceScore": 100,
         "evidenceUrl": "https://www.obelink.nl/obelink-partnerprogramma",
-        "alternatives": [],
-        "reason": "highest_priority_verified_channel"
-      },
-      {
-        "companyId": "company_1c7da5005c6bfbaf",
-        "company": "Tractor Supply Company",
-        "action": "first_touch",
-        "channel": "website_form",
-        "evidenceScore": 100,
-        "evidenceUrl": "https://www.tractorsupply.com/tsc/cms/policies-information/vendor-information",
         "alternatives": [],
         "reason": "highest_priority_verified_channel"
       },
@@ -15250,7 +15393,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
         },
         {
           "channel": "website_form",
-          "confirmed": 14,
+          "confirmed": 15,
           "replies": 0,
           "opportunities": 0,
           "replyRate": 0,
@@ -15268,7 +15411,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
         },
         {
           "channel": "email",
-          "confirmed": 25,
+          "confirmed": 28,
           "replies": 0,
           "opportunities": 0,
           "replyRate": 0,
@@ -15305,7 +15448,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
         {
           "dimension": "channel",
           "variant": "website_form",
-          "sampleSize": 14,
+          "sampleSize": 15,
           "observedReplyRate": 0,
           "recommendation": "use_as_bounded_allocation_signal"
         },
@@ -15319,7 +15462,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
         {
           "dimension": "channel",
           "variant": "email",
-          "sampleSize": 25,
+          "sampleSize": 28,
           "observedReplyRate": 0,
           "recommendation": "use_as_bounded_allocation_signal"
         },
