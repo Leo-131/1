@@ -13,7 +13,7 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
   "customerMessageSent": false,
   "realDevelopmentCount": 0,
   "reportingVerdict": "no_customer_development_performed",
-  "userVisibleStatus": "Customer development was not performed. Blockers: homepage_only_contact_path_requires_verification (46); website_contact_capability_not_verified (43); social_profile_not_first_party_verified (23).",
+  "userVisibleStatus": "Customer development was not performed. Blockers: homepage_only_contact_path_requires_verification (46); website_contact_capability_not_verified (42); social_profile_not_first_party_verified (23).",
   "recoveryHint": "Verify the recipient as an official public business email before enabling email outreach.",
   "recoveryActions": [
     {
@@ -724,13 +724,6 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "reason": "verified_executable_channel_missing"
     },
     {
-      "id": "google-customer-esprinet-group-website-contact",
-      "company": "Esprinet Group",
-      "action": "email_priority",
-      "platform": "website_form",
-      "reason": "website_contact_capability_not_verified"
-    },
-    {
       "id": "google-customer-fjellsport-website-contact",
       "company": "Fjellsport",
       "action": "email_priority",
@@ -1097,7 +1090,7 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     {
       "reason": "website_contact_capability_not_verified",
       "status": "skipped",
-      "count": 43
+      "count": 42
     },
     {
       "reason": "social_profile_not_first_party_verified",
@@ -1122,7 +1115,7 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
   ],
   "blockerCounts": {
     "homepage_only_contact_path_requires_verification": 46,
-    "website_contact_capability_not_verified": 43,
+    "website_contact_capability_not_verified": 42,
     "social_profile_not_first_party_verified": 23,
     "public_business_email_requires_verification": 15,
     "verified_executable_channel_missing": 15,
@@ -1154,16 +1147,16 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     "potentialPoolTarget": 100,
     "customerTableHighIcp": 23,
     "refillNeeded": 0,
-    "executableCompanies": 5,
+    "executableCompanies": 6,
     "executableReserveTarget": 130,
-    "executableReserveNeeded": 125,
+    "executableReserveNeeded": 124,
     "executableByChannel": {
-      "website_form": 5
+      "website_form": 6
     },
     "verifiedSocialCompanies": 0,
     "verifiedSocialReserveTarget": 20,
     "verifiedSocialReserveNeeded": 20,
-    "enrichmentBacklogCount": 95,
+    "enrichmentBacklogCount": 94,
     "googleDiscovered": 77,
     "facebookDiscovered": 11,
     "websiteContactDiscovered": 0,
@@ -1185,5 +1178,5 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "ALIBABA_SMTP_SECURITY_PASSWORD"
     ]
   },
-  "completedAt": "2026-08-05T03:01:22.894Z"
+  "completedAt": "2026-08-05T03:06:53.884Z"
 };

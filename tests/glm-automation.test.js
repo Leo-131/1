@@ -1260,6 +1260,7 @@ test('daily execution is serial and can process a priority batch per run', () =>
 test('discovery and execution share evidence-backed channel readiness and expose enrichment backlog', () => {
   assert.ok(dailyRunnerSource.includes('function channelExecutionReadiness'));
   assert.ok(dailyRunnerSource.includes("gate: 'official_supplier_route'"));
+  assert.ok(dailyRunnerSource.includes('liveFirstPartyEvidence || item.sourceEvidenceUrl'));
   assert.ok(dailyRunnerSource.includes("reason: 'website_contact_capability_not_verified'"));
   assert.ok(dailyRunnerSource.includes('enrichmentBacklogCount: enrichmentBacklog.length'));
   assert.ok(dailyRunnerSource.includes('enrichmentBacklog,'));

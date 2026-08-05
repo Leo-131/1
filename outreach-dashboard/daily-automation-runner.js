@@ -1245,24 +1245,25 @@ function channelExecutionReadiness(item = {}) {
   const platform = String(item.platform || item.channel || '').toLowerCase();
   const target = item.url || item.contactUrl || item.platformUrl || item.website || '';
   const officialStatus = String(item.externalVerificationStatus || '').toLowerCase();
+  const liveFirstPartyEvidence = item.firstPartyChannelVerification && item.firstPartyChannelVerification.evidenceUrl || '';
   const social = ['facebook', 'instagram', 'linkedin'].includes(platform);
   if (social) {
     return item.officialSocialProfileVerified === true && /^https:\/\//i.test(String(target))
-      ? { ready: true, gate: 'first_party_verified_social', evidenceUrl: item.socialProfileEvidenceUrl || item.sourceEvidenceUrl || item.website || '' }
+      ? { ready: true, gate: 'first_party_verified_social', evidenceUrl: item.socialProfileEvidenceUrl || liveFirstPartyEvidence || item.sourceEvidenceUrl || item.website || '' }
       : { ready: false, gate: 'enrichment_required', reason: 'social_profile_not_first_party_verified' };
   }
   const verifiedEmail = /^official_supplier_email_verified$/.test(officialStatus)
     || /^official_public_business_email$/i.test(String(item.emailVerificationStatus || ''));
   if (platform === 'email' || item.publicEmail || item.contactEmail) {
     return verifiedEmail
-      ? { ready: true, gate: 'official_business_email', evidenceUrl: item.evidenceUrl || item.sourceEvidenceUrl || '' }
+      ? { ready: true, gate: 'official_business_email', evidenceUrl: liveFirstPartyEvidence || item.sourceEvidenceUrl || item.evidenceUrl || '' }
       : { ready: false, gate: 'enrichment_required', reason: 'public_business_email_requires_verification' };
   }
   const verifiedWebsiteRoute = /^official_(?:supplier_(?:form|route)|contact_form)_verified$/.test(officialStatus)
     || item.contactCapabilityVerified === true;
   if (platform === 'website_form' || /website|contact|supplier|vendor/i.test([item.channelType, item.reason, item.action].join(' '))) {
     return verifiedWebsiteRoute && /^https:\/\//i.test(String(target))
-      ? { ready: true, gate: 'official_supplier_route', evidenceUrl: item.evidenceUrl || item.sourceEvidenceUrl || item.contactUrl || '' }
+      ? { ready: true, gate: 'official_supplier_route', evidenceUrl: liveFirstPartyEvidence || item.sourceEvidenceUrl || item.contactUrl || item.evidenceUrl || '' }
       : { ready: false, gate: 'enrichment_required', reason: 'website_contact_capability_not_verified' };
   }
   return { ready: false, gate: 'enrichment_required', reason: 'verified_executable_channel_missing' };
