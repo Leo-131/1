@@ -713,6 +713,20 @@ test('daily automation targets one hundred high-ICP prospects by default', () =>
   assert.ok(dailyRunnerSource.includes("['develop', Math.max(DEFAULT_DAILY_LIMIT"));
 });
 
+test('potential pool capacity counts distinct companies instead of channel rows', () => {
+  const poolStart = dailyRunnerSource.indexOf('function buildDailyPotentialPool');
+  const poolEnd = dailyRunnerSource.indexOf('function channelReadinessSummary', poolStart);
+  const poolSource = dailyRunnerSource.slice(poolStart, poolEnd);
+  assert.match(poolSource, /const companyRows = new Map\(\)/);
+  assert.match(poolSource, /slugKey\(item\.company \|\| item\.name \|\| item\.id\)/);
+  assert.match(poolSource, /const distinctCompanies = \[\.\.\.companyRows\.values\(\)\]/);
+  assert.match(outreachPolicySource, /measured in distinct companies, never channel rows/);
+  assert.match(optimizedPromptSource, /by distinct normalized companies, not channel rows/);
+  assert.match(outreachPolicySource, /replenish it with net-new ICP-qualified companies/);
+  assert.match(optimizedPromptSource, /Treat capacity as a replenishable supply/);
+  assert.match(optimizedPromptSource, /Never manufacture "unlimited capacity" by deleting history/);
+});
+
 test('daily discovery emits the full verified channel pool and reports executable capacity', () => {
   const packageJson = JSON.parse(fs.readFileSync(path.join(__dirname, '..', 'outreach-dashboard', 'package.json'), 'utf8'));
   assert.match(packageJson.scripts['discover:daily'], /--limit=400/);

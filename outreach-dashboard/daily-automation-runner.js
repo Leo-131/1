@@ -1325,12 +1325,34 @@ function buildDailyPotentialPool(classified, discoveryRun, context, targetSize) 
   // the whole pool with website/email rows. This changes only cross-company
   // coverage: the execution layer still picks one highest-priority channel per
   // company and keeps all identity, duplicate and confirmation gates.
-  const verifiedSocial = deduped.filter(item => ['facebook', 'instagram', 'linkedin'].includes(String(item.platform || '').toLowerCase())
+  // Capacity is a company contract, not a channel-row contract. Previously a
+  // company with email + Facebook + Instagram consumed three of the 100 pool
+  // slots, silently truncating later evidence-ready companies. Collapse to
+  // one best executable row per company before applying the company limit;
+  // normalizePotentialItem already carries verified alternateChannels for
+  // same-task fallback.
+  const companyRows = new Map();
+  for (const item of deduped) {
+    const companyKey = slugKey(item.company || item.name || item.id);
+    if (!companyKey) continue;
+    const current = companyRows.get(companyKey);
+    if (!current) {
+      companyRows.set(companyKey, item);
+      continue;
+    }
+    const itemReady = Number((item.executionReadiness || channelExecutionReadiness(item)).ready === true);
+    const currentReady = Number((current.executionReadiness || channelExecutionReadiness(current)).ready === true);
+    if (itemReady > currentReady || (itemReady === currentReady && priorityCompare(item, current) < 0)) {
+      companyRows.set(companyKey, item);
+    }
+  }
+  const distinctCompanies = [...companyRows.values()].sort(priorityCompare);
+  const verifiedSocial = distinctCompanies.filter(item => ['facebook', 'instagram', 'linkedin'].includes(String(item.platform || '').toLowerCase())
     && item.officialSocialProfileVerified === true);
   const socialReserveTarget = Math.min(25, Math.max(1, Math.ceil(targetSize * 0.2)));
   const reservedSocial = verifiedSocial.slice(0, socialReserveTarget);
   const reservedIds = new Set(reservedSocial.map(item => item.id));
-  return [...reservedSocial, ...deduped.filter(item => !reservedIds.has(item.id))].slice(0, targetSize);
+  return [...reservedSocial, ...distinctCompanies.filter(item => !reservedIds.has(item.id))].slice(0, targetSize);
 }
 
 function channelReadinessSummary(items = []) {
