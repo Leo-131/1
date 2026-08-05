@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-08-05T10:05:26.192Z",
-  "cursor": 53,
+  "updatedAt": "2026-08-05T12:12:19.430Z",
+  "cursor": 78,
   "companyCount": 142,
   "verifications": {
     "facewest": {
@@ -1624,7 +1624,7 @@
     "la cordee": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-05T07:07:53.868Z",
+        "verifiedAt": "2026-08-05T12:12:00.281Z",
         "evidenceUrl": "https://www.lacordee.com/",
         "httpStatus": 200,
         "signals": [
@@ -1641,7 +1641,7 @@
     "taunton leisure": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-05T07:07:57.087Z",
+        "verifiedAt": "2026-08-05T12:12:00.687Z",
         "evidenceUrl": "https://www.tauntonleisure.com/",
         "httpStatus": 200,
         "signals": [
@@ -1659,7 +1659,7 @@
     "outdoorxl": {
       "firstPartyChannelVerification": {
         "status": "unreachable",
-        "verifiedAt": "2026-08-05T07:07:56.188Z",
+        "verifiedAt": "2026-08-05T12:11:59.957Z",
         "evidenceUrl": "https://www.outdoorxl.nl/",
         "httpStatus": 403,
         "signals": [],
@@ -1674,7 +1674,7 @@
     "spejder sport": {
       "firstPartyChannelVerification": {
         "status": "unreachable",
-        "verifiedAt": "2026-08-05T07:07:56.211Z",
+        "verifiedAt": "2026-08-05T12:11:59.884Z",
         "evidenceUrl": "https://www.spejdersport.dk/",
         "httpStatus": 403,
         "signals": [],
@@ -1689,7 +1689,7 @@
     "friluftsland": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-05T07:07:59.096Z",
+        "verifiedAt": "2026-08-05T12:12:01.539Z",
         "evidenceUrl": "https://www.friluftsland.dk/",
         "httpStatus": 200,
         "signals": [
@@ -1707,7 +1707,7 @@
     "left point distribution": {
       "firstPartyChannelVerification": {
         "status": "unreachable",
-        "verifiedAt": "2026-08-05T07:08:00.858Z",
+        "verifiedAt": "2026-08-05T12:12:02.237Z",
         "evidenceUrl": "https://www.leftpointdistribution.com/en-eu/aboutus.php",
         "httpStatus": 403,
         "signals": [],
@@ -1722,7 +1722,7 @@
     "snowys outdoors": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-05T07:08:01.651Z",
+        "verifiedAt": "2026-08-05T12:12:01.927Z",
         "evidenceUrl": "https://www.snowys.com.au/contact-us",
         "httpStatus": 200,
         "signals": [
@@ -1744,7 +1744,7 @@
     "alpenglow sports": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-05T07:07:59.505Z",
+        "verifiedAt": "2026-08-05T12:12:01.495Z",
         "evidenceUrl": "https://alpenglowsports.com/",
         "httpStatus": 200,
         "signals": [
@@ -1765,7 +1765,7 @@
     "ute mountaineer": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-05T07:08:03.267Z",
+        "verifiedAt": "2026-08-05T12:12:05.537Z",
         "evidenceUrl": "https://www.utemountaineer.com/",
         "httpStatus": 200,
         "signals": [
@@ -1782,12 +1782,15 @@
     },
     "neptune mountaineering": {
       "firstPartyChannelVerification": {
-        "status": "unreachable",
-        "verifiedAt": "2026-08-05T07:08:06.350Z",
-        "evidenceUrl": "https://neptunemountaineering.com/",
-        "httpStatus": 0,
-        "signals": [],
-        "error": "fetch failed"
+        "status": "checked",
+        "verifiedAt": "2026-08-05T12:12:04.215Z",
+        "evidenceUrl": "https://www.neptunemountaineering.com/",
+        "httpStatus": 200,
+        "signals": [
+          "form_control",
+          "contact_invitation"
+        ],
+        "error": ""
       },
       "contactCapabilityVerified": true,
       "externalVerificationStatus": "official_contact_form_verified",
@@ -1798,7 +1801,7 @@
     "latulippe": {
       "firstPartyChannelVerification": {
         "status": "unreachable",
-        "verifiedAt": "2026-08-05T07:08:03.410Z",
+        "verifiedAt": "2026-08-05T12:12:02.458Z",
         "evidenceUrl": "https://latulippe.com/",
         "httpStatus": 403,
         "signals": [],
@@ -1813,7 +1816,7 @@
     "wildfire sports": {
       "firstPartyChannelVerification": {
         "status": "unreachable",
-        "verifiedAt": "2026-08-05T07:08:03.640Z",
+        "verifiedAt": "2026-08-05T12:12:02.683Z",
         "evidenceUrl": "https://www.wildfiresports.com.au/contact-us",
         "httpStatus": 403,
         "signals": [],
@@ -1828,7 +1831,7 @@
     "sportpursuit": {
       "firstPartyChannelVerification": {
         "status": "unreachable",
-        "verifiedAt": "2026-08-05T07:08:03.384Z",
+        "verifiedAt": "2026-08-05T12:12:05.639Z",
         "evidenceUrl": "https://www.sportpursuit.com/",
         "httpStatus": 403,
         "signals": [],
@@ -1843,7 +1846,7 @@
     "kampeerwereld hendriks": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-05T07:08:08.583Z",
+        "verifiedAt": "2026-08-05T12:12:07.381Z",
         "evidenceUrl": "https://www.kampeerwereld.nl/",
         "httpStatus": 200,
         "signals": [
@@ -1861,7 +1864,7 @@
     "hardloop": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-05T07:08:10.916Z",
+        "verifiedAt": "2026-08-05T12:12:12.632Z",
         "evidenceUrl": "https://www.hardloop.fr/",
         "httpStatus": 200,
         "signals": [],
@@ -1876,7 +1879,7 @@
     "varuste": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-05T07:08:07.460Z",
+        "verifiedAt": "2026-08-05T12:12:06.661Z",
         "evidenceUrl": "https://varuste.net/",
         "httpStatus": 200,
         "signals": [
@@ -1894,12 +1897,11 @@
     "camp studio thailand": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-05T07:08:09.684Z",
-        "evidenceUrl": "https://www.campstudio.co.th/contact",
+        "verifiedAt": "2026-08-05T12:12:16.158Z",
+        "evidenceUrl": "https://www.campstudio.co.th/",
         "httpStatus": 200,
         "signals": [
-          "form_control",
-          "public_business_email"
+          "form_control"
         ],
         "error": ""
       },
@@ -1915,7 +1917,7 @@
     "bever": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-05T07:08:12.732Z",
+        "verifiedAt": "2026-08-05T12:12:13.885Z",
         "evidenceUrl": "https://www.bever.nl/klantenservice/contactgegevens.html",
         "httpStatus": 200,
         "signals": [
@@ -1935,7 +1937,7 @@
     "mountain warehouse": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-05T08:44:51.958Z",
+        "verifiedAt": "2026-08-05T12:12:16.415Z",
         "evidenceUrl": "https://www.mountainwarehouse.com/help/contact-us/",
         "httpStatus": 200,
         "signals": [
@@ -1956,7 +1958,7 @@
     "technical outdoor indonesia": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-05T08:44:50.194Z",
+        "verifiedAt": "2026-08-05T12:12:12.914Z",
         "evidenceUrl": "https://www.technicaloutdoor.com/welcome/",
         "httpStatus": 200,
         "signals": [
@@ -1979,7 +1981,7 @@
     "bentgate mountaineering": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-05T08:44:51.236Z",
+        "verifiedAt": "2026-08-05T12:12:17.882Z",
         "evidenceUrl": "https://www.bentgate.com/",
         "httpStatus": 200,
         "signals": [
@@ -1996,7 +1998,7 @@
     "the great outdoor shop": {
       "firstPartyChannelVerification": {
         "status": "unreachable",
-        "verifiedAt": "2026-08-05T08:44:49.918Z",
+        "verifiedAt": "2026-08-05T12:12:16.595Z",
         "evidenceUrl": "https://thegreatoutdoorshop.com/",
         "httpStatus": 0,
         "signals": [],
@@ -2011,7 +2013,7 @@
     "arizona hiking shack": {
       "firstPartyChannelVerification": {
         "status": "unreachable",
-        "verifiedAt": "2026-08-05T08:44:52.148Z",
+        "verifiedAt": "2026-08-05T12:12:16.661Z",
         "evidenceUrl": "https://www.hikingshack.com/",
         "httpStatus": 403,
         "signals": [],
@@ -2026,7 +2028,7 @@
     "further faster": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-05T08:44:53.409Z",
+        "verifiedAt": "2026-08-05T12:12:17.512Z",
         "evidenceUrl": "https://www.furtherfaster.co.nz/",
         "httpStatus": 200,
         "signals": [
@@ -2045,7 +2047,7 @@
     "avidmax outfitters": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-05T08:44:53.893Z",
+        "verifiedAt": "2026-08-05T12:12:19.430Z",
         "evidenceUrl": "https://www.avidmax.com/",
         "httpStatus": 200,
         "signals": [
