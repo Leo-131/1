@@ -1,6 +1,6 @@
 window.OUTREACH_INTELLIGENCE_LATEST = {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-05T03:12:16.436Z",
+  "generatedAt": "2026-08-05T03:14:41.390Z",
   "companies": [
     {
       "companyId": "company_992d96a6c170243f",
@@ -19,30 +19,30 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
       "evidence": [
         {
           "channel": "website_form",
-          "score": 100,
-          "verified": true,
+          "score": 80,
+          "verified": false,
           "reasons": [
-            "official_business_route"
+            "first_party_evidence"
           ],
           "evidenceUrl": "https://www.esprinet.com/en/become-a-supplier/",
           "checkedAt": ""
         },
         {
           "channel": "website_form",
-          "score": 100,
-          "verified": true,
+          "score": 80,
+          "verified": false,
           "reasons": [
-            "official_business_route"
+            "first_party_evidence"
           ],
           "evidenceUrl": "https://www.esprinet.com/en/become-a-supplier/",
           "checkedAt": ""
         },
         {
           "channel": "website_form",
-          "score": 100,
-          "verified": true,
+          "score": 80,
+          "verified": false,
           "reasons": [
-            "official_business_route"
+            "first_party_evidence"
           ],
           "evidenceUrl": "https://www.esprinet.com/en/become-a-supplier/",
           "checkedAt": ""
@@ -441,18 +441,17 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
       ]
     },
     {
-      "companyId": "company_513b53e283883f91",
-      "company": "Outnorth",
+      "companyId": "company_f2905733b544c0f2",
+      "company": "Naturkompaniet",
       "keys": [
-        "outnorth",
-        "outnorthcom"
+        "naturkompaniet",
+        "naturkompanietse"
       ],
       "domains": [
-        "outnorth.com"
+        "naturkompaniet.se"
       ],
       "channels": [
-        "website_form",
-        "email"
+        "website_form"
       ],
       "evidence": [
         {
@@ -483,6 +482,91 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "unverified_external_evidence_rejected"
           ],
           "evidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
+          "checkedAt": ""
+        }
+      ],
+      "history": [
+        {
+          "status": "approval_pending",
+          "timestamp": "2026-07-14T03:06:44.378Z",
+          "channel": "website_form",
+          "evidence": "contact_entry_verified;mailto_detected;initial_page_verified;website_contact_form_fields_prepared;marketing_attachment_missing;text_only_manual_submit_required;website_contact_target_attempts:1"
+        },
+        {
+          "status": "website_contact_unreachable_skip",
+          "timestamp": "2026-07-15T10:13:32.706Z",
+          "channel": "website_form",
+          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:1"
+        },
+        {
+          "status": "website_contact_unreachable_skip",
+          "timestamp": "2026-07-16T02:01:14.364Z",
+          "channel": "website_form",
+          "evidence": "website_contact_entry_not_verified;no_contact_route_detected;website_contact_all_targets_failed:1"
+        },
+        {
+          "status": "website_contact_unreachable_skip",
+          "timestamp": "2026-07-21T02:17:42.346Z",
+          "channel": "website_form",
+          "evidence": "website_page_unavailable_404: 404;website_contact_all_targets_failed:6;contact_path_strategy_v2"
+        },
+        {
+          "status": "website_contact_unreachable_skip",
+          "timestamp": "2026-07-22T11:03:58.088Z",
+          "channel": "website_form",
+          "evidence": "website_page_unavailable_404: Gå till huvudinnehåll\nFri frakt över 595 kr\n30 dagars öppet köp\nFri hemleverans över 595 kr\nMed kärlek för naturen\nVåra butiker\nLogga in\nNyheter\nDam\nAllt inom Dam\nDamkläder\nDamskor;website_contact_all_targets_failed:6;contact_path_strategy_v2"
+        },
+        {
+          "status": "website_contact_unreachable_skip",
+          "timestamp": "2026-07-26T22:08:19.201Z",
+          "channel": "website_form",
+          "evidence": "website_contact_entry_not_verified;no_contact_route_detected;website_contact_all_targets_failed:6;contact_path_strategy_v2"
+        }
+      ]
+    },
+    {
+      "companyId": "company_513b53e283883f91",
+      "company": "Outnorth",
+      "keys": [
+        "outnorth",
+        "outnorthcom"
+      ],
+      "domains": [
+        "outnorth.com"
+      ],
+      "channels": [
+        "website_form",
+        "email"
+      ],
+      "evidence": [
+        {
+          "channel": "website_form",
+          "score": 80,
+          "verified": false,
+          "reasons": [
+            "first_party_evidence"
+          ],
+          "evidenceUrl": "https://www.outnorth.com/int/faq/contact",
+          "checkedAt": ""
+        },
+        {
+          "channel": "website_form",
+          "score": 80,
+          "verified": false,
+          "reasons": [
+            "first_party_evidence"
+          ],
+          "evidenceUrl": "https://www.outnorth.com/int/faq/contact",
+          "checkedAt": ""
+        },
+        {
+          "channel": "website_form",
+          "score": 80,
+          "verified": false,
+          "reasons": [
+            "first_party_evidence"
+          ],
+          "evidenceUrl": "https://www.outnorth.com/int/faq/contact",
           "checkedAt": ""
         }
       ],
@@ -546,6 +630,90 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
           "timestamp": "2026-07-30T11:41:27.380Z",
           "channel": "website_form",
           "evidence": "customer_execution_timeout:90000;queue_continued_to_next_customer"
+        }
+      ]
+    },
+    {
+      "companyId": "company_5b717df33a01ec42",
+      "company": "Ultralight Outdoor Gear",
+      "keys": [
+        "ultralightoutdoorgear",
+        "ultralightoutdoorgearcouk"
+      ],
+      "domains": [
+        "ultralightoutdoorgear.co.uk"
+      ],
+      "channels": [
+        "website_form"
+      ],
+      "evidence": [
+        {
+          "channel": "website_form",
+          "score": 100,
+          "verified": true,
+          "reasons": [
+            "official_business_route"
+          ],
+          "evidenceUrl": "https://ultralightoutdoorgear.co.uk/",
+          "checkedAt": ""
+        },
+        {
+          "channel": "website_form",
+          "score": 100,
+          "verified": true,
+          "reasons": [
+            "official_business_route"
+          ],
+          "evidenceUrl": "https://ultralightoutdoorgear.co.uk/",
+          "checkedAt": ""
+        },
+        {
+          "channel": "website_form",
+          "score": 100,
+          "verified": true,
+          "reasons": [
+            "official_business_route"
+          ],
+          "evidenceUrl": "https://ultralightoutdoorgear.co.uk/",
+          "checkedAt": ""
+        }
+      ],
+      "history": [
+        {
+          "status": "website_contact_unreachable_skip",
+          "timestamp": "2026-07-14T03:07:14.514Z",
+          "channel": "website_form",
+          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:1"
+        },
+        {
+          "status": "website_contact_unreachable_skip",
+          "timestamp": "2026-07-15T16:05:20.027Z",
+          "channel": "website_form",
+          "evidence": "website_contact_entry_not_verified;contact_entry_clicked:Contact Us;website_contact_all_targets_failed:1"
+        },
+        {
+          "status": "website_contact_unreachable_skip",
+          "timestamp": "2026-07-16T02:02:15.894Z",
+          "channel": "website_form",
+          "evidence": "website_contact_entry_not_verified;no_contact_route_detected;website_contact_all_targets_failed:1"
+        },
+        {
+          "status": "website_contact_unreachable_skip",
+          "timestamp": "2026-07-21T02:21:23.585Z",
+          "channel": "website_form",
+          "evidence": "unavailable_profile_page: Skip to main content\nPrevious\nSpend over £25 and get our Anniversary Neck Tube for 1p\nFree UK Delivery when you spend over £ 15\nTime Saver Guide to Choosing a Waterproof Jacket\nSpe;website_contact_all_targets_failed:6;contact_path_strategy_v2"
+        },
+        {
+          "status": "website_contact_unreachable_skip",
+          "timestamp": "2026-07-21T16:13:15.769Z",
+          "channel": "website_form",
+          "evidence": "website_page_unavailable_404: Ultralight Outdoor Gear - Not Found;website_contact_all_targets_failed:6;contact_path_strategy_v2"
+        },
+        {
+          "status": "website_contact_unreachable_skip",
+          "timestamp": "2026-07-22T17:08:32.090Z",
+          "channel": "website_form",
+          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:6;contact_path_strategy_v2"
         }
       ]
     },
@@ -1269,90 +1437,6 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
       ]
     },
     {
-      "companyId": "company_f2905733b544c0f2",
-      "company": "Naturkompaniet",
-      "keys": [
-        "naturkompaniet",
-        "naturkompanietse"
-      ],
-      "domains": [
-        "naturkompaniet.se"
-      ],
-      "channels": [
-        "website_form"
-      ],
-      "evidence": [
-        {
-          "channel": "website_form",
-          "score": 0,
-          "verified": false,
-          "reasons": [
-            "unverified_external_evidence_rejected"
-          ],
-          "evidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
-          "checkedAt": ""
-        },
-        {
-          "channel": "website_form",
-          "score": 0,
-          "verified": false,
-          "reasons": [
-            "unverified_external_evidence_rejected"
-          ],
-          "evidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
-          "checkedAt": ""
-        },
-        {
-          "channel": "website_form",
-          "score": 0,
-          "verified": false,
-          "reasons": [
-            "unverified_external_evidence_rejected"
-          ],
-          "evidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
-          "checkedAt": ""
-        }
-      ],
-      "history": [
-        {
-          "status": "approval_pending",
-          "timestamp": "2026-07-14T03:06:44.378Z",
-          "channel": "website_form",
-          "evidence": "contact_entry_verified;mailto_detected;initial_page_verified;website_contact_form_fields_prepared;marketing_attachment_missing;text_only_manual_submit_required;website_contact_target_attempts:1"
-        },
-        {
-          "status": "website_contact_unreachable_skip",
-          "timestamp": "2026-07-15T10:13:32.706Z",
-          "channel": "website_form",
-          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:1"
-        },
-        {
-          "status": "website_contact_unreachable_skip",
-          "timestamp": "2026-07-16T02:01:14.364Z",
-          "channel": "website_form",
-          "evidence": "website_contact_entry_not_verified;no_contact_route_detected;website_contact_all_targets_failed:1"
-        },
-        {
-          "status": "website_contact_unreachable_skip",
-          "timestamp": "2026-07-21T02:17:42.346Z",
-          "channel": "website_form",
-          "evidence": "website_page_unavailable_404: 404;website_contact_all_targets_failed:6;contact_path_strategy_v2"
-        },
-        {
-          "status": "website_contact_unreachable_skip",
-          "timestamp": "2026-07-22T11:03:58.088Z",
-          "channel": "website_form",
-          "evidence": "website_page_unavailable_404: Gå till huvudinnehåll\nFri frakt över 595 kr\n30 dagars öppet köp\nFri hemleverans över 595 kr\nMed kärlek för naturen\nVåra butiker\nLogga in\nNyheter\nDam\nAllt inom Dam\nDamkläder\nDamskor;website_contact_all_targets_failed:6;contact_path_strategy_v2"
-        },
-        {
-          "status": "website_contact_unreachable_skip",
-          "timestamp": "2026-07-26T22:08:19.201Z",
-          "channel": "website_form",
-          "evidence": "website_contact_entry_not_verified;no_contact_route_detected;website_contact_all_targets_failed:6;contact_path_strategy_v2"
-        }
-      ]
-    },
-    {
       "companyId": "company_e76c722a1203ce12",
       "company": "Trekitt",
       "keys": [
@@ -1368,32 +1452,32 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
       "evidence": [
         {
           "channel": "website_form",
-          "score": 0,
+          "score": 80,
           "verified": false,
           "reasons": [
-            "unverified_external_evidence_rejected"
+            "first_party_evidence"
           ],
-          "evidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
+          "evidenceUrl": "https://www.trekitt.co.uk/",
           "checkedAt": ""
         },
         {
           "channel": "website_form",
-          "score": 0,
+          "score": 80,
           "verified": false,
           "reasons": [
-            "unverified_external_evidence_rejected"
+            "first_party_evidence"
           ],
-          "evidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
+          "evidenceUrl": "https://www.trekitt.co.uk/",
           "checkedAt": ""
         },
         {
           "channel": "website_form",
-          "score": 0,
+          "score": 80,
           "verified": false,
           "reasons": [
-            "unverified_external_evidence_rejected"
+            "first_party_evidence"
           ],
-          "evidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
+          "evidenceUrl": "https://www.trekitt.co.uk/",
           "checkedAt": ""
         }
       ],
@@ -1433,90 +1517,6 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
           "timestamp": "2026-07-22T16:12:49.202Z",
           "channel": "website_form",
           "evidence": "unavailable_profile_page: Page not found;website_contact_all_targets_failed:6;contact_path_strategy_v2"
-        }
-      ]
-    },
-    {
-      "companyId": "company_5b717df33a01ec42",
-      "company": "Ultralight Outdoor Gear",
-      "keys": [
-        "ultralightoutdoorgear",
-        "ultralightoutdoorgearcouk"
-      ],
-      "domains": [
-        "ultralightoutdoorgear.co.uk"
-      ],
-      "channels": [
-        "website_form"
-      ],
-      "evidence": [
-        {
-          "channel": "website_form",
-          "score": 0,
-          "verified": false,
-          "reasons": [
-            "unverified_external_evidence_rejected"
-          ],
-          "evidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
-          "checkedAt": ""
-        },
-        {
-          "channel": "website_form",
-          "score": 0,
-          "verified": false,
-          "reasons": [
-            "unverified_external_evidence_rejected"
-          ],
-          "evidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
-          "checkedAt": ""
-        },
-        {
-          "channel": "website_form",
-          "score": 0,
-          "verified": false,
-          "reasons": [
-            "unverified_external_evidence_rejected"
-          ],
-          "evidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
-          "checkedAt": ""
-        }
-      ],
-      "history": [
-        {
-          "status": "website_contact_unreachable_skip",
-          "timestamp": "2026-07-14T03:07:14.514Z",
-          "channel": "website_form",
-          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:1"
-        },
-        {
-          "status": "website_contact_unreachable_skip",
-          "timestamp": "2026-07-15T16:05:20.027Z",
-          "channel": "website_form",
-          "evidence": "website_contact_entry_not_verified;contact_entry_clicked:Contact Us;website_contact_all_targets_failed:1"
-        },
-        {
-          "status": "website_contact_unreachable_skip",
-          "timestamp": "2026-07-16T02:02:15.894Z",
-          "channel": "website_form",
-          "evidence": "website_contact_entry_not_verified;no_contact_route_detected;website_contact_all_targets_failed:1"
-        },
-        {
-          "status": "website_contact_unreachable_skip",
-          "timestamp": "2026-07-21T02:21:23.585Z",
-          "channel": "website_form",
-          "evidence": "unavailable_profile_page: Skip to main content\nPrevious\nSpend over £25 and get our Anniversary Neck Tube for 1p\nFree UK Delivery when you spend over £ 15\nTime Saver Guide to Choosing a Waterproof Jacket\nSpe;website_contact_all_targets_failed:6;contact_path_strategy_v2"
-        },
-        {
-          "status": "website_contact_unreachable_skip",
-          "timestamp": "2026-07-21T16:13:15.769Z",
-          "channel": "website_form",
-          "evidence": "website_page_unavailable_404: Ultralight Outdoor Gear - Not Found;website_contact_all_targets_failed:6;contact_path_strategy_v2"
-        },
-        {
-          "status": "website_contact_unreachable_skip",
-          "timestamp": "2026-07-22T17:08:32.090Z",
-          "channel": "website_form",
-          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:6;contact_path_strategy_v2"
         }
       ]
     },
@@ -4029,32 +4029,32 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
       "evidence": [
         {
           "channel": "website_form",
-          "score": 0,
+          "score": 80,
           "verified": false,
           "reasons": [
-            "unverified_external_evidence_rejected"
+            "first_party_evidence"
           ],
-          "evidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
+          "evidenceUrl": "https://www.kitterytradingpost.com/",
           "checkedAt": ""
         },
         {
           "channel": "website_form",
-          "score": 0,
+          "score": 80,
           "verified": false,
           "reasons": [
-            "unverified_external_evidence_rejected"
+            "first_party_evidence"
           ],
-          "evidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
+          "evidenceUrl": "https://www.kitterytradingpost.com/",
           "checkedAt": ""
         },
         {
           "channel": "website_form",
-          "score": 0,
+          "score": 80,
           "verified": false,
           "reasons": [
-            "unverified_external_evidence_rejected"
+            "first_party_evidence"
           ],
-          "evidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
+          "evidenceUrl": "https://www.kitterytradingpost.com/",
           "checkedAt": ""
         }
       ],
@@ -7006,7 +7006,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
           "reasons": [
             "first_party_evidence"
           ],
-          "evidenceUrl": "https://komsa.com/en/contact",
+          "evidenceUrl": "https://komsa.com/en/contact/",
           "checkedAt": ""
         },
         {
@@ -7016,7 +7016,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
           "reasons": [
             "unverified_external_evidence_rejected"
           ],
-          "evidenceUrl": "https://komsa.com/en/contact",
+          "evidenceUrl": "https://komsa.com/en/contact/",
           "checkedAt": ""
         }
       ],
@@ -7109,12 +7109,10 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
       "keys": [
         "aqipa",
         "aqipacom",
-        "premiumaudiocompanycom",
         "supportaqipacom"
       ],
       "domains": [
         "aqipa.com",
-        "premiumaudiocompany.com",
         "support.aqipa.com"
       ],
       "channels": [
@@ -7124,12 +7122,12 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
       "evidence": [
         {
           "channel": "website_form",
-          "score": 100,
-          "verified": true,
+          "score": 80,
+          "verified": false,
           "reasons": [
-            "official_business_route"
+            "first_party_evidence"
           ],
-          "evidenceUrl": "https://support.aqipa.com/en-US/new-ticket",
+          "evidenceUrl": "https://support.aqipa.com/en-US/kb/articles/anfrage-partner-werden",
           "checkedAt": ""
         },
         {
@@ -7139,7 +7137,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
           "reasons": [
             "unverified_external_evidence_rejected"
           ],
-          "evidenceUrl": "https://support.aqipa.com/en-US/new-ticket",
+          "evidenceUrl": "https://support.aqipa.com/en-US/kb/articles/anfrage-partner-werden",
           "checkedAt": ""
         }
       ],
@@ -7175,21 +7173,21 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
       ],
       "evidence": [
         {
-          "channel": "linkedin",
-          "score": 95,
-          "verified": true,
-          "reasons": [
-            "official_site_cross_verified_social"
-          ],
-          "evidenceUrl": "https://www.cmsdistribution.com/contact-us",
-          "checkedAt": "2026-08-05T03:11:56.531Z"
-        },
-        {
           "channel": "website_form",
           "score": 80,
           "verified": false,
           "reasons": [
             "first_party_evidence"
+          ],
+          "evidenceUrl": "https://www.cmsdistribution.com/contact-us",
+          "checkedAt": ""
+        },
+        {
+          "channel": "linkedin",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
           ],
           "evidenceUrl": "https://www.cmsdistribution.com/contact-us",
           "checkedAt": ""
@@ -7274,26 +7272,6 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
       ],
       "evidence": [
         {
-          "channel": "instagram",
-          "score": 95,
-          "verified": true,
-          "reasons": [
-            "official_site_cross_verified_social"
-          ],
-          "evidenceUrl": "https://help.cabelas.com/company-information-ff566349/how-can-i-sell-my-product-through-cabelas-cf904a21",
-          "checkedAt": "2026-08-05T03:11:57.470Z"
-        },
-        {
-          "channel": "facebook",
-          "score": 95,
-          "verified": true,
-          "reasons": [
-            "official_site_cross_verified_social"
-          ],
-          "evidenceUrl": "https://help.cabelas.com/company-information-ff566349/how-can-i-sell-my-product-through-cabelas-cf904a21",
-          "checkedAt": "2026-08-05T03:11:57.470Z"
-        },
-        {
           "channel": "website_form",
           "score": 80,
           "verified": false,
@@ -7310,7 +7288,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
           "reasons": [
             "first_party_evidence"
           ],
-          "evidenceUrl": "https://help.cabelas.com/company-information-ff566349/how-can-i-sell-my-product-through-cabelas-cf904a21",
+          "evidenceUrl": "https://www.cabelas.com/",
           "checkedAt": ""
         },
         {
@@ -7331,6 +7309,26 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "unverified_external_evidence_rejected"
           ],
           "evidenceUrl": "https://www.basspro.com/",
+          "checkedAt": ""
+        },
+        {
+          "channel": "instagram",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "https://www.cabelas.com/",
+          "checkedAt": ""
+        },
+        {
+          "channel": "facebook",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "https://www.cabelas.com/",
           "checkedAt": ""
         }
       ],
@@ -7640,33 +7638,33 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
       ],
       "evidence": [
         {
-          "channel": "instagram",
-          "score": 95,
-          "verified": true,
-          "reasons": [
-            "official_site_cross_verified_social"
-          ],
-          "evidenceUrl": "https://www.gooutdoors.co.uk/pages/contact",
-          "checkedAt": "2026-08-05T03:11:58.902Z"
-        },
-        {
-          "channel": "facebook",
-          "score": 95,
-          "verified": true,
-          "reasons": [
-            "official_site_cross_verified_social"
-          ],
-          "evidenceUrl": "https://www.gooutdoors.co.uk/pages/contact",
-          "checkedAt": "2026-08-05T03:11:58.902Z"
-        },
-        {
           "channel": "website_form",
           "score": 80,
           "verified": false,
           "reasons": [
             "first_party_evidence"
           ],
-          "evidenceUrl": "https://www.gooutdoors.co.uk/pages/contact",
+          "evidenceUrl": "https://www.gooutdoors.co.uk/",
+          "checkedAt": ""
+        },
+        {
+          "channel": "instagram",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "https://www.gooutdoors.co.uk/",
+          "checkedAt": ""
+        },
+        {
+          "channel": "facebook",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "https://www.gooutdoors.co.uk/",
           "checkedAt": ""
         }
       ],
@@ -8061,12 +8059,12 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
       "evidence": [
         {
           "channel": "website_form",
-          "score": 100,
-          "verified": true,
+          "score": 80,
+          "verified": false,
           "reasons": [
-            "official_business_route"
+            "first_party_evidence"
           ],
-          "evidenceUrl": "https://www.sail.ca/en/contact-us",
+          "evidenceUrl": "https://www.sail.ca/",
           "checkedAt": ""
         }
       ],
@@ -8185,31 +8183,31 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
       ],
       "evidence": [
         {
-          "channel": "instagram",
-          "score": 95,
-          "verified": true,
-          "reasons": [
-            "official_site_cross_verified_social"
-          ],
-          "evidenceUrl": "https://www.cotswoldoutdoor.com/",
-          "checkedAt": "2026-08-05T03:12:12.102Z"
-        },
-        {
-          "channel": "facebook",
-          "score": 95,
-          "verified": true,
-          "reasons": [
-            "official_site_cross_verified_social"
-          ],
-          "evidenceUrl": "https://www.cotswoldoutdoor.com/",
-          "checkedAt": "2026-08-05T03:12:12.102Z"
-        },
-        {
           "channel": "website_form",
           "score": 80,
           "verified": false,
           "reasons": [
             "first_party_evidence"
+          ],
+          "evidenceUrl": "https://www.cotswoldoutdoor.com/",
+          "checkedAt": ""
+        },
+        {
+          "channel": "instagram",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "https://www.cotswoldoutdoor.com/",
+          "checkedAt": ""
+        },
+        {
+          "channel": "facebook",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
           ],
           "evidenceUrl": "https://www.cotswoldoutdoor.com/",
           "checkedAt": ""
@@ -8376,22 +8374,22 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
       "evidence": [
         {
           "channel": "instagram",
-          "score": 100,
-          "verified": true,
+          "score": 0,
+          "verified": false,
           "reasons": [
-            "official_business_route"
+            "unverified_external_evidence_rejected"
           ],
-          "evidenceUrl": "https://www.campsaver.com/",
-          "checkedAt": "2026-08-05T03:12:11.431Z"
+          "evidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
+          "checkedAt": ""
         },
         {
           "channel": "website_form",
-          "score": 100,
-          "verified": true,
+          "score": 0,
+          "verified": false,
           "reasons": [
-            "official_business_route"
+            "unverified_external_evidence_rejected"
           ],
-          "evidenceUrl": "https://www.campsaver.com/",
+          "evidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
           "checkedAt": ""
         }
       ],
@@ -8542,7 +8540,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
           "reasons": [
             "first_party_evidence"
           ],
-          "evidenceUrl": "https://www.summitint.co/",
+          "evidenceUrl": "https://www.summitint.co/contact/",
           "checkedAt": ""
         }
       ],
@@ -8752,12 +8750,12 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
       "evidence": [
         {
           "channel": "website_form",
-          "score": 0,
+          "score": 80,
           "verified": false,
           "reasons": [
-            "unverified_external_evidence_rejected"
+            "first_party_evidence"
           ],
-          "evidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
+          "evidenceUrl": "https://scandinavianoutdoor.com/page/customer-service/",
           "checkedAt": ""
         }
       ],
@@ -8935,23 +8933,13 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
       ],
       "evidence": [
         {
-          "channel": "website_form",
-          "score": 80,
-          "verified": false,
-          "reasons": [
-            "first_party_evidence"
-          ],
-          "evidenceUrl": "https://www.kathmandu.co.nz/",
-          "checkedAt": ""
-        },
-        {
           "channel": "instagram",
           "score": 0,
           "verified": false,
           "reasons": [
             "unverified_external_evidence_rejected"
           ],
-          "evidenceUrl": "https://www.kathmandu.co.nz/",
+          "evidenceUrl": "https://help.kathmanduoutdoor.com/support/solutions/articles/51000414624-sales-team-contact-details",
           "checkedAt": ""
         },
         {
@@ -8961,7 +8949,17 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
           "reasons": [
             "unverified_external_evidence_rejected"
           ],
-          "evidenceUrl": "https://www.kathmandu.co.nz/",
+          "evidenceUrl": "https://help.kathmanduoutdoor.com/support/solutions/articles/51000414624-sales-team-contact-details",
+          "checkedAt": ""
+        },
+        {
+          "channel": "website_form",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "https://help.kathmanduoutdoor.com/support/solutions/articles/51000414624-sales-team-contact-details",
           "checkedAt": ""
         }
       ],
@@ -9015,31 +9013,31 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
       ],
       "evidence": [
         {
+          "channel": "instagram",
+          "score": 95,
+          "verified": true,
+          "reasons": [
+            "official_site_cross_verified_social"
+          ],
+          "evidenceUrl": "https://www.evo.com/",
+          "checkedAt": "2026-08-05T03:14:33.981Z"
+        },
+        {
+          "channel": "facebook",
+          "score": 95,
+          "verified": true,
+          "reasons": [
+            "official_site_cross_verified_social"
+          ],
+          "evidenceUrl": "https://www.evo.com/",
+          "checkedAt": "2026-08-05T03:14:33.981Z"
+        },
+        {
           "channel": "website_form",
           "score": 80,
           "verified": false,
           "reasons": [
             "first_party_evidence"
-          ],
-          "evidenceUrl": "https://www.evo.com/",
-          "checkedAt": ""
-        },
-        {
-          "channel": "instagram",
-          "score": 0,
-          "verified": false,
-          "reasons": [
-            "unverified_external_evidence_rejected"
-          ],
-          "evidenceUrl": "https://www.evo.com/",
-          "checkedAt": ""
-        },
-        {
-          "channel": "facebook",
-          "score": 0,
-          "verified": false,
-          "reasons": [
-            "unverified_external_evidence_rejected"
           ],
           "evidenceUrl": "https://www.evo.com/",
           "checkedAt": ""
@@ -9128,22 +9126,22 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
       "evidence": [
         {
           "channel": "instagram",
-          "score": 0,
-          "verified": false,
+          "score": 100,
+          "verified": true,
           "reasons": [
-            "unverified_external_evidence_rejected"
+            "official_business_route"
           ],
-          "evidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
-          "checkedAt": ""
+          "evidenceUrl": "https://highcountryoutfitters.com/",
+          "checkedAt": "2026-08-05T03:14:38.470Z"
         },
         {
           "channel": "website_form",
-          "score": 0,
-          "verified": false,
+          "score": 100,
+          "verified": true,
           "reasons": [
-            "unverified_external_evidence_rejected"
+            "official_business_route"
           ],
-          "evidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
+          "evidenceUrl": "https://highcountryoutfitters.com/",
           "checkedAt": ""
         }
       ],
@@ -14962,22 +14960,22 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
   "portfolio": {
     "actions": [
       {
-        "companyId": "company_992d96a6c170243f",
-        "company": "Esprinet Group",
-        "action": "first_touch",
-        "channel": "website_form",
-        "evidenceScore": 100,
-        "evidenceUrl": "https://www.esprinet.com/en/become-a-supplier/",
-        "alternatives": [],
-        "reason": "highest_priority_verified_channel"
-      },
-      {
         "companyId": "company_ca049a336c94b7d9",
         "company": "Left Point Distribution",
         "action": "first_touch",
         "channel": "website_form",
         "evidenceScore": 100,
         "evidenceUrl": "https://www.leftpointdistribution.com/en-eu/aboutus.php",
+        "alternatives": [],
+        "reason": "highest_priority_verified_channel"
+      },
+      {
+        "companyId": "company_5b717df33a01ec42",
+        "company": "Ultralight Outdoor Gear",
+        "action": "first_touch",
+        "channel": "website_form",
+        "evidenceScore": 100,
+        "evidenceUrl": "https://ultralightoutdoorgear.co.uk/",
         "alternatives": [],
         "reason": "highest_priority_verified_channel"
       },
@@ -15120,25 +15118,15 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
     ]
   },
   "ownerSummary": {
-    "generatedAt": "2026-08-05T03:12:16.436Z",
+    "generatedAt": "2026-08-05T03:14:41.390Z",
     "phase": "autonomous_sales_operating_system_v1",
     "kpis": {
       "companies": 187,
       "permanentlySuppressed": 104,
       "plannedActions": 4,
-      "verifiedEvidenceRoutes": 53
+      "verifiedEvidenceRoutes": 46
     },
     "decisions": [
-      {
-        "companyId": "company_992d96a6c170243f",
-        "company": "Esprinet Group",
-        "action": "first_touch",
-        "channel": "website_form",
-        "evidenceScore": 100,
-        "evidenceUrl": "https://www.esprinet.com/en/become-a-supplier/",
-        "alternatives": [],
-        "reason": "highest_priority_verified_channel"
-      },
       {
         "companyId": "company_ca049a336c94b7d9",
         "company": "Left Point Distribution",
@@ -15146,6 +15134,16 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
         "channel": "website_form",
         "evidenceScore": 100,
         "evidenceUrl": "https://www.leftpointdistribution.com/en-eu/aboutus.php",
+        "alternatives": [],
+        "reason": "highest_priority_verified_channel"
+      },
+      {
+        "companyId": "company_5b717df33a01ec42",
+        "company": "Ultralight Outdoor Gear",
+        "action": "first_touch",
+        "channel": "website_form",
+        "evidenceScore": 100,
+        "evidenceUrl": "https://ultralightoutdoorgear.co.uk/",
         "alternatives": [],
         "reason": "highest_priority_verified_channel"
       },

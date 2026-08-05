@@ -13,7 +13,7 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
   "customerMessageSent": false,
   "realDevelopmentCount": 0,
   "reportingVerdict": "no_customer_development_performed",
-  "userVisibleStatus": "Customer development was not performed. Blockers: homepage_only_contact_path_requires_verification (46); website_contact_capability_not_verified (42); social_profile_not_first_party_verified (23).",
+  "userVisibleStatus": "Customer development was not performed. Blockers: homepage_only_contact_path_requires_verification (46); website_contact_capability_not_verified (38); social_profile_not_first_party_verified (23).",
   "recoveryHint": "Verify the recipient as an official public business email before enabling email outreach.",
   "recoveryActions": [
     {
@@ -171,11 +171,25 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "reason": "official_website_contact_channel"
     },
     {
+      "id": "google-customer-naturkompaniet-website-contact",
+      "company": "Naturkompaniet",
+      "action": "verify_target",
+      "platform": "website_form",
+      "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
       "id": "google-customer-outnorth-website-contact",
       "company": "Outnorth",
       "action": "email_priority",
       "platform": "website_form",
       "reason": "official_website_contact_channel"
+    },
+    {
+      "id": "google-customer-ultralight-outdoor-gear-website-contact",
+      "company": "Ultralight Outdoor Gear",
+      "action": "verify_target",
+      "platform": "website_form",
+      "reason": "homepage_only_contact_path_requires_verification"
     },
     {
       "id": "google-customer-varuste-website-contact",
@@ -206,22 +220,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "reason": "homepage_only_contact_path_requires_verification"
     },
     {
-      "id": "google-customer-naturkompaniet-website-contact",
-      "company": "Naturkompaniet",
-      "action": "verify_target",
-      "platform": "website_form",
-      "reason": "homepage_only_contact_path_requires_verification"
-    },
-    {
       "id": "google-customer-trekitt-website-contact",
       "company": "Trekitt",
-      "action": "verify_target",
-      "platform": "website_form",
-      "reason": "homepage_only_contact_path_requires_verification"
-    },
-    {
-      "id": "google-customer-ultralight-outdoor-gear-website-contact",
-      "company": "Ultralight Outdoor Gear",
       "action": "verify_target",
       "platform": "website_form",
       "reason": "homepage_only_contact_path_requires_verification"
@@ -724,6 +724,13 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "reason": "verified_executable_channel_missing"
     },
     {
+      "id": "google-customer-esprinet-group-website-contact",
+      "company": "Esprinet Group",
+      "action": "email_priority",
+      "platform": "website_form",
+      "reason": "website_contact_capability_not_verified"
+    },
+    {
       "id": "google-customer-fjellsport-website-contact",
       "company": "Fjellsport",
       "action": "email_priority",
@@ -754,27 +761,6 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     {
       "id": "google-customer-au-vieux-campeur-website-contact",
       "company": "Au Vieux Campeur",
-      "action": "verify_target",
-      "platform": "website_form",
-      "reason": "website_contact_capability_not_verified"
-    },
-    {
-      "id": "google-customer-naturkompaniet-website-contact",
-      "company": "Naturkompaniet",
-      "action": "verify_target",
-      "platform": "website_form",
-      "reason": "website_contact_capability_not_verified"
-    },
-    {
-      "id": "google-customer-trekitt-website-contact",
-      "company": "Trekitt",
-      "action": "verify_target",
-      "platform": "website_form",
-      "reason": "website_contact_capability_not_verified"
-    },
-    {
-      "id": "google-customer-ultralight-outdoor-gear-website-contact",
-      "company": "Ultralight Outdoor Gear",
       "action": "verify_target",
       "platform": "website_form",
       "reason": "website_contact_capability_not_verified"
@@ -927,13 +913,6 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "reason": "website_contact_capability_not_verified"
     },
     {
-      "id": "google-customer-kittery-trading-post-website-contact",
-      "company": "Kittery Trading Post",
-      "action": "verify_target",
-      "platform": "website_form",
-      "reason": "website_contact_capability_not_verified"
-    },
-    {
       "id": "google-customer-atmosphere-website-contact",
       "company": "Atmosphere",
       "action": "verify_target",
@@ -1060,13 +1039,6 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "reason": "public_business_email_requires_verification"
     },
     {
-      "id": "google-customer-transa-website-contact",
-      "company": "Transa",
-      "action": "verify_target",
-      "platform": "website_form",
-      "reason": "website_contact_capability_not_verified"
-    },
-    {
       "id": "google-customer-esprinet-group-linkedin",
       "company": "Esprinet Group",
       "action": "verify_target",
@@ -1090,7 +1062,7 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     {
       "reason": "website_contact_capability_not_verified",
       "status": "skipped",
-      "count": 42
+      "count": 38
     },
     {
       "reason": "social_profile_not_first_party_verified",
@@ -1115,7 +1087,7 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
   ],
   "blockerCounts": {
     "homepage_only_contact_path_requires_verification": 46,
-    "website_contact_capability_not_verified": 42,
+    "website_contact_capability_not_verified": 38,
     "social_profile_not_first_party_verified": 23,
     "public_business_email_requires_verification": 15,
     "verified_executable_channel_missing": 15,
@@ -1147,16 +1119,16 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     "potentialPoolTarget": 100,
     "customerTableHighIcp": 23,
     "refillNeeded": 0,
-    "executableCompanies": 6,
+    "executableCompanies": 10,
     "executableReserveTarget": 130,
-    "executableReserveNeeded": 124,
+    "executableReserveNeeded": 120,
     "executableByChannel": {
-      "website_form": 6
+      "website_form": 10
     },
     "verifiedSocialCompanies": 0,
     "verifiedSocialReserveTarget": 20,
     "verifiedSocialReserveNeeded": 20,
-    "enrichmentBacklogCount": 94,
+    "enrichmentBacklogCount": 90,
     "googleDiscovered": 77,
     "facebookDiscovered": 11,
     "websiteContactDiscovered": 0,
@@ -1178,5 +1150,5 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "ALIBABA_SMTP_SECURITY_PASSWORD"
     ]
   },
-  "completedAt": "2026-08-05T03:13:00.087Z"
+  "completedAt": "2026-08-05T03:15:17.377Z"
 };
