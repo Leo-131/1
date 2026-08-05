@@ -1487,6 +1487,8 @@ test('same-day failed customer advances without cross-run replay and closes its 
   assert.match(outreachPolicySource, /executable code, a regression test/);
   assert.match(optimizedPromptSource, /Email authentication is route-specific, never batch-wide/);
   assert.match(optimizedPromptSource, /executable code, regression tests, Policy/);
+  assert.match(outreachPolicySource, /bounded retry for transient Windows/);
+  assert.match(optimizedPromptSource, /bounded transient Windows file-lock retry/);
 });
 
 test('email performs a final company-wide permanent dedupe check immediately before sending', () => {

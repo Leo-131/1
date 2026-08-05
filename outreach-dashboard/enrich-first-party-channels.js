@@ -7,6 +7,38 @@ const JS_PATH = path.join(ROOT, 'google-lead-discovery-latest.js');
 const STATE_PATH = path.join(ROOT, 'first-party-enrichment-state.json');
 const DEFAULT_LIMIT = 25;
 const FETCH_TIMEOUT_MS = 10000;
+const TRANSIENT_FILE_CODES = new Set(['UNKNOWN', 'EBUSY', 'EPERM', 'EACCES']);
+
+function sleepSync(ms) {
+  const signal = new Int32Array(new SharedArrayBuffer(4));
+  Atomics.wait(signal, 0, 0, ms);
+}
+
+function retryTransientFileOperation(operation, attempts = 10) {
+  let lastError = null;
+  for (let attempt = 0; attempt < attempts; attempt += 1) {
+    try {
+      return operation();
+    } catch (error) {
+      lastError = error;
+      if (!TRANSIENT_FILE_CODES.has(String(error && error.code || '')) || attempt === attempts - 1) throw error;
+      sleepSync(100 * (attempt + 1));
+    }
+  }
+  throw lastError;
+}
+
+function atomicWriteFile(file, content) {
+  const temp = `${file}.${process.pid}.${Date.now()}.tmp`;
+  try {
+    retryTransientFileOperation(() => fs.writeFileSync(temp, content));
+    retryTransientFileOperation(() => fs.renameSync(temp, file));
+  } finally {
+    if (fs.existsSync(temp)) {
+      try { fs.unlinkSync(temp); } catch { /* best-effort cleanup only */ }
+    }
+  }
+}
 
 function normalizedCompany(value) {
   return String(value || '').normalize('NFKD').toLowerCase().replace(/[^a-z0-9]+/g, ' ').trim();
@@ -169,12 +201,12 @@ async function main() {
   }
   for (const result of results) verifications[normalizedCompany(result.company)] = result.cache;
   artifact.firstPartyEnrichment = { completedAt: new Date().toISOString(), attemptedCompanies: results.length, verifiedCompanies: results.filter(item => item.ok && item.signals.length).length, cachedCompanies: Object.keys(verifications).length, results: results.map(({ cache, ...result }) => result) };
-  fs.writeFileSync(STATE_PATH, `${JSON.stringify({ updatedAt: artifact.firstPartyEnrichment.completedAt, cursor: allGroups.length ? (start + results.length) % allGroups.length : 0, companyCount: allGroups.length, verifications }, null, 2)}\n`);
-  fs.writeFileSync(JSON_PATH, `${JSON.stringify(artifact, null, 2)}\n`);
-  fs.writeFileSync(JS_PATH, `window.GOOGLE_LEAD_DISCOVERY_LATEST = ${JSON.stringify(artifact, null, 2)};\n`);
+  atomicWriteFile(STATE_PATH, `${JSON.stringify({ updatedAt: artifact.firstPartyEnrichment.completedAt, cursor: allGroups.length ? (start + results.length) % allGroups.length : 0, companyCount: allGroups.length, verifications }, null, 2)}\n`);
+  atomicWriteFile(JSON_PATH, `${JSON.stringify(artifact, null, 2)}\n`);
+  atomicWriteFile(JS_PATH, `window.GOOGLE_LEAD_DISCOVERY_LATEST = ${JSON.stringify(artifact, null, 2)};\n`);
   console.log(JSON.stringify(artifact.firstPartyEnrichment, null, 2));
 }
 
 if (require.main === module) main().catch(error => { console.error(error); process.exitCode = 1; });
 
-module.exports = { inspectOfficialPage, safeOfficialUrl, sameSocialProfile, applyCachedVerification, cachedVerificationFromRows };
+module.exports = { inspectOfficialPage, safeOfficialUrl, sameSocialProfile, applyCachedVerification, cachedVerificationFromRows, retryTransientFileOperation, atomicWriteFile };

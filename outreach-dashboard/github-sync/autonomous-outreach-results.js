@@ -13339,5 +13339,39 @@ window.AUTONOMOUS_OUTREACH_RESULTS = [
     "messageId": "<3905c07b-af60-2bed-f425-f90c79c8edfa@flextailgear.com>",
     "sentFolder": "已发送",
     "sentUid": 2924
+  },
+  {
+    "task_id": "google-customer-kampeerwereld-hendriks-website-contact",
+    "company": "Kampeerwereld Hendriks",
+    "approval_version": 1,
+    "status": "sent_confirmed",
+    "agent": "alibaba-enterprise-mail",
+    "browserTransportUsed": "none",
+    "timestamp": "2026-08-05T05:59:11.363Z",
+    "target_url": "https://www.kampeerwereld.nl/",
+    "evidence": "smtp_accepted;message_id:<701c266e-b853-042a-0441-9fc0b738dbd6@flextailgear.com>;sent_folder_message_confirmed;contact_path_strategy_v2",
+    "draft": "Dear Kampeerwereld Hendriks Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
+    "subject": "FLEXTAIL retail partnership | 2026 assortment",
+    "recipientEmail": "info@kampeerwereld.nl",
+    "messageId": "<701c266e-b853-042a-0441-9fc0b738dbd6@flextailgear.com>",
+    "sentFolder": "已发送",
+    "sentUid": 2923
+  },
+  {
+    "task_id": "google-customer-ute-mountaineer-website-contact",
+    "company": "Ute Mountaineer",
+    "approval_version": 1,
+    "status": "sent_confirmed",
+    "agent": "alibaba-enterprise-mail",
+    "browserTransportUsed": "none",
+    "timestamp": "2026-08-05T05:59:12.657Z",
+    "target_url": "https://utemountaineer.com/",
+    "evidence": "smtp_accepted;message_id:<3905c07b-af60-2bed-f425-f90c79c8edfa@flextailgear.com>;sent_folder_message_confirmed;contact_path_strategy_v2",
+    "draft": "Dear Ute Mountaineer Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
+    "subject": "FLEXTAIL retail partnership | 2026 assortment",
+    "recipientEmail": "mountainexpert@utemountaineer.com",
+    "messageId": "<3905c07b-af60-2bed-f425-f90c79c8edfa@flextailgear.com>",
+    "sentFolder": "已发送",
+    "sentUid": 2924
   }
 ];

@@ -2,6 +2,15 @@ const test = require('node:test');
 const assert = require('node:assert/strict');
 const { inspectOfficialPage, safeOfficialUrl, sameSocialProfile, applyCachedVerification } = require('../outreach-dashboard/enrich-first-party-channels');
 
+test('first-party enrichment artifacts use bounded transient retry and atomic replacement', () => {
+  const source = require('node:fs').readFileSync(require('node:path').join(__dirname, '..', 'outreach-dashboard', 'enrich-first-party-channels.js'), 'utf8');
+  assert.match(source, /TRANSIENT_FILE_CODES/);
+  assert.match(source, /function retryTransientFileOperation/);
+  assert.match(source, /function atomicWriteFile/);
+  assert.doesNotMatch(source, /fs\.writeFileSync\(JSON_PATH/);
+  assert.doesNotMatch(source, /fs\.writeFileSync\(STATE_PATH/);
+});
+
 test('first-party page inspection recognizes executable controls and exact official social links', () => {
   const html = '<h1>Become a supplier</h1><form><input name="email"><textarea></textarea></form><a href="https://instagram.com/acme/">Instagram</a>';
   const result = inspectOfficialPage(html, 'https://acme.example/suppliers');
