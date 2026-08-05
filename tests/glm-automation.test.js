@@ -1419,6 +1419,16 @@ test('automation-owned Chrome work is visible in the dedicated 9224 window', () 
   assert.ok(mainSource.includes('for (const port of [9224])'));
 });
 
+test('browser activation cannot target the operator main Chrome', () => {
+  const activationStart = mainSource.indexOf('async function activateChromeTarget');
+  const activationEnd = mainSource.indexOf('function cdpCommand', activationStart);
+  const activationSource = mainSource.slice(activationStart, activationEnd);
+  assert.match(activationSource, /Number\(port\) !== 9224/);
+  assert.match(activationSource, /only dedicated CDP 9224 may be activated/);
+  assert.match(outreachPolicySource, /Never enumerate, focus, activate, inspect, attach to, or reuse an operator Chrome window/);
+  assert.match(optimizedPromptSource, /Never enumerate, focus, inspect, attach to, or reuse the operator's main Chrome/);
+});
+
 test('Windows automation runs every three hours in bounded batches', () => {
   const installer = fs.readFileSync(path.join(__dirname, '..', 'outreach-dashboard', 'install-daily-automation-task.ps1'), 'utf8');
   const runner = fs.readFileSync(path.join(__dirname, '..', 'outreach-dashboard', 'run-daily-customer-development.ps1'), 'utf8');

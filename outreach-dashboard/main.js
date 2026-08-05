@@ -1340,6 +1340,9 @@ async function openWithCodexChrome(url, options = {}) {
 }
 
 async function activateChromeTarget(port, opened) {
+  if (Number(port) !== 9224) {
+    throw new Error('automation_chrome_port_mismatch: only dedicated CDP 9224 may be activated');
+  }
   if (!opened || !opened.id) return;
   await httpJson(`http://127.0.0.1:${port}/json/activate/${opened.id}`, 1500).catch(() => null);
   await cdpCommand(opened.webSocketDebuggerUrl, 'Page.bringToFront', {}, 1500);

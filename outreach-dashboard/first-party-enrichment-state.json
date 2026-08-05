@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-08-05T08:54:31.633Z",
-  "cursor": 3,
+  "updatedAt": "2026-08-05T10:01:33.825Z",
+  "cursor": 28,
   "companyCount": 142,
   "verifications": {
     "facewest": {
@@ -784,7 +784,7 @@
     "aqipa": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-05T07:02:10.041Z",
+        "verifiedAt": "2026-08-05T10:01:20.201Z",
         "evidenceUrl": "https://support.aqipa.com/en-US/new-ticket",
         "httpStatus": 200,
         "signals": [
@@ -803,10 +803,12 @@
     "cms distribution": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-05T07:02:12.365Z",
-        "evidenceUrl": "https://www.cmsdistribution.com/",
+        "verifiedAt": "2026-08-05T10:01:19.486Z",
+        "evidenceUrl": "https://www.cmsdistribution.com/contact-us",
         "httpStatus": 200,
-        "signals": [],
+        "signals": [
+          "contact_invitation"
+        ],
         "error": ""
       },
       "contactCapabilityVerified": false,
@@ -820,7 +822,7 @@
     "bass pro shops": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-05T07:02:10.548Z",
+        "verifiedAt": "2026-08-05T10:01:20.491Z",
         "evidenceUrl": "https://vendorportal.basspro.com/default.aspx",
         "httpStatus": 200,
         "signals": [
@@ -838,7 +840,7 @@
     "cabela s": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-05T07:02:11.027Z",
+        "verifiedAt": "2026-08-05T10:01:21.289Z",
         "evidenceUrl": "https://help.cabelas.com/company-information-ff566349/how-can-i-sell-my-product-through-cabelas-cf904a21",
         "httpStatus": 200,
         "signals": [
@@ -860,7 +862,7 @@
     "liberty mountain": {
       "firstPartyChannelVerification": {
         "status": "unreachable",
-        "verifiedAt": "2026-08-05T07:02:12.633Z",
+        "verifiedAt": "2026-08-05T10:01:21.553Z",
         "evidenceUrl": "https://libertymountain.com/find-a-rep",
         "httpStatus": 403,
         "signals": [],
@@ -875,7 +877,7 @@
     "mec": {
       "firstPartyChannelVerification": {
         "status": "unreachable",
-        "verifiedAt": "2026-08-05T07:02:12.629Z",
+        "verifiedAt": "2026-08-05T10:01:21.626Z",
         "evidenceUrl": "https://www.mec.ca/en/contact-us",
         "httpStatus": 403,
         "signals": [],
@@ -890,7 +892,7 @@
     "backcountry": {
       "firstPartyChannelVerification": {
         "status": "unreachable",
-        "verifiedAt": "2026-08-05T07:02:12.610Z",
+        "verifiedAt": "2026-08-05T10:01:21.707Z",
         "evidenceUrl": "https://www.backcountry.com/sc/contact-us",
         "httpStatus": 403,
         "signals": [],
@@ -905,7 +907,7 @@
     "go outdoors": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-05T07:02:14.704Z",
+        "verifiedAt": "2026-08-05T10:01:23.059Z",
         "evidenceUrl": "https://www.gooutdoors.co.uk/pages/contact",
         "httpStatus": 200,
         "signals": [
@@ -926,7 +928,7 @@
     "sportsman s warehouse": {
       "firstPartyChannelVerification": {
         "status": "unreachable",
-        "verifiedAt": "2026-08-05T07:02:15.241Z",
+        "verifiedAt": "2026-08-05T10:01:23.472Z",
         "evidenceUrl": "https://www.sportsmans.com/contact-us",
         "httpStatus": 403,
         "signals": [],
@@ -941,7 +943,7 @@
     "obelink": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-05T07:02:15.830Z",
+        "verifiedAt": "2026-08-05T10:01:24.082Z",
         "evidenceUrl": "https://www.obelink.nl/obelink-partnerprogramma/",
         "httpStatus": 200,
         "signals": [
@@ -958,7 +960,7 @@
     "anaconda": {
       "firstPartyChannelVerification": {
         "status": "unreachable",
-        "verifiedAt": "2026-08-05T07:02:21.870Z",
+        "verifiedAt": "2026-08-05T10:01:27.910Z",
         "evidenceUrl": "https://help.anacondastores.com/hc/en-au",
         "httpStatus": 403,
         "signals": [],
@@ -973,7 +975,7 @@
     "globetrotter": {
       "firstPartyChannelVerification": {
         "status": "unreachable",
-        "verifiedAt": "2026-08-05T07:02:15.596Z",
+        "verifiedAt": "2026-08-05T10:01:24.119Z",
         "evidenceUrl": "https://www.globetrotter.de/",
         "httpStatus": 403,
         "signals": [],
@@ -988,7 +990,7 @@
     "outdoor nature": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-05T07:02:22.778Z",
+        "verifiedAt": "2026-08-05T10:01:28.761Z",
         "evidenceUrl": "https://www.outdoornature.com.au/become-a-supplier/",
         "httpStatus": 200,
         "signals": [
@@ -1007,7 +1009,7 @@
     "garage grown gear": {
       "firstPartyChannelVerification": {
         "status": "unreachable",
-        "verifiedAt": "2026-08-05T07:02:22.028Z",
+        "verifiedAt": "2026-08-05T10:01:28.098Z",
         "evidenceUrl": "https://www.garagegrowngear.com/",
         "httpStatus": 403,
         "signals": [],
@@ -1022,7 +1024,7 @@
     "bergfreunde": {
       "firstPartyChannelVerification": {
         "status": "unreachable",
-        "verifiedAt": "2026-08-05T07:02:22.019Z",
+        "verifiedAt": "2026-08-05T10:01:28.024Z",
         "evidenceUrl": "https://www.bergfreunde.eu/",
         "httpStatus": 403,
         "signals": [],
@@ -1037,7 +1039,7 @@
     "sail outdoors": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-05T07:02:24.688Z",
+        "verifiedAt": "2026-08-05T10:01:28.702Z",
         "evidenceUrl": "https://www.sail.ca/en/contact-us",
         "httpStatus": 200,
         "signals": [
@@ -1056,7 +1058,7 @@
     "fritz berger": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-05T07:02:27.973Z",
+        "verifiedAt": "2026-08-05T10:01:30.523Z",
         "evidenceUrl": "https://www.fritz-berger.de/",
         "httpStatus": 200,
         "signals": [
@@ -1073,11 +1075,11 @@
     "au vieux campeur": {
       "firstPartyChannelVerification": {
         "status": "unreachable",
-        "verifiedAt": "2026-08-05T07:05:57.047Z",
+        "verifiedAt": "2026-08-05T10:01:28.878Z",
         "evidenceUrl": "https://www.auvieuxcampeur.fr/",
-        "httpStatus": 0,
+        "httpStatus": 403,
         "signals": [],
-        "error": "fetch failed"
+        "error": ""
       },
       "contactCapabilityVerified": false,
       "externalVerificationStatus": "",
@@ -1088,7 +1090,7 @@
     "cotswold outdoor": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-05T07:05:57.694Z",
+        "verifiedAt": "2026-08-05T10:01:29.941Z",
         "evidenceUrl": "https://www.cotswoldoutdoor.com/",
         "httpStatus": 200,
         "signals": [
@@ -1108,12 +1110,14 @@
     },
     "decathlon france": {
       "firstPartyChannelVerification": {
-        "status": "unreachable",
-        "verifiedAt": "2026-08-05T07:05:57.271Z",
+        "status": "checked",
+        "verifiedAt": "2026-08-05T10:01:30.003Z",
         "evidenceUrl": "https://www.decathlon.fr/help/app/contact",
-        "httpStatus": 0,
-        "signals": [],
-        "error": "fetch failed"
+        "httpStatus": 200,
+        "signals": [
+          "form_control"
+        ],
+        "error": ""
       },
       "contactCapabilityVerified": false,
       "externalVerificationStatus": "",
@@ -1124,7 +1128,7 @@
     "campsaver": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-05T07:05:55.310Z",
+        "verifiedAt": "2026-08-05T10:01:32.253Z",
         "evidenceUrl": "https://www.campsaver.com/",
         "httpStatus": 200,
         "signals": [
@@ -1145,7 +1149,7 @@
     "bergzeit": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-05T07:05:59.467Z",
+        "verifiedAt": "2026-08-05T10:01:31.892Z",
         "evidenceUrl": "https://www.bergzeit.de/",
         "httpStatus": 200,
         "signals": [],
@@ -1160,7 +1164,7 @@
     "camping wagner": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-05T07:05:59.404Z",
+        "verifiedAt": "2026-08-05T10:01:31.622Z",
         "evidenceUrl": "https://www.campingwagner.de/de/",
         "httpStatus": 200,
         "signals": [],
@@ -1174,11 +1178,13 @@
     },
     "decathlon germany": {
       "firstPartyChannelVerification": {
-        "status": "unreachable",
-        "verifiedAt": "2026-08-05T07:05:57.939Z",
-        "evidenceUrl": "https://www.decathlon.de/help/app/contact",
-        "httpStatus": 403,
-        "signals": [],
+        "status": "checked",
+        "verifiedAt": "2026-08-05T10:01:32.518Z",
+        "evidenceUrl": "https://www.decathlon.de/",
+        "httpStatus": 200,
+        "signals": [
+          "form_control"
+        ],
         "error": ""
       },
       "contactCapabilityVerified": false,
@@ -1190,7 +1196,7 @@
     "summit international": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-05T07:05:59.154Z",
+        "verifiedAt": "2026-08-05T10:01:33.825Z",
         "evidenceUrl": "https://www.summitint.co/contact/",
         "httpStatus": 200,
         "signals": [
