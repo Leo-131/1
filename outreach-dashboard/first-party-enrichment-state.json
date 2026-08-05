@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-08-05T10:01:33.825Z",
-  "cursor": 28,
+  "updatedAt": "2026-08-05T10:05:26.192Z",
+  "cursor": 53,
   "companyCount": 142,
   "verifications": {
     "facewest": {
@@ -1214,7 +1214,7 @@
     "valhalla pure outfitters": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-05T07:06:00.495Z",
+        "verifiedAt": "2026-08-05T10:05:08.463Z",
         "evidenceUrl": "https://vpo.ca/",
         "httpStatus": 200,
         "signals": [],
@@ -1229,7 +1229,7 @@
     "tentworld": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-05T07:06:00.523Z",
+        "verifiedAt": "2026-08-05T10:05:08.710Z",
         "evidenceUrl": "https://www.tentworld.com.au/",
         "httpStatus": 200,
         "signals": [],
@@ -1244,7 +1244,7 @@
     "trekitt": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-05T07:06:00.501Z",
+        "verifiedAt": "2026-08-05T10:05:07.843Z",
         "evidenceUrl": "https://www.trekitt.co.uk/",
         "httpStatus": 200,
         "signals": [
@@ -1262,7 +1262,7 @@
     "ultralight outdoor gear": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-05T07:06:01.177Z",
+        "verifiedAt": "2026-08-05T10:05:08.519Z",
         "evidenceUrl": "https://ultralightoutdoorgear.co.uk/",
         "httpStatus": 200,
         "signals": [
@@ -1281,7 +1281,7 @@
     "outnorth": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-05T07:06:02.378Z",
+        "verifiedAt": "2026-08-05T10:05:10.328Z",
         "evidenceUrl": "https://www.outnorth.com/int/faq/contact",
         "httpStatus": 200,
         "signals": [
@@ -1299,7 +1299,7 @@
     "naturkompaniet": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-05T07:06:02.180Z",
+        "verifiedAt": "2026-08-05T10:05:10.060Z",
         "evidenceUrl": "https://www.naturkompaniet.se/",
         "httpStatus": 200,
         "signals": [
@@ -1317,7 +1317,7 @@
     "fjellsport": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-05T07:06:02.506Z",
+        "verifiedAt": "2026-08-05T10:05:10.642Z",
         "evidenceUrl": "https://www.fjellsport.no/faq/personvern",
         "httpStatus": 200,
         "signals": [
@@ -1334,7 +1334,7 @@
     "bcf": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-05T07:06:03.542Z",
+        "verifiedAt": "2026-08-05T10:05:13.037Z",
         "evidenceUrl": "https://superretailgroup.com.au/contact/",
         "httpStatus": 200,
         "signals": [
@@ -1351,7 +1351,7 @@
     "camping world": {
       "firstPartyChannelVerification": {
         "status": "unreachable",
-        "verifiedAt": "2026-08-05T07:06:04.659Z",
+        "verifiedAt": "2026-08-05T10:05:12.048Z",
         "evidenceUrl": "https://www.campingworld.com/contact-us.html",
         "httpStatus": 403,
         "signals": [],
@@ -1365,14 +1365,11 @@
     },
     "kittery trading post": {
       "firstPartyChannelVerification": {
-        "status": "checked",
-        "verifiedAt": "2026-08-05T07:06:04.755Z",
+        "status": "unreachable",
+        "verifiedAt": "2026-08-05T10:05:11.749Z",
         "evidenceUrl": "https://www.kitterytradingpost.com/",
-        "httpStatus": 200,
-        "signals": [
-          "form_control",
-          "contact_invitation"
-        ],
+        "httpStatus": 403,
+        "signals": [],
         "error": ""
       },
       "contactCapabilityVerified": true,
@@ -1384,7 +1381,7 @@
     "bivouac outdoor": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-05T07:06:04.215Z",
+        "verifiedAt": "2026-08-05T10:05:12.244Z",
         "evidenceUrl": "https://www.bivouac.co.nz/",
         "httpStatus": 200,
         "signals": [
@@ -1401,7 +1398,7 @@
     "alpinetrek": {
       "firstPartyChannelVerification": {
         "status": "unreachable",
-        "verifiedAt": "2026-08-05T07:06:03.803Z",
+        "verifiedAt": "2026-08-05T10:05:13.162Z",
         "evidenceUrl": "https://www.alpinetrek.co.uk/",
         "httpStatus": 403,
         "signals": [],
@@ -1416,7 +1413,7 @@
     "de wit schijndel": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-05T07:06:09.775Z",
+        "verifiedAt": "2026-08-05T10:05:16.341Z",
         "evidenceUrl": "https://www.dewitschijndel.nl/",
         "httpStatus": 200,
         "signals": [
@@ -1433,7 +1430,7 @@
     "snowleader": {
       "firstPartyChannelVerification": {
         "status": "unreachable",
-        "verifiedAt": "2026-08-05T07:06:04.943Z",
+        "verifiedAt": "2026-08-05T10:05:13.163Z",
         "evidenceUrl": "https://www.snowleader.com/",
         "httpStatus": 403,
         "signals": [],
@@ -1448,11 +1445,11 @@
     "ekosport": {
       "firstPartyChannelVerification": {
         "status": "unreachable",
-        "verifiedAt": "2026-08-05T07:06:07.826Z",
+        "verifiedAt": "2026-08-05T10:05:14.242Z",
         "evidenceUrl": "https://www.ekosport.fr/",
-        "httpStatus": 0,
+        "httpStatus": 403,
         "signals": [],
-        "error": "fetch failed"
+        "error": ""
       },
       "contactCapabilityVerified": false,
       "externalVerificationStatus": "",
@@ -1463,7 +1460,7 @@
     "barrabes": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-05T07:06:06.558Z",
+        "verifiedAt": "2026-08-05T10:05:17.699Z",
         "evidenceUrl": "https://www.barrabes.com/",
         "httpStatus": 200,
         "signals": [
@@ -1479,12 +1476,15 @@
     },
     "scandinavian outdoor": {
       "firstPartyChannelVerification": {
-        "status": "unreachable",
-        "verifiedAt": "2026-08-05T07:06:29.791Z",
+        "status": "checked",
+        "verifiedAt": "2026-08-05T10:05:23.370Z",
         "evidenceUrl": "https://scandinavianoutdoor.com/page/customer-service/",
-        "httpStatus": 0,
-        "signals": [],
-        "error": "timeout"
+        "httpStatus": 200,
+        "signals": [
+          "public_business_email",
+          "contact_invitation"
+        ],
+        "error": ""
       },
       "contactCapabilityVerified": true,
       "externalVerificationStatus": "official_contact_form_verified",
@@ -1495,7 +1495,7 @@
     "transa": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-05T07:07:52.959Z",
+        "verifiedAt": "2026-08-05T10:05:17.565Z",
         "evidenceUrl": "https://www.transa.ch/de/",
         "httpStatus": 200,
         "signals": [
@@ -1513,7 +1513,7 @@
     "kathmandu": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-05T07:07:50.511Z",
+        "verifiedAt": "2026-08-05T10:05:17.231Z",
         "evidenceUrl": "https://help.kathmanduoutdoor.com/support/solutions/articles/51000414624-sales-team-contact-details",
         "httpStatus": 200,
         "signals": [
@@ -1532,7 +1532,7 @@
     "evo": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-05T07:07:50.168Z",
+        "verifiedAt": "2026-08-05T10:05:24.040Z",
         "evidenceUrl": "https://www.evo.com/",
         "httpStatus": 200,
         "signals": [
@@ -1552,7 +1552,7 @@
     "enwild": {
       "firstPartyChannelVerification": {
         "status": "unreachable",
-        "verifiedAt": "2026-08-05T07:07:49.576Z",
+        "verifiedAt": "2026-08-05T10:05:23.621Z",
         "evidenceUrl": "https://www.enwild.com/",
         "httpStatus": 403,
         "signals": [],
@@ -1567,7 +1567,7 @@
     "high country outfitters": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-05T07:07:53.775Z",
+        "verifiedAt": "2026-08-05T10:05:24.136Z",
         "evidenceUrl": "https://highcountryoutfitters.com/",
         "httpStatus": 200,
         "signals": [
@@ -1587,12 +1587,15 @@
     },
     "next adventure": {
       "firstPartyChannelVerification": {
-        "status": "unreachable",
-        "verifiedAt": "2026-08-05T07:07:56.050Z",
+        "status": "checked",
+        "verifiedAt": "2026-08-05T10:05:23.734Z",
         "evidenceUrl": "https://nextadventure.net/",
-        "httpStatus": 0,
-        "signals": [],
-        "error": "fetch failed"
+        "httpStatus": 200,
+        "signals": [
+          "form_control",
+          "contact_invitation"
+        ],
+        "error": ""
       },
       "contactCapabilityVerified": true,
       "externalVerificationStatus": "official_contact_form_verified",
@@ -1603,7 +1606,7 @@
     "backcountry experience": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-05T07:07:55.207Z",
+        "verifiedAt": "2026-08-05T10:05:26.192Z",
         "evidenceUrl": "https://www.bcexp.com/",
         "httpStatus": 200,
         "signals": [
@@ -2494,6 +2497,21 @@
       },
       "contactCapabilityVerified": true,
       "externalVerificationStatus": "official_contact_form_verified",
+      "publicEmail": "",
+      "emailVerificationStatus": "",
+      "socialProfiles": []
+    },
+    "tractor supply company": {
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-05T10:05:11.577Z",
+        "evidenceUrl": "https://www.tractorsupply.com/",
+        "httpStatus": 200,
+        "signals": [],
+        "error": ""
+      },
+      "contactCapabilityVerified": false,
+      "externalVerificationStatus": "official_supplier_form_verified",
       "publicEmail": "",
       "emailVerificationStatus": "",
       "socialProfiles": []
