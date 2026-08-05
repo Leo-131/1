@@ -1327,14 +1327,10 @@
     "retainedLowIcp": 0
   },
   "bounceReconciliation": {
-    "ok": false,
-    "reason": "email_sender_not_configured",
-    "updated": 0,
-    "requiredEnv": [
-      "OUTREACH_EMAIL_FROM",
-      "ALIBABA_SMTP_USER",
-      "ALIBABA_SMTP_SECURITY_PASSWORD"
-    ]
+    "ok": true,
+    "reason": "no_recent_bounces",
+    "scanned": 0,
+    "updated": 0
   },
-  "completedAt": "2026-08-05T07:03:20.938Z"
+  "completedAt": "2026-08-05T07:07:23.821Z"
 }

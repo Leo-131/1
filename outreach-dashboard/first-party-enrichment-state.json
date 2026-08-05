@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-08-05T07:02:27.973Z",
-  "cursor": 20,
+  "updatedAt": "2026-08-05T07:06:29.791Z",
+  "cursor": 45,
   "companyCount": 140,
   "verifications": {
     "facewest": {
@@ -1066,11 +1066,11 @@
     "au vieux campeur": {
       "firstPartyChannelVerification": {
         "status": "unreachable",
-        "verifiedAt": "2026-08-05T05:09:56.347Z",
+        "verifiedAt": "2026-08-05T07:05:57.047Z",
         "evidenceUrl": "https://www.auvieuxcampeur.fr/",
-        "httpStatus": 403,
+        "httpStatus": 0,
         "signals": [],
-        "error": ""
+        "error": "fetch failed"
       },
       "contactCapabilityVerified": false,
       "externalVerificationStatus": "",
@@ -1081,7 +1081,7 @@
     "cotswold outdoor": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-05T05:09:57.640Z",
+        "verifiedAt": "2026-08-05T07:05:57.694Z",
         "evidenceUrl": "https://www.cotswoldoutdoor.com/",
         "httpStatus": 200,
         "signals": [
@@ -1093,7 +1093,7 @@
       "contactCapabilityVerified": true,
       "externalVerificationStatus": "official_contact_form_verified",
       "publicEmail": "enquiries@cotswoldoutdoor.com",
-      "emailVerificationStatus": "",
+      "emailVerificationStatus": "official_public_business_email",
       "socialProfiles": [
         "https://www.instagram.com/cotswoldoutdoor/",
         "https://www.facebook.com/CotswoldOutdoor"
@@ -1101,25 +1101,23 @@
     },
     "decathlon france": {
       "firstPartyChannelVerification": {
-        "status": "checked",
-        "verifiedAt": "2026-08-05T05:09:59.156Z",
+        "status": "unreachable",
+        "verifiedAt": "2026-08-05T07:05:57.271Z",
         "evidenceUrl": "https://www.decathlon.fr/help/app/contact",
-        "httpStatus": 200,
-        "signals": [
-          "form_control"
-        ],
-        "error": ""
+        "httpStatus": 0,
+        "signals": [],
+        "error": "fetch failed"
       },
       "contactCapabilityVerified": false,
       "externalVerificationStatus": "",
       "publicEmail": "international.media@decathlon.com",
-      "emailVerificationStatus": "",
+      "emailVerificationStatus": "official_public_business_email",
       "socialProfiles": []
     },
     "campsaver": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-05T05:09:59.186Z",
+        "verifiedAt": "2026-08-05T07:05:55.310Z",
         "evidenceUrl": "https://www.campsaver.com/",
         "httpStatus": 200,
         "signals": [
@@ -1140,7 +1138,7 @@
     "bergzeit": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-05T05:10:01.407Z",
+        "verifiedAt": "2026-08-05T07:05:59.467Z",
         "evidenceUrl": "https://www.bergzeit.de/",
         "httpStatus": 200,
         "signals": [],
@@ -1155,7 +1153,7 @@
     "camping wagner": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-05T05:10:00.579Z",
+        "verifiedAt": "2026-08-05T07:05:59.404Z",
         "evidenceUrl": "https://www.campingwagner.de/de/",
         "httpStatus": 200,
         "signals": [],
@@ -1170,7 +1168,7 @@
     "decathlon germany": {
       "firstPartyChannelVerification": {
         "status": "unreachable",
-        "verifiedAt": "2026-08-05T05:10:01.657Z",
+        "verifiedAt": "2026-08-05T07:05:57.939Z",
         "evidenceUrl": "https://www.decathlon.de/help/app/contact",
         "httpStatus": 403,
         "signals": [],
@@ -1179,13 +1177,13 @@
       "contactCapabilityVerified": false,
       "externalVerificationStatus": "",
       "publicEmail": "international.media@decathlon.com",
-      "emailVerificationStatus": "",
+      "emailVerificationStatus": "official_public_business_email",
       "socialProfiles": []
     },
     "summit international": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-05T05:10:02.731Z",
+        "verifiedAt": "2026-08-05T07:05:59.154Z",
         "evidenceUrl": "https://www.summitint.co/contact/",
         "httpStatus": 200,
         "signals": [
@@ -1197,13 +1195,13 @@
       "contactCapabilityVerified": true,
       "externalVerificationStatus": "official_contact_form_verified",
       "publicEmail": "info@summitint.co",
-      "emailVerificationStatus": "",
+      "emailVerificationStatus": "official_public_business_email",
       "socialProfiles": []
     },
     "valhalla pure outfitters": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-05T05:10:02.754Z",
+        "verifiedAt": "2026-08-05T07:06:00.495Z",
         "evidenceUrl": "https://vpo.ca/",
         "httpStatus": 200,
         "signals": [],
@@ -1218,7 +1216,7 @@
     "tentworld": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-05T05:10:02.983Z",
+        "verifiedAt": "2026-08-05T07:06:00.523Z",
         "evidenceUrl": "https://www.tentworld.com.au/",
         "httpStatus": 200,
         "signals": [],
@@ -1227,13 +1225,13 @@
       "contactCapabilityVerified": false,
       "externalVerificationStatus": "",
       "publicEmail": "contact@tentworld.com.au",
-      "emailVerificationStatus": "",
+      "emailVerificationStatus": "official_public_business_email",
       "socialProfiles": []
     },
     "trekitt": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-05T05:10:03.853Z",
+        "verifiedAt": "2026-08-05T07:06:00.501Z",
         "evidenceUrl": "https://www.trekitt.co.uk/",
         "httpStatus": 200,
         "signals": [
@@ -1251,7 +1249,7 @@
     "ultralight outdoor gear": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-05T05:10:04.275Z",
+        "verifiedAt": "2026-08-05T07:06:01.177Z",
         "evidenceUrl": "https://ultralightoutdoorgear.co.uk/",
         "httpStatus": 200,
         "signals": [
@@ -1270,7 +1268,7 @@
     "outnorth": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-05T05:10:04.443Z",
+        "verifiedAt": "2026-08-05T07:06:02.378Z",
         "evidenceUrl": "https://www.outnorth.com/int/faq/contact",
         "httpStatus": 200,
         "signals": [
@@ -1282,13 +1280,13 @@
       "contactCapabilityVerified": true,
       "externalVerificationStatus": "official_contact_form_verified",
       "publicEmail": "info@outnorth.com",
-      "emailVerificationStatus": "",
+      "emailVerificationStatus": "official_public_business_email",
       "socialProfiles": []
     },
     "naturkompaniet": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-05T05:10:04.494Z",
+        "verifiedAt": "2026-08-05T07:06:02.180Z",
         "evidenceUrl": "https://www.naturkompaniet.se/",
         "httpStatus": 200,
         "signals": [
@@ -1306,7 +1304,7 @@
     "fjellsport": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-05T05:10:05.835Z",
+        "verifiedAt": "2026-08-05T07:06:02.506Z",
         "evidenceUrl": "https://www.fjellsport.no/faq/personvern",
         "httpStatus": 200,
         "signals": [
@@ -1317,13 +1315,13 @@
       "contactCapabilityVerified": false,
       "externalVerificationStatus": "",
       "publicEmail": "kundeservice@fjellsport.no",
-      "emailVerificationStatus": "",
+      "emailVerificationStatus": "official_public_business_email",
       "socialProfiles": []
     },
     "bcf": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-05T05:42:36.547Z",
+        "verifiedAt": "2026-08-05T07:06:03.542Z",
         "evidenceUrl": "https://superretailgroup.com.au/contact/",
         "httpStatus": 200,
         "signals": [
@@ -1340,11 +1338,11 @@
     "camping world": {
       "firstPartyChannelVerification": {
         "status": "unreachable",
-        "verifiedAt": "2026-08-05T05:42:37.446Z",
+        "verifiedAt": "2026-08-05T07:06:04.659Z",
         "evidenceUrl": "https://www.campingworld.com/contact-us.html",
-        "httpStatus": 0,
+        "httpStatus": 403,
         "signals": [],
-        "error": "fetch failed"
+        "error": ""
       },
       "contactCapabilityVerified": false,
       "externalVerificationStatus": "",
@@ -1355,7 +1353,7 @@
     "kittery trading post": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-05T05:42:35.155Z",
+        "verifiedAt": "2026-08-05T07:06:04.755Z",
         "evidenceUrl": "https://www.kitterytradingpost.com/",
         "httpStatus": 200,
         "signals": [
@@ -1373,7 +1371,7 @@
     "bivouac outdoor": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-05T05:42:34.462Z",
+        "verifiedAt": "2026-08-05T07:06:04.215Z",
         "evidenceUrl": "https://www.bivouac.co.nz/",
         "httpStatus": 200,
         "signals": [
@@ -1384,13 +1382,13 @@
       "contactCapabilityVerified": false,
       "externalVerificationStatus": "",
       "publicEmail": "web@bivouac.co.nz",
-      "emailVerificationStatus": "",
+      "emailVerificationStatus": "official_public_business_email",
       "socialProfiles": []
     },
     "alpinetrek": {
       "firstPartyChannelVerification": {
         "status": "unreachable",
-        "verifiedAt": "2026-08-05T05:42:37.571Z",
+        "verifiedAt": "2026-08-05T07:06:03.803Z",
         "evidenceUrl": "https://www.alpinetrek.co.uk/",
         "httpStatus": 403,
         "signals": [],
@@ -1405,7 +1403,7 @@
     "de wit schijndel": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-05T05:42:43.725Z",
+        "verifiedAt": "2026-08-05T07:06:09.775Z",
         "evidenceUrl": "https://www.dewitschijndel.nl/",
         "httpStatus": 200,
         "signals": [
@@ -1422,7 +1420,7 @@
     "snowleader": {
       "firstPartyChannelVerification": {
         "status": "unreachable",
-        "verifiedAt": "2026-08-05T05:42:37.966Z",
+        "verifiedAt": "2026-08-05T07:06:04.943Z",
         "evidenceUrl": "https://www.snowleader.com/",
         "httpStatus": 403,
         "signals": [],
@@ -1437,11 +1435,11 @@
     "ekosport": {
       "firstPartyChannelVerification": {
         "status": "unreachable",
-        "verifiedAt": "2026-08-05T05:42:38.136Z",
+        "verifiedAt": "2026-08-05T07:06:07.826Z",
         "evidenceUrl": "https://www.ekosport.fr/",
-        "httpStatus": 403,
+        "httpStatus": 0,
         "signals": [],
-        "error": ""
+        "error": "fetch failed"
       },
       "contactCapabilityVerified": false,
       "externalVerificationStatus": "",
@@ -1452,7 +1450,7 @@
     "barrabes": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-05T05:42:45.267Z",
+        "verifiedAt": "2026-08-05T07:06:06.558Z",
         "evidenceUrl": "https://www.barrabes.com/",
         "httpStatus": 200,
         "signals": [
@@ -1468,20 +1466,17 @@
     },
     "scandinavian outdoor": {
       "firstPartyChannelVerification": {
-        "status": "checked",
-        "verifiedAt": "2026-08-05T05:42:48.125Z",
+        "status": "unreachable",
+        "verifiedAt": "2026-08-05T07:06:29.791Z",
         "evidenceUrl": "https://scandinavianoutdoor.com/page/customer-service/",
-        "httpStatus": 200,
-        "signals": [
-          "public_business_email",
-          "contact_invitation"
-        ],
-        "error": ""
+        "httpStatus": 0,
+        "signals": [],
+        "error": "timeout"
       },
       "contactCapabilityVerified": true,
       "externalVerificationStatus": "official_contact_form_verified",
       "publicEmail": "info@scandinavianoutdoor.com",
-      "emailVerificationStatus": "",
+      "emailVerificationStatus": "official_public_business_email",
       "socialProfiles": []
     },
     "transa": {
