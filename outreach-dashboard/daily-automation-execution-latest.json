@@ -81,6 +81,13 @@
       "reason": "official_public_business_email_verified"
     },
     {
+      "id": "google-customer-bergfreunde-website-contact",
+      "company": "Bergfreunde",
+      "action": "verify_target",
+      "platform": "website_form",
+      "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
       "id": "google-customer-campervan-gift-website-contact",
       "company": "Campervan Gift",
       "action": "email_priority",
@@ -95,11 +102,46 @@
       "reason": "official_website_contact_channel"
     },
     {
+      "id": "google-customer-au-vieux-campeur-website-contact",
+      "company": "Au Vieux Campeur",
+      "action": "verify_target",
+      "platform": "website_form",
+      "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
       "id": "google-customer-trekitt-website-contact",
       "company": "Trekitt",
       "action": "develop",
       "platform": "website_form",
       "reason": "official_website_contact_channel"
+    },
+    {
+      "id": "google-customer-barrabes-website-contact",
+      "company": "Barrabes",
+      "action": "verify_target",
+      "platform": "website_form",
+      "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
+      "id": "google-customer-de-wit-schijndel-website-contact",
+      "company": "De Wit Schijndel",
+      "action": "verify_target",
+      "platform": "website_form",
+      "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
+      "id": "google-customer-ekosport-website-contact",
+      "company": "Ekosport",
+      "action": "verify_target",
+      "platform": "website_form",
+      "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
+      "id": "google-customer-snowleader-website-contact",
+      "company": "Snowleader",
+      "action": "verify_target",
+      "platform": "website_form",
+      "reason": "homepage_only_contact_path_requires_verification"
     },
     {
       "id": "google-customer-tiso-website-contact",
@@ -116,11 +158,46 @@
       "reason": "official_website_contact_channel"
     },
     {
+      "id": "google-customer-campz-website-contact",
+      "company": "Campz",
+      "action": "verify_target",
+      "platform": "website_form",
+      "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
+      "id": "google-customer-outdoorxl-website-contact",
+      "company": "OutdoorXL",
+      "action": "verify_target",
+      "platform": "website_form",
+      "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
+      "id": "google-customer-spejder-sport-website-contact",
+      "company": "Spejder Sport",
+      "action": "verify_target",
+      "platform": "website_form",
+      "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
+      "id": "google-customer-hardloop-website-contact",
+      "company": "Hardloop",
+      "action": "verify_target",
+      "platform": "website_form",
+      "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
       "id": "google-customer-rock-creek-website-contact",
       "company": "Rock/Creek",
       "action": "email_priority",
       "platform": "website_form",
       "reason": "official_public_business_email_verified"
+    },
+    {
+      "id": "google-customer-outdoor-specialist-website-contact",
+      "company": "Outdoor Specialist",
+      "action": "verify_target",
+      "platform": "website_form",
+      "reason": "homepage_only_contact_path_requires_verification"
     },
     {
       "id": "google-customer-next-adventure-website-contact",
@@ -200,6 +277,27 @@
       "reason": "concrete_google_discovered_major_customer_facebook"
     },
     {
+      "id": "google-customer-campz-facebook",
+      "company": "Campz",
+      "action": "develop",
+      "platform": "facebook",
+      "reason": "social_profile_not_first_party_verified"
+    },
+    {
+      "id": "google-customer-bergfreunde-instagram",
+      "company": "Bergfreunde",
+      "action": "develop",
+      "platform": "instagram",
+      "reason": "social_profile_not_first_party_verified"
+    },
+    {
+      "id": "google-customer-campz-instagram",
+      "company": "Campz",
+      "action": "develop",
+      "platform": "instagram",
+      "reason": "social_profile_not_first_party_verified"
+    },
+    {
       "id": "sheet_1779293110195_9myxa520z",
       "company": "ARROW TIRE DISTRIBUTORS",
       "action": "email_priority",
@@ -256,50 +354,8 @@
       "reason": "public_business_email_requires_verification"
     },
     {
-      "id": "google-customer-bergfreunde-website-contact",
-      "company": "Bergfreunde",
-      "action": "verify_target",
-      "platform": "website_form",
-      "reason": "homepage_only_contact_path_requires_verification"
-    },
-    {
-      "id": "google-customer-au-vieux-campeur-website-contact",
-      "company": "Au Vieux Campeur",
-      "action": "verify_target",
-      "platform": "website_form",
-      "reason": "homepage_only_contact_path_requires_verification"
-    },
-    {
       "id": "google-customer-alpinetrek-website-contact",
       "company": "Alpinetrek",
-      "action": "verify_target",
-      "platform": "website_form",
-      "reason": "homepage_only_contact_path_requires_verification"
-    },
-    {
-      "id": "google-customer-barrabes-website-contact",
-      "company": "Barrabes",
-      "action": "verify_target",
-      "platform": "website_form",
-      "reason": "homepage_only_contact_path_requires_verification"
-    },
-    {
-      "id": "google-customer-de-wit-schijndel-website-contact",
-      "company": "De Wit Schijndel",
-      "action": "verify_target",
-      "platform": "website_form",
-      "reason": "homepage_only_contact_path_requires_verification"
-    },
-    {
-      "id": "google-customer-ekosport-website-contact",
-      "company": "Ekosport",
-      "action": "verify_target",
-      "platform": "website_form",
-      "reason": "homepage_only_contact_path_requires_verification"
-    },
-    {
-      "id": "google-customer-snowleader-website-contact",
-      "company": "Snowleader",
       "action": "verify_target",
       "platform": "website_form",
       "reason": "homepage_only_contact_path_requires_verification"
@@ -312,13 +368,6 @@
       "reason": "homepage_only_contact_path_requires_verification"
     },
     {
-      "id": "google-customer-campz-website-contact",
-      "company": "Campz",
-      "action": "verify_target",
-      "platform": "website_form",
-      "reason": "homepage_only_contact_path_requires_verification"
-    },
-    {
       "id": "google-customer-ld-mountain-centre-website-contact",
       "company": "LD Mountain Centre",
       "action": "verify_target",
@@ -326,36 +375,8 @@
       "reason": "homepage_only_contact_path_requires_verification"
     },
     {
-      "id": "google-customer-outdoorxl-website-contact",
-      "company": "OutdoorXL",
-      "action": "verify_target",
-      "platform": "website_form",
-      "reason": "homepage_only_contact_path_requires_verification"
-    },
-    {
-      "id": "google-customer-spejder-sport-website-contact",
-      "company": "Spejder Sport",
-      "action": "verify_target",
-      "platform": "website_form",
-      "reason": "homepage_only_contact_path_requires_verification"
-    },
-    {
-      "id": "google-customer-hardloop-website-contact",
-      "company": "Hardloop",
-      "action": "verify_target",
-      "platform": "website_form",
-      "reason": "homepage_only_contact_path_requires_verification"
-    },
-    {
       "id": "google-customer-sportpursuit-website-contact",
       "company": "SportPursuit",
-      "action": "verify_target",
-      "platform": "website_form",
-      "reason": "homepage_only_contact_path_requires_verification"
-    },
-    {
-      "id": "google-customer-outdoor-specialist-website-contact",
-      "company": "Outdoor Specialist",
       "action": "verify_target",
       "platform": "website_form",
       "reason": "homepage_only_contact_path_requires_verification"
@@ -438,13 +459,6 @@
       "reason": "social_profile_not_first_party_verified"
     },
     {
-      "id": "google-customer-campz-facebook",
-      "company": "Campz",
-      "action": "develop",
-      "platform": "facebook",
-      "reason": "social_profile_not_first_party_verified"
-    },
-    {
       "id": "google-customer-ld-mountain-centre-facebook",
       "company": "LD Mountain Centre",
       "action": "develop",
@@ -487,22 +501,8 @@
       "reason": "social_profile_not_first_party_verified"
     },
     {
-      "id": "google-customer-bergfreunde-instagram",
-      "company": "Bergfreunde",
-      "action": "develop",
-      "platform": "instagram",
-      "reason": "social_profile_not_first_party_verified"
-    },
-    {
       "id": "google-customer-above-and-beyond-instagram",
       "company": "Above and Beyond",
-      "action": "develop",
-      "platform": "instagram",
-      "reason": "social_profile_not_first_party_verified"
-    },
-    {
-      "id": "google-customer-campz-instagram",
-      "company": "Campz",
       "action": "develop",
       "platform": "instagram",
       "reason": "social_profile_not_first_party_verified"
@@ -1327,10 +1327,14 @@
     "retainedLowIcp": 0
   },
   "bounceReconciliation": {
-    "ok": true,
-    "reason": "no_recent_bounces",
-    "scanned": 0,
-    "updated": 0
+    "ok": false,
+    "reason": "email_sender_not_configured",
+    "updated": 0,
+    "requiredEnv": [
+      "OUTREACH_EMAIL_FROM",
+      "ALIBABA_SMTP_USER",
+      "ALIBABA_SMTP_SECURITY_PASSWORD"
+    ]
   },
-  "completedAt": "2026-08-05T06:00:18.591Z"
+  "completedAt": "2026-08-05T07:03:20.938Z"
 }
