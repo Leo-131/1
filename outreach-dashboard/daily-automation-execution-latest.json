@@ -116,15 +116,15 @@
       "reason": "official_website_contact_channel"
     },
     {
-      "id": "google-customer-alpinetrek-website-contact",
-      "company": "Alpinetrek",
+      "id": "google-customer-barrabes-website-contact",
+      "company": "Barrabes",
       "action": "verify_target",
       "platform": "website_form",
       "reason": "homepage_only_contact_path_requires_verification"
     },
     {
-      "id": "google-customer-barrabes-website-contact",
-      "company": "Barrabes",
+      "id": "google-customer-de-wit-schijndel-website-contact",
+      "company": "De Wit Schijndel",
       "action": "verify_target",
       "platform": "website_form",
       "reason": "homepage_only_contact_path_requires_verification"
@@ -158,13 +158,6 @@
       "reason": "official_website_contact_channel"
     },
     {
-      "id": "google-customer-above-and-beyond-website-contact",
-      "company": "Above and Beyond",
-      "action": "verify_target",
-      "platform": "website_form",
-      "reason": "homepage_only_contact_path_requires_verification"
-    },
-    {
       "id": "google-customer-campz-website-contact",
       "company": "Campz",
       "action": "verify_target",
@@ -172,8 +165,8 @@
       "reason": "homepage_only_contact_path_requires_verification"
     },
     {
-      "id": "google-customer-ld-mountain-centre-website-contact",
-      "company": "LD Mountain Centre",
+      "id": "google-customer-outdoorxl-website-contact",
+      "company": "OutdoorXL",
       "action": "verify_target",
       "platform": "website_form",
       "reason": "homepage_only_contact_path_requires_verification"
@@ -193,18 +186,18 @@
       "reason": "homepage_only_contact_path_requires_verification"
     },
     {
-      "id": "google-customer-sportpursuit-website-contact",
-      "company": "SportPursuit",
-      "action": "verify_target",
-      "platform": "website_form",
-      "reason": "homepage_only_contact_path_requires_verification"
-    },
-    {
       "id": "google-customer-rock-creek-website-contact",
       "company": "Rock/Creek",
       "action": "email_priority",
       "platform": "website_form",
       "reason": "official_public_business_email_verified"
+    },
+    {
+      "id": "google-customer-outdoor-specialist-website-contact",
+      "company": "Outdoor Specialist",
+      "action": "verify_target",
+      "platform": "website_form",
+      "reason": "homepage_only_contact_path_requires_verification"
     },
     {
       "id": "google-customer-next-adventure-website-contact",
@@ -228,13 +221,6 @@
       "reason": "official_website_contact_channel"
     },
     {
-      "id": "google-customer-valhalla-pure-outfitters-website-contact",
-      "company": "Valhalla Pure Outfitters",
-      "action": "verify_target",
-      "platform": "website_form",
-      "reason": "homepage_only_contact_path_requires_verification"
-    },
-    {
       "id": "google-customer-kittery-trading-post-website-contact",
       "company": "Kittery Trading Post",
       "action": "develop",
@@ -242,74 +228,11 @@
       "reason": "official_website_contact_channel"
     },
     {
-      "id": "google-customer-atmosphere-website-contact",
-      "company": "Atmosphere",
-      "action": "verify_target",
-      "platform": "website_form",
-      "reason": "homepage_only_contact_path_requires_verification"
-    },
-    {
-      "id": "google-customer-eastern-mountain-sports-website-contact",
-      "company": "Eastern Mountain Sports",
-      "action": "verify_target",
-      "platform": "website_form",
-      "reason": "homepage_only_contact_path_requires_verification"
-    },
-    {
-      "id": "google-customer-la-cordee-website-contact",
-      "company": "La Cordee",
-      "action": "verify_target",
-      "platform": "website_form",
-      "reason": "homepage_only_contact_path_requires_verification"
-    },
-    {
-      "id": "google-customer-moosejaw-website-contact",
-      "company": "Moosejaw",
-      "action": "verify_target",
-      "platform": "website_form",
-      "reason": "homepage_only_contact_path_requires_verification"
-    },
-    {
-      "id": "google-customer-the-mountaineer-website-contact",
-      "company": "The Mountaineer",
-      "action": "verify_target",
-      "platform": "website_form",
-      "reason": "homepage_only_contact_path_requires_verification"
-    },
-    {
       "id": "google-customer-neptune-mountaineering-website-contact",
       "company": "Neptune Mountaineering",
       "action": "develop",
       "platform": "website_form",
       "reason": "official_website_contact_channel"
-    },
-    {
-      "id": "google-customer-latulippe-website-contact",
-      "company": "Latulippe",
-      "action": "verify_target",
-      "platform": "website_form",
-      "reason": "homepage_only_contact_path_requires_verification"
-    },
-    {
-      "id": "google-customer-arizona-hiking-shack-website-contact",
-      "company": "Arizona Hiking Shack",
-      "action": "verify_target",
-      "platform": "website_form",
-      "reason": "homepage_only_contact_path_requires_verification"
-    },
-    {
-      "id": "google-customer-bentgate-mountaineering-website-contact",
-      "company": "Bentgate Mountaineering",
-      "action": "verify_target",
-      "platform": "website_form",
-      "reason": "homepage_only_contact_path_requires_verification"
-    },
-    {
-      "id": "google-customer-the-great-outdoor-shop-website-contact",
-      "company": "The Great Outdoor Shop",
-      "action": "verify_target",
-      "platform": "website_form",
-      "reason": "homepage_only_contact_path_requires_verification"
     },
     {
       "id": "google-customer-avidmax-outfitters-website-contact",
@@ -368,15 +291,155 @@
       "reason": "concrete_google_discovered_major_customer_facebook"
     },
     {
-      "id": "google-customer-above-and-beyond-facebook",
-      "company": "Above and Beyond",
+      "id": "google-customer-campz-facebook",
+      "company": "Campz",
       "action": "develop",
       "platform": "facebook",
       "reason": "social_profile_not_first_party_verified"
     },
     {
-      "id": "google-customer-campz-facebook",
+      "id": "google-customer-bergfreunde-instagram",
+      "company": "Bergfreunde",
+      "action": "develop",
+      "platform": "instagram",
+      "reason": "social_profile_not_first_party_verified"
+    },
+    {
+      "id": "google-customer-campz-instagram",
       "company": "Campz",
+      "action": "develop",
+      "platform": "instagram",
+      "reason": "social_profile_not_first_party_verified"
+    },
+    {
+      "id": "sheet_1779293110195_9myxa520z",
+      "company": "ARROW TIRE DISTRIBUTORS",
+      "action": "email_priority",
+      "platform": "email",
+      "reason": "public_business_email_requires_verification"
+    },
+    {
+      "id": "sheet_1779293110195_u24j2gdmq",
+      "company": "FAUNA OUTDOOR",
+      "action": "email_priority",
+      "platform": "email",
+      "reason": "public_business_email_requires_verification"
+    },
+    {
+      "id": "sheet_1779293110195_g0uwgglwc",
+      "company": "JOHN DOYLE DISTRIBUTORS",
+      "action": "email_priority",
+      "platform": "email",
+      "reason": "public_business_email_requires_verification"
+    },
+    {
+      "id": "sheet_1779293110195_0f1r27koe",
+      "company": "TAHOE SPORTS HUB",
+      "action": "email_priority",
+      "platform": "email",
+      "reason": "public_business_email_requires_verification"
+    },
+    {
+      "id": "google-customer-alpinetrek-website-contact",
+      "company": "Alpinetrek",
+      "action": "verify_target",
+      "platform": "website_form",
+      "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
+      "id": "google-customer-above-and-beyond-website-contact",
+      "company": "Above and Beyond",
+      "action": "verify_target",
+      "platform": "website_form",
+      "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
+      "id": "google-customer-ld-mountain-centre-website-contact",
+      "company": "LD Mountain Centre",
+      "action": "verify_target",
+      "platform": "website_form",
+      "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
+      "id": "google-customer-sportpursuit-website-contact",
+      "company": "SportPursuit",
+      "action": "verify_target",
+      "platform": "website_form",
+      "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
+      "id": "google-customer-valhalla-pure-outfitters-website-contact",
+      "company": "Valhalla Pure Outfitters",
+      "action": "verify_target",
+      "platform": "website_form",
+      "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
+      "id": "google-customer-atmosphere-website-contact",
+      "company": "Atmosphere",
+      "action": "verify_target",
+      "platform": "website_form",
+      "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
+      "id": "google-customer-eastern-mountain-sports-website-contact",
+      "company": "Eastern Mountain Sports",
+      "action": "verify_target",
+      "platform": "website_form",
+      "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
+      "id": "google-customer-la-cordee-website-contact",
+      "company": "La Cordee",
+      "action": "verify_target",
+      "platform": "website_form",
+      "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
+      "id": "google-customer-moosejaw-website-contact",
+      "company": "Moosejaw",
+      "action": "verify_target",
+      "platform": "website_form",
+      "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
+      "id": "google-customer-the-mountaineer-website-contact",
+      "company": "The Mountaineer",
+      "action": "verify_target",
+      "platform": "website_form",
+      "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
+      "id": "google-customer-latulippe-website-contact",
+      "company": "Latulippe",
+      "action": "verify_target",
+      "platform": "website_form",
+      "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
+      "id": "google-customer-arizona-hiking-shack-website-contact",
+      "company": "Arizona Hiking Shack",
+      "action": "verify_target",
+      "platform": "website_form",
+      "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
+      "id": "google-customer-bentgate-mountaineering-website-contact",
+      "company": "Bentgate Mountaineering",
+      "action": "verify_target",
+      "platform": "website_form",
+      "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
+      "id": "google-customer-the-great-outdoor-shop-website-contact",
+      "company": "The Great Outdoor Shop",
+      "action": "verify_target",
+      "platform": "website_form",
+      "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
+      "id": "google-customer-above-and-beyond-facebook",
+      "company": "Above and Beyond",
       "action": "develop",
       "platform": "facebook",
       "reason": "social_profile_not_first_party_verified"
@@ -417,22 +480,15 @@
       "reason": "social_profile_not_first_party_verified"
     },
     {
-      "id": "google-customer-bergfreunde-instagram",
-      "company": "Bergfreunde",
+      "id": "google-customer-tentworld-nz-facebook",
+      "company": "Tentworld NZ",
       "action": "develop",
-      "platform": "instagram",
+      "platform": "facebook",
       "reason": "social_profile_not_first_party_verified"
     },
     {
       "id": "google-customer-above-and-beyond-instagram",
       "company": "Above and Beyond",
-      "action": "develop",
-      "platform": "instagram",
-      "reason": "social_profile_not_first_party_verified"
-    },
-    {
-      "id": "google-customer-campz-instagram",
-      "company": "Campz",
       "action": "develop",
       "platform": "instagram",
       "reason": "social_profile_not_first_party_verified"
@@ -456,62 +512,6 @@
       "company": "The Mountaineer",
       "action": "develop",
       "platform": "instagram",
-      "reason": "social_profile_not_first_party_verified"
-    },
-    {
-      "id": "sheet_1779293110195_9myxa520z",
-      "company": "ARROW TIRE DISTRIBUTORS",
-      "action": "email_priority",
-      "platform": "email",
-      "reason": "public_business_email_requires_verification"
-    },
-    {
-      "id": "sheet_1779293110195_u24j2gdmq",
-      "company": "FAUNA OUTDOOR",
-      "action": "email_priority",
-      "platform": "email",
-      "reason": "public_business_email_requires_verification"
-    },
-    {
-      "id": "sheet_1779293110195_g0uwgglwc",
-      "company": "JOHN DOYLE DISTRIBUTORS",
-      "action": "email_priority",
-      "platform": "email",
-      "reason": "public_business_email_requires_verification"
-    },
-    {
-      "id": "sheet_1779293110195_0f1r27koe",
-      "company": "TAHOE SPORTS HUB",
-      "action": "email_priority",
-      "platform": "email",
-      "reason": "public_business_email_requires_verification"
-    },
-    {
-      "id": "google-customer-de-wit-schijndel-website-contact",
-      "company": "De Wit Schijndel",
-      "action": "verify_target",
-      "platform": "website_form",
-      "reason": "homepage_only_contact_path_requires_verification"
-    },
-    {
-      "id": "google-customer-outdoorxl-website-contact",
-      "company": "OutdoorXL",
-      "action": "verify_target",
-      "platform": "website_form",
-      "reason": "homepage_only_contact_path_requires_verification"
-    },
-    {
-      "id": "google-customer-outdoor-specialist-website-contact",
-      "company": "Outdoor Specialist",
-      "action": "verify_target",
-      "platform": "website_form",
-      "reason": "homepage_only_contact_path_requires_verification"
-    },
-    {
-      "id": "google-customer-tentworld-nz-facebook",
-      "company": "Tentworld NZ",
-      "action": "develop",
-      "platform": "facebook",
       "reason": "social_profile_not_first_party_verified"
     },
     {
@@ -892,7 +892,7 @@
       "inCandidatePool": false,
       "sameDayCompanyBlocked": false,
       "blockingStatus": "same_day_retry_circuit_open",
-      "blockingEvidence": "same_day_retry_circuit_open;failed_attempts:2"
+      "blockingEvidence": "same_day_retry_circuit_open;failed_attempts:3"
     },
     {
       "id": "google-customer-left-point-distribution-website-contact",
@@ -1020,7 +1020,7 @@
       "inCandidatePool": false,
       "sameDayCompanyBlocked": false,
       "blockingStatus": "same_day_retry_circuit_open",
-      "blockingEvidence": "same_day_retry_circuit_open;failed_attempts:2"
+      "blockingEvidence": "same_day_retry_circuit_open;failed_attempts:3"
     },
     {
       "id": "google-customer-taunton-leisure-website-contact",
@@ -1052,7 +1052,7 @@
       "inCandidatePool": false,
       "sameDayCompanyBlocked": false,
       "blockingStatus": "same_day_retry_circuit_open",
-      "blockingEvidence": "same_day_retry_circuit_open;failed_attempts:2"
+      "blockingEvidence": "same_day_retry_circuit_open;failed_attempts:3"
     },
     {
       "id": "google-customer-next-adventure-website-contact",
@@ -1068,7 +1068,7 @@
       "inCandidatePool": false,
       "sameDayCompanyBlocked": false,
       "blockingStatus": "same_day_retry_circuit_open",
-      "blockingEvidence": "same_day_retry_circuit_open;failed_attempts:2"
+      "blockingEvidence": "same_day_retry_circuit_open;failed_attempts:3"
     },
     {
       "id": "google-customer-bbq-fans-website-contact",
@@ -1259,8 +1259,8 @@
       "hasTarget": true,
       "inCandidatePool": false,
       "sameDayCompanyBlocked": false,
-      "blockingStatus": "same_day_retry_circuit_open",
-      "blockingEvidence": "same_day_retry_circuit_open;failed_attempts:2"
+      "blockingStatus": "failed_open",
+      "blockingEvidence": "facebook_profile_no_message_button"
     }
   ],
   "summary": {
@@ -1301,5 +1301,5 @@
     "scanned": 0,
     "updated": 0
   },
-  "completedAt": "2026-08-05T13:14:29.671Z"
+  "completedAt": "2026-08-06T07:07:16.575Z"
 }
