@@ -1,6 +1,6 @@
 window.OUTREACH_INTELLIGENCE_LATEST = {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-06T10:06:02.726Z",
+  "generatedAt": "2026-08-06T13:06:51.965Z",
   "companies": [
     {
       "companyId": "company_819cc04fe9060117",
@@ -2939,7 +2939,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://www.nwogco.com/",
-          "checkedAt": "2026-08-05T13:05:29.963Z"
+          "checkedAt": "2026-08-06T13:05:59.250Z"
         },
         {
           "channel": "website_form",
@@ -6527,7 +6527,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
           "reasons": [
             "official_business_route"
           ],
-          "evidenceUrl": "https://support.aqipa.com/en-US/kb/articles/anfrage-partner-werden",
+          "evidenceUrl": "https://support.aqipa.com/en-US/new-ticket",
           "checkedAt": ""
         },
         {
@@ -6537,7 +6537,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
           "reasons": [
             "unverified_external_evidence_rejected"
           ],
-          "evidenceUrl": "https://support.aqipa.com/en-US/kb/articles/anfrage-partner-werden",
+          "evidenceUrl": "https://support.aqipa.com/en-US/new-ticket",
           "checkedAt": ""
         }
       ],
@@ -6580,7 +6580,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://www.cmsdistribution.com/contact-us",
-          "checkedAt": "2026-08-05T13:05:33.733Z"
+          "checkedAt": "2026-08-06T13:06:03.878Z"
         },
         {
           "channel": "website_form",
@@ -6691,7 +6691,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://help.cabelas.com/company-information-ff566349/how-can-i-sell-my-product-through-cabelas-cf904a21",
-          "checkedAt": "2026-08-05T13:05:37.784Z"
+          "checkedAt": "2026-08-06T13:06:25.652Z"
         },
         {
           "channel": "facebook",
@@ -6701,7 +6701,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://help.cabelas.com/company-information-ff566349/how-can-i-sell-my-product-through-cabelas-cf904a21",
-          "checkedAt": "2026-08-05T13:05:37.784Z"
+          "checkedAt": "2026-08-06T13:06:25.652Z"
         },
         {
           "channel": "website_form",
@@ -6710,7 +6710,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
           "reasons": [
             "official_business_route"
           ],
-          "evidenceUrl": "https://www.cabelas.com/",
+          "evidenceUrl": "https://help.cabelas.com/company-information-ff566349/how-can-i-sell-my-product-through-cabelas-cf904a21",
           "checkedAt": ""
         },
         {
@@ -7061,7 +7061,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://www.gooutdoors.co.uk/pages/contact",
-          "checkedAt": "2026-08-05T13:05:39.835Z"
+          "checkedAt": "2026-08-06T13:06:29.045Z"
         },
         {
           "channel": "facebook",
@@ -7071,7 +7071,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://www.gooutdoors.co.uk/pages/contact",
-          "checkedAt": "2026-08-05T13:05:39.835Z"
+          "checkedAt": "2026-08-06T13:06:29.045Z"
         },
         {
           "channel": "website_form",
@@ -7080,7 +7080,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
           "reasons": [
             "first_party_evidence"
           ],
-          "evidenceUrl": "https://www.gooutdoors.co.uk/",
+          "evidenceUrl": "https://www.gooutdoors.co.uk/pages/contact",
           "checkedAt": ""
         }
       ],
@@ -7480,7 +7480,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
           "reasons": [
             "official_business_route"
           ],
-          "evidenceUrl": "https://www.sail.ca/",
+          "evidenceUrl": "https://www.sail.ca/en/contact-us",
           "checkedAt": ""
         }
       ],
@@ -11703,12 +11703,12 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
         },
         {
           "channel": "website_form",
-          "score": 80,
+          "score": 0,
           "verified": false,
           "reasons": [
-            "first_party_evidence"
+            "unverified_external_evidence_rejected"
           ],
-          "evidenceUrl": "https://www.macpac.com.au/",
+          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
           "checkedAt": ""
         }
       ],
@@ -11811,23 +11811,13 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
       ],
       "evidence": [
         {
-          "channel": "website_form",
-          "score": 80,
-          "verified": false,
-          "reasons": [
-            "first_party_evidence"
-          ],
-          "evidenceUrl": "https://www.outdooraction.co.nz/",
-          "checkedAt": ""
-        },
-        {
           "channel": "instagram",
           "score": 0,
           "verified": false,
           "reasons": [
             "unverified_external_evidence_rejected"
           ],
-          "evidenceUrl": "https://www.outdooraction.co.nz/",
+          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
           "checkedAt": ""
         },
         {
@@ -11837,7 +11827,17 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
           "reasons": [
             "unverified_external_evidence_rejected"
           ],
-          "evidenceUrl": "https://www.outdooraction.co.nz/",
+          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
+          "checkedAt": ""
+        },
+        {
+          "channel": "website_form",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
           "checkedAt": ""
         }
       ],
@@ -12030,7 +12030,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://www.doorout.com/",
-          "checkedAt": "2026-08-05T12:40:36.657Z"
+          "checkedAt": "2026-08-06T10:05:42.313Z"
         },
         {
           "channel": "facebook",
@@ -12040,7 +12040,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://www.doorout.com/",
-          "checkedAt": "2026-08-05T12:40:36.657Z"
+          "checkedAt": "2026-08-06T10:05:42.313Z"
         },
         {
           "channel": "website_form",
@@ -12050,7 +12050,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://www.doorout.com/",
-          "checkedAt": "2026-08-05T12:40:36.657Z"
+          "checkedAt": "2026-08-06T10:05:42.313Z"
         }
       ],
       "history": [
@@ -12475,23 +12475,23 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
           "checkedAt": "2026-08-06T10:05:44.331Z"
         },
         {
-          "channel": "website_form",
-          "score": 80,
-          "verified": false,
-          "reasons": [
-            "first_party_evidence"
-          ],
-          "evidenceUrl": "https://www.tradeinn.com/trekkinn/en",
-          "checkedAt": ""
-        },
-        {
           "channel": "instagram",
           "score": 0,
           "verified": false,
           "reasons": [
             "unverified_external_evidence_rejected"
           ],
-          "evidenceUrl": "https://www.tradeinn.com/trekkinn/en",
+          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
+          "checkedAt": ""
+        },
+        {
+          "channel": "website_form",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
           "checkedAt": ""
         }
       ],
@@ -12607,7 +12607,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://8a.pl/",
-          "checkedAt": "2026-08-05T12:40:38.803Z"
+          "checkedAt": "2026-08-06T10:05:44.806Z"
         },
         {
           "channel": "facebook",
@@ -12617,7 +12617,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://8a.pl/",
-          "checkedAt": "2026-08-05T12:40:38.803Z"
+          "checkedAt": "2026-08-06T10:05:44.806Z"
         },
         {
           "channel": "website_form",
@@ -12627,7 +12627,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://8a.pl/",
-          "checkedAt": "2026-08-05T12:40:38.803Z"
+          "checkedAt": "2026-08-06T10:05:44.806Z"
         }
       ],
       "history": [
@@ -12979,12 +12979,12 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
       "evidence": [
         {
           "channel": "website_form",
-          "score": 100,
-          "verified": true,
+          "score": 0,
+          "verified": false,
           "reasons": [
-            "official_business_route"
+            "unverified_external_evidence_rejected"
           ],
-          "evidenceUrl": "https://durangooutdoorexchange.com/",
+          "evidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
           "checkedAt": ""
         }
       ],
@@ -13080,7 +13080,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://gecko-overland.com/contact/",
-          "checkedAt": "2026-08-05T13:05:29.613Z"
+          "checkedAt": "2026-08-06T13:05:57.902Z"
         },
         {
           "channel": "website_form",
@@ -13218,7 +13218,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://www.basecamp-outfitters.com/",
-          "checkedAt": "2026-08-05T13:05:30.218Z"
+          "checkedAt": "2026-08-06T13:06:00.791Z"
         },
         {
           "channel": "website_form",
@@ -15357,13 +15357,13 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
     ]
   },
   "ownerSummary": {
-    "generatedAt": "2026-08-06T10:06:02.726Z",
+    "generatedAt": "2026-08-06T13:06:51.965Z",
     "phase": "autonomous_sales_operating_system_v1",
     "kpis": {
       "companies": 193,
       "permanentlySuppressed": 117,
       "plannedActions": 7,
-      "verifiedEvidenceRoutes": 121
+      "verifiedEvidenceRoutes": 120
     },
     "decisions": [
       {
