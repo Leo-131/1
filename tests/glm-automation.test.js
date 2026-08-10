@@ -503,6 +503,10 @@ test('Google discovery preserves newly verified independent-retailer routing ema
     ['The Mountaineer', ['mountaineer@mountaineer.com', 'https://mountaineer.com/privacy-policy/']],
     ['La Cordee', ['info@lacordee.com', 'https://www.lacordee.com/en/pages/contact-us']],
     ['AvidMax Outfitters', ['customerservice@avidmax.com', 'https://www.avidmax.com/contact-us/']],
+    ['Neptune Mountaineering', ['info@neptunemountaineering.com', 'https://www.neptunemountaineering.com/pages/customer-support']],
+    ['Kittery Trading Post', ['info@ktp.com', 'https://www.kitterytradingpost.com/customer-service/cookie-policy/']],
+    ['Spejder Sport', ['kundeservice@spejdersport.dk', 'https://www.spejdersport.dk/handelsbetingelser/']],
+    ['Hardloop', ['hello@hardloop.fr', 'https://www.hardloop.fr/article/671-acupression-tout-savoir']],
   ]);
 
   for (const [company, [email, evidenceUrl]] of expected) {

@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-08-10T09:23:26.748Z",
-  "cursor": 52,
+  "updatedAt": "2026-08-10T09:31:06.241Z",
+  "cursor": 77,
   "companyCount": 142,
   "verifications": {
     "facewest": {
@@ -1606,7 +1606,7 @@
     "backcountry experience": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-06T19:05:30.472Z",
+        "verifiedAt": "2026-08-10T09:30:52.300Z",
         "evidenceUrl": "https://www.bcexp.com/",
         "httpStatus": 200,
         "signals": [
@@ -1624,24 +1624,26 @@
     "la cordee": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-06T19:05:28.042Z",
-        "evidenceUrl": "https://www.lacordee.com/",
+        "verifiedAt": "2026-08-10T09:30:51.631Z",
+        "evidenceUrl": "https://www.lacordee.com/en/pages/contact-us",
         "httpStatus": 200,
         "signals": [
-          "form_control"
+          "form_control",
+          "public_business_email",
+          "contact_invitation"
         ],
         "error": ""
       },
-      "contactCapabilityVerified": false,
-      "externalVerificationStatus": "",
-      "publicEmail": "",
-      "emailVerificationStatus": "",
+      "contactCapabilityVerified": true,
+      "externalVerificationStatus": "official_contact_form_verified",
+      "publicEmail": "info@lacordee.com",
+      "emailVerificationStatus": "official_public_business_email",
       "socialProfiles": []
     },
     "taunton leisure": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-06T19:05:28.286Z",
+        "verifiedAt": "2026-08-10T09:30:51.013Z",
         "evidenceUrl": "https://www.tauntonleisure.com/",
         "httpStatus": 200,
         "signals": [
@@ -1659,7 +1661,7 @@
     "outdoorxl": {
       "firstPartyChannelVerification": {
         "status": "unreachable",
-        "verifiedAt": "2026-08-06T19:05:27.379Z",
+        "verifiedAt": "2026-08-10T09:30:50.350Z",
         "evidenceUrl": "https://www.outdoorxl.nl/",
         "httpStatus": 403,
         "signals": [],
@@ -1673,23 +1675,26 @@
     },
     "spejder sport": {
       "firstPartyChannelVerification": {
-        "status": "unreachable",
-        "verifiedAt": "2026-08-06T19:05:30.920Z",
-        "evidenceUrl": "https://www.spejdersport.dk/",
-        "httpStatus": 403,
-        "signals": [],
+        "status": "checked",
+        "verifiedAt": "2026-08-10T09:30:53.587Z",
+        "evidenceUrl": "https://www.spejdersport.dk/handelsbetingelser/",
+        "httpStatus": 200,
+        "signals": [
+          "form_control",
+          "public_business_email"
+        ],
         "error": ""
       },
       "contactCapabilityVerified": false,
       "externalVerificationStatus": "",
-      "publicEmail": "",
-      "emailVerificationStatus": "",
+      "publicEmail": "kundeservice@spejdersport.dk",
+      "emailVerificationStatus": "official_public_business_email",
       "socialProfiles": []
     },
     "friluftsland": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-06T19:05:34.355Z",
+        "verifiedAt": "2026-08-10T09:30:54.835Z",
         "evidenceUrl": "https://www.friluftsland.dk/",
         "httpStatus": 200,
         "signals": [
@@ -1707,7 +1712,7 @@
     "left point distribution": {
       "firstPartyChannelVerification": {
         "status": "unreachable",
-        "verifiedAt": "2026-08-06T19:05:32.578Z",
+        "verifiedAt": "2026-08-10T09:30:53.279Z",
         "evidenceUrl": "https://www.leftpointdistribution.com/en-eu/aboutus.php",
         "httpStatus": 403,
         "signals": [],
@@ -1722,14 +1727,10 @@
     "snowys outdoors": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-06T19:05:31.818Z",
-        "evidenceUrl": "https://www.snowys.com.au/contact-us",
-        "httpStatus": 200,
-        "signals": [
-          "form_control",
-          "public_business_email",
-          "contact_invitation"
-        ],
+        "verifiedAt": "2026-08-10T09:30:52.806Z",
+        "evidenceUrl": "https://www.snowys.com.au/",
+        "httpStatus": 202,
+        "signals": [],
         "error": ""
       },
       "contactCapabilityVerified": true,
@@ -1744,7 +1745,7 @@
     "alpenglow sports": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-06T19:05:35.489Z",
+        "verifiedAt": "2026-08-10T09:30:55.475Z",
         "evidenceUrl": "https://alpenglowsports.com/",
         "httpStatus": 200,
         "signals": [
@@ -1765,7 +1766,7 @@
     "ute mountaineer": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-06T19:05:38.860Z",
+        "verifiedAt": "2026-08-10T09:30:58.551Z",
         "evidenceUrl": "https://www.utemountaineer.com/",
         "httpStatus": 200,
         "signals": [
@@ -1783,25 +1784,26 @@
     "neptune mountaineering": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-06T19:05:36.897Z",
-        "evidenceUrl": "https://www.neptunemountaineering.com/",
+        "verifiedAt": "2026-08-10T09:30:55.734Z",
+        "evidenceUrl": "https://www.neptunemountaineering.com/pages/customer-support",
         "httpStatus": 200,
         "signals": [
           "form_control",
+          "public_business_email",
           "contact_invitation"
         ],
         "error": ""
       },
       "contactCapabilityVerified": true,
       "externalVerificationStatus": "official_contact_form_verified",
-      "publicEmail": "",
-      "emailVerificationStatus": "",
+      "publicEmail": "info@neptunemountaineering.com",
+      "emailVerificationStatus": "official_public_business_email",
       "socialProfiles": []
     },
     "latulippe": {
       "firstPartyChannelVerification": {
         "status": "unreachable",
-        "verifiedAt": "2026-08-06T19:05:34.740Z",
+        "verifiedAt": "2026-08-10T09:30:55.105Z",
         "evidenceUrl": "https://latulippe.com/",
         "httpStatus": 403,
         "signals": [],
@@ -1816,7 +1818,7 @@
     "wildfire sports": {
       "firstPartyChannelVerification": {
         "status": "unreachable",
-        "verifiedAt": "2026-08-06T19:05:39.231Z",
+        "verifiedAt": "2026-08-10T09:30:59.099Z",
         "evidenceUrl": "https://www.wildfiresports.com.au/contact-us",
         "httpStatus": 403,
         "signals": [],
@@ -1831,7 +1833,7 @@
     "sportpursuit": {
       "firstPartyChannelVerification": {
         "status": "unreachable",
-        "verifiedAt": "2026-08-06T19:05:39.288Z",
+        "verifiedAt": "2026-08-10T09:30:58.805Z",
         "evidenceUrl": "https://www.sportpursuit.com/",
         "httpStatus": 403,
         "signals": [],
@@ -1845,14 +1847,11 @@
     },
     "kampeerwereld hendriks": {
       "firstPartyChannelVerification": {
-        "status": "checked",
-        "verifiedAt": "2026-08-06T19:05:40.572Z",
+        "status": "unreachable",
+        "verifiedAt": "2026-08-10T09:30:59.768Z",
         "evidenceUrl": "https://www.kampeerwereld.nl/",
-        "httpStatus": 200,
-        "signals": [
-          "form_control",
-          "public_business_email"
-        ],
+        "httpStatus": 403,
+        "signals": [],
         "error": ""
       },
       "contactCapabilityVerified": false,
@@ -1864,22 +1863,24 @@
     "hardloop": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-06T19:05:41.457Z",
-        "evidenceUrl": "https://www.hardloop.fr/",
+        "verifiedAt": "2026-08-10T09:31:00.369Z",
+        "evidenceUrl": "https://www.hardloop.fr/article/671-acupression-tout-savoir",
         "httpStatus": 200,
-        "signals": [],
+        "signals": [
+          "public_business_email"
+        ],
         "error": ""
       },
       "contactCapabilityVerified": false,
       "externalVerificationStatus": "",
-      "publicEmail": "",
-      "emailVerificationStatus": "",
+      "publicEmail": "hello@hardloop.fr",
+      "emailVerificationStatus": "official_public_business_email",
       "socialProfiles": []
     },
     "varuste": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-06T19:05:42.618Z",
+        "verifiedAt": "2026-08-10T09:31:01.463Z",
         "evidenceUrl": "https://varuste.net/",
         "httpStatus": 200,
         "signals": [
@@ -1897,7 +1898,7 @@
     "camp studio thailand": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-10T04:05:18.550Z",
+        "verifiedAt": "2026-08-10T09:31:03.858Z",
         "evidenceUrl": "https://www.campstudio.co.th/contact",
         "httpStatus": 200,
         "signals": [
@@ -1918,7 +1919,7 @@
     "bever": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-10T04:05:16.892Z",
+        "verifiedAt": "2026-08-10T09:31:01.567Z",
         "evidenceUrl": "https://www.bever.nl/klantenservice/contactgegevens.html",
         "httpStatus": 200,
         "signals": [
@@ -1938,7 +1939,7 @@
     "mountain warehouse": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-10T04:05:17.227Z",
+        "verifiedAt": "2026-08-10T09:31:03.234Z",
         "evidenceUrl": "https://www.mountainwarehouse.com/help/contact-us/",
         "httpStatus": 200,
         "signals": [
@@ -1959,7 +1960,7 @@
     "technical outdoor indonesia": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-10T04:05:16.190Z",
+        "verifiedAt": "2026-08-10T09:31:05.535Z",
         "evidenceUrl": "https://www.technicaloutdoor.com/welcome/",
         "httpStatus": 200,
         "signals": [
@@ -1982,24 +1983,25 @@
     "bentgate mountaineering": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-10T04:05:20.881Z",
-        "evidenceUrl": "https://www.bentgate.com/",
+        "verifiedAt": "2026-08-10T09:31:04.839Z",
+        "evidenceUrl": "https://www.bentgate.com/service/",
         "httpStatus": 200,
         "signals": [
-          "form_control"
+          "form_control",
+          "contact_invitation"
         ],
         "error": ""
       },
-      "contactCapabilityVerified": false,
-      "externalVerificationStatus": "",
-      "publicEmail": "",
-      "emailVerificationStatus": "",
+      "contactCapabilityVerified": true,
+      "externalVerificationStatus": "official_contact_form_verified",
+      "publicEmail": "bentgate@bentgate.com",
+      "emailVerificationStatus": "official_public_business_email",
       "socialProfiles": []
     },
     "the great outdoor shop": {
       "firstPartyChannelVerification": {
         "status": "unreachable",
-        "verifiedAt": "2026-08-10T04:05:19.220Z",
+        "verifiedAt": "2026-08-10T09:31:04.116Z",
         "evidenceUrl": "https://thegreatoutdoorshop.com/",
         "httpStatus": 0,
         "signals": [],
@@ -2014,7 +2016,7 @@
     "arizona hiking shack": {
       "firstPartyChannelVerification": {
         "status": "unreachable",
-        "verifiedAt": "2026-08-10T04:05:19.394Z",
+        "verifiedAt": "2026-08-10T09:31:04.055Z",
         "evidenceUrl": "https://www.hikingshack.com/",
         "httpStatus": 403,
         "signals": [],
@@ -2029,7 +2031,7 @@
     "further faster": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-10T04:05:19.579Z",
+        "verifiedAt": "2026-08-10T09:31:06.240Z",
         "evidenceUrl": "https://www.furtherfaster.co.nz/",
         "httpStatus": 200,
         "signals": [

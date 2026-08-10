@@ -588,6 +588,10 @@ const DIRECTORY_PUBLIC_CONTACT_ENRICHMENT = {
   'Valhalla Pure Outfitters': ['vancouver@vpo.ca', 'Official VPO Vancouver store address published beside the named store owner; request routing to the central category buyer.', 'https://vpo.ca/stores/vpo-vancouver'],
   'La Cordee': ['info@lacordee.com', 'Official company-domain address published by La Cordee on its contact page; route the supplier proposal to the category buyer.', 'https://www.lacordee.com/en/pages/contact-us'],
   'AvidMax Outfitters': ['customerservice@avidmax.com', 'Official company-domain address published on the AvidMax headquarters contact page; route the supplier proposal to the category buyer.', 'https://www.avidmax.com/contact-us/'],
+  'Neptune Mountaineering': ['info@neptunemountaineering.com', 'Official company-domain address published on the Neptune customer-support page; route the supplier proposal to the category buyer.', 'https://www.neptunemountaineering.com/pages/customer-support'],
+  'Kittery Trading Post': ['info@ktp.com', 'Official company-domain address published in the Kittery Trading Post contact section; route the supplier proposal to the category buyer.', 'https://www.kitterytradingpost.com/customer-service/cookie-policy/'],
+  'Spejder Sport': ['kundeservice@spejdersport.dk', 'Official company-domain address published with Spejder Sport company ownership and headquarters details; route to the category buyer.', 'https://www.spejdersport.dk/handelsbetingelser/'],
+  'Hardloop': ['hello@hardloop.fr', 'Official company-domain contact address published by Hardloop; route the supplier proposal to the category buyer.', 'https://www.hardloop.fr/article/671-acupression-tout-savoir'],
 };
 for (const candidate of DIRECTORY_REFILL_CANDIDATES) {
   const enrichment = DIRECTORY_PUBLIC_CONTACT_ENRICHMENT[candidate.company];
@@ -1047,7 +1051,9 @@ function hasVerifiedContactPath(item) {
     const websiteUrl = new URL(website);
     const contactPath = contactUrl.pathname.replace(/\/+$/, '') || '/';
     const websitePath = websiteUrl.pathname.replace(/\/+$/, '') || '/';
-    return contactUrl.hostname === websiteUrl.hostname
+    const normalizedContactHost = contactUrl.hostname.toLowerCase().replace(/^www\./, '');
+    const normalizedWebsiteHost = websiteUrl.hostname.toLowerCase().replace(/^www\./, '');
+    return normalizedContactHost === normalizedWebsiteHost
       && contactPath !== '/'
       && contactPath !== websitePath;
   } catch {
