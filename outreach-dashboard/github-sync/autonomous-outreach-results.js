@@ -14295,5 +14295,23 @@ window.AUTONOMOUS_OUTREACH_RESULTS = [
     "messageId": "",
     "sentFolder": "",
     "sentUid": null
+  },
+  {
+    "task_id": "google-customer-tiso-website-contact",
+    "company": "Tiso",
+    "approval_version": 1,
+    "status": "sent_confirmed",
+    "agent": "codex-chrome-extension",
+    "browserTransportUsed": "extension-isolated-cdp-9224",
+    "timestamp": "2026-08-10T09:20:00.000Z",
+    "target_url": "https://www.tiso.com/pages/contact",
+    "evidenceUrl": "https://www.tiso.com/pages/contact",
+    "verificationStatus": "first_party_general_business_email_verified_live_2026-08-10",
+    "evidence": "official_contact_page_explicitly_routes_organisations_seeking_to_work_with_Tiso_to_mail_at_tiso_co_uk;sender_Leo_at_flextailgear_verified;recipient_subject_body_gate_passed;send_clicked_once;alibaba_sent_confirmation_visible;composer_closed",
+    "subject": "FLEXTAIL retail partnership | 2026 outdoor assortment",
+    "recipientEmail": "mail@tiso.co.uk",
+    "messageId": "",
+    "sentFolder": "alibaba_sent_toast_confirmed",
+    "sentUid": null
   }
 ];

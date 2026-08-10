@@ -693,6 +693,11 @@ const PUBLIC_CONTACT_ENRICHMENT = {
   Outdoorplay: ['customerservice@outdoorplay.com', 'Official Outdoorplay contact page; route to buyer/vendor team.'],
   'Sport Conrad': ['info@sport-conrad.de', 'Public Sport Conrad contact address; route to buyer/vendor team.'],
   'Rock/Creek': ['companyrockcreek@gmail.com', 'Public Rock Creek contact address; route to buyer/vendor team.'],
+  Tiso: [
+    'mail@tiso.co.uk',
+    'Official Tiso general-business address explicitly published for organisations seeking to work with Tiso or discuss opportunities.',
+    'https://www.tiso.com/pages/contact',
+  ],
 };
 for (const candidate of SOCIAL_REFILL_CANDIDATES) {
   const enrichment = PUBLIC_CONTACT_ENRICHMENT[candidate.company];
@@ -700,6 +705,12 @@ for (const candidate of SOCIAL_REFILL_CANDIDATES) {
     candidate.publicEmail = enrichment[0];
     candidate.contactEmail = enrichment[0];
     candidate.publicEmailStatus = enrichment[1];
+    if (enrichment[2]) {
+      candidate.emailVerificationStatus = 'official_public_business_email';
+      candidate.emailEvidence = 'official_contact_page';
+      candidate.emailEvidenceUrl = enrichment[2];
+      candidate.contactUrl = enrichment[2];
+    }
   }
 }
 
@@ -1145,6 +1156,9 @@ function baseLead(item, id, evidenceUrl) {
     contactPhone: enrichment.contactPhone || item.contactPhone || '',
     contactNote: enrichment.contactNote || item.contactNote || '',
     publicEmailStatus: enrichment.publicEmailStatus || item.publicEmailStatus || '',
+    emailVerificationStatus: enrichment.emailVerificationStatus || item.emailVerificationStatus || '',
+    emailEvidence: enrichment.emailEvidence || item.emailEvidence || '',
+    emailEvidenceUrl: enrichment.emailEvidenceUrl || item.emailEvidenceUrl || '',
     website: item.url,
     evidenceUrl,
     sourceEvidenceUrl: item.evidenceUrl || item.url,

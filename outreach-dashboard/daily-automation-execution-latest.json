@@ -13,17 +13,17 @@
   "customerMessageSent": false,
   "realDevelopmentCount": 0,
   "reportingVerdict": "no_customer_development_performed",
-  "userVisibleStatus": "Customer development was not performed. Blockers: homepage_only_contact_path_requires_verification (25); website_contact_capability_not_verified (25); official_website_contact_channel (17).",
-  "recoveryHint": "Refill the high-ICP pool with 33 verified leads or unblock existing website/social leads before the next run. Verify the recipient as an official public business email before enabling email outreach. Confirm the official social profile and safe message entry before rerunning Google-discovered social outreach.",
+  "userVisibleStatus": "Customer development was not performed. Blockers: homepage_only_contact_path_requires_verification (25); website_contact_capability_not_verified (25); official_website_contact_channel (16).",
+  "recoveryHint": "Refill the high-ICP pool with 34 verified leads or unblock existing website/social leads before the next run. Verify the recipient as an official public business email before enabling email outreach. Confirm the official social profile and safe message entry before rerunning Google-discovered social outreach.",
   "recoveryActions": [
     {
       "reason": "daily_queue_goal_not_reached",
       "action": "Refill high-ICP customer pool",
-      "description": "Add or unblock 33 verified high-ICP leads to reach the daily 100 target.",
-      "hint": "Refill the high-ICP pool with 33 verified leads or unblock existing website/social leads before the next run.",
+      "description": "Add or unblock 34 verified high-ICP leads to reach the daily 100 target.",
+      "hint": "Refill the high-ICP pool with 34 verified leads or unblock existing website/social leads before the next run.",
       "target": 100,
-      "potentialPool": 67,
-      "refillNeeded": 33
+      "potentialPool": 66,
+      "refillNeeded": 34
     },
     {
       "reason": "email_target_verification_required",
@@ -128,13 +128,6 @@
       "action": "verify_target",
       "platform": "website_form",
       "reason": "homepage_only_contact_path_requires_verification"
-    },
-    {
-      "id": "google-customer-tiso-website-contact",
-      "company": "Tiso",
-      "action": "develop",
-      "platform": "website_form",
-      "reason": "official_website_contact_channel"
     },
     {
       "id": "google-customer-taunton-leisure-website-contact",
@@ -802,7 +795,7 @@
     {
       "reason": "official_website_contact_channel",
       "status": "skipped",
-      "count": 17
+      "count": 16
     },
     {
       "reason": "verified_executable_channel_missing",
@@ -833,7 +826,7 @@
   "blockerCounts": {
     "homepage_only_contact_path_requires_verification": 25,
     "website_contact_capability_not_verified": 25,
-    "official_website_contact_channel": 17,
+    "official_website_contact_channel": 16,
     "verified_executable_channel_missing": 16,
     "social_profile_not_first_party_verified": 15,
     "public_business_email_requires_verification": 4,
@@ -842,10 +835,10 @@
   },
   "queueGoalStatus": {
     "target": 100,
-    "potentialPool": 67,
-    "queueCount": 81,
-    "googleDiscovered": 61,
-    "refillNeeded": 33,
+    "potentialPool": 66,
+    "queueCount": 80,
+    "googleDiscovered": 60,
+    "refillNeeded": 34,
     "reached": false,
     "action": "Add more verified high-ICP sources or unblock existing website/social leads."
   },
@@ -952,22 +945,6 @@
       "sameDayCompanyBlocked": false,
       "blockingStatus": "website_failure_circuit_open",
       "blockingEvidence": "website_failure_circuit_open;failed_days:3;window_days:30"
-    },
-    {
-      "id": "google-customer-tiso-website-contact",
-      "company": "Tiso",
-      "action": "develop",
-      "platform": "website_form",
-      "readiness": {
-        "ready": true,
-        "gate": "official_supplier_route",
-        "evidenceUrl": "https://www.tiso.com/"
-      },
-      "hasTarget": true,
-      "inCandidatePool": false,
-      "sameDayCompanyBlocked": false,
-      "blockingStatus": "same_day_retry_circuit_open",
-      "blockingEvidence": "same_day_retry_circuit_open;failed_attempts:2"
     },
     {
       "id": "google-customer-taunton-leisure-website-contact",
@@ -1197,25 +1174,25 @@
   "summary": {
     "totalLeads": 16,
     "highIcp": 16,
-    "readyToDevelop": 24,
-    "dueNow": 81,
-    "visibleTodayQueue": 34,
-    "potentialPool": 67,
+    "readyToDevelop": 23,
+    "dueNow": 80,
+    "visibleTodayQueue": 33,
+    "potentialPool": 66,
     "potentialPoolTarget": 100,
     "customerTableHighIcp": 20,
-    "refillNeeded": 33,
-    "executableCompanies": 21,
+    "refillNeeded": 34,
+    "executableCompanies": 20,
     "executableReserveTarget": 130,
-    "executableReserveNeeded": 109,
+    "executableReserveNeeded": 110,
     "executableByChannel": {
       "facebook": 1,
-      "website_form": 20
+      "website_form": 19
     },
     "verifiedSocialCompanies": 1,
     "verifiedSocialReserveTarget": 20,
     "verifiedSocialReserveNeeded": 19,
     "enrichmentBacklogCount": 46,
-    "googleDiscovered": 61,
+    "googleDiscovered": 60,
     "facebookDiscovered": 9,
     "websiteContactDiscovered": 0,
     "scheduledLater": 0,
@@ -1232,5 +1209,5 @@
     "scanned": 0,
     "updated": 0
   },
-  "completedAt": "2026-08-10T09:06:57.912Z"
+  "completedAt": "2026-08-10T09:15:45.116Z"
 }

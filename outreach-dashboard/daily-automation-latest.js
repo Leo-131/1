@@ -1,5 +1,5 @@
 window.DAILY_AUTOMATION_LATEST = {
-  "generatedAt": "2026-08-10T09:06:01.747Z",
+  "generatedAt": "2026-08-10T09:15:09.030Z",
   "date": "2026-08-10",
   "mode": "daily-icp-first-automation-loop",
   "executionLayer": "Dedicated Chrome automation profile only; primary Chrome attachment forbidden",
@@ -50,25 +50,25 @@ window.DAILY_AUTOMATION_LATEST = {
   "summary": {
     "totalLeads": 16,
     "highIcp": 16,
-    "readyToDevelop": 24,
-    "dueNow": 81,
-    "visibleTodayQueue": 34,
-    "potentialPool": 67,
+    "readyToDevelop": 23,
+    "dueNow": 80,
+    "visibleTodayQueue": 33,
+    "potentialPool": 66,
     "potentialPoolTarget": 100,
     "customerTableHighIcp": 20,
-    "refillNeeded": 33,
-    "executableCompanies": 21,
+    "refillNeeded": 34,
+    "executableCompanies": 20,
     "executableReserveTarget": 130,
-    "executableReserveNeeded": 109,
+    "executableReserveNeeded": 110,
     "executableByChannel": {
       "facebook": 1,
-      "website_form": 20
+      "website_form": 19
     },
     "verifiedSocialCompanies": 1,
     "verifiedSocialReserveTarget": 20,
     "verifiedSocialReserveNeeded": 19,
     "enrichmentBacklogCount": 46,
-    "googleDiscovered": 61,
+    "googleDiscovered": 60,
     "facebookDiscovered": 9,
     "websiteContactDiscovered": 0,
     "scheduledLater": 0,
@@ -87,7 +87,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "agency": 8,
       "key_account": 120
     },
-    "qualifiedQueueCount": 69
+    "qualifiedQueueCount": 66
   },
   "visibleTodayQueue": [
     {
@@ -122,6 +122,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "contactPhone": "",
       "contactNote": "",
       "publicEmailStatus": "",
+      "emailVerificationStatus": "",
+      "emailEvidence": "",
+      "emailEvidenceUrl": "",
       "website": "https://www.esprinet.com/en/",
       "evidenceUrl": "https://www.google.com/search?q=%22Esprinet%20Group%22%20%22Southern%20Europe%20technology%20and%20consumer%20electronics%20distributor%22%20%22Italy%22%20buyer%20OR%20wholesale%20OR%20contact",
       "sourceEvidenceUrl": "https://www.esprinet.com/en/become-a-supplier/",
@@ -144,7 +147,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/Rome",
-        "localTime": "Mon 11:06",
+        "localTime": "Mon 11:15",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -218,6 +221,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "contactPhone": "",
       "contactNote": "",
       "publicEmailStatus": "",
+      "emailVerificationStatus": "",
+      "emailEvidence": "",
+      "emailEvidenceUrl": "",
       "website": "https://www.obelink.nl/",
       "evidenceUrl": "https://www.google.com/search?q=%22Obelink%22%20%22European%20camping%20and%20outdoor%20marketplace%20retailer%22%20%22Netherlands%22%20buyer%20OR%20wholesale%20OR%20contact",
       "sourceEvidenceUrl": "https://www.obelink.nl/obelink-partnerprogramma",
@@ -240,7 +246,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Asia/Shanghai",
-        "localTime": "Mon 17:06",
+        "localTime": "Mon 17:15",
         "window": "outside_work_hours",
         "nextBest": "Asia/Shanghai morning",
         "weight": 0
@@ -269,7 +275,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "discoveredAt": "2026-07-14T04:02:10.362Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-06T13:06:27.181Z",
+        "verifiedAt": "2026-08-10T09:14:57.306Z",
         "evidenceUrl": "https://www.obelink.nl/obelink-partnerprogramma/",
         "httpStatus": 200,
         "signals": [
@@ -320,6 +326,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "contactPhone": "",
       "contactNote": "",
       "publicEmailStatus": "",
+      "emailVerificationStatus": "",
+      "emailEvidence": "",
+      "emailEvidenceUrl": "",
       "website": "https://www.auvieuxcampeur.fr/",
       "evidenceUrl": "https://www.google.com/search?q=%22Au%20Vieux%20Campeur%22%20%22verified%20outdoor%2C%20camping%2C%20travel%20and%20consumer%20electronics%20retail%20channel%22%20%22France%22%20buyer%20OR%20wholesale%20OR%20contact",
       "sourceEvidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
@@ -342,7 +351,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/Paris",
-        "localTime": "Mon 11:06",
+        "localTime": "Mon 11:15",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -371,7 +380,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "discoveredAt": "2026-07-14T04:02:10.362Z",
       "firstPartyChannelVerification": {
         "status": "unreachable",
-        "verifiedAt": "2026-08-06T16:05:18.544Z",
+        "verifiedAt": "2026-08-10T09:15:04.074Z",
         "evidenceUrl": "https://www.auvieuxcampeur.fr/",
         "httpStatus": 403,
         "signals": [],
@@ -420,6 +429,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "contactPhone": "",
       "contactNote": "",
       "publicEmailStatus": "",
+      "emailVerificationStatus": "",
+      "emailEvidence": "",
+      "emailEvidenceUrl": "",
       "website": "https://www.bergfreunde.eu/",
       "evidenceUrl": "https://www.google.com/search?q=%22Bergfreunde%22%20%22verified%20outdoor%2C%20camping%2C%20travel%20and%20consumer%20electronics%20retail%20channel%22%20%22Germany%22%20buyer%20OR%20wholesale%20OR%20contact",
       "sourceEvidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
@@ -442,7 +454,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/Berlin",
-        "localTime": "Mon 11:06",
+        "localTime": "Mon 11:15",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -463,7 +475,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "discoveredAt": "2026-07-14T04:02:10.362Z",
       "firstPartyChannelVerification": {
         "status": "unreachable",
-        "verifiedAt": "2026-08-06T13:06:33.135Z",
+        "verifiedAt": "2026-08-10T09:15:02.983Z",
         "evidenceUrl": "https://www.bergfreunde.eu/",
         "httpStatus": 403,
         "signals": [],
@@ -512,6 +524,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "contactPhone": "",
       "contactNote": "",
       "publicEmailStatus": "Official public company-domain contact published in the Fjellsport privacy and contact information; route the supplier proposal to the category buyer or vendor-review owner.",
+      "emailVerificationStatus": "official_public_business_email",
+      "emailEvidence": "first_party_live_page_cache",
+      "emailEvidenceUrl": "https://www.fjellsport.no/faq/personvern",
       "website": "https://www.fjellsport.no/",
       "evidenceUrl": "https://www.google.com/search?q=%22Fjellsport%22%20%22verified%20outdoor%2C%20camping%2C%20travel%20and%20consumer%20electronics%20retail%20channel%22%20%22Norway%22%20buyer%20OR%20wholesale%20OR%20contact",
       "sourceEvidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
@@ -534,7 +549,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/Oslo",
-        "localTime": "Mon 11:06",
+        "localTime": "Mon 11:15",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -571,8 +586,6 @@ window.DAILY_AUTOMATION_LATEST = {
         ],
         "error": ""
       },
-      "emailVerificationStatus": "official_public_business_email",
-      "emailEvidence": "first_party_live_page_cache",
       "taskId": "google-customer-fjellsport-website-contact",
       "targetRegion": "europe",
       "targetRegionScore": 45,
@@ -616,6 +629,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "contactPhone": "",
       "contactNote": "",
       "publicEmailStatus": "",
+      "emailVerificationStatus": "",
+      "emailEvidence": "",
+      "emailEvidenceUrl": "",
       "website": "https://www.trekitt.co.uk/",
       "evidenceUrl": "https://www.google.com/search?q=%22Trekitt%22%20%22verified%20outdoor%2C%20camping%2C%20travel%20and%20consumer%20electronics%20retail%20channel%22%20%22United%20Kingdom%22%20buyer%20OR%20wholesale%20OR%20contact",
       "sourceEvidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
@@ -638,7 +654,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/London",
-        "localTime": "Mon 10:06",
+        "localTime": "Mon 10:15",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -720,6 +736,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "contactPhone": "",
       "contactNote": "",
       "publicEmailStatus": "",
+      "emailVerificationStatus": "",
+      "emailEvidence": "",
+      "emailEvidenceUrl": "",
       "website": "https://www.alpinetrek.co.uk/",
       "evidenceUrl": "https://www.google.com/search?q=%22Alpinetrek%22%20%22verified%20outdoor%2C%20camping%2C%20travel%20and%20consumer%20electronics%20retail%20channel%22%20%22United%20Kingdom%22%20buyer%20OR%20wholesale%20OR%20contact",
       "sourceEvidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
@@ -742,7 +761,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/London",
-        "localTime": "Mon 10:06",
+        "localTime": "Mon 10:15",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -820,6 +839,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "contactPhone": "",
       "contactNote": "",
       "publicEmailStatus": "",
+      "emailVerificationStatus": "",
+      "emailEvidence": "",
+      "emailEvidenceUrl": "",
       "website": "https://www.barrabes.com/",
       "evidenceUrl": "https://www.google.com/search?q=%22Barrabes%22%20%22verified%20outdoor%2C%20camping%2C%20travel%20and%20consumer%20electronics%20retail%20channel%22%20%22Spain%22%20buyer%20OR%20wholesale%20OR%20contact",
       "sourceEvidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
@@ -842,7 +864,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/Madrid",
-        "localTime": "Mon 11:06",
+        "localTime": "Mon 11:15",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -922,6 +944,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "contactPhone": "",
       "contactNote": "",
       "publicEmailStatus": "",
+      "emailVerificationStatus": "",
+      "emailEvidence": "",
+      "emailEvidenceUrl": "",
       "website": "https://www.ekosport.fr/",
       "evidenceUrl": "https://www.google.com/search?q=%22Ekosport%22%20%22verified%20outdoor%2C%20camping%2C%20travel%20and%20consumer%20electronics%20retail%20channel%22%20%22France%22%20buyer%20OR%20wholesale%20OR%20contact",
       "sourceEvidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
@@ -944,7 +969,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/Paris",
-        "localTime": "Mon 11:06",
+        "localTime": "Mon 11:15",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -1022,6 +1047,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "contactPhone": "",
       "contactNote": "",
       "publicEmailStatus": "",
+      "emailVerificationStatus": "",
+      "emailEvidence": "",
+      "emailEvidenceUrl": "",
       "website": "https://www.snowleader.com/",
       "evidenceUrl": "https://www.google.com/search?q=%22Snowleader%22%20%22verified%20outdoor%2C%20camping%2C%20travel%20and%20consumer%20electronics%20retail%20channel%22%20%22France%22%20buyer%20OR%20wholesale%20OR%20contact",
       "sourceEvidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
@@ -1044,7 +1072,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/Paris",
-        "localTime": "Mon 11:06",
+        "localTime": "Mon 11:15",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -1122,6 +1150,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "contactPhone": "",
       "contactNote": "",
       "publicEmailStatus": "",
+      "emailVerificationStatus": "",
+      "emailEvidence": "",
+      "emailEvidenceUrl": "",
       "website": "https://www.de-wit.nl/",
       "evidenceUrl": "https://www.google.com/search?q=%22De%20Wit%20Schijndel%22%20%22verified%20outdoor%2C%20camping%2C%20travel%20and%20consumer%20electronics%20retail%20channel%22%20%22Netherlands%22%20buyer%20OR%20wholesale%20OR%20contact",
       "sourceEvidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
@@ -1144,7 +1175,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Asia/Shanghai",
-        "localTime": "Mon 17:06",
+        "localTime": "Mon 17:15",
         "window": "outside_work_hours",
         "nextBest": "Asia/Shanghai morning",
         "weight": 0
@@ -1224,6 +1255,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "contactPhone": "",
       "contactNote": "",
       "publicEmailStatus": "",
+      "emailVerificationStatus": "",
+      "emailEvidence": "",
+      "emailEvidenceUrl": "",
       "website": "https://www.spejdersport.dk/",
       "evidenceUrl": "https://www.google.com/search?q=%22Spejder%20Sport%22%20%22verified%20outdoor%2C%20camping%2C%20travel%20and%20consumer%20electronics%20retail%20channel%22%20%22Denmark%22%20buyer%20OR%20wholesale%20OR%20contact",
       "sourceEvidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
@@ -1246,7 +1280,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/Copenhagen",
-        "localTime": "Mon 11:06",
+        "localTime": "Mon 11:15",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -1324,6 +1358,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "contactPhone": "",
       "contactNote": "",
       "publicEmailStatus": "",
+      "emailVerificationStatus": "",
+      "emailEvidence": "",
+      "emailEvidenceUrl": "",
       "website": "https://www.tauntonleisure.com/",
       "evidenceUrl": "https://www.google.com/search?q=%22Taunton%20Leisure%22%20%22verified%20outdoor%2C%20camping%2C%20travel%20and%20consumer%20electronics%20retail%20channel%22%20%22United%20Kingdom%22%20buyer%20OR%20wholesale%20OR%20contact",
       "sourceEvidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
@@ -1346,7 +1383,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/London",
-        "localTime": "Mon 10:06",
+        "localTime": "Mon 10:15",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -1428,6 +1465,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "contactPhone": "",
       "contactNote": "",
       "publicEmailStatus": "",
+      "emailVerificationStatus": "",
+      "emailEvidence": "",
+      "emailEvidenceUrl": "",
       "website": "https://www.leftpointdistribution.com/",
       "evidenceUrl": "https://www.google.com/search?q=%22Left%20Point%20Distribution%22%20%22European%20surf%2C%20outdoor%20and%20adventure%20sports%20distributor%22%20%22Netherlands%22%20buyer%20OR%20wholesale%20OR%20contact",
       "sourceEvidenceUrl": "https://www.leftpointdistribution.com/en-eu/aboutus.php",
@@ -1450,7 +1490,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Asia/Shanghai",
-        "localTime": "Mon 17:06",
+        "localTime": "Mon 17:15",
         "window": "outside_work_hours",
         "nextBest": "Asia/Shanghai morning",
         "weight": 0
@@ -1528,6 +1568,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "contactPhone": "",
       "contactNote": "",
       "publicEmailStatus": "",
+      "emailVerificationStatus": "",
+      "emailEvidence": "",
+      "emailEvidenceUrl": "",
       "website": "https://www.outdoorxl.nl/",
       "evidenceUrl": "https://www.google.com/search?q=%22OutdoorXL%22%20%22verified%20outdoor%2C%20camping%2C%20travel%20and%20consumer%20electronics%20retail%20channel%22%20%22Netherlands%22%20buyer%20OR%20wholesale%20OR%20contact",
       "sourceEvidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
@@ -1550,7 +1593,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Asia/Shanghai",
-        "localTime": "Mon 17:06",
+        "localTime": "Mon 17:15",
         "window": "outside_work_hours",
         "nextBest": "Asia/Shanghai morning",
         "weight": 0
@@ -1628,6 +1671,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "contactPhone": "",
       "contactNote": "",
       "publicEmailStatus": "",
+      "emailVerificationStatus": "",
+      "emailEvidence": "",
+      "emailEvidenceUrl": "",
       "website": "https://www.hardloop.fr/",
       "evidenceUrl": "https://www.google.com/search?q=%22Hardloop%22%20%22verified%20outdoor%2C%20camping%2C%20travel%20and%20consumer%20electronics%20retail%20channel%22%20%22France%22%20buyer%20OR%20wholesale%20OR%20contact",
       "sourceEvidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
@@ -1650,7 +1696,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/Paris",
-        "localTime": "Mon 11:06",
+        "localTime": "Mon 11:15",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -1728,6 +1774,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "contactPhone": "",
       "contactNote": "",
       "publicEmailStatus": "",
+      "emailVerificationStatus": "",
+      "emailEvidence": "",
+      "emailEvidenceUrl": "",
       "website": "https://www.sportpursuit.com/",
       "evidenceUrl": "https://www.google.com/search?q=%22SportPursuit%22%20%22verified%20outdoor%2C%20camping%2C%20travel%20and%20consumer%20electronics%20retail%20channel%22%20%22United%20Kingdom%22%20buyer%20OR%20wholesale%20OR%20contact",
       "sourceEvidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
@@ -1750,7 +1799,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/London",
-        "localTime": "Mon 10:06",
+        "localTime": "Mon 10:15",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -1828,6 +1877,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "contactPhone": "",
       "contactNote": "",
       "publicEmailStatus": "Official public company-domain email published by Varuste; route the supplier proposal to the category buyer or vendor-review owner.",
+      "emailVerificationStatus": "official_public_business_email",
+      "emailEvidence": "first_party_live_page_cache",
+      "emailEvidenceUrl": "https://varuste.net/",
       "website": "https://varuste.net/",
       "evidenceUrl": "https://www.google.com/search?q=%22Varuste%22%20%22verified%20outdoor%2C%20camping%2C%20travel%20and%20consumer%20electronics%20retail%20channel%22%20%22Finland%22%20buyer%20OR%20wholesale%20OR%20contact",
       "sourceEvidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
@@ -1850,7 +1902,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/Helsinki",
-        "localTime": "Mon 12:06",
+        "localTime": "Mon 12:15",
         "window": "outside_work_hours",
         "nextBest": "Europe/Helsinki afternoon",
         "weight": 0
@@ -1888,8 +1940,6 @@ window.DAILY_AUTOMATION_LATEST = {
         ],
         "error": ""
       },
-      "emailVerificationStatus": "official_public_business_email",
-      "emailEvidence": "first_party_live_page_cache",
       "taskId": "google-customer-varuste-website-contact",
       "targetRegion": "europe",
       "targetRegionScore": 45,
@@ -1933,6 +1983,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "contactPhone": "",
       "contactNote": "",
       "publicEmailStatus": "",
+      "emailVerificationStatus": "",
+      "emailEvidence": "",
+      "emailEvidenceUrl": "",
       "website": "https://www.aboveandbeyond.ie/",
       "evidenceUrl": "https://www.google.com/search?q=%22Above%20and%20Beyond%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22Ireland%22%20buyer%20OR%20wholesale%20OR%20contact",
       "sourceEvidenceUrl": "verified outdoor retailer official website and public social profile refill",
@@ -1955,7 +2008,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/Dublin",
-        "localTime": "Mon 10:06",
+        "localTime": "Mon 10:15",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -2027,6 +2080,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "contactPhone": "",
       "contactNote": "",
       "publicEmailStatus": "",
+      "emailVerificationStatus": "",
+      "emailEvidence": "",
+      "emailEvidenceUrl": "",
       "website": "https://www.campz.de/",
       "evidenceUrl": "https://www.google.com/search?q=%22Campz%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22Germany%22%20buyer%20OR%20wholesale%20OR%20contact",
       "sourceEvidenceUrl": "verified outdoor retailer official website and public social profile refill",
@@ -2049,7 +2105,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/Berlin",
-        "localTime": "Mon 11:06",
+        "localTime": "Mon 11:15",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -2121,6 +2177,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "contactPhone": "",
       "contactNote": "",
       "publicEmailStatus": "",
+      "emailVerificationStatus": "",
+      "emailEvidence": "",
+      "emailEvidenceUrl": "",
       "website": "https://www.intersport.no/",
       "evidenceUrl": "https://www.google.com/search?q=%22Intersport%20Norway%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22Norway%22%20buyer%20OR%20wholesale%20OR%20contact",
       "sourceEvidenceUrl": "verified outdoor retailer official website and public social profile refill",
@@ -2143,7 +2202,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/Oslo",
-        "localTime": "Mon 11:06",
+        "localTime": "Mon 11:15",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -2221,6 +2280,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "contactPhone": "",
       "contactNote": "",
       "publicEmailStatus": "",
+      "emailVerificationStatus": "",
+      "emailEvidence": "",
+      "emailEvidenceUrl": "",
       "website": "https://www.ldmountaincentre.com/",
       "evidenceUrl": "https://www.google.com/search?q=%22LD%20Mountain%20Centre%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22United%20Kingdom%22%20buyer%20OR%20wholesale%20OR%20contact",
       "sourceEvidenceUrl": "verified outdoor retailer official website and public social profile refill",
@@ -2243,7 +2305,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/London",
-        "localTime": "Mon 10:06",
+        "localTime": "Mon 10:15",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -2273,104 +2335,6 @@ window.DAILY_AUTOMATION_LATEST = {
         "error": ""
       },
       "taskId": "google-customer-ld-mountain-centre-facebook",
-      "targetRegion": "europe",
-      "targetRegionScore": 45,
-      "contactChannelScore": 17,
-      "dealProbabilityScore": 218,
-      "priorityScore": 218,
-      "lastStatus": "",
-      "lastEvidence": "",
-      "lastTouch": "",
-      "visibleOnly": false
-    },
-    {
-      "id": "google-customer-tiso-facebook",
-      "name": "Tiso",
-      "company": "Tiso",
-      "customerType": "key_account",
-      "discoveryMode": "autonomous_refill",
-      "country": "United Kingdom",
-      "countryEn": "United Kingdom",
-      "fitScore": 84,
-      "fitTier": "A",
-      "marketScore": 4.5,
-      "marketStatus": "open",
-      "agencyState": "open",
-      "agentCompany": "",
-      "keyword": "verified outdoor, camping and travel retail social refill channel",
-      "role": "Outdoor, camping, travel accessories, ecommerce or category buyer.",
-      "background": "Tiso is a qualified outdoor, camping, travel or sport retail prospect with category fit for FLEXTAIL portable outdoor electrics and Vollyc practical 3C products.",
-      "buyerPersona": "Outdoor, camping, travel accessories, ecommerce or category buyer.",
-      "targetMarkets": "",
-      "excludedMarkets": "",
-      "productCategory": "verified outdoor, camping and travel retail social refill channel",
-      "businessModel": "Retail Chain",
-      "productFit": "FLEXTAIL portable pumps, outdoor power, camping lighting and compact camping accessories",
-      "opportunity": "Tiso is a qualified outdoor, camping, travel or sport retail prospect with category fit for FLEXTAIL portable outdoor electrics and Vollyc practical 3C products.",
-      "linkedin_url": "",
-      "linkedin": "",
-      "publicEmail": "",
-      "contactEmail": "",
-      "vendorPortal": "https://www.tiso.com/",
-      "contactPhone": "",
-      "contactNote": "",
-      "publicEmailStatus": "",
-      "website": "https://www.tiso.com/",
-      "evidenceUrl": "https://www.google.com/search?q=%22Tiso%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22United%20Kingdom%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "sourceEvidenceUrl": "verified outdoor retailer official website and public social profile refill",
-      "externalVerificationStatus": "official_contact_form_verified",
-      "query": "https://www.google.com/search?q=%22Tiso%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22United%20Kingdom%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "source": "google_customer_discovery",
-      "sourceType": "google",
-      "discoveryProvider": "google",
-      "channel": "",
-      "identityStatus": "verified",
-      "officialSocialProfileVerified": false,
-      "socialProfileEvidenceUrl": "",
-      "socialProfileVerifiedAt": "",
-      "profiledAt": "",
-      "partnershipStatus": "",
-      "doNotOutreach": false,
-      "automationStatus": "",
-      "partnerNote": "",
-      "sendStatus": "",
-      "workingTime": {
-        "dueNow": true,
-        "timeZone": "Europe/London",
-        "localTime": "Mon 10:06",
-        "window": "morning",
-        "nextBest": "now",
-        "weight": 1
-      },
-      "platform": "facebook",
-      "platformUrl": "https://www.facebook.com/TisoOutdoor",
-      "url": "https://www.facebook.com/TisoOutdoor",
-      "action": "develop",
-      "reason": "concrete_google_discovered_major_customer_facebook",
-      "alternateChannels": {
-        "linkedin": "",
-        "instagram": "https://www.instagram.com/tiso.outdoor/",
-        "facebook": "https://www.facebook.com/TisoOutdoor",
-        "websiteContact": "https://www.tiso.com/"
-      },
-      "invalidChannels": {},
-      "facebookStatus": "verified_official_page_candidate",
-      "identitySource": "official Facebook page candidate + official website + Google background query",
-      "channelPriority": 2,
-      "discoveredAt": "2026-07-16T05:03:53.170Z",
-      "firstPartyChannelVerification": {
-        "status": "checked",
-        "verifiedAt": "2026-08-10T07:05:22.342Z",
-        "evidenceUrl": "https://www.tiso.com/",
-        "httpStatus": 200,
-        "signals": [
-          "form_control",
-          "contact_invitation"
-        ],
-        "error": ""
-      },
-      "contactCapabilityVerified": true,
-      "taskId": "google-customer-tiso-facebook",
       "targetRegion": "europe",
       "targetRegionScore": 45,
       "contactChannelScore": 17,
@@ -2413,6 +2377,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "contactPhone": "",
       "contactNote": "",
       "publicEmailStatus": "",
+      "emailVerificationStatus": "",
+      "emailEvidence": "",
+      "emailEvidenceUrl": "",
       "website": "https://www.outdoorspecialist.nl/",
       "evidenceUrl": "https://www.google.com/search?q=%22Outdoor%20Specialist%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22Netherlands%22%20buyer%20OR%20wholesale%20OR%20contact",
       "sourceEvidenceUrl": "verified outdoor retailer official website and public social profile refill",
@@ -2435,7 +2402,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Asia/Shanghai",
-        "localTime": "Mon 17:06",
+        "localTime": "Mon 17:15",
         "window": "outside_work_hours",
         "nextBest": "Asia/Shanghai morning",
         "weight": 0
@@ -2515,6 +2482,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "contactPhone": "",
       "contactNote": "",
       "publicEmailStatus": "",
+      "emailVerificationStatus": "",
+      "emailEvidence": "",
+      "emailEvidenceUrl": "",
       "website": "https://www.outdoornature.com.au/",
       "evidenceUrl": "https://www.google.com/search?q=%22Outdoor%20Nature%22%20%22outdoor%2C%20hiking%2C%20camping%2C%20travel%20and%20adventure%20retailer%22%20%22Australia%22%20buyer%20OR%20wholesale%20OR%20contact",
       "sourceEvidenceUrl": "https://www.outdoornature.com.au/become-a-supplier/",
@@ -2537,7 +2507,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Australia/Sydney",
-        "localTime": "Mon 19:06",
+        "localTime": "Mon 19:15",
         "window": "outside_work_hours",
         "nextBest": "Australia/Sydney morning",
         "weight": 0
@@ -2566,7 +2536,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "discoveredAt": "2026-07-29T12:52:55.130Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-06T13:06:36.139Z",
+        "verifiedAt": "2026-08-10T09:15:03.797Z",
         "evidenceUrl": "https://www.outdoornature.com.au/become-a-supplier/",
         "httpStatus": 200,
         "signals": [
@@ -2620,6 +2590,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "contactPhone": "",
       "contactNote": "",
       "publicEmailStatus": "Official public company-domain email published by Tentworld; route the supplier proposal to the category buyer or vendor-review owner.",
+      "emailVerificationStatus": "official_public_business_email",
+      "emailEvidence": "first_party_live_page_cache",
+      "emailEvidenceUrl": "https://www.tentworld.com.au/contact-us",
       "website": "https://www.tentworld.com.au/",
       "evidenceUrl": "https://www.google.com/search?q=%22Tentworld%22%20%22verified%20outdoor%2C%20camping%2C%20travel%20and%20consumer%20electronics%20retail%20channel%22%20%22Australia%22%20buyer%20OR%20wholesale%20OR%20contact",
       "sourceEvidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
@@ -2642,7 +2615,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Australia/Sydney",
-        "localTime": "Mon 19:06",
+        "localTime": "Mon 19:15",
         "window": "outside_work_hours",
         "nextBest": "Australia/Sydney morning",
         "weight": 0
@@ -2677,8 +2650,6 @@ window.DAILY_AUTOMATION_LATEST = {
         "signals": [],
         "error": ""
       },
-      "emailVerificationStatus": "official_public_business_email",
-      "emailEvidence": "first_party_live_page_cache",
       "taskId": "google-customer-tentworld-website-contact",
       "targetRegion": "oceania",
       "targetRegionScore": 0,
@@ -2722,6 +2693,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "contactPhone": "",
       "contactNote": "",
       "publicEmailStatus": "Official public business email on the Bivouac Outdoor contact page; route to category buyer or vendor-review owner.",
+      "emailVerificationStatus": "official_public_business_email",
+      "emailEvidence": "first_party_live_page_cache",
+      "emailEvidenceUrl": "https://www.bivouac.co.nz/",
       "website": "https://www.bivouac.co.nz/",
       "evidenceUrl": "https://www.google.com/search?q=%22Bivouac%20Outdoor%22%20%22verified%20outdoor%2C%20camping%2C%20travel%20and%20consumer%20electronics%20retail%20channel%22%20%22New%20Zealand%22%20buyer%20OR%20wholesale%20OR%20contact",
       "sourceEvidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
@@ -2744,7 +2718,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Pacific/Auckland",
-        "localTime": "Mon 21:06",
+        "localTime": "Mon 21:15",
         "window": "outside_work_hours",
         "nextBest": "Pacific/Auckland morning",
         "weight": 0
@@ -2781,8 +2755,6 @@ window.DAILY_AUTOMATION_LATEST = {
         ],
         "error": ""
       },
-      "emailVerificationStatus": "official_public_business_email",
-      "emailEvidence": "first_party_live_page_cache",
       "taskId": "google-customer-bivouac-outdoor-website-contact",
       "targetRegion": "oceania",
       "targetRegionScore": 0,
@@ -2826,6 +2798,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "contactPhone": "",
       "contactNote": "",
       "publicEmailStatus": "Official public business email on the Wildfire Sports contact page; route to category buyer or vendor-review owner.",
+      "emailVerificationStatus": "official_public_business_email",
+      "emailEvidence": "first_party_live_page_cache",
+      "emailEvidenceUrl": "https://www.wildfiresports.com.au/contact-us",
       "website": "https://www.wildfiresports.com.au/",
       "evidenceUrl": "https://www.google.com/search?q=%22Wildfire%20Sports%22%20%22verified%20outdoor%2C%20camping%2C%20travel%20and%20consumer%20electronics%20retail%20channel%22%20%22Australia%22%20buyer%20OR%20wholesale%20OR%20contact",
       "sourceEvidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
@@ -2848,7 +2823,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Australia/Sydney",
-        "localTime": "Mon 19:06",
+        "localTime": "Mon 19:15",
         "window": "outside_work_hours",
         "nextBest": "Australia/Sydney morning",
         "weight": 0
@@ -2883,8 +2858,6 @@ window.DAILY_AUTOMATION_LATEST = {
         "signals": [],
         "error": ""
       },
-      "emailVerificationStatus": "official_public_business_email",
-      "emailEvidence": "first_party_live_page_cache",
       "taskId": "google-customer-wildfire-sports-website-contact",
       "targetRegion": "oceania",
       "targetRegionScore": 0,
@@ -2928,6 +2901,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "contactPhone": "",
       "contactNote": "",
       "publicEmailStatus": "",
+      "emailVerificationStatus": "",
+      "emailEvidence": "",
+      "emailEvidenceUrl": "",
       "website": "https://www.tentworld.co.nz/",
       "evidenceUrl": "https://www.google.com/search?q=%22Tentworld%20NZ%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22New%20Zealand%22%20buyer%20OR%20wholesale%20OR%20contact",
       "sourceEvidenceUrl": "verified outdoor retailer official website and public social profile refill",
@@ -2950,7 +2926,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Pacific/Auckland",
-        "localTime": "Mon 21:06",
+        "localTime": "Mon 21:15",
         "window": "outside_work_hours",
         "nextBest": "Pacific/Auckland morning",
         "weight": 0
@@ -3022,6 +2998,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "contactPhone": "",
       "contactNote": "",
       "publicEmailStatus": "",
+      "emailVerificationStatus": "",
+      "emailEvidence": "",
+      "emailEvidenceUrl": "",
       "website": "https://vpo.ca/",
       "evidenceUrl": "https://www.google.com/search?q=%22Valhalla%20Pure%20Outfitters%22%20%22verified%20outdoor%2C%20camping%2C%20travel%20and%20consumer%20electronics%20retail%20channel%22%20%22Canada%22%20buyer%20OR%20wholesale%20OR%20contact",
       "sourceEvidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
@@ -3044,7 +3023,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Mon 05:06",
+        "localTime": "Mon 05:15",
         "window": "outside_work_hours",
         "nextBest": "America/Toronto morning",
         "weight": 0
@@ -3122,6 +3101,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "contactPhone": "",
       "contactNote": "",
       "publicEmailStatus": "",
+      "emailVerificationStatus": "",
+      "emailEvidence": "",
+      "emailEvidenceUrl": "",
       "website": "https://www.lacordee.com/",
       "evidenceUrl": "https://www.google.com/search?q=%22La%20Cordee%22%20%22verified%20outdoor%2C%20camping%2C%20travel%20and%20consumer%20electronics%20retail%20channel%22%20%22Canada%22%20buyer%20OR%20wholesale%20OR%20contact",
       "sourceEvidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
@@ -3144,7 +3126,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Mon 05:06",
+        "localTime": "Mon 05:15",
         "window": "outside_work_hours",
         "nextBest": "America/Toronto morning",
         "weight": 0
@@ -3224,6 +3206,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "contactPhone": "",
       "contactNote": "",
       "publicEmailStatus": "",
+      "emailVerificationStatus": "",
+      "emailEvidence": "",
+      "emailEvidenceUrl": "",
       "website": "https://latulippe.com/",
       "evidenceUrl": "https://www.google.com/search?q=%22Latulippe%22%20%22verified%20outdoor%2C%20camping%2C%20travel%20and%20consumer%20electronics%20retail%20channel%22%20%22Canada%22%20buyer%20OR%20wholesale%20OR%20contact",
       "sourceEvidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
@@ -3246,7 +3231,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Mon 05:06",
+        "localTime": "Mon 05:15",
         "window": "outside_work_hours",
         "nextBest": "America/Toronto morning",
         "weight": 0
@@ -3324,6 +3309,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "contactPhone": "",
       "contactNote": "",
       "publicEmailStatus": "",
+      "emailVerificationStatus": "",
+      "emailEvidence": "",
+      "emailEvidenceUrl": "",
       "website": "https://www.atmosphere.ca/",
       "evidenceUrl": "https://www.google.com/search?q=%22Atmosphere%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22Canada%22%20buyer%20OR%20wholesale%20OR%20contact",
       "sourceEvidenceUrl": "verified outdoor retailer official website and public social profile refill",
@@ -3346,7 +3334,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Mon 05:06",
+        "localTime": "Mon 05:15",
         "window": "outside_work_hours",
         "nextBest": "America/Toronto morning",
         "weight": 0
@@ -3420,6 +3408,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "contactPhone": "",
       "contactNote": "",
       "publicEmailStatus": "",
+      "emailVerificationStatus": "",
+      "emailEvidence": "",
+      "emailEvidenceUrl": "",
       "website": "https://www.rona.ca/",
       "evidenceUrl": "https://www.google.com/search?q=%22RONA%22%20%22home%20improvement%2C%20hardware%20and%20outdoor%20products%20retailer%22%20%22Canada%22%20buyer%20OR%20wholesale%20OR%20contact",
       "sourceEvidenceUrl": "https://vendors.rona.ca/product-supplier",
@@ -3442,7 +3433,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Mon 05:06",
+        "localTime": "Mon 05:15",
         "window": "outside_work_hours",
         "nextBest": "America/Toronto morning",
         "weight": 0
@@ -3523,6 +3514,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "contactPhone": "",
       "contactNote": "",
       "publicEmailStatus": "",
+      "emailVerificationStatus": "",
+      "emailEvidence": "",
+      "emailEvidenceUrl": "",
       "website": "https://www.intersport.no/",
       "evidenceUrl": "https://www.google.com/search?q=%22Intersport%20Norway%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22Norway%22%20buyer%20OR%20wholesale%20OR%20contact",
       "sourceEvidenceUrl": "verified outdoor retailer official website and public social profile refill",
@@ -3545,7 +3539,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/10 17:05:41",
+        "localTime": "2026/8/10 17:14:50",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -3635,6 +3629,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "contactPhone": "",
       "contactNote": "",
       "publicEmailStatus": "",
+      "emailVerificationStatus": "",
+      "emailEvidence": "",
+      "emailEvidenceUrl": "",
       "website": "https://www.esprinet.com/en/",
       "evidenceUrl": "https://www.google.com/search?q=%22Esprinet%20Group%22%20%22Southern%20Europe%20technology%20and%20consumer%20electronics%20distributor%22%20%22Italy%22%20buyer%20OR%20wholesale%20OR%20contact",
       "sourceEvidenceUrl": "https://www.esprinet.com/en/become-a-supplier/",
@@ -3657,7 +3654,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/10 17:05:41",
+        "localTime": "2026/8/10 17:14:50",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -3750,6 +3747,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "contactPhone": "",
       "contactNote": "",
       "publicEmailStatus": "",
+      "emailVerificationStatus": "",
+      "emailEvidence": "",
+      "emailEvidenceUrl": "",
       "website": "https://www.leftpointdistribution.com/",
       "evidenceUrl": "https://www.google.com/search?q=%22Left%20Point%20Distribution%22%20%22European%20surf%2C%20outdoor%20and%20adventure%20sports%20distributor%22%20%22Netherlands%22%20buyer%20OR%20wholesale%20OR%20contact",
       "sourceEvidenceUrl": "https://www.leftpointdistribution.com/en-eu/aboutus.php",
@@ -3772,7 +3772,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/10 17:05:41",
+        "localTime": "2026/8/10 17:14:50",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -3861,6 +3861,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "contactPhone": "",
       "contactNote": "",
       "publicEmailStatus": "Official public company-domain contact published in the Fjellsport privacy and contact information; route the supplier proposal to the category buyer or vendor-review owner.",
+      "emailVerificationStatus": "official_public_business_email",
+      "emailEvidence": "first_party_live_page_cache",
+      "emailEvidenceUrl": "https://www.fjellsport.no/faq/personvern",
       "website": "https://www.fjellsport.no/",
       "evidenceUrl": "https://www.google.com/search?q=%22Fjellsport%22%20%22verified%20outdoor%2C%20camping%2C%20travel%20and%20consumer%20electronics%20retail%20channel%22%20%22Norway%22%20buyer%20OR%20wholesale%20OR%20contact",
       "sourceEvidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
@@ -3883,7 +3886,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/10 17:05:41",
+        "localTime": "2026/8/10 17:14:50",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -3918,8 +3921,6 @@ window.DAILY_AUTOMATION_LATEST = {
         ],
         "error": ""
       },
-      "emailVerificationStatus": "official_public_business_email",
-      "emailEvidence": "first_party_live_page_cache",
       "linkedinUrl": "",
       "linkedinSearchUrl": "https://www.linkedin.com/search/results/all/?keywords=Fjellsport%20buyer%20outdoor%20LinkedIn",
       "googleSearchUrl": "https://www.google.com/search?q=site%3Awww.fjellsport.no%20%22Fjellsport%22%20contact%20buyer%20wholesale%20email%20vendor",
@@ -3976,6 +3977,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "contactPhone": "",
       "contactNote": "",
       "publicEmailStatus": "Official public company-domain email published by Varuste; route the supplier proposal to the category buyer or vendor-review owner.",
+      "emailVerificationStatus": "official_public_business_email",
+      "emailEvidence": "first_party_live_page_cache",
+      "emailEvidenceUrl": "https://varuste.net/",
       "website": "https://varuste.net/",
       "evidenceUrl": "https://www.google.com/search?q=%22Varuste%22%20%22verified%20outdoor%2C%20camping%2C%20travel%20and%20consumer%20electronics%20retail%20channel%22%20%22Finland%22%20buyer%20OR%20wholesale%20OR%20contact",
       "sourceEvidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
@@ -3998,7 +4002,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/10 17:05:41",
+        "localTime": "2026/8/10 17:14:50",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -4034,8 +4038,6 @@ window.DAILY_AUTOMATION_LATEST = {
         ],
         "error": ""
       },
-      "emailVerificationStatus": "official_public_business_email",
-      "emailEvidence": "first_party_live_page_cache",
       "linkedinUrl": "",
       "linkedinSearchUrl": "https://www.linkedin.com/search/results/all/?keywords=Varuste%20buyer%20outdoor%20LinkedIn",
       "googleSearchUrl": "https://www.google.com/search?q=site%3Avaruste.net%20%22Varuste%22%20contact%20buyer%20wholesale%20email%20vendor",
@@ -4092,6 +4094,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "contactPhone": "",
       "contactNote": "",
       "publicEmailStatus": "",
+      "emailVerificationStatus": "",
+      "emailEvidence": "",
+      "emailEvidenceUrl": "",
       "website": "https://www.bergfreunde.eu/",
       "evidenceUrl": "https://www.google.com/search?q=%22Bergfreunde%22%20%22verified%20outdoor%2C%20camping%2C%20travel%20and%20consumer%20electronics%20retail%20channel%22%20%22Germany%22%20buyer%20OR%20wholesale%20OR%20contact",
       "sourceEvidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
@@ -4114,7 +4119,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/10 17:05:41",
+        "localTime": "2026/8/10 17:14:50",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -4141,7 +4146,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "discoveredAt": "2026-07-14T04:02:10.362Z",
       "firstPartyChannelVerification": {
         "status": "unreachable",
-        "verifiedAt": "2026-08-06T13:06:33.135Z",
+        "verifiedAt": "2026-08-10T09:15:02.983Z",
         "evidenceUrl": "https://www.bergfreunde.eu/",
         "httpStatus": 403,
         "signals": [],
@@ -4203,6 +4208,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "contactPhone": "",
       "contactNote": "",
       "publicEmailStatus": "",
+      "emailVerificationStatus": "",
+      "emailEvidence": "",
+      "emailEvidenceUrl": "",
       "website": "https://www.obelink.nl/",
       "evidenceUrl": "https://www.google.com/search?q=%22Obelink%22%20%22European%20camping%20and%20outdoor%20marketplace%20retailer%22%20%22Netherlands%22%20buyer%20OR%20wholesale%20OR%20contact",
       "sourceEvidenceUrl": "https://www.obelink.nl/obelink-partnerprogramma",
@@ -4225,7 +4233,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/10 17:05:41",
+        "localTime": "2026/8/10 17:14:50",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -4252,7 +4260,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "discoveredAt": "2026-07-14T04:02:10.362Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-06T13:06:27.181Z",
+        "verifiedAt": "2026-08-10T09:14:57.306Z",
         "evidenceUrl": "https://www.obelink.nl/obelink-partnerprogramma/",
         "httpStatus": 200,
         "signals": [
@@ -4316,6 +4324,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "contactPhone": "",
       "contactNote": "",
       "publicEmailStatus": "",
+      "emailVerificationStatus": "",
+      "emailEvidence": "",
+      "emailEvidenceUrl": "",
       "website": "https://www.auvieuxcampeur.fr/",
       "evidenceUrl": "https://www.google.com/search?q=%22Au%20Vieux%20Campeur%22%20%22verified%20outdoor%2C%20camping%2C%20travel%20and%20consumer%20electronics%20retail%20channel%22%20%22France%22%20buyer%20OR%20wholesale%20OR%20contact",
       "sourceEvidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
@@ -4338,7 +4349,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/10 17:05:41",
+        "localTime": "2026/8/10 17:14:50",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -4365,7 +4376,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "discoveredAt": "2026-07-14T04:02:10.362Z",
       "firstPartyChannelVerification": {
         "status": "unreachable",
-        "verifiedAt": "2026-08-06T16:05:18.544Z",
+        "verifiedAt": "2026-08-10T09:15:04.074Z",
         "evidenceUrl": "https://www.auvieuxcampeur.fr/",
         "httpStatus": 403,
         "signals": [],
@@ -4427,6 +4438,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "contactPhone": "",
       "contactNote": "",
       "publicEmailStatus": "",
+      "emailVerificationStatus": "",
+      "emailEvidence": "",
+      "emailEvidenceUrl": "",
       "website": "https://www.trekitt.co.uk/",
       "evidenceUrl": "https://www.google.com/search?q=%22Trekitt%22%20%22verified%20outdoor%2C%20camping%2C%20travel%20and%20consumer%20electronics%20retail%20channel%22%20%22United%20Kingdom%22%20buyer%20OR%20wholesale%20OR%20contact",
       "sourceEvidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
@@ -4449,7 +4463,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/10 17:05:41",
+        "localTime": "2026/8/10 17:14:50",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -4542,6 +4556,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "contactPhone": "",
       "contactNote": "",
       "publicEmailStatus": "",
+      "emailVerificationStatus": "",
+      "emailEvidence": "",
+      "emailEvidenceUrl": "",
       "website": "https://www.alpinetrek.co.uk/",
       "evidenceUrl": "https://www.google.com/search?q=%22Alpinetrek%22%20%22verified%20outdoor%2C%20camping%2C%20travel%20and%20consumer%20electronics%20retail%20channel%22%20%22United%20Kingdom%22%20buyer%20OR%20wholesale%20OR%20contact",
       "sourceEvidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
@@ -4564,7 +4581,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/10 17:05:41",
+        "localTime": "2026/8/10 17:14:50",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -4653,6 +4670,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "contactPhone": "",
       "contactNote": "",
       "publicEmailStatus": "",
+      "emailVerificationStatus": "",
+      "emailEvidence": "",
+      "emailEvidenceUrl": "",
       "website": "https://www.barrabes.com/",
       "evidenceUrl": "https://www.google.com/search?q=%22Barrabes%22%20%22verified%20outdoor%2C%20camping%2C%20travel%20and%20consumer%20electronics%20retail%20channel%22%20%22Spain%22%20buyer%20OR%20wholesale%20OR%20contact",
       "sourceEvidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
@@ -4675,7 +4695,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/10 17:05:41",
+        "localTime": "2026/8/10 17:14:50",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -4766,6 +4786,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "contactPhone": "",
       "contactNote": "",
       "publicEmailStatus": "",
+      "emailVerificationStatus": "",
+      "emailEvidence": "",
+      "emailEvidenceUrl": "",
       "website": "https://www.de-wit.nl/",
       "evidenceUrl": "https://www.google.com/search?q=%22De%20Wit%20Schijndel%22%20%22verified%20outdoor%2C%20camping%2C%20travel%20and%20consumer%20electronics%20retail%20channel%22%20%22Netherlands%22%20buyer%20OR%20wholesale%20OR%20contact",
       "sourceEvidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
@@ -4788,7 +4811,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/10 17:05:41",
+        "localTime": "2026/8/10 17:14:50",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -4879,6 +4902,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "contactPhone": "",
       "contactNote": "",
       "publicEmailStatus": "",
+      "emailVerificationStatus": "",
+      "emailEvidence": "",
+      "emailEvidenceUrl": "",
       "website": "https://www.ekosport.fr/",
       "evidenceUrl": "https://www.google.com/search?q=%22Ekosport%22%20%22verified%20outdoor%2C%20camping%2C%20travel%20and%20consumer%20electronics%20retail%20channel%22%20%22France%22%20buyer%20OR%20wholesale%20OR%20contact",
       "sourceEvidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
@@ -4901,7 +4927,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/10 17:05:41",
+        "localTime": "2026/8/10 17:14:50",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -4990,6 +5016,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "contactPhone": "",
       "contactNote": "",
       "publicEmailStatus": "",
+      "emailVerificationStatus": "",
+      "emailEvidence": "",
+      "emailEvidenceUrl": "",
       "website": "https://www.snowleader.com/",
       "evidenceUrl": "https://www.google.com/search?q=%22Snowleader%22%20%22verified%20outdoor%2C%20camping%2C%20travel%20and%20consumer%20electronics%20retail%20channel%22%20%22France%22%20buyer%20OR%20wholesale%20OR%20contact",
       "sourceEvidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
@@ -5012,7 +5041,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/10 17:05:41",
+        "localTime": "2026/8/10 17:14:50",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -5101,6 +5130,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "contactPhone": "",
       "contactNote": "",
       "publicEmailStatus": "",
+      "emailVerificationStatus": "",
+      "emailEvidence": "",
+      "emailEvidenceUrl": "",
       "website": "https://www.aboveandbeyond.ie/",
       "evidenceUrl": "https://www.google.com/search?q=%22Above%20and%20Beyond%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22Ireland%22%20buyer%20OR%20wholesale%20OR%20contact",
       "sourceEvidenceUrl": "verified outdoor retailer official website and public social profile refill",
@@ -5123,7 +5155,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/10 17:05:41",
+        "localTime": "2026/8/10 17:14:50",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -5212,6 +5244,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "contactPhone": "",
       "contactNote": "",
       "publicEmailStatus": "",
+      "emailVerificationStatus": "",
+      "emailEvidence": "",
+      "emailEvidenceUrl": "",
       "website": "https://www.campz.de/",
       "evidenceUrl": "https://www.google.com/search?q=%22Campz%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22Germany%22%20buyer%20OR%20wholesale%20OR%20contact",
       "sourceEvidenceUrl": "verified outdoor retailer official website and public social profile refill",
@@ -5234,7 +5269,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/10 17:05:41",
+        "localTime": "2026/8/10 17:14:50",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -5323,6 +5358,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "contactPhone": "",
       "contactNote": "",
       "publicEmailStatus": "",
+      "emailVerificationStatus": "",
+      "emailEvidence": "",
+      "emailEvidenceUrl": "",
       "website": "https://www.ldmountaincentre.com/",
       "evidenceUrl": "https://www.google.com/search?q=%22LD%20Mountain%20Centre%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22United%20Kingdom%22%20buyer%20OR%20wholesale%20OR%20contact",
       "sourceEvidenceUrl": "verified outdoor retailer official website and public social profile refill",
@@ -5345,7 +5383,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/10 17:05:41",
+        "localTime": "2026/8/10 17:14:50",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -5403,121 +5441,6 @@ window.DAILY_AUTOMATION_LATEST = {
       }
     },
     {
-      "id": "google-customer-tiso-website-contact",
-      "name": "Tiso",
-      "company": "Tiso",
-      "customerType": "key_account",
-      "discoveryMode": "autonomous_refill",
-      "country": "United Kingdom",
-      "countryEn": "United Kingdom",
-      "fitScore": 84,
-      "fitTier": "A",
-      "marketScore": 4.5,
-      "marketStatus": "open",
-      "agencyState": "open",
-      "agentCompany": "",
-      "keyword": "verified outdoor, camping and travel retail social refill channel",
-      "role": "Outdoor, camping, travel accessories, ecommerce or category buyer.",
-      "background": "Tiso is a qualified outdoor, camping, travel or sport retail prospect with category fit for FLEXTAIL portable outdoor electrics and Vollyc practical 3C products.",
-      "buyerPersona": "Outdoor, camping, travel accessories, ecommerce or category buyer.",
-      "targetMarkets": "",
-      "excludedMarkets": "",
-      "productCategory": "verified outdoor, camping and travel retail social refill channel",
-      "businessModel": "Retail Chain",
-      "productFit": "FLEXTAIL portable pumps, outdoor power, camping lighting and compact camping accessories",
-      "opportunity": "Tiso is a qualified outdoor, camping, travel or sport retail prospect with category fit for FLEXTAIL portable outdoor electrics and Vollyc practical 3C products.",
-      "linkedin_url": "",
-      "linkedin": "",
-      "publicEmail": "",
-      "contactEmail": "",
-      "vendorPortal": "https://www.tiso.com/",
-      "contactPhone": "",
-      "contactNote": "",
-      "publicEmailStatus": "",
-      "website": "https://www.tiso.com/",
-      "evidenceUrl": "https://www.google.com/search?q=%22Tiso%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22United%20Kingdom%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "sourceEvidenceUrl": "verified outdoor retailer official website and public social profile refill",
-      "externalVerificationStatus": "official_contact_form_verified",
-      "query": "https://www.google.com/search?q=%22Tiso%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22United%20Kingdom%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "source": "google_customer_discovery",
-      "sourceType": "google",
-      "discoveryProvider": "google",
-      "channel": "",
-      "identityStatus": "verified",
-      "officialSocialProfileVerified": false,
-      "socialProfileEvidenceUrl": "",
-      "socialProfileVerifiedAt": "",
-      "profiledAt": "",
-      "partnershipStatus": "",
-      "doNotOutreach": false,
-      "automationStatus": "",
-      "partnerNote": "",
-      "sendStatus": "",
-      "workingTime": {
-        "dueNow": true,
-        "timeZone": "local-market",
-        "localTime": "2026/8/10 17:05:41",
-        "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
-      },
-      "platform": "website_form",
-      "channelType": "website_form",
-      "platformUrl": "https://www.tiso.com/",
-      "url": "https://www.tiso.com/",
-      "contactUrl": "https://www.tiso.com/",
-      "contactSearchUrl": "https://www.google.com/search?q=site%3Awww.tiso.com%20%22Tiso%22%20contact%20buyer%20wholesale%20email%20vendor",
-      "emailFrom": "leo@flextailgear.com",
-      "websiteContactSubject": "FLEXTAIL retail partnership | 2026 assortment",
-      "websiteContactMessage": "Dear Tiso Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
-      "websiteContactFlow": "open_official_contact_us_fill_attach_auto_submit",
-      "action": "develop",
-      "reason": "official_website_contact_channel",
-      "alternateChannels": {
-        "linkedin": "",
-        "instagram": "https://www.instagram.com/tiso.outdoor/",
-        "facebook": "https://www.facebook.com/TisoOutdoor",
-        "websiteContact": "https://www.tiso.com/"
-      },
-      "invalidChannels": {},
-      "identitySource": "official homepage found; exact buyer/contact path still requires verification",
-      "channelPriority": 3,
-      "discoveredAt": "2026-07-16T05:03:53.170Z",
-      "firstPartyChannelVerification": {
-        "status": "checked",
-        "verifiedAt": "2026-08-10T07:05:22.342Z",
-        "evidenceUrl": "https://www.tiso.com/",
-        "httpStatus": 200,
-        "signals": [
-          "form_control",
-          "contact_invitation"
-        ],
-        "error": ""
-      },
-      "contactCapabilityVerified": true,
-      "linkedinUrl": "",
-      "linkedinSearchUrl": "https://www.linkedin.com/search/results/all/?keywords=Tiso%20buyer%20outdoor%20LinkedIn",
-      "googleSearchUrl": "https://www.google.com/search?q=site%3Awww.tiso.com%20%22Tiso%22%20contact%20buyer%20wholesale%20email%20vendor",
-      "dataSources": [
-        "google_linkedin_social_refill"
-      ],
-      "taskId": "google-customer-tiso-website-contact",
-      "lastStatus": "",
-      "lastEvidence": "",
-      "lastTouch": "",
-      "previouslyContacted": false,
-      "targetRegion": "europe",
-      "targetRegionScore": 45,
-      "contactChannelScore": 17,
-      "dealProbabilityScore": 218,
-      "priorityScore": 235,
-      "potentialSource": "google_linkedin_social_refill",
-      "nextAction": "official_supplier_route_contact",
-      "executionReadiness": {
-        "ready": true,
-        "gate": "official_supplier_route",
-        "evidenceUrl": "https://www.tiso.com/"
-      }
-    },
-    {
       "id": "google-customer-outdoorxl-website-contact",
       "name": "OutdoorXL",
       "company": "OutdoorXL",
@@ -5549,6 +5472,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "contactPhone": "",
       "contactNote": "",
       "publicEmailStatus": "",
+      "emailVerificationStatus": "",
+      "emailEvidence": "",
+      "emailEvidenceUrl": "",
       "website": "https://www.outdoorxl.nl/",
       "evidenceUrl": "https://www.google.com/search?q=%22OutdoorXL%22%20%22verified%20outdoor%2C%20camping%2C%20travel%20and%20consumer%20electronics%20retail%20channel%22%20%22Netherlands%22%20buyer%20OR%20wholesale%20OR%20contact",
       "sourceEvidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
@@ -5571,7 +5497,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/10 17:05:41",
+        "localTime": "2026/8/10 17:14:50",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -5660,6 +5586,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "contactPhone": "",
       "contactNote": "",
       "publicEmailStatus": "",
+      "emailVerificationStatus": "",
+      "emailEvidence": "",
+      "emailEvidenceUrl": "",
       "website": "https://www.spejdersport.dk/",
       "evidenceUrl": "https://www.google.com/search?q=%22Spejder%20Sport%22%20%22verified%20outdoor%2C%20camping%2C%20travel%20and%20consumer%20electronics%20retail%20channel%22%20%22Denmark%22%20buyer%20OR%20wholesale%20OR%20contact",
       "sourceEvidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
@@ -5682,7 +5611,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/10 17:05:41",
+        "localTime": "2026/8/10 17:14:50",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -5771,6 +5700,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "contactPhone": "",
       "contactNote": "",
       "publicEmailStatus": "",
+      "emailVerificationStatus": "",
+      "emailEvidence": "",
+      "emailEvidenceUrl": "",
       "website": "https://www.tauntonleisure.com/",
       "evidenceUrl": "https://www.google.com/search?q=%22Taunton%20Leisure%22%20%22verified%20outdoor%2C%20camping%2C%20travel%20and%20consumer%20electronics%20retail%20channel%22%20%22United%20Kingdom%22%20buyer%20OR%20wholesale%20OR%20contact",
       "sourceEvidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
@@ -5793,7 +5725,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/10 17:05:41",
+        "localTime": "2026/8/10 17:14:50",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -5886,6 +5818,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "contactPhone": "",
       "contactNote": "",
       "publicEmailStatus": "",
+      "emailVerificationStatus": "",
+      "emailEvidence": "",
+      "emailEvidenceUrl": "",
       "website": "https://www.hardloop.fr/",
       "evidenceUrl": "https://www.google.com/search?q=%22Hardloop%22%20%22verified%20outdoor%2C%20camping%2C%20travel%20and%20consumer%20electronics%20retail%20channel%22%20%22France%22%20buyer%20OR%20wholesale%20OR%20contact",
       "sourceEvidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
@@ -5908,7 +5843,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/10 17:05:41",
+        "localTime": "2026/8/10 17:14:50",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -5997,6 +5932,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "contactPhone": "",
       "contactNote": "",
       "publicEmailStatus": "",
+      "emailVerificationStatus": "",
+      "emailEvidence": "",
+      "emailEvidenceUrl": "",
       "website": "https://www.sportpursuit.com/",
       "evidenceUrl": "https://www.google.com/search?q=%22SportPursuit%22%20%22verified%20outdoor%2C%20camping%2C%20travel%20and%20consumer%20electronics%20retail%20channel%22%20%22United%20Kingdom%22%20buyer%20OR%20wholesale%20OR%20contact",
       "sourceEvidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
@@ -6019,7 +5957,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/10 17:05:41",
+        "localTime": "2026/8/10 17:14:50",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -6108,6 +6046,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "contactPhone": "",
       "contactNote": "",
       "publicEmailStatus": "Public Rock Creek contact address; route to buyer/vendor team.",
+      "emailVerificationStatus": "official_public_business_email",
+      "emailEvidence": "first_party_live_page_cache",
+      "emailEvidenceUrl": "",
       "website": "https://www.rockcreek.com/",
       "evidenceUrl": "https://www.google.com/search?q=%22Rock%2FCreek%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
       "sourceEvidenceUrl": "verified outdoor retailer official website and public social profile refill",
@@ -6130,7 +6071,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/10 17:05:41",
+        "localTime": "2026/8/10 17:14:50",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -6163,8 +6104,6 @@ window.DAILY_AUTOMATION_LATEST = {
         "signals": [],
         "error": "fetch failed"
       },
-      "emailVerificationStatus": "official_public_business_email",
-      "emailEvidence": "first_party_live_page_cache",
       "linkedinUrl": "",
       "linkedinSearchUrl": "https://www.linkedin.com/search/results/all/?keywords=Rock%2FCreek%20buyer%20outdoor%20LinkedIn",
       "googleSearchUrl": "https://www.google.com/search?q=site%3Awww.rockcreek.com%20%22Rock%2FCreek%22%20contact%20buyer%20wholesale%20email%20vendor",
@@ -6221,6 +6160,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "contactPhone": "",
       "contactNote": "",
       "publicEmailStatus": "",
+      "emailVerificationStatus": "",
+      "emailEvidence": "",
+      "emailEvidenceUrl": "",
       "website": "https://www.outdoorspecialist.nl/",
       "evidenceUrl": "https://www.google.com/search?q=%22Outdoor%20Specialist%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22Netherlands%22%20buyer%20OR%20wholesale%20OR%20contact",
       "sourceEvidenceUrl": "verified outdoor retailer official website and public social profile refill",
@@ -6243,7 +6185,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/10 17:05:41",
+        "localTime": "2026/8/10 17:14:50",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -6334,6 +6276,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "contactPhone": "",
       "contactNote": "",
       "publicEmailStatus": "",
+      "emailVerificationStatus": "",
+      "emailEvidence": "",
+      "emailEvidenceUrl": "",
       "website": "https://nextadventure.net/",
       "evidenceUrl": "https://www.google.com/search?q=%22Next%20Adventure%22%20%22verified%20outdoor%2C%20camping%2C%20travel%20and%20consumer%20electronics%20retail%20channel%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
       "sourceEvidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
@@ -6356,7 +6301,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/10 17:05:41",
+        "localTime": "2026/8/10 17:14:50",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -6449,6 +6394,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "contactPhone": "",
       "contactNote": "",
       "publicEmailStatus": "Official supplier email published on the BBQ Fans become-a-supplier page.",
+      "emailVerificationStatus": "official_public_business_email",
+      "emailEvidence": "first_party_live_page_cache",
+      "emailEvidenceUrl": "",
       "website": "https://www.bbqfans.com/",
       "evidenceUrl": "https://www.google.com/search?q=%22BBQ%20Fans%22%20%22outdoor%20cooking%20and%20camping%20retailer%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
       "sourceEvidenceUrl": "https://www.bbqfans.com/become-a-supplier/",
@@ -6471,7 +6419,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/10 17:05:41",
+        "localTime": "2026/8/10 17:14:50",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -6509,8 +6457,6 @@ window.DAILY_AUTOMATION_LATEST = {
         "error": ""
       },
       "contactCapabilityVerified": true,
-      "emailVerificationStatus": "official_public_business_email",
-      "emailEvidence": "first_party_live_page_cache",
       "linkedinUrl": "",
       "linkedinSearchUrl": "https://www.linkedin.com/search/results/all/?keywords=BBQ%20Fans%20buyer%20outdoor%20LinkedIn",
       "googleSearchUrl": "https://www.google.com/search?q=site%3Awww.bbqfans.com%20%22BBQ%20Fans%22%20contact%20buyer%20wholesale%20email%20vendor",
@@ -6567,6 +6513,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "contactPhone": "",
       "contactNote": "",
       "publicEmailStatus": "",
+      "emailVerificationStatus": "",
+      "emailEvidence": "",
+      "emailEvidenceUrl": "",
       "website": "https://www.tractorsupply.com/",
       "evidenceUrl": "https://www.google.com/search?q=%22Tractor%20Supply%20Company%22%20%22rural%20lifestyle%2C%20outdoor%20sporting%20goods%20and%20outdoor%20power%20equipment%20retailer%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
       "sourceEvidenceUrl": "https://www.tractorsupply.com/tsc/cms/policies-information/vendor-information",
@@ -6589,7 +6538,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/10 17:05:41",
+        "localTime": "2026/8/10 17:14:50",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -6678,6 +6627,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "contactPhone": "",
       "contactNote": "",
       "publicEmailStatus": "",
+      "emailVerificationStatus": "",
+      "emailEvidence": "",
+      "emailEvidenceUrl": "",
       "website": "https://vpo.ca/",
       "evidenceUrl": "https://www.google.com/search?q=%22Valhalla%20Pure%20Outfitters%22%20%22verified%20outdoor%2C%20camping%2C%20travel%20and%20consumer%20electronics%20retail%20channel%22%20%22Canada%22%20buyer%20OR%20wholesale%20OR%20contact",
       "sourceEvidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
@@ -6700,7 +6652,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/10 17:05:41",
+        "localTime": "2026/8/10 17:14:50",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -6789,6 +6741,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "contactPhone": "",
       "contactNote": "",
       "publicEmailStatus": "",
+      "emailVerificationStatus": "",
+      "emailEvidence": "",
+      "emailEvidenceUrl": "",
       "website": "https://www.kitterytradingpost.com/",
       "evidenceUrl": "https://www.google.com/search?q=%22Kittery%20Trading%20Post%22%20%22verified%20outdoor%2C%20camping%2C%20travel%20and%20consumer%20electronics%20retail%20channel%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
       "sourceEvidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
@@ -6811,7 +6766,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/10 17:05:41",
+        "localTime": "2026/8/10 17:14:50",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -6901,6 +6856,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "contactPhone": "",
       "contactNote": "",
       "publicEmailStatus": "",
+      "emailVerificationStatus": "",
+      "emailEvidence": "",
+      "emailEvidenceUrl": "",
       "website": "https://www.atmosphere.ca/",
       "evidenceUrl": "https://www.google.com/search?q=%22Atmosphere%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22Canada%22%20buyer%20OR%20wholesale%20OR%20contact",
       "sourceEvidenceUrl": "verified outdoor retailer official website and public social profile refill",
@@ -6923,7 +6881,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/10 17:05:41",
+        "localTime": "2026/8/10 17:14:50",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -7014,6 +6972,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "contactPhone": "",
       "contactNote": "",
       "publicEmailStatus": "",
+      "emailVerificationStatus": "",
+      "emailEvidence": "",
+      "emailEvidenceUrl": "",
       "website": "https://www.ems.com/",
       "evidenceUrl": "https://www.google.com/search?q=%22Eastern%20Mountain%20Sports%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
       "sourceEvidenceUrl": "verified outdoor retailer official website and public social profile refill",
@@ -7036,7 +6997,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/10 17:05:41",
+        "localTime": "2026/8/10 17:14:50",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -7133,6 +7094,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "contactPhone": "",
       "contactNote": "",
       "publicEmailStatus": "",
+      "emailVerificationStatus": "",
+      "emailEvidence": "",
+      "emailEvidenceUrl": "",
       "website": "https://www.moosejaw.com/",
       "evidenceUrl": "https://www.google.com/search?q=%22Moosejaw%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
       "sourceEvidenceUrl": "verified outdoor retailer official website and public social profile refill",
@@ -7155,7 +7119,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/10 17:05:41",
+        "localTime": "2026/8/10 17:14:50",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -7252,6 +7216,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "contactPhone": "",
       "contactNote": "",
       "publicEmailStatus": "",
+      "emailVerificationStatus": "",
+      "emailEvidence": "",
+      "emailEvidenceUrl": "",
       "website": "https://mountaineer.com/",
       "evidenceUrl": "https://www.google.com/search?q=%22The%20Mountaineer%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
       "sourceEvidenceUrl": "verified outdoor retailer official website and public social profile refill",
@@ -7274,7 +7241,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/10 17:05:41",
+        "localTime": "2026/8/10 17:14:50",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -7365,6 +7332,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "contactPhone": "",
       "contactNote": "",
       "publicEmailStatus": "",
+      "emailVerificationStatus": "",
+      "emailEvidence": "",
+      "emailEvidenceUrl": "",
       "website": "https://www.lacordee.com/",
       "evidenceUrl": "https://www.google.com/search?q=%22La%20Cordee%22%20%22verified%20outdoor%2C%20camping%2C%20travel%20and%20consumer%20electronics%20retail%20channel%22%20%22Canada%22%20buyer%20OR%20wholesale%20OR%20contact",
       "sourceEvidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
@@ -7387,7 +7357,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/10 17:05:41",
+        "localTime": "2026/8/10 17:14:50",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -7478,6 +7448,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "contactPhone": "",
       "contactNote": "",
       "publicEmailStatus": "",
+      "emailVerificationStatus": "",
+      "emailEvidence": "",
+      "emailEvidenceUrl": "",
       "website": "https://latulippe.com/",
       "evidenceUrl": "https://www.google.com/search?q=%22Latulippe%22%20%22verified%20outdoor%2C%20camping%2C%20travel%20and%20consumer%20electronics%20retail%20channel%22%20%22Canada%22%20buyer%20OR%20wholesale%20OR%20contact",
       "sourceEvidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
@@ -7500,7 +7473,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/10 17:05:41",
+        "localTime": "2026/8/10 17:14:50",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -7589,6 +7562,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "contactPhone": "",
       "contactNote": "",
       "publicEmailStatus": "",
+      "emailVerificationStatus": "",
+      "emailEvidence": "",
+      "emailEvidenceUrl": "",
       "website": "https://neptunemountaineering.com/",
       "evidenceUrl": "https://www.google.com/search?q=%22Neptune%20Mountaineering%22%20%22verified%20outdoor%2C%20camping%2C%20travel%20and%20consumer%20electronics%20retail%20channel%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
       "sourceEvidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
@@ -7611,7 +7587,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/10 17:05:41",
+        "localTime": "2026/8/10 17:14:50",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -7704,6 +7680,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "contactPhone": "",
       "contactNote": "",
       "publicEmailStatus": "",
+      "emailVerificationStatus": "",
+      "emailEvidence": "",
+      "emailEvidenceUrl": "",
       "website": "https://www.hikingshack.com/",
       "evidenceUrl": "https://www.google.com/search?q=%22Arizona%20Hiking%20Shack%22%20%22verified%20outdoor%2C%20camping%2C%20travel%20and%20consumer%20electronics%20retail%20channel%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
       "sourceEvidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
@@ -7726,7 +7705,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/10 17:05:41",
+        "localTime": "2026/8/10 17:14:50",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -7815,6 +7794,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "contactPhone": "",
       "contactNote": "",
       "publicEmailStatus": "",
+      "emailVerificationStatus": "",
+      "emailEvidence": "",
+      "emailEvidenceUrl": "",
       "website": "https://www.bentgate.com/",
       "evidenceUrl": "https://www.google.com/search?q=%22Bentgate%20Mountaineering%22%20%22verified%20outdoor%2C%20camping%2C%20travel%20and%20consumer%20electronics%20retail%20channel%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
       "sourceEvidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
@@ -7837,7 +7819,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/10 17:05:41",
+        "localTime": "2026/8/10 17:14:50",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -7928,6 +7910,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "contactPhone": "",
       "contactNote": "",
       "publicEmailStatus": "",
+      "emailVerificationStatus": "",
+      "emailEvidence": "",
+      "emailEvidenceUrl": "",
       "website": "https://thegreatoutdoorshop.com/",
       "evidenceUrl": "https://www.google.com/search?q=%22The%20Great%20Outdoor%20Shop%22%20%22verified%20outdoor%2C%20camping%2C%20travel%20and%20consumer%20electronics%20retail%20channel%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
       "sourceEvidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
@@ -7950,7 +7935,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/10 17:05:41",
+        "localTime": "2026/8/10 17:14:50",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -8039,6 +8024,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "contactPhone": "",
       "contactNote": "",
       "publicEmailStatus": "",
+      "emailVerificationStatus": "",
+      "emailEvidence": "",
+      "emailEvidenceUrl": "",
       "website": "https://www.avidmax.com/",
       "evidenceUrl": "https://www.google.com/search?q=%22AvidMax%20Outfitters%22%20%22verified%20outdoor%2C%20camping%2C%20travel%20and%20consumer%20electronics%20retail%20channel%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
       "sourceEvidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
@@ -8061,7 +8049,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/10 17:05:41",
+        "localTime": "2026/8/10 17:14:50",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -8154,6 +8142,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "contactPhone": "",
       "contactNote": "",
       "publicEmailStatus": "",
+      "emailVerificationStatus": "",
+      "emailEvidence": "",
+      "emailEvidenceUrl": "",
       "website": "https://www.rona.ca/",
       "evidenceUrl": "https://www.google.com/search?q=%22RONA%22%20%22home%20improvement%2C%20hardware%20and%20outdoor%20products%20retailer%22%20%22Canada%22%20buyer%20OR%20wholesale%20OR%20contact",
       "sourceEvidenceUrl": "https://vendors.rona.ca/product-supplier",
@@ -8176,7 +8167,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/10 17:05:41",
+        "localTime": "2026/8/10 17:14:50",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -8266,6 +8257,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "contactPhone": "",
       "contactNote": "",
       "publicEmailStatus": "Official public company-domain email published by Tentworld; route the supplier proposal to the category buyer or vendor-review owner.",
+      "emailVerificationStatus": "official_public_business_email",
+      "emailEvidence": "first_party_live_page_cache",
+      "emailEvidenceUrl": "https://www.tentworld.com.au/contact-us",
       "website": "https://www.tentworld.com.au/",
       "evidenceUrl": "https://www.google.com/search?q=%22Tentworld%22%20%22verified%20outdoor%2C%20camping%2C%20travel%20and%20consumer%20electronics%20retail%20channel%22%20%22Australia%22%20buyer%20OR%20wholesale%20OR%20contact",
       "sourceEvidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
@@ -8288,7 +8282,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/10 17:05:41",
+        "localTime": "2026/8/10 17:14:50",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -8321,8 +8315,6 @@ window.DAILY_AUTOMATION_LATEST = {
         "signals": [],
         "error": ""
       },
-      "emailVerificationStatus": "official_public_business_email",
-      "emailEvidence": "first_party_live_page_cache",
       "linkedinUrl": "",
       "linkedinSearchUrl": "https://www.linkedin.com/search/results/all/?keywords=Tentworld%20buyer%20outdoor%20LinkedIn",
       "googleSearchUrl": "https://www.google.com/search?q=site%3Awww.tentworld.com.au%20%22Tentworld%22%20contact%20buyer%20wholesale%20email%20vendor",
@@ -8379,6 +8371,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "contactPhone": "",
       "contactNote": "",
       "publicEmailStatus": "Official public business email on the Bivouac Outdoor contact page; route to category buyer or vendor-review owner.",
+      "emailVerificationStatus": "official_public_business_email",
+      "emailEvidence": "first_party_live_page_cache",
+      "emailEvidenceUrl": "https://www.bivouac.co.nz/",
       "website": "https://www.bivouac.co.nz/",
       "evidenceUrl": "https://www.google.com/search?q=%22Bivouac%20Outdoor%22%20%22verified%20outdoor%2C%20camping%2C%20travel%20and%20consumer%20electronics%20retail%20channel%22%20%22New%20Zealand%22%20buyer%20OR%20wholesale%20OR%20contact",
       "sourceEvidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
@@ -8401,7 +8396,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/10 17:05:41",
+        "localTime": "2026/8/10 17:14:50",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -8436,8 +8431,6 @@ window.DAILY_AUTOMATION_LATEST = {
         ],
         "error": ""
       },
-      "emailVerificationStatus": "official_public_business_email",
-      "emailEvidence": "first_party_live_page_cache",
       "linkedinUrl": "",
       "linkedinSearchUrl": "https://www.linkedin.com/search/results/all/?keywords=Bivouac%20Outdoor%20buyer%20outdoor%20LinkedIn",
       "googleSearchUrl": "https://www.google.com/search?q=site%3Awww.bivouac.co.nz%20%22Bivouac%20Outdoor%22%20contact%20buyer%20wholesale%20email%20vendor",
@@ -8494,6 +8487,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "contactPhone": "",
       "contactNote": "",
       "publicEmailStatus": "Official public business email on the Wildfire Sports contact page; route to category buyer or vendor-review owner.",
+      "emailVerificationStatus": "official_public_business_email",
+      "emailEvidence": "first_party_live_page_cache",
+      "emailEvidenceUrl": "https://www.wildfiresports.com.au/contact-us",
       "website": "https://www.wildfiresports.com.au/",
       "evidenceUrl": "https://www.google.com/search?q=%22Wildfire%20Sports%22%20%22verified%20outdoor%2C%20camping%2C%20travel%20and%20consumer%20electronics%20retail%20channel%22%20%22Australia%22%20buyer%20OR%20wholesale%20OR%20contact",
       "sourceEvidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
@@ -8516,7 +8512,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/10 17:05:41",
+        "localTime": "2026/8/10 17:14:50",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -8549,8 +8545,6 @@ window.DAILY_AUTOMATION_LATEST = {
         "signals": [],
         "error": ""
       },
-      "emailVerificationStatus": "official_public_business_email",
-      "emailEvidence": "first_party_live_page_cache",
       "linkedinUrl": "",
       "linkedinSearchUrl": "https://www.linkedin.com/search/results/all/?keywords=Wildfire%20Sports%20buyer%20outdoor%20LinkedIn",
       "googleSearchUrl": "https://www.google.com/search?q=site%3Awww.wildfiresports.com.au%20%22Wildfire%20Sports%22%20contact%20buyer%20wholesale%20email%20vendor",
@@ -8607,6 +8601,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "contactPhone": "",
       "contactNote": "",
       "publicEmailStatus": "",
+      "emailVerificationStatus": "",
+      "emailEvidence": "",
+      "emailEvidenceUrl": "",
       "website": "https://www.outdoornature.com.au/",
       "evidenceUrl": "https://www.google.com/search?q=%22Outdoor%20Nature%22%20%22outdoor%2C%20hiking%2C%20camping%2C%20travel%20and%20adventure%20retailer%22%20%22Australia%22%20buyer%20OR%20wholesale%20OR%20contact",
       "sourceEvidenceUrl": "https://www.outdoornature.com.au/become-a-supplier/",
@@ -8629,7 +8626,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/10 17:05:41",
+        "localTime": "2026/8/10 17:14:50",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -8656,7 +8653,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "discoveredAt": "2026-07-29T12:52:55.130Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-06T13:06:36.139Z",
+        "verifiedAt": "2026-08-10T09:15:03.797Z",
         "evidenceUrl": "https://www.outdoornature.com.au/become-a-supplier/",
         "httpStatus": 200,
         "signals": [
@@ -8723,6 +8720,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "contactPhone": "",
       "contactNote": "",
       "publicEmailStatus": "",
+      "emailVerificationStatus": "",
+      "emailEvidence": "",
+      "emailEvidenceUrl": "",
       "website": "https://www.tentworld.co.nz/",
       "evidenceUrl": "https://www.google.com/search?q=%22Tentworld%20NZ%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22New%20Zealand%22%20buyer%20OR%20wholesale%20OR%20contact",
       "sourceEvidenceUrl": "verified outdoor retailer official website and public social profile refill",
@@ -8745,7 +8745,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/10 17:05:41",
+        "localTime": "2026/8/10 17:14:50",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -9855,6 +9855,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "contactPhone": "",
       "contactNote": "",
       "publicEmailStatus": "",
+      "emailVerificationStatus": "",
+      "emailEvidence": "",
+      "emailEvidenceUrl": "",
       "website": "https://www.esprinet.com/en/",
       "evidenceUrl": "https://www.google.com/search?q=%22Esprinet%20Group%22%20%22Southern%20Europe%20technology%20and%20consumer%20electronics%20distributor%22%20%22Italy%22%20buyer%20OR%20wholesale%20OR%20contact",
       "sourceEvidenceUrl": "https://www.esprinet.com/en/become-a-supplier/",
@@ -9877,7 +9880,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/10 17:05:41",
+        "localTime": "2026/8/10 17:14:50",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -9970,6 +9973,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "contactPhone": "",
       "contactNote": "",
       "publicEmailStatus": "",
+      "emailVerificationStatus": "",
+      "emailEvidence": "",
+      "emailEvidenceUrl": "",
       "website": "https://www.leftpointdistribution.com/",
       "evidenceUrl": "https://www.google.com/search?q=%22Left%20Point%20Distribution%22%20%22European%20surf%2C%20outdoor%20and%20adventure%20sports%20distributor%22%20%22Netherlands%22%20buyer%20OR%20wholesale%20OR%20contact",
       "sourceEvidenceUrl": "https://www.leftpointdistribution.com/en-eu/aboutus.php",
@@ -9992,7 +9998,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/10 17:05:41",
+        "localTime": "2026/8/10 17:14:50",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -10081,6 +10087,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "contactPhone": "",
       "contactNote": "",
       "publicEmailStatus": "Official public company-domain contact published in the Fjellsport privacy and contact information; route the supplier proposal to the category buyer or vendor-review owner.",
+      "emailVerificationStatus": "official_public_business_email",
+      "emailEvidence": "first_party_live_page_cache",
+      "emailEvidenceUrl": "https://www.fjellsport.no/faq/personvern",
       "website": "https://www.fjellsport.no/",
       "evidenceUrl": "https://www.google.com/search?q=%22Fjellsport%22%20%22verified%20outdoor%2C%20camping%2C%20travel%20and%20consumer%20electronics%20retail%20channel%22%20%22Norway%22%20buyer%20OR%20wholesale%20OR%20contact",
       "sourceEvidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
@@ -10103,7 +10112,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/10 17:05:41",
+        "localTime": "2026/8/10 17:14:50",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -10138,8 +10147,6 @@ window.DAILY_AUTOMATION_LATEST = {
         ],
         "error": ""
       },
-      "emailVerificationStatus": "official_public_business_email",
-      "emailEvidence": "first_party_live_page_cache",
       "linkedinUrl": "",
       "linkedinSearchUrl": "https://www.linkedin.com/search/results/all/?keywords=Fjellsport%20buyer%20outdoor%20LinkedIn",
       "googleSearchUrl": "https://www.google.com/search?q=site%3Awww.fjellsport.no%20%22Fjellsport%22%20contact%20buyer%20wholesale%20email%20vendor",
@@ -10196,6 +10203,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "contactPhone": "",
       "contactNote": "",
       "publicEmailStatus": "Official public company-domain email published by Varuste; route the supplier proposal to the category buyer or vendor-review owner.",
+      "emailVerificationStatus": "official_public_business_email",
+      "emailEvidence": "first_party_live_page_cache",
+      "emailEvidenceUrl": "https://varuste.net/",
       "website": "https://varuste.net/",
       "evidenceUrl": "https://www.google.com/search?q=%22Varuste%22%20%22verified%20outdoor%2C%20camping%2C%20travel%20and%20consumer%20electronics%20retail%20channel%22%20%22Finland%22%20buyer%20OR%20wholesale%20OR%20contact",
       "sourceEvidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
@@ -10218,7 +10228,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/10 17:05:41",
+        "localTime": "2026/8/10 17:14:50",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -10254,8 +10264,6 @@ window.DAILY_AUTOMATION_LATEST = {
         ],
         "error": ""
       },
-      "emailVerificationStatus": "official_public_business_email",
-      "emailEvidence": "first_party_live_page_cache",
       "linkedinUrl": "",
       "linkedinSearchUrl": "https://www.linkedin.com/search/results/all/?keywords=Varuste%20buyer%20outdoor%20LinkedIn",
       "googleSearchUrl": "https://www.google.com/search?q=site%3Avaruste.net%20%22Varuste%22%20contact%20buyer%20wholesale%20email%20vendor",
@@ -10312,6 +10320,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "contactPhone": "",
       "contactNote": "",
       "publicEmailStatus": "",
+      "emailVerificationStatus": "",
+      "emailEvidence": "",
+      "emailEvidenceUrl": "",
       "website": "https://www.bergfreunde.eu/",
       "evidenceUrl": "https://www.google.com/search?q=%22Bergfreunde%22%20%22verified%20outdoor%2C%20camping%2C%20travel%20and%20consumer%20electronics%20retail%20channel%22%20%22Germany%22%20buyer%20OR%20wholesale%20OR%20contact",
       "sourceEvidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
@@ -10334,7 +10345,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/Berlin",
-        "localTime": "Mon 11:06",
+        "localTime": "Mon 11:15",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -10363,7 +10374,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "discoveredAt": "2026-07-14T04:02:10.362Z",
       "firstPartyChannelVerification": {
         "status": "unreachable",
-        "verifiedAt": "2026-08-06T13:06:33.135Z",
+        "verifiedAt": "2026-08-10T09:15:02.983Z",
         "evidenceUrl": "https://www.bergfreunde.eu/",
         "httpStatus": 403,
         "signals": [],
@@ -10407,6 +10418,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "contactPhone": "",
       "contactNote": "",
       "publicEmailStatus": "",
+      "emailVerificationStatus": "",
+      "emailEvidence": "",
+      "emailEvidenceUrl": "",
       "website": "https://www.obelink.nl/",
       "evidenceUrl": "https://www.google.com/search?q=%22Obelink%22%20%22European%20camping%20and%20outdoor%20marketplace%20retailer%22%20%22Netherlands%22%20buyer%20OR%20wholesale%20OR%20contact",
       "sourceEvidenceUrl": "https://www.obelink.nl/obelink-partnerprogramma",
@@ -10429,7 +10443,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/10 17:05:41",
+        "localTime": "2026/8/10 17:14:50",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -10456,7 +10470,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "discoveredAt": "2026-07-14T04:02:10.362Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-06T13:06:27.181Z",
+        "verifiedAt": "2026-08-10T09:14:57.306Z",
         "evidenceUrl": "https://www.obelink.nl/obelink-partnerprogramma/",
         "httpStatus": 200,
         "signals": [
@@ -10520,6 +10534,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "contactPhone": "",
       "contactNote": "",
       "publicEmailStatus": "",
+      "emailVerificationStatus": "",
+      "emailEvidence": "",
+      "emailEvidenceUrl": "",
       "website": "https://www.auvieuxcampeur.fr/",
       "evidenceUrl": "https://www.google.com/search?q=%22Au%20Vieux%20Campeur%22%20%22verified%20outdoor%2C%20camping%2C%20travel%20and%20consumer%20electronics%20retail%20channel%22%20%22France%22%20buyer%20OR%20wholesale%20OR%20contact",
       "sourceEvidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
@@ -10542,7 +10559,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/Paris",
-        "localTime": "Mon 11:06",
+        "localTime": "Mon 11:15",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -10571,7 +10588,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "discoveredAt": "2026-07-14T04:02:10.362Z",
       "firstPartyChannelVerification": {
         "status": "unreachable",
-        "verifiedAt": "2026-08-06T16:05:18.544Z",
+        "verifiedAt": "2026-08-10T09:15:04.074Z",
         "evidenceUrl": "https://www.auvieuxcampeur.fr/",
         "httpStatus": 403,
         "signals": [],
@@ -10615,6 +10632,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "contactPhone": "",
       "contactNote": "",
       "publicEmailStatus": "",
+      "emailVerificationStatus": "",
+      "emailEvidence": "",
+      "emailEvidenceUrl": "",
       "website": "https://www.trekitt.co.uk/",
       "evidenceUrl": "https://www.google.com/search?q=%22Trekitt%22%20%22verified%20outdoor%2C%20camping%2C%20travel%20and%20consumer%20electronics%20retail%20channel%22%20%22United%20Kingdom%22%20buyer%20OR%20wholesale%20OR%20contact",
       "sourceEvidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
@@ -10637,7 +10657,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/10 17:05:41",
+        "localTime": "2026/8/10 17:14:50",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -10730,6 +10750,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "contactPhone": "",
       "contactNote": "",
       "publicEmailStatus": "",
+      "emailVerificationStatus": "",
+      "emailEvidence": "",
+      "emailEvidenceUrl": "",
       "website": "https://www.alpinetrek.co.uk/",
       "evidenceUrl": "https://www.google.com/search?q=%22Alpinetrek%22%20%22verified%20outdoor%2C%20camping%2C%20travel%20and%20consumer%20electronics%20retail%20channel%22%20%22United%20Kingdom%22%20buyer%20OR%20wholesale%20OR%20contact",
       "sourceEvidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
@@ -10752,7 +10775,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/London",
-        "localTime": "Mon 10:06",
+        "localTime": "Mon 10:15",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -10825,6 +10848,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "contactPhone": "",
       "contactNote": "",
       "publicEmailStatus": "",
+      "emailVerificationStatus": "",
+      "emailEvidence": "",
+      "emailEvidenceUrl": "",
       "website": "https://www.barrabes.com/",
       "evidenceUrl": "https://www.google.com/search?q=%22Barrabes%22%20%22verified%20outdoor%2C%20camping%2C%20travel%20and%20consumer%20electronics%20retail%20channel%22%20%22Spain%22%20buyer%20OR%20wholesale%20OR%20contact",
       "sourceEvidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
@@ -10847,7 +10873,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/Madrid",
-        "localTime": "Mon 11:06",
+        "localTime": "Mon 11:15",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -10922,6 +10948,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "contactPhone": "",
       "contactNote": "",
       "publicEmailStatus": "",
+      "emailVerificationStatus": "",
+      "emailEvidence": "",
+      "emailEvidenceUrl": "",
       "website": "https://www.ekosport.fr/",
       "evidenceUrl": "https://www.google.com/search?q=%22Ekosport%22%20%22verified%20outdoor%2C%20camping%2C%20travel%20and%20consumer%20electronics%20retail%20channel%22%20%22France%22%20buyer%20OR%20wholesale%20OR%20contact",
       "sourceEvidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
@@ -10944,7 +10973,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/Paris",
-        "localTime": "Mon 11:06",
+        "localTime": "Mon 11:15",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -11017,6 +11046,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "contactPhone": "",
       "contactNote": "",
       "publicEmailStatus": "",
+      "emailVerificationStatus": "",
+      "emailEvidence": "",
+      "emailEvidenceUrl": "",
       "website": "https://www.snowleader.com/",
       "evidenceUrl": "https://www.google.com/search?q=%22Snowleader%22%20%22verified%20outdoor%2C%20camping%2C%20travel%20and%20consumer%20electronics%20retail%20channel%22%20%22France%22%20buyer%20OR%20wholesale%20OR%20contact",
       "sourceEvidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
@@ -11039,7 +11071,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/Paris",
-        "localTime": "Mon 11:06",
+        "localTime": "Mon 11:15",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -11081,121 +11113,6 @@ window.DAILY_AUTOMATION_LATEST = {
       "priorityScore": 219
     },
     {
-      "id": "google-customer-tiso-website-contact",
-      "name": "Tiso",
-      "company": "Tiso",
-      "customerType": "key_account",
-      "discoveryMode": "autonomous_refill",
-      "country": "United Kingdom",
-      "countryEn": "United Kingdom",
-      "fitScore": 84,
-      "fitTier": "A",
-      "marketScore": 4.5,
-      "marketStatus": "open",
-      "agencyState": "open",
-      "agentCompany": "",
-      "keyword": "verified outdoor, camping and travel retail social refill channel",
-      "role": "Outdoor, camping, travel accessories, ecommerce or category buyer.",
-      "background": "Tiso is a qualified outdoor, camping, travel or sport retail prospect with category fit for FLEXTAIL portable outdoor electrics and Vollyc practical 3C products.",
-      "buyerPersona": "Outdoor, camping, travel accessories, ecommerce or category buyer.",
-      "targetMarkets": "",
-      "excludedMarkets": "",
-      "productCategory": "verified outdoor, camping and travel retail social refill channel",
-      "businessModel": "Retail Chain",
-      "productFit": "FLEXTAIL portable pumps, outdoor power, camping lighting and compact camping accessories",
-      "opportunity": "Tiso is a qualified outdoor, camping, travel or sport retail prospect with category fit for FLEXTAIL portable outdoor electrics and Vollyc practical 3C products.",
-      "linkedin_url": "",
-      "linkedin": "",
-      "publicEmail": "",
-      "contactEmail": "",
-      "vendorPortal": "https://www.tiso.com/",
-      "contactPhone": "",
-      "contactNote": "",
-      "publicEmailStatus": "",
-      "website": "https://www.tiso.com/",
-      "evidenceUrl": "https://www.google.com/search?q=%22Tiso%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22United%20Kingdom%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "sourceEvidenceUrl": "verified outdoor retailer official website and public social profile refill",
-      "externalVerificationStatus": "official_contact_form_verified",
-      "query": "https://www.google.com/search?q=%22Tiso%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22United%20Kingdom%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "source": "google_customer_discovery",
-      "sourceType": "google",
-      "discoveryProvider": "google",
-      "channel": "",
-      "identityStatus": "verified",
-      "officialSocialProfileVerified": false,
-      "socialProfileEvidenceUrl": "",
-      "socialProfileVerifiedAt": "",
-      "profiledAt": "",
-      "partnershipStatus": "",
-      "doNotOutreach": false,
-      "automationStatus": "",
-      "partnerNote": "",
-      "sendStatus": "",
-      "workingTime": {
-        "dueNow": true,
-        "timeZone": "local-market",
-        "localTime": "2026/8/10 17:05:41",
-        "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
-      },
-      "platform": "website_form",
-      "channelType": "website_form",
-      "platformUrl": "https://www.tiso.com/",
-      "url": "https://www.tiso.com/",
-      "contactUrl": "https://www.tiso.com/",
-      "contactSearchUrl": "https://www.google.com/search?q=site%3Awww.tiso.com%20%22Tiso%22%20contact%20buyer%20wholesale%20email%20vendor",
-      "emailFrom": "leo@flextailgear.com",
-      "websiteContactSubject": "FLEXTAIL retail partnership | 2026 assortment",
-      "websiteContactMessage": "Dear Tiso Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
-      "websiteContactFlow": "open_official_contact_us_fill_attach_auto_submit",
-      "action": "develop",
-      "reason": "official_website_contact_channel",
-      "alternateChannels": {
-        "linkedin": "",
-        "instagram": "https://www.instagram.com/tiso.outdoor/",
-        "facebook": "https://www.facebook.com/TisoOutdoor",
-        "websiteContact": "https://www.tiso.com/"
-      },
-      "invalidChannels": {},
-      "identitySource": "official homepage found; exact buyer/contact path still requires verification",
-      "channelPriority": 3,
-      "discoveredAt": "2026-07-16T05:03:53.170Z",
-      "firstPartyChannelVerification": {
-        "status": "checked",
-        "verifiedAt": "2026-08-10T07:05:22.342Z",
-        "evidenceUrl": "https://www.tiso.com/",
-        "httpStatus": 200,
-        "signals": [
-          "form_control",
-          "contact_invitation"
-        ],
-        "error": ""
-      },
-      "contactCapabilityVerified": true,
-      "linkedinUrl": "",
-      "linkedinSearchUrl": "https://www.linkedin.com/search/results/all/?keywords=Tiso%20buyer%20outdoor%20LinkedIn",
-      "googleSearchUrl": "https://www.google.com/search?q=site%3Awww.tiso.com%20%22Tiso%22%20contact%20buyer%20wholesale%20email%20vendor",
-      "dataSources": [
-        "google_linkedin_social_refill"
-      ],
-      "taskId": "google-customer-tiso-website-contact",
-      "lastStatus": "",
-      "lastEvidence": "",
-      "lastTouch": "",
-      "previouslyContacted": false,
-      "targetRegion": "europe",
-      "targetRegionScore": 45,
-      "contactChannelScore": 17,
-      "dealProbabilityScore": 218,
-      "priorityScore": 235,
-      "potentialSource": "google_linkedin_social_refill",
-      "nextAction": "official_supplier_route_contact",
-      "executionReadiness": {
-        "ready": true,
-        "gate": "official_supplier_route",
-        "evidenceUrl": "https://www.tiso.com/"
-      }
-    },
-    {
       "id": "google-customer-taunton-leisure-website-contact",
       "name": "Taunton Leisure",
       "company": "Taunton Leisure",
@@ -11227,6 +11144,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "contactPhone": "",
       "contactNote": "",
       "publicEmailStatus": "",
+      "emailVerificationStatus": "",
+      "emailEvidence": "",
+      "emailEvidenceUrl": "",
       "website": "https://www.tauntonleisure.com/",
       "evidenceUrl": "https://www.google.com/search?q=%22Taunton%20Leisure%22%20%22verified%20outdoor%2C%20camping%2C%20travel%20and%20consumer%20electronics%20retail%20channel%22%20%22United%20Kingdom%22%20buyer%20OR%20wholesale%20OR%20contact",
       "sourceEvidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
@@ -11249,7 +11169,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/10 17:05:41",
+        "localTime": "2026/8/10 17:14:50",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -11342,6 +11262,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "contactPhone": "",
       "contactNote": "",
       "publicEmailStatus": "",
+      "emailVerificationStatus": "",
+      "emailEvidence": "",
+      "emailEvidenceUrl": "",
       "website": "https://www.aboveandbeyond.ie/",
       "evidenceUrl": "https://www.google.com/search?q=%22Above%20and%20Beyond%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22Ireland%22%20buyer%20OR%20wholesale%20OR%20contact",
       "sourceEvidenceUrl": "verified outdoor retailer official website and public social profile refill",
@@ -11364,7 +11287,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/Dublin",
-        "localTime": "Mon 10:06",
+        "localTime": "Mon 10:15",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -11437,6 +11360,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "contactPhone": "",
       "contactNote": "",
       "publicEmailStatus": "",
+      "emailVerificationStatus": "",
+      "emailEvidence": "",
+      "emailEvidenceUrl": "",
       "website": "https://www.campz.de/",
       "evidenceUrl": "https://www.google.com/search?q=%22Campz%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22Germany%22%20buyer%20OR%20wholesale%20OR%20contact",
       "sourceEvidenceUrl": "verified outdoor retailer official website and public social profile refill",
@@ -11459,7 +11385,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/Berlin",
-        "localTime": "Mon 11:06",
+        "localTime": "Mon 11:15",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -11532,6 +11458,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "contactPhone": "",
       "contactNote": "",
       "publicEmailStatus": "",
+      "emailVerificationStatus": "",
+      "emailEvidence": "",
+      "emailEvidenceUrl": "",
       "website": "https://www.ldmountaincentre.com/",
       "evidenceUrl": "https://www.google.com/search?q=%22LD%20Mountain%20Centre%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22United%20Kingdom%22%20buyer%20OR%20wholesale%20OR%20contact",
       "sourceEvidenceUrl": "verified outdoor retailer official website and public social profile refill",
@@ -11554,7 +11483,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/London",
-        "localTime": "Mon 10:06",
+        "localTime": "Mon 10:15",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -11627,6 +11556,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "contactPhone": "",
       "contactNote": "",
       "publicEmailStatus": "",
+      "emailVerificationStatus": "",
+      "emailEvidence": "",
+      "emailEvidenceUrl": "",
       "website": "https://www.spejdersport.dk/",
       "evidenceUrl": "https://www.google.com/search?q=%22Spejder%20Sport%22%20%22verified%20outdoor%2C%20camping%2C%20travel%20and%20consumer%20electronics%20retail%20channel%22%20%22Denmark%22%20buyer%20OR%20wholesale%20OR%20contact",
       "sourceEvidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
@@ -11649,7 +11581,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/Copenhagen",
-        "localTime": "Mon 11:06",
+        "localTime": "Mon 11:15",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -11722,6 +11654,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "contactPhone": "",
       "contactNote": "",
       "publicEmailStatus": "",
+      "emailVerificationStatus": "",
+      "emailEvidence": "",
+      "emailEvidenceUrl": "",
       "website": "https://www.hardloop.fr/",
       "evidenceUrl": "https://www.google.com/search?q=%22Hardloop%22%20%22verified%20outdoor%2C%20camping%2C%20travel%20and%20consumer%20electronics%20retail%20channel%22%20%22France%22%20buyer%20OR%20wholesale%20OR%20contact",
       "sourceEvidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
@@ -11744,7 +11679,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/Paris",
-        "localTime": "Mon 11:06",
+        "localTime": "Mon 11:15",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -11817,6 +11752,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "contactPhone": "",
       "contactNote": "",
       "publicEmailStatus": "",
+      "emailVerificationStatus": "",
+      "emailEvidence": "",
+      "emailEvidenceUrl": "",
       "website": "https://www.sportpursuit.com/",
       "evidenceUrl": "https://www.google.com/search?q=%22SportPursuit%22%20%22verified%20outdoor%2C%20camping%2C%20travel%20and%20consumer%20electronics%20retail%20channel%22%20%22United%20Kingdom%22%20buyer%20OR%20wholesale%20OR%20contact",
       "sourceEvidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
@@ -11839,7 +11777,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/London",
-        "localTime": "Mon 10:06",
+        "localTime": "Mon 10:15",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -11912,6 +11850,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "contactPhone": "",
       "contactNote": "",
       "publicEmailStatus": "Public Rock Creek contact address; route to buyer/vendor team.",
+      "emailVerificationStatus": "official_public_business_email",
+      "emailEvidence": "first_party_live_page_cache",
+      "emailEvidenceUrl": "",
       "website": "https://www.rockcreek.com/",
       "evidenceUrl": "https://www.google.com/search?q=%22Rock%2FCreek%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
       "sourceEvidenceUrl": "verified outdoor retailer official website and public social profile refill",
@@ -11934,7 +11875,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/10 17:05:41",
+        "localTime": "2026/8/10 17:14:50",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -11967,8 +11908,6 @@ window.DAILY_AUTOMATION_LATEST = {
         "signals": [],
         "error": "fetch failed"
       },
-      "emailVerificationStatus": "official_public_business_email",
-      "emailEvidence": "first_party_live_page_cache",
       "linkedinUrl": "",
       "linkedinSearchUrl": "https://www.linkedin.com/search/results/all/?keywords=Rock%2FCreek%20buyer%20outdoor%20LinkedIn",
       "googleSearchUrl": "https://www.google.com/search?q=site%3Awww.rockcreek.com%20%22Rock%2FCreek%22%20contact%20buyer%20wholesale%20email%20vendor",
@@ -12025,6 +11964,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "contactPhone": "",
       "contactNote": "",
       "publicEmailStatus": "",
+      "emailVerificationStatus": "",
+      "emailEvidence": "",
+      "emailEvidenceUrl": "",
       "website": "https://nextadventure.net/",
       "evidenceUrl": "https://www.google.com/search?q=%22Next%20Adventure%22%20%22verified%20outdoor%2C%20camping%2C%20travel%20and%20consumer%20electronics%20retail%20channel%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
       "sourceEvidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
@@ -12047,7 +11989,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/10 17:05:41",
+        "localTime": "2026/8/10 17:14:50",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -12140,6 +12082,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "contactPhone": "",
       "contactNote": "",
       "publicEmailStatus": "Official supplier email published on the BBQ Fans become-a-supplier page.",
+      "emailVerificationStatus": "official_public_business_email",
+      "emailEvidence": "first_party_live_page_cache",
+      "emailEvidenceUrl": "",
       "website": "https://www.bbqfans.com/",
       "evidenceUrl": "https://www.google.com/search?q=%22BBQ%20Fans%22%20%22outdoor%20cooking%20and%20camping%20retailer%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
       "sourceEvidenceUrl": "https://www.bbqfans.com/become-a-supplier/",
@@ -12162,7 +12107,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/10 17:05:41",
+        "localTime": "2026/8/10 17:14:50",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -12200,8 +12145,6 @@ window.DAILY_AUTOMATION_LATEST = {
         "error": ""
       },
       "contactCapabilityVerified": true,
-      "emailVerificationStatus": "official_public_business_email",
-      "emailEvidence": "first_party_live_page_cache",
       "linkedinUrl": "",
       "linkedinSearchUrl": "https://www.linkedin.com/search/results/all/?keywords=BBQ%20Fans%20buyer%20outdoor%20LinkedIn",
       "googleSearchUrl": "https://www.google.com/search?q=site%3Awww.bbqfans.com%20%22BBQ%20Fans%22%20contact%20buyer%20wholesale%20email%20vendor",
@@ -12258,6 +12201,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "contactPhone": "",
       "contactNote": "",
       "publicEmailStatus": "",
+      "emailVerificationStatus": "",
+      "emailEvidence": "",
+      "emailEvidenceUrl": "",
       "website": "https://www.tractorsupply.com/",
       "evidenceUrl": "https://www.google.com/search?q=%22Tractor%20Supply%20Company%22%20%22rural%20lifestyle%2C%20outdoor%20sporting%20goods%20and%20outdoor%20power%20equipment%20retailer%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
       "sourceEvidenceUrl": "https://www.tractorsupply.com/tsc/cms/policies-information/vendor-information",
@@ -12280,7 +12226,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/10 17:05:41",
+        "localTime": "2026/8/10 17:14:50",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -12369,6 +12315,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "contactPhone": "",
       "contactNote": "",
       "publicEmailStatus": "",
+      "emailVerificationStatus": "",
+      "emailEvidence": "",
+      "emailEvidenceUrl": "",
       "website": "https://www.kitterytradingpost.com/",
       "evidenceUrl": "https://www.google.com/search?q=%22Kittery%20Trading%20Post%22%20%22verified%20outdoor%2C%20camping%2C%20travel%20and%20consumer%20electronics%20retail%20channel%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
       "sourceEvidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
@@ -12391,7 +12340,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/10 17:05:41",
+        "localTime": "2026/8/10 17:14:50",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -12481,6 +12430,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "contactPhone": "",
       "contactNote": "",
       "publicEmailStatus": "",
+      "emailVerificationStatus": "",
+      "emailEvidence": "",
+      "emailEvidenceUrl": "",
       "website": "https://neptunemountaineering.com/",
       "evidenceUrl": "https://www.google.com/search?q=%22Neptune%20Mountaineering%22%20%22verified%20outdoor%2C%20camping%2C%20travel%20and%20consumer%20electronics%20retail%20channel%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
       "sourceEvidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
@@ -12503,7 +12455,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/10 17:05:41",
+        "localTime": "2026/8/10 17:14:50",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -12596,6 +12548,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "contactPhone": "",
       "contactNote": "",
       "publicEmailStatus": "",
+      "emailVerificationStatus": "",
+      "emailEvidence": "",
+      "emailEvidenceUrl": "",
       "website": "https://www.avidmax.com/",
       "evidenceUrl": "https://www.google.com/search?q=%22AvidMax%20Outfitters%22%20%22verified%20outdoor%2C%20camping%2C%20travel%20and%20consumer%20electronics%20retail%20channel%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
       "sourceEvidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
@@ -12618,7 +12573,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/10 17:05:41",
+        "localTime": "2026/8/10 17:14:50",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -12711,6 +12666,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "contactPhone": "",
       "contactNote": "",
       "publicEmailStatus": "",
+      "emailVerificationStatus": "",
+      "emailEvidence": "",
+      "emailEvidenceUrl": "",
       "website": "https://www.rona.ca/",
       "evidenceUrl": "https://www.google.com/search?q=%22RONA%22%20%22home%20improvement%2C%20hardware%20and%20outdoor%20products%20retailer%22%20%22Canada%22%20buyer%20OR%20wholesale%20OR%20contact",
       "sourceEvidenceUrl": "https://vendors.rona.ca/product-supplier",
@@ -12733,7 +12691,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/10 17:05:41",
+        "localTime": "2026/8/10 17:14:50",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -12823,6 +12781,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "contactPhone": "",
       "contactNote": "",
       "publicEmailStatus": "Official public company-domain email published by Tentworld; route the supplier proposal to the category buyer or vendor-review owner.",
+      "emailVerificationStatus": "official_public_business_email",
+      "emailEvidence": "first_party_live_page_cache",
+      "emailEvidenceUrl": "https://www.tentworld.com.au/contact-us",
       "website": "https://www.tentworld.com.au/",
       "evidenceUrl": "https://www.google.com/search?q=%22Tentworld%22%20%22verified%20outdoor%2C%20camping%2C%20travel%20and%20consumer%20electronics%20retail%20channel%22%20%22Australia%22%20buyer%20OR%20wholesale%20OR%20contact",
       "sourceEvidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
@@ -12845,7 +12806,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/10 17:05:41",
+        "localTime": "2026/8/10 17:14:50",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -12878,8 +12839,6 @@ window.DAILY_AUTOMATION_LATEST = {
         "signals": [],
         "error": ""
       },
-      "emailVerificationStatus": "official_public_business_email",
-      "emailEvidence": "first_party_live_page_cache",
       "linkedinUrl": "",
       "linkedinSearchUrl": "https://www.linkedin.com/search/results/all/?keywords=Tentworld%20buyer%20outdoor%20LinkedIn",
       "googleSearchUrl": "https://www.google.com/search?q=site%3Awww.tentworld.com.au%20%22Tentworld%22%20contact%20buyer%20wholesale%20email%20vendor",
@@ -12936,6 +12895,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "contactPhone": "",
       "contactNote": "",
       "publicEmailStatus": "Official public business email on the Bivouac Outdoor contact page; route to category buyer or vendor-review owner.",
+      "emailVerificationStatus": "official_public_business_email",
+      "emailEvidence": "first_party_live_page_cache",
+      "emailEvidenceUrl": "https://www.bivouac.co.nz/",
       "website": "https://www.bivouac.co.nz/",
       "evidenceUrl": "https://www.google.com/search?q=%22Bivouac%20Outdoor%22%20%22verified%20outdoor%2C%20camping%2C%20travel%20and%20consumer%20electronics%20retail%20channel%22%20%22New%20Zealand%22%20buyer%20OR%20wholesale%20OR%20contact",
       "sourceEvidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
@@ -12958,7 +12920,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/10 17:05:41",
+        "localTime": "2026/8/10 17:14:50",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -12993,8 +12955,6 @@ window.DAILY_AUTOMATION_LATEST = {
         ],
         "error": ""
       },
-      "emailVerificationStatus": "official_public_business_email",
-      "emailEvidence": "first_party_live_page_cache",
       "linkedinUrl": "",
       "linkedinSearchUrl": "https://www.linkedin.com/search/results/all/?keywords=Bivouac%20Outdoor%20buyer%20outdoor%20LinkedIn",
       "googleSearchUrl": "https://www.google.com/search?q=site%3Awww.bivouac.co.nz%20%22Bivouac%20Outdoor%22%20contact%20buyer%20wholesale%20email%20vendor",
@@ -13051,6 +13011,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "contactPhone": "",
       "contactNote": "",
       "publicEmailStatus": "Official public business email on the Wildfire Sports contact page; route to category buyer or vendor-review owner.",
+      "emailVerificationStatus": "official_public_business_email",
+      "emailEvidence": "first_party_live_page_cache",
+      "emailEvidenceUrl": "https://www.wildfiresports.com.au/contact-us",
       "website": "https://www.wildfiresports.com.au/",
       "evidenceUrl": "https://www.google.com/search?q=%22Wildfire%20Sports%22%20%22verified%20outdoor%2C%20camping%2C%20travel%20and%20consumer%20electronics%20retail%20channel%22%20%22Australia%22%20buyer%20OR%20wholesale%20OR%20contact",
       "sourceEvidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
@@ -13073,7 +13036,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/10 17:05:41",
+        "localTime": "2026/8/10 17:14:50",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -13106,8 +13069,6 @@ window.DAILY_AUTOMATION_LATEST = {
         "signals": [],
         "error": ""
       },
-      "emailVerificationStatus": "official_public_business_email",
-      "emailEvidence": "first_party_live_page_cache",
       "linkedinUrl": "",
       "linkedinSearchUrl": "https://www.linkedin.com/search/results/all/?keywords=Wildfire%20Sports%20buyer%20outdoor%20LinkedIn",
       "googleSearchUrl": "https://www.google.com/search?q=site%3Awww.wildfiresports.com.au%20%22Wildfire%20Sports%22%20contact%20buyer%20wholesale%20email%20vendor",
@@ -13164,6 +13125,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "contactPhone": "",
       "contactNote": "",
       "publicEmailStatus": "",
+      "emailVerificationStatus": "",
+      "emailEvidence": "",
+      "emailEvidenceUrl": "",
       "website": "https://www.outdoornature.com.au/",
       "evidenceUrl": "https://www.google.com/search?q=%22Outdoor%20Nature%22%20%22outdoor%2C%20hiking%2C%20camping%2C%20travel%20and%20adventure%20retailer%22%20%22Australia%22%20buyer%20OR%20wholesale%20OR%20contact",
       "sourceEvidenceUrl": "https://www.outdoornature.com.au/become-a-supplier/",
@@ -13186,7 +13150,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/10 17:05:41",
+        "localTime": "2026/8/10 17:14:50",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -13213,7 +13177,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "discoveredAt": "2026-07-29T12:52:55.130Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-06T13:06:36.139Z",
+        "verifiedAt": "2026-08-10T09:15:03.797Z",
         "evidenceUrl": "https://www.outdoornature.com.au/become-a-supplier/",
         "httpStatus": 200,
         "signals": [
@@ -13280,6 +13244,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "contactPhone": "",
       "contactNote": "",
       "publicEmailStatus": "",
+      "emailVerificationStatus": "",
+      "emailEvidence": "",
+      "emailEvidenceUrl": "",
       "website": "https://www.intersport.no/",
       "evidenceUrl": "https://www.google.com/search?q=%22Intersport%20Norway%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22Norway%22%20buyer%20OR%20wholesale%20OR%20contact",
       "sourceEvidenceUrl": "verified outdoor retailer official website and public social profile refill",
@@ -13302,7 +13269,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/10 17:05:41",
+        "localTime": "2026/8/10 17:14:50",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -13392,6 +13359,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "contactPhone": "",
       "contactNote": "",
       "publicEmailStatus": "",
+      "emailVerificationStatus": "",
+      "emailEvidence": "",
+      "emailEvidenceUrl": "",
       "website": "https://www.aboveandbeyond.ie/",
       "evidenceUrl": "https://www.google.com/search?q=%22Above%20and%20Beyond%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22Ireland%22%20buyer%20OR%20wholesale%20OR%20contact",
       "sourceEvidenceUrl": "verified outdoor retailer official website and public social profile refill",
@@ -13414,7 +13384,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/Dublin",
-        "localTime": "Mon 10:06",
+        "localTime": "Mon 10:15",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -13481,6 +13451,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "contactPhone": "",
       "contactNote": "",
       "publicEmailStatus": "",
+      "emailVerificationStatus": "",
+      "emailEvidence": "",
+      "emailEvidenceUrl": "",
       "website": "https://www.campz.de/",
       "evidenceUrl": "https://www.google.com/search?q=%22Campz%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22Germany%22%20buyer%20OR%20wholesale%20OR%20contact",
       "sourceEvidenceUrl": "verified outdoor retailer official website and public social profile refill",
@@ -13503,7 +13476,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/Berlin",
-        "localTime": "Mon 11:06",
+        "localTime": "Mon 11:15",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -13570,6 +13543,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "contactPhone": "",
       "contactNote": "",
       "publicEmailStatus": "",
+      "emailVerificationStatus": "",
+      "emailEvidence": "",
+      "emailEvidenceUrl": "",
       "website": "https://www.ldmountaincentre.com/",
       "evidenceUrl": "https://www.google.com/search?q=%22LD%20Mountain%20Centre%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22United%20Kingdom%22%20buyer%20OR%20wholesale%20OR%20contact",
       "sourceEvidenceUrl": "verified outdoor retailer official website and public social profile refill",
@@ -13592,7 +13568,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/London",
-        "localTime": "Mon 10:06",
+        "localTime": "Mon 10:15",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -13659,6 +13635,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "contactPhone": "",
       "contactNote": "",
       "publicEmailStatus": "",
+      "emailVerificationStatus": "",
+      "emailEvidence": "",
+      "emailEvidenceUrl": "",
       "website": "https://www.bergfreunde.eu/",
       "evidenceUrl": "https://www.google.com/search?q=%22Bergfreunde%22%20%22verified%20outdoor%2C%20camping%2C%20travel%20and%20consumer%20electronics%20retail%20channel%22%20%22Germany%22%20buyer%20OR%20wholesale%20OR%20contact",
       "sourceEvidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
@@ -13681,7 +13660,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/Berlin",
-        "localTime": "Mon 11:06",
+        "localTime": "Mon 11:15",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -13702,7 +13681,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "discoveredAt": "2026-07-14T04:02:10.362Z",
       "firstPartyChannelVerification": {
         "status": "unreachable",
-        "verifiedAt": "2026-08-06T13:06:33.135Z",
+        "verifiedAt": "2026-08-10T09:15:02.983Z",
         "evidenceUrl": "https://www.bergfreunde.eu/",
         "httpStatus": 403,
         "signals": [],
@@ -13746,6 +13725,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "contactPhone": "",
       "contactNote": "",
       "publicEmailStatus": "",
+      "emailVerificationStatus": "",
+      "emailEvidence": "",
+      "emailEvidenceUrl": "",
       "website": "https://www.aboveandbeyond.ie/",
       "evidenceUrl": "https://www.google.com/search?q=%22Above%20and%20Beyond%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22Ireland%22%20buyer%20OR%20wholesale%20OR%20contact",
       "sourceEvidenceUrl": "verified outdoor retailer official website and public social profile refill",
@@ -13768,7 +13750,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/Dublin",
-        "localTime": "Mon 10:06",
+        "localTime": "Mon 10:15",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -13833,6 +13815,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "contactPhone": "",
       "contactNote": "",
       "publicEmailStatus": "",
+      "emailVerificationStatus": "",
+      "emailEvidence": "",
+      "emailEvidenceUrl": "",
       "website": "https://www.campz.de/",
       "evidenceUrl": "https://www.google.com/search?q=%22Campz%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22Germany%22%20buyer%20OR%20wholesale%20OR%20contact",
       "sourceEvidenceUrl": "verified outdoor retailer official website and public social profile refill",
@@ -13855,7 +13840,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/Berlin",
-        "localTime": "Mon 11:06",
+        "localTime": "Mon 11:15",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -13920,6 +13905,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "contactPhone": "",
       "contactNote": "",
       "publicEmailStatus": "",
+      "emailVerificationStatus": "",
+      "emailEvidence": "",
+      "emailEvidenceUrl": "",
       "website": "https://www.ldmountaincentre.com/",
       "evidenceUrl": "https://www.google.com/search?q=%22LD%20Mountain%20Centre%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22United%20Kingdom%22%20buyer%20OR%20wholesale%20OR%20contact",
       "sourceEvidenceUrl": "verified outdoor retailer official website and public social profile refill",
@@ -13942,7 +13930,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/London",
-        "localTime": "Mon 10:06",
+        "localTime": "Mon 10:15",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -14215,6 +14203,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "contactPhone": "",
       "contactNote": "",
       "publicEmailStatus": "",
+      "emailVerificationStatus": "",
+      "emailEvidence": "",
+      "emailEvidenceUrl": "",
       "website": "https://www.de-wit.nl/",
       "evidenceUrl": "https://www.google.com/search?q=%22De%20Wit%20Schijndel%22%20%22verified%20outdoor%2C%20camping%2C%20travel%20and%20consumer%20electronics%20retail%20channel%22%20%22Netherlands%22%20buyer%20OR%20wholesale%20OR%20contact",
       "sourceEvidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
@@ -14237,7 +14228,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Asia/Shanghai",
-        "localTime": "Mon 17:06",
+        "localTime": "Mon 17:15",
         "window": "outside_work_hours",
         "nextBest": "Asia/Shanghai morning",
         "weight": 0
@@ -14312,6 +14303,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "contactPhone": "",
       "contactNote": "",
       "publicEmailStatus": "",
+      "emailVerificationStatus": "",
+      "emailEvidence": "",
+      "emailEvidenceUrl": "",
       "website": "https://www.outdoorxl.nl/",
       "evidenceUrl": "https://www.google.com/search?q=%22OutdoorXL%22%20%22verified%20outdoor%2C%20camping%2C%20travel%20and%20consumer%20electronics%20retail%20channel%22%20%22Netherlands%22%20buyer%20OR%20wholesale%20OR%20contact",
       "sourceEvidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
@@ -14334,7 +14328,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Asia/Shanghai",
-        "localTime": "Mon 17:06",
+        "localTime": "Mon 17:15",
         "window": "outside_work_hours",
         "nextBest": "Asia/Shanghai morning",
         "weight": 0
@@ -14407,6 +14401,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "contactPhone": "",
       "contactNote": "",
       "publicEmailStatus": "",
+      "emailVerificationStatus": "",
+      "emailEvidence": "",
+      "emailEvidenceUrl": "",
       "website": "https://www.outdoorspecialist.nl/",
       "evidenceUrl": "https://www.google.com/search?q=%22Outdoor%20Specialist%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22Netherlands%22%20buyer%20OR%20wholesale%20OR%20contact",
       "sourceEvidenceUrl": "verified outdoor retailer official website and public social profile refill",
@@ -14429,7 +14426,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Asia/Shanghai",
-        "localTime": "Mon 17:06",
+        "localTime": "Mon 17:15",
         "window": "outside_work_hours",
         "nextBest": "Asia/Shanghai morning",
         "weight": 0
@@ -14504,6 +14501,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "contactPhone": "",
       "contactNote": "",
       "publicEmailStatus": "",
+      "emailVerificationStatus": "",
+      "emailEvidence": "",
+      "emailEvidenceUrl": "",
       "website": "https://vpo.ca/",
       "evidenceUrl": "https://www.google.com/search?q=%22Valhalla%20Pure%20Outfitters%22%20%22verified%20outdoor%2C%20camping%2C%20travel%20and%20consumer%20electronics%20retail%20channel%22%20%22Canada%22%20buyer%20OR%20wholesale%20OR%20contact",
       "sourceEvidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
@@ -14526,7 +14526,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Mon 05:06",
+        "localTime": "Mon 05:15",
         "window": "outside_work_hours",
         "nextBest": "America/Toronto morning",
         "weight": 0
@@ -14599,6 +14599,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "contactPhone": "",
       "contactNote": "",
       "publicEmailStatus": "",
+      "emailVerificationStatus": "",
+      "emailEvidence": "",
+      "emailEvidenceUrl": "",
       "website": "https://www.atmosphere.ca/",
       "evidenceUrl": "https://www.google.com/search?q=%22Atmosphere%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22Canada%22%20buyer%20OR%20wholesale%20OR%20contact",
       "sourceEvidenceUrl": "verified outdoor retailer official website and public social profile refill",
@@ -14621,7 +14624,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Mon 05:06",
+        "localTime": "Mon 05:15",
         "window": "outside_work_hours",
         "nextBest": "America/Toronto morning",
         "weight": 0
@@ -14696,6 +14699,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "contactPhone": "",
       "contactNote": "",
       "publicEmailStatus": "",
+      "emailVerificationStatus": "",
+      "emailEvidence": "",
+      "emailEvidenceUrl": "",
       "website": "https://www.ems.com/",
       "evidenceUrl": "https://www.google.com/search?q=%22Eastern%20Mountain%20Sports%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
       "sourceEvidenceUrl": "verified outdoor retailer official website and public social profile refill",
@@ -14718,7 +14724,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Mon 05:06",
+        "localTime": "Mon 05:15",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -14799,6 +14805,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "contactPhone": "",
       "contactNote": "",
       "publicEmailStatus": "",
+      "emailVerificationStatus": "",
+      "emailEvidence": "",
+      "emailEvidenceUrl": "",
       "website": "https://www.lacordee.com/",
       "evidenceUrl": "https://www.google.com/search?q=%22La%20Cordee%22%20%22verified%20outdoor%2C%20camping%2C%20travel%20and%20consumer%20electronics%20retail%20channel%22%20%22Canada%22%20buyer%20OR%20wholesale%20OR%20contact",
       "sourceEvidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
@@ -14821,7 +14830,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Mon 05:06",
+        "localTime": "Mon 05:15",
         "window": "outside_work_hours",
         "nextBest": "America/Toronto morning",
         "weight": 0
@@ -14896,6 +14905,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "contactPhone": "",
       "contactNote": "",
       "publicEmailStatus": "",
+      "emailVerificationStatus": "",
+      "emailEvidence": "",
+      "emailEvidenceUrl": "",
       "website": "https://www.moosejaw.com/",
       "evidenceUrl": "https://www.google.com/search?q=%22Moosejaw%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
       "sourceEvidenceUrl": "verified outdoor retailer official website and public social profile refill",
@@ -14918,7 +14930,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Mon 05:06",
+        "localTime": "Mon 05:15",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -14999,6 +15011,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "contactPhone": "",
       "contactNote": "",
       "publicEmailStatus": "",
+      "emailVerificationStatus": "",
+      "emailEvidence": "",
+      "emailEvidenceUrl": "",
       "website": "https://mountaineer.com/",
       "evidenceUrl": "https://www.google.com/search?q=%22The%20Mountaineer%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
       "sourceEvidenceUrl": "verified outdoor retailer official website and public social profile refill",
@@ -15021,7 +15036,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Mon 05:06",
+        "localTime": "Mon 05:15",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -15096,6 +15111,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "contactPhone": "",
       "contactNote": "",
       "publicEmailStatus": "",
+      "emailVerificationStatus": "",
+      "emailEvidence": "",
+      "emailEvidenceUrl": "",
       "website": "https://latulippe.com/",
       "evidenceUrl": "https://www.google.com/search?q=%22Latulippe%22%20%22verified%20outdoor%2C%20camping%2C%20travel%20and%20consumer%20electronics%20retail%20channel%22%20%22Canada%22%20buyer%20OR%20wholesale%20OR%20contact",
       "sourceEvidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
@@ -15118,7 +15136,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Mon 05:06",
+        "localTime": "Mon 05:15",
         "window": "outside_work_hours",
         "nextBest": "America/Toronto morning",
         "weight": 0
@@ -15191,6 +15209,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "contactPhone": "",
       "contactNote": "",
       "publicEmailStatus": "",
+      "emailVerificationStatus": "",
+      "emailEvidence": "",
+      "emailEvidenceUrl": "",
       "website": "https://www.hikingshack.com/",
       "evidenceUrl": "https://www.google.com/search?q=%22Arizona%20Hiking%20Shack%22%20%22verified%20outdoor%2C%20camping%2C%20travel%20and%20consumer%20electronics%20retail%20channel%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
       "sourceEvidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
@@ -15213,7 +15234,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Mon 05:06",
+        "localTime": "Mon 05:15",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -15286,6 +15307,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "contactPhone": "",
       "contactNote": "",
       "publicEmailStatus": "",
+      "emailVerificationStatus": "",
+      "emailEvidence": "",
+      "emailEvidenceUrl": "",
       "website": "https://www.bentgate.com/",
       "evidenceUrl": "https://www.google.com/search?q=%22Bentgate%20Mountaineering%22%20%22verified%20outdoor%2C%20camping%2C%20travel%20and%20consumer%20electronics%20retail%20channel%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
       "sourceEvidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
@@ -15308,7 +15332,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Mon 05:06",
+        "localTime": "Mon 05:15",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -15383,6 +15407,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "contactPhone": "",
       "contactNote": "",
       "publicEmailStatus": "",
+      "emailVerificationStatus": "",
+      "emailEvidence": "",
+      "emailEvidenceUrl": "",
       "website": "https://thegreatoutdoorshop.com/",
       "evidenceUrl": "https://www.google.com/search?q=%22The%20Great%20Outdoor%20Shop%22%20%22verified%20outdoor%2C%20camping%2C%20travel%20and%20consumer%20electronics%20retail%20channel%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
       "sourceEvidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
@@ -15405,7 +15432,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Mon 05:06",
+        "localTime": "Mon 05:15",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -15478,6 +15505,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "contactPhone": "",
       "contactNote": "",
       "publicEmailStatus": "",
+      "emailVerificationStatus": "",
+      "emailEvidence": "",
+      "emailEvidenceUrl": "",
       "website": "https://www.atmosphere.ca/",
       "evidenceUrl": "https://www.google.com/search?q=%22Atmosphere%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22Canada%22%20buyer%20OR%20wholesale%20OR%20contact",
       "sourceEvidenceUrl": "verified outdoor retailer official website and public social profile refill",
@@ -15500,7 +15530,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Mon 05:06",
+        "localTime": "Mon 05:15",
         "window": "outside_work_hours",
         "nextBest": "America/Toronto morning",
         "weight": 0
@@ -15569,6 +15599,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "contactPhone": "",
       "contactNote": "",
       "publicEmailStatus": "",
+      "emailVerificationStatus": "",
+      "emailEvidence": "",
+      "emailEvidenceUrl": "",
       "website": "https://www.ems.com/",
       "evidenceUrl": "https://www.google.com/search?q=%22Eastern%20Mountain%20Sports%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
       "sourceEvidenceUrl": "verified outdoor retailer official website and public social profile refill",
@@ -15591,7 +15624,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Mon 05:06",
+        "localTime": "Mon 05:15",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -15666,6 +15699,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "contactPhone": "",
       "contactNote": "",
       "publicEmailStatus": "",
+      "emailVerificationStatus": "",
+      "emailEvidence": "",
+      "emailEvidenceUrl": "",
       "website": "https://www.moosejaw.com/",
       "evidenceUrl": "https://www.google.com/search?q=%22Moosejaw%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
       "sourceEvidenceUrl": "verified outdoor retailer official website and public social profile refill",
@@ -15688,7 +15724,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Mon 05:06",
+        "localTime": "Mon 05:15",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -15763,6 +15799,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "contactPhone": "",
       "contactNote": "",
       "publicEmailStatus": "",
+      "emailVerificationStatus": "",
+      "emailEvidence": "",
+      "emailEvidenceUrl": "",
       "website": "https://mountaineer.com/",
       "evidenceUrl": "https://www.google.com/search?q=%22The%20Mountaineer%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
       "sourceEvidenceUrl": "verified outdoor retailer official website and public social profile refill",
@@ -15785,7 +15824,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Mon 05:06",
+        "localTime": "Mon 05:15",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -15854,6 +15893,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "contactPhone": "",
       "contactNote": "",
       "publicEmailStatus": "",
+      "emailVerificationStatus": "",
+      "emailEvidence": "",
+      "emailEvidenceUrl": "",
       "website": "https://www.tentworld.co.nz/",
       "evidenceUrl": "https://www.google.com/search?q=%22Tentworld%20NZ%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22New%20Zealand%22%20buyer%20OR%20wholesale%20OR%20contact",
       "sourceEvidenceUrl": "verified outdoor retailer official website and public social profile refill",
@@ -15876,7 +15918,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Pacific/Auckland",
-        "localTime": "Mon 21:06",
+        "localTime": "Mon 21:15",
         "window": "outside_work_hours",
         "nextBest": "Pacific/Auckland morning",
         "weight": 0
@@ -15943,6 +15985,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "contactPhone": "",
       "contactNote": "",
       "publicEmailStatus": "",
+      "emailVerificationStatus": "",
+      "emailEvidence": "",
+      "emailEvidenceUrl": "",
       "website": "https://www.atmosphere.ca/",
       "evidenceUrl": "https://www.google.com/search?q=%22Atmosphere%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22Canada%22%20buyer%20OR%20wholesale%20OR%20contact",
       "sourceEvidenceUrl": "verified outdoor retailer official website and public social profile refill",
@@ -15965,7 +16010,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Mon 05:06",
+        "localTime": "Mon 05:15",
         "window": "outside_work_hours",
         "nextBest": "America/Toronto morning",
         "weight": 0
@@ -16032,6 +16077,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "contactPhone": "",
       "contactNote": "",
       "publicEmailStatus": "",
+      "emailVerificationStatus": "",
+      "emailEvidence": "",
+      "emailEvidenceUrl": "",
       "website": "https://mountaineer.com/",
       "evidenceUrl": "https://www.google.com/search?q=%22The%20Mountaineer%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22United%20States%22%20buyer%20OR%20wholesale%20OR%20contact",
       "sourceEvidenceUrl": "verified outdoor retailer official website and public social profile refill",
@@ -16054,7 +16102,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Mon 05:06",
+        "localTime": "Mon 05:15",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -16121,6 +16169,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "contactPhone": "",
       "contactNote": "",
       "publicEmailStatus": "",
+      "emailVerificationStatus": "",
+      "emailEvidence": "",
+      "emailEvidenceUrl": "",
       "website": "https://www.tentworld.co.nz/",
       "evidenceUrl": "https://www.google.com/search?q=%22Tentworld%20NZ%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22New%20Zealand%22%20buyer%20OR%20wholesale%20OR%20contact",
       "sourceEvidenceUrl": "verified outdoor retailer official website and public social profile refill",
@@ -16143,7 +16194,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Pacific/Auckland",
-        "localTime": "Mon 21:06",
+        "localTime": "Mon 21:15",
         "window": "outside_work_hours",
         "nextBest": "Pacific/Auckland morning",
         "weight": 0
@@ -17456,7 +17507,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/London",
-        "localTime": "Mon 10:06",
+        "localTime": "Mon 10:15",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -17513,7 +17564,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/London",
-        "localTime": "Mon 10:06",
+        "localTime": "Mon 10:15",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -17570,7 +17621,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/London",
-        "localTime": "Mon 10:06",
+        "localTime": "Mon 10:15",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -17627,7 +17678,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "Asia/Jakarta",
-        "localTime": "Mon 16:06",
+        "localTime": "Mon 16:15",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
@@ -17684,7 +17735,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "Asia/Kolkata",
-        "localTime": "Mon 14:36",
+        "localTime": "Mon 14:45",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
@@ -17741,7 +17792,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Mon 05:06",
+        "localTime": "Mon 05:15",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -17798,7 +17849,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Mon 05:06",
+        "localTime": "Mon 05:15",
         "window": "outside_work_hours",
         "nextBest": "America/Toronto morning",
         "weight": 0
@@ -17855,7 +17906,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Mon 05:06",
+        "localTime": "Mon 05:15",
         "window": "outside_work_hours",
         "nextBest": "America/Toronto morning",
         "weight": 0
@@ -17912,7 +17963,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Australia/Sydney",
-        "localTime": "Mon 19:06",
+        "localTime": "Mon 19:15",
         "window": "outside_work_hours",
         "nextBest": "Australia/Sydney morning",
         "weight": 0
@@ -17969,7 +18020,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Pacific/Auckland",
-        "localTime": "Mon 21:06",
+        "localTime": "Mon 21:15",
         "window": "outside_work_hours",
         "nextBest": "Pacific/Auckland morning",
         "weight": 0
@@ -18026,7 +18077,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Pacific/Auckland",
-        "localTime": "Mon 21:06",
+        "localTime": "Mon 21:15",
         "window": "outside_work_hours",
         "nextBest": "Pacific/Auckland morning",
         "weight": 0
@@ -18083,7 +18134,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Pacific/Auckland",
-        "localTime": "Mon 21:06",
+        "localTime": "Mon 21:15",
         "window": "outside_work_hours",
         "nextBest": "Pacific/Auckland morning",
         "weight": 0
@@ -18140,7 +18191,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Pacific/Auckland",
-        "localTime": "Mon 21:06",
+        "localTime": "Mon 21:15",
         "window": "outside_work_hours",
         "nextBest": "Pacific/Auckland morning",
         "weight": 0
@@ -18197,7 +18248,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Pacific/Auckland",
-        "localTime": "Mon 21:06",
+        "localTime": "Mon 21:15",
         "window": "outside_work_hours",
         "nextBest": "Pacific/Auckland morning",
         "weight": 0
@@ -18240,6 +18291,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "contactPhone": "",
       "contactNote": "",
       "publicEmailStatus": "",
+      "emailVerificationStatus": "official_public_business_email",
+      "emailEvidence": "first_party_live_page_cache",
+      "emailEvidenceUrl": "",
       "website": "https://www.eetgroup.com/en-eu/",
       "evidenceUrl": "https://www.google.com/search?q=%22EET%20Group%22%20%22pan-European%20consumer%20electronics%20and%20value-added%20technology%20distributor%22%20%22Denmark%22%20buyer%20OR%20wholesale%20OR%20contact",
       "sourceEvidenceUrl": "https://www.eetgroup.com/en-eu/eet/become-a-supplier",
@@ -18262,7 +18316,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/Copenhagen",
-        "localTime": "Mon 11:06",
+        "localTime": "Mon 11:15",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -18297,8 +18351,6 @@ window.DAILY_AUTOMATION_LATEST = {
         "signals": [],
         "error": ""
       },
-      "emailVerificationStatus": "official_public_business_email",
-      "emailEvidence": "first_party_live_page_cache",
       "targetRegion": "europe",
       "targetRegionScore": 45,
       "contactChannelScore": 29,
@@ -18367,9 +18419,12 @@ window.DAILY_AUTOMATION_LATEST = {
       "contactPhone": "",
       "contactNote": "",
       "publicEmailStatus": "",
+      "emailVerificationStatus": "official_public_business_email",
+      "emailEvidence": "first_party_live_page_cache",
+      "emailEvidenceUrl": "",
       "website": "https://www.aqipa.com/",
       "evidenceUrl": "https://www.google.com/search?q=%22Aqipa%22%20%22pan-European%20premium%20consumer%20electronics%20and%20action%20gear%20distributor%22%20%22Austria%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "sourceEvidenceUrl": "https://support.aqipa.com/en-US/kb/articles/anfrage-partner-werden",
+      "sourceEvidenceUrl": "https://support.aqipa.com/en-US/new-ticket",
       "externalVerificationStatus": "official_contact_form_verified",
       "query": "https://www.google.com/search?q=%22Aqipa%22%20%22pan-European%20premium%20consumer%20electronics%20and%20action%20gear%20distributor%22%20%22Austria%22%20buyer%20OR%20wholesale%20OR%20contact",
       "source": "google_customer_discovery",
@@ -18389,7 +18444,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/Vienna",
-        "localTime": "Mon 11:06",
+        "localTime": "Mon 11:15",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -18418,7 +18473,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "discoveredAt": "2026-07-14T04:02:10.362Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-06T13:06:08.218Z",
+        "verifiedAt": "2026-08-10T09:14:52.795Z",
         "evidenceUrl": "https://support.aqipa.com/en-US/new-ticket",
         "httpStatus": 200,
         "signals": [
@@ -18429,8 +18484,6 @@ window.DAILY_AUTOMATION_LATEST = {
         "error": ""
       },
       "contactCapabilityVerified": true,
-      "emailVerificationStatus": "official_public_business_email",
-      "emailEvidence": "first_party_live_page_cache",
       "targetRegion": "europe",
       "targetRegionScore": 45,
       "contactChannelScore": 29,
@@ -18486,6 +18539,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "linkedin_url": "https://uk.linkedin.com/company/summit-international",
       "linkedin": "https://uk.linkedin.com/company/summit-international",
       "contactEmail": "info@summitint.co",
+      "emailVerificationStatus": "official_public_business_email",
+      "emailEvidence": "first_party_live_page_cache",
+      "emailEvidenceUrl": "",
       "website": "https://www.summitint.co/",
       "evidenceUrl": "https://www.google.com/search?q=%22Summit%20International%22%20%22outdoor%20importer%20and%20distributor%22%20%22United%20Kingdom%22%20buyer%20OR%20wholesale%20OR%20contact",
       "sourceEvidenceUrl": "https://www.summitint.co/",
@@ -18508,7 +18564,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/London",
-        "localTime": "Mon 10:06",
+        "localTime": "Mon 10:15",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -18558,8 +18614,6 @@ window.DAILY_AUTOMATION_LATEST = {
         "error": ""
       },
       "contactCapabilityVerified": true,
-      "emailVerificationStatus": "official_public_business_email",
-      "emailEvidence": "first_party_live_page_cache",
       "targetRegion": "europe",
       "targetRegionScore": 45,
       "contactChannelScore": 29,
@@ -18601,9 +18655,12 @@ window.DAILY_AUTOMATION_LATEST = {
       "contactPhone": "",
       "contactNote": "",
       "publicEmailStatus": "",
+      "emailVerificationStatus": "",
+      "emailEvidence": "",
+      "emailEvidenceUrl": "",
       "website": "https://komsa.com/en/",
       "evidenceUrl": "https://www.google.com/search?q=%22KOMSA%22%20%22European%20consumer%20electronics%20sales%20marketing%20and%20distribution%20group%22%20%22Germany%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "sourceEvidenceUrl": "https://komsa.com/en/contact/",
+      "sourceEvidenceUrl": "https://komsa.com/en/contact",
       "externalVerificationStatus": "official_contact_form_verified",
       "query": "https://www.google.com/search?q=%22KOMSA%22%20%22European%20consumer%20electronics%20sales%20marketing%20and%20distribution%20group%22%20%22Germany%22%20buyer%20OR%20wholesale%20OR%20contact",
       "source": "google_customer_discovery",
@@ -18623,7 +18680,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/Berlin",
-        "localTime": "Mon 11:06",
+        "localTime": "Mon 11:15",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -18651,12 +18708,15 @@ window.DAILY_AUTOMATION_LATEST = {
       "channelPriority": 3,
       "discoveredAt": "2026-07-20T13:25:02.177Z",
       "firstPartyChannelVerification": {
-        "status": "unreachable",
-        "verifiedAt": "2026-08-06T13:06:23.155Z",
-        "evidenceUrl": "https://komsa.com/en/contact/",
-        "httpStatus": 0,
-        "signals": [],
-        "error": "timeout"
+        "status": "checked",
+        "verifiedAt": "2026-08-10T09:14:53.986Z",
+        "evidenceUrl": "https://komsa.com/en/contact",
+        "httpStatus": 200,
+        "signals": [
+          "form_control",
+          "contact_invitation"
+        ],
+        "error": ""
       },
       "contactCapabilityVerified": true,
       "targetRegion": "europe",
@@ -18700,6 +18760,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "contactPhone": "",
       "contactNote": "",
       "publicEmailStatus": "",
+      "emailVerificationStatus": "",
+      "emailEvidence": "",
+      "emailEvidenceUrl": "",
       "website": "https://www.cmsdistribution.com/",
       "evidenceUrl": "https://www.google.com/search?q=%22CMS%20Distribution%22%20%22European%20value-added%20consumer%20electronics%20and%20technology%20distributor%22%20%22Ireland%22%20buyer%20OR%20wholesale%20OR%20contact",
       "sourceEvidenceUrl": "https://www.cmsdistribution.com/contact-us",
@@ -18722,7 +18785,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/Dublin",
-        "localTime": "Mon 10:06",
+        "localTime": "Mon 10:15",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -18751,7 +18814,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "discoveredAt": "2026-07-14T04:02:10.362Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-06T13:06:03.878Z",
+        "verifiedAt": "2026-08-10T09:14:51.959Z",
         "evidenceUrl": "https://www.cmsdistribution.com/contact-us",
         "httpStatus": 200,
         "signals": [
@@ -18814,6 +18877,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "linkedin_url": "https://uk.linkedin.com/company/cotswold-outdoor",
       "linkedin": "https://uk.linkedin.com/company/cotswold-outdoor",
       "contactEmail": "enquiries@cotswoldoutdoor.com",
+      "emailVerificationStatus": "official_public_business_email",
+      "emailEvidence": "first_party_live_page_cache",
+      "emailEvidenceUrl": "",
       "website": "https://www.cotswoldoutdoor.com/",
       "evidenceUrl": "https://www.google.com/search?q=%22Cotswold%20Outdoor%22%20%22outdoor%20retail%20chain%22%20%22United%20Kingdom%22%20buyer%20OR%20wholesale%20OR%20contact",
       "sourceEvidenceUrl": "https://www.cotswoldoutdoor.com/",
@@ -18836,7 +18902,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/London",
-        "localTime": "Mon 10:06",
+        "localTime": "Mon 10:15",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -18865,7 +18931,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "discoveredAt": "2026-07-14T04:02:10.362Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-06T16:05:20.474Z",
+        "verifiedAt": "2026-08-10T09:15:05.681Z",
         "evidenceUrl": "https://www.cotswoldoutdoor.com/",
         "httpStatus": 200,
         "signals": [
@@ -18875,8 +18941,6 @@ window.DAILY_AUTOMATION_LATEST = {
         "error": ""
       },
       "contactCapabilityVerified": true,
-      "emailVerificationStatus": "official_public_business_email",
-      "emailEvidence": "first_party_live_page_cache",
       "targetRegion": "europe",
       "targetRegionScore": 45,
       "contactChannelScore": 29,
@@ -18932,6 +18996,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "linkedin_url": "https://www.linkedin.com/company/decathlon-group",
       "linkedin": "https://www.linkedin.com/company/decathlon-group",
       "contactEmail": "international.media@decathlon.com",
+      "emailVerificationStatus": "official_public_business_email",
+      "emailEvidence": "first_party_live_page_cache",
+      "emailEvidenceUrl": "",
       "website": "https://www.decathlon.fr/",
       "evidenceUrl": "https://www.google.com/search?q=%22Decathlon%20France%22%20%22sporting%20goods%20retail%20chain%22%20%22France%22%20buyer%20OR%20wholesale%20OR%20contact",
       "sourceEvidenceUrl": "https://www.decathlon.fr/",
@@ -18954,7 +19021,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/Paris",
-        "localTime": "Mon 11:06",
+        "localTime": "Mon 11:15",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -18983,7 +19050,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "discoveredAt": "2026-07-14T04:02:10.362Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-06T16:05:20.795Z",
+        "verifiedAt": "2026-08-10T09:15:06.942Z",
         "evidenceUrl": "https://www.decathlon.fr/help/app/contact",
         "httpStatus": 200,
         "signals": [
@@ -18991,8 +19058,6 @@ window.DAILY_AUTOMATION_LATEST = {
         ],
         "error": ""
       },
-      "emailVerificationStatus": "official_public_business_email",
-      "emailEvidence": "first_party_live_page_cache",
       "targetRegion": "europe",
       "targetRegionScore": 45,
       "contactChannelScore": 29,
@@ -19048,6 +19113,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "linkedin_url": "https://www.linkedin.com/company/decathlon-group",
       "linkedin": "https://www.linkedin.com/company/decathlon-group",
       "contactEmail": "international.media@decathlon.com",
+      "emailVerificationStatus": "official_public_business_email",
+      "emailEvidence": "first_party_live_page_cache",
+      "emailEvidenceUrl": "",
       "website": "https://www.decathlon.de/",
       "evidenceUrl": "https://www.google.com/search?q=%22Decathlon%20Germany%22%20%22sporting%20goods%20retail%20chain%22%20%22Germany%22%20buyer%20OR%20wholesale%20OR%20contact",
       "sourceEvidenceUrl": "https://www.decathlon.de/",
@@ -19070,7 +19138,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/Berlin",
-        "localTime": "Mon 11:06",
+        "localTime": "Mon 11:15",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -19105,14 +19173,12 @@ window.DAILY_AUTOMATION_LATEST = {
       "discoveredAt": "2026-07-14T04:02:10.362Z",
       "firstPartyChannelVerification": {
         "status": "unreachable",
-        "verifiedAt": "2026-08-06T16:05:21.783Z",
+        "verifiedAt": "2026-08-10T09:15:08.650Z",
         "evidenceUrl": "https://www.decathlon.de/help/app/contact",
         "httpStatus": 403,
         "signals": [],
         "error": ""
       },
-      "emailVerificationStatus": "official_public_business_email",
-      "emailEvidence": "first_party_live_page_cache",
       "targetRegion": "europe",
       "targetRegionScore": 45,
       "contactChannelScore": 29,
@@ -19154,6 +19220,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "contactPhone": "",
       "contactNote": "",
       "publicEmailStatus": "",
+      "emailVerificationStatus": "official_public_business_email",
+      "emailEvidence": "first_party_live_page_cache",
+      "emailEvidenceUrl": "",
       "website": "https://www.naturkompaniet.se/",
       "evidenceUrl": "https://www.google.com/search?q=%22Naturkompaniet%22%20%22verified%20outdoor%2C%20camping%2C%20travel%20and%20consumer%20electronics%20retail%20channel%22%20%22Sweden%22%20buyer%20OR%20wholesale%20OR%20contact",
       "sourceEvidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
@@ -19176,7 +19245,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/Stockholm",
-        "localTime": "Mon 11:06",
+        "localTime": "Mon 11:15",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -19214,8 +19283,6 @@ window.DAILY_AUTOMATION_LATEST = {
         ],
         "error": ""
       },
-      "emailVerificationStatus": "official_public_business_email",
-      "emailEvidence": "first_party_live_page_cache",
       "targetRegion": "europe",
       "targetRegionScore": 45,
       "contactChannelScore": 25,
@@ -19257,6 +19324,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "contactPhone": "",
       "contactNote": "",
       "publicEmailStatus": "Official public company-domain email on the Outnorth contact page; route the supplier proposal to the category buyer or vendor-review owner.",
+      "emailVerificationStatus": "official_public_business_email",
+      "emailEvidence": "first_party_live_page_cache",
+      "emailEvidenceUrl": "https://www.outnorth.com/int/faq/contact",
       "website": "https://www.outnorth.com/",
       "evidenceUrl": "https://www.google.com/search?q=%22Outnorth%22%20%22verified%20outdoor%2C%20camping%2C%20travel%20and%20consumer%20electronics%20retail%20channel%22%20%22Sweden%22%20buyer%20OR%20wholesale%20OR%20contact",
       "sourceEvidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
@@ -19279,7 +19349,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/Stockholm",
-        "localTime": "Mon 11:06",
+        "localTime": "Mon 11:15",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -19318,8 +19388,6 @@ window.DAILY_AUTOMATION_LATEST = {
         "error": ""
       },
       "contactCapabilityVerified": true,
-      "emailVerificationStatus": "official_public_business_email",
-      "emailEvidence": "first_party_live_page_cache",
       "targetRegion": "europe",
       "targetRegionScore": 45,
       "contactChannelScore": 25,
@@ -19361,6 +19429,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "contactPhone": "",
       "contactNote": "",
       "publicEmailStatus": "",
+      "emailVerificationStatus": "official_public_business_email",
+      "emailEvidence": "first_party_live_page_cache",
+      "emailEvidenceUrl": "",
       "website": "https://ultralightoutdoorgear.co.uk/",
       "evidenceUrl": "https://www.google.com/search?q=%22Ultralight%20Outdoor%20Gear%22%20%22verified%20outdoor%2C%20camping%2C%20travel%20and%20consumer%20electronics%20retail%20channel%22%20%22United%20Kingdom%22%20buyer%20OR%20wholesale%20OR%20contact",
       "sourceEvidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
@@ -19383,7 +19454,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/London",
-        "localTime": "Mon 10:06",
+        "localTime": "Mon 10:15",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -19423,8 +19494,6 @@ window.DAILY_AUTOMATION_LATEST = {
         "error": ""
       },
       "contactCapabilityVerified": true,
-      "emailVerificationStatus": "official_public_business_email",
-      "emailEvidence": "first_party_live_page_cache",
       "targetRegion": "europe",
       "targetRegionScore": 45,
       "contactChannelScore": 25,
@@ -19466,6 +19535,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "contactPhone": "",
       "contactNote": "",
       "publicEmailStatus": "",
+      "emailVerificationStatus": "official_public_business_email",
+      "emailEvidence": "first_party_live_page_cache",
+      "emailEvidenceUrl": "",
       "website": "https://www.friluftsland.dk/",
       "evidenceUrl": "https://www.google.com/search?q=%22Friluftsland%22%20%22verified%20outdoor%2C%20camping%2C%20travel%20and%20consumer%20electronics%20retail%20channel%22%20%22Denmark%22%20buyer%20OR%20wholesale%20OR%20contact",
       "sourceEvidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
@@ -19488,7 +19560,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/Copenhagen",
-        "localTime": "Mon 11:06",
+        "localTime": "Mon 11:15",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -19526,8 +19598,6 @@ window.DAILY_AUTOMATION_LATEST = {
         ],
         "error": ""
       },
-      "emailVerificationStatus": "official_public_business_email",
-      "emailEvidence": "first_party_live_page_cache",
       "targetRegion": "europe",
       "targetRegionScore": 45,
       "contactChannelScore": 25,
@@ -19569,6 +19639,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "contactPhone": "",
       "contactNote": "",
       "publicEmailStatus": "Public Sport Conrad contact address; route to buyer/vendor team.",
+      "emailVerificationStatus": "official_public_business_email",
+      "emailEvidence": "first_party_live_page_cache",
+      "emailEvidenceUrl": "",
       "website": "https://www.sport-conrad.com/",
       "evidenceUrl": "https://www.google.com/search?q=%22Sport%20Conrad%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22Germany%22%20buyer%20OR%20wholesale%20OR%20contact",
       "sourceEvidenceUrl": "verified outdoor retailer official website and public social profile refill",
@@ -19591,7 +19664,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/Berlin",
-        "localTime": "Mon 11:06",
+        "localTime": "Mon 11:15",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -19628,8 +19701,6 @@ window.DAILY_AUTOMATION_LATEST = {
         ],
         "error": ""
       },
-      "emailVerificationStatus": "official_public_business_email",
-      "emailEvidence": "first_party_live_page_cache",
       "targetRegion": "europe",
       "targetRegionScore": 45,
       "contactChannelScore": 29,
@@ -19638,6 +19709,111 @@ window.DAILY_AUTOMATION_LATEST = {
       "lastStatus": "sent_confirmed",
       "lastEvidence": "official_public_business_email;recipient_edit_state_exact_match:info@sport-conrad.de;sender_identity_verified:Leo@flextailgear.com;send_click_once;composer_closed;sent_folder_exact_subject_visible:2026-08-05T20:54+08:00",
       "lastTouch": "2026-08-05T12:54:00.000Z"
+    },
+    {
+      "id": "google-customer-tiso-website-contact",
+      "name": "Tiso",
+      "company": "Tiso",
+      "customerType": "key_account",
+      "discoveryMode": "autonomous_refill",
+      "country": "United Kingdom",
+      "countryEn": "United Kingdom",
+      "fitScore": 84,
+      "fitTier": "A",
+      "marketScore": 4.5,
+      "marketStatus": "open",
+      "agencyState": "open",
+      "agentCompany": "",
+      "keyword": "verified outdoor, camping and travel retail social refill channel",
+      "role": "Outdoor, camping, travel accessories, ecommerce or category buyer.",
+      "background": "Tiso is a qualified outdoor, camping, travel or sport retail prospect with category fit for FLEXTAIL portable outdoor electrics and Vollyc practical 3C products.",
+      "buyerPersona": "Outdoor, camping, travel accessories, ecommerce or category buyer.",
+      "targetMarkets": "",
+      "excludedMarkets": "",
+      "productCategory": "verified outdoor, camping and travel retail social refill channel",
+      "businessModel": "Retail Chain",
+      "productFit": "FLEXTAIL portable pumps, outdoor power, camping lighting and compact camping accessories",
+      "opportunity": "Tiso is a qualified outdoor, camping, travel or sport retail prospect with category fit for FLEXTAIL portable outdoor electrics and Vollyc practical 3C products.",
+      "linkedin_url": "",
+      "linkedin": "",
+      "publicEmail": "mail@tiso.co.uk",
+      "contactEmail": "mail@tiso.co.uk",
+      "vendorPortal": "https://www.tiso.com/pages/contact",
+      "contactPhone": "",
+      "contactNote": "",
+      "publicEmailStatus": "Official Tiso general-business address explicitly published for organisations seeking to work with Tiso or discuss opportunities.",
+      "emailVerificationStatus": "official_public_business_email",
+      "emailEvidence": "official_contact_page",
+      "emailEvidenceUrl": "https://www.tiso.com/pages/contact",
+      "website": "https://www.tiso.com/",
+      "evidenceUrl": "https://www.google.com/search?q=%22Tiso%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22United%20Kingdom%22%20buyer%20OR%20wholesale%20OR%20contact",
+      "sourceEvidenceUrl": "verified outdoor retailer official website and public social profile refill",
+      "externalVerificationStatus": "official_contact_form_verified",
+      "query": "https://www.google.com/search?q=%22Tiso%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22United%20Kingdom%22%20buyer%20OR%20wholesale%20OR%20contact",
+      "source": "google_customer_discovery",
+      "sourceType": "google",
+      "discoveryProvider": "google",
+      "channel": "",
+      "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
+      "socialProfileEvidenceUrl": "",
+      "socialProfileVerifiedAt": "",
+      "profiledAt": "",
+      "partnershipStatus": "",
+      "doNotOutreach": false,
+      "automationStatus": "",
+      "partnerNote": "",
+      "sendStatus": "",
+      "workingTime": {
+        "dueNow": true,
+        "timeZone": "Europe/London",
+        "localTime": "Mon 10:15",
+        "window": "morning",
+        "nextBest": "now",
+        "weight": 1
+      },
+      "platform": "website_form",
+      "channelType": "website_form",
+      "platformUrl": "https://www.tiso.com/pages/contact",
+      "url": "https://www.tiso.com/pages/contact",
+      "contactUrl": "https://www.tiso.com/pages/contact",
+      "contactSearchUrl": "https://www.google.com/search?q=site%3Awww.tiso.com%20%22Tiso%22%20contact%20buyer%20wholesale%20email%20vendor",
+      "emailFrom": "leo@flextailgear.com",
+      "websiteContactSubject": "FLEXTAIL retail partnership | 2026 assortment",
+      "websiteContactMessage": "Dear Tiso Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
+      "websiteContactFlow": "open_official_contact_us_fill_attach_auto_submit",
+      "action": "cooldown",
+      "reason": "previous_customer_development_no_repeat",
+      "alternateChannels": {
+        "linkedin": "",
+        "instagram": "https://www.instagram.com/tiso.outdoor/",
+        "facebook": "https://www.facebook.com/TisoOutdoor",
+        "websiteContact": "https://www.tiso.com/pages/contact"
+      },
+      "invalidChannels": {},
+      "identitySource": "official website contact path + Google buyer/contact query",
+      "channelPriority": 3,
+      "discoveredAt": "2026-07-16T05:03:53.170Z",
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-10T07:05:22.342Z",
+        "evidenceUrl": "https://www.tiso.com/",
+        "httpStatus": 200,
+        "signals": [
+          "form_control",
+          "contact_invitation"
+        ],
+        "error": ""
+      },
+      "contactCapabilityVerified": true,
+      "targetRegion": "europe",
+      "targetRegionScore": 45,
+      "contactChannelScore": 29,
+      "dealProbabilityScore": 230,
+      "priorityScore": 230,
+      "lastStatus": "sent_confirmed",
+      "lastEvidence": "official_contact_page_explicitly_routes_organisations_seeking_to_work_with_Tiso_to_mail_at_tiso_co_uk;sender_Leo_at_flextailgear_verified;recipient_subject_body_gate_passed;send_clicked_once;alibaba_sent_confirmation_visible;composer_closed",
+      "lastTouch": "2026-08-10T09:20:00.000Z"
     },
     {
       "linkedinUrl": "https://uk.linkedin.com/company/go-outdoors-ltd",
@@ -19685,9 +19861,12 @@ window.DAILY_AUTOMATION_LATEST = {
       "linkedin_url": "https://uk.linkedin.com/company/go-outdoors-ltd",
       "linkedin": "https://uk.linkedin.com/company/go-outdoors-ltd",
       "contactEmail": "",
+      "emailVerificationStatus": "",
+      "emailEvidence": "",
+      "emailEvidenceUrl": "",
       "website": "https://www.gooutdoors.co.uk/",
       "evidenceUrl": "https://www.google.com/search?q=%22GO%20Outdoors%22%20%22outdoor%20retail%20chain%22%20%22United%20Kingdom%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "sourceEvidenceUrl": "https://www.gooutdoors.co.uk/",
+      "sourceEvidenceUrl": "https://www.gooutdoors.co.uk/pages/contact",
       "externalVerificationStatus": "official_contact_form_verified",
       "query": "https://www.google.com/search?q=%22GO%20Outdoors%22%20%22outdoor%20retail%20chain%22%20%22United%20Kingdom%22%20buyer%20OR%20wholesale%20OR%20contact",
       "source": "google_customer_discovery",
@@ -19707,7 +19886,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/London",
-        "localTime": "Mon 10:06",
+        "localTime": "Mon 10:15",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -19736,7 +19915,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "discoveredAt": "2026-07-14T04:02:10.362Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-06T13:06:29.045Z",
+        "verifiedAt": "2026-08-10T09:14:58.104Z",
         "evidenceUrl": "https://www.gooutdoors.co.uk/pages/contact",
         "httpStatus": 200,
         "signals": [
@@ -19787,6 +19966,9 @@ window.DAILY_AUTOMATION_LATEST = {
       "contactPhone": "",
       "contactNote": "",
       "publicEmailStatus": "",
+      "emailVerificationStatus": "",
+      "emailEvidence": "",
+      "emailEvidenceUrl": "",
       "website": "https://www.globetrotter.de/",
       "evidenceUrl": "https://www.google.com/search?q=%22Globetrotter%22%20%22verified%20outdoor%2C%20camping%2C%20travel%20and%20consumer%20electronics%20retail%20channel%22%20%22Germany%22%20buyer%20OR%20wholesale%20OR%20contact",
       "sourceEvidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
@@ -19809,7 +19991,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/Berlin",
-        "localTime": "Mon 11:06",
+        "localTime": "Mon 11:15",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -19838,7 +20020,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "discoveredAt": "2026-07-14T04:02:10.362Z",
       "firstPartyChannelVerification": {
         "status": "unreachable",
-        "verifiedAt": "2026-08-06T13:06:34.158Z",
+        "verifiedAt": "2026-08-10T09:15:03.085Z",
         "evidenceUrl": "https://www.globetrotter.de/",
         "httpStatus": 403,
         "signals": [],
@@ -19852,104 +20034,6 @@ window.DAILY_AUTOMATION_LATEST = {
       "lastStatus": "sent_confirmed",
       "lastEvidence": "instagram_message_sent_confirmed_after_send_click;instagram_draft_inserted_verified;sentText:false;outgoingBubble:false;emptyComposer:true;follow_not_available;instagram_post_opened;post_liked;comment_submitted",
       "lastTouch": "2026-07-15T10:15:53.903Z"
-    },
-    {
-      "id": "google-customer-bergzeit-website-contact",
-      "name": "Bergzeit",
-      "company": "Bergzeit",
-      "customerType": "key_account",
-      "discoveryMode": "autonomous_refill",
-      "country": "Germany",
-      "countryEn": "Germany",
-      "fitScore": 90,
-      "fitTier": "A+",
-      "marketScore": 4.5,
-      "marketStatus": "open",
-      "agencyState": "open",
-      "agentCompany": "",
-      "keyword": "verified outdoor, camping, travel and consumer electronics retail channel",
-      "role": "Outdoor electronics, camping accessories, travel products or consumer electronics category buyer.",
-      "background": "Bergzeit is listed or qualified as an outdoor/camping specialty retail prospect with assortment fit for lightweight outdoor electrics and practical high-rotation 3C products.",
-      "buyerPersona": "Outdoor electronics, camping accessories, travel products or consumer electronics category buyer.",
-      "targetMarkets": "",
-      "excludedMarkets": "",
-      "productCategory": "verified outdoor, camping, travel and consumer electronics retail channel",
-      "businessModel": "Retail Chain",
-      "productFit": "FLEXTAIL portable pumps, outdoor power, camping lighting and compact camping accessories",
-      "opportunity": "Bergzeit is listed or qualified as an outdoor/camping specialty retail prospect with assortment fit for lightweight outdoor electrics and practical high-rotation 3C products.",
-      "linkedin_url": "",
-      "linkedin": "",
-      "publicEmail": "",
-      "contactEmail": "",
-      "vendorPortal": "https://www.bergzeit.de/",
-      "contactPhone": "",
-      "contactNote": "",
-      "publicEmailStatus": "",
-      "website": "https://www.bergzeit.de/",
-      "evidenceUrl": "https://www.google.com/search?q=%22Bergzeit%22%20%22verified%20outdoor%2C%20camping%2C%20travel%20and%20consumer%20electronics%20retail%20channel%22%20%22Germany%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "sourceEvidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
-      "externalVerificationStatus": "",
-      "query": "https://www.google.com/search?q=%22Bergzeit%22%20%22verified%20outdoor%2C%20camping%2C%20travel%20and%20consumer%20electronics%20retail%20channel%22%20%22Germany%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "source": "google_customer_discovery",
-      "sourceType": "google",
-      "discoveryProvider": "google",
-      "channel": "",
-      "identityStatus": "verified",
-      "officialSocialProfileVerified": false,
-      "socialProfileEvidenceUrl": "",
-      "socialProfileVerifiedAt": "",
-      "profiledAt": "",
-      "partnershipStatus": "",
-      "doNotOutreach": false,
-      "automationStatus": "",
-      "partnerNote": "",
-      "sendStatus": "",
-      "workingTime": {
-        "dueNow": true,
-        "timeZone": "Europe/Berlin",
-        "localTime": "Mon 11:06",
-        "window": "morning",
-        "nextBest": "now",
-        "weight": 1
-      },
-      "platform": "website_form",
-      "channelType": "website_form",
-      "platformUrl": "https://www.bergzeit.de/",
-      "url": "https://www.bergzeit.de/",
-      "contactUrl": "https://www.bergzeit.de/",
-      "contactSearchUrl": "https://www.google.com/search?q=site%3Awww.bergzeit.de%20%22Bergzeit%22%20contact%20buyer%20wholesale%20email%20vendor",
-      "emailFrom": "leo@flextailgear.com",
-      "websiteContactSubject": "FLEXTAIL retail partnership | 2026 assortment",
-      "websiteContactMessage": "Dear Bergzeit Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
-      "websiteContactFlow": "open_official_contact_us_fill_attach_auto_submit",
-      "action": "cooldown",
-      "reason": "previous_customer_development_no_repeat",
-      "alternateChannels": {
-        "linkedin": "",
-        "instagram": "https://www.instagram.com/bergzeit/",
-        "facebook": "",
-        "websiteContact": "https://www.bergzeit.de/"
-      },
-      "invalidChannels": {},
-      "identitySource": "official homepage found; exact buyer/contact path still requires verification",
-      "channelPriority": 3,
-      "discoveredAt": "2026-07-14T04:02:10.362Z",
-      "firstPartyChannelVerification": {
-        "status": "checked",
-        "verifiedAt": "2026-08-06T16:05:22.493Z",
-        "evidenceUrl": "https://www.bergzeit.de/",
-        "httpStatus": 200,
-        "signals": [],
-        "error": ""
-      },
-      "targetRegion": "europe",
-      "targetRegionScore": 45,
-      "contactChannelScore": 17,
-      "dealProbabilityScore": 224,
-      "priorityScore": 224,
-      "lastStatus": "sent_confirmed",
-      "lastEvidence": "instagram_message_sent_confirmed_after_send_click;instagram_draft_inserted_verified;sentText:false;outgoingBubble:false;emptyComposer:true;follow_not_available;instagram_post_opened;post_liked;comment_submitted",
-      "lastTouch": "2026-07-15T10:17:26.027Z"
     }
   ],
   "scheduledLater": [],

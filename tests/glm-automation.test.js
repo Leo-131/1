@@ -483,6 +483,18 @@ test('daily queue preserves official email provenance needed by the Alibaba exec
   assert.ok(dailyRunnerSource.includes("evidenceUrl: task.evidenceUrl || ''"));
 });
 
+test('Google discovery promotes a first-party general-business email above a failed website or social route', () => {
+  const leads = buildLeads(400);
+  const tiso = leads.find(item => item.company === 'Tiso' && item.platform === 'website_form');
+
+  assert.ok(tiso);
+  assert.equal(tiso.contactEmail, 'mail@tiso.co.uk');
+  assert.equal(tiso.emailVerificationStatus, 'official_public_business_email');
+  assert.equal(tiso.emailEvidence, 'official_contact_page');
+  assert.equal(tiso.emailEvidenceUrl, 'https://www.tiso.com/pages/contact');
+  assert.equal(tiso.action, 'email_priority');
+});
+
 test('Google discovery keeps a refill pool for new prospects after current customers are developed', () => {
   const run = buildDiscoveryRun(160);
   assert.ok(run.candidatePoolCount >= 23);
