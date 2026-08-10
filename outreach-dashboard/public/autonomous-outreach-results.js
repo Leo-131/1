@@ -15347,22 +15347,5 @@ window.AUTONOMOUS_OUTREACH_RESULTS = [
     "messageId": "<4e3a5b51-9567-6b06-a7c9-2b2ae2627c9e@flextailgear.com>",
     "sentFolder": "已发送",
     "sentUid": 3026
-  },
-  {
-    "task_id": "google-customer-weyfarm-outdoors-website-contact",
-    "company": "WeyFarm Outdoors",
-    "approval_version": 1,
-    "status": "sent_confirmed",
-    "agent": "alibaba-enterprise-mail",
-    "browserTransportUsed": "none",
-    "timestamp": "2026-08-10T11:15:17.342Z",
-    "target_url": "https://weyfarm-outdoors.co.uk/",
-    "evidence": "smtp_accepted;message_id:<4e3a5b51-9567-6b06-a7c9-2b2ae2627c9e@flextailgear.com>;sent_folder_message_confirmed;contact_path_strategy_v2",
-    "draft": "Dear WeyFarm Outdoors Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
-    "subject": "FLEXTAIL retail partnership | 2026 assortment",
-    "recipientEmail": "info@weyfarm-outdoors.co.uk",
-    "messageId": "<4e3a5b51-9567-6b06-a7c9-2b2ae2627c9e@flextailgear.com>",
-    "sentFolder": "已发送",
-    "sentUid": 3026
   }
 ];

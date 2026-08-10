@@ -689,11 +689,16 @@ function recordAutomationResult(item, result) {
   if (receiptValidation.ok) entry.extensionReceipt = result.extensionReceipt;
   const file = path.join(__dirname, 'autonomous-outreach-results.js');
   const results = readJsonScriptArray(file, 'AUTONOMOUS_OUTREACH_RESULTS');
-  const duplicate = results.some(existing => existing.task_id === entry.task_id
-    && existing.status === entry.status
-    && existing.target_url === entry.target_url
-    && existing.evidence === entry.evidence
-    && automationLocalDay(existing.timestamp) === automationLocalDay(entry.timestamp));
+  const duplicate = results.some(existing => {
+    const sameMessageId = entry.messageId && existing.messageId
+      && String(existing.messageId).trim().toLowerCase() === String(entry.messageId).trim().toLowerCase();
+    const sameLogicalDelivery = existing.task_id === entry.task_id
+      && existing.status === entry.status
+      && existing.evidence === entry.evidence
+      && String(existing.recipientEmail || '').trim().toLowerCase() === String(entry.recipientEmail || '').trim().toLowerCase()
+      && automationLocalDay(existing.timestamp) === automationLocalDay(entry.timestamp);
+    return sameMessageId || sameLogicalDelivery;
+  });
   if (!duplicate) {
     results.push(entry);
     writeJsonScriptArray(file, 'AUTONOMOUS_OUTREACH_RESULTS', results);

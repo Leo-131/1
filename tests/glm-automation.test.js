@@ -1691,6 +1691,13 @@ test('explicit uncertain delivery blocks automatic resend across the queue and f
   assert.match(dailyRunnerSource, /delivery_state_uncertain[\s\S]*automatic_resend_forbidden/);
 });
 
+test('ledger reconciliation deduplicates one delivery across mailto and website target variants', () => {
+  assert.match(mainSource, /const sameMessageId = entry\.messageId/);
+  assert.match(mainSource, /const sameLogicalDelivery = existing\.task_id === entry\.task_id/);
+  assert.match(mainSource, /existing\.recipientEmail[\s\S]*entry\.recipientEmail/);
+  assert.match(mainSource, /return sameMessageId \|\| sameLogicalDelivery/);
+});
+
 test('website pre-send failures continue to first-party verified social instead of stranding the company', () => {
   assert.ok(mainSource.includes('const websitePreSendFailure'));
   assert.ok(mainSource.includes('const verifiedSocialFallback = websitePreSendFailure && !websiteInteractionUncertain'));
