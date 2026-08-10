@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-10T11:24:41.451Z",
+  "generatedAt": "2026-08-10T11:49:38.237Z",
   "companies": [
     {
       "companyId": "company_819cc04fe9060117",
@@ -2096,7 +2096,7 @@
             "official_business_route"
           ],
           "evidenceUrl": "https://www.nwogco.com/",
-          "checkedAt": "2026-08-10T10:06:33.211Z"
+          "checkedAt": "2026-08-10T11:24:34.271Z"
         },
         {
           "channel": "website_form",
@@ -4585,7 +4585,7 @@
           "reasons": [
             "first_party_evidence"
           ],
-          "evidenceUrl": "https://komsa.com/en/contact",
+          "evidenceUrl": "https://komsa.com/en/contact/",
           "checkedAt": ""
         },
         {
@@ -4595,7 +4595,7 @@
           "reasons": [
             "unverified_external_evidence_rejected"
           ],
-          "evidenceUrl": "https://komsa.com/en/contact",
+          "evidenceUrl": "https://komsa.com/en/contact/",
           "checkedAt": ""
         }
       ],
@@ -4716,7 +4716,7 @@
           "reasons": [
             "official_business_route"
           ],
-          "evidenceUrl": "https://support.aqipa.com/en-US/new-ticket",
+          "evidenceUrl": "https://support.aqipa.com/en-US/kb/articles/anfrage-partner-werden",
           "checkedAt": ""
         },
         {
@@ -4726,7 +4726,7 @@
           "reasons": [
             "unverified_external_evidence_rejected"
           ],
-          "evidenceUrl": "https://support.aqipa.com/en-US/new-ticket",
+          "evidenceUrl": "https://support.aqipa.com/en-US/kb/articles/anfrage-partner-werden",
           "checkedAt": ""
         }
       ],
@@ -4899,7 +4899,7 @@
           "reasons": [
             "official_business_route"
           ],
-          "evidenceUrl": "https://help.cabelas.com/company-information-ff566349/how-can-i-sell-my-product-through-cabelas-cf904a21",
+          "evidenceUrl": "https://www.cabelas.com/",
           "checkedAt": ""
         },
         {
@@ -5250,7 +5250,7 @@
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://www.gooutdoors.co.uk/pages/contact",
-          "checkedAt": "2026-08-10T10:10:26.219Z"
+          "checkedAt": "2026-08-10T11:49:18.049Z"
         },
         {
           "channel": "facebook",
@@ -5260,7 +5260,7 @@
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://www.gooutdoors.co.uk/pages/contact",
-          "checkedAt": "2026-08-10T10:10:26.219Z"
+          "checkedAt": "2026-08-10T11:49:18.049Z"
         },
         {
           "channel": "website_form",
@@ -5269,7 +5269,7 @@
           "reasons": [
             "first_party_evidence"
           ],
-          "evidenceUrl": "https://www.gooutdoors.co.uk/",
+          "evidenceUrl": "https://www.gooutdoors.co.uk/pages/contact",
           "checkedAt": ""
         }
       ],
@@ -5584,6 +5584,54 @@
       ]
     },
     {
+      "companyId": "company_90d23ee32abca71b",
+      "company": "Van Os Imports",
+      "keys": [
+        "vanosimports",
+        "vanosimportscom",
+        "vanosimportsnl",
+        "vanosimportsemail20260810"
+      ],
+      "domains": [
+        "vanosimports.com",
+        "vanosimports.nl"
+      ],
+      "channels": [
+        "website_form",
+        "email"
+      ],
+      "evidence": [
+        {
+          "channel": "website_form",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
+          "checkedAt": ""
+        },
+        {
+          "channel": "email",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "https://www.vanosimports.com/en/grid/outdoor",
+          "checkedAt": ""
+        }
+      ],
+      "history": [
+        {
+          "status": "sent_confirmed",
+          "timestamp": "2026-08-10T11:38:20.000Z",
+          "channel": "email",
+          "evidence": "exact_recipient_sender_subject_body_gate_passed;send_clicked_once;composer_closed;sent_folder_unique_company_body_reconciled;no_matched_DSN_in_bounded_inbox_and_spam_scan"
+        }
+      ]
+    },
+    {
       "companyId": "company_3e78128b46c51249",
       "company": "Garage Grown Gear",
       "keys": [
@@ -5669,7 +5717,7 @@
           "reasons": [
             "official_business_route"
           ],
-          "evidenceUrl": "https://www.sail.ca/",
+          "evidenceUrl": "https://www.sail.ca/en/contact-us",
           "checkedAt": ""
         }
       ],
@@ -5721,6 +5769,52 @@
           "timestamp": "2026-07-10T10:20:00.000Z",
           "channel": "website_form",
           "evidence": "user_confirmed_official_website_email_sent;contact_entry_verified;mailto_detected;no_duplicate_outreach"
+        }
+      ]
+    },
+    {
+      "companyId": "company_9979c6f677734663",
+      "company": "JSJ Camping & Garden",
+      "keys": [
+        "jsjcampinggarden",
+        "jsjbvcom",
+        "jsjcampinggardenemail20260810"
+      ],
+      "domains": [
+        "jsj-bv.com"
+      ],
+      "channels": [
+        "website_form",
+        "email"
+      ],
+      "evidence": [
+        {
+          "channel": "website_form",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
+          "checkedAt": ""
+        },
+        {
+          "channel": "email",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "https://jsj-bv.com/",
+          "checkedAt": ""
+        }
+      ],
+      "history": [
+        {
+          "status": "sent_confirmed",
+          "timestamp": "2026-08-10T11:36:00.000Z",
+          "channel": "email",
+          "evidence": "exact_recipient_sender_subject_body_gate_passed;send_clicked_once;composer_closed;sent_folder_unique_company_body_reconciled;no_matched_DSN_in_bounded_inbox_and_spam_scan"
         }
       ]
     },
@@ -5797,7 +5891,7 @@
             "official_business_route"
           ],
           "evidenceUrl": "https://www.cotswoldoutdoor.com/",
-          "checkedAt": "2026-08-10T10:10:31.819Z"
+          "checkedAt": "2026-08-10T11:49:28.306Z"
         },
         {
           "channel": "facebook",
@@ -5807,7 +5901,7 @@
             "official_business_route"
           ],
           "evidenceUrl": "https://www.cotswoldoutdoor.com/",
-          "checkedAt": "2026-08-10T10:10:31.819Z"
+          "checkedAt": "2026-08-10T11:49:28.306Z"
         },
         {
           "channel": "website_form",
@@ -5993,16 +6087,16 @@
             "official_business_route"
           ],
           "evidenceUrl": "https://www.campsaver.com/",
-          "checkedAt": "2026-08-10T10:10:34.339Z"
+          "checkedAt": "2026-08-10T11:49:31.149Z"
         },
         {
           "channel": "website_form",
-          "score": 0,
-          "verified": false,
+          "score": 100,
+          "verified": true,
           "reasons": [
-            "unverified_external_evidence_rejected"
+            "official_business_route"
           ],
-          "evidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
+          "evidenceUrl": "https://www.campsaver.com/",
           "checkedAt": ""
         }
       ],
@@ -6155,7 +6249,7 @@
           "reasons": [
             "official_business_route"
           ],
-          "evidenceUrl": "https://www.summitint.co/",
+          "evidenceUrl": "https://www.summitint.co/contact/",
           "checkedAt": ""
         }
       ],
@@ -6253,6 +6347,288 @@
           "timestamp": "2026-08-10T11:09:30.000Z",
           "channel": "email",
           "evidence": "exact_recipient_sender_subject_body_gate_passed;send_clicked_once;composer_closed;sent_folder_unique_company_body_reconciled;no_matched_DSN_in_bounded_scan"
+        }
+      ]
+    },
+    {
+      "companyId": "company_1819ce542e461739",
+      "company": "Outdoor Adventure Store",
+      "keys": [
+        "outdooradventurestore",
+        "outdooradventurestoreie",
+        "oasie",
+        "outdooradventurestoreemail20260810"
+      ],
+      "domains": [
+        "outdooradventurestore.ie",
+        "oas.ie"
+      ],
+      "channels": [
+        "website_form",
+        "email"
+      ],
+      "evidence": [
+        {
+          "channel": "website_form",
+          "score": 100,
+          "verified": true,
+          "reasons": [
+            "official_business_route"
+          ],
+          "evidenceUrl": "https://outdooradventurestore.ie/pages/about-us",
+          "checkedAt": ""
+        },
+        {
+          "channel": "email",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "https://outdooradventurestore.ie/pages/about-us",
+          "checkedAt": ""
+        }
+      ],
+      "history": [
+        {
+          "status": "sent_confirmed",
+          "timestamp": "2026-08-10T11:30:50.000Z",
+          "channel": "email",
+          "evidence": "exact_recipient_sender_subject_body_gate_passed;send_clicked_once;composer_closed;sent_folder_unique_company_body_reconciled;no_matched_DSN_in_bounded_inbox_and_spam_scan"
+        }
+      ]
+    },
+    {
+      "companyId": "company_5d8cbede31dc1ac4",
+      "company": "Portwest The Outdoor Shop",
+      "keys": [
+        "portwesttheoutdoorshop",
+        "theoutdoorshopie",
+        "portwesttheoutdoorshopemail20260810"
+      ],
+      "domains": [
+        "theoutdoorshop.ie"
+      ],
+      "channels": [
+        "website_form",
+        "email"
+      ],
+      "evidence": [
+        {
+          "channel": "website_form",
+          "score": 100,
+          "verified": true,
+          "reasons": [
+            "official_business_route"
+          ],
+          "evidenceUrl": "https://www.theoutdoorshop.ie/pages/contact-us",
+          "checkedAt": ""
+        },
+        {
+          "channel": "email",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "https://www.theoutdoorshop.ie/pages/contact-us",
+          "checkedAt": ""
+        }
+      ],
+      "history": [
+        {
+          "status": "sent_confirmed",
+          "timestamp": "2026-08-10T11:34:00.000Z",
+          "channel": "email",
+          "evidence": "exact_recipient_sender_subject_body_gate_passed;send_clicked_once;composer_closed;sent_folder_unique_company_body_reconciled;no_matched_DSN_in_bounded_inbox_and_spam_scan"
+        }
+      ]
+    },
+    {
+      "companyId": "company_d874c8f7c5730cd4",
+      "company": "Expedition Store Sweden",
+      "keys": [
+        "expeditionstoresweden",
+        "expeditionstorese",
+        "expeditionstoreswedenemail20260810"
+      ],
+      "domains": [
+        "expeditionstore.se"
+      ],
+      "channels": [
+        "website_form",
+        "email"
+      ],
+      "evidence": [
+        {
+          "channel": "website_form",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
+          "checkedAt": ""
+        },
+        {
+          "channel": "email",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "https://expeditionstore.se/pages/contact-us",
+          "checkedAt": ""
+        }
+      ],
+      "history": [
+        {
+          "status": "sent_confirmed",
+          "timestamp": "2026-08-10T11:38:00.000Z",
+          "channel": "email",
+          "evidence": "exact_recipient_sender_subject_body_gate_passed;send_clicked_once;composer_closed;sent_folder_unique_company_body_reconciled;no_matched_DSN_in_bounded_inbox_and_spam_scan"
+        }
+      ]
+    },
+    {
+      "companyId": "company_9ef582e55e7503bf",
+      "company": "High Peak Outdoor",
+      "keys": [
+        "highpeakoutdoor",
+        "highpeakoutdoorcom",
+        "simexoutdoorcom",
+        "highpeakoutdooremail20260810"
+      ],
+      "domains": [
+        "highpeak-outdoor.com",
+        "simexoutdoor.com"
+      ],
+      "channels": [
+        "website_form",
+        "email"
+      ],
+      "evidence": [
+        {
+          "channel": "website_form",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
+          "checkedAt": ""
+        },
+        {
+          "channel": "email",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "https://www.highpeak-outdoor.com/kontakt.html",
+          "checkedAt": ""
+        }
+      ],
+      "history": [
+        {
+          "status": "sent_confirmed",
+          "timestamp": "2026-08-10T11:41:20.000Z",
+          "channel": "email",
+          "evidence": "exact_recipient_sender_subject_body_gate_passed;send_clicked_once;composer_closed;sent_folder_unique_company_body_reconciled;no_matched_DSN_in_bounded_inbox_and_spam_scan"
+        }
+      ]
+    },
+    {
+      "companyId": "company_a1e2b872d48e5bfb",
+      "company": "Der Freistaat Mega Store",
+      "keys": [
+        "derfreistaatmegastore",
+        "shopderfreistaatde",
+        "derfreistaatde",
+        "derfreistaatmegastoreemail20260810"
+      ],
+      "domains": [
+        "shop.derfreistaat.de",
+        "derfreistaat.de"
+      ],
+      "channels": [
+        "website_form",
+        "email"
+      ],
+      "evidence": [
+        {
+          "channel": "website_form",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
+          "checkedAt": ""
+        },
+        {
+          "channel": "email",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "https://shop.derfreistaat.de/de/kontakt/",
+          "checkedAt": ""
+        }
+      ],
+      "history": [
+        {
+          "status": "sent_confirmed",
+          "timestamp": "2026-08-10T11:41:40.000Z",
+          "channel": "email",
+          "evidence": "exact_recipient_sender_subject_body_gate_passed;send_clicked_once;composer_closed;sent_folder_unique_company_body_reconciled;no_matched_DSN_in_bounded_inbox_and_spam_scan"
+        }
+      ]
+    },
+    {
+      "companyId": "company_33133aaf53165cab",
+      "company": "Naturligvis Outdoor",
+      "keys": [
+        "naturligvisoutdoor",
+        "naturligviscom",
+        "naturligvisoutdooremail20260810"
+      ],
+      "domains": [
+        "naturligvis.com"
+      ],
+      "channels": [
+        "website_form",
+        "email"
+      ],
+      "evidence": [
+        {
+          "channel": "website_form",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
+          "checkedAt": ""
+        },
+        {
+          "channel": "email",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "https://www.naturligvis.com/side/kontakt",
+          "checkedAt": ""
+        }
+      ],
+      "history": [
+        {
+          "status": "sent_confirmed",
+          "timestamp": "2026-08-10T11:44:40.000Z",
+          "channel": "email",
+          "evidence": "exact_recipient_sender_subject_body_gate_passed;send_clicked_once;composer_closed;sent_folder_unique_company_body_reconciled;no_matched_DSN_in_bounded_inbox_and_spam_scan"
         }
       ]
     },
@@ -7295,6 +7671,282 @@
           "timestamp": "2026-08-10T11:05:30.000Z",
           "channel": "email",
           "evidence": "exact_recipient_sender_subject_body_gate_passed;send_clicked_once;composer_closed;sent_folder_unique_company_body_reconciled;no_matched_DSN_in_bounded_scan"
+        }
+      ]
+    },
+    {
+      "companyId": "company_450dd4a4418175b8",
+      "company": "MacEoin General Merchants",
+      "keys": [
+        "maceoingeneralmerchants",
+        "maceoinltdcom",
+        "maceoingeneralmerchantsemail20260810"
+      ],
+      "domains": [
+        "maceoinltd.com"
+      ],
+      "channels": [
+        "website_form",
+        "email"
+      ],
+      "evidence": [
+        {
+          "channel": "website_form",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
+          "checkedAt": ""
+        },
+        {
+          "channel": "email",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "https://www.maceoinltd.com/",
+          "checkedAt": ""
+        }
+      ],
+      "history": [
+        {
+          "status": "sent_confirmed",
+          "timestamp": "2026-08-10T11:30:30.000Z",
+          "channel": "email",
+          "evidence": "exact_recipient_sender_subject_body_gate_passed;send_clicked_once;composer_closed;sent_folder_unique_company_body_reconciled;no_matched_DSN_in_bounded_inbox_and_spam_scan"
+        }
+      ]
+    },
+    {
+      "companyId": "company_3af88f5810e66975",
+      "company": "S.K Camping & Leisure",
+      "keys": [
+        "skcampingleisure",
+        "skcampingcom",
+        "skcampingleisureemail20260810"
+      ],
+      "domains": [
+        "skcamping.com"
+      ],
+      "channels": [
+        "website_form",
+        "email"
+      ],
+      "evidence": [
+        {
+          "channel": "website_form",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
+          "checkedAt": ""
+        },
+        {
+          "channel": "email",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "https://www.skcamping.com/",
+          "checkedAt": ""
+        }
+      ],
+      "history": [
+        {
+          "status": "sent_confirmed",
+          "timestamp": "2026-08-10T11:31:10.000Z",
+          "channel": "email",
+          "evidence": "exact_recipient_sender_subject_body_gate_passed;send_clicked_once;composer_closed;sent_folder_unique_company_body_reconciled;no_matched_DSN_in_bounded_inbox_and_spam_scan"
+        }
+      ]
+    },
+    {
+      "companyId": "company_d7f5fa73a6e4d8ca",
+      "company": "Veneboer Camping & Outdoor",
+      "keys": [
+        "veneboercampingoutdoor",
+        "veneboercampingnl",
+        "veneboercampingoutdooremail20260810"
+      ],
+      "domains": [
+        "veneboercamping.nl"
+      ],
+      "channels": [
+        "website_form",
+        "email"
+      ],
+      "evidence": [
+        {
+          "channel": "website_form",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
+          "checkedAt": ""
+        },
+        {
+          "channel": "email",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "https://www.veneboercamping.nl/contact",
+          "checkedAt": ""
+        }
+      ],
+      "history": [
+        {
+          "status": "sent_confirmed",
+          "timestamp": "2026-08-10T11:36:20.000Z",
+          "channel": "email",
+          "evidence": "exact_recipient_sender_subject_body_gate_passed;send_clicked_once;composer_closed;sent_folder_unique_company_body_reconciled;no_matched_DSN_in_bounded_inbox_and_spam_scan"
+        }
+      ]
+    },
+    {
+      "companyId": "company_33e6ce943f45798d",
+      "company": "Huna Outdoor",
+      "keys": [
+        "hunaoutdoor",
+        "hunaoutdoornl",
+        "hunaoutdooremail20260810"
+      ],
+      "domains": [
+        "hunaoutdoor.nl"
+      ],
+      "channels": [
+        "website_form",
+        "email"
+      ],
+      "evidence": [
+        {
+          "channel": "website_form",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
+          "checkedAt": ""
+        },
+        {
+          "channel": "email",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "https://hunaoutdoor.nl/",
+          "checkedAt": ""
+        }
+      ],
+      "history": [
+        {
+          "status": "sent_confirmed",
+          "timestamp": "2026-08-10T11:37:40.000Z",
+          "channel": "email",
+          "evidence": "exact_recipient_sender_subject_body_gate_passed;send_clicked_once;composer_closed;sent_folder_unique_company_body_reconciled;no_matched_DSN_in_bounded_inbox_and_spam_scan"
+        }
+      ]
+    },
+    {
+      "companyId": "company_bad0f77e5f063349",
+      "company": "De Campingwinkel",
+      "keys": [
+        "decampingwinkel",
+        "decampingwinkelbe",
+        "decampingwinkelemail20260810"
+      ],
+      "domains": [
+        "decampingwinkel.be"
+      ],
+      "channels": [
+        "website_form",
+        "email"
+      ],
+      "evidence": [
+        {
+          "channel": "website_form",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
+          "checkedAt": ""
+        },
+        {
+          "channel": "email",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "https://decampingwinkel.be/contact/",
+          "checkedAt": ""
+        }
+      ],
+      "history": [
+        {
+          "status": "sent_confirmed",
+          "timestamp": "2026-08-10T11:40:00.000Z",
+          "channel": "email",
+          "evidence": "exact_recipient_sender_subject_body_gate_passed;send_clicked_once;composer_closed;sent_folder_unique_company_body_reconciled;no_matched_DSN_in_bounded_inbox_and_spam_scan"
+        }
+      ]
+    },
+    {
+      "companyId": "company_1d08967124ea1599",
+      "company": "CanvasCamp",
+      "keys": [
+        "canvascamp",
+        "canvascampcom",
+        "canvascampemail20260810"
+      ],
+      "domains": [
+        "canvascamp.com"
+      ],
+      "channels": [
+        "website_form",
+        "email"
+      ],
+      "evidence": [
+        {
+          "channel": "website_form",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
+          "checkedAt": ""
+        },
+        {
+          "channel": "email",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "https://www.canvascamp.com/en/contact-us",
+          "checkedAt": ""
+        }
+      ],
+      "history": [
+        {
+          "status": "sent_confirmed",
+          "timestamp": "2026-08-10T11:41:00.000Z",
+          "channel": "email",
+          "evidence": "exact_recipient_sender_subject_body_gate_passed;send_clicked_once;composer_closed;sent_folder_unique_company_body_reconciled;no_matched_DSN_in_bounded_inbox_and_spam_scan"
         }
       ]
     },
@@ -8389,6 +9041,331 @@
       ]
     },
     {
+      "companyId": "company_44a995c179397396",
+      "company": "Craze Outdoors",
+      "keys": [
+        "crazeoutdoors",
+        "crazeoutdoorscom",
+        "crazeoutdoorsemail20260810"
+      ],
+      "domains": [
+        "crazeoutdoors.com"
+      ],
+      "channels": [
+        "website_form",
+        "email"
+      ],
+      "evidence": [
+        {
+          "channel": "website_form",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
+          "checkedAt": ""
+        },
+        {
+          "channel": "email",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "https://crazeoutdoors.com/pages/contact-us",
+          "checkedAt": ""
+        }
+      ],
+      "history": [
+        {
+          "status": "sent_confirmed",
+          "timestamp": "2026-08-10T11:33:20.000Z",
+          "channel": "email",
+          "evidence": "exact_recipient_sender_subject_body_gate_passed;send_clicked_once;composer_closed;sent_folder_unique_company_body_reconciled;no_matched_DSN_in_bounded_inbox_and_spam_scan"
+        }
+      ]
+    },
+    {
+      "companyId": "company_5c0f1456b40e1606",
+      "company": "Charles Camping",
+      "keys": [
+        "charlescamping",
+        "charlescampingie",
+        "charlescampingemail20260810"
+      ],
+      "domains": [
+        "charlescamping.ie"
+      ],
+      "channels": [
+        "website_form",
+        "email"
+      ],
+      "evidence": [
+        {
+          "channel": "website_form",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
+          "checkedAt": ""
+        },
+        {
+          "channel": "email",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "https://www.charlescamping.ie/contact-us",
+          "checkedAt": ""
+        }
+      ],
+      "history": [
+        {
+          "status": "sent_confirmed",
+          "timestamp": "2026-08-10T11:33:40.000Z",
+          "channel": "email",
+          "evidence": "exact_recipient_sender_subject_body_gate_passed;send_clicked_once;composer_closed;sent_folder_unique_company_body_reconciled;no_matched_DSN_in_bounded_inbox_and_spam_scan"
+        }
+      ]
+    },
+    {
+      "companyId": "company_df62cb588a8132d1",
+      "company": "Basecamp Dublin",
+      "keys": [
+        "basecampdublin",
+        "basecampie",
+        "basecampdublinemail20260810"
+      ],
+      "domains": [
+        "basecamp.ie"
+      ],
+      "channels": [
+        "website_form",
+        "email"
+      ],
+      "evidence": [
+        {
+          "channel": "website_form",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
+          "checkedAt": ""
+        },
+        {
+          "channel": "email",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "https://basecamp.ie/pages/privacy-policy",
+          "checkedAt": ""
+        }
+      ],
+      "history": [
+        {
+          "status": "sent_confirmed",
+          "timestamp": "2026-08-10T11:34:20.000Z",
+          "channel": "email",
+          "evidence": "exact_recipient_sender_subject_body_gate_passed;send_clicked_once;composer_closed;sent_folder_unique_company_body_reconciled;no_matched_DSN_in_bounded_inbox_and_spam_scan"
+        }
+      ]
+    },
+    {
+      "companyId": "company_e72ac846add510bf",
+      "company": "GetCamping",
+      "keys": [
+        "getcamping",
+        "getcampingse",
+        "getcampingeu",
+        "getcampingemail20260810"
+      ],
+      "domains": [
+        "getcamping.se",
+        "getcamping.eu"
+      ],
+      "channels": [
+        "website_form",
+        "email"
+      ],
+      "evidence": [
+        {
+          "channel": "website_form",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
+          "checkedAt": ""
+        },
+        {
+          "channel": "email",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "https://www.getcamping.eu/en/info/about-us/",
+          "checkedAt": ""
+        }
+      ],
+      "history": [
+        {
+          "status": "sent_confirmed",
+          "timestamp": "2026-08-10T11:36:40.000Z",
+          "channel": "email",
+          "evidence": "exact_recipient_sender_subject_body_gate_passed;send_clicked_once;composer_closed;sent_folder_unique_company_body_reconciled;no_matched_DSN_in_bounded_inbox_and_spam_scan"
+        }
+      ]
+    },
+    {
+      "companyId": "company_80684d472b44bef6",
+      "company": "Shopping4Camping",
+      "keys": [
+        "shopping4camping",
+        "shopping4campingbe",
+        "shopping4be",
+        "shopping4campingemail20260810"
+      ],
+      "domains": [
+        "shopping4camping.be",
+        "shopping4.be"
+      ],
+      "channels": [
+        "website_form",
+        "email"
+      ],
+      "evidence": [
+        {
+          "channel": "website_form",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
+          "checkedAt": ""
+        },
+        {
+          "channel": "email",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "https://www.shopping4camping.be/pages/contact-bereikbaarheid",
+          "checkedAt": ""
+        }
+      ],
+      "history": [
+        {
+          "status": "sent_confirmed",
+          "timestamp": "2026-08-10T11:43:00.000Z",
+          "channel": "email",
+          "evidence": "exact_recipient_sender_subject_body_gate_passed;send_clicked_once;composer_closed;sent_folder_unique_company_body_reconciled;inbound_automatic_receipt_confirmed"
+        }
+      ]
+    },
+    {
+      "companyId": "company_84e23aad12edc157",
+      "company": "De Kampeerder",
+      "keys": [
+        "dekampeerder",
+        "dekampeerderbe",
+        "dekampeerderemail20260810"
+      ],
+      "domains": [
+        "dekampeerder.be"
+      ],
+      "channels": [
+        "website_form",
+        "email"
+      ],
+      "evidence": [
+        {
+          "channel": "website_form",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
+          "checkedAt": ""
+        },
+        {
+          "channel": "email",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "https://dekampeerder.be/",
+          "checkedAt": ""
+        }
+      ],
+      "history": [
+        {
+          "status": "sent_confirmed",
+          "timestamp": "2026-08-10T11:44:00.000Z",
+          "channel": "email",
+          "evidence": "exact_recipient_sender_subject_body_gate_passed;send_clicked_once;composer_closed;sent_folder_unique_company_body_reconciled;no_matched_DSN_in_bounded_inbox_and_spam_scan"
+        }
+      ]
+    },
+    {
+      "companyId": "company_5875efa4b34579ea",
+      "company": "Campingudstyr.dk",
+      "keys": [
+        "campingudstyrdk",
+        "campingudstyrdkemail20260810"
+      ],
+      "domains": [
+        "campingudstyr.dk"
+      ],
+      "channels": [
+        "website_form",
+        "email"
+      ],
+      "evidence": [
+        {
+          "channel": "website_form",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
+          "checkedAt": ""
+        },
+        {
+          "channel": "email",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "https://www.campingudstyr.dk/contact",
+          "checkedAt": ""
+        }
+      ],
+      "history": [
+        {
+          "status": "sent_confirmed",
+          "timestamp": "2026-08-10T11:44:20.000Z",
+          "channel": "email",
+          "evidence": "exact_recipient_sender_subject_body_gate_passed;send_clicked_once;composer_closed;sent_folder_unique_company_body_reconciled;no_matched_DSN_in_bounded_inbox_and_spam_scan"
+        }
+      ]
+    },
+    {
       "companyId": "company_c0587f57d9eaba5c",
       "company": "Backcountry Experience",
       "keys": [
@@ -9337,6 +10314,98 @@
       ]
     },
     {
+      "companyId": "company_6d5abadc389f221a",
+      "company": "MD Outdoors",
+      "keys": [
+        "mdoutdoors",
+        "mdoutdoorsconz",
+        "mdoutdoorsemail20260810"
+      ],
+      "domains": [
+        "mdoutdoors.co.nz"
+      ],
+      "channels": [
+        "website_form",
+        "email"
+      ],
+      "evidence": [
+        {
+          "channel": "website_form",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
+          "checkedAt": ""
+        },
+        {
+          "channel": "email",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "https://www.mdoutdoors.co.nz/pages/contact-us",
+          "checkedAt": ""
+        }
+      ],
+      "history": [
+        {
+          "status": "sent_confirmed",
+          "timestamp": "2026-08-10T11:29:30.000Z",
+          "channel": "email",
+          "evidence": "exact_recipient_sender_subject_body_gate_passed;send_clicked_once;composer_closed;sent_folder_unique_company_body_reconciled;no_matched_DSN_in_bounded_inbox_and_spam_scan"
+        }
+      ]
+    },
+    {
+      "companyId": "company_07e8469ab6f696a4",
+      "company": "Sportsden",
+      "keys": [
+        "sportsden",
+        "sportsdenie",
+        "sportsdenemail20260810"
+      ],
+      "domains": [
+        "sportsden.ie"
+      ],
+      "channels": [
+        "website_form",
+        "email"
+      ],
+      "evidence": [
+        {
+          "channel": "website_form",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
+          "checkedAt": ""
+        },
+        {
+          "channel": "email",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "https://www.sportsden.ie/pages/contact-us",
+          "checkedAt": ""
+        }
+      ],
+      "history": [
+        {
+          "status": "sent_confirmed",
+          "timestamp": "2026-08-10T11:30:10.000Z",
+          "channel": "email",
+          "evidence": "exact_recipient_sender_subject_body_gate_passed;send_clicked_once;composer_closed;sent_folder_unique_company_body_reconciled;no_matched_DSN_in_bounded_inbox_and_spam_scan"
+        }
+      ]
+    },
+    {
       "companyId": "company_1c57e390a7717b0e",
       "company": "The Trail Head",
       "keys": [
@@ -10153,7 +11222,101 @@
           "status": "sent_confirmed",
           "timestamp": "2026-08-10T11:12:59.414Z",
           "channel": "email",
-          "evidence": "smtp_accepted;message_id:<4e3a5b51-9567-6b06-a7c9-2b2ae2627c9e@flextailgear.com>;sent_folder_message_confirmed;contact_path_strategy_v2"
+          "evidence": "smtp_accepted;message_id:<4e3a5b51-9567-6b06-a7c9-2b2ae2627c9e@flextailgear.com>;sent_folder_message_confirmed;contact_path_strategy_v2;recipient_replied;inbound_reply_received;human_reply_price_list_requested;positive_buyer_routing_confirmed"
+        }
+      ]
+    },
+    {
+      "companyId": "company_a0e4c71fd91b7383",
+      "company": "Mc's Outdoor Store",
+      "keys": [
+        "mcsoutdoorstore",
+        "mcsoutdoorstoreie",
+        "mcsoutdoorstoreemail20260810"
+      ],
+      "domains": [
+        "mcsoutdoorstore.ie"
+      ],
+      "channels": [
+        "website_form",
+        "email"
+      ],
+      "evidence": [
+        {
+          "channel": "website_form",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
+          "checkedAt": ""
+        },
+        {
+          "channel": "email",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "https://www.mcsoutdoorstore.ie/contact-us/",
+          "checkedAt": ""
+        }
+      ],
+      "history": [
+        {
+          "status": "sent_confirmed",
+          "timestamp": "2026-08-10T11:29:50.000Z",
+          "channel": "email",
+          "evidence": "exact_recipient_sender_subject_body_gate_passed;send_clicked_once;composer_closed;sent_folder_unique_company_body_reconciled;no_matched_DSN_in_bounded_inbox_and_spam_scan"
+        }
+      ]
+    },
+    {
+      "companyId": "company_ea548b07a3603f78",
+      "company": "Van Dijk Outdoor & Recreatie",
+      "keys": [
+        "vandijkoutdoorrecreatie",
+        "autodaktentenwebshopbe",
+        "autodaktentenbe",
+        "vandijkoutdoorrecreatieemail20260810"
+      ],
+      "domains": [
+        "autodaktenten-webshop.be",
+        "autodaktenten.be"
+      ],
+      "channels": [
+        "website_form",
+        "email"
+      ],
+      "evidence": [
+        {
+          "channel": "website_form",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
+          "checkedAt": ""
+        },
+        {
+          "channel": "email",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "https://autodaktenten-webshop.be/pages/contact",
+          "checkedAt": ""
+        }
+      ],
+      "history": [
+        {
+          "status": "sent_confirmed",
+          "timestamp": "2026-08-10T11:42:00.000Z",
+          "channel": "email",
+          "evidence": "exact_recipient_sender_subject_body_gate_passed;send_clicked_once;composer_closed;sent_folder_unique_company_body_reconciled;no_matched_DSN_in_bounded_inbox_and_spam_scan"
         }
       ]
     },
@@ -10635,6 +11798,144 @@
           "timestamp": "2026-08-10T11:21:00.000Z",
           "channel": "email",
           "evidence": "exact_recipient_sender_subject_body_gate_passed;send_clicked_once;composer_closed;sent_folder_unique_company_body_reconciled;no_matched_DSN_in_bounded_scan"
+        }
+      ]
+    },
+    {
+      "companyId": "company_9c7b988c00c04f1a",
+      "company": "Camps Store Diest",
+      "keys": [
+        "campsstorediest",
+        "campsstorebe",
+        "campsstorediestemail20260810"
+      ],
+      "domains": [
+        "campsstore.be"
+      ],
+      "channels": [
+        "website_form",
+        "email"
+      ],
+      "evidence": [
+        {
+          "channel": "website_form",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
+          "checkedAt": ""
+        },
+        {
+          "channel": "email",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "https://www.campsstore.be/contact",
+          "checkedAt": ""
+        }
+      ],
+      "history": [
+        {
+          "status": "sent_confirmed",
+          "timestamp": "2026-08-10T11:40:20.000Z",
+          "channel": "email",
+          "evidence": "exact_recipient_sender_subject_body_gate_passed;send_clicked_once;composer_closed;sent_folder_unique_company_body_reconciled;no_matched_DSN_in_bounded_inbox_and_spam_scan"
+        }
+      ]
+    },
+    {
+      "companyId": "company_c2a5881d2f12597e",
+      "company": "MK Outdoor",
+      "keys": [
+        "mkoutdoor",
+        "mkoutdoorde",
+        "mkoutdooremail20260810"
+      ],
+      "domains": [
+        "mkoutdoor.de"
+      ],
+      "channels": [
+        "website_form",
+        "email"
+      ],
+      "evidence": [
+        {
+          "channel": "website_form",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
+          "checkedAt": ""
+        },
+        {
+          "channel": "email",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "https://www.mkoutdoor.de/Impressum/",
+          "checkedAt": ""
+        }
+      ],
+      "history": [
+        {
+          "status": "sent_confirmed",
+          "timestamp": "2026-08-10T11:42:20.000Z",
+          "channel": "email",
+          "evidence": "exact_recipient_sender_subject_body_gate_passed;send_clicked_once;composer_closed;sent_folder_unique_company_body_reconciled;no_matched_DSN_in_bounded_inbox_and_spam_scan"
+        }
+      ]
+    },
+    {
+      "companyId": "company_a29ce0b01e87b695",
+      "company": "Kampersport",
+      "keys": [
+        "kampersport",
+        "kampersportcom",
+        "kampersportemail20260810"
+      ],
+      "domains": [
+        "kampersport.com"
+      ],
+      "channels": [
+        "website_form",
+        "email"
+      ],
+      "evidence": [
+        {
+          "channel": "website_form",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
+          "checkedAt": ""
+        },
+        {
+          "channel": "email",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "https://kampersport.com/nous-contacter/",
+          "checkedAt": ""
+        }
+      ],
+      "history": [
+        {
+          "status": "sent_confirmed",
+          "timestamp": "2026-08-10T11:42:40.000Z",
+          "channel": "email",
+          "evidence": "exact_recipient_sender_subject_body_gate_passed;send_clicked_once;composer_closed;sent_folder_unique_company_body_reconciled;no_matched_DSN_in_bounded_inbox_and_spam_scan"
         }
       ]
     },
@@ -14809,6 +16110,238 @@
       ]
     },
     {
+      "companyId": "company_f3b010a2419d9012",
+      "company": "Black & White Outdoors",
+      "keys": [
+        "blackwhiteoutdoors",
+        "blackandwhiteoutdoorscom",
+        "blackwhiteoutdoorsemail20260810"
+      ],
+      "domains": [
+        "blackandwhiteoutdoors.com"
+      ],
+      "channels": [
+        "website_form",
+        "email"
+      ],
+      "evidence": [
+        {
+          "channel": "website_form",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
+          "checkedAt": ""
+        },
+        {
+          "channel": "email",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "https://blackandwhiteoutdoors.com/contact-us/",
+          "checkedAt": ""
+        }
+      ],
+      "history": [
+        {
+          "status": "bounced",
+          "timestamp": "2026-08-10T11:32:04.000Z",
+          "channel": "email",
+          "evidence": "exact_recipient_sender_subject_body_gate_passed;send_clicked_once;composer_closed;sent_folder_unique_company_body_reconciled;matched_DSN_550_5.1.1_no_such_user;automatic_resend_forbidden"
+        }
+      ]
+    },
+    {
+      "companyId": "company_057dddc81f64e952",
+      "company": "NZ Outdoors",
+      "keys": [
+        "nzoutdoors",
+        "nzoutdoorsconz",
+        "nzoutdoorsemail20260810"
+      ],
+      "domains": [
+        "nz-outdoors.co.nz"
+      ],
+      "channels": [
+        "website_form",
+        "email"
+      ],
+      "evidence": [
+        {
+          "channel": "website_form",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
+          "checkedAt": ""
+        },
+        {
+          "channel": "email",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "https://www.nz-outdoors.co.nz/pages/support",
+          "checkedAt": ""
+        }
+      ],
+      "history": [
+        {
+          "status": "sent_confirmed",
+          "timestamp": "2026-08-10T11:33:00.000Z",
+          "channel": "email",
+          "evidence": "exact_recipient_sender_subject_body_gate_passed;send_clicked_once;composer_closed;sent_folder_unique_company_body_reconciled;no_matched_DSN_in_bounded_inbox_and_spam_scan"
+        }
+      ]
+    },
+    {
+      "companyId": "company_70d9959928d6b4fe",
+      "company": "Outdoordump",
+      "keys": [
+        "outdoordump",
+        "outdoordumpnl",
+        "outdoordumpemail20260810"
+      ],
+      "domains": [
+        "outdoordump.nl"
+      ],
+      "channels": [
+        "website_form",
+        "email"
+      ],
+      "evidence": [
+        {
+          "channel": "website_form",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
+          "checkedAt": ""
+        },
+        {
+          "channel": "email",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "https://outdoordump.nl/contact/",
+          "checkedAt": ""
+        }
+      ],
+      "history": [
+        {
+          "status": "sent_confirmed",
+          "timestamp": "2026-08-10T11:37:00.000Z",
+          "channel": "email",
+          "evidence": "exact_recipient_sender_subject_body_gate_passed;send_clicked_once;composer_closed;sent_folder_unique_company_body_reconciled;no_matched_DSN_in_bounded_inbox_and_spam_scan"
+        }
+      ]
+    },
+    {
+      "companyId": "company_057ea155731deb4c",
+      "company": "OutdoorHaven",
+      "keys": [
+        "outdoorhaven",
+        "outdoorhavennl",
+        "outdoorhavenemail20260810"
+      ],
+      "domains": [
+        "outdoorhaven.nl"
+      ],
+      "channels": [
+        "website_form",
+        "email"
+      ],
+      "evidence": [
+        {
+          "channel": "website_form",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
+          "checkedAt": ""
+        },
+        {
+          "channel": "email",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "https://outdoorhaven.nl/",
+          "checkedAt": ""
+        }
+      ],
+      "history": [
+        {
+          "status": "sent_confirmed",
+          "timestamp": "2026-08-10T11:37:20.000Z",
+          "channel": "email",
+          "evidence": "exact_recipient_sender_subject_body_gate_passed;send_clicked_once;composer_closed;sent_folder_unique_company_body_reconciled;no_matched_DSN_in_bounded_inbox_and_spam_scan"
+        }
+      ]
+    },
+    {
+      "companyId": "company_997ae05f8ecc6c25",
+      "company": "Klima Outdoor",
+      "keys": [
+        "klimaoutdoor",
+        "klimaoutdoorde",
+        "drshop24de",
+        "klimaoutdooremail20260810"
+      ],
+      "domains": [
+        "klima-outdoor.de",
+        "drshop24.de"
+      ],
+      "channels": [
+        "website_form",
+        "email"
+      ],
+      "evidence": [
+        {
+          "channel": "website_form",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
+          "checkedAt": ""
+        },
+        {
+          "channel": "email",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "https://klima-outdoor.de/pages/contact",
+          "checkedAt": ""
+        }
+      ],
+      "history": [
+        {
+          "status": "sent_confirmed",
+          "timestamp": "2026-08-10T11:40:40.000Z",
+          "channel": "email",
+          "evidence": "exact_recipient_sender_subject_body_gate_passed;send_clicked_once;composer_closed;sent_folder_unique_company_body_reconciled;no_matched_DSN_in_bounded_inbox_and_spam_scan"
+        }
+      ]
+    },
+    {
       "companyId": "company_7580a97286e5f239",
       "company": "Durango Outdoor Exchange",
       "keys": [
@@ -14967,12 +16500,12 @@
       "evidence": [
         {
           "channel": "website_form",
-          "score": 100,
-          "verified": true,
+          "score": 0,
+          "verified": false,
           "reasons": [
-            "official_business_route"
+            "unverified_external_evidence_rejected"
           ],
-          "evidenceUrl": "https://www.outdoorshoplewes.co.uk/",
+          "evidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
           "checkedAt": ""
         },
         {
@@ -15059,12 +16592,12 @@
       "evidence": [
         {
           "channel": "website_form",
-          "score": 100,
-          "verified": true,
+          "score": 0,
+          "verified": false,
           "reasons": [
-            "official_business_route"
+            "unverified_external_evidence_rejected"
           ],
-          "evidenceUrl": "https://vamosoutdoors.ca/",
+          "evidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
           "checkedAt": ""
         },
         {
@@ -15151,12 +16684,12 @@
       "evidence": [
         {
           "channel": "website_form",
-          "score": 100,
-          "verified": true,
+          "score": 0,
+          "verified": false,
           "reasons": [
-            "official_business_route"
+            "unverified_external_evidence_rejected"
           ],
-          "evidenceUrl": "https://www.actionoutdoors.co.uk/about/",
+          "evidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
           "checkedAt": ""
         },
         {
@@ -15197,12 +16730,12 @@
       "evidence": [
         {
           "channel": "website_form",
-          "score": 100,
-          "verified": true,
+          "score": 0,
+          "verified": false,
           "reasons": [
-            "official_business_route"
+            "unverified_external_evidence_rejected"
           ],
-          "evidenceUrl": "https://spryactive.ca/pages/about",
+          "evidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
           "checkedAt": ""
         },
         {
@@ -15243,12 +16776,12 @@
       "evidence": [
         {
           "channel": "website_form",
-          "score": 100,
-          "verified": true,
+          "score": 0,
+          "verified": false,
           "reasons": [
-            "official_business_route"
+            "unverified_external_evidence_rejected"
           ],
-          "evidenceUrl": "https://lifestylegear.co.nz/pages/contact",
+          "evidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
           "checkedAt": ""
         },
         {
@@ -15386,12 +16919,12 @@
       "evidence": [
         {
           "channel": "website_form",
-          "score": 100,
-          "verified": true,
+          "score": 0,
+          "verified": false,
           "reasons": [
-            "official_business_route"
+            "unverified_external_evidence_rejected"
           ],
-          "evidenceUrl": "https://oldschooloutdoor.com/pages/contact",
+          "evidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
           "checkedAt": ""
         },
         {
@@ -15447,7 +16980,7 @@
             "official_business_route"
           ],
           "evidenceUrl": "https://gecko-overland.com/contact/",
-          "checkedAt": "2026-08-10T10:06:28.961Z"
+          "checkedAt": "2026-08-10T11:24:32.190Z"
         }
       ],
       "history": [
@@ -15585,7 +17118,7 @@
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://www.basecamp-outfitters.com/",
-          "checkedAt": "2026-08-10T10:06:32.992Z"
+          "checkedAt": "2026-08-10T11:24:32.493Z"
         }
       ],
       "history": [
@@ -16541,6 +18074,16 @@
       "evidence": "instagram_message_sent_confirmed_after_send_click;instagram_draft_inserted_verified;sentText:false;outgoingBubble:false;emptyComposer:true;follow_not_available;instagram_post_opened;post_liked;comment_submitted"
     },
     {
+      "companyId": "company_90d23ee32abca71b",
+      "company": "Van Os Imports",
+      "permanent": true,
+      "crossChannel": true,
+      "reason": "previous_customer_development_no_repeat",
+      "sourceStatus": "sent_confirmed",
+      "sourceTimestamp": "2026-08-10T11:38:20.000Z",
+      "evidence": "exact_recipient_sender_subject_body_gate_passed;send_clicked_once;composer_closed;sent_folder_unique_company_body_reconciled;no_matched_DSN_in_bounded_inbox_and_spam_scan"
+    },
+    {
       "companyId": "company_3e78128b46c51249",
       "company": "Garage Grown Gear",
       "permanent": true,
@@ -16559,6 +18102,16 @@
       "sourceStatus": "sent_confirmed",
       "sourceTimestamp": "2026-07-10T10:20:00.000Z",
       "evidence": "user_confirmed_official_website_email_sent;contact_entry_verified;mailto_detected;no_duplicate_outreach"
+    },
+    {
+      "companyId": "company_9979c6f677734663",
+      "company": "JSJ Camping & Garden",
+      "permanent": true,
+      "crossChannel": true,
+      "reason": "previous_customer_development_no_repeat",
+      "sourceStatus": "sent_confirmed",
+      "sourceTimestamp": "2026-08-10T11:36:00.000Z",
+      "evidence": "exact_recipient_sender_subject_body_gate_passed;send_clicked_once;composer_closed;sent_folder_unique_company_body_reconciled;no_matched_DSN_in_bounded_inbox_and_spam_scan"
     },
     {
       "companyId": "company_21af874392e50275",
@@ -16639,6 +18192,66 @@
       "sourceStatus": "sent_confirmed",
       "sourceTimestamp": "2026-08-10T11:09:30.000Z",
       "evidence": "exact_recipient_sender_subject_body_gate_passed;send_clicked_once;composer_closed;sent_folder_unique_company_body_reconciled;no_matched_DSN_in_bounded_scan"
+    },
+    {
+      "companyId": "company_1819ce542e461739",
+      "company": "Outdoor Adventure Store",
+      "permanent": true,
+      "crossChannel": true,
+      "reason": "previous_customer_development_no_repeat",
+      "sourceStatus": "sent_confirmed",
+      "sourceTimestamp": "2026-08-10T11:30:50.000Z",
+      "evidence": "exact_recipient_sender_subject_body_gate_passed;send_clicked_once;composer_closed;sent_folder_unique_company_body_reconciled;no_matched_DSN_in_bounded_inbox_and_spam_scan"
+    },
+    {
+      "companyId": "company_5d8cbede31dc1ac4",
+      "company": "Portwest The Outdoor Shop",
+      "permanent": true,
+      "crossChannel": true,
+      "reason": "previous_customer_development_no_repeat",
+      "sourceStatus": "sent_confirmed",
+      "sourceTimestamp": "2026-08-10T11:34:00.000Z",
+      "evidence": "exact_recipient_sender_subject_body_gate_passed;send_clicked_once;composer_closed;sent_folder_unique_company_body_reconciled;no_matched_DSN_in_bounded_inbox_and_spam_scan"
+    },
+    {
+      "companyId": "company_d874c8f7c5730cd4",
+      "company": "Expedition Store Sweden",
+      "permanent": true,
+      "crossChannel": true,
+      "reason": "previous_customer_development_no_repeat",
+      "sourceStatus": "sent_confirmed",
+      "sourceTimestamp": "2026-08-10T11:38:00.000Z",
+      "evidence": "exact_recipient_sender_subject_body_gate_passed;send_clicked_once;composer_closed;sent_folder_unique_company_body_reconciled;no_matched_DSN_in_bounded_inbox_and_spam_scan"
+    },
+    {
+      "companyId": "company_9ef582e55e7503bf",
+      "company": "High Peak Outdoor",
+      "permanent": true,
+      "crossChannel": true,
+      "reason": "previous_customer_development_no_repeat",
+      "sourceStatus": "sent_confirmed",
+      "sourceTimestamp": "2026-08-10T11:41:20.000Z",
+      "evidence": "exact_recipient_sender_subject_body_gate_passed;send_clicked_once;composer_closed;sent_folder_unique_company_body_reconciled;no_matched_DSN_in_bounded_inbox_and_spam_scan"
+    },
+    {
+      "companyId": "company_a1e2b872d48e5bfb",
+      "company": "Der Freistaat Mega Store",
+      "permanent": true,
+      "crossChannel": true,
+      "reason": "previous_customer_development_no_repeat",
+      "sourceStatus": "sent_confirmed",
+      "sourceTimestamp": "2026-08-10T11:41:40.000Z",
+      "evidence": "exact_recipient_sender_subject_body_gate_passed;send_clicked_once;composer_closed;sent_folder_unique_company_body_reconciled;no_matched_DSN_in_bounded_inbox_and_spam_scan"
+    },
+    {
+      "companyId": "company_33133aaf53165cab",
+      "company": "Naturligvis Outdoor",
+      "permanent": true,
+      "crossChannel": true,
+      "reason": "previous_customer_development_no_repeat",
+      "sourceStatus": "sent_confirmed",
+      "sourceTimestamp": "2026-08-10T11:44:40.000Z",
+      "evidence": "exact_recipient_sender_subject_body_gate_passed;send_clicked_once;composer_closed;sent_folder_unique_company_body_reconciled;no_matched_DSN_in_bounded_inbox_and_spam_scan"
     },
     {
       "companyId": "company_368689331ba38ee2",
@@ -16769,6 +18382,66 @@
       "sourceStatus": "sent_confirmed",
       "sourceTimestamp": "2026-08-10T11:05:30.000Z",
       "evidence": "exact_recipient_sender_subject_body_gate_passed;send_clicked_once;composer_closed;sent_folder_unique_company_body_reconciled;no_matched_DSN_in_bounded_scan"
+    },
+    {
+      "companyId": "company_450dd4a4418175b8",
+      "company": "MacEoin General Merchants",
+      "permanent": true,
+      "crossChannel": true,
+      "reason": "previous_customer_development_no_repeat",
+      "sourceStatus": "sent_confirmed",
+      "sourceTimestamp": "2026-08-10T11:30:30.000Z",
+      "evidence": "exact_recipient_sender_subject_body_gate_passed;send_clicked_once;composer_closed;sent_folder_unique_company_body_reconciled;no_matched_DSN_in_bounded_inbox_and_spam_scan"
+    },
+    {
+      "companyId": "company_3af88f5810e66975",
+      "company": "S.K Camping & Leisure",
+      "permanent": true,
+      "crossChannel": true,
+      "reason": "previous_customer_development_no_repeat",
+      "sourceStatus": "sent_confirmed",
+      "sourceTimestamp": "2026-08-10T11:31:10.000Z",
+      "evidence": "exact_recipient_sender_subject_body_gate_passed;send_clicked_once;composer_closed;sent_folder_unique_company_body_reconciled;no_matched_DSN_in_bounded_inbox_and_spam_scan"
+    },
+    {
+      "companyId": "company_d7f5fa73a6e4d8ca",
+      "company": "Veneboer Camping & Outdoor",
+      "permanent": true,
+      "crossChannel": true,
+      "reason": "previous_customer_development_no_repeat",
+      "sourceStatus": "sent_confirmed",
+      "sourceTimestamp": "2026-08-10T11:36:20.000Z",
+      "evidence": "exact_recipient_sender_subject_body_gate_passed;send_clicked_once;composer_closed;sent_folder_unique_company_body_reconciled;no_matched_DSN_in_bounded_inbox_and_spam_scan"
+    },
+    {
+      "companyId": "company_33e6ce943f45798d",
+      "company": "Huna Outdoor",
+      "permanent": true,
+      "crossChannel": true,
+      "reason": "previous_customer_development_no_repeat",
+      "sourceStatus": "sent_confirmed",
+      "sourceTimestamp": "2026-08-10T11:37:40.000Z",
+      "evidence": "exact_recipient_sender_subject_body_gate_passed;send_clicked_once;composer_closed;sent_folder_unique_company_body_reconciled;no_matched_DSN_in_bounded_inbox_and_spam_scan"
+    },
+    {
+      "companyId": "company_bad0f77e5f063349",
+      "company": "De Campingwinkel",
+      "permanent": true,
+      "crossChannel": true,
+      "reason": "previous_customer_development_no_repeat",
+      "sourceStatus": "sent_confirmed",
+      "sourceTimestamp": "2026-08-10T11:40:00.000Z",
+      "evidence": "exact_recipient_sender_subject_body_gate_passed;send_clicked_once;composer_closed;sent_folder_unique_company_body_reconciled;no_matched_DSN_in_bounded_inbox_and_spam_scan"
+    },
+    {
+      "companyId": "company_1d08967124ea1599",
+      "company": "CanvasCamp",
+      "permanent": true,
+      "crossChannel": true,
+      "reason": "previous_customer_development_no_repeat",
+      "sourceStatus": "sent_confirmed",
+      "sourceTimestamp": "2026-08-10T11:41:00.000Z",
+      "evidence": "exact_recipient_sender_subject_body_gate_passed;send_clicked_once;composer_closed;sent_folder_unique_company_body_reconciled;no_matched_DSN_in_bounded_inbox_and_spam_scan"
     },
     {
       "companyId": "company_74310c50b15a4668",
@@ -16951,6 +18624,76 @@
       "evidence": "exact_recipient_sender_subject_body_gate_passed;send_clicked_once;composer_closed;sent_folder_unique_company_body_reconciled;inbound_automatic_receipt_confirmed"
     },
     {
+      "companyId": "company_44a995c179397396",
+      "company": "Craze Outdoors",
+      "permanent": true,
+      "crossChannel": true,
+      "reason": "previous_customer_development_no_repeat",
+      "sourceStatus": "sent_confirmed",
+      "sourceTimestamp": "2026-08-10T11:33:20.000Z",
+      "evidence": "exact_recipient_sender_subject_body_gate_passed;send_clicked_once;composer_closed;sent_folder_unique_company_body_reconciled;no_matched_DSN_in_bounded_inbox_and_spam_scan"
+    },
+    {
+      "companyId": "company_5c0f1456b40e1606",
+      "company": "Charles Camping",
+      "permanent": true,
+      "crossChannel": true,
+      "reason": "previous_customer_development_no_repeat",
+      "sourceStatus": "sent_confirmed",
+      "sourceTimestamp": "2026-08-10T11:33:40.000Z",
+      "evidence": "exact_recipient_sender_subject_body_gate_passed;send_clicked_once;composer_closed;sent_folder_unique_company_body_reconciled;no_matched_DSN_in_bounded_inbox_and_spam_scan"
+    },
+    {
+      "companyId": "company_df62cb588a8132d1",
+      "company": "Basecamp Dublin",
+      "permanent": true,
+      "crossChannel": true,
+      "reason": "previous_customer_development_no_repeat",
+      "sourceStatus": "sent_confirmed",
+      "sourceTimestamp": "2026-08-10T11:34:20.000Z",
+      "evidence": "exact_recipient_sender_subject_body_gate_passed;send_clicked_once;composer_closed;sent_folder_unique_company_body_reconciled;no_matched_DSN_in_bounded_inbox_and_spam_scan"
+    },
+    {
+      "companyId": "company_e72ac846add510bf",
+      "company": "GetCamping",
+      "permanent": true,
+      "crossChannel": true,
+      "reason": "previous_customer_development_no_repeat",
+      "sourceStatus": "sent_confirmed",
+      "sourceTimestamp": "2026-08-10T11:36:40.000Z",
+      "evidence": "exact_recipient_sender_subject_body_gate_passed;send_clicked_once;composer_closed;sent_folder_unique_company_body_reconciled;no_matched_DSN_in_bounded_inbox_and_spam_scan"
+    },
+    {
+      "companyId": "company_80684d472b44bef6",
+      "company": "Shopping4Camping",
+      "permanent": true,
+      "crossChannel": true,
+      "reason": "previous_customer_development_no_repeat",
+      "sourceStatus": "sent_confirmed",
+      "sourceTimestamp": "2026-08-10T11:43:00.000Z",
+      "evidence": "exact_recipient_sender_subject_body_gate_passed;send_clicked_once;composer_closed;sent_folder_unique_company_body_reconciled;inbound_automatic_receipt_confirmed"
+    },
+    {
+      "companyId": "company_84e23aad12edc157",
+      "company": "De Kampeerder",
+      "permanent": true,
+      "crossChannel": true,
+      "reason": "previous_customer_development_no_repeat",
+      "sourceStatus": "sent_confirmed",
+      "sourceTimestamp": "2026-08-10T11:44:00.000Z",
+      "evidence": "exact_recipient_sender_subject_body_gate_passed;send_clicked_once;composer_closed;sent_folder_unique_company_body_reconciled;no_matched_DSN_in_bounded_inbox_and_spam_scan"
+    },
+    {
+      "companyId": "company_5875efa4b34579ea",
+      "company": "Campingudstyr.dk",
+      "permanent": true,
+      "crossChannel": true,
+      "reason": "previous_customer_development_no_repeat",
+      "sourceStatus": "sent_confirmed",
+      "sourceTimestamp": "2026-08-10T11:44:20.000Z",
+      "evidence": "exact_recipient_sender_subject_body_gate_passed;send_clicked_once;composer_closed;sent_folder_unique_company_body_reconciled;no_matched_DSN_in_bounded_inbox_and_spam_scan"
+    },
+    {
       "companyId": "company_c0587f57d9eaba5c",
       "company": "Backcountry Experience",
       "permanent": true,
@@ -17091,6 +18834,26 @@
       "evidence": "exact_recipient_sender_subject_body_gate_passed;send_clicked_once;composer_closed;sent_folder_unique_company_body_reconciled;no_matched_DSN_in_bounded_scan"
     },
     {
+      "companyId": "company_6d5abadc389f221a",
+      "company": "MD Outdoors",
+      "permanent": true,
+      "crossChannel": true,
+      "reason": "previous_customer_development_no_repeat",
+      "sourceStatus": "sent_confirmed",
+      "sourceTimestamp": "2026-08-10T11:29:30.000Z",
+      "evidence": "exact_recipient_sender_subject_body_gate_passed;send_clicked_once;composer_closed;sent_folder_unique_company_body_reconciled;no_matched_DSN_in_bounded_inbox_and_spam_scan"
+    },
+    {
+      "companyId": "company_07e8469ab6f696a4",
+      "company": "Sportsden",
+      "permanent": true,
+      "crossChannel": true,
+      "reason": "previous_customer_development_no_repeat",
+      "sourceStatus": "sent_confirmed",
+      "sourceTimestamp": "2026-08-10T11:30:10.000Z",
+      "evidence": "exact_recipient_sender_subject_body_gate_passed;send_clicked_once;composer_closed;sent_folder_unique_company_body_reconciled;no_matched_DSN_in_bounded_inbox_and_spam_scan"
+    },
+    {
       "companyId": "company_1c57e390a7717b0e",
       "company": "The Trail Head",
       "permanent": true,
@@ -17228,7 +18991,27 @@
       "reason": "previous_customer_development_no_repeat",
       "sourceStatus": "sent_confirmed",
       "sourceTimestamp": "2026-08-10T11:12:59.414Z",
-      "evidence": "smtp_accepted;message_id:<4e3a5b51-9567-6b06-a7c9-2b2ae2627c9e@flextailgear.com>;sent_folder_message_confirmed;contact_path_strategy_v2"
+      "evidence": "smtp_accepted;message_id:<4e3a5b51-9567-6b06-a7c9-2b2ae2627c9e@flextailgear.com>;sent_folder_message_confirmed;contact_path_strategy_v2;recipient_replied;inbound_reply_received;human_reply_price_list_requested;positive_buyer_routing_confirmed"
+    },
+    {
+      "companyId": "company_a0e4c71fd91b7383",
+      "company": "Mc's Outdoor Store",
+      "permanent": true,
+      "crossChannel": true,
+      "reason": "previous_customer_development_no_repeat",
+      "sourceStatus": "sent_confirmed",
+      "sourceTimestamp": "2026-08-10T11:29:50.000Z",
+      "evidence": "exact_recipient_sender_subject_body_gate_passed;send_clicked_once;composer_closed;sent_folder_unique_company_body_reconciled;no_matched_DSN_in_bounded_inbox_and_spam_scan"
+    },
+    {
+      "companyId": "company_ea548b07a3603f78",
+      "company": "Van Dijk Outdoor & Recreatie",
+      "permanent": true,
+      "crossChannel": true,
+      "reason": "previous_customer_development_no_repeat",
+      "sourceStatus": "sent_confirmed",
+      "sourceTimestamp": "2026-08-10T11:42:00.000Z",
+      "evidence": "exact_recipient_sender_subject_body_gate_passed;send_clicked_once;composer_closed;sent_folder_unique_company_body_reconciled;no_matched_DSN_in_bounded_inbox_and_spam_scan"
     },
     {
       "companyId": "company_ae4c17b7cdfe0e0e",
@@ -17309,6 +19092,36 @@
       "sourceStatus": "sent_confirmed",
       "sourceTimestamp": "2026-08-10T11:21:00.000Z",
       "evidence": "exact_recipient_sender_subject_body_gate_passed;send_clicked_once;composer_closed;sent_folder_unique_company_body_reconciled;no_matched_DSN_in_bounded_scan"
+    },
+    {
+      "companyId": "company_9c7b988c00c04f1a",
+      "company": "Camps Store Diest",
+      "permanent": true,
+      "crossChannel": true,
+      "reason": "previous_customer_development_no_repeat",
+      "sourceStatus": "sent_confirmed",
+      "sourceTimestamp": "2026-08-10T11:40:20.000Z",
+      "evidence": "exact_recipient_sender_subject_body_gate_passed;send_clicked_once;composer_closed;sent_folder_unique_company_body_reconciled;no_matched_DSN_in_bounded_inbox_and_spam_scan"
+    },
+    {
+      "companyId": "company_c2a5881d2f12597e",
+      "company": "MK Outdoor",
+      "permanent": true,
+      "crossChannel": true,
+      "reason": "previous_customer_development_no_repeat",
+      "sourceStatus": "sent_confirmed",
+      "sourceTimestamp": "2026-08-10T11:42:20.000Z",
+      "evidence": "exact_recipient_sender_subject_body_gate_passed;send_clicked_once;composer_closed;sent_folder_unique_company_body_reconciled;no_matched_DSN_in_bounded_inbox_and_spam_scan"
+    },
+    {
+      "companyId": "company_a29ce0b01e87b695",
+      "company": "Kampersport",
+      "permanent": true,
+      "crossChannel": true,
+      "reason": "previous_customer_development_no_repeat",
+      "sourceStatus": "sent_confirmed",
+      "sourceTimestamp": "2026-08-10T11:42:40.000Z",
+      "evidence": "exact_recipient_sender_subject_body_gate_passed;send_clicked_once;composer_closed;sent_folder_unique_company_body_reconciled;no_matched_DSN_in_bounded_inbox_and_spam_scan"
     },
     {
       "companyId": "company_20dc0fe8c19aeb5c",
@@ -17789,6 +19602,46 @@
       "sourceStatus": "sent_confirmed",
       "sourceTimestamp": "2026-08-10T10:52:00.000Z",
       "evidence": "official_about_page_publishes_info_at_switchinggear_ca;exact_recipient_tooltip_sender_subject_body_gate_passed;send_clicked_once;composer_closed;sent_folder_unique_company_body_reconciled;no_matched_DSN_in_bounded_scan"
+    },
+    {
+      "companyId": "company_057dddc81f64e952",
+      "company": "NZ Outdoors",
+      "permanent": true,
+      "crossChannel": true,
+      "reason": "previous_customer_development_no_repeat",
+      "sourceStatus": "sent_confirmed",
+      "sourceTimestamp": "2026-08-10T11:33:00.000Z",
+      "evidence": "exact_recipient_sender_subject_body_gate_passed;send_clicked_once;composer_closed;sent_folder_unique_company_body_reconciled;no_matched_DSN_in_bounded_inbox_and_spam_scan"
+    },
+    {
+      "companyId": "company_70d9959928d6b4fe",
+      "company": "Outdoordump",
+      "permanent": true,
+      "crossChannel": true,
+      "reason": "previous_customer_development_no_repeat",
+      "sourceStatus": "sent_confirmed",
+      "sourceTimestamp": "2026-08-10T11:37:00.000Z",
+      "evidence": "exact_recipient_sender_subject_body_gate_passed;send_clicked_once;composer_closed;sent_folder_unique_company_body_reconciled;no_matched_DSN_in_bounded_inbox_and_spam_scan"
+    },
+    {
+      "companyId": "company_057ea155731deb4c",
+      "company": "OutdoorHaven",
+      "permanent": true,
+      "crossChannel": true,
+      "reason": "previous_customer_development_no_repeat",
+      "sourceStatus": "sent_confirmed",
+      "sourceTimestamp": "2026-08-10T11:37:20.000Z",
+      "evidence": "exact_recipient_sender_subject_body_gate_passed;send_clicked_once;composer_closed;sent_folder_unique_company_body_reconciled;no_matched_DSN_in_bounded_inbox_and_spam_scan"
+    },
+    {
+      "companyId": "company_997ae05f8ecc6c25",
+      "company": "Klima Outdoor",
+      "permanent": true,
+      "crossChannel": true,
+      "reason": "previous_customer_development_no_repeat",
+      "sourceStatus": "sent_confirmed",
+      "sourceTimestamp": "2026-08-10T11:40:40.000Z",
+      "evidence": "exact_recipient_sender_subject_body_gate_passed;send_clicked_once;composer_closed;sent_folder_unique_company_body_reconciled;no_matched_DSN_in_bounded_inbox_and_spam_scan"
     },
     {
       "companyId": "company_7580a97286e5f239",
@@ -18309,7 +20162,7 @@
       },
       {
         "channel": "email",
-        "confirmed": 83,
+        "confirmed": 115,
         "replies": 0,
         "opportunities": 0,
         "replyRate": 0,
@@ -18360,7 +20213,7 @@
       {
         "dimension": "channel",
         "variant": "email",
-        "sampleSize": 83,
+        "sampleSize": 115,
         "observedReplyRate": 0,
         "recommendation": "use_as_bounded_allocation_signal"
       },
@@ -18374,13 +20227,13 @@
     ]
   },
   "ownerSummary": {
-    "generatedAt": "2026-08-10T11:24:41.451Z",
+    "generatedAt": "2026-08-10T11:49:38.237Z",
     "phase": "autonomous_sales_operating_system_v1",
     "kpis": {
-      "companies": 243,
-      "permanentlySuppressed": 183,
+      "companies": 276,
+      "permanentlySuppressed": 215,
       "plannedActions": 7,
-      "verifiedEvidenceRoutes": 125
+      "verifiedEvidenceRoutes": 122
     },
     "decisions": [
       {
@@ -18500,7 +20353,7 @@
         },
         {
           "channel": "email",
-          "confirmed": 83,
+          "confirmed": 115,
           "replies": 0,
           "opportunities": 0,
           "replyRate": 0,
@@ -18551,7 +20404,7 @@
         {
           "dimension": "channel",
           "variant": "email",
-          "sampleSize": 83,
+          "sampleSize": 115,
           "observedReplyRate": 0,
           "recommendation": "use_as_bounded_allocation_signal"
         },

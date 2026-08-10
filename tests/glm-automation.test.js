@@ -552,6 +552,39 @@ test('Google discovery preserves newly verified independent-retailer routing ema
     ['Outdoors Ramsey', ['sales@outdoorsramsey.co.uk', 'https://www.outdoorsramsey.co.uk/outdoor-shop-in-ramsey-isle-of-man/']],
     ['Castleberg Outdoors', ['enquiries@castlebergoutdoors.co.uk', 'https://www.castlebergoutdoors.co.uk/about-castleberg-outdoors']],
     ['WM Camping', ['customerservices@wmcamping.co.uk', 'https://wmcamping.co.uk/pages/contact-us']],
+    ["MD Outdoors", ["info@mdoutdoors.co.nz", "https://www.mdoutdoors.co.nz/pages/contact-us"]],
+    ["Mc's Outdoor Store", ["info@mcsoutdoorstore.ie", "https://www.mcsoutdoorstore.ie/contact-us/"]],
+    ["Sportsden", ["info@sportsden.ie", "https://www.sportsden.ie/pages/contact-us"]],
+    ["MacEoin General Merchants", ["info@maceoinltd.com", "https://www.maceoinltd.com/"]],
+    ["Outdoor Adventure Store", ["online@oas.ie", "https://outdooradventurestore.ie/pages/about-us"]],
+    ["S.K Camping & Leisure", ["info@skcamping.com", "https://www.skcamping.com/"]],
+    ["Black & White Outdoors", ["sales@blackandwhiteoutdoors.com", "https://blackandwhiteoutdoors.com/contact-us/"]],
+    ["NZ Outdoors", ["info@nz-outdoors.co.nz", "https://www.nz-outdoors.co.nz/pages/support"]],
+    ["Craze Outdoors", ["support@crazeoutdoors.com", "https://crazeoutdoors.com/pages/contact-us"]],
+    ["Charles Camping", ["info@charlescamping.ie", "https://www.charlescamping.ie/contact-us"]],
+    ["Portwest The Outdoor Shop", ["sales@theoutdoorshop.ie", "https://www.theoutdoorshop.ie/pages/contact-us"]],
+    ["Basecamp Dublin", ["info@basecamp.ie", "https://basecamp.ie/pages/privacy-policy"]],
+    ["JSJ Camping & Garden", ["info@jsj-bv.com", "https://jsj-bv.com/"]],
+    ["Veneboer Camping & Outdoor", ["info@veneboercamping.nl", "https://www.veneboercamping.nl/contact"]],
+    ["GetCamping", ["info@getcamping.se", "https://www.getcamping.eu/en/info/about-us/"]],
+    ["Outdoordump", ["info@outdoordump.nl", "https://outdoordump.nl/contact/"]],
+    ["OutdoorHaven", ["info@outdoorhaven.nl", "https://outdoorhaven.nl/"]],
+    ["Huna Outdoor", ["info@hunaoutdoor.nl", "https://hunaoutdoor.nl/"]],
+    ["Expedition Store Sweden", ["info@expeditionstore.se", "https://expeditionstore.se/pages/contact-us"]],
+    ["Van Os Imports", ["info@vanosimports.nl", "https://www.vanosimports.com/en/grid/outdoor"]],
+    ["De Campingwinkel", ["info@decampingwinkel.be", "https://decampingwinkel.be/contact/"]],
+    ["Camps Store Diest", ["info@campsstore.be", "https://www.campsstore.be/contact"]],
+    ["Klima Outdoor", ["schwarte@drshop24.de", "https://klima-outdoor.de/pages/contact"]],
+    ["CanvasCamp", ["info@canvascamp.com", "https://www.canvascamp.com/en/contact-us"]],
+    ["High Peak Outdoor", ["service@simexoutdoor.com", "https://www.highpeak-outdoor.com/kontakt.html"]],
+    ["Der Freistaat Mega Store", ["webshop@derfreistaat.de", "https://shop.derfreistaat.de/de/kontakt/"]],
+    ["Van Dijk Outdoor & Recreatie", ["webshop@autodaktenten.be", "https://autodaktenten-webshop.be/pages/contact"]],
+    ["MK Outdoor", ["service@mkoutdoor.de", "https://www.mkoutdoor.de/Impressum/"]],
+    ["Kampersport", ["info@kampersport.com", "https://kampersport.com/nous-contacter/"]],
+    ["Shopping4Camping", ["info@shopping4.be", "https://www.shopping4camping.be/pages/contact-bereikbaarheid"]],
+    ["De Kampeerder", ["info@dekampeerder.be", "https://dekampeerder.be/"]],
+    ["Campingudstyr.dk", ["info@campingudstyr.dk", "https://www.campingudstyr.dk/contact"]],
+    ["Naturligvis Outdoor", ["mail@naturligvis.com", "https://www.naturligvis.com/side/kontakt"]],
     ['Kittery Trading Post', ['info@ktp.com', 'https://www.kitterytradingpost.com/customer-service/cookie-policy/']],
     ['Spejder Sport', ['kundeservice@spejdersport.dk', 'https://www.spejdersport.dk/handelsbetingelser/']],
     ['Hardloop', ['hello@hardloop.fr', 'https://www.hardloop.fr/article/671-acupression-tout-savoir']],
@@ -576,7 +609,7 @@ test('Google discovery preserves newly verified independent-retailer routing ema
 });
 
 test('Google discovery keeps a refill pool for new prospects after current customers are developed', () => {
-  const run = buildDiscoveryRun(160);
+  const run = buildDiscoveryRun(320);
   assert.ok(run.candidatePoolCount >= 23);
   assert.ok(run.qualifiedNonPartnerCompanyCount >= 8);
   assert.ok(run.activeCustomerExcludedCount >= 3);

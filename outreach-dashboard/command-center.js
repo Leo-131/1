@@ -534,7 +534,7 @@
     if (!hasReply) return null;
     return {
       type: /recipient_auto_reply_received|automated_reply/i.test(evidence) ? 'automated' : 'human',
-      timestamp: timestampOrEmpty(item.timestamp),
+      timestamp: timestampOrEmpty(item.replyAt || item.positiveReplyAt || item.timestamp),
       evidence,
     };
   }

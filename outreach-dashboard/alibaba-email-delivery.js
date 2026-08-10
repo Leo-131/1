@@ -138,6 +138,16 @@ function parseBounceSource(source = '') {
   return { recipient: normalizedEmail(recipient), messageId: clean(messageId), diagnostic: clean(diagnostic).slice(0, 240) };
 }
 
+function bounceMailboxPaths(list = []) {
+  const paths = ['INBOX'];
+  for (const item of Array.isArray(list) ? list : []) {
+    const path = clean(item && item.path);
+    const specialUse = clean(item && item.specialUse).toLowerCase();
+    if (path && (specialUse === '\\junk' || /(^|[/.])(junk|spam)$/i.test(path))) paths.push(path);
+  }
+  return [...new Set(paths)].slice(0, 3);
+}
+
 async function scanAlibabaBounces(options = {}, dependencies = {}) {
   const readiness = emailSenderReadiness(options.env || process.env);
   if (!readiness.ok) return { ok: false, reason: 'email_sender_not_configured', bounces: [], requiredEnv: readiness.requiredEnv };
@@ -152,22 +162,29 @@ async function scanAlibabaBounces(options = {}, dependencies = {}) {
   });
   try {
     await client.connect();
-    await client.mailboxOpen('INBOX');
     const since = options.since || new Date(Date.now() - 14 * 24 * 60 * 60 * 1000);
-    const uids = await client.search({
-      since,
-      or: [
-        { subject: 'Delivery Status Notification' },
-        { subject: 'Undeliverable' },
-        { subject: 'Mail delivery failed' },
-        { subject: 'Returned mail' },
-      ],
-    }, { uid: true });
-    if (!Array.isArray(uids) || !uids.length) return { ok: true, reason: 'no_recent_bounces', bounces: [] };
-    const messages = await client.fetchAll(uids.slice(-100), { uid: true, envelope: true, source: true, internalDate: true }, { uid: true });
-    const bounces = messages
-      .map(message => ({ ...parseBounceSource(message.source), uid: message.uid, receivedAt: message.internalDate && new Date(message.internalDate).toISOString() }))
-      .filter(item => item.recipient || item.messageId);
+    const mailboxes = typeof client.list === 'function' ? await client.list() : [];
+    const paths = bounceMailboxPaths(mailboxes);
+    const bounces = [];
+    for (const mailboxPath of paths) {
+      await client.mailboxOpen(mailboxPath);
+      const uids = await client.search({
+        since,
+        or: [
+          { subject: 'Delivery Status Notification' },
+          { subject: 'Undeliverable' },
+          { subject: 'Mail delivery failed' },
+          { subject: 'Returned mail' },
+          { subject: '退信' },
+        ],
+      }, { uid: true });
+      if (!Array.isArray(uids) || !uids.length) continue;
+      const messages = await client.fetchAll(uids.slice(-100), { uid: true, envelope: true, source: true, internalDate: true }, { uid: true });
+      bounces.push(...messages
+        .map(message => ({ ...parseBounceSource(message.source), mailboxPath, uid: message.uid, receivedAt: message.internalDate && new Date(message.internalDate).toISOString() }))
+        .filter(item => item.recipient || item.messageId));
+    }
+    if (!bounces.length) return { ok: true, reason: 'no_recent_bounces', bounces: [], scannedMailboxes: paths };
     return { ok: true, reason: 'bounce_scan_complete', bounces };
   } finally {
     if (client.usable) await client.logout().catch(() => {});
