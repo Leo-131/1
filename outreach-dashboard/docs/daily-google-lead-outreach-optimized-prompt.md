@@ -26,6 +26,8 @@ npm run sync:github
 
 Do not skip, reorder, replace commands, force-push, rewrite history, rebase a dirty worktree, deploy to Vercel, or judge success from stdout alone.
 
+Resolve each `.agent/policies/manifest.json` `requiredFiles` entry relative to `.agent/policies/`, where the manifest lives, rather than the repository root. If `CODEX_HOME` is not exported, resolve the named automation memory from the active Codex home before declaring `CONFIG_MISSING`.
+
 ## Conversion Rules
 
 - Prioritize high-ICP leads with verified company identity, official social pages, buyer/procurement signals, and recent outdoor/retail relevance.
@@ -60,6 +62,7 @@ Do not skip, reorder, replace commands, force-push, rewrite history, rebase a di
 - The preceding permanent duplicate rule does not weaken the temporary Shanghai-day failure circuit: `failed_open` is not permanent historical contact, but it must suppress all further selection of that company for the rest of that Shanghai day so the queue advances.
 - Route-level duplicate prevention is stricter: once an Alibaba composer contains a populated draft for the same normalized company, recipient, and subject, never reopen, refill, or recreate that email route—even when the prior result was a pre-send technical failure. Record `email_route_preserved_draft_no_reopen`, perform no email action, and continue only through another first-party-verified website/social route. This route lock must not be promoted into a company-wide lock unless an independently verified irreversible send/customer interaction exists.
 - Reuse the same automation-owned dedicated 9224 Alibaba Mail tab across session probe and send. Treat a newly visible login shell as transitional until it remains stable through the bounded session-restoration window; only then may one encrypted-credential attempt occur. Never loop login or create another compose tab while an authenticated or populated Alibaba tab is available.
+- Scope Alibaba recipient/subject/body inspection and filling to the active `[data-testid="compose-container"]`. Sent-detail, draft-preview, and other page-level iframes are evidence surfaces only and must never be selected as the active compose editor.
 
 After each command, verify actual generated files, not terminal output.
 

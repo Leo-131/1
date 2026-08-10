@@ -97,8 +97,10 @@ function composeFieldsExpression() {
         .sort((left, right) => right.getBoundingClientRect().width - left.getBoundingClientRect().width)[0]
       || null;
     const subjectInput = inputs.find(input => isVisible(input) && subjectPattern.test(labelOf(input))) || null;
-    const editorFrame = roots.map(root => root.querySelector('iframe.e_iframe')).find(Boolean)
-      || roots.flatMap(root => Array.from(root.querySelectorAll('iframe')))
+    const composeRoots = roots.flatMap(root => Array.from(root.querySelectorAll('[data-testid="compose-container"]')));
+    const editorSearchRoots = composeRoots.length ? composeRoots : roots;
+    const editorFrame = editorSearchRoots.map(root => root.querySelector('iframe.e_iframe')).find(Boolean)
+      || editorSearchRoots.flatMap(root => Array.from(root.querySelectorAll('iframe')))
       .find(frame => {
         try {
           const body = frame.contentDocument?.body;
@@ -108,7 +110,7 @@ function composeFieldsExpression() {
         }
       });
     const editorBody = editorFrame?.contentDocument?.body
-      || roots.map(root => root.querySelector('[contenteditable="true"],[role="textbox"]')).find(Boolean)
+      || editorSearchRoots.map(root => root.querySelector('[contenteditable="true"],[role="textbox"]')).find(Boolean)
       || null;
     return { recipientInput, subjectInput, editorBody };
   })()`;
