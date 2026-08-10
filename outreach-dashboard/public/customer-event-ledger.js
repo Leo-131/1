@@ -3,6 +3,7 @@
   if (typeof module === 'object' && module.exports) module.exports = api;
   if (root) root.CustomerEventLedger = api;
 }(typeof globalThis !== 'undefined' ? globalThis : this, function createCustomerEventLedger() {
+  const buildIndexes = new WeakMap();
   const RECORD_EVENT_FIELDS = Object.freeze({
     sentAt: 'sent_confirmed',
     repliedAt: 'replied',
@@ -10,6 +11,12 @@
     contactCapturedAt: 'contact_captured',
     buyerRoutedAt: 'buyer_routed',
     meetingBookedAt: 'meeting_booked',
+    positiveReplyAt: 'positive_reply',
+    qualifiedAt: 'qualified',
+    opportunityAt: 'opportunity_created',
+    sampleSentAt: 'sample_sent',
+    quotationSentAt: 'quotation_sent',
+    wonAt: 'won',
     followUpAt: 'follow_up_due',
     sentTime: 'sent_confirmed',
   });
@@ -20,6 +27,12 @@
     bounced: 'bounced',
     buyer_routed: 'buyer_routed',
     meeting_booked: 'meeting_booked',
+    positive_reply: 'positive_reply',
+    qualified: 'qualified',
+    opportunity_created: 'opportunity_created',
+    sample_sent: 'sample_sent',
+    quotation_sent: 'quotation_sent',
+    won: 'won',
   });
 
   function validTimestamp(value) {
@@ -79,21 +92,36 @@
     });
   }
   function eventsFromResults(results) {
-    return (Array.isArray(results) ? results : []).map(item => {
+    return (Array.isArray(results) ? results : []).flatMap(item => {
       const status = String(item && item.status || '').toLowerCase();
       const type = STATUS_EVENT_TYPES[status];
-      if (!type) return null;
-      return makeEvent({
-        customerKeys: customerKeys(item),
-        type,
-        channel: inferChannel(item),
-        timestamp: item.timestamp,
-        evidence: item.evidence || item.target_url || '',
-        source: 'automation_result',
-        taskId: item.task_id || '',
-        status,
-      });
-    }).filter(Boolean);
+      const events = [];
+      if (type) events.push(makeEvent({
+          customerKeys: customerKeys(item),
+          type,
+          channel: inferChannel(item),
+          timestamp: item.timestamp,
+          evidence: item.evidence || item.target_url || '',
+          source: 'automation_result',
+          taskId: item.task_id || '',
+          status,
+        }));
+      const evidence = String(item && item.evidence || '');
+      if (status === 'sent_confirmed'
+        && /recipient_(?:auto_)?reply_received|recipient_replied|inbound_reply_(?:received|visible)|reply_bubble_visible/i.test(evidence)) {
+        events.push(makeEvent({
+          customerKeys: customerKeys(item),
+          type: 'replied',
+          channel: inferChannel(item),
+          timestamp: item.replyAt || item.positiveReplyAt || item.timestamp,
+          evidence,
+          source: 'automation_reply_evidence',
+          taskId: item.task_id || '',
+          status: /recipient_auto_reply_received|automated_reply/i.test(evidence) ? 'auto_replied' : 'replied',
+        }));
+      }
+      return events.filter(Boolean);
+    });
   }
   function eventsFromAudit(audit) {
     return (Array.isArray(audit) ? audit : []).map(item => {
@@ -139,19 +167,49 @@
         const existing = byId.get(event.id);
         if (!existing || event.source === 'automation_result') byId.set(event.id, event);
       });
-    return Object.freeze([...byId.values()]
+    const events = Object.freeze([...byId.values()]
       .sort((left, right) => Date.parse(left.timestamp) - Date.parse(right.timestamp)));
+    const byCustomerKey = new Map();
+    events.forEach(event => event.customerKeys.forEach(key => {
+      const bucket = byCustomerKey.get(key) || [];
+      bucket.push(event);
+      byCustomerKey.set(key, bucket);
+    }));
+    buildIndexes.set(events, byCustomerKey);
+    return events;
   }
   function forCustomer(events, record, types) {
     const keys = new Set(customerKeys(record));
     const allowed = Array.isArray(types) && types.length ? new Set(types) : null;
-    return (Array.isArray(events) ? events : [])
-      .filter(event => event.customerKeys.some(key => keys.has(key)))
+    const index = buildIndexes.get(events);
+    const candidates = index
+      ? [...new Map([...keys].flatMap(key => index.get(key) || []).map(event => [event.id, event])).values()]
+      : (Array.isArray(events) ? events : []).filter(event => event.customerKeys.some(key => keys.has(key)));
+    return candidates
       .filter(event => !allowed || allowed.has(event.type));
   }
   function latest(events, record, types) {
-    return forCustomer(events, record, types)
-      .sort((left, right) => Date.parse(right.timestamp) - Date.parse(left.timestamp))[0] || null;
+    const index = buildIndexes.get(events);
+    if (index) {
+      const allowed = Array.isArray(types) && types.length ? new Set(types) : null;
+      let newest = null;
+      customerKeys(record).forEach(key => {
+        const bucket = index.get(key) || [];
+        for (let position = bucket.length - 1; position >= 0; position -= 1) {
+          const event = bucket[position];
+          if (allowed && !allowed.has(event.type)) continue;
+          if (!newest || Date.parse(event.timestamp) > Date.parse(newest.timestamp)) newest = event;
+          break;
+        }
+      });
+      return newest;
+    }
+    const matches = forCustomer(events, record, types);
+    let newest = null;
+    for (const event of matches) {
+      if (!newest || Date.parse(event.timestamp) > Date.parse(newest.timestamp)) newest = event;
+    }
+    return newest;
   }
 
   return Object.freeze({
