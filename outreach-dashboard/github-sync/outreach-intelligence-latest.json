@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-10T09:15:11.398Z",
+  "generatedAt": "2026-08-10T09:23:29.436Z",
   "companies": [
     {
       "companyId": "company_819cc04fe9060117",
@@ -1187,32 +1187,32 @@
       "evidence": [
         {
           "channel": "website_form",
-          "score": 0,
+          "score": 80,
           "verified": false,
           "reasons": [
-            "unverified_external_evidence_rejected"
+            "first_party_evidence"
           ],
-          "evidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
+          "evidenceUrl": "https://www.trekitt.co.uk/",
           "checkedAt": ""
         },
         {
           "channel": "website_form",
-          "score": 0,
+          "score": 80,
           "verified": false,
           "reasons": [
-            "unverified_external_evidence_rejected"
+            "first_party_evidence"
           ],
-          "evidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
+          "evidenceUrl": "https://www.trekitt.co.uk/",
           "checkedAt": ""
         },
         {
           "channel": "website_form",
-          "score": 0,
+          "score": 80,
           "verified": false,
           "reasons": [
-            "unverified_external_evidence_rejected"
+            "first_party_evidence"
           ],
-          "evidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
+          "evidenceUrl": "https://www.trekitt.co.uk/",
           "checkedAt": ""
         }
       ],
@@ -3032,22 +3032,32 @@
       "evidence": [
         {
           "channel": "website_form",
-          "score": 0,
+          "score": 80,
           "verified": false,
           "reasons": [
-            "unverified_external_evidence_rejected"
+            "first_party_evidence"
           ],
-          "evidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
+          "evidenceUrl": "https://nextadventure.net/",
           "checkedAt": ""
         },
         {
           "channel": "website_form",
-          "score": 0,
+          "score": 80,
           "verified": false,
           "reasons": [
-            "unverified_external_evidence_rejected"
+            "first_party_evidence"
           ],
-          "evidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
+          "evidenceUrl": "https://nextadventure.net/",
+          "checkedAt": ""
+        },
+        {
+          "channel": "website_form",
+          "score": 80,
+          "verified": false,
+          "reasons": [
+            "first_party_evidence"
+          ],
+          "evidenceUrl": "https://nextadventure.net/",
           "checkedAt": ""
         },
         {
@@ -3057,17 +3067,7 @@
           "reasons": [
             "unverified_external_evidence_rejected"
           ],
-          "evidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
-          "checkedAt": ""
-        },
-        {
-          "channel": "website_form",
-          "score": 0,
-          "verified": false,
-          "reasons": [
-            "unverified_external_evidence_rejected"
-          ],
-          "evidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
+          "evidenceUrl": "https://nextadventure.net/",
           "checkedAt": ""
         }
       ],
@@ -3362,78 +3362,6 @@
           "timestamp": "2026-08-10T09:06:43.621Z",
           "channel": "website_form",
           "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:7;contact_path_strategy_v2"
-        }
-      ]
-    },
-    {
-      "companyId": "company_368689331ba38ee2",
-      "company": "Valhalla Pure Outfitters",
-      "keys": [
-        "valhallapureoutfitters",
-        "vpoca"
-      ],
-      "domains": [
-        "vpo.ca"
-      ],
-      "channels": [
-        "website_form"
-      ],
-      "evidence": [
-        {
-          "channel": "website_form",
-          "score": 0,
-          "verified": false,
-          "reasons": [
-            "unverified_external_evidence_rejected"
-          ],
-          "evidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
-          "checkedAt": ""
-        },
-        {
-          "channel": "website_form",
-          "score": 0,
-          "verified": false,
-          "reasons": [
-            "unverified_external_evidence_rejected"
-          ],
-          "evidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
-          "checkedAt": ""
-        },
-        {
-          "channel": "website_form",
-          "score": 0,
-          "verified": false,
-          "reasons": [
-            "unverified_external_evidence_rejected"
-          ],
-          "evidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
-          "checkedAt": ""
-        }
-      ],
-      "history": [
-        {
-          "status": "website_contact_unreachable_skip",
-          "timestamp": "2026-07-14T03:07:28.525Z",
-          "channel": "website_form",
-          "evidence": "website_contact_entry_not_verified;no_contact_route_detected;website_contact_all_targets_failed:1"
-        },
-        {
-          "status": "website_contact_unreachable_skip",
-          "timestamp": "2026-07-21T02:21:43.781Z",
-          "channel": "website_form",
-          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:6;contact_path_strategy_v2"
-        },
-        {
-          "status": "website_contact_unreachable_skip",
-          "timestamp": "2026-07-21T19:11:28.296Z",
-          "channel": "website_form",
-          "evidence": "website_page_unavailable_404: Homepage\n/\nHomepage\n404\nOops! This Page Could Not Be Found\n\nhttps://vpo.ca/help/contact-us could not be found\n\nBACK TO VPO HOME;website_contact_all_targets_failed:6;contact_path_strategy_v2"
-        },
-        {
-          "status": "website_contact_unreachable_skip",
-          "timestamp": "2026-07-26T22:09:08.620Z",
-          "channel": "website_form",
-          "evidence": "website_contact_entry_not_verified;no_contact_route_detected;website_contact_all_targets_failed:6;contact_path_strategy_v2"
         }
       ]
     },
@@ -3966,222 +3894,6 @@
       ]
     },
     {
-      "companyId": "company_de49b6589ebd1f1b",
-      "company": "The Mountaineer",
-      "keys": [
-        "themountaineer",
-        "mountaineercom"
-      ],
-      "domains": [
-        "mountaineer.com"
-      ],
-      "channels": [
-        "website_form",
-        "facebook",
-        "instagram"
-      ],
-      "evidence": [
-        {
-          "channel": "website_form",
-          "score": 0,
-          "verified": false,
-          "reasons": [
-            "unverified_external_evidence_rejected"
-          ],
-          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
-          "checkedAt": ""
-        },
-        {
-          "channel": "website_form",
-          "score": 0,
-          "verified": false,
-          "reasons": [
-            "unverified_external_evidence_rejected"
-          ],
-          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
-          "checkedAt": ""
-        },
-        {
-          "channel": "facebook",
-          "score": 0,
-          "verified": false,
-          "reasons": [
-            "unverified_external_evidence_rejected"
-          ],
-          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
-          "checkedAt": ""
-        },
-        {
-          "channel": "instagram",
-          "score": 0,
-          "verified": false,
-          "reasons": [
-            "unverified_external_evidence_rejected"
-          ],
-          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
-          "checkedAt": ""
-        },
-        {
-          "channel": "instagram",
-          "score": 0,
-          "verified": false,
-          "reasons": [
-            "unverified_external_evidence_rejected"
-          ],
-          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
-          "checkedAt": ""
-        },
-        {
-          "channel": "facebook",
-          "score": 0,
-          "verified": false,
-          "reasons": [
-            "unverified_external_evidence_rejected"
-          ],
-          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
-          "checkedAt": ""
-        },
-        {
-          "channel": "website_form",
-          "score": 0,
-          "verified": false,
-          "reasons": [
-            "unverified_external_evidence_rejected"
-          ],
-          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
-          "checkedAt": ""
-        }
-      ],
-      "history": [
-        {
-          "status": "failed_open",
-          "timestamp": "2026-07-17T02:54:18.003Z",
-          "channel": "facebook",
-          "evidence": "instagram_unavailable_profile_page: 很抱歉，无法访问此页面\n你点击的链接可能已损坏，或页面已被移除。返回 instagram。\nmeta\n关于\n博客\n工作\n帮助\napi\n隐私设置\n条款\n地点\n热门\ninstagram lite\nmeta ai\nthreads\n联系人上传和非用户\nmeta verified\n中文(简体)\nafrikaans\nالعربية\nčeština\ndansk\ndeutsch\nελληνικά\nenglish\nenglish (uk)\nespañol (españa)\nespañol\nفارسی\nsuomi\nfrançais\nעברית\nbahasa indonesia\nitaliano\n日本語\n한국어\nbahasa melayu\nnorsk\nnederlands\npolski\nportuguês (brasil)\nportuguês (portugal)\nрусский\nsvenska\nภาษาไทย\nfilipino\ntürkçe\n中文(简体)\n中文(台灣)\nবাংলা\nગુજરાતી\nहिन्दी\nhrvatski\nmagyar\nಕನ್ನಡ\nമലയാളം\nमराठी\nनेपाली\nਪੰਜਾਬੀ\nසිංහල\nslovenčina\nதமிழ்\nతెలుగు\nاردو\ntiếng việt\n中文(香港)\nбългарски\nfrançais (canada)\nromână\nсрпски\nукра"
-        },
-        {
-          "status": "failed_open",
-          "timestamp": "2026-07-29T10:33:44.681Z",
-          "channel": "facebook",
-          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;personal_profile_without_company_match_expected_The Mountaineer_title_Facebook;contact_path_strategy_v2"
-        },
-        {
-          "status": "failed_open",
-          "timestamp": "2026-07-29T10:35:25.103Z",
-          "channel": "website_form",
-          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;personal_profile_without_company_match_expected_The Mountaineer_title_Facebook;contact_path_strategy_v2"
-        },
-        {
-          "status": "failed_open",
-          "timestamp": "2026-08-04T12:06:18.930Z",
-          "channel": "facebook",
-          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;identity_mismatch_expected_The Mountaineer_title_(1) Facebook;contact_path_strategy_v2"
-        },
-        {
-          "status": "failed_open",
-          "timestamp": "2026-08-04T12:37:48.665Z",
-          "channel": "website_form",
-          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;identity_mismatch_expected_The Mountaineer_title_(1) Facebook;contact_path_strategy_v2"
-        },
-        {
-          "status": "failed_open",
-          "timestamp": "2026-08-04T12:44:11.964Z",
-          "channel": "facebook",
-          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;identity_mismatch_expected_The Mountaineer_title_Facebook;contact_path_strategy_v2"
-        },
-        {
-          "status": "failed_open",
-          "timestamp": "2026-08-04T13:01:14.716Z",
-          "channel": "website_form",
-          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;identity_mismatch_expected_The Mountaineer_title_Facebook;contact_path_strategy_v2"
-        },
-        {
-          "status": "failed_open",
-          "timestamp": "2026-08-05T02:00:48.834Z",
-          "channel": "facebook",
-          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;identity_mismatch_expected_The Mountaineer_title_www.facebook.com;contact_path_strategy_v2"
-        },
-        {
-          "status": "failed_open",
-          "timestamp": "2026-08-05T03:01:21.968Z",
-          "channel": "website_form",
-          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;identity_mismatch_expected_The Mountaineer_title_www.facebook.com;contact_path_strategy_v2"
-        }
-      ]
-    },
-    {
-      "companyId": "company_f7aa8d63c2404e8c",
-      "company": "La Cordee",
-      "keys": [
-        "lacordee",
-        "lacordeecom"
-      ],
-      "domains": [
-        "lacordee.com"
-      ],
-      "channels": [
-        "website_form"
-      ],
-      "evidence": [
-        {
-          "channel": "website_form",
-          "score": 0,
-          "verified": false,
-          "reasons": [
-            "unverified_external_evidence_rejected"
-          ],
-          "evidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
-          "checkedAt": ""
-        },
-        {
-          "channel": "website_form",
-          "score": 0,
-          "verified": false,
-          "reasons": [
-            "unverified_external_evidence_rejected"
-          ],
-          "evidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
-          "checkedAt": ""
-        },
-        {
-          "channel": "website_form",
-          "score": 0,
-          "verified": false,
-          "reasons": [
-            "unverified_external_evidence_rejected"
-          ],
-          "evidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
-          "checkedAt": ""
-        }
-      ],
-      "history": [
-        {
-          "status": "website_contact_unreachable_skip",
-          "timestamp": "2026-07-14T03:09:53.645Z",
-          "channel": "website_form",
-          "evidence": "website_contact_cdp_unavailable_open_only_not_verified;website_contact_all_targets_failed:1"
-        },
-        {
-          "status": "website_contact_unreachable_skip",
-          "timestamp": "2026-07-21T03:02:16.592Z",
-          "channel": "website_form",
-          "evidence": "website_page_unavailable_404: 404 Page introuvable – La Cordée;website_contact_all_targets_failed:6;contact_path_strategy_v2"
-        },
-        {
-          "status": "website_contact_unreachable_skip",
-          "timestamp": "2026-07-21T23:10:15.371Z",
-          "channel": "website_form",
-          "evidence": "website_page_unavailable_404: Ignorer et passer au contenu\n\nLivraison gratuite sur les commandes de 69$ et plus*. En savoir plus\n\nLivraison gratuite sur les commandes de 69$ et plus*. En savoir plus\nMagasins\nEn;website_contact_all_targets_failed:6;contact_path_strategy_v2"
-        },
-        {
-          "status": "website_contact_unreachable_skip",
-          "timestamp": "2026-07-27T11:31:38.400Z",
-          "channel": "website_form",
-          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:6;contact_path_strategy_v2"
-        }
-      ]
-    },
-    {
       "companyId": "company_84aac07de1934fcd",
       "company": "Latulippe",
       "keys": [
@@ -4398,78 +4110,6 @@
       ]
     },
     {
-      "companyId": "company_ae4c17b7cdfe0e0e",
-      "company": "Bentgate Mountaineering",
-      "keys": [
-        "bentgatemountaineering",
-        "bentgatecom"
-      ],
-      "domains": [
-        "bentgate.com"
-      ],
-      "channels": [
-        "website_form"
-      ],
-      "evidence": [
-        {
-          "channel": "website_form",
-          "score": 0,
-          "verified": false,
-          "reasons": [
-            "unverified_external_evidence_rejected"
-          ],
-          "evidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
-          "checkedAt": ""
-        },
-        {
-          "channel": "website_form",
-          "score": 0,
-          "verified": false,
-          "reasons": [
-            "unverified_external_evidence_rejected"
-          ],
-          "evidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
-          "checkedAt": ""
-        },
-        {
-          "channel": "website_form",
-          "score": 0,
-          "verified": false,
-          "reasons": [
-            "unverified_external_evidence_rejected"
-          ],
-          "evidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
-          "checkedAt": ""
-        }
-      ],
-      "history": [
-        {
-          "status": "website_contact_unreachable_skip",
-          "timestamp": "2026-07-14T03:13:19.366Z",
-          "channel": "website_form",
-          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:1"
-        },
-        {
-          "status": "website_contact_unreachable_skip",
-          "timestamp": "2026-07-21T03:42:08.591Z",
-          "channel": "website_form",
-          "evidence": "website_contact_entry_not_verified;contact_entry_clicked:https://www.bentgate.com/help/contact-us/;website_contact_all_targets_failed:6;contact_path_strategy_v2"
-        },
-        {
-          "status": "website_contact_unreachable_skip",
-          "timestamp": "2026-07-22T14:09:52.132Z",
-          "channel": "website_form",
-          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:6;contact_path_strategy_v2"
-        },
-        {
-          "status": "website_contact_unreachable_skip",
-          "timestamp": "2026-07-29T02:53:50.935Z",
-          "channel": "website_form",
-          "evidence": "website_contact_entry_not_verified;contact_entry_clicked:https://www.bentgate.com/help/contact-us/;website_contact_all_targets_failed:6;contact_path_strategy_v2"
-        }
-      ]
-    },
-    {
       "companyId": "company_4dd198964d50b6f5",
       "company": "The Great Outdoor Shop",
       "keys": [
@@ -4544,78 +4184,6 @@
           "timestamp": "2026-07-29T17:02:27.975Z",
           "channel": "website_form",
           "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:6;contact_path_strategy_v2"
-        }
-      ]
-    },
-    {
-      "companyId": "company_20dc0fe8c19aeb5c",
-      "company": "AvidMax Outfitters",
-      "keys": [
-        "avidmaxoutfitters",
-        "avidmaxcom"
-      ],
-      "domains": [
-        "avidmax.com"
-      ],
-      "channels": [
-        "website_form"
-      ],
-      "evidence": [
-        {
-          "channel": "website_form",
-          "score": 0,
-          "verified": false,
-          "reasons": [
-            "unverified_external_evidence_rejected"
-          ],
-          "evidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
-          "checkedAt": ""
-        },
-        {
-          "channel": "website_form",
-          "score": 0,
-          "verified": false,
-          "reasons": [
-            "unverified_external_evidence_rejected"
-          ],
-          "evidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
-          "checkedAt": ""
-        },
-        {
-          "channel": "website_form",
-          "score": 0,
-          "verified": false,
-          "reasons": [
-            "unverified_external_evidence_rejected"
-          ],
-          "evidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
-          "checkedAt": ""
-        }
-      ],
-      "history": [
-        {
-          "status": "website_contact_unreachable_skip",
-          "timestamp": "2026-07-14T04:02:46.925Z",
-          "channel": "website_form",
-          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:1"
-        },
-        {
-          "status": "website_contact_unreachable_skip",
-          "timestamp": "2026-07-21T04:06:23.745Z",
-          "channel": "website_form",
-          "evidence": "unavailable_profile_page: Skip to main content\n\nFREE STANDARD SHIPPING OVER $45\n\nSearch Keyword:\nLearn & Explore\nReports, Articles and more.\nRetail\nRewards\nAccount\nCart\nFly Tying\nRods\nReels\nLines\nTerminal T;website_contact_all_targets_failed:6;contact_path_strategy_v2"
-        },
-        {
-          "status": "website_contact_unreachable_skip",
-          "timestamp": "2026-07-22T14:10:25.821Z",
-          "channel": "website_form",
-          "evidence": "website_page_unavailable_404: AvidMax - Not Found;website_contact_all_targets_failed:6;contact_path_strategy_v2"
-        },
-        {
-          "status": "website_contact_unreachable_skip",
-          "timestamp": "2026-07-27T11:36:32.169Z",
-          "channel": "website_form",
-          "evidence": "unavailable_profile_page: Skip to main content\n\nFREE STANDARD SHIPPING OVER $45\n\nSearch Keyword:\nLearn & Explore\nReports, Articles and more.\nRetail\nRewards\nAccount\nCart\nTying Bundles\nFly Tying\nRods\nReels\nLi;website_contact_all_targets_failed:6;contact_path_strategy_v2"
         }
       ]
     },
@@ -6066,7 +5634,7 @@
           "reasons": [
             "first_party_evidence"
           ],
-          "evidenceUrl": "https://komsa.com/en/contact",
+          "evidenceUrl": "https://komsa.com/en/contact/",
           "checkedAt": ""
         },
         {
@@ -6076,7 +5644,7 @@
           "reasons": [
             "unverified_external_evidence_rejected"
           ],
-          "evidenceUrl": "https://komsa.com/en/contact",
+          "evidenceUrl": "https://komsa.com/en/contact/",
           "checkedAt": ""
         }
       ],
@@ -6197,7 +5765,7 @@
           "reasons": [
             "official_business_route"
           ],
-          "evidenceUrl": "https://support.aqipa.com/en-US/new-ticket",
+          "evidenceUrl": "https://support.aqipa.com/en-US/kb/articles/anfrage-partner-werden",
           "checkedAt": ""
         },
         {
@@ -6207,7 +5775,7 @@
           "reasons": [
             "unverified_external_evidence_rejected"
           ],
-          "evidenceUrl": "https://support.aqipa.com/en-US/new-ticket",
+          "evidenceUrl": "https://support.aqipa.com/en-US/kb/articles/anfrage-partner-werden",
           "checkedAt": ""
         }
       ],
@@ -6380,7 +5948,7 @@
           "reasons": [
             "official_business_route"
           ],
-          "evidenceUrl": "https://help.cabelas.com/company-information-ff566349/how-can-i-sell-my-product-through-cabelas-cf904a21",
+          "evidenceUrl": "https://www.cabelas.com/",
           "checkedAt": ""
         },
         {
@@ -6750,7 +6318,7 @@
           "reasons": [
             "first_party_evidence"
           ],
-          "evidenceUrl": "https://www.gooutdoors.co.uk/pages/contact",
+          "evidenceUrl": "https://www.gooutdoors.co.uk/",
           "checkedAt": ""
         }
       ],
@@ -7150,7 +6718,7 @@
           "reasons": [
             "official_business_route"
           ],
-          "evidenceUrl": "https://www.sail.ca/en/contact-us",
+          "evidenceUrl": "https://www.sail.ca/",
           "checkedAt": ""
         }
       ],
@@ -7478,12 +7046,12 @@
         },
         {
           "channel": "website_form",
-          "score": 100,
-          "verified": true,
+          "score": 0,
+          "verified": false,
           "reasons": [
-            "official_business_route"
+            "unverified_external_evidence_rejected"
           ],
-          "evidenceUrl": "https://www.campsaver.com/",
+          "evidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
           "checkedAt": ""
         }
       ],
@@ -7636,7 +7204,7 @@
           "reasons": [
             "official_business_route"
           ],
-          "evidenceUrl": "https://www.summitint.co/",
+          "evidenceUrl": "https://www.summitint.co/contact/",
           "checkedAt": ""
         }
       ],
@@ -7692,6 +7260,74 @@
       ]
     },
     {
+      "companyId": "company_368689331ba38ee2",
+      "company": "Valhalla Pure Outfitters",
+      "keys": [
+        "valhallapureoutfitters",
+        "vpoca"
+      ],
+      "domains": [
+        "vpo.ca"
+      ],
+      "channels": [
+        "website_form"
+      ],
+      "evidence": [
+        {
+          "channel": "website_form",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
+          "checkedAt": ""
+        },
+        {
+          "channel": "website_form",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "https://vpo.ca/stores/vpo-vancouver",
+          "checkedAt": ""
+        }
+      ],
+      "history": [
+        {
+          "status": "website_contact_unreachable_skip",
+          "timestamp": "2026-07-14T03:07:28.525Z",
+          "channel": "website_form",
+          "evidence": "website_contact_entry_not_verified;no_contact_route_detected;website_contact_all_targets_failed:1"
+        },
+        {
+          "status": "website_contact_unreachable_skip",
+          "timestamp": "2026-07-21T02:21:43.781Z",
+          "channel": "website_form",
+          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:6;contact_path_strategy_v2"
+        },
+        {
+          "status": "website_contact_unreachable_skip",
+          "timestamp": "2026-07-21T19:11:28.296Z",
+          "channel": "website_form",
+          "evidence": "website_page_unavailable_404: Homepage\n/\nHomepage\n404\nOops! This Page Could Not Be Found\n\nhttps://vpo.ca/help/contact-us could not be found\n\nBACK TO VPO HOME;website_contact_all_targets_failed:6;contact_path_strategy_v2"
+        },
+        {
+          "status": "website_contact_unreachable_skip",
+          "timestamp": "2026-07-26T22:09:08.620Z",
+          "channel": "website_form",
+          "evidence": "website_contact_entry_not_verified;no_contact_route_detected;website_contact_all_targets_failed:6;contact_path_strategy_v2"
+        },
+        {
+          "status": "sent_confirmed",
+          "timestamp": "2026-08-10T09:33:00.000Z",
+          "channel": "website_form",
+          "evidence": "official_VPO_store_page_publishes_vancouver_at_vpo_ca_beside_named_store_owner;message_requests_routing_to_central_category_buyer;sender_recipient_subject_body_gate_passed;send_clicked_once;alibaba_sent_confirmation_visible;composer_closed"
+        }
+      ]
+    },
+    {
       "companyId": "company_5b717df33a01ec42",
       "company": "Ultralight Outdoor Gear",
       "keys": [
@@ -7708,12 +7344,12 @@
       "evidence": [
         {
           "channel": "website_form",
-          "score": 0,
-          "verified": false,
+          "score": 100,
+          "verified": true,
           "reasons": [
-            "unverified_external_evidence_rejected"
+            "official_business_route"
           ],
-          "evidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
+          "evidenceUrl": "https://ultralightoutdoorgear.co.uk/",
           "checkedAt": ""
         }
       ],
@@ -7797,12 +7433,12 @@
       "evidence": [
         {
           "channel": "website_form",
-          "score": 0,
-          "verified": false,
+          "score": 100,
+          "verified": true,
           "reasons": [
-            "unverified_external_evidence_rejected"
+            "official_business_route"
           ],
-          "evidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
+          "evidenceUrl": "https://www.outnorth.com/int/faq/contact",
           "checkedAt": ""
         },
         {
@@ -8135,12 +7771,12 @@
       "evidence": [
         {
           "channel": "website_form",
-          "score": 0,
-          "verified": false,
+          "score": 100,
+          "verified": true,
           "reasons": [
-            "unverified_external_evidence_rejected"
+            "official_business_route"
           ],
-          "evidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
+          "evidenceUrl": "https://scandinavianoutdoor.com/page/customer-service/",
           "checkedAt": ""
         }
       ],
@@ -8383,23 +8019,13 @@
       ],
       "evidence": [
         {
-          "channel": "website_form",
-          "score": 100,
-          "verified": true,
-          "reasons": [
-            "official_business_route"
-          ],
-          "evidenceUrl": "https://www.kathmandu.co.nz/",
-          "checkedAt": ""
-        },
-        {
           "channel": "instagram",
           "score": 0,
           "verified": false,
           "reasons": [
             "unverified_external_evidence_rejected"
           ],
-          "evidenceUrl": "https://www.kathmandu.co.nz/",
+          "evidenceUrl": "https://help.kathmanduoutdoor.com/support/solutions/articles/51000414624-sales-team-contact-details",
           "checkedAt": ""
         },
         {
@@ -8409,7 +8035,17 @@
           "reasons": [
             "unverified_external_evidence_rejected"
           ],
-          "evidenceUrl": "https://www.kathmandu.co.nz/",
+          "evidenceUrl": "https://help.kathmanduoutdoor.com/support/solutions/articles/51000414624-sales-team-contact-details",
+          "checkedAt": ""
+        },
+        {
+          "channel": "website_form",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "https://help.kathmanduoutdoor.com/support/solutions/articles/51000414624-sales-team-contact-details",
           "checkedAt": ""
         }
       ],
@@ -8470,7 +8106,7 @@
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://www.evo.com/",
-          "checkedAt": "2026-08-06T19:05:27.008Z"
+          "checkedAt": "2026-08-10T09:23:26.101Z"
         },
         {
           "channel": "facebook",
@@ -8480,7 +8116,7 @@
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://www.evo.com/",
-          "checkedAt": "2026-08-06T19:05:27.008Z"
+          "checkedAt": "2026-08-10T09:23:26.101Z"
         },
         {
           "channel": "website_form",
@@ -8582,16 +8218,16 @@
             "official_business_route"
           ],
           "evidenceUrl": "https://highcountryoutfitters.com/",
-          "checkedAt": "2026-08-06T19:05:26.964Z"
+          "checkedAt": "2026-08-10T09:23:26.002Z"
         },
         {
           "channel": "website_form",
-          "score": 0,
-          "verified": false,
+          "score": 100,
+          "verified": true,
           "reasons": [
-            "unverified_external_evidence_rejected"
+            "official_business_route"
           ],
-          "evidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
+          "evidenceUrl": "https://highcountryoutfitters.com/",
           "checkedAt": ""
         }
       ],
@@ -8668,6 +8304,74 @@
           "timestamp": "2026-08-05T05:47:10.222Z",
           "channel": "website_form",
           "evidence": "smtp_accepted;message_id:<01dd03e5-95db-e940-72de-621a9ba298cc@flextailgear.com>;sent_folder_message_confirmed;contact_path_strategy_v2"
+        }
+      ]
+    },
+    {
+      "companyId": "company_f7aa8d63c2404e8c",
+      "company": "La Cordee",
+      "keys": [
+        "lacordee",
+        "lacordeecom"
+      ],
+      "domains": [
+        "lacordee.com"
+      ],
+      "channels": [
+        "website_form"
+      ],
+      "evidence": [
+        {
+          "channel": "website_form",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
+          "checkedAt": ""
+        },
+        {
+          "channel": "website_form",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "https://www.lacordee.com/en/pages/contact-us",
+          "checkedAt": ""
+        }
+      ],
+      "history": [
+        {
+          "status": "website_contact_unreachable_skip",
+          "timestamp": "2026-07-14T03:09:53.645Z",
+          "channel": "website_form",
+          "evidence": "website_contact_cdp_unavailable_open_only_not_verified;website_contact_all_targets_failed:1"
+        },
+        {
+          "status": "website_contact_unreachable_skip",
+          "timestamp": "2026-07-21T03:02:16.592Z",
+          "channel": "website_form",
+          "evidence": "website_page_unavailable_404: 404 Page introuvable – La Cordée;website_contact_all_targets_failed:6;contact_path_strategy_v2"
+        },
+        {
+          "status": "website_contact_unreachable_skip",
+          "timestamp": "2026-07-21T23:10:15.371Z",
+          "channel": "website_form",
+          "evidence": "website_page_unavailable_404: Ignorer et passer au contenu\n\nLivraison gratuite sur les commandes de 69$ et plus*. En savoir plus\n\nLivraison gratuite sur les commandes de 69$ et plus*. En savoir plus\nMagasins\nEn;website_contact_all_targets_failed:6;contact_path_strategy_v2"
+        },
+        {
+          "status": "website_contact_unreachable_skip",
+          "timestamp": "2026-07-27T11:31:38.400Z",
+          "channel": "website_form",
+          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:6;contact_path_strategy_v2"
+        },
+        {
+          "status": "sent_confirmed",
+          "timestamp": "2026-08-10T09:38:00.000Z",
+          "channel": "website_form",
+          "evidence": "official_contact_page_publishes_info_at_lacordee_com;sender_recipient_subject_body_gate_passed;send_clicked_once;alibaba_sent_confirmation_visible;composer_closed;immediate_bounce_scan_clear"
         }
       ]
     },
@@ -9260,6 +8964,74 @@
       ]
     },
     {
+      "companyId": "company_ae4c17b7cdfe0e0e",
+      "company": "Bentgate Mountaineering",
+      "keys": [
+        "bentgatemountaineering",
+        "bentgatecom"
+      ],
+      "domains": [
+        "bentgate.com"
+      ],
+      "channels": [
+        "website_form"
+      ],
+      "evidence": [
+        {
+          "channel": "website_form",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
+          "checkedAt": ""
+        },
+        {
+          "channel": "website_form",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "https://www.bentgate.com/service/",
+          "checkedAt": ""
+        }
+      ],
+      "history": [
+        {
+          "status": "website_contact_unreachable_skip",
+          "timestamp": "2026-07-14T03:13:19.366Z",
+          "channel": "website_form",
+          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:1"
+        },
+        {
+          "status": "website_contact_unreachable_skip",
+          "timestamp": "2026-07-21T03:42:08.591Z",
+          "channel": "website_form",
+          "evidence": "website_contact_entry_not_verified;contact_entry_clicked:https://www.bentgate.com/help/contact-us/;website_contact_all_targets_failed:6;contact_path_strategy_v2"
+        },
+        {
+          "status": "website_contact_unreachable_skip",
+          "timestamp": "2026-07-22T14:09:52.132Z",
+          "channel": "website_form",
+          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:6;contact_path_strategy_v2"
+        },
+        {
+          "status": "website_contact_unreachable_skip",
+          "timestamp": "2026-07-29T02:53:50.935Z",
+          "channel": "website_form",
+          "evidence": "website_contact_entry_not_verified;contact_entry_clicked:https://www.bentgate.com/help/contact-us/;website_contact_all_targets_failed:6;contact_path_strategy_v2"
+        },
+        {
+          "status": "sent_confirmed",
+          "timestamp": "2026-08-10T09:29:00.000Z",
+          "channel": "website_form",
+          "evidence": "official_contact_page_mailto_bentgate_at_bentgate_com_verified_in_live_independent_chrome;sender_recipient_subject_body_gate_passed;send_clicked_once;alibaba_sent_confirmation_visible;composer_closed"
+        }
+      ]
+    },
+    {
       "companyId": "company_05114ab76b18fc9f",
       "company": "Further Faster",
       "keys": [
@@ -9322,6 +9094,74 @@
           "timestamp": "2026-07-21T05:29:00.000Z",
           "channel": "email",
           "evidence": "official_homepage_and_where_to_buy_distribution_page;alibaba_mail_sender_verified_leo_at_flextailgear_com;separate_chrome_tab_used;alibaba_mail_sent_success_visible;sent_folder_record_confirmed;sent_folder_time:13:29;sent_folder_subject:FLEXTAIL outdoor electronics | Further Faster range review"
+        }
+      ]
+    },
+    {
+      "companyId": "company_20dc0fe8c19aeb5c",
+      "company": "AvidMax Outfitters",
+      "keys": [
+        "avidmaxoutfitters",
+        "avidmaxcom"
+      ],
+      "domains": [
+        "avidmax.com"
+      ],
+      "channels": [
+        "website_form"
+      ],
+      "evidence": [
+        {
+          "channel": "website_form",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
+          "checkedAt": ""
+        },
+        {
+          "channel": "website_form",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "https://www.avidmax.com/contact-us/",
+          "checkedAt": ""
+        }
+      ],
+      "history": [
+        {
+          "status": "website_contact_unreachable_skip",
+          "timestamp": "2026-07-14T04:02:46.925Z",
+          "channel": "website_form",
+          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:1"
+        },
+        {
+          "status": "website_contact_unreachable_skip",
+          "timestamp": "2026-07-21T04:06:23.745Z",
+          "channel": "website_form",
+          "evidence": "unavailable_profile_page: Skip to main content\n\nFREE STANDARD SHIPPING OVER $45\n\nSearch Keyword:\nLearn & Explore\nReports, Articles and more.\nRetail\nRewards\nAccount\nCart\nFly Tying\nRods\nReels\nLines\nTerminal T;website_contact_all_targets_failed:6;contact_path_strategy_v2"
+        },
+        {
+          "status": "website_contact_unreachable_skip",
+          "timestamp": "2026-07-22T14:10:25.821Z",
+          "channel": "website_form",
+          "evidence": "website_page_unavailable_404: AvidMax - Not Found;website_contact_all_targets_failed:6;contact_path_strategy_v2"
+        },
+        {
+          "status": "website_contact_unreachable_skip",
+          "timestamp": "2026-07-27T11:36:32.169Z",
+          "channel": "website_form",
+          "evidence": "unavailable_profile_page: Skip to main content\n\nFREE STANDARD SHIPPING OVER $45\n\nSearch Keyword:\nLearn & Explore\nReports, Articles and more.\nRetail\nRewards\nAccount\nCart\nTying Bundles\nFly Tying\nRods\nReels\nLi;website_contact_all_targets_failed:6;contact_path_strategy_v2"
+        },
+        {
+          "status": "sent_confirmed",
+          "timestamp": "2026-08-10T09:40:00.000Z",
+          "channel": "website_form",
+          "evidence": "official_headquarters_contact_page_publishes_customerservice_at_avidmax_com;sender_recipient_subject_body_gate_passed;send_clicked_once;alibaba_sent_confirmation_visible;composer_closed;immediate_bounce_scan_clear"
         }
       ]
     },
@@ -9600,6 +9440,126 @@
           "timestamp": "2026-08-05T12:52:00.000Z",
           "channel": "email",
           "evidence": "sent_folder_exact_subject_visible;dsn_address_not_found_visible;delivery_failed_do_not_count_or_retry"
+        }
+      ]
+    },
+    {
+      "companyId": "company_de49b6589ebd1f1b",
+      "company": "The Mountaineer",
+      "keys": [
+        "themountaineer",
+        "mountaineercom"
+      ],
+      "domains": [
+        "mountaineer.com"
+      ],
+      "channels": [
+        "instagram",
+        "facebook",
+        "website_form"
+      ],
+      "evidence": [
+        {
+          "channel": "instagram",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
+          "checkedAt": ""
+        },
+        {
+          "channel": "facebook",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
+          "checkedAt": ""
+        },
+        {
+          "channel": "website_form",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
+          "checkedAt": ""
+        },
+        {
+          "channel": "website_form",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "https://mountaineer.com/privacy-policy/",
+          "checkedAt": ""
+        }
+      ],
+      "history": [
+        {
+          "status": "failed_open",
+          "timestamp": "2026-07-17T02:54:18.003Z",
+          "channel": "facebook",
+          "evidence": "instagram_unavailable_profile_page: 很抱歉，无法访问此页面\n你点击的链接可能已损坏，或页面已被移除。返回 instagram。\nmeta\n关于\n博客\n工作\n帮助\napi\n隐私设置\n条款\n地点\n热门\ninstagram lite\nmeta ai\nthreads\n联系人上传和非用户\nmeta verified\n中文(简体)\nafrikaans\nالعربية\nčeština\ndansk\ndeutsch\nελληνικά\nenglish\nenglish (uk)\nespañol (españa)\nespañol\nفارسی\nsuomi\nfrançais\nעברית\nbahasa indonesia\nitaliano\n日本語\n한국어\nbahasa melayu\nnorsk\nnederlands\npolski\nportuguês (brasil)\nportuguês (portugal)\nрусский\nsvenska\nภาษาไทย\nfilipino\ntürkçe\n中文(简体)\n中文(台灣)\nবাংলা\nગુજરાતી\nहिन्दी\nhrvatski\nmagyar\nಕನ್ನಡ\nമലയാളം\nमराठी\nनेपाली\nਪੰਜਾਬੀ\nසිංහල\nslovenčina\nதமிழ்\nతెలుగు\nاردو\ntiếng việt\n中文(香港)\nбългарски\nfrançais (canada)\nromână\nсрпски\nукра"
+        },
+        {
+          "status": "failed_open",
+          "timestamp": "2026-07-29T10:33:44.681Z",
+          "channel": "facebook",
+          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;personal_profile_without_company_match_expected_The Mountaineer_title_Facebook;contact_path_strategy_v2"
+        },
+        {
+          "status": "failed_open",
+          "timestamp": "2026-07-29T10:35:25.103Z",
+          "channel": "website_form",
+          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;personal_profile_without_company_match_expected_The Mountaineer_title_Facebook;contact_path_strategy_v2"
+        },
+        {
+          "status": "failed_open",
+          "timestamp": "2026-08-04T12:06:18.930Z",
+          "channel": "facebook",
+          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;identity_mismatch_expected_The Mountaineer_title_(1) Facebook;contact_path_strategy_v2"
+        },
+        {
+          "status": "failed_open",
+          "timestamp": "2026-08-04T12:37:48.665Z",
+          "channel": "website_form",
+          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;identity_mismatch_expected_The Mountaineer_title_(1) Facebook;contact_path_strategy_v2"
+        },
+        {
+          "status": "failed_open",
+          "timestamp": "2026-08-04T12:44:11.964Z",
+          "channel": "facebook",
+          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;identity_mismatch_expected_The Mountaineer_title_Facebook;contact_path_strategy_v2"
+        },
+        {
+          "status": "failed_open",
+          "timestamp": "2026-08-04T13:01:14.716Z",
+          "channel": "website_form",
+          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;identity_mismatch_expected_The Mountaineer_title_Facebook;contact_path_strategy_v2"
+        },
+        {
+          "status": "failed_open",
+          "timestamp": "2026-08-05T02:00:48.834Z",
+          "channel": "facebook",
+          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;identity_mismatch_expected_The Mountaineer_title_www.facebook.com;contact_path_strategy_v2"
+        },
+        {
+          "status": "failed_open",
+          "timestamp": "2026-08-05T03:01:21.968Z",
+          "channel": "website_form",
+          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;identity_mismatch_expected_The Mountaineer_title_www.facebook.com;contact_path_strategy_v2"
+        },
+        {
+          "status": "sent_confirmed",
+          "timestamp": "2026-08-10T09:31:00.000Z",
+          "channel": "website_form",
+          "evidence": "official_privacy_contact_page_publishes_mountaineer_at_mountaineer_com;sender_recipient_subject_body_gate_passed;send_clicked_once;alibaba_sent_confirmation_visible;composer_closed"
         }
       ]
     },
@@ -14382,6 +14342,16 @@
       "evidence": "official_public_business_email;recipient_edit_state_exact_match:info@summitint.co;sender_identity_verified:Leo@flextailgear.com;send_click_once;composer_closed;sent_folder_exact_subject_visible:2026-08-05T20:55+08:00"
     },
     {
+      "companyId": "company_368689331ba38ee2",
+      "company": "Valhalla Pure Outfitters",
+      "permanent": true,
+      "crossChannel": true,
+      "reason": "previous_customer_development_no_repeat",
+      "sourceStatus": "sent_confirmed",
+      "sourceTimestamp": "2026-08-10T09:33:00.000Z",
+      "evidence": "official_VPO_store_page_publishes_vancouver_at_vpo_ca_beside_named_store_owner;message_requests_routing_to_central_category_buyer;sender_recipient_subject_body_gate_passed;send_clicked_once;alibaba_sent_confirmation_visible;composer_closed"
+    },
+    {
       "companyId": "company_5b717df33a01ec42",
       "company": "Ultralight Outdoor Gear",
       "permanent": true,
@@ -14502,6 +14472,16 @@
       "evidence": "smtp_accepted;message_id:<01dd03e5-95db-e940-72de-621a9ba298cc@flextailgear.com>;sent_folder_message_confirmed;contact_path_strategy_v2"
     },
     {
+      "companyId": "company_f7aa8d63c2404e8c",
+      "company": "La Cordee",
+      "permanent": true,
+      "crossChannel": true,
+      "reason": "previous_customer_development_no_repeat",
+      "sourceStatus": "sent_confirmed",
+      "sourceTimestamp": "2026-08-10T09:38:00.000Z",
+      "evidence": "official_contact_page_publishes_info_at_lacordee_com;sender_recipient_subject_body_gate_passed;send_clicked_once;alibaba_sent_confirmation_visible;composer_closed;immediate_bounce_scan_clear"
+    },
+    {
       "companyId": "company_5f36d2322708a2d3",
       "company": "Friluftsland",
       "permanent": true,
@@ -14582,6 +14562,16 @@
       "evidence": "instagram_send_clicked_but_confirmation_missing;verified_draft_present_before_irreversible_action;explicit_send_control_verified;instagram_draft_inserted_verified;"
     },
     {
+      "companyId": "company_ae4c17b7cdfe0e0e",
+      "company": "Bentgate Mountaineering",
+      "permanent": true,
+      "crossChannel": true,
+      "reason": "previous_customer_development_no_repeat",
+      "sourceStatus": "sent_confirmed",
+      "sourceTimestamp": "2026-08-10T09:29:00.000Z",
+      "evidence": "official_contact_page_mailto_bentgate_at_bentgate_com_verified_in_live_independent_chrome;sender_recipient_subject_body_gate_passed;send_clicked_once;alibaba_sent_confirmation_visible;composer_closed"
+    },
+    {
       "companyId": "company_05114ab76b18fc9f",
       "company": "Further Faster",
       "permanent": true,
@@ -14590,6 +14580,16 @@
       "sourceStatus": "sent_confirmed",
       "sourceTimestamp": "2026-07-21T05:29:00.000Z",
       "evidence": "official_homepage_and_where_to_buy_distribution_page;alibaba_mail_sender_verified_leo_at_flextailgear_com;separate_chrome_tab_used;alibaba_mail_sent_success_visible;sent_folder_record_confirmed;sent_folder_time:13:29;sent_folder_subject:FLEXTAIL outdoor electronics | Further Faster range review"
+    },
+    {
+      "companyId": "company_20dc0fe8c19aeb5c",
+      "company": "AvidMax Outfitters",
+      "permanent": true,
+      "crossChannel": true,
+      "reason": "previous_customer_development_no_repeat",
+      "sourceStatus": "sent_confirmed",
+      "sourceTimestamp": "2026-08-10T09:40:00.000Z",
+      "evidence": "official_headquarters_contact_page_publishes_customerservice_at_avidmax_com;sender_recipient_subject_body_gate_passed;send_clicked_once;alibaba_sent_confirmation_visible;composer_closed;immediate_bounce_scan_clear"
     },
     {
       "companyId": "company_c0440a7bff971d9f",
@@ -14630,6 +14630,16 @@
       "sourceStatus": "sent_confirmed",
       "sourceTimestamp": "2026-07-16T11:28:25.953Z",
       "evidence": "facebook_message_sent_confirmed_after_send_click;facebook_draft_inserted_verified;sentText:true;outgoingBubble:false;emptyComposer:true;follow_not_available;facebook_post_like_not_available"
+    },
+    {
+      "companyId": "company_de49b6589ebd1f1b",
+      "company": "The Mountaineer",
+      "permanent": true,
+      "crossChannel": true,
+      "reason": "previous_customer_development_no_repeat",
+      "sourceStatus": "sent_confirmed",
+      "sourceTimestamp": "2026-08-10T09:31:00.000Z",
+      "evidence": "official_privacy_contact_page_publishes_mountaineer_at_mountaineer_com;sender_recipient_subject_body_gate_passed;send_clicked_once;alibaba_sent_confirmation_visible;composer_closed"
     },
     {
       "companyId": "company_dca6ec9510fc0176",
@@ -15412,12 +15422,12 @@
       },
       {
         "channel": "website_form",
-        "confirmed": 19,
+        "confirmed": 24,
         "replies": 0,
         "opportunities": 0,
         "replyRate": 0,
         "opportunityRate": 0,
-        "confidence": "medium"
+        "confidence": "high"
       },
       {
         "channel": "linkedin",
@@ -15467,7 +15477,7 @@
       {
         "dimension": "channel",
         "variant": "website_form",
-        "sampleSize": 19,
+        "sampleSize": 24,
         "observedReplyRate": 0,
         "recommendation": "use_as_bounded_allocation_signal"
       },
@@ -15495,13 +15505,13 @@
     ]
   },
   "ownerSummary": {
-    "generatedAt": "2026-08-10T09:15:11.398Z",
+    "generatedAt": "2026-08-10T09:23:29.436Z",
     "phase": "autonomous_sales_operating_system_v1",
     "kpis": {
       "companies": 193,
-      "permanentlySuppressed": 121,
+      "permanentlySuppressed": 126,
       "plannedActions": 7,
-      "verifiedEvidenceRoutes": 119
+      "verifiedEvidenceRoutes": 121
     },
     "decisions": [
       {
@@ -15603,12 +15613,12 @@
         },
         {
           "channel": "website_form",
-          "confirmed": 19,
+          "confirmed": 24,
           "replies": 0,
           "opportunities": 0,
           "replyRate": 0,
           "opportunityRate": 0,
-          "confidence": "medium"
+          "confidence": "high"
         },
         {
           "channel": "linkedin",
@@ -15658,7 +15668,7 @@
         {
           "dimension": "channel",
           "variant": "website_form",
-          "sampleSize": 19,
+          "sampleSize": 24,
           "observedReplyRate": 0,
           "recommendation": "use_as_bounded_allocation_signal"
         },

@@ -584,6 +584,10 @@ const DIRECTORY_PUBLIC_CONTACT_ENRICHMENT = {
   'Varuste': ['info@varuste.net', 'Official public company-domain email published by Varuste; route the supplier proposal to the category buyer or vendor-review owner.', 'https://varuste.net/'],
   'Fjellsport': ['kundeservice@fjellsport.no', 'Official public company-domain contact published in the Fjellsport privacy and contact information; route the supplier proposal to the category buyer or vendor-review owner.', 'https://www.fjellsport.no/faq/personvern'],
   'Outnorth': ['info@outnorth.com', 'Official public company-domain email on the Outnorth contact page; route the supplier proposal to the category buyer or vendor-review owner.', 'https://www.outnorth.com/int/faq/contact'],
+  'Bentgate Mountaineering': ['bentgate@bentgate.com', 'Official company-domain customer-support address exposed by the Bentgate contact page; route the proposal to the category buyer or owner.', 'https://www.bentgate.com/service/'],
+  'Valhalla Pure Outfitters': ['vancouver@vpo.ca', 'Official VPO Vancouver store address published beside the named store owner; request routing to the central category buyer.', 'https://vpo.ca/stores/vpo-vancouver'],
+  'La Cordee': ['info@lacordee.com', 'Official company-domain address published by La Cordee on its contact page; route the supplier proposal to the category buyer.', 'https://www.lacordee.com/en/pages/contact-us'],
+  'AvidMax Outfitters': ['customerservice@avidmax.com', 'Official company-domain address published on the AvidMax headquarters contact page; route the supplier proposal to the category buyer.', 'https://www.avidmax.com/contact-us/'],
 };
 for (const candidate of DIRECTORY_REFILL_CANDIDATES) {
   const enrichment = DIRECTORY_PUBLIC_CONTACT_ENRICHMENT[candidate.company];
@@ -697,6 +701,11 @@ const PUBLIC_CONTACT_ENRICHMENT = {
     'mail@tiso.co.uk',
     'Official Tiso general-business address explicitly published for organisations seeking to work with Tiso or discuss opportunities.',
     'https://www.tiso.com/pages/contact',
+  ],
+  'The Mountaineer': [
+    'mountaineer@mountaineer.com',
+    'Official company-domain address published by The Mountaineer on its privacy contact page; route the proposal to the category buyer or owner.',
+    'https://mountaineer.com/privacy-policy/',
   ],
 };
 for (const candidate of SOCIAL_REFILL_CANDIDATES) {

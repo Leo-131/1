@@ -495,6 +495,26 @@ test('Google discovery promotes a first-party general-business email above a fai
   assert.equal(tiso.action, 'email_priority');
 });
 
+test('Google discovery preserves newly verified independent-retailer routing emails and evidence', () => {
+  const leads = buildLeads(400);
+  const expected = new Map([
+    ['Bentgate Mountaineering', ['bentgate@bentgate.com', 'https://www.bentgate.com/service/']],
+    ['Valhalla Pure Outfitters', ['vancouver@vpo.ca', 'https://vpo.ca/stores/vpo-vancouver']],
+    ['The Mountaineer', ['mountaineer@mountaineer.com', 'https://mountaineer.com/privacy-policy/']],
+    ['La Cordee', ['info@lacordee.com', 'https://www.lacordee.com/en/pages/contact-us']],
+    ['AvidMax Outfitters', ['customerservice@avidmax.com', 'https://www.avidmax.com/contact-us/']],
+  ]);
+
+  for (const [company, [email, evidenceUrl]] of expected) {
+    const lead = leads.find(item => item.company === company && item.platform === 'website_form');
+    assert.ok(lead, company);
+    assert.equal(lead.contactEmail, email);
+    assert.equal(lead.emailVerificationStatus, 'official_public_business_email');
+    assert.equal(lead.emailEvidenceUrl, evidenceUrl);
+    assert.equal(lead.action, 'email_priority');
+  }
+});
+
 test('Google discovery keeps a refill pool for new prospects after current customers are developed', () => {
   const run = buildDiscoveryRun(160);
   assert.ok(run.candidatePoolCount >= 23);
