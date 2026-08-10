@@ -1,7 +1,7 @@
 {
-  "updatedAt": "2026-08-10T10:10:34.722Z",
-  "cursor": 27,
-  "companyCount": 150,
+  "updatedAt": "2026-08-10T10:26:02.556Z",
+  "cursor": 52,
+  "companyCount": 156,
   "verifications": {
     "facewest": {
       "firstPartyChannelVerification": {
@@ -1188,7 +1188,7 @@
     "summit international": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-10T09:23:12.601Z",
+        "verifiedAt": "2026-08-10T10:25:50.718Z",
         "evidenceUrl": "https://www.summitint.co/contact/",
         "httpStatus": 200,
         "signals": [
@@ -1206,7 +1206,7 @@
     "valhalla pure outfitters": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-10T09:23:12.226Z",
+        "verifiedAt": "2026-08-10T10:25:50.807Z",
         "evidenceUrl": "https://vpo.ca/stores/vpo-vancouver",
         "httpStatus": 200,
         "signals": [
@@ -1223,7 +1223,7 @@
     "tentworld": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-10T09:23:12.359Z",
+        "verifiedAt": "2026-08-10T10:25:50.647Z",
         "evidenceUrl": "https://www.tentworld.com.au/",
         "httpStatus": 200,
         "signals": [],
@@ -1238,8 +1238,8 @@
     "trekitt": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-10T09:23:11.994Z",
-        "evidenceUrl": "https://www.trekitt.co.uk/",
+        "verifiedAt": "2026-08-10T10:25:50.214Z",
+        "evidenceUrl": "https://www.trekitt.co.uk/pages/contact/",
         "httpStatus": 200,
         "signals": [
           "form_control",
@@ -1249,14 +1249,14 @@
       },
       "contactCapabilityVerified": true,
       "externalVerificationStatus": "official_contact_form_verified",
-      "publicEmail": "",
-      "emailVerificationStatus": "",
+      "publicEmail": "support@trekitt.co.uk",
+      "emailVerificationStatus": "official_public_business_email",
       "socialProfiles": []
     },
     "ultralight outdoor gear": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-10T09:23:14.318Z",
+        "verifiedAt": "2026-08-10T10:25:52.276Z",
         "evidenceUrl": "https://ultralightoutdoorgear.co.uk/",
         "httpStatus": 200,
         "signals": [
@@ -1275,7 +1275,7 @@
     "outnorth": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-10T09:23:14.026Z",
+        "verifiedAt": "2026-08-10T10:25:52.357Z",
         "evidenceUrl": "https://www.outnorth.com/int/faq/contact",
         "httpStatus": 200,
         "signals": [
@@ -1293,7 +1293,7 @@
     "naturkompaniet": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-10T09:23:13.291Z",
+        "verifiedAt": "2026-08-10T10:25:51.552Z",
         "evidenceUrl": "https://www.naturkompaniet.se/",
         "httpStatus": 200,
         "signals": [
@@ -1311,7 +1311,7 @@
     "fjellsport": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-10T09:23:14.770Z",
+        "verifiedAt": "2026-08-10T10:25:52.921Z",
         "evidenceUrl": "https://www.fjellsport.no/faq/personvern",
         "httpStatus": 200,
         "signals": [
@@ -1328,7 +1328,7 @@
     "bcf": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-10T09:23:16.977Z",
+        "verifiedAt": "2026-08-10T10:25:54.756Z",
         "evidenceUrl": "https://superretailgroup.com.au/contact/",
         "httpStatus": 200,
         "signals": [
@@ -1345,7 +1345,7 @@
     "camping world": {
       "firstPartyChannelVerification": {
         "status": "unreachable",
-        "verifiedAt": "2026-08-10T09:23:15.487Z",
+        "verifiedAt": "2026-08-10T10:25:53.601Z",
         "evidenceUrl": "https://www.campingworld.com/contact-us.html",
         "httpStatus": 403,
         "signals": [],
@@ -1360,22 +1360,22 @@
     "kittery trading post": {
       "firstPartyChannelVerification": {
         "status": "unreachable",
-        "verifiedAt": "2026-08-10T09:23:15.194Z",
-        "evidenceUrl": "https://www.kitterytradingpost.com/",
+        "verifiedAt": "2026-08-10T10:25:53.540Z",
+        "evidenceUrl": "https://www.kitterytradingpost.com/customer-service/cookie-policy/",
         "httpStatus": 403,
         "signals": [],
         "error": ""
       },
       "contactCapabilityVerified": true,
       "externalVerificationStatus": "official_contact_form_verified",
-      "publicEmail": "",
-      "emailVerificationStatus": "",
+      "publicEmail": "info@ktp.com",
+      "emailVerificationStatus": "official_public_business_email",
       "socialProfiles": []
     },
     "bivouac outdoor": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-10T09:23:17.427Z",
+        "verifiedAt": "2026-08-10T10:25:55.513Z",
         "evidenceUrl": "https://www.bivouac.co.nz/",
         "httpStatus": 200,
         "signals": [
@@ -1392,7 +1392,7 @@
     "alpinetrek": {
       "firstPartyChannelVerification": {
         "status": "unreachable",
-        "verifiedAt": "2026-08-10T09:23:17.359Z",
+        "verifiedAt": "2026-08-10T10:25:55.210Z",
         "evidenceUrl": "https://www.alpinetrek.co.uk/",
         "httpStatus": 403,
         "signals": [],
@@ -1407,7 +1407,7 @@
     "de wit schijndel": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-10T09:23:20.693Z",
+        "verifiedAt": "2026-08-10T10:25:59.763Z",
         "evidenceUrl": "https://www.dewitschijndel.nl/",
         "httpStatus": 200,
         "signals": [
@@ -1424,22 +1424,22 @@
     "snowleader": {
       "firstPartyChannelVerification": {
         "status": "unreachable",
-        "verifiedAt": "2026-08-10T09:23:17.525Z",
-        "evidenceUrl": "https://www.snowleader.com/",
-        "httpStatus": 403,
+        "verifiedAt": "2026-08-10T10:25:58.523Z",
+        "evidenceUrl": "https://images.snowleader.com/media/wysiwyg/Global-Blue-fr.pdf",
+        "httpStatus": 404,
         "signals": [],
         "error": ""
       },
       "contactCapabilityVerified": false,
       "externalVerificationStatus": "",
-      "publicEmail": "",
-      "emailVerificationStatus": "",
+      "publicEmail": "contact@snowleader.com",
+      "emailVerificationStatus": "official_public_business_email",
       "socialProfiles": []
     },
     "ekosport": {
       "firstPartyChannelVerification": {
         "status": "unreachable",
-        "verifiedAt": "2026-08-10T09:23:21.447Z",
+        "verifiedAt": "2026-08-10T10:25:57.801Z",
         "evidenceUrl": "https://www.ekosport.fr/",
         "httpStatus": 403,
         "signals": [],
@@ -1454,24 +1454,25 @@
     "barrabes": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-10T09:23:21.622Z",
-        "evidenceUrl": "https://www.barrabes.com/",
+        "verifiedAt": "2026-08-10T10:25:58.157Z",
+        "evidenceUrl": "https://www.barrabes.com/en/help/contact",
         "httpStatus": 200,
         "signals": [
-          "form_control"
+          "form_control",
+          "contact_invitation"
         ],
         "error": ""
       },
-      "contactCapabilityVerified": false,
-      "externalVerificationStatus": "",
-      "publicEmail": "",
-      "emailVerificationStatus": "",
+      "contactCapabilityVerified": true,
+      "externalVerificationStatus": "official_contact_form_verified",
+      "publicEmail": "customerservice@barrabes.com",
+      "emailVerificationStatus": "official_public_business_email",
       "socialProfiles": []
     },
     "scandinavian outdoor": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-10T09:23:23.665Z",
+        "verifiedAt": "2026-08-10T10:26:02.376Z",
         "evidenceUrl": "https://scandinavianoutdoor.com/page/customer-service/",
         "httpStatus": 200,
         "signals": [
@@ -1489,7 +1490,7 @@
     "transa": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-10T09:23:25.150Z",
+        "verifiedAt": "2026-08-10T10:26:02.108Z",
         "evidenceUrl": "https://www.transa.ch/de/",
         "httpStatus": 200,
         "signals": [
@@ -1507,7 +1508,7 @@
     "kathmandu": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-10T09:23:26.323Z",
+        "verifiedAt": "2026-08-10T10:26:00.180Z",
         "evidenceUrl": "https://help.kathmanduoutdoor.com/support/solutions/articles/51000414624-sales-team-contact-details",
         "httpStatus": 200,
         "signals": [
@@ -1526,7 +1527,7 @@
     "evo": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-10T09:23:26.101Z",
+        "verifiedAt": "2026-08-10T10:26:00.412Z",
         "evidenceUrl": "https://www.evo.com/",
         "httpStatus": 200,
         "signals": [
@@ -1546,7 +1547,7 @@
     "enwild": {
       "firstPartyChannelVerification": {
         "status": "unreachable",
-        "verifiedAt": "2026-08-10T09:23:25.429Z",
+        "verifiedAt": "2026-08-10T10:26:02.556Z",
         "evidenceUrl": "https://www.enwild.com/",
         "httpStatus": 403,
         "signals": [],
@@ -2502,7 +2503,7 @@
     "tractor supply company": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-10T09:23:15.357Z",
+        "verifiedAt": "2026-08-10T10:25:55.045Z",
         "evidenceUrl": "https://www.tractorsupply.com/",
         "httpStatus": 200,
         "signals": [],
@@ -2548,6 +2549,41 @@
       "contactCapabilityVerified": false,
       "externalVerificationStatus": "",
       "publicEmail": "support@hiltonstentcity.com",
+      "emailVerificationStatus": "official_public_business_email",
+      "socialProfiles": []
+    },
+    "great outdoor provision co": {
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-10T10:25:55.796Z",
+        "evidenceUrl": "https://www.greatoutdoorprovision.com/pages/faqs-policies",
+        "httpStatus": 200,
+        "signals": [
+          "form_control"
+        ],
+        "error": ""
+      },
+      "contactCapabilityVerified": false,
+      "externalVerificationStatus": "",
+      "publicEmail": "shop@greatoutdoorprovision.com",
+      "emailVerificationStatus": "official_public_business_email",
+      "socialProfiles": []
+    },
+    "bill jackson s shop for adventure": {
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-10T10:25:57.152Z",
+        "evidenceUrl": "https://www.billjacksons.com/class/thru-hike-clinic-2025/",
+        "httpStatus": 200,
+        "signals": [
+          "public_business_email",
+          "contact_invitation"
+        ],
+        "error": ""
+      },
+      "contactCapabilityVerified": true,
+      "externalVerificationStatus": "official_contact_form_verified",
+      "publicEmail": "camping@billjacksons.com",
       "emailVerificationStatus": "official_public_business_email",
       "socialProfiles": []
     }
