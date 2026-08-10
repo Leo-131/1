@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-10T11:14:54.471Z",
+  "generatedAt": "2026-08-10T11:24:41.451Z",
   "companies": [
     {
       "companyId": "company_819cc04fe9060117",
@@ -2086,7 +2086,7 @@
             "official_business_route"
           ],
           "evidenceUrl": "https://www.nwogco.com/",
-          "checkedAt": "2026-08-10T10:06:33.211Z"
+          "checkedAt": "2026-08-10T11:24:34.271Z"
         },
         {
           "channel": "website_form",
@@ -4585,7 +4585,7 @@
           "reasons": [
             "first_party_evidence"
           ],
-          "evidenceUrl": "https://komsa.com/en/contact/",
+          "evidenceUrl": "https://komsa.com/en/contact",
           "checkedAt": ""
         },
         {
@@ -4595,7 +4595,7 @@
           "reasons": [
             "unverified_external_evidence_rejected"
           ],
-          "evidenceUrl": "https://komsa.com/en/contact/",
+          "evidenceUrl": "https://komsa.com/en/contact",
           "checkedAt": ""
         }
       ],
@@ -4716,7 +4716,7 @@
           "reasons": [
             "official_business_route"
           ],
-          "evidenceUrl": "https://support.aqipa.com/en-US/kb/articles/anfrage-partner-werden",
+          "evidenceUrl": "https://support.aqipa.com/en-US/new-ticket",
           "checkedAt": ""
         },
         {
@@ -4726,7 +4726,7 @@
           "reasons": [
             "unverified_external_evidence_rejected"
           ],
-          "evidenceUrl": "https://support.aqipa.com/en-US/kb/articles/anfrage-partner-werden",
+          "evidenceUrl": "https://support.aqipa.com/en-US/new-ticket",
           "checkedAt": ""
         }
       ],
@@ -4769,7 +4769,7 @@
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://www.cmsdistribution.com/contact-us",
-          "checkedAt": "2026-08-10T10:10:20.087Z"
+          "checkedAt": "2026-08-10T11:24:37.297Z"
         },
         {
           "channel": "website_form",
@@ -4880,7 +4880,7 @@
             "official_business_route"
           ],
           "evidenceUrl": "https://help.cabelas.com/company-information-ff566349/how-can-i-sell-my-product-through-cabelas-cf904a21",
-          "checkedAt": "2026-08-10T10:10:24.115Z"
+          "checkedAt": "2026-08-10T11:24:39.064Z"
         },
         {
           "channel": "facebook",
@@ -4890,7 +4890,7 @@
             "official_business_route"
           ],
           "evidenceUrl": "https://help.cabelas.com/company-information-ff566349/how-can-i-sell-my-product-through-cabelas-cf904a21",
-          "checkedAt": "2026-08-10T10:10:24.115Z"
+          "checkedAt": "2026-08-10T11:24:39.064Z"
         },
         {
           "channel": "website_form",
@@ -4899,7 +4899,7 @@
           "reasons": [
             "official_business_route"
           ],
-          "evidenceUrl": "https://www.cabelas.com/",
+          "evidenceUrl": "https://help.cabelas.com/company-information-ff566349/how-can-i-sell-my-product-through-cabelas-cf904a21",
           "checkedAt": ""
         },
         {
@@ -8343,6 +8343,52 @@
       ]
     },
     {
+      "companyId": "company_c34e15f286723d92",
+      "company": "Castleberg Outdoors",
+      "keys": [
+        "castlebergoutdoors",
+        "castlebergoutdoorscouk",
+        "castlebergoutdoorsemail20260810"
+      ],
+      "domains": [
+        "castlebergoutdoors.co.uk"
+      ],
+      "channels": [
+        "website_form",
+        "email"
+      ],
+      "evidence": [
+        {
+          "channel": "website_form",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
+          "checkedAt": ""
+        },
+        {
+          "channel": "email",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "https://www.castlebergoutdoors.co.uk/about-castleberg-outdoors",
+          "checkedAt": ""
+        }
+      ],
+      "history": [
+        {
+          "status": "sent_confirmed",
+          "timestamp": "2026-08-10T11:21:00.000Z",
+          "channel": "email",
+          "evidence": "exact_recipient_sender_subject_body_gate_passed;send_clicked_once;composer_closed;sent_folder_unique_company_body_reconciled;inbound_automatic_receipt_confirmed"
+        }
+      ]
+    },
+    {
       "companyId": "company_c0587f57d9eaba5c",
       "company": "Backcountry Experience",
       "keys": [
@@ -10541,6 +10587,52 @@
         {
           "status": "sent_confirmed",
           "timestamp": "2026-08-10T11:03:30.000Z",
+          "channel": "email",
+          "evidence": "exact_recipient_sender_subject_body_gate_passed;send_clicked_once;composer_closed;sent_folder_unique_company_body_reconciled;no_matched_DSN_in_bounded_scan"
+        }
+      ]
+    },
+    {
+      "companyId": "company_e5e1da2488ad2e75",
+      "company": "WM Camping",
+      "keys": [
+        "wmcamping",
+        "wmcampingcouk",
+        "wmcampingemail20260810"
+      ],
+      "domains": [
+        "wmcamping.co.uk"
+      ],
+      "channels": [
+        "website_form",
+        "email"
+      ],
+      "evidence": [
+        {
+          "channel": "website_form",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
+          "checkedAt": ""
+        },
+        {
+          "channel": "email",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "https://wmcamping.co.uk/pages/contact-us",
+          "checkedAt": ""
+        }
+      ],
+      "history": [
+        {
+          "status": "sent_confirmed",
+          "timestamp": "2026-08-10T11:21:00.000Z",
           "channel": "email",
           "evidence": "exact_recipient_sender_subject_body_gate_passed;send_clicked_once;composer_closed;sent_folder_unique_company_body_reconciled;no_matched_DSN_in_bounded_scan"
         }
@@ -13508,7 +13600,7 @@
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://www.doorout.com/",
-          "checkedAt": "2026-08-10T10:05:30.371Z"
+          "checkedAt": "2026-08-10T11:14:40.559Z"
         },
         {
           "channel": "facebook",
@@ -13518,7 +13610,7 @@
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://www.doorout.com/",
-          "checkedAt": "2026-08-10T10:05:30.371Z"
+          "checkedAt": "2026-08-10T11:14:40.559Z"
         },
         {
           "channel": "website_form",
@@ -13528,7 +13620,7 @@
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://www.doorout.com/",
-          "checkedAt": "2026-08-10T10:05:30.371Z"
+          "checkedAt": "2026-08-10T11:14:40.559Z"
         }
       ],
       "history": [
@@ -13642,7 +13734,7 @@
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://www.addnature.com/",
-          "checkedAt": "2026-08-10T10:05:30.555Z"
+          "checkedAt": "2026-08-10T11:14:30.976Z"
         },
         {
           "channel": "facebook",
@@ -13652,7 +13744,7 @@
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://www.addnature.com/",
-          "checkedAt": "2026-08-10T10:05:30.555Z"
+          "checkedAt": "2026-08-10T11:14:30.976Z"
         },
         {
           "channel": "website_form",
@@ -13953,23 +14045,23 @@
           "checkedAt": "2026-08-10T11:14:42.628Z"
         },
         {
-          "channel": "website_form",
-          "score": 80,
-          "verified": false,
-          "reasons": [
-            "first_party_evidence"
-          ],
-          "evidenceUrl": "https://www.tradeinn.com/trekkinn/en",
-          "checkedAt": ""
-        },
-        {
           "channel": "instagram",
           "score": 0,
           "verified": false,
           "reasons": [
             "unverified_external_evidence_rejected"
           ],
-          "evidenceUrl": "https://www.tradeinn.com/trekkinn/en",
+          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
+          "checkedAt": ""
+        },
+        {
+          "channel": "website_form",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
           "checkedAt": ""
         }
       ],
@@ -14085,7 +14177,7 @@
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://8a.pl/",
-          "checkedAt": "2026-08-10T10:06:20.028Z"
+          "checkedAt": "2026-08-10T11:14:40.749Z"
         },
         {
           "channel": "facebook",
@@ -14095,7 +14187,7 @@
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://8a.pl/",
-          "checkedAt": "2026-08-10T10:06:20.028Z"
+          "checkedAt": "2026-08-10T11:14:40.749Z"
         },
         {
           "channel": "website_form",
@@ -14105,7 +14197,7 @@
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://8a.pl/",
-          "checkedAt": "2026-08-10T10:06:20.028Z"
+          "checkedAt": "2026-08-10T11:14:40.749Z"
         }
       ],
       "history": [
@@ -14550,12 +14642,12 @@
       "evidence": [
         {
           "channel": "website_form",
-          "score": 100,
-          "verified": true,
+          "score": 0,
+          "verified": false,
           "reasons": [
-            "official_business_route"
+            "unverified_external_evidence_rejected"
           ],
-          "evidenceUrl": "https://outcamping.co.uk/pages/about-us",
+          "evidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
           "checkedAt": ""
         },
         {
@@ -14596,12 +14688,12 @@
       "evidence": [
         {
           "channel": "website_form",
-          "score": 100,
-          "verified": true,
+          "score": 0,
+          "verified": false,
           "reasons": [
-            "official_business_route"
+            "unverified_external_evidence_rejected"
           ],
-          "evidenceUrl": "https://outdoorsplus.ca/services/camping/",
+          "evidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
           "checkedAt": ""
         },
         {
@@ -14671,6 +14763,52 @@
       ]
     },
     {
+      "companyId": "company_59ce4ef4f0fd1d03",
+      "company": "Outdoors Ramsey",
+      "keys": [
+        "outdoorsramsey",
+        "outdoorsramseycouk",
+        "outdoorsramseyemail20260810"
+      ],
+      "domains": [
+        "outdoorsramsey.co.uk"
+      ],
+      "channels": [
+        "website_form",
+        "email"
+      ],
+      "evidence": [
+        {
+          "channel": "website_form",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
+          "checkedAt": ""
+        },
+        {
+          "channel": "email",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "https://www.outdoorsramsey.co.uk/outdoor-shop-in-ramsey-isle-of-man/",
+          "checkedAt": ""
+        }
+      ],
+      "history": [
+        {
+          "status": "bounced",
+          "timestamp": "2026-08-10T11:21:05.000Z",
+          "channel": "email",
+          "evidence": "exact_recipient_sender_subject_body_gate_passed;send_clicked_once;composer_closed;sent_folder_unique_company_body_reconciled;matched_DSN_550_5.1.0_recipient_not_found;automatic_resend_forbidden"
+        }
+      ]
+    },
+    {
       "companyId": "company_7580a97286e5f239",
       "company": "Durango Outdoor Exchange",
       "keys": [
@@ -14687,12 +14825,12 @@
       "evidence": [
         {
           "channel": "website_form",
-          "score": 100,
-          "verified": true,
+          "score": 0,
+          "verified": false,
           "reasons": [
-            "official_business_route"
+            "unverified_external_evidence_rejected"
           ],
-          "evidenceUrl": "https://durangooutdoorexchange.com/",
+          "evidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
           "checkedAt": ""
         }
       ],
@@ -14921,12 +15059,12 @@
       "evidence": [
         {
           "channel": "website_form",
-          "score": 0,
-          "verified": false,
+          "score": 100,
+          "verified": true,
           "reasons": [
-            "unverified_external_evidence_rejected"
+            "official_business_route"
           ],
-          "evidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
+          "evidenceUrl": "https://vamosoutdoors.ca/",
           "checkedAt": ""
         },
         {
@@ -15013,12 +15151,12 @@
       "evidence": [
         {
           "channel": "website_form",
-          "score": 0,
-          "verified": false,
+          "score": 100,
+          "verified": true,
           "reasons": [
-            "unverified_external_evidence_rejected"
+            "official_business_route"
           ],
-          "evidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
+          "evidenceUrl": "https://www.actionoutdoors.co.uk/about/",
           "checkedAt": ""
         },
         {
@@ -15059,12 +15197,12 @@
       "evidence": [
         {
           "channel": "website_form",
-          "score": 0,
-          "verified": false,
+          "score": 100,
+          "verified": true,
           "reasons": [
-            "unverified_external_evidence_rejected"
+            "official_business_route"
           ],
-          "evidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
+          "evidenceUrl": "https://spryactive.ca/pages/about",
           "checkedAt": ""
         },
         {
@@ -15105,12 +15243,12 @@
       "evidence": [
         {
           "channel": "website_form",
-          "score": 0,
-          "verified": false,
+          "score": 100,
+          "verified": true,
           "reasons": [
-            "unverified_external_evidence_rejected"
+            "official_business_route"
           ],
-          "evidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
+          "evidenceUrl": "https://lifestylegear.co.nz/pages/contact",
           "checkedAt": ""
         },
         {
@@ -15248,12 +15386,12 @@
       "evidence": [
         {
           "channel": "website_form",
-          "score": 0,
-          "verified": false,
+          "score": 100,
+          "verified": true,
           "reasons": [
-            "unverified_external_evidence_rejected"
+            "official_business_route"
           ],
-          "evidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
+          "evidenceUrl": "https://oldschooloutdoor.com/pages/contact",
           "checkedAt": ""
         },
         {
@@ -15299,7 +15437,7 @@
             "official_business_route"
           ],
           "evidenceUrl": "https://gecko-overland.com/contact/",
-          "checkedAt": "2026-08-10T10:06:28.961Z"
+          "checkedAt": "2026-08-10T11:24:32.190Z"
         },
         {
           "channel": "website_form",
@@ -15437,7 +15575,7 @@
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://www.basecamp-outfitters.com/",
-          "checkedAt": "2026-08-10T10:06:32.992Z"
+          "checkedAt": "2026-08-10T11:24:32.493Z"
         },
         {
           "channel": "website_form",
@@ -16803,6 +16941,16 @@
       "evidence": "exact_recipient_sender_subject_body_gate_passed;send_clicked_once;composer_closed;sent_folder_unique_company_body_reconciled;no_matched_DSN_in_bounded_scan"
     },
     {
+      "companyId": "company_c34e15f286723d92",
+      "company": "Castleberg Outdoors",
+      "permanent": true,
+      "crossChannel": true,
+      "reason": "previous_customer_development_no_repeat",
+      "sourceStatus": "sent_confirmed",
+      "sourceTimestamp": "2026-08-10T11:21:00.000Z",
+      "evidence": "exact_recipient_sender_subject_body_gate_passed;send_clicked_once;composer_closed;sent_folder_unique_company_body_reconciled;inbound_automatic_receipt_confirmed"
+    },
+    {
       "companyId": "company_c0587f57d9eaba5c",
       "company": "Backcountry Experience",
       "permanent": true,
@@ -17150,6 +17298,16 @@
       "reason": "previous_customer_development_no_repeat",
       "sourceStatus": "sent_confirmed",
       "sourceTimestamp": "2026-08-10T11:03:30.000Z",
+      "evidence": "exact_recipient_sender_subject_body_gate_passed;send_clicked_once;composer_closed;sent_folder_unique_company_body_reconciled;no_matched_DSN_in_bounded_scan"
+    },
+    {
+      "companyId": "company_e5e1da2488ad2e75",
+      "company": "WM Camping",
+      "permanent": true,
+      "crossChannel": true,
+      "reason": "previous_customer_development_no_repeat",
+      "sourceStatus": "sent_confirmed",
+      "sourceTimestamp": "2026-08-10T11:21:00.000Z",
       "evidence": "exact_recipient_sender_subject_body_gate_passed;send_clicked_once;composer_closed;sent_folder_unique_company_body_reconciled;no_matched_DSN_in_bounded_scan"
     },
     {
@@ -18151,7 +18309,7 @@
       },
       {
         "channel": "email",
-        "confirmed": 81,
+        "confirmed": 83,
         "replies": 0,
         "opportunities": 0,
         "replyRate": 0,
@@ -18202,7 +18360,7 @@
       {
         "dimension": "channel",
         "variant": "email",
-        "sampleSize": 81,
+        "sampleSize": 83,
         "observedReplyRate": 0,
         "recommendation": "use_as_bounded_allocation_signal"
       },
@@ -18216,13 +18374,13 @@
     ]
   },
   "ownerSummary": {
-    "generatedAt": "2026-08-10T11:14:54.471Z",
+    "generatedAt": "2026-08-10T11:24:41.451Z",
     "phase": "autonomous_sales_operating_system_v1",
     "kpis": {
-      "companies": 240,
-      "permanentlySuppressed": 181,
+      "companies": 243,
+      "permanentlySuppressed": 183,
       "plannedActions": 7,
-      "verifiedEvidenceRoutes": 123
+      "verifiedEvidenceRoutes": 125
     },
     "decisions": [
       {
@@ -18342,7 +18500,7 @@
         },
         {
           "channel": "email",
-          "confirmed": 81,
+          "confirmed": 83,
           "replies": 0,
           "opportunities": 0,
           "replyRate": 0,
@@ -18393,7 +18551,7 @@
         {
           "dimension": "channel",
           "variant": "email",
-          "sampleSize": 81,
+          "sampleSize": 83,
           "observedReplyRate": 0,
           "recommendation": "use_as_bounded_allocation_signal"
         },

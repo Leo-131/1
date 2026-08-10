@@ -1,7 +1,7 @@
 {
-  "updatedAt": "2026-08-10T11:14:52.811Z",
-  "cursor": 177,
-  "companyCount": 191,
+  "updatedAt": "2026-08-10T11:24:39.426Z",
+  "cursor": 8,
+  "companyCount": 194,
   "verifications": {
     "facewest": {
       "firstPartyChannelVerification": {
@@ -593,7 +593,7 @@
     "outdoor specialist": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-10T11:14:51.854Z",
+        "verifiedAt": "2026-08-10T11:24:27.259Z",
         "evidenceUrl": "https://www.outdoor-experts.nl/nl/",
         "httpStatus": 200,
         "signals": [
@@ -610,11 +610,12 @@
     "campervan gift": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-10T10:06:32.493Z",
-        "evidenceUrl": "https://www.campervangift.co.uk/",
+        "verifiedAt": "2026-08-10T11:24:30.748Z",
+        "evidenceUrl": "https://www.campervangift.co.uk/become-a-supplier/",
         "httpStatus": 200,
         "signals": [
           "form_control",
+          "public_business_email",
           "supplier_invitation",
           "contact_invitation"
         ],
@@ -629,7 +630,7 @@
     "gecko overland": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-10T10:06:28.961Z",
+        "verifiedAt": "2026-08-10T11:24:32.190Z",
         "evidenceUrl": "https://gecko-overland.com/contact/",
         "httpStatus": 200,
         "signals": [
@@ -651,7 +652,7 @@
     "bbq fans": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-10T10:06:27.820Z",
+        "verifiedAt": "2026-08-10T11:24:33.817Z",
         "evidenceUrl": "https://www.bbqfans.com/become-a-supplier/",
         "httpStatus": 200,
         "signals": [
@@ -670,7 +671,7 @@
     "flameoutdoors": {
       "firstPartyChannelVerification": {
         "status": "unreachable",
-        "verifiedAt": "2026-08-10T10:06:26.839Z",
+        "verifiedAt": "2026-08-10T11:24:32.901Z",
         "evidenceUrl": "https://flameoutdoors.com/pages/authorized-dealer",
         "httpStatus": 402,
         "signals": [],
@@ -685,7 +686,7 @@
     "basecamp outfitters roslyn": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-10T10:06:32.992Z",
+        "verifiedAt": "2026-08-10T11:24:32.493Z",
         "evidenceUrl": "https://www.basecamp-outfitters.com/",
         "httpStatus": 200,
         "signals": [
@@ -705,7 +706,7 @@
     "new world outdoor gear co": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-10T10:06:33.211Z",
+        "verifiedAt": "2026-08-10T11:24:34.271Z",
         "evidenceUrl": "https://www.nwogco.com/",
         "httpStatus": 200,
         "signals": [
@@ -725,7 +726,7 @@
     "esprinet group": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-10T10:06:35.950Z",
+        "verifiedAt": "2026-08-10T11:24:37.014Z",
         "evidenceUrl": "https://www.esprinet.com/en/become-a-supplier/",
         "httpStatus": 200,
         "signals": [
@@ -743,7 +744,7 @@
     "eet group": {
       "firstPartyChannelVerification": {
         "status": "unreachable",
-        "verifiedAt": "2026-08-10T10:06:36.478Z",
+        "verifiedAt": "2026-08-10T11:24:34.408Z",
         "evidenceUrl": "https://www.eetgroup.com/en-eu/eet/become-a-supplier",
         "httpStatus": 403,
         "signals": [],
@@ -758,7 +759,7 @@
     "komsa": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-10T10:10:21.830Z",
+        "verifiedAt": "2026-08-10T11:24:36.183Z",
         "evidenceUrl": "https://komsa.com/en/contact",
         "httpStatus": 200,
         "signals": [
@@ -776,7 +777,7 @@
     "aqipa": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-10T10:10:20.912Z",
+        "verifiedAt": "2026-08-10T11:24:38.270Z",
         "evidenceUrl": "https://support.aqipa.com/en-US/new-ticket",
         "httpStatus": 200,
         "signals": [
@@ -795,7 +796,7 @@
     "cms distribution": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-10T10:10:20.087Z",
+        "verifiedAt": "2026-08-10T11:24:37.297Z",
         "evidenceUrl": "https://www.cmsdistribution.com/contact-us",
         "httpStatus": 200,
         "signals": [
@@ -814,7 +815,7 @@
     "bass pro shops": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-10T10:10:21.945Z",
+        "verifiedAt": "2026-08-10T11:24:37.991Z",
         "evidenceUrl": "https://vendorportal.basspro.com/default.aspx",
         "httpStatus": 200,
         "signals": [
@@ -832,7 +833,7 @@
     "cabela s": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-10T10:10:24.115Z",
+        "verifiedAt": "2026-08-10T11:24:39.064Z",
         "evidenceUrl": "https://help.cabelas.com/company-information-ff566349/how-can-i-sell-my-product-through-cabelas-cf904a21",
         "httpStatus": 200,
         "signals": [
@@ -854,7 +855,7 @@
     "liberty mountain": {
       "firstPartyChannelVerification": {
         "status": "unreachable",
-        "verifiedAt": "2026-08-10T10:10:22.287Z",
+        "verifiedAt": "2026-08-10T11:24:39.426Z",
         "evidenceUrl": "https://libertymountain.com/find-a-rep",
         "httpStatus": 403,
         "signals": [],
@@ -2486,7 +2487,7 @@
     "rona": {
       "firstPartyChannelVerification": {
         "status": "unreachable",
-        "verifiedAt": "2026-08-10T10:06:33.030Z",
+        "verifiedAt": "2026-08-10T11:24:32.691Z",
         "evidenceUrl": "https://vendors.rona.ca/product-supplier",
         "httpStatus": 403,
         "signals": [],
@@ -3039,7 +3040,7 @@
     "equipment outdoors": {
       "firstPartyChannelVerification": {
         "status": "unreachable",
-        "verifiedAt": "2026-08-10T11:14:49.430Z",
+        "verifiedAt": "2026-08-10T11:24:25.429Z",
         "evidenceUrl": "https://www.equipmentoutdoors.co.uk/",
         "httpStatus": 403,
         "signals": [],
@@ -3054,7 +3055,7 @@
     "the outdoor shop lewes": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-10T11:14:52.811Z",
+        "verifiedAt": "2026-08-10T11:24:25.164Z",
         "evidenceUrl": "https://www.outdoorshoplewes.co.uk/",
         "httpStatus": 200,
         "signals": [
@@ -3066,6 +3067,133 @@
       "contactCapabilityVerified": true,
       "externalVerificationStatus": "official_contact_form_verified",
       "publicEmail": "info@outdoorshoplewes.co.uk",
+      "emailVerificationStatus": "official_public_business_email",
+      "socialProfiles": []
+    },
+    "mawson s sports": {
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-10T11:24:26.321Z",
+        "evidenceUrl": "https://mawsons.ca/",
+        "httpStatus": 200,
+        "signals": [
+          "public_business_email"
+        ],
+        "error": ""
+      },
+      "contactCapabilityVerified": false,
+      "externalVerificationStatus": "",
+      "publicEmail": "info@mawsons.ca",
+      "emailVerificationStatus": "official_public_business_email",
+      "socialProfiles": []
+    },
+    "vamos outdoors": {
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-10T11:24:28.744Z",
+        "evidenceUrl": "https://vamosoutdoors.ca/",
+        "httpStatus": 200,
+        "signals": [
+          "form_control",
+          "contact_invitation"
+        ],
+        "error": ""
+      },
+      "contactCapabilityVerified": true,
+      "externalVerificationStatus": "official_contact_form_verified",
+      "publicEmail": "info@vamosoutdoors.ca",
+      "emailVerificationStatus": "official_public_business_email",
+      "socialProfiles": []
+    },
+    "lost wave": {
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-10T11:24:28.221Z",
+        "evidenceUrl": "https://www.lost-wave.com/about",
+        "httpStatus": 200,
+        "signals": [
+          "contact_invitation"
+        ],
+        "error": ""
+      },
+      "contactCapabilityVerified": false,
+      "externalVerificationStatus": "",
+      "publicEmail": "info@lost-wave.com",
+      "emailVerificationStatus": "official_public_business_email",
+      "socialProfiles": []
+    },
+    "action outdoors": {
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-10T11:24:29.138Z",
+        "evidenceUrl": "https://www.actionoutdoors.co.uk/about/",
+        "httpStatus": 200,
+        "signals": [
+          "form_control",
+          "contact_invitation"
+        ],
+        "error": ""
+      },
+      "contactCapabilityVerified": true,
+      "externalVerificationStatus": "official_contact_form_verified",
+      "publicEmail": "info@actionoutdoors.co.uk",
+      "emailVerificationStatus": "official_public_business_email",
+      "socialProfiles": []
+    },
+    "spry": {
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-10T11:24:28.683Z",
+        "evidenceUrl": "https://spryactive.ca/pages/about",
+        "httpStatus": 200,
+        "signals": [
+          "form_control",
+          "public_business_email",
+          "contact_invitation"
+        ],
+        "error": ""
+      },
+      "contactCapabilityVerified": true,
+      "externalVerificationStatus": "official_contact_form_verified",
+      "publicEmail": "info@spryactive.ca",
+      "emailVerificationStatus": "official_public_business_email",
+      "socialProfiles": []
+    },
+    "lifestyle gear": {
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-10T11:24:29.850Z",
+        "evidenceUrl": "https://lifestylegear.co.nz/pages/contact",
+        "httpStatus": 200,
+        "signals": [
+          "form_control",
+          "public_business_email",
+          "contact_invitation"
+        ],
+        "error": ""
+      },
+      "contactCapabilityVerified": true,
+      "externalVerificationStatus": "official_contact_form_verified",
+      "publicEmail": "info@lifestylegear.co.nz",
+      "emailVerificationStatus": "official_public_business_email",
+      "socialProfiles": []
+    },
+    "old school outdoor": {
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-10T11:24:29.711Z",
+        "evidenceUrl": "https://oldschooloutdoor.com/pages/contact",
+        "httpStatus": 200,
+        "signals": [
+          "form_control",
+          "public_business_email",
+          "contact_invitation"
+        ],
+        "error": ""
+      },
+      "contactCapabilityVerified": true,
+      "externalVerificationStatus": "official_contact_form_verified",
+      "publicEmail": "info@oldschooloutdoor.com",
       "emailVerificationStatus": "official_public_business_email",
       "socialProfiles": []
     }

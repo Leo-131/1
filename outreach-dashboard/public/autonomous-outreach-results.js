@@ -15347,5 +15347,44 @@ window.AUTONOMOUS_OUTREACH_RESULTS = [
     "messageId": "<4e3a5b51-9567-6b06-a7c9-2b2ae2627c9e@flextailgear.com>",
     "sentFolder": "已发送",
     "sentUid": 3026
+  },
+  {
+    "task_id": "google-customer-outdoors-ramsey-email-20260810",
+    "company": "Outdoors Ramsey",
+    "status": "bounced",
+    "agent": "codex-dedicated-chrome",
+    "browserTransportUsed": "dedicated Chrome/CDP 9224",
+    "timestamp": "2026-08-10T11:21:05.000Z",
+    "target_url": "mailto:sales@outdoorsramsey.co.uk",
+    "evidenceUrl": "https://www.outdoorsramsey.co.uk/outdoor-shop-in-ramsey-isle-of-man/",
+    "verificationStatus": "first_party_company_email_verified_live_2026-08-10_then_DSN_bounced",
+    "evidence": "exact_recipient_sender_subject_body_gate_passed;send_clicked_once;composer_closed;sent_folder_unique_company_body_reconciled;matched_DSN_550_5.1.0_recipient_not_found;automatic_resend_forbidden",
+    "recipientEmail": "sales@outdoorsramsey.co.uk"
+  },
+  {
+    "task_id": "google-customer-castleberg-outdoors-email-20260810",
+    "company": "Castleberg Outdoors",
+    "status": "sent_confirmed",
+    "agent": "codex-dedicated-chrome",
+    "browserTransportUsed": "dedicated Chrome/CDP 9224",
+    "timestamp": "2026-08-10T11:21:00.000Z",
+    "target_url": "mailto:enquiries@castlebergoutdoors.co.uk",
+    "evidenceUrl": "https://www.castlebergoutdoors.co.uk/about-castleberg-outdoors",
+    "verificationStatus": "first_party_company_email_verified_live_2026-08-10",
+    "evidence": "exact_recipient_sender_subject_body_gate_passed;send_clicked_once;composer_closed;sent_folder_unique_company_body_reconciled;inbound_automatic_receipt_confirmed",
+    "recipientEmail": "enquiries@castlebergoutdoors.co.uk"
+  },
+  {
+    "task_id": "google-customer-wm-camping-email-20260810",
+    "company": "WM Camping",
+    "status": "sent_confirmed",
+    "agent": "codex-dedicated-chrome",
+    "browserTransportUsed": "dedicated Chrome/CDP 9224",
+    "timestamp": "2026-08-10T11:21:00.000Z",
+    "target_url": "mailto:customerservices@wmcamping.co.uk",
+    "evidenceUrl": "https://wmcamping.co.uk/pages/contact-us",
+    "verificationStatus": "first_party_company_email_verified_live_2026-08-10",
+    "evidence": "exact_recipient_sender_subject_body_gate_passed;send_clicked_once;composer_closed;sent_folder_unique_company_body_reconciled;no_matched_DSN_in_bounded_scan",
+    "recipientEmail": "customerservices@wmcamping.co.uk"
   }
 ];
