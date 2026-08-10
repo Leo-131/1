@@ -536,6 +536,19 @@ test('Google discovery preserves newly verified independent-retailer routing ema
     ['Switching Gear', ['info@switchinggear.ca', 'https://www.switchinggear.ca/About.html']],
     ["Mawson's Sports", ['info@mawsons.ca', 'https://mawsons.ca/']],
     ['Spry', ['info@spryactive.ca', 'https://spryactive.ca/pages/about']],
+    ['Pack Gear Go', ['sales@packgeargo.co.nz', 'https://www.packgeargo.co.nz/contact/']],
+    ['Gearshop', ['sales@gearshop.co.nz', 'https://www.gearshop.co.nz/pages/contact']],
+    ['Lifestyle Gear', ['info@lifestylegear.co.nz', 'https://lifestylegear.co.nz/pages/contact']],
+    ['Tight Lines', ['service@tightlines.co.nz', 'https://tightlines.co.nz/pages/about-us']],
+    ['Outdoor Shop NZ', ['info@outdoorshop.nz', 'https://outdoorshop.nz/pages/contact-us']],
+    ['Dwights Outdoors', ['online@dwights.co.nz', 'https://dwights.co.nz/pages/contact-us']],
+    ['Outdoor eStore', ['service@outdoorestore.co.nz', 'https://www.outdoorestore.co.nz/pages/contact-us']],
+    ['Camping Country Superstore', ['sales@campingcountry.com.au', 'https://campingcountry.com.au/about-us/']],
+    ['West End Outdoors', ['support@westendoutdoors.co.uk', 'https://www.westendoutdoors.co.uk/policies/contact-information']],
+    ['Vamos Outdoors', ['info@vamosoutdoors.ca', 'https://vamosoutdoors.ca/']],
+    ['WeyFarm Outdoors', ['info@weyfarm-outdoors.co.uk', 'https://weyfarm-outdoors.co.uk/']],
+    ['Great Western Camping', ['sales@greatwesterncamping.co.uk', 'https://www.greatwesterncamping.co.uk/contact']],
+    ['Camping World UK', ['sales@campingworld.co.uk', 'https://www.campingworld.co.uk/us/Visit-and-Contact-Us/cc-339.aspx']],
     ['Kittery Trading Post', ['info@ktp.com', 'https://www.kitterytradingpost.com/customer-service/cookie-policy/']],
     ['Spejder Sport', ['kundeservice@spejdersport.dk', 'https://www.spejdersport.dk/handelsbetingelser/']],
     ['Hardloop', ['hello@hardloop.fr', 'https://www.hardloop.fr/article/671-acupression-tout-savoir']],
@@ -1664,6 +1677,18 @@ test('uninserted social draft does not block same-company website fallback', () 
   assert.ok(mainSource.includes('function sendStatusHasCustomerInteraction'));
   assert.ok(mainSource.includes('sendStatusHasCustomerInteraction(sendStatus, output.evidence || result.evidence ||'));
   assert.match(mainSource, /result\.status !== 'send_unconfirmed'[\s\S]*sendStatusHasCustomerInteraction\(result\.status, result\.evidence\)/);
+});
+
+test('explicit uncertain delivery blocks automatic resend across the queue and final executor gates', () => {
+  const result = {
+    company: 'Uncertain Outdoor',
+    status: 'send_unconfirmed',
+    evidence: 'browser_control_timeout;delivery_state_uncertain;automatic_resend_forbidden',
+    timestamp: '2026-08-10T11:07:30.000Z',
+  };
+  assert.equal(dailyRunner.isHistoricalDevelopmentResult(result), true);
+  assert.match(mainSource, /delivery_state_uncertain[\s\S]*automatic_resend_forbidden/);
+  assert.match(dailyRunnerSource, /delivery_state_uncertain[\s\S]*automatic_resend_forbidden/);
 });
 
 test('website pre-send failures continue to first-party verified social instead of stranding the company', () => {

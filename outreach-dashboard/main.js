@@ -485,6 +485,7 @@ function sendStatusHasCustomerInteraction(status, evidence = '') {
   if (status !== 'send_unconfirmed') return true;
   const text = String(evidence || '');
   if (/owner_confirmed_prior_customer_development/i.test(text)) return true;
+  if (/delivery_state_uncertain/i.test(text) && /automatic_resend_forbidden/i.test(text)) return true;
   if (/message_sent|submitted_confirmed|persisted_after_reload/i.test(text)) return true;
   return /send_clicked_but_confirmation_missing|enter_send_attempted_but_confirmation_missing|submit_clicked/i.test(text)
     && /verified_draft_present_before_irreversible_action/i.test(text);

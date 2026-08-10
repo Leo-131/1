@@ -26,6 +26,22 @@ test('bare click markers, preserved drafts, and technical failures never suppres
   assert.equal(intelligence.buildSuppressionLedger(companies).length, 0);
 });
 
+test('explicit uncertain delivery freezes every company channel without treating a bare click as proof', () => {
+  const companies = intelligence.buildCompanyTruth({
+    leads: [{ company: 'Uncertain Outdoor', website: 'https://uncertain.example', platform: 'website_form' }],
+    results: [{
+      company: 'Uncertain Outdoor',
+      status: 'send_unconfirmed',
+      evidence: 'browser_control_timeout;delivery_state_uncertain;automatic_resend_forbidden',
+      timestamp: '2026-08-10T11:07:30.000Z',
+    }],
+  });
+  const ledger = intelligence.buildSuppressionLedger(companies);
+  assert.equal(ledger.length, 1);
+  assert.equal(ledger[0].crossChannel, true);
+  assert.equal(ledger[0].sourceStatus, 'send_unconfirmed');
+});
+
 test('owner-confirmed prior customer development permanently suppresses the company without requiring legacy click-chain evidence', () => {
   const companies = intelligence.buildCompanyTruth({
     leads: [{ company: 'CMS Distribution', website: 'https://cmsdistribution.com' }],

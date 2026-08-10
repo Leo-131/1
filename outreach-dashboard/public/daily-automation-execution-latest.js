@@ -14,16 +14,16 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
   "realDevelopmentCount": 0,
   "reportingVerdict": "no_customer_development_performed",
   "userVisibleStatus": "Customer development was not performed. Blockers: verified_executable_channel_missing (16); homepage_only_contact_path_requires_verification (15); website_contact_capability_not_verified (15).",
-  "recoveryHint": "Refill the high-ICP pool with 50 verified leads or unblock existing website/social leads before the next run. Verify the recipient as an official public business email before enabling email outreach. Confirm the official social profile and safe message entry before rerunning Google-discovered social outreach.",
+  "recoveryHint": "Refill the high-ICP pool with 52 verified leads or unblock existing website/social leads before the next run. Verify the recipient as an official public business email before enabling email outreach. Confirm the official social profile and safe message entry before rerunning Google-discovered social outreach.",
   "recoveryActions": [
     {
       "reason": "daily_queue_goal_not_reached",
       "action": "Refill high-ICP customer pool",
-      "description": "Add or unblock 50 verified high-ICP leads to reach the daily 100 target.",
-      "hint": "Refill the high-ICP pool with 50 verified leads or unblock existing website/social leads before the next run.",
+      "description": "Add or unblock 52 verified high-ICP leads to reach the daily 100 target.",
+      "hint": "Refill the high-ICP pool with 52 verified leads or unblock existing website/social leads before the next run.",
       "target": 100,
-      "potentialPool": 50,
-      "refillNeeded": 50
+      "potentialPool": 48,
+      "refillNeeded": 52
     },
     {
       "reason": "email_target_verification_required",
@@ -112,13 +112,6 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "id": "google-customer-rona-website-contact",
       "company": "RONA",
       "action": "develop",
-      "platform": "website_form",
-      "reason": "official_website_contact_channel"
-    },
-    {
-      "id": "google-customer-tentworld-website-contact",
-      "company": "Tentworld",
-      "action": "email_priority",
       "platform": "website_form",
       "reason": "official_website_contact_channel"
     },
@@ -319,13 +312,6 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "reason": "social_profile_not_first_party_verified"
     },
     {
-      "id": "google-customer-tentworld-nz-facebook",
-      "company": "Tentworld NZ",
-      "action": "develop",
-      "platform": "facebook",
-      "reason": "social_profile_not_first_party_verified"
-    },
-    {
       "id": "google-customer-bergfreunde-instagram",
       "company": "Bergfreunde",
       "action": "develop",
@@ -356,13 +342,6 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     {
       "id": "google-customer-atmosphere-instagram",
       "company": "Atmosphere",
-      "action": "develop",
-      "platform": "instagram",
-      "reason": "social_profile_not_first_party_verified"
-    },
-    {
-      "id": "google-customer-tentworld-nz-instagram",
-      "company": "Tentworld NZ",
       "action": "develop",
       "platform": "instagram",
       "reason": "social_profile_not_first_party_verified"
@@ -604,12 +583,12 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     {
       "reason": "official_website_contact_channel",
       "status": "skipped",
-      "count": 13
+      "count": 12
     },
     {
       "reason": "social_profile_not_first_party_verified",
       "status": "skipped",
-      "count": 13
+      "count": 11
     },
     {
       "reason": "public_business_email_requires_verification",
@@ -631,18 +610,18 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     "verified_executable_channel_missing": 16,
     "homepage_only_contact_path_requires_verification": 15,
     "website_contact_capability_not_verified": 15,
-    "official_website_contact_channel": 13,
-    "social_profile_not_first_party_verified": 13,
+    "official_website_contact_channel": 12,
+    "social_profile_not_first_party_verified": 11,
     "public_business_email_requires_verification": 3,
     "concrete_google_discovered_major_customer_facebook": 1,
     "official_public_business_email_verified": 1
   },
   "queueGoalStatus": {
     "target": 100,
-    "potentialPool": 50,
-    "queueCount": 62,
-    "googleDiscovered": 43,
-    "refillNeeded": 50,
+    "potentialPool": 48,
+    "queueCount": 59,
+    "googleDiscovered": 40,
+    "refillNeeded": 52,
     "reached": false,
     "action": "Add more verified high-ICP sources or unblock existing website/social leads."
   },
@@ -815,22 +794,6 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "blockingEvidence": "website_failure_circuit_open;failed_days:3;window_days:30"
     },
     {
-      "id": "google-customer-tentworld-website-contact",
-      "company": "Tentworld",
-      "action": "email_priority",
-      "platform": "website_form",
-      "readiness": {
-        "ready": true,
-        "gate": "official_business_email",
-        "evidenceUrl": "https://www.tentworld.com.au/"
-      },
-      "hasTarget": true,
-      "inCandidatePool": false,
-      "sameDayCompanyBlocked": false,
-      "blockingStatus": "failed_open",
-      "blockingEvidence": "verified_email_auto_send_no_manual_review;alibaba_webmail_content_inserted_recipient_control_verified;alibaba_webmail_draft_verification_failed;recipientReady:true;subjectReady:true;bodyReady:false;recipientStageValueMatch:false;recipientStageType:none;recipientStageRole:none;recipientStageClass:e_iframe e_scroll;recipientStageXY:0,336;recipientControl:INPUT,search,combobox,ant-select-selection-search-input hide-clear;recipientControlXY:0,0;recipientControlShadow:false;composer_preserved_for_technical_evidence:true;contact_path_strategy_v2"
-    },
-    {
       "id": "google-customer-bivouac-outdoor-website-contact",
       "company": "Bivouac Outdoor",
       "action": "email_priority",
@@ -898,26 +861,26 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
   "summary": {
     "totalLeads": 16,
     "highIcp": 16,
-    "readyToDevelop": 16,
-    "dueNow": 62,
-    "visibleTodayQueue": 24,
-    "potentialPool": 50,
+    "readyToDevelop": 14,
+    "dueNow": 59,
+    "visibleTodayQueue": 22,
+    "potentialPool": 48,
     "potentialPoolTarget": 100,
     "customerTableHighIcp": 19,
-    "refillNeeded": 50,
-    "executableCompanies": 15,
+    "refillNeeded": 52,
+    "executableCompanies": 14,
     "executableReserveTarget": 130,
-    "executableReserveNeeded": 115,
+    "executableReserveNeeded": 116,
     "executableByChannel": {
       "facebook": 1,
-      "website_form": 14
+      "website_form": 13
     },
     "verifiedSocialCompanies": 1,
     "verifiedSocialReserveTarget": 20,
     "verifiedSocialReserveNeeded": 19,
-    "enrichmentBacklogCount": 35,
-    "googleDiscovered": 43,
-    "facebookDiscovered": 8,
+    "enrichmentBacklogCount": 34,
+    "googleDiscovered": 40,
+    "facebookDiscovered": 7,
     "websiteContactDiscovered": 0,
     "scheduledLater": 0,
     "cooldown": 30,
@@ -933,5 +896,5 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     "scanned": 0,
     "updated": 0
   },
-  "completedAt": "2026-08-10T10:56:32.766Z"
+  "completedAt": "2026-08-10T11:15:26.844Z"
 };
