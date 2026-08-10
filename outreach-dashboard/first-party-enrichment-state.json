@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-08-10T11:49:36.141Z",
-  "cursor": 33,
+  "updatedAt": "2026-08-10T11:53:00.865Z",
+  "cursor": 58,
   "companyCount": 227,
   "verifications": {
     "facewest": {
@@ -1207,7 +1207,7 @@
     "valhalla pure outfitters": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-10T10:25:50.807Z",
+        "verifiedAt": "2026-08-10T11:52:48.350Z",
         "evidenceUrl": "https://vpo.ca/stores/vpo-vancouver",
         "httpStatus": 200,
         "signals": [
@@ -1224,7 +1224,7 @@
     "tentworld": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-10T10:25:50.647Z",
+        "verifiedAt": "2026-08-10T11:52:48.459Z",
         "evidenceUrl": "https://www.tentworld.com.au/",
         "httpStatus": 200,
         "signals": [],
@@ -1239,7 +1239,7 @@
     "trekitt": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-10T10:25:50.214Z",
+        "verifiedAt": "2026-08-10T11:52:47.818Z",
         "evidenceUrl": "https://www.trekitt.co.uk/pages/contact/",
         "httpStatus": 200,
         "signals": [
@@ -1257,7 +1257,7 @@
     "ultralight outdoor gear": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-10T10:25:52.276Z",
+        "verifiedAt": "2026-08-10T11:52:47.947Z",
         "evidenceUrl": "https://ultralightoutdoorgear.co.uk/",
         "httpStatus": 200,
         "signals": [
@@ -1276,7 +1276,7 @@
     "outnorth": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-10T10:25:52.357Z",
+        "verifiedAt": "2026-08-10T11:52:50.288Z",
         "evidenceUrl": "https://www.outnorth.com/int/faq/contact",
         "httpStatus": 200,
         "signals": [
@@ -1294,7 +1294,7 @@
     "naturkompaniet": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-10T10:25:51.552Z",
+        "verifiedAt": "2026-08-10T11:52:49.261Z",
         "evidenceUrl": "https://www.naturkompaniet.se/",
         "httpStatus": 200,
         "signals": [
@@ -1312,7 +1312,7 @@
     "fjellsport": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-10T10:25:52.921Z",
+        "verifiedAt": "2026-08-10T11:52:50.647Z",
         "evidenceUrl": "https://www.fjellsport.no/faq/personvern",
         "httpStatus": 200,
         "signals": [
@@ -1329,7 +1329,7 @@
     "bcf": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-10T10:25:54.756Z",
+        "verifiedAt": "2026-08-10T11:52:53.585Z",
         "evidenceUrl": "https://superretailgroup.com.au/contact/",
         "httpStatus": 200,
         "signals": [
@@ -1346,7 +1346,7 @@
     "camping world": {
       "firstPartyChannelVerification": {
         "status": "unreachable",
-        "verifiedAt": "2026-08-10T10:25:53.601Z",
+        "verifiedAt": "2026-08-10T11:52:51.185Z",
         "evidenceUrl": "https://www.campingworld.com/contact-us.html",
         "httpStatus": 403,
         "signals": [],
@@ -1361,7 +1361,7 @@
     "kittery trading post": {
       "firstPartyChannelVerification": {
         "status": "unreachable",
-        "verifiedAt": "2026-08-10T10:25:53.540Z",
+        "verifiedAt": "2026-08-10T11:52:51.122Z",
         "evidenceUrl": "https://www.kitterytradingpost.com/customer-service/cookie-policy/",
         "httpStatus": 403,
         "signals": [],
@@ -2504,7 +2504,7 @@
     "tractor supply company": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-10T10:25:55.045Z",
+        "verifiedAt": "2026-08-10T11:52:49.379Z",
         "evidenceUrl": "https://www.tractorsupply.com/",
         "httpStatus": 200,
         "signals": [],
@@ -2556,7 +2556,7 @@
     "great outdoor provision co": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-10T10:25:55.796Z",
+        "verifiedAt": "2026-08-10T11:52:51.153Z",
         "evidenceUrl": "https://www.greatoutdoorprovision.com/pages/faqs-policies",
         "httpStatus": 200,
         "signals": [
@@ -2573,7 +2573,7 @@
     "bill jackson s shop for adventure": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-10T10:25:57.152Z",
+        "verifiedAt": "2026-08-10T11:52:55.289Z",
         "evidenceUrl": "https://www.billjacksons.com/class/thru-hike-clinic-2025/",
         "httpStatus": 200,
         "signals": [
@@ -3283,6 +3283,224 @@
       "contactCapabilityVerified": true,
       "externalVerificationStatus": "official_contact_form_verified",
       "publicEmail": "sales@theoutdoorshop.ie",
+      "emailVerificationStatus": "official_public_business_email",
+      "socialProfiles": []
+    },
+    "expedition store sweden": {
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-10T11:52:45.126Z",
+        "evidenceUrl": "https://expeditionstore.se/pages/contact-us",
+        "httpStatus": 200,
+        "signals": [
+          "form_control",
+          "contact_invitation"
+        ],
+        "error": ""
+      },
+      "contactCapabilityVerified": true,
+      "externalVerificationStatus": "official_contact_form_verified",
+      "publicEmail": "info@expeditionstore.se",
+      "emailVerificationStatus": "official_public_business_email",
+      "socialProfiles": []
+    },
+    "high peak outdoor": {
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-10T11:52:46.757Z",
+        "evidenceUrl": "https://www.highpeak-outdoor.com/kontakt.html",
+        "httpStatus": 200,
+        "signals": [
+          "form_control"
+        ],
+        "error": ""
+      },
+      "contactCapabilityVerified": false,
+      "externalVerificationStatus": "",
+      "publicEmail": "service@simexoutdoor.com",
+      "emailVerificationStatus": "official_public_business_email",
+      "socialProfiles": []
+    },
+    "der freistaat mega store": {
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-10T11:52:45.801Z",
+        "evidenceUrl": "https://shop.derfreistaat.de/de/kontakt/",
+        "httpStatus": 200,
+        "signals": [
+          "form_control",
+          "public_business_email"
+        ],
+        "error": ""
+      },
+      "contactCapabilityVerified": false,
+      "externalVerificationStatus": "",
+      "publicEmail": "webshop@derfreistaat.de",
+      "emailVerificationStatus": "official_public_business_email",
+      "socialProfiles": []
+    },
+    "naturligvis outdoor": {
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-10T11:52:45.436Z",
+        "evidenceUrl": "https://www.naturligvis.com/side/kontakt",
+        "httpStatus": 200,
+        "signals": [
+          "form_control",
+          "public_business_email"
+        ],
+        "error": ""
+      },
+      "contactCapabilityVerified": false,
+      "externalVerificationStatus": "",
+      "publicEmail": "mail@naturligvis.com",
+      "emailVerificationStatus": "official_public_business_email",
+      "socialProfiles": []
+    },
+    "gearshop": {
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-10T11:52:57.674Z",
+        "evidenceUrl": "https://www.gearshop.co.nz/pages/contact",
+        "httpStatus": 200,
+        "signals": [
+          "form_control",
+          "public_business_email",
+          "contact_invitation"
+        ],
+        "error": ""
+      },
+      "contactCapabilityVerified": true,
+      "externalVerificationStatus": "official_contact_form_verified",
+      "publicEmail": "sales@gearshop.co.nz",
+      "emailVerificationStatus": "official_public_business_email",
+      "socialProfiles": []
+    },
+    "camping country superstore": {
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-10T11:52:56.805Z",
+        "evidenceUrl": "https://campingcountry.com.au/about-us/",
+        "httpStatus": 200,
+        "signals": [
+          "form_control",
+          "public_business_email"
+        ],
+        "error": ""
+      },
+      "contactCapabilityVerified": false,
+      "externalVerificationStatus": "",
+      "publicEmail": "sales@campingcountry.com.au",
+      "emailVerificationStatus": "official_public_business_email",
+      "socialProfiles": []
+    },
+    "maceoin general merchants": {
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-10T11:52:54.929Z",
+        "evidenceUrl": "https://www.maceoinltd.com/",
+        "httpStatus": 200,
+        "signals": [
+          "form_control",
+          "public_business_email",
+          "contact_invitation"
+        ],
+        "error": ""
+      },
+      "contactCapabilityVerified": true,
+      "externalVerificationStatus": "official_contact_form_verified",
+      "publicEmail": "info@maceoinltd.com",
+      "emailVerificationStatus": "official_public_business_email",
+      "socialProfiles": []
+    },
+    "s k camping leisure": {
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-10T11:52:59.782Z",
+        "evidenceUrl": "https://www.skcamping.com/",
+        "httpStatus": 200,
+        "signals": [
+          "form_control",
+          "contact_invitation"
+        ],
+        "error": ""
+      },
+      "contactCapabilityVerified": true,
+      "externalVerificationStatus": "official_contact_form_verified",
+      "publicEmail": "info@skcamping.com",
+      "emailVerificationStatus": "official_public_business_email",
+      "socialProfiles": []
+    },
+    "veneboer camping outdoor": {
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-10T11:52:59.746Z",
+        "evidenceUrl": "https://www.veneboercamping.nl/contact",
+        "httpStatus": 200,
+        "signals": [
+          "form_control",
+          "public_business_email"
+        ],
+        "error": ""
+      },
+      "contactCapabilityVerified": false,
+      "externalVerificationStatus": "",
+      "publicEmail": "info@veneboercamping.nl",
+      "emailVerificationStatus": "official_public_business_email",
+      "socialProfiles": []
+    },
+    "huna outdoor": {
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-10T11:52:59.207Z",
+        "evidenceUrl": "https://hunaoutdoor.nl/",
+        "httpStatus": 200,
+        "signals": [
+          "form_control",
+          "public_business_email"
+        ],
+        "error": ""
+      },
+      "contactCapabilityVerified": false,
+      "externalVerificationStatus": "",
+      "publicEmail": "info@hunaoutdoor.nl",
+      "emailVerificationStatus": "official_public_business_email",
+      "socialProfiles": []
+    },
+    "de campingwinkel": {
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-10T11:52:59.115Z",
+        "evidenceUrl": "https://decampingwinkel.be/contact/",
+        "httpStatus": 200,
+        "signals": [
+          "form_control",
+          "public_business_email"
+        ],
+        "error": ""
+      },
+      "contactCapabilityVerified": false,
+      "externalVerificationStatus": "",
+      "publicEmail": "info@decampingwinkel.be",
+      "emailVerificationStatus": "official_public_business_email",
+      "socialProfiles": []
+    },
+    "canvascamp": {
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-10T11:53:00.865Z",
+        "evidenceUrl": "https://www.canvascamp.com/en/contact-us",
+        "httpStatus": 200,
+        "signals": [
+          "form_control",
+          "public_business_email",
+          "contact_invitation"
+        ],
+        "error": ""
+      },
+      "contactCapabilityVerified": true,
+      "externalVerificationStatus": "official_contact_form_verified",
+      "publicEmail": "info@canvascamp.com",
       "emailVerificationStatus": "official_public_business_email",
       "socialProfiles": []
     }

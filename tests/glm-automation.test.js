@@ -840,6 +840,13 @@ test('daily automation targets one hundred high-ICP prospects by default', () =>
   assert.ok(dailyRunnerSource.includes("['develop', Math.max(DEFAULT_DAILY_LIMIT"));
 });
 
+test('daily execution treats an already reached hard cap as a successful safe stop', () => {
+  assert.ok(mainSource.includes("executionPhase: 'daily_cap_reached'"));
+  assert.ok(mainSource.includes("reportingVerdict: 'daily_target_already_reached'"));
+  assert.ok(mainSource.includes('Daily target already reached at ${confirmedToday}/${DAILY_CONFIRMED_COMPANY_TARGET}'));
+  assert.ok(mainSource.includes('const dailyTargetReached = Number(confirmedToday || 0) >= target'));
+});
+
 test('potential pool capacity counts distinct companies instead of channel rows', () => {
   const poolStart = dailyRunnerSource.indexOf('function buildDailyPotentialPool');
   const poolEnd = dailyRunnerSource.indexOf('function channelReadinessSummary', poolStart);

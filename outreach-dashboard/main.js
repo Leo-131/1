@@ -4298,22 +4298,26 @@ function executionBlockerCounts(blockerSummary = []) {
   }, {});
 }
 
-function executionQueueGoalStatus(summary = {}) {
+function executionQueueGoalStatus(summary = {}, confirmedToday = 0) {
   const target = Number(summary.potentialPoolTarget || 100);
   const potentialPool = Number(summary.potentialPool || 0);
   const queueCount = Number(summary.dueNow || summary.dailyQueue || summary.queueCount || 0);
   const googleDiscovered = Number(summary.googleDiscovered || 0);
-  const refillNeeded = Math.max(0, Number.isFinite(target) ? target - potentialPool : 0);
+  const dailyTargetReached = Number(confirmedToday || 0) >= target;
+  const refillNeeded = dailyTargetReached ? 0 : Math.max(0, Number.isFinite(target) ? target - potentialPool : 0);
   return {
     target,
     potentialPool,
     queueCount,
     googleDiscovered,
     refillNeeded,
-    reached: refillNeeded === 0,
+    confirmedToday: Number(confirmedToday || 0),
+    reached: dailyTargetReached || refillNeeded === 0,
     action: refillNeeded > 0
       ? 'Add more verified high-ICP sources or unblock existing website/social leads.'
-      : 'Daily high-ICP queue target reached.',
+      : dailyTargetReached
+        ? 'Daily confirmed-company target reached; preserve the hard cap and do not send more first touches.'
+        : 'Daily high-ICP queue target reached.',
   };
 }
 
@@ -4482,7 +4486,34 @@ async function runDailyAutomationQueue(payload = {}) {
     const userVisibleStatus = formatExecutionBlockerStatus(blockerSummary)
       || 'No Chrome/browser development was performed because safety gates left no executable tasks.';
     const blockerCounts = executionBlockerCounts(blockerSummary);
-    const queueGoalStatus = executionQueueGoalStatus(latest.summary || {});
+    const queueGoalStatus = executionQueueGoalStatus(latest.summary || {}, confirmedToday);
+    if (remainingDailyGap === 0) {
+      return {
+        ok: true,
+        skippedOnly: true,
+        browserTransportRequested: 'codex-extension-first',
+        browserTransportUsed: 'none',
+        browserTransportFallbackReason: '',
+        extensionReceiptCount: 0,
+        executionPhase: 'daily_cap_reached',
+        chromeStage: 'not_started',
+        chromeOpened: false,
+        chromeOpenedCount: 0,
+        customerDevelopmentPerformed: false,
+        customerMessageSent: false,
+        realDevelopmentCount: 0,
+        reportingVerdict: 'daily_target_already_reached',
+        userVisibleStatus: `Daily target already reached at ${confirmedToday}/${DAILY_CONFIRMED_COMPANY_TARGET}; no additional first touch was attempted.`,
+        recoveryActions: [],
+        skipped: skippedRows,
+        blockerSummary: [],
+        blockerCounts: {},
+        queueGoalStatus,
+        checkpointAudit,
+        candidateSelectionAudit: [],
+        bounceReconciliation,
+      };
+    }
     const recoveryActions = executionRecoveryActions(blockerSummary, queueGoalStatus);
     const recoveryHint = recoveryActions.length ? recoveryActions.map(item => item.hint).join(' ') : undefined;
     return {
@@ -4666,7 +4697,7 @@ async function runDailyAutomationQueue(payload = {}) {
   const blockerSummary = buildExecutionBlockerSummary(results, skipped);
   const userVisibleStatus = formatExecutionBlockerStatus(blockerSummary);
   const blockerCounts = executionBlockerCounts(blockerSummary);
-  const queueGoalStatus = executionQueueGoalStatus(latest.summary || {});
+  const queueGoalStatus = executionQueueGoalStatus(latest.summary || {}, confirmedToday);
   const recoveryActions = executionRecoveryActions(blockerSummary, queueGoalStatus);
   const recoveryHint = recoveryActions.length ? recoveryActions.map(item => item.hint).join(' ') : undefined;
   writeDailyExecutionCheckpoint({
@@ -4744,7 +4775,7 @@ async function runAutoDailyAndWriteArtifact() {
       count: 1,
       examples: [currentDailyExecutionProgress && currentDailyExecutionProgress.currentItem].filter(Boolean),
     }];
-    const queueGoalStatus = executionQueueGoalStatus(latest.summary || {});
+    const queueGoalStatus = executionQueueGoalStatus(latest.summary || {}, confirmedToday);
     const recoveryActions = executionRecoveryActions(blockerSummary, queueGoalStatus);
     const recoveryHint = recoveryActions.length ? recoveryActions.map(item => item.hint).join(' ') : undefined;
     writeDailyExecutionArtifact({
