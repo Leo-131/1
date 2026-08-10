@@ -71,7 +71,7 @@ test('website contact can execute without a configured attachment', () => {
   assert.ok(mainSource.includes("'verify_target'"));
   assert.ok(mainSource.includes('item.url || item.contactUrl || item.website'));
   assert.ok(mainSource.includes('homepage_only_contact_path_requires_verification'));
-  assert.ok(mainSource.includes("const blocking = new Set(['sent_confirmed', 'failed_open', 'send_unconfirmed', 'website_contact_ready', 'website_contact_unreachable_skip'])"));
+  assert.ok(mainSource.includes("const blocking = new Set(['sent_confirmed', 'bounced', 'failed_open', 'send_unconfirmed', 'website_contact_ready', 'website_contact_unreachable_skip'])"));
   assert.ok(!mainSource.includes("'approval_pending', 'draft_prepared', 'prepared_not_sent'"));
   assert.ok(mainSource.includes('function socialFallbackFromInspection'));
   assert.ok(mainSource.includes('official_website_social_fallback'));
@@ -1371,7 +1371,7 @@ test('historical likes and follows do not block a later real customer message', 
     ),
     /account_followed|post_liked/,
   );
-  assert.ok(mainSource.includes("const companyBlocking = new Set(['sent_confirmed', 'send_unconfirmed'])"));
+  assert.ok(mainSource.includes("const companyBlocking = new Set(['sent_confirmed', 'bounced', 'send_unconfirmed'])"));
 });
 
 test('Alibaba bounce reconciliation downgrades confirmed email without deleting evidence', () => {
@@ -1380,6 +1380,10 @@ test('Alibaba bounce reconciliation downgrades confirmed email without deleting 
   assert.ok(mainSource.includes("match.status = 'bounced'"));
   assert.ok(mainSource.includes('bounceReconciliation'));
   assert.ok(mainSource.includes("'submitted_confirmed', 'bounced', 'send_unconfirmed'"));
+  const companyStatusesStart = mainSource.indexOf('const COMPANY_HISTORY_BLOCKING_STATUSES');
+  const companyStatusesEnd = mainSource.indexOf(']);', companyStatusesStart) + 3;
+  assert.match(mainSource.slice(companyStatusesStart, companyStatusesEnd), /bounced/);
+  assert.ok(mainSource.includes("if (result.status === 'bounced') return true"));
 });
 
 test('Alibaba recipient fallback clears stale text and commits the exact address physically', () => {
@@ -1661,6 +1665,7 @@ test('queue touch truth excludes likes, follows, and unreachable website attempt
     const block = dailyRunnerSource.slice(start, end);
     assert.match(block, /sent_confirmed/);
     assert.match(block, /submitted_confirmed/);
+    assert.match(block, /bounced/);
     assert.doesNotMatch(block, /post_liked|account_followed|website_contact_unreachable_skip/);
   }
 });

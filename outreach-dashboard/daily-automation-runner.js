@@ -56,16 +56,19 @@ const TOUCH_STATUSES = new Set([
   'sent_confirmed',
   'submitted_confirmed',
   'send_unconfirmed',
+  'bounced',
 ]);
 const SAME_DAY_DEVELOPMENT_STATUSES = new Set([
   'sent_confirmed',
   'submitted_confirmed',
   'send_unconfirmed',
+  'bounced',
 ]);
 const HISTORICAL_DEVELOPMENT_STATUSES = new Set([
   'sent_confirmed',
   'submitted_confirmed',
   'send_unconfirmed',
+  'bounced',
 ]);
 const WEBSITE_CONTACT_VERIFIED_EVIDENCE = 'contact_entry_verified';
 const PROTECTED_AGENCY_MARKETS = new Map([

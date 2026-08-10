@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-10T10:06:39.369Z",
+  "generatedAt": "2026-08-10T10:10:36.463Z",
   "companies": [
     {
       "companyId": "company_819cc04fe9060117",
@@ -2030,86 +2030,6 @@
       ]
     },
     {
-      "companyId": "company_1cc77c8b0e7c4294",
-      "company": "Taunton Leisure",
-      "keys": [
-        "tauntonleisure",
-        "tauntonleisurecom",
-        "manualtauntonleisureemail20260805"
-      ],
-      "domains": [
-        "tauntonleisure.com"
-      ],
-      "channels": [
-        "website_form",
-        "email"
-      ],
-      "evidence": [
-        {
-          "channel": "website_form",
-          "score": 0,
-          "verified": false,
-          "reasons": [
-            "unverified_external_evidence_rejected"
-          ],
-          "evidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
-          "checkedAt": ""
-        },
-        {
-          "channel": "website_form",
-          "score": 0,
-          "verified": false,
-          "reasons": [
-            "unverified_external_evidence_rejected"
-          ],
-          "evidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
-          "checkedAt": ""
-        },
-        {
-          "channel": "website_form",
-          "score": 0,
-          "verified": false,
-          "reasons": [
-            "unverified_external_evidence_rejected"
-          ],
-          "evidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
-          "checkedAt": ""
-        }
-      ],
-      "history": [
-        {
-          "status": "website_contact_unreachable_skip",
-          "timestamp": "2026-07-14T03:10:32.497Z",
-          "channel": "website_form",
-          "evidence": "website_contact_cdp_unavailable_open_only_not_verified;website_contact_all_targets_failed:1"
-        },
-        {
-          "status": "website_contact_unreachable_skip",
-          "timestamp": "2026-07-21T03:34:08.148Z",
-          "channel": "website_form",
-          "evidence": "website_contact_entry_not_verified;contact_entry_clicked:Contact Us;website_contact_all_targets_failed:6;contact_path_strategy_v2"
-        },
-        {
-          "status": "website_contact_unreachable_skip",
-          "timestamp": "2026-07-22T01:14:45.289Z",
-          "channel": "website_form",
-          "evidence": "unavailable_profile_page: Sale\nClothing\nCamping\nFootwear\nRucksacks\nEquipment\nBrands\nHelp\nSummer Sale - Now On\nFree UK Delivery Over £50 Rewards Our Stores\n❮\nSummer Sale - Now On View Collection\n❯\nTo improve;website_contact_all_targets_failed:6;contact_path_strategy_v2"
-        },
-        {
-          "status": "website_contact_unreachable_skip",
-          "timestamp": "2026-07-27T02:10:34.940Z",
-          "channel": "website_form",
-          "evidence": "unavailable_profile_page: Sale\nClothing\nCamping\nFootwear\nRucksacks\nEquipment\nBrands\nHelp\nSave up to 47% in our Summer Sale\nFree UK Delivery Over £50 Rewards Our Stores\n❮\nSummer Sale - Now On View Collection;website_contact_all_targets_failed:6;contact_path_strategy_v2"
-        },
-        {
-          "status": "bounced",
-          "timestamp": "2026-08-05T13:06:00.000Z",
-          "channel": "email",
-          "evidence": "official_buyer_contact:https://help.tauntonleisure.com/support/solutions/articles/36000299324-how-do-i-contact-one-of-your-buyers-;sent_folder_exact_subject_and_company_body_visible:2026-08-05T21:06+08:00;postmaster_delivery_failure_visible:2026-08-05T21:12+08:00;delivery_failed_do_not_count_or_retry"
-        }
-      ]
-    },
-    {
       "companyId": "company_8d4303a619379cef",
       "company": "Rock/Creek",
       "keys": [
@@ -2176,7 +2096,7 @@
             "official_business_route"
           ],
           "evidenceUrl": "https://www.nwogco.com/",
-          "checkedAt": "2026-08-10T09:05:58.648Z"
+          "checkedAt": "2026-08-10T10:06:33.211Z"
         },
         {
           "channel": "website_form",
@@ -3471,96 +3391,6 @@
           "timestamp": "2026-07-29T02:49:59.924Z",
           "channel": "website_form",
           "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:6;contact_path_strategy_v2"
-        }
-      ]
-    },
-    {
-      "companyId": "company_f23b24e3bb12c3a2",
-      "company": "Arizona Hiking Shack",
-      "keys": [
-        "arizonahikingshack",
-        "hikingshackcom",
-        "arizonahikingshackemail20260810"
-      ],
-      "domains": [
-        "hikingshack.com"
-      ],
-      "channels": [
-        "website_form",
-        "email"
-      ],
-      "evidence": [
-        {
-          "channel": "website_form",
-          "score": 0,
-          "verified": false,
-          "reasons": [
-            "unverified_external_evidence_rejected"
-          ],
-          "evidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
-          "checkedAt": ""
-        },
-        {
-          "channel": "website_form",
-          "score": 0,
-          "verified": false,
-          "reasons": [
-            "unverified_external_evidence_rejected"
-          ],
-          "evidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
-          "checkedAt": ""
-        },
-        {
-          "channel": "website_form",
-          "score": 0,
-          "verified": false,
-          "reasons": [
-            "unverified_external_evidence_rejected"
-          ],
-          "evidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
-          "checkedAt": ""
-        },
-        {
-          "channel": "email",
-          "score": 0,
-          "verified": false,
-          "reasons": [
-            "unverified_external_evidence_rejected"
-          ],
-          "evidenceUrl": "https://hikingshack.com/event/map-compass-navigation/",
-          "checkedAt": ""
-        }
-      ],
-      "history": [
-        {
-          "status": "website_contact_unreachable_skip",
-          "timestamp": "2026-07-14T03:12:02.852Z",
-          "channel": "website_form",
-          "evidence": "website_contact_cdp_unavailable_open_only_not_verified;website_contact_all_targets_failed:1"
-        },
-        {
-          "status": "website_contact_unreachable_skip",
-          "timestamp": "2026-07-21T03:40:28.433Z",
-          "channel": "website_form",
-          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:6;contact_path_strategy_v2"
-        },
-        {
-          "status": "website_contact_unreachable_skip",
-          "timestamp": "2026-07-27T11:35:10.858Z",
-          "channel": "website_form",
-          "evidence": "website_contact_entry_not_verified;no_contact_route_detected;website_contact_all_targets_failed:6;contact_path_strategy_v2"
-        },
-        {
-          "status": "website_contact_unreachable_skip",
-          "timestamp": "2026-07-29T02:52:08.434Z",
-          "channel": "website_form",
-          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:6;contact_path_strategy_v2"
-        },
-        {
-          "status": "bounced",
-          "timestamp": "2026-08-10T09:39:00.000Z",
-          "channel": "email",
-          "evidence": "send_clicked_once_and_alibaba_sent_confirmation_visible;inbox_DSN_address_not_found_for_info_at_hikingshack_com;removed_from_confirmed_count;automatic_resend_locked"
         }
       ]
     },
@@ -5061,7 +4891,7 @@
           "reasons": [
             "first_party_evidence"
           ],
-          "evidenceUrl": "https://komsa.com/en/contact/",
+          "evidenceUrl": "https://komsa.com/en/contact",
           "checkedAt": ""
         },
         {
@@ -5071,7 +4901,7 @@
           "reasons": [
             "unverified_external_evidence_rejected"
           ],
-          "evidenceUrl": "https://komsa.com/en/contact/",
+          "evidenceUrl": "https://komsa.com/en/contact",
           "checkedAt": ""
         }
       ],
@@ -5192,7 +5022,7 @@
           "reasons": [
             "official_business_route"
           ],
-          "evidenceUrl": "https://support.aqipa.com/en-US/kb/articles/anfrage-partner-werden",
+          "evidenceUrl": "https://support.aqipa.com/en-US/new-ticket",
           "checkedAt": ""
         },
         {
@@ -5202,7 +5032,7 @@
           "reasons": [
             "unverified_external_evidence_rejected"
           ],
-          "evidenceUrl": "https://support.aqipa.com/en-US/kb/articles/anfrage-partner-werden",
+          "evidenceUrl": "https://support.aqipa.com/en-US/new-ticket",
           "checkedAt": ""
         }
       ],
@@ -5245,7 +5075,7 @@
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://www.cmsdistribution.com/contact-us",
-          "checkedAt": "2026-08-10T09:14:51.959Z"
+          "checkedAt": "2026-08-10T10:10:20.087Z"
         },
         {
           "channel": "website_form",
@@ -5356,7 +5186,7 @@
             "official_business_route"
           ],
           "evidenceUrl": "https://help.cabelas.com/company-information-ff566349/how-can-i-sell-my-product-through-cabelas-cf904a21",
-          "checkedAt": "2026-08-10T09:14:55.994Z"
+          "checkedAt": "2026-08-10T10:10:24.115Z"
         },
         {
           "channel": "facebook",
@@ -5366,7 +5196,7 @@
             "official_business_route"
           ],
           "evidenceUrl": "https://help.cabelas.com/company-information-ff566349/how-can-i-sell-my-product-through-cabelas-cf904a21",
-          "checkedAt": "2026-08-10T09:14:55.994Z"
+          "checkedAt": "2026-08-10T10:10:24.115Z"
         },
         {
           "channel": "website_form",
@@ -5375,7 +5205,7 @@
           "reasons": [
             "official_business_route"
           ],
-          "evidenceUrl": "https://www.cabelas.com/",
+          "evidenceUrl": "https://help.cabelas.com/company-information-ff566349/how-can-i-sell-my-product-through-cabelas-cf904a21",
           "checkedAt": ""
         },
         {
@@ -5726,7 +5556,7 @@
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://www.gooutdoors.co.uk/pages/contact",
-          "checkedAt": "2026-08-10T09:14:58.104Z"
+          "checkedAt": "2026-08-10T10:10:26.219Z"
         },
         {
           "channel": "facebook",
@@ -5736,7 +5566,7 @@
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://www.gooutdoors.co.uk/pages/contact",
-          "checkedAt": "2026-08-10T09:14:58.104Z"
+          "checkedAt": "2026-08-10T10:10:26.219Z"
         },
         {
           "channel": "website_form",
@@ -5745,7 +5575,7 @@
           "reasons": [
             "first_party_evidence"
           ],
-          "evidenceUrl": "https://www.gooutdoors.co.uk/",
+          "evidenceUrl": "https://www.gooutdoors.co.uk/pages/contact",
           "checkedAt": ""
         }
       ],
@@ -6145,7 +5975,7 @@
           "reasons": [
             "official_business_route"
           ],
-          "evidenceUrl": "https://www.sail.ca/",
+          "evidenceUrl": "https://www.sail.ca/en/contact-us",
           "checkedAt": ""
         }
       ],
@@ -6273,7 +6103,7 @@
             "official_business_route"
           ],
           "evidenceUrl": "https://www.cotswoldoutdoor.com/",
-          "checkedAt": "2026-08-10T09:15:05.681Z"
+          "checkedAt": "2026-08-10T10:10:31.819Z"
         },
         {
           "channel": "facebook",
@@ -6283,7 +6113,7 @@
             "official_business_route"
           ],
           "evidenceUrl": "https://www.cotswoldoutdoor.com/",
-          "checkedAt": "2026-08-10T09:15:05.681Z"
+          "checkedAt": "2026-08-10T10:10:31.819Z"
         },
         {
           "channel": "website_form",
@@ -6469,16 +6299,16 @@
             "official_business_route"
           ],
           "evidenceUrl": "https://www.campsaver.com/",
-          "checkedAt": "2026-08-10T09:15:07.446Z"
+          "checkedAt": "2026-08-10T10:10:34.339Z"
         },
         {
           "channel": "website_form",
-          "score": 0,
-          "verified": false,
+          "score": 100,
+          "verified": true,
           "reasons": [
-            "unverified_external_evidence_rejected"
+            "official_business_route"
           ],
-          "evidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
+          "evidenceUrl": "https://www.campsaver.com/",
           "checkedAt": ""
         }
       ],
@@ -8243,6 +8073,66 @@
       ]
     },
     {
+      "companyId": "company_1cc77c8b0e7c4294",
+      "company": "Taunton Leisure",
+      "keys": [
+        "tauntonleisure",
+        "tauntonleisurecom",
+        "manualtauntonleisureemail20260805"
+      ],
+      "domains": [
+        "tauntonleisure.com"
+      ],
+      "channels": [
+        "website_form",
+        "email"
+      ],
+      "evidence": [
+        {
+          "channel": "website_form",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
+          "checkedAt": ""
+        }
+      ],
+      "history": [
+        {
+          "status": "website_contact_unreachable_skip",
+          "timestamp": "2026-07-14T03:10:32.497Z",
+          "channel": "website_form",
+          "evidence": "website_contact_cdp_unavailable_open_only_not_verified;website_contact_all_targets_failed:1"
+        },
+        {
+          "status": "website_contact_unreachable_skip",
+          "timestamp": "2026-07-21T03:34:08.148Z",
+          "channel": "website_form",
+          "evidence": "website_contact_entry_not_verified;contact_entry_clicked:Contact Us;website_contact_all_targets_failed:6;contact_path_strategy_v2"
+        },
+        {
+          "status": "website_contact_unreachable_skip",
+          "timestamp": "2026-07-22T01:14:45.289Z",
+          "channel": "website_form",
+          "evidence": "unavailable_profile_page: Sale\nClothing\nCamping\nFootwear\nRucksacks\nEquipment\nBrands\nHelp\nSummer Sale - Now On\nFree UK Delivery Over £50 Rewards Our Stores\n❮\nSummer Sale - Now On View Collection\n❯\nTo improve;website_contact_all_targets_failed:6;contact_path_strategy_v2"
+        },
+        {
+          "status": "website_contact_unreachable_skip",
+          "timestamp": "2026-07-27T02:10:34.940Z",
+          "channel": "website_form",
+          "evidence": "unavailable_profile_page: Sale\nClothing\nCamping\nFootwear\nRucksacks\nEquipment\nBrands\nHelp\nSave up to 47% in our Summer Sale\nFree UK Delivery Over £50 Rewards Our Stores\n❮\nSummer Sale - Now On View Collection;website_contact_all_targets_failed:6;contact_path_strategy_v2"
+        },
+        {
+          "status": "bounced",
+          "timestamp": "2026-08-05T13:06:00.000Z",
+          "channel": "email",
+          "evidence": "official_buyer_contact:https://help.tauntonleisure.com/support/solutions/articles/36000299324-how-do-i-contact-one-of-your-buyers-;sent_folder_exact_subject_and_company_body_visible:2026-08-05T21:06+08:00;postmaster_delivery_failure_visible:2026-08-05T21:12+08:00;delivery_failed_do_not_count_or_retry"
+        }
+      ]
+    },
+    {
       "companyId": "company_fde54b76a9d4837b",
       "company": "Spejder Sport",
       "keys": [
@@ -8704,10 +8594,16 @@
           "evidence": "official_rewards_page_publishes_support_at_kencooutfitters_com;exact_recipient_sender_subject_body_gate_passed;send_clicked_once;alibaba_sent_confirmation_visible;composer_closed;mail_delivery_subsystem_DSN_at_18_00_states_address_not_found_for_Support_at_kencooutfitters_com"
         },
         {
-          "status": "sent_confirmed",
+          "status": "bounced",
           "timestamp": "2026-08-10T10:06:16.832Z",
           "channel": "email",
-          "evidence": "smtp_accepted;message_id:<ad3d95c8-1634-e897-9f31-2935944634ab@flextailgear.com>;sent_folder_message_confirmed;contact_path_strategy_v2"
+          "evidence": "smtp_accepted;message_id:<ad3d95c8-1634-e897-9f31-2935944634ab@flextailgear.com>;sent_folder_message_confirmed;contact_path_strategy_v2;invalidated_by_prior_exact_recipient_DSN_address_not_found;duplicate_after_bounce_lock_defect"
+        },
+        {
+          "status": "bounced",
+          "timestamp": "2026-08-10T10:07:01.562Z",
+          "channel": "website_form",
+          "evidence": "smtp_accepted;message_id:<ad3d95c8-1634-e897-9f31-2935944634ab@flextailgear.com>;sent_folder_message_confirmed;contact_path_strategy_v2;invalidated_by_prior_exact_recipient_DSN_address_not_found;duplicate_after_bounce_lock_defect"
         }
       ]
     },
@@ -9267,6 +9163,76 @@
           "timestamp": "2026-08-10T09:29:00.000Z",
           "channel": "website_form",
           "evidence": "official_contact_page_mailto_bentgate_at_bentgate_com_verified_in_live_independent_chrome;sender_recipient_subject_body_gate_passed;send_clicked_once;alibaba_sent_confirmation_visible;composer_closed"
+        }
+      ]
+    },
+    {
+      "companyId": "company_f23b24e3bb12c3a2",
+      "company": "Arizona Hiking Shack",
+      "keys": [
+        "arizonahikingshack",
+        "hikingshackcom",
+        "arizonahikingshackemail20260810"
+      ],
+      "domains": [
+        "hikingshack.com"
+      ],
+      "channels": [
+        "website_form",
+        "email"
+      ],
+      "evidence": [
+        {
+          "channel": "website_form",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
+          "checkedAt": ""
+        },
+        {
+          "channel": "email",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "https://hikingshack.com/event/map-compass-navigation/",
+          "checkedAt": ""
+        }
+      ],
+      "history": [
+        {
+          "status": "website_contact_unreachable_skip",
+          "timestamp": "2026-07-14T03:12:02.852Z",
+          "channel": "website_form",
+          "evidence": "website_contact_cdp_unavailable_open_only_not_verified;website_contact_all_targets_failed:1"
+        },
+        {
+          "status": "website_contact_unreachable_skip",
+          "timestamp": "2026-07-21T03:40:28.433Z",
+          "channel": "website_form",
+          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:6;contact_path_strategy_v2"
+        },
+        {
+          "status": "website_contact_unreachable_skip",
+          "timestamp": "2026-07-27T11:35:10.858Z",
+          "channel": "website_form",
+          "evidence": "website_contact_entry_not_verified;no_contact_route_detected;website_contact_all_targets_failed:6;contact_path_strategy_v2"
+        },
+        {
+          "status": "website_contact_unreachable_skip",
+          "timestamp": "2026-07-29T02:52:08.434Z",
+          "channel": "website_form",
+          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:6;contact_path_strategy_v2"
+        },
+        {
+          "status": "bounced",
+          "timestamp": "2026-08-10T09:39:00.000Z",
+          "channel": "email",
+          "evidence": "send_clicked_once_and_alibaba_sent_confirmation_visible;inbox_DSN_address_not_found_for_info_at_hikingshack_com;removed_from_confirmed_count;automatic_resend_locked"
         }
       ]
     },
@@ -12767,23 +12733,23 @@
           "checkedAt": "2026-08-10T10:06:18.792Z"
         },
         {
-          "channel": "website_form",
-          "score": 80,
-          "verified": false,
-          "reasons": [
-            "first_party_evidence"
-          ],
-          "evidenceUrl": "https://www.tradeinn.com/trekkinn/en",
-          "checkedAt": ""
-        },
-        {
           "channel": "instagram",
           "score": 0,
           "verified": false,
           "reasons": [
             "unverified_external_evidence_rejected"
           ],
-          "evidenceUrl": "https://www.tradeinn.com/trekkinn/en",
+          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
+          "checkedAt": ""
+        },
+        {
+          "channel": "website_form",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
           "checkedAt": ""
         }
       ],
@@ -12899,7 +12865,7 @@
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://8a.pl/",
-          "checkedAt": "2026-08-10T09:05:44.683Z"
+          "checkedAt": "2026-08-10T10:06:20.028Z"
         },
         {
           "channel": "facebook",
@@ -12909,7 +12875,7 @@
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://8a.pl/",
-          "checkedAt": "2026-08-10T09:05:44.683Z"
+          "checkedAt": "2026-08-10T10:06:20.028Z"
         },
         {
           "channel": "website_form",
@@ -12919,7 +12885,7 @@
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://8a.pl/",
-          "checkedAt": "2026-08-10T09:05:44.683Z"
+          "checkedAt": "2026-08-10T10:06:20.028Z"
         }
       ],
       "history": [
@@ -13271,12 +13237,12 @@
       "evidence": [
         {
           "channel": "website_form",
-          "score": 100,
-          "verified": true,
+          "score": 0,
+          "verified": false,
           "reasons": [
-            "official_business_route"
+            "unverified_external_evidence_rejected"
           ],
-          "evidenceUrl": "https://durangooutdoorexchange.com/",
+          "evidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
           "checkedAt": ""
         }
       ],
@@ -13371,7 +13337,7 @@
           "reasons": [
             "official_business_route"
           ],
-          "evidenceUrl": "https://www.campervangift.co.uk/",
+          "evidenceUrl": "https://www.campervangift.co.uk/become-a-supplier/",
           "checkedAt": ""
         },
         {
@@ -13479,7 +13445,7 @@
             "official_business_route"
           ],
           "evidenceUrl": "https://gecko-overland.com/contact/",
-          "checkedAt": "2026-08-10T09:05:57.267Z"
+          "checkedAt": "2026-08-10T10:06:28.961Z"
         }
       ],
       "history": [
@@ -13617,7 +13583,7 @@
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://www.basecamp-outfitters.com/",
-          "checkedAt": "2026-08-10T09:06:00.285Z"
+          "checkedAt": "2026-08-10T10:06:32.992Z"
         }
       ],
       "history": [
@@ -14943,16 +14909,6 @@
       "evidence": "official_customer_support_page_publishes_info_at_neptunemountaineering_com;sender_recipient_subject_body_gate_passed;send_clicked_once;alibaba_sent_confirmation_visible;composer_closed;immediate_bounce_scan_clear"
     },
     {
-      "companyId": "company_2fc061d03b30577c",
-      "company": "Kenco Outfitters",
-      "permanent": true,
-      "crossChannel": true,
-      "reason": "previous_customer_development_no_repeat",
-      "sourceStatus": "sent_confirmed",
-      "sourceTimestamp": "2026-08-10T10:06:16.832Z",
-      "evidence": "smtp_accepted;message_id:<ad3d95c8-1634-e897-9f31-2935944634ab@flextailgear.com>;sent_folder_message_confirmed;contact_path_strategy_v2"
-    },
-    {
       "companyId": "company_1c57e390a7717b0e",
       "company": "The Trail Head",
       "permanent": true,
@@ -15921,7 +15877,7 @@
       },
       {
         "channel": "email",
-        "confirmed": 40,
+        "confirmed": 39,
         "replies": 0,
         "opportunities": 0,
         "replyRate": 0,
@@ -15972,7 +15928,7 @@
       {
         "dimension": "channel",
         "variant": "email",
-        "sampleSize": 40,
+        "sampleSize": 39,
         "observedReplyRate": 0,
         "recommendation": "use_as_bounded_allocation_signal"
       },
@@ -15986,11 +15942,11 @@
     ]
   },
   "ownerSummary": {
-    "generatedAt": "2026-08-10T10:06:39.369Z",
+    "generatedAt": "2026-08-10T10:10:36.463Z",
     "phase": "autonomous_sales_operating_system_v1",
     "kpis": {
       "companies": 199,
-      "permanentlySuppressed": 141,
+      "permanentlySuppressed": 140,
       "plannedActions": 7,
       "verifiedEvidenceRoutes": 120
     },
@@ -16112,7 +16068,7 @@
         },
         {
           "channel": "email",
-          "confirmed": 40,
+          "confirmed": 39,
           "replies": 0,
           "opportunities": 0,
           "replyRate": 0,
@@ -16163,7 +16119,7 @@
         {
           "dimension": "channel",
           "variant": "email",
-          "sampleSize": 40,
+          "sampleSize": 39,
           "observedReplyRate": 0,
           "recommendation": "use_as_bounded_allocation_signal"
         },

@@ -290,6 +290,7 @@ const COMPANY_HISTORY_BLOCKING_STATUSES = new Set([
   'sent_confirmed',
   'submitted_confirmed',
   'send_unconfirmed',
+  'bounced',
 ]);
 const DAILY_CONFIRMED_COMPANY_TARGET = 100;
 const DEFAULT_DAILY_SOCIAL_EXECUTION_LIMIT = 25;
@@ -299,6 +300,7 @@ const MIN_CUSTOMER_EXECUTION_TIMEOUT_MS = 30000;
 const MAX_CUSTOMER_EXECUTION_TIMEOUT_MS = 180000;
 
 function historicalAutomationResultBlocksCompany(result = {}) {
+  if (result.status === 'bounced') return true;
   if (COMPANY_HISTORY_BLOCKING_STATUSES.has(result.status)) {
     return sendStatusHasCustomerInteraction(result.status, result.evidence);
   }
@@ -345,8 +347,8 @@ function blockingAutomationResultFor(item) {
   const exactKeys = automationExactKeys(item);
   const companyKeys = automationCompanyKeys(item);
   const itemPlatform = automationPlatformFor(item);
-  const blocking = new Set(['sent_confirmed', 'failed_open', 'send_unconfirmed', 'website_contact_ready', 'website_contact_unreachable_skip']);
-  const companyBlocking = new Set(['sent_confirmed', 'send_unconfirmed']);
+  const blocking = new Set(['sent_confirmed', 'bounced', 'failed_open', 'send_unconfirmed', 'website_contact_ready', 'website_contact_unreachable_skip']);
+  const companyBlocking = new Set(['sent_confirmed', 'bounced', 'send_unconfirmed']);
   if (isWebsiteContactQueueItem(item) && !verifiedBusinessEmailTarget(item).ok) {
     const cutoff = Date.now() - 30 * 24 * 60 * 60 * 1000;
     const verifiedSupplierRoute = /^official_supplier_(?:form|route)_verified$/.test(String(item.externalVerificationStatus || ''));

@@ -13,17 +13,17 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
   "customerMessageSent": false,
   "realDevelopmentCount": 0,
   "reportingVerdict": "no_customer_development_performed",
-  "userVisibleStatus": "Customer development was not performed. Blockers: homepage_only_contact_path_requires_verification (16); verified_executable_channel_missing (16); website_contact_capability_not_verified (16).",
-  "recoveryHint": "Refill the high-ICP pool with 48 verified leads or unblock existing website/social leads before the next run. Verify the recipient as an official public business email before enabling email outreach. Confirm the official social profile and safe message entry before rerunning Google-discovered social outreach.",
+  "userVisibleStatus": "Customer development was not performed. Blockers: verified_executable_channel_missing (16); homepage_only_contact_path_requires_verification (15); website_contact_capability_not_verified (15).",
+  "recoveryHint": "Refill the high-ICP pool with 50 verified leads or unblock existing website/social leads before the next run. Verify the recipient as an official public business email before enabling email outreach. Confirm the official social profile and safe message entry before rerunning Google-discovered social outreach.",
   "recoveryActions": [
     {
       "reason": "daily_queue_goal_not_reached",
       "action": "Refill high-ICP customer pool",
-      "description": "Add or unblock 48 verified high-ICP leads to reach the daily 100 target.",
-      "hint": "Refill the high-ICP pool with 48 verified leads or unblock existing website/social leads before the next run.",
+      "description": "Add or unblock 50 verified high-ICP leads to reach the daily 100 target.",
+      "hint": "Refill the high-ICP pool with 50 verified leads or unblock existing website/social leads before the next run.",
       "target": 100,
-      "potentialPool": 52,
-      "refillNeeded": 48
+      "potentialPool": 50,
+      "refillNeeded": 50
     },
     {
       "reason": "email_target_verification_required",
@@ -86,13 +86,6 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "action": "verify_target",
       "platform": "website_form",
       "reason": "homepage_only_contact_path_requires_verification"
-    },
-    {
-      "id": "google-customer-taunton-leisure-website-contact",
-      "company": "Taunton Leisure",
-      "action": "develop",
-      "platform": "website_form",
-      "reason": "official_website_contact_channel"
     },
     {
       "id": "google-customer-above-and-beyond-website-contact",
@@ -300,13 +293,6 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     {
       "id": "google-customer-latulippe-website-contact",
       "company": "Latulippe",
-      "action": "verify_target",
-      "platform": "website_form",
-      "reason": "homepage_only_contact_path_requires_verification"
-    },
-    {
-      "id": "google-customer-arizona-hiking-shack-website-contact",
-      "company": "Arizona Hiking Shack",
       "action": "verify_target",
       "platform": "website_form",
       "reason": "homepage_only_contact_path_requires_verification"
@@ -592,13 +578,6 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "reason": "website_contact_capability_not_verified"
     },
     {
-      "id": "google-customer-arizona-hiking-shack-website-contact",
-      "company": "Arizona Hiking Shack",
-      "action": "verify_target",
-      "platform": "website_form",
-      "reason": "website_contact_capability_not_verified"
-    },
-    {
       "id": "google-customer-the-great-outdoor-shop-website-contact",
       "company": "The Great Outdoor Shop",
       "action": "verify_target",
@@ -608,24 +587,24 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
   ],
   "blockerSummary": [
     {
-      "reason": "homepage_only_contact_path_requires_verification",
-      "status": "skipped",
-      "count": 16
-    },
-    {
       "reason": "verified_executable_channel_missing",
       "status": "skipped",
       "count": 16
     },
     {
+      "reason": "homepage_only_contact_path_requires_verification",
+      "status": "skipped",
+      "count": 15
+    },
+    {
       "reason": "website_contact_capability_not_verified",
       "status": "skipped",
-      "count": 16
+      "count": 15
     },
     {
       "reason": "official_website_contact_channel",
       "status": "skipped",
-      "count": 14
+      "count": 13
     },
     {
       "reason": "social_profile_not_first_party_verified",
@@ -649,10 +628,10 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     }
   ],
   "blockerCounts": {
-    "homepage_only_contact_path_requires_verification": 16,
     "verified_executable_channel_missing": 16,
-    "website_contact_capability_not_verified": 16,
-    "official_website_contact_channel": 14,
+    "homepage_only_contact_path_requires_verification": 15,
+    "website_contact_capability_not_verified": 15,
+    "official_website_contact_channel": 13,
     "social_profile_not_first_party_verified": 13,
     "public_business_email_requires_verification": 3,
     "concrete_google_discovered_major_customer_facebook": 1,
@@ -660,10 +639,10 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
   },
   "queueGoalStatus": {
     "target": 100,
-    "potentialPool": 52,
-    "queueCount": 64,
-    "googleDiscovered": 45,
-    "refillNeeded": 48,
+    "potentialPool": 50,
+    "queueCount": 62,
+    "googleDiscovered": 43,
+    "refillNeeded": 50,
     "reached": false,
     "action": "Add more verified high-ICP sources or unblock existing website/social leads."
   },
@@ -748,22 +727,6 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
         "ready": true,
         "gate": "official_supplier_route",
         "evidenceUrl": "https://www.obelink.nl/obelink-partnerprogramma/"
-      },
-      "hasTarget": true,
-      "inCandidatePool": false,
-      "sameDayCompanyBlocked": false,
-      "blockingStatus": "website_failure_circuit_open",
-      "blockingEvidence": "website_failure_circuit_open;failed_days:3;window_days:30"
-    },
-    {
-      "id": "google-customer-taunton-leisure-website-contact",
-      "company": "Taunton Leisure",
-      "action": "develop",
-      "platform": "website_form",
-      "readiness": {
-        "ready": true,
-        "gate": "official_supplier_route",
-        "evidenceUrl": "https://www.tauntonleisure.com/"
       },
       "hasTarget": true,
       "inCandidatePool": false,
@@ -935,25 +898,25 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
   "summary": {
     "totalLeads": 16,
     "highIcp": 16,
-    "readyToDevelop": 17,
-    "dueNow": 64,
-    "visibleTodayQueue": 25,
-    "potentialPool": 52,
+    "readyToDevelop": 16,
+    "dueNow": 62,
+    "visibleTodayQueue": 24,
+    "potentialPool": 50,
     "potentialPoolTarget": 100,
     "customerTableHighIcp": 19,
-    "refillNeeded": 48,
-    "executableCompanies": 16,
+    "refillNeeded": 50,
+    "executableCompanies": 15,
     "executableReserveTarget": 130,
-    "executableReserveNeeded": 114,
+    "executableReserveNeeded": 115,
     "executableByChannel": {
       "facebook": 1,
-      "website_form": 15
+      "website_form": 14
     },
     "verifiedSocialCompanies": 1,
     "verifiedSocialReserveTarget": 20,
     "verifiedSocialReserveNeeded": 19,
-    "enrichmentBacklogCount": 36,
-    "googleDiscovered": 45,
+    "enrichmentBacklogCount": 35,
+    "googleDiscovered": 43,
     "facebookDiscovered": 8,
     "websiteContactDiscovered": 0,
     "scheduledLater": 0,
@@ -970,5 +933,5 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     "scanned": 0,
     "updated": 0
   },
-  "completedAt": "2026-08-10T10:07:08.076Z"
+  "completedAt": "2026-08-10T10:11:02.309Z"
 };
