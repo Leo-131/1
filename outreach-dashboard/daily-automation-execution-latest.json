@@ -45,102 +45,18 @@
       "reason": "official_website_contact_channel"
     },
     {
-      "id": "google-customer-obelink-website-contact",
-      "company": "Obelink",
-      "action": "email_priority",
-      "platform": "website_form",
-      "reason": "official_website_contact_channel"
-    },
-    {
-      "id": "google-customer-rock-creek-website-contact",
-      "company": "Rock/Creek",
-      "action": "email_priority",
-      "platform": "website_form",
-      "reason": "official_public_business_email_verified"
-    },
-    {
-      "id": "google-customer-next-adventure-website-contact",
-      "company": "Next Adventure",
-      "action": "develop",
-      "platform": "website_form",
-      "reason": "official_website_contact_channel"
-    },
-    {
-      "id": "google-customer-bbq-fans-website-contact",
-      "company": "BBQ Fans",
-      "action": "email_priority",
-      "platform": "website_form",
-      "reason": "official_website_contact_channel"
-    },
-    {
-      "id": "google-customer-tractor-supply-company-website-contact",
-      "company": "Tractor Supply Company",
-      "action": "email_priority",
-      "platform": "website_form",
-      "reason": "official_website_contact_channel"
-    },
-    {
-      "id": "google-customer-rona-website-contact",
-      "company": "RONA",
-      "action": "develop",
-      "platform": "website_form",
-      "reason": "official_website_contact_channel"
-    },
-    {
-      "id": "google-customer-bivouac-outdoor-website-contact",
-      "company": "Bivouac Outdoor",
-      "action": "email_priority",
-      "platform": "website_form",
-      "reason": "official_website_contact_channel"
-    },
-    {
-      "id": "google-customer-wildfire-sports-website-contact",
-      "company": "Wildfire Sports",
-      "action": "email_priority",
-      "platform": "website_form",
-      "reason": "official_website_contact_channel"
-    },
-    {
-      "id": "google-customer-outdoor-nature-website-contact",
-      "company": "Outdoor Nature",
-      "action": "email_priority",
-      "platform": "website_form",
-      "reason": "official_website_contact_channel"
-    },
-    {
-      "id": "google-customer-intersport-norway-facebook",
-      "company": "Intersport Norway",
-      "action": "develop",
-      "platform": "facebook",
-      "reason": "concrete_google_discovered_major_customer_facebook"
-    },
-    {
-      "id": "sheet_1779293110195_9myxa520z",
-      "company": "ARROW TIRE DISTRIBUTORS",
-      "action": "email_priority",
-      "platform": "email",
-      "reason": "public_business_email_requires_verification"
-    },
-    {
-      "id": "sheet_1779293110195_u24j2gdmq",
-      "company": "FAUNA OUTDOOR",
-      "action": "email_priority",
-      "platform": "email",
-      "reason": "public_business_email_requires_verification"
-    },
-    {
-      "id": "sheet_1779293110195_g0uwgglwc",
-      "company": "JOHN DOYLE DISTRIBUTORS",
-      "action": "email_priority",
-      "platform": "email",
-      "reason": "public_business_email_requires_verification"
-    },
-    {
       "id": "google-customer-bergfreunde-website-contact",
       "company": "Bergfreunde",
       "action": "verify_target",
       "platform": "website_form",
       "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
+      "id": "google-customer-obelink-website-contact",
+      "company": "Obelink",
+      "action": "email_priority",
+      "platform": "website_form",
+      "reason": "official_website_contact_channel"
     },
     {
       "id": "google-customer-au-vieux-campeur-website-contact",
@@ -152,13 +68,6 @@
     {
       "id": "google-customer-alpinetrek-website-contact",
       "company": "Alpinetrek",
-      "action": "verify_target",
-      "platform": "website_form",
-      "reason": "homepage_only_contact_path_requires_verification"
-    },
-    {
-      "id": "google-customer-de-wit-schijndel-website-contact",
-      "company": "De Wit Schijndel",
       "action": "verify_target",
       "platform": "website_form",
       "reason": "homepage_only_contact_path_requires_verification"
@@ -192,18 +101,32 @@
       "reason": "homepage_only_contact_path_requires_verification"
     },
     {
-      "id": "google-customer-outdoorxl-website-contact",
-      "company": "OutdoorXL",
-      "action": "verify_target",
+      "id": "google-customer-rock-creek-website-contact",
+      "company": "Rock/Creek",
+      "action": "email_priority",
       "platform": "website_form",
-      "reason": "homepage_only_contact_path_requires_verification"
+      "reason": "official_public_business_email_verified"
     },
     {
-      "id": "google-customer-outdoor-specialist-website-contact",
-      "company": "Outdoor Specialist",
-      "action": "verify_target",
+      "id": "google-customer-next-adventure-website-contact",
+      "company": "Next Adventure",
+      "action": "develop",
       "platform": "website_form",
-      "reason": "homepage_only_contact_path_requires_verification"
+      "reason": "official_website_contact_channel"
+    },
+    {
+      "id": "google-customer-bbq-fans-website-contact",
+      "company": "BBQ Fans",
+      "action": "email_priority",
+      "platform": "website_form",
+      "reason": "official_website_contact_channel"
+    },
+    {
+      "id": "google-customer-tractor-supply-company-website-contact",
+      "company": "Tractor Supply Company",
+      "action": "email_priority",
+      "platform": "website_form",
+      "reason": "official_website_contact_channel"
     },
     {
       "id": "google-customer-atmosphere-website-contact",
@@ -239,6 +162,41 @@
       "action": "verify_target",
       "platform": "website_form",
       "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
+      "id": "google-customer-rona-website-contact",
+      "company": "RONA",
+      "action": "develop",
+      "platform": "website_form",
+      "reason": "official_website_contact_channel"
+    },
+    {
+      "id": "google-customer-bivouac-outdoor-website-contact",
+      "company": "Bivouac Outdoor",
+      "action": "email_priority",
+      "platform": "website_form",
+      "reason": "official_website_contact_channel"
+    },
+    {
+      "id": "google-customer-wildfire-sports-website-contact",
+      "company": "Wildfire Sports",
+      "action": "email_priority",
+      "platform": "website_form",
+      "reason": "official_website_contact_channel"
+    },
+    {
+      "id": "google-customer-outdoor-nature-website-contact",
+      "company": "Outdoor Nature",
+      "action": "email_priority",
+      "platform": "website_form",
+      "reason": "official_website_contact_channel"
+    },
+    {
+      "id": "google-customer-intersport-norway-facebook",
+      "company": "Intersport Norway",
+      "action": "develop",
+      "platform": "facebook",
+      "reason": "concrete_google_discovered_major_customer_facebook"
     },
     {
       "id": "google-customer-above-and-beyond-facebook",
@@ -316,6 +274,48 @@
       "action": "develop",
       "platform": "instagram",
       "reason": "social_profile_not_first_party_verified"
+    },
+    {
+      "id": "sheet_1779293110195_9myxa520z",
+      "company": "ARROW TIRE DISTRIBUTORS",
+      "action": "email_priority",
+      "platform": "email",
+      "reason": "public_business_email_requires_verification"
+    },
+    {
+      "id": "sheet_1779293110195_u24j2gdmq",
+      "company": "FAUNA OUTDOOR",
+      "action": "email_priority",
+      "platform": "email",
+      "reason": "public_business_email_requires_verification"
+    },
+    {
+      "id": "sheet_1779293110195_g0uwgglwc",
+      "company": "JOHN DOYLE DISTRIBUTORS",
+      "action": "email_priority",
+      "platform": "email",
+      "reason": "public_business_email_requires_verification"
+    },
+    {
+      "id": "google-customer-de-wit-schijndel-website-contact",
+      "company": "De Wit Schijndel",
+      "action": "verify_target",
+      "platform": "website_form",
+      "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
+      "id": "google-customer-outdoorxl-website-contact",
+      "company": "OutdoorXL",
+      "action": "verify_target",
+      "platform": "website_form",
+      "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
+      "id": "google-customer-outdoor-specialist-website-contact",
+      "company": "Outdoor Specialist",
+      "action": "verify_target",
+      "platform": "website_form",
+      "reason": "homepage_only_contact_path_requires_verification"
     },
     {
       "id": 23,
@@ -561,5 +561,5 @@
     "scanned": 0,
     "updated": 0
   },
-  "completedAt": "2026-08-10T11:53:25.657Z"
+  "completedAt": "2026-08-10T13:06:06.423Z"
 }
