@@ -1,7 +1,7 @@
 {
-  "updatedAt": "2026-08-10T09:31:06.241Z",
-  "cursor": 77,
-  "companyCount": 142,
+  "updatedAt": "2026-08-10T09:52:18.885Z",
+  "cursor": 102,
+  "companyCount": 146,
   "verifications": {
     "facewest": {
       "firstPartyChannelVerification": {
@@ -2016,7 +2016,7 @@
     "arizona hiking shack": {
       "firstPartyChannelVerification": {
         "status": "unreachable",
-        "verifiedAt": "2026-08-10T09:31:04.055Z",
+        "verifiedAt": "2026-08-10T09:52:08.731Z",
         "evidenceUrl": "https://www.hikingshack.com/",
         "httpStatus": 403,
         "signals": [],
@@ -2031,7 +2031,7 @@
     "further faster": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-10T09:31:06.240Z",
+        "verifiedAt": "2026-08-10T09:52:09.383Z",
         "evidenceUrl": "https://www.furtherfaster.co.nz/",
         "httpStatus": 200,
         "signals": [
@@ -2050,8 +2050,8 @@
     "avidmax outfitters": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-10T04:05:22.580Z",
-        "evidenceUrl": "https://www.avidmax.com/",
+        "verifiedAt": "2026-08-10T09:52:10.709Z",
+        "evidenceUrl": "https://www.avidmax.com/contact-us/",
         "httpStatus": 200,
         "signals": [
           "form_control",
@@ -2061,14 +2061,14 @@
       },
       "contactCapabilityVerified": true,
       "externalVerificationStatus": "official_contact_form_verified",
-      "publicEmail": "",
-      "emailVerificationStatus": "",
+      "publicEmail": "customerservice@avidmax.com",
+      "emailVerificationStatus": "official_public_business_email",
       "socialProfiles": []
     },
     "gear west": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-10T04:05:23.073Z",
+        "verifiedAt": "2026-08-10T09:52:10.426Z",
         "evidenceUrl": "https://www.gearwest.com/",
         "httpStatus": 200,
         "signals": [
@@ -2086,7 +2086,7 @@
     "brave hardy": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-10T04:05:22.413Z",
+        "verifiedAt": "2026-08-10T09:52:10.438Z",
         "evidenceUrl": "https://www.bravehardy.com/pages/contact",
         "httpStatus": 200,
         "signals": [
@@ -2110,7 +2110,7 @@
     "public lands": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-10T04:05:22.608Z",
+        "verifiedAt": "2026-08-10T09:52:11.399Z",
         "evidenceUrl": "https://www.publiclands.com/",
         "httpStatus": 200,
         "signals": [
@@ -2127,7 +2127,7 @@
     "campman": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-10T04:05:25.241Z",
+        "verifiedAt": "2026-08-10T09:52:13.248Z",
         "evidenceUrl": "https://www.campman.com/",
         "httpStatus": 200,
         "signals": [
@@ -2148,8 +2148,26 @@
     "the mountaineer": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-10T04:05:25.090Z",
-        "evidenceUrl": "https://mountaineer.com/",
+        "verifiedAt": "2026-08-10T09:52:12.768Z",
+        "evidenceUrl": "https://mountaineer.com/privacy-policy/",
+        "httpStatus": 200,
+        "signals": [
+          "form_control",
+          "contact_invitation"
+        ],
+        "error": ""
+      },
+      "contactCapabilityVerified": true,
+      "externalVerificationStatus": "official_contact_form_verified",
+      "publicEmail": "mountaineer@mountaineer.com",
+      "emailVerificationStatus": "official_public_business_email",
+      "socialProfiles": []
+    },
+    "sierra": {
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-10T09:52:12.864Z",
+        "evidenceUrl": "https://www.sierra.com/",
         "httpStatus": 200,
         "signals": [
           "form_control"
@@ -2160,27 +2178,14 @@
       "externalVerificationStatus": "",
       "publicEmail": "",
       "emailVerificationStatus": "",
-      "socialProfiles": []
-    },
-    "sierra": {
-      "firstPartyChannelVerification": {
-        "status": "unreachable",
-        "verifiedAt": "2026-08-10T04:05:23.729Z",
-        "evidenceUrl": "https://www.sierra.com/",
-        "httpStatus": 403,
-        "signals": [],
-        "error": ""
-      },
-      "contactCapabilityVerified": false,
-      "externalVerificationStatus": "",
-      "publicEmail": "",
-      "emailVerificationStatus": "",
-      "socialProfiles": []
+      "socialProfiles": [
+        "https://www.instagram.com/sierraofficial/"
+      ]
     },
     "outdoorplay": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-10T04:05:23.982Z",
+        "verifiedAt": "2026-08-10T09:52:12.249Z",
         "evidenceUrl": "https://www.outdoorplay.com/",
         "httpStatus": 200,
         "signals": [
@@ -2199,7 +2204,7 @@
     "campmor": {
       "firstPartyChannelVerification": {
         "status": "unreachable",
-        "verifiedAt": "2026-08-10T04:05:25.641Z",
+        "verifiedAt": "2026-08-10T09:52:13.667Z",
         "evidenceUrl": "https://www.campmor.com/",
         "httpStatus": 403,
         "signals": [],
@@ -2217,7 +2222,7 @@
     "ramsey outdoor": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-10T04:05:26.815Z",
+        "verifiedAt": "2026-08-10T09:52:14.564Z",
         "evidenceUrl": "https://ramseyoutdoor.com/",
         "httpStatus": 200,
         "signals": [
@@ -2238,7 +2243,7 @@
     "quest outdoors": {
       "firstPartyChannelVerification": {
         "status": "unreachable",
-        "verifiedAt": "2026-08-10T04:05:26.914Z",
+        "verifiedAt": "2026-08-10T09:52:14.142Z",
         "evidenceUrl": "https://questoutdoors.com/",
         "httpStatus": 404,
         "signals": [],
@@ -2253,7 +2258,7 @@
     "river sports outfitters": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-10T04:05:26.820Z",
+        "verifiedAt": "2026-08-10T09:52:14.134Z",
         "evidenceUrl": "https://www.riversportsoutfitters.com/",
         "httpStatus": 200,
         "signals": [
@@ -2273,7 +2278,7 @@
     "rock creek": {
       "firstPartyChannelVerification": {
         "status": "unreachable",
-        "verifiedAt": "2026-08-10T04:05:28.228Z",
+        "verifiedAt": "2026-08-10T09:52:15.537Z",
         "evidenceUrl": "https://www.rockcreek.com/",
         "httpStatus": 0,
         "signals": [],
@@ -2288,7 +2293,7 @@
     "half moon outfitters": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-10T04:05:27.158Z",
+        "verifiedAt": "2026-08-10T09:52:15.160Z",
         "evidenceUrl": "https://www.halfmoonoutfitters.com/",
         "httpStatus": 200,
         "signals": [
@@ -2308,7 +2313,7 @@
     "sunlight sports": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-10T04:05:29.082Z",
+        "verifiedAt": "2026-08-10T09:52:15.467Z",
         "evidenceUrl": "https://www.sunlightsports.com/",
         "httpStatus": 200,
         "signals": [
@@ -2326,7 +2331,7 @@
     "jax outdoor gear": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-10T04:05:28.683Z",
+        "verifiedAt": "2026-08-10T09:52:15.178Z",
         "evidenceUrl": "https://jaxgoods.com/",
         "httpStatus": 200,
         "signals": [
@@ -2345,7 +2350,7 @@
     "christy sports": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-10T04:05:30.306Z",
+        "verifiedAt": "2026-08-10T09:52:16.636Z",
         "evidenceUrl": "https://www.christysports.com/",
         "httpStatus": 200,
         "signals": [
@@ -2366,7 +2371,7 @@
     "paragon sports": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-10T07:05:23.767Z",
+        "verifiedAt": "2026-08-10T09:52:16.838Z",
         "evidenceUrl": "https://paragonsports.com/",
         "httpStatus": 200,
         "signals": [
@@ -2388,7 +2393,7 @@
     "mountain equipment": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-10T07:05:25.005Z",
+        "verifiedAt": "2026-08-10T09:52:17.274Z",
         "evidenceUrl": "https://www.mountain-equipment.com/",
         "httpStatus": 200,
         "signals": [
@@ -2406,25 +2411,26 @@
     "tiso": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-10T07:05:22.342Z",
-        "evidenceUrl": "https://www.tiso.com/",
+        "verifiedAt": "2026-08-10T09:52:16.993Z",
+        "evidenceUrl": "https://www.tiso.com/pages/contact",
         "httpStatus": 200,
         "signals": [
           "form_control",
+          "public_business_email",
           "contact_invitation"
         ],
         "error": ""
       },
       "contactCapabilityVerified": true,
       "externalVerificationStatus": "official_contact_form_verified",
-      "publicEmail": "",
-      "emailVerificationStatus": "",
+      "publicEmail": "mail@tiso.co.uk",
+      "emailVerificationStatus": "official_public_business_email",
       "socialProfiles": []
     },
     "george fisher": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-10T07:05:23.500Z",
+        "verifiedAt": "2026-08-10T09:52:18.885Z",
         "evidenceUrl": "https://www.tiso.com/pages/george-fisher-landing?utm_source=georgefisher",
         "httpStatus": 200,
         "signals": [
@@ -2512,6 +2518,43 @@
       "externalVerificationStatus": "official_supplier_form_verified",
       "publicEmail": "",
       "emailVerificationStatus": "",
+      "socialProfiles": []
+    },
+    "j h outdoors": {
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-10T09:52:09.547Z",
+        "evidenceUrl": "https://jhoutdoors.com/pages/faq",
+        "httpStatus": 200,
+        "signals": [
+          "form_control",
+          "public_business_email",
+          "contact_invitation"
+        ],
+        "error": ""
+      },
+      "contactCapabilityVerified": true,
+      "externalVerificationStatus": "official_contact_form_verified",
+      "publicEmail": "web@jhoutdoors.com",
+      "emailVerificationStatus": "official_public_business_email",
+      "socialProfiles": []
+    },
+    "hilton s tent city": {
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-10T09:52:09.741Z",
+        "evidenceUrl": "https://www.hiltonstentcity.com/pages/returns-exchanges",
+        "httpStatus": 200,
+        "signals": [
+          "form_control",
+          "public_business_email"
+        ],
+        "error": ""
+      },
+      "contactCapabilityVerified": false,
+      "externalVerificationStatus": "",
+      "publicEmail": "support@hiltonstentcity.com",
+      "emailVerificationStatus": "official_public_business_email",
       "socialProfiles": []
     }
   }

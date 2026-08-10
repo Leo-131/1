@@ -507,6 +507,14 @@ test('Google discovery preserves newly verified independent-retailer routing ema
     ['Kittery Trading Post', ['info@ktp.com', 'https://www.kitterytradingpost.com/customer-service/cookie-policy/']],
     ['Spejder Sport', ['kundeservice@spejdersport.dk', 'https://www.spejdersport.dk/handelsbetingelser/']],
     ['Hardloop', ['hello@hardloop.fr', 'https://www.hardloop.fr/article/671-acupression-tout-savoir']],
+    ['Trekitt', ['support@trekitt.co.uk', 'https://www.trekitt.co.uk/pages/contact/']],
+    ['Barrabes', ['customerservice@barrabes.com', 'https://www.barrabes.com/en/help/contact']],
+    ['Snowleader', ['contact@snowleader.com', 'https://images.snowleader.com/media/wysiwyg/Global-Blue-fr.pdf']],
+    ['SportPursuit', ['team@sportpursuit.com', 'https://www.sportpursuit.com/terms-conditions']],
+    ['Tahoe Sports Hub', ['tahoesportshub@gmail.com', 'https://www.tahoesportshub.com/contact']],
+    ['J&H Outdoors', ['web@jhoutdoors.com', 'https://jhoutdoors.com/pages/faq']],
+    ['The Trail Head', ['info@trailheadmontana.net', 'https://trailheadmontana.net/']],
+    ["Hilton's Tent City", ['support@hiltonstentcity.com', 'https://www.hiltonstentcity.com/pages/returns-exchanges']],
   ]);
 
   for (const [company, [email, evidenceUrl]] of expected) {

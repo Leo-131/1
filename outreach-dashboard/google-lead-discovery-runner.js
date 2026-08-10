@@ -523,6 +523,10 @@ const DIRECTORY_REFILL_CANDIDATES = [
   ['Backcountry Experience', 'United States', 'https://www.backcountryexperience.com/', '', 88],
   ['Arizona Hiking Shack', 'United States', 'https://www.hikingshack.com/', '', 86],
   ['AvidMax Outfitters', 'United States', 'https://www.avidmax.com/', '', 85],
+  ['Tahoe Sports Hub', 'United States', 'https://www.tahoesportshub.com/', '', 87],
+  ['J&H Outdoors', 'United States', 'https://jhoutdoors.com/', '', 86],
+  ['The Trail Head', 'United States', 'https://trailheadmontana.net/', '', 87],
+  ["Hilton's Tent City", 'United States', 'https://www.hiltonstentcity.com/', '', 86],
   ['Durango Outdoor Exchange', 'United States', 'https://durangooutdoorexchange.com/', '', 84],
   ['Gear West', 'United States', 'https://www.gearwest.com/', '', 85],
   ['Valhalla Pure Outfitters', 'Canada', 'https://vpo.ca/', '', 90],
@@ -592,6 +596,14 @@ const DIRECTORY_PUBLIC_CONTACT_ENRICHMENT = {
   'Kittery Trading Post': ['info@ktp.com', 'Official company-domain address published in the Kittery Trading Post contact section; route the supplier proposal to the category buyer.', 'https://www.kitterytradingpost.com/customer-service/cookie-policy/'],
   'Spejder Sport': ['kundeservice@spejdersport.dk', 'Official company-domain address published with Spejder Sport company ownership and headquarters details; route to the category buyer.', 'https://www.spejdersport.dk/handelsbetingelser/'],
   'Hardloop': ['hello@hardloop.fr', 'Official company-domain contact address published by Hardloop; route the supplier proposal to the category buyer.', 'https://www.hardloop.fr/article/671-acupression-tout-savoir'],
+  'Trekitt': ['support@trekitt.co.uk', 'Official company-domain support address published on Trekitt contact and FAQ pages; route the supplier proposal to the category buyer.', 'https://www.trekitt.co.uk/pages/contact/'],
+  'Barrabes': ['customerservice@barrabes.com', 'Official company-domain customer-service address published by Barrabes; route the supplier proposal to the category buyer.', 'https://www.barrabes.com/en/help/contact'],
+  'Snowleader': ['contact@snowleader.com', 'Official company-domain contact address published in Snowleader first-party customer documents; route the supplier proposal to the category buyer.', 'https://images.snowleader.com/media/wysiwyg/Global-Blue-fr.pdf'],
+  'SportPursuit': ['team@sportpursuit.com', 'Official company-domain address published in SportPursuit terms and contact pages; route the supplier proposal to the category buyer or brand-partnership owner.', 'https://www.sportpursuit.com/terms-conditions'],
+  'Tahoe Sports Hub': ['tahoesportshub@gmail.com', 'Exact public business address published on the official Tahoe Sports Hub contact page; route the proposal to the retail buyer or owner.', 'https://www.tahoesportshub.com/contact'],
+  'J&H Outdoors': ['web@jhoutdoors.com', 'Official company-domain address published in the J&H Outdoors FAQ; route the proposal to the category buyer or owner.', 'https://jhoutdoors.com/pages/faq'],
+  'The Trail Head': ['info@trailheadmontana.net', 'Official company-domain address published on The Trail Head website; route the proposal to the category buyer or owner.', 'https://trailheadmontana.net/'],
+  "Hilton's Tent City": ['support@hiltonstentcity.com', "Official company-domain address published by Hilton's Tent City; route the proposal to the named buyer or current vendor-review owner.", 'https://www.hiltonstentcity.com/pages/returns-exchanges'],
 };
 for (const candidate of DIRECTORY_REFILL_CANDIDATES) {
   const enrichment = DIRECTORY_PUBLIC_CONTACT_ENRICHMENT[candidate.company];
@@ -1251,7 +1263,9 @@ function channelLeads(item) {
     facebook: invalidChannels.facebook ? '' : (item.facebookUrl || ''),
     websiteContact: item.contactUrl || item.url,
   };
-  const verifiedContactPath = hasVerifiedContactPath(item);
+  const verifiedOfficialEmail = String(item && (item.contactEmail || item.publicEmail) || '').includes('@')
+    && item.emailVerificationStatus === 'official_public_business_email';
+  const verifiedContactPath = hasVerifiedContactPath(item) || verifiedOfficialEmail;
   const leads = [];
   if (/linkedin\.com\/in\//i.test(linkedinUrl) || item.linkedinDirectOutreach === true) {
     leads.push({

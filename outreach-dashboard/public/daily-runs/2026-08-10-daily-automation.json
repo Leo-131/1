@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-10T09:31:06.625Z",
+  "generatedAt": "2026-08-10T09:52:19.289Z",
   "date": "2026-08-10",
   "mode": "daily-icp-first-automation-loop",
   "executionLayer": "Dedicated Chrome automation profile only; primary Chrome attachment forbidden",
@@ -50,25 +50,25 @@
   "summary": {
     "totalLeads": 16,
     "highIcp": 16,
-    "readyToDevelop": 18,
-    "dueNow": 69,
-    "visibleTodayQueue": 29,
-    "potentialPool": 57,
+    "readyToDevelop": 17,
+    "dueNow": 64,
+    "visibleTodayQueue": 25,
+    "potentialPool": 52,
     "potentialPoolTarget": 100,
-    "customerTableHighIcp": 20,
-    "refillNeeded": 43,
-    "executableCompanies": 17,
+    "customerTableHighIcp": 19,
+    "refillNeeded": 48,
+    "executableCompanies": 16,
     "executableReserveTarget": 130,
-    "executableReserveNeeded": 113,
+    "executableReserveNeeded": 114,
     "executableByChannel": {
       "facebook": 1,
-      "website_form": 16
+      "website_form": 15
     },
     "verifiedSocialCompanies": 1,
     "verifiedSocialReserveTarget": 20,
     "verifiedSocialReserveNeeded": 19,
-    "enrichmentBacklogCount": 40,
-    "googleDiscovered": 49,
+    "enrichmentBacklogCount": 36,
+    "googleDiscovered": 45,
     "facebookDiscovered": 8,
     "websiteContactDiscovered": 0,
     "scheduledLater": 0,
@@ -82,12 +82,12 @@
   "discoveryRefill": {
     "discoveryRefillAttempted": true,
     "qualifiedThreshold": 70,
-    "refillCandidateCount": 128,
+    "refillCandidateCount": 132,
     "refillByCustomerType": {
       "agency": 8,
-      "key_account": 120
+      "key_account": 124
     },
-    "qualifiedQueueCount": 55
+    "qualifiedQueueCount": 51
   },
   "visibleTodayQueue": [
     {
@@ -147,7 +147,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/Rome",
-        "localTime": "Mon 11:31",
+        "localTime": "Mon 11:52",
         "window": "outside_work_hours",
         "nextBest": "Europe/Rome afternoon",
         "weight": 0
@@ -246,7 +246,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Asia/Shanghai",
-        "localTime": "Mon 17:31",
+        "localTime": "Mon 17:52",
         "window": "outside_work_hours",
         "nextBest": "Asia/Shanghai morning",
         "weight": 0
@@ -351,7 +351,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/Paris",
-        "localTime": "Mon 11:31",
+        "localTime": "Mon 11:52",
         "window": "outside_work_hours",
         "nextBest": "Europe/Paris afternoon",
         "weight": 0
@@ -454,7 +454,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/Berlin",
-        "localTime": "Mon 11:31",
+        "localTime": "Mon 11:52",
         "window": "outside_work_hours",
         "nextBest": "Europe/Berlin afternoon",
         "weight": 0
@@ -487,113 +487,6 @@
       "contactChannelScore": 17,
       "dealProbabilityScore": 225,
       "priorityScore": 225,
-      "lastStatus": "",
-      "lastEvidence": "",
-      "lastTouch": "",
-      "visibleOnly": false
-    },
-    {
-      "id": "google-customer-trekitt-website-contact",
-      "name": "Trekitt",
-      "company": "Trekitt",
-      "customerType": "key_account",
-      "discoveryMode": "autonomous_refill",
-      "country": "United Kingdom",
-      "countryEn": "United Kingdom",
-      "fitScore": 90,
-      "fitTier": "A+",
-      "marketScore": 4.5,
-      "marketStatus": "open",
-      "agencyState": "open",
-      "agentCompany": "",
-      "keyword": "verified outdoor, camping, travel and consumer electronics retail channel",
-      "role": "Outdoor electronics, camping accessories, travel products or consumer electronics category buyer.",
-      "background": "Trekitt is listed or qualified as an outdoor/camping specialty retail prospect with assortment fit for lightweight outdoor electrics and practical high-rotation 3C products.",
-      "buyerPersona": "Outdoor electronics, camping accessories, travel products or consumer electronics category buyer.",
-      "targetMarkets": "",
-      "excludedMarkets": "",
-      "productCategory": "verified outdoor, camping, travel and consumer electronics retail channel",
-      "businessModel": "Retail Chain",
-      "productFit": "FLEXTAIL portable pumps, outdoor power, camping lighting and compact camping accessories",
-      "opportunity": "Trekitt is listed or qualified as an outdoor/camping specialty retail prospect with assortment fit for lightweight outdoor electrics and practical high-rotation 3C products.",
-      "linkedin_url": "",
-      "linkedin": "",
-      "publicEmail": "",
-      "contactEmail": "",
-      "vendorPortal": "https://www.trekitt.co.uk/",
-      "contactPhone": "",
-      "contactNote": "",
-      "publicEmailStatus": "",
-      "emailVerificationStatus": "",
-      "emailEvidence": "",
-      "emailEvidenceUrl": "",
-      "website": "https://www.trekitt.co.uk/",
-      "evidenceUrl": "https://www.google.com/search?q=%22Trekitt%22%20%22verified%20outdoor%2C%20camping%2C%20travel%20and%20consumer%20electronics%20retail%20channel%22%20%22United%20Kingdom%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "sourceEvidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
-      "externalVerificationStatus": "official_contact_form_verified",
-      "query": "https://www.google.com/search?q=%22Trekitt%22%20%22verified%20outdoor%2C%20camping%2C%20travel%20and%20consumer%20electronics%20retail%20channel%22%20%22United%20Kingdom%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "source": "google_customer_discovery",
-      "sourceType": "google",
-      "discoveryProvider": "google",
-      "channel": "",
-      "identityStatus": "verified",
-      "officialSocialProfileVerified": false,
-      "socialProfileEvidenceUrl": "",
-      "socialProfileVerifiedAt": "",
-      "profiledAt": "",
-      "partnershipStatus": "",
-      "doNotOutreach": false,
-      "automationStatus": "",
-      "partnerNote": "",
-      "sendStatus": "",
-      "workingTime": {
-        "dueNow": true,
-        "timeZone": "Europe/London",
-        "localTime": "Mon 10:31",
-        "window": "morning",
-        "nextBest": "now",
-        "weight": 1
-      },
-      "platform": "website_form",
-      "channelType": "website_form",
-      "platformUrl": "https://www.trekitt.co.uk/",
-      "url": "https://www.trekitt.co.uk/",
-      "contactUrl": "https://www.trekitt.co.uk/",
-      "contactSearchUrl": "https://www.google.com/search?q=site%3Awww.trekitt.co.uk%20%22Trekitt%22%20contact%20buyer%20wholesale%20email%20vendor",
-      "emailFrom": "leo@flextailgear.com",
-      "websiteContactSubject": "FLEXTAIL retail partnership | 2026 assortment",
-      "websiteContactMessage": "Dear Trekitt Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
-      "websiteContactFlow": "open_official_contact_us_fill_attach_auto_submit",
-      "action": "verify_target",
-      "reason": "homepage_only_contact_path_requires_verification",
-      "alternateChannels": {
-        "linkedin": "",
-        "instagram": "",
-        "facebook": "",
-        "websiteContact": "https://www.trekitt.co.uk/"
-      },
-      "invalidChannels": {},
-      "identitySource": "official homepage found; exact buyer/contact path still requires verification",
-      "channelPriority": 3,
-      "discoveredAt": "2026-07-14T04:02:10.362Z",
-      "firstPartyChannelVerification": {
-        "status": "checked",
-        "verifiedAt": "2026-08-10T09:23:11.994Z",
-        "evidenceUrl": "https://www.trekitt.co.uk/",
-        "httpStatus": 200,
-        "signals": [
-          "form_control",
-          "contact_invitation"
-        ],
-        "error": ""
-      },
-      "contactCapabilityVerified": true,
-      "taskId": "google-customer-trekitt-website-contact",
-      "targetRegion": "europe",
-      "targetRegionScore": 45,
-      "contactChannelScore": 13,
-      "dealProbabilityScore": 220,
-      "priorityScore": 220,
       "lastStatus": "",
       "lastEvidence": "",
       "lastTouch": "",
@@ -656,7 +549,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/Oslo",
-        "localTime": "Mon 11:31",
+        "localTime": "Mon 11:52",
         "window": "outside_work_hours",
         "nextBest": "Europe/Oslo afternoon",
         "weight": 0
@@ -761,7 +654,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/London",
-        "localTime": "Mon 10:31",
+        "localTime": "Mon 10:52",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -797,111 +690,6 @@
         "error": ""
       },
       "taskId": "google-customer-alpinetrek-website-contact",
-      "targetRegion": "europe",
-      "targetRegionScore": 45,
-      "contactChannelScore": 13,
-      "dealProbabilityScore": 219,
-      "priorityScore": 219,
-      "lastStatus": "",
-      "lastEvidence": "",
-      "lastTouch": "",
-      "visibleOnly": false
-    },
-    {
-      "id": "google-customer-barrabes-website-contact",
-      "name": "Barrabes",
-      "company": "Barrabes",
-      "customerType": "key_account",
-      "discoveryMode": "autonomous_refill",
-      "country": "Spain",
-      "countryEn": "Spain",
-      "fitScore": 89,
-      "fitTier": "A",
-      "marketScore": 4.5,
-      "marketStatus": "open",
-      "agencyState": "open",
-      "agentCompany": "",
-      "keyword": "verified outdoor, camping, travel and consumer electronics retail channel",
-      "role": "Outdoor electronics, camping accessories, travel products or consumer electronics category buyer.",
-      "background": "Barrabes is listed or qualified as an outdoor/camping specialty retail prospect with assortment fit for lightweight outdoor electrics and practical high-rotation 3C products.",
-      "buyerPersona": "Outdoor electronics, camping accessories, travel products or consumer electronics category buyer.",
-      "targetMarkets": "",
-      "excludedMarkets": "",
-      "productCategory": "verified outdoor, camping, travel and consumer electronics retail channel",
-      "businessModel": "Retail Chain",
-      "productFit": "FLEXTAIL portable pumps, outdoor power, camping lighting and compact camping accessories",
-      "opportunity": "Barrabes is listed or qualified as an outdoor/camping specialty retail prospect with assortment fit for lightweight outdoor electrics and practical high-rotation 3C products.",
-      "linkedin_url": "",
-      "linkedin": "",
-      "publicEmail": "",
-      "contactEmail": "",
-      "vendorPortal": "https://www.barrabes.com/",
-      "contactPhone": "",
-      "contactNote": "",
-      "publicEmailStatus": "",
-      "emailVerificationStatus": "",
-      "emailEvidence": "",
-      "emailEvidenceUrl": "",
-      "website": "https://www.barrabes.com/",
-      "evidenceUrl": "https://www.google.com/search?q=%22Barrabes%22%20%22verified%20outdoor%2C%20camping%2C%20travel%20and%20consumer%20electronics%20retail%20channel%22%20%22Spain%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "sourceEvidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
-      "externalVerificationStatus": "",
-      "query": "https://www.google.com/search?q=%22Barrabes%22%20%22verified%20outdoor%2C%20camping%2C%20travel%20and%20consumer%20electronics%20retail%20channel%22%20%22Spain%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "source": "google_customer_discovery",
-      "sourceType": "google",
-      "discoveryProvider": "google",
-      "channel": "",
-      "identityStatus": "verified",
-      "officialSocialProfileVerified": false,
-      "socialProfileEvidenceUrl": "",
-      "socialProfileVerifiedAt": "",
-      "profiledAt": "",
-      "partnershipStatus": "",
-      "doNotOutreach": false,
-      "automationStatus": "",
-      "partnerNote": "",
-      "sendStatus": "",
-      "workingTime": {
-        "dueNow": false,
-        "timeZone": "Europe/Madrid",
-        "localTime": "Mon 11:31",
-        "window": "outside_work_hours",
-        "nextBest": "Europe/Madrid afternoon",
-        "weight": 0
-      },
-      "platform": "website_form",
-      "channelType": "website_form",
-      "platformUrl": "https://www.barrabes.com/",
-      "url": "https://www.barrabes.com/",
-      "contactUrl": "https://www.barrabes.com/",
-      "contactSearchUrl": "https://www.google.com/search?q=site%3Awww.barrabes.com%20%22Barrabes%22%20contact%20buyer%20wholesale%20email%20vendor",
-      "emailFrom": "leo@flextailgear.com",
-      "websiteContactSubject": "FLEXTAIL retail partnership | 2026 assortment",
-      "websiteContactMessage": "Dear Barrabes Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
-      "websiteContactFlow": "open_official_contact_us_fill_attach_auto_submit",
-      "action": "verify_target",
-      "reason": "homepage_only_contact_path_requires_verification",
-      "alternateChannels": {
-        "linkedin": "",
-        "instagram": "",
-        "facebook": "",
-        "websiteContact": "https://www.barrabes.com/"
-      },
-      "invalidChannels": {},
-      "identitySource": "official homepage found; exact buyer/contact path still requires verification",
-      "channelPriority": 3,
-      "discoveredAt": "2026-07-14T04:02:10.362Z",
-      "firstPartyChannelVerification": {
-        "status": "checked",
-        "verifiedAt": "2026-08-10T09:23:21.622Z",
-        "evidenceUrl": "https://www.barrabes.com/",
-        "httpStatus": 200,
-        "signals": [
-          "form_control"
-        ],
-        "error": ""
-      },
-      "taskId": "google-customer-barrabes-website-contact",
       "targetRegion": "europe",
       "targetRegionScore": 45,
       "contactChannelScore": 13,
@@ -969,7 +757,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Asia/Shanghai",
-        "localTime": "Mon 17:31",
+        "localTime": "Mon 17:52",
         "window": "outside_work_hours",
         "nextBest": "Asia/Shanghai morning",
         "weight": 0
@@ -1074,7 +862,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/Paris",
-        "localTime": "Mon 11:31",
+        "localTime": "Mon 11:52",
         "window": "outside_work_hours",
         "nextBest": "Europe/Paris afternoon",
         "weight": 0
@@ -1110,109 +898,6 @@
         "error": ""
       },
       "taskId": "google-customer-ekosport-website-contact",
-      "targetRegion": "europe",
-      "targetRegionScore": 45,
-      "contactChannelScore": 13,
-      "dealProbabilityScore": 219,
-      "priorityScore": 219,
-      "lastStatus": "",
-      "lastEvidence": "",
-      "lastTouch": "",
-      "visibleOnly": false
-    },
-    {
-      "id": "google-customer-snowleader-website-contact",
-      "name": "Snowleader",
-      "company": "Snowleader",
-      "customerType": "key_account",
-      "discoveryMode": "autonomous_refill",
-      "country": "France",
-      "countryEn": "France",
-      "fitScore": 89,
-      "fitTier": "A",
-      "marketScore": 4.5,
-      "marketStatus": "open",
-      "agencyState": "open",
-      "agentCompany": "",
-      "keyword": "verified outdoor, camping, travel and consumer electronics retail channel",
-      "role": "Outdoor electronics, camping accessories, travel products or consumer electronics category buyer.",
-      "background": "Snowleader is listed or qualified as an outdoor/camping specialty retail prospect with assortment fit for lightweight outdoor electrics and practical high-rotation 3C products.",
-      "buyerPersona": "Outdoor electronics, camping accessories, travel products or consumer electronics category buyer.",
-      "targetMarkets": "",
-      "excludedMarkets": "",
-      "productCategory": "verified outdoor, camping, travel and consumer electronics retail channel",
-      "businessModel": "Retail Chain",
-      "productFit": "FLEXTAIL portable pumps, outdoor power, camping lighting and compact camping accessories",
-      "opportunity": "Snowleader is listed or qualified as an outdoor/camping specialty retail prospect with assortment fit for lightweight outdoor electrics and practical high-rotation 3C products.",
-      "linkedin_url": "",
-      "linkedin": "",
-      "publicEmail": "",
-      "contactEmail": "",
-      "vendorPortal": "https://www.snowleader.com/",
-      "contactPhone": "",
-      "contactNote": "",
-      "publicEmailStatus": "",
-      "emailVerificationStatus": "",
-      "emailEvidence": "",
-      "emailEvidenceUrl": "",
-      "website": "https://www.snowleader.com/",
-      "evidenceUrl": "https://www.google.com/search?q=%22Snowleader%22%20%22verified%20outdoor%2C%20camping%2C%20travel%20and%20consumer%20electronics%20retail%20channel%22%20%22France%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "sourceEvidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
-      "externalVerificationStatus": "",
-      "query": "https://www.google.com/search?q=%22Snowleader%22%20%22verified%20outdoor%2C%20camping%2C%20travel%20and%20consumer%20electronics%20retail%20channel%22%20%22France%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "source": "google_customer_discovery",
-      "sourceType": "google",
-      "discoveryProvider": "google",
-      "channel": "",
-      "identityStatus": "verified",
-      "officialSocialProfileVerified": false,
-      "socialProfileEvidenceUrl": "",
-      "socialProfileVerifiedAt": "",
-      "profiledAt": "",
-      "partnershipStatus": "",
-      "doNotOutreach": false,
-      "automationStatus": "",
-      "partnerNote": "",
-      "sendStatus": "",
-      "workingTime": {
-        "dueNow": false,
-        "timeZone": "Europe/Paris",
-        "localTime": "Mon 11:31",
-        "window": "outside_work_hours",
-        "nextBest": "Europe/Paris afternoon",
-        "weight": 0
-      },
-      "platform": "website_form",
-      "channelType": "website_form",
-      "platformUrl": "https://www.snowleader.com/",
-      "url": "https://www.snowleader.com/",
-      "contactUrl": "https://www.snowleader.com/",
-      "contactSearchUrl": "https://www.google.com/search?q=site%3Awww.snowleader.com%20%22Snowleader%22%20contact%20buyer%20wholesale%20email%20vendor",
-      "emailFrom": "leo@flextailgear.com",
-      "websiteContactSubject": "FLEXTAIL retail partnership | 2026 assortment",
-      "websiteContactMessage": "Dear Snowleader Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
-      "websiteContactFlow": "open_official_contact_us_fill_attach_auto_submit",
-      "action": "verify_target",
-      "reason": "homepage_only_contact_path_requires_verification",
-      "alternateChannels": {
-        "linkedin": "",
-        "instagram": "",
-        "facebook": "",
-        "websiteContact": "https://www.snowleader.com/"
-      },
-      "invalidChannels": {},
-      "identitySource": "official homepage found; exact buyer/contact path still requires verification",
-      "channelPriority": 3,
-      "discoveredAt": "2026-07-14T04:02:10.362Z",
-      "firstPartyChannelVerification": {
-        "status": "unreachable",
-        "verifiedAt": "2026-08-10T09:23:17.525Z",
-        "evidenceUrl": "https://www.snowleader.com/",
-        "httpStatus": 403,
-        "signals": [],
-        "error": ""
-      },
-      "taskId": "google-customer-snowleader-website-contact",
       "targetRegion": "europe",
       "targetRegionScore": 45,
       "contactChannelScore": 13,
@@ -1260,7 +945,7 @@
       "emailEvidenceUrl": "",
       "website": "https://www.tauntonleisure.com/",
       "evidenceUrl": "https://www.google.com/search?q=%22Taunton%20Leisure%22%20%22verified%20outdoor%2C%20camping%2C%20travel%20and%20consumer%20electronics%20retail%20channel%22%20%22United%20Kingdom%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "sourceEvidenceUrl": "https://www.tauntonleisure.com/",
+      "sourceEvidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
       "externalVerificationStatus": "official_contact_form_verified",
       "query": "https://www.google.com/search?q=%22Taunton%20Leisure%22%20%22verified%20outdoor%2C%20camping%2C%20travel%20and%20consumer%20electronics%20retail%20channel%22%20%22United%20Kingdom%22%20buyer%20OR%20wholesale%20OR%20contact",
       "source": "google_customer_discovery",
@@ -1280,7 +965,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/London",
-        "localTime": "Mon 10:31",
+        "localTime": "Mon 10:52",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -1387,7 +1072,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Asia/Shanghai",
-        "localTime": "Mon 17:31",
+        "localTime": "Mon 17:52",
         "window": "outside_work_hours",
         "nextBest": "Asia/Shanghai morning",
         "weight": 0
@@ -1490,7 +1175,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Asia/Shanghai",
-        "localTime": "Mon 17:31",
+        "localTime": "Mon 17:52",
         "window": "outside_work_hours",
         "nextBest": "Asia/Shanghai morning",
         "weight": 0
@@ -1531,109 +1216,6 @@
       "contactChannelScore": 13,
       "dealProbabilityScore": 218,
       "priorityScore": 218,
-      "lastStatus": "",
-      "lastEvidence": "",
-      "lastTouch": "",
-      "visibleOnly": false
-    },
-    {
-      "id": "google-customer-sportpursuit-website-contact",
-      "name": "SportPursuit",
-      "company": "SportPursuit",
-      "customerType": "key_account",
-      "discoveryMode": "autonomous_refill",
-      "country": "United Kingdom",
-      "countryEn": "United Kingdom",
-      "fitScore": 87,
-      "fitTier": "A",
-      "marketScore": 4.5,
-      "marketStatus": "open",
-      "agencyState": "open",
-      "agentCompany": "",
-      "keyword": "verified outdoor, camping, travel and consumer electronics retail channel",
-      "role": "Outdoor electronics, camping accessories, travel products or consumer electronics category buyer.",
-      "background": "SportPursuit is listed or qualified as an outdoor/camping specialty retail prospect with assortment fit for lightweight outdoor electrics and practical high-rotation 3C products.",
-      "buyerPersona": "Outdoor electronics, camping accessories, travel products or consumer electronics category buyer.",
-      "targetMarkets": "",
-      "excludedMarkets": "",
-      "productCategory": "verified outdoor, camping, travel and consumer electronics retail channel",
-      "businessModel": "Retail Chain",
-      "productFit": "FLEXTAIL portable pumps, outdoor power, camping lighting and compact camping accessories",
-      "opportunity": "SportPursuit is listed or qualified as an outdoor/camping specialty retail prospect with assortment fit for lightweight outdoor electrics and practical high-rotation 3C products.",
-      "linkedin_url": "",
-      "linkedin": "",
-      "publicEmail": "",
-      "contactEmail": "",
-      "vendorPortal": "https://www.sportpursuit.com/",
-      "contactPhone": "",
-      "contactNote": "",
-      "publicEmailStatus": "",
-      "emailVerificationStatus": "",
-      "emailEvidence": "",
-      "emailEvidenceUrl": "",
-      "website": "https://www.sportpursuit.com/",
-      "evidenceUrl": "https://www.google.com/search?q=%22SportPursuit%22%20%22verified%20outdoor%2C%20camping%2C%20travel%20and%20consumer%20electronics%20retail%20channel%22%20%22United%20Kingdom%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "sourceEvidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
-      "externalVerificationStatus": "",
-      "query": "https://www.google.com/search?q=%22SportPursuit%22%20%22verified%20outdoor%2C%20camping%2C%20travel%20and%20consumer%20electronics%20retail%20channel%22%20%22United%20Kingdom%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "source": "google_customer_discovery",
-      "sourceType": "google",
-      "discoveryProvider": "google",
-      "channel": "",
-      "identityStatus": "verified",
-      "officialSocialProfileVerified": false,
-      "socialProfileEvidenceUrl": "",
-      "socialProfileVerifiedAt": "",
-      "profiledAt": "",
-      "partnershipStatus": "",
-      "doNotOutreach": false,
-      "automationStatus": "",
-      "partnerNote": "",
-      "sendStatus": "",
-      "workingTime": {
-        "dueNow": true,
-        "timeZone": "Europe/London",
-        "localTime": "Mon 10:31",
-        "window": "morning",
-        "nextBest": "now",
-        "weight": 1
-      },
-      "platform": "website_form",
-      "channelType": "website_form",
-      "platformUrl": "https://www.sportpursuit.com/",
-      "url": "https://www.sportpursuit.com/",
-      "contactUrl": "https://www.sportpursuit.com/",
-      "contactSearchUrl": "https://www.google.com/search?q=site%3Awww.sportpursuit.com%20%22SportPursuit%22%20contact%20buyer%20wholesale%20email%20vendor",
-      "emailFrom": "leo@flextailgear.com",
-      "websiteContactSubject": "FLEXTAIL retail partnership | 2026 assortment",
-      "websiteContactMessage": "Dear SportPursuit Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
-      "websiteContactFlow": "open_official_contact_us_fill_attach_auto_submit",
-      "action": "verify_target",
-      "reason": "homepage_only_contact_path_requires_verification",
-      "alternateChannels": {
-        "linkedin": "",
-        "instagram": "",
-        "facebook": "",
-        "websiteContact": "https://www.sportpursuit.com/"
-      },
-      "invalidChannels": {},
-      "identitySource": "official homepage found; exact buyer/contact path still requires verification",
-      "channelPriority": 3,
-      "discoveredAt": "2026-07-14T04:02:10.362Z",
-      "firstPartyChannelVerification": {
-        "status": "unreachable",
-        "verifiedAt": "2026-08-10T09:30:58.805Z",
-        "evidenceUrl": "https://www.sportpursuit.com/",
-        "httpStatus": 403,
-        "signals": [],
-        "error": ""
-      },
-      "taskId": "google-customer-sportpursuit-website-contact",
-      "targetRegion": "europe",
-      "targetRegionScore": 45,
-      "contactChannelScore": 13,
-      "dealProbabilityScore": 217,
-      "priorityScore": 217,
       "lastStatus": "",
       "lastEvidence": "",
       "lastTouch": "",
@@ -1696,7 +1278,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/Helsinki",
-        "localTime": "Mon 12:31",
+        "localTime": "Mon 12:52",
         "window": "outside_work_hours",
         "nextBest": "Europe/Helsinki afternoon",
         "weight": 0
@@ -1711,8 +1293,8 @@
       "websiteContactSubject": "FLEXTAIL retail partnership | 2026 assortment",
       "websiteContactMessage": "Dear Varuste Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
       "websiteContactFlow": "open_official_contact_us_fill_attach_auto_submit",
-      "action": "verify_target",
-      "reason": "homepage_only_contact_path_requires_verification",
+      "action": "email_priority",
+      "reason": "official_website_contact_channel",
       "alternateChannels": {
         "linkedin": "",
         "instagram": "",
@@ -1720,7 +1302,7 @@
         "websiteContact": "https://varuste.net/"
       },
       "invalidChannels": {},
-      "identitySource": "official homepage found; exact buyer/contact path still requires verification",
+      "identitySource": "official website contact path + Google buyer/contact query",
       "channelPriority": 3,
       "discoveredAt": "2026-07-14T04:02:10.362Z",
       "firstPartyChannelVerification": {
@@ -1802,7 +1384,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/Dublin",
-        "localTime": "Mon 10:31",
+        "localTime": "Mon 10:52",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -1899,7 +1481,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/London",
-        "localTime": "Mon 10:31",
+        "localTime": "Mon 10:52",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -1996,7 +1578,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Asia/Shanghai",
-        "localTime": "Mon 17:31",
+        "localTime": "Mon 17:52",
         "window": "outside_work_hours",
         "nextBest": "Asia/Shanghai morning",
         "weight": 0
@@ -2101,7 +1683,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/Berlin",
-        "localTime": "Mon 11:31",
+        "localTime": "Mon 11:52",
         "window": "outside_work_hours",
         "nextBest": "Europe/Berlin afternoon",
         "weight": 0
@@ -2198,7 +1780,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/Oslo",
-        "localTime": "Mon 11:31",
+        "localTime": "Mon 11:52",
         "window": "outside_work_hours",
         "nextBest": "Europe/Oslo afternoon",
         "weight": 0
@@ -2301,7 +1883,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Australia/Sydney",
-        "localTime": "Mon 19:31",
+        "localTime": "Mon 19:52",
         "window": "outside_work_hours",
         "nextBest": "Australia/Sydney morning",
         "weight": 0
@@ -2409,7 +1991,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Australia/Sydney",
-        "localTime": "Mon 19:31",
+        "localTime": "Mon 19:52",
         "window": "outside_work_hours",
         "nextBest": "Australia/Sydney morning",
         "weight": 0
@@ -2512,7 +2094,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Pacific/Auckland",
-        "localTime": "Mon 21:31",
+        "localTime": "Mon 21:52",
         "window": "outside_work_hours",
         "nextBest": "Pacific/Auckland morning",
         "weight": 0
@@ -2527,8 +2109,8 @@
       "websiteContactSubject": "FLEXTAIL retail partnership | 2026 assortment",
       "websiteContactMessage": "Dear Bivouac Outdoor Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
       "websiteContactFlow": "open_official_contact_us_fill_attach_auto_submit",
-      "action": "verify_target",
-      "reason": "homepage_only_contact_path_requires_verification",
+      "action": "email_priority",
+      "reason": "official_website_contact_channel",
       "alternateChannels": {
         "linkedin": "",
         "instagram": "",
@@ -2536,7 +2118,7 @@
         "websiteContact": "https://www.bivouac.co.nz/"
       },
       "invalidChannels": {},
-      "identitySource": "official homepage found; exact buyer/contact path still requires verification",
+      "identitySource": "official website contact path + Google buyer/contact query",
       "channelPriority": 3,
       "discoveredAt": "2026-07-14T04:02:10.362Z",
       "firstPartyChannelVerification": {
@@ -2617,7 +2199,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Australia/Sydney",
-        "localTime": "Mon 19:31",
+        "localTime": "Mon 19:52",
         "window": "outside_work_hours",
         "nextBest": "Australia/Sydney morning",
         "weight": 0
@@ -2720,7 +2302,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Pacific/Auckland",
-        "localTime": "Mon 21:31",
+        "localTime": "Mon 21:52",
         "window": "outside_work_hours",
         "nextBest": "Pacific/Auckland morning",
         "weight": 0
@@ -2817,7 +2399,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Mon 05:31",
+        "localTime": "Mon 05:52",
         "window": "outside_work_hours",
         "nextBest": "America/Toronto morning",
         "weight": 0
@@ -2920,7 +2502,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Mon 05:31",
+        "localTime": "Mon 05:52",
         "window": "outside_work_hours",
         "nextBest": "America/Toronto morning",
         "weight": 0
@@ -3019,7 +2601,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Mon 05:31",
+        "localTime": "Mon 05:52",
         "window": "outside_work_hours",
         "nextBest": "America/Toronto morning",
         "weight": 0
@@ -3125,7 +2707,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/10 17:30:49",
+        "localTime": "2026/8/10 17:52:08",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -3240,7 +2822,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/10 17:30:49",
+        "localTime": "2026/8/10 17:52:08",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -3358,7 +2940,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/10 17:30:49",
+        "localTime": "2026/8/10 17:52:08",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -3472,7 +3054,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/10 17:30:49",
+        "localTime": "2026/8/10 17:52:08",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -3588,7 +3170,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/10 17:30:49",
+        "localTime": "2026/8/10 17:52:08",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -3602,7 +3184,7 @@
       "websiteContactMessage": "Dear Varuste Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
       "websiteContactFlow": "open_official_contact_us_fill_attach_auto_submit",
       "action": "email_priority",
-      "reason": "official_public_business_email_verified",
+      "reason": "official_website_contact_channel",
       "alternateChannels": {
         "linkedin": "",
         "instagram": "",
@@ -3610,7 +3192,7 @@
         "websiteContact": "https://varuste.net/"
       },
       "invalidChannels": {},
-      "identitySource": "official homepage found; exact buyer/contact path still requires verification",
+      "identitySource": "official website contact path + Google buyer/contact query",
       "channelPriority": 3,
       "discoveredAt": "2026-07-14T04:02:10.362Z",
       "firstPartyChannelVerification": {
@@ -3641,7 +3223,7 @@
       "dealProbabilityScore": 229,
       "priorityScore": 254,
       "potentialSource": "google_linkedin_social_refill",
-      "nextAction": "official_business_email_contact",
+      "nextAction": "official_website_or_email_contact",
       "executionReadiness": {
         "ready": true,
         "gate": "official_business_email",
@@ -3705,7 +3287,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/10 17:30:49",
+        "localTime": "2026/8/10 17:52:08",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -3819,7 +3401,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/10 17:30:49",
+        "localTime": "2026/8/10 17:52:08",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -3935,7 +3517,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/10 17:30:49",
+        "localTime": "2026/8/10 17:52:08",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -3990,124 +3572,6 @@
         "ready": false,
         "gate": "enrichment_required",
         "reason": "website_contact_capability_not_verified"
-      }
-    },
-    {
-      "id": "google-customer-trekitt-website-contact",
-      "name": "Trekitt",
-      "company": "Trekitt",
-      "customerType": "key_account",
-      "discoveryMode": "autonomous_refill",
-      "country": "United Kingdom",
-      "countryEn": "United Kingdom",
-      "fitScore": 90,
-      "fitTier": "A+",
-      "marketScore": 4.5,
-      "marketStatus": "open",
-      "agencyState": "open",
-      "agentCompany": "",
-      "keyword": "verified outdoor, camping, travel and consumer electronics retail channel",
-      "role": "Outdoor electronics, camping accessories, travel products or consumer electronics category buyer.",
-      "background": "Trekitt is listed or qualified as an outdoor/camping specialty retail prospect with assortment fit for lightweight outdoor electrics and practical high-rotation 3C products.",
-      "buyerPersona": "Outdoor electronics, camping accessories, travel products or consumer electronics category buyer.",
-      "targetMarkets": "",
-      "excludedMarkets": "",
-      "productCategory": "verified outdoor, camping, travel and consumer electronics retail channel",
-      "businessModel": "Retail Chain",
-      "productFit": "FLEXTAIL portable pumps, outdoor power, camping lighting and compact camping accessories",
-      "opportunity": "Trekitt is listed or qualified as an outdoor/camping specialty retail prospect with assortment fit for lightweight outdoor electrics and practical high-rotation 3C products.",
-      "linkedin_url": "",
-      "linkedin": "",
-      "publicEmail": "",
-      "contactEmail": "",
-      "vendorPortal": "https://www.trekitt.co.uk/",
-      "contactPhone": "",
-      "contactNote": "",
-      "publicEmailStatus": "",
-      "emailVerificationStatus": "",
-      "emailEvidence": "",
-      "emailEvidenceUrl": "",
-      "website": "https://www.trekitt.co.uk/",
-      "evidenceUrl": "https://www.google.com/search?q=%22Trekitt%22%20%22verified%20outdoor%2C%20camping%2C%20travel%20and%20consumer%20electronics%20retail%20channel%22%20%22United%20Kingdom%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "sourceEvidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
-      "externalVerificationStatus": "official_contact_form_verified",
-      "query": "https://www.google.com/search?q=%22Trekitt%22%20%22verified%20outdoor%2C%20camping%2C%20travel%20and%20consumer%20electronics%20retail%20channel%22%20%22United%20Kingdom%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "source": "google_customer_discovery",
-      "sourceType": "google",
-      "discoveryProvider": "google",
-      "channel": "",
-      "identityStatus": "verified",
-      "officialSocialProfileVerified": false,
-      "socialProfileEvidenceUrl": "",
-      "socialProfileVerifiedAt": "",
-      "profiledAt": "",
-      "partnershipStatus": "",
-      "doNotOutreach": false,
-      "automationStatus": "",
-      "partnerNote": "",
-      "sendStatus": "",
-      "workingTime": {
-        "dueNow": true,
-        "timeZone": "local-market",
-        "localTime": "2026/8/10 17:30:49",
-        "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
-      },
-      "platform": "website_form",
-      "channelType": "website_form",
-      "platformUrl": "https://www.trekitt.co.uk/",
-      "url": "https://www.trekitt.co.uk/",
-      "contactUrl": "https://www.trekitt.co.uk/",
-      "contactSearchUrl": "https://www.google.com/search?q=site%3Awww.trekitt.co.uk%20%22Trekitt%22%20contact%20buyer%20wholesale%20email%20vendor",
-      "emailFrom": "leo@flextailgear.com",
-      "websiteContactSubject": "FLEXTAIL retail partnership | 2026 assortment",
-      "websiteContactMessage": "Dear Trekitt Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
-      "websiteContactFlow": "open_official_contact_us_fill_attach_auto_submit",
-      "action": "develop",
-      "reason": "official_website_contact_channel",
-      "alternateChannels": {
-        "linkedin": "",
-        "instagram": "",
-        "facebook": "",
-        "websiteContact": "https://www.trekitt.co.uk/"
-      },
-      "invalidChannels": {},
-      "identitySource": "official homepage found; exact buyer/contact path still requires verification",
-      "channelPriority": 3,
-      "discoveredAt": "2026-07-14T04:02:10.362Z",
-      "firstPartyChannelVerification": {
-        "status": "checked",
-        "verifiedAt": "2026-08-10T09:23:11.994Z",
-        "evidenceUrl": "https://www.trekitt.co.uk/",
-        "httpStatus": 200,
-        "signals": [
-          "form_control",
-          "contact_invitation"
-        ],
-        "error": ""
-      },
-      "contactCapabilityVerified": true,
-      "linkedinUrl": "",
-      "linkedinSearchUrl": "https://www.linkedin.com/search/results/all/?keywords=Trekitt%20buyer%20outdoor%20LinkedIn",
-      "googleSearchUrl": "https://www.google.com/search?q=site%3Awww.trekitt.co.uk%20%22Trekitt%22%20contact%20buyer%20wholesale%20email%20vendor",
-      "dataSources": [
-        "google_linkedin_social_refill"
-      ],
-      "taskId": "google-customer-trekitt-website-contact",
-      "lastStatus": "",
-      "lastEvidence": "",
-      "lastTouch": "",
-      "previouslyContacted": false,
-      "targetRegion": "europe",
-      "targetRegionScore": 45,
-      "contactChannelScore": 13,
-      "dealProbabilityScore": 220,
-      "priorityScore": 233,
-      "potentialSource": "google_linkedin_social_refill",
-      "nextAction": "official_supplier_route_contact",
-      "executionReadiness": {
-        "ready": true,
-        "gate": "official_supplier_route",
-        "evidenceUrl": "https://www.trekitt.co.uk/"
       }
     },
     {
@@ -4167,7 +3631,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/10 17:30:49",
+        "localTime": "2026/8/10 17:52:08",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -4207,122 +3671,6 @@
         "google_linkedin_social_refill"
       ],
       "taskId": "google-customer-alpinetrek-website-contact",
-      "lastStatus": "",
-      "lastEvidence": "",
-      "lastTouch": "",
-      "previouslyContacted": false,
-      "targetRegion": "europe",
-      "targetRegionScore": 45,
-      "contactChannelScore": 13,
-      "dealProbabilityScore": 219,
-      "priorityScore": 232,
-      "potentialSource": "google_linkedin_social_refill",
-      "nextAction": "background_check_then_verify_channel",
-      "executionReadiness": {
-        "ready": false,
-        "gate": "enrichment_required",
-        "reason": "website_contact_capability_not_verified"
-      }
-    },
-    {
-      "id": "google-customer-barrabes-website-contact",
-      "name": "Barrabes",
-      "company": "Barrabes",
-      "customerType": "key_account",
-      "discoveryMode": "autonomous_refill",
-      "country": "Spain",
-      "countryEn": "Spain",
-      "fitScore": 89,
-      "fitTier": "A",
-      "marketScore": 4.5,
-      "marketStatus": "open",
-      "agencyState": "open",
-      "agentCompany": "",
-      "keyword": "verified outdoor, camping, travel and consumer electronics retail channel",
-      "role": "Outdoor electronics, camping accessories, travel products or consumer electronics category buyer.",
-      "background": "Barrabes is listed or qualified as an outdoor/camping specialty retail prospect with assortment fit for lightweight outdoor electrics and practical high-rotation 3C products.",
-      "buyerPersona": "Outdoor electronics, camping accessories, travel products or consumer electronics category buyer.",
-      "targetMarkets": "",
-      "excludedMarkets": "",
-      "productCategory": "verified outdoor, camping, travel and consumer electronics retail channel",
-      "businessModel": "Retail Chain",
-      "productFit": "FLEXTAIL portable pumps, outdoor power, camping lighting and compact camping accessories",
-      "opportunity": "Barrabes is listed or qualified as an outdoor/camping specialty retail prospect with assortment fit for lightweight outdoor electrics and practical high-rotation 3C products.",
-      "linkedin_url": "",
-      "linkedin": "",
-      "publicEmail": "",
-      "contactEmail": "",
-      "vendorPortal": "https://www.barrabes.com/",
-      "contactPhone": "",
-      "contactNote": "",
-      "publicEmailStatus": "",
-      "emailVerificationStatus": "",
-      "emailEvidence": "",
-      "emailEvidenceUrl": "",
-      "website": "https://www.barrabes.com/",
-      "evidenceUrl": "https://www.google.com/search?q=%22Barrabes%22%20%22verified%20outdoor%2C%20camping%2C%20travel%20and%20consumer%20electronics%20retail%20channel%22%20%22Spain%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "sourceEvidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
-      "externalVerificationStatus": "",
-      "query": "https://www.google.com/search?q=%22Barrabes%22%20%22verified%20outdoor%2C%20camping%2C%20travel%20and%20consumer%20electronics%20retail%20channel%22%20%22Spain%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "source": "google_customer_discovery",
-      "sourceType": "google",
-      "discoveryProvider": "google",
-      "channel": "",
-      "identityStatus": "verified",
-      "officialSocialProfileVerified": false,
-      "socialProfileEvidenceUrl": "",
-      "socialProfileVerifiedAt": "",
-      "profiledAt": "",
-      "partnershipStatus": "",
-      "doNotOutreach": false,
-      "automationStatus": "",
-      "partnerNote": "",
-      "sendStatus": "",
-      "workingTime": {
-        "dueNow": true,
-        "timeZone": "local-market",
-        "localTime": "2026/8/10 17:30:49",
-        "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
-      },
-      "platform": "website_form",
-      "channelType": "website_form",
-      "platformUrl": "https://www.barrabes.com/",
-      "url": "https://www.barrabes.com/",
-      "contactUrl": "https://www.barrabes.com/",
-      "contactSearchUrl": "https://www.google.com/search?q=site%3Awww.barrabes.com%20%22Barrabes%22%20contact%20buyer%20wholesale%20email%20vendor",
-      "emailFrom": "leo@flextailgear.com",
-      "websiteContactSubject": "FLEXTAIL retail partnership | 2026 assortment",
-      "websiteContactMessage": "Dear Barrabes Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
-      "websiteContactFlow": "open_official_contact_us_fill_attach_auto_submit",
-      "action": "verify_target",
-      "reason": "homepage_only_contact_path_requires_verification",
-      "alternateChannels": {
-        "linkedin": "",
-        "instagram": "",
-        "facebook": "",
-        "websiteContact": "https://www.barrabes.com/"
-      },
-      "invalidChannels": {},
-      "identitySource": "official homepage found; exact buyer/contact path still requires verification",
-      "channelPriority": 3,
-      "discoveredAt": "2026-07-14T04:02:10.362Z",
-      "firstPartyChannelVerification": {
-        "status": "checked",
-        "verifiedAt": "2026-08-10T09:23:21.622Z",
-        "evidenceUrl": "https://www.barrabes.com/",
-        "httpStatus": 200,
-        "signals": [
-          "form_control"
-        ],
-        "error": ""
-      },
-      "linkedinUrl": "",
-      "linkedinSearchUrl": "https://www.linkedin.com/search/results/all/?keywords=Barrabes%20buyer%20outdoor%20LinkedIn",
-      "googleSearchUrl": "https://www.google.com/search?q=site%3Awww.barrabes.com%20%22Barrabes%22%20contact%20buyer%20wholesale%20email%20vendor",
-      "dataSources": [
-        "google_linkedin_social_refill"
-      ],
-      "taskId": "google-customer-barrabes-website-contact",
       "lastStatus": "",
       "lastEvidence": "",
       "lastTouch": "",
@@ -4397,7 +3745,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/10 17:30:49",
+        "localTime": "2026/8/10 17:52:08",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -4513,7 +3861,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/10 17:30:49",
+        "localTime": "2026/8/10 17:52:08",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -4553,120 +3901,6 @@
         "google_linkedin_social_refill"
       ],
       "taskId": "google-customer-ekosport-website-contact",
-      "lastStatus": "",
-      "lastEvidence": "",
-      "lastTouch": "",
-      "previouslyContacted": false,
-      "targetRegion": "europe",
-      "targetRegionScore": 45,
-      "contactChannelScore": 13,
-      "dealProbabilityScore": 219,
-      "priorityScore": 232,
-      "potentialSource": "google_linkedin_social_refill",
-      "nextAction": "background_check_then_verify_channel",
-      "executionReadiness": {
-        "ready": false,
-        "gate": "enrichment_required",
-        "reason": "website_contact_capability_not_verified"
-      }
-    },
-    {
-      "id": "google-customer-snowleader-website-contact",
-      "name": "Snowleader",
-      "company": "Snowleader",
-      "customerType": "key_account",
-      "discoveryMode": "autonomous_refill",
-      "country": "France",
-      "countryEn": "France",
-      "fitScore": 89,
-      "fitTier": "A",
-      "marketScore": 4.5,
-      "marketStatus": "open",
-      "agencyState": "open",
-      "agentCompany": "",
-      "keyword": "verified outdoor, camping, travel and consumer electronics retail channel",
-      "role": "Outdoor electronics, camping accessories, travel products or consumer electronics category buyer.",
-      "background": "Snowleader is listed or qualified as an outdoor/camping specialty retail prospect with assortment fit for lightweight outdoor electrics and practical high-rotation 3C products.",
-      "buyerPersona": "Outdoor electronics, camping accessories, travel products or consumer electronics category buyer.",
-      "targetMarkets": "",
-      "excludedMarkets": "",
-      "productCategory": "verified outdoor, camping, travel and consumer electronics retail channel",
-      "businessModel": "Retail Chain",
-      "productFit": "FLEXTAIL portable pumps, outdoor power, camping lighting and compact camping accessories",
-      "opportunity": "Snowleader is listed or qualified as an outdoor/camping specialty retail prospect with assortment fit for lightweight outdoor electrics and practical high-rotation 3C products.",
-      "linkedin_url": "",
-      "linkedin": "",
-      "publicEmail": "",
-      "contactEmail": "",
-      "vendorPortal": "https://www.snowleader.com/",
-      "contactPhone": "",
-      "contactNote": "",
-      "publicEmailStatus": "",
-      "emailVerificationStatus": "",
-      "emailEvidence": "",
-      "emailEvidenceUrl": "",
-      "website": "https://www.snowleader.com/",
-      "evidenceUrl": "https://www.google.com/search?q=%22Snowleader%22%20%22verified%20outdoor%2C%20camping%2C%20travel%20and%20consumer%20electronics%20retail%20channel%22%20%22France%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "sourceEvidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
-      "externalVerificationStatus": "",
-      "query": "https://www.google.com/search?q=%22Snowleader%22%20%22verified%20outdoor%2C%20camping%2C%20travel%20and%20consumer%20electronics%20retail%20channel%22%20%22France%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "source": "google_customer_discovery",
-      "sourceType": "google",
-      "discoveryProvider": "google",
-      "channel": "",
-      "identityStatus": "verified",
-      "officialSocialProfileVerified": false,
-      "socialProfileEvidenceUrl": "",
-      "socialProfileVerifiedAt": "",
-      "profiledAt": "",
-      "partnershipStatus": "",
-      "doNotOutreach": false,
-      "automationStatus": "",
-      "partnerNote": "",
-      "sendStatus": "",
-      "workingTime": {
-        "dueNow": true,
-        "timeZone": "local-market",
-        "localTime": "2026/8/10 17:30:49",
-        "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
-      },
-      "platform": "website_form",
-      "channelType": "website_form",
-      "platformUrl": "https://www.snowleader.com/",
-      "url": "https://www.snowleader.com/",
-      "contactUrl": "https://www.snowleader.com/",
-      "contactSearchUrl": "https://www.google.com/search?q=site%3Awww.snowleader.com%20%22Snowleader%22%20contact%20buyer%20wholesale%20email%20vendor",
-      "emailFrom": "leo@flextailgear.com",
-      "websiteContactSubject": "FLEXTAIL retail partnership | 2026 assortment",
-      "websiteContactMessage": "Dear Snowleader Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
-      "websiteContactFlow": "open_official_contact_us_fill_attach_auto_submit",
-      "action": "verify_target",
-      "reason": "homepage_only_contact_path_requires_verification",
-      "alternateChannels": {
-        "linkedin": "",
-        "instagram": "",
-        "facebook": "",
-        "websiteContact": "https://www.snowleader.com/"
-      },
-      "invalidChannels": {},
-      "identitySource": "official homepage found; exact buyer/contact path still requires verification",
-      "channelPriority": 3,
-      "discoveredAt": "2026-07-14T04:02:10.362Z",
-      "firstPartyChannelVerification": {
-        "status": "unreachable",
-        "verifiedAt": "2026-08-10T09:23:17.525Z",
-        "evidenceUrl": "https://www.snowleader.com/",
-        "httpStatus": 403,
-        "signals": [],
-        "error": ""
-      },
-      "linkedinUrl": "",
-      "linkedinSearchUrl": "https://www.linkedin.com/search/results/all/?keywords=Snowleader%20buyer%20outdoor%20LinkedIn",
-      "googleSearchUrl": "https://www.google.com/search?q=site%3Awww.snowleader.com%20%22Snowleader%22%20contact%20buyer%20wholesale%20email%20vendor",
-      "dataSources": [
-        "google_linkedin_social_refill"
-      ],
-      "taskId": "google-customer-snowleader-website-contact",
       "lastStatus": "",
       "lastEvidence": "",
       "lastTouch": "",
@@ -4741,7 +3975,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/10 17:30:49",
+        "localTime": "2026/8/10 17:52:08",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -4855,7 +4089,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/10 17:30:49",
+        "localTime": "2026/8/10 17:52:08",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -4969,7 +4203,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/10 17:30:49",
+        "localTime": "2026/8/10 17:52:08",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -5083,7 +4317,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/10 17:30:49",
+        "localTime": "2026/8/10 17:52:08",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -5177,7 +4411,7 @@
       "emailEvidenceUrl": "",
       "website": "https://www.tauntonleisure.com/",
       "evidenceUrl": "https://www.google.com/search?q=%22Taunton%20Leisure%22%20%22verified%20outdoor%2C%20camping%2C%20travel%20and%20consumer%20electronics%20retail%20channel%22%20%22United%20Kingdom%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "sourceEvidenceUrl": "https://www.tauntonleisure.com/",
+      "sourceEvidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
       "externalVerificationStatus": "official_contact_form_verified",
       "query": "https://www.google.com/search?q=%22Taunton%20Leisure%22%20%22verified%20outdoor%2C%20camping%2C%20travel%20and%20consumer%20electronics%20retail%20channel%22%20%22United%20Kingdom%22%20buyer%20OR%20wholesale%20OR%20contact",
       "source": "google_customer_discovery",
@@ -5197,7 +4431,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/10 17:30:49",
+        "localTime": "2026/8/10 17:52:08",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -5259,120 +4493,6 @@
       }
     },
     {
-      "id": "google-customer-sportpursuit-website-contact",
-      "name": "SportPursuit",
-      "company": "SportPursuit",
-      "customerType": "key_account",
-      "discoveryMode": "autonomous_refill",
-      "country": "United Kingdom",
-      "countryEn": "United Kingdom",
-      "fitScore": 87,
-      "fitTier": "A",
-      "marketScore": 4.5,
-      "marketStatus": "open",
-      "agencyState": "open",
-      "agentCompany": "",
-      "keyword": "verified outdoor, camping, travel and consumer electronics retail channel",
-      "role": "Outdoor electronics, camping accessories, travel products or consumer electronics category buyer.",
-      "background": "SportPursuit is listed or qualified as an outdoor/camping specialty retail prospect with assortment fit for lightweight outdoor electrics and practical high-rotation 3C products.",
-      "buyerPersona": "Outdoor electronics, camping accessories, travel products or consumer electronics category buyer.",
-      "targetMarkets": "",
-      "excludedMarkets": "",
-      "productCategory": "verified outdoor, camping, travel and consumer electronics retail channel",
-      "businessModel": "Retail Chain",
-      "productFit": "FLEXTAIL portable pumps, outdoor power, camping lighting and compact camping accessories",
-      "opportunity": "SportPursuit is listed or qualified as an outdoor/camping specialty retail prospect with assortment fit for lightweight outdoor electrics and practical high-rotation 3C products.",
-      "linkedin_url": "",
-      "linkedin": "",
-      "publicEmail": "",
-      "contactEmail": "",
-      "vendorPortal": "https://www.sportpursuit.com/",
-      "contactPhone": "",
-      "contactNote": "",
-      "publicEmailStatus": "",
-      "emailVerificationStatus": "",
-      "emailEvidence": "",
-      "emailEvidenceUrl": "",
-      "website": "https://www.sportpursuit.com/",
-      "evidenceUrl": "https://www.google.com/search?q=%22SportPursuit%22%20%22verified%20outdoor%2C%20camping%2C%20travel%20and%20consumer%20electronics%20retail%20channel%22%20%22United%20Kingdom%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "sourceEvidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
-      "externalVerificationStatus": "",
-      "query": "https://www.google.com/search?q=%22SportPursuit%22%20%22verified%20outdoor%2C%20camping%2C%20travel%20and%20consumer%20electronics%20retail%20channel%22%20%22United%20Kingdom%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "source": "google_customer_discovery",
-      "sourceType": "google",
-      "discoveryProvider": "google",
-      "channel": "",
-      "identityStatus": "verified",
-      "officialSocialProfileVerified": false,
-      "socialProfileEvidenceUrl": "",
-      "socialProfileVerifiedAt": "",
-      "profiledAt": "",
-      "partnershipStatus": "",
-      "doNotOutreach": false,
-      "automationStatus": "",
-      "partnerNote": "",
-      "sendStatus": "",
-      "workingTime": {
-        "dueNow": true,
-        "timeZone": "local-market",
-        "localTime": "2026/8/10 17:30:49",
-        "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
-      },
-      "platform": "website_form",
-      "channelType": "website_form",
-      "platformUrl": "https://www.sportpursuit.com/",
-      "url": "https://www.sportpursuit.com/",
-      "contactUrl": "https://www.sportpursuit.com/",
-      "contactSearchUrl": "https://www.google.com/search?q=site%3Awww.sportpursuit.com%20%22SportPursuit%22%20contact%20buyer%20wholesale%20email%20vendor",
-      "emailFrom": "leo@flextailgear.com",
-      "websiteContactSubject": "FLEXTAIL retail partnership | 2026 assortment",
-      "websiteContactMessage": "Dear SportPursuit Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
-      "websiteContactFlow": "open_official_contact_us_fill_attach_auto_submit",
-      "action": "verify_target",
-      "reason": "homepage_only_contact_path_requires_verification",
-      "alternateChannels": {
-        "linkedin": "",
-        "instagram": "",
-        "facebook": "",
-        "websiteContact": "https://www.sportpursuit.com/"
-      },
-      "invalidChannels": {},
-      "identitySource": "official homepage found; exact buyer/contact path still requires verification",
-      "channelPriority": 3,
-      "discoveredAt": "2026-07-14T04:02:10.362Z",
-      "firstPartyChannelVerification": {
-        "status": "unreachable",
-        "verifiedAt": "2026-08-10T09:30:58.805Z",
-        "evidenceUrl": "https://www.sportpursuit.com/",
-        "httpStatus": 403,
-        "signals": [],
-        "error": ""
-      },
-      "linkedinUrl": "",
-      "linkedinSearchUrl": "https://www.linkedin.com/search/results/all/?keywords=SportPursuit%20buyer%20outdoor%20LinkedIn",
-      "googleSearchUrl": "https://www.google.com/search?q=site%3Awww.sportpursuit.com%20%22SportPursuit%22%20contact%20buyer%20wholesale%20email%20vendor",
-      "dataSources": [
-        "google_linkedin_social_refill"
-      ],
-      "taskId": "google-customer-sportpursuit-website-contact",
-      "lastStatus": "",
-      "lastEvidence": "",
-      "lastTouch": "",
-      "previouslyContacted": false,
-      "targetRegion": "europe",
-      "targetRegionScore": 45,
-      "contactChannelScore": 13,
-      "dealProbabilityScore": 217,
-      "priorityScore": 230,
-      "potentialSource": "google_linkedin_social_refill",
-      "nextAction": "background_check_then_verify_channel",
-      "executionReadiness": {
-        "ready": false,
-        "gate": "enrichment_required",
-        "reason": "website_contact_capability_not_verified"
-      }
-    },
-    {
       "id": "google-customer-rock-creek-website-contact",
       "name": "Rock/Creek",
       "company": "Rock/Creek",
@@ -5429,7 +4549,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/10 17:30:49",
+        "localTime": "2026/8/10 17:52:08",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -5456,7 +4576,7 @@
       "discoveredAt": "2026-07-16T05:03:53.170Z",
       "firstPartyChannelVerification": {
         "status": "unreachable",
-        "verifiedAt": "2026-08-10T04:05:28.228Z",
+        "verifiedAt": "2026-08-10T09:52:15.537Z",
         "evidenceUrl": "https://www.rockcreek.com/",
         "httpStatus": 0,
         "signals": [],
@@ -5543,7 +4663,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/10 17:30:49",
+        "localTime": "2026/8/10 17:52:08",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -5659,7 +4779,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/10 17:30:49",
+        "localTime": "2026/8/10 17:52:08",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -5777,7 +4897,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/10 17:30:49",
+        "localTime": "2026/8/10 17:52:08",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -5896,7 +5016,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/10 17:30:49",
+        "localTime": "2026/8/10 17:52:08",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -6010,7 +5130,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/10 17:30:49",
+        "localTime": "2026/8/10 17:52:08",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -6126,7 +5246,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/10 17:30:49",
+        "localTime": "2026/8/10 17:52:08",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -6248,7 +5368,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/10 17:30:49",
+        "localTime": "2026/8/10 17:52:08",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -6370,7 +5490,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/10 17:30:49",
+        "localTime": "2026/8/10 17:52:08",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -6484,7 +5604,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/10 17:30:49",
+        "localTime": "2026/8/10 17:52:08",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -6511,7 +5631,7 @@
       "discoveredAt": "2026-07-16T05:03:53.170Z",
       "firstPartyChannelVerification": {
         "status": "unreachable",
-        "verifiedAt": "2026-08-10T09:31:04.055Z",
+        "verifiedAt": "2026-08-10T09:52:08.731Z",
         "evidenceUrl": "https://www.hikingshack.com/",
         "httpStatus": 403,
         "signals": [],
@@ -6598,7 +5718,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/10 17:30:49",
+        "localTime": "2026/8/10 17:52:08",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -6712,7 +5832,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/10 17:30:49",
+        "localTime": "2026/8/10 17:52:08",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -6827,7 +5947,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/10 17:30:49",
+        "localTime": "2026/8/10 17:52:08",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -6941,7 +6061,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/10 17:30:49",
+        "localTime": "2026/8/10 17:52:08",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -6955,7 +6075,7 @@
       "websiteContactMessage": "Dear Bivouac Outdoor Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
       "websiteContactFlow": "open_official_contact_us_fill_attach_auto_submit",
       "action": "email_priority",
-      "reason": "official_public_business_email_verified",
+      "reason": "official_website_contact_channel",
       "alternateChannels": {
         "linkedin": "",
         "instagram": "",
@@ -6963,7 +6083,7 @@
         "websiteContact": "https://www.bivouac.co.nz/"
       },
       "invalidChannels": {},
-      "identitySource": "official homepage found; exact buyer/contact path still requires verification",
+      "identitySource": "official website contact path + Google buyer/contact query",
       "channelPriority": 3,
       "discoveredAt": "2026-07-14T04:02:10.362Z",
       "firstPartyChannelVerification": {
@@ -6993,7 +6113,7 @@
       "dealProbabilityScore": 186,
       "priorityScore": 211,
       "potentialSource": "google_linkedin_social_refill",
-      "nextAction": "official_business_email_contact",
+      "nextAction": "official_website_or_email_contact",
       "executionReadiness": {
         "ready": true,
         "gate": "official_business_email",
@@ -7057,7 +6177,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/10 17:30:49",
+        "localTime": "2026/8/10 17:52:08",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -7171,7 +6291,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/10 17:30:49",
+        "localTime": "2026/8/10 17:52:08",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -7290,7 +6410,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/10 17:30:49",
+        "localTime": "2026/8/10 17:52:08",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -7479,58 +6599,6 @@
       "buyerPersona": "",
       "marketStatus": "",
       "taskId": "sheet_1779293110195_g0uwgglwc",
-      "action": "email_priority",
-      "reason": "official_website_contact_channel",
-      "lastStatus": "",
-      "lastEvidence": "",
-      "lastTouch": "",
-      "previouslyContacted": false,
-      "targetRegion": "other",
-      "targetRegionScore": 0,
-      "contactChannelScore": 0,
-      "dealProbabilityScore": 77,
-      "priorityScore": 77,
-      "potentialSource": "customer_table",
-      "nextAction": "official_website_or_email_contact",
-      "executionReadiness": {
-        "ready": false,
-        "gate": "enrichment_required",
-        "reason": "public_business_email_requires_verification"
-      }
-    },
-    {
-      "id": "sheet_1779293110195_0f1r27koe",
-      "name": "Sage Boyer",
-      "company": "TAHOE SPORTS HUB",
-      "role": "",
-      "category": "okki",
-      "ka_flag": false,
-      "priority": "?",
-      "status": "Pending",
-      "keyword_used": "",
-      "message": "",
-      "email": "sage@beautiful.ai",
-      "source": "okki",
-      "country": "",
-      "countryEn": "",
-      "platform": "email",
-      "fitScore": 77,
-      "fitTier": "B",
-      "sourceType": "customer_table",
-      "website": "",
-      "url": "",
-      "platformUrl": "",
-      "linkedinUrl": "",
-      "linkedinSearchUrl": "https://www.linkedin.com/search/results/all/?keywords=TAHOE%20SPORTS%20HUB%20buyer%20outdoor%20LinkedIn",
-      "googleSearchUrl": "https://www.google.com/search?q=TAHOE%20SPORTS%20HUB%20outdoor%20buyer%20partnership%20contact",
-      "contactSearchUrl": "https://www.google.com/search?q=TAHOE%20SPORTS%20HUB%20outdoor%20buyer%20partnership%20contact",
-      "dataSources": [
-        "customer_table"
-      ],
-      "background": "",
-      "buyerPersona": "",
-      "marketStatus": "",
-      "taskId": "sheet_1779293110195_0f1r27koe",
       "action": "email_priority",
       "reason": "official_website_contact_channel",
       "lastStatus": "",
@@ -8425,7 +7493,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/10 17:30:49",
+        "localTime": "2026/8/10 17:52:08",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -8543,7 +7611,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/10 17:30:49",
+        "localTime": "2026/8/10 17:52:08",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -8657,7 +7725,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/10 17:30:49",
+        "localTime": "2026/8/10 17:52:08",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -8773,7 +7841,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/10 17:30:49",
+        "localTime": "2026/8/10 17:52:08",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -8787,7 +7855,7 @@
       "websiteContactMessage": "Dear Varuste Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
       "websiteContactFlow": "open_official_contact_us_fill_attach_auto_submit",
       "action": "email_priority",
-      "reason": "official_public_business_email_verified",
+      "reason": "official_website_contact_channel",
       "alternateChannels": {
         "linkedin": "",
         "instagram": "",
@@ -8795,7 +7863,7 @@
         "websiteContact": "https://varuste.net/"
       },
       "invalidChannels": {},
-      "identitySource": "official homepage found; exact buyer/contact path still requires verification",
+      "identitySource": "official website contact path + Google buyer/contact query",
       "channelPriority": 3,
       "discoveredAt": "2026-07-14T04:02:10.362Z",
       "firstPartyChannelVerification": {
@@ -8826,7 +7894,7 @@
       "dealProbabilityScore": 229,
       "priorityScore": 254,
       "potentialSource": "google_linkedin_social_refill",
-      "nextAction": "official_business_email_contact",
+      "nextAction": "official_website_or_email_contact",
       "executionReadiness": {
         "ready": true,
         "gate": "official_business_email",
@@ -8890,7 +7958,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/10 17:30:49",
+        "localTime": "2026/8/10 17:52:08",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -8950,124 +8018,6 @@
       }
     },
     {
-      "id": "google-customer-trekitt-website-contact",
-      "name": "Trekitt",
-      "company": "Trekitt",
-      "customerType": "key_account",
-      "discoveryMode": "autonomous_refill",
-      "country": "United Kingdom",
-      "countryEn": "United Kingdom",
-      "fitScore": 90,
-      "fitTier": "A+",
-      "marketScore": 4.5,
-      "marketStatus": "open",
-      "agencyState": "open",
-      "agentCompany": "",
-      "keyword": "verified outdoor, camping, travel and consumer electronics retail channel",
-      "role": "Outdoor electronics, camping accessories, travel products or consumer electronics category buyer.",
-      "background": "Trekitt is listed or qualified as an outdoor/camping specialty retail prospect with assortment fit for lightweight outdoor electrics and practical high-rotation 3C products.",
-      "buyerPersona": "Outdoor electronics, camping accessories, travel products or consumer electronics category buyer.",
-      "targetMarkets": "",
-      "excludedMarkets": "",
-      "productCategory": "verified outdoor, camping, travel and consumer electronics retail channel",
-      "businessModel": "Retail Chain",
-      "productFit": "FLEXTAIL portable pumps, outdoor power, camping lighting and compact camping accessories",
-      "opportunity": "Trekitt is listed or qualified as an outdoor/camping specialty retail prospect with assortment fit for lightweight outdoor electrics and practical high-rotation 3C products.",
-      "linkedin_url": "",
-      "linkedin": "",
-      "publicEmail": "",
-      "contactEmail": "",
-      "vendorPortal": "https://www.trekitt.co.uk/",
-      "contactPhone": "",
-      "contactNote": "",
-      "publicEmailStatus": "",
-      "emailVerificationStatus": "",
-      "emailEvidence": "",
-      "emailEvidenceUrl": "",
-      "website": "https://www.trekitt.co.uk/",
-      "evidenceUrl": "https://www.google.com/search?q=%22Trekitt%22%20%22verified%20outdoor%2C%20camping%2C%20travel%20and%20consumer%20electronics%20retail%20channel%22%20%22United%20Kingdom%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "sourceEvidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
-      "externalVerificationStatus": "official_contact_form_verified",
-      "query": "https://www.google.com/search?q=%22Trekitt%22%20%22verified%20outdoor%2C%20camping%2C%20travel%20and%20consumer%20electronics%20retail%20channel%22%20%22United%20Kingdom%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "source": "google_customer_discovery",
-      "sourceType": "google",
-      "discoveryProvider": "google",
-      "channel": "",
-      "identityStatus": "verified",
-      "officialSocialProfileVerified": false,
-      "socialProfileEvidenceUrl": "",
-      "socialProfileVerifiedAt": "",
-      "profiledAt": "",
-      "partnershipStatus": "",
-      "doNotOutreach": false,
-      "automationStatus": "",
-      "partnerNote": "",
-      "sendStatus": "",
-      "workingTime": {
-        "dueNow": true,
-        "timeZone": "local-market",
-        "localTime": "2026/8/10 17:30:49",
-        "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
-      },
-      "platform": "website_form",
-      "channelType": "website_form",
-      "platformUrl": "https://www.trekitt.co.uk/",
-      "url": "https://www.trekitt.co.uk/",
-      "contactUrl": "https://www.trekitt.co.uk/",
-      "contactSearchUrl": "https://www.google.com/search?q=site%3Awww.trekitt.co.uk%20%22Trekitt%22%20contact%20buyer%20wholesale%20email%20vendor",
-      "emailFrom": "leo@flextailgear.com",
-      "websiteContactSubject": "FLEXTAIL retail partnership | 2026 assortment",
-      "websiteContactMessage": "Dear Trekitt Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
-      "websiteContactFlow": "open_official_contact_us_fill_attach_auto_submit",
-      "action": "develop",
-      "reason": "official_website_contact_channel",
-      "alternateChannels": {
-        "linkedin": "",
-        "instagram": "",
-        "facebook": "",
-        "websiteContact": "https://www.trekitt.co.uk/"
-      },
-      "invalidChannels": {},
-      "identitySource": "official homepage found; exact buyer/contact path still requires verification",
-      "channelPriority": 3,
-      "discoveredAt": "2026-07-14T04:02:10.362Z",
-      "firstPartyChannelVerification": {
-        "status": "checked",
-        "verifiedAt": "2026-08-10T09:23:11.994Z",
-        "evidenceUrl": "https://www.trekitt.co.uk/",
-        "httpStatus": 200,
-        "signals": [
-          "form_control",
-          "contact_invitation"
-        ],
-        "error": ""
-      },
-      "contactCapabilityVerified": true,
-      "linkedinUrl": "",
-      "linkedinSearchUrl": "https://www.linkedin.com/search/results/all/?keywords=Trekitt%20buyer%20outdoor%20LinkedIn",
-      "googleSearchUrl": "https://www.google.com/search?q=site%3Awww.trekitt.co.uk%20%22Trekitt%22%20contact%20buyer%20wholesale%20email%20vendor",
-      "dataSources": [
-        "google_linkedin_social_refill"
-      ],
-      "taskId": "google-customer-trekitt-website-contact",
-      "lastStatus": "",
-      "lastEvidence": "",
-      "lastTouch": "",
-      "previouslyContacted": false,
-      "targetRegion": "europe",
-      "targetRegionScore": 45,
-      "contactChannelScore": 13,
-      "dealProbabilityScore": 220,
-      "priorityScore": 233,
-      "potentialSource": "google_linkedin_social_refill",
-      "nextAction": "official_supplier_route_contact",
-      "executionReadiness": {
-        "ready": true,
-        "gate": "official_supplier_route",
-        "evidenceUrl": "https://www.trekitt.co.uk/"
-      }
-    },
-    {
       "id": "google-customer-alpinetrek-website-contact",
       "name": "Alpinetrek",
       "company": "Alpinetrek",
@@ -9124,7 +8074,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/London",
-        "localTime": "Mon 10:31",
+        "localTime": "Mon 10:52",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -9202,7 +8152,7 @@
       "emailEvidenceUrl": "",
       "website": "https://www.tauntonleisure.com/",
       "evidenceUrl": "https://www.google.com/search?q=%22Taunton%20Leisure%22%20%22verified%20outdoor%2C%20camping%2C%20travel%20and%20consumer%20electronics%20retail%20channel%22%20%22United%20Kingdom%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "sourceEvidenceUrl": "https://www.tauntonleisure.com/",
+      "sourceEvidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
       "externalVerificationStatus": "official_contact_form_verified",
       "query": "https://www.google.com/search?q=%22Taunton%20Leisure%22%20%22verified%20outdoor%2C%20camping%2C%20travel%20and%20consumer%20electronics%20retail%20channel%22%20%22United%20Kingdom%22%20buyer%20OR%20wholesale%20OR%20contact",
       "source": "google_customer_discovery",
@@ -9222,7 +8172,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/10 17:30:49",
+        "localTime": "2026/8/10 17:52:08",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -9340,7 +8290,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/Dublin",
-        "localTime": "Mon 10:31",
+        "localTime": "Mon 10:52",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -9438,7 +8388,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/London",
-        "localTime": "Mon 10:31",
+        "localTime": "Mon 10:52",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -9478,104 +8428,6 @@
       "contactChannelScore": 17,
       "dealProbabilityScore": 218,
       "priorityScore": 218
-    },
-    {
-      "id": "google-customer-sportpursuit-website-contact",
-      "name": "SportPursuit",
-      "company": "SportPursuit",
-      "customerType": "key_account",
-      "discoveryMode": "autonomous_refill",
-      "country": "United Kingdom",
-      "countryEn": "United Kingdom",
-      "fitScore": 87,
-      "fitTier": "A",
-      "marketScore": 4.5,
-      "marketStatus": "open",
-      "agencyState": "open",
-      "agentCompany": "",
-      "keyword": "verified outdoor, camping, travel and consumer electronics retail channel",
-      "role": "Outdoor electronics, camping accessories, travel products or consumer electronics category buyer.",
-      "background": "SportPursuit is listed or qualified as an outdoor/camping specialty retail prospect with assortment fit for lightweight outdoor electrics and practical high-rotation 3C products.",
-      "buyerPersona": "Outdoor electronics, camping accessories, travel products or consumer electronics category buyer.",
-      "targetMarkets": "",
-      "excludedMarkets": "",
-      "productCategory": "verified outdoor, camping, travel and consumer electronics retail channel",
-      "businessModel": "Retail Chain",
-      "productFit": "FLEXTAIL portable pumps, outdoor power, camping lighting and compact camping accessories",
-      "opportunity": "SportPursuit is listed or qualified as an outdoor/camping specialty retail prospect with assortment fit for lightweight outdoor electrics and practical high-rotation 3C products.",
-      "linkedin_url": "",
-      "linkedin": "",
-      "publicEmail": "",
-      "contactEmail": "",
-      "vendorPortal": "https://www.sportpursuit.com/",
-      "contactPhone": "",
-      "contactNote": "",
-      "publicEmailStatus": "",
-      "emailVerificationStatus": "",
-      "emailEvidence": "",
-      "emailEvidenceUrl": "",
-      "website": "https://www.sportpursuit.com/",
-      "evidenceUrl": "https://www.google.com/search?q=%22SportPursuit%22%20%22verified%20outdoor%2C%20camping%2C%20travel%20and%20consumer%20electronics%20retail%20channel%22%20%22United%20Kingdom%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "sourceEvidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
-      "externalVerificationStatus": "",
-      "query": "https://www.google.com/search?q=%22SportPursuit%22%20%22verified%20outdoor%2C%20camping%2C%20travel%20and%20consumer%20electronics%20retail%20channel%22%20%22United%20Kingdom%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "source": "google_customer_discovery",
-      "sourceType": "google",
-      "discoveryProvider": "google",
-      "channel": "",
-      "identityStatus": "verified",
-      "officialSocialProfileVerified": false,
-      "socialProfileEvidenceUrl": "",
-      "socialProfileVerifiedAt": "",
-      "profiledAt": "",
-      "partnershipStatus": "",
-      "doNotOutreach": false,
-      "automationStatus": "",
-      "partnerNote": "",
-      "sendStatus": "",
-      "workingTime": {
-        "dueNow": true,
-        "timeZone": "Europe/London",
-        "localTime": "Mon 10:31",
-        "window": "morning",
-        "nextBest": "now",
-        "weight": 1
-      },
-      "platform": "website_form",
-      "channelType": "website_form",
-      "platformUrl": "https://www.sportpursuit.com/",
-      "url": "https://www.sportpursuit.com/",
-      "contactUrl": "https://www.sportpursuit.com/",
-      "contactSearchUrl": "https://www.google.com/search?q=site%3Awww.sportpursuit.com%20%22SportPursuit%22%20contact%20buyer%20wholesale%20email%20vendor",
-      "emailFrom": "leo@flextailgear.com",
-      "websiteContactSubject": "FLEXTAIL retail partnership | 2026 assortment",
-      "websiteContactMessage": "Dear SportPursuit Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
-      "websiteContactFlow": "open_official_contact_us_fill_attach_auto_submit",
-      "action": "verify_target",
-      "reason": "homepage_only_contact_path_requires_verification",
-      "alternateChannels": {
-        "linkedin": "",
-        "instagram": "",
-        "facebook": "",
-        "websiteContact": "https://www.sportpursuit.com/"
-      },
-      "invalidChannels": {},
-      "identitySource": "official homepage found; exact buyer/contact path still requires verification",
-      "channelPriority": 3,
-      "discoveredAt": "2026-07-14T04:02:10.362Z",
-      "firstPartyChannelVerification": {
-        "status": "unreachable",
-        "verifiedAt": "2026-08-10T09:30:58.805Z",
-        "evidenceUrl": "https://www.sportpursuit.com/",
-        "httpStatus": 403,
-        "signals": [],
-        "error": ""
-      },
-      "targetRegion": "europe",
-      "targetRegionScore": 45,
-      "contactChannelScore": 13,
-      "dealProbabilityScore": 217,
-      "priorityScore": 217
     },
     {
       "id": "google-customer-rock-creek-website-contact",
@@ -9634,7 +8486,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/10 17:30:49",
+        "localTime": "2026/8/10 17:52:08",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -9661,7 +8513,7 @@
       "discoveredAt": "2026-07-16T05:03:53.170Z",
       "firstPartyChannelVerification": {
         "status": "unreachable",
-        "verifiedAt": "2026-08-10T04:05:28.228Z",
+        "verifiedAt": "2026-08-10T09:52:15.537Z",
         "evidenceUrl": "https://www.rockcreek.com/",
         "httpStatus": 0,
         "signals": [],
@@ -9748,7 +8600,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/10 17:30:49",
+        "localTime": "2026/8/10 17:52:08",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -9866,7 +8718,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/10 17:30:49",
+        "localTime": "2026/8/10 17:52:08",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -9985,7 +8837,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/10 17:30:49",
+        "localTime": "2026/8/10 17:52:08",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -10099,7 +8951,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/10 17:30:49",
+        "localTime": "2026/8/10 17:52:08",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -10214,7 +9066,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/10 17:30:49",
+        "localTime": "2026/8/10 17:52:08",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -10328,7 +9180,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/10 17:30:49",
+        "localTime": "2026/8/10 17:52:08",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -10342,7 +9194,7 @@
       "websiteContactMessage": "Dear Bivouac Outdoor Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
       "websiteContactFlow": "open_official_contact_us_fill_attach_auto_submit",
       "action": "email_priority",
-      "reason": "official_public_business_email_verified",
+      "reason": "official_website_contact_channel",
       "alternateChannels": {
         "linkedin": "",
         "instagram": "",
@@ -10350,7 +9202,7 @@
         "websiteContact": "https://www.bivouac.co.nz/"
       },
       "invalidChannels": {},
-      "identitySource": "official homepage found; exact buyer/contact path still requires verification",
+      "identitySource": "official website contact path + Google buyer/contact query",
       "channelPriority": 3,
       "discoveredAt": "2026-07-14T04:02:10.362Z",
       "firstPartyChannelVerification": {
@@ -10380,7 +9232,7 @@
       "dealProbabilityScore": 186,
       "priorityScore": 211,
       "potentialSource": "google_linkedin_social_refill",
-      "nextAction": "official_business_email_contact",
+      "nextAction": "official_website_or_email_contact",
       "executionReadiness": {
         "ready": true,
         "gate": "official_business_email",
@@ -10444,7 +9296,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/10 17:30:49",
+        "localTime": "2026/8/10 17:52:08",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -10558,7 +9410,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/10 17:30:49",
+        "localTime": "2026/8/10 17:52:08",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -10677,7 +9529,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/10 17:30:49",
+        "localTime": "2026/8/10 17:52:08",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -10792,7 +9644,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/Dublin",
-        "localTime": "Mon 10:31",
+        "localTime": "Mon 10:52",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -10884,7 +9736,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/London",
-        "localTime": "Mon 10:31",
+        "localTime": "Mon 10:52",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -10976,7 +9828,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/Dublin",
-        "localTime": "Mon 10:31",
+        "localTime": "Mon 10:52",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -11066,7 +9918,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/London",
-        "localTime": "Mon 10:31",
+        "localTime": "Mon 10:52",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -11256,58 +10108,6 @@
       }
     },
     {
-      "id": "sheet_1779293110195_0f1r27koe",
-      "name": "Sage Boyer",
-      "company": "TAHOE SPORTS HUB",
-      "role": "",
-      "category": "okki",
-      "ka_flag": false,
-      "priority": "?",
-      "status": "Pending",
-      "keyword_used": "",
-      "message": "",
-      "email": "sage@beautiful.ai",
-      "source": "okki",
-      "country": "",
-      "countryEn": "",
-      "platform": "email",
-      "fitScore": 77,
-      "fitTier": "B",
-      "sourceType": "customer_table",
-      "website": "",
-      "url": "",
-      "platformUrl": "",
-      "linkedinUrl": "",
-      "linkedinSearchUrl": "https://www.linkedin.com/search/results/all/?keywords=TAHOE%20SPORTS%20HUB%20buyer%20outdoor%20LinkedIn",
-      "googleSearchUrl": "https://www.google.com/search?q=TAHOE%20SPORTS%20HUB%20outdoor%20buyer%20partnership%20contact",
-      "contactSearchUrl": "https://www.google.com/search?q=TAHOE%20SPORTS%20HUB%20outdoor%20buyer%20partnership%20contact",
-      "dataSources": [
-        "customer_table"
-      ],
-      "background": "",
-      "buyerPersona": "",
-      "marketStatus": "",
-      "taskId": "sheet_1779293110195_0f1r27koe",
-      "action": "email_priority",
-      "reason": "official_website_contact_channel",
-      "lastStatus": "",
-      "lastEvidence": "",
-      "lastTouch": "",
-      "previouslyContacted": false,
-      "targetRegion": "other",
-      "targetRegionScore": 0,
-      "contactChannelScore": 0,
-      "dealProbabilityScore": 77,
-      "priorityScore": 77,
-      "potentialSource": "customer_table",
-      "nextAction": "official_website_or_email_contact",
-      "executionReadiness": {
-        "ready": false,
-        "gate": "enrichment_required",
-        "reason": "public_business_email_requires_verification"
-      }
-    },
-    {
       "id": "google-customer-bergfreunde-website-contact",
       "name": "Bergfreunde",
       "company": "Bergfreunde",
@@ -11364,7 +10164,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/Berlin",
-        "localTime": "Mon 11:31",
+        "localTime": "Mon 11:52",
         "window": "outside_work_hours",
         "nextBest": "Europe/Berlin afternoon",
         "weight": 0
@@ -11462,7 +10262,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/Paris",
-        "localTime": "Mon 11:31",
+        "localTime": "Mon 11:52",
         "window": "outside_work_hours",
         "nextBest": "Europe/Paris afternoon",
         "weight": 0
@@ -11502,106 +10302,6 @@
       "contactChannelScore": 13,
       "dealProbabilityScore": 221,
       "priorityScore": 221
-    },
-    {
-      "id": "google-customer-barrabes-website-contact",
-      "name": "Barrabes",
-      "company": "Barrabes",
-      "customerType": "key_account",
-      "discoveryMode": "autonomous_refill",
-      "country": "Spain",
-      "countryEn": "Spain",
-      "fitScore": 89,
-      "fitTier": "A",
-      "marketScore": 4.5,
-      "marketStatus": "open",
-      "agencyState": "open",
-      "agentCompany": "",
-      "keyword": "verified outdoor, camping, travel and consumer electronics retail channel",
-      "role": "Outdoor electronics, camping accessories, travel products or consumer electronics category buyer.",
-      "background": "Barrabes is listed or qualified as an outdoor/camping specialty retail prospect with assortment fit for lightweight outdoor electrics and practical high-rotation 3C products.",
-      "buyerPersona": "Outdoor electronics, camping accessories, travel products or consumer electronics category buyer.",
-      "targetMarkets": "",
-      "excludedMarkets": "",
-      "productCategory": "verified outdoor, camping, travel and consumer electronics retail channel",
-      "businessModel": "Retail Chain",
-      "productFit": "FLEXTAIL portable pumps, outdoor power, camping lighting and compact camping accessories",
-      "opportunity": "Barrabes is listed or qualified as an outdoor/camping specialty retail prospect with assortment fit for lightweight outdoor electrics and practical high-rotation 3C products.",
-      "linkedin_url": "",
-      "linkedin": "",
-      "publicEmail": "",
-      "contactEmail": "",
-      "vendorPortal": "https://www.barrabes.com/",
-      "contactPhone": "",
-      "contactNote": "",
-      "publicEmailStatus": "",
-      "emailVerificationStatus": "",
-      "emailEvidence": "",
-      "emailEvidenceUrl": "",
-      "website": "https://www.barrabes.com/",
-      "evidenceUrl": "https://www.google.com/search?q=%22Barrabes%22%20%22verified%20outdoor%2C%20camping%2C%20travel%20and%20consumer%20electronics%20retail%20channel%22%20%22Spain%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "sourceEvidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
-      "externalVerificationStatus": "",
-      "query": "https://www.google.com/search?q=%22Barrabes%22%20%22verified%20outdoor%2C%20camping%2C%20travel%20and%20consumer%20electronics%20retail%20channel%22%20%22Spain%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "source": "google_customer_discovery",
-      "sourceType": "google",
-      "discoveryProvider": "google",
-      "channel": "",
-      "identityStatus": "verified",
-      "officialSocialProfileVerified": false,
-      "socialProfileEvidenceUrl": "",
-      "socialProfileVerifiedAt": "",
-      "profiledAt": "",
-      "partnershipStatus": "",
-      "doNotOutreach": false,
-      "automationStatus": "",
-      "partnerNote": "",
-      "sendStatus": "",
-      "workingTime": {
-        "dueNow": false,
-        "timeZone": "Europe/Madrid",
-        "localTime": "Mon 11:31",
-        "window": "outside_work_hours",
-        "nextBest": "Europe/Madrid afternoon",
-        "weight": 0
-      },
-      "platform": "website_form",
-      "channelType": "website_form",
-      "platformUrl": "https://www.barrabes.com/",
-      "url": "https://www.barrabes.com/",
-      "contactUrl": "https://www.barrabes.com/",
-      "contactSearchUrl": "https://www.google.com/search?q=site%3Awww.barrabes.com%20%22Barrabes%22%20contact%20buyer%20wholesale%20email%20vendor",
-      "emailFrom": "leo@flextailgear.com",
-      "websiteContactSubject": "FLEXTAIL retail partnership | 2026 assortment",
-      "websiteContactMessage": "Dear Barrabes Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
-      "websiteContactFlow": "open_official_contact_us_fill_attach_auto_submit",
-      "action": "verify_target",
-      "reason": "homepage_only_contact_path_requires_verification",
-      "alternateChannels": {
-        "linkedin": "",
-        "instagram": "",
-        "facebook": "",
-        "websiteContact": "https://www.barrabes.com/"
-      },
-      "invalidChannels": {},
-      "identitySource": "official homepage found; exact buyer/contact path still requires verification",
-      "channelPriority": 3,
-      "discoveredAt": "2026-07-14T04:02:10.362Z",
-      "firstPartyChannelVerification": {
-        "status": "checked",
-        "verifiedAt": "2026-08-10T09:23:21.622Z",
-        "evidenceUrl": "https://www.barrabes.com/",
-        "httpStatus": 200,
-        "signals": [
-          "form_control"
-        ],
-        "error": ""
-      },
-      "targetRegion": "europe",
-      "targetRegionScore": 45,
-      "contactChannelScore": 13,
-      "dealProbabilityScore": 219,
-      "priorityScore": 219
     },
     {
       "id": "google-customer-de-wit-schijndel-website-contact",
@@ -11660,7 +10360,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Asia/Shanghai",
-        "localTime": "Mon 17:31",
+        "localTime": "Mon 17:52",
         "window": "outside_work_hours",
         "nextBest": "Asia/Shanghai morning",
         "weight": 0
@@ -11760,7 +10460,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/Paris",
-        "localTime": "Mon 11:31",
+        "localTime": "Mon 11:52",
         "window": "outside_work_hours",
         "nextBest": "Europe/Paris afternoon",
         "weight": 0
@@ -11791,104 +10491,6 @@
         "status": "unreachable",
         "verifiedAt": "2026-08-10T09:23:21.447Z",
         "evidenceUrl": "https://www.ekosport.fr/",
-        "httpStatus": 403,
-        "signals": [],
-        "error": ""
-      },
-      "targetRegion": "europe",
-      "targetRegionScore": 45,
-      "contactChannelScore": 13,
-      "dealProbabilityScore": 219,
-      "priorityScore": 219
-    },
-    {
-      "id": "google-customer-snowleader-website-contact",
-      "name": "Snowleader",
-      "company": "Snowleader",
-      "customerType": "key_account",
-      "discoveryMode": "autonomous_refill",
-      "country": "France",
-      "countryEn": "France",
-      "fitScore": 89,
-      "fitTier": "A",
-      "marketScore": 4.5,
-      "marketStatus": "open",
-      "agencyState": "open",
-      "agentCompany": "",
-      "keyword": "verified outdoor, camping, travel and consumer electronics retail channel",
-      "role": "Outdoor electronics, camping accessories, travel products or consumer electronics category buyer.",
-      "background": "Snowleader is listed or qualified as an outdoor/camping specialty retail prospect with assortment fit for lightweight outdoor electrics and practical high-rotation 3C products.",
-      "buyerPersona": "Outdoor electronics, camping accessories, travel products or consumer electronics category buyer.",
-      "targetMarkets": "",
-      "excludedMarkets": "",
-      "productCategory": "verified outdoor, camping, travel and consumer electronics retail channel",
-      "businessModel": "Retail Chain",
-      "productFit": "FLEXTAIL portable pumps, outdoor power, camping lighting and compact camping accessories",
-      "opportunity": "Snowleader is listed or qualified as an outdoor/camping specialty retail prospect with assortment fit for lightweight outdoor electrics and practical high-rotation 3C products.",
-      "linkedin_url": "",
-      "linkedin": "",
-      "publicEmail": "",
-      "contactEmail": "",
-      "vendorPortal": "https://www.snowleader.com/",
-      "contactPhone": "",
-      "contactNote": "",
-      "publicEmailStatus": "",
-      "emailVerificationStatus": "",
-      "emailEvidence": "",
-      "emailEvidenceUrl": "",
-      "website": "https://www.snowleader.com/",
-      "evidenceUrl": "https://www.google.com/search?q=%22Snowleader%22%20%22verified%20outdoor%2C%20camping%2C%20travel%20and%20consumer%20electronics%20retail%20channel%22%20%22France%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "sourceEvidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
-      "externalVerificationStatus": "",
-      "query": "https://www.google.com/search?q=%22Snowleader%22%20%22verified%20outdoor%2C%20camping%2C%20travel%20and%20consumer%20electronics%20retail%20channel%22%20%22France%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "source": "google_customer_discovery",
-      "sourceType": "google",
-      "discoveryProvider": "google",
-      "channel": "",
-      "identityStatus": "verified",
-      "officialSocialProfileVerified": false,
-      "socialProfileEvidenceUrl": "",
-      "socialProfileVerifiedAt": "",
-      "profiledAt": "",
-      "partnershipStatus": "",
-      "doNotOutreach": false,
-      "automationStatus": "",
-      "partnerNote": "",
-      "sendStatus": "",
-      "workingTime": {
-        "dueNow": false,
-        "timeZone": "Europe/Paris",
-        "localTime": "Mon 11:31",
-        "window": "outside_work_hours",
-        "nextBest": "Europe/Paris afternoon",
-        "weight": 0
-      },
-      "platform": "website_form",
-      "channelType": "website_form",
-      "platformUrl": "https://www.snowleader.com/",
-      "url": "https://www.snowleader.com/",
-      "contactUrl": "https://www.snowleader.com/",
-      "contactSearchUrl": "https://www.google.com/search?q=site%3Awww.snowleader.com%20%22Snowleader%22%20contact%20buyer%20wholesale%20email%20vendor",
-      "emailFrom": "leo@flextailgear.com",
-      "websiteContactSubject": "FLEXTAIL retail partnership | 2026 assortment",
-      "websiteContactMessage": "Dear Snowleader Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
-      "websiteContactFlow": "open_official_contact_us_fill_attach_auto_submit",
-      "action": "verify_target",
-      "reason": "homepage_only_contact_path_requires_verification",
-      "alternateChannels": {
-        "linkedin": "",
-        "instagram": "",
-        "facebook": "",
-        "websiteContact": "https://www.snowleader.com/"
-      },
-      "invalidChannels": {},
-      "identitySource": "official homepage found; exact buyer/contact path still requires verification",
-      "channelPriority": 3,
-      "discoveredAt": "2026-07-14T04:02:10.362Z",
-      "firstPartyChannelVerification": {
-        "status": "unreachable",
-        "verifiedAt": "2026-08-10T09:23:17.525Z",
-        "evidenceUrl": "https://www.snowleader.com/",
         "httpStatus": 403,
         "signals": [],
         "error": ""
@@ -11956,7 +10558,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/Berlin",
-        "localTime": "Mon 11:31",
+        "localTime": "Mon 11:52",
         "window": "outside_work_hours",
         "nextBest": "Europe/Berlin afternoon",
         "weight": 0
@@ -12054,7 +10656,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Asia/Shanghai",
-        "localTime": "Mon 17:31",
+        "localTime": "Mon 17:52",
         "window": "outside_work_hours",
         "nextBest": "Asia/Shanghai morning",
         "weight": 0
@@ -12152,7 +10754,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Asia/Shanghai",
-        "localTime": "Mon 17:31",
+        "localTime": "Mon 17:52",
         "window": "outside_work_hours",
         "nextBest": "Asia/Shanghai morning",
         "weight": 0
@@ -12252,7 +10854,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Mon 05:31",
+        "localTime": "Mon 05:52",
         "window": "outside_work_hours",
         "nextBest": "America/Toronto morning",
         "weight": 0
@@ -12352,7 +10954,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Mon 05:31",
+        "localTime": "Mon 05:52",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -12458,7 +11060,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Mon 05:31",
+        "localTime": "Mon 05:52",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -12564,7 +11166,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Mon 05:31",
+        "localTime": "Mon 05:52",
         "window": "outside_work_hours",
         "nextBest": "America/Toronto morning",
         "weight": 0
@@ -12662,7 +11264,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Mon 05:31",
+        "localTime": "Mon 05:52",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -12691,7 +11293,7 @@
       "discoveredAt": "2026-07-16T05:03:53.170Z",
       "firstPartyChannelVerification": {
         "status": "unreachable",
-        "verifiedAt": "2026-08-10T09:31:04.055Z",
+        "verifiedAt": "2026-08-10T09:52:08.731Z",
         "evidenceUrl": "https://www.hikingshack.com/",
         "httpStatus": 403,
         "signals": [],
@@ -12760,7 +11362,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Mon 05:31",
+        "localTime": "Mon 05:52",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -12858,7 +11460,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/Berlin",
-        "localTime": "Mon 11:31",
+        "localTime": "Mon 11:52",
         "window": "outside_work_hours",
         "nextBest": "Europe/Berlin afternoon",
         "weight": 0
@@ -12950,7 +11552,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Mon 05:31",
+        "localTime": "Mon 05:52",
         "window": "outside_work_hours",
         "nextBest": "America/Toronto morning",
         "weight": 0
@@ -13044,7 +11646,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Mon 05:31",
+        "localTime": "Mon 05:52",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -13144,7 +11746,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Mon 05:31",
+        "localTime": "Mon 05:52",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -13244,7 +11846,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Pacific/Auckland",
-        "localTime": "Mon 21:31",
+        "localTime": "Mon 21:52",
         "window": "outside_work_hours",
         "nextBest": "Pacific/Auckland morning",
         "weight": 0
@@ -13336,7 +11938,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/Berlin",
-        "localTime": "Mon 11:31",
+        "localTime": "Mon 11:52",
         "window": "outside_work_hours",
         "nextBest": "Europe/Berlin afternoon",
         "weight": 0
@@ -13426,7 +12028,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/Berlin",
-        "localTime": "Mon 11:31",
+        "localTime": "Mon 11:52",
         "window": "outside_work_hours",
         "nextBest": "Europe/Berlin afternoon",
         "weight": 0
@@ -13516,7 +12118,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Mon 05:31",
+        "localTime": "Mon 05:52",
         "window": "outside_work_hours",
         "nextBest": "America/Toronto morning",
         "weight": 0
@@ -13608,7 +12210,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Pacific/Auckland",
-        "localTime": "Mon 21:31",
+        "localTime": "Mon 21:52",
         "window": "outside_work_hours",
         "nextBest": "Pacific/Auckland morning",
         "weight": 0
@@ -14487,15 +13089,6 @@
       "requiredEvidence": "first_party_official_channel_and_executable_control"
     },
     {
-      "id": "google-customer-barrabes-website-contact",
-      "company": "Barrabes",
-      "platform": "website_form",
-      "reason": "website_contact_capability_not_verified",
-      "officialWebsite": "https://www.barrabes.com/",
-      "evidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
-      "requiredEvidence": "first_party_official_channel_and_executable_control"
-    },
-    {
       "id": "google-customer-de-wit-schijndel-website-contact",
       "company": "De Wit Schijndel",
       "platform": "website_form",
@@ -14510,15 +13103,6 @@
       "platform": "website_form",
       "reason": "website_contact_capability_not_verified",
       "officialWebsite": "https://www.ekosport.fr/",
-      "evidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
-      "requiredEvidence": "first_party_official_channel_and_executable_control"
-    },
-    {
-      "id": "google-customer-snowleader-website-contact",
-      "company": "Snowleader",
-      "platform": "website_form",
-      "reason": "website_contact_capability_not_verified",
-      "officialWebsite": "https://www.snowleader.com/",
       "evidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
       "requiredEvidence": "first_party_official_channel_and_executable_control"
     },
@@ -14555,15 +13139,6 @@
       "platform": "website_form",
       "reason": "website_contact_capability_not_verified",
       "officialWebsite": "https://www.outdoorxl.nl/",
-      "evidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
-      "requiredEvidence": "first_party_official_channel_and_executable_control"
-    },
-    {
-      "id": "google-customer-sportpursuit-website-contact",
-      "company": "SportPursuit",
-      "platform": "website_form",
-      "reason": "website_contact_capability_not_verified",
-      "officialWebsite": "https://www.sportpursuit.com/",
       "evidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
       "requiredEvidence": "first_party_official_channel_and_executable_control"
     },
@@ -14660,15 +13235,6 @@
     {
       "id": "sheet_1779293110195_g0uwgglwc",
       "company": "JOHN DOYLE DISTRIBUTORS",
-      "platform": "email",
-      "reason": "public_business_email_requires_verification",
-      "officialWebsite": "",
-      "evidenceUrl": "",
-      "requiredEvidence": "first_party_official_channel_and_executable_control"
-    },
-    {
-      "id": "sheet_1779293110195_0f1r27koe",
-      "company": "TAHOE SPORTS HUB",
       "platform": "email",
       "reason": "public_business_email_requires_verification",
       "officialWebsite": "",
@@ -14867,7 +13433,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/London",
-        "localTime": "Mon 10:31",
+        "localTime": "Mon 10:52",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -14924,7 +13490,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/London",
-        "localTime": "Mon 10:31",
+        "localTime": "Mon 10:52",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -14981,7 +13547,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/London",
-        "localTime": "Mon 10:31",
+        "localTime": "Mon 10:52",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -15038,7 +13604,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Asia/Kolkata",
-        "localTime": "Mon 15:01",
+        "localTime": "Mon 15:22",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
@@ -15095,7 +13661,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Mon 05:31",
+        "localTime": "Mon 05:52",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -15152,7 +13718,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Mon 05:31",
+        "localTime": "Mon 05:52",
         "window": "outside_work_hours",
         "nextBest": "America/Toronto morning",
         "weight": 0
@@ -15209,7 +13775,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Mon 05:31",
+        "localTime": "Mon 05:52",
         "window": "outside_work_hours",
         "nextBest": "America/Toronto morning",
         "weight": 0
@@ -15266,7 +13832,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Asia/Jakarta",
-        "localTime": "Mon 16:31",
+        "localTime": "Mon 16:52",
         "window": "outside_work_hours",
         "nextBest": "Asia/Jakarta morning",
         "weight": 0
@@ -15323,7 +13889,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Australia/Sydney",
-        "localTime": "Mon 19:31",
+        "localTime": "Mon 19:52",
         "window": "outside_work_hours",
         "nextBest": "Australia/Sydney morning",
         "weight": 0
@@ -15380,7 +13946,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Pacific/Auckland",
-        "localTime": "Mon 21:31",
+        "localTime": "Mon 21:52",
         "window": "outside_work_hours",
         "nextBest": "Pacific/Auckland morning",
         "weight": 0
@@ -15437,7 +14003,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Pacific/Auckland",
-        "localTime": "Mon 21:31",
+        "localTime": "Mon 21:52",
         "window": "outside_work_hours",
         "nextBest": "Pacific/Auckland morning",
         "weight": 0
@@ -15494,7 +14060,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Pacific/Auckland",
-        "localTime": "Mon 21:31",
+        "localTime": "Mon 21:52",
         "window": "outside_work_hours",
         "nextBest": "Pacific/Auckland morning",
         "weight": 0
@@ -15551,7 +14117,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Pacific/Auckland",
-        "localTime": "Mon 21:31",
+        "localTime": "Mon 21:52",
         "window": "outside_work_hours",
         "nextBest": "Pacific/Auckland morning",
         "weight": 0
@@ -15608,7 +14174,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Pacific/Auckland",
-        "localTime": "Mon 21:31",
+        "localTime": "Mon 21:52",
         "window": "outside_work_hours",
         "nextBest": "Pacific/Auckland morning",
         "weight": 0
@@ -15690,7 +14256,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/London",
-        "localTime": "Mon 10:31",
+        "localTime": "Mon 10:52",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -15806,7 +14372,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/Dublin",
-        "localTime": "Mon 10:31",
+        "localTime": "Mon 10:52",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -15923,7 +14489,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/London",
-        "localTime": "Mon 10:31",
+        "localTime": "Mon 10:52",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -15970,6 +14536,111 @@
       "lastStatus": "sent_confirmed",
       "lastEvidence": "official_public_business_email;recipient_exact_input:enquiries@cotswoldoutdoor.com;sender_identity_verified:Leo@flextailgear.com;subject_body_consistency_gate_passed;send_click_once;composer_closed;sent_toast_visible;sent_folder_exact_subject_and_company_body_visible:2026-08-05T21:02+08:00",
       "lastTouch": "2026-08-05T13:02:00.000Z"
+    },
+    {
+      "id": "google-customer-trekitt-website-contact",
+      "name": "Trekitt",
+      "company": "Trekitt",
+      "customerType": "key_account",
+      "discoveryMode": "autonomous_refill",
+      "country": "United Kingdom",
+      "countryEn": "United Kingdom",
+      "fitScore": 90,
+      "fitTier": "A+",
+      "marketScore": 4.5,
+      "marketStatus": "open",
+      "agencyState": "open",
+      "agentCompany": "",
+      "keyword": "verified outdoor, camping, travel and consumer electronics retail channel",
+      "role": "Outdoor electronics, camping accessories, travel products or consumer electronics category buyer.",
+      "background": "Trekitt is listed or qualified as an outdoor/camping specialty retail prospect with assortment fit for lightweight outdoor electrics and practical high-rotation 3C products.",
+      "buyerPersona": "Outdoor electronics, camping accessories, travel products or consumer electronics category buyer.",
+      "targetMarkets": "",
+      "excludedMarkets": "",
+      "productCategory": "verified outdoor, camping, travel and consumer electronics retail channel",
+      "businessModel": "Retail Chain",
+      "productFit": "FLEXTAIL portable pumps, outdoor power, camping lighting and compact camping accessories",
+      "opportunity": "Trekitt is listed or qualified as an outdoor/camping specialty retail prospect with assortment fit for lightweight outdoor electrics and practical high-rotation 3C products.",
+      "linkedin_url": "",
+      "linkedin": "",
+      "publicEmail": "support@trekitt.co.uk",
+      "contactEmail": "support@trekitt.co.uk",
+      "vendorPortal": "https://www.trekitt.co.uk/pages/contact/",
+      "contactPhone": "",
+      "contactNote": "",
+      "publicEmailStatus": "Official company-domain support address published on Trekitt contact and FAQ pages; route the supplier proposal to the category buyer.",
+      "emailVerificationStatus": "official_public_business_email",
+      "emailEvidence": "official_contact_page",
+      "emailEvidenceUrl": "https://www.trekitt.co.uk/pages/contact/",
+      "website": "https://www.trekitt.co.uk/",
+      "evidenceUrl": "https://www.google.com/search?q=%22Trekitt%22%20%22verified%20outdoor%2C%20camping%2C%20travel%20and%20consumer%20electronics%20retail%20channel%22%20%22United%20Kingdom%22%20buyer%20OR%20wholesale%20OR%20contact",
+      "sourceEvidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
+      "externalVerificationStatus": "official_contact_form_verified",
+      "query": "https://www.google.com/search?q=%22Trekitt%22%20%22verified%20outdoor%2C%20camping%2C%20travel%20and%20consumer%20electronics%20retail%20channel%22%20%22United%20Kingdom%22%20buyer%20OR%20wholesale%20OR%20contact",
+      "source": "google_customer_discovery",
+      "sourceType": "google",
+      "discoveryProvider": "google",
+      "channel": "",
+      "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
+      "socialProfileEvidenceUrl": "",
+      "socialProfileVerifiedAt": "",
+      "profiledAt": "",
+      "partnershipStatus": "",
+      "doNotOutreach": false,
+      "automationStatus": "",
+      "partnerNote": "",
+      "sendStatus": "",
+      "workingTime": {
+        "dueNow": true,
+        "timeZone": "Europe/London",
+        "localTime": "Mon 10:52",
+        "window": "morning",
+        "nextBest": "now",
+        "weight": 1
+      },
+      "platform": "website_form",
+      "channelType": "website_form",
+      "platformUrl": "https://www.trekitt.co.uk/pages/contact/",
+      "url": "https://www.trekitt.co.uk/pages/contact/",
+      "contactUrl": "https://www.trekitt.co.uk/pages/contact/",
+      "contactSearchUrl": "https://www.google.com/search?q=site%3Awww.trekitt.co.uk%20%22Trekitt%22%20contact%20buyer%20wholesale%20email%20vendor",
+      "emailFrom": "leo@flextailgear.com",
+      "websiteContactSubject": "FLEXTAIL retail partnership | 2026 assortment",
+      "websiteContactMessage": "Dear Trekitt Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
+      "websiteContactFlow": "open_official_contact_us_fill_attach_auto_submit",
+      "action": "cooldown",
+      "reason": "previous_customer_development_no_repeat",
+      "alternateChannels": {
+        "linkedin": "",
+        "instagram": "",
+        "facebook": "",
+        "websiteContact": "https://www.trekitt.co.uk/pages/contact/"
+      },
+      "invalidChannels": {},
+      "identitySource": "official website contact path + Google buyer/contact query",
+      "channelPriority": 3,
+      "discoveredAt": "2026-07-14T04:02:10.362Z",
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-10T09:23:11.994Z",
+        "evidenceUrl": "https://www.trekitt.co.uk/",
+        "httpStatus": 200,
+        "signals": [
+          "form_control",
+          "contact_invitation"
+        ],
+        "error": ""
+      },
+      "contactCapabilityVerified": true,
+      "targetRegion": "europe",
+      "targetRegionScore": 45,
+      "contactChannelScore": 25,
+      "dealProbabilityScore": 232,
+      "priorityScore": 232,
+      "lastStatus": "sent_confirmed",
+      "lastEvidence": "official_contact_page_publishes_support_at_trekitt_co_uk;exact_recipient_tooltip_sender_subject_body_gate_passed;send_clicked_once;alibaba_sent_confirmation_visible;composer_closed;inbox_request_received_acknowledgement_visible",
+      "lastTouch": "2026-08-10T09:38:00.000Z"
     },
     {
       "id": "google-customer-ultralight-outdoor-gear-website-contact",
@@ -16028,7 +14699,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/London",
-        "localTime": "Mon 10:31",
+        "localTime": "Mon 10:52",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -16114,7 +14785,7 @@
       "emailEvidenceUrl": "https://www.tiso.com/pages/contact",
       "website": "https://www.tiso.com/",
       "evidenceUrl": "https://www.google.com/search?q=%22Tiso%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22United%20Kingdom%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "sourceEvidenceUrl": "verified outdoor retailer official website and public social profile refill",
+      "sourceEvidenceUrl": "https://www.tiso.com/pages/contact",
       "externalVerificationStatus": "official_contact_form_verified",
       "query": "https://www.google.com/search?q=%22Tiso%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22United%20Kingdom%22%20buyer%20OR%20wholesale%20OR%20contact",
       "source": "google_customer_discovery",
@@ -16134,7 +14805,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/London",
-        "localTime": "Mon 10:31",
+        "localTime": "Mon 10:52",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -16163,11 +14834,12 @@
       "discoveredAt": "2026-07-16T05:03:53.170Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-10T07:05:22.342Z",
-        "evidenceUrl": "https://www.tiso.com/",
+        "verifiedAt": "2026-08-10T09:52:16.993Z",
+        "evidenceUrl": "https://www.tiso.com/pages/contact",
         "httpStatus": 200,
         "signals": [
           "form_control",
+          "public_business_email",
           "contact_invitation"
         ],
         "error": ""
@@ -16181,6 +14853,107 @@
       "lastStatus": "sent_confirmed",
       "lastEvidence": "official_contact_page_explicitly_routes_organisations_seeking_to_work_with_Tiso_to_mail_at_tiso_co_uk;sender_Leo_at_flextailgear_verified;recipient_subject_body_gate_passed;send_clicked_once;alibaba_sent_confirmation_visible;composer_closed",
       "lastTouch": "2026-08-10T09:20:00.000Z"
+    },
+    {
+      "id": "google-customer-sportpursuit-website-contact",
+      "name": "SportPursuit",
+      "company": "SportPursuit",
+      "customerType": "key_account",
+      "discoveryMode": "autonomous_refill",
+      "country": "United Kingdom",
+      "countryEn": "United Kingdom",
+      "fitScore": 87,
+      "fitTier": "A",
+      "marketScore": 4.5,
+      "marketStatus": "open",
+      "agencyState": "open",
+      "agentCompany": "",
+      "keyword": "verified outdoor, camping, travel and consumer electronics retail channel",
+      "role": "Outdoor electronics, camping accessories, travel products or consumer electronics category buyer.",
+      "background": "SportPursuit is listed or qualified as an outdoor/camping specialty retail prospect with assortment fit for lightweight outdoor electrics and practical high-rotation 3C products.",
+      "buyerPersona": "Outdoor electronics, camping accessories, travel products or consumer electronics category buyer.",
+      "targetMarkets": "",
+      "excludedMarkets": "",
+      "productCategory": "verified outdoor, camping, travel and consumer electronics retail channel",
+      "businessModel": "Retail Chain",
+      "productFit": "FLEXTAIL portable pumps, outdoor power, camping lighting and compact camping accessories",
+      "opportunity": "SportPursuit is listed or qualified as an outdoor/camping specialty retail prospect with assortment fit for lightweight outdoor electrics and practical high-rotation 3C products.",
+      "linkedin_url": "",
+      "linkedin": "",
+      "publicEmail": "team@sportpursuit.com",
+      "contactEmail": "team@sportpursuit.com",
+      "vendorPortal": "https://www.sportpursuit.com/terms-conditions",
+      "contactPhone": "",
+      "contactNote": "",
+      "publicEmailStatus": "Official company-domain address published in SportPursuit terms and contact pages; route the supplier proposal to the category buyer or brand-partnership owner.",
+      "emailVerificationStatus": "official_public_business_email",
+      "emailEvidence": "official_contact_page",
+      "emailEvidenceUrl": "https://www.sportpursuit.com/terms-conditions",
+      "website": "https://www.sportpursuit.com/",
+      "evidenceUrl": "https://www.google.com/search?q=%22SportPursuit%22%20%22verified%20outdoor%2C%20camping%2C%20travel%20and%20consumer%20electronics%20retail%20channel%22%20%22United%20Kingdom%22%20buyer%20OR%20wholesale%20OR%20contact",
+      "sourceEvidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
+      "externalVerificationStatus": "",
+      "query": "https://www.google.com/search?q=%22SportPursuit%22%20%22verified%20outdoor%2C%20camping%2C%20travel%20and%20consumer%20electronics%20retail%20channel%22%20%22United%20Kingdom%22%20buyer%20OR%20wholesale%20OR%20contact",
+      "source": "google_customer_discovery",
+      "sourceType": "google",
+      "discoveryProvider": "google",
+      "channel": "",
+      "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
+      "socialProfileEvidenceUrl": "",
+      "socialProfileVerifiedAt": "",
+      "profiledAt": "",
+      "partnershipStatus": "",
+      "doNotOutreach": false,
+      "automationStatus": "",
+      "partnerNote": "",
+      "sendStatus": "",
+      "workingTime": {
+        "dueNow": true,
+        "timeZone": "Europe/London",
+        "localTime": "Mon 10:52",
+        "window": "morning",
+        "nextBest": "now",
+        "weight": 1
+      },
+      "platform": "website_form",
+      "channelType": "website_form",
+      "platformUrl": "https://www.sportpursuit.com/terms-conditions",
+      "url": "https://www.sportpursuit.com/terms-conditions",
+      "contactUrl": "https://www.sportpursuit.com/terms-conditions",
+      "contactSearchUrl": "https://www.google.com/search?q=site%3Awww.sportpursuit.com%20%22SportPursuit%22%20contact%20buyer%20wholesale%20email%20vendor",
+      "emailFrom": "leo@flextailgear.com",
+      "websiteContactSubject": "FLEXTAIL retail partnership | 2026 assortment",
+      "websiteContactMessage": "Dear SportPursuit Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
+      "websiteContactFlow": "open_official_contact_us_fill_attach_auto_submit",
+      "action": "cooldown",
+      "reason": "previous_customer_development_no_repeat",
+      "alternateChannels": {
+        "linkedin": "",
+        "instagram": "",
+        "facebook": "",
+        "websiteContact": "https://www.sportpursuit.com/terms-conditions"
+      },
+      "invalidChannels": {},
+      "identitySource": "official website contact path + Google buyer/contact query",
+      "channelPriority": 3,
+      "discoveredAt": "2026-07-14T04:02:10.362Z",
+      "firstPartyChannelVerification": {
+        "status": "unreachable",
+        "verifiedAt": "2026-08-10T09:30:58.805Z",
+        "evidenceUrl": "https://www.sportpursuit.com/",
+        "httpStatus": 403,
+        "signals": [],
+        "error": ""
+      },
+      "targetRegion": "europe",
+      "targetRegionScore": 45,
+      "contactChannelScore": 25,
+      "dealProbabilityScore": 229,
+      "priorityScore": 229,
+      "lastStatus": "sent_confirmed",
+      "lastEvidence": "official_terms_publish_team_at_sportpursuit_com;exact_recipient_sender_subject_body_gate_passed;send_clicked_once;alibaba_sent_confirmation_visible;composer_closed;two_inbox_customer_service_acknowledgements_visible",
+      "lastTouch": "2026-08-10T09:43:00.000Z"
     },
     {
       "linkedinUrl": "https://uk.linkedin.com/company/go-outdoors-ltd",
@@ -16253,7 +15026,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/London",
-        "localTime": "Mon 10:31",
+        "localTime": "Mon 10:52",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -16358,7 +15131,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/London",
-        "localTime": "Mon 10:31",
+        "localTime": "Mon 10:52",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -16445,7 +15218,7 @@
       "emailEvidenceUrl": "",
       "website": "https://www.mountainwarehouse.com/",
       "evidenceUrl": "https://www.google.com/search?q=%22Mountain%20Warehouse%22%20%22outdoor%20clothing%20and%20equipment%20retail%20chain%22%20%22United%20Kingdom%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "sourceEvidenceUrl": "https://www.mountainwarehouse.com/help/contact-us/",
+      "sourceEvidenceUrl": "https://www.mountainwarehouse.com/",
       "externalVerificationStatus": "official_contact_form_verified",
       "query": "https://www.google.com/search?q=%22Mountain%20Warehouse%22%20%22outdoor%20clothing%20and%20equipment%20retail%20chain%22%20%22United%20Kingdom%22%20buyer%20OR%20wholesale%20OR%20contact",
       "source": "google_customer_discovery",
@@ -16465,7 +15238,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/London",
-        "localTime": "Mon 10:31",
+        "localTime": "Mon 10:52",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -16570,7 +15343,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/London",
-        "localTime": "Mon 10:31",
+        "localTime": "Mon 10:52",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -16671,7 +15444,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/London",
-        "localTime": "Mon 10:31",
+        "localTime": "Mon 10:52",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -16772,7 +15545,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/London",
-        "localTime": "Mon 10:31",
+        "localTime": "Mon 10:52",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -16857,7 +15630,7 @@
       "emailEvidenceUrl": "",
       "website": "https://www.georgefisher.co.uk/",
       "evidenceUrl": "https://www.google.com/search?q=%22George%20Fisher%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22United%20Kingdom%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "sourceEvidenceUrl": "verified outdoor retailer official website and public social profile refill",
+      "sourceEvidenceUrl": "https://www.tiso.com/pages/george-fisher-landing?utm_source=georgefisher",
       "externalVerificationStatus": "official_contact_form_verified",
       "query": "https://www.google.com/search?q=%22George%20Fisher%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22United%20Kingdom%22%20buyer%20OR%20wholesale%20OR%20contact",
       "source": "google_customer_discovery",
@@ -16877,7 +15650,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/London",
-        "localTime": "Mon 10:31",
+        "localTime": "Mon 10:52",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -16906,7 +15679,7 @@
       "discoveredAt": "2026-07-16T05:03:53.170Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-10T07:05:23.500Z",
+        "verifiedAt": "2026-08-10T09:52:18.885Z",
         "evidenceUrl": "https://www.tiso.com/pages/george-fisher-landing?utm_source=georgefisher",
         "httpStatus": 200,
         "signals": [
@@ -16962,7 +15735,7 @@
       "emailEvidenceUrl": "",
       "website": "https://www.mountain-equipment.co.uk/",
       "evidenceUrl": "https://www.google.com/search?q=%22Mountain%20Equipment%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22United%20Kingdom%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "sourceEvidenceUrl": "verified outdoor retailer official website and public social profile refill",
+      "sourceEvidenceUrl": "https://www.mountain-equipment.com/",
       "externalVerificationStatus": "official_contact_form_verified",
       "query": "https://www.google.com/search?q=%22Mountain%20Equipment%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22United%20Kingdom%22%20buyer%20OR%20wholesale%20OR%20contact",
       "source": "google_customer_discovery",
@@ -16982,7 +15755,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/London",
-        "localTime": "Mon 10:31",
+        "localTime": "Mon 10:52",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -17011,7 +15784,7 @@
       "discoveredAt": "2026-07-16T05:03:53.170Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-10T07:05:25.005Z",
+        "verifiedAt": "2026-08-10T09:52:17.274Z",
         "evidenceUrl": "https://www.mountain-equipment.com/",
         "httpStatus": 200,
         "signals": [
@@ -17087,7 +15860,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/Dublin",
-        "localTime": "Mon 10:31",
+        "localTime": "Mon 10:52",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -17124,218 +15897,6 @@
       "lastStatus": "send_unconfirmed",
       "lastEvidence": "owner_confirmed_prior_customer_development;historical_contact_no_repeat;confirmed_by_business_owner_2026-08-04;do_not_contact_again",
       "lastTouch": "2026-07-14T08:07:55.732Z"
-    },
-    {
-      "linkedinUrl": "https://uk.linkedin.com/company/cotswold-outdoor",
-      "founded": "1997",
-      "headquarters": "Swindon, Wiltshire, United Kingdom",
-      "companyScale": "Part of Cotswold Outdoor Group; one of the largest UK outdoor retail groups",
-      "coverage": "United Kingdom",
-      "mainBrands": "Cotswold Outdoor, Snow+Rock, Runners Need group brands",
-      "salesChannel": "Stores and ecommerce",
-      "buyingCapability": "High; outdoor group/category buying route",
-      "decisionMaker": "Outdoor equipment buyer, category manager, group merchandising contact",
-      "publicEmail": "enquiries@cotswoldoutdoor.com",
-      "publicEmailStatus": "Official customer contact email; buyer email not publicly verified.",
-      "contactPhone": "01666 336447",
-      "vendorPortal": "https://help.cotswoldoutdoor.com/hc/en-gb/articles/21898663918866-Contact-Details",
-      "linkedinCompany": "https://uk.linkedin.com/company/cotswold-outdoor",
-      "contactNote": "Use enquiries/contact route to request vendor/category buyer routing.",
-      "dataSources": [
-        "Cotswold Outdoor contact details",
-        "Cotswold Outdoor Group sources"
-      ],
-      "id": "google-customer-cotswold-outdoor-facebook",
-      "name": "Cotswold Outdoor",
-      "company": "Cotswold Outdoor",
-      "customerType": "key_account",
-      "discoveryMode": "baseline_verified_pool",
-      "country": "United Kingdom",
-      "countryEn": "United Kingdom",
-      "fitScore": 90,
-      "fitTier": "A+",
-      "marketScore": 4.5,
-      "marketStatus": "open",
-      "agencyState": "open",
-      "agentCompany": "",
-      "keyword": "outdoor retail chain",
-      "role": "Outdoor product category buyer or partnership manager.",
-      "background": "UK specialty outdoor retailer for hiking, camping, travel, and technical outdoor products.",
-      "buyerPersona": "Outdoor product category buyer or partnership manager.",
-      "targetMarkets": "",
-      "excludedMarkets": "",
-      "productCategory": "outdoor retail chain",
-      "businessModel": "Retail Chain",
-      "productFit": "FLEXTAIL portable pumps, outdoor power, camping lighting and compact camping accessories",
-      "opportunity": "UK specialty outdoor retailer for hiking, camping, travel, and technical outdoor products.",
-      "linkedin_url": "https://uk.linkedin.com/company/cotswold-outdoor",
-      "linkedin": "https://uk.linkedin.com/company/cotswold-outdoor",
-      "contactEmail": "enquiries@cotswoldoutdoor.com",
-      "emailVerificationStatus": "official_public_business_email",
-      "emailEvidence": "first_party_live_page_cache",
-      "emailEvidenceUrl": "",
-      "website": "https://www.cotswoldoutdoor.com/",
-      "evidenceUrl": "https://www.google.com/search?q=%22Cotswold%20Outdoor%22%20%22outdoor%20retail%20chain%22%20%22United%20Kingdom%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "sourceEvidenceUrl": "https://www.cotswoldoutdoor.com/",
-      "externalVerificationStatus": "official_contact_form_verified",
-      "query": "https://www.google.com/search?q=%22Cotswold%20Outdoor%22%20%22outdoor%20retail%20chain%22%20%22United%20Kingdom%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "source": "google_customer_discovery",
-      "sourceType": "google",
-      "discoveryProvider": "google",
-      "channel": "",
-      "identityStatus": "verified",
-      "officialSocialProfileVerified": true,
-      "socialProfileEvidenceUrl": "https://www.cotswoldoutdoor.com/",
-      "socialProfileVerifiedAt": "2026-08-10T09:15:05.681Z",
-      "profiledAt": "2026-07-14T04:02:10.360Z",
-      "partnershipStatus": "",
-      "doNotOutreach": false,
-      "automationStatus": "",
-      "partnerNote": "",
-      "sendStatus": "",
-      "workingTime": {
-        "dueNow": true,
-        "timeZone": "Europe/London",
-        "localTime": "Mon 10:31",
-        "window": "morning",
-        "nextBest": "now",
-        "weight": 1
-      },
-      "platform": "facebook",
-      "platformUrl": "https://www.facebook.com/CotswoldOutdoor",
-      "url": "https://www.facebook.com/CotswoldOutdoor",
-      "action": "cooldown",
-      "reason": "previous_customer_development_no_repeat",
-      "alternateChannels": {
-        "linkedin": "https://uk.linkedin.com/company/cotswold-outdoor",
-        "instagram": "https://www.instagram.com/cotswoldoutdoor/",
-        "facebook": "https://www.facebook.com/CotswoldOutdoor",
-        "websiteContact": "https://www.cotswoldoutdoor.com/contact-us"
-      },
-      "invalidChannels": {},
-      "facebookStatus": "verified_official_page_candidate",
-      "identitySource": "official Facebook page candidate + official website + Google background query",
-      "channelPriority": 2,
-      "discoveredAt": "2026-07-14T04:02:10.362Z",
-      "firstPartyChannelVerification": {
-        "status": "checked",
-        "verifiedAt": "2026-08-10T09:15:05.681Z",
-        "evidenceUrl": "https://www.cotswoldoutdoor.com/",
-        "httpStatus": 200,
-        "signals": [
-          "form_control",
-          "contact_invitation"
-        ],
-        "error": ""
-      },
-      "contactCapabilityVerified": true,
-      "targetRegion": "europe",
-      "targetRegionScore": 45,
-      "contactChannelScore": 29,
-      "dealProbabilityScore": 236,
-      "priorityScore": 236,
-      "lastStatus": "sent_confirmed",
-      "lastEvidence": "official_public_business_email;recipient_exact_input:enquiries@cotswoldoutdoor.com;sender_identity_verified:Leo@flextailgear.com;subject_body_consistency_gate_passed;send_click_once;composer_closed;sent_toast_visible;sent_folder_exact_subject_and_company_body_visible:2026-08-05T21:02+08:00",
-      "lastTouch": "2026-08-05T13:02:00.000Z"
-    },
-    {
-      "id": "google-customer-tiso-facebook",
-      "name": "Tiso",
-      "company": "Tiso",
-      "customerType": "key_account",
-      "discoveryMode": "autonomous_refill",
-      "country": "United Kingdom",
-      "countryEn": "United Kingdom",
-      "fitScore": 84,
-      "fitTier": "A",
-      "marketScore": 4.5,
-      "marketStatus": "open",
-      "agencyState": "open",
-      "agentCompany": "",
-      "keyword": "verified outdoor, camping and travel retail social refill channel",
-      "role": "Outdoor, camping, travel accessories, ecommerce or category buyer.",
-      "background": "Tiso is a qualified outdoor, camping, travel or sport retail prospect with category fit for FLEXTAIL portable outdoor electrics and Vollyc practical 3C products.",
-      "buyerPersona": "Outdoor, camping, travel accessories, ecommerce or category buyer.",
-      "targetMarkets": "",
-      "excludedMarkets": "",
-      "productCategory": "verified outdoor, camping and travel retail social refill channel",
-      "businessModel": "Retail Chain",
-      "productFit": "FLEXTAIL portable pumps, outdoor power, camping lighting and compact camping accessories",
-      "opportunity": "Tiso is a qualified outdoor, camping, travel or sport retail prospect with category fit for FLEXTAIL portable outdoor electrics and Vollyc practical 3C products.",
-      "linkedin_url": "",
-      "linkedin": "",
-      "publicEmail": "mail@tiso.co.uk",
-      "contactEmail": "mail@tiso.co.uk",
-      "vendorPortal": "https://www.tiso.com/pages/contact",
-      "contactPhone": "",
-      "contactNote": "",
-      "publicEmailStatus": "Official Tiso general-business address explicitly published for organisations seeking to work with Tiso or discuss opportunities.",
-      "emailVerificationStatus": "official_public_business_email",
-      "emailEvidence": "official_contact_page",
-      "emailEvidenceUrl": "https://www.tiso.com/pages/contact",
-      "website": "https://www.tiso.com/",
-      "evidenceUrl": "https://www.google.com/search?q=%22Tiso%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22United%20Kingdom%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "sourceEvidenceUrl": "verified outdoor retailer official website and public social profile refill",
-      "externalVerificationStatus": "official_contact_form_verified",
-      "query": "https://www.google.com/search?q=%22Tiso%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22United%20Kingdom%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "source": "google_customer_discovery",
-      "sourceType": "google",
-      "discoveryProvider": "google",
-      "channel": "",
-      "identityStatus": "verified",
-      "officialSocialProfileVerified": false,
-      "socialProfileEvidenceUrl": "",
-      "socialProfileVerifiedAt": "",
-      "profiledAt": "",
-      "partnershipStatus": "",
-      "doNotOutreach": false,
-      "automationStatus": "",
-      "partnerNote": "",
-      "sendStatus": "",
-      "workingTime": {
-        "dueNow": true,
-        "timeZone": "Europe/London",
-        "localTime": "Mon 10:31",
-        "window": "morning",
-        "nextBest": "now",
-        "weight": 1
-      },
-      "platform": "facebook",
-      "platformUrl": "https://www.facebook.com/TisoOutdoor",
-      "url": "https://www.facebook.com/TisoOutdoor",
-      "action": "cooldown",
-      "reason": "previous_customer_development_no_repeat",
-      "alternateChannels": {
-        "linkedin": "",
-        "instagram": "https://www.instagram.com/tiso.outdoor/",
-        "facebook": "https://www.facebook.com/TisoOutdoor",
-        "websiteContact": "https://www.tiso.com/pages/contact"
-      },
-      "invalidChannels": {},
-      "facebookStatus": "verified_official_page_candidate",
-      "identitySource": "official Facebook page candidate + official website + Google background query",
-      "channelPriority": 2,
-      "discoveredAt": "2026-07-16T05:03:53.170Z",
-      "firstPartyChannelVerification": {
-        "status": "checked",
-        "verifiedAt": "2026-08-10T07:05:22.342Z",
-        "evidenceUrl": "https://www.tiso.com/",
-        "httpStatus": 200,
-        "signals": [
-          "form_control",
-          "contact_invitation"
-        ],
-        "error": ""
-      },
-      "contactCapabilityVerified": true,
-      "targetRegion": "europe",
-      "targetRegionScore": 45,
-      "contactChannelScore": 29,
-      "dealProbabilityScore": 230,
-      "priorityScore": 230,
-      "lastStatus": "sent_confirmed",
-      "lastEvidence": "official_contact_page_explicitly_routes_organisations_seeking_to_work_with_Tiso_to_mail_at_tiso_co_uk;sender_Leo_at_flextailgear_verified;recipient_subject_body_gate_passed;send_clicked_once;alibaba_sent_confirmation_visible;composer_closed",
-      "lastTouch": "2026-08-10T09:20:00.000Z"
     }
   ],
   "scheduledLater": [],
