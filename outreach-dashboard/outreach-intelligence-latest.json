@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-10T10:39:34.618Z",
+  "generatedAt": "2026-08-10T10:56:07.995Z",
   "companies": [
     {
       "companyId": "company_819cc04fe9060117",
@@ -2076,7 +2076,7 @@
             "official_business_route"
           ],
           "evidenceUrl": "https://www.campstudio.co.th/contact",
-          "checkedAt": "2026-08-10T09:31:03.858Z"
+          "checkedAt": "2026-08-10T10:55:59.595Z"
         },
         {
           "channel": "website_form",
@@ -2539,32 +2539,22 @@
       "evidence": [
         {
           "channel": "website_form",
-          "score": 80,
+          "score": 0,
           "verified": false,
           "reasons": [
-            "first_party_evidence"
+            "unverified_external_evidence_rejected"
           ],
-          "evidenceUrl": "https://nextadventure.net/",
+          "evidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
           "checkedAt": ""
         },
         {
           "channel": "website_form",
-          "score": 80,
+          "score": 0,
           "verified": false,
           "reasons": [
-            "first_party_evidence"
+            "unverified_external_evidence_rejected"
           ],
-          "evidenceUrl": "https://nextadventure.net/",
-          "checkedAt": ""
-        },
-        {
-          "channel": "website_form",
-          "score": 80,
-          "verified": false,
-          "reasons": [
-            "first_party_evidence"
-          ],
-          "evidenceUrl": "https://nextadventure.net/",
+          "evidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
           "checkedAt": ""
         },
         {
@@ -2574,7 +2564,17 @@
           "reasons": [
             "unverified_external_evidence_rejected"
           ],
-          "evidenceUrl": "https://nextadventure.net/",
+          "evidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
+          "checkedAt": ""
+        },
+        {
+          "channel": "website_form",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
           "checkedAt": ""
         }
       ],
@@ -7871,12 +7871,12 @@
         },
         {
           "channel": "website_form",
-          "score": 100,
-          "verified": true,
+          "score": 0,
+          "verified": false,
           "reasons": [
-            "official_business_route"
+            "unverified_external_evidence_rejected"
           ],
-          "evidenceUrl": "https://highcountryoutfitters.com/",
+          "evidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
           "checkedAt": ""
         }
       ],
@@ -8001,12 +8001,12 @@
       "evidence": [
         {
           "channel": "website_form",
-          "score": 100,
-          "verified": true,
+          "score": 0,
+          "verified": false,
           "reasons": [
-            "official_business_route"
+            "unverified_external_evidence_rejected"
           ],
-          "evidenceUrl": "https://www.benchmarkoutfitter.com/service/",
+          "evidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
           "checkedAt": ""
         },
         {
@@ -8047,12 +8047,12 @@
       "evidence": [
         {
           "channel": "website_form",
-          "score": 100,
-          "verified": true,
+          "score": 0,
+          "verified": false,
           "reasons": [
-            "official_business_route"
+            "unverified_external_evidence_rejected"
           ],
-          "evidenceUrl": "https://www.appalachianoutfitters.com/policies/contact-information",
+          "evidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
           "checkedAt": ""
         },
         {
@@ -8093,12 +8093,12 @@
       "evidence": [
         {
           "channel": "website_form",
-          "score": 100,
-          "verified": true,
+          "score": 0,
+          "verified": false,
           "reasons": [
-            "official_business_route"
+            "unverified_external_evidence_rejected"
           ],
-          "evidenceUrl": "https://packpaddle.com/contact-us/",
+          "evidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
           "checkedAt": ""
         },
         {
@@ -8250,12 +8250,12 @@
       "evidence": [
         {
           "channel": "website_form",
-          "score": 100,
-          "verified": true,
+          "score": 0,
+          "verified": false,
           "reasons": [
-            "official_business_route"
+            "unverified_external_evidence_rejected"
           ],
-          "evidenceUrl": "https://www.lacordee.com/en/pages/contact-us",
+          "evidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
           "checkedAt": ""
         },
         {
@@ -8320,12 +8320,12 @@
       "evidence": [
         {
           "channel": "website_form",
-          "score": 80,
+          "score": 0,
           "verified": false,
           "reasons": [
-            "first_party_evidence"
+            "unverified_external_evidence_rejected"
           ],
-          "evidenceUrl": "https://www.tauntonleisure.com/",
+          "evidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
           "checkedAt": ""
         }
       ],
@@ -8519,7 +8519,7 @@
             "official_business_route"
           ],
           "evidenceUrl": "https://www.snowys.com.au/",
-          "checkedAt": "2026-08-10T09:30:52.806Z"
+          "checkedAt": "2026-08-10T10:39:08.190Z"
         },
         {
           "channel": "facebook",
@@ -8529,7 +8529,7 @@
             "official_business_route"
           ],
           "evidenceUrl": "https://www.snowys.com.au/",
-          "checkedAt": "2026-08-10T09:30:52.806Z"
+          "checkedAt": "2026-08-10T10:39:08.190Z"
         },
         {
           "channel": "website_form",
@@ -8622,12 +8622,12 @@
         },
         {
           "channel": "website_form",
-          "score": 100,
-          "verified": true,
+          "score": 0,
+          "verified": false,
           "reasons": [
-            "official_business_route"
+            "unverified_external_evidence_rejected"
           ],
-          "evidenceUrl": "https://alpenglowsports.com/",
+          "evidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
           "checkedAt": ""
         }
       ],
@@ -8727,12 +8727,12 @@
       "evidence": [
         {
           "channel": "website_form",
-          "score": 100,
-          "verified": true,
+          "score": 0,
+          "verified": false,
           "reasons": [
-            "official_business_route"
+            "unverified_external_evidence_rejected"
           ],
-          "evidenceUrl": "https://www.neptunemountaineering.com/pages/customer-support",
+          "evidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
           "checkedAt": ""
         },
         {
@@ -8797,12 +8797,12 @@
       "evidence": [
         {
           "channel": "website_form",
-          "score": 100,
-          "verified": true,
+          "score": 0,
+          "verified": false,
           "reasons": [
-            "official_business_route"
+            "unverified_external_evidence_rejected"
           ],
-          "evidenceUrl": "https://kencooutfitters.com/pages/rewards",
+          "evidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
           "checkedAt": ""
         },
         {
@@ -8857,12 +8857,12 @@
       "evidence": [
         {
           "channel": "website_form",
-          "score": 100,
-          "verified": true,
+          "score": 0,
+          "verified": false,
           "reasons": [
-            "official_business_route"
+            "unverified_external_evidence_rejected"
           ],
-          "evidenceUrl": "https://shop.jessebrowns.com/pages/contact",
+          "evidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
           "checkedAt": ""
         },
         {
@@ -8974,6 +8974,98 @@
           "timestamp": "2026-08-10T10:22:00.000Z",
           "channel": "email",
           "evidence": "official_trip_planning_page_publishes_rrt_at_roadsriversandtrails_com;exact_recipient_tooltip_sender_subject_body_gate_passed;send_clicked_once;composer_closed;sent_folder_exact_subject_local_recipient_and_unique_company_body_visible_after_reload;no_matched_DSN_in_bounded_scan"
+        }
+      ]
+    },
+    {
+      "companyId": "company_7c65b0ab0252f223",
+      "company": "Purely Outdoors",
+      "keys": [
+        "purelyoutdoors",
+        "purelyoutdoorscouk",
+        "purelyoutdoorsemail20260810"
+      ],
+      "domains": [
+        "purelyoutdoors.co.uk"
+      ],
+      "channels": [
+        "website_form",
+        "email"
+      ],
+      "evidence": [
+        {
+          "channel": "website_form",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
+          "checkedAt": ""
+        },
+        {
+          "channel": "email",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "https://www.purelyoutdoors.co.uk/showroom.htm",
+          "checkedAt": ""
+        }
+      ],
+      "history": [
+        {
+          "status": "sent_confirmed",
+          "timestamp": "2026-08-10T10:47:40.000Z",
+          "channel": "email",
+          "evidence": "official_showroom_page_publishes_info_at_purelyoutdoors_co_uk;exact_recipient_tooltip_sender_subject_body_gate_passed;send_clicked_once;composer_closed;sent_folder_unique_company_body_reconciled;no_matched_DSN_in_bounded_scan"
+        }
+      ]
+    },
+    {
+      "companyId": "company_705965e2213affc1",
+      "company": "Westside Stores",
+      "keys": [
+        "westsidestores",
+        "westsidestoresca",
+        "westsidestoresemail20260810"
+      ],
+      "domains": [
+        "westsidestores.ca"
+      ],
+      "channels": [
+        "website_form",
+        "email"
+      ],
+      "evidence": [
+        {
+          "channel": "website_form",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
+          "checkedAt": ""
+        },
+        {
+          "channel": "email",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "https://westsidestores.ca/pages/about-us.html",
+          "checkedAt": ""
+        }
+      ],
+      "history": [
+        {
+          "status": "sent_confirmed",
+          "timestamp": "2026-08-10T10:48:40.000Z",
+          "channel": "email",
+          "evidence": "official_about_page_publishes_info_at_westsidestores_ca;exact_recipient_tooltip_sender_subject_body_gate_passed;send_clicked_once;composer_closed;sent_folder_unique_company_body_reconciled_after_reload;no_matched_DSN_in_bounded_scan"
         }
       ]
     },
@@ -9251,7 +9343,7 @@
             "official_business_route"
           ],
           "evidenceUrl": "https://www.bever.nl/klantenservice/contactgegevens.html",
-          "checkedAt": "2026-08-10T09:31:01.567Z"
+          "checkedAt": "2026-08-10T10:55:57.694Z"
         },
         {
           "channel": "facebook",
@@ -9261,7 +9353,7 @@
             "official_business_route"
           ],
           "evidenceUrl": "https://www.bever.nl/klantenservice/contactgegevens.html",
-          "checkedAt": "2026-08-10T09:31:01.567Z"
+          "checkedAt": "2026-08-10T10:55:57.694Z"
         },
         {
           "channel": "website_form",
@@ -9351,7 +9443,7 @@
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://www.mountainwarehouse.com/help/contact-us/",
-          "checkedAt": "2026-08-10T09:31:03.234Z"
+          "checkedAt": "2026-08-10T10:55:59.168Z"
         },
         {
           "channel": "facebook",
@@ -9361,7 +9453,7 @@
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://www.mountainwarehouse.com/help/contact-us/",
-          "checkedAt": "2026-08-10T09:31:03.234Z"
+          "checkedAt": "2026-08-10T10:55:59.168Z"
         },
         {
           "channel": "website_form",
@@ -9370,7 +9462,7 @@
           "reasons": [
             "first_party_evidence"
           ],
-          "evidenceUrl": "https://www.mountainwarehouse.com/",
+          "evidenceUrl": "https://www.mountainwarehouse.com/help/contact-us/",
           "checkedAt": ""
         }
       ],
@@ -9424,7 +9516,7 @@
             "official_business_route"
           ],
           "evidenceUrl": "https://www.technicaloutdoor.com/welcome/",
-          "checkedAt": "2026-08-10T09:31:05.535Z"
+          "checkedAt": "2026-08-10T10:55:56.499Z"
         },
         {
           "channel": "website_form",
@@ -9486,12 +9578,12 @@
       "evidence": [
         {
           "channel": "website_form",
-          "score": 0,
-          "verified": false,
+          "score": 100,
+          "verified": true,
           "reasons": [
-            "unverified_external_evidence_rejected"
+            "official_business_route"
           ],
-          "evidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
+          "evidenceUrl": "https://explorationwild.com/pages/about-us",
           "checkedAt": ""
         },
         {
@@ -9532,12 +9624,12 @@
       "evidence": [
         {
           "channel": "website_form",
-          "score": 0,
-          "verified": false,
+          "score": 100,
+          "verified": true,
           "reasons": [
-            "unverified_external_evidence_rejected"
+            "official_business_route"
           ],
-          "evidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
+          "evidenceUrl": "https://kermodeoverland.com/contact-us/",
           "checkedAt": ""
         },
         {
@@ -9561,6 +9653,100 @@
       ]
     },
     {
+      "companyId": "company_b79094a787515f3b",
+      "company": "Backcountry Sportsman",
+      "keys": [
+        "backcountrysportsman",
+        "backcountrysportsmanoutfitterscom",
+        "backcountrysportsmancom",
+        "backcountrysportsmanemail20260810"
+      ],
+      "domains": [
+        "backcountrysportsmanoutfitters.com",
+        "backcountrysportsman.com"
+      ],
+      "channels": [
+        "website_form",
+        "email"
+      ],
+      "evidence": [
+        {
+          "channel": "website_form",
+          "score": 100,
+          "verified": true,
+          "reasons": [
+            "official_business_route"
+          ],
+          "evidenceUrl": "https://backcountrysportsmanoutfitters.com/",
+          "checkedAt": ""
+        },
+        {
+          "channel": "email",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "https://backcountrysportsmanoutfitters.com/",
+          "checkedAt": ""
+        }
+      ],
+      "history": [
+        {
+          "status": "sent_confirmed",
+          "timestamp": "2026-08-10T10:47:20.000Z",
+          "channel": "email",
+          "evidence": "official_homepage_publishes_info_at_backcountrysportsman_com;exact_recipient_tooltip_sender_subject_body_gate_passed;send_clicked_once;composer_closed;sent_folder_unique_company_body_reconciled;no_matched_DSN_in_bounded_scan"
+        }
+      ]
+    },
+    {
+      "companyId": "company_7fdd67a82638e02d",
+      "company": "Grasshopper Leisure",
+      "keys": [
+        "grasshopperleisure",
+        "grasshopperleisurecouk",
+        "grasshopperleisureemail20260810"
+      ],
+      "domains": [
+        "grasshopperleisure.co.uk"
+      ],
+      "channels": [
+        "website_form",
+        "email"
+      ],
+      "evidence": [
+        {
+          "channel": "website_form",
+          "score": 100,
+          "verified": true,
+          "reasons": [
+            "official_business_route"
+          ],
+          "evidenceUrl": "https://www.grasshopperleisure.co.uk/",
+          "checkedAt": ""
+        },
+        {
+          "channel": "email",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "https://www.grasshopperleisure.co.uk/",
+          "checkedAt": ""
+        }
+      ],
+      "history": [
+        {
+          "status": "sent_confirmed",
+          "timestamp": "2026-08-10T10:48:00.000Z",
+          "channel": "email",
+          "evidence": "official_homepage_publishes_info_at_grasshopperleisure_co_uk;exact_recipient_tooltip_sender_subject_body_gate_passed;send_clicked_once;composer_closed;sent_folder_unique_company_body_reconciled;no_matched_DSN_in_bounded_scan"
+        }
+      ]
+    },
+    {
       "companyId": "company_ae4c17b7cdfe0e0e",
       "company": "Bentgate Mountaineering",
       "keys": [
@@ -9576,12 +9762,12 @@
       "evidence": [
         {
           "channel": "website_form",
-          "score": 0,
-          "verified": false,
+          "score": 100,
+          "verified": true,
           "reasons": [
-            "unverified_external_evidence_rejected"
+            "official_business_route"
           ],
-          "evidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
+          "evidenceUrl": "https://www.bentgate.com/service/",
           "checkedAt": ""
         },
         {
@@ -9716,12 +9902,12 @@
       "evidence": [
         {
           "channel": "website_form",
-          "score": 0,
-          "verified": false,
+          "score": 100,
+          "verified": true,
           "reasons": [
-            "unverified_external_evidence_rejected"
+            "official_business_route"
           ],
-          "evidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
+          "evidenceUrl": "https://jhoutdoors.com/pages/faq",
           "checkedAt": ""
         },
         {
@@ -9808,12 +9994,12 @@
       "evidence": [
         {
           "channel": "website_form",
-          "score": 0,
-          "verified": false,
+          "score": 100,
+          "verified": true,
           "reasons": [
-            "unverified_external_evidence_rejected"
+            "official_business_route"
           ],
-          "evidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
+          "evidenceUrl": "https://www.furtherfaster.co.nz/",
           "checkedAt": ""
         }
       ],
@@ -9876,12 +10062,12 @@
       "evidence": [
         {
           "channel": "website_form",
-          "score": 0,
-          "verified": false,
+          "score": 100,
+          "verified": true,
           "reasons": [
-            "unverified_external_evidence_rejected"
+            "official_business_route"
           ],
-          "evidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
+          "evidenceUrl": "https://newquaycampingshop.com/pages/contact-us",
           "checkedAt": ""
         },
         {
@@ -9905,6 +10091,52 @@
       ]
     },
     {
+      "companyId": "company_4804c472b8956cc6",
+      "company": "Canada Outdoors",
+      "keys": [
+        "canadaoutdoors",
+        "canadaoutdoorscom",
+        "canadaoutdoorsemail20260810"
+      ],
+      "domains": [
+        "canadaoutdoors.com"
+      ],
+      "channels": [
+        "website_form",
+        "email"
+      ],
+      "evidence": [
+        {
+          "channel": "website_form",
+          "score": 100,
+          "verified": true,
+          "reasons": [
+            "official_business_route"
+          ],
+          "evidenceUrl": "https://www.canadaoutdoors.com/pages/customer-service",
+          "checkedAt": ""
+        },
+        {
+          "channel": "email",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "https://www.canadaoutdoors.com/pages/customer-service",
+          "checkedAt": ""
+        }
+      ],
+      "history": [
+        {
+          "status": "sent_confirmed",
+          "timestamp": "2026-08-10T10:46:00.000Z",
+          "channel": "email",
+          "evidence": "official_customer_service_page_publishes_info_at_canadaoutdoors_com;attachment_false_positive_cancelled_and_mixed_draft_discarded_before_rebuild;exact_recipient_tooltip_sender_subject_body_gate_passed;send_clicked_once;composer_closed;sent_folder_unique_company_body_reconciled;no_matched_DSN_in_bounded_scan"
+        }
+      ]
+    },
+    {
       "companyId": "company_20dc0fe8c19aeb5c",
       "company": "AvidMax Outfitters",
       "keys": [
@@ -9920,12 +10152,12 @@
       "evidence": [
         {
           "channel": "website_form",
-          "score": 0,
-          "verified": false,
+          "score": 100,
+          "verified": true,
           "reasons": [
-            "unverified_external_evidence_rejected"
+            "official_business_route"
           ],
-          "evidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
+          "evidenceUrl": "https://www.avidmax.com/contact-us/",
           "checkedAt": ""
         },
         {
@@ -13823,6 +14055,144 @@
       ]
     },
     {
+      "companyId": "company_b77a9c34068381aa",
+      "company": "Outcamping",
+      "keys": [
+        "outcamping",
+        "outcampingcouk",
+        "outcampingemail20260810"
+      ],
+      "domains": [
+        "outcamping.co.uk"
+      ],
+      "channels": [
+        "website_form",
+        "email"
+      ],
+      "evidence": [
+        {
+          "channel": "website_form",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
+          "checkedAt": ""
+        },
+        {
+          "channel": "email",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "https://outcamping.co.uk/pages/about-us",
+          "checkedAt": ""
+        }
+      ],
+      "history": [
+        {
+          "status": "sent_confirmed",
+          "timestamp": "2026-08-10T10:43:00.000Z",
+          "channel": "email",
+          "evidence": "official_about_page_publishes_info_at_outcamping_co_uk;exact_recipient_tooltip_sender_subject_body_gate_passed;send_clicked_once;composer_closed;sent_folder_unique_company_body_reconciled;no_matched_DSN_in_bounded_scan"
+        }
+      ]
+    },
+    {
+      "companyId": "company_50bae9551869912f",
+      "company": "Outdoors Plus",
+      "keys": [
+        "outdoorsplus",
+        "outdoorsplusca",
+        "outdoorsplusemail20260810"
+      ],
+      "domains": [
+        "outdoorsplus.ca"
+      ],
+      "channels": [
+        "website_form",
+        "email"
+      ],
+      "evidence": [
+        {
+          "channel": "website_form",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
+          "checkedAt": ""
+        },
+        {
+          "channel": "email",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "https://outdoorsplus.ca/services/camping/",
+          "checkedAt": ""
+        }
+      ],
+      "history": [
+        {
+          "status": "sent_confirmed",
+          "timestamp": "2026-08-10T10:47:00.000Z",
+          "channel": "email",
+          "evidence": "official_camping_page_publishes_info_at_outdoorsplus_ca;attachment_false_positive_cancelled_and_mixed_draft_discarded_before_rebuild;exact_recipient_tooltip_sender_subject_body_gate_passed;send_clicked_once;composer_closed;sent_folder_unique_company_body_reconciled;no_matched_DSN_in_bounded_scan"
+        }
+      ]
+    },
+    {
+      "companyId": "company_659618a91e482d49",
+      "company": "Switching Gear",
+      "keys": [
+        "switchinggear",
+        "switchinggearca",
+        "switchinggearemail20260810"
+      ],
+      "domains": [
+        "switchinggear.ca"
+      ],
+      "channels": [
+        "website_form",
+        "email"
+      ],
+      "evidence": [
+        {
+          "channel": "website_form",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
+          "checkedAt": ""
+        },
+        {
+          "channel": "email",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "https://www.switchinggear.ca/About.html",
+          "checkedAt": ""
+        }
+      ],
+      "history": [
+        {
+          "status": "sent_confirmed",
+          "timestamp": "2026-08-10T10:52:00.000Z",
+          "channel": "email",
+          "evidence": "official_about_page_publishes_info_at_switchinggear_ca;exact_recipient_tooltip_sender_subject_body_gate_passed;send_clicked_once;composer_closed;sent_folder_unique_company_body_reconciled;no_matched_DSN_in_bounded_scan"
+        }
+      ]
+    },
+    {
       "companyId": "company_7580a97286e5f239",
       "company": "Durango Outdoor Exchange",
       "keys": [
@@ -13918,6 +14288,144 @@
       ]
     },
     {
+      "companyId": "company_deb72f2e54293ab1",
+      "company": "Equipment Outdoors",
+      "keys": [
+        "equipmentoutdoors",
+        "equipmentoutdoorscouk",
+        "equipmentoutdoorsemail20260810"
+      ],
+      "domains": [
+        "equipmentoutdoors.co.uk"
+      ],
+      "channels": [
+        "website_form",
+        "email"
+      ],
+      "evidence": [
+        {
+          "channel": "website_form",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
+          "checkedAt": ""
+        },
+        {
+          "channel": "email",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "https://www.equipmentoutdoors.co.uk/",
+          "checkedAt": ""
+        }
+      ],
+      "history": [
+        {
+          "status": "sent_confirmed",
+          "timestamp": "2026-08-10T10:44:00.000Z",
+          "channel": "email",
+          "evidence": "official_website_publishes_info_at_equipmentoutdoors_co_uk;exact_recipient_tooltip_sender_subject_body_gate_passed;send_clicked_once;composer_closed;sent_folder_unique_company_body_reconciled;no_matched_DSN_in_bounded_scan"
+        }
+      ]
+    },
+    {
+      "companyId": "company_5de8fa1e35785863",
+      "company": "The Outdoor Shop Lewes",
+      "keys": [
+        "theoutdoorshoplewes",
+        "outdoorshoplewescouk",
+        "outdoorshoplewesemail20260810"
+      ],
+      "domains": [
+        "outdoorshoplewes.co.uk"
+      ],
+      "channels": [
+        "website_form",
+        "email"
+      ],
+      "evidence": [
+        {
+          "channel": "website_form",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
+          "checkedAt": ""
+        },
+        {
+          "channel": "email",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "https://www.outdoorshoplewes.co.uk/",
+          "checkedAt": ""
+        }
+      ],
+      "history": [
+        {
+          "status": "sent_confirmed",
+          "timestamp": "2026-08-10T10:48:20.000Z",
+          "channel": "email",
+          "evidence": "official_homepage_publishes_info_at_outdoorshoplewes_co_uk;exact_recipient_tooltip_sender_subject_body_gate_passed;send_clicked_once;composer_closed;sent_folder_unique_company_body_reconciled;no_matched_DSN_in_bounded_scan"
+        }
+      ]
+    },
+    {
+      "companyId": "company_7ed895a1884674b2",
+      "company": "Mawson's Sports",
+      "keys": [
+        "mawsonssports",
+        "mawsonsca",
+        "mawsonssportsemail20260810"
+      ],
+      "domains": [
+        "mawsons.ca"
+      ],
+      "channels": [
+        "website_form",
+        "email"
+      ],
+      "evidence": [
+        {
+          "channel": "website_form",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
+          "checkedAt": ""
+        },
+        {
+          "channel": "email",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "https://mawsons.ca/",
+          "checkedAt": ""
+        }
+      ],
+      "history": [
+        {
+          "status": "sent_confirmed",
+          "timestamp": "2026-08-10T10:52:30.000Z",
+          "channel": "email",
+          "evidence": "official_homepage_publishes_info_at_mawsons_ca;exact_recipient_tooltip_sender_subject_body_gate_passed;send_clicked_once;composer_closed;sent_folder_unique_company_body_reconciled;no_matched_DSN_in_bounded_scan"
+        }
+      ]
+    },
+    {
       "companyId": "company_9b7e36cd6b3b3ac6",
       "company": "Lost Wave",
       "keys": [
@@ -13960,6 +14468,98 @@
           "timestamp": "2026-08-10T10:34:50.000Z",
           "channel": "email",
           "evidence": "official_about_page_publishes_info_at_lost_wave_com;exact_recipient_tooltip_sender_subject_body_gate_passed;send_clicked_once;sent_toast_confirmed;sent_folder_unique_company_body_reconciled;no_matched_DSN_in_bounded_scan"
+        }
+      ]
+    },
+    {
+      "companyId": "company_5a22d42d945e4166",
+      "company": "Action Outdoors",
+      "keys": [
+        "actionoutdoors",
+        "actionoutdoorscouk",
+        "actionoutdoorsemail20260810"
+      ],
+      "domains": [
+        "actionoutdoors.co.uk"
+      ],
+      "channels": [
+        "website_form",
+        "email"
+      ],
+      "evidence": [
+        {
+          "channel": "website_form",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
+          "checkedAt": ""
+        },
+        {
+          "channel": "email",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "https://www.actionoutdoors.co.uk/about/",
+          "checkedAt": ""
+        }
+      ],
+      "history": [
+        {
+          "status": "sent_confirmed",
+          "timestamp": "2026-08-10T10:44:30.000Z",
+          "channel": "email",
+          "evidence": "official_about_page_publishes_info_at_actionoutdoors_co_uk;exact_recipient_tooltip_sender_subject_body_gate_passed;send_clicked_once;composer_closed;sent_folder_unique_company_body_reconciled;no_matched_DSN_in_bounded_scan"
+        }
+      ]
+    },
+    {
+      "companyId": "company_4cac393fc5a89e71",
+      "company": "Spry",
+      "keys": [
+        "spry",
+        "spryactiveca",
+        "spryemail20260810"
+      ],
+      "domains": [
+        "spryactive.ca"
+      ],
+      "channels": [
+        "website_form",
+        "email"
+      ],
+      "evidence": [
+        {
+          "channel": "website_form",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
+          "checkedAt": ""
+        },
+        {
+          "channel": "email",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "https://spryactive.ca/pages/about",
+          "checkedAt": ""
+        }
+      ],
+      "history": [
+        {
+          "status": "sent_confirmed",
+          "timestamp": "2026-08-10T10:53:00.000Z",
+          "channel": "email",
+          "evidence": "official_about_page_publishes_info_at_spryactive_ca;exact_recipient_tooltip_sender_subject_body_gate_passed;send_clicked_once;composer_closed;sent_folder_unique_company_body_reconciled;no_matched_DSN_in_bounded_scan"
         }
       ]
     },
@@ -15683,6 +16283,26 @@
       "evidence": "official_trip_planning_page_publishes_rrt_at_roadsriversandtrails_com;exact_recipient_tooltip_sender_subject_body_gate_passed;send_clicked_once;composer_closed;sent_folder_exact_subject_local_recipient_and_unique_company_body_visible_after_reload;no_matched_DSN_in_bounded_scan"
     },
     {
+      "companyId": "company_7c65b0ab0252f223",
+      "company": "Purely Outdoors",
+      "permanent": true,
+      "crossChannel": true,
+      "reason": "previous_customer_development_no_repeat",
+      "sourceStatus": "sent_confirmed",
+      "sourceTimestamp": "2026-08-10T10:47:40.000Z",
+      "evidence": "official_showroom_page_publishes_info_at_purelyoutdoors_co_uk;exact_recipient_tooltip_sender_subject_body_gate_passed;send_clicked_once;composer_closed;sent_folder_unique_company_body_reconciled;no_matched_DSN_in_bounded_scan"
+    },
+    {
+      "companyId": "company_705965e2213affc1",
+      "company": "Westside Stores",
+      "permanent": true,
+      "crossChannel": true,
+      "reason": "previous_customer_development_no_repeat",
+      "sourceStatus": "sent_confirmed",
+      "sourceTimestamp": "2026-08-10T10:48:40.000Z",
+      "evidence": "official_about_page_publishes_info_at_westsidestores_ca;exact_recipient_tooltip_sender_subject_body_gate_passed;send_clicked_once;composer_closed;sent_folder_unique_company_body_reconciled_after_reload;no_matched_DSN_in_bounded_scan"
+    },
+    {
       "companyId": "company_1c57e390a7717b0e",
       "company": "The Trail Head",
       "permanent": true,
@@ -15773,6 +16393,26 @@
       "evidence": "official_contact_page_publishes_info_at_kermodeoverland_com;exact_recipient_tooltip_sender_subject_body_gate_passed;send_clicked_once;sent_toast_confirmed;sent_folder_unique_company_body_reconciled;no_matched_DSN_in_bounded_scan"
     },
     {
+      "companyId": "company_b79094a787515f3b",
+      "company": "Backcountry Sportsman",
+      "permanent": true,
+      "crossChannel": true,
+      "reason": "previous_customer_development_no_repeat",
+      "sourceStatus": "sent_confirmed",
+      "sourceTimestamp": "2026-08-10T10:47:20.000Z",
+      "evidence": "official_homepage_publishes_info_at_backcountrysportsman_com;exact_recipient_tooltip_sender_subject_body_gate_passed;send_clicked_once;composer_closed;sent_folder_unique_company_body_reconciled;no_matched_DSN_in_bounded_scan"
+    },
+    {
+      "companyId": "company_7fdd67a82638e02d",
+      "company": "Grasshopper Leisure",
+      "permanent": true,
+      "crossChannel": true,
+      "reason": "previous_customer_development_no_repeat",
+      "sourceStatus": "sent_confirmed",
+      "sourceTimestamp": "2026-08-10T10:48:00.000Z",
+      "evidence": "official_homepage_publishes_info_at_grasshopperleisure_co_uk;exact_recipient_tooltip_sender_subject_body_gate_passed;send_clicked_once;composer_closed;sent_folder_unique_company_body_reconciled;no_matched_DSN_in_bounded_scan"
+    },
+    {
       "companyId": "company_ae4c17b7cdfe0e0e",
       "company": "Bentgate Mountaineering",
       "permanent": true,
@@ -15821,6 +16461,16 @@
       "sourceStatus": "sent_confirmed",
       "sourceTimestamp": "2026-08-10T10:35:30.000Z",
       "evidence": "official_contact_page_publishes_info_at_newquaycampingshop_co_uk;exact_recipient_tooltip_sender_subject_body_gate_passed;send_clicked_once;sent_toast_confirmed;sent_folder_unique_company_body_reconciled;no_matched_DSN_in_bounded_scan"
+    },
+    {
+      "companyId": "company_4804c472b8956cc6",
+      "company": "Canada Outdoors",
+      "permanent": true,
+      "crossChannel": true,
+      "reason": "previous_customer_development_no_repeat",
+      "sourceStatus": "sent_confirmed",
+      "sourceTimestamp": "2026-08-10T10:46:00.000Z",
+      "evidence": "official_customer_service_page_publishes_info_at_canadaoutdoors_com;attachment_false_positive_cancelled_and_mixed_draft_discarded_before_rebuild;exact_recipient_tooltip_sender_subject_body_gate_passed;send_clicked_once;composer_closed;sent_folder_unique_company_body_reconciled;no_matched_DSN_in_bounded_scan"
     },
     {
       "companyId": "company_20dc0fe8c19aeb5c",
@@ -16273,6 +16923,36 @@
       "evidence": "official_contact_page_publishes_info_at_campingtravelstore_co_uk;exact_recipient_tooltip_sender_subject_body_gate_passed;send_clicked_once;sent_toast_confirmed;sent_folder_unique_company_body_reconciled;no_matched_DSN_in_bounded_scan"
     },
     {
+      "companyId": "company_b77a9c34068381aa",
+      "company": "Outcamping",
+      "permanent": true,
+      "crossChannel": true,
+      "reason": "previous_customer_development_no_repeat",
+      "sourceStatus": "sent_confirmed",
+      "sourceTimestamp": "2026-08-10T10:43:00.000Z",
+      "evidence": "official_about_page_publishes_info_at_outcamping_co_uk;exact_recipient_tooltip_sender_subject_body_gate_passed;send_clicked_once;composer_closed;sent_folder_unique_company_body_reconciled;no_matched_DSN_in_bounded_scan"
+    },
+    {
+      "companyId": "company_50bae9551869912f",
+      "company": "Outdoors Plus",
+      "permanent": true,
+      "crossChannel": true,
+      "reason": "previous_customer_development_no_repeat",
+      "sourceStatus": "sent_confirmed",
+      "sourceTimestamp": "2026-08-10T10:47:00.000Z",
+      "evidence": "official_camping_page_publishes_info_at_outdoorsplus_ca;attachment_false_positive_cancelled_and_mixed_draft_discarded_before_rebuild;exact_recipient_tooltip_sender_subject_body_gate_passed;send_clicked_once;composer_closed;sent_folder_unique_company_body_reconciled;no_matched_DSN_in_bounded_scan"
+    },
+    {
+      "companyId": "company_659618a91e482d49",
+      "company": "Switching Gear",
+      "permanent": true,
+      "crossChannel": true,
+      "reason": "previous_customer_development_no_repeat",
+      "sourceStatus": "sent_confirmed",
+      "sourceTimestamp": "2026-08-10T10:52:00.000Z",
+      "evidence": "official_about_page_publishes_info_at_switchinggear_ca;exact_recipient_tooltip_sender_subject_body_gate_passed;send_clicked_once;composer_closed;sent_folder_unique_company_body_reconciled;no_matched_DSN_in_bounded_scan"
+    },
+    {
       "companyId": "company_7580a97286e5f239",
       "company": "Durango Outdoor Exchange",
       "permanent": true,
@@ -16283,6 +16963,36 @@
       "evidence": "smtp_accepted;message_id:<8db03a9e-9380-54fb-423f-9fcdb4d3895f@flextailgear.com>;sent_folder_message_confirmed;contact_path_strategy_v2"
     },
     {
+      "companyId": "company_deb72f2e54293ab1",
+      "company": "Equipment Outdoors",
+      "permanent": true,
+      "crossChannel": true,
+      "reason": "previous_customer_development_no_repeat",
+      "sourceStatus": "sent_confirmed",
+      "sourceTimestamp": "2026-08-10T10:44:00.000Z",
+      "evidence": "official_website_publishes_info_at_equipmentoutdoors_co_uk;exact_recipient_tooltip_sender_subject_body_gate_passed;send_clicked_once;composer_closed;sent_folder_unique_company_body_reconciled;no_matched_DSN_in_bounded_scan"
+    },
+    {
+      "companyId": "company_5de8fa1e35785863",
+      "company": "The Outdoor Shop Lewes",
+      "permanent": true,
+      "crossChannel": true,
+      "reason": "previous_customer_development_no_repeat",
+      "sourceStatus": "sent_confirmed",
+      "sourceTimestamp": "2026-08-10T10:48:20.000Z",
+      "evidence": "official_homepage_publishes_info_at_outdoorshoplewes_co_uk;exact_recipient_tooltip_sender_subject_body_gate_passed;send_clicked_once;composer_closed;sent_folder_unique_company_body_reconciled;no_matched_DSN_in_bounded_scan"
+    },
+    {
+      "companyId": "company_7ed895a1884674b2",
+      "company": "Mawson's Sports",
+      "permanent": true,
+      "crossChannel": true,
+      "reason": "previous_customer_development_no_repeat",
+      "sourceStatus": "sent_confirmed",
+      "sourceTimestamp": "2026-08-10T10:52:30.000Z",
+      "evidence": "official_homepage_publishes_info_at_mawsons_ca;exact_recipient_tooltip_sender_subject_body_gate_passed;send_clicked_once;composer_closed;sent_folder_unique_company_body_reconciled;no_matched_DSN_in_bounded_scan"
+    },
+    {
       "companyId": "company_9b7e36cd6b3b3ac6",
       "company": "Lost Wave",
       "permanent": true,
@@ -16291,6 +17001,26 @@
       "sourceStatus": "sent_confirmed",
       "sourceTimestamp": "2026-08-10T10:34:50.000Z",
       "evidence": "official_about_page_publishes_info_at_lost_wave_com;exact_recipient_tooltip_sender_subject_body_gate_passed;send_clicked_once;sent_toast_confirmed;sent_folder_unique_company_body_reconciled;no_matched_DSN_in_bounded_scan"
+    },
+    {
+      "companyId": "company_5a22d42d945e4166",
+      "company": "Action Outdoors",
+      "permanent": true,
+      "crossChannel": true,
+      "reason": "previous_customer_development_no_repeat",
+      "sourceStatus": "sent_confirmed",
+      "sourceTimestamp": "2026-08-10T10:44:30.000Z",
+      "evidence": "official_about_page_publishes_info_at_actionoutdoors_co_uk;exact_recipient_tooltip_sender_subject_body_gate_passed;send_clicked_once;composer_closed;sent_folder_unique_company_body_reconciled;no_matched_DSN_in_bounded_scan"
+    },
+    {
+      "companyId": "company_4cac393fc5a89e71",
+      "company": "Spry",
+      "permanent": true,
+      "crossChannel": true,
+      "reason": "previous_customer_development_no_repeat",
+      "sourceStatus": "sent_confirmed",
+      "sourceTimestamp": "2026-08-10T10:53:00.000Z",
+      "evidence": "official_about_page_publishes_info_at_spryactive_ca;exact_recipient_tooltip_sender_subject_body_gate_passed;send_clicked_once;composer_closed;sent_folder_unique_company_body_reconciled;no_matched_DSN_in_bounded_scan"
     },
     {
       "companyId": "company_b01fae48f138bc63",
@@ -16721,7 +17451,7 @@
       },
       {
         "channel": "email",
-        "confirmed": 54,
+        "confirmed": 67,
         "replies": 0,
         "opportunities": 0,
         "replyRate": 0,
@@ -16772,7 +17502,7 @@
       {
         "dimension": "channel",
         "variant": "email",
-        "sampleSize": 54,
+        "sampleSize": 67,
         "observedReplyRate": 0,
         "recommendation": "use_as_bounded_allocation_signal"
       },
@@ -16786,13 +17516,13 @@
     ]
   },
   "ownerSummary": {
-    "generatedAt": "2026-08-10T10:39:34.618Z",
+    "generatedAt": "2026-08-10T10:56:07.995Z",
     "phase": "autonomous_sales_operating_system_v1",
     "kpis": {
-      "companies": 214,
-      "permanentlySuppressed": 155,
+      "companies": 227,
+      "permanentlySuppressed": 168,
       "plannedActions": 7,
-      "verifiedEvidenceRoutes": 130
+      "verifiedEvidenceRoutes": 131
     },
     "decisions": [
       {
@@ -16912,7 +17642,7 @@
         },
         {
           "channel": "email",
-          "confirmed": 54,
+          "confirmed": 67,
           "replies": 0,
           "opportunities": 0,
           "replyRate": 0,
@@ -16963,7 +17693,7 @@
         {
           "dimension": "channel",
           "variant": "email",
-          "sampleSize": 54,
+          "sampleSize": 67,
           "observedReplyRate": 0,
           "recommendation": "use_as_bounded_allocation_signal"
         },
