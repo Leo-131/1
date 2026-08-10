@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-08-10T07:05:51.097Z",
-  "cursor": 119,
+  "updatedAt": "2026-08-10T09:06:01.166Z",
+  "cursor": 2,
   "companyCount": 142,
   "verifications": {
     "facewest": {
@@ -334,7 +334,7 @@
     "xxl sport": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-06T10:05:43.447Z",
+        "verifiedAt": "2026-08-10T09:05:43.761Z",
         "evidenceUrl": "https://www.xxl.no/",
         "httpStatus": 200,
         "signals": [
@@ -351,7 +351,7 @@
     "blue tomato": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-06T10:05:44.423Z",
+        "verifiedAt": "2026-08-10T09:05:44.425Z",
         "evidenceUrl": "https://www.blue-tomato.com/de-DE/",
         "httpStatus": 200,
         "signals": [
@@ -371,7 +371,7 @@
     "sportler": {
       "firstPartyChannelVerification": {
         "status": "unreachable",
-        "verifiedAt": "2026-08-06T10:05:42.755Z",
+        "verifiedAt": "2026-08-10T09:05:43.685Z",
         "evidenceUrl": "https://www.sportler.com/",
         "httpStatus": 403,
         "signals": [],
@@ -386,7 +386,7 @@
     "trekkinn": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-06T10:05:44.331Z",
+        "verifiedAt": "2026-08-10T09:05:43.845Z",
         "evidenceUrl": "https://www.tradeinn.com/trekkinn/en",
         "httpStatus": 200,
         "signals": [
@@ -406,7 +406,7 @@
     "4camping": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-06T10:05:46.924Z",
+        "verifiedAt": "2026-08-10T09:05:46.292Z",
         "evidenceUrl": "https://www.4camping.cz/",
         "httpStatus": 200,
         "signals": [
@@ -426,7 +426,7 @@
     "8a pl": {
       "firstPartyChannelVerification": {
         "status": "unreachable",
-        "verifiedAt": "2026-08-06T10:05:44.806Z",
+        "verifiedAt": "2026-08-10T09:05:44.683Z",
         "evidenceUrl": "https://8a.pl/",
         "httpStatus": 403,
         "signals": [],
@@ -445,7 +445,7 @@
     "sklep podroznika": {
       "firstPartyChannelVerification": {
         "status": "unreachable",
-        "verifiedAt": "2026-08-06T10:05:45.379Z",
+        "verifiedAt": "2026-08-10T09:05:45.496Z",
         "evidenceUrl": "https://www.sklep-podroznika.pl/",
         "httpStatus": 0,
         "signals": [],
@@ -460,7 +460,7 @@
     "moosejaw": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-06T10:05:47.192Z",
+        "verifiedAt": "2026-08-10T09:05:46.666Z",
         "evidenceUrl": "https://www.publiclands.com/?segment=mjtopl",
         "httpStatus": 200,
         "signals": [
@@ -477,7 +477,7 @@
     "eastern mountain sports": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-06T10:05:47.688Z",
+        "verifiedAt": "2026-08-10T09:05:47.177Z",
         "evidenceUrl": "https://www.ems.com/",
         "httpStatus": 200,
         "signals": [
@@ -494,7 +494,7 @@
     "pack rat outdoor center": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-06T10:05:50.012Z",
+        "verifiedAt": "2026-08-10T09:05:49.254Z",
         "evidenceUrl": "https://packratoc.com/",
         "httpStatus": 200,
         "signals": [
@@ -511,7 +511,7 @@
     "massey outfitters": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-06T10:05:48.377Z",
+        "verifiedAt": "2026-08-10T09:05:47.775Z",
         "evidenceUrl": "https://www.masseysoutfitters.com/",
         "httpStatus": 200,
         "signals": [
@@ -530,7 +530,7 @@
     "intersport norway": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-06T10:05:49.372Z",
+        "verifiedAt": "2026-08-10T09:05:49.394Z",
         "evidenceUrl": "https://www.intersport.no/",
         "httpStatus": 200,
         "signals": [],
@@ -547,7 +547,7 @@
     "mammut store": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-06T10:05:51.459Z",
+        "verifiedAt": "2026-08-10T09:05:50.640Z",
         "evidenceUrl": "https://www.mammut.com/int/en",
         "httpStatus": 200,
         "signals": [],
@@ -562,7 +562,7 @@
     "bever zwerfsport": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-06T10:05:54.459Z",
+        "verifiedAt": "2026-08-10T09:05:49.706Z",
         "evidenceUrl": "https://www.bever.nl/",
         "httpStatus": 200,
         "signals": [
@@ -581,7 +581,7 @@
     "durango outdoor exchange": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-06T10:05:51.188Z",
+        "verifiedAt": "2026-08-10T09:05:50.191Z",
         "evidenceUrl": "https://durangooutdoorexchange.com/",
         "httpStatus": 200,
         "signals": [
@@ -600,7 +600,7 @@
     "outdoor specialist": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-06T10:05:56.115Z",
+        "verifiedAt": "2026-08-10T09:05:54.233Z",
         "evidenceUrl": "https://www.outdoor-experts.nl/nl/",
         "httpStatus": 200,
         "signals": [
@@ -617,7 +617,7 @@
     "campervan gift": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-06T10:05:58.477Z",
+        "verifiedAt": "2026-08-10T09:05:56.387Z",
         "evidenceUrl": "https://www.campervangift.co.uk/become-a-supplier/",
         "httpStatus": 200,
         "signals": [
@@ -637,7 +637,7 @@
     "gecko overland": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-06T13:05:57.902Z",
+        "verifiedAt": "2026-08-10T09:05:57.267Z",
         "evidenceUrl": "https://gecko-overland.com/contact/",
         "httpStatus": 200,
         "signals": [
@@ -659,7 +659,7 @@
     "bbq fans": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-06T13:05:55.937Z",
+        "verifiedAt": "2026-08-10T09:05:56.442Z",
         "evidenceUrl": "https://www.bbqfans.com/become-a-supplier/",
         "httpStatus": 200,
         "signals": [
@@ -678,7 +678,7 @@
     "flameoutdoors": {
       "firstPartyChannelVerification": {
         "status": "unreachable",
-        "verifiedAt": "2026-08-06T13:05:55.221Z",
+        "verifiedAt": "2026-08-10T09:05:55.282Z",
         "evidenceUrl": "https://flameoutdoors.com/pages/authorized-dealer",
         "httpStatus": 402,
         "signals": [],
@@ -693,7 +693,7 @@
     "basecamp outfitters roslyn": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-06T13:06:00.791Z",
+        "verifiedAt": "2026-08-10T09:06:00.285Z",
         "evidenceUrl": "https://www.basecamp-outfitters.com/",
         "httpStatus": 200,
         "signals": [
@@ -713,7 +713,7 @@
     "new world outdoor gear co": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-06T13:05:59.250Z",
+        "verifiedAt": "2026-08-10T09:05:58.648Z",
         "evidenceUrl": "https://www.nwogco.com/",
         "httpStatus": 200,
         "signals": [
@@ -733,7 +733,7 @@
     "esprinet group": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-06T13:06:03.043Z",
+        "verifiedAt": "2026-08-10T09:06:00.526Z",
         "evidenceUrl": "https://www.esprinet.com/en/become-a-supplier/",
         "httpStatus": 200,
         "signals": [
@@ -750,10 +750,10 @@
     },
     "eet group": {
       "firstPartyChannelVerification": {
-        "status": "checked",
-        "verifiedAt": "2026-08-06T13:06:00.508Z",
-        "evidenceUrl": "https://www.eetgroup.com/en-eu/",
-        "httpStatus": 200,
+        "status": "unreachable",
+        "verifiedAt": "2026-08-10T09:06:01.166Z",
+        "evidenceUrl": "https://www.eetgroup.com/en-eu/eet/become-a-supplier",
+        "httpStatus": 403,
         "signals": [],
         "error": ""
       },
@@ -2479,14 +2479,11 @@
     },
     "rona": {
       "firstPartyChannelVerification": {
-        "status": "checked",
-        "verifiedAt": "2026-08-06T13:05:54.540Z",
+        "status": "unreachable",
+        "verifiedAt": "2026-08-10T09:05:57.882Z",
         "evidenceUrl": "https://vendors.rona.ca/product-supplier",
-        "httpStatus": 200,
-        "signals": [
-          "form_control",
-          "contact_invitation"
-        ],
+        "httpStatus": 403,
+        "signals": [],
         "error": ""
       },
       "contactCapabilityVerified": true,

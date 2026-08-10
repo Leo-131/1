@@ -1,6 +1,6 @@
 window.OUTREACH_INTELLIGENCE_LATEST = {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-10T07:05:56.514Z",
+  "generatedAt": "2026-08-10T09:06:05.278Z",
   "companies": [
     {
       "companyId": "company_819cc04fe9060117",
@@ -25,7 +25,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://www.intersport.no/",
-          "checkedAt": "2026-08-06T10:05:49.372Z"
+          "checkedAt": "2026-08-10T09:05:49.394Z"
         },
         {
           "channel": "facebook",
@@ -35,7 +35,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://www.intersport.no/",
-          "checkedAt": "2026-08-06T10:05:49.372Z"
+          "checkedAt": "2026-08-10T09:05:49.394Z"
         },
         {
           "channel": "facebook",
@@ -45,7 +45,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://www.intersport.no/",
-          "checkedAt": "2026-08-06T10:05:49.372Z"
+          "checkedAt": "2026-08-10T09:05:49.394Z"
         },
         {
           "channel": "website_form",
@@ -242,6 +242,12 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
           "status": "failed_open",
           "timestamp": "2026-08-10T04:06:55.287Z",
           "channel": "linkedin",
+          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:linkedin;identity_mismatch_expected_Esprinet Group_title_(23) LinkedIn;contact_path_strategy_v2"
+        },
+        {
+          "status": "failed_open",
+          "timestamp": "2026-08-10T07:06:59.605Z",
+          "channel": "website_form",
           "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:linkedin;identity_mismatch_expected_Esprinet Group_title_(23) LinkedIn;contact_path_strategy_v2"
         }
       ]
@@ -554,115 +560,6 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
           "timestamp": "2026-08-04T03:35:35.667Z",
           "channel": "website_form",
           "evidence": "official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_missing;contact_path_strategy_v2"
-        }
-      ]
-    },
-    {
-      "companyId": "company_513b53e283883f91",
-      "company": "Outnorth",
-      "keys": [
-        "outnorth",
-        "outnorthcom"
-      ],
-      "domains": [
-        "outnorth.com"
-      ],
-      "channels": [
-        "website_form",
-        "email"
-      ],
-      "evidence": [
-        {
-          "channel": "website_form",
-          "score": 0,
-          "verified": false,
-          "reasons": [
-            "unverified_external_evidence_rejected"
-          ],
-          "evidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
-          "checkedAt": ""
-        },
-        {
-          "channel": "website_form",
-          "score": 0,
-          "verified": false,
-          "reasons": [
-            "unverified_external_evidence_rejected"
-          ],
-          "evidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
-          "checkedAt": ""
-        },
-        {
-          "channel": "website_form",
-          "score": 0,
-          "verified": false,
-          "reasons": [
-            "unverified_external_evidence_rejected"
-          ],
-          "evidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
-          "checkedAt": ""
-        }
-      ],
-      "history": [
-        {
-          "status": "website_contact_unreachable_skip",
-          "timestamp": "2026-07-14T03:06:50.141Z",
-          "channel": "website_form",
-          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:1"
-        },
-        {
-          "status": "website_contact_unreachable_skip",
-          "timestamp": "2026-07-15T13:04:18.415Z",
-          "channel": "website_form",
-          "evidence": "website_contact_entry_not_verified;contact_entry_clicked:https://www.outnorth.com/no/faq/kontakt;website_contact_all_targets_failed:1"
-        },
-        {
-          "status": "website_contact_unreachable_skip",
-          "timestamp": "2026-07-15T16:04:36.665Z",
-          "channel": "website_form",
-          "evidence": "website_contact_entry_not_verified;contact_entry_clicked:Logg inn;website_contact_all_targets_failed:1"
-        },
-        {
-          "status": "website_contact_unreachable_skip",
-          "timestamp": "2026-07-16T02:01:29.732Z",
-          "channel": "website_form",
-          "evidence": "website_contact_entry_not_verified;no_contact_route_detected;website_contact_all_targets_failed:1"
-        },
-        {
-          "status": "website_contact_unreachable_skip",
-          "timestamp": "2026-07-21T02:19:23.043Z",
-          "channel": "website_form",
-          "evidence": "website_contact_entry_not_verified;contact_entry_clicked:https://www.outnorth.com/help/contact-us;website_contact_all_targets_failed:6;contact_path_strategy_v2"
-        },
-        {
-          "status": "website_contact_unreachable_skip",
-          "timestamp": "2026-07-24T05:05:58.725Z",
-          "channel": "website_form",
-          "evidence": "website_contact_entry_not_verified;contact_entry_clicked:Logg inn;website_contact_all_targets_failed:6;contact_path_strategy_v2"
-        },
-        {
-          "status": "website_contact_unreachable_skip",
-          "timestamp": "2026-07-26T22:08:35.667Z",
-          "channel": "website_form",
-          "evidence": "website_contact_entry_not_verified;no_contact_route_detected;website_contact_all_targets_failed:6;contact_path_strategy_v2"
-        },
-        {
-          "status": "approval_pending",
-          "timestamp": "2026-07-30T11:28:57.369Z",
-          "channel": "email",
-          "evidence": "alibaba_webmail_login_required"
-        },
-        {
-          "status": "approval_pending",
-          "timestamp": "2026-07-30T11:34:44.847Z",
-          "channel": "website_form",
-          "evidence": "alibaba_webmail_login_required"
-        },
-        {
-          "status": "failed_open",
-          "timestamp": "2026-07-30T11:41:27.380Z",
-          "channel": "website_form",
-          "evidence": "customer_execution_timeout:90000;queue_continued_to_next_customer"
         }
       ]
     },
@@ -1069,107 +966,6 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
           "timestamp": "2026-08-05T03:01:21.179Z",
           "channel": "website_form",
           "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:instagram;identity_mismatch_expected_Bergfreunde_title_www.instagram.com;contact_path_strategy_v2"
-        }
-      ]
-    },
-    {
-      "companyId": "company_b01fae48f138bc63",
-      "company": "Campervan Gift",
-      "keys": [
-        "campervangift",
-        "campervangiftcouk"
-      ],
-      "domains": [
-        "campervangift.co.uk"
-      ],
-      "channels": [
-        "website_form",
-        "email"
-      ],
-      "evidence": [
-        {
-          "channel": "website_form",
-          "score": 100,
-          "verified": true,
-          "reasons": [
-            "official_business_route"
-          ],
-          "evidenceUrl": "https://www.campervangift.co.uk/become-a-supplier/",
-          "checkedAt": ""
-        },
-        {
-          "channel": "website_form",
-          "score": 100,
-          "verified": true,
-          "reasons": [
-            "official_business_route"
-          ],
-          "evidenceUrl": "https://www.campervangift.co.uk/become-a-supplier/",
-          "checkedAt": ""
-        },
-        {
-          "channel": "website_form",
-          "score": 100,
-          "verified": true,
-          "reasons": [
-            "official_business_route"
-          ],
-          "evidenceUrl": "https://www.campervangift.co.uk/become-a-supplier/",
-          "checkedAt": ""
-        },
-        {
-          "channel": "research",
-          "score": 100,
-          "verified": true,
-          "reasons": [
-            "official_business_route"
-          ],
-          "evidenceUrl": "https://www.campervangift.co.uk/become-a-supplier/",
-          "checkedAt": ""
-        }
-      ],
-      "history": [
-        {
-          "status": "failed_open",
-          "timestamp": "2026-08-04T05:16:35.163Z",
-          "channel": "email",
-          "evidence": "verified_email_auto_send_no_manual_review;alibaba_webmail_content_inserted_recipient_control_verified;alibaba_webmail_draft_verification_failed;recipientReady:true;subjectReady:false;bodyReady:true;recipientStageValueMatch:true;recipientStageType:search;recipientStageRole:combobox;recipientStageClass:ant-select-selection-search-input;recipientStageXY:252,13;recipientControl:INPUT,search,combobox,ant-select-selection-search-input hide-clear;recipientControlXY:0,0;recipientControlShadow:false;composer_preserved_for_technical_evidence:true;contact_path_strategy_v2"
-        },
-        {
-          "status": "failed_open",
-          "timestamp": "2026-08-04T05:49:40.925Z",
-          "channel": "website_form",
-          "evidence": "verified_email_auto_send_no_manual_review;alibaba_webmail_content_inserted_recipient_control_verified;alibaba_webmail_draft_verification_failed;recipientReady:true;subjectReady:false;bodyReady:true;recipientStageValueMatch:true;recipientStageType:search;recipientStageRole:combobox;recipientStageClass:ant-select-selection-search-input;recipientStageXY:252,13;recipientControl:INPUT,search,combobox,ant-select-selection-search-input hide-clear;recipientControlXY:0,0;recipientControlShadow:false;composer_preserved_for_technical_evidence:true;contact_path_strategy_v2"
-        },
-        {
-          "status": "failed_open",
-          "timestamp": "2026-08-04T06:46:09.398Z",
-          "channel": "email",
-          "evidence": "verified_email_auto_send_no_manual_review;alibaba_webmail_content_inserted_recipient_control_verified;alibaba_webmail_draft_verification_failed;recipientReady:false;subjectReady:true;bodyReady:true;recipientStageValueMatch:true;recipientStageType:search;recipientStageRole:combobox;recipientStageClass:ant-select-selection-search-input;recipientStageXY:252,13;recipientControl:INPUT,search,combobox,ant-select-selection-search-input hide-clear;recipientControlXY:0,0;recipientControlShadow:false;composer_preserved_for_technical_evidence:true;contact_path_strategy_v2"
-        },
-        {
-          "status": "failed_open",
-          "timestamp": "2026-08-04T06:48:12.413Z",
-          "channel": "website_form",
-          "evidence": "verified_email_auto_send_no_manual_review;alibaba_webmail_content_inserted_recipient_control_verified;alibaba_webmail_draft_verification_failed;recipientReady:false;subjectReady:true;bodyReady:true;recipientStageValueMatch:true;recipientStageType:search;recipientStageRole:combobox;recipientStageClass:ant-select-selection-search-input;recipientStageXY:252,13;recipientControl:INPUT,search,combobox,ant-select-selection-search-input hide-clear;recipientControlXY:0,0;recipientControlShadow:false;composer_preserved_for_technical_evidence:true;contact_path_strategy_v2"
-        },
-        {
-          "status": "website_contact_unreachable_skip",
-          "timestamp": "2026-08-04T11:29:52.758Z",
-          "channel": "website_form",
-          "evidence": "unavailable_profile_page: 0800 014 8686\nSign in\nor\nRegister\n Cart\nSearch\nCATEGORIES\nGIFT IDEAS\nSHOP BY TYPE\nCOLLECTIONS\nCUSTOMER SERVICE\nABOUT US\n   \nHOME  错误\n404 Error - Page not found\n\nUh oh, looks like t;public_email_fallback_available:sales@campervangift.co.uk;email_sender_not_configured;email_route_preserved_draft_no_reopen;no_email_composer_opened;no_send_performed;recipient:sales@campervangift.co.uk;website_contact_all_targets_failed:7;contact_path_strategy_v2"
-        },
-        {
-          "status": "website_contact_unreachable_skip",
-          "timestamp": "2026-08-04T11:55:40.842Z",
-          "channel": "website_form",
-          "evidence": "unavailable_profile_page: 0800 014 8686\nSign in\nor\nRegister\n Cart\nSearch\nCATEGORIES\nGIFT IDEAS\nSHOP BY TYPE\nCOLLECTIONS\nCUSTOMER SERVICE\nABOUT US\n   \nHOME  错误\n404 Error - Page not found\n\nUh oh, looks like t;public_email_fallback_available:sales@campervangift.co.uk;email_sender_not_configured;email_route_preserved_draft_no_reopen;no_email_composer_opened;no_send_performed;recipient:sales@campervangift.co.uk;website_contact_all_targets_failed:7;contact_path_strategy_v2"
-        },
-        {
-          "status": "failed_open",
-          "timestamp": "2026-08-04T12:00:44.120Z",
-          "channel": "website_form",
-          "evidence": "customer_execution_timeout:30000;queue_continued_to_next_customer"
         }
       ]
     },
@@ -2407,32 +2203,22 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
       "evidence": [
         {
           "channel": "website_form",
-          "score": 80,
+          "score": 0,
           "verified": false,
           "reasons": [
-            "first_party_evidence"
+            "unverified_external_evidence_rejected"
           ],
-          "evidenceUrl": "https://www.tiso.com/",
+          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
           "checkedAt": ""
         },
         {
           "channel": "website_form",
-          "score": 80,
+          "score": 0,
           "verified": false,
           "reasons": [
-            "first_party_evidence"
+            "unverified_external_evidence_rejected"
           ],
-          "evidenceUrl": "https://www.tiso.com/",
-          "checkedAt": ""
-        },
-        {
-          "channel": "website_form",
-          "score": 80,
-          "verified": false,
-          "reasons": [
-            "first_party_evidence"
-          ],
-          "evidenceUrl": "https://www.tiso.com/",
+          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
           "checkedAt": ""
         },
         {
@@ -2442,7 +2228,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
           "reasons": [
             "unverified_external_evidence_rejected"
           ],
-          "evidenceUrl": "https://www.tiso.com/",
+          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
           "checkedAt": ""
         },
         {
@@ -2452,7 +2238,17 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
           "reasons": [
             "unverified_external_evidence_rejected"
           ],
-          "evidenceUrl": "https://www.tiso.com/",
+          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
+          "checkedAt": ""
+        },
+        {
+          "channel": "website_form",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
           "checkedAt": ""
         }
       ],
@@ -2539,6 +2335,12 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
           "status": "failed_open",
           "timestamp": "2026-08-10T04:07:57.357Z",
           "channel": "facebook",
+          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;identity_mismatch_expected_Tiso_title_(12) Facebook;contact_path_strategy_v2"
+        },
+        {
+          "status": "failed_open",
+          "timestamp": "2026-08-10T07:07:00.144Z",
+          "channel": "website_form",
           "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;identity_mismatch_expected_Tiso_title_(12) Facebook;contact_path_strategy_v2"
         }
       ]
@@ -2963,7 +2765,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://www.nwogco.com/",
-          "checkedAt": "2026-08-06T13:05:59.250Z"
+          "checkedAt": "2026-08-10T09:05:58.648Z"
         },
         {
           "channel": "website_form",
@@ -3284,6 +3086,12 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
           "timestamp": "2026-08-10T04:07:45.945Z",
           "channel": "instagram",
           "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;instagram_message_button_clicked_composer_not_found;contact_path_strategy_v2"
+        },
+        {
+          "status": "failed_open",
+          "timestamp": "2026-08-10T07:07:00.077Z",
+          "channel": "website_form",
+          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;instagram_message_button_clicked_composer_not_found;contact_path_strategy_v2"
         }
       ]
     },
@@ -3513,6 +3321,12 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
           "timestamp": "2026-08-10T04:07:12.028Z",
           "channel": "instagram",
           "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:instagram;instagram_unavailable_profile_page: 很抱歉，无法访问此页面\n你点击的链接可能已损坏，或页面已被移除。返回 instagram。\nmeta\n关于\n博客\n工作\n帮助\napi\n隐私设置\n条款\n地点\n热门\ninstagram lite\nmeta ai\nthreads\n联系人上传和非用户\nmeta verified\n中文(简体)\nafrikaans\nالعربية\nčeština\ndansk\ndeutsch\nελληνικά\nenglish\nenglish (uk)\nespañol (españa)\nespañol\nفارسی\nsuomi\nfrançais\nעברית\nbahasa indonesia\nitaliano\n日本語\n한국어\nbahasa melayu\nnorsk\nnederlands\npolski\nportuguês (brasil)\nportuguês (portugal)\nрусский\nsvenska\nภาษาไทย\nfilipino\ntürkçe\n中文(简体)\n中文(台灣)\nবাংলা\nગુજરાતી\nहिन्दी\nhrvatski\nmagyar\nಕನ್ನಡ\nമലയാളം\nमराठी\nनेपाली\nਪੰਜਾਬੀ\nසිංහල\nslovenčina\nதமிழ்\nతెలుగు\nاردو\ntiếng việt\n中文(香港)\nбългарски\nfrançais (canada)\nromână\nсрпски\nукра;contact_path_strategy_v2"
+        },
+        {
+          "status": "failed_open",
+          "timestamp": "2026-08-10T07:06:59.836Z",
+          "channel": "website_form",
+          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:instagram;instagram_unavailable_profile_page: 很抱歉，无法访问此页面\n你点击的链接可能已损坏，或页面已被移除。返回 instagram。\nmeta\n关于\n博客\n工作\n帮助\napi\n隐私设置\n条款\n地点\n热门\ninstagram lite\nmeta ai\nthreads\n联系人上传和非用户\nmeta verified\n中文(简体)\nafrikaans\nالعربية\nčeština\ndansk\ndeutsch\nελληνικά\nenglish\nenglish (uk)\nespañol (españa)\nespañol\nفارسی\nsuomi\nfrançais\nעברית\nbahasa indonesia\nitaliano\n日本語\n한국어\nbahasa melayu\nnorsk\nnederlands\npolski\nportuguês (brasil)\nportuguês (portugal)\nрусский\nsvenska\nภาษาไทย\nfilipino\ntürkçe\n中文(简体)\n中文(台灣)\nবাংলা\nગુજરાતી\nहिन्दी\nhrvatski\nmagyar\nಕನ್ನಡ\nമലയാളം\nमराठी\nनेपाली\nਪੰਜਾਬੀ\nසිංහල\nslovenčina\nதமிழ்\nతెలుగు\nاردو\ntiếng việt\n中文(香港)\nбългарски\nfrançais (canada)\nromână\nсрпски\nукра;contact_path_strategy_v2"
         }
       ]
     },
@@ -3694,6 +3508,12 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
         {
           "status": "website_contact_unreachable_skip",
           "timestamp": "2026-08-06T16:07:32.789Z",
+          "channel": "website_form",
+          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:7;contact_path_strategy_v2"
+        },
+        {
+          "status": "website_contact_unreachable_skip",
+          "timestamp": "2026-08-10T07:07:55.177Z",
           "channel": "website_form",
           "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:7;contact_path_strategy_v2"
         }
@@ -4954,78 +4774,6 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
       ]
     },
     {
-      "companyId": "company_c0440a7bff971d9f",
-      "company": "Gear West",
-      "keys": [
-        "gearwest",
-        "gearwestcom"
-      ],
-      "domains": [
-        "gearwest.com"
-      ],
-      "channels": [
-        "website_form"
-      ],
-      "evidence": [
-        {
-          "channel": "website_form",
-          "score": 0,
-          "verified": false,
-          "reasons": [
-            "unverified_external_evidence_rejected"
-          ],
-          "evidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
-          "checkedAt": ""
-        },
-        {
-          "channel": "website_form",
-          "score": 0,
-          "verified": false,
-          "reasons": [
-            "unverified_external_evidence_rejected"
-          ],
-          "evidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
-          "checkedAt": ""
-        },
-        {
-          "channel": "website_form",
-          "score": 0,
-          "verified": false,
-          "reasons": [
-            "unverified_external_evidence_rejected"
-          ],
-          "evidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
-          "checkedAt": ""
-        }
-      ],
-      "history": [
-        {
-          "status": "website_contact_unreachable_skip",
-          "timestamp": "2026-07-14T04:02:51.813Z",
-          "channel": "website_form",
-          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:1"
-        },
-        {
-          "status": "website_contact_unreachable_skip",
-          "timestamp": "2026-07-21T04:07:31.424Z",
-          "channel": "website_form",
-          "evidence": "unavailable_profile_page: Skip to content\nGift Cards\nService\nRentals\nTrade-In Program\nGear Guide\nTrail Kids Equipment Guide\n My Account\nSearch\n0\nMenu\nOops! Page not found.\n404 Error\n\nThe page you are lookin;website_contact_all_targets_failed:6;contact_path_strategy_v2"
-        },
-        {
-          "status": "website_contact_unreachable_skip",
-          "timestamp": "2026-07-27T11:37:34.289Z",
-          "channel": "website_form",
-          "evidence": "website_contact_entry_not_verified;no_contact_route_detected;website_contact_all_targets_failed:6;contact_path_strategy_v2"
-        },
-        {
-          "status": "website_contact_unreachable_skip",
-          "timestamp": "2026-07-29T02:55:10.674Z",
-          "channel": "website_form",
-          "evidence": "unavailable_profile_page: Skip to content\nGift Cards\nService\nRentals\nTrade-In Program\nGear Guide\nTrail Kids Equipment Guide\n My Account\nSearch\n0\nMenu\nOops! Page not found.\n404 Error\n\nThe page you are lookin;website_contact_all_targets_failed:6;contact_path_strategy_v2"
-        }
-      ]
-    },
-    {
       "companyId": "company_aeb02fd0dd014816",
       "company": "RONA",
       "keys": [
@@ -5666,6 +5414,16 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
           ],
           "evidenceUrl": "https://www.outdoornature.com.au/become-a-supplier/",
           "checkedAt": ""
+        },
+        {
+          "channel": "website_form",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "https://www.outdoornature.com.au/become-a-supplier/",
+          "checkedAt": ""
         }
       ],
       "history": [
@@ -5704,6 +5462,12 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
           "timestamp": "2026-07-30T18:01:08.035Z",
           "channel": "website_form",
           "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:7;contact_path_strategy_v2"
+        },
+        {
+          "status": "failed_open",
+          "timestamp": "2026-08-10T09:06:30.000Z",
+          "channel": "website_form",
+          "evidence": "official_supplier_form_verified_and_product_fit_passed;recaptcha_present;no_submit_clicked;captcha_platform_blocker_skipped_safely"
         }
       ]
     },
@@ -8171,6 +7935,111 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
       ]
     },
     {
+      "companyId": "company_513b53e283883f91",
+      "company": "Outnorth",
+      "keys": [
+        "outnorth",
+        "outnorthcom"
+      ],
+      "domains": [
+        "outnorth.com"
+      ],
+      "channels": [
+        "website_form",
+        "email"
+      ],
+      "evidence": [
+        {
+          "channel": "website_form",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
+          "checkedAt": ""
+        },
+        {
+          "channel": "website_form",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "https://www.outnorth.com/int/faq/contact",
+          "checkedAt": ""
+        }
+      ],
+      "history": [
+        {
+          "status": "website_contact_unreachable_skip",
+          "timestamp": "2026-07-14T03:06:50.141Z",
+          "channel": "website_form",
+          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:1"
+        },
+        {
+          "status": "website_contact_unreachable_skip",
+          "timestamp": "2026-07-15T13:04:18.415Z",
+          "channel": "website_form",
+          "evidence": "website_contact_entry_not_verified;contact_entry_clicked:https://www.outnorth.com/no/faq/kontakt;website_contact_all_targets_failed:1"
+        },
+        {
+          "status": "website_contact_unreachable_skip",
+          "timestamp": "2026-07-15T16:04:36.665Z",
+          "channel": "website_form",
+          "evidence": "website_contact_entry_not_verified;contact_entry_clicked:Logg inn;website_contact_all_targets_failed:1"
+        },
+        {
+          "status": "website_contact_unreachable_skip",
+          "timestamp": "2026-07-16T02:01:29.732Z",
+          "channel": "website_form",
+          "evidence": "website_contact_entry_not_verified;no_contact_route_detected;website_contact_all_targets_failed:1"
+        },
+        {
+          "status": "website_contact_unreachable_skip",
+          "timestamp": "2026-07-21T02:19:23.043Z",
+          "channel": "website_form",
+          "evidence": "website_contact_entry_not_verified;contact_entry_clicked:https://www.outnorth.com/help/contact-us;website_contact_all_targets_failed:6;contact_path_strategy_v2"
+        },
+        {
+          "status": "website_contact_unreachable_skip",
+          "timestamp": "2026-07-24T05:05:58.725Z",
+          "channel": "website_form",
+          "evidence": "website_contact_entry_not_verified;contact_entry_clicked:Logg inn;website_contact_all_targets_failed:6;contact_path_strategy_v2"
+        },
+        {
+          "status": "website_contact_unreachable_skip",
+          "timestamp": "2026-07-26T22:08:35.667Z",
+          "channel": "website_form",
+          "evidence": "website_contact_entry_not_verified;no_contact_route_detected;website_contact_all_targets_failed:6;contact_path_strategy_v2"
+        },
+        {
+          "status": "approval_pending",
+          "timestamp": "2026-07-30T11:28:57.369Z",
+          "channel": "email",
+          "evidence": "alibaba_webmail_login_required"
+        },
+        {
+          "status": "approval_pending",
+          "timestamp": "2026-07-30T11:34:44.847Z",
+          "channel": "website_form",
+          "evidence": "alibaba_webmail_login_required"
+        },
+        {
+          "status": "failed_open",
+          "timestamp": "2026-07-30T11:41:27.380Z",
+          "channel": "website_form",
+          "evidence": "customer_execution_timeout:90000;queue_continued_to_next_customer"
+        },
+        {
+          "status": "sent_confirmed",
+          "timestamp": "2026-08-10T09:04:00.000Z",
+          "channel": "website_form",
+          "evidence": "official_outnorth_contact_page_and_first_party_return_document_publish_info_email;sender_Leo_at_flextailgear_verified;recipient_subject_body_gate_passed;send_clicked_once;alibaba_sent_confirmation_visible;composer_closed"
+        }
+      ]
+    },
+    {
       "companyId": "company_f2905733b544c0f2",
       "company": "Naturkompaniet",
       "keys": [
@@ -9357,7 +9226,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://www.bever.nl/",
-          "checkedAt": "2026-08-06T10:05:54.459Z"
+          "checkedAt": "2026-08-10T09:05:49.706Z"
         },
         {
           "channel": "website_form",
@@ -9607,6 +9476,74 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
           "timestamp": "2026-07-21T05:29:00.000Z",
           "channel": "email",
           "evidence": "official_homepage_and_where_to_buy_distribution_page;alibaba_mail_sender_verified_leo_at_flextailgear_com;separate_chrome_tab_used;alibaba_mail_sent_success_visible;sent_folder_record_confirmed;sent_folder_time:13:29;sent_folder_subject:FLEXTAIL outdoor electronics | Further Faster range review"
+        }
+      ]
+    },
+    {
+      "companyId": "company_c0440a7bff971d9f",
+      "company": "Gear West",
+      "keys": [
+        "gearwest",
+        "gearwestcom"
+      ],
+      "domains": [
+        "gearwest.com"
+      ],
+      "channels": [
+        "website_form"
+      ],
+      "evidence": [
+        {
+          "channel": "website_form",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
+          "checkedAt": ""
+        },
+        {
+          "channel": "website_form",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "https://www.gearwest.com/pages/about-gear-west",
+          "checkedAt": ""
+        }
+      ],
+      "history": [
+        {
+          "status": "website_contact_unreachable_skip",
+          "timestamp": "2026-07-14T04:02:51.813Z",
+          "channel": "website_form",
+          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:1"
+        },
+        {
+          "status": "website_contact_unreachable_skip",
+          "timestamp": "2026-07-21T04:07:31.424Z",
+          "channel": "website_form",
+          "evidence": "unavailable_profile_page: Skip to content\nGift Cards\nService\nRentals\nTrade-In Program\nGear Guide\nTrail Kids Equipment Guide\n My Account\nSearch\n0\nMenu\nOops! Page not found.\n404 Error\n\nThe page you are lookin;website_contact_all_targets_failed:6;contact_path_strategy_v2"
+        },
+        {
+          "status": "website_contact_unreachable_skip",
+          "timestamp": "2026-07-27T11:37:34.289Z",
+          "channel": "website_form",
+          "evidence": "website_contact_entry_not_verified;no_contact_route_detected;website_contact_all_targets_failed:6;contact_path_strategy_v2"
+        },
+        {
+          "status": "website_contact_unreachable_skip",
+          "timestamp": "2026-07-29T02:55:10.674Z",
+          "channel": "website_form",
+          "evidence": "unavailable_profile_page: Skip to content\nGift Cards\nService\nRentals\nTrade-In Program\nGear Guide\nTrail Kids Equipment Guide\n My Account\nSearch\n0\nMenu\nOops! Page not found.\n404 Error\n\nThe page you are lookin;website_contact_all_targets_failed:6;contact_path_strategy_v2"
+        },
+        {
+          "status": "sent_confirmed",
+          "timestamp": "2026-08-10T09:08:30.000Z",
+          "channel": "website_form",
+          "evidence": "official_about_page_publishes_owner_contact_email_and_specialty_sports_assortment;sender_Leo_at_flextailgear_verified;recipient_subject_body_gate_passed;send_clicked_once;alibaba_sent_confirmation_visible;composer_closed"
         }
       ]
     },
@@ -10816,12 +10753,12 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
         },
         {
           "channel": "website_form",
-          "score": 100,
-          "verified": true,
+          "score": 0,
+          "verified": false,
           "reasons": [
-            "official_business_route"
+            "unverified_external_evidence_rejected"
           ],
-          "evidenceUrl": "https://paragonsports.com/",
+          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
           "checkedAt": ""
         }
       ],
@@ -10863,7 +10800,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
           "reasons": [
             "unverified_external_evidence_rejected"
           ],
-          "evidenceUrl": "https://www.mountain-equipment.com/",
+          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
           "checkedAt": ""
         },
         {
@@ -10873,7 +10810,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
           "reasons": [
             "unverified_external_evidence_rejected"
           ],
-          "evidenceUrl": "https://www.mountain-equipment.com/",
+          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
           "checkedAt": ""
         },
         {
@@ -10883,7 +10820,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
           "reasons": [
             "unverified_external_evidence_rejected"
           ],
-          "evidenceUrl": "https://www.mountain-equipment.com/",
+          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
           "checkedAt": ""
         }
       ],
@@ -10919,7 +10856,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
           "reasons": [
             "unverified_external_evidence_rejected"
           ],
-          "evidenceUrl": "https://www.tiso.com/pages/george-fisher-landing?utm_source=georgefisher",
+          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
           "checkedAt": ""
         },
         {
@@ -10929,7 +10866,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
           "reasons": [
             "unverified_external_evidence_rejected"
           ],
-          "evidenceUrl": "https://www.tiso.com/pages/george-fisher-landing?utm_source=georgefisher",
+          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
           "checkedAt": ""
         },
         {
@@ -10939,7 +10876,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
           "reasons": [
             "unverified_external_evidence_rejected"
           ],
-          "evidenceUrl": "https://www.tiso.com/pages/george-fisher-landing?utm_source=georgefisher",
+          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
           "checkedAt": ""
         }
       ],
@@ -11126,23 +11063,23 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
           "checkedAt": "2026-08-10T07:05:27.348Z"
         },
         {
-          "channel": "website_form",
-          "score": 80,
-          "verified": false,
-          "reasons": [
-            "first_party_evidence"
-          ],
-          "evidenceUrl": "https://www.facewest.co.uk/",
-          "checkedAt": ""
-        },
-        {
           "channel": "instagram",
           "score": 0,
           "verified": false,
           "reasons": [
             "unverified_external_evidence_rejected"
           ],
-          "evidenceUrl": "https://www.facewest.co.uk/",
+          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
+          "checkedAt": ""
+        },
+        {
+          "channel": "website_form",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
           "checkedAt": ""
         }
       ],
@@ -11242,23 +11179,23 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
           "checkedAt": "2026-08-10T07:05:28.846Z"
         },
         {
-          "channel": "website_form",
-          "score": 100,
-          "verified": true,
-          "reasons": [
-            "official_business_route"
-          ],
-          "evidenceUrl": "https://72hours.ca/",
-          "checkedAt": ""
-        },
-        {
           "channel": "instagram",
           "score": 0,
           "verified": false,
           "reasons": [
             "unverified_external_evidence_rejected"
           ],
-          "evidenceUrl": "https://72hours.ca/",
+          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
+          "checkedAt": ""
+        },
+        {
+          "channel": "website_form",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
           "checkedAt": ""
         }
       ],
@@ -11613,7 +11550,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://www.wildearth.com.au/",
-          "checkedAt": "2026-08-06T07:05:50.567Z"
+          "checkedAt": "2026-08-10T07:05:32.935Z"
         },
         {
           "channel": "facebook",
@@ -11623,7 +11560,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://www.wildearth.com.au/",
-          "checkedAt": "2026-08-06T07:05:50.567Z"
+          "checkedAt": "2026-08-10T07:05:32.935Z"
         },
         {
           "channel": "website_form",
@@ -11633,7 +11570,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://www.wildearth.com.au/",
-          "checkedAt": "2026-08-06T07:05:50.567Z"
+          "checkedAt": "2026-08-10T07:05:32.935Z"
         }
       ],
       "history": [
@@ -11690,23 +11627,23 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
           "checkedAt": "2026-08-10T07:05:33.840Z"
         },
         {
-          "channel": "website_form",
-          "score": 80,
-          "verified": false,
-          "reasons": [
-            "first_party_evidence"
-          ],
-          "evidenceUrl": "https://www.paddypallin.com.au/",
-          "checkedAt": ""
-        },
-        {
           "channel": "instagram",
           "score": 0,
           "verified": false,
           "reasons": [
             "unverified_external_evidence_rejected"
           ],
-          "evidenceUrl": "https://www.paddypallin.com.au/",
+          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
+          "checkedAt": ""
+        },
+        {
+          "channel": "website_form",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
           "checkedAt": ""
         }
       ],
@@ -11763,12 +11700,12 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
         },
         {
           "channel": "website_form",
-          "score": 80,
+          "score": 0,
           "verified": false,
           "reasons": [
-            "first_party_evidence"
+            "unverified_external_evidence_rejected"
           ],
-          "evidenceUrl": "https://www.macpac.com.au/",
+          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
           "checkedAt": ""
         }
       ],
@@ -11871,23 +11808,13 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
       ],
       "evidence": [
         {
-          "channel": "website_form",
-          "score": 80,
-          "verified": false,
-          "reasons": [
-            "first_party_evidence"
-          ],
-          "evidenceUrl": "https://www.outdooraction.co.nz/",
-          "checkedAt": ""
-        },
-        {
           "channel": "instagram",
           "score": 0,
           "verified": false,
           "reasons": [
             "unverified_external_evidence_rejected"
           ],
-          "evidenceUrl": "https://www.outdooraction.co.nz/",
+          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
           "checkedAt": ""
         },
         {
@@ -11897,7 +11824,17 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
           "reasons": [
             "unverified_external_evidence_rejected"
           ],
-          "evidenceUrl": "https://www.outdooraction.co.nz/",
+          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
+          "checkedAt": ""
+        },
+        {
+          "channel": "website_form",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
           "checkedAt": ""
         }
       ],
@@ -12090,7 +12027,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://www.doorout.com/",
-          "checkedAt": "2026-08-06T10:05:42.313Z"
+          "checkedAt": "2026-08-10T07:05:48.295Z"
         },
         {
           "channel": "facebook",
@@ -12100,7 +12037,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://www.doorout.com/",
-          "checkedAt": "2026-08-06T10:05:42.313Z"
+          "checkedAt": "2026-08-10T07:05:48.295Z"
         },
         {
           "channel": "website_form",
@@ -12110,7 +12047,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://www.doorout.com/",
-          "checkedAt": "2026-08-06T10:05:42.313Z"
+          "checkedAt": "2026-08-10T07:05:48.295Z"
         }
       ],
       "history": [
@@ -12360,7 +12297,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://www.blue-tomato.com/de-DE/",
-          "checkedAt": "2026-08-06T10:05:44.423Z"
+          "checkedAt": "2026-08-10T09:05:44.425Z"
         },
         {
           "channel": "facebook",
@@ -12370,7 +12307,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://www.blue-tomato.com/de-DE/",
-          "checkedAt": "2026-08-06T10:05:44.423Z"
+          "checkedAt": "2026-08-10T09:05:44.425Z"
         },
         {
           "channel": "website_form",
@@ -12532,7 +12469,17 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://www.tradeinn.com/trekkinn/en",
-          "checkedAt": "2026-08-06T10:05:44.331Z"
+          "checkedAt": "2026-08-10T09:05:43.845Z"
+        },
+        {
+          "channel": "website_form",
+          "score": 80,
+          "verified": false,
+          "reasons": [
+            "first_party_evidence"
+          ],
+          "evidenceUrl": "https://www.tradeinn.com/trekkinn/en",
+          "checkedAt": ""
         },
         {
           "channel": "instagram",
@@ -12541,17 +12488,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
           "reasons": [
             "unverified_external_evidence_rejected"
           ],
-          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
-          "checkedAt": ""
-        },
-        {
-          "channel": "website_form",
-          "score": 0,
-          "verified": false,
-          "reasons": [
-            "unverified_external_evidence_rejected"
-          ],
-          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
+          "evidenceUrl": "https://www.tradeinn.com/trekkinn/en",
           "checkedAt": ""
         }
       ],
@@ -12606,7 +12543,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://www.4camping.cz/",
-          "checkedAt": "2026-08-06T10:05:46.924Z"
+          "checkedAt": "2026-08-10T09:05:46.292Z"
         },
         {
           "channel": "facebook",
@@ -12913,7 +12850,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://www.masseysoutfitters.com/",
-          "checkedAt": "2026-08-06T10:05:48.377Z"
+          "checkedAt": "2026-08-10T09:05:47.775Z"
         },
         {
           "channel": "website_form",
@@ -13039,12 +12976,12 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
       "evidence": [
         {
           "channel": "website_form",
-          "score": 0,
-          "verified": false,
+          "score": 100,
+          "verified": true,
           "reasons": [
-            "unverified_external_evidence_rejected"
+            "official_business_route"
           ],
-          "evidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
+          "evidenceUrl": "https://durangooutdoorexchange.com/",
           "checkedAt": ""
         }
       ],
@@ -13118,6 +13055,103 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
       ]
     },
     {
+      "companyId": "company_b01fae48f138bc63",
+      "company": "Campervan Gift",
+      "keys": [
+        "campervangift",
+        "campervangiftcouk"
+      ],
+      "domains": [
+        "campervangift.co.uk"
+      ],
+      "channels": [
+        "website_form",
+        "email"
+      ],
+      "evidence": [
+        {
+          "channel": "website_form",
+          "score": 100,
+          "verified": true,
+          "reasons": [
+            "official_business_route"
+          ],
+          "evidenceUrl": "https://www.campervangift.co.uk/become-a-supplier/",
+          "checkedAt": ""
+        },
+        {
+          "channel": "research",
+          "score": 100,
+          "verified": true,
+          "reasons": [
+            "official_business_route"
+          ],
+          "evidenceUrl": "https://www.campervangift.co.uk/become-a-supplier/",
+          "checkedAt": ""
+        },
+        {
+          "channel": "website_form",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "https://www.campervangift.co.uk/become-a-supplier/",
+          "checkedAt": ""
+        }
+      ],
+      "history": [
+        {
+          "status": "failed_open",
+          "timestamp": "2026-08-04T05:16:35.163Z",
+          "channel": "email",
+          "evidence": "verified_email_auto_send_no_manual_review;alibaba_webmail_content_inserted_recipient_control_verified;alibaba_webmail_draft_verification_failed;recipientReady:true;subjectReady:false;bodyReady:true;recipientStageValueMatch:true;recipientStageType:search;recipientStageRole:combobox;recipientStageClass:ant-select-selection-search-input;recipientStageXY:252,13;recipientControl:INPUT,search,combobox,ant-select-selection-search-input hide-clear;recipientControlXY:0,0;recipientControlShadow:false;composer_preserved_for_technical_evidence:true;contact_path_strategy_v2"
+        },
+        {
+          "status": "failed_open",
+          "timestamp": "2026-08-04T05:49:40.925Z",
+          "channel": "website_form",
+          "evidence": "verified_email_auto_send_no_manual_review;alibaba_webmail_content_inserted_recipient_control_verified;alibaba_webmail_draft_verification_failed;recipientReady:true;subjectReady:false;bodyReady:true;recipientStageValueMatch:true;recipientStageType:search;recipientStageRole:combobox;recipientStageClass:ant-select-selection-search-input;recipientStageXY:252,13;recipientControl:INPUT,search,combobox,ant-select-selection-search-input hide-clear;recipientControlXY:0,0;recipientControlShadow:false;composer_preserved_for_technical_evidence:true;contact_path_strategy_v2"
+        },
+        {
+          "status": "failed_open",
+          "timestamp": "2026-08-04T06:46:09.398Z",
+          "channel": "email",
+          "evidence": "verified_email_auto_send_no_manual_review;alibaba_webmail_content_inserted_recipient_control_verified;alibaba_webmail_draft_verification_failed;recipientReady:false;subjectReady:true;bodyReady:true;recipientStageValueMatch:true;recipientStageType:search;recipientStageRole:combobox;recipientStageClass:ant-select-selection-search-input;recipientStageXY:252,13;recipientControl:INPUT,search,combobox,ant-select-selection-search-input hide-clear;recipientControlXY:0,0;recipientControlShadow:false;composer_preserved_for_technical_evidence:true;contact_path_strategy_v2"
+        },
+        {
+          "status": "failed_open",
+          "timestamp": "2026-08-04T06:48:12.413Z",
+          "channel": "website_form",
+          "evidence": "verified_email_auto_send_no_manual_review;alibaba_webmail_content_inserted_recipient_control_verified;alibaba_webmail_draft_verification_failed;recipientReady:false;subjectReady:true;bodyReady:true;recipientStageValueMatch:true;recipientStageType:search;recipientStageRole:combobox;recipientStageClass:ant-select-selection-search-input;recipientStageXY:252,13;recipientControl:INPUT,search,combobox,ant-select-selection-search-input hide-clear;recipientControlXY:0,0;recipientControlShadow:false;composer_preserved_for_technical_evidence:true;contact_path_strategy_v2"
+        },
+        {
+          "status": "website_contact_unreachable_skip",
+          "timestamp": "2026-08-04T11:29:52.758Z",
+          "channel": "website_form",
+          "evidence": "unavailable_profile_page: 0800 014 8686\nSign in\nor\nRegister\n Cart\nSearch\nCATEGORIES\nGIFT IDEAS\nSHOP BY TYPE\nCOLLECTIONS\nCUSTOMER SERVICE\nABOUT US\n   \nHOME  错误\n404 Error - Page not found\n\nUh oh, looks like t;public_email_fallback_available:sales@campervangift.co.uk;email_sender_not_configured;email_route_preserved_draft_no_reopen;no_email_composer_opened;no_send_performed;recipient:sales@campervangift.co.uk;website_contact_all_targets_failed:7;contact_path_strategy_v2"
+        },
+        {
+          "status": "website_contact_unreachable_skip",
+          "timestamp": "2026-08-04T11:55:40.842Z",
+          "channel": "website_form",
+          "evidence": "unavailable_profile_page: 0800 014 8686\nSign in\nor\nRegister\n Cart\nSearch\nCATEGORIES\nGIFT IDEAS\nSHOP BY TYPE\nCOLLECTIONS\nCUSTOMER SERVICE\nABOUT US\n   \nHOME  错误\n404 Error - Page not found\n\nUh oh, looks like t;public_email_fallback_available:sales@campervangift.co.uk;email_sender_not_configured;email_route_preserved_draft_no_reopen;no_email_composer_opened;no_send_performed;recipient:sales@campervangift.co.uk;website_contact_all_targets_failed:7;contact_path_strategy_v2"
+        },
+        {
+          "status": "failed_open",
+          "timestamp": "2026-08-04T12:00:44.120Z",
+          "channel": "website_form",
+          "evidence": "customer_execution_timeout:30000;queue_continued_to_next_customer"
+        },
+        {
+          "status": "sent_confirmed",
+          "timestamp": "2026-08-10T09:01:54.138Z",
+          "channel": "website_form",
+          "evidence": "official_supplier_page_invites_products_and_publishes_sales_email;sender_Leo_at_flextailgear_verified;recipient_subject_body_gate_passed;send_clicked_once;alibaba_check_circle_sent_toast_confirmed;composer_closed"
+        }
+      ]
+    },
+    {
       "companyId": "company_e45ef472a8a0e2ed",
       "company": "Gecko Overland",
       "keys": [
@@ -13140,7 +13174,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://gecko-overland.com/contact/",
-          "checkedAt": "2026-08-06T13:05:57.902Z"
+          "checkedAt": "2026-08-10T09:05:57.267Z"
         },
         {
           "channel": "website_form",
@@ -13278,7 +13312,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://www.basecamp-outfitters.com/",
-          "checkedAt": "2026-08-06T13:06:00.791Z"
+          "checkedAt": "2026-08-10T09:06:00.285Z"
         },
         {
           "channel": "website_form",
@@ -14354,6 +14388,16 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
       "evidence": "smtp_accepted;message_id:<b4dc496b-a07b-56da-412f-aadcba9bafdf@flextailgear.com>;sent_folder_message_confirmed;contact_path_strategy_v2"
     },
     {
+      "companyId": "company_513b53e283883f91",
+      "company": "Outnorth",
+      "permanent": true,
+      "crossChannel": true,
+      "reason": "previous_customer_development_no_repeat",
+      "sourceStatus": "sent_confirmed",
+      "sourceTimestamp": "2026-08-10T09:04:00.000Z",
+      "evidence": "official_outnorth_contact_page_and_first_party_return_document_publish_info_email;sender_Leo_at_flextailgear_verified;recipient_subject_body_gate_passed;send_clicked_once;alibaba_sent_confirmation_visible;composer_closed"
+    },
+    {
       "companyId": "company_f2905733b544c0f2",
       "company": "Naturkompaniet",
       "permanent": true,
@@ -14542,6 +14586,16 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
       "sourceStatus": "sent_confirmed",
       "sourceTimestamp": "2026-07-21T05:29:00.000Z",
       "evidence": "official_homepage_and_where_to_buy_distribution_page;alibaba_mail_sender_verified_leo_at_flextailgear_com;separate_chrome_tab_used;alibaba_mail_sent_success_visible;sent_folder_record_confirmed;sent_folder_time:13:29;sent_folder_subject:FLEXTAIL outdoor electronics | Further Faster range review"
+    },
+    {
+      "companyId": "company_c0440a7bff971d9f",
+      "company": "Gear West",
+      "permanent": true,
+      "crossChannel": true,
+      "reason": "previous_customer_development_no_repeat",
+      "sourceStatus": "sent_confirmed",
+      "sourceTimestamp": "2026-08-10T09:08:30.000Z",
+      "evidence": "official_about_page_publishes_owner_contact_email_and_specialty_sports_assortment;sender_Leo_at_flextailgear_verified;recipient_subject_body_gate_passed;send_clicked_once;alibaba_sent_confirmation_visible;composer_closed"
     },
     {
       "companyId": "company_244d3bcb522ff8fb",
@@ -14944,6 +14998,16 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
       "evidence": "smtp_accepted;message_id:<8db03a9e-9380-54fb-423f-9fcdb4d3895f@flextailgear.com>;sent_folder_message_confirmed;contact_path_strategy_v2"
     },
     {
+      "companyId": "company_b01fae48f138bc63",
+      "company": "Campervan Gift",
+      "permanent": true,
+      "crossChannel": true,
+      "reason": "previous_customer_development_no_repeat",
+      "sourceStatus": "sent_confirmed",
+      "sourceTimestamp": "2026-08-10T09:01:54.138Z",
+      "evidence": "official_supplier_page_invites_products_and_publishes_sales_email;sender_Leo_at_flextailgear_verified;recipient_subject_body_gate_passed;send_clicked_once;alibaba_check_circle_sent_toast_confirmed;composer_closed"
+    },
+    {
       "companyId": "company_e45ef472a8a0e2ed",
       "company": "Gecko Overland",
       "permanent": true,
@@ -15257,16 +15321,6 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
         "reason": "highest_priority_verified_channel"
       },
       {
-        "companyId": "company_b01fae48f138bc63",
-        "company": "Campervan Gift",
-        "action": "first_touch",
-        "channel": "website_form",
-        "evidenceScore": 100,
-        "evidenceUrl": "https://www.campervangift.co.uk/become-a-supplier/",
-        "alternatives": [],
-        "reason": "highest_priority_verified_channel"
-      },
-      {
         "companyId": "company_152c4973e4cf4ec0",
         "company": "Obelink",
         "action": "first_touch",
@@ -15283,6 +15337,16 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
         "channel": "website_form",
         "evidenceScore": 100,
         "evidenceUrl": "https://www.tractorsupply.com/tsc/cms/policies-information/vendor-information",
+        "alternatives": [],
+        "reason": "highest_priority_verified_channel"
+      },
+      {
+        "companyId": "company_d43133da7d17b52b",
+        "company": "Outdoor Nature",
+        "action": "first_touch",
+        "channel": "website_form",
+        "evidenceScore": 100,
+        "evidenceUrl": "https://www.outdoornature.com.au/become-a-supplier/",
         "alternatives": [],
         "reason": "highest_priority_verified_channel"
       },
@@ -15334,7 +15398,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
       },
       {
         "channel": "website_form",
-        "confirmed": 15,
+        "confirmed": 18,
         "replies": 0,
         "opportunities": 0,
         "replyRate": 0,
@@ -15389,7 +15453,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
       {
         "dimension": "channel",
         "variant": "website_form",
-        "sampleSize": 15,
+        "sampleSize": 18,
         "observedReplyRate": 0,
         "recommendation": "use_as_bounded_allocation_signal"
       },
@@ -15417,13 +15481,13 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
     ]
   },
   "ownerSummary": {
-    "generatedAt": "2026-08-10T07:05:56.514Z",
+    "generatedAt": "2026-08-10T09:06:05.278Z",
     "phase": "autonomous_sales_operating_system_v1",
     "kpis": {
       "companies": 193,
-      "permanentlySuppressed": 117,
+      "permanentlySuppressed": 120,
       "plannedActions": 7,
-      "verifiedEvidenceRoutes": 122
+      "verifiedEvidenceRoutes": 119
     },
     "decisions": [
       {
@@ -15457,16 +15521,6 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
         "reason": "highest_priority_verified_channel"
       },
       {
-        "companyId": "company_b01fae48f138bc63",
-        "company": "Campervan Gift",
-        "action": "first_touch",
-        "channel": "website_form",
-        "evidenceScore": 100,
-        "evidenceUrl": "https://www.campervangift.co.uk/become-a-supplier/",
-        "alternatives": [],
-        "reason": "highest_priority_verified_channel"
-      },
-      {
         "companyId": "company_152c4973e4cf4ec0",
         "company": "Obelink",
         "action": "first_touch",
@@ -15483,6 +15537,16 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
         "channel": "website_form",
         "evidenceScore": 100,
         "evidenceUrl": "https://www.tractorsupply.com/tsc/cms/policies-information/vendor-information",
+        "alternatives": [],
+        "reason": "highest_priority_verified_channel"
+      },
+      {
+        "companyId": "company_d43133da7d17b52b",
+        "company": "Outdoor Nature",
+        "action": "first_touch",
+        "channel": "website_form",
+        "evidenceScore": 100,
+        "evidenceUrl": "https://www.outdoornature.com.au/become-a-supplier/",
         "alternatives": [],
         "reason": "highest_priority_verified_channel"
       },
@@ -15525,7 +15589,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
         },
         {
           "channel": "website_form",
-          "confirmed": 15,
+          "confirmed": 18,
           "replies": 0,
           "opportunities": 0,
           "replyRate": 0,
@@ -15580,7 +15644,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
         {
           "dimension": "channel",
           "variant": "website_form",
-          "sampleSize": 15,
+          "sampleSize": 18,
           "observedReplyRate": 0,
           "recommendation": "use_as_bounded_allocation_signal"
         },
