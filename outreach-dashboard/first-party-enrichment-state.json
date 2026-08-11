@@ -1,19 +1,16 @@
 {
-  "updatedAt": "2026-08-11T04:05:30.540Z",
-  "cursor": 158,
+  "updatedAt": "2026-08-11T10:05:44.989Z",
+  "cursor": 208,
   "companyCount": 227,
   "verifications": {
     "facewest": {
       "firstPartyChannelVerification": {
-        "status": "checked",
-        "verifiedAt": "2026-08-10T11:12:09.807Z",
+        "status": "unreachable",
+        "verifiedAt": "2026-08-11T07:05:11.527Z",
         "evidenceUrl": "https://www.facewest.co.uk/",
-        "httpStatus": 200,
-        "signals": [
-          "form_control",
-          "contact_invitation"
-        ],
-        "error": ""
+        "httpStatus": 0,
+        "signals": [],
+        "error": "fetch failed"
       },
       "contactCapabilityVerified": true,
       "externalVerificationStatus": "official_contact_form_verified",
@@ -26,7 +23,7 @@
     "above and beyond": {
       "firstPartyChannelVerification": {
         "status": "unreachable",
-        "verifiedAt": "2026-08-10T11:12:09.039Z",
+        "verifiedAt": "2026-08-11T07:05:11.524Z",
         "evidenceUrl": "https://www.aboveandbeyond.ie/",
         "httpStatus": 0,
         "signals": [],
@@ -40,16 +37,12 @@
     },
     "72hours": {
       "firstPartyChannelVerification": {
-        "status": "checked",
-        "verifiedAt": "2026-08-10T11:12:09.546Z",
+        "status": "unreachable",
+        "verifiedAt": "2026-08-11T07:05:15.395Z",
         "evidenceUrl": "https://72hours.ca/",
-        "httpStatus": 200,
-        "signals": [
-          "form_control",
-          "public_business_email",
-          "contact_invitation"
-        ],
-        "error": ""
+        "httpStatus": 0,
+        "signals": [],
+        "error": "fetch failed"
       },
       "contactCapabilityVerified": true,
       "externalVerificationStatus": "official_contact_form_verified",
@@ -61,14 +54,12 @@
     },
     "atmosphere": {
       "firstPartyChannelVerification": {
-        "status": "checked",
-        "verifiedAt": "2026-08-10T11:12:12.894Z",
+        "status": "unreachable",
+        "verifiedAt": "2026-08-11T07:05:11.575Z",
         "evidenceUrl": "https://www.atmosphere.ca/",
-        "httpStatus": 200,
-        "signals": [
-          "contact_invitation"
-        ],
-        "error": ""
+        "httpStatus": 0,
+        "signals": [],
+        "error": "fetch failed"
       },
       "contactCapabilityVerified": false,
       "externalVerificationStatus": "",
@@ -78,14 +69,12 @@
     },
     "altitude sports": {
       "firstPartyChannelVerification": {
-        "status": "checked",
-        "verifiedAt": "2026-08-10T11:12:10.479Z",
+        "status": "unreachable",
+        "verifiedAt": "2026-08-11T07:05:15.625Z",
         "evidenceUrl": "https://www.altitude-sports.com/",
-        "httpStatus": 200,
-        "signals": [
-          "form_control"
-        ],
-        "error": ""
+        "httpStatus": 0,
+        "signals": [],
+        "error": "fetch failed"
       },
       "contactCapabilityVerified": false,
       "externalVerificationStatus": "",
@@ -97,14 +86,12 @@
     },
     "the last hunt": {
       "firstPartyChannelVerification": {
-        "status": "checked",
-        "verifiedAt": "2026-08-10T11:12:10.558Z",
+        "status": "unreachable",
+        "verifiedAt": "2026-08-11T07:05:15.641Z",
         "evidenceUrl": "https://www.thelasthunt.com/",
-        "httpStatus": 200,
-        "signals": [
-          "form_control"
-        ],
-        "error": ""
+        "httpStatus": 0,
+        "signals": [],
+        "error": "fetch failed"
       },
       "contactCapabilityVerified": false,
       "externalVerificationStatus": "",
@@ -117,7 +104,7 @@
     "marmot basin retail": {
       "firstPartyChannelVerification": {
         "status": "unreachable",
-        "verifiedAt": "2026-08-10T11:12:09.984Z",
+        "verifiedAt": "2026-08-11T07:05:15.827Z",
         "evidenceUrl": "https://www.marmotbasin.com/",
         "httpStatus": 0,
         "signals": [],
@@ -132,11 +119,11 @@
     "wild earth": {
       "firstPartyChannelVerification": {
         "status": "unreachable",
-        "verifiedAt": "2026-08-10T11:12:13.083Z",
+        "verifiedAt": "2026-08-11T07:05:15.639Z",
         "evidenceUrl": "https://www.wildearth.com.au/",
-        "httpStatus": 403,
+        "httpStatus": 0,
         "signals": [],
-        "error": ""
+        "error": "fetch failed"
       },
       "contactCapabilityVerified": false,
       "externalVerificationStatus": "",
@@ -150,12 +137,12 @@
     },
     "tentworld australia": {
       "firstPartyChannelVerification": {
-        "status": "checked",
-        "verifiedAt": "2026-08-10T11:12:13.330Z",
+        "status": "unreachable",
+        "verifiedAt": "2026-08-11T07:05:23.352Z",
         "evidenceUrl": "https://www.tentworld.com.au/",
-        "httpStatus": 200,
+        "httpStatus": 0,
         "signals": [],
-        "error": ""
+        "error": "fetch failed"
       },
       "contactCapabilityVerified": false,
       "externalVerificationStatus": "",
@@ -165,15 +152,12 @@
     },
     "paddy pallin": {
       "firstPartyChannelVerification": {
-        "status": "checked",
-        "verifiedAt": "2026-08-10T11:12:13.648Z",
+        "status": "unreachable",
+        "verifiedAt": "2026-08-11T07:05:16.168Z",
         "evidenceUrl": "https://www.paddypallin.com.au/",
-        "httpStatus": 200,
-        "signals": [
-          "form_control",
-          "contact_invitation"
-        ],
-        "error": ""
+        "httpStatus": 0,
+        "signals": [],
+        "error": "fetch failed"
       },
       "contactCapabilityVerified": true,
       "externalVerificationStatus": "official_contact_form_verified",
@@ -186,11 +170,11 @@
     "macpac": {
       "firstPartyChannelVerification": {
         "status": "unreachable",
-        "verifiedAt": "2026-08-10T11:12:13.171Z",
+        "verifiedAt": "2026-08-11T07:05:16.181Z",
         "evidenceUrl": "https://www.macpac.com.au/",
-        "httpStatus": 403,
+        "httpStatus": 0,
         "signals": [],
-        "error": ""
+        "error": "fetch failed"
       },
       "contactCapabilityVerified": true,
       "externalVerificationStatus": "official_contact_form_verified",
@@ -204,7 +188,7 @@
     "tentworld nz": {
       "firstPartyChannelVerification": {
         "status": "unreachable",
-        "verifiedAt": "2026-08-10T11:12:19.749Z",
+        "verifiedAt": "2026-08-11T07:05:17.853Z",
         "evidenceUrl": "https://www.tentworld.co.nz/",
         "httpStatus": 0,
         "signals": [],
@@ -218,14 +202,12 @@
     },
     "torpedo7": {
       "firstPartyChannelVerification": {
-        "status": "checked",
-        "verifiedAt": "2026-08-10T11:12:14.573Z",
+        "status": "unreachable",
+        "verifiedAt": "2026-08-11T07:05:23.596Z",
         "evidenceUrl": "https://www.torpedo7.co.nz/",
-        "httpStatus": 200,
-        "signals": [
-          "form_control"
-        ],
-        "error": ""
+        "httpStatus": 0,
+        "signals": [],
+        "error": "fetch failed"
       },
       "contactCapabilityVerified": false,
       "externalVerificationStatus": "",
@@ -238,15 +220,12 @@
     },
     "outdoor action": {
       "firstPartyChannelVerification": {
-        "status": "checked",
-        "verifiedAt": "2026-08-10T11:12:14.908Z",
+        "status": "unreachable",
+        "verifiedAt": "2026-08-11T07:05:23.783Z",
         "evidenceUrl": "https://www.outdooraction.co.nz/",
-        "httpStatus": 200,
-        "signals": [
-          "form_control",
-          "contact_invitation"
-        ],
-        "error": ""
+        "httpStatus": 0,
+        "signals": [],
+        "error": "fetch failed"
       },
       "contactCapabilityVerified": true,
       "externalVerificationStatus": "official_contact_form_verified",
@@ -257,11 +236,11 @@
     "campz": {
       "firstPartyChannelVerification": {
         "status": "unreachable",
-        "verifiedAt": "2026-08-10T11:12:14.735Z",
-        "evidenceUrl": "https://www.bergfreunde.de/?campz=1",
-        "httpStatus": 403,
+        "verifiedAt": "2026-08-11T07:05:23.578Z",
+        "evidenceUrl": "https://www.campz.de/",
+        "httpStatus": 0,
         "signals": [],
-        "error": ""
+        "error": "fetch failed"
       },
       "contactCapabilityVerified": false,
       "externalVerificationStatus": "",
@@ -271,14 +250,12 @@
     },
     "sport conrad": {
       "firstPartyChannelVerification": {
-        "status": "checked",
-        "verifiedAt": "2026-08-10T11:12:21.721Z",
+        "status": "unreachable",
+        "verifiedAt": "2026-08-11T07:05:23.767Z",
         "evidenceUrl": "https://www.sport-conrad.com/",
-        "httpStatus": 200,
-        "signals": [
-          "form_control"
-        ],
-        "error": ""
+        "httpStatus": 0,
+        "signals": [],
+        "error": "fetch failed"
       },
       "contactCapabilityVerified": false,
       "externalVerificationStatus": "",
@@ -292,11 +269,11 @@
     "doorout": {
       "firstPartyChannelVerification": {
         "status": "unreachable",
-        "verifiedAt": "2026-08-10T11:14:40.559Z",
+        "verifiedAt": "2026-08-11T07:05:24.277Z",
         "evidenceUrl": "https://www.doorout.com/",
         "httpStatus": 0,
         "signals": [],
-        "error": "timeout"
+        "error": "fetch failed"
       },
       "contactCapabilityVerified": false,
       "externalVerificationStatus": "",
@@ -310,11 +287,13 @@
     },
     "addnature": {
       "firstPartyChannelVerification": {
-        "status": "unreachable",
-        "verifiedAt": "2026-08-10T11:14:30.976Z",
+        "status": "checked",
+        "verifiedAt": "2026-08-11T10:05:25.039Z",
         "evidenceUrl": "https://www.addnature.com/",
-        "httpStatus": 403,
-        "signals": [],
+        "httpStatus": 200,
+        "signals": [
+          "form_control"
+        ],
         "error": ""
       },
       "contactCapabilityVerified": false,
@@ -329,7 +308,7 @@
     "xxl sport": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-10T11:14:31.709Z",
+        "verifiedAt": "2026-08-11T10:05:24.736Z",
         "evidenceUrl": "https://www.xxl.no/",
         "httpStatus": 200,
         "signals": [
@@ -346,7 +325,7 @@
     "blue tomato": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-10T11:14:32.628Z",
+        "verifiedAt": "2026-08-11T10:05:26.190Z",
         "evidenceUrl": "https://www.blue-tomato.com/de-DE/",
         "httpStatus": 200,
         "signals": [
@@ -366,7 +345,7 @@
     "sportler": {
       "firstPartyChannelVerification": {
         "status": "unreachable",
-        "verifiedAt": "2026-08-10T11:14:40.826Z",
+        "verifiedAt": "2026-08-11T10:05:24.401Z",
         "evidenceUrl": "https://www.sportler.com/",
         "httpStatus": 403,
         "signals": [],
@@ -381,7 +360,7 @@
     "trekkinn": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-10T11:14:42.628Z",
+        "verifiedAt": "2026-08-11T10:05:27.409Z",
         "evidenceUrl": "https://www.tradeinn.com/trekkinn/en",
         "httpStatus": 200,
         "signals": [
@@ -401,7 +380,7 @@
     "4camping": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-10T11:14:42.000Z",
+        "verifiedAt": "2026-08-11T10:05:28.180Z",
         "evidenceUrl": "https://www.4camping.cz/",
         "httpStatus": 200,
         "signals": [
@@ -421,7 +400,7 @@
     "8a pl": {
       "firstPartyChannelVerification": {
         "status": "unreachable",
-        "verifiedAt": "2026-08-10T11:14:40.749Z",
+        "verifiedAt": "2026-08-11T10:05:26.722Z",
         "evidenceUrl": "https://8a.pl/",
         "httpStatus": 403,
         "signals": [],
@@ -439,12 +418,12 @@
     },
     "sklep podroznika": {
       "firstPartyChannelVerification": {
-        "status": "unreachable",
-        "verifiedAt": "2026-08-10T11:14:44.284Z",
-        "evidenceUrl": "https://www.sklep-podroznika.pl/",
-        "httpStatus": 0,
+        "status": "checked",
+        "verifiedAt": "2026-08-11T10:05:27.807Z",
+        "evidenceUrl": "https://sklep-podroznika.pl/",
+        "httpStatus": 200,
         "signals": [],
-        "error": "fetch failed"
+        "error": ""
       },
       "contactCapabilityVerified": false,
       "externalVerificationStatus": "",
@@ -454,11 +433,13 @@
     },
     "moosejaw": {
       "firstPartyChannelVerification": {
-        "status": "unreachable",
-        "verifiedAt": "2026-08-10T11:14:43.569Z",
+        "status": "checked",
+        "verifiedAt": "2026-08-11T10:05:30.749Z",
         "evidenceUrl": "https://www.publiclands.com/?segment=mjtopl",
-        "httpStatus": 403,
-        "signals": [],
+        "httpStatus": 200,
+        "signals": [
+          "form_control"
+        ],
         "error": ""
       },
       "contactCapabilityVerified": false,
@@ -470,7 +451,7 @@
     "eastern mountain sports": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-10T11:14:43.025Z",
+        "verifiedAt": "2026-08-11T10:05:28.699Z",
         "evidenceUrl": "https://www.ems.com/",
         "httpStatus": 200,
         "signals": [
@@ -487,7 +468,7 @@
     "pack rat outdoor center": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-10T11:14:43.969Z",
+        "verifiedAt": "2026-08-11T10:05:30.905Z",
         "evidenceUrl": "https://packratoc.com/",
         "httpStatus": 200,
         "signals": [
@@ -504,7 +485,7 @@
     "massey outfitters": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-10T11:14:45.033Z",
+        "verifiedAt": "2026-08-11T10:05:29.577Z",
         "evidenceUrl": "https://www.masseysoutfitters.com/",
         "httpStatus": 200,
         "signals": [
@@ -523,7 +504,7 @@
     "intersport norway": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-10T11:14:45.847Z",
+        "verifiedAt": "2026-08-11T10:05:33.443Z",
         "evidenceUrl": "https://www.intersport.no/",
         "httpStatus": 200,
         "signals": [],
@@ -540,7 +521,7 @@
     "mammut store": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-10T11:14:45.586Z",
+        "verifiedAt": "2026-08-11T10:05:34.308Z",
         "evidenceUrl": "https://www.mammut.com/int/en",
         "httpStatus": 200,
         "signals": [],
@@ -555,7 +536,7 @@
     "bever zwerfsport": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-10T11:14:45.915Z",
+        "verifiedAt": "2026-08-11T10:05:31.125Z",
         "evidenceUrl": "https://www.bever.nl/",
         "httpStatus": 200,
         "signals": [
@@ -2346,15 +2327,12 @@
     },
     "christy sports": {
       "firstPartyChannelVerification": {
-        "status": "checked",
-        "verifiedAt": "2026-08-10T11:12:05.181Z",
+        "status": "unreachable",
+        "verifiedAt": "2026-08-11T07:05:10.274Z",
         "evidenceUrl": "https://www.christysports.com/",
-        "httpStatus": 200,
-        "signals": [
-          "form_control",
-          "contact_invitation"
-        ],
-        "error": ""
+        "httpStatus": 0,
+        "signals": [],
+        "error": "fetch failed"
       },
       "contactCapabilityVerified": true,
       "externalVerificationStatus": "official_contact_form_verified",
@@ -2367,16 +2345,12 @@
     },
     "paragon sports": {
       "firstPartyChannelVerification": {
-        "status": "checked",
-        "verifiedAt": "2026-08-10T11:12:05.640Z",
-        "evidenceUrl": "https://paragonsports.com/",
-        "httpStatus": 200,
-        "signals": [
-          "form_control",
-          "public_business_email",
-          "contact_invitation"
-        ],
-        "error": ""
+        "status": "unreachable",
+        "verifiedAt": "2026-08-11T07:05:10.570Z",
+        "evidenceUrl": "https://www.paragonsports.com/",
+        "httpStatus": 0,
+        "signals": [],
+        "error": "fetch failed"
       },
       "contactCapabilityVerified": true,
       "externalVerificationStatus": "official_contact_form_verified",
@@ -2389,15 +2363,12 @@
     },
     "mountain equipment": {
       "firstPartyChannelVerification": {
-        "status": "checked",
-        "verifiedAt": "2026-08-10T11:12:06.202Z",
-        "evidenceUrl": "https://www.mountain-equipment.com/",
-        "httpStatus": 200,
-        "signals": [
-          "form_control",
-          "contact_invitation"
-        ],
-        "error": ""
+        "status": "unreachable",
+        "verifiedAt": "2026-08-11T07:05:10.232Z",
+        "evidenceUrl": "https://www.mountain-equipment.co.uk/",
+        "httpStatus": 0,
+        "signals": [],
+        "error": "fetch failed"
       },
       "contactCapabilityVerified": true,
       "externalVerificationStatus": "official_contact_form_verified",
@@ -2407,16 +2378,12 @@
     },
     "tiso": {
       "firstPartyChannelVerification": {
-        "status": "checked",
-        "verifiedAt": "2026-08-10T11:12:08.145Z",
+        "status": "unreachable",
+        "verifiedAt": "2026-08-11T07:05:10.308Z",
         "evidenceUrl": "https://www.tiso.com/pages/contact",
-        "httpStatus": 200,
-        "signals": [
-          "form_control",
-          "public_business_email",
-          "contact_invitation"
-        ],
-        "error": ""
+        "httpStatus": 0,
+        "signals": [],
+        "error": "fetch failed"
       },
       "contactCapabilityVerified": true,
       "externalVerificationStatus": "official_contact_form_verified",
@@ -2426,15 +2393,12 @@
     },
     "george fisher": {
       "firstPartyChannelVerification": {
-        "status": "checked",
-        "verifiedAt": "2026-08-10T11:12:08.314Z",
-        "evidenceUrl": "https://www.tiso.com/pages/george-fisher-landing?utm_source=georgefisher",
-        "httpStatus": 200,
-        "signals": [
-          "form_control",
-          "contact_invitation"
-        ],
-        "error": ""
+        "status": "unreachable",
+        "verifiedAt": "2026-08-11T07:05:11.097Z",
+        "evidenceUrl": "https://www.georgefisher.co.uk/",
+        "httpStatus": 0,
+        "signals": [],
+        "error": "fetch failed"
       },
       "contactCapabilityVerified": true,
       "externalVerificationStatus": "official_contact_form_verified",
@@ -2444,12 +2408,12 @@
     },
     "ld mountain centre": {
       "firstPartyChannelVerification": {
-        "status": "checked",
-        "verifiedAt": "2026-08-10T11:12:08.942Z",
+        "status": "unreachable",
+        "verifiedAt": "2026-08-11T07:05:10.997Z",
         "evidenceUrl": "https://www.ldmountaincentre.com/",
-        "httpStatus": 200,
+        "httpStatus": 0,
         "signals": [],
-        "error": ""
+        "error": "fetch failed"
       },
       "contactCapabilityVerified": false,
       "externalVerificationStatus": "",
@@ -2460,11 +2424,11 @@
     "absolute snow": {
       "firstPartyChannelVerification": {
         "status": "unreachable",
-        "verifiedAt": "2026-08-10T11:12:06.572Z",
+        "verifiedAt": "2026-08-11T07:05:10.836Z",
         "evidenceUrl": "https://www.absolute-snow.co.uk/",
-        "httpStatus": 403,
+        "httpStatus": 0,
         "signals": [],
-        "error": ""
+        "error": "fetch failed"
       },
       "contactCapabilityVerified": false,
       "externalVerificationStatus": "",
@@ -2474,12 +2438,12 @@
     },
     "ellis brigham": {
       "firstPartyChannelVerification": {
-        "status": "checked",
-        "verifiedAt": "2026-08-10T11:12:09.276Z",
+        "status": "unreachable",
+        "verifiedAt": "2026-08-11T07:05:11.021Z",
         "evidenceUrl": "https://www.ellis-brigham.com/",
-        "httpStatus": 200,
+        "httpStatus": 0,
         "signals": [],
-        "error": ""
+        "error": "fetch failed"
       },
       "contactCapabilityVerified": false,
       "externalVerificationStatus": "",
@@ -2956,7 +2920,7 @@
     "survive thrive": {
       "firstPartyChannelVerification": {
         "status": "unreachable",
-        "verifiedAt": "2026-08-10T11:14:46.810Z",
+        "verifiedAt": "2026-08-11T10:05:32.351Z",
         "evidenceUrl": "https://www.survive-thrive.com/",
         "httpStatus": 0,
         "signals": [],
@@ -2971,7 +2935,7 @@
     "camping travel store": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-10T11:14:48.486Z",
+        "verifiedAt": "2026-08-11T10:05:37.683Z",
         "evidenceUrl": "https://www.campingtravelstore.co.uk/",
         "httpStatus": 200,
         "signals": [
@@ -2988,7 +2952,7 @@
     "outcamping": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-10T11:14:47.034Z",
+        "verifiedAt": "2026-08-11T10:05:36.411Z",
         "evidenceUrl": "https://outcamping.co.uk/pages/about-us",
         "httpStatus": 200,
         "signals": [
@@ -3007,7 +2971,7 @@
     "outdoors plus": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-10T11:14:47.588Z",
+        "verifiedAt": "2026-08-11T10:05:35.471Z",
         "evidenceUrl": "https://outdoorsplus.ca/services/camping/",
         "httpStatus": 200,
         "signals": [
@@ -3026,8 +2990,8 @@
     "switching gear": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-10T11:14:49.836Z",
-        "evidenceUrl": "https://www.switchinggear.ca/About.html",
+        "verifiedAt": "2026-08-11T10:05:38.979Z",
+        "evidenceUrl": "https://www.switchinggear.ca/",
         "httpStatus": 200,
         "signals": [
           "public_business_email"
@@ -3935,6 +3899,93 @@
       "contactCapabilityVerified": false,
       "externalVerificationStatus": "",
       "publicEmail": "info@kampersport.com",
+      "emailVerificationStatus": "official_public_business_email",
+      "socialProfiles": []
+    },
+    "outdoors ramsey": {
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-11T10:05:40.705Z",
+        "evidenceUrl": "https://www.outdoorsramsey.co.uk/outdoor-shop-in-ramsey-isle-of-man/",
+        "httpStatus": 200,
+        "signals": [
+          "form_control"
+        ],
+        "error": ""
+      },
+      "contactCapabilityVerified": false,
+      "externalVerificationStatus": "",
+      "publicEmail": "sales@outdoorsramsey.co.uk",
+      "emailVerificationStatus": "official_public_business_email",
+      "socialProfiles": []
+    },
+    "black white outdoors": {
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-11T10:05:43.508Z",
+        "evidenceUrl": "https://blackandwhiteoutdoors.com/contact-us/",
+        "httpStatus": 200,
+        "signals": [
+          "form_control",
+          "public_business_email",
+          "contact_invitation"
+        ],
+        "error": ""
+      },
+      "contactCapabilityVerified": true,
+      "externalVerificationStatus": "official_contact_form_verified",
+      "publicEmail": "sales@blackandwhiteoutdoors.com",
+      "emailVerificationStatus": "official_public_business_email",
+      "socialProfiles": []
+    },
+    "nz outdoors": {
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-11T10:05:40.402Z",
+        "evidenceUrl": "https://www.nz-outdoors.co.nz/pages/support",
+        "httpStatus": 200,
+        "signals": [
+          "form_control",
+          "public_business_email",
+          "contact_invitation"
+        ],
+        "error": ""
+      },
+      "contactCapabilityVerified": true,
+      "externalVerificationStatus": "official_contact_form_verified",
+      "publicEmail": "info@nz-outdoors.co.nz",
+      "emailVerificationStatus": "official_public_business_email",
+      "socialProfiles": []
+    },
+    "outdoordump": {
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-11T10:05:40.651Z",
+        "evidenceUrl": "https://outdoordump.nl/contact/",
+        "httpStatus": 200,
+        "signals": [
+          "form_control"
+        ],
+        "error": ""
+      },
+      "contactCapabilityVerified": false,
+      "externalVerificationStatus": "",
+      "publicEmail": "info@outdoordump.nl",
+      "emailVerificationStatus": "official_public_business_email",
+      "socialProfiles": []
+    },
+    "outdoorhaven": {
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-11T10:05:44.989Z",
+        "evidenceUrl": "https://outdoorhaven.nl/",
+        "httpStatus": 200,
+        "signals": [],
+        "error": ""
+      },
+      "contactCapabilityVerified": false,
+      "externalVerificationStatus": "",
+      "publicEmail": "info@outdoorhaven.nl",
       "emailVerificationStatus": "official_public_business_email",
       "socialProfiles": []
     }
