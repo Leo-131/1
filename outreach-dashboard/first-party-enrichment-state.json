@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-08-10T13:05:29.527Z",
-  "cursor": 83,
+  "updatedAt": "2026-08-11T02:19:55.827Z",
+  "cursor": 133,
   "companyCount": 227,
   "verifications": {
     "facewest": {
@@ -1601,7 +1601,7 @@
     "backcountry experience": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-10T10:39:06.560Z",
+        "verifiedAt": "2026-08-10T16:05:15.638Z",
         "evidenceUrl": "https://www.bcexp.com/",
         "httpStatus": 200,
         "signals": [
@@ -1619,7 +1619,7 @@
     "la cordee": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-10T10:39:07.526Z",
+        "verifiedAt": "2026-08-10T16:05:16.495Z",
         "evidenceUrl": "https://www.lacordee.com/en/pages/contact-us",
         "httpStatus": 200,
         "signals": [
@@ -1638,7 +1638,7 @@
     "taunton leisure": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-10T10:39:06.794Z",
+        "verifiedAt": "2026-08-10T16:05:15.182Z",
         "evidenceUrl": "https://www.tauntonleisure.com/",
         "httpStatus": 200,
         "signals": [
@@ -1656,7 +1656,7 @@
     "outdoorxl": {
       "firstPartyChannelVerification": {
         "status": "unreachable",
-        "verifiedAt": "2026-08-10T10:39:05.581Z",
+        "verifiedAt": "2026-08-10T16:05:16.690Z",
         "evidenceUrl": "https://www.outdoorxl.nl/",
         "httpStatus": 403,
         "signals": [],
@@ -1671,7 +1671,7 @@
     "spejder sport": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-10T10:39:08.964Z",
+        "verifiedAt": "2026-08-10T16:05:18.585Z",
         "evidenceUrl": "https://www.spejdersport.dk/handelsbetingelser/",
         "httpStatus": 200,
         "signals": [
@@ -1689,7 +1689,7 @@
     "friluftsland": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-10T10:39:10.375Z",
+        "verifiedAt": "2026-08-10T16:05:18.864Z",
         "evidenceUrl": "https://www.friluftsland.dk/",
         "httpStatus": 200,
         "signals": [
@@ -1707,7 +1707,7 @@
     "left point distribution": {
       "firstPartyChannelVerification": {
         "status": "unreachable",
-        "verifiedAt": "2026-08-10T10:39:08.057Z",
+        "verifiedAt": "2026-08-10T16:05:17.068Z",
         "evidenceUrl": "https://www.leftpointdistribution.com/en-eu/aboutus.php",
         "httpStatus": 403,
         "signals": [],
@@ -1722,7 +1722,7 @@
     "snowys outdoors": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-10T10:39:08.190Z",
+        "verifiedAt": "2026-08-10T16:05:19.211Z",
         "evidenceUrl": "https://www.snowys.com.au/",
         "httpStatus": 202,
         "signals": [],
@@ -1740,7 +1740,7 @@
     "alpenglow sports": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-10T10:39:10.791Z",
+        "verifiedAt": "2026-08-10T16:05:19.202Z",
         "evidenceUrl": "https://alpenglowsports.com/",
         "httpStatus": 200,
         "signals": [
@@ -1761,7 +1761,7 @@
     "ute mountaineer": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-10T10:39:12.407Z",
+        "verifiedAt": "2026-08-10T16:05:21.305Z",
         "evidenceUrl": "https://www.utemountaineer.com/",
         "httpStatus": 200,
         "signals": [
@@ -1779,7 +1779,7 @@
     "neptune mountaineering": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-10T10:39:11.254Z",
+        "verifiedAt": "2026-08-10T16:05:19.793Z",
         "evidenceUrl": "https://www.neptunemountaineering.com/pages/customer-support",
         "httpStatus": 200,
         "signals": [
@@ -1797,11 +1797,13 @@
     },
     "latulippe": {
       "firstPartyChannelVerification": {
-        "status": "unreachable",
-        "verifiedAt": "2026-08-10T10:55:54.148Z",
+        "status": "checked",
+        "verifiedAt": "2026-08-11T02:19:43.838Z",
         "evidenceUrl": "https://latulippe.com/",
-        "httpStatus": 403,
-        "signals": [],
+        "httpStatus": 200,
+        "signals": [
+          "form_control"
+        ],
         "error": ""
       },
       "contactCapabilityVerified": false,
@@ -1813,7 +1815,7 @@
     "wildfire sports": {
       "firstPartyChannelVerification": {
         "status": "unreachable",
-        "verifiedAt": "2026-08-10T10:55:54.696Z",
+        "verifiedAt": "2026-08-11T02:19:43.075Z",
         "evidenceUrl": "https://www.wildfiresports.com.au/contact-us",
         "httpStatus": 403,
         "signals": [],
@@ -1828,7 +1830,7 @@
     "sportpursuit": {
       "firstPartyChannelVerification": {
         "status": "unreachable",
-        "verifiedAt": "2026-08-10T10:55:55.210Z",
+        "verifiedAt": "2026-08-11T02:19:44.452Z",
         "evidenceUrl": "https://www.sportpursuit.com/terms-conditions",
         "httpStatus": 403,
         "signals": [],
@@ -1843,7 +1845,7 @@
     "kampeerwereld hendriks": {
       "firstPartyChannelVerification": {
         "status": "unreachable",
-        "verifiedAt": "2026-08-10T10:55:55.736Z",
+        "verifiedAt": "2026-08-11T02:19:45.182Z",
         "evidenceUrl": "https://www.kampeerwereld.nl/",
         "httpStatus": 403,
         "signals": [],
@@ -1858,7 +1860,7 @@
     "hardloop": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-10T10:55:56.079Z",
+        "verifiedAt": "2026-08-11T02:19:45.087Z",
         "evidenceUrl": "https://www.hardloop.fr/article/671-acupression-tout-savoir",
         "httpStatus": 200,
         "signals": [
@@ -1875,7 +1877,7 @@
     "varuste": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-10T10:55:55.781Z",
+        "verifiedAt": "2026-08-11T02:19:45.170Z",
         "evidenceUrl": "https://varuste.net/",
         "httpStatus": 200,
         "signals": [
@@ -1893,7 +1895,7 @@
     "camp studio thailand": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-10T10:55:59.595Z",
+        "verifiedAt": "2026-08-11T02:19:46.029Z",
         "evidenceUrl": "https://www.campstudio.co.th/contact",
         "httpStatus": 200,
         "signals": [
@@ -1914,7 +1916,7 @@
     "bever": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-10T10:55:57.694Z",
+        "verifiedAt": "2026-08-11T02:19:46.816Z",
         "evidenceUrl": "https://www.bever.nl/klantenservice/contactgegevens.html",
         "httpStatus": 200,
         "signals": [
@@ -1934,7 +1936,7 @@
     "mountain warehouse": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-10T10:55:59.168Z",
+        "verifiedAt": "2026-08-11T02:19:48.352Z",
         "evidenceUrl": "https://www.mountainwarehouse.com/help/contact-us/",
         "httpStatus": 200,
         "signals": [
@@ -1955,7 +1957,7 @@
     "technical outdoor indonesia": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-10T10:55:56.499Z",
+        "verifiedAt": "2026-08-11T02:19:45.559Z",
         "evidenceUrl": "https://www.technicaloutdoor.com/welcome/",
         "httpStatus": 200,
         "signals": [
@@ -1978,7 +1980,7 @@
     "bentgate mountaineering": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-10T11:11:01.096Z",
+        "verifiedAt": "2026-08-11T02:19:54.954Z",
         "evidenceUrl": "https://www.bentgate.com/service/",
         "httpStatus": 200,
         "signals": [
@@ -1996,7 +1998,7 @@
     "the great outdoor shop": {
       "firstPartyChannelVerification": {
         "status": "unreachable",
-        "verifiedAt": "2026-08-10T11:11:00.167Z",
+        "verifiedAt": "2026-08-11T02:19:54.081Z",
         "evidenceUrl": "https://thegreatoutdoorshop.com/",
         "httpStatus": 0,
         "signals": [],
@@ -2011,7 +2013,7 @@
     "arizona hiking shack": {
       "firstPartyChannelVerification": {
         "status": "unreachable",
-        "verifiedAt": "2026-08-10T11:11:00.128Z",
+        "verifiedAt": "2026-08-11T02:19:54.144Z",
         "evidenceUrl": "https://www.hikingshack.com/",
         "httpStatus": 403,
         "signals": [],
@@ -2518,7 +2520,7 @@
     "j h outdoors": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-10T11:11:04.570Z",
+        "verifiedAt": "2026-08-11T02:19:55.827Z",
         "evidenceUrl": "https://jhoutdoors.com/pages/faq",
         "httpStatus": 200,
         "signals": [
@@ -2694,7 +2696,7 @@
     "kenco outfitters": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-10T10:39:11.322Z",
+        "verifiedAt": "2026-08-10T16:05:21.745Z",
         "evidenceUrl": "https://kencooutfitters.com/pages/rewards",
         "httpStatus": 200,
         "signals": [
@@ -2713,7 +2715,7 @@
     "jesse brown s outdoors": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-10T10:39:13.115Z",
+        "verifiedAt": "2026-08-10T16:05:21.762Z",
         "evidenceUrl": "https://shop.jessebrowns.com/pages/contact",
         "httpStatus": 200,
         "signals": [
@@ -2732,7 +2734,7 @@
     "travel country outfitters": {
       "firstPartyChannelVerification": {
         "status": "unreachable",
-        "verifiedAt": "2026-08-10T10:39:32.422Z",
+        "verifiedAt": "2026-08-10T16:05:41.331Z",
         "evidenceUrl": "https://www.travelcountry.com/shop/Action/Info_Show/Id/42",
         "httpStatus": 0,
         "signals": [],
@@ -2747,7 +2749,7 @@
     "roads rivers and trails": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-10T10:39:13.878Z",
+        "verifiedAt": "2026-08-10T16:05:22.644Z",
         "evidenceUrl": "https://roadsriversandtrails.com/trip-planning/",
         "httpStatus": 200,
         "signals": [
@@ -2765,7 +2767,7 @@
     "tahoe sports hub": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-10T10:55:54.234Z",
+        "verifiedAt": "2026-08-11T02:19:43.224Z",
         "evidenceUrl": "https://www.tahoesportshub.com/contact",
         "httpStatus": 200,
         "signals": [
@@ -2784,7 +2786,7 @@
     "the trail head": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-10T10:55:54.475Z",
+        "verifiedAt": "2026-08-11T02:19:43.131Z",
         "evidenceUrl": "https://trailheadmontana.net/",
         "httpStatus": 200,
         "signals": [
@@ -2803,7 +2805,7 @@
     "exploration wild": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-10T10:56:00.014Z",
+        "verifiedAt": "2026-08-11T02:19:49.036Z",
         "evidenceUrl": "https://explorationwild.com/pages/about-us",
         "httpStatus": 200,
         "signals": [
@@ -2822,7 +2824,7 @@
     "kermode overland": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-10T10:56:01.976Z",
+        "verifiedAt": "2026-08-11T02:19:50.750Z",
         "evidenceUrl": "https://kermodeoverland.com/contact-us/",
         "httpStatus": 200,
         "signals": [
@@ -2841,7 +2843,7 @@
     "backcountry sportsman": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-10T10:56:00.404Z",
+        "verifiedAt": "2026-08-11T02:19:49.193Z",
         "evidenceUrl": "https://backcountrysportsmanoutfitters.com/",
         "httpStatus": 200,
         "signals": [
@@ -2860,7 +2862,7 @@
     "grasshopper leisure": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-10T10:56:01.814Z",
+        "verifiedAt": "2026-08-11T02:19:49.940Z",
         "evidenceUrl": "https://www.grasshopperleisure.co.uk/",
         "httpStatus": 200,
         "signals": [
@@ -2917,7 +2919,7 @@
     "weyfarm outdoors": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-10T11:11:03.881Z",
+        "verifiedAt": "2026-08-11T02:19:53.962Z",
         "evidenceUrl": "https://weyfarm-outdoors.co.uk/",
         "httpStatus": 200,
         "signals": [
@@ -3605,6 +3607,264 @@
       "contactCapabilityVerified": false,
       "externalVerificationStatus": "",
       "publicEmail": "info@charlescamping.ie",
+      "emailVerificationStatus": "official_public_business_email",
+      "socialProfiles": []
+    },
+    "basecamp dublin": {
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-10T16:05:12.888Z",
+        "evidenceUrl": "https://basecamp.ie/pages/privacy-policy",
+        "httpStatus": 200,
+        "signals": [
+          "form_control",
+          "contact_invitation"
+        ],
+        "error": ""
+      },
+      "contactCapabilityVerified": true,
+      "externalVerificationStatus": "official_contact_form_verified",
+      "publicEmail": "info@basecamp.ie",
+      "emailVerificationStatus": "official_public_business_email",
+      "socialProfiles": []
+    },
+    "getcamping": {
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-10T16:05:13.184Z",
+        "evidenceUrl": "https://www.getcamping.eu/en/info/about-us/",
+        "httpStatus": 200,
+        "signals": [
+          "form_control",
+          "public_business_email",
+          "contact_invitation"
+        ],
+        "error": ""
+      },
+      "contactCapabilityVerified": true,
+      "externalVerificationStatus": "official_contact_form_verified",
+      "publicEmail": "info@getcamping.se",
+      "emailVerificationStatus": "official_public_business_email",
+      "socialProfiles": []
+    },
+    "shopping4camping": {
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-10T16:05:13.564Z",
+        "evidenceUrl": "https://www.shopping4camping.be/pages/contact-bereikbaarheid",
+        "httpStatus": 200,
+        "signals": [
+          "form_control",
+          "public_business_email"
+        ],
+        "error": ""
+      },
+      "contactCapabilityVerified": false,
+      "externalVerificationStatus": "",
+      "publicEmail": "info@shopping4.be",
+      "emailVerificationStatus": "official_public_business_email",
+      "socialProfiles": []
+    },
+    "de kampeerder": {
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-10T16:05:14.141Z",
+        "evidenceUrl": "https://dekampeerder.be/",
+        "httpStatus": 200,
+        "signals": [
+          "form_control",
+          "public_business_email"
+        ],
+        "error": ""
+      },
+      "contactCapabilityVerified": false,
+      "externalVerificationStatus": "",
+      "publicEmail": "info@dekampeerder.be",
+      "emailVerificationStatus": "official_public_business_email",
+      "socialProfiles": []
+    },
+    "campingudstyr dk": {
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-10T16:05:16.520Z",
+        "evidenceUrl": "https://www.campingudstyr.dk/contact",
+        "httpStatus": 200,
+        "signals": [
+          "form_control",
+          "public_business_email"
+        ],
+        "error": ""
+      },
+      "contactCapabilityVerified": false,
+      "externalVerificationStatus": "",
+      "publicEmail": "info@campingudstyr.dk",
+      "emailVerificationStatus": "official_public_business_email",
+      "socialProfiles": []
+    },
+    "purely outdoors": {
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-10T16:05:42.863Z",
+        "evidenceUrl": "https://www.purelyoutdoors.co.uk/showroom.htm",
+        "httpStatus": 200,
+        "signals": [
+          "form_control",
+          "public_business_email",
+          "contact_invitation"
+        ],
+        "error": ""
+      },
+      "contactCapabilityVerified": true,
+      "externalVerificationStatus": "official_contact_form_verified",
+      "publicEmail": "info@purelyoutdoors.co.uk",
+      "emailVerificationStatus": "official_public_business_email",
+      "socialProfiles": []
+    },
+    "westside stores": {
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-10T16:05:43.090Z",
+        "evidenceUrl": "https://westsidestores.ca/pages/about-us.html",
+        "httpStatus": 200,
+        "signals": [
+          "form_control",
+          "public_business_email",
+          "contact_invitation"
+        ],
+        "error": ""
+      },
+      "contactCapabilityVerified": true,
+      "externalVerificationStatus": "official_contact_form_verified",
+      "publicEmail": "info@westsidestores.ca",
+      "emailVerificationStatus": "official_public_business_email",
+      "socialProfiles": []
+    },
+    "west end outdoors": {
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-10T16:05:42.251Z",
+        "evidenceUrl": "https://www.westendoutdoors.co.uk/policies/contact-information",
+        "httpStatus": 200,
+        "signals": [
+          "form_control"
+        ],
+        "error": ""
+      },
+      "contactCapabilityVerified": false,
+      "externalVerificationStatus": "",
+      "publicEmail": "support@westendoutdoors.co.uk",
+      "emailVerificationStatus": "official_public_business_email",
+      "socialProfiles": []
+    },
+    "md outdoors": {
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-10T16:05:42.786Z",
+        "evidenceUrl": "https://www.mdoutdoors.co.nz/pages/contact-us",
+        "httpStatus": 200,
+        "signals": [
+          "form_control",
+          "public_business_email",
+          "contact_invitation"
+        ],
+        "error": ""
+      },
+      "contactCapabilityVerified": true,
+      "externalVerificationStatus": "official_contact_form_verified",
+      "publicEmail": "info@mdoutdoors.co.nz",
+      "emailVerificationStatus": "official_public_business_email",
+      "socialProfiles": []
+    },
+    "sportsden": {
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-10T16:05:44.305Z",
+        "evidenceUrl": "https://www.sportsden.ie/pages/contact-us",
+        "httpStatus": 200,
+        "signals": [
+          "form_control",
+          "public_business_email",
+          "contact_invitation"
+        ],
+        "error": ""
+      },
+      "contactCapabilityVerified": true,
+      "externalVerificationStatus": "official_contact_form_verified",
+      "publicEmail": "info@sportsden.ie",
+      "emailVerificationStatus": "official_public_business_email",
+      "socialProfiles": []
+    },
+    "pack gear go": {
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-11T02:19:52.478Z",
+        "evidenceUrl": "https://www.packgeargo.co.nz/contact/",
+        "httpStatus": 200,
+        "signals": [
+          "form_control",
+          "public_business_email",
+          "contact_invitation"
+        ],
+        "error": ""
+      },
+      "contactCapabilityVerified": true,
+      "externalVerificationStatus": "official_contact_form_verified",
+      "publicEmail": "sales@packgeargo.co.nz",
+      "emailVerificationStatus": "official_public_business_email",
+      "socialProfiles": []
+    },
+    "outdoor estore": {
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-11T02:19:52.401Z",
+        "evidenceUrl": "https://www.outdoorestore.co.nz/pages/contact-us",
+        "httpStatus": 200,
+        "signals": [
+          "form_control",
+          "contact_invitation"
+        ],
+        "error": ""
+      },
+      "contactCapabilityVerified": true,
+      "externalVerificationStatus": "official_contact_form_verified",
+      "publicEmail": "service@outdoorestore.co.nz",
+      "emailVerificationStatus": "official_public_business_email",
+      "socialProfiles": []
+    },
+    "mc s outdoor store": {
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-11T02:19:52.669Z",
+        "evidenceUrl": "https://www.mcsoutdoorstore.ie/contact-us/",
+        "httpStatus": 200,
+        "signals": [
+          "form_control",
+          "public_business_email",
+          "contact_invitation"
+        ],
+        "error": ""
+      },
+      "contactCapabilityVerified": true,
+      "externalVerificationStatus": "official_contact_form_verified",
+      "publicEmail": "info@mcsoutdoorstore.ie",
+      "emailVerificationStatus": "official_public_business_email",
+      "socialProfiles": []
+    },
+    "van dijk outdoor recreatie": {
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-11T02:19:55.061Z",
+        "evidenceUrl": "https://autodaktenten-webshop.be/pages/contact",
+        "httpStatus": 200,
+        "signals": [
+          "form_control",
+          "public_business_email"
+        ],
+        "error": ""
+      },
+      "contactCapabilityVerified": false,
+      "externalVerificationStatus": "",
+      "publicEmail": "webshop@autodaktenten.be",
       "emailVerificationStatus": "official_public_business_email",
       "socialProfiles": []
     }
