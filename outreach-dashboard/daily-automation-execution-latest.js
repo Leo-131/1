@@ -81,32 +81,11 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "reason": "official_website_contact_channel"
     },
     {
-      "id": "google-customer-de-wit-schijndel-website-contact",
-      "company": "De Wit Schijndel",
-      "action": "verify_target",
-      "platform": "website_form",
-      "reason": "homepage_only_contact_path_requires_verification"
-    },
-    {
-      "id": "google-customer-outdoorxl-website-contact",
-      "company": "OutdoorXL",
-      "action": "verify_target",
-      "platform": "website_form",
-      "reason": "homepage_only_contact_path_requires_verification"
-    },
-    {
       "id": "google-customer-rock-creek-website-contact",
       "company": "Rock/Creek",
       "action": "email_priority",
       "platform": "website_form",
       "reason": "official_public_business_email_verified"
-    },
-    {
-      "id": "google-customer-outdoor-specialist-website-contact",
-      "company": "Outdoor Specialist",
-      "action": "verify_target",
-      "platform": "website_form",
-      "reason": "homepage_only_contact_path_requires_verification"
     },
     {
       "id": "google-customer-next-adventure-website-contact",
@@ -207,6 +186,13 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "reason": "homepage_only_contact_path_requires_verification"
     },
     {
+      "id": "google-customer-de-wit-schijndel-website-contact",
+      "company": "De Wit Schijndel",
+      "action": "verify_target",
+      "platform": "website_form",
+      "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
       "id": "google-customer-ekosport-website-contact",
       "company": "Ekosport",
       "action": "verify_target",
@@ -230,6 +216,20 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     {
       "id": "google-customer-ld-mountain-centre-website-contact",
       "company": "LD Mountain Centre",
+      "action": "verify_target",
+      "platform": "website_form",
+      "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
+      "id": "google-customer-outdoorxl-website-contact",
+      "company": "OutdoorXL",
+      "action": "verify_target",
+      "platform": "website_form",
+      "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
+      "id": "google-customer-outdoor-specialist-website-contact",
+      "company": "Outdoor Specialist",
       "action": "verify_target",
       "platform": "website_form",
       "reason": "homepage_only_contact_path_requires_verification"
@@ -648,7 +648,7 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "inCandidatePool": false,
       "sameDayCompanyBlocked": false,
       "blockingStatus": "same_day_retry_circuit_open",
-      "blockingEvidence": "same_day_retry_circuit_open;failed_attempts:2"
+      "blockingEvidence": "same_day_retry_circuit_open;failed_attempts:1"
     },
     {
       "id": "google-customer-left-point-distribution-website-contact",
@@ -728,7 +728,7 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "inCandidatePool": false,
       "sameDayCompanyBlocked": false,
       "blockingStatus": "same_day_retry_circuit_open",
-      "blockingEvidence": "same_day_retry_circuit_open;failed_attempts:2"
+      "blockingEvidence": "same_day_retry_circuit_open;failed_attempts:1"
     },
     {
       "id": "google-customer-next-adventure-website-contact",
@@ -744,7 +744,7 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "inCandidatePool": false,
       "sameDayCompanyBlocked": false,
       "blockingStatus": "same_day_retry_circuit_open",
-      "blockingEvidence": "same_day_retry_circuit_open;failed_attempts:2"
+      "blockingEvidence": "same_day_retry_circuit_open;failed_attempts:1"
     },
     {
       "id": "google-customer-bbq-fans-website-contact",
@@ -892,14 +892,10 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     "retainedLowIcp": 0
   },
   "bounceReconciliation": {
-    "ok": false,
-    "reason": "email_sender_not_configured",
-    "updated": 0,
-    "requiredEnv": [
-      "OUTREACH_EMAIL_FROM",
-      "ALIBABA_SMTP_USER",
-      "ALIBABA_SMTP_SECURITY_PASSWORD"
-    ]
+    "ok": true,
+    "reason": "no_recent_bounces",
+    "scanned": 0,
+    "updated": 0
   },
-  "completedAt": "2026-08-11T02:20:49.286Z"
+  "completedAt": "2026-08-11T04:06:12.324Z"
 };
