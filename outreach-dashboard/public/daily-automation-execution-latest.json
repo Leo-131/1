@@ -24,11 +24,46 @@
       "reason": "official_website_contact_channel"
     },
     {
+      "id": "google-customer-summit-sales-nw-website-contact",
+      "company": "Summit Sales NW",
+      "action": "email_priority",
+      "platform": "website_form",
+      "reason": "official_public_business_email_verified"
+    },
+    {
+      "id": "google-customer-adventure-marketing-group-website-contact",
+      "company": "Adventure Marketing Group",
+      "action": "email_priority",
+      "platform": "website_form",
+      "reason": "official_public_business_email_verified"
+    },
+    {
+      "id": "google-customer-mtnstuff-website-contact",
+      "company": "MTNSTUFF",
+      "action": "email_priority",
+      "platform": "website_form",
+      "reason": "official_public_business_email_verified"
+    },
+    {
+      "id": "google-customer-pacific-crest-trading-website-contact",
+      "company": "Pacific Crest Trading",
+      "action": "email_priority",
+      "platform": "website_form",
+      "reason": "official_public_business_email_verified"
+    },
+    {
       "id": "google-customer-stoner-andrews-website-contact",
       "company": "Stoner Andrews",
       "action": "email_priority",
       "platform": "website_form",
       "reason": "official_website_contact_channel"
+    },
+    {
+      "id": "google-customer-mountain-exposure-website-contact",
+      "company": "Mountain Exposure",
+      "action": "email_priority",
+      "platform": "website_form",
+      "reason": "official_public_business_email_verified"
     },
     {
       "id": "google-customer-can-am-sales-group-website-contact",
@@ -38,11 +73,25 @@
       "reason": "official_website_contact_channel"
     },
     {
+      "id": "google-customer-cwr-wholesale-distribution-website-contact",
+      "company": "CWR Wholesale Distribution",
+      "action": "email_priority",
+      "platform": "website_form",
+      "reason": "official_public_business_email_verified"
+    },
+    {
       "id": "google-customer-north-branch-traders-website-contact",
       "company": "North Branch Traders",
       "action": "email_priority",
       "platform": "website_form",
       "reason": "official_website_contact_channel"
+    },
+    {
+      "id": "google-customer-pinnacle-outdoor-group-website-contact",
+      "company": "Pinnacle Outdoor Group",
+      "action": "email_priority",
+      "platform": "website_form",
+      "reason": "official_public_business_email_verified"
     },
     {
       "id": "google-customer-rep-first-website-contact",
@@ -59,6 +108,13 @@
       "reason": "official_website_contact_channel"
     },
     {
+      "id": "google-customer-vert-outdoors-website-contact",
+      "company": "VERT Outdoors",
+      "action": "email_priority",
+      "platform": "website_form",
+      "reason": "official_public_business_email_verified"
+    },
+    {
       "id": "google-customer-black-dog-sales-group-website-contact",
       "company": "Black Dog Sales Group",
       "action": "email_priority",
@@ -73,11 +129,39 @@
       "reason": "official_website_contact_channel"
     },
     {
+      "id": "google-customer-evergreen-outdoor-group-website-contact",
+      "company": "Evergreen Outdoor Group",
+      "action": "email_priority",
+      "platform": "website_form",
+      "reason": "official_public_business_email_verified"
+    },
+    {
+      "id": "google-customer-ground-up-sales-website-contact",
+      "company": "Ground Up Sales",
+      "action": "email_priority",
+      "platform": "website_form",
+      "reason": "official_public_business_email_verified"
+    },
+    {
       "id": "google-customer-kns-reps-website-contact",
       "company": "KNS Reps",
       "action": "email_priority",
       "platform": "website_form",
       "reason": "official_website_contact_channel"
+    },
+    {
+      "id": "google-customer-specialty-sports-reps-website-contact",
+      "company": "Specialty Sports Reps",
+      "action": "email_priority",
+      "platform": "website_form",
+      "reason": "official_public_business_email_verified"
+    },
+    {
+      "id": "google-customer-vigos-group-website-contact",
+      "company": "Vigos Group",
+      "action": "email_priority",
+      "platform": "website_form",
+      "reason": "official_public_business_email_verified"
     },
     {
       "id": "google-customer-west-bay-trading-company-website-contact",
@@ -157,13 +241,6 @@
       "reason": "official_website_contact_channel"
     },
     {
-      "id": "google-customer-summit-sales-nw-website-contact",
-      "company": "Summit Sales NW",
-      "action": "verify_target",
-      "platform": "website_form",
-      "reason": "homepage_only_contact_path_requires_verification"
-    },
-    {
       "id": "google-customer-adventure-labworks-website-contact",
       "company": "Adventure Labworks",
       "action": "verify_target",
@@ -192,22 +269,15 @@
       "reason": "homepage_only_contact_path_requires_verification"
     },
     {
-      "id": "google-customer-adventure-marketing-group-website-contact",
-      "company": "Adventure Marketing Group",
-      "action": "verify_target",
+      "id": "google-customer-sierra-outdoor-collective-website-contact",
+      "company": "Sierra Outdoor Collective",
+      "action": "develop",
       "platform": "website_form",
-      "reason": "homepage_only_contact_path_requires_verification"
+      "reason": "official_website_contact_channel"
     },
     {
       "id": "google-customer-end2end-outdoor-website-contact",
       "company": "End2End Outdoor",
-      "action": "verify_target",
-      "platform": "website_form",
-      "reason": "homepage_only_contact_path_requires_verification"
-    },
-    {
-      "id": "google-customer-mtnstuff-website-contact",
-      "company": "MTNSTUFF",
       "action": "verify_target",
       "platform": "website_form",
       "reason": "homepage_only_contact_path_requires_verification"
@@ -220,22 +290,8 @@
       "reason": "homepage_only_contact_path_requires_verification"
     },
     {
-      "id": "google-customer-pacific-crest-trading-website-contact",
-      "company": "Pacific Crest Trading",
-      "action": "verify_target",
-      "platform": "website_form",
-      "reason": "homepage_only_contact_path_requires_verification"
-    },
-    {
       "id": "google-customer-sanitas-sales-group-website-contact",
       "company": "Sanitas Sales Group",
-      "action": "verify_target",
-      "platform": "website_form",
-      "reason": "homepage_only_contact_path_requires_verification"
-    },
-    {
-      "id": "google-customer-sierra-outdoor-collective-website-contact",
-      "company": "Sierra Outdoor Collective",
       "action": "verify_target",
       "platform": "website_form",
       "reason": "homepage_only_contact_path_requires_verification"
@@ -248,22 +304,15 @@
       "reason": "homepage_only_contact_path_requires_verification"
     },
     {
-      "id": "google-customer-hi-altitude-sales-consulting-website-contact",
-      "company": "Hi Altitude Sales & Consulting",
-      "action": "verify_target",
-      "platform": "website_form",
-      "reason": "homepage_only_contact_path_requires_verification"
-    },
-    {
       "id": "google-customer-level-8-outdoor-website-contact",
       "company": "Level 8 Outdoor",
-      "action": "verify_target",
+      "action": "develop",
       "platform": "website_form",
-      "reason": "homepage_only_contact_path_requires_verification"
+      "reason": "official_website_contact_channel"
     },
     {
-      "id": "google-customer-mountain-exposure-website-contact",
-      "company": "Mountain Exposure",
+      "id": "google-customer-hi-altitude-sales-consulting-website-contact",
+      "company": "Hi Altitude Sales & Consulting",
       "action": "verify_target",
       "platform": "website_form",
       "reason": "homepage_only_contact_path_requires_verification"
@@ -292,20 +341,13 @@
     {
       "id": "google-customer-ascension-sales-group-website-contact",
       "company": "Ascension Sales Group",
-      "action": "verify_target",
+      "action": "develop",
       "platform": "website_form",
-      "reason": "homepage_only_contact_path_requires_verification"
+      "reason": "official_website_contact_channel"
     },
     {
       "id": "google-customer-covey-sales-marketing-website-contact",
       "company": "Covey Sales & Marketing",
-      "action": "verify_target",
-      "platform": "website_form",
-      "reason": "homepage_only_contact_path_requires_verification"
-    },
-    {
-      "id": "google-customer-cwr-wholesale-distribution-website-contact",
-      "company": "CWR Wholesale Distribution",
       "action": "verify_target",
       "platform": "website_form",
       "reason": "homepage_only_contact_path_requires_verification"
@@ -332,13 +374,6 @@
       "reason": "homepage_only_contact_path_requires_verification"
     },
     {
-      "id": "google-customer-pinnacle-outdoor-group-website-contact",
-      "company": "Pinnacle Outdoor Group",
-      "action": "verify_target",
-      "platform": "website_form",
-      "reason": "homepage_only_contact_path_requires_verification"
-    },
-    {
       "id": "google-customer-powers-pedersen-sales-group-website-contact",
       "company": "Powers Pedersen Sales Group",
       "action": "verify_target",
@@ -353,13 +388,6 @@
       "reason": "homepage_only_contact_path_requires_verification"
     },
     {
-      "id": "google-customer-vert-outdoors-website-contact",
-      "company": "VERT Outdoors",
-      "action": "verify_target",
-      "platform": "website_form",
-      "reason": "homepage_only_contact_path_requires_verification"
-    },
-    {
       "id": "google-customer-young-mackenzie-distribution-website-contact",
       "company": "Young & MacKenzie Distribution",
       "action": "verify_target",
@@ -369,9 +397,16 @@
     {
       "id": "google-customer-brandywine-river-reps-website-contact",
       "company": "Brandywine River Reps",
-      "action": "verify_target",
+      "action": "develop",
       "platform": "website_form",
-      "reason": "homepage_only_contact_path_requires_verification"
+      "reason": "official_website_contact_channel"
+    },
+    {
+      "id": "google-customer-hendrix-outdoors-website-contact",
+      "company": "Hendrix Outdoors",
+      "action": "develop",
+      "platform": "website_form",
+      "reason": "official_website_contact_channel"
     },
     {
       "id": "google-customer-coonhound-sales-marketing-website-contact",
@@ -383,27 +418,6 @@
     {
       "id": "google-customer-cordillera-sales-website-contact",
       "company": "Cordillera Sales",
-      "action": "verify_target",
-      "platform": "website_form",
-      "reason": "homepage_only_contact_path_requires_verification"
-    },
-    {
-      "id": "google-customer-evergreen-outdoor-group-website-contact",
-      "company": "Evergreen Outdoor Group",
-      "action": "verify_target",
-      "platform": "website_form",
-      "reason": "homepage_only_contact_path_requires_verification"
-    },
-    {
-      "id": "google-customer-ground-up-sales-website-contact",
-      "company": "Ground Up Sales",
-      "action": "verify_target",
-      "platform": "website_form",
-      "reason": "homepage_only_contact_path_requires_verification"
-    },
-    {
-      "id": "google-customer-hendrix-outdoors-website-contact",
-      "company": "Hendrix Outdoors",
       "action": "verify_target",
       "platform": "website_form",
       "reason": "homepage_only_contact_path_requires_verification"
@@ -430,13 +444,6 @@
       "reason": "homepage_only_contact_path_requires_verification"
     },
     {
-      "id": "google-customer-specialty-sports-reps-website-contact",
-      "company": "Specialty Sports Reps",
-      "action": "verify_target",
-      "platform": "website_form",
-      "reason": "homepage_only_contact_path_requires_verification"
-    },
-    {
       "id": "google-customer-terra-outdoor-gear-distribution-website-contact",
       "company": "Terra Outdoor Gear Distribution",
       "action": "verify_target",
@@ -446,13 +453,6 @@
     {
       "id": "google-customer-the-alpine-cowboy-website-contact",
       "company": "The Alpine Cowboy",
-      "action": "verify_target",
-      "platform": "website_form",
-      "reason": "homepage_only_contact_path_requires_verification"
-    },
-    {
-      "id": "google-customer-vigos-group-website-contact",
-      "company": "Vigos Group",
       "action": "verify_target",
       "platform": "website_form",
       "reason": "homepage_only_contact_path_requires_verification"
@@ -717,13 +717,6 @@
       "reason": "official_website_contact_channel"
     },
     {
-      "id": "google-customer-summit-sales-nw-website-contact",
-      "company": "Summit Sales NW",
-      "action": "verify_target",
-      "platform": "website_form",
-      "reason": "website_contact_capability_not_verified"
-    },
-    {
       "id": "google-customer-adventure-labworks-website-contact",
       "company": "Adventure Labworks",
       "action": "verify_target",
@@ -752,22 +745,8 @@
       "reason": "website_contact_capability_not_verified"
     },
     {
-      "id": "google-customer-adventure-marketing-group-website-contact",
-      "company": "Adventure Marketing Group",
-      "action": "verify_target",
-      "platform": "website_form",
-      "reason": "website_contact_capability_not_verified"
-    },
-    {
       "id": "google-customer-end2end-outdoor-website-contact",
       "company": "End2End Outdoor",
-      "action": "verify_target",
-      "platform": "website_form",
-      "reason": "website_contact_capability_not_verified"
-    },
-    {
-      "id": "google-customer-mtnstuff-website-contact",
-      "company": "MTNSTUFF",
       "action": "verify_target",
       "platform": "website_form",
       "reason": "website_contact_capability_not_verified"
@@ -780,22 +759,8 @@
       "reason": "website_contact_capability_not_verified"
     },
     {
-      "id": "google-customer-pacific-crest-trading-website-contact",
-      "company": "Pacific Crest Trading",
-      "action": "verify_target",
-      "platform": "website_form",
-      "reason": "website_contact_capability_not_verified"
-    },
-    {
       "id": "google-customer-sanitas-sales-group-website-contact",
       "company": "Sanitas Sales Group",
-      "action": "verify_target",
-      "platform": "website_form",
-      "reason": "website_contact_capability_not_verified"
-    },
-    {
-      "id": "google-customer-sierra-outdoor-collective-website-contact",
-      "company": "Sierra Outdoor Collective",
       "action": "verify_target",
       "platform": "website_form",
       "reason": "website_contact_capability_not_verified"
@@ -815,20 +780,6 @@
       "reason": "website_contact_capability_not_verified"
     },
     {
-      "id": "google-customer-level-8-outdoor-website-contact",
-      "company": "Level 8 Outdoor",
-      "action": "verify_target",
-      "platform": "website_form",
-      "reason": "website_contact_capability_not_verified"
-    },
-    {
-      "id": "google-customer-mountain-exposure-website-contact",
-      "company": "Mountain Exposure",
-      "action": "verify_target",
-      "platform": "website_form",
-      "reason": "website_contact_capability_not_verified"
-    },
-    {
       "id": "google-customer-sportco-marketing-website-contact",
       "company": "Sportco Marketing",
       "action": "verify_target",
@@ -836,22 +787,8 @@
       "reason": "website_contact_capability_not_verified"
     },
     {
-      "id": "google-customer-ascension-sales-group-website-contact",
-      "company": "Ascension Sales Group",
-      "action": "verify_target",
-      "platform": "website_form",
-      "reason": "website_contact_capability_not_verified"
-    },
-    {
       "id": "google-customer-covey-sales-marketing-website-contact",
       "company": "Covey Sales & Marketing",
-      "action": "verify_target",
-      "platform": "website_form",
-      "reason": "website_contact_capability_not_verified"
-    },
-    {
-      "id": "google-customer-cwr-wholesale-distribution-website-contact",
-      "company": "CWR Wholesale Distribution",
       "action": "verify_target",
       "platform": "website_form",
       "reason": "website_contact_capability_not_verified"
@@ -878,13 +815,6 @@
       "reason": "website_contact_capability_not_verified"
     },
     {
-      "id": "google-customer-pinnacle-outdoor-group-website-contact",
-      "company": "Pinnacle Outdoor Group",
-      "action": "verify_target",
-      "platform": "website_form",
-      "reason": "website_contact_capability_not_verified"
-    },
-    {
       "id": "google-customer-powers-pedersen-sales-group-website-contact",
       "company": "Powers Pedersen Sales Group",
       "action": "verify_target",
@@ -899,22 +829,8 @@
       "reason": "website_contact_capability_not_verified"
     },
     {
-      "id": "google-customer-vert-outdoors-website-contact",
-      "company": "VERT Outdoors",
-      "action": "verify_target",
-      "platform": "website_form",
-      "reason": "website_contact_capability_not_verified"
-    },
-    {
       "id": "google-customer-young-mackenzie-distribution-website-contact",
       "company": "Young & MacKenzie Distribution",
-      "action": "verify_target",
-      "platform": "website_form",
-      "reason": "website_contact_capability_not_verified"
-    },
-    {
-      "id": "google-customer-brandywine-river-reps-website-contact",
-      "company": "Brandywine River Reps",
       "action": "verify_target",
       "platform": "website_form",
       "reason": "website_contact_capability_not_verified"
@@ -929,27 +845,6 @@
     {
       "id": "google-customer-cordillera-sales-website-contact",
       "company": "Cordillera Sales",
-      "action": "verify_target",
-      "platform": "website_form",
-      "reason": "website_contact_capability_not_verified"
-    },
-    {
-      "id": "google-customer-evergreen-outdoor-group-website-contact",
-      "company": "Evergreen Outdoor Group",
-      "action": "verify_target",
-      "platform": "website_form",
-      "reason": "website_contact_capability_not_verified"
-    },
-    {
-      "id": "google-customer-ground-up-sales-website-contact",
-      "company": "Ground Up Sales",
-      "action": "verify_target",
-      "platform": "website_form",
-      "reason": "website_contact_capability_not_verified"
-    },
-    {
-      "id": "google-customer-hendrix-outdoors-website-contact",
-      "company": "Hendrix Outdoors",
       "action": "verify_target",
       "platform": "website_form",
       "reason": "website_contact_capability_not_verified"
@@ -976,13 +871,6 @@
       "reason": "website_contact_capability_not_verified"
     },
     {
-      "id": "google-customer-specialty-sports-reps-website-contact",
-      "company": "Specialty Sports Reps",
-      "action": "verify_target",
-      "platform": "website_form",
-      "reason": "website_contact_capability_not_verified"
-    },
-    {
       "id": "google-customer-terra-outdoor-gear-distribution-website-contact",
       "company": "Terra Outdoor Gear Distribution",
       "action": "verify_target",
@@ -992,13 +880,6 @@
     {
       "id": "google-customer-the-alpine-cowboy-website-contact",
       "company": "The Alpine Cowboy",
-      "action": "verify_target",
-      "platform": "website_form",
-      "reason": "website_contact_capability_not_verified"
-    },
-    {
-      "id": "google-customer-vigos-group-website-contact",
-      "company": "Vigos Group",
       "action": "verify_target",
       "platform": "website_form",
       "reason": "website_contact_capability_not_verified"
@@ -1268,5 +1149,5 @@
     "scanned": 0,
     "updated": 0
   },
-  "completedAt": "2026-08-12T13:30:03.181Z"
+  "completedAt": "2026-08-12T13:33:12.814Z"
 }

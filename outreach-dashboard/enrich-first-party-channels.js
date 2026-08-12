@@ -5,7 +5,8 @@ const ROOT = __dirname;
 const JSON_PATH = path.join(ROOT, 'google-lead-discovery-latest.json');
 const JS_PATH = path.join(ROOT, 'google-lead-discovery-latest.js');
 const STATE_PATH = path.join(ROOT, 'first-party-enrichment-state.json');
-const DEFAULT_LIMIT = 25;
+const CONFIG_PATH = path.join(ROOT, 'daily-automation-config.json');
+const DEFAULT_LIMIT = 50;
 const FETCH_TIMEOUT_MS = 10000;
 const TRANSIENT_FILE_CODES = new Set(['UNKNOWN', 'EBUSY', 'EPERM', 'EACCES']);
 
@@ -42,6 +43,16 @@ function atomicWriteFile(file, content) {
 
 function normalizedCompany(value) {
   return String(value || '').normalize('NFKD').toLowerCase().replace(/[^a-z0-9]+/g, ' ').trim();
+}
+
+function campaignScopeMatches(row, config = {}) {
+  const scope = config.campaignScope || {};
+  if (scope.enabled !== true) return true;
+  const country = String(row.countryEn || row.country || '').trim().toLowerCase();
+  const customerType = String(row.customerType || '').trim().toLowerCase();
+  const countries = (scope.requiredCountries || []).map(item => String(item || '').trim().toLowerCase()).filter(Boolean);
+  const customerTypes = (scope.requiredCustomerTypes || []).map(item => String(item || '').trim().toLowerCase()).filter(Boolean);
+  return (!countries.length || countries.includes(country)) && (!customerTypes.length || customerTypes.includes(customerType));
 }
 
 function safeOfficialUrl(value) {
@@ -175,6 +186,7 @@ async function enrichCompany(rows) {
 
 async function main() {
   const artifact = JSON.parse(fs.readFileSync(JSON_PATH, 'utf8'));
+  const config = fs.existsSync(CONFIG_PATH) ? JSON.parse(fs.readFileSync(CONFIG_PATH, 'utf8')) : {};
   const groups = new Map();
   for (const row of artifact.leads || []) {
     if (Number(row.fitScore || 0) < 70 || row.doNotOutreach) continue;
@@ -193,15 +205,20 @@ async function main() {
   }
   for (const [key, rows] of groups) applyCachedVerification(rows, verifications[key]);
   const allGroups = [...groups.values()];
-  const start = allGroups.length ? Math.max(0, Number(state.cursor || 0)) % allGroups.length : 0;
-  const pending = [...allGroups.slice(start), ...allGroups.slice(0, start)].slice(0, limit);
+  const scopedGroups = allGroups.filter(rows => rows.some(row => campaignScopeMatches(row, config)));
+  const activeGroups = config.campaignScope && config.campaignScope.enabled === true ? scopedGroups : allGroups;
+  const cursorField = activeGroups === scopedGroups ? 'campaignCursor' : 'cursor';
+  const start = activeGroups.length ? Math.max(0, Number(state[cursorField] || 0)) % activeGroups.length : 0;
+  const pending = [...activeGroups.slice(start), ...activeGroups.slice(0, start)].slice(0, limit);
   const results = [];
   for (let index = 0; index < pending.length; index += 4) {
     results.push(...await Promise.all(pending.slice(index, index + 4).map(enrichCompany)));
   }
   for (const result of results) verifications[normalizedCompany(result.company)] = result.cache;
   artifact.firstPartyEnrichment = { completedAt: new Date().toISOString(), attemptedCompanies: results.length, verifiedCompanies: results.filter(item => item.ok && item.signals.length).length, cachedCompanies: Object.keys(verifications).length, results: results.map(({ cache, ...result }) => result) };
-  atomicWriteFile(STATE_PATH, `${JSON.stringify({ updatedAt: artifact.firstPartyEnrichment.completedAt, cursor: allGroups.length ? (start + results.length) % allGroups.length : 0, companyCount: allGroups.length, verifications }, null, 2)}\n`);
+  const nextState = { ...state, updatedAt: artifact.firstPartyEnrichment.completedAt, companyCount: allGroups.length, scopedCompanyCount: scopedGroups.length, verifications };
+  nextState[cursorField] = activeGroups.length ? (start + results.length) % activeGroups.length : 0;
+  atomicWriteFile(STATE_PATH, `${JSON.stringify(nextState, null, 2)}\n`);
   atomicWriteFile(JSON_PATH, `${JSON.stringify(artifact, null, 2)}\n`);
   atomicWriteFile(JS_PATH, `window.GOOGLE_LEAD_DISCOVERY_LATEST = ${JSON.stringify(artifact, null, 2)};\n`);
   console.log(JSON.stringify(artifact.firstPartyEnrichment, null, 2));
@@ -209,4 +226,4 @@ async function main() {
 
 if (require.main === module) main().catch(error => { console.error(error); process.exitCode = 1; });
 
-module.exports = { inspectOfficialPage, safeOfficialUrl, sameSocialProfile, applyCachedVerification, cachedVerificationFromRows, retryTransientFileOperation, atomicWriteFile };
+module.exports = { inspectOfficialPage, safeOfficialUrl, sameSocialProfile, applyCachedVerification, cachedVerificationFromRows, campaignScopeMatches, retryTransientFileOperation, atomicWriteFile };
