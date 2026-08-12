@@ -643,7 +643,10 @@ test('online directory refill adds Flextail and Vollyc matched outdoor retailers
   assert.ok(run.refillCandidateCount >= 50);
   assert.ok(run.leads.some(item => item.company === 'Garage Grown Gear'));
   assert.ok(run.leads.some(item => item.company === 'Obelink'));
-  assert.ok(run.leads.some(item => /outdoorretailer\.com\/retailers-of-interest/.test(item.sourceEvidenceUrl || '')));
+  const garage = run.leads.find(item => item.company === 'Garage Grown Gear');
+  assert.match(garage.sourceEvidenceUrl, /^https:\/\/(www\.)?garagegrowngear\.com\//);
+  assert.doesNotMatch(garage.sourceEvidenceUrl, /google\.com|outdoorretailer\.com/);
+  assert.match(garage.discoverySourceUrl, /outdoorretailer\.com\/retailers-of-interest/);
 });
 
 test('homepage-only directory prospects require contact-path verification before execution', () => {

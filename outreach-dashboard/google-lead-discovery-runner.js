@@ -706,7 +706,11 @@ const DIRECTORY_REFILL_CANDIDATES = [
   fitScore,
   background: `${company} is listed or qualified as an outdoor/camping specialty retail prospect with assortment fit for lightweight outdoor electrics and practical high-rotation 3C products.`,
   buyerPersona: 'Outdoor electronics, camping accessories, travel products or consumer electronics category buyer.',
-  evidenceUrl: DIRECTORY_REFILL_SOURCE,
+  // The directory is a discovery hint only. The persisted execution evidence
+  // must remain the candidate's first-party website so downstream gates never
+  // mistake a directory or search page for identity proof.
+  evidenceUrl: url,
+  discoverySourceUrl: DIRECTORY_REFILL_SOURCE,
   dataSources: ['Outdoor Retailer retailer directory', 'official company website'],
 }));
 
@@ -1413,6 +1417,7 @@ function baseLead(item, id, evidenceUrl) {
     website: item.url,
     evidenceUrl,
     sourceEvidenceUrl: item.evidenceUrl || item.url,
+    discoverySourceUrl: item.discoverySourceUrl || '',
     externalVerificationStatus: item.externalVerificationStatus || '',
     query: evidenceUrl,
     source: 'google_customer_discovery',
