@@ -135,3 +135,7 @@ Return only verified facts:
 10. Overall Result: exactly `PASS` or `FAIL`.
 
 Use `PASS` only if Discovery, Queue, Execution, Artifacts, Dashboard, and GitHub all pass. Otherwise use `FAIL`. Do not say "partial success", "mostly done", "looks successful", or "should be successful".
+
+## Campaign Region
+
+Read `marketPriority.preferredCountries` from `daily-automation-config.json` as the current campaign geography. For a North America cycle, prioritize the United States, Canada, and Mexico. Geography changes ranking only: it must never bypass the 100-company Shanghai-day cap, ICP, existing-customer, exclusive-market, cooldown, same-day duplicate, first-party channel-evidence, message, or confirmation gates. When Runtime is already 100/100, do not attempt company 101; build the first-party-verified North America reserve for the next Shanghai workday instead.
