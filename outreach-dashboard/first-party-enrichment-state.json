@@ -1,7 +1,7 @@
 {
-  "updatedAt": "2026-08-12T12:08:21.050Z",
-  "cursor": 102,
-  "companyCount": 254,
+  "updatedAt": "2026-08-12T12:11:50.688Z",
+  "cursor": 127,
+  "companyCount": 263,
   "verifications": {
     "facewest": {
       "firstPartyChannelVerification": {
@@ -1621,7 +1621,7 @@
     "la cordee": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-12T12:08:15.064Z",
+        "verifiedAt": "2026-08-12T12:11:19.089Z",
         "evidenceUrl": "https://www.lacordee.com/en/pages/contact-us",
         "httpStatus": 200,
         "signals": [
@@ -1640,7 +1640,7 @@
     "taunton leisure": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-12T10:20:57.756Z",
+        "verifiedAt": "2026-08-12T12:11:21.239Z",
         "evidenceUrl": "https://www.tauntonleisure.com/",
         "httpStatus": 200,
         "signals": [
@@ -1658,7 +1658,7 @@
     "outdoorxl": {
       "firstPartyChannelVerification": {
         "status": "unreachable",
-        "verifiedAt": "2026-08-12T10:20:58.113Z",
+        "verifiedAt": "2026-08-12T12:11:22.991Z",
         "evidenceUrl": "https://www.outdoorxl.nl/",
         "httpStatus": 403,
         "signals": [],
@@ -1673,7 +1673,7 @@
     "spejder sport": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-12T10:20:59.176Z",
+        "verifiedAt": "2026-08-12T12:11:24.172Z",
         "evidenceUrl": "https://www.spejdersport.dk/handelsbetingelser/",
         "httpStatus": 200,
         "signals": [
@@ -1691,7 +1691,7 @@
     "friluftsland": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-12T10:20:58.958Z",
+        "verifiedAt": "2026-08-12T12:11:26.362Z",
         "evidenceUrl": "https://www.friluftsland.dk/",
         "httpStatus": 200,
         "signals": [
@@ -1709,7 +1709,7 @@
     "left point distribution": {
       "firstPartyChannelVerification": {
         "status": "unreachable",
-        "verifiedAt": "2026-08-12T10:20:58.507Z",
+        "verifiedAt": "2026-08-12T12:11:23.420Z",
         "evidenceUrl": "https://www.leftpointdistribution.com/en-eu/aboutus.php",
         "httpStatus": 403,
         "signals": [],
@@ -1724,7 +1724,7 @@
     "snowys outdoors": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-12T10:20:59.799Z",
+        "verifiedAt": "2026-08-12T12:11:26.843Z",
         "evidenceUrl": "https://www.snowys.com.au/",
         "httpStatus": 202,
         "signals": [],
@@ -1742,7 +1742,7 @@
     "alpenglow sports": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-12T10:20:59.836Z",
+        "verifiedAt": "2026-08-12T12:11:26.798Z",
         "evidenceUrl": "https://alpenglowsports.com/",
         "httpStatus": 200,
         "signals": [
@@ -1763,7 +1763,7 @@
     "ute mountaineer": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-12T10:21:01.077Z",
+        "verifiedAt": "2026-08-12T12:11:28.249Z",
         "evidenceUrl": "https://www.utemountaineer.com/",
         "httpStatus": 200,
         "signals": [
@@ -1781,7 +1781,7 @@
     "neptune mountaineering": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-12T10:21:00.038Z",
+        "verifiedAt": "2026-08-12T12:11:27.308Z",
         "evidenceUrl": "https://www.neptunemountaineering.com/pages/customer-support",
         "httpStatus": 200,
         "signals": [
@@ -2698,7 +2698,7 @@
     "kenco outfitters": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-12T10:21:01.699Z",
+        "verifiedAt": "2026-08-12T12:11:28.830Z",
         "evidenceUrl": "https://kencooutfitters.com/pages/rewards",
         "httpStatus": 200,
         "signals": [
@@ -2717,7 +2717,7 @@
     "jesse brown s outdoors": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-12T10:21:01.618Z",
+        "verifiedAt": "2026-08-12T12:11:28.733Z",
         "evidenceUrl": "https://shop.jessebrowns.com/pages/contact",
         "httpStatus": 200,
         "signals": [
@@ -2736,7 +2736,7 @@
     "travel country outfitters": {
       "firstPartyChannelVerification": {
         "status": "unreachable",
-        "verifiedAt": "2026-08-12T10:21:21.087Z",
+        "verifiedAt": "2026-08-12T12:11:48.268Z",
         "evidenceUrl": "https://www.travelcountry.com/shop/Action/Info_Show/Id/42",
         "httpStatus": 0,
         "signals": [],
@@ -2751,7 +2751,7 @@
     "roads rivers and trails": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-12T10:21:02.641Z",
+        "verifiedAt": "2026-08-12T12:11:29.848Z",
         "evidenceUrl": "https://roadsriversandtrails.com/trip-planning/",
         "httpStatus": 200,
         "signals": [
@@ -3704,7 +3704,7 @@
     "purely outdoors": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-12T10:21:22.470Z",
+        "verifiedAt": "2026-08-12T12:11:49.466Z",
         "evidenceUrl": "https://www.purelyoutdoors.co.uk/showroom.htm",
         "httpStatus": 200,
         "signals": [
@@ -3723,7 +3723,7 @@
     "westside stores": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-12T10:29:56.575Z",
+        "verifiedAt": "2026-08-12T12:11:49.806Z",
         "evidenceUrl": "https://westsidestores.ca/pages/about-us.html",
         "httpStatus": 200,
         "signals": [
@@ -3742,7 +3742,7 @@
     "west end outdoors": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-12T10:29:56.457Z",
+        "verifiedAt": "2026-08-12T12:11:49.265Z",
         "evidenceUrl": "https://www.westendoutdoors.co.uk/policies/contact-information",
         "httpStatus": 200,
         "signals": [
@@ -3759,7 +3759,7 @@
     "md outdoors": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-12T10:29:56.349Z",
+        "verifiedAt": "2026-08-12T12:11:49.183Z",
         "evidenceUrl": "https://www.mdoutdoors.co.nz/pages/contact-us",
         "httpStatus": 200,
         "signals": [
@@ -3778,7 +3778,7 @@
     "sportsden": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-12T10:29:56.364Z",
+        "verifiedAt": "2026-08-12T12:11:50.687Z",
         "evidenceUrl": "https://www.sportsden.ie/pages/contact-us",
         "httpStatus": 200,
         "signals": [
@@ -4116,7 +4116,7 @@
     "c g distribution": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-12T12:08:13.708Z",
+        "verifiedAt": "2026-08-12T12:11:18.738Z",
         "evidenceUrl": "https://cng-distribution.com/",
         "httpStatus": 200,
         "signals": [
@@ -4133,11 +4133,78 @@
     "northern exposure sporting group": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-12T12:08:21.050Z",
+        "verifiedAt": "2026-08-12T12:11:19.770Z",
         "evidenceUrl": "https://northernsporting.com/",
         "httpStatus": 200,
         "signals": [
           "supplier_invitation"
+        ],
+        "error": ""
+      },
+      "contactCapabilityVerified": false,
+      "externalVerificationStatus": "",
+      "publicEmail": "",
+      "emailVerificationStatus": "",
+      "socialProfiles": []
+    },
+    "nordcore group": {
+      "firstPartyChannelVerification": {
+        "status": "unreachable",
+        "verifiedAt": "2026-08-12T12:11:18.730Z",
+        "evidenceUrl": "https://www.nordcoregroup.ca/contactus",
+        "httpStatus": 403,
+        "signals": [],
+        "error": ""
+      },
+      "contactCapabilityVerified": false,
+      "externalVerificationStatus": "",
+      "publicEmail": "",
+      "emailVerificationStatus": "",
+      "socialProfiles": []
+    },
+    "wilcor international": {
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-12T12:11:22.783Z",
+        "evidenceUrl": "https://www.wilcor.net/",
+        "httpStatus": 200,
+        "signals": [
+          "form_control",
+          "contact_invitation"
+        ],
+        "error": ""
+      },
+      "contactCapabilityVerified": true,
+      "externalVerificationStatus": "official_contact_form_verified",
+      "publicEmail": "",
+      "emailVerificationStatus": "",
+      "socialProfiles": []
+    },
+    "tin shack ltd": {
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-12T12:11:22.178Z",
+        "evidenceUrl": "https://tinshack.ca/",
+        "httpStatus": 200,
+        "signals": [
+          "contact_invitation"
+        ],
+        "error": ""
+      },
+      "contactCapabilityVerified": false,
+      "externalVerificationStatus": "",
+      "publicEmail": "",
+      "emailVerificationStatus": "",
+      "socialProfiles": []
+    },
+    "1889 sales": {
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-12T12:11:21.025Z",
+        "evidenceUrl": "https://1889sales.com/about.html",
+        "httpStatus": 200,
+        "signals": [
+          "contact_invitation"
         ],
         "error": ""
       },

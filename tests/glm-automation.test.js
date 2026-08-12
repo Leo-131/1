@@ -1568,6 +1568,15 @@ test('Google discovery includes first-party-backed North America distributor res
     ['Yates Outdoor Sales', 'United States', ''],
     ['REVASSA', 'Mexico', ''],
     ['Blue Ridge Knives', 'United States', 'onestop@brk.com'],
+    ['Round The Wheel Collective', 'United States', 'patrick@roundthewheelcollective.com'],
+    ['1889 Sales', 'United States', ''],
+    ['NOHRTH', 'United States', ''],
+    ['Can-Am Sales Group', 'United States', 'info@canamsalesgroup.com'],
+    ['Zia Works Distribution', 'United States', ''],
+    ['The Bunker Agency', 'United States', ''],
+    ['Parallel 33 Sales Group', 'United States', ''],
+    ['Caraway & Co.', 'United States', ''],
+    ['RTIC Mexico', 'Mexico', ''],
   ];
 
   for (const [company, country, email] of expected) {
