@@ -66,6 +66,13 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "reason": "official_public_business_email_verified"
     },
     {
+      "id": "google-customer-blue-ridge-knives-website-contact",
+      "company": "Blue Ridge Knives",
+      "action": "email_priority",
+      "platform": "website_form",
+      "reason": "official_website_contact_channel"
+    },
+    {
       "id": "google-customer-left-point-distribution-website-contact",
       "company": "Left Point Distribution",
       "action": "email_priority",
@@ -248,6 +255,20 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "reason": "homepage_only_contact_path_requires_verification"
     },
     {
+      "id": "google-customer-young-mackenzie-distribution-website-contact",
+      "company": "Young & MacKenzie Distribution",
+      "action": "verify_target",
+      "platform": "website_form",
+      "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
+      "id": "google-customer-hendrix-outdoors-website-contact",
+      "company": "Hendrix Outdoors",
+      "action": "verify_target",
+      "platform": "website_form",
+      "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
       "id": "google-customer-terra-outdoor-gear-distribution-website-contact",
       "company": "Terra Outdoor Gear Distribution",
       "action": "verify_target",
@@ -304,6 +325,20 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "reason": "homepage_only_contact_path_requires_verification"
     },
     {
+      "id": "google-customer-tin-shack-ltd-website-contact",
+      "company": "Tin Shack Ltd",
+      "action": "verify_target",
+      "platform": "website_form",
+      "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
+      "id": "google-customer-garibaldi-supply-co-website-contact",
+      "company": "Garibaldi Supply Co.",
+      "action": "verify_target",
+      "platform": "website_form",
+      "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
       "id": "google-customer-latulippe-website-contact",
       "company": "Latulippe",
       "action": "verify_target",
@@ -325,6 +360,13 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "reason": "homepage_only_contact_path_requires_verification"
     },
     {
+      "id": "google-customer-yates-outdoor-sales-website-contact",
+      "company": "Yates Outdoor Sales",
+      "action": "verify_target",
+      "platform": "website_form",
+      "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
       "id": "google-customer-d-m-a-distributing-website-contact",
       "company": "D.M.A. Distributing",
       "action": "verify_target",
@@ -341,6 +383,20 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     {
       "id": "google-customer-outdoor-gear-canada-website-contact",
       "company": "Outdoor Gear Canada",
+      "action": "verify_target",
+      "platform": "website_form",
+      "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
+      "id": "google-customer-premium-living-products-website-contact",
+      "company": "Premium Living Products",
+      "action": "verify_target",
+      "platform": "website_form",
+      "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
+      "id": "google-customer-revassa-website-contact",
+      "company": "REVASSA",
       "action": "verify_target",
       "platform": "website_form",
       "reason": "homepage_only_contact_path_requires_verification"
@@ -563,6 +619,20 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "reason": "website_contact_capability_not_verified"
     },
     {
+      "id": "google-customer-young-mackenzie-distribution-website-contact",
+      "company": "Young & MacKenzie Distribution",
+      "action": "verify_target",
+      "platform": "website_form",
+      "reason": "website_contact_capability_not_verified"
+    },
+    {
+      "id": "google-customer-hendrix-outdoors-website-contact",
+      "company": "Hendrix Outdoors",
+      "action": "verify_target",
+      "platform": "website_form",
+      "reason": "website_contact_capability_not_verified"
+    },
+    {
       "id": "google-customer-terra-outdoor-gear-distribution-website-contact",
       "company": "Terra Outdoor Gear Distribution",
       "action": "verify_target",
@@ -619,6 +689,20 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "reason": "website_contact_capability_not_verified"
     },
     {
+      "id": "google-customer-tin-shack-ltd-website-contact",
+      "company": "Tin Shack Ltd",
+      "action": "verify_target",
+      "platform": "website_form",
+      "reason": "website_contact_capability_not_verified"
+    },
+    {
+      "id": "google-customer-garibaldi-supply-co-website-contact",
+      "company": "Garibaldi Supply Co.",
+      "action": "verify_target",
+      "platform": "website_form",
+      "reason": "website_contact_capability_not_verified"
+    },
+    {
       "id": "google-customer-latulippe-website-contact",
       "company": "Latulippe",
       "action": "verify_target",
@@ -635,6 +719,13 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     {
       "id": "google-customer-the-great-outdoor-shop-website-contact",
       "company": "The Great Outdoor Shop",
+      "action": "verify_target",
+      "platform": "website_form",
+      "reason": "website_contact_capability_not_verified"
+    },
+    {
+      "id": "google-customer-yates-outdoor-sales-website-contact",
+      "company": "Yates Outdoor Sales",
       "action": "verify_target",
       "platform": "website_form",
       "reason": "website_contact_capability_not_verified"
@@ -661,8 +752,22 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "reason": "website_contact_capability_not_verified"
     },
     {
+      "id": "google-customer-premium-living-products-website-contact",
+      "company": "Premium Living Products",
+      "action": "verify_target",
+      "platform": "website_form",
+      "reason": "website_contact_capability_not_verified"
+    },
+    {
       "id": "google-customer-bergfreunde-website-contact",
       "company": "Bergfreunde",
+      "action": "verify_target",
+      "platform": "website_form",
+      "reason": "website_contact_capability_not_verified"
+    },
+    {
+      "id": "google-customer-revassa-website-contact",
+      "company": "REVASSA",
       "action": "verify_target",
       "platform": "website_form",
       "reason": "website_contact_capability_not_verified"
@@ -735,9 +840,9 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
   "blockerCounts": {},
   "queueGoalStatus": {
     "target": 100,
-    "potentialPool": 66,
-    "queueCount": 77,
-    "googleDiscovered": 58,
+    "potentialPool": 74,
+    "queueCount": 85,
+    "googleDiscovered": 66,
     "refillNeeded": 0,
     "confirmedToday": 100,
     "reached": true,
@@ -757,5 +862,5 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     "scanned": 0,
     "updated": 0
   },
-  "completedAt": "2026-08-12T12:05:16.779Z"
+  "completedAt": "2026-08-12T12:08:43.952Z"
 };

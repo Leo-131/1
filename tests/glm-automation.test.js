@@ -1560,6 +1560,14 @@ test('Google discovery includes first-party-backed North America distributor res
     ['Sturm Mil-Tec USA', 'United States', ''],
     ['ICO Distributors', 'Canada', 'support@bridensolutions.ca'],
     ['Wilcor International', 'United States', ''],
+    ['Premium Living Products', 'Canada', ''],
+    ['Tin Shack Ltd', 'Canada', ''],
+    ['Young & MacKenzie Distribution', 'Canada', ''],
+    ['Hendrix Outdoors', 'United States', ''],
+    ['Garibaldi Supply Co.', 'Canada', ''],
+    ['Yates Outdoor Sales', 'United States', ''],
+    ['REVASSA', 'Mexico', ''],
+    ['Blue Ridge Knives', 'United States', 'onestop@brk.com'],
   ];
 
   for (const [company, country, email] of expected) {
