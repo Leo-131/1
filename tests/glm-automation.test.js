@@ -1584,6 +1584,13 @@ test('Google discovery includes first-party-backed North America distributor res
     ['Vigos Group', 'United States', ''],
     ['Henry Sports Group', 'Canada', ''],
     ['Urban Outdoor Sales', 'United States', ''],
+    ['Howe Sound Sales', 'Canada', ''],
+    ['Outdoor Market Alliance', 'United States', ''],
+    ['Tandem West Sales', 'Canada', ''],
+    ['360 Adventure Collective', 'United States', ''],
+    ['OnwardUP', 'Canada', ''],
+    ['OUTTECH', 'United States', 'sales@outtech-online.com'],
+    ['Covey Sales & Marketing', 'United States', ''],
   ];
 
   for (const [company, country, email] of expected) {

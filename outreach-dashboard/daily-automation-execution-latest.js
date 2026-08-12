@@ -24,6 +24,13 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "reason": "official_website_contact_channel"
     },
     {
+      "id": "google-customer-outtech-website-contact",
+      "company": "OUTTECH",
+      "action": "email_priority",
+      "platform": "website_form",
+      "reason": "official_website_contact_channel"
+    },
+    {
       "id": "google-customer-can-am-sales-group-website-contact",
       "company": "Can-Am Sales Group",
       "action": "email_priority",
@@ -85,6 +92,34 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "action": "email_priority",
       "platform": "website_form",
       "reason": "official_website_contact_channel"
+    },
+    {
+      "id": "google-customer-interex-industries-website-contact",
+      "company": "Interex Industries",
+      "action": "email_priority",
+      "platform": "website_form",
+      "reason": "official_public_business_email_verified"
+    },
+    {
+      "id": "google-customer-outdoor-market-alliance-website-contact",
+      "company": "Outdoor Market Alliance",
+      "action": "email_priority",
+      "platform": "website_form",
+      "reason": "official_public_business_email_verified"
+    },
+    {
+      "id": "google-customer-urban-outdoor-sales-website-contact",
+      "company": "Urban Outdoor Sales",
+      "action": "email_priority",
+      "platform": "website_form",
+      "reason": "official_public_business_email_verified"
+    },
+    {
+      "id": "google-customer-zia-works-distribution-website-contact",
+      "company": "Zia Works Distribution",
+      "action": "email_priority",
+      "platform": "website_form",
+      "reason": "official_public_business_email_verified"
     },
     {
       "id": "google-customer-left-point-distribution-website-contact",
@@ -276,6 +311,13 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "reason": "public_business_email_requires_verification"
     },
     {
+      "id": "google-customer-onwardup-website-contact",
+      "company": "OnwardUP",
+      "action": "verify_target",
+      "platform": "website_form",
+      "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
       "id": "google-customer-waypoint-outdoor-website-contact",
       "company": "Waypoint Outdoor",
       "action": "verify_target",
@@ -285,6 +327,13 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     {
       "id": "google-customer-sportco-marketing-website-contact",
       "company": "Sportco Marketing",
+      "action": "verify_target",
+      "platform": "website_form",
+      "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
+      "id": "google-customer-covey-sales-marketing-website-contact",
+      "company": "Covey Sales & Marketing",
       "action": "verify_target",
       "platform": "website_form",
       "reason": "homepage_only_contact_path_requires_verification"
@@ -313,6 +362,13 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     {
       "id": "google-customer-hendrix-outdoors-website-contact",
       "company": "Hendrix Outdoors",
+      "action": "verify_target",
+      "platform": "website_form",
+      "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
+      "id": "google-customer-howe-sound-sales-website-contact",
+      "company": "Howe Sound Sales",
       "action": "verify_target",
       "platform": "website_form",
       "reason": "homepage_only_contact_path_requires_verification"
@@ -355,6 +411,13 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     {
       "id": "google-customer-parallel-33-sales-group-website-contact",
       "company": "Parallel 33 Sales Group",
+      "action": "verify_target",
+      "platform": "website_form",
+      "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
+      "id": "google-customer-tandem-west-sales-website-contact",
+      "company": "Tandem West Sales",
       "action": "verify_target",
       "platform": "website_form",
       "reason": "homepage_only_contact_path_requires_verification"
@@ -416,6 +479,13 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "reason": "homepage_only_contact_path_requires_verification"
     },
     {
+      "id": "google-customer-360-adventure-collective-website-contact",
+      "company": "360 Adventure Collective",
+      "action": "verify_target",
+      "platform": "website_form",
+      "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
       "id": "google-customer-henry-sports-group-website-contact",
       "company": "Henry Sports Group",
       "action": "verify_target",
@@ -430,29 +500,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "reason": "homepage_only_contact_path_requires_verification"
     },
     {
-      "id": "google-customer-interex-industries-website-contact",
-      "company": "Interex Industries",
-      "action": "verify_target",
-      "platform": "website_form",
-      "reason": "homepage_only_contact_path_requires_verification"
-    },
-    {
       "id": "google-customer-the-great-outdoor-shop-website-contact",
       "company": "The Great Outdoor Shop",
-      "action": "verify_target",
-      "platform": "website_form",
-      "reason": "homepage_only_contact_path_requires_verification"
-    },
-    {
-      "id": "google-customer-urban-outdoor-sales-website-contact",
-      "company": "Urban Outdoor Sales",
-      "action": "verify_target",
-      "platform": "website_form",
-      "reason": "homepage_only_contact_path_requires_verification"
-    },
-    {
-      "id": "google-customer-zia-works-distribution-website-contact",
-      "company": "Zia Works Distribution",
       "action": "verify_target",
       "platform": "website_form",
       "reason": "homepage_only_contact_path_requires_verification"
@@ -633,53 +682,11 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "reason": "verified_executable_channel_missing"
     },
     {
-      "id": 20,
-      "company": "Harbor Freight",
+      "id": "google-customer-onwardup-website-contact",
+      "company": "OnwardUP",
       "action": "verify_target",
-      "platform": "research",
-      "reason": "verified_executable_channel_missing"
-    },
-    {
-      "id": 6,
-      "company": "L.L.Bean",
-      "action": "verify_target",
-      "platform": "research",
-      "reason": "verified_executable_channel_missing"
-    },
-    {
-      "id": 17,
-      "company": "Target",
-      "action": "verify_target",
-      "platform": "research",
-      "reason": "verified_executable_channel_missing"
-    },
-    {
-      "id": 22,
-      "company": "Thor Industries",
-      "action": "verify_target",
-      "platform": "research",
-      "reason": "verified_executable_channel_missing"
-    },
-    {
-      "id": 13,
-      "company": "Walgreens",
-      "action": "verify_target",
-      "platform": "research",
-      "reason": "verified_executable_channel_missing"
-    },
-    {
-      "id": 18,
-      "company": "Winnebago",
-      "action": "verify_target",
-      "platform": "research",
-      "reason": "verified_executable_channel_missing"
-    },
-    {
-      "id": 11,
-      "company": "Best Buy",
-      "action": "verify_target",
-      "platform": "research",
-      "reason": "verified_executable_channel_missing"
+      "platform": "website_form",
+      "reason": "website_contact_capability_not_verified"
     },
     {
       "id": "google-customer-waypoint-outdoor-website-contact",
@@ -691,6 +698,13 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     {
       "id": "google-customer-sportco-marketing-website-contact",
       "company": "Sportco Marketing",
+      "action": "verify_target",
+      "platform": "website_form",
+      "reason": "website_contact_capability_not_verified"
+    },
+    {
+      "id": "google-customer-covey-sales-marketing-website-contact",
+      "company": "Covey Sales & Marketing",
       "action": "verify_target",
       "platform": "website_form",
       "reason": "website_contact_capability_not_verified"
@@ -719,6 +733,13 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     {
       "id": "google-customer-hendrix-outdoors-website-contact",
       "company": "Hendrix Outdoors",
+      "action": "verify_target",
+      "platform": "website_form",
+      "reason": "website_contact_capability_not_verified"
+    },
+    {
+      "id": "google-customer-howe-sound-sales-website-contact",
+      "company": "Howe Sound Sales",
       "action": "verify_target",
       "platform": "website_form",
       "reason": "website_contact_capability_not_verified"
@@ -761,6 +782,13 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     {
       "id": "google-customer-parallel-33-sales-group-website-contact",
       "company": "Parallel 33 Sales Group",
+      "action": "verify_target",
+      "platform": "website_form",
+      "reason": "website_contact_capability_not_verified"
+    },
+    {
+      "id": "google-customer-tandem-west-sales-website-contact",
+      "company": "Tandem West Sales",
       "action": "verify_target",
       "platform": "website_form",
       "reason": "website_contact_capability_not_verified"
@@ -822,6 +850,13 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "reason": "website_contact_capability_not_verified"
     },
     {
+      "id": "google-customer-360-adventure-collective-website-contact",
+      "company": "360 Adventure Collective",
+      "action": "verify_target",
+      "platform": "website_form",
+      "reason": "website_contact_capability_not_verified"
+    },
+    {
       "id": "google-customer-henry-sports-group-website-contact",
       "company": "Henry Sports Group",
       "action": "verify_target",
@@ -836,29 +871,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "reason": "website_contact_capability_not_verified"
     },
     {
-      "id": "google-customer-interex-industries-website-contact",
-      "company": "Interex Industries",
-      "action": "verify_target",
-      "platform": "website_form",
-      "reason": "website_contact_capability_not_verified"
-    },
-    {
       "id": "google-customer-the-great-outdoor-shop-website-contact",
       "company": "The Great Outdoor Shop",
-      "action": "verify_target",
-      "platform": "website_form",
-      "reason": "website_contact_capability_not_verified"
-    },
-    {
-      "id": "google-customer-urban-outdoor-sales-website-contact",
-      "company": "Urban Outdoor Sales",
-      "action": "verify_target",
-      "platform": "website_form",
-      "reason": "website_contact_capability_not_verified"
-    },
-    {
-      "id": "google-customer-zia-works-distribution-website-contact",
-      "company": "Zia Works Distribution",
       "action": "verify_target",
       "platform": "website_form",
       "reason": "website_contact_capability_not_verified"
@@ -990,6 +1004,55 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "reason": "website_contact_capability_not_verified"
     },
     {
+      "id": 20,
+      "company": "Harbor Freight",
+      "action": "verify_target",
+      "platform": "research",
+      "reason": "verified_executable_channel_missing"
+    },
+    {
+      "id": 6,
+      "company": "L.L.Bean",
+      "action": "verify_target",
+      "platform": "research",
+      "reason": "verified_executable_channel_missing"
+    },
+    {
+      "id": 17,
+      "company": "Target",
+      "action": "verify_target",
+      "platform": "research",
+      "reason": "verified_executable_channel_missing"
+    },
+    {
+      "id": 22,
+      "company": "Thor Industries",
+      "action": "verify_target",
+      "platform": "research",
+      "reason": "verified_executable_channel_missing"
+    },
+    {
+      "id": 13,
+      "company": "Walgreens",
+      "action": "verify_target",
+      "platform": "research",
+      "reason": "verified_executable_channel_missing"
+    },
+    {
+      "id": 18,
+      "company": "Winnebago",
+      "action": "verify_target",
+      "platform": "research",
+      "reason": "verified_executable_channel_missing"
+    },
+    {
+      "id": 11,
+      "company": "Best Buy",
+      "action": "verify_target",
+      "platform": "research",
+      "reason": "verified_executable_channel_missing"
+    },
+    {
       "id": 9,
       "company": "Canadian Tire",
       "action": "verify_target",
@@ -1036,9 +1099,9 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
   "blockerCounts": {},
   "queueGoalStatus": {
     "target": 100,
-    "potentialPool": 90,
+    "potentialPool": 97,
     "queueCount": 95,
-    "googleDiscovered": 82,
+    "googleDiscovered": 89,
     "refillNeeded": 0,
     "confirmedToday": 100,
     "reached": true,
@@ -1058,5 +1121,5 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     "scanned": 0,
     "updated": 0
   },
-  "completedAt": "2026-08-12T12:15:09.583Z"
+  "completedAt": "2026-08-12T12:19:10.499Z"
 };

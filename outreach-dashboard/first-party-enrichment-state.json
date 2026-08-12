@@ -1,7 +1,7 @@
 {
-  "updatedAt": "2026-08-12T12:14:44.605Z",
-  "cursor": 152,
-  "companyCount": 270,
+  "updatedAt": "2026-08-12T12:18:44.454Z",
+  "cursor": 177,
+  "companyCount": 277,
   "verifications": {
     "facewest": {
       "firstPartyChannelVerification": {
@@ -1959,7 +1959,7 @@
     "technical outdoor indonesia": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-12T12:14:34.287Z",
+        "verifiedAt": "2026-08-12T12:18:29.740Z",
         "evidenceUrl": "https://www.technicaloutdoor.com/welcome/",
         "httpStatus": 200,
         "signals": [
@@ -1982,7 +1982,7 @@
     "bentgate mountaineering": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-12T10:31:37.268Z",
+        "verifiedAt": "2026-08-12T12:18:36.820Z",
         "evidenceUrl": "https://www.bentgate.com/service/",
         "httpStatus": 200,
         "signals": [
@@ -2000,7 +2000,7 @@
     "the great outdoor shop": {
       "firstPartyChannelVerification": {
         "status": "unreachable",
-        "verifiedAt": "2026-08-12T10:31:36.595Z",
+        "verifiedAt": "2026-08-12T12:18:35.722Z",
         "evidenceUrl": "https://thegreatoutdoorshop.com/",
         "httpStatus": 0,
         "signals": [],
@@ -2015,7 +2015,7 @@
     "arizona hiking shack": {
       "firstPartyChannelVerification": {
         "status": "unreachable",
-        "verifiedAt": "2026-08-12T10:31:36.708Z",
+        "verifiedAt": "2026-08-12T12:18:37.684Z",
         "evidenceUrl": "https://www.hikingshack.com/",
         "httpStatus": 403,
         "signals": [],
@@ -2030,7 +2030,7 @@
     "further faster": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-12T10:31:38.605Z",
+        "verifiedAt": "2026-08-12T12:18:42.380Z",
         "evidenceUrl": "https://www.furtherfaster.co.nz/",
         "httpStatus": 200,
         "signals": [
@@ -2522,7 +2522,7 @@
     "j h outdoors": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-12T10:31:37.236Z",
+        "verifiedAt": "2026-08-12T12:18:37.892Z",
         "evidenceUrl": "https://jhoutdoors.com/pages/faq",
         "httpStatus": 200,
         "signals": [
@@ -2541,7 +2541,7 @@
     "hilton s tent city": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-12T10:31:38.358Z",
+        "verifiedAt": "2026-08-12T12:18:38.363Z",
         "evidenceUrl": "https://www.hiltonstentcity.com/pages/returns-exchanges",
         "httpStatus": 200,
         "signals": [
@@ -2807,7 +2807,7 @@
     "exploration wild": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-12T12:14:38.656Z",
+        "verifiedAt": "2026-08-12T12:18:29.902Z",
         "evidenceUrl": "https://explorationwild.com/pages/about-us",
         "httpStatus": 200,
         "signals": [
@@ -2826,7 +2826,7 @@
     "kermode overland": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-12T12:14:42.980Z",
+        "verifiedAt": "2026-08-12T12:18:32.451Z",
         "evidenceUrl": "https://kermodeoverland.com/contact-us/",
         "httpStatus": 200,
         "signals": [
@@ -2845,7 +2845,7 @@
     "backcountry sportsman": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-12T12:14:38.669Z",
+        "verifiedAt": "2026-08-12T12:18:29.839Z",
         "evidenceUrl": "https://backcountrysportsmanoutfitters.com/",
         "httpStatus": 200,
         "signals": [
@@ -2864,7 +2864,7 @@
     "grasshopper leisure": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-12T12:14:39.908Z",
+        "verifiedAt": "2026-08-12T12:18:33.670Z",
         "evidenceUrl": "https://www.grasshopperleisure.co.uk/",
         "httpStatus": 200,
         "signals": [
@@ -2883,7 +2883,7 @@
     "newquay camping leisure": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-12T10:31:38.945Z",
+        "verifiedAt": "2026-08-12T12:18:43.287Z",
         "evidenceUrl": "https://newquaycampingshop.com/pages/contact-us",
         "httpStatus": 200,
         "signals": [
@@ -2902,7 +2902,7 @@
     "canada outdoors": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-12T10:31:38.148Z",
+        "verifiedAt": "2026-08-12T12:18:42.557Z",
         "evidenceUrl": "https://www.canadaoutdoors.com/pages/customer-service",
         "httpStatus": 200,
         "signals": [
@@ -2921,7 +2921,7 @@
     "weyfarm outdoors": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-12T10:30:08.122Z",
+        "verifiedAt": "2026-08-12T12:18:35.631Z",
         "evidenceUrl": "https://weyfarm-outdoors.co.uk/",
         "httpStatus": 200,
         "signals": [
@@ -2939,7 +2939,7 @@
     "outdoor shop nz": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-12T10:31:40.008Z",
+        "verifiedAt": "2026-08-12T12:18:42.626Z",
         "evidenceUrl": "https://outdoorshop.nz/pages/contact-us",
         "httpStatus": 200,
         "signals": [
@@ -3797,7 +3797,7 @@
     "pack gear go": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-12T12:14:44.605Z",
+        "verifiedAt": "2026-08-12T12:18:34.375Z",
         "evidenceUrl": "https://www.packgeargo.co.nz/contact/",
         "httpStatus": 200,
         "signals": [
@@ -3816,7 +3816,7 @@
     "outdoor estore": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-12T10:30:05.726Z",
+        "verifiedAt": "2026-08-12T12:18:33.113Z",
         "evidenceUrl": "https://www.outdoorestore.co.nz/pages/contact-us",
         "httpStatus": 200,
         "signals": [
@@ -3834,7 +3834,7 @@
     "mc s outdoor store": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-12T10:30:06.742Z",
+        "verifiedAt": "2026-08-12T12:18:37.329Z",
         "evidenceUrl": "https://www.mcsoutdoorstore.ie/contact-us/",
         "httpStatus": 200,
         "signals": [
@@ -3853,7 +3853,7 @@
     "van dijk outdoor recreatie": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-12T10:30:08.840Z",
+        "verifiedAt": "2026-08-12T12:18:36.319Z",
         "evidenceUrl": "https://autodaktenten-webshop.be/pages/contact",
         "httpStatus": 200,
         "signals": [
@@ -3871,7 +3871,7 @@
     "wm camping": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-12T10:31:40.252Z",
+        "verifiedAt": "2026-08-12T12:18:44.454Z",
         "evidenceUrl": "https://wmcamping.co.uk/pages/contact-us",
         "httpStatus": 200,
         "signals": [
@@ -4265,6 +4265,102 @@
       "externalVerificationStatus": "",
       "publicEmail": "",
       "emailVerificationStatus": "",
+      "socialProfiles": []
+    },
+    "interex industries": {
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-12T12:18:39.690Z",
+        "evidenceUrl": "https://www.interexind.ca/",
+        "httpStatus": 200,
+        "signals": [
+          "public_business_email",
+          "supplier_invitation",
+          "contact_invitation"
+        ],
+        "error": ""
+      },
+      "contactCapabilityVerified": true,
+      "externalVerificationStatus": "official_supplier_route_verified",
+      "publicEmail": "help@interexind.ca",
+      "emailVerificationStatus": "official_public_business_email",
+      "socialProfiles": []
+    },
+    "blue ridge knives": {
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-12T12:18:41.867Z",
+        "evidenceUrl": "https://www.blueridgeknives.com/wholesale-camping-tools/",
+        "httpStatus": 200,
+        "signals": [
+          "form_control",
+          "public_business_email",
+          "contact_invitation"
+        ],
+        "error": ""
+      },
+      "contactCapabilityVerified": true,
+      "externalVerificationStatus": "official_contact_form_verified",
+      "publicEmail": "onestop@brk.com",
+      "emailVerificationStatus": "official_public_business_email",
+      "socialProfiles": []
+    },
+    "zia works distribution": {
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-12T12:18:41.262Z",
+        "evidenceUrl": "https://www.nwziaworks.com/",
+        "httpStatus": 200,
+        "signals": [
+          "form_control",
+          "public_business_email",
+          "contact_invitation"
+        ],
+        "error": ""
+      },
+      "contactCapabilityVerified": true,
+      "externalVerificationStatus": "official_contact_form_verified",
+      "publicEmail": "INFO.ZIAWORKSDISTRIBUTION@GMAIL.COM",
+      "emailVerificationStatus": "official_public_business_email",
+      "socialProfiles": []
+    },
+    "urban outdoor sales": {
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-12T12:18:40.369Z",
+        "evidenceUrl": "https://www.urbanoutdoorsales.net/",
+        "httpStatus": 200,
+        "signals": [
+          "form_control",
+          "public_business_email",
+          "contact_invitation"
+        ],
+        "error": ""
+      },
+      "contactCapabilityVerified": true,
+      "externalVerificationStatus": "official_contact_form_verified",
+      "publicEmail": "Nick@urbanoutdoorsales.com",
+      "emailVerificationStatus": "official_public_business_email",
+      "socialProfiles": []
+    },
+    "outdoor market alliance": {
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-12T12:18:40.172Z",
+        "evidenceUrl": "https://www.outdoormarketalliance.org/",
+        "httpStatus": 200,
+        "signals": [
+          "form_control",
+          "public_business_email",
+          "supplier_invitation",
+          "contact_invitation"
+        ],
+        "error": ""
+      },
+      "contactCapabilityVerified": true,
+      "externalVerificationStatus": "official_supplier_form_verified",
+      "publicEmail": "Graniterep@mac.com",
+      "emailVerificationStatus": "official_public_business_email",
       "socialProfiles": []
     }
   }
