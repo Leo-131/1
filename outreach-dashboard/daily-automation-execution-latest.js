@@ -622,7 +622,7 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     "queueCount": 59,
     "googleDiscovered": 40,
     "refillNeeded": 52,
-    "confirmedToday": 49,
+    "confirmedToday": 98,
     "reached": false,
     "action": "Add more verified high-ICP sources or unblock existing website/social leads."
   },
@@ -892,14 +892,10 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     "retainedLowIcp": 0
   },
   "bounceReconciliation": {
-    "ok": false,
-    "reason": "email_sender_not_configured",
-    "updated": 0,
-    "requiredEnv": [
-      "OUTREACH_EMAIL_FROM",
-      "ALIBABA_SMTP_USER",
-      "ALIBABA_SMTP_SECURITY_PASSWORD"
-    ]
+    "ok": true,
+    "reason": "no_recent_bounces",
+    "scanned": 0,
+    "updated": 0
   },
-  "completedAt": "2026-08-12T10:09:05.205Z"
+  "completedAt": "2026-08-12T10:17:06.974Z"
 };
