@@ -24,6 +24,13 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "reason": "official_website_contact_channel"
     },
     {
+      "id": "google-customer-roi-recreation-outfitters-website-contact",
+      "company": "ROI Recreation Outfitters",
+      "action": "email_priority",
+      "platform": "website_form",
+      "reason": "official_website_contact_channel"
+    },
+    {
       "id": "google-customer-continental-sports-inc-website-contact",
       "company": "Continental Sports Inc",
       "action": "email_priority",
@@ -38,6 +45,13 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "reason": "official_website_contact_channel"
     },
     {
+      "id": "google-customer-hicks-inc-website-contact",
+      "company": "Hicks Inc",
+      "action": "email_priority",
+      "platform": "website_form",
+      "reason": "official_website_contact_channel"
+    },
+    {
       "id": "google-customer-rock-creek-website-contact",
       "company": "Rock/Creek",
       "action": "email_priority",
@@ -47,6 +61,13 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     {
       "id": "google-customer-left-point-distribution-website-contact",
       "company": "Left Point Distribution",
+      "action": "email_priority",
+      "platform": "website_form",
+      "reason": "official_website_contact_channel"
+    },
+    {
+      "id": "google-customer-classic-products-international-website-contact",
+      "company": "Classic Products International",
       "action": "email_priority",
       "platform": "website_form",
       "reason": "official_website_contact_channel"
@@ -68,6 +89,13 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     {
       "id": "google-customer-bbq-fans-website-contact",
       "company": "BBQ Fans",
+      "action": "email_priority",
+      "platform": "website_form",
+      "reason": "official_website_contact_channel"
+    },
+    {
+      "id": "google-customer-jamsca-solutions-website-contact",
+      "company": "JAMSCA Solutions",
       "action": "email_priority",
       "platform": "website_form",
       "reason": "official_website_contact_channel"
@@ -157,6 +185,20 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "reason": "public_business_email_requires_verification"
     },
     {
+      "id": "google-customer-cwr-wholesale-distribution-website-contact",
+      "company": "CWR Wholesale Distribution",
+      "action": "verify_target",
+      "platform": "website_form",
+      "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
+      "id": "google-customer-terra-outdoor-gear-distribution-website-contact",
+      "company": "Terra Outdoor Gear Distribution",
+      "action": "verify_target",
+      "platform": "website_form",
+      "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
       "id": "google-customer-atmosphere-website-contact",
       "company": "Atmosphere",
       "action": "verify_target",
@@ -185,6 +227,13 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "reason": "homepage_only_contact_path_requires_verification"
     },
     {
+      "id": "google-customer-northern-exposure-sporting-group-website-contact",
+      "company": "Northern Exposure Sporting Group",
+      "action": "verify_target",
+      "platform": "website_form",
+      "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
       "id": "google-customer-latulippe-website-contact",
       "company": "Latulippe",
       "action": "verify_target",
@@ -194,6 +243,13 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     {
       "id": "google-customer-the-great-outdoor-shop-website-contact",
       "company": "The Great Outdoor Shop",
+      "action": "verify_target",
+      "platform": "website_form",
+      "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
+      "id": "google-customer-gmd-wholesale-website-contact",
+      "company": "GMD Wholesale",
       "action": "verify_target",
       "platform": "website_form",
       "reason": "homepage_only_contact_path_requires_verification"
@@ -465,6 +521,20 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "reason": "verified_executable_channel_missing"
     },
     {
+      "id": "google-customer-cwr-wholesale-distribution-website-contact",
+      "company": "CWR Wholesale Distribution",
+      "action": "verify_target",
+      "platform": "website_form",
+      "reason": "website_contact_capability_not_verified"
+    },
+    {
+      "id": "google-customer-terra-outdoor-gear-distribution-website-contact",
+      "company": "Terra Outdoor Gear Distribution",
+      "action": "verify_target",
+      "platform": "website_form",
+      "reason": "website_contact_capability_not_verified"
+    },
+    {
       "id": "google-customer-atmosphere-website-contact",
       "company": "Atmosphere",
       "action": "verify_target",
@@ -493,6 +563,13 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "reason": "website_contact_capability_not_verified"
     },
     {
+      "id": "google-customer-northern-exposure-sporting-group-website-contact",
+      "company": "Northern Exposure Sporting Group",
+      "action": "verify_target",
+      "platform": "website_form",
+      "reason": "website_contact_capability_not_verified"
+    },
+    {
       "id": "google-customer-latulippe-website-contact",
       "company": "Latulippe",
       "action": "verify_target",
@@ -502,6 +579,13 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     {
       "id": "google-customer-the-great-outdoor-shop-website-contact",
       "company": "The Great Outdoor Shop",
+      "action": "verify_target",
+      "platform": "website_form",
+      "reason": "website_contact_capability_not_verified"
+    },
+    {
+      "id": "google-customer-gmd-wholesale-website-contact",
+      "company": "GMD Wholesale",
       "action": "verify_target",
       "platform": "website_form",
       "reason": "website_contact_capability_not_verified"
@@ -588,9 +672,9 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
   "blockerCounts": {},
   "queueGoalStatus": {
     "target": 100,
-    "potentialPool": 53,
-    "queueCount": 64,
-    "googleDiscovered": 45,
+    "potentialPool": 61,
+    "queueCount": 72,
+    "googleDiscovered": 53,
     "refillNeeded": 0,
     "confirmedToday": 100,
     "reached": true,
@@ -610,5 +694,5 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     "scanned": 0,
     "updated": 0
   },
-  "completedAt": "2026-08-12T11:56:37.238Z"
+  "completedAt": "2026-08-12T11:59:49.069Z"
 };

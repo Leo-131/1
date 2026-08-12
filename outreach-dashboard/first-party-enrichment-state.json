@@ -1,7 +1,7 @@
 {
-  "updatedAt": "2026-08-12T11:55:52.896Z",
-  "cursor": 27,
-  "companyCount": 232,
+  "updatedAt": "2026-08-12T11:59:22.058Z",
+  "cursor": 52,
+  "companyCount": 240,
   "verifications": {
     "facewest": {
       "firstPartyChannelVerification": {
@@ -1086,7 +1086,7 @@
     "cotswold outdoor": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-12T11:55:50.743Z",
+        "verifiedAt": "2026-08-12T11:59:10.755Z",
         "evidenceUrl": "https://www.cotswoldoutdoor.com/",
         "httpStatus": 200,
         "signals": [
@@ -1107,7 +1107,7 @@
     "decathlon france": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-12T11:55:49.975Z",
+        "verifiedAt": "2026-08-12T11:59:10.295Z",
         "evidenceUrl": "https://www.decathlon.fr/help/app/contact",
         "httpStatus": 200,
         "signals": [
@@ -1124,7 +1124,7 @@
     "campsaver": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-12T11:55:52.896Z",
+        "verifiedAt": "2026-08-12T11:59:11.159Z",
         "evidenceUrl": "https://www.campsaver.com/",
         "httpStatus": 200,
         "signals": [
@@ -1145,7 +1145,7 @@
     "bergzeit": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-12T09:37:23.049Z",
+        "verifiedAt": "2026-08-12T11:59:11.189Z",
         "evidenceUrl": "https://www.bergzeit.de/",
         "httpStatus": 200,
         "signals": [],
@@ -1160,7 +1160,7 @@
     "camping wagner": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-12T09:37:24.647Z",
+        "verifiedAt": "2026-08-12T11:59:14.190Z",
         "evidenceUrl": "https://www.campingwagner.de/de/",
         "httpStatus": 200,
         "signals": [],
@@ -1175,7 +1175,7 @@
     "decathlon germany": {
       "firstPartyChannelVerification": {
         "status": "unreachable",
-        "verifiedAt": "2026-08-12T09:37:25.575Z",
+        "verifiedAt": "2026-08-12T11:59:11.759Z",
         "evidenceUrl": "https://www.decathlon.de/help/app/contact",
         "httpStatus": 403,
         "signals": [],
@@ -1190,7 +1190,7 @@
     "summit international": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-12T10:05:24.693Z",
+        "verifiedAt": "2026-08-12T11:59:12.845Z",
         "evidenceUrl": "https://www.summitint.co/contact/",
         "httpStatus": 200,
         "signals": [
@@ -1208,7 +1208,7 @@
     "valhalla pure outfitters": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-12T10:05:28.542Z",
+        "verifiedAt": "2026-08-12T11:59:17.112Z",
         "evidenceUrl": "https://vpo.ca/stores/vpo-vancouver",
         "httpStatus": 200,
         "signals": [
@@ -1225,7 +1225,7 @@
     "tentworld": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-12T10:05:28.337Z",
+        "verifiedAt": "2026-08-12T11:59:17.619Z",
         "evidenceUrl": "https://www.tentworld.com.au/",
         "httpStatus": 200,
         "signals": [],
@@ -1240,7 +1240,7 @@
     "trekitt": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-12T10:05:28.745Z",
+        "verifiedAt": "2026-08-12T11:59:18.760Z",
         "evidenceUrl": "https://www.trekitt.co.uk/pages/contact/",
         "httpStatus": 200,
         "signals": [
@@ -1258,7 +1258,7 @@
     "ultralight outdoor gear": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-12T10:05:28.296Z",
+        "verifiedAt": "2026-08-12T11:59:19.231Z",
         "evidenceUrl": "https://ultralightoutdoorgear.co.uk/",
         "httpStatus": 200,
         "signals": [
@@ -1277,7 +1277,7 @@
     "outnorth": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-12T10:05:30.940Z",
+        "verifiedAt": "2026-08-12T11:59:19.434Z",
         "evidenceUrl": "https://www.outnorth.com/int/faq/contact",
         "httpStatus": 200,
         "signals": [
@@ -1295,7 +1295,7 @@
     "naturkompaniet": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-12T10:05:29.315Z",
+        "verifiedAt": "2026-08-12T11:59:18.687Z",
         "evidenceUrl": "https://www.naturkompaniet.se/",
         "httpStatus": 200,
         "signals": [
@@ -1313,7 +1313,7 @@
     "fjellsport": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-12T10:05:30.652Z",
+        "verifiedAt": "2026-08-12T11:59:21.373Z",
         "evidenceUrl": "https://www.fjellsport.no/faq/personvern",
         "httpStatus": 200,
         "signals": [
@@ -1330,7 +1330,7 @@
     "bcf": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-12T10:05:34.107Z",
+        "verifiedAt": "2026-08-12T11:59:21.307Z",
         "evidenceUrl": "https://superretailgroup.com.au/contact/",
         "httpStatus": 200,
         "signals": [
@@ -1347,7 +1347,7 @@
     "camping world": {
       "firstPartyChannelVerification": {
         "status": "unreachable",
-        "verifiedAt": "2026-08-12T10:05:32.178Z",
+        "verifiedAt": "2026-08-12T11:59:20.047Z",
         "evidenceUrl": "https://www.campingworld.com/contact-us.html",
         "httpStatus": 403,
         "signals": [],
@@ -1362,7 +1362,7 @@
     "kittery trading post": {
       "firstPartyChannelVerification": {
         "status": "unreachable",
-        "verifiedAt": "2026-08-12T10:05:32.760Z",
+        "verifiedAt": "2026-08-12T11:59:22.058Z",
         "evidenceUrl": "https://www.kitterytradingpost.com/customer-service/cookie-policy/",
         "httpStatus": 403,
         "signals": [],
@@ -2507,7 +2507,7 @@
     "tractor supply company": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-12T10:05:31.501Z",
+        "verifiedAt": "2026-08-12T11:59:21.649Z",
         "evidenceUrl": "https://www.tractorsupply.com/",
         "httpStatus": 200,
         "signals": [],
@@ -3237,7 +3237,7 @@
     "camping world uk": {
       "firstPartyChannelVerification": {
         "status": "unreachable",
-        "verifiedAt": "2026-08-12T10:05:23.509Z",
+        "verifiedAt": "2026-08-12T11:59:11.986Z",
         "evidenceUrl": "https://www.campingworld.co.uk/us/Visit-and-Contact-Us/cc-339.aspx",
         "httpStatus": 403,
         "signals": [],
@@ -3252,7 +3252,7 @@
     "outdoor adventure store": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-12T10:05:24.186Z",
+        "verifiedAt": "2026-08-12T11:59:15.413Z",
         "evidenceUrl": "https://outdooradventurestore.ie/pages/about-us",
         "httpStatus": 200,
         "signals": [
@@ -3271,7 +3271,7 @@
     "portwest the outdoor shop": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-12T10:05:24.236Z",
+        "verifiedAt": "2026-08-12T11:59:15.520Z",
         "evidenceUrl": "https://www.theoutdoorshop.ie/pages/contact-us",
         "httpStatus": 200,
         "signals": [
@@ -3290,7 +3290,7 @@
     "expedition store sweden": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-12T10:05:26.838Z",
+        "verifiedAt": "2026-08-12T11:59:15.441Z",
         "evidenceUrl": "https://expeditionstore.se/pages/contact-us",
         "httpStatus": 200,
         "signals": [
@@ -3308,7 +3308,7 @@
     "high peak outdoor": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-12T10:05:26.615Z",
+        "verifiedAt": "2026-08-12T11:59:16.105Z",
         "evidenceUrl": "https://www.highpeak-outdoor.com/kontakt.html",
         "httpStatus": 200,
         "signals": [
@@ -3325,7 +3325,7 @@
     "der freistaat mega store": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-12T10:05:27.004Z",
+        "verifiedAt": "2026-08-12T11:59:17.743Z",
         "evidenceUrl": "https://shop.derfreistaat.de/de/kontakt/",
         "httpStatus": 200,
         "signals": [
@@ -3343,7 +3343,7 @@
     "naturligvis outdoor": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-12T10:05:26.536Z",
+        "verifiedAt": "2026-08-12T11:59:17.592Z",
         "evidenceUrl": "https://www.naturligvis.com/side/kontakt",
         "httpStatus": 200,
         "signals": [

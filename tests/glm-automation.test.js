@@ -1546,6 +1546,14 @@ test('Google discovery includes first-party-backed North America distributor res
     ['Canadawide Sports', 'Canada', 'info@canadawidesports.com'],
     ['Outdoor Gear Canada', 'Canada', ''],
     ['C&G Distribution', 'United States', ''],
+    ['Terra Outdoor Gear Distribution', 'Canada', ''],
+    ['JAMSCA Solutions', 'Canada', 'info@jamsca.com'],
+    ['GMD Wholesale', 'Canada', ''],
+    ['Classic Products International', 'Canada', 'sales@classicproductsinc.com'],
+    ['CWR Wholesale Distribution', 'United States', ''],
+    ['Northern Exposure Sporting Group', 'Canada', ''],
+    ['ROI Recreation Outfitters', 'Canada', 'info@roirecreation.com'],
+    ['Hicks Inc', 'United States', 'info@hicks.com'],
   ];
 
   for (const [company, country, email] of expected) {

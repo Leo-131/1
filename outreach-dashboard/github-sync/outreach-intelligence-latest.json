@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-12T11:55:56.242Z",
+  "generatedAt": "2026-08-12T11:59:24.438Z",
   "companies": [
     {
       "companyId": "company_819cc04fe9060117",
@@ -265,6 +265,53 @@
       ]
     },
     {
+      "companyId": "company_758b85cc7feceb23",
+      "company": "ROI Recreation Outfitters",
+      "keys": [
+        "roirecreationoutfitters",
+        "roirecreationcom"
+      ],
+      "domains": [
+        "roirecreation.com"
+      ],
+      "channels": [
+        "website_form"
+      ],
+      "evidence": [
+        {
+          "channel": "website_form",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
+          "checkedAt": ""
+        },
+        {
+          "channel": "website_form",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
+          "checkedAt": ""
+        },
+        {
+          "channel": "website_form",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
+          "checkedAt": ""
+        }
+      ],
+      "history": []
+    },
+    {
       "companyId": "company_a5b63ae83c161ccc",
       "company": "Continental Sports Inc",
       "keys": [
@@ -282,32 +329,32 @@
       "evidence": [
         {
           "channel": "website_form",
-          "score": 100,
-          "verified": true,
+          "score": 0,
+          "verified": false,
           "reasons": [
-            "official_business_route"
+            "unverified_external_evidence_rejected"
           ],
-          "evidenceUrl": "https://csisports.ca/",
+          "evidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
           "checkedAt": ""
         },
         {
           "channel": "website_form",
-          "score": 100,
-          "verified": true,
+          "score": 0,
+          "verified": false,
           "reasons": [
-            "official_business_route"
+            "unverified_external_evidence_rejected"
           ],
-          "evidenceUrl": "https://csisports.ca/",
+          "evidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
           "checkedAt": ""
         },
         {
           "channel": "website_form",
-          "score": 100,
-          "verified": true,
+          "score": 0,
+          "verified": false,
           "reasons": [
-            "official_business_route"
+            "unverified_external_evidence_rejected"
           ],
-          "evidenceUrl": "https://csisports.ca/",
+          "evidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
           "checkedAt": ""
         }
       ],
@@ -324,6 +371,55 @@
       "domains": [
         "shop.canadawidesports.com",
         "canadawidesports.com"
+      ],
+      "channels": [
+        "website_form"
+      ],
+      "evidence": [
+        {
+          "channel": "website_form",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
+          "checkedAt": ""
+        },
+        {
+          "channel": "website_form",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
+          "checkedAt": ""
+        },
+        {
+          "channel": "website_form",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
+          "checkedAt": ""
+        }
+      ],
+      "history": []
+    },
+    {
+      "companyId": "company_243be0804ec988cf",
+      "company": "Hicks Inc",
+      "keys": [
+        "hicksinc",
+        "hicksinccom",
+        "hickscom"
+      ],
+      "domains": [
+        "hicksinc.com",
+        "hicks.com"
       ],
       "channels": [
         "website_form"
@@ -413,16 +509,6 @@
         },
         {
           "channel": "instagram",
-          "score": 100,
-          "verified": true,
-          "reasons": [
-            "official_business_route"
-          ],
-          "evidenceUrl": "https://www.nwogco.com/",
-          "checkedAt": "2026-08-12T11:51:07.876Z"
-        },
-        {
-          "channel": "website_form",
           "score": 100,
           "verified": true,
           "reasons": [
@@ -882,6 +968,53 @@
       ]
     },
     {
+      "companyId": "company_279b173eda02aee1",
+      "company": "Classic Products International",
+      "keys": [
+        "classicproductsinternational",
+        "classicproductsinccom"
+      ],
+      "domains": [
+        "classicproductsinc.com"
+      ],
+      "channels": [
+        "website_form"
+      ],
+      "evidence": [
+        {
+          "channel": "website_form",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
+          "checkedAt": ""
+        },
+        {
+          "channel": "website_form",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
+          "checkedAt": ""
+        },
+        {
+          "channel": "website_form",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
+          "checkedAt": ""
+        }
+      ],
+      "history": []
+    },
+    {
       "companyId": "company_e73b34d6e20dd84b",
       "company": "Outdoor Equipment Distributors",
       "keys": [
@@ -1096,6 +1229,53 @@
       ]
     },
     {
+      "companyId": "company_9cc40e3118f0bb34",
+      "company": "CWR Wholesale Distribution",
+      "keys": [
+        "cwrwholesaledistribution",
+        "cwrdistributioncom"
+      ],
+      "domains": [
+        "cwrdistribution.com"
+      ],
+      "channels": [
+        "website_form"
+      ],
+      "evidence": [
+        {
+          "channel": "website_form",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
+          "checkedAt": ""
+        },
+        {
+          "channel": "website_form",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
+          "checkedAt": ""
+        },
+        {
+          "channel": "website_form",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
+          "checkedAt": ""
+        }
+      ],
+      "history": []
+    },
+    {
       "companyId": "company_3730ead171dee679",
       "company": "BBQ Fans",
       "keys": [
@@ -1189,6 +1369,100 @@
           "evidence": "official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_missing;contact_path_strategy_v2"
         }
       ]
+    },
+    {
+      "companyId": "company_2e5828818a6d5116",
+      "company": "Terra Outdoor Gear Distribution",
+      "keys": [
+        "terraoutdoorgeardistribution",
+        "terraoutdoorgearcom"
+      ],
+      "domains": [
+        "terraoutdoorgear.com"
+      ],
+      "channels": [
+        "website_form"
+      ],
+      "evidence": [
+        {
+          "channel": "website_form",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
+          "checkedAt": ""
+        },
+        {
+          "channel": "website_form",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
+          "checkedAt": ""
+        },
+        {
+          "channel": "website_form",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
+          "checkedAt": ""
+        }
+      ],
+      "history": []
+    },
+    {
+      "companyId": "company_b08f112516d4777f",
+      "company": "JAMSCA Solutions",
+      "keys": [
+        "jamscasolutions",
+        "jamscacom"
+      ],
+      "domains": [
+        "jamsca.com"
+      ],
+      "channels": [
+        "website_form"
+      ],
+      "evidence": [
+        {
+          "channel": "website_form",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
+          "checkedAt": ""
+        },
+        {
+          "channel": "website_form",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
+          "checkedAt": ""
+        },
+        {
+          "channel": "website_form",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
+          "checkedAt": ""
+        }
+      ],
+      "history": []
     },
     {
       "companyId": "company_1c7da5005c6bfbaf",
@@ -1749,6 +2023,53 @@
       ],
       "domains": [
         "cng-distribution.com"
+      ],
+      "channels": [
+        "website_form"
+      ],
+      "evidence": [
+        {
+          "channel": "website_form",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
+          "checkedAt": ""
+        },
+        {
+          "channel": "website_form",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
+          "checkedAt": ""
+        },
+        {
+          "channel": "website_form",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
+          "checkedAt": ""
+        }
+      ],
+      "history": []
+    },
+    {
+      "companyId": "company_02a2d96327e2b38c",
+      "company": "Northern Exposure Sporting Group",
+      "keys": [
+        "northernexposuresportinggroup",
+        "northernsportingcom"
+      ],
+      "domains": [
+        "northernsporting.com"
       ],
       "channels": [
         "website_form"
@@ -2394,6 +2715,53 @@
           "evidence": "official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_missing;contact_path_strategy_v2"
         }
       ]
+    },
+    {
+      "companyId": "company_6f07636520905ff4",
+      "company": "GMD Wholesale",
+      "keys": [
+        "gmdwholesale",
+        "gmdwholesaleca"
+      ],
+      "domains": [
+        "gmdwholesale.ca"
+      ],
+      "channels": [
+        "website_form"
+      ],
+      "evidence": [
+        {
+          "channel": "website_form",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
+          "checkedAt": ""
+        },
+        {
+          "channel": "website_form",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
+          "checkedAt": ""
+        },
+        {
+          "channel": "website_form",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
+          "checkedAt": ""
+        }
+      ],
+      "history": []
     },
     {
       "companyId": "company_1c916c28ed082463",
@@ -4860,7 +5228,7 @@
           "reasons": [
             "first_party_evidence"
           ],
-          "evidenceUrl": "https://komsa.com/en/contact",
+          "evidenceUrl": "https://komsa.com/en/contact/",
           "checkedAt": ""
         },
         {
@@ -4870,7 +5238,7 @@
           "reasons": [
             "unverified_external_evidence_rejected"
           ],
-          "evidenceUrl": "https://komsa.com/en/contact",
+          "evidenceUrl": "https://komsa.com/en/contact/",
           "checkedAt": ""
         }
       ],
@@ -4991,7 +5359,7 @@
           "reasons": [
             "official_business_route"
           ],
-          "evidenceUrl": "https://support.aqipa.com/en-US/new-ticket",
+          "evidenceUrl": "https://support.aqipa.com/en-US/kb/articles/anfrage-partner-werden",
           "checkedAt": ""
         },
         {
@@ -5001,7 +5369,7 @@
           "reasons": [
             "unverified_external_evidence_rejected"
           ],
-          "evidenceUrl": "https://support.aqipa.com/en-US/new-ticket",
+          "evidenceUrl": "https://support.aqipa.com/en-US/kb/articles/anfrage-partner-werden",
           "checkedAt": ""
         }
       ],
@@ -5174,7 +5542,7 @@
           "reasons": [
             "official_business_route"
           ],
-          "evidenceUrl": "https://help.cabelas.com/company-information-ff566349/how-can-i-sell-my-product-through-cabelas-cf904a21",
+          "evidenceUrl": "https://www.cabelas.com/",
           "checkedAt": ""
         },
         {
@@ -5544,7 +5912,7 @@
           "reasons": [
             "official_business_route"
           ],
-          "evidenceUrl": "https://www.gooutdoors.co.uk/pages/contact",
+          "evidenceUrl": "https://www.gooutdoors.co.uk/",
           "checkedAt": ""
         }
       ],
@@ -5992,7 +6360,7 @@
           "reasons": [
             "official_business_route"
           ],
-          "evidenceUrl": "https://www.sail.ca/en/contact-us",
+          "evidenceUrl": "https://www.sail.ca/",
           "checkedAt": ""
         }
       ],
@@ -6166,7 +6534,7 @@
             "official_business_route"
           ],
           "evidenceUrl": "https://www.cotswoldoutdoor.com/",
-          "checkedAt": "2026-08-12T11:55:50.743Z"
+          "checkedAt": "2026-08-12T11:59:10.755Z"
         },
         {
           "channel": "facebook",
@@ -6176,7 +6544,7 @@
             "official_business_route"
           ],
           "evidenceUrl": "https://www.cotswoldoutdoor.com/",
-          "checkedAt": "2026-08-12T11:55:50.743Z"
+          "checkedAt": "2026-08-12T11:59:10.755Z"
         },
         {
           "channel": "website_form",
@@ -6362,7 +6730,7 @@
             "official_business_route"
           ],
           "evidenceUrl": "https://www.campsaver.com/",
-          "checkedAt": "2026-08-12T11:55:52.896Z"
+          "checkedAt": "2026-08-12T11:59:11.159Z"
         },
         {
           "channel": "website_form",
@@ -6524,7 +6892,7 @@
           "reasons": [
             "official_business_route"
           ],
-          "evidenceUrl": "https://www.summitint.co/",
+          "evidenceUrl": "https://www.summitint.co/contact/",
           "checkedAt": ""
         }
       ],
@@ -6645,12 +7013,12 @@
       "evidence": [
         {
           "channel": "website_form",
-          "score": 0,
-          "verified": false,
+          "score": 100,
+          "verified": true,
           "reasons": [
-            "unverified_external_evidence_rejected"
+            "official_business_route"
           ],
-          "evidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
+          "evidenceUrl": "https://outdooradventurestore.ie/pages/about-us",
           "checkedAt": ""
         },
         {
@@ -6691,12 +7059,12 @@
       "evidence": [
         {
           "channel": "website_form",
-          "score": 0,
-          "verified": false,
+          "score": 100,
+          "verified": true,
           "reasons": [
-            "unverified_external_evidence_rejected"
+            "official_business_route"
           ],
-          "evidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
+          "evidenceUrl": "https://www.theoutdoorshop.ie/pages/contact-us",
           "checkedAt": ""
         },
         {
@@ -6737,12 +7105,12 @@
       "evidence": [
         {
           "channel": "website_form",
-          "score": 0,
-          "verified": false,
+          "score": 100,
+          "verified": true,
           "reasons": [
-            "unverified_external_evidence_rejected"
+            "official_business_route"
           ],
-          "evidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
+          "evidenceUrl": "https://expeditionstore.se/pages/contact-us",
           "checkedAt": ""
         },
         {
@@ -7198,12 +7566,12 @@
       "evidence": [
         {
           "channel": "website_form",
-          "score": 0,
-          "verified": false,
+          "score": 100,
+          "verified": true,
           "reasons": [
-            "unverified_external_evidence_rejected"
+            "official_business_route"
           ],
-          "evidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
+          "evidenceUrl": "https://www.trekitt.co.uk/pages/contact/",
           "checkedAt": ""
         },
         {
@@ -7279,12 +7647,12 @@
       "evidence": [
         {
           "channel": "website_form",
-          "score": 0,
-          "verified": false,
+          "score": 100,
+          "verified": true,
           "reasons": [
-            "unverified_external_evidence_rejected"
+            "official_business_route"
           ],
-          "evidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
+          "evidenceUrl": "https://ultralightoutdoorgear.co.uk/",
           "checkedAt": ""
         }
       ],
@@ -7368,12 +7736,12 @@
       "evidence": [
         {
           "channel": "website_form",
-          "score": 0,
-          "verified": false,
+          "score": 100,
+          "verified": true,
           "reasons": [
-            "unverified_external_evidence_rejected"
+            "official_business_route"
           ],
-          "evidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
+          "evidenceUrl": "https://www.outnorth.com/int/faq/contact",
           "checkedAt": ""
         },
         {
@@ -24724,16 +25092,6 @@
         "reason": "highest_priority_verified_channel"
       },
       {
-        "companyId": "company_a5b63ae83c161ccc",
-        "company": "Continental Sports Inc",
-        "action": "first_touch",
-        "channel": "website_form",
-        "evidenceScore": 100,
-        "evidenceUrl": "https://csisports.ca/",
-        "alternatives": [],
-        "reason": "highest_priority_verified_channel"
-      },
-      {
         "companyId": "company_ca049a336c94b7d9",
         "company": "Left Point Distribution",
         "action": "first_touch",
@@ -24760,6 +25118,16 @@
         "channel": "website_form",
         "evidenceScore": 100,
         "evidenceUrl": "https://www.obelink.nl/obelink-partnerprogramma",
+        "alternatives": [],
+        "reason": "highest_priority_verified_channel"
+      },
+      {
+        "companyId": "company_d43133da7d17b52b",
+        "company": "Outdoor Nature",
+        "action": "first_touch",
+        "channel": "website_form",
+        "evidenceScore": 100,
+        "evidenceUrl": "https://www.outdoornature.com.au/become-a-supplier/",
         "alternatives": [],
         "reason": "highest_priority_verified_channel"
       },
@@ -24894,13 +25262,13 @@
     ]
   },
   "ownerSummary": {
-    "generatedAt": "2026-08-12T11:55:56.242Z",
+    "generatedAt": "2026-08-12T11:59:24.438Z",
     "phase": "autonomous_sales_operating_system_v1",
     "kpis": {
-      "companies": 386,
+      "companies": 394,
       "permanentlySuppressed": 315,
       "plannedActions": 7,
-      "verifiedEvidenceRoutes": 124
+      "verifiedEvidenceRoutes": 126
     },
     "decisions": [
       {
@@ -24920,16 +25288,6 @@
         "channel": "website_form",
         "evidenceScore": 100,
         "evidenceUrl": "https://www.esprinet.com/en/become-a-supplier/",
-        "alternatives": [],
-        "reason": "highest_priority_verified_channel"
-      },
-      {
-        "companyId": "company_a5b63ae83c161ccc",
-        "company": "Continental Sports Inc",
-        "action": "first_touch",
-        "channel": "website_form",
-        "evidenceScore": 100,
-        "evidenceUrl": "https://csisports.ca/",
         "alternatives": [],
         "reason": "highest_priority_verified_channel"
       },
@@ -24960,6 +25318,16 @@
         "channel": "website_form",
         "evidenceScore": 100,
         "evidenceUrl": "https://www.obelink.nl/obelink-partnerprogramma",
+        "alternatives": [],
+        "reason": "highest_priority_verified_channel"
+      },
+      {
+        "companyId": "company_d43133da7d17b52b",
+        "company": "Outdoor Nature",
+        "action": "first_touch",
+        "channel": "website_form",
+        "evidenceScore": 100,
+        "evidenceUrl": "https://www.outdoornature.com.au/become-a-supplier/",
         "alternatives": [],
         "reason": "highest_priority_verified_channel"
       },
