@@ -400,7 +400,7 @@ test('Google discovery preserves LinkedIn information while creating executable 
 });
 
 test('Google discovery reroutes known broken Instagram links to alternate channels', () => {
-  const leads = buildLeads(60);
+  const leads = buildLeads(100);
   assert.equal(leads.some(item => item.id === 'google-customer-sail-outdoors-instagram'), false);
   const sailContact = leads.find(item => item.id === 'google-customer-sail-outdoors-website-contact');
   assert.ok(sailContact);
@@ -449,7 +449,7 @@ test('Google discovery autonomously refills verified agency and key-account cand
 });
 
 test('Google discovery loads auditable external supplier routes without treating homepages as contact evidence', () => {
-  const leads = buildLeads(500);
+  const leads = buildLeads(600);
   const outdoorNature = leads.find(item => item.id === 'google-customer-outdoor-nature-website-contact');
   const leftPoint = leads.find(item => item.id === 'google-customer-left-point-distribution-website-contact');
   const flameOutdoors = leads.find(item => item.id === 'google-customer-flameoutdoors-website-contact');
@@ -484,7 +484,7 @@ test('daily queue preserves official email provenance needed by the Alibaba exec
 });
 
 test('Google discovery promotes a first-party general-business email above a failed website or social route', () => {
-  const leads = buildLeads(500);
+  const leads = buildLeads(600);
   const tiso = leads.find(item => item.company === 'Tiso' && item.platform === 'website_form');
 
   assert.ok(tiso);
@@ -496,7 +496,7 @@ test('Google discovery promotes a first-party general-business email above a fai
 });
 
 test('Google discovery preserves newly verified independent-retailer routing emails and evidence', () => {
-  const leads = buildLeads(500);
+  const leads = buildLeads(600);
   const expected = new Map([
     ['Bentgate Mountaineering', ['bentgate@bentgate.com', 'https://www.bentgate.com/service/']],
     ['Valhalla Pure Outfitters', ['vancouver@vpo.ca', 'https://vpo.ca/stores/vpo-vancouver']],
@@ -657,7 +657,7 @@ test('homepage-only directory prospects require contact-path verification before
 });
 
 test('Google discovery gives autonomous refill customers social channels before website contact', () => {
-  const leads = buildLeads(120);
+  const leads = buildLeads(150);
   for (const company of ['Liberty Mountain', 'Sportsman\'s Warehouse', 'Camping World']) {
     const companyLeads = leads.filter(item => item.company === company);
     assert.ok(companyLeads.some(item => item.platform === 'instagram'));
@@ -866,7 +866,7 @@ test('potential pool capacity counts distinct companies instead of channel rows'
 
 test('daily discovery emits the full verified channel pool and reports executable capacity', () => {
   const packageJson = JSON.parse(fs.readFileSync(path.join(__dirname, '..', 'outreach-dashboard', 'package.json'), 'utf8'));
-  assert.match(packageJson.scripts['discover:daily'], /--limit=500/);
+  assert.match(packageJson.scripts['discover:daily'], /--limit=600/);
   assert.ok(dailyRunnerSource.includes('function channelReadinessSummary'));
   assert.ok(dailyRunnerSource.includes('executableReserveTarget: 130'));
   assert.ok(dailyRunnerSource.includes('executableReserveNeeded: readiness.reserveNeededFor100'));
@@ -1200,7 +1200,7 @@ test('website discovery probes common same-origin contact paths without product-
 });
 
 test('Google discovery uses a live Bever contact details URL instead of the retired 404 page', () => {
-  const leads = buildLeads(240);
+  const leads = buildLeads(250);
   const beverContact = leads.find(item => item.id === 'google-customer-bever-website-contact');
   assert.ok(beverContact);
   assert.equal(beverContact.contactUrl, 'https://www.bever.nl/klantenservice/contactgegevens.html');
@@ -1541,7 +1541,7 @@ test('Google discovery exposes normalized source metadata while retaining the le
 });
 
 test('Google discovery includes first-party-backed North America distributor reserve candidates', () => {
-  const leads = buildLeads(500);
+  const leads = buildLeads(600);
   const byCompany = new Map(leads.map((lead) => [lead.company, lead]));
   const expected = [
     ['Continental Sports Inc', 'Canada', 'info@csisports.net'],
@@ -1594,6 +1594,40 @@ test('Google discovery includes first-party-backed North America distributor res
     ['OnwardUP', 'Canada', ''],
     ['OUTTECH', 'United States', 'sales@outtech-online.com'],
     ['Covey Sales & Marketing', 'United States', ''],
+    ['4 Point Sales', 'United States', ''],
+    ['Rep First', 'United States', 'orders@repfirst.com'],
+    ['Venture Out, Inc.', 'United States', 'connect@ventureoutinc.com'],
+    ['Adventure Marketing Group', 'United States', ''],
+    ['Sharp End Sales', 'United States', ''],
+    ['Ground Up Sales', 'United States', ''],
+    ['Adventure Labworks', 'United States', ''],
+    ['End2End Outdoor', 'United States', ''],
+    ['Ascension Sales Group', 'United States', ''],
+    ['The Alpine Cowboy', 'United States', ''],
+    ['KNS Reps', 'United States', 'service@knsreps.com'],
+    ['Midwest Outdoor Sales', 'United States', ''],
+    ['Parallel 45 Sales Group', 'United States', ''],
+    ['Powers Pedersen Sales Group', 'United States', ''],
+    ['Pacific Crest Trading', 'United States', ''],
+    ['Sierra Outdoor Collective', 'United States', ''],
+    ['Green River Sales Group', 'United States', ''],
+    ['Cordillera Sales', 'United States', ''],
+    ['Granite Marketing', 'United States', ''],
+    ['Hi Altitude Sales & Consulting', 'United States', ''],
+    ['Summit Sales NW', 'United States', ''],
+    ['West Bay Trading Company', 'United States', 'office@westbay.co'],
+    ['North Branch Traders', 'United States', 'info@northbranchtraders.com'],
+    ['Babbling Brook Sales', 'United States', ''],
+    ['Sanitas Sales Group', 'United States', ''],
+    ['Mountain Source', 'United States', ''],
+    ['Black Dog Sales Group', 'United States', 'info@blackdogsalesgroup.com'],
+    ['Freestone Sales Group', 'United States', ''],
+    ['Pinnacle Outdoor Group', 'United States', ''],
+    ['Roam Sales Agency', 'United States', ''],
+    ['Heron Outdoors', 'United States', ''],
+    ['Elevated Outdoor Sales', 'United States', ''],
+    ['Mindful Outdoor Sales', 'United States', ''],
+    ['Stoner Andrews', 'United States', 'office@stonerandrews.com'],
   ];
 
   for (const [company, country, email] of expected) {
@@ -1606,6 +1640,13 @@ test('Google discovery includes first-party-backed North America distributor res
       assert.equal(lead.publicEmail, email);
       assert.match(lead.emailEvidenceUrl, /^https:\/\//);
     }
+  }
+
+  for (const company of ['Adventure Labworks', 'Summit Sales NW', 'Stoner Andrews']) {
+    const lead = byCompany.get(company);
+    assert.equal(lead.customerType, 'sales_agency');
+    assert.match(lead.sourceEvidenceUrl, /^https:\/\//);
+    assert.doesNotMatch(lead.sourceEvidenceUrl, /google\.com|outdoorretailer\.com/);
   }
 });
 

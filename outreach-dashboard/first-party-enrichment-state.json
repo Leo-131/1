@@ -1,7 +1,7 @@
 {
-  "updatedAt": "2026-08-12T12:21:08.121Z",
-  "cursor": 202,
-  "companyCount": 277,
+  "updatedAt": "2026-08-12T12:29:19.634Z",
+  "cursor": 227,
+  "companyCount": 311,
   "verifications": {
     "facewest": {
       "firstPartyChannelVerification": {
@@ -2030,7 +2030,7 @@
     "further faster": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-12T12:18:42.380Z",
+        "verifiedAt": "2026-08-12T12:29:13.174Z",
         "evidenceUrl": "https://www.furtherfaster.co.nz/",
         "httpStatus": 200,
         "signals": [
@@ -2049,7 +2049,7 @@
     "avidmax outfitters": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-12T12:20:59.144Z",
+        "verifiedAt": "2026-08-12T12:29:15.698Z",
         "evidenceUrl": "https://www.avidmax.com/contact-us/",
         "httpStatus": 200,
         "signals": [
@@ -2067,7 +2067,7 @@
     "gear west": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-12T12:21:00.005Z",
+        "verifiedAt": "2026-08-12T12:29:15.186Z",
         "evidenceUrl": "https://www.gearwest.com/",
         "httpStatus": 200,
         "signals": [
@@ -2085,7 +2085,7 @@
     "brave hardy": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-12T12:21:00.017Z",
+        "verifiedAt": "2026-08-12T12:29:16.265Z",
         "evidenceUrl": "https://www.bravehardy.com/pages/contact",
         "httpStatus": 200,
         "signals": [
@@ -2109,7 +2109,7 @@
     "public lands": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-12T12:21:02.083Z",
+        "verifiedAt": "2026-08-12T12:29:17.462Z",
         "evidenceUrl": "https://www.publiclands.com/",
         "httpStatus": 200,
         "signals": [
@@ -2126,7 +2126,7 @@
     "campman": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-12T12:21:01.686Z",
+        "verifiedAt": "2026-08-12T12:29:16.492Z",
         "evidenceUrl": "https://www.campman.com/",
         "httpStatus": 200,
         "signals": [
@@ -2147,7 +2147,7 @@
     "the mountaineer": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-12T12:21:01.657Z",
+        "verifiedAt": "2026-08-12T12:29:16.821Z",
         "evidenceUrl": "https://mountaineer.com/privacy-policy/",
         "httpStatus": 200,
         "signals": [
@@ -2165,7 +2165,7 @@
     "sierra": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-12T12:21:01.989Z",
+        "verifiedAt": "2026-08-12T12:29:18.475Z",
         "evidenceUrl": "https://www.sierra.com/",
         "httpStatus": 200,
         "signals": [
@@ -2184,7 +2184,7 @@
     "outdoorplay": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-12T12:21:02.497Z",
+        "verifiedAt": "2026-08-12T12:29:17.810Z",
         "evidenceUrl": "https://www.outdoorplay.com/",
         "httpStatus": 200,
         "signals": [
@@ -2203,7 +2203,7 @@
     "campmor": {
       "firstPartyChannelVerification": {
         "status": "unreachable",
-        "verifiedAt": "2026-08-12T12:21:02.280Z",
+        "verifiedAt": "2026-08-12T12:29:17.641Z",
         "evidenceUrl": "https://www.campmor.com/",
         "httpStatus": 403,
         "signals": [],
@@ -2221,7 +2221,7 @@
     "ramsey outdoor": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-12T12:21:03.386Z",
+        "verifiedAt": "2026-08-12T12:29:19.209Z",
         "evidenceUrl": "https://ramseyoutdoor.com/",
         "httpStatus": 200,
         "signals": [
@@ -2242,7 +2242,7 @@
     "quest outdoors": {
       "firstPartyChannelVerification": {
         "status": "unreachable",
-        "verifiedAt": "2026-08-12T12:21:02.977Z",
+        "verifiedAt": "2026-08-12T12:29:19.634Z",
         "evidenceUrl": "https://questoutdoors.com/",
         "httpStatus": 404,
         "signals": [],
@@ -2883,7 +2883,7 @@
     "newquay camping leisure": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-12T12:18:43.287Z",
+        "verifiedAt": "2026-08-12T12:29:13.581Z",
         "evidenceUrl": "https://newquaycampingshop.com/pages/contact-us",
         "httpStatus": 200,
         "signals": [
@@ -2902,7 +2902,7 @@
     "canada outdoors": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-12T12:18:42.557Z",
+        "verifiedAt": "2026-08-12T12:29:13.022Z",
         "evidenceUrl": "https://www.canadaoutdoors.com/pages/customer-service",
         "httpStatus": 200,
         "signals": [
@@ -2939,7 +2939,7 @@
     "outdoor shop nz": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-12T12:18:42.626Z",
+        "verifiedAt": "2026-08-12T12:29:13.182Z",
         "evidenceUrl": "https://outdoorshop.nz/pages/contact-us",
         "httpStatus": 200,
         "signals": [
@@ -3871,7 +3871,7 @@
     "wm camping": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-12T12:18:44.454Z",
+        "verifiedAt": "2026-08-12T12:29:14.638Z",
         "evidenceUrl": "https://wmcamping.co.uk/pages/contact-us",
         "httpStatus": 200,
         "signals": [
@@ -3890,7 +3890,7 @@
     "camps store diest": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-12T12:20:58.024Z",
+        "verifiedAt": "2026-08-12T12:29:13.978Z",
         "evidenceUrl": "https://www.campsstore.be/contact",
         "httpStatus": 200,
         "signals": [
@@ -3907,7 +3907,7 @@
     "mk outdoor": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-12T12:20:59.070Z",
+        "verifiedAt": "2026-08-12T12:29:14.344Z",
         "evidenceUrl": "https://www.mkoutdoor.de/Impressum/",
         "httpStatus": 200,
         "signals": [
@@ -3924,7 +3924,7 @@
     "kampersport": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-12T12:20:58.958Z",
+        "verifiedAt": "2026-08-12T12:29:14.834Z",
         "evidenceUrl": "https://kampersport.com/nous-contacter/",
         "httpStatus": 200,
         "signals": [
@@ -4289,7 +4289,7 @@
     "blue ridge knives": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-12T12:18:41.867Z",
+        "verifiedAt": "2026-08-12T12:29:12.165Z",
         "evidenceUrl": "https://www.blueridgeknives.com/wholesale-camping-tools/",
         "httpStatus": 200,
         "signals": [
@@ -4308,7 +4308,7 @@
     "zia works distribution": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-12T12:18:41.262Z",
+        "verifiedAt": "2026-08-12T12:29:11.582Z",
         "evidenceUrl": "https://www.nwziaworks.com/",
         "httpStatus": 200,
         "signals": [
@@ -4327,7 +4327,7 @@
     "urban outdoor sales": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-12T12:18:40.369Z",
+        "verifiedAt": "2026-08-12T12:29:11.504Z",
         "evidenceUrl": "https://www.urbanoutdoorsales.net/",
         "httpStatus": 200,
         "signals": [
@@ -4346,7 +4346,7 @@
     "outdoor market alliance": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-12T12:18:40.172Z",
+        "verifiedAt": "2026-08-12T12:29:11.517Z",
         "evidenceUrl": "https://www.outdoormarketalliance.org/",
         "httpStatus": 200,
         "signals": [
@@ -4366,7 +4366,7 @@
     "yates outdoor sales": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-12T12:21:00.103Z",
+        "verifiedAt": "2026-08-12T12:29:15.248Z",
         "evidenceUrl": "https://www.yatesoutdoor.com/",
         "httpStatus": 200,
         "signals": [],
@@ -4381,7 +4381,7 @@
     "round the wheel collective": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-12T12:20:59.929Z",
+        "verifiedAt": "2026-08-12T12:29:15.825Z",
         "evidenceUrl": "https://www.roundthewheelcollective.com/",
         "httpStatus": 200,
         "signals": [],
