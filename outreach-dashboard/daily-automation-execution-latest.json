@@ -171,130 +171,11 @@
       "reason": "official_public_business_email_verified"
     },
     {
-      "id": "google-customer-left-point-distribution-website-contact",
-      "company": "Left Point Distribution",
-      "action": "email_priority",
-      "platform": "website_form",
-      "reason": "official_website_contact_channel"
-    },
-    {
       "id": "google-customer-round-the-wheel-collective-website-contact",
       "company": "Round The Wheel Collective",
       "action": "email_priority",
       "platform": "website_form",
       "reason": "official_website_contact_channel"
-    },
-    {
-      "id": "google-customer-classic-products-international-website-contact",
-      "company": "Classic Products International",
-      "action": "email_priority",
-      "platform": "website_form",
-      "reason": "official_website_contact_channel"
-    },
-    {
-      "id": "google-customer-outdoor-equipment-distributors-website-contact",
-      "company": "Outdoor Equipment Distributors",
-      "action": "email_priority",
-      "platform": "website_form",
-      "reason": "official_website_contact_channel"
-    },
-    {
-      "id": "google-customer-next-adventure-website-contact",
-      "company": "Next Adventure",
-      "action": "develop",
-      "platform": "website_form",
-      "reason": "official_website_contact_channel"
-    },
-    {
-      "id": "google-customer-bbq-fans-website-contact",
-      "company": "BBQ Fans",
-      "action": "email_priority",
-      "platform": "website_form",
-      "reason": "official_website_contact_channel"
-    },
-    {
-      "id": "google-customer-jamsca-solutions-website-contact",
-      "company": "JAMSCA Solutions",
-      "action": "email_priority",
-      "platform": "website_form",
-      "reason": "official_website_contact_channel"
-    },
-    {
-      "id": "google-customer-tractor-supply-company-website-contact",
-      "company": "Tractor Supply Company",
-      "action": "email_priority",
-      "platform": "website_form",
-      "reason": "official_website_contact_channel"
-    },
-    {
-      "id": "google-customer-fjellsport-website-contact",
-      "company": "Fjellsport",
-      "action": "email_priority",
-      "platform": "website_form",
-      "reason": "official_website_contact_channel"
-    },
-    {
-      "id": "google-customer-varuste-website-contact",
-      "company": "Varuste",
-      "action": "email_priority",
-      "platform": "website_form",
-      "reason": "official_website_contact_channel"
-    },
-    {
-      "id": "google-customer-bergfreunde-website-contact",
-      "company": "Bergfreunde",
-      "action": "verify_target",
-      "platform": "website_form",
-      "reason": "homepage_only_contact_path_requires_verification"
-    },
-    {
-      "id": "google-customer-au-vieux-campeur-website-contact",
-      "company": "Au Vieux Campeur",
-      "action": "verify_target",
-      "platform": "website_form",
-      "reason": "homepage_only_contact_path_requires_verification"
-    },
-    {
-      "id": "google-customer-ekosport-website-contact",
-      "company": "Ekosport",
-      "action": "verify_target",
-      "platform": "website_form",
-      "reason": "homepage_only_contact_path_requires_verification"
-    },
-    {
-      "id": "google-customer-campz-website-contact",
-      "company": "Campz",
-      "action": "verify_target",
-      "platform": "website_form",
-      "reason": "homepage_only_contact_path_requires_verification"
-    },
-    {
-      "id": "google-customer-intersport-norway-facebook",
-      "company": "Intersport Norway",
-      "action": "develop",
-      "platform": "facebook",
-      "reason": "concrete_google_discovered_major_customer_facebook"
-    },
-    {
-      "id": "google-customer-campz-facebook",
-      "company": "Campz",
-      "action": "develop",
-      "platform": "facebook",
-      "reason": "social_profile_not_first_party_verified"
-    },
-    {
-      "id": "google-customer-bergfreunde-instagram",
-      "company": "Bergfreunde",
-      "action": "develop",
-      "platform": "instagram",
-      "reason": "social_profile_not_first_party_verified"
-    },
-    {
-      "id": "google-customer-campz-instagram",
-      "company": "Campz",
-      "action": "develop",
-      "platform": "instagram",
-      "reason": "social_profile_not_first_party_verified"
     },
     {
       "id": "google-customer-summit-sales-nw-website-contact",
@@ -416,6 +297,27 @@
       "reason": "homepage_only_contact_path_requires_verification"
     },
     {
+      "id": "google-customer-classic-products-international-website-contact",
+      "company": "Classic Products International",
+      "action": "email_priority",
+      "platform": "website_form",
+      "reason": "official_website_contact_channel"
+    },
+    {
+      "id": "google-customer-outdoor-equipment-distributors-website-contact",
+      "company": "Outdoor Equipment Distributors",
+      "action": "email_priority",
+      "platform": "website_form",
+      "reason": "official_website_contact_channel"
+    },
+    {
+      "id": "google-customer-next-adventure-website-contact",
+      "company": "Next Adventure",
+      "action": "develop",
+      "platform": "website_form",
+      "reason": "official_website_contact_channel"
+    },
+    {
       "id": "google-customer-ascension-sales-group-website-contact",
       "company": "Ascension Sales Group",
       "action": "verify_target",
@@ -491,6 +393,13 @@
       "action": "verify_target",
       "platform": "website_form",
       "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
+      "id": "google-customer-bbq-fans-website-contact",
+      "company": "BBQ Fans",
+      "action": "email_priority",
+      "platform": "website_form",
+      "reason": "official_website_contact_channel"
     },
     {
       "id": "google-customer-brandywine-river-reps-website-contact",
@@ -582,6 +491,20 @@
       "action": "verify_target",
       "platform": "website_form",
       "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
+      "id": "google-customer-jamsca-solutions-website-contact",
+      "company": "JAMSCA Solutions",
+      "action": "email_priority",
+      "platform": "website_form",
+      "reason": "official_website_contact_channel"
+    },
+    {
+      "id": "google-customer-tractor-supply-company-website-contact",
+      "company": "Tractor Supply Company",
+      "action": "email_priority",
+      "platform": "website_form",
+      "reason": "official_website_contact_channel"
     },
     {
       "id": "google-customer-4-point-sales-website-contact",
@@ -701,6 +624,111 @@
       "action": "verify_target",
       "platform": "website_form",
       "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
+      "id": "google-customer-1889-sales-website-contact",
+      "company": "1889 Sales",
+      "action": "verify_target",
+      "platform": "website_form",
+      "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
+      "id": "google-customer-atmosphere-website-contact",
+      "company": "Atmosphere",
+      "action": "verify_target",
+      "platform": "website_form",
+      "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
+      "id": "google-customer-babbling-brook-sales-website-contact",
+      "company": "Babbling Brook Sales",
+      "action": "verify_target",
+      "platform": "website_form",
+      "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
+      "id": "google-customer-c-g-distribution-website-contact",
+      "company": "C&G Distribution",
+      "action": "verify_target",
+      "platform": "website_form",
+      "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
+      "id": "google-customer-eastern-mountain-sports-website-contact",
+      "company": "Eastern Mountain Sports",
+      "action": "verify_target",
+      "platform": "website_form",
+      "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
+      "id": "google-customer-heron-outdoors-website-contact",
+      "company": "Heron Outdoors",
+      "action": "verify_target",
+      "platform": "website_form",
+      "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
+      "id": "google-customer-high-gear-sales-website-contact",
+      "company": "High Gear Sales",
+      "action": "verify_target",
+      "platform": "website_form",
+      "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
+      "id": "google-customer-moosejaw-website-contact",
+      "company": "Moosejaw",
+      "action": "verify_target",
+      "platform": "website_form",
+      "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
+      "id": "google-customer-nordcore-group-website-contact",
+      "company": "NordCore Group",
+      "action": "verify_target",
+      "platform": "website_form",
+      "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
+      "id": "google-customer-northern-exposure-sporting-group-website-contact",
+      "company": "Northern Exposure Sporting Group",
+      "action": "verify_target",
+      "platform": "website_form",
+      "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
+      "id": "google-customer-professional-marketing-inc-website-contact",
+      "company": "Professional Marketing Inc",
+      "action": "verify_target",
+      "platform": "website_form",
+      "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
+      "id": "google-customer-tin-shack-ltd-website-contact",
+      "company": "Tin Shack Ltd",
+      "action": "verify_target",
+      "platform": "website_form",
+      "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
+      "id": "google-customer-360-adventure-collective-website-contact",
+      "company": "360 Adventure Collective",
+      "action": "verify_target",
+      "platform": "website_form",
+      "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
+      "id": "google-customer-intersport-norway-facebook",
+      "company": "Intersport Norway",
+      "action": "develop",
+      "platform": "facebook",
+      "reason": "concrete_google_discovered_major_customer_facebook"
+    },
+    {
+      "id": "google-customer-left-point-distribution-website-contact",
+      "company": "Left Point Distribution",
+      "action": "email_priority",
+      "platform": "website_form",
+      "reason": "official_website_contact_channel"
     },
     {
       "id": "google-customer-summit-sales-nw-website-contact",
@@ -1191,8 +1219,8 @@
   "queueGoalStatus": {
     "target": 100,
     "potentialPool": 100,
-    "queueCount": 98,
-    "googleDiscovered": 98,
+    "queueCount": 100,
+    "googleDiscovered": 100,
     "refillNeeded": 0,
     "confirmedToday": 100,
     "reached": true,
@@ -1212,5 +1240,5 @@
     "scanned": 0,
     "updated": 0
   },
-  "completedAt": "2026-08-12T12:35:35.388Z"
+  "completedAt": "2026-08-12T13:08:44.725Z"
 }

@@ -1,12 +1,12 @@
 {
-  "updatedAt": "2026-08-12T12:35:07.993Z",
-  "cursor": 252,
+  "updatedAt": "2026-08-12T13:08:22.862Z",
+  "cursor": 302,
   "companyCount": 331,
   "verifications": {
     "facewest": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-12T11:44:21.019Z",
+        "verifiedAt": "2026-08-12T13:06:47.766Z",
         "evidenceUrl": "https://www.facewest.co.uk/",
         "httpStatus": 200,
         "signals": [
@@ -26,7 +26,7 @@
     "above and beyond": {
       "firstPartyChannelVerification": {
         "status": "unreachable",
-        "verifiedAt": "2026-08-12T11:44:19.746Z",
+        "verifiedAt": "2026-08-12T13:06:46.687Z",
         "evidenceUrl": "https://www.aboveandbeyond.ie/",
         "httpStatus": 0,
         "signals": [],
@@ -41,7 +41,7 @@
     "72hours": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-12T11:44:20.606Z",
+        "verifiedAt": "2026-08-12T13:06:48.225Z",
         "evidenceUrl": "https://72hours.ca/",
         "httpStatus": 200,
         "signals": [
@@ -62,7 +62,7 @@
     "atmosphere": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-12T11:44:23.852Z",
+        "verifiedAt": "2026-08-12T13:06:50.160Z",
         "evidenceUrl": "https://www.atmosphere.ca/",
         "httpStatus": 200,
         "signals": [
@@ -79,7 +79,7 @@
     "altitude sports": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-12T11:44:24.530Z",
+        "verifiedAt": "2026-08-12T13:06:50.906Z",
         "evidenceUrl": "https://www.altitude-sports.com/",
         "httpStatus": 200,
         "signals": [
@@ -98,7 +98,7 @@
     "the last hunt": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-12T11:44:24.665Z",
+        "verifiedAt": "2026-08-12T13:06:50.895Z",
         "evidenceUrl": "https://www.thelasthunt.com/",
         "httpStatus": 200,
         "signals": [
@@ -117,7 +117,7 @@
     "marmot basin retail": {
       "firstPartyChannelVerification": {
         "status": "unreachable",
-        "verifiedAt": "2026-08-12T11:44:23.960Z",
+        "verifiedAt": "2026-08-12T13:06:50.279Z",
         "evidenceUrl": "https://www.marmotbasin.com/",
         "httpStatus": 0,
         "signals": [],
@@ -132,7 +132,7 @@
     "wild earth": {
       "firstPartyChannelVerification": {
         "status": "unreachable",
-        "verifiedAt": "2026-08-12T11:44:24.059Z",
+        "verifiedAt": "2026-08-12T13:06:50.388Z",
         "evidenceUrl": "https://www.wildearth.com.au/",
         "httpStatus": 403,
         "signals": [],
@@ -151,7 +151,7 @@
     "tentworld australia": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-12T11:44:25.141Z",
+        "verifiedAt": "2026-08-12T13:06:51.341Z",
         "evidenceUrl": "https://www.tentworld.com.au/",
         "httpStatus": 200,
         "signals": [],
@@ -166,7 +166,7 @@
     "paddy pallin": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-12T11:44:24.965Z",
+        "verifiedAt": "2026-08-12T13:06:51.290Z",
         "evidenceUrl": "https://www.paddypallin.com.au/",
         "httpStatus": 200,
         "signals": [
@@ -186,7 +186,7 @@
     "macpac": {
       "firstPartyChannelVerification": {
         "status": "unreachable",
-        "verifiedAt": "2026-08-12T11:44:24.967Z",
+        "verifiedAt": "2026-08-12T13:06:51.233Z",
         "evidenceUrl": "https://www.macpac.com.au/",
         "httpStatus": 403,
         "signals": [],
@@ -204,7 +204,7 @@
     "tentworld nz": {
       "firstPartyChannelVerification": {
         "status": "unreachable",
-        "verifiedAt": "2026-08-12T11:44:30.766Z",
+        "verifiedAt": "2026-08-12T13:06:57.034Z",
         "evidenceUrl": "https://www.tentworld.co.nz/",
         "httpStatus": 0,
         "signals": [],
@@ -219,7 +219,7 @@
     "torpedo7": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-12T11:44:31.741Z",
+        "verifiedAt": "2026-08-12T13:06:58.059Z",
         "evidenceUrl": "https://www.torpedo7.co.nz/",
         "httpStatus": 200,
         "signals": [
@@ -239,7 +239,7 @@
     "outdoor action": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-12T11:47:12.132Z",
+        "verifiedAt": "2026-08-12T13:06:57.682Z",
         "evidenceUrl": "https://www.outdooraction.co.nz/",
         "httpStatus": 200,
         "signals": [
@@ -257,7 +257,7 @@
     "campz": {
       "firstPartyChannelVerification": {
         "status": "unreachable",
-        "verifiedAt": "2026-08-12T11:47:12.866Z",
+        "verifiedAt": "2026-08-12T13:06:58.339Z",
         "evidenceUrl": "https://www.bergfreunde.de/?campz=1",
         "httpStatus": 403,
         "signals": [],
@@ -272,7 +272,7 @@
     "sport conrad": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-12T11:47:13.274Z",
+        "verifiedAt": "2026-08-12T13:06:58.956Z",
         "evidenceUrl": "https://www.sport-conrad.com/",
         "httpStatus": 200,
         "signals": [
@@ -292,7 +292,7 @@
     "doorout": {
       "firstPartyChannelVerification": {
         "status": "unreachable",
-        "verifiedAt": "2026-08-12T11:47:21.403Z",
+        "verifiedAt": "2026-08-12T13:07:08.957Z",
         "evidenceUrl": "https://www.doorout.com/",
         "httpStatus": 0,
         "signals": [],
@@ -311,7 +311,7 @@
     "addnature": {
       "firstPartyChannelVerification": {
         "status": "unreachable",
-        "verifiedAt": "2026-08-12T11:47:21.780Z",
+        "verifiedAt": "2026-08-12T13:08:09.368Z",
         "evidenceUrl": "https://www.addnature.com/",
         "httpStatus": 403,
         "signals": [],
@@ -329,7 +329,7 @@
     "xxl sport": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-12T11:47:22.543Z",
+        "verifiedAt": "2026-08-12T13:08:10.272Z",
         "evidenceUrl": "https://www.xxl.no/",
         "httpStatus": 200,
         "signals": [
@@ -346,7 +346,7 @@
     "blue tomato": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-12T11:47:23.271Z",
+        "verifiedAt": "2026-08-12T13:08:11.090Z",
         "evidenceUrl": "https://www.blue-tomato.com/de-DE/",
         "httpStatus": 200,
         "signals": [
@@ -366,7 +366,7 @@
     "sportler": {
       "firstPartyChannelVerification": {
         "status": "unreachable",
-        "verifiedAt": "2026-08-12T11:47:22.463Z",
+        "verifiedAt": "2026-08-12T13:08:09.623Z",
         "evidenceUrl": "https://www.sportler.com/",
         "httpStatus": 403,
         "signals": [],
@@ -381,7 +381,7 @@
     "trekkinn": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-12T11:47:25.470Z",
+        "verifiedAt": "2026-08-12T13:08:12.870Z",
         "evidenceUrl": "https://www.tradeinn.com/trekkinn/en",
         "httpStatus": 200,
         "signals": [
@@ -401,7 +401,7 @@
     "4camping": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-12T11:47:24.553Z",
+        "verifiedAt": "2026-08-12T13:08:12.615Z",
         "evidenceUrl": "https://www.4camping.cz/",
         "httpStatus": 200,
         "signals": [
@@ -421,7 +421,7 @@
     "8a pl": {
       "firstPartyChannelVerification": {
         "status": "unreachable",
-        "verifiedAt": "2026-08-12T11:47:23.463Z",
+        "verifiedAt": "2026-08-12T13:08:11.507Z",
         "evidenceUrl": "https://8a.pl/",
         "httpStatus": 403,
         "signals": [],
@@ -440,7 +440,7 @@
     "sklep podroznika": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-12T11:47:24.563Z",
+        "verifiedAt": "2026-08-12T13:08:12.497Z",
         "evidenceUrl": "https://sklep-podroznika.pl/",
         "httpStatus": 200,
         "signals": [],
@@ -455,7 +455,7 @@
     "moosejaw": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-12T11:47:27.898Z",
+        "verifiedAt": "2026-08-12T13:08:15.265Z",
         "evidenceUrl": "https://www.publiclands.com/?segment=mjtopl",
         "httpStatus": 200,
         "signals": [
@@ -472,7 +472,7 @@
     "eastern mountain sports": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-12T11:47:26.296Z",
+        "verifiedAt": "2026-08-12T13:08:13.537Z",
         "evidenceUrl": "https://www.ems.com/",
         "httpStatus": 200,
         "signals": [
@@ -489,7 +489,7 @@
     "pack rat outdoor center": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-12T11:47:27.128Z",
+        "verifiedAt": "2026-08-12T13:08:15.051Z",
         "evidenceUrl": "https://packratoc.com/",
         "httpStatus": 200,
         "signals": [
@@ -506,7 +506,7 @@
     "massey outfitters": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-12T11:47:26.689Z",
+        "verifiedAt": "2026-08-12T13:08:13.413Z",
         "evidenceUrl": "https://www.masseysoutfitters.com/",
         "httpStatus": 200,
         "signals": [
@@ -525,7 +525,7 @@
     "intersport norway": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-12T11:47:29.613Z",
+        "verifiedAt": "2026-08-12T13:08:17.199Z",
         "evidenceUrl": "https://www.intersport.no/",
         "httpStatus": 200,
         "signals": [],
@@ -542,7 +542,7 @@
     "mammut store": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-12T11:47:28.789Z",
+        "verifiedAt": "2026-08-12T13:08:16.328Z",
         "evidenceUrl": "https://www.mammut.com/int/en",
         "httpStatus": 200,
         "signals": [],
@@ -557,7 +557,7 @@
     "bever zwerfsport": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-12T11:47:29.671Z",
+        "verifiedAt": "2026-08-12T13:08:16.745Z",
         "evidenceUrl": "https://www.bever.nl/",
         "httpStatus": 200,
         "signals": [
@@ -2347,7 +2347,7 @@
     "christy sports": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-12T12:21:05.564Z",
+        "verifiedAt": "2026-08-12T13:06:44.124Z",
         "evidenceUrl": "https://www.christysports.com/",
         "httpStatus": 200,
         "signals": [
@@ -2368,7 +2368,7 @@
     "paragon sports": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-12T12:21:05.943Z",
+        "verifiedAt": "2026-08-12T13:06:43.697Z",
         "evidenceUrl": "https://paragonsports.com/",
         "httpStatus": 200,
         "signals": [
@@ -2390,7 +2390,7 @@
     "mountain equipment": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-12T12:21:06.019Z",
+        "verifiedAt": "2026-08-12T13:06:44.099Z",
         "evidenceUrl": "https://www.mountain-equipment.com/",
         "httpStatus": 200,
         "signals": [
@@ -2408,7 +2408,7 @@
     "tiso": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-12T12:21:08.121Z",
+        "verifiedAt": "2026-08-12T13:06:44.818Z",
         "evidenceUrl": "https://www.tiso.com/pages/contact",
         "httpStatus": 200,
         "signals": [
@@ -2427,7 +2427,7 @@
     "george fisher": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-12T11:44:18.942Z",
+        "verifiedAt": "2026-08-12T13:06:46.362Z",
         "evidenceUrl": "https://www.tiso.com/pages/george-fisher-landing?utm_source=georgefisher",
         "httpStatus": 200,
         "signals": [
@@ -2445,7 +2445,7 @@
     "ld mountain centre": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-12T11:44:19.625Z",
+        "verifiedAt": "2026-08-12T13:06:46.069Z",
         "evidenceUrl": "https://www.ldmountaincentre.com/",
         "httpStatus": 200,
         "signals": [],
@@ -2460,7 +2460,7 @@
     "absolute snow": {
       "firstPartyChannelVerification": {
         "status": "unreachable",
-        "verifiedAt": "2026-08-12T11:44:17.450Z",
+        "verifiedAt": "2026-08-12T13:06:45.224Z",
         "evidenceUrl": "https://www.absolute-snow.co.uk/",
         "httpStatus": 403,
         "signals": [],
@@ -2475,7 +2475,7 @@
     "ellis brigham": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-12T11:44:17.585Z",
+        "verifiedAt": "2026-08-12T13:06:45.384Z",
         "evidenceUrl": "https://www.ellis-brigham.com/",
         "httpStatus": 200,
         "signals": [],
@@ -2956,7 +2956,7 @@
     "survive thrive": {
       "firstPartyChannelVerification": {
         "status": "unreachable",
-        "verifiedAt": "2026-08-12T11:47:29.179Z",
+        "verifiedAt": "2026-08-12T13:08:16.357Z",
         "evidenceUrl": "https://www.survive-thrive.com/",
         "httpStatus": 0,
         "signals": [],
@@ -2971,7 +2971,7 @@
     "camping travel store": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-12T11:47:33.301Z",
+        "verifiedAt": "2026-08-12T13:08:20.065Z",
         "evidenceUrl": "https://www.campingtravelstore.co.uk/",
         "httpStatus": 200,
         "signals": [
@@ -2988,7 +2988,7 @@
     "outcamping": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-12T11:47:30.615Z",
+        "verifiedAt": "2026-08-12T13:08:18.096Z",
         "evidenceUrl": "https://outcamping.co.uk/pages/about-us",
         "httpStatus": 200,
         "signals": [
@@ -3007,7 +3007,7 @@
     "outdoors plus": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-12T11:47:29.883Z",
+        "verifiedAt": "2026-08-12T13:08:17.483Z",
         "evidenceUrl": "https://outdoorsplus.ca/services/camping/",
         "httpStatus": 200,
         "signals": [
@@ -3026,7 +3026,7 @@
     "switching gear": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-12T11:47:30.958Z",
+        "verifiedAt": "2026-08-12T13:08:18.368Z",
         "evidenceUrl": "https://www.switchinggear.ca/About.html",
         "httpStatus": 200,
         "signals": [
@@ -3939,7 +3939,7 @@
     "outdoors ramsey": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-12T11:47:34.275Z",
+        "verifiedAt": "2026-08-12T13:08:21.038Z",
         "evidenceUrl": "https://www.outdoorsramsey.co.uk/outdoor-shop-in-ramsey-isle-of-man/",
         "httpStatus": 200,
         "signals": [
@@ -3956,7 +3956,7 @@
     "black white outdoors": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-12T11:50:48.513Z",
+        "verifiedAt": "2026-08-12T13:08:21.654Z",
         "evidenceUrl": "https://blackandwhiteoutdoors.com/contact-us/",
         "httpStatus": 200,
         "signals": [
@@ -3975,7 +3975,7 @@
     "nz outdoors": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-12T11:50:48.038Z",
+        "verifiedAt": "2026-08-12T13:08:21.046Z",
         "evidenceUrl": "https://www.nz-outdoors.co.nz/pages/support",
         "httpStatus": 200,
         "signals": [
@@ -3994,7 +3994,7 @@
     "outdoordump": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-12T11:50:48.953Z",
+        "verifiedAt": "2026-08-12T13:08:21.515Z",
         "evidenceUrl": "https://outdoordump.nl/contact/",
         "httpStatus": 200,
         "signals": [
@@ -4011,7 +4011,7 @@
     "outdoorhaven": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-12T11:50:47.930Z",
+        "verifiedAt": "2026-08-12T13:08:22.862Z",
         "evidenceUrl": "https://outdoorhaven.nl/",
         "httpStatus": 200,
         "signals": [],

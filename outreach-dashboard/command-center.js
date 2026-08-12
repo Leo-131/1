@@ -528,6 +528,25 @@
       .replace(/[-_]+/g, ' ')
       .replace(/\b\w/g, char => char.toUpperCase());
   }
+  function discoveryCompanyRecord(company) {
+    const key = canonicalLeadKey(company);
+    if (!key || !latestGoogleDiscovery || !Array.isArray(latestGoogleDiscovery.leads)) return null;
+    return latestGoogleDiscovery.leads.find(item => canonicalLeadKey(item.company || item.name) === key) || null;
+  }
+  function isNorthAmerica(record) {
+    return ['United States', 'Canada', 'Mexico'].includes(normalizedCountry(record));
+  }
+  function northAmericaAgencyReserveRows() {
+    if (!latestGoogleDiscovery || !Array.isArray(latestGoogleDiscovery.leads)) return [];
+    const unique = new Map();
+    latestGoogleDiscovery.leads
+      .filter(item => item.customerType === 'sales_agency' && isNorthAmerica(item) && Number(item.fitScore || 0) >= ICP_MIN_SCORE)
+      .forEach(item => {
+        const key = canonicalLeadKey(item.company || item.name);
+        if (key && !unique.has(key)) unique.set(key, item);
+      });
+    return Array.from(unique.values());
+  }
   function replySignalFromEvidence(item) {
     const evidence = String(item && item.evidence || '');
     const hasReply = /recipient_(?:auto_)?reply_received|recipient_replied|inbound_reply_(?:received|visible)|reply_bubble_visible/i.test(evidence);
@@ -555,8 +574,8 @@
         ...task,
         taskId,
         id: taskId,
-        name: task.name || task.company || resultCompanyName(taskId),
-        company: task.company || task.name || resultCompanyName(taskId),
+        name: item.company || task.name || task.company || resultCompanyName(taskId),
+        company: item.company || task.company || task.name || resultCompanyName(taskId),
         platform: task.platform || inferPlatformFromResult(item),
         targetUrl: item.target_url || task.targetUrl || task.url || '',
         verifiedTargetUrl: item.target_url || task.verifiedTargetUrl || '',
@@ -1450,18 +1469,24 @@
     return labels[reason] || reason || '规则未给出原因';
   }
   function dailyDevelopedRows() {
+    const resultRows = autonomousResultRecords();
     const ledgerRows = customerEventLedger()
       .filter(event => event.type === 'sent_confirmed' && isTodayTimestamp(event.timestamp))
       .map(event => {
+        const result = resultRows.find(item => canonicalLeadKey(item.taskId) === canonicalLeadKey(event.taskId)) || {};
         const base = findTaskById(event.taskId)
           || taskIndex.get(canonicalLeadKey(event.customerKey))
           || {};
+        const company = result.company || base.company || base.name || resultCompanyName(event.taskId || event.customerKey);
+        const discovery = discoveryCompanyRecord(company) || {};
         return {
+          ...discovery,
           ...base,
+          ...result,
           taskId: event.taskId || base.taskId || event.customerKey,
           id: event.taskId || base.id || event.id,
-          name: base.name || base.company || resultCompanyName(event.taskId || event.customerKey),
-          company: base.company || base.name || resultCompanyName(event.taskId || event.customerKey),
+          name: company,
+          company,
           platform: event.channel || base.platform || 'unknown',
           targetUrl: base.targetUrl || base.url || event.evidence || '',
           sendStatus: 'sent_confirmed',
@@ -1512,6 +1537,15 @@
       ? `<div class="cc-table-wrap cc-developed-table"><table class="cc-table"><thead><tr><th>客户</th><th>优先渠道</th><th>开发状态</th><th>发送证据</th><th>时间</th><th>入口</th></tr></thead><tbody>${rows.map(item => `<tr><td><b>${esc(item.company || item.name)}</b></td><td><span class="cc-channel-badge ${developedChannel(item)}">${esc(developedChannel(item).toUpperCase())}</span></td><td><span class="cc-chip green">${esc(automationStatusLabel(item.sendStatus || item.status, item.interactionEvidence, item.duplicateRisk))}</span></td><td class="cc-evidence-cell">${esc(item.interactionEvidence || '已记录')}</td><td>${esc(item.developedAt || '')}</td><td>${entryUrl(item) ? `<a href="${esc(entryUrl(item))}" target="_blank" rel="noopener">打开入口</a>` : ''}</td></tr>`).join('')}</tbody></table></div>`
       : '<div class="cc-empty">今天还没有带时间证据的已开发客户</div>';
     return `<section class="cc-panel cc-developed-panel"><div class="cc-panel-head"><div><h2>今日已开发客户</h2><span class="cc-sub">仅统计 sent_confirmed / submitted_confirmed，不把打开页面、点赞或草稿计为开发</span></div><div class="cc-developed-total"><span>今日真实开发</span><b>${rows.length}</b><em>/ 100</em></div></div><div class="cc-channel-priority"><div class="cc-priority-label"><b>执行优先级</b><span>Email → LinkedIn → Facebook → Instagram</span></div>${channelCards}</div>${table}</section>`;
+  }
+  function northAmericaMarketPanel() {
+    const reserve = northAmericaAgencyReserveRows();
+    const developed = dailyDevelopedRows().filter(isNorthAmerica);
+    const byCountry = ['United States', 'Canada', 'Mexico']
+      .map(country => `${country}: ${reserve.filter(item => normalizedCountry(item) === country).length}`)
+      .join(' · ');
+    const rows = reserve.map(item => `<tr><td><b>${esc(item.company || item.name)}</b></td><td>${esc(normalizedCountry(item))}</td><td>${esc(item.customerType)}</td><td>${esc(item.fitScore)}</td><td><span class="cc-chip amber">候选储备 · 尚未计入开发</span></td><td>${item.sourceEvidenceUrl ? `<a href="${esc(item.sourceEvidenceUrl)}" target="_blank" rel="noopener">第一方证据</a>` : ''}</td></tr>`).join('');
+    return `<section class="cc-panel cc-na-market"><div class="cc-panel-head"><div><h2>北美代理市场</h2><span class="cc-sub">候选储备与真实开发分开统计；只有 sent_confirmed / submitted_confirmed 才算已开发</span></div><div class="cc-developed-total"><span>今日北美真实开发</span><b>${developed.length}</b><em> / 今日全部 ${dailyDevelopedRows().length}</em></div></div><div class="cc-quality">北美第一方验证代理/分销商储备：${reserve.length} 家（${esc(byCountry)}）。储备不是已发送，也不会出现在阿里邮箱“已发送”中。</div><div class="cc-table-wrap"><table class="cc-table"><thead><tr><th>企业</th><th>国家</th><th>类型</th><th>ICP</th><th>状态</th><th>证据</th></tr></thead><tbody>${rows}</tbody></table></div></section>`;
   }
   function emailLifecyclePanel() {
     const rows = executionResultRows()
@@ -1856,7 +1890,7 @@
     const mode = query.get('queue') || 'potential';
     const visibleRows = executableDevelopmentTasks();
     const list = latestRun
-      ? (mode === 'potential' ? visibleRows : mode === 'followup' ? todayFollowupTasks() : mode === 'cooldown' ? latestQueueRows('cooldownQueue') : mode === 'all' ? latestQueueRows('all') : mode === 'developed' ? dailyDevelopedRows() : executableDevelopmentTasks())
+      ? (mode === 'potential' ? visibleRows : mode === 'north-america' ? northAmericaAgencyReserveRows() : mode === 'followup' ? todayFollowupTasks() : mode === 'cooldown' ? latestQueueRows('cooldownQueue') : mode === 'all' ? latestQueueRows('all') : mode === 'developed' ? dailyDevelopedRows() : executableDevelopmentTasks())
       : (mode === 'followup' ? followupTasks() : mode === 'all' ? tasks : untouchedTasks());
     const tabs = [
       ['potential', '\u53ef\u81ea\u52a8\u5f00\u53d1', visibleRows.length],
@@ -1865,10 +1899,11 @@
       ['cooldown', '\u77ed\u671f\u4e0d\u91cd\u590d', latestRun ? latestQueueRows('cooldownQueue').length : 0],
       ['all', '\u5168\u90e8\u4efb\u52a1', latestRun ? latestQueueRows('all').length : tasks.length],
       ['developed', '\u4eca\u65e5\u5df2\u5f00\u53d1', dailyDevelopedRows().length],
+      ['north-america', '\u5317\u7f8e\u4ee3\u7406\u50a8\u5907', northAmericaAgencyReserveRows().length],
     ];
     return `${pageHead('\u4eca\u65e5\u961f\u5217', '\u9ed8\u8ba4\u53ea\u663e\u793a\u672a\u89e6\u8fbe\u4e14\u8eab\u4efd\u6821\u9a8c\u901a\u8fc7\u7684\u65b0\u5ba2\u6237\uff0c\u5386\u53f2\u5ba2\u6237\u5355\u72ec\u8ddf\u8fdb')}
       <div class="cc-view-tabs">${tabs.map(([key, label, count]) => `<a class="${mode === key ? 'active' : ''}" href="${urlFor('queue', { queue: key })}">${label} <b>${count}</b></a>`).join('')}</div>
-      ${mode === 'developed' ? dailyDevelopedPanel() : `<div class="cc-table-wrap">${taskTable(list)}</div>`}`;
+      ${mode === 'developed' ? `${northAmericaMarketPanel()}${dailyDevelopedPanel()}` : mode === 'north-america' ? northAmericaMarketPanel() : `<div class="cc-table-wrap">${taskTable(list)}</div>`}`;
   }
   function customerProfileType(record) {
     const text = [record.customerType, record.category, record.keyword, record.keyword_used, record.role, record.company, record.industry].join(' ').toLowerCase();
