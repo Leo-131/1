@@ -622,7 +622,7 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     "queueCount": 59,
     "googleDiscovered": 40,
     "refillNeeded": 52,
-    "confirmedToday": 12,
+    "confirmedToday": 30,
     "reached": false,
     "action": "Add more verified high-ICP sources or unblock existing website/social leads."
   },
@@ -897,5 +897,5 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     "scanned": 0,
     "updated": 0
   },
-  "completedAt": "2026-08-12T08:46:02.766Z"
+  "completedAt": "2026-08-12T09:09:58.095Z"
 };
