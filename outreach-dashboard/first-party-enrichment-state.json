@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-08-12T07:05:39.214Z",
-  "cursor": 81,
+  "updatedAt": "2026-08-12T08:26:34.639Z",
+  "cursor": 106,
   "companyCount": 227,
   "verifications": {
     "facewest": {
@@ -1581,7 +1581,7 @@
     "backcountry experience": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-10T16:05:15.638Z",
+        "verifiedAt": "2026-08-12T08:25:59.298Z",
         "evidenceUrl": "https://www.bcexp.com/",
         "httpStatus": 200,
         "signals": [
@@ -1599,7 +1599,7 @@
     "la cordee": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-10T16:05:16.495Z",
+        "verifiedAt": "2026-08-12T08:26:03.689Z",
         "evidenceUrl": "https://www.lacordee.com/en/pages/contact-us",
         "httpStatus": 200,
         "signals": [
@@ -1618,7 +1618,7 @@
     "taunton leisure": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-10T16:05:15.182Z",
+        "verifiedAt": "2026-08-12T08:26:01.564Z",
         "evidenceUrl": "https://www.tauntonleisure.com/",
         "httpStatus": 200,
         "signals": [
@@ -1636,7 +1636,7 @@
     "outdoorxl": {
       "firstPartyChannelVerification": {
         "status": "unreachable",
-        "verifiedAt": "2026-08-10T16:05:16.690Z",
+        "verifiedAt": "2026-08-12T08:26:00.193Z",
         "evidenceUrl": "https://www.outdoorxl.nl/",
         "httpStatus": 403,
         "signals": [],
@@ -1650,14 +1650,11 @@
     },
     "spejder sport": {
       "firstPartyChannelVerification": {
-        "status": "checked",
-        "verifiedAt": "2026-08-10T16:05:18.585Z",
+        "status": "unreachable",
+        "verifiedAt": "2026-08-12T08:26:00.693Z",
         "evidenceUrl": "https://www.spejdersport.dk/handelsbetingelser/",
-        "httpStatus": 200,
-        "signals": [
-          "form_control",
-          "public_business_email"
-        ],
+        "httpStatus": 403,
+        "signals": [],
         "error": ""
       },
       "contactCapabilityVerified": false,
@@ -1669,7 +1666,7 @@
     "friluftsland": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-10T16:05:18.864Z",
+        "verifiedAt": "2026-08-12T08:26:08.379Z",
         "evidenceUrl": "https://www.friluftsland.dk/",
         "httpStatus": 200,
         "signals": [
@@ -1687,7 +1684,7 @@
     "left point distribution": {
       "firstPartyChannelVerification": {
         "status": "unreachable",
-        "verifiedAt": "2026-08-10T16:05:17.068Z",
+        "verifiedAt": "2026-08-12T08:26:10.492Z",
         "evidenceUrl": "https://www.leftpointdistribution.com/en-eu/aboutus.php",
         "httpStatus": 403,
         "signals": [],
@@ -1702,10 +1699,14 @@
     "snowys outdoors": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-10T16:05:19.211Z",
-        "evidenceUrl": "https://www.snowys.com.au/",
-        "httpStatus": 202,
-        "signals": [],
+        "verifiedAt": "2026-08-12T08:26:06.504Z",
+        "evidenceUrl": "https://www.snowys.com.au/contact-us",
+        "httpStatus": 200,
+        "signals": [
+          "form_control",
+          "public_business_email",
+          "contact_invitation"
+        ],
         "error": ""
       },
       "contactCapabilityVerified": true,
@@ -1720,7 +1721,7 @@
     "alpenglow sports": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-10T16:05:19.202Z",
+        "verifiedAt": "2026-08-12T08:26:04.629Z",
         "evidenceUrl": "https://alpenglowsports.com/",
         "httpStatus": 200,
         "signals": [
@@ -1741,7 +1742,7 @@
     "ute mountaineer": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-10T16:05:21.305Z",
+        "verifiedAt": "2026-08-12T08:26:13.284Z",
         "evidenceUrl": "https://www.utemountaineer.com/",
         "httpStatus": 200,
         "signals": [
@@ -1759,7 +1760,7 @@
     "neptune mountaineering": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-10T16:05:19.793Z",
+        "verifiedAt": "2026-08-12T08:26:11.554Z",
         "evidenceUrl": "https://www.neptunemountaineering.com/pages/customer-support",
         "httpStatus": 200,
         "signals": [
@@ -2665,7 +2666,7 @@
     "kenco outfitters": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-10T16:05:21.745Z",
+        "verifiedAt": "2026-08-12T08:26:11.312Z",
         "evidenceUrl": "https://kencooutfitters.com/pages/rewards",
         "httpStatus": 200,
         "signals": [
@@ -2684,7 +2685,7 @@
     "jesse brown s outdoors": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-10T16:05:21.762Z",
+        "verifiedAt": "2026-08-12T08:26:12.048Z",
         "evidenceUrl": "https://shop.jessebrowns.com/pages/contact",
         "httpStatus": 200,
         "signals": [
@@ -2703,7 +2704,7 @@
     "travel country outfitters": {
       "firstPartyChannelVerification": {
         "status": "unreachable",
-        "verifiedAt": "2026-08-10T16:05:41.331Z",
+        "verifiedAt": "2026-08-12T08:26:33.298Z",
         "evidenceUrl": "https://www.travelcountry.com/shop/Action/Info_Show/Id/42",
         "httpStatus": 0,
         "signals": [],
@@ -2718,7 +2719,7 @@
     "roads rivers and trails": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-10T16:05:22.644Z",
+        "verifiedAt": "2026-08-12T08:26:15.088Z",
         "evidenceUrl": "https://roadsriversandtrails.com/trip-planning/",
         "httpStatus": 200,
         "signals": [
@@ -3548,7 +3549,7 @@
     "craze outdoors": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-10T13:05:24.921Z",
+        "verifiedAt": "2026-08-12T08:25:54.142Z",
         "evidenceUrl": "https://crazeoutdoors.com/pages/contact-us",
         "httpStatus": 200,
         "signals": [
@@ -3567,7 +3568,7 @@
     "charles camping": {
       "firstPartyChannelVerification": {
         "status": "unreachable",
-        "verifiedAt": "2026-08-10T13:05:29.527Z",
+        "verifiedAt": "2026-08-12T08:25:56.476Z",
         "evidenceUrl": "https://www.charlescamping.ie/contact-us",
         "httpStatus": 404,
         "signals": [],
@@ -3582,7 +3583,7 @@
     "basecamp dublin": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-10T16:05:12.888Z",
+        "verifiedAt": "2026-08-12T08:25:53.738Z",
         "evidenceUrl": "https://basecamp.ie/pages/privacy-policy",
         "httpStatus": 200,
         "signals": [
@@ -3600,7 +3601,7 @@
     "getcamping": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-10T16:05:13.184Z",
+        "verifiedAt": "2026-08-12T08:25:54.234Z",
         "evidenceUrl": "https://www.getcamping.eu/en/info/about-us/",
         "httpStatus": 200,
         "signals": [
@@ -3619,7 +3620,7 @@
     "shopping4camping": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-10T16:05:13.564Z",
+        "verifiedAt": "2026-08-12T08:25:58.520Z",
         "evidenceUrl": "https://www.shopping4camping.be/pages/contact-bereikbaarheid",
         "httpStatus": 200,
         "signals": [
@@ -3637,7 +3638,7 @@
     "de kampeerder": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-10T16:05:14.141Z",
+        "verifiedAt": "2026-08-12T08:25:59.808Z",
         "evidenceUrl": "https://dekampeerder.be/",
         "httpStatus": 200,
         "signals": [
@@ -3655,7 +3656,7 @@
     "campingudstyr dk": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-10T16:05:16.520Z",
+        "verifiedAt": "2026-08-12T08:25:58.787Z",
         "evidenceUrl": "https://www.campingudstyr.dk/contact",
         "httpStatus": 200,
         "signals": [
@@ -3673,7 +3674,7 @@
     "purely outdoors": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-10T16:05:42.863Z",
+        "verifiedAt": "2026-08-12T08:26:16.237Z",
         "evidenceUrl": "https://www.purelyoutdoors.co.uk/showroom.htm",
         "httpStatus": 200,
         "signals": [
@@ -3692,7 +3693,7 @@
     "westside stores": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-10T16:05:43.090Z",
+        "verifiedAt": "2026-08-12T08:26:15.060Z",
         "evidenceUrl": "https://westsidestores.ca/pages/about-us.html",
         "httpStatus": 200,
         "signals": [
@@ -3711,7 +3712,7 @@
     "west end outdoors": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-10T16:05:42.251Z",
+        "verifiedAt": "2026-08-12T08:26:34.639Z",
         "evidenceUrl": "https://www.westendoutdoors.co.uk/policies/contact-information",
         "httpStatus": 200,
         "signals": [
