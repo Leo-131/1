@@ -1,9 +1,10 @@
 {
-  "updatedAt": "2026-08-12T10:22:19.943Z",
-  "ok": true,
-  "pushed": true,
+  "updatedAt": "2026-08-12T10:31:28.323Z",
+  "ok": false,
+  "pushed": false,
   "branch": "vercel-main-sync",
-  "localCommit": "47ab07fdd9584ef4248b155f598fad8bb38afa5b",
-  "remoteCommit": "47ab07fdd9584ef4248b155f598fad8bb38afa5b",
-  "message": "sync: local outreach data 2026-08-12"
+  "localCommit": "dfd24fff0550b2c477af8e30e1a9bcd5095332f2",
+  "remoteCommit": "ff1783eb0fd309a44b4e6619b216acbc783782fc",
+  "message": "sync: local outreach data 2026-08-12",
+  "error": "Command failed: git -c gc.auto=0 push origin vercel-main-sync"
 }
