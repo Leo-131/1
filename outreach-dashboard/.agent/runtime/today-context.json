@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-12T13:08:52.512Z",
+  "generatedAt": "2026-08-12T13:30:09.198Z",
   "phase": "pre-sync",
   "shanghaiDate": "2026-08-12",
   "policyVersion": "2026-07-30",
@@ -18,11 +18,11 @@
   "queue": {
     "potentialPool": 100,
     "refillNeeded": 0,
-    "executableCompanies": 31,
-    "executableReserveNeeded": 99
+    "executableCompanies": 25,
+    "executableReserveNeeded": 105
   },
   "latestExecution": {
-    "completedAt": "2026-08-12T13:08:44.725Z",
+    "completedAt": "2026-08-12T13:30:03.181Z",
     "phase": "daily_cap_reached",
     "realDevelopmentCount": 0,
     "reportingVerdict": "daily_target_already_reached"
@@ -34,7 +34,7 @@
   },
   "git": {
     "branch": "vercel-main-sync",
-    "localHead": "29d58e42705906f1acd0746e0fa5eb10d20dfd5f",
-    "upstreamHead": "29d58e42705906f1acd0746e0fa5eb10d20dfd5f"
+    "localHead": "37bf21578965a144a1575da656601bed1317220b",
+    "upstreamHead": "37bf21578965a144a1575da656601bed1317220b"
   }
 }

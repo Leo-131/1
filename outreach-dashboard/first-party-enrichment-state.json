@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-08-12T13:08:22.862Z",
-  "cursor": 302,
+  "updatedAt": "2026-08-12T13:29:30.646Z",
+  "cursor": 327,
   "companyCount": 331,
   "verifications": {
     "facewest": {
@@ -576,7 +576,7 @@
     "durango outdoor exchange": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-12T11:50:49.664Z",
+        "verifiedAt": "2026-08-12T13:28:58.956Z",
         "evidenceUrl": "https://durangooutdoorexchange.com/",
         "httpStatus": 200,
         "signals": [
@@ -595,7 +595,7 @@
     "outdoor specialist": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-12T11:50:52.895Z",
+        "verifiedAt": "2026-08-12T13:29:03.661Z",
         "evidenceUrl": "https://www.outdoor-experts.nl/nl/",
         "httpStatus": 200,
         "signals": [
@@ -612,7 +612,7 @@
     "campervan gift": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-12T11:51:04.578Z",
+        "verifiedAt": "2026-08-12T13:29:18.242Z",
         "evidenceUrl": "https://www.campervangift.co.uk/become-a-supplier/",
         "httpStatus": 200,
         "signals": [
@@ -632,7 +632,7 @@
     "gecko overland": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-12T11:51:07.448Z",
+        "verifiedAt": "2026-08-12T13:29:19.903Z",
         "evidenceUrl": "https://gecko-overland.com/contact/",
         "httpStatus": 200,
         "signals": [
@@ -654,7 +654,7 @@
     "bbq fans": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-12T11:51:06.178Z",
+        "verifiedAt": "2026-08-12T13:29:21.790Z",
         "evidenceUrl": "https://www.bbqfans.com/become-a-supplier/",
         "httpStatus": 200,
         "signals": [
@@ -3043,7 +3043,7 @@
     "equipment outdoors": {
       "firstPartyChannelVerification": {
         "status": "unreachable",
-        "verifiedAt": "2026-08-12T11:50:49.740Z",
+        "verifiedAt": "2026-08-12T13:29:00.572Z",
         "evidenceUrl": "https://www.equipmentoutdoors.co.uk/",
         "httpStatus": 403,
         "signals": [],
@@ -3058,7 +3058,7 @@
     "the outdoor shop lewes": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-12T11:50:53.585Z",
+        "verifiedAt": "2026-08-12T13:29:05.696Z",
         "evidenceUrl": "https://www.outdoorshoplewes.co.uk/",
         "httpStatus": 200,
         "signals": [
@@ -3076,7 +3076,7 @@
     "mawson s sports": {
       "firstPartyChannelVerification": {
         "status": "unreachable",
-        "verifiedAt": "2026-08-12T11:51:02.908Z",
+        "verifiedAt": "2026-08-12T13:29:14.958Z",
         "evidenceUrl": "https://mawsons.ca/",
         "httpStatus": 0,
         "signals": [],
@@ -3091,7 +3091,7 @@
     "vamos outdoors": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-12T11:50:54.214Z",
+        "verifiedAt": "2026-08-12T13:29:06.344Z",
         "evidenceUrl": "https://vamosoutdoors.ca/",
         "httpStatus": 200,
         "signals": [
@@ -3109,7 +3109,7 @@
     "lost wave": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-12T11:50:54.382Z",
+        "verifiedAt": "2026-08-12T13:29:05.949Z",
         "evidenceUrl": "https://www.lost-wave.com/about",
         "httpStatus": 200,
         "signals": [
@@ -3126,7 +3126,7 @@
     "action outdoors": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-12T11:51:04.282Z",
+        "verifiedAt": "2026-08-12T13:29:16.573Z",
         "evidenceUrl": "https://www.actionoutdoors.co.uk/about/",
         "httpStatus": 200,
         "signals": [
@@ -3144,7 +3144,7 @@
     "spry": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-12T11:51:03.856Z",
+        "verifiedAt": "2026-08-12T13:29:16.189Z",
         "evidenceUrl": "https://spryactive.ca/pages/about",
         "httpStatus": 200,
         "signals": [
@@ -3163,7 +3163,7 @@
     "lifestyle gear": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-12T11:51:03.483Z",
+        "verifiedAt": "2026-08-12T13:29:15.649Z",
         "evidenceUrl": "https://lifestylegear.co.nz/pages/contact",
         "httpStatus": 200,
         "signals": [
@@ -3182,7 +3182,7 @@
     "old school outdoor": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-12T11:51:04.979Z",
+        "verifiedAt": "2026-08-12T13:29:17.083Z",
         "evidenceUrl": "https://oldschooloutdoor.com/pages/contact",
         "httpStatus": 200,
         "signals": [
@@ -4026,7 +4026,7 @@
     "klima outdoor": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-12T11:50:49.930Z",
+        "verifiedAt": "2026-08-12T13:28:59.147Z",
         "evidenceUrl": "https://klima-outdoor.de/pages/contact",
         "httpStatus": 200,
         "signals": [
@@ -4388,6 +4388,176 @@
       "contactCapabilityVerified": false,
       "externalVerificationStatus": "",
       "publicEmail": "patrick@roundthewheelcollective.com",
+      "emailVerificationStatus": "official_public_business_email",
+      "socialProfiles": []
+    },
+    "outdoor gear canada": {
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-12T13:29:00.309Z",
+        "evidenceUrl": "https://www.ogc.ca/",
+        "httpStatus": 200,
+        "signals": [
+          "contact_invitation"
+        ],
+        "error": ""
+      },
+      "contactCapabilityVerified": false,
+      "externalVerificationStatus": "",
+      "publicEmail": "",
+      "emailVerificationStatus": "",
+      "socialProfiles": []
+    },
+    "gmd wholesale": {
+      "firstPartyChannelVerification": {
+        "status": "unreachable",
+        "verifiedAt": "2026-08-12T13:28:58.912Z",
+        "evidenceUrl": "https://gmdwholesale.ca/",
+        "httpStatus": 403,
+        "signals": [],
+        "error": ""
+      },
+      "contactCapabilityVerified": false,
+      "externalVerificationStatus": "",
+      "publicEmail": "",
+      "emailVerificationStatus": "",
+      "socialProfiles": []
+    },
+    "d m a distributing": {
+      "firstPartyChannelVerification": {
+        "status": "unreachable",
+        "verifiedAt": "2026-08-12T13:29:04.955Z",
+        "evidenceUrl": "https://dmadistributing.ca/",
+        "httpStatus": 404,
+        "signals": [],
+        "error": ""
+      },
+      "contactCapabilityVerified": false,
+      "externalVerificationStatus": "",
+      "publicEmail": "",
+      "emailVerificationStatus": "",
+      "socialProfiles": []
+    },
+    "caraway co": {
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-12T13:29:01.362Z",
+        "evidenceUrl": "https://www.carawayandco.com/",
+        "httpStatus": 200,
+        "signals": [
+          "supplier_invitation",
+          "contact_invitation"
+        ],
+        "error": ""
+      },
+      "contactCapabilityVerified": false,
+      "externalVerificationStatus": "",
+      "publicEmail": "",
+      "emailVerificationStatus": "",
+      "socialProfiles": []
+    },
+    "premium living products": {
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-12T13:29:16.332Z",
+        "evidenceUrl": "https://premiumlivingproducts.com/",
+        "httpStatus": 200,
+        "signals": [
+          "form_control",
+          "contact_invitation"
+        ],
+        "error": ""
+      },
+      "contactCapabilityVerified": true,
+      "externalVerificationStatus": "official_contact_form_verified",
+      "publicEmail": "",
+      "emailVerificationStatus": "",
+      "socialProfiles": []
+    },
+    "outdoor equipment distributors": {
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-12T13:29:18.206Z",
+        "evidenceUrl": "https://www.oedinc.com/",
+        "httpStatus": 200,
+        "signals": [
+          "public_business_email",
+          "contact_invitation"
+        ],
+        "error": ""
+      },
+      "contactCapabilityVerified": true,
+      "externalVerificationStatus": "official_contact_form_verified",
+      "publicEmail": "info@oedinc.com",
+      "emailVerificationStatus": "official_public_business_email",
+      "socialProfiles": []
+    },
+    "classic products international": {
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-12T13:29:21.874Z",
+        "evidenceUrl": "https://classicproductsinc.com/",
+        "httpStatus": 200,
+        "signals": [
+          "form_control",
+          "public_business_email",
+          "contact_invitation"
+        ],
+        "error": ""
+      },
+      "contactCapabilityVerified": true,
+      "externalVerificationStatus": "official_contact_form_verified",
+      "publicEmail": "sales@classicproductsinc.com",
+      "emailVerificationStatus": "official_public_business_email",
+      "socialProfiles": []
+    },
+    "revassa": {
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-12T13:29:25.146Z",
+        "evidenceUrl": "https://revassa.com.mx/",
+        "httpStatus": 200,
+        "signals": [
+          "form_control"
+        ],
+        "error": ""
+      },
+      "contactCapabilityVerified": false,
+      "externalVerificationStatus": "",
+      "publicEmail": "",
+      "emailVerificationStatus": "",
+      "socialProfiles": []
+    },
+    "jamsca solutions": {
+      "firstPartyChannelVerification": {
+        "status": "unreachable",
+        "verifiedAt": "2026-08-12T13:29:29.910Z",
+        "evidenceUrl": "https://jamsca.com/retailer-sports-goods-wholesaler-for-retailers/",
+        "httpStatus": 0,
+        "signals": [],
+        "error": "timeout"
+      },
+      "contactCapabilityVerified": false,
+      "externalVerificationStatus": "",
+      "publicEmail": "info@jamsca.com",
+      "emailVerificationStatus": "official_public_business_email",
+      "socialProfiles": []
+    },
+    "rtic mexico": {
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-12T13:29:30.646Z",
+        "evidenceUrl": "https://rtic.mx/products/hilera-rtic-45-hard-cooler",
+        "httpStatus": 200,
+        "signals": [
+          "form_control",
+          "public_business_email"
+        ],
+        "error": ""
+      },
+      "contactCapabilityVerified": false,
+      "externalVerificationStatus": "",
+      "publicEmail": "ventas@rtic.mx",
       "emailVerificationStatus": "official_public_business_email",
       "socialProfiles": []
     }

@@ -239,7 +239,18 @@ function preferredCountryScore(task) {
 }
 
 function customerTypePriorityScore(task) {
-  return String(task.customerType || '').trim().toLowerCase() === 'agency' ? 25 : 0;
+  return ['agency', 'sales_agency'].includes(String(task.customerType || '').trim().toLowerCase()) ? 25 : 0;
+}
+
+function campaignScopeMatches(task) {
+  const scope = CONFIG.campaignScope || {};
+  if (scope.enabled !== true) return true;
+  const country = normalizedCountry(task);
+  const customerType = String(task.customerType || '').trim().toLowerCase();
+  const requiredCountries = (scope.requiredCountries || []).map(item => String(item || '').trim().toLowerCase()).filter(Boolean);
+  const requiredCustomerTypes = (scope.requiredCustomerTypes || []).map(item => String(item || '').trim().toLowerCase()).filter(Boolean);
+  return (!requiredCountries.length || requiredCountries.includes(country))
+    && (!requiredCustomerTypes.length || requiredCustomerTypes.includes(customerType));
 }
 
 function dealProbabilityScore(task) {
@@ -1317,16 +1328,19 @@ function buildDailyPotentialPool(classified, discoveryRun, context, targetSize) 
   const history = knownTouchIndex(context.results || [], [], context.now || Date.now());
   const embedded = readEmbeddedCustomerRecords()
     .filter(item => !item.excluded)
+    .filter(campaignScopeMatches)
     .map((item, index) => normalizePotentialItem(item, 'customer_table', history, index))
     .filter(item => item.fitScore > ICP_THRESHOLD)
     .filter(item => !/excluded|designer|student|foundation|government|school|nonprofit|501/i.test([item.category, item.role, item.company].join(' ')));
   const currentPlan = classified
     .filter(item => item.fitScore > ICP_THRESHOLD)
+    .filter(campaignScopeMatches)
     .map((item, index) => normalizePotentialItem(item, 'daily_plan', history, index));
   const discovered = (discoveryRun.leads || [])
     .filter(item => Number(item.fitScore || 0) > ICP_THRESHOLD)
     .filter(item => !item.doNotOutreach && item.action !== 'partner_account' && item.sendStatus !== 'partner_account')
     .filter(item => !isKnownPartnerCompany(item))
+    .filter(campaignScopeMatches)
     .map((item, index) => normalizePotentialItem(item, 'google_linkedin_social_refill', history, index));
   const seen = new Set();
   const deduped = [...currentPlan, ...embedded, ...discovered]
@@ -1421,7 +1435,7 @@ function buildVisibleTodayQueue(discoveryRun, context, targetSize = 3) {
     .filter(item => Number(item.fitScore || 0) > ICP_THRESHOLD)
     .filter(item => !item.doNotOutreach && item.action !== 'partner_account' && item.sendStatus !== 'partner_account')
     .filter(item => !isKnownPartnerCompany(item))
-    .filter(item => !/^united states$/i.test(String(item.country || item.countryEn || '').trim()))
+    .filter(campaignScopeMatches)
     .forEach((item) => {
       const key = slugKey(item.company || item.name || item.id);
       if (!key) return;

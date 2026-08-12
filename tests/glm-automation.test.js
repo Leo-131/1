@@ -26,6 +26,7 @@ const marketProtectionSource = fs.readFileSync(path.join(__dirname, '..', 'outre
 const alibabaWebmailSource = fs.readFileSync(path.join(__dirname, '..', 'outreach-dashboard', 'alibaba-webmail-automation.js'), 'utf8');
 const outreachPolicySource = fs.readFileSync(path.join(__dirname, '..', 'outreach-dashboard', '.agent', 'policies', 'outreach-policy.md'), 'utf8');
 const optimizedPromptSource = fs.readFileSync(path.join(__dirname, '..', 'outreach-dashboard', 'docs', 'daily-google-lead-outreach-optimized-prompt.md'), 'utf8');
+const dailyConfig = JSON.parse(fs.readFileSync(path.join(__dirname, '..', 'outreach-dashboard', 'daily-automation-config.json'), 'utf8'));
 
 function emptyClassificationContext(now = Date.parse('2026-07-14T08:00:00.000Z')) {
   return {
@@ -2006,4 +2007,13 @@ test('North America receives only the configured safe-priority bonus', () => {
   assert.equal(dailyRunner.preferredCountryScore({ countryEn: 'Canada' }), 30);
   assert.equal(dailyRunner.preferredCountryScore({ country: 'Mexico' }), 30);
   assert.equal(dailyRunner.preferredCountryScore({ country: 'United Kingdom' }), 0);
+});
+
+test('North America agency campaign scope excludes other markets and customer types', () => {
+  assert.deepEqual(dailyConfig.campaignScope.requiredCountries, ['united states', 'canada', 'mexico']);
+  assert.deepEqual(dailyConfig.campaignScope.requiredCustomerTypes, ['sales_agency']);
+  assert.ok(dailyRunnerSource.includes('function campaignScopeMatches'));
+  assert.match(dailyRunnerSource, /\.filter\(campaignScopeMatches\)/);
+  assert.ok(!dailyRunnerSource.includes("filter(item => !/^united states$/i"));
+  assert.ok(dailyRunnerSource.includes("['agency', 'sales_agency']"));
 });
