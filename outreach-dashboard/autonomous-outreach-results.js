@@ -16023,5 +16023,57 @@ window.AUTONOMOUS_OUTREACH_RESULTS = [
     "verificationStatus": "first_party_published_contact_email_verified_live_2026-08-12",
     "evidence": "exact_recipient_sender_subject_body_gate_passed;send_clicked_once;composer_closed;sent_folder_unique_company_body_reconciled;no_matched_DSN_in_bounded_inbox_scan",
     "recipientEmail": "InfoBeyondHope@aol.com"
+  },
+  {
+    "task_id": "google-customer-lyon-equipment-email-20260812",
+    "company": "Lyon Equipment",
+    "status": "sent_confirmed",
+    "agent": "codex-dedicated-chrome",
+    "browserTransportUsed": "dedicated Chrome/CDP 9224",
+    "timestamp": "2026-08-12T08:42:00.000Z",
+    "target_url": "mailto:info@lyon.co.uk",
+    "evidenceUrl": "https://www.lyon.co.uk/outdoor",
+    "verificationStatus": "first_party_company_email_verified_live_2026-08-12",
+    "evidence": "exact_recipient_sender_subject_body_gate_passed;send_clicked_once;composer_closed;sent_folder_unique_company_body_reconciled;no_matched_DSN_in_bounded_inbox_scan",
+    "recipientEmail": "info@lyon.co.uk"
+  },
+  {
+    "task_id": "google-customer-burton-mccall-email-20260812",
+    "company": "Burton McCall",
+    "status": "sent_confirmed",
+    "agent": "codex-dedicated-chrome",
+    "browserTransportUsed": "dedicated Chrome/CDP 9224",
+    "timestamp": "2026-08-12T08:42:20.000Z",
+    "target_url": "mailto:customer.services@burton-mccall.com",
+    "evidenceUrl": "https://www.burton-mccall.co.uk/",
+    "verificationStatus": "first_party_company_email_verified_live_2026-08-12",
+    "evidence": "exact_recipient_sender_subject_body_gate_passed;send_clicked_once;composer_closed;sent_folder_unique_company_body_reconciled;no_matched_DSN_in_bounded_inbox_scan",
+    "recipientEmail": "customer.services@burton-mccall.com"
+  },
+  {
+    "task_id": "google-customer-north-star-brands-email-20260812",
+    "company": "North Star Brands",
+    "status": "sent_confirmed",
+    "agent": "codex-dedicated-chrome",
+    "browserTransportUsed": "dedicated Chrome/CDP 9224",
+    "timestamp": "2026-08-12T08:43:00.000Z",
+    "target_url": "mailto:info@northstarbrands.co.uk",
+    "evidenceUrl": "https://www.alpinasports.co.uk/pages/contact-us",
+    "verificationStatus": "first_party_cross_verified_company_email_live_2026-08-12",
+    "evidence": "official_distributor_identity_cross_verified;exact_recipient_sender_subject_body_gate_passed;send_clicked_once;composer_closed;sent_folder_unique_company_body_reconciled;no_matched_DSN_in_bounded_inbox_scan",
+    "recipientEmail": "info@northstarbrands.co.uk"
+  },
+  {
+    "task_id": "google-customer-equip-outdoor-technologies-email-20260812",
+    "company": "Equip Outdoor Technologies",
+    "status": "sent_confirmed",
+    "agent": "codex-dedicated-chrome",
+    "browserTransportUsed": "dedicated Chrome/CDP 9224",
+    "timestamp": "2026-08-12T08:44:00.000Z",
+    "target_url": "mailto:sales@equipuk.com",
+    "evidenceUrl": "https://b2bhub.equipuk.com/hc/en-gb/p/contacts",
+    "verificationStatus": "first_party_company_email_verified_live_2026-08-12",
+    "evidence": "exact_recipient_sender_subject_body_gate_passed;send_clicked_once;composer_closed;sent_folder_unique_company_body_reconciled;no_matched_DSN_in_bounded_inbox_scan",
+    "recipientEmail": "sales@equipuk.com"
   }
 ];
