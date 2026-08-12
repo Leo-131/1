@@ -1,9 +1,9 @@
 window.GITHUB_SYNC_LATEST = {
-  "updatedAt": "2026-08-12T11:45:25.051Z",
+  "updatedAt": "2026-08-12T11:52:45.387Z",
   "ok": true,
   "pushed": true,
   "branch": "vercel-main-sync",
-  "localCommit": "5e6088b57f3202835af3c0ac937e3bd68d90b6c9",
-  "remoteCommit": "5e6088b57f3202835af3c0ac937e3bd68d90b6c9",
+  "localCommit": "5028d8c19ce20eeff0971f90c9f5ac51b9fd71d5",
+  "remoteCommit": "5028d8c19ce20eeff0971f90c9f5ac51b9fd71d5",
   "message": "sync: local outreach data 2026-08-12"
 };
