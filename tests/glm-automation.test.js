@@ -449,7 +449,7 @@ test('Google discovery autonomously refills verified agency and key-account cand
 });
 
 test('Google discovery loads auditable external supplier routes without treating homepages as contact evidence', () => {
-  const leads = buildLeads(400);
+  const leads = buildLeads(500);
   const outdoorNature = leads.find(item => item.id === 'google-customer-outdoor-nature-website-contact');
   const leftPoint = leads.find(item => item.id === 'google-customer-left-point-distribution-website-contact');
   const flameOutdoors = leads.find(item => item.id === 'google-customer-flameoutdoors-website-contact');
@@ -484,7 +484,7 @@ test('daily queue preserves official email provenance needed by the Alibaba exec
 });
 
 test('Google discovery promotes a first-party general-business email above a failed website or social route', () => {
-  const leads = buildLeads(400);
+  const leads = buildLeads(500);
   const tiso = leads.find(item => item.company === 'Tiso' && item.platform === 'website_form');
 
   assert.ok(tiso);
@@ -496,7 +496,7 @@ test('Google discovery promotes a first-party general-business email above a fai
 });
 
 test('Google discovery preserves newly verified independent-retailer routing emails and evidence', () => {
-  const leads = buildLeads(400);
+  const leads = buildLeads(500);
   const expected = new Map([
     ['Bentgate Mountaineering', ['bentgate@bentgate.com', 'https://www.bentgate.com/service/']],
     ['Valhalla Pure Outfitters', ['vancouver@vpo.ca', 'https://vpo.ca/stores/vpo-vancouver']],
@@ -863,7 +863,7 @@ test('potential pool capacity counts distinct companies instead of channel rows'
 
 test('daily discovery emits the full verified channel pool and reports executable capacity', () => {
   const packageJson = JSON.parse(fs.readFileSync(path.join(__dirname, '..', 'outreach-dashboard', 'package.json'), 'utf8'));
-  assert.match(packageJson.scripts['discover:daily'], /--limit=400/);
+  assert.match(packageJson.scripts['discover:daily'], /--limit=500/);
   assert.ok(dailyRunnerSource.includes('function channelReadinessSummary'));
   assert.ok(dailyRunnerSource.includes('executableReserveTarget: 130'));
   assert.ok(dailyRunnerSource.includes('executableReserveNeeded: readiness.reserveNeededFor100'));
@@ -1538,7 +1538,7 @@ test('Google discovery exposes normalized source metadata while retaining the le
 });
 
 test('Google discovery includes first-party-backed North America distributor reserve candidates', () => {
-  const leads = buildLeads(400);
+  const leads = buildLeads(500);
   const byCompany = new Map(leads.map((lead) => [lead.company, lead]));
   const expected = [
     ['Continental Sports Inc', 'Canada', 'info@csisports.net'],
@@ -1554,6 +1554,12 @@ test('Google discovery includes first-party-backed North America distributor res
     ['Northern Exposure Sporting Group', 'Canada', ''],
     ['ROI Recreation Outfitters', 'Canada', 'info@roirecreation.com'],
     ['Hicks Inc', 'United States', 'info@hicks.com'],
+    ['Interex Industries', 'Canada', ''],
+    ['D.M.A. Distributing', 'Canada', ''],
+    ['NordCore Group', 'Canada', ''],
+    ['Sturm Mil-Tec USA', 'United States', ''],
+    ['ICO Distributors', 'Canada', 'support@bridensolutions.ca'],
+    ['Wilcor International', 'United States', ''],
   ];
 
   for (const [company, country, email] of expected) {
