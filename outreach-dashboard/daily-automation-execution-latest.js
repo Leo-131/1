@@ -53,6 +53,20 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "reason": "official_website_contact_channel"
     },
     {
+      "id": "google-customer-alpinetrek-website-contact",
+      "company": "Alpinetrek",
+      "action": "verify_target",
+      "platform": "website_form",
+      "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
+      "id": "google-customer-ld-mountain-centre-website-contact",
+      "company": "LD Mountain Centre",
+      "action": "verify_target",
+      "platform": "website_form",
+      "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
       "id": "google-customer-left-point-distribution-website-contact",
       "company": "Left Point Distribution",
       "action": "email_priority",
@@ -95,20 +109,6 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "reason": "homepage_only_contact_path_requires_verification"
     },
     {
-      "id": "google-customer-alpinetrek-website-contact",
-      "company": "Alpinetrek",
-      "action": "verify_target",
-      "platform": "website_form",
-      "reason": "homepage_only_contact_path_requires_verification"
-    },
-    {
-      "id": "google-customer-de-wit-schijndel-website-contact",
-      "company": "De Wit Schijndel",
-      "action": "verify_target",
-      "platform": "website_form",
-      "reason": "homepage_only_contact_path_requires_verification"
-    },
-    {
       "id": "google-customer-ekosport-website-contact",
       "company": "Ekosport",
       "action": "verify_target",
@@ -130,32 +130,11 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "reason": "homepage_only_contact_path_requires_verification"
     },
     {
-      "id": "google-customer-ld-mountain-centre-website-contact",
-      "company": "LD Mountain Centre",
-      "action": "verify_target",
-      "platform": "website_form",
-      "reason": "homepage_only_contact_path_requires_verification"
-    },
-    {
-      "id": "google-customer-outdoorxl-website-contact",
-      "company": "OutdoorXL",
-      "action": "verify_target",
-      "platform": "website_form",
-      "reason": "homepage_only_contact_path_requires_verification"
-    },
-    {
       "id": "google-customer-rock-creek-website-contact",
       "company": "Rock/Creek",
       "action": "email_priority",
       "platform": "website_form",
       "reason": "official_public_business_email_verified"
-    },
-    {
-      "id": "google-customer-outdoor-specialist-website-contact",
-      "company": "Outdoor Specialist",
-      "action": "verify_target",
-      "platform": "website_form",
-      "reason": "homepage_only_contact_path_requires_verification"
     },
     {
       "id": "google-customer-next-adventure-website-contact",
@@ -207,6 +186,13 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "reason": "official_website_contact_channel"
     },
     {
+      "id": "google-customer-ld-mountain-centre-facebook",
+      "company": "LD Mountain Centre",
+      "action": "develop",
+      "platform": "facebook",
+      "reason": "social_profile_not_first_party_verified"
+    },
+    {
       "id": "google-customer-intersport-norway-facebook",
       "company": "Intersport Norway",
       "action": "develop",
@@ -228,10 +214,10 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "reason": "social_profile_not_first_party_verified"
     },
     {
-      "id": "google-customer-ld-mountain-centre-facebook",
+      "id": "google-customer-ld-mountain-centre-instagram",
       "company": "LD Mountain Centre",
       "action": "develop",
-      "platform": "facebook",
+      "platform": "instagram",
       "reason": "social_profile_not_first_party_verified"
     },
     {
@@ -256,13 +242,6 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "reason": "social_profile_not_first_party_verified"
     },
     {
-      "id": "google-customer-ld-mountain-centre-instagram",
-      "company": "LD Mountain Centre",
-      "action": "develop",
-      "platform": "instagram",
-      "reason": "social_profile_not_first_party_verified"
-    },
-    {
       "id": "sheet_1779293110195_9myxa520z",
       "company": "ARROW TIRE DISTRIBUTORS",
       "action": "email_priority",
@@ -282,6 +261,27 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "action": "email_priority",
       "platform": "email",
       "reason": "public_business_email_requires_verification"
+    },
+    {
+      "id": "google-customer-de-wit-schijndel-website-contact",
+      "company": "De Wit Schijndel",
+      "action": "verify_target",
+      "platform": "website_form",
+      "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
+      "id": "google-customer-outdoorxl-website-contact",
+      "company": "OutdoorXL",
+      "action": "verify_target",
+      "platform": "website_form",
+      "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
+      "id": "google-customer-outdoor-specialist-website-contact",
+      "company": "Outdoor Specialist",
+      "action": "verify_target",
+      "platform": "website_form",
+      "reason": "homepage_only_contact_path_requires_verification"
     },
     {
       "id": "google-customer-atmosphere-website-contact",
@@ -459,6 +459,20 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "reason": "verified_executable_channel_missing"
     },
     {
+      "id": "google-customer-alpinetrek-website-contact",
+      "company": "Alpinetrek",
+      "action": "verify_target",
+      "platform": "website_form",
+      "reason": "website_contact_capability_not_verified"
+    },
+    {
+      "id": "google-customer-ld-mountain-centre-website-contact",
+      "company": "LD Mountain Centre",
+      "action": "verify_target",
+      "platform": "website_form",
+      "reason": "website_contact_capability_not_verified"
+    },
+    {
       "id": "google-customer-bergfreunde-website-contact",
       "company": "Bergfreunde",
       "action": "verify_target",
@@ -468,13 +482,6 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     {
       "id": "google-customer-au-vieux-campeur-website-contact",
       "company": "Au Vieux Campeur",
-      "action": "verify_target",
-      "platform": "website_form",
-      "reason": "website_contact_capability_not_verified"
-    },
-    {
-      "id": "google-customer-alpinetrek-website-contact",
-      "company": "Alpinetrek",
       "action": "verify_target",
       "platform": "website_form",
       "reason": "website_contact_capability_not_verified"
@@ -503,13 +510,6 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     {
       "id": "google-customer-campz-website-contact",
       "company": "Campz",
-      "action": "verify_target",
-      "platform": "website_form",
-      "reason": "website_contact_capability_not_verified"
-    },
-    {
-      "id": "google-customer-ld-mountain-centre-website-contact",
-      "company": "LD Mountain Centre",
       "action": "verify_target",
       "platform": "website_form",
       "reason": "website_contact_capability_not_verified"
@@ -622,7 +622,7 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     "queueCount": 59,
     "googleDiscovered": 40,
     "refillNeeded": 52,
-    "confirmedToday": 0,
+    "confirmedToday": 8,
     "reached": false,
     "action": "Add more verified high-ICP sources or unblock existing website/social leads."
   },
@@ -897,5 +897,5 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     "scanned": 0,
     "updated": 0
   },
-  "completedAt": "2026-08-12T08:27:23.013Z"
+  "completedAt": "2026-08-12T08:41:11.667Z"
 };

@@ -1863,3 +1863,9 @@ test('discovery ignores likes and follows while preserving confirmed DM protecti
   assert.ok(!history.activeCooldown.has('mec'));
   assert.ok(history.sentConfirmed.has('bever'));
 });
+
+test('United Kingdom receives only the configured safe-priority bonus', () => {
+  assert.equal(dailyRunner.preferredCountryScore({ country: 'United Kingdom' }), 30);
+  assert.equal(dailyRunner.preferredCountryScore({ countryEn: 'UK' }), 30);
+  assert.equal(dailyRunner.preferredCountryScore({ country: 'Germany' }), 0);
+});

@@ -87,6 +87,8 @@ Discovery passes only when artifacts are fresh, `summary.googleDiscovered > 0`, 
 
 Execution passes only when `daily-automation-execution-latest.json` proves real customer development: `customerDevelopmentPerformed=true` and `realDevelopmentCount>0`, with confirmed evidence such as `sent_confirmed`. Browser opened, draft prepared, approval pending, or skipped-only is not a pass.
 
+When the run has a requested priority country, apply a configurable country bonus only after ICP, agency exclusivity, identity, first-party channel, duplicate, cooldown, compliance, and confirmation gates. For the current production configuration, prioritize the United Kingdom among otherwise eligible customers; the bonus may reorder safe candidates but must never make an unsafe or lower-ICP target executable. An email pre-send technical failure must immediately try a first-party-verified official social channel in the same customer execution, while a send click, uncertain confirmation, bounce, or any irreversible interaction locks every alternate channel.
+
 Dashboard passes only when served routes return current data, timestamps are fresh, queue counts match artifacts, and the automation run is visible. Prefer byte/hash or schema comparison over visual assumptions.
 
 GitHub passes only when the final local HEAD, upstream HEAD, remote branch HEAD, and `github-sync/latest-status.json` agree. In PowerShell, quote `git rev-parse 'HEAD@{u}'`.

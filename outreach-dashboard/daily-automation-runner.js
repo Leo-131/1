@@ -35,6 +35,8 @@ const DEFAULT_CONFIG = {
   marketPriority: {
     openAgencyBonus: 18,
     exclusiveAgencyPenalty: 60,
+    preferredCountryBonus: 30,
+    preferredCountries: ['united kingdom', 'uk'],
     exclusiveStatuses: ['独代占用', '独家代理', '独家', 'exclusive', 'reserved', 'blocked'],
     openStatuses: ['可开拓', '开放', 'open', 'available'],
   },
@@ -226,6 +228,16 @@ function contactChannelScore(task) {
   return score;
 }
 
+function preferredCountryScore(task) {
+  const country = normalizedCountry(task);
+  const preferred = (CONFIG.marketPriority.preferredCountries || [])
+    .map(item => String(item || '').trim().toLowerCase())
+    .filter(Boolean);
+  return preferred.some(item => country === item)
+    ? Number(CONFIG.marketPriority.preferredCountryBonus || 0)
+    : 0;
+}
+
 function customerTypePriorityScore(task) {
   return String(task.customerType || '').trim().toLowerCase() === 'agency' ? 25 : 0;
 }
@@ -235,6 +247,7 @@ function dealProbabilityScore(task) {
     + Math.round(Number(task.marketScore || 0) * 12)
     + marketAgencyScore(task)
     + targetRegionScore(task)
+    + preferredCountryScore(task)
     + contactChannelScore(task)
     + customerTypePriorityScore(task);
 }
@@ -1641,4 +1654,5 @@ module.exports = {
   channelExecutionReadiness,
   dedupeQueueItems,
   promoteExecutionReadyQueueRows,
+  preferredCountryScore,
 };
