@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-12T09:09:28.202Z",
+  "generatedAt": "2026-08-12T09:32:26.635Z",
   "companies": [
     {
       "companyId": "company_819cc04fe9060117",
@@ -25,7 +25,7 @@
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://www.intersport.no/",
-          "checkedAt": "2026-08-11T10:05:33.443Z"
+          "checkedAt": "2026-08-12T09:30:42.108Z"
         },
         {
           "channel": "facebook",
@@ -35,7 +35,7 @@
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://www.intersport.no/",
-          "checkedAt": "2026-08-11T10:05:33.443Z"
+          "checkedAt": "2026-08-12T09:30:42.108Z"
         },
         {
           "channel": "facebook",
@@ -45,7 +45,7 @@
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://www.intersport.no/",
-          "checkedAt": "2026-08-11T10:05:33.443Z"
+          "checkedAt": "2026-08-12T09:30:42.108Z"
         },
         {
           "channel": "website_form",
@@ -2098,7 +2098,7 @@
             "official_business_route"
           ],
           "evidenceUrl": "https://www.nwogco.com/",
-          "checkedAt": "2026-08-11T13:17:58.794Z"
+          "checkedAt": "2026-08-12T09:32:18.888Z"
         },
         {
           "channel": "website_form",
@@ -4621,7 +4621,7 @@
           "reasons": [
             "first_party_evidence"
           ],
-          "evidenceUrl": "https://komsa.com/en/contact/",
+          "evidenceUrl": "https://komsa.com/en/contact",
           "checkedAt": ""
         },
         {
@@ -4631,7 +4631,7 @@
           "reasons": [
             "unverified_external_evidence_rejected"
           ],
-          "evidenceUrl": "https://komsa.com/en/contact/",
+          "evidenceUrl": "https://komsa.com/en/contact",
           "checkedAt": ""
         }
       ],
@@ -4752,7 +4752,7 @@
           "reasons": [
             "official_business_route"
           ],
-          "evidenceUrl": "https://support.aqipa.com/en-US/kb/articles/anfrage-partner-werden",
+          "evidenceUrl": "https://support.aqipa.com/en-US/new-ticket",
           "checkedAt": ""
         },
         {
@@ -4762,7 +4762,7 @@
           "reasons": [
             "unverified_external_evidence_rejected"
           ],
-          "evidenceUrl": "https://support.aqipa.com/en-US/kb/articles/anfrage-partner-werden",
+          "evidenceUrl": "https://support.aqipa.com/en-US/new-ticket",
           "checkedAt": ""
         }
       ],
@@ -10745,7 +10745,7 @@
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://www.bever.nl/",
-          "checkedAt": "2026-08-11T10:05:31.125Z"
+          "checkedAt": "2026-08-12T09:30:43.227Z"
         },
         {
           "channel": "website_form",
@@ -13361,12 +13361,12 @@
         },
         {
           "channel": "website_form",
-          "score": 80,
+          "score": 0,
           "verified": false,
           "reasons": [
-            "first_party_evidence"
+            "unverified_external_evidence_rejected"
           ],
-          "evidenceUrl": "https://www.christysports.com/",
+          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
           "checkedAt": ""
         }
       ],
@@ -13437,12 +13437,12 @@
         },
         {
           "channel": "website_form",
-          "score": 100,
-          "verified": true,
+          "score": 0,
+          "verified": false,
           "reasons": [
-            "official_business_route"
+            "unverified_external_evidence_rejected"
           ],
-          "evidenceUrl": "https://paragonsports.com/",
+          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
           "checkedAt": ""
         }
       ],
@@ -13484,7 +13484,7 @@
           "reasons": [
             "unverified_external_evidence_rejected"
           ],
-          "evidenceUrl": "https://www.mountain-equipment.com/",
+          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
           "checkedAt": ""
         },
         {
@@ -13494,7 +13494,7 @@
           "reasons": [
             "unverified_external_evidence_rejected"
           ],
-          "evidenceUrl": "https://www.mountain-equipment.com/",
+          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
           "checkedAt": ""
         },
         {
@@ -13504,7 +13504,7 @@
           "reasons": [
             "unverified_external_evidence_rejected"
           ],
-          "evidenceUrl": "https://www.mountain-equipment.com/",
+          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
           "checkedAt": ""
         }
       ],
@@ -13536,23 +13536,13 @@
       ],
       "evidence": [
         {
-          "channel": "website_form",
-          "score": 100,
-          "verified": true,
-          "reasons": [
-            "official_business_route"
-          ],
-          "evidenceUrl": "https://www.tiso.com/pages/contact",
-          "checkedAt": ""
-        },
-        {
           "channel": "instagram",
           "score": 0,
           "verified": false,
           "reasons": [
             "unverified_external_evidence_rejected"
           ],
-          "evidenceUrl": "https://www.tiso.com/pages/contact",
+          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
           "checkedAt": ""
         },
         {
@@ -13562,7 +13552,17 @@
           "reasons": [
             "unverified_external_evidence_rejected"
           ],
-          "evidenceUrl": "https://www.tiso.com/pages/contact",
+          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
+          "checkedAt": ""
+        },
+        {
+          "channel": "website_form",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
           "checkedAt": ""
         },
         {
@@ -13698,7 +13698,7 @@
           "reasons": [
             "unverified_external_evidence_rejected"
           ],
-          "evidenceUrl": "https://www.tiso.com/pages/george-fisher-landing?utm_source=georgefisher",
+          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
           "checkedAt": ""
         },
         {
@@ -13708,7 +13708,7 @@
           "reasons": [
             "unverified_external_evidence_rejected"
           ],
-          "evidenceUrl": "https://www.tiso.com/pages/george-fisher-landing?utm_source=georgefisher",
+          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
           "checkedAt": ""
         },
         {
@@ -13718,7 +13718,7 @@
           "reasons": [
             "unverified_external_evidence_rejected"
           ],
-          "evidenceUrl": "https://www.tiso.com/pages/george-fisher-landing?utm_source=georgefisher",
+          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
           "checkedAt": ""
         }
       ],
@@ -13905,23 +13905,23 @@
           "checkedAt": "2026-08-12T09:09:10.932Z"
         },
         {
-          "channel": "website_form",
-          "score": 80,
-          "verified": false,
-          "reasons": [
-            "first_party_evidence"
-          ],
-          "evidenceUrl": "https://www.facewest.co.uk/",
-          "checkedAt": ""
-        },
-        {
           "channel": "instagram",
           "score": 0,
           "verified": false,
           "reasons": [
             "unverified_external_evidence_rejected"
           ],
-          "evidenceUrl": "https://www.facewest.co.uk/",
+          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
+          "checkedAt": ""
+        },
+        {
+          "channel": "website_form",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
           "checkedAt": ""
         }
       ],
@@ -14021,23 +14021,23 @@
           "checkedAt": "2026-08-12T09:09:12.168Z"
         },
         {
-          "channel": "website_form",
-          "score": 100,
-          "verified": true,
-          "reasons": [
-            "official_business_route"
-          ],
-          "evidenceUrl": "https://72hours.ca/",
-          "checkedAt": ""
-        },
-        {
           "channel": "instagram",
           "score": 0,
           "verified": false,
           "reasons": [
             "unverified_external_evidence_rejected"
           ],
-          "evidenceUrl": "https://72hours.ca/",
+          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
+          "checkedAt": ""
+        },
+        {
+          "channel": "website_form",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
           "checkedAt": ""
         }
       ],
@@ -14392,7 +14392,7 @@
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://www.wildearth.com.au/",
-          "checkedAt": "2026-08-11T07:05:15.639Z"
+          "checkedAt": "2026-08-12T09:09:16.254Z"
         },
         {
           "channel": "facebook",
@@ -14402,7 +14402,7 @@
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://www.wildearth.com.au/",
-          "checkedAt": "2026-08-11T07:05:15.639Z"
+          "checkedAt": "2026-08-12T09:09:16.254Z"
         },
         {
           "channel": "website_form",
@@ -14412,7 +14412,7 @@
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://www.wildearth.com.au/",
-          "checkedAt": "2026-08-11T07:05:15.639Z"
+          "checkedAt": "2026-08-12T09:09:16.254Z"
         }
       ],
       "history": [
@@ -14469,23 +14469,23 @@
           "checkedAt": "2026-08-12T09:09:17.472Z"
         },
         {
-          "channel": "website_form",
-          "score": 80,
-          "verified": false,
-          "reasons": [
-            "first_party_evidence"
-          ],
-          "evidenceUrl": "https://www.paddypallin.com.au/",
-          "checkedAt": ""
-        },
-        {
           "channel": "instagram",
           "score": 0,
           "verified": false,
           "reasons": [
             "unverified_external_evidence_rejected"
           ],
-          "evidenceUrl": "https://www.paddypallin.com.au/",
+          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
+          "checkedAt": ""
+        },
+        {
+          "channel": "website_form",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
           "checkedAt": ""
         }
       ],
@@ -14528,7 +14528,7 @@
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://www.macpac.com.au/",
-          "checkedAt": "2026-08-11T07:05:16.181Z"
+          "checkedAt": "2026-08-12T09:09:18.163Z"
         },
         {
           "channel": "facebook",
@@ -14538,7 +14538,7 @@
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://www.macpac.com.au/",
-          "checkedAt": "2026-08-11T07:05:16.181Z"
+          "checkedAt": "2026-08-12T09:09:18.163Z"
         },
         {
           "channel": "website_form",
@@ -14718,23 +14718,13 @@
       ],
       "evidence": [
         {
-          "channel": "website_form",
-          "score": 80,
-          "verified": false,
-          "reasons": [
-            "first_party_evidence"
-          ],
-          "evidenceUrl": "https://www.outdooraction.co.nz/",
-          "checkedAt": ""
-        },
-        {
           "channel": "instagram",
           "score": 0,
           "verified": false,
           "reasons": [
             "unverified_external_evidence_rejected"
           ],
-          "evidenceUrl": "https://www.outdooraction.co.nz/",
+          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
           "checkedAt": ""
         },
         {
@@ -14744,7 +14734,17 @@
           "reasons": [
             "unverified_external_evidence_rejected"
           ],
-          "evidenceUrl": "https://www.outdooraction.co.nz/",
+          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
+          "checkedAt": ""
+        },
+        {
+          "channel": "website_form",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
           "checkedAt": ""
         }
       ],
@@ -14785,7 +14785,7 @@
             "official_business_route"
           ],
           "evidenceUrl": "https://www.sport-conrad.com/",
-          "checkedAt": "2026-08-11T07:05:23.767Z"
+          "checkedAt": "2026-08-12T09:30:26.152Z"
         },
         {
           "channel": "facebook",
@@ -14795,7 +14795,7 @@
             "official_business_route"
           ],
           "evidenceUrl": "https://www.sport-conrad.com/",
-          "checkedAt": "2026-08-11T07:05:23.767Z"
+          "checkedAt": "2026-08-12T09:30:26.152Z"
         },
         {
           "channel": "website_form",
@@ -14937,7 +14937,7 @@
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://www.doorout.com/",
-          "checkedAt": "2026-08-11T07:05:24.277Z"
+          "checkedAt": "2026-08-12T09:30:33.928Z"
         },
         {
           "channel": "facebook",
@@ -14947,7 +14947,7 @@
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://www.doorout.com/",
-          "checkedAt": "2026-08-11T07:05:24.277Z"
+          "checkedAt": "2026-08-12T09:30:33.928Z"
         },
         {
           "channel": "website_form",
@@ -14957,7 +14957,7 @@
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://www.doorout.com/",
-          "checkedAt": "2026-08-11T07:05:24.277Z"
+          "checkedAt": "2026-08-12T09:30:33.928Z"
         }
       ],
       "history": [
@@ -15071,7 +15071,7 @@
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://www.addnature.com/",
-          "checkedAt": "2026-08-11T10:05:25.039Z"
+          "checkedAt": "2026-08-12T09:30:24.349Z"
         },
         {
           "channel": "facebook",
@@ -15081,7 +15081,7 @@
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://www.addnature.com/",
-          "checkedAt": "2026-08-11T10:05:25.039Z"
+          "checkedAt": "2026-08-12T09:30:24.349Z"
         },
         {
           "channel": "website_form",
@@ -15207,7 +15207,7 @@
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://www.blue-tomato.com/de-DE/",
-          "checkedAt": "2026-08-11T10:05:26.190Z"
+          "checkedAt": "2026-08-12T09:30:37.120Z"
         },
         {
           "channel": "facebook",
@@ -15217,7 +15217,7 @@
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://www.blue-tomato.com/de-DE/",
-          "checkedAt": "2026-08-11T10:05:26.190Z"
+          "checkedAt": "2026-08-12T09:30:37.120Z"
         },
         {
           "channel": "website_form",
@@ -15379,7 +15379,7 @@
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://www.tradeinn.com/trekkinn/en",
-          "checkedAt": "2026-08-11T10:05:27.409Z"
+          "checkedAt": "2026-08-12T09:30:36.302Z"
         },
         {
           "channel": "instagram",
@@ -15453,7 +15453,7 @@
             "official_business_route"
           ],
           "evidenceUrl": "https://www.4camping.cz/",
-          "checkedAt": "2026-08-11T10:05:28.180Z"
+          "checkedAt": "2026-08-12T09:30:35.898Z"
         },
         {
           "channel": "facebook",
@@ -15514,7 +15514,7 @@
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://8a.pl/",
-          "checkedAt": "2026-08-11T10:05:26.722Z"
+          "checkedAt": "2026-08-12T09:30:38.249Z"
         },
         {
           "channel": "facebook",
@@ -15524,7 +15524,7 @@
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://8a.pl/",
-          "checkedAt": "2026-08-11T10:05:26.722Z"
+          "checkedAt": "2026-08-12T09:30:38.249Z"
         },
         {
           "channel": "website_form",
@@ -15534,7 +15534,7 @@
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://8a.pl/",
-          "checkedAt": "2026-08-11T10:05:26.722Z"
+          "checkedAt": "2026-08-12T09:30:38.249Z"
         }
       ],
       "history": [
@@ -15760,7 +15760,7 @@
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://www.masseysoutfitters.com/",
-          "checkedAt": "2026-08-11T10:05:29.577Z"
+          "checkedAt": "2026-08-12T09:30:41.193Z"
         },
         {
           "channel": "website_form",
@@ -16394,12 +16394,12 @@
       "evidence": [
         {
           "channel": "website_form",
-          "score": 0,
-          "verified": false,
+          "score": 100,
+          "verified": true,
           "reasons": [
-            "unverified_external_evidence_rejected"
+            "official_business_route"
           ],
-          "evidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
+          "evidenceUrl": "https://durangooutdoorexchange.com/",
           "checkedAt": ""
         }
       ],
@@ -16536,12 +16536,12 @@
       "evidence": [
         {
           "channel": "website_form",
-          "score": 0,
-          "verified": false,
+          "score": 100,
+          "verified": true,
           "reasons": [
-            "unverified_external_evidence_rejected"
+            "official_business_route"
           ],
-          "evidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
+          "evidenceUrl": "https://www.outdoorshoplewes.co.uk/",
           "checkedAt": ""
         },
         {
@@ -16628,12 +16628,12 @@
       "evidence": [
         {
           "channel": "website_form",
-          "score": 0,
-          "verified": false,
+          "score": 100,
+          "verified": true,
           "reasons": [
-            "unverified_external_evidence_rejected"
+            "official_business_route"
           ],
-          "evidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
+          "evidenceUrl": "https://vamosoutdoors.ca/",
           "checkedAt": ""
         },
         {
@@ -16720,12 +16720,12 @@
       "evidence": [
         {
           "channel": "website_form",
-          "score": 0,
-          "verified": false,
+          "score": 100,
+          "verified": true,
           "reasons": [
-            "unverified_external_evidence_rejected"
+            "official_business_route"
           ],
-          "evidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
+          "evidenceUrl": "https://www.actionoutdoors.co.uk/about/",
           "checkedAt": ""
         },
         {
@@ -16766,12 +16766,12 @@
       "evidence": [
         {
           "channel": "website_form",
-          "score": 0,
-          "verified": false,
+          "score": 100,
+          "verified": true,
           "reasons": [
-            "unverified_external_evidence_rejected"
+            "official_business_route"
           ],
-          "evidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
+          "evidenceUrl": "https://spryactive.ca/pages/about",
           "checkedAt": ""
         },
         {
@@ -16812,12 +16812,12 @@
       "evidence": [
         {
           "channel": "website_form",
-          "score": 0,
-          "verified": false,
+          "score": 100,
+          "verified": true,
           "reasons": [
-            "unverified_external_evidence_rejected"
+            "official_business_route"
           ],
-          "evidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
+          "evidenceUrl": "https://lifestylegear.co.nz/pages/contact",
           "checkedAt": ""
         },
         {
@@ -16955,12 +16955,12 @@
       "evidence": [
         {
           "channel": "website_form",
-          "score": 0,
-          "verified": false,
+          "score": 100,
+          "verified": true,
           "reasons": [
-            "unverified_external_evidence_rejected"
+            "official_business_route"
           ],
-          "evidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
+          "evidenceUrl": "https://oldschooloutdoor.com/pages/contact",
           "checkedAt": ""
         },
         {
@@ -17006,7 +17006,7 @@
             "official_business_route"
           ],
           "evidenceUrl": "https://gecko-overland.com/contact/",
-          "checkedAt": "2026-08-11T13:17:57.559Z"
+          "checkedAt": "2026-08-12T09:32:15.495Z"
         },
         {
           "channel": "website_form",
@@ -17144,7 +17144,7 @@
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://www.basecamp-outfitters.com/",
-          "checkedAt": "2026-08-11T13:18:00.631Z"
+          "checkedAt": "2026-08-12T09:32:16.566Z"
         },
         {
           "channel": "website_form",
@@ -18906,6 +18906,646 @@
           "timestamp": "2026-08-12T09:06:20.000Z",
           "channel": "email",
           "evidence": "official_UK_leisure_parts_distributor_contact_verified;exact_recipient_sender_subject_body_gate_passed;send_clicked_once;sent_folder_unique_company_body_reconciled;no_matched_DSN_in_bounded_inbox_and_spam_scan"
+        }
+      ]
+    },
+    {
+      "companyId": "company_95b61cf67772f39b",
+      "company": "CDA Limited",
+      "keys": [
+        "cdalimited",
+        "cdalimitedemail20260812"
+      ],
+      "domains": [],
+      "channels": [
+        "email"
+      ],
+      "evidence": [
+        {
+          "channel": "email",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "https://www.cdalimited.com/about/",
+          "checkedAt": ""
+        }
+      ],
+      "history": [
+        {
+          "status": "sent_confirmed",
+          "timestamp": "2026-08-12T09:16:00.000Z",
+          "channel": "email",
+          "evidence": "official_company_and_channel_verified;exact_recipient_sender_subject_body_gate_passed;send_clicked_once;sent_folder_unique_company_body_reconciled;no_matched_DSN_in_bounded_inbox_and_spam_scan"
+        }
+      ]
+    },
+    {
+      "companyId": "company_cb8e578ca0c3f6db",
+      "company": "Bushgear",
+      "keys": [
+        "bushgear",
+        "bushgearemail20260812"
+      ],
+      "domains": [],
+      "channels": [
+        "email"
+      ],
+      "evidence": [
+        {
+          "channel": "email",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "https://www.bushgear.co.uk/pages/contact-us",
+          "checkedAt": ""
+        }
+      ],
+      "history": [
+        {
+          "status": "sent_confirmed",
+          "timestamp": "2026-08-12T09:16:30.000Z",
+          "channel": "email",
+          "evidence": "official_company_and_channel_verified;exact_recipient_sender_subject_body_gate_passed;send_clicked_once;sent_folder_unique_company_body_reconciled;no_matched_DSN_in_bounded_inbox_and_spam_scan"
+        }
+      ]
+    },
+    {
+      "companyId": "company_12edf2a245173998",
+      "company": "Dove Bikes",
+      "keys": [
+        "dovebikes",
+        "dovebikesemail20260812"
+      ],
+      "domains": [],
+      "channels": [
+        "email"
+      ],
+      "evidence": [
+        {
+          "channel": "email",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "https://dovedev.com/dove_bikes/",
+          "checkedAt": ""
+        }
+      ],
+      "history": [
+        {
+          "status": "sent_confirmed",
+          "timestamp": "2026-08-12T09:17:00.000Z",
+          "channel": "email",
+          "evidence": "official_company_and_channel_verified;exact_recipient_sender_subject_body_gate_passed;send_clicked_once;sent_folder_unique_company_body_reconciled;no_matched_DSN_in_bounded_inbox_and_spam_scan"
+        }
+      ]
+    },
+    {
+      "companyId": "company_dd5047deb2013530",
+      "company": "VeloBrands",
+      "keys": [
+        "velobrands",
+        "velobrandsemail20260812"
+      ],
+      "domains": [],
+      "channels": [
+        "email"
+      ],
+      "evidence": [
+        {
+          "channel": "email",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "https://velobrands.co.uk/",
+          "checkedAt": ""
+        }
+      ],
+      "history": [
+        {
+          "status": "sent_confirmed",
+          "timestamp": "2026-08-12T09:17:20.000Z",
+          "channel": "email",
+          "evidence": "official_company_and_channel_verified;exact_recipient_sender_subject_body_gate_passed;send_clicked_once;sent_folder_unique_company_body_reconciled;no_matched_DSN_in_bounded_inbox_and_spam_scan"
+        }
+      ]
+    },
+    {
+      "companyId": "company_3b23b5a99d6c0ca0",
+      "company": "Velovice",
+      "keys": [
+        "velovice",
+        "veloviceemail20260812"
+      ],
+      "domains": [],
+      "channels": [
+        "email"
+      ],
+      "evidence": [
+        {
+          "channel": "email",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "https://www.velovice.co.uk/about",
+          "checkedAt": ""
+        }
+      ],
+      "history": [
+        {
+          "status": "sent_confirmed",
+          "timestamp": "2026-08-12T09:17:40.000Z",
+          "channel": "email",
+          "evidence": "official_company_and_channel_verified;exact_recipient_sender_subject_body_gate_passed;send_clicked_once;sent_folder_unique_company_body_reconciled;no_matched_DSN_in_bounded_inbox_and_spam_scan"
+        }
+      ]
+    },
+    {
+      "companyId": "company_cf9ca1cd9b1d8f8c",
+      "company": "LKQ Nova Leisure",
+      "keys": [
+        "lkqnovaleisure",
+        "lkqnovaleisureemail20260812"
+      ],
+      "domains": [],
+      "channels": [
+        "email"
+      ],
+      "evidence": [
+        {
+          "channel": "email",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "https://www.novaleisure.com/contact-us",
+          "checkedAt": ""
+        }
+      ],
+      "history": [
+        {
+          "status": "sent_confirmed",
+          "timestamp": "2026-08-12T09:18:00.000Z",
+          "channel": "email",
+          "evidence": "official_company_and_channel_verified;exact_recipient_sender_subject_body_gate_passed;send_clicked_once;sent_folder_unique_company_body_reconciled;no_matched_DSN_in_bounded_inbox_and_spam_scan"
+        }
+      ]
+    },
+    {
+      "companyId": "company_b28d192b9f4ed02a",
+      "company": "Leisure Vehicle Services",
+      "keys": [
+        "leisurevehicleservices",
+        "leisurevehicleservicesemail20260812"
+      ],
+      "domains": [],
+      "channels": [
+        "email"
+      ],
+      "evidence": [
+        {
+          "channel": "email",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "https://www.tradeleisure.com/contact/contact.aspx",
+          "checkedAt": ""
+        }
+      ],
+      "history": [
+        {
+          "status": "sent_confirmed",
+          "timestamp": "2026-08-12T09:18:20.000Z",
+          "channel": "email",
+          "evidence": "official_company_and_channel_verified;exact_recipient_sender_subject_body_gate_passed;send_clicked_once;sent_folder_unique_company_body_reconciled;no_matched_DSN_in_bounded_inbox_and_spam_scan"
+        }
+      ]
+    },
+    {
+      "companyId": "company_1608e14eb40e985e",
+      "company": "Streetwize",
+      "keys": [
+        "streetwize",
+        "streetwizeemail20260812"
+      ],
+      "domains": [],
+      "channels": [
+        "email"
+      ],
+      "evidence": [
+        {
+          "channel": "email",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "https://www.streetwizeaccessories.com/contact/contact.aspx",
+          "checkedAt": ""
+        }
+      ],
+      "history": [
+        {
+          "status": "sent_confirmed",
+          "timestamp": "2026-08-12T09:18:40.000Z",
+          "channel": "email",
+          "evidence": "official_company_and_channel_verified;exact_recipient_sender_subject_body_gate_passed;send_clicked_once;sent_folder_unique_company_body_reconciled;no_matched_DSN_in_bounded_inbox_and_spam_scan"
+        }
+      ]
+    },
+    {
+      "companyId": "company_b676d02fb2af1aef",
+      "company": "Leisure Spares",
+      "keys": [
+        "leisurespares",
+        "leisuresparesemail20260812"
+      ],
+      "domains": [],
+      "channels": [
+        "email"
+      ],
+      "evidence": [
+        {
+          "channel": "email",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "https://www.leisurespares.co.uk/about-us",
+          "checkedAt": ""
+        }
+      ],
+      "history": [
+        {
+          "status": "sent_confirmed",
+          "timestamp": "2026-08-12T09:18:50.000Z",
+          "channel": "email",
+          "evidence": "official_company_and_channel_verified;exact_recipient_sender_subject_body_gate_passed;send_clicked_once;sent_folder_unique_company_body_reconciled;no_matched_DSN_in_bounded_inbox_and_spam_scan"
+        }
+      ]
+    },
+    {
+      "companyId": "company_eece80d25e86c598",
+      "company": "Shatchi",
+      "keys": [
+        "shatchi",
+        "shatchiemail20260812"
+      ],
+      "domains": [],
+      "channels": [
+        "email"
+      ],
+      "evidence": [
+        {
+          "channel": "email",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "https://shatchi.co.uk/",
+          "checkedAt": ""
+        }
+      ],
+      "history": [
+        {
+          "status": "sent_confirmed",
+          "timestamp": "2026-08-12T09:19:00.000Z",
+          "channel": "email",
+          "evidence": "official_company_and_channel_verified;exact_recipient_sender_subject_body_gate_passed;send_clicked_once;sent_folder_unique_company_body_reconciled;no_matched_DSN_in_bounded_inbox_and_spam_scan"
+        }
+      ]
+    },
+    {
+      "companyId": "company_ffd0989899574710",
+      "company": "Europa Leisure",
+      "keys": [
+        "europaleisure",
+        "europaleisureemail20260812"
+      ],
+      "domains": [],
+      "channels": [
+        "email"
+      ],
+      "evidence": [
+        {
+          "channel": "email",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "https://www.europaleisure.co.uk/about-us/",
+          "checkedAt": ""
+        }
+      ],
+      "history": [
+        {
+          "status": "bounced",
+          "timestamp": "2026-08-12T09:19:20.000Z",
+          "channel": "email",
+          "evidence": "exact_recipient_sender_subject_body_gate_passed;send_clicked_once;sent_folder_unique_company_body_reconciled;matched_DSN_address_not_found_2026-08-12T17:20:00+08:00;company_locked_no_resend_no_cross_channel_replay"
+        }
+      ]
+    },
+    {
+      "companyId": "company_1e1d7e5abd73d0b8",
+      "company": "Sports Wholesale",
+      "keys": [
+        "sportswholesale",
+        "sportswholesaleemail20260812"
+      ],
+      "domains": [],
+      "channels": [
+        "email"
+      ],
+      "evidence": [
+        {
+          "channel": "email",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "https://sportswholesale.co.uk/contact-us",
+          "checkedAt": ""
+        }
+      ],
+      "history": [
+        {
+          "status": "sent_confirmed",
+          "timestamp": "2026-08-12T09:20:00.000Z",
+          "channel": "email",
+          "evidence": "official_company_and_channel_verified;exact_recipient_sender_subject_body_gate_passed;send_clicked_once;sent_folder_unique_company_body_reconciled;no_matched_DSN_in_bounded_inbox_and_spam_scan"
+        }
+      ]
+    },
+    {
+      "companyId": "company_e870d28a5309de2e",
+      "company": "Country Sports Wholesale",
+      "keys": [
+        "countrysportswholesale",
+        "countrysportswholesaleemail20260812"
+      ],
+      "domains": [],
+      "channels": [
+        "email"
+      ],
+      "evidence": [
+        {
+          "channel": "email",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "https://csw.company/pages/trade-enquiry",
+          "checkedAt": ""
+        }
+      ],
+      "history": [
+        {
+          "status": "sent_confirmed",
+          "timestamp": "2026-08-12T09:21:00.000Z",
+          "channel": "email",
+          "evidence": "official_company_and_channel_verified;exact_recipient_sender_subject_body_gate_passed;send_clicked_once;sent_folder_unique_company_body_reconciled;no_matched_DSN_in_bounded_inbox_and_spam_scan"
+        }
+      ]
+    },
+    {
+      "companyId": "company_afa7aacf853cc7ce",
+      "company": "Highlight Horticulture",
+      "keys": [
+        "highlighthorticulture",
+        "highlighthorticultureemail20260812"
+      ],
+      "domains": [],
+      "channels": [
+        "email"
+      ],
+      "evidence": [
+        {
+          "channel": "email",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "https://highlighthorticulture.co.uk/",
+          "checkedAt": ""
+        }
+      ],
+      "history": [
+        {
+          "status": "sent_confirmed",
+          "timestamp": "2026-08-12T09:22:00.000Z",
+          "channel": "email",
+          "evidence": "official_company_and_channel_verified;exact_recipient_sender_subject_body_gate_passed;send_clicked_once;sent_folder_unique_company_body_reconciled;no_matched_DSN_in_bounded_inbox_and_spam_scan"
+        }
+      ]
+    },
+    {
+      "companyId": "company_9fae4197d28befc0",
+      "company": "BHGS",
+      "keys": [
+        "bhgs",
+        "bhgsemail20260812"
+      ],
+      "domains": [],
+      "channels": [
+        "email"
+      ],
+      "evidence": [
+        {
+          "channel": "email",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "https://www.bhgsltd.co.uk/About_Us",
+          "checkedAt": ""
+        }
+      ],
+      "history": [
+        {
+          "status": "sent_confirmed",
+          "timestamp": "2026-08-12T09:26:00.000Z",
+          "channel": "email",
+          "evidence": "official_company_and_channel_verified;exact_recipient_sender_subject_body_gate_passed;send_clicked_once;sent_folder_unique_company_body_reconciled;no_matched_DSN_in_bounded_inbox_and_spam_scan"
+        }
+      ]
+    },
+    {
+      "companyId": "company_3e1e6d0e80626772",
+      "company": "Green Decore",
+      "keys": [
+        "greendecore",
+        "greendecoreemail20260812"
+      ],
+      "domains": [],
+      "channels": [
+        "email"
+      ],
+      "evidence": [
+        {
+          "channel": "email",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "https://www.greendecore.co.uk/pages/contact-us",
+          "checkedAt": ""
+        }
+      ],
+      "history": [
+        {
+          "status": "sent_confirmed",
+          "timestamp": "2026-08-12T09:27:00.000Z",
+          "channel": "email",
+          "evidence": "official_company_and_channel_verified;exact_recipient_sender_subject_body_gate_passed;send_clicked_once;sent_folder_unique_company_body_reconciled;no_matched_DSN_in_bounded_inbox_and_spam_scan"
+        }
+      ]
+    },
+    {
+      "companyId": "company_74faaf230cd68683",
+      "company": "BLS Trade",
+      "keys": [
+        "blstrade",
+        "blstradeemail20260812"
+      ],
+      "domains": [],
+      "channels": [
+        "email"
+      ],
+      "evidence": [
+        {
+          "channel": "email",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "https://www.blstrade.co.uk/",
+          "checkedAt": ""
+        }
+      ],
+      "history": [
+        {
+          "status": "sent_confirmed",
+          "timestamp": "2026-08-12T09:27:20.000Z",
+          "channel": "email",
+          "evidence": "official_company_and_channel_verified;exact_recipient_sender_subject_body_gate_passed;send_clicked_once;sent_folder_unique_company_body_reconciled;no_matched_DSN_in_bounded_inbox_and_spam_scan"
+        }
+      ]
+    },
+    {
+      "companyId": "company_069f45c417b4e9c6",
+      "company": "Life-Gear",
+      "keys": [
+        "lifegear",
+        "lifegearemail20260812"
+      ],
+      "domains": [],
+      "channels": [
+        "email"
+      ],
+      "evidence": [
+        {
+          "channel": "email",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "https://www.life-gear.com/contact-us",
+          "checkedAt": ""
+        }
+      ],
+      "history": [
+        {
+          "status": "sent_confirmed",
+          "timestamp": "2026-08-12T09:27:40.000Z",
+          "channel": "email",
+          "evidence": "official_company_and_channel_verified;exact_recipient_sender_subject_body_gate_passed;send_clicked_once;sent_folder_unique_company_body_reconciled;no_matched_DSN_in_bounded_inbox_and_spam_scan"
+        }
+      ]
+    },
+    {
+      "companyId": "company_6442b00c463a6b8c",
+      "company": "Dencon",
+      "keys": [
+        "dencon",
+        "denconemail20260812"
+      ],
+      "domains": [],
+      "channels": [
+        "email"
+      ],
+      "evidence": [
+        {
+          "channel": "email",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "https://www.dencon.co.uk/Dencon-Group-Catalogue-Elios-21.pdf",
+          "checkedAt": ""
+        }
+      ],
+      "history": [
+        {
+          "status": "sent_confirmed",
+          "timestamp": "2026-08-12T09:28:00.000Z",
+          "channel": "email",
+          "evidence": "official_company_and_channel_verified;exact_recipient_sender_subject_body_gate_passed;send_clicked_once;sent_folder_unique_company_body_reconciled;no_matched_DSN_in_bounded_inbox_and_spam_scan"
+        }
+      ]
+    },
+    {
+      "companyId": "company_436e71f9e57ce266",
+      "company": "SEAC",
+      "keys": [
+        "seac",
+        "seacemail20260812"
+      ],
+      "domains": [],
+      "channels": [
+        "email"
+      ],
+      "evidence": [
+        {
+          "channel": "email",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "https://www.seac.co.uk/trade-enquiries/",
+          "checkedAt": ""
+        }
+      ],
+      "history": [
+        {
+          "status": "sent_confirmed",
+          "timestamp": "2026-08-12T09:28:20.000Z",
+          "channel": "email",
+          "evidence": "official_company_and_channel_verified;exact_recipient_sender_subject_body_gate_passed;send_clicked_once;sent_folder_unique_company_body_reconciled;no_matched_DSN_in_bounded_inbox_and_spam_scan"
         }
       ]
     }
@@ -21360,6 +22000,196 @@
       "sourceStatus": "sent_confirmed",
       "sourceTimestamp": "2026-08-12T09:06:20.000Z",
       "evidence": "official_UK_leisure_parts_distributor_contact_verified;exact_recipient_sender_subject_body_gate_passed;send_clicked_once;sent_folder_unique_company_body_reconciled;no_matched_DSN_in_bounded_inbox_and_spam_scan"
+    },
+    {
+      "companyId": "company_95b61cf67772f39b",
+      "company": "CDA Limited",
+      "permanent": true,
+      "crossChannel": true,
+      "reason": "previous_customer_development_no_repeat",
+      "sourceStatus": "sent_confirmed",
+      "sourceTimestamp": "2026-08-12T09:16:00.000Z",
+      "evidence": "official_company_and_channel_verified;exact_recipient_sender_subject_body_gate_passed;send_clicked_once;sent_folder_unique_company_body_reconciled;no_matched_DSN_in_bounded_inbox_and_spam_scan"
+    },
+    {
+      "companyId": "company_cb8e578ca0c3f6db",
+      "company": "Bushgear",
+      "permanent": true,
+      "crossChannel": true,
+      "reason": "previous_customer_development_no_repeat",
+      "sourceStatus": "sent_confirmed",
+      "sourceTimestamp": "2026-08-12T09:16:30.000Z",
+      "evidence": "official_company_and_channel_verified;exact_recipient_sender_subject_body_gate_passed;send_clicked_once;sent_folder_unique_company_body_reconciled;no_matched_DSN_in_bounded_inbox_and_spam_scan"
+    },
+    {
+      "companyId": "company_12edf2a245173998",
+      "company": "Dove Bikes",
+      "permanent": true,
+      "crossChannel": true,
+      "reason": "previous_customer_development_no_repeat",
+      "sourceStatus": "sent_confirmed",
+      "sourceTimestamp": "2026-08-12T09:17:00.000Z",
+      "evidence": "official_company_and_channel_verified;exact_recipient_sender_subject_body_gate_passed;send_clicked_once;sent_folder_unique_company_body_reconciled;no_matched_DSN_in_bounded_inbox_and_spam_scan"
+    },
+    {
+      "companyId": "company_dd5047deb2013530",
+      "company": "VeloBrands",
+      "permanent": true,
+      "crossChannel": true,
+      "reason": "previous_customer_development_no_repeat",
+      "sourceStatus": "sent_confirmed",
+      "sourceTimestamp": "2026-08-12T09:17:20.000Z",
+      "evidence": "official_company_and_channel_verified;exact_recipient_sender_subject_body_gate_passed;send_clicked_once;sent_folder_unique_company_body_reconciled;no_matched_DSN_in_bounded_inbox_and_spam_scan"
+    },
+    {
+      "companyId": "company_3b23b5a99d6c0ca0",
+      "company": "Velovice",
+      "permanent": true,
+      "crossChannel": true,
+      "reason": "previous_customer_development_no_repeat",
+      "sourceStatus": "sent_confirmed",
+      "sourceTimestamp": "2026-08-12T09:17:40.000Z",
+      "evidence": "official_company_and_channel_verified;exact_recipient_sender_subject_body_gate_passed;send_clicked_once;sent_folder_unique_company_body_reconciled;no_matched_DSN_in_bounded_inbox_and_spam_scan"
+    },
+    {
+      "companyId": "company_cf9ca1cd9b1d8f8c",
+      "company": "LKQ Nova Leisure",
+      "permanent": true,
+      "crossChannel": true,
+      "reason": "previous_customer_development_no_repeat",
+      "sourceStatus": "sent_confirmed",
+      "sourceTimestamp": "2026-08-12T09:18:00.000Z",
+      "evidence": "official_company_and_channel_verified;exact_recipient_sender_subject_body_gate_passed;send_clicked_once;sent_folder_unique_company_body_reconciled;no_matched_DSN_in_bounded_inbox_and_spam_scan"
+    },
+    {
+      "companyId": "company_b28d192b9f4ed02a",
+      "company": "Leisure Vehicle Services",
+      "permanent": true,
+      "crossChannel": true,
+      "reason": "previous_customer_development_no_repeat",
+      "sourceStatus": "sent_confirmed",
+      "sourceTimestamp": "2026-08-12T09:18:20.000Z",
+      "evidence": "official_company_and_channel_verified;exact_recipient_sender_subject_body_gate_passed;send_clicked_once;sent_folder_unique_company_body_reconciled;no_matched_DSN_in_bounded_inbox_and_spam_scan"
+    },
+    {
+      "companyId": "company_1608e14eb40e985e",
+      "company": "Streetwize",
+      "permanent": true,
+      "crossChannel": true,
+      "reason": "previous_customer_development_no_repeat",
+      "sourceStatus": "sent_confirmed",
+      "sourceTimestamp": "2026-08-12T09:18:40.000Z",
+      "evidence": "official_company_and_channel_verified;exact_recipient_sender_subject_body_gate_passed;send_clicked_once;sent_folder_unique_company_body_reconciled;no_matched_DSN_in_bounded_inbox_and_spam_scan"
+    },
+    {
+      "companyId": "company_b676d02fb2af1aef",
+      "company": "Leisure Spares",
+      "permanent": true,
+      "crossChannel": true,
+      "reason": "previous_customer_development_no_repeat",
+      "sourceStatus": "sent_confirmed",
+      "sourceTimestamp": "2026-08-12T09:18:50.000Z",
+      "evidence": "official_company_and_channel_verified;exact_recipient_sender_subject_body_gate_passed;send_clicked_once;sent_folder_unique_company_body_reconciled;no_matched_DSN_in_bounded_inbox_and_spam_scan"
+    },
+    {
+      "companyId": "company_eece80d25e86c598",
+      "company": "Shatchi",
+      "permanent": true,
+      "crossChannel": true,
+      "reason": "previous_customer_development_no_repeat",
+      "sourceStatus": "sent_confirmed",
+      "sourceTimestamp": "2026-08-12T09:19:00.000Z",
+      "evidence": "official_company_and_channel_verified;exact_recipient_sender_subject_body_gate_passed;send_clicked_once;sent_folder_unique_company_body_reconciled;no_matched_DSN_in_bounded_inbox_and_spam_scan"
+    },
+    {
+      "companyId": "company_1e1d7e5abd73d0b8",
+      "company": "Sports Wholesale",
+      "permanent": true,
+      "crossChannel": true,
+      "reason": "previous_customer_development_no_repeat",
+      "sourceStatus": "sent_confirmed",
+      "sourceTimestamp": "2026-08-12T09:20:00.000Z",
+      "evidence": "official_company_and_channel_verified;exact_recipient_sender_subject_body_gate_passed;send_clicked_once;sent_folder_unique_company_body_reconciled;no_matched_DSN_in_bounded_inbox_and_spam_scan"
+    },
+    {
+      "companyId": "company_e870d28a5309de2e",
+      "company": "Country Sports Wholesale",
+      "permanent": true,
+      "crossChannel": true,
+      "reason": "previous_customer_development_no_repeat",
+      "sourceStatus": "sent_confirmed",
+      "sourceTimestamp": "2026-08-12T09:21:00.000Z",
+      "evidence": "official_company_and_channel_verified;exact_recipient_sender_subject_body_gate_passed;send_clicked_once;sent_folder_unique_company_body_reconciled;no_matched_DSN_in_bounded_inbox_and_spam_scan"
+    },
+    {
+      "companyId": "company_afa7aacf853cc7ce",
+      "company": "Highlight Horticulture",
+      "permanent": true,
+      "crossChannel": true,
+      "reason": "previous_customer_development_no_repeat",
+      "sourceStatus": "sent_confirmed",
+      "sourceTimestamp": "2026-08-12T09:22:00.000Z",
+      "evidence": "official_company_and_channel_verified;exact_recipient_sender_subject_body_gate_passed;send_clicked_once;sent_folder_unique_company_body_reconciled;no_matched_DSN_in_bounded_inbox_and_spam_scan"
+    },
+    {
+      "companyId": "company_9fae4197d28befc0",
+      "company": "BHGS",
+      "permanent": true,
+      "crossChannel": true,
+      "reason": "previous_customer_development_no_repeat",
+      "sourceStatus": "sent_confirmed",
+      "sourceTimestamp": "2026-08-12T09:26:00.000Z",
+      "evidence": "official_company_and_channel_verified;exact_recipient_sender_subject_body_gate_passed;send_clicked_once;sent_folder_unique_company_body_reconciled;no_matched_DSN_in_bounded_inbox_and_spam_scan"
+    },
+    {
+      "companyId": "company_3e1e6d0e80626772",
+      "company": "Green Decore",
+      "permanent": true,
+      "crossChannel": true,
+      "reason": "previous_customer_development_no_repeat",
+      "sourceStatus": "sent_confirmed",
+      "sourceTimestamp": "2026-08-12T09:27:00.000Z",
+      "evidence": "official_company_and_channel_verified;exact_recipient_sender_subject_body_gate_passed;send_clicked_once;sent_folder_unique_company_body_reconciled;no_matched_DSN_in_bounded_inbox_and_spam_scan"
+    },
+    {
+      "companyId": "company_74faaf230cd68683",
+      "company": "BLS Trade",
+      "permanent": true,
+      "crossChannel": true,
+      "reason": "previous_customer_development_no_repeat",
+      "sourceStatus": "sent_confirmed",
+      "sourceTimestamp": "2026-08-12T09:27:20.000Z",
+      "evidence": "official_company_and_channel_verified;exact_recipient_sender_subject_body_gate_passed;send_clicked_once;sent_folder_unique_company_body_reconciled;no_matched_DSN_in_bounded_inbox_and_spam_scan"
+    },
+    {
+      "companyId": "company_069f45c417b4e9c6",
+      "company": "Life-Gear",
+      "permanent": true,
+      "crossChannel": true,
+      "reason": "previous_customer_development_no_repeat",
+      "sourceStatus": "sent_confirmed",
+      "sourceTimestamp": "2026-08-12T09:27:40.000Z",
+      "evidence": "official_company_and_channel_verified;exact_recipient_sender_subject_body_gate_passed;send_clicked_once;sent_folder_unique_company_body_reconciled;no_matched_DSN_in_bounded_inbox_and_spam_scan"
+    },
+    {
+      "companyId": "company_6442b00c463a6b8c",
+      "company": "Dencon",
+      "permanent": true,
+      "crossChannel": true,
+      "reason": "previous_customer_development_no_repeat",
+      "sourceStatus": "sent_confirmed",
+      "sourceTimestamp": "2026-08-12T09:28:00.000Z",
+      "evidence": "official_company_and_channel_verified;exact_recipient_sender_subject_body_gate_passed;send_clicked_once;sent_folder_unique_company_body_reconciled;no_matched_DSN_in_bounded_inbox_and_spam_scan"
+    },
+    {
+      "companyId": "company_436e71f9e57ce266",
+      "company": "SEAC",
+      "permanent": true,
+      "crossChannel": true,
+      "reason": "previous_customer_development_no_repeat",
+      "sourceStatus": "sent_confirmed",
+      "sourceTimestamp": "2026-08-12T09:28:20.000Z",
+      "evidence": "official_company_and_channel_verified;exact_recipient_sender_subject_body_gate_passed;send_clicked_once;sent_folder_unique_company_body_reconciled;no_matched_DSN_in_bounded_inbox_and_spam_scan"
     }
   ],
   "portfolio": {
@@ -21499,7 +22329,7 @@
       },
       {
         "channel": "email",
-        "confirmed": 145,
+        "confirmed": 164,
         "replies": 0,
         "opportunities": 0,
         "replyRate": 0,
@@ -21548,20 +22378,20 @@
       {
         "dimension": "channel",
         "variant": "email",
-        "sampleSize": 145,
+        "sampleSize": 164,
         "observedReplyRate": 0,
         "recommendation": "use_as_bounded_allocation_signal"
       }
     ]
   },
   "ownerSummary": {
-    "generatedAt": "2026-08-12T09:09:28.202Z",
+    "generatedAt": "2026-08-12T09:32:26.635Z",
     "phase": "autonomous_sales_operating_system_v1",
     "kpis": {
-      "companies": 307,
-      "permanentlySuppressed": 245,
+      "companies": 327,
+      "permanentlySuppressed": 264,
       "plannedActions": 7,
-      "verifiedEvidenceRoutes": 122
+      "verifiedEvidenceRoutes": 126
     },
     "decisions": [
       {
@@ -21690,7 +22520,7 @@
         },
         {
           "channel": "email",
-          "confirmed": 145,
+          "confirmed": 164,
           "replies": 0,
           "opportunities": 0,
           "replyRate": 0,
@@ -21739,7 +22569,7 @@
         {
           "dimension": "channel",
           "variant": "email",
-          "sampleSize": 145,
+          "sampleSize": 164,
           "observedReplyRate": 0,
           "recommendation": "use_as_bounded_allocation_signal"
         }
