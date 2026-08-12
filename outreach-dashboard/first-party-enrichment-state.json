@@ -1,12 +1,12 @@
 {
-  "updatedAt": "2026-08-12T10:31:46.266Z",
-  "cursor": 154,
+  "updatedAt": "2026-08-12T11:44:31.741Z",
+  "cursor": 179,
   "companyCount": 227,
   "verifications": {
     "facewest": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-12T09:09:10.932Z",
+        "verifiedAt": "2026-08-12T11:44:21.019Z",
         "evidenceUrl": "https://www.facewest.co.uk/",
         "httpStatus": 200,
         "signals": [
@@ -26,7 +26,7 @@
     "above and beyond": {
       "firstPartyChannelVerification": {
         "status": "unreachable",
-        "verifiedAt": "2026-08-12T09:09:10.212Z",
+        "verifiedAt": "2026-08-12T11:44:19.746Z",
         "evidenceUrl": "https://www.aboveandbeyond.ie/",
         "httpStatus": 0,
         "signals": [],
@@ -41,7 +41,7 @@
     "72hours": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-12T09:09:12.168Z",
+        "verifiedAt": "2026-08-12T11:44:20.606Z",
         "evidenceUrl": "https://72hours.ca/",
         "httpStatus": 200,
         "signals": [
@@ -62,7 +62,7 @@
     "atmosphere": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-12T09:09:15.924Z",
+        "verifiedAt": "2026-08-12T11:44:23.852Z",
         "evidenceUrl": "https://www.atmosphere.ca/",
         "httpStatus": 200,
         "signals": [
@@ -79,7 +79,7 @@
     "altitude sports": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-12T09:09:11.871Z",
+        "verifiedAt": "2026-08-12T11:44:24.530Z",
         "evidenceUrl": "https://www.altitude-sports.com/",
         "httpStatus": 200,
         "signals": [
@@ -98,7 +98,7 @@
     "the last hunt": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-12T09:09:11.760Z",
+        "verifiedAt": "2026-08-12T11:44:24.665Z",
         "evidenceUrl": "https://www.thelasthunt.com/",
         "httpStatus": 200,
         "signals": [
@@ -117,7 +117,7 @@
     "marmot basin retail": {
       "firstPartyChannelVerification": {
         "status": "unreachable",
-        "verifiedAt": "2026-08-12T09:09:16.426Z",
+        "verifiedAt": "2026-08-12T11:44:23.960Z",
         "evidenceUrl": "https://www.marmotbasin.com/",
         "httpStatus": 0,
         "signals": [],
@@ -132,7 +132,7 @@
     "wild earth": {
       "firstPartyChannelVerification": {
         "status": "unreachable",
-        "verifiedAt": "2026-08-12T09:09:16.254Z",
+        "verifiedAt": "2026-08-12T11:44:24.059Z",
         "evidenceUrl": "https://www.wildearth.com.au/",
         "httpStatus": 403,
         "signals": [],
@@ -151,7 +151,7 @@
     "tentworld australia": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-12T09:09:16.744Z",
+        "verifiedAt": "2026-08-12T11:44:25.141Z",
         "evidenceUrl": "https://www.tentworld.com.au/",
         "httpStatus": 200,
         "signals": [],
@@ -166,7 +166,7 @@
     "paddy pallin": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-12T09:09:17.472Z",
+        "verifiedAt": "2026-08-12T11:44:24.965Z",
         "evidenceUrl": "https://www.paddypallin.com.au/",
         "httpStatus": 200,
         "signals": [
@@ -186,7 +186,7 @@
     "macpac": {
       "firstPartyChannelVerification": {
         "status": "unreachable",
-        "verifiedAt": "2026-08-12T09:09:18.163Z",
+        "verifiedAt": "2026-08-12T11:44:24.967Z",
         "evidenceUrl": "https://www.macpac.com.au/",
         "httpStatus": 403,
         "signals": [],
@@ -204,7 +204,7 @@
     "tentworld nz": {
       "firstPartyChannelVerification": {
         "status": "unreachable",
-        "verifiedAt": "2026-08-12T09:09:23.562Z",
+        "verifiedAt": "2026-08-12T11:44:30.766Z",
         "evidenceUrl": "https://www.tentworld.co.nz/",
         "httpStatus": 0,
         "signals": [],
@@ -219,7 +219,7 @@
     "torpedo7": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-12T09:09:18.510Z",
+        "verifiedAt": "2026-08-12T11:44:31.741Z",
         "evidenceUrl": "https://www.torpedo7.co.nz/",
         "httpStatus": 200,
         "signals": [
@@ -2277,7 +2277,7 @@
     "rock creek": {
       "firstPartyChannelVerification": {
         "status": "unreachable",
-        "verifiedAt": "2026-08-12T08:45:34.940Z",
+        "verifiedAt": "2026-08-12T11:44:15.004Z",
         "evidenceUrl": "https://www.rockcreek.com/",
         "httpStatus": 0,
         "signals": [],
@@ -2292,7 +2292,7 @@
     "half moon outfitters": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-12T08:45:36.016Z",
+        "verifiedAt": "2026-08-12T11:44:14.637Z",
         "evidenceUrl": "https://www.halfmoonoutfitters.com/",
         "httpStatus": 200,
         "signals": [
@@ -2312,7 +2312,7 @@
     "sunlight sports": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-12T09:09:06.205Z",
+        "verifiedAt": "2026-08-12T11:44:14.829Z",
         "evidenceUrl": "https://www.sunlightsports.com/",
         "httpStatus": 200,
         "signals": [
@@ -2330,7 +2330,7 @@
     "jax outdoor gear": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-12T09:09:07.020Z",
+        "verifiedAt": "2026-08-12T11:44:14.690Z",
         "evidenceUrl": "https://jaxgoods.com/",
         "httpStatus": 200,
         "signals": [
@@ -2349,7 +2349,7 @@
     "christy sports": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-12T09:09:06.233Z",
+        "verifiedAt": "2026-08-12T11:44:16.313Z",
         "evidenceUrl": "https://www.christysports.com/",
         "httpStatus": 200,
         "signals": [
@@ -2370,7 +2370,7 @@
     "paragon sports": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-12T09:09:07.043Z",
+        "verifiedAt": "2026-08-12T11:44:17.081Z",
         "evidenceUrl": "https://paragonsports.com/",
         "httpStatus": 200,
         "signals": [
@@ -2392,7 +2392,7 @@
     "mountain equipment": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-12T09:09:08.739Z",
+        "verifiedAt": "2026-08-12T11:44:16.832Z",
         "evidenceUrl": "https://www.mountain-equipment.com/",
         "httpStatus": 200,
         "signals": [
@@ -2410,7 +2410,7 @@
     "tiso": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-12T09:09:08.753Z",
+        "verifiedAt": "2026-08-12T11:44:16.853Z",
         "evidenceUrl": "https://www.tiso.com/pages/contact",
         "httpStatus": 200,
         "signals": [
@@ -2429,7 +2429,7 @@
     "george fisher": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-12T09:09:09.178Z",
+        "verifiedAt": "2026-08-12T11:44:18.942Z",
         "evidenceUrl": "https://www.tiso.com/pages/george-fisher-landing?utm_source=georgefisher",
         "httpStatus": 200,
         "signals": [
@@ -2447,7 +2447,7 @@
     "ld mountain centre": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-12T09:09:09.582Z",
+        "verifiedAt": "2026-08-12T11:44:19.625Z",
         "evidenceUrl": "https://www.ldmountaincentre.com/",
         "httpStatus": 200,
         "signals": [],
@@ -2462,7 +2462,7 @@
     "absolute snow": {
       "firstPartyChannelVerification": {
         "status": "unreachable",
-        "verifiedAt": "2026-08-12T09:09:09.844Z",
+        "verifiedAt": "2026-08-12T11:44:17.450Z",
         "evidenceUrl": "https://www.absolute-snow.co.uk/",
         "httpStatus": 403,
         "signals": [],
@@ -2477,7 +2477,7 @@
     "ellis brigham": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-12T09:09:10.415Z",
+        "verifiedAt": "2026-08-12T11:44:17.585Z",
         "evidenceUrl": "https://www.ellis-brigham.com/",
         "httpStatus": 200,
         "signals": [],
