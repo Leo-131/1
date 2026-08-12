@@ -1537,6 +1537,30 @@ test('Google discovery exposes normalized source metadata while retaining the le
   assert.ok(dailyRunnerSource.includes("item.sourceType === 'google'"));
 });
 
+test('Google discovery includes first-party-backed North America distributor reserve candidates', () => {
+  const leads = buildLeads(400);
+  const byCompany = new Map(leads.map((lead) => [lead.company, lead]));
+  const expected = [
+    ['Continental Sports Inc', 'Canada', 'info@csisports.net'],
+    ['Outdoor Equipment Distributors', 'United States', 'info@oedinc.com'],
+    ['Canadawide Sports', 'Canada', 'info@canadawidesports.com'],
+    ['Outdoor Gear Canada', 'Canada', ''],
+    ['C&G Distribution', 'United States', ''],
+  ];
+
+  for (const [company, country, email] of expected) {
+    const lead = byCompany.get(company);
+    assert.ok(lead, `${company} should be present`);
+    assert.equal(lead.country, country);
+    assert.ok(lead.fitScore >= 70);
+    assert.match(lead.url, /^https:\/\//);
+    if (email) {
+      assert.equal(lead.publicEmail, email);
+      assert.match(lead.emailEvidenceUrl, /^https:\/\//);
+    }
+  }
+});
+
 test('daily execution owns and closes each automation-created Chrome tab', () => {
   assert.ok(mainSource.includes('automationOwnedChromeTabs'));
   assert.ok(mainSource.includes('closeAutomationTabsOpenedAfter'));
@@ -1864,8 +1888,9 @@ test('discovery ignores likes and follows while preserving confirmed DM protecti
   assert.ok(history.sentConfirmed.has('bever'));
 });
 
-test('United Kingdom receives only the configured safe-priority bonus', () => {
-  assert.equal(dailyRunner.preferredCountryScore({ country: 'United Kingdom' }), 30);
-  assert.equal(dailyRunner.preferredCountryScore({ countryEn: 'UK' }), 30);
-  assert.equal(dailyRunner.preferredCountryScore({ country: 'Germany' }), 0);
+test('North America receives only the configured safe-priority bonus', () => {
+  assert.equal(dailyRunner.preferredCountryScore({ country: 'United States' }), 30);
+  assert.equal(dailyRunner.preferredCountryScore({ countryEn: 'Canada' }), 30);
+  assert.equal(dailyRunner.preferredCountryScore({ country: 'Mexico' }), 30);
+  assert.equal(dailyRunner.preferredCountryScore({ country: 'United Kingdom' }), 0);
 });

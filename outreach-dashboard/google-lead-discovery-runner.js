@@ -613,6 +613,11 @@ const DIRECTORY_REFILL_CANDIDATES = [
   ['Valhalla Pure Outfitters', 'Canada', 'https://vpo.ca/', '', 90],
   ['La Cordee', 'Canada', 'https://www.lacordee.com/', '', 88],
   ['Latulippe', 'Canada', 'https://latulippe.com/', '', 87],
+  ['Continental Sports Inc', 'Canada', 'https://csisports.ca/', '', 91],
+  ['Outdoor Equipment Distributors', 'United States', 'https://www.oedinc.com/', '', 80],
+  ['Canadawide Sports', 'Canada', 'https://www.shop.canadawidesports.com/pages/about-us', '', 89],
+  ['Outdoor Gear Canada', 'Canada', 'https://www.ogc.ca/', '', 84],
+  ['C&G Distribution', 'United States', 'https://cng-distribution.com/', '', 88],
   ['Tentworld', 'Australia', 'https://www.tentworld.com.au/', '', 90],
   ['Wildfire Sports', 'Australia', 'https://www.wildfiresports.com.au/', '', 87],
   ['Bivouac Outdoor', 'New Zealand', 'https://www.bivouac.co.nz/', '', 89],
@@ -661,6 +666,9 @@ const DIRECTORY_REFILL_CANDIDATES = [
 }));
 
 const DIRECTORY_PUBLIC_CONTACT_ENRICHMENT = {
+  'Continental Sports Inc': ['info@csisports.net', 'Official company-domain email published on the Continental Sports website, which identifies the company as a Canadian wholesale distributor serving independent retailers across camping and outdoor categories.', 'https://csisports.ca/'],
+  'Outdoor Equipment Distributors': ['info@oedinc.com', 'Official company-domain email published on the Outdoor Equipment Distributors website, which identifies the company as a wholesale distributor serving independent dealers.', 'https://www.oedinc.com/'],
+  'Canadawide Sports': ['info@canadawidesports.com', 'Official company-domain email published on the Canadawide Sports about page, which documents nationwide wholesale distribution, a 65,000-square-foot distribution centre, and national-chain and independent-store customers.', 'https://www.shop.canadawidesports.com/pages/about-us'],
   'Tentworld': ['contact@tentworld.com.au', 'Official public company-domain email published by Tentworld; route the supplier proposal to the category buyer or vendor-review owner.', 'https://www.tentworld.com.au/contact-us'],
   'Wildfire Sports': ['enquiries@wildfiresports.com.au', 'Official public business email on the Wildfire Sports contact page; route to category buyer or vendor-review owner.', 'https://www.wildfiresports.com.au/contact-us'],
   'Bivouac Outdoor': ['web@bivouac.co.nz', 'Official public business email on the Bivouac Outdoor contact page; route to category buyer or vendor-review owner.'],

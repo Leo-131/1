@@ -24,6 +24,20 @@
       "reason": "official_website_contact_channel"
     },
     {
+      "id": "google-customer-continental-sports-inc-website-contact",
+      "company": "Continental Sports Inc",
+      "action": "email_priority",
+      "platform": "website_form",
+      "reason": "official_website_contact_channel"
+    },
+    {
+      "id": "google-customer-canadawide-sports-website-contact",
+      "company": "Canadawide Sports",
+      "action": "email_priority",
+      "platform": "website_form",
+      "reason": "official_website_contact_channel"
+    },
+    {
       "id": "google-customer-rock-creek-website-contact",
       "company": "Rock/Creek",
       "action": "email_priority",
@@ -33,6 +47,13 @@
     {
       "id": "google-customer-left-point-distribution-website-contact",
       "company": "Left Point Distribution",
+      "action": "email_priority",
+      "platform": "website_form",
+      "reason": "official_website_contact_channel"
+    },
+    {
+      "id": "google-customer-outdoor-equipment-distributors-website-contact",
+      "company": "Outdoor Equipment Distributors",
       "action": "email_priority",
       "platform": "website_form",
       "reason": "official_website_contact_channel"
@@ -143,6 +164,13 @@
       "reason": "homepage_only_contact_path_requires_verification"
     },
     {
+      "id": "google-customer-c-g-distribution-website-contact",
+      "company": "C&G Distribution",
+      "action": "verify_target",
+      "platform": "website_form",
+      "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
       "id": "google-customer-eastern-mountain-sports-website-contact",
       "company": "Eastern Mountain Sports",
       "action": "verify_target",
@@ -166,6 +194,13 @@
     {
       "id": "google-customer-the-great-outdoor-shop-website-contact",
       "company": "The Great Outdoor Shop",
+      "action": "verify_target",
+      "platform": "website_form",
+      "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
+      "id": "google-customer-outdoor-gear-canada-website-contact",
+      "company": "Outdoor Gear Canada",
       "action": "verify_target",
       "platform": "website_form",
       "reason": "homepage_only_contact_path_requires_verification"
@@ -451,6 +486,13 @@
       "reason": "website_contact_capability_not_verified"
     },
     {
+      "id": "google-customer-c-g-distribution-website-contact",
+      "company": "C&G Distribution",
+      "action": "verify_target",
+      "platform": "website_form",
+      "reason": "website_contact_capability_not_verified"
+    },
+    {
       "id": "google-customer-latulippe-website-contact",
       "company": "Latulippe",
       "action": "verify_target",
@@ -460,6 +502,13 @@
     {
       "id": "google-customer-the-great-outdoor-shop-website-contact",
       "company": "The Great Outdoor Shop",
+      "action": "verify_target",
+      "platform": "website_form",
+      "reason": "website_contact_capability_not_verified"
+    },
+    {
+      "id": "google-customer-outdoor-gear-canada-website-contact",
+      "company": "Outdoor Gear Canada",
       "action": "verify_target",
       "platform": "website_form",
       "reason": "website_contact_capability_not_verified"
@@ -539,9 +588,9 @@
   "blockerCounts": {},
   "queueGoalStatus": {
     "target": 100,
-    "potentialPool": 48,
-    "queueCount": 59,
-    "googleDiscovered": 40,
+    "potentialPool": 53,
+    "queueCount": 64,
+    "googleDiscovered": 45,
     "refillNeeded": 0,
     "confirmedToday": 100,
     "reached": true,
@@ -561,5 +610,5 @@
     "scanned": 0,
     "updated": 0
   },
-  "completedAt": "2026-08-12T11:51:54.607Z"
+  "completedAt": "2026-08-12T11:56:37.238Z"
 }

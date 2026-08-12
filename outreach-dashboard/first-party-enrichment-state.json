@@ -1,7 +1,7 @@
 {
-  "updatedAt": "2026-08-12T11:51:11.560Z",
-  "cursor": 2,
-  "companyCount": 227,
+  "updatedAt": "2026-08-12T11:55:52.896Z",
+  "cursor": 27,
+  "companyCount": 232,
   "verifications": {
     "facewest": {
       "firstPartyChannelVerification": {
@@ -761,7 +761,7 @@
     "komsa": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-12T09:32:20.309Z",
+        "verifiedAt": "2026-08-12T11:55:32.096Z",
         "evidenceUrl": "https://komsa.com/en/contact",
         "httpStatus": 200,
         "signals": [
@@ -779,7 +779,7 @@
     "aqipa": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-12T09:32:24.430Z",
+        "verifiedAt": "2026-08-12T11:55:30.912Z",
         "evidenceUrl": "https://support.aqipa.com/en-US/new-ticket",
         "httpStatus": 200,
         "signals": [
@@ -798,7 +798,7 @@
     "cms distribution": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-12T09:37:00.525Z",
+        "verifiedAt": "2026-08-12T11:55:30.225Z",
         "evidenceUrl": "https://www.cmsdistribution.com/contact-us",
         "httpStatus": 200,
         "signals": [
@@ -817,7 +817,7 @@
     "bass pro shops": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-12T09:37:01.835Z",
+        "verifiedAt": "2026-08-12T11:55:31.797Z",
         "evidenceUrl": "https://vendorportal.basspro.com/default.aspx",
         "httpStatus": 200,
         "signals": [
@@ -835,7 +835,7 @@
     "cabela s": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-12T09:37:01.948Z",
+        "verifiedAt": "2026-08-12T11:55:34.014Z",
         "evidenceUrl": "https://help.cabelas.com/company-information-ff566349/how-can-i-sell-my-product-through-cabelas-cf904a21",
         "httpStatus": 200,
         "signals": [
@@ -857,7 +857,7 @@
     "liberty mountain": {
       "firstPartyChannelVerification": {
         "status": "unreachable",
-        "verifiedAt": "2026-08-12T09:37:00.246Z",
+        "verifiedAt": "2026-08-12T11:55:32.600Z",
         "evidenceUrl": "https://libertymountain.com/find-a-rep",
         "httpStatus": 403,
         "signals": [],
@@ -872,7 +872,7 @@
     "mec": {
       "firstPartyChannelVerification": {
         "status": "unreachable",
-        "verifiedAt": "2026-08-12T09:37:02.682Z",
+        "verifiedAt": "2026-08-12T11:55:33.055Z",
         "evidenceUrl": "https://www.mec.ca/en/contact-us",
         "httpStatus": 403,
         "signals": [],
@@ -887,7 +887,7 @@
     "backcountry": {
       "firstPartyChannelVerification": {
         "status": "unreachable",
-        "verifiedAt": "2026-08-12T09:37:03.040Z",
+        "verifiedAt": "2026-08-12T11:55:33.317Z",
         "evidenceUrl": "https://www.backcountry.com/sc/contact-us",
         "httpStatus": 403,
         "signals": [],
@@ -902,7 +902,7 @@
     "go outdoors": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-12T09:37:04.216Z",
+        "verifiedAt": "2026-08-12T11:55:35.878Z",
         "evidenceUrl": "https://www.gooutdoors.co.uk/pages/contact",
         "httpStatus": 200,
         "signals": [
@@ -924,7 +924,7 @@
     "sportsman s warehouse": {
       "firstPartyChannelVerification": {
         "status": "unreachable",
-        "verifiedAt": "2026-08-12T09:37:02.579Z",
+        "verifiedAt": "2026-08-12T11:55:34.605Z",
         "evidenceUrl": "https://www.sportsmans.com/contact-us",
         "httpStatus": 403,
         "signals": [],
@@ -939,7 +939,7 @@
     "obelink": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-12T09:37:06.241Z",
+        "verifiedAt": "2026-08-12T11:55:36.215Z",
         "evidenceUrl": "https://www.obelink.nl/obelink-partnerprogramma/",
         "httpStatus": 200,
         "signals": [
@@ -956,7 +956,7 @@
     "anaconda": {
       "firstPartyChannelVerification": {
         "status": "unreachable",
-        "verifiedAt": "2026-08-12T09:37:13.708Z",
+        "verifiedAt": "2026-08-12T11:55:42.856Z",
         "evidenceUrl": "https://help.anacondastores.com/hc/en-au",
         "httpStatus": 403,
         "signals": [],
@@ -971,7 +971,7 @@
     "globetrotter": {
       "firstPartyChannelVerification": {
         "status": "unreachable",
-        "verifiedAt": "2026-08-12T09:37:05.905Z",
+        "verifiedAt": "2026-08-12T11:55:43.653Z",
         "evidenceUrl": "https://www.globetrotter.de/",
         "httpStatus": 403,
         "signals": [],
@@ -986,7 +986,7 @@
     "outdoor nature": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-12T09:37:16.600Z",
+        "verifiedAt": "2026-08-12T11:55:44.066Z",
         "evidenceUrl": "https://www.outdoornature.com.au/become-a-supplier/",
         "httpStatus": 200,
         "signals": [
@@ -1005,7 +1005,7 @@
     "garage grown gear": {
       "firstPartyChannelVerification": {
         "status": "unreachable",
-        "verifiedAt": "2026-08-12T09:37:14.323Z",
+        "verifiedAt": "2026-08-12T11:55:43.589Z",
         "evidenceUrl": "https://www.garagegrowngear.com/",
         "httpStatus": 403,
         "signals": [],
@@ -1020,7 +1020,7 @@
     "bergfreunde": {
       "firstPartyChannelVerification": {
         "status": "unreachable",
-        "verifiedAt": "2026-08-12T09:37:14.065Z",
+        "verifiedAt": "2026-08-12T11:55:44.560Z",
         "evidenceUrl": "https://www.bergfreunde.eu/",
         "httpStatus": 403,
         "signals": [],
@@ -1035,7 +1035,7 @@
     "sail outdoors": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-12T09:37:14.554Z",
+        "verifiedAt": "2026-08-12T11:55:45.174Z",
         "evidenceUrl": "https://www.sail.ca/en/contact-us",
         "httpStatus": 200,
         "signals": [
@@ -1054,7 +1054,7 @@
     "fritz berger": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-12T09:37:19.325Z",
+        "verifiedAt": "2026-08-12T11:55:51.144Z",
         "evidenceUrl": "https://www.fritz-berger.de/",
         "httpStatus": 200,
         "signals": [
@@ -1071,7 +1071,7 @@
     "au vieux campeur": {
       "firstPartyChannelVerification": {
         "status": "unreachable",
-        "verifiedAt": "2026-08-12T09:37:17.134Z",
+        "verifiedAt": "2026-08-12T11:55:49.092Z",
         "evidenceUrl": "https://www.auvieuxcampeur.fr/",
         "httpStatus": 403,
         "signals": [],
@@ -1086,7 +1086,7 @@
     "cotswold outdoor": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-12T09:37:18.073Z",
+        "verifiedAt": "2026-08-12T11:55:50.743Z",
         "evidenceUrl": "https://www.cotswoldoutdoor.com/",
         "httpStatus": 200,
         "signals": [
@@ -1107,7 +1107,7 @@
     "decathlon france": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-12T09:37:22.835Z",
+        "verifiedAt": "2026-08-12T11:55:49.975Z",
         "evidenceUrl": "https://www.decathlon.fr/help/app/contact",
         "httpStatus": 200,
         "signals": [
@@ -1124,7 +1124,7 @@
     "campsaver": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-12T09:37:23.228Z",
+        "verifiedAt": "2026-08-12T11:55:52.896Z",
         "evidenceUrl": "https://www.campsaver.com/",
         "httpStatus": 200,
         "signals": [
@@ -3203,7 +3203,7 @@
     "van os imports": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-12T09:37:06.255Z",
+        "verifiedAt": "2026-08-12T11:55:44.362Z",
         "evidenceUrl": "https://www.vanosimports.com/en/grid/outdoor",
         "httpStatus": 200,
         "signals": [
@@ -3220,7 +3220,7 @@
     "jsj camping garden": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-12T09:37:21.469Z",
+        "verifiedAt": "2026-08-12T11:55:46.935Z",
         "evidenceUrl": "https://jsj-bv.com/",
         "httpStatus": 200,
         "signals": [
@@ -4040,6 +4040,25 @@
       "contactCapabilityVerified": false,
       "externalVerificationStatus": "",
       "publicEmail": "schwarte@drshop24.de",
+      "emailVerificationStatus": "official_public_business_email",
+      "socialProfiles": []
+    },
+    "continental sports inc": {
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-12T11:55:48.659Z",
+        "evidenceUrl": "https://csisports.ca/",
+        "httpStatus": 200,
+        "signals": [
+          "form_control",
+          "public_business_email",
+          "contact_invitation"
+        ],
+        "error": ""
+      },
+      "contactCapabilityVerified": true,
+      "externalVerificationStatus": "official_contact_form_verified",
+      "publicEmail": "info@csisports.net",
       "emailVerificationStatus": "official_public_business_email",
       "socialProfiles": []
     }
