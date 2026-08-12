@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-12T10:17:17.065Z",
+  "generatedAt": "2026-08-12T10:18:32.515Z",
   "phase": "pre-sync",
   "shanghaiDate": "2026-08-12",
   "policyVersion": "2026-07-30",
@@ -34,7 +34,7 @@
   },
   "git": {
     "branch": "vercel-main-sync",
-    "localHead": "c6db9e283afd4cb24c1acddbeb1075bf1fb250f6",
-    "upstreamHead": "c6db9e283afd4cb24c1acddbeb1075bf1fb250f6"
+    "localHead": "4af08284e518a048e215489b6a9c893b91c9df83",
+    "upstreamHead": "4af08284e518a048e215489b6a9c893b91c9df83"
   }
 }
