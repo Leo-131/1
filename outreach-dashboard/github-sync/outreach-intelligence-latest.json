@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-12T09:32:26.635Z",
+  "generatedAt": "2026-08-12T09:37:27.738Z",
   "companies": [
     {
       "companyId": "company_819cc04fe9060117",
@@ -2108,7 +2108,7 @@
             "official_business_route"
           ],
           "evidenceUrl": "https://www.nwogco.com/",
-          "checkedAt": "2026-08-11T13:17:58.794Z"
+          "checkedAt": "2026-08-12T09:32:18.888Z"
         },
         {
           "channel": "website_form",
@@ -4621,7 +4621,7 @@
           "reasons": [
             "first_party_evidence"
           ],
-          "evidenceUrl": "https://komsa.com/en/contact",
+          "evidenceUrl": "https://komsa.com/en/contact/",
           "checkedAt": ""
         },
         {
@@ -4631,7 +4631,7 @@
           "reasons": [
             "unverified_external_evidence_rejected"
           ],
-          "evidenceUrl": "https://komsa.com/en/contact",
+          "evidenceUrl": "https://komsa.com/en/contact/",
           "checkedAt": ""
         }
       ],
@@ -4752,7 +4752,7 @@
           "reasons": [
             "official_business_route"
           ],
-          "evidenceUrl": "https://support.aqipa.com/en-US/new-ticket",
+          "evidenceUrl": "https://support.aqipa.com/en-US/kb/articles/anfrage-partner-werden",
           "checkedAt": ""
         },
         {
@@ -4762,7 +4762,7 @@
           "reasons": [
             "unverified_external_evidence_rejected"
           ],
-          "evidenceUrl": "https://support.aqipa.com/en-US/new-ticket",
+          "evidenceUrl": "https://support.aqipa.com/en-US/kb/articles/anfrage-partner-werden",
           "checkedAt": ""
         }
       ],
@@ -4805,7 +4805,7 @@
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://www.cmsdistribution.com/contact-us",
-          "checkedAt": "2026-08-11T13:18:02.720Z"
+          "checkedAt": "2026-08-12T09:37:00.525Z"
         },
         {
           "channel": "website_form",
@@ -4916,7 +4916,7 @@
             "official_business_route"
           ],
           "evidenceUrl": "https://help.cabelas.com/company-information-ff566349/how-can-i-sell-my-product-through-cabelas-cf904a21",
-          "checkedAt": "2026-08-12T02:10:19.982Z"
+          "checkedAt": "2026-08-12T09:37:01.948Z"
         },
         {
           "channel": "facebook",
@@ -4926,7 +4926,7 @@
             "official_business_route"
           ],
           "evidenceUrl": "https://help.cabelas.com/company-information-ff566349/how-can-i-sell-my-product-through-cabelas-cf904a21",
-          "checkedAt": "2026-08-12T02:10:19.982Z"
+          "checkedAt": "2026-08-12T09:37:01.948Z"
         },
         {
           "channel": "website_form",
@@ -4935,7 +4935,7 @@
           "reasons": [
             "official_business_route"
           ],
-          "evidenceUrl": "https://www.cabelas.com/",
+          "evidenceUrl": "https://help.cabelas.com/company-information-ff566349/how-can-i-sell-my-product-through-cabelas-cf904a21",
           "checkedAt": ""
         },
         {
@@ -5280,32 +5280,32 @@
       "evidence": [
         {
           "channel": "instagram",
-          "score": 95,
+          "score": 100,
           "verified": true,
           "reasons": [
-            "official_site_cross_verified_social"
+            "official_business_route"
           ],
           "evidenceUrl": "https://www.gooutdoors.co.uk/pages/contact",
-          "checkedAt": "2026-08-12T02:10:23.133Z"
+          "checkedAt": "2026-08-12T09:37:04.216Z"
         },
         {
           "channel": "facebook",
-          "score": 95,
+          "score": 100,
           "verified": true,
           "reasons": [
-            "official_site_cross_verified_social"
+            "official_business_route"
           ],
           "evidenceUrl": "https://www.gooutdoors.co.uk/pages/contact",
-          "checkedAt": "2026-08-12T02:10:23.133Z"
+          "checkedAt": "2026-08-12T09:37:04.216Z"
         },
         {
           "channel": "website_form",
-          "score": 80,
-          "verified": false,
+          "score": 100,
+          "verified": true,
           "reasons": [
-            "first_party_evidence"
+            "official_business_route"
           ],
-          "evidenceUrl": "https://www.gooutdoors.co.uk/",
+          "evidenceUrl": "https://www.gooutdoors.co.uk/pages/contact",
           "checkedAt": ""
         }
       ],
@@ -5753,7 +5753,7 @@
           "reasons": [
             "official_business_route"
           ],
-          "evidenceUrl": "https://www.sail.ca/",
+          "evidenceUrl": "https://www.sail.ca/en/contact-us",
           "checkedAt": ""
         }
       ],
@@ -5927,7 +5927,7 @@
             "official_business_route"
           ],
           "evidenceUrl": "https://www.cotswoldoutdoor.com/",
-          "checkedAt": "2026-08-12T02:10:36.081Z"
+          "checkedAt": "2026-08-12T09:37:18.073Z"
         },
         {
           "channel": "facebook",
@@ -5937,7 +5937,7 @@
             "official_business_route"
           ],
           "evidenceUrl": "https://www.cotswoldoutdoor.com/",
-          "checkedAt": "2026-08-12T02:10:36.081Z"
+          "checkedAt": "2026-08-12T09:37:18.073Z"
         },
         {
           "channel": "website_form",
@@ -6123,16 +6123,16 @@
             "official_business_route"
           ],
           "evidenceUrl": "https://www.campsaver.com/",
-          "checkedAt": "2026-08-12T02:10:36.199Z"
+          "checkedAt": "2026-08-12T09:37:23.228Z"
         },
         {
           "channel": "website_form",
-          "score": 0,
-          "verified": false,
+          "score": 100,
+          "verified": true,
           "reasons": [
-            "unverified_external_evidence_rejected"
+            "official_business_route"
           ],
-          "evidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
+          "evidenceUrl": "https://www.campsaver.com/",
           "checkedAt": ""
         }
       ],
@@ -16394,12 +16394,12 @@
       "evidence": [
         {
           "channel": "website_form",
-          "score": 100,
-          "verified": true,
+          "score": 0,
+          "verified": false,
           "reasons": [
-            "official_business_route"
+            "unverified_external_evidence_rejected"
           ],
-          "evidenceUrl": "https://durangooutdoorexchange.com/",
+          "evidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
           "checkedAt": ""
         }
       ],
@@ -16536,12 +16536,12 @@
       "evidence": [
         {
           "channel": "website_form",
-          "score": 100,
-          "verified": true,
+          "score": 0,
+          "verified": false,
           "reasons": [
-            "official_business_route"
+            "unverified_external_evidence_rejected"
           ],
-          "evidenceUrl": "https://www.outdoorshoplewes.co.uk/",
+          "evidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
           "checkedAt": ""
         },
         {
@@ -16628,12 +16628,12 @@
       "evidence": [
         {
           "channel": "website_form",
-          "score": 100,
-          "verified": true,
+          "score": 0,
+          "verified": false,
           "reasons": [
-            "official_business_route"
+            "unverified_external_evidence_rejected"
           ],
-          "evidenceUrl": "https://vamosoutdoors.ca/",
+          "evidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
           "checkedAt": ""
         },
         {
@@ -16720,12 +16720,12 @@
       "evidence": [
         {
           "channel": "website_form",
-          "score": 100,
-          "verified": true,
+          "score": 0,
+          "verified": false,
           "reasons": [
-            "official_business_route"
+            "unverified_external_evidence_rejected"
           ],
-          "evidenceUrl": "https://www.actionoutdoors.co.uk/about/",
+          "evidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
           "checkedAt": ""
         },
         {
@@ -16766,12 +16766,12 @@
       "evidence": [
         {
           "channel": "website_form",
-          "score": 100,
-          "verified": true,
+          "score": 0,
+          "verified": false,
           "reasons": [
-            "official_business_route"
+            "unverified_external_evidence_rejected"
           ],
-          "evidenceUrl": "https://spryactive.ca/pages/about",
+          "evidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
           "checkedAt": ""
         },
         {
@@ -16812,12 +16812,12 @@
       "evidence": [
         {
           "channel": "website_form",
-          "score": 100,
-          "verified": true,
+          "score": 0,
+          "verified": false,
           "reasons": [
-            "official_business_route"
+            "unverified_external_evidence_rejected"
           ],
-          "evidenceUrl": "https://lifestylegear.co.nz/pages/contact",
+          "evidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
           "checkedAt": ""
         },
         {
@@ -16955,12 +16955,12 @@
       "evidence": [
         {
           "channel": "website_form",
-          "score": 100,
-          "verified": true,
+          "score": 0,
+          "verified": false,
           "reasons": [
-            "official_business_route"
+            "unverified_external_evidence_rejected"
           ],
-          "evidenceUrl": "https://oldschooloutdoor.com/pages/contact",
+          "evidenceUrl": "https://outdoorretailer.com/retailers-of-interest/",
           "checkedAt": ""
         },
         {
@@ -17016,7 +17016,7 @@
             "official_business_route"
           ],
           "evidenceUrl": "https://gecko-overland.com/contact/",
-          "checkedAt": "2026-08-11T13:17:57.559Z"
+          "checkedAt": "2026-08-12T09:32:15.495Z"
         }
       ],
       "history": [
@@ -17154,7 +17154,7 @@
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://www.basecamp-outfitters.com/",
-          "checkedAt": "2026-08-11T13:18:00.631Z"
+          "checkedAt": "2026-08-12T09:32:16.566Z"
         }
       ],
       "history": [
@@ -22385,13 +22385,13 @@
     ]
   },
   "ownerSummary": {
-    "generatedAt": "2026-08-12T09:32:26.635Z",
+    "generatedAt": "2026-08-12T09:37:27.738Z",
     "phase": "autonomous_sales_operating_system_v1",
     "kpis": {
       "companies": 327,
       "permanentlySuppressed": 264,
       "plannedActions": 7,
-      "verifiedEvidenceRoutes": 126
+      "verifiedEvidenceRoutes": 121
     },
     "decisions": [
       {

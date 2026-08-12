@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-12T09:32:24.743Z",
+  "generatedAt": "2026-08-12T09:37:25.917Z",
   "date": "2026-08-12",
   "mode": "daily-icp-first-automation-loop",
   "executionLayer": "Dedicated Chrome automation profile only; primary Chrome attachment forbidden",
@@ -147,7 +147,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/Rome",
-        "localTime": "Wed 11:32",
+        "localTime": "Wed 11:37",
         "window": "outside_work_hours",
         "nextBest": "Europe/Rome afternoon",
         "weight": 0
@@ -246,7 +246,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Asia/Shanghai",
-        "localTime": "Wed 17:32",
+        "localTime": "Wed 17:37",
         "window": "outside_work_hours",
         "nextBest": "Asia/Shanghai morning",
         "weight": 0
@@ -275,7 +275,7 @@
       "discoveredAt": "2026-07-14T04:02:10.362Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-12T02:10:21.559Z",
+        "verifiedAt": "2026-08-12T09:37:06.241Z",
         "evidenceUrl": "https://www.obelink.nl/obelink-partnerprogramma/",
         "httpStatus": 200,
         "signals": [
@@ -351,7 +351,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/Paris",
-        "localTime": "Wed 11:32",
+        "localTime": "Wed 11:37",
         "window": "outside_work_hours",
         "nextBest": "Europe/Paris afternoon",
         "weight": 0
@@ -380,7 +380,7 @@
       "discoveredAt": "2026-07-14T04:02:10.362Z",
       "firstPartyChannelVerification": {
         "status": "unreachable",
-        "verifiedAt": "2026-08-12T02:10:34.120Z",
+        "verifiedAt": "2026-08-12T09:37:17.134Z",
         "evidenceUrl": "https://www.auvieuxcampeur.fr/",
         "httpStatus": 403,
         "signals": [],
@@ -454,7 +454,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/Berlin",
-        "localTime": "Wed 11:32",
+        "localTime": "Wed 11:37",
         "window": "outside_work_hours",
         "nextBest": "Europe/Berlin afternoon",
         "weight": 0
@@ -475,7 +475,7 @@
       "discoveredAt": "2026-07-14T04:02:10.362Z",
       "firstPartyChannelVerification": {
         "status": "unreachable",
-        "verifiedAt": "2026-08-12T02:10:30.128Z",
+        "verifiedAt": "2026-08-12T09:37:14.065Z",
         "evidenceUrl": "https://www.bergfreunde.eu/",
         "httpStatus": 403,
         "signals": [],
@@ -549,7 +549,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/Oslo",
-        "localTime": "Wed 11:32",
+        "localTime": "Wed 11:37",
         "window": "outside_work_hours",
         "nextBest": "Europe/Oslo afternoon",
         "weight": 0
@@ -654,7 +654,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/London",
-        "localTime": "Wed 10:32",
+        "localTime": "Wed 10:37",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -757,7 +757,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Asia/Shanghai",
-        "localTime": "Wed 17:32",
+        "localTime": "Wed 17:37",
         "window": "outside_work_hours",
         "nextBest": "Asia/Shanghai morning",
         "weight": 0
@@ -862,7 +862,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/Paris",
-        "localTime": "Wed 11:32",
+        "localTime": "Wed 11:37",
         "window": "outside_work_hours",
         "nextBest": "Europe/Paris afternoon",
         "weight": 0
@@ -965,7 +965,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Asia/Shanghai",
-        "localTime": "Wed 17:32",
+        "localTime": "Wed 17:37",
         "window": "outside_work_hours",
         "nextBest": "Asia/Shanghai morning",
         "weight": 0
@@ -1068,7 +1068,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Asia/Shanghai",
-        "localTime": "Wed 17:32",
+        "localTime": "Wed 17:37",
         "window": "outside_work_hours",
         "nextBest": "Asia/Shanghai morning",
         "weight": 0
@@ -1171,7 +1171,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/Helsinki",
-        "localTime": "Wed 12:32",
+        "localTime": "Wed 12:37",
         "window": "outside_work_hours",
         "nextBest": "Europe/Helsinki afternoon",
         "weight": 0
@@ -1277,7 +1277,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/London",
-        "localTime": "Wed 10:32",
+        "localTime": "Wed 10:37",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -1374,7 +1374,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/Dublin",
-        "localTime": "Wed 10:32",
+        "localTime": "Wed 10:37",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -1471,7 +1471,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Asia/Shanghai",
-        "localTime": "Wed 17:32",
+        "localTime": "Wed 17:37",
         "window": "outside_work_hours",
         "nextBest": "Asia/Shanghai morning",
         "weight": 0
@@ -1576,7 +1576,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/Berlin",
-        "localTime": "Wed 11:32",
+        "localTime": "Wed 11:37",
         "window": "outside_work_hours",
         "nextBest": "Europe/Berlin afternoon",
         "weight": 0
@@ -1673,7 +1673,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/Oslo",
-        "localTime": "Wed 11:32",
+        "localTime": "Wed 11:37",
         "window": "outside_work_hours",
         "nextBest": "Europe/Oslo afternoon",
         "weight": 0
@@ -1776,7 +1776,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Australia/Sydney",
-        "localTime": "Wed 19:32",
+        "localTime": "Wed 19:37",
         "window": "outside_work_hours",
         "nextBest": "Australia/Sydney morning",
         "weight": 0
@@ -1805,7 +1805,7 @@
       "discoveredAt": "2026-07-29T12:52:55.130Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-12T02:10:29.059Z",
+        "verifiedAt": "2026-08-12T09:37:16.600Z",
         "evidenceUrl": "https://www.outdoornature.com.au/become-a-supplier/",
         "httpStatus": 200,
         "signals": [
@@ -1884,7 +1884,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Pacific/Auckland",
-        "localTime": "Wed 21:32",
+        "localTime": "Wed 21:37",
         "window": "outside_work_hours",
         "nextBest": "Pacific/Auckland morning",
         "weight": 0
@@ -1989,7 +1989,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Australia/Sydney",
-        "localTime": "Wed 19:32",
+        "localTime": "Wed 19:37",
         "window": "outside_work_hours",
         "nextBest": "Australia/Sydney morning",
         "weight": 0
@@ -2092,7 +2092,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Wed 05:32",
+        "localTime": "Wed 05:37",
         "window": "outside_work_hours",
         "nextBest": "America/Toronto morning",
         "weight": 0
@@ -2197,7 +2197,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Wed 05:32",
+        "localTime": "Wed 05:37",
         "window": "outside_work_hours",
         "nextBest": "America/Toronto morning",
         "weight": 0
@@ -2296,7 +2296,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Wed 05:32",
+        "localTime": "Wed 05:37",
         "window": "outside_work_hours",
         "nextBest": "America/Toronto morning",
         "weight": 0
@@ -2402,7 +2402,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/12 17:31:57",
+        "localTime": "2026/8/12 17:36:59",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -2517,7 +2517,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/12 17:31:57",
+        "localTime": "2026/8/12 17:36:59",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -2635,7 +2635,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/12 17:31:57",
+        "localTime": "2026/8/12 17:36:59",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -2749,7 +2749,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/12 17:31:57",
+        "localTime": "2026/8/12 17:36:59",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -2863,7 +2863,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/12 17:31:57",
+        "localTime": "2026/8/12 17:36:59",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -2977,7 +2977,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/12 17:31:57",
+        "localTime": "2026/8/12 17:36:59",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -3093,7 +3093,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/12 17:31:57",
+        "localTime": "2026/8/12 17:36:59",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -3210,7 +3210,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/12 17:31:57",
+        "localTime": "2026/8/12 17:36:59",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -3237,7 +3237,7 @@
       "discoveredAt": "2026-07-14T04:02:10.362Z",
       "firstPartyChannelVerification": {
         "status": "unreachable",
-        "verifiedAt": "2026-08-12T02:10:30.128Z",
+        "verifiedAt": "2026-08-12T09:37:14.065Z",
         "evidenceUrl": "https://www.bergfreunde.eu/",
         "httpStatus": 403,
         "signals": [],
@@ -3324,7 +3324,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/12 17:31:57",
+        "localTime": "2026/8/12 17:36:59",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -3351,7 +3351,7 @@
       "discoveredAt": "2026-07-14T04:02:10.362Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-12T02:10:21.559Z",
+        "verifiedAt": "2026-08-12T09:37:06.241Z",
         "evidenceUrl": "https://www.obelink.nl/obelink-partnerprogramma/",
         "httpStatus": 200,
         "signals": [
@@ -3440,7 +3440,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/12 17:31:57",
+        "localTime": "2026/8/12 17:36:59",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -3467,7 +3467,7 @@
       "discoveredAt": "2026-07-14T04:02:10.362Z",
       "firstPartyChannelVerification": {
         "status": "unreachable",
-        "verifiedAt": "2026-08-12T02:10:34.120Z",
+        "verifiedAt": "2026-08-12T09:37:17.134Z",
         "evidenceUrl": "https://www.auvieuxcampeur.fr/",
         "httpStatus": 403,
         "signals": [],
@@ -3554,7 +3554,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/12 17:31:57",
+        "localTime": "2026/8/12 17:36:59",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -3670,7 +3670,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/12 17:31:57",
+        "localTime": "2026/8/12 17:36:59",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -3784,7 +3784,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/12 17:31:57",
+        "localTime": "2026/8/12 17:36:59",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -3898,7 +3898,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/12 17:31:57",
+        "localTime": "2026/8/12 17:36:59",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -4012,7 +4012,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/12 17:31:57",
+        "localTime": "2026/8/12 17:36:59",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -4126,7 +4126,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/12 17:31:57",
+        "localTime": "2026/8/12 17:36:59",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -4240,7 +4240,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/12 17:31:57",
+        "localTime": "2026/8/12 17:36:59",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -4356,7 +4356,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/12 17:31:57",
+        "localTime": "2026/8/12 17:36:59",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -4474,7 +4474,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/12 17:31:57",
+        "localTime": "2026/8/12 17:36:59",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -4593,7 +4593,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/12 17:31:57",
+        "localTime": "2026/8/12 17:36:59",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -4707,7 +4707,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/12 17:31:57",
+        "localTime": "2026/8/12 17:36:59",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -4823,7 +4823,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/12 17:31:57",
+        "localTime": "2026/8/12 17:36:59",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -4945,7 +4945,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/12 17:31:57",
+        "localTime": "2026/8/12 17:36:59",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -5067,7 +5067,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/12 17:31:57",
+        "localTime": "2026/8/12 17:36:59",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -5183,7 +5183,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/12 17:31:57",
+        "localTime": "2026/8/12 17:36:59",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -5297,7 +5297,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/12 17:31:57",
+        "localTime": "2026/8/12 17:36:59",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -5412,7 +5412,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/12 17:31:57",
+        "localTime": "2026/8/12 17:36:59",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -5528,7 +5528,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/12 17:31:57",
+        "localTime": "2026/8/12 17:36:59",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -5642,7 +5642,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/12 17:31:57",
+        "localTime": "2026/8/12 17:36:59",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -5669,7 +5669,7 @@
       "discoveredAt": "2026-07-29T12:52:55.130Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-12T02:10:29.059Z",
+        "verifiedAt": "2026-08-12T09:37:16.600Z",
         "evidenceUrl": "https://www.outdoornature.com.au/become-a-supplier/",
         "httpStatus": 200,
         "signals": [
@@ -6735,7 +6735,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/12 17:31:57",
+        "localTime": "2026/8/12 17:36:59",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -6853,7 +6853,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/London",
-        "localTime": "Wed 10:32",
+        "localTime": "Wed 10:37",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -6951,7 +6951,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/London",
-        "localTime": "Wed 10:32",
+        "localTime": "Wed 10:37",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -7049,7 +7049,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/12 17:31:57",
+        "localTime": "2026/8/12 17:36:59",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -7163,7 +7163,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/12 17:31:57",
+        "localTime": "2026/8/12 17:36:59",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -7279,7 +7279,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/12 17:31:57",
+        "localTime": "2026/8/12 17:36:59",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -7396,7 +7396,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/12 17:31:57",
+        "localTime": "2026/8/12 17:36:59",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -7423,7 +7423,7 @@
       "discoveredAt": "2026-07-14T04:02:10.362Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-12T02:10:21.559Z",
+        "verifiedAt": "2026-08-12T09:37:06.241Z",
         "evidenceUrl": "https://www.obelink.nl/obelink-partnerprogramma/",
         "httpStatus": 200,
         "signals": [
@@ -7512,7 +7512,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/Dublin",
-        "localTime": "Wed 10:32",
+        "localTime": "Wed 10:37",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -7610,7 +7610,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/12 17:31:57",
+        "localTime": "2026/8/12 17:36:59",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -7724,7 +7724,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/12 17:31:57",
+        "localTime": "2026/8/12 17:36:59",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -7842,7 +7842,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/12 17:31:57",
+        "localTime": "2026/8/12 17:36:59",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -7961,7 +7961,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/12 17:31:57",
+        "localTime": "2026/8/12 17:36:59",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -8075,7 +8075,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/12 17:31:57",
+        "localTime": "2026/8/12 17:36:59",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -8190,7 +8190,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/12 17:31:57",
+        "localTime": "2026/8/12 17:36:59",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -8306,7 +8306,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/12 17:31:57",
+        "localTime": "2026/8/12 17:36:59",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -8420,7 +8420,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/12 17:31:57",
+        "localTime": "2026/8/12 17:36:59",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -8447,7 +8447,7 @@
       "discoveredAt": "2026-07-29T12:52:55.130Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-12T02:10:29.059Z",
+        "verifiedAt": "2026-08-12T09:37:16.600Z",
         "evidenceUrl": "https://www.outdoornature.com.au/become-a-supplier/",
         "httpStatus": 200,
         "signals": [
@@ -8539,7 +8539,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/London",
-        "localTime": "Wed 10:32",
+        "localTime": "Wed 10:37",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -8631,7 +8631,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/12 17:31:57",
+        "localTime": "2026/8/12 17:36:59",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -8746,7 +8746,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/Dublin",
-        "localTime": "Wed 10:32",
+        "localTime": "Wed 10:37",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -8838,7 +8838,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/London",
-        "localTime": "Wed 10:32",
+        "localTime": "Wed 10:37",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -8928,7 +8928,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/Dublin",
-        "localTime": "Wed 10:32",
+        "localTime": "Wed 10:37",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -9174,7 +9174,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/Berlin",
-        "localTime": "Wed 11:32",
+        "localTime": "Wed 11:37",
         "window": "outside_work_hours",
         "nextBest": "Europe/Berlin afternoon",
         "weight": 0
@@ -9203,7 +9203,7 @@
       "discoveredAt": "2026-07-14T04:02:10.362Z",
       "firstPartyChannelVerification": {
         "status": "unreachable",
-        "verifiedAt": "2026-08-12T02:10:30.128Z",
+        "verifiedAt": "2026-08-12T09:37:14.065Z",
         "evidenceUrl": "https://www.bergfreunde.eu/",
         "httpStatus": 403,
         "signals": [],
@@ -9272,7 +9272,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/Paris",
-        "localTime": "Wed 11:32",
+        "localTime": "Wed 11:37",
         "window": "outside_work_hours",
         "nextBest": "Europe/Paris afternoon",
         "weight": 0
@@ -9301,7 +9301,7 @@
       "discoveredAt": "2026-07-14T04:02:10.362Z",
       "firstPartyChannelVerification": {
         "status": "unreachable",
-        "verifiedAt": "2026-08-12T02:10:34.120Z",
+        "verifiedAt": "2026-08-12T09:37:17.134Z",
         "evidenceUrl": "https://www.auvieuxcampeur.fr/",
         "httpStatus": 403,
         "signals": [],
@@ -9370,7 +9370,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Asia/Shanghai",
-        "localTime": "Wed 17:32",
+        "localTime": "Wed 17:37",
         "window": "outside_work_hours",
         "nextBest": "Asia/Shanghai morning",
         "weight": 0
@@ -9470,7 +9470,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/Paris",
-        "localTime": "Wed 11:32",
+        "localTime": "Wed 11:37",
         "window": "outside_work_hours",
         "nextBest": "Europe/Paris afternoon",
         "weight": 0
@@ -9568,7 +9568,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/Berlin",
-        "localTime": "Wed 11:32",
+        "localTime": "Wed 11:37",
         "window": "outside_work_hours",
         "nextBest": "Europe/Berlin afternoon",
         "weight": 0
@@ -9666,7 +9666,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Asia/Shanghai",
-        "localTime": "Wed 17:32",
+        "localTime": "Wed 17:37",
         "window": "outside_work_hours",
         "nextBest": "Asia/Shanghai morning",
         "weight": 0
@@ -9764,7 +9764,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Asia/Shanghai",
-        "localTime": "Wed 17:32",
+        "localTime": "Wed 17:37",
         "window": "outside_work_hours",
         "nextBest": "Asia/Shanghai morning",
         "weight": 0
@@ -9864,7 +9864,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Wed 05:32",
+        "localTime": "Wed 05:37",
         "window": "outside_work_hours",
         "nextBest": "America/Toronto morning",
         "weight": 0
@@ -9964,7 +9964,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Wed 05:32",
+        "localTime": "Wed 05:37",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -10070,7 +10070,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Wed 05:32",
+        "localTime": "Wed 05:37",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -10176,7 +10176,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Wed 05:32",
+        "localTime": "Wed 05:37",
         "window": "outside_work_hours",
         "nextBest": "America/Toronto morning",
         "weight": 0
@@ -10276,7 +10276,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Wed 05:32",
+        "localTime": "Wed 05:37",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -10374,7 +10374,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/Berlin",
-        "localTime": "Wed 11:32",
+        "localTime": "Wed 11:37",
         "window": "outside_work_hours",
         "nextBest": "Europe/Berlin afternoon",
         "weight": 0
@@ -10466,7 +10466,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Wed 05:32",
+        "localTime": "Wed 05:37",
         "window": "outside_work_hours",
         "nextBest": "America/Toronto morning",
         "weight": 0
@@ -10560,7 +10560,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Wed 05:32",
+        "localTime": "Wed 05:37",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -10660,7 +10660,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Wed 05:32",
+        "localTime": "Wed 05:37",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -10760,7 +10760,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/Berlin",
-        "localTime": "Wed 11:32",
+        "localTime": "Wed 11:37",
         "window": "outside_work_hours",
         "nextBest": "Europe/Berlin afternoon",
         "weight": 0
@@ -10781,7 +10781,7 @@
       "discoveredAt": "2026-07-14T04:02:10.362Z",
       "firstPartyChannelVerification": {
         "status": "unreachable",
-        "verifiedAt": "2026-08-12T02:10:30.128Z",
+        "verifiedAt": "2026-08-12T09:37:14.065Z",
         "evidenceUrl": "https://www.bergfreunde.eu/",
         "httpStatus": 403,
         "signals": [],
@@ -10850,7 +10850,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/Berlin",
-        "localTime": "Wed 11:32",
+        "localTime": "Wed 11:37",
         "window": "outside_work_hours",
         "nextBest": "Europe/Berlin afternoon",
         "weight": 0
@@ -10940,7 +10940,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Wed 05:32",
+        "localTime": "Wed 05:37",
         "window": "outside_work_hours",
         "nextBest": "America/Toronto morning",
         "weight": 0
@@ -12147,7 +12147,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/London",
-        "localTime": "Wed 10:32",
+        "localTime": "Wed 10:37",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -12204,7 +12204,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/London",
-        "localTime": "Wed 10:32",
+        "localTime": "Wed 10:37",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -12261,7 +12261,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/London",
-        "localTime": "Wed 10:32",
+        "localTime": "Wed 10:37",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -12318,7 +12318,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Asia/Kolkata",
-        "localTime": "Wed 15:02",
+        "localTime": "Wed 15:07",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
@@ -12375,7 +12375,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Wed 05:32",
+        "localTime": "Wed 05:37",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -12432,7 +12432,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Wed 05:32",
+        "localTime": "Wed 05:37",
         "window": "outside_work_hours",
         "nextBest": "America/Toronto morning",
         "weight": 0
@@ -12489,7 +12489,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Wed 05:32",
+        "localTime": "Wed 05:37",
         "window": "outside_work_hours",
         "nextBest": "America/Toronto morning",
         "weight": 0
@@ -12546,7 +12546,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Asia/Jakarta",
-        "localTime": "Wed 16:32",
+        "localTime": "Wed 16:37",
         "window": "outside_work_hours",
         "nextBest": "Asia/Jakarta morning",
         "weight": 0
@@ -12603,7 +12603,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Australia/Sydney",
-        "localTime": "Wed 19:32",
+        "localTime": "Wed 19:37",
         "window": "outside_work_hours",
         "nextBest": "Australia/Sydney morning",
         "weight": 0
@@ -12660,7 +12660,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Pacific/Auckland",
-        "localTime": "Wed 21:32",
+        "localTime": "Wed 21:37",
         "window": "outside_work_hours",
         "nextBest": "Pacific/Auckland morning",
         "weight": 0
@@ -12717,7 +12717,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Pacific/Auckland",
-        "localTime": "Wed 21:32",
+        "localTime": "Wed 21:37",
         "window": "outside_work_hours",
         "nextBest": "Pacific/Auckland morning",
         "weight": 0
@@ -12774,7 +12774,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Pacific/Auckland",
-        "localTime": "Wed 21:32",
+        "localTime": "Wed 21:37",
         "window": "outside_work_hours",
         "nextBest": "Pacific/Auckland morning",
         "weight": 0
@@ -12831,7 +12831,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Pacific/Auckland",
-        "localTime": "Wed 21:32",
+        "localTime": "Wed 21:37",
         "window": "outside_work_hours",
         "nextBest": "Pacific/Auckland morning",
         "weight": 0
@@ -12888,7 +12888,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Pacific/Auckland",
-        "localTime": "Wed 21:32",
+        "localTime": "Wed 21:37",
         "window": "outside_work_hours",
         "nextBest": "Pacific/Auckland morning",
         "weight": 0
@@ -12970,7 +12970,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/London",
-        "localTime": "Wed 10:32",
+        "localTime": "Wed 10:37",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -13028,6 +13028,126 @@
       "lastStatus": "sent_confirmed",
       "lastEvidence": "official_public_business_email;recipient_edit_state_exact_match:info@summitint.co;sender_identity_verified:Leo@flextailgear.com;send_click_once;composer_closed;sent_folder_exact_subject_visible:2026-08-05T20:55+08:00",
       "lastTouch": "2026-08-05T12:55:00.000Z"
+    },
+    {
+      "linkedinUrl": "https://uk.linkedin.com/company/go-outdoors-ltd",
+      "founded": "1969",
+      "headquarters": "Bury, Lancashire, United Kingdom",
+      "companyScale": "1,001-5,000 employees; major UK outdoor retail chain",
+      "coverage": "United Kingdom",
+      "mainBrands": "Camping equipment, outdoor clothing/footwear, cycling, fishing, caravanning, tents",
+      "salesChannel": "Stores and ecommerce",
+      "buyingCapability": "High; category buyer or JD Outdoors/GO Outdoors merchandising route",
+      "decisionMaker": "Camping equipment buyer, outdoor accessories category manager, vendor review contact",
+      "publicEmail": "enquiries@gooutdoors.co.uk",
+      "publicEmailStatus": "No public buyer email verified; use official contact page and LinkedIn category research.",
+      "contactPhone": "+44 330 008 1555",
+      "vendorPortal": "https://www.gooutdoors.co.uk/contact-us",
+      "linkedinCompany": "https://uk.linkedin.com/company/go-outdoors-ltd",
+      "contactNote": "Use official contact route and ask for camping/accessories buyer; validate any personal emails before use.",
+      "dataSources": [
+        "GO Outdoors LinkedIn",
+        "GO Outdoors public company/contact sources"
+      ],
+      "id": "google-customer-go-outdoors-website-contact",
+      "name": "GO Outdoors",
+      "company": "GO Outdoors",
+      "customerType": "key_account",
+      "discoveryMode": "baseline_verified_pool",
+      "country": "United Kingdom",
+      "countryEn": "United Kingdom",
+      "fitScore": 93,
+      "fitTier": "A+",
+      "marketScore": 4.5,
+      "marketStatus": "open",
+      "agencyState": "open",
+      "agentCompany": "",
+      "keyword": "outdoor retail chain",
+      "role": "Camping and outdoor accessories buyer.",
+      "background": "UK outdoor retailer with camping, tents, hiking, cycling, and outdoor equipment categories.",
+      "buyerPersona": "Camping and outdoor accessories buyer.",
+      "targetMarkets": "",
+      "excludedMarkets": "",
+      "productCategory": "outdoor retail chain",
+      "businessModel": "Retail Chain",
+      "productFit": "FLEXTAIL portable pumps, outdoor power, camping lighting and compact camping accessories",
+      "opportunity": "UK outdoor retailer with camping, tents, hiking, cycling, and outdoor equipment categories.",
+      "linkedin_url": "https://uk.linkedin.com/company/go-outdoors-ltd",
+      "linkedin": "https://uk.linkedin.com/company/go-outdoors-ltd",
+      "contactEmail": "enquiries@gooutdoors.co.uk",
+      "emailVerificationStatus": "official_public_business_email",
+      "emailEvidence": "first_party_live_page",
+      "emailEvidenceUrl": "",
+      "website": "https://www.gooutdoors.co.uk/",
+      "evidenceUrl": "https://www.google.com/search?q=%22GO%20Outdoors%22%20%22outdoor%20retail%20chain%22%20%22United%20Kingdom%22%20buyer%20OR%20wholesale%20OR%20contact",
+      "sourceEvidenceUrl": "https://www.gooutdoors.co.uk/pages/contact",
+      "externalVerificationStatus": "official_contact_form_verified",
+      "query": "https://www.google.com/search?q=%22GO%20Outdoors%22%20%22outdoor%20retail%20chain%22%20%22United%20Kingdom%22%20buyer%20OR%20wholesale%20OR%20contact",
+      "source": "google_customer_discovery",
+      "sourceType": "google",
+      "discoveryProvider": "google",
+      "channel": "",
+      "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
+      "socialProfileEvidenceUrl": "",
+      "socialProfileVerifiedAt": "",
+      "profiledAt": "2026-07-14T04:02:10.360Z",
+      "partnershipStatus": "",
+      "doNotOutreach": false,
+      "automationStatus": "",
+      "partnerNote": "",
+      "sendStatus": "",
+      "workingTime": {
+        "dueNow": true,
+        "timeZone": "Europe/London",
+        "localTime": "Wed 10:37",
+        "window": "morning",
+        "nextBest": "now",
+        "weight": 1
+      },
+      "platform": "website_form",
+      "channelType": "website_form",
+      "platformUrl": "https://www.gooutdoors.co.uk/contact-us",
+      "url": "https://www.gooutdoors.co.uk/contact-us",
+      "contactUrl": "https://www.gooutdoors.co.uk/contact-us",
+      "contactSearchUrl": "https://www.google.com/search?q=site%3Awww.gooutdoors.co.uk%20%22GO%20Outdoors%22%20contact%20buyer%20wholesale%20email%20vendor",
+      "emailFrom": "leo@flextailgear.com",
+      "websiteContactSubject": "FLEXTAIL retail partnership | 2026 assortment",
+      "websiteContactMessage": "Dear GO Outdoors Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
+      "websiteContactFlow": "open_official_contact_us_fill_attach_auto_submit",
+      "action": "cooldown",
+      "reason": "previous_customer_development_no_repeat",
+      "alternateChannels": {
+        "linkedin": "https://uk.linkedin.com/company/go-outdoors-ltd",
+        "instagram": "https://www.instagram.com/gooutdoors/",
+        "facebook": "https://www.facebook.com/GOoutdoorsUK/",
+        "websiteContact": "https://www.gooutdoors.co.uk/contact-us"
+      },
+      "invalidChannels": {},
+      "identitySource": "official website contact path + Google buyer/contact query",
+      "channelPriority": 3,
+      "discoveredAt": "2026-07-14T04:02:10.362Z",
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-12T09:37:04.216Z",
+        "evidenceUrl": "https://www.gooutdoors.co.uk/pages/contact",
+        "httpStatus": 200,
+        "signals": [
+          "form_control",
+          "public_business_email",
+          "contact_invitation"
+        ],
+        "error": ""
+      },
+      "contactCapabilityVerified": true,
+      "targetRegion": "europe",
+      "targetRegionScore": 45,
+      "contactChannelScore": 29,
+      "dealProbabilityScore": 269,
+      "priorityScore": 269,
+      "lastStatus": "sent_confirmed",
+      "lastEvidence": "instagram_message_sent_confirmed_composer_cleared;instagram_post_opened;post_liked;comment_submitted;follow_already_active",
+      "lastTouch": "2026-06-30T13:05:04.429Z"
     },
     {
       "linkedinUrl": "https://uk.linkedin.com/company/cotswold-outdoor",
@@ -13100,7 +13220,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/London",
-        "localTime": "Wed 10:32",
+        "localTime": "Wed 10:37",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -13129,7 +13249,7 @@
       "discoveredAt": "2026-07-14T04:02:10.362Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-12T02:10:36.081Z",
+        "verifiedAt": "2026-08-12T09:37:18.073Z",
         "evidenceUrl": "https://www.cotswoldoutdoor.com/",
         "httpStatus": 200,
         "signals": [
@@ -13205,7 +13325,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/London",
-        "localTime": "Wed 10:32",
+        "localTime": "Wed 10:37",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -13306,7 +13426,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/London",
-        "localTime": "Wed 10:32",
+        "localTime": "Wed 10:37",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -13411,7 +13531,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/London",
-        "localTime": "Wed 10:32",
+        "localTime": "Wed 10:37",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -13517,7 +13637,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/London",
-        "localTime": "Wed 10:32",
+        "localTime": "Wed 10:37",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -13622,7 +13742,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/London",
-        "localTime": "Wed 10:32",
+        "localTime": "Wed 10:37",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -13723,7 +13843,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/London",
-        "localTime": "Wed 10:32",
+        "localTime": "Wed 10:37",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -13827,7 +13947,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/London",
-        "localTime": "Wed 10:32",
+        "localTime": "Wed 10:37",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -13932,7 +14052,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/London",
-        "localTime": "Wed 10:32",
+        "localTime": "Wed 10:37",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -14038,7 +14158,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/London",
-        "localTime": "Wed 10:32",
+        "localTime": "Wed 10:37",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -14144,7 +14264,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/London",
-        "localTime": "Wed 10:32",
+        "localTime": "Wed 10:37",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -14245,7 +14365,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/London",
-        "localTime": "Wed 10:32",
+        "localTime": "Wed 10:37",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -14348,7 +14468,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/London",
-        "localTime": "Wed 10:32",
+        "localTime": "Wed 10:37",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -14454,7 +14574,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/London",
-        "localTime": "Wed 10:32",
+        "localTime": "Wed 10:37",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -14501,125 +14621,6 @@
       "lastStatus": "sent_confirmed",
       "lastEvidence": "smtp_accepted;message_id:<4e3a5b51-9567-6b06-a7c9-2b2ae2627c9e@flextailgear.com>;sent_folder_message_confirmed;contact_path_strategy_v2;recipient_replied;inbound_reply_received;human_reply_price_list_requested;positive_buyer_routing_confirmed",
       "lastTouch": "2026-08-10T11:12:59.414Z"
-    },
-    {
-      "linkedinUrl": "https://uk.linkedin.com/company/go-outdoors-ltd",
-      "founded": "1969",
-      "headquarters": "Bury, Lancashire, United Kingdom",
-      "companyScale": "1,001-5,000 employees; major UK outdoor retail chain",
-      "coverage": "United Kingdom",
-      "mainBrands": "Camping equipment, outdoor clothing/footwear, cycling, fishing, caravanning, tents",
-      "salesChannel": "Stores and ecommerce",
-      "buyingCapability": "High; category buyer or JD Outdoors/GO Outdoors merchandising route",
-      "decisionMaker": "Camping equipment buyer, outdoor accessories category manager, vendor review contact",
-      "publicEmail": "",
-      "publicEmailStatus": "No public buyer email verified; use official contact page and LinkedIn category research.",
-      "contactPhone": "+44 330 008 1555",
-      "vendorPortal": "https://www.gooutdoors.co.uk/contact-us",
-      "linkedinCompany": "https://uk.linkedin.com/company/go-outdoors-ltd",
-      "contactNote": "Use official contact route and ask for camping/accessories buyer; validate any personal emails before use.",
-      "dataSources": [
-        "GO Outdoors LinkedIn",
-        "GO Outdoors public company/contact sources"
-      ],
-      "id": "google-customer-go-outdoors-website-contact",
-      "name": "GO Outdoors",
-      "company": "GO Outdoors",
-      "customerType": "key_account",
-      "discoveryMode": "baseline_verified_pool",
-      "country": "United Kingdom",
-      "countryEn": "United Kingdom",
-      "fitScore": 93,
-      "fitTier": "A+",
-      "marketScore": 4.5,
-      "marketStatus": "open",
-      "agencyState": "open",
-      "agentCompany": "",
-      "keyword": "outdoor retail chain",
-      "role": "Camping and outdoor accessories buyer.",
-      "background": "UK outdoor retailer with camping, tents, hiking, cycling, and outdoor equipment categories.",
-      "buyerPersona": "Camping and outdoor accessories buyer.",
-      "targetMarkets": "",
-      "excludedMarkets": "",
-      "productCategory": "outdoor retail chain",
-      "businessModel": "Retail Chain",
-      "productFit": "FLEXTAIL portable pumps, outdoor power, camping lighting and compact camping accessories",
-      "opportunity": "UK outdoor retailer with camping, tents, hiking, cycling, and outdoor equipment categories.",
-      "linkedin_url": "https://uk.linkedin.com/company/go-outdoors-ltd",
-      "linkedin": "https://uk.linkedin.com/company/go-outdoors-ltd",
-      "contactEmail": "",
-      "emailVerificationStatus": "",
-      "emailEvidence": "",
-      "emailEvidenceUrl": "",
-      "website": "https://www.gooutdoors.co.uk/",
-      "evidenceUrl": "https://www.google.com/search?q=%22GO%20Outdoors%22%20%22outdoor%20retail%20chain%22%20%22United%20Kingdom%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "sourceEvidenceUrl": "https://www.gooutdoors.co.uk/",
-      "externalVerificationStatus": "official_contact_form_verified",
-      "query": "https://www.google.com/search?q=%22GO%20Outdoors%22%20%22outdoor%20retail%20chain%22%20%22United%20Kingdom%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "source": "google_customer_discovery",
-      "sourceType": "google",
-      "discoveryProvider": "google",
-      "channel": "",
-      "identityStatus": "verified",
-      "officialSocialProfileVerified": false,
-      "socialProfileEvidenceUrl": "",
-      "socialProfileVerifiedAt": "",
-      "profiledAt": "2026-07-14T04:02:10.360Z",
-      "partnershipStatus": "",
-      "doNotOutreach": false,
-      "automationStatus": "",
-      "partnerNote": "",
-      "sendStatus": "",
-      "workingTime": {
-        "dueNow": true,
-        "timeZone": "Europe/London",
-        "localTime": "Wed 10:32",
-        "window": "morning",
-        "nextBest": "now",
-        "weight": 1
-      },
-      "platform": "website_form",
-      "channelType": "website_form",
-      "platformUrl": "https://www.gooutdoors.co.uk/contact-us",
-      "url": "https://www.gooutdoors.co.uk/contact-us",
-      "contactUrl": "https://www.gooutdoors.co.uk/contact-us",
-      "contactSearchUrl": "https://www.google.com/search?q=site%3Awww.gooutdoors.co.uk%20%22GO%20Outdoors%22%20contact%20buyer%20wholesale%20email%20vendor",
-      "emailFrom": "leo@flextailgear.com",
-      "websiteContactSubject": "FLEXTAIL retail partnership | 2026 assortment",
-      "websiteContactMessage": "Dear GO Outdoors Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
-      "websiteContactFlow": "open_official_contact_us_fill_attach_auto_submit",
-      "action": "cooldown",
-      "reason": "previous_customer_development_no_repeat",
-      "alternateChannels": {
-        "linkedin": "https://uk.linkedin.com/company/go-outdoors-ltd",
-        "instagram": "https://www.instagram.com/gooutdoors/",
-        "facebook": "https://www.facebook.com/GOoutdoorsUK/",
-        "websiteContact": "https://www.gooutdoors.co.uk/contact-us"
-      },
-      "invalidChannels": {},
-      "identitySource": "official website contact path + Google buyer/contact query",
-      "channelPriority": 3,
-      "discoveredAt": "2026-07-14T04:02:10.362Z",
-      "firstPartyChannelVerification": {
-        "status": "checked",
-        "verifiedAt": "2026-08-12T02:10:23.133Z",
-        "evidenceUrl": "https://www.gooutdoors.co.uk/pages/contact",
-        "httpStatus": 200,
-        "signals": [
-          "form_control",
-          "contact_invitation"
-        ],
-        "error": ""
-      },
-      "contactCapabilityVerified": true,
-      "targetRegion": "europe",
-      "targetRegionScore": 45,
-      "contactChannelScore": 17,
-      "dealProbabilityScore": 257,
-      "priorityScore": 257,
-      "lastStatus": "sent_confirmed",
-      "lastEvidence": "instagram_message_sent_confirmed_composer_cleared;instagram_post_opened;post_liked;comment_submitted;follow_already_active",
-      "lastTouch": "2026-06-30T13:05:04.429Z"
     }
   ],
   "scheduledLater": [],
