@@ -697,6 +697,26 @@ const DIRECTORY_REFILL_CANDIDATES = [
   ['Elevated Outdoor Sales', 'United States', 'https://www.elevatedoutdoorsales.com/home', '', 90, 'sales_agency'],
   ['Mindful Outdoor Sales', 'United States', 'https://www.mindfuloutdoorsales.com/', '', 89, 'sales_agency'],
   ['Stoner Andrews', 'United States', 'https://www.stonerandrews.com/history-ethos', '', 94, 'sales_agency'],
+  ['Action Sports Agency', 'United States', 'https://www.actionsportsagency.com/', '', 90, 'sales_agency'],
+  ['VERT Outdoors', 'United States', 'https://vertoutdoors.com/team', '', 92, 'sales_agency'],
+  ['Evergreen Outdoor Group', 'United States', 'https://www.evergreenog.com/our-story', '', 91, 'sales_agency'],
+  ['Skyline Sales & Consulting', 'United States', 'https://www.skylinesalesreps.com/about-us', '', 92, 'sales_agency'],
+  ['Specialty Sports Reps', 'United States', 'https://www.teamssr.com/', '', 91, 'sales_agency'],
+  ['Brandywine River Reps', 'United States', 'https://www.brreps.com/', '', 91, 'sales_agency'],
+  ['Professional Marketing Inc', 'United States', 'https://www.wileyoutdoorproducts.com/', '', 88, 'sales_agency'],
+  ['Elite Outdoor Sports Marketing', 'United States', 'https://eliteoutdoorsports.com/who-we-are/', '', 90, 'sales_agency'],
+  ['Pacific Coast Sports Marketing', 'United States', 'https://www.pacificcoastsportsmkt.com/', '', 92, 'sales_agency'],
+  ['7 Summits Sports', 'United States', 'https://www.7summitssportsinc.com/', '', 89, 'sales_agency'],
+  ['Level 8 Outdoor', 'United States', 'https://level8outdoor.com/about-us', '', 93, 'sales_agency'],
+  ['Sespe Group', 'United States', 'https://www.sespegroup.com/', '', 95, 'sales_agency'],
+  ['Edgeline Collective', 'United States', 'https://edgelinecollective.com/', '', 87, 'sales_agency'],
+  ['Suggs-Nicholas-Shea', 'United States', 'https://suggsnicholasshea.com/', '', 90, 'sales_agency'],
+  ["O'Brien Sales", 'United States', 'https://www.obriensales.com/about/', '', 90, 'sales_agency'],
+  ['Mountain Exposure', 'Canada', 'https://www.mountainx.ca/sales', '', 93, 'sales_agency'],
+  ['High Gear Sales', 'Canada', 'https://www.highgearsales.ca/', '', 88, 'sales_agency'],
+  ['Owens Outdoor Sales', 'United States', 'https://owensoutdoorsales.com/', '', 91, 'sales_agency'],
+  ['MTNSTUFF', 'United States', 'https://www.mtnstuff.com/', '', 94, 'sales_agency'],
+  ['Perspective Outdoor', 'United States', 'https://www.perspectiveoutdoor.com/', '', 90, 'sales_agency'],
   ['Tentworld', 'Australia', 'https://www.tentworld.com.au/', '', 90],
   ['Wildfire Sports', 'Australia', 'https://www.wildfiresports.com.au/', '', 87],
   ['Bivouac Outdoor', 'New Zealand', 'https://www.bivouac.co.nz/', '', 89],
@@ -880,7 +900,29 @@ const DIRECTORY_PUBLIC_CONTACT_ENRICHMENT = {
   'The Trail Head': ['info@trailheadmontana.net', 'Official company-domain address published on The Trail Head website; route the proposal to the category buyer or owner.', 'https://trailheadmontana.net/'],
   "Hilton's Tent City": ['support@hiltonstentcity.com', "Official company-domain address published by Hilton's Tent City; route the proposal to the named buyer or current vendor-review owner.", 'https://www.hiltonstentcity.com/pages/returns-exchanges'],
 };
+
+const LARGE_AGENCY_AND_DISTRIBUTOR_NAMES = new Set([
+  'OUTTECH', 'Waypoint Outdoor', 'OnwardUP', 'Sportco Marketing', 'CWR Wholesale Distribution',
+  'ROI Recreation Outfitters', 'Young & MacKenzie Distribution', 'Can-Am Sales Group',
+  'Covey Sales & Marketing', 'Continental Sports Inc', 'Terra Outdoor Gear Distribution',
+  'Hendrix Outdoors', 'Coonhound Sales & Marketing', 'Vigos Group', 'Howe Sound Sales',
+  'Sturm Mil-Tec USA', 'Canadawide Sports', 'Hicks Inc', 'ICO Distributors',
+  'Parallel 33 Sales Group', 'Escala Sales & Marketing', 'Tandem West Sales', 'C&G Distribution',
+  'Northern Exposure Sporting Group', 'NordCore Group', 'Tin Shack Ltd', '1889 Sales',
+  'Garibaldi Supply Co.', 'The Bunker Agency', 'Henry Sports Group', '360 Adventure Collective',
+  'Interex Industries', 'Zia Works Distribution', 'Urban Outdoor Sales', 'Outdoor Market Alliance',
+  'Yates Outdoor Sales', 'Round The Wheel Collective', 'Outdoor Gear Canada', 'GMD Wholesale',
+  'D.M.A. Distributing', 'Caraway & Co.', 'Premium Living Products',
+  'Outdoor Equipment Distributors', 'Classic Products International', 'REVASSA', 'JAMSCA Solutions',
+]);
+
 for (const candidate of DIRECTORY_REFILL_CANDIDATES) {
+  if (LARGE_AGENCY_AND_DISTRIBUTOR_NAMES.has(candidate.company)) {
+    candidate.customerType = 'sales_agency';
+    candidate.segment = 'verified North American outdoor sales agency or wholesale distributor';
+    candidate.background = `${candidate.company} is a first-party verified North American outdoor sales agency or wholesale distributor with retailer access relevant to FLEXTAIL's compact outdoor assortment.`;
+    candidate.buyerPersona = 'Agency principal, distributor owner, manufacturer partnerships director, or vendor onboarding lead.';
+  }
   const enrichment = DIRECTORY_PUBLIC_CONTACT_ENRICHMENT[candidate.company];
   if (enrichment) {
     candidate.publicEmail = enrichment[0];
