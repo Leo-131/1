@@ -1577,6 +1577,13 @@ test('Google discovery includes first-party-backed North America distributor res
     ['Parallel 33 Sales Group', 'United States', ''],
     ['Caraway & Co.', 'United States', ''],
     ['RTIC Mexico', 'Mexico', ''],
+    ['Coonhound Sales & Marketing', 'Canada', ''],
+    ['Escala Sales & Marketing', 'Canada', ''],
+    ['Sportco Marketing', 'United States', ''],
+    ['Waypoint Outdoor', 'United States', ''],
+    ['Vigos Group', 'United States', ''],
+    ['Henry Sports Group', 'Canada', ''],
+    ['Urban Outdoor Sales', 'United States', ''],
   ];
 
   for (const [company, country, email] of expected) {

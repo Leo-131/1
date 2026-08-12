@@ -73,6 +73,13 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "reason": "official_public_business_email_verified"
     },
     {
+      "id": "google-customer-the-bunker-agency-website-contact",
+      "company": "The Bunker Agency",
+      "action": "email_priority",
+      "platform": "website_form",
+      "reason": "official_public_business_email_verified"
+    },
+    {
       "id": "google-customer-blue-ridge-knives-website-contact",
       "company": "Blue Ridge Knives",
       "action": "email_priority",
@@ -139,6 +146,13 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "id": "google-customer-fjellsport-website-contact",
       "company": "Fjellsport",
       "action": "email_priority",
+      "platform": "website_form",
+      "reason": "official_website_contact_channel"
+    },
+    {
+      "id": "google-customer-garibaldi-supply-co-website-contact",
+      "company": "Garibaldi Supply Co.",
+      "action": "develop",
       "platform": "website_form",
       "reason": "official_website_contact_channel"
     },
@@ -262,6 +276,20 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "reason": "public_business_email_requires_verification"
     },
     {
+      "id": "google-customer-waypoint-outdoor-website-contact",
+      "company": "Waypoint Outdoor",
+      "action": "verify_target",
+      "platform": "website_form",
+      "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
+      "id": "google-customer-sportco-marketing-website-contact",
+      "company": "Sportco Marketing",
+      "action": "verify_target",
+      "platform": "website_form",
+      "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
       "id": "google-customer-cwr-wholesale-distribution-website-contact",
       "company": "CWR Wholesale Distribution",
       "action": "verify_target",
@@ -271,6 +299,13 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     {
       "id": "google-customer-young-mackenzie-distribution-website-contact",
       "company": "Young & MacKenzie Distribution",
+      "action": "verify_target",
+      "platform": "website_form",
+      "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
+      "id": "google-customer-coonhound-sales-marketing-website-contact",
+      "company": "Coonhound Sales & Marketing",
       "action": "verify_target",
       "platform": "website_form",
       "reason": "homepage_only_contact_path_requires_verification"
@@ -290,6 +325,13 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "reason": "homepage_only_contact_path_requires_verification"
     },
     {
+      "id": "google-customer-vigos-group-website-contact",
+      "company": "Vigos Group",
+      "action": "verify_target",
+      "platform": "website_form",
+      "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
       "id": "google-customer-nohrth-website-contact",
       "company": "NOHRTH",
       "action": "verify_target",
@@ -299,6 +341,13 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     {
       "id": "google-customer-sturm-mil-tec-usa-website-contact",
       "company": "Sturm Mil-Tec USA",
+      "action": "verify_target",
+      "platform": "website_form",
+      "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
+      "id": "google-customer-escala-sales-marketing-website-contact",
+      "company": "Escala Sales & Marketing",
       "action": "verify_target",
       "platform": "website_form",
       "reason": "homepage_only_contact_path_requires_verification"
@@ -367,8 +416,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "reason": "homepage_only_contact_path_requires_verification"
     },
     {
-      "id": "google-customer-garibaldi-supply-co-website-contact",
-      "company": "Garibaldi Supply Co.",
+      "id": "google-customer-henry-sports-group-website-contact",
+      "company": "Henry Sports Group",
       "action": "verify_target",
       "platform": "website_form",
       "reason": "homepage_only_contact_path_requires_verification"
@@ -376,13 +425,6 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     {
       "id": "google-customer-latulippe-website-contact",
       "company": "Latulippe",
-      "action": "verify_target",
-      "platform": "website_form",
-      "reason": "homepage_only_contact_path_requires_verification"
-    },
-    {
-      "id": "google-customer-the-bunker-agency-website-contact",
-      "company": "The Bunker Agency",
       "action": "verify_target",
       "platform": "website_form",
       "reason": "homepage_only_contact_path_requires_verification"
@@ -397,6 +439,13 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     {
       "id": "google-customer-the-great-outdoor-shop-website-contact",
       "company": "The Great Outdoor Shop",
+      "action": "verify_target",
+      "platform": "website_form",
+      "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
+      "id": "google-customer-urban-outdoor-sales-website-contact",
+      "company": "Urban Outdoor Sales",
       "action": "verify_target",
       "platform": "website_form",
       "reason": "homepage_only_contact_path_requires_verification"
@@ -633,46 +682,18 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "reason": "verified_executable_channel_missing"
     },
     {
-      "id": 9,
-      "company": "Canadian Tire",
+      "id": "google-customer-waypoint-outdoor-website-contact",
+      "company": "Waypoint Outdoor",
       "action": "verify_target",
-      "platform": "research",
-      "reason": "verified_executable_channel_missing"
+      "platform": "website_form",
+      "reason": "website_contact_capability_not_verified"
     },
     {
-      "id": 19,
-      "company": "MEC (Mountain Equipment Co-op)",
+      "id": "google-customer-sportco-marketing-website-contact",
+      "company": "Sportco Marketing",
       "action": "verify_target",
-      "platform": "research",
-      "reason": "verified_executable_channel_missing"
-    },
-    {
-      "id": 16,
-      "company": "Airstream",
-      "action": "verify_target",
-      "platform": "research",
-      "reason": "verified_executable_channel_missing"
-    },
-    {
-      "id": 5,
-      "company": "Pacific Outdoor Group",
-      "action": "verify_target",
-      "platform": "research",
-      "reason": "verified_executable_channel_missing"
-    },
-    {
-      "id": 14,
-      "company": "Rural King",
-      "action": "verify_target",
-      "platform": "research",
-      "reason": "verified_executable_channel_missing"
-    },
-    {
-      "id": 21,
-      "company": "RVDA (RV Dealers Association)",
-      "action": "verify_target",
-      "platform": "research",
-      "reason": "verified_executable_channel_missing"
+      "platform": "website_form",
+      "reason": "website_contact_capability_not_verified"
     },
     {
       "id": "google-customer-cwr-wholesale-distribution-website-contact",
@@ -684,6 +705,13 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     {
       "id": "google-customer-young-mackenzie-distribution-website-contact",
       "company": "Young & MacKenzie Distribution",
+      "action": "verify_target",
+      "platform": "website_form",
+      "reason": "website_contact_capability_not_verified"
+    },
+    {
+      "id": "google-customer-coonhound-sales-marketing-website-contact",
+      "company": "Coonhound Sales & Marketing",
       "action": "verify_target",
       "platform": "website_form",
       "reason": "website_contact_capability_not_verified"
@@ -703,6 +731,13 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "reason": "website_contact_capability_not_verified"
     },
     {
+      "id": "google-customer-vigos-group-website-contact",
+      "company": "Vigos Group",
+      "action": "verify_target",
+      "platform": "website_form",
+      "reason": "website_contact_capability_not_verified"
+    },
+    {
       "id": "google-customer-nohrth-website-contact",
       "company": "NOHRTH",
       "action": "verify_target",
@@ -712,6 +747,13 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     {
       "id": "google-customer-sturm-mil-tec-usa-website-contact",
       "company": "Sturm Mil-Tec USA",
+      "action": "verify_target",
+      "platform": "website_form",
+      "reason": "website_contact_capability_not_verified"
+    },
+    {
+      "id": "google-customer-escala-sales-marketing-website-contact",
+      "company": "Escala Sales & Marketing",
       "action": "verify_target",
       "platform": "website_form",
       "reason": "website_contact_capability_not_verified"
@@ -780,8 +822,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "reason": "website_contact_capability_not_verified"
     },
     {
-      "id": "google-customer-garibaldi-supply-co-website-contact",
-      "company": "Garibaldi Supply Co.",
+      "id": "google-customer-henry-sports-group-website-contact",
+      "company": "Henry Sports Group",
       "action": "verify_target",
       "platform": "website_form",
       "reason": "website_contact_capability_not_verified"
@@ -789,13 +831,6 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     {
       "id": "google-customer-latulippe-website-contact",
       "company": "Latulippe",
-      "action": "verify_target",
-      "platform": "website_form",
-      "reason": "website_contact_capability_not_verified"
-    },
-    {
-      "id": "google-customer-the-bunker-agency-website-contact",
-      "company": "The Bunker Agency",
       "action": "verify_target",
       "platform": "website_form",
       "reason": "website_contact_capability_not_verified"
@@ -810,6 +845,13 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     {
       "id": "google-customer-the-great-outdoor-shop-website-contact",
       "company": "The Great Outdoor Shop",
+      "action": "verify_target",
+      "platform": "website_form",
+      "reason": "website_contact_capability_not_verified"
+    },
+    {
+      "id": "google-customer-urban-outdoor-sales-website-contact",
+      "company": "Urban Outdoor Sales",
       "action": "verify_target",
       "platform": "website_form",
       "reason": "website_contact_capability_not_verified"
@@ -946,15 +988,57 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "action": "verify_target",
       "platform": "website_form",
       "reason": "website_contact_capability_not_verified"
+    },
+    {
+      "id": 9,
+      "company": "Canadian Tire",
+      "action": "verify_target",
+      "platform": "research",
+      "reason": "verified_executable_channel_missing"
+    },
+    {
+      "id": 19,
+      "company": "MEC (Mountain Equipment Co-op)",
+      "action": "verify_target",
+      "platform": "research",
+      "reason": "verified_executable_channel_missing"
+    },
+    {
+      "id": 16,
+      "company": "Airstream",
+      "action": "verify_target",
+      "platform": "research",
+      "reason": "verified_executable_channel_missing"
+    },
+    {
+      "id": 5,
+      "company": "Pacific Outdoor Group",
+      "action": "verify_target",
+      "platform": "research",
+      "reason": "verified_executable_channel_missing"
+    },
+    {
+      "id": 14,
+      "company": "Rural King",
+      "action": "verify_target",
+      "platform": "research",
+      "reason": "verified_executable_channel_missing"
+    },
+    {
+      "id": 21,
+      "company": "RVDA (RV Dealers Association)",
+      "action": "verify_target",
+      "platform": "research",
+      "reason": "verified_executable_channel_missing"
     }
   ],
   "blockerSummary": [],
   "blockerCounts": {},
   "queueGoalStatus": {
     "target": 100,
-    "potentialPool": 83,
-    "queueCount": 94,
-    "googleDiscovered": 75,
+    "potentialPool": 90,
+    "queueCount": 95,
+    "googleDiscovered": 82,
     "refillNeeded": 0,
     "confirmedToday": 100,
     "reached": true,
@@ -974,5 +1058,5 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     "scanned": 0,
     "updated": 0
   },
-  "completedAt": "2026-08-12T12:12:12.477Z"
+  "completedAt": "2026-08-12T12:15:09.583Z"
 };
