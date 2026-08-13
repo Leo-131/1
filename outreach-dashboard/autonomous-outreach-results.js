@@ -18908,5 +18908,39 @@ window.AUTONOMOUS_OUTREACH_RESULTS = [
     "messageId": "<b33839a1-067c-43f4-7517-d1d9f288e857@flextailgear.com>",
     "sentFolder": "已发送",
     "sentUid": 3262
+  },
+  {
+    "task_id": "google-customer-sky-lines-website-contact",
+    "company": "Sky-Lines",
+    "approval_version": 1,
+    "status": "website_contact_unreachable_skip",
+    "agent": "codex-chrome-cdp",
+    "browserTransportUsed": "cdp",
+    "timestamp": "2026-08-13T03:10:26.125Z",
+    "target_url": "https://sky-lines.ca/help/contact-us",
+    "evidence": "website_page_unavailable_404: Not Found\n\nThe requested URL was not found on this server.\n\nAdditionally, a 404 Not Found error was encountered while trying to use an ErrorDocument to handle the request.;website_contact_all_targets_failed:6;contact_path_strategy_v2",
+    "draft": "Dear Sky-Lines Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
+    "subject": "FLEXTAIL retail partnership | 2026 assortment",
+    "recipientEmail": "",
+    "messageId": "",
+    "sentFolder": "",
+    "sentUid": null
+  },
+  {
+    "task_id": "google-customer-yates-outdoor-sales-website-contact",
+    "company": "Yates Outdoor Sales",
+    "approval_version": 1,
+    "status": "sent_confirmed",
+    "agent": "alibaba-enterprise-mail",
+    "browserTransportUsed": "none",
+    "timestamp": "2026-08-13T03:12:55.463Z",
+    "target_url": "mailto:sales@yatesoutdoor.com",
+    "evidence": "smtp_accepted;message_id:<713e0d62-700e-9a2c-f79c-4b026941d072@flextailgear.com>;sent_folder_message_confirmed;contact_path_strategy_v2",
+    "draft": "Dear Yates Outdoor Sales Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
+    "subject": "FLEXTAIL retail partnership | 2026 assortment",
+    "recipientEmail": "sales@yatesoutdoor.com",
+    "messageId": "<713e0d62-700e-9a2c-f79c-4b026941d072@flextailgear.com>",
+    "sentFolder": "已发送",
+    "sentUid": 3263
   }
 ];

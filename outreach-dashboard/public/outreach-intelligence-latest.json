@@ -1,20 +1,19 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-13T03:09:36.846Z",
+  "generatedAt": "2026-08-13T03:12:25.762Z",
   "companies": [
     {
-      "companyId": "company_ec35002cb7c92e0e",
-      "company": "Sicnarf Adventure",
+      "companyId": "company_225429e5c5b348e2",
+      "company": "Yates Outdoor Sales",
       "keys": [
-        "sicnarfadventure",
-        "sicnarfadventurecom"
+        "yatesoutdoorsales",
+        "yatesoutdoorcom"
       ],
       "domains": [
-        "sicnarfadventure.com"
+        "yatesoutdoor.com"
       ],
       "channels": [
-        "email",
-        "website_form"
+        "email"
       ],
       "evidence": [
         {
@@ -24,7 +23,7 @@
           "reasons": [
             "official_business_route"
           ],
-          "evidenceUrl": "https://www.sicnarfadventure.com/contact-us",
+          "evidenceUrl": "https://www.yatesoutdoor.com/about",
           "checkedAt": ""
         },
         {
@@ -34,7 +33,7 @@
           "reasons": [
             "official_business_route"
           ],
-          "evidenceUrl": "https://www.sicnarfadventure.com/contact-us",
+          "evidenceUrl": "https://www.yatesoutdoor.com/about",
           "checkedAt": ""
         },
         {
@@ -44,18 +43,18 @@
           "reasons": [
             "official_business_route"
           ],
-          "evidenceUrl": "https://www.sicnarfadventure.com/contact-us",
+          "evidenceUrl": "https://www.yatesoutdoor.com/about",
           "checkedAt": ""
         },
         {
-          "channel": "website_form",
+          "channel": "research",
           "score": 100,
           "verified": true,
           "reasons": [
             "official_business_route"
           ],
-          "evidenceUrl": "https://www.sicnarfadventure.com/contact-us",
-          "checkedAt": "2026-08-13T03:15:00.000Z"
+          "evidenceUrl": "https://www.yatesoutdoor.com/about",
+          "checkedAt": "2026-08-13T03:20:00.000Z"
         }
       ],
       "history": []
@@ -2317,7 +2316,14 @@
           "checkedAt": "2026-08-13T03:15:00.000Z"
         }
       ],
-      "history": []
+      "history": [
+        {
+          "status": "website_contact_unreachable_skip",
+          "timestamp": "2026-08-13T03:10:26.125Z",
+          "channel": "website_form",
+          "evidence": "website_page_unavailable_404: Not Found\n\nThe requested URL was not found on this server.\n\nAdditionally, a 404 Not Found error was encountered while trying to use an ErrorDocument to handle the request.;website_contact_all_targets_failed:6;contact_path_strategy_v2"
+        }
+      ]
     },
     {
       "companyId": "company_f177418ce99ed29a",
@@ -3141,53 +3147,6 @@
             "first_party_evidence"
           ],
           "evidenceUrl": "https://www.threemountainassociates.com/",
-          "checkedAt": ""
-        }
-      ],
-      "history": []
-    },
-    {
-      "companyId": "company_225429e5c5b348e2",
-      "company": "Yates Outdoor Sales",
-      "keys": [
-        "yatesoutdoorsales",
-        "yatesoutdoorcom"
-      ],
-      "domains": [
-        "yatesoutdoor.com"
-      ],
-      "channels": [
-        "website_form"
-      ],
-      "evidence": [
-        {
-          "channel": "website_form",
-          "score": 80,
-          "verified": false,
-          "reasons": [
-            "first_party_evidence"
-          ],
-          "evidenceUrl": "https://www.yatesoutdoor.com/",
-          "checkedAt": ""
-        },
-        {
-          "channel": "website_form",
-          "score": 80,
-          "verified": false,
-          "reasons": [
-            "first_party_evidence"
-          ],
-          "evidenceUrl": "https://www.yatesoutdoor.com/",
-          "checkedAt": ""
-        },
-        {
-          "channel": "website_form",
-          "score": 80,
-          "verified": false,
-          "reasons": [
-            "first_party_evidence"
-          ],
-          "evidenceUrl": "https://www.yatesoutdoor.com/",
           "checkedAt": ""
         }
       ],
@@ -6724,6 +6683,162 @@
       ]
     },
     {
+      "companyId": "company_302dabc203330f43",
+      "company": "Campz",
+      "keys": [
+        "campz",
+        "campzde"
+      ],
+      "domains": [
+        "campz.de"
+      ],
+      "channels": [
+        "website_form",
+        "instagram",
+        "facebook"
+      ],
+      "evidence": [
+        {
+          "channel": "website_form",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
+          "checkedAt": ""
+        },
+        {
+          "channel": "instagram",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
+          "checkedAt": ""
+        },
+        {
+          "channel": "facebook",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
+          "checkedAt": ""
+        },
+        {
+          "channel": "website_form",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
+          "checkedAt": ""
+        }
+      ],
+      "history": [
+        {
+          "status": "failed_open",
+          "timestamp": "2026-07-17T03:05:43.972Z",
+          "channel": "facebook",
+          "evidence": "driver_error: Timeout: http://127.0.0.1:9224/json"
+        },
+        {
+          "status": "failed_open",
+          "timestamp": "2026-07-17T09:10:13.116Z",
+          "channel": "instagram",
+          "evidence": "instagram_message_button_clicked_composer_not_found"
+        },
+        {
+          "status": "approval_pending",
+          "timestamp": "2026-07-20T03:57:37.994Z",
+          "channel": "instagram",
+          "evidence": "driver_error: Command failed: C:\\Program Files\\nodejs\\node.exe E:\\New project\\outreach-dashboard\\codex-chrome-driver.js prepare-instagram-draft {\"port\":9224,\"tabId\":\"77D828F3B4F086C101460DC091BDB15E\",\"targetUrl\":\"https://www.instagram.com/campz.de/\",\"expectedCompany\":\"Campz\",\"draft\":\"Hi Campz team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a retail/category buyer, the strongest fit is assortment fit, new SKU pipeline, price-tier coverage, and proven consumer demand; your verified outdoor, camping and travel retail social refill channel focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the category buyer or vendor-review owner for a short intro video meeting?\",\"autoSend\":true,\"autoEngage\":true,\"engagementComment\":\"Great outdoor checklist. Useful reminder for hikers preparing a complete, lightweight kit.\",\"replaceExistingDraft\":true}\n"
+        },
+        {
+          "status": "approval_pending",
+          "timestamp": "2026-07-20T06:54:07.878Z",
+          "channel": "instagram",
+          "evidence": "driver_error: Command failed: C:\\Program Files\\nodejs\\node.exe E:\\New project\\outreach-dashboard\\codex-chrome-driver.js prepare-instagram-draft {\"port\":9224,\"tabId\":\"F14271F738AB6C2D1546FBC4BBED6F1A\",\"targetUrl\":\"https://www.instagram.com/campz.de/\",\"expectedCompany\":\"Campz\",\"draft\":\"Hi Campz team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a retail/category buyer, the strongest fit is assortment fit, new SKU pipeline, price-tier coverage, and proven consumer demand; your verified outdoor, camping and travel retail social refill channel focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the category buyer or vendor-review owner for a short intro video meeting?\",\"autoSend\":true,\"autoEngage\":true,\"engagementComment\":\"Great outdoor checklist. Useful reminder for hikers preparing a complete, lightweight kit.\",\"replaceExistingDraft\":true}\n"
+        },
+        {
+          "status": "approval_pending",
+          "timestamp": "2026-07-20T11:03:01.864Z",
+          "channel": "instagram",
+          "evidence": "driver_error: Command failed: C:\\Program Files\\nodejs\\node.exe E:\\New project\\outreach-dashboard\\codex-chrome-driver.js prepare-instagram-draft {\"port\":9224,\"tabId\":\"F1D67FEE8B423CB29FD3C00D02A55692\",\"targetUrl\":\"https://www.instagram.com/campz.de/\",\"expectedCompany\":\"Campz\",\"draft\":\"Hi Campz team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a retail/category buyer, the strongest fit is assortment fit, new SKU pipeline, price-tier coverage, and proven consumer demand; your verified outdoor, camping and travel retail social refill channel focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the category buyer or vendor-review owner for a short intro video meeting?\",\"autoSend\":true,\"autoEngage\":true,\"engagementComment\":\"Great outdoor checklist. Useful reminder for hikers preparing a complete, lightweight kit.\",\"replaceExistingDraft\":true}\n"
+        },
+        {
+          "status": "website_contact_unreachable_skip",
+          "timestamp": "2026-07-20T11:29:15.276Z",
+          "channel": "instagram",
+          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:1"
+        },
+        {
+          "status": "website_contact_unreachable_skip",
+          "timestamp": "2026-07-21T04:20:06.396Z",
+          "channel": "instagram",
+          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:6;contact_path_strategy_v2"
+        },
+        {
+          "status": "send_unconfirmed",
+          "timestamp": "2026-07-27T13:31:38.189Z",
+          "channel": "instagram",
+          "evidence": "instagram_draft_inserted_send_button_not_found"
+        },
+        {
+          "status": "failed_open",
+          "timestamp": "2026-07-29T05:05:41.230Z",
+          "channel": "facebook",
+          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;facebook_profile_no_message_button;contact_path_strategy_v2"
+        },
+        {
+          "status": "failed_open",
+          "timestamp": "2026-07-29T05:27:50.226Z",
+          "channel": "instagram",
+          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;facebook_profile_no_message_button;contact_path_strategy_v2"
+        },
+        {
+          "status": "failed_open",
+          "timestamp": "2026-07-29T10:31:34.205Z",
+          "channel": "facebook",
+          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;personal_profile_without_company_match_expected_Campz_title_Facebook;contact_path_strategy_v2"
+        },
+        {
+          "status": "failed_open",
+          "timestamp": "2026-07-29T10:35:24.703Z",
+          "channel": "website_form",
+          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;personal_profile_without_company_match_expected_Campz_title_Facebook;contact_path_strategy_v2"
+        },
+        {
+          "status": "failed_open",
+          "timestamp": "2026-08-04T12:03:48.646Z",
+          "channel": "facebook",
+          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;identity_mismatch_expected_Campz_title_Facebook;contact_path_strategy_v2"
+        },
+        {
+          "status": "failed_open",
+          "timestamp": "2026-08-04T12:37:47.926Z",
+          "channel": "website_form",
+          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;identity_mismatch_expected_Campz_title_Facebook;contact_path_strategy_v2"
+        },
+        {
+          "status": "failed_open",
+          "timestamp": "2026-08-05T01:59:53.529Z",
+          "channel": "facebook",
+          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;identity_mismatch_expected_Campz_title_www.facebook.com;contact_path_strategy_v2"
+        },
+        {
+          "status": "failed_open",
+          "timestamp": "2026-08-05T03:01:21.490Z",
+          "channel": "website_form",
+          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;identity_mismatch_expected_Campz_title_www.facebook.com;contact_path_strategy_v2"
+        }
+      ]
+    },
+    {
       "companyId": "company_c864d4d897a3e868",
       "company": "EET Group",
       "keys": [
@@ -7401,6 +7516,51 @@
       ]
     },
     {
+      "companyId": "company_7b9923a731b8127f",
+      "company": "Vigos Group",
+      "keys": [
+        "vigosgroup",
+        "vigosgroupcom"
+      ],
+      "domains": [
+        "vigosgroup.com"
+      ],
+      "channels": [
+        "email",
+        "website_form"
+      ],
+      "evidence": [
+        {
+          "channel": "email",
+          "score": 100,
+          "verified": true,
+          "reasons": [
+            "official_business_route"
+          ],
+          "evidenceUrl": "https://vigosgroup.com/",
+          "checkedAt": ""
+        },
+        {
+          "channel": "website_form",
+          "score": 100,
+          "verified": true,
+          "reasons": [
+            "official_business_route"
+          ],
+          "evidenceUrl": "https://vigosgroup.com/",
+          "checkedAt": "2026-08-13T03:20:00.000Z"
+        }
+      ],
+      "history": [
+        {
+          "status": "sent_confirmed",
+          "timestamp": "2026-08-12T13:40:12.653Z",
+          "channel": "email",
+          "evidence": "smtp_accepted;message_id:<c907ce0c-69ba-0dce-bd8b-a9fa841cd0cb@flextailgear.com>;sent_folder_message_confirmed;contact_path_strategy_v2"
+        }
+      ]
+    },
+    {
       "companyId": "company_00d7229f4cc62fcf",
       "company": "Adventure Marketing Group",
       "keys": [
@@ -7575,6 +7735,50 @@
           "timestamp": "2026-08-13T02:30:20.836Z",
           "channel": "email",
           "evidence": "smtp_accepted;message_id:<cefee7b4-e24d-5467-25c9-a00749d39386@flextailgear.com>;sent_folder_message_confirmed;contact_path_strategy_v2"
+        }
+      ]
+    },
+    {
+      "companyId": "company_2ae1c3cfa0fad4d3",
+      "company": "Mountain Exposure",
+      "keys": [
+        "mountainexposure",
+        "mountainxca"
+      ],
+      "domains": [
+        "mountainx.ca"
+      ],
+      "channels": [
+        "email"
+      ],
+      "evidence": [
+        {
+          "channel": "email",
+          "score": 100,
+          "verified": true,
+          "reasons": [
+            "official_business_route"
+          ],
+          "evidenceUrl": "https://www.mountainx.ca/sales",
+          "checkedAt": ""
+        },
+        {
+          "channel": "research",
+          "score": 100,
+          "verified": true,
+          "reasons": [
+            "official_business_route"
+          ],
+          "evidenceUrl": "https://www.mountainx.ca/sales",
+          "checkedAt": "2026-08-13T03:20:00.000Z"
+        }
+      ],
+      "history": [
+        {
+          "status": "sent_confirmed",
+          "timestamp": "2026-08-12T13:38:51.584Z",
+          "channel": "email",
+          "evidence": "smtp_accepted;message_id:<3dd58647-a544-a8b8-d173-9d9e19e35dc9@flextailgear.com>;sent_folder_message_confirmed;contact_path_strategy_v2"
         }
       ]
     },
@@ -7869,6 +8073,50 @@
       ]
     },
     {
+      "companyId": "company_e32d2786c50bea29",
+      "company": "Black Dog Sales Group",
+      "keys": [
+        "blackdogsalesgroup",
+        "blackdogsalesgroupcom"
+      ],
+      "domains": [
+        "blackdogsalesgroup.com"
+      ],
+      "channels": [
+        "email"
+      ],
+      "evidence": [
+        {
+          "channel": "email",
+          "score": 100,
+          "verified": true,
+          "reasons": [
+            "official_business_route"
+          ],
+          "evidenceUrl": "https://www.blackdogsalesgroup.com/",
+          "checkedAt": ""
+        },
+        {
+          "channel": "research",
+          "score": 100,
+          "verified": true,
+          "reasons": [
+            "official_business_route"
+          ],
+          "evidenceUrl": "https://www.blackdogsalesgroup.com/",
+          "checkedAt": "2026-08-13T03:20:00.000Z"
+        }
+      ],
+      "history": [
+        {
+          "status": "sent_confirmed",
+          "timestamp": "2026-08-12T13:39:38.596Z",
+          "channel": "email",
+          "evidence": "smtp_accepted;message_id:<7de8e380-39e8-1e60-d747-01a49b30181c@flextailgear.com>;sent_folder_message_confirmed;contact_path_strategy_v2"
+        }
+      ]
+    },
+    {
       "companyId": "company_32bba3ad477f0b49",
       "company": "Stoner Andrews",
       "keys": [
@@ -7935,6 +8183,88 @@
           "evidence": "smtp_accepted;message_id:<c718b859-6009-d33c-0c28-7c4d325572d0@flextailgear.com>;sent_folder_message_confirmed;contact_path_strategy_v2"
         }
       ]
+    },
+    {
+      "companyId": "company_ec35002cb7c92e0e",
+      "company": "Sicnarf Adventure",
+      "keys": [
+        "sicnarfadventure",
+        "sicnarfadventurecom"
+      ],
+      "domains": [
+        "sicnarfadventure.com"
+      ],
+      "channels": [
+        "email",
+        "website_form"
+      ],
+      "evidence": [
+        {
+          "channel": "email",
+          "score": 100,
+          "verified": true,
+          "reasons": [
+            "official_business_route"
+          ],
+          "evidenceUrl": "https://www.sicnarfadventure.com/contact-us",
+          "checkedAt": ""
+        },
+        {
+          "channel": "website_form",
+          "score": 100,
+          "verified": true,
+          "reasons": [
+            "official_business_route"
+          ],
+          "evidenceUrl": "https://www.sicnarfadventure.com/contact-us",
+          "checkedAt": "2026-08-13T03:15:00.000Z"
+        }
+      ],
+      "history": [
+        {
+          "status": "sent_confirmed",
+          "timestamp": "2026-08-13T03:10:05.702Z",
+          "channel": "email",
+          "evidence": "smtp_accepted;message_id:<b33839a1-067c-43f4-7517-d1d9f288e857@flextailgear.com>;sent_folder_message_confirmed;contact_path_strategy_v2"
+        }
+      ]
+    },
+    {
+      "companyId": "company_52934be907df212f",
+      "company": "Boardwalk Sales Agency",
+      "keys": [
+        "boardwalksalesagency",
+        "boardwalksalesca"
+      ],
+      "domains": [
+        "boardwalksales.ca"
+      ],
+      "channels": [
+        "email"
+      ],
+      "evidence": [
+        {
+          "channel": "email",
+          "score": 100,
+          "verified": true,
+          "reasons": [
+            "official_business_route"
+          ],
+          "evidenceUrl": "https://www.boardwalksales.ca/home",
+          "checkedAt": ""
+        },
+        {
+          "channel": "research",
+          "score": 100,
+          "verified": true,
+          "reasons": [
+            "official_business_route"
+          ],
+          "evidenceUrl": "https://www.boardwalksales.ca/home",
+          "checkedAt": "2026-08-13T03:20:00.000Z"
+        }
+      ],
+      "history": []
     },
     {
       "companyId": "company_d7728e8e8c5ed74c",
@@ -8129,40 +8459,6 @@
           "timestamp": "2026-08-04T10:23:56.069Z",
           "channel": "website_form",
           "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;facebook_send_clicked_but_confirmation_missing;verified_draft_present_before_irreversible_action;explicit_send_control_verified;facebook_draft_inserted_verified;;contact_path_strategy_v2"
-        }
-      ]
-    },
-    {
-      "companyId": "company_2ae1c3cfa0fad4d3",
-      "company": "Mountain Exposure",
-      "keys": [
-        "mountainexposure",
-        "mountainxca"
-      ],
-      "domains": [
-        "mountainx.ca"
-      ],
-      "channels": [
-        "email"
-      ],
-      "evidence": [
-        {
-          "channel": "email",
-          "score": 100,
-          "verified": true,
-          "reasons": [
-            "official_business_route"
-          ],
-          "evidenceUrl": "https://www.mountainx.ca/sales",
-          "checkedAt": ""
-        }
-      ],
-      "history": [
-        {
-          "status": "sent_confirmed",
-          "timestamp": "2026-08-12T13:38:51.584Z",
-          "channel": "email",
-          "evidence": "smtp_accepted;message_id:<3dd58647-a544-a8b8-d173-9d9e19e35dc9@flextailgear.com>;sent_folder_message_confirmed;contact_path_strategy_v2"
         }
       ]
     },
@@ -9039,40 +9335,6 @@
       ]
     },
     {
-      "companyId": "company_7b9923a731b8127f",
-      "company": "Vigos Group",
-      "keys": [
-        "vigosgroup",
-        "vigosgroupcom"
-      ],
-      "domains": [
-        "vigosgroup.com"
-      ],
-      "channels": [
-        "email"
-      ],
-      "evidence": [
-        {
-          "channel": "email",
-          "score": 100,
-          "verified": true,
-          "reasons": [
-            "official_business_route"
-          ],
-          "evidenceUrl": "https://vigosgroup.com/",
-          "checkedAt": ""
-        }
-      ],
-      "history": [
-        {
-          "status": "sent_confirmed",
-          "timestamp": "2026-08-12T13:40:12.653Z",
-          "channel": "email",
-          "evidence": "smtp_accepted;message_id:<c907ce0c-69ba-0dce-bd8b-a9fa841cd0cb@flextailgear.com>;sent_folder_message_confirmed;contact_path_strategy_v2"
-        }
-      ]
-    },
-    {
       "companyId": "company_f1eb931d8a681f49",
       "company": "Ground Up Sales",
       "keys": [
@@ -9181,40 +9443,6 @@
           "timestamp": "2026-08-12T13:40:01.319Z",
           "channel": "email",
           "evidence": "smtp_accepted;message_id:<ffb70dfd-9ab5-5ec7-12cd-43826eaa89d1@flextailgear.com>;sent_folder_message_confirmed;contact_path_strategy_v2"
-        }
-      ]
-    },
-    {
-      "companyId": "company_e32d2786c50bea29",
-      "company": "Black Dog Sales Group",
-      "keys": [
-        "blackdogsalesgroup",
-        "blackdogsalesgroupcom"
-      ],
-      "domains": [
-        "blackdogsalesgroup.com"
-      ],
-      "channels": [
-        "email"
-      ],
-      "evidence": [
-        {
-          "channel": "email",
-          "score": 100,
-          "verified": true,
-          "reasons": [
-            "official_business_route"
-          ],
-          "evidenceUrl": "https://www.blackdogsalesgroup.com/",
-          "checkedAt": ""
-        }
-      ],
-      "history": [
-        {
-          "status": "sent_confirmed",
-          "timestamp": "2026-08-12T13:39:38.596Z",
-          "channel": "email",
-          "evidence": "smtp_accepted;message_id:<7de8e380-39e8-1e60-d747-01a49b30181c@flextailgear.com>;sent_folder_message_confirmed;contact_path_strategy_v2"
         }
       ]
     },
@@ -19268,152 +19496,6 @@
       ]
     },
     {
-      "companyId": "company_302dabc203330f43",
-      "company": "Campz",
-      "keys": [
-        "campz",
-        "campzde"
-      ],
-      "domains": [
-        "campz.de"
-      ],
-      "channels": [
-        "instagram",
-        "facebook",
-        "website_form"
-      ],
-      "evidence": [
-        {
-          "channel": "instagram",
-          "score": 0,
-          "verified": false,
-          "reasons": [
-            "unverified_external_evidence_rejected"
-          ],
-          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
-          "checkedAt": ""
-        },
-        {
-          "channel": "facebook",
-          "score": 0,
-          "verified": false,
-          "reasons": [
-            "unverified_external_evidence_rejected"
-          ],
-          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
-          "checkedAt": ""
-        },
-        {
-          "channel": "website_form",
-          "score": 0,
-          "verified": false,
-          "reasons": [
-            "unverified_external_evidence_rejected"
-          ],
-          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
-          "checkedAt": ""
-        }
-      ],
-      "history": [
-        {
-          "status": "failed_open",
-          "timestamp": "2026-07-17T03:05:43.972Z",
-          "channel": "facebook",
-          "evidence": "driver_error: Timeout: http://127.0.0.1:9224/json"
-        },
-        {
-          "status": "failed_open",
-          "timestamp": "2026-07-17T09:10:13.116Z",
-          "channel": "instagram",
-          "evidence": "instagram_message_button_clicked_composer_not_found"
-        },
-        {
-          "status": "approval_pending",
-          "timestamp": "2026-07-20T03:57:37.994Z",
-          "channel": "instagram",
-          "evidence": "driver_error: Command failed: C:\\Program Files\\nodejs\\node.exe E:\\New project\\outreach-dashboard\\codex-chrome-driver.js prepare-instagram-draft {\"port\":9224,\"tabId\":\"77D828F3B4F086C101460DC091BDB15E\",\"targetUrl\":\"https://www.instagram.com/campz.de/\",\"expectedCompany\":\"Campz\",\"draft\":\"Hi Campz team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a retail/category buyer, the strongest fit is assortment fit, new SKU pipeline, price-tier coverage, and proven consumer demand; your verified outdoor, camping and travel retail social refill channel focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the category buyer or vendor-review owner for a short intro video meeting?\",\"autoSend\":true,\"autoEngage\":true,\"engagementComment\":\"Great outdoor checklist. Useful reminder for hikers preparing a complete, lightweight kit.\",\"replaceExistingDraft\":true}\n"
-        },
-        {
-          "status": "approval_pending",
-          "timestamp": "2026-07-20T06:54:07.878Z",
-          "channel": "instagram",
-          "evidence": "driver_error: Command failed: C:\\Program Files\\nodejs\\node.exe E:\\New project\\outreach-dashboard\\codex-chrome-driver.js prepare-instagram-draft {\"port\":9224,\"tabId\":\"F14271F738AB6C2D1546FBC4BBED6F1A\",\"targetUrl\":\"https://www.instagram.com/campz.de/\",\"expectedCompany\":\"Campz\",\"draft\":\"Hi Campz team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a retail/category buyer, the strongest fit is assortment fit, new SKU pipeline, price-tier coverage, and proven consumer demand; your verified outdoor, camping and travel retail social refill channel focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the category buyer or vendor-review owner for a short intro video meeting?\",\"autoSend\":true,\"autoEngage\":true,\"engagementComment\":\"Great outdoor checklist. Useful reminder for hikers preparing a complete, lightweight kit.\",\"replaceExistingDraft\":true}\n"
-        },
-        {
-          "status": "approval_pending",
-          "timestamp": "2026-07-20T11:03:01.864Z",
-          "channel": "instagram",
-          "evidence": "driver_error: Command failed: C:\\Program Files\\nodejs\\node.exe E:\\New project\\outreach-dashboard\\codex-chrome-driver.js prepare-instagram-draft {\"port\":9224,\"tabId\":\"F1D67FEE8B423CB29FD3C00D02A55692\",\"targetUrl\":\"https://www.instagram.com/campz.de/\",\"expectedCompany\":\"Campz\",\"draft\":\"Hi Campz team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a retail/category buyer, the strongest fit is assortment fit, new SKU pipeline, price-tier coverage, and proven consumer demand; your verified outdoor, camping and travel retail social refill channel focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the category buyer or vendor-review owner for a short intro video meeting?\",\"autoSend\":true,\"autoEngage\":true,\"engagementComment\":\"Great outdoor checklist. Useful reminder for hikers preparing a complete, lightweight kit.\",\"replaceExistingDraft\":true}\n"
-        },
-        {
-          "status": "website_contact_unreachable_skip",
-          "timestamp": "2026-07-20T11:29:15.276Z",
-          "channel": "instagram",
-          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:1"
-        },
-        {
-          "status": "website_contact_unreachable_skip",
-          "timestamp": "2026-07-21T04:20:06.396Z",
-          "channel": "instagram",
-          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:6;contact_path_strategy_v2"
-        },
-        {
-          "status": "send_unconfirmed",
-          "timestamp": "2026-07-27T13:31:38.189Z",
-          "channel": "instagram",
-          "evidence": "instagram_draft_inserted_send_button_not_found"
-        },
-        {
-          "status": "failed_open",
-          "timestamp": "2026-07-29T05:05:41.230Z",
-          "channel": "facebook",
-          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;facebook_profile_no_message_button;contact_path_strategy_v2"
-        },
-        {
-          "status": "failed_open",
-          "timestamp": "2026-07-29T05:27:50.226Z",
-          "channel": "instagram",
-          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;facebook_profile_no_message_button;contact_path_strategy_v2"
-        },
-        {
-          "status": "failed_open",
-          "timestamp": "2026-07-29T10:31:34.205Z",
-          "channel": "facebook",
-          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;personal_profile_without_company_match_expected_Campz_title_Facebook;contact_path_strategy_v2"
-        },
-        {
-          "status": "failed_open",
-          "timestamp": "2026-07-29T10:35:24.703Z",
-          "channel": "website_form",
-          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;personal_profile_without_company_match_expected_Campz_title_Facebook;contact_path_strategy_v2"
-        },
-        {
-          "status": "failed_open",
-          "timestamp": "2026-08-04T12:03:48.646Z",
-          "channel": "facebook",
-          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;identity_mismatch_expected_Campz_title_Facebook;contact_path_strategy_v2"
-        },
-        {
-          "status": "failed_open",
-          "timestamp": "2026-08-04T12:37:47.926Z",
-          "channel": "website_form",
-          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;identity_mismatch_expected_Campz_title_Facebook;contact_path_strategy_v2"
-        },
-        {
-          "status": "failed_open",
-          "timestamp": "2026-08-05T01:59:53.529Z",
-          "channel": "facebook",
-          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;identity_mismatch_expected_Campz_title_www.facebook.com;contact_path_strategy_v2"
-        },
-        {
-          "status": "failed_open",
-          "timestamp": "2026-08-05T03:01:21.490Z",
-          "channel": "website_form",
-          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;identity_mismatch_expected_Campz_title_www.facebook.com;contact_path_strategy_v2"
-        }
-      ]
-    },
-    {
       "companyId": "company_d9e52e1a4a1968f2",
       "company": "Sport Conrad",
       "keys": [
@@ -26431,6 +26513,16 @@
       "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;facebook_send_clicked_but_confirmation_missing;verified_draft_present_before_irreversible_action;explicit_send_control_verified;facebook_draft_inserted_verified;;contact_path_strategy_v2"
     },
     {
+      "companyId": "company_7b9923a731b8127f",
+      "company": "Vigos Group",
+      "permanent": true,
+      "crossChannel": true,
+      "reason": "previous_customer_development_no_repeat",
+      "sourceStatus": "sent_confirmed",
+      "sourceTimestamp": "2026-08-12T13:40:12.653Z",
+      "evidence": "smtp_accepted;message_id:<c907ce0c-69ba-0dce-bd8b-a9fa841cd0cb@flextailgear.com>;sent_folder_message_confirmed;contact_path_strategy_v2"
+    },
+    {
       "companyId": "company_00d7229f4cc62fcf",
       "company": "Adventure Marketing Group",
       "permanent": true,
@@ -26449,6 +26541,16 @@
       "sourceStatus": "sent_confirmed",
       "sourceTimestamp": "2026-08-13T02:30:20.836Z",
       "evidence": "smtp_accepted;message_id:<cefee7b4-e24d-5467-25c9-a00749d39386@flextailgear.com>;sent_folder_message_confirmed;contact_path_strategy_v2"
+    },
+    {
+      "companyId": "company_2ae1c3cfa0fad4d3",
+      "company": "Mountain Exposure",
+      "permanent": true,
+      "crossChannel": true,
+      "reason": "previous_customer_development_no_repeat",
+      "sourceStatus": "sent_confirmed",
+      "sourceTimestamp": "2026-08-12T13:38:51.584Z",
+      "evidence": "smtp_accepted;message_id:<3dd58647-a544-a8b8-d173-9d9e19e35dc9@flextailgear.com>;sent_folder_message_confirmed;contact_path_strategy_v2"
     },
     {
       "companyId": "company_50b8d44712341d51",
@@ -26501,6 +26603,16 @@
       "evidence": "smtp_accepted;message_id:<e67e3334-1547-0227-bdc1-8236e6b5986d@flextailgear.com>;sent_folder_message_confirmed;contact_path_strategy_v2"
     },
     {
+      "companyId": "company_e32d2786c50bea29",
+      "company": "Black Dog Sales Group",
+      "permanent": true,
+      "crossChannel": true,
+      "reason": "previous_customer_development_no_repeat",
+      "sourceStatus": "sent_confirmed",
+      "sourceTimestamp": "2026-08-12T13:39:38.596Z",
+      "evidence": "smtp_accepted;message_id:<7de8e380-39e8-1e60-d747-01a49b30181c@flextailgear.com>;sent_folder_message_confirmed;contact_path_strategy_v2"
+    },
+    {
       "companyId": "company_32bba3ad477f0b49",
       "company": "Stoner Andrews",
       "permanent": true,
@@ -26521,6 +26633,16 @@
       "evidence": "smtp_accepted;message_id:<c718b859-6009-d33c-0c28-7c4d325572d0@flextailgear.com>;sent_folder_message_confirmed;contact_path_strategy_v2"
     },
     {
+      "companyId": "company_ec35002cb7c92e0e",
+      "company": "Sicnarf Adventure",
+      "permanent": true,
+      "crossChannel": true,
+      "reason": "previous_customer_development_no_repeat",
+      "sourceStatus": "sent_confirmed",
+      "sourceTimestamp": "2026-08-13T03:10:05.702Z",
+      "evidence": "smtp_accepted;message_id:<b33839a1-067c-43f4-7517-d1d9f288e857@flextailgear.com>;sent_folder_message_confirmed;contact_path_strategy_v2"
+    },
+    {
       "companyId": "company_d7728e8e8c5ed74c",
       "company": "GO Outdoors",
       "permanent": true,
@@ -26539,16 +26661,6 @@
       "sourceStatus": "send_unconfirmed",
       "sourceTimestamp": "2026-08-04T10:23:56.069Z",
       "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;facebook_send_clicked_but_confirmation_missing;verified_draft_present_before_irreversible_action;explicit_send_control_verified;facebook_draft_inserted_verified;;contact_path_strategy_v2"
-    },
-    {
-      "companyId": "company_2ae1c3cfa0fad4d3",
-      "company": "Mountain Exposure",
-      "permanent": true,
-      "crossChannel": true,
-      "reason": "previous_customer_development_no_repeat",
-      "sourceStatus": "sent_confirmed",
-      "sourceTimestamp": "2026-08-12T13:38:51.584Z",
-      "evidence": "smtp_accepted;message_id:<3dd58647-a544-a8b8-d173-9d9e19e35dc9@flextailgear.com>;sent_folder_message_confirmed;contact_path_strategy_v2"
     },
     {
       "companyId": "company_cd2c0f63ad37d585",
@@ -26721,16 +26833,6 @@
       "evidence": "smtp_accepted;message_id:<bd5aedfd-6e7d-0270-859c-897f266358de@flextailgear.com>;sent_folder_message_confirmed;contact_path_strategy_v2"
     },
     {
-      "companyId": "company_7b9923a731b8127f",
-      "company": "Vigos Group",
-      "permanent": true,
-      "crossChannel": true,
-      "reason": "previous_customer_development_no_repeat",
-      "sourceStatus": "sent_confirmed",
-      "sourceTimestamp": "2026-08-12T13:40:12.653Z",
-      "evidence": "smtp_accepted;message_id:<c907ce0c-69ba-0dce-bd8b-a9fa841cd0cb@flextailgear.com>;sent_folder_message_confirmed;contact_path_strategy_v2"
-    },
-    {
       "companyId": "company_f1eb931d8a681f49",
       "company": "Ground Up Sales",
       "permanent": true,
@@ -26759,16 +26861,6 @@
       "sourceStatus": "sent_confirmed",
       "sourceTimestamp": "2026-08-12T13:40:01.319Z",
       "evidence": "smtp_accepted;message_id:<ffb70dfd-9ab5-5ec7-12cd-43826eaa89d1@flextailgear.com>;sent_folder_message_confirmed;contact_path_strategy_v2"
-    },
-    {
-      "companyId": "company_e32d2786c50bea29",
-      "company": "Black Dog Sales Group",
-      "permanent": true,
-      "crossChannel": true,
-      "reason": "previous_customer_development_no_repeat",
-      "sourceStatus": "sent_confirmed",
-      "sourceTimestamp": "2026-08-12T13:39:38.596Z",
-      "evidence": "smtp_accepted;message_id:<7de8e380-39e8-1e60-d747-01a49b30181c@flextailgear.com>;sent_folder_message_confirmed;contact_path_strategy_v2"
     },
     {
       "companyId": "company_82856db219b223c9",
@@ -30044,15 +30136,13 @@
   "portfolio": {
     "actions": [
       {
-        "companyId": "company_ec35002cb7c92e0e",
-        "company": "Sicnarf Adventure",
+        "companyId": "company_225429e5c5b348e2",
+        "company": "Yates Outdoor Sales",
         "action": "first_touch",
         "channel": "email",
         "evidenceScore": 100,
-        "evidenceUrl": "https://www.sicnarfadventure.com/contact-us",
-        "alternatives": [
-          "website_form"
-        ],
+        "evidenceUrl": "https://www.yatesoutdoor.com/about",
+        "alternatives": [],
         "reason": "highest_priority_verified_channel"
       },
       {
@@ -30122,6 +30212,16 @@
         "channel": "email",
         "evidenceScore": 100,
         "evidenceUrl": "https://www.blueridgeknives.com/wholesale-camping-tools/",
+        "alternatives": [],
+        "reason": "highest_priority_verified_channel"
+      },
+      {
+        "companyId": "company_52934be907df212f",
+        "company": "Boardwalk Sales Agency",
+        "action": "first_touch",
+        "channel": "email",
+        "evidenceScore": 100,
+        "evidenceUrl": "https://www.boardwalksales.ca/home",
         "alternatives": [],
         "reason": "highest_priority_verified_channel"
       },
@@ -30186,14 +30286,14 @@
       "instagram": 3
     },
     "used": {
-      "email": 6,
+      "email": 7,
       "website_form": 5,
       "linkedin": 0,
       "facebook": 2,
       "instagram": 0
     },
     "gaps": {
-      "email": 4,
+      "email": 3,
       "website_form": 0,
       "linkedin": 4,
       "facebook": 1,
@@ -30231,7 +30331,7 @@
       },
       {
         "channel": "email",
-        "confirmed": 282,
+        "confirmed": 283,
         "replies": 0,
         "opportunities": 0,
         "replyRate": 0,
@@ -30282,7 +30382,7 @@
       {
         "dimension": "channel",
         "variant": "email",
-        "sampleSize": 282,
+        "sampleSize": 283,
         "observedReplyRate": 0,
         "recommendation": "use_as_bounded_allocation_signal"
       },
@@ -30296,25 +30396,23 @@
     ]
   },
   "ownerSummary": {
-    "generatedAt": "2026-08-13T03:09:36.846Z",
+    "generatedAt": "2026-08-13T03:12:25.762Z",
     "phase": "autonomous_sales_operating_system_v1",
     "kpis": {
-      "companies": 490,
-      "permanentlySuppressed": 376,
-      "plannedActions": 13,
-      "verifiedEvidenceRoutes": 320
+      "companies": 491,
+      "permanentlySuppressed": 377,
+      "plannedActions": 14,
+      "verifiedEvidenceRoutes": 327
     },
     "decisions": [
       {
-        "companyId": "company_ec35002cb7c92e0e",
-        "company": "Sicnarf Adventure",
+        "companyId": "company_225429e5c5b348e2",
+        "company": "Yates Outdoor Sales",
         "action": "first_touch",
         "channel": "email",
         "evidenceScore": 100,
-        "evidenceUrl": "https://www.sicnarfadventure.com/contact-us",
-        "alternatives": [
-          "website_form"
-        ],
+        "evidenceUrl": "https://www.yatesoutdoor.com/about",
+        "alternatives": [],
         "reason": "highest_priority_verified_channel"
       },
       {
@@ -30388,6 +30486,16 @@
         "reason": "highest_priority_verified_channel"
       },
       {
+        "companyId": "company_52934be907df212f",
+        "company": "Boardwalk Sales Agency",
+        "action": "first_touch",
+        "channel": "email",
+        "evidenceScore": 100,
+        "evidenceUrl": "https://www.boardwalksales.ca/home",
+        "alternatives": [],
+        "reason": "highest_priority_verified_channel"
+      },
+      {
         "companyId": "company_2fc061d03b30577c",
         "company": "Kenco Outfitters",
         "action": "first_touch",
@@ -30396,18 +30504,6 @@
         "evidenceUrl": "https://kencooutfitters.com/",
         "alternatives": [],
         "reason": "highest_priority_verified_channel"
-      },
-      {
-        "companyId": "company_236e5b58a80fbad1",
-        "company": "Macpac",
-        "action": "first_touch",
-        "channel": "facebook",
-        "evidenceScore": 95,
-        "evidenceUrl": "https://www.macpac.com.au/",
-        "alternatives": [
-          "instagram"
-        ],
-        "reason": "highest_priority_verified_channel"
       }
     ],
     "exceptions": [
@@ -30415,7 +30511,7 @@
         "code": "verified_channel_capacity_gap",
         "severity": "warning",
         "detail": {
-          "email": 4,
+          "email": 3,
           "website_form": 0,
           "linkedin": 4,
           "facebook": 1,
@@ -30454,7 +30550,7 @@
         },
         {
           "channel": "email",
-          "confirmed": 282,
+          "confirmed": 283,
           "replies": 0,
           "opportunities": 0,
           "replyRate": 0,
@@ -30505,7 +30601,7 @@
         {
           "dimension": "channel",
           "variant": "email",
-          "sampleSize": 282,
+          "sampleSize": 283,
           "observedReplyRate": 0,
           "recommendation": "use_as_bounded_allocation_signal"
         },
