@@ -236,7 +236,8 @@ function automationPlatformFor(value = {}) {
     if (/linkedin|\bli\b/.test(explicit)) return 'linkedin';
     if (/instagram|ins/.test(explicit)) return 'instagram';
     if (/facebook|fb/.test(explicit)) return 'facebook';
-    if (/email|website|contact/.test(explicit)) return 'website';
+    if (/email/.test(explicit)) return 'email';
+    if (/website|contact/.test(explicit)) return 'website';
   }
   const text = [
     value.id,
@@ -252,11 +253,23 @@ function automationPlatformFor(value = {}) {
   if (/linkedin|linkedin\.com/.test(text)) return 'linkedin';
   if (/instagram|instagram\.com/.test(text)) return 'instagram';
   if (/facebook|facebook\.com|fb\.com/.test(text)) return 'facebook';
-  if (/website-contact|official_website_contact_channel|website_contact|mailto|email_channel|contact_entry/.test(text)) return 'website';
+  if (/mailto|email_channel|smtp_accepted|sent_folder_message_confirmed/.test(text)) return 'email';
+  if (/website-contact|official_website_contact_channel|website_contact|contact_entry/.test(text)) return 'website';
   return '';
 }
 
 function automationExactKeys(value = {}) {
+  const recipient = String(value.contactEmail || value.publicEmail || value.recipient || value.recipientEmail || '')
+    .trim()
+    .toLowerCase();
+  if (automationPlatformFor(value) === 'email' && recipient) {
+    return new Set([
+      value.id,
+      value.taskId,
+      value.task_id,
+      `email:${recipient}`,
+    ].map(canonicalExactAutomationKey).filter(Boolean));
+  }
   return new Set([
     value.id,
     value.taskId,

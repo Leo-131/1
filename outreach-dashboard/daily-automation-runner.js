@@ -285,6 +285,12 @@ function priorityCompare(left, right) {
 
 function queueDedupeKey(item) {
   const platform = cleanKey(item.platform || 'unknown');
+  const recipient = String(item.contactEmail || item.publicEmail || '').trim().toLowerCase();
+  // A first-party brand directory can legitimately list several independent
+  // agencies on one evidence page. Email identity is the verified recipient,
+  // not the directory host; host-level dedupe would silently collapse those
+  // distinct companies into one queue row.
+  if (platform === 'email' && recipient) return `email:recipient:${cleanKey(recipient)}`;
   const channelUrl = item.contactUrl || item.platformUrl || item.url || item.website || item.id;
   const handle = profileHandle(channelUrl);
   const host = hostnameKey(channelUrl);

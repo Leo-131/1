@@ -66,6 +66,29 @@ test('daily queue prioritizes verified Email, website forms, LinkedIn, Facebook 
     > dailyRunner.channelPriorityScore({ platform: 'instagram' }));
 });
 
+test('brand official representative-directory emails become email tasks instead of shared website forms', () => {
+  const lead = buildLeads(650).find(item => item.company === 'Our Habit Sales');
+  assert.ok(lead, 'official brand representative must remain discoverable');
+  assert.equal(lead.platform, 'email');
+  assert.equal(lead.contactEmail, 'ourhabit.sales@gmail.com');
+  assert.equal(lead.emailVerificationStatus, 'official_brand_rep_directory_email');
+  assert.equal(lead.externalVerificationStatus, 'official_supplier_email_verified');
+});
+
+test('email queue keeps distinct agencies listed on the same first-party directory page', () => {
+  const rows = dailyRunner.dedupeQueueItems([
+    { company: 'Agency One', platform: 'email', contactEmail: 'one@example.com', contactUrl: 'https://brand.example/reps' },
+    { company: 'Agency Two', platform: 'email', contactEmail: 'two@example.com', contactUrl: 'https://brand.example/reps' },
+  ]);
+  assert.equal(rows.length, 2);
+});
+
+test('execution dedupe separates verified email recipients from shared evidence-page URLs', () => {
+  assert.ok(mainSource.includes("if (/email/.test(explicit)) return 'email'"));
+  assert.ok(mainSource.includes("if (automationPlatformFor(value) === 'email' && recipient)"));
+  assert.ok(mainSource.includes('`email:${recipient}`'));
+});
+
 test('website contact can execute without a configured attachment', () => {
   assert.ok(mainSource.includes('const websiteFallback = executableQueueCandidates'));
   assert.ok(mainSource.includes('{ allowWebsiteContact: true })'));

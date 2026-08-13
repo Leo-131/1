@@ -1605,7 +1605,9 @@ function channelLeads(item) {
     websiteContact: item.contactUrl || item.url,
   };
   const verifiedOfficialEmail = String(item && (item.contactEmail || item.publicEmail) || '').includes('@')
-    && item.emailVerificationStatus === 'official_public_business_email';
+    && (item.emailVerificationStatus === 'official_public_business_email'
+      || item.emailVerificationStatus === 'official_brand_rep_directory_email'
+      || item.externalVerificationStatus === 'official_supplier_email_verified');
   const verifiedContactPath = hasVerifiedContactPath(item) || verifiedOfficialEmail;
   const leads = [];
   if (/linkedin\.com\/in\//i.test(linkedinUrl) || item.linkedinDirectOutreach === true) {
@@ -1651,8 +1653,8 @@ function channelLeads(item) {
   }
   leads.push({
     ...baseLead(item, `${baseId}-website-contact`, evidenceUrl),
-    platform: 'website_form',
-    channelType: 'website_form',
+    platform: verifiedOfficialEmail ? 'email' : 'website_form',
+    channelType: verifiedOfficialEmail ? 'email' : 'website_form',
     platformUrl: item.contactUrl || item.url,
     url: item.contactUrl || item.url,
     contactUrl: item.contactUrl || item.url,
