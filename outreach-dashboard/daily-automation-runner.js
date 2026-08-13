@@ -1345,7 +1345,14 @@ function buildDailyPotentialPool(classified, discoveryRun, context, targetSize) 
   const seen = new Set();
   const deduped = [...currentPlan, ...embedded, ...discovered]
     .filter(isActivePotentialCandidate)
-    .sort(priorityCompare)
+    // When the same official host is present in a stale plan/table row and a
+    // freshly enriched discovery row, preserve the live first-party verified
+    // route. Otherwise the earlier unverified row masks a usable email/form.
+    .sort((left, right) => {
+      const readinessDelta = Number(channelExecutionReadiness(right).ready === true)
+        - Number(channelExecutionReadiness(left).ready === true);
+      return readinessDelta || priorityCompare(left, right);
+    })
     .filter(item => {
       const key = queueDedupeKey(item);
       if (!key || seen.has(key)) return false;
