@@ -146,6 +146,32 @@ function promoteVerifiedEmailRow(row = {}) {
 }
 
 function applyCachedVerification(rows = [], cached = {}) {
+  const baseRow = rows[0] || {};
+  for (const socialUrl of cached.socialProfiles || []) {
+    if (rows.some(row => sameSocialProfile(row.platformUrl || row.url, socialUrl))) continue;
+    const platform = /linkedin\.com/i.test(socialUrl) ? 'linkedin'
+      : /facebook\.com|fb\.com/i.test(socialUrl) ? 'facebook'
+        : /instagram\.com/i.test(socialUrl) ? 'instagram' : '';
+    if (!platform) continue;
+    const family = String(baseRow.id || baseRow.taskId || baseRow.company || 'customer')
+      .replace(/-(?:website-contact|email|linkedin|facebook|instagram)(?:-fallback)?$/i, '');
+    rows.push({
+      ...baseRow,
+      id: `${family}-${platform}`,
+      taskId: `${family}-${platform}`,
+      platform,
+      channelType: platform,
+      platformUrl: socialUrl,
+      url: socialUrl,
+      targetUrl: socialUrl,
+      verifiedTargetUrl: socialUrl,
+      action: 'develop',
+      reason: 'official_website_social_channel_verified',
+      officialSocialProfileVerified: true,
+      socialProfileEvidenceUrl: cached.firstPartyChannelVerification && cached.firstPartyChannelVerification.evidenceUrl || '',
+      socialProfileVerifiedAt: cached.firstPartyChannelVerification && cached.firstPartyChannelVerification.verifiedAt || '',
+    });
+  }
   for (const row of rows) {
     if (cached.firstPartyChannelVerification) row.firstPartyChannelVerification = cached.firstPartyChannelVerification;
     if (cached.contactCapabilityVerified) row.contactCapabilityVerified = true;
@@ -181,6 +207,35 @@ async function enrichCompany(rows) {
   }
   const verifiedAt = new Date().toISOString();
   const inspected = best && best.inspected || { signals: [], socialLinks: [], businessEmails: [] };
+  // First-party website social links are execution evidence, not merely
+  // annotations. Materialize missing channel siblings so one company can be
+  // touched by email and its official social account in the same campaign.
+  const baseRow = rows[0] || {};
+  for (const socialUrl of inspected.socialLinks || []) {
+    const platform = /linkedin\.com/i.test(socialUrl) ? 'linkedin'
+      : /facebook\.com|fb\.com/i.test(socialUrl) ? 'facebook'
+        : /instagram\.com/i.test(socialUrl) ? 'instagram'
+          : '';
+    if (!platform || rows.some(row => sameSocialProfile(row.platformUrl || row.url, socialUrl))) continue;
+    const family = String(baseRow.id || baseRow.taskId || company || 'customer')
+      .replace(/-(?:website-contact|email|linkedin|facebook|instagram)(?:-fallback)?$/i, '');
+    rows.push({
+      ...baseRow,
+      id: `${family}-${platform}`,
+      taskId: `${family}-${platform}`,
+      platform,
+      channelType: platform,
+      platformUrl: socialUrl,
+      url: socialUrl,
+      targetUrl: socialUrl,
+      verifiedTargetUrl: socialUrl,
+      action: 'develop',
+      reason: 'official_website_social_channel_verified',
+      officialSocialProfileVerified: true,
+      socialProfileEvidenceUrl: best && best.finalUrl || candidates[0] || '',
+      socialProfileVerifiedAt: verifiedAt,
+    });
+  }
   for (const row of rows) {
     row.firstPartyChannelVerification = {
       status: best && best.ok ? 'checked' : 'unreachable',
@@ -249,6 +304,15 @@ async function main() {
   const results = [];
   for (let index = 0; index < pending.length; index += 4) {
     results.push(...await Promise.all(pending.slice(index, index + 4).map(enrichCompany)));
+  }
+  const persistedIds = new Set((artifact.leads || []).map(row => String(row.id || row.taskId || '')));
+  for (const rows of groups.values()) {
+    for (const row of rows) {
+      const id = String(row.id || row.taskId || '');
+      if (!id || persistedIds.has(id)) continue;
+      artifact.leads.push(row);
+      persistedIds.add(id);
+    }
   }
   for (const result of results) verifications[normalizedCompany(result.company)] = result.cache;
   artifact.firstPartyEnrichment = { completedAt: new Date().toISOString(), attemptedCompanies: results.length, verifiedCompanies: results.filter(item => item.ok && item.signals.length).length, cachedCompanies: Object.keys(verifications).length, results: results.map(({ cache, ...result }) => result) };

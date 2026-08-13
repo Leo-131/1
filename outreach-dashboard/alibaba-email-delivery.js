@@ -2,6 +2,7 @@
 
 const nodemailer = require('nodemailer');
 const { ImapFlow } = require('imapflow');
+const dns = require('dns').promises;
 const { alibabaEmailConfig, emailSenderReadiness, isEmail } = require('./email-channel');
 
 const PERSONAL_EMAIL_DOMAINS = new Set([
@@ -46,6 +47,31 @@ function verifiedBusinessEmailTarget(lead = {}) {
   const verified = /official website mailto|verified|deliverable|official public|official business|public business email|official supplier email|official brand rep directory email|official procurement email|official vendor email/.test(normalizedEvidence);
   if (!verified) return { ok: false, reason: 'public_business_email_requires_verification', recipient, domain };
   return { ok: true, reason: 'verified_public_business_email', recipient, domain, evidence: clean(evidence).slice(0, 240) };
+}
+
+async function verifyBusinessEmailDomain(lead = {}, dependencies = {}) {
+  const target = verifiedBusinessEmailTarget(lead);
+  if (!target.ok) return target;
+  const resolveMx = dependencies.resolveMx || dns.resolveMx;
+  try {
+    const records = await resolveMx(target.domain);
+    const usable = (Array.isArray(records) ? records : [])
+      .filter(record => record && clean(record.exchange) && clean(record.exchange) !== '.');
+    if (!usable.length) return { ...target, ok: false, reason: 'recipient_domain_has_no_mail_exchange', mxRecords: [] };
+    return {
+      ...target,
+      ok: true,
+      reason: 'verified_public_business_email_with_mx',
+      mxRecords: usable.map(record => clean(record.exchange).toLowerCase()).slice(0, 10),
+    };
+  } catch (error) {
+    return {
+      ...target,
+      ok: false,
+      reason: 'recipient_domain_mail_exchange_unverified',
+      error: error && (error.code || error.message) || String(error),
+    };
+  }
 }
 
 function validateFirstTouchEmail({ from, to, subject, text, attachments } = {}) {
@@ -128,14 +154,27 @@ function smtpFailureStatus(error = {}) {
 }
 
 function parseBounceSource(source = '') {
-  const text = Buffer.isBuffer(source) ? source.toString('utf8') : String(source || '');
-  const recipient = (text.match(/(?:Final-Recipient|Original-Recipient):[^;\r\n]*;\s*([^\s<>]+@[^\s<>]+)/i)
-    || text.match(/(?:recipient|to):\s*<?([^\s<>]+@[^\s<>]+)>?/i)
-    || [])[1] || '';
-  const messageId = (text.match(/Original-Message-ID:\s*(<[^>]+>)/i)
-    || text.match(/Message-ID:\s*(<[^>]+>)/i)
-    || [])[1] || '';
-  const diagnostic = (text.match(/Diagnostic-Code:\s*([^\r\n]+)/i) || [])[1] || '';
+  const raw = Buffer.isBuffer(source) ? source.toString('utf8') : String(source || '');
+  const decodedParts = [];
+  const base64Part = /Content-Transfer-Encoding:\s*base64[\s\S]*?\r?\n\r?\n([A-Za-z0-9+/=\r\n]+?)(?=\r?\n--)/gi;
+  for (const match of raw.matchAll(base64Part)) {
+    try { decodedParts.push(Buffer.from(match[1].replace(/\s+/g, ''), 'base64').toString('utf8')); } catch {}
+  }
+  const text = `${raw}\n${decodedParts.join('\n')}`;
+  const explicitRecipient = (text.match(/(?:Final-Recipient|Original-Recipient):[^;\r\n]*;\s*([^\s<>]+@[^\s<>]+)/i) || [])[1] || '';
+  const addressCandidates = [...text.matchAll(/^(?:recipient|to):\s*(?:[^<\r\n]*<)?([^\s<>]+@[^\s<>;]+)>?/gim)]
+    .map(match => normalizedEmail(match[1]))
+    .filter(address => address
+      && address !== 'leo@flextailgear.com'
+      && !/mailsupport\.aliyun\.com$|mailer-daemon|postmaster|no-reply/i.test(address));
+  const recipient = explicitRecipient || addressCandidates[addressCandidates.length - 1] || '';
+  const messageIds = [...text.matchAll(/^(?:Original-Message-ID|Message-ID):\s*(<[^>]+>)/gim)]
+    .map(match => clean(match[1]))
+    .filter(value => value && !/mailsupport\.aliyun\.com/i.test(value));
+  const messageId = messageIds[messageIds.length - 1] || '';
+  const diagnostic = (text.match(/Diagnostic-Code:\s*([^\r\n]+)/i)
+    || text.match(/(?:address not found|mailbox unavailable|recipient address rejected|user unknown|no such user)[^\r\n]*/i)
+    || [])[0] || '';
   return { recipient: normalizedEmail(recipient), messageId: clean(messageId), diagnostic: clean(diagnostic).slice(0, 240) };
 }
 
@@ -179,8 +218,25 @@ async function scanAlibabaBounces(options = {}, dependencies = {}) {
           { subject: '退信' },
         ],
       }, { uid: true });
-      if (!Array.isArray(uids) || !uids.length) continue;
-      const messages = await client.fetchAll(uids.slice(-100), { uid: true, envelope: true, source: true, internalDate: true }, { uid: true });
+      // Provider subject matching misses Chinese and vendor-specific DSNs.
+      // Fetch a bounded recent window and classify locally from envelope and
+      // raw RFC delivery-status fields instead.
+      const broadUids = await client.search({ since }, { uid: true });
+      if (!Array.isArray(broadUids) || !broadUids.length) continue;
+      const envelopes = await client.fetchAll(broadUids.slice(-1000), { uid: true, envelope: true, internalDate: true }, { uid: true });
+      const candidateUids = envelopes
+        .filter(message => {
+          const subject = clean(message.envelope && message.envelope.subject);
+          const from = (message.envelope && Array.isArray(message.envelope.from) ? message.envelope.from : [])
+            .map(item => `${clean(item && item.name)} ${clean(item && item.address)}`).join(' ');
+          return /delivery status notification|delivery failure|failure|undeliver|mail delivery|returned mail|address not found|退信|退信通知|无法投递|投递失败/i.test(`${subject} ${from}`)
+            || /mailer-daemon|postmaster|mailsupport\.aliyun/i.test(from);
+        })
+        .map(message => message.uid)
+        .filter(Boolean)
+        .slice(-500);
+      if (!candidateUids.length) continue;
+      const messages = await client.fetchAll(candidateUids, { uid: true, envelope: true, source: true, internalDate: true }, { uid: true });
       bounces.push(...messages
         .map(message => ({ ...parseBounceSource(message.source), mailboxPath, uid: message.uid, receivedAt: message.internalDate && new Date(message.internalDate).toISOString() }))
         .filter(item => item.recipient || item.messageId));
@@ -206,6 +262,10 @@ async function sendAndConfirmAlibabaEmail(input = {}, dependencies = {}) {
   }
   const target = verifiedBusinessEmailTarget(input.lead || input);
   if (!target.ok) return { ok: false, skipped: true, sendStatus: 'skipped', reason: target.reason, evidence: target.reason };
+  const domainCheck = await verifyBusinessEmailDomain(input.lead || input, dependencies);
+  if (!domainCheck.ok) {
+    return { ok: false, skipped: true, sendStatus: 'skipped', reason: domainCheck.reason, evidence: domainCheck.reason };
+  }
 
   const config = alibabaEmailConfig(input.env || process.env);
   const message = {
@@ -297,5 +357,6 @@ module.exports = {
   smtpFailureStatus,
   parseBounceSource,
   scanAlibabaBounces,
+  verifyBusinessEmailDomain,
   sendAndConfirmAlibabaEmail,
 };

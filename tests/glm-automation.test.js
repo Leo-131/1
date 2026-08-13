@@ -143,7 +143,7 @@ test('a pre-send Alibaba authentication failure falls back to verified website o
   assert.ok(mainSource.includes('.filter(result => !isFixedAlibabaRecipientVerifierFailure(result))'));
   assert.ok(mainSource.includes('composer_preserved_for_technical_evidence:${preserveTabForEvidence}'));
   assert.ok(mainSource.includes('async function executeVerifiedSocialFallbackAfterEmail'));
-  assert.ok(mainSource.includes('const result = await executeVerifiedSocialFallbackAfterEmail(lead, emailResult, options)'));
+  assert.ok(mainSource.includes('await executeVerifiedSocialFallbackAfterEmail(lead, emailResult, options)'));
   assert.ok(mainSource.includes("platform === 'email' && !isWebsiteContact && !isVerifiedEmail"));
   assert.ok(mainSource.includes("fallbackPlatform: fallbackLead.platform"));
   assert.match(mainSource, /physical_send\|send_physical_click\|composer_preserved\|customer_interaction/);
@@ -1506,7 +1506,7 @@ test('historical likes and follows do not block a later real customer message', 
     ),
     /account_followed|post_liked/,
   );
-  assert.ok(mainSource.includes("const companyBlocking = new Set(['sent_confirmed', 'bounced', 'send_unconfirmed'])"));
+  assert.ok(mainSource.includes("const companyBlocking = new Set(['sent_confirmed', 'send_unconfirmed'])"));
 });
 
 test('Alibaba bounce reconciliation downgrades confirmed email without deleting evidence', () => {
@@ -1514,11 +1514,11 @@ test('Alibaba bounce reconciliation downgrades confirmed email without deleting 
   assert.ok(mainSource.includes("result.status === 'sent_confirmed'"));
   assert.ok(mainSource.includes("match.status = 'bounced'"));
   assert.ok(mainSource.includes('bounceReconciliation'));
-  assert.ok(mainSource.includes("'submitted_confirmed', 'bounced', 'send_unconfirmed'"));
+  assert.ok(mainSource.includes("const blocking = new Set(['sent_confirmed', 'bounced'"));
   const companyStatusesStart = mainSource.indexOf('const COMPANY_HISTORY_BLOCKING_STATUSES');
   const companyStatusesEnd = mainSource.indexOf(']);', companyStatusesStart) + 3;
-  assert.match(mainSource.slice(companyStatusesStart, companyStatusesEnd), /bounced/);
-  assert.ok(mainSource.includes("if (result.status === 'bounced') return true"));
+  assert.doesNotMatch(mainSource.slice(companyStatusesStart, companyStatusesEnd), /bounced/);
+  assert.ok(mainSource.includes("if (result.status === 'bounced') return false"));
 });
 
 test('Alibaba recipient fallback clears stale text and commits the exact address physically', () => {
@@ -1953,8 +1953,7 @@ test('queue touch truth excludes likes, follows, and unreachable website attempt
     const block = dailyRunnerSource.slice(start, end);
     assert.match(block, /sent_confirmed/);
     assert.match(block, /submitted_confirmed/);
-    assert.match(block, /bounced/);
-    assert.doesNotMatch(block, /post_liked|account_followed|website_contact_unreachable_skip/);
+    assert.doesNotMatch(block, /bounced|post_liked|account_followed|website_contact_unreachable_skip/);
   }
 });
 
@@ -2065,15 +2064,26 @@ test('North America agency campaign scope excludes other markets and customer ty
   assert.ok(dailyRunnerSource.includes("['agency', 'sales_agency']"));
 });
 
-test('owner-authorized extra target is date scoped and bounded at 200', () => {
+test('current owner target is exactly 100 confirmed North American agencies', () => {
   const override = dailyConfig.campaignScope.oneDayAdditionalConfirmedTarget;
   assert.equal(override.shanghaiDate, '2026-08-13');
   assert.equal(override.baseDailyTarget, 100);
-  assert.equal(override.additionalTarget, 100);
-  assert.equal(override.effectiveDailyTarget, 200);
+  assert.equal(override.additionalTarget, 0);
+  assert.equal(override.effectiveDailyTarget, 100);
   assert.equal(override.authorizedByOwner, true);
   assert.ok(mainSource.includes('function effectiveDailyConfirmedCompanyTarget'));
   assert.ok(mainSource.includes('Math.min(200'));
+});
+
+test('confirmed email immediately continues to a first-party verified official social channel', () => {
+  assert.equal(dailyConfig.cadence.multiChannelSameCustomer, true);
+  assert.ok(mainSource.includes('executeVerifiedSocialTouchAfterConfirmedEmail'));
+  assert.ok(mainSource.includes('parallel_multichannel:'));
+  assert.ok(mainSource.includes('recordAutomationResult(fallbackLead, socialResult)'));
+  assert.ok(enrichmentSource.includes("reason: 'official_website_social_channel_verified'"));
+  assert.ok(enrichmentSource.includes('rows.push({'));
+  assert.ok(mainSource.includes("const isExplicitSocial = ['linkedin', 'facebook', 'instagram'].includes(platform)"));
+  assert.ok(mainSource.includes('const isWebsiteContact = !isExplicitSocial'));
 });
 
 test('daily execution watchdog recomputes confirmed count inside its own scope', () => {

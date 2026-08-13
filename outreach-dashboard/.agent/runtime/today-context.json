@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-13T04:06:46.869Z",
+  "generatedAt": "2026-08-13T07:05:35.514Z",
   "phase": "pre-sync",
   "shanghaiDate": "2026-08-13",
   "policyVersion": "2026-07-30",
@@ -8,13 +8,13 @@
   "sendingAllowed": true,
   "activeBlocks": [],
   "limits": {
-    "dailyTarget": 200,
+    "dailyTarget": 100,
     "defaultRunLimit": 25,
     "maximumRunLimit": 50,
     "runMaximumMinutes": 45
   },
-  "confirmedToday": 24,
-  "remainingToday": 176,
+  "confirmedToday": 23,
+  "remainingToday": 77,
   "campaignScope": {
     "enabled": true,
     "name": "north_america_large_sales_agencies",
@@ -29,20 +29,20 @@
     "oneDayAdditionalConfirmedTarget": {
       "shanghaiDate": "2026-08-13",
       "baseDailyTarget": 100,
-      "additionalTarget": 100,
-      "effectiveDailyTarget": 200,
+      "additionalTarget": 0,
+      "effectiveDailyTarget": 100,
       "authorizedByOwner": true
     }
   },
   "queue": {
-    "potentialPool": 70,
-    "refillNeeded": 30,
-    "executableCompanies": 27,
-    "executableReserveNeeded": 103
+    "potentialPool": 72,
+    "refillNeeded": 28,
+    "executableCompanies": 14,
+    "executableReserveNeeded": 116
   },
   "latestExecution": {
-    "completedAt": "2026-08-13T04:06:36.805Z",
-    "phase": "no_executable_tasks",
+    "completedAt": "2026-08-13T07:05:16.300Z",
+    "phase": "browser_execution",
     "realDevelopmentCount": 0,
     "reportingVerdict": "no_customer_development_performed"
   },
@@ -53,7 +53,7 @@
   },
   "git": {
     "branch": "vercel-main-sync",
-    "localHead": "7f70a03aefbe555e44e69a8b4344ecd7272cd185",
-    "upstreamHead": "7f70a03aefbe555e44e69a8b4344ecd7272cd185"
+    "localHead": "dd971ba8b4ffaab4556714586d3d1715074c2abd",
+    "upstreamHead": "dd971ba8b4ffaab4556714586d3d1715074c2abd"
   }
 }

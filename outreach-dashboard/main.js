@@ -12,6 +12,7 @@ const { emailDomainSafety } = require('./email-operations');
 const {
   recipientEmail,
   verifiedBusinessEmailTarget,
+  verifyBusinessEmailDomain,
   validateFirstTouchEmail,
   sendAndConfirmAlibabaEmail,
   scanAlibabaBounces,
@@ -303,7 +304,6 @@ const COMPANY_HISTORY_BLOCKING_STATUSES = new Set([
   'sent_confirmed',
   'submitted_confirmed',
   'send_unconfirmed',
-  'bounced',
 ]);
 function shanghaiAutomationDate(now = new Date()) {
   return new Intl.DateTimeFormat('en-CA', { timeZone: 'Asia/Shanghai', year: 'numeric', month: '2-digit', day: '2-digit' }).format(now);
@@ -327,7 +327,9 @@ const MIN_CUSTOMER_EXECUTION_TIMEOUT_MS = 30000;
 const MAX_CUSTOMER_EXECUTION_TIMEOUT_MS = 180000;
 
 function historicalAutomationResultBlocksCompany(result = {}) {
-  if (result.status === 'bounced') return true;
+  // A bounce suppresses the exact email route, not every verified channel for
+  // the company. Social remains safe because no customer interaction occurred.
+  if (result.status === 'bounced') return false;
   if (COMPANY_HISTORY_BLOCKING_STATUSES.has(result.status)) {
     return sendStatusHasCustomerInteraction(result.status, result.evidence);
   }
@@ -375,7 +377,7 @@ function blockingAutomationResultFor(item) {
   const companyKeys = automationCompanyKeys(item);
   const itemPlatform = automationPlatformFor(item);
   const blocking = new Set(['sent_confirmed', 'bounced', 'failed_open', 'send_unconfirmed', 'website_contact_ready', 'website_contact_unreachable_skip']);
-  const companyBlocking = new Set(['sent_confirmed', 'bounced', 'send_unconfirmed']);
+  const companyBlocking = new Set(['sent_confirmed', 'send_unconfirmed']);
   if (isWebsiteContactQueueItem(item) && !verifiedBusinessEmailTarget(item).ok) {
     const cutoff = Date.now() - 30 * 24 * 60 * 60 * 1000;
     const verifiedSupplierRoute = /^official_supplier_(?:form|route)_verified$/.test(String(item.externalVerificationStatus || ''));
@@ -3164,6 +3166,19 @@ async function runVerifiedAlibabaEmailLead(lead = {}, subject = '', draft = '') 
         : 'Verify an official public buyer, vendor-relations, or business email before email outreach.',
     };
   }
+  const mailDomain = await verifyBusinessEmailDomain(lead);
+  if (!mailDomain.ok) {
+    return {
+      ok: false,
+      skipped: true,
+      sendStatus: 'skipped',
+      reason: mailDomain.reason,
+      mode: 'email_domain_mx_gate',
+      evidence: `${mailDomain.reason};domain:${mailDomain.domain || 'unknown'};no_send_performed`,
+      recipientEmail: mailDomain.recipient || recipientEmail(lead),
+      nextAction: 'Do not send to this address; continue with a first-party-verified official social channel for the same company.',
+    };
+  }
   const normalizedRecipient = String(domainSafety.recipient || '').trim().toLowerCase();
   const preservedRoute = previousResults
     .filter(item => item && item.status === 'failed_open')
@@ -3293,7 +3308,51 @@ function canFallbackAfterEmailPreflight(result = {}) {
     'email_target_verification_required',
     'public_business_email_requires_verification',
     'verified_public_email_missing',
+    'recipient_domain_has_no_mail_exchange',
+    'recipient_domain_mail_exchange_unverified',
   ].some(marker => evidence.includes(marker));
+}
+
+async function executeVerifiedSocialTouchAfterConfirmedEmail(lead = {}, emailResult = {}, options = {}) {
+  if (!emailResult || emailResult.sendStatus !== 'sent_confirmed') return emailResult;
+  let fallbackLead = socialFallbackFromInspection(lead, {});
+  let inspection = null;
+  let websiteProbe = null;
+  if (!fallbackLead || fallbackLead.officialSocialProfileVerified !== true) {
+    const officialWebsite = lead.website || lead.contactUrl || lead.sourceEvidenceUrl || '';
+    if (/^https:\/\//i.test(String(officialWebsite || '')) && !/(?:linkedin|facebook|instagram)\.com/i.test(String(officialWebsite))) {
+      websiteProbe = await openWithCodexChrome(officialWebsite, { automationOwned: true });
+      if (websiteProbe && websiteProbe.ok) {
+        const flow = await inspectWebsiteContactFlow(websiteProbe);
+        inspection = flow && flow.inspection || null;
+        fallbackLead = socialFallbackFromInspection(lead, inspection || {});
+      }
+      await closeAutomationChromeTab(websiteProbe);
+    }
+  }
+  if (!fallbackLead || fallbackLead.officialSocialProfileVerified !== true) {
+    return {
+      ...emailResult,
+      secondaryChannelStatus: 'official_social_channel_not_verified',
+      evidence: `${emailResult.evidence || 'sent_confirmed'};official_social_channel_not_verified`,
+    };
+  }
+  const socialResult = await executeLeadAutomation(fallbackLead, {
+    ...options,
+    ignoreCooldown: true,
+    allowParallel: true,
+    attemptedChannels: ['email'],
+    fallbackDepth: Number(options.fallbackDepth || 0) + 1,
+  });
+  recordAutomationResult(fallbackLead, socialResult);
+  const socialOutput = parseExecutionOutput(socialResult && socialResult.output);
+  return {
+    ...emailResult,
+    secondaryChannelStatus: socialOutput.sendStatus || socialResult.sendStatus || 'failed_open',
+    secondaryChannelPlatform: fallbackLead.platform,
+    secondaryChannelTarget: fallbackLead.url,
+    evidence: `${emailResult.evidence || 'sent_confirmed'};parallel_multichannel:${fallbackLead.platform};${socialOutput.evidence || socialResult.evidence || 'social_result_missing'}`,
+  };
 }
 
 async function executeVerifiedSocialFallbackAfterEmail(lead = {}, emailResult = {}, options = {}) {
@@ -3346,6 +3405,9 @@ async function runWebsiteContactLead(lead = {}, options = {}) {
   let emailPreflight = null;
   if (directEmail.ok) {
     emailPreflight = await runVerifiedAlibabaEmailLead(emailLead, subject, draft);
+    if (emailPreflight.sendStatus === 'sent_confirmed') {
+      return executeVerifiedSocialTouchAfterConfirmedEmail(emailLead, emailPreflight, options);
+    }
     if (!canFallbackAfterEmailPreflight(emailPreflight) || !targets.length) return emailPreflight;
   }
   if (!targets.length) {
@@ -3450,6 +3512,10 @@ async function runWebsiteContactLead(lead = {}, options = {}) {
     if (officialMailto) {
       if (typeof options.enterCriticalSection === 'function') options.enterCriticalSection('verified_email_send_confirmation');
       const emailResult = await runVerifiedAlibabaEmailLead(officialMailto, subject, draft);
+      if (emailResult.sendStatus === 'sent_confirmed') {
+        await closeAutomationChromeTab(chromeOpen);
+        return executeVerifiedSocialTouchAfterConfirmedEmail(lead, emailResult, options);
+      }
       if (emailResult.reason !== 'email_sender_not_configured') {
         await closeAutomationChromeTab(chromeOpen);
         return emailResult;
@@ -3890,22 +3956,25 @@ async function executeLeadAutomation(lead, options = {}) {
     return { ok: false, cooldown: true, error: 'Serial cooldown is active' };
   }
   const platform = String(lead && lead.platform || '').toLowerCase();
+  const isExplicitSocial = ['linkedin', 'facebook', 'instagram'].includes(platform);
   // Discovery can preserve the originating website-form label even after an
   // official supplier email is verified. Channel truth outranks that legacy
   // label: a verified business email must enter the Alibaba Mail confirmation
   // path before any lower-priority website or social fallback. Website-derived
   // leads stay in runWebsiteContactLead so a pre-send authentication failure
   // can continue to verified website/social routes.
-  const isWebsiteContact = platform === 'website_form'
+  const isWebsiteContact = !isExplicitSocial && (platform === 'website_form'
     || lead && lead.action === 'email_priority'
-    || /official_website_contact_channel|website_contact/i.test(String(lead && lead.reason || ''));
+    || /^official_website_contact_channel$|^website_contact/i.test(String(lead && lead.reason || '')));
   const isVerifiedEmail = verifiedBusinessEmailTarget(lead).ok;
   if (isVerifiedEmail && !isWebsiteContact) {
     if (typeof options.enterCriticalSection === 'function') options.enterCriticalSection('verified_email_send_confirmation');
     const subject = websiteContactSubject(lead);
     const draft = websiteContactMessage(lead);
     const emailResult = await runVerifiedAlibabaEmailLead(lead, subject, draft);
-    const result = await executeVerifiedSocialFallbackAfterEmail(lead, emailResult, options);
+    const result = emailResult.sendStatus === 'sent_confirmed'
+      ? await executeVerifiedSocialTouchAfterConfirmedEmail(lead, emailResult, options)
+      : await executeVerifiedSocialFallbackAfterEmail(lead, emailResult, options);
     lastGlmAutomationAt = Date.now();
     return result;
   }
@@ -4385,6 +4454,10 @@ async function runDailyAutomationQueue(payload = {}) {
   const alibabaSessionProbe = await probeAlibabaWebmailSession();
   liveAlibabaWebmailSessionReady = Boolean(alibabaSessionProbe && alibabaSessionProbe.ok);
   const ledgerReconciliationCount = reconcileLatestExecutionResultsToLedger();
+  // Reconcile delayed DSNs before computing today's confirmed-company count
+  // or selecting another channel. A Sent-folder receipt proves submission to
+  // the mail system, not eventual recipient delivery.
+  const bounceReconciliation = await reconcileAlibabaBounceResults();
   const requestedLimit = Math.max(1, Math.min(Number(payload && payload.limit || process.env.DAILY_EXECUTE_LIMIT || DEFAULT_DAILY_SOCIAL_EXECUTION_LIMIT), MAXIMUM_DAILY_SOCIAL_EXECUTION_LIMIT));
   const parallelLimit = 1;
   const preSendStatusRepairCount = repairPreSendUnconfirmedResults();
@@ -4493,7 +4566,6 @@ async function runDailyAutomationQueue(payload = {}) {
     executable.push(item);
     automationCompanyKeys(item).forEach(key => selectedCompanyKeys.add(key));
   }
-  const bounceReconciliation = await reconcileAlibabaBounceResults();
   [...latest.dailyQueue, ...(latest.scheduledLater || []), ...(latest.dailyPotentialPool || [])]
     .filter(item => !executable.some(run => run.id === item.id))
     .filter(item => !skipped.some(run => run.id === item.id))
