@@ -1,21 +1,20 @@
 window.OUTREACH_INTELLIGENCE_LATEST = {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-13T03:04:14.659Z",
+  "generatedAt": "2026-08-13T03:09:36.846Z",
   "companies": [
     {
-      "companyId": "company_ee9d75ffb3123e58",
-      "company": "Hannawear Sales",
+      "companyId": "company_ec35002cb7c92e0e",
+      "company": "Sicnarf Adventure",
       "keys": [
-        "hannawearsales",
-        "hannawearsalescom",
-        "hannawearsalesca"
+        "sicnarfadventure",
+        "sicnarfadventurecom"
       ],
       "domains": [
-        "hannawearsales.com",
-        "hannawearsales.ca"
+        "sicnarfadventure.com"
       ],
       "channels": [
-        "email"
+        "email",
+        "website_form"
       ],
       "evidence": [
         {
@@ -25,7 +24,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
           "reasons": [
             "official_business_route"
           ],
-          "evidenceUrl": "https://hannawearsales.com/",
+          "evidenceUrl": "https://www.sicnarfadventure.com/contact-us",
           "checkedAt": ""
         },
         {
@@ -35,7 +34,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
           "reasons": [
             "official_business_route"
           ],
-          "evidenceUrl": "https://hannawearsales.com/",
+          "evidenceUrl": "https://www.sicnarfadventure.com/contact-us",
           "checkedAt": ""
         },
         {
@@ -45,18 +44,18 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
           "reasons": [
             "official_business_route"
           ],
-          "evidenceUrl": "https://hannawearsales.com/",
+          "evidenceUrl": "https://www.sicnarfadventure.com/contact-us",
           "checkedAt": ""
         },
         {
-          "channel": "research",
+          "channel": "website_form",
           "score": 100,
           "verified": true,
           "reasons": [
             "official_business_route"
           ],
-          "evidenceUrl": "https://hannawearsales.com/",
-          "checkedAt": "2026-08-13T03:06:00.000Z"
+          "evidenceUrl": "https://www.sicnarfadventure.com/contact-us",
+          "checkedAt": "2026-08-13T03:15:00.000Z"
         }
       ],
       "history": []
@@ -2012,7 +2011,14 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
           "checkedAt": "2026-08-13T03:06:00.000Z"
         }
       ],
-      "history": []
+      "history": [
+        {
+          "status": "website_contact_unreachable_skip",
+          "timestamp": "2026-08-13T03:05:11.473Z",
+          "channel": "website_form",
+          "evidence": "unavailable_profile_page: Page Not Found\n\nWe can’t seem to find the page you’re looking for.\n\nGo To Home Page\n\nCopyright © 2024, Salvation Sales. All Rights Reserved.\n\nPowered by\n\nThis website uses cookies.;website_contact_all_targets_failed:6;contact_path_strategy_v2"
+        }
+      ]
     },
     {
       "companyId": "company_2e5828818a6d5116",
@@ -2252,6 +2258,63 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
           ],
           "evidenceUrl": "https://www.perspectiveoutdoor.com/contact-us",
           "checkedAt": ""
+        }
+      ],
+      "history": []
+    },
+    {
+      "companyId": "company_f55a9a9e352ac24c",
+      "company": "Sky-Lines",
+      "keys": [
+        "skylines",
+        "skylinesca"
+      ],
+      "domains": [
+        "sky-lines.ca"
+      ],
+      "channels": [
+        "website_form"
+      ],
+      "evidence": [
+        {
+          "channel": "website_form",
+          "score": 100,
+          "verified": true,
+          "reasons": [
+            "official_business_route"
+          ],
+          "evidenceUrl": "https://sky-lines.ca/",
+          "checkedAt": ""
+        },
+        {
+          "channel": "website_form",
+          "score": 100,
+          "verified": true,
+          "reasons": [
+            "official_business_route"
+          ],
+          "evidenceUrl": "https://sky-lines.ca/",
+          "checkedAt": ""
+        },
+        {
+          "channel": "website_form",
+          "score": 100,
+          "verified": true,
+          "reasons": [
+            "official_business_route"
+          ],
+          "evidenceUrl": "https://sky-lines.ca/",
+          "checkedAt": ""
+        },
+        {
+          "channel": "research",
+          "score": 100,
+          "verified": true,
+          "reasons": [
+            "official_business_route"
+          ],
+          "evidenceUrl": "https://sky-lines.ca/",
+          "checkedAt": "2026-08-13T03:15:00.000Z"
         }
       ],
       "history": []
@@ -6661,162 +6724,6 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
       ]
     },
     {
-      "companyId": "company_302dabc203330f43",
-      "company": "Campz",
-      "keys": [
-        "campz",
-        "campzde"
-      ],
-      "domains": [
-        "campz.de"
-      ],
-      "channels": [
-        "website_form",
-        "instagram",
-        "facebook"
-      ],
-      "evidence": [
-        {
-          "channel": "website_form",
-          "score": 0,
-          "verified": false,
-          "reasons": [
-            "unverified_external_evidence_rejected"
-          ],
-          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
-          "checkedAt": ""
-        },
-        {
-          "channel": "instagram",
-          "score": 0,
-          "verified": false,
-          "reasons": [
-            "unverified_external_evidence_rejected"
-          ],
-          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
-          "checkedAt": ""
-        },
-        {
-          "channel": "facebook",
-          "score": 0,
-          "verified": false,
-          "reasons": [
-            "unverified_external_evidence_rejected"
-          ],
-          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
-          "checkedAt": ""
-        },
-        {
-          "channel": "website_form",
-          "score": 0,
-          "verified": false,
-          "reasons": [
-            "unverified_external_evidence_rejected"
-          ],
-          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
-          "checkedAt": ""
-        }
-      ],
-      "history": [
-        {
-          "status": "failed_open",
-          "timestamp": "2026-07-17T03:05:43.972Z",
-          "channel": "facebook",
-          "evidence": "driver_error: Timeout: http://127.0.0.1:9224/json"
-        },
-        {
-          "status": "failed_open",
-          "timestamp": "2026-07-17T09:10:13.116Z",
-          "channel": "instagram",
-          "evidence": "instagram_message_button_clicked_composer_not_found"
-        },
-        {
-          "status": "approval_pending",
-          "timestamp": "2026-07-20T03:57:37.994Z",
-          "channel": "instagram",
-          "evidence": "driver_error: Command failed: C:\\Program Files\\nodejs\\node.exe E:\\New project\\outreach-dashboard\\codex-chrome-driver.js prepare-instagram-draft {\"port\":9224,\"tabId\":\"77D828F3B4F086C101460DC091BDB15E\",\"targetUrl\":\"https://www.instagram.com/campz.de/\",\"expectedCompany\":\"Campz\",\"draft\":\"Hi Campz team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a retail/category buyer, the strongest fit is assortment fit, new SKU pipeline, price-tier coverage, and proven consumer demand; your verified outdoor, camping and travel retail social refill channel focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the category buyer or vendor-review owner for a short intro video meeting?\",\"autoSend\":true,\"autoEngage\":true,\"engagementComment\":\"Great outdoor checklist. Useful reminder for hikers preparing a complete, lightweight kit.\",\"replaceExistingDraft\":true}\n"
-        },
-        {
-          "status": "approval_pending",
-          "timestamp": "2026-07-20T06:54:07.878Z",
-          "channel": "instagram",
-          "evidence": "driver_error: Command failed: C:\\Program Files\\nodejs\\node.exe E:\\New project\\outreach-dashboard\\codex-chrome-driver.js prepare-instagram-draft {\"port\":9224,\"tabId\":\"F14271F738AB6C2D1546FBC4BBED6F1A\",\"targetUrl\":\"https://www.instagram.com/campz.de/\",\"expectedCompany\":\"Campz\",\"draft\":\"Hi Campz team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a retail/category buyer, the strongest fit is assortment fit, new SKU pipeline, price-tier coverage, and proven consumer demand; your verified outdoor, camping and travel retail social refill channel focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the category buyer or vendor-review owner for a short intro video meeting?\",\"autoSend\":true,\"autoEngage\":true,\"engagementComment\":\"Great outdoor checklist. Useful reminder for hikers preparing a complete, lightweight kit.\",\"replaceExistingDraft\":true}\n"
-        },
-        {
-          "status": "approval_pending",
-          "timestamp": "2026-07-20T11:03:01.864Z",
-          "channel": "instagram",
-          "evidence": "driver_error: Command failed: C:\\Program Files\\nodejs\\node.exe E:\\New project\\outreach-dashboard\\codex-chrome-driver.js prepare-instagram-draft {\"port\":9224,\"tabId\":\"F1D67FEE8B423CB29FD3C00D02A55692\",\"targetUrl\":\"https://www.instagram.com/campz.de/\",\"expectedCompany\":\"Campz\",\"draft\":\"Hi Campz team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a retail/category buyer, the strongest fit is assortment fit, new SKU pipeline, price-tier coverage, and proven consumer demand; your verified outdoor, camping and travel retail social refill channel focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the category buyer or vendor-review owner for a short intro video meeting?\",\"autoSend\":true,\"autoEngage\":true,\"engagementComment\":\"Great outdoor checklist. Useful reminder for hikers preparing a complete, lightweight kit.\",\"replaceExistingDraft\":true}\n"
-        },
-        {
-          "status": "website_contact_unreachable_skip",
-          "timestamp": "2026-07-20T11:29:15.276Z",
-          "channel": "instagram",
-          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:1"
-        },
-        {
-          "status": "website_contact_unreachable_skip",
-          "timestamp": "2026-07-21T04:20:06.396Z",
-          "channel": "instagram",
-          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:6;contact_path_strategy_v2"
-        },
-        {
-          "status": "send_unconfirmed",
-          "timestamp": "2026-07-27T13:31:38.189Z",
-          "channel": "instagram",
-          "evidence": "instagram_draft_inserted_send_button_not_found"
-        },
-        {
-          "status": "failed_open",
-          "timestamp": "2026-07-29T05:05:41.230Z",
-          "channel": "facebook",
-          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;facebook_profile_no_message_button;contact_path_strategy_v2"
-        },
-        {
-          "status": "failed_open",
-          "timestamp": "2026-07-29T05:27:50.226Z",
-          "channel": "instagram",
-          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;facebook_profile_no_message_button;contact_path_strategy_v2"
-        },
-        {
-          "status": "failed_open",
-          "timestamp": "2026-07-29T10:31:34.205Z",
-          "channel": "facebook",
-          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;personal_profile_without_company_match_expected_Campz_title_Facebook;contact_path_strategy_v2"
-        },
-        {
-          "status": "failed_open",
-          "timestamp": "2026-07-29T10:35:24.703Z",
-          "channel": "website_form",
-          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;personal_profile_without_company_match_expected_Campz_title_Facebook;contact_path_strategy_v2"
-        },
-        {
-          "status": "failed_open",
-          "timestamp": "2026-08-04T12:03:48.646Z",
-          "channel": "facebook",
-          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;identity_mismatch_expected_Campz_title_Facebook;contact_path_strategy_v2"
-        },
-        {
-          "status": "failed_open",
-          "timestamp": "2026-08-04T12:37:47.926Z",
-          "channel": "website_form",
-          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;identity_mismatch_expected_Campz_title_Facebook;contact_path_strategy_v2"
-        },
-        {
-          "status": "failed_open",
-          "timestamp": "2026-08-05T01:59:53.529Z",
-          "channel": "facebook",
-          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;identity_mismatch_expected_Campz_title_www.facebook.com;contact_path_strategy_v2"
-        },
-        {
-          "status": "failed_open",
-          "timestamp": "2026-08-05T03:01:21.490Z",
-          "channel": "website_form",
-          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;identity_mismatch_expected_Campz_title_www.facebook.com;contact_path_strategy_v2"
-        }
-      ]
-    },
-    {
       "companyId": "company_c864d4d897a3e868",
       "company": "EET Group",
       "keys": [
@@ -11049,6 +10956,52 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
           "timestamp": "2026-08-05T05:47:09.362Z",
           "channel": "website_form",
           "evidence": "smtp_accepted;message_id:<1e773adf-8036-d86c-b0ed-5ae339630954@flextailgear.com>;sent_folder_message_confirmed;contact_path_strategy_v2"
+        }
+      ]
+    },
+    {
+      "companyId": "company_ee9d75ffb3123e58",
+      "company": "Hannawear Sales",
+      "keys": [
+        "hannawearsales",
+        "hannawearsalescom",
+        "hannawearsalesca"
+      ],
+      "domains": [
+        "hannawearsales.com",
+        "hannawearsales.ca"
+      ],
+      "channels": [
+        "email"
+      ],
+      "evidence": [
+        {
+          "channel": "email",
+          "score": 100,
+          "verified": true,
+          "reasons": [
+            "official_business_route"
+          ],
+          "evidenceUrl": "https://hannawearsales.com/",
+          "checkedAt": ""
+        },
+        {
+          "channel": "research",
+          "score": 100,
+          "verified": true,
+          "reasons": [
+            "official_business_route"
+          ],
+          "evidenceUrl": "https://hannawearsales.com/",
+          "checkedAt": "2026-08-13T03:06:00.000Z"
+        }
+      ],
+      "history": [
+        {
+          "status": "sent_confirmed",
+          "timestamp": "2026-08-13T03:04:53.595Z",
+          "channel": "email",
+          "evidence": "smtp_accepted;message_id:<6ff5f78a-8d2d-5064-fe7c-b830126c5e04@flextailgear.com>;sent_folder_message_confirmed;contact_path_strategy_v2"
         }
       ]
     },
@@ -19315,6 +19268,152 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
       ]
     },
     {
+      "companyId": "company_302dabc203330f43",
+      "company": "Campz",
+      "keys": [
+        "campz",
+        "campzde"
+      ],
+      "domains": [
+        "campz.de"
+      ],
+      "channels": [
+        "instagram",
+        "facebook",
+        "website_form"
+      ],
+      "evidence": [
+        {
+          "channel": "instagram",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
+          "checkedAt": ""
+        },
+        {
+          "channel": "facebook",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
+          "checkedAt": ""
+        },
+        {
+          "channel": "website_form",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
+          "checkedAt": ""
+        }
+      ],
+      "history": [
+        {
+          "status": "failed_open",
+          "timestamp": "2026-07-17T03:05:43.972Z",
+          "channel": "facebook",
+          "evidence": "driver_error: Timeout: http://127.0.0.1:9224/json"
+        },
+        {
+          "status": "failed_open",
+          "timestamp": "2026-07-17T09:10:13.116Z",
+          "channel": "instagram",
+          "evidence": "instagram_message_button_clicked_composer_not_found"
+        },
+        {
+          "status": "approval_pending",
+          "timestamp": "2026-07-20T03:57:37.994Z",
+          "channel": "instagram",
+          "evidence": "driver_error: Command failed: C:\\Program Files\\nodejs\\node.exe E:\\New project\\outreach-dashboard\\codex-chrome-driver.js prepare-instagram-draft {\"port\":9224,\"tabId\":\"77D828F3B4F086C101460DC091BDB15E\",\"targetUrl\":\"https://www.instagram.com/campz.de/\",\"expectedCompany\":\"Campz\",\"draft\":\"Hi Campz team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a retail/category buyer, the strongest fit is assortment fit, new SKU pipeline, price-tier coverage, and proven consumer demand; your verified outdoor, camping and travel retail social refill channel focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the category buyer or vendor-review owner for a short intro video meeting?\",\"autoSend\":true,\"autoEngage\":true,\"engagementComment\":\"Great outdoor checklist. Useful reminder for hikers preparing a complete, lightweight kit.\",\"replaceExistingDraft\":true}\n"
+        },
+        {
+          "status": "approval_pending",
+          "timestamp": "2026-07-20T06:54:07.878Z",
+          "channel": "instagram",
+          "evidence": "driver_error: Command failed: C:\\Program Files\\nodejs\\node.exe E:\\New project\\outreach-dashboard\\codex-chrome-driver.js prepare-instagram-draft {\"port\":9224,\"tabId\":\"F14271F738AB6C2D1546FBC4BBED6F1A\",\"targetUrl\":\"https://www.instagram.com/campz.de/\",\"expectedCompany\":\"Campz\",\"draft\":\"Hi Campz team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a retail/category buyer, the strongest fit is assortment fit, new SKU pipeline, price-tier coverage, and proven consumer demand; your verified outdoor, camping and travel retail social refill channel focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the category buyer or vendor-review owner for a short intro video meeting?\",\"autoSend\":true,\"autoEngage\":true,\"engagementComment\":\"Great outdoor checklist. Useful reminder for hikers preparing a complete, lightweight kit.\",\"replaceExistingDraft\":true}\n"
+        },
+        {
+          "status": "approval_pending",
+          "timestamp": "2026-07-20T11:03:01.864Z",
+          "channel": "instagram",
+          "evidence": "driver_error: Command failed: C:\\Program Files\\nodejs\\node.exe E:\\New project\\outreach-dashboard\\codex-chrome-driver.js prepare-instagram-draft {\"port\":9224,\"tabId\":\"F1D67FEE8B423CB29FD3C00D02A55692\",\"targetUrl\":\"https://www.instagram.com/campz.de/\",\"expectedCompany\":\"Campz\",\"draft\":\"Hi Campz team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a retail/category buyer, the strongest fit is assortment fit, new SKU pipeline, price-tier coverage, and proven consumer demand; your verified outdoor, camping and travel retail social refill channel focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the category buyer or vendor-review owner for a short intro video meeting?\",\"autoSend\":true,\"autoEngage\":true,\"engagementComment\":\"Great outdoor checklist. Useful reminder for hikers preparing a complete, lightweight kit.\",\"replaceExistingDraft\":true}\n"
+        },
+        {
+          "status": "website_contact_unreachable_skip",
+          "timestamp": "2026-07-20T11:29:15.276Z",
+          "channel": "instagram",
+          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:1"
+        },
+        {
+          "status": "website_contact_unreachable_skip",
+          "timestamp": "2026-07-21T04:20:06.396Z",
+          "channel": "instagram",
+          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:6;contact_path_strategy_v2"
+        },
+        {
+          "status": "send_unconfirmed",
+          "timestamp": "2026-07-27T13:31:38.189Z",
+          "channel": "instagram",
+          "evidence": "instagram_draft_inserted_send_button_not_found"
+        },
+        {
+          "status": "failed_open",
+          "timestamp": "2026-07-29T05:05:41.230Z",
+          "channel": "facebook",
+          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;facebook_profile_no_message_button;contact_path_strategy_v2"
+        },
+        {
+          "status": "failed_open",
+          "timestamp": "2026-07-29T05:27:50.226Z",
+          "channel": "instagram",
+          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;facebook_profile_no_message_button;contact_path_strategy_v2"
+        },
+        {
+          "status": "failed_open",
+          "timestamp": "2026-07-29T10:31:34.205Z",
+          "channel": "facebook",
+          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;personal_profile_without_company_match_expected_Campz_title_Facebook;contact_path_strategy_v2"
+        },
+        {
+          "status": "failed_open",
+          "timestamp": "2026-07-29T10:35:24.703Z",
+          "channel": "website_form",
+          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;personal_profile_without_company_match_expected_Campz_title_Facebook;contact_path_strategy_v2"
+        },
+        {
+          "status": "failed_open",
+          "timestamp": "2026-08-04T12:03:48.646Z",
+          "channel": "facebook",
+          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;identity_mismatch_expected_Campz_title_Facebook;contact_path_strategy_v2"
+        },
+        {
+          "status": "failed_open",
+          "timestamp": "2026-08-04T12:37:47.926Z",
+          "channel": "website_form",
+          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;identity_mismatch_expected_Campz_title_Facebook;contact_path_strategy_v2"
+        },
+        {
+          "status": "failed_open",
+          "timestamp": "2026-08-05T01:59:53.529Z",
+          "channel": "facebook",
+          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;identity_mismatch_expected_Campz_title_www.facebook.com;contact_path_strategy_v2"
+        },
+        {
+          "status": "failed_open",
+          "timestamp": "2026-08-05T03:01:21.490Z",
+          "channel": "website_form",
+          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;identity_mismatch_expected_Campz_title_www.facebook.com;contact_path_strategy_v2"
+        }
+      ]
+    },
+    {
       "companyId": "company_d9e52e1a4a1968f2",
       "company": "Sport Conrad",
       "keys": [
@@ -26952,6 +27051,16 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
       "evidence": "smtp_accepted;message_id:<1e773adf-8036-d86c-b0ed-5ae339630954@flextailgear.com>;sent_folder_message_confirmed;contact_path_strategy_v2"
     },
     {
+      "companyId": "company_ee9d75ffb3123e58",
+      "company": "Hannawear Sales",
+      "permanent": true,
+      "crossChannel": true,
+      "reason": "previous_customer_development_no_repeat",
+      "sourceStatus": "sent_confirmed",
+      "sourceTimestamp": "2026-08-13T03:04:53.595Z",
+      "evidence": "smtp_accepted;message_id:<6ff5f78a-8d2d-5064-fe7c-b830126c5e04@flextailgear.com>;sent_folder_message_confirmed;contact_path_strategy_v2"
+    },
+    {
       "companyId": "company_114ff212f8cf69f6",
       "company": "BCF",
       "permanent": true,
@@ -29935,13 +30044,15 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
   "portfolio": {
     "actions": [
       {
-        "companyId": "company_ee9d75ffb3123e58",
-        "company": "Hannawear Sales",
+        "companyId": "company_ec35002cb7c92e0e",
+        "company": "Sicnarf Adventure",
         "action": "first_touch",
         "channel": "email",
         "evidenceScore": 100,
-        "evidenceUrl": "https://hannawearsales.com/",
-        "alternatives": [],
+        "evidenceUrl": "https://www.sicnarfadventure.com/contact-us",
+        "alternatives": [
+          "website_form"
+        ],
         "reason": "highest_priority_verified_channel"
       },
       {
@@ -29975,6 +30086,16 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
         "reason": "highest_priority_verified_channel"
       },
       {
+        "companyId": "company_f55a9a9e352ac24c",
+        "company": "Sky-Lines",
+        "action": "first_touch",
+        "channel": "website_form",
+        "evidenceScore": 100,
+        "evidenceUrl": "https://sky-lines.ca/",
+        "alternatives": [],
+        "reason": "highest_priority_verified_channel"
+      },
+      {
         "companyId": "company_73cbe86918a80d20",
         "company": "Kelly Brand Management",
         "action": "first_touch",
@@ -29991,16 +30112,6 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
         "channel": "email",
         "evidenceScore": 100,
         "evidenceUrl": "https://rtic.mx/products/hilera-rtic-45-hard-cooler",
-        "alternatives": [],
-        "reason": "highest_priority_verified_channel"
-      },
-      {
-        "companyId": "company_ca049a336c94b7d9",
-        "company": "Left Point Distribution",
-        "action": "first_touch",
-        "channel": "website_form",
-        "evidenceScore": 100,
-        "evidenceUrl": "https://www.leftpointdistribution.com/en-eu/aboutus.php",
         "alternatives": [],
         "reason": "highest_priority_verified_channel"
       },
@@ -30120,7 +30231,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
       },
       {
         "channel": "email",
-        "confirmed": 281,
+        "confirmed": 282,
         "replies": 0,
         "opportunities": 0,
         "replyRate": 0,
@@ -30171,7 +30282,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
       {
         "dimension": "channel",
         "variant": "email",
-        "sampleSize": 281,
+        "sampleSize": 282,
         "observedReplyRate": 0,
         "recommendation": "use_as_bounded_allocation_signal"
       },
@@ -30185,23 +30296,25 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
     ]
   },
   "ownerSummary": {
-    "generatedAt": "2026-08-13T03:04:14.659Z",
+    "generatedAt": "2026-08-13T03:09:36.846Z",
     "phase": "autonomous_sales_operating_system_v1",
     "kpis": {
-      "companies": 488,
-      "permanentlySuppressed": 375,
+      "companies": 490,
+      "permanentlySuppressed": 376,
       "plannedActions": 13,
-      "verifiedEvidenceRoutes": 314
+      "verifiedEvidenceRoutes": 320
     },
     "decisions": [
       {
-        "companyId": "company_ee9d75ffb3123e58",
-        "company": "Hannawear Sales",
+        "companyId": "company_ec35002cb7c92e0e",
+        "company": "Sicnarf Adventure",
         "action": "first_touch",
         "channel": "email",
         "evidenceScore": 100,
-        "evidenceUrl": "https://hannawearsales.com/",
-        "alternatives": [],
+        "evidenceUrl": "https://www.sicnarfadventure.com/contact-us",
+        "alternatives": [
+          "website_form"
+        ],
         "reason": "highest_priority_verified_channel"
       },
       {
@@ -30235,6 +30348,16 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
         "reason": "highest_priority_verified_channel"
       },
       {
+        "companyId": "company_f55a9a9e352ac24c",
+        "company": "Sky-Lines",
+        "action": "first_touch",
+        "channel": "website_form",
+        "evidenceScore": 100,
+        "evidenceUrl": "https://sky-lines.ca/",
+        "alternatives": [],
+        "reason": "highest_priority_verified_channel"
+      },
+      {
         "companyId": "company_73cbe86918a80d20",
         "company": "Kelly Brand Management",
         "action": "first_touch",
@@ -30251,16 +30374,6 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
         "channel": "email",
         "evidenceScore": 100,
         "evidenceUrl": "https://rtic.mx/products/hilera-rtic-45-hard-cooler",
-        "alternatives": [],
-        "reason": "highest_priority_verified_channel"
-      },
-      {
-        "companyId": "company_ca049a336c94b7d9",
-        "company": "Left Point Distribution",
-        "action": "first_touch",
-        "channel": "website_form",
-        "evidenceScore": 100,
-        "evidenceUrl": "https://www.leftpointdistribution.com/en-eu/aboutus.php",
         "alternatives": [],
         "reason": "highest_priority_verified_channel"
       },
@@ -30341,7 +30454,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
         },
         {
           "channel": "email",
-          "confirmed": 281,
+          "confirmed": 282,
           "replies": 0,
           "opportunities": 0,
           "replyRate": 0,
@@ -30392,7 +30505,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
         {
           "dimension": "channel",
           "variant": "email",
-          "sampleSize": 281,
+          "sampleSize": 282,
           "observedReplyRate": 0,
           "recommendation": "use_as_bounded_allocation_signal"
         },

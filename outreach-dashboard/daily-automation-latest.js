@@ -1,5 +1,5 @@
 window.DAILY_AUTOMATION_LATEST = {
-  "generatedAt": "2026-08-13T03:05:11.925Z",
+  "generatedAt": "2026-08-13T03:09:34.325Z",
   "date": "2026-08-13",
   "mode": "daily-icp-first-automation-loop",
   "executionLayer": "Dedicated Chrome automation profile only; primary Chrome attachment forbidden",
@@ -50,19 +50,19 @@ window.DAILY_AUTOMATION_LATEST = {
   "summary": {
     "totalLeads": 16,
     "highIcp": 16,
-    "readyToDevelop": 16,
+    "readyToDevelop": 17,
     "dueNow": 100,
-    "visibleTodayQueue": 70,
-    "potentialPool": 70,
+    "visibleTodayQueue": 72,
+    "potentialPool": 72,
     "potentialPoolTarget": 100,
     "customerTableHighIcp": 0,
-    "refillNeeded": 30,
-    "executableCompanies": 26,
+    "refillNeeded": 28,
+    "executableCompanies": 28,
     "executableReserveTarget": 130,
-    "executableReserveNeeded": 104,
+    "executableReserveNeeded": 102,
     "executableByChannel": {
-      "email": 9,
-      "website_form": 17
+      "email": 10,
+      "website_form": 18
     },
     "verifiedSocialCompanies": 0,
     "verifiedSocialReserveTarget": 20,
@@ -70,7 +70,7 @@ window.DAILY_AUTOMATION_LATEST = {
     "enrichmentBacklogCount": 44,
     "googleDiscovered": 100,
     "facebookDiscovered": 0,
-    "websiteContactDiscovered": 17,
+    "websiteContactDiscovered": 18,
     "scheduledLater": 0,
     "cooldown": 30,
     "emailPriority": 0,
@@ -82,7 +82,7 @@ window.DAILY_AUTOMATION_LATEST = {
   "discoveryRefill": {
     "discoveryRefillAttempted": true,
     "qualifiedThreshold": 70,
-    "refillCandidateCount": 361,
+    "refillCandidateCount": 363,
     "refillByCustomerType": {
       "agency": 8,
       "key_account": 209
@@ -148,7 +148,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Wed 23:05",
+        "localTime": "Wed 23:09",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -177,7 +177,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "discoveredAt": "2026-08-12T12:20:57.343Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-13T02:58:29.680Z",
+        "verifiedAt": "2026-08-13T03:09:09.447Z",
         "evidenceUrl": "https://www.adventurelabworks.com/new-page-3",
         "httpStatus": 200,
         "signals": [
@@ -254,7 +254,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Wed 23:05",
+        "localTime": "Wed 23:09",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -283,7 +283,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "discoveredAt": "2026-08-12T12:20:57.343Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-13T02:58:30.535Z",
+        "verifiedAt": "2026-08-13T03:09:11.501Z",
         "evidenceUrl": "https://www.mountainsource.com/",
         "httpStatus": 200,
         "signals": [
@@ -361,7 +361,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Wed 23:05",
+        "localTime": "Wed 23:09",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -390,7 +390,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "discoveredAt": "2026-08-12T12:29:10.813Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-13T02:58:30.387Z",
+        "verifiedAt": "2026-08-13T03:09:11.612Z",
         "evidenceUrl": "https://www.sespegroup.com/",
         "httpStatus": 200,
         "signals": [
@@ -404,6 +404,115 @@ window.DAILY_AUTOMATION_LATEST = {
       "contactChannelScore": 13,
       "dealProbabilityScore": 265,
       "priorityScore": 265,
+      "lastStatus": "",
+      "lastEvidence": "",
+      "lastTouch": "",
+      "visibleOnly": false
+    },
+    {
+      "id": "google-customer-sicnarf-adventure-website-contact",
+      "name": "Sicnarf Adventure",
+      "company": "Sicnarf Adventure",
+      "customerType": "sales_agency",
+      "discoveryMode": "autonomous_refill",
+      "country": "Canada",
+      "countryEn": "Canada",
+      "fitScore": 94,
+      "fitTier": "A+",
+      "marketScore": 4.5,
+      "marketStatus": "open",
+      "agencyState": "open",
+      "agentCompany": "",
+      "keyword": "Canadian outdoor and active-lifestyle sales agency",
+      "role": "Agency principal or brand partnership owner.",
+      "background": "Canadian independent sales agency whose official site publishes its outdoor brand portfolio and direct company-domain contact channel.",
+      "buyerPersona": "Agency principal or brand partnership owner.",
+      "targetMarkets": "",
+      "excludedMarkets": "",
+      "productCategory": "Canadian outdoor and active-lifestyle sales agency",
+      "businessModel": "Retail Chain",
+      "productFit": "FLEXTAIL portable pumps, outdoor power, camping lighting and compact camping accessories",
+      "opportunity": "Canadian independent sales agency whose official site publishes its outdoor brand portfolio and direct company-domain contact channel.",
+      "linkedin_url": "",
+      "linkedin": "",
+      "publicEmail": "francis@sicnarfadventure.com",
+      "contactEmail": "francis@sicnarfadventure.com",
+      "vendorPortal": "https://www.sicnarfadventure.com/contact-us",
+      "contactPhone": "",
+      "contactNote": "",
+      "publicEmailStatus": "Official company-domain email published on the agency contact page.",
+      "emailVerificationStatus": "official_public_business_email",
+      "emailEvidence": "official_agency_contact_page",
+      "emailEvidenceUrl": "",
+      "website": "https://www.sicnarfadventure.com/",
+      "evidenceUrl": "https://www.google.com/search?q=%22Sicnarf%20Adventure%22%20%22Canadian%20outdoor%20and%20active-lifestyle%20sales%20agency%22%20%22Canada%22%20buyer%20OR%20wholesale%20OR%20contact",
+      "sourceEvidenceUrl": "https://www.sicnarfadventure.com/contact-us",
+      "discoverySourceUrl": "",
+      "externalVerificationStatus": "official_contact_form_verified",
+      "query": "https://www.google.com/search?q=%22Sicnarf%20Adventure%22%20%22Canadian%20outdoor%20and%20active-lifestyle%20sales%20agency%22%20%22Canada%22%20buyer%20OR%20wholesale%20OR%20contact",
+      "source": "google_customer_discovery",
+      "sourceType": "google",
+      "discoveryProvider": "google",
+      "channel": "",
+      "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
+      "socialProfileEvidenceUrl": "",
+      "socialProfileVerifiedAt": "",
+      "profiledAt": "",
+      "partnershipStatus": "",
+      "doNotOutreach": false,
+      "automationStatus": "",
+      "partnerNote": "",
+      "sendStatus": "",
+      "workingTime": {
+        "dueNow": false,
+        "timeZone": "America/Toronto",
+        "localTime": "Wed 23:09",
+        "window": "outside_work_hours",
+        "nextBest": "America/Toronto morning",
+        "weight": 0
+      },
+      "platform": "email",
+      "channelType": "email",
+      "platformUrl": "https://www.sicnarfadventure.com/contact-us",
+      "url": "https://www.sicnarfadventure.com/contact-us",
+      "contactUrl": "https://www.sicnarfadventure.com/contact-us",
+      "contactSearchUrl": "https://www.google.com/search?q=site%3Awww.sicnarfadventure.com%20%22Sicnarf%20Adventure%22%20contact%20buyer%20wholesale%20email%20vendor",
+      "emailFrom": "leo@flextailgear.com",
+      "websiteContactSubject": "FLEXTAIL retail partnership | 2026 assortment",
+      "websiteContactMessage": "Dear Sicnarf Adventure Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
+      "websiteContactFlow": "open_official_contact_us_fill_attach_auto_submit",
+      "action": "email_priority",
+      "reason": "official_public_business_email_verified",
+      "alternateChannels": {
+        "linkedin": "",
+        "instagram": "",
+        "facebook": "",
+        "websiteContact": "https://www.sicnarfadventure.com/contact-us"
+      },
+      "invalidChannels": {},
+      "identitySource": "official website contact path + Google buyer/contact query",
+      "channelPriority": 3,
+      "discoveredAt": "2026-08-13T03:03:45.764Z",
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-13T03:09:05.478Z",
+        "evidenceUrl": "https://www.sicnarfadventure.com/contact-us",
+        "httpStatus": 200,
+        "signals": [
+          "form_control",
+          "public_business_email",
+          "contact_invitation"
+        ],
+        "error": ""
+      },
+      "contactCapabilityVerified": true,
+      "taskId": "google-customer-sicnarf-adventure-website-contact",
+      "targetRegion": "americas",
+      "targetRegionScore": 30,
+      "contactChannelScore": 25,
+      "dealProbabilityScore": 276,
+      "priorityScore": 276,
       "lastStatus": "",
       "lastEvidence": "",
       "lastTouch": "",
@@ -467,7 +576,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Wed 23:05",
+        "localTime": "Wed 23:09",
         "window": "outside_work_hours",
         "nextBest": "America/Toronto morning",
         "weight": 0
@@ -496,7 +605,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "discoveredAt": "2026-08-12T12:14:26.954Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-13T02:58:33.513Z",
+        "verifiedAt": "2026-08-13T03:09:13.858Z",
         "evidenceUrl": "https://onwardup.com/brands/",
         "httpStatus": 200,
         "signals": [],
@@ -571,7 +680,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Wed 23:05",
+        "localTime": "Wed 23:09",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -600,7 +709,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "discoveredAt": "2026-08-12T12:20:57.343Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-13T02:58:36.073Z",
+        "verifiedAt": "2026-08-13T03:09:16.494Z",
         "evidenceUrl": "https://sanitassalesgroup.com/contact/",
         "httpStatus": 200,
         "signals": [
@@ -677,7 +786,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Wed 23:05",
+        "localTime": "Wed 23:09",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -706,7 +815,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "discoveredAt": "2026-08-12T12:20:57.343Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-13T02:58:31.525Z",
+        "verifiedAt": "2026-08-13T03:09:14.227Z",
         "evidenceUrl": "https://sierraoutdoorcollective.com/",
         "httpStatus": 200,
         "signals": [
@@ -785,7 +894,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Wed 23:05",
+        "localTime": "Wed 23:09",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -814,7 +923,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "discoveredAt": "2026-08-12T12:11:18.234Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-13T02:58:30.454Z",
+        "verifiedAt": "2026-08-13T03:09:12.247Z",
         "evidenceUrl": "https://www.waypointoutdoor.com/wp-content/uploads/2025/04/Rockies-PNW-Territory-sales-rep-4.2025.pdf",
         "httpStatus": 200,
         "signals": [],
@@ -889,7 +998,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Wed 23:05",
+        "localTime": "Wed 23:09",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -918,7 +1027,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "discoveredAt": "2026-08-12T12:29:10.813Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-13T02:58:36.636Z",
+        "verifiedAt": "2026-08-13T03:09:17.224Z",
         "evidenceUrl": "https://level8outdoor.com/about-us",
         "httpStatus": 200,
         "signals": [
@@ -997,7 +1106,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Wed 23:05",
+        "localTime": "Wed 23:09",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -1026,7 +1135,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "discoveredAt": "2026-08-12T12:11:18.234Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-13T02:58:34.092Z",
+        "verifiedAt": "2026-08-13T03:09:17.005Z",
         "evidenceUrl": "https://www.sportcomarketinginc.com/",
         "httpStatus": 200,
         "signals": [
@@ -1103,7 +1212,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Wed 23:05",
+        "localTime": "Wed 23:09",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -1132,7 +1241,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "discoveredAt": "2026-08-12T12:20:57.343Z",
       "firstPartyChannelVerification": {
         "status": "unreachable",
-        "verifiedAt": "2026-08-13T02:58:49.788Z",
+        "verifiedAt": "2026-08-13T03:09:28.796Z",
         "evidenceUrl": "https://www.ascensionsalesgroup.com/",
         "httpStatus": 502,
         "signals": [],
@@ -1208,7 +1317,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Wed 23:05",
+        "localTime": "Wed 23:09",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -1237,7 +1346,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "discoveredAt": "2026-08-12T12:20:57.343Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-13T02:58:40.985Z",
+        "verifiedAt": "2026-08-13T03:09:29.188Z",
         "evidenceUrl": "https://www.granitereps.com/",
         "httpStatus": 200,
         "signals": [],
@@ -1312,7 +1421,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Wed 23:05",
+        "localTime": "Wed 23:09",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -1341,7 +1450,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "discoveredAt": "2026-08-12T12:29:10.813Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-13T02:58:51.171Z",
+        "verifiedAt": "2026-08-13T03:09:30.766Z",
         "evidenceUrl": "https://www.pacificcoastsportsmkt.com/",
         "httpStatus": 200,
         "signals": [
@@ -1418,7 +1527,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Wed 23:05",
+        "localTime": "Wed 23:09",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -1447,7 +1556,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "discoveredAt": "2026-08-12T12:20:57.343Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-13T02:58:42.475Z",
+        "verifiedAt": "2026-08-13T03:09:22.275Z",
         "evidenceUrl": "https://p-psg.com/",
         "httpStatus": 200,
         "signals": [],
@@ -1522,7 +1631,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Wed 23:05",
+        "localTime": "Wed 23:09",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -1551,7 +1660,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "discoveredAt": "2026-08-12T12:29:10.813Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-13T02:58:50.132Z",
+        "verifiedAt": "2026-08-13T03:09:29.729Z",
         "evidenceUrl": "https://www.skylinesalesreps.com/about-us",
         "httpStatus": 200,
         "signals": [],
@@ -1626,7 +1735,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Wed 23:05",
+        "localTime": "Wed 23:09",
         "window": "outside_work_hours",
         "nextBest": "America/Toronto morning",
         "weight": 0
@@ -1655,7 +1764,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "discoveredAt": "2026-08-12T12:04:29.057Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-13T02:58:39.611Z",
+        "verifiedAt": "2026-08-13T03:09:18.020Z",
         "evidenceUrl": "https://yandm.ca/b2b/",
         "httpStatus": 200,
         "signals": [],
@@ -1730,7 +1839,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Wed 23:05",
+        "localTime": "Wed 23:09",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -1838,7 +1947,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Wed 23:05",
+        "localTime": "Wed 23:09",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -1867,7 +1976,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "discoveredAt": "2026-08-12T12:20:57.343Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-13T03:01:33.995Z",
+        "verifiedAt": "2026-08-13T03:09:33.923Z",
         "evidenceUrl": "https://www.cordillerasales.com/",
         "httpStatus": 200,
         "signals": [
@@ -1944,7 +2053,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Wed 23:05",
+        "localTime": "Wed 23:09",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -1973,7 +2082,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "discoveredAt": "2026-08-12T12:04:29.057Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-13T03:01:33.040Z",
+        "verifiedAt": "2026-08-13T03:09:31.255Z",
         "evidenceUrl": "https://hendrixoutdoors.com/",
         "httpStatus": 200,
         "signals": [
@@ -2052,7 +2161,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Wed 23:05",
+        "localTime": "Wed 23:09",
         "window": "outside_work_hours",
         "nextBest": "America/Toronto morning",
         "weight": 0
@@ -2081,7 +2190,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "discoveredAt": "2026-08-12T12:14:26.954Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-13T03:01:32.757Z",
+        "verifiedAt": "2026-08-13T03:09:33.182Z",
         "evidenceUrl": "https://howesoundsales.com/",
         "httpStatus": 200,
         "signals": [
@@ -2158,7 +2267,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Wed 23:05",
+        "localTime": "Wed 23:09",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -2264,7 +2373,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Wed 23:05",
+        "localTime": "Wed 23:09",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -2293,7 +2402,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "discoveredAt": "2026-08-12T12:20:57.343Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-13T03:03:48.117Z",
+        "verifiedAt": "2026-08-13T03:09:05.822Z",
         "evidenceUrl": "https://www.parallel45sales.com/",
         "httpStatus": 200,
         "signals": [],
@@ -2368,7 +2477,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Wed 23:05",
+        "localTime": "Wed 23:09",
         "window": "outside_work_hours",
         "nextBest": "America/Toronto morning",
         "weight": 0
@@ -2476,7 +2585,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Wed 23:05",
+        "localTime": "Wed 23:09",
         "window": "outside_work_hours",
         "nextBest": "America/Toronto morning",
         "weight": 0
@@ -2505,7 +2614,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "discoveredAt": "2026-08-12T11:55:28.613Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-13T03:01:31.501Z",
+        "verifiedAt": "2026-08-13T03:09:31.429Z",
         "evidenceUrl": "https://terraoutdoorgear.com/",
         "httpStatus": 200,
         "signals": [
@@ -2582,7 +2691,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Wed 23:05",
+        "localTime": "Wed 23:09",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -2689,7 +2798,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Wed 23:05",
+        "localTime": "Wed 23:09",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -2795,7 +2904,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Wed 23:05",
+        "localTime": "Wed 23:09",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -2903,7 +3012,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Wed 23:05",
+        "localTime": "Wed 23:09",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -3007,7 +3116,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Wed 23:05",
+        "localTime": "Wed 23:09",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -3045,6 +3154,112 @@ window.DAILY_AUTOMATION_LATEST = {
         "error": ""
       },
       "taskId": "google-customer-perspective-outdoor-website-contact",
+      "targetRegion": "americas",
+      "targetRegionScore": 30,
+      "contactChannelScore": 13,
+      "dealProbabilityScore": 260,
+      "priorityScore": 260,
+      "lastStatus": "",
+      "lastEvidence": "",
+      "lastTouch": "",
+      "visibleOnly": false
+    },
+    {
+      "id": "google-customer-sky-lines-website-contact",
+      "name": "Sky-Lines",
+      "company": "Sky-Lines",
+      "customerType": "sales_agency",
+      "discoveryMode": "autonomous_refill",
+      "country": "Canada",
+      "countryEn": "Canada",
+      "fitScore": 90,
+      "fitTier": "A+",
+      "marketScore": 4.5,
+      "marketStatus": "open",
+      "agencyState": "open",
+      "agentCompany": "",
+      "keyword": "Canadian outdoor equipment sales agency",
+      "role": "Agency principal or brand partnership owner.",
+      "background": "Independent Canadian agency focused on outdoor products, with represented brands and a first-party contact route published on its official website.",
+      "buyerPersona": "Agency principal or brand partnership owner.",
+      "targetMarkets": "",
+      "excludedMarkets": "",
+      "productCategory": "Canadian outdoor equipment sales agency",
+      "businessModel": "Retail Chain",
+      "productFit": "FLEXTAIL portable pumps, outdoor power, camping lighting and compact camping accessories",
+      "opportunity": "Independent Canadian agency focused on outdoor products, with represented brands and a first-party contact route published on its official website.",
+      "linkedin_url": "",
+      "linkedin": "",
+      "publicEmail": "",
+      "contactEmail": "",
+      "vendorPortal": "https://sky-lines.ca/",
+      "contactPhone": "",
+      "contactNote": "",
+      "publicEmailStatus": "",
+      "emailVerificationStatus": "",
+      "emailEvidence": "",
+      "emailEvidenceUrl": "",
+      "website": "https://sky-lines.ca/",
+      "evidenceUrl": "https://www.google.com/search?q=%22Sky-Lines%22%20%22Canadian%20outdoor%20equipment%20sales%20agency%22%20%22Canada%22%20buyer%20OR%20wholesale%20OR%20contact",
+      "sourceEvidenceUrl": "https://sky-lines.ca/",
+      "discoverySourceUrl": "",
+      "externalVerificationStatus": "official_supplier_form_verified",
+      "query": "https://www.google.com/search?q=%22Sky-Lines%22%20%22Canadian%20outdoor%20equipment%20sales%20agency%22%20%22Canada%22%20buyer%20OR%20wholesale%20OR%20contact",
+      "source": "google_customer_discovery",
+      "sourceType": "google",
+      "discoveryProvider": "google",
+      "channel": "",
+      "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
+      "socialProfileEvidenceUrl": "",
+      "socialProfileVerifiedAt": "",
+      "profiledAt": "",
+      "partnershipStatus": "",
+      "doNotOutreach": false,
+      "automationStatus": "",
+      "partnerNote": "",
+      "sendStatus": "",
+      "workingTime": {
+        "dueNow": false,
+        "timeZone": "America/Toronto",
+        "localTime": "Wed 23:09",
+        "window": "outside_work_hours",
+        "nextBest": "America/Toronto morning",
+        "weight": 0
+      },
+      "platform": "website_form",
+      "channelType": "website_form",
+      "platformUrl": "https://sky-lines.ca/",
+      "url": "https://sky-lines.ca/",
+      "contactUrl": "https://sky-lines.ca/",
+      "contactSearchUrl": "https://www.google.com/search?q=site%3Asky-lines.ca%20%22Sky-Lines%22%20contact%20buyer%20wholesale%20email%20vendor",
+      "emailFrom": "leo@flextailgear.com",
+      "websiteContactSubject": "FLEXTAIL retail partnership | 2026 assortment",
+      "websiteContactMessage": "Dear Sky-Lines Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
+      "websiteContactFlow": "open_official_contact_us_fill_attach_auto_submit",
+      "action": "verify_target",
+      "reason": "homepage_only_contact_path_requires_verification",
+      "alternateChannels": {
+        "linkedin": "",
+        "instagram": "",
+        "facebook": "",
+        "websiteContact": "https://sky-lines.ca/"
+      },
+      "invalidChannels": {},
+      "identitySource": "official homepage found; exact buyer/contact path still requires verification",
+      "channelPriority": 3,
+      "discoveredAt": "2026-08-13T03:03:45.764Z",
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-13T03:09:11.007Z",
+        "evidenceUrl": "https://sky-lines.ca/",
+        "httpStatus": 200,
+        "signals": [
+          "form_control"
+        ],
+        "error": ""
+      },
+      "taskId": "google-customer-sky-lines-website-contact",
       "targetRegion": "americas",
       "targetRegionScore": 30,
       "contactChannelScore": 13,
@@ -3113,7 +3328,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Wed 23:05",
+        "localTime": "Wed 23:09",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -3221,7 +3436,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Wed 23:05",
+        "localTime": "Wed 23:09",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -3325,7 +3540,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Wed 23:05",
+        "localTime": "Wed 23:09",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -3432,7 +3647,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Wed 23:05",
+        "localTime": "Wed 23:09",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -3538,7 +3753,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Wed 23:05",
+        "localTime": "Wed 23:09",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -3645,7 +3860,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Wed 23:05",
+        "localTime": "Wed 23:09",
         "window": "outside_work_hours",
         "nextBest": "America/Toronto morning",
         "weight": 0
@@ -3749,7 +3964,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Wed 23:05",
+        "localTime": "Wed 23:09",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -3856,7 +4071,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Wed 23:05",
+        "localTime": "Wed 23:09",
         "window": "outside_work_hours",
         "nextBest": "America/Toronto morning",
         "weight": 0
@@ -3963,7 +4178,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Wed 23:05",
+        "localTime": "Wed 23:09",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -4069,7 +4284,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Wed 23:05",
+        "localTime": "Wed 23:09",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -4175,7 +4390,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Wed 23:05",
+        "localTime": "Wed 23:09",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -4281,7 +4496,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Wed 23:05",
+        "localTime": "Wed 23:09",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -4385,7 +4600,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Wed 23:05",
+        "localTime": "Wed 23:09",
         "window": "outside_work_hours",
         "nextBest": "America/Toronto morning",
         "weight": 0
@@ -4489,7 +4704,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Wed 23:05",
+        "localTime": "Wed 23:09",
         "window": "outside_work_hours",
         "nextBest": "America/Toronto morning",
         "weight": 0
@@ -4595,7 +4810,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Wed 23:05",
+        "localTime": "Wed 23:09",
         "window": "outside_work_hours",
         "nextBest": "America/Toronto morning",
         "weight": 0
@@ -4701,7 +4916,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Wed 23:05",
+        "localTime": "Wed 23:09",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -4808,7 +5023,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Wed 23:05",
+        "localTime": "Wed 23:09",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -4914,7 +5129,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Wed 23:05",
+        "localTime": "Wed 23:09",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -5022,7 +5237,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Wed 23:05",
+        "localTime": "Wed 23:09",
         "window": "outside_work_hours",
         "nextBest": "America/Toronto morning",
         "weight": 0
@@ -5130,7 +5345,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Wed 23:05",
+        "localTime": "Wed 23:09",
         "window": "outside_work_hours",
         "nextBest": "America/Toronto morning",
         "weight": 0
@@ -5236,7 +5451,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Wed 23:05",
+        "localTime": "Wed 23:09",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -5344,7 +5559,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Wed 23:05",
+        "localTime": "Wed 23:09",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -5453,7 +5668,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Wed 23:05",
+        "localTime": "Wed 23:09",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -5561,7 +5776,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Wed 23:05",
+        "localTime": "Wed 23:09",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -5667,7 +5882,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Wed 23:05",
+        "localTime": "Wed 23:09",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -5771,7 +5986,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Wed 23:05",
+        "localTime": "Wed 23:09",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -5875,7 +6090,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Wed 23:05",
+        "localTime": "Wed 23:09",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -5982,7 +6197,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Wed 23:05",
+        "localTime": "Wed 23:09",
         "window": "outside_work_hours",
         "nextBest": "America/Toronto morning",
         "weight": 0
@@ -6086,7 +6301,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Wed 23:05",
+        "localTime": "Wed 23:09",
         "window": "outside_work_hours",
         "nextBest": "America/Toronto morning",
         "weight": 0
@@ -6190,7 +6405,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Wed 23:05",
+        "localTime": "Wed 23:09",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -6299,7 +6514,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Wed 23:05",
+        "localTime": "Wed 23:09",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -6407,7 +6622,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Wed 23:05",
+        "localTime": "Wed 23:09",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -6511,7 +6726,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Wed 23:05",
+        "localTime": "Wed 23:09",
         "window": "outside_work_hours",
         "nextBest": "America/Toronto morning",
         "weight": 0
@@ -6617,7 +6832,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Wed 23:05",
+        "localTime": "Wed 23:09",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -6725,7 +6940,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Wed 23:05",
+        "localTime": "Wed 23:09",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -6754,7 +6969,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "discoveredAt": "2026-08-13T02:18:26.662Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-13T03:03:54.433Z",
+        "verifiedAt": "2026-08-13T03:09:08.862Z",
         "evidenceUrl": "https://perpetualmotionnw.com/",
         "httpStatus": 200,
         "signals": [
@@ -6833,7 +7048,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Wed 23:05",
+        "localTime": "Wed 23:09",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -6937,7 +7152,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Wed 23:05",
+        "localTime": "Wed 23:09",
         "window": "outside_work_hours",
         "nextBest": "America/Toronto morning",
         "weight": 0
@@ -7041,7 +7256,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Wed 23:05",
+        "localTime": "Wed 23:09",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -7145,7 +7360,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Wed 23:05",
+        "localTime": "Wed 23:09",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -7249,7 +7464,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Wed 23:05",
+        "localTime": "Wed 23:09",
         "window": "outside_work_hours",
         "nextBest": "America/Toronto morning",
         "weight": 0
@@ -7357,7 +7572,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "Asia/Shanghai",
-        "localTime": "Thu 11:05",
+        "localTime": "Thu 11:09",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -7463,7 +7678,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Wed 23:05",
+        "localTime": "Wed 23:09",
         "window": "outside_work_hours",
         "nextBest": "America/Toronto morning",
         "weight": 0
@@ -7492,7 +7707,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "discoveredAt": "2026-08-13T02:18:26.662Z",
       "firstPartyChannelVerification": {
         "status": "unreachable",
-        "verifiedAt": "2026-08-13T03:03:50.812Z",
+        "verifiedAt": "2026-08-13T03:09:08.012Z",
         "evidenceUrl": "",
         "httpStatus": 0,
         "signals": [],
@@ -7511,6 +7726,126 @@ window.DAILY_AUTOMATION_LATEST = {
     }
   ],
   "dailyPotentialPool": [
+    {
+      "id": "google-customer-sicnarf-adventure-website-contact",
+      "name": "Sicnarf Adventure",
+      "company": "Sicnarf Adventure",
+      "customerType": "sales_agency",
+      "discoveryMode": "autonomous_refill",
+      "country": "Canada",
+      "countryEn": "Canada",
+      "fitScore": 94,
+      "fitTier": "A+",
+      "marketScore": 4.5,
+      "marketStatus": "open",
+      "agencyState": "open",
+      "agentCompany": "",
+      "keyword": "Canadian outdoor and active-lifestyle sales agency",
+      "role": "Agency principal or brand partnership owner.",
+      "background": "Canadian independent sales agency whose official site publishes its outdoor brand portfolio and direct company-domain contact channel.",
+      "buyerPersona": "Agency principal or brand partnership owner.",
+      "targetMarkets": "",
+      "excludedMarkets": "",
+      "productCategory": "Canadian outdoor and active-lifestyle sales agency",
+      "businessModel": "Retail Chain",
+      "productFit": "FLEXTAIL portable pumps, outdoor power, camping lighting and compact camping accessories",
+      "opportunity": "Canadian independent sales agency whose official site publishes its outdoor brand portfolio and direct company-domain contact channel.",
+      "linkedin_url": "",
+      "linkedin": "",
+      "publicEmail": "francis@sicnarfadventure.com",
+      "contactEmail": "francis@sicnarfadventure.com",
+      "vendorPortal": "https://www.sicnarfadventure.com/contact-us",
+      "contactPhone": "",
+      "contactNote": "",
+      "publicEmailStatus": "Official company-domain email published on the agency contact page.",
+      "emailVerificationStatus": "official_public_business_email",
+      "emailEvidence": "official_agency_contact_page",
+      "emailEvidenceUrl": "",
+      "website": "https://www.sicnarfadventure.com/",
+      "evidenceUrl": "https://www.google.com/search?q=%22Sicnarf%20Adventure%22%20%22Canadian%20outdoor%20and%20active-lifestyle%20sales%20agency%22%20%22Canada%22%20buyer%20OR%20wholesale%20OR%20contact",
+      "sourceEvidenceUrl": "https://www.sicnarfadventure.com/contact-us",
+      "discoverySourceUrl": "",
+      "externalVerificationStatus": "official_contact_form_verified",
+      "query": "https://www.google.com/search?q=%22Sicnarf%20Adventure%22%20%22Canadian%20outdoor%20and%20active-lifestyle%20sales%20agency%22%20%22Canada%22%20buyer%20OR%20wholesale%20OR%20contact",
+      "source": "google_customer_discovery",
+      "sourceType": "google",
+      "discoveryProvider": "google",
+      "channel": "",
+      "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
+      "socialProfileEvidenceUrl": "",
+      "socialProfileVerifiedAt": "",
+      "profiledAt": "",
+      "partnershipStatus": "",
+      "doNotOutreach": false,
+      "automationStatus": "",
+      "partnerNote": "",
+      "sendStatus": "",
+      "workingTime": {
+        "dueNow": true,
+        "timeZone": "local-market",
+        "localTime": "2026/8/13 11:09:03",
+        "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
+      },
+      "platform": "email",
+      "channelType": "email",
+      "platformUrl": "https://www.sicnarfadventure.com/contact-us",
+      "url": "https://www.sicnarfadventure.com/contact-us",
+      "contactUrl": "https://www.sicnarfadventure.com/contact-us",
+      "contactSearchUrl": "https://www.google.com/search?q=site%3Awww.sicnarfadventure.com%20%22Sicnarf%20Adventure%22%20contact%20buyer%20wholesale%20email%20vendor",
+      "emailFrom": "leo@flextailgear.com",
+      "websiteContactSubject": "FLEXTAIL retail partnership | 2026 assortment",
+      "websiteContactMessage": "Dear Sicnarf Adventure Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
+      "websiteContactFlow": "open_official_contact_us_fill_attach_auto_submit",
+      "action": "email_priority",
+      "reason": "official_public_business_email_verified",
+      "alternateChannels": {
+        "linkedin": "",
+        "instagram": "",
+        "facebook": "",
+        "websiteContact": "https://www.sicnarfadventure.com/contact-us"
+      },
+      "invalidChannels": {},
+      "identitySource": "official website contact path + Google buyer/contact query",
+      "channelPriority": 3,
+      "discoveredAt": "2026-08-13T03:03:45.764Z",
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-13T03:09:05.478Z",
+        "evidenceUrl": "https://www.sicnarfadventure.com/contact-us",
+        "httpStatus": 200,
+        "signals": [
+          "form_control",
+          "public_business_email",
+          "contact_invitation"
+        ],
+        "error": ""
+      },
+      "contactCapabilityVerified": true,
+      "linkedinUrl": "",
+      "linkedinSearchUrl": "https://www.linkedin.com/search/results/all/?keywords=Sicnarf%20Adventure%20buyer%20outdoor%20LinkedIn",
+      "googleSearchUrl": "https://www.google.com/search?q=site%3Awww.sicnarfadventure.com%20%22Sicnarf%20Adventure%22%20contact%20buyer%20wholesale%20email%20vendor",
+      "dataSources": [
+        "google_linkedin_social_refill"
+      ],
+      "taskId": "google-customer-sicnarf-adventure-website-contact",
+      "lastStatus": "",
+      "lastEvidence": "",
+      "lastTouch": "",
+      "previouslyContacted": false,
+      "targetRegion": "americas",
+      "targetRegionScore": 30,
+      "contactChannelScore": 25,
+      "dealProbabilityScore": 276,
+      "priorityScore": 301,
+      "potentialSource": "google_linkedin_social_refill",
+      "nextAction": "official_website_or_email_contact",
+      "executionReadiness": {
+        "ready": true,
+        "gate": "official_business_email",
+        "evidenceUrl": "https://www.sicnarfadventure.com/contact-us"
+      }
+    },
     {
       "id": "google-customer-sideways-distribution-website-contact",
       "name": "Sideways Distribution",
@@ -7569,7 +7904,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/13 11:03:45",
+        "localTime": "2026/8/13 11:09:03",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -7687,7 +8022,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/13 11:03:45",
+        "localTime": "2026/8/13 11:09:03",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -7805,7 +8140,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/13 11:03:45",
+        "localTime": "2026/8/13 11:09:03",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -7922,7 +8257,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/13 11:03:45",
+        "localTime": "2026/8/13 11:09:03",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -8040,7 +8375,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/13 11:03:45",
+        "localTime": "2026/8/13 11:09:03",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -8158,7 +8493,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/13 11:03:45",
+        "localTime": "2026/8/13 11:09:03",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -8276,7 +8611,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/13 11:03:45",
+        "localTime": "2026/8/13 11:09:03",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -8394,7 +8729,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/13 11:03:45",
+        "localTime": "2026/8/13 11:09:03",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -8513,7 +8848,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/13 11:03:45",
+        "localTime": "2026/8/13 11:09:03",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -8633,7 +8968,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/13 11:03:45",
+        "localTime": "2026/8/13 11:09:03",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -8660,7 +8995,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "discoveredAt": "2026-08-12T12:20:57.343Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-13T02:58:29.680Z",
+        "verifiedAt": "2026-08-13T03:09:09.447Z",
         "evidenceUrl": "https://www.adventurelabworks.com/new-page-3",
         "httpStatus": 200,
         "signals": [
@@ -8750,7 +9085,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/13 11:03:45",
+        "localTime": "2026/8/13 11:09:03",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -8777,7 +9112,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "discoveredAt": "2026-08-12T12:20:57.343Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-13T02:58:30.535Z",
+        "verifiedAt": "2026-08-13T03:09:11.501Z",
         "evidenceUrl": "https://www.mountainsource.com/",
         "httpStatus": 200,
         "signals": [
@@ -8868,7 +9203,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/13 11:03:45",
+        "localTime": "2026/8/13 11:09:03",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -8895,7 +9230,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "discoveredAt": "2026-08-12T12:29:10.813Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-13T02:58:30.387Z",
+        "verifiedAt": "2026-08-13T03:09:11.612Z",
         "evidenceUrl": "https://www.sespegroup.com/",
         "httpStatus": 200,
         "signals": [
@@ -8985,7 +9320,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/13 11:03:45",
+        "localTime": "2026/8/13 11:09:03",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -9012,7 +9347,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "discoveredAt": "2026-08-12T12:14:26.954Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-13T02:58:33.513Z",
+        "verifiedAt": "2026-08-13T03:09:13.858Z",
         "evidenceUrl": "https://onwardup.com/brands/",
         "httpStatus": 200,
         "signals": [],
@@ -9100,7 +9435,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/13 11:03:45",
+        "localTime": "2026/8/13 11:09:03",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -9127,7 +9462,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "discoveredAt": "2026-08-12T12:20:57.343Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-13T02:58:36.073Z",
+        "verifiedAt": "2026-08-13T03:09:16.494Z",
         "evidenceUrl": "https://sanitassalesgroup.com/contact/",
         "httpStatus": 200,
         "signals": [
@@ -9217,7 +9552,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/13 11:03:45",
+        "localTime": "2026/8/13 11:09:03",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -9244,7 +9579,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "discoveredAt": "2026-08-12T12:20:57.343Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-13T02:58:31.525Z",
+        "verifiedAt": "2026-08-13T03:09:14.227Z",
         "evidenceUrl": "https://sierraoutdoorcollective.com/",
         "httpStatus": 200,
         "signals": [
@@ -9336,7 +9671,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/13 11:03:45",
+        "localTime": "2026/8/13 11:09:03",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -9363,7 +9698,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "discoveredAt": "2026-08-12T12:11:18.234Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-13T02:58:30.454Z",
+        "verifiedAt": "2026-08-13T03:09:12.247Z",
         "evidenceUrl": "https://www.waypointoutdoor.com/wp-content/uploads/2025/04/Rockies-PNW-Territory-sales-rep-4.2025.pdf",
         "httpStatus": 200,
         "signals": [],
@@ -9451,7 +9786,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/13 11:03:45",
+        "localTime": "2026/8/13 11:09:03",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -9478,7 +9813,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "discoveredAt": "2026-08-12T12:29:10.813Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-13T02:58:36.636Z",
+        "verifiedAt": "2026-08-13T03:09:17.224Z",
         "evidenceUrl": "https://level8outdoor.com/about-us",
         "httpStatus": 200,
         "signals": [
@@ -9570,7 +9905,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/13 11:03:45",
+        "localTime": "2026/8/13 11:09:03",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -9597,7 +9932,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "discoveredAt": "2026-08-12T12:11:18.234Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-13T02:58:34.092Z",
+        "verifiedAt": "2026-08-13T03:09:17.005Z",
         "evidenceUrl": "https://www.sportcomarketinginc.com/",
         "httpStatus": 200,
         "signals": [
@@ -9687,7 +10022,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/13 11:03:45",
+        "localTime": "2026/8/13 11:09:03",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -9714,7 +10049,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "discoveredAt": "2026-08-12T12:20:57.343Z",
       "firstPartyChannelVerification": {
         "status": "unreachable",
-        "verifiedAt": "2026-08-13T02:58:49.788Z",
+        "verifiedAt": "2026-08-13T03:09:28.796Z",
         "evidenceUrl": "https://www.ascensionsalesgroup.com/",
         "httpStatus": 502,
         "signals": [],
@@ -9803,7 +10138,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/13 11:03:45",
+        "localTime": "2026/8/13 11:09:03",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -9830,7 +10165,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "discoveredAt": "2026-08-12T12:20:57.343Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-13T02:58:40.985Z",
+        "verifiedAt": "2026-08-13T03:09:29.188Z",
         "evidenceUrl": "https://www.granitereps.com/",
         "httpStatus": 200,
         "signals": [],
@@ -9918,7 +10253,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/13 11:03:45",
+        "localTime": "2026/8/13 11:09:03",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -9945,7 +10280,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "discoveredAt": "2026-08-12T12:29:10.813Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-13T02:58:51.171Z",
+        "verifiedAt": "2026-08-13T03:09:30.766Z",
         "evidenceUrl": "https://www.pacificcoastsportsmkt.com/",
         "httpStatus": 200,
         "signals": [
@@ -10035,7 +10370,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/13 11:03:45",
+        "localTime": "2026/8/13 11:09:03",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -10062,7 +10397,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "discoveredAt": "2026-08-12T12:20:57.343Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-13T02:58:42.475Z",
+        "verifiedAt": "2026-08-13T03:09:22.275Z",
         "evidenceUrl": "https://p-psg.com/",
         "httpStatus": 200,
         "signals": [],
@@ -10150,7 +10485,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/13 11:03:45",
+        "localTime": "2026/8/13 11:09:03",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -10177,7 +10512,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "discoveredAt": "2026-08-12T12:29:10.813Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-13T02:58:50.132Z",
+        "verifiedAt": "2026-08-13T03:09:29.729Z",
         "evidenceUrl": "https://www.skylinesalesreps.com/about-us",
         "httpStatus": 200,
         "signals": [],
@@ -10265,7 +10600,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/13 11:03:45",
+        "localTime": "2026/8/13 11:09:03",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -10292,7 +10627,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "discoveredAt": "2026-08-12T12:04:29.057Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-13T02:58:39.611Z",
+        "verifiedAt": "2026-08-13T03:09:18.020Z",
         "evidenceUrl": "https://yandm.ca/b2b/",
         "httpStatus": 200,
         "signals": [],
@@ -10380,7 +10715,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/13 11:03:45",
+        "localTime": "2026/8/13 11:09:03",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -10499,7 +10834,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/13 11:03:45",
+        "localTime": "2026/8/13 11:09:03",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -10526,7 +10861,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "discoveredAt": "2026-08-12T12:20:57.343Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-13T03:01:33.995Z",
+        "verifiedAt": "2026-08-13T03:09:33.923Z",
         "evidenceUrl": "https://www.cordillerasales.com/",
         "httpStatus": 200,
         "signals": [
@@ -10616,7 +10951,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/13 11:03:45",
+        "localTime": "2026/8/13 11:09:03",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -10643,7 +10978,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "discoveredAt": "2026-08-12T12:04:29.057Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-13T03:01:33.040Z",
+        "verifiedAt": "2026-08-13T03:09:31.255Z",
         "evidenceUrl": "https://hendrixoutdoors.com/",
         "httpStatus": 200,
         "signals": [
@@ -10735,7 +11070,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/13 11:03:45",
+        "localTime": "2026/8/13 11:09:03",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -10762,7 +11097,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "discoveredAt": "2026-08-12T12:14:26.954Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-13T03:01:32.757Z",
+        "verifiedAt": "2026-08-13T03:09:33.182Z",
         "evidenceUrl": "https://howesoundsales.com/",
         "httpStatus": 200,
         "signals": [
@@ -10852,7 +11187,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/13 11:03:45",
+        "localTime": "2026/8/13 11:09:03",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -10969,7 +11304,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/13 11:03:45",
+        "localTime": "2026/8/13 11:09:03",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -10996,7 +11331,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "discoveredAt": "2026-08-12T12:20:57.343Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-13T03:03:48.117Z",
+        "verifiedAt": "2026-08-13T03:09:05.822Z",
         "evidenceUrl": "https://www.parallel45sales.com/",
         "httpStatus": 200,
         "signals": [],
@@ -11084,7 +11419,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/13 11:03:45",
+        "localTime": "2026/8/13 11:09:03",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -11203,7 +11538,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/13 11:03:45",
+        "localTime": "2026/8/13 11:09:03",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -11230,7 +11565,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "discoveredAt": "2026-08-12T11:55:28.613Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-13T03:01:31.501Z",
+        "verifiedAt": "2026-08-13T03:09:31.429Z",
         "evidenceUrl": "https://terraoutdoorgear.com/",
         "httpStatus": 200,
         "signals": [
@@ -11320,7 +11655,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/13 11:03:45",
+        "localTime": "2026/8/13 11:09:03",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -11437,7 +11772,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/13 11:03:45",
+        "localTime": "2026/8/13 11:09:03",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -11556,7 +11891,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/13 11:03:45",
+        "localTime": "2026/8/13 11:09:03",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -11671,7 +12006,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/13 11:03:45",
+        "localTime": "2026/8/13 11:09:03",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -11728,6 +12063,123 @@ window.DAILY_AUTOMATION_LATEST = {
         "ready": false,
         "gate": "enrichment_required",
         "reason": "website_contact_capability_not_verified"
+      }
+    },
+    {
+      "id": "google-customer-sky-lines-website-contact",
+      "name": "Sky-Lines",
+      "company": "Sky-Lines",
+      "customerType": "sales_agency",
+      "discoveryMode": "autonomous_refill",
+      "country": "Canada",
+      "countryEn": "Canada",
+      "fitScore": 90,
+      "fitTier": "A+",
+      "marketScore": 4.5,
+      "marketStatus": "open",
+      "agencyState": "open",
+      "agentCompany": "",
+      "keyword": "Canadian outdoor equipment sales agency",
+      "role": "Agency principal or brand partnership owner.",
+      "background": "Independent Canadian agency focused on outdoor products, with represented brands and a first-party contact route published on its official website.",
+      "buyerPersona": "Agency principal or brand partnership owner.",
+      "targetMarkets": "",
+      "excludedMarkets": "",
+      "productCategory": "Canadian outdoor equipment sales agency",
+      "businessModel": "Retail Chain",
+      "productFit": "FLEXTAIL portable pumps, outdoor power, camping lighting and compact camping accessories",
+      "opportunity": "Independent Canadian agency focused on outdoor products, with represented brands and a first-party contact route published on its official website.",
+      "linkedin_url": "",
+      "linkedin": "",
+      "publicEmail": "",
+      "contactEmail": "",
+      "vendorPortal": "https://sky-lines.ca/",
+      "contactPhone": "",
+      "contactNote": "",
+      "publicEmailStatus": "",
+      "emailVerificationStatus": "",
+      "emailEvidence": "",
+      "emailEvidenceUrl": "",
+      "website": "https://sky-lines.ca/",
+      "evidenceUrl": "https://www.google.com/search?q=%22Sky-Lines%22%20%22Canadian%20outdoor%20equipment%20sales%20agency%22%20%22Canada%22%20buyer%20OR%20wholesale%20OR%20contact",
+      "sourceEvidenceUrl": "https://sky-lines.ca/",
+      "discoverySourceUrl": "",
+      "externalVerificationStatus": "official_supplier_form_verified",
+      "query": "https://www.google.com/search?q=%22Sky-Lines%22%20%22Canadian%20outdoor%20equipment%20sales%20agency%22%20%22Canada%22%20buyer%20OR%20wholesale%20OR%20contact",
+      "source": "google_customer_discovery",
+      "sourceType": "google",
+      "discoveryProvider": "google",
+      "channel": "",
+      "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
+      "socialProfileEvidenceUrl": "",
+      "socialProfileVerifiedAt": "",
+      "profiledAt": "",
+      "partnershipStatus": "",
+      "doNotOutreach": false,
+      "automationStatus": "",
+      "partnerNote": "",
+      "sendStatus": "",
+      "workingTime": {
+        "dueNow": true,
+        "timeZone": "local-market",
+        "localTime": "2026/8/13 11:09:03",
+        "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
+      },
+      "platform": "website_form",
+      "channelType": "website_form",
+      "platformUrl": "https://sky-lines.ca/",
+      "url": "https://sky-lines.ca/",
+      "contactUrl": "https://sky-lines.ca/",
+      "contactSearchUrl": "https://www.google.com/search?q=site%3Asky-lines.ca%20%22Sky-Lines%22%20contact%20buyer%20wholesale%20email%20vendor",
+      "emailFrom": "leo@flextailgear.com",
+      "websiteContactSubject": "FLEXTAIL retail partnership | 2026 assortment",
+      "websiteContactMessage": "Dear Sky-Lines Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
+      "websiteContactFlow": "open_official_contact_us_fill_attach_auto_submit",
+      "action": "develop",
+      "reason": "official_website_contact_channel",
+      "alternateChannels": {
+        "linkedin": "",
+        "instagram": "",
+        "facebook": "",
+        "websiteContact": "https://sky-lines.ca/"
+      },
+      "invalidChannels": {},
+      "identitySource": "official homepage found; exact buyer/contact path still requires verification",
+      "channelPriority": 3,
+      "discoveredAt": "2026-08-13T03:03:45.764Z",
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-13T03:09:11.007Z",
+        "evidenceUrl": "https://sky-lines.ca/",
+        "httpStatus": 200,
+        "signals": [
+          "form_control"
+        ],
+        "error": ""
+      },
+      "linkedinUrl": "",
+      "linkedinSearchUrl": "https://www.linkedin.com/search/results/all/?keywords=Sky-Lines%20buyer%20outdoor%20LinkedIn",
+      "googleSearchUrl": "https://www.google.com/search?q=site%3Asky-lines.ca%20%22Sky-Lines%22%20contact%20buyer%20wholesale%20email%20vendor",
+      "dataSources": [
+        "google_linkedin_social_refill"
+      ],
+      "taskId": "google-customer-sky-lines-website-contact",
+      "lastStatus": "",
+      "lastEvidence": "",
+      "lastTouch": "",
+      "previouslyContacted": false,
+      "targetRegion": "americas",
+      "targetRegionScore": 30,
+      "contactChannelScore": 13,
+      "dealProbabilityScore": 260,
+      "priorityScore": 273,
+      "potentialSource": "google_linkedin_social_refill",
+      "nextAction": "official_supplier_route_contact",
+      "executionReadiness": {
+        "ready": true,
+        "gate": "official_supplier_route",
+        "evidenceUrl": "https://sky-lines.ca/"
       }
     },
     {
@@ -11788,7 +12240,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/13 11:03:45",
+        "localTime": "2026/8/13 11:09:03",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -11907,7 +12359,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/13 11:03:45",
+        "localTime": "2026/8/13 11:09:03",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -12022,7 +12474,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/13 11:03:45",
+        "localTime": "2026/8/13 11:09:03",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -12137,7 +12589,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/13 11:03:45",
+        "localTime": "2026/8/13 11:09:03",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -12254,7 +12706,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/13 11:03:45",
+        "localTime": "2026/8/13 11:09:03",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -12371,7 +12823,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/13 11:03:45",
+        "localTime": "2026/8/13 11:09:03",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -12488,7 +12940,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/13 11:03:45",
+        "localTime": "2026/8/13 11:09:03",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -12603,7 +13055,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/13 11:03:45",
+        "localTime": "2026/8/13 11:09:03",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -12718,7 +13170,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/13 11:03:45",
+        "localTime": "2026/8/13 11:09:03",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -12835,7 +13287,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/13 11:03:45",
+        "localTime": "2026/8/13 11:09:03",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -12952,7 +13404,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/13 11:03:45",
+        "localTime": "2026/8/13 11:09:03",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -13069,7 +13521,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/13 11:03:45",
+        "localTime": "2026/8/13 11:09:03",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -13188,7 +13640,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/13 11:03:45",
+        "localTime": "2026/8/13 11:09:03",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -13307,7 +13759,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/13 11:03:45",
+        "localTime": "2026/8/13 11:09:03",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -13424,7 +13876,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/13 11:03:45",
+        "localTime": "2026/8/13 11:09:03",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -13543,7 +13995,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/13 11:03:45",
+        "localTime": "2026/8/13 11:09:03",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -13660,7 +14112,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/13 11:03:45",
+        "localTime": "2026/8/13 11:09:03",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -13775,7 +14227,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/13 11:03:45",
+        "localTime": "2026/8/13 11:09:03",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -13890,7 +14342,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/13 11:03:45",
+        "localTime": "2026/8/13 11:09:03",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -14008,7 +14460,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/13 11:03:45",
+        "localTime": "2026/8/13 11:09:03",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -14123,7 +14575,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/13 11:03:45",
+        "localTime": "2026/8/13 11:09:03",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -14238,7 +14690,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/13 11:03:45",
+        "localTime": "2026/8/13 11:09:03",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -14358,7 +14810,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/13 11:03:45",
+        "localTime": "2026/8/13 11:09:03",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -14477,7 +14929,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/13 11:03:45",
+        "localTime": "2026/8/13 11:09:03",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -14592,7 +15044,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/13 11:03:45",
+        "localTime": "2026/8/13 11:09:03",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -14709,7 +15161,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/13 11:03:45",
+        "localTime": "2026/8/13 11:09:03",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -14828,7 +15280,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/13 11:03:45",
+        "localTime": "2026/8/13 11:09:03",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -14855,7 +15307,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "discoveredAt": "2026-08-13T02:18:26.662Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-13T03:03:54.433Z",
+        "verifiedAt": "2026-08-13T03:09:08.862Z",
         "evidenceUrl": "https://perpetualmotionnw.com/",
         "httpStatus": 200,
         "signals": [
@@ -14947,7 +15399,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/13 11:03:45",
+        "localTime": "2026/8/13 11:09:03",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -15062,7 +15514,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/13 11:03:45",
+        "localTime": "2026/8/13 11:09:03",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -15177,7 +15629,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/13 11:03:45",
+        "localTime": "2026/8/13 11:09:03",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -15292,7 +15744,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/13 11:03:45",
+        "localTime": "2026/8/13 11:09:03",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -15407,7 +15859,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/13 11:03:45",
+        "localTime": "2026/8/13 11:09:03",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -15526,7 +15978,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/13 11:03:45",
+        "localTime": "2026/8/13 11:09:03",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -15553,7 +16005,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "discoveredAt": "2026-08-13T02:18:26.662Z",
       "firstPartyChannelVerification": {
         "status": "unreachable",
-        "verifiedAt": "2026-08-13T03:03:50.812Z",
+        "verifiedAt": "2026-08-13T03:09:08.012Z",
         "evidenceUrl": "",
         "httpStatus": 0,
         "signals": [],
@@ -15641,7 +16093,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/13 11:03:45",
+        "localTime": "2026/8/13 11:09:03",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -15703,6 +16155,126 @@ window.DAILY_AUTOMATION_LATEST = {
   ],
   "dailyQueue": [
     {
+      "id": "google-customer-sicnarf-adventure-website-contact",
+      "name": "Sicnarf Adventure",
+      "company": "Sicnarf Adventure",
+      "customerType": "sales_agency",
+      "discoveryMode": "autonomous_refill",
+      "country": "Canada",
+      "countryEn": "Canada",
+      "fitScore": 94,
+      "fitTier": "A+",
+      "marketScore": 4.5,
+      "marketStatus": "open",
+      "agencyState": "open",
+      "agentCompany": "",
+      "keyword": "Canadian outdoor and active-lifestyle sales agency",
+      "role": "Agency principal or brand partnership owner.",
+      "background": "Canadian independent sales agency whose official site publishes its outdoor brand portfolio and direct company-domain contact channel.",
+      "buyerPersona": "Agency principal or brand partnership owner.",
+      "targetMarkets": "",
+      "excludedMarkets": "",
+      "productCategory": "Canadian outdoor and active-lifestyle sales agency",
+      "businessModel": "Retail Chain",
+      "productFit": "FLEXTAIL portable pumps, outdoor power, camping lighting and compact camping accessories",
+      "opportunity": "Canadian independent sales agency whose official site publishes its outdoor brand portfolio and direct company-domain contact channel.",
+      "linkedin_url": "",
+      "linkedin": "",
+      "publicEmail": "francis@sicnarfadventure.com",
+      "contactEmail": "francis@sicnarfadventure.com",
+      "vendorPortal": "https://www.sicnarfadventure.com/contact-us",
+      "contactPhone": "",
+      "contactNote": "",
+      "publicEmailStatus": "Official company-domain email published on the agency contact page.",
+      "emailVerificationStatus": "official_public_business_email",
+      "emailEvidence": "official_agency_contact_page",
+      "emailEvidenceUrl": "",
+      "website": "https://www.sicnarfadventure.com/",
+      "evidenceUrl": "https://www.google.com/search?q=%22Sicnarf%20Adventure%22%20%22Canadian%20outdoor%20and%20active-lifestyle%20sales%20agency%22%20%22Canada%22%20buyer%20OR%20wholesale%20OR%20contact",
+      "sourceEvidenceUrl": "https://www.sicnarfadventure.com/contact-us",
+      "discoverySourceUrl": "",
+      "externalVerificationStatus": "official_contact_form_verified",
+      "query": "https://www.google.com/search?q=%22Sicnarf%20Adventure%22%20%22Canadian%20outdoor%20and%20active-lifestyle%20sales%20agency%22%20%22Canada%22%20buyer%20OR%20wholesale%20OR%20contact",
+      "source": "google_customer_discovery",
+      "sourceType": "google",
+      "discoveryProvider": "google",
+      "channel": "",
+      "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
+      "socialProfileEvidenceUrl": "",
+      "socialProfileVerifiedAt": "",
+      "profiledAt": "",
+      "partnershipStatus": "",
+      "doNotOutreach": false,
+      "automationStatus": "",
+      "partnerNote": "",
+      "sendStatus": "",
+      "workingTime": {
+        "dueNow": true,
+        "timeZone": "local-market",
+        "localTime": "2026/8/13 11:09:03",
+        "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
+      },
+      "platform": "email",
+      "channelType": "email",
+      "platformUrl": "https://www.sicnarfadventure.com/contact-us",
+      "url": "https://www.sicnarfadventure.com/contact-us",
+      "contactUrl": "https://www.sicnarfadventure.com/contact-us",
+      "contactSearchUrl": "https://www.google.com/search?q=site%3Awww.sicnarfadventure.com%20%22Sicnarf%20Adventure%22%20contact%20buyer%20wholesale%20email%20vendor",
+      "emailFrom": "leo@flextailgear.com",
+      "websiteContactSubject": "FLEXTAIL retail partnership | 2026 assortment",
+      "websiteContactMessage": "Dear Sicnarf Adventure Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
+      "websiteContactFlow": "open_official_contact_us_fill_attach_auto_submit",
+      "action": "email_priority",
+      "reason": "official_public_business_email_verified",
+      "alternateChannels": {
+        "linkedin": "",
+        "instagram": "",
+        "facebook": "",
+        "websiteContact": "https://www.sicnarfadventure.com/contact-us"
+      },
+      "invalidChannels": {},
+      "identitySource": "official website contact path + Google buyer/contact query",
+      "channelPriority": 3,
+      "discoveredAt": "2026-08-13T03:03:45.764Z",
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-13T03:09:05.478Z",
+        "evidenceUrl": "https://www.sicnarfadventure.com/contact-us",
+        "httpStatus": 200,
+        "signals": [
+          "form_control",
+          "public_business_email",
+          "contact_invitation"
+        ],
+        "error": ""
+      },
+      "contactCapabilityVerified": true,
+      "linkedinUrl": "",
+      "linkedinSearchUrl": "https://www.linkedin.com/search/results/all/?keywords=Sicnarf%20Adventure%20buyer%20outdoor%20LinkedIn",
+      "googleSearchUrl": "https://www.google.com/search?q=site%3Awww.sicnarfadventure.com%20%22Sicnarf%20Adventure%22%20contact%20buyer%20wholesale%20email%20vendor",
+      "dataSources": [
+        "google_linkedin_social_refill"
+      ],
+      "taskId": "google-customer-sicnarf-adventure-website-contact",
+      "lastStatus": "",
+      "lastEvidence": "",
+      "lastTouch": "",
+      "previouslyContacted": false,
+      "targetRegion": "americas",
+      "targetRegionScore": 30,
+      "contactChannelScore": 25,
+      "dealProbabilityScore": 276,
+      "priorityScore": 301,
+      "potentialSource": "google_linkedin_social_refill",
+      "nextAction": "official_website_or_email_contact",
+      "executionReadiness": {
+        "ready": true,
+        "gate": "official_business_email",
+        "evidenceUrl": "https://www.sicnarfadventure.com/contact-us"
+      }
+    },
+    {
       "id": "google-customer-sideways-distribution-website-contact",
       "name": "Sideways Distribution",
       "company": "Sideways Distribution",
@@ -15760,7 +16332,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/13 11:03:45",
+        "localTime": "2026/8/13 11:09:03",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -15878,7 +16450,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/13 11:03:45",
+        "localTime": "2026/8/13 11:09:03",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -15996,7 +16568,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/13 11:03:45",
+        "localTime": "2026/8/13 11:09:03",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -16113,7 +16685,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/13 11:03:45",
+        "localTime": "2026/8/13 11:09:03",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -16231,7 +16803,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/13 11:03:45",
+        "localTime": "2026/8/13 11:09:03",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -16349,7 +16921,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/13 11:03:45",
+        "localTime": "2026/8/13 11:09:03",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -16467,7 +17039,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/13 11:03:45",
+        "localTime": "2026/8/13 11:09:03",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -16585,7 +17157,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/13 11:03:45",
+        "localTime": "2026/8/13 11:09:03",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -16704,7 +17276,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/13 11:03:45",
+        "localTime": "2026/8/13 11:09:03",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -16824,7 +17396,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "Asia/Shanghai",
-        "localTime": "Thu 11:05",
+        "localTime": "Thu 11:09",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -16926,7 +17498,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "Pacific/Auckland",
-        "localTime": "Thu 15:05",
+        "localTime": "Thu 15:09",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
@@ -17027,7 +17599,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/13 11:03:45",
+        "localTime": "2026/8/13 11:09:03",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -17054,7 +17626,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "discoveredAt": "2026-08-12T12:20:57.343Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-13T02:58:36.073Z",
+        "verifiedAt": "2026-08-13T03:09:16.494Z",
         "evidenceUrl": "https://sanitassalesgroup.com/contact/",
         "httpStatus": 200,
         "signals": [
@@ -17144,7 +17716,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/13 11:03:45",
+        "localTime": "2026/8/13 11:09:03",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -17171,7 +17743,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "discoveredAt": "2026-08-12T12:20:57.343Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-13T02:58:31.525Z",
+        "verifiedAt": "2026-08-13T03:09:14.227Z",
         "evidenceUrl": "https://sierraoutdoorcollective.com/",
         "httpStatus": 200,
         "signals": [
@@ -17263,7 +17835,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/13 11:03:45",
+        "localTime": "2026/8/13 11:09:03",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -17290,7 +17862,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "discoveredAt": "2026-08-12T12:29:10.813Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-13T02:58:36.636Z",
+        "verifiedAt": "2026-08-13T03:09:17.224Z",
         "evidenceUrl": "https://level8outdoor.com/about-us",
         "httpStatus": 200,
         "signals": [
@@ -17382,7 +17954,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/13 11:03:45",
+        "localTime": "2026/8/13 11:09:03",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -17409,7 +17981,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "discoveredAt": "2026-08-12T12:20:57.343Z",
       "firstPartyChannelVerification": {
         "status": "unreachable",
-        "verifiedAt": "2026-08-13T02:58:49.788Z",
+        "verifiedAt": "2026-08-13T03:09:28.796Z",
         "evidenceUrl": "https://www.ascensionsalesgroup.com/",
         "httpStatus": 502,
         "signals": [],
@@ -17498,7 +18070,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/13 11:03:45",
+        "localTime": "2026/8/13 11:09:03",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -17617,7 +18189,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/13 11:03:45",
+        "localTime": "2026/8/13 11:09:03",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -17644,7 +18216,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "discoveredAt": "2026-08-12T12:04:29.057Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-13T03:01:33.040Z",
+        "verifiedAt": "2026-08-13T03:09:31.255Z",
         "evidenceUrl": "https://hendrixoutdoors.com/",
         "httpStatus": 200,
         "signals": [
@@ -17736,7 +18308,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/13 11:03:45",
+        "localTime": "2026/8/13 11:09:03",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -17855,7 +18427,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/13 11:03:45",
+        "localTime": "2026/8/13 11:09:03",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -17917,6 +18489,123 @@ window.DAILY_AUTOMATION_LATEST = {
       }
     },
     {
+      "id": "google-customer-sky-lines-website-contact",
+      "name": "Sky-Lines",
+      "company": "Sky-Lines",
+      "customerType": "sales_agency",
+      "discoveryMode": "autonomous_refill",
+      "country": "Canada",
+      "countryEn": "Canada",
+      "fitScore": 90,
+      "fitTier": "A+",
+      "marketScore": 4.5,
+      "marketStatus": "open",
+      "agencyState": "open",
+      "agentCompany": "",
+      "keyword": "Canadian outdoor equipment sales agency",
+      "role": "Agency principal or brand partnership owner.",
+      "background": "Independent Canadian agency focused on outdoor products, with represented brands and a first-party contact route published on its official website.",
+      "buyerPersona": "Agency principal or brand partnership owner.",
+      "targetMarkets": "",
+      "excludedMarkets": "",
+      "productCategory": "Canadian outdoor equipment sales agency",
+      "businessModel": "Retail Chain",
+      "productFit": "FLEXTAIL portable pumps, outdoor power, camping lighting and compact camping accessories",
+      "opportunity": "Independent Canadian agency focused on outdoor products, with represented brands and a first-party contact route published on its official website.",
+      "linkedin_url": "",
+      "linkedin": "",
+      "publicEmail": "",
+      "contactEmail": "",
+      "vendorPortal": "https://sky-lines.ca/",
+      "contactPhone": "",
+      "contactNote": "",
+      "publicEmailStatus": "",
+      "emailVerificationStatus": "",
+      "emailEvidence": "",
+      "emailEvidenceUrl": "",
+      "website": "https://sky-lines.ca/",
+      "evidenceUrl": "https://www.google.com/search?q=%22Sky-Lines%22%20%22Canadian%20outdoor%20equipment%20sales%20agency%22%20%22Canada%22%20buyer%20OR%20wholesale%20OR%20contact",
+      "sourceEvidenceUrl": "https://sky-lines.ca/",
+      "discoverySourceUrl": "",
+      "externalVerificationStatus": "official_supplier_form_verified",
+      "query": "https://www.google.com/search?q=%22Sky-Lines%22%20%22Canadian%20outdoor%20equipment%20sales%20agency%22%20%22Canada%22%20buyer%20OR%20wholesale%20OR%20contact",
+      "source": "google_customer_discovery",
+      "sourceType": "google",
+      "discoveryProvider": "google",
+      "channel": "",
+      "identityStatus": "verified",
+      "officialSocialProfileVerified": false,
+      "socialProfileEvidenceUrl": "",
+      "socialProfileVerifiedAt": "",
+      "profiledAt": "",
+      "partnershipStatus": "",
+      "doNotOutreach": false,
+      "automationStatus": "",
+      "partnerNote": "",
+      "sendStatus": "",
+      "workingTime": {
+        "dueNow": true,
+        "timeZone": "local-market",
+        "localTime": "2026/8/13 11:09:03",
+        "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
+      },
+      "platform": "website_form",
+      "channelType": "website_form",
+      "platformUrl": "https://sky-lines.ca/",
+      "url": "https://sky-lines.ca/",
+      "contactUrl": "https://sky-lines.ca/",
+      "contactSearchUrl": "https://www.google.com/search?q=site%3Asky-lines.ca%20%22Sky-Lines%22%20contact%20buyer%20wholesale%20email%20vendor",
+      "emailFrom": "leo@flextailgear.com",
+      "websiteContactSubject": "FLEXTAIL retail partnership | 2026 assortment",
+      "websiteContactMessage": "Dear Sky-Lines Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
+      "websiteContactFlow": "open_official_contact_us_fill_attach_auto_submit",
+      "action": "develop",
+      "reason": "official_website_contact_channel",
+      "alternateChannels": {
+        "linkedin": "",
+        "instagram": "",
+        "facebook": "",
+        "websiteContact": "https://sky-lines.ca/"
+      },
+      "invalidChannels": {},
+      "identitySource": "official homepage found; exact buyer/contact path still requires verification",
+      "channelPriority": 3,
+      "discoveredAt": "2026-08-13T03:03:45.764Z",
+      "firstPartyChannelVerification": {
+        "status": "checked",
+        "verifiedAt": "2026-08-13T03:09:11.007Z",
+        "evidenceUrl": "https://sky-lines.ca/",
+        "httpStatus": 200,
+        "signals": [
+          "form_control"
+        ],
+        "error": ""
+      },
+      "linkedinUrl": "",
+      "linkedinSearchUrl": "https://www.linkedin.com/search/results/all/?keywords=Sky-Lines%20buyer%20outdoor%20LinkedIn",
+      "googleSearchUrl": "https://www.google.com/search?q=site%3Asky-lines.ca%20%22Sky-Lines%22%20contact%20buyer%20wholesale%20email%20vendor",
+      "dataSources": [
+        "google_linkedin_social_refill"
+      ],
+      "taskId": "google-customer-sky-lines-website-contact",
+      "lastStatus": "",
+      "lastEvidence": "",
+      "lastTouch": "",
+      "previouslyContacted": false,
+      "targetRegion": "americas",
+      "targetRegionScore": 30,
+      "contactChannelScore": 13,
+      "dealProbabilityScore": 260,
+      "priorityScore": 273,
+      "potentialSource": "google_linkedin_social_refill",
+      "nextAction": "official_supplier_route_contact",
+      "executionReadiness": {
+        "ready": true,
+        "gate": "official_supplier_route",
+        "evidenceUrl": "https://sky-lines.ca/"
+      }
+    },
+    {
       "id": "google-customer-sturm-mil-tec-usa-website-contact",
       "name": "Sturm Mil-Tec USA",
       "company": "Sturm Mil-Tec USA",
@@ -17974,7 +18663,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/13 11:03:45",
+        "localTime": "2026/8/13 11:09:03",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -18093,7 +18782,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/13 11:03:45",
+        "localTime": "2026/8/13 11:09:03",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -18212,7 +18901,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/13 11:03:45",
+        "localTime": "2026/8/13 11:09:03",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -18331,7 +19020,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/13 11:03:45",
+        "localTime": "2026/8/13 11:09:03",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -18450,7 +19139,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/13 11:03:45",
+        "localTime": "2026/8/13 11:09:03",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -18570,7 +19259,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/13 11:03:45",
+        "localTime": "2026/8/13 11:09:03",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -18689,7 +19378,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/13 11:03:45",
+        "localTime": "2026/8/13 11:09:03",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -18808,7 +19497,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/13 11:03:45",
+        "localTime": "2026/8/13 11:09:03",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -18835,7 +19524,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "discoveredAt": "2026-08-13T02:18:26.662Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-13T03:03:54.433Z",
+        "verifiedAt": "2026-08-13T03:09:08.862Z",
         "evidenceUrl": "https://perpetualmotionnw.com/",
         "httpStatus": 200,
         "signals": [
@@ -18927,7 +19616,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/13 11:03:45",
+        "localTime": "2026/8/13 11:09:03",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -19046,7 +19735,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "Asia/Shanghai",
-        "localTime": "Thu 11:05",
+        "localTime": "Thu 11:09",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -19147,7 +19836,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "Asia/Shanghai",
-        "localTime": "Thu 11:05",
+        "localTime": "Thu 11:09",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -19246,7 +19935,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "Asia/Shanghai",
-        "localTime": "Thu 11:05",
+        "localTime": "Thu 11:09",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -19347,7 +20036,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "Asia/Shanghai",
-        "localTime": "Thu 11:05",
+        "localTime": "Thu 11:09",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -19438,7 +20127,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "Asia/Shanghai",
-        "localTime": "Thu 11:05",
+        "localTime": "Thu 11:09",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -19537,7 +20226,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "Asia/Shanghai",
-        "localTime": "Thu 11:05",
+        "localTime": "Thu 11:09",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -19628,7 +20317,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Wed 23:05",
+        "localTime": "Wed 23:09",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -19727,7 +20416,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Wed 23:05",
+        "localTime": "Wed 23:09",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -19831,7 +20520,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Wed 23:05",
+        "localTime": "Wed 23:09",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -19935,7 +20624,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/Oslo",
-        "localTime": "Thu 05:05",
+        "localTime": "Thu 05:09",
         "window": "outside_work_hours",
         "nextBest": "Europe/Oslo morning",
         "weight": 0
@@ -20036,7 +20725,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/Helsinki",
-        "localTime": "Thu 06:05",
+        "localTime": "Thu 06:09",
         "window": "outside_work_hours",
         "nextBest": "Europe/Helsinki morning",
         "weight": 0
@@ -20138,7 +20827,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Australia/Sydney",
-        "localTime": "Thu 13:05",
+        "localTime": "Thu 13:09",
         "window": "outside_work_hours",
         "nextBest": "Australia/Sydney afternoon",
         "weight": 0
@@ -20237,7 +20926,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Wed 23:05",
+        "localTime": "Wed 23:09",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -20266,7 +20955,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "discoveredAt": "2026-08-12T12:20:57.343Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-13T02:58:29.680Z",
+        "verifiedAt": "2026-08-13T03:09:09.447Z",
         "evidenceUrl": "https://www.adventurelabworks.com/new-page-3",
         "httpStatus": 200,
         "signals": [
@@ -20338,7 +21027,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Wed 23:05",
+        "localTime": "Wed 23:09",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -20367,7 +21056,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "discoveredAt": "2026-08-12T12:20:57.343Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-13T02:58:30.535Z",
+        "verifiedAt": "2026-08-13T03:09:11.501Z",
         "evidenceUrl": "https://www.mountainsource.com/",
         "httpStatus": 200,
         "signals": [
@@ -20440,7 +21129,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Wed 23:05",
+        "localTime": "Wed 23:09",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -20469,7 +21158,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "discoveredAt": "2026-08-12T12:29:10.813Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-13T02:58:30.387Z",
+        "verifiedAt": "2026-08-13T03:09:11.612Z",
         "evidenceUrl": "https://www.sespegroup.com/",
         "httpStatus": 200,
         "signals": [
@@ -20541,7 +21230,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Wed 23:05",
+        "localTime": "Wed 23:09",
         "window": "outside_work_hours",
         "nextBest": "America/Toronto morning",
         "weight": 0
@@ -20570,7 +21259,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "discoveredAt": "2026-08-12T12:14:26.954Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-13T02:58:33.513Z",
+        "verifiedAt": "2026-08-13T03:09:13.858Z",
         "evidenceUrl": "https://onwardup.com/brands/",
         "httpStatus": 200,
         "signals": [],
@@ -20640,7 +21329,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Wed 23:05",
+        "localTime": "Wed 23:09",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -20669,7 +21358,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "discoveredAt": "2026-08-12T12:11:18.234Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-13T02:58:30.454Z",
+        "verifiedAt": "2026-08-13T03:09:12.247Z",
         "evidenceUrl": "https://www.waypointoutdoor.com/wp-content/uploads/2025/04/Rockies-PNW-Territory-sales-rep-4.2025.pdf",
         "httpStatus": 200,
         "signals": [],
@@ -20739,7 +21428,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Wed 23:05",
+        "localTime": "Wed 23:09",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -20768,7 +21457,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "discoveredAt": "2026-08-12T12:11:18.234Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-13T02:58:34.092Z",
+        "verifiedAt": "2026-08-13T03:09:17.005Z",
         "evidenceUrl": "https://www.sportcomarketinginc.com/",
         "httpStatus": 200,
         "signals": [
@@ -20840,7 +21529,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Wed 23:05",
+        "localTime": "Wed 23:09",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -20869,7 +21558,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "discoveredAt": "2026-08-12T12:20:57.343Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-13T02:58:40.985Z",
+        "verifiedAt": "2026-08-13T03:09:29.188Z",
         "evidenceUrl": "https://www.granitereps.com/",
         "httpStatus": 200,
         "signals": [],
@@ -20939,7 +21628,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Wed 23:05",
+        "localTime": "Wed 23:09",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -20968,7 +21657,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "discoveredAt": "2026-08-12T12:29:10.813Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-13T02:58:51.171Z",
+        "verifiedAt": "2026-08-13T03:09:30.766Z",
         "evidenceUrl": "https://www.pacificcoastsportsmkt.com/",
         "httpStatus": 200,
         "signals": [
@@ -21040,7 +21729,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Wed 23:05",
+        "localTime": "Wed 23:09",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -21069,7 +21758,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "discoveredAt": "2026-08-12T12:20:57.343Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-13T02:58:42.475Z",
+        "verifiedAt": "2026-08-13T03:09:22.275Z",
         "evidenceUrl": "https://p-psg.com/",
         "httpStatus": 200,
         "signals": [],
@@ -21139,7 +21828,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Wed 23:05",
+        "localTime": "Wed 23:09",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -21168,7 +21857,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "discoveredAt": "2026-08-12T12:29:10.813Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-13T02:58:50.132Z",
+        "verifiedAt": "2026-08-13T03:09:29.729Z",
         "evidenceUrl": "https://www.skylinesalesreps.com/about-us",
         "httpStatus": 200,
         "signals": [],
@@ -21238,7 +21927,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Wed 23:05",
+        "localTime": "Wed 23:09",
         "window": "outside_work_hours",
         "nextBest": "America/Toronto morning",
         "weight": 0
@@ -21267,7 +21956,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "discoveredAt": "2026-08-12T12:04:29.057Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-13T02:58:39.611Z",
+        "verifiedAt": "2026-08-13T03:09:18.020Z",
         "evidenceUrl": "https://yandm.ca/b2b/",
         "httpStatus": 200,
         "signals": [],
@@ -21337,7 +22026,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Wed 23:05",
+        "localTime": "Wed 23:09",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -21366,7 +22055,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "discoveredAt": "2026-08-12T12:20:57.343Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-13T03:01:33.995Z",
+        "verifiedAt": "2026-08-13T03:09:33.923Z",
         "evidenceUrl": "https://www.cordillerasales.com/",
         "httpStatus": 200,
         "signals": [
@@ -21438,7 +22127,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Wed 23:05",
+        "localTime": "Wed 23:09",
         "window": "outside_work_hours",
         "nextBest": "America/Toronto morning",
         "weight": 0
@@ -21467,7 +22156,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "discoveredAt": "2026-08-12T12:14:26.954Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-13T03:01:32.757Z",
+        "verifiedAt": "2026-08-13T03:09:33.182Z",
         "evidenceUrl": "https://howesoundsales.com/",
         "httpStatus": 200,
         "signals": [
@@ -21539,7 +22228,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Wed 23:05",
+        "localTime": "Wed 23:09",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -21640,7 +22329,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Wed 23:05",
+        "localTime": "Wed 23:09",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -21669,7 +22358,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "discoveredAt": "2026-08-12T12:20:57.343Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-13T03:03:48.117Z",
+        "verifiedAt": "2026-08-13T03:09:05.822Z",
         "evidenceUrl": "https://www.parallel45sales.com/",
         "httpStatus": 200,
         "signals": [],
@@ -21739,7 +22428,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Wed 23:05",
+        "localTime": "Wed 23:09",
         "window": "outside_work_hours",
         "nextBest": "America/Toronto morning",
         "weight": 0
@@ -21768,7 +22457,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "discoveredAt": "2026-08-12T11:55:28.613Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-13T03:01:31.501Z",
+        "verifiedAt": "2026-08-13T03:09:31.429Z",
         "evidenceUrl": "https://terraoutdoorgear.com/",
         "httpStatus": 200,
         "signals": [
@@ -21840,7 +22529,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Wed 23:05",
+        "localTime": "Wed 23:09",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -21941,7 +22630,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Wed 23:05",
+        "localTime": "Wed 23:09",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -22040,7 +22729,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Wed 23:05",
+        "localTime": "Wed 23:09",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -22141,7 +22830,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Wed 23:05",
+        "localTime": "Wed 23:09",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -22240,7 +22929,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Wed 23:05",
+        "localTime": "Wed 23:09",
         "window": "outside_work_hours",
         "nextBest": "America/Toronto morning",
         "weight": 0
@@ -22339,7 +23028,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Wed 23:05",
+        "localTime": "Wed 23:09",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -22440,7 +23129,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Wed 23:05",
+        "localTime": "Wed 23:09",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -22541,7 +23230,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Wed 23:05",
+        "localTime": "Wed 23:09",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -22642,7 +23331,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/Rome",
-        "localTime": "Thu 05:05",
+        "localTime": "Thu 05:09",
         "window": "outside_work_hours",
         "nextBest": "Europe/Rome morning",
         "weight": 0
@@ -22745,7 +23434,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Wed 23:05",
+        "localTime": "Wed 23:09",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -22844,7 +23533,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Wed 23:05",
+        "localTime": "Wed 23:09",
         "window": "outside_work_hours",
         "nextBest": "America/Toronto morning",
         "weight": 0
@@ -22943,7 +23632,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Wed 23:05",
+        "localTime": "Wed 23:09",
         "window": "outside_work_hours",
         "nextBest": "America/Toronto morning",
         "weight": 0
@@ -23044,7 +23733,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Wed 23:05",
+        "localTime": "Wed 23:09",
         "window": "outside_work_hours",
         "nextBest": "America/Toronto morning",
         "weight": 0
@@ -23145,7 +23834,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Wed 23:05",
+        "localTime": "Wed 23:09",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -23246,7 +23935,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Wed 23:05",
+        "localTime": "Wed 23:09",
         "window": "outside_work_hours",
         "nextBest": "America/Toronto morning",
         "weight": 0
@@ -23347,7 +24036,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Wed 23:05",
+        "localTime": "Wed 23:09",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -23448,7 +24137,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Wed 23:05",
+        "localTime": "Wed 23:09",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -23547,7 +24236,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Wed 23:05",
+        "localTime": "Wed 23:09",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -23646,7 +24335,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Wed 23:05",
+        "localTime": "Wed 23:09",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -23748,7 +24437,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Wed 23:05",
+        "localTime": "Wed 23:09",
         "window": "outside_work_hours",
         "nextBest": "America/Toronto morning",
         "weight": 0
@@ -23847,7 +24536,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Wed 23:05",
+        "localTime": "Wed 23:09",
         "window": "outside_work_hours",
         "nextBest": "America/Toronto morning",
         "weight": 0
@@ -23946,7 +24635,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Wed 23:05",
+        "localTime": "Wed 23:09",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -24045,7 +24734,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Wed 23:05",
+        "localTime": "Wed 23:09",
         "window": "outside_work_hours",
         "nextBest": "America/Toronto morning",
         "weight": 0
@@ -24146,7 +24835,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Wed 23:05",
+        "localTime": "Wed 23:09",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -24245,7 +24934,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Wed 23:05",
+        "localTime": "Wed 23:09",
         "window": "outside_work_hours",
         "nextBest": "America/Toronto morning",
         "weight": 0
@@ -24344,7 +25033,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Wed 23:05",
+        "localTime": "Wed 23:09",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -24443,7 +25132,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Wed 23:05",
+        "localTime": "Wed 23:09",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -24542,7 +25231,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Wed 23:05",
+        "localTime": "Wed 23:09",
         "window": "outside_work_hours",
         "nextBest": "America/Toronto morning",
         "weight": 0
@@ -24571,7 +25260,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "discoveredAt": "2026-08-13T02:18:26.662Z",
       "firstPartyChannelVerification": {
         "status": "unreachable",
-        "verifiedAt": "2026-08-13T03:03:50.812Z",
+        "verifiedAt": "2026-08-13T03:09:08.012Z",
         "evidenceUrl": "",
         "httpStatus": 0,
         "signals": [],
@@ -24641,7 +25330,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Wed 23:05",
+        "localTime": "Wed 23:09",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -24744,7 +25433,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Wed 23:05",
+        "localTime": "Wed 23:09",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -24835,7 +25524,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Wed 23:05",
+        "localTime": "Wed 23:09",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -24934,7 +25623,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Wed 23:05",
+        "localTime": "Wed 23:09",
         "window": "outside_work_hours",
         "nextBest": "America/Toronto morning",
         "weight": 0
@@ -25035,7 +25724,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Wed 23:05",
+        "localTime": "Wed 23:09",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -25142,7 +25831,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Wed 23:05",
+        "localTime": "Wed 23:09",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -25239,7 +25928,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Wed 23:05",
+        "localTime": "Wed 23:09",
         "window": "outside_work_hours",
         "nextBest": "America/Toronto morning",
         "weight": 0
@@ -25340,7 +26029,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Wed 23:05",
+        "localTime": "Wed 23:09",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -25439,7 +26128,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/Berlin",
-        "localTime": "Thu 05:05",
+        "localTime": "Thu 05:09",
         "window": "outside_work_hours",
         "nextBest": "Europe/Berlin morning",
         "weight": 0
@@ -25538,7 +26227,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Wed 23:05",
+        "localTime": "Wed 23:09",
         "window": "outside_work_hours",
         "nextBest": "America/Toronto morning",
         "weight": 0
@@ -25638,7 +26327,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/Paris",
-        "localTime": "Thu 05:05",
+        "localTime": "Thu 05:09",
         "window": "outside_work_hours",
         "nextBest": "Europe/Paris morning",
         "weight": 0
@@ -25737,7 +26426,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/London",
-        "localTime": "Thu 04:05",
+        "localTime": "Thu 04:09",
         "window": "outside_work_hours",
         "nextBest": "Europe/London morning",
         "weight": 0
@@ -25836,7 +26525,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/Paris",
-        "localTime": "Thu 05:05",
+        "localTime": "Thu 05:09",
         "window": "outside_work_hours",
         "nextBest": "Europe/Paris morning",
         "weight": 0
@@ -25935,7 +26624,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/Dublin",
-        "localTime": "Thu 04:05",
+        "localTime": "Thu 04:09",
         "window": "outside_work_hours",
         "nextBest": "Europe/Dublin morning",
         "weight": 0
@@ -25969,202 +26658,6 @@ window.DAILY_AUTOMATION_LATEST = {
         "httpStatus": 0,
         "signals": [],
         "error": "fetch failed"
-      },
-      "targetRegion": "europe",
-      "targetRegionScore": 45,
-      "contactChannelScore": 17,
-      "dealProbabilityScore": 218,
-      "priorityScore": 218
-    },
-    {
-      "id": "google-customer-campz-website-contact",
-      "name": "Campz",
-      "company": "Campz",
-      "customerType": "key_account",
-      "discoveryMode": "autonomous_refill",
-      "country": "Germany",
-      "countryEn": "Germany",
-      "fitScore": 84,
-      "fitTier": "A",
-      "marketScore": 4.5,
-      "marketStatus": "open",
-      "agencyState": "open",
-      "agentCompany": "",
-      "keyword": "verified outdoor, camping and travel retail social refill channel",
-      "role": "Outdoor, camping, travel accessories, ecommerce or category buyer.",
-      "background": "Campz is a qualified outdoor, camping, travel or sport retail prospect with category fit for FLEXTAIL portable outdoor electrics and Vollyc practical 3C products.",
-      "buyerPersona": "Outdoor, camping, travel accessories, ecommerce or category buyer.",
-      "targetMarkets": "",
-      "excludedMarkets": "",
-      "productCategory": "verified outdoor, camping and travel retail social refill channel",
-      "businessModel": "Retail Chain",
-      "productFit": "FLEXTAIL portable pumps, outdoor power, camping lighting and compact camping accessories",
-      "opportunity": "Campz is a qualified outdoor, camping, travel or sport retail prospect with category fit for FLEXTAIL portable outdoor electrics and Vollyc practical 3C products.",
-      "linkedin_url": "",
-      "linkedin": "",
-      "publicEmail": "",
-      "contactEmail": "",
-      "vendorPortal": "https://www.campz.de/",
-      "contactPhone": "",
-      "contactNote": "",
-      "publicEmailStatus": "",
-      "emailVerificationStatus": "",
-      "emailEvidence": "",
-      "emailEvidenceUrl": "",
-      "website": "https://www.campz.de/",
-      "evidenceUrl": "https://www.google.com/search?q=%22Campz%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22Germany%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "sourceEvidenceUrl": "verified outdoor retailer official website and public social profile refill",
-      "discoverySourceUrl": "",
-      "externalVerificationStatus": "",
-      "query": "https://www.google.com/search?q=%22Campz%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22Germany%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "source": "google_customer_discovery",
-      "sourceType": "google",
-      "discoveryProvider": "google",
-      "channel": "",
-      "identityStatus": "verified",
-      "officialSocialProfileVerified": false,
-      "socialProfileEvidenceUrl": "",
-      "socialProfileVerifiedAt": "",
-      "profiledAt": "",
-      "partnershipStatus": "",
-      "doNotOutreach": false,
-      "automationStatus": "",
-      "partnerNote": "",
-      "sendStatus": "",
-      "workingTime": {
-        "dueNow": false,
-        "timeZone": "Europe/Berlin",
-        "localTime": "Thu 05:05",
-        "window": "outside_work_hours",
-        "nextBest": "Europe/Berlin morning",
-        "weight": 0
-      },
-      "platform": "website_form",
-      "channelType": "website_form",
-      "platformUrl": "https://www.campz.de/",
-      "url": "https://www.campz.de/",
-      "contactUrl": "https://www.campz.de/",
-      "contactSearchUrl": "https://www.google.com/search?q=site%3Awww.campz.de%20%22Campz%22%20contact%20buyer%20wholesale%20email%20vendor",
-      "emailFrom": "leo@flextailgear.com",
-      "websiteContactSubject": "FLEXTAIL retail partnership | 2026 assortment",
-      "websiteContactMessage": "Dear Campz Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
-      "websiteContactFlow": "open_official_contact_us_fill_attach_auto_submit",
-      "action": "verify_target",
-      "reason": "homepage_only_contact_path_requires_verification",
-      "alternateChannels": {
-        "linkedin": "",
-        "instagram": "https://www.instagram.com/campz.de/",
-        "facebook": "https://www.facebook.com/campz.de",
-        "websiteContact": "https://www.campz.de/"
-      },
-      "invalidChannels": {},
-      "identitySource": "official homepage found; exact buyer/contact path still requires verification",
-      "channelPriority": 3,
-      "discoveredAt": "2026-07-16T05:03:53.170Z",
-      "targetRegion": "europe",
-      "targetRegionScore": 45,
-      "contactChannelScore": 17,
-      "dealProbabilityScore": 218,
-      "priorityScore": 218
-    },
-    {
-      "id": "google-customer-intersport-norway-website-contact",
-      "name": "Intersport Norway",
-      "company": "Intersport Norway",
-      "customerType": "key_account",
-      "discoveryMode": "autonomous_refill",
-      "country": "Norway",
-      "countryEn": "Norway",
-      "fitScore": 84,
-      "fitTier": "A",
-      "marketScore": 4.5,
-      "marketStatus": "open",
-      "agencyState": "open",
-      "agentCompany": "",
-      "keyword": "verified outdoor, camping and travel retail social refill channel",
-      "role": "Outdoor, camping, travel accessories, ecommerce or category buyer.",
-      "background": "Intersport Norway is a qualified outdoor, camping, travel or sport retail prospect with category fit for FLEXTAIL portable outdoor electrics and Vollyc practical 3C products.",
-      "buyerPersona": "Outdoor, camping, travel accessories, ecommerce or category buyer.",
-      "targetMarkets": "",
-      "excludedMarkets": "",
-      "productCategory": "verified outdoor, camping and travel retail social refill channel",
-      "businessModel": "Retail Chain",
-      "productFit": "FLEXTAIL portable pumps, outdoor power, camping lighting and compact camping accessories",
-      "opportunity": "Intersport Norway is a qualified outdoor, camping, travel or sport retail prospect with category fit for FLEXTAIL portable outdoor electrics and Vollyc practical 3C products.",
-      "linkedin_url": "",
-      "linkedin": "",
-      "publicEmail": "",
-      "contactEmail": "",
-      "vendorPortal": "https://www.intersport.no/",
-      "contactPhone": "",
-      "contactNote": "",
-      "publicEmailStatus": "",
-      "emailVerificationStatus": "",
-      "emailEvidence": "",
-      "emailEvidenceUrl": "",
-      "website": "https://www.intersport.no/",
-      "evidenceUrl": "https://www.google.com/search?q=%22Intersport%20Norway%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22Norway%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "sourceEvidenceUrl": "verified outdoor retailer official website and public social profile refill",
-      "discoverySourceUrl": "",
-      "externalVerificationStatus": "",
-      "query": "https://www.google.com/search?q=%22Intersport%20Norway%22%20%22verified%20outdoor%2C%20camping%20and%20travel%20retail%20social%20refill%20channel%22%20%22Norway%22%20buyer%20OR%20wholesale%20OR%20contact",
-      "source": "google_customer_discovery",
-      "sourceType": "google",
-      "discoveryProvider": "google",
-      "channel": "",
-      "identityStatus": "verified",
-      "officialSocialProfileVerified": false,
-      "socialProfileEvidenceUrl": "",
-      "socialProfileVerifiedAt": "",
-      "profiledAt": "",
-      "partnershipStatus": "",
-      "doNotOutreach": false,
-      "automationStatus": "",
-      "partnerNote": "",
-      "sendStatus": "",
-      "workingTime": {
-        "dueNow": false,
-        "timeZone": "Europe/Oslo",
-        "localTime": "Thu 05:05",
-        "window": "outside_work_hours",
-        "nextBest": "Europe/Oslo morning",
-        "weight": 0
-      },
-      "platform": "website_form",
-      "channelType": "website_form",
-      "platformUrl": "https://www.intersport.no/",
-      "url": "https://www.intersport.no/",
-      "contactUrl": "https://www.intersport.no/",
-      "contactSearchUrl": "https://www.google.com/search?q=site%3Awww.intersport.no%20%22Intersport%20Norway%22%20contact%20buyer%20wholesale%20email%20vendor",
-      "emailFrom": "leo@flextailgear.com",
-      "websiteContactSubject": "FLEXTAIL retail partnership | 2026 assortment",
-      "websiteContactMessage": "Dear Intersport Norway Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
-      "websiteContactFlow": "open_official_contact_us_fill_attach_auto_submit",
-      "action": "verify_target",
-      "reason": "homepage_only_contact_path_requires_verification",
-      "alternateChannels": {
-        "linkedin": "",
-        "instagram": "",
-        "facebook": "https://www.facebook.com/intersportnorge",
-        "websiteContact": "https://www.intersport.no/"
-      },
-      "invalidChannels": {
-        "instagram": {
-          "url": "https://www.instagram.com/intersportnorge/",
-          "status": "identity_mismatch",
-          "evidence": "Instagram handle intersportnorge does not match company Intersport Norway; do not use this account for outreach."
-        }
-      },
-      "identitySource": "official homepage found; exact buyer/contact path still requires verification",
-      "channelPriority": 3,
-      "discoveredAt": "2026-07-29T09:22:31.075Z",
-      "firstPartyChannelVerification": {
-        "status": "checked",
-        "verifiedAt": "2026-08-12T13:08:17.199Z",
-        "evidenceUrl": "https://www.intersport.no/",
-        "httpStatus": 200,
-        "signals": [],
-        "error": ""
       },
       "targetRegion": "europe",
       "targetRegionScore": 45,
@@ -26618,7 +27111,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "Asia/Jakarta",
-        "localTime": "Thu 10:05",
+        "localTime": "Thu 10:09",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -26675,7 +27168,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "Pacific/Auckland",
-        "localTime": "Thu 15:05",
+        "localTime": "Thu 15:09",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
@@ -26732,7 +27225,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "Pacific/Auckland",
-        "localTime": "Thu 15:05",
+        "localTime": "Thu 15:09",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
@@ -26789,7 +27282,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "Pacific/Auckland",
-        "localTime": "Thu 15:05",
+        "localTime": "Thu 15:09",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
@@ -26846,7 +27339,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "Pacific/Auckland",
-        "localTime": "Thu 15:05",
+        "localTime": "Thu 15:09",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
@@ -26903,7 +27396,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "Pacific/Auckland",
-        "localTime": "Thu 15:05",
+        "localTime": "Thu 15:09",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
@@ -26960,7 +27453,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Wed 23:05",
+        "localTime": "Wed 23:09",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -27017,7 +27510,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/London",
-        "localTime": "Thu 04:05",
+        "localTime": "Thu 04:09",
         "window": "outside_work_hours",
         "nextBest": "Europe/London morning",
         "weight": 0
@@ -27074,7 +27567,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/London",
-        "localTime": "Thu 04:05",
+        "localTime": "Thu 04:09",
         "window": "outside_work_hours",
         "nextBest": "Europe/London morning",
         "weight": 0
@@ -27131,7 +27624,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/London",
-        "localTime": "Thu 04:05",
+        "localTime": "Thu 04:09",
         "window": "outside_work_hours",
         "nextBest": "Europe/London morning",
         "weight": 0
@@ -27188,7 +27681,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Wed 23:05",
+        "localTime": "Wed 23:09",
         "window": "outside_work_hours",
         "nextBest": "America/Toronto morning",
         "weight": 0
@@ -27245,7 +27738,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Wed 23:05",
+        "localTime": "Wed 23:09",
         "window": "outside_work_hours",
         "nextBest": "America/Toronto morning",
         "weight": 0
@@ -27302,7 +27795,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Australia/Sydney",
-        "localTime": "Thu 13:05",
+        "localTime": "Thu 13:09",
         "window": "outside_work_hours",
         "nextBest": "Australia/Sydney afternoon",
         "weight": 0
@@ -27359,7 +27852,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": false,
         "timeZone": "Asia/Kolkata",
-        "localTime": "Thu 08:35",
+        "localTime": "Thu 08:39",
         "window": "outside_work_hours",
         "nextBest": "Asia/Kolkata morning",
         "weight": 0
@@ -27428,7 +27921,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "Asia/Shanghai",
-        "localTime": "Thu 11:05",
+        "localTime": "Thu 11:09",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -27532,7 +28025,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "Asia/Shanghai",
-        "localTime": "Thu 11:05",
+        "localTime": "Thu 11:09",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -27650,7 +28143,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "Asia/Shanghai",
-        "localTime": "Thu 11:05",
+        "localTime": "Thu 11:09",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -27754,7 +28247,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "Asia/Shanghai",
-        "localTime": "Thu 11:05",
+        "localTime": "Thu 11:09",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -27859,7 +28352,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "Asia/Shanghai",
-        "localTime": "Thu 11:05",
+        "localTime": "Thu 11:09",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -27964,7 +28457,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "Asia/Shanghai",
-        "localTime": "Thu 11:05",
+        "localTime": "Thu 11:09",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -28069,7 +28562,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "Asia/Shanghai",
-        "localTime": "Thu 11:05",
+        "localTime": "Thu 11:09",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -28171,7 +28664,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "Asia/Shanghai",
-        "localTime": "Thu 11:05",
+        "localTime": "Thu 11:09",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -28275,7 +28768,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "Asia/Shanghai",
-        "localTime": "Thu 11:05",
+        "localTime": "Thu 11:09",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -28377,7 +28870,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "Asia/Shanghai",
-        "localTime": "Thu 11:05",
+        "localTime": "Thu 11:09",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -28482,7 +28975,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "Asia/Jakarta",
-        "localTime": "Thu 10:05",
+        "localTime": "Thu 10:09",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -28604,7 +29097,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "Pacific/Auckland",
-        "localTime": "Thu 15:05",
+        "localTime": "Thu 15:09",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
@@ -28711,7 +29204,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "Pacific/Auckland",
-        "localTime": "Thu 15:05",
+        "localTime": "Thu 15:09",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
@@ -28818,7 +29311,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "Asia/Shanghai",
-        "localTime": "Thu 11:05",
+        "localTime": "Thu 11:09",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -28926,7 +29419,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "Pacific/Auckland",
-        "localTime": "Thu 15:05",
+        "localTime": "Thu 15:09",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
@@ -29033,7 +29526,7 @@ window.DAILY_AUTOMATION_LATEST = {
       "workingTime": {
         "dueNow": true,
         "timeZone": "Pacific/Auckland",
-        "localTime": "Thu 15:05",
+        "localTime": "Thu 15:09",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
