@@ -1257,6 +1257,7 @@ test('website discovery probes common same-origin contact paths without product-
   assert.ok(mainSource.includes('positiveHref'));
   assert.ok(mainSource.includes('const negativeHref = /\\\\/collections'));
   assert.ok(mainSource.includes("String(item.text || '').length <= 120"));
+  assert.ok(mainSource.includes('skip to (?:main )?content'));
   assert.ok(mainSource.includes('markWebsiteContactStrategyResult(await runWebsiteContactLead(lead, options))'));
   const start = mainSource.indexOf('function websiteContactClickExpression()');
   const end = mainSource.indexOf('async function inspectWebsiteContactFlow', start);
@@ -1762,6 +1763,19 @@ test('North America refill includes current first-party Mexican and US key accou
   assert.ok(discoverySource.includes('https://www.instagram.com/rabbitmountainmex/'));
   assert.ok(discoverySource.includes('https://www.instagram.com/nomadic.supply/'));
   assert.ok(discoverySource.includes('https://www.instagram.com/puntoverticalmx/'));
+});
+
+test('North America refill includes current first-party outdoor sales agencies', () => {
+  for (const company of [
+    'Endless Adventure Sales', 'The Curtis Group Sales', 'Denne Sport Sales',
+    'Aim Outside LLC', 'Activ Agency Denver', 'Air Fresh Marketing',
+    'Boardwalk Sales Agency', 'Tandem West Sales', 'Nicolas Rochon Agency',
+    'Out There Social Outdoor Agency',
+  ]) {
+    assert.ok(discoverySource.includes(`'${company}'`));
+  }
+  assert.ok(discoverySource.includes('https://www.linkedin.com/company/aim-outside-llc'));
+  assert.ok(discoverySource.includes('https://www.instagram.com/activagency'));
 });
 
 test('daily execution owns and closes each automation-created Chrome tab', () => {
