@@ -1,16 +1,16 @@
 {
   "ok": true,
   "browserTransportRequested": "codex-extension-first",
-  "browserTransportUsed": "none",
-  "browserTransportFallbackReason": "",
+  "browserTransportUsed": "cdp",
+  "browserTransportFallbackReason": "extension_bridge_not_available_process_local_cdp",
   "extensionReceiptCount": 0,
-  "executionPhase": "no_browser_execution",
-  "chromeStage": "not_started",
-  "chromeOpened": false,
-  "chromeOpenedCount": 0,
+  "executionPhase": "browser_execution",
+  "chromeStage": "opened",
+  "chromeOpened": true,
+  "chromeOpenedCount": 1,
   "customerDevelopmentPerformed": true,
   "customerMessageSent": true,
-  "realDevelopmentCount": 2,
+  "realDevelopmentCount": 1,
   "reportingVerdict": "development_performed",
   "engine": "Browser transport queue bridge",
   "mode": "serial-single-target",
@@ -21,26 +21,26 @@
   "queueSource": "dailyQueue",
   "executed": [
     {
-      "id": "google-customer-authentik-sales-website-contact",
-      "company": "Authentik Sales",
+      "id": "google-customer-hannawear-sales-website-contact",
+      "company": "Hannawear Sales",
       "action": "email_priority",
       "platform": "email",
-      "targetUrl": "https://www.authentiksales.com/about-us-en",
+      "targetUrl": "https://hannawearsales.com/",
       "ok": true,
       "sendStatus": "sent_confirmed",
-      "evidence": "smtp_accepted;message_id:<78ead97d-4039-7e27-223c-6bb0519c64a7@flextailgear.com>;sent_folder_message_confirmed;contact_path_strategy_v2",
-      "timestamp": "2026-08-13T03:02:28.062Z",
+      "evidence": "smtp_accepted;message_id:<6ff5f78a-8d2d-5064-fe7c-b830126c5e04@flextailgear.com>;sent_folder_message_confirmed;contact_path_strategy_v2",
+      "timestamp": "2026-08-13T03:04:53.663Z",
       "chromeOpen": null,
       "result": {
         "ok": true,
         "sendStatus": "sent_confirmed",
         "reason": "sent_folder_message_confirmed",
-        "evidence": "smtp_accepted;message_id:<78ead97d-4039-7e27-223c-6bb0519c64a7@flextailgear.com>;sent_folder_message_confirmed;contact_path_strategy_v2",
-        "recipientEmail": "matt@authentiksales.com",
-        "messageId": "<78ead97d-4039-7e27-223c-6bb0519c64a7@flextailgear.com>",
-        "sentAt": "2026-08-13T03:02:26.633Z",
+        "evidence": "smtp_accepted;message_id:<6ff5f78a-8d2d-5064-fe7c-b830126c5e04@flextailgear.com>;sent_folder_message_confirmed;contact_path_strategy_v2",
+        "recipientEmail": "ahanna@hannawearsales.ca",
+        "messageId": "<6ff5f78a-8d2d-5064-fe7c-b830126c5e04@flextailgear.com>",
+        "sentAt": "2026-08-13T03:04:52.231Z",
         "sentFolder": "已发送",
-        "sentUid": 3259,
+        "sentUid": 3261,
         "contentValidation": {
           "ok": true,
           "errors": [],
@@ -48,69 +48,80 @@
         },
         "engine": "alibaba-enterprise-mail-smtp-imap",
         "mode": "alibaba_email_sent_folder_confirmed",
-        "targetUrl": "mailto:matt@authentiksales.com",
+        "targetUrl": "mailto:ahanna@hannawearsales.ca",
         "subject": "FLEXTAIL retail partnership | 2026 assortment",
-        "draft": "Dear Authentik Sales Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
-        "output": "{\"verdict\":\"sent_confirmed\",\"sendStatus\":\"sent_confirmed\",\"evidence\":\"smtp_accepted;message_id:<78ead97d-4039-7e27-223c-6bb0519c64a7@flextailgear.com>;sent_folder_message_confirmed;contact_path_strategy_v2\",\"nextAction\":\"Alibaba Mail accepted the message and the matching record exists in Sent.\",\"recipientEmail\":\"matt@authentiksales.com\",\"messageId\":\"<78ead97d-4039-7e27-223c-6bb0519c64a7@flextailgear.com>\"}"
+        "draft": "Dear Hannawear Sales Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
+        "output": "{\"verdict\":\"sent_confirmed\",\"sendStatus\":\"sent_confirmed\",\"evidence\":\"smtp_accepted;message_id:<6ff5f78a-8d2d-5064-fe7c-b830126c5e04@flextailgear.com>;sent_folder_message_confirmed;contact_path_strategy_v2\",\"nextAction\":\"Alibaba Mail accepted the message and the matching record exists in Sent.\",\"recipientEmail\":\"ahanna@hannawearsales.ca\",\"messageId\":\"<6ff5f78a-8d2d-5064-fe7c-b830126c5e04@flextailgear.com>\"}"
       }
     },
     {
-      "id": "google-customer-cdmc-sales-website-contact",
-      "company": "CDMC Sales",
-      "action": "email_priority",
-      "platform": "email",
-      "targetUrl": "https://cdmcsales.com/",
-      "ok": true,
-      "sendStatus": "sent_confirmed",
-      "evidence": "smtp_accepted;message_id:<0d0167eb-09a1-755c-be66-5efc27455388@flextailgear.com>;sent_folder_message_confirmed;contact_path_strategy_v2",
-      "timestamp": "2026-08-13T03:02:34.385Z",
-      "chromeOpen": null,
+      "id": "google-customer-salvation-sales-website-contact",
+      "company": "Salvation Sales",
+      "action": "develop",
+      "platform": "website_form",
+      "targetUrl": "https://salvationsales.com/",
+      "ok": false,
+      "sendStatus": "website_contact_unreachable_skip",
+      "evidence": "unavailable_profile_page: Page Not Found\n\nWe can’t seem to find the page you’re looking for.\n\nGo To Home Page\n\nCopyright © 2024, Salvation Sales. All Rights Reserved.\n\nPowered by\n\nThis website uses cookies.;website_contact_all_targets_failed:6;contact_path_strategy_v2",
+      "timestamp": "2026-08-13T03:05:11.693Z",
+      "chromeOpen": {
+        "ok": false,
+        "engine": "codex-chrome-cdp",
+        "port": 9224,
+        "targetUrl": "https://salvationsales.com/help/contact-us",
+        "tabId": "95BF3F21ADDA21FE5B6DAE3657B656C6",
+        "title": "Salvation Sales",
+        "status": "failed_open",
+        "error": "profile_unavailable_or_broken_link",
+        "evidence": "unavailable_profile_page: Page Not Found\n\nWe can’t seem to find the page you’re looking for.\n\nGo To Home Page\n\nCopyright © 2024, Salvation Sales. All Rights Reserved.\n\nPowered by\n\nThis website uses cookies."
+      },
       "result": {
-        "ok": true,
-        "sendStatus": "sent_confirmed",
-        "reason": "sent_folder_message_confirmed",
-        "evidence": "smtp_accepted;message_id:<0d0167eb-09a1-755c-be66-5efc27455388@flextailgear.com>;sent_folder_message_confirmed;contact_path_strategy_v2",
-        "recipientEmail": "jonicollett@cdmcsales.com",
-        "messageId": "<0d0167eb-09a1-755c-be66-5efc27455388@flextailgear.com>",
-        "sentAt": "2026-08-13T03:02:32.936Z",
-        "sentFolder": "已发送",
-        "sentUid": 3260,
-        "contentValidation": {
-          "ok": true,
-          "errors": [],
-          "words": 109
+        "ok": false,
+        "engine": "dedicated-chrome-cdp-website-contact",
+        "browserEngine": "codex-chrome-cdp",
+        "mode": "website_contact_unreachable_skip",
+        "targetUrl": "https://salvationsales.com/help/contact-us",
+        "chromeOpen": {
+          "ok": false,
+          "engine": "codex-chrome-cdp",
+          "port": 9224,
+          "targetUrl": "https://salvationsales.com/help/contact-us",
+          "tabId": "95BF3F21ADDA21FE5B6DAE3657B656C6",
+          "title": "Salvation Sales",
+          "status": "failed_open",
+          "error": "profile_unavailable_or_broken_link",
+          "evidence": "unavailable_profile_page: Page Not Found\n\nWe can’t seem to find the page you’re looking for.\n\nGo To Home Page\n\nCopyright © 2024, Salvation Sales. All Rights Reserved.\n\nPowered by\n\nThis website uses cookies."
         },
-        "engine": "alibaba-enterprise-mail-smtp-imap",
-        "mode": "alibaba_email_sent_folder_confirmed",
-        "targetUrl": "mailto:jonicollett@cdmcsales.com",
+        "sendStatus": "website_contact_unreachable_skip",
         "subject": "FLEXTAIL retail partnership | 2026 assortment",
-        "draft": "Dear CDMC Sales Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
-        "output": "{\"verdict\":\"sent_confirmed\",\"sendStatus\":\"sent_confirmed\",\"evidence\":\"smtp_accepted;message_id:<0d0167eb-09a1-755c-be66-5efc27455388@flextailgear.com>;sent_folder_message_confirmed;contact_path_strategy_v2\",\"nextAction\":\"Alibaba Mail accepted the message and the matching record exists in Sent.\",\"recipientEmail\":\"jonicollett@cdmcsales.com\",\"messageId\":\"<0d0167eb-09a1-755c-be66-5efc27455388@flextailgear.com>\"}"
+        "draft": "Dear Salvation Sales Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
+        "evidence": "unavailable_profile_page: Page Not Found\n\nWe can’t seem to find the page you’re looking for.\n\nGo To Home Page\n\nCopyright © 2024, Salvation Sales. All Rights Reserved.\n\nPowered by\n\nThis website uses cookies.;website_contact_all_targets_failed:6;contact_path_strategy_v2",
+        "output": "{\"verdict\":\"website_contact_unreachable_skip\",\"evidence\":\"unavailable_profile_page: Page Not Found\\n\\nWe can’t seem to find the page you’re looking for.\\n\\nGo To Home Page\\n\\nCopyright © 2024, Salvation Sales. All Rights Reserved.\\n\\nPowered by\\n\\nThis website uses cookies.;website_contact_all_targets_failed:6;contact_path_strategy_v2\",\"subject\":\"FLEXTAIL retail partnership | 2026 assortment\",\"draft\":\"Dear Salvation Sales Team,\\n\\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\\n\\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\\n\\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\\n\\nProduct overview: https://www.flextail.com/\\n\\nBest regards,\\nLeo Liu\\nSales & Operations Director\\nLeo@flextailgear.com\",\"sendStatus\":\"website_contact_unreachable_skip\",\"attempts\":[{\"targetUrl\":\"https://salvationsales.com/\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control\"},{\"targetUrl\":\"https://salvationsales.com/pages/contact-us\",\"sendStatus\":\"failed_open\",\"evidence\":\"unavailable_profile_page: Page Not Found\\n\\nWe can’t seem to find the page you’re looking for.\\n\\nGo To Home Page\\n\\nCopyright © 2024, Salvation Sales. All Rights Reserved.\\n\\nPowered by\\n\\nThis website uses cookies.\"},{\"targetUrl\":\"https://salvationsales.com/pages/contact\",\"sendStatus\":\"failed_open\",\"evidence\":\"unavailable_profile_page: Page Not Found\\n\\nWe can’t seem to find the page you’re looking for.\\n\\nGo To Home Page\\n\\nCopyright © 2024, Salvation Sales. All Rights Reserved.\\n\\nPowered by\\n\\nThis website uses cookies.\"},{\"targetUrl\":\"https://salvationsales.com/contact-us\",\"sendStatus\":\"failed_open\",\"evidence\":\"unavailable_profile_page: Page Not Found\\n\\nWe can’t seem to find the page you’re looking for.\\n\\nGo To Home Page\\n\\nCopyright © 2024, Salvation Sales. All Rights Reserved.\\n\\nPowered by\\n\\nThis website uses cookies.\"},{\"targetUrl\":\"https://salvationsales.com/contact\",\"sendStatus\":\"failed_open\",\"evidence\":\"unavailable_profile_page: Page Not Found\\n\\nWe can’t seem to find the page you’re looking for.\\n\\nGo To Home Page\\n\\nCopyright © 2024, Salvation Sales. All Rights Reserved.\\n\\nPowered by\\n\\nThis website uses cookies.\"},{\"targetUrl\":\"https://salvationsales.com/help/contact-us\",\"sendStatus\":\"failed_open\",\"evidence\":\"unavailable_profile_page: Page Not Found\\n\\nWe can’t seem to find the page you’re looking for.\\n\\nGo To Home Page\\n\\nCopyright © 2024, Salvation Sales. All Rights Reserved.\\n\\nPowered by\\n\\nThis website uses cookies.\"}],\"nextAction\":\"Official website contact was unreachable or not machine-verifiable. Skip this website route now, note it clearly, and continue with LinkedIn, Facebook, Instagram, or another verified official channel.\"}"
       }
     }
   ],
   "results": [
     {
-      "id": "google-customer-authentik-sales-website-contact",
-      "company": "Authentik Sales",
+      "id": "google-customer-hannawear-sales-website-contact",
+      "company": "Hannawear Sales",
       "action": "email_priority",
       "platform": "email",
-      "targetUrl": "https://www.authentiksales.com/about-us-en",
+      "targetUrl": "https://hannawearsales.com/",
       "ok": true,
       "sendStatus": "sent_confirmed",
-      "evidence": "smtp_accepted;message_id:<78ead97d-4039-7e27-223c-6bb0519c64a7@flextailgear.com>;sent_folder_message_confirmed;contact_path_strategy_v2",
-      "timestamp": "2026-08-13T03:02:28.062Z",
+      "evidence": "smtp_accepted;message_id:<6ff5f78a-8d2d-5064-fe7c-b830126c5e04@flextailgear.com>;sent_folder_message_confirmed;contact_path_strategy_v2",
+      "timestamp": "2026-08-13T03:04:53.663Z",
       "chromeOpen": null,
       "result": {
         "ok": true,
         "sendStatus": "sent_confirmed",
         "reason": "sent_folder_message_confirmed",
-        "evidence": "smtp_accepted;message_id:<78ead97d-4039-7e27-223c-6bb0519c64a7@flextailgear.com>;sent_folder_message_confirmed;contact_path_strategy_v2",
-        "recipientEmail": "matt@authentiksales.com",
-        "messageId": "<78ead97d-4039-7e27-223c-6bb0519c64a7@flextailgear.com>",
-        "sentAt": "2026-08-13T03:02:26.633Z",
+        "evidence": "smtp_accepted;message_id:<6ff5f78a-8d2d-5064-fe7c-b830126c5e04@flextailgear.com>;sent_folder_message_confirmed;contact_path_strategy_v2",
+        "recipientEmail": "ahanna@hannawearsales.ca",
+        "messageId": "<6ff5f78a-8d2d-5064-fe7c-b830126c5e04@flextailgear.com>",
+        "sentAt": "2026-08-13T03:04:52.231Z",
         "sentFolder": "已发送",
-        "sentUid": 3259,
+        "sentUid": 3261,
         "contentValidation": {
           "ok": true,
           "errors": [],
@@ -118,44 +129,55 @@
         },
         "engine": "alibaba-enterprise-mail-smtp-imap",
         "mode": "alibaba_email_sent_folder_confirmed",
-        "targetUrl": "mailto:matt@authentiksales.com",
+        "targetUrl": "mailto:ahanna@hannawearsales.ca",
         "subject": "FLEXTAIL retail partnership | 2026 assortment",
-        "draft": "Dear Authentik Sales Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
-        "output": "{\"verdict\":\"sent_confirmed\",\"sendStatus\":\"sent_confirmed\",\"evidence\":\"smtp_accepted;message_id:<78ead97d-4039-7e27-223c-6bb0519c64a7@flextailgear.com>;sent_folder_message_confirmed;contact_path_strategy_v2\",\"nextAction\":\"Alibaba Mail accepted the message and the matching record exists in Sent.\",\"recipientEmail\":\"matt@authentiksales.com\",\"messageId\":\"<78ead97d-4039-7e27-223c-6bb0519c64a7@flextailgear.com>\"}"
+        "draft": "Dear Hannawear Sales Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
+        "output": "{\"verdict\":\"sent_confirmed\",\"sendStatus\":\"sent_confirmed\",\"evidence\":\"smtp_accepted;message_id:<6ff5f78a-8d2d-5064-fe7c-b830126c5e04@flextailgear.com>;sent_folder_message_confirmed;contact_path_strategy_v2\",\"nextAction\":\"Alibaba Mail accepted the message and the matching record exists in Sent.\",\"recipientEmail\":\"ahanna@hannawearsales.ca\",\"messageId\":\"<6ff5f78a-8d2d-5064-fe7c-b830126c5e04@flextailgear.com>\"}"
       }
     },
     {
-      "id": "google-customer-cdmc-sales-website-contact",
-      "company": "CDMC Sales",
-      "action": "email_priority",
-      "platform": "email",
-      "targetUrl": "https://cdmcsales.com/",
-      "ok": true,
-      "sendStatus": "sent_confirmed",
-      "evidence": "smtp_accepted;message_id:<0d0167eb-09a1-755c-be66-5efc27455388@flextailgear.com>;sent_folder_message_confirmed;contact_path_strategy_v2",
-      "timestamp": "2026-08-13T03:02:34.385Z",
-      "chromeOpen": null,
+      "id": "google-customer-salvation-sales-website-contact",
+      "company": "Salvation Sales",
+      "action": "develop",
+      "platform": "website_form",
+      "targetUrl": "https://salvationsales.com/",
+      "ok": false,
+      "sendStatus": "website_contact_unreachable_skip",
+      "evidence": "unavailable_profile_page: Page Not Found\n\nWe can’t seem to find the page you’re looking for.\n\nGo To Home Page\n\nCopyright © 2024, Salvation Sales. All Rights Reserved.\n\nPowered by\n\nThis website uses cookies.;website_contact_all_targets_failed:6;contact_path_strategy_v2",
+      "timestamp": "2026-08-13T03:05:11.693Z",
+      "chromeOpen": {
+        "ok": false,
+        "engine": "codex-chrome-cdp",
+        "port": 9224,
+        "targetUrl": "https://salvationsales.com/help/contact-us",
+        "tabId": "95BF3F21ADDA21FE5B6DAE3657B656C6",
+        "title": "Salvation Sales",
+        "status": "failed_open",
+        "error": "profile_unavailable_or_broken_link",
+        "evidence": "unavailable_profile_page: Page Not Found\n\nWe can’t seem to find the page you’re looking for.\n\nGo To Home Page\n\nCopyright © 2024, Salvation Sales. All Rights Reserved.\n\nPowered by\n\nThis website uses cookies."
+      },
       "result": {
-        "ok": true,
-        "sendStatus": "sent_confirmed",
-        "reason": "sent_folder_message_confirmed",
-        "evidence": "smtp_accepted;message_id:<0d0167eb-09a1-755c-be66-5efc27455388@flextailgear.com>;sent_folder_message_confirmed;contact_path_strategy_v2",
-        "recipientEmail": "jonicollett@cdmcsales.com",
-        "messageId": "<0d0167eb-09a1-755c-be66-5efc27455388@flextailgear.com>",
-        "sentAt": "2026-08-13T03:02:32.936Z",
-        "sentFolder": "已发送",
-        "sentUid": 3260,
-        "contentValidation": {
-          "ok": true,
-          "errors": [],
-          "words": 109
+        "ok": false,
+        "engine": "dedicated-chrome-cdp-website-contact",
+        "browserEngine": "codex-chrome-cdp",
+        "mode": "website_contact_unreachable_skip",
+        "targetUrl": "https://salvationsales.com/help/contact-us",
+        "chromeOpen": {
+          "ok": false,
+          "engine": "codex-chrome-cdp",
+          "port": 9224,
+          "targetUrl": "https://salvationsales.com/help/contact-us",
+          "tabId": "95BF3F21ADDA21FE5B6DAE3657B656C6",
+          "title": "Salvation Sales",
+          "status": "failed_open",
+          "error": "profile_unavailable_or_broken_link",
+          "evidence": "unavailable_profile_page: Page Not Found\n\nWe can’t seem to find the page you’re looking for.\n\nGo To Home Page\n\nCopyright © 2024, Salvation Sales. All Rights Reserved.\n\nPowered by\n\nThis website uses cookies."
         },
-        "engine": "alibaba-enterprise-mail-smtp-imap",
-        "mode": "alibaba_email_sent_folder_confirmed",
-        "targetUrl": "mailto:jonicollett@cdmcsales.com",
+        "sendStatus": "website_contact_unreachable_skip",
         "subject": "FLEXTAIL retail partnership | 2026 assortment",
-        "draft": "Dear CDMC Sales Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
-        "output": "{\"verdict\":\"sent_confirmed\",\"sendStatus\":\"sent_confirmed\",\"evidence\":\"smtp_accepted;message_id:<0d0167eb-09a1-755c-be66-5efc27455388@flextailgear.com>;sent_folder_message_confirmed;contact_path_strategy_v2\",\"nextAction\":\"Alibaba Mail accepted the message and the matching record exists in Sent.\",\"recipientEmail\":\"jonicollett@cdmcsales.com\",\"messageId\":\"<0d0167eb-09a1-755c-be66-5efc27455388@flextailgear.com>\"}"
+        "draft": "Dear Salvation Sales Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
+        "evidence": "unavailable_profile_page: Page Not Found\n\nWe can’t seem to find the page you’re looking for.\n\nGo To Home Page\n\nCopyright © 2024, Salvation Sales. All Rights Reserved.\n\nPowered by\n\nThis website uses cookies.;website_contact_all_targets_failed:6;contact_path_strategy_v2",
+        "output": "{\"verdict\":\"website_contact_unreachable_skip\",\"evidence\":\"unavailable_profile_page: Page Not Found\\n\\nWe can’t seem to find the page you’re looking for.\\n\\nGo To Home Page\\n\\nCopyright © 2024, Salvation Sales. All Rights Reserved.\\n\\nPowered by\\n\\nThis website uses cookies.;website_contact_all_targets_failed:6;contact_path_strategy_v2\",\"subject\":\"FLEXTAIL retail partnership | 2026 assortment\",\"draft\":\"Dear Salvation Sales Team,\\n\\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\\n\\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\\n\\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\\n\\nProduct overview: https://www.flextail.com/\\n\\nBest regards,\\nLeo Liu\\nSales & Operations Director\\nLeo@flextailgear.com\",\"sendStatus\":\"website_contact_unreachable_skip\",\"attempts\":[{\"targetUrl\":\"https://salvationsales.com/\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control\"},{\"targetUrl\":\"https://salvationsales.com/pages/contact-us\",\"sendStatus\":\"failed_open\",\"evidence\":\"unavailable_profile_page: Page Not Found\\n\\nWe can’t seem to find the page you’re looking for.\\n\\nGo To Home Page\\n\\nCopyright © 2024, Salvation Sales. All Rights Reserved.\\n\\nPowered by\\n\\nThis website uses cookies.\"},{\"targetUrl\":\"https://salvationsales.com/pages/contact\",\"sendStatus\":\"failed_open\",\"evidence\":\"unavailable_profile_page: Page Not Found\\n\\nWe can’t seem to find the page you’re looking for.\\n\\nGo To Home Page\\n\\nCopyright © 2024, Salvation Sales. All Rights Reserved.\\n\\nPowered by\\n\\nThis website uses cookies.\"},{\"targetUrl\":\"https://salvationsales.com/contact-us\",\"sendStatus\":\"failed_open\",\"evidence\":\"unavailable_profile_page: Page Not Found\\n\\nWe can’t seem to find the page you’re looking for.\\n\\nGo To Home Page\\n\\nCopyright © 2024, Salvation Sales. All Rights Reserved.\\n\\nPowered by\\n\\nThis website uses cookies.\"},{\"targetUrl\":\"https://salvationsales.com/contact\",\"sendStatus\":\"failed_open\",\"evidence\":\"unavailable_profile_page: Page Not Found\\n\\nWe can’t seem to find the page you’re looking for.\\n\\nGo To Home Page\\n\\nCopyright © 2024, Salvation Sales. All Rights Reserved.\\n\\nPowered by\\n\\nThis website uses cookies.\"},{\"targetUrl\":\"https://salvationsales.com/help/contact-us\",\"sendStatus\":\"failed_open\",\"evidence\":\"unavailable_profile_page: Page Not Found\\n\\nWe can’t seem to find the page you’re looking for.\\n\\nGo To Home Page\\n\\nCopyright © 2024, Salvation Sales. All Rights Reserved.\\n\\nPowered by\\n\\nThis website uses cookies.\"}],\"nextAction\":\"Official website contact was unreachable or not machine-verifiable. Skip this website route now, note it clearly, and continue with LinkedIn, Facebook, Instagram, or another verified official channel.\"}"
       }
     }
   ],
@@ -1333,7 +1355,7 @@
   "summary": {
     "totalLeads": 16,
     "highIcp": 16,
-    "readyToDevelop": 15,
+    "readyToDevelop": 16,
     "dueNow": 100,
     "visibleTodayQueue": 71,
     "potentialPool": 71,
@@ -1344,8 +1366,8 @@
     "executableReserveTarget": 130,
     "executableReserveNeeded": 103,
     "executableByChannel": {
-      "email": 11,
-      "website_form": 16
+      "email": 10,
+      "website_form": 17
     },
     "verifiedSocialCompanies": 0,
     "verifiedSocialReserveTarget": 20,
@@ -1353,7 +1375,7 @@
     "enrichmentBacklogCount": 44,
     "googleDiscovered": 100,
     "facebookDiscovered": 0,
-    "websiteContactDiscovered": 19,
+    "websiteContactDiscovered": 18,
     "scheduledLater": 0,
     "cooldown": 30,
     "emailPriority": 0,
@@ -1386,7 +1408,7 @@
     {
       "reason": "sent_folder_message_confirmed",
       "status": "sent_confirmed",
-      "count": 2
+      "count": 1
     }
   ],
   "blockerCounts": {
@@ -1394,7 +1416,7 @@
     "website_contact_capability_not_verified": 44,
     "official_website_contact_channel": 36,
     "official_public_business_email_verified": 26,
-    "sent_folder_message_confirmed": 2
+    "sent_folder_message_confirmed": 1
   },
   "queueGoalStatus": {
     "target": 100,
@@ -1402,7 +1424,7 @@
     "queueCount": 100,
     "googleDiscovered": 100,
     "refillNeeded": 29,
-    "confirmedToday": 19,
+    "confirmedToday": 21,
     "reached": false,
     "action": "Add more verified high-ICP sources or unblock existing website/social leads."
   },
@@ -1428,17 +1450,17 @@
     }
   ],
   "systemRefresh": {
-    "ok": false,
-    "stdout": "",
-    "stderr": "node:fs:3104\r\n  binding.copyFile(\r\n          ^\r\n\r\nError: UNKNOWN: unknown error, copyfile 'E:\\New project\\outreach-dashboard\\system-visibility-latest.js' -> 'E:\\New project\\outreach-dashboard\\public\\system-visibility-latest.js'\r\n    at Object.copyFileSync (node:fs:3104:11)\r\n    at copyPublicArtifact (E:\\New project\\outreach-dashboard\\daily-automation-runner.js:961:6)\r\n    at Array.forEach (<anonymous>)\r\n    at writeSystemVisibilityArtifact (E:\\New project\\outreach-dashboard\\daily-automation-runner.js:1025:5)\r\n    at writeRunArtifacts (E:\\New project\\outreach-dashboard\\daily-automation-runner.js:952:3)\r\n    at main (E:\\New project\\outreach-dashboard\\daily-automation-runner.js:1644:17)\r\n    at Object.<anonymous> (E:\\New project\\outreach-dashboard\\daily-automation-runner.js:1664:3)\r\n    at Module._compile (node:internal/modules/cjs/loader:1812:14)\r\n    at Object..js (node:internal/modules/cjs/loader:1943:10)\r\n    at Module.load (node:internal/modules/cjs/loader:1533:32) {\r\n  errno: -4094,\r\n  code: 'UNKNOWN',\r\n  syscall: 'copyfile',\r\n  path: 'E:\\\\New project\\\\outreach-dashboard\\\\system-visibility-latest.js',\r\n  dest: 'E:\\\\New project\\\\outreach-dashboard\\\\public\\\\system-visibility-latest.js'\r\n}\r\n\r\nNode.js v24.14.0",
-    "error": "Command failed: node E:\\New project\\outreach-dashboard\\daily-automation-runner.js --fix\nnode:fs:3104\r\n  binding.copyFile(\r\n          ^\r\n\r\nError: UNKNOWN: unknown error, copyfile 'E:\\New project\\outreach-dashboard\\system-visibility-latest.js' -> 'E:\\New project\\outreach-dashboard\\public\\system-visibility-latest.js'\r\n    at Object.copyFileSync (node:fs:3104:11)\r\n    at copyPublicArtifact (E:\\New project\\outreach-dashboard\\daily-automation-runner.js:961:6)\r\n    at Array.forEach (<anonymous>)\r\n    at writeSystemVisibilityArtifact (E:\\New project\\outreach-dashboard\\daily-automation-runner.js:1025:5)\r\n    at writeRunArtifacts (E:\\New project\\outreach-dashboard\\daily-automation-runner.js:952:3)\r\n    at main (E:\\New project\\outreach-dashboard\\daily-automation-runner.js:1644:17)\r\n    at Object.<anonymous> (E:\\New project\\outreach-dashboard\\daily-automation-runner.js:1664:3)\r\n    at Module._compile (node:internal/modules/cjs/loader:1812:14)\r\n    at Object..js (node:internal/modules/cjs/loader:1943:10)\r\n    at Module.load (node:internal/modules/cjs/loader:1533:32) {\r\n  errno: -4094,\r\n  code: 'UNKNOWN',\r\n  syscall: 'copyfile',\r\n  path: 'E:\\\\New project\\\\outreach-dashboard\\\\system-visibility-latest.js',\r\n  dest: 'E:\\\\New project\\\\outreach-dashboard\\\\public\\\\system-visibility-latest.js'\r\n}\r\n\r\nNode.js v24.14.0\r\n",
+    "ok": true,
+    "stdout": "{\n  \"date\": \"2026-08-13\",\n  \"summary\": {\n    \"totalLeads\": 16,\n    \"highIcp\": 16,\n    \"readyToDevelop\": 16,\n    \"dueNow\": 100,\n    \"visibleTodayQueue\": 70,\n    \"potentialPool\": 70,\n    \"potentialPoolTarget\": 100,\n    \"customerTableHighIcp\": 0,\n    \"refillNeeded\": 30,\n    \"executableCompanies\": 26,\n    \"executableReserveTarget\": 130,\n    \"executableReserveNeeded\": 104,\n    \"executableByChannel\": {\n      \"email\": 9,\n      \"website_form\": 17\n    },\n    \"verifiedSocialCompanies\": 0,\n    \"verifiedSocialReserveTarget\": 20,\n    \"verifiedSocialReserveNeeded\": 20,\n    \"enrichmentBacklogCount\": 44,\n    \"googleDiscovered\": 100,\n    \"facebookDiscovered\": 0,\n    \"websiteContactDiscovered\": 17,\n    \"scheduledLater\": 0,\n    \"cooldown\": 30,\n    \"emailPriority\": 0,\n    \"openAgencyMarket\": 15,\n    \"exclusiveAgencySkipped\": 1,\n    \"needsVerification\": 0,\n    \"retainedLowIcp\": 0\n  },\n  \"bugErrors\": 12,\n  \"queueFile\": \"E:\\\\New project\\\\outreach-dashboard\\\\daily-runs\\\\2026-08-13-daily-automation.json\",\n  \"csvFile\": \"E:\\\\New project\\\\outreach-dashboard\\\\daily-runs\\\\2026-08-13-daily-queue.csv\"\n}",
+    "stderr": "",
+    "error": "",
     "visibility": {
-      "updatedAt": "2026-08-13T03:02:36.559Z",
+      "updatedAt": "2026-08-13T03:05:13.653Z",
       "source": "main-refreshDailyAutomationArtifacts",
       "runDate": "2026-08-13",
-      "artifactGeneratedAt": "2026-08-13T03:02:34.579Z",
-      "executionGeneratedAt": "2026-08-13T03:00:05.663Z",
-      "githubSyncUpdatedAt": "2026-08-13T03:00:34.861Z",
+      "artifactGeneratedAt": "2026-08-13T03:05:11.925Z",
+      "executionGeneratedAt": "2026-08-13T03:02:37.745Z",
+      "githubSyncUpdatedAt": "2026-08-13T03:03:05.456Z",
       "counts": {
         "dailyQueue": 100,
         "googleDiscovered": 100,
@@ -1467,8 +1489,8 @@
       ],
       "dailyQueueGoal": {
         "target": 100,
-        "potentialPool": 69,
-        "refillNeeded": 31,
+        "potentialPool": 70,
+        "refillNeeded": 30,
         "reached": false
       },
       "contactEnrichment": {
@@ -1502,6 +1524,6 @@
     "scanned": 0,
     "updated": 0
   },
-  "ledgerReconciliationCount": 3,
-  "completedAt": "2026-08-13T03:02:37.745Z"
+  "ledgerReconciliationCount": 2,
+  "completedAt": "2026-08-13T03:05:14.444Z"
 }

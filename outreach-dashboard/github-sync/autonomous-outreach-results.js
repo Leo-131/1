@@ -18857,5 +18857,39 @@ window.AUTONOMOUS_OUTREACH_RESULTS = [
     "messageId": "<0d0167eb-09a1-755c-be66-5efc27455388@flextailgear.com>",
     "sentFolder": "已发送",
     "sentUid": 3260
+  },
+  {
+    "task_id": "google-customer-hannawear-sales-website-contact",
+    "company": "Hannawear Sales",
+    "approval_version": 1,
+    "status": "sent_confirmed",
+    "agent": "alibaba-enterprise-mail",
+    "browserTransportUsed": "none",
+    "timestamp": "2026-08-13T03:04:53.595Z",
+    "target_url": "mailto:ahanna@hannawearsales.ca",
+    "evidence": "smtp_accepted;message_id:<6ff5f78a-8d2d-5064-fe7c-b830126c5e04@flextailgear.com>;sent_folder_message_confirmed;contact_path_strategy_v2",
+    "draft": "Dear Hannawear Sales Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
+    "subject": "FLEXTAIL retail partnership | 2026 assortment",
+    "recipientEmail": "ahanna@hannawearsales.ca",
+    "messageId": "<6ff5f78a-8d2d-5064-fe7c-b830126c5e04@flextailgear.com>",
+    "sentFolder": "已发送",
+    "sentUid": 3261
+  },
+  {
+    "task_id": "google-customer-salvation-sales-website-contact",
+    "company": "Salvation Sales",
+    "approval_version": 1,
+    "status": "website_contact_unreachable_skip",
+    "agent": "codex-chrome-cdp",
+    "browserTransportUsed": "cdp",
+    "timestamp": "2026-08-13T03:05:11.473Z",
+    "target_url": "https://salvationsales.com/help/contact-us",
+    "evidence": "unavailable_profile_page: Page Not Found\n\nWe can’t seem to find the page you’re looking for.\n\nGo To Home Page\n\nCopyright © 2024, Salvation Sales. All Rights Reserved.\n\nPowered by\n\nThis website uses cookies.;website_contact_all_targets_failed:6;contact_path_strategy_v2",
+    "draft": "Dear Salvation Sales Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
+    "subject": "FLEXTAIL retail partnership | 2026 assortment",
+    "recipientEmail": "",
+    "messageId": "",
+    "sentFolder": "",
+    "sentUid": null
   }
 ];

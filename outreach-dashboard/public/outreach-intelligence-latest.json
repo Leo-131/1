@@ -1,16 +1,18 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-13T03:01:51.479Z",
+  "generatedAt": "2026-08-13T03:04:14.659Z",
   "companies": [
     {
-      "companyId": "company_50b8d44712341d51",
-      "company": "Authentik Sales",
+      "companyId": "company_ee9d75ffb3123e58",
+      "company": "Hannawear Sales",
       "keys": [
-        "authentiksales",
-        "authentiksalescom"
+        "hannawearsales",
+        "hannawearsalescom",
+        "hannawearsalesca"
       ],
       "domains": [
-        "authentiksales.com"
+        "hannawearsales.com",
+        "hannawearsales.ca"
       ],
       "channels": [
         "email"
@@ -23,7 +25,7 @@
           "reasons": [
             "official_business_route"
           ],
-          "evidenceUrl": "https://www.authentiksales.com/about-us-en",
+          "evidenceUrl": "https://hannawearsales.com/",
           "checkedAt": ""
         },
         {
@@ -33,7 +35,7 @@
           "reasons": [
             "official_business_route"
           ],
-          "evidenceUrl": "https://www.authentiksales.com/about-us-en",
+          "evidenceUrl": "https://hannawearsales.com/",
           "checkedAt": ""
         },
         {
@@ -43,7 +45,7 @@
           "reasons": [
             "official_business_route"
           ],
-          "evidenceUrl": "https://www.authentiksales.com/about-us-en",
+          "evidenceUrl": "https://hannawearsales.com/",
           "checkedAt": ""
         },
         {
@@ -53,65 +55,8 @@
           "reasons": [
             "official_business_route"
           ],
-          "evidenceUrl": "https://www.authentiksales.com/about-us-en",
-          "checkedAt": "2026-08-13T03:03:00.000Z"
-        }
-      ],
-      "history": []
-    },
-    {
-      "companyId": "company_d534b6abda2f84de",
-      "company": "CDMC Sales",
-      "keys": [
-        "cdmcsales",
-        "cdmcsalescom"
-      ],
-      "domains": [
-        "cdmcsales.com"
-      ],
-      "channels": [
-        "email"
-      ],
-      "evidence": [
-        {
-          "channel": "email",
-          "score": 100,
-          "verified": true,
-          "reasons": [
-            "official_business_route"
-          ],
-          "evidenceUrl": "https://cdmcsales.com/",
-          "checkedAt": ""
-        },
-        {
-          "channel": "email",
-          "score": 100,
-          "verified": true,
-          "reasons": [
-            "official_business_route"
-          ],
-          "evidenceUrl": "https://cdmcsales.com/",
-          "checkedAt": ""
-        },
-        {
-          "channel": "email",
-          "score": 100,
-          "verified": true,
-          "reasons": [
-            "official_business_route"
-          ],
-          "evidenceUrl": "https://cdmcsales.com/",
-          "checkedAt": ""
-        },
-        {
-          "channel": "research",
-          "score": 100,
-          "verified": true,
-          "reasons": [
-            "official_business_route"
-          ],
-          "evidenceUrl": "https://cdmcsales.com/",
-          "checkedAt": "2026-08-13T03:03:00.000Z"
+          "evidenceUrl": "https://hannawearsales.com/",
+          "checkedAt": "2026-08-13T03:06:00.000Z"
         }
       ],
       "history": []
@@ -2008,6 +1953,63 @@
           ],
           "evidenceUrl": "https://parallel45sales.com/",
           "checkedAt": ""
+        }
+      ],
+      "history": []
+    },
+    {
+      "companyId": "company_be7dd24feb03b262",
+      "company": "Salvation Sales",
+      "keys": [
+        "salvationsales",
+        "salvationsalescom"
+      ],
+      "domains": [
+        "salvationsales.com"
+      ],
+      "channels": [
+        "website_form"
+      ],
+      "evidence": [
+        {
+          "channel": "website_form",
+          "score": 100,
+          "verified": true,
+          "reasons": [
+            "official_business_route"
+          ],
+          "evidenceUrl": "https://salvationsales.com/",
+          "checkedAt": ""
+        },
+        {
+          "channel": "website_form",
+          "score": 100,
+          "verified": true,
+          "reasons": [
+            "official_business_route"
+          ],
+          "evidenceUrl": "https://salvationsales.com/",
+          "checkedAt": ""
+        },
+        {
+          "channel": "website_form",
+          "score": 100,
+          "verified": true,
+          "reasons": [
+            "official_business_route"
+          ],
+          "evidenceUrl": "https://salvationsales.com/",
+          "checkedAt": ""
+        },
+        {
+          "channel": "research",
+          "score": 100,
+          "verified": true,
+          "reasons": [
+            "official_business_route"
+          ],
+          "evidenceUrl": "https://salvationsales.com/",
+          "checkedAt": "2026-08-13T03:06:00.000Z"
         }
       ],
       "history": []
@@ -7666,6 +7668,94 @@
           "timestamp": "2026-08-13T02:30:20.836Z",
           "channel": "email",
           "evidence": "smtp_accepted;message_id:<cefee7b4-e24d-5467-25c9-a00749d39386@flextailgear.com>;sent_folder_message_confirmed;contact_path_strategy_v2"
+        }
+      ]
+    },
+    {
+      "companyId": "company_50b8d44712341d51",
+      "company": "Authentik Sales",
+      "keys": [
+        "authentiksales",
+        "authentiksalescom"
+      ],
+      "domains": [
+        "authentiksales.com"
+      ],
+      "channels": [
+        "email"
+      ],
+      "evidence": [
+        {
+          "channel": "email",
+          "score": 100,
+          "verified": true,
+          "reasons": [
+            "official_business_route"
+          ],
+          "evidenceUrl": "https://www.authentiksales.com/about-us-en",
+          "checkedAt": ""
+        },
+        {
+          "channel": "research",
+          "score": 100,
+          "verified": true,
+          "reasons": [
+            "official_business_route"
+          ],
+          "evidenceUrl": "https://www.authentiksales.com/about-us-en",
+          "checkedAt": "2026-08-13T03:03:00.000Z"
+        }
+      ],
+      "history": [
+        {
+          "status": "sent_confirmed",
+          "timestamp": "2026-08-13T03:02:27.958Z",
+          "channel": "email",
+          "evidence": "smtp_accepted;message_id:<78ead97d-4039-7e27-223c-6bb0519c64a7@flextailgear.com>;sent_folder_message_confirmed;contact_path_strategy_v2"
+        }
+      ]
+    },
+    {
+      "companyId": "company_d534b6abda2f84de",
+      "company": "CDMC Sales",
+      "keys": [
+        "cdmcsales",
+        "cdmcsalescom"
+      ],
+      "domains": [
+        "cdmcsales.com"
+      ],
+      "channels": [
+        "email"
+      ],
+      "evidence": [
+        {
+          "channel": "email",
+          "score": 100,
+          "verified": true,
+          "reasons": [
+            "official_business_route"
+          ],
+          "evidenceUrl": "https://cdmcsales.com/",
+          "checkedAt": ""
+        },
+        {
+          "channel": "research",
+          "score": 100,
+          "verified": true,
+          "reasons": [
+            "official_business_route"
+          ],
+          "evidenceUrl": "https://cdmcsales.com/",
+          "checkedAt": "2026-08-13T03:03:00.000Z"
+        }
+      ],
+      "history": [
+        {
+          "status": "sent_confirmed",
+          "timestamp": "2026-08-13T03:02:34.307Z",
+          "channel": "email",
+          "evidence": "smtp_accepted;message_id:<0d0167eb-09a1-755c-be66-5efc27455388@flextailgear.com>;sent_folder_message_confirmed;contact_path_strategy_v2"
         }
       ]
     },
@@ -26262,6 +26352,26 @@
       "evidence": "smtp_accepted;message_id:<cefee7b4-e24d-5467-25c9-a00749d39386@flextailgear.com>;sent_folder_message_confirmed;contact_path_strategy_v2"
     },
     {
+      "companyId": "company_50b8d44712341d51",
+      "company": "Authentik Sales",
+      "permanent": true,
+      "crossChannel": true,
+      "reason": "previous_customer_development_no_repeat",
+      "sourceStatus": "sent_confirmed",
+      "sourceTimestamp": "2026-08-13T03:02:27.958Z",
+      "evidence": "smtp_accepted;message_id:<78ead97d-4039-7e27-223c-6bb0519c64a7@flextailgear.com>;sent_folder_message_confirmed;contact_path_strategy_v2"
+    },
+    {
+      "companyId": "company_d534b6abda2f84de",
+      "company": "CDMC Sales",
+      "permanent": true,
+      "crossChannel": true,
+      "reason": "previous_customer_development_no_repeat",
+      "sourceStatus": "sent_confirmed",
+      "sourceTimestamp": "2026-08-13T03:02:34.307Z",
+      "evidence": "smtp_accepted;message_id:<0d0167eb-09a1-755c-be66-5efc27455388@flextailgear.com>;sent_folder_message_confirmed;contact_path_strategy_v2"
+    },
+    {
       "companyId": "company_494aad6cd8dfdfdb",
       "company": "MEC",
       "permanent": true,
@@ -29825,22 +29935,12 @@
   "portfolio": {
     "actions": [
       {
-        "companyId": "company_50b8d44712341d51",
-        "company": "Authentik Sales",
+        "companyId": "company_ee9d75ffb3123e58",
+        "company": "Hannawear Sales",
         "action": "first_touch",
         "channel": "email",
         "evidenceScore": 100,
-        "evidenceUrl": "https://www.authentiksales.com/about-us-en",
-        "alternatives": [],
-        "reason": "highest_priority_verified_channel"
-      },
-      {
-        "companyId": "company_d534b6abda2f84de",
-        "company": "CDMC Sales",
-        "action": "first_touch",
-        "channel": "email",
-        "evidenceScore": 100,
-        "evidenceUrl": "https://cdmcsales.com/",
+        "evidenceUrl": "https://hannawearsales.com/",
         "alternatives": [],
         "reason": "highest_priority_verified_channel"
       },
@@ -29861,6 +29961,16 @@
         "channel": "website_form",
         "evidenceScore": 100,
         "evidenceUrl": "https://www.ascensionsalesgroup.com/",
+        "alternatives": [],
+        "reason": "highest_priority_verified_channel"
+      },
+      {
+        "companyId": "company_be7dd24feb03b262",
+        "company": "Salvation Sales",
+        "action": "first_touch",
+        "channel": "website_form",
+        "evidenceScore": 100,
+        "evidenceUrl": "https://salvationsales.com/",
         "alternatives": [],
         "reason": "highest_priority_verified_channel"
       },
@@ -29891,16 +30001,6 @@
         "channel": "website_form",
         "evidenceScore": 100,
         "evidenceUrl": "https://www.leftpointdistribution.com/en-eu/aboutus.php",
-        "alternatives": [],
-        "reason": "highest_priority_verified_channel"
-      },
-      {
-        "companyId": "company_152c4973e4cf4ec0",
-        "company": "Obelink",
-        "action": "first_touch",
-        "channel": "website_form",
-        "evidenceScore": 100,
-        "evidenceUrl": "https://www.obelink.nl/obelink-partnerprogramma",
         "alternatives": [],
         "reason": "highest_priority_verified_channel"
       },
@@ -29975,14 +30075,14 @@
       "instagram": 3
     },
     "used": {
-      "email": 7,
+      "email": 6,
       "website_form": 5,
       "linkedin": 0,
       "facebook": 2,
       "instagram": 0
     },
     "gaps": {
-      "email": 3,
+      "email": 4,
       "website_form": 0,
       "linkedin": 4,
       "facebook": 1,
@@ -30020,7 +30120,7 @@
       },
       {
         "channel": "email",
-        "confirmed": 279,
+        "confirmed": 281,
         "replies": 0,
         "opportunities": 0,
         "replyRate": 0,
@@ -30071,7 +30171,7 @@
       {
         "dimension": "channel",
         "variant": "email",
-        "sampleSize": 279,
+        "sampleSize": 281,
         "observedReplyRate": 0,
         "recommendation": "use_as_bounded_allocation_signal"
       },
@@ -30085,32 +30185,22 @@
     ]
   },
   "ownerSummary": {
-    "generatedAt": "2026-08-13T03:01:51.479Z",
+    "generatedAt": "2026-08-13T03:04:14.659Z",
     "phase": "autonomous_sales_operating_system_v1",
     "kpis": {
-      "companies": 486,
-      "permanentlySuppressed": 373,
-      "plannedActions": 14,
-      "verifiedEvidenceRoutes": 310
+      "companies": 488,
+      "permanentlySuppressed": 375,
+      "plannedActions": 13,
+      "verifiedEvidenceRoutes": 314
     },
     "decisions": [
       {
-        "companyId": "company_50b8d44712341d51",
-        "company": "Authentik Sales",
+        "companyId": "company_ee9d75ffb3123e58",
+        "company": "Hannawear Sales",
         "action": "first_touch",
         "channel": "email",
         "evidenceScore": 100,
-        "evidenceUrl": "https://www.authentiksales.com/about-us-en",
-        "alternatives": [],
-        "reason": "highest_priority_verified_channel"
-      },
-      {
-        "companyId": "company_d534b6abda2f84de",
-        "company": "CDMC Sales",
-        "action": "first_touch",
-        "channel": "email",
-        "evidenceScore": 100,
-        "evidenceUrl": "https://cdmcsales.com/",
+        "evidenceUrl": "https://hannawearsales.com/",
         "alternatives": [],
         "reason": "highest_priority_verified_channel"
       },
@@ -30131,6 +30221,16 @@
         "channel": "website_form",
         "evidenceScore": 100,
         "evidenceUrl": "https://www.ascensionsalesgroup.com/",
+        "alternatives": [],
+        "reason": "highest_priority_verified_channel"
+      },
+      {
+        "companyId": "company_be7dd24feb03b262",
+        "company": "Salvation Sales",
+        "action": "first_touch",
+        "channel": "website_form",
+        "evidenceScore": 100,
+        "evidenceUrl": "https://salvationsales.com/",
         "alternatives": [],
         "reason": "highest_priority_verified_channel"
       },
@@ -30165,16 +30265,6 @@
         "reason": "highest_priority_verified_channel"
       },
       {
-        "companyId": "company_152c4973e4cf4ec0",
-        "company": "Obelink",
-        "action": "first_touch",
-        "channel": "website_form",
-        "evidenceScore": 100,
-        "evidenceUrl": "https://www.obelink.nl/obelink-partnerprogramma",
-        "alternatives": [],
-        "reason": "highest_priority_verified_channel"
-      },
-      {
         "companyId": "company_099d7fbbba756e31",
         "company": "Blue Ridge Knives",
         "action": "first_touch",
@@ -30193,6 +30283,18 @@
         "evidenceUrl": "https://kencooutfitters.com/",
         "alternatives": [],
         "reason": "highest_priority_verified_channel"
+      },
+      {
+        "companyId": "company_236e5b58a80fbad1",
+        "company": "Macpac",
+        "action": "first_touch",
+        "channel": "facebook",
+        "evidenceScore": 95,
+        "evidenceUrl": "https://www.macpac.com.au/",
+        "alternatives": [
+          "instagram"
+        ],
+        "reason": "highest_priority_verified_channel"
       }
     ],
     "exceptions": [
@@ -30200,7 +30302,7 @@
         "code": "verified_channel_capacity_gap",
         "severity": "warning",
         "detail": {
-          "email": 3,
+          "email": 4,
           "website_form": 0,
           "linkedin": 4,
           "facebook": 1,
@@ -30239,7 +30341,7 @@
         },
         {
           "channel": "email",
-          "confirmed": 279,
+          "confirmed": 281,
           "replies": 0,
           "opportunities": 0,
           "replyRate": 0,
@@ -30290,7 +30392,7 @@
         {
           "dimension": "channel",
           "variant": "email",
-          "sampleSize": 279,
+          "sampleSize": 281,
           "observedReplyRate": 0,
           "recommendation": "use_as_bounded_allocation_signal"
         },
