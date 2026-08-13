@@ -1,6 +1,6 @@
 const test = require('node:test');
 const assert = require('node:assert/strict');
-const { inspectOfficialPage, safeOfficialUrl, sameSocialProfile, applyCachedVerification, campaignScopeMatches } = require('../outreach-dashboard/enrich-first-party-channels');
+const { inspectOfficialPage, safeOfficialUrl, sameSocialProfile, applyCachedVerification, cachedEvidenceMatchesRows, campaignScopeMatches } = require('../outreach-dashboard/enrich-first-party-channels');
 
 test('first-party enrichment artifacts use bounded transient retry and atomic replacement', () => {
   const source = require('node:fs').readFileSync(require('node:path').join(__dirname, '..', 'outreach-dashboard', 'enrich-first-party-channels.js'), 'utf8');
@@ -65,4 +65,10 @@ test('cached first-party evidence is replayed after the discovery artifact is re
   assert.equal(rows[0].contactCapabilityVerified, true);
   assert.equal(rows[0].publicEmail, 'buyer@acme.example');
   assert.equal(rows[1].officialSocialProfileVerified, true);
+});
+
+test('changed official contact path invalidates stale cached evidence', () => {
+  const cached = { firstPartyChannelVerification: { evidenceUrl: 'https://acme.example/' } };
+  assert.equal(cachedEvidenceMatchesRows([{ contactUrl: 'https://acme.example/' }], cached), true);
+  assert.equal(cachedEvidenceMatchesRows([{ contactUrl: 'https://acme.example/contact-us' }], cached), false);
 });

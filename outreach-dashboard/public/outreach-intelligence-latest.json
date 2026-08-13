@@ -1,7 +1,101 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-13T02:21:43.647Z",
+  "generatedAt": "2026-08-13T02:26:34.582Z",
   "companies": [
+    {
+      "companyId": "company_31425a21b5969eaa",
+      "company": "Covey Sales & Marketing",
+      "keys": [
+        "coveysalesmarketing",
+        "coveysalescom"
+      ],
+      "domains": [
+        "coveysales.com"
+      ],
+      "channels": [
+        "website_form"
+      ],
+      "evidence": [
+        {
+          "channel": "website_form",
+          "score": 100,
+          "verified": true,
+          "reasons": [
+            "official_business_route"
+          ],
+          "evidenceUrl": "https://coveysales.com/aboutus/",
+          "checkedAt": ""
+        },
+        {
+          "channel": "website_form",
+          "score": 100,
+          "verified": true,
+          "reasons": [
+            "official_business_route"
+          ],
+          "evidenceUrl": "https://coveysales.com/aboutus/",
+          "checkedAt": ""
+        },
+        {
+          "channel": "website_form",
+          "score": 100,
+          "verified": true,
+          "reasons": [
+            "official_business_route"
+          ],
+          "evidenceUrl": "https://coveysales.com/aboutus/",
+          "checkedAt": ""
+        }
+      ],
+      "history": []
+    },
+    {
+      "companyId": "company_11d3921adfe95e01",
+      "company": "Coonhound Sales & Marketing",
+      "keys": [
+        "coonhoundsalesmarketing",
+        "coonhoundsalescom"
+      ],
+      "domains": [
+        "coonhoundsales.com"
+      ],
+      "channels": [
+        "website_form"
+      ],
+      "evidence": [
+        {
+          "channel": "website_form",
+          "score": 100,
+          "verified": true,
+          "reasons": [
+            "official_business_route"
+          ],
+          "evidenceUrl": "https://coonhoundsales.com/contact/",
+          "checkedAt": ""
+        },
+        {
+          "channel": "website_form",
+          "score": 100,
+          "verified": true,
+          "reasons": [
+            "official_business_route"
+          ],
+          "evidenceUrl": "https://coonhoundsales.com/contact/",
+          "checkedAt": ""
+        },
+        {
+          "channel": "website_form",
+          "score": 100,
+          "verified": true,
+          "reasons": [
+            "official_business_route"
+          ],
+          "evidenceUrl": "https://coonhoundsales.com/contact/",
+          "checkedAt": ""
+        }
+      ],
+      "history": []
+    },
     {
       "companyId": "company_dc873bac35524d4e",
       "company": "Parallel 33 Sales Group",
@@ -533,100 +627,6 @@
           "evidence": "website_contact_entry_not_verified;contact_entry_clicked:Skip to Content;public_email_fallback_available:tputnam.pfp@gmail.com;email_sender_not_configured;website_contact_all_targets_failed:6;contact_path_strategy_v2"
         }
       ]
-    },
-    {
-      "companyId": "company_972e2942f23630b1",
-      "company": "NLA Agency",
-      "keys": [
-        "nlaagency",
-        "nlaagencycom"
-      ],
-      "domains": [
-        "nlaagency.com"
-      ],
-      "channels": [
-        "website_form"
-      ],
-      "evidence": [
-        {
-          "channel": "website_form",
-          "score": 100,
-          "verified": true,
-          "reasons": [
-            "official_business_route"
-          ],
-          "evidenceUrl": "https://nlaagency.com/",
-          "checkedAt": ""
-        },
-        {
-          "channel": "website_form",
-          "score": 100,
-          "verified": true,
-          "reasons": [
-            "official_business_route"
-          ],
-          "evidenceUrl": "https://nlaagency.com/",
-          "checkedAt": ""
-        },
-        {
-          "channel": "website_form",
-          "score": 100,
-          "verified": true,
-          "reasons": [
-            "official_business_route"
-          ],
-          "evidenceUrl": "https://nlaagency.com/",
-          "checkedAt": ""
-        }
-      ],
-      "history": []
-    },
-    {
-      "companyId": "company_54e7193138f05271",
-      "company": "Rise and Shine Sales Agency",
-      "keys": [
-        "riseandshinesalesagency",
-        "riseandshinesalesca"
-      ],
-      "domains": [
-        "riseandshinesales.ca"
-      ],
-      "channels": [
-        "website_form"
-      ],
-      "evidence": [
-        {
-          "channel": "website_form",
-          "score": 100,
-          "verified": true,
-          "reasons": [
-            "official_business_route"
-          ],
-          "evidenceUrl": "https://www.riseandshinesales.ca/",
-          "checkedAt": ""
-        },
-        {
-          "channel": "website_form",
-          "score": 100,
-          "verified": true,
-          "reasons": [
-            "official_business_route"
-          ],
-          "evidenceUrl": "https://www.riseandshinesales.ca/",
-          "checkedAt": ""
-        },
-        {
-          "channel": "website_form",
-          "score": 100,
-          "verified": true,
-          "reasons": [
-            "official_business_route"
-          ],
-          "evidenceUrl": "https://www.riseandshinesales.ca/",
-          "checkedAt": ""
-        }
-      ],
-      "history": []
     },
     {
       "companyId": "company_1f3de226ab9c35f8",
@@ -1267,53 +1267,6 @@
       ]
     },
     {
-      "companyId": "company_31425a21b5969eaa",
-      "company": "Covey Sales & Marketing",
-      "keys": [
-        "coveysalesmarketing",
-        "coveysalescom"
-      ],
-      "domains": [
-        "coveysales.com"
-      ],
-      "channels": [
-        "website_form"
-      ],
-      "evidence": [
-        {
-          "channel": "website_form",
-          "score": 80,
-          "verified": false,
-          "reasons": [
-            "first_party_evidence"
-          ],
-          "evidenceUrl": "https://coveysales.com/aboutus/",
-          "checkedAt": ""
-        },
-        {
-          "channel": "website_form",
-          "score": 80,
-          "verified": false,
-          "reasons": [
-            "first_party_evidence"
-          ],
-          "evidenceUrl": "https://coveysales.com/aboutus/",
-          "checkedAt": ""
-        },
-        {
-          "channel": "website_form",
-          "score": 80,
-          "verified": false,
-          "reasons": [
-            "first_party_evidence"
-          ],
-          "evidenceUrl": "https://coveysales.com/aboutus/",
-          "checkedAt": ""
-        }
-      ],
-      "history": []
-    },
-    {
       "companyId": "company_47c82c247a7c0bf1",
       "company": "Granite Marketing",
       "keys": [
@@ -1648,53 +1601,6 @@
           "evidence": "unavailable_profile_page: Menu\nSkip to primary navigation\nSkip to secondary navigation\nSkip to main content\nSkip to footer\n\nOutdoor Gear Reps\n\nMenu\nNot found, error 404\n\nThe page you are looking for no long;website_contact_all_targets_failed:6;contact_path_strategy_v2"
         }
       ]
-    },
-    {
-      "companyId": "company_11d3921adfe95e01",
-      "company": "Coonhound Sales & Marketing",
-      "keys": [
-        "coonhoundsalesmarketing",
-        "coonhoundsalescom"
-      ],
-      "domains": [
-        "coonhoundsales.com"
-      ],
-      "channels": [
-        "website_form"
-      ],
-      "evidence": [
-        {
-          "channel": "website_form",
-          "score": 80,
-          "verified": false,
-          "reasons": [
-            "first_party_evidence"
-          ],
-          "evidenceUrl": "https://coonhoundsales.com/contact/",
-          "checkedAt": ""
-        },
-        {
-          "channel": "website_form",
-          "score": 80,
-          "verified": false,
-          "reasons": [
-            "first_party_evidence"
-          ],
-          "evidenceUrl": "https://coonhoundsales.com/contact/",
-          "checkedAt": ""
-        },
-        {
-          "channel": "website_form",
-          "score": 80,
-          "verified": false,
-          "reasons": [
-            "first_party_evidence"
-          ],
-          "evidenceUrl": "https://coonhoundsales.com/contact/",
-          "checkedAt": ""
-        }
-      ],
-      "history": []
     },
     {
       "companyId": "company_e2001d09bdf667a4",
@@ -3388,7 +3294,14 @@
           "checkedAt": ""
         }
       ],
-      "history": []
+      "history": [
+        {
+          "status": "website_contact_unreachable_skip",
+          "timestamp": "2026-08-13T02:22:37.925Z",
+          "channel": "website_form",
+          "evidence": "website_page_unavailable_404: Not Found\n\nThe requested URL was not found on this server.\n\nAdditionally, a 404 Not Found error was encountered while trying to use an ErrorDocument to handle the request.;website_contact_all_targets_failed:6;contact_path_strategy_v2"
+        }
+      ]
     },
     {
       "companyId": "company_c104176ff78439a2",
@@ -3583,7 +3496,14 @@
           "checkedAt": ""
         }
       ],
-      "history": []
+      "history": [
+        {
+          "status": "website_contact_unreachable_skip",
+          "timestamp": "2026-08-13T02:24:05.077Z",
+          "channel": "website_form",
+          "evidence": "website_contact_entry_not_verified;contact_entry_clicked:CONTACT US;website_contact_all_targets_failed:6;contact_path_strategy_v2"
+        }
+      ]
     },
     {
       "companyId": "company_0da5c9b96c2834df",
@@ -6451,6 +6371,294 @@
       ]
     },
     {
+      "companyId": "company_6c86f2c36ec33b9b",
+      "company": "Above and Beyond",
+      "keys": [
+        "aboveandbeyond",
+        "aboveandbeyondie"
+      ],
+      "domains": [
+        "aboveandbeyond.ie"
+      ],
+      "channels": [
+        "website_form",
+        "instagram",
+        "facebook"
+      ],
+      "evidence": [
+        {
+          "channel": "website_form",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
+          "checkedAt": ""
+        },
+        {
+          "channel": "instagram",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
+          "checkedAt": ""
+        },
+        {
+          "channel": "facebook",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
+          "checkedAt": ""
+        },
+        {
+          "channel": "website_form",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
+          "checkedAt": ""
+        }
+      ],
+      "history": [
+        {
+          "status": "failed_open",
+          "timestamp": "2026-07-16T07:05:52.029Z",
+          "channel": "facebook",
+          "evidence": "identity_mismatch_expected_Above and Beyond_title_(1) Facebook"
+        },
+        {
+          "status": "failed_open",
+          "timestamp": "2026-07-17T09:07:57.553Z",
+          "channel": "instagram",
+          "evidence": "unavailable_profile_page: 很抱歉，无法访问此页面\n你点击的链接可能已损坏，或页面已被移除。返回 Instagram。\nMeta\n关于\n博客\n工作\n帮助\nAPI\n隐私设置\n条款\n地点\n热门\nInstagram Lite\nMeta AI\nThreads\n联系人上传和非用户\nMeta Verified\n中文(简体)\nAfrikaans\nالعربية\nČeština\nDansk\nDeuts"
+        },
+        {
+          "status": "website_contact_unreachable_skip",
+          "timestamp": "2026-07-20T11:53:14.856Z",
+          "channel": "facebook",
+          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:1"
+        },
+        {
+          "status": "website_contact_unreachable_skip",
+          "timestamp": "2026-07-21T04:09:31.063Z",
+          "channel": "facebook",
+          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:6;contact_path_strategy_v2"
+        },
+        {
+          "status": "failed_open",
+          "timestamp": "2026-07-27T12:18:39.285Z",
+          "channel": "facebook",
+          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;facebook_profile_no_message_button;contact_path_strategy_v2"
+        },
+        {
+          "status": "failed_open",
+          "timestamp": "2026-07-29T02:56:19.541Z",
+          "channel": "facebook",
+          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;facebook_profile_no_message_button;contact_path_strategy_v2"
+        },
+        {
+          "status": "failed_open",
+          "timestamp": "2026-07-29T10:31:06.771Z",
+          "channel": "facebook",
+          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;personal_profile_without_company_match_expected_Above and Beyond_title_Facebook;contact_path_strategy_v2"
+        },
+        {
+          "status": "failed_open",
+          "timestamp": "2026-07-29T10:35:24.569Z",
+          "channel": "website_form",
+          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;personal_profile_without_company_match_expected_Above and Beyond_title_Facebook;contact_path_strategy_v2"
+        },
+        {
+          "status": "failed_open",
+          "timestamp": "2026-08-04T12:03:03.924Z",
+          "channel": "facebook",
+          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;identity_mismatch_expected_Above and Beyond_title_Facebook;contact_path_strategy_v2"
+        },
+        {
+          "status": "failed_open",
+          "timestamp": "2026-08-04T12:37:47.796Z",
+          "channel": "website_form",
+          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;identity_mismatch_expected_Above and Beyond_title_Facebook;contact_path_strategy_v2"
+        },
+        {
+          "status": "failed_open",
+          "timestamp": "2026-08-05T01:59:35.792Z",
+          "channel": "facebook",
+          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;identity_mismatch_expected_Above and Beyond_title_www.facebook.com;contact_path_strategy_v2"
+        },
+        {
+          "status": "failed_open",
+          "timestamp": "2026-08-05T03:01:21.379Z",
+          "channel": "website_form",
+          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;identity_mismatch_expected_Above and Beyond_title_www.facebook.com;contact_path_strategy_v2"
+        }
+      ]
+    },
+    {
+      "companyId": "company_302dabc203330f43",
+      "company": "Campz",
+      "keys": [
+        "campz",
+        "campzde"
+      ],
+      "domains": [
+        "campz.de"
+      ],
+      "channels": [
+        "website_form",
+        "instagram",
+        "facebook"
+      ],
+      "evidence": [
+        {
+          "channel": "website_form",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
+          "checkedAt": ""
+        },
+        {
+          "channel": "instagram",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
+          "checkedAt": ""
+        },
+        {
+          "channel": "facebook",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
+          "checkedAt": ""
+        },
+        {
+          "channel": "website_form",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
+          "checkedAt": ""
+        }
+      ],
+      "history": [
+        {
+          "status": "failed_open",
+          "timestamp": "2026-07-17T03:05:43.972Z",
+          "channel": "facebook",
+          "evidence": "driver_error: Timeout: http://127.0.0.1:9224/json"
+        },
+        {
+          "status": "failed_open",
+          "timestamp": "2026-07-17T09:10:13.116Z",
+          "channel": "instagram",
+          "evidence": "instagram_message_button_clicked_composer_not_found"
+        },
+        {
+          "status": "approval_pending",
+          "timestamp": "2026-07-20T03:57:37.994Z",
+          "channel": "instagram",
+          "evidence": "driver_error: Command failed: C:\\Program Files\\nodejs\\node.exe E:\\New project\\outreach-dashboard\\codex-chrome-driver.js prepare-instagram-draft {\"port\":9224,\"tabId\":\"77D828F3B4F086C101460DC091BDB15E\",\"targetUrl\":\"https://www.instagram.com/campz.de/\",\"expectedCompany\":\"Campz\",\"draft\":\"Hi Campz team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a retail/category buyer, the strongest fit is assortment fit, new SKU pipeline, price-tier coverage, and proven consumer demand; your verified outdoor, camping and travel retail social refill channel focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the category buyer or vendor-review owner for a short intro video meeting?\",\"autoSend\":true,\"autoEngage\":true,\"engagementComment\":\"Great outdoor checklist. Useful reminder for hikers preparing a complete, lightweight kit.\",\"replaceExistingDraft\":true}\n"
+        },
+        {
+          "status": "approval_pending",
+          "timestamp": "2026-07-20T06:54:07.878Z",
+          "channel": "instagram",
+          "evidence": "driver_error: Command failed: C:\\Program Files\\nodejs\\node.exe E:\\New project\\outreach-dashboard\\codex-chrome-driver.js prepare-instagram-draft {\"port\":9224,\"tabId\":\"F14271F738AB6C2D1546FBC4BBED6F1A\",\"targetUrl\":\"https://www.instagram.com/campz.de/\",\"expectedCompany\":\"Campz\",\"draft\":\"Hi Campz team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a retail/category buyer, the strongest fit is assortment fit, new SKU pipeline, price-tier coverage, and proven consumer demand; your verified outdoor, camping and travel retail social refill channel focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the category buyer or vendor-review owner for a short intro video meeting?\",\"autoSend\":true,\"autoEngage\":true,\"engagementComment\":\"Great outdoor checklist. Useful reminder for hikers preparing a complete, lightweight kit.\",\"replaceExistingDraft\":true}\n"
+        },
+        {
+          "status": "approval_pending",
+          "timestamp": "2026-07-20T11:03:01.864Z",
+          "channel": "instagram",
+          "evidence": "driver_error: Command failed: C:\\Program Files\\nodejs\\node.exe E:\\New project\\outreach-dashboard\\codex-chrome-driver.js prepare-instagram-draft {\"port\":9224,\"tabId\":\"F1D67FEE8B423CB29FD3C00D02A55692\",\"targetUrl\":\"https://www.instagram.com/campz.de/\",\"expectedCompany\":\"Campz\",\"draft\":\"Hi Campz team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a retail/category buyer, the strongest fit is assortment fit, new SKU pipeline, price-tier coverage, and proven consumer demand; your verified outdoor, camping and travel retail social refill channel focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the category buyer or vendor-review owner for a short intro video meeting?\",\"autoSend\":true,\"autoEngage\":true,\"engagementComment\":\"Great outdoor checklist. Useful reminder for hikers preparing a complete, lightweight kit.\",\"replaceExistingDraft\":true}\n"
+        },
+        {
+          "status": "website_contact_unreachable_skip",
+          "timestamp": "2026-07-20T11:29:15.276Z",
+          "channel": "instagram",
+          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:1"
+        },
+        {
+          "status": "website_contact_unreachable_skip",
+          "timestamp": "2026-07-21T04:20:06.396Z",
+          "channel": "instagram",
+          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:6;contact_path_strategy_v2"
+        },
+        {
+          "status": "send_unconfirmed",
+          "timestamp": "2026-07-27T13:31:38.189Z",
+          "channel": "instagram",
+          "evidence": "instagram_draft_inserted_send_button_not_found"
+        },
+        {
+          "status": "failed_open",
+          "timestamp": "2026-07-29T05:05:41.230Z",
+          "channel": "facebook",
+          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;facebook_profile_no_message_button;contact_path_strategy_v2"
+        },
+        {
+          "status": "failed_open",
+          "timestamp": "2026-07-29T05:27:50.226Z",
+          "channel": "instagram",
+          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;facebook_profile_no_message_button;contact_path_strategy_v2"
+        },
+        {
+          "status": "failed_open",
+          "timestamp": "2026-07-29T10:31:34.205Z",
+          "channel": "facebook",
+          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;personal_profile_without_company_match_expected_Campz_title_Facebook;contact_path_strategy_v2"
+        },
+        {
+          "status": "failed_open",
+          "timestamp": "2026-07-29T10:35:24.703Z",
+          "channel": "website_form",
+          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;personal_profile_without_company_match_expected_Campz_title_Facebook;contact_path_strategy_v2"
+        },
+        {
+          "status": "failed_open",
+          "timestamp": "2026-08-04T12:03:48.646Z",
+          "channel": "facebook",
+          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;identity_mismatch_expected_Campz_title_Facebook;contact_path_strategy_v2"
+        },
+        {
+          "status": "failed_open",
+          "timestamp": "2026-08-04T12:37:47.926Z",
+          "channel": "website_form",
+          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;identity_mismatch_expected_Campz_title_Facebook;contact_path_strategy_v2"
+        },
+        {
+          "status": "failed_open",
+          "timestamp": "2026-08-05T01:59:53.529Z",
+          "channel": "facebook",
+          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;identity_mismatch_expected_Campz_title_www.facebook.com;contact_path_strategy_v2"
+        },
+        {
+          "status": "failed_open",
+          "timestamp": "2026-08-05T03:01:21.490Z",
+          "channel": "website_form",
+          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;identity_mismatch_expected_Campz_title_www.facebook.com;contact_path_strategy_v2"
+        }
+      ]
+    },
+    {
       "companyId": "company_c864d4d897a3e868",
       "company": "EET Group",
       "keys": [
@@ -6807,16 +7015,6 @@
       ],
       "evidence": [
         {
-          "channel": "website_form",
-          "score": 100,
-          "verified": true,
-          "reasons": [
-            "official_business_route"
-          ],
-          "evidenceUrl": "https://www.basspro.com/",
-          "checkedAt": ""
-        },
-        {
           "channel": "instagram",
           "score": 100,
           "verified": true,
@@ -6844,6 +7042,16 @@
             "official_business_route"
           ],
           "evidenceUrl": "https://www.cabelas.com/",
+          "checkedAt": ""
+        },
+        {
+          "channel": "website_form",
+          "score": 80,
+          "verified": false,
+          "reasons": [
+            "first_party_evidence"
+          ],
+          "evidenceUrl": "https://www.basspro.com/",
           "checkedAt": ""
         },
         {
@@ -7453,31 +7661,31 @@
       ],
       "evidence": [
         {
-          "channel": "instagram",
-          "score": 100,
-          "verified": true,
+          "channel": "website_form",
+          "score": 80,
+          "verified": false,
           "reasons": [
-            "official_business_route"
+            "first_party_evidence"
           ],
-          "evidenceUrl": "https://www.gooutdoors.co.uk/pages/contact",
-          "checkedAt": "2026-08-12T11:55:35.878Z"
+          "evidenceUrl": "https://www.gooutdoors.co.uk/",
+          "checkedAt": ""
+        },
+        {
+          "channel": "instagram",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "https://www.gooutdoors.co.uk/",
+          "checkedAt": ""
         },
         {
           "channel": "facebook",
-          "score": 100,
-          "verified": true,
+          "score": 0,
+          "verified": false,
           "reasons": [
-            "official_business_route"
-          ],
-          "evidenceUrl": "https://www.gooutdoors.co.uk/pages/contact",
-          "checkedAt": "2026-08-12T11:55:35.878Z"
-        },
-        {
-          "channel": "website_form",
-          "score": 100,
-          "verified": true,
-          "reasons": [
-            "official_business_route"
+            "unverified_external_evidence_rejected"
           ],
           "evidenceUrl": "https://www.gooutdoors.co.uk/",
           "checkedAt": ""
@@ -11512,10 +11720,10 @@
       "evidence": [
         {
           "channel": "website_form",
-          "score": 100,
-          "verified": true,
+          "score": 80,
+          "verified": false,
           "reasons": [
-            "official_business_route"
+            "first_party_evidence"
           ],
           "evidenceUrl": "https://www.transa.ch/",
           "checkedAt": ""
@@ -12594,12 +12802,10 @@
       "company": "Backcountry Experience",
       "keys": [
         "backcountryexperience",
-        "backcountryexperiencecom",
-        "bcexpcom"
+        "backcountryexperiencecom"
       ],
       "domains": [
-        "backcountryexperience.com",
-        "bcexp.com"
+        "backcountryexperience.com"
       ],
       "channels": [
         "website_form",
@@ -12608,10 +12814,10 @@
       "evidence": [
         {
           "channel": "website_form",
-          "score": 100,
-          "verified": true,
+          "score": 80,
+          "verified": false,
           "reasons": [
-            "official_business_route"
+            "first_party_evidence"
           ],
           "evidenceUrl": "https://www.backcountryexperience.com/",
           "checkedAt": ""
@@ -13236,10 +13442,10 @@
       "evidence": [
         {
           "channel": "website_form",
-          "score": 100,
-          "verified": true,
+          "score": 80,
+          "verified": false,
           "reasons": [
-            "official_business_route"
+            "first_party_evidence"
           ],
           "evidenceUrl": "https://utemountaineer.com/",
           "checkedAt": ""
@@ -15327,6 +15533,41 @@
       ]
     },
     {
+      "companyId": "company_972e2942f23630b1",
+      "company": "NLA Agency",
+      "keys": [
+        "nlaagency",
+        "nlaagencycom"
+      ],
+      "domains": [
+        "nlaagency.com"
+      ],
+      "channels": [
+        "website_form",
+        "email"
+      ],
+      "evidence": [
+        {
+          "channel": "website_form",
+          "score": 100,
+          "verified": true,
+          "reasons": [
+            "official_business_route"
+          ],
+          "evidenceUrl": "https://nlaagency.com/",
+          "checkedAt": ""
+        }
+      ],
+      "history": [
+        {
+          "status": "sent_confirmed",
+          "timestamp": "2026-08-13T02:22:12.629Z",
+          "channel": "email",
+          "evidence": "smtp_accepted;message_id:<6d558de8-6a5e-7014-0fd5-4127232134c7@flextailgear.com>;sent_folder_message_confirmed;contact_path_strategy_v2"
+        }
+      ]
+    },
+    {
       "companyId": "company_2424d102e468aee0",
       "company": "Newquay Camping & Leisure",
       "keys": [
@@ -16460,23 +16701,23 @@
       "evidence": [
         {
           "channel": "instagram",
-          "score": 95,
-          "verified": true,
+          "score": 0,
+          "verified": false,
           "reasons": [
-            "official_site_cross_verified_social"
+            "unverified_external_evidence_rejected"
           ],
-          "evidenceUrl": "https://ramseyoutdoor.com/",
-          "checkedAt": "2026-08-12T12:35:05.893Z"
+          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
+          "checkedAt": ""
         },
         {
           "channel": "facebook",
-          "score": 95,
-          "verified": true,
+          "score": 0,
+          "verified": false,
           "reasons": [
-            "official_site_cross_verified_social"
+            "unverified_external_evidence_rejected"
           ],
-          "evidenceUrl": "https://ramseyoutdoor.com/",
-          "checkedAt": "2026-08-12T12:35:05.893Z"
+          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
+          "checkedAt": ""
         },
         {
           "channel": "website_form",
@@ -16855,17 +17096,17 @@
       ],
       "evidence": [
         {
-          "channel": "facebook",
-          "score": 95,
-          "verified": true,
+          "channel": "instagram",
+          "score": 0,
+          "verified": false,
           "reasons": [
-            "official_site_cross_verified_social"
+            "unverified_external_evidence_rejected"
           ],
-          "evidenceUrl": "https://jaxgoods.com/",
-          "checkedAt": "2026-08-12T12:35:07.993Z"
+          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
+          "checkedAt": ""
         },
         {
-          "channel": "instagram",
+          "channel": "facebook",
           "score": 0,
           "verified": false,
           "reasons": [
@@ -17126,23 +17367,23 @@
       "evidence": [
         {
           "channel": "instagram",
-          "score": 100,
-          "verified": true,
+          "score": 0,
+          "verified": false,
           "reasons": [
-            "official_business_route"
+            "unverified_external_evidence_rejected"
           ],
-          "evidenceUrl": "https://paragonsports.com/",
-          "checkedAt": "2026-08-12T13:06:43.697Z"
+          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
+          "checkedAt": ""
         },
         {
           "channel": "facebook",
-          "score": 100,
-          "verified": true,
+          "score": 0,
+          "verified": false,
           "reasons": [
-            "official_business_route"
+            "unverified_external_evidence_rejected"
           ],
-          "evidenceUrl": "https://paragonsports.com/",
-          "checkedAt": "2026-08-12T13:06:43.697Z"
+          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
+          "checkedAt": ""
         },
         {
           "channel": "website_form",
@@ -17882,128 +18123,6 @@
           "timestamp": "2026-07-27T16:16:00.000+08:00",
           "channel": "facebook",
           "evidence": "official_facebook_identity_verified;message_control_unique;send_enter_pressed;facebook_alert_message_sent;outgoing_bubble_visible;composer_cleared"
-        }
-      ]
-    },
-    {
-      "companyId": "company_6c86f2c36ec33b9b",
-      "company": "Above and Beyond",
-      "keys": [
-        "aboveandbeyond",
-        "aboveandbeyondie"
-      ],
-      "domains": [
-        "aboveandbeyond.ie"
-      ],
-      "channels": [
-        "instagram",
-        "facebook",
-        "website_form"
-      ],
-      "evidence": [
-        {
-          "channel": "instagram",
-          "score": 0,
-          "verified": false,
-          "reasons": [
-            "unverified_external_evidence_rejected"
-          ],
-          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
-          "checkedAt": ""
-        },
-        {
-          "channel": "facebook",
-          "score": 0,
-          "verified": false,
-          "reasons": [
-            "unverified_external_evidence_rejected"
-          ],
-          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
-          "checkedAt": ""
-        },
-        {
-          "channel": "website_form",
-          "score": 0,
-          "verified": false,
-          "reasons": [
-            "unverified_external_evidence_rejected"
-          ],
-          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
-          "checkedAt": ""
-        }
-      ],
-      "history": [
-        {
-          "status": "failed_open",
-          "timestamp": "2026-07-16T07:05:52.029Z",
-          "channel": "facebook",
-          "evidence": "identity_mismatch_expected_Above and Beyond_title_(1) Facebook"
-        },
-        {
-          "status": "failed_open",
-          "timestamp": "2026-07-17T09:07:57.553Z",
-          "channel": "instagram",
-          "evidence": "unavailable_profile_page: 很抱歉，无法访问此页面\n你点击的链接可能已损坏，或页面已被移除。返回 Instagram。\nMeta\n关于\n博客\n工作\n帮助\nAPI\n隐私设置\n条款\n地点\n热门\nInstagram Lite\nMeta AI\nThreads\n联系人上传和非用户\nMeta Verified\n中文(简体)\nAfrikaans\nالعربية\nČeština\nDansk\nDeuts"
-        },
-        {
-          "status": "website_contact_unreachable_skip",
-          "timestamp": "2026-07-20T11:53:14.856Z",
-          "channel": "facebook",
-          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:1"
-        },
-        {
-          "status": "website_contact_unreachable_skip",
-          "timestamp": "2026-07-21T04:09:31.063Z",
-          "channel": "facebook",
-          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:6;contact_path_strategy_v2"
-        },
-        {
-          "status": "failed_open",
-          "timestamp": "2026-07-27T12:18:39.285Z",
-          "channel": "facebook",
-          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;facebook_profile_no_message_button;contact_path_strategy_v2"
-        },
-        {
-          "status": "failed_open",
-          "timestamp": "2026-07-29T02:56:19.541Z",
-          "channel": "facebook",
-          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;facebook_profile_no_message_button;contact_path_strategy_v2"
-        },
-        {
-          "status": "failed_open",
-          "timestamp": "2026-07-29T10:31:06.771Z",
-          "channel": "facebook",
-          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;personal_profile_without_company_match_expected_Above and Beyond_title_Facebook;contact_path_strategy_v2"
-        },
-        {
-          "status": "failed_open",
-          "timestamp": "2026-07-29T10:35:24.569Z",
-          "channel": "website_form",
-          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;personal_profile_without_company_match_expected_Above and Beyond_title_Facebook;contact_path_strategy_v2"
-        },
-        {
-          "status": "failed_open",
-          "timestamp": "2026-08-04T12:03:03.924Z",
-          "channel": "facebook",
-          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;identity_mismatch_expected_Above and Beyond_title_Facebook;contact_path_strategy_v2"
-        },
-        {
-          "status": "failed_open",
-          "timestamp": "2026-08-04T12:37:47.796Z",
-          "channel": "website_form",
-          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;identity_mismatch_expected_Above and Beyond_title_Facebook;contact_path_strategy_v2"
-        },
-        {
-          "status": "failed_open",
-          "timestamp": "2026-08-05T01:59:35.792Z",
-          "channel": "facebook",
-          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;identity_mismatch_expected_Above and Beyond_title_www.facebook.com;contact_path_strategy_v2"
-        },
-        {
-          "status": "failed_open",
-          "timestamp": "2026-08-05T03:01:21.379Z",
-          "channel": "website_form",
-          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;identity_mismatch_expected_Above and Beyond_title_www.facebook.com;contact_path_strategy_v2"
         }
       ]
     },
@@ -18771,152 +18890,6 @@
       ]
     },
     {
-      "companyId": "company_302dabc203330f43",
-      "company": "Campz",
-      "keys": [
-        "campz",
-        "campzde"
-      ],
-      "domains": [
-        "campz.de"
-      ],
-      "channels": [
-        "instagram",
-        "facebook",
-        "website_form"
-      ],
-      "evidence": [
-        {
-          "channel": "instagram",
-          "score": 0,
-          "verified": false,
-          "reasons": [
-            "unverified_external_evidence_rejected"
-          ],
-          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
-          "checkedAt": ""
-        },
-        {
-          "channel": "facebook",
-          "score": 0,
-          "verified": false,
-          "reasons": [
-            "unverified_external_evidence_rejected"
-          ],
-          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
-          "checkedAt": ""
-        },
-        {
-          "channel": "website_form",
-          "score": 0,
-          "verified": false,
-          "reasons": [
-            "unverified_external_evidence_rejected"
-          ],
-          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
-          "checkedAt": ""
-        }
-      ],
-      "history": [
-        {
-          "status": "failed_open",
-          "timestamp": "2026-07-17T03:05:43.972Z",
-          "channel": "facebook",
-          "evidence": "driver_error: Timeout: http://127.0.0.1:9224/json"
-        },
-        {
-          "status": "failed_open",
-          "timestamp": "2026-07-17T09:10:13.116Z",
-          "channel": "instagram",
-          "evidence": "instagram_message_button_clicked_composer_not_found"
-        },
-        {
-          "status": "approval_pending",
-          "timestamp": "2026-07-20T03:57:37.994Z",
-          "channel": "instagram",
-          "evidence": "driver_error: Command failed: C:\\Program Files\\nodejs\\node.exe E:\\New project\\outreach-dashboard\\codex-chrome-driver.js prepare-instagram-draft {\"port\":9224,\"tabId\":\"77D828F3B4F086C101460DC091BDB15E\",\"targetUrl\":\"https://www.instagram.com/campz.de/\",\"expectedCompany\":\"Campz\",\"draft\":\"Hi Campz team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a retail/category buyer, the strongest fit is assortment fit, new SKU pipeline, price-tier coverage, and proven consumer demand; your verified outdoor, camping and travel retail social refill channel focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the category buyer or vendor-review owner for a short intro video meeting?\",\"autoSend\":true,\"autoEngage\":true,\"engagementComment\":\"Great outdoor checklist. Useful reminder for hikers preparing a complete, lightweight kit.\",\"replaceExistingDraft\":true}\n"
-        },
-        {
-          "status": "approval_pending",
-          "timestamp": "2026-07-20T06:54:07.878Z",
-          "channel": "instagram",
-          "evidence": "driver_error: Command failed: C:\\Program Files\\nodejs\\node.exe E:\\New project\\outreach-dashboard\\codex-chrome-driver.js prepare-instagram-draft {\"port\":9224,\"tabId\":\"F14271F738AB6C2D1546FBC4BBED6F1A\",\"targetUrl\":\"https://www.instagram.com/campz.de/\",\"expectedCompany\":\"Campz\",\"draft\":\"Hi Campz team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a retail/category buyer, the strongest fit is assortment fit, new SKU pipeline, price-tier coverage, and proven consumer demand; your verified outdoor, camping and travel retail social refill channel focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the category buyer or vendor-review owner for a short intro video meeting?\",\"autoSend\":true,\"autoEngage\":true,\"engagementComment\":\"Great outdoor checklist. Useful reminder for hikers preparing a complete, lightweight kit.\",\"replaceExistingDraft\":true}\n"
-        },
-        {
-          "status": "approval_pending",
-          "timestamp": "2026-07-20T11:03:01.864Z",
-          "channel": "instagram",
-          "evidence": "driver_error: Command failed: C:\\Program Files\\nodejs\\node.exe E:\\New project\\outreach-dashboard\\codex-chrome-driver.js prepare-instagram-draft {\"port\":9224,\"tabId\":\"F1D67FEE8B423CB29FD3C00D02A55692\",\"targetUrl\":\"https://www.instagram.com/campz.de/\",\"expectedCompany\":\"Campz\",\"draft\":\"Hi Campz team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a retail/category buyer, the strongest fit is assortment fit, new SKU pipeline, price-tier coverage, and proven consumer demand; your verified outdoor, camping and travel retail social refill channel focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the category buyer or vendor-review owner for a short intro video meeting?\",\"autoSend\":true,\"autoEngage\":true,\"engagementComment\":\"Great outdoor checklist. Useful reminder for hikers preparing a complete, lightweight kit.\",\"replaceExistingDraft\":true}\n"
-        },
-        {
-          "status": "website_contact_unreachable_skip",
-          "timestamp": "2026-07-20T11:29:15.276Z",
-          "channel": "instagram",
-          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:1"
-        },
-        {
-          "status": "website_contact_unreachable_skip",
-          "timestamp": "2026-07-21T04:20:06.396Z",
-          "channel": "instagram",
-          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:6;contact_path_strategy_v2"
-        },
-        {
-          "status": "send_unconfirmed",
-          "timestamp": "2026-07-27T13:31:38.189Z",
-          "channel": "instagram",
-          "evidence": "instagram_draft_inserted_send_button_not_found"
-        },
-        {
-          "status": "failed_open",
-          "timestamp": "2026-07-29T05:05:41.230Z",
-          "channel": "facebook",
-          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;facebook_profile_no_message_button;contact_path_strategy_v2"
-        },
-        {
-          "status": "failed_open",
-          "timestamp": "2026-07-29T05:27:50.226Z",
-          "channel": "instagram",
-          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;facebook_profile_no_message_button;contact_path_strategy_v2"
-        },
-        {
-          "status": "failed_open",
-          "timestamp": "2026-07-29T10:31:34.205Z",
-          "channel": "facebook",
-          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;personal_profile_without_company_match_expected_Campz_title_Facebook;contact_path_strategy_v2"
-        },
-        {
-          "status": "failed_open",
-          "timestamp": "2026-07-29T10:35:24.703Z",
-          "channel": "website_form",
-          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;personal_profile_without_company_match_expected_Campz_title_Facebook;contact_path_strategy_v2"
-        },
-        {
-          "status": "failed_open",
-          "timestamp": "2026-08-04T12:03:48.646Z",
-          "channel": "facebook",
-          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;identity_mismatch_expected_Campz_title_Facebook;contact_path_strategy_v2"
-        },
-        {
-          "status": "failed_open",
-          "timestamp": "2026-08-04T12:37:47.926Z",
-          "channel": "website_form",
-          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;identity_mismatch_expected_Campz_title_Facebook;contact_path_strategy_v2"
-        },
-        {
-          "status": "failed_open",
-          "timestamp": "2026-08-05T01:59:53.529Z",
-          "channel": "facebook",
-          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;identity_mismatch_expected_Campz_title_www.facebook.com;contact_path_strategy_v2"
-        },
-        {
-          "status": "failed_open",
-          "timestamp": "2026-08-05T03:01:21.490Z",
-          "channel": "website_form",
-          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;identity_mismatch_expected_Campz_title_www.facebook.com;contact_path_strategy_v2"
-        }
-      ]
-    },
-    {
       "companyId": "company_d9e52e1a4a1968f2",
       "company": "Sport Conrad",
       "keys": [
@@ -19360,23 +19333,23 @@
       "evidence": [
         {
           "channel": "instagram",
-          "score": 95,
-          "verified": true,
+          "score": 0,
+          "verified": false,
           "reasons": [
-            "official_site_cross_verified_social"
+            "unverified_external_evidence_rejected"
           ],
-          "evidenceUrl": "https://www.blue-tomato.com/de-DE/",
-          "checkedAt": "2026-08-12T13:08:11.090Z"
+          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
+          "checkedAt": ""
         },
         {
           "channel": "facebook",
-          "score": 95,
-          "verified": true,
+          "score": 0,
+          "verified": false,
           "reasons": [
-            "official_site_cross_verified_social"
+            "unverified_external_evidence_rejected"
           ],
-          "evidenceUrl": "https://www.blue-tomato.com/de-DE/",
-          "checkedAt": "2026-08-12T13:08:11.090Z"
+          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
+          "checkedAt": ""
         },
         {
           "channel": "website_form",
@@ -19531,17 +19504,17 @@
       ],
       "evidence": [
         {
-          "channel": "facebook",
-          "score": 95,
-          "verified": true,
+          "channel": "instagram",
+          "score": 0,
+          "verified": false,
           "reasons": [
-            "official_site_cross_verified_social"
+            "unverified_external_evidence_rejected"
           ],
-          "evidenceUrl": "https://www.tradeinn.com/trekkinn/en",
-          "checkedAt": "2026-08-12T13:08:12.870Z"
+          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
+          "checkedAt": ""
         },
         {
-          "channel": "instagram",
+          "channel": "facebook",
           "score": 0,
           "verified": false,
           "reasons": [
@@ -21045,6 +21018,41 @@
           "timestamp": "2026-08-13T02:15:09.327Z",
           "channel": "email",
           "evidence": "smtp_accepted;message_id:<e200cca6-9de9-96dd-cdc0-098e2f9f99e7@flextailgear.com>;sent_folder_message_confirmed;contact_path_strategy_v2"
+        }
+      ]
+    },
+    {
+      "companyId": "company_54e7193138f05271",
+      "company": "Rise and Shine Sales Agency",
+      "keys": [
+        "riseandshinesalesagency",
+        "riseandshinesalesca"
+      ],
+      "domains": [
+        "riseandshinesales.ca"
+      ],
+      "channels": [
+        "website_form",
+        "email"
+      ],
+      "evidence": [
+        {
+          "channel": "website_form",
+          "score": 100,
+          "verified": true,
+          "reasons": [
+            "official_business_route"
+          ],
+          "evidenceUrl": "https://www.riseandshinesales.ca/",
+          "checkedAt": ""
+        }
+      ],
+      "history": [
+        {
+          "status": "sent_confirmed",
+          "timestamp": "2026-08-13T02:22:18.381Z",
+          "channel": "email",
+          "evidence": "smtp_accepted;message_id:<08a5a70b-7211-e871-6eac-551215ddae57@flextailgear.com>;sent_folder_message_confirmed;contact_path_strategy_v2"
         }
       ]
     },
@@ -27367,6 +27375,16 @@
       "evidence": "smtp_accepted;message_id:<5d8b037d-3778-950a-f2cc-31462c788a08@flextailgear.com>;sent_folder_message_confirmed;contact_path_strategy_v2"
     },
     {
+      "companyId": "company_972e2942f23630b1",
+      "company": "NLA Agency",
+      "permanent": true,
+      "crossChannel": true,
+      "reason": "previous_customer_development_no_repeat",
+      "sourceStatus": "sent_confirmed",
+      "sourceTimestamp": "2026-08-13T02:22:12.629Z",
+      "evidence": "smtp_accepted;message_id:<6d558de8-6a5e-7014-0fd5-4127232134c7@flextailgear.com>;sent_folder_message_confirmed;contact_path_strategy_v2"
+    },
+    {
       "companyId": "company_2424d102e468aee0",
       "company": "Newquay Camping & Leisure",
       "permanent": true,
@@ -28055,6 +28073,16 @@
       "sourceStatus": "sent_confirmed",
       "sourceTimestamp": "2026-08-13T02:15:09.327Z",
       "evidence": "smtp_accepted;message_id:<e200cca6-9de9-96dd-cdc0-098e2f9f99e7@flextailgear.com>;sent_folder_message_confirmed;contact_path_strategy_v2"
+    },
+    {
+      "companyId": "company_54e7193138f05271",
+      "company": "Rise and Shine Sales Agency",
+      "permanent": true,
+      "crossChannel": true,
+      "reason": "previous_customer_development_no_repeat",
+      "sourceStatus": "sent_confirmed",
+      "sourceTimestamp": "2026-08-13T02:22:18.381Z",
+      "evidence": "smtp_accepted;message_id:<08a5a70b-7211-e871-6eac-551215ddae57@flextailgear.com>;sent_folder_message_confirmed;contact_path_strategy_v2"
     },
     {
       "companyId": "company_9b7e36cd6b3b3ac6",
@@ -29420,22 +29448,22 @@
   "portfolio": {
     "actions": [
       {
-        "companyId": "company_972e2942f23630b1",
-        "company": "NLA Agency",
+        "companyId": "company_31425a21b5969eaa",
+        "company": "Covey Sales & Marketing",
         "action": "first_touch",
         "channel": "website_form",
         "evidenceScore": 100,
-        "evidenceUrl": "https://nlaagency.com/",
+        "evidenceUrl": "https://coveysales.com/aboutus/",
         "alternatives": [],
         "reason": "highest_priority_verified_channel"
       },
       {
-        "companyId": "company_54e7193138f05271",
-        "company": "Rise and Shine Sales Agency",
+        "companyId": "company_11d3921adfe95e01",
+        "company": "Coonhound Sales & Marketing",
         "action": "first_touch",
         "channel": "website_form",
         "evidenceScore": 100,
-        "evidenceUrl": "https://www.riseandshinesales.ca/",
+        "evidenceUrl": "https://coonhoundsales.com/contact/",
         "alternatives": [],
         "reason": "highest_priority_verified_channel"
       },
@@ -29545,7 +29573,7 @@
       },
       {
         "channel": "email",
-        "confirmed": 266,
+        "confirmed": 268,
         "replies": 0,
         "opportunities": 0,
         "replyRate": 0,
@@ -29596,7 +29624,7 @@
       {
         "dimension": "channel",
         "variant": "email",
-        "sampleSize": 266,
+        "sampleSize": 268,
         "observedReplyRate": 0,
         "recommendation": "use_as_bounded_allocation_signal"
       },
@@ -29610,32 +29638,32 @@
     ]
   },
   "ownerSummary": {
-    "generatedAt": "2026-08-13T02:21:43.647Z",
+    "generatedAt": "2026-08-13T02:26:34.582Z",
     "phase": "autonomous_sales_operating_system_v1",
     "kpis": {
       "companies": 486,
-      "permanentlySuppressed": 364,
+      "permanentlySuppressed": 366,
       "plannedActions": 7,
-      "verifiedEvidenceRoutes": 304
+      "verifiedEvidenceRoutes": 291
     },
     "decisions": [
       {
-        "companyId": "company_972e2942f23630b1",
-        "company": "NLA Agency",
+        "companyId": "company_31425a21b5969eaa",
+        "company": "Covey Sales & Marketing",
         "action": "first_touch",
         "channel": "website_form",
         "evidenceScore": 100,
-        "evidenceUrl": "https://nlaagency.com/",
+        "evidenceUrl": "https://coveysales.com/aboutus/",
         "alternatives": [],
         "reason": "highest_priority_verified_channel"
       },
       {
-        "companyId": "company_54e7193138f05271",
-        "company": "Rise and Shine Sales Agency",
+        "companyId": "company_11d3921adfe95e01",
+        "company": "Coonhound Sales & Marketing",
         "action": "first_touch",
         "channel": "website_form",
         "evidenceScore": 100,
-        "evidenceUrl": "https://www.riseandshinesales.ca/",
+        "evidenceUrl": "https://coonhoundsales.com/contact/",
         "alternatives": [],
         "reason": "highest_priority_verified_channel"
       },
@@ -29736,7 +29764,7 @@
         },
         {
           "channel": "email",
-          "confirmed": 266,
+          "confirmed": 268,
           "replies": 0,
           "opportunities": 0,
           "replyRate": 0,
@@ -29787,7 +29815,7 @@
         {
           "dimension": "channel",
           "variant": "email",
-          "sampleSize": 266,
+          "sampleSize": 268,
           "observedReplyRate": 0,
           "recommendation": "use_as_bounded_allocation_signal"
         },

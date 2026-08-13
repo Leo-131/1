@@ -104,6 +104,24 @@ function sameSocialProfile(left, right) {
   return clean(left) && clean(left) === clean(right);
 }
 
+function normalizedEvidenceUrl(value) {
+  try {
+    const parsed = new URL(String(value || ''));
+    return `${parsed.origin.toLowerCase()}${parsed.pathname.replace(/\/$/, '') || '/'}`;
+  } catch {
+    return '';
+  }
+}
+
+function cachedEvidenceMatchesRows(rows = [], cached = {}) {
+  const cachedUrl = normalizedEvidenceUrl(cached.firstPartyChannelVerification && cached.firstPartyChannelVerification.evidenceUrl);
+  if (!cachedUrl) return false;
+  return rows.some(row => [row.contactUrl, row.vendorPortal, row.website]
+    .map(safeOfficialUrl)
+    .map(normalizedEvidenceUrl)
+    .includes(cachedUrl));
+}
+
 function cachedVerificationFromRows(rows = []) {
   const verified = rows.find(row => row.firstPartyChannelVerification && row.firstPartyChannelVerification.status === 'checked') || rows[0] || {};
   return {
@@ -203,13 +221,18 @@ async function main() {
       verifications[key] = cachedVerificationFromRows(rows);
     }
   }
-  for (const [key, rows] of groups) applyCachedVerification(rows, verifications[key]);
+  for (const [key, rows] of groups) {
+    if (cachedEvidenceMatchesRows(rows, verifications[key])) applyCachedVerification(rows, verifications[key]);
+  }
   const allGroups = [...groups.values()];
   const scopedGroups = allGroups.filter(rows => rows.some(row => campaignScopeMatches(row, config)));
   const activeGroups = config.campaignScope && config.campaignScope.enabled === true ? scopedGroups : allGroups;
   const cursorField = activeGroups === scopedGroups ? 'campaignCursor' : 'cursor';
   const start = activeGroups.length ? Math.max(0, Number(state[cursorField] || 0)) % activeGroups.length : 0;
-  const pending = [...activeGroups.slice(start), ...activeGroups.slice(0, start)].slice(0, limit);
+  const rotated = [...activeGroups.slice(start), ...activeGroups.slice(0, start)];
+  const staleOrChanged = activeGroups.filter(rows => !cachedEvidenceMatchesRows(rows, verifications[normalizedCompany(rows[0] && rows[0].company)]));
+  const staleKeys = new Set(staleOrChanged.map(rows => normalizedCompany(rows[0] && rows[0].company)));
+  const pending = [...staleOrChanged, ...rotated.filter(rows => !staleKeys.has(normalizedCompany(rows[0] && rows[0].company)))].slice(0, limit);
   const results = [];
   for (let index = 0; index < pending.length; index += 4) {
     results.push(...await Promise.all(pending.slice(index, index + 4).map(enrichCompany)));
@@ -226,4 +249,4 @@ async function main() {
 
 if (require.main === module) main().catch(error => { console.error(error); process.exitCode = 1; });
 
-module.exports = { inspectOfficialPage, safeOfficialUrl, sameSocialProfile, applyCachedVerification, cachedVerificationFromRows, campaignScopeMatches, retryTransientFileOperation, atomicWriteFile };
+module.exports = { inspectOfficialPage, safeOfficialUrl, sameSocialProfile, applyCachedVerification, cachedVerificationFromRows, cachedEvidenceMatchesRows, campaignScopeMatches, retryTransientFileOperation, atomicWriteFile };

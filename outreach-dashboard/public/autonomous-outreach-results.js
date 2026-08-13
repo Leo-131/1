@@ -18500,5 +18500,39 @@ window.AUTONOMOUS_OUTREACH_RESULTS = [
     "messageId": "",
     "sentFolder": "",
     "sentUid": null
+  },
+  {
+    "task_id": "google-customer-covey-sales-marketing-website-contact",
+    "company": "Covey Sales & Marketing",
+    "approval_version": 1,
+    "status": "sent_confirmed",
+    "agent": "alibaba-enterprise-mail",
+    "browserTransportUsed": "none",
+    "timestamp": "2026-08-13T02:27:21.329Z",
+    "target_url": "mailto:kenjohnson@coveysales.com",
+    "evidence": "smtp_accepted;message_id:<4538f5e5-e4e6-cedd-f851-7f2d7db72d37@flextailgear.com>;sent_folder_message_confirmed;contact_path_strategy_v2",
+    "draft": "Dear Covey Sales & Marketing Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
+    "subject": "FLEXTAIL retail partnership | 2026 assortment",
+    "recipientEmail": "kenjohnson@coveysales.com",
+    "messageId": "<4538f5e5-e4e6-cedd-f851-7f2d7db72d37@flextailgear.com>",
+    "sentFolder": "已发送",
+    "sentUid": 3248
+  },
+  {
+    "task_id": "google-customer-coonhound-sales-marketing-website-contact",
+    "company": "Coonhound Sales & Marketing",
+    "approval_version": 1,
+    "status": "sent_confirmed",
+    "agent": "alibaba-enterprise-mail",
+    "browserTransportUsed": "none",
+    "timestamp": "2026-08-13T02:27:26.980Z",
+    "target_url": "mailto:jason@coonhoundsales.com",
+    "evidence": "smtp_accepted;message_id:<bd5aedfd-6e7d-0270-859c-897f266358de@flextailgear.com>;sent_folder_message_confirmed;contact_path_strategy_v2",
+    "draft": "Dear Coonhound Sales & Marketing Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
+    "subject": "FLEXTAIL retail partnership | 2026 assortment",
+    "recipientEmail": "jason@coonhoundsales.com",
+    "messageId": "<bd5aedfd-6e7d-0270-859c-897f266358de@flextailgear.com>",
+    "sentFolder": "已发送",
+    "sentUid": 3249
   }
 ];
