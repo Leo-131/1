@@ -1598,15 +1598,17 @@ function channelLeads(item) {
   }
   const enrichment = VERIFIED_ENRICHMENT[item.company] || {};
   const linkedinUrl = enrichment.linkedinUrl || item.linkedinUrl || '';
+  const enrichedOfficialEmail = enrichment.publicEmail || item.contactEmail || item.publicEmail || '';
+  const enrichedEmailVerificationStatus = enrichment.emailVerificationStatus || item.emailVerificationStatus || '';
   const socialSiblings = {
     linkedin: linkedinUrl,
     instagram: invalidChannels.instagram ? '' : (item.instagramUrl || ''),
     facebook: invalidChannels.facebook ? '' : (item.facebookUrl || ''),
     websiteContact: item.contactUrl || item.url,
   };
-  const verifiedOfficialEmail = String(item && (item.contactEmail || item.publicEmail) || '').includes('@')
-    && (item.emailVerificationStatus === 'official_public_business_email'
-      || item.emailVerificationStatus === 'official_brand_rep_directory_email'
+  const verifiedOfficialEmail = String(enrichedOfficialEmail).includes('@')
+    && (enrichedEmailVerificationStatus === 'official_public_business_email'
+      || enrichedEmailVerificationStatus === 'official_brand_rep_directory_email'
       || item.externalVerificationStatus === 'official_supplier_email_verified');
   const verifiedContactPath = hasVerifiedContactPath(item) || verifiedOfficialEmail;
   const leads = [];

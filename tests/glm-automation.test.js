@@ -19,6 +19,7 @@ const { identityCheckExpression } = require('../outreach-dashboard/codex-chrome-
 const mainSource = fs.readFileSync(path.join(__dirname, '..', 'outreach-dashboard', 'main.js'), 'utf8');
 const chromeDriverSource = fs.readFileSync(path.join(__dirname, '..', 'outreach-dashboard', 'codex-chrome-driver.js'), 'utf8');
 const discoverySource = fs.readFileSync(path.join(__dirname, '..', 'outreach-dashboard', 'google-lead-discovery-runner.js'), 'utf8');
+const enrichmentSource = fs.readFileSync(path.join(__dirname, '..', 'outreach-dashboard', 'enrich-first-party-channels.js'), 'utf8');
 const dailyRunnerSource = fs.readFileSync(path.join(__dirname, '..', 'outreach-dashboard', 'daily-automation-runner.js'), 'utf8');
 const glmSource = fs.readFileSync(path.join(__dirname, '..', 'outreach-dashboard', 'glm-service.js'), 'utf8');
 const templateSource = fs.readFileSync(path.join(__dirname, '..', 'outreach-dashboard', 'api', 'templates.js'), 'utf8');
@@ -73,6 +74,13 @@ test('brand official representative-directory emails become email tasks instead 
   assert.equal(lead.contactEmail, 'ourhabit.sales@gmail.com');
   assert.equal(lead.emailVerificationStatus, 'official_brand_rep_directory_email');
   assert.equal(lead.externalVerificationStatus, 'official_supplier_email_verified');
+});
+
+test('live first-party enrichment promotes a discovered company-domain email to Email execution', () => {
+  assert.ok(enrichmentSource.includes('function promoteVerifiedEmailRow'));
+  assert.ok(enrichmentSource.includes("row.platform = 'email'"));
+  assert.ok(enrichmentSource.includes("row.action = 'email_priority'"));
+  assert.ok(enrichmentSource.includes("row.reason = 'official_public_business_email_verified'"));
 });
 
 test('email queue keeps distinct agencies listed on the same first-party directory page', () => {

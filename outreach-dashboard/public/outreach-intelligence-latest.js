@@ -1,6 +1,6 @@
 window.OUTREACH_INTELLIGENCE_LATEST = {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-13T02:52:28.774Z",
+  "generatedAt": "2026-08-13T02:55:27.564Z",
   "companies": [
     {
       "companyId": "company_6da9ffc8d986b655",
@@ -9,21 +9,21 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
         "sidewaysdistribution",
         "beaverwaxcom",
         "gmailcom",
-        "allweathersales",
-        "allweathersalesca",
         "nickelndiamondsales",
+        "parallel33salesgroup",
+        "parallel33salescom",
         "salessociety72",
         "darkblizzardsales",
         "ourhabitsales",
         "nicklandrysales",
-        "parallel33salesgroup",
-        "parallel33salescom",
         "pfpandassociates",
         "pfpandassociatescom",
         "ziaworksdistribution",
         "nwziaworkscom",
         "rockcreek",
         "rockcreekcom",
+        "allweathersales",
+        "allweathersalesca",
         "tahoesportshub",
         "tahoesportshubcom",
         "campstudiothailand",
@@ -35,24 +35,24 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
       "domains": [
         "beaverwax.com",
         "gmail.com",
-        "allweathersales.ca",
         "parallel33sales.com",
         "pfpandassociates.com",
         "nwziaworks.com",
         "rockcreek.com",
+        "allweathersales.ca",
         "tahoesportshub.com",
         "campstudio.co.th",
         "nwogco.com"
       ],
       "channels": [
         "email",
-        "website_form",
         "instagram",
-        "facebook"
+        "facebook",
+        "website_form"
       ],
       "evidence": [
         {
-          "channel": "website_form",
+          "channel": "email",
           "score": 100,
           "verified": true,
           "reasons": [
@@ -62,7 +62,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
           "checkedAt": ""
         },
         {
-          "channel": "website_form",
+          "channel": "email",
           "score": 100,
           "verified": true,
           "reasons": [
@@ -72,7 +72,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
           "checkedAt": ""
         },
         {
-          "channel": "website_form",
+          "channel": "email",
           "score": 100,
           "verified": true,
           "reasons": [
@@ -82,7 +82,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
           "checkedAt": ""
         },
         {
-          "channel": "website_form",
+          "channel": "email",
           "score": 100,
           "verified": true,
           "reasons": [
@@ -92,7 +92,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
           "checkedAt": ""
         },
         {
-          "channel": "website_form",
+          "channel": "email",
           "score": 100,
           "verified": true,
           "reasons": [
@@ -102,7 +102,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
           "checkedAt": ""
         },
         {
-          "channel": "website_form",
+          "channel": "email",
           "score": 100,
           "verified": true,
           "reasons": [
@@ -112,7 +112,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
           "checkedAt": ""
         },
         {
-          "channel": "website_form",
+          "channel": "email",
           "score": 100,
           "verified": true,
           "reasons": [
@@ -142,7 +142,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
           "checkedAt": "2026-08-12T12:14:38.185Z"
         },
         {
-          "channel": "website_form",
+          "channel": "email",
           "score": 100,
           "verified": true,
           "reasons": [
@@ -152,7 +152,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
           "checkedAt": "2026-08-12T12:14:38.185Z"
         },
         {
-          "channel": "website_form",
+          "channel": "email",
           "score": 100,
           "verified": true,
           "reasons": [
@@ -162,7 +162,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
           "checkedAt": ""
         },
         {
-          "channel": "website_form",
+          "channel": "email",
           "score": 100,
           "verified": true,
           "reasons": [
@@ -182,7 +182,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
           "checkedAt": "2026-08-12T11:51:07.876Z"
         },
         {
-          "channel": "website_form",
+          "channel": "email",
           "score": 100,
           "verified": true,
           "reasons": [
@@ -382,97 +382,77 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
           "checkedAt": ""
         },
         {
+          "channel": "website_form",
+          "score": 80,
+          "verified": false,
+          "reasons": [
+            "first_party_evidence"
+          ],
+          "evidenceUrl": "https://www.beaverwax.com/pages/new-contact",
+          "checkedAt": "2026-08-13T02:38:00.000Z"
+        },
+        {
+          "channel": "website_form",
+          "score": 80,
+          "verified": false,
+          "reasons": [
+            "first_party_evidence"
+          ],
+          "evidenceUrl": "https://www.beaverwax.com/pages/new-contact",
+          "checkedAt": "2026-08-13T02:38:00.000Z"
+        },
+        {
+          "channel": "website_form",
+          "score": 80,
+          "verified": false,
+          "reasons": [
+            "first_party_evidence"
+          ],
+          "evidenceUrl": "https://www.beaverwax.com/pages/new-contact",
+          "checkedAt": "2026-08-13T02:38:00.000Z"
+        },
+        {
+          "channel": "website_form",
+          "score": 80,
+          "verified": false,
+          "reasons": [
+            "first_party_evidence"
+          ],
+          "evidenceUrl": "https://www.beaverwax.com/pages/new-contact",
+          "checkedAt": "2026-08-13T02:38:00.000Z"
+        },
+        {
+          "channel": "website_form",
+          "score": 80,
+          "verified": false,
+          "reasons": [
+            "first_party_evidence"
+          ],
+          "evidenceUrl": "https://www.beaverwax.com/pages/new-contact",
+          "checkedAt": "2026-08-13T02:38:00.000Z"
+        },
+        {
+          "channel": "website_form",
+          "score": 80,
+          "verified": false,
+          "reasons": [
+            "first_party_evidence"
+          ],
+          "evidenceUrl": "https://www.beaverwax.com/pages/new-contact",
+          "checkedAt": "2026-08-13T02:38:00.000Z"
+        },
+        {
+          "channel": "website_form",
+          "score": 80,
+          "verified": false,
+          "reasons": [
+            "first_party_evidence"
+          ],
+          "evidenceUrl": "https://www.beaverwax.com/pages/new-contact",
+          "checkedAt": "2026-08-13T02:38:00.000Z"
+        },
+        {
           "channel": "email",
-          "score": 80,
-          "verified": false,
-          "reasons": [
-            "first_party_evidence"
-          ],
-          "evidenceUrl": "https://www.beaverwax.com/pages/new-contact",
-          "checkedAt": ""
-        },
-        {
-          "channel": "email",
-          "score": 80,
-          "verified": false,
-          "reasons": [
-            "first_party_evidence"
-          ],
-          "evidenceUrl": "https://www.beaverwax.com/pages/new-contact",
-          "checkedAt": ""
-        },
-        {
-          "channel": "website_form",
-          "score": 80,
-          "verified": false,
-          "reasons": [
-            "first_party_evidence"
-          ],
-          "evidenceUrl": "https://www.beaverwax.com/pages/new-contact",
-          "checkedAt": "2026-08-13T02:38:00.000Z"
-        },
-        {
-          "channel": "website_form",
-          "score": 80,
-          "verified": false,
-          "reasons": [
-            "first_party_evidence"
-          ],
-          "evidenceUrl": "https://www.beaverwax.com/pages/new-contact",
-          "checkedAt": "2026-08-13T02:38:00.000Z"
-        },
-        {
-          "channel": "website_form",
-          "score": 80,
-          "verified": false,
-          "reasons": [
-            "first_party_evidence"
-          ],
-          "evidenceUrl": "https://www.beaverwax.com/pages/new-contact",
-          "checkedAt": "2026-08-13T02:38:00.000Z"
-        },
-        {
-          "channel": "website_form",
-          "score": 80,
-          "verified": false,
-          "reasons": [
-            "first_party_evidence"
-          ],
-          "evidenceUrl": "https://www.beaverwax.com/pages/new-contact",
-          "checkedAt": "2026-08-13T02:38:00.000Z"
-        },
-        {
-          "channel": "website_form",
-          "score": 80,
-          "verified": false,
-          "reasons": [
-            "first_party_evidence"
-          ],
-          "evidenceUrl": "https://www.beaverwax.com/pages/new-contact",
-          "checkedAt": "2026-08-13T02:38:00.000Z"
-        },
-        {
-          "channel": "website_form",
-          "score": 80,
-          "verified": false,
-          "reasons": [
-            "first_party_evidence"
-          ],
-          "evidenceUrl": "https://www.beaverwax.com/pages/new-contact",
-          "checkedAt": "2026-08-13T02:38:00.000Z"
-        },
-        {
-          "channel": "website_form",
-          "score": 80,
-          "verified": false,
-          "reasons": [
-            "first_party_evidence"
-          ],
-          "evidenceUrl": "https://www.beaverwax.com/pages/new-contact",
-          "checkedAt": "2026-08-13T02:38:00.000Z"
-        },
-        {
-          "channel": "website_form",
           "score": 0,
           "verified": false,
           "reasons": [
@@ -502,7 +482,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
           "checkedAt": ""
         },
         {
-          "channel": "website_form",
+          "channel": "email",
           "score": 0,
           "verified": false,
           "reasons": [
@@ -864,6 +844,12 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
           "timestamp": "2026-08-13T02:44:55.725Z",
           "channel": "website_form",
           "evidence": "website_contact_entry_not_verified;contact_entry_clicked:Proform Request Form;public_email_fallback_available:nicklandry.sales@gmail.com;email_sender_not_configured;website_contact_all_targets_failed:1;contact_path_strategy_v2"
+        },
+        {
+          "status": "sent_confirmed",
+          "timestamp": "2026-08-13T02:53:01.732Z",
+          "channel": "email",
+          "evidence": "smtp_accepted;message_id:<46013e1d-8b0d-aece-ab5f-4820c33ded4a@flextailgear.com>;sent_folder_message_confirmed;contact_path_strategy_v2"
         }
       ]
     },
@@ -3910,6 +3896,43 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
       "history": []
     },
     {
+      "companyId": "company_7e3d1608b38203d0",
+      "company": "RTIC Mexico",
+      "keys": [
+        "rticmexico",
+        "rticmx"
+      ],
+      "domains": [
+        "rtic.mx"
+      ],
+      "channels": [
+        "email"
+      ],
+      "evidence": [
+        {
+          "channel": "email",
+          "score": 100,
+          "verified": true,
+          "reasons": [
+            "official_business_route"
+          ],
+          "evidenceUrl": "https://rtic.mx/products/hilera-rtic-45-hard-cooler",
+          "checkedAt": ""
+        },
+        {
+          "channel": "email",
+          "score": 100,
+          "verified": true,
+          "reasons": [
+            "official_business_route"
+          ],
+          "evidenceUrl": "https://rtic.mx/products/hilera-rtic-45-hard-cooler",
+          "checkedAt": ""
+        }
+      ],
+      "history": []
+    },
+    {
       "companyId": "company_4ae4ae5588b677eb",
       "company": "Bivouac Outdoor",
       "keys": [
@@ -4133,43 +4156,6 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
           "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:7;contact_path_strategy_v2"
         }
       ]
-    },
-    {
-      "companyId": "company_7e3d1608b38203d0",
-      "company": "RTIC Mexico",
-      "keys": [
-        "rticmexico",
-        "rticmx"
-      ],
-      "domains": [
-        "rtic.mx"
-      ],
-      "channels": [
-        "website_form"
-      ],
-      "evidence": [
-        {
-          "channel": "website_form",
-          "score": 100,
-          "verified": true,
-          "reasons": [
-            "official_business_route"
-          ],
-          "evidenceUrl": "https://rtic.mx/products/hilera-rtic-45-hard-cooler",
-          "checkedAt": ""
-        },
-        {
-          "channel": "website_form",
-          "score": 100,
-          "verified": true,
-          "reasons": [
-            "official_business_route"
-          ],
-          "evidenceUrl": "https://rtic.mx/products/hilera-rtic-45-hard-cooler",
-          "checkedAt": ""
-        }
-      ],
-      "history": []
     },
     {
       "companyId": "company_152c4973e4cf4ec0",
@@ -6653,6 +6639,162 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
       ]
     },
     {
+      "companyId": "company_302dabc203330f43",
+      "company": "Campz",
+      "keys": [
+        "campz",
+        "campzde"
+      ],
+      "domains": [
+        "campz.de"
+      ],
+      "channels": [
+        "website_form",
+        "instagram",
+        "facebook"
+      ],
+      "evidence": [
+        {
+          "channel": "website_form",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
+          "checkedAt": ""
+        },
+        {
+          "channel": "instagram",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
+          "checkedAt": ""
+        },
+        {
+          "channel": "facebook",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
+          "checkedAt": ""
+        },
+        {
+          "channel": "website_form",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
+          "checkedAt": ""
+        }
+      ],
+      "history": [
+        {
+          "status": "failed_open",
+          "timestamp": "2026-07-17T03:05:43.972Z",
+          "channel": "facebook",
+          "evidence": "driver_error: Timeout: http://127.0.0.1:9224/json"
+        },
+        {
+          "status": "failed_open",
+          "timestamp": "2026-07-17T09:10:13.116Z",
+          "channel": "instagram",
+          "evidence": "instagram_message_button_clicked_composer_not_found"
+        },
+        {
+          "status": "approval_pending",
+          "timestamp": "2026-07-20T03:57:37.994Z",
+          "channel": "instagram",
+          "evidence": "driver_error: Command failed: C:\\Program Files\\nodejs\\node.exe E:\\New project\\outreach-dashboard\\codex-chrome-driver.js prepare-instagram-draft {\"port\":9224,\"tabId\":\"77D828F3B4F086C101460DC091BDB15E\",\"targetUrl\":\"https://www.instagram.com/campz.de/\",\"expectedCompany\":\"Campz\",\"draft\":\"Hi Campz team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a retail/category buyer, the strongest fit is assortment fit, new SKU pipeline, price-tier coverage, and proven consumer demand; your verified outdoor, camping and travel retail social refill channel focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the category buyer or vendor-review owner for a short intro video meeting?\",\"autoSend\":true,\"autoEngage\":true,\"engagementComment\":\"Great outdoor checklist. Useful reminder for hikers preparing a complete, lightweight kit.\",\"replaceExistingDraft\":true}\n"
+        },
+        {
+          "status": "approval_pending",
+          "timestamp": "2026-07-20T06:54:07.878Z",
+          "channel": "instagram",
+          "evidence": "driver_error: Command failed: C:\\Program Files\\nodejs\\node.exe E:\\New project\\outreach-dashboard\\codex-chrome-driver.js prepare-instagram-draft {\"port\":9224,\"tabId\":\"F14271F738AB6C2D1546FBC4BBED6F1A\",\"targetUrl\":\"https://www.instagram.com/campz.de/\",\"expectedCompany\":\"Campz\",\"draft\":\"Hi Campz team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a retail/category buyer, the strongest fit is assortment fit, new SKU pipeline, price-tier coverage, and proven consumer demand; your verified outdoor, camping and travel retail social refill channel focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the category buyer or vendor-review owner for a short intro video meeting?\",\"autoSend\":true,\"autoEngage\":true,\"engagementComment\":\"Great outdoor checklist. Useful reminder for hikers preparing a complete, lightweight kit.\",\"replaceExistingDraft\":true}\n"
+        },
+        {
+          "status": "approval_pending",
+          "timestamp": "2026-07-20T11:03:01.864Z",
+          "channel": "instagram",
+          "evidence": "driver_error: Command failed: C:\\Program Files\\nodejs\\node.exe E:\\New project\\outreach-dashboard\\codex-chrome-driver.js prepare-instagram-draft {\"port\":9224,\"tabId\":\"F1D67FEE8B423CB29FD3C00D02A55692\",\"targetUrl\":\"https://www.instagram.com/campz.de/\",\"expectedCompany\":\"Campz\",\"draft\":\"Hi Campz team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a retail/category buyer, the strongest fit is assortment fit, new SKU pipeline, price-tier coverage, and proven consumer demand; your verified outdoor, camping and travel retail social refill channel focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the category buyer or vendor-review owner for a short intro video meeting?\",\"autoSend\":true,\"autoEngage\":true,\"engagementComment\":\"Great outdoor checklist. Useful reminder for hikers preparing a complete, lightweight kit.\",\"replaceExistingDraft\":true}\n"
+        },
+        {
+          "status": "website_contact_unreachable_skip",
+          "timestamp": "2026-07-20T11:29:15.276Z",
+          "channel": "instagram",
+          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:1"
+        },
+        {
+          "status": "website_contact_unreachable_skip",
+          "timestamp": "2026-07-21T04:20:06.396Z",
+          "channel": "instagram",
+          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:6;contact_path_strategy_v2"
+        },
+        {
+          "status": "send_unconfirmed",
+          "timestamp": "2026-07-27T13:31:38.189Z",
+          "channel": "instagram",
+          "evidence": "instagram_draft_inserted_send_button_not_found"
+        },
+        {
+          "status": "failed_open",
+          "timestamp": "2026-07-29T05:05:41.230Z",
+          "channel": "facebook",
+          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;facebook_profile_no_message_button;contact_path_strategy_v2"
+        },
+        {
+          "status": "failed_open",
+          "timestamp": "2026-07-29T05:27:50.226Z",
+          "channel": "instagram",
+          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;facebook_profile_no_message_button;contact_path_strategy_v2"
+        },
+        {
+          "status": "failed_open",
+          "timestamp": "2026-07-29T10:31:34.205Z",
+          "channel": "facebook",
+          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;personal_profile_without_company_match_expected_Campz_title_Facebook;contact_path_strategy_v2"
+        },
+        {
+          "status": "failed_open",
+          "timestamp": "2026-07-29T10:35:24.703Z",
+          "channel": "website_form",
+          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;personal_profile_without_company_match_expected_Campz_title_Facebook;contact_path_strategy_v2"
+        },
+        {
+          "status": "failed_open",
+          "timestamp": "2026-08-04T12:03:48.646Z",
+          "channel": "facebook",
+          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;identity_mismatch_expected_Campz_title_Facebook;contact_path_strategy_v2"
+        },
+        {
+          "status": "failed_open",
+          "timestamp": "2026-08-04T12:37:47.926Z",
+          "channel": "website_form",
+          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;identity_mismatch_expected_Campz_title_Facebook;contact_path_strategy_v2"
+        },
+        {
+          "status": "failed_open",
+          "timestamp": "2026-08-05T01:59:53.529Z",
+          "channel": "facebook",
+          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;identity_mismatch_expected_Campz_title_www.facebook.com;contact_path_strategy_v2"
+        },
+        {
+          "status": "failed_open",
+          "timestamp": "2026-08-05T03:01:21.490Z",
+          "channel": "website_form",
+          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;identity_mismatch_expected_Campz_title_www.facebook.com;contact_path_strategy_v2"
+        }
+      ]
+    },
+    {
       "companyId": "company_c864d4d897a3e868",
       "company": "EET Group",
       "keys": [
@@ -6667,12 +6809,12 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
       ],
       "channels": [
         "linkedin",
-        "website_form",
-        "email"
+        "email",
+        "website_form"
       ],
       "evidence": [
         {
-          "channel": "website_form",
+          "channel": "email",
           "score": 100,
           "verified": true,
           "reasons": [
@@ -6852,11 +6994,12 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
       ],
       "channels": [
         "instagram",
+        "email",
         "website_form"
       ],
       "evidence": [
         {
-          "channel": "website_form",
+          "channel": "email",
           "score": 100,
           "verified": true,
           "reasons": [
@@ -7029,7 +7172,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
           "checkedAt": "2026-08-12T11:55:34.014Z"
         },
         {
-          "channel": "website_form",
+          "channel": "email",
           "score": 100,
           "verified": true,
           "reasons": [
@@ -7225,12 +7368,11 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
         "summitsalesnw.com"
       ],
       "channels": [
-        "website_form",
         "email"
       ],
       "evidence": [
         {
-          "channel": "website_form",
+          "channel": "email",
           "score": 100,
           "verified": true,
           "reasons": [
@@ -7388,12 +7530,12 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
       "channels": [
         "instagram",
         "facebook",
-        "website_form",
-        "email"
+        "email",
+        "website_form"
       ],
       "evidence": [
         {
-          "channel": "website_form",
+          "channel": "email",
           "score": 100,
           "verified": true,
           "reasons": [
@@ -7553,12 +7695,11 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
         "adventuremarketinggroup.net"
       ],
       "channels": [
-        "website_form",
         "email"
       ],
       "evidence": [
         {
-          "channel": "website_form",
+          "channel": "email",
           "score": 100,
           "verified": true,
           "reasons": [
@@ -7588,12 +7729,11 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
         "pctreps.com"
       ],
       "channels": [
-        "website_form",
         "email"
       ],
       "evidence": [
         {
-          "channel": "website_form",
+          "channel": "email",
           "score": 100,
           "verified": true,
           "reasons": [
@@ -7657,12 +7797,11 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
         "mtnstuff.com"
       ],
       "channels": [
-        "website_form",
         "email"
       ],
       "evidence": [
         {
-          "channel": "website_form",
+          "channel": "email",
           "score": 100,
           "verified": true,
           "reasons": [
@@ -7888,12 +8027,11 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
         "mountainx.ca"
       ],
       "channels": [
-        "website_form",
         "email"
       ],
       "evidence": [
         {
-          "channel": "website_form",
+          "channel": "email",
           "score": 100,
           "verified": true,
           "reasons": [
@@ -7927,11 +8065,12 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
       "channels": [
         "instagram",
         "facebook",
+        "email",
         "website_form"
       ],
       "evidence": [
         {
-          "channel": "website_form",
+          "channel": "email",
           "score": 100,
           "verified": true,
           "reasons": [
@@ -8131,12 +8270,11 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
         "cwrdistribution.com"
       ],
       "channels": [
-        "website_form",
         "email"
       ],
       "evidence": [
         {
-          "channel": "website_form",
+          "channel": "email",
           "score": 100,
           "verified": true,
           "reasons": [
@@ -8234,12 +8372,11 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
         "coveysales.com"
       ],
       "channels": [
-        "website_form",
         "email"
       ],
       "evidence": [
         {
-          "channel": "website_form",
+          "channel": "email",
           "score": 100,
           "verified": true,
           "reasons": [
@@ -8381,12 +8518,11 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
         "pinnacleoutdoorgroup.com"
       ],
       "channels": [
-        "website_form",
         "email"
       ],
       "evidence": [
         {
-          "channel": "website_form",
+          "channel": "email",
           "score": 100,
           "verified": true,
           "reasons": [
@@ -8416,12 +8552,11 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
         "vertoutdoors.com"
       ],
       "channels": [
-        "website_form",
         "email"
       ],
       "evidence": [
         {
-          "channel": "website_form",
+          "channel": "email",
           "score": 100,
           "verified": true,
           "reasons": [
@@ -8604,13 +8739,14 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
         "sail.ca"
       ],
       "channels": [
-        "website_form",
+        "email",
         "instagram",
-        "facebook"
+        "facebook",
+        "website_form"
       ],
       "evidence": [
         {
-          "channel": "website_form",
+          "channel": "email",
           "score": 100,
           "verified": true,
           "reasons": [
@@ -8763,12 +8899,11 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
         "coonhoundsales.com"
       ],
       "channels": [
-        "website_form",
         "email"
       ],
       "evidence": [
         {
-          "channel": "website_form",
+          "channel": "email",
           "score": 100,
           "verified": true,
           "reasons": [
@@ -8798,12 +8933,11 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
         "vigosgroup.com"
       ],
       "channels": [
-        "website_form",
         "email"
       ],
       "evidence": [
         {
-          "channel": "website_form",
+          "channel": "email",
           "score": 100,
           "verified": true,
           "reasons": [
@@ -8833,12 +8967,11 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
         "groundupsales.net"
       ],
       "channels": [
-        "website_form",
         "email"
       ],
       "evidence": [
         {
-          "channel": "website_form",
+          "channel": "email",
           "score": 100,
           "verified": true,
           "reasons": [
@@ -8980,12 +9113,11 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
         "evergreenog.com"
       ],
       "channels": [
-        "website_form",
         "email"
       ],
       "evidence": [
         {
-          "channel": "website_form",
+          "channel": "email",
           "score": 100,
           "verified": true,
           "reasons": [
@@ -9015,12 +9147,11 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
         "teamssr.com"
       ],
       "channels": [
-        "website_form",
         "email"
       ],
       "evidence": [
         {
-          "channel": "website_form",
+          "channel": "email",
           "score": 100,
           "verified": true,
           "reasons": [
@@ -9144,8 +9275,8 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
       "channels": [
         "instagram",
         "facebook",
-        "website_form",
-        "email"
+        "email",
+        "website_form"
       ],
       "evidence": [
         {
@@ -9169,7 +9300,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
           "checkedAt": "2026-08-12T11:59:10.755Z"
         },
         {
-          "channel": "website_form",
+          "channel": "email",
           "score": 100,
           "verified": true,
           "reasons": [
@@ -9236,11 +9367,12 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
       "channels": [
         "instagram",
         "facebook",
+        "email",
         "website_form"
       ],
       "evidence": [
         {
-          "channel": "website_form",
+          "channel": "email",
           "score": 100,
           "verified": true,
           "reasons": [
@@ -9250,7 +9382,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
           "checkedAt": ""
         },
         {
-          "channel": "website_form",
+          "channel": "email",
           "score": 100,
           "verified": true,
           "reasons": [
@@ -9500,15 +9632,15 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
         "summitint.co"
       ],
       "channels": [
+        "email",
         "website_form",
         "instagram",
         "facebook",
-        "linkedin",
-        "email"
+        "linkedin"
       ],
       "evidence": [
         {
-          "channel": "website_form",
+          "channel": "email",
           "score": 100,
           "verified": true,
           "reasons": [
@@ -10050,12 +10182,11 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
         "freestonesalesgroup.com"
       ],
       "channels": [
-        "website_form",
         "email"
       ],
       "evidence": [
         {
-          "channel": "website_form",
+          "channel": "email",
           "score": 100,
           "verified": true,
           "reasons": [
@@ -10085,12 +10216,11 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
         "eliteoutdoorsports.com"
       ],
       "channels": [
-        "website_form",
         "email"
       ],
       "evidence": [
         {
-          "channel": "website_form",
+          "channel": "email",
           "score": 100,
           "verified": true,
           "reasons": [
@@ -10120,12 +10250,11 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
         "obriensales.com"
       ],
       "channels": [
-        "website_form",
         "email"
       ],
       "evidence": [
         {
-          "channel": "website_form",
+          "channel": "email",
           "score": 100,
           "verified": true,
           "reasons": [
@@ -10442,12 +10571,12 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
         "ultralightoutdoorgear.co.uk"
       ],
       "channels": [
-        "website_form",
-        "email"
+        "email",
+        "website_form"
       ],
       "evidence": [
         {
-          "channel": "website_form",
+          "channel": "email",
           "score": 100,
           "verified": true,
           "reasons": [
@@ -10636,12 +10765,12 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
         "naturkompaniet.se"
       ],
       "channels": [
-        "website_form",
-        "email"
+        "email",
+        "website_form"
       ],
       "evidence": [
         {
-          "channel": "website_form",
+          "channel": "email",
           "score": 100,
           "verified": true,
           "reasons": [
@@ -11504,12 +11633,11 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
         "tandemwestsales.com"
       ],
       "channels": [
-        "website_form",
         "email"
       ],
       "evidence": [
         {
-          "channel": "website_form",
+          "channel": "email",
           "score": 100,
           "verified": true,
           "reasons": [
@@ -11541,12 +11669,11 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
         "mysite.com"
       ],
       "channels": [
-        "website_form",
         "email"
       ],
       "evidence": [
         {
-          "channel": "website_form",
+          "channel": "email",
           "score": 100,
           "verified": true,
           "reasons": [
@@ -11576,12 +11703,11 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
         "mindfuloutdoorsales.com"
       ],
       "channels": [
-        "website_form",
         "email"
       ],
       "evidence": [
         {
-          "channel": "website_form",
+          "channel": "email",
           "score": 100,
           "verified": true,
           "reasons": [
@@ -11613,12 +11739,11 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
         "san.rr.com"
       ],
       "channels": [
-        "website_form",
         "email"
       ],
       "evidence": [
         {
-          "channel": "website_form",
+          "channel": "email",
           "score": 100,
           "verified": true,
           "reasons": [
@@ -12040,11 +12165,12 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
       "channels": [
         "instagram",
         "facebook",
+        "email",
         "website_form"
       ],
       "evidence": [
         {
-          "channel": "website_form",
+          "channel": "email",
           "score": 100,
           "verified": true,
           "reasons": [
@@ -13260,12 +13386,11 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
         "wileyoutdoorproducts.com"
       ],
       "channels": [
-        "website_form",
         "email"
       ],
       "evidence": [
         {
-          "channel": "website_form",
+          "channel": "email",
           "score": 100,
           "verified": true,
           "reasons": [
@@ -13295,12 +13420,11 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
         "highgearsales.ca"
       ],
       "channels": [
-        "website_form",
         "email"
       ],
       "evidence": [
         {
-          "channel": "website_form",
+          "channel": "email",
           "score": 100,
           "verified": true,
           "reasons": [
@@ -13459,12 +13583,12 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
         "friluftsland.dk"
       ],
       "channels": [
-        "website_form",
-        "email"
+        "email",
+        "website_form"
       ],
       "evidence": [
         {
-          "channel": "website_form",
+          "channel": "email",
           "score": 100,
           "verified": true,
           "reasons": [
@@ -13526,6 +13650,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
       "channels": [
         "instagram",
         "facebook",
+        "email",
         "website_form"
       ],
       "evidence": [
@@ -13550,7 +13675,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
           "checkedAt": "2026-08-12T12:11:26.843Z"
         },
         {
-          "channel": "website_form",
+          "channel": "email",
           "score": 100,
           "verified": true,
           "reasons": [
@@ -13624,7 +13749,6 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
       ],
       "channels": [
         "instagram",
-        "website_form",
         "email"
       ],
       "evidence": [
@@ -13639,7 +13763,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
           "checkedAt": "2026-08-12T12:11:26.798Z"
         },
         {
-          "channel": "website_form",
+          "channel": "email",
           "score": 100,
           "verified": true,
           "reasons": [
@@ -14276,12 +14400,11 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
         "southsnow.net"
       ],
       "channels": [
-        "website_form",
         "email"
       ],
       "evidence": [
         {
-          "channel": "website_form",
+          "channel": "email",
           "score": 100,
           "verified": true,
           "reasons": [
@@ -14381,12 +14504,12 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
         "kampeerwereld.nl"
       ],
       "channels": [
-        "website_form",
-        "email"
+        "email",
+        "website_form"
       ],
       "evidence": [
         {
-          "channel": "website_form",
+          "channel": "email",
           "score": 100,
           "verified": true,
           "reasons": [
@@ -14515,12 +14638,11 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
         "theevansgroup.net"
       ],
       "channels": [
-        "website_form",
         "email"
       ],
       "evidence": [
         {
-          "channel": "website_form",
+          "channel": "email",
           "score": 100,
           "verified": true,
           "reasons": [
@@ -14553,6 +14675,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
       "channels": [
         "instagram",
         "facebook",
+        "email",
         "website_form"
       ],
       "evidence": [
@@ -14577,7 +14700,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
           "checkedAt": "2026-08-12T12:14:35.210Z"
         },
         {
-          "channel": "website_form",
+          "channel": "email",
           "score": 100,
           "verified": true,
           "reasons": [
@@ -15437,12 +15560,11 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
         "interexind.ca"
       ],
       "channels": [
-        "website_form",
         "email"
       ],
       "evidence": [
         {
-          "channel": "website_form",
+          "channel": "email",
           "score": 100,
           "verified": true,
           "reasons": [
@@ -15474,12 +15596,11 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
         "urbanoutdoorsales.com"
       ],
       "channels": [
-        "website_form",
         "email"
       ],
       "evidence": [
         {
-          "channel": "website_form",
+          "channel": "email",
           "score": 100,
           "verified": true,
           "reasons": [
@@ -15511,12 +15632,11 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
         "mac.com"
       ],
       "channels": [
-        "website_form",
         "email"
       ],
       "evidence": [
         {
-          "channel": "website_form",
+          "channel": "email",
           "score": 100,
           "verified": true,
           "reasons": [
@@ -15612,12 +15732,11 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
         "precisionsalesunlimited.com"
       ],
       "channels": [
-        "website_form",
         "email"
       ],
       "evidence": [
         {
-          "channel": "website_form",
+          "channel": "email",
           "score": 100,
           "verified": true,
           "reasons": [
@@ -15647,12 +15766,11 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
         "nlaagency.com"
       ],
       "channels": [
-        "website_form",
         "email"
       ],
       "evidence": [
         {
-          "channel": "website_form",
+          "channel": "email",
           "score": 100,
           "verified": true,
           "reasons": [
@@ -16313,7 +16431,6 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
       "channels": [
         "instagram",
         "facebook",
-        "website_form",
         "email"
       ],
       "evidence": [
@@ -16338,7 +16455,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
           "checkedAt": ""
         },
         {
-          "channel": "website_form",
+          "channel": "email",
           "score": 0,
           "verified": false,
           "reasons": [
@@ -16560,7 +16677,6 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
       "channels": [
         "instagram",
         "facebook",
-        "website_form",
         "email"
       ],
       "evidence": [
@@ -16585,7 +16701,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
           "checkedAt": ""
         },
         {
-          "channel": "website_form",
+          "channel": "email",
           "score": 0,
           "verified": false,
           "reasons": [
@@ -16738,7 +16854,6 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
       "channels": [
         "instagram",
         "facebook",
-        "website_form",
         "email"
       ],
       "evidence": [
@@ -16763,7 +16878,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
           "checkedAt": "2026-08-12T12:35:05.007Z"
         },
         {
-          "channel": "website_form",
+          "channel": "email",
           "score": 0,
           "verified": false,
           "reasons": [
@@ -18239,6 +18354,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
       "channels": [
         "instagram",
         "facebook",
+        "email",
         "website_form"
       ],
       "evidence": [
@@ -18263,7 +18379,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
           "checkedAt": ""
         },
         {
-          "channel": "website_form",
+          "channel": "email",
           "score": 0,
           "verified": false,
           "reasons": [
@@ -18990,152 +19106,6 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
       ]
     },
     {
-      "companyId": "company_302dabc203330f43",
-      "company": "Campz",
-      "keys": [
-        "campz",
-        "campzde"
-      ],
-      "domains": [
-        "campz.de"
-      ],
-      "channels": [
-        "instagram",
-        "facebook",
-        "website_form"
-      ],
-      "evidence": [
-        {
-          "channel": "instagram",
-          "score": 0,
-          "verified": false,
-          "reasons": [
-            "unverified_external_evidence_rejected"
-          ],
-          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
-          "checkedAt": ""
-        },
-        {
-          "channel": "facebook",
-          "score": 0,
-          "verified": false,
-          "reasons": [
-            "unverified_external_evidence_rejected"
-          ],
-          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
-          "checkedAt": ""
-        },
-        {
-          "channel": "website_form",
-          "score": 0,
-          "verified": false,
-          "reasons": [
-            "unverified_external_evidence_rejected"
-          ],
-          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
-          "checkedAt": ""
-        }
-      ],
-      "history": [
-        {
-          "status": "failed_open",
-          "timestamp": "2026-07-17T03:05:43.972Z",
-          "channel": "facebook",
-          "evidence": "driver_error: Timeout: http://127.0.0.1:9224/json"
-        },
-        {
-          "status": "failed_open",
-          "timestamp": "2026-07-17T09:10:13.116Z",
-          "channel": "instagram",
-          "evidence": "instagram_message_button_clicked_composer_not_found"
-        },
-        {
-          "status": "approval_pending",
-          "timestamp": "2026-07-20T03:57:37.994Z",
-          "channel": "instagram",
-          "evidence": "driver_error: Command failed: C:\\Program Files\\nodejs\\node.exe E:\\New project\\outreach-dashboard\\codex-chrome-driver.js prepare-instagram-draft {\"port\":9224,\"tabId\":\"77D828F3B4F086C101460DC091BDB15E\",\"targetUrl\":\"https://www.instagram.com/campz.de/\",\"expectedCompany\":\"Campz\",\"draft\":\"Hi Campz team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a retail/category buyer, the strongest fit is assortment fit, new SKU pipeline, price-tier coverage, and proven consumer demand; your verified outdoor, camping and travel retail social refill channel focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the category buyer or vendor-review owner for a short intro video meeting?\",\"autoSend\":true,\"autoEngage\":true,\"engagementComment\":\"Great outdoor checklist. Useful reminder for hikers preparing a complete, lightweight kit.\",\"replaceExistingDraft\":true}\n"
-        },
-        {
-          "status": "approval_pending",
-          "timestamp": "2026-07-20T06:54:07.878Z",
-          "channel": "instagram",
-          "evidence": "driver_error: Command failed: C:\\Program Files\\nodejs\\node.exe E:\\New project\\outreach-dashboard\\codex-chrome-driver.js prepare-instagram-draft {\"port\":9224,\"tabId\":\"F14271F738AB6C2D1546FBC4BBED6F1A\",\"targetUrl\":\"https://www.instagram.com/campz.de/\",\"expectedCompany\":\"Campz\",\"draft\":\"Hi Campz team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a retail/category buyer, the strongest fit is assortment fit, new SKU pipeline, price-tier coverage, and proven consumer demand; your verified outdoor, camping and travel retail social refill channel focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the category buyer or vendor-review owner for a short intro video meeting?\",\"autoSend\":true,\"autoEngage\":true,\"engagementComment\":\"Great outdoor checklist. Useful reminder for hikers preparing a complete, lightweight kit.\",\"replaceExistingDraft\":true}\n"
-        },
-        {
-          "status": "approval_pending",
-          "timestamp": "2026-07-20T11:03:01.864Z",
-          "channel": "instagram",
-          "evidence": "driver_error: Command failed: C:\\Program Files\\nodejs\\node.exe E:\\New project\\outreach-dashboard\\codex-chrome-driver.js prepare-instagram-draft {\"port\":9224,\"tabId\":\"F1D67FEE8B423CB29FD3C00D02A55692\",\"targetUrl\":\"https://www.instagram.com/campz.de/\",\"expectedCompany\":\"Campz\",\"draft\":\"Hi Campz team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a retail/category buyer, the strongest fit is assortment fit, new SKU pipeline, price-tier coverage, and proven consumer demand; your verified outdoor, camping and travel retail social refill channel focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the category buyer or vendor-review owner for a short intro video meeting?\",\"autoSend\":true,\"autoEngage\":true,\"engagementComment\":\"Great outdoor checklist. Useful reminder for hikers preparing a complete, lightweight kit.\",\"replaceExistingDraft\":true}\n"
-        },
-        {
-          "status": "website_contact_unreachable_skip",
-          "timestamp": "2026-07-20T11:29:15.276Z",
-          "channel": "instagram",
-          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:1"
-        },
-        {
-          "status": "website_contact_unreachable_skip",
-          "timestamp": "2026-07-21T04:20:06.396Z",
-          "channel": "instagram",
-          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:6;contact_path_strategy_v2"
-        },
-        {
-          "status": "send_unconfirmed",
-          "timestamp": "2026-07-27T13:31:38.189Z",
-          "channel": "instagram",
-          "evidence": "instagram_draft_inserted_send_button_not_found"
-        },
-        {
-          "status": "failed_open",
-          "timestamp": "2026-07-29T05:05:41.230Z",
-          "channel": "facebook",
-          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;facebook_profile_no_message_button;contact_path_strategy_v2"
-        },
-        {
-          "status": "failed_open",
-          "timestamp": "2026-07-29T05:27:50.226Z",
-          "channel": "instagram",
-          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;facebook_profile_no_message_button;contact_path_strategy_v2"
-        },
-        {
-          "status": "failed_open",
-          "timestamp": "2026-07-29T10:31:34.205Z",
-          "channel": "facebook",
-          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;personal_profile_without_company_match_expected_Campz_title_Facebook;contact_path_strategy_v2"
-        },
-        {
-          "status": "failed_open",
-          "timestamp": "2026-07-29T10:35:24.703Z",
-          "channel": "website_form",
-          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;personal_profile_without_company_match_expected_Campz_title_Facebook;contact_path_strategy_v2"
-        },
-        {
-          "status": "failed_open",
-          "timestamp": "2026-08-04T12:03:48.646Z",
-          "channel": "facebook",
-          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;identity_mismatch_expected_Campz_title_Facebook;contact_path_strategy_v2"
-        },
-        {
-          "status": "failed_open",
-          "timestamp": "2026-08-04T12:37:47.926Z",
-          "channel": "website_form",
-          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;identity_mismatch_expected_Campz_title_Facebook;contact_path_strategy_v2"
-        },
-        {
-          "status": "failed_open",
-          "timestamp": "2026-08-05T01:59:53.529Z",
-          "channel": "facebook",
-          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;identity_mismatch_expected_Campz_title_www.facebook.com;contact_path_strategy_v2"
-        },
-        {
-          "status": "failed_open",
-          "timestamp": "2026-08-05T03:01:21.490Z",
-          "channel": "website_form",
-          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;identity_mismatch_expected_Campz_title_www.facebook.com;contact_path_strategy_v2"
-        }
-      ]
-    },
-    {
       "companyId": "company_d9e52e1a4a1968f2",
       "company": "Sport Conrad",
       "keys": [
@@ -19151,7 +19121,6 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
       "channels": [
         "instagram",
         "facebook",
-        "website_form",
         "email"
       ],
       "evidence": [
@@ -19176,7 +19145,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
           "checkedAt": "2026-08-12T13:06:58.956Z"
         },
         {
-          "channel": "website_form",
+          "channel": "email",
           "score": 0,
           "verified": false,
           "reasons": [
@@ -19820,7 +19789,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
       "channels": [
         "instagram",
         "facebook",
-        "website_form"
+        "email"
       ],
       "evidence": [
         {
@@ -19844,7 +19813,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
           "checkedAt": ""
         },
         {
-          "channel": "website_form",
+          "channel": "email",
           "score": 0,
           "verified": false,
           "reasons": [
@@ -20848,12 +20817,12 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
         "durangooutdoorexchange.com"
       ],
       "channels": [
-        "website_form",
-        "email"
+        "email",
+        "website_form"
       ],
       "evidence": [
         {
-          "channel": "website_form",
+          "channel": "email",
           "score": 100,
           "verified": true,
           "reasons": [
@@ -20943,12 +20912,11 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
         "apexoutdoorsales.com"
       ],
       "channels": [
-        "website_form",
         "email"
       ],
       "evidence": [
         {
-          "channel": "website_form",
+          "channel": "email",
           "score": 100,
           "verified": true,
           "reasons": [
@@ -20978,12 +20946,11 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
         "nwroadreps.com"
       ],
       "channels": [
-        "website_form",
         "email"
       ],
       "evidence": [
         {
-          "channel": "website_form",
+          "channel": "email",
           "score": 100,
           "verified": true,
           "reasons": [
@@ -21013,12 +20980,11 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
         "actionbrio.com"
       ],
       "channels": [
-        "website_form",
         "email"
       ],
       "evidence": [
         {
-          "channel": "website_form",
+          "channel": "email",
           "score": 100,
           "verified": true,
           "reasons": [
@@ -21228,12 +21194,11 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
         "akasportsgroup.com"
       ],
       "channels": [
-        "website_form",
         "email"
       ],
       "evidence": [
         {
-          "channel": "website_form",
+          "channel": "email",
           "score": 100,
           "verified": true,
           "reasons": [
@@ -21263,12 +21228,11 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
         "riseandshinesales.ca"
       ],
       "channels": [
-        "website_form",
         "email"
       ],
       "evidence": [
         {
-          "channel": "website_form",
+          "channel": "email",
           "score": 100,
           "verified": true,
           "reasons": [
@@ -21621,6 +21585,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
       ],
       "channels": [
         "instagram",
+        "email",
         "website_form"
       ],
       "evidence": [
@@ -21635,7 +21600,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
           "checkedAt": "2026-08-12T13:29:19.903Z"
         },
         {
-          "channel": "website_form",
+          "channel": "email",
           "score": 100,
           "verified": true,
           "reasons": [
@@ -26014,8 +25979,8 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
       "crossChannel": true,
       "reason": "previous_customer_development_no_repeat",
       "sourceStatus": "sent_confirmed",
-      "sourceTimestamp": "2026-08-10T09:44:00.000Z",
-      "evidence": "official_contact_page_publishes_exact_tahoesportshub_at_gmail_com;exact_recipient_sender_subject_body_gate_passed;send_clicked_once;alibaba_sent_confirmation_visible;composer_closed;no_matched_DSN_in_bounded_scan"
+      "sourceTimestamp": "2026-08-13T02:53:01.732Z",
+      "evidence": "smtp_accepted;message_id:<46013e1d-8b0d-aece-ab5f-4820c33ded4a@flextailgear.com>;sent_folder_message_confirmed;contact_path_strategy_v2"
     },
     {
       "companyId": "company_4ae4ae5588b677eb",
@@ -29771,6 +29736,16 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
         "reason": "highest_priority_verified_channel"
       },
       {
+        "companyId": "company_7e3d1608b38203d0",
+        "company": "RTIC Mexico",
+        "action": "first_touch",
+        "channel": "email",
+        "evidenceScore": 100,
+        "evidenceUrl": "https://rtic.mx/products/hilera-rtic-45-hard-cooler",
+        "alternatives": [],
+        "reason": "highest_priority_verified_channel"
+      },
+      {
         "companyId": "company_ca049a336c94b7d9",
         "company": "Left Point Distribution",
         "action": "first_touch",
@@ -29781,12 +29756,12 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
         "reason": "highest_priority_verified_channel"
       },
       {
-        "companyId": "company_7e3d1608b38203d0",
-        "company": "RTIC Mexico",
+        "companyId": "company_152c4973e4cf4ec0",
+        "company": "Obelink",
         "action": "first_touch",
         "channel": "website_form",
         "evidenceScore": 100,
-        "evidenceUrl": "https://rtic.mx/products/hilera-rtic-45-hard-cooler",
+        "evidenceUrl": "https://www.obelink.nl/obelink-partnerprogramma",
         "alternatives": [],
         "reason": "highest_priority_verified_channel"
       },
@@ -29861,14 +29836,14 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
       "instagram": 3
     },
     "used": {
-      "email": 4,
+      "email": 5,
       "website_form": 5,
       "linkedin": 0,
       "facebook": 2,
       "instagram": 0
     },
     "gaps": {
-      "email": 6,
+      "email": 5,
       "website_form": 0,
       "linkedin": 4,
       "facebook": 1,
@@ -29906,7 +29881,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
       },
       {
         "channel": "email",
-        "confirmed": 275,
+        "confirmed": 276,
         "replies": 0,
         "opportunities": 0,
         "replyRate": 0,
@@ -29957,7 +29932,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
       {
         "dimension": "channel",
         "variant": "email",
-        "sampleSize": 275,
+        "sampleSize": 276,
         "observedReplyRate": 0,
         "recommendation": "use_as_bounded_allocation_signal"
       },
@@ -29971,12 +29946,12 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
     ]
   },
   "ownerSummary": {
-    "generatedAt": "2026-08-13T02:52:28.774Z",
+    "generatedAt": "2026-08-13T02:55:27.564Z",
     "phase": "autonomous_sales_operating_system_v1",
     "kpis": {
       "companies": 486,
       "permanentlySuppressed": 373,
-      "plannedActions": 11,
+      "plannedActions": 12,
       "verifiedEvidenceRoutes": 302
     },
     "decisions": [
@@ -30011,6 +29986,16 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
         "reason": "highest_priority_verified_channel"
       },
       {
+        "companyId": "company_7e3d1608b38203d0",
+        "company": "RTIC Mexico",
+        "action": "first_touch",
+        "channel": "email",
+        "evidenceScore": 100,
+        "evidenceUrl": "https://rtic.mx/products/hilera-rtic-45-hard-cooler",
+        "alternatives": [],
+        "reason": "highest_priority_verified_channel"
+      },
+      {
         "companyId": "company_ca049a336c94b7d9",
         "company": "Left Point Distribution",
         "action": "first_touch",
@@ -30021,12 +30006,12 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
         "reason": "highest_priority_verified_channel"
       },
       {
-        "companyId": "company_7e3d1608b38203d0",
-        "company": "RTIC Mexico",
+        "companyId": "company_152c4973e4cf4ec0",
+        "company": "Obelink",
         "action": "first_touch",
         "channel": "website_form",
         "evidenceScore": 100,
-        "evidenceUrl": "https://rtic.mx/products/hilera-rtic-45-hard-cooler",
+        "evidenceUrl": "https://www.obelink.nl/obelink-partnerprogramma",
         "alternatives": [],
         "reason": "highest_priority_verified_channel"
       },
@@ -30071,16 +30056,6 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
         "evidenceUrl": "https://www.intersport.no/",
         "alternatives": [],
         "reason": "highest_priority_verified_channel"
-      },
-      {
-        "companyId": "company_59ce4ef4f0fd1d03",
-        "company": "Outdoors Ramsey",
-        "action": "first_touch",
-        "channel": "email",
-        "evidenceScore": 100,
-        "evidenceUrl": "https://www.outdoorsramsey.co.uk/",
-        "alternatives": [],
-        "reason": "highest_priority_verified_channel"
       }
     ],
     "exceptions": [
@@ -30088,7 +30063,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
         "code": "verified_channel_capacity_gap",
         "severity": "warning",
         "detail": {
-          "email": 6,
+          "email": 5,
           "website_form": 0,
           "linkedin": 4,
           "facebook": 1,
@@ -30127,7 +30102,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
         },
         {
           "channel": "email",
-          "confirmed": 275,
+          "confirmed": 276,
           "replies": 0,
           "opportunities": 0,
           "replyRate": 0,
@@ -30178,7 +30153,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
         {
           "dimension": "channel",
           "variant": "email",
-          "sampleSize": 275,
+          "sampleSize": 276,
           "observedReplyRate": 0,
           "recommendation": "use_as_bounded_allocation_signal"
         },

@@ -134,6 +134,17 @@ function cachedVerificationFromRows(rows = []) {
   };
 }
 
+function promoteVerifiedEmailRow(row = {}) {
+  if (!String(row.publicEmail || row.contactEmail || '').includes('@')) return row;
+  const platform = String(row.platform || '').toLowerCase();
+  if (['facebook', 'instagram', 'linkedin'].includes(platform)) return row;
+  row.platform = 'email';
+  row.channelType = 'email';
+  row.action = 'email_priority';
+  row.reason = 'official_public_business_email_verified';
+  return row;
+}
+
 function applyCachedVerification(rows = [], cached = {}) {
   for (const row of rows) {
     if (cached.firstPartyChannelVerification) row.firstPartyChannelVerification = cached.firstPartyChannelVerification;
@@ -144,6 +155,7 @@ function applyCachedVerification(rows = [], cached = {}) {
       row.contactEmail = cached.publicEmail;
       row.emailVerificationStatus = cached.emailVerificationStatus || 'official_public_business_email';
       row.emailEvidence = 'first_party_live_page_cache';
+      promoteVerifiedEmailRow(row);
     }
     if ((cached.socialProfiles || []).some(url => sameSocialProfile(url, row.platformUrl || row.url))) {
       row.officialSocialProfileVerified = true;
@@ -198,6 +210,7 @@ async function enrichCompany(rows) {
       row.emailVerificationStatus = 'official_public_business_email';
       row.emailEvidence = 'first_party_live_page';
     }
+    promoteVerifiedEmailRow(row);
   }
   return { company, ok: Boolean(best && best.ok), evidenceUrl: best && best.finalUrl || '', signals: inspected.signals, cache: cachedVerificationFromRows(rows) };
 }
