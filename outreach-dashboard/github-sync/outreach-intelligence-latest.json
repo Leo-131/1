@@ -1,64 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-13T03:12:25.762Z",
+  "generatedAt": "2026-08-13T03:14:01.727Z",
   "companies": [
-    {
-      "companyId": "company_225429e5c5b348e2",
-      "company": "Yates Outdoor Sales",
-      "keys": [
-        "yatesoutdoorsales",
-        "yatesoutdoorcom"
-      ],
-      "domains": [
-        "yatesoutdoor.com"
-      ],
-      "channels": [
-        "email"
-      ],
-      "evidence": [
-        {
-          "channel": "email",
-          "score": 100,
-          "verified": true,
-          "reasons": [
-            "official_business_route"
-          ],
-          "evidenceUrl": "https://www.yatesoutdoor.com/about",
-          "checkedAt": ""
-        },
-        {
-          "channel": "email",
-          "score": 100,
-          "verified": true,
-          "reasons": [
-            "official_business_route"
-          ],
-          "evidenceUrl": "https://www.yatesoutdoor.com/about",
-          "checkedAt": ""
-        },
-        {
-          "channel": "email",
-          "score": 100,
-          "verified": true,
-          "reasons": [
-            "official_business_route"
-          ],
-          "evidenceUrl": "https://www.yatesoutdoor.com/about",
-          "checkedAt": ""
-        },
-        {
-          "channel": "research",
-          "score": 100,
-          "verified": true,
-          "reasons": [
-            "official_business_route"
-          ],
-          "evidenceUrl": "https://www.yatesoutdoor.com/about",
-          "checkedAt": "2026-08-13T03:20:00.000Z"
-        }
-      ],
-      "history": []
-    },
     {
       "companyId": "company_6da9ffc8d986b655",
       "company": "Sideways Distribution",
@@ -6839,6 +6782,109 @@
       ]
     },
     {
+      "companyId": "company_819cc04fe9060117",
+      "company": "Intersport Norway",
+      "keys": [
+        "intersportnorway",
+        "intersportno"
+      ],
+      "domains": [
+        "intersport.no"
+      ],
+      "channels": [
+        "website_form",
+        "facebook"
+      ],
+      "evidence": [
+        {
+          "channel": "facebook",
+          "score": 95,
+          "verified": true,
+          "reasons": [
+            "official_site_cross_verified_social"
+          ],
+          "evidenceUrl": "https://www.intersport.no/",
+          "checkedAt": "2026-08-12T13:08:17.199Z"
+        },
+        {
+          "channel": "website_form",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
+          "checkedAt": ""
+        },
+        {
+          "channel": "website_form",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
+          "checkedAt": ""
+        }
+      ],
+      "history": [
+        {
+          "status": "failed_open",
+          "timestamp": "2026-07-17T03:08:23.123Z",
+          "channel": "facebook",
+          "evidence": "facebook_profile_no_message_button"
+        },
+        {
+          "status": "failed_open",
+          "timestamp": "2026-07-29T10:32:27.741Z",
+          "channel": "facebook",
+          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;personal_profile_without_company_match_expected_Intersport Norway_title_Facebook;contact_path_strategy_v2"
+        },
+        {
+          "status": "failed_open",
+          "timestamp": "2026-07-29T10:35:24.888Z",
+          "channel": "website_form",
+          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;personal_profile_without_company_match_expected_Intersport Norway_title_Facebook;contact_path_strategy_v2"
+        },
+        {
+          "status": "failed_open",
+          "timestamp": "2026-07-29T10:36:57.221Z",
+          "channel": "facebook",
+          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;identity_mismatch_expected_Intersport Norway_title_Facebook;contact_path_strategy_v2"
+        },
+        {
+          "status": "failed_open",
+          "timestamp": "2026-07-29T10:40:05.598Z",
+          "channel": "website_form",
+          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;identity_mismatch_expected_Intersport Norway_title_Facebook;contact_path_strategy_v2"
+        },
+        {
+          "status": "failed_open",
+          "timestamp": "2026-08-04T12:04:11.277Z",
+          "channel": "facebook",
+          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;identity_mismatch_expected_Intersport Norway_title_Facebook;contact_path_strategy_v2"
+        },
+        {
+          "status": "failed_open",
+          "timestamp": "2026-08-04T12:37:48.077Z",
+          "channel": "website_form",
+          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;identity_mismatch_expected_Intersport Norway_title_Facebook;contact_path_strategy_v2"
+        },
+        {
+          "status": "failed_open",
+          "timestamp": "2026-08-05T02:00:11.658Z",
+          "channel": "facebook",
+          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;identity_mismatch_expected_Intersport Norway_title_www.facebook.com;contact_path_strategy_v2"
+        },
+        {
+          "status": "failed_open",
+          "timestamp": "2026-08-05T03:01:21.601Z",
+          "channel": "website_form",
+          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;identity_mismatch_expected_Intersport Norway_title_www.facebook.com;contact_path_strategy_v2"
+        }
+      ]
+    },
+    {
       "companyId": "company_c864d4d897a3e868",
       "company": "EET Group",
       "keys": [
@@ -7516,6 +7562,50 @@
       ]
     },
     {
+      "companyId": "company_225429e5c5b348e2",
+      "company": "Yates Outdoor Sales",
+      "keys": [
+        "yatesoutdoorsales",
+        "yatesoutdoorcom"
+      ],
+      "domains": [
+        "yatesoutdoor.com"
+      ],
+      "channels": [
+        "email"
+      ],
+      "evidence": [
+        {
+          "channel": "email",
+          "score": 100,
+          "verified": true,
+          "reasons": [
+            "official_business_route"
+          ],
+          "evidenceUrl": "https://www.yatesoutdoor.com/about",
+          "checkedAt": ""
+        },
+        {
+          "channel": "research",
+          "score": 100,
+          "verified": true,
+          "reasons": [
+            "official_business_route"
+          ],
+          "evidenceUrl": "https://www.yatesoutdoor.com/about",
+          "checkedAt": "2026-08-13T03:20:00.000Z"
+        }
+      ],
+      "history": [
+        {
+          "status": "sent_confirmed",
+          "timestamp": "2026-08-13T03:12:55.463Z",
+          "channel": "email",
+          "evidence": "smtp_accepted;message_id:<713e0d62-700e-9a2c-f79c-4b026941d072@flextailgear.com>;sent_folder_message_confirmed;contact_path_strategy_v2"
+        }
+      ]
+    },
+    {
       "companyId": "company_7b9923a731b8127f",
       "company": "Vigos Group",
       "keys": [
@@ -7537,7 +7627,7 @@
           "reasons": [
             "official_business_route"
           ],
-          "evidenceUrl": "https://vigosgroup.com/",
+          "evidenceUrl": "https://vigosgroup.com/contact",
           "checkedAt": ""
         },
         {
@@ -20526,99 +20616,6 @@
       ]
     },
     {
-      "companyId": "company_819cc04fe9060117",
-      "company": "Intersport Norway",
-      "keys": [
-        "intersportnorway",
-        "intersportno"
-      ],
-      "domains": [
-        "intersport.no"
-      ],
-      "channels": [
-        "facebook",
-        "website_form"
-      ],
-      "evidence": [
-        {
-          "channel": "facebook",
-          "score": 95,
-          "verified": true,
-          "reasons": [
-            "official_site_cross_verified_social"
-          ],
-          "evidenceUrl": "https://www.intersport.no/",
-          "checkedAt": "2026-08-12T13:08:17.199Z"
-        },
-        {
-          "channel": "website_form",
-          "score": 0,
-          "verified": false,
-          "reasons": [
-            "unverified_external_evidence_rejected"
-          ],
-          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
-          "checkedAt": ""
-        }
-      ],
-      "history": [
-        {
-          "status": "failed_open",
-          "timestamp": "2026-07-17T03:08:23.123Z",
-          "channel": "facebook",
-          "evidence": "facebook_profile_no_message_button"
-        },
-        {
-          "status": "failed_open",
-          "timestamp": "2026-07-29T10:32:27.741Z",
-          "channel": "facebook",
-          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;personal_profile_without_company_match_expected_Intersport Norway_title_Facebook;contact_path_strategy_v2"
-        },
-        {
-          "status": "failed_open",
-          "timestamp": "2026-07-29T10:35:24.888Z",
-          "channel": "website_form",
-          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;personal_profile_without_company_match_expected_Intersport Norway_title_Facebook;contact_path_strategy_v2"
-        },
-        {
-          "status": "failed_open",
-          "timestamp": "2026-07-29T10:36:57.221Z",
-          "channel": "facebook",
-          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;identity_mismatch_expected_Intersport Norway_title_Facebook;contact_path_strategy_v2"
-        },
-        {
-          "status": "failed_open",
-          "timestamp": "2026-07-29T10:40:05.598Z",
-          "channel": "website_form",
-          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;identity_mismatch_expected_Intersport Norway_title_Facebook;contact_path_strategy_v2"
-        },
-        {
-          "status": "failed_open",
-          "timestamp": "2026-08-04T12:04:11.277Z",
-          "channel": "facebook",
-          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;identity_mismatch_expected_Intersport Norway_title_Facebook;contact_path_strategy_v2"
-        },
-        {
-          "status": "failed_open",
-          "timestamp": "2026-08-04T12:37:48.077Z",
-          "channel": "website_form",
-          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;identity_mismatch_expected_Intersport Norway_title_Facebook;contact_path_strategy_v2"
-        },
-        {
-          "status": "failed_open",
-          "timestamp": "2026-08-05T02:00:11.658Z",
-          "channel": "facebook",
-          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;identity_mismatch_expected_Intersport Norway_title_www.facebook.com;contact_path_strategy_v2"
-        },
-        {
-          "status": "failed_open",
-          "timestamp": "2026-08-05T03:01:21.601Z",
-          "channel": "website_form",
-          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;identity_mismatch_expected_Intersport Norway_title_www.facebook.com;contact_path_strategy_v2"
-        }
-      ]
-    },
-    {
       "companyId": "company_7d3e60103956de7c",
       "company": "Mammut Store",
       "keys": [
@@ -26513,6 +26510,16 @@
       "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;facebook_send_clicked_but_confirmation_missing;verified_draft_present_before_irreversible_action;explicit_send_control_verified;facebook_draft_inserted_verified;;contact_path_strategy_v2"
     },
     {
+      "companyId": "company_225429e5c5b348e2",
+      "company": "Yates Outdoor Sales",
+      "permanent": true,
+      "crossChannel": true,
+      "reason": "previous_customer_development_no_repeat",
+      "sourceStatus": "sent_confirmed",
+      "sourceTimestamp": "2026-08-13T03:12:55.463Z",
+      "evidence": "smtp_accepted;message_id:<713e0d62-700e-9a2c-f79c-4b026941d072@flextailgear.com>;sent_folder_message_confirmed;contact_path_strategy_v2"
+    },
+    {
       "companyId": "company_7b9923a731b8127f",
       "company": "Vigos Group",
       "permanent": true,
@@ -30136,16 +30143,6 @@
   "portfolio": {
     "actions": [
       {
-        "companyId": "company_225429e5c5b348e2",
-        "company": "Yates Outdoor Sales",
-        "action": "first_touch",
-        "channel": "email",
-        "evidenceScore": 100,
-        "evidenceUrl": "https://www.yatesoutdoor.com/about",
-        "alternatives": [],
-        "reason": "highest_priority_verified_channel"
-      },
-      {
         "companyId": "company_3a1069183f830012",
         "company": "Sanitas Sales Group",
         "action": "first_touch",
@@ -30216,6 +30213,16 @@
         "reason": "highest_priority_verified_channel"
       },
       {
+        "companyId": "company_819cc04fe9060117",
+        "company": "Intersport Norway",
+        "action": "first_touch",
+        "channel": "facebook",
+        "evidenceScore": 95,
+        "evidenceUrl": "https://www.intersport.no/",
+        "alternatives": [],
+        "reason": "highest_priority_verified_channel"
+      },
+      {
         "companyId": "company_52934be907df212f",
         "company": "Boardwalk Sales Agency",
         "action": "first_touch",
@@ -30248,16 +30255,6 @@
         "reason": "highest_priority_verified_channel"
       },
       {
-        "companyId": "company_819cc04fe9060117",
-        "company": "Intersport Norway",
-        "action": "first_touch",
-        "channel": "facebook",
-        "evidenceScore": 95,
-        "evidenceUrl": "https://www.intersport.no/",
-        "alternatives": [],
-        "reason": "highest_priority_verified_channel"
-      },
-      {
         "companyId": "company_59ce4ef4f0fd1d03",
         "company": "Outdoors Ramsey",
         "action": "first_touch",
@@ -30286,14 +30283,14 @@
       "instagram": 3
     },
     "used": {
-      "email": 7,
+      "email": 6,
       "website_form": 5,
       "linkedin": 0,
       "facebook": 2,
       "instagram": 0
     },
     "gaps": {
-      "email": 3,
+      "email": 4,
       "website_form": 0,
       "linkedin": 4,
       "facebook": 1,
@@ -30331,7 +30328,7 @@
       },
       {
         "channel": "email",
-        "confirmed": 283,
+        "confirmed": 284,
         "replies": 0,
         "opportunities": 0,
         "replyRate": 0,
@@ -30382,7 +30379,7 @@
       {
         "dimension": "channel",
         "variant": "email",
-        "sampleSize": 283,
+        "sampleSize": 284,
         "observedReplyRate": 0,
         "recommendation": "use_as_bounded_allocation_signal"
       },
@@ -30396,25 +30393,15 @@
     ]
   },
   "ownerSummary": {
-    "generatedAt": "2026-08-13T03:12:25.762Z",
+    "generatedAt": "2026-08-13T03:14:01.727Z",
     "phase": "autonomous_sales_operating_system_v1",
     "kpis": {
       "companies": 491,
-      "permanentlySuppressed": 377,
-      "plannedActions": 14,
-      "verifiedEvidenceRoutes": 327
+      "permanentlySuppressed": 378,
+      "plannedActions": 13,
+      "verifiedEvidenceRoutes": 325
     },
     "decisions": [
-      {
-        "companyId": "company_225429e5c5b348e2",
-        "company": "Yates Outdoor Sales",
-        "action": "first_touch",
-        "channel": "email",
-        "evidenceScore": 100,
-        "evidenceUrl": "https://www.yatesoutdoor.com/about",
-        "alternatives": [],
-        "reason": "highest_priority_verified_channel"
-      },
       {
         "companyId": "company_3a1069183f830012",
         "company": "Sanitas Sales Group",
@@ -30486,6 +30473,16 @@
         "reason": "highest_priority_verified_channel"
       },
       {
+        "companyId": "company_819cc04fe9060117",
+        "company": "Intersport Norway",
+        "action": "first_touch",
+        "channel": "facebook",
+        "evidenceScore": 95,
+        "evidenceUrl": "https://www.intersport.no/",
+        "alternatives": [],
+        "reason": "highest_priority_verified_channel"
+      },
+      {
         "companyId": "company_52934be907df212f",
         "company": "Boardwalk Sales Agency",
         "action": "first_touch",
@@ -30511,7 +30508,7 @@
         "code": "verified_channel_capacity_gap",
         "severity": "warning",
         "detail": {
-          "email": 3,
+          "email": 4,
           "website_form": 0,
           "linkedin": 4,
           "facebook": 1,
@@ -30550,7 +30547,7 @@
         },
         {
           "channel": "email",
-          "confirmed": 283,
+          "confirmed": 284,
           "replies": 0,
           "opportunities": 0,
           "replyRate": 0,
@@ -30601,7 +30598,7 @@
         {
           "dimension": "channel",
           "variant": "email",
-          "sampleSize": 283,
+          "sampleSize": 284,
           "observedReplyRate": 0,
           "recommendation": "use_as_bounded_allocation_signal"
         },
