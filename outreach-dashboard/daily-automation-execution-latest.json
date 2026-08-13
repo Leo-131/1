@@ -1,5 +1,5 @@
 {
-  "ok": true,
+  "ok": false,
   "browserTransportRequested": "codex-extension-first",
   "browserTransportUsed": "cdp",
   "browserTransportFallbackReason": "extension_bridge_not_available_process_local_cdp",
@@ -8,448 +8,100 @@
   "chromeStage": "opened",
   "chromeOpened": true,
   "chromeOpenedCount": 1,
-  "customerDevelopmentPerformed": true,
-  "customerMessageSent": true,
-  "realDevelopmentCount": 5,
-  "reportingVerdict": "development_performed",
+  "customerDevelopmentPerformed": false,
+  "customerMessageSent": false,
+  "realDevelopmentCount": 0,
+  "reportingVerdict": "no_customer_development_performed",
   "engine": "Browser transport queue bridge",
   "mode": "serial-single-target",
   "batchMode": "parallel-batches",
   "parallelLimit": 1,
-  "limit": 50,
+  "limit": 25,
   "queueDate": "2026-08-13",
   "queueSource": "dailyPotentialPool",
   "executed": [
     {
-      "id": "google-customer-midwest-outdoor-sales-website-contact",
-      "company": "Midwest Outdoor Sales",
+      "id": "google-customer-sideways-distribution-website-contact",
+      "company": "Sideways Distribution",
       "action": "email_priority",
       "platform": "website_form",
-      "targetUrl": "https://www.midwestoutdoorsales.com/contact-us",
-      "ok": true,
-      "sendStatus": "sent_confirmed",
-      "evidence": "smtp_accepted;message_id:<cefee7b4-e24d-5467-25c9-a00749d39386@flextailgear.com>;sent_folder_message_confirmed;contact_path_strategy_v2",
-      "timestamp": "2026-08-13T02:30:20.908Z",
-      "chromeOpen": null,
-      "result": {
-        "ok": true,
-        "sendStatus": "sent_confirmed",
-        "reason": "sent_folder_message_confirmed",
-        "evidence": "smtp_accepted;message_id:<cefee7b4-e24d-5467-25c9-a00749d39386@flextailgear.com>;sent_folder_message_confirmed;contact_path_strategy_v2",
-        "recipientEmail": "jeff@midwestoutdoorsales.com",
-        "messageId": "<cefee7b4-e24d-5467-25c9-a00749d39386@flextailgear.com>",
-        "sentAt": "2026-08-13T02:30:18.869Z",
-        "sentFolder": "已发送",
-        "sentUid": 3250,
-        "contentValidation": {
-          "ok": true,
-          "errors": [],
-          "words": 110
-        },
-        "engine": "alibaba-enterprise-mail-smtp-imap",
-        "mode": "alibaba_email_sent_folder_confirmed",
-        "targetUrl": "mailto:jeff@midwestoutdoorsales.com",
-        "subject": "FLEXTAIL retail partnership | 2026 assortment",
-        "draft": "Dear Midwest Outdoor Sales Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
-        "output": "{\"verdict\":\"sent_confirmed\",\"sendStatus\":\"sent_confirmed\",\"evidence\":\"smtp_accepted;message_id:<cefee7b4-e24d-5467-25c9-a00749d39386@flextailgear.com>;sent_folder_message_confirmed;contact_path_strategy_v2\",\"nextAction\":\"Alibaba Mail accepted the message and the matching record exists in Sent.\",\"recipientEmail\":\"jeff@midwestoutdoorsales.com\",\"messageId\":\"<cefee7b4-e24d-5467-25c9-a00749d39386@flextailgear.com>\"}"
-      }
-    },
-    {
-      "id": "google-customer-green-river-sales-group-website-contact",
-      "company": "Green River Sales Group",
-      "action": "email_priority",
-      "platform": "website_form",
-      "targetUrl": "https://www.greenriversales.com/ourteam",
-      "ok": true,
-      "sendStatus": "sent_confirmed",
-      "evidence": "smtp_accepted;message_id:<d43e08b1-110c-9226-e2cb-17b57be2f38b@flextailgear.com>;sent_folder_message_confirmed;contact_path_strategy_v2",
-      "timestamp": "2026-08-13T02:30:27.022Z",
-      "chromeOpen": null,
-      "result": {
-        "ok": true,
-        "sendStatus": "sent_confirmed",
-        "reason": "sent_folder_message_confirmed",
-        "evidence": "smtp_accepted;message_id:<d43e08b1-110c-9226-e2cb-17b57be2f38b@flextailgear.com>;sent_folder_message_confirmed;contact_path_strategy_v2",
-        "recipientEmail": "pat@greenriversales.com",
-        "messageId": "<d43e08b1-110c-9226-e2cb-17b57be2f38b@flextailgear.com>",
-        "sentAt": "2026-08-13T02:30:25.109Z",
-        "sentFolder": "已发送",
-        "sentUid": 3251,
-        "contentValidation": {
-          "ok": true,
-          "errors": [],
-          "words": 110
-        },
-        "engine": "alibaba-enterprise-mail-smtp-imap",
-        "mode": "alibaba_email_sent_folder_confirmed",
-        "targetUrl": "mailto:pat@greenriversales.com",
-        "subject": "FLEXTAIL retail partnership | 2026 assortment",
-        "draft": "Dear Green River Sales Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
-        "output": "{\"verdict\":\"sent_confirmed\",\"sendStatus\":\"sent_confirmed\",\"evidence\":\"smtp_accepted;message_id:<d43e08b1-110c-9226-e2cb-17b57be2f38b@flextailgear.com>;sent_folder_message_confirmed;contact_path_strategy_v2\",\"nextAction\":\"Alibaba Mail accepted the message and the matching record exists in Sent.\",\"recipientEmail\":\"pat@greenriversales.com\",\"messageId\":\"<d43e08b1-110c-9226-e2cb-17b57be2f38b@flextailgear.com>\"}"
-      }
-    },
-    {
-      "id": "google-customer-end2end-outdoor-website-contact",
-      "company": "End2End Outdoor",
-      "action": "email_priority",
-      "platform": "website_form",
-      "targetUrl": "https://end2endoutdoor.com/",
-      "ok": true,
-      "sendStatus": "sent_confirmed",
-      "evidence": "smtp_accepted;message_id:<1a08dde8-1901-ab69-83ea-50edfd29d4ad@flextailgear.com>;sent_folder_message_confirmed;contact_path_strategy_v2",
-      "timestamp": "2026-08-13T02:30:33.448Z",
-      "chromeOpen": null,
-      "result": {
-        "ok": true,
-        "sendStatus": "sent_confirmed",
-        "reason": "sent_folder_message_confirmed",
-        "evidence": "smtp_accepted;message_id:<1a08dde8-1901-ab69-83ea-50edfd29d4ad@flextailgear.com>;sent_folder_message_confirmed;contact_path_strategy_v2",
-        "recipientEmail": "conner@end2endoutdoor.com",
-        "messageId": "<1a08dde8-1901-ab69-83ea-50edfd29d4ad@flextailgear.com>",
-        "sentAt": "2026-08-13T02:30:31.728Z",
-        "sentFolder": "已发送",
-        "sentUid": 3252,
-        "contentValidation": {
-          "ok": true,
-          "errors": [],
-          "words": 109
-        },
-        "engine": "alibaba-enterprise-mail-smtp-imap",
-        "mode": "alibaba_email_sent_folder_confirmed",
-        "targetUrl": "mailto:conner@end2endoutdoor.com",
-        "subject": "FLEXTAIL retail partnership | 2026 assortment",
-        "draft": "Dear End2End Outdoor Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
-        "output": "{\"verdict\":\"sent_confirmed\",\"sendStatus\":\"sent_confirmed\",\"evidence\":\"smtp_accepted;message_id:<1a08dde8-1901-ab69-83ea-50edfd29d4ad@flextailgear.com>;sent_folder_message_confirmed;contact_path_strategy_v2\",\"nextAction\":\"Alibaba Mail accepted the message and the matching record exists in Sent.\",\"recipientEmail\":\"conner@end2endoutdoor.com\",\"messageId\":\"<1a08dde8-1901-ab69-83ea-50edfd29d4ad@flextailgear.com>\"}"
-      }
-    },
-    {
-      "id": "google-customer-reach-sales-group-website-contact",
-      "company": "Reach Sales Group",
-      "action": "email_priority",
-      "platform": "website_form",
-      "targetUrl": "https://www.reach-salesgroup.com/",
-      "ok": true,
-      "sendStatus": "sent_confirmed",
-      "evidence": "smtp_accepted;message_id:<78f6add4-d25f-6c61-099a-ed4c08d44b1b@flextailgear.com>;sent_folder_message_confirmed;contact_path_strategy_v2",
-      "timestamp": "2026-08-13T02:30:39.897Z",
-      "chromeOpen": null,
-      "result": {
-        "ok": true,
-        "sendStatus": "sent_confirmed",
-        "reason": "sent_folder_message_confirmed",
-        "evidence": "smtp_accepted;message_id:<78f6add4-d25f-6c61-099a-ed4c08d44b1b@flextailgear.com>;sent_folder_message_confirmed;contact_path_strategy_v2",
-        "recipientEmail": "erik@reach-salesgroup.com",
-        "messageId": "<78f6add4-d25f-6c61-099a-ed4c08d44b1b@flextailgear.com>",
-        "sentAt": "2026-08-13T02:30:38.277Z",
-        "sentFolder": "已发送",
-        "sentUid": 3253,
-        "contentValidation": {
-          "ok": true,
-          "errors": [],
-          "words": 109
-        },
-        "engine": "alibaba-enterprise-mail-smtp-imap",
-        "mode": "alibaba_email_sent_folder_confirmed",
-        "targetUrl": "mailto:erik@reach-salesgroup.com",
-        "subject": "FLEXTAIL retail partnership | 2026 assortment",
-        "draft": "Dear Reach Sales Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
-        "output": "{\"verdict\":\"sent_confirmed\",\"sendStatus\":\"sent_confirmed\",\"evidence\":\"smtp_accepted;message_id:<78f6add4-d25f-6c61-099a-ed4c08d44b1b@flextailgear.com>;sent_folder_message_confirmed;contact_path_strategy_v2\",\"nextAction\":\"Alibaba Mail accepted the message and the matching record exists in Sent.\",\"recipientEmail\":\"erik@reach-salesgroup.com\",\"messageId\":\"<78f6add4-d25f-6c61-099a-ed4c08d44b1b@flextailgear.com>\"}"
-      }
-    },
-    {
-      "id": "google-customer-sharp-end-sales-website-contact",
-      "company": "Sharp End Sales",
-      "action": "email_priority",
-      "platform": "website_form",
-      "targetUrl": "https://www.sharpendsales.com/",
-      "ok": true,
-      "sendStatus": "sent_confirmed",
-      "evidence": "smtp_accepted;message_id:<c84a47db-6099-c71f-46fa-bee1cad6bc63@flextailgear.com>;sent_folder_message_confirmed;contact_path_strategy_v2",
-      "timestamp": "2026-08-13T02:30:46.386Z",
-      "chromeOpen": null,
-      "result": {
-        "ok": true,
-        "sendStatus": "sent_confirmed",
-        "reason": "sent_folder_message_confirmed",
-        "evidence": "smtp_accepted;message_id:<c84a47db-6099-c71f-46fa-bee1cad6bc63@flextailgear.com>;sent_folder_message_confirmed;contact_path_strategy_v2",
-        "recipientEmail": "greydon@sharpendsales.com",
-        "messageId": "<c84a47db-6099-c71f-46fa-bee1cad6bc63@flextailgear.com>",
-        "sentAt": "2026-08-13T02:30:44.778Z",
-        "sentFolder": "已发送",
-        "sentUid": 3254,
-        "contentValidation": {
-          "ok": true,
-          "errors": [],
-          "words": 110
-        },
-        "engine": "alibaba-enterprise-mail-smtp-imap",
-        "mode": "alibaba_email_sent_folder_confirmed",
-        "targetUrl": "mailto:greydon@sharpendsales.com",
-        "subject": "FLEXTAIL retail partnership | 2026 assortment",
-        "draft": "Dear Sharp End Sales Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
-        "output": "{\"verdict\":\"sent_confirmed\",\"sendStatus\":\"sent_confirmed\",\"evidence\":\"smtp_accepted;message_id:<c84a47db-6099-c71f-46fa-bee1cad6bc63@flextailgear.com>;sent_folder_message_confirmed;contact_path_strategy_v2\",\"nextAction\":\"Alibaba Mail accepted the message and the matching record exists in Sent.\",\"recipientEmail\":\"greydon@sharpendsales.com\",\"messageId\":\"<c84a47db-6099-c71f-46fa-bee1cad6bc63@flextailgear.com>\"}"
-      }
-    },
-    {
-      "id": "google-customer-sanitas-sales-group-website-contact",
-      "company": "Sanitas Sales Group",
-      "action": "email_priority",
-      "platform": "website_form",
-      "targetUrl": "https://sanitassalesgroup.com/contact/",
+      "targetUrl": "https://www.beaverwax.com/pages/new-contact",
       "ok": false,
       "sendStatus": "website_contact_unreachable_skip",
-      "evidence": "unavailable_profile_page: Skip to primary navigation\nSkip to main content\nSkip to footer\n\nSANITAS SALES GROUP\n\nSales and marketing contractors serving the greater Rocky Mountain region\n\nBRANDS\n \nOUR TERRITO;website_contact_all_targets_failed:6;contact_path_strategy_v2",
-      "timestamp": "2026-08-13T02:31:36.989Z",
+      "evidence": "website_contact_entry_not_verified;contact_entry_clicked:Proform Request Form;public_email_fallback_available:shanebardiau.pnw@gmail.com;email_sender_not_configured;website_contact_all_targets_failed:1;contact_path_strategy_v2",
+      "timestamp": "2026-08-13T02:35:18.214Z",
       "chromeOpen": {
-        "ok": false,
+        "ok": true,
         "engine": "codex-chrome-cdp",
         "port": 9224,
-        "targetUrl": "https://sanitassalesgroup.com/help/contact-us",
-        "tabId": "45358B98492AE4BD831C5B5B80164988",
-        "title": "Page not found – Sanitas Sales Group",
-        "status": "failed_open",
-        "error": "profile_unavailable_or_broken_link",
-        "evidence": "unavailable_profile_page: Skip to primary navigation\nSkip to main content\nSkip to footer\n\nSANITAS SALES GROUP\n\nSales and marketing contractors serving the greater Rocky Mountain region\n\nBRANDS\n \nOUR TERRITO"
+        "targetUrl": "https://www.beaverwax.com/pages/new-contact",
+        "tabId": "15E2DC3B5CE3CEB0A5F6179C1B62D09E",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/15E2DC3B5CE3CEB0A5F6179C1B62D09E",
+        "title": "New Contact – BeaverWax"
       },
       "result": {
         "ok": false,
         "engine": "dedicated-chrome-cdp-website-contact",
         "browserEngine": "codex-chrome-cdp",
         "mode": "website_contact_unreachable_skip",
-        "targetUrl": "https://sanitassalesgroup.com/help/contact-us",
+        "targetUrl": "https://www.beaverwax.com/pages/new-contact",
         "chromeOpen": {
-          "ok": false,
+          "ok": true,
           "engine": "codex-chrome-cdp",
           "port": 9224,
-          "targetUrl": "https://sanitassalesgroup.com/help/contact-us",
-          "tabId": "45358B98492AE4BD831C5B5B80164988",
-          "title": "Page not found – Sanitas Sales Group",
-          "status": "failed_open",
-          "error": "profile_unavailable_or_broken_link",
-          "evidence": "unavailable_profile_page: Skip to primary navigation\nSkip to main content\nSkip to footer\n\nSANITAS SALES GROUP\n\nSales and marketing contractors serving the greater Rocky Mountain region\n\nBRANDS\n \nOUR TERRITO"
+          "targetUrl": "https://www.beaverwax.com/pages/new-contact",
+          "tabId": "15E2DC3B5CE3CEB0A5F6179C1B62D09E",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/15E2DC3B5CE3CEB0A5F6179C1B62D09E",
+          "title": "New Contact – BeaverWax"
         },
         "sendStatus": "website_contact_unreachable_skip",
         "subject": "FLEXTAIL retail partnership | 2026 assortment",
-        "draft": "Dear Sanitas Sales Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
-        "evidence": "unavailable_profile_page: Skip to primary navigation\nSkip to main content\nSkip to footer\n\nSANITAS SALES GROUP\n\nSales and marketing contractors serving the greater Rocky Mountain region\n\nBRANDS\n \nOUR TERRITO;website_contact_all_targets_failed:6;contact_path_strategy_v2",
-        "output": "{\"verdict\":\"website_contact_unreachable_skip\",\"evidence\":\"unavailable_profile_page: Skip to primary navigation\\nSkip to main content\\nSkip to footer\\n\\nSANITAS SALES GROUP\\n\\nSales and marketing contractors serving the greater Rocky Mountain region\\n\\nBRANDS\\n \\nOUR TERRITO;website_contact_all_targets_failed:6;contact_path_strategy_v2\",\"subject\":\"FLEXTAIL retail partnership | 2026 assortment\",\"draft\":\"Dear Sanitas Sales Team,\\n\\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\\n\\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\\n\\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\\n\\nProduct overview: https://www.flextail.com/\\n\\nBest regards,\\nLeo Liu\\nSales & Operations Director\\nLeo@flextailgear.com\",\"sendStatus\":\"website_contact_unreachable_skip\",\"attempts\":[{\"targetUrl\":\"https://sanitassalesgroup.com/contact/\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;contact_entry_clicked:Skip to primary navigation\"},{\"targetUrl\":\"https://sanitassalesgroup.com/\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;contact_entry_clicked:Skip to primary navigation\"},{\"targetUrl\":\"https://sanitassalesgroup.com/pages/contact-us\",\"sendStatus\":\"failed_open\",\"evidence\":\"unavailable_profile_page: Skip to primary navigation\\nSkip to main content\\nSkip to footer\\n\\nSANITAS SALES GROUP\\n\\nSales and marketing contractors serving the greater Rocky Mountain region\\n\\nBRANDS\\n \\nOUR TERRITO\"},{\"targetUrl\":\"https://sanitassalesgroup.com/pages/contact\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;contact_entry_clicked:Skip to primary navigation\"},{\"targetUrl\":\"https://sanitassalesgroup.com/contact-us\",\"sendStatus\":\"failed_open\",\"evidence\":\"unavailable_profile_page: Skip to primary navigation\\nSkip to main content\\nSkip to footer\\n\\nSANITAS SALES GROUP\\n\\nSales and marketing contractors serving the greater Rocky Mountain region\\n\\nBRANDS\\n \\nOUR TERRITO\"},{\"targetUrl\":\"https://sanitassalesgroup.com/help/contact-us\",\"sendStatus\":\"failed_open\",\"evidence\":\"unavailable_profile_page: Skip to primary navigation\\nSkip to main content\\nSkip to footer\\n\\nSANITAS SALES GROUP\\n\\nSales and marketing contractors serving the greater Rocky Mountain region\\n\\nBRANDS\\n \\nOUR TERRITO\"}],\"nextAction\":\"Official website contact was unreachable or not machine-verifiable. Skip this website route now, note it clearly, and continue with LinkedIn, Facebook, Instagram, or another verified official channel.\"}"
+        "draft": "Dear Sideways Distribution Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
+        "evidence": "website_contact_entry_not_verified;contact_entry_clicked:Proform Request Form;public_email_fallback_available:shanebardiau.pnw@gmail.com;email_sender_not_configured;website_contact_all_targets_failed:1;contact_path_strategy_v2",
+        "output": "{\"verdict\":\"website_contact_unreachable_skip\",\"evidence\":\"website_contact_entry_not_verified;contact_entry_clicked:Proform Request Form;public_email_fallback_available:shanebardiau.pnw@gmail.com;email_sender_not_configured;website_contact_all_targets_failed:1;contact_path_strategy_v2\",\"nextAction\":\"Email delivery to shanebardiau.pnw@gmail.com requires a configured sender; continue with another verified contact path or LinkedIn, Facebook, or Instagram instead of claiming a send.\",\"subject\":\"FLEXTAIL retail partnership | 2026 assortment\",\"draft\":\"Dear Sideways Distribution Team,\\n\\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\\n\\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\\n\\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\\n\\nProduct overview: https://www.flextail.com/\\n\\nBest regards,\\nLeo Liu\\nSales & Operations Director\\nLeo@flextailgear.com\",\"sendStatus\":\"website_contact_unreachable_skip\",\"attempts\":[{\"targetUrl\":\"https://www.beaverwax.com/pages/new-contact\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;contact_entry_clicked:Proform Request Form\"}]}"
       }
     }
   ],
   "results": [
     {
-      "id": "google-customer-midwest-outdoor-sales-website-contact",
-      "company": "Midwest Outdoor Sales",
+      "id": "google-customer-sideways-distribution-website-contact",
+      "company": "Sideways Distribution",
       "action": "email_priority",
       "platform": "website_form",
-      "targetUrl": "https://www.midwestoutdoorsales.com/contact-us",
-      "ok": true,
-      "sendStatus": "sent_confirmed",
-      "evidence": "smtp_accepted;message_id:<cefee7b4-e24d-5467-25c9-a00749d39386@flextailgear.com>;sent_folder_message_confirmed;contact_path_strategy_v2",
-      "timestamp": "2026-08-13T02:30:20.908Z",
-      "chromeOpen": null,
-      "result": {
-        "ok": true,
-        "sendStatus": "sent_confirmed",
-        "reason": "sent_folder_message_confirmed",
-        "evidence": "smtp_accepted;message_id:<cefee7b4-e24d-5467-25c9-a00749d39386@flextailgear.com>;sent_folder_message_confirmed;contact_path_strategy_v2",
-        "recipientEmail": "jeff@midwestoutdoorsales.com",
-        "messageId": "<cefee7b4-e24d-5467-25c9-a00749d39386@flextailgear.com>",
-        "sentAt": "2026-08-13T02:30:18.869Z",
-        "sentFolder": "已发送",
-        "sentUid": 3250,
-        "contentValidation": {
-          "ok": true,
-          "errors": [],
-          "words": 110
-        },
-        "engine": "alibaba-enterprise-mail-smtp-imap",
-        "mode": "alibaba_email_sent_folder_confirmed",
-        "targetUrl": "mailto:jeff@midwestoutdoorsales.com",
-        "subject": "FLEXTAIL retail partnership | 2026 assortment",
-        "draft": "Dear Midwest Outdoor Sales Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
-        "output": "{\"verdict\":\"sent_confirmed\",\"sendStatus\":\"sent_confirmed\",\"evidence\":\"smtp_accepted;message_id:<cefee7b4-e24d-5467-25c9-a00749d39386@flextailgear.com>;sent_folder_message_confirmed;contact_path_strategy_v2\",\"nextAction\":\"Alibaba Mail accepted the message and the matching record exists in Sent.\",\"recipientEmail\":\"jeff@midwestoutdoorsales.com\",\"messageId\":\"<cefee7b4-e24d-5467-25c9-a00749d39386@flextailgear.com>\"}"
-      }
-    },
-    {
-      "id": "google-customer-green-river-sales-group-website-contact",
-      "company": "Green River Sales Group",
-      "action": "email_priority",
-      "platform": "website_form",
-      "targetUrl": "https://www.greenriversales.com/ourteam",
-      "ok": true,
-      "sendStatus": "sent_confirmed",
-      "evidence": "smtp_accepted;message_id:<d43e08b1-110c-9226-e2cb-17b57be2f38b@flextailgear.com>;sent_folder_message_confirmed;contact_path_strategy_v2",
-      "timestamp": "2026-08-13T02:30:27.022Z",
-      "chromeOpen": null,
-      "result": {
-        "ok": true,
-        "sendStatus": "sent_confirmed",
-        "reason": "sent_folder_message_confirmed",
-        "evidence": "smtp_accepted;message_id:<d43e08b1-110c-9226-e2cb-17b57be2f38b@flextailgear.com>;sent_folder_message_confirmed;contact_path_strategy_v2",
-        "recipientEmail": "pat@greenriversales.com",
-        "messageId": "<d43e08b1-110c-9226-e2cb-17b57be2f38b@flextailgear.com>",
-        "sentAt": "2026-08-13T02:30:25.109Z",
-        "sentFolder": "已发送",
-        "sentUid": 3251,
-        "contentValidation": {
-          "ok": true,
-          "errors": [],
-          "words": 110
-        },
-        "engine": "alibaba-enterprise-mail-smtp-imap",
-        "mode": "alibaba_email_sent_folder_confirmed",
-        "targetUrl": "mailto:pat@greenriversales.com",
-        "subject": "FLEXTAIL retail partnership | 2026 assortment",
-        "draft": "Dear Green River Sales Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
-        "output": "{\"verdict\":\"sent_confirmed\",\"sendStatus\":\"sent_confirmed\",\"evidence\":\"smtp_accepted;message_id:<d43e08b1-110c-9226-e2cb-17b57be2f38b@flextailgear.com>;sent_folder_message_confirmed;contact_path_strategy_v2\",\"nextAction\":\"Alibaba Mail accepted the message and the matching record exists in Sent.\",\"recipientEmail\":\"pat@greenriversales.com\",\"messageId\":\"<d43e08b1-110c-9226-e2cb-17b57be2f38b@flextailgear.com>\"}"
-      }
-    },
-    {
-      "id": "google-customer-end2end-outdoor-website-contact",
-      "company": "End2End Outdoor",
-      "action": "email_priority",
-      "platform": "website_form",
-      "targetUrl": "https://end2endoutdoor.com/",
-      "ok": true,
-      "sendStatus": "sent_confirmed",
-      "evidence": "smtp_accepted;message_id:<1a08dde8-1901-ab69-83ea-50edfd29d4ad@flextailgear.com>;sent_folder_message_confirmed;contact_path_strategy_v2",
-      "timestamp": "2026-08-13T02:30:33.448Z",
-      "chromeOpen": null,
-      "result": {
-        "ok": true,
-        "sendStatus": "sent_confirmed",
-        "reason": "sent_folder_message_confirmed",
-        "evidence": "smtp_accepted;message_id:<1a08dde8-1901-ab69-83ea-50edfd29d4ad@flextailgear.com>;sent_folder_message_confirmed;contact_path_strategy_v2",
-        "recipientEmail": "conner@end2endoutdoor.com",
-        "messageId": "<1a08dde8-1901-ab69-83ea-50edfd29d4ad@flextailgear.com>",
-        "sentAt": "2026-08-13T02:30:31.728Z",
-        "sentFolder": "已发送",
-        "sentUid": 3252,
-        "contentValidation": {
-          "ok": true,
-          "errors": [],
-          "words": 109
-        },
-        "engine": "alibaba-enterprise-mail-smtp-imap",
-        "mode": "alibaba_email_sent_folder_confirmed",
-        "targetUrl": "mailto:conner@end2endoutdoor.com",
-        "subject": "FLEXTAIL retail partnership | 2026 assortment",
-        "draft": "Dear End2End Outdoor Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
-        "output": "{\"verdict\":\"sent_confirmed\",\"sendStatus\":\"sent_confirmed\",\"evidence\":\"smtp_accepted;message_id:<1a08dde8-1901-ab69-83ea-50edfd29d4ad@flextailgear.com>;sent_folder_message_confirmed;contact_path_strategy_v2\",\"nextAction\":\"Alibaba Mail accepted the message and the matching record exists in Sent.\",\"recipientEmail\":\"conner@end2endoutdoor.com\",\"messageId\":\"<1a08dde8-1901-ab69-83ea-50edfd29d4ad@flextailgear.com>\"}"
-      }
-    },
-    {
-      "id": "google-customer-reach-sales-group-website-contact",
-      "company": "Reach Sales Group",
-      "action": "email_priority",
-      "platform": "website_form",
-      "targetUrl": "https://www.reach-salesgroup.com/",
-      "ok": true,
-      "sendStatus": "sent_confirmed",
-      "evidence": "smtp_accepted;message_id:<78f6add4-d25f-6c61-099a-ed4c08d44b1b@flextailgear.com>;sent_folder_message_confirmed;contact_path_strategy_v2",
-      "timestamp": "2026-08-13T02:30:39.897Z",
-      "chromeOpen": null,
-      "result": {
-        "ok": true,
-        "sendStatus": "sent_confirmed",
-        "reason": "sent_folder_message_confirmed",
-        "evidence": "smtp_accepted;message_id:<78f6add4-d25f-6c61-099a-ed4c08d44b1b@flextailgear.com>;sent_folder_message_confirmed;contact_path_strategy_v2",
-        "recipientEmail": "erik@reach-salesgroup.com",
-        "messageId": "<78f6add4-d25f-6c61-099a-ed4c08d44b1b@flextailgear.com>",
-        "sentAt": "2026-08-13T02:30:38.277Z",
-        "sentFolder": "已发送",
-        "sentUid": 3253,
-        "contentValidation": {
-          "ok": true,
-          "errors": [],
-          "words": 109
-        },
-        "engine": "alibaba-enterprise-mail-smtp-imap",
-        "mode": "alibaba_email_sent_folder_confirmed",
-        "targetUrl": "mailto:erik@reach-salesgroup.com",
-        "subject": "FLEXTAIL retail partnership | 2026 assortment",
-        "draft": "Dear Reach Sales Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
-        "output": "{\"verdict\":\"sent_confirmed\",\"sendStatus\":\"sent_confirmed\",\"evidence\":\"smtp_accepted;message_id:<78f6add4-d25f-6c61-099a-ed4c08d44b1b@flextailgear.com>;sent_folder_message_confirmed;contact_path_strategy_v2\",\"nextAction\":\"Alibaba Mail accepted the message and the matching record exists in Sent.\",\"recipientEmail\":\"erik@reach-salesgroup.com\",\"messageId\":\"<78f6add4-d25f-6c61-099a-ed4c08d44b1b@flextailgear.com>\"}"
-      }
-    },
-    {
-      "id": "google-customer-sharp-end-sales-website-contact",
-      "company": "Sharp End Sales",
-      "action": "email_priority",
-      "platform": "website_form",
-      "targetUrl": "https://www.sharpendsales.com/",
-      "ok": true,
-      "sendStatus": "sent_confirmed",
-      "evidence": "smtp_accepted;message_id:<c84a47db-6099-c71f-46fa-bee1cad6bc63@flextailgear.com>;sent_folder_message_confirmed;contact_path_strategy_v2",
-      "timestamp": "2026-08-13T02:30:46.386Z",
-      "chromeOpen": null,
-      "result": {
-        "ok": true,
-        "sendStatus": "sent_confirmed",
-        "reason": "sent_folder_message_confirmed",
-        "evidence": "smtp_accepted;message_id:<c84a47db-6099-c71f-46fa-bee1cad6bc63@flextailgear.com>;sent_folder_message_confirmed;contact_path_strategy_v2",
-        "recipientEmail": "greydon@sharpendsales.com",
-        "messageId": "<c84a47db-6099-c71f-46fa-bee1cad6bc63@flextailgear.com>",
-        "sentAt": "2026-08-13T02:30:44.778Z",
-        "sentFolder": "已发送",
-        "sentUid": 3254,
-        "contentValidation": {
-          "ok": true,
-          "errors": [],
-          "words": 110
-        },
-        "engine": "alibaba-enterprise-mail-smtp-imap",
-        "mode": "alibaba_email_sent_folder_confirmed",
-        "targetUrl": "mailto:greydon@sharpendsales.com",
-        "subject": "FLEXTAIL retail partnership | 2026 assortment",
-        "draft": "Dear Sharp End Sales Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
-        "output": "{\"verdict\":\"sent_confirmed\",\"sendStatus\":\"sent_confirmed\",\"evidence\":\"smtp_accepted;message_id:<c84a47db-6099-c71f-46fa-bee1cad6bc63@flextailgear.com>;sent_folder_message_confirmed;contact_path_strategy_v2\",\"nextAction\":\"Alibaba Mail accepted the message and the matching record exists in Sent.\",\"recipientEmail\":\"greydon@sharpendsales.com\",\"messageId\":\"<c84a47db-6099-c71f-46fa-bee1cad6bc63@flextailgear.com>\"}"
-      }
-    },
-    {
-      "id": "google-customer-sanitas-sales-group-website-contact",
-      "company": "Sanitas Sales Group",
-      "action": "email_priority",
-      "platform": "website_form",
-      "targetUrl": "https://sanitassalesgroup.com/contact/",
+      "targetUrl": "https://www.beaverwax.com/pages/new-contact",
       "ok": false,
       "sendStatus": "website_contact_unreachable_skip",
-      "evidence": "unavailable_profile_page: Skip to primary navigation\nSkip to main content\nSkip to footer\n\nSANITAS SALES GROUP\n\nSales and marketing contractors serving the greater Rocky Mountain region\n\nBRANDS\n \nOUR TERRITO;website_contact_all_targets_failed:6;contact_path_strategy_v2",
-      "timestamp": "2026-08-13T02:31:36.989Z",
+      "evidence": "website_contact_entry_not_verified;contact_entry_clicked:Proform Request Form;public_email_fallback_available:shanebardiau.pnw@gmail.com;email_sender_not_configured;website_contact_all_targets_failed:1;contact_path_strategy_v2",
+      "timestamp": "2026-08-13T02:35:18.214Z",
       "chromeOpen": {
-        "ok": false,
+        "ok": true,
         "engine": "codex-chrome-cdp",
         "port": 9224,
-        "targetUrl": "https://sanitassalesgroup.com/help/contact-us",
-        "tabId": "45358B98492AE4BD831C5B5B80164988",
-        "title": "Page not found – Sanitas Sales Group",
-        "status": "failed_open",
-        "error": "profile_unavailable_or_broken_link",
-        "evidence": "unavailable_profile_page: Skip to primary navigation\nSkip to main content\nSkip to footer\n\nSANITAS SALES GROUP\n\nSales and marketing contractors serving the greater Rocky Mountain region\n\nBRANDS\n \nOUR TERRITO"
+        "targetUrl": "https://www.beaverwax.com/pages/new-contact",
+        "tabId": "15E2DC3B5CE3CEB0A5F6179C1B62D09E",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/15E2DC3B5CE3CEB0A5F6179C1B62D09E",
+        "title": "New Contact – BeaverWax"
       },
       "result": {
         "ok": false,
         "engine": "dedicated-chrome-cdp-website-contact",
         "browserEngine": "codex-chrome-cdp",
         "mode": "website_contact_unreachable_skip",
-        "targetUrl": "https://sanitassalesgroup.com/help/contact-us",
+        "targetUrl": "https://www.beaverwax.com/pages/new-contact",
         "chromeOpen": {
-          "ok": false,
+          "ok": true,
           "engine": "codex-chrome-cdp",
           "port": 9224,
-          "targetUrl": "https://sanitassalesgroup.com/help/contact-us",
-          "tabId": "45358B98492AE4BD831C5B5B80164988",
-          "title": "Page not found – Sanitas Sales Group",
-          "status": "failed_open",
-          "error": "profile_unavailable_or_broken_link",
-          "evidence": "unavailable_profile_page: Skip to primary navigation\nSkip to main content\nSkip to footer\n\nSANITAS SALES GROUP\n\nSales and marketing contractors serving the greater Rocky Mountain region\n\nBRANDS\n \nOUR TERRITO"
+          "targetUrl": "https://www.beaverwax.com/pages/new-contact",
+          "tabId": "15E2DC3B5CE3CEB0A5F6179C1B62D09E",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/15E2DC3B5CE3CEB0A5F6179C1B62D09E",
+          "title": "New Contact – BeaverWax"
         },
         "sendStatus": "website_contact_unreachable_skip",
         "subject": "FLEXTAIL retail partnership | 2026 assortment",
-        "draft": "Dear Sanitas Sales Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
-        "evidence": "unavailable_profile_page: Skip to primary navigation\nSkip to main content\nSkip to footer\n\nSANITAS SALES GROUP\n\nSales and marketing contractors serving the greater Rocky Mountain region\n\nBRANDS\n \nOUR TERRITO;website_contact_all_targets_failed:6;contact_path_strategy_v2",
-        "output": "{\"verdict\":\"website_contact_unreachable_skip\",\"evidence\":\"unavailable_profile_page: Skip to primary navigation\\nSkip to main content\\nSkip to footer\\n\\nSANITAS SALES GROUP\\n\\nSales and marketing contractors serving the greater Rocky Mountain region\\n\\nBRANDS\\n \\nOUR TERRITO;website_contact_all_targets_failed:6;contact_path_strategy_v2\",\"subject\":\"FLEXTAIL retail partnership | 2026 assortment\",\"draft\":\"Dear Sanitas Sales Team,\\n\\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\\n\\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\\n\\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\\n\\nProduct overview: https://www.flextail.com/\\n\\nBest regards,\\nLeo Liu\\nSales & Operations Director\\nLeo@flextailgear.com\",\"sendStatus\":\"website_contact_unreachable_skip\",\"attempts\":[{\"targetUrl\":\"https://sanitassalesgroup.com/contact/\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;contact_entry_clicked:Skip to primary navigation\"},{\"targetUrl\":\"https://sanitassalesgroup.com/\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;contact_entry_clicked:Skip to primary navigation\"},{\"targetUrl\":\"https://sanitassalesgroup.com/pages/contact-us\",\"sendStatus\":\"failed_open\",\"evidence\":\"unavailable_profile_page: Skip to primary navigation\\nSkip to main content\\nSkip to footer\\n\\nSANITAS SALES GROUP\\n\\nSales and marketing contractors serving the greater Rocky Mountain region\\n\\nBRANDS\\n \\nOUR TERRITO\"},{\"targetUrl\":\"https://sanitassalesgroup.com/pages/contact\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;contact_entry_clicked:Skip to primary navigation\"},{\"targetUrl\":\"https://sanitassalesgroup.com/contact-us\",\"sendStatus\":\"failed_open\",\"evidence\":\"unavailable_profile_page: Skip to primary navigation\\nSkip to main content\\nSkip to footer\\n\\nSANITAS SALES GROUP\\n\\nSales and marketing contractors serving the greater Rocky Mountain region\\n\\nBRANDS\\n \\nOUR TERRITO\"},{\"targetUrl\":\"https://sanitassalesgroup.com/help/contact-us\",\"sendStatus\":\"failed_open\",\"evidence\":\"unavailable_profile_page: Skip to primary navigation\\nSkip to main content\\nSkip to footer\\n\\nSANITAS SALES GROUP\\n\\nSales and marketing contractors serving the greater Rocky Mountain region\\n\\nBRANDS\\n \\nOUR TERRITO\"}],\"nextAction\":\"Official website contact was unreachable or not machine-verifiable. Skip this website route now, note it clearly, and continue with LinkedIn, Facebook, Instagram, or another verified official channel.\"}"
+        "draft": "Dear Sideways Distribution Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
+        "evidence": "website_contact_entry_not_verified;contact_entry_clicked:Proform Request Form;public_email_fallback_available:shanebardiau.pnw@gmail.com;email_sender_not_configured;website_contact_all_targets_failed:1;contact_path_strategy_v2",
+        "output": "{\"verdict\":\"website_contact_unreachable_skip\",\"evidence\":\"website_contact_entry_not_verified;contact_entry_clicked:Proform Request Form;public_email_fallback_available:shanebardiau.pnw@gmail.com;email_sender_not_configured;website_contact_all_targets_failed:1;contact_path_strategy_v2\",\"nextAction\":\"Email delivery to shanebardiau.pnw@gmail.com requires a configured sender; continue with another verified contact path or LinkedIn, Facebook, or Instagram instead of claiming a send.\",\"subject\":\"FLEXTAIL retail partnership | 2026 assortment\",\"draft\":\"Dear Sideways Distribution Team,\\n\\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\\n\\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\\n\\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\\n\\nProduct overview: https://www.flextail.com/\\n\\nBest regards,\\nLeo Liu\\nSales & Operations Director\\nLeo@flextailgear.com\",\"sendStatus\":\"website_contact_unreachable_skip\",\"attempts\":[{\"targetUrl\":\"https://www.beaverwax.com/pages/new-contact\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;contact_entry_clicked:Proform Request Form\"}]}"
       }
     }
   ],
@@ -474,6 +126,13 @@
       "action": "email_priority",
       "platform": "website_form",
       "reason": "official_public_business_email_verified"
+    },
+    {
+      "id": "google-customer-sanitas-sales-group-website-contact",
+      "company": "Sanitas Sales Group",
+      "action": "email_priority",
+      "platform": "website_form",
+      "reason": "official_website_contact_channel"
     },
     {
       "id": "google-customer-sierra-outdoor-collective-website-contact",
@@ -1099,20 +758,6 @@
       "reason": "homepage_only_contact_path_requires_verification"
     },
     {
-      "id": "google-customer-intersport-norway-website-contact",
-      "company": "Intersport Norway",
-      "action": "verify_target",
-      "platform": "website_form",
-      "reason": "homepage_only_contact_path_requires_verification"
-    },
-    {
-      "id": "google-customer-ld-mountain-centre-website-contact",
-      "company": "LD Mountain Centre",
-      "action": "verify_target",
-      "platform": "website_form",
-      "reason": "homepage_only_contact_path_requires_verification"
-    },
-    {
       "id": "google-customer-parallel-33-sales-group-website-contact",
       "company": "Parallel 33 Sales Group",
       "action": "email_priority",
@@ -1160,6 +805,13 @@
       "action": "verify_target",
       "platform": "website_form",
       "reason": "website_contact_capability_not_verified"
+    },
+    {
+      "id": "google-customer-sanitas-sales-group-website-contact",
+      "company": "Sanitas Sales Group",
+      "action": "email_priority",
+      "platform": "website_form",
+      "reason": "official_website_contact_channel"
     },
     {
       "id": "google-customer-sierra-outdoor-collective-website-contact",
@@ -1565,23 +1217,23 @@
     "totalLeads": 16,
     "highIcp": 16,
     "readyToDevelop": 15,
-    "dueNow": 100,
-    "visibleTodayQueue": 70,
-    "potentialPool": 70,
+    "dueNow": 94,
+    "visibleTodayQueue": 72,
+    "potentialPool": 66,
     "potentialPoolTarget": 100,
     "customerTableHighIcp": 0,
-    "refillNeeded": 30,
-    "executableCompanies": 24,
+    "refillNeeded": 34,
+    "executableCompanies": 20,
     "executableReserveTarget": 130,
-    "executableReserveNeeded": 106,
+    "executableReserveNeeded": 110,
     "executableByChannel": {
-      "website_form": 24
+      "website_form": 20
     },
     "verifiedSocialCompanies": 0,
     "verifiedSocialReserveTarget": 20,
     "verifiedSocialReserveNeeded": 20,
     "enrichmentBacklogCount": 46,
-    "googleDiscovered": 100,
+    "googleDiscovered": 94,
     "facebookDiscovered": 0,
     "websiteContactDiscovered": 0,
     "scheduledLater": 0,
@@ -1596,7 +1248,7 @@
     {
       "reason": "homepage_only_contact_path_requires_verification",
       "status": "skipped",
-      "count": 67
+      "count": 65
     },
     {
       "reason": "website_contact_capability_not_verified",
@@ -1606,33 +1258,27 @@
     {
       "reason": "official_website_contact_channel",
       "status": "skipped",
-      "count": 39
+      "count": 41
     },
     {
       "reason": "official_public_business_email_verified",
       "status": "skipped",
       "count": 6
-    },
-    {
-      "reason": "sent_folder_message_confirmed",
-      "status": "sent_confirmed",
-      "count": 5
     }
   ],
   "blockerCounts": {
-    "homepage_only_contact_path_requires_verification": 67,
+    "homepage_only_contact_path_requires_verification": 65,
     "website_contact_capability_not_verified": 46,
-    "official_website_contact_channel": 39,
-    "official_public_business_email_verified": 6,
-    "sent_folder_message_confirmed": 5
+    "official_website_contact_channel": 41,
+    "official_public_business_email_verified": 6
   },
   "queueGoalStatus": {
     "target": 100,
-    "potentialPool": 70,
-    "queueCount": 100,
-    "googleDiscovered": 100,
-    "refillNeeded": 30,
-    "confirmedToday": 10,
+    "potentialPool": 66,
+    "queueCount": 94,
+    "googleDiscovered": 94,
+    "refillNeeded": 34,
+    "confirmedToday": 15,
     "reached": false,
     "action": "Add more verified high-ICP sources or unblock existing website/social leads."
   },
@@ -1644,35 +1290,35 @@
     "rule": "completed checkpoints are ignored; only terminal results from an active interrupted checkpoint suppress their exact task id"
   },
   "platformCircuitState": {},
-  "userVisibleStatus": "Customer development was not performed. Blockers: homepage_only_contact_path_requires_verification (67); website_contact_capability_not_verified (46); official_website_contact_channel (39).",
-  "recoveryHint": "Refill the high-ICP pool with 30 verified leads or unblock existing website/social leads before the next run.",
+  "userVisibleStatus": "Customer development was not performed. Blockers: homepage_only_contact_path_requires_verification (65); website_contact_capability_not_verified (46); official_website_contact_channel (41).",
+  "recoveryHint": "Refill the high-ICP pool with 34 verified leads or unblock existing website/social leads before the next run.",
   "recoveryActions": [
     {
       "reason": "daily_queue_goal_not_reached",
       "action": "Refill high-ICP customer pool",
-      "description": "Add or unblock 30 verified high-ICP leads to reach the daily 200 target.",
-      "hint": "Refill the high-ICP pool with 30 verified leads or unblock existing website/social leads before the next run.",
+      "description": "Add or unblock 34 verified high-ICP leads to reach the daily 200 target.",
+      "hint": "Refill the high-ICP pool with 34 verified leads or unblock existing website/social leads before the next run.",
       "target": 100,
-      "potentialPool": 70,
-      "refillNeeded": 30
+      "potentialPool": 66,
+      "refillNeeded": 34
     }
   ],
   "systemRefresh": {
-    "ok": true,
-    "stdout": "{\n  \"date\": \"2026-08-13\",\n  \"summary\": {\n    \"totalLeads\": 16,\n    \"highIcp\": 16,\n    \"readyToDevelop\": 18,\n    \"dueNow\": 100,\n    \"visibleTodayQueue\": 65,\n    \"potentialPool\": 65,\n    \"potentialPoolTarget\": 100,\n    \"customerTableHighIcp\": 0,\n    \"refillNeeded\": 35,\n    \"executableCompanies\": 19,\n    \"executableReserveTarget\": 130,\n    \"executableReserveNeeded\": 111,\n    \"executableByChannel\": {\n      \"website_form\": 19\n    },\n    \"verifiedSocialCompanies\": 0,\n    \"verifiedSocialReserveTarget\": 20,\n    \"verifiedSocialReserveNeeded\": 20,\n    \"enrichmentBacklogCount\": 46,\n    \"googleDiscovered\": 100,\n    \"facebookDiscovered\": 2,\n    \"websiteContactDiscovered\": 0,\n    \"scheduledLater\": 0,\n    \"cooldown\": 30,\n    \"emailPriority\": 0,\n    \"openAgencyMarket\": 15,\n    \"exclusiveAgencySkipped\": 1,\n    \"needsVerification\": 0,\n    \"retainedLowIcp\": 0\n  },\n  \"bugErrors\": 12,\n  \"queueFile\": \"E:\\\\New project\\\\outreach-dashboard\\\\daily-runs\\\\2026-08-13-daily-automation.json\",\n  \"csvFile\": \"E:\\\\New project\\\\outreach-dashboard\\\\daily-runs\\\\2026-08-13-daily-queue.csv\"\n}",
-    "stderr": "",
-    "error": "",
+    "ok": false,
+    "stdout": "",
+    "stderr": "node:fs:3104\r\n  binding.copyFile(\r\n          ^\r\n\r\nError: UNKNOWN: unknown error, copyfile 'E:\\New project\\outreach-dashboard\\system-visibility-latest.json' -> 'E:\\New project\\outreach-dashboard\\public\\system-visibility-latest.json'\r\n    at Object.copyFileSync (node:fs:3104:11)\r\n    at copyPublicArtifact (E:\\New project\\outreach-dashboard\\daily-automation-runner.js:955:6)\r\n    at Array.forEach (<anonymous>)\r\n    at writeSystemVisibilityArtifact (E:\\New project\\outreach-dashboard\\daily-automation-runner.js:1019:5)\r\n    at writeRunArtifacts (E:\\New project\\outreach-dashboard\\daily-automation-runner.js:946:3)\r\n    at main (E:\\New project\\outreach-dashboard\\daily-automation-runner.js:1638:17)\r\n    at Object.<anonymous> (E:\\New project\\outreach-dashboard\\daily-automation-runner.js:1658:3)\r\n    at Module._compile (node:internal/modules/cjs/loader:1812:14)\r\n    at Object..js (node:internal/modules/cjs/loader:1943:10)\r\n    at Module.load (node:internal/modules/cjs/loader:1533:32) {\r\n  errno: -4094,\r\n  code: 'UNKNOWN',\r\n  syscall: 'copyfile',\r\n  path: 'E:\\\\New project\\\\outreach-dashboard\\\\system-visibility-latest.json',\r\n  dest: 'E:\\\\New project\\\\outreach-dashboard\\\\public\\\\system-visibility-latest.json'\r\n}\r\n\r\nNode.js v24.14.0",
+    "error": "Command failed: node E:\\New project\\outreach-dashboard\\daily-automation-runner.js --fix\nnode:fs:3104\r\n  binding.copyFile(\r\n          ^\r\n\r\nError: UNKNOWN: unknown error, copyfile 'E:\\New project\\outreach-dashboard\\system-visibility-latest.json' -> 'E:\\New project\\outreach-dashboard\\public\\system-visibility-latest.json'\r\n    at Object.copyFileSync (node:fs:3104:11)\r\n    at copyPublicArtifact (E:\\New project\\outreach-dashboard\\daily-automation-runner.js:955:6)\r\n    at Array.forEach (<anonymous>)\r\n    at writeSystemVisibilityArtifact (E:\\New project\\outreach-dashboard\\daily-automation-runner.js:1019:5)\r\n    at writeRunArtifacts (E:\\New project\\outreach-dashboard\\daily-automation-runner.js:946:3)\r\n    at main (E:\\New project\\outreach-dashboard\\daily-automation-runner.js:1638:17)\r\n    at Object.<anonymous> (E:\\New project\\outreach-dashboard\\daily-automation-runner.js:1658:3)\r\n    at Module._compile (node:internal/modules/cjs/loader:1812:14)\r\n    at Object..js (node:internal/modules/cjs/loader:1943:10)\r\n    at Module.load (node:internal/modules/cjs/loader:1533:32) {\r\n  errno: -4094,\r\n  code: 'UNKNOWN',\r\n  syscall: 'copyfile',\r\n  path: 'E:\\\\New project\\\\outreach-dashboard\\\\system-visibility-latest.json',\r\n  dest: 'E:\\\\New project\\\\outreach-dashboard\\\\public\\\\system-visibility-latest.json'\r\n}\r\n\r\nNode.js v24.14.0\r\n",
     "visibility": {
-      "updatedAt": "2026-08-13T02:31:38.766Z",
+      "updatedAt": "2026-08-13T02:35:20.608Z",
       "source": "main-refreshDailyAutomationArtifacts",
       "runDate": "2026-08-13",
-      "artifactGeneratedAt": "2026-08-13T02:31:37.134Z",
-      "executionGeneratedAt": "2026-08-13T02:27:29.399Z",
-      "githubSyncUpdatedAt": "2026-08-13T02:27:54.504Z",
+      "artifactGeneratedAt": "2026-08-13T02:35:18.471Z",
+      "executionGeneratedAt": "2026-08-13T02:31:39.254Z",
+      "githubSyncUpdatedAt": "2026-08-13T02:32:34.549Z",
       "counts": {
-        "dailyQueue": 100,
-        "googleDiscovered": 100,
-        "websiteContact": 97,
+        "dailyQueue": 94,
+        "googleDiscovered": 94,
+        "websiteContact": 94,
         "cooldownQueue": 30,
         "scheduledLater": 0
       },
@@ -1697,8 +1343,8 @@
       ],
       "dailyQueueGoal": {
         "target": 100,
-        "potentialPool": 65,
-        "refillNeeded": 35,
+        "potentialPool": 66,
+        "refillNeeded": 34,
         "reached": false
       },
       "contactEnrichment": {
@@ -1721,8 +1367,10 @@
     }
   },
   "alibabaSessionProbe": {
-    "ok": false,
-    "evidence": "alibaba_webmail_login_required"
+    "ok": true,
+    "evidence": "alibaba_webmail_authenticated_compose_visible",
+    "url": "https://qiye.aliyun.com/alimail/entries/v5.1/mail/sentitems/all",
+    "title": "阿里邮箱"
   },
   "bounceReconciliation": {
     "ok": true,
@@ -1730,6 +1378,6 @@
     "scanned": 0,
     "updated": 0
   },
-  "ledgerReconciliationCount": 2,
-  "completedAt": "2026-08-13T02:31:39.254Z"
+  "ledgerReconciliationCount": 6,
+  "completedAt": "2026-08-13T02:35:21.583Z"
 }
