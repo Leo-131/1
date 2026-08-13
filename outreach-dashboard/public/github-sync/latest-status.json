@@ -1,9 +1,9 @@
 {
-  "updatedAt": "2026-08-13T10:11:54.754Z",
+  "updatedAt": "2026-08-13T10:23:04.174Z",
   "ok": true,
   "pushed": true,
   "branch": "vercel-main-sync",
-  "localCommit": "1684dbe1e7fe13e8cd60face21abfe34cdcf68c1",
-  "remoteCommit": "1684dbe1e7fe13e8cd60face21abfe34cdcf68c1",
+  "localCommit": "6ecb328d21d0aead87f5f5d220b5520bf1e92896",
+  "remoteCommit": "6ecb328d21d0aead87f5f5d220b5520bf1e92896",
   "message": "sync: local outreach data 2026-08-13"
 }
