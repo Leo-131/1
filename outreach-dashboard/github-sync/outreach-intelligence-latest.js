@@ -1,6 +1,6 @@
 window.OUTREACH_INTELLIGENCE_LATEST = {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-13T02:12:23.777Z",
+  "generatedAt": "2026-08-13T02:21:43.647Z",
   "companies": [
     {
       "companyId": "company_dc873bac35524d4e",
@@ -9,6 +9,8 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
         "parallel33salesgroup",
         "parallel33salescom",
         "gmailcom",
+        "pfpandassociates",
+        "pfpandassociatescom",
         "ziaworksdistribution",
         "nwziaworkscom",
         "rockcreek",
@@ -24,6 +26,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
       "domains": [
         "parallel33sales.com",
         "gmail.com",
+        "pfpandassociates.com",
         "nwziaworks.com",
         "rockcreek.com",
         "tahoesportshub.com",
@@ -54,6 +57,16 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
           "reasons": [
             "official_business_route"
           ],
+          "evidenceUrl": "https://www.pfpandassociates.com/",
+          "checkedAt": ""
+        },
+        {
+          "channel": "website_form",
+          "score": 100,
+          "verified": true,
+          "reasons": [
+            "official_business_route"
+          ],
           "evidenceUrl": "https://www.nwziaworks.com/",
           "checkedAt": ""
         },
@@ -65,6 +78,16 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://www.parallel33sales.com/about",
+          "checkedAt": ""
+        },
+        {
+          "channel": "website_form",
+          "score": 100,
+          "verified": true,
+          "reasons": [
+            "official_business_route"
+          ],
+          "evidenceUrl": "https://www.pfpandassociates.com/",
           "checkedAt": ""
         },
         {
@@ -125,6 +148,16 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "official_business_route"
           ],
           "evidenceUrl": "https://www.nwziaworks.com/",
+          "checkedAt": ""
+        },
+        {
+          "channel": "website_form",
+          "score": 100,
+          "verified": true,
+          "reasons": [
+            "official_business_route"
+          ],
+          "evidenceUrl": "https://www.pfpandassociates.com/",
           "checkedAt": ""
         },
         {
@@ -492,8 +525,108 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
           "timestamp": "2026-08-13T02:06:14.519Z",
           "channel": "website_form",
           "evidence": "website_page_unavailable_404: 404 錯誤：找不到頁面;public_email_fallback_available:INFO.ZIAWORKSDISTRIBUTION@GMAIL.COM;email_sender_not_configured;website_contact_all_targets_failed:6;contact_path_strategy_v2"
+        },
+        {
+          "status": "website_contact_unreachable_skip",
+          "timestamp": "2026-08-13T02:16:22.178Z",
+          "channel": "website_form",
+          "evidence": "website_contact_entry_not_verified;contact_entry_clicked:Skip to Content;public_email_fallback_available:tputnam.pfp@gmail.com;email_sender_not_configured;website_contact_all_targets_failed:6;contact_path_strategy_v2"
         }
       ]
+    },
+    {
+      "companyId": "company_972e2942f23630b1",
+      "company": "NLA Agency",
+      "keys": [
+        "nlaagency",
+        "nlaagencycom"
+      ],
+      "domains": [
+        "nlaagency.com"
+      ],
+      "channels": [
+        "website_form"
+      ],
+      "evidence": [
+        {
+          "channel": "website_form",
+          "score": 100,
+          "verified": true,
+          "reasons": [
+            "official_business_route"
+          ],
+          "evidenceUrl": "https://nlaagency.com/",
+          "checkedAt": ""
+        },
+        {
+          "channel": "website_form",
+          "score": 100,
+          "verified": true,
+          "reasons": [
+            "official_business_route"
+          ],
+          "evidenceUrl": "https://nlaagency.com/",
+          "checkedAt": ""
+        },
+        {
+          "channel": "website_form",
+          "score": 100,
+          "verified": true,
+          "reasons": [
+            "official_business_route"
+          ],
+          "evidenceUrl": "https://nlaagency.com/",
+          "checkedAt": ""
+        }
+      ],
+      "history": []
+    },
+    {
+      "companyId": "company_54e7193138f05271",
+      "company": "Rise and Shine Sales Agency",
+      "keys": [
+        "riseandshinesalesagency",
+        "riseandshinesalesca"
+      ],
+      "domains": [
+        "riseandshinesales.ca"
+      ],
+      "channels": [
+        "website_form"
+      ],
+      "evidence": [
+        {
+          "channel": "website_form",
+          "score": 100,
+          "verified": true,
+          "reasons": [
+            "official_business_route"
+          ],
+          "evidenceUrl": "https://www.riseandshinesales.ca/",
+          "checkedAt": ""
+        },
+        {
+          "channel": "website_form",
+          "score": 100,
+          "verified": true,
+          "reasons": [
+            "official_business_route"
+          ],
+          "evidenceUrl": "https://www.riseandshinesales.ca/",
+          "checkedAt": ""
+        },
+        {
+          "channel": "website_form",
+          "score": 100,
+          "verified": true,
+          "reasons": [
+            "official_business_route"
+          ],
+          "evidenceUrl": "https://www.riseandshinesales.ca/",
+          "checkedAt": ""
+        }
+      ],
+      "history": []
     },
     {
       "companyId": "company_1f3de226ab9c35f8",
@@ -1154,7 +1287,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
           "reasons": [
             "first_party_evidence"
           ],
-          "evidenceUrl": "https://coveysales.com/",
+          "evidenceUrl": "https://coveysales.com/aboutus/",
           "checkedAt": ""
         },
         {
@@ -1164,7 +1297,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
           "reasons": [
             "first_party_evidence"
           ],
-          "evidenceUrl": "https://coveysales.com/",
+          "evidenceUrl": "https://coveysales.com/aboutus/",
           "checkedAt": ""
         },
         {
@@ -1174,7 +1307,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
           "reasons": [
             "first_party_evidence"
           ],
-          "evidenceUrl": "https://coveysales.com/",
+          "evidenceUrl": "https://coveysales.com/aboutus/",
           "checkedAt": ""
         }
       ],
@@ -1248,7 +1381,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
           "reasons": [
             "first_party_evidence"
           ],
-          "evidenceUrl": "https://www.greenriversales.com/",
+          "evidenceUrl": "https://www.greenriversales.com/contact-us",
           "checkedAt": ""
         },
         {
@@ -1258,7 +1391,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
           "reasons": [
             "first_party_evidence"
           ],
-          "evidenceUrl": "https://www.greenriversales.com/",
+          "evidenceUrl": "https://www.greenriversales.com/contact-us",
           "checkedAt": ""
         },
         {
@@ -1268,7 +1401,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
           "reasons": [
             "first_party_evidence"
           ],
-          "evidenceUrl": "https://www.greenriversales.com/",
+          "evidenceUrl": "https://www.greenriversales.com/contact-us",
           "checkedAt": ""
         }
       ],
@@ -1537,7 +1670,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
           "reasons": [
             "first_party_evidence"
           ],
-          "evidenceUrl": "https://coonhoundsales.com/",
+          "evidenceUrl": "https://coonhoundsales.com/contact/",
           "checkedAt": ""
         },
         {
@@ -1547,7 +1680,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
           "reasons": [
             "first_party_evidence"
           ],
-          "evidenceUrl": "https://coonhoundsales.com/",
+          "evidenceUrl": "https://coonhoundsales.com/contact/",
           "checkedAt": ""
         },
         {
@@ -1557,7 +1690,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
           "reasons": [
             "first_party_evidence"
           ],
-          "evidenceUrl": "https://coonhoundsales.com/",
+          "evidenceUrl": "https://coonhoundsales.com/contact/",
           "checkedAt": ""
         }
       ],
@@ -2068,7 +2201,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
           "reasons": [
             "first_party_evidence"
           ],
-          "evidenceUrl": "https://www.perspectiveoutdoor.com/",
+          "evidenceUrl": "https://www.perspectiveoutdoor.com/contact-us",
           "checkedAt": ""
         },
         {
@@ -2078,7 +2211,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
           "reasons": [
             "first_party_evidence"
           ],
-          "evidenceUrl": "https://www.perspectiveoutdoor.com/",
+          "evidenceUrl": "https://www.perspectiveoutdoor.com/contact-us",
           "checkedAt": ""
         },
         {
@@ -2088,7 +2221,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
           "reasons": [
             "first_party_evidence"
           ],
-          "evidenceUrl": "https://www.perspectiveoutdoor.com/",
+          "evidenceUrl": "https://www.perspectiveoutdoor.com/contact-us",
           "checkedAt": ""
         }
       ],
@@ -2821,100 +2954,6 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
       "history": []
     },
     {
-      "companyId": "company_7b4c288432624b77",
-      "company": "The Evans Group",
-      "keys": [
-        "theevansgroup",
-        "theevansgroupnet"
-      ],
-      "domains": [
-        "theevansgroup.net"
-      ],
-      "channels": [
-        "website_form"
-      ],
-      "evidence": [
-        {
-          "channel": "website_form",
-          "score": 80,
-          "verified": false,
-          "reasons": [
-            "first_party_evidence"
-          ],
-          "evidenceUrl": "https://theevansgroup.net/about/",
-          "checkedAt": ""
-        },
-        {
-          "channel": "website_form",
-          "score": 80,
-          "verified": false,
-          "reasons": [
-            "first_party_evidence"
-          ],
-          "evidenceUrl": "https://theevansgroup.net/about/",
-          "checkedAt": ""
-        },
-        {
-          "channel": "website_form",
-          "score": 80,
-          "verified": false,
-          "reasons": [
-            "first_party_evidence"
-          ],
-          "evidenceUrl": "https://theevansgroup.net/about/",
-          "checkedAt": ""
-        }
-      ],
-      "history": []
-    },
-    {
-      "companyId": "company_68e3287d0cdda412",
-      "company": "PFP and Associates",
-      "keys": [
-        "pfpandassociates",
-        "pfpandassociatescom"
-      ],
-      "domains": [
-        "pfpandassociates.com"
-      ],
-      "channels": [
-        "website_form"
-      ],
-      "evidence": [
-        {
-          "channel": "website_form",
-          "score": 80,
-          "verified": false,
-          "reasons": [
-            "first_party_evidence"
-          ],
-          "evidenceUrl": "https://www.pfpandassociates.com/",
-          "checkedAt": ""
-        },
-        {
-          "channel": "website_form",
-          "score": 80,
-          "verified": false,
-          "reasons": [
-            "first_party_evidence"
-          ],
-          "evidenceUrl": "https://www.pfpandassociates.com/",
-          "checkedAt": ""
-        },
-        {
-          "channel": "website_form",
-          "score": 80,
-          "verified": false,
-          "reasons": [
-            "first_party_evidence"
-          ],
-          "evidenceUrl": "https://www.pfpandassociates.com/",
-          "checkedAt": ""
-        }
-      ],
-      "history": []
-    },
-    {
       "companyId": "company_690302e287659749",
       "company": "Precision Sales and Marketing",
       "keys": [
@@ -2959,54 +2998,14 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
           "checkedAt": ""
         }
       ],
-      "history": []
-    },
-    {
-      "companyId": "company_6b0bac3105d7454c",
-      "company": "Precision Sales Unlimited",
-      "keys": [
-        "precisionsalesunlimited",
-        "precisionsalesunlimitedcom"
-      ],
-      "domains": [
-        "precisionsalesunlimited.com"
-      ],
-      "channels": [
-        "website_form"
-      ],
-      "evidence": [
+      "history": [
         {
+          "status": "website_contact_unreachable_skip",
+          "timestamp": "2026-08-13T02:16:39.339Z",
           "channel": "website_form",
-          "score": 80,
-          "verified": false,
-          "reasons": [
-            "first_party_evidence"
-          ],
-          "evidenceUrl": "https://www.precisionsalesunlimited.com/",
-          "checkedAt": ""
-        },
-        {
-          "channel": "website_form",
-          "score": 80,
-          "verified": false,
-          "reasons": [
-            "first_party_evidence"
-          ],
-          "evidenceUrl": "https://www.precisionsalesunlimited.com/",
-          "checkedAt": ""
-        },
-        {
-          "channel": "website_form",
-          "score": 80,
-          "verified": false,
-          "reasons": [
-            "first_party_evidence"
-          ],
-          "evidenceUrl": "https://www.precisionsalesunlimited.com/",
-          "checkedAt": ""
+          "evidence": "website_contact_entry_not_verified;contact_entry_clicked:Contact Us;website_contact_all_targets_failed:1;contact_path_strategy_v2"
         }
-      ],
-      "history": []
+      ]
     },
     {
       "companyId": "company_a5ed201599dd5670",
@@ -3144,100 +3143,6 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "first_party_evidence"
           ],
           "evidenceUrl": "https://www.yatesoutdoor.com/",
-          "checkedAt": ""
-        }
-      ],
-      "history": []
-    },
-    {
-      "companyId": "company_e05637411facb93b",
-      "company": "Action Brio",
-      "keys": [
-        "actionbrio",
-        "actionbriocom"
-      ],
-      "domains": [
-        "actionbrio.com"
-      ],
-      "channels": [
-        "website_form"
-      ],
-      "evidence": [
-        {
-          "channel": "website_form",
-          "score": 80,
-          "verified": false,
-          "reasons": [
-            "first_party_evidence"
-          ],
-          "evidenceUrl": "https://www.actionbrio.com/about",
-          "checkedAt": ""
-        },
-        {
-          "channel": "website_form",
-          "score": 80,
-          "verified": false,
-          "reasons": [
-            "first_party_evidence"
-          ],
-          "evidenceUrl": "https://www.actionbrio.com/about",
-          "checkedAt": ""
-        },
-        {
-          "channel": "website_form",
-          "score": 80,
-          "verified": false,
-          "reasons": [
-            "first_party_evidence"
-          ],
-          "evidenceUrl": "https://www.actionbrio.com/about",
-          "checkedAt": ""
-        }
-      ],
-      "history": []
-    },
-    {
-      "companyId": "company_bec8d6ffdd3577d8",
-      "company": "Apex Outdoor Sales",
-      "keys": [
-        "apexoutdoorsales",
-        "apexoutdoorsalescom"
-      ],
-      "domains": [
-        "apexoutdoorsales.com"
-      ],
-      "channels": [
-        "website_form"
-      ],
-      "evidence": [
-        {
-          "channel": "website_form",
-          "score": 80,
-          "verified": false,
-          "reasons": [
-            "first_party_evidence"
-          ],
-          "evidenceUrl": "https://www.apexoutdoorsales.com/",
-          "checkedAt": ""
-        },
-        {
-          "channel": "website_form",
-          "score": 80,
-          "verified": false,
-          "reasons": [
-            "first_party_evidence"
-          ],
-          "evidenceUrl": "https://www.apexoutdoorsales.com/",
-          "checkedAt": ""
-        },
-        {
-          "channel": "website_form",
-          "score": 80,
-          "verified": false,
-          "reasons": [
-            "first_party_evidence"
-          ],
-          "evidenceUrl": "https://www.apexoutdoorsales.com/",
           "checkedAt": ""
         }
       ],
@@ -3400,36 +3305,43 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
       "evidence": [
         {
           "channel": "website_form",
-          "score": 80,
-          "verified": false,
+          "score": 100,
+          "verified": true,
           "reasons": [
-            "first_party_evidence"
+            "official_business_route"
           ],
           "evidenceUrl": "https://www.kellybrandmanagement.com/who-we-serve/",
           "checkedAt": ""
         },
         {
           "channel": "website_form",
-          "score": 80,
-          "verified": false,
+          "score": 100,
+          "verified": true,
           "reasons": [
-            "first_party_evidence"
+            "official_business_route"
           ],
           "evidenceUrl": "https://www.kellybrandmanagement.com/who-we-serve/",
           "checkedAt": ""
         },
         {
           "channel": "website_form",
-          "score": 80,
-          "verified": false,
+          "score": 100,
+          "verified": true,
           "reasons": [
-            "first_party_evidence"
+            "official_business_route"
           ],
           "evidenceUrl": "https://www.kellybrandmanagement.com/who-we-serve/",
           "checkedAt": ""
         }
       ],
-      "history": []
+      "history": [
+        {
+          "status": "website_contact_unreachable_skip",
+          "timestamp": "2026-08-13T02:16:55.692Z",
+          "channel": "website_form",
+          "evidence": "website_contact_entry_not_verified;contact_entry_clicked:GET IN TOUCH;website_contact_all_targets_failed:1;contact_path_strategy_v2"
+        }
+      ]
     },
     {
       "companyId": "company_8796ebcd22e61f77",
@@ -3520,53 +3432,6 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
             "first_party_evidence"
           ],
           "evidenceUrl": "https://morrisonsportsmarketing.com/",
-          "checkedAt": ""
-        }
-      ],
-      "history": []
-    },
-    {
-      "companyId": "company_555b0c0c8447db6e",
-      "company": "Northwest Road Reps",
-      "keys": [
-        "northwestroadreps",
-        "nwroadrepscom"
-      ],
-      "domains": [
-        "nwroadreps.com"
-      ],
-      "channels": [
-        "website_form"
-      ],
-      "evidence": [
-        {
-          "channel": "website_form",
-          "score": 80,
-          "verified": false,
-          "reasons": [
-            "first_party_evidence"
-          ],
-          "evidenceUrl": "https://nwroadreps.com/brands/",
-          "checkedAt": ""
-        },
-        {
-          "channel": "website_form",
-          "score": 80,
-          "verified": false,
-          "reasons": [
-            "first_party_evidence"
-          ],
-          "evidenceUrl": "https://nwroadreps.com/brands/",
-          "checkedAt": ""
-        },
-        {
-          "channel": "website_form",
-          "score": 80,
-          "verified": false,
-          "reasons": [
-            "first_party_evidence"
-          ],
-          "evidenceUrl": "https://nwroadreps.com/brands/",
           "checkedAt": ""
         }
       ],
@@ -3664,17 +3529,24 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
           "checkedAt": ""
         }
       ],
-      "history": []
+      "history": [
+        {
+          "status": "website_contact_unreachable_skip",
+          "timestamp": "2026-08-13T02:17:11.757Z",
+          "channel": "website_form",
+          "evidence": "website_contact_entry_not_verified;contact_entry_clicked:Skip to content;website_contact_all_targets_failed:1;contact_path_strategy_v2"
+        }
+      ]
     },
     {
-      "companyId": "company_8b4340463804ff1d",
-      "company": "AKA Sports Group",
+      "companyId": "company_de85ed52a331bbe6",
+      "company": "Perpetual Motion NW",
       "keys": [
-        "akasportsgroup",
-        "akasportsgroupcom"
+        "perpetualmotionnw",
+        "perpetualmotionnwcom"
       ],
       "domains": [
-        "akasportsgroup.com"
+        "perpetualmotionnw.com"
       ],
       "channels": [
         "website_form"
@@ -3687,7 +3559,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
           "reasons": [
             "first_party_evidence"
           ],
-          "evidenceUrl": "https://www.akasportsgroup.com/",
+          "evidenceUrl": "https://perpetualmotionnw.com/",
           "checkedAt": ""
         },
         {
@@ -3697,7 +3569,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
           "reasons": [
             "first_party_evidence"
           ],
-          "evidenceUrl": "https://www.akasportsgroup.com/",
+          "evidenceUrl": "https://perpetualmotionnw.com/",
           "checkedAt": ""
         },
         {
@@ -3707,7 +3579,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
           "reasons": [
             "first_party_evidence"
           ],
-          "evidenceUrl": "https://www.akasportsgroup.com/",
+          "evidenceUrl": "https://perpetualmotionnw.com/",
           "checkedAt": ""
         }
       ],
@@ -3902,6 +3774,53 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
       "history": []
     },
     {
+      "companyId": "company_edee81d2d8ae86e1",
+      "company": "Green Drake Outdoors",
+      "keys": [
+        "greendrakeoutdoors",
+        "greendrakeoutdoorscom"
+      ],
+      "domains": [
+        "greendrakeoutdoors.com"
+      ],
+      "channels": [
+        "website_form"
+      ],
+      "evidence": [
+        {
+          "channel": "website_form",
+          "score": 80,
+          "verified": false,
+          "reasons": [
+            "first_party_evidence"
+          ],
+          "evidenceUrl": "https://www.greendrakeoutdoors.com/",
+          "checkedAt": ""
+        },
+        {
+          "channel": "website_form",
+          "score": 80,
+          "verified": false,
+          "reasons": [
+            "first_party_evidence"
+          ],
+          "evidenceUrl": "https://www.greendrakeoutdoors.com/",
+          "checkedAt": ""
+        },
+        {
+          "channel": "website_form",
+          "score": 80,
+          "verified": false,
+          "reasons": [
+            "first_party_evidence"
+          ],
+          "evidenceUrl": "https://www.greendrakeoutdoors.com/",
+          "checkedAt": ""
+        }
+      ],
+      "history": []
+    },
+    {
       "companyId": "company_7a72266d44e2af1b",
       "company": "Premium Living Products",
       "keys": [
@@ -3954,6 +3873,53 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
           "evidence": "website_contact_entry_not_verified;contact_entry_clicked:Contact Us;website_contact_all_targets_failed:6;contact_path_strategy_v2"
         }
       ]
+    },
+    {
+      "companyId": "company_8699e9963c2441e1",
+      "company": "Mutinous Sales and Marketing",
+      "keys": [
+        "mutinoussalesandmarketing",
+        "sitesgooglecom"
+      ],
+      "domains": [
+        "sites.google.com"
+      ],
+      "channels": [
+        "website_form"
+      ],
+      "evidence": [
+        {
+          "channel": "website_form",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "https://sites.google.com/mutinousmarketing.com/mutinous-sales-marketing/home",
+          "checkedAt": ""
+        },
+        {
+          "channel": "website_form",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "https://sites.google.com/mutinousmarketing.com/mutinous-sales-marketing/home",
+          "checkedAt": ""
+        },
+        {
+          "channel": "website_form",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "https://sites.google.com/mutinousmarketing.com/mutinous-sales-marketing/home",
+          "checkedAt": ""
+        }
+      ],
+      "history": []
     },
     {
       "companyId": "company_6c6e94fca0398923",
@@ -6419,6 +6385,68 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
           "timestamp": "2026-07-29T02:49:59.573Z",
           "channel": "website_form",
           "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:6;contact_path_strategy_v2"
+        }
+      ]
+    },
+    {
+      "companyId": "company_ef861e4dd1af2c1c",
+      "company": "Ekosport",
+      "keys": [
+        "ekosport",
+        "ekosportfr"
+      ],
+      "domains": [
+        "ekosport.fr"
+      ],
+      "channels": [
+        "website_form"
+      ],
+      "evidence": [
+        {
+          "channel": "website_form",
+          "score": 80,
+          "verified": false,
+          "reasons": [
+            "first_party_evidence"
+          ],
+          "evidenceUrl": "https://www.ekosport.fr/",
+          "checkedAt": ""
+        },
+        {
+          "channel": "website_form",
+          "score": 80,
+          "verified": false,
+          "reasons": [
+            "first_party_evidence"
+          ],
+          "evidenceUrl": "https://www.ekosport.fr/",
+          "checkedAt": ""
+        }
+      ],
+      "history": [
+        {
+          "status": "website_contact_unreachable_skip",
+          "timestamp": "2026-07-14T03:08:27.710Z",
+          "channel": "website_form",
+          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:1"
+        },
+        {
+          "status": "website_contact_unreachable_skip",
+          "timestamp": "2026-07-21T02:58:08.456Z",
+          "channel": "website_form",
+          "evidence": "website_page_unavailable_404: Nos UniversTrailChaussure trailSac hydratation trailChaussure de récupérationVêtement trailEquipement trailMontres cardio GPSNutritionRunningChaussure runningChaussure de récupérat;website_contact_all_targets_failed:6;contact_path_strategy_v2"
+        },
+        {
+          "status": "website_contact_unreachable_skip",
+          "timestamp": "2026-07-21T20:07:35.781Z",
+          "channel": "website_form",
+          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:6;contact_path_strategy_v2"
+        },
+        {
+          "status": "website_contact_unreachable_skip",
+          "timestamp": "2026-07-26T22:09:41.715Z",
+          "channel": "website_form",
+          "evidence": "website_contact_entry_not_verified;no_contact_route_detected;website_contact_all_targets_failed:6;contact_path_strategy_v2"
         }
       ]
     },
@@ -11219,58 +11247,6 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
       ]
     },
     {
-      "companyId": "company_ef861e4dd1af2c1c",
-      "company": "Ekosport",
-      "keys": [
-        "ekosport",
-        "ekosportfr"
-      ],
-      "domains": [
-        "ekosport.fr"
-      ],
-      "channels": [
-        "website_form"
-      ],
-      "evidence": [
-        {
-          "channel": "website_form",
-          "score": 80,
-          "verified": false,
-          "reasons": [
-            "first_party_evidence"
-          ],
-          "evidenceUrl": "https://www.ekosport.fr/",
-          "checkedAt": ""
-        }
-      ],
-      "history": [
-        {
-          "status": "website_contact_unreachable_skip",
-          "timestamp": "2026-07-14T03:08:27.710Z",
-          "channel": "website_form",
-          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:1"
-        },
-        {
-          "status": "website_contact_unreachable_skip",
-          "timestamp": "2026-07-21T02:58:08.456Z",
-          "channel": "website_form",
-          "evidence": "website_page_unavailable_404: Nos UniversTrailChaussure trailSac hydratation trailChaussure de récupérationVêtement trailEquipement trailMontres cardio GPSNutritionRunningChaussure runningChaussure de récupérat;website_contact_all_targets_failed:6;contact_path_strategy_v2"
-        },
-        {
-          "status": "website_contact_unreachable_skip",
-          "timestamp": "2026-07-21T20:07:35.781Z",
-          "channel": "website_form",
-          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:6;contact_path_strategy_v2"
-        },
-        {
-          "status": "website_contact_unreachable_skip",
-          "timestamp": "2026-07-26T22:09:41.715Z",
-          "channel": "website_form",
-          "evidence": "website_contact_entry_not_verified;no_contact_route_detected;website_contact_all_targets_failed:6;contact_path_strategy_v2"
-        }
-      ]
-    },
-    {
       "companyId": "company_d56dd23010a88e03",
       "company": "Barrabes",
       "keys": [
@@ -14210,6 +14186,41 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
       ]
     },
     {
+      "companyId": "company_7b4c288432624b77",
+      "company": "The Evans Group",
+      "keys": [
+        "theevansgroup",
+        "theevansgroupnet"
+      ],
+      "domains": [
+        "theevansgroup.net"
+      ],
+      "channels": [
+        "website_form",
+        "email"
+      ],
+      "evidence": [
+        {
+          "channel": "website_form",
+          "score": 100,
+          "verified": true,
+          "reasons": [
+            "official_business_route"
+          ],
+          "evidenceUrl": "https://theevansgroup.net/about/",
+          "checkedAt": ""
+        }
+      ],
+      "history": [
+        {
+          "status": "sent_confirmed",
+          "timestamp": "2026-08-13T02:14:40.643Z",
+          "channel": "email",
+          "evidence": "smtp_accepted;message_id:<8cc2e463-b3fe-c9e3-e52c-4c77661158b0@flextailgear.com>;sent_folder_message_confirmed;contact_path_strategy_v2"
+        }
+      ]
+    },
+    {
       "companyId": "company_7e96fef6c58398d6",
       "company": "Bever",
       "keys": [
@@ -15277,6 +15288,41 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
           "timestamp": "2026-07-21T05:29:00.000Z",
           "channel": "email",
           "evidence": "official_homepage_and_where_to_buy_distribution_page;alibaba_mail_sender_verified_leo_at_flextailgear_com;separate_chrome_tab_used;alibaba_mail_sent_success_visible;sent_folder_record_confirmed;sent_folder_time:13:29;sent_folder_subject:FLEXTAIL outdoor electronics | Further Faster range review"
+        }
+      ]
+    },
+    {
+      "companyId": "company_6b0bac3105d7454c",
+      "company": "Precision Sales Unlimited",
+      "keys": [
+        "precisionsalesunlimited",
+        "precisionsalesunlimitedcom"
+      ],
+      "domains": [
+        "precisionsalesunlimited.com"
+      ],
+      "channels": [
+        "website_form",
+        "email"
+      ],
+      "evidence": [
+        {
+          "channel": "website_form",
+          "score": 100,
+          "verified": true,
+          "reasons": [
+            "official_business_route"
+          ],
+          "evidenceUrl": "https://www.precisionsalesunlimited.com/",
+          "checkedAt": ""
+        }
+      ],
+      "history": [
+        {
+          "status": "sent_confirmed",
+          "timestamp": "2026-08-13T02:14:46.093Z",
+          "channel": "email",
+          "evidence": "smtp_accepted;message_id:<5d8b037d-3778-950a-f2cc-31462c788a08@flextailgear.com>;sent_folder_message_confirmed;contact_path_strategy_v2"
         }
       ]
     },
@@ -20679,6 +20725,111 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
       ]
     },
     {
+      "companyId": "company_bec8d6ffdd3577d8",
+      "company": "Apex Outdoor Sales",
+      "keys": [
+        "apexoutdoorsales",
+        "apexoutdoorsalescom"
+      ],
+      "domains": [
+        "apexoutdoorsales.com"
+      ],
+      "channels": [
+        "website_form",
+        "email"
+      ],
+      "evidence": [
+        {
+          "channel": "website_form",
+          "score": 100,
+          "verified": true,
+          "reasons": [
+            "official_business_route"
+          ],
+          "evidenceUrl": "https://www.apexoutdoorsales.com/",
+          "checkedAt": ""
+        }
+      ],
+      "history": [
+        {
+          "status": "sent_confirmed",
+          "timestamp": "2026-08-13T02:14:57.634Z",
+          "channel": "email",
+          "evidence": "smtp_accepted;message_id:<3664657c-a0c0-2386-d3cc-83e599994d13@flextailgear.com>;sent_folder_message_confirmed;contact_path_strategy_v2"
+        }
+      ]
+    },
+    {
+      "companyId": "company_555b0c0c8447db6e",
+      "company": "Northwest Road Reps",
+      "keys": [
+        "northwestroadreps",
+        "nwroadrepscom"
+      ],
+      "domains": [
+        "nwroadreps.com"
+      ],
+      "channels": [
+        "website_form",
+        "email"
+      ],
+      "evidence": [
+        {
+          "channel": "website_form",
+          "score": 100,
+          "verified": true,
+          "reasons": [
+            "official_business_route"
+          ],
+          "evidenceUrl": "https://nwroadreps.com/brands/",
+          "checkedAt": ""
+        }
+      ],
+      "history": [
+        {
+          "status": "sent_confirmed",
+          "timestamp": "2026-08-13T02:15:03.349Z",
+          "channel": "email",
+          "evidence": "smtp_accepted;message_id:<179c7ee5-a861-0926-8273-7e889fbed43d@flextailgear.com>;sent_folder_message_confirmed;contact_path_strategy_v2"
+        }
+      ]
+    },
+    {
+      "companyId": "company_e05637411facb93b",
+      "company": "Action Brio",
+      "keys": [
+        "actionbrio",
+        "actionbriocom"
+      ],
+      "domains": [
+        "actionbrio.com"
+      ],
+      "channels": [
+        "website_form",
+        "email"
+      ],
+      "evidence": [
+        {
+          "channel": "website_form",
+          "score": 100,
+          "verified": true,
+          "reasons": [
+            "official_business_route"
+          ],
+          "evidenceUrl": "https://www.actionbrio.com/about",
+          "checkedAt": ""
+        }
+      ],
+      "history": [
+        {
+          "status": "sent_confirmed",
+          "timestamp": "2026-08-13T02:14:51.937Z",
+          "channel": "email",
+          "evidence": "smtp_accepted;message_id:<185da33b-889f-06d4-bd5d-9d248ee69af7@flextailgear.com>;sent_folder_message_confirmed;contact_path_strategy_v2"
+        }
+      ]
+    },
+    {
       "companyId": "company_deb72f2e54293ab1",
       "company": "Equipment Outdoors",
       "keys": [
@@ -20859,6 +21010,41 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
           "timestamp": "2026-08-10T11:07:00.000Z",
           "channel": "email",
           "evidence": "browser_control_timeout_recovered_read_only;sent_folder_unique_company_body_reconciled;no_open_composer;no_matched_DSN_in_bounded_scan"
+        }
+      ]
+    },
+    {
+      "companyId": "company_8b4340463804ff1d",
+      "company": "AKA Sports Group",
+      "keys": [
+        "akasportsgroup",
+        "akasportsgroupcom"
+      ],
+      "domains": [
+        "akasportsgroup.com"
+      ],
+      "channels": [
+        "website_form",
+        "email"
+      ],
+      "evidence": [
+        {
+          "channel": "website_form",
+          "score": 100,
+          "verified": true,
+          "reasons": [
+            "official_business_route"
+          ],
+          "evidenceUrl": "https://www.akasportsgroup.com/",
+          "checkedAt": ""
+        }
+      ],
+      "history": [
+        {
+          "status": "sent_confirmed",
+          "timestamp": "2026-08-13T02:15:09.327Z",
+          "channel": "email",
+          "evidence": "smtp_accepted;message_id:<e200cca6-9de9-96dd-cdc0-098e2f9f99e7@flextailgear.com>;sent_folder_message_confirmed;contact_path_strategy_v2"
         }
       ]
     },
@@ -26971,6 +27157,16 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
       "evidence": "official_Hardloop_page_publishes_hello_at_hardloop_fr;sender_recipient_subject_body_gate_passed;send_clicked_once;alibaba_sent_confirmation_visible;composer_closed;immediate_bounce_scan_clear"
     },
     {
+      "companyId": "company_7b4c288432624b77",
+      "company": "The Evans Group",
+      "permanent": true,
+      "crossChannel": true,
+      "reason": "previous_customer_development_no_repeat",
+      "sourceStatus": "sent_confirmed",
+      "sourceTimestamp": "2026-08-13T02:14:40.643Z",
+      "evidence": "smtp_accepted;message_id:<8cc2e463-b3fe-c9e3-e52c-4c77661158b0@flextailgear.com>;sent_folder_message_confirmed;contact_path_strategy_v2"
+    },
+    {
       "companyId": "company_7e96fef6c58398d6",
       "company": "Bever",
       "permanent": true,
@@ -27159,6 +27355,16 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
       "sourceStatus": "sent_confirmed",
       "sourceTimestamp": "2026-07-21T05:29:00.000Z",
       "evidence": "official_homepage_and_where_to_buy_distribution_page;alibaba_mail_sender_verified_leo_at_flextailgear_com;separate_chrome_tab_used;alibaba_mail_sent_success_visible;sent_folder_record_confirmed;sent_folder_time:13:29;sent_folder_subject:FLEXTAIL outdoor electronics | Further Faster range review"
+    },
+    {
+      "companyId": "company_6b0bac3105d7454c",
+      "company": "Precision Sales Unlimited",
+      "permanent": true,
+      "crossChannel": true,
+      "reason": "previous_customer_development_no_repeat",
+      "sourceStatus": "sent_confirmed",
+      "sourceTimestamp": "2026-08-13T02:14:46.093Z",
+      "evidence": "smtp_accepted;message_id:<5d8b037d-3778-950a-f2cc-31462c788a08@flextailgear.com>;sent_folder_message_confirmed;contact_path_strategy_v2"
     },
     {
       "companyId": "company_2424d102e468aee0",
@@ -27771,6 +27977,36 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
       "evidence": "smtp_accepted;message_id:<8db03a9e-9380-54fb-423f-9fcdb4d3895f@flextailgear.com>;sent_folder_message_confirmed;contact_path_strategy_v2"
     },
     {
+      "companyId": "company_bec8d6ffdd3577d8",
+      "company": "Apex Outdoor Sales",
+      "permanent": true,
+      "crossChannel": true,
+      "reason": "previous_customer_development_no_repeat",
+      "sourceStatus": "sent_confirmed",
+      "sourceTimestamp": "2026-08-13T02:14:57.634Z",
+      "evidence": "smtp_accepted;message_id:<3664657c-a0c0-2386-d3cc-83e599994d13@flextailgear.com>;sent_folder_message_confirmed;contact_path_strategy_v2"
+    },
+    {
+      "companyId": "company_555b0c0c8447db6e",
+      "company": "Northwest Road Reps",
+      "permanent": true,
+      "crossChannel": true,
+      "reason": "previous_customer_development_no_repeat",
+      "sourceStatus": "sent_confirmed",
+      "sourceTimestamp": "2026-08-13T02:15:03.349Z",
+      "evidence": "smtp_accepted;message_id:<179c7ee5-a861-0926-8273-7e889fbed43d@flextailgear.com>;sent_folder_message_confirmed;contact_path_strategy_v2"
+    },
+    {
+      "companyId": "company_e05637411facb93b",
+      "company": "Action Brio",
+      "permanent": true,
+      "crossChannel": true,
+      "reason": "previous_customer_development_no_repeat",
+      "sourceStatus": "sent_confirmed",
+      "sourceTimestamp": "2026-08-13T02:14:51.937Z",
+      "evidence": "smtp_accepted;message_id:<185da33b-889f-06d4-bd5d-9d248ee69af7@flextailgear.com>;sent_folder_message_confirmed;contact_path_strategy_v2"
+    },
+    {
       "companyId": "company_deb72f2e54293ab1",
       "company": "Equipment Outdoors",
       "permanent": true,
@@ -27809,6 +28045,16 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
       "sourceStatus": "sent_confirmed",
       "sourceTimestamp": "2026-08-10T11:07:00.000Z",
       "evidence": "browser_control_timeout_recovered_read_only;sent_folder_unique_company_body_reconciled;no_open_composer;no_matched_DSN_in_bounded_scan"
+    },
+    {
+      "companyId": "company_8b4340463804ff1d",
+      "company": "AKA Sports Group",
+      "permanent": true,
+      "crossChannel": true,
+      "reason": "previous_customer_development_no_repeat",
+      "sourceStatus": "sent_confirmed",
+      "sourceTimestamp": "2026-08-13T02:15:09.327Z",
+      "evidence": "smtp_accepted;message_id:<e200cca6-9de9-96dd-cdc0-098e2f9f99e7@flextailgear.com>;sent_folder_message_confirmed;contact_path_strategy_v2"
     },
     {
       "companyId": "company_9b7e36cd6b3b3ac6",
@@ -29174,6 +29420,26 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
   "portfolio": {
     "actions": [
       {
+        "companyId": "company_972e2942f23630b1",
+        "company": "NLA Agency",
+        "action": "first_touch",
+        "channel": "website_form",
+        "evidenceScore": 100,
+        "evidenceUrl": "https://nlaagency.com/",
+        "alternatives": [],
+        "reason": "highest_priority_verified_channel"
+      },
+      {
+        "companyId": "company_54e7193138f05271",
+        "company": "Rise and Shine Sales Agency",
+        "action": "first_touch",
+        "channel": "website_form",
+        "evidenceScore": 100,
+        "evidenceUrl": "https://www.riseandshinesales.ca/",
+        "alternatives": [],
+        "reason": "highest_priority_verified_channel"
+      },
+      {
         "companyId": "company_fb5d7f105c82490f",
         "company": "Ascension Sales Group",
         "action": "first_touch",
@@ -29184,42 +29450,22 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
         "reason": "highest_priority_verified_channel"
       },
       {
+        "companyId": "company_73cbe86918a80d20",
+        "company": "Kelly Brand Management",
+        "action": "first_touch",
+        "channel": "website_form",
+        "evidenceScore": 100,
+        "evidenceUrl": "https://www.kellybrandmanagement.com/who-we-serve/",
+        "alternatives": [],
+        "reason": "highest_priority_verified_channel"
+      },
+      {
         "companyId": "company_ca049a336c94b7d9",
         "company": "Left Point Distribution",
         "action": "first_touch",
         "channel": "website_form",
         "evidenceScore": 100,
         "evidenceUrl": "https://www.leftpointdistribution.com/en-eu/aboutus.php",
-        "alternatives": [],
-        "reason": "highest_priority_verified_channel"
-      },
-      {
-        "companyId": "company_7e3d1608b38203d0",
-        "company": "RTIC Mexico",
-        "action": "first_touch",
-        "channel": "website_form",
-        "evidenceScore": 100,
-        "evidenceUrl": "https://rtic.mx/products/hilera-rtic-45-hard-cooler",
-        "alternatives": [],
-        "reason": "highest_priority_verified_channel"
-      },
-      {
-        "companyId": "company_152c4973e4cf4ec0",
-        "company": "Obelink",
-        "action": "first_touch",
-        "channel": "website_form",
-        "evidenceScore": 100,
-        "evidenceUrl": "https://www.obelink.nl/obelink-partnerprogramma",
-        "alternatives": [],
-        "reason": "highest_priority_verified_channel"
-      },
-      {
-        "companyId": "company_992d96a6c170243f",
-        "company": "Esprinet Group",
-        "action": "first_touch",
-        "channel": "website_form",
-        "evidenceScore": 100,
-        "evidenceUrl": "https://www.esprinet.com/en/become-a-supplier/",
         "alternatives": [],
         "reason": "highest_priority_verified_channel"
       },
@@ -29299,7 +29545,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
       },
       {
         "channel": "email",
-        "confirmed": 260,
+        "confirmed": 266,
         "replies": 0,
         "opportunities": 0,
         "replyRate": 0,
@@ -29350,7 +29596,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
       {
         "dimension": "channel",
         "variant": "email",
-        "sampleSize": 260,
+        "sampleSize": 266,
         "observedReplyRate": 0,
         "recommendation": "use_as_bounded_allocation_signal"
       },
@@ -29364,15 +29610,35 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
     ]
   },
   "ownerSummary": {
-    "generatedAt": "2026-08-13T02:12:23.777Z",
+    "generatedAt": "2026-08-13T02:21:43.647Z",
     "phase": "autonomous_sales_operating_system_v1",
     "kpis": {
-      "companies": 482,
-      "permanentlySuppressed": 358,
+      "companies": 486,
+      "permanentlySuppressed": 364,
       "plannedActions": 7,
-      "verifiedEvidenceRoutes": 286
+      "verifiedEvidenceRoutes": 304
     },
     "decisions": [
+      {
+        "companyId": "company_972e2942f23630b1",
+        "company": "NLA Agency",
+        "action": "first_touch",
+        "channel": "website_form",
+        "evidenceScore": 100,
+        "evidenceUrl": "https://nlaagency.com/",
+        "alternatives": [],
+        "reason": "highest_priority_verified_channel"
+      },
+      {
+        "companyId": "company_54e7193138f05271",
+        "company": "Rise and Shine Sales Agency",
+        "action": "first_touch",
+        "channel": "website_form",
+        "evidenceScore": 100,
+        "evidenceUrl": "https://www.riseandshinesales.ca/",
+        "alternatives": [],
+        "reason": "highest_priority_verified_channel"
+      },
       {
         "companyId": "company_fb5d7f105c82490f",
         "company": "Ascension Sales Group",
@@ -29384,42 +29650,22 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
         "reason": "highest_priority_verified_channel"
       },
       {
+        "companyId": "company_73cbe86918a80d20",
+        "company": "Kelly Brand Management",
+        "action": "first_touch",
+        "channel": "website_form",
+        "evidenceScore": 100,
+        "evidenceUrl": "https://www.kellybrandmanagement.com/who-we-serve/",
+        "alternatives": [],
+        "reason": "highest_priority_verified_channel"
+      },
+      {
         "companyId": "company_ca049a336c94b7d9",
         "company": "Left Point Distribution",
         "action": "first_touch",
         "channel": "website_form",
         "evidenceScore": 100,
         "evidenceUrl": "https://www.leftpointdistribution.com/en-eu/aboutus.php",
-        "alternatives": [],
-        "reason": "highest_priority_verified_channel"
-      },
-      {
-        "companyId": "company_7e3d1608b38203d0",
-        "company": "RTIC Mexico",
-        "action": "first_touch",
-        "channel": "website_form",
-        "evidenceScore": 100,
-        "evidenceUrl": "https://rtic.mx/products/hilera-rtic-45-hard-cooler",
-        "alternatives": [],
-        "reason": "highest_priority_verified_channel"
-      },
-      {
-        "companyId": "company_152c4973e4cf4ec0",
-        "company": "Obelink",
-        "action": "first_touch",
-        "channel": "website_form",
-        "evidenceScore": 100,
-        "evidenceUrl": "https://www.obelink.nl/obelink-partnerprogramma",
-        "alternatives": [],
-        "reason": "highest_priority_verified_channel"
-      },
-      {
-        "companyId": "company_992d96a6c170243f",
-        "company": "Esprinet Group",
-        "action": "first_touch",
-        "channel": "website_form",
-        "evidenceScore": 100,
-        "evidenceUrl": "https://www.esprinet.com/en/become-a-supplier/",
         "alternatives": [],
         "reason": "highest_priority_verified_channel"
       },
@@ -29490,7 +29736,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
         },
         {
           "channel": "email",
-          "confirmed": 260,
+          "confirmed": 266,
           "replies": 0,
           "opportunities": 0,
           "replyRate": 0,
@@ -29541,7 +29787,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
         {
           "dimension": "channel",
           "variant": "email",
-          "sampleSize": 260,
+          "sampleSize": 266,
           "observedReplyRate": 0,
           "recommendation": "use_as_bounded_allocation_signal"
         },
