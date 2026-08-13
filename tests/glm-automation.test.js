@@ -1755,6 +1755,15 @@ test('Google discovery includes first-party-backed North America distributor res
   }
 });
 
+test('North America refill includes current first-party Mexican and US key accounts with exact official social profiles', () => {
+  for (const company of ['Rabbit Mountain Mexico', 'Nomadic Supply Company', 'Punto Vertical Mexico']) {
+    assert.ok(discoverySource.includes(`'${company}'`));
+  }
+  assert.ok(discoverySource.includes('https://www.instagram.com/rabbitmountainmex/'));
+  assert.ok(discoverySource.includes('https://www.instagram.com/nomadic.supply/'));
+  assert.ok(discoverySource.includes('https://www.instagram.com/puntoverticalmx/'));
+});
+
 test('daily execution owns and closes each automation-created Chrome tab', () => {
   assert.ok(mainSource.includes('automationOwnedChromeTabs'));
   assert.ok(mainSource.includes('closeAutomationTabsOpenedAfter'));
