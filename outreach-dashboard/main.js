@@ -405,6 +405,13 @@ function blockingAutomationResultFor(item) {
   }
   const sameDayFailedAttempts = results
     .filter(result => result && result.status === 'failed_open' && isSameAutomationDay(result.timestamp))
+    // Older fallback routing could label a sender-disabled email preflight as
+    // a social failed_open even though no social page was opened. That is a
+    // reversible, pre-interaction bookkeeping failure and must not suppress a
+    // newly corrected explicit official-social task on the same day.
+    .filter(result => !(/email_sender_delivery_disabled/i.test(String(result.evidence || ''))
+      && /official_social_fallback/i.test(String(result.evidence || ''))
+      && !/draft_inserted|send_clicked|physical_send|customer_interaction/i.test(String(result.evidence || ''))))
     .filter(result => !isFixedAlibabaRecipientVerifierFailure(result))
     .filter(result => !isFixedAlibabaSubjectVerifierFailure(result))
     .filter(result => !(exactSocialHandleMatchesCompany(item) && isFixedIdentityVerifierFailure(result)))
@@ -429,6 +436,7 @@ function blockingAutomationResultFor(item) {
     // same company again that day; advance to the next safe customer.
     .filter((result) => !(verifiedBusinessEmailTarget(item).ok
       && ['website_contact_ready', 'website_contact_unreachable_skip'].includes(result.status)
+      && !/email_sender_delivery_disabled/i.test(String(result.evidence || ''))
       && (!/alibaba_webmail_login_required|alibaba_webmail_session_unavailable/i.test(String(result.evidence || ''))
         || liveAlibabaWebmailSessionReady)))
     // A prepared/unreachable website path is a bounded attempt, not a
@@ -441,7 +449,11 @@ function blockingAutomationResultFor(item) {
     .filter((result) => result.status !== 'send_unconfirmed'
       || sendStatusHasCustomerInteraction(result.status, result.evidence)
       || /prior_send_unconfirmed_no_resend|sent_folder_record_missing/i.test(String(result.evidence || '')))
-    .filter((result) => result.status !== 'failed_open' || failedOpenResultShouldBlockRetry(result) || historicalAutomationResultBlocksCompany(result))
+    .filter((result) => result.status !== 'failed_open'
+      || !(/email_sender_delivery_disabled/i.test(String(result.evidence || ''))
+        && /official_social_fallback/i.test(String(result.evidence || ''))
+        && !/draft_inserted|send_clicked|physical_send|customer_interaction/i.test(String(result.evidence || '')))
+      && (failedOpenResultShouldBlockRetry(result) || historicalAutomationResultBlocksCompany(result)))
     // A source-backed official-profile flag can recover exactly one prior
     // generic identity-string false negative after the verifier is fixed.
     .filter((result) => !((item.officialSocialProfileVerified || exactSocialHandleMatchesCompany(item))
@@ -3986,7 +3998,11 @@ async function executeLeadAutomation(lead, options = {}) {
     || lead && lead.action === 'email_priority'
     || /^official_website_contact_channel$|^website_contact/i.test(String(lead && lead.reason || '')));
   const isVerifiedEmail = verifiedBusinessEmailTarget(lead).ok;
-  if (isVerifiedEmail && !isWebsiteContact) {
+  // A social fallback intentionally retains the customer's verified email as
+  // dossier context. The explicit platform is authoritative: do not route the
+  // Instagram/LinkedIn/Facebook task back into email merely because the
+  // inherited company record also contains a verified mailbox.
+  if (isVerifiedEmail && !isWebsiteContact && !isExplicitSocial) {
     if (typeof options.enterCriticalSection === 'function') options.enterCriticalSection('verified_email_send_confirmation');
     const subject = websiteContactSubject(lead);
     const draft = websiteContactMessage(lead);
