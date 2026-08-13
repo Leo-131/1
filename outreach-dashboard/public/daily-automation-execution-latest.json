@@ -10,7 +10,7 @@
   "chromeOpenedCount": 0,
   "customerDevelopmentPerformed": true,
   "customerMessageSent": true,
-  "realDevelopmentCount": 3,
+  "realDevelopmentCount": 2,
   "reportingVerdict": "development_performed",
   "engine": "Browser transport queue bridge",
   "mode": "serial-single-target",
@@ -21,60 +21,26 @@
   "queueSource": "dailyQueue",
   "executed": [
     {
-      "id": "google-customer-hi-altitude-sales-consulting-website-contact",
-      "company": "Hi Altitude Sales & Consulting",
+      "id": "google-customer-authentik-sales-website-contact",
+      "company": "Authentik Sales",
       "action": "email_priority",
       "platform": "email",
-      "targetUrl": "https://www.thermarest.com/on/demandware.static/-/Library-Sites-cdiSharedLibrary/default/dwa24364e3/pdf/Cascade-Designs-US-Sales-Reps.pdf",
+      "targetUrl": "https://www.authentiksales.com/about-us-en",
       "ok": true,
       "sendStatus": "sent_confirmed",
-      "evidence": "smtp_accepted;message_id:<4842d089-334f-2ca6-6ce1-936b95fe5811@flextailgear.com>;sent_folder_message_confirmed;contact_path_strategy_v2",
-      "timestamp": "2026-08-13T02:59:50.204Z",
+      "evidence": "smtp_accepted;message_id:<78ead97d-4039-7e27-223c-6bb0519c64a7@flextailgear.com>;sent_folder_message_confirmed;contact_path_strategy_v2",
+      "timestamp": "2026-08-13T03:02:28.062Z",
       "chromeOpen": null,
       "result": {
         "ok": true,
         "sendStatus": "sent_confirmed",
         "reason": "sent_folder_message_confirmed",
-        "evidence": "smtp_accepted;message_id:<4842d089-334f-2ca6-6ce1-936b95fe5811@flextailgear.com>;sent_folder_message_confirmed;contact_path_strategy_v2",
-        "recipientEmail": "info@hialtitude.com",
-        "messageId": "<4842d089-334f-2ca6-6ce1-936b95fe5811@flextailgear.com>",
-        "sentAt": "2026-08-13T02:59:48.290Z",
+        "evidence": "smtp_accepted;message_id:<78ead97d-4039-7e27-223c-6bb0519c64a7@flextailgear.com>;sent_folder_message_confirmed;contact_path_strategy_v2",
+        "recipientEmail": "matt@authentiksales.com",
+        "messageId": "<78ead97d-4039-7e27-223c-6bb0519c64a7@flextailgear.com>",
+        "sentAt": "2026-08-13T03:02:26.633Z",
         "sentFolder": "已发送",
-        "sentUid": 3256,
-        "contentValidation": {
-          "ok": true,
-          "errors": [],
-          "words": 112
-        },
-        "engine": "alibaba-enterprise-mail-smtp-imap",
-        "mode": "alibaba_email_sent_folder_confirmed",
-        "targetUrl": "mailto:info@hialtitude.com",
-        "subject": "FLEXTAIL retail partnership | 2026 assortment",
-        "draft": "Dear Hi Altitude Sales & Consulting Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
-        "output": "{\"verdict\":\"sent_confirmed\",\"sendStatus\":\"sent_confirmed\",\"evidence\":\"smtp_accepted;message_id:<4842d089-334f-2ca6-6ce1-936b95fe5811@flextailgear.com>;sent_folder_message_confirmed;contact_path_strategy_v2\",\"nextAction\":\"Alibaba Mail accepted the message and the matching record exists in Sent.\",\"recipientEmail\":\"info@hialtitude.com\",\"messageId\":\"<4842d089-334f-2ca6-6ce1-936b95fe5811@flextailgear.com>\"}"
-      }
-    },
-    {
-      "id": "google-customer-lathrop-associates-website-contact",
-      "company": "Lathrop Associates",
-      "action": "email_priority",
-      "platform": "email",
-      "targetUrl": "https://www.thermarest.com/on/demandware.static/-/Library-Sites-cdiSharedLibrary/default/dwa24364e3/pdf/Cascade-Designs-US-Sales-Reps.pdf",
-      "ok": true,
-      "sendStatus": "sent_confirmed",
-      "evidence": "smtp_accepted;message_id:<118e2393-0232-c8ad-fd3a-2d6a16030fd8@flextailgear.com>;sent_folder_message_confirmed;contact_path_strategy_v2",
-      "timestamp": "2026-08-13T02:59:56.146Z",
-      "chromeOpen": null,
-      "result": {
-        "ok": true,
-        "sendStatus": "sent_confirmed",
-        "reason": "sent_folder_message_confirmed",
-        "evidence": "smtp_accepted;message_id:<118e2393-0232-c8ad-fd3a-2d6a16030fd8@flextailgear.com>;sent_folder_message_confirmed;contact_path_strategy_v2",
-        "recipientEmail": "chris@lathropassociates.com",
-        "messageId": "<118e2393-0232-c8ad-fd3a-2d6a16030fd8@flextailgear.com>",
-        "sentAt": "2026-08-13T02:59:54.796Z",
-        "sentFolder": "已发送",
-        "sentUid": 3257,
+        "sentUid": 3259,
         "contentValidation": {
           "ok": true,
           "errors": [],
@@ -82,103 +48,69 @@
         },
         "engine": "alibaba-enterprise-mail-smtp-imap",
         "mode": "alibaba_email_sent_folder_confirmed",
-        "targetUrl": "mailto:chris@lathropassociates.com",
+        "targetUrl": "mailto:matt@authentiksales.com",
         "subject": "FLEXTAIL retail partnership | 2026 assortment",
-        "draft": "Dear Lathrop Associates Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
-        "output": "{\"verdict\":\"sent_confirmed\",\"sendStatus\":\"sent_confirmed\",\"evidence\":\"smtp_accepted;message_id:<118e2393-0232-c8ad-fd3a-2d6a16030fd8@flextailgear.com>;sent_folder_message_confirmed;contact_path_strategy_v2\",\"nextAction\":\"Alibaba Mail accepted the message and the matching record exists in Sent.\",\"recipientEmail\":\"chris@lathropassociates.com\",\"messageId\":\"<118e2393-0232-c8ad-fd3a-2d6a16030fd8@flextailgear.com>\"}"
+        "draft": "Dear Authentik Sales Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
+        "output": "{\"verdict\":\"sent_confirmed\",\"sendStatus\":\"sent_confirmed\",\"evidence\":\"smtp_accepted;message_id:<78ead97d-4039-7e27-223c-6bb0519c64a7@flextailgear.com>;sent_folder_message_confirmed;contact_path_strategy_v2\",\"nextAction\":\"Alibaba Mail accepted the message and the matching record exists in Sent.\",\"recipientEmail\":\"matt@authentiksales.com\",\"messageId\":\"<78ead97d-4039-7e27-223c-6bb0519c64a7@flextailgear.com>\"}"
       }
     },
     {
-      "id": "google-customer-the-alpine-cowboy-website-contact",
-      "company": "The Alpine Cowboy",
+      "id": "google-customer-cdmc-sales-website-contact",
+      "company": "CDMC Sales",
       "action": "email_priority",
       "platform": "email",
-      "targetUrl": "https://www.thermarest.com/on/demandware.static/-/Library-Sites-cdiSharedLibrary/default/dwa24364e3/pdf/Cascade-Designs-US-Sales-Reps.pdf",
+      "targetUrl": "https://cdmcsales.com/",
       "ok": true,
       "sendStatus": "sent_confirmed",
-      "evidence": "smtp_accepted;message_id:<f28d377f-b120-6461-2815-a961354a8a82@flextailgear.com>;sent_folder_message_confirmed;contact_path_strategy_v2",
-      "timestamp": "2026-08-13T03:00:02.592Z",
+      "evidence": "smtp_accepted;message_id:<0d0167eb-09a1-755c-be66-5efc27455388@flextailgear.com>;sent_folder_message_confirmed;contact_path_strategy_v2",
+      "timestamp": "2026-08-13T03:02:34.385Z",
       "chromeOpen": null,
       "result": {
         "ok": true,
         "sendStatus": "sent_confirmed",
         "reason": "sent_folder_message_confirmed",
-        "evidence": "smtp_accepted;message_id:<f28d377f-b120-6461-2815-a961354a8a82@flextailgear.com>;sent_folder_message_confirmed;contact_path_strategy_v2",
-        "recipientEmail": "koby@alpinecowboy.com",
-        "messageId": "<f28d377f-b120-6461-2815-a961354a8a82@flextailgear.com>",
-        "sentAt": "2026-08-13T03:00:01.126Z",
+        "evidence": "smtp_accepted;message_id:<0d0167eb-09a1-755c-be66-5efc27455388@flextailgear.com>;sent_folder_message_confirmed;contact_path_strategy_v2",
+        "recipientEmail": "jonicollett@cdmcsales.com",
+        "messageId": "<0d0167eb-09a1-755c-be66-5efc27455388@flextailgear.com>",
+        "sentAt": "2026-08-13T03:02:32.936Z",
         "sentFolder": "已发送",
-        "sentUid": 3258,
+        "sentUid": 3260,
         "contentValidation": {
           "ok": true,
           "errors": [],
-          "words": 110
+          "words": 109
         },
         "engine": "alibaba-enterprise-mail-smtp-imap",
         "mode": "alibaba_email_sent_folder_confirmed",
-        "targetUrl": "mailto:koby@alpinecowboy.com",
+        "targetUrl": "mailto:jonicollett@cdmcsales.com",
         "subject": "FLEXTAIL retail partnership | 2026 assortment",
-        "draft": "Dear The Alpine Cowboy Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
-        "output": "{\"verdict\":\"sent_confirmed\",\"sendStatus\":\"sent_confirmed\",\"evidence\":\"smtp_accepted;message_id:<f28d377f-b120-6461-2815-a961354a8a82@flextailgear.com>;sent_folder_message_confirmed;contact_path_strategy_v2\",\"nextAction\":\"Alibaba Mail accepted the message and the matching record exists in Sent.\",\"recipientEmail\":\"koby@alpinecowboy.com\",\"messageId\":\"<f28d377f-b120-6461-2815-a961354a8a82@flextailgear.com>\"}"
+        "draft": "Dear CDMC Sales Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
+        "output": "{\"verdict\":\"sent_confirmed\",\"sendStatus\":\"sent_confirmed\",\"evidence\":\"smtp_accepted;message_id:<0d0167eb-09a1-755c-be66-5efc27455388@flextailgear.com>;sent_folder_message_confirmed;contact_path_strategy_v2\",\"nextAction\":\"Alibaba Mail accepted the message and the matching record exists in Sent.\",\"recipientEmail\":\"jonicollett@cdmcsales.com\",\"messageId\":\"<0d0167eb-09a1-755c-be66-5efc27455388@flextailgear.com>\"}"
       }
     }
   ],
   "results": [
     {
-      "id": "google-customer-hi-altitude-sales-consulting-website-contact",
-      "company": "Hi Altitude Sales & Consulting",
+      "id": "google-customer-authentik-sales-website-contact",
+      "company": "Authentik Sales",
       "action": "email_priority",
       "platform": "email",
-      "targetUrl": "https://www.thermarest.com/on/demandware.static/-/Library-Sites-cdiSharedLibrary/default/dwa24364e3/pdf/Cascade-Designs-US-Sales-Reps.pdf",
+      "targetUrl": "https://www.authentiksales.com/about-us-en",
       "ok": true,
       "sendStatus": "sent_confirmed",
-      "evidence": "smtp_accepted;message_id:<4842d089-334f-2ca6-6ce1-936b95fe5811@flextailgear.com>;sent_folder_message_confirmed;contact_path_strategy_v2",
-      "timestamp": "2026-08-13T02:59:50.204Z",
+      "evidence": "smtp_accepted;message_id:<78ead97d-4039-7e27-223c-6bb0519c64a7@flextailgear.com>;sent_folder_message_confirmed;contact_path_strategy_v2",
+      "timestamp": "2026-08-13T03:02:28.062Z",
       "chromeOpen": null,
       "result": {
         "ok": true,
         "sendStatus": "sent_confirmed",
         "reason": "sent_folder_message_confirmed",
-        "evidence": "smtp_accepted;message_id:<4842d089-334f-2ca6-6ce1-936b95fe5811@flextailgear.com>;sent_folder_message_confirmed;contact_path_strategy_v2",
-        "recipientEmail": "info@hialtitude.com",
-        "messageId": "<4842d089-334f-2ca6-6ce1-936b95fe5811@flextailgear.com>",
-        "sentAt": "2026-08-13T02:59:48.290Z",
+        "evidence": "smtp_accepted;message_id:<78ead97d-4039-7e27-223c-6bb0519c64a7@flextailgear.com>;sent_folder_message_confirmed;contact_path_strategy_v2",
+        "recipientEmail": "matt@authentiksales.com",
+        "messageId": "<78ead97d-4039-7e27-223c-6bb0519c64a7@flextailgear.com>",
+        "sentAt": "2026-08-13T03:02:26.633Z",
         "sentFolder": "已发送",
-        "sentUid": 3256,
-        "contentValidation": {
-          "ok": true,
-          "errors": [],
-          "words": 112
-        },
-        "engine": "alibaba-enterprise-mail-smtp-imap",
-        "mode": "alibaba_email_sent_folder_confirmed",
-        "targetUrl": "mailto:info@hialtitude.com",
-        "subject": "FLEXTAIL retail partnership | 2026 assortment",
-        "draft": "Dear Hi Altitude Sales & Consulting Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
-        "output": "{\"verdict\":\"sent_confirmed\",\"sendStatus\":\"sent_confirmed\",\"evidence\":\"smtp_accepted;message_id:<4842d089-334f-2ca6-6ce1-936b95fe5811@flextailgear.com>;sent_folder_message_confirmed;contact_path_strategy_v2\",\"nextAction\":\"Alibaba Mail accepted the message and the matching record exists in Sent.\",\"recipientEmail\":\"info@hialtitude.com\",\"messageId\":\"<4842d089-334f-2ca6-6ce1-936b95fe5811@flextailgear.com>\"}"
-      }
-    },
-    {
-      "id": "google-customer-lathrop-associates-website-contact",
-      "company": "Lathrop Associates",
-      "action": "email_priority",
-      "platform": "email",
-      "targetUrl": "https://www.thermarest.com/on/demandware.static/-/Library-Sites-cdiSharedLibrary/default/dwa24364e3/pdf/Cascade-Designs-US-Sales-Reps.pdf",
-      "ok": true,
-      "sendStatus": "sent_confirmed",
-      "evidence": "smtp_accepted;message_id:<118e2393-0232-c8ad-fd3a-2d6a16030fd8@flextailgear.com>;sent_folder_message_confirmed;contact_path_strategy_v2",
-      "timestamp": "2026-08-13T02:59:56.146Z",
-      "chromeOpen": null,
-      "result": {
-        "ok": true,
-        "sendStatus": "sent_confirmed",
-        "reason": "sent_folder_message_confirmed",
-        "evidence": "smtp_accepted;message_id:<118e2393-0232-c8ad-fd3a-2d6a16030fd8@flextailgear.com>;sent_folder_message_confirmed;contact_path_strategy_v2",
-        "recipientEmail": "chris@lathropassociates.com",
-        "messageId": "<118e2393-0232-c8ad-fd3a-2d6a16030fd8@flextailgear.com>",
-        "sentAt": "2026-08-13T02:59:54.796Z",
-        "sentFolder": "已发送",
-        "sentUid": 3257,
+        "sentUid": 3259,
         "contentValidation": {
           "ok": true,
           "errors": [],
@@ -186,44 +118,44 @@
         },
         "engine": "alibaba-enterprise-mail-smtp-imap",
         "mode": "alibaba_email_sent_folder_confirmed",
-        "targetUrl": "mailto:chris@lathropassociates.com",
+        "targetUrl": "mailto:matt@authentiksales.com",
         "subject": "FLEXTAIL retail partnership | 2026 assortment",
-        "draft": "Dear Lathrop Associates Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
-        "output": "{\"verdict\":\"sent_confirmed\",\"sendStatus\":\"sent_confirmed\",\"evidence\":\"smtp_accepted;message_id:<118e2393-0232-c8ad-fd3a-2d6a16030fd8@flextailgear.com>;sent_folder_message_confirmed;contact_path_strategy_v2\",\"nextAction\":\"Alibaba Mail accepted the message and the matching record exists in Sent.\",\"recipientEmail\":\"chris@lathropassociates.com\",\"messageId\":\"<118e2393-0232-c8ad-fd3a-2d6a16030fd8@flextailgear.com>\"}"
+        "draft": "Dear Authentik Sales Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
+        "output": "{\"verdict\":\"sent_confirmed\",\"sendStatus\":\"sent_confirmed\",\"evidence\":\"smtp_accepted;message_id:<78ead97d-4039-7e27-223c-6bb0519c64a7@flextailgear.com>;sent_folder_message_confirmed;contact_path_strategy_v2\",\"nextAction\":\"Alibaba Mail accepted the message and the matching record exists in Sent.\",\"recipientEmail\":\"matt@authentiksales.com\",\"messageId\":\"<78ead97d-4039-7e27-223c-6bb0519c64a7@flextailgear.com>\"}"
       }
     },
     {
-      "id": "google-customer-the-alpine-cowboy-website-contact",
-      "company": "The Alpine Cowboy",
+      "id": "google-customer-cdmc-sales-website-contact",
+      "company": "CDMC Sales",
       "action": "email_priority",
       "platform": "email",
-      "targetUrl": "https://www.thermarest.com/on/demandware.static/-/Library-Sites-cdiSharedLibrary/default/dwa24364e3/pdf/Cascade-Designs-US-Sales-Reps.pdf",
+      "targetUrl": "https://cdmcsales.com/",
       "ok": true,
       "sendStatus": "sent_confirmed",
-      "evidence": "smtp_accepted;message_id:<f28d377f-b120-6461-2815-a961354a8a82@flextailgear.com>;sent_folder_message_confirmed;contact_path_strategy_v2",
-      "timestamp": "2026-08-13T03:00:02.592Z",
+      "evidence": "smtp_accepted;message_id:<0d0167eb-09a1-755c-be66-5efc27455388@flextailgear.com>;sent_folder_message_confirmed;contact_path_strategy_v2",
+      "timestamp": "2026-08-13T03:02:34.385Z",
       "chromeOpen": null,
       "result": {
         "ok": true,
         "sendStatus": "sent_confirmed",
         "reason": "sent_folder_message_confirmed",
-        "evidence": "smtp_accepted;message_id:<f28d377f-b120-6461-2815-a961354a8a82@flextailgear.com>;sent_folder_message_confirmed;contact_path_strategy_v2",
-        "recipientEmail": "koby@alpinecowboy.com",
-        "messageId": "<f28d377f-b120-6461-2815-a961354a8a82@flextailgear.com>",
-        "sentAt": "2026-08-13T03:00:01.126Z",
+        "evidence": "smtp_accepted;message_id:<0d0167eb-09a1-755c-be66-5efc27455388@flextailgear.com>;sent_folder_message_confirmed;contact_path_strategy_v2",
+        "recipientEmail": "jonicollett@cdmcsales.com",
+        "messageId": "<0d0167eb-09a1-755c-be66-5efc27455388@flextailgear.com>",
+        "sentAt": "2026-08-13T03:02:32.936Z",
         "sentFolder": "已发送",
-        "sentUid": 3258,
+        "sentUid": 3260,
         "contentValidation": {
           "ok": true,
           "errors": [],
-          "words": 110
+          "words": 109
         },
         "engine": "alibaba-enterprise-mail-smtp-imap",
         "mode": "alibaba_email_sent_folder_confirmed",
-        "targetUrl": "mailto:koby@alpinecowboy.com",
+        "targetUrl": "mailto:jonicollett@cdmcsales.com",
         "subject": "FLEXTAIL retail partnership | 2026 assortment",
-        "draft": "Dear The Alpine Cowboy Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
-        "output": "{\"verdict\":\"sent_confirmed\",\"sendStatus\":\"sent_confirmed\",\"evidence\":\"smtp_accepted;message_id:<f28d377f-b120-6461-2815-a961354a8a82@flextailgear.com>;sent_folder_message_confirmed;contact_path_strategy_v2\",\"nextAction\":\"Alibaba Mail accepted the message and the matching record exists in Sent.\",\"recipientEmail\":\"koby@alpinecowboy.com\",\"messageId\":\"<f28d377f-b120-6461-2815-a961354a8a82@flextailgear.com>\"}"
+        "draft": "Dear CDMC Sales Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
+        "output": "{\"verdict\":\"sent_confirmed\",\"sendStatus\":\"sent_confirmed\",\"evidence\":\"smtp_accepted;message_id:<0d0167eb-09a1-755c-be66-5efc27455388@flextailgear.com>;sent_folder_message_confirmed;contact_path_strategy_v2\",\"nextAction\":\"Alibaba Mail accepted the message and the matching record exists in Sent.\",\"recipientEmail\":\"jonicollett@cdmcsales.com\",\"messageId\":\"<0d0167eb-09a1-755c-be66-5efc27455388@flextailgear.com>\"}"
       }
     }
   ],
@@ -908,6 +840,13 @@
       "reason": "homepage_only_contact_path_requires_verification"
     },
     {
+      "id": "google-customer-campz-website-contact",
+      "company": "Campz",
+      "action": "verify_target",
+      "platform": "website_form",
+      "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
       "id": "google-customer-sideways-distribution-website-contact",
       "company": "Sideways Distribution",
       "action": "email_priority",
@@ -1396,16 +1335,16 @@
     "highIcp": 16,
     "readyToDevelop": 15,
     "dueNow": 100,
-    "visibleTodayQueue": 72,
-    "potentialPool": 72,
+    "visibleTodayQueue": 71,
+    "potentialPool": 71,
     "potentialPoolTarget": 100,
     "customerTableHighIcp": 0,
-    "refillNeeded": 28,
-    "executableCompanies": 28,
+    "refillNeeded": 29,
+    "executableCompanies": 27,
     "executableReserveTarget": 130,
-    "executableReserveNeeded": 102,
+    "executableReserveNeeded": 103,
     "executableByChannel": {
-      "email": 12,
+      "email": 11,
       "website_form": 16
     },
     "verifiedSocialCompanies": 0,
@@ -1414,7 +1353,7 @@
     "enrichmentBacklogCount": 44,
     "googleDiscovered": 100,
     "facebookDiscovered": 0,
-    "websiteContactDiscovered": 20,
+    "websiteContactDiscovered": 19,
     "scheduledLater": 0,
     "cooldown": 30,
     "emailPriority": 0,
@@ -1427,7 +1366,7 @@
     {
       "reason": "homepage_only_contact_path_requires_verification",
       "status": "skipped",
-      "count": 60
+      "count": 61
     },
     {
       "reason": "website_contact_capability_not_verified",
@@ -1447,23 +1386,23 @@
     {
       "reason": "sent_folder_message_confirmed",
       "status": "sent_confirmed",
-      "count": 3
+      "count": 2
     }
   ],
   "blockerCounts": {
-    "homepage_only_contact_path_requires_verification": 60,
+    "homepage_only_contact_path_requires_verification": 61,
     "website_contact_capability_not_verified": 44,
     "official_website_contact_channel": 36,
     "official_public_business_email_verified": 26,
-    "sent_folder_message_confirmed": 3
+    "sent_folder_message_confirmed": 2
   },
   "queueGoalStatus": {
     "target": 100,
-    "potentialPool": 72,
+    "potentialPool": 71,
     "queueCount": 100,
     "googleDiscovered": 100,
-    "refillNeeded": 28,
-    "confirmedToday": 16,
+    "refillNeeded": 29,
+    "confirmedToday": 19,
     "reached": false,
     "action": "Add more verified high-ICP sources or unblock existing website/social leads."
   },
@@ -1475,31 +1414,31 @@
     "rule": "completed checkpoints are ignored; only terminal results from an active interrupted checkpoint suppress their exact task id"
   },
   "platformCircuitState": {},
-  "userVisibleStatus": "Customer development was not performed. Blockers: homepage_only_contact_path_requires_verification (60); website_contact_capability_not_verified (44); official_website_contact_channel (36).",
-  "recoveryHint": "Refill the high-ICP pool with 28 verified leads or unblock existing website/social leads before the next run.",
+  "userVisibleStatus": "Customer development was not performed. Blockers: homepage_only_contact_path_requires_verification (61); website_contact_capability_not_verified (44); official_website_contact_channel (36).",
+  "recoveryHint": "Refill the high-ICP pool with 29 verified leads or unblock existing website/social leads before the next run.",
   "recoveryActions": [
     {
       "reason": "daily_queue_goal_not_reached",
       "action": "Refill high-ICP customer pool",
-      "description": "Add or unblock 28 verified high-ICP leads to reach the daily 200 target.",
-      "hint": "Refill the high-ICP pool with 28 verified leads or unblock existing website/social leads before the next run.",
+      "description": "Add or unblock 29 verified high-ICP leads to reach the daily 200 target.",
+      "hint": "Refill the high-ICP pool with 29 verified leads or unblock existing website/social leads before the next run.",
       "target": 100,
-      "potentialPool": 72,
-      "refillNeeded": 28
+      "potentialPool": 71,
+      "refillNeeded": 29
     }
   ],
   "systemRefresh": {
-    "ok": true,
-    "stdout": "{\n  \"date\": \"2026-08-13\",\n  \"summary\": {\n    \"totalLeads\": 16,\n    \"highIcp\": 16,\n    \"readyToDevelop\": 15,\n    \"dueNow\": 100,\n    \"visibleTodayQueue\": 69,\n    \"potentialPool\": 69,\n    \"potentialPoolTarget\": 100,\n    \"customerTableHighIcp\": 0,\n    \"refillNeeded\": 31,\n    \"executableCompanies\": 25,\n    \"executableReserveTarget\": 130,\n    \"executableReserveNeeded\": 105,\n    \"executableByChannel\": {\n      \"email\": 9,\n      \"website_form\": 16\n    },\n    \"verifiedSocialCompanies\": 0,\n    \"verifiedSocialReserveTarget\": 20,\n    \"verifiedSocialReserveNeeded\": 20,\n    \"enrichmentBacklogCount\": 44,\n    \"googleDiscovered\": 100,\n    \"facebookDiscovered\": 0,\n    \"websiteContactDiscovered\": 17,\n    \"scheduledLater\": 0,\n    \"cooldown\": 30,\n    \"emailPriority\": 0,\n    \"openAgencyMarket\": 15,\n    \"exclusiveAgencySkipped\": 1,\n    \"needsVerification\": 0,\n    \"retainedLowIcp\": 0\n  },\n  \"bugErrors\": 12,\n  \"queueFile\": \"E:\\\\New project\\\\outreach-dashboard\\\\daily-runs\\\\2026-08-13-daily-automation.json\",\n  \"csvFile\": \"E:\\\\New project\\\\outreach-dashboard\\\\daily-runs\\\\2026-08-13-daily-queue.csv\"\n}",
-    "stderr": "",
-    "error": "",
+    "ok": false,
+    "stdout": "",
+    "stderr": "node:fs:3104\r\n  binding.copyFile(\r\n          ^\r\n\r\nError: UNKNOWN: unknown error, copyfile 'E:\\New project\\outreach-dashboard\\system-visibility-latest.js' -> 'E:\\New project\\outreach-dashboard\\public\\system-visibility-latest.js'\r\n    at Object.copyFileSync (node:fs:3104:11)\r\n    at copyPublicArtifact (E:\\New project\\outreach-dashboard\\daily-automation-runner.js:961:6)\r\n    at Array.forEach (<anonymous>)\r\n    at writeSystemVisibilityArtifact (E:\\New project\\outreach-dashboard\\daily-automation-runner.js:1025:5)\r\n    at writeRunArtifacts (E:\\New project\\outreach-dashboard\\daily-automation-runner.js:952:3)\r\n    at main (E:\\New project\\outreach-dashboard\\daily-automation-runner.js:1644:17)\r\n    at Object.<anonymous> (E:\\New project\\outreach-dashboard\\daily-automation-runner.js:1664:3)\r\n    at Module._compile (node:internal/modules/cjs/loader:1812:14)\r\n    at Object..js (node:internal/modules/cjs/loader:1943:10)\r\n    at Module.load (node:internal/modules/cjs/loader:1533:32) {\r\n  errno: -4094,\r\n  code: 'UNKNOWN',\r\n  syscall: 'copyfile',\r\n  path: 'E:\\\\New project\\\\outreach-dashboard\\\\system-visibility-latest.js',\r\n  dest: 'E:\\\\New project\\\\outreach-dashboard\\\\public\\\\system-visibility-latest.js'\r\n}\r\n\r\nNode.js v24.14.0",
+    "error": "Command failed: node E:\\New project\\outreach-dashboard\\daily-automation-runner.js --fix\nnode:fs:3104\r\n  binding.copyFile(\r\n          ^\r\n\r\nError: UNKNOWN: unknown error, copyfile 'E:\\New project\\outreach-dashboard\\system-visibility-latest.js' -> 'E:\\New project\\outreach-dashboard\\public\\system-visibility-latest.js'\r\n    at Object.copyFileSync (node:fs:3104:11)\r\n    at copyPublicArtifact (E:\\New project\\outreach-dashboard\\daily-automation-runner.js:961:6)\r\n    at Array.forEach (<anonymous>)\r\n    at writeSystemVisibilityArtifact (E:\\New project\\outreach-dashboard\\daily-automation-runner.js:1025:5)\r\n    at writeRunArtifacts (E:\\New project\\outreach-dashboard\\daily-automation-runner.js:952:3)\r\n    at main (E:\\New project\\outreach-dashboard\\daily-automation-runner.js:1644:17)\r\n    at Object.<anonymous> (E:\\New project\\outreach-dashboard\\daily-automation-runner.js:1664:3)\r\n    at Module._compile (node:internal/modules/cjs/loader:1812:14)\r\n    at Object..js (node:internal/modules/cjs/loader:1943:10)\r\n    at Module.load (node:internal/modules/cjs/loader:1533:32) {\r\n  errno: -4094,\r\n  code: 'UNKNOWN',\r\n  syscall: 'copyfile',\r\n  path: 'E:\\\\New project\\\\outreach-dashboard\\\\system-visibility-latest.js',\r\n  dest: 'E:\\\\New project\\\\outreach-dashboard\\\\public\\\\system-visibility-latest.js'\r\n}\r\n\r\nNode.js v24.14.0\r\n",
     "visibility": {
-      "updatedAt": "2026-08-13T03:00:04.829Z",
+      "updatedAt": "2026-08-13T03:02:36.559Z",
       "source": "main-refreshDailyAutomationArtifacts",
       "runDate": "2026-08-13",
-      "artifactGeneratedAt": "2026-08-13T03:00:02.789Z",
-      "executionGeneratedAt": "2026-08-13T02:56:29.329Z",
-      "githubSyncUpdatedAt": "2026-08-13T02:57:06.732Z",
+      "artifactGeneratedAt": "2026-08-13T03:02:34.579Z",
+      "executionGeneratedAt": "2026-08-13T03:00:05.663Z",
+      "githubSyncUpdatedAt": "2026-08-13T03:00:34.861Z",
       "counts": {
         "dailyQueue": 100,
         "googleDiscovered": 100,
@@ -1563,6 +1502,6 @@
     "scanned": 0,
     "updated": 0
   },
-  "ledgerReconciliationCount": 0,
-  "completedAt": "2026-08-13T03:00:05.663Z"
+  "ledgerReconciliationCount": 3,
+  "completedAt": "2026-08-13T03:02:37.745Z"
 }

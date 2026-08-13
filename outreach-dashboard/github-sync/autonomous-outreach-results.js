@@ -18823,5 +18823,39 @@ window.AUTONOMOUS_OUTREACH_RESULTS = [
     "messageId": "<f28d377f-b120-6461-2815-a961354a8a82@flextailgear.com>",
     "sentFolder": "已发送",
     "sentUid": 3258
+  },
+  {
+    "task_id": "google-customer-authentik-sales-website-contact",
+    "company": "Authentik Sales",
+    "approval_version": 1,
+    "status": "sent_confirmed",
+    "agent": "alibaba-enterprise-mail",
+    "browserTransportUsed": "none",
+    "timestamp": "2026-08-13T03:02:27.958Z",
+    "target_url": "mailto:matt@authentiksales.com",
+    "evidence": "smtp_accepted;message_id:<78ead97d-4039-7e27-223c-6bb0519c64a7@flextailgear.com>;sent_folder_message_confirmed;contact_path_strategy_v2",
+    "draft": "Dear Authentik Sales Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
+    "subject": "FLEXTAIL retail partnership | 2026 assortment",
+    "recipientEmail": "matt@authentiksales.com",
+    "messageId": "<78ead97d-4039-7e27-223c-6bb0519c64a7@flextailgear.com>",
+    "sentFolder": "已发送",
+    "sentUid": 3259
+  },
+  {
+    "task_id": "google-customer-cdmc-sales-website-contact",
+    "company": "CDMC Sales",
+    "approval_version": 1,
+    "status": "sent_confirmed",
+    "agent": "alibaba-enterprise-mail",
+    "browserTransportUsed": "none",
+    "timestamp": "2026-08-13T03:02:34.307Z",
+    "target_url": "mailto:jonicollett@cdmcsales.com",
+    "evidence": "smtp_accepted;message_id:<0d0167eb-09a1-755c-be66-5efc27455388@flextailgear.com>;sent_folder_message_confirmed;contact_path_strategy_v2",
+    "draft": "Dear CDMC Sales Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
+    "subject": "FLEXTAIL retail partnership | 2026 assortment",
+    "recipientEmail": "jonicollett@cdmcsales.com",
+    "messageId": "<0d0167eb-09a1-755c-be66-5efc27455388@flextailgear.com>",
+    "sentFolder": "已发送",
+    "sentUid": 3260
   }
 ];
