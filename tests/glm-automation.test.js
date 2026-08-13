@@ -247,6 +247,18 @@ test('external visible-message confirmation is durable and cannot be downgraded 
   assert.doesNotMatch(repairBlock, /automationCompanyKeys\(entry\)|entry\.status/);
 });
 
+test('dashboard executable capacity uses the actual history index fields', () => {
+  const readinessBlock = dailyRunnerSource.slice(
+    dailyRunnerSource.indexOf('function channelReadinessSummary'),
+    dailyRunnerSource.indexOf('function bestVisibleChannel')
+  );
+  assert.match(readinessBlock, /history\.sameDayDeveloped/);
+  assert.match(readinessBlock, /history\.priorDeveloped/);
+  assert.match(readinessBlock, /history\.activeCooldown/);
+  assert.match(readinessBlock, /companyLeadKeys\(item\)/);
+  assert.doesNotMatch(readinessBlock, /sameDayAttempted|permanentlyDeveloped/);
+});
+
 test('no-message social profiles are blocked from automatic execution', () => {
   const result = {
     task_id: 'verified-Instagram-triedandtrout',

@@ -1409,10 +1409,12 @@ function channelReadinessSummary(items = [], history = null) {
     };
     const platform = String(item.platform || item.channel || '').toLowerCase();
     const readiness = item.executionReadiness || channelExecutionReadiness(item);
+    const historyKeys = companyLeadKeys(item);
+    const historySetHasCompany = set => historyKeys.some(key => set && set.has(key));
     const historicallyBlocked = Boolean(history && (
-      history.sameDayDeveloped?.has(companyKey)
-      || history.permanentlyDeveloped?.has(companyKey)
-      || history.sameDayAttempted?.has(companyKey)
+      historySetHasCompany(history.sameDayDeveloped)
+      || historySetHasCompany(history.priorDeveloped)
+      || historySetHasCompany(history.activeCooldown)
     ));
     if (readiness.ready === true && !historicallyBlocked) {
       row.ready = true;

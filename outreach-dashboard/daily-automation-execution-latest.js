@@ -1995,7 +1995,7 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "inCandidatePool": false,
       "sameDayCompanyBlocked": false,
       "blockingStatus": "same_day_retry_circuit_open",
-      "blockingEvidence": "same_day_retry_circuit_open;failed_attempts:2"
+      "blockingEvidence": "same_day_retry_circuit_open;failed_attempts:1"
     },
     {
       "id": "google-customer-rona-website-contact",
@@ -2056,5 +2056,5 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     "updated": 0,
     "senderIdentityFailures": 13
   },
-  "completedAt": "2026-08-13T10:21:20.136Z"
+  "completedAt": "2026-08-13T10:31:37.472Z"
 };
