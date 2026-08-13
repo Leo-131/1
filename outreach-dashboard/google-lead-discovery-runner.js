@@ -724,6 +724,8 @@ const DIRECTORY_REFILL_CANDIDATES = [
   ['C.G. Emery International', 'Canada', 'https://www.cgemery.info/', '', 94, 'sales_agency'],
   ['BlueRiver Trading', 'Canada', 'https://www.bluerivertrading.com/company.asp', '', 92, 'sales_agency'],
   ['Rock Gear Distribution', 'Canada', 'https://rockgeardistribution.com/wp-content/uploads/2019/12/Press-Release-Bliz-Rock-Gear-2019.pdf', '', 94, 'sales_agency'],
+  ['Base Camp Agency', 'United States', 'https://www.base-camp-agency.com/', 'https://www.instagram.com/basecamp.agency/?hl=en', 88, 'sales_agency'],
+  ['Something Clever PNW', 'United States', 'https://www.somethingcleverpnw.com/', 'https://www.instagram.com/something_clever/', 91, 'sales_agency'],
   ['Tentworld', 'Australia', 'https://www.tentworld.com.au/', '', 90],
   ['Wildfire Sports', 'Australia', 'https://www.wildfiresports.com.au/', '', 87],
   ['Bivouac Outdoor', 'New Zealand', 'https://www.bivouac.co.nz/', '', 89],
@@ -812,6 +814,8 @@ const DIRECTORY_PUBLIC_CONTACT_ENRICHMENT = {
   'C.G. Emery International': ['info@cgemery.com', 'Official company-domain email published on the C.G. Emery website, which identifies the company as a Canadian outdoor wholesale distributor supporting more than 300 dealer locations.', 'https://www.cgemery.info/'],
   'BlueRiver Trading': ['info@bluerivertrading.com', 'Official company-domain email published on the BlueRiver Trading company page, which identifies the company as a Canadian wholesale outdoor distributor marketing exclusively to retailers across Canada.', 'https://www.bluerivertrading.com/company.asp'],
   'Rock Gear Distribution': ['ian@rockgeardistribution.com', 'Named president email published in a first-party Rock Gear Distribution document that identifies the company as an active-outdoor distributor with a nationwide Canadian sales-rep network serving specialty and large-format retailers.', 'https://rockgeardistribution.com/wp-content/uploads/2019/12/Press-Release-Bliz-Rock-Gear-2019.pdf'],
+  'Base Camp Agency': ['cameron@base-camp-agency.com', 'Official company-domain email published on Base Camp Agency official website beside its outdoor-industry specialty sales and wholesale account-management services and official Instagram and LinkedIn links.', 'https://www.base-camp-agency.com/'],
+  'Something Clever PNW': ['hello@somethingcleverpnw.com', 'Official company-domain email published on Something Clever official website, which identifies the company as a Pacific Northwest outdoor and lifestyle sales agency and links its official Instagram profile.', 'https://www.somethingcleverpnw.com/'],
   'Continental Sports Inc': ['info@csisports.net', 'Official company-domain email published on the Continental Sports website, which identifies the company as a Canadian wholesale distributor serving independent retailers across camping and outdoor categories.', 'https://csisports.ca/'],
   'Outdoor Equipment Distributors': ['info@oedinc.com', 'Official company-domain email published on the Outdoor Equipment Distributors website, which identifies the company as a wholesale distributor serving independent dealers.', 'https://www.oedinc.com/'],
   'Canadawide Sports': ['info@canadawidesports.com', 'Official company-domain email published on the Canadawide Sports about page, which documents nationwide wholesale distribution, a 65,000-square-foot distribution centre, and national-chain and independent-store customers.', 'https://www.shop.canadawidesports.com/pages/about-us'],
@@ -975,6 +979,9 @@ for (const candidate of DIRECTORY_REFILL_CANDIDATES) {
   if (candidate.company === 'Pro Line Sports') {
     candidate.facebookUrl = 'https://www.facebook.com/pages/Pro-Line-Sports-Ltd/122852307734042';
     candidate.linkedinUrl = 'https://www.linkedin.com/company/pro-line-sports-ltd/';
+  }
+  if (candidate.company === 'Base Camp Agency') {
+    candidate.linkedinUrl = 'https://www.linkedin.com/company/base-camp-agency';
   }
 }
 

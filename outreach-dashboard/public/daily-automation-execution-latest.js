@@ -7,7 +7,7 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
   "executionPhase": "browser_execution",
   "chromeStage": "opened",
   "chromeOpened": true,
-  "chromeOpenedCount": 3,
+  "chromeOpenedCount": 2,
   "customerDevelopmentPerformed": false,
   "customerMessageSent": false,
   "realDevelopmentCount": 0,
@@ -16,7 +16,7 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
   "mode": "serial-single-target",
   "batchMode": "parallel-batches",
   "parallelLimit": 1,
-  "limit": 3,
+  "limit": 2,
   "queueDate": "2026-08-13",
   "queueSource": "dailyQueue",
   "executed": [
@@ -29,14 +29,14 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "ok": false,
       "sendStatus": "website_contact_unreachable_skip",
       "evidence": "website_contact_entry_not_verified;contact_entry_clicked:Contact Us;public_email_fallback_available:csr@gravelagency.com;email_sender_not_configured;email_sender_delivery_disabled;sender_identity_dsn_observed;no_send_performed;website_contact_all_targets_failed:1;contact_path_strategy_v2",
-      "timestamp": "2026-08-13T08:26:37.582Z",
+      "timestamp": "2026-08-13T08:45:40.159Z",
       "chromeOpen": {
         "ok": true,
         "engine": "codex-chrome-cdp",
         "port": 9224,
         "targetUrl": "https://www.gravelagency.com/en/",
-        "tabId": "A4EB45A2373B482EFCA1987F2F66E098",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/A4EB45A2373B482EFCA1987F2F66E098",
+        "tabId": "9EF2319A8BD1AE6F1C3A93403028728A",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/9EF2319A8BD1AE6F1C3A93403028728A",
         "title": "Gravel Agency | Sales to Dealers & Distributors Canada - Gravel Agency"
       },
       "result": {
@@ -50,8 +50,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
           "engine": "codex-chrome-cdp",
           "port": 9224,
           "targetUrl": "https://www.gravelagency.com/en/",
-          "tabId": "A4EB45A2373B482EFCA1987F2F66E098",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/A4EB45A2373B482EFCA1987F2F66E098",
+          "tabId": "9EF2319A8BD1AE6F1C3A93403028728A",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/9EF2319A8BD1AE6F1C3A93403028728A",
           "title": "Gravel Agency | Sales to Dealers & Distributors Canada - Gravel Agency"
         },
         "sendStatus": "website_contact_unreachable_skip",
@@ -70,14 +70,14 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "ok": false,
       "sendStatus": "website_contact_unreachable_skip",
       "evidence": "website_contact_entry_not_verified;no_contact_entry_control;public_email_fallback_available:ian@rockgeardistribution.com;email_sender_not_configured;email_sender_delivery_disabled;sender_identity_dsn_observed;no_send_performed;website_contact_all_targets_failed:1;contact_path_strategy_v2",
-      "timestamp": "2026-08-13T08:26:42.975Z",
+      "timestamp": "2026-08-13T08:45:46.016Z",
       "chromeOpen": {
         "ok": true,
         "engine": "codex-chrome-cdp",
         "port": 9224,
         "targetUrl": "https://rockgeardistribution.com/wp-content/uploads/2019/12/Press-Release-Bliz-Rock-Gear-2019.pdf",
-        "tabId": "9B066940A6A4C6D40688389EBA23090A",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/9B066940A6A4C6D40688389EBA23090A",
+        "tabId": "ECA1A1063C641D4AFD29D3755D8C8789",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/ECA1A1063C641D4AFD29D3755D8C8789",
         "title": ""
       },
       "result": {
@@ -91,8 +91,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
           "engine": "codex-chrome-cdp",
           "port": 9224,
           "targetUrl": "https://rockgeardistribution.com/wp-content/uploads/2019/12/Press-Release-Bliz-Rock-Gear-2019.pdf",
-          "tabId": "9B066940A6A4C6D40688389EBA23090A",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/9B066940A6A4C6D40688389EBA23090A",
+          "tabId": "ECA1A1063C641D4AFD29D3755D8C8789",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/ECA1A1063C641D4AFD29D3755D8C8789",
           "title": ""
         },
         "sendStatus": "website_contact_unreachable_skip",
@@ -100,47 +100,6 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
         "draft": "Dear Rock Gear Distribution Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
         "evidence": "website_contact_entry_not_verified;no_contact_entry_control;public_email_fallback_available:ian@rockgeardistribution.com;email_sender_not_configured;email_sender_delivery_disabled;sender_identity_dsn_observed;no_send_performed;website_contact_all_targets_failed:1;contact_path_strategy_v2",
         "output": "{\"verdict\":\"website_contact_unreachable_skip\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control;public_email_fallback_available:ian@rockgeardistribution.com;email_sender_not_configured;email_sender_delivery_disabled;sender_identity_dsn_observed;no_send_performed;website_contact_all_targets_failed:1;contact_path_strategy_v2\",\"nextAction\":\"Email delivery to ian@rockgeardistribution.com requires a configured sender; continue with another verified contact path or LinkedIn, Facebook, or Instagram instead of claiming a send.\",\"subject\":\"FLEXTAIL retail partnership | 2026 assortment\",\"draft\":\"Dear Rock Gear Distribution Team,\\n\\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\\n\\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\\n\\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\\n\\nProduct overview: https://www.flextail.com/\\n\\nBest regards,\\nLeo Liu\\nSales & Operations Director\\nLeo@flextailgear.com\",\"sendStatus\":\"website_contact_unreachable_skip\",\"attempts\":[{\"targetUrl\":\"https://rockgeardistribution.com/wp-content/uploads/2019/12/Press-Release-Bliz-Rock-Gear-2019.pdf\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control\"}]}"
-      }
-    },
-    {
-      "id": "google-customer-blueriver-trading-website-contact",
-      "company": "BlueRiver Trading",
-      "action": "email_priority",
-      "platform": "email",
-      "targetUrl": "https://www.bluerivertrading.com/company.asp",
-      "ok": false,
-      "sendStatus": "website_contact_unreachable_skip",
-      "evidence": "website_contact_entry_not_verified;no_contact_entry_control;public_email_fallback_available:info@bluerivertrading.com;email_sender_not_configured;email_sender_delivery_disabled;sender_identity_dsn_observed;no_send_performed;website_contact_all_targets_failed:1;contact_path_strategy_v2",
-      "timestamp": "2026-08-13T08:26:48.003Z",
-      "chromeOpen": {
-        "ok": true,
-        "engine": "codex-chrome-cdp",
-        "port": 9224,
-        "targetUrl": "https://www.bluerivertrading.com/company.asp",
-        "tabId": "688481A9EF41358F799791A797598EFA",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/688481A9EF41358F799791A797598EFA",
-        "title": ""
-      },
-      "result": {
-        "ok": false,
-        "engine": "dedicated-chrome-cdp-website-contact",
-        "browserEngine": "codex-chrome-cdp",
-        "mode": "website_contact_unreachable_skip",
-        "targetUrl": "https://www.bluerivertrading.com/company.asp",
-        "chromeOpen": {
-          "ok": true,
-          "engine": "codex-chrome-cdp",
-          "port": 9224,
-          "targetUrl": "https://www.bluerivertrading.com/company.asp",
-          "tabId": "688481A9EF41358F799791A797598EFA",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/688481A9EF41358F799791A797598EFA",
-          "title": ""
-        },
-        "sendStatus": "website_contact_unreachable_skip",
-        "subject": "FLEXTAIL retail partnership | 2026 assortment",
-        "draft": "Dear BlueRiver Trading Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
-        "evidence": "website_contact_entry_not_verified;no_contact_entry_control;public_email_fallback_available:info@bluerivertrading.com;email_sender_not_configured;email_sender_delivery_disabled;sender_identity_dsn_observed;no_send_performed;website_contact_all_targets_failed:1;contact_path_strategy_v2",
-        "output": "{\"verdict\":\"website_contact_unreachable_skip\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control;public_email_fallback_available:info@bluerivertrading.com;email_sender_not_configured;email_sender_delivery_disabled;sender_identity_dsn_observed;no_send_performed;website_contact_all_targets_failed:1;contact_path_strategy_v2\",\"nextAction\":\"Email delivery to info@bluerivertrading.com requires a configured sender; continue with another verified contact path or LinkedIn, Facebook, or Instagram instead of claiming a send.\",\"subject\":\"FLEXTAIL retail partnership | 2026 assortment\",\"draft\":\"Dear BlueRiver Trading Team,\\n\\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\\n\\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\\n\\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\\n\\nProduct overview: https://www.flextail.com/\\n\\nBest regards,\\nLeo Liu\\nSales & Operations Director\\nLeo@flextailgear.com\",\"sendStatus\":\"website_contact_unreachable_skip\",\"attempts\":[{\"targetUrl\":\"https://www.bluerivertrading.com/company.asp\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control\"}]}"
       }
     }
   ],
@@ -154,14 +113,14 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "ok": false,
       "sendStatus": "website_contact_unreachable_skip",
       "evidence": "website_contact_entry_not_verified;contact_entry_clicked:Contact Us;public_email_fallback_available:csr@gravelagency.com;email_sender_not_configured;email_sender_delivery_disabled;sender_identity_dsn_observed;no_send_performed;website_contact_all_targets_failed:1;contact_path_strategy_v2",
-      "timestamp": "2026-08-13T08:26:37.582Z",
+      "timestamp": "2026-08-13T08:45:40.159Z",
       "chromeOpen": {
         "ok": true,
         "engine": "codex-chrome-cdp",
         "port": 9224,
         "targetUrl": "https://www.gravelagency.com/en/",
-        "tabId": "A4EB45A2373B482EFCA1987F2F66E098",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/A4EB45A2373B482EFCA1987F2F66E098",
+        "tabId": "9EF2319A8BD1AE6F1C3A93403028728A",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/9EF2319A8BD1AE6F1C3A93403028728A",
         "title": "Gravel Agency | Sales to Dealers & Distributors Canada - Gravel Agency"
       },
       "result": {
@@ -175,8 +134,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
           "engine": "codex-chrome-cdp",
           "port": 9224,
           "targetUrl": "https://www.gravelagency.com/en/",
-          "tabId": "A4EB45A2373B482EFCA1987F2F66E098",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/A4EB45A2373B482EFCA1987F2F66E098",
+          "tabId": "9EF2319A8BD1AE6F1C3A93403028728A",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/9EF2319A8BD1AE6F1C3A93403028728A",
           "title": "Gravel Agency | Sales to Dealers & Distributors Canada - Gravel Agency"
         },
         "sendStatus": "website_contact_unreachable_skip",
@@ -195,14 +154,14 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "ok": false,
       "sendStatus": "website_contact_unreachable_skip",
       "evidence": "website_contact_entry_not_verified;no_contact_entry_control;public_email_fallback_available:ian@rockgeardistribution.com;email_sender_not_configured;email_sender_delivery_disabled;sender_identity_dsn_observed;no_send_performed;website_contact_all_targets_failed:1;contact_path_strategy_v2",
-      "timestamp": "2026-08-13T08:26:42.975Z",
+      "timestamp": "2026-08-13T08:45:46.016Z",
       "chromeOpen": {
         "ok": true,
         "engine": "codex-chrome-cdp",
         "port": 9224,
         "targetUrl": "https://rockgeardistribution.com/wp-content/uploads/2019/12/Press-Release-Bliz-Rock-Gear-2019.pdf",
-        "tabId": "9B066940A6A4C6D40688389EBA23090A",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/9B066940A6A4C6D40688389EBA23090A",
+        "tabId": "ECA1A1063C641D4AFD29D3755D8C8789",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/ECA1A1063C641D4AFD29D3755D8C8789",
         "title": ""
       },
       "result": {
@@ -216,8 +175,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
           "engine": "codex-chrome-cdp",
           "port": 9224,
           "targetUrl": "https://rockgeardistribution.com/wp-content/uploads/2019/12/Press-Release-Bliz-Rock-Gear-2019.pdf",
-          "tabId": "9B066940A6A4C6D40688389EBA23090A",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/9B066940A6A4C6D40688389EBA23090A",
+          "tabId": "ECA1A1063C641D4AFD29D3755D8C8789",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/ECA1A1063C641D4AFD29D3755D8C8789",
           "title": ""
         },
         "sendStatus": "website_contact_unreachable_skip",
@@ -225,47 +184,6 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
         "draft": "Dear Rock Gear Distribution Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
         "evidence": "website_contact_entry_not_verified;no_contact_entry_control;public_email_fallback_available:ian@rockgeardistribution.com;email_sender_not_configured;email_sender_delivery_disabled;sender_identity_dsn_observed;no_send_performed;website_contact_all_targets_failed:1;contact_path_strategy_v2",
         "output": "{\"verdict\":\"website_contact_unreachable_skip\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control;public_email_fallback_available:ian@rockgeardistribution.com;email_sender_not_configured;email_sender_delivery_disabled;sender_identity_dsn_observed;no_send_performed;website_contact_all_targets_failed:1;contact_path_strategy_v2\",\"nextAction\":\"Email delivery to ian@rockgeardistribution.com requires a configured sender; continue with another verified contact path or LinkedIn, Facebook, or Instagram instead of claiming a send.\",\"subject\":\"FLEXTAIL retail partnership | 2026 assortment\",\"draft\":\"Dear Rock Gear Distribution Team,\\n\\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\\n\\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\\n\\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\\n\\nProduct overview: https://www.flextail.com/\\n\\nBest regards,\\nLeo Liu\\nSales & Operations Director\\nLeo@flextailgear.com\",\"sendStatus\":\"website_contact_unreachable_skip\",\"attempts\":[{\"targetUrl\":\"https://rockgeardistribution.com/wp-content/uploads/2019/12/Press-Release-Bliz-Rock-Gear-2019.pdf\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control\"}]}"
-      }
-    },
-    {
-      "id": "google-customer-blueriver-trading-website-contact",
-      "company": "BlueRiver Trading",
-      "action": "email_priority",
-      "platform": "email",
-      "targetUrl": "https://www.bluerivertrading.com/company.asp",
-      "ok": false,
-      "sendStatus": "website_contact_unreachable_skip",
-      "evidence": "website_contact_entry_not_verified;no_contact_entry_control;public_email_fallback_available:info@bluerivertrading.com;email_sender_not_configured;email_sender_delivery_disabled;sender_identity_dsn_observed;no_send_performed;website_contact_all_targets_failed:1;contact_path_strategy_v2",
-      "timestamp": "2026-08-13T08:26:48.003Z",
-      "chromeOpen": {
-        "ok": true,
-        "engine": "codex-chrome-cdp",
-        "port": 9224,
-        "targetUrl": "https://www.bluerivertrading.com/company.asp",
-        "tabId": "688481A9EF41358F799791A797598EFA",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/688481A9EF41358F799791A797598EFA",
-        "title": ""
-      },
-      "result": {
-        "ok": false,
-        "engine": "dedicated-chrome-cdp-website-contact",
-        "browserEngine": "codex-chrome-cdp",
-        "mode": "website_contact_unreachable_skip",
-        "targetUrl": "https://www.bluerivertrading.com/company.asp",
-        "chromeOpen": {
-          "ok": true,
-          "engine": "codex-chrome-cdp",
-          "port": 9224,
-          "targetUrl": "https://www.bluerivertrading.com/company.asp",
-          "tabId": "688481A9EF41358F799791A797598EFA",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/688481A9EF41358F799791A797598EFA",
-          "title": ""
-        },
-        "sendStatus": "website_contact_unreachable_skip",
-        "subject": "FLEXTAIL retail partnership | 2026 assortment",
-        "draft": "Dear BlueRiver Trading Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
-        "evidence": "website_contact_entry_not_verified;no_contact_entry_control;public_email_fallback_available:info@bluerivertrading.com;email_sender_not_configured;email_sender_delivery_disabled;sender_identity_dsn_observed;no_send_performed;website_contact_all_targets_failed:1;contact_path_strategy_v2",
-        "output": "{\"verdict\":\"website_contact_unreachable_skip\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control;public_email_fallback_available:info@bluerivertrading.com;email_sender_not_configured;email_sender_delivery_disabled;sender_identity_dsn_observed;no_send_performed;website_contact_all_targets_failed:1;contact_path_strategy_v2\",\"nextAction\":\"Email delivery to info@bluerivertrading.com requires a configured sender; continue with another verified contact path or LinkedIn, Facebook, or Instagram instead of claiming a send.\",\"subject\":\"FLEXTAIL retail partnership | 2026 assortment\",\"draft\":\"Dear BlueRiver Trading Team,\\n\\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\\n\\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\\n\\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\\n\\nProduct overview: https://www.flextail.com/\\n\\nBest regards,\\nLeo Liu\\nSales & Operations Director\\nLeo@flextailgear.com\",\"sendStatus\":\"website_contact_unreachable_skip\",\"attempts\":[{\"targetUrl\":\"https://www.bluerivertrading.com/company.asp\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control\"}]}"
       }
     }
   ],
@@ -285,8 +203,29 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "reason": "official_public_business_email_verified"
     },
     {
+      "id": "google-customer-something-clever-pnw-website-contact",
+      "company": "Something Clever PNW",
+      "action": "email_priority",
+      "platform": "email",
+      "reason": "official_public_business_email_verified"
+    },
+    {
       "id": "google-customer-lathrop-associates-website-contact",
       "company": "Lathrop Associates",
+      "action": "email_priority",
+      "platform": "email",
+      "reason": "official_public_business_email_verified"
+    },
+    {
+      "id": "google-customer-base-camp-agency-website-contact",
+      "company": "Base Camp Agency",
+      "action": "email_priority",
+      "platform": "email",
+      "reason": "official_public_business_email_verified"
+    },
+    {
+      "id": "google-customer-blueriver-trading-website-contact",
+      "company": "BlueRiver Trading",
       "action": "email_priority",
       "platform": "email",
       "reason": "official_public_business_email_verified"
@@ -369,22 +308,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "reason": "official_public_business_email_verified"
     },
     {
-      "id": "google-customer-rtic-mexico-website-contact",
-      "company": "RTIC Mexico",
-      "action": "email_priority",
-      "platform": "email",
-      "reason": "official_public_business_email_verified"
-    },
-    {
       "id": "google-customer-fjellsport-website-contact",
       "company": "Fjellsport",
-      "action": "email_priority",
-      "platform": "email",
-      "reason": "official_public_business_email_verified"
-    },
-    {
-      "id": "google-customer-varuste-website-contact",
-      "company": "Varuste",
       "action": "email_priority",
       "platform": "email",
       "reason": "official_public_business_email_verified"
@@ -502,9 +427,23 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "reason": "official_website_contact_channel"
     },
     {
-      "id": "google-customer-left-point-distribution-website-contact",
-      "company": "Left Point Distribution",
-      "action": "email_priority",
+      "id": "google-customer-kittredge-and-associates-website-contact",
+      "company": "Kittredge and Associates",
+      "action": "develop",
+      "platform": "website_form",
+      "reason": "official_website_contact_channel"
+    },
+    {
+      "id": "google-customer-outdoor-industry-group-website-contact",
+      "company": "Outdoor Industry Group",
+      "action": "develop",
+      "platform": "website_form",
+      "reason": "official_website_contact_channel"
+    },
+    {
+      "id": "google-customer-perpetual-motion-nw-website-contact",
+      "company": "Perpetual Motion NW",
+      "action": "develop",
       "platform": "website_form",
       "reason": "official_website_contact_channel"
     },
@@ -516,13 +455,6 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "reason": "homepage_only_contact_path_requires_verification"
     },
     {
-      "id": "google-customer-obelink-website-contact",
-      "company": "Obelink",
-      "action": "email_priority",
-      "platform": "website_form",
-      "reason": "official_website_contact_channel"
-    },
-    {
       "id": "google-customer-au-vieux-campeur-website-contact",
       "company": "Au Vieux Campeur",
       "action": "verify_target",
@@ -532,13 +464,6 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     {
       "id": "google-customer-alpinetrek-website-contact",
       "company": "Alpinetrek",
-      "action": "verify_target",
-      "platform": "website_form",
-      "reason": "homepage_only_contact_path_requires_verification"
-    },
-    {
-      "id": "google-customer-de-wit-schijndel-website-contact",
-      "company": "De Wit Schijndel",
       "action": "verify_target",
       "platform": "website_form",
       "reason": "homepage_only_contact_path_requires_verification"
@@ -579,22 +504,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "reason": "homepage_only_contact_path_requires_verification"
     },
     {
-      "id": "google-customer-outdoorxl-website-contact",
-      "company": "OutdoorXL",
-      "action": "verify_target",
-      "platform": "website_form",
-      "reason": "homepage_only_contact_path_requires_verification"
-    },
-    {
       "id": "google-customer-taunton-leisure-website-contact",
       "company": "Taunton Leisure",
-      "action": "verify_target",
-      "platform": "website_form",
-      "reason": "homepage_only_contact_path_requires_verification"
-    },
-    {
-      "id": "google-customer-outdoor-specialist-website-contact",
-      "company": "Outdoor Specialist",
       "action": "verify_target",
       "platform": "website_form",
       "reason": "homepage_only_contact_path_requires_verification"
@@ -677,8 +588,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "reason": "official_website_social_channel_verified"
     },
     {
-      "id": "google-customer-revassa-facebook",
-      "company": "REVASSA",
+      "id": "google-customer-outdoor-gear-canada-facebook",
+      "company": "Outdoor Gear Canada",
       "action": "develop",
       "platform": "facebook",
       "reason": "official_website_social_channel_verified"
@@ -791,6 +702,20 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     {
       "id": "google-customer-bbq-fans-website-contact",
       "company": "BBQ Fans",
+      "action": "email_priority",
+      "platform": "email",
+      "reason": "official_public_business_email_verified"
+    },
+    {
+      "id": "google-customer-rtic-mexico-website-contact",
+      "company": "RTIC Mexico",
+      "action": "email_priority",
+      "platform": "email",
+      "reason": "official_public_business_email_verified"
+    },
+    {
+      "id": "google-customer-varuste-website-contact",
+      "company": "Varuste",
       "action": "email_priority",
       "platform": "email",
       "reason": "official_public_business_email_verified"
@@ -936,6 +861,20 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "reason": "homepage_only_contact_path_requires_verification"
     },
     {
+      "id": "google-customer-morrison-sports-marketing-website-contact",
+      "company": "Morrison Sports Marketing",
+      "action": "verify_target",
+      "platform": "website_form",
+      "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
+      "id": "google-customer-brm-reps-website-contact",
+      "company": "BRM Reps",
+      "action": "verify_target",
+      "platform": "website_form",
+      "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
       "id": "google-customer-young-mackenzie-distribution-linkedin",
       "company": "Young & MacKenzie Distribution",
       "action": "verify_target",
@@ -1062,8 +1001,29 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "reason": "official_public_business_email_verified"
     },
     {
+      "id": "google-customer-something-clever-pnw-website-contact",
+      "company": "Something Clever PNW",
+      "action": "email_priority",
+      "platform": "email",
+      "reason": "official_public_business_email_verified"
+    },
+    {
       "id": "google-customer-lathrop-associates-website-contact",
       "company": "Lathrop Associates",
+      "action": "email_priority",
+      "platform": "email",
+      "reason": "official_public_business_email_verified"
+    },
+    {
+      "id": "google-customer-base-camp-agency-website-contact",
+      "company": "Base Camp Agency",
+      "action": "email_priority",
+      "platform": "email",
+      "reason": "official_public_business_email_verified"
+    },
+    {
+      "id": "google-customer-blueriver-trading-website-contact",
+      "company": "BlueRiver Trading",
       "action": "email_priority",
       "platform": "email",
       "reason": "official_public_business_email_verified"
@@ -1436,30 +1396,30 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
   "summary": {
     "totalLeads": 16,
     "highIcp": 16,
-    "readyToDevelop": 32,
-    "dueNow": 98,
-    "visibleTodayQueue": 74,
-    "potentialPool": 74,
+    "readyToDevelop": 35,
+    "dueNow": 100,
+    "visibleTodayQueue": 76,
+    "potentialPool": 76,
     "potentialPoolTarget": 100,
     "customerTableHighIcp": 0,
-    "refillNeeded": 26,
-    "executableCompanies": 51,
+    "refillNeeded": 24,
+    "executableCompanies": 53,
     "executableReserveTarget": 130,
-    "executableReserveNeeded": 79,
+    "executableReserveNeeded": 77,
     "executableByChannel": {
       "linkedin": 5,
       "facebook": 8,
       "instagram": 3,
-      "email": 17,
+      "email": 19,
       "website_form": 18
     },
     "verifiedSocialCompanies": 16,
     "verifiedSocialReserveTarget": 20,
     "verifiedSocialReserveNeeded": 4,
     "enrichmentBacklogCount": 23,
-    "googleDiscovered": 98,
+    "googleDiscovered": 100,
     "facebookDiscovered": 11,
-    "websiteContactDiscovered": 28,
+    "websiteContactDiscovered": 30,
     "scheduledLater": 0,
     "cooldown": 30,
     "emailPriority": 0,
@@ -1472,17 +1432,17 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     {
       "reason": "official_public_business_email_verified",
       "status": "skipped",
-      "count": 39
+      "count": 45
     },
     {
       "reason": "official_website_contact_channel",
       "status": "skipped",
-      "count": 35
+      "count": 36
     },
     {
       "reason": "homepage_only_contact_path_requires_verification",
       "status": "skipped",
-      "count": 30
+      "count": 29
     },
     {
       "reason": "website_contact_capability_not_verified",
@@ -1511,9 +1471,9 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     }
   ],
   "blockerCounts": {
-    "official_public_business_email_verified": 39,
-    "official_website_contact_channel": 35,
-    "homepage_only_contact_path_requires_verification": 30,
+    "official_public_business_email_verified": 45,
+    "official_website_contact_channel": 36,
+    "homepage_only_contact_path_requires_verification": 29,
     "website_contact_capability_not_verified": 23,
     "official_website_social_channel_verified": 21,
     "linkedin_channel_requires_supported_executor": 9,
@@ -1522,10 +1482,10 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
   },
   "queueGoalStatus": {
     "target": 100,
-    "potentialPool": 74,
-    "queueCount": 98,
-    "googleDiscovered": 98,
-    "refillNeeded": 26,
+    "potentialPool": 76,
+    "queueCount": 100,
+    "googleDiscovered": 100,
+    "refillNeeded": 24,
     "confirmedToday": 23,
     "reached": false,
     "action": "Add more verified high-ICP sources or unblock existing website/social leads."
@@ -1538,17 +1498,17 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     "rule": "completed checkpoints are ignored; only terminal results from an active interrupted checkpoint suppress their exact task id"
   },
   "platformCircuitState": {},
-  "userVisibleStatus": "Customer development was not performed. Blockers: official_public_business_email_verified (39); official_website_contact_channel (35); homepage_only_contact_path_requires_verification (30).",
-  "recoveryHint": "Refill the high-ICP pool with 26 verified leads or unblock existing website/social leads before the next run. Confirm the official social profile and safe message entry before rerunning Google-discovered social outreach.",
+  "userVisibleStatus": "Customer development was not performed. Blockers: official_public_business_email_verified (45); official_website_contact_channel (36); homepage_only_contact_path_requires_verification (29).",
+  "recoveryHint": "Refill the high-ICP pool with 24 verified leads or unblock existing website/social leads before the next run. Confirm the official social profile and safe message entry before rerunning Google-discovered social outreach.",
   "recoveryActions": [
     {
       "reason": "daily_queue_goal_not_reached",
       "action": "Refill high-ICP customer pool",
-      "description": "Add or unblock 26 verified high-ICP leads to reach the daily 100 target.",
-      "hint": "Refill the high-ICP pool with 26 verified leads or unblock existing website/social leads before the next run.",
+      "description": "Add or unblock 24 verified high-ICP leads to reach the daily 100 target.",
+      "hint": "Refill the high-ICP pool with 24 verified leads or unblock existing website/social leads before the next run.",
       "target": 100,
-      "potentialPool": 74,
-      "refillNeeded": 26
+      "potentialPool": 76,
+      "refillNeeded": 24
     },
     {
       "reason": "google_social_profile_not_executable",
@@ -1560,19 +1520,19 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
   "systemRefresh": {
     "ok": false,
     "stdout": "",
-    "stderr": "node:fs:3104\r\n  binding.copyFile(\r\n          ^\r\n\r\nError: UNKNOWN: unknown error, copyfile 'E:\\New project\\outreach-dashboard\\daily-automation-execution-latest.js' -> 'E:\\New project\\outreach-dashboard\\public\\daily-automation-execution-latest.js'\r\n    at Object.copyFileSync (node:fs:3104:11)\r\n    at copyPublicArtifact (E:\\New project\\outreach-dashboard\\daily-automation-runner.js:959:6)\r\n    at Array.forEach (<anonymous>)\r\n    at writeSystemVisibilityArtifact (E:\\New project\\outreach-dashboard\\daily-automation-runner.js:1023:5)\r\n    at writeRunArtifacts (E:\\New project\\outreach-dashboard\\daily-automation-runner.js:950:3)\r\n    at main (E:\\New project\\outreach-dashboard\\daily-automation-runner.js:1650:17)\r\n    at Object.<anonymous> (E:\\New project\\outreach-dashboard\\daily-automation-runner.js:1670:3)\r\n    at Module._compile (node:internal/modules/cjs/loader:1812:14)\r\n    at Object..js (node:internal/modules/cjs/loader:1943:10)\r\n    at Module.load (node:internal/modules/cjs/loader:1533:32) {\r\n  errno: -4094,\r\n  code: 'UNKNOWN',\r\n  syscall: 'copyfile',\r\n  path: 'E:\\\\New project\\\\outreach-dashboard\\\\daily-automation-execution-latest.js',\r\n  dest: 'E:\\\\New project\\\\outreach-dashboard\\\\public\\\\daily-automation-execution-latest.js'\r\n}\r\n\r\nNode.js v24.14.0",
-    "error": "Command failed: node E:\\New project\\outreach-dashboard\\daily-automation-runner.js --fix\nnode:fs:3104\r\n  binding.copyFile(\r\n          ^\r\n\r\nError: UNKNOWN: unknown error, copyfile 'E:\\New project\\outreach-dashboard\\daily-automation-execution-latest.js' -> 'E:\\New project\\outreach-dashboard\\public\\daily-automation-execution-latest.js'\r\n    at Object.copyFileSync (node:fs:3104:11)\r\n    at copyPublicArtifact (E:\\New project\\outreach-dashboard\\daily-automation-runner.js:959:6)\r\n    at Array.forEach (<anonymous>)\r\n    at writeSystemVisibilityArtifact (E:\\New project\\outreach-dashboard\\daily-automation-runner.js:1023:5)\r\n    at writeRunArtifacts (E:\\New project\\outreach-dashboard\\daily-automation-runner.js:950:3)\r\n    at main (E:\\New project\\outreach-dashboard\\daily-automation-runner.js:1650:17)\r\n    at Object.<anonymous> (E:\\New project\\outreach-dashboard\\daily-automation-runner.js:1670:3)\r\n    at Module._compile (node:internal/modules/cjs/loader:1812:14)\r\n    at Object..js (node:internal/modules/cjs/loader:1943:10)\r\n    at Module.load (node:internal/modules/cjs/loader:1533:32) {\r\n  errno: -4094,\r\n  code: 'UNKNOWN',\r\n  syscall: 'copyfile',\r\n  path: 'E:\\\\New project\\\\outreach-dashboard\\\\daily-automation-execution-latest.js',\r\n  dest: 'E:\\\\New project\\\\outreach-dashboard\\\\public\\\\daily-automation-execution-latest.js'\r\n}\r\n\r\nNode.js v24.14.0\r\n",
+    "stderr": "node:fs:3104\r\n  binding.copyFile(\r\n          ^\r\n\r\nError: UNKNOWN: unknown error, copyfile 'E:\\New project\\outreach-dashboard\\system-visibility-latest.js' -> 'E:\\New project\\outreach-dashboard\\public\\system-visibility-latest.js'\r\n    at Object.copyFileSync (node:fs:3104:11)\r\n    at copyPublicArtifact (E:\\New project\\outreach-dashboard\\daily-automation-runner.js:959:6)\r\n    at Array.forEach (<anonymous>)\r\n    at writeSystemVisibilityArtifact (E:\\New project\\outreach-dashboard\\daily-automation-runner.js:1023:5)\r\n    at writeRunArtifacts (E:\\New project\\outreach-dashboard\\daily-automation-runner.js:950:3)\r\n    at main (E:\\New project\\outreach-dashboard\\daily-automation-runner.js:1650:17)\r\n    at Object.<anonymous> (E:\\New project\\outreach-dashboard\\daily-automation-runner.js:1670:3)\r\n    at Module._compile (node:internal/modules/cjs/loader:1812:14)\r\n    at Object..js (node:internal/modules/cjs/loader:1943:10)\r\n    at Module.load (node:internal/modules/cjs/loader:1533:32) {\r\n  errno: -4094,\r\n  code: 'UNKNOWN',\r\n  syscall: 'copyfile',\r\n  path: 'E:\\\\New project\\\\outreach-dashboard\\\\system-visibility-latest.js',\r\n  dest: 'E:\\\\New project\\\\outreach-dashboard\\\\public\\\\system-visibility-latest.js'\r\n}\r\n\r\nNode.js v24.14.0",
+    "error": "Command failed: node E:\\New project\\outreach-dashboard\\daily-automation-runner.js --fix\nnode:fs:3104\r\n  binding.copyFile(\r\n          ^\r\n\r\nError: UNKNOWN: unknown error, copyfile 'E:\\New project\\outreach-dashboard\\system-visibility-latest.js' -> 'E:\\New project\\outreach-dashboard\\public\\system-visibility-latest.js'\r\n    at Object.copyFileSync (node:fs:3104:11)\r\n    at copyPublicArtifact (E:\\New project\\outreach-dashboard\\daily-automation-runner.js:959:6)\r\n    at Array.forEach (<anonymous>)\r\n    at writeSystemVisibilityArtifact (E:\\New project\\outreach-dashboard\\daily-automation-runner.js:1023:5)\r\n    at writeRunArtifacts (E:\\New project\\outreach-dashboard\\daily-automation-runner.js:950:3)\r\n    at main (E:\\New project\\outreach-dashboard\\daily-automation-runner.js:1650:17)\r\n    at Object.<anonymous> (E:\\New project\\outreach-dashboard\\daily-automation-runner.js:1670:3)\r\n    at Module._compile (node:internal/modules/cjs/loader:1812:14)\r\n    at Object..js (node:internal/modules/cjs/loader:1943:10)\r\n    at Module.load (node:internal/modules/cjs/loader:1533:32) {\r\n  errno: -4094,\r\n  code: 'UNKNOWN',\r\n  syscall: 'copyfile',\r\n  path: 'E:\\\\New project\\\\outreach-dashboard\\\\system-visibility-latest.js',\r\n  dest: 'E:\\\\New project\\\\outreach-dashboard\\\\public\\\\system-visibility-latest.js'\r\n}\r\n\r\nNode.js v24.14.0\r\n",
     "visibility": {
-      "updatedAt": "2026-08-13T08:26:50.202Z",
+      "updatedAt": "2026-08-13T08:45:48.399Z",
       "source": "main-refreshDailyAutomationArtifacts",
       "runDate": "2026-08-13",
-      "artifactGeneratedAt": "2026-08-13T08:26:48.227Z",
-      "executionGeneratedAt": "2026-08-13T08:23:52.834Z",
-      "githubSyncUpdatedAt": "2026-08-13T08:23:55.139Z",
+      "artifactGeneratedAt": "2026-08-13T08:45:46.313Z",
+      "executionGeneratedAt": "2026-08-13T08:26:50.984Z",
+      "githubSyncUpdatedAt": "2026-08-13T08:27:52.032Z",
       "counts": {
-        "dailyQueue": 98,
-        "googleDiscovered": 98,
-        "websiteContact": 75,
+        "dailyQueue": 100,
+        "googleDiscovered": 100,
+        "websiteContact": 77,
         "cooldownQueue": 30,
         "scheduledLater": 0
       },
@@ -1597,8 +1557,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       ],
       "dailyQueueGoal": {
         "target": 100,
-        "potentialPool": 74,
-        "refillNeeded": 26,
+        "potentialPool": 76,
+        "refillNeeded": 24,
         "reached": false
       },
       "contactEnrichment": {
@@ -1633,6 +1593,6 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     "updated": 0,
     "senderIdentityFailures": 13
   },
-  "ledgerReconciliationCount": 4,
-  "completedAt": "2026-08-13T08:26:50.984Z"
+  "ledgerReconciliationCount": 3,
+  "completedAt": "2026-08-13T08:45:49.423Z"
 };
