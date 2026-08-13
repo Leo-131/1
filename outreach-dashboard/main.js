@@ -4146,6 +4146,15 @@ function websiteCanReinspectForFirstPartySocial(item = {}) {
 }
 
 function developmentPriorityCompare(left, right) {
+  // Once a provider DSN proves that the configured sender identity is disabled,
+  // email is not an executable channel for the rest of this process. Prefer
+  // first-party verified social rows immediately instead of selecting email
+  // rows merely to discover the same global provider failure again.
+  if (!liveEmailSenderDeliveryReady) {
+    const socialDelta = Number(isSocialQueueItem(right) && right.officialSocialProfileVerified === true)
+      - Number(isSocialQueueItem(left) && left.officialSocialProfileVerified === true);
+    if (socialDelta) return socialDelta;
+  }
   const verifiedEmailDelta = Number(verifiedBusinessEmailTarget(right).ok) - Number(verifiedBusinessEmailTarget(left).ok);
   return verifiedEmailDelta
     || socialPriorityRank(right) - socialPriorityRank(left)

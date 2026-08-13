@@ -1,9 +1,9 @@
 {
-  "updatedAt": "2026-08-13T07:18:40.255Z",
-  "source": "sync-local-data-to-github-writeSyncStatus",
+  "updatedAt": "2026-08-13T07:23:13.632Z",
+  "source": "main-writeDailyExecutionArtifact",
   "runDate": "2026-08-13",
-  "artifactGeneratedAt": "2026-08-13T07:18:06.684Z",
-  "executionGeneratedAt": "2026-08-13T07:18:09.749Z",
+  "artifactGeneratedAt": "2026-08-13T07:22:11.878Z",
+  "executionGeneratedAt": "2026-08-13T07:23:13.408Z",
   "githubSyncUpdatedAt": "2026-08-13T07:18:39.974Z",
   "counts": {
     "dailyQueue": 98,
@@ -37,21 +37,4 @@
     "refillNeeded": 32,
     "reached": false
   },
-  "contactEnrichment": {
-    "enabled": true,
-    "sources": [
-      "dailyQueue",
-      "cooldownQueue",
-      "google-lead-discovery-latest"
-    ],
-    "fields": [
-      "publicEmail",
-      "contactEmail",
-      "contactPhone",
-      "vendorPortal",
-      "contactUrl",
-      "contactSearchUrl",
-      "website"
-    ]
-  }
-}
+  "contactEnrichment
