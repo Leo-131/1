@@ -19298,5 +19298,39 @@ window.AUTONOMOUS_OUTREACH_RESULTS = [
     "messageId": "",
     "sentFolder": "",
     "sentUid": null
+  },
+  {
+    "task_id": "google-customer-rock-gear-distribution-website-contact",
+    "company": "Rock Gear Distribution",
+    "approval_version": 1,
+    "status": "website_contact_unreachable_skip",
+    "agent": "codex-chrome-cdp",
+    "browserTransportUsed": "cdp",
+    "timestamp": "2026-08-13T08:23:27.642Z",
+    "target_url": "https://rockgeardistribution.com/wp-content/uploads/2019/12/Press-Release-Bliz-Rock-Gear-2019.pdf",
+    "evidence": "website_contact_entry_not_verified;no_contact_entry_control;public_email_fallback_available:ian@rockgeardistribution.com;email_sender_not_configured;email_sender_delivery_disabled;sender_identity_dsn_observed;no_send_performed;website_contact_all_targets_failed:1;contact_path_strategy_v2",
+    "draft": "Dear Rock Gear Distribution Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
+    "subject": "FLEXTAIL retail partnership | 2026 assortment",
+    "recipientEmail": "",
+    "messageId": "",
+    "sentFolder": "",
+    "sentUid": null
+  },
+  {
+    "task_id": "google-customer-blueriver-trading-website-contact",
+    "company": "BlueRiver Trading",
+    "approval_version": 1,
+    "status": "website_contact_unreachable_skip",
+    "agent": "codex-chrome-cdp",
+    "browserTransportUsed": "cdp",
+    "timestamp": "2026-08-13T08:23:32.715Z",
+    "target_url": "https://www.bluerivertrading.com/company.asp",
+    "evidence": "website_contact_entry_not_verified;no_contact_entry_control;public_email_fallback_available:info@bluerivertrading.com;email_sender_not_configured;email_sender_delivery_disabled;sender_identity_dsn_observed;no_send_performed;website_contact_all_targets_failed:1;contact_path_strategy_v2",
+    "draft": "Dear BlueRiver Trading Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
+    "subject": "FLEXTAIL retail partnership | 2026 assortment",
+    "recipientEmail": "",
+    "messageId": "",
+    "sentFolder": "",
+    "sentUid": null
   }
 ];
