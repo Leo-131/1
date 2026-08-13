@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-13T02:39:23.621Z",
+  "generatedAt": "2026-08-13T02:42:28.591Z",
   "companies": [
     {
       "companyId": "company_6da9ffc8d986b655",
@@ -29935,7 +29935,7 @@
     ]
   },
   "ownerSummary": {
-    "generatedAt": "2026-08-13T02:39:23.621Z",
+    "generatedAt": "2026-08-13T02:42:28.591Z",
     "phase": "autonomous_sales_operating_system_v1",
     "kpis": {
       "companies": 486,
