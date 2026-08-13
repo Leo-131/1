@@ -3994,6 +3994,10 @@ function queueItemToLead(item) {
 }
 
 function isWebsiteContactQueueItem(item = {}) {
+  // The platform selected after first-party enrichment is authoritative.
+  // Legacy discovery IDs retain the `website-contact` suffix for stable
+  // history keys even when the official page yields a verified email.
+  if (String(item.platform || item.channel || '').toLowerCase() === 'email') return false;
   const text = [
     item.platform,
     item.action,

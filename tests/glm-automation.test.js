@@ -87,6 +87,7 @@ test('execution dedupe separates verified email recipients from shared evidence-
   assert.ok(mainSource.includes("if (/email/.test(explicit)) return 'email'"));
   assert.ok(mainSource.includes("if (automationPlatformFor(value) === 'email' && recipient)"));
   assert.ok(mainSource.includes('`email:${recipient}`'));
+  assert.ok(mainSource.includes("if (String(item.platform || item.channel || '').toLowerCase() === 'email') return false"));
 });
 
 test('website contact can execute without a configured attachment', () => {
@@ -183,6 +184,20 @@ test('live first-party machine verification token passes the business email gate
   });
   assert.equal(result.ok, true);
   assert.equal(result.recipient, 'buyer@example-retailer.com');
+});
+
+test('official brand representative directory token passes only for a company-domain email', () => {
+  const { verifiedBusinessEmailTarget } = require('../outreach-dashboard/alibaba-email-delivery');
+  assert.equal(verifiedBusinessEmailTarget({
+    publicEmail: 'mike@allweathersales.ca',
+    externalVerificationStatus: 'official_supplier_email_verified',
+    emailVerificationStatus: 'official_brand_rep_directory_email',
+  }).ok, true);
+  assert.equal(verifiedBusinessEmailTarget({
+    publicEmail: 'agency@gmail.com',
+    externalVerificationStatus: 'official_supplier_email_verified',
+    emailVerificationStatus: 'official_brand_rep_directory_email',
+  }).ok, false);
 });
 
 test('LinkedIn platform engagement follows before sending the approved DM without comment or like', () => {
