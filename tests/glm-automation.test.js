@@ -21,6 +21,7 @@ const chromeDriverSource = fs.readFileSync(path.join(__dirname, '..', 'outreach-
 const discoverySource = fs.readFileSync(path.join(__dirname, '..', 'outreach-dashboard', 'google-lead-discovery-runner.js'), 'utf8');
 const enrichmentSource = fs.readFileSync(path.join(__dirname, '..', 'outreach-dashboard', 'enrich-first-party-channels.js'), 'utf8');
 const dailyRunnerSource = fs.readFileSync(path.join(__dirname, '..', 'outreach-dashboard', 'daily-automation-runner.js'), 'utf8');
+const intelligenceGeneratorSource = fs.readFileSync(path.join(__dirname, '..', 'outreach-dashboard', 'generate-outreach-intelligence.js'), 'utf8');
 const glmSource = fs.readFileSync(path.join(__dirname, '..', 'outreach-dashboard', 'glm-service.js'), 'utf8');
 const templateSource = fs.readFileSync(path.join(__dirname, '..', 'outreach-dashboard', 'api', 'templates.js'), 'utf8');
 const marketProtectionSource = fs.readFileSync(path.join(__dirname, '..', 'outreach-dashboard', 'country-market-protection.js'), 'utf8');
@@ -958,6 +959,19 @@ test('daily execution requires first-party verified social profiles and reports 
   assert.ok(mainSource.includes("'social_profile_not_first_party_verified'"));
   assert.ok(discoverySource.includes("company === 'Wild Earth'"));
   assert.ok(discoverySource.includes("'https://www.wildearth.com.au/'"));
+});
+
+test('daily execution accepts verified social targets stored in targetUrl or platformUrl', () => {
+  assert.ok(mainSource.includes('item.url || item.targetUrl || item.platformUrl || item.verifiedTargetUrl || item.contactUrl || item.website'));
+  assert.ok(mainSource.includes("['email', 'linkedin', 'facebook', 'instagram'].includes"));
+});
+
+test('daily artifact public mirrors retry transient Windows copy locks', () => {
+  assert.ok(dailyRunnerSource.includes('function copyFileWithRetry'));
+  assert.ok(dailyRunnerSource.includes('copyFileWithRetry(from, to)'));
+  assert.ok(intelligenceGeneratorSource.includes('function retryFileOperation'));
+  assert.ok(intelligenceGeneratorSource.includes('retryFileOperation(() => fs.writeFileSync'));
+  assert.ok(intelligenceGeneratorSource.includes('retryFileOperation(() => fs.copyFileSync'));
 });
 
 test('AutoGLM only accepts exact supported platform URLs and blocks repeat contact', () => {

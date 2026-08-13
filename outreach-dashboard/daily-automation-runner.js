@@ -19,6 +19,20 @@ function writeFileWithRetry(file, data, attempts = 10) {
   }
   throw lastError;
 }
+
+function copyFileWithRetry(from, to, attempts = 10) {
+  let lastError;
+  for (let attempt = 0; attempt < attempts; attempt += 1) {
+    try {
+      return fs.copyFileSync(from, to);
+    } catch (error) {
+      lastError = error;
+      if (!TRANSIENT_FILE_ERROR_CODES.has(error && error.code) || attempt === attempts - 1) throw error;
+      Atomics.wait(new Int32Array(new SharedArrayBuffer(4)), 0, 0, 100);
+    }
+  }
+  throw lastError;
+}
 const DEFAULT_CONFIG = {
   limits: { total: 100, develop: 70, emailPriority: 15, retryOrAlternate: 10, verifyTarget: 5 },
   cadence: {
@@ -956,7 +970,7 @@ function copyPublicArtifact(file) {
   const to = path.join(ROOT, 'public', file);
   if (!fs.existsSync(from)) return false;
   fs.mkdirSync(path.dirname(to), { recursive: true });
-  fs.copyFileSync(from, to);
+  copyFileWithRetry(from, to);
   return true;
 }
 

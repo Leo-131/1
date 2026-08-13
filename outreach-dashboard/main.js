@@ -4139,7 +4139,9 @@ function isWebsiteContactQueueItem(item = {}) {
   // The platform selected after first-party enrichment is authoritative.
   // Legacy discovery IDs retain the `website-contact` suffix for stable
   // history keys even when the official page yields a verified email.
-  if (String(item.platform || item.channel || '').toLowerCase() === 'email') return false;
+  if (['email', 'linkedin', 'facebook', 'instagram'].includes(
+    String(item.platform || item.channel || '').toLowerCase(),
+  )) return false;
   const text = [
     item.platform,
     item.action,
@@ -4223,7 +4225,7 @@ function executableQueueCandidates(items = [], options = {}) {
   return (Array.isArray(items) ? items : [])
     .filter(item => executableActions.has(item.action))
     .filter(item => item.executionReadiness && item.executionReadiness.ready === true)
-    .filter(item => item.url || item.contactUrl || item.website
+    .filter(item => item.url || item.targetUrl || item.platformUrl || item.verifiedTargetUrl || item.contactUrl || item.website
       || verifiedBusinessEmailTarget(item).ok
       || (recipientEmail(item) && configuredProvider().id))
     .filter(item => !hasNoSafeMessageButton(item) || hasVerifiedInstagramFallback(item))
@@ -4739,7 +4741,7 @@ async function runDailyAutomationQueue(payload = {}) {
           action: item.action,
           platform: item.platform,
           readiness: item.executionReadiness,
-          hasTarget: Boolean(item.url || item.contactUrl || item.website || verifiedBusinessEmailTarget(item).ok),
+          hasTarget: Boolean(item.url || item.targetUrl || item.platformUrl || item.verifiedTargetUrl || item.contactUrl || item.website || verifiedBusinessEmailTarget(item).ok),
           inCandidatePool: candidatePool.some(candidate => candidate.id === item.id),
           sameDayCompanyBlocked: itemBlockedBySameDayCompany(item, selectedCompanyKeys),
           blockingStatus: block && block.status || '',
