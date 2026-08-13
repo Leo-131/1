@@ -732,6 +732,14 @@ function recordAutomationResult(item, result) {
   if (receiptValidation.ok) entry.extensionReceipt = result.extensionReceipt;
   const file = path.join(__dirname, 'autonomous-outreach-results.js');
   const results = readJsonScriptArray(file, 'AUTONOMOUS_OUTREACH_RESULTS');
+  const companyKeys = automationCompanyKeys(entry);
+  const strongerConfirmedResultExists = results.some(existing => existing
+    && ['sent_confirmed', 'submitted_confirmed'].includes(existing.status)
+    && setsIntersect(companyKeys, automationCompanyKeys(existing)));
+  // Delivery truth is monotonic. A stale execution artifact may be replayed
+  // during reconciliation, but it must never downgrade a company that already
+  // has stronger confirmed evidence.
+  if (strongerConfirmedResultExists && !['sent_confirmed', 'submitted_confirmed', 'bounced'].includes(entry.status)) return;
   const duplicate = results.some(existing => {
     const sameMessageId = entry.messageId && existing.messageId
       && String(existing.messageId).trim().toLowerCase() === String(entry.messageId).trim().toLowerCase();
@@ -760,14 +768,6 @@ function copyPublicArtifact(file) {
 function repairPreSendUnconfirmedResults() {
   const file = path.join(__dirname, 'autonomous-outreach-results.js');
   const results = readJsonScriptArray(file, 'AUTONOMOUS_OUTREACH_RESULTS');
-  const companyKeys = automationCompanyKeys(entry);
-  const strongerConfirmedResultExists = results.some(existing => existing
-    && ['sent_confirmed', 'submitted_confirmed'].includes(existing.status)
-    && setsIntersect(companyKeys, automationCompanyKeys(existing)));
-  // Delivery truth is monotonic. A stale execution artifact may be replayed
-  // during reconciliation, but it must never downgrade a company that already
-  // has stronger confirmed evidence.
-  if (strongerConfirmedResultExists && !['sent_confirmed', 'submitted_confirmed', 'bounced'].includes(entry.status)) return;
   let repaired = 0;
   for (const result of results) {
     if (!result

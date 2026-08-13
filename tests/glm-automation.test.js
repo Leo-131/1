@@ -243,6 +243,8 @@ test('external visible-message confirmation is durable and cannot be downgraded 
   assert.ok(mainSource.includes('external_evidence_confirmation_applied;no_resend_performed'));
   assert.ok(mainSource.includes('strongerConfirmedResultExists'));
   assert.match(mainSource, /strongerConfirmedResultExists && !\['sent_confirmed', 'submitted_confirmed', 'bounced'\]\.includes\(entry\.status\)/);
+  const repairBlock = mainSource.slice(mainSource.indexOf('function repairPreSendUnconfirmedResults'), mainSource.indexOf('async function reconcileAlibabaBounceResults'));
+  assert.doesNotMatch(repairBlock, /automationCompanyKeys\(entry\)|entry\.status/);
 });
 
 test('no-message social profiles are blocked from automatic execution', () => {
