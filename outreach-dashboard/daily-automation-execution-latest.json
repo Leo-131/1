@@ -13,7 +13,7 @@
   "customerMessageSent": false,
   "realDevelopmentCount": 0,
   "reportingVerdict": "no_customer_development_performed",
-  "userVisibleStatus": "Customer development was not performed. Blockers: homepage_only_contact_path_requires_verification (61); website_contact_capability_not_verified (43); official_website_contact_channel (22).",
+  "userVisibleStatus": "Customer development was not performed. Blockers: homepage_only_contact_path_requires_verification (60); website_contact_capability_not_verified (43); official_website_contact_channel (23).",
   "recoveryHint": "Refill the high-ICP pool with 30 verified leads or unblock existing website/social leads before the next run.",
   "recoveryActions": [
     {
@@ -92,15 +92,15 @@
       "reason": "official_public_business_email_verified"
     },
     {
-      "id": "google-customer-rtic-mexico-website-contact",
-      "company": "RTIC Mexico",
+      "id": "google-customer-bivouac-outdoor-website-contact",
+      "company": "Bivouac Outdoor",
       "action": "email_priority",
       "platform": "email",
       "reason": "official_public_business_email_verified"
     },
     {
-      "id": "google-customer-bivouac-outdoor-website-contact",
-      "company": "Bivouac Outdoor",
+      "id": "google-customer-wildfire-sports-website-contact",
+      "company": "Wildfire Sports",
       "action": "email_priority",
       "platform": "email",
       "reason": "official_public_business_email_verified"
@@ -232,46 +232,11 @@
       "reason": "official_website_contact_channel"
     },
     {
-      "id": "google-customer-revassa-website-contact",
-      "company": "REVASSA",
-      "action": "verify_target",
-      "platform": "website_form",
-      "reason": "homepage_only_contact_path_requires_verification"
-    },
-    {
-      "id": "google-customer-left-point-distribution-website-contact",
-      "company": "Left Point Distribution",
+      "id": "google-customer-outdoor-nature-website-contact",
+      "company": "Outdoor Nature",
       "action": "email_priority",
       "platform": "website_form",
       "reason": "official_website_contact_channel"
-    },
-    {
-      "id": "google-customer-obelink-website-contact",
-      "company": "Obelink",
-      "action": "email_priority",
-      "platform": "website_form",
-      "reason": "official_website_contact_channel"
-    },
-    {
-      "id": "google-customer-de-wit-schijndel-website-contact",
-      "company": "De Wit Schijndel",
-      "action": "verify_target",
-      "platform": "website_form",
-      "reason": "homepage_only_contact_path_requires_verification"
-    },
-    {
-      "id": "google-customer-outdoorxl-website-contact",
-      "company": "OutdoorXL",
-      "action": "verify_target",
-      "platform": "website_form",
-      "reason": "homepage_only_contact_path_requires_verification"
-    },
-    {
-      "id": "google-customer-outdoor-specialist-website-contact",
-      "company": "Outdoor Specialist",
-      "action": "verify_target",
-      "platform": "website_form",
-      "reason": "homepage_only_contact_path_requires_verification"
     },
     {
       "id": "google-customer-rock-creek-website-contact",
@@ -295,6 +260,13 @@
       "reason": "official_public_business_email_verified"
     },
     {
+      "id": "google-customer-rtic-mexico-website-contact",
+      "company": "RTIC Mexico",
+      "action": "email_priority",
+      "platform": "email",
+      "reason": "official_public_business_email_verified"
+    },
+    {
       "id": "google-customer-fjellsport-website-contact",
       "company": "Fjellsport",
       "action": "email_priority",
@@ -304,13 +276,6 @@
     {
       "id": "google-customer-varuste-website-contact",
       "company": "Varuste",
-      "action": "email_priority",
-      "platform": "email",
-      "reason": "official_public_business_email_verified"
-    },
-    {
-      "id": "google-customer-wildfire-sports-website-contact",
-      "company": "Wildfire Sports",
       "action": "email_priority",
       "platform": "email",
       "reason": "official_public_business_email_verified"
@@ -617,6 +582,20 @@
       "reason": "homepage_only_contact_path_requires_verification"
     },
     {
+      "id": "google-customer-revassa-website-contact",
+      "company": "REVASSA",
+      "action": "verify_target",
+      "platform": "website_form",
+      "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
+      "id": "google-customer-left-point-distribution-website-contact",
+      "company": "Left Point Distribution",
+      "action": "email_priority",
+      "platform": "website_form",
+      "reason": "official_website_contact_channel"
+    },
+    {
       "id": "google-customer-next-adventure-website-contact",
       "company": "Next Adventure",
       "action": "verify_target",
@@ -680,6 +659,13 @@
       "reason": "homepage_only_contact_path_requires_verification"
     },
     {
+      "id": "google-customer-obelink-website-contact",
+      "company": "Obelink",
+      "action": "email_priority",
+      "platform": "website_form",
+      "reason": "official_website_contact_channel"
+    },
+    {
       "id": "google-customer-rona-website-contact",
       "company": "RONA",
       "action": "verify_target",
@@ -696,6 +682,13 @@
     {
       "id": "google-customer-alpinetrek-website-contact",
       "company": "Alpinetrek",
+      "action": "verify_target",
+      "platform": "website_form",
+      "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
+      "id": "google-customer-de-wit-schijndel-website-contact",
+      "company": "De Wit Schijndel",
       "action": "verify_target",
       "platform": "website_form",
       "reason": "homepage_only_contact_path_requires_verification"
@@ -724,6 +717,13 @@
     {
       "id": "google-customer-intersport-norway-website-contact",
       "company": "Intersport Norway",
+      "action": "verify_target",
+      "platform": "website_form",
+      "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
+      "id": "google-customer-ld-mountain-centre-website-contact",
+      "company": "LD Mountain Centre",
       "action": "verify_target",
       "platform": "website_form",
       "reason": "homepage_only_contact_path_requires_verification"
@@ -1034,7 +1034,7 @@
     {
       "reason": "homepage_only_contact_path_requires_verification",
       "status": "skipped",
-      "count": 61
+      "count": 60
     },
     {
       "reason": "website_contact_capability_not_verified",
@@ -1044,7 +1044,7 @@
     {
       "reason": "official_website_contact_channel",
       "status": "skipped",
-      "count": 22
+      "count": 23
     },
     {
       "reason": "official_public_business_email_verified",
@@ -1053,9 +1053,9 @@
     }
   ],
   "blockerCounts": {
-    "homepage_only_contact_path_requires_verification": 61,
+    "homepage_only_contact_path_requires_verification": 60,
     "website_contact_capability_not_verified": 43,
-    "official_website_contact_channel": 22,
+    "official_website_contact_channel": 23,
     "official_public_business_email_verified": 17
   },
   "queueGoalStatus": {
@@ -1547,5 +1547,5 @@
     "scanned": 0,
     "updated": 0
   },
-  "completedAt": "2026-08-13T03:14:31.209Z"
+  "completedAt": "2026-08-13T04:06:36.805Z"
 }

@@ -1,6 +1,6 @@
 window.OUTREACH_INTELLIGENCE_LATEST = {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-13T03:14:01.727Z",
+  "generatedAt": "2026-08-13T04:05:51.026Z",
   "companies": [
     {
       "companyId": "company_6da9ffc8d986b655",
@@ -3883,43 +3883,6 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
       "history": []
     },
     {
-      "companyId": "company_7e3d1608b38203d0",
-      "company": "RTIC Mexico",
-      "keys": [
-        "rticmexico",
-        "rticmx"
-      ],
-      "domains": [
-        "rtic.mx"
-      ],
-      "channels": [
-        "email"
-      ],
-      "evidence": [
-        {
-          "channel": "email",
-          "score": 100,
-          "verified": true,
-          "reasons": [
-            "official_business_route"
-          ],
-          "evidenceUrl": "https://rtic.mx/products/hilera-rtic-45-hard-cooler",
-          "checkedAt": ""
-        },
-        {
-          "channel": "email",
-          "score": 100,
-          "verified": true,
-          "reasons": [
-            "official_business_route"
-          ],
-          "evidenceUrl": "https://rtic.mx/products/hilera-rtic-45-hard-cooler",
-          "checkedAt": ""
-        }
-      ],
-      "history": []
-    },
-    {
       "companyId": "company_4ae4ae5588b677eb",
       "company": "Bivouac Outdoor",
       "keys": [
@@ -4061,351 +4024,176 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
       ]
     },
     {
-      "companyId": "company_ca049a336c94b7d9",
-      "company": "Left Point Distribution",
+      "companyId": "company_68ba78830347b19c",
+      "company": "Wildfire Sports",
       "keys": [
-        "leftpointdistribution",
-        "leftpointdistributioncom"
+        "wildfiresports",
+        "wildfiresportscomau"
       ],
       "domains": [
-        "leftpointdistribution.com"
+        "wildfiresports.com.au"
       ],
       "channels": [
+        "email",
         "website_form"
       ],
       "evidence": [
         {
-          "channel": "website_form",
+          "channel": "email",
           "score": 100,
           "verified": true,
           "reasons": [
             "official_business_route"
           ],
-          "evidenceUrl": "https://www.leftpointdistribution.com/en-eu/aboutus.php",
+          "evidenceUrl": "https://www.wildfiresports.com.au/",
           "checkedAt": ""
         },
         {
-          "channel": "website_form",
+          "channel": "email",
           "score": 100,
           "verified": true,
           "reasons": [
             "official_business_route"
           ],
-          "evidenceUrl": "https://www.leftpointdistribution.com/en-eu/aboutus.php",
-          "checkedAt": ""
-        },
-        {
-          "channel": "research",
-          "score": 100,
-          "verified": true,
-          "reasons": [
-            "official_business_route"
-          ],
-          "evidenceUrl": "https://www.leftpointdistribution.com/en-eu/aboutus.php",
+          "evidenceUrl": "https://www.wildfiresports.com.au/",
           "checkedAt": ""
         }
       ],
       "history": [
         {
           "status": "website_contact_unreachable_skip",
-          "timestamp": "2026-07-29T13:14:43.898Z",
-          "channel": "website_form",
-          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:7;contact_path_strategy_v2"
-        },
-        {
-          "status": "website_contact_unreachable_skip",
-          "timestamp": "2026-07-29T14:02:57.881Z",
-          "channel": "website_form",
-          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:7;contact_path_strategy_v2"
-        },
-        {
-          "status": "website_contact_unreachable_skip",
-          "timestamp": "2026-07-29T16:07:28.244Z",
-          "channel": "website_form",
-          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:7;contact_path_strategy_v2"
-        },
-        {
-          "status": "website_contact_unreachable_skip",
-          "timestamp": "2026-07-29T17:02:27.742Z",
-          "channel": "website_form",
-          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:7;contact_path_strategy_v2"
-        },
-        {
-          "status": "website_contact_unreachable_skip",
-          "timestamp": "2026-07-30T16:07:07.795Z",
-          "channel": "website_form",
-          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:7;contact_path_strategy_v2"
-        },
-        {
-          "status": "website_contact_unreachable_skip",
-          "timestamp": "2026-07-30T18:01:08.090Z",
-          "channel": "website_form",
-          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:7;contact_path_strategy_v2"
-        }
-      ]
-    },
-    {
-      "companyId": "company_152c4973e4cf4ec0",
-      "company": "Obelink",
-      "keys": [
-        "obelink",
-        "obelinknl"
-      ],
-      "domains": [
-        "obelink.nl"
-      ],
-      "channels": [
-        "website_form"
-      ],
-      "evidence": [
-        {
-          "channel": "website_form",
-          "score": 100,
-          "verified": true,
-          "reasons": [
-            "official_business_route"
-          ],
-          "evidenceUrl": "https://www.obelink.nl/obelink-partnerprogramma",
-          "checkedAt": ""
-        },
-        {
-          "channel": "website_form",
-          "score": 100,
-          "verified": true,
-          "reasons": [
-            "official_business_route"
-          ],
-          "evidenceUrl": "https://www.obelink.nl/obelink-partnerprogramma",
-          "checkedAt": ""
-        },
-        {
-          "channel": "research",
-          "score": 100,
-          "verified": true,
-          "reasons": [
-            "official_business_route"
-          ],
-          "evidenceUrl": "https://www.obelink.nl/obelink-partnerprogramma",
-          "checkedAt": ""
-        }
-      ],
-      "history": [
-        {
-          "status": "website_contact_unreachable_skip",
-          "timestamp": "2026-07-14T03:04:45.810Z",
-          "channel": "website_form",
-          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:1"
-        },
-        {
-          "status": "website_contact_unreachable_skip",
-          "timestamp": "2026-07-16T02:00:12.876Z",
-          "channel": "website_form",
-          "evidence": "website_contact_entry_not_verified;no_contact_route_detected;website_contact_all_targets_failed:1"
-        },
-        {
-          "status": "website_contact_unreachable_skip",
-          "timestamp": "2026-07-21T02:14:15.188Z",
-          "channel": "website_form",
-          "evidence": "website_contact_entry_not_verified;runtime_exception: Uncaught;website_contact_all_targets_failed:6;contact_path_strategy_v2"
-        },
-        {
-          "status": "website_contact_unreachable_skip",
-          "timestamp": "2026-07-21T16:07:29.544Z",
-          "channel": "website_form",
-          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:6;contact_path_strategy_v2"
-        },
-        {
-          "status": "website_contact_unreachable_skip",
-          "timestamp": "2026-07-26T22:07:24.275Z",
-          "channel": "website_form",
-          "evidence": "website_contact_cdp_unavailable_open_only_not_verified;website_contact_all_targets_failed:6;contact_path_strategy_v2"
-        },
-        {
-          "status": "website_contact_unreachable_skip",
-          "timestamp": "2026-07-30T05:14:16.654Z",
-          "channel": "website_form",
-          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:7;contact_path_strategy_v2"
-        },
-        {
-          "status": "website_contact_unreachable_skip",
-          "timestamp": "2026-07-30T05:55:00.790Z",
-          "channel": "website_form",
-          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:7;contact_path_strategy_v2"
-        },
-        {
-          "status": "website_contact_unreachable_skip",
-          "timestamp": "2026-07-30T16:06:18.063Z",
-          "channel": "website_form",
-          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:7;contact_path_strategy_v2"
-        },
-        {
-          "status": "website_contact_unreachable_skip",
-          "timestamp": "2026-07-30T18:01:07.841Z",
-          "channel": "website_form",
-          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:7;contact_path_strategy_v2"
-        },
-        {
-          "status": "website_contact_unreachable_skip",
-          "timestamp": "2026-07-31T16:09:16.482Z",
-          "channel": "website_form",
-          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:7;contact_path_strategy_v2"
-        },
-        {
-          "status": "website_contact_unreachable_skip",
-          "timestamp": "2026-07-31T19:05:48.032Z",
-          "channel": "website_form",
-          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:7;contact_path_strategy_v2"
-        }
-      ]
-    },
-    {
-      "companyId": "company_28c2f8a5d864dc7b",
-      "company": "De Wit Schijndel",
-      "keys": [
-        "dewitschijndel",
-        "dewitnl"
-      ],
-      "domains": [
-        "de-wit.nl"
-      ],
-      "channels": [
-        "website_form"
-      ],
-      "evidence": [
-        {
-          "channel": "website_form",
-          "score": 80,
-          "verified": false,
-          "reasons": [
-            "first_party_evidence"
-          ],
-          "evidenceUrl": "https://www.de-wit.nl/",
-          "checkedAt": ""
-        },
-        {
-          "channel": "website_form",
-          "score": 80,
-          "verified": false,
-          "reasons": [
-            "first_party_evidence"
-          ],
-          "evidenceUrl": "https://www.de-wit.nl/",
-          "checkedAt": ""
-        }
-      ],
-      "history": [
-        {
-          "status": "website_contact_unreachable_skip",
-          "timestamp": "2026-07-14T03:08:21.870Z",
-          "channel": "website_form",
-          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:1"
-        },
-        {
-          "status": "website_contact_unreachable_skip",
-          "timestamp": "2026-07-21T02:57:45.813Z",
-          "channel": "website_form",
-          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:6;contact_path_strategy_v2"
-        },
-        {
-          "status": "website_contact_unreachable_skip",
-          "timestamp": "2026-07-24T04:06:34.878Z",
-          "channel": "website_form",
-          "evidence": "website_page_unavailable_404: Skip to Content\nDe winkel en openingstijden\nKoopzondag 26 juli\nMegastore in Schijndel 70.000 m²\nZoeken\nProducten\nMerken\nSale\nAccount\nCategorieën\nTenten\n Tenten\nAlle artikelen in Te;website_contact_all_targets_failed:6;contact_path_strategy_v2"
-        },
-        {
-          "status": "website_contact_unreachable_skip",
-          "timestamp": "2026-07-24T16:13:36.912Z",
-          "channel": "website_form",
-          "evidence": "website_page_unavailable_404: Skip to Content\nDe winkel en openingstijden\nKoopzondag 26 juli\nMegastore in Schijndel 70.000 m²\nZoeken\nMerken\nSale\nAccount\nTenten\nTentsoorten\nBijzettenten\nDaktenten\nDouchetenten\nFa;website_contact_all_targets_failed:6;contact_path_strategy_v2"
-        }
-      ]
-    },
-    {
-      "companyId": "company_b2563fd0c1c5db2a",
-      "company": "OutdoorXL",
-      "keys": [
-        "outdoorxl",
-        "outdoorxlnl"
-      ],
-      "domains": [
-        "outdoorxl.nl"
-      ],
-      "channels": [
-        "website_form"
-      ],
-      "evidence": [
-        {
-          "channel": "website_form",
-          "score": 80,
-          "verified": false,
-          "reasons": [
-            "first_party_evidence"
-          ],
-          "evidenceUrl": "https://www.outdoorxl.nl/",
-          "checkedAt": ""
-        },
-        {
-          "channel": "website_form",
-          "score": 80,
-          "verified": false,
-          "reasons": [
-            "first_party_evidence"
-          ],
-          "evidenceUrl": "https://www.outdoorxl.nl/",
-          "checkedAt": ""
-        }
-      ],
-      "history": [
-        {
-          "status": "website_contact_unreachable_skip",
-          "timestamp": "2026-07-14T03:10:13.014Z",
+          "timestamp": "2026-07-14T03:11:53.109Z",
           "channel": "website_form",
           "evidence": "website_contact_cdp_unavailable_open_only_not_verified;website_contact_all_targets_failed:1"
         },
         {
           "status": "website_contact_unreachable_skip",
-          "timestamp": "2026-07-21T03:04:01.812Z",
+          "timestamp": "2026-07-21T03:39:51.883Z",
           "channel": "website_form",
-          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:6;contact_path_strategy_v2"
+          "evidence": "unavailable_profile_page: Skip to main content\nAUD Australian Dollar\nNZD New Zealand Dollar\n |\n|\n Shoes \n Apparel \n Bags \n Gear \n Electronics \n Nutrition & Health \n Sale \n Gifts \n Brands \n \n90 Day Returns\nF;website_contact_all_targets_failed:6;contact_path_strategy_v2"
         },
         {
-          "status": "website_contact_unreachable_skip",
-          "timestamp": "2026-07-27T10:17:04.476Z",
-          "channel": "website_form",
-          "evidence": "website_contact_entry_not_verified;no_contact_route_detected;website_contact_all_targets_failed:6;contact_path_strategy_v2"
+          "status": "approval_pending",
+          "timestamp": "2026-07-21T05:27:50.983Z",
+          "channel": "email",
+          "evidence": "alibaba_webmail_compose_unavailable;contact_path_strategy_v2"
         },
         {
-          "status": "website_contact_unreachable_skip",
-          "timestamp": "2026-07-29T02:49:59.813Z",
+          "status": "approval_pending",
+          "timestamp": "2026-07-21T07:06:03.268Z",
+          "channel": "email",
+          "evidence": "alibaba_webmail_compose_button_missing;contact_path_strategy_v2"
+        },
+        {
+          "status": "approval_pending",
+          "timestamp": "2026-07-21T10:19:06.281Z",
+          "channel": "email",
+          "evidence": "alibaba_webmail_draft_inserted;alibaba_webmail_draft_verification_failed;contact_path_strategy_v2"
+        },
+        {
+          "status": "approval_pending",
+          "timestamp": "2026-07-22T07:06:32.855Z",
+          "channel": "email",
+          "evidence": "alibaba_webmail_compose_fields_missing;alibaba_webmail_draft_verification_failed;contact_path_strategy_v2"
+        },
+        {
+          "status": "approval_pending",
+          "timestamp": "2026-07-24T07:06:26.807Z",
+          "channel": "email",
+          "evidence": "alibaba_webmail_login_required;contact_path_strategy_v2"
+        },
+        {
+          "status": "approval_pending",
+          "timestamp": "2026-07-24T11:05:23.061Z",
+          "channel": "email",
+          "evidence": "alibaba_webmail_draft_inserted;alibaba_webmail_draft_verification_failed;recipientReady:false;subjectReady:true;bodyReady:true;contact_path_strategy_v2"
+        },
+        {
+          "status": "approval_pending",
+          "timestamp": "2026-07-24T11:07:57.850Z",
+          "channel": "email",
+          "evidence": "alibaba_webmail_draft_inserted_recipient_focused;alibaba_webmail_draft_verification_failed;recipientReady:false;subjectReady:true;bodyReady:true;contact_path_strategy_v2"
+        },
+        {
+          "status": "approval_pending",
+          "timestamp": "2026-07-24T11:09:57.050Z",
+          "channel": "email",
+          "evidence": "alibaba_webmail_content_inserted_recipient_focused;alibaba_webmail_draft_verification_failed;recipientReady:false;subjectReady:true;bodyReady:true;contact_path_strategy_v2"
+        },
+        {
+          "status": "send_unconfirmed",
+          "timestamp": "2026-07-24T13:10:29.584Z",
+          "channel": "email",
+          "evidence": "official_public_business_email;alibaba_webmail_session_reused;alibaba_webmail_send_clicked;alibaba_mail_send_confirmation_waiting;sent_folder_record_missing;contact_path_strategy_v2"
+        },
+        {
+          "status": "send_unconfirmed",
+          "timestamp": "2026-07-24T14:03:53.480Z",
+          "channel": "email",
+          "evidence": "prior_send_unconfirmed_no_resend;sent_folder_record_missing;contact_path_strategy_v2"
+        },
+        {
+          "status": "send_unconfirmed",
+          "timestamp": "2026-07-26T22:06:34.999Z",
           "channel": "website_form",
-          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:6;contact_path_strategy_v2"
+          "evidence": "prior_unconfirmed_sent_folder_unavailable;contact_path_strategy_v2"
+        },
+        {
+          "status": "send_unconfirmed",
+          "timestamp": "2026-07-29T02:49:59.525Z",
+          "channel": "website_form",
+          "evidence": "prior_send_unconfirmed_no_resend;sent_folder_record_missing;contact_path_strategy_v2"
+        },
+        {
+          "status": "send_unconfirmed",
+          "timestamp": "2026-07-29T02:51:37.195Z",
+          "channel": "email",
+          "evidence": "prior_send_unconfirmed_no_resend;sent_folder_record_missing;contact_path_strategy_v2"
         }
       ]
     },
     {
-      "companyId": "company_7d845b370d382cca",
-      "company": "Outdoor Specialist",
+      "companyId": "company_d43133da7d17b52b",
+      "company": "Outdoor Nature",
       "keys": [
-        "outdoorspecialist",
-        "outdoorspecialistnl"
+        "outdoornature",
+        "outdoornaturecomau"
       ],
       "domains": [
-        "outdoorspecialist.nl"
+        "outdoornature.com.au"
       ],
       "channels": [
-        "website_form",
-        "instagram",
-        "facebook"
+        "website_form"
       ],
       "evidence": [
         {
           "channel": "website_form",
-          "score": 0,
-          "verified": false,
+          "score": 100,
+          "verified": true,
           "reasons": [
-            "unverified_external_evidence_rejected"
+            "official_business_route"
           ],
-          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
+          "evidenceUrl": "https://www.outdoornature.com.au/become-a-supplier/",
+          "checkedAt": ""
+        },
+        {
+          "channel": "website_form",
+          "score": 100,
+          "verified": true,
+          "reasons": [
+            "official_business_route"
+          ],
+          "evidenceUrl": "https://www.outdoornature.com.au/become-a-supplier/",
+          "checkedAt": ""
+        },
+        {
+          "channel": "research",
+          "score": 100,
+          "verified": true,
+          "reasons": [
+            "official_business_route"
+          ],
+          "evidenceUrl": "https://www.outdoornature.com.au/become-a-supplier/",
           "checkedAt": ""
         },
         {
@@ -4415,40 +4203,52 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
           "reasons": [
             "unverified_external_evidence_rejected"
           ],
-          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
+          "evidenceUrl": "https://www.outdoornature.com.au/become-a-supplier/",
           "checkedAt": ""
         }
       ],
       "history": [
         {
-          "status": "failed_open",
-          "timestamp": "2026-07-17T09:14:46.291Z",
-          "channel": "instagram",
-          "evidence": "instagram_unavailable_profile_page: 很抱歉，无法访问此页面\n你点击的链接可能已损坏，或页面已被移除。返回 instagram。\nmeta\n关于\n博客\n工作\n帮助\napi\n隐私设置\n条款\n地点\n热门\ninstagram lite\nmeta ai\nthreads\n联系人上传和非用户\nmeta verified\n中文(简体)\nafrikaans\nالعربية\nčeština\ndansk\ndeutsch\nελληνικά\nenglish\nenglish (uk)\nespañol (españa)\nespañol\nفارسی\nsuomi\nfrançais\nעברית\nbahasa indonesia\nitaliano\n日本語\n한국어\nbahasa melayu\nnorsk\nnederlands\npolski\nportuguês (brasil)\nportuguês (portugal)\nрусский\nsvenska\nภาษาไทย\nfilipino\ntürkçe\n中文(简体)\n中文(台灣)\nবাংলা\nગુજરાતી\nहिन्दी\nhrvatski\nmagyar\nಕನ್ನಡ\nമലയാളം\nमराठी\nनेपाली\nਪੰਜਾਬੀ\nසිංහල\nslovenčina\nதமிழ்\nతెలుగు\nاردو\ntiếng việt\n中文(香港)\nбългарски\nfrançais (canada)\nromână\nсрпски\nукра"
-        },
-        {
-          "status": "failed_open",
-          "timestamp": "2026-07-29T10:33:33.664Z",
-          "channel": "facebook",
-          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;personal_profile_without_company_match_expected_Outdoor Specialist_title_Facebook;contact_path_strategy_v2"
-        },
-        {
-          "status": "failed_open",
-          "timestamp": "2026-07-29T10:35:25.068Z",
+          "status": "website_contact_unreachable_skip",
+          "timestamp": "2026-07-29T13:14:06.635Z",
           "channel": "website_form",
-          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;personal_profile_without_company_match_expected_Outdoor Specialist_title_Facebook;contact_path_strategy_v2"
+          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:7;contact_path_strategy_v2"
+        },
+        {
+          "status": "website_contact_unreachable_skip",
+          "timestamp": "2026-07-29T14:02:57.783Z",
+          "channel": "website_form",
+          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:7;contact_path_strategy_v2"
+        },
+        {
+          "status": "website_contact_unreachable_skip",
+          "timestamp": "2026-07-29T16:06:54.001Z",
+          "channel": "website_form",
+          "evidence": "website_contact_entry_not_verified;contact_entry_clicked:Contact Us;website_contact_all_targets_failed:7;contact_path_strategy_v2"
+        },
+        {
+          "status": "website_contact_unreachable_skip",
+          "timestamp": "2026-07-29T17:02:27.424Z",
+          "channel": "website_form",
+          "evidence": "website_contact_entry_not_verified;contact_entry_clicked:Contact Us;website_contact_all_targets_failed:7;contact_path_strategy_v2"
+        },
+        {
+          "status": "website_contact_unreachable_skip",
+          "timestamp": "2026-07-30T16:06:40.575Z",
+          "channel": "website_form",
+          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:7;contact_path_strategy_v2"
+        },
+        {
+          "status": "website_contact_unreachable_skip",
+          "timestamp": "2026-07-30T18:01:08.035Z",
+          "channel": "website_form",
+          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:7;contact_path_strategy_v2"
         },
         {
           "status": "failed_open",
-          "timestamp": "2026-07-30T08:36:59.156Z",
-          "channel": "facebook",
-          "evidence": "personal_profile_without_company_match_expected_Outdoor Specialist_title_Facebook"
-        },
-        {
-          "status": "failed_open",
-          "timestamp": "2026-07-30T09:03:50.137Z",
-          "channel": "facebook",
-          "evidence": "personal_profile_without_company_match_expected_Outdoor Specialist_title_(1) Facebook"
+          "timestamp": "2026-08-10T09:06:30.000Z",
+          "channel": "website_form",
+          "evidence": "official_supplier_form_verified_and_product_fit_passed;recaptcha_present;no_submit_clicked;captcha_platform_blocker_skipped_safely"
         }
       ]
     },
@@ -4575,6 +4375,43 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
           "evidence": "official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_missing;contact_path_strategy_v2"
         }
       ]
+    },
+    {
+      "companyId": "company_7e3d1608b38203d0",
+      "company": "RTIC Mexico",
+      "keys": [
+        "rticmexico",
+        "rticmx"
+      ],
+      "domains": [
+        "rtic.mx"
+      ],
+      "channels": [
+        "email"
+      ],
+      "evidence": [
+        {
+          "channel": "email",
+          "score": 100,
+          "verified": true,
+          "reasons": [
+            "official_business_route"
+          ],
+          "evidenceUrl": "https://rtic.mx/products/hilera-rtic-45-hard-cooler",
+          "checkedAt": ""
+        },
+        {
+          "channel": "email",
+          "score": 100,
+          "verified": true,
+          "reasons": [
+            "official_business_route"
+          ],
+          "evidenceUrl": "https://rtic.mx/products/hilera-rtic-45-hard-cooler",
+          "checkedAt": ""
+        }
+      ],
+      "history": []
     },
     {
       "companyId": "company_5fe30cfaa83c8b40",
@@ -5015,135 +4852,6 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
       ]
     },
     {
-      "companyId": "company_68ba78830347b19c",
-      "company": "Wildfire Sports",
-      "keys": [
-        "wildfiresports",
-        "wildfiresportscomau"
-      ],
-      "domains": [
-        "wildfiresports.com.au"
-      ],
-      "channels": [
-        "email",
-        "website_form"
-      ],
-      "evidence": [
-        {
-          "channel": "email",
-          "score": 100,
-          "verified": true,
-          "reasons": [
-            "official_business_route"
-          ],
-          "evidenceUrl": "https://www.wildfiresports.com.au/",
-          "checkedAt": ""
-        },
-        {
-          "channel": "email",
-          "score": 100,
-          "verified": true,
-          "reasons": [
-            "official_business_route"
-          ],
-          "evidenceUrl": "https://www.wildfiresports.com.au/",
-          "checkedAt": ""
-        }
-      ],
-      "history": [
-        {
-          "status": "website_contact_unreachable_skip",
-          "timestamp": "2026-07-14T03:11:53.109Z",
-          "channel": "website_form",
-          "evidence": "website_contact_cdp_unavailable_open_only_not_verified;website_contact_all_targets_failed:1"
-        },
-        {
-          "status": "website_contact_unreachable_skip",
-          "timestamp": "2026-07-21T03:39:51.883Z",
-          "channel": "website_form",
-          "evidence": "unavailable_profile_page: Skip to main content\nAUD Australian Dollar\nNZD New Zealand Dollar\n |\n|\n Shoes \n Apparel \n Bags \n Gear \n Electronics \n Nutrition & Health \n Sale \n Gifts \n Brands \n \n90 Day Returns\nF;website_contact_all_targets_failed:6;contact_path_strategy_v2"
-        },
-        {
-          "status": "approval_pending",
-          "timestamp": "2026-07-21T05:27:50.983Z",
-          "channel": "email",
-          "evidence": "alibaba_webmail_compose_unavailable;contact_path_strategy_v2"
-        },
-        {
-          "status": "approval_pending",
-          "timestamp": "2026-07-21T07:06:03.268Z",
-          "channel": "email",
-          "evidence": "alibaba_webmail_compose_button_missing;contact_path_strategy_v2"
-        },
-        {
-          "status": "approval_pending",
-          "timestamp": "2026-07-21T10:19:06.281Z",
-          "channel": "email",
-          "evidence": "alibaba_webmail_draft_inserted;alibaba_webmail_draft_verification_failed;contact_path_strategy_v2"
-        },
-        {
-          "status": "approval_pending",
-          "timestamp": "2026-07-22T07:06:32.855Z",
-          "channel": "email",
-          "evidence": "alibaba_webmail_compose_fields_missing;alibaba_webmail_draft_verification_failed;contact_path_strategy_v2"
-        },
-        {
-          "status": "approval_pending",
-          "timestamp": "2026-07-24T07:06:26.807Z",
-          "channel": "email",
-          "evidence": "alibaba_webmail_login_required;contact_path_strategy_v2"
-        },
-        {
-          "status": "approval_pending",
-          "timestamp": "2026-07-24T11:05:23.061Z",
-          "channel": "email",
-          "evidence": "alibaba_webmail_draft_inserted;alibaba_webmail_draft_verification_failed;recipientReady:false;subjectReady:true;bodyReady:true;contact_path_strategy_v2"
-        },
-        {
-          "status": "approval_pending",
-          "timestamp": "2026-07-24T11:07:57.850Z",
-          "channel": "email",
-          "evidence": "alibaba_webmail_draft_inserted_recipient_focused;alibaba_webmail_draft_verification_failed;recipientReady:false;subjectReady:true;bodyReady:true;contact_path_strategy_v2"
-        },
-        {
-          "status": "approval_pending",
-          "timestamp": "2026-07-24T11:09:57.050Z",
-          "channel": "email",
-          "evidence": "alibaba_webmail_content_inserted_recipient_focused;alibaba_webmail_draft_verification_failed;recipientReady:false;subjectReady:true;bodyReady:true;contact_path_strategy_v2"
-        },
-        {
-          "status": "send_unconfirmed",
-          "timestamp": "2026-07-24T13:10:29.584Z",
-          "channel": "email",
-          "evidence": "official_public_business_email;alibaba_webmail_session_reused;alibaba_webmail_send_clicked;alibaba_mail_send_confirmation_waiting;sent_folder_record_missing;contact_path_strategy_v2"
-        },
-        {
-          "status": "send_unconfirmed",
-          "timestamp": "2026-07-24T14:03:53.480Z",
-          "channel": "email",
-          "evidence": "prior_send_unconfirmed_no_resend;sent_folder_record_missing;contact_path_strategy_v2"
-        },
-        {
-          "status": "send_unconfirmed",
-          "timestamp": "2026-07-26T22:06:34.999Z",
-          "channel": "website_form",
-          "evidence": "prior_unconfirmed_sent_folder_unavailable;contact_path_strategy_v2"
-        },
-        {
-          "status": "send_unconfirmed",
-          "timestamp": "2026-07-29T02:49:59.525Z",
-          "channel": "website_form",
-          "evidence": "prior_send_unconfirmed_no_resend;sent_folder_record_missing;contact_path_strategy_v2"
-        },
-        {
-          "status": "send_unconfirmed",
-          "timestamp": "2026-07-29T02:51:37.195Z",
-          "channel": "email",
-          "evidence": "prior_send_unconfirmed_no_resend;sent_folder_record_missing;contact_path_strategy_v2"
-        }
-      ]
-    },
-    {
       "companyId": "company_992d96a6c170243f",
       "company": "Esprinet Group",
       "keys": [
@@ -5279,6 +4987,90 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
           "timestamp": "2026-08-12T02:11:29.078Z",
           "channel": "linkedin",
           "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:linkedin;identity_mismatch_expected_Esprinet Group_title_(26) LinkedIn;contact_path_strategy_v2"
+        }
+      ]
+    },
+    {
+      "companyId": "company_ca049a336c94b7d9",
+      "company": "Left Point Distribution",
+      "keys": [
+        "leftpointdistribution",
+        "leftpointdistributioncom"
+      ],
+      "domains": [
+        "leftpointdistribution.com"
+      ],
+      "channels": [
+        "website_form"
+      ],
+      "evidence": [
+        {
+          "channel": "website_form",
+          "score": 100,
+          "verified": true,
+          "reasons": [
+            "official_business_route"
+          ],
+          "evidenceUrl": "https://www.leftpointdistribution.com/en-eu/aboutus.php",
+          "checkedAt": ""
+        },
+        {
+          "channel": "website_form",
+          "score": 100,
+          "verified": true,
+          "reasons": [
+            "official_business_route"
+          ],
+          "evidenceUrl": "https://www.leftpointdistribution.com/en-eu/aboutus.php",
+          "checkedAt": ""
+        },
+        {
+          "channel": "research",
+          "score": 100,
+          "verified": true,
+          "reasons": [
+            "official_business_route"
+          ],
+          "evidenceUrl": "https://www.leftpointdistribution.com/en-eu/aboutus.php",
+          "checkedAt": ""
+        }
+      ],
+      "history": [
+        {
+          "status": "website_contact_unreachable_skip",
+          "timestamp": "2026-07-29T13:14:43.898Z",
+          "channel": "website_form",
+          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:7;contact_path_strategy_v2"
+        },
+        {
+          "status": "website_contact_unreachable_skip",
+          "timestamp": "2026-07-29T14:02:57.881Z",
+          "channel": "website_form",
+          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:7;contact_path_strategy_v2"
+        },
+        {
+          "status": "website_contact_unreachable_skip",
+          "timestamp": "2026-07-29T16:07:28.244Z",
+          "channel": "website_form",
+          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:7;contact_path_strategy_v2"
+        },
+        {
+          "status": "website_contact_unreachable_skip",
+          "timestamp": "2026-07-29T17:02:27.742Z",
+          "channel": "website_form",
+          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:7;contact_path_strategy_v2"
+        },
+        {
+          "status": "website_contact_unreachable_skip",
+          "timestamp": "2026-07-30T16:07:07.795Z",
+          "channel": "website_form",
+          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:7;contact_path_strategy_v2"
+        },
+        {
+          "status": "website_contact_unreachable_skip",
+          "timestamp": "2026-07-30T18:01:08.090Z",
+          "channel": "website_form",
+          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:7;contact_path_strategy_v2"
         }
       ]
     },
@@ -6222,6 +6014,120 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
       ]
     },
     {
+      "companyId": "company_152c4973e4cf4ec0",
+      "company": "Obelink",
+      "keys": [
+        "obelink",
+        "obelinknl"
+      ],
+      "domains": [
+        "obelink.nl"
+      ],
+      "channels": [
+        "website_form"
+      ],
+      "evidence": [
+        {
+          "channel": "website_form",
+          "score": 100,
+          "verified": true,
+          "reasons": [
+            "official_business_route"
+          ],
+          "evidenceUrl": "https://www.obelink.nl/obelink-partnerprogramma",
+          "checkedAt": ""
+        },
+        {
+          "channel": "website_form",
+          "score": 100,
+          "verified": true,
+          "reasons": [
+            "official_business_route"
+          ],
+          "evidenceUrl": "https://www.obelink.nl/obelink-partnerprogramma",
+          "checkedAt": ""
+        },
+        {
+          "channel": "research",
+          "score": 100,
+          "verified": true,
+          "reasons": [
+            "official_business_route"
+          ],
+          "evidenceUrl": "https://www.obelink.nl/obelink-partnerprogramma",
+          "checkedAt": ""
+        }
+      ],
+      "history": [
+        {
+          "status": "website_contact_unreachable_skip",
+          "timestamp": "2026-07-14T03:04:45.810Z",
+          "channel": "website_form",
+          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:1"
+        },
+        {
+          "status": "website_contact_unreachable_skip",
+          "timestamp": "2026-07-16T02:00:12.876Z",
+          "channel": "website_form",
+          "evidence": "website_contact_entry_not_verified;no_contact_route_detected;website_contact_all_targets_failed:1"
+        },
+        {
+          "status": "website_contact_unreachable_skip",
+          "timestamp": "2026-07-21T02:14:15.188Z",
+          "channel": "website_form",
+          "evidence": "website_contact_entry_not_verified;runtime_exception: Uncaught;website_contact_all_targets_failed:6;contact_path_strategy_v2"
+        },
+        {
+          "status": "website_contact_unreachable_skip",
+          "timestamp": "2026-07-21T16:07:29.544Z",
+          "channel": "website_form",
+          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:6;contact_path_strategy_v2"
+        },
+        {
+          "status": "website_contact_unreachable_skip",
+          "timestamp": "2026-07-26T22:07:24.275Z",
+          "channel": "website_form",
+          "evidence": "website_contact_cdp_unavailable_open_only_not_verified;website_contact_all_targets_failed:6;contact_path_strategy_v2"
+        },
+        {
+          "status": "website_contact_unreachable_skip",
+          "timestamp": "2026-07-30T05:14:16.654Z",
+          "channel": "website_form",
+          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:7;contact_path_strategy_v2"
+        },
+        {
+          "status": "website_contact_unreachable_skip",
+          "timestamp": "2026-07-30T05:55:00.790Z",
+          "channel": "website_form",
+          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:7;contact_path_strategy_v2"
+        },
+        {
+          "status": "website_contact_unreachable_skip",
+          "timestamp": "2026-07-30T16:06:18.063Z",
+          "channel": "website_form",
+          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:7;contact_path_strategy_v2"
+        },
+        {
+          "status": "website_contact_unreachable_skip",
+          "timestamp": "2026-07-30T18:01:07.841Z",
+          "channel": "website_form",
+          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:7;contact_path_strategy_v2"
+        },
+        {
+          "status": "website_contact_unreachable_skip",
+          "timestamp": "2026-07-31T16:09:16.482Z",
+          "channel": "website_form",
+          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:7;contact_path_strategy_v2"
+        },
+        {
+          "status": "website_contact_unreachable_skip",
+          "timestamp": "2026-07-31T19:05:48.032Z",
+          "channel": "website_form",
+          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:7;contact_path_strategy_v2"
+        }
+      ]
+    },
+    {
       "companyId": "company_aeb02fd0dd014816",
       "company": "RONA",
       "keys": [
@@ -6428,6 +6334,68 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
           "timestamp": "2026-07-29T02:49:59.573Z",
           "channel": "website_form",
           "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:6;contact_path_strategy_v2"
+        }
+      ]
+    },
+    {
+      "companyId": "company_28c2f8a5d864dc7b",
+      "company": "De Wit Schijndel",
+      "keys": [
+        "dewitschijndel",
+        "dewitnl"
+      ],
+      "domains": [
+        "de-wit.nl"
+      ],
+      "channels": [
+        "website_form"
+      ],
+      "evidence": [
+        {
+          "channel": "website_form",
+          "score": 80,
+          "verified": false,
+          "reasons": [
+            "first_party_evidence"
+          ],
+          "evidenceUrl": "https://www.de-wit.nl/",
+          "checkedAt": ""
+        },
+        {
+          "channel": "website_form",
+          "score": 80,
+          "verified": false,
+          "reasons": [
+            "first_party_evidence"
+          ],
+          "evidenceUrl": "https://www.de-wit.nl/",
+          "checkedAt": ""
+        }
+      ],
+      "history": [
+        {
+          "status": "website_contact_unreachable_skip",
+          "timestamp": "2026-07-14T03:08:21.870Z",
+          "channel": "website_form",
+          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:1"
+        },
+        {
+          "status": "website_contact_unreachable_skip",
+          "timestamp": "2026-07-21T02:57:45.813Z",
+          "channel": "website_form",
+          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:6;contact_path_strategy_v2"
+        },
+        {
+          "status": "website_contact_unreachable_skip",
+          "timestamp": "2026-07-24T04:06:34.878Z",
+          "channel": "website_form",
+          "evidence": "website_page_unavailable_404: Skip to Content\nDe winkel en openingstijden\nKoopzondag 26 juli\nMegastore in Schijndel 70.000 m²\nZoeken\nProducten\nMerken\nSale\nAccount\nCategorieën\nTenten\n Tenten\nAlle artikelen in Te;website_contact_all_targets_failed:6;contact_path_strategy_v2"
+        },
+        {
+          "status": "website_contact_unreachable_skip",
+          "timestamp": "2026-07-24T16:13:36.912Z",
+          "channel": "website_form",
+          "evidence": "website_page_unavailable_404: Skip to Content\nDe winkel en openingstijden\nKoopzondag 26 juli\nMegastore in Schijndel 70.000 m²\nZoeken\nMerken\nSale\nAccount\nTenten\nTentsoorten\nBijzettenten\nDaktenten\nDouchetenten\nFa;website_contact_all_targets_failed:6;contact_path_strategy_v2"
         }
       ]
     },
@@ -6881,6 +6849,198 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
           "timestamp": "2026-08-05T03:01:21.601Z",
           "channel": "website_form",
           "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;identity_mismatch_expected_Intersport Norway_title_www.facebook.com;contact_path_strategy_v2"
+        }
+      ]
+    },
+    {
+      "companyId": "company_e4a228cde5d155b2",
+      "company": "LD Mountain Centre",
+      "keys": [
+        "ldmountaincentre",
+        "ldmountaincentrecom"
+      ],
+      "domains": [
+        "ldmountaincentre.com"
+      ],
+      "channels": [
+        "website_form",
+        "instagram",
+        "facebook"
+      ],
+      "evidence": [
+        {
+          "channel": "website_form",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
+          "checkedAt": ""
+        },
+        {
+          "channel": "instagram",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
+          "checkedAt": ""
+        },
+        {
+          "channel": "facebook",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
+          "checkedAt": ""
+        },
+        {
+          "channel": "website_form",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
+          "checkedAt": ""
+        }
+      ],
+      "history": [
+        {
+          "status": "send_unconfirmed",
+          "timestamp": "2026-07-16T11:34:13.520Z",
+          "channel": "facebook",
+          "evidence": "facebook_draft_not_inserted_after_composer_refocus;editable_count:2;composer_text_length:1;active:BODY"
+        },
+        {
+          "status": "failed_open",
+          "timestamp": "2026-07-16T12:55:51.979Z",
+          "channel": "facebook",
+          "evidence": "facebook_message_button_clicked_composer_not_found"
+        },
+        {
+          "status": "account_followed",
+          "timestamp": "2026-07-16T13:05:45.510Z",
+          "channel": "facebook",
+          "evidence": "facebook_engagement_completed_message_unavailable;facebook_profile_no_message_button;follow_already_active;facebook_post_like_not_available"
+        },
+        {
+          "status": "failed_open",
+          "timestamp": "2026-07-29T11:17:27.731Z",
+          "channel": "instagram",
+          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;instagram_unavailable_profile_page: 很抱歉，无法访问此页面\n你点击的链接可能已损坏，或页面已被移除。返回 instagram。\nmeta\n关于\n博客\n工作\n帮助\napi\n隐私设置\n条款\n地点\n热门\ninstagram lite\nmeta ai\nthreads\n联系人上传和非用户\nmeta verified\n中文(简体)\nafrikaans\nالعربية\nčeština\ndansk\ndeutsch\nελληνικά\nenglish\nenglish (uk)\nespañol (españa)\nespañol\nفارسی\nsuomi\nfrançais\nעברית\nbahasa indonesia\nitaliano\n日本語\n한국어\nbahasa melayu\nnorsk\nnederlands\npolski\nportuguês (brasil)\nportuguês (portugal)\nрусский\nsvenska\nภาษาไทย\nfilipino\ntürkçe\n中文(简体)\n中文(台灣)\nবাংলা\nગુજરાતી\nहिन्दी\nhrvatski\nmagyar\nಕನ್ನಡ\nമലയാളം\nमराठी\nनेपाली\nਪੰਜਾਬੀ\nසිංහල\nslovenčina\nதமிழ்\nతెలుగు\nاردو\ntiếng việt\n中文(香港)\nбългарски\nfrançais (canada)\nromână\nсрпски\nукра;contact_path_strategy_v2"
+        },
+        {
+          "status": "failed_open",
+          "timestamp": "2026-07-29T12:46:56.048Z",
+          "channel": "website_form",
+          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;instagram_unavailable_profile_page: 很抱歉，无法访问此页面\n你点击的链接可能已损坏，或页面已被移除。返回 instagram。\nmeta\n关于\n博客\n工作\n帮助\napi\n隐私设置\n条款\n地点\n热门\ninstagram lite\nmeta ai\nthreads\n联系人上传和非用户\nmeta verified\n中文(简体)\nafrikaans\nالعربية\nčeština\ndansk\ndeutsch\nελληνικά\nenglish\nenglish (uk)\nespañol (españa)\nespañol\nفارسی\nsuomi\nfrançais\nעברית\nbahasa indonesia\nitaliano\n日本語\n한국어\nbahasa melayu\nnorsk\nnederlands\npolski\nportuguês (brasil)\nportuguês (portugal)\nрусский\nsvenska\nภาษาไทย\nfilipino\ntürkçe\n中文(简体)\n中文(台灣)\nবাংলা\nગુજરાતી\nहिन्दी\nhrvatski\nmagyar\nಕನ್ನಡ\nമലയാളം\nमराठी\nनेपाली\nਪੰਜਾਬੀ\nසිංහල\nslovenčina\nதமிழ்\nతెలుగు\nاردو\ntiếng việt\n中文(香港)\nбългарски\nfrançais (canada)\nromână\nсрпски\nукра;contact_path_strategy_v2"
+        },
+        {
+          "status": "website_contact_unreachable_skip",
+          "timestamp": "2026-07-29T12:47:58.841Z",
+          "channel": "facebook",
+          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:6;contact_path_strategy_v2"
+        },
+        {
+          "status": "website_contact_unreachable_skip",
+          "timestamp": "2026-07-29T12:53:10.611Z",
+          "channel": "facebook",
+          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:6;contact_path_strategy_v2"
+        },
+        {
+          "status": "failed_open",
+          "timestamp": "2026-07-29T16:09:07.337Z",
+          "channel": "instagram",
+          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;instagram_unavailable_profile_page: 很抱歉，无法访问此页面\n你点击的链接可能已损坏，或页面已被移除。返回 instagram。\nmeta\n关于\n博客\n工作\n帮助\napi\n隐私设置\n条款\n地点\n热门\ninstagram lite\nmeta ai\nthreads\n联系人上传和非用户\nmeta verified\n中文(简体)\nafrikaans\nالعربية\nčeština\ndansk\ndeutsch\nελληνικά\nenglish\nenglish (uk)\nespañol (españa)\nespañol\nفارسی\nsuomi\nfrançais\nעברית\nbahasa indonesia\nitaliano\n日本語\n한국어\nbahasa melayu\nnorsk\nnederlands\npolski\nportuguês (brasil)\nportuguês (portugal)\nрусский\nsvenska\nภาษาไทย\nfilipino\ntürkçe\n中文(简体)\n中文(台灣)\nবাংলা\nગુજરાતી\nहिन्दी\nhrvatski\nmagyar\nಕನ್ನಡ\nമലയാളം\nमराठी\nनेपाली\nਪੰਜਾਬੀ\nසිංහල\nslovenčina\nதமிழ்\nతెలుగు\nاردو\ntiếng việt\n中文(香港)\nбългарски\nfrançais (canada)\nromână\nсрпски\nукра;contact_path_strategy_v2"
+        },
+        {
+          "status": "failed_open",
+          "timestamp": "2026-07-29T17:02:28.120Z",
+          "channel": "website_form",
+          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;instagram_unavailable_profile_page: 很抱歉，无法访问此页面\n你点击的链接可能已损坏，或页面已被移除。返回 instagram。\nmeta\n关于\n博客\n工作\n帮助\napi\n隐私设置\n条款\n地点\n热门\ninstagram lite\nmeta ai\nthreads\n联系人上传和非用户\nmeta verified\n中文(简体)\nafrikaans\nالعربية\nčeština\ndansk\ndeutsch\nελληνικά\nenglish\nenglish (uk)\nespañol (españa)\nespañol\nفارسی\nsuomi\nfrançais\nעברית\nbahasa indonesia\nitaliano\n日本語\n한국어\nbahasa melayu\nnorsk\nnederlands\npolski\nportuguês (brasil)\nportuguês (portugal)\nрусский\nsvenska\nภาษาไทย\nfilipino\ntürkçe\n中文(简体)\n中文(台灣)\nবাংলা\nગુજરાતી\nहिन्दी\nhrvatski\nmagyar\nಕನ್ನಡ\nമലയാളം\nमराठी\nनेपाली\nਪੰਜਾਬੀ\nසිංහල\nslovenčina\nதமிழ்\nతెలుగు\nاردو\ntiếng việt\n中文(香港)\nбългарски\nfrançais (canada)\nromână\nсрпски\nукра;contact_path_strategy_v2"
+        },
+        {
+          "status": "website_contact_unreachable_skip",
+          "timestamp": "2026-07-29T17:03:24.287Z",
+          "channel": "facebook",
+          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:6;contact_path_strategy_v2"
+        },
+        {
+          "status": "website_contact_unreachable_skip",
+          "timestamp": "2026-07-30T01:16:48.704Z",
+          "channel": "facebook",
+          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:6;contact_path_strategy_v2"
+        },
+        {
+          "status": "failed_open",
+          "timestamp": "2026-07-30T16:08:00.699Z",
+          "channel": "instagram",
+          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;instagram_unavailable_profile_page: 很抱歉，无法访问此页面\n你点击的链接可能已损坏，或页面已被移除。返回 instagram。\nmeta\n关于\n博客\n工作\n帮助\napi\n隐私设置\n条款\n地点\n热门\ninstagram lite\nmeta ai\nthreads\n联系人上传和非用户\nmeta verified\n中文(简体)\nafrikaans\nالعربية\nčeština\ndansk\ndeutsch\nελληνικά\nenglish\nenglish (uk)\nespañol (españa)\nespañol\nفارسی\nsuomi\nfrançais\nעברית\nbahasa indonesia\nitaliano\n日本語\n한국어\nbahasa melayu\nnorsk\nnederlands\npolski\nportuguês (brasil)\nportuguês (portugal)\nрусский\nsvenska\nภาษาไทย\nfilipino\ntürkçe\n中文(简体)\n中文(台灣)\nবাংলা\nગુજરાતી\nहिन्दी\nhrvatski\nmagyar\nಕನ್ನಡ\nമലയാളം\nमराठी\nनेपाली\nਪੰਜਾਬੀ\nසිංහල\nslovenčina\nதமிழ்\nతెలుగు\nاردو\ntiếng việt\n中文(香港)\nбългарски\nfrançais (canada)\nromână\nсрпски\nукра;contact_path_strategy_v2"
+        },
+        {
+          "status": "failed_open",
+          "timestamp": "2026-07-30T18:01:08.217Z",
+          "channel": "website_form",
+          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;instagram_unavailable_profile_page: 很抱歉，无法访问此页面\n你点击的链接可能已损坏，或页面已被移除。返回 instagram。\nmeta\n关于\n博客\n工作\n帮助\napi\n隐私设置\n条款\n地点\n热门\ninstagram lite\nmeta ai\nthreads\n联系人上传和非用户\nmeta verified\n中文(简体)\nafrikaans\nالعربية\nčeština\ndansk\ndeutsch\nελληνικά\nenglish\nenglish (uk)\nespañol (españa)\nespañol\nفارسی\nsuomi\nfrançais\nעברית\nbahasa indonesia\nitaliano\n日本語\n한국어\nbahasa melayu\nnorsk\nnederlands\npolski\nportuguês (brasil)\nportuguês (portugal)\nрусский\nsvenska\nภาษาไทย\nfilipino\ntürkçe\n中文(简体)\n中文(台灣)\nবাংলা\nગુજરાતી\nहिन्दी\nhrvatski\nmagyar\nಕನ್ನಡ\nമലയാളം\nमराठी\nनेपाली\nਪੰਜਾਬੀ\nසිංහල\nslovenčina\nதமிழ்\nతెలుగు\nاردو\ntiếng việt\n中文(香港)\nбългарски\nfrançais (canada)\nromână\nсрпски\nукра;contact_path_strategy_v2"
+        },
+        {
+          "status": "website_contact_unreachable_skip",
+          "timestamp": "2026-07-30T18:02:06.086Z",
+          "channel": "facebook",
+          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:6;contact_path_strategy_v2"
+        },
+        {
+          "status": "website_contact_unreachable_skip",
+          "timestamp": "2026-07-30T19:05:35.691Z",
+          "channel": "facebook",
+          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:6;contact_path_strategy_v2"
+        },
+        {
+          "status": "failed_open",
+          "timestamp": "2026-07-31T16:10:23.615Z",
+          "channel": "facebook",
+          "evidence": "instagram_unavailable_profile_page: 很抱歉，无法访问此页面\n你点击的链接可能已损坏，或页面已被移除。返回 instagram。\nmeta\n关于\n博客\n工作\n帮助\napi\n隐私设置\n条款\n地点\n热门\ninstagram lite\nmeta ai\nthreads\n联系人上传和非用户\nmeta verified\n中文(简体)\nafrikaans\nالعربية\nčeština\ndansk\ndeutsch\nελληνικά\nenglish\nenglish (uk)\nespañol (españa)\nespañol\nفارسی\nsuomi\nfrançais\nעברית\nbahasa indonesia\nitaliano\n日本語\n한국어\nbahasa melayu\nnorsk\nnederlands\npolski\nportuguês (brasil)\nportuguês (portugal)\nрусский\nsvenska\nภาษาไทย\nfilipino\ntürkçe\n中文(简体)\n中文(台灣)\nবাংলা\nગુજરાતી\nहिन्दी\nhrvatski\nmagyar\nಕನ್ನಡ\nമലയാളം\nमराठी\nनेपाली\nਪੰਜਾਬੀ\nසිංහල\nslovenčina\nதமிழ்\nతెలుగు\nاردو\ntiếng việt\n中文(香港)\nбългарски\nfrançais (canada)\nromână\nсрпски\nукра"
+        },
+        {
+          "status": "failed_open",
+          "timestamp": "2026-07-31T19:05:48.170Z",
+          "channel": "facebook",
+          "evidence": "instagram_unavailable_profile_page: 很抱歉，无法访问此页面\n你点击的链接可能已损坏，或页面已被移除。返回 instagram。\nmeta\n关于\n博客\n工作\n帮助\napi\n隐私设置\n条款\n地点\n热门\ninstagram lite\nmeta ai\nthreads\n联系人上传和非用户\nmeta verified\n中文(简体)\nafrikaans\nالعربية\nčeština\ndansk\ndeutsch\nελληνικά\nenglish\nenglish (uk)\nespañol (españa)\nespañol\nفارسی\nsuomi\nfrançais\nעברית\nbahasa indonesia\nitaliano\n日本語\n한국어\nbahasa melayu\nnorsk\nnederlands\npolski\nportuguês (brasil)\nportuguês (portugal)\nрусский\nsvenska\nภาษาไทย\nfilipino\ntürkçe\n中文(简体)\n中文(台灣)\nবাংলা\nગુજરાતી\nहिन्दी\nhrvatski\nmagyar\nಕನ್ನಡ\nമലയാളം\nमराठी\nनेपाली\nਪੰਜਾਬੀ\nසිංහල\nslovenčina\nதமிழ்\nతెలుగు\nاردو\ntiếng việt\n中文(香港)\nбългарски\nfrançais (canada)\nromână\nсрпски\nукра"
+        },
+        {
+          "status": "failed_open",
+          "timestamp": "2026-08-04T12:05:17.109Z",
+          "channel": "website_form",
+          "evidence": "customer_execution_timeout:30000;queue_continued_to_next_customer"
+        },
+        {
+          "status": "failed_open",
+          "timestamp": "2026-08-04T12:43:03.029Z",
+          "channel": "facebook",
+          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;facebook_profile_no_message_button;contact_path_strategy_v2"
+        },
+        {
+          "status": "failed_open",
+          "timestamp": "2026-08-04T13:01:14.268Z",
+          "channel": "website_form",
+          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;facebook_profile_no_message_button;contact_path_strategy_v2"
+        },
+        {
+          "status": "failed_open",
+          "timestamp": "2026-08-05T02:00:20.830Z",
+          "channel": "facebook",
+          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;identity_mismatch_expected_LD Mountain Centre_title_www.facebook.com;contact_path_strategy_v2"
+        },
+        {
+          "status": "failed_open",
+          "timestamp": "2026-08-05T03:01:21.657Z",
+          "channel": "website_form",
+          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;identity_mismatch_expected_LD Mountain Centre_title_www.facebook.com;contact_path_strategy_v2"
         }
       ]
     },
@@ -7627,7 +7787,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
           "reasons": [
             "official_business_route"
           ],
-          "evidenceUrl": "https://vigosgroup.com/contact",
+          "evidenceUrl": "https://vigosgroup.com/",
           "checkedAt": ""
         },
         {
@@ -9074,96 +9234,6 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
           "timestamp": "2026-08-12T13:39:33.063Z",
           "channel": "email",
           "evidence": "smtp_accepted;message_id:<640cd374-72b0-8b94-bab4-7a1b66dbcc39@flextailgear.com>;sent_folder_message_confirmed;contact_path_strategy_v2"
-        }
-      ]
-    },
-    {
-      "companyId": "company_d43133da7d17b52b",
-      "company": "Outdoor Nature",
-      "keys": [
-        "outdoornature",
-        "outdoornaturecomau"
-      ],
-      "domains": [
-        "outdoornature.com.au"
-      ],
-      "channels": [
-        "website_form"
-      ],
-      "evidence": [
-        {
-          "channel": "website_form",
-          "score": 100,
-          "verified": true,
-          "reasons": [
-            "official_business_route"
-          ],
-          "evidenceUrl": "https://www.outdoornature.com.au/become-a-supplier/",
-          "checkedAt": ""
-        },
-        {
-          "channel": "research",
-          "score": 100,
-          "verified": true,
-          "reasons": [
-            "official_business_route"
-          ],
-          "evidenceUrl": "https://www.outdoornature.com.au/become-a-supplier/",
-          "checkedAt": ""
-        },
-        {
-          "channel": "website_form",
-          "score": 0,
-          "verified": false,
-          "reasons": [
-            "unverified_external_evidence_rejected"
-          ],
-          "evidenceUrl": "https://www.outdoornature.com.au/become-a-supplier/",
-          "checkedAt": ""
-        }
-      ],
-      "history": [
-        {
-          "status": "website_contact_unreachable_skip",
-          "timestamp": "2026-07-29T13:14:06.635Z",
-          "channel": "website_form",
-          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:7;contact_path_strategy_v2"
-        },
-        {
-          "status": "website_contact_unreachable_skip",
-          "timestamp": "2026-07-29T14:02:57.783Z",
-          "channel": "website_form",
-          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:7;contact_path_strategy_v2"
-        },
-        {
-          "status": "website_contact_unreachable_skip",
-          "timestamp": "2026-07-29T16:06:54.001Z",
-          "channel": "website_form",
-          "evidence": "website_contact_entry_not_verified;contact_entry_clicked:Contact Us;website_contact_all_targets_failed:7;contact_path_strategy_v2"
-        },
-        {
-          "status": "website_contact_unreachable_skip",
-          "timestamp": "2026-07-29T17:02:27.424Z",
-          "channel": "website_form",
-          "evidence": "website_contact_entry_not_verified;contact_entry_clicked:Contact Us;website_contact_all_targets_failed:7;contact_path_strategy_v2"
-        },
-        {
-          "status": "website_contact_unreachable_skip",
-          "timestamp": "2026-07-30T16:06:40.575Z",
-          "channel": "website_form",
-          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:7;contact_path_strategy_v2"
-        },
-        {
-          "status": "website_contact_unreachable_skip",
-          "timestamp": "2026-07-30T18:01:08.035Z",
-          "channel": "website_form",
-          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:7;contact_path_strategy_v2"
-        },
-        {
-          "status": "failed_open",
-          "timestamp": "2026-08-10T09:06:30.000Z",
-          "channel": "website_form",
-          "evidence": "official_supplier_form_verified_and_product_fit_passed;recaptcha_present;no_submit_clicked;captcha_platform_blocker_skipped_safely"
         }
       ]
     },
@@ -13984,6 +14054,58 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
       ]
     },
     {
+      "companyId": "company_b2563fd0c1c5db2a",
+      "company": "OutdoorXL",
+      "keys": [
+        "outdoorxl",
+        "outdoorxlnl"
+      ],
+      "domains": [
+        "outdoorxl.nl"
+      ],
+      "channels": [
+        "website_form"
+      ],
+      "evidence": [
+        {
+          "channel": "website_form",
+          "score": 80,
+          "verified": false,
+          "reasons": [
+            "first_party_evidence"
+          ],
+          "evidenceUrl": "https://www.outdoorxl.nl/",
+          "checkedAt": ""
+        }
+      ],
+      "history": [
+        {
+          "status": "website_contact_unreachable_skip",
+          "timestamp": "2026-07-14T03:10:13.014Z",
+          "channel": "website_form",
+          "evidence": "website_contact_cdp_unavailable_open_only_not_verified;website_contact_all_targets_failed:1"
+        },
+        {
+          "status": "website_contact_unreachable_skip",
+          "timestamp": "2026-07-21T03:04:01.812Z",
+          "channel": "website_form",
+          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:6;contact_path_strategy_v2"
+        },
+        {
+          "status": "website_contact_unreachable_skip",
+          "timestamp": "2026-07-27T10:17:04.476Z",
+          "channel": "website_form",
+          "evidence": "website_contact_entry_not_verified;no_contact_route_detected;website_contact_all_targets_failed:6;contact_path_strategy_v2"
+        },
+        {
+          "status": "website_contact_unreachable_skip",
+          "timestamp": "2026-07-29T02:49:59.813Z",
+          "channel": "website_form",
+          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:6;contact_path_strategy_v2"
+        }
+      ]
+    },
+    {
       "companyId": "company_fde54b76a9d4837b",
       "company": "Spejder Sport",
       "keys": [
@@ -18401,188 +18523,6 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
       ]
     },
     {
-      "companyId": "company_e4a228cde5d155b2",
-      "company": "LD Mountain Centre",
-      "keys": [
-        "ldmountaincentre",
-        "ldmountaincentrecom"
-      ],
-      "domains": [
-        "ldmountaincentre.com"
-      ],
-      "channels": [
-        "instagram",
-        "facebook",
-        "website_form"
-      ],
-      "evidence": [
-        {
-          "channel": "instagram",
-          "score": 0,
-          "verified": false,
-          "reasons": [
-            "unverified_external_evidence_rejected"
-          ],
-          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
-          "checkedAt": ""
-        },
-        {
-          "channel": "facebook",
-          "score": 0,
-          "verified": false,
-          "reasons": [
-            "unverified_external_evidence_rejected"
-          ],
-          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
-          "checkedAt": ""
-        },
-        {
-          "channel": "website_form",
-          "score": 0,
-          "verified": false,
-          "reasons": [
-            "unverified_external_evidence_rejected"
-          ],
-          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
-          "checkedAt": ""
-        }
-      ],
-      "history": [
-        {
-          "status": "send_unconfirmed",
-          "timestamp": "2026-07-16T11:34:13.520Z",
-          "channel": "facebook",
-          "evidence": "facebook_draft_not_inserted_after_composer_refocus;editable_count:2;composer_text_length:1;active:BODY"
-        },
-        {
-          "status": "failed_open",
-          "timestamp": "2026-07-16T12:55:51.979Z",
-          "channel": "facebook",
-          "evidence": "facebook_message_button_clicked_composer_not_found"
-        },
-        {
-          "status": "account_followed",
-          "timestamp": "2026-07-16T13:05:45.510Z",
-          "channel": "facebook",
-          "evidence": "facebook_engagement_completed_message_unavailable;facebook_profile_no_message_button;follow_already_active;facebook_post_like_not_available"
-        },
-        {
-          "status": "failed_open",
-          "timestamp": "2026-07-29T11:17:27.731Z",
-          "channel": "instagram",
-          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;instagram_unavailable_profile_page: 很抱歉，无法访问此页面\n你点击的链接可能已损坏，或页面已被移除。返回 instagram。\nmeta\n关于\n博客\n工作\n帮助\napi\n隐私设置\n条款\n地点\n热门\ninstagram lite\nmeta ai\nthreads\n联系人上传和非用户\nmeta verified\n中文(简体)\nafrikaans\nالعربية\nčeština\ndansk\ndeutsch\nελληνικά\nenglish\nenglish (uk)\nespañol (españa)\nespañol\nفارسی\nsuomi\nfrançais\nעברית\nbahasa indonesia\nitaliano\n日本語\n한국어\nbahasa melayu\nnorsk\nnederlands\npolski\nportuguês (brasil)\nportuguês (portugal)\nрусский\nsvenska\nภาษาไทย\nfilipino\ntürkçe\n中文(简体)\n中文(台灣)\nবাংলা\nગુજરાતી\nहिन्दी\nhrvatski\nmagyar\nಕನ್ನಡ\nമലയാളം\nमराठी\nनेपाली\nਪੰਜਾਬੀ\nසිංහල\nslovenčina\nதமிழ்\nతెలుగు\nاردو\ntiếng việt\n中文(香港)\nбългарски\nfrançais (canada)\nromână\nсрпски\nукра;contact_path_strategy_v2"
-        },
-        {
-          "status": "failed_open",
-          "timestamp": "2026-07-29T12:46:56.048Z",
-          "channel": "website_form",
-          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;instagram_unavailable_profile_page: 很抱歉，无法访问此页面\n你点击的链接可能已损坏，或页面已被移除。返回 instagram。\nmeta\n关于\n博客\n工作\n帮助\napi\n隐私设置\n条款\n地点\n热门\ninstagram lite\nmeta ai\nthreads\n联系人上传和非用户\nmeta verified\n中文(简体)\nafrikaans\nالعربية\nčeština\ndansk\ndeutsch\nελληνικά\nenglish\nenglish (uk)\nespañol (españa)\nespañol\nفارسی\nsuomi\nfrançais\nעברית\nbahasa indonesia\nitaliano\n日本語\n한국어\nbahasa melayu\nnorsk\nnederlands\npolski\nportuguês (brasil)\nportuguês (portugal)\nрусский\nsvenska\nภาษาไทย\nfilipino\ntürkçe\n中文(简体)\n中文(台灣)\nবাংলা\nગુજરાતી\nहिन्दी\nhrvatski\nmagyar\nಕನ್ನಡ\nമലയാളം\nमराठी\nनेपाली\nਪੰਜਾਬੀ\nසිංහල\nslovenčina\nதமிழ்\nతెలుగు\nاردو\ntiếng việt\n中文(香港)\nбългарски\nfrançais (canada)\nromână\nсрпски\nукра;contact_path_strategy_v2"
-        },
-        {
-          "status": "website_contact_unreachable_skip",
-          "timestamp": "2026-07-29T12:47:58.841Z",
-          "channel": "facebook",
-          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:6;contact_path_strategy_v2"
-        },
-        {
-          "status": "website_contact_unreachable_skip",
-          "timestamp": "2026-07-29T12:53:10.611Z",
-          "channel": "facebook",
-          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:6;contact_path_strategy_v2"
-        },
-        {
-          "status": "failed_open",
-          "timestamp": "2026-07-29T16:09:07.337Z",
-          "channel": "instagram",
-          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;instagram_unavailable_profile_page: 很抱歉，无法访问此页面\n你点击的链接可能已损坏，或页面已被移除。返回 instagram。\nmeta\n关于\n博客\n工作\n帮助\napi\n隐私设置\n条款\n地点\n热门\ninstagram lite\nmeta ai\nthreads\n联系人上传和非用户\nmeta verified\n中文(简体)\nafrikaans\nالعربية\nčeština\ndansk\ndeutsch\nελληνικά\nenglish\nenglish (uk)\nespañol (españa)\nespañol\nفارسی\nsuomi\nfrançais\nעברית\nbahasa indonesia\nitaliano\n日本語\n한국어\nbahasa melayu\nnorsk\nnederlands\npolski\nportuguês (brasil)\nportuguês (portugal)\nрусский\nsvenska\nภาษาไทย\nfilipino\ntürkçe\n中文(简体)\n中文(台灣)\nবাংলা\nગુજરાતી\nहिन्दी\nhrvatski\nmagyar\nಕನ್ನಡ\nമലയാളം\nमराठी\nनेपाली\nਪੰਜਾਬੀ\nසිංහල\nslovenčina\nதமிழ்\nతెలుగు\nاردو\ntiếng việt\n中文(香港)\nбългарски\nfrançais (canada)\nromână\nсрпски\nукра;contact_path_strategy_v2"
-        },
-        {
-          "status": "failed_open",
-          "timestamp": "2026-07-29T17:02:28.120Z",
-          "channel": "website_form",
-          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;instagram_unavailable_profile_page: 很抱歉，无法访问此页面\n你点击的链接可能已损坏，或页面已被移除。返回 instagram。\nmeta\n关于\n博客\n工作\n帮助\napi\n隐私设置\n条款\n地点\n热门\ninstagram lite\nmeta ai\nthreads\n联系人上传和非用户\nmeta verified\n中文(简体)\nafrikaans\nالعربية\nčeština\ndansk\ndeutsch\nελληνικά\nenglish\nenglish (uk)\nespañol (españa)\nespañol\nفارسی\nsuomi\nfrançais\nעברית\nbahasa indonesia\nitaliano\n日本語\n한국어\nbahasa melayu\nnorsk\nnederlands\npolski\nportuguês (brasil)\nportuguês (portugal)\nрусский\nsvenska\nภาษาไทย\nfilipino\ntürkçe\n中文(简体)\n中文(台灣)\nবাংলা\nગુજરાતી\nहिन्दी\nhrvatski\nmagyar\nಕನ್ನಡ\nമലയാളം\nमराठी\nनेपाली\nਪੰਜਾਬੀ\nසිංහල\nslovenčina\nதமிழ்\nతెలుగు\nاردو\ntiếng việt\n中文(香港)\nбългарски\nfrançais (canada)\nromână\nсрпски\nукра;contact_path_strategy_v2"
-        },
-        {
-          "status": "website_contact_unreachable_skip",
-          "timestamp": "2026-07-29T17:03:24.287Z",
-          "channel": "facebook",
-          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:6;contact_path_strategy_v2"
-        },
-        {
-          "status": "website_contact_unreachable_skip",
-          "timestamp": "2026-07-30T01:16:48.704Z",
-          "channel": "facebook",
-          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:6;contact_path_strategy_v2"
-        },
-        {
-          "status": "failed_open",
-          "timestamp": "2026-07-30T16:08:00.699Z",
-          "channel": "instagram",
-          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;instagram_unavailable_profile_page: 很抱歉，无法访问此页面\n你点击的链接可能已损坏，或页面已被移除。返回 instagram。\nmeta\n关于\n博客\n工作\n帮助\napi\n隐私设置\n条款\n地点\n热门\ninstagram lite\nmeta ai\nthreads\n联系人上传和非用户\nmeta verified\n中文(简体)\nafrikaans\nالعربية\nčeština\ndansk\ndeutsch\nελληνικά\nenglish\nenglish (uk)\nespañol (españa)\nespañol\nفارسی\nsuomi\nfrançais\nעברית\nbahasa indonesia\nitaliano\n日本語\n한국어\nbahasa melayu\nnorsk\nnederlands\npolski\nportuguês (brasil)\nportuguês (portugal)\nрусский\nsvenska\nภาษาไทย\nfilipino\ntürkçe\n中文(简体)\n中文(台灣)\nবাংলা\nગુજરાતી\nहिन्दी\nhrvatski\nmagyar\nಕನ್ನಡ\nമലയാളം\nमराठी\nनेपाली\nਪੰਜਾਬੀ\nසිංහල\nslovenčina\nதமிழ்\nతెలుగు\nاردو\ntiếng việt\n中文(香港)\nбългарски\nfrançais (canada)\nromână\nсрпски\nукра;contact_path_strategy_v2"
-        },
-        {
-          "status": "failed_open",
-          "timestamp": "2026-07-30T18:01:08.217Z",
-          "channel": "website_form",
-          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;instagram_unavailable_profile_page: 很抱歉，无法访问此页面\n你点击的链接可能已损坏，或页面已被移除。返回 instagram。\nmeta\n关于\n博客\n工作\n帮助\napi\n隐私设置\n条款\n地点\n热门\ninstagram lite\nmeta ai\nthreads\n联系人上传和非用户\nmeta verified\n中文(简体)\nafrikaans\nالعربية\nčeština\ndansk\ndeutsch\nελληνικά\nenglish\nenglish (uk)\nespañol (españa)\nespañol\nفارسی\nsuomi\nfrançais\nעברית\nbahasa indonesia\nitaliano\n日本語\n한국어\nbahasa melayu\nnorsk\nnederlands\npolski\nportuguês (brasil)\nportuguês (portugal)\nрусский\nsvenska\nภาษาไทย\nfilipino\ntürkçe\n中文(简体)\n中文(台灣)\nবাংলা\nગુજરાતી\nहिन्दी\nhrvatski\nmagyar\nಕನ್ನಡ\nമലയാളം\nमराठी\nनेपाली\nਪੰਜਾਬੀ\nසිංහල\nslovenčina\nதமிழ்\nతెలుగు\nاردو\ntiếng việt\n中文(香港)\nбългарски\nfrançais (canada)\nromână\nсрпски\nукра;contact_path_strategy_v2"
-        },
-        {
-          "status": "website_contact_unreachable_skip",
-          "timestamp": "2026-07-30T18:02:06.086Z",
-          "channel": "facebook",
-          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:6;contact_path_strategy_v2"
-        },
-        {
-          "status": "website_contact_unreachable_skip",
-          "timestamp": "2026-07-30T19:05:35.691Z",
-          "channel": "facebook",
-          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:6;contact_path_strategy_v2"
-        },
-        {
-          "status": "failed_open",
-          "timestamp": "2026-07-31T16:10:23.615Z",
-          "channel": "facebook",
-          "evidence": "instagram_unavailable_profile_page: 很抱歉，无法访问此页面\n你点击的链接可能已损坏，或页面已被移除。返回 instagram。\nmeta\n关于\n博客\n工作\n帮助\napi\n隐私设置\n条款\n地点\n热门\ninstagram lite\nmeta ai\nthreads\n联系人上传和非用户\nmeta verified\n中文(简体)\nafrikaans\nالعربية\nčeština\ndansk\ndeutsch\nελληνικά\nenglish\nenglish (uk)\nespañol (españa)\nespañol\nفارسی\nsuomi\nfrançais\nעברית\nbahasa indonesia\nitaliano\n日本語\n한국어\nbahasa melayu\nnorsk\nnederlands\npolski\nportuguês (brasil)\nportuguês (portugal)\nрусский\nsvenska\nภาษาไทย\nfilipino\ntürkçe\n中文(简体)\n中文(台灣)\nবাংলা\nગુજરાતી\nहिन्दी\nhrvatski\nmagyar\nಕನ್ನಡ\nമലയാളം\nमराठी\nनेपाली\nਪੰਜਾਬੀ\nසිංහල\nslovenčina\nதமிழ்\nతెలుగు\nاردو\ntiếng việt\n中文(香港)\nбългарски\nfrançais (canada)\nromână\nсрпски\nукра"
-        },
-        {
-          "status": "failed_open",
-          "timestamp": "2026-07-31T19:05:48.170Z",
-          "channel": "facebook",
-          "evidence": "instagram_unavailable_profile_page: 很抱歉，无法访问此页面\n你点击的链接可能已损坏，或页面已被移除。返回 instagram。\nmeta\n关于\n博客\n工作\n帮助\napi\n隐私设置\n条款\n地点\n热门\ninstagram lite\nmeta ai\nthreads\n联系人上传和非用户\nmeta verified\n中文(简体)\nafrikaans\nالعربية\nčeština\ndansk\ndeutsch\nελληνικά\nenglish\nenglish (uk)\nespañol (españa)\nespañol\nفارسی\nsuomi\nfrançais\nעברית\nbahasa indonesia\nitaliano\n日本語\n한국어\nbahasa melayu\nnorsk\nnederlands\npolski\nportuguês (brasil)\nportuguês (portugal)\nрусский\nsvenska\nภาษาไทย\nfilipino\ntürkçe\n中文(简体)\n中文(台灣)\nবাংলা\nગુજરાતી\nहिन्दी\nhrvatski\nmagyar\nಕನ್ನಡ\nമലയാളം\nमराठी\nनेपाली\nਪੰਜਾਬੀ\nසිංහල\nslovenčina\nதமிழ்\nతెలుగు\nاردو\ntiếng việt\n中文(香港)\nбългарски\nfrançais (canada)\nromână\nсрпски\nукра"
-        },
-        {
-          "status": "failed_open",
-          "timestamp": "2026-08-04T12:05:17.109Z",
-          "channel": "website_form",
-          "evidence": "customer_execution_timeout:30000;queue_continued_to_next_customer"
-        },
-        {
-          "status": "failed_open",
-          "timestamp": "2026-08-04T12:43:03.029Z",
-          "channel": "facebook",
-          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;facebook_profile_no_message_button;contact_path_strategy_v2"
-        },
-        {
-          "status": "failed_open",
-          "timestamp": "2026-08-04T13:01:14.268Z",
-          "channel": "website_form",
-          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;facebook_profile_no_message_button;contact_path_strategy_v2"
-        },
-        {
-          "status": "failed_open",
-          "timestamp": "2026-08-05T02:00:20.830Z",
-          "channel": "facebook",
-          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;identity_mismatch_expected_LD Mountain Centre_title_www.facebook.com;contact_path_strategy_v2"
-        },
-        {
-          "status": "failed_open",
-          "timestamp": "2026-08-05T03:01:21.657Z",
-          "channel": "website_form",
-          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;identity_mismatch_expected_LD Mountain Centre_title_www.facebook.com;contact_path_strategy_v2"
-        }
-      ]
-    },
-    {
       "companyId": "company_a8bce7265a8c62e7",
       "company": "Absolute-Snow",
       "keys": [
@@ -21387,6 +21327,66 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
           "timestamp": "2026-08-13T02:14:51.937Z",
           "channel": "email",
           "evidence": "smtp_accepted;message_id:<185da33b-889f-06d4-bd5d-9d248ee69af7@flextailgear.com>;sent_folder_message_confirmed;contact_path_strategy_v2"
+        }
+      ]
+    },
+    {
+      "companyId": "company_7d845b370d382cca",
+      "company": "Outdoor Specialist",
+      "keys": [
+        "outdoorspecialist",
+        "outdoorspecialistnl"
+      ],
+      "domains": [
+        "outdoorspecialist.nl"
+      ],
+      "channels": [
+        "website_form",
+        "instagram",
+        "facebook"
+      ],
+      "evidence": [
+        {
+          "channel": "website_form",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
+          "checkedAt": ""
+        }
+      ],
+      "history": [
+        {
+          "status": "failed_open",
+          "timestamp": "2026-07-17T09:14:46.291Z",
+          "channel": "instagram",
+          "evidence": "instagram_unavailable_profile_page: 很抱歉，无法访问此页面\n你点击的链接可能已损坏，或页面已被移除。返回 instagram。\nmeta\n关于\n博客\n工作\n帮助\napi\n隐私设置\n条款\n地点\n热门\ninstagram lite\nmeta ai\nthreads\n联系人上传和非用户\nmeta verified\n中文(简体)\nafrikaans\nالعربية\nčeština\ndansk\ndeutsch\nελληνικά\nenglish\nenglish (uk)\nespañol (españa)\nespañol\nفارسی\nsuomi\nfrançais\nעברית\nbahasa indonesia\nitaliano\n日本語\n한국어\nbahasa melayu\nnorsk\nnederlands\npolski\nportuguês (brasil)\nportuguês (portugal)\nрусский\nsvenska\nภาษาไทย\nfilipino\ntürkçe\n中文(简体)\n中文(台灣)\nবাংলা\nગુજરાતી\nहिन्दी\nhrvatski\nmagyar\nಕನ್ನಡ\nമലയാളം\nमराठी\nनेपाली\nਪੰਜਾਬੀ\nසිංහල\nslovenčina\nதமிழ்\nతెలుగు\nاردو\ntiếng việt\n中文(香港)\nбългарски\nfrançais (canada)\nromână\nсрпски\nукра"
+        },
+        {
+          "status": "failed_open",
+          "timestamp": "2026-07-29T10:33:33.664Z",
+          "channel": "facebook",
+          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;personal_profile_without_company_match_expected_Outdoor Specialist_title_Facebook;contact_path_strategy_v2"
+        },
+        {
+          "status": "failed_open",
+          "timestamp": "2026-07-29T10:35:25.068Z",
+          "channel": "website_form",
+          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;personal_profile_without_company_match_expected_Outdoor Specialist_title_Facebook;contact_path_strategy_v2"
+        },
+        {
+          "status": "failed_open",
+          "timestamp": "2026-07-30T08:36:59.156Z",
+          "channel": "facebook",
+          "evidence": "personal_profile_without_company_match_expected_Outdoor Specialist_title_Facebook"
+        },
+        {
+          "status": "failed_open",
+          "timestamp": "2026-07-30T09:03:50.137Z",
+          "channel": "facebook",
+          "evidence": "personal_profile_without_company_match_expected_Outdoor Specialist_title_(1) Facebook"
         }
       ]
     },
@@ -26380,6 +26380,16 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
       "evidence": "prior_send_unconfirmed_no_resend;sent_folder_record_missing;contact_path_strategy_v2"
     },
     {
+      "companyId": "company_68ba78830347b19c",
+      "company": "Wildfire Sports",
+      "permanent": true,
+      "crossChannel": true,
+      "reason": "previous_customer_development_no_repeat",
+      "sourceStatus": "send_unconfirmed",
+      "sourceTimestamp": "2026-07-29T02:51:37.195Z",
+      "evidence": "prior_send_unconfirmed_no_resend;sent_folder_record_missing;contact_path_strategy_v2"
+    },
+    {
       "companyId": "company_3730ead171dee679",
       "company": "BBQ Fans",
       "permanent": true,
@@ -26408,16 +26418,6 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
       "sourceStatus": "send_unconfirmed",
       "sourceTimestamp": "2026-08-04T07:01:10.014Z",
       "evidence": "official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_missing;contact_path_strategy_v2"
-    },
-    {
-      "companyId": "company_68ba78830347b19c",
-      "company": "Wildfire Sports",
-      "permanent": true,
-      "crossChannel": true,
-      "reason": "previous_customer_development_no_repeat",
-      "sourceStatus": "send_unconfirmed",
-      "sourceTimestamp": "2026-07-29T02:51:37.195Z",
-      "evidence": "prior_send_unconfirmed_no_resend;sent_folder_record_missing;contact_path_strategy_v2"
     },
     {
       "companyId": "company_c864d4d897a3e868",
@@ -30193,22 +30193,22 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
         "reason": "highest_priority_verified_channel"
       },
       {
-        "companyId": "company_7e3d1608b38203d0",
-        "company": "RTIC Mexico",
-        "action": "first_touch",
-        "channel": "email",
-        "evidenceScore": 100,
-        "evidenceUrl": "https://rtic.mx/products/hilera-rtic-45-hard-cooler",
-        "alternatives": [],
-        "reason": "highest_priority_verified_channel"
-      },
-      {
         "companyId": "company_099d7fbbba756e31",
         "company": "Blue Ridge Knives",
         "action": "first_touch",
         "channel": "email",
         "evidenceScore": 100,
         "evidenceUrl": "https://www.blueridgeknives.com/wholesale-camping-tools/",
+        "alternatives": [],
+        "reason": "highest_priority_verified_channel"
+      },
+      {
+        "companyId": "company_7e3d1608b38203d0",
+        "company": "RTIC Mexico",
+        "action": "first_touch",
+        "channel": "email",
+        "evidenceScore": 100,
+        "evidenceUrl": "https://rtic.mx/products/hilera-rtic-45-hard-cooler",
         "alternatives": [],
         "reason": "highest_priority_verified_channel"
       },
@@ -30393,13 +30393,13 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
     ]
   },
   "ownerSummary": {
-    "generatedAt": "2026-08-13T03:14:01.727Z",
+    "generatedAt": "2026-08-13T04:05:51.026Z",
     "phase": "autonomous_sales_operating_system_v1",
     "kpis": {
       "companies": 491,
       "permanentlySuppressed": 378,
       "plannedActions": 13,
-      "verifiedEvidenceRoutes": 325
+      "verifiedEvidenceRoutes": 326
     },
     "decisions": [
       {
@@ -30453,22 +30453,22 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
         "reason": "highest_priority_verified_channel"
       },
       {
-        "companyId": "company_7e3d1608b38203d0",
-        "company": "RTIC Mexico",
-        "action": "first_touch",
-        "channel": "email",
-        "evidenceScore": 100,
-        "evidenceUrl": "https://rtic.mx/products/hilera-rtic-45-hard-cooler",
-        "alternatives": [],
-        "reason": "highest_priority_verified_channel"
-      },
-      {
         "companyId": "company_099d7fbbba756e31",
         "company": "Blue Ridge Knives",
         "action": "first_touch",
         "channel": "email",
         "evidenceScore": 100,
         "evidenceUrl": "https://www.blueridgeknives.com/wholesale-camping-tools/",
+        "alternatives": [],
+        "reason": "highest_priority_verified_channel"
+      },
+      {
+        "companyId": "company_7e3d1608b38203d0",
+        "company": "RTIC Mexico",
+        "action": "first_touch",
+        "channel": "email",
+        "evidenceScore": 100,
+        "evidenceUrl": "https://rtic.mx/products/hilera-rtic-45-hard-cooler",
         "alternatives": [],
         "reason": "highest_priority_verified_channel"
       },
