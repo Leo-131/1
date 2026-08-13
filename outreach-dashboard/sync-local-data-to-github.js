@@ -249,6 +249,8 @@ function syncOnce() {
   copyIfExists(path.join(ROOT, 'system-visibility-latest.json'), path.join(OUT, 'system-visibility-latest.json'));
   copyIfExists(path.join(ROOT, 'system-visibility-latest.js'), path.join(OUT, 'system-visibility-latest.js'));
   copyIfExists(path.join(ROOT, 'autonomous-outreach-results.js'), path.join(OUT, 'autonomous-outreach-results.js'));
+  copyIfExists(path.join(ROOT, 'external-evidence-confirmations.json'), path.join(OUT, 'external-evidence-confirmations.json'));
+  copyIfExists(path.join(ROOT, 'external-evidence-confirmations.json'), path.join(ROOT, 'public', 'external-evidence-confirmations.json'));
   copyIfExists(path.join(ROOT, 'autonomous-outreach-results.js'), path.join(ROOT, 'public', 'autonomous-outreach-results.js'));
   copyIfExists(path.join(ROOT, 'outreach-intelligence-latest.json'), path.join(OUT, 'outreach-intelligence-latest.json'));
   copyIfExists(path.join(ROOT, 'outreach-intelligence-latest.js'), path.join(OUT, 'outreach-intelligence-latest.js'));

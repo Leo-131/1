@@ -1,0 +1,10 @@
+[
+  {
+    "company": "Something Clever PNW",
+    "target_url": "https://www.instagram.com/something_clever/",
+    "platform": "instagram",
+    "status": "sent_confirmed",
+    "confirmedAt": "2026-08-13T09:20:00.000Z",
+    "evidence": "user_visible_instagram_outgoing_bubble_confirmed;timestamp_visible:17:16;screenshot:codex-clipboard-9f33cecc-3583-4fa3-907f-f841d3cd55e5.png;exact_draft_prefix_match"
+  }
+]

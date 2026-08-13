@@ -760,6 +760,14 @@ function copyPublicArtifact(file) {
 function repairPreSendUnconfirmedResults() {
   const file = path.join(__dirname, 'autonomous-outreach-results.js');
   const results = readJsonScriptArray(file, 'AUTONOMOUS_OUTREACH_RESULTS');
+  const companyKeys = automationCompanyKeys(entry);
+  const strongerConfirmedResultExists = results.some(existing => existing
+    && ['sent_confirmed', 'submitted_confirmed'].includes(existing.status)
+    && setsIntersect(companyKeys, automationCompanyKeys(existing)));
+  // Delivery truth is monotonic. A stale execution artifact may be replayed
+  // during reconciliation, but it must never downgrade a company that already
+  // has stronger confirmed evidence.
+  if (strongerConfirmedResultExists && !['sent_confirmed', 'submitted_confirmed', 'bounced'].includes(entry.status)) return;
   let repaired = 0;
   for (const result of results) {
     if (!result
@@ -774,6 +782,35 @@ function repairPreSendUnconfirmedResults() {
     copyPublicArtifact('autonomous-outreach-results.js');
   }
   return repaired;
+}
+
+function reconcileExternalEvidenceConfirmations() {
+  const confirmationFile = path.join(__dirname, 'external-evidence-confirmations.json');
+  const confirmations = readJson(confirmationFile, []);
+  if (!Array.isArray(confirmations) || !confirmations.length) return 0;
+  const file = path.join(__dirname, 'autonomous-outreach-results.js');
+  const results = readJsonScriptArray(file, 'AUTONOMOUS_OUTREACH_RESULTS');
+  let updated = 0;
+  for (const confirmation of confirmations) {
+    if (!confirmation || confirmation.status !== 'sent_confirmed') continue;
+    const confirmationKeys = automationCompanyKeys(confirmation);
+    const candidates = results.filter(result => result
+      && result.status === 'send_unconfirmed'
+      && setsIntersect(confirmationKeys, automationCompanyKeys(result))
+      && (!confirmation.target_url
+        || canonicalExactAutomationKey(result.target_url) === canonicalExactAutomationKey(confirmation.target_url)
+        || String(result.evidence || '').includes(`official_social_fallback:${automationPlatformFor(confirmation)}`)));
+    const match = candidates.sort((a, b) => Date.parse(b.timestamp || 0) - Date.parse(a.timestamp || 0))[0];
+    if (!match) continue;
+    match.status = 'sent_confirmed';
+    match.evidence = `${match.evidence || 'send_unconfirmed'};${confirmation.evidence || 'external_visible_outgoing_message_confirmed'};external_evidence_confirmation_applied;no_resend_performed`;
+    updated += 1;
+  }
+  if (updated) {
+    writeJsonScriptArray(file, 'AUTONOMOUS_OUTREACH_RESULTS', results);
+    copyPublicArtifact('autonomous-outreach-results.js');
+  }
+  return updated;
 }
 
 async function reconcileAlibabaBounceResults() {
@@ -4499,6 +4536,7 @@ async function runDailyAutomationQueue(payload = {}) {
   const alibabaSessionProbe = await probeAlibabaWebmailSession();
   liveAlibabaWebmailSessionReady = Boolean(alibabaSessionProbe && alibabaSessionProbe.ok);
   const ledgerReconciliationCount = reconcileLatestExecutionResultsToLedger();
+  const externalEvidenceReconciliationCount = reconcileExternalEvidenceConfirmations();
   // Reconcile delayed DSNs before computing today's confirmed-company count
   // or selecting another channel. A Sent-folder receipt proves submission to
   // the mail system, not eventual recipient delivery.
@@ -4888,6 +4926,7 @@ async function runDailyAutomationQueue(payload = {}) {
     alibabaSessionProbe,
     bounceReconciliation,
     ledgerReconciliationCount,
+    externalEvidenceReconciliationCount,
   };
 }
 

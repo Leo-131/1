@@ -238,6 +238,13 @@ test('engagement-only command follows and likes without opening or sending a mes
   assert.match(chromeDriverSource, /async function engageSocialProfile[\s\S]*clickOptionalAction\(tab, 'follow'[\s\S]*submitInstagramPostEngagement\(tab, ''\)/);
 });
 
+test('external visible-message confirmation is durable and cannot be downgraded by a stale artifact', () => {
+  assert.ok(mainSource.includes('function reconcileExternalEvidenceConfirmations'));
+  assert.ok(mainSource.includes('external_evidence_confirmation_applied;no_resend_performed'));
+  assert.ok(mainSource.includes('strongerConfirmedResultExists'));
+  assert.match(mainSource, /strongerConfirmedResultExists && !\['sent_confirmed', 'submitted_confirmed', 'bounced'\]\.includes\(entry\.status\)/);
+});
+
 test('no-message social profiles are blocked from automatic execution', () => {
   const result = {
     task_id: 'verified-Instagram-triedandtrout',
