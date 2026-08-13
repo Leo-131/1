@@ -144,3 +144,11 @@ Read `marketPriority.preferredCountries` from `daily-automation-config.json` as 
 When `campaignScope.enabled=true`, enforce its required countries and customer types before constructing both the potential pool and visible execution queue. For the current campaign, only `sales_agency` companies in the United States, Canada, or Mexico qualify. Never fill a scoped shortfall with retailers, European companies, or another customer type; keep the gap visible and continue first-party enrichment instead.
 
 The owner-authorized `oneDayAdditionalConfirmedTarget` is a date-scoped exception for 2026-08-13 only: it raises the effective Shanghai-day confirmed-company target from 100 to 200 solely so the additional 100 actions can come from the active North America `sales_agency` campaign. It expires automatically on any other date and may never weaken per-company dedupe, sender identity, first-party channel, compliance, bounce, uncertain-delivery, or confirmation gates.
+# Delivery truth and multi-channel execution
+
+- A Sent-folder record proves submission only. Before every batch, reconcile Inbox and Junk DSNs, including Chinese Alibaba `退信`, generic `Failure`, `Address not found`, and attached `.eml` notices.
+- If the DSN says the FLEXTAIL sender account is disabled or rejected, classify delivery as `send_unconfirmed`, freeze automatic email replay, preserve the evidence, and continue only through a first-party-verified official social channel.
+- If the DSN proves the customer mailbox is invalid, mark the exact address `bounced`, remove it from confirmed totals, suppress only that email route, and keep verified LinkedIn/Facebook/Instagram available for the same company.
+- Require a company-domain address, first-party evidence, and a usable MX record before email send. Never infer a mailbox from a naming pattern.
+- For every qualified company, materialize exact LinkedIn/Facebook/Instagram profiles linked by its official website. After confirmed email, immediately attempt one verified official social channel. A social send without platform confirmation is `send_unconfirmed` and must never be replayed automatically.
+- Count a company once toward the daily 100 only when at least one channel is `sent_confirmed` or `submitted_confirmed`; retain every channel result separately for audit.

@@ -1512,13 +1512,17 @@ test('historical likes and follows do not block a later real customer message', 
 test('Alibaba bounce reconciliation downgrades confirmed email without deleting evidence', () => {
   assert.ok(mainSource.includes('async function reconcileAlibabaBounceResults'));
   assert.ok(mainSource.includes("result.status === 'sent_confirmed'"));
-  assert.ok(mainSource.includes("match.status = 'bounced'"));
+  assert.ok(mainSource.includes("match.status = senderIdentityFailure ? 'send_unconfirmed' : 'bounced'"));
   assert.ok(mainSource.includes('bounceReconciliation'));
   assert.ok(mainSource.includes("const blocking = new Set(['sent_confirmed', 'bounced'"));
   const companyStatusesStart = mainSource.indexOf('const COMPANY_HISTORY_BLOCKING_STATUSES');
   const companyStatusesEnd = mainSource.indexOf(']);', companyStatusesStart) + 3;
   assert.doesNotMatch(mainSource.slice(companyStatusesStart, companyStatusesEnd), /bounced/);
   assert.ok(mainSource.includes("if (result.status === 'bounced') return false"));
+  assert.ok(mainSource.includes("sender_identity_rejected_delivery_unconfirmed;automatic_resend_forbidden"));
+  assert.ok(mainSource.includes("senderIdentityFailure ? 'send_unconfirmed' : 'bounced'"));
+  assert.ok(mainSource.includes("if (/sender_identity_rejected_delivery_unconfirmed/i.test(text)) return true"));
+  assert.ok(dailyRunnerSource.includes("if (/sender_identity_rejected_delivery_unconfirmed/i.test(evidence)) return true"));
 });
 
 test('Alibaba recipient fallback clears stale text and commits the exact address physically', () => {

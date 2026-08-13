@@ -468,6 +468,7 @@ const SAME_DAY_DEVELOPMENT_STATUSES = new Set([
 ]);
 const WEBSITE_CONTACT_STRATEGY_MARKER = 'contact_path_strategy_v2';
 let liveAlibabaWebmailSessionReady = false;
+let liveEmailSenderDeliveryReady = true;
 
 function automationLocalDay(value, timeZone = 'Asia/Shanghai') {
   const time = typeof value === 'number' ? value : Date.parse(value || '');
@@ -513,6 +514,7 @@ function sameDayDevelopmentResult(result = {}, now = Date.now()) {
 function sendStatusHasCustomerInteraction(status, evidence = '') {
   if (status !== 'send_unconfirmed') return true;
   const text = String(evidence || '');
+  if (/sender_identity_rejected_delivery_unconfirmed/i.test(text)) return true;
   if (/owner_confirmed_prior_customer_development/i.test(text)) return true;
   if (/delivery_state_uncertain/i.test(text) && /automatic_resend_forbidden/i.test(text)) return true;
   if (/message_sent|submitted_confirmed|persisted_after_reload/i.test(text)) return true;
@@ -768,22 +770,27 @@ async function reconcileAlibabaBounceResults() {
   const file = path.join(__dirname, 'autonomous-outreach-results.js');
   const results = readJsonScriptArray(file, 'AUTONOMOUS_OUTREACH_RESULTS');
   let updated = 0;
+  let senderIdentityFailures = 0;
   for (const bounce of scan.bounces || []) {
+    const senderIdentityFailure = /account\s+leo@flextailgear\.com\s+is\s+disabled|sender.*disabled|mailbox.*sender.*disabled/i
+      .test(String(bounce.diagnostic || ''));
+    if (senderIdentityFailure) senderIdentityFailures += 1;
     const match = results.find(result => result
-      && result.status === 'sent_confirmed'
+      && (result.status === 'sent_confirmed' || (senderIdentityFailure && result.status === 'bounced'))
       && ((bounce.messageId && result.messageId === bounce.messageId)
         || (bounce.recipient && String(result.recipientEmail || '').toLowerCase() === bounce.recipient)));
     if (!match) continue;
-    match.status = 'bounced';
+    match.status = senderIdentityFailure ? 'send_unconfirmed' : 'bounced';
     match.bouncedAt = bounce.receivedAt || new Date().toISOString();
-    match.evidence = `${match.evidence || 'sent_confirmed'};bounce_confirmed:${bounce.diagnostic || bounce.uid || 'dsn'}`;
+    match.evidence = `${match.evidence || 'sent_confirmed'};${senderIdentityFailure ? 'sender_identity_rejected_delivery_unconfirmed;automatic_resend_forbidden' : 'bounce_confirmed'}:${bounce.diagnostic || bounce.uid || 'dsn'}`;
     updated += 1;
   }
   if (updated) {
     writeJsonScriptArray(file, 'AUTONOMOUS_OUTREACH_RESULTS', results);
     copyPublicArtifact('autonomous-outreach-results.js');
   }
-  return { ok: true, reason: scan.reason, scanned: (scan.bounces || []).length, updated };
+  liveEmailSenderDeliveryReady = senderIdentityFailures === 0;
+  return { ok: true, reason: scan.reason, scanned: (scan.bounces || []).length, updated, senderIdentityFailures };
 }
 
 function dailyQueueGoalVisibility(summary = {}) {
@@ -3151,6 +3158,16 @@ async function verifyPriorAlibabaWebmailSend(lead = {}, subject = '') {
 }
 
 async function runVerifiedAlibabaEmailLead(lead = {}, subject = '', draft = '') {
+  if (!liveEmailSenderDeliveryReady) {
+    return {
+      ok: false,
+      skipped: true,
+      sendStatus: 'failed_open',
+      reason: 'email_sender_delivery_disabled',
+      evidence: 'email_sender_delivery_disabled;sender_identity_dsn_observed;no_send_performed',
+      nextAction: 'Continue through a first-party-verified official social channel; do not retry email until sender delivery is restored.',
+    };
+  }
   const previousResults = readJsonScriptArray(path.join(__dirname, 'autonomous-outreach-results.js'), 'AUTONOMOUS_OUTREACH_RESULTS');
   const domainSafety = emailDomainSafety(previousResults, lead);
   if (!domainSafety.ok) {
@@ -3310,6 +3327,7 @@ function canFallbackAfterEmailPreflight(result = {}) {
     'verified_public_email_missing',
     'recipient_domain_has_no_mail_exchange',
     'recipient_domain_mail_exchange_unverified',
+    'email_sender_delivery_disabled',
   ].some(marker => evidence.includes(marker));
 }
 

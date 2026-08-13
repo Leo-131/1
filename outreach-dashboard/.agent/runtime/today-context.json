@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-13T07:06:58.905Z",
+  "generatedAt": "2026-08-13T07:15:08.161Z",
   "phase": "pre-sync",
   "shanghaiDate": "2026-08-13",
   "policyVersion": "2026-07-30",
@@ -13,8 +13,8 @@
     "maximumRunLimit": 50,
     "runMaximumMinutes": 45
   },
-  "confirmedToday": 23,
-  "remainingToday": 77,
+  "confirmedToday": 24,
+  "remainingToday": 76,
   "campaignScope": {
     "enabled": true,
     "name": "north_america_large_sales_agencies",
@@ -37,8 +37,8 @@
   "queue": {
     "potentialPool": 72,
     "refillNeeded": 28,
-    "executableCompanies": 48,
-    "executableReserveNeeded": 82
+    "executableCompanies": 49,
+    "executableReserveNeeded": 81
   },
   "latestExecution": {
     "completedAt": "2026-08-13T07:06:50.139Z",
@@ -53,7 +53,7 @@
   },
   "git": {
     "branch": "vercel-main-sync",
-    "localHead": "79cc5da4b7def53ba75c2507c4c3ecfabc732027",
-    "upstreamHead": "79cc5da4b7def53ba75c2507c4c3ecfabc732027"
+    "localHead": "20de84e7b1b06ab108e9f4df844a6e732432dcac",
+    "upstreamHead": "20de84e7b1b06ab108e9f4df844a6e732432dcac"
   }
 }

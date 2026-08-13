@@ -533,6 +533,7 @@ function isTouchResult(result = {}) {
   if (!result || !TOUCH_STATUSES.has(result.status) || !isVerifiedWebsiteContactResult(result)) return false;
   if (result.status !== 'send_unconfirmed') return true;
   const evidence = String(result.evidence || '');
+  if (/sender_identity_rejected_delivery_unconfirmed/i.test(evidence)) return true;
   if (/owner_confirmed_prior_customer_development/i.test(evidence)) return true;
   if (/delivery_state_uncertain/i.test(evidence) && /automatic_resend_forbidden/i.test(evidence)) return true;
   if (/message_sent|submitted_confirmed|persisted_after_reload/i.test(evidence)) return true;
