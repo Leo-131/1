@@ -1,63 +1,126 @@
 window.DAILY_AUTOMATION_EXECUTION_LATEST = {
   "ok": false,
-  "skippedOnly": true,
   "browserTransportRequested": "codex-extension-first",
-  "browserTransportUsed": "none",
-  "browserTransportFallbackReason": "",
+  "browserTransportUsed": "cdp",
+  "browserTransportFallbackReason": "extension_bridge_not_available_process_local_cdp",
   "extensionReceiptCount": 0,
-  "executionPhase": "no_executable_tasks",
-  "chromeStage": "not_started",
-  "chromeOpened": false,
-  "chromeOpenedCount": 0,
+  "executionPhase": "browser_execution",
+  "chromeStage": "opened",
+  "chromeOpened": true,
+  "chromeOpenedCount": 1,
   "customerDevelopmentPerformed": false,
   "customerMessageSent": false,
   "realDevelopmentCount": 0,
   "reportingVerdict": "no_customer_development_performed",
-  "userVisibleStatus": "Customer development was not performed. Blockers: homepage_only_contact_path_requires_verification (31); official_public_business_email_verified (26); website_contact_capability_not_verified (24).",
-  "recoveryHint": "Refill the high-ICP pool with 28 verified leads or unblock existing website/social leads before the next run. Confirm the official social profile and safe message entry before rerunning Google-discovered social outreach.",
-  "recoveryActions": [
+  "engine": "Browser transport queue bridge",
+  "mode": "serial-single-target",
+  "batchMode": "parallel-batches",
+  "parallelLimit": 1,
+  "limit": 25,
+  "queueDate": "2026-08-13",
+  "queueSource": "dailyQueue",
+  "executed": [
     {
-      "reason": "daily_queue_goal_not_reached",
-      "action": "Refill high-ICP customer pool",
-      "description": "Add or unblock 28 verified high-ICP leads to reach the daily 100 target.",
-      "hint": "Refill the high-ICP pool with 28 verified leads or unblock existing website/social leads before the next run.",
-      "target": 100,
-      "potentialPool": 72,
-      "refillNeeded": 28
-    },
-    {
-      "reason": "google_social_profile_not_executable",
-      "action": "Complete Google social channel verification",
-      "description": "Confirm the official social profile and safe message entry before rerunning Google-discovered social outreach.",
-      "hint": "Confirm the official social profile and safe message entry before rerunning Google-discovered social outreach."
+      "id": "google-customer-escala-sales-marketing-instagram",
+      "company": "Escala Sales & Marketing",
+      "action": "develop",
+      "platform": "instagram",
+      "targetUrl": "https://www.instagram.com/escalaoutdoors/?hl=en",
+      "ok": false,
+      "sendStatus": "send_unconfirmed",
+      "evidence": "instagram_send_clicked_but_confirmation_missing;verified_draft_present_before_irreversible_action;explicit_send_control_verified;instagram_draft_inserted_verified;",
+      "timestamp": "2026-08-13T07:18:06.518Z",
+      "chromeOpen": {
+        "ok": true,
+        "engine": "codex-chrome-cdp",
+        "port": 9224,
+        "targetUrl": "https://www.instagram.com/escalaoutdoors/?hl=en",
+        "tabId": "1F6D911871FA85542049A17C8A648B83",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/1F6D911871FA85542049A17C8A648B83",
+        "title": "Escala Sales and Marketing (@escalaoutdoors) • Instagram photos and videos"
+      },
+      "result": {
+        "ok": false,
+        "engine": "codex-chrome-cdp",
+        "browserEngine": "codex-chrome-cdp",
+        "mode": "codex_chrome_cdp",
+        "targetUrl": "https://www.instagram.com/escalaoutdoors/?hl=en",
+        "chromeOpen": {
+          "ok": true,
+          "engine": "codex-chrome-cdp",
+          "port": 9224,
+          "targetUrl": "https://www.instagram.com/escalaoutdoors/?hl=en",
+          "tabId": "1F6D911871FA85542049A17C8A648B83",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/1F6D911871FA85542049A17C8A648B83",
+          "title": "Escala Sales and Marketing (@escalaoutdoors) • Instagram photos and videos"
+        },
+        "sendStatus": "send_unconfirmed",
+        "output": "{\"verdict\":\"major_bug_review_needed\",\"evidence\":\"instagram_send_clicked_but_confirmation_missing;verified_draft_present_before_irreversible_action;explicit_send_control_verified;instagram_draft_inserted_verified;\",\"nextAction\":\"Send confirmation missing; pause and notify operator before any retry to avoid duplicate sending.\",\"draft\":\"Hi Escala Sales & Marketing team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a distributor/importer, the strongest fit is regional sell-through, channel fit, margin-ready product line, and whether they cover outdoor/travel electronics buyers; your verified North American outdoor sales agency or wholesale distributor focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the owner of distribution evaluation or the best time for a short intro video meeting?\",\"sendStatus\":\"send_unconfirmed\"}",
+        "decision": {
+          "verdict": "develop",
+          "fitScore": 89,
+          "reason": "local_codex_extension_template",
+          "draft": "Hi Escala Sales & Marketing team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a distributor/importer, the strongest fit is regional sell-through, channel fit, margin-ready product line, and whether they cover outdoor/travel electronics buyers; your verified North American outdoor sales agency or wholesale distributor focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the owner of distribution evaluation or the best time for a short intro video meeting?"
+        },
+        "executionLayer": "Chrome CDP fallback",
+        "glmModel": "not_used",
+        "followup": false
+      }
     }
   ],
-  "error": "No executable tasks. Website-contact, social, cooldown, exclusive-agency, and verification safety gates left nothing safe to prepare.",
+  "results": [
+    {
+      "id": "google-customer-escala-sales-marketing-instagram",
+      "company": "Escala Sales & Marketing",
+      "action": "develop",
+      "platform": "instagram",
+      "targetUrl": "https://www.instagram.com/escalaoutdoors/?hl=en",
+      "ok": false,
+      "sendStatus": "send_unconfirmed",
+      "evidence": "instagram_send_clicked_but_confirmation_missing;verified_draft_present_before_irreversible_action;explicit_send_control_verified;instagram_draft_inserted_verified;",
+      "timestamp": "2026-08-13T07:18:06.518Z",
+      "chromeOpen": {
+        "ok": true,
+        "engine": "codex-chrome-cdp",
+        "port": 9224,
+        "targetUrl": "https://www.instagram.com/escalaoutdoors/?hl=en",
+        "tabId": "1F6D911871FA85542049A17C8A648B83",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/1F6D911871FA85542049A17C8A648B83",
+        "title": "Escala Sales and Marketing (@escalaoutdoors) • Instagram photos and videos"
+      },
+      "result": {
+        "ok": false,
+        "engine": "codex-chrome-cdp",
+        "browserEngine": "codex-chrome-cdp",
+        "mode": "codex_chrome_cdp",
+        "targetUrl": "https://www.instagram.com/escalaoutdoors/?hl=en",
+        "chromeOpen": {
+          "ok": true,
+          "engine": "codex-chrome-cdp",
+          "port": 9224,
+          "targetUrl": "https://www.instagram.com/escalaoutdoors/?hl=en",
+          "tabId": "1F6D911871FA85542049A17C8A648B83",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/1F6D911871FA85542049A17C8A648B83",
+          "title": "Escala Sales and Marketing (@escalaoutdoors) • Instagram photos and videos"
+        },
+        "sendStatus": "send_unconfirmed",
+        "output": "{\"verdict\":\"major_bug_review_needed\",\"evidence\":\"instagram_send_clicked_but_confirmation_missing;verified_draft_present_before_irreversible_action;explicit_send_control_verified;instagram_draft_inserted_verified;\",\"nextAction\":\"Send confirmation missing; pause and notify operator before any retry to avoid duplicate sending.\",\"draft\":\"Hi Escala Sales & Marketing team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a distributor/importer, the strongest fit is regional sell-through, channel fit, margin-ready product line, and whether they cover outdoor/travel electronics buyers; your verified North American outdoor sales agency or wholesale distributor focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the owner of distribution evaluation or the best time for a short intro video meeting?\",\"sendStatus\":\"send_unconfirmed\"}",
+        "decision": {
+          "verdict": "develop",
+          "fitScore": 89,
+          "reason": "local_codex_extension_template",
+          "draft": "Hi Escala Sales & Marketing team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a distributor/importer, the strongest fit is regional sell-through, channel fit, margin-ready product line, and whether they cover outdoor/travel electronics buyers; your verified North American outdoor sales agency or wholesale distributor focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the owner of distribution evaluation or the best time for a short intro video meeting?"
+        },
+        "executionLayer": "Chrome CDP fallback",
+        "glmModel": "not_used",
+        "followup": false
+      }
+    }
+  ],
   "skipped": [
-    {
-      "id": "google-customer-mountain-exposure-website-contact",
-      "company": "Mountain Exposure",
-      "action": "email_priority",
-      "platform": "email",
-      "reason": "official_public_business_email_verified"
-    },
-    {
-      "id": "google-customer-black-dog-sales-group-website-contact",
-      "company": "Black Dog Sales Group",
-      "action": "email_priority",
-      "platform": "email",
-      "reason": "official_public_business_email_verified"
-    },
     {
       "id": "google-customer-lathrop-associates-website-contact",
       "company": "Lathrop Associates",
-      "action": "email_priority",
-      "platform": "email",
-      "reason": "official_public_business_email_verified"
-    },
-    {
-      "id": "google-customer-rep-first-website-contact",
-      "company": "Rep First",
       "action": "email_priority",
       "platform": "email",
       "reason": "official_public_business_email_verified"
@@ -273,8 +336,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "reason": "official_website_contact_channel"
     },
     {
-      "id": "google-customer-perpetual-motion-nw-website-contact",
-      "company": "Perpetual Motion NW",
+      "id": "google-customer-premium-living-products-website-contact",
+      "company": "Premium Living Products",
       "action": "develop",
       "platform": "website_form",
       "reason": "official_website_contact_channel"
@@ -504,13 +567,6 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "reason": "official_public_business_email_verified"
     },
     {
-      "id": "google-customer-kenco-outfitters-website-contact",
-      "company": "Kenco Outfitters",
-      "action": "email_priority",
-      "platform": "email",
-      "reason": "official_public_business_email_verified"
-    },
-    {
       "id": "google-customer-blue-ridge-knives-website-contact",
       "company": "Blue Ridge Knives",
       "action": "email_priority",
@@ -637,13 +693,6 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "reason": "homepage_only_contact_path_requires_verification"
     },
     {
-      "id": "google-customer-escala-sales-marketing-website-contact",
-      "company": "Escala Sales & Marketing",
-      "action": "verify_target",
-      "platform": "website_form",
-      "reason": "homepage_only_contact_path_requires_verification"
-    },
-    {
       "id": "google-customer-1889-sales-website-contact",
       "company": "1889 Sales",
       "action": "verify_target",
@@ -695,6 +744,13 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     {
       "id": "google-customer-morrison-sports-marketing-website-contact",
       "company": "Morrison Sports Marketing",
+      "action": "verify_target",
+      "platform": "website_form",
+      "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
+      "id": "google-customer-perpetual-motion-nw-website-contact",
+      "company": "Perpetual Motion NW",
       "action": "verify_target",
       "platform": "website_form",
       "reason": "homepage_only_contact_path_requires_verification"
@@ -721,6 +777,216 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "reason": "homepage_only_contact_path_requires_verification"
     },
     {
+      "id": "google-customer-mutinous-sales-and-marketing-website-contact",
+      "company": "Mutinous Sales and Marketing",
+      "action": "verify_target",
+      "platform": "website_form",
+      "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
+      "id": "google-customer-next-adventure-website-contact",
+      "company": "Next Adventure",
+      "action": "verify_target",
+      "platform": "website_form",
+      "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
+      "id": "google-customer-nohrth-website-contact",
+      "company": "NOHRTH",
+      "action": "verify_target",
+      "platform": "website_form",
+      "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
+      "id": "google-customer-young-mackenzie-distribution-linkedin",
+      "company": "Young & MacKenzie Distribution",
+      "action": "verify_target",
+      "platform": "linkedin",
+      "reason": "linkedin_channel_requires_supported_executor"
+    },
+    {
+      "id": "google-customer-elevated-outdoor-sales-linkedin",
+      "company": "Elevated Outdoor Sales",
+      "action": "verify_target",
+      "platform": "linkedin",
+      "reason": "linkedin_channel_requires_supported_executor"
+    },
+    {
+      "id": "google-customer-northern-exposure-sporting-group-linkedin",
+      "company": "Northern Exposure Sporting Group",
+      "action": "verify_target",
+      "platform": "linkedin",
+      "reason": "linkedin_channel_requires_supported_executor"
+    },
+    {
+      "id": "google-customer-360-adventure-collective-linkedin",
+      "company": "360 Adventure Collective",
+      "action": "verify_target",
+      "platform": "linkedin",
+      "reason": "linkedin_channel_requires_supported_executor"
+    },
+    {
+      "id": "google-customer-front-point-sales-linkedin",
+      "company": "Front Point Sales",
+      "action": "verify_target",
+      "platform": "linkedin",
+      "reason": "linkedin_channel_requires_supported_executor"
+    },
+    {
+      "id": "google-customer-onwardup-facebook",
+      "company": "OnwardUP",
+      "action": "develop",
+      "platform": "facebook",
+      "reason": "official_website_social_channel_verified"
+    },
+    {
+      "id": "google-customer-powers-pedersen-sales-group-facebook",
+      "company": "Powers Pedersen Sales Group",
+      "action": "develop",
+      "platform": "facebook",
+      "reason": "official_website_social_channel_verified"
+    },
+    {
+      "id": "google-customer-owens-outdoor-sales-facebook",
+      "company": "Owens Outdoor Sales",
+      "action": "develop",
+      "platform": "facebook",
+      "reason": "official_website_social_channel_verified"
+    },
+    {
+      "id": "google-customer-awesome-outdoors-group-facebook",
+      "company": "Awesome Outdoors Group",
+      "action": "develop",
+      "platform": "facebook",
+      "reason": "official_website_social_channel_verified"
+    },
+    {
+      "id": "google-customer-three-mountain-associates-facebook",
+      "company": "Three Mountain Associates",
+      "action": "develop",
+      "platform": "facebook",
+      "reason": "official_website_social_channel_verified"
+    },
+    {
+      "id": "google-customer-caraway-co-facebook",
+      "company": "Caraway & Co.",
+      "action": "develop",
+      "platform": "facebook",
+      "reason": "official_website_social_channel_verified"
+    },
+    {
+      "id": "google-customer-outdoor-gear-canada-facebook",
+      "company": "Outdoor Gear Canada",
+      "action": "develop",
+      "platform": "facebook",
+      "reason": "official_website_social_channel_verified"
+    },
+    {
+      "id": "google-customer-revassa-facebook",
+      "company": "REVASSA",
+      "action": "develop",
+      "platform": "facebook",
+      "reason": "official_website_social_channel_verified"
+    },
+    {
+      "id": "google-customer-parallel-45-sales-group-instagram",
+      "company": "Parallel 45 Sales Group",
+      "action": "develop",
+      "platform": "instagram",
+      "reason": "official_website_social_channel_verified"
+    },
+    {
+      "id": "google-customer-perspective-outdoor-instagram",
+      "company": "Perspective Outdoor",
+      "action": "develop",
+      "platform": "instagram",
+      "reason": "official_website_social_channel_verified"
+    },
+    {
+      "id": "google-customer-heron-outdoors-instagram",
+      "company": "Heron Outdoors",
+      "action": "develop",
+      "platform": "instagram",
+      "reason": "official_website_social_channel_verified"
+    },
+    {
+      "id": "google-customer-lathrop-associates-website-contact",
+      "company": "Lathrop Associates",
+      "action": "email_priority",
+      "platform": "email",
+      "reason": "official_public_business_email_verified"
+    },
+    {
+      "id": "google-customer-continental-sports-inc-website-contact",
+      "company": "Continental Sports Inc",
+      "action": "email_priority",
+      "platform": "email",
+      "reason": "official_public_business_email_verified"
+    },
+    {
+      "id": "google-customer-sideways-distribution-website-contact",
+      "company": "Sideways Distribution",
+      "action": "email_priority",
+      "platform": "email",
+      "reason": "official_public_business_email_verified"
+    },
+    {
+      "id": "google-customer-nickel-n-diamond-sales-website-contact",
+      "company": "Nickel N Diamond Sales",
+      "action": "email_priority",
+      "platform": "email",
+      "reason": "official_public_business_email_verified"
+    },
+    {
+      "id": "google-customer-parallel-33-sales-group-website-contact",
+      "company": "Parallel 33 Sales Group",
+      "action": "email_priority",
+      "platform": "email",
+      "reason": "official_public_business_email_verified"
+    },
+    {
+      "id": "google-customer-sales-society-72-website-contact",
+      "company": "Sales Society 72",
+      "action": "email_priority",
+      "platform": "email",
+      "reason": "official_public_business_email_verified"
+    },
+    {
+      "id": "google-customer-dark-blizzard-sales-website-contact",
+      "company": "Dark Blizzard Sales",
+      "action": "email_priority",
+      "platform": "email",
+      "reason": "official_public_business_email_verified"
+    },
+    {
+      "id": "google-customer-our-habit-sales-website-contact",
+      "company": "Our Habit Sales",
+      "action": "email_priority",
+      "platform": "email",
+      "reason": "official_public_business_email_verified"
+    },
+    {
+      "id": "google-customer-nick-landry-sales-website-contact",
+      "company": "Nick Landry Sales",
+      "action": "email_priority",
+      "platform": "email",
+      "reason": "official_public_business_email_verified"
+    },
+    {
+      "id": "google-customer-pfp-and-associates-website-contact",
+      "company": "PFP and Associates",
+      "action": "email_priority",
+      "platform": "email",
+      "reason": "official_public_business_email_verified"
+    },
+    {
+      "id": "google-customer-zia-works-distribution-website-contact",
+      "company": "Zia Works Distribution",
+      "action": "email_priority",
+      "platform": "email",
+      "reason": "official_public_business_email_verified"
+    },
+    {
       "id": "google-customer-mountain-source-website-contact",
       "company": "Mountain Source",
       "action": "verify_target",
@@ -735,6 +1001,20 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "reason": "website_contact_capability_not_verified"
     },
     {
+      "id": "google-customer-sanitas-sales-group-website-contact",
+      "company": "Sanitas Sales Group",
+      "action": "email_priority",
+      "platform": "website_form",
+      "reason": "official_website_contact_channel"
+    },
+    {
+      "id": "google-customer-sierra-outdoor-collective-website-contact",
+      "company": "Sierra Outdoor Collective",
+      "action": "develop",
+      "platform": "website_form",
+      "reason": "official_website_contact_channel"
+    },
+    {
       "id": "google-customer-waypoint-outdoor-website-contact",
       "company": "Waypoint Outdoor",
       "action": "verify_target",
@@ -742,11 +1022,25 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "reason": "website_contact_capability_not_verified"
     },
     {
+      "id": "google-customer-level-8-outdoor-website-contact",
+      "company": "Level 8 Outdoor",
+      "action": "develop",
+      "platform": "website_form",
+      "reason": "official_website_contact_channel"
+    },
+    {
       "id": "google-customer-sportco-marketing-website-contact",
       "company": "Sportco Marketing",
       "action": "verify_target",
       "platform": "website_form",
       "reason": "website_contact_capability_not_verified"
+    },
+    {
+      "id": "google-customer-ascension-sales-group-website-contact",
+      "company": "Ascension Sales Group",
+      "action": "develop",
+      "platform": "website_form",
+      "reason": "official_website_contact_channel"
     },
     {
       "id": "google-customer-granite-marketing-website-contact",
@@ -770,11 +1064,32 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "reason": "website_contact_capability_not_verified"
     },
     {
+      "id": "google-customer-brandywine-river-reps-website-contact",
+      "company": "Brandywine River Reps",
+      "action": "develop",
+      "platform": "website_form",
+      "reason": "official_website_contact_channel"
+    },
+    {
+      "id": "google-customer-hendrix-outdoors-website-contact",
+      "company": "Hendrix Outdoors",
+      "action": "develop",
+      "platform": "website_form",
+      "reason": "official_website_contact_channel"
+    },
+    {
       "id": "google-customer-howe-sound-sales-website-contact",
       "company": "Howe Sound Sales",
       "action": "verify_target",
       "platform": "website_form",
       "reason": "website_contact_capability_not_verified"
+    },
+    {
+      "id": "google-customer-salvation-sales-website-contact",
+      "company": "Salvation Sales",
+      "action": "develop",
+      "platform": "website_form",
+      "reason": "official_website_contact_channel"
     },
     {
       "id": "google-customer-terra-outdoor-gear-distribution-website-contact",
@@ -791,15 +1106,29 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "reason": "website_contact_capability_not_verified"
     },
     {
-      "id": "google-customer-suggs-nicholas-shea-website-contact",
-      "company": "Suggs-Nicholas-Shea",
-      "action": "verify_target",
+      "id": "google-customer-action-sports-agency-website-contact",
+      "company": "Action Sports Agency",
+      "action": "develop",
       "platform": "website_form",
-      "reason": "website_contact_capability_not_verified"
+      "reason": "official_website_contact_channel"
     },
     {
-      "id": "google-customer-escala-sales-marketing-website-contact",
-      "company": "Escala Sales & Marketing",
+      "id": "google-customer-sky-lines-website-contact",
+      "company": "Sky-Lines",
+      "action": "develop",
+      "platform": "website_form",
+      "reason": "official_website_contact_channel"
+    },
+    {
+      "id": "google-customer-sturm-mil-tec-usa-website-contact",
+      "company": "Sturm Mil-Tec USA",
+      "action": "develop",
+      "platform": "website_form",
+      "reason": "official_website_contact_channel"
+    },
+    {
+      "id": "google-customer-suggs-nicholas-shea-website-contact",
+      "company": "Suggs-Nicholas-Shea",
       "action": "verify_target",
       "platform": "website_form",
       "reason": "website_contact_capability_not_verified"
@@ -840,6 +1169,27 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "reason": "website_contact_capability_not_verified"
     },
     {
+      "id": "google-customer-edgeline-collective-website-contact",
+      "company": "Edgeline Collective",
+      "action": "develop",
+      "platform": "website_form",
+      "reason": "official_website_contact_channel"
+    },
+    {
+      "id": "google-customer-garibaldi-supply-co-website-contact",
+      "company": "Garibaldi Supply Co.",
+      "action": "develop",
+      "platform": "website_form",
+      "reason": "official_website_contact_channel"
+    },
+    {
+      "id": "google-customer-precision-sales-and-marketing-website-contact",
+      "company": "Precision Sales and Marketing",
+      "action": "develop",
+      "platform": "website_form",
+      "reason": "official_website_contact_channel"
+    },
+    {
       "id": "google-customer-d-m-a-distributing-website-contact",
       "company": "D.M.A. Distributing",
       "action": "verify_target",
@@ -854,8 +1204,36 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "reason": "website_contact_capability_not_verified"
     },
     {
+      "id": "google-customer-kelly-brand-management-website-contact",
+      "company": "Kelly Brand Management",
+      "action": "develop",
+      "platform": "website_form",
+      "reason": "official_website_contact_channel"
+    },
+    {
+      "id": "google-customer-kittredge-and-associates-website-contact",
+      "company": "Kittredge and Associates",
+      "action": "develop",
+      "platform": "website_form",
+      "reason": "official_website_contact_channel"
+    },
+    {
       "id": "google-customer-morrison-sports-marketing-website-contact",
       "company": "Morrison Sports Marketing",
+      "action": "verify_target",
+      "platform": "website_form",
+      "reason": "website_contact_capability_not_verified"
+    },
+    {
+      "id": "google-customer-outdoor-industry-group-website-contact",
+      "company": "Outdoor Industry Group",
+      "action": "develop",
+      "platform": "website_form",
+      "reason": "official_website_contact_channel"
+    },
+    {
+      "id": "google-customer-perpetual-motion-nw-website-contact",
+      "company": "Perpetual Motion NW",
       "action": "verify_target",
       "platform": "website_form",
       "reason": "website_contact_capability_not_verified"
@@ -896,16 +1274,56 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "reason": "website_contact_capability_not_verified"
     }
   ],
+  "summary": {
+    "totalLeads": 16,
+    "highIcp": 16,
+    "readyToDevelop": 33,
+    "dueNow": 98,
+    "visibleTodayQueue": 69,
+    "potentialPool": 69,
+    "potentialPoolTarget": 100,
+    "customerTableHighIcp": 0,
+    "refillNeeded": 31,
+    "executableCompanies": 45,
+    "executableReserveTarget": 130,
+    "executableReserveNeeded": 85,
+    "executableByChannel": {
+      "linkedin": 5,
+      "facebook": 8,
+      "instagram": 4,
+      "email": 11,
+      "website_form": 17
+    },
+    "verifiedSocialCompanies": 17,
+    "verifiedSocialReserveTarget": 20,
+    "verifiedSocialReserveNeeded": 3,
+    "enrichmentBacklogCount": 24,
+    "googleDiscovered": 98,
+    "facebookDiscovered": 10,
+    "websiteContactDiscovered": 22,
+    "scheduledLater": 0,
+    "cooldown": 30,
+    "emailPriority": 0,
+    "openAgencyMarket": 15,
+    "exclusiveAgencySkipped": 1,
+    "needsVerification": 0,
+    "retainedLowIcp": 0
+  },
   "blockerSummary": [
+    {
+      "reason": "official_website_contact_channel",
+      "status": "skipped",
+      "count": 37
+    },
     {
       "reason": "homepage_only_contact_path_requires_verification",
       "status": "skipped",
-      "count": 31
+      "count": 34
     },
     {
       "reason": "official_public_business_email_verified",
       "status": "skipped",
-      "count": 26
+      "count": 33
     },
     {
       "reason": "website_contact_capability_not_verified",
@@ -913,19 +1331,14 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "count": 24
     },
     {
-      "reason": "official_website_contact_channel",
-      "status": "skipped",
-      "count": 21
-    },
-    {
       "reason": "official_website_social_channel_verified",
       "status": "skipped",
-      "count": 11
+      "count": 22
     },
     {
       "reason": "linkedin_channel_requires_supported_executor",
       "status": "skipped",
-      "count": 5
+      "count": 10
     },
     {
       "reason": "social_profile_not_first_party_verified",
@@ -936,845 +1349,137 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "reason": "concrete_google_discovered_major_customer_facebook",
       "status": "skipped",
       "count": 1
+    },
+    {
+      "reason": "send_unconfirmed",
+      "status": "send_unconfirmed",
+      "count": 1
     }
   ],
   "blockerCounts": {
-    "homepage_only_contact_path_requires_verification": 31,
-    "official_public_business_email_verified": 26,
+    "official_website_contact_channel": 37,
+    "homepage_only_contact_path_requires_verification": 34,
+    "official_public_business_email_verified": 33,
     "website_contact_capability_not_verified": 24,
-    "official_website_contact_channel": 21,
-    "official_website_social_channel_verified": 11,
-    "linkedin_channel_requires_supported_executor": 5,
+    "official_website_social_channel_verified": 22,
+    "linkedin_channel_requires_supported_executor": 10,
     "social_profile_not_first_party_verified": 4,
-    "concrete_google_discovered_major_customer_facebook": 1
+    "concrete_google_discovered_major_customer_facebook": 1,
+    "send_unconfirmed": 1
   },
   "queueGoalStatus": {
     "target": 100,
-    "potentialPool": 72,
+    "potentialPool": 69,
     "queueCount": 98,
     "googleDiscovered": 98,
-    "refillNeeded": 28,
+    "refillNeeded": 31,
     "confirmedToday": 23,
     "reached": false,
     "action": "Add more verified high-ICP sources or unblock existing website/social leads."
   },
   "checkpointAudit": {
     "snapshotPresent": true,
-    "snapshotCompleted": true,
-    "activeResume": false,
-    "terminalTaskCount": 0,
+    "snapshotCompleted": false,
+    "activeResume": true,
+    "terminalTaskCount": 1,
     "rule": "completed checkpoints are ignored; only terminal results from an active interrupted checkpoint suppress their exact task id"
   },
-  "candidateSelectionAudit": [
+  "platformCircuitState": {},
+  "userVisibleStatus": "Customer development was not performed. Blockers: official_website_contact_channel (37); homepage_only_contact_path_requires_verification (34); official_public_business_email_verified (33).",
+  "recoveryHint": "Refill the high-ICP pool with 31 verified leads or unblock existing website/social leads before the next run. Confirm the official social profile and safe message entry before rerunning Google-discovered social outreach.",
+  "recoveryActions": [
     {
-      "id": "google-customer-mountain-exposure-website-contact",
-      "company": "Mountain Exposure",
-      "action": "email_priority",
-      "platform": "email",
-      "readiness": {
-        "ready": true,
-        "gate": "official_business_email",
-        "evidenceUrl": "https://www.mountainx.ca/sales"
-      },
-      "hasTarget": true,
-      "inCandidatePool": false,
-      "sameDayCompanyBlocked": false,
-      "blockingStatus": "bounced",
-      "blockingEvidence": "smtp_accepted;message_id:<3dd58647-a544-a8b8-d173-9d9e19e35dc9@flextailgear.com>;sent_folder_message_confirmed;contact_path_strategy_v2;bounce_confirmed:Diagnostic-Code: smtp; The account leo@flextailgear.com is disabled."
+      "reason": "daily_queue_goal_not_reached",
+      "action": "Refill high-ICP customer pool",
+      "description": "Add or unblock 31 verified high-ICP leads to reach the daily 100 target.",
+      "hint": "Refill the high-ICP pool with 31 verified leads or unblock existing website/social leads before the next run.",
+      "target": 100,
+      "potentialPool": 69,
+      "refillNeeded": 31
     },
     {
-      "id": "google-customer-black-dog-sales-group-website-contact",
-      "company": "Black Dog Sales Group",
-      "action": "email_priority",
-      "platform": "email",
-      "readiness": {
-        "ready": true,
-        "gate": "official_business_email",
-        "evidenceUrl": "https://www.blackdogsalesgroup.com/"
-      },
-      "hasTarget": true,
-      "inCandidatePool": false,
-      "sameDayCompanyBlocked": false,
-      "blockingStatus": "bounced",
-      "blockingEvidence": "smtp_accepted;message_id:<7de8e380-39e8-1e60-d747-01a49b30181c@flextailgear.com>;sent_folder_message_confirmed;contact_path_strategy_v2;bounce_confirmed:Diagnostic-Code: smtp; The account leo@flextailgear.com is disabled."
-    },
-    {
-      "id": "google-customer-lathrop-associates-website-contact",
-      "company": "Lathrop Associates",
-      "action": "email_priority",
-      "platform": "email",
-      "readiness": {
-        "ready": true,
-        "gate": "official_business_email",
-        "evidenceUrl": "https://cdn.shopify.com/s/files/1/0574/0642/3174/files/Cascade-Designs-US-Sales-Reps.pdf?v=1725838082"
-      },
-      "hasTarget": true,
-      "inCandidatePool": false,
-      "sameDayCompanyBlocked": false,
-      "blockingStatus": "bounced",
-      "blockingEvidence": "smtp_accepted;message_id:<118e2393-0232-c8ad-fd3a-2d6a16030fd8@flextailgear.com>;sent_folder_message_confirmed;contact_path_strategy_v2;bounce_confirmed:10500"
-    },
-    {
-      "id": "google-customer-rep-first-website-contact",
-      "company": "Rep First",
-      "action": "email_priority",
-      "platform": "email",
-      "readiness": {
-        "ready": true,
-        "gate": "official_business_email",
-        "evidenceUrl": "https://www.repfirst.com/about-us"
-      },
-      "hasTarget": true,
-      "inCandidatePool": false,
-      "sameDayCompanyBlocked": false,
-      "blockingStatus": "bounced",
-      "blockingEvidence": "smtp_accepted;message_id:<fd42cf16-af64-f4bf-cde9-fe1d1d65d187@flextailgear.com>;sent_folder_message_confirmed;contact_path_strategy_v2;bounce_confirmed:Diagnostic-Code: smtp; The account leo@flextailgear.com is disabled."
-    },
-    {
-      "id": "google-customer-continental-sports-inc-website-contact",
-      "company": "Continental Sports Inc",
-      "action": "email_priority",
-      "platform": "email",
-      "readiness": {
-        "ready": true,
-        "gate": "official_business_email",
-        "evidenceUrl": "https://csisports.ca/"
-      },
-      "hasTarget": true,
-      "inCandidatePool": false,
-      "sameDayCompanyBlocked": false,
-      "blockingStatus": "bounced",
-      "blockingEvidence": "smtp_accepted;message_id:<2805e1a7-7108-24e0-1147-0cca74c60b0b@flextailgear.com>;sent_folder_message_confirmed;contact_path_strategy_v2;bounce_confirmed:10498"
-    },
-    {
-      "id": "google-customer-sideways-distribution-website-contact",
-      "company": "Sideways Distribution",
-      "action": "email_priority",
-      "platform": "email",
-      "readiness": {
-        "ready": true,
-        "gate": "official_business_email",
-        "evidenceUrl": "https://www.beaverwax.com/pages/new-contact"
-      },
-      "hasTarget": true,
-      "inCandidatePool": false,
-      "sameDayCompanyBlocked": false,
-      "blockingStatus": "website_contact_unreachable_skip",
-      "blockingEvidence": "website_contact_entry_not_verified;contact_entry_clicked:Proform Request Form;public_email_fallback_available:shanebardiau.pnw@gmail.com;email_sender_not_configured;website_contact_all_targets_failed:1;contact_path_strategy_v2"
-    },
-    {
-      "id": "google-customer-nickel-n-diamond-sales-website-contact",
-      "company": "Nickel N Diamond Sales",
-      "action": "email_priority",
-      "platform": "email",
-      "readiness": {
-        "ready": true,
-        "gate": "official_business_email",
-        "evidenceUrl": "https://www.beaverwax.com/pages/new-contact"
-      },
-      "hasTarget": true,
-      "inCandidatePool": false,
-      "sameDayCompanyBlocked": false,
-      "blockingStatus": "website_contact_unreachable_skip",
-      "blockingEvidence": "website_contact_entry_not_verified;contact_entry_clicked:Proform Request Form;public_email_fallback_available:nickelndiamondsales@gmail.com;email_sender_not_configured;website_contact_all_targets_failed:1;contact_path_strategy_v2"
-    },
-    {
-      "id": "google-customer-parallel-33-sales-group-website-contact",
-      "company": "Parallel 33 Sales Group",
-      "action": "email_priority",
-      "platform": "email",
-      "readiness": {
-        "ready": true,
-        "gate": "official_business_email",
-        "evidenceUrl": "https://www.parallel33sales.com/about"
-      },
-      "hasTarget": true,
-      "inCandidatePool": false,
-      "sameDayCompanyBlocked": false,
-      "blockingStatus": "website_contact_unreachable_skip",
-      "blockingEvidence": "website_contact_entry_not_verified;no_contact_entry_control;public_email_fallback_available:parallel33sales@gmail.com;email_sender_not_configured;website_contact_all_targets_failed:1;contact_path_strategy_v2"
-    },
-    {
-      "id": "google-customer-sales-society-72-website-contact",
-      "company": "Sales Society 72",
-      "action": "email_priority",
-      "platform": "email",
-      "readiness": {
-        "ready": true,
-        "gate": "official_business_email",
-        "evidenceUrl": "https://www.beaverwax.com/pages/new-contact"
-      },
-      "hasTarget": true,
-      "inCandidatePool": false,
-      "sameDayCompanyBlocked": false,
-      "blockingStatus": "website_contact_unreachable_skip",
-      "blockingEvidence": "website_contact_entry_not_verified;contact_entry_clicked:Proform Request Form;public_email_fallback_available:salessociety72@gmail.com;email_sender_not_configured;website_contact_all_targets_failed:1;contact_path_strategy_v2"
-    },
-    {
-      "id": "google-customer-dark-blizzard-sales-website-contact",
-      "company": "Dark Blizzard Sales",
-      "action": "email_priority",
-      "platform": "email",
-      "readiness": {
-        "ready": true,
-        "gate": "official_business_email",
-        "evidenceUrl": "https://www.beaverwax.com/pages/new-contact"
-      },
-      "hasTarget": true,
-      "inCandidatePool": false,
-      "sameDayCompanyBlocked": false,
-      "blockingStatus": "website_contact_unreachable_skip",
-      "blockingEvidence": "website_contact_entry_not_verified;contact_entry_clicked:Proform Request Form;public_email_fallback_available:darkblizzardsales@gmail.com;email_sender_not_configured;website_contact_all_targets_failed:1;contact_path_strategy_v2"
-    },
-    {
-      "id": "google-customer-our-habit-sales-website-contact",
-      "company": "Our Habit Sales",
-      "action": "email_priority",
-      "platform": "email",
-      "readiness": {
-        "ready": true,
-        "gate": "official_business_email",
-        "evidenceUrl": "https://www.beaverwax.com/pages/new-contact"
-      },
-      "hasTarget": true,
-      "inCandidatePool": false,
-      "sameDayCompanyBlocked": false,
-      "blockingStatus": "website_contact_unreachable_skip",
-      "blockingEvidence": "website_contact_entry_not_verified;contact_entry_clicked:Proform Request Form;public_email_fallback_available:ourhabit.sales@gmail.com;email_sender_not_configured;website_contact_all_targets_failed:1;contact_path_strategy_v2"
-    },
-    {
-      "id": "google-customer-nick-landry-sales-website-contact",
-      "company": "Nick Landry Sales",
-      "action": "email_priority",
-      "platform": "email",
-      "readiness": {
-        "ready": true,
-        "gate": "official_business_email",
-        "evidenceUrl": "https://www.beaverwax.com/pages/new-contact"
-      },
-      "hasTarget": true,
-      "inCandidatePool": false,
-      "sameDayCompanyBlocked": false,
-      "blockingStatus": "website_contact_unreachable_skip",
-      "blockingEvidence": "website_contact_entry_not_verified;contact_entry_clicked:Proform Request Form;public_email_fallback_available:nicklandry.sales@gmail.com;email_sender_not_configured;website_contact_all_targets_failed:1;contact_path_strategy_v2"
-    },
-    {
-      "id": "google-customer-pfp-and-associates-website-contact",
-      "company": "PFP and Associates",
-      "action": "email_priority",
-      "platform": "email",
-      "readiness": {
-        "ready": true,
-        "gate": "official_business_email",
-        "evidenceUrl": "https://www.pfpandassociates.com/"
-      },
-      "hasTarget": true,
-      "inCandidatePool": false,
-      "sameDayCompanyBlocked": false,
-      "blockingStatus": "website_contact_unreachable_skip",
-      "blockingEvidence": "website_contact_entry_not_verified;contact_entry_clicked:Skip to Content;public_email_fallback_available:tputnam.pfp@gmail.com;email_sender_not_configured;website_contact_all_targets_failed:6;contact_path_strategy_v2"
-    },
-    {
-      "id": "google-customer-zia-works-distribution-website-contact",
-      "company": "Zia Works Distribution",
-      "action": "email_priority",
-      "platform": "email",
-      "readiness": {
-        "ready": true,
-        "gate": "official_business_email",
-        "evidenceUrl": "https://www.nwziaworks.com/"
-      },
-      "hasTarget": true,
-      "inCandidatePool": false,
-      "sameDayCompanyBlocked": false,
-      "blockingStatus": "website_contact_unreachable_skip",
-      "blockingEvidence": "website_page_unavailable_404: 404 錯誤：找不到頁面;public_email_fallback_available:INFO.ZIAWORKSDISTRIBUTION@GMAIL.COM;email_sender_not_configured;website_contact_all_targets_failed:6;contact_path_strategy_v2"
-    },
-    {
-      "id": "google-customer-sanitas-sales-group-website-contact",
-      "company": "Sanitas Sales Group",
-      "action": "email_priority",
-      "platform": "website_form",
-      "readiness": {
-        "ready": true,
-        "gate": "official_supplier_route",
-        "evidenceUrl": "https://sanitassalesgroup.com/contact/"
-      },
-      "hasTarget": true,
-      "inCandidatePool": false,
-      "sameDayCompanyBlocked": false,
-      "blockingStatus": "website_contact_unreachable_skip",
-      "blockingEvidence": "unavailable_profile_page: Skip to primary navigation\nSkip to main content\nSkip to footer\n\nSANITAS SALES GROUP\n\nSales and marketing contractors serving the greater Rocky Mountain region\n\nBRANDS\n \nOUR TERRITO;website_contact_all_targets_failed:6;contact_path_strategy_v2"
-    },
-    {
-      "id": "google-customer-sierra-outdoor-collective-website-contact",
-      "company": "Sierra Outdoor Collective",
-      "action": "develop",
-      "platform": "website_form",
-      "readiness": {
-        "ready": true,
-        "gate": "official_supplier_route",
-        "evidenceUrl": "https://sierraoutdoorcollective.com/"
-      },
-      "hasTarget": true,
-      "inCandidatePool": false,
-      "sameDayCompanyBlocked": false,
-      "blockingStatus": "website_contact_unreachable_skip",
-      "blockingEvidence": "website_contact_entry_not_verified;contact_entry_clicked:Contact Us;website_contact_all_targets_failed:6;contact_path_strategy_v2"
-    },
-    {
-      "id": "google-customer-level-8-outdoor-website-contact",
-      "company": "Level 8 Outdoor",
-      "action": "develop",
-      "platform": "website_form",
-      "readiness": {
-        "ready": true,
-        "gate": "official_supplier_route",
-        "evidenceUrl": "https://level8outdoor.com/about-us"
-      },
-      "hasTarget": true,
-      "inCandidatePool": false,
-      "sameDayCompanyBlocked": false,
-      "blockingStatus": "website_contact_unreachable_skip",
-      "blockingEvidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:1;contact_path_strategy_v2"
-    },
-    {
-      "id": "google-customer-ascension-sales-group-website-contact",
-      "company": "Ascension Sales Group",
-      "action": "develop",
-      "platform": "website_form",
-      "readiness": {
-        "ready": true,
-        "gate": "official_supplier_route",
-        "evidenceUrl": "https://www.ascensionsalesgroup.com/"
-      },
-      "hasTarget": true,
-      "inCandidatePool": false,
-      "sameDayCompanyBlocked": false,
-      "blockingStatus": "website_contact_unreachable_skip",
-      "blockingEvidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:6;contact_path_strategy_v2"
-    },
-    {
-      "id": "google-customer-brandywine-river-reps-website-contact",
-      "company": "Brandywine River Reps",
-      "action": "develop",
-      "platform": "website_form",
-      "readiness": {
-        "ready": true,
-        "gate": "official_supplier_route",
-        "evidenceUrl": "https://www.brreps.com/"
-      },
-      "hasTarget": true,
-      "inCandidatePool": false,
-      "sameDayCompanyBlocked": false,
-      "blockingStatus": "website_contact_unreachable_skip",
-      "blockingEvidence": "unavailable_profile_page: Menu\nSkip to primary navigation\nSkip to secondary navigation\nSkip to main content\nSkip to footer\n\nOutdoor Gear Reps\n\nMenu\nNot found, error 404\n\nThe page you are looking for no long;website_contact_all_targets_failed:6;contact_path_strategy_v2"
-    },
-    {
-      "id": "google-customer-hendrix-outdoors-website-contact",
-      "company": "Hendrix Outdoors",
-      "action": "develop",
-      "platform": "website_form",
-      "readiness": {
-        "ready": true,
-        "gate": "official_supplier_route",
-        "evidenceUrl": "https://hendrixoutdoors.com/"
-      },
-      "hasTarget": true,
-      "inCandidatePool": false,
-      "sameDayCompanyBlocked": false,
-      "blockingStatus": "website_contact_unreachable_skip",
-      "blockingEvidence": "unavailable_profile_page: Skip to content\n\nDue to recent tariff changes, product prices may be adjusted without notice\n\nBECOME A DEALER\nHendrix Outdoors\n0\n\nPage not found\n\nThe page you are looking for canno;website_contact_all_targets_failed:6;contact_path_strategy_v2"
-    },
-    {
-      "id": "google-customer-salvation-sales-website-contact",
-      "company": "Salvation Sales",
-      "action": "develop",
-      "platform": "website_form",
-      "readiness": {
-        "ready": true,
-        "gate": "official_supplier_route",
-        "evidenceUrl": "https://salvationsales.com/"
-      },
-      "hasTarget": true,
-      "inCandidatePool": false,
-      "sameDayCompanyBlocked": false,
-      "blockingStatus": "website_contact_unreachable_skip",
-      "blockingEvidence": "unavailable_profile_page: Page Not Found\n\nWe can’t seem to find the page you’re looking for.\n\nGo To Home Page\n\nCopyright © 2024, Salvation Sales. All Rights Reserved.\n\nPowered by\n\nThis website uses cookies.;website_contact_all_targets_failed:6;contact_path_strategy_v2"
-    },
-    {
-      "id": "google-customer-action-sports-agency-website-contact",
-      "company": "Action Sports Agency",
-      "action": "develop",
-      "platform": "website_form",
-      "readiness": {
-        "ready": true,
-        "gate": "official_supplier_route",
-        "evidenceUrl": "https://www.actionsportsagency.com/"
-      },
-      "hasTarget": true,
-      "inCandidatePool": false,
-      "sameDayCompanyBlocked": false,
-      "blockingStatus": "website_contact_unreachable_skip",
-      "blockingEvidence": "website_contact_entry_not_verified;contact_entry_clicked:Contact Us;website_contact_all_targets_failed:6;contact_path_strategy_v2"
-    },
-    {
-      "id": "google-customer-sky-lines-website-contact",
-      "company": "Sky-Lines",
-      "action": "develop",
-      "platform": "website_form",
-      "readiness": {
-        "ready": true,
-        "gate": "official_supplier_route",
-        "evidenceUrl": "https://sky-lines.ca/"
-      },
-      "hasTarget": true,
-      "inCandidatePool": false,
-      "sameDayCompanyBlocked": false,
-      "blockingStatus": "website_contact_unreachable_skip",
-      "blockingEvidence": "website_page_unavailable_404: Not Found\n\nThe requested URL was not found on this server.\n\nAdditionally, a 404 Not Found error was encountered while trying to use an ErrorDocument to handle the request.;website_contact_all_targets_failed:6;contact_path_strategy_v2"
-    },
-    {
-      "id": "google-customer-sturm-mil-tec-usa-website-contact",
-      "company": "Sturm Mil-Tec USA",
-      "action": "develop",
-      "platform": "website_form",
-      "readiness": {
-        "ready": true,
-        "gate": "official_supplier_route",
-        "evidenceUrl": "https://www.sturm-miltec.com/about-us"
-      },
-      "hasTarget": true,
-      "inCandidatePool": false,
-      "sameDayCompanyBlocked": false,
-      "blockingStatus": "website_contact_unreachable_skip",
-      "blockingEvidence": "website_contact_entry_not_verified;contact_entry_clicked:get in touch;website_contact_all_targets_failed:1;contact_path_strategy_v2"
-    },
-    {
-      "id": "google-customer-edgeline-collective-website-contact",
-      "company": "Edgeline Collective",
-      "action": "develop",
-      "platform": "website_form",
-      "readiness": {
-        "ready": true,
-        "gate": "official_supplier_route",
-        "evidenceUrl": "https://edgelinecollective.com/"
-      },
-      "hasTarget": true,
-      "inCandidatePool": false,
-      "sameDayCompanyBlocked": false,
-      "blockingStatus": "website_contact_unreachable_skip",
-      "blockingEvidence": "unavailable_profile_page: Page Not Found\n\nWe can’t seem to find the page you’re looking for.\n\nGo To Home Page\nPrivacy PolicyTerms and Conditions\n\nEDGELINE COLLECTIVE\n\nCopyright © 2025 Edgeline Collective - ;website_contact_all_targets_failed:6;contact_path_strategy_v2"
-    },
-    {
-      "id": "google-customer-garibaldi-supply-co-website-contact",
-      "company": "Garibaldi Supply Co.",
-      "action": "develop",
-      "platform": "website_form",
-      "readiness": {
-        "ready": true,
-        "gate": "official_supplier_route",
-        "evidenceUrl": "https://garibaldisupplyco.com/"
-      },
-      "hasTarget": true,
-      "inCandidatePool": false,
-      "sameDayCompanyBlocked": false,
-      "blockingStatus": "website_contact_unreachable_skip",
-      "blockingEvidence": "unavailable_profile_page: Skip to primary navigation\nSkip to main content\nSkip to footer\n\nGARIBALDI SUPPLY CO.\n\nConnecting Premium Brands with Retailers, Consumers & Community\n\nNot found, error 404\n\nThe pag;website_contact_all_targets_failed:6;contact_path_strategy_v2"
-    },
-    {
-      "id": "google-customer-precision-sales-and-marketing-website-contact",
-      "company": "Precision Sales and Marketing",
-      "action": "develop",
-      "platform": "website_form",
-      "readiness": {
-        "ready": true,
-        "gate": "official_supplier_route",
-        "evidenceUrl": "https://www.precisionsalesandmarketing.com/services"
-      },
-      "hasTarget": true,
-      "inCandidatePool": false,
-      "sameDayCompanyBlocked": false,
-      "blockingStatus": "website_contact_unreachable_skip",
-      "blockingEvidence": "website_contact_entry_not_verified;contact_entry_clicked:Contact Us;website_contact_all_targets_failed:1;contact_path_strategy_v2"
-    },
-    {
-      "id": "google-customer-kelly-brand-management-website-contact",
-      "company": "Kelly Brand Management",
-      "action": "develop",
-      "platform": "website_form",
-      "readiness": {
-        "ready": true,
-        "gate": "official_supplier_route",
-        "evidenceUrl": "https://www.kellybrandmanagement.com/who-we-serve/"
-      },
-      "hasTarget": true,
-      "inCandidatePool": false,
-      "sameDayCompanyBlocked": false,
-      "blockingStatus": "website_contact_unreachable_skip",
-      "blockingEvidence": "website_contact_entry_not_verified;contact_entry_clicked:GET IN TOUCH;website_contact_all_targets_failed:1;contact_path_strategy_v2"
-    },
-    {
-      "id": "google-customer-kittredge-and-associates-website-contact",
-      "company": "Kittredge and Associates",
-      "action": "develop",
-      "platform": "website_form",
-      "readiness": {
-        "ready": true,
-        "gate": "official_supplier_route",
-        "evidenceUrl": "https://www.kittredgeandassociates.com/"
-      },
-      "hasTarget": true,
-      "inCandidatePool": false,
-      "sameDayCompanyBlocked": false,
-      "blockingStatus": "website_contact_unreachable_skip",
-      "blockingEvidence": "website_page_unavailable_404: Not Found\n\nThe requested URL was not found on this server.\n\nAdditionally, a 404 Not Found error was encountered while trying to use an ErrorDocument to handle the request.;website_contact_all_targets_failed:6;contact_path_strategy_v2"
-    },
-    {
-      "id": "google-customer-outdoor-industry-group-website-contact",
-      "company": "Outdoor Industry Group",
-      "action": "develop",
-      "platform": "website_form",
-      "readiness": {
-        "ready": true,
-        "gate": "official_supplier_route",
-        "evidenceUrl": "https://outdoorindustrygroup.com/contact-us/"
-      },
-      "hasTarget": true,
-      "inCandidatePool": false,
-      "sameDayCompanyBlocked": false,
-      "blockingStatus": "website_contact_unreachable_skip",
-      "blockingEvidence": "website_contact_entry_not_verified;contact_entry_clicked:Skip to content;website_contact_all_targets_failed:1;contact_path_strategy_v2"
-    },
-    {
-      "id": "google-customer-perpetual-motion-nw-website-contact",
-      "company": "Perpetual Motion NW",
-      "action": "develop",
-      "platform": "website_form",
-      "readiness": {
-        "ready": true,
-        "gate": "official_supplier_route",
-        "evidenceUrl": "https://perpetualmotionnw.com/"
-      },
-      "hasTarget": true,
-      "inCandidatePool": false,
-      "sameDayCompanyBlocked": false,
-      "blockingStatus": "website_contact_unreachable_skip",
-      "blockingEvidence": "website_contact_entry_not_verified;contact_entry_clicked:CONTACT US;website_contact_all_targets_failed:6;contact_path_strategy_v2"
-    },
-    {
-      "id": "google-customer-young-mackenzie-distribution-linkedin",
-      "company": "Young & MacKenzie Distribution",
-      "action": "verify_target",
-      "platform": "linkedin",
-      "readiness": {
-        "ready": true,
-        "gate": "first_party_verified_social",
-        "evidenceUrl": "https://yandm.ca/b2b/"
-      },
-      "hasTarget": true,
-      "inCandidatePool": false,
-      "sameDayCompanyBlocked": false,
-      "blockingStatus": "",
-      "blockingEvidence": ""
-    },
-    {
-      "id": "google-customer-elevated-outdoor-sales-linkedin",
-      "company": "Elevated Outdoor Sales",
-      "action": "verify_target",
-      "platform": "linkedin",
-      "readiness": {
-        "ready": true,
-        "gate": "first_party_verified_social",
-        "evidenceUrl": "https://www.elevatedoutdoorsales.com/home"
-      },
-      "hasTarget": true,
-      "inCandidatePool": false,
-      "sameDayCompanyBlocked": false,
-      "blockingStatus": "",
-      "blockingEvidence": ""
-    },
-    {
-      "id": "google-customer-northern-exposure-sporting-group-linkedin",
-      "company": "Northern Exposure Sporting Group",
-      "action": "verify_target",
-      "platform": "linkedin",
-      "readiness": {
-        "ready": true,
-        "gate": "first_party_verified_social",
-        "evidenceUrl": "https://northernsporting.com/"
-      },
-      "hasTarget": true,
-      "inCandidatePool": false,
-      "sameDayCompanyBlocked": false,
-      "blockingStatus": "",
-      "blockingEvidence": ""
-    },
-    {
-      "id": "google-customer-360-adventure-collective-linkedin",
-      "company": "360 Adventure Collective",
-      "action": "verify_target",
-      "platform": "linkedin",
-      "readiness": {
-        "ready": true,
-        "gate": "first_party_verified_social",
-        "evidenceUrl": "https://360adventurecollective.org/"
-      },
-      "hasTarget": true,
-      "inCandidatePool": false,
-      "sameDayCompanyBlocked": false,
-      "blockingStatus": "",
-      "blockingEvidence": ""
-    },
-    {
-      "id": "google-customer-front-point-sales-linkedin",
-      "company": "Front Point Sales",
-      "action": "verify_target",
-      "platform": "linkedin",
-      "readiness": {
-        "ready": true,
-        "gate": "first_party_verified_social",
-        "evidenceUrl": "https://frontpointsales.com/"
-      },
-      "hasTarget": true,
-      "inCandidatePool": false,
-      "sameDayCompanyBlocked": false,
-      "blockingStatus": "",
-      "blockingEvidence": ""
-    },
-    {
-      "id": "google-customer-onwardup-facebook",
-      "company": "OnwardUP",
-      "action": "develop",
-      "platform": "facebook",
-      "readiness": {
-        "ready": true,
-        "gate": "first_party_verified_social",
-        "evidenceUrl": "https://onwardup.com/brands/"
-      },
-      "hasTarget": true,
-      "inCandidatePool": false,
-      "sameDayCompanyBlocked": false,
-      "blockingStatus": "website_contact_unreachable_skip",
-      "blockingEvidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:1;contact_path_strategy_v2"
-    },
-    {
-      "id": "google-customer-powers-pedersen-sales-group-facebook",
-      "company": "Powers Pedersen Sales Group",
-      "action": "develop",
-      "platform": "facebook",
-      "readiness": {
-        "ready": true,
-        "gate": "first_party_verified_social",
-        "evidenceUrl": "https://p-psg.com/"
-      },
-      "hasTarget": true,
-      "inCandidatePool": false,
-      "sameDayCompanyBlocked": false,
-      "blockingStatus": "website_contact_unreachable_skip",
-      "blockingEvidence": "unavailable_profile_page: SKIP TO NAVIGATION\nSKIP TO MAIN CONTENT\nNOT FOUND\nThis is somewhat embarrassing, isn’t it?\n\nIt looks like nothing was found at this location. Maybe try a search?\n\nSEARCH\n\n8585 Comm;website_contact_all_targets_failed:6;contact_path_strategy_v2"
-    },
-    {
-      "id": "google-customer-owens-outdoor-sales-facebook",
-      "company": "Owens Outdoor Sales",
-      "action": "develop",
-      "platform": "facebook",
-      "readiness": {
-        "ready": true,
-        "gate": "first_party_verified_social",
-        "evidenceUrl": "https://owensoutdoorsales.com/"
-      },
-      "hasTarget": true,
-      "inCandidatePool": false,
-      "sameDayCompanyBlocked": false,
-      "blockingStatus": "website_contact_unreachable_skip",
-      "blockingEvidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:6;contact_path_strategy_v2"
-    },
-    {
-      "id": "google-customer-awesome-outdoors-group-facebook",
-      "company": "Awesome Outdoors Group",
-      "action": "develop",
-      "platform": "facebook",
-      "readiness": {
-        "ready": true,
-        "gate": "first_party_verified_social",
-        "evidenceUrl": "https://www.awesomeoutdoorsgroup.com/about-us"
-      },
-      "hasTarget": true,
-      "inCandidatePool": false,
-      "sameDayCompanyBlocked": false,
-      "blockingStatus": "website_contact_unreachable_skip",
-      "blockingEvidence": "website_contact_entry_not_verified;contact_entry_clicked:Skip to Content;website_contact_all_targets_failed:1;contact_path_strategy_v2"
-    },
-    {
-      "id": "google-customer-three-mountain-associates-facebook",
-      "company": "Three Mountain Associates",
-      "action": "develop",
-      "platform": "facebook",
-      "readiness": {
-        "ready": true,
-        "gate": "first_party_verified_social",
-        "evidenceUrl": "https://www.threemountainassociates.com/"
-      },
-      "hasTarget": true,
-      "inCandidatePool": false,
-      "sameDayCompanyBlocked": false,
-      "blockingStatus": "website_contact_unreachable_skip",
-      "blockingEvidence": "website_page_unavailable_404: File not found (404 error)\n\nIf you think what you're looking for should be here, please contact the site owner.;website_contact_all_targets_failed:6;contact_path_strategy_v2"
-    },
-    {
-      "id": "google-customer-caraway-co-facebook",
-      "company": "Caraway & Co.",
-      "action": "develop",
-      "platform": "facebook",
-      "readiness": {
-        "ready": true,
-        "gate": "first_party_verified_social",
-        "evidenceUrl": "https://www.carawayandco.com/"
-      },
-      "hasTarget": true,
-      "inCandidatePool": false,
-      "sameDayCompanyBlocked": false,
-      "blockingStatus": "same_day_retry_circuit_open",
-      "blockingEvidence": "same_day_retry_circuit_open;failed_attempts:2"
-    },
-    {
-      "id": "google-customer-outdoor-gear-canada-facebook",
-      "company": "Outdoor Gear Canada",
-      "action": "develop",
-      "platform": "facebook",
-      "readiness": {
-        "ready": true,
-        "gate": "first_party_verified_social",
-        "evidenceUrl": "https://www.ogc.ca/"
-      },
-      "hasTarget": true,
-      "inCandidatePool": false,
-      "sameDayCompanyBlocked": false,
-      "blockingStatus": "website_contact_unreachable_skip",
-      "blockingEvidence": "website_page_unavailable_404: Server Error\n404 - File or directory not found.\nThe resource you are looking for might have been removed, had its name changed, or is temporarily unavailable.;website_contact_all_targets_failed:6;contact_path_strategy_v2"
-    },
-    {
-      "id": "google-customer-revassa-facebook",
-      "company": "REVASSA",
-      "action": "develop",
-      "platform": "facebook",
-      "readiness": {
-        "ready": true,
-        "gate": "first_party_verified_social",
-        "evidenceUrl": "https://revassa.com.mx/"
-      },
-      "hasTarget": true,
-      "inCandidatePool": false,
-      "sameDayCompanyBlocked": false,
-      "blockingStatus": "website_contact_unreachable_skip",
-      "blockingEvidence": "website_contact_entry_not_verified;contact_entry_clicked:Contáctanos;website_contact_all_targets_failed:6;contact_path_strategy_v2"
-    },
-    {
-      "id": "google-customer-parallel-45-sales-group-instagram",
-      "company": "Parallel 45 Sales Group",
-      "action": "develop",
-      "platform": "instagram",
-      "readiness": {
-        "ready": true,
-        "gate": "first_party_verified_social",
-        "evidenceUrl": "https://www.parallel45sales.com/"
-      },
-      "hasTarget": true,
-      "inCandidatePool": false,
-      "sameDayCompanyBlocked": false,
-      "blockingStatus": "same_day_retry_circuit_open",
-      "blockingEvidence": "same_day_retry_circuit_open;failed_attempts:2"
-    },
-    {
-      "id": "google-customer-perspective-outdoor-instagram",
-      "company": "Perspective Outdoor",
-      "action": "develop",
-      "platform": "instagram",
-      "readiness": {
-        "ready": true,
-        "gate": "first_party_verified_social",
-        "evidenceUrl": "https://www.perspectiveoutdoor.com/contact-us"
-      },
-      "hasTarget": true,
-      "inCandidatePool": false,
-      "sameDayCompanyBlocked": false,
-      "blockingStatus": "website_contact_unreachable_skip",
-      "blockingEvidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:1;contact_path_strategy_v2"
-    },
-    {
-      "id": "google-customer-heron-outdoors-instagram",
-      "company": "Heron Outdoors",
-      "action": "develop",
-      "platform": "instagram",
-      "readiness": {
-        "ready": true,
-        "gate": "first_party_verified_social",
-        "evidenceUrl": "https://www.heronoutdoors.co/"
-      },
-      "hasTarget": true,
-      "inCandidatePool": false,
-      "sameDayCompanyBlocked": false,
-      "blockingStatus": "same_day_retry_circuit_open",
-      "blockingEvidence": "same_day_retry_circuit_open;failed_attempts:2"
-    },
-    {
-      "id": "google-customer-premium-living-products-website-contact",
-      "company": "Premium Living Products",
-      "action": "develop",
-      "platform": "website_form",
-      "readiness": {
-        "ready": true,
-        "gate": "official_supplier_route",
-        "evidenceUrl": "https://premiumlivingproducts.com/"
-      },
-      "hasTarget": true,
-      "inCandidatePool": false,
-      "sameDayCompanyBlocked": false,
-      "blockingStatus": "website_contact_unreachable_skip",
-      "blockingEvidence": "website_contact_entry_not_verified;contact_entry_clicked:Contact Us;website_contact_all_targets_failed:6;contact_path_strategy_v2"
+      "reason": "google_social_profile_not_executable",
+      "action": "Complete Google social channel verification",
+      "description": "Confirm the official social profile and safe message entry before rerunning Google-discovered social outreach.",
+      "hint": "Confirm the official social profile and safe message entry before rerunning Google-discovered social outreach."
     }
   ],
-  "summary": {
-    "totalLeads": 16,
-    "highIcp": 16,
-    "readyToDevelop": 32,
-    "dueNow": 98,
-    "visibleTodayQueue": 72,
-    "potentialPool": 72,
-    "potentialPoolTarget": 100,
-    "customerTableHighIcp": 0,
-    "refillNeeded": 28,
-    "executableCompanies": 48,
-    "executableReserveTarget": 130,
-    "executableReserveNeeded": 82,
-    "executableByChannel": {
-      "linkedin": 5,
-      "facebook": 8,
-      "instagram": 3,
-      "email": 14,
-      "website_form": 18
-    },
-    "verifiedSocialCompanies": 16,
-    "verifiedSocialReserveTarget": 20,
-    "verifiedSocialReserveNeeded": 4,
-    "enrichmentBacklogCount": 24,
-    "googleDiscovered": 98,
-    "facebookDiscovered": 10,
-    "websiteContactDiscovered": 26,
-    "scheduledLater": 0,
-    "cooldown": 30,
-    "emailPriority": 0,
-    "openAgencyMarket": 15,
-    "exclusiveAgencySkipped": 1,
-    "needsVerification": 0,
-    "retainedLowIcp": 0
+  "systemRefresh": {
+    "ok": true,
+    "stdout": "{\n  \"date\": \"2026-08-13\",\n  \"summary\": {\n    \"totalLeads\": 16,\n    \"highIcp\": 16,\n    \"readyToDevelop\": 32,\n    \"dueNow\": 98,\n    \"visibleTodayQueue\": 68,\n    \"potentialPool\": 68,\n    \"potentialPoolTarget\": 100,\n    \"customerTableHighIcp\": 0,\n    \"refillNeeded\": 32,\n    \"executableCompanies\": 44,\n    \"executableReserveTarget\": 130,\n    \"executableReserveNeeded\": 86,\n    \"executableByChannel\": {\n      \"linkedin\": 5,\n      \"facebook\": 8,\n      \"instagram\": 3,\n      \"email\": 11,\n      \"website_form\": 17\n    },\n    \"verifiedSocialCompanies\": 16,\n    \"verifiedSocialReserveTarget\": 20,\n    \"verifiedSocialReserveNeeded\": 4,\n    \"enrichmentBacklogCount\": 24,\n    \"googleDiscovered\": 98,\n    \"facebookDiscovered\": 10,\n    \"websiteContactDiscovered\": 22,\n    \"scheduledLater\": 0,\n    \"cooldown\": 30,\n    \"emailPriority\": 0,\n    \"openAgencyMarket\": 15,\n    \"exclusiveAgencySkipped\": 1,\n    \"needsVerification\": 0,\n    \"retainedLowIcp\": 0\n  },\n  \"bugErrors\": 12,\n  \"queueFile\": \"E:\\\\New project\\\\outreach-dashboard\\\\daily-runs\\\\2026-08-13-daily-automation.json\",\n  \"csvFile\": \"E:\\\\New project\\\\outreach-dashboard\\\\daily-runs\\\\2026-08-13-daily-queue.csv\"\n}",
+    "stderr": "",
+    "error": "",
+    "visibility": {
+      "updatedAt": "2026-08-13T07:18:08.922Z",
+      "source": "main-refreshDailyAutomationArtifacts",
+      "runDate": "2026-08-13",
+      "artifactGeneratedAt": "2026-08-13T07:18:06.684Z",
+      "executionGeneratedAt": "2026-08-13T07:06:50.139Z",
+      "githubSyncUpdatedAt": "2026-08-13T07:15:30.092Z",
+      "counts": {
+        "dailyQueue": 98,
+        "googleDiscovered": 98,
+        "websiteContact": 77,
+        "cooldownQueue": 30,
+        "scheduledLater": 0
+      },
+      "visibleSections": [
+        "workspace",
+        "taskDetailPanel",
+        "todayQueue",
+        "customers",
+        "customerDetail",
+        "seo",
+        "automationAudit",
+        "settings",
+        "rightRail",
+        "githubSyncStatus"
+      ],
+      "refreshedArtifacts": [
+        "daily-automation-latest",
+        "daily-automation-execution-latest",
+        "google-lead-discovery-latest",
+        "github-sync/latest-status",
+        "system-visibility-latest"
+      ],
+      "dailyQueueGoal": {
+        "target": 100,
+        "potentialPool": 68,
+        "refillNeeded": 32,
+        "reached": false
+      },
+      "contactEnrichment": {
+        "enabled": true,
+        "sources": [
+          "dailyQueue",
+          "cooldownQueue",
+          "google-lead-discovery-latest"
+        ],
+        "fields": [
+          "publicEmail",
+          "contactEmail",
+          "contactPhone",
+          "vendorPortal",
+          "contactUrl",
+          "contactSearchUrl",
+          "website"
+        ]
+      }
+    }
+  },
+  "alibabaSessionProbe": {
+    "ok": true,
+    "evidence": "alibaba_webmail_authenticated_compose_visible",
+    "url": "https://qiye.aliyun.com/alimail/entries/v5.1/mail/sentitems/all",
+    "title": "阿里邮箱"
   },
   "bounceReconciliation": {
     "ok": true,
     "reason": "bounce_scan_complete",
     "scanned": 25,
-    "updated": 0
+    "updated": 2,
+    "senderIdentityFailures": 13
   },
-  "completedAt": "2026-08-13T07:06:50.139Z"
+  "ledgerReconciliationCount": 0,
+  "completedAt": "2026-08-13T07:18:09.749Z"
 };
