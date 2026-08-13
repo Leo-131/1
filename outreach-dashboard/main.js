@@ -292,7 +292,21 @@ const COMPANY_HISTORY_BLOCKING_STATUSES = new Set([
   'send_unconfirmed',
   'bounced',
 ]);
-const DAILY_CONFIRMED_COMPANY_TARGET = 100;
+function shanghaiAutomationDate(now = new Date()) {
+  return new Intl.DateTimeFormat('en-CA', { timeZone: 'Asia/Shanghai', year: 'numeric', month: '2-digit', day: '2-digit' }).format(now);
+}
+
+function effectiveDailyConfirmedCompanyTarget(now = new Date()) {
+  try {
+    const config = JSON.parse(fs.readFileSync(path.join(__dirname, 'daily-automation-config.json'), 'utf8'));
+    const override = config.campaignScope && config.campaignScope.oneDayAdditionalConfirmedTarget || {};
+    if (override.authorizedByOwner === true && override.shanghaiDate === shanghaiAutomationDate(now)) {
+      return Math.max(100, Math.min(200, Number(override.effectiveDailyTarget || 100)));
+    }
+  } catch { /* fail closed to the standard production target */ }
+  return 100;
+}
+const DAILY_CONFIRMED_COMPANY_TARGET = effectiveDailyConfirmedCompanyTarget();
 const DEFAULT_DAILY_SOCIAL_EXECUTION_LIMIT = 25;
 const MAXIMUM_DAILY_SOCIAL_EXECUTION_LIMIT = 50;
 const DEFAULT_CUSTOMER_EXECUTION_TIMEOUT_MS = 90000;
@@ -4486,6 +4500,9 @@ async function runDailyAutomationQueue(payload = {}) {
     const userVisibleStatus = formatExecutionBlockerStatus(blockerSummary)
       || 'No Chrome/browser development was performed because safety gates left no executable tasks.';
     const blockerCounts = executionBlockerCounts(blockerSummary);
+    const confirmedToday = sameDayConfirmedCompanyCount(
+      readJsonScriptArray(path.join(__dirname, 'autonomous-outreach-results.js'), 'AUTONOMOUS_OUTREACH_RESULTS'),
+    );
     const queueGoalStatus = executionQueueGoalStatus(latest.summary || {}, confirmedToday);
     if (remainingDailyGap === 0) {
       return {
@@ -4775,6 +4792,9 @@ async function runAutoDailyAndWriteArtifact() {
       count: 1,
       examples: [currentDailyExecutionProgress && currentDailyExecutionProgress.currentItem].filter(Boolean),
     }];
+    const confirmedToday = sameDayConfirmedCompanyCount(
+      readJsonScriptArray(path.join(__dirname, 'autonomous-outreach-results.js'), 'AUTONOMOUS_OUTREACH_RESULTS'),
+    );
     const queueGoalStatus = executionQueueGoalStatus(latest.summary || {}, confirmedToday);
     const recoveryActions = executionRecoveryActions(blockerSummary, queueGoalStatus);
     const recoveryHint = recoveryActions.length ? recoveryActions.map(item => item.hint).join(' ') : undefined;

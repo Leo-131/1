@@ -1400,7 +1400,7 @@ test('daily execution is serial and can process a priority batch per run', () =>
   assert.ok(mainSource.includes('const limit = Math.min(requestedLimit, remainingDailyGap)'));
   assert.ok(mainSource.includes("app.disableHardwareAcceleration()"));
   assert.ok(mainSource.includes("app.commandLine.appendSwitch('disable-gpu')"));
-  assert.ok(mainSource.includes('DAILY_CONFIRMED_COMPANY_TARGET = 100'));
+  assert.ok(mainSource.includes('DAILY_CONFIRMED_COMPANY_TARGET = effectiveDailyConfirmedCompanyTarget()'));
   assert.ok(mainSource.includes('DEFAULT_DAILY_SOCIAL_EXECUTION_LIMIT = 25'));
   assert.ok(mainSource.includes('MAXIMUM_DAILY_SOCIAL_EXECUTION_LIMIT = 50'));
   assert.ok(mainSource.includes('const remainingDailyGap = Math.max(0, DAILY_CONFIRMED_COMPANY_TARGET - confirmedToday)'));
@@ -2016,4 +2016,24 @@ test('North America agency campaign scope excludes other markets and customer ty
   assert.match(dailyRunnerSource, /\.filter\(campaignScopeMatches\)/);
   assert.ok(!dailyRunnerSource.includes("filter(item => !/^united states$/i"));
   assert.ok(dailyRunnerSource.includes("['agency', 'sales_agency']"));
+});
+
+test('owner-authorized extra target is date scoped and bounded at 200', () => {
+  const override = dailyConfig.campaignScope.oneDayAdditionalConfirmedTarget;
+  assert.equal(override.shanghaiDate, '2026-08-13');
+  assert.equal(override.baseDailyTarget, 100);
+  assert.equal(override.additionalTarget, 100);
+  assert.equal(override.effectiveDailyTarget, 200);
+  assert.equal(override.authorizedByOwner, true);
+  assert.ok(mainSource.includes('function effectiveDailyConfirmedCompanyTarget'));
+  assert.ok(mainSource.includes('Math.min(200'));
+});
+
+test('daily execution watchdog recomputes confirmed count inside its own scope', () => {
+  const watchdogStart = mainSource.indexOf('const watchdog = setTimeout(async () =>');
+  const watchdogEnd = mainSource.indexOf('}, timeoutMs);', watchdogStart);
+  const watchdogSource = mainSource.slice(watchdogStart, watchdogEnd);
+  assert.ok(watchdogStart >= 0 && watchdogEnd > watchdogStart);
+  assert.match(watchdogSource, /const confirmedToday = sameDayConfirmedCompanyCount\(/);
+  assert.match(watchdogSource, /executionQueueGoalStatus\(latest\.summary \|\| \{\}, confirmedToday\)/);
 });

@@ -131,6 +131,11 @@ function buildContext({ phase = 'manual', now = new Date() } = {}) {
   ));
   const confirmedCompanies = [...new Set(confirmed.map(companyKey).filter(Boolean))];
   const summary = run.summary || {};
+  const automationConfig = readJson(path.join(ROOT, 'daily-automation-config.json'), {});
+  const targetOverride = automationConfig.campaignScope && automationConfig.campaignScope.oneDayAdditionalConfirmedTarget || {};
+  const effectiveDailyTarget = targetOverride.authorizedByOwner === true && targetOverride.shanghaiDate === date
+    ? Math.max(100, Math.min(200, Number(targetOverride.effectiveDailyTarget || 100)))
+    : 100;
   const context = {
     schemaVersion: EXPECTED_SCHEMA_VERSION,
     generatedAt: now.toISOString(),
@@ -141,13 +146,14 @@ function buildContext({ phase = 'manual', now = new Date() } = {}) {
     sendingAllowed: policy.ok,
     activeBlocks: policy.issues,
     limits: {
-      dailyTarget: 100,
+      dailyTarget: effectiveDailyTarget,
       defaultRunLimit: policy.manifest && policy.manifest.defaultRunLimit || 25,
       maximumRunLimit: policy.manifest && policy.manifest.maximumRunLimit || 50,
       runMaximumMinutes: 45,
     },
     confirmedToday: confirmedCompanies.length,
-    remainingToday: Math.max(0, 100 - confirmedCompanies.length),
+    remainingToday: Math.max(0, effectiveDailyTarget - confirmedCompanies.length),
+    campaignScope: automationConfig.campaignScope || null,
     queue: {
       potentialPool: Number(summary.potentialPool || 0),
       refillNeeded: Number(summary.refillNeeded || 0),
@@ -184,7 +190,7 @@ function refreshRuntime(options = {}) {
     automationId: 'daily-google-lead-outreach-automation',
     phase: built.context.phase,
     runState: execution.completedAt ? 'completed' : 'not_completed',
-    verdict: execution.ok === true && built.context.confirmedToday === 100 ? 'PASS' : 'FAIL',
+    verdict: execution.ok === true && built.context.confirmedToday === built.context.limits.dailyTarget ? 'PASS' : 'FAIL',
     confirmedThisRun: Number(execution.realDevelopmentCount || 0),
     confirmedToday: built.context.confirmedToday,
     remainingToday: built.context.remainingToday,
