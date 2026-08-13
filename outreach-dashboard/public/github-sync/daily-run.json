@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-13T07:22:11.878Z",
+  "generatedAt": "2026-08-13T07:45:12.017Z",
   "date": "2026-08-13",
   "mode": "daily-icp-first-automation-loop",
   "executionLayer": "Dedicated Chrome automation profile only; primary Chrome attachment forbidden",
@@ -151,7 +151,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Thu 03:22",
+        "localTime": "Thu 03:45",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -258,7 +258,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Thu 03:22",
+        "localTime": "Thu 03:45",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -364,7 +364,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Thu 03:22",
+        "localTime": "Thu 03:45",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -393,7 +393,7 @@
       "discoveredAt": "2026-08-13T02:55:03.085Z",
       "firstPartyChannelVerification": {
         "status": "unreachable",
-        "verifiedAt": "2026-08-13T07:21:49.504Z",
+        "verifiedAt": "2026-08-13T07:44:48.328Z",
         "evidenceUrl": "https://cdn.shopify.com/s/files/1/0574/0642/3174/files/Cascade-Designs-US-Sales-Reps.pdf?v=1725838082",
         "httpStatus": 404,
         "signals": [],
@@ -468,7 +468,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Thu 03:22",
+        "localTime": "Thu 03:45",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -576,7 +576,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Thu 03:22",
+        "localTime": "Thu 03:45",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -680,7 +680,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Thu 03:22",
+        "localTime": "Thu 03:45",
         "window": "outside_work_hours",
         "nextBest": "America/Toronto morning",
         "weight": 0
@@ -786,7 +786,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Thu 03:22",
+        "localTime": "Thu 03:45",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -894,7 +894,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Thu 03:22",
+        "localTime": "Thu 03:45",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -1000,7 +1000,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Thu 03:22",
+        "localTime": "Thu 03:45",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -1110,7 +1110,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Thu 03:22",
+        "localTime": "Thu 03:45",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -1214,7 +1214,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Thu 03:22",
+        "localTime": "Thu 03:45",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -1320,7 +1320,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Thu 03:22",
+        "localTime": "Thu 03:45",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -1424,7 +1424,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Thu 03:22",
+        "localTime": "Thu 03:45",
         "window": "outside_work_hours",
         "nextBest": "America/Toronto morning",
         "weight": 0
@@ -1530,7 +1530,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Thu 03:22",
+        "localTime": "Thu 03:45",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -1641,7 +1641,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Thu 03:22",
+        "localTime": "Thu 03:45",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -1747,7 +1747,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Thu 03:22",
+        "localTime": "Thu 03:45",
         "window": "outside_work_hours",
         "nextBest": "America/Toronto morning",
         "weight": 0
@@ -1856,7 +1856,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Thu 03:22",
+        "localTime": "Thu 03:45",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -1964,7 +1964,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Thu 03:22",
+        "localTime": "Thu 03:45",
         "window": "outside_work_hours",
         "nextBest": "America/Toronto morning",
         "weight": 0
@@ -2070,7 +2070,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Thu 03:22",
+        "localTime": "Thu 03:45",
         "window": "outside_work_hours",
         "nextBest": "America/Toronto morning",
         "weight": 0
@@ -2099,7 +2099,7 @@
       "discoveredAt": "2026-08-13T03:01:26.820Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-13T07:08:57.607Z",
+        "verifiedAt": "2026-08-13T07:44:53.320Z",
         "evidenceUrl": "https://salvationsales.com/",
         "httpStatus": 200,
         "signals": [
@@ -2178,7 +2178,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Thu 03:22",
+        "localTime": "Thu 03:45",
         "window": "outside_work_hours",
         "nextBest": "America/Toronto morning",
         "weight": 0
@@ -2274,7 +2274,7 @@
       "identityStatus": "verified",
       "officialSocialProfileVerified": true,
       "socialProfileEvidenceUrl": "https://www.brreps.com/",
-      "socialProfileVerifiedAt": "2026-08-13T07:08:56.894Z",
+      "socialProfileVerifiedAt": "2026-08-13T07:44:52.973Z",
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -2284,7 +2284,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Thu 03:22",
+        "localTime": "Thu 03:45",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -2316,7 +2316,7 @@
       "verifiedTargetUrl": "https://www.facebook.com/pages/Brandywine-River-Representatives-LLC/101345649956301",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-13T07:08:56.894Z",
+        "verifiedAt": "2026-08-13T07:44:52.973Z",
         "evidenceUrl": "https://www.brreps.com/",
         "httpStatus": 200,
         "signals": [
@@ -2384,7 +2384,7 @@
       "identityStatus": "verified",
       "officialSocialProfileVerified": true,
       "socialProfileEvidenceUrl": "https://owensoutdoorsales.com/",
-      "socialProfileVerifiedAt": "2026-08-13T07:08:58.842Z",
+      "socialProfileVerifiedAt": "2026-08-13T07:44:54.273Z",
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -2394,7 +2394,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Thu 03:22",
+        "localTime": "Thu 03:45",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -2426,7 +2426,7 @@
       "verifiedTargetUrl": "https://www.facebook.com/OwensOutdoorSales",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-13T07:08:58.842Z",
+        "verifiedAt": "2026-08-13T07:44:54.273Z",
         "evidenceUrl": "https://owensoutdoorsales.com/",
         "httpStatus": 200,
         "signals": [
@@ -2492,7 +2492,7 @@
       "identityStatus": "verified",
       "officialSocialProfileVerified": true,
       "socialProfileEvidenceUrl": "https://www.parallel45sales.com/",
-      "socialProfileVerifiedAt": "2026-08-13T07:21:48.895Z",
+      "socialProfileVerifiedAt": "2026-08-13T07:44:47.288Z",
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -2502,7 +2502,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Thu 03:22",
+        "localTime": "Thu 03:45",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -2534,7 +2534,7 @@
       "verifiedTargetUrl": "https://www.instagram.com/parallel45sales/",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-13T07:21:48.895Z",
+        "verifiedAt": "2026-08-13T07:44:47.288Z",
         "evidenceUrl": "https://www.parallel45sales.com/",
         "httpStatus": 200,
         "signals": [],
@@ -2608,7 +2608,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Thu 03:22",
+        "localTime": "Thu 03:45",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -2637,7 +2637,7 @@
       "discoveredAt": "2026-08-13T02:29:23.509Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-13T07:09:04.225Z",
+        "verifiedAt": "2026-08-13T07:44:59.810Z",
         "evidenceUrl": "https://www.beaverwax.com/pages/new-contact",
         "httpStatus": 200,
         "signals": [
@@ -2715,7 +2715,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Thu 03:22",
+        "localTime": "Thu 03:45",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -2744,7 +2744,7 @@
       "discoveredAt": "2026-08-12T12:20:57.343Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-13T07:09:00.303Z",
+        "verifiedAt": "2026-08-13T07:44:55.353Z",
         "evidenceUrl": "https://www.4pointsales.com/",
         "httpStatus": 200,
         "signals": [
@@ -2821,7 +2821,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Thu 03:22",
+        "localTime": "Thu 03:45",
         "window": "outside_work_hours",
         "nextBest": "America/Toronto morning",
         "weight": 0
@@ -2850,7 +2850,7 @@
       "discoveredAt": "2026-08-13T03:03:45.764Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-13T07:09:07.040Z",
+        "verifiedAt": "2026-08-13T07:45:02.350Z",
         "evidenceUrl": "https://sky-lines.ca/",
         "httpStatus": 200,
         "signals": [
@@ -2927,7 +2927,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Thu 03:22",
+        "localTime": "Thu 03:45",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -2956,7 +2956,7 @@
       "discoveredAt": "2026-08-12T12:29:10.813Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-13T07:09:01.572Z",
+        "verifiedAt": "2026-08-13T07:44:56.370Z",
         "evidenceUrl": "https://suggsnicholasshea.com/",
         "httpStatus": 200,
         "signals": [],
@@ -3021,7 +3021,7 @@
       "identityStatus": "verified",
       "officialSocialProfileVerified": true,
       "socialProfileEvidenceUrl": "https://www.actionsportsagency.com/",
-      "socialProfileVerifiedAt": "2026-08-13T07:09:01.832Z",
+      "socialProfileVerifiedAt": "2026-08-13T07:44:56.629Z",
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -3031,7 +3031,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Thu 03:22",
+        "localTime": "Thu 03:45",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -3063,7 +3063,7 @@
       "verifiedTargetUrl": "https://www.linkedin.com/company/squarespace/",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-13T07:09:01.832Z",
+        "verifiedAt": "2026-08-13T07:44:56.629Z",
         "evidenceUrl": "https://www.actionsportsagency.com/",
         "httpStatus": 200,
         "signals": [
@@ -3131,7 +3131,7 @@
       "identityStatus": "verified",
       "officialSocialProfileVerified": true,
       "socialProfileEvidenceUrl": "https://www.elevatedoutdoorsales.com/home",
-      "socialProfileVerifiedAt": "2026-08-13T07:09:01.454Z",
+      "socialProfileVerifiedAt": "2026-08-13T07:44:57.150Z",
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -3141,7 +3141,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Thu 03:22",
+        "localTime": "Thu 03:45",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -3173,7 +3173,7 @@
       "verifiedTargetUrl": "https://www.linkedin.com/in/mike-freiberg-b793979/",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-13T07:09:01.454Z",
+        "verifiedAt": "2026-08-13T07:44:57.150Z",
         "evidenceUrl": "https://www.elevatedoutdoorsales.com/home",
         "httpStatus": 200,
         "signals": [],
@@ -3237,7 +3237,7 @@
       "identityStatus": "verified",
       "officialSocialProfileVerified": true,
       "socialProfileEvidenceUrl": "https://www.sturm-miltec.com/about-us",
-      "socialProfileVerifiedAt": "2026-08-13T07:08:59.497Z",
+      "socialProfileVerifiedAt": "2026-08-13T07:44:54.643Z",
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -3247,7 +3247,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Thu 03:22",
+        "localTime": "Thu 03:45",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -3279,7 +3279,7 @@
       "verifiedTargetUrl": "https://www.facebook.com/MILTECUSA/",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-13T07:08:59.497Z",
+        "verifiedAt": "2026-08-13T07:44:54.643Z",
         "evidenceUrl": "https://www.sturm-miltec.com/about-us",
         "httpStatus": 200,
         "signals": [
@@ -3347,7 +3347,7 @@
       "identityStatus": "verified",
       "officialSocialProfileVerified": true,
       "socialProfileEvidenceUrl": "https://www.perspectiveoutdoor.com/contact-us",
-      "socialProfileVerifiedAt": "2026-08-13T07:09:03.582Z",
+      "socialProfileVerifiedAt": "2026-08-13T07:44:58.885Z",
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -3357,7 +3357,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Thu 03:22",
+        "localTime": "Thu 03:45",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -3389,7 +3389,7 @@
       "verifiedTargetUrl": "https://www.instagram.com/perspectiveoutdoor/",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-13T07:09:03.582Z",
+        "verifiedAt": "2026-08-13T07:44:58.885Z",
         "evidenceUrl": "https://www.perspectiveoutdoor.com/contact-us",
         "httpStatus": 200,
         "signals": [
@@ -3465,7 +3465,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Thu 03:22",
+        "localTime": "Thu 03:45",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -3494,7 +3494,7 @@
       "discoveredAt": "2026-08-13T02:29:23.509Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-13T07:09:09.039Z",
+        "verifiedAt": "2026-08-13T07:45:04.952Z",
         "evidenceUrl": "https://www.beaverwax.com/pages/new-contact",
         "httpStatus": 200,
         "signals": [
@@ -3572,7 +3572,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Thu 03:22",
+        "localTime": "Thu 03:45",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -3601,7 +3601,7 @@
       "discoveredAt": "2026-08-12T12:08:00.110Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-13T07:09:07.599Z",
+        "verifiedAt": "2026-08-13T07:45:03.229Z",
         "evidenceUrl": "https://www.parallel33sales.com/about",
         "httpStatus": 200,
         "signals": [
@@ -3678,7 +3678,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Thu 03:22",
+        "localTime": "Thu 03:45",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -3707,7 +3707,7 @@
       "discoveredAt": "2026-08-13T02:29:23.509Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-13T07:09:09.459Z",
+        "verifiedAt": "2026-08-13T07:45:05.151Z",
         "evidenceUrl": "https://www.beaverwax.com/pages/new-contact",
         "httpStatus": 200,
         "signals": [
@@ -3785,7 +3785,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Thu 03:22",
+        "localTime": "Thu 03:45",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -3814,7 +3814,7 @@
       "discoveredAt": "2026-08-13T02:29:23.509Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-13T07:16:11.175Z",
+        "verifiedAt": "2026-08-13T07:45:11.221Z",
         "evidenceUrl": "https://www.beaverwax.com/pages/new-contact",
         "httpStatus": 200,
         "signals": [
@@ -3892,7 +3892,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Thu 03:22",
+        "localTime": "Thu 03:45",
         "window": "outside_work_hours",
         "nextBest": "America/Toronto morning",
         "weight": 0
@@ -3921,7 +3921,7 @@
       "discoveredAt": "2026-08-13T02:29:23.509Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-13T07:16:11.247Z",
+        "verifiedAt": "2026-08-13T07:45:10.415Z",
         "evidenceUrl": "https://www.beaverwax.com/pages/new-contact",
         "httpStatus": 200,
         "signals": [
@@ -3999,7 +3999,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Thu 03:22",
+        "localTime": "Thu 03:45",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -4028,7 +4028,7 @@
       "discoveredAt": "2026-08-12T12:08:00.110Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-13T06:54:29.983Z",
+        "verifiedAt": "2026-08-13T07:45:08.731Z",
         "evidenceUrl": "https://1889sales.com/about.html",
         "httpStatus": 200,
         "signals": [
@@ -4105,7 +4105,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Thu 03:22",
+        "localTime": "Thu 03:45",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -4134,7 +4134,7 @@
       "discoveredAt": "2026-08-12T11:50:46.264Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-13T07:09:09.788Z",
+        "verifiedAt": "2026-08-13T07:45:05.628Z",
         "evidenceUrl": "https://cng-distribution.com/",
         "httpStatus": 200,
         "signals": [
@@ -4211,7 +4211,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Thu 03:22",
+        "localTime": "Thu 03:45",
         "window": "outside_work_hours",
         "nextBest": "America/Toronto morning",
         "weight": 0
@@ -4240,7 +4240,7 @@
       "discoveredAt": "2026-08-12T11:59:09.107Z",
       "firstPartyChannelVerification": {
         "status": "unreachable",
-        "verifiedAt": "2026-08-13T06:54:25.941Z",
+        "verifiedAt": "2026-08-13T07:45:05.227Z",
         "evidenceUrl": "https://www.nordcoregroup.ca/contactus",
         "httpStatus": 403,
         "signals": [],
@@ -4315,7 +4315,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Thu 03:22",
+        "localTime": "Thu 03:45",
         "window": "outside_work_hours",
         "nextBest": "America/Toronto morning",
         "weight": 0
@@ -4344,7 +4344,7 @@
       "discoveredAt": "2026-08-12T12:04:29.057Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-13T06:54:27.589Z",
+        "verifiedAt": "2026-08-13T07:45:10.150Z",
         "evidenceUrl": "https://tinshack.ca/",
         "httpStatus": 200,
         "signals": [
@@ -4411,7 +4411,7 @@
       "identityStatus": "verified",
       "officialSocialProfileVerified": true,
       "socialProfileEvidenceUrl": "https://northernsporting.com/",
-      "socialProfileVerifiedAt": "2026-08-13T06:54:29.094Z",
+      "socialProfileVerifiedAt": "2026-08-13T07:45:07.836Z",
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -4421,7 +4421,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Thu 03:22",
+        "localTime": "Thu 03:45",
         "window": "outside_work_hours",
         "nextBest": "America/Toronto morning",
         "weight": 0
@@ -4453,7 +4453,7 @@
       "verifiedTargetUrl": "https://linkedin.com/in/shawn-hannah-47487913",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-13T06:54:29.094Z",
+        "verifiedAt": "2026-08-13T07:45:07.836Z",
         "evidenceUrl": "https://northernsporting.com/",
         "httpStatus": 200,
         "signals": [
@@ -4519,7 +4519,7 @@
       "identityStatus": "verified",
       "officialSocialProfileVerified": true,
       "socialProfileEvidenceUrl": "https://www.babblingbrooksales.com/",
-      "socialProfileVerifiedAt": "2026-08-13T07:16:10.710Z",
+      "socialProfileVerifiedAt": "2026-08-13T07:45:08.240Z",
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -4529,7 +4529,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Thu 03:22",
+        "localTime": "Thu 03:45",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -4561,7 +4561,7 @@
       "verifiedTargetUrl": "http://facebook.com/babblingbrooksales",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-13T07:16:10.710Z",
+        "verifiedAt": "2026-08-13T07:45:08.240Z",
         "evidenceUrl": "https://www.babblingbrooksales.com/",
         "httpStatus": 200,
         "signals": [
@@ -4627,7 +4627,7 @@
       "identityStatus": "verified",
       "officialSocialProfileVerified": true,
       "socialProfileEvidenceUrl": "https://www.heronoutdoors.co/",
-      "socialProfileVerifiedAt": "2026-08-13T07:16:10.430Z",
+      "socialProfileVerifiedAt": "2026-08-13T07:45:10.645Z",
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -4637,7 +4637,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Thu 03:22",
+        "localTime": "Thu 03:45",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -4669,7 +4669,7 @@
       "verifiedTargetUrl": "https://www.instagram.com/heronoutdoorsco",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-13T07:16:10.430Z",
+        "verifiedAt": "2026-08-13T07:45:10.645Z",
         "evidenceUrl": "https://www.heronoutdoors.co/",
         "httpStatus": 200,
         "signals": [],
@@ -4743,7 +4743,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Thu 03:22",
+        "localTime": "Thu 03:45",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -4850,7 +4850,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Thu 03:22",
+        "localTime": "Thu 03:45",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -4958,7 +4958,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Thu 03:22",
+        "localTime": "Thu 03:45",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -5056,7 +5056,7 @@
       "identityStatus": "verified",
       "officialSocialProfileVerified": true,
       "socialProfileEvidenceUrl": "https://garibaldisupplyco.com/",
-      "socialProfileVerifiedAt": "2026-08-13T07:16:11.917Z",
+      "socialProfileVerifiedAt": "2026-08-13T07:45:11.405Z",
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -5066,7 +5066,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Thu 03:22",
+        "localTime": "Thu 03:45",
         "window": "outside_work_hours",
         "nextBest": "America/Toronto morning",
         "weight": 0
@@ -5098,7 +5098,7 @@
       "verifiedTargetUrl": "https://www.instagram.com/garibaldi_supply_co/",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-13T07:16:11.917Z",
+        "verifiedAt": "2026-08-13T07:45:11.405Z",
         "evidenceUrl": "https://garibaldisupplyco.com/",
         "httpStatus": 200,
         "signals": [
@@ -5176,7 +5176,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Thu 03:22",
+        "localTime": "Thu 03:45",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -5284,7 +5284,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Thu 03:22",
+        "localTime": "Thu 03:45",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -5393,7 +5393,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Thu 03:22",
+        "localTime": "Thu 03:45",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -5501,7 +5501,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Thu 03:22",
+        "localTime": "Thu 03:45",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -5609,7 +5609,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Thu 03:22",
+        "localTime": "Thu 03:45",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -5715,7 +5715,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Thu 03:22",
+        "localTime": "Thu 03:45",
         "window": "outside_work_hours",
         "nextBest": "America/Toronto morning",
         "weight": 0
@@ -5819,7 +5819,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Thu 03:22",
+        "localTime": "Thu 03:45",
         "window": "outside_work_hours",
         "nextBest": "America/Toronto morning",
         "weight": 0
@@ -5923,7 +5923,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Thu 03:22",
+        "localTime": "Thu 03:45",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -6031,7 +6031,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Thu 03:22",
+        "localTime": "Thu 03:45",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -6135,7 +6135,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Thu 03:22",
+        "localTime": "Thu 03:45",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -6239,7 +6239,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Thu 03:22",
+        "localTime": "Thu 03:45",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -6350,7 +6350,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Thu 03:22",
+        "localTime": "Thu 03:45",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -6459,7 +6459,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Thu 03:22",
+        "localTime": "Thu 03:45",
         "window": "outside_work_hours",
         "nextBest": "America/Toronto morning",
         "weight": 0
@@ -6567,7 +6567,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Thu 03:22",
+        "localTime": "Thu 03:45",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -6677,7 +6677,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Thu 03:22",
+        "localTime": "Thu 03:45",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -6781,7 +6781,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Thu 03:22",
+        "localTime": "Thu 03:45",
         "window": "outside_work_hours",
         "nextBest": "America/Toronto morning",
         "weight": 0
@@ -6885,7 +6885,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Thu 03:22",
+        "localTime": "Thu 03:45",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -6989,7 +6989,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Thu 03:22",
+        "localTime": "Thu 03:45",
         "window": "outside_work_hours",
         "nextBest": "America/Toronto morning",
         "weight": 0
@@ -7097,7 +7097,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Thu 03:22",
+        "localTime": "Thu 03:45",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -7203,7 +7203,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Asia/Shanghai",
-        "localTime": "Thu 15:22",
+        "localTime": "Thu 15:45",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
@@ -7311,7 +7311,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Thu 03:22",
+        "localTime": "Thu 03:45",
         "window": "outside_work_hours",
         "nextBest": "America/Toronto morning",
         "weight": 0
@@ -7340,7 +7340,7 @@
       "discoveredAt": "2026-08-13T02:18:26.662Z",
       "firstPartyChannelVerification": {
         "status": "unreachable",
-        "verifiedAt": "2026-08-13T07:21:47.193Z",
+        "verifiedAt": "2026-08-13T07:44:46.005Z",
         "evidenceUrl": "",
         "httpStatus": 0,
         "signals": [],
@@ -7417,7 +7417,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/13 15:21:46",
+        "localTime": "2026/8/13 15:44:45",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "linkedin",
@@ -7524,7 +7524,7 @@
       "identityStatus": "verified",
       "officialSocialProfileVerified": true,
       "socialProfileEvidenceUrl": "https://www.elevatedoutdoorsales.com/home",
-      "socialProfileVerifiedAt": "2026-08-13T07:09:01.454Z",
+      "socialProfileVerifiedAt": "2026-08-13T07:44:57.150Z",
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -7534,7 +7534,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/13 15:21:46",
+        "localTime": "2026/8/13 15:44:45",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "linkedin",
@@ -7564,7 +7564,7 @@
       "verifiedTargetUrl": "https://www.linkedin.com/in/mike-freiberg-b793979/",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-13T07:09:01.454Z",
+        "verifiedAt": "2026-08-13T07:44:57.150Z",
         "evidenceUrl": "https://www.elevatedoutdoorsales.com/home",
         "httpStatus": 200,
         "signals": [],
@@ -7641,7 +7641,7 @@
       "identityStatus": "verified",
       "officialSocialProfileVerified": true,
       "socialProfileEvidenceUrl": "https://northernsporting.com/",
-      "socialProfileVerifiedAt": "2026-08-13T06:54:29.094Z",
+      "socialProfileVerifiedAt": "2026-08-13T07:45:07.836Z",
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -7651,7 +7651,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/13 15:21:46",
+        "localTime": "2026/8/13 15:44:45",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "linkedin",
@@ -7681,7 +7681,7 @@
       "verifiedTargetUrl": "https://linkedin.com/in/shawn-hannah-47487913",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-13T06:54:29.094Z",
+        "verifiedAt": "2026-08-13T07:45:07.836Z",
         "evidenceUrl": "https://northernsporting.com/",
         "httpStatus": 200,
         "signals": [
@@ -7770,7 +7770,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/13 15:21:46",
+        "localTime": "2026/8/13 15:44:45",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "linkedin",
@@ -7889,7 +7889,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/13 15:21:46",
+        "localTime": "2026/8/13 15:44:45",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "linkedin",
@@ -8006,7 +8006,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/13 15:21:46",
+        "localTime": "2026/8/13 15:44:45",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -8123,7 +8123,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/13 15:21:46",
+        "localTime": "2026/8/13 15:44:45",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -8230,7 +8230,7 @@
       "identityStatus": "verified",
       "officialSocialProfileVerified": true,
       "socialProfileEvidenceUrl": "https://owensoutdoorsales.com/",
-      "socialProfileVerifiedAt": "2026-08-13T07:08:58.842Z",
+      "socialProfileVerifiedAt": "2026-08-13T07:44:54.273Z",
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -8240,7 +8240,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/13 15:21:46",
+        "localTime": "2026/8/13 15:44:45",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -8270,7 +8270,7 @@
       "verifiedTargetUrl": "https://www.facebook.com/OwensOutdoorSales",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-13T07:08:58.842Z",
+        "verifiedAt": "2026-08-13T07:44:54.273Z",
         "evidenceUrl": "https://owensoutdoorsales.com/",
         "httpStatus": 200,
         "signals": [
@@ -8359,7 +8359,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/13 15:21:46",
+        "localTime": "2026/8/13 15:44:45",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -8478,7 +8478,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/13 15:21:46",
+        "localTime": "2026/8/13 15:44:45",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -8595,7 +8595,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/13 15:21:46",
+        "localTime": "2026/8/13 15:44:45",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -8715,7 +8715,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/13 15:21:46",
+        "localTime": "2026/8/13 15:44:45",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -8834,7 +8834,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/13 15:21:46",
+        "localTime": "2026/8/13 15:44:45",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -8943,7 +8943,7 @@
       "identityStatus": "verified",
       "officialSocialProfileVerified": true,
       "socialProfileEvidenceUrl": "https://www.parallel45sales.com/",
-      "socialProfileVerifiedAt": "2026-08-13T07:21:48.895Z",
+      "socialProfileVerifiedAt": "2026-08-13T07:44:47.288Z",
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -8953,7 +8953,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/13 15:21:46",
+        "localTime": "2026/8/13 15:44:45",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -8983,7 +8983,7 @@
       "verifiedTargetUrl": "https://www.instagram.com/parallel45sales/",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-13T07:21:48.895Z",
+        "verifiedAt": "2026-08-13T07:44:47.288Z",
         "evidenceUrl": "https://www.parallel45sales.com/",
         "httpStatus": 200,
         "signals": [],
@@ -9060,7 +9060,7 @@
       "identityStatus": "verified",
       "officialSocialProfileVerified": true,
       "socialProfileEvidenceUrl": "https://www.perspectiveoutdoor.com/contact-us",
-      "socialProfileVerifiedAt": "2026-08-13T07:09:03.582Z",
+      "socialProfileVerifiedAt": "2026-08-13T07:44:58.885Z",
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -9070,7 +9070,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/13 15:21:46",
+        "localTime": "2026/8/13 15:44:45",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -9100,7 +9100,7 @@
       "verifiedTargetUrl": "https://www.instagram.com/perspectiveoutdoor/",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-13T07:09:03.582Z",
+        "verifiedAt": "2026-08-13T07:44:58.885Z",
         "evidenceUrl": "https://www.perspectiveoutdoor.com/contact-us",
         "httpStatus": 200,
         "signals": [
@@ -9179,7 +9179,7 @@
       "identityStatus": "verified",
       "officialSocialProfileVerified": true,
       "socialProfileEvidenceUrl": "https://www.heronoutdoors.co/",
-      "socialProfileVerifiedAt": "2026-08-13T07:16:10.430Z",
+      "socialProfileVerifiedAt": "2026-08-13T07:45:10.645Z",
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -9189,7 +9189,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/13 15:21:46",
+        "localTime": "2026/8/13 15:44:45",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -9219,7 +9219,7 @@
       "verifiedTargetUrl": "https://www.instagram.com/heronoutdoorsco",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-13T07:16:10.430Z",
+        "verifiedAt": "2026-08-13T07:45:10.645Z",
         "evidenceUrl": "https://www.heronoutdoors.co/",
         "httpStatus": 200,
         "signals": [],
@@ -9306,7 +9306,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/13 15:21:46",
+        "localTime": "2026/8/13 15:44:45",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -9333,7 +9333,7 @@
       "discoveredAt": "2026-08-13T02:55:03.085Z",
       "firstPartyChannelVerification": {
         "status": "unreachable",
-        "verifiedAt": "2026-08-13T07:21:49.504Z",
+        "verifiedAt": "2026-08-13T07:44:48.328Z",
         "evidenceUrl": "https://cdn.shopify.com/s/files/1/0574/0642/3174/files/Cascade-Designs-US-Sales-Reps.pdf?v=1725838082",
         "httpStatus": 404,
         "signals": [],
@@ -9421,7 +9421,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/13 15:21:46",
+        "localTime": "2026/8/13 15:44:45",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -9541,7 +9541,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/13 15:21:46",
+        "localTime": "2026/8/13 15:44:45",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -9568,7 +9568,7 @@
       "discoveredAt": "2026-08-13T02:29:23.509Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-13T07:09:04.225Z",
+        "verifiedAt": "2026-08-13T07:44:59.810Z",
         "evidenceUrl": "https://www.beaverwax.com/pages/new-contact",
         "httpStatus": 200,
         "signals": [
@@ -9659,7 +9659,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/13 15:21:46",
+        "localTime": "2026/8/13 15:44:45",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -9686,7 +9686,7 @@
       "discoveredAt": "2026-08-13T02:29:23.509Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-13T07:09:09.039Z",
+        "verifiedAt": "2026-08-13T07:45:04.952Z",
         "evidenceUrl": "https://www.beaverwax.com/pages/new-contact",
         "httpStatus": 200,
         "signals": [
@@ -9777,7 +9777,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/13 15:21:46",
+        "localTime": "2026/8/13 15:44:45",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -9804,7 +9804,7 @@
       "discoveredAt": "2026-08-12T12:08:00.110Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-13T07:09:07.599Z",
+        "verifiedAt": "2026-08-13T07:45:03.229Z",
         "evidenceUrl": "https://www.parallel33sales.com/about",
         "httpStatus": 200,
         "signals": [
@@ -9894,7 +9894,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/13 15:21:46",
+        "localTime": "2026/8/13 15:44:45",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -9921,7 +9921,7 @@
       "discoveredAt": "2026-08-13T02:29:23.509Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-13T07:09:09.459Z",
+        "verifiedAt": "2026-08-13T07:45:05.151Z",
         "evidenceUrl": "https://www.beaverwax.com/pages/new-contact",
         "httpStatus": 200,
         "signals": [
@@ -10012,7 +10012,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/13 15:21:46",
+        "localTime": "2026/8/13 15:44:45",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -10039,7 +10039,7 @@
       "discoveredAt": "2026-08-13T02:29:23.509Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-13T07:16:11.175Z",
+        "verifiedAt": "2026-08-13T07:45:11.221Z",
         "evidenceUrl": "https://www.beaverwax.com/pages/new-contact",
         "httpStatus": 200,
         "signals": [
@@ -10130,7 +10130,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/13 15:21:46",
+        "localTime": "2026/8/13 15:44:45",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -10157,7 +10157,7 @@
       "discoveredAt": "2026-08-13T02:29:23.509Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-13T07:16:11.247Z",
+        "verifiedAt": "2026-08-13T07:45:10.415Z",
         "evidenceUrl": "https://www.beaverwax.com/pages/new-contact",
         "httpStatus": 200,
         "signals": [
@@ -10248,7 +10248,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/13 15:21:46",
+        "localTime": "2026/8/13 15:44:45",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -10366,7 +10366,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/13 15:21:46",
+        "localTime": "2026/8/13 15:44:45",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -10485,7 +10485,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/13 15:21:46",
+        "localTime": "2026/8/13 15:44:45",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -10605,7 +10605,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/13 15:21:46",
+        "localTime": "2026/8/13 15:44:45",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -10723,7 +10723,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/13 15:21:46",
+        "localTime": "2026/8/13 15:44:45",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -10840,7 +10840,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/13 15:21:46",
+        "localTime": "2026/8/13 15:44:45",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -10957,7 +10957,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/13 15:21:46",
+        "localTime": "2026/8/13 15:44:45",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -11076,7 +11076,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/13 15:21:46",
+        "localTime": "2026/8/13 15:44:45",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -11191,7 +11191,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/13 15:21:46",
+        "localTime": "2026/8/13 15:44:45",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -11310,7 +11310,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/13 15:21:46",
+        "localTime": "2026/8/13 15:44:45",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -11427,7 +11427,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/13 15:21:46",
+        "localTime": "2026/8/13 15:44:45",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -11547,7 +11547,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/13 15:21:46",
+        "localTime": "2026/8/13 15:44:45",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -11662,7 +11662,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/13 15:21:46",
+        "localTime": "2026/8/13 15:44:45",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -11779,7 +11779,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/13 15:21:46",
+        "localTime": "2026/8/13 15:44:45",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -11894,7 +11894,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/13 15:21:46",
+        "localTime": "2026/8/13 15:44:45",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -11921,7 +11921,7 @@
       "discoveredAt": "2026-08-12T12:29:10.813Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-13T07:08:56.894Z",
+        "verifiedAt": "2026-08-13T07:44:52.973Z",
         "evidenceUrl": "https://www.brreps.com/",
         "httpStatus": 200,
         "signals": [
@@ -12013,7 +12013,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/13 15:21:46",
+        "localTime": "2026/8/13 15:44:45",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -12132,7 +12132,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/13 15:21:46",
+        "localTime": "2026/8/13 15:44:45",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -12249,7 +12249,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/13 15:21:46",
+        "localTime": "2026/8/13 15:44:45",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -12276,7 +12276,7 @@
       "discoveredAt": "2026-08-13T03:01:26.820Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-13T07:08:57.607Z",
+        "verifiedAt": "2026-08-13T07:44:53.320Z",
         "evidenceUrl": "https://salvationsales.com/",
         "httpStatus": 200,
         "signals": [
@@ -12368,7 +12368,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/13 15:21:46",
+        "localTime": "2026/8/13 15:44:45",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -12485,7 +12485,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/13 15:21:46",
+        "localTime": "2026/8/13 15:44:45",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -12512,7 +12512,7 @@
       "discoveredAt": "2026-08-12T12:20:57.343Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-13T07:09:00.303Z",
+        "verifiedAt": "2026-08-13T07:44:55.353Z",
         "evidenceUrl": "https://www.4pointsales.com/",
         "httpStatus": 200,
         "signals": [
@@ -12602,7 +12602,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/13 15:21:46",
+        "localTime": "2026/8/13 15:44:45",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -12629,7 +12629,7 @@
       "discoveredAt": "2026-08-12T12:29:10.813Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-13T07:09:01.832Z",
+        "verifiedAt": "2026-08-13T07:44:56.629Z",
         "evidenceUrl": "https://www.actionsportsagency.com/",
         "httpStatus": 200,
         "signals": [
@@ -12721,7 +12721,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/13 15:21:46",
+        "localTime": "2026/8/13 15:44:45",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -12748,7 +12748,7 @@
       "discoveredAt": "2026-08-13T03:03:45.764Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-13T07:09:07.040Z",
+        "verifiedAt": "2026-08-13T07:45:02.350Z",
         "evidenceUrl": "https://sky-lines.ca/",
         "httpStatus": 200,
         "signals": [
@@ -12838,7 +12838,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/13 15:21:46",
+        "localTime": "2026/8/13 15:44:45",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -12865,7 +12865,7 @@
       "discoveredAt": "2026-08-12T11:59:09.107Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-13T07:08:59.497Z",
+        "verifiedAt": "2026-08-13T07:44:54.643Z",
         "evidenceUrl": "https://www.sturm-miltec.com/about-us",
         "httpStatus": 200,
         "signals": [
@@ -12957,7 +12957,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/13 15:21:46",
+        "localTime": "2026/8/13 15:44:45",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -12984,7 +12984,7 @@
       "discoveredAt": "2026-08-12T12:29:10.813Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-13T07:09:01.572Z",
+        "verifiedAt": "2026-08-13T07:44:56.370Z",
         "evidenceUrl": "https://suggsnicholasshea.com/",
         "httpStatus": 200,
         "signals": [],
@@ -13072,7 +13072,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/13 15:21:46",
+        "localTime": "2026/8/13 15:44:45",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -13099,7 +13099,7 @@
       "discoveredAt": "2026-08-12T12:08:00.110Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-13T06:54:29.983Z",
+        "verifiedAt": "2026-08-13T07:45:08.731Z",
         "evidenceUrl": "https://1889sales.com/about.html",
         "httpStatus": 200,
         "signals": [
@@ -13189,7 +13189,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/13 15:21:46",
+        "localTime": "2026/8/13 15:44:45",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -13216,7 +13216,7 @@
       "discoveredAt": "2026-08-12T12:20:57.343Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-13T07:16:10.710Z",
+        "verifiedAt": "2026-08-13T07:45:08.240Z",
         "evidenceUrl": "https://www.babblingbrooksales.com/",
         "httpStatus": 200,
         "signals": [
@@ -13306,7 +13306,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/13 15:21:46",
+        "localTime": "2026/8/13 15:44:45",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -13333,7 +13333,7 @@
       "discoveredAt": "2026-08-12T11:50:46.264Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-13T07:09:09.788Z",
+        "verifiedAt": "2026-08-13T07:45:05.628Z",
         "evidenceUrl": "https://cng-distribution.com/",
         "httpStatus": 200,
         "signals": [
@@ -13423,7 +13423,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/13 15:21:46",
+        "localTime": "2026/8/13 15:44:45",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -13450,7 +13450,7 @@
       "discoveredAt": "2026-08-12T11:59:09.107Z",
       "firstPartyChannelVerification": {
         "status": "unreachable",
-        "verifiedAt": "2026-08-13T06:54:25.941Z",
+        "verifiedAt": "2026-08-13T07:45:05.227Z",
         "evidenceUrl": "https://www.nordcoregroup.ca/contactus",
         "httpStatus": 403,
         "signals": [],
@@ -13538,7 +13538,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/13 15:21:46",
+        "localTime": "2026/8/13 15:44:45",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -13565,7 +13565,7 @@
       "discoveredAt": "2026-08-12T12:04:29.057Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-13T06:54:27.589Z",
+        "verifiedAt": "2026-08-13T07:45:10.150Z",
         "evidenceUrl": "https://tinshack.ca/",
         "httpStatus": 200,
         "signals": [
@@ -13655,7 +13655,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/13 15:21:46",
+        "localTime": "2026/8/13 15:44:45",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -13774,7 +13774,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/13 15:21:46",
+        "localTime": "2026/8/13 15:44:45",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -13801,7 +13801,7 @@
       "discoveredAt": "2026-08-12T12:04:29.057Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-13T07:16:11.917Z",
+        "verifiedAt": "2026-08-13T07:45:11.405Z",
         "evidenceUrl": "https://garibaldisupplyco.com/",
         "httpStatus": 200,
         "signals": [
@@ -13893,7 +13893,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/13 15:21:46",
+        "localTime": "2026/8/13 15:44:45",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -14012,7 +14012,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/13 15:21:46",
+        "localTime": "2026/8/13 15:44:45",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -14127,7 +14127,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/13 15:21:46",
+        "localTime": "2026/8/13 15:44:45",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -14242,7 +14242,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/13 15:21:46",
+        "localTime": "2026/8/13 15:44:45",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -14362,7 +14362,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/13 15:21:46",
+        "localTime": "2026/8/13 15:44:45",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -14481,7 +14481,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/13 15:21:46",
+        "localTime": "2026/8/13 15:44:45",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -14596,7 +14596,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/13 15:21:46",
+        "localTime": "2026/8/13 15:44:45",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -14715,7 +14715,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/13 15:21:46",
+        "localTime": "2026/8/13 15:44:45",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -14830,7 +14830,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/13 15:21:46",
+        "localTime": "2026/8/13 15:44:45",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -14945,7 +14945,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/13 15:21:46",
+        "localTime": "2026/8/13 15:44:45",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -15060,7 +15060,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/13 15:21:46",
+        "localTime": "2026/8/13 15:44:45",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -15175,7 +15175,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/13 15:21:46",
+        "localTime": "2026/8/13 15:44:45",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -15294,7 +15294,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/13 15:21:46",
+        "localTime": "2026/8/13 15:44:45",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -15321,7 +15321,7 @@
       "discoveredAt": "2026-08-13T02:18:26.662Z",
       "firstPartyChannelVerification": {
         "status": "unreachable",
-        "verifiedAt": "2026-08-13T07:21:47.193Z",
+        "verifiedAt": "2026-08-13T07:44:46.005Z",
         "evidenceUrl": "",
         "httpStatus": 0,
         "signals": [],
@@ -15411,7 +15411,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/13 15:21:46",
+        "localTime": "2026/8/13 15:44:45",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -15438,7 +15438,7 @@
       "discoveredAt": "2026-08-13T02:55:03.085Z",
       "firstPartyChannelVerification": {
         "status": "unreachable",
-        "verifiedAt": "2026-08-13T07:21:49.504Z",
+        "verifiedAt": "2026-08-13T07:44:48.328Z",
         "evidenceUrl": "https://cdn.shopify.com/s/files/1/0574/0642/3174/files/Cascade-Designs-US-Sales-Reps.pdf?v=1725838082",
         "httpStatus": 404,
         "signals": [],
@@ -15526,7 +15526,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/13 15:21:46",
+        "localTime": "2026/8/13 15:44:45",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -15646,7 +15646,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/13 15:21:46",
+        "localTime": "2026/8/13 15:44:45",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -15673,7 +15673,7 @@
       "discoveredAt": "2026-08-13T02:29:23.509Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-13T07:09:04.225Z",
+        "verifiedAt": "2026-08-13T07:44:59.810Z",
         "evidenceUrl": "https://www.beaverwax.com/pages/new-contact",
         "httpStatus": 200,
         "signals": [
@@ -15764,7 +15764,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/13 15:21:46",
+        "localTime": "2026/8/13 15:44:45",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -15791,7 +15791,7 @@
       "discoveredAt": "2026-08-13T02:29:23.509Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-13T07:09:09.039Z",
+        "verifiedAt": "2026-08-13T07:45:04.952Z",
         "evidenceUrl": "https://www.beaverwax.com/pages/new-contact",
         "httpStatus": 200,
         "signals": [
@@ -15882,7 +15882,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/13 15:21:46",
+        "localTime": "2026/8/13 15:44:45",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -15909,7 +15909,7 @@
       "discoveredAt": "2026-08-12T12:08:00.110Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-13T07:09:07.599Z",
+        "verifiedAt": "2026-08-13T07:45:03.229Z",
         "evidenceUrl": "https://www.parallel33sales.com/about",
         "httpStatus": 200,
         "signals": [
@@ -15999,7 +15999,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/13 15:21:46",
+        "localTime": "2026/8/13 15:44:45",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -16026,7 +16026,7 @@
       "discoveredAt": "2026-08-13T02:29:23.509Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-13T07:09:09.459Z",
+        "verifiedAt": "2026-08-13T07:45:05.151Z",
         "evidenceUrl": "https://www.beaverwax.com/pages/new-contact",
         "httpStatus": 200,
         "signals": [
@@ -16117,7 +16117,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/13 15:21:46",
+        "localTime": "2026/8/13 15:44:45",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -16144,7 +16144,7 @@
       "discoveredAt": "2026-08-13T02:29:23.509Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-13T07:16:11.175Z",
+        "verifiedAt": "2026-08-13T07:45:11.221Z",
         "evidenceUrl": "https://www.beaverwax.com/pages/new-contact",
         "httpStatus": 200,
         "signals": [
@@ -16235,7 +16235,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/13 15:21:46",
+        "localTime": "2026/8/13 15:44:45",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -16262,7 +16262,7 @@
       "discoveredAt": "2026-08-13T02:29:23.509Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-13T07:16:11.247Z",
+        "verifiedAt": "2026-08-13T07:45:10.415Z",
         "evidenceUrl": "https://www.beaverwax.com/pages/new-contact",
         "httpStatus": 200,
         "signals": [
@@ -16353,7 +16353,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/13 15:21:46",
+        "localTime": "2026/8/13 15:44:45",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -16471,7 +16471,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/13 15:21:46",
+        "localTime": "2026/8/13 15:44:45",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -16590,7 +16590,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/13 15:21:46",
+        "localTime": "2026/8/13 15:44:45",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "email",
@@ -16710,7 +16710,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Asia/Shanghai",
-        "localTime": "Thu 15:22",
+        "localTime": "Thu 15:45",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
@@ -16812,7 +16812,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/Oslo",
-        "localTime": "Thu 09:22",
+        "localTime": "Thu 09:45",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -16913,7 +16913,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/Helsinki",
-        "localTime": "Thu 10:22",
+        "localTime": "Thu 10:45",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -17015,7 +17015,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/13 15:21:46",
+        "localTime": "2026/8/13 15:44:45",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -17132,7 +17132,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/13 15:21:46",
+        "localTime": "2026/8/13 15:44:45",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -17251,7 +17251,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/13 15:21:46",
+        "localTime": "2026/8/13 15:44:45",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -17370,7 +17370,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/13 15:21:46",
+        "localTime": "2026/8/13 15:44:45",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -17490,7 +17490,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/13 15:21:46",
+        "localTime": "2026/8/13 15:44:45",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -17517,7 +17517,7 @@
       "discoveredAt": "2026-08-12T12:29:10.813Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-13T07:08:56.894Z",
+        "verifiedAt": "2026-08-13T07:44:52.973Z",
         "evidenceUrl": "https://www.brreps.com/",
         "httpStatus": 200,
         "signals": [
@@ -17609,7 +17609,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/13 15:21:46",
+        "localTime": "2026/8/13 15:44:45",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -17728,7 +17728,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/13 15:21:46",
+        "localTime": "2026/8/13 15:44:45",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -17755,7 +17755,7 @@
       "discoveredAt": "2026-08-13T03:01:26.820Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-13T07:08:57.607Z",
+        "verifiedAt": "2026-08-13T07:44:53.320Z",
         "evidenceUrl": "https://salvationsales.com/",
         "httpStatus": 200,
         "signals": [
@@ -17847,7 +17847,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/13 15:21:46",
+        "localTime": "2026/8/13 15:44:45",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -17874,7 +17874,7 @@
       "discoveredAt": "2026-08-12T12:29:10.813Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-13T07:09:01.832Z",
+        "verifiedAt": "2026-08-13T07:44:56.629Z",
         "evidenceUrl": "https://www.actionsportsagency.com/",
         "httpStatus": 200,
         "signals": [
@@ -17966,7 +17966,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/13 15:21:46",
+        "localTime": "2026/8/13 15:44:45",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -17993,7 +17993,7 @@
       "discoveredAt": "2026-08-13T03:03:45.764Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-13T07:09:07.040Z",
+        "verifiedAt": "2026-08-13T07:45:02.350Z",
         "evidenceUrl": "https://sky-lines.ca/",
         "httpStatus": 200,
         "signals": [
@@ -18083,7 +18083,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/13 15:21:46",
+        "localTime": "2026/8/13 15:44:45",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -18110,7 +18110,7 @@
       "discoveredAt": "2026-08-12T11:59:09.107Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-13T07:08:59.497Z",
+        "verifiedAt": "2026-08-13T07:44:54.643Z",
         "evidenceUrl": "https://www.sturm-miltec.com/about-us",
         "httpStatus": 200,
         "signals": [
@@ -18202,7 +18202,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/Rome",
-        "localTime": "Thu 09:22",
+        "localTime": "Thu 09:45",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -18305,7 +18305,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/13 15:21:46",
+        "localTime": "2026/8/13 15:44:45",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -18424,7 +18424,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/13 15:21:46",
+        "localTime": "2026/8/13 15:44:45",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -18451,7 +18451,7 @@
       "discoveredAt": "2026-08-12T12:04:29.057Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-13T07:16:11.917Z",
+        "verifiedAt": "2026-08-13T07:45:11.405Z",
         "evidenceUrl": "https://garibaldisupplyco.com/",
         "httpStatus": 200,
         "signals": [
@@ -18543,7 +18543,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/13 15:21:46",
+        "localTime": "2026/8/13 15:44:45",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -18662,7 +18662,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/13 15:21:46",
+        "localTime": "2026/8/13 15:44:45",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -18782,7 +18782,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/13 15:21:46",
+        "localTime": "2026/8/13 15:44:45",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -18901,7 +18901,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/13 15:21:46",
+        "localTime": "2026/8/13 15:44:45",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -19020,7 +19020,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/13 15:21:46",
+        "localTime": "2026/8/13 15:44:45",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "website_form",
@@ -19139,7 +19139,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Asia/Shanghai",
-        "localTime": "Thu 15:22",
+        "localTime": "Thu 15:45",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
@@ -19238,7 +19238,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/Berlin",
-        "localTime": "Thu 09:22",
+        "localTime": "Thu 09:45",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -19337,7 +19337,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Asia/Shanghai",
-        "localTime": "Thu 15:22",
+        "localTime": "Thu 15:45",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
@@ -19438,7 +19438,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/Paris",
-        "localTime": "Thu 09:22",
+        "localTime": "Thu 09:45",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -19537,7 +19537,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Asia/Shanghai",
-        "localTime": "Thu 15:22",
+        "localTime": "Thu 15:45",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
@@ -19628,7 +19628,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/Paris",
-        "localTime": "Thu 09:22",
+        "localTime": "Thu 09:45",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -19727,7 +19727,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/Berlin",
-        "localTime": "Thu 09:22",
+        "localTime": "Thu 09:45",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -19818,7 +19818,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/Oslo",
-        "localTime": "Thu 09:22",
+        "localTime": "Thu 09:45",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -19923,7 +19923,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Asia/Shanghai",
-        "localTime": "Thu 15:22",
+        "localTime": "Thu 15:45",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
@@ -20022,7 +20022,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Asia/Shanghai",
-        "localTime": "Thu 15:22",
+        "localTime": "Thu 15:45",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
@@ -20113,7 +20113,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/13 15:21:46",
+        "localTime": "2026/8/13 15:44:45",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "linkedin",
@@ -20220,7 +20220,7 @@
       "identityStatus": "verified",
       "officialSocialProfileVerified": true,
       "socialProfileEvidenceUrl": "https://www.elevatedoutdoorsales.com/home",
-      "socialProfileVerifiedAt": "2026-08-13T07:09:01.454Z",
+      "socialProfileVerifiedAt": "2026-08-13T07:44:57.150Z",
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -20230,7 +20230,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/13 15:21:46",
+        "localTime": "2026/8/13 15:44:45",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "linkedin",
@@ -20260,7 +20260,7 @@
       "verifiedTargetUrl": "https://www.linkedin.com/in/mike-freiberg-b793979/",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-13T07:09:01.454Z",
+        "verifiedAt": "2026-08-13T07:44:57.150Z",
         "evidenceUrl": "https://www.elevatedoutdoorsales.com/home",
         "httpStatus": 200,
         "signals": [],
@@ -20337,7 +20337,7 @@
       "identityStatus": "verified",
       "officialSocialProfileVerified": true,
       "socialProfileEvidenceUrl": "https://northernsporting.com/",
-      "socialProfileVerifiedAt": "2026-08-13T06:54:29.094Z",
+      "socialProfileVerifiedAt": "2026-08-13T07:45:07.836Z",
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -20347,7 +20347,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/13 15:21:46",
+        "localTime": "2026/8/13 15:44:45",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "linkedin",
@@ -20377,7 +20377,7 @@
       "verifiedTargetUrl": "https://linkedin.com/in/shawn-hannah-47487913",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-13T06:54:29.094Z",
+        "verifiedAt": "2026-08-13T07:45:07.836Z",
         "evidenceUrl": "https://northernsporting.com/",
         "httpStatus": 200,
         "signals": [
@@ -20466,7 +20466,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/Rome",
-        "localTime": "Thu 09:22",
+        "localTime": "Thu 09:45",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -20561,7 +20561,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/13 15:21:46",
+        "localTime": "2026/8/13 15:44:45",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "linkedin",
@@ -20680,7 +20680,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/13 15:21:46",
+        "localTime": "2026/8/13 15:44:45",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "linkedin",
@@ -20797,7 +20797,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/13 15:21:46",
+        "localTime": "2026/8/13 15:44:45",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -20914,7 +20914,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/13 15:21:46",
+        "localTime": "2026/8/13 15:44:45",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -21021,7 +21021,7 @@
       "identityStatus": "verified",
       "officialSocialProfileVerified": true,
       "socialProfileEvidenceUrl": "https://owensoutdoorsales.com/",
-      "socialProfileVerifiedAt": "2026-08-13T07:08:58.842Z",
+      "socialProfileVerifiedAt": "2026-08-13T07:44:54.273Z",
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -21031,7 +21031,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/13 15:21:46",
+        "localTime": "2026/8/13 15:44:45",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -21061,7 +21061,7 @@
       "verifiedTargetUrl": "https://www.facebook.com/OwensOutdoorSales",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-13T07:08:58.842Z",
+        "verifiedAt": "2026-08-13T07:44:54.273Z",
         "evidenceUrl": "https://owensoutdoorsales.com/",
         "httpStatus": 200,
         "signals": [
@@ -21150,7 +21150,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/13 15:21:46",
+        "localTime": "2026/8/13 15:44:45",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -21269,7 +21269,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/13 15:21:46",
+        "localTime": "2026/8/13 15:44:45",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -21386,7 +21386,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/13 15:21:46",
+        "localTime": "2026/8/13 15:44:45",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -21506,7 +21506,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/13 15:21:46",
+        "localTime": "2026/8/13 15:44:45",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -21625,7 +21625,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/13 15:21:46",
+        "localTime": "2026/8/13 15:44:45",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "facebook",
@@ -21744,7 +21744,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/Berlin",
-        "localTime": "Thu 09:22",
+        "localTime": "Thu 09:45",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -21829,7 +21829,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/Oslo",
-        "localTime": "Thu 09:22",
+        "localTime": "Thu 09:45",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -21918,7 +21918,7 @@
       "identityStatus": "verified",
       "officialSocialProfileVerified": true,
       "socialProfileEvidenceUrl": "https://www.parallel45sales.com/",
-      "socialProfileVerifiedAt": "2026-08-13T07:21:48.895Z",
+      "socialProfileVerifiedAt": "2026-08-13T07:44:47.288Z",
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -21928,7 +21928,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/13 15:21:46",
+        "localTime": "2026/8/13 15:44:45",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -21958,7 +21958,7 @@
       "verifiedTargetUrl": "https://www.instagram.com/parallel45sales/",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-13T07:21:48.895Z",
+        "verifiedAt": "2026-08-13T07:44:47.288Z",
         "evidenceUrl": "https://www.parallel45sales.com/",
         "httpStatus": 200,
         "signals": [],
@@ -22035,7 +22035,7 @@
       "identityStatus": "verified",
       "officialSocialProfileVerified": true,
       "socialProfileEvidenceUrl": "https://www.perspectiveoutdoor.com/contact-us",
-      "socialProfileVerifiedAt": "2026-08-13T07:09:03.582Z",
+      "socialProfileVerifiedAt": "2026-08-13T07:44:58.885Z",
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -22045,7 +22045,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/13 15:21:46",
+        "localTime": "2026/8/13 15:44:45",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -22075,7 +22075,7 @@
       "verifiedTargetUrl": "https://www.instagram.com/perspectiveoutdoor/",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-13T07:09:03.582Z",
+        "verifiedAt": "2026-08-13T07:44:58.885Z",
         "evidenceUrl": "https://www.perspectiveoutdoor.com/contact-us",
         "httpStatus": 200,
         "signals": [
@@ -22154,7 +22154,7 @@
       "identityStatus": "verified",
       "officialSocialProfileVerified": true,
       "socialProfileEvidenceUrl": "https://www.heronoutdoors.co/",
-      "socialProfileVerifiedAt": "2026-08-13T07:16:10.430Z",
+      "socialProfileVerifiedAt": "2026-08-13T07:45:10.645Z",
       "profiledAt": "",
       "partnershipStatus": "",
       "doNotOutreach": false,
@@ -22164,7 +22164,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "local-market",
-        "localTime": "2026/8/13 15:21:46",
+        "localTime": "2026/8/13 15:44:45",
         "nextBest": "open exact company profile, review background, then start compliant buyer/contact development"
       },
       "platform": "instagram",
@@ -22194,7 +22194,7 @@
       "verifiedTargetUrl": "https://www.instagram.com/heronoutdoorsco",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-13T07:16:10.430Z",
+        "verifiedAt": "2026-08-13T07:45:10.645Z",
         "evidenceUrl": "https://www.heronoutdoors.co/",
         "httpStatus": 200,
         "signals": [],
@@ -22281,7 +22281,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/Berlin",
-        "localTime": "Thu 09:22",
+        "localTime": "Thu 09:45",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -22372,7 +22372,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/Berlin",
-        "localTime": "Thu 09:22",
+        "localTime": "Thu 09:45",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -22455,7 +22455,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Thu 03:22",
+        "localTime": "Thu 03:45",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -22554,7 +22554,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Thu 03:22",
+        "localTime": "Thu 03:45",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -22658,7 +22658,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Thu 03:22",
+        "localTime": "Thu 03:45",
         "window": "outside_work_hours",
         "nextBest": "America/Toronto morning",
         "weight": 0
@@ -22762,7 +22762,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Thu 03:22",
+        "localTime": "Thu 03:45",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -22866,7 +22866,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Thu 03:22",
+        "localTime": "Thu 03:45",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -22970,7 +22970,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/London",
-        "localTime": "Thu 08:22",
+        "localTime": "Thu 08:45",
         "window": "outside_work_hours",
         "nextBest": "Europe/London morning",
         "weight": 0
@@ -23071,7 +23071,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Pacific/Auckland",
-        "localTime": "Thu 19:22",
+        "localTime": "Thu 19:45",
         "window": "outside_work_hours",
         "nextBest": "Pacific/Auckland morning",
         "weight": 0
@@ -23172,7 +23172,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Australia/Sydney",
-        "localTime": "Thu 17:22",
+        "localTime": "Thu 17:45",
         "window": "outside_work_hours",
         "nextBest": "Australia/Sydney morning",
         "weight": 0
@@ -23271,7 +23271,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Thu 03:22",
+        "localTime": "Thu 03:45",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -23373,7 +23373,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Thu 03:22",
+        "localTime": "Thu 03:45",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -23474,7 +23474,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Thu 03:22",
+        "localTime": "Thu 03:45",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -23573,7 +23573,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Thu 03:22",
+        "localTime": "Thu 03:45",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -23674,7 +23674,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Thu 03:22",
+        "localTime": "Thu 03:45",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -23773,7 +23773,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Thu 03:22",
+        "localTime": "Thu 03:45",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -23874,7 +23874,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Thu 03:22",
+        "localTime": "Thu 03:45",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -23973,7 +23973,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Thu 03:22",
+        "localTime": "Thu 03:45",
         "window": "outside_work_hours",
         "nextBest": "America/Toronto morning",
         "weight": 0
@@ -24074,7 +24074,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Thu 03:22",
+        "localTime": "Thu 03:45",
         "window": "outside_work_hours",
         "nextBest": "America/Toronto morning",
         "weight": 0
@@ -24175,7 +24175,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Thu 03:22",
+        "localTime": "Thu 03:45",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -24204,7 +24204,7 @@
       "discoveredAt": "2026-08-12T12:20:57.343Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-13T07:09:00.303Z",
+        "verifiedAt": "2026-08-13T07:44:55.353Z",
         "evidenceUrl": "https://www.4pointsales.com/",
         "httpStatus": 200,
         "signals": [
@@ -24276,7 +24276,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Thu 03:22",
+        "localTime": "Thu 03:45",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -24305,7 +24305,7 @@
       "discoveredAt": "2026-08-12T12:29:10.813Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-13T07:09:01.572Z",
+        "verifiedAt": "2026-08-13T07:44:56.370Z",
         "evidenceUrl": "https://suggsnicholasshea.com/",
         "httpStatus": 200,
         "signals": [],
@@ -24375,7 +24375,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Thu 03:22",
+        "localTime": "Thu 03:45",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -24404,7 +24404,7 @@
       "discoveredAt": "2026-08-12T12:08:00.110Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-13T06:54:29.983Z",
+        "verifiedAt": "2026-08-13T07:45:08.731Z",
         "evidenceUrl": "https://1889sales.com/about.html",
         "httpStatus": 200,
         "signals": [
@@ -24476,7 +24476,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Thu 03:22",
+        "localTime": "Thu 03:45",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -24505,7 +24505,7 @@
       "discoveredAt": "2026-08-12T12:20:57.343Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-13T07:16:10.710Z",
+        "verifiedAt": "2026-08-13T07:45:08.240Z",
         "evidenceUrl": "https://www.babblingbrooksales.com/",
         "httpStatus": 200,
         "signals": [
@@ -24577,7 +24577,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Thu 03:22",
+        "localTime": "Thu 03:45",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -24606,7 +24606,7 @@
       "discoveredAt": "2026-08-12T11:50:46.264Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-13T07:09:09.788Z",
+        "verifiedAt": "2026-08-13T07:45:05.628Z",
         "evidenceUrl": "https://cng-distribution.com/",
         "httpStatus": 200,
         "signals": [
@@ -24678,7 +24678,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Thu 03:22",
+        "localTime": "Thu 03:45",
         "window": "outside_work_hours",
         "nextBest": "America/Toronto morning",
         "weight": 0
@@ -24707,7 +24707,7 @@
       "discoveredAt": "2026-08-12T11:59:09.107Z",
       "firstPartyChannelVerification": {
         "status": "unreachable",
-        "verifiedAt": "2026-08-13T06:54:25.941Z",
+        "verifiedAt": "2026-08-13T07:45:05.227Z",
         "evidenceUrl": "https://www.nordcoregroup.ca/contactus",
         "httpStatus": 403,
         "signals": [],
@@ -24777,7 +24777,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Thu 03:22",
+        "localTime": "Thu 03:45",
         "window": "outside_work_hours",
         "nextBest": "America/Toronto morning",
         "weight": 0
@@ -24806,7 +24806,7 @@
       "discoveredAt": "2026-08-12T12:04:29.057Z",
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-13T06:54:27.589Z",
+        "verifiedAt": "2026-08-13T07:45:10.150Z",
         "evidenceUrl": "https://tinshack.ca/",
         "httpStatus": 200,
         "signals": [
@@ -24878,7 +24878,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Thu 03:22",
+        "localTime": "Thu 03:45",
         "window": "outside_work_hours",
         "nextBest": "America/Toronto morning",
         "weight": 0
@@ -24977,7 +24977,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Thu 03:22",
+        "localTime": "Thu 03:45",
         "window": "outside_work_hours",
         "nextBest": "America/Toronto morning",
         "weight": 0
@@ -25076,7 +25076,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Thu 03:22",
+        "localTime": "Thu 03:45",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -25175,7 +25175,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Thu 03:22",
+        "localTime": "Thu 03:45",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -25274,7 +25274,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Thu 03:22",
+        "localTime": "Thu 03:45",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -25373,7 +25373,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Thu 03:22",
+        "localTime": "Thu 03:45",
         "window": "outside_work_hours",
         "nextBest": "America/Toronto morning",
         "weight": 0
@@ -25472,7 +25472,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Thu 03:22",
+        "localTime": "Thu 03:45",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -25571,7 +25571,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Thu 03:22",
+        "localTime": "Thu 03:45",
         "window": "outside_work_hours",
         "nextBest": "America/Toronto morning",
         "weight": 0
@@ -25600,7 +25600,7 @@
       "discoveredAt": "2026-08-13T02:18:26.662Z",
       "firstPartyChannelVerification": {
         "status": "unreachable",
-        "verifiedAt": "2026-08-13T07:21:47.193Z",
+        "verifiedAt": "2026-08-13T07:44:46.005Z",
         "evidenceUrl": "",
         "httpStatus": 0,
         "signals": [],
@@ -25670,7 +25670,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Thu 03:22",
+        "localTime": "Thu 03:45",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -25773,7 +25773,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Thu 03:22",
+        "localTime": "Thu 03:45",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -25864,7 +25864,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Thu 03:22",
+        "localTime": "Thu 03:45",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -26171,7 +26171,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Asia/Jakarta",
-        "localTime": "Thu 14:22",
+        "localTime": "Thu 14:45",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
@@ -26228,7 +26228,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/New_York",
-        "localTime": "Thu 03:22",
+        "localTime": "Thu 03:45",
         "window": "outside_work_hours",
         "nextBest": "America/New_York morning",
         "weight": 0
@@ -26285,7 +26285,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/London",
-        "localTime": "Thu 08:22",
+        "localTime": "Thu 08:45",
         "window": "outside_work_hours",
         "nextBest": "Europe/London morning",
         "weight": 0
@@ -26342,7 +26342,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/London",
-        "localTime": "Thu 08:22",
+        "localTime": "Thu 08:45",
         "window": "outside_work_hours",
         "nextBest": "Europe/London morning",
         "weight": 0
@@ -26399,7 +26399,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Europe/London",
-        "localTime": "Thu 08:22",
+        "localTime": "Thu 08:45",
         "window": "outside_work_hours",
         "nextBest": "Europe/London morning",
         "weight": 0
@@ -26456,7 +26456,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Thu 03:22",
+        "localTime": "Thu 03:45",
         "window": "outside_work_hours",
         "nextBest": "America/Toronto morning",
         "weight": 0
@@ -26513,7 +26513,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "America/Toronto",
-        "localTime": "Thu 03:22",
+        "localTime": "Thu 03:45",
         "window": "outside_work_hours",
         "nextBest": "America/Toronto morning",
         "weight": 0
@@ -26570,7 +26570,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Australia/Sydney",
-        "localTime": "Thu 17:22",
+        "localTime": "Thu 17:45",
         "window": "outside_work_hours",
         "nextBest": "Australia/Sydney morning",
         "weight": 0
@@ -26627,7 +26627,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Pacific/Auckland",
-        "localTime": "Thu 19:22",
+        "localTime": "Thu 19:45",
         "window": "outside_work_hours",
         "nextBest": "Pacific/Auckland morning",
         "weight": 0
@@ -26684,7 +26684,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Pacific/Auckland",
-        "localTime": "Thu 19:22",
+        "localTime": "Thu 19:45",
         "window": "outside_work_hours",
         "nextBest": "Pacific/Auckland morning",
         "weight": 0
@@ -26741,7 +26741,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Pacific/Auckland",
-        "localTime": "Thu 19:22",
+        "localTime": "Thu 19:45",
         "window": "outside_work_hours",
         "nextBest": "Pacific/Auckland morning",
         "weight": 0
@@ -26798,7 +26798,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Pacific/Auckland",
-        "localTime": "Thu 19:22",
+        "localTime": "Thu 19:45",
         "window": "outside_work_hours",
         "nextBest": "Pacific/Auckland morning",
         "weight": 0
@@ -26855,7 +26855,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Pacific/Auckland",
-        "localTime": "Thu 19:22",
+        "localTime": "Thu 19:45",
         "window": "outside_work_hours",
         "nextBest": "Pacific/Auckland morning",
         "weight": 0
@@ -26912,7 +26912,7 @@
       "workingTime": {
         "dueNow": false,
         "timeZone": "Asia/Kolkata",
-        "localTime": "Thu 12:52",
+        "localTime": "Thu 13:15",
         "window": "outside_work_hours",
         "nextBest": "Asia/Kolkata afternoon",
         "weight": 0
@@ -26981,7 +26981,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/Copenhagen",
-        "localTime": "Thu 09:22",
+        "localTime": "Thu 09:45",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -27110,7 +27110,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/Vienna",
-        "localTime": "Thu 09:22",
+        "localTime": "Thu 09:45",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -27231,7 +27231,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/Paris",
-        "localTime": "Thu 09:22",
+        "localTime": "Thu 09:45",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -27349,7 +27349,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/Berlin",
-        "localTime": "Thu 09:22",
+        "localTime": "Thu 09:45",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -27457,7 +27457,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Asia/Shanghai",
-        "localTime": "Thu 15:22",
+        "localTime": "Thu 15:45",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
@@ -27561,7 +27561,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Asia/Shanghai",
-        "localTime": "Thu 15:22",
+        "localTime": "Thu 15:45",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
@@ -27679,7 +27679,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Asia/Shanghai",
-        "localTime": "Thu 15:22",
+        "localTime": "Thu 15:45",
         "window": "afternoon",
         "nextBest": "now",
         "weight": 0.9
@@ -27783,7 +27783,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/Berlin",
-        "localTime": "Thu 09:22",
+        "localTime": "Thu 09:45",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -27888,7 +27888,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/Stockholm",
-        "localTime": "Thu 09:22",
+        "localTime": "Thu 09:45",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -27994,7 +27994,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/Berlin",
-        "localTime": "Thu 09:22",
+        "localTime": "Thu 09:45",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -28098,7 +28098,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/Stockholm",
-        "localTime": "Thu 09:22",
+        "localTime": "Thu 09:45",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -28203,7 +28203,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/Copenhagen",
-        "localTime": "Thu 09:22",
+        "localTime": "Thu 09:45",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -28308,7 +28308,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/Stockholm",
-        "localTime": "Thu 09:22",
+        "localTime": "Thu 09:45",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -28414,7 +28414,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/Madrid",
-        "localTime": "Thu 09:22",
+        "localTime": "Thu 09:45",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -28520,7 +28520,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/Brussels",
-        "localTime": "Thu 09:22",
+        "localTime": "Thu 09:45",
         "window": "morning",
         "nextBest": "now",
         "weight": 1
@@ -28627,7 +28627,7 @@
       "workingTime": {
         "dueNow": true,
         "timeZone": "Europe/Brussels",
-        "localTime": "Thu 09:22",
+        "localTime": "Thu 09:45",
         "window": "morning",
         "nextBest": "now",
         "weight": 1

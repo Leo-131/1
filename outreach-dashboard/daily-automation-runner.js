@@ -1397,7 +1397,7 @@ function buildDailyPotentialPool(classified, discoveryRun, context, targetSize) 
   return [...reservedSocial, ...distinctCompanies.filter(item => !reservedIds.has(item.id))].slice(0, targetSize);
 }
 
-function channelReadinessSummary(items = []) {
+function channelReadinessSummary(items = [], history = null) {
   const companies = new Map();
   for (const item of Array.isArray(items) ? items : []) {
     const companyKey = slugKey(item.company || item.name || item.id);
@@ -1409,7 +1409,12 @@ function channelReadinessSummary(items = []) {
     };
     const platform = String(item.platform || item.channel || '').toLowerCase();
     const readiness = item.executionReadiness || channelExecutionReadiness(item);
-    if (readiness.ready === true) {
+    const historicallyBlocked = Boolean(history && (
+      history.sameDayDeveloped?.has(companyKey)
+      || history.permanentlyDeveloped?.has(companyKey)
+      || history.sameDayAttempted?.has(companyKey)
+    ));
+    if (readiness.ready === true && !historicallyBlocked) {
       row.ready = true;
       row.channels.add(platform || 'website');
     }
@@ -1562,7 +1567,10 @@ function main() {
     .filter(item => CONFIG.cadence.respectTargetWorkingHours !== false && !(item.workingTime && item.workingTime.dueNow))
     .sort(priorityCompare)
     .slice(0, 20);
-  const readiness = channelReadinessSummary(dailyPotentialPool);
+  // Dashboard capacity must describe companies the executor can still touch,
+  // not channel rows already locked by a confirmed, uncertain, or technical
+  // interaction. This keeps reserve truth aligned with browser selection.
+  const readiness = channelReadinessSummary(dailyPotentialPool, history);
   const enrichmentBacklog = dailyPotentialPool
     .filter(item => !(item.executionReadiness || channelExecutionReadiness(item)).ready)
     .map(item => ({
