@@ -1,6 +1,6 @@
 window.OUTREACH_INTELLIGENCE_LATEST = {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-13T02:49:50.227Z",
+  "generatedAt": "2026-08-13T02:52:28.774Z",
   "companies": [
     {
       "companyId": "company_6da9ffc8d986b655",
@@ -29971,7 +29971,7 @@ window.OUTREACH_INTELLIGENCE_LATEST = {
     ]
   },
   "ownerSummary": {
-    "generatedAt": "2026-08-13T02:49:50.227Z",
+    "generatedAt": "2026-08-13T02:52:28.774Z",
     "phase": "autonomous_sales_operating_system_v1",
     "kpis": {
       "companies": 486,
