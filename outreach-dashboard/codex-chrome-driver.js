@@ -1416,10 +1416,10 @@ async function preparePlatformDraft(payload, platform) {
   }
 
   const preActions = [];
-  // Cold outreach must never publish comments, likes or follows as a
-  // prerequisite for a private message. Keep this fail-closed even if a stale
-  // caller still sends autoEngage=true.
-  const allowPublicEngagement = false;
+  // The owner-authorized social sequence is follow + like + private message.
+  // Never publish an automatic public comment: it is harder to personalize,
+  // creates avoidable reputation risk, and is not required for outreach.
+  const allowPublicEngagement = true;
   if (allowPublicEngagement && payload.autoEngage) {
     if (platform === 'instagram') {
       let follow = await clickOptionalAction(tab, 'follow', platform);
@@ -1428,29 +1428,27 @@ async function preparePlatformDraft(payload, platform) {
         follow = await clickOptionalAction(tab, 'follow', platform);
       }
       preActions.push(follow);
-      let post = await submitInstagramPostEngagement(tab, payload.engagementComment || 'Great outdoor checklist. Useful reminder for hikers preparing a complete, lightweight kit.');
+      let post = await submitInstagramPostEngagement(tab, '');
       if (/instagram_post_not_available|post_like_double_tap_attempted/.test(post)) {
         await sleep(900);
-        const retryPost = await submitInstagramPostEngagement(tab, payload.engagementComment || 'Great outdoor checklist. Useful reminder for hikers preparing a complete, lightweight kit.');
+        const retryPost = await submitInstagramPostEngagement(tab, '');
         post = `${post};retry:${retryPost}`;
       }
       preActions.push(post);
     } else if (platform === 'facebook') {
       preActions.push(await clickOptionalAction(tab, 'follow', platform));
       preActions.push(await submitFacebookPostEngagement(tab));
-      preActions.push(await submitOptionalComment(tab, payload.engagementComment || 'Great outdoor checklist. Useful reminder for hikers preparing a complete, lightweight kit.'));
     } else if (platform === 'linkedin') {
-      // LinkedIn company/profile outreach is intentionally limited to the
-      // requested sequence: follow first, then open Message and send the
-      // approved DM marketing draft. Do not comment or like on LinkedIn.
+      // Follow first and like when a safe visible Like control is available.
+      // Never post an automatic public comment.
       let follow = await clickOptionalAction(tab, 'follow', platform);
       if (follow === 'follow_not_available') {
         await sleep(900);
         follow = await clickOptionalAction(tab, 'follow', platform);
       }
       preActions.push(follow);
+      preActions.push(await clickOptionalAction(tab, 'like', platform));
     } else {
-      preActions.push(await submitOptionalComment(tab, payload.engagementComment || 'Great outdoor checklist. Useful reminder for hikers preparing a complete, lightweight kit.'));
       preActions.push(await clickOptionalAction(tab, 'like', platform));
       preActions.push(await clickOptionalAction(tab, 'follow', platform));
     }
@@ -1632,12 +1630,53 @@ async function prepareSocialDraft(payload) {
   return preparePlatformDraft(payload, hostPlatform(payload.targetUrl));
 }
 
+async function engageSocialProfile(payload) {
+  const platform = hostPlatform(payload.targetUrl);
+  const port = Number(payload.port || 9224);
+  const tab = await findTab(port, payload.tabId, payload.targetUrl);
+  if (!tab || !tab.webSocketDebuggerUrl) {
+    return { ok: false, sendStatus: 'failed_open', evidence: 'chrome_target_not_found;no_message_action' };
+  }
+  const identity = await waitForJson(
+    tab,
+    identityCheckExpression(payload.expectedCompany, payload.targetUrl, payload.officialProfileVerified),
+    item => item && !item.pending,
+    12000,
+    500
+  ).catch(() => null);
+  if (!identity || identity.ok !== true) {
+    return { ok: false, sendStatus: 'failed_open', evidence: identity && identity.evidence || `${platform}_identity_not_verified_fail_closed;no_message_action` };
+  }
+  let follow = await clickOptionalAction(tab, 'follow', platform);
+  if (follow === 'follow_not_available') {
+    await sleep(900);
+    follow = await clickOptionalAction(tab, 'follow', platform);
+  }
+  let like;
+  if (platform === 'instagram') like = await submitInstagramPostEngagement(tab, '');
+  else if (platform === 'facebook') like = await submitFacebookPostEngagement(tab);
+  else like = await clickOptionalAction(tab, 'like', platform);
+  const followed = /follow_clicked|follow_already_active/.test(follow);
+  const liked = /post_liked|post_like_clicked|like_clicked|like_already_active/.test(String(like || ''));
+  return {
+    ok: followed && liked,
+    sendStatus: followed && liked ? 'social_engagement_confirmed' : 'social_engagement_incomplete',
+    evidence: `${platform}_identity_verified;${follow};${like};engagement_only;no_message_action`,
+    followStatus: follow,
+    likeStatus: like,
+  };
+}
+
 async function main() {
   const command = process.argv[2];
-  const payload = JSON.parse(process.argv[3] || '{}');
+  const rawPayload = process.argv[3] || '{}';
+  const payload = rawPayload.startsWith('base64:')
+    ? JSON.parse(Buffer.from(rawPayload.slice(7), 'base64').toString('utf8'))
+    : JSON.parse(rawPayload);
   let result;
   if (command === 'prepare-instagram-draft') result = await prepareInstagramDraft(payload);
   else if (command === 'prepare-social-draft') result = await prepareSocialDraft(payload);
+  else if (command === 'engage-social-profile') result = await engageSocialProfile(payload);
   else if (command === 'inspect-social-context') result = await inspectSocialContext(payload);
   else throw new Error(`Unknown command: ${command}`);
   process.stdout.write(JSON.stringify(result));

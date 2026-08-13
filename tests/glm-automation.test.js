@@ -209,25 +209,33 @@ test('official brand representative directory token passes only for a company-do
   }).ok, false);
 });
 
-test('LinkedIn platform engagement follows before sending the approved DM without comment or like', () => {
+test('LinkedIn platform engagement follows and likes before sending the approved DM without a public comment', () => {
   assert.match(chromeDriverSource, /platform === 'linkedin'/);
-  assert.match(chromeDriverSource, /LinkedIn company\/profile outreach is intentionally limited/);
+  assert.match(chromeDriverSource, /Follow first and like when a safe visible Like control is available/);
   assert.match(chromeDriverSource, /let follow = await clickOptionalAction\(tab, 'follow', platform\)/);
   const linkedinBranch = chromeDriverSource.match(/else if \(platform === 'linkedin'\) \{([\s\S]*?)\n    \} else \{/);
   assert.ok(linkedinBranch, 'LinkedIn must have a dedicated engagement branch');
-  assert.doesNotMatch(linkedinBranch[1], /submitOptionalComment|clickOptionalAction\(tab, 'like'/);
+  assert.match(linkedinBranch[1], /clickOptionalAction\(tab, 'like'/);
+  assert.doesNotMatch(linkedinBranch[1], /submitOptionalComment/);
 });
 
-test('cold social outreach never publishes public engagement as a DM prerequisite', () => {
+test('cold social outreach performs follow and like but never publishes a public comment', () => {
   const instagramBlock = mainSource.slice(
     mainSource.indexOf('async function prepareInstagramDraft'),
     mainSource.indexOf('function validateLeadTargetForPreparation')
   );
-  assert.match(instagramBlock, /autoEngage:\s*false/);
-  assert.doesNotMatch(instagramBlock, /autoEngage:\s*true/);
-  assert.match(chromeDriverSource, /const allowPublicEngagement = false/);
+  assert.match(instagramBlock, /autoEngage:\s*true/);
+  assert.doesNotMatch(instagramBlock, /autoEngage:\s*false/);
+  assert.match(chromeDriverSource, /const allowPublicEngagement = true/);
   assert.match(chromeDriverSource, /if \(allowPublicEngagement && payload\.autoEngage\)/);
-  assert.ok(chromeDriverSource.indexOf('if (!identity || identity.ok !== true)') < chromeDriverSource.indexOf('const allowPublicEngagement = false'));
+  assert.match(chromeDriverSource, /submitInstagramPostEngagement\(tab, ''\)/);
+  assert.ok(chromeDriverSource.indexOf('if (!identity || identity.ok !== true)') < chromeDriverSource.indexOf('const allowPublicEngagement = true'));
+});
+
+test('engagement-only command follows and likes without opening or sending a message', () => {
+  assert.ok(chromeDriverSource.includes("command === 'engage-social-profile'"));
+  assert.ok(chromeDriverSource.includes('engagement_only;no_message_action'));
+  assert.match(chromeDriverSource, /async function engageSocialProfile[\s\S]*clickOptionalAction\(tab, 'follow'[\s\S]*submitInstagramPostEngagement\(tab, ''\)/);
 });
 
 test('no-message social profiles are blocked from automatic execution', () => {
@@ -2059,9 +2067,9 @@ test('North America receives only the configured safe-priority bonus', () => {
   assert.equal(dailyRunner.preferredCountryScore({ country: 'United Kingdom' }), 0);
 });
 
-test('North America agency campaign scope excludes other markets and customer types', () => {
+test('North America campaign scope includes large key accounts and brand agencies but excludes other markets', () => {
   assert.deepEqual(dailyConfig.campaignScope.requiredCountries, ['united states', 'canada', 'mexico']);
-  assert.deepEqual(dailyConfig.campaignScope.requiredCustomerTypes, ['sales_agency']);
+  assert.deepEqual(dailyConfig.campaignScope.requiredCustomerTypes, ['sales_agency', 'key_account']);
   assert.ok(dailyRunnerSource.includes('function campaignScopeMatches'));
   assert.match(dailyRunnerSource, /\.filter\(campaignScopeMatches\)/);
   assert.ok(!dailyRunnerSource.includes("filter(item => !/^united states$/i"));

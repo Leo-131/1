@@ -1853,9 +1853,9 @@ async function prepareInstagramDraft(opened, draft, lead = {}) {
     officialProfileVerified: Boolean(lead && lead.officialSocialProfileVerified),
     draft: safeDraft,
     autoSend: true,
-    // Public comments, likes and follows are not customer development and can
-    // create repeated visible engagement when a DM route later fails.
-    autoEngage: false,
+    // Owner-authorized social sequence: follow + like + private message.
+    // The driver never publishes an automatic public comment.
+    autoEngage: true,
     replaceExistingDraft: true,
   });
   if (driverResult) return driverResult;
@@ -1989,8 +1989,9 @@ async function prepareSocialDraft(opened, draft, lead = {}) {
     officialProfileVerified: Boolean(lead && lead.officialSocialProfileVerified),
     draft: safeDraft,
     autoSend: true,
-    // Only a verified private-message route may receive the approved draft.
-    autoEngage: false,
+    // Owner-authorized social sequence: follow + like + private message.
+    // The driver never publishes an automatic public comment.
+    autoEngage: true,
     replaceExistingDraft: true,
   });
   if (driverResult) return driverResult;
