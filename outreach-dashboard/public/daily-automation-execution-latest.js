@@ -13,7 +13,7 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
   "customerMessageSent": false,
   "realDevelopmentCount": 0,
   "reportingVerdict": "no_customer_development_performed",
-  "userVisibleStatus": "Customer development was not performed. Blockers: homepage_only_contact_path_requires_verification (64); website_contact_capability_not_verified (46); official_website_contact_channel (27).",
+  "userVisibleStatus": "Customer development was not performed. Blockers: homepage_only_contact_path_requires_verification (64); website_contact_capability_not_verified (46); official_website_contact_channel (26).",
   "recoveryHint": "Refill the high-ICP pool with 28 verified leads or unblock existing website/social leads before the next run.",
   "recoveryActions": [
     {
@@ -40,7 +40,7 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "company": "Allweather Sales",
       "action": "email_priority",
       "platform": "email",
-      "reason": "official_website_contact_channel"
+      "reason": "social_profile_not_first_party_verified"
     },
     {
       "id": "google-customer-nickel-n-diamond-sales-website-contact",
@@ -1065,12 +1065,12 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     {
       "reason": "official_website_contact_channel",
       "status": "skipped",
-      "count": 27
+      "count": 26
     },
     {
       "reason": "social_profile_not_first_party_verified",
       "status": "skipped",
-      "count": 6
+      "count": 7
     },
     {
       "reason": "official_public_business_email_verified",
@@ -1081,8 +1081,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
   "blockerCounts": {
     "homepage_only_contact_path_requires_verification": 64,
     "website_contact_capability_not_verified": 46,
-    "official_website_contact_channel": 27,
-    "social_profile_not_first_party_verified": 6,
+    "official_website_contact_channel": 26,
+    "social_profile_not_first_party_verified": 7,
     "official_public_business_email_verified": 3
   },
   "queueGoalStatus": {
@@ -1132,8 +1132,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "hasTarget": true,
       "inCandidatePool": false,
       "sameDayCompanyBlocked": false,
-      "blockingStatus": "website_contact_unreachable_skip",
-      "blockingEvidence": "website_contact_entry_not_verified;contact_entry_clicked:Proform Request Form;public_email_fallback_available:mike@allweathersales.ca;email_sender_not_configured;website_contact_all_targets_failed:1;contact_path_strategy_v2"
+      "blockingStatus": "",
+      "blockingEvidence": ""
     },
     {
       "id": "google-customer-nickel-n-diamond-sales-website-contact",
@@ -1558,5 +1558,5 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     "scanned": 0,
     "updated": 0
   },
-  "completedAt": "2026-08-13T02:48:00.258Z"
+  "completedAt": "2026-08-13T02:50:24.304Z"
 };

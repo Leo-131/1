@@ -4044,7 +4044,9 @@ function socialPriorityRank(item = {}) {
 }
 
 function isSocialQueueItem(item = {}) {
-  return !isWebsiteContactQueueItem(item) && socialPriorityRank(item) >= 300;
+  return ['linkedin', 'facebook', 'instagram'].includes(
+    String(item.platform || item.channel || '').toLowerCase(),
+  );
 }
 
 function websiteCanReinspectForFirstPartySocial(item = {}) {

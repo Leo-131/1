@@ -88,6 +88,7 @@ test('execution dedupe separates verified email recipients from shared evidence-
   assert.ok(mainSource.includes("if (automationPlatformFor(value) === 'email' && recipient)"));
   assert.ok(mainSource.includes('`email:${recipient}`'));
   assert.ok(mainSource.includes("if (String(item.platform || item.channel || '').toLowerCase() === 'email') return false"));
+  assert.ok(mainSource.includes("return ['linkedin', 'facebook', 'instagram'].includes("));
 });
 
 test('website contact can execute without a configured attachment', () => {
