@@ -4284,6 +4284,13 @@ function websiteCanReinspectForFirstPartySocial(item = {}) {
     .some(url => /^https:\/\//i.test(String(url || '')));
 }
 
+function verifiedSocialCanBypassWebsitePreSendBlock(item = {}, block = null) {
+  if (!isSocialQueueItem(item) || item.officialSocialProfileVerified !== true || !block) return false;
+  if (!['website_contact_unreachable_skip', 'website_failure_circuit_open'].includes(String(block.status || ''))) return false;
+  const evidence = String(block.evidence || '');
+  return !/send_unconfirmed|submit_unconfirmed|send_physical_click|submit_physical_click|send_clicked|customer_interaction|message_sent/i.test(evidence);
+}
+
 function developmentPriorityCompare(left, right) {
   // Once a provider DSN proves that the configured sender identity is disabled,
   // email is not an executable channel for the rest of this process. Prefer
@@ -4321,7 +4328,8 @@ function executableQueueCandidates(items = [], options = {}) {
       const block = blockingAutomationResultFor(item);
       if (!block) return true;
       if (block.status === 'same_day_retry_circuit_open') return false;
-      return websiteCanReinspectForFirstPartySocial(item);
+      return websiteCanReinspectForFirstPartySocial(item)
+        || verifiedSocialCanBypassWebsitePreSendBlock(item, block);
     })
     .sort(developmentPriorityCompare);
 }

@@ -2167,6 +2167,10 @@ test('website pre-send failures continue to first-party verified social instead 
   assert.ok(mainSource.includes("if (block.status === 'same_day_retry_circuit_open') return false"));
   assert.ok(mainSource.includes('A technical failure retires the company for the rest of the Shanghai'));
   assert.ok(mainSource.includes('return websiteCanReinspectForFirstPartySocial(item)'));
+  assert.ok(mainSource.includes('function verifiedSocialCanBypassWebsitePreSendBlock'));
+  assert.ok(mainSource.includes("['website_contact_unreachable_skip', 'website_failure_circuit_open']"));
+  assert.match(mainSource, /verifiedSocialCanBypassWebsitePreSendBlock\(item, block\)/);
+  assert.match(mainSource, /send_unconfirmed\|submit_unconfirmed[\s\S]*customer_interaction\|message_sent/);
 });
 
 test('daily queue generator blocks same-day repeat development by company', () => {
