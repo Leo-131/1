@@ -77,6 +77,7 @@ const SAME_DAY_DEVELOPMENT_STATUSES = new Set([
   'sent_confirmed',
   'submitted_confirmed',
   'send_unconfirmed',
+  'failed_open',
 ]);
 const HISTORICAL_DEVELOPMENT_STATUSES = new Set([
   'sent_confirmed',
@@ -569,10 +570,12 @@ function noSafeMessageButtonEvidence(value = '') {
 }
 
 function isSameDayDevelopmentResult(result = {}, now = Date.now()) {
-  return Boolean(result
-    && SAME_DAY_DEVELOPMENT_STATUSES.has(result.status)
-    && sameAutomationDay(result.timestamp, now)
-    && isTouchResult(result));
+  if (!result || !SAME_DAY_DEVELOPMENT_STATUSES.has(result.status) || !sameAutomationDay(result.timestamp, now)) return false;
+  // A pre-send technical failure does not count as development, but it retires
+  // the whole company for the rest of the Shanghai day so later queues advance
+  // instead of reopening it through another channel.
+  if (result.status === 'failed_open') return true;
+  return isTouchResult(result);
 }
 
 function channelLeadKeys(item) {

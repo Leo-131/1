@@ -29,6 +29,7 @@ const alibabaWebmailSource = fs.readFileSync(path.join(__dirname, '..', 'outreac
 const outreachPolicySource = fs.readFileSync(path.join(__dirname, '..', 'outreach-dashboard', '.agent', 'policies', 'outreach-policy.md'), 'utf8');
 const optimizedPromptSource = fs.readFileSync(path.join(__dirname, '..', 'outreach-dashboard', 'docs', 'daily-google-lead-outreach-optimized-prompt.md'), 'utf8');
 const dailyConfig = JSON.parse(fs.readFileSync(path.join(__dirname, '..', 'outreach-dashboard', 'daily-automation-config.json'), 'utf8'));
+const verifiedExternalCandidates = JSON.parse(fs.readFileSync(path.join(__dirname, '..', 'outreach-dashboard', 'verified-external-candidates.json'), 'utf8'));
 
 function emptyClassificationContext(now = Date.parse('2026-07-14T08:00:00.000Z')) {
   return {
@@ -1916,7 +1917,7 @@ test('daily execution duplicate blocking is channel-aware', () => {
   assert.ok(mainSource.includes('function failedOpenResultShouldBlockRetry'));
   assert.ok(mainSource.includes("evidence.includes('profile_no_message_button')"));
   assert.ok(mainSource.includes('message_button_clicked_composer_not_found'));
-  assert.ok(mainSource.includes("result.status !== 'failed_open' || failedOpenResultShouldBlockRetry(result)"));
+  assert.ok(mainSource.includes("result.status === 'failed_open' && isSameAutomationDay(result.timestamp)"));
   assert.ok(mainSource.includes("['website_contact_ready', 'website_contact_unreachable_skip'].includes(result.status)"));
   assert.ok(mainSource.includes('isSameAutomationDay(result.timestamp)'));
   assert.ok(mainSource.includes('WEBSITE_CONTACT_STRATEGY_MARKER'));
@@ -1937,6 +1938,32 @@ test('daily execution duplicate blocking is channel-aware', () => {
   assert.ok(mainSource.includes('if (!itemPlatform || !resultPlatform || itemPlatform !== resultPlatform) return false'));
   assert.ok(mainSource.includes("'website_contact_unreachable_skip'"));
   assert.ok(!mainSource.includes("'sent_confirmed', 'failed_open', 'send_unconfirmed', 'skipped'"));
+});
+
+test('same-day failed_open retires the company across every channel after a repair', () => {
+  assert.match(mainSource, /result\.status === 'failed_open' && isSameAutomationDay\(result\.timestamp\)/);
+  const failedCircuitStart = mainSource.indexOf('const sameDayFailedAttempts = results');
+  const failedCircuitEnd = mainSource.indexOf('if (sameDayFailedAttempts.length >= 1)', failedCircuitStart);
+  const failedCircuitSource = mainSource.slice(failedCircuitStart, failedCircuitEnd);
+  assert.doesNotMatch(failedCircuitSource, /isFixedAlibabaRecipientVerifierFailure/);
+  assert.doesNotMatch(failedCircuitSource, /isFixedAlibabaSubjectVerifierFailure/);
+  assert.match(dailyRunnerSource, /SAME_DAY_DEVELOPMENT_STATUSES = new Set\(\[[\s\S]*'failed_open'/);
+  assert.match(dailyRunnerSource, /if \(result\.status === 'failed_open'\) return true/);
+});
+
+test('net-new North America reserve candidates retain first-party execution evidence', () => {
+  const byCompany = new Map(verifiedExternalCandidates.map(item => [item.company, item]));
+  const twoSkies = byCompany.get('Two Skies Inc');
+  assert.equal(twoSkies.contactEmail, 'info@twoskiesinc.com');
+  assert.equal(twoSkies.evidenceUrl, 'https://www.2skiesinc.com/');
+  assert.equal(twoSkies.externalVerificationStatus, 'official_supplier_email_verified');
+  const outdoorCap = byCompany.get('Outdoor Cap Company');
+  assert.equal(outdoorCap.contactEmail, 'retailsales@outdoorcap.com');
+  assert.equal(outdoorCap.evidenceUrl, 'https://retail.outdoorcap.com/contact-us');
+  assert.equal(outdoorCap.customerType, 'key_account');
+  const crf = byCompany.get('CRF Agency');
+  assert.equal(crf.contactUrl, 'https://www.crfagency.com/');
+  assert.equal(crf.externalVerificationStatus, 'official_supplier_form_verified');
 });
 
 test('same-day failed customer advances without cross-run replay and closes its automation tab', () => {

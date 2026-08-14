@@ -829,5 +829,72 @@
     "dataSources": ["official agency homepage", "official company-domain email", "official website-linked Instagram"],
     "externalVerificationStatus": "official_supplier_email_verified",
     "verifiedAt": "2026-08-14T06:18:00.000Z"
+  },
+  {
+    "company": "Two Skies Inc",
+    "country": "United States",
+    "url": "https://www.2skiesinc.com/",
+    "contactUrl": "https://www.2skiesinc.com/",
+    "publicEmail": "info@twoskiesinc.com",
+    "contactEmail": "info@twoskiesinc.com",
+    "publicEmailStatus": "Official company-domain email published by the agency on its homepage.",
+    "emailVerificationStatus": "official_public_business_email",
+    "emailEvidence": "official_agency_homepage",
+    "segment": "United States multi-category sporting-goods and outdoor sales representative agency",
+    "customerType": "sales_agency",
+    "fitScore": 92,
+    "background": "Full-service United States sales representative agency covering sporting goods, outdoor products, mass market, specialty chains and ecommerce retailers.",
+    "buyerPersona": "Agency principal or manufacturer partnership owner.",
+    "evidenceUrl": "https://www.2skiesinc.com/",
+    "dataSources": [
+      "official agency homepage",
+      "official company-domain email",
+      "official service and distribution description"
+    ],
+    "externalVerificationStatus": "official_supplier_email_verified",
+    "verifiedAt": "2026-08-14T06:38:00.000Z"
+  },
+  {
+    "company": "Outdoor Cap Company",
+    "country": "United States",
+    "url": "https://retail.outdoorcap.com/",
+    "contactUrl": "https://retail.outdoorcap.com/contact-us",
+    "publicEmail": "retailsales@outdoorcap.com",
+    "contactEmail": "retailsales@outdoorcap.com",
+    "publicEmailStatus": "Official retail sales email published for private brands, catalog orders and general retail inquiries.",
+    "emailVerificationStatus": "official_public_business_email",
+    "emailEvidence": "official_retail_contact_page",
+    "segment": "United States national outdoor retail and private-brand account",
+    "customerType": "key_account",
+    "fitScore": 88,
+    "background": "Bentonville-based national outdoor retail supplier with account managers for outdoor recreation, large-format retail, OEM and private-brand programs.",
+    "buyerPersona": "Outdoor recreation account manager or private-brand partnership owner.",
+    "evidenceUrl": "https://retail.outdoorcap.com/contact-us",
+    "dataSources": [
+      "official retail website",
+      "official retail contact page",
+      "official retail sales email"
+    ],
+    "externalVerificationStatus": "official_supplier_email_verified",
+    "verifiedAt": "2026-08-14T06:38:00.000Z"
+  },
+  {
+    "company": "CRF Agency",
+    "country": "Canada",
+    "url": "https://www.crfagency.com/",
+    "contactUrl": "https://www.crfagency.com/",
+    "segment": "Western Canada outdoor, sport and fashion sales agency",
+    "customerType": "sales_agency",
+    "fitScore": 92,
+    "background": "Calgary-based sales, marketing and distribution agency representing outdoor and sport brands across Western Canada and selected national partnerships.",
+    "buyerPersona": "Agency founder or brand partnership owner.",
+    "evidenceUrl": "https://www.crfagency.com/",
+    "dataSources": [
+      "official agency homepage",
+      "official brand portfolio",
+      "official collaboration contact section"
+    ],
+    "externalVerificationStatus": "official_supplier_form_verified",
+    "verifiedAt": "2026-08-14T06:38:00.000Z"
   }
 ]

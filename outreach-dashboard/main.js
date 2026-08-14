@@ -408,20 +408,10 @@ function blockingAutomationResultFor(item) {
   }
   const sameDayFailedAttempts = results
     .filter(result => result && result.status === 'failed_open' && isSameAutomationDay(result.timestamp))
-    // Older fallback routing could label a sender-disabled email preflight as
-    // a social failed_open even though no social page was opened. That is a
-    // reversible, pre-interaction bookkeeping failure and must not suppress a
-    // newly corrected explicit official-social task on the same day.
-    .filter(result => !(/email_sender_delivery_disabled/i.test(String(result.evidence || ''))
-      && /official_social_fallback/i.test(String(result.evidence || ''))
-      && !/draft_inserted|send_clicked|physical_send|customer_interaction/i.test(String(result.evidence || ''))))
-    .filter(result => !isFixedAlibabaRecipientVerifierFailure(result))
-    .filter(result => !isFixedAlibabaSubjectVerifierFailure(result))
-    .filter(result => !(exactSocialHandleMatchesCompany(item) && isFixedIdentityVerifierFailure(result)))
     // A technical failure retires the company for the rest of the Shanghai
     // day, regardless of which official channel the browser fell back to.
-    // This prevents a website -> Facebook/Instagram fallback from selecting
-    // the same customer again on the next full run instead of advancing.
+    // Code repairs may improve future companies, but must never reopen this
+    // company on the same day or switch channels around the circuit.
     .filter(result => setsIntersect(exactKeys, automationExactKeys(result))
       || setsIntersect(companyKeys, automationCompanyKeys(result)));
   if (sameDayFailedAttempts.length >= 1) {
