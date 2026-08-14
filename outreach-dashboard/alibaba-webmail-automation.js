@@ -242,6 +242,24 @@ function composeInspectionExpression({ recipient, subject, text } = {}) {
   })()`;
 }
 
+function composeRecipientFocusExpression() {
+  return `(() => {
+    const fields = ${composeFieldsExpression()};
+    const recipientInput = fields.recipientInput;
+    if (!recipientInput) return JSON.stringify({ ok: false, evidence: 'alibaba_webmail_recipient_control_missing' });
+    recipientInput.focus();
+    const rect = recipientInput.getBoundingClientRect?.();
+    return JSON.stringify({
+      ok: document.activeElement === recipientInput || recipientInput.getRootNode?.().activeElement === recipientInput,
+      evidence: 'alibaba_webmail_scoped_recipient_control_focused',
+      role: recipientInput.getAttribute?.('role') || '',
+      type: recipientInput.getAttribute?.('type') || '',
+      x: Math.round(rect?.x || 0),
+      y: Math.round(rect?.y || 0),
+    });
+  })()`;
+}
+
 function composeSubjectFocusExpression() {
   return `(() => {
     const fields = ${composeFieldsExpression()};
@@ -349,4 +367,4 @@ function sentFolderConfirmationExpression({ subject } = {}) {
   })()`;
 }
 
-module.exports = { ALIBABA_WEBMAIL_SENT_URL, composeStartExpression, composeFillExpression, composeSubjectFocusExpression, composeInspectionExpression, composeSendExpression, postSendStateExpression, sendToastExpression, sentFolderConfirmationExpression };
+module.exports = { ALIBABA_WEBMAIL_SENT_URL, composeStartExpression, composeFillExpression, composeRecipientFocusExpression, composeSubjectFocusExpression, composeInspectionExpression, composeSendExpression, postSendStateExpression, sendToastExpression, sentFolderConfirmationExpression };

@@ -1312,6 +1312,19 @@ test('website discovery probes common same-origin contact paths without product-
   assert.ok(mainSource.includes('verifyEmailAddress(recipientEmail(lead))'));
 });
 
+test('owner-confirmed sender restoration ignores only historical disabled-sender DSNs', () => {
+  const config = JSON.parse(fs.readFileSync(path.join(__dirname, '..', 'outreach-dashboard', 'daily-automation-config.json'), 'utf8'));
+  assert.equal(config.emailSenderHealth.status, 'restored');
+  assert.equal(config.emailSenderHealth.confirmedBy, 'owner');
+  assert.equal(config.emailSenderHealth.sender, 'leo@flextailgear.com');
+  assert.ok(Number.isFinite(Date.parse(config.emailSenderHealth.restoredAt)));
+  assert.ok(mainSource.includes('function configuredEmailSenderRestoredAt'));
+  assert.ok(mainSource.includes('bounceReceivedAt < senderRestoredAt'));
+  assert.ok(mainSource.includes('historicalSenderIdentityFailures'));
+  assert.match(outreachPolicySource, /Historical sender-disabled DSNs before that checkpoint/);
+  assert.match(optimizedPromptSource, /Ignore historical sender-disabled DSNs only for current sender-health gating/);
+});
+
 test('Google discovery uses a live Bever contact details URL instead of the retired 404 page', () => {
   const leads = buildLeads(650);
   const beverContact = leads.find(item => item.id === 'google-customer-bever-website-contact');
@@ -1594,8 +1607,16 @@ test('Alibaba recipient fallback clears stale text and commits the exact address
   assert.ok(mainSource.includes("type: 'keyDown', key: 'a', code: 'KeyA', modifiers: 2"));
   assert.ok(mainSource.includes("type: 'keyDown', key: 'Backspace', code: 'Backspace'"));
   assert.ok(mainSource.includes("type: 'keyDown', key: 'Enter', code: 'Enter'"));
-  assert.ok(mainSource.includes('recipient_control_focused_for_physical_fill'));
+  assert.ok(mainSource.includes('composeRecipientFocusExpression'));
+  assert.ok(alibabaWebmailSource.includes('alibaba_webmail_scoped_recipient_control_focused'));
+  assert.doesNotMatch(mainSource, /const candidates = Array\.from\(document\.querySelectorAll\('input\[role="combobox"\]/);
   assert.ok(alibabaWebmailSource.includes('recipientControlExactMatch'));
+});
+
+test('Alibaba searchable recipient uses one bounded second Enter only for the exact expected address', () => {
+  assert.ok(mainSource.includes('recipientNeedsSecondCommit'));
+  assert.ok(mainSource.includes('exactExpectedAddress'));
+  assert.ok(mainSource.includes('Never accept a different suggestion'));
 });
 
 test('Alibaba subject fallback physically fills the verified subject and safely retries the fixed pre-send verifier failure', () => {

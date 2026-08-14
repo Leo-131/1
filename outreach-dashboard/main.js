@@ -22,6 +22,7 @@ const {
   ALIBABA_WEBMAIL_SENT_URL,
   composeStartExpression,
   composeFillExpression,
+  composeRecipientFocusExpression,
   composeSubjectFocusExpression,
   composeInspectionExpression,
   composeSendExpression,
@@ -482,6 +483,21 @@ const WEBSITE_CONTACT_STRATEGY_MARKER = 'contact_path_strategy_v2';
 let liveAlibabaWebmailSessionReady = false;
 let liveEmailSenderDeliveryReady = true;
 
+function configuredEmailSenderRestoredAt() {
+  try {
+    const config = readJson(path.join(__dirname, 'daily-automation-config.json'), {});
+    const health = config && config.emailSenderHealth || {};
+    const restoredAt = Date.parse(health.restoredAt || '');
+    if (health.status !== 'restored'
+      || String(health.sender || '').toLowerCase() !== 'leo@flextailgear.com'
+      || health.confirmedBy !== 'owner'
+      || !Number.isFinite(restoredAt)) return 0;
+    return restoredAt;
+  } catch {
+    return 0;
+  }
+}
+
 function automationLocalDay(value, timeZone = 'Asia/Shanghai') {
   const time = typeof value === 'number' ? value : Date.parse(value || '');
   if (!Number.isFinite(time)) return '';
@@ -820,10 +836,18 @@ async function reconcileAlibabaBounceResults() {
   const results = readJsonScriptArray(file, 'AUTONOMOUS_OUTREACH_RESULTS');
   let updated = 0;
   let senderIdentityFailures = 0;
+  let historicalSenderIdentityFailures = 0;
+  const senderRestoredAt = configuredEmailSenderRestoredAt();
   for (const bounce of scan.bounces || []) {
     const senderIdentityFailure = /account\s+leo@flextailgear\.com\s+is\s+disabled|sender.*disabled|mailbox.*sender.*disabled/i
       .test(String(bounce.diagnostic || ''));
-    if (senderIdentityFailure) senderIdentityFailures += 1;
+    const bounceReceivedAt = Date.parse(bounce.receivedAt || '');
+    const predatesRestoration = senderIdentityFailure
+      && senderRestoredAt > 0
+      && Number.isFinite(bounceReceivedAt)
+      && bounceReceivedAt < senderRestoredAt;
+    if (senderIdentityFailure && predatesRestoration) historicalSenderIdentityFailures += 1;
+    else if (senderIdentityFailure) senderIdentityFailures += 1;
     const match = results.find(result => result
       && (result.status === 'sent_confirmed' || (senderIdentityFailure && result.status === 'bounced'))
       && ((bounce.messageId && result.messageId === bounce.messageId)
@@ -839,7 +863,15 @@ async function reconcileAlibabaBounceResults() {
     copyPublicArtifact('autonomous-outreach-results.js');
   }
   liveEmailSenderDeliveryReady = senderIdentityFailures === 0;
-  return { ok: true, reason: scan.reason, scanned: (scan.bounces || []).length, updated, senderIdentityFailures };
+  return {
+    ok: true,
+    reason: scan.reason,
+    scanned: (scan.bounces || []).length,
+    updated,
+    senderIdentityFailures,
+    historicalSenderIdentityFailures,
+    senderRestoredAt: senderRestoredAt ? new Date(senderRestoredAt).toISOString() : '',
+  };
 }
 
 function dailyQueueGoalVisibility(summary = {}) {
@@ -2974,15 +3006,7 @@ async function runAlibabaWebmailEmailLead(lead = {}, subject = '', draft = '') {
           clickCount: 1,
         }, 3000);
       }
-      const recipientFocused = await evaluateChromeTabJson(chromeOpen, `(() => {
-        const candidates = Array.from(document.querySelectorAll('input[role="combobox"],input.ant-select-selection-search-input'));
-        const input = candidates.find(element => /to|recipient|email|收件/i.test([
-          element.getAttribute('aria-label'), element.getAttribute('placeholder'), element.closest('[class*="select"]')?.innerText,
-        ].filter(Boolean).join(' '))) || candidates[0] || null;
-        if (!input) return JSON.stringify({ ok: false, evidence: 'recipient_control_not_found_for_physical_fill' });
-        input.focus();
-        return JSON.stringify({ ok: document.activeElement === input, evidence: 'recipient_control_focused_for_physical_fill', role: input.getAttribute('role') || '', type: input.getAttribute('type') || '' });
-      })()`, 5000).catch(() => null);
+      const recipientFocused = await evaluateChromeTabJson(chromeOpen, composeRecipientFocusExpression(), 5000).catch(() => null);
       if (recipientFocused && recipientFocused.ok) {
       await cdpCommand(chromeOpen.webSocketDebuggerUrl, 'Input.dispatchKeyEvent', {
         type: 'keyDown', key: 'a', code: 'KeyA', modifiers: 2,
@@ -3007,6 +3031,26 @@ async function runAlibabaWebmailEmailLead(lead = {}, subject = '', draft = '') {
         type: 'keyUp', key: 'Enter', code: 'Enter',
       }, 3000);
       await sleep(500);
+      // Ant Design's searchable recipient control may use the first Enter to
+      // accept an autocomplete suggestion while leaving the exact address in
+      // the search input. A second Enter commits that selection as a chip.
+      // Never accept a different suggestion: retry only on an exact match.
+      const recipientNeedsSecondCommit = await evaluateChromeTabJson(chromeOpen, `(() => {
+        const active = document.activeElement;
+        return JSON.stringify({
+          exactExpectedAddress: String(active?.value || '').trim().toLowerCase() === ${JSON.stringify(target.recipient.toLowerCase())},
+          role: active?.getAttribute?.('role') || '',
+        });
+      })()`, 5000).catch(() => null);
+      if (recipientNeedsSecondCommit && recipientNeedsSecondCommit.exactExpectedAddress) {
+        await cdpCommand(chromeOpen.webSocketDebuggerUrl, 'Input.dispatchKeyEvent', {
+          type: 'keyDown', key: 'Enter', code: 'Enter',
+        }, 3000);
+        await cdpCommand(chromeOpen.webSocketDebuggerUrl, 'Input.dispatchKeyEvent', {
+          type: 'keyUp', key: 'Enter', code: 'Enter',
+        }, 3000);
+        await sleep(500);
+      }
       }
       recipientStage = await evaluateChromeTabJson(chromeOpen, `(() => {
         const active = document.activeElement;
