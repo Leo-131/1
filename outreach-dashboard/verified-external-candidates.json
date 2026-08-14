@@ -1136,6 +1136,30 @@
     "verifiedAt": "2026-08-14T08:03:00.000Z"
   },
   {
+    "company": "Tackett Brothers Inc",
+    "country": "United States",
+    "url": "https://tackettbrothers.com/",
+    "contactUrl": "https://tackettbrothers.com/contact-us/",
+    "publicEmail": "tackbro@flash.net",
+    "contactEmail": "tackbro@flash.net",
+    "publicEmailStatus": "Official Texas-office business email published on the agency's first-party contact page.",
+    "emailVerificationStatus": "official_public_business_email",
+    "emailEvidence": "official_mid_central_outdoor_agency_contact_page",
+    "segment": "Mid-Central United States outdoor and sporting-goods sales agency",
+    "customerType": "sales_agency",
+    "fitScore": 96,
+    "background": "Tackett Brothers is an independent Mid-Central United States sales agency representing outdoor, hunting, fishing, tactical and related brands to national chains, regional chains, distributors and independent dealers.",
+    "buyerPersona": "Agency principal responsible for evaluating new outdoor and sporting-goods client partnerships.",
+    "evidenceUrl": "https://tackettbrothers.com/contact-us/",
+    "dataSources": [
+      "official agency website",
+      "official outdoor-industry business page",
+      "official Texas-office business email"
+    ],
+    "externalVerificationStatus": "official_supplier_email_verified",
+    "verifiedAt": "2026-08-14T09:17:00.000Z"
+  },
+  {
     "company": "Babbling Brook Sales",
     "country": "United States",
     "url": "https://www.babblingbrooksales.com/",

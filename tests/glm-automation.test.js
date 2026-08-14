@@ -1596,6 +1596,14 @@ test('first-party reserve promotes Babbling Brook official form and social fallb
   assert.equal(babblingBrook.externalVerificationStatus, 'official_supplier_route_verified');
 });
 
+test('first-party reserve promotes Tackett Brothers official outdoor-agency email', () => {
+  const tackett = verifiedExternalCandidates.find(item => item.company === 'Tackett Brothers Inc');
+  assert.equal(tackett.contactEmail, 'tackbro@flash.net');
+  assert.equal(tackett.evidenceUrl, 'https://tackettbrothers.com/contact-us/');
+  assert.equal(tackett.externalVerificationStatus, 'official_supplier_email_verified');
+  assert.match(tackett.background, /outdoor, hunting, fishing/);
+});
+
 test('email UI execution is hard-limited to Alibaba Mail and rejects alternate clients', () => {
   assert.ok(mainSource.includes("process.env.OUTREACH_EMAIL_UI_PROVIDER || 'alibaba_webmail'"));
   assert.ok(mainSource.includes("requestedEmailUiProvider !== 'alibaba_webmail'"));

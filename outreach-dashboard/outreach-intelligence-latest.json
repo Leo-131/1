@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-14T09:10:56.908Z",
+  "generatedAt": "2026-08-14T09:19:04.643Z",
   "companies": [
     {
       "companyId": "company_9ee0856edac2b8c2",
@@ -124,7 +124,7 @@
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://p-psg.com/",
-          "checkedAt": "2026-08-14T08:35:06.119Z"
+          "checkedAt": "2026-08-14T09:18:49.632Z"
         },
         {
           "channel": "facebook",
@@ -134,7 +134,7 @@
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://p-psg.com/",
-          "checkedAt": "2026-08-14T08:35:06.119Z"
+          "checkedAt": "2026-08-14T09:18:49.632Z"
         },
         {
           "channel": "facebook",
@@ -144,7 +144,7 @@
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://p-psg.com/",
-          "checkedAt": "2026-08-14T08:35:06.119Z"
+          "checkedAt": "2026-08-14T09:18:49.632Z"
         },
         {
           "channel": "website_form",
@@ -453,6 +453,66 @@
           "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:6;contact_path_strategy_v2"
         }
       ]
+    },
+    {
+      "companyId": "company_ce89b868059ec784",
+      "company": "Tackett Brothers Inc",
+      "keys": [
+        "tackettbrothersinc",
+        "tackettbrotherscom",
+        "flashnet"
+      ],
+      "domains": [
+        "tackettbrothers.com",
+        "flash.net"
+      ],
+      "channels": [
+        "email",
+        "website_form"
+      ],
+      "evidence": [
+        {
+          "channel": "email",
+          "score": 100,
+          "verified": true,
+          "reasons": [
+            "official_business_route"
+          ],
+          "evidenceUrl": "https://tackettbrothers.com/contact-us/",
+          "checkedAt": ""
+        },
+        {
+          "channel": "email",
+          "score": 100,
+          "verified": true,
+          "reasons": [
+            "official_business_route"
+          ],
+          "evidenceUrl": "https://tackettbrothers.com/contact-us/",
+          "checkedAt": ""
+        },
+        {
+          "channel": "email",
+          "score": 100,
+          "verified": true,
+          "reasons": [
+            "official_business_route"
+          ],
+          "evidenceUrl": "https://tackettbrothers.com/contact-us/",
+          "checkedAt": ""
+        },
+        {
+          "channel": "website_form",
+          "score": 100,
+          "verified": true,
+          "reasons": [
+            "official_business_route"
+          ],
+          "evidenceUrl": "https://tackettbrothers.com/contact-us/",
+          "checkedAt": "2026-08-14T09:17:00.000Z"
+        }
+      ],
+      "history": []
     },
     {
       "companyId": "company_b0143222cc9bf6ed",
@@ -872,7 +932,7 @@
             "official_business_route"
           ],
           "evidenceUrl": "https://www.nwogco.com/",
-          "checkedAt": "2026-08-14T07:12:40.893Z"
+          "checkedAt": "2026-08-14T09:10:40.089Z"
         },
         {
           "channel": "facebook",
@@ -2041,85 +2101,6 @@
       ]
     },
     {
-      "companyId": "company_49c7b4fd282ea0a2",
-      "company": "Babbling Brook Sales",
-      "keys": [
-        "babblingbrooksales",
-        "babblingbrooksalescom"
-      ],
-      "domains": [
-        "babblingbrooksales.com"
-      ],
-      "channels": [
-        "website_form",
-        "instagram",
-        "facebook"
-      ],
-      "evidence": [
-        {
-          "channel": "website_form",
-          "score": 100,
-          "verified": true,
-          "reasons": [
-            "official_business_route"
-          ],
-          "evidenceUrl": "https://www.babblingbrooksales.com/",
-          "checkedAt": "2026-08-14T09:07:00.000Z"
-        },
-        {
-          "channel": "website_form",
-          "score": 100,
-          "verified": true,
-          "reasons": [
-            "official_business_route"
-          ],
-          "evidenceUrl": "https://www.babblingbrooksales.com/",
-          "checkedAt": "2026-08-14T09:07:00.000Z"
-        },
-        {
-          "channel": "instagram",
-          "score": 100,
-          "verified": true,
-          "reasons": [
-            "official_business_route"
-          ],
-          "evidenceUrl": "https://www.babblingbrooksales.com/",
-          "checkedAt": "2026-08-14T09:10:41.581Z"
-        },
-        {
-          "channel": "facebook",
-          "score": 100,
-          "verified": true,
-          "reasons": [
-            "official_business_route"
-          ],
-          "evidenceUrl": "https://www.babblingbrooksales.com/",
-          "checkedAt": "2026-08-14T09:10:41.581Z"
-        },
-        {
-          "channel": "website_form",
-          "score": 100,
-          "verified": true,
-          "reasons": [
-            "official_business_route"
-          ],
-          "evidenceUrl": "https://www.babblingbrooksales.com/",
-          "checkedAt": "2026-08-14T09:07:00.000Z"
-        },
-        {
-          "channel": "research",
-          "score": 100,
-          "verified": true,
-          "reasons": [
-            "official_business_route"
-          ],
-          "evidenceUrl": "https://www.babblingbrooksales.com/",
-          "checkedAt": "2026-08-14T09:07:00.000Z"
-        }
-      ],
-      "history": []
-    },
-    {
       "companyId": "company_bf0ca6bde4f53237",
       "company": "Waypoint Outdoor",
       "keys": [
@@ -2300,7 +2281,7 @@
             "official_business_route"
           ],
           "evidenceUrl": "https://sanitassalesgroup.com/contact/",
-          "checkedAt": "2026-08-14T08:27:52.349Z"
+          "checkedAt": "2026-08-14T09:18:31.472Z"
         },
         {
           "channel": "website_form",
@@ -2477,7 +2458,7 @@
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://level8outdoor.com/about-us",
-          "checkedAt": "2026-08-14T07:47:53.610Z"
+          "checkedAt": "2026-08-14T09:18:40.974Z"
         },
         {
           "channel": "website_form",
@@ -2686,7 +2667,7 @@
             "official_business_route"
           ],
           "evidenceUrl": "https://www.ascensionsalesgroup.com/",
-          "checkedAt": "2026-08-14T08:35:02.010Z"
+          "checkedAt": "2026-08-14T09:18:48.086Z"
         },
         {
           "channel": "facebook",
@@ -2696,7 +2677,7 @@
             "official_business_route"
           ],
           "evidenceUrl": "https://www.ascensionsalesgroup.com/",
-          "checkedAt": "2026-08-14T08:35:02.010Z"
+          "checkedAt": "2026-08-14T09:18:48.086Z"
         }
       ],
       "history": [
@@ -4093,7 +4074,7 @@
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://perpetualmotionnw.com/",
-          "checkedAt": "2026-08-14T09:10:25.329Z"
+          "checkedAt": "2026-08-14T09:18:29.733Z"
         },
         {
           "channel": "facebook",
@@ -4103,7 +4084,7 @@
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://perpetualmotionnw.com/",
-          "checkedAt": "2026-08-14T09:10:25.329Z"
+          "checkedAt": "2026-08-14T09:18:29.733Z"
         },
         {
           "channel": "linkedin",
@@ -4113,7 +4094,7 @@
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://perpetualmotionnw.com/",
-          "checkedAt": "2026-08-14T09:10:25.329Z"
+          "checkedAt": "2026-08-14T09:18:29.733Z"
         },
         {
           "channel": "website_form",
@@ -7445,6 +7426,72 @@
       ]
     },
     {
+      "companyId": "company_49c7b4fd282ea0a2",
+      "company": "Babbling Brook Sales",
+      "keys": [
+        "babblingbrooksales",
+        "babblingbrooksalescom"
+      ],
+      "domains": [
+        "babblingbrooksales.com"
+      ],
+      "channels": [
+        "instagram",
+        "facebook",
+        "website_form"
+      ],
+      "evidence": [
+        {
+          "channel": "instagram",
+          "score": 100,
+          "verified": true,
+          "reasons": [
+            "official_business_route"
+          ],
+          "evidenceUrl": "https://www.babblingbrooksales.com/",
+          "checkedAt": "2026-08-14T09:10:41.581Z"
+        },
+        {
+          "channel": "facebook",
+          "score": 100,
+          "verified": true,
+          "reasons": [
+            "official_business_route"
+          ],
+          "evidenceUrl": "https://www.babblingbrooksales.com/",
+          "checkedAt": "2026-08-14T09:10:41.581Z"
+        },
+        {
+          "channel": "website_form",
+          "score": 100,
+          "verified": true,
+          "reasons": [
+            "official_business_route"
+          ],
+          "evidenceUrl": "https://www.babblingbrooksales.com/",
+          "checkedAt": "2026-08-14T09:10:41.581Z"
+        },
+        {
+          "channel": "research",
+          "score": 100,
+          "verified": true,
+          "reasons": [
+            "official_business_route"
+          ],
+          "evidenceUrl": "https://www.babblingbrooksales.com/",
+          "checkedAt": "2026-08-14T09:07:00.000Z"
+        }
+      ],
+      "history": [
+        {
+          "status": "failed_open",
+          "timestamp": "2026-08-14T09:12:34.850Z",
+          "channel": "instagram",
+          "evidence": "website_contact_entry_not_verified;contact_entry_clicked:Contact;official_social_fallback:facebook;instagram_message_button_clicked_composer_not_found;contact_path_strategy_v2"
+        }
+      ]
+    },
+    {
       "companyId": "company_628e6b766bdc14bc",
       "company": "Outdoor Sports Marketing",
       "keys": [
@@ -8014,7 +8061,7 @@
           "reasons": [
             "official_business_route"
           ],
-          "evidenceUrl": "https://help.cabelas.com/company-information-ff566349/how-can-i-sell-my-product-through-cabelas-cf904a21",
+          "evidenceUrl": "https://www.cabelas.com/",
           "checkedAt": ""
         },
         {
@@ -8156,7 +8203,7 @@
             "official_business_route"
           ],
           "evidenceUrl": "https://13west.com/about/",
-          "checkedAt": "2026-08-14T08:27:35.228Z"
+          "checkedAt": "2026-08-14T09:10:47.817Z"
         },
         {
           "channel": "linkedin",
@@ -8245,7 +8292,7 @@
             "official_business_route"
           ],
           "evidenceUrl": "https://www.synergyreps.net/schedule",
-          "checkedAt": "2026-08-14T08:27:36.004Z"
+          "checkedAt": "2026-08-14T09:10:46.439Z"
         },
         {
           "channel": "linkedin",
@@ -8307,7 +8354,7 @@
             "official_business_route"
           ],
           "evidenceUrl": "https://www.palisadetrading.com/",
-          "checkedAt": "2026-08-14T08:27:38.274Z"
+          "checkedAt": "2026-08-14T09:10:48.261Z"
         },
         {
           "channel": "website_form",
@@ -8317,7 +8364,7 @@
             "official_business_route"
           ],
           "evidenceUrl": "https://www.palisadetrading.com/",
-          "checkedAt": "2026-08-14T08:27:38.274Z"
+          "checkedAt": "2026-08-14T09:10:48.261Z"
         },
         {
           "channel": "research",
@@ -8375,7 +8422,7 @@
             "official_business_route"
           ],
           "evidenceUrl": "https://www.weareuhuru.com/",
-          "checkedAt": "2026-08-14T08:27:37.844Z"
+          "checkedAt": "2026-08-14T09:10:48.521Z"
         },
         {
           "channel": "research",
@@ -8814,7 +8861,7 @@
             "official_business_route"
           ],
           "evidenceUrl": "https://nomadicsupply.com/sell-your-products-with-nomadic-supply-company/",
-          "checkedAt": "2026-08-14T08:27:41.963Z"
+          "checkedAt": "2026-08-14T09:10:49.028Z"
         },
         {
           "channel": "website_form",
@@ -8834,7 +8881,7 @@
             "official_business_route"
           ],
           "evidenceUrl": "https://nomadicsupply.com/sell-your-products-with-nomadic-supply-company/",
-          "checkedAt": "2026-08-14T08:27:41.963Z"
+          "checkedAt": "2026-08-14T09:10:49.028Z"
         },
         {
           "channel": "linkedin",
@@ -8844,7 +8891,7 @@
             "official_business_route"
           ],
           "evidenceUrl": "https://nomadicsupply.com/sell-your-products-with-nomadic-supply-company/",
-          "checkedAt": "2026-08-14T08:27:41.963Z"
+          "checkedAt": "2026-08-14T09:10:49.028Z"
         }
       ],
       "history": [
@@ -8940,7 +8987,7 @@
           "reasons": [
             "official_business_route"
           ],
-          "evidenceUrl": "https://vigosgroup.com/contact",
+          "evidenceUrl": "https://vigosgroup.com/",
           "checkedAt": ""
         },
         {
@@ -9718,7 +9765,7 @@
             "official_business_route"
           ],
           "evidenceUrl": "https://www.blackdogsalesgroup.com/",
-          "checkedAt": "2026-08-14T08:27:50.057Z"
+          "checkedAt": "2026-08-14T09:18:32.345Z"
         },
         {
           "channel": "facebook",
@@ -9728,7 +9775,7 @@
             "official_business_route"
           ],
           "evidenceUrl": "https://www.blackdogsalesgroup.com/",
-          "checkedAt": "2026-08-14T08:27:50.057Z"
+          "checkedAt": "2026-08-14T09:18:32.345Z"
         },
         {
           "channel": "research",
@@ -9783,7 +9830,7 @@
             "official_business_route"
           ],
           "evidenceUrl": "https://www.stonerandrews.com/history-ethos",
-          "checkedAt": "2026-08-14T08:27:50.049Z"
+          "checkedAt": "2026-08-14T09:18:32.115Z"
         }
       ],
       "history": [
@@ -9829,7 +9876,7 @@
             "official_business_route"
           ],
           "evidenceUrl": "https://www.mtnstuff.com/",
-          "checkedAt": "2026-08-14T08:27:57.756Z"
+          "checkedAt": "2026-08-14T09:18:34.978Z"
         },
         {
           "channel": "facebook",
@@ -9839,7 +9886,7 @@
             "official_business_route"
           ],
           "evidenceUrl": "https://www.mtnstuff.com/",
-          "checkedAt": "2026-08-14T08:27:57.756Z"
+          "checkedAt": "2026-08-14T09:18:34.978Z"
         }
       ],
       "history": [
@@ -9997,7 +10044,7 @@
             "official_business_route"
           ],
           "evidenceUrl": "https://aimoutside.com/",
-          "checkedAt": "2026-08-14T07:47:50.172Z"
+          "checkedAt": "2026-08-14T09:18:35.640Z"
         },
         {
           "channel": "linkedin",
@@ -10007,7 +10054,7 @@
             "official_business_route"
           ],
           "evidenceUrl": "https://aimoutside.com/",
-          "checkedAt": "2026-08-14T07:47:50.172Z"
+          "checkedAt": "2026-08-14T09:18:35.640Z"
         },
         {
           "channel": "linkedin",
@@ -10017,7 +10064,7 @@
             "official_business_route"
           ],
           "evidenceUrl": "https://aimoutside.com/",
-          "checkedAt": "2026-08-14T07:47:50.172Z"
+          "checkedAt": "2026-08-14T09:18:35.640Z"
         }
       ],
       "history": [
@@ -10114,7 +10161,7 @@
             "official_business_route"
           ],
           "evidenceUrl": "https://www.sicnarfadventure.com/contact-us",
-          "checkedAt": "2026-08-14T07:47:50.070Z"
+          "checkedAt": "2026-08-14T09:18:37.344Z"
         },
         {
           "channel": "instagram",
@@ -10124,7 +10171,7 @@
             "official_business_route"
           ],
           "evidenceUrl": "https://www.sicnarfadventure.com/contact-us",
-          "checkedAt": "2026-08-14T07:47:50.070Z"
+          "checkedAt": "2026-08-14T09:18:37.344Z"
         },
         {
           "channel": "linkedin",
@@ -10134,7 +10181,7 @@
             "official_business_route"
           ],
           "evidenceUrl": "https://www.sicnarfadventure.com/contact-us",
-          "checkedAt": "2026-08-14T07:47:50.070Z"
+          "checkedAt": "2026-08-14T09:18:37.344Z"
         },
         {
           "channel": "website_form",
@@ -10190,7 +10237,7 @@
             "official_business_route"
           ],
           "evidenceUrl": "https://r2soutdoors.com/",
-          "checkedAt": "2026-08-14T07:47:52.124Z"
+          "checkedAt": "2026-08-14T09:18:37.603Z"
         },
         {
           "channel": "instagram",
@@ -10200,7 +10247,7 @@
             "official_business_route"
           ],
           "evidenceUrl": "https://r2soutdoors.com/",
-          "checkedAt": "2026-08-14T07:47:52.124Z"
+          "checkedAt": "2026-08-14T09:18:37.603Z"
         },
         {
           "channel": "research",
@@ -10442,7 +10489,7 @@
             "official_business_route"
           ],
           "evidenceUrl": "https://avenuedist.com/",
-          "checkedAt": "2026-08-14T07:47:51.960Z"
+          "checkedAt": "2026-08-14T09:18:40.138Z"
         },
         {
           "channel": "email",
@@ -10570,7 +10617,7 @@
             "official_business_route"
           ],
           "evidenceUrl": "https://www.activagency.com/about",
-          "checkedAt": "2026-08-14T08:34:58.572Z"
+          "checkedAt": "2026-08-14T09:18:42.443Z"
         },
         {
           "channel": "website_form",
@@ -10771,7 +10818,7 @@
             "official_business_route"
           ],
           "evidenceUrl": "https://cwrdistribution.com/Camping_Supplies",
-          "checkedAt": "2026-08-14T08:34:59.720Z"
+          "checkedAt": "2026-08-14T09:18:43.651Z"
         },
         {
           "channel": "instagram",
@@ -10781,7 +10828,7 @@
             "official_business_route"
           ],
           "evidenceUrl": "https://cwrdistribution.com/Camping_Supplies",
-          "checkedAt": "2026-08-14T08:34:59.720Z"
+          "checkedAt": "2026-08-14T09:18:43.651Z"
         },
         {
           "channel": "linkedin",
@@ -10791,7 +10838,7 @@
             "official_business_route"
           ],
           "evidenceUrl": "https://cwrdistribution.com/Camping_Supplies",
-          "checkedAt": "2026-08-14T08:34:59.720Z"
+          "checkedAt": "2026-08-14T09:18:43.651Z"
         }
       ],
       "history": [
@@ -10837,7 +10884,7 @@
             "official_business_route"
           ],
           "evidenceUrl": "https://roirecreation.com/about-us",
-          "checkedAt": "2026-08-14T08:35:00.355Z"
+          "checkedAt": "2026-08-14T09:18:45.253Z"
         },
         {
           "channel": "instagram",
@@ -10847,7 +10894,7 @@
             "official_business_route"
           ],
           "evidenceUrl": "https://roirecreation.com/about-us",
-          "checkedAt": "2026-08-14T08:35:00.355Z"
+          "checkedAt": "2026-08-14T09:18:45.253Z"
         }
       ],
       "history": [
@@ -10884,7 +10931,7 @@
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://yandm.ca/b2b/",
-          "checkedAt": "2026-08-14T08:34:59.597Z"
+          "checkedAt": "2026-08-14T09:18:42.476Z"
         },
         {
           "channel": "facebook",
@@ -10894,7 +10941,7 @@
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://yandm.ca/b2b/",
-          "checkedAt": "2026-08-14T08:34:59.597Z"
+          "checkedAt": "2026-08-14T09:18:42.476Z"
         },
         {
           "channel": "linkedin",
@@ -10904,7 +10951,7 @@
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://yandm.ca/b2b/",
-          "checkedAt": "2026-08-14T08:34:59.597Z"
+          "checkedAt": "2026-08-14T09:18:42.476Z"
         },
         {
           "channel": "website_form",
@@ -10979,7 +11026,7 @@
             "official_business_route"
           ],
           "evidenceUrl": "https://canamsalesgroup.com/",
-          "checkedAt": "2026-08-14T08:35:03.764Z"
+          "checkedAt": "2026-08-14T09:18:46.459Z"
         },
         {
           "channel": "instagram",
@@ -10989,7 +11036,7 @@
             "official_business_route"
           ],
           "evidenceUrl": "https://canamsalesgroup.com/",
-          "checkedAt": "2026-08-14T08:35:03.764Z"
+          "checkedAt": "2026-08-14T09:18:46.459Z"
         },
         {
           "channel": "linkedin",
@@ -10999,7 +11046,7 @@
             "official_business_route"
           ],
           "evidenceUrl": "https://canamsalesgroup.com/",
-          "checkedAt": "2026-08-14T08:35:03.764Z"
+          "checkedAt": "2026-08-14T09:18:46.459Z"
         }
       ],
       "history": [
@@ -11078,7 +11125,7 @@
             "official_business_route"
           ],
           "evidenceUrl": "https://www.repfirst.com/about-us",
-          "checkedAt": "2026-08-14T08:35:01.052Z"
+          "checkedAt": "2026-08-14T09:18:45.879Z"
         }
       ],
       "history": [
@@ -11169,7 +11216,7 @@
             "official_business_route"
           ],
           "evidenceUrl": "https://www.northbranchtraders.com/about-us",
-          "checkedAt": "2026-08-14T08:35:04.342Z"
+          "checkedAt": "2026-08-14T09:18:48.691Z"
         },
         {
           "channel": "facebook",
@@ -11179,7 +11226,7 @@
             "official_business_route"
           ],
           "evidenceUrl": "https://www.northbranchtraders.com/about-us",
-          "checkedAt": "2026-08-14T08:35:04.342Z"
+          "checkedAt": "2026-08-14T09:18:48.691Z"
         },
         {
           "channel": "instagram",
@@ -11189,7 +11236,7 @@
             "official_business_route"
           ],
           "evidenceUrl": "https://www.northbranchtraders.com/about-us",
-          "checkedAt": "2026-08-14T08:35:04.342Z"
+          "checkedAt": "2026-08-14T09:18:48.691Z"
         }
       ],
       "history": [
@@ -11269,7 +11316,7 @@
             "official_business_route"
           ],
           "evidenceUrl": "https://vertoutdoors.com/team",
-          "checkedAt": "2026-08-14T08:35:07.623Z"
+          "checkedAt": "2026-08-14T09:18:51.425Z"
         },
         {
           "channel": "facebook",
@@ -11279,7 +11326,7 @@
             "official_business_route"
           ],
           "evidenceUrl": "https://vertoutdoors.com/team",
-          "checkedAt": "2026-08-14T08:35:07.623Z"
+          "checkedAt": "2026-08-14T09:18:51.425Z"
         }
       ],
       "history": [
@@ -11942,7 +11989,7 @@
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://www.parallel45sales.com/",
-          "checkedAt": "2026-08-14T09:10:23.692Z"
+          "checkedAt": "2026-08-14T09:18:22.738Z"
         },
         {
           "channel": "website_form",
@@ -18180,7 +18227,7 @@
             "official_business_route"
           ],
           "evidenceUrl": "https://www.utemountaineer.com/",
-          "checkedAt": "2026-08-14T09:10:23.747Z"
+          "checkedAt": "2026-08-14T09:18:22.129Z"
         },
         {
           "channel": "facebook",
@@ -18190,7 +18237,7 @@
             "official_business_route"
           ],
           "evidenceUrl": "https://www.utemountaineer.com/",
-          "checkedAt": "2026-08-14T09:10:23.747Z"
+          "checkedAt": "2026-08-14T09:18:22.129Z"
         }
       ],
       "history": [
@@ -21864,7 +21911,7 @@
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://ramseyoutdoor.com/",
-          "checkedAt": "2026-08-14T09:10:23.674Z"
+          "checkedAt": "2026-08-14T09:18:25.788Z"
         },
         {
           "channel": "facebook",
@@ -21874,7 +21921,7 @@
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://ramseyoutdoor.com/",
-          "checkedAt": "2026-08-14T09:10:23.674Z"
+          "checkedAt": "2026-08-14T09:18:25.788Z"
         },
         {
           "channel": "website_form",
@@ -22528,7 +22575,7 @@
             "official_business_route"
           ],
           "evidenceUrl": "https://paragonsports.com/",
-          "checkedAt": "2026-08-14T09:10:24.629Z"
+          "checkedAt": "2026-08-14T09:18:26.069Z"
         },
         {
           "channel": "facebook",
@@ -22538,7 +22585,7 @@
             "official_business_route"
           ],
           "evidenceUrl": "https://paragonsports.com/",
-          "checkedAt": "2026-08-14T09:10:24.629Z"
+          "checkedAt": "2026-08-14T09:18:26.069Z"
         },
         {
           "channel": "email",
@@ -24842,7 +24889,7 @@
             "unverified_external_evidence_rejected"
           ],
           "evidenceUrl": "https://www.publiclands.com/?segment=mjtopl",
-          "checkedAt": "2026-08-14T09:10:25.798Z"
+          "checkedAt": "2026-08-14T09:18:26.793Z"
         }
       ],
       "history": [
@@ -26975,7 +27022,7 @@
             "official_business_route"
           ],
           "evidenceUrl": "https://www.oedinc.com/",
-          "checkedAt": "2026-08-14T08:19:07.305Z"
+          "checkedAt": "2026-08-14T09:10:35.802Z"
         },
         {
           "channel": "instagram",
@@ -26985,7 +27032,7 @@
             "official_business_route"
           ],
           "evidenceUrl": "https://www.oedinc.com/",
-          "checkedAt": "2026-08-14T08:19:07.305Z"
+          "checkedAt": "2026-08-14T09:10:35.802Z"
         }
       ],
       "history": [
@@ -27255,7 +27302,7 @@
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://www.basecamp-outfitters.com/",
-          "checkedAt": "2026-08-14T07:12:41.300Z"
+          "checkedAt": "2026-08-14T09:10:40.106Z"
         },
         {
           "channel": "facebook",
@@ -35511,6 +35558,18 @@
         "reason": "highest_priority_verified_channel"
       },
       {
+        "companyId": "company_ce89b868059ec784",
+        "company": "Tackett Brothers Inc",
+        "action": "first_touch",
+        "channel": "email",
+        "evidenceScore": 100,
+        "evidenceUrl": "https://tackettbrothers.com/contact-us/",
+        "alternatives": [
+          "website_form"
+        ],
+        "reason": "highest_priority_verified_channel"
+      },
+      {
         "companyId": "company_a5b63ae83c161ccc",
         "company": "Continental Sports Inc",
         "action": "first_touch",
@@ -35540,18 +35599,6 @@
         "evidenceScore": 100,
         "evidenceUrl": "https://blackandwhiteoutdoors.com/",
         "alternatives": [],
-        "reason": "highest_priority_verified_channel"
-      },
-      {
-        "companyId": "company_49c7b4fd282ea0a2",
-        "company": "Babbling Brook Sales",
-        "action": "first_touch",
-        "channel": "website_form",
-        "evidenceScore": 100,
-        "evidenceUrl": "https://www.babblingbrooksales.com/",
-        "alternatives": [
-          "instagram"
-        ],
         "reason": "highest_priority_verified_channel"
       },
       {
@@ -35601,6 +35648,16 @@
         "channel": "instagram",
         "evidenceScore": 95,
         "evidenceUrl": "https://level8outdoor.com/about-us",
+        "alternatives": [],
+        "reason": "highest_priority_verified_channel"
+      },
+      {
+        "companyId": "company_92baeb13e39161d0",
+        "company": "The Curtis Group Sales",
+        "action": "first_touch",
+        "channel": "website_form",
+        "evidenceScore": 100,
+        "evidenceUrl": "https://thecurtisgroupsales.com/contact-us/",
         "alternatives": [],
         "reason": "highest_priority_verified_channel"
       },
@@ -35705,16 +35762,6 @@
         "channel": "email",
         "evidenceScore": 100,
         "evidenceUrl": "https://www.mountainx.ca/sales",
-        "alternatives": [],
-        "reason": "highest_priority_verified_channel"
-      },
-      {
-        "companyId": "company_e32d2786c50bea29",
-        "company": "Black Dog Sales Group",
-        "action": "first_touch",
-        "channel": "email",
-        "evidenceScore": 100,
-        "evidenceUrl": "https://www.blackdogsalesgroup.com/",
         "alternatives": [],
         "reason": "highest_priority_verified_channel"
       }
@@ -35837,13 +35884,13 @@
     ]
   },
   "ownerSummary": {
-    "generatedAt": "2026-08-14T09:10:56.908Z",
+    "generatedAt": "2026-08-14T09:19:04.643Z",
     "phase": "autonomous_sales_operating_system_v1",
     "kpis": {
-      "companies": 527,
+      "companies": 528,
       "permanentlySuppressed": 406,
       "plannedActions": 25,
-      "verifiedEvidenceRoutes": 687
+      "verifiedEvidenceRoutes": 689
     },
     "decisions": [
       {
@@ -35904,6 +35951,18 @@
         "reason": "highest_priority_verified_channel"
       },
       {
+        "companyId": "company_ce89b868059ec784",
+        "company": "Tackett Brothers Inc",
+        "action": "first_touch",
+        "channel": "email",
+        "evidenceScore": 100,
+        "evidenceUrl": "https://tackettbrothers.com/contact-us/",
+        "alternatives": [
+          "website_form"
+        ],
+        "reason": "highest_priority_verified_channel"
+      },
+      {
         "companyId": "company_a5b63ae83c161ccc",
         "company": "Continental Sports Inc",
         "action": "first_touch",
@@ -35933,18 +35992,6 @@
         "evidenceScore": 100,
         "evidenceUrl": "https://blackandwhiteoutdoors.com/",
         "alternatives": [],
-        "reason": "highest_priority_verified_channel"
-      },
-      {
-        "companyId": "company_49c7b4fd282ea0a2",
-        "company": "Babbling Brook Sales",
-        "action": "first_touch",
-        "channel": "website_form",
-        "evidenceScore": 100,
-        "evidenceUrl": "https://www.babblingbrooksales.com/",
-        "alternatives": [
-          "instagram"
-        ],
         "reason": "highest_priority_verified_channel"
       },
       {
