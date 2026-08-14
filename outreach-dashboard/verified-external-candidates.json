@@ -1136,6 +1136,33 @@
     "verifiedAt": "2026-08-14T08:03:00.000Z"
   },
   {
+    "company": "Babbling Brook Sales",
+    "country": "United States",
+    "url": "https://www.babblingbrooksales.com/",
+    "contactUrl": "https://www.babblingbrooksales.com/",
+    "contactCapabilityVerified": true,
+    "facebookUrl": "https://www.facebook.com/babblingbrooksales",
+    "instagramUrl": "https://www.instagram.com/babblingbrooksales",
+    "officialSocialProfileVerified": true,
+    "socialProfileEvidenceUrl": "https://www.babblingbrooksales.com/",
+    "socialProfileVerifiedAt": "2026-08-14T09:07:00.000Z",
+    "segment": "Rocky Mountain premium outdoor brand sales agency",
+    "customerType": "sales_agency",
+    "fitScore": 98,
+    "background": "Babbling Brook Sales is an independent Rocky Mountain outdoor sales agency that explicitly invites complementary premium brands and supports specialty retailers and vendor partners.",
+    "buyerPersona": "Agency principal responsible for adding complementary premium outdoor brands.",
+    "evidenceUrl": "https://www.babblingbrooksales.com/",
+    "dataSources": [
+      "official agency website",
+      "official brand-representation invitation",
+      "official website contact form",
+      "official website-linked Facebook",
+      "official website-linked Instagram"
+    ],
+    "externalVerificationStatus": "official_supplier_route_verified",
+    "verifiedAt": "2026-08-14T09:07:00.000Z"
+  },
+  {
     "company": "Mystery Mountain Sales",
     "country": "Canada",
     "url": "https://www.mysterymountainsales.com/",

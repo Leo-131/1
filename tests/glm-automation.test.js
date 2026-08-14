@@ -1586,6 +1586,16 @@ test('first-party reserve promotes Mystery Mountain official Western Canada agen
   assert.match(mysteryMountain.background, /Western Canada/);
 });
 
+test('first-party reserve promotes Babbling Brook official form and social fallback routes', () => {
+  const babblingBrook = verifiedExternalCandidates.find(item => item.company === 'Babbling Brook Sales');
+  assert.equal(babblingBrook.contactCapabilityVerified, true);
+  assert.equal(babblingBrook.facebookUrl, 'https://www.facebook.com/babblingbrooksales');
+  assert.equal(babblingBrook.instagramUrl, 'https://www.instagram.com/babblingbrooksales');
+  assert.equal(babblingBrook.officialSocialProfileVerified, true);
+  assert.equal(babblingBrook.socialProfileEvidenceUrl, 'https://www.babblingbrooksales.com/');
+  assert.equal(babblingBrook.externalVerificationStatus, 'official_supplier_route_verified');
+});
+
 test('email UI execution is hard-limited to Alibaba Mail and rejects alternate clients', () => {
   assert.ok(mainSource.includes("process.env.OUTREACH_EMAIL_UI_PROVIDER || 'alibaba_webmail'"));
   assert.ok(mainSource.includes("requestedEmailUiProvider !== 'alibaba_webmail'"));
