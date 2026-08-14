@@ -1514,6 +1514,17 @@ test('first-party reserve includes net-new Uhuru and R2S North America agency ro
   assert.equal(r2s.externalVerificationStatus, 'official_supplier_email_verified');
 });
 
+test('first-party reserve promotes Mountain Source social and Waypoint brand form', () => {
+  const mountainSource = verifiedExternalCandidates.find(item => item.company === 'Mountain Source');
+  const waypoint = verifiedExternalCandidates.find(item => item.company === 'Waypoint Outdoor');
+  assert.equal(mountainSource.instagramUrl, 'https://www.instagram.com/mountainsource/');
+  assert.equal(mountainSource.officialSocialProfileVerified, true);
+  assert.equal(mountainSource.socialProfileEvidenceUrl, 'https://www.mountainsource.com/');
+  assert.equal(waypoint.contactUrl, 'https://www.waypointoutdoor.com/contact/');
+  assert.equal(waypoint.contactCapabilityVerified, true);
+  assert.equal(waypoint.externalVerificationStatus, 'official_supplier_form_verified');
+});
+
 test('email UI execution is hard-limited to Alibaba Mail and rejects alternate clients', () => {
   assert.ok(mainSource.includes("process.env.OUTREACH_EMAIL_UI_PROVIDER || 'alibaba_webmail'"));
   assert.ok(mainSource.includes("requestedEmailUiProvider !== 'alibaba_webmail'"));

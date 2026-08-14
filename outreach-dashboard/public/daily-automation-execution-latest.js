@@ -1,5 +1,5 @@
 window.DAILY_AUTOMATION_EXECUTION_LATEST = {
-  "ok": true,
+  "ok": false,
   "browserTransportRequested": "codex-extension-first",
   "browserTransportUsed": "cdp",
   "browserTransportFallbackReason": "extension_bridge_not_available_process_local_cdp",
@@ -7,155 +7,101 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
   "executionPhase": "browser_execution",
   "chromeStage": "opened",
   "chromeOpened": true,
-  "chromeOpenedCount": 2,
-  "customerDevelopmentPerformed": true,
-  "customerMessageSent": true,
-  "realDevelopmentCount": 2,
-  "reportingVerdict": "development_performed",
+  "chromeOpenedCount": 1,
+  "customerDevelopmentPerformed": false,
+  "customerMessageSent": false,
+  "realDevelopmentCount": 0,
+  "reportingVerdict": "no_customer_development_performed",
   "engine": "Browser transport queue bridge",
   "mode": "serial-single-target",
   "batchMode": "parallel-batches",
   "parallelLimit": 1,
   "limit": 25,
   "queueDate": "2026-08-14",
-  "queueSource": "dailyQueue",
+  "queueSource": "dailyPotentialPool",
   "executed": [
     {
-      "id": "google-customer-uhuru-mountain-collective-website-contact",
-      "company": "Uhuru Mountain Collective",
-      "action": "email_priority",
-      "platform": "email",
-      "targetUrl": "https://www.weareuhuru.com/",
-      "ok": true,
-      "sendStatus": "sent_confirmed",
-      "evidence": "official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed",
-      "timestamp": "2026-08-14T07:38:06.195Z",
-      "chromeOpen": null,
-      "result": {
+      "id": "google-customer-waypoint-outdoor-website-contact",
+      "company": "Waypoint Outdoor",
+      "action": "develop",
+      "platform": "website_form",
+      "targetUrl": "https://www.waypointoutdoor.com/contact/",
+      "ok": false,
+      "sendStatus": "website_contact_unreachable_skip",
+      "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:1;contact_path_strategy_v2",
+      "timestamp": "2026-08-14T07:45:20.894Z",
+      "chromeOpen": {
         "ok": true,
-        "sendStatus": "sent_confirmed",
-        "reason": "sent_folder_message_confirmed",
-        "evidence": "official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed;parallel_multichannel:instagram;instagram_message_button_clicked_composer_not_found",
-        "recipientEmail": "mallory@uhurumountain.com",
-        "targetUrl": "mailto:mallory@uhurumountain.com",
-        "subject": "FLEXTAIL retail partnership | 2026 assortment",
-        "draft": "Dear Uhuru Mountain Collective Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
-        "engine": "alibaba-enterprise-mail-web-session",
-        "mode": "alibaba_webmail_sent_folder_confirmed",
-        "manualApprovalRequired": false,
-        "autoSendAuthorized": true,
-        "contentValidation": {
-          "ok": true,
-          "errors": [],
-          "words": 110
-        },
-        "output": "{\"verdict\":\"sent_confirmed\",\"sendStatus\":\"sent_confirmed\",\"evidence\":\"official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed\",\"nextAction\":\"Alibaba Mail accepted the message and the matching record exists in Sent.\",\"recipientEmail\":\"mallory@uhurumountain.com\",\"messageId\":\"\"}",
-        "secondaryChannelStatus": "failed_open",
-        "secondaryChannelPlatform": "instagram",
-        "secondaryChannelTarget": "https://www.instagram.com/uhuru_mtn/"
-      }
-    },
-    {
-      "id": "google-customer-r2s-outdoors-agency-website-contact",
-      "company": "R2S Outdoors Agency",
-      "action": "email_priority",
-      "platform": "email",
-      "targetUrl": "https://r2soutdoors.com/",
-      "ok": true,
-      "sendStatus": "sent_confirmed",
-      "evidence": "official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed",
-      "timestamp": "2026-08-14T07:38:47.084Z",
-      "chromeOpen": null,
+        "engine": "codex-chrome-cdp",
+        "port": 9224,
+        "targetUrl": "https://www.waypointoutdoor.com/contact/",
+        "tabId": "B14340954295242A1D445239895FE167",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/B14340954295242A1D445239895FE167",
+        "title": "Contact – Waypoint Outdoor"
+      },
       "result": {
-        "ok": true,
-        "sendStatus": "sent_confirmed",
-        "reason": "sent_folder_message_confirmed",
-        "evidence": "official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed;official_social_channel_not_verified",
-        "recipientEmail": "info@r2soutdoors.com",
-        "targetUrl": "mailto:info@r2soutdoors.com",
-        "subject": "FLEXTAIL retail partnership | 2026 assortment",
-        "draft": "Dear R2S Outdoors Agency Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
-        "engine": "alibaba-enterprise-mail-web-session",
-        "mode": "alibaba_webmail_sent_folder_confirmed",
-        "manualApprovalRequired": false,
-        "autoSendAuthorized": true,
-        "contentValidation": {
+        "ok": false,
+        "engine": "dedicated-chrome-cdp-website-contact",
+        "browserEngine": "codex-chrome-cdp",
+        "mode": "website_contact_unreachable_skip",
+        "targetUrl": "https://www.waypointoutdoor.com/contact/",
+        "chromeOpen": {
           "ok": true,
-          "errors": [],
-          "words": 110
+          "engine": "codex-chrome-cdp",
+          "port": 9224,
+          "targetUrl": "https://www.waypointoutdoor.com/contact/",
+          "tabId": "B14340954295242A1D445239895FE167",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/B14340954295242A1D445239895FE167",
+          "title": "Contact – Waypoint Outdoor"
         },
-        "output": "{\"verdict\":\"sent_confirmed\",\"sendStatus\":\"sent_confirmed\",\"evidence\":\"official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed\",\"nextAction\":\"Alibaba Mail accepted the message and the matching record exists in Sent.\",\"recipientEmail\":\"info@r2soutdoors.com\",\"messageId\":\"\"}",
-        "secondaryChannelStatus": "official_social_channel_not_verified"
+        "sendStatus": "website_contact_unreachable_skip",
+        "subject": "FLEXTAIL retail partnership | 2026 assortment",
+        "draft": "Dear Waypoint Outdoor Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
+        "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:1;contact_path_strategy_v2",
+        "output": "{\"verdict\":\"website_contact_unreachable_skip\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:1;contact_path_strategy_v2\",\"nextAction\":\"Contact page opened, but no verified form, mailto link, vendor/business route, or clickable Contact Us path was detected. Continue manually before marking the lead ready.\",\"subject\":\"FLEXTAIL retail partnership | 2026 assortment\",\"draft\":\"Dear Waypoint Outdoor Team,\\n\\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\\n\\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\\n\\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\\n\\nProduct overview: https://www.flextail.com/\\n\\nBest regards,\\nLeo Liu\\nSales & Operations Director\\nLeo@flextailgear.com\",\"sendStatus\":\"website_contact_unreachable_skip\",\"attempts\":[{\"targetUrl\":\"https://www.waypointoutdoor.com/contact/\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control\"}]}"
       }
     }
   ],
   "results": [
     {
-      "id": "google-customer-uhuru-mountain-collective-website-contact",
-      "company": "Uhuru Mountain Collective",
-      "action": "email_priority",
-      "platform": "email",
-      "targetUrl": "https://www.weareuhuru.com/",
-      "ok": true,
-      "sendStatus": "sent_confirmed",
-      "evidence": "official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed",
-      "timestamp": "2026-08-14T07:38:06.195Z",
-      "chromeOpen": null,
-      "result": {
+      "id": "google-customer-waypoint-outdoor-website-contact",
+      "company": "Waypoint Outdoor",
+      "action": "develop",
+      "platform": "website_form",
+      "targetUrl": "https://www.waypointoutdoor.com/contact/",
+      "ok": false,
+      "sendStatus": "website_contact_unreachable_skip",
+      "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:1;contact_path_strategy_v2",
+      "timestamp": "2026-08-14T07:45:20.894Z",
+      "chromeOpen": {
         "ok": true,
-        "sendStatus": "sent_confirmed",
-        "reason": "sent_folder_message_confirmed",
-        "evidence": "official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed;parallel_multichannel:instagram;instagram_message_button_clicked_composer_not_found",
-        "recipientEmail": "mallory@uhurumountain.com",
-        "targetUrl": "mailto:mallory@uhurumountain.com",
-        "subject": "FLEXTAIL retail partnership | 2026 assortment",
-        "draft": "Dear Uhuru Mountain Collective Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
-        "engine": "alibaba-enterprise-mail-web-session",
-        "mode": "alibaba_webmail_sent_folder_confirmed",
-        "manualApprovalRequired": false,
-        "autoSendAuthorized": true,
-        "contentValidation": {
-          "ok": true,
-          "errors": [],
-          "words": 110
-        },
-        "output": "{\"verdict\":\"sent_confirmed\",\"sendStatus\":\"sent_confirmed\",\"evidence\":\"official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed\",\"nextAction\":\"Alibaba Mail accepted the message and the matching record exists in Sent.\",\"recipientEmail\":\"mallory@uhurumountain.com\",\"messageId\":\"\"}",
-        "secondaryChannelStatus": "failed_open",
-        "secondaryChannelPlatform": "instagram",
-        "secondaryChannelTarget": "https://www.instagram.com/uhuru_mtn/"
-      }
-    },
-    {
-      "id": "google-customer-r2s-outdoors-agency-website-contact",
-      "company": "R2S Outdoors Agency",
-      "action": "email_priority",
-      "platform": "email",
-      "targetUrl": "https://r2soutdoors.com/",
-      "ok": true,
-      "sendStatus": "sent_confirmed",
-      "evidence": "official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed",
-      "timestamp": "2026-08-14T07:38:47.084Z",
-      "chromeOpen": null,
+        "engine": "codex-chrome-cdp",
+        "port": 9224,
+        "targetUrl": "https://www.waypointoutdoor.com/contact/",
+        "tabId": "B14340954295242A1D445239895FE167",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/B14340954295242A1D445239895FE167",
+        "title": "Contact – Waypoint Outdoor"
+      },
       "result": {
-        "ok": true,
-        "sendStatus": "sent_confirmed",
-        "reason": "sent_folder_message_confirmed",
-        "evidence": "official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed;official_social_channel_not_verified",
-        "recipientEmail": "info@r2soutdoors.com",
-        "targetUrl": "mailto:info@r2soutdoors.com",
-        "subject": "FLEXTAIL retail partnership | 2026 assortment",
-        "draft": "Dear R2S Outdoors Agency Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
-        "engine": "alibaba-enterprise-mail-web-session",
-        "mode": "alibaba_webmail_sent_folder_confirmed",
-        "manualApprovalRequired": false,
-        "autoSendAuthorized": true,
-        "contentValidation": {
+        "ok": false,
+        "engine": "dedicated-chrome-cdp-website-contact",
+        "browserEngine": "codex-chrome-cdp",
+        "mode": "website_contact_unreachable_skip",
+        "targetUrl": "https://www.waypointoutdoor.com/contact/",
+        "chromeOpen": {
           "ok": true,
-          "errors": [],
-          "words": 110
+          "engine": "codex-chrome-cdp",
+          "port": 9224,
+          "targetUrl": "https://www.waypointoutdoor.com/contact/",
+          "tabId": "B14340954295242A1D445239895FE167",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/B14340954295242A1D445239895FE167",
+          "title": "Contact – Waypoint Outdoor"
         },
-        "output": "{\"verdict\":\"sent_confirmed\",\"sendStatus\":\"sent_confirmed\",\"evidence\":\"official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed\",\"nextAction\":\"Alibaba Mail accepted the message and the matching record exists in Sent.\",\"recipientEmail\":\"info@r2soutdoors.com\",\"messageId\":\"\"}",
-        "secondaryChannelStatus": "official_social_channel_not_verified"
+        "sendStatus": "website_contact_unreachable_skip",
+        "subject": "FLEXTAIL retail partnership | 2026 assortment",
+        "draft": "Dear Waypoint Outdoor Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
+        "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:1;contact_path_strategy_v2",
+        "output": "{\"verdict\":\"website_contact_unreachable_skip\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:1;contact_path_strategy_v2\",\"nextAction\":\"Contact page opened, but no verified form, mailto link, vendor/business route, or clickable Contact Us path was detected. Continue manually before marking the lead ready.\",\"subject\":\"FLEXTAIL retail partnership | 2026 assortment\",\"draft\":\"Dear Waypoint Outdoor Team,\\n\\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\\n\\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\\n\\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\\n\\nProduct overview: https://www.flextail.com/\\n\\nBest regards,\\nLeo Liu\\nSales & Operations Director\\nLeo@flextailgear.com\",\"sendStatus\":\"website_contact_unreachable_skip\",\"attempts\":[{\"targetUrl\":\"https://www.waypointoutdoor.com/contact/\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control\"}]}"
       }
     }
   ],
@@ -637,22 +583,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "reason": "official_public_business_email_verified"
     },
     {
-      "id": "google-customer-mountain-source-website-contact",
-      "company": "Mountain Source",
-      "action": "verify_target",
-      "platform": "website_form",
-      "reason": "homepage_only_contact_path_requires_verification"
-    },
-    {
       "id": "google-customer-sespe-group-website-contact",
       "company": "Sespe Group",
-      "action": "verify_target",
-      "platform": "website_form",
-      "reason": "homepage_only_contact_path_requires_verification"
-    },
-    {
-      "id": "google-customer-waypoint-outdoor-website-contact",
-      "company": "Waypoint Outdoor",
       "action": "verify_target",
       "platform": "website_form",
       "reason": "homepage_only_contact_path_requires_verification"
@@ -831,6 +763,13 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "action": "verify_target",
       "platform": "website_form",
       "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
+      "id": "google-customer-outdoor-nature-website-contact",
+      "company": "Outdoor Nature",
+      "action": "email_priority",
+      "platform": "website_form",
+      "reason": "official_website_contact_channel"
     },
     {
       "id": "google-customer-young-mackenzie-distribution-linkedin",
@@ -1022,13 +961,6 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "reason": "official_public_business_email_verified"
     },
     {
-      "id": "google-customer-mountain-source-website-contact",
-      "company": "Mountain Source",
-      "action": "verify_target",
-      "platform": "website_form",
-      "reason": "website_contact_capability_not_verified"
-    },
-    {
       "id": "google-customer-sespe-group-website-contact",
       "company": "Sespe Group",
       "action": "verify_target",
@@ -1048,13 +980,6 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "action": "develop",
       "platform": "website_form",
       "reason": "official_website_contact_channel"
-    },
-    {
-      "id": "google-customer-waypoint-outdoor-website-contact",
-      "company": "Waypoint Outdoor",
-      "action": "verify_target",
-      "platform": "website_form",
-      "reason": "website_contact_capability_not_verified"
     },
     {
       "id": "google-customer-endless-adventure-sales-website-contact",
@@ -1333,30 +1258,30 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
   "summary": {
     "totalLeads": 16,
     "highIcp": 16,
-    "readyToDevelop": 31,
-    "dueNow": 98,
-    "visibleTodayQueue": 73,
-    "potentialPool": 73,
+    "readyToDevelop": 32,
+    "dueNow": 96,
+    "visibleTodayQueue": 70,
+    "potentialPool": 70,
     "potentialPoolTarget": 100,
     "customerTableHighIcp": 0,
-    "refillNeeded": 27,
-    "executableCompanies": 49,
+    "refillNeeded": 30,
+    "executableCompanies": 48,
     "executableReserveTarget": 130,
-    "executableReserveNeeded": 81,
+    "executableReserveNeeded": 82,
     "executableByChannel": {
       "linkedin": 4,
       "facebook": 7,
       "instagram": 1,
-      "email": 17,
-      "website_form": 20
+      "email": 15,
+      "website_form": 21
     },
     "verifiedSocialCompanies": 12,
     "verifiedSocialReserveTarget": 20,
     "verifiedSocialReserveNeeded": 8,
-    "enrichmentBacklogCount": 24,
-    "googleDiscovered": 98,
+    "enrichmentBacklogCount": 22,
+    "googleDiscovered": 96,
     "facebookDiscovered": 9,
-    "websiteContactDiscovered": 22,
+    "websiteContactDiscovered": 20,
     "scheduledLater": 0,
     "cooldown": 30,
     "emailPriority": 0,
@@ -1369,12 +1294,7 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     {
       "reason": "official_website_contact_channel",
       "status": "skipped",
-      "count": 43
-    },
-    {
-      "reason": "homepage_only_contact_path_requires_verification",
-      "status": "skipped",
-      "count": 36
+      "count": 44
     },
     {
       "reason": "official_public_business_email_verified",
@@ -1382,9 +1302,14 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "count": 35
     },
     {
+      "reason": "homepage_only_contact_path_requires_verification",
+      "status": "skipped",
+      "count": 34
+    },
+    {
       "reason": "website_contact_capability_not_verified",
       "status": "skipped",
-      "count": 24
+      "count": 22
     },
     {
       "reason": "official_website_social_channel_verified",
@@ -1402,34 +1327,28 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "count": 4
     },
     {
-      "reason": "sent_folder_message_confirmed",
-      "status": "sent_confirmed",
-      "count": 2
-    },
-    {
       "reason": "concrete_google_discovered_major_customer_facebook",
       "status": "skipped",
       "count": 1
     }
   ],
   "blockerCounts": {
-    "official_website_contact_channel": 43,
-    "homepage_only_contact_path_requires_verification": 36,
+    "official_website_contact_channel": 44,
     "official_public_business_email_verified": 35,
-    "website_contact_capability_not_verified": 24,
+    "homepage_only_contact_path_requires_verification": 34,
+    "website_contact_capability_not_verified": 22,
     "official_website_social_channel_verified": 16,
     "linkedin_channel_requires_supported_executor": 8,
     "social_profile_not_first_party_verified": 4,
-    "sent_folder_message_confirmed": 2,
     "concrete_google_discovered_major_customer_facebook": 1
   },
   "queueGoalStatus": {
     "target": 100,
-    "potentialPool": 73,
-    "queueCount": 98,
-    "googleDiscovered": 98,
-    "refillNeeded": 27,
-    "confirmedToday": 15,
+    "potentialPool": 70,
+    "queueCount": 96,
+    "googleDiscovered": 96,
+    "refillNeeded": 30,
+    "confirmedToday": 17,
     "reached": false,
     "action": "Add more verified high-ICP sources or unblock existing website/social leads."
   },
@@ -1441,17 +1360,17 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     "rule": "completed checkpoints are ignored; only terminal results from an active interrupted checkpoint suppress their exact task id"
   },
   "platformCircuitState": {},
-  "userVisibleStatus": "Customer development was not performed. Blockers: official_website_contact_channel (43); homepage_only_contact_path_requires_verification (36); official_public_business_email_verified (35).",
-  "recoveryHint": "Refill the high-ICP pool with 27 verified leads or unblock existing website/social leads before the next run. Confirm the official social profile and safe message entry before rerunning Google-discovered social outreach.",
+  "userVisibleStatus": "Customer development was not performed. Blockers: official_website_contact_channel (44); official_public_business_email_verified (35); homepage_only_contact_path_requires_verification (34).",
+  "recoveryHint": "Refill the high-ICP pool with 30 verified leads or unblock existing website/social leads before the next run. Confirm the official social profile and safe message entry before rerunning Google-discovered social outreach.",
   "recoveryActions": [
     {
       "reason": "daily_queue_goal_not_reached",
       "action": "Refill high-ICP customer pool",
-      "description": "Add or unblock 27 verified high-ICP leads to reach the daily 100 target.",
-      "hint": "Refill the high-ICP pool with 27 verified leads or unblock existing website/social leads before the next run.",
+      "description": "Add or unblock 30 verified high-ICP leads to reach the daily 100 target.",
+      "hint": "Refill the high-ICP pool with 30 verified leads or unblock existing website/social leads before the next run.",
       "target": 100,
-      "potentialPool": 73,
-      "refillNeeded": 27
+      "potentialPool": 70,
+      "refillNeeded": 30
     },
     {
       "reason": "google_social_profile_not_executable",
@@ -1462,20 +1381,20 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
   ],
   "systemRefresh": {
     "ok": true,
-    "stdout": "{\n  \"date\": \"2026-08-14\",\n  \"summary\": {\n    \"totalLeads\": 16,\n    \"highIcp\": 16,\n    \"readyToDevelop\": 31,\n    \"dueNow\": 97,\n    \"visibleTodayQueue\": 71,\n    \"potentialPool\": 71,\n    \"potentialPoolTarget\": 100,\n    \"customerTableHighIcp\": 0,\n    \"refillNeeded\": 29,\n    \"executableCompanies\": 47,\n    \"executableReserveTarget\": 130,\n    \"executableReserveNeeded\": 83,\n    \"executableByChannel\": {\n      \"linkedin\": 4,\n      \"facebook\": 7,\n      \"instagram\": 1,\n      \"email\": 15,\n      \"website_form\": 20\n    },\n    \"verifiedSocialCompanies\": 12,\n    \"verifiedSocialReserveTarget\": 20,\n    \"verifiedSocialReserveNeeded\": 8,\n    \"enrichmentBacklogCount\": 24,\n    \"googleDiscovered\": 97,\n    \"facebookDiscovered\": 9,\n    \"websiteContactDiscovered\": 20,\n    \"scheduledLater\": 0,\n    \"cooldown\": 30,\n    \"emailPriority\": 0,\n    \"openAgencyMarket\": 15,\n    \"exclusiveAgencySkipped\": 1,\n    \"needsVerification\": 0,\n    \"retainedLowIcp\": 0\n  },\n  \"bugErrors\": 13,\n  \"queueFile\": \"E:\\\\New project\\\\outreach-dashboard\\\\daily-runs\\\\2026-08-14-daily-automation.json\",\n  \"csvFile\": \"E:\\\\New project\\\\outreach-dashboard\\\\daily-runs\\\\2026-08-14-daily-queue.csv\"\n}",
+    "stdout": "{\n  \"date\": \"2026-08-14\",\n  \"summary\": {\n    \"totalLeads\": 16,\n    \"highIcp\": 16,\n    \"readyToDevelop\": 32,\n    \"dueNow\": 96,\n    \"visibleTodayQueue\": 70,\n    \"potentialPool\": 70,\n    \"potentialPoolTarget\": 100,\n    \"customerTableHighIcp\": 0,\n    \"refillNeeded\": 30,\n    \"executableCompanies\": 48,\n    \"executableReserveTarget\": 130,\n    \"executableReserveNeeded\": 82,\n    \"executableByChannel\": {\n      \"linkedin\": 4,\n      \"facebook\": 7,\n      \"instagram\": 1,\n      \"email\": 15,\n      \"website_form\": 21\n    },\n    \"verifiedSocialCompanies\": 12,\n    \"verifiedSocialReserveTarget\": 20,\n    \"verifiedSocialReserveNeeded\": 8,\n    \"enrichmentBacklogCount\": 22,\n    \"googleDiscovered\": 96,\n    \"facebookDiscovered\": 9,\n    \"websiteContactDiscovered\": 20,\n    \"scheduledLater\": 0,\n    \"cooldown\": 30,\n    \"emailPriority\": 0,\n    \"openAgencyMarket\": 15,\n    \"exclusiveAgencySkipped\": 1,\n    \"needsVerification\": 0,\n    \"retainedLowIcp\": 0\n  },\n  \"bugErrors\": 13,\n  \"queueFile\": \"E:\\\\New project\\\\outreach-dashboard\\\\daily-runs\\\\2026-08-14-daily-automation.json\",\n  \"csvFile\": \"E:\\\\New project\\\\outreach-dashboard\\\\daily-runs\\\\2026-08-14-daily-queue.csv\"\n}",
     "stderr": "",
     "error": "",
     "visibility": {
-      "updatedAt": "2026-08-14T07:38:51.263Z",
+      "updatedAt": "2026-08-14T07:45:23.346Z",
       "source": "main-refreshDailyAutomationArtifacts",
       "runDate": "2026-08-14",
-      "artifactGeneratedAt": "2026-08-14T07:38:47.535Z",
-      "executionGeneratedAt": "2026-08-14T07:33:09.341Z",
-      "githubSyncUpdatedAt": "2026-08-14T07:33:50.787Z",
+      "artifactGeneratedAt": "2026-08-14T07:45:21.093Z",
+      "executionGeneratedAt": "2026-08-14T07:38:52.506Z",
+      "githubSyncUpdatedAt": "2026-08-14T07:39:37.788Z",
       "counts": {
-        "dailyQueue": 97,
-        "googleDiscovered": 97,
-        "websiteContact": 80,
+        "dailyQueue": 96,
+        "googleDiscovered": 96,
+        "websiteContact": 79,
         "cooldownQueue": 30,
         "scheduledLater": 0
       },
@@ -1500,8 +1419,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       ],
       "dailyQueueGoal": {
         "target": 100,
-        "potentialPool": 71,
-        "refillNeeded": 29,
+        "potentialPool": 70,
+        "refillNeeded": 30,
         "reached": false
       },
       "contactEnrichment": {
@@ -1539,7 +1458,7 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "ALIBABA_SMTP_SECURITY_PASSWORD"
     ]
   },
-  "ledgerReconciliationCount": 1,
+  "ledgerReconciliationCount": 2,
   "externalEvidenceReconciliationCount": 0,
-  "completedAt": "2026-08-14T07:38:52.506Z"
+  "completedAt": "2026-08-14T07:45:23.871Z"
 };

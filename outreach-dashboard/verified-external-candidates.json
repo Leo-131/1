@@ -994,5 +994,47 @@
     ],
     "externalVerificationStatus": "official_supplier_email_verified",
     "verifiedAt": "2026-08-14T07:36:00.000Z"
+  },
+  {
+    "company": "Mountain Source",
+    "country": "United States",
+    "url": "https://www.instagram.com/mountainsource/",
+    "contactUrl": "https://www.instagram.com/mountainsource/",
+    "instagramUrl": "https://www.instagram.com/mountainsource/",
+    "officialSocialProfileVerified": true,
+    "socialProfileEvidenceUrl": "https://www.mountainsource.com/",
+    "segment": "Rocky Mountain premium outdoor brand sales agency",
+    "customerType": "sales_agency",
+    "fitScore": 96,
+    "background": "Mountain Source represents premium outdoor brands across Colorado, Utah, Wyoming and New Mexico and supports regional retailers from Denver and Salt Lake City showrooms.",
+    "buyerPersona": "Agency principal responsible for new outdoor brand partnerships.",
+    "evidenceUrl": "https://www.mountainsource.com/",
+    "dataSources": [
+      "official agency homepage",
+      "official team and territory description",
+      "official homepage-published Instagram handle"
+    ],
+    "externalVerificationStatus": "official_supplier_route_verified",
+    "verifiedAt": "2026-08-14T07:42:00.000Z"
+  },
+  {
+    "company": "Waypoint Outdoor",
+    "country": "United States",
+    "url": "https://www.waypointoutdoor.com/contact/",
+    "contactUrl": "https://www.waypointoutdoor.com/contact/",
+    "contactCapabilityVerified": true,
+    "segment": "United States national outdoor key-account and sales agency",
+    "customerType": "sales_agency",
+    "fitScore": 99,
+    "background": "Waypoint Outdoor is a nationwide outdoor sales organization serving outdoor, footwear, sporting goods, farm and ranch, snowsports and specialty run channels with dedicated key-account leadership.",
+    "buyerPersona": "Business-development or key-account leader evaluating new outdoor brands.",
+    "evidenceUrl": "https://www.waypointoutdoor.com/contact/",
+    "dataSources": [
+      "official agency website",
+      "official brand inquiry form",
+      "official national market coverage and leadership pages"
+    ],
+    "externalVerificationStatus": "official_supplier_form_verified",
+    "verifiedAt": "2026-08-14T07:42:00.000Z"
   }
 ]
