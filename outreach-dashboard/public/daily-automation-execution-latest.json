@@ -7,7 +7,7 @@
   "executionPhase": "browser_execution",
   "chromeStage": "opened",
   "chromeOpened": true,
-  "chromeOpenedCount": 2,
+  "chromeOpenedCount": 1,
   "customerDevelopmentPerformed": true,
   "customerMessageSent": true,
   "realDevelopmentCount": 1,
@@ -26,42 +26,20 @@
       "action": "email_priority",
       "platform": "email",
       "targetUrl": "https://www.proline-sports.ca/",
-      "ok": false,
-      "sendStatus": "skipped",
-      "evidence": "recipient_domain_mail_exchange_unverified;domain:proline-sports.ca;no_send_performed",
-      "timestamp": "2026-08-14T07:00:47.644Z",
-      "chromeOpen": null,
-      "result": {
-        "ok": false,
-        "skipped": true,
-        "sendStatus": "skipped",
-        "reason": "recipient_domain_mail_exchange_unverified",
-        "mode": "email_domain_mx_gate",
-        "evidence": "recipient_domain_mail_exchange_unverified;domain:proline-sports.ca;no_send_performed",
-        "recipientEmail": "info@proline-sports.ca",
-        "nextAction": "Do not send to this address; continue with a first-party-verified official social channel for the same company."
-      }
-    },
-    {
-      "id": "google-customer-base-camp-agency-website-contact",
-      "company": "Base Camp Agency",
-      "action": "email_priority",
-      "platform": "email",
-      "targetUrl": "https://www.base-camp-agency.com/",
       "ok": true,
       "sendStatus": "sent_confirmed",
       "evidence": "official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed",
-      "timestamp": "2026-08-14T07:01:27.722Z",
+      "timestamp": "2026-08-14T07:09:48.080Z",
       "chromeOpen": null,
       "result": {
         "ok": true,
         "sendStatus": "sent_confirmed",
         "reason": "sent_folder_message_confirmed",
         "evidence": "official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed;official_social_channel_not_verified",
-        "recipientEmail": "cameron@base-camp-agency.com",
-        "targetUrl": "mailto:cameron@base-camp-agency.com",
+        "recipientEmail": "info@proline-sports.ca",
+        "targetUrl": "mailto:info@proline-sports.ca",
         "subject": "FLEXTAIL retail partnership | 2026 assortment",
-        "draft": "Dear Base Camp Agency Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
+        "draft": "Dear Pro Line Sports Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
         "engine": "alibaba-enterprise-mail-web-session",
         "mode": "alibaba_webmail_sent_folder_confirmed",
         "manualApprovalRequired": false,
@@ -71,118 +49,8 @@
           "errors": [],
           "words": 110
         },
-        "output": "{\"verdict\":\"sent_confirmed\",\"sendStatus\":\"sent_confirmed\",\"evidence\":\"official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed\",\"nextAction\":\"Alibaba Mail accepted the message and the matching record exists in Sent.\",\"recipientEmail\":\"cameron@base-camp-agency.com\",\"messageId\":\"\"}",
+        "output": "{\"verdict\":\"sent_confirmed\",\"sendStatus\":\"sent_confirmed\",\"evidence\":\"official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed\",\"nextAction\":\"Alibaba Mail accepted the message and the matching record exists in Sent.\",\"recipientEmail\":\"info@proline-sports.ca\",\"messageId\":\"\"}",
         "secondaryChannelStatus": "official_social_channel_not_verified"
-      }
-    },
-    {
-      "id": "google-customer-front-point-sales-linkedin",
-      "company": "Front Point Sales",
-      "action": "verify_target",
-      "platform": "linkedin",
-      "targetUrl": "https://www.linkedin.com/company/front-point-sales/about/",
-      "ok": false,
-      "sendStatus": "failed_open",
-      "evidence": "linkedin_draft_inserted_explicit_send_control_not_found;no_irreversible_action_performed;linkedin_draft_inserted_verified",
-      "timestamp": "2026-08-14T07:02:06.963Z",
-      "chromeOpen": {
-        "ok": true,
-        "engine": "codex-chrome-cdp",
-        "port": 9224,
-        "targetUrl": "https://www.linkedin.com/company/front-point-sales/about/",
-        "tabId": "5AFD13BF776AF00EE85BE037B66203AB",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/5AFD13BF776AF00EE85BE037B66203AB",
-        "title": "LinkedIn"
-      },
-      "result": {
-        "ok": false,
-        "engine": "codex-chrome-cdp",
-        "browserEngine": "codex-chrome-cdp",
-        "mode": "codex_chrome_cdp",
-        "targetUrl": "https://www.linkedin.com/company/front-point-sales/about/",
-        "chromeOpen": {
-          "ok": true,
-          "engine": "codex-chrome-cdp",
-          "port": 9224,
-          "targetUrl": "https://www.linkedin.com/company/front-point-sales/about/",
-          "tabId": "5AFD13BF776AF00EE85BE037B66203AB",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/5AFD13BF776AF00EE85BE037B66203AB",
-          "title": "LinkedIn"
-        },
-        "sendStatus": "failed_open",
-        "output": "{\"verdict\":\"major_bug_review_needed\",\"evidence\":\"linkedin_draft_inserted_explicit_send_control_not_found;no_irreversible_action_performed;linkedin_draft_inserted_verified\",\"nextAction\":\"An explicit Send control was not detected and the verified Enter path was unavailable; record a technical failure and continue to another verified channel.\",\"draft\":\"Hi Front Point Sales team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a distributor/importer, the strongest fit is regional sell-through, channel fit, margin-ready product line, and whether they cover outdoor/travel electronics buyers; your verified outdoor industry manufacturer representative and sales agency focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the owner of distribution evaluation or the best time for a short intro video meeting?\",\"sendStatus\":\"failed_open\"}",
-        "decision": {
-          "verdict": "develop",
-          "fitScore": 82,
-          "reason": "local_codex_extension_template",
-          "draft": "Hi Front Point Sales team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a distributor/importer, the strongest fit is regional sell-through, channel fit, margin-ready product line, and whether they cover outdoor/travel electronics buyers; your verified outdoor industry manufacturer representative and sales agency focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the owner of distribution evaluation or the best time for a short intro video meeting?"
-        },
-        "executionLayer": "Chrome CDP fallback",
-        "glmModel": "not_used",
-        "followup": false
-      }
-    },
-    {
-      "id": "google-customer-caraway-co-facebook",
-      "company": "Caraway & Co.",
-      "action": "develop",
-      "platform": "facebook",
-      "targetUrl": "https://www.facebook.com/CarawayandCo",
-      "ok": false,
-      "sendStatus": "failed_open",
-      "evidence": "customer_execution_timeout:90000;queue_continued_to_next_customer",
-      "timestamp": "2026-08-14T07:03:39.725Z",
-      "chromeOpen": null,
-      "result": {
-        "ok": false,
-        "timedOut": true,
-        "sendStatus": "failed_open",
-        "reason": "customer_execution_timeout",
-        "evidence": "customer_execution_timeout:90000;queue_continued_to_next_customer",
-        "chromeOpen": null,
-        "output": "{\"verdict\":\"failed_open\",\"sendStatus\":\"failed_open\",\"evidence\":\"customer_execution_timeout:90000;queue_continued_to_next_customer\",\"nextAction\":\"The customer exceeded its bounded execution window. Its automation tabs were closed and the queue continued without retrying or claiming a send.\",\"company\":\"Caraway & Co.\"}"
-      }
-    },
-    {
-      "id": "google-customer-parallel-45-sales-group-instagram",
-      "company": "Parallel 45 Sales Group",
-      "action": "develop",
-      "platform": "instagram",
-      "targetUrl": "https://www.instagram.com/parallel45sales/",
-      "ok": false,
-      "sendStatus": "failed_open",
-      "evidence": "customer_execution_timeout:90000;queue_continued_to_next_customer",
-      "timestamp": "2026-08-14T07:05:12.628Z",
-      "chromeOpen": null,
-      "result": {
-        "ok": false,
-        "timedOut": true,
-        "sendStatus": "failed_open",
-        "reason": "customer_execution_timeout",
-        "evidence": "customer_execution_timeout:90000;queue_continued_to_next_customer",
-        "chromeOpen": null,
-        "output": "{\"verdict\":\"failed_open\",\"sendStatus\":\"failed_open\",\"evidence\":\"customer_execution_timeout:90000;queue_continued_to_next_customer\",\"nextAction\":\"The customer exceeded its bounded execution window. Its automation tabs were closed and the queue continued without retrying or claiming a send.\",\"company\":\"Parallel 45 Sales Group\"}"
-      }
-    },
-    {
-      "id": "google-customer-heron-outdoors-instagram",
-      "company": "Heron Outdoors",
-      "action": "develop",
-      "platform": "instagram",
-      "targetUrl": "https://www.instagram.com/heronoutdoorsco",
-      "ok": false,
-      "sendStatus": "failed_open",
-      "evidence": "customer_execution_timeout:90000;queue_continued_to_next_customer",
-      "timestamp": "2026-08-14T07:06:45.553Z",
-      "chromeOpen": null,
-      "result": {
-        "ok": false,
-        "timedOut": true,
-        "sendStatus": "failed_open",
-        "reason": "customer_execution_timeout",
-        "evidence": "customer_execution_timeout:90000;queue_continued_to_next_customer",
-        "chromeOpen": null,
-        "output": "{\"verdict\":\"failed_open\",\"sendStatus\":\"failed_open\",\"evidence\":\"customer_execution_timeout:90000;queue_continued_to_next_customer\",\"nextAction\":\"The customer exceeded its bounded execution window. Its automation tabs were closed and the queue continued without retrying or claiming a send.\",\"company\":\"Heron Outdoors\"}"
       }
     }
   ],
@@ -193,42 +61,20 @@
       "action": "email_priority",
       "platform": "email",
       "targetUrl": "https://www.proline-sports.ca/",
-      "ok": false,
-      "sendStatus": "skipped",
-      "evidence": "recipient_domain_mail_exchange_unverified;domain:proline-sports.ca;no_send_performed",
-      "timestamp": "2026-08-14T07:00:47.644Z",
-      "chromeOpen": null,
-      "result": {
-        "ok": false,
-        "skipped": true,
-        "sendStatus": "skipped",
-        "reason": "recipient_domain_mail_exchange_unverified",
-        "mode": "email_domain_mx_gate",
-        "evidence": "recipient_domain_mail_exchange_unverified;domain:proline-sports.ca;no_send_performed",
-        "recipientEmail": "info@proline-sports.ca",
-        "nextAction": "Do not send to this address; continue with a first-party-verified official social channel for the same company."
-      }
-    },
-    {
-      "id": "google-customer-base-camp-agency-website-contact",
-      "company": "Base Camp Agency",
-      "action": "email_priority",
-      "platform": "email",
-      "targetUrl": "https://www.base-camp-agency.com/",
       "ok": true,
       "sendStatus": "sent_confirmed",
       "evidence": "official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed",
-      "timestamp": "2026-08-14T07:01:27.722Z",
+      "timestamp": "2026-08-14T07:09:48.080Z",
       "chromeOpen": null,
       "result": {
         "ok": true,
         "sendStatus": "sent_confirmed",
         "reason": "sent_folder_message_confirmed",
         "evidence": "official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed;official_social_channel_not_verified",
-        "recipientEmail": "cameron@base-camp-agency.com",
-        "targetUrl": "mailto:cameron@base-camp-agency.com",
+        "recipientEmail": "info@proline-sports.ca",
+        "targetUrl": "mailto:info@proline-sports.ca",
         "subject": "FLEXTAIL retail partnership | 2026 assortment",
-        "draft": "Dear Base Camp Agency Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
+        "draft": "Dear Pro Line Sports Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
         "engine": "alibaba-enterprise-mail-web-session",
         "mode": "alibaba_webmail_sent_folder_confirmed",
         "manualApprovalRequired": false,
@@ -238,118 +84,8 @@
           "errors": [],
           "words": 110
         },
-        "output": "{\"verdict\":\"sent_confirmed\",\"sendStatus\":\"sent_confirmed\",\"evidence\":\"official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed\",\"nextAction\":\"Alibaba Mail accepted the message and the matching record exists in Sent.\",\"recipientEmail\":\"cameron@base-camp-agency.com\",\"messageId\":\"\"}",
+        "output": "{\"verdict\":\"sent_confirmed\",\"sendStatus\":\"sent_confirmed\",\"evidence\":\"official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed\",\"nextAction\":\"Alibaba Mail accepted the message and the matching record exists in Sent.\",\"recipientEmail\":\"info@proline-sports.ca\",\"messageId\":\"\"}",
         "secondaryChannelStatus": "official_social_channel_not_verified"
-      }
-    },
-    {
-      "id": "google-customer-front-point-sales-linkedin",
-      "company": "Front Point Sales",
-      "action": "verify_target",
-      "platform": "linkedin",
-      "targetUrl": "https://www.linkedin.com/company/front-point-sales/about/",
-      "ok": false,
-      "sendStatus": "failed_open",
-      "evidence": "linkedin_draft_inserted_explicit_send_control_not_found;no_irreversible_action_performed;linkedin_draft_inserted_verified",
-      "timestamp": "2026-08-14T07:02:06.963Z",
-      "chromeOpen": {
-        "ok": true,
-        "engine": "codex-chrome-cdp",
-        "port": 9224,
-        "targetUrl": "https://www.linkedin.com/company/front-point-sales/about/",
-        "tabId": "5AFD13BF776AF00EE85BE037B66203AB",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/5AFD13BF776AF00EE85BE037B66203AB",
-        "title": "LinkedIn"
-      },
-      "result": {
-        "ok": false,
-        "engine": "codex-chrome-cdp",
-        "browserEngine": "codex-chrome-cdp",
-        "mode": "codex_chrome_cdp",
-        "targetUrl": "https://www.linkedin.com/company/front-point-sales/about/",
-        "chromeOpen": {
-          "ok": true,
-          "engine": "codex-chrome-cdp",
-          "port": 9224,
-          "targetUrl": "https://www.linkedin.com/company/front-point-sales/about/",
-          "tabId": "5AFD13BF776AF00EE85BE037B66203AB",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/5AFD13BF776AF00EE85BE037B66203AB",
-          "title": "LinkedIn"
-        },
-        "sendStatus": "failed_open",
-        "output": "{\"verdict\":\"major_bug_review_needed\",\"evidence\":\"linkedin_draft_inserted_explicit_send_control_not_found;no_irreversible_action_performed;linkedin_draft_inserted_verified\",\"nextAction\":\"An explicit Send control was not detected and the verified Enter path was unavailable; record a technical failure and continue to another verified channel.\",\"draft\":\"Hi Front Point Sales team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a distributor/importer, the strongest fit is regional sell-through, channel fit, margin-ready product line, and whether they cover outdoor/travel electronics buyers; your verified outdoor industry manufacturer representative and sales agency focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the owner of distribution evaluation or the best time for a short intro video meeting?\",\"sendStatus\":\"failed_open\"}",
-        "decision": {
-          "verdict": "develop",
-          "fitScore": 82,
-          "reason": "local_codex_extension_template",
-          "draft": "Hi Front Point Sales team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a distributor/importer, the strongest fit is regional sell-through, channel fit, margin-ready product line, and whether they cover outdoor/travel electronics buyers; your verified outdoor industry manufacturer representative and sales agency focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the owner of distribution evaluation or the best time for a short intro video meeting?"
-        },
-        "executionLayer": "Chrome CDP fallback",
-        "glmModel": "not_used",
-        "followup": false
-      }
-    },
-    {
-      "id": "google-customer-caraway-co-facebook",
-      "company": "Caraway & Co.",
-      "action": "develop",
-      "platform": "facebook",
-      "targetUrl": "https://www.facebook.com/CarawayandCo",
-      "ok": false,
-      "sendStatus": "failed_open",
-      "evidence": "customer_execution_timeout:90000;queue_continued_to_next_customer",
-      "timestamp": "2026-08-14T07:03:39.725Z",
-      "chromeOpen": null,
-      "result": {
-        "ok": false,
-        "timedOut": true,
-        "sendStatus": "failed_open",
-        "reason": "customer_execution_timeout",
-        "evidence": "customer_execution_timeout:90000;queue_continued_to_next_customer",
-        "chromeOpen": null,
-        "output": "{\"verdict\":\"failed_open\",\"sendStatus\":\"failed_open\",\"evidence\":\"customer_execution_timeout:90000;queue_continued_to_next_customer\",\"nextAction\":\"The customer exceeded its bounded execution window. Its automation tabs were closed and the queue continued without retrying or claiming a send.\",\"company\":\"Caraway & Co.\"}"
-      }
-    },
-    {
-      "id": "google-customer-parallel-45-sales-group-instagram",
-      "company": "Parallel 45 Sales Group",
-      "action": "develop",
-      "platform": "instagram",
-      "targetUrl": "https://www.instagram.com/parallel45sales/",
-      "ok": false,
-      "sendStatus": "failed_open",
-      "evidence": "customer_execution_timeout:90000;queue_continued_to_next_customer",
-      "timestamp": "2026-08-14T07:05:12.628Z",
-      "chromeOpen": null,
-      "result": {
-        "ok": false,
-        "timedOut": true,
-        "sendStatus": "failed_open",
-        "reason": "customer_execution_timeout",
-        "evidence": "customer_execution_timeout:90000;queue_continued_to_next_customer",
-        "chromeOpen": null,
-        "output": "{\"verdict\":\"failed_open\",\"sendStatus\":\"failed_open\",\"evidence\":\"customer_execution_timeout:90000;queue_continued_to_next_customer\",\"nextAction\":\"The customer exceeded its bounded execution window. Its automation tabs were closed and the queue continued without retrying or claiming a send.\",\"company\":\"Parallel 45 Sales Group\"}"
-      }
-    },
-    {
-      "id": "google-customer-heron-outdoors-instagram",
-      "company": "Heron Outdoors",
-      "action": "develop",
-      "platform": "instagram",
-      "targetUrl": "https://www.instagram.com/heronoutdoorsco",
-      "ok": false,
-      "sendStatus": "failed_open",
-      "evidence": "customer_execution_timeout:90000;queue_continued_to_next_customer",
-      "timestamp": "2026-08-14T07:06:45.553Z",
-      "chromeOpen": null,
-      "result": {
-        "ok": false,
-        "timedOut": true,
-        "sendStatus": "failed_open",
-        "reason": "customer_execution_timeout",
-        "evidence": "customer_execution_timeout:90000;queue_continued_to_next_customer",
-        "chromeOpen": null,
-        "output": "{\"verdict\":\"failed_open\",\"sendStatus\":\"failed_open\",\"evidence\":\"customer_execution_timeout:90000;queue_continued_to_next_customer\",\"nextAction\":\"The customer exceeded its bounded execution window. Its automation tabs were closed and the queue continued without retrying or claiming a send.\",\"company\":\"Heron Outdoors\"}"
       }
     }
   ],
@@ -537,6 +273,13 @@
       "reason": "official_public_business_email_verified"
     },
     {
+      "id": "google-customer-fjellsport-website-contact",
+      "company": "Fjellsport",
+      "action": "email_priority",
+      "platform": "email",
+      "reason": "official_public_business_email_verified"
+    },
+    {
       "id": "google-customer-varuste-website-contact",
       "company": "Varuste",
       "action": "email_priority",
@@ -621,6 +364,13 @@
       "reason": "official_website_contact_channel"
     },
     {
+      "id": "google-customer-esprinet-group-website-contact",
+      "company": "Esprinet Group",
+      "action": "email_priority",
+      "platform": "website_form",
+      "reason": "official_website_contact_channel"
+    },
+    {
       "id": "google-customer-edgeline-collective-website-contact",
       "company": "Edgeline Collective",
       "action": "develop",
@@ -656,25 +406,18 @@
       "reason": "official_website_contact_channel"
     },
     {
-      "id": "google-customer-outdoor-industry-group-website-contact",
-      "company": "Outdoor Industry Group",
-      "action": "develop",
-      "platform": "website_form",
-      "reason": "official_website_contact_channel"
-    },
-    {
-      "id": "google-customer-perpetual-motion-nw-website-contact",
-      "company": "Perpetual Motion NW",
-      "action": "develop",
-      "platform": "website_form",
-      "reason": "official_website_contact_channel"
-    },
-    {
       "id": "google-customer-left-point-distribution-website-contact",
       "company": "Left Point Distribution",
       "action": "email_priority",
       "platform": "website_form",
       "reason": "official_website_contact_channel"
+    },
+    {
+      "id": "google-customer-bergfreunde-website-contact",
+      "company": "Bergfreunde",
+      "action": "verify_target",
+      "platform": "website_form",
+      "reason": "homepage_only_contact_path_requires_verification"
     },
     {
       "id": "google-customer-obelink-website-contact",
@@ -684,8 +427,36 @@
       "reason": "official_website_contact_channel"
     },
     {
+      "id": "google-customer-au-vieux-campeur-website-contact",
+      "company": "Au Vieux Campeur",
+      "action": "verify_target",
+      "platform": "website_form",
+      "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
       "id": "google-customer-de-wit-schijndel-website-contact",
       "company": "De Wit Schijndel",
+      "action": "verify_target",
+      "platform": "website_form",
+      "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
+      "id": "google-customer-ekosport-website-contact",
+      "company": "Ekosport",
+      "action": "verify_target",
+      "platform": "website_form",
+      "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
+      "id": "google-customer-campz-website-contact",
+      "company": "Campz",
+      "action": "verify_target",
+      "platform": "website_form",
+      "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
+      "id": "google-customer-intersport-norway-website-contact",
+      "company": "Intersport Norway",
       "action": "verify_target",
       "platform": "website_form",
       "reason": "homepage_only_contact_path_requires_verification"
@@ -724,6 +495,13 @@
       "action": "verify_target",
       "platform": "linkedin",
       "reason": "linkedin_channel_requires_supported_executor"
+    },
+    {
+      "id": "google-customer-esprinet-group-linkedin",
+      "company": "Esprinet Group",
+      "action": "develop",
+      "platform": "linkedin",
+      "reason": "social_profile_not_first_party_verified"
     },
     {
       "id": "google-customer-360-adventure-collective-linkedin",
@@ -775,6 +553,20 @@
       "reason": "official_website_social_channel_verified"
     },
     {
+      "id": "google-customer-campz-facebook",
+      "company": "Campz",
+      "action": "develop",
+      "platform": "facebook",
+      "reason": "social_profile_not_first_party_verified"
+    },
+    {
+      "id": "google-customer-intersport-norway-facebook",
+      "company": "Intersport Norway",
+      "action": "develop",
+      "platform": "facebook",
+      "reason": "concrete_google_discovered_major_customer_facebook"
+    },
+    {
       "id": "google-customer-perspective-outdoor-instagram",
       "company": "Perspective Outdoor",
       "action": "develop",
@@ -782,11 +574,18 @@
       "reason": "official_website_social_channel_verified"
     },
     {
-      "id": "google-customer-fjellsport-website-contact",
-      "company": "Fjellsport",
-      "action": "email_priority",
-      "platform": "email",
-      "reason": "official_public_business_email_verified"
+      "id": "google-customer-bergfreunde-instagram",
+      "company": "Bergfreunde",
+      "action": "develop",
+      "platform": "instagram",
+      "reason": "social_profile_not_first_party_verified"
+    },
+    {
+      "id": "google-customer-campz-instagram",
+      "company": "Campz",
+      "action": "develop",
+      "platform": "instagram",
+      "reason": "social_profile_not_first_party_verified"
     },
     {
       "id": "google-customer-outdoors-ramsey-website-contact",
@@ -908,13 +707,6 @@
       "reason": "homepage_only_contact_path_requires_verification"
     },
     {
-      "id": "google-customer-esprinet-group-website-contact",
-      "company": "Esprinet Group",
-      "action": "email_priority",
-      "platform": "website_form",
-      "reason": "official_website_contact_channel"
-    },
-    {
       "id": "google-customer-nordcore-group-website-contact",
       "company": "NordCore Group",
       "action": "verify_target",
@@ -945,27 +737,6 @@
     {
       "id": "google-customer-morrison-sports-marketing-website-contact",
       "company": "Morrison Sports Marketing",
-      "action": "verify_target",
-      "platform": "website_form",
-      "reason": "homepage_only_contact_path_requires_verification"
-    },
-    {
-      "id": "google-customer-brm-reps-website-contact",
-      "company": "BRM Reps",
-      "action": "verify_target",
-      "platform": "website_form",
-      "reason": "homepage_only_contact_path_requires_verification"
-    },
-    {
-      "id": "google-customer-green-drake-outdoors-website-contact",
-      "company": "Green Drake Outdoors",
-      "action": "verify_target",
-      "platform": "website_form",
-      "reason": "homepage_only_contact_path_requires_verification"
-    },
-    {
-      "id": "google-customer-mutinous-sales-and-marketing-website-contact",
-      "company": "Mutinous Sales and Marketing",
       "action": "verify_target",
       "platform": "website_form",
       "reason": "homepage_only_contact_path_requires_verification"
@@ -1557,28 +1328,28 @@
     "highIcp": 16,
     "readyToDevelop": 27,
     "dueNow": 94,
-    "visibleTodayQueue": 88,
-    "potentialPool": 89,
+    "visibleTodayQueue": 83,
+    "potentialPool": 84,
     "potentialPoolTarget": 100,
     "customerTableHighIcp": 0,
-    "refillNeeded": 11,
-    "executableCompanies": 65,
+    "refillNeeded": 16,
+    "executableCompanies": 60,
     "executableReserveTarget": 130,
-    "executableReserveNeeded": 65,
+    "executableReserveNeeded": 70,
     "executableByChannel": {
-      "linkedin": 5,
-      "facebook": 9,
-      "instagram": 3,
-      "email": 28,
+      "linkedin": 4,
+      "facebook": 8,
+      "instagram": 1,
+      "email": 27,
       "website_form": 20
     },
-    "verifiedSocialCompanies": 17,
+    "verifiedSocialCompanies": 13,
     "verifiedSocialReserveTarget": 20,
-    "verifiedSocialReserveNeeded": 3,
+    "verifiedSocialReserveNeeded": 7,
     "enrichmentBacklogCount": 24,
     "googleDiscovered": 94,
-    "facebookDiscovered": 7,
-    "websiteContactDiscovered": 33,
+    "facebookDiscovered": 8,
+    "websiteContactDiscovered": 32,
     "scheduledLater": 0,
     "cooldown": 30,
     "emailPriority": 0,
@@ -1596,12 +1367,12 @@
     {
       "reason": "official_website_contact_channel",
       "status": "skipped",
-      "count": 41
+      "count": 39
     },
     {
       "reason": "homepage_only_contact_path_requires_verification",
       "status": "skipped",
-      "count": 25
+      "count": 27
     },
     {
       "reason": "website_contact_capability_not_verified",
@@ -1619,17 +1390,12 @@
       "count": 8
     },
     {
-      "reason": "customer_execution_timeout",
-      "status": "failed_open",
-      "count": 3
+      "reason": "social_profile_not_first_party_verified",
+      "status": "skipped",
+      "count": 4
     },
     {
-      "reason": "failed_open",
-      "status": "failed_open",
-      "count": 1
-    },
-    {
-      "reason": "recipient_domain_mail_exchange_unverified",
+      "reason": "concrete_google_discovered_major_customer_facebook",
       "status": "skipped",
       "count": 1
     },
@@ -1641,23 +1407,22 @@
   ],
   "blockerCounts": {
     "official_public_business_email_verified": 57,
-    "official_website_contact_channel": 41,
-    "homepage_only_contact_path_requires_verification": 25,
+    "official_website_contact_channel": 39,
+    "homepage_only_contact_path_requires_verification": 27,
     "website_contact_capability_not_verified": 24,
     "official_website_social_channel_verified": 16,
     "linkedin_channel_requires_supported_executor": 8,
-    "customer_execution_timeout": 3,
-    "failed_open": 1,
-    "recipient_domain_mail_exchange_unverified": 1,
+    "social_profile_not_first_party_verified": 4,
+    "concrete_google_discovered_major_customer_facebook": 1,
     "sent_folder_message_confirmed": 1
   },
   "queueGoalStatus": {
     "target": 100,
-    "potentialPool": 89,
+    "potentialPool": 84,
     "queueCount": 94,
     "googleDiscovered": 94,
-    "refillNeeded": 11,
-    "confirmedToday": 0,
+    "refillNeeded": 16,
+    "confirmedToday": 1,
     "reached": false,
     "action": "Add more verified high-ICP sources or unblock existing website/social leads."
   },
@@ -1669,41 +1434,41 @@
     "rule": "completed checkpoints are ignored; only terminal results from an active interrupted checkpoint suppress their exact task id"
   },
   "platformCircuitState": {},
-  "userVisibleStatus": "Customer development was not performed. Blockers: official_public_business_email_verified (57); official_website_contact_channel (41); homepage_only_contact_path_requires_verification (25).",
-  "recoveryHint": "Refill the high-ICP pool with 11 verified leads or unblock existing website/social leads before the next run. Verify the official profile opens and exposes a safe message composer, or switch to another verified channel.",
+  "userVisibleStatus": "Customer development was not performed. Blockers: official_public_business_email_verified (57); official_website_contact_channel (39); homepage_only_contact_path_requires_verification (27).",
+  "recoveryHint": "Refill the high-ICP pool with 16 verified leads or unblock existing website/social leads before the next run. Confirm the official social profile and safe message entry before rerunning Google-discovered social outreach.",
   "recoveryActions": [
     {
       "reason": "daily_queue_goal_not_reached",
       "action": "Refill high-ICP customer pool",
-      "description": "Add or unblock 11 verified high-ICP leads to reach the daily 100 target.",
-      "hint": "Refill the high-ICP pool with 11 verified leads or unblock existing website/social leads before the next run.",
+      "description": "Add or unblock 16 verified high-ICP leads to reach the daily 100 target.",
+      "hint": "Refill the high-ICP pool with 16 verified leads or unblock existing website/social leads before the next run.",
       "target": 100,
-      "potentialPool": 89,
-      "refillNeeded": 11
+      "potentialPool": 84,
+      "refillNeeded": 16
     },
     {
-      "reason": "failed_open",
-      "action": "Verify profile accessibility",
-      "description": "Open the official profile manually or switch to another verified channel before retrying.",
-      "hint": "Verify the official profile opens and exposes a safe message composer, or switch to another verified channel."
+      "reason": "google_social_profile_not_executable",
+      "action": "Complete Google social channel verification",
+      "description": "Confirm the official social profile and safe message entry before rerunning Google-discovered social outreach.",
+      "hint": "Confirm the official social profile and safe message entry before rerunning Google-discovered social outreach."
     }
   ],
   "systemRefresh": {
     "ok": true,
-    "stdout": "{\n  \"date\": \"2026-08-14\",\n  \"summary\": {\n    \"totalLeads\": 16,\n    \"highIcp\": 16,\n    \"readyToDevelop\": 7,\n    \"dueNow\": 100,\n    \"visibleTodayQueue\": 83,\n    \"potentialPool\": 83,\n    \"potentialPoolTarget\": 100,\n    \"customerTableHighIcp\": 0,\n    \"refillNeeded\": 17,\n    \"executableCompanies\": 27,\n    \"executableReserveTarget\": 130,\n    \"executableReserveNeeded\": 103,\n    \"executableByChannel\": {\n      \"email\": 22,\n      \"website_form\": 5\n    },\n    \"verifiedSocialCompanies\": 0,\n    \"verifiedSocialReserveTarget\": 20,\n    \"verifiedSocialReserveNeeded\": 20,\n    \"enrichmentBacklogCount\": 56,\n    \"googleDiscovered\": 100,\n    \"facebookDiscovered\": 2,\n    \"websiteContactDiscovered\": 27,\n    \"scheduledLater\": 0,\n    \"cooldown\": 30,\n    \"emailPriority\": 0,\n    \"openAgencyMarket\": 15,\n    \"exclusiveAgencySkipped\": 1,\n    \"needsVerification\": 0,\n    \"retainedLowIcp\": 0\n  },\n  \"bugErrors\": 13,\n  \"queueFile\": \"E:\\\\New project\\\\outreach-dashboard\\\\daily-runs\\\\2026-08-14-daily-automation.json\",\n  \"csvFile\": \"E:\\\\New project\\\\outreach-dashboard\\\\daily-runs\\\\2026-08-14-daily-queue.csv\"\n}",
+    "stdout": "{\n  \"date\": \"2026-08-14\",\n  \"summary\": {\n    \"totalLeads\": 16,\n    \"highIcp\": 16,\n    \"readyToDevelop\": 28,\n    \"dueNow\": 94,\n    \"visibleTodayQueue\": 82,\n    \"potentialPool\": 83,\n    \"potentialPoolTarget\": 100,\n    \"customerTableHighIcp\": 0,\n    \"refillNeeded\": 17,\n    \"executableCompanies\": 59,\n    \"executableReserveTarget\": 130,\n    \"executableReserveNeeded\": 71,\n    \"executableByChannel\": {\n      \"linkedin\": 4,\n      \"facebook\": 8,\n      \"instagram\": 1,\n      \"email\": 26,\n      \"website_form\": 20\n    },\n    \"verifiedSocialCompanies\": 13,\n    \"verifiedSocialReserveTarget\": 20,\n    \"verifiedSocialReserveNeeded\": 7,\n    \"enrichmentBacklogCount\": 24,\n    \"googleDiscovered\": 94,\n    \"facebookDiscovered\": 8,\n    \"websiteContactDiscovered\": 31,\n    \"scheduledLater\": 0,\n    \"cooldown\": 30,\n    \"emailPriority\": 0,\n    \"openAgencyMarket\": 15,\n    \"exclusiveAgencySkipped\": 1,\n    \"needsVerification\": 0,\n    \"retainedLowIcp\": 0\n  },\n  \"bugErrors\": 13,\n  \"queueFile\": \"E:\\\\New project\\\\outreach-dashboard\\\\daily-runs\\\\2026-08-14-daily-automation.json\",\n  \"csvFile\": \"E:\\\\New project\\\\outreach-dashboard\\\\daily-runs\\\\2026-08-14-daily-queue.csv\"\n}",
     "stderr": "",
     "error": "",
     "visibility": {
-      "updatedAt": "2026-08-14T07:06:49.070Z",
+      "updatedAt": "2026-08-14T07:09:51.997Z",
       "source": "main-refreshDailyAutomationArtifacts",
       "runDate": "2026-08-14",
-      "artifactGeneratedAt": "2026-08-14T07:06:46.026Z",
-      "executionGeneratedAt": "2026-08-14T06:54:37.909Z",
-      "githubSyncUpdatedAt": "2026-08-14T06:58:38.807Z",
+      "artifactGeneratedAt": "2026-08-14T07:09:48.512Z",
+      "executionGeneratedAt": "2026-08-14T07:06:49.614Z",
+      "githubSyncUpdatedAt": "2026-08-14T07:07:33.290Z",
       "counts": {
-        "dailyQueue": 100,
-        "googleDiscovered": 100,
-        "websiteContact": 95,
+        "dailyQueue": 94,
+        "googleDiscovered": 94,
+        "websiteContact": 78,
         "cooldownQueue": 30,
         "scheduledLater": 0
       },
@@ -1767,7 +1532,7 @@
       "ALIBABA_SMTP_SECURITY_PASSWORD"
     ]
   },
-  "ledgerReconciliationCount": 0,
+  "ledgerReconciliationCount": 5,
   "externalEvidenceReconciliationCount": 0,
-  "completedAt": "2026-08-14T07:06:49.614Z"
+  "completedAt": "2026-08-14T07:09:53.014Z"
 }
