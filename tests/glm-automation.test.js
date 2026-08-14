@@ -2064,6 +2064,10 @@ test('Alibaba recipient chip detection supports Ant selection overflow items', (
   assert.match(alibabaWebmailSource, /ant-select-selection-overflow-item:not/);
   assert.match(alibabaWebmailSource, /selection-overflow-item/);
   assert.match(alibabaWebmailSource, /recipient_tooltip_exact_match/);
+  assert.match(alibabaWebmailSource, /const rowCandidates = Array\.from\(compose\.querySelectorAll\('\*'\)\)/);
+  assert.match(alibabaWebmailSource, /rect\.width > 240 \|\| rect\.height > 48/);
+  assert.match(alibabaWebmailSource, /preferredSelectorMatch/);
+  assert.match(mainSource, /JSON\.stringify\(chip\.nearby \|\| \[\]\)/);
 });
 
 test('uninserted social draft does not block same-company website fallback', () => {

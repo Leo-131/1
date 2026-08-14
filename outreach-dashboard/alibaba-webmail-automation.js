@@ -282,18 +282,44 @@ function composeRecipientChipExpression() {
       element.getAttribute?.('aria-label') || element.getAttribute?.('data-email') ||
       element.getAttribute?.('data-value') || ''
     ).trim();
-    const candidates = Array.from(new Set(compose.querySelectorAll(selectors.join(','))))
-      .map(element => ({ element, rect: element.getBoundingClientRect?.(), text: signalOf(element) }))
+    const selectorCandidates = Array.from(compose.querySelectorAll(selectors.join(',')));
+    const rowCandidates = Array.from(compose.querySelectorAll('*'))
+      .filter(element => {
+        const rect = element.getBoundingClientRect?.();
+        if (!rect || rect.width <= 0 || rect.height <= 0 || rect.width > 240 || rect.height > 48) return false;
+        if (element === input || element.contains(input)) return false;
+        return Math.abs((rect.y + rect.height / 2) - (inputRect.y + inputRect.height / 2)) <= 28
+          && rect.right <= inputRect.x + 40
+          && Boolean(signalOf(element));
+      });
+    const candidates = Array.from(new Set([...selectorCandidates, ...rowCandidates]))
+      .map(element => ({
+        element,
+        rect: element.getBoundingClientRect?.(),
+        text: signalOf(element),
+        preferred: selectorCandidates.includes(element),
+      }))
       .filter(item => item.element !== input && item.rect && item.rect.width > 0 && item.rect.height > 0 && item.text)
       .filter(item => Math.abs((item.rect.y + item.rect.height / 2) - (inputRect.y + inputRect.height / 2)) <= 28)
       .filter(item => item.rect.right <= inputRect.right + 40)
-      .sort((left, right) => Math.abs(left.rect.x - inputRect.x) - Math.abs(right.rect.x - inputRect.x));
+      .sort((left, right) => Number(right.preferred) - Number(left.preferred)
+        || Math.abs(left.rect.right - inputRect.x) - Math.abs(right.rect.right - inputRect.x));
     const chip = candidates[0];
-    if (!chip) return JSON.stringify({ ok: false, evidence: 'alibaba_webmail_scoped_recipient_chip_missing' });
+    if (!chip) {
+      const nearby = Array.from(compose.querySelectorAll('*'))
+        .map(element => ({ element, rect: element.getBoundingClientRect?.() }))
+        .filter(item => item.rect && item.rect.width > 0 && item.rect.height > 0)
+        .filter(item => Math.abs((item.rect.y + item.rect.height / 2) - (inputRect.y + inputRect.height / 2)) <= 28)
+        .slice(0, 20)
+        .map(item => item.element.tagName + '.' + String(item.element.className || '').replace(/\\s+/g, '.').slice(0, 80)
+          + '@' + [item.rect.x, item.rect.y, item.rect.width, item.rect.height].map(Math.round).join(','));
+      return JSON.stringify({ ok: false, evidence: 'alibaba_webmail_scoped_recipient_chip_missing', nearby });
+    }
     return JSON.stringify({
       ok: true,
       evidence: 'alibaba_webmail_scoped_recipient_chip_found',
       text: chip.text.slice(0, 120),
+      preferredSelectorMatch: chip.preferred,
       x: Math.round(chip.rect.x + chip.rect.width / 2),
       y: Math.round(chip.rect.y + chip.rect.height / 2),
     });

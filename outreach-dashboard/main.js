@@ -3075,7 +3075,9 @@ async function runAlibabaWebmailEmailLead(lead = {}, subject = '', draft = '') {
     let recipientTooltipEvidence = 'recipient_tooltip_verification_not_needed';
     if (inspected && !inspected.recipientReady && inspected.subjectReady && inspected.bodyReady) {
       const chip = await evaluateChromeTabJson(chromeOpen, composeRecipientChipExpression(), 5000).catch(() => null);
-      recipientTooltipEvidence = chip && chip.evidence || 'alibaba_webmail_scoped_recipient_chip_missing';
+      recipientTooltipEvidence = chip
+        ? `${chip.evidence || 'alibaba_webmail_scoped_recipient_chip_missing'};nearby:${JSON.stringify(chip.nearby || []).slice(0, 1200)}`
+        : 'alibaba_webmail_scoped_recipient_chip_missing';
       if (chip && chip.ok && Number.isFinite(chip.x) && Number.isFinite(chip.y)) {
         for (let clickAttempt = 0; clickAttempt < 2; clickAttempt += 1) {
           await cdpCommand(chromeOpen.webSocketDebuggerUrl, 'Input.dispatchMouseEvent', { type: 'mouseMoved', x: chip.x, y: chip.y }, 3000);
