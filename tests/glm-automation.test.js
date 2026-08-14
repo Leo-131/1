@@ -1536,6 +1536,13 @@ test('first-party reserve promotes Pacific Coast Sports Marketing official partn
   assert.equal(pacificCoast.externalVerificationStatus, 'official_supplier_email_verified');
 });
 
+test('first-party reserve promotes 4 Point Sales official brand-representation email', () => {
+  const fourPoint = verifiedExternalCandidates.find(item => item.company === '4 Point Sales');
+  assert.equal(fourPoint.contactEmail, 'casey@4pointsales.com');
+  assert.equal(fourPoint.evidenceUrl, 'https://www.4pointsales.com/contact');
+  assert.equal(fourPoint.externalVerificationStatus, 'official_supplier_email_verified');
+});
+
 test('email UI execution is hard-limited to Alibaba Mail and rejects alternate clients', () => {
   assert.ok(mainSource.includes("process.env.OUTREACH_EMAIL_UI_PROVIDER || 'alibaba_webmail'"));
   assert.ok(mainSource.includes("requestedEmailUiProvider !== 'alibaba_webmail'"));

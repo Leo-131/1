@@ -996,6 +996,30 @@
     "verifiedAt": "2026-08-14T07:36:00.000Z"
   },
   {
+    "company": "4 Point Sales",
+    "country": "United States",
+    "url": "https://www.4pointsales.com/",
+    "contactUrl": "https://www.4pointsales.com/contact",
+    "publicEmail": "casey@4pointsales.com",
+    "contactEmail": "casey@4pointsales.com",
+    "publicEmailStatus": "Official company-domain email published beside the agency's first-party brand-representation invitation.",
+    "emailVerificationStatus": "official_public_business_email",
+    "emailEvidence": "official_brand_representation_contact_page",
+    "segment": "Southeastern United States premium outdoor brand sales agency",
+    "customerType": "sales_agency",
+    "fitScore": 97,
+    "background": "4 Point Sales connects premium outdoor brands with retailers across the Southeast and explicitly invites brands seeking representation to contact the agency.",
+    "buyerPersona": "Agency principal responsible for new outdoor brand representation.",
+    "evidenceUrl": "https://www.4pointsales.com/contact",
+    "dataSources": [
+      "official agency website",
+      "official brand-representation invitation",
+      "official company-domain email"
+    ],
+    "externalVerificationStatus": "official_supplier_email_verified",
+    "verifiedAt": "2026-08-14T08:19:00.000Z"
+  },
+  {
     "company": "Pacific Coast Sports Marketing",
     "country": "United States",
     "url": "https://www.pacificcoastsportsmkt.com/",
