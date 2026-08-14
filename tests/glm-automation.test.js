@@ -1272,11 +1272,32 @@ test('website discovery probes common same-origin contact paths without product-
   assert.ok(mainSource.includes('const negativeHref = /\\\\/collections'));
   assert.ok(mainSource.includes("String(item.text || '').length <= 120"));
   assert.ok(mainSource.includes('skip to (?:main )?content'));
+  assert.ok(mainSource.includes('cookie (?:settings|preferences|policy)'));
+  assert.ok(mainSource.includes('manage (?:consent|preferences)'));
   assert.ok(mainSource.includes('markWebsiteContactStrategyResult(await runWebsiteContactLead(lead, options))'));
   const start = mainSource.indexOf('function websiteContactClickExpression()');
   const end = mainSource.indexOf('async function inspectWebsiteContactFlow', start);
   const clickExpressionFactory = vm.runInNewContext(`(${mainSource.slice(start, end).trim()})`);
-  assert.doesNotThrow(() => new vm.Script(clickExpressionFactory()));
+  const clickExpression = clickExpressionFactory();
+  assert.doesNotThrow(() => new vm.Script(clickExpression));
+  const cookieControl = {
+    innerText: 'Accept',
+    textContent: 'Accept',
+    href: 'https://example.com/contact',
+    getAttribute(name) { return name === 'href' ? this.href : ''; },
+    getBoundingClientRect() { return { width: 80, height: 30, left: 10, top: 10 }; },
+    scrollIntoView() {},
+  };
+  const cookieResult = JSON.parse(vm.runInNewContext(clickExpression, {
+    URL,
+    location: { hostname: 'example.com' },
+    window: { getComputedStyle: () => ({ visibility: 'visible', display: 'block' }) },
+    document: { querySelectorAll: () => [cookieControl] },
+  }));
+  assert.equal(cookieResult.clicked, false);
+  assert.equal(cookieResult.evidence, 'no_contact_entry_control');
+  assert.match(outreachPolicySource, /Website contact navigation must reject cookie and consent controls/);
+  assert.match(optimizedPromptSource, /Contact-entry discovery must reject cookie\/consent controls/);
   assert.ok(mainSource.includes('mailtos: mailtos.slice(0, 8)'));
   assert.ok(mainSource.includes('officialMailtoLead(lead, contactFlow.inspection'));
   assert.ok(mainSource.includes('runVerifiedAlibabaEmailLead'));

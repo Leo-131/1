@@ -2387,7 +2387,7 @@ function websiteContactClickExpression() {
     };
     const textOf = (el) => String(el && (el.innerText || el.textContent || el.getAttribute('aria-label') || el.getAttribute('title') || '') || '').replace(/\\s+/g, ' ').trim();
     const positive = /contact us|get in touch|send us a message|submit a request|business enquiry|business inquiry|trade enquiry|trade inquiry|sales enquiry|enquir|inquir|vendor|supplier|wholesale|partnership|corporate sales|become a supplier|email us|customer service enquiry|support request|request form|contactez-nous|nous contacter|kontakt|cont[aá]ctanos|contattaci|contato/i;
-    const negative = /skip to (?:main )?content|continue shopping|search|sign in|login|cart|wishlist|store locator|track order|return policy|privacy|terms|newsletter|language|translate|accessibility|live chat/i;
+    const negative = /skip to (?:main )?content|continue shopping|search|sign in|login|cart|wishlist|store locator|track order|return policy|privacy|terms|newsletter|language|translate|accessibility|live chat|(?:accept|allow|reject|decline)(?: all)?(?: cookies?)?|cookie (?:settings|preferences|policy)|manage (?:consent|preferences)|consent preferences/i;
     const negativeHref = /\\/collections?\\/|\\/products?\\/|\\/categories?\\/|\\/catalog(?:ue)?\\/|\\/search(?:[/?#]|$)|(?:[?&#]|\\/)filter[:=/]|(?:[?&#]|\\/)vendor[:=/]|\\/sale(?:[/?#]|$)/i;
     const positiveHref = /\\/(?:contact(?:-us)?|customer-service|support|help\\/contact-us|vendor|supplier|wholesale|partnership)(?:[/?#]|$)/i;
     const registrableHost = (host) => {
