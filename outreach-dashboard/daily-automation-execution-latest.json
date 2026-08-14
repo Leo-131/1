@@ -21,87 +21,87 @@
   "queueSource": "dailyPotentialPool",
   "executed": [
     {
-      "id": "google-customer-waypoint-outdoor-website-contact",
-      "company": "Waypoint Outdoor",
-      "action": "develop",
+      "id": "google-customer-sespe-group-website-contact",
+      "company": "Sespe Group",
+      "action": "email_priority",
       "platform": "website_form",
-      "targetUrl": "https://www.waypointoutdoor.com/contact/",
+      "targetUrl": "https://www.sespegroup.com/contact-us",
       "ok": false,
       "sendStatus": "website_contact_unreachable_skip",
-      "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:1;contact_path_strategy_v2",
-      "timestamp": "2026-08-14T07:45:20.894Z",
+      "evidence": "website_contact_entry_not_verified;contact_entry_clicked:Contact Us;website_contact_all_targets_failed:6;contact_path_strategy_v2",
+      "timestamp": "2026-08-14T07:50:15.325Z",
       "chromeOpen": {
         "ok": true,
         "engine": "codex-chrome-cdp",
         "port": 9224,
-        "targetUrl": "https://www.waypointoutdoor.com/contact/",
-        "tabId": "B14340954295242A1D445239895FE167",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/B14340954295242A1D445239895FE167",
-        "title": "Contact – Waypoint Outdoor"
+        "targetUrl": "https://www.sespegroup.com/help/contact-us",
+        "tabId": "0DF04E5E529DAFAEEF18CE602B253796",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/0DF04E5E529DAFAEEF18CE602B253796",
+        "title": "Sespe Group"
       },
       "result": {
         "ok": false,
         "engine": "dedicated-chrome-cdp-website-contact",
         "browserEngine": "codex-chrome-cdp",
         "mode": "website_contact_unreachable_skip",
-        "targetUrl": "https://www.waypointoutdoor.com/contact/",
+        "targetUrl": "https://www.sespegroup.com/help/contact-us",
         "chromeOpen": {
           "ok": true,
           "engine": "codex-chrome-cdp",
           "port": 9224,
-          "targetUrl": "https://www.waypointoutdoor.com/contact/",
-          "tabId": "B14340954295242A1D445239895FE167",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/B14340954295242A1D445239895FE167",
-          "title": "Contact – Waypoint Outdoor"
+          "targetUrl": "https://www.sespegroup.com/help/contact-us",
+          "tabId": "0DF04E5E529DAFAEEF18CE602B253796",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/0DF04E5E529DAFAEEF18CE602B253796",
+          "title": "Sespe Group"
         },
         "sendStatus": "website_contact_unreachable_skip",
         "subject": "FLEXTAIL retail partnership | 2026 assortment",
-        "draft": "Dear Waypoint Outdoor Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
-        "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:1;contact_path_strategy_v2",
-        "output": "{\"verdict\":\"website_contact_unreachable_skip\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:1;contact_path_strategy_v2\",\"nextAction\":\"Contact page opened, but no verified form, mailto link, vendor/business route, or clickable Contact Us path was detected. Continue manually before marking the lead ready.\",\"subject\":\"FLEXTAIL retail partnership | 2026 assortment\",\"draft\":\"Dear Waypoint Outdoor Team,\\n\\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\\n\\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\\n\\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\\n\\nProduct overview: https://www.flextail.com/\\n\\nBest regards,\\nLeo Liu\\nSales & Operations Director\\nLeo@flextailgear.com\",\"sendStatus\":\"website_contact_unreachable_skip\",\"attempts\":[{\"targetUrl\":\"https://www.waypointoutdoor.com/contact/\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control\"}]}"
+        "draft": "Dear Sespe Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
+        "evidence": "website_contact_entry_not_verified;contact_entry_clicked:Contact Us;website_contact_all_targets_failed:6;contact_path_strategy_v2",
+        "output": "{\"verdict\":\"website_contact_unreachable_skip\",\"evidence\":\"website_contact_entry_not_verified;contact_entry_clicked:Contact Us;website_contact_all_targets_failed:6;contact_path_strategy_v2\",\"nextAction\":\"Contact page opened, but no verified form, mailto link, vendor/business route, or clickable Contact Us path was detected. Continue manually before marking the lead ready.\",\"subject\":\"FLEXTAIL retail partnership | 2026 assortment\",\"draft\":\"Dear Sespe Team,\\n\\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\\n\\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\\n\\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\\n\\nProduct overview: https://www.flextail.com/\\n\\nBest regards,\\nLeo Liu\\nSales & Operations Director\\nLeo@flextailgear.com\",\"sendStatus\":\"website_contact_unreachable_skip\",\"attempts\":[{\"targetUrl\":\"https://www.sespegroup.com/contact-us\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control\"},{\"targetUrl\":\"https://www.sespegroup.com/\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;contact_entry_clicked:Contact Us\"},{\"targetUrl\":\"https://www.sespegroup.com/pages/contact-us\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;contact_entry_clicked:Contact Us\"},{\"targetUrl\":\"https://www.sespegroup.com/pages/contact\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;contact_entry_clicked:Contact Us\"},{\"targetUrl\":\"https://www.sespegroup.com/contact\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;contact_entry_clicked:Contact Us\"},{\"targetUrl\":\"https://www.sespegroup.com/help/contact-us\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;contact_entry_clicked:Contact Us\"}]}"
       }
     }
   ],
   "results": [
     {
-      "id": "google-customer-waypoint-outdoor-website-contact",
-      "company": "Waypoint Outdoor",
-      "action": "develop",
+      "id": "google-customer-sespe-group-website-contact",
+      "company": "Sespe Group",
+      "action": "email_priority",
       "platform": "website_form",
-      "targetUrl": "https://www.waypointoutdoor.com/contact/",
+      "targetUrl": "https://www.sespegroup.com/contact-us",
       "ok": false,
       "sendStatus": "website_contact_unreachable_skip",
-      "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:1;contact_path_strategy_v2",
-      "timestamp": "2026-08-14T07:45:20.894Z",
+      "evidence": "website_contact_entry_not_verified;contact_entry_clicked:Contact Us;website_contact_all_targets_failed:6;contact_path_strategy_v2",
+      "timestamp": "2026-08-14T07:50:15.325Z",
       "chromeOpen": {
         "ok": true,
         "engine": "codex-chrome-cdp",
         "port": 9224,
-        "targetUrl": "https://www.waypointoutdoor.com/contact/",
-        "tabId": "B14340954295242A1D445239895FE167",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/B14340954295242A1D445239895FE167",
-        "title": "Contact – Waypoint Outdoor"
+        "targetUrl": "https://www.sespegroup.com/help/contact-us",
+        "tabId": "0DF04E5E529DAFAEEF18CE602B253796",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/0DF04E5E529DAFAEEF18CE602B253796",
+        "title": "Sespe Group"
       },
       "result": {
         "ok": false,
         "engine": "dedicated-chrome-cdp-website-contact",
         "browserEngine": "codex-chrome-cdp",
         "mode": "website_contact_unreachable_skip",
-        "targetUrl": "https://www.waypointoutdoor.com/contact/",
+        "targetUrl": "https://www.sespegroup.com/help/contact-us",
         "chromeOpen": {
           "ok": true,
           "engine": "codex-chrome-cdp",
           "port": 9224,
-          "targetUrl": "https://www.waypointoutdoor.com/contact/",
-          "tabId": "B14340954295242A1D445239895FE167",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/B14340954295242A1D445239895FE167",
-          "title": "Contact – Waypoint Outdoor"
+          "targetUrl": "https://www.sespegroup.com/help/contact-us",
+          "tabId": "0DF04E5E529DAFAEEF18CE602B253796",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/0DF04E5E529DAFAEEF18CE602B253796",
+          "title": "Sespe Group"
         },
         "sendStatus": "website_contact_unreachable_skip",
         "subject": "FLEXTAIL retail partnership | 2026 assortment",
-        "draft": "Dear Waypoint Outdoor Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
-        "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:1;contact_path_strategy_v2",
-        "output": "{\"verdict\":\"website_contact_unreachable_skip\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:1;contact_path_strategy_v2\",\"nextAction\":\"Contact page opened, but no verified form, mailto link, vendor/business route, or clickable Contact Us path was detected. Continue manually before marking the lead ready.\",\"subject\":\"FLEXTAIL retail partnership | 2026 assortment\",\"draft\":\"Dear Waypoint Outdoor Team,\\n\\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\\n\\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\\n\\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\\n\\nProduct overview: https://www.flextail.com/\\n\\nBest regards,\\nLeo Liu\\nSales & Operations Director\\nLeo@flextailgear.com\",\"sendStatus\":\"website_contact_unreachable_skip\",\"attempts\":[{\"targetUrl\":\"https://www.waypointoutdoor.com/contact/\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control\"}]}"
+        "draft": "Dear Sespe Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
+        "evidence": "website_contact_entry_not_verified;contact_entry_clicked:Contact Us;website_contact_all_targets_failed:6;contact_path_strategy_v2",
+        "output": "{\"verdict\":\"website_contact_unreachable_skip\",\"evidence\":\"website_contact_entry_not_verified;contact_entry_clicked:Contact Us;website_contact_all_targets_failed:6;contact_path_strategy_v2\",\"nextAction\":\"Contact page opened, but no verified form, mailto link, vendor/business route, or clickable Contact Us path was detected. Continue manually before marking the lead ready.\",\"subject\":\"FLEXTAIL retail partnership | 2026 assortment\",\"draft\":\"Dear Sespe Team,\\n\\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\\n\\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\\n\\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\\n\\nProduct overview: https://www.flextail.com/\\n\\nBest regards,\\nLeo Liu\\nSales & Operations Director\\nLeo@flextailgear.com\",\"sendStatus\":\"website_contact_unreachable_skip\",\"attempts\":[{\"targetUrl\":\"https://www.sespegroup.com/contact-us\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control\"},{\"targetUrl\":\"https://www.sespegroup.com/\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;contact_entry_clicked:Contact Us\"},{\"targetUrl\":\"https://www.sespegroup.com/pages/contact-us\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;contact_entry_clicked:Contact Us\"},{\"targetUrl\":\"https://www.sespegroup.com/pages/contact\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;contact_entry_clicked:Contact Us\"},{\"targetUrl\":\"https://www.sespegroup.com/contact\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;contact_entry_clicked:Contact Us\"},{\"targetUrl\":\"https://www.sespegroup.com/help/contact-us\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;contact_entry_clicked:Contact Us\"}]}"
       }
     }
   ],
@@ -224,6 +224,13 @@
       "action": "email_priority",
       "platform": "email",
       "reason": "official_public_business_email_verified"
+    },
+    {
+      "id": "google-customer-waypoint-outdoor-website-contact",
+      "company": "Waypoint Outdoor",
+      "action": "develop",
+      "platform": "website_form",
+      "reason": "official_website_contact_channel"
     },
     {
       "id": "google-customer-sanitas-sales-group-website-contact",
@@ -581,13 +588,6 @@
       "action": "email_priority",
       "platform": "email",
       "reason": "official_public_business_email_verified"
-    },
-    {
-      "id": "google-customer-sespe-group-website-contact",
-      "company": "Sespe Group",
-      "action": "verify_target",
-      "platform": "website_form",
-      "reason": "homepage_only_contact_path_requires_verification"
     },
     {
       "id": "google-customer-sportco-marketing-website-contact",
@@ -961,11 +961,11 @@
       "reason": "official_public_business_email_verified"
     },
     {
-      "id": "google-customer-sespe-group-website-contact",
-      "company": "Sespe Group",
-      "action": "verify_target",
+      "id": "google-customer-waypoint-outdoor-website-contact",
+      "company": "Waypoint Outdoor",
+      "action": "develop",
       "platform": "website_form",
-      "reason": "website_contact_capability_not_verified"
+      "reason": "official_website_contact_channel"
     },
     {
       "id": "google-customer-sanitas-sales-group-website-contact",
@@ -1265,20 +1265,20 @@
     "potentialPoolTarget": 100,
     "customerTableHighIcp": 0,
     "refillNeeded": 30,
-    "executableCompanies": 48,
+    "executableCompanies": 49,
     "executableReserveTarget": 130,
-    "executableReserveNeeded": 82,
+    "executableReserveNeeded": 81,
     "executableByChannel": {
       "linkedin": 4,
       "facebook": 7,
       "instagram": 1,
       "email": 15,
-      "website_form": 21
+      "website_form": 22
     },
     "verifiedSocialCompanies": 12,
     "verifiedSocialReserveTarget": 20,
     "verifiedSocialReserveNeeded": 8,
-    "enrichmentBacklogCount": 22,
+    "enrichmentBacklogCount": 21,
     "googleDiscovered": 96,
     "facebookDiscovered": 9,
     "websiteContactDiscovered": 20,
@@ -1294,7 +1294,7 @@
     {
       "reason": "official_website_contact_channel",
       "status": "skipped",
-      "count": 44
+      "count": 46
     },
     {
       "reason": "official_public_business_email_verified",
@@ -1304,12 +1304,12 @@
     {
       "reason": "homepage_only_contact_path_requires_verification",
       "status": "skipped",
-      "count": 34
+      "count": 33
     },
     {
       "reason": "website_contact_capability_not_verified",
       "status": "skipped",
-      "count": 22
+      "count": 21
     },
     {
       "reason": "official_website_social_channel_verified",
@@ -1333,10 +1333,10 @@
     }
   ],
   "blockerCounts": {
-    "official_website_contact_channel": 44,
+    "official_website_contact_channel": 46,
     "official_public_business_email_verified": 35,
-    "homepage_only_contact_path_requires_verification": 34,
-    "website_contact_capability_not_verified": 22,
+    "homepage_only_contact_path_requires_verification": 33,
+    "website_contact_capability_not_verified": 21,
     "official_website_social_channel_verified": 16,
     "linkedin_channel_requires_supported_executor": 8,
     "social_profile_not_first_party_verified": 4,
@@ -1360,7 +1360,7 @@
     "rule": "completed checkpoints are ignored; only terminal results from an active interrupted checkpoint suppress their exact task id"
   },
   "platformCircuitState": {},
-  "userVisibleStatus": "Customer development was not performed. Blockers: official_website_contact_channel (44); official_public_business_email_verified (35); homepage_only_contact_path_requires_verification (34).",
+  "userVisibleStatus": "Customer development was not performed. Blockers: official_website_contact_channel (46); official_public_business_email_verified (35); homepage_only_contact_path_requires_verification (33).",
   "recoveryHint": "Refill the high-ICP pool with 30 verified leads or unblock existing website/social leads before the next run. Confirm the official social profile and safe message entry before rerunning Google-discovered social outreach.",
   "recoveryActions": [
     {
@@ -1381,16 +1381,16 @@
   ],
   "systemRefresh": {
     "ok": true,
-    "stdout": "{\n  \"date\": \"2026-08-14\",\n  \"summary\": {\n    \"totalLeads\": 16,\n    \"highIcp\": 16,\n    \"readyToDevelop\": 32,\n    \"dueNow\": 96,\n    \"visibleTodayQueue\": 70,\n    \"potentialPool\": 70,\n    \"potentialPoolTarget\": 100,\n    \"customerTableHighIcp\": 0,\n    \"refillNeeded\": 30,\n    \"executableCompanies\": 48,\n    \"executableReserveTarget\": 130,\n    \"executableReserveNeeded\": 82,\n    \"executableByChannel\": {\n      \"linkedin\": 4,\n      \"facebook\": 7,\n      \"instagram\": 1,\n      \"email\": 15,\n      \"website_form\": 21\n    },\n    \"verifiedSocialCompanies\": 12,\n    \"verifiedSocialReserveTarget\": 20,\n    \"verifiedSocialReserveNeeded\": 8,\n    \"enrichmentBacklogCount\": 22,\n    \"googleDiscovered\": 96,\n    \"facebookDiscovered\": 9,\n    \"websiteContactDiscovered\": 20,\n    \"scheduledLater\": 0,\n    \"cooldown\": 30,\n    \"emailPriority\": 0,\n    \"openAgencyMarket\": 15,\n    \"exclusiveAgencySkipped\": 1,\n    \"needsVerification\": 0,\n    \"retainedLowIcp\": 0\n  },\n  \"bugErrors\": 13,\n  \"queueFile\": \"E:\\\\New project\\\\outreach-dashboard\\\\daily-runs\\\\2026-08-14-daily-automation.json\",\n  \"csvFile\": \"E:\\\\New project\\\\outreach-dashboard\\\\daily-runs\\\\2026-08-14-daily-queue.csv\"\n}",
+    "stdout": "{\n  \"date\": \"2026-08-14\",\n  \"summary\": {\n    \"totalLeads\": 16,\n    \"highIcp\": 16,\n    \"readyToDevelop\": 32,\n    \"dueNow\": 96,\n    \"visibleTodayQueue\": 70,\n    \"potentialPool\": 70,\n    \"potentialPoolTarget\": 100,\n    \"customerTableHighIcp\": 0,\n    \"refillNeeded\": 30,\n    \"executableCompanies\": 49,\n    \"executableReserveTarget\": 130,\n    \"executableReserveNeeded\": 81,\n    \"executableByChannel\": {\n      \"linkedin\": 4,\n      \"facebook\": 7,\n      \"instagram\": 1,\n      \"email\": 15,\n      \"website_form\": 22\n    },\n    \"verifiedSocialCompanies\": 12,\n    \"verifiedSocialReserveTarget\": 20,\n    \"verifiedSocialReserveNeeded\": 8,\n    \"enrichmentBacklogCount\": 21,\n    \"googleDiscovered\": 96,\n    \"facebookDiscovered\": 9,\n    \"websiteContactDiscovered\": 20,\n    \"scheduledLater\": 0,\n    \"cooldown\": 30,\n    \"emailPriority\": 0,\n    \"openAgencyMarket\": 15,\n    \"exclusiveAgencySkipped\": 1,\n    \"needsVerification\": 0,\n    \"retainedLowIcp\": 0\n  },\n  \"bugErrors\": 13,\n  \"queueFile\": \"E:\\\\New project\\\\outreach-dashboard\\\\daily-runs\\\\2026-08-14-daily-automation.json\",\n  \"csvFile\": \"E:\\\\New project\\\\outreach-dashboard\\\\daily-runs\\\\2026-08-14-daily-queue.csv\"\n}",
     "stderr": "",
     "error": "",
     "visibility": {
-      "updatedAt": "2026-08-14T07:45:23.346Z",
+      "updatedAt": "2026-08-14T07:50:19.121Z",
       "source": "main-refreshDailyAutomationArtifacts",
       "runDate": "2026-08-14",
-      "artifactGeneratedAt": "2026-08-14T07:45:21.093Z",
-      "executionGeneratedAt": "2026-08-14T07:38:52.506Z",
-      "githubSyncUpdatedAt": "2026-08-14T07:39:37.788Z",
+      "artifactGeneratedAt": "2026-08-14T07:50:15.641Z",
+      "executionGeneratedAt": "2026-08-14T07:45:23.871Z",
+      "githubSyncUpdatedAt": "2026-08-14T07:46:00.827Z",
       "counts": {
         "dailyQueue": 96,
         "googleDiscovered": 96,
@@ -1458,7 +1458,7 @@
       "ALIBABA_SMTP_SECURITY_PASSWORD"
     ]
   },
-  "ledgerReconciliationCount": 2,
+  "ledgerReconciliationCount": 1,
   "externalEvidenceReconciliationCount": 0,
-  "completedAt": "2026-08-14T07:45:23.871Z"
+  "completedAt": "2026-08-14T07:50:20.614Z"
 }

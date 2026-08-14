@@ -21525,5 +21525,22 @@ window.AUTONOMOUS_OUTREACH_RESULTS = [
     "messageId": "",
     "sentFolder": "",
     "sentUid": null
+  },
+  {
+    "task_id": "google-customer-sespe-group-website-contact",
+    "company": "Sespe Group",
+    "approval_version": 1,
+    "status": "website_contact_unreachable_skip",
+    "agent": "codex-chrome-cdp",
+    "browserTransportUsed": "cdp",
+    "timestamp": "2026-08-14T07:50:15.128Z",
+    "target_url": "https://www.sespegroup.com/help/contact-us",
+    "evidence": "website_contact_entry_not_verified;contact_entry_clicked:Contact Us;website_contact_all_targets_failed:6;contact_path_strategy_v2",
+    "draft": "Dear Sespe Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
+    "subject": "FLEXTAIL retail partnership | 2026 assortment",
+    "recipientEmail": "",
+    "messageId": "",
+    "sentFolder": "",
+    "sentUid": null
   }
 ];

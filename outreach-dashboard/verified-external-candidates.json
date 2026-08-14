@@ -996,6 +996,26 @@
     "verifiedAt": "2026-08-14T07:36:00.000Z"
   },
   {
+    "company": "Sespe Group",
+    "country": "United States",
+    "url": "https://www.sespegroup.com/",
+    "contactUrl": "https://www.sespegroup.com/contact-us",
+    "contactCapabilityVerified": true,
+    "segment": "Southwestern United States premium outdoor brand sales agency",
+    "customerType": "sales_agency",
+    "fitScore": 97,
+    "background": "Sespe Group is an independent outdoor sales agency representing premium hike, climb, ski, run, bike and lifestyle brands across California, Arizona, Nevada, Hawaii and United States territories.",
+    "buyerPersona": "Agency principal responsible for new outdoor brand representation partnerships.",
+    "evidenceUrl": "https://www.sespegroup.com/contact-us",
+    "dataSources": [
+      "official agency website",
+      "official agency team page",
+      "official contact page inviting partnership messages"
+    ],
+    "externalVerificationStatus": "official_supplier_form_verified",
+    "verifiedAt": "2026-08-14T08:03:00.000Z"
+  },
+  {
     "company": "Mountain Source",
     "country": "United States",
     "url": "https://www.instagram.com/mountainsource/",
