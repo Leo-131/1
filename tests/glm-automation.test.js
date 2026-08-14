@@ -1964,6 +1964,12 @@ test('net-new North America reserve candidates retain first-party execution evid
   const crf = byCompany.get('CRF Agency');
   assert.equal(crf.contactUrl, 'https://www.crfagency.com/');
   assert.equal(crf.externalVerificationStatus, 'official_supplier_form_verified');
+  const palisade = byCompany.get('Palisade Trading');
+  assert.equal(palisade.instagramUrl, 'https://www.instagram.com/palisadetrading');
+  assert.equal(palisade.linkedinUrl, 'https://www.linkedin.com/company/palisade-trading/');
+  assert.equal(palisade.officialSocialProfileVerified, true);
+  assert.equal(palisade.evidenceUrl, 'https://www.palisadetrading.com/');
+  assert.equal(palisade.externalVerificationStatus, 'official_supplier_route_verified');
 });
 
 test('same-day failed customer advances without cross-run replay and closes its automation tab', () => {

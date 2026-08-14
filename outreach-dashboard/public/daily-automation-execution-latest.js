@@ -1,13 +1,13 @@
 window.DAILY_AUTOMATION_EXECUTION_LATEST = {
   "ok": false,
   "browserTransportRequested": "codex-extension-first",
-  "browserTransportUsed": "none",
-  "browserTransportFallbackReason": "",
+  "browserTransportUsed": "cdp",
+  "browserTransportFallbackReason": "extension_bridge_not_available_process_local_cdp",
   "extensionReceiptCount": 0,
-  "executionPhase": "no_browser_execution",
-  "chromeStage": "not_started",
-  "chromeOpened": false,
-  "chromeOpenedCount": 0,
+  "executionPhase": "browser_execution",
+  "chromeStage": "opened",
+  "chromeOpened": true,
+  "chromeOpenedCount": 1,
   "customerDevelopmentPerformed": false,
   "customerMessageSent": false,
   "realDevelopmentCount": 0,
@@ -18,164 +18,106 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
   "parallelLimit": 1,
   "limit": 25,
   "queueDate": "2026-08-14",
-  "queueSource": "dailyQueue",
+  "queueSource": "dailyPotentialPool",
   "executed": [
     {
-      "id": "google-customer-crf-agency-website-contact",
-      "company": "CRF Agency",
-      "action": "email_priority",
-      "platform": "email",
-      "targetUrl": "https://www.crfagency.com/",
+      "id": "google-customer-palisade-trading-website-contact",
+      "company": "Palisade Trading",
+      "action": "develop",
+      "platform": "website_form",
+      "targetUrl": "https://www.palisadetrading.com/",
       "ok": false,
       "sendStatus": "failed_open",
-      "evidence": "verified_email_auto_send_no_manual_review;alibaba_webmail_content_inserted_recipient_control_verified;alibaba_webmail_draft_verification_failed;recipientReady:false;subjectReady:true;bodyReady:true;recipientStageValueMatch:false;recipientStageType:search;recipientStageRole:combobox;recipientStageClass:ant-select-selection-search-input hide-clear;recipientStageXY:212,157;recipientControl:INPUT,search,combobox,ant-select-selection-search-input hide-clear;recipientControlXY:0,0;recipientControlShadow:false;alibaba_webmail_scoped_recipient_chip_missing;composer_preserved_for_technical_evidence:true;contact_path_strategy_v2",
-      "timestamp": "2026-08-14T06:42:11.124Z",
-      "chromeOpen": null,
+      "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:linkedin;linkedin_draft_inserted_explicit_send_control_not_found;no_irreversible_action_performed;linkedin_draft_inserted_verified;contact_path_strategy_v2",
+      "timestamp": "2026-08-14T06:51:27.647Z",
+      "chromeOpen": {
+        "ok": true,
+        "engine": "codex-chrome-cdp",
+        "port": 9224,
+        "targetUrl": "https://www.linkedin.com/company/palisade-trading/",
+        "tabId": "783C3F4FF560552F857462859EBFFEB0",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/783C3F4FF560552F857462859EBFFEB0",
+        "title": "(11) Palisade Trading: Overview | LinkedIn"
+      },
       "result": {
         "ok": false,
+        "engine": "codex-chrome-cdp",
+        "browserEngine": "codex-chrome-cdp",
+        "mode": "codex_chrome_cdp",
+        "targetUrl": "https://www.linkedin.com/company/palisade-trading/",
+        "chromeOpen": {
+          "ok": true,
+          "engine": "codex-chrome-cdp",
+          "port": 9224,
+          "targetUrl": "https://www.linkedin.com/company/palisade-trading/",
+          "tabId": "783C3F4FF560552F857462859EBFFEB0",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/783C3F4FF560552F857462859EBFFEB0",
+          "title": "(11) Palisade Trading: Overview | LinkedIn"
+        },
         "sendStatus": "failed_open",
-        "reason": "alibaba_webmail_draft_verification_failed",
-        "evidence": "verified_email_auto_send_no_manual_review;alibaba_webmail_content_inserted_recipient_control_verified;alibaba_webmail_draft_verification_failed;recipientReady:false;subjectReady:true;bodyReady:true;recipientStageValueMatch:false;recipientStageType:search;recipientStageRole:combobox;recipientStageClass:ant-select-selection-search-input hide-clear;recipientStageXY:212,157;recipientControl:INPUT,search,combobox,ant-select-selection-search-input hide-clear;recipientControlXY:0,0;recipientControlShadow:false;alibaba_webmail_scoped_recipient_chip_missing;composer_preserved_for_technical_evidence:true;contact_path_strategy_v2",
-        "manualApprovalRequired": false,
-        "autoSendAuthorized": true,
-        "engine": "alibaba-enterprise-mail-smtp-imap",
-        "mode": "alibaba_email_delivery_unconfirmed",
-        "targetUrl": "mailto:cody@crfagency.com",
-        "subject": "FLEXTAIL retail partnership | 2026 assortment",
-        "draft": "Dear CRF Agency Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
-        "output": "{\"verdict\":\"failed_open\",\"sendStatus\":\"failed_open\",\"evidence\":\"verified_email_auto_send_no_manual_review;alibaba_webmail_content_inserted_recipient_control_verified;alibaba_webmail_draft_verification_failed;recipientReady:false;subjectReady:true;bodyReady:true;recipientStageValueMatch:false;recipientStageType:search;recipientStageRole:combobox;recipientStageClass:ant-select-selection-search-input hide-clear;recipientStageXY:212,157;recipientControl:INPUT,search,combobox,ant-select-selection-search-input hide-clear;recipientControlXY:0,0;recipientControlShadow:false;alibaba_webmail_scoped_recipient_chip_missing;composer_preserved_for_technical_evidence:true;contact_path_strategy_v2\",\"nextAction\":\"Do not resend automatically; inspect the Alibaba Mail delivery and Sent-folder evidence.\",\"recipientEmail\":\"cody@crfagency.com\",\"messageId\":\"\"}"
-      }
-    },
-    {
-      "id": "google-customer-two-skies-inc-website-contact",
-      "company": "Two Skies Inc",
-      "action": "email_priority",
-      "platform": "email",
-      "targetUrl": "https://www.2skiesinc.com/",
-      "ok": false,
-      "sendStatus": "failed_open",
-      "evidence": "verified_email_auto_send_no_manual_review;alibaba_webmail_content_inserted_recipient_control_verified;alibaba_webmail_draft_verification_failed;recipientReady:false;subjectReady:true;bodyReady:true;recipientStageValueMatch:false;recipientStageType:search;recipientStageRole:combobox;recipientStageClass:ant-select-selection-search-input hide-clear;recipientStageXY:206,157;recipientControl:INPUT,search,combobox,ant-select-selection-search-input hide-clear;recipientControlXY:0,0;recipientControlShadow:false;alibaba_webmail_scoped_recipient_chip_missing;composer_preserved_for_technical_evidence:true;contact_path_strategy_v2",
-      "timestamp": "2026-08-14T06:42:26.455Z",
-      "chromeOpen": null,
-      "result": {
-        "ok": false,
-        "sendStatus": "failed_open",
-        "reason": "alibaba_webmail_draft_verification_failed",
-        "evidence": "verified_email_auto_send_no_manual_review;alibaba_webmail_content_inserted_recipient_control_verified;alibaba_webmail_draft_verification_failed;recipientReady:false;subjectReady:true;bodyReady:true;recipientStageValueMatch:false;recipientStageType:search;recipientStageRole:combobox;recipientStageClass:ant-select-selection-search-input hide-clear;recipientStageXY:206,157;recipientControl:INPUT,search,combobox,ant-select-selection-search-input hide-clear;recipientControlXY:0,0;recipientControlShadow:false;alibaba_webmail_scoped_recipient_chip_missing;composer_preserved_for_technical_evidence:true;contact_path_strategy_v2",
-        "manualApprovalRequired": false,
-        "autoSendAuthorized": true,
-        "engine": "alibaba-enterprise-mail-smtp-imap",
-        "mode": "alibaba_email_delivery_unconfirmed",
-        "targetUrl": "mailto:info@twoskiesinc.com",
-        "subject": "FLEXTAIL retail partnership | 2026 assortment",
-        "draft": "Dear Two Skies Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
-        "output": "{\"verdict\":\"failed_open\",\"sendStatus\":\"failed_open\",\"evidence\":\"verified_email_auto_send_no_manual_review;alibaba_webmail_content_inserted_recipient_control_verified;alibaba_webmail_draft_verification_failed;recipientReady:false;subjectReady:true;bodyReady:true;recipientStageValueMatch:false;recipientStageType:search;recipientStageRole:combobox;recipientStageClass:ant-select-selection-search-input hide-clear;recipientStageXY:206,157;recipientControl:INPUT,search,combobox,ant-select-selection-search-input hide-clear;recipientControlXY:0,0;recipientControlShadow:false;alibaba_webmail_scoped_recipient_chip_missing;composer_preserved_for_technical_evidence:true;contact_path_strategy_v2\",\"nextAction\":\"Do not resend automatically; inspect the Alibaba Mail delivery and Sent-folder evidence.\",\"recipientEmail\":\"info@twoskiesinc.com\",\"messageId\":\"\"}"
-      }
-    },
-    {
-      "id": "google-customer-outdoor-cap-company-website-contact",
-      "company": "Outdoor Cap Company",
-      "action": "email_priority",
-      "platform": "email",
-      "targetUrl": "https://retail.outdoorcap.com/contact-us",
-      "ok": false,
-      "sendStatus": "failed_open",
-      "evidence": "verified_email_auto_send_no_manual_review;alibaba_webmail_content_inserted_recipient_control_verified;alibaba_webmail_draft_verification_failed;recipientReady:false;subjectReady:true;bodyReady:true;recipientStageValueMatch:false;recipientStageType:search;recipientStageRole:combobox;recipientStageClass:ant-select-selection-search-input hide-clear;recipientStageXY:241,157;recipientControl:INPUT,search,combobox,ant-select-selection-search-input hide-clear;recipientControlXY:0,0;recipientControlShadow:false;alibaba_webmail_scoped_recipient_chip_missing;composer_preserved_for_technical_evidence:true;contact_path_strategy_v2",
-      "timestamp": "2026-08-14T06:42:41.660Z",
-      "chromeOpen": null,
-      "result": {
-        "ok": false,
-        "sendStatus": "failed_open",
-        "reason": "alibaba_webmail_draft_verification_failed",
-        "evidence": "verified_email_auto_send_no_manual_review;alibaba_webmail_content_inserted_recipient_control_verified;alibaba_webmail_draft_verification_failed;recipientReady:false;subjectReady:true;bodyReady:true;recipientStageValueMatch:false;recipientStageType:search;recipientStageRole:combobox;recipientStageClass:ant-select-selection-search-input hide-clear;recipientStageXY:241,157;recipientControl:INPUT,search,combobox,ant-select-selection-search-input hide-clear;recipientControlXY:0,0;recipientControlShadow:false;alibaba_webmail_scoped_recipient_chip_missing;composer_preserved_for_technical_evidence:true;contact_path_strategy_v2",
-        "manualApprovalRequired": false,
-        "autoSendAuthorized": true,
-        "engine": "alibaba-enterprise-mail-smtp-imap",
-        "mode": "alibaba_email_delivery_unconfirmed",
-        "targetUrl": "mailto:retailsales@outdoorcap.com",
-        "subject": "FLEXTAIL retail partnership | 2026 assortment",
-        "draft": "Dear Outdoor Cap Company Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
-        "output": "{\"verdict\":\"failed_open\",\"sendStatus\":\"failed_open\",\"evidence\":\"verified_email_auto_send_no_manual_review;alibaba_webmail_content_inserted_recipient_control_verified;alibaba_webmail_draft_verification_failed;recipientReady:false;subjectReady:true;bodyReady:true;recipientStageValueMatch:false;recipientStageType:search;recipientStageRole:combobox;recipientStageClass:ant-select-selection-search-input hide-clear;recipientStageXY:241,157;recipientControl:INPUT,search,combobox,ant-select-selection-search-input hide-clear;recipientControlXY:0,0;recipientControlShadow:false;alibaba_webmail_scoped_recipient_chip_missing;composer_preserved_for_technical_evidence:true;contact_path_strategy_v2\",\"nextAction\":\"Do not resend automatically; inspect the Alibaba Mail delivery and Sent-folder evidence.\",\"recipientEmail\":\"retailsales@outdoorcap.com\",\"messageId\":\"\"}"
+        "output": "{\"verdict\":\"major_bug_review_needed\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:linkedin;linkedin_draft_inserted_explicit_send_control_not_found;no_irreversible_action_performed;linkedin_draft_inserted_verified;contact_path_strategy_v2\",\"nextAction\":\"An explicit Send control was not detected and the verified Enter path was unavailable; record a technical failure and continue to another verified channel.\",\"draft\":\"Hi Palisade Trading team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a retail/category buyer, the strongest fit is assortment fit, new SKU pipeline, price-tier coverage, and proven consumer demand; your Midwestern United States outdoor, apparel and footwear sales agency focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the category buyer or vendor-review owner for a short intro video meeting?\",\"sendStatus\":\"failed_open\"}",
+        "decision": {
+          "verdict": "develop",
+          "fitScore": 96,
+          "reason": "local_codex_extension_template",
+          "draft": "Hi Palisade Trading team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a retail/category buyer, the strongest fit is assortment fit, new SKU pipeline, price-tier coverage, and proven consumer demand; your Midwestern United States outdoor, apparel and footwear sales agency focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the category buyer or vendor-review owner for a short intro video meeting?"
+        },
+        "executionLayer": "Chrome CDP fallback",
+        "glmModel": "not_used",
+        "followup": false,
+        "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:linkedin;linkedin_draft_inserted_explicit_send_control_not_found;no_irreversible_action_performed;linkedin_draft_inserted_verified;contact_path_strategy_v2",
+        "socialFallbackEvidence": "linkedin_draft_inserted_explicit_send_control_not_found;no_irreversible_action_performed;linkedin_draft_inserted_verified"
       }
     }
   ],
   "results": [
     {
-      "id": "google-customer-crf-agency-website-contact",
-      "company": "CRF Agency",
-      "action": "email_priority",
-      "platform": "email",
-      "targetUrl": "https://www.crfagency.com/",
+      "id": "google-customer-palisade-trading-website-contact",
+      "company": "Palisade Trading",
+      "action": "develop",
+      "platform": "website_form",
+      "targetUrl": "https://www.palisadetrading.com/",
       "ok": false,
       "sendStatus": "failed_open",
-      "evidence": "verified_email_auto_send_no_manual_review;alibaba_webmail_content_inserted_recipient_control_verified;alibaba_webmail_draft_verification_failed;recipientReady:false;subjectReady:true;bodyReady:true;recipientStageValueMatch:false;recipientStageType:search;recipientStageRole:combobox;recipientStageClass:ant-select-selection-search-input hide-clear;recipientStageXY:212,157;recipientControl:INPUT,search,combobox,ant-select-selection-search-input hide-clear;recipientControlXY:0,0;recipientControlShadow:false;alibaba_webmail_scoped_recipient_chip_missing;composer_preserved_for_technical_evidence:true;contact_path_strategy_v2",
-      "timestamp": "2026-08-14T06:42:11.124Z",
-      "chromeOpen": null,
+      "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:linkedin;linkedin_draft_inserted_explicit_send_control_not_found;no_irreversible_action_performed;linkedin_draft_inserted_verified;contact_path_strategy_v2",
+      "timestamp": "2026-08-14T06:51:27.647Z",
+      "chromeOpen": {
+        "ok": true,
+        "engine": "codex-chrome-cdp",
+        "port": 9224,
+        "targetUrl": "https://www.linkedin.com/company/palisade-trading/",
+        "tabId": "783C3F4FF560552F857462859EBFFEB0",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/783C3F4FF560552F857462859EBFFEB0",
+        "title": "(11) Palisade Trading: Overview | LinkedIn"
+      },
       "result": {
         "ok": false,
+        "engine": "codex-chrome-cdp",
+        "browserEngine": "codex-chrome-cdp",
+        "mode": "codex_chrome_cdp",
+        "targetUrl": "https://www.linkedin.com/company/palisade-trading/",
+        "chromeOpen": {
+          "ok": true,
+          "engine": "codex-chrome-cdp",
+          "port": 9224,
+          "targetUrl": "https://www.linkedin.com/company/palisade-trading/",
+          "tabId": "783C3F4FF560552F857462859EBFFEB0",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/783C3F4FF560552F857462859EBFFEB0",
+          "title": "(11) Palisade Trading: Overview | LinkedIn"
+        },
         "sendStatus": "failed_open",
-        "reason": "alibaba_webmail_draft_verification_failed",
-        "evidence": "verified_email_auto_send_no_manual_review;alibaba_webmail_content_inserted_recipient_control_verified;alibaba_webmail_draft_verification_failed;recipientReady:false;subjectReady:true;bodyReady:true;recipientStageValueMatch:false;recipientStageType:search;recipientStageRole:combobox;recipientStageClass:ant-select-selection-search-input hide-clear;recipientStageXY:212,157;recipientControl:INPUT,search,combobox,ant-select-selection-search-input hide-clear;recipientControlXY:0,0;recipientControlShadow:false;alibaba_webmail_scoped_recipient_chip_missing;composer_preserved_for_technical_evidence:true;contact_path_strategy_v2",
-        "manualApprovalRequired": false,
-        "autoSendAuthorized": true,
-        "engine": "alibaba-enterprise-mail-smtp-imap",
-        "mode": "alibaba_email_delivery_unconfirmed",
-        "targetUrl": "mailto:cody@crfagency.com",
-        "subject": "FLEXTAIL retail partnership | 2026 assortment",
-        "draft": "Dear CRF Agency Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
-        "output": "{\"verdict\":\"failed_open\",\"sendStatus\":\"failed_open\",\"evidence\":\"verified_email_auto_send_no_manual_review;alibaba_webmail_content_inserted_recipient_control_verified;alibaba_webmail_draft_verification_failed;recipientReady:false;subjectReady:true;bodyReady:true;recipientStageValueMatch:false;recipientStageType:search;recipientStageRole:combobox;recipientStageClass:ant-select-selection-search-input hide-clear;recipientStageXY:212,157;recipientControl:INPUT,search,combobox,ant-select-selection-search-input hide-clear;recipientControlXY:0,0;recipientControlShadow:false;alibaba_webmail_scoped_recipient_chip_missing;composer_preserved_for_technical_evidence:true;contact_path_strategy_v2\",\"nextAction\":\"Do not resend automatically; inspect the Alibaba Mail delivery and Sent-folder evidence.\",\"recipientEmail\":\"cody@crfagency.com\",\"messageId\":\"\"}"
-      }
-    },
-    {
-      "id": "google-customer-two-skies-inc-website-contact",
-      "company": "Two Skies Inc",
-      "action": "email_priority",
-      "platform": "email",
-      "targetUrl": "https://www.2skiesinc.com/",
-      "ok": false,
-      "sendStatus": "failed_open",
-      "evidence": "verified_email_auto_send_no_manual_review;alibaba_webmail_content_inserted_recipient_control_verified;alibaba_webmail_draft_verification_failed;recipientReady:false;subjectReady:true;bodyReady:true;recipientStageValueMatch:false;recipientStageType:search;recipientStageRole:combobox;recipientStageClass:ant-select-selection-search-input hide-clear;recipientStageXY:206,157;recipientControl:INPUT,search,combobox,ant-select-selection-search-input hide-clear;recipientControlXY:0,0;recipientControlShadow:false;alibaba_webmail_scoped_recipient_chip_missing;composer_preserved_for_technical_evidence:true;contact_path_strategy_v2",
-      "timestamp": "2026-08-14T06:42:26.455Z",
-      "chromeOpen": null,
-      "result": {
-        "ok": false,
-        "sendStatus": "failed_open",
-        "reason": "alibaba_webmail_draft_verification_failed",
-        "evidence": "verified_email_auto_send_no_manual_review;alibaba_webmail_content_inserted_recipient_control_verified;alibaba_webmail_draft_verification_failed;recipientReady:false;subjectReady:true;bodyReady:true;recipientStageValueMatch:false;recipientStageType:search;recipientStageRole:combobox;recipientStageClass:ant-select-selection-search-input hide-clear;recipientStageXY:206,157;recipientControl:INPUT,search,combobox,ant-select-selection-search-input hide-clear;recipientControlXY:0,0;recipientControlShadow:false;alibaba_webmail_scoped_recipient_chip_missing;composer_preserved_for_technical_evidence:true;contact_path_strategy_v2",
-        "manualApprovalRequired": false,
-        "autoSendAuthorized": true,
-        "engine": "alibaba-enterprise-mail-smtp-imap",
-        "mode": "alibaba_email_delivery_unconfirmed",
-        "targetUrl": "mailto:info@twoskiesinc.com",
-        "subject": "FLEXTAIL retail partnership | 2026 assortment",
-        "draft": "Dear Two Skies Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
-        "output": "{\"verdict\":\"failed_open\",\"sendStatus\":\"failed_open\",\"evidence\":\"verified_email_auto_send_no_manual_review;alibaba_webmail_content_inserted_recipient_control_verified;alibaba_webmail_draft_verification_failed;recipientReady:false;subjectReady:true;bodyReady:true;recipientStageValueMatch:false;recipientStageType:search;recipientStageRole:combobox;recipientStageClass:ant-select-selection-search-input hide-clear;recipientStageXY:206,157;recipientControl:INPUT,search,combobox,ant-select-selection-search-input hide-clear;recipientControlXY:0,0;recipientControlShadow:false;alibaba_webmail_scoped_recipient_chip_missing;composer_preserved_for_technical_evidence:true;contact_path_strategy_v2\",\"nextAction\":\"Do not resend automatically; inspect the Alibaba Mail delivery and Sent-folder evidence.\",\"recipientEmail\":\"info@twoskiesinc.com\",\"messageId\":\"\"}"
-      }
-    },
-    {
-      "id": "google-customer-outdoor-cap-company-website-contact",
-      "company": "Outdoor Cap Company",
-      "action": "email_priority",
-      "platform": "email",
-      "targetUrl": "https://retail.outdoorcap.com/contact-us",
-      "ok": false,
-      "sendStatus": "failed_open",
-      "evidence": "verified_email_auto_send_no_manual_review;alibaba_webmail_content_inserted_recipient_control_verified;alibaba_webmail_draft_verification_failed;recipientReady:false;subjectReady:true;bodyReady:true;recipientStageValueMatch:false;recipientStageType:search;recipientStageRole:combobox;recipientStageClass:ant-select-selection-search-input hide-clear;recipientStageXY:241,157;recipientControl:INPUT,search,combobox,ant-select-selection-search-input hide-clear;recipientControlXY:0,0;recipientControlShadow:false;alibaba_webmail_scoped_recipient_chip_missing;composer_preserved_for_technical_evidence:true;contact_path_strategy_v2",
-      "timestamp": "2026-08-14T06:42:41.660Z",
-      "chromeOpen": null,
-      "result": {
-        "ok": false,
-        "sendStatus": "failed_open",
-        "reason": "alibaba_webmail_draft_verification_failed",
-        "evidence": "verified_email_auto_send_no_manual_review;alibaba_webmail_content_inserted_recipient_control_verified;alibaba_webmail_draft_verification_failed;recipientReady:false;subjectReady:true;bodyReady:true;recipientStageValueMatch:false;recipientStageType:search;recipientStageRole:combobox;recipientStageClass:ant-select-selection-search-input hide-clear;recipientStageXY:241,157;recipientControl:INPUT,search,combobox,ant-select-selection-search-input hide-clear;recipientControlXY:0,0;recipientControlShadow:false;alibaba_webmail_scoped_recipient_chip_missing;composer_preserved_for_technical_evidence:true;contact_path_strategy_v2",
-        "manualApprovalRequired": false,
-        "autoSendAuthorized": true,
-        "engine": "alibaba-enterprise-mail-smtp-imap",
-        "mode": "alibaba_email_delivery_unconfirmed",
-        "targetUrl": "mailto:retailsales@outdoorcap.com",
-        "subject": "FLEXTAIL retail partnership | 2026 assortment",
-        "draft": "Dear Outdoor Cap Company Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
-        "output": "{\"verdict\":\"failed_open\",\"sendStatus\":\"failed_open\",\"evidence\":\"verified_email_auto_send_no_manual_review;alibaba_webmail_content_inserted_recipient_control_verified;alibaba_webmail_draft_verification_failed;recipientReady:false;subjectReady:true;bodyReady:true;recipientStageValueMatch:false;recipientStageType:search;recipientStageRole:combobox;recipientStageClass:ant-select-selection-search-input hide-clear;recipientStageXY:241,157;recipientControl:INPUT,search,combobox,ant-select-selection-search-input hide-clear;recipientControlXY:0,0;recipientControlShadow:false;alibaba_webmail_scoped_recipient_chip_missing;composer_preserved_for_technical_evidence:true;contact_path_strategy_v2\",\"nextAction\":\"Do not resend automatically; inspect the Alibaba Mail delivery and Sent-folder evidence.\",\"recipientEmail\":\"retailsales@outdoorcap.com\",\"messageId\":\"\"}"
+        "output": "{\"verdict\":\"major_bug_review_needed\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:linkedin;linkedin_draft_inserted_explicit_send_control_not_found;no_irreversible_action_performed;linkedin_draft_inserted_verified;contact_path_strategy_v2\",\"nextAction\":\"An explicit Send control was not detected and the verified Enter path was unavailable; record a technical failure and continue to another verified channel.\",\"draft\":\"Hi Palisade Trading team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a retail/category buyer, the strongest fit is assortment fit, new SKU pipeline, price-tier coverage, and proven consumer demand; your Midwestern United States outdoor, apparel and footwear sales agency focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the category buyer or vendor-review owner for a short intro video meeting?\",\"sendStatus\":\"failed_open\"}",
+        "decision": {
+          "verdict": "develop",
+          "fitScore": 96,
+          "reason": "local_codex_extension_template",
+          "draft": "Hi Palisade Trading team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a retail/category buyer, the strongest fit is assortment fit, new SKU pipeline, price-tier coverage, and proven consumer demand; your Midwestern United States outdoor, apparel and footwear sales agency focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the category buyer or vendor-review owner for a short intro video meeting?"
+        },
+        "executionLayer": "Chrome CDP fallback",
+        "glmModel": "not_used",
+        "followup": false,
+        "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:linkedin;linkedin_draft_inserted_explicit_send_control_not_found;no_irreversible_action_performed;linkedin_draft_inserted_verified;contact_path_strategy_v2",
+        "socialFallbackEvidence": "linkedin_draft_inserted_explicit_send_control_not_found;no_irreversible_action_performed;linkedin_draft_inserted_verified"
       }
     }
   ],
@@ -573,6 +515,13 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "reason": "linkedin_channel_requires_supported_executor"
     },
     {
+      "id": "google-customer-front-point-sales-linkedin",
+      "company": "Front Point Sales",
+      "action": "verify_target",
+      "platform": "linkedin",
+      "reason": "linkedin_channel_requires_supported_executor"
+    },
+    {
       "id": "google-customer-aim-outside-llc-facebook",
       "company": "Aim Outside LLC",
       "action": "develop",
@@ -813,6 +762,13 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     {
       "id": "google-customer-brm-reps-website-contact",
       "company": "BRM Reps",
+      "action": "verify_target",
+      "platform": "website_form",
+      "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
+      "id": "google-customer-green-drake-outdoors-website-contact",
+      "company": "Green Drake Outdoors",
       "action": "verify_target",
       "platform": "website_form",
       "reason": "homepage_only_contact_path_requires_verification"
@@ -1444,22 +1400,22 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
   "summary": {
     "totalLeads": 16,
     "highIcp": 16,
-    "readyToDevelop": 27,
+    "readyToDevelop": 28,
     "dueNow": 94,
-    "visibleTodayQueue": 91,
-    "potentialPool": 92,
+    "visibleTodayQueue": 89,
+    "potentialPool": 90,
     "potentialPoolTarget": 100,
     "customerTableHighIcp": 0,
-    "refillNeeded": 8,
-    "executableCompanies": 68,
+    "refillNeeded": 10,
+    "executableCompanies": 66,
     "executableReserveTarget": 130,
-    "executableReserveNeeded": 62,
+    "executableReserveNeeded": 64,
     "executableByChannel": {
       "linkedin": 5,
       "facebook": 9,
       "instagram": 3,
-      "email": 31,
-      "website_form": 20
+      "email": 28,
+      "website_form": 21
     },
     "verifiedSocialCompanies": 17,
     "verifiedSocialReserveTarget": 20,
@@ -1467,7 +1423,7 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     "enrichmentBacklogCount": 24,
     "googleDiscovered": 94,
     "facebookDiscovered": 7,
-    "websiteContactDiscovered": 36,
+    "websiteContactDiscovered": 33,
     "scheduledLater": 0,
     "cooldown": 30,
     "emailPriority": 0,
@@ -1488,14 +1444,14 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "count": 41
     },
     {
-      "reason": "website_contact_capability_not_verified",
+      "reason": "homepage_only_contact_path_requires_verification",
       "status": "skipped",
       "count": 24
     },
     {
-      "reason": "homepage_only_contact_path_requires_verification",
+      "reason": "website_contact_capability_not_verified",
       "status": "skipped",
-      "count": 23
+      "count": 24
     },
     {
       "reason": "official_website_social_channel_verified",
@@ -1505,29 +1461,29 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     {
       "reason": "linkedin_channel_requires_supported_executor",
       "status": "skipped",
-      "count": 9
+      "count": 10
     },
     {
-      "reason": "alibaba_webmail_draft_verification_failed",
+      "reason": "failed_open",
       "status": "failed_open",
-      "count": 3
+      "count": 1
     }
   ],
   "blockerCounts": {
     "official_public_business_email_verified": 61,
     "official_website_contact_channel": 41,
+    "homepage_only_contact_path_requires_verification": 24,
     "website_contact_capability_not_verified": 24,
-    "homepage_only_contact_path_requires_verification": 23,
     "official_website_social_channel_verified": 22,
-    "linkedin_channel_requires_supported_executor": 9,
-    "alibaba_webmail_draft_verification_failed": 3
+    "linkedin_channel_requires_supported_executor": 10,
+    "failed_open": 1
   },
   "queueGoalStatus": {
     "target": 100,
-    "potentialPool": 92,
+    "potentialPool": 90,
     "queueCount": 94,
     "googleDiscovered": 94,
-    "refillNeeded": 8,
+    "refillNeeded": 10,
     "confirmedToday": 0,
     "reached": false,
     "action": "Add more verified high-ICP sources or unblock existing website/social leads."
@@ -1540,17 +1496,23 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     "rule": "completed checkpoints are ignored; only terminal results from an active interrupted checkpoint suppress their exact task id"
   },
   "platformCircuitState": {},
-  "userVisibleStatus": "Customer development was not performed. Blockers: official_public_business_email_verified (61); official_website_contact_channel (41); website_contact_capability_not_verified (24).",
-  "recoveryHint": "Refill the high-ICP pool with 8 verified leads or unblock existing website/social leads before the next run.",
+  "userVisibleStatus": "Customer development was not performed. Blockers: official_public_business_email_verified (61); official_website_contact_channel (41); homepage_only_contact_path_requires_verification (24).",
+  "recoveryHint": "Refill the high-ICP pool with 10 verified leads or unblock existing website/social leads before the next run. Verify the official profile opens and exposes a safe message composer, or switch to another verified channel.",
   "recoveryActions": [
     {
       "reason": "daily_queue_goal_not_reached",
       "action": "Refill high-ICP customer pool",
-      "description": "Add or unblock 8 verified high-ICP leads to reach the daily 100 target.",
-      "hint": "Refill the high-ICP pool with 8 verified leads or unblock existing website/social leads before the next run.",
+      "description": "Add or unblock 10 verified high-ICP leads to reach the daily 100 target.",
+      "hint": "Refill the high-ICP pool with 10 verified leads or unblock existing website/social leads before the next run.",
       "target": 100,
-      "potentialPool": 92,
-      "refillNeeded": 8
+      "potentialPool": 90,
+      "refillNeeded": 10
+    },
+    {
+      "reason": "failed_open",
+      "action": "Verify profile accessibility",
+      "description": "Open the official profile manually or switch to another verified channel before retrying.",
+      "hint": "Verify the official profile opens and exposes a safe message composer, or switch to another verified channel."
     }
   ],
   "systemRefresh": {
@@ -1559,12 +1521,12 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     "stderr": "",
     "error": "",
     "visibility": {
-      "updatedAt": "2026-08-14T06:42:44.328Z",
+      "updatedAt": "2026-08-14T06:51:30.460Z",
       "source": "main-refreshDailyAutomationArtifacts",
       "runDate": "2026-08-14",
-      "artifactGeneratedAt": "2026-08-14T06:42:41.865Z",
-      "executionGeneratedAt": "2026-08-14T06:36:05.319Z",
-      "githubSyncUpdatedAt": "2026-08-14T06:32:15.110Z",
+      "artifactGeneratedAt": "2026-08-14T06:51:27.825Z",
+      "executionGeneratedAt": "2026-08-14T06:42:45.216Z",
+      "githubSyncUpdatedAt": "2026-08-14T06:45:57.253Z",
       "counts": {
         "dailyQueue": 94,
         "googleDiscovered": 94,
@@ -1632,7 +1594,7 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "ALIBABA_SMTP_SECURITY_PASSWORD"
     ]
   },
-  "ledgerReconciliationCount": 0,
+  "ledgerReconciliationCount": 3,
   "externalEvidenceReconciliationCount": 0,
-  "completedAt": "2026-08-14T06:42:45.216Z"
+  "completedAt": "2026-08-14T06:51:31.417Z"
 };

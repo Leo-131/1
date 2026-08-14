@@ -21117,5 +21117,22 @@ window.AUTONOMOUS_OUTREACH_RESULTS = [
     "messageId": "",
     "sentFolder": "",
     "sentUid": null
+  },
+  {
+    "task_id": "google-customer-palisade-trading-website-contact",
+    "company": "Palisade Trading",
+    "approval_version": 1,
+    "status": "failed_open",
+    "agent": "codex-chrome-cdp",
+    "browserTransportUsed": "cdp",
+    "timestamp": "2026-08-14T06:51:27.496Z",
+    "target_url": "https://www.linkedin.com/company/palisade-trading/",
+    "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:linkedin;linkedin_draft_inserted_explicit_send_control_not_found;no_irreversible_action_performed;linkedin_draft_inserted_verified;contact_path_strategy_v2",
+    "draft": "Hi Palisade Trading team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a retail/category buyer, the strongest fit is assortment fit, new SKU pipeline, price-tier coverage, and proven consumer demand; your Midwestern United States outdoor, apparel and footwear sales agency focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the category buyer or vendor-review owner for a short intro video meeting?",
+    "subject": "",
+    "recipientEmail": "",
+    "messageId": "",
+    "sentFolder": "",
+    "sentUid": null
   }
 ];

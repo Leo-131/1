@@ -896,5 +896,28 @@
     ],
     "externalVerificationStatus": "official_supplier_form_verified",
     "verifiedAt": "2026-08-14T06:38:00.000Z"
+  },
+  {
+    "company": "Palisade Trading",
+    "country": "United States",
+    "url": "https://www.palisadetrading.com/",
+    "contactUrl": "https://www.palisadetrading.com/",
+    "instagramUrl": "https://www.instagram.com/palisadetrading",
+    "linkedinUrl": "https://www.linkedin.com/company/palisade-trading/",
+    "officialSocialProfileVerified": true,
+    "segment": "Midwestern United States outdoor, apparel and footwear sales agency",
+    "customerType": "sales_agency",
+    "fitScore": 96,
+    "background": "Minnetonka-based independent sales agency representing outdoor, footwear and apparel brands and supporting specialty retailers through account management and field support.",
+    "buyerPersona": "Agency principal or brand partnership owner.",
+    "evidenceUrl": "https://www.palisadetrading.com/",
+    "dataSources": [
+      "official agency homepage",
+      "official website-linked Instagram",
+      "official website-linked LinkedIn",
+      "official brand portfolio"
+    ],
+    "externalVerificationStatus": "official_supplier_route_verified",
+    "verifiedAt": "2026-08-14T06:50:00.000Z"
   }
 ]
