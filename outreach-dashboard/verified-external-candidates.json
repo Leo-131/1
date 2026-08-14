@@ -996,6 +996,30 @@
     "verifiedAt": "2026-08-14T07:36:00.000Z"
   },
   {
+    "company": "Pacific Coast Sports Marketing",
+    "country": "United States",
+    "url": "https://www.pacificcoastsportsmkt.com/",
+    "contactUrl": "https://www.pacificcoastsportsmkt.com/contact-us.html",
+    "publicEmail": "peter@pacificcoastsportsmkt.com",
+    "contactEmail": "peter@pacificcoastsportsmkt.com",
+    "publicEmailStatus": "Official company-domain email published in the footer of the agency's first-party partnership contact page.",
+    "emailVerificationStatus": "official_public_business_email",
+    "emailEvidence": "official_agency_partnership_contact_page",
+    "segment": "Southern California sports and outdoor brand sales agency",
+    "customerType": "sales_agency",
+    "fitScore": 95,
+    "background": "Pacific Coast Sports Marketing invites collaborative brand partnerships and represents manufacturers through Southern California retail and sports channels.",
+    "buyerPersona": "Agency principal responsible for evaluating new brand partnerships.",
+    "evidenceUrl": "https://www.pacificcoastsportsmkt.com/contact-us.html",
+    "dataSources": [
+      "official agency website",
+      "official partnership contact page",
+      "official company-domain email"
+    ],
+    "externalVerificationStatus": "official_supplier_email_verified",
+    "verifiedAt": "2026-08-14T08:10:00.000Z"
+  },
+  {
     "company": "Sespe Group",
     "country": "United States",
     "url": "https://www.sespegroup.com/",

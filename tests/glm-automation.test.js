@@ -1529,6 +1529,13 @@ test('first-party reserve promotes Mountain Source social, Waypoint form, and Se
   assert.equal(sespe.externalVerificationStatus, 'official_supplier_form_verified');
 });
 
+test('first-party reserve promotes Pacific Coast Sports Marketing official partnership email', () => {
+  const pacificCoast = verifiedExternalCandidates.find(item => item.company === 'Pacific Coast Sports Marketing');
+  assert.equal(pacificCoast.contactEmail, 'peter@pacificcoastsportsmkt.com');
+  assert.equal(pacificCoast.evidenceUrl, 'https://www.pacificcoastsportsmkt.com/contact-us.html');
+  assert.equal(pacificCoast.externalVerificationStatus, 'official_supplier_email_verified');
+});
+
 test('email UI execution is hard-limited to Alibaba Mail and rejects alternate clients', () => {
   assert.ok(mainSource.includes("process.env.OUTREACH_EMAIL_UI_PROVIDER || 'alibaba_webmail'"));
   assert.ok(mainSource.includes("requestedEmailUiProvider !== 'alibaba_webmail'"));
