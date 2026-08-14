@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-14T07:08:19.610Z",
+  "generatedAt": "2026-08-14T07:12:49.066Z",
   "companies": [
     {
       "companyId": "company_998f420e13854894",
@@ -786,7 +786,7 @@
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://revassa.com.mx/",
-          "checkedAt": "2026-08-14T06:40:34.222Z"
+          "checkedAt": "2026-08-14T07:12:34.933Z"
         },
         {
           "channel": "facebook",
@@ -796,7 +796,7 @@
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://revassa.com.mx/",
-          "checkedAt": "2026-08-14T06:40:34.222Z"
+          "checkedAt": "2026-08-14T07:12:34.933Z"
         },
         {
           "channel": "facebook",
@@ -806,7 +806,7 @@
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://revassa.com.mx/",
-          "checkedAt": "2026-08-14T06:40:34.222Z"
+          "checkedAt": "2026-08-14T07:12:34.933Z"
         },
         {
           "channel": "instagram",
@@ -816,7 +816,7 @@
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://revassa.com.mx/",
-          "checkedAt": "2026-08-14T06:40:34.222Z"
+          "checkedAt": "2026-08-14T07:12:34.933Z"
         },
         {
           "channel": "website_form",
@@ -1069,100 +1069,6 @@
           "timestamp": "2026-08-14T02:34:06.853Z",
           "channel": "instagram",
           "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:1;contact_path_strategy_v2"
-        }
-      ]
-    },
-    {
-      "companyId": "company_b0d12715f374b5ef",
-      "company": "Pro Line Sports",
-      "keys": [
-        "prolinesports",
-        "prolinesportsca"
-      ],
-      "domains": [
-        "proline-sports.ca"
-      ],
-      "channels": [
-        "email",
-        "instagram",
-        "facebook",
-        "linkedin",
-        "website_form"
-      ],
-      "evidence": [
-        {
-          "channel": "email",
-          "score": 100,
-          "verified": true,
-          "reasons": [
-            "official_business_route"
-          ],
-          "evidenceUrl": "https://www.proline-sports.ca/",
-          "checkedAt": ""
-        },
-        {
-          "channel": "email",
-          "score": 100,
-          "verified": true,
-          "reasons": [
-            "official_business_route"
-          ],
-          "evidenceUrl": "https://www.proline-sports.ca/",
-          "checkedAt": ""
-        },
-        {
-          "channel": "instagram",
-          "score": 100,
-          "verified": true,
-          "reasons": [
-            "official_business_route"
-          ],
-          "evidenceUrl": "https://www.proline-sports.ca/",
-          "checkedAt": "2026-08-13T08:21:33.579Z"
-        },
-        {
-          "channel": "facebook",
-          "score": 100,
-          "verified": true,
-          "reasons": [
-            "official_business_route"
-          ],
-          "evidenceUrl": "https://www.proline-sports.ca/",
-          "checkedAt": "2026-08-13T08:21:33.579Z"
-        },
-        {
-          "channel": "email",
-          "score": 100,
-          "verified": true,
-          "reasons": [
-            "official_business_route"
-          ],
-          "evidenceUrl": "https://www.proline-sports.ca/",
-          "checkedAt": ""
-        },
-        {
-          "channel": "linkedin",
-          "score": 100,
-          "verified": true,
-          "reasons": [
-            "official_business_route"
-          ],
-          "evidenceUrl": "https://www.proline-sports.ca/",
-          "checkedAt": "2026-08-13T08:21:33.579Z"
-        }
-      ],
-      "history": [
-        {
-          "status": "failed_open",
-          "timestamp": "2026-08-13T08:11:05.421Z",
-          "channel": "website_form",
-          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:linkedin;email_sender_delivery_disabled;sender_identity_dsn_observed;no_send_performed;contact_path_strategy_v2"
-        },
-        {
-          "status": "failed_open",
-          "timestamp": "2026-08-13T09:11:26.220Z",
-          "channel": "website_form",
-          "evidence": "customer_execution_timeout:90000;queue_continued_to_next_customer"
         }
       ]
     },
@@ -1940,7 +1846,7 @@
             "official_business_route"
           ],
           "evidenceUrl": "https://www.nwogco.com/",
-          "checkedAt": "2026-08-14T06:40:44.074Z"
+          "checkedAt": "2026-08-14T07:12:40.893Z"
         },
         {
           "channel": "email",
@@ -3174,7 +3080,7 @@
           "reasons": [
             "official_business_route"
           ],
-          "evidenceUrl": "https://www.canadaoutdoors.com/pages/customer-service",
+          "evidenceUrl": "https://www.canadaoutdoors.com/",
           "checkedAt": ""
         },
         {
@@ -3184,7 +3090,7 @@
           "reasons": [
             "official_business_route"
           ],
-          "evidenceUrl": "https://www.canadaoutdoors.com/pages/customer-service",
+          "evidenceUrl": "https://www.canadaoutdoors.com/",
           "checkedAt": ""
         },
         {
@@ -3194,7 +3100,7 @@
           "reasons": [
             "official_business_route"
           ],
-          "evidenceUrl": "https://www.canadaoutdoors.com/pages/customer-service",
+          "evidenceUrl": "https://www.canadaoutdoors.com/",
           "checkedAt": ""
         },
         {
@@ -3368,7 +3274,7 @@
             "official_business_route"
           ],
           "evidenceUrl": "https://www.bbqfans.com/become-a-supplier/",
-          "checkedAt": "2026-08-14T06:40:31.802Z"
+          "checkedAt": "2026-08-14T07:12:40.443Z"
         },
         {
           "channel": "instagram",
@@ -3378,7 +3284,7 @@
             "official_business_route"
           ],
           "evidenceUrl": "https://www.bbqfans.com/become-a-supplier/",
-          "checkedAt": "2026-08-14T06:40:31.802Z"
+          "checkedAt": "2026-08-14T07:12:40.443Z"
         },
         {
           "channel": "research",
@@ -3485,7 +3391,7 @@
             "official_business_route"
           ],
           "evidenceUrl": "https://rtic.mx/products/hilera-rtic-45-hard-cooler",
-          "checkedAt": "2026-08-14T06:40:40.719Z"
+          "checkedAt": "2026-08-14T07:12:39.293Z"
         },
         {
           "channel": "instagram",
@@ -3495,7 +3401,7 @@
             "official_business_route"
           ],
           "evidenceUrl": "https://rtic.mx/products/hilera-rtic-45-hard-cooler",
-          "checkedAt": "2026-08-14T06:40:40.719Z"
+          "checkedAt": "2026-08-14T07:12:39.293Z"
         }
       ],
       "history": [
@@ -5411,7 +5317,7 @@
             "official_business_route"
           ],
           "evidenceUrl": "https://www.kellybrandmanagement.com/who-we-serve/",
-          "checkedAt": "2026-08-14T06:40:24.794Z"
+          "checkedAt": "2026-08-14T07:12:24.844Z"
         },
         {
           "channel": "linkedin",
@@ -5421,7 +5327,7 @@
             "official_business_route"
           ],
           "evidenceUrl": "https://www.kellybrandmanagement.com/who-we-serve/",
-          "checkedAt": "2026-08-14T06:40:24.794Z"
+          "checkedAt": "2026-08-14T07:12:24.844Z"
         },
         {
           "channel": "instagram",
@@ -5431,7 +5337,7 @@
             "official_business_route"
           ],
           "evidenceUrl": "https://www.kellybrandmanagement.com/who-we-serve/",
-          "checkedAt": "2026-08-14T06:40:24.794Z"
+          "checkedAt": "2026-08-14T07:12:24.844Z"
         }
       ],
       "history": [
@@ -5580,7 +5486,7 @@
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://outdoorindustrygroup.com/contact-us/",
-          "checkedAt": "2026-08-13T10:06:40.498Z"
+          "checkedAt": "2026-08-14T07:12:23.946Z"
         },
         {
           "channel": "instagram",
@@ -5590,7 +5496,17 @@
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://outdoorindustrygroup.com/contact-us/",
-          "checkedAt": "2026-08-13T10:06:40.498Z"
+          "checkedAt": "2026-08-14T07:12:23.946Z"
+        },
+        {
+          "channel": "website_form",
+          "score": 80,
+          "verified": false,
+          "reasons": [
+            "first_party_evidence"
+          ],
+          "evidenceUrl": "https://outdoorindustrygroup.com/contact-us/",
+          "checkedAt": ""
         },
         {
           "channel": "website_form",
@@ -5653,7 +5569,7 @@
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://perpetualmotionnw.com/",
-          "checkedAt": "2026-08-14T07:07:59.291Z"
+          "checkedAt": "2026-08-14T07:12:16.197Z"
         },
         {
           "channel": "facebook",
@@ -5663,7 +5579,7 @@
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://perpetualmotionnw.com/",
-          "checkedAt": "2026-08-14T07:07:59.291Z"
+          "checkedAt": "2026-08-14T07:12:16.197Z"
         },
         {
           "channel": "linkedin",
@@ -5673,7 +5589,7 @@
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://perpetualmotionnw.com/",
-          "checkedAt": "2026-08-14T07:07:59.291Z"
+          "checkedAt": "2026-08-14T07:12:16.197Z"
         },
         {
           "channel": "website_form",
@@ -8453,7 +8369,7 @@
             "official_business_route"
           ],
           "evidenceUrl": "https://help.cabelas.com/company-information-ff566349/how-can-i-sell-my-product-through-cabelas-cf904a21",
-          "checkedAt": "2026-08-14T06:40:48.182Z"
+          "checkedAt": "2026-08-14T07:12:45.408Z"
         },
         {
           "channel": "facebook",
@@ -8463,7 +8379,7 @@
             "official_business_route"
           ],
           "evidenceUrl": "https://help.cabelas.com/company-information-ff566349/how-can-i-sell-my-product-through-cabelas-cf904a21",
-          "checkedAt": "2026-08-14T06:40:48.182Z"
+          "checkedAt": "2026-08-14T07:12:45.408Z"
         },
         {
           "channel": "email",
@@ -8472,7 +8388,7 @@
           "reasons": [
             "official_business_route"
           ],
-          "evidenceUrl": "https://www.cabelas.com/",
+          "evidenceUrl": "https://help.cabelas.com/company-information-ff566349/how-can-i-sell-my-product-through-cabelas-cf904a21",
           "checkedAt": ""
         },
         {
@@ -8594,7 +8510,7 @@
             "official_business_route"
           ],
           "evidenceUrl": "https://13west.com/about/",
-          "checkedAt": "2026-08-14T06:40:46.486Z"
+          "checkedAt": "2026-08-14T07:12:43.116Z"
         },
         {
           "channel": "facebook",
@@ -8604,7 +8520,7 @@
             "official_business_route"
           ],
           "evidenceUrl": "https://13west.com/about/",
-          "checkedAt": "2026-08-14T06:40:46.486Z"
+          "checkedAt": "2026-08-14T07:12:43.116Z"
         },
         {
           "channel": "email",
@@ -8624,7 +8540,7 @@
             "official_business_route"
           ],
           "evidenceUrl": "https://13west.com/about/",
-          "checkedAt": "2026-08-14T06:40:46.486Z"
+          "checkedAt": "2026-08-14T07:12:43.116Z"
         },
         {
           "channel": "research",
@@ -8683,7 +8599,7 @@
             "official_business_route"
           ],
           "evidenceUrl": "https://www.synergyreps.net/schedule",
-          "checkedAt": "2026-08-14T06:40:44.337Z"
+          "checkedAt": "2026-08-14T07:12:43.823Z"
         },
         {
           "channel": "facebook",
@@ -8693,7 +8609,7 @@
             "official_business_route"
           ],
           "evidenceUrl": "https://www.synergyreps.net/schedule",
-          "checkedAt": "2026-08-14T06:40:44.337Z"
+          "checkedAt": "2026-08-14T07:12:43.823Z"
         },
         {
           "channel": "email",
@@ -8713,7 +8629,7 @@
             "official_business_route"
           ],
           "evidenceUrl": "https://www.synergyreps.net/schedule",
-          "checkedAt": "2026-08-14T06:40:44.337Z"
+          "checkedAt": "2026-08-14T07:12:43.823Z"
         },
         {
           "channel": "research",
@@ -8879,7 +8795,7 @@
             "official_business_route"
           ],
           "evidenceUrl": "https://www.outtech-online.com/",
-          "checkedAt": "2026-08-14T06:40:47.002Z"
+          "checkedAt": "2026-08-14T07:12:43.636Z"
         },
         {
           "channel": "instagram",
@@ -8889,7 +8805,7 @@
             "official_business_route"
           ],
           "evidenceUrl": "https://www.outtech-online.com/",
-          "checkedAt": "2026-08-14T06:40:47.002Z"
+          "checkedAt": "2026-08-14T07:12:43.636Z"
         }
       ],
       "history": [
@@ -8934,7 +8850,7 @@
             "official_business_route"
           ],
           "evidenceUrl": "https://www.summitsalesnw.com/",
-          "checkedAt": "2026-08-14T06:40:47.134Z"
+          "checkedAt": "2026-08-14T07:12:43.793Z"
         }
       ],
       "history": [
@@ -9782,6 +9698,86 @@
           "timestamp": "2026-07-10T04:03:24.818Z",
           "channel": "instagram",
           "evidence": "instagram_message_sent_confirmed_composer_cleared;follow_not_available;instagram_post_opened;post_liked;comment_submitted"
+        }
+      ]
+    },
+    {
+      "companyId": "company_b0d12715f374b5ef",
+      "company": "Pro Line Sports",
+      "keys": [
+        "prolinesports",
+        "prolinesportsca"
+      ],
+      "domains": [
+        "proline-sports.ca"
+      ],
+      "channels": [
+        "instagram",
+        "facebook",
+        "email",
+        "linkedin",
+        "website_form"
+      ],
+      "evidence": [
+        {
+          "channel": "instagram",
+          "score": 100,
+          "verified": true,
+          "reasons": [
+            "official_business_route"
+          ],
+          "evidenceUrl": "https://www.proline-sports.ca/",
+          "checkedAt": "2026-08-13T08:21:33.579Z"
+        },
+        {
+          "channel": "facebook",
+          "score": 100,
+          "verified": true,
+          "reasons": [
+            "official_business_route"
+          ],
+          "evidenceUrl": "https://www.proline-sports.ca/",
+          "checkedAt": "2026-08-13T08:21:33.579Z"
+        },
+        {
+          "channel": "email",
+          "score": 100,
+          "verified": true,
+          "reasons": [
+            "official_business_route"
+          ],
+          "evidenceUrl": "https://www.proline-sports.ca/",
+          "checkedAt": ""
+        },
+        {
+          "channel": "linkedin",
+          "score": 100,
+          "verified": true,
+          "reasons": [
+            "official_business_route"
+          ],
+          "evidenceUrl": "https://www.proline-sports.ca/",
+          "checkedAt": "2026-08-13T08:21:33.579Z"
+        }
+      ],
+      "history": [
+        {
+          "status": "failed_open",
+          "timestamp": "2026-08-13T08:11:05.421Z",
+          "channel": "website_form",
+          "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:linkedin;email_sender_delivery_disabled;sender_identity_dsn_observed;no_send_performed;contact_path_strategy_v2"
+        },
+        {
+          "status": "failed_open",
+          "timestamp": "2026-08-13T09:11:26.220Z",
+          "channel": "website_form",
+          "evidence": "customer_execution_timeout:90000;queue_continued_to_next_customer"
+        },
+        {
+          "status": "sent_confirmed",
+          "timestamp": "2026-08-14T07:09:47.642Z",
+          "channel": "email",
+          "evidence": "official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed"
         }
       ]
     },
@@ -11783,7 +11779,7 @@
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://www.parallel45sales.com/",
-          "checkedAt": "2026-08-14T07:07:49.998Z"
+          "checkedAt": "2026-08-14T07:12:01.449Z"
         },
         {
           "channel": "website_form",
@@ -19492,7 +19488,7 @@
           "reasons": [
             "official_business_route"
           ],
-          "evidenceUrl": "https://jhoutdoors.com/pages/faq",
+          "evidenceUrl": "https://jhoutdoors.com/",
           "checkedAt": ""
         },
         {
@@ -20170,7 +20166,7 @@
           "reasons": [
             "official_business_route"
           ],
-          "evidenceUrl": "https://www.avidmax.com/contact-us/",
+          "evidenceUrl": "https://www.avidmax.com/",
           "checkedAt": ""
         },
         {
@@ -20261,7 +20257,7 @@
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://www.gearwest.com/",
-          "checkedAt": "2026-08-14T06:34:34.613Z"
+          "checkedAt": "2026-08-14T07:08:09.124Z"
         },
         {
           "channel": "instagram",
@@ -20271,7 +20267,7 @@
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://www.gearwest.com/",
-          "checkedAt": "2026-08-14T06:34:34.613Z"
+          "checkedAt": "2026-08-14T07:08:09.124Z"
         },
         {
           "channel": "website_form",
@@ -20592,23 +20588,23 @@
           "checkedAt": "2026-08-14T07:08:10.688Z"
         },
         {
-          "channel": "email",
-          "score": 100,
-          "verified": true,
-          "reasons": [
-            "official_business_route"
-          ],
-          "evidenceUrl": "https://www.campman.com/",
-          "checkedAt": ""
-        },
-        {
           "channel": "facebook",
           "score": 0,
           "verified": false,
           "reasons": [
             "unverified_external_evidence_rejected"
           ],
-          "evidenceUrl": "https://www.campman.com/",
+          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
+          "checkedAt": ""
+        },
+        {
+          "channel": "email",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
           "checkedAt": ""
         }
       ],
@@ -20651,23 +20647,13 @@
       ],
       "evidence": [
         {
-          "channel": "email",
-          "score": 100,
-          "verified": true,
-          "reasons": [
-            "official_business_route"
-          ],
-          "evidenceUrl": "https://mountaineer.com/privacy-policy/",
-          "checkedAt": ""
-        },
-        {
           "channel": "instagram",
           "score": 0,
           "verified": false,
           "reasons": [
             "unverified_external_evidence_rejected"
           ],
-          "evidenceUrl": "https://mountaineer.com/privacy-policy/",
+          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
           "checkedAt": ""
         },
         {
@@ -20677,7 +20663,17 @@
           "reasons": [
             "unverified_external_evidence_rejected"
           ],
-          "evidenceUrl": "https://mountaineer.com/privacy-policy/",
+          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
+          "checkedAt": ""
+        },
+        {
+          "channel": "email",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
           "checkedAt": ""
         },
         {
@@ -20778,7 +20774,7 @@
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://www.sierra.com/",
-          "checkedAt": "2026-08-14T06:34:37.022Z"
+          "checkedAt": "2026-08-14T07:08:10.854Z"
         },
         {
           "channel": "facebook",
@@ -20828,23 +20824,13 @@
       ],
       "evidence": [
         {
-          "channel": "email",
-          "score": 100,
-          "verified": true,
-          "reasons": [
-            "official_business_route"
-          ],
-          "evidenceUrl": "https://www.outdoorplay.com/",
-          "checkedAt": ""
-        },
-        {
           "channel": "instagram",
           "score": 0,
           "verified": false,
           "reasons": [
             "unverified_external_evidence_rejected"
           ],
-          "evidenceUrl": "https://www.outdoorplay.com/",
+          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
           "checkedAt": ""
         },
         {
@@ -20854,7 +20840,17 @@
           "reasons": [
             "unverified_external_evidence_rejected"
           ],
-          "evidenceUrl": "https://www.outdoorplay.com/",
+          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
+          "checkedAt": ""
+        },
+        {
+          "channel": "email",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
           "checkedAt": ""
         }
       ],
@@ -21012,7 +21008,7 @@
             "official_business_route"
           ],
           "evidenceUrl": "https://www.campmor.com/",
-          "checkedAt": "2026-08-14T06:34:37.190Z"
+          "checkedAt": "2026-08-14T07:08:10.960Z"
         },
         {
           "channel": "facebook",
@@ -21022,7 +21018,7 @@
             "official_business_route"
           ],
           "evidenceUrl": "https://www.campmor.com/",
-          "checkedAt": "2026-08-14T06:34:37.190Z"
+          "checkedAt": "2026-08-14T07:08:10.960Z"
         },
         {
           "channel": "email",
@@ -21068,7 +21064,7 @@
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://ramseyoutdoor.com/",
-          "checkedAt": "2026-08-14T07:07:52.304Z"
+          "checkedAt": "2026-08-14T07:12:06.388Z"
         },
         {
           "channel": "facebook",
@@ -21078,7 +21074,7 @@
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://ramseyoutdoor.com/",
-          "checkedAt": "2026-08-14T07:07:52.304Z"
+          "checkedAt": "2026-08-14T07:12:06.388Z"
         },
         {
           "channel": "website_form",
@@ -21183,23 +21179,23 @@
           "checkedAt": "2026-08-14T07:08:12.572Z"
         },
         {
-          "channel": "website_form",
-          "score": 80,
-          "verified": false,
-          "reasons": [
-            "first_party_evidence"
-          ],
-          "evidenceUrl": "https://www.riversportsoutfitters.com/",
-          "checkedAt": ""
-        },
-        {
           "channel": "instagram",
           "score": 0,
           "verified": false,
           "reasons": [
             "unverified_external_evidence_rejected"
           ],
-          "evidenceUrl": "https://www.riversportsoutfitters.com/",
+          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
+          "checkedAt": ""
+        },
+        {
+          "channel": "website_form",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
           "checkedAt": ""
         }
       ],
@@ -21329,23 +21325,23 @@
           "checkedAt": "2026-08-14T07:08:12.391Z"
         },
         {
-          "channel": "website_form",
-          "score": 80,
-          "verified": false,
-          "reasons": [
-            "first_party_evidence"
-          ],
-          "evidenceUrl": "https://www.halfmoonoutfitters.com/",
-          "checkedAt": ""
-        },
-        {
           "channel": "facebook",
           "score": 0,
           "verified": false,
           "reasons": [
             "unverified_external_evidence_rejected"
           ],
-          "evidenceUrl": "https://www.halfmoonoutfitters.com/",
+          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
+          "checkedAt": ""
+        },
+        {
+          "channel": "website_form",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
           "checkedAt": ""
         }
       ],
@@ -21463,7 +21459,7 @@
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://jaxgoods.com/",
-          "checkedAt": "2026-08-14T07:07:55.220Z"
+          "checkedAt": "2026-08-14T07:12:12.396Z"
         },
         {
           "channel": "instagram",
@@ -21671,12 +21667,12 @@
         },
         {
           "channel": "website_form",
-          "score": 80,
+          "score": 0,
           "verified": false,
           "reasons": [
-            "first_party_evidence"
+            "unverified_external_evidence_rejected"
           ],
-          "evidenceUrl": "https://www.christysports.com/",
+          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
           "checkedAt": ""
         }
       ],
@@ -21732,7 +21728,7 @@
             "official_business_route"
           ],
           "evidenceUrl": "https://paragonsports.com/",
-          "checkedAt": "2026-08-14T07:07:55.899Z"
+          "checkedAt": "2026-08-14T07:12:12.488Z"
         },
         {
           "channel": "facebook",
@@ -21742,7 +21738,7 @@
             "official_business_route"
           ],
           "evidenceUrl": "https://paragonsports.com/",
-          "checkedAt": "2026-08-14T07:07:55.899Z"
+          "checkedAt": "2026-08-14T07:12:12.488Z"
         },
         {
           "channel": "email",
@@ -22636,23 +22632,23 @@
           "checkedAt": "2026-08-14T07:08:13.912Z"
         },
         {
-          "channel": "email",
-          "score": 100,
-          "verified": true,
-          "reasons": [
-            "official_business_route"
-          ],
-          "evidenceUrl": "https://72hours.ca/",
-          "checkedAt": ""
-        },
-        {
           "channel": "instagram",
           "score": 0,
           "verified": false,
           "reasons": [
             "unverified_external_evidence_rejected"
           ],
-          "evidenceUrl": "https://72hours.ca/",
+          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
+          "checkedAt": ""
+        },
+        {
+          "channel": "email",
+          "score": 0,
+          "verified": false,
+          "reasons": [
+            "unverified_external_evidence_rejected"
+          ],
+          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
           "checkedAt": ""
         }
       ],
@@ -24570,7 +24566,7 @@
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://packratoc.com/",
-          "checkedAt": "2026-08-14T07:07:58.390Z"
+          "checkedAt": "2026-08-14T07:12:13.466Z"
         },
         {
           "channel": "facebook",
@@ -25388,7 +25384,7 @@
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://www.carawayandco.com/",
-          "checkedAt": "2026-08-14T04:05:35.890Z"
+          "checkedAt": "2026-08-14T07:12:15.148Z"
         },
         {
           "channel": "instagram",
@@ -25398,7 +25394,7 @@
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://www.carawayandco.com/",
-          "checkedAt": "2026-08-14T04:05:35.890Z"
+          "checkedAt": "2026-08-14T07:12:15.148Z"
         },
         {
           "channel": "website_form",
@@ -25540,7 +25536,7 @@
             "official_business_route"
           ],
           "evidenceUrl": "https://www.actionbrio.com/about",
-          "checkedAt": "2026-08-14T06:40:27.125Z"
+          "checkedAt": "2026-08-14T07:12:26.902Z"
         },
         {
           "channel": "linkedin",
@@ -25550,7 +25546,7 @@
             "official_business_route"
           ],
           "evidenceUrl": "https://www.actionbrio.com/about",
-          "checkedAt": "2026-08-14T06:40:27.125Z"
+          "checkedAt": "2026-08-14T07:12:26.902Z"
         },
         {
           "channel": "facebook",
@@ -25560,7 +25556,7 @@
             "official_business_route"
           ],
           "evidenceUrl": "https://www.actionbrio.com/about",
-          "checkedAt": "2026-08-14T06:40:27.125Z"
+          "checkedAt": "2026-08-14T07:12:26.902Z"
         }
       ],
       "history": [
@@ -25697,7 +25693,7 @@
             "official_business_route"
           ],
           "evidenceUrl": "https://mawsons.ca/",
-          "checkedAt": "2026-08-14T06:40:27.063Z"
+          "checkedAt": "2026-08-14T07:12:25.033Z"
         },
         {
           "channel": "instagram",
@@ -25707,7 +25703,7 @@
             "official_business_route"
           ],
           "evidenceUrl": "https://mawsons.ca/",
-          "checkedAt": "2026-08-14T06:40:27.063Z"
+          "checkedAt": "2026-08-14T07:12:25.033Z"
         },
         {
           "channel": "email",
@@ -25764,7 +25760,7 @@
             "official_business_route"
           ],
           "evidenceUrl": "https://vamosoutdoors.ca/",
-          "checkedAt": "2026-08-14T06:40:27.331Z"
+          "checkedAt": "2026-08-14T07:12:24.693Z"
         },
         {
           "channel": "instagram",
@@ -25774,7 +25770,7 @@
             "official_business_route"
           ],
           "evidenceUrl": "https://vamosoutdoors.ca/",
-          "checkedAt": "2026-08-14T06:40:27.331Z"
+          "checkedAt": "2026-08-14T07:12:24.693Z"
         },
         {
           "channel": "email",
@@ -25830,7 +25826,7 @@
             "official_business_route"
           ],
           "evidenceUrl": "https://www.akasportsgroup.com/",
-          "checkedAt": "2026-08-14T06:40:26.464Z"
+          "checkedAt": "2026-08-14T07:12:27.501Z"
         },
         {
           "channel": "linkedin",
@@ -25840,7 +25836,7 @@
             "official_business_route"
           ],
           "evidenceUrl": "https://www.akasportsgroup.com/",
-          "checkedAt": "2026-08-14T06:40:26.464Z"
+          "checkedAt": "2026-08-14T07:12:27.501Z"
         }
       ],
       "history": [
@@ -25885,7 +25881,7 @@
             "official_business_route"
           ],
           "evidenceUrl": "https://www.riseandshinesales.ca/",
-          "checkedAt": "2026-08-14T06:40:27.655Z"
+          "checkedAt": "2026-08-14T07:12:27.377Z"
         }
       ],
       "history": [
@@ -25932,7 +25928,7 @@
             "official_business_route"
           ],
           "evidenceUrl": "https://www.lost-wave.com/about",
-          "checkedAt": "2026-08-14T06:40:29.023Z"
+          "checkedAt": "2026-08-14T07:12:27.526Z"
         },
         {
           "channel": "instagram",
@@ -25942,7 +25938,7 @@
             "official_business_route"
           ],
           "evidenceUrl": "https://www.lost-wave.com/about",
-          "checkedAt": "2026-08-14T06:40:29.023Z"
+          "checkedAt": "2026-08-14T07:12:27.526Z"
         },
         {
           "channel": "email",
@@ -26034,7 +26030,7 @@
           "reasons": [
             "official_business_route"
           ],
-          "evidenceUrl": "https://spryactive.ca/",
+          "evidenceUrl": "https://spryactive.ca/pages/about",
           "checkedAt": ""
         },
         {
@@ -26045,7 +26041,7 @@
             "official_business_route"
           ],
           "evidenceUrl": "https://spryactive.ca/pages/about",
-          "checkedAt": "2026-08-14T06:40:28.179Z"
+          "checkedAt": "2026-08-14T07:12:28.490Z"
         },
         {
           "channel": "instagram",
@@ -26055,7 +26051,7 @@
             "official_business_route"
           ],
           "evidenceUrl": "https://spryactive.ca/pages/about",
-          "checkedAt": "2026-08-14T06:40:28.179Z"
+          "checkedAt": "2026-08-14T07:12:28.490Z"
         },
         {
           "channel": "linkedin",
@@ -26065,7 +26061,7 @@
             "official_business_route"
           ],
           "evidenceUrl": "https://spryactive.ca/pages/about",
-          "checkedAt": "2026-08-14T06:40:28.179Z"
+          "checkedAt": "2026-08-14T07:12:28.490Z"
         },
         {
           "channel": "email",
@@ -26196,7 +26192,7 @@
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://frontpointsales.com/",
-          "checkedAt": "2026-08-14T06:40:30.026Z"
+          "checkedAt": "2026-08-14T07:12:28.555Z"
         },
         {
           "channel": "instagram",
@@ -26206,7 +26202,7 @@
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://frontpointsales.com/",
-          "checkedAt": "2026-08-14T06:40:30.026Z"
+          "checkedAt": "2026-08-14T07:12:28.555Z"
         },
         {
           "channel": "website_form",
@@ -26355,7 +26351,7 @@
           "reasons": [
             "official_business_route"
           ],
-          "evidenceUrl": "https://oldschooloutdoor.com/",
+          "evidenceUrl": "https://oldschooloutdoor.com/pages/contact",
           "checkedAt": ""
         },
         {
@@ -26366,7 +26362,7 @@
             "official_business_route"
           ],
           "evidenceUrl": "https://oldschooloutdoor.com/pages/contact",
-          "checkedAt": "2026-08-14T06:40:30.182Z"
+          "checkedAt": "2026-08-14T07:12:29.315Z"
         },
         {
           "channel": "facebook",
@@ -26376,7 +26372,7 @@
             "official_business_route"
           ],
           "evidenceUrl": "https://oldschooloutdoor.com/pages/contact",
-          "checkedAt": "2026-08-14T06:40:30.182Z"
+          "checkedAt": "2026-08-14T07:12:29.315Z"
         },
         {
           "channel": "email",
@@ -26685,7 +26681,7 @@
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://www.basecamp-outfitters.com/",
-          "checkedAt": "2026-08-14T06:40:44.394Z"
+          "checkedAt": "2026-08-14T07:12:41.300Z"
         },
         {
           "channel": "website_form",
@@ -26705,7 +26701,7 @@
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://www.basecamp-outfitters.com/",
-          "checkedAt": "2026-08-14T06:40:44.394Z"
+          "checkedAt": "2026-08-14T07:12:41.300Z"
         }
       ],
       "history": [
@@ -31071,6 +31067,16 @@
       "evidence": "instagram_message_sent_confirmed_composer_cleared;follow_not_available;instagram_post_opened;post_liked;comment_submitted"
     },
     {
+      "companyId": "company_b0d12715f374b5ef",
+      "company": "Pro Line Sports",
+      "permanent": true,
+      "crossChannel": true,
+      "reason": "previous_customer_development_no_repeat",
+      "sourceStatus": "sent_confirmed",
+      "sourceTimestamp": "2026-08-14T07:09:47.642Z",
+      "evidence": "official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed"
+    },
+    {
       "companyId": "company_a3bd2778681d2633",
       "company": "Pacific Crest Trading",
       "permanent": true,
@@ -34758,16 +34764,6 @@
         "reason": "highest_priority_verified_channel"
       },
       {
-        "companyId": "company_b0d12715f374b5ef",
-        "company": "Pro Line Sports",
-        "action": "first_touch",
-        "channel": "email",
-        "evidenceScore": 100,
-        "evidenceUrl": "https://www.proline-sports.ca/",
-        "alternatives": [],
-        "reason": "highest_priority_verified_channel"
-      },
-      {
         "companyId": "company_a0433e3e0479c552",
         "company": "Gravel Agency",
         "action": "first_touch",
@@ -34854,6 +34850,16 @@
         "channel": "email",
         "evidenceScore": 100,
         "evidenceUrl": "https://www.outtheresocial.ca/services",
+        "alternatives": [],
+        "reason": "highest_priority_verified_channel"
+      },
+      {
+        "companyId": "company_ffed4c3fa3c81f40",
+        "company": "Punto Vertical Mexico",
+        "action": "first_touch",
+        "channel": "email",
+        "evidenceScore": 100,
+        "evidenceUrl": "https://www.puntovertical.com.mx/",
         "alternatives": [],
         "reason": "highest_priority_verified_channel"
       },
@@ -34970,7 +34976,7 @@
       },
       {
         "channel": "email",
-        "confirmed": 277,
+        "confirmed": 278,
         "replies": 0,
         "opportunities": 0,
         "replyRate": 0,
@@ -35019,20 +35025,20 @@
       {
         "dimension": "channel",
         "variant": "email",
-        "sampleSize": 277,
+        "sampleSize": 278,
         "observedReplyRate": 0,
         "recommendation": "use_as_bounded_allocation_signal"
       }
     ]
   },
   "ownerSummary": {
-    "generatedAt": "2026-08-14T07:08:19.610Z",
+    "generatedAt": "2026-08-14T07:12:49.066Z",
     "phase": "autonomous_sales_operating_system_v1",
     "kpis": {
       "companies": 518,
-      "permanentlySuppressed": 381,
+      "permanentlySuppressed": 382,
       "plannedActions": 25,
-      "verifiedEvidenceRoutes": 679
+      "verifiedEvidenceRoutes": 673
     },
     "decisions": [
       {
@@ -35203,7 +35209,7 @@
         },
         {
           "channel": "email",
-          "confirmed": 277,
+          "confirmed": 278,
           "replies": 0,
           "opportunities": 0,
           "replyRate": 0,
@@ -35252,7 +35258,7 @@
         {
           "dimension": "channel",
           "variant": "email",
-          "sampleSize": 277,
+          "sampleSize": 278,
           "observedReplyRate": 0,
           "recommendation": "use_as_bounded_allocation_signal"
         }
