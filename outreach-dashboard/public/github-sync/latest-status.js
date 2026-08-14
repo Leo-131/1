@@ -1,9 +1,10 @@
 window.GITHUB_SYNC_LATEST = {
-  "updatedAt": "2026-08-14T06:52:43.622Z",
-  "ok": true,
-  "pushed": true,
+  "updatedAt": "2026-08-14T06:58:12.993Z",
+  "ok": false,
+  "pushed": false,
   "branch": "vercel-main-sync",
-  "localCommit": "d0ba34485d25eb0dd75c17bda40215aa3b4ecf3e",
-  "remoteCommit": "d0ba34485d25eb0dd75c17bda40215aa3b4ecf3e",
-  "message": "sync: local outreach data 2026-08-14"
+  "localCommit": "15a55c2f64fb6970fb292582227861a0979291fc",
+  "remoteCommit": "4e79679ce8dd35c4e954672b52ba4cb3de298481",
+  "message": "sync: local outreach data 2026-08-14",
+  "error": "Command failed: git -c gc.auto=0 commit -m sync: github status 2026-08-14"
 };
