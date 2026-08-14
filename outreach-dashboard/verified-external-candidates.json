@@ -943,5 +943,56 @@
     ],
     "externalVerificationStatus": "official_supplier_email_verified",
     "verifiedAt": "2026-08-14T07:31:00.000Z"
+  },
+  {
+    "company": "Uhuru Mountain Collective",
+    "country": "United States",
+    "url": "https://www.weareuhuru.com/",
+    "contactUrl": "https://www.weareuhuru.com/",
+    "publicEmail": "mallory@uhurumountain.com",
+    "contactEmail": "mallory@uhurumountain.com",
+    "publicEmailStatus": "Brand-partnership email published by the agency on its official website.",
+    "emailVerificationStatus": "official_public_business_email",
+    "emailEvidence": "official_agency_contact_section",
+    "instagramUrl": "https://www.instagram.com/uhuru_mtn/",
+    "officialSocialProfileVerified": true,
+    "socialProfileEvidenceUrl": "https://www.weareuhuru.com/",
+    "segment": "United States mountain-sports sales, marketing and retailer relationship agency",
+    "customerType": "sales_agency",
+    "fitScore": 96,
+    "background": "US mountain-sports sales collective representing ski and outdoor brands through retailer relationships, community events, content and field marketing.",
+    "buyerPersona": "Founder and principal representative responsible for brand partnerships.",
+    "evidenceUrl": "https://www.weareuhuru.com/",
+    "dataSources": [
+      "official agency website",
+      "official brand-partnership email",
+      "official website-linked Instagram"
+    ],
+    "externalVerificationStatus": "official_supplier_email_verified",
+    "verifiedAt": "2026-08-14T07:36:00.000Z"
+  },
+  {
+    "company": "R2S Outdoors Agency",
+    "country": "Canada",
+    "url": "https://r2soutdoors.com/",
+    "contactUrl": "https://r2soutdoors.com/",
+    "publicEmail": "info@r2soutdoors.com",
+    "contactEmail": "info@r2soutdoors.com",
+    "publicEmailStatus": "Official company-domain email published beside the agency contact form.",
+    "emailVerificationStatus": "official_public_business_email",
+    "emailEvidence": "official_agency_contact_section",
+    "segment": "Eastern Canada outdoor, hunting and fishing brand representation agency",
+    "customerType": "sales_agency",
+    "fitScore": 94,
+    "background": "Bilingual Eastern Canada manufacturer representative providing outdoor-brand sales, marketing, distribution, translation and retailer field support.",
+    "buyerPersona": "Agency principal responsible for new manufacturer representation partnerships.",
+    "evidenceUrl": "https://r2soutdoors.com/",
+    "dataSources": [
+      "official agency website",
+      "official company-domain email",
+      "official partnership contact form"
+    ],
+    "externalVerificationStatus": "official_supplier_email_verified",
+    "verifiedAt": "2026-08-14T07:36:00.000Z"
   }
 ]

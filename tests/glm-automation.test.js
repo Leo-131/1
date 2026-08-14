@@ -1503,6 +1503,17 @@ test('first-party reserve includes Eastern Outdoor Sales national accounts route
   assert.equal(candidate.externalVerificationStatus, 'official_supplier_email_verified');
 });
 
+test('first-party reserve includes net-new Uhuru and R2S North America agency routes', () => {
+  const uhuru = verifiedExternalCandidates.find(item => item.company === 'Uhuru Mountain Collective');
+  const r2s = verifiedExternalCandidates.find(item => item.company === 'R2S Outdoors Agency');
+  assert.equal(uhuru.contactEmail, 'mallory@uhurumountain.com');
+  assert.equal(uhuru.instagramUrl, 'https://www.instagram.com/uhuru_mtn/');
+  assert.equal(uhuru.officialSocialProfileVerified, true);
+  assert.equal(r2s.contactEmail, 'info@r2soutdoors.com');
+  assert.equal(r2s.country, 'Canada');
+  assert.equal(r2s.externalVerificationStatus, 'official_supplier_email_verified');
+});
+
 test('email UI execution is hard-limited to Alibaba Mail and rejects alternate clients', () => {
   assert.ok(mainSource.includes("process.env.OUTREACH_EMAIL_UI_PROVIDER || 'alibaba_webmail'"));
   assert.ok(mainSource.includes("requestedEmailUiProvider !== 'alibaba_webmail'"));

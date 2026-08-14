@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-14T07:33:28.620Z",
+  "generatedAt": "2026-08-14T07:39:13.834Z",
   "phase": "pre-sync",
   "shanghaiDate": "2026-08-14",
   "policyVersion": "2026-07-30",
@@ -13,8 +13,8 @@
     "maximumRunLimit": 50,
     "runMaximumMinutes": 45
   },
-  "confirmedToday": 15,
-  "remainingToday": 85,
+  "confirmedToday": 17,
+  "remainingToday": 83,
   "campaignScope": {
     "enabled": true,
     "name": "north_america_large_key_accounts_and_brand_agencies",
@@ -42,9 +42,9 @@
     "executableReserveNeeded": 83
   },
   "latestExecution": {
-    "completedAt": "2026-08-14T07:33:09.341Z",
+    "completedAt": "2026-08-14T07:38:52.506Z",
     "phase": "browser_execution",
-    "realDevelopmentCount": 1,
+    "realDevelopmentCount": 2,
     "reportingVerdict": "development_performed"
   },
   "browser": {
@@ -54,7 +54,7 @@
   },
   "git": {
     "branch": "vercel-main-sync",
-    "localHead": "f9fa0cf1bc582c38101c82acd4df1045af95165f",
-    "upstreamHead": "f9fa0cf1bc582c38101c82acd4df1045af95165f"
+    "localHead": "591215b5b4dd8b033d5e042a9f57afa9781f63eb",
+    "upstreamHead": "591215b5b4dd8b033d5e042a9f57afa9781f63eb"
   }
 }
