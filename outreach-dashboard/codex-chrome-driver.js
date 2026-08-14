@@ -571,11 +571,20 @@ function sendButtonExpression(composer) {
   return `(() => {
     const centerX = ${JSON.stringify(centerX)};
     const centerY = ${JSON.stringify(centerY)};
-    const controls = Array.from(document.querySelectorAll('button,div[role="button"],span[role="button"]')).map((el) => {
+    const controls = Array.from(document.querySelectorAll('button,input[type="submit"],div[role="button"],span[role="button"],[data-testid*="send" i],[data-control-name*="send" i]')).map((el) => {
       const rect = el.getBoundingClientRect();
-      const text = String(el.innerText || el.textContent || el.getAttribute('aria-label') || '').trim().toLowerCase();
+      const text = String(el.innerText || el.textContent || el.getAttribute('aria-label') || el.getAttribute('title') || el.value || '').trim().toLowerCase();
+      const strongSignal = [
+        el.getAttribute('data-testid'),
+        el.getAttribute('data-control-name'),
+        el.getAttribute('name'),
+        el.id,
+        el.className,
+      ].map(value => String(value || '').toLowerCase()).join(' ');
       return {
         text,
+        strongSignal,
+        submitType: String(el.getAttribute('type') || '').toLowerCase() === 'submit',
         x: Math.round(rect.left + rect.width / 2),
         y: Math.round(rect.top + rect.height / 2),
         visible: rect.width > 0 && rect.height > 0,
@@ -584,15 +593,16 @@ function sendButtonExpression(composer) {
     }).filter(item => item.visible && !item.disabled);
     const badSend = /emoji|gif|sticker|photo|image|voice|microphone|like|thumb|share|forward|repost|friend|friends|story|invite|\\u8868\\u60c5|\\u56fe\\u7247|\\u8d5e|\\u5206\\u4eab|\\u8f6c\\u53d1|\\u53d1\\u9001\\u7ed9\\u597d\\u53cb/;
     const sendText = item => /(^|\\b)(send|submit)(\\b|$)|\\u53d1\\u9001|\\u63d0\\u4ea4/.test(item.text) && !badSend.test(item.text);
+    const strongSend = item => /(^|[-_\\s])(send|submit)([-_\\s]|$)/.test(item.strongSignal) && !badSend.test(item.strongSignal);
     const nearControls = controls
       .filter(item => item.x > centerX - 40 && Math.abs(item.y - centerY) < 110)
       .filter(item => !badSend.test(item.text));
     const nearExplicitSend = nearControls
-      .filter(sendText)
+      .filter(item => sendText(item) || strongSend(item))
       .sort((a, b) => Math.abs(a.y - centerY) - Math.abs(b.y - centerY) || b.x - a.x)[0];
     if (nearExplicitSend) return JSON.stringify({ ...nearExplicitSend, explicitSendControl: true });
     const byText = controls
-      .filter(sendText)
+      .filter(item => sendText(item) || strongSend(item))
       .sort((a, b) => Math.abs(a.y - centerY) - Math.abs(b.y - centerY) || Math.abs(a.x - centerX) - Math.abs(b.x - centerX))[0];
     if (byText) return JSON.stringify({ ...byText, explicitSendControl: true });
     return JSON.stringify(null);
@@ -1572,7 +1582,7 @@ async function preparePlatformDraft(payload, platform) {
       }
       return {
         ok: false,
-        sendStatus: 'send_unconfirmed',
+        sendStatus: 'failed_open',
         evidence: `${platform}_draft_inserted_explicit_send_control_not_found;no_irreversible_action_performed;${insertResult.evidence}`,
         nextAction: 'An explicit Send control was not detected and the verified Enter path was unavailable; record a technical failure and continue to another verified channel.',
       };
@@ -1695,6 +1705,7 @@ if (require.main === module) {
 
 module.exports = {
   identityCheckExpression,
+  sendButtonExpression,
   sendConfirmationExpression,
   confirmPersistedSentMessage,
 };

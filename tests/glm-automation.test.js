@@ -1619,6 +1619,15 @@ test('Alibaba searchable recipient uses one bounded second Enter only for the ex
   assert.ok(mainSource.includes('Never accept a different suggestion'));
 });
 
+test('Alibaba recipient name chip requires an exact tooltip email before send', () => {
+  assert.ok(mainSource.includes('composeRecipientChipExpression'));
+  assert.ok(mainSource.includes('composeRecipientTooltipInspectionExpression'));
+  assert.ok(mainSource.includes('clickAttempt < 2'));
+  assert.ok(mainSource.includes('recipientTooltipExactMatch: true'));
+  assert.ok(alibabaWebmailSource.includes('alibaba_webmail_scoped_recipient_chip_found'));
+  assert.ok(alibabaWebmailSource.includes('alibaba_webmail_recipient_tooltip_exact_match'));
+});
+
 test('Alibaba subject fallback physically fills the verified subject and safely retries the fixed pre-send verifier failure', () => {
   assert.ok(mainSource.includes('composeSubjectFocusExpression'));
   assert.ok(alibabaWebmailSource.includes('alibaba_webmail_subject_control_focused_for_physical_fill'));
@@ -2009,8 +2018,25 @@ test('social send never clicks an unlabeled nearby control and interaction evide
   assert.doesNotMatch(sendButtonSource, /const nearComposer|const rightMost/);
   assert.ok(chromeDriverSource.includes('verified_draft_present_before_irreversible_action'));
   assert.ok(chromeDriverSource.includes("platform === 'instagram' || platform === 'facebook'"));
+  assert.match(chromeDriverSource, /sendStatus: 'failed_open',[\s\S]*draft_inserted_explicit_send_control_not_found;no_irreversible_action_performed/);
+  assert.doesNotMatch(chromeDriverSource, /sendStatus: 'send_unconfirmed',[\s\S]{0,180}draft_inserted_explicit_send_control_not_found;no_irreversible_action_performed/);
   assert.match(mainSource, /send_clicked_but_confirmation_missing\|enter_send_attempted_but_confirmation_missing\|submit_clicked[\s\S]*verified_draft_present_before_irreversible_action/);
   assert.match(dailyRunnerSource, /send_clicked_but_confirmation_missing\|enter_send_attempted_but_confirmation_missing\|submit_clicked[\s\S]*verified_draft_present_before_irreversible_action/);
+});
+
+test('social send control accepts strong submit metadata without weakening confirmation', () => {
+  assert.match(chromeDriverSource, /input\[type="submit"\]/);
+  assert.match(chromeDriverSource, /data-testid\*="send" i/);
+  assert.match(chromeDriverSource, /data-control-name\*="send" i/);
+  assert.match(chromeDriverSource, /const strongSend = item =>/);
+  assert.match(chromeDriverSource, /confirmPersistedSentMessage\(tab, draft\)/);
+  assert.match(chromeDriverSource, /send_clicked_but_confirmation_missing/);
+});
+
+test('Alibaba recipient chip detection supports Ant selection overflow items', () => {
+  assert.match(alibabaWebmailSource, /ant-select-selection-overflow-item:not/);
+  assert.match(alibabaWebmailSource, /selection-overflow-item/);
+  assert.match(alibabaWebmailSource, /recipient_tooltip_exact_match/);
 });
 
 test('uninserted social draft does not block same-company website fallback', () => {

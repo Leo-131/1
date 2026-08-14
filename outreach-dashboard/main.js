@@ -23,6 +23,8 @@ const {
   composeStartExpression,
   composeFillExpression,
   composeRecipientFocusExpression,
+  composeRecipientChipExpression,
+  composeRecipientTooltipInspectionExpression,
   composeSubjectFocusExpression,
   composeInspectionExpression,
   composeSendExpression,
@@ -3079,7 +3081,26 @@ async function runAlibabaWebmailEmailLead(lead = {}, subject = '', draft = '') {
       await sleep(350);
     }
     await sleep(500);
-    const inspected = await evaluateChromeTabJson(chromeOpen, composeInspectionExpression(payload), 8000);
+    let inspected = await evaluateChromeTabJson(chromeOpen, composeInspectionExpression(payload), 8000);
+    let recipientTooltipEvidence = 'recipient_tooltip_verification_not_needed';
+    if (inspected && !inspected.recipientReady && inspected.subjectReady && inspected.bodyReady) {
+      const chip = await evaluateChromeTabJson(chromeOpen, composeRecipientChipExpression(), 5000).catch(() => null);
+      recipientTooltipEvidence = chip && chip.evidence || 'alibaba_webmail_scoped_recipient_chip_missing';
+      if (chip && chip.ok && Number.isFinite(chip.x) && Number.isFinite(chip.y)) {
+        for (let clickAttempt = 0; clickAttempt < 2; clickAttempt += 1) {
+          await cdpCommand(chromeOpen.webSocketDebuggerUrl, 'Input.dispatchMouseEvent', { type: 'mouseMoved', x: chip.x, y: chip.y }, 3000);
+          await cdpCommand(chromeOpen.webSocketDebuggerUrl, 'Input.dispatchMouseEvent', { type: 'mousePressed', x: chip.x, y: chip.y, button: 'left', clickCount: 1 }, 3000);
+          await cdpCommand(chromeOpen.webSocketDebuggerUrl, 'Input.dispatchMouseEvent', { type: 'mouseReleased', x: chip.x, y: chip.y, button: 'left', clickCount: 1 }, 3000);
+          await sleep(350);
+          const tooltip = await evaluateChromeTabJson(chromeOpen, composeRecipientTooltipInspectionExpression({ recipient: target.recipient }), 5000).catch(() => null);
+          recipientTooltipEvidence = `${recipientTooltipEvidence};recipientChipClick:${clickAttempt + 1};${tooltip && tooltip.evidence || 'recipient_tooltip_inspection_missing'}`;
+          if (tooltip && tooltip.exactRecipient) {
+            inspected = { ...inspected, ok: true, recipientReady: true, recipientTooltipExactMatch: true, evidence: 'alibaba_webmail_draft_verified_by_recipient_tooltip' };
+            break;
+          }
+        }
+      }
+    }
     if (!filled || !filled.ok || !inspected || !inspected.ok) {
       preserveTabForEvidence = preserveAutomationChromeTab(chromeOpen);
       const inspectionFlags = inspected
@@ -3096,7 +3117,7 @@ async function runAlibabaWebmailEmailLead(lead = {}, subject = '', draft = '') {
         ok: false,
         sendStatus: 'failed_open',
         reason: 'alibaba_webmail_draft_verification_failed',
-        evidence: `${autoSendAuthorization};${filled && filled.evidence || 'fill_missing'};${inspected && inspected.evidence || 'inspection_missing'};${inspectionFlags};${recipientStageEvidence};${recipientControlEvidence};composer_preserved_for_technical_evidence:${preserveTabForEvidence}`,
+        evidence: `${autoSendAuthorization};${filled && filled.evidence || 'fill_missing'};${inspected && inspected.evidence || 'inspection_missing'};${inspectionFlags};${recipientStageEvidence};${recipientControlEvidence};${recipientTooltipEvidence};composer_preserved_for_technical_evidence:${preserveTabForEvidence}`,
         manualApprovalRequired: false,
         autoSendAuthorized: true,
       };

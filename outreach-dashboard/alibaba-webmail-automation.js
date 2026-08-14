@@ -260,6 +260,66 @@ function composeRecipientFocusExpression() {
   })()`;
 }
 
+function composeRecipientChipExpression() {
+  return `(() => {
+    const fields = ${composeFieldsExpression()};
+    const input = fields.recipientInput;
+    const compose = input?.closest?.('[data-testid="compose-container"]');
+    if (!input || !compose) return JSON.stringify({ ok: false, evidence: 'alibaba_webmail_scoped_recipient_chip_container_missing' });
+    const inputRect = input.getBoundingClientRect?.();
+    const selectors = [
+      '.ant-select-selection-item',
+      '.ant-select-selection-overflow-item:not(.ant-select-selection-overflow-item-suffix)',
+      '[class*="selection-item"]',
+      '[class*="selection-overflow-item"]:not([class*="suffix"])',
+      '[class*="recipient"] [class*="item"]',
+      '[class*="address"] [class*="item"]',
+      '[class*="recipient"] span',
+      '[class*="address"] span',
+    ];
+    const signalOf = element => String(
+      element.innerText || element.textContent || element.getAttribute?.('title') ||
+      element.getAttribute?.('aria-label') || element.getAttribute?.('data-email') ||
+      element.getAttribute?.('data-value') || ''
+    ).trim();
+    const candidates = Array.from(new Set(compose.querySelectorAll(selectors.join(','))))
+      .map(element => ({ element, rect: element.getBoundingClientRect?.(), text: signalOf(element) }))
+      .filter(item => item.element !== input && item.rect && item.rect.width > 0 && item.rect.height > 0 && item.text)
+      .filter(item => Math.abs((item.rect.y + item.rect.height / 2) - (inputRect.y + inputRect.height / 2)) <= 28)
+      .filter(item => item.rect.right <= inputRect.right + 40)
+      .sort((left, right) => Math.abs(left.rect.x - inputRect.x) - Math.abs(right.rect.x - inputRect.x));
+    const chip = candidates[0];
+    if (!chip) return JSON.stringify({ ok: false, evidence: 'alibaba_webmail_scoped_recipient_chip_missing' });
+    return JSON.stringify({
+      ok: true,
+      evidence: 'alibaba_webmail_scoped_recipient_chip_found',
+      text: chip.text.slice(0, 120),
+      x: Math.round(chip.rect.x + chip.rect.width / 2),
+      y: Math.round(chip.rect.y + chip.rect.height / 2),
+    });
+  })()`;
+}
+
+function composeRecipientTooltipInspectionExpression({ recipient } = {}) {
+  return `(() => {
+    const recipientNeedle = ${serialized(recipient)}.trim().toLowerCase();
+    const roots = [document];
+    for (let index = 0; index < roots.length; index += 1) {
+      for (const element of roots[index].querySelectorAll('*')) {
+        if (element.shadowRoot && !roots.includes(element.shadowRoot)) roots.push(element.shadowRoot);
+        if (element.tagName === 'IFRAME') { try { if (element.contentDocument && !roots.includes(element.contentDocument)) roots.push(element.contentDocument); } catch {} }
+      }
+    }
+    const signals = roots.flatMap(root => Array.from(root.querySelectorAll('[role="tooltip"],.ant-tooltip,.ant-popover,[class*="tooltip"],[class*="popover"],[title],[data-email],[data-value]')))
+      .flatMap(element => [element.innerText, element.textContent, element.getAttribute?.('title'), element.getAttribute?.('data-email'), element.getAttribute?.('data-value')])
+      .filter(Boolean)
+      .map(value => String(value).trim().toLowerCase());
+    const tokens = signals.flatMap(value => value.match(/[a-z0-9.!#$%&'*+/=?^_\x60{|}~-]+@[a-z0-9.-]+\.[a-z]{2,}/gi) || []).map(value => value.toLowerCase());
+    const exactRecipient = tokens.includes(recipientNeedle);
+    return JSON.stringify({ ok: exactRecipient, exactRecipient, evidence: exactRecipient ? 'alibaba_webmail_recipient_tooltip_exact_match' : 'alibaba_webmail_recipient_tooltip_exact_match_missing' });
+  })()`;
+}
+
 function composeSubjectFocusExpression() {
   return `(() => {
     const fields = ${composeFieldsExpression()};
@@ -367,4 +427,4 @@ function sentFolderConfirmationExpression({ subject } = {}) {
   })()`;
 }
 
-module.exports = { ALIBABA_WEBMAIL_SENT_URL, composeStartExpression, composeFillExpression, composeRecipientFocusExpression, composeSubjectFocusExpression, composeInspectionExpression, composeSendExpression, postSendStateExpression, sendToastExpression, sentFolderConfirmationExpression };
+module.exports = { ALIBABA_WEBMAIL_SENT_URL, composeStartExpression, composeFillExpression, composeRecipientFocusExpression, composeRecipientChipExpression, composeRecipientTooltipInspectionExpression, composeSubjectFocusExpression, composeInspectionExpression, composeSendExpression, postSendStateExpression, sendToastExpression, sentFolderConfirmationExpression };

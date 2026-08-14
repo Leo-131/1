@@ -7,7 +7,7 @@
   "executionPhase": "browser_execution",
   "chromeStage": "opened",
   "chromeOpened": true,
-  "chromeOpenedCount": 1,
+  "chromeOpenedCount": 2,
   "customerDevelopmentPerformed": false,
   "customerMessageSent": false,
   "realDevelopmentCount": 0,
@@ -21,32 +21,6 @@
   "queueSource": "dailyQueue",
   "executed": [
     {
-      "id": "google-customer-13west-website-contact",
-      "company": "13west",
-      "action": "email_priority",
-      "platform": "email",
-      "targetUrl": "https://13west.com/about/",
-      "ok": false,
-      "sendStatus": "failed_open",
-      "evidence": "verified_email_auto_send_no_manual_review;alibaba_webmail_content_inserted_recipient_control_verified;alibaba_webmail_draft_verification_failed;recipientReady:false;subjectReady:true;bodyReady:true;recipientStageValueMatch:true;recipientStageType:search;recipientStageRole:combobox;recipientStageClass:ant-select-selection-search-input;recipientStageXY:252,13;recipientControl:INPUT,search,combobox,ant-select-selection-search-input hide-clear;recipientControlXY:0,0;recipientControlShadow:false;composer_preserved_for_technical_evidence:true;contact_path_strategy_v2",
-      "timestamp": "2026-08-14T05:56:53.820Z",
-      "chromeOpen": null,
-      "result": {
-        "ok": false,
-        "sendStatus": "failed_open",
-        "reason": "alibaba_webmail_draft_verification_failed",
-        "evidence": "verified_email_auto_send_no_manual_review;alibaba_webmail_content_inserted_recipient_control_verified;alibaba_webmail_draft_verification_failed;recipientReady:false;subjectReady:true;bodyReady:true;recipientStageValueMatch:true;recipientStageType:search;recipientStageRole:combobox;recipientStageClass:ant-select-selection-search-input;recipientStageXY:252,13;recipientControl:INPUT,search,combobox,ant-select-selection-search-input hide-clear;recipientControlXY:0,0;recipientControlShadow:false;composer_preserved_for_technical_evidence:true;contact_path_strategy_v2",
-        "manualApprovalRequired": false,
-        "autoSendAuthorized": true,
-        "engine": "alibaba-enterprise-mail-smtp-imap",
-        "mode": "alibaba_email_delivery_unconfirmed",
-        "targetUrl": "mailto:team@13west.com",
-        "subject": "FLEXTAIL retail partnership | 2026 assortment",
-        "draft": "Dear 13west Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
-        "output": "{\"verdict\":\"failed_open\",\"sendStatus\":\"failed_open\",\"evidence\":\"verified_email_auto_send_no_manual_review;alibaba_webmail_content_inserted_recipient_control_verified;alibaba_webmail_draft_verification_failed;recipientReady:false;subjectReady:true;bodyReady:true;recipientStageValueMatch:true;recipientStageType:search;recipientStageRole:combobox;recipientStageClass:ant-select-selection-search-input;recipientStageXY:252,13;recipientControl:INPUT,search,combobox,ant-select-selection-search-input hide-clear;recipientControlXY:0,0;recipientControlShadow:false;composer_preserved_for_technical_evidence:true;contact_path_strategy_v2\",\"nextAction\":\"Do not resend automatically; inspect the Alibaba Mail delivery and Sent-folder evidence.\",\"recipientEmail\":\"team@13west.com\",\"messageId\":\"\"}"
-      }
-    },
-    {
       "id": "google-customer-g-b-stumpp-associates-website-contact",
       "company": "G.B. Stumpp & Associates",
       "action": "email_priority",
@@ -55,14 +29,14 @@
       "ok": false,
       "sendStatus": "website_contact_unreachable_skip",
       "evidence": "website_contact_entry_not_verified;no_contact_entry_control;public_email_fallback_available:tdean@gbstumpp.com;email_sender_not_configured;email_route_preserved_draft_no_reopen;no_email_composer_opened;no_send_performed;recipient:tdean@gbstumpp.com;website_contact_all_targets_failed:7;contact_path_strategy_v2",
-      "timestamp": "2026-08-14T05:57:13.331Z",
+      "timestamp": "2026-08-14T06:30:00.240Z",
       "chromeOpen": {
         "ok": true,
         "engine": "codex-chrome-cdp",
         "port": 9224,
         "targetUrl": "https://www.gbstumpp.com/help/contact-us",
-        "tabId": "32EFB56611C627DAF4749AE716CB3666",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/32EFB56611C627DAF4749AE716CB3666",
+        "tabId": "8F058280E7E9F397A04760F9B15D0323",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/8F058280E7E9F397A04760F9B15D0323",
         "title": ""
       },
       "result": {
@@ -76,8 +50,8 @@
           "engine": "codex-chrome-cdp",
           "port": 9224,
           "targetUrl": "https://www.gbstumpp.com/help/contact-us",
-          "tabId": "32EFB56611C627DAF4749AE716CB3666",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/32EFB56611C627DAF4749AE716CB3666",
+          "tabId": "8F058280E7E9F397A04760F9B15D0323",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/8F058280E7E9F397A04760F9B15D0323",
           "title": ""
         },
         "sendStatus": "website_contact_unreachable_skip",
@@ -85,37 +59,60 @@
         "draft": "Dear G.B. Stumpp & Associates Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
         "evidence": "website_contact_entry_not_verified;no_contact_entry_control;public_email_fallback_available:tdean@gbstumpp.com;email_sender_not_configured;email_route_preserved_draft_no_reopen;no_email_composer_opened;no_send_performed;recipient:tdean@gbstumpp.com;website_contact_all_targets_failed:7;contact_path_strategy_v2",
         "output": "{\"verdict\":\"website_contact_unreachable_skip\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control;public_email_fallback_available:tdean@gbstumpp.com;email_sender_not_configured;email_route_preserved_draft_no_reopen;no_email_composer_opened;no_send_performed;recipient:tdean@gbstumpp.com;website_contact_all_targets_failed:7;contact_path_strategy_v2\",\"nextAction\":\"Email delivery to tdean@gbstumpp.com requires a configured sender; continue with another verified contact path or LinkedIn, Facebook, or Instagram instead of claiming a send.\",\"subject\":\"FLEXTAIL retail partnership | 2026 assortment\",\"draft\":\"Dear G.B. Stumpp & Associates Team,\\n\\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\\n\\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\\n\\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\\n\\nProduct overview: https://www.flextail.com/\\n\\nBest regards,\\nLeo Liu\\nSales & Operations Director\\nLeo@flextailgear.com\",\"sendStatus\":\"website_contact_unreachable_skip\",\"attempts\":[{\"targetUrl\":\"https://www.gbstumpp.com/Contact.html\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control\"},{\"targetUrl\":\"https://www.gbstumpp.com/\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control\"},{\"targetUrl\":\"https://www.gbstumpp.com/pages/contact-us\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control\"},{\"targetUrl\":\"https://www.gbstumpp.com/pages/contact\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control\"},{\"targetUrl\":\"https://www.gbstumpp.com/contact-us\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control\"},{\"targetUrl\":\"https://www.gbstumpp.com/contact\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control\"},{\"targetUrl\":\"https://www.gbstumpp.com/help/contact-us\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control\"}]}"
+      }
+    },
+    {
+      "id": "google-customer-pnw-golf-sales-website-contact",
+      "company": "PNW Golf Sales",
+      "action": "email_priority",
+      "platform": "email",
+      "targetUrl": "https://www.pnwgolfsales.com/",
+      "ok": false,
+      "sendStatus": "send_unconfirmed",
+      "evidence": "website_contact_entry_not_verified;contact_entry_clicked:Contact;official_social_fallback:instagram;instagram_send_clicked_but_confirmation_missing;verified_draft_present_before_irreversible_action;explicit_send_control_verified;instagram_draft_inserted_verified;follow_not_available;instagram_post_opened;post_liked;comment_not_configured;contact_path_strategy_v2",
+      "timestamp": "2026-08-14T06:31:22.337Z",
+      "chromeOpen": {
+        "ok": true,
+        "engine": "codex-chrome-cdp",
+        "port": 9224,
+        "targetUrl": "https://www.instagram.com/pnw0sales/",
+        "tabId": "93B1698F1A0BB731347AA8CDDB5F88D5",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/93B1698F1A0BB731347AA8CDDB5F88D5",
+        "title": "Lacy Erickson (@pnw0sales) · Instagram 照片和视频"
+      },
+      "result": {
+        "ok": false,
+        "engine": "codex-chrome-cdp",
+        "browserEngine": "codex-chrome-cdp",
+        "mode": "codex_chrome_cdp",
+        "targetUrl": "https://www.instagram.com/pnw0sales/",
+        "chromeOpen": {
+          "ok": true,
+          "engine": "codex-chrome-cdp",
+          "port": 9224,
+          "targetUrl": "https://www.instagram.com/pnw0sales/",
+          "tabId": "93B1698F1A0BB731347AA8CDDB5F88D5",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/93B1698F1A0BB731347AA8CDDB5F88D5",
+          "title": "Lacy Erickson (@pnw0sales) · Instagram 照片和视频"
+        },
+        "sendStatus": "send_unconfirmed",
+        "output": "{\"verdict\":\"major_bug_review_needed\",\"evidence\":\"website_contact_entry_not_verified;contact_entry_clicked:Contact;official_social_fallback:instagram;instagram_send_clicked_but_confirmation_missing;verified_draft_present_before_irreversible_action;explicit_send_control_verified;instagram_draft_inserted_verified;follow_not_available;instagram_post_opened;post_liked;comment_not_configured;contact_path_strategy_v2\",\"nextAction\":\"Send confirmation missing; pause and notify operator before any retry to avoid duplicate sending.\",\"draft\":\"Hi PNW Golf Sales team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a brand/ODM or sourcing lead, the strongest fit is co-development, ODM capability, usage-scenario expansion, and practical product roadmap fit; your Pacific Northwest outdoor sporting-goods sales agency focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the product or sourcing lead for a short intro video meeting?\",\"sendStatus\":\"send_unconfirmed\"}",
+        "decision": {
+          "verdict": "develop",
+          "fitScore": 88,
+          "reason": "local_codex_extension_template",
+          "draft": "Hi PNW Golf Sales team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a brand/ODM or sourcing lead, the strongest fit is co-development, ODM capability, usage-scenario expansion, and practical product roadmap fit; your Pacific Northwest outdoor sporting-goods sales agency focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the product or sourcing lead for a short intro video meeting?"
+        },
+        "executionLayer": "Chrome CDP fallback",
+        "glmModel": "not_used",
+        "followup": false,
+        "evidence": "website_contact_entry_not_verified;contact_entry_clicked:Contact;official_social_fallback:instagram;instagram_send_clicked_but_confirmation_missing;verified_draft_present_before_irreversible_action;explicit_send_control_verified;instagram_draft_inserted_verified;follow_not_available;instagram_post_opened;post_liked;comment_not_configured;contact_path_strategy_v2",
+        "socialFallbackEvidence": "instagram_send_clicked_but_confirmation_missing;verified_draft_present_before_irreversible_action;explicit_send_control_verified;instagram_draft_inserted_verified;follow_not_available;instagram_post_opened;post_liked;comment_not_configured"
       }
     }
   ],
   "results": [
     {
-      "id": "google-customer-13west-website-contact",
-      "company": "13west",
-      "action": "email_priority",
-      "platform": "email",
-      "targetUrl": "https://13west.com/about/",
-      "ok": false,
-      "sendStatus": "failed_open",
-      "evidence": "verified_email_auto_send_no_manual_review;alibaba_webmail_content_inserted_recipient_control_verified;alibaba_webmail_draft_verification_failed;recipientReady:false;subjectReady:true;bodyReady:true;recipientStageValueMatch:true;recipientStageType:search;recipientStageRole:combobox;recipientStageClass:ant-select-selection-search-input;recipientStageXY:252,13;recipientControl:INPUT,search,combobox,ant-select-selection-search-input hide-clear;recipientControlXY:0,0;recipientControlShadow:false;composer_preserved_for_technical_evidence:true;contact_path_strategy_v2",
-      "timestamp": "2026-08-14T05:56:53.820Z",
-      "chromeOpen": null,
-      "result": {
-        "ok": false,
-        "sendStatus": "failed_open",
-        "reason": "alibaba_webmail_draft_verification_failed",
-        "evidence": "verified_email_auto_send_no_manual_review;alibaba_webmail_content_inserted_recipient_control_verified;alibaba_webmail_draft_verification_failed;recipientReady:false;subjectReady:true;bodyReady:true;recipientStageValueMatch:true;recipientStageType:search;recipientStageRole:combobox;recipientStageClass:ant-select-selection-search-input;recipientStageXY:252,13;recipientControl:INPUT,search,combobox,ant-select-selection-search-input hide-clear;recipientControlXY:0,0;recipientControlShadow:false;composer_preserved_for_technical_evidence:true;contact_path_strategy_v2",
-        "manualApprovalRequired": false,
-        "autoSendAuthorized": true,
-        "engine": "alibaba-enterprise-mail-smtp-imap",
-        "mode": "alibaba_email_delivery_unconfirmed",
-        "targetUrl": "mailto:team@13west.com",
-        "subject": "FLEXTAIL retail partnership | 2026 assortment",
-        "draft": "Dear 13west Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
-        "output": "{\"verdict\":\"failed_open\",\"sendStatus\":\"failed_open\",\"evidence\":\"verified_email_auto_send_no_manual_review;alibaba_webmail_content_inserted_recipient_control_verified;alibaba_webmail_draft_verification_failed;recipientReady:false;subjectReady:true;bodyReady:true;recipientStageValueMatch:true;recipientStageType:search;recipientStageRole:combobox;recipientStageClass:ant-select-selection-search-input;recipientStageXY:252,13;recipientControl:INPUT,search,combobox,ant-select-selection-search-input hide-clear;recipientControlXY:0,0;recipientControlShadow:false;composer_preserved_for_technical_evidence:true;contact_path_strategy_v2\",\"nextAction\":\"Do not resend automatically; inspect the Alibaba Mail delivery and Sent-folder evidence.\",\"recipientEmail\":\"team@13west.com\",\"messageId\":\"\"}"
-      }
-    },
-    {
       "id": "google-customer-g-b-stumpp-associates-website-contact",
       "company": "G.B. Stumpp & Associates",
       "action": "email_priority",
@@ -124,14 +121,14 @@
       "ok": false,
       "sendStatus": "website_contact_unreachable_skip",
       "evidence": "website_contact_entry_not_verified;no_contact_entry_control;public_email_fallback_available:tdean@gbstumpp.com;email_sender_not_configured;email_route_preserved_draft_no_reopen;no_email_composer_opened;no_send_performed;recipient:tdean@gbstumpp.com;website_contact_all_targets_failed:7;contact_path_strategy_v2",
-      "timestamp": "2026-08-14T05:57:13.331Z",
+      "timestamp": "2026-08-14T06:30:00.240Z",
       "chromeOpen": {
         "ok": true,
         "engine": "codex-chrome-cdp",
         "port": 9224,
         "targetUrl": "https://www.gbstumpp.com/help/contact-us",
-        "tabId": "32EFB56611C627DAF4749AE716CB3666",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/32EFB56611C627DAF4749AE716CB3666",
+        "tabId": "8F058280E7E9F397A04760F9B15D0323",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/8F058280E7E9F397A04760F9B15D0323",
         "title": ""
       },
       "result": {
@@ -145,8 +142,8 @@
           "engine": "codex-chrome-cdp",
           "port": 9224,
           "targetUrl": "https://www.gbstumpp.com/help/contact-us",
-          "tabId": "32EFB56611C627DAF4749AE716CB3666",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/32EFB56611C627DAF4749AE716CB3666",
+          "tabId": "8F058280E7E9F397A04760F9B15D0323",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/8F058280E7E9F397A04760F9B15D0323",
           "title": ""
         },
         "sendStatus": "website_contact_unreachable_skip",
@@ -155,9 +152,72 @@
         "evidence": "website_contact_entry_not_verified;no_contact_entry_control;public_email_fallback_available:tdean@gbstumpp.com;email_sender_not_configured;email_route_preserved_draft_no_reopen;no_email_composer_opened;no_send_performed;recipient:tdean@gbstumpp.com;website_contact_all_targets_failed:7;contact_path_strategy_v2",
         "output": "{\"verdict\":\"website_contact_unreachable_skip\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control;public_email_fallback_available:tdean@gbstumpp.com;email_sender_not_configured;email_route_preserved_draft_no_reopen;no_email_composer_opened;no_send_performed;recipient:tdean@gbstumpp.com;website_contact_all_targets_failed:7;contact_path_strategy_v2\",\"nextAction\":\"Email delivery to tdean@gbstumpp.com requires a configured sender; continue with another verified contact path or LinkedIn, Facebook, or Instagram instead of claiming a send.\",\"subject\":\"FLEXTAIL retail partnership | 2026 assortment\",\"draft\":\"Dear G.B. Stumpp & Associates Team,\\n\\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\\n\\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\\n\\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\\n\\nProduct overview: https://www.flextail.com/\\n\\nBest regards,\\nLeo Liu\\nSales & Operations Director\\nLeo@flextailgear.com\",\"sendStatus\":\"website_contact_unreachable_skip\",\"attempts\":[{\"targetUrl\":\"https://www.gbstumpp.com/Contact.html\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control\"},{\"targetUrl\":\"https://www.gbstumpp.com/\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control\"},{\"targetUrl\":\"https://www.gbstumpp.com/pages/contact-us\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control\"},{\"targetUrl\":\"https://www.gbstumpp.com/pages/contact\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control\"},{\"targetUrl\":\"https://www.gbstumpp.com/contact-us\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control\"},{\"targetUrl\":\"https://www.gbstumpp.com/contact\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control\"},{\"targetUrl\":\"https://www.gbstumpp.com/help/contact-us\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control\"}]}"
       }
+    },
+    {
+      "id": "google-customer-pnw-golf-sales-website-contact",
+      "company": "PNW Golf Sales",
+      "action": "email_priority",
+      "platform": "email",
+      "targetUrl": "https://www.pnwgolfsales.com/",
+      "ok": false,
+      "sendStatus": "send_unconfirmed",
+      "evidence": "website_contact_entry_not_verified;contact_entry_clicked:Contact;official_social_fallback:instagram;instagram_send_clicked_but_confirmation_missing;verified_draft_present_before_irreversible_action;explicit_send_control_verified;instagram_draft_inserted_verified;follow_not_available;instagram_post_opened;post_liked;comment_not_configured;contact_path_strategy_v2",
+      "timestamp": "2026-08-14T06:31:22.337Z",
+      "chromeOpen": {
+        "ok": true,
+        "engine": "codex-chrome-cdp",
+        "port": 9224,
+        "targetUrl": "https://www.instagram.com/pnw0sales/",
+        "tabId": "93B1698F1A0BB731347AA8CDDB5F88D5",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/93B1698F1A0BB731347AA8CDDB5F88D5",
+        "title": "Lacy Erickson (@pnw0sales) · Instagram 照片和视频"
+      },
+      "result": {
+        "ok": false,
+        "engine": "codex-chrome-cdp",
+        "browserEngine": "codex-chrome-cdp",
+        "mode": "codex_chrome_cdp",
+        "targetUrl": "https://www.instagram.com/pnw0sales/",
+        "chromeOpen": {
+          "ok": true,
+          "engine": "codex-chrome-cdp",
+          "port": 9224,
+          "targetUrl": "https://www.instagram.com/pnw0sales/",
+          "tabId": "93B1698F1A0BB731347AA8CDDB5F88D5",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/93B1698F1A0BB731347AA8CDDB5F88D5",
+          "title": "Lacy Erickson (@pnw0sales) · Instagram 照片和视频"
+        },
+        "sendStatus": "send_unconfirmed",
+        "output": "{\"verdict\":\"major_bug_review_needed\",\"evidence\":\"website_contact_entry_not_verified;contact_entry_clicked:Contact;official_social_fallback:instagram;instagram_send_clicked_but_confirmation_missing;verified_draft_present_before_irreversible_action;explicit_send_control_verified;instagram_draft_inserted_verified;follow_not_available;instagram_post_opened;post_liked;comment_not_configured;contact_path_strategy_v2\",\"nextAction\":\"Send confirmation missing; pause and notify operator before any retry to avoid duplicate sending.\",\"draft\":\"Hi PNW Golf Sales team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a brand/ODM or sourcing lead, the strongest fit is co-development, ODM capability, usage-scenario expansion, and practical product roadmap fit; your Pacific Northwest outdoor sporting-goods sales agency focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the product or sourcing lead for a short intro video meeting?\",\"sendStatus\":\"send_unconfirmed\"}",
+        "decision": {
+          "verdict": "develop",
+          "fitScore": 88,
+          "reason": "local_codex_extension_template",
+          "draft": "Hi PNW Golf Sales team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a brand/ODM or sourcing lead, the strongest fit is co-development, ODM capability, usage-scenario expansion, and practical product roadmap fit; your Pacific Northwest outdoor sporting-goods sales agency focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the product or sourcing lead for a short intro video meeting?"
+        },
+        "executionLayer": "Chrome CDP fallback",
+        "glmModel": "not_used",
+        "followup": false,
+        "evidence": "website_contact_entry_not_verified;contact_entry_clicked:Contact;official_social_fallback:instagram;instagram_send_clicked_but_confirmation_missing;verified_draft_present_before_irreversible_action;explicit_send_control_verified;instagram_draft_inserted_verified;follow_not_available;instagram_post_opened;post_liked;comment_not_configured;contact_path_strategy_v2",
+        "socialFallbackEvidence": "instagram_send_clicked_but_confirmation_missing;verified_draft_present_before_irreversible_action;explicit_send_control_verified;instagram_draft_inserted_verified;follow_not_available;instagram_post_opened;post_liked;comment_not_configured"
+      }
     }
   ],
   "skipped": [
+    {
+      "id": "google-customer-13west-website-contact",
+      "company": "13west",
+      "action": "email_priority",
+      "platform": "email",
+      "reason": "official_public_business_email_verified"
+    },
+    {
+      "id": "google-customer-synergy-reps-llc-website-contact",
+      "company": "Synergy Reps LLC",
+      "action": "email_priority",
+      "platform": "email",
+      "reason": "official_public_business_email_verified"
+    },
     {
       "id": "google-customer-pro-line-sports-website-contact",
       "company": "Pro Line Sports",
@@ -369,6 +429,13 @@
       "reason": "official_public_business_email_verified"
     },
     {
+      "id": "google-customer-varuste-website-contact",
+      "company": "Varuste",
+      "action": "email_priority",
+      "platform": "email",
+      "reason": "official_public_business_email_verified"
+    },
+    {
       "id": "google-customer-wildfire-sports-website-contact",
       "company": "Wildfire Sports",
       "action": "email_priority",
@@ -481,46 +548,39 @@
       "reason": "official_website_contact_channel"
     },
     {
-      "id": "google-customer-kelly-brand-management-website-contact",
-      "company": "Kelly Brand Management",
-      "action": "develop",
+      "id": "google-customer-left-point-distribution-website-contact",
+      "company": "Left Point Distribution",
+      "action": "email_priority",
       "platform": "website_form",
       "reason": "official_website_contact_channel"
     },
     {
-      "id": "google-customer-kittredge-and-associates-website-contact",
-      "company": "Kittredge and Associates",
-      "action": "develop",
+      "id": "google-customer-obelink-website-contact",
+      "company": "Obelink",
+      "action": "email_priority",
       "platform": "website_form",
       "reason": "official_website_contact_channel"
     },
     {
-      "id": "google-customer-outdoor-industry-group-website-contact",
-      "company": "Outdoor Industry Group",
-      "action": "develop",
+      "id": "google-customer-de-wit-schijndel-website-contact",
+      "company": "De Wit Schijndel",
+      "action": "verify_target",
       "platform": "website_form",
-      "reason": "official_website_contact_channel"
+      "reason": "homepage_only_contact_path_requires_verification"
     },
     {
-      "id": "google-customer-perpetual-motion-nw-website-contact",
-      "company": "Perpetual Motion NW",
-      "action": "develop",
+      "id": "google-customer-outdoorxl-website-contact",
+      "company": "OutdoorXL",
+      "action": "verify_target",
       "platform": "website_form",
-      "reason": "official_website_contact_channel"
+      "reason": "homepage_only_contact_path_requires_verification"
     },
     {
-      "id": "google-customer-premium-living-products-website-contact",
-      "company": "Premium Living Products",
-      "action": "develop",
+      "id": "google-customer-outdoor-specialist-website-contact",
+      "company": "Outdoor Specialist",
+      "action": "verify_target",
       "platform": "website_form",
-      "reason": "official_website_contact_channel"
-    },
-    {
-      "id": "google-customer-nomadic-supply-company-website-contact",
-      "company": "Nomadic Supply Company",
-      "action": "develop",
-      "platform": "website_form",
-      "reason": "official_website_contact_channel"
+      "reason": "homepage_only_contact_path_requires_verification"
     },
     {
       "id": "google-customer-outdoor-nature-website-contact",
@@ -553,13 +613,6 @@
     {
       "id": "google-customer-360-adventure-collective-linkedin",
       "company": "360 Adventure Collective",
-      "action": "verify_target",
-      "platform": "linkedin",
-      "reason": "linkedin_channel_requires_supported_executor"
-    },
-    {
-      "id": "google-customer-front-point-sales-linkedin",
-      "company": "Front Point Sales",
       "action": "verify_target",
       "platform": "linkedin",
       "reason": "linkedin_channel_requires_supported_executor"
@@ -607,13 +660,6 @@
       "reason": "official_website_social_channel_verified"
     },
     {
-      "id": "google-customer-outdoor-gear-canada-facebook",
-      "company": "Outdoor Gear Canada",
-      "action": "develop",
-      "platform": "facebook",
-      "reason": "official_website_social_channel_verified"
-    },
-    {
       "id": "google-customer-revassa-facebook",
       "company": "REVASSA",
       "action": "develop",
@@ -651,13 +697,6 @@
     {
       "id": "google-customer-fjellsport-website-contact",
       "company": "Fjellsport",
-      "action": "email_priority",
-      "platform": "email",
-      "reason": "official_public_business_email_verified"
-    },
-    {
-      "id": "google-customer-varuste-website-contact",
-      "company": "Varuste",
       "action": "email_priority",
       "platform": "email",
       "reason": "official_public_business_email_verified"
@@ -791,55 +830,6 @@
     {
       "id": "google-customer-tin-shack-ltd-website-contact",
       "company": "Tin Shack Ltd",
-      "action": "verify_target",
-      "platform": "website_form",
-      "reason": "homepage_only_contact_path_requires_verification"
-    },
-    {
-      "id": "google-customer-d-m-a-distributing-website-contact",
-      "company": "D.M.A. Distributing",
-      "action": "verify_target",
-      "platform": "website_form",
-      "reason": "homepage_only_contact_path_requires_verification"
-    },
-    {
-      "id": "google-customer-gmd-wholesale-website-contact",
-      "company": "GMD Wholesale",
-      "action": "verify_target",
-      "platform": "website_form",
-      "reason": "homepage_only_contact_path_requires_verification"
-    },
-    {
-      "id": "google-customer-morrison-sports-marketing-website-contact",
-      "company": "Morrison Sports Marketing",
-      "action": "verify_target",
-      "platform": "website_form",
-      "reason": "homepage_only_contact_path_requires_verification"
-    },
-    {
-      "id": "google-customer-brm-reps-website-contact",
-      "company": "BRM Reps",
-      "action": "verify_target",
-      "platform": "website_form",
-      "reason": "homepage_only_contact_path_requires_verification"
-    },
-    {
-      "id": "google-customer-crf-agency-website-contact",
-      "company": "CRF Agency",
-      "action": "verify_target",
-      "platform": "website_form",
-      "reason": "homepage_only_contact_path_requires_verification"
-    },
-    {
-      "id": "google-customer-green-drake-outdoors-website-contact",
-      "company": "Green Drake Outdoors",
-      "action": "verify_target",
-      "platform": "website_form",
-      "reason": "homepage_only_contact_path_requires_verification"
-    },
-    {
-      "id": "google-customer-mutinous-sales-and-marketing-website-contact",
-      "company": "Mutinous Sales and Marketing",
       "action": "verify_target",
       "platform": "website_form",
       "reason": "homepage_only_contact_path_requires_verification"
@@ -983,6 +973,20 @@
       "action": "develop",
       "platform": "instagram",
       "reason": "official_website_social_channel_verified"
+    },
+    {
+      "id": "google-customer-13west-website-contact",
+      "company": "13west",
+      "action": "email_priority",
+      "platform": "email",
+      "reason": "official_public_business_email_verified"
+    },
+    {
+      "id": "google-customer-synergy-reps-llc-website-contact",
+      "company": "Synergy Reps LLC",
+      "action": "email_priority",
+      "platform": "email",
+      "reason": "official_public_business_email_verified"
     },
     {
       "id": "google-customer-pro-line-sports-website-contact",
@@ -1515,49 +1519,35 @@
       "action": "email_priority",
       "platform": "website_form",
       "reason": "official_website_contact_channel"
-    },
-    {
-      "id": "google-customer-atmosphere-website-contact",
-      "company": "Atmosphere",
-      "action": "verify_target",
-      "platform": "website_form",
-      "reason": "website_contact_capability_not_verified"
-    },
-    {
-      "id": "google-customer-the-great-outdoor-shop-website-contact",
-      "company": "The Great Outdoor Shop",
-      "action": "verify_target",
-      "platform": "website_form",
-      "reason": "website_contact_capability_not_verified"
     }
   ],
   "summary": {
     "totalLeads": 16,
     "highIcp": 16,
-    "readyToDevelop": 32,
-    "dueNow": 100,
+    "readyToDevelop": 25,
+    "dueNow": 92,
     "visibleTodayQueue": 100,
     "potentialPool": 100,
     "potentialPoolTarget": 100,
     "customerTableHighIcp": 0,
     "refillNeeded": 0,
-    "executableCompanies": 75,
+    "executableCompanies": 77,
     "executableReserveTarget": 130,
-    "executableReserveNeeded": 55,
+    "executableReserveNeeded": 53,
     "executableByChannel": {
       "linkedin": 5,
       "facebook": 10,
       "instagram": 5,
-      "email": 32,
+      "email": 34,
       "website_form": 23
     },
     "verifiedSocialCompanies": 20,
     "verifiedSocialReserveTarget": 20,
     "verifiedSocialReserveNeeded": 0,
-    "enrichmentBacklogCount": 25,
-    "googleDiscovered": 100,
-    "facebookDiscovered": 8,
-    "websiteContactDiscovered": 37,
+    "enrichmentBacklogCount": 23,
+    "googleDiscovered": 92,
+    "facebookDiscovered": 7,
+    "websiteContactDiscovered": 39,
     "scheduledLater": 0,
     "cooldown": 30,
     "emailPriority": 0,
@@ -1570,32 +1560,32 @@
     {
       "reason": "official_public_business_email_verified",
       "status": "skipped",
-      "count": 65
+      "count": 69
     },
     {
       "reason": "official_website_contact_channel",
       "status": "skipped",
-      "count": 46
+      "count": 42
     },
     {
       "reason": "official_website_social_channel_verified",
       "status": "skipped",
-      "count": 25
+      "count": 24
     },
     {
       "reason": "website_contact_capability_not_verified",
       "status": "skipped",
-      "count": 25
+      "count": 23
     },
     {
       "reason": "homepage_only_contact_path_requires_verification",
       "status": "skipped",
-      "count": 23
+      "count": 19
     },
     {
       "reason": "linkedin_channel_requires_supported_executor",
       "status": "skipped",
-      "count": 10
+      "count": 9
     },
     {
       "reason": "concrete_google_discovered_major_customer_instagram",
@@ -1603,26 +1593,26 @@
       "count": 2
     },
     {
-      "reason": "alibaba_webmail_draft_verification_failed",
-      "status": "failed_open",
+      "reason": "send_unconfirmed",
+      "status": "send_unconfirmed",
       "count": 1
     }
   ],
   "blockerCounts": {
-    "official_public_business_email_verified": 65,
-    "official_website_contact_channel": 46,
-    "official_website_social_channel_verified": 25,
-    "website_contact_capability_not_verified": 25,
-    "homepage_only_contact_path_requires_verification": 23,
-    "linkedin_channel_requires_supported_executor": 10,
+    "official_public_business_email_verified": 69,
+    "official_website_contact_channel": 42,
+    "official_website_social_channel_verified": 24,
+    "website_contact_capability_not_verified": 23,
+    "homepage_only_contact_path_requires_verification": 19,
+    "linkedin_channel_requires_supported_executor": 9,
     "concrete_google_discovered_major_customer_instagram": 2,
-    "alibaba_webmail_draft_verification_failed": 1
+    "send_unconfirmed": 1
   },
   "queueGoalStatus": {
     "target": 100,
     "potentialPool": 100,
-    "queueCount": 100,
-    "googleDiscovered": 100,
+    "queueCount": 92,
+    "googleDiscovered": 92,
     "refillNeeded": 0,
     "confirmedToday": 0,
     "reached": true,
@@ -1636,7 +1626,7 @@
     "rule": "completed checkpoints are ignored; only terminal results from an active interrupted checkpoint suppress their exact task id"
   },
   "platformCircuitState": {},
-  "userVisibleStatus": "Customer development was not performed. Blockers: official_public_business_email_verified (65); official_website_contact_channel (46); official_website_social_channel_verified (25).",
+  "userVisibleStatus": "Customer development was not performed. Blockers: official_public_business_email_verified (69); official_website_contact_channel (42); official_website_social_channel_verified (24).",
   "recoveryHint": "Confirm the official social profile and safe message entry before rerunning Google-discovered social outreach.",
   "recoveryActions": [
     {
@@ -1648,20 +1638,20 @@
   ],
   "systemRefresh": {
     "ok": true,
-    "stdout": "{\n  \"date\": \"2026-08-14\",\n  \"summary\": {\n    \"totalLeads\": 16,\n    \"highIcp\": 16,\n    \"readyToDevelop\": 32,\n    \"dueNow\": 100,\n    \"visibleTodayQueue\": 100,\n    \"potentialPool\": 100,\n    \"potentialPoolTarget\": 100,\n    \"customerTableHighIcp\": 0,\n    \"refillNeeded\": 0,\n    \"executableCompanies\": 75,\n    \"executableReserveTarget\": 130,\n    \"executableReserveNeeded\": 55,\n    \"executableByChannel\": {\n      \"linkedin\": 5,\n      \"facebook\": 10,\n      \"instagram\": 5,\n      \"email\": 32,\n      \"website_form\": 23\n    },\n    \"verifiedSocialCompanies\": 20,\n    \"verifiedSocialReserveTarget\": 20,\n    \"verifiedSocialReserveNeeded\": 0,\n    \"enrichmentBacklogCount\": 25,\n    \"googleDiscovered\": 100,\n    \"facebookDiscovered\": 8,\n    \"websiteContactDiscovered\": 37,\n    \"scheduledLater\": 0,\n    \"cooldown\": 30,\n    \"emailPriority\": 0,\n    \"openAgencyMarket\": 15,\n    \"exclusiveAgencySkipped\": 1,\n    \"needsVerification\": 0,\n    \"retainedLowIcp\": 0\n  },\n  \"bugErrors\": 13,\n  \"queueFile\": \"E:\\\\New project\\\\outreach-dashboard\\\\daily-runs\\\\2026-08-14-daily-automation.json\",\n  \"csvFile\": \"E:\\\\New project\\\\outreach-dashboard\\\\daily-runs\\\\2026-08-14-daily-queue.csv\"\n}",
+    "stdout": "{\n  \"date\": \"2026-08-14\",\n  \"summary\": {\n    \"totalLeads\": 16,\n    \"highIcp\": 16,\n    \"readyToDevelop\": 25,\n    \"dueNow\": 92,\n    \"visibleTodayQueue\": 100,\n    \"potentialPool\": 100,\n    \"potentialPoolTarget\": 100,\n    \"customerTableHighIcp\": 0,\n    \"refillNeeded\": 0,\n    \"executableCompanies\": 76,\n    \"executableReserveTarget\": 130,\n    \"executableReserveNeeded\": 54,\n    \"executableByChannel\": {\n      \"linkedin\": 5,\n      \"facebook\": 10,\n      \"instagram\": 5,\n      \"email\": 33,\n      \"website_form\": 23\n    },\n    \"verifiedSocialCompanies\": 20,\n    \"verifiedSocialReserveTarget\": 20,\n    \"verifiedSocialReserveNeeded\": 0,\n    \"enrichmentBacklogCount\": 24,\n    \"googleDiscovered\": 92,\n    \"facebookDiscovered\": 7,\n    \"websiteContactDiscovered\": 38,\n    \"scheduledLater\": 0,\n    \"cooldown\": 30,\n    \"emailPriority\": 0,\n    \"openAgencyMarket\": 15,\n    \"exclusiveAgencySkipped\": 1,\n    \"needsVerification\": 0,\n    \"retainedLowIcp\": 0\n  },\n  \"bugErrors\": 13,\n  \"queueFile\": \"E:\\\\New project\\\\outreach-dashboard\\\\daily-runs\\\\2026-08-14-daily-automation.json\",\n  \"csvFile\": \"E:\\\\New project\\\\outreach-dashboard\\\\daily-runs\\\\2026-08-14-daily-queue.csv\"\n}",
     "stderr": "",
     "error": "",
     "visibility": {
-      "updatedAt": "2026-08-14T05:57:15.595Z",
+      "updatedAt": "2026-08-14T06:31:26.255Z",
       "source": "main-refreshDailyAutomationArtifacts",
       "runDate": "2026-08-14",
-      "artifactGeneratedAt": "2026-08-14T05:57:13.523Z",
-      "executionGeneratedAt": "2026-08-14T05:51:09.011Z",
-      "githubSyncUpdatedAt": "2026-08-14T05:20:20.977Z",
+      "artifactGeneratedAt": "2026-08-14T06:31:22.572Z",
+      "executionGeneratedAt": "2026-08-14T06:19:58.791Z",
+      "githubSyncUpdatedAt": "2026-08-14T05:58:58.445Z",
       "counts": {
-        "dailyQueue": 100,
-        "googleDiscovered": 100,
-        "websiteContact": 83,
+        "dailyQueue": 92,
+        "googleDiscovered": 92,
+        "websiteContact": 77,
         "cooldownQueue": 30,
         "scheduledLater": 0
       },
@@ -1725,7 +1715,7 @@
       "ALIBABA_SMTP_SECURITY_PASSWORD"
     ]
   },
-  "ledgerReconciliationCount": 1,
+  "ledgerReconciliationCount": 3,
   "externalEvidenceReconciliationCount": 0,
-  "completedAt": "2026-08-14T05:57:16.642Z"
+  "completedAt": "2026-08-14T06:31:27.308Z"
 }
