@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-14T09:29:31.375Z",
+  "updatedAt": "2026-08-14T10:05:44.733Z",
   "cursor": 327,
   "companyCount": 407,
   "verifications": {
@@ -41,7 +41,7 @@
     "72hours": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-14T09:02:19.371Z",
+        "verifiedAt": "2026-08-14T10:05:37.823Z",
         "evidenceUrl": "https://72hours.ca/",
         "httpStatus": 200,
         "signals": [
@@ -62,12 +62,14 @@
     },
     "atmosphere": {
       "firstPartyChannelVerification": {
-        "status": "unreachable",
-        "verifiedAt": "2026-08-14T09:03:13.909Z",
+        "status": "checked",
+        "verifiedAt": "2026-08-14T10:05:39.998Z",
         "evidenceUrl": "https://www.atmosphere.ca/",
-        "httpStatus": 0,
-        "signals": [],
-        "error": "timeout"
+        "httpStatus": 200,
+        "signals": [
+          "contact_invitation"
+        ],
+        "error": ""
       },
       "contactCapabilityVerified": false,
       "externalVerificationStatus": "",
@@ -77,12 +79,14 @@
     },
     "altitude sports": {
       "firstPartyChannelVerification": {
-        "status": "unreachable",
-        "verifiedAt": "2026-08-14T09:03:13.932Z",
+        "status": "checked",
+        "verifiedAt": "2026-08-14T10:05:37.839Z",
         "evidenceUrl": "https://www.altitude-sports.com/",
-        "httpStatus": 0,
-        "signals": [],
-        "error": "fetch failed"
+        "httpStatus": 200,
+        "signals": [
+          "form_control"
+        ],
+        "error": ""
       },
       "contactCapabilityVerified": false,
       "externalVerificationStatus": "",
@@ -94,12 +98,14 @@
     },
     "the last hunt": {
       "firstPartyChannelVerification": {
-        "status": "unreachable",
-        "verifiedAt": "2026-08-14T09:03:13.932Z",
+        "status": "checked",
+        "verifiedAt": "2026-08-14T10:05:40.685Z",
         "evidenceUrl": "https://www.thelasthunt.com/",
-        "httpStatus": 0,
-        "signals": [],
-        "error": "fetch failed"
+        "httpStatus": 200,
+        "signals": [
+          "form_control"
+        ],
+        "error": ""
       },
       "contactCapabilityVerified": false,
       "externalVerificationStatus": "",
@@ -112,7 +118,7 @@
     "marmot basin retail": {
       "firstPartyChannelVerification": {
         "status": "unreachable",
-        "verifiedAt": "2026-08-14T09:03:13.933Z",
+        "verifiedAt": "2026-08-14T10:05:40.368Z",
         "evidenceUrl": "https://www.marmotbasin.com/",
         "httpStatus": 0,
         "signals": [],
@@ -450,7 +456,7 @@
     "moosejaw": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-14T09:28:53.766Z",
+        "verifiedAt": "2026-08-14T10:05:24.898Z",
         "evidenceUrl": "https://www.publiclands.com/?segment=mjtopl",
         "httpStatus": 200,
         "signals": [
@@ -469,12 +475,14 @@
     },
     "eastern mountain sports": {
       "firstPartyChannelVerification": {
-        "status": "unreachable",
-        "verifiedAt": "2026-08-14T09:03:13.932Z",
+        "status": "checked",
+        "verifiedAt": "2026-08-14T10:05:40.577Z",
         "evidenceUrl": "https://www.ems.com/",
-        "httpStatus": 0,
-        "signals": [],
-        "error": "fetch failed"
+        "httpStatus": 200,
+        "signals": [
+          "form_control"
+        ],
+        "error": ""
       },
       "contactCapabilityVerified": false,
       "externalVerificationStatus": "",
@@ -488,7 +496,7 @@
     "pack rat outdoor center": {
       "firstPartyChannelVerification": {
         "status": "unreachable",
-        "verifiedAt": "2026-08-14T09:02:13.228Z",
+        "verifiedAt": "2026-08-14T10:05:43.972Z",
         "evidenceUrl": "https://www.packratoc.com/",
         "httpStatus": 0,
         "signals": [],
@@ -502,12 +510,14 @@
     },
     "massey outfitters": {
       "firstPartyChannelVerification": {
-        "status": "unreachable",
-        "verifiedAt": "2026-08-14T09:03:13.940Z",
+        "status": "checked",
+        "verifiedAt": "2026-08-14T10:05:44.732Z",
         "evidenceUrl": "https://www.masseysoutfitters.com/",
-        "httpStatus": 0,
-        "signals": [],
-        "error": "fetch failed"
+        "httpStatus": 200,
+        "signals": [
+          "contact_invitation"
+        ],
+        "error": ""
       },
       "contactCapabilityVerified": false,
       "externalVerificationStatus": "",
@@ -821,7 +831,7 @@
     "bass pro shops": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-14T09:28:47.563Z",
+        "verifiedAt": "2026-08-14T10:05:15.036Z",
         "evidenceUrl": "https://vendorportal.basspro.com/default.aspx",
         "httpStatus": 200,
         "signals": [
@@ -1620,7 +1630,7 @@
     "backcountry experience": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-14T09:28:59.725Z",
+        "verifiedAt": "2026-08-14T10:05:20.701Z",
         "evidenceUrl": "https://www.bcexp.com/",
         "httpStatus": 200,
         "signals": [
@@ -1784,7 +1794,7 @@
     "ute mountaineer": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-14T09:28:50.662Z",
+        "verifiedAt": "2026-08-14T10:05:23.194Z",
         "evidenceUrl": "https://www.utemountaineer.com/",
         "httpStatus": 200,
         "signals": [
@@ -2086,7 +2096,7 @@
     "avidmax outfitters": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-14T08:09:16.978Z",
+        "verifiedAt": "2026-08-14T10:05:33.739Z",
         "evidenceUrl": "https://www.avidmax.com/contact-us/",
         "httpStatus": 200,
         "signals": [
@@ -2107,7 +2117,7 @@
     "gear west": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-14T08:09:17.927Z",
+        "verifiedAt": "2026-08-14T10:05:32.989Z",
         "evidenceUrl": "https://www.gearwest.com/",
         "httpStatus": 200,
         "signals": [
@@ -2152,7 +2162,7 @@
     "public lands": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-14T07:35:38.784Z",
+        "verifiedAt": "2026-08-14T10:05:35.054Z",
         "evidenceUrl": "https://www.publiclands.com/",
         "httpStatus": 200,
         "signals": [
@@ -2172,7 +2182,7 @@
     "campman": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-14T09:02:11.222Z",
+        "verifiedAt": "2026-08-14T10:05:35.362Z",
         "evidenceUrl": "https://www.campman.com/",
         "httpStatus": 200,
         "signals": [
@@ -2194,7 +2204,7 @@
     "the mountaineer": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-14T09:02:14.683Z",
+        "verifiedAt": "2026-08-14T10:05:35.170Z",
         "evidenceUrl": "https://mountaineer.com/privacy-policy/",
         "httpStatus": 200,
         "signals": [
@@ -2215,7 +2225,7 @@
     "sierra": {
       "firstPartyChannelVerification": {
         "status": "unreachable",
-        "verifiedAt": "2026-08-14T09:02:13.676Z",
+        "verifiedAt": "2026-08-14T10:05:35.674Z",
         "evidenceUrl": "https://www.sierra.com/",
         "httpStatus": 403,
         "signals": [],
@@ -2233,7 +2243,7 @@
     "outdoorplay": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-14T09:02:14.341Z",
+        "verifiedAt": "2026-08-14T10:05:36.134Z",
         "evidenceUrl": "https://www.outdoorplay.com/",
         "httpStatus": 200,
         "signals": [
@@ -2256,7 +2266,7 @@
     "campmor": {
       "firstPartyChannelVerification": {
         "status": "unreachable",
-        "verifiedAt": "2026-08-14T09:02:13.524Z",
+        "verifiedAt": "2026-08-14T10:05:35.660Z",
         "evidenceUrl": "https://www.campmor.com/",
         "httpStatus": 403,
         "signals": [],
@@ -2274,7 +2284,7 @@
     "ramsey outdoor": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-14T09:28:52.664Z",
+        "verifiedAt": "2026-08-14T10:05:24.836Z",
         "evidenceUrl": "https://ramseyoutdoor.com/",
         "httpStatus": 200,
         "signals": [
@@ -2295,11 +2305,11 @@
     "quest outdoors": {
       "firstPartyChannelVerification": {
         "status": "unreachable",
-        "verifiedAt": "2026-08-14T09:02:17.751Z",
+        "verifiedAt": "2026-08-14T10:05:36.165Z",
         "evidenceUrl": "https://questoutdoors.com/",
-        "httpStatus": 0,
+        "httpStatus": 404,
         "signals": [],
-        "error": "fetch failed"
+        "error": ""
       },
       "contactCapabilityVerified": false,
       "externalVerificationStatus": "",
@@ -2310,7 +2320,7 @@
     "river sports outfitters": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-14T09:02:15.632Z",
+        "verifiedAt": "2026-08-14T10:05:36.972Z",
         "evidenceUrl": "https://www.riversportsoutfitters.com/",
         "httpStatus": 200,
         "signals": [
@@ -2331,7 +2341,7 @@
     "rock creek": {
       "firstPartyChannelVerification": {
         "status": "unreachable",
-        "verifiedAt": "2026-08-14T09:02:15.694Z",
+        "verifiedAt": "2026-08-14T10:05:37.146Z",
         "evidenceUrl": "https://www.rockcreek.com/",
         "httpStatus": 0,
         "signals": [],
@@ -2346,7 +2356,7 @@
     "half moon outfitters": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-14T09:02:15.079Z",
+        "verifiedAt": "2026-08-14T10:05:36.514Z",
         "evidenceUrl": "https://www.halfmoonoutfitters.com/",
         "httpStatus": 200,
         "signals": [
@@ -2367,7 +2377,7 @@
     "sunlight sports": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-14T09:28:52.810Z",
+        "verifiedAt": "2026-08-14T10:05:24.095Z",
         "evidenceUrl": "https://www.sunlightsports.com/",
         "httpStatus": 200,
         "signals": [
@@ -2386,23 +2396,28 @@
     },
     "jax outdoor gear": {
       "firstPartyChannelVerification": {
-        "status": "unreachable",
-        "verifiedAt": "2026-08-14T09:03:13.896Z",
-        "evidenceUrl": "https://www.jaxgoods.com/",
-        "httpStatus": 0,
-        "signals": [],
-        "error": "timeout"
+        "status": "checked",
+        "verifiedAt": "2026-08-14T10:05:37.274Z",
+        "evidenceUrl": "https://jaxgoods.com/",
+        "httpStatus": 200,
+        "signals": [
+          "form_control"
+        ],
+        "error": ""
       },
       "contactCapabilityVerified": false,
       "externalVerificationStatus": "",
       "publicEmail": "",
       "emailVerificationStatus": "",
-      "socialProfiles": []
+      "socialProfiles": [
+        "https://www.facebook.com/jaxoutdoorgear",
+        "https://www.instagram.com/jaxoutdoorgear/"
+      ]
     },
     "christy sports": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-14T09:02:19.437Z",
+        "verifiedAt": "2026-08-14T10:05:38.369Z",
         "evidenceUrl": "https://www.christysports.com/",
         "httpStatus": 200,
         "signals": [
@@ -2423,7 +2438,7 @@
     "paragon sports": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-14T09:28:53.103Z",
+        "verifiedAt": "2026-08-14T10:05:25.074Z",
         "evidenceUrl": "https://paragonsports.com/",
         "httpStatus": 200,
         "signals": [
@@ -3008,7 +3023,7 @@
     "canada outdoors": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-14T08:09:16.821Z",
+        "verifiedAt": "2026-08-14T10:05:30.825Z",
         "evidenceUrl": "https://www.canadaoutdoors.com/pages/customer-service",
         "httpStatus": 200,
         "signals": [
@@ -3117,12 +3132,16 @@
     },
     "outdoors plus": {
       "firstPartyChannelVerification": {
-        "status": "unreachable",
-        "verifiedAt": "2026-08-14T09:03:13.947Z",
+        "status": "checked",
+        "verifiedAt": "2026-08-14T10:05:44.118Z",
         "evidenceUrl": "https://outdoorsplus.ca/services/camping/",
-        "httpStatus": 0,
-        "signals": [],
-        "error": "fetch failed"
+        "httpStatus": 200,
+        "signals": [
+          "form_control",
+          "public_business_email",
+          "contact_invitation"
+        ],
+        "error": ""
       },
       "contactCapabilityVerified": true,
       "externalVerificationStatus": "official_contact_form_verified",
@@ -4405,7 +4424,7 @@
     "interex industries": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-14T08:52:32.046Z",
+        "verifiedAt": "2026-08-14T10:05:27.246Z",
         "evidenceUrl": "https://www.interexind.ca/",
         "httpStatus": 200,
         "signals": [
@@ -4424,7 +4443,7 @@
     "blue ridge knives": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-14T08:52:32.280Z",
+        "verifiedAt": "2026-08-14T10:05:26.266Z",
         "evidenceUrl": "https://www.blueridgeknives.com/wholesale-camping-tools/",
         "httpStatus": 200,
         "signals": [
@@ -4445,7 +4464,7 @@
     "zia works distribution": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-14T08:09:11.157Z",
+        "verifiedAt": "2026-08-14T10:05:27.837Z",
         "evidenceUrl": "https://www.nwziaworks.com/",
         "httpStatus": 200,
         "signals": [
@@ -4466,7 +4485,7 @@
     "urban outdoor sales": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-14T08:09:11.165Z",
+        "verifiedAt": "2026-08-14T10:05:27.828Z",
         "evidenceUrl": "https://www.urbanoutdoorsales.net/",
         "httpStatus": 200,
         "signals": [
@@ -4487,7 +4506,7 @@
     "outdoor market alliance": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-14T08:09:10.914Z",
+        "verifiedAt": "2026-08-14T10:05:27.606Z",
         "evidenceUrl": "https://www.outdoormarketalliance.org/",
         "httpStatus": 200,
         "signals": [
@@ -4526,7 +4545,7 @@
     "round the wheel collective": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-14T08:09:16.439Z",
+        "verifiedAt": "2026-08-14T10:05:32.929Z",
         "evidenceUrl": "https://www.roundthewheelcollective.com/",
         "httpStatus": 200,
         "signals": [],
@@ -4800,7 +4819,7 @@
     "mountain source": {
       "firstPartyChannelVerification": {
         "status": "unreachable",
-        "verifiedAt": "2026-08-14T09:28:46.801Z",
+        "verifiedAt": "2026-08-14T10:05:14.152Z",
         "evidenceUrl": "",
         "httpStatus": 0,
         "signals": [],
@@ -5496,7 +5515,7 @@
     "the alpine cowboy": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-14T09:28:51.220Z",
+        "verifiedAt": "2026-08-14T10:05:18.513Z",
         "evidenceUrl": "https://alpinecowboy.com/index.html",
         "httpStatus": 200,
         "signals": [],
@@ -5525,20 +5544,18 @@
     },
     "parallel 45 sales group": {
       "firstPartyChannelVerification": {
-        "status": "checked",
-        "verifiedAt": "2026-08-14T09:28:50.309Z",
-        "evidenceUrl": "https://www.parallel45sales.com/",
-        "httpStatus": 200,
+        "status": "unreachable",
+        "verifiedAt": "2026-08-14T10:05:22.633Z",
+        "evidenceUrl": "https://parallel45sales.com/",
+        "httpStatus": 0,
         "signals": [],
-        "error": ""
+        "error": "fetch failed"
       },
       "contactCapabilityVerified": false,
       "externalVerificationStatus": "",
       "publicEmail": "",
       "emailVerificationStatus": "",
-      "socialProfiles": [
-        "https://www.instagram.com/parallel45sales/"
-      ]
+      "socialProfiles": []
     },
     "cordillera sales": {
       "firstPartyChannelVerification": {
@@ -6136,7 +6153,7 @@
     "precision sales unlimited": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-14T08:09:15.401Z",
+        "verifiedAt": "2026-08-14T10:05:29.598Z",
         "evidenceUrl": "https://www.precisionsalesunlimited.com/",
         "httpStatus": 200,
         "signals": [
@@ -6155,7 +6172,7 @@
     "precision sales and marketing": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-14T08:09:14.298Z",
+        "verifiedAt": "2026-08-14T10:05:30.282Z",
         "evidenceUrl": "https://www.precisionsalesandmarketing.com/services",
         "httpStatus": 200,
         "signals": [
@@ -6173,7 +6190,7 @@
     "pfp and associates": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-14T08:09:14.979Z",
+        "verifiedAt": "2026-08-14T10:05:30.396Z",
         "evidenceUrl": "https://www.pfpandassociates.com/",
         "httpStatus": 200,
         "signals": [
@@ -6191,7 +6208,7 @@
     "three mountain associates": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-14T08:09:18.780Z",
+        "verifiedAt": "2026-08-14T10:05:33.569Z",
         "evidenceUrl": "https://www.threemountainassociates.com/",
         "httpStatus": 200,
         "signals": [],
@@ -6209,7 +6226,7 @@
     "awesome outdoors group": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-14T08:09:18.666Z",
+        "verifiedAt": "2026-08-14T10:05:34.382Z",
         "evidenceUrl": "https://www.awesomeoutdoorsgroup.com/about-us",
         "httpStatus": 200,
         "signals": [
@@ -6434,7 +6451,7 @@
     "nla agency": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-14T08:09:15.509Z",
+        "verifiedAt": "2026-08-14T10:05:32.016Z",
         "evidenceUrl": "https://nlaagency.com/",
         "httpStatus": 200,
         "signals": [
@@ -6456,7 +6473,7 @@
     "perpetual motion nw": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-14T09:28:54.733Z",
+        "verifiedAt": "2026-08-14T10:05:26.038Z",
         "evidenceUrl": "https://perpetualmotionnw.com/",
         "httpStatus": 200,
         "signals": [
@@ -6512,7 +6529,7 @@
     "mutinous sales and marketing": {
       "firstPartyChannelVerification": {
         "status": "unreachable",
-        "verifiedAt": "2026-08-14T09:28:53.767Z",
+        "verifiedAt": "2026-08-14T10:05:25.075Z",
         "evidenceUrl": "",
         "httpStatus": 0,
         "signals": [],
@@ -6674,7 +6691,7 @@
     "lathrop associates": {
       "firstPartyChannelVerification": {
         "status": "unreachable",
-        "verifiedAt": "2026-08-14T09:28:49.376Z",
+        "verifiedAt": "2026-08-14T10:05:18.704Z",
         "evidenceUrl": "https://cdn.shopify.com/s/files/1/0574/0642/3174/files/Cascade-Designs-US-Sales-Reps.pdf?v=1725838082",
         "httpStatus": 404,
         "signals": [],
@@ -7202,7 +7219,7 @@
     "nicolas rochon agency": {
       "firstPartyChannelVerification": {
         "status": "checked",
-        "verifiedAt": "2026-08-14T09:28:51.650Z",
+        "verifiedAt": "2026-08-14T10:05:22.215Z",
         "evidenceUrl": "https://www.agencenr.com/en/",
         "httpStatus": 200,
         "signals": [
@@ -7595,5 +7612,5 @@
     }
   },
   "scopedCompanyCount": 266,
-  "campaignCursor": 189
+  "campaignCursor": 239
 }
