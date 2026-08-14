@@ -1136,6 +1136,30 @@
     "verifiedAt": "2026-08-14T08:03:00.000Z"
   },
   {
+    "company": "Summit Rev",
+    "country": "United States",
+    "url": "https://www.summit-rev.com/",
+    "contactUrl": "https://www.summit-rev.com/contact",
+    "publicEmail": "info@summit-rev.com",
+    "contactEmail": "info@summit-rev.com",
+    "publicEmailStatus": "Official company-domain email published on the agency's first-party contact page.",
+    "emailVerificationStatus": "official_public_business_email",
+    "emailEvidence": "official_nationwide_outdoor_agency_contact_page",
+    "segment": "United States nationwide premium outdoor sales agency",
+    "customerType": "sales_agency",
+    "fitScore": 98,
+    "background": "Summit Rev is a nationwide sales agency for premium outdoor, hunting, fishing and lifestyle brands, focused on wholesale growth, market expansion and retailer relationships.",
+    "buyerPersona": "Agency principal or business-development leader responsible for evaluating new brand partnerships.",
+    "evidenceUrl": "https://www.summit-rev.com/contact",
+    "dataSources": [
+      "official agency website",
+      "official nationwide outdoor sales-agency description",
+      "official company-domain email"
+    ],
+    "externalVerificationStatus": "official_supplier_email_verified",
+    "verifiedAt": "2026-08-14T09:12:00.000Z"
+  },
+  {
     "company": "Gravy Sales LLC",
     "country": "United States",
     "url": "https://www.gravysales.com/",

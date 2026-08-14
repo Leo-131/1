@@ -1570,6 +1570,14 @@ test('first-party reserve promotes Gravy Sales official outdoor-agency email', (
   assert.match(gravySales.background, /EXPED/);
 });
 
+test('first-party reserve promotes Summit Rev official nationwide outdoor-agency email', () => {
+  const summitRev = verifiedExternalCandidates.find(item => item.company === 'Summit Rev');
+  assert.equal(summitRev.contactEmail, 'info@summit-rev.com');
+  assert.equal(summitRev.evidenceUrl, 'https://www.summit-rev.com/contact');
+  assert.equal(summitRev.externalVerificationStatus, 'official_supplier_email_verified');
+  assert.match(summitRev.background, /nationwide sales agency/);
+});
+
 test('email UI execution is hard-limited to Alibaba Mail and rejects alternate clients', () => {
   assert.ok(mainSource.includes("process.env.OUTREACH_EMAIL_UI_PROVIDER || 'alibaba_webmail'"));
   assert.ok(mainSource.includes("requestedEmailUiProvider !== 'alibaba_webmail'"));
