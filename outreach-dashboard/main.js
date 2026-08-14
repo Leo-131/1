@@ -429,7 +429,8 @@ function blockingAutomationResultFor(item) {
     // same company again that day; advance to the next safe customer.
     .filter((result) => !(verifiedBusinessEmailTarget(item).ok
       && ['website_contact_ready', 'website_contact_unreachable_skip'].includes(result.status)
-      && !/email_sender_delivery_disabled/i.test(String(result.evidence || ''))
+      && (!/email_sender_delivery_disabled/i.test(String(result.evidence || ''))
+        || senderDisabledFailurePredatesRestoration(result))
       && (!/alibaba_webmail_login_required|alibaba_webmail_session_unavailable/i.test(String(result.evidence || ''))
         || liveAlibabaWebmailSessionReady)))
     // A prepared/unreachable website path is a bounded attempt, not a
@@ -488,6 +489,15 @@ function configuredEmailSenderRestoredAt() {
   } catch {
     return 0;
   }
+}
+
+function senderDisabledFailurePredatesRestoration(result = {}) {
+  const evidence = String(result.evidence || '');
+  if (!/email_sender_delivery_disabled|sender_identity_dsn_observed/i.test(evidence)) return false;
+  if (/send_clicked|physical_send|customer_interaction|message_sent/i.test(evidence)) return false;
+  const restoredAt = configuredEmailSenderRestoredAt();
+  const failedAt = Date.parse(result.timestamp || result.resultCheckedAt || '');
+  return restoredAt > 0 && Number.isFinite(failedAt) && failedAt < restoredAt;
 }
 
 function automationLocalDay(value, timeZone = 'Asia/Shanghai') {

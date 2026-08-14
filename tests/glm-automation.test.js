@@ -1486,6 +1486,13 @@ test('verified email priority rows use Alibaba Mail and old pre-send timeouts re
   assert.match(mainSource, /recoverable = \[[\s\S]*'customer_execution_timeout'/);
 });
 
+test('owner-confirmed sender restoration releases only older pre-send sender-disabled website attempts', () => {
+  assert.ok(mainSource.includes('function senderDisabledFailurePredatesRestoration'));
+  assert.match(mainSource, /failedAt < restoredAt/);
+  assert.match(mainSource, /send_clicked\|physical_send\|customer_interaction\|message_sent/);
+  assert.ok(mainSource.includes('|| senderDisabledFailurePredatesRestoration(result)'));
+});
+
 test('website social fallback preserves prior dedicated Chrome evidence', () => {
   assert.ok(mainSource.includes('chromeOpen: socialResult && socialResult.chromeOpen || chromeOpen'));
   assert.ok(mainSource.includes('signal: options.signal'));
