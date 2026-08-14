@@ -1543,6 +1543,17 @@ test('first-party reserve promotes 4 Point Sales official brand-representation e
   assert.equal(fourPoint.externalVerificationStatus, 'official_supplier_email_verified');
 });
 
+test('first-party reserve promotes Daybreak and Outdoor Sports Marketing official agency emails', () => {
+  const daybreak = verifiedExternalCandidates.find(item => item.company === 'Daybreak Sales');
+  const osm = verifiedExternalCandidates.find(item => item.company === 'Outdoor Sports Marketing');
+  assert.equal(daybreak.contactEmail, 'colt@daybreakoutdoorsales.com');
+  assert.equal(daybreak.evidenceUrl, 'https://daybreak-sales.com/');
+  assert.equal(osm.contactEmail, 'info@meetosm.com');
+  assert.equal(osm.evidenceUrl, 'https://www.meetosm.com/');
+  assert.equal(daybreak.externalVerificationStatus, 'official_supplier_email_verified');
+  assert.equal(osm.externalVerificationStatus, 'official_supplier_email_verified');
+});
+
 test('email UI execution is hard-limited to Alibaba Mail and rejects alternate clients', () => {
   assert.ok(mainSource.includes("process.env.OUTREACH_EMAIL_UI_PROVIDER || 'alibaba_webmail'"));
   assert.ok(mainSource.includes("requestedEmailUiProvider !== 'alibaba_webmail'"));

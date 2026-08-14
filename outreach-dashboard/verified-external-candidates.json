@@ -996,6 +996,54 @@
     "verifiedAt": "2026-08-14T07:36:00.000Z"
   },
   {
+    "company": "Daybreak Sales",
+    "country": "United States",
+    "url": "https://daybreak-sales.com/",
+    "contactUrl": "https://daybreak-sales.com/",
+    "publicEmail": "colt@daybreakoutdoorsales.com",
+    "contactEmail": "colt@daybreakoutdoorsales.com",
+    "publicEmailStatus": "Official company-domain email published repeatedly on the agency's first-party brand-representation homepage.",
+    "emailVerificationStatus": "official_public_business_email",
+    "emailEvidence": "official_brand_representation_homepage",
+    "segment": "Southeastern United States outdoor and lifestyle brand sales agency",
+    "customerType": "sales_agency",
+    "fitScore": 97,
+    "background": "Daybreak Sales represents premium outdoor and lifestyle brands across the Southeast and builds retailer partnerships for brand growth.",
+    "buyerPersona": "Agency principal responsible for new outdoor brand representation.",
+    "evidenceUrl": "https://daybreak-sales.com/",
+    "dataSources": [
+      "official agency website",
+      "official brand-representation description",
+      "official company-domain email"
+    ],
+    "externalVerificationStatus": "official_supplier_email_verified",
+    "verifiedAt": "2026-08-14T08:29:00.000Z"
+  },
+  {
+    "company": "Outdoor Sports Marketing",
+    "country": "United States",
+    "url": "https://www.meetosm.com/",
+    "contactUrl": "https://www.meetosm.com/",
+    "publicEmail": "info@meetosm.com",
+    "contactEmail": "info@meetosm.com",
+    "publicEmailStatus": "Official company-domain email published in the agency's first-party contact section.",
+    "emailVerificationStatus": "official_public_business_email",
+    "emailEvidence": "official_agency_contact_section",
+    "segment": "United States outdoor and active-lifestyle sales and marketing agency",
+    "customerType": "sales_agency",
+    "fitScore": 98,
+    "background": "Outdoor Sports Marketing provides sales, marketing, training, analytics and retail strategy for outdoor and active-lifestyle brands.",
+    "buyerPersona": "Agency founder or channel-sales leader responsible for new brand partnerships.",
+    "evidenceUrl": "https://www.meetosm.com/",
+    "dataSources": [
+      "official agency website",
+      "official outdoor-brand representation description",
+      "official company-domain email"
+    ],
+    "externalVerificationStatus": "official_supplier_email_verified",
+    "verifiedAt": "2026-08-14T08:29:00.000Z"
+  },
+  {
     "company": "4 Point Sales",
     "country": "United States",
     "url": "https://www.4pointsales.com/",
