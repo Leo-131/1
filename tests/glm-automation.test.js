@@ -1604,6 +1604,25 @@ test('first-party reserve promotes Tackett Brothers official outdoor-agency emai
   assert.match(tackett.background, /outdoor, hunting, fishing/);
 });
 
+test('first-party reserve promotes Green River Sales official founder email', () => {
+  const greenRiver = verifiedExternalCandidates.find(item => item.company === 'Green River Sales Group');
+  assert.equal(greenRiver.contactEmail, 'pat@greenriversales.com');
+  assert.equal(greenRiver.evidenceUrl, 'https://www.greenriversales.com/ourteam');
+  assert.equal(greenRiver.externalVerificationStatus, 'official_supplier_email_verified');
+  assert.match(greenRiver.background, /outdoor brands/);
+  assert.match(greenRiver.buyerPersona, /Founder/);
+  assert.equal(verifiedExternalCandidates.filter(item => item.company === 'Green River Sales Group').length, 1);
+});
+
+test('first-party reserve promotes Alpin Sales official outdoor-agency email', () => {
+  const alpin = verifiedExternalCandidates.find(item => item.company === 'Alpin Sales');
+  assert.equal(alpin.contactEmail, 'service@alpinsales.com');
+  assert.equal(alpin.evidenceUrl, 'https://www.alpinsales.com/contact');
+  assert.equal(alpin.externalVerificationStatus, 'official_supplier_email_verified');
+  assert.match(alpin.background, /Mammut/);
+  assert.match(alpin.background, /Katadyn/);
+});
+
 test('email UI execution is hard-limited to Alibaba Mail and rejects alternate clients', () => {
   assert.ok(mainSource.includes("process.env.OUTREACH_EMAIL_UI_PROVIDER || 'alibaba_webmail'"));
   assert.ok(mainSource.includes("requestedEmailUiProvider !== 'alibaba_webmail'"));

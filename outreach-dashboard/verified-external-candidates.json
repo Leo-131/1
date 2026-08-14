@@ -1136,6 +1136,30 @@
     "verifiedAt": "2026-08-14T08:03:00.000Z"
   },
   {
+    "company": "Alpin Sales",
+    "country": "United States",
+    "url": "https://www.alpinsales.com/",
+    "contactUrl": "https://www.alpinsales.com/contact",
+    "publicEmail": "service@alpinsales.com",
+    "contactEmail": "service@alpinsales.com",
+    "publicEmailStatus": "Official company-domain service email published on the agency's first-party contact page.",
+    "emailVerificationStatus": "official_public_business_email",
+    "emailEvidence": "official_denver_outdoor_agency_contact_page",
+    "segment": "Rocky Mountain outdoor brand sales and service agency",
+    "customerType": "sales_agency",
+    "fitScore": 98,
+    "background": "Alpin Sales provides regional sales and service for outdoor brands including Mammut, Katadyn, KUMA Outdoor Gear, Sweet Protection, Tubbs and Atlas across Rocky Mountain retail channels.",
+    "buyerPersona": "Agency principal or service leader responsible for evaluating new outdoor brand representation.",
+    "evidenceUrl": "https://www.alpinsales.com/contact",
+    "dataSources": [
+      "official agency website",
+      "official outdoor-brand portfolio",
+      "official company-domain service email"
+    ],
+    "externalVerificationStatus": "official_supplier_email_verified",
+    "verifiedAt": "2026-08-14T09:31:00.000Z"
+  },
+  {
     "company": "Tackett Brothers Inc",
     "country": "United States",
     "url": "https://tackettbrothers.com/",
