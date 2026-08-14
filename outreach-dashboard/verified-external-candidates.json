@@ -919,5 +919,29 @@
     ],
     "externalVerificationStatus": "official_supplier_route_verified",
     "verifiedAt": "2026-08-14T06:50:00.000Z"
+  },
+  {
+    "company": "Eastern Outdoor Sales Inc",
+    "country": "Canada",
+    "url": "https://www.eosi.ca/",
+    "contactUrl": "https://www.eosi.ca/our-team",
+    "publicEmail": "denise@eosi.ca",
+    "contactEmail": "denise@eosi.ca",
+    "publicEmailStatus": "Official company-domain National Accounts email published on the agency team page.",
+    "emailVerificationStatus": "official_public_business_email",
+    "emailEvidence": "official_agency_team_page",
+    "segment": "Canadian national outdoor sales agency and major-account representative",
+    "customerType": "sales_agency",
+    "fitScore": 97,
+    "background": "Eastern Outdoor Sales Inc provides a dedicated national sales team covering more than 98% of the Canadian population and sells outdoor recreational brands to dealers, distributors and mass merchants.",
+    "buyerPersona": "National Accounts lead or agency principal responsible for new manufacturer partnerships.",
+    "evidenceUrl": "https://www.eosi.ca/our-team",
+    "dataSources": [
+      "official agency homepage",
+      "official team page",
+      "official company-domain National Accounts email"
+    ],
+    "externalVerificationStatus": "official_supplier_email_verified",
+    "verifiedAt": "2026-08-14T07:31:00.000Z"
   }
 ]

@@ -1493,6 +1493,24 @@ test('owner-confirmed sender restoration releases only older pre-send sender-dis
   assert.ok(mainSource.includes('|| senderDisabledFailurePredatesRestoration(result)'));
 });
 
+test('first-party reserve includes Eastern Outdoor Sales national accounts route', () => {
+  const candidate = verifiedExternalCandidates.find(item => item.company === 'Eastern Outdoor Sales Inc');
+  assert.ok(candidate);
+  assert.equal(candidate.country, 'Canada');
+  assert.equal(candidate.customerType, 'sales_agency');
+  assert.equal(candidate.contactEmail, 'denise@eosi.ca');
+  assert.equal(candidate.evidenceUrl, 'https://www.eosi.ca/our-team');
+  assert.equal(candidate.externalVerificationStatus, 'official_supplier_email_verified');
+});
+
+test('email UI execution is hard-limited to Alibaba Mail and rejects alternate clients', () => {
+  assert.ok(mainSource.includes("process.env.OUTREACH_EMAIL_UI_PROVIDER || 'alibaba_webmail'"));
+  assert.ok(mainSource.includes("requestedEmailUiProvider !== 'alibaba_webmail'"));
+  assert.ok(mainSource.includes('alibaba_webmail_only;no_send_performed'));
+  assert.match(outreachPolicySource, /Never open, inspect, automate, or send through Foxmail/);
+  assert.match(optimizedPromptSource, /Alibaba Mail web UI is the only permitted email-sending surface/);
+});
+
 test('website social fallback preserves prior dedicated Chrome evidence', () => {
   assert.ok(mainSource.includes('chromeOpen: socialResult && socialResult.chromeOpen || chromeOpen'));
   assert.ok(mainSource.includes('signal: options.signal'));

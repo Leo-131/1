@@ -3279,6 +3279,17 @@ async function verifyPriorAlibabaWebmailSend(lead = {}, subject = '') {
 }
 
 async function runVerifiedAlibabaEmailLead(lead = {}, subject = '', draft = '') {
+  const requestedEmailUiProvider = String(process.env.OUTREACH_EMAIL_UI_PROVIDER || 'alibaba_webmail').trim().toLowerCase();
+  if (requestedEmailUiProvider !== 'alibaba_webmail') {
+    return {
+      ok: false,
+      skipped: true,
+      sendStatus: 'failed_open',
+      reason: 'unsupported_email_ui_provider',
+      evidence: `unsupported_email_ui_provider:${requestedEmailUiProvider || 'empty'};alibaba_webmail_only;no_send_performed`,
+      nextAction: 'Use only the authenticated Alibaba Mail web UI in the dedicated Chrome/CDP 9224 session.',
+    };
+  }
   if (!liveEmailSenderDeliveryReady) {
     return {
       ok: false,
