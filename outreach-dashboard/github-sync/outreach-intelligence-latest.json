@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-14T08:52:35.682Z",
+  "generatedAt": "2026-08-14T09:03:34.658Z",
   "companies": [
     {
       "companyId": "company_9ee0856edac2b8c2",
@@ -455,18 +455,19 @@
       ]
     },
     {
-      "companyId": "company_ca712d2b47bcb0fa",
-      "company": "Summit Rev",
+      "companyId": "company_8169a9215a33d633",
+      "company": "Mystery Mountain Sales",
       "keys": [
-        "summitrev",
-        "summitrevcom"
+        "mysterymountainsales",
+        "mysterymountainsalescom",
+        "mysterymountainsalesca"
       ],
       "domains": [
-        "summit-rev.com"
+        "mysterymountainsales.com",
+        "mysterymountainsales.ca"
       ],
       "channels": [
         "email",
-        "instagram",
         "website_form"
       ],
       "evidence": [
@@ -477,7 +478,7 @@
           "reasons": [
             "official_business_route"
           ],
-          "evidenceUrl": "https://www.summit-rev.com/contact",
+          "evidenceUrl": "https://mysterymountainsales.com/page/contact-us/",
           "checkedAt": ""
         },
         {
@@ -487,7 +488,7 @@
           "reasons": [
             "official_business_route"
           ],
-          "evidenceUrl": "https://www.summit-rev.com/contact",
+          "evidenceUrl": "https://mysterymountainsales.com/page/contact-us/",
           "checkedAt": ""
         },
         {
@@ -497,18 +498,8 @@
           "reasons": [
             "official_business_route"
           ],
-          "evidenceUrl": "https://www.summit-rev.com/contact",
+          "evidenceUrl": "https://mysterymountainsales.com/page/contact-us/",
           "checkedAt": ""
-        },
-        {
-          "channel": "instagram",
-          "score": 100,
-          "verified": true,
-          "reasons": [
-            "official_business_route"
-          ],
-          "evidenceUrl": "https://www.summit-rev.com/contact",
-          "checkedAt": "2026-08-14T08:51:49.142Z"
         },
         {
           "channel": "website_form",
@@ -517,8 +508,8 @@
           "reasons": [
             "official_business_route"
           ],
-          "evidenceUrl": "https://www.summit-rev.com/contact",
-          "checkedAt": "2026-08-14T09:12:00.000Z"
+          "evidenceUrl": "https://mysterymountainsales.com/page/contact-us/",
+          "checkedAt": "2026-08-14T09:01:15.437Z"
         }
       ],
       "history": []
@@ -880,7 +871,7 @@
           "reasons": [
             "official_business_route"
           ],
-          "evidenceUrl": "https://www.tahoesportshub.com/contact",
+          "evidenceUrl": "https://www.tahoesportshub.com/",
           "checkedAt": ""
         },
         {
@@ -4152,7 +4143,7 @@
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://perpetualmotionnw.com/",
-          "checkedAt": "2026-08-14T08:51:56.016Z"
+          "checkedAt": "2026-08-14T09:02:10.585Z"
         },
         {
           "channel": "facebook",
@@ -4162,7 +4153,7 @@
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://perpetualmotionnw.com/",
-          "checkedAt": "2026-08-14T08:51:56.016Z"
+          "checkedAt": "2026-08-14T09:02:10.585Z"
         },
         {
           "channel": "linkedin",
@@ -4172,7 +4163,7 @@
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://perpetualmotionnw.com/",
-          "checkedAt": "2026-08-14T08:51:56.016Z"
+          "checkedAt": "2026-08-14T09:02:10.585Z"
         },
         {
           "channel": "website_form",
@@ -7564,6 +7555,62 @@
         {
           "status": "sent_confirmed",
           "timestamp": "2026-08-14T08:29:18.654Z",
+          "channel": "email",
+          "evidence": "official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed"
+        }
+      ]
+    },
+    {
+      "companyId": "company_ca712d2b47bcb0fa",
+      "company": "Summit Rev",
+      "keys": [
+        "summitrev",
+        "summitrevcom"
+      ],
+      "domains": [
+        "summit-rev.com"
+      ],
+      "channels": [
+        "email",
+        "instagram",
+        "website_form"
+      ],
+      "evidence": [
+        {
+          "channel": "email",
+          "score": 100,
+          "verified": true,
+          "reasons": [
+            "official_business_route"
+          ],
+          "evidenceUrl": "https://www.summit-rev.com/contact",
+          "checkedAt": ""
+        },
+        {
+          "channel": "instagram",
+          "score": 100,
+          "verified": true,
+          "reasons": [
+            "official_business_route"
+          ],
+          "evidenceUrl": "https://www.summit-rev.com/contact",
+          "checkedAt": "2026-08-14T08:51:49.142Z"
+        },
+        {
+          "channel": "website_form",
+          "score": 100,
+          "verified": true,
+          "reasons": [
+            "official_business_route"
+          ],
+          "evidenceUrl": "https://www.summit-rev.com/contact",
+          "checkedAt": "2026-08-14T09:12:00.000Z"
+        }
+      ],
+      "history": [
+        {
+          "status": "sent_confirmed",
+          "timestamp": "2026-08-14T08:53:48.552Z",
           "channel": "email",
           "evidence": "official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed"
         }
@@ -11898,7 +11945,7 @@
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://www.parallel45sales.com/",
-          "checkedAt": "2026-08-14T08:51:51.504Z"
+          "checkedAt": "2026-08-14T09:02:05.264Z"
         },
         {
           "channel": "website_form",
@@ -18136,7 +18183,7 @@
             "official_business_route"
           ],
           "evidenceUrl": "https://www.utemountaineer.com/",
-          "checkedAt": "2026-08-14T08:51:54.800Z"
+          "checkedAt": "2026-08-14T09:02:05.564Z"
         },
         {
           "channel": "facebook",
@@ -18146,7 +18193,7 @@
             "official_business_route"
           ],
           "evidenceUrl": "https://www.utemountaineer.com/",
-          "checkedAt": "2026-08-14T08:51:54.800Z"
+          "checkedAt": "2026-08-14T09:02:05.564Z"
         }
       ],
       "history": [
@@ -18212,7 +18259,7 @@
           "reasons": [
             "official_business_route"
           ],
-          "evidenceUrl": "https://www.neptunemountaineering.com/pages/customer-support",
+          "evidenceUrl": "https://neptunemountaineering.com/",
           "checkedAt": ""
         },
         {
@@ -18304,7 +18351,7 @@
           "reasons": [
             "official_business_route"
           ],
-          "evidenceUrl": "https://kencooutfitters.com/pages/rewards",
+          "evidenceUrl": "https://kencooutfitters.com/",
           "checkedAt": ""
         },
         {
@@ -18385,7 +18432,7 @@
           "reasons": [
             "official_business_route"
           ],
-          "evidenceUrl": "https://shop.jessebrowns.com/pages/contact",
+          "evidenceUrl": "https://jessebrowns.com/",
           "checkedAt": ""
         },
         {
@@ -18609,7 +18656,7 @@
           "reasons": [
             "official_business_route"
           ],
-          "evidenceUrl": "https://westsidestores.ca/pages/about-us.html",
+          "evidenceUrl": "https://westsidestores.ca/",
           "checkedAt": ""
         },
         {
@@ -19453,7 +19500,7 @@
           "reasons": [
             "official_business_route"
           ],
-          "evidenceUrl": "https://explorationwild.com/pages/about-us",
+          "evidenceUrl": "https://explorationwild.com/",
           "checkedAt": ""
         },
         {
@@ -19530,7 +19577,7 @@
           "reasons": [
             "official_business_route"
           ],
-          "evidenceUrl": "https://kermodeoverland.com/contact-us/",
+          "evidenceUrl": "https://kermodeoverland.com/",
           "checkedAt": ""
         },
         {
@@ -19955,7 +20002,7 @@
           "reasons": [
             "official_business_route"
           ],
-          "evidenceUrl": "https://www.bentgate.com/service/",
+          "evidenceUrl": "https://www.bentgate.com/",
           "checkedAt": ""
         },
         {
@@ -20116,7 +20163,7 @@
           "reasons": [
             "official_business_route"
           ],
-          "evidenceUrl": "https://jhoutdoors.com/pages/faq",
+          "evidenceUrl": "https://jhoutdoors.com/",
           "checkedAt": ""
         },
         {
@@ -21341,7 +21388,17 @@
             "official_business_route"
           ],
           "evidenceUrl": "https://www.campman.com/",
-          "checkedAt": "2026-08-14T07:35:40.201Z"
+          "checkedAt": "2026-08-14T09:02:11.222Z"
+        },
+        {
+          "channel": "email",
+          "score": 100,
+          "verified": true,
+          "reasons": [
+            "official_business_route"
+          ],
+          "evidenceUrl": "https://www.campman.com/",
+          "checkedAt": ""
         },
         {
           "channel": "facebook",
@@ -21350,17 +21407,7 @@
           "reasons": [
             "unverified_external_evidence_rejected"
           ],
-          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
-          "checkedAt": ""
-        },
-        {
-          "channel": "email",
-          "score": 0,
-          "verified": false,
-          "reasons": [
-            "unverified_external_evidence_rejected"
-          ],
-          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
+          "evidenceUrl": "https://www.campman.com/",
           "checkedAt": ""
         }
       ],
@@ -21403,13 +21450,23 @@
       ],
       "evidence": [
         {
+          "channel": "email",
+          "score": 100,
+          "verified": true,
+          "reasons": [
+            "official_business_route"
+          ],
+          "evidenceUrl": "https://mountaineer.com/privacy-policy/",
+          "checkedAt": ""
+        },
+        {
           "channel": "instagram",
           "score": 0,
           "verified": false,
           "reasons": [
             "unverified_external_evidence_rejected"
           ],
-          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
+          "evidenceUrl": "https://mountaineer.com/privacy-policy/",
           "checkedAt": ""
         },
         {
@@ -21419,17 +21476,7 @@
           "reasons": [
             "unverified_external_evidence_rejected"
           ],
-          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
-          "checkedAt": ""
-        },
-        {
-          "channel": "email",
-          "score": 0,
-          "verified": false,
-          "reasons": [
-            "unverified_external_evidence_rejected"
-          ],
-          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
+          "evidenceUrl": "https://mountaineer.com/privacy-policy/",
           "checkedAt": ""
         },
         {
@@ -21580,13 +21627,23 @@
       ],
       "evidence": [
         {
+          "channel": "email",
+          "score": 100,
+          "verified": true,
+          "reasons": [
+            "official_business_route"
+          ],
+          "evidenceUrl": "https://www.outdoorplay.com/",
+          "checkedAt": ""
+        },
+        {
           "channel": "instagram",
           "score": 0,
           "verified": false,
           "reasons": [
             "unverified_external_evidence_rejected"
           ],
-          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
+          "evidenceUrl": "https://www.outdoorplay.com/",
           "checkedAt": ""
         },
         {
@@ -21596,17 +21653,7 @@
           "reasons": [
             "unverified_external_evidence_rejected"
           ],
-          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
-          "checkedAt": ""
-        },
-        {
-          "channel": "email",
-          "score": 0,
-          "verified": false,
-          "reasons": [
-            "unverified_external_evidence_rejected"
-          ],
-          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
+          "evidenceUrl": "https://www.outdoorplay.com/",
           "checkedAt": ""
         }
       ],
@@ -21820,7 +21867,7 @@
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://ramseyoutdoor.com/",
-          "checkedAt": "2026-08-14T08:51:54.703Z"
+          "checkedAt": "2026-08-14T09:02:09.049Z"
         },
         {
           "channel": "facebook",
@@ -21830,7 +21877,7 @@
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://ramseyoutdoor.com/",
-          "checkedAt": "2026-08-14T08:51:54.703Z"
+          "checkedAt": "2026-08-14T09:02:09.049Z"
         },
         {
           "channel": "website_form",
@@ -21932,7 +21979,17 @@
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://www.riversportsoutfitters.com/",
-          "checkedAt": "2026-08-14T07:08:12.572Z"
+          "checkedAt": "2026-08-14T09:02:15.632Z"
+        },
+        {
+          "channel": "website_form",
+          "score": 80,
+          "verified": false,
+          "reasons": [
+            "first_party_evidence"
+          ],
+          "evidenceUrl": "https://www.riversportsoutfitters.com/",
+          "checkedAt": ""
         },
         {
           "channel": "instagram",
@@ -21941,17 +21998,7 @@
           "reasons": [
             "unverified_external_evidence_rejected"
           ],
-          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
-          "checkedAt": ""
-        },
-        {
-          "channel": "website_form",
-          "score": 0,
-          "verified": false,
-          "reasons": [
-            "unverified_external_evidence_rejected"
-          ],
-          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
+          "evidenceUrl": "https://www.riversportsoutfitters.com/",
           "checkedAt": ""
         }
       ],
@@ -22078,7 +22125,17 @@
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://www.halfmoonoutfitters.com/",
-          "checkedAt": "2026-08-14T07:08:12.391Z"
+          "checkedAt": "2026-08-14T09:02:15.079Z"
+        },
+        {
+          "channel": "website_form",
+          "score": 80,
+          "verified": false,
+          "reasons": [
+            "first_party_evidence"
+          ],
+          "evidenceUrl": "https://www.halfmoonoutfitters.com/",
+          "checkedAt": ""
         },
         {
           "channel": "facebook",
@@ -22087,17 +22144,7 @@
           "reasons": [
             "unverified_external_evidence_rejected"
           ],
-          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
-          "checkedAt": ""
-        },
-        {
-          "channel": "website_form",
-          "score": 0,
-          "verified": false,
-          "reasons": [
-            "unverified_external_evidence_rejected"
-          ],
-          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
+          "evidenceUrl": "https://www.halfmoonoutfitters.com/",
           "checkedAt": ""
         }
       ],
@@ -22409,7 +22456,7 @@
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://www.christysports.com/",
-          "checkedAt": "2026-08-14T07:08:13.036Z"
+          "checkedAt": "2026-08-14T09:02:19.437Z"
         },
         {
           "channel": "facebook",
@@ -22419,16 +22466,16 @@
             "official_site_cross_verified_social"
           ],
           "evidenceUrl": "https://www.christysports.com/",
-          "checkedAt": "2026-08-14T07:08:13.036Z"
+          "checkedAt": "2026-08-14T09:02:19.437Z"
         },
         {
           "channel": "website_form",
-          "score": 0,
+          "score": 80,
           "verified": false,
           "reasons": [
-            "unverified_external_evidence_rejected"
+            "first_party_evidence"
           ],
-          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
+          "evidenceUrl": "https://www.christysports.com/",
           "checkedAt": ""
         }
       ],
@@ -22484,7 +22531,7 @@
             "official_business_route"
           ],
           "evidenceUrl": "https://paragonsports.com/",
-          "checkedAt": "2026-08-14T08:51:54.920Z"
+          "checkedAt": "2026-08-14T09:02:08.991Z"
         },
         {
           "channel": "facebook",
@@ -22494,7 +22541,7 @@
             "official_business_route"
           ],
           "evidenceUrl": "https://paragonsports.com/",
-          "checkedAt": "2026-08-14T08:51:54.920Z"
+          "checkedAt": "2026-08-14T09:02:08.991Z"
         },
         {
           "channel": "email",
@@ -23081,7 +23128,17 @@
             "official_business_route"
           ],
           "evidenceUrl": "https://72hours.ca/",
-          "checkedAt": "2026-08-14T08:18:38.134Z"
+          "checkedAt": "2026-08-14T09:02:19.371Z"
+        },
+        {
+          "channel": "email",
+          "score": 100,
+          "verified": true,
+          "reasons": [
+            "official_business_route"
+          ],
+          "evidenceUrl": "https://72hours.ca/",
+          "checkedAt": ""
         },
         {
           "channel": "instagram",
@@ -23090,17 +23147,7 @@
           "reasons": [
             "unverified_external_evidence_rejected"
           ],
-          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
-          "checkedAt": ""
-        },
-        {
-          "channel": "email",
-          "score": 0,
-          "verified": false,
-          "reasons": [
-            "unverified_external_evidence_rejected"
-          ],
-          "evidenceUrl": "verified outdoor retailer official website and public social profile refill",
+          "evidenceUrl": "https://72hours.ca/",
           "checkedAt": ""
         }
       ],
@@ -24798,7 +24845,7 @@
             "unverified_external_evidence_rejected"
           ],
           "evidenceUrl": "https://www.publiclands.com/?segment=mjtopl",
-          "checkedAt": "2026-08-14T08:51:57.297Z"
+          "checkedAt": "2026-08-14T09:02:09.280Z"
         }
       ],
       "history": [
@@ -25016,20 +25063,9 @@
       ],
       "channels": [
         "facebook",
-        "website_form",
-        "instagram"
+        "website_form"
       ],
       "evidence": [
-        {
-          "channel": "instagram",
-          "score": 95,
-          "verified": true,
-          "reasons": [
-            "official_site_cross_verified_social"
-          ],
-          "evidenceUrl": "https://packratoc.com/",
-          "checkedAt": "2026-08-14T08:51:56.653Z"
-        },
         {
           "channel": "facebook",
           "score": 0,
@@ -31478,6 +31514,16 @@
       "evidence": "official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed"
     },
     {
+      "companyId": "company_ca712d2b47bcb0fa",
+      "company": "Summit Rev",
+      "permanent": true,
+      "crossChannel": true,
+      "reason": "previous_customer_development_no_repeat",
+      "sourceStatus": "sent_confirmed",
+      "sourceTimestamp": "2026-08-14T08:53:48.552Z",
+      "evidence": "official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed"
+    },
+    {
       "companyId": "company_91f9c44f55785989",
       "company": "Gravy Sales LLC",
       "permanent": true,
@@ -35458,15 +35504,14 @@
         "reason": "highest_priority_verified_channel"
       },
       {
-        "companyId": "company_ca712d2b47bcb0fa",
-        "company": "Summit Rev",
+        "companyId": "company_8169a9215a33d633",
+        "company": "Mystery Mountain Sales",
         "action": "first_touch",
         "channel": "email",
         "evidenceScore": 100,
-        "evidenceUrl": "https://www.summit-rev.com/contact",
+        "evidenceUrl": "https://mysterymountainsales.com/page/contact-us/",
         "alternatives": [
-          "website_form",
-          "instagram"
+          "website_form"
         ],
         "reason": "highest_priority_verified_channel"
       },
@@ -35720,7 +35765,7 @@
       },
       {
         "channel": "email",
-        "confirmed": 298,
+        "confirmed": 299,
         "replies": 0,
         "opportunities": 0,
         "replyRate": 0,
@@ -35771,7 +35816,7 @@
       {
         "dimension": "channel",
         "variant": "email",
-        "sampleSize": 298,
+        "sampleSize": 299,
         "observedReplyRate": 0,
         "recommendation": "use_as_bounded_allocation_signal"
       },
@@ -35785,13 +35830,13 @@
     ]
   },
   "ownerSummary": {
-    "generatedAt": "2026-08-14T08:52:35.682Z",
+    "generatedAt": "2026-08-14T09:03:34.658Z",
     "phase": "autonomous_sales_operating_system_v1",
     "kpis": {
-      "companies": 526,
-      "permanentlySuppressed": 404,
+      "companies": 527,
+      "permanentlySuppressed": 405,
       "plannedActions": 25,
-      "verifiedEvidenceRoutes": 684
+      "verifiedEvidenceRoutes": 689
     },
     "decisions": [
       {
@@ -35852,15 +35897,14 @@
         "reason": "highest_priority_verified_channel"
       },
       {
-        "companyId": "company_ca712d2b47bcb0fa",
-        "company": "Summit Rev",
+        "companyId": "company_8169a9215a33d633",
+        "company": "Mystery Mountain Sales",
         "action": "first_touch",
         "channel": "email",
         "evidenceScore": 100,
-        "evidenceUrl": "https://www.summit-rev.com/contact",
+        "evidenceUrl": "https://mysterymountainsales.com/page/contact-us/",
         "alternatives": [
-          "website_form",
-          "instagram"
+          "website_form"
         ],
         "reason": "highest_priority_verified_channel"
       },
@@ -35951,7 +35995,7 @@
         },
         {
           "channel": "email",
-          "confirmed": 298,
+          "confirmed": 299,
           "replies": 0,
           "opportunities": 0,
           "replyRate": 0,
@@ -36002,7 +36046,7 @@
         {
           "dimension": "channel",
           "variant": "email",
-          "sampleSize": 298,
+          "sampleSize": 299,
           "observedReplyRate": 0,
           "recommendation": "use_as_bounded_allocation_signal"
         },

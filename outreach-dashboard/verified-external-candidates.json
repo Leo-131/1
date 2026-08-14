@@ -1136,6 +1136,30 @@
     "verifiedAt": "2026-08-14T08:03:00.000Z"
   },
   {
+    "company": "Mystery Mountain Sales",
+    "country": "Canada",
+    "url": "https://www.mysterymountainsales.com/",
+    "contactUrl": "https://mysterymountainsales.com/page/contact-us/",
+    "publicEmail": "michael@mysterymountainsales.ca",
+    "contactEmail": "michael@mysterymountainsales.ca",
+    "publicEmailStatus": "Official company-domain principal email published on the agency's first-party contact page.",
+    "emailVerificationStatus": "official_public_business_email",
+    "emailEvidence": "official_western_canada_outdoor_agency_contact_page",
+    "segment": "Western Canada outdoor specialty brand sales agency",
+    "customerType": "sales_agency",
+    "fitScore": 98,
+    "background": "Mystery Mountain Sales represents premium footwear and gear brands for active outdoor lifestyles across Western Canada and serves outdoor specialty retailers.",
+    "buyerPersona": "Agency principal responsible for evaluating complementary outdoor brand partnerships.",
+    "evidenceUrl": "https://mysterymountainsales.com/page/contact-us/",
+    "dataSources": [
+      "official agency website",
+      "official Western Canada outdoor-specialty positioning",
+      "official principal company-domain email"
+    ],
+    "externalVerificationStatus": "official_supplier_email_verified",
+    "verifiedAt": "2026-08-14T09:01:15.437Z"
+  },
+  {
     "company": "Summit Rev",
     "country": "United States",
     "url": "https://www.summit-rev.com/",

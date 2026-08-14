@@ -1578,6 +1578,14 @@ test('first-party reserve promotes Summit Rev official nationwide outdoor-agency
   assert.match(summitRev.background, /nationwide sales agency/);
 });
 
+test('first-party reserve promotes Mystery Mountain official Western Canada agency email', () => {
+  const mysteryMountain = verifiedExternalCandidates.find(item => item.company === 'Mystery Mountain Sales');
+  assert.equal(mysteryMountain.contactEmail, 'michael@mysterymountainsales.ca');
+  assert.equal(mysteryMountain.evidenceUrl, 'https://mysterymountainsales.com/page/contact-us/');
+  assert.equal(mysteryMountain.externalVerificationStatus, 'official_supplier_email_verified');
+  assert.match(mysteryMountain.background, /Western Canada/);
+});
+
 test('email UI execution is hard-limited to Alibaba Mail and rejects alternate clients', () => {
   assert.ok(mainSource.includes("process.env.OUTREACH_EMAIL_UI_PROVIDER || 'alibaba_webmail'"));
   assert.ok(mainSource.includes("requestedEmailUiProvider !== 'alibaba_webmail'"));
