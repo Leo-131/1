@@ -36,3 +36,7 @@ Policy version: 2026-07-30
 - Potential-pool, daily-cap, and reserve capacity are measured in distinct companies, never channel rows. Multiple verified routes for one company remain fallback metadata and must not consume multiple company slots or truncate later evidence-ready companies.
 - When distinct-company capacity falls below the 100-company target, replenish it with net-new ICP-qualified companies supported by current first-party website evidence. Capacity replenishment must never clear confirmed/unconfirmed company locks, recycle historical companies, invent channels, or weaken identity, compliance, duplicate, market, cooldown, or confirmation gates.
 - Browser UI actions may target only the attached dedicated Chrome session on CDP 9224 by its exact CDP target ID and independent user-data-dir. Never enumerate, focus, activate, inspect, attach to, or reuse an operator Chrome window by OS process, window title, 9222, or ambient tabs; if the attached 9224 session is unavailable, record a technical failure and perform no browser action.
+### Verified email execution precedence
+
+- When first-party enrichment marks a public business email verified, the explicit email platform and verified recipient override any legacy `website-contact` task id or `email_priority` action label. Execute it through the Alibaba Mail recipient/subject/body/Sent confirmation gates.
+- A watchdog timeout before any irreversible action locks the company for the current Shanghai day, but does not permanently retire the verified route on later days.

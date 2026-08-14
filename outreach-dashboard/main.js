@@ -630,6 +630,10 @@ function failedOpenResultShouldBlockRetry(result = {}) {
     'contact_page_open_failed',
     'no_contact_entry_control',
     'website_contact_entry_not_verified',
+    // A watchdog timeout is a technical pre-send failure. The same-day
+    // company circuit prevents immediate replay, but later Shanghai days may
+    // safely retry a still-verified route.
+    'customer_execution_timeout',
   ];
   if (recoverable.some(fragment => evidence.includes(fragment))) return false;
   if (/identity_mismatch_expected_[\s\S]*_title_(?:\(\d+\)\s*)?facebook\s*$/i.test(String(result.evidence || ''))
@@ -4083,16 +4087,16 @@ async function executeLeadAutomation(lead, options = {}) {
   }
   const platform = String(lead && lead.platform || '').toLowerCase();
   const isExplicitSocial = ['linkedin', 'facebook', 'instagram'].includes(platform);
+  const isVerifiedEmail = verifiedBusinessEmailTarget(lead).ok;
   // Discovery can preserve the originating website-form label even after an
   // official supplier email is verified. Channel truth outranks that legacy
   // label: a verified business email must enter the Alibaba Mail confirmation
   // path before any lower-priority website or social fallback. Website-derived
   // leads stay in runWebsiteContactLead so a pre-send authentication failure
   // can continue to verified website/social routes.
-  const isWebsiteContact = !isExplicitSocial && (platform === 'website_form'
+  const isWebsiteContact = !isExplicitSocial && !isVerifiedEmail && (platform === 'website_form'
     || lead && lead.action === 'email_priority'
     || /^official_website_contact_channel$|^website_contact/i.test(String(lead && lead.reason || '')));
-  const isVerifiedEmail = verifiedBusinessEmailTarget(lead).ok;
   // A social fallback intentionally retains the customer's verified email as
   // dossier context. The explicit platform is authoritative: do not route the
   // Instagram/LinkedIn/Facebook task back into email merely because the

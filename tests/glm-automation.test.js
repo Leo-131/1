@@ -1481,6 +1481,11 @@ test('each customer has a bounded watchdog and the queue continues after timeout
   assert.match(mainSource, /executeLeadWithCustomerWatchdog\(item,[\s\S]*recordAutomationResult\(item, result\)/);
 });
 
+test('verified email priority rows use Alibaba Mail and old pre-send timeouts remain retryable later', () => {
+  assert.ok(mainSource.includes("const isWebsiteContact = !isExplicitSocial && !isVerifiedEmail"));
+  assert.match(mainSource, /recoverable = \[[\s\S]*'customer_execution_timeout'/);
+});
+
 test('website social fallback preserves prior dedicated Chrome evidence', () => {
   assert.ok(mainSource.includes('chromeOpen: socialResult && socialResult.chromeOpen || chromeOpen'));
   assert.ok(mainSource.includes('signal: options.signal'));
