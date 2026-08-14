@@ -1554,6 +1554,13 @@ test('first-party reserve promotes Daybreak and Outdoor Sports Marketing officia
   assert.equal(osm.externalVerificationStatus, 'official_supplier_email_verified');
 });
 
+test('first-party reserve promotes Higher Standard official outdoor-agency email', () => {
+  const higherStandard = verifiedExternalCandidates.find(item => item.company === 'Higher Standard Inc');
+  assert.equal(higherStandard.contactEmail, 'info@higherstandardinc.com');
+  assert.equal(higherStandard.evidenceUrl, 'https://www.higherstandardinc.com/');
+  assert.equal(higherStandard.externalVerificationStatus, 'official_supplier_email_verified');
+});
+
 test('email UI execution is hard-limited to Alibaba Mail and rejects alternate clients', () => {
   assert.ok(mainSource.includes("process.env.OUTREACH_EMAIL_UI_PROVIDER || 'alibaba_webmail'"));
   assert.ok(mainSource.includes("requestedEmailUiProvider !== 'alibaba_webmail'"));

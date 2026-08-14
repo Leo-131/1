@@ -996,6 +996,30 @@
     "verifiedAt": "2026-08-14T07:36:00.000Z"
   },
   {
+    "company": "Higher Standard Inc",
+    "country": "United States",
+    "url": "https://www.higherstandardinc.com/",
+    "contactUrl": "https://www.higherstandardinc.com/",
+    "publicEmail": "info@higherstandardinc.com",
+    "contactEmail": "info@higherstandardinc.com",
+    "publicEmailStatus": "Official company-domain email published on the agency's first-party homepage.",
+    "emailVerificationStatus": "official_public_business_email",
+    "emailEvidence": "official_agency_homepage_contact",
+    "segment": "Southeastern United States outdoor brand sales and marketing agency",
+    "customerType": "sales_agency",
+    "fitScore": 97,
+    "background": "Higher Standard Inc partners with outdoor brands to bring curated products to Southeast retailers through sales, marketing and in-store sell-through support.",
+    "buyerPersona": "Agency principal responsible for new outdoor brand partnerships.",
+    "evidenceUrl": "https://www.higherstandardinc.com/",
+    "dataSources": [
+      "official agency website",
+      "official retailer and brand partnership description",
+      "official company-domain email"
+    ],
+    "externalVerificationStatus": "official_supplier_email_verified",
+    "verifiedAt": "2026-08-14T08:35:00.000Z"
+  },
+  {
     "company": "Daybreak Sales",
     "country": "United States",
     "url": "https://daybreak-sales.com/",
