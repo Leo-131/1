@@ -1136,6 +1136,30 @@
     "verifiedAt": "2026-08-14T08:03:00.000Z"
   },
   {
+    "company": "Gravy Sales LLC",
+    "country": "United States",
+    "url": "https://www.gravysales.com/",
+    "contactUrl": "https://www.gravysales.com/contact-us",
+    "publicEmail": "ditta@gravysales.com",
+    "contactEmail": "ditta@gravysales.com",
+    "publicEmailStatus": "Official company-domain email published on the agency's first-party contact page.",
+    "emailVerificationStatus": "official_public_business_email",
+    "emailEvidence": "official_outdoor_agency_contact_page",
+    "segment": "Southeastern United States outdoor brand sales agency",
+    "customerType": "sales_agency",
+    "fitScore": 98,
+    "background": "Gravy Sales represents established outdoor and active-lifestyle brands including GSI Outdoors, EXPED, Matador, Blundstone and Xero Shoes and supports outdoor retail partners.",
+    "buyerPersona": "Agency principal responsible for evaluating new outdoor brand representation partnerships.",
+    "evidenceUrl": "https://www.gravysales.com/contact-us",
+    "dataSources": [
+      "official agency website",
+      "official represented-brand portfolio",
+      "official company-domain email"
+    ],
+    "externalVerificationStatus": "official_supplier_email_verified",
+    "verifiedAt": "2026-08-14T09:02:00.000Z"
+  },
+  {
     "company": "Mountain Source",
     "country": "United States",
     "url": "https://www.instagram.com/mountainsource/",

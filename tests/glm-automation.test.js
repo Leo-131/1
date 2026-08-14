@@ -1561,6 +1561,15 @@ test('first-party reserve promotes Higher Standard official outdoor-agency email
   assert.equal(higherStandard.externalVerificationStatus, 'official_supplier_email_verified');
 });
 
+test('first-party reserve promotes Gravy Sales official outdoor-agency email', () => {
+  const gravySales = verifiedExternalCandidates.find(item => item.company === 'Gravy Sales LLC');
+  assert.equal(gravySales.contactEmail, 'ditta@gravysales.com');
+  assert.equal(gravySales.evidenceUrl, 'https://www.gravysales.com/contact-us');
+  assert.equal(gravySales.externalVerificationStatus, 'official_supplier_email_verified');
+  assert.match(gravySales.background, /GSI Outdoors/);
+  assert.match(gravySales.background, /EXPED/);
+});
+
 test('email UI execution is hard-limited to Alibaba Mail and rejects alternate clients', () => {
   assert.ok(mainSource.includes("process.env.OUTREACH_EMAIL_UI_PROVIDER || 'alibaba_webmail'"));
   assert.ok(mainSource.includes("requestedEmailUiProvider !== 'alibaba_webmail'"));
