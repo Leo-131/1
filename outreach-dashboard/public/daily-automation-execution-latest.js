@@ -7,7 +7,7 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
   "executionPhase": "browser_execution",
   "chromeStage": "opened",
   "chromeOpened": true,
-  "chromeOpenedCount": 12,
+  "chromeOpenedCount": 11,
   "customerDevelopmentPerformed": false,
   "customerMessageSent": false,
   "realDevelopmentCount": 0,
@@ -21,53 +21,6 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
   "queueSource": "dailyQueue",
   "executed": [
     {
-      "id": "google-customer-elevated-outdoor-sales-linkedin",
-      "company": "Elevated Outdoor Sales",
-      "action": "verify_target",
-      "platform": "linkedin",
-      "targetUrl": "https://www.linkedin.com/in/mike-freiberg-b793979/",
-      "ok": false,
-      "sendStatus": "failed_open",
-      "evidence": "linkedin_message_button_clicked_composer_not_found",
-      "timestamp": "2026-08-18T19:07:58.113Z",
-      "chromeOpen": {
-        "ok": true,
-        "engine": "codex-chrome-cdp",
-        "port": 9224,
-        "targetUrl": "https://www.linkedin.com/in/mike-freiberg-b793979/",
-        "tabId": "790A99163161B0AD52A3F00328DFBD58",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/790A99163161B0AD52A3F00328DFBD58",
-        "title": "Mike Freiberg | LinkedIn"
-      },
-      "result": {
-        "ok": false,
-        "engine": "codex-chrome-cdp",
-        "browserEngine": "codex-chrome-cdp",
-        "mode": "codex_chrome_cdp",
-        "targetUrl": "https://www.linkedin.com/in/mike-freiberg-b793979/",
-        "chromeOpen": {
-          "ok": true,
-          "engine": "codex-chrome-cdp",
-          "port": 9224,
-          "targetUrl": "https://www.linkedin.com/in/mike-freiberg-b793979/",
-          "tabId": "790A99163161B0AD52A3F00328DFBD58",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/790A99163161B0AD52A3F00328DFBD58",
-          "title": "Mike Freiberg | LinkedIn"
-        },
-        "sendStatus": "failed_open",
-        "output": "{\"verdict\":\"major_bug_review_needed\",\"evidence\":\"linkedin_message_button_clicked_composer_not_found\",\"nextAction\":\"Composer not detected; pause automation and notify operator only if retry would be unsafe.\",\"draft\":\"Hi Elevated Outdoor Sales team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a distributor/importer, the strongest fit is regional sell-through, channel fit, margin-ready product line, and whether they cover outdoor/travel electronics buyers; your verified outdoor industry manufacturer representative and sales agency focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the owner of distribution evaluation or the best time for a short intro video meeting?\",\"sendStatus\":\"failed_open\"}",
-        "decision": {
-          "verdict": "develop",
-          "fitScore": 90,
-          "reason": "local_codex_extension_template",
-          "draft": "Hi Elevated Outdoor Sales team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a distributor/importer, the strongest fit is regional sell-through, channel fit, margin-ready product line, and whether they cover outdoor/travel electronics buyers; your verified outdoor industry manufacturer representative and sales agency focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the owner of distribution evaluation or the best time for a short intro video meeting?"
-        },
-        "executionLayer": "Chrome CDP fallback",
-        "glmModel": "not_used",
-        "followup": false
-      }
-    },
-    {
       "id": "google-customer-powers-pedersen-sales-group-facebook",
       "company": "Powers Pedersen Sales Group",
       "action": "develop",
@@ -76,13 +29,13 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "ok": false,
       "sendStatus": "website_contact_unreachable_skip",
       "evidence": "unavailable_profile_page: SKIP TO NAVIGATION\nSKIP TO MAIN CONTENT\nHOME\nABOUT US\nTEAM\nBRANDS\nCONTACT\nRETAILER RESOURCES\nFEEL THE LOVE\nNOT FOUND\nThis is somewhat embarrassing, isn’t it?\n\nIt looks like nothing;website_contact_all_targets_failed:6;contact_path_strategy_v2",
-      "timestamp": "2026-08-18T19:08:51.777Z",
+      "timestamp": "2026-08-18T22:08:00.940Z",
       "chromeOpen": {
         "ok": false,
         "engine": "codex-chrome-cdp",
         "port": 9224,
         "targetUrl": "https://p-psg.com/help/contact-us",
-        "tabId": "3C7FC18273506DDA7922782AAA8F2FD2",
+        "tabId": "87516E2CF7AE5EFB0CE87509E36BC3C8",
         "title": "Page not found - Powers Pedersen Sales Group",
         "status": "failed_open",
         "error": "profile_unavailable_or_broken_link",
@@ -99,7 +52,7 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
           "engine": "codex-chrome-cdp",
           "port": 9224,
           "targetUrl": "https://p-psg.com/help/contact-us",
-          "tabId": "3C7FC18273506DDA7922782AAA8F2FD2",
+          "tabId": "87516E2CF7AE5EFB0CE87509E36BC3C8",
           "title": "Page not found - Powers Pedersen Sales Group",
           "status": "failed_open",
           "error": "profile_unavailable_or_broken_link",
@@ -109,7 +62,7 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
         "subject": "FLEXTAIL retail partnership | 2026 assortment",
         "draft": "Dear Powers Pedersen Sales Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
         "evidence": "unavailable_profile_page: SKIP TO NAVIGATION\nSKIP TO MAIN CONTENT\nHOME\nABOUT US\nTEAM\nBRANDS\nCONTACT\nRETAILER RESOURCES\nFEEL THE LOVE\nNOT FOUND\nThis is somewhat embarrassing, isn’t it?\n\nIt looks like nothing;website_contact_all_targets_failed:6;contact_path_strategy_v2",
-        "output": "{\"verdict\":\"website_contact_unreachable_skip\",\"evidence\":\"unavailable_profile_page: SKIP TO NAVIGATION\\nSKIP TO MAIN CONTENT\\nHOME\\nABOUT US\\nTEAM\\nBRANDS\\nCONTACT\\nRETAILER RESOURCES\\nFEEL THE LOVE\\nNOT FOUND\\nThis is somewhat embarrassing, isn’t it?\\n\\nIt looks like nothing;website_contact_all_targets_failed:6;contact_path_strategy_v2\",\"subject\":\"FLEXTAIL retail partnership | 2026 assortment\",\"draft\":\"Dear Powers Pedersen Sales Team,\\n\\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\\n\\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\\n\\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\\n\\nProduct overview: https://www.flextail.com/\\n\\nBest regards,\\nLeo Liu\\nSales & Operations Director\\nLeo@flextailgear.com\",\"sendStatus\":\"website_contact_unreachable_skip\",\"attempts\":[{\"targetUrl\":\"https://p-psg.com/\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control\"},{\"targetUrl\":\"https://p-psg.com/pages/contact-us\",\"sendStatus\":\"failed_open\",\"evidence\":\"unavailable_profile_page: SKIP TO NAVIGATION\\nSKIP TO MAIN CONTENT\\nHOME\\nABOUT US\\nTEAM\\nBRANDS\\nCONTACT\\nRETAILER RESOURCES\\nFEEL THE LOVE\\nNOT FOUND\\nThis is somewhat embarrassing, isn’t it?\\n\\nIt looks like nothing\"},{\"targetUrl\":\"https://p-psg.com/pages/contact\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;contact_entry_clicked:SKIP TO NAVIGATION\"},{\"targetUrl\":\"https://p-psg.com/contact-us\",\"sendStatus\":\"failed_open\",\"evidence\":\"unavailable_profile_page: SKIP TO NAVIGATION\\nSKIP TO MAIN CONTENT\\nHOME\\nABOUT US\\nTEAM\\nBRANDS\\nCONTACT\\nRETAILER RESOURCES\\nFEEL THE LOVE\\nNOT FOUND\\nThis is somewhat embarrassing, isn’t it?\\n\\nIt looks like nothing\"},{\"targetUrl\":\"https://p-psg.com/contact\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;contact_entry_clicked:SKIP TO NAVIGATION\"},{\"targetUrl\":\"https://p-psg.com/help/contact-us\",\"sendStatus\":\"failed_open\",\"evidence\":\"unavailable_profile_page: SKIP TO NAVIGATION\\nSKIP TO MAIN CONTENT\\nHOME\\nABOUT US\\nTEAM\\nBRANDS\\nCONTACT\\nRETAILER RESOURCES\\nFEEL THE LOVE\\nNOT FOUND\\nThis is somewhat embarrassing, isn’t it?\\n\\nIt looks like nothing\"}],\"nextAction\":\"Official website contact was unreachable or not machine-verifiable. Skip this website route now, note it clearly, and continue with LinkedIn, Facebook, Instagram, or another verified official channel.\",\"fallbackFrom\":\"https://www.facebook.com/Powers-Sales-Group-325311146231/\",\"fallbackPlatform\":\"email\",\"fallbackReason\":\"identity_mismatch_expected_Powers Pedersen Sales Group_title_Facebook\"}",
+        "output": "{\"verdict\":\"website_contact_unreachable_skip\",\"evidence\":\"unavailable_profile_page: SKIP TO NAVIGATION\\nSKIP TO MAIN CONTENT\\nHOME\\nABOUT US\\nTEAM\\nBRANDS\\nCONTACT\\nRETAILER RESOURCES\\nFEEL THE LOVE\\nNOT FOUND\\nThis is somewhat embarrassing, isn’t it?\\n\\nIt looks like nothing;website_contact_all_targets_failed:6;contact_path_strategy_v2\",\"subject\":\"FLEXTAIL retail partnership | 2026 assortment\",\"draft\":\"Dear Powers Pedersen Sales Team,\\n\\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\\n\\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\\n\\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\\n\\nProduct overview: https://www.flextail.com/\\n\\nBest regards,\\nLeo Liu\\nSales & Operations Director\\nLeo@flextailgear.com\",\"sendStatus\":\"website_contact_unreachable_skip\",\"attempts\":[{\"targetUrl\":\"https://p-psg.com/\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control\"},{\"targetUrl\":\"https://p-psg.com/pages/contact-us\",\"sendStatus\":\"failed_open\",\"evidence\":\"unavailable_profile_page: SKIP TO NAVIGATION\\nSKIP TO MAIN CONTENT\\nHOME\\nABOUT US\\nTEAM\\nBRANDS\\nCONTACT\\nRETAILER RESOURCES\\nFEEL THE LOVE\\nNOT FOUND\\nThis is somewhat embarrassing, isn’t it?\\n\\nIt looks like nothing\"},{\"targetUrl\":\"https://p-psg.com/pages/contact\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;contact_entry_clicked:SKIP TO NAVIGATION\"},{\"targetUrl\":\"https://p-psg.com/contact-us\",\"sendStatus\":\"failed_open\",\"evidence\":\"unavailable_profile_page: SKIP TO NAVIGATION\\nSKIP TO MAIN CONTENT\\nHOME\\nABOUT US\\nTEAM\\nBRANDS\\nCONTACT\\nRETAILER RESOURCES\\nFEEL THE LOVE\\nNOT FOUND\\nThis is somewhat embarrassing, isn’t it?\\n\\nIt looks like nothing\"},{\"targetUrl\":\"https://p-psg.com/contact\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;contact_entry_clicked:SKIP TO NAVIGATION\"},{\"targetUrl\":\"https://p-psg.com/help/contact-us\",\"sendStatus\":\"failed_open\",\"evidence\":\"unavailable_profile_page: SKIP TO NAVIGATION\\nSKIP TO MAIN CONTENT\\nHOME\\nABOUT US\\nTEAM\\nBRANDS\\nCONTACT\\nRETAILER RESOURCES\\nFEEL THE LOVE\\nNOT FOUND\\nThis is somewhat embarrassing, isn’t it?\\n\\nIt looks like nothing\"}],\"nextAction\":\"Official website contact was unreachable or not machine-verifiable. Skip this website route now, note it clearly, and continue with LinkedIn, Facebook, Instagram, or another verified official channel.\",\"fallbackFrom\":\"https://www.facebook.com/Powers-Sales-Group-325311146231/\",\"fallbackPlatform\":\"email\",\"fallbackReason\":\"identity_mismatch_expected_Powers Pedersen Sales Group_title_(8) Facebook\"}",
         "fallbackFrom": "https://www.facebook.com/Powers-Sales-Group-325311146231/",
         "fallbackPlatform": "email",
         "decision": {
@@ -132,14 +85,14 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "ok": false,
       "sendStatus": "website_contact_unreachable_skip",
       "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:6;contact_path_strategy_v2",
-      "timestamp": "2026-08-18T19:10:18.891Z",
+      "timestamp": "2026-08-18T22:09:26.853Z",
       "chromeOpen": {
         "ok": true,
         "engine": "codex-chrome-cdp",
         "port": 9224,
         "targetUrl": "https://owensoutdoorsales.com/help/contact-us",
-        "tabId": "E629883AEA0FB27AD567F296117D5ED1",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/E629883AEA0FB27AD567F296117D5ED1",
+        "tabId": "64C0981540C1E56D8285A2EE590FA429",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/64C0981540C1E56D8285A2EE590FA429",
         "title": "Contact-US.jpg (1920×712)"
       },
       "result": {
@@ -153,8 +106,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
           "engine": "codex-chrome-cdp",
           "port": 9224,
           "targetUrl": "https://owensoutdoorsales.com/help/contact-us",
-          "tabId": "E629883AEA0FB27AD567F296117D5ED1",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/E629883AEA0FB27AD567F296117D5ED1",
+          "tabId": "64C0981540C1E56D8285A2EE590FA429",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/64C0981540C1E56D8285A2EE590FA429",
           "title": "Contact-US.jpg (1920×712)"
         },
         "sendStatus": "website_contact_unreachable_skip",
@@ -184,14 +137,14 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "ok": false,
       "sendStatus": "website_contact_unreachable_skip",
       "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:6;contact_path_strategy_v2",
-      "timestamp": "2026-08-18T19:10:50.743Z",
+      "timestamp": "2026-08-18T22:09:58.845Z",
       "chromeOpen": {
         "ok": true,
         "engine": "codex-chrome-cdp",
         "port": 9224,
         "targetUrl": "https://latulippe.com/help/contact-us",
-        "tabId": "EAA145DF49CE48A20D0399395F2D9656",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/EAA145DF49CE48A20D0399395F2D9656",
+        "tabId": "B242042B460E8E8ACC63421325740243",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/B242042B460E8E8ACC63421325740243",
         "title": "Attention Required! | Cloudflare"
       },
       "result": {
@@ -205,8 +158,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
           "engine": "codex-chrome-cdp",
           "port": 9224,
           "targetUrl": "https://latulippe.com/help/contact-us",
-          "tabId": "EAA145DF49CE48A20D0399395F2D9656",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/EAA145DF49CE48A20D0399395F2D9656",
+          "tabId": "B242042B460E8E8ACC63421325740243",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/B242042B460E8E8ACC63421325740243",
           "title": "Attention Required! | Cloudflare"
         },
         "sendStatus": "website_contact_unreachable_skip",
@@ -228,53 +181,6 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       }
     },
     {
-      "id": "google-customer-awesome-outdoors-group-facebook",
-      "company": "Awesome Outdoors Group",
-      "action": "develop",
-      "platform": "facebook",
-      "targetUrl": "https://www.facebook.com/Awesome-Outdoors-Group-104741054869722",
-      "ok": false,
-      "sendStatus": "failed_open",
-      "evidence": "identity_mismatch_expected_Awesome Outdoors Group_title_(8) Facebook",
-      "timestamp": "2026-08-18T19:10:59.102Z",
-      "chromeOpen": {
-        "ok": true,
-        "engine": "codex-chrome-cdp",
-        "port": 9224,
-        "targetUrl": "https://www.facebook.com/Awesome-Outdoors-Group-104741054869722",
-        "tabId": "21B7524BEFBE9B9D84E5D245B521AB30",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/21B7524BEFBE9B9D84E5D245B521AB30",
-        "title": "Facebook"
-      },
-      "result": {
-        "ok": false,
-        "engine": "codex-chrome-cdp",
-        "browserEngine": "codex-chrome-cdp",
-        "mode": "codex_chrome_cdp",
-        "targetUrl": "https://www.facebook.com/Awesome-Outdoors-Group-104741054869722",
-        "chromeOpen": {
-          "ok": true,
-          "engine": "codex-chrome-cdp",
-          "port": 9224,
-          "targetUrl": "https://www.facebook.com/Awesome-Outdoors-Group-104741054869722",
-          "tabId": "21B7524BEFBE9B9D84E5D245B521AB30",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/21B7524BEFBE9B9D84E5D245B521AB30",
-          "title": "Facebook"
-        },
-        "sendStatus": "failed_open",
-        "output": "{\"verdict\":\"major_bug_review_needed\",\"evidence\":\"identity_mismatch_expected_Awesome Outdoors Group_title_(8) Facebook\",\"nextAction\":\"Wrong or unmatched account opened; record as major bug and move to next verified customer.\",\"draft\":\"Hi Awesome Outdoors Group team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a distributor/importer, the strongest fit is regional sell-through, channel fit, margin-ready product line, and whether they cover outdoor/travel electronics buyers; your verified outdoor industry manufacturer representative and sales agency focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the owner of distribution evaluation or the best time for a short intro video meeting?\",\"sendStatus\":\"failed_open\"}",
-        "decision": {
-          "verdict": "develop",
-          "fitScore": 85,
-          "reason": "local_codex_extension_template",
-          "draft": "Hi Awesome Outdoors Group team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a distributor/importer, the strongest fit is regional sell-through, channel fit, margin-ready product line, and whether they cover outdoor/travel electronics buyers; your verified outdoor industry manufacturer representative and sales agency focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the owner of distribution evaluation or the best time for a short intro video meeting?"
-        },
-        "executionLayer": "Chrome CDP fallback",
-        "glmModel": "not_used",
-        "followup": false
-      }
-    },
-    {
       "id": "google-customer-outdoor-gear-canada-facebook",
       "company": "Outdoor Gear Canada",
       "action": "develop",
@@ -283,13 +189,13 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "ok": false,
       "sendStatus": "website_contact_unreachable_skip",
       "evidence": "website_page_unavailable_404: Server Error\n404 - File or directory not found.\nThe resource you are looking for might have been removed, had its name changed, or is temporarily unavailable.;website_contact_all_targets_failed:6;contact_path_strategy_v2",
-      "timestamp": "2026-08-18T19:11:56.480Z",
+      "timestamp": "2026-08-18T22:10:57.250Z",
       "chromeOpen": {
         "ok": false,
         "engine": "codex-chrome-cdp",
         "port": 9224,
         "targetUrl": "https://www.ogc.ca/help/contact-us",
-        "tabId": "A576C1D493D1D7EAA7E325CDEE60C7AB",
+        "tabId": "443881A0856E15B8F2D5E061C0617CB1",
         "title": "404 - File or directory not found.",
         "status": "failed_open",
         "error": "profile_unavailable_or_broken_link",
@@ -306,7 +212,7 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
           "engine": "codex-chrome-cdp",
           "port": 9224,
           "targetUrl": "https://www.ogc.ca/help/contact-us",
-          "tabId": "A576C1D493D1D7EAA7E325CDEE60C7AB",
+          "tabId": "443881A0856E15B8F2D5E061C0617CB1",
           "title": "404 - File or directory not found.",
           "status": "failed_open",
           "error": "profile_unavailable_or_broken_link",
@@ -339,14 +245,14 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "ok": false,
       "sendStatus": "website_contact_unreachable_skip",
       "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:6;contact_path_strategy_v2",
-      "timestamp": "2026-08-18T19:12:36.814Z",
+      "timestamp": "2026-08-18T22:11:39.781Z",
       "chromeOpen": {
         "ok": true,
         "engine": "codex-chrome-cdp",
         "port": 9224,
         "targetUrl": "https://revassa.com.mx/help/contact-us",
-        "tabId": "F6A4E07201C82579E58034CCF621E22F",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/F6A4E07201C82579E58034CCF621E22F",
+        "tabId": "F7929A9E919C93A0F27C6B57FDA34638",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/F7929A9E919C93A0F27C6B57FDA34638",
         "title": "Página no encontrada – REVASSA"
       },
       "result": {
@@ -360,8 +266,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
           "engine": "codex-chrome-cdp",
           "port": 9224,
           "targetUrl": "https://revassa.com.mx/help/contact-us",
-          "tabId": "F6A4E07201C82579E58034CCF621E22F",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/F6A4E07201C82579E58034CCF621E22F",
+          "tabId": "F7929A9E919C93A0F27C6B57FDA34638",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/F7929A9E919C93A0F27C6B57FDA34638",
           "title": "Página no encontrada – REVASSA"
         },
         "sendStatus": "website_contact_unreachable_skip",
@@ -383,164 +289,150 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       }
     },
     {
-      "id": "google-customer-perspective-outdoor-instagram",
-      "company": "Perspective Outdoor",
-      "action": "develop",
-      "platform": "instagram",
-      "targetUrl": "https://www.instagram.com/perspectiveoutdoor/",
-      "ok": false,
-      "sendStatus": "failed_open",
-      "evidence": "instagram_message_button_clicked_composer_not_found",
-      "timestamp": "2026-08-18T19:13:06.756Z",
-      "chromeOpen": {
-        "ok": true,
-        "engine": "codex-chrome-cdp",
-        "port": 9224,
-        "targetUrl": "https://www.instagram.com/perspectiveoutdoor/",
-        "tabId": "D45529C1A4841D152ACF140E6ABF1B7F",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/D45529C1A4841D152ACF140E6ABF1B7F",
-        "title": "PerspectiveOutdoor (@perspectiveoutdoor) · Instagram 照片和视频"
-      },
-      "result": {
-        "ok": false,
-        "engine": "codex-chrome-cdp",
-        "browserEngine": "codex-chrome-cdp",
-        "mode": "codex_chrome_cdp",
-        "targetUrl": "https://www.instagram.com/perspectiveoutdoor/",
-        "chromeOpen": {
-          "ok": true,
-          "engine": "codex-chrome-cdp",
-          "port": 9224,
-          "targetUrl": "https://www.instagram.com/perspectiveoutdoor/",
-          "tabId": "D45529C1A4841D152ACF140E6ABF1B7F",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/D45529C1A4841D152ACF140E6ABF1B7F",
-          "title": "PerspectiveOutdoor (@perspectiveoutdoor) · Instagram 照片和视频"
-        },
-        "sendStatus": "failed_open",
-        "output": "{\"verdict\":\"major_bug_review_needed\",\"evidence\":\"instagram_message_button_clicked_composer_not_found\",\"nextAction\":\"Composer not detected; pause automation and notify operator only if retry would be unsafe.\",\"draft\":\"Hi Perspective Outdoor team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a distributor/importer, the strongest fit is regional sell-through, channel fit, margin-ready product line, and whether they cover outdoor/travel electronics buyers; your verified outdoor industry manufacturer representative and sales agency focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the owner of distribution evaluation or the best time for a short intro video meeting?\",\"sendStatus\":\"failed_open\"}",
-        "decision": {
-          "verdict": "develop",
-          "fitScore": 90,
-          "reason": "local_codex_extension_template",
-          "draft": "Hi Perspective Outdoor team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a distributor/importer, the strongest fit is regional sell-through, channel fit, margin-ready product line, and whether they cover outdoor/travel electronics buyers; your verified outdoor industry manufacturer representative and sales agency focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the owner of distribution evaluation or the best time for a short intro video meeting?"
-        },
-        "executionLayer": "Chrome CDP fallback",
-        "glmModel": "not_used",
-        "followup": false
-      }
-    },
-    {
-      "id": "google-customer-eastern-mountain-sports-instagram",
-      "company": "Eastern Mountain Sports",
-      "action": "develop",
-      "platform": "instagram",
-      "targetUrl": "https://www.instagram.com/easternmntnsports/",
-      "ok": false,
-      "sendStatus": "failed_open",
-      "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;identity_mismatch_expected_Eastern Mountain Sports_title_(8) Facebook;contact_path_strategy_v2",
-      "timestamp": "2026-08-18T19:14:24.166Z",
-      "chromeOpen": {
-        "ok": true,
-        "engine": "codex-chrome-cdp",
-        "port": 9224,
-        "targetUrl": "https://www.facebook.com/EasternMountainSports",
-        "tabId": "FDEFA89E479B075A86047EA76E6D59BF",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/FDEFA89E479B075A86047EA76E6D59BF",
-        "title": "Facebook"
-      },
-      "result": {
-        "ok": false,
-        "engine": "codex-chrome-cdp",
-        "browserEngine": "codex-chrome-cdp",
-        "mode": "codex_chrome_cdp",
-        "targetUrl": "https://www.facebook.com/EasternMountainSports",
-        "chromeOpen": {
-          "ok": true,
-          "engine": "codex-chrome-cdp",
-          "port": 9224,
-          "targetUrl": "https://www.facebook.com/EasternMountainSports",
-          "tabId": "FDEFA89E479B075A86047EA76E6D59BF",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/FDEFA89E479B075A86047EA76E6D59BF",
-          "title": "Facebook"
-        },
-        "sendStatus": "failed_open",
-        "output": "{\"verdict\":\"major_bug_review_needed\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;identity_mismatch_expected_Eastern Mountain Sports_title_(8) Facebook;contact_path_strategy_v2\",\"nextAction\":\"Wrong or unmatched account opened; record as major bug and move to next verified customer.\",\"draft\":\"Hi Eastern Mountain Sports team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a retail/category buyer, the strongest fit is assortment fit, new SKU pipeline, price-tier coverage, and proven consumer demand; your verified outdoor, camping and travel retail social refill channel focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the category buyer or vendor-review owner for a short intro video meeting?\",\"sendStatus\":\"failed_open\",\"fallbackFrom\":\"https://www.instagram.com/easternmntnsports/\",\"fallbackPlatform\":\"email\",\"fallbackReason\":\"instagram_message_button_clicked_composer_not_found\"}",
-        "decision": {
-          "verdict": "develop",
-          "fitScore": 84,
-          "reason": "local_codex_extension_template",
-          "draft": "Hi Eastern Mountain Sports team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a retail/category buyer, the strongest fit is assortment fit, new SKU pipeline, price-tier coverage, and proven consumer demand; your verified outdoor, camping and travel retail social refill channel focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the category buyer or vendor-review owner for a short intro video meeting?"
-        },
-        "executionLayer": "Chrome CDP fallback",
-        "glmModel": "not_used",
-        "followup": false,
-        "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;identity_mismatch_expected_Eastern Mountain Sports_title_(8) Facebook;contact_path_strategy_v2",
-        "socialFallbackEvidence": "identity_mismatch_expected_Eastern Mountain Sports_title_(8) Facebook",
-        "fallbackFrom": "https://www.instagram.com/easternmntnsports/",
-        "fallbackPlatform": "email"
-      }
-    },
-    {
-      "id": "google-customer-babbling-brook-sales-website-contact",
-      "company": "Babbling Brook Sales",
-      "action": "develop",
-      "platform": "website_form",
-      "targetUrl": "https://www.babblingbrooksales.com/",
-      "ok": false,
-      "sendStatus": "failed_open",
-      "evidence": "website_contact_entry_not_verified;contact_entry_clicked:Contact;official_social_fallback:facebook;instagram_message_button_clicked_composer_not_found;contact_path_strategy_v2",
-      "timestamp": "2026-08-18T19:15:19.825Z",
-      "chromeOpen": {
-        "ok": true,
-        "engine": "codex-chrome-cdp",
-        "port": 9224,
-        "targetUrl": "https://www.instagram.com/babblingbrooksales",
-        "tabId": "D70FCA539FB49180887BEA6A0B22BC9E",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/D70FCA539FB49180887BEA6A0B22BC9E",
-        "title": "Babbling Brook Sales (@babblingbrooksales) · Instagram 照片和视频"
-      },
-      "result": {
-        "ok": false,
-        "engine": "codex-chrome-cdp",
-        "browserEngine": "codex-chrome-cdp",
-        "mode": "codex_chrome_cdp",
-        "targetUrl": "https://www.instagram.com/babblingbrooksales",
-        "chromeOpen": {
-          "ok": true,
-          "engine": "codex-chrome-cdp",
-          "port": 9224,
-          "targetUrl": "https://www.instagram.com/babblingbrooksales",
-          "tabId": "D70FCA539FB49180887BEA6A0B22BC9E",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/D70FCA539FB49180887BEA6A0B22BC9E",
-          "title": "Babbling Brook Sales (@babblingbrooksales) · Instagram 照片和视频"
-        },
-        "sendStatus": "failed_open",
-        "output": "{\"verdict\":\"major_bug_review_needed\",\"evidence\":\"website_contact_entry_not_verified;contact_entry_clicked:Contact;official_social_fallback:facebook;instagram_message_button_clicked_composer_not_found;contact_path_strategy_v2\",\"nextAction\":\"Composer not detected; pause automation and notify operator only if retry would be unsafe.\",\"draft\":\"Hi Babbling Brook Sales team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a retail/category buyer, the strongest fit is assortment fit, new SKU pipeline, price-tier coverage, and proven consumer demand; your Rocky Mountain premium outdoor brand sales agency focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the category buyer or vendor-review owner for a short intro video meeting?\",\"sendStatus\":\"failed_open\",\"fallbackFrom\":\"https://www.facebook.com/babblingbrooksales\",\"fallbackPlatform\":\"instagram\",\"fallbackReason\":\"identity_mismatch_expected_Babbling Brook Sales_title_(8) Facebook\"}",
-        "decision": {
-          "verdict": "develop",
-          "fitScore": 98,
-          "reason": "local_codex_extension_template",
-          "draft": "Hi Babbling Brook Sales team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a retail/category buyer, the strongest fit is assortment fit, new SKU pipeline, price-tier coverage, and proven consumer demand; your Rocky Mountain premium outdoor brand sales agency focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the category buyer or vendor-review owner for a short intro video meeting?"
-        },
-        "executionLayer": "Chrome CDP fallback",
-        "glmModel": "not_used",
-        "followup": false,
-        "fallbackFrom": "https://www.facebook.com/babblingbrooksales",
-        "fallbackPlatform": "instagram",
-        "evidence": "website_contact_entry_not_verified;contact_entry_clicked:Contact;official_social_fallback:facebook;instagram_message_button_clicked_composer_not_found;contact_path_strategy_v2",
-        "socialFallbackEvidence": "instagram_message_button_clicked_composer_not_found"
-      }
-    },
-    {
-      "id": "google-customer-sespe-group-website-contact",
-      "company": "Sespe Group",
+      "id": "google-customer-sanitas-sales-group-website-contact",
+      "company": "Sanitas Sales Group",
       "action": "email_priority",
       "platform": "website_form",
-      "targetUrl": "https://www.sespegroup.com/contact-us",
+      "targetUrl": "https://sanitassalesgroup.com/contact/",
+      "ok": false,
+      "sendStatus": "website_contact_unreachable_skip",
+      "evidence": "unavailable_profile_page: Skip to primary navigation\nSkip to main content\nSkip to footer\n\nSANITAS SALES GROUP\n\nSales and marketing contractors serving the greater Rocky Mountain region\n\nBRANDS\n \nOUR TERRITO;website_contact_all_targets_failed:6;contact_path_strategy_v2",
+      "timestamp": "2026-08-18T22:12:32.752Z",
+      "chromeOpen": {
+        "ok": false,
+        "engine": "codex-chrome-cdp",
+        "port": 9224,
+        "targetUrl": "https://sanitassalesgroup.com/help/contact-us",
+        "tabId": "EBAFFFFE7F2A400D33B6644122389491",
+        "title": "Page not found – Sanitas Sales Group",
+        "status": "failed_open",
+        "error": "profile_unavailable_or_broken_link",
+        "evidence": "unavailable_profile_page: Skip to primary navigation\nSkip to main content\nSkip to footer\n\nSANITAS SALES GROUP\n\nSales and marketing contractors serving the greater Rocky Mountain region\n\nBRANDS\n \nOUR TERRITO"
+      },
+      "result": {
+        "ok": false,
+        "engine": "dedicated-chrome-cdp-website-contact",
+        "browserEngine": "codex-chrome-cdp",
+        "mode": "website_contact_unreachable_skip",
+        "targetUrl": "https://sanitassalesgroup.com/help/contact-us",
+        "chromeOpen": {
+          "ok": false,
+          "engine": "codex-chrome-cdp",
+          "port": 9224,
+          "targetUrl": "https://sanitassalesgroup.com/help/contact-us",
+          "tabId": "EBAFFFFE7F2A400D33B6644122389491",
+          "title": "Page not found – Sanitas Sales Group",
+          "status": "failed_open",
+          "error": "profile_unavailable_or_broken_link",
+          "evidence": "unavailable_profile_page: Skip to primary navigation\nSkip to main content\nSkip to footer\n\nSANITAS SALES GROUP\n\nSales and marketing contractors serving the greater Rocky Mountain region\n\nBRANDS\n \nOUR TERRITO"
+        },
+        "sendStatus": "website_contact_unreachable_skip",
+        "subject": "FLEXTAIL retail partnership | 2026 assortment",
+        "draft": "Dear Sanitas Sales Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
+        "evidence": "unavailable_profile_page: Skip to primary navigation\nSkip to main content\nSkip to footer\n\nSANITAS SALES GROUP\n\nSales and marketing contractors serving the greater Rocky Mountain region\n\nBRANDS\n \nOUR TERRITO;website_contact_all_targets_failed:6;contact_path_strategy_v2",
+        "output": "{\"verdict\":\"website_contact_unreachable_skip\",\"evidence\":\"unavailable_profile_page: Skip to primary navigation\\nSkip to main content\\nSkip to footer\\n\\nSANITAS SALES GROUP\\n\\nSales and marketing contractors serving the greater Rocky Mountain region\\n\\nBRANDS\\n \\nOUR TERRITO;website_contact_all_targets_failed:6;contact_path_strategy_v2\",\"subject\":\"FLEXTAIL retail partnership | 2026 assortment\",\"draft\":\"Dear Sanitas Sales Team,\\n\\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\\n\\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\\n\\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\\n\\nProduct overview: https://www.flextail.com/\\n\\nBest regards,\\nLeo Liu\\nSales & Operations Director\\nLeo@flextailgear.com\",\"sendStatus\":\"website_contact_unreachable_skip\",\"attempts\":[{\"targetUrl\":\"https://sanitassalesgroup.com/contact/\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;contact_entry_clicked:Skip to primary navigation\"},{\"targetUrl\":\"https://sanitassalesgroup.com/\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;contact_entry_clicked:Skip to primary navigation\"},{\"targetUrl\":\"https://sanitassalesgroup.com/pages/contact-us\",\"sendStatus\":\"failed_open\",\"evidence\":\"unavailable_profile_page: Skip to primary navigation\\nSkip to main content\\nSkip to footer\\n\\nSANITAS SALES GROUP\\n\\nSales and marketing contractors serving the greater Rocky Mountain region\\n\\nBRANDS\\n \\nOUR TERRITO\"},{\"targetUrl\":\"https://sanitassalesgroup.com/pages/contact\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;contact_entry_clicked:Skip to primary navigation\"},{\"targetUrl\":\"https://sanitassalesgroup.com/contact-us\",\"sendStatus\":\"failed_open\",\"evidence\":\"unavailable_profile_page: Page not found – Sanitas Sales Group\"},{\"targetUrl\":\"https://sanitassalesgroup.com/help/contact-us\",\"sendStatus\":\"failed_open\",\"evidence\":\"unavailable_profile_page: Skip to primary navigation\\nSkip to main content\\nSkip to footer\\n\\nSANITAS SALES GROUP\\n\\nSales and marketing contractors serving the greater Rocky Mountain region\\n\\nBRANDS\\n \\nOUR TERRITO\"}],\"nextAction\":\"Official website contact was unreachable or not machine-verifiable. Skip this website route now, note it clearly, and continue with LinkedIn, Facebook, Instagram, or another verified official channel.\"}"
+      }
+    },
+    {
+      "id": "google-customer-ascension-sales-group-website-contact",
+      "company": "Ascension Sales Group",
+      "action": "develop",
+      "platform": "website_form",
+      "targetUrl": "https://www.ascensionsalesgroup.com/",
+      "ok": false,
+      "sendStatus": "website_contact_unreachable_skip",
+      "evidence": "website_page_unavailable_404: 404 Not Found | Ascension Sales Group;website_contact_all_targets_failed:6;contact_path_strategy_v2",
+      "timestamp": "2026-08-18T22:12:51.016Z",
+      "chromeOpen": {
+        "ok": false,
+        "engine": "codex-chrome-cdp",
+        "port": 9224,
+        "targetUrl": "https://www.ascensionsalesgroup.com/help/contact-us",
+        "tabId": "795017EC47CB0CA7655CC543ABB739EA",
+        "title": "404 Not Found | Ascension Sales Group",
+        "status": "failed_open",
+        "error": "profile_unavailable_or_broken_link",
+        "evidence": "website_page_unavailable_404: 404 Not Found | Ascension Sales Group"
+      },
+      "result": {
+        "ok": false,
+        "engine": "dedicated-chrome-cdp-website-contact",
+        "browserEngine": "codex-chrome-cdp",
+        "mode": "website_contact_unreachable_skip",
+        "targetUrl": "https://www.ascensionsalesgroup.com/help/contact-us",
+        "chromeOpen": {
+          "ok": false,
+          "engine": "codex-chrome-cdp",
+          "port": 9224,
+          "targetUrl": "https://www.ascensionsalesgroup.com/help/contact-us",
+          "tabId": "795017EC47CB0CA7655CC543ABB739EA",
+          "title": "404 Not Found | Ascension Sales Group",
+          "status": "failed_open",
+          "error": "profile_unavailable_or_broken_link",
+          "evidence": "website_page_unavailable_404: 404 Not Found | Ascension Sales Group"
+        },
+        "sendStatus": "website_contact_unreachable_skip",
+        "subject": "FLEXTAIL retail partnership | 2026 assortment",
+        "draft": "Dear Ascension Sales Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
+        "evidence": "website_page_unavailable_404: 404 Not Found | Ascension Sales Group;website_contact_all_targets_failed:6;contact_path_strategy_v2",
+        "output": "{\"verdict\":\"website_contact_unreachable_skip\",\"evidence\":\"website_page_unavailable_404: 404 Not Found | Ascension Sales Group;website_contact_all_targets_failed:6;contact_path_strategy_v2\",\"subject\":\"FLEXTAIL retail partnership | 2026 assortment\",\"draft\":\"Dear Ascension Sales Team,\\n\\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\\n\\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\\n\\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\\n\\nProduct overview: https://www.flextail.com/\\n\\nBest regards,\\nLeo Liu\\nSales & Operations Director\\nLeo@flextailgear.com\",\"sendStatus\":\"website_contact_unreachable_skip\",\"attempts\":[{\"targetUrl\":\"https://www.ascensionsalesgroup.com/\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control\"},{\"targetUrl\":\"https://www.ascensionsalesgroup.com/pages/contact-us\",\"sendStatus\":\"failed_open\",\"evidence\":\"website_page_unavailable_404: 404 Not Found | Ascension Sales Group\"},{\"targetUrl\":\"https://www.ascensionsalesgroup.com/pages/contact\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control\"},{\"targetUrl\":\"https://www.ascensionsalesgroup.com/contact-us\",\"sendStatus\":\"failed_open\",\"evidence\":\"website_page_unavailable_404: 404 Not Found | Ascension Sales Group\"},{\"targetUrl\":\"https://www.ascensionsalesgroup.com/contact\",\"sendStatus\":\"failed_open\",\"evidence\":\"website_page_unavailable_404: 404 Not Found | Ascension Sales Group\"},{\"targetUrl\":\"https://www.ascensionsalesgroup.com/help/contact-us\",\"sendStatus\":\"failed_open\",\"evidence\":\"website_page_unavailable_404: 404 Not Found | Ascension Sales Group\"}],\"nextAction\":\"Official website contact was unreachable or not machine-verifiable. Skip this website route now, note it clearly, and continue with LinkedIn, Facebook, Instagram, or another verified official channel.\"}"
+      }
+    },
+    {
+      "id": "google-customer-salvation-sales-website-contact",
+      "company": "Salvation Sales",
+      "action": "develop",
+      "platform": "website_form",
+      "targetUrl": "https://salvationsales.com/",
+      "ok": false,
+      "sendStatus": "website_contact_unreachable_skip",
+      "evidence": "unavailable_profile_page: Home\nAbout\nStaff\nContact\nPage Not Found\n\nWe can’t seem to find the page you’re looking for.\n\nGo To Home Page\n\nCopyright © 2024, Salvation Sales. All Rights Reserved.\n\nPowered by\n\nT;website_contact_all_targets_failed:6;contact_path_strategy_v2",
+      "timestamp": "2026-08-18T22:13:10.711Z",
+      "chromeOpen": {
+        "ok": false,
+        "engine": "codex-chrome-cdp",
+        "port": 9224,
+        "targetUrl": "https://salvationsales.com/help/contact-us",
+        "tabId": "9DF476C5B73183EFE3B1C6C276BDD48B",
+        "title": "Salvation Sales",
+        "status": "failed_open",
+        "error": "profile_unavailable_or_broken_link",
+        "evidence": "unavailable_profile_page: Home\nAbout\nStaff\nContact\nPage Not Found\n\nWe can’t seem to find the page you’re looking for.\n\nGo To Home Page\n\nCopyright © 2024, Salvation Sales. All Rights Reserved.\n\nPowered by\n\nT"
+      },
+      "result": {
+        "ok": false,
+        "engine": "dedicated-chrome-cdp-website-contact",
+        "browserEngine": "codex-chrome-cdp",
+        "mode": "website_contact_unreachable_skip",
+        "targetUrl": "https://salvationsales.com/help/contact-us",
+        "chromeOpen": {
+          "ok": false,
+          "engine": "codex-chrome-cdp",
+          "port": 9224,
+          "targetUrl": "https://salvationsales.com/help/contact-us",
+          "tabId": "9DF476C5B73183EFE3B1C6C276BDD48B",
+          "title": "Salvation Sales",
+          "status": "failed_open",
+          "error": "profile_unavailable_or_broken_link",
+          "evidence": "unavailable_profile_page: Home\nAbout\nStaff\nContact\nPage Not Found\n\nWe can’t seem to find the page you’re looking for.\n\nGo To Home Page\n\nCopyright © 2024, Salvation Sales. All Rights Reserved.\n\nPowered by\n\nT"
+        },
+        "sendStatus": "website_contact_unreachable_skip",
+        "subject": "FLEXTAIL retail partnership | 2026 assortment",
+        "draft": "Dear Salvation Sales Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
+        "evidence": "unavailable_profile_page: Home\nAbout\nStaff\nContact\nPage Not Found\n\nWe can’t seem to find the page you’re looking for.\n\nGo To Home Page\n\nCopyright © 2024, Salvation Sales. All Rights Reserved.\n\nPowered by\n\nT;website_contact_all_targets_failed:6;contact_path_strategy_v2",
+        "output": "{\"verdict\":\"website_contact_unreachable_skip\",\"evidence\":\"unavailable_profile_page: Home\\nAbout\\nStaff\\nContact\\nPage Not Found\\n\\nWe can’t seem to find the page you’re looking for.\\n\\nGo To Home Page\\n\\nCopyright © 2024, Salvation Sales. All Rights Reserved.\\n\\nPowered by\\n\\nT;website_contact_all_targets_failed:6;contact_path_strategy_v2\",\"subject\":\"FLEXTAIL retail partnership | 2026 assortment\",\"draft\":\"Dear Salvation Sales Team,\\n\\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\\n\\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\\n\\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\\n\\nProduct overview: https://www.flextail.com/\\n\\nBest regards,\\nLeo Liu\\nSales & Operations Director\\nLeo@flextailgear.com\",\"sendStatus\":\"website_contact_unreachable_skip\",\"attempts\":[{\"targetUrl\":\"https://salvationsales.com/\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control\"},{\"targetUrl\":\"https://salvationsales.com/pages/contact-us\",\"sendStatus\":\"failed_open\",\"evidence\":\"unavailable_profile_page: Home\\nAbout\\nStaff\\nContact\\nPage Not Found\\n\\nWe can’t seem to find the page you’re looking for.\\n\\nGo To Home Page\\n\\nCopyright © 2024, Salvation Sales. All Rights Reserved.\\n\\nPowered by\\n\\nT\"},{\"targetUrl\":\"https://salvationsales.com/pages/contact\",\"sendStatus\":\"failed_open\",\"evidence\":\"unavailable_profile_page: Home\\nAbout\\nStaff\\nContact\\nPage Not Found\\n\\nWe can’t seem to find the page you’re looking for.\\n\\nGo To Home Page\\n\\nCopyright © 2024, Salvation Sales. All Rights Reserved.\\n\\nPowered by\\n\\nT\"},{\"targetUrl\":\"https://salvationsales.com/contact-us\",\"sendStatus\":\"failed_open\",\"evidence\":\"unavailable_profile_page: Home\\nAbout\\nStaff\\nContact\\nPage Not Found\\n\\nWe can’t seem to find the page you’re looking for.\\n\\nGo To Home Page\\n\\nCopyright © 2024, Salvation Sales. All Rights Reserved.\\n\\nPowered by\\n\\nT\"},{\"targetUrl\":\"https://salvationsales.com/contact\",\"sendStatus\":\"failed_open\",\"evidence\":\"unavailable_profile_page: Home\\nAbout\\nStaff\\nContact\\nPage Not Found\\n\\nWe can’t seem to find the page you’re looking for.\\n\\nGo To Home Page\\n\\nCopyright © 2024, Salvation Sales. All Rights Reserved.\\n\\nPowered by\\n\\nT\"},{\"targetUrl\":\"https://salvationsales.com/help/contact-us\",\"sendStatus\":\"failed_open\",\"evidence\":\"unavailable_profile_page: Home\\nAbout\\nStaff\\nContact\\nPage Not Found\\n\\nWe can’t seem to find the page you’re looking for.\\n\\nGo To Home Page\\n\\nCopyright © 2024, Salvation Sales. All Rights Reserved.\\n\\nPowered by\\n\\nT\"}],\"nextAction\":\"Official website contact was unreachable or not machine-verifiable. Skip this website route now, note it clearly, and continue with LinkedIn, Facebook, Instagram, or another verified official channel.\"}"
+      }
+    },
+    {
+      "id": "google-customer-action-sports-agency-website-contact",
+      "company": "Action Sports Agency",
+      "action": "develop",
+      "platform": "website_form",
+      "targetUrl": "https://www.actionsportsagency.com/",
       "ok": false,
       "sendStatus": "failed_open",
       "evidence": "customer_execution_timeout:90000;queue_continued_to_next_customer",
-      "timestamp": "2026-08-18T19:16:52.904Z",
+      "timestamp": "2026-08-18T22:14:43.823Z",
       "chromeOpen": null,
       "result": {
         "ok": false,
@@ -549,157 +441,168 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
         "reason": "customer_execution_timeout",
         "evidence": "customer_execution_timeout:90000;queue_continued_to_next_customer",
         "chromeOpen": null,
-        "output": "{\"verdict\":\"failed_open\",\"sendStatus\":\"failed_open\",\"evidence\":\"customer_execution_timeout:90000;queue_continued_to_next_customer\",\"nextAction\":\"The customer exceeded its bounded execution window. Its automation tabs were closed and the queue continued without retrying or claiming a send.\",\"company\":\"Sespe Group\"}"
+        "output": "{\"verdict\":\"failed_open\",\"sendStatus\":\"failed_open\",\"evidence\":\"customer_execution_timeout:90000;queue_continued_to_next_customer\",\"nextAction\":\"The customer exceeded its bounded execution window. Its automation tabs were closed and the queue continued without retrying or claiming a send.\",\"company\":\"Action Sports Agency\"}"
       }
     },
     {
-      "id": "google-customer-palisade-trading-website-contact",
-      "company": "Palisade Trading",
+      "id": "google-customer-sky-lines-website-contact",
+      "company": "Sky-Lines",
       "action": "develop",
       "platform": "website_form",
-      "targetUrl": "https://www.palisadetrading.com/",
+      "targetUrl": "https://sky-lines.ca/",
+      "ok": false,
+      "sendStatus": "website_contact_unreachable_skip",
+      "evidence": "website_page_unavailable_404: Not Found\n\nThe requested URL was not found on this server.\n\nAdditionally, a 404 Not Found error was encountered while trying to use an ErrorDocument to handle the request.;website_contact_all_targets_failed:6;contact_path_strategy_v2",
+      "timestamp": "2026-08-18T22:15:04.071Z",
+      "chromeOpen": {
+        "ok": false,
+        "engine": "codex-chrome-cdp",
+        "port": 9224,
+        "targetUrl": "https://sky-lines.ca/help/contact-us",
+        "tabId": "B666F2C9B146070C3CA14CB924BAFA63",
+        "title": "404 Not Found",
+        "status": "failed_open",
+        "error": "profile_unavailable_or_broken_link",
+        "evidence": "website_page_unavailable_404: Not Found\n\nThe requested URL was not found on this server.\n\nAdditionally, a 404 Not Found error was encountered while trying to use an ErrorDocument to handle the request."
+      },
+      "result": {
+        "ok": false,
+        "engine": "dedicated-chrome-cdp-website-contact",
+        "browserEngine": "codex-chrome-cdp",
+        "mode": "website_contact_unreachable_skip",
+        "targetUrl": "https://sky-lines.ca/help/contact-us",
+        "chromeOpen": {
+          "ok": false,
+          "engine": "codex-chrome-cdp",
+          "port": 9224,
+          "targetUrl": "https://sky-lines.ca/help/contact-us",
+          "tabId": "B666F2C9B146070C3CA14CB924BAFA63",
+          "title": "404 Not Found",
+          "status": "failed_open",
+          "error": "profile_unavailable_or_broken_link",
+          "evidence": "website_page_unavailable_404: Not Found\n\nThe requested URL was not found on this server.\n\nAdditionally, a 404 Not Found error was encountered while trying to use an ErrorDocument to handle the request."
+        },
+        "sendStatus": "website_contact_unreachable_skip",
+        "subject": "FLEXTAIL retail partnership | 2026 assortment",
+        "draft": "Dear Sky-Lines Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
+        "evidence": "website_page_unavailable_404: Not Found\n\nThe requested URL was not found on this server.\n\nAdditionally, a 404 Not Found error was encountered while trying to use an ErrorDocument to handle the request.;website_contact_all_targets_failed:6;contact_path_strategy_v2",
+        "output": "{\"verdict\":\"website_contact_unreachable_skip\",\"evidence\":\"website_page_unavailable_404: Not Found\\n\\nThe requested URL was not found on this server.\\n\\nAdditionally, a 404 Not Found error was encountered while trying to use an ErrorDocument to handle the request.;website_contact_all_targets_failed:6;contact_path_strategy_v2\",\"subject\":\"FLEXTAIL retail partnership | 2026 assortment\",\"draft\":\"Dear Sky-Lines Team,\\n\\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\\n\\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\\n\\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\\n\\nProduct overview: https://www.flextail.com/\\n\\nBest regards,\\nLeo Liu\\nSales & Operations Director\\nLeo@flextailgear.com\",\"sendStatus\":\"website_contact_unreachable_skip\",\"attempts\":[{\"targetUrl\":\"https://sky-lines.ca/\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control\"},{\"targetUrl\":\"https://sky-lines.ca/pages/contact-us\",\"sendStatus\":\"failed_open\",\"evidence\":\"website_page_unavailable_404: Not Found\\n\\nThe requested URL was not found on this server.\\n\\nAdditionally, a 404 Not Found error was encountered while trying to use an ErrorDocument to handle the request.\"},{\"targetUrl\":\"https://sky-lines.ca/pages/contact\",\"sendStatus\":\"failed_open\",\"evidence\":\"website_page_unavailable_404: Not Found\\n\\nThe requested URL was not found on this server.\\n\\nAdditionally, a 404 Not Found error was encountered while trying to use an ErrorDocument to handle the request.\"},{\"targetUrl\":\"https://sky-lines.ca/contact-us\",\"sendStatus\":\"failed_open\",\"evidence\":\"website_page_unavailable_404: Not Found\\n\\nThe requested URL was not found on this server.\\n\\nAdditionally, a 404 Not Found error was encountered while trying to use an ErrorDocument to handle the request.\"},{\"targetUrl\":\"https://sky-lines.ca/contact\",\"sendStatus\":\"failed_open\",\"evidence\":\"website_page_unavailable_404: Not Found\\n\\nThe requested URL was not found on this server.\\n\\nAdditionally, a 404 Not Found error was encountered while trying to use an ErrorDocument to handle the request.\"},{\"targetUrl\":\"https://sky-lines.ca/help/contact-us\",\"sendStatus\":\"failed_open\",\"evidence\":\"website_page_unavailable_404: Not Found\\n\\nThe requested URL was not found on this server.\\n\\nAdditionally, a 404 Not Found error was encountered while trying to use an ErrorDocument to handle the request.\"}],\"nextAction\":\"Official website contact was unreachable or not machine-verifiable. Skip this website route now, note it clearly, and continue with LinkedIn, Facebook, Instagram, or another verified official channel.\"}"
+      }
+    },
+    {
+      "id": "google-customer-next-adventure-website-contact",
+      "company": "Next Adventure",
+      "action": "develop",
+      "platform": "website_form",
+      "targetUrl": "https://nextadventure.net/",
       "ok": false,
       "sendStatus": "failed_open",
-      "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:linkedin;linkedin_draft_inserted_explicit_send_control_not_found;no_irreversible_action_performed;linkedin_draft_inserted_verified;contact_path_strategy_v2",
-      "timestamp": "2026-08-18T19:17:33.468Z",
+      "evidence": "website_contact_entry_not_verified;contact_entry_clicked:Contact Us;official_social_fallback:instagram;instagram_unavailable_profile_page: 很抱歉，无法访问此页面\n你点击的链接可能已损坏，或页面已被移除。返回 instagram。\nmeta\n关于\n博客\n工作\n帮助\napi\n隐私设置\n条款\n地点\n热门\ninstagram lite\nmeta ai\nthreads\n联系人上传和非用户\nmeta verified\n中文(简体)\nafrikaans\nالعربية\nčeština\ndansk\ndeutsch\nελληνικά\nenglish\nenglish (uk)\nespañol (españa)\nespañol\nفارسی\nsuomi\nfrançais\nעברית\nbahasa indonesia\nitaliano\n日本語\n한국어\nbahasa melayu\nnorsk\nnederlands\npolski\nportuguês (brasil)\nportuguês (portugal)\nрусский\nsvenska\nภาษาไทย\nfilipino\ntürkçe\n中文(简体)\n中文(台灣)\nবাংলা\nગુજરાતી\nहिन्दी\nhrvatski\nmagyar\nಕನ್ನಡ\nമലയാളം\nमराठी\nनेपाली\nਪੰਜਾਬੀ\nසිංහල\nslovenčina\nதமிழ்\nతెలుగు\nاردو\ntiếng việt\n中文(香港)\nбългарски\nfrançais (canada)\nromână\nсрпски\nукра;contact_path_strategy_v2",
+      "timestamp": "2026-08-18T22:15:30.481Z",
       "chromeOpen": {
         "ok": true,
         "engine": "codex-chrome-cdp",
         "port": 9224,
-        "targetUrl": "https://www.linkedin.com/company/palisade-trading/",
-        "tabId": "D194581275AD52763C040BE6D6679FB0",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/D194581275AD52763C040BE6D6679FB0",
-        "title": "LinkedIn"
+        "targetUrl": "https://www.instagram.com/nextadventurepdx/",
+        "tabId": "1CDB620EB97853968239BD0CF3234DBE",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/1CDB620EB97853968239BD0CF3234DBE",
+        "title": "Instagram"
       },
       "result": {
         "ok": false,
         "engine": "codex-chrome-cdp",
         "browserEngine": "codex-chrome-cdp",
         "mode": "codex_chrome_cdp",
-        "targetUrl": "https://www.linkedin.com/company/palisade-trading/",
+        "targetUrl": "https://www.instagram.com/nextadventurepdx/",
         "chromeOpen": {
           "ok": true,
           "engine": "codex-chrome-cdp",
           "port": 9224,
-          "targetUrl": "https://www.linkedin.com/company/palisade-trading/",
-          "tabId": "D194581275AD52763C040BE6D6679FB0",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/D194581275AD52763C040BE6D6679FB0",
-          "title": "LinkedIn"
+          "targetUrl": "https://www.instagram.com/nextadventurepdx/",
+          "tabId": "1CDB620EB97853968239BD0CF3234DBE",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/1CDB620EB97853968239BD0CF3234DBE",
+          "title": "Instagram"
         },
         "sendStatus": "failed_open",
-        "output": "{\"verdict\":\"major_bug_review_needed\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:linkedin;linkedin_draft_inserted_explicit_send_control_not_found;no_irreversible_action_performed;linkedin_draft_inserted_verified;contact_path_strategy_v2\",\"nextAction\":\"An explicit Send control was not detected and the verified Enter path was unavailable; record a technical failure and continue to another verified channel.\",\"draft\":\"Hi Palisade Trading team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a retail/category buyer, the strongest fit is assortment fit, new SKU pipeline, price-tier coverage, and proven consumer demand; your Midwestern United States outdoor, apparel and footwear sales agency focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the category buyer or vendor-review owner for a short intro video meeting?\",\"sendStatus\":\"failed_open\"}",
+        "output": "{\"verdict\":\"major_bug_review_needed\",\"evidence\":\"website_contact_entry_not_verified;contact_entry_clicked:Contact Us;official_social_fallback:instagram;instagram_unavailable_profile_page: 很抱歉，无法访问此页面\\n你点击的链接可能已损坏，或页面已被移除。返回 instagram。\\nmeta\\n关于\\n博客\\n工作\\n帮助\\napi\\n隐私设置\\n条款\\n地点\\n热门\\ninstagram lite\\nmeta ai\\nthreads\\n联系人上传和非用户\\nmeta verified\\n中文(简体)\\nafrikaans\\nالعربية\\nčeština\\ndansk\\ndeutsch\\nελληνικά\\nenglish\\nenglish (uk)\\nespañol (españa)\\nespañol\\nفارسی\\nsuomi\\nfrançais\\nעברית\\nbahasa indonesia\\nitaliano\\n日本語\\n한국어\\nbahasa melayu\\nnorsk\\nnederlands\\npolski\\nportuguês (brasil)\\nportuguês (portugal)\\nрусский\\nsvenska\\nภาษาไทย\\nfilipino\\ntürkçe\\n中文(简体)\\n中文(台灣)\\nবাংলা\\nગુજરાતી\\nहिन्दी\\nhrvatski\\nmagyar\\nಕನ್ನಡ\\nമലയാളം\\nमराठी\\nनेपाली\\nਪੰਜਾਬੀ\\nසිංහල\\nslovenčina\\nதமிழ்\\nతెలుగు\\nاردو\\ntiếng việt\\n中文(香港)\\nбългарски\\nfrançais (canada)\\nromână\\nсрпски\\nукра;contact_path_strategy_v2\",\"nextAction\":\"Do not retry this URL; switch to a verified alternate channel or official website contact.\",\"draft\":\"Hi Next Adventure team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a retail/category buyer, the strongest fit is assortment fit, new SKU pipeline, price-tier coverage, and proven consumer demand; your verified outdoor, camping, travel and consumer electronics retail channel focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the category buyer or vendor-review owner for a short intro video meeting?\",\"sendStatus\":\"failed_open\"}",
         "decision": {
           "verdict": "develop",
-          "fitScore": 96,
+          "fitScore": 88,
           "reason": "local_codex_extension_template",
-          "draft": "Hi Palisade Trading team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a retail/category buyer, the strongest fit is assortment fit, new SKU pipeline, price-tier coverage, and proven consumer demand; your Midwestern United States outdoor, apparel and footwear sales agency focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the category buyer or vendor-review owner for a short intro video meeting?"
+          "draft": "Hi Next Adventure team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a retail/category buyer, the strongest fit is assortment fit, new SKU pipeline, price-tier coverage, and proven consumer demand; your verified outdoor, camping, travel and consumer electronics retail channel focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the category buyer or vendor-review owner for a short intro video meeting?"
         },
         "executionLayer": "Chrome CDP fallback",
         "glmModel": "not_used",
         "followup": false,
-        "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:linkedin;linkedin_draft_inserted_explicit_send_control_not_found;no_irreversible_action_performed;linkedin_draft_inserted_verified;contact_path_strategy_v2",
-        "socialFallbackEvidence": "linkedin_draft_inserted_explicit_send_control_not_found;no_irreversible_action_performed;linkedin_draft_inserted_verified"
+        "evidence": "website_contact_entry_not_verified;contact_entry_clicked:Contact Us;official_social_fallback:instagram;instagram_unavailable_profile_page: 很抱歉，无法访问此页面\n你点击的链接可能已损坏，或页面已被移除。返回 instagram。\nmeta\n关于\n博客\n工作\n帮助\napi\n隐私设置\n条款\n地点\n热门\ninstagram lite\nmeta ai\nthreads\n联系人上传和非用户\nmeta verified\n中文(简体)\nafrikaans\nالعربية\nčeština\ndansk\ndeutsch\nελληνικά\nenglish\nenglish (uk)\nespañol (españa)\nespañol\nفارسی\nsuomi\nfrançais\nעברית\nbahasa indonesia\nitaliano\n日本語\n한국어\nbahasa melayu\nnorsk\nnederlands\npolski\nportuguês (brasil)\nportuguês (portugal)\nрусский\nsvenska\nภาษาไทย\nfilipino\ntürkçe\n中文(简体)\n中文(台灣)\nবাংলা\nગુજરાતી\nहिन्दी\nhrvatski\nmagyar\nಕನ್ನಡ\nമലയാളം\nमराठी\nनेपाली\nਪੰਜਾਬੀ\nසිංහල\nslovenčina\nதமிழ்\nతెలుగు\nاردو\ntiếng việt\n中文(香港)\nбългарски\nfrançais (canada)\nromână\nсрпски\nукра;contact_path_strategy_v2",
+        "socialFallbackEvidence": "instagram_unavailable_profile_page: 很抱歉，无法访问此页面\n你点击的链接可能已损坏，或页面已被移除。返回 instagram。\nmeta\n关于\n博客\n工作\n帮助\napi\n隐私设置\n条款\n地点\n热门\ninstagram lite\nmeta ai\nthreads\n联系人上传和非用户\nmeta verified\n中文(简体)\nafrikaans\nالعربية\nčeština\ndansk\ndeutsch\nελληνικά\nenglish\nenglish (uk)\nespañol (españa)\nespañol\nفارسی\nsuomi\nfrançais\nעברית\nbahasa indonesia\nitaliano\n日本語\n한국어\nbahasa melayu\nnorsk\nnederlands\npolski\nportuguês (brasil)\nportuguês (portugal)\nрусский\nsvenska\nภาษาไทย\nfilipino\ntürkçe\n中文(简体)\n中文(台灣)\nবাংলা\nગુજરાતી\nहिन्दी\nhrvatski\nmagyar\nಕನ್ನಡ\nമലയാളം\nमराठी\nनेपाली\nਪੰਜਾਬੀ\nසිංහල\nslovenčina\nதமிழ்\nతెలుగు\nاردو\ntiếng việt\n中文(香港)\nбългарски\nfrançais (canada)\nromână\nсрпски\nукра"
       }
     },
     {
-      "id": "google-customer-nomadic-supply-company-website-contact",
-      "company": "Nomadic Supply Company",
+      "id": "google-customer-outdoor-industry-group-website-contact",
+      "company": "Outdoor Industry Group",
       "action": "develop",
       "platform": "website_form",
-      "targetUrl": "https://nomadicsupply.com/sell-your-products-with-nomadic-supply-company/",
+      "targetUrl": "https://outdoorindustrygroup.com/contact-us/",
       "ok": false,
-      "sendStatus": "failed_open",
-      "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:instagram;instagram_message_button_clicked_composer_not_found;contact_path_strategy_v2",
-      "timestamp": "2026-08-18T19:18:42.878Z",
+      "sendStatus": "website_contact_unreachable_skip",
+      "evidence": "website_contact_entry_not_verified;contact_entry_clicked:facebook;website_contact_all_targets_failed:1;contact_path_strategy_v2",
+      "timestamp": "2026-08-18T22:15:47.192Z",
       "chromeOpen": {
         "ok": true,
         "engine": "codex-chrome-cdp",
         "port": 9224,
-        "targetUrl": "https://www.instagram.com/nomadic.supply/",
-        "tabId": "7D762BBCAA3A6EB485DDDA52C65E428F",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/7D762BBCAA3A6EB485DDDA52C65E428F",
-        "title": "Nomadic Supply Company® (@nomadic.supply) · Instagram 照片和视频"
+        "targetUrl": "https://outdoorindustrygroup.com/contact-us/",
+        "tabId": "8C63607F360EFF7A1968A80088590C7B",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/8C63607F360EFF7A1968A80088590C7B",
+        "title": "Contact Us - Outdoor Industry Group"
       },
       "result": {
         "ok": false,
-        "engine": "codex-chrome-cdp",
+        "engine": "dedicated-chrome-cdp-website-contact",
         "browserEngine": "codex-chrome-cdp",
-        "mode": "codex_chrome_cdp",
-        "targetUrl": "https://www.instagram.com/nomadic.supply/",
+        "mode": "website_contact_unreachable_skip",
+        "targetUrl": "https://outdoorindustrygroup.com/contact-us/",
         "chromeOpen": {
           "ok": true,
           "engine": "codex-chrome-cdp",
           "port": 9224,
-          "targetUrl": "https://www.instagram.com/nomadic.supply/",
-          "tabId": "7D762BBCAA3A6EB485DDDA52C65E428F",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/7D762BBCAA3A6EB485DDDA52C65E428F",
-          "title": "Nomadic Supply Company® (@nomadic.supply) · Instagram 照片和视频"
+          "targetUrl": "https://outdoorindustrygroup.com/contact-us/",
+          "tabId": "8C63607F360EFF7A1968A80088590C7B",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/8C63607F360EFF7A1968A80088590C7B",
+          "title": "Contact Us - Outdoor Industry Group"
         },
+        "sendStatus": "website_contact_unreachable_skip",
+        "subject": "FLEXTAIL retail partnership | 2026 assortment",
+        "draft": "Dear Outdoor Industry Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
+        "evidence": "website_contact_entry_not_verified;contact_entry_clicked:facebook;website_contact_all_targets_failed:1;contact_path_strategy_v2",
+        "output": "{\"verdict\":\"website_contact_unreachable_skip\",\"evidence\":\"website_contact_entry_not_verified;contact_entry_clicked:facebook;website_contact_all_targets_failed:1;contact_path_strategy_v2\",\"nextAction\":\"Contact page opened, but no verified form, mailto link, vendor/business route, or clickable Contact Us path was detected. Continue manually before marking the lead ready.\",\"subject\":\"FLEXTAIL retail partnership | 2026 assortment\",\"draft\":\"Dear Outdoor Industry Team,\\n\\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\\n\\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\\n\\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\\n\\nProduct overview: https://www.flextail.com/\\n\\nBest regards,\\nLeo Liu\\nSales & Operations Director\\nLeo@flextailgear.com\",\"sendStatus\":\"website_contact_unreachable_skip\",\"attempts\":[{\"targetUrl\":\"https://outdoorindustrygroup.com/contact-us/\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;contact_entry_clicked:facebook\"}]}"
+      }
+    },
+    {
+      "id": "google-customer-perpetual-motion-nw-website-contact",
+      "company": "Perpetual Motion NW",
+      "action": "develop",
+      "platform": "website_form",
+      "targetUrl": "https://www.perpetualmotionnw.com/",
+      "ok": false,
+      "sendStatus": "failed_open",
+      "evidence": "customer_execution_timeout:90000;queue_continued_to_next_customer",
+      "timestamp": "2026-08-18T22:17:20.083Z",
+      "chromeOpen": null,
+      "result": {
+        "ok": false,
+        "timedOut": true,
         "sendStatus": "failed_open",
-        "output": "{\"verdict\":\"major_bug_review_needed\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:instagram;instagram_message_button_clicked_composer_not_found;contact_path_strategy_v2\",\"nextAction\":\"Composer not detected; pause automation and notify operator only if retry would be unsafe.\",\"draft\":\"Hi Nomadic Supply Company team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a retail/category buyer, the strongest fit is assortment fit, new SKU pipeline, price-tier coverage, and proven consumer demand; your verified outdoor, camping, travel and consumer electronics retail channel focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the category buyer or vendor-review owner for a short intro video meeting?\",\"sendStatus\":\"failed_open\"}",
-        "decision": {
-          "verdict": "develop",
-          "fitScore": 95,
-          "reason": "local_codex_extension_template",
-          "draft": "Hi Nomadic Supply Company team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a retail/category buyer, the strongest fit is assortment fit, new SKU pipeline, price-tier coverage, and proven consumer demand; your verified outdoor, camping, travel and consumer electronics retail channel focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the category buyer or vendor-review owner for a short intro video meeting?"
-        },
-        "executionLayer": "Chrome CDP fallback",
-        "glmModel": "not_used",
-        "followup": false,
-        "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:instagram;instagram_message_button_clicked_composer_not_found;contact_path_strategy_v2",
-        "socialFallbackEvidence": "instagram_message_button_clicked_composer_not_found"
+        "reason": "customer_execution_timeout",
+        "evidence": "customer_execution_timeout:90000;queue_continued_to_next_customer",
+        "chromeOpen": null,
+        "output": "{\"verdict\":\"failed_open\",\"sendStatus\":\"failed_open\",\"evidence\":\"customer_execution_timeout:90000;queue_continued_to_next_customer\",\"nextAction\":\"The customer exceeded its bounded execution window. Its automation tabs were closed and the queue continued without retrying or claiming a send.\",\"company\":\"Perpetual Motion NW\"}"
       }
     }
   ],
   "results": [
     {
-      "id": "google-customer-elevated-outdoor-sales-linkedin",
-      "company": "Elevated Outdoor Sales",
-      "action": "verify_target",
-      "platform": "linkedin",
-      "targetUrl": "https://www.linkedin.com/in/mike-freiberg-b793979/",
-      "ok": false,
-      "sendStatus": "failed_open",
-      "evidence": "linkedin_message_button_clicked_composer_not_found",
-      "timestamp": "2026-08-18T19:07:58.113Z",
-      "chromeOpen": {
-        "ok": true,
-        "engine": "codex-chrome-cdp",
-        "port": 9224,
-        "targetUrl": "https://www.linkedin.com/in/mike-freiberg-b793979/",
-        "tabId": "790A99163161B0AD52A3F00328DFBD58",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/790A99163161B0AD52A3F00328DFBD58",
-        "title": "Mike Freiberg | LinkedIn"
-      },
-      "result": {
-        "ok": false,
-        "engine": "codex-chrome-cdp",
-        "browserEngine": "codex-chrome-cdp",
-        "mode": "codex_chrome_cdp",
-        "targetUrl": "https://www.linkedin.com/in/mike-freiberg-b793979/",
-        "chromeOpen": {
-          "ok": true,
-          "engine": "codex-chrome-cdp",
-          "port": 9224,
-          "targetUrl": "https://www.linkedin.com/in/mike-freiberg-b793979/",
-          "tabId": "790A99163161B0AD52A3F00328DFBD58",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/790A99163161B0AD52A3F00328DFBD58",
-          "title": "Mike Freiberg | LinkedIn"
-        },
-        "sendStatus": "failed_open",
-        "output": "{\"verdict\":\"major_bug_review_needed\",\"evidence\":\"linkedin_message_button_clicked_composer_not_found\",\"nextAction\":\"Composer not detected; pause automation and notify operator only if retry would be unsafe.\",\"draft\":\"Hi Elevated Outdoor Sales team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a distributor/importer, the strongest fit is regional sell-through, channel fit, margin-ready product line, and whether they cover outdoor/travel electronics buyers; your verified outdoor industry manufacturer representative and sales agency focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the owner of distribution evaluation or the best time for a short intro video meeting?\",\"sendStatus\":\"failed_open\"}",
-        "decision": {
-          "verdict": "develop",
-          "fitScore": 90,
-          "reason": "local_codex_extension_template",
-          "draft": "Hi Elevated Outdoor Sales team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a distributor/importer, the strongest fit is regional sell-through, channel fit, margin-ready product line, and whether they cover outdoor/travel electronics buyers; your verified outdoor industry manufacturer representative and sales agency focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the owner of distribution evaluation or the best time for a short intro video meeting?"
-        },
-        "executionLayer": "Chrome CDP fallback",
-        "glmModel": "not_used",
-        "followup": false
-      }
-    },
-    {
       "id": "google-customer-powers-pedersen-sales-group-facebook",
       "company": "Powers Pedersen Sales Group",
       "action": "develop",
@@ -708,13 +611,13 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "ok": false,
       "sendStatus": "website_contact_unreachable_skip",
       "evidence": "unavailable_profile_page: SKIP TO NAVIGATION\nSKIP TO MAIN CONTENT\nHOME\nABOUT US\nTEAM\nBRANDS\nCONTACT\nRETAILER RESOURCES\nFEEL THE LOVE\nNOT FOUND\nThis is somewhat embarrassing, isn’t it?\n\nIt looks like nothing;website_contact_all_targets_failed:6;contact_path_strategy_v2",
-      "timestamp": "2026-08-18T19:08:51.777Z",
+      "timestamp": "2026-08-18T22:08:00.940Z",
       "chromeOpen": {
         "ok": false,
         "engine": "codex-chrome-cdp",
         "port": 9224,
         "targetUrl": "https://p-psg.com/help/contact-us",
-        "tabId": "3C7FC18273506DDA7922782AAA8F2FD2",
+        "tabId": "87516E2CF7AE5EFB0CE87509E36BC3C8",
         "title": "Page not found - Powers Pedersen Sales Group",
         "status": "failed_open",
         "error": "profile_unavailable_or_broken_link",
@@ -731,7 +634,7 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
           "engine": "codex-chrome-cdp",
           "port": 9224,
           "targetUrl": "https://p-psg.com/help/contact-us",
-          "tabId": "3C7FC18273506DDA7922782AAA8F2FD2",
+          "tabId": "87516E2CF7AE5EFB0CE87509E36BC3C8",
           "title": "Page not found - Powers Pedersen Sales Group",
           "status": "failed_open",
           "error": "profile_unavailable_or_broken_link",
@@ -741,7 +644,7 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
         "subject": "FLEXTAIL retail partnership | 2026 assortment",
         "draft": "Dear Powers Pedersen Sales Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
         "evidence": "unavailable_profile_page: SKIP TO NAVIGATION\nSKIP TO MAIN CONTENT\nHOME\nABOUT US\nTEAM\nBRANDS\nCONTACT\nRETAILER RESOURCES\nFEEL THE LOVE\nNOT FOUND\nThis is somewhat embarrassing, isn’t it?\n\nIt looks like nothing;website_contact_all_targets_failed:6;contact_path_strategy_v2",
-        "output": "{\"verdict\":\"website_contact_unreachable_skip\",\"evidence\":\"unavailable_profile_page: SKIP TO NAVIGATION\\nSKIP TO MAIN CONTENT\\nHOME\\nABOUT US\\nTEAM\\nBRANDS\\nCONTACT\\nRETAILER RESOURCES\\nFEEL THE LOVE\\nNOT FOUND\\nThis is somewhat embarrassing, isn’t it?\\n\\nIt looks like nothing;website_contact_all_targets_failed:6;contact_path_strategy_v2\",\"subject\":\"FLEXTAIL retail partnership | 2026 assortment\",\"draft\":\"Dear Powers Pedersen Sales Team,\\n\\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\\n\\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\\n\\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\\n\\nProduct overview: https://www.flextail.com/\\n\\nBest regards,\\nLeo Liu\\nSales & Operations Director\\nLeo@flextailgear.com\",\"sendStatus\":\"website_contact_unreachable_skip\",\"attempts\":[{\"targetUrl\":\"https://p-psg.com/\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control\"},{\"targetUrl\":\"https://p-psg.com/pages/contact-us\",\"sendStatus\":\"failed_open\",\"evidence\":\"unavailable_profile_page: SKIP TO NAVIGATION\\nSKIP TO MAIN CONTENT\\nHOME\\nABOUT US\\nTEAM\\nBRANDS\\nCONTACT\\nRETAILER RESOURCES\\nFEEL THE LOVE\\nNOT FOUND\\nThis is somewhat embarrassing, isn’t it?\\n\\nIt looks like nothing\"},{\"targetUrl\":\"https://p-psg.com/pages/contact\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;contact_entry_clicked:SKIP TO NAVIGATION\"},{\"targetUrl\":\"https://p-psg.com/contact-us\",\"sendStatus\":\"failed_open\",\"evidence\":\"unavailable_profile_page: SKIP TO NAVIGATION\\nSKIP TO MAIN CONTENT\\nHOME\\nABOUT US\\nTEAM\\nBRANDS\\nCONTACT\\nRETAILER RESOURCES\\nFEEL THE LOVE\\nNOT FOUND\\nThis is somewhat embarrassing, isn’t it?\\n\\nIt looks like nothing\"},{\"targetUrl\":\"https://p-psg.com/contact\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;contact_entry_clicked:SKIP TO NAVIGATION\"},{\"targetUrl\":\"https://p-psg.com/help/contact-us\",\"sendStatus\":\"failed_open\",\"evidence\":\"unavailable_profile_page: SKIP TO NAVIGATION\\nSKIP TO MAIN CONTENT\\nHOME\\nABOUT US\\nTEAM\\nBRANDS\\nCONTACT\\nRETAILER RESOURCES\\nFEEL THE LOVE\\nNOT FOUND\\nThis is somewhat embarrassing, isn’t it?\\n\\nIt looks like nothing\"}],\"nextAction\":\"Official website contact was unreachable or not machine-verifiable. Skip this website route now, note it clearly, and continue with LinkedIn, Facebook, Instagram, or another verified official channel.\",\"fallbackFrom\":\"https://www.facebook.com/Powers-Sales-Group-325311146231/\",\"fallbackPlatform\":\"email\",\"fallbackReason\":\"identity_mismatch_expected_Powers Pedersen Sales Group_title_Facebook\"}",
+        "output": "{\"verdict\":\"website_contact_unreachable_skip\",\"evidence\":\"unavailable_profile_page: SKIP TO NAVIGATION\\nSKIP TO MAIN CONTENT\\nHOME\\nABOUT US\\nTEAM\\nBRANDS\\nCONTACT\\nRETAILER RESOURCES\\nFEEL THE LOVE\\nNOT FOUND\\nThis is somewhat embarrassing, isn’t it?\\n\\nIt looks like nothing;website_contact_all_targets_failed:6;contact_path_strategy_v2\",\"subject\":\"FLEXTAIL retail partnership | 2026 assortment\",\"draft\":\"Dear Powers Pedersen Sales Team,\\n\\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\\n\\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\\n\\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\\n\\nProduct overview: https://www.flextail.com/\\n\\nBest regards,\\nLeo Liu\\nSales & Operations Director\\nLeo@flextailgear.com\",\"sendStatus\":\"website_contact_unreachable_skip\",\"attempts\":[{\"targetUrl\":\"https://p-psg.com/\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control\"},{\"targetUrl\":\"https://p-psg.com/pages/contact-us\",\"sendStatus\":\"failed_open\",\"evidence\":\"unavailable_profile_page: SKIP TO NAVIGATION\\nSKIP TO MAIN CONTENT\\nHOME\\nABOUT US\\nTEAM\\nBRANDS\\nCONTACT\\nRETAILER RESOURCES\\nFEEL THE LOVE\\nNOT FOUND\\nThis is somewhat embarrassing, isn’t it?\\n\\nIt looks like nothing\"},{\"targetUrl\":\"https://p-psg.com/pages/contact\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;contact_entry_clicked:SKIP TO NAVIGATION\"},{\"targetUrl\":\"https://p-psg.com/contact-us\",\"sendStatus\":\"failed_open\",\"evidence\":\"unavailable_profile_page: SKIP TO NAVIGATION\\nSKIP TO MAIN CONTENT\\nHOME\\nABOUT US\\nTEAM\\nBRANDS\\nCONTACT\\nRETAILER RESOURCES\\nFEEL THE LOVE\\nNOT FOUND\\nThis is somewhat embarrassing, isn’t it?\\n\\nIt looks like nothing\"},{\"targetUrl\":\"https://p-psg.com/contact\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;contact_entry_clicked:SKIP TO NAVIGATION\"},{\"targetUrl\":\"https://p-psg.com/help/contact-us\",\"sendStatus\":\"failed_open\",\"evidence\":\"unavailable_profile_page: SKIP TO NAVIGATION\\nSKIP TO MAIN CONTENT\\nHOME\\nABOUT US\\nTEAM\\nBRANDS\\nCONTACT\\nRETAILER RESOURCES\\nFEEL THE LOVE\\nNOT FOUND\\nThis is somewhat embarrassing, isn’t it?\\n\\nIt looks like nothing\"}],\"nextAction\":\"Official website contact was unreachable or not machine-verifiable. Skip this website route now, note it clearly, and continue with LinkedIn, Facebook, Instagram, or another verified official channel.\",\"fallbackFrom\":\"https://www.facebook.com/Powers-Sales-Group-325311146231/\",\"fallbackPlatform\":\"email\",\"fallbackReason\":\"identity_mismatch_expected_Powers Pedersen Sales Group_title_(8) Facebook\"}",
         "fallbackFrom": "https://www.facebook.com/Powers-Sales-Group-325311146231/",
         "fallbackPlatform": "email",
         "decision": {
@@ -764,14 +667,14 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "ok": false,
       "sendStatus": "website_contact_unreachable_skip",
       "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:6;contact_path_strategy_v2",
-      "timestamp": "2026-08-18T19:10:18.891Z",
+      "timestamp": "2026-08-18T22:09:26.853Z",
       "chromeOpen": {
         "ok": true,
         "engine": "codex-chrome-cdp",
         "port": 9224,
         "targetUrl": "https://owensoutdoorsales.com/help/contact-us",
-        "tabId": "E629883AEA0FB27AD567F296117D5ED1",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/E629883AEA0FB27AD567F296117D5ED1",
+        "tabId": "64C0981540C1E56D8285A2EE590FA429",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/64C0981540C1E56D8285A2EE590FA429",
         "title": "Contact-US.jpg (1920×712)"
       },
       "result": {
@@ -785,8 +688,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
           "engine": "codex-chrome-cdp",
           "port": 9224,
           "targetUrl": "https://owensoutdoorsales.com/help/contact-us",
-          "tabId": "E629883AEA0FB27AD567F296117D5ED1",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/E629883AEA0FB27AD567F296117D5ED1",
+          "tabId": "64C0981540C1E56D8285A2EE590FA429",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/64C0981540C1E56D8285A2EE590FA429",
           "title": "Contact-US.jpg (1920×712)"
         },
         "sendStatus": "website_contact_unreachable_skip",
@@ -816,14 +719,14 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "ok": false,
       "sendStatus": "website_contact_unreachable_skip",
       "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:6;contact_path_strategy_v2",
-      "timestamp": "2026-08-18T19:10:50.743Z",
+      "timestamp": "2026-08-18T22:09:58.845Z",
       "chromeOpen": {
         "ok": true,
         "engine": "codex-chrome-cdp",
         "port": 9224,
         "targetUrl": "https://latulippe.com/help/contact-us",
-        "tabId": "EAA145DF49CE48A20D0399395F2D9656",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/EAA145DF49CE48A20D0399395F2D9656",
+        "tabId": "B242042B460E8E8ACC63421325740243",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/B242042B460E8E8ACC63421325740243",
         "title": "Attention Required! | Cloudflare"
       },
       "result": {
@@ -837,8 +740,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
           "engine": "codex-chrome-cdp",
           "port": 9224,
           "targetUrl": "https://latulippe.com/help/contact-us",
-          "tabId": "EAA145DF49CE48A20D0399395F2D9656",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/EAA145DF49CE48A20D0399395F2D9656",
+          "tabId": "B242042B460E8E8ACC63421325740243",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/B242042B460E8E8ACC63421325740243",
           "title": "Attention Required! | Cloudflare"
         },
         "sendStatus": "website_contact_unreachable_skip",
@@ -860,53 +763,6 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       }
     },
     {
-      "id": "google-customer-awesome-outdoors-group-facebook",
-      "company": "Awesome Outdoors Group",
-      "action": "develop",
-      "platform": "facebook",
-      "targetUrl": "https://www.facebook.com/Awesome-Outdoors-Group-104741054869722",
-      "ok": false,
-      "sendStatus": "failed_open",
-      "evidence": "identity_mismatch_expected_Awesome Outdoors Group_title_(8) Facebook",
-      "timestamp": "2026-08-18T19:10:59.102Z",
-      "chromeOpen": {
-        "ok": true,
-        "engine": "codex-chrome-cdp",
-        "port": 9224,
-        "targetUrl": "https://www.facebook.com/Awesome-Outdoors-Group-104741054869722",
-        "tabId": "21B7524BEFBE9B9D84E5D245B521AB30",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/21B7524BEFBE9B9D84E5D245B521AB30",
-        "title": "Facebook"
-      },
-      "result": {
-        "ok": false,
-        "engine": "codex-chrome-cdp",
-        "browserEngine": "codex-chrome-cdp",
-        "mode": "codex_chrome_cdp",
-        "targetUrl": "https://www.facebook.com/Awesome-Outdoors-Group-104741054869722",
-        "chromeOpen": {
-          "ok": true,
-          "engine": "codex-chrome-cdp",
-          "port": 9224,
-          "targetUrl": "https://www.facebook.com/Awesome-Outdoors-Group-104741054869722",
-          "tabId": "21B7524BEFBE9B9D84E5D245B521AB30",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/21B7524BEFBE9B9D84E5D245B521AB30",
-          "title": "Facebook"
-        },
-        "sendStatus": "failed_open",
-        "output": "{\"verdict\":\"major_bug_review_needed\",\"evidence\":\"identity_mismatch_expected_Awesome Outdoors Group_title_(8) Facebook\",\"nextAction\":\"Wrong or unmatched account opened; record as major bug and move to next verified customer.\",\"draft\":\"Hi Awesome Outdoors Group team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a distributor/importer, the strongest fit is regional sell-through, channel fit, margin-ready product line, and whether they cover outdoor/travel electronics buyers; your verified outdoor industry manufacturer representative and sales agency focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the owner of distribution evaluation or the best time for a short intro video meeting?\",\"sendStatus\":\"failed_open\"}",
-        "decision": {
-          "verdict": "develop",
-          "fitScore": 85,
-          "reason": "local_codex_extension_template",
-          "draft": "Hi Awesome Outdoors Group team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a distributor/importer, the strongest fit is regional sell-through, channel fit, margin-ready product line, and whether they cover outdoor/travel electronics buyers; your verified outdoor industry manufacturer representative and sales agency focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the owner of distribution evaluation or the best time for a short intro video meeting?"
-        },
-        "executionLayer": "Chrome CDP fallback",
-        "glmModel": "not_used",
-        "followup": false
-      }
-    },
-    {
       "id": "google-customer-outdoor-gear-canada-facebook",
       "company": "Outdoor Gear Canada",
       "action": "develop",
@@ -915,13 +771,13 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "ok": false,
       "sendStatus": "website_contact_unreachable_skip",
       "evidence": "website_page_unavailable_404: Server Error\n404 - File or directory not found.\nThe resource you are looking for might have been removed, had its name changed, or is temporarily unavailable.;website_contact_all_targets_failed:6;contact_path_strategy_v2",
-      "timestamp": "2026-08-18T19:11:56.480Z",
+      "timestamp": "2026-08-18T22:10:57.250Z",
       "chromeOpen": {
         "ok": false,
         "engine": "codex-chrome-cdp",
         "port": 9224,
         "targetUrl": "https://www.ogc.ca/help/contact-us",
-        "tabId": "A576C1D493D1D7EAA7E325CDEE60C7AB",
+        "tabId": "443881A0856E15B8F2D5E061C0617CB1",
         "title": "404 - File or directory not found.",
         "status": "failed_open",
         "error": "profile_unavailable_or_broken_link",
@@ -938,7 +794,7 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
           "engine": "codex-chrome-cdp",
           "port": 9224,
           "targetUrl": "https://www.ogc.ca/help/contact-us",
-          "tabId": "A576C1D493D1D7EAA7E325CDEE60C7AB",
+          "tabId": "443881A0856E15B8F2D5E061C0617CB1",
           "title": "404 - File or directory not found.",
           "status": "failed_open",
           "error": "profile_unavailable_or_broken_link",
@@ -971,14 +827,14 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "ok": false,
       "sendStatus": "website_contact_unreachable_skip",
       "evidence": "website_contact_entry_not_verified;no_contact_entry_control;website_contact_all_targets_failed:6;contact_path_strategy_v2",
-      "timestamp": "2026-08-18T19:12:36.814Z",
+      "timestamp": "2026-08-18T22:11:39.781Z",
       "chromeOpen": {
         "ok": true,
         "engine": "codex-chrome-cdp",
         "port": 9224,
         "targetUrl": "https://revassa.com.mx/help/contact-us",
-        "tabId": "F6A4E07201C82579E58034CCF621E22F",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/F6A4E07201C82579E58034CCF621E22F",
+        "tabId": "F7929A9E919C93A0F27C6B57FDA34638",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/F7929A9E919C93A0F27C6B57FDA34638",
         "title": "Página no encontrada – REVASSA"
       },
       "result": {
@@ -992,8 +848,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
           "engine": "codex-chrome-cdp",
           "port": 9224,
           "targetUrl": "https://revassa.com.mx/help/contact-us",
-          "tabId": "F6A4E07201C82579E58034CCF621E22F",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/F6A4E07201C82579E58034CCF621E22F",
+          "tabId": "F7929A9E919C93A0F27C6B57FDA34638",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/F7929A9E919C93A0F27C6B57FDA34638",
           "title": "Página no encontrada – REVASSA"
         },
         "sendStatus": "website_contact_unreachable_skip",
@@ -1015,164 +871,150 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       }
     },
     {
-      "id": "google-customer-perspective-outdoor-instagram",
-      "company": "Perspective Outdoor",
-      "action": "develop",
-      "platform": "instagram",
-      "targetUrl": "https://www.instagram.com/perspectiveoutdoor/",
-      "ok": false,
-      "sendStatus": "failed_open",
-      "evidence": "instagram_message_button_clicked_composer_not_found",
-      "timestamp": "2026-08-18T19:13:06.756Z",
-      "chromeOpen": {
-        "ok": true,
-        "engine": "codex-chrome-cdp",
-        "port": 9224,
-        "targetUrl": "https://www.instagram.com/perspectiveoutdoor/",
-        "tabId": "D45529C1A4841D152ACF140E6ABF1B7F",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/D45529C1A4841D152ACF140E6ABF1B7F",
-        "title": "PerspectiveOutdoor (@perspectiveoutdoor) · Instagram 照片和视频"
-      },
-      "result": {
-        "ok": false,
-        "engine": "codex-chrome-cdp",
-        "browserEngine": "codex-chrome-cdp",
-        "mode": "codex_chrome_cdp",
-        "targetUrl": "https://www.instagram.com/perspectiveoutdoor/",
-        "chromeOpen": {
-          "ok": true,
-          "engine": "codex-chrome-cdp",
-          "port": 9224,
-          "targetUrl": "https://www.instagram.com/perspectiveoutdoor/",
-          "tabId": "D45529C1A4841D152ACF140E6ABF1B7F",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/D45529C1A4841D152ACF140E6ABF1B7F",
-          "title": "PerspectiveOutdoor (@perspectiveoutdoor) · Instagram 照片和视频"
-        },
-        "sendStatus": "failed_open",
-        "output": "{\"verdict\":\"major_bug_review_needed\",\"evidence\":\"instagram_message_button_clicked_composer_not_found\",\"nextAction\":\"Composer not detected; pause automation and notify operator only if retry would be unsafe.\",\"draft\":\"Hi Perspective Outdoor team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a distributor/importer, the strongest fit is regional sell-through, channel fit, margin-ready product line, and whether they cover outdoor/travel electronics buyers; your verified outdoor industry manufacturer representative and sales agency focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the owner of distribution evaluation or the best time for a short intro video meeting?\",\"sendStatus\":\"failed_open\"}",
-        "decision": {
-          "verdict": "develop",
-          "fitScore": 90,
-          "reason": "local_codex_extension_template",
-          "draft": "Hi Perspective Outdoor team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a distributor/importer, the strongest fit is regional sell-through, channel fit, margin-ready product line, and whether they cover outdoor/travel electronics buyers; your verified outdoor industry manufacturer representative and sales agency focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the owner of distribution evaluation or the best time for a short intro video meeting?"
-        },
-        "executionLayer": "Chrome CDP fallback",
-        "glmModel": "not_used",
-        "followup": false
-      }
-    },
-    {
-      "id": "google-customer-eastern-mountain-sports-instagram",
-      "company": "Eastern Mountain Sports",
-      "action": "develop",
-      "platform": "instagram",
-      "targetUrl": "https://www.instagram.com/easternmntnsports/",
-      "ok": false,
-      "sendStatus": "failed_open",
-      "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;identity_mismatch_expected_Eastern Mountain Sports_title_(8) Facebook;contact_path_strategy_v2",
-      "timestamp": "2026-08-18T19:14:24.166Z",
-      "chromeOpen": {
-        "ok": true,
-        "engine": "codex-chrome-cdp",
-        "port": 9224,
-        "targetUrl": "https://www.facebook.com/EasternMountainSports",
-        "tabId": "FDEFA89E479B075A86047EA76E6D59BF",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/FDEFA89E479B075A86047EA76E6D59BF",
-        "title": "Facebook"
-      },
-      "result": {
-        "ok": false,
-        "engine": "codex-chrome-cdp",
-        "browserEngine": "codex-chrome-cdp",
-        "mode": "codex_chrome_cdp",
-        "targetUrl": "https://www.facebook.com/EasternMountainSports",
-        "chromeOpen": {
-          "ok": true,
-          "engine": "codex-chrome-cdp",
-          "port": 9224,
-          "targetUrl": "https://www.facebook.com/EasternMountainSports",
-          "tabId": "FDEFA89E479B075A86047EA76E6D59BF",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/FDEFA89E479B075A86047EA76E6D59BF",
-          "title": "Facebook"
-        },
-        "sendStatus": "failed_open",
-        "output": "{\"verdict\":\"major_bug_review_needed\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;identity_mismatch_expected_Eastern Mountain Sports_title_(8) Facebook;contact_path_strategy_v2\",\"nextAction\":\"Wrong or unmatched account opened; record as major bug and move to next verified customer.\",\"draft\":\"Hi Eastern Mountain Sports team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a retail/category buyer, the strongest fit is assortment fit, new SKU pipeline, price-tier coverage, and proven consumer demand; your verified outdoor, camping and travel retail social refill channel focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the category buyer or vendor-review owner for a short intro video meeting?\",\"sendStatus\":\"failed_open\",\"fallbackFrom\":\"https://www.instagram.com/easternmntnsports/\",\"fallbackPlatform\":\"email\",\"fallbackReason\":\"instagram_message_button_clicked_composer_not_found\"}",
-        "decision": {
-          "verdict": "develop",
-          "fitScore": 84,
-          "reason": "local_codex_extension_template",
-          "draft": "Hi Eastern Mountain Sports team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a retail/category buyer, the strongest fit is assortment fit, new SKU pipeline, price-tier coverage, and proven consumer demand; your verified outdoor, camping and travel retail social refill channel focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the category buyer or vendor-review owner for a short intro video meeting?"
-        },
-        "executionLayer": "Chrome CDP fallback",
-        "glmModel": "not_used",
-        "followup": false,
-        "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:facebook;identity_mismatch_expected_Eastern Mountain Sports_title_(8) Facebook;contact_path_strategy_v2",
-        "socialFallbackEvidence": "identity_mismatch_expected_Eastern Mountain Sports_title_(8) Facebook",
-        "fallbackFrom": "https://www.instagram.com/easternmntnsports/",
-        "fallbackPlatform": "email"
-      }
-    },
-    {
-      "id": "google-customer-babbling-brook-sales-website-contact",
-      "company": "Babbling Brook Sales",
-      "action": "develop",
-      "platform": "website_form",
-      "targetUrl": "https://www.babblingbrooksales.com/",
-      "ok": false,
-      "sendStatus": "failed_open",
-      "evidence": "website_contact_entry_not_verified;contact_entry_clicked:Contact;official_social_fallback:facebook;instagram_message_button_clicked_composer_not_found;contact_path_strategy_v2",
-      "timestamp": "2026-08-18T19:15:19.825Z",
-      "chromeOpen": {
-        "ok": true,
-        "engine": "codex-chrome-cdp",
-        "port": 9224,
-        "targetUrl": "https://www.instagram.com/babblingbrooksales",
-        "tabId": "D70FCA539FB49180887BEA6A0B22BC9E",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/D70FCA539FB49180887BEA6A0B22BC9E",
-        "title": "Babbling Brook Sales (@babblingbrooksales) · Instagram 照片和视频"
-      },
-      "result": {
-        "ok": false,
-        "engine": "codex-chrome-cdp",
-        "browserEngine": "codex-chrome-cdp",
-        "mode": "codex_chrome_cdp",
-        "targetUrl": "https://www.instagram.com/babblingbrooksales",
-        "chromeOpen": {
-          "ok": true,
-          "engine": "codex-chrome-cdp",
-          "port": 9224,
-          "targetUrl": "https://www.instagram.com/babblingbrooksales",
-          "tabId": "D70FCA539FB49180887BEA6A0B22BC9E",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/D70FCA539FB49180887BEA6A0B22BC9E",
-          "title": "Babbling Brook Sales (@babblingbrooksales) · Instagram 照片和视频"
-        },
-        "sendStatus": "failed_open",
-        "output": "{\"verdict\":\"major_bug_review_needed\",\"evidence\":\"website_contact_entry_not_verified;contact_entry_clicked:Contact;official_social_fallback:facebook;instagram_message_button_clicked_composer_not_found;contact_path_strategy_v2\",\"nextAction\":\"Composer not detected; pause automation and notify operator only if retry would be unsafe.\",\"draft\":\"Hi Babbling Brook Sales team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a retail/category buyer, the strongest fit is assortment fit, new SKU pipeline, price-tier coverage, and proven consumer demand; your Rocky Mountain premium outdoor brand sales agency focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the category buyer or vendor-review owner for a short intro video meeting?\",\"sendStatus\":\"failed_open\",\"fallbackFrom\":\"https://www.facebook.com/babblingbrooksales\",\"fallbackPlatform\":\"instagram\",\"fallbackReason\":\"identity_mismatch_expected_Babbling Brook Sales_title_(8) Facebook\"}",
-        "decision": {
-          "verdict": "develop",
-          "fitScore": 98,
-          "reason": "local_codex_extension_template",
-          "draft": "Hi Babbling Brook Sales team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a retail/category buyer, the strongest fit is assortment fit, new SKU pipeline, price-tier coverage, and proven consumer demand; your Rocky Mountain premium outdoor brand sales agency focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the category buyer or vendor-review owner for a short intro video meeting?"
-        },
-        "executionLayer": "Chrome CDP fallback",
-        "glmModel": "not_used",
-        "followup": false,
-        "fallbackFrom": "https://www.facebook.com/babblingbrooksales",
-        "fallbackPlatform": "instagram",
-        "evidence": "website_contact_entry_not_verified;contact_entry_clicked:Contact;official_social_fallback:facebook;instagram_message_button_clicked_composer_not_found;contact_path_strategy_v2",
-        "socialFallbackEvidence": "instagram_message_button_clicked_composer_not_found"
-      }
-    },
-    {
-      "id": "google-customer-sespe-group-website-contact",
-      "company": "Sespe Group",
+      "id": "google-customer-sanitas-sales-group-website-contact",
+      "company": "Sanitas Sales Group",
       "action": "email_priority",
       "platform": "website_form",
-      "targetUrl": "https://www.sespegroup.com/contact-us",
+      "targetUrl": "https://sanitassalesgroup.com/contact/",
+      "ok": false,
+      "sendStatus": "website_contact_unreachable_skip",
+      "evidence": "unavailable_profile_page: Skip to primary navigation\nSkip to main content\nSkip to footer\n\nSANITAS SALES GROUP\n\nSales and marketing contractors serving the greater Rocky Mountain region\n\nBRANDS\n \nOUR TERRITO;website_contact_all_targets_failed:6;contact_path_strategy_v2",
+      "timestamp": "2026-08-18T22:12:32.752Z",
+      "chromeOpen": {
+        "ok": false,
+        "engine": "codex-chrome-cdp",
+        "port": 9224,
+        "targetUrl": "https://sanitassalesgroup.com/help/contact-us",
+        "tabId": "EBAFFFFE7F2A400D33B6644122389491",
+        "title": "Page not found – Sanitas Sales Group",
+        "status": "failed_open",
+        "error": "profile_unavailable_or_broken_link",
+        "evidence": "unavailable_profile_page: Skip to primary navigation\nSkip to main content\nSkip to footer\n\nSANITAS SALES GROUP\n\nSales and marketing contractors serving the greater Rocky Mountain region\n\nBRANDS\n \nOUR TERRITO"
+      },
+      "result": {
+        "ok": false,
+        "engine": "dedicated-chrome-cdp-website-contact",
+        "browserEngine": "codex-chrome-cdp",
+        "mode": "website_contact_unreachable_skip",
+        "targetUrl": "https://sanitassalesgroup.com/help/contact-us",
+        "chromeOpen": {
+          "ok": false,
+          "engine": "codex-chrome-cdp",
+          "port": 9224,
+          "targetUrl": "https://sanitassalesgroup.com/help/contact-us",
+          "tabId": "EBAFFFFE7F2A400D33B6644122389491",
+          "title": "Page not found – Sanitas Sales Group",
+          "status": "failed_open",
+          "error": "profile_unavailable_or_broken_link",
+          "evidence": "unavailable_profile_page: Skip to primary navigation\nSkip to main content\nSkip to footer\n\nSANITAS SALES GROUP\n\nSales and marketing contractors serving the greater Rocky Mountain region\n\nBRANDS\n \nOUR TERRITO"
+        },
+        "sendStatus": "website_contact_unreachable_skip",
+        "subject": "FLEXTAIL retail partnership | 2026 assortment",
+        "draft": "Dear Sanitas Sales Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
+        "evidence": "unavailable_profile_page: Skip to primary navigation\nSkip to main content\nSkip to footer\n\nSANITAS SALES GROUP\n\nSales and marketing contractors serving the greater Rocky Mountain region\n\nBRANDS\n \nOUR TERRITO;website_contact_all_targets_failed:6;contact_path_strategy_v2",
+        "output": "{\"verdict\":\"website_contact_unreachable_skip\",\"evidence\":\"unavailable_profile_page: Skip to primary navigation\\nSkip to main content\\nSkip to footer\\n\\nSANITAS SALES GROUP\\n\\nSales and marketing contractors serving the greater Rocky Mountain region\\n\\nBRANDS\\n \\nOUR TERRITO;website_contact_all_targets_failed:6;contact_path_strategy_v2\",\"subject\":\"FLEXTAIL retail partnership | 2026 assortment\",\"draft\":\"Dear Sanitas Sales Team,\\n\\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\\n\\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\\n\\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\\n\\nProduct overview: https://www.flextail.com/\\n\\nBest regards,\\nLeo Liu\\nSales & Operations Director\\nLeo@flextailgear.com\",\"sendStatus\":\"website_contact_unreachable_skip\",\"attempts\":[{\"targetUrl\":\"https://sanitassalesgroup.com/contact/\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;contact_entry_clicked:Skip to primary navigation\"},{\"targetUrl\":\"https://sanitassalesgroup.com/\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;contact_entry_clicked:Skip to primary navigation\"},{\"targetUrl\":\"https://sanitassalesgroup.com/pages/contact-us\",\"sendStatus\":\"failed_open\",\"evidence\":\"unavailable_profile_page: Skip to primary navigation\\nSkip to main content\\nSkip to footer\\n\\nSANITAS SALES GROUP\\n\\nSales and marketing contractors serving the greater Rocky Mountain region\\n\\nBRANDS\\n \\nOUR TERRITO\"},{\"targetUrl\":\"https://sanitassalesgroup.com/pages/contact\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;contact_entry_clicked:Skip to primary navigation\"},{\"targetUrl\":\"https://sanitassalesgroup.com/contact-us\",\"sendStatus\":\"failed_open\",\"evidence\":\"unavailable_profile_page: Page not found – Sanitas Sales Group\"},{\"targetUrl\":\"https://sanitassalesgroup.com/help/contact-us\",\"sendStatus\":\"failed_open\",\"evidence\":\"unavailable_profile_page: Skip to primary navigation\\nSkip to main content\\nSkip to footer\\n\\nSANITAS SALES GROUP\\n\\nSales and marketing contractors serving the greater Rocky Mountain region\\n\\nBRANDS\\n \\nOUR TERRITO\"}],\"nextAction\":\"Official website contact was unreachable or not machine-verifiable. Skip this website route now, note it clearly, and continue with LinkedIn, Facebook, Instagram, or another verified official channel.\"}"
+      }
+    },
+    {
+      "id": "google-customer-ascension-sales-group-website-contact",
+      "company": "Ascension Sales Group",
+      "action": "develop",
+      "platform": "website_form",
+      "targetUrl": "https://www.ascensionsalesgroup.com/",
+      "ok": false,
+      "sendStatus": "website_contact_unreachable_skip",
+      "evidence": "website_page_unavailable_404: 404 Not Found | Ascension Sales Group;website_contact_all_targets_failed:6;contact_path_strategy_v2",
+      "timestamp": "2026-08-18T22:12:51.016Z",
+      "chromeOpen": {
+        "ok": false,
+        "engine": "codex-chrome-cdp",
+        "port": 9224,
+        "targetUrl": "https://www.ascensionsalesgroup.com/help/contact-us",
+        "tabId": "795017EC47CB0CA7655CC543ABB739EA",
+        "title": "404 Not Found | Ascension Sales Group",
+        "status": "failed_open",
+        "error": "profile_unavailable_or_broken_link",
+        "evidence": "website_page_unavailable_404: 404 Not Found | Ascension Sales Group"
+      },
+      "result": {
+        "ok": false,
+        "engine": "dedicated-chrome-cdp-website-contact",
+        "browserEngine": "codex-chrome-cdp",
+        "mode": "website_contact_unreachable_skip",
+        "targetUrl": "https://www.ascensionsalesgroup.com/help/contact-us",
+        "chromeOpen": {
+          "ok": false,
+          "engine": "codex-chrome-cdp",
+          "port": 9224,
+          "targetUrl": "https://www.ascensionsalesgroup.com/help/contact-us",
+          "tabId": "795017EC47CB0CA7655CC543ABB739EA",
+          "title": "404 Not Found | Ascension Sales Group",
+          "status": "failed_open",
+          "error": "profile_unavailable_or_broken_link",
+          "evidence": "website_page_unavailable_404: 404 Not Found | Ascension Sales Group"
+        },
+        "sendStatus": "website_contact_unreachable_skip",
+        "subject": "FLEXTAIL retail partnership | 2026 assortment",
+        "draft": "Dear Ascension Sales Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
+        "evidence": "website_page_unavailable_404: 404 Not Found | Ascension Sales Group;website_contact_all_targets_failed:6;contact_path_strategy_v2",
+        "output": "{\"verdict\":\"website_contact_unreachable_skip\",\"evidence\":\"website_page_unavailable_404: 404 Not Found | Ascension Sales Group;website_contact_all_targets_failed:6;contact_path_strategy_v2\",\"subject\":\"FLEXTAIL retail partnership | 2026 assortment\",\"draft\":\"Dear Ascension Sales Team,\\n\\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\\n\\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\\n\\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\\n\\nProduct overview: https://www.flextail.com/\\n\\nBest regards,\\nLeo Liu\\nSales & Operations Director\\nLeo@flextailgear.com\",\"sendStatus\":\"website_contact_unreachable_skip\",\"attempts\":[{\"targetUrl\":\"https://www.ascensionsalesgroup.com/\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control\"},{\"targetUrl\":\"https://www.ascensionsalesgroup.com/pages/contact-us\",\"sendStatus\":\"failed_open\",\"evidence\":\"website_page_unavailable_404: 404 Not Found | Ascension Sales Group\"},{\"targetUrl\":\"https://www.ascensionsalesgroup.com/pages/contact\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control\"},{\"targetUrl\":\"https://www.ascensionsalesgroup.com/contact-us\",\"sendStatus\":\"failed_open\",\"evidence\":\"website_page_unavailable_404: 404 Not Found | Ascension Sales Group\"},{\"targetUrl\":\"https://www.ascensionsalesgroup.com/contact\",\"sendStatus\":\"failed_open\",\"evidence\":\"website_page_unavailable_404: 404 Not Found | Ascension Sales Group\"},{\"targetUrl\":\"https://www.ascensionsalesgroup.com/help/contact-us\",\"sendStatus\":\"failed_open\",\"evidence\":\"website_page_unavailable_404: 404 Not Found | Ascension Sales Group\"}],\"nextAction\":\"Official website contact was unreachable or not machine-verifiable. Skip this website route now, note it clearly, and continue with LinkedIn, Facebook, Instagram, or another verified official channel.\"}"
+      }
+    },
+    {
+      "id": "google-customer-salvation-sales-website-contact",
+      "company": "Salvation Sales",
+      "action": "develop",
+      "platform": "website_form",
+      "targetUrl": "https://salvationsales.com/",
+      "ok": false,
+      "sendStatus": "website_contact_unreachable_skip",
+      "evidence": "unavailable_profile_page: Home\nAbout\nStaff\nContact\nPage Not Found\n\nWe can’t seem to find the page you’re looking for.\n\nGo To Home Page\n\nCopyright © 2024, Salvation Sales. All Rights Reserved.\n\nPowered by\n\nT;website_contact_all_targets_failed:6;contact_path_strategy_v2",
+      "timestamp": "2026-08-18T22:13:10.711Z",
+      "chromeOpen": {
+        "ok": false,
+        "engine": "codex-chrome-cdp",
+        "port": 9224,
+        "targetUrl": "https://salvationsales.com/help/contact-us",
+        "tabId": "9DF476C5B73183EFE3B1C6C276BDD48B",
+        "title": "Salvation Sales",
+        "status": "failed_open",
+        "error": "profile_unavailable_or_broken_link",
+        "evidence": "unavailable_profile_page: Home\nAbout\nStaff\nContact\nPage Not Found\n\nWe can’t seem to find the page you’re looking for.\n\nGo To Home Page\n\nCopyright © 2024, Salvation Sales. All Rights Reserved.\n\nPowered by\n\nT"
+      },
+      "result": {
+        "ok": false,
+        "engine": "dedicated-chrome-cdp-website-contact",
+        "browserEngine": "codex-chrome-cdp",
+        "mode": "website_contact_unreachable_skip",
+        "targetUrl": "https://salvationsales.com/help/contact-us",
+        "chromeOpen": {
+          "ok": false,
+          "engine": "codex-chrome-cdp",
+          "port": 9224,
+          "targetUrl": "https://salvationsales.com/help/contact-us",
+          "tabId": "9DF476C5B73183EFE3B1C6C276BDD48B",
+          "title": "Salvation Sales",
+          "status": "failed_open",
+          "error": "profile_unavailable_or_broken_link",
+          "evidence": "unavailable_profile_page: Home\nAbout\nStaff\nContact\nPage Not Found\n\nWe can’t seem to find the page you’re looking for.\n\nGo To Home Page\n\nCopyright © 2024, Salvation Sales. All Rights Reserved.\n\nPowered by\n\nT"
+        },
+        "sendStatus": "website_contact_unreachable_skip",
+        "subject": "FLEXTAIL retail partnership | 2026 assortment",
+        "draft": "Dear Salvation Sales Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
+        "evidence": "unavailable_profile_page: Home\nAbout\nStaff\nContact\nPage Not Found\n\nWe can’t seem to find the page you’re looking for.\n\nGo To Home Page\n\nCopyright © 2024, Salvation Sales. All Rights Reserved.\n\nPowered by\n\nT;website_contact_all_targets_failed:6;contact_path_strategy_v2",
+        "output": "{\"verdict\":\"website_contact_unreachable_skip\",\"evidence\":\"unavailable_profile_page: Home\\nAbout\\nStaff\\nContact\\nPage Not Found\\n\\nWe can’t seem to find the page you’re looking for.\\n\\nGo To Home Page\\n\\nCopyright © 2024, Salvation Sales. All Rights Reserved.\\n\\nPowered by\\n\\nT;website_contact_all_targets_failed:6;contact_path_strategy_v2\",\"subject\":\"FLEXTAIL retail partnership | 2026 assortment\",\"draft\":\"Dear Salvation Sales Team,\\n\\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\\n\\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\\n\\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\\n\\nProduct overview: https://www.flextail.com/\\n\\nBest regards,\\nLeo Liu\\nSales & Operations Director\\nLeo@flextailgear.com\",\"sendStatus\":\"website_contact_unreachable_skip\",\"attempts\":[{\"targetUrl\":\"https://salvationsales.com/\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control\"},{\"targetUrl\":\"https://salvationsales.com/pages/contact-us\",\"sendStatus\":\"failed_open\",\"evidence\":\"unavailable_profile_page: Home\\nAbout\\nStaff\\nContact\\nPage Not Found\\n\\nWe can’t seem to find the page you’re looking for.\\n\\nGo To Home Page\\n\\nCopyright © 2024, Salvation Sales. All Rights Reserved.\\n\\nPowered by\\n\\nT\"},{\"targetUrl\":\"https://salvationsales.com/pages/contact\",\"sendStatus\":\"failed_open\",\"evidence\":\"unavailable_profile_page: Home\\nAbout\\nStaff\\nContact\\nPage Not Found\\n\\nWe can’t seem to find the page you’re looking for.\\n\\nGo To Home Page\\n\\nCopyright © 2024, Salvation Sales. All Rights Reserved.\\n\\nPowered by\\n\\nT\"},{\"targetUrl\":\"https://salvationsales.com/contact-us\",\"sendStatus\":\"failed_open\",\"evidence\":\"unavailable_profile_page: Home\\nAbout\\nStaff\\nContact\\nPage Not Found\\n\\nWe can’t seem to find the page you’re looking for.\\n\\nGo To Home Page\\n\\nCopyright © 2024, Salvation Sales. All Rights Reserved.\\n\\nPowered by\\n\\nT\"},{\"targetUrl\":\"https://salvationsales.com/contact\",\"sendStatus\":\"failed_open\",\"evidence\":\"unavailable_profile_page: Home\\nAbout\\nStaff\\nContact\\nPage Not Found\\n\\nWe can’t seem to find the page you’re looking for.\\n\\nGo To Home Page\\n\\nCopyright © 2024, Salvation Sales. All Rights Reserved.\\n\\nPowered by\\n\\nT\"},{\"targetUrl\":\"https://salvationsales.com/help/contact-us\",\"sendStatus\":\"failed_open\",\"evidence\":\"unavailable_profile_page: Home\\nAbout\\nStaff\\nContact\\nPage Not Found\\n\\nWe can’t seem to find the page you’re looking for.\\n\\nGo To Home Page\\n\\nCopyright © 2024, Salvation Sales. All Rights Reserved.\\n\\nPowered by\\n\\nT\"}],\"nextAction\":\"Official website contact was unreachable or not machine-verifiable. Skip this website route now, note it clearly, and continue with LinkedIn, Facebook, Instagram, or another verified official channel.\"}"
+      }
+    },
+    {
+      "id": "google-customer-action-sports-agency-website-contact",
+      "company": "Action Sports Agency",
+      "action": "develop",
+      "platform": "website_form",
+      "targetUrl": "https://www.actionsportsagency.com/",
       "ok": false,
       "sendStatus": "failed_open",
       "evidence": "customer_execution_timeout:90000;queue_continued_to_next_customer",
-      "timestamp": "2026-08-18T19:16:52.904Z",
+      "timestamp": "2026-08-18T22:14:43.823Z",
       "chromeOpen": null,
       "result": {
         "ok": false,
@@ -1181,105 +1023,163 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
         "reason": "customer_execution_timeout",
         "evidence": "customer_execution_timeout:90000;queue_continued_to_next_customer",
         "chromeOpen": null,
-        "output": "{\"verdict\":\"failed_open\",\"sendStatus\":\"failed_open\",\"evidence\":\"customer_execution_timeout:90000;queue_continued_to_next_customer\",\"nextAction\":\"The customer exceeded its bounded execution window. Its automation tabs were closed and the queue continued without retrying or claiming a send.\",\"company\":\"Sespe Group\"}"
+        "output": "{\"verdict\":\"failed_open\",\"sendStatus\":\"failed_open\",\"evidence\":\"customer_execution_timeout:90000;queue_continued_to_next_customer\",\"nextAction\":\"The customer exceeded its bounded execution window. Its automation tabs were closed and the queue continued without retrying or claiming a send.\",\"company\":\"Action Sports Agency\"}"
       }
     },
     {
-      "id": "google-customer-palisade-trading-website-contact",
-      "company": "Palisade Trading",
+      "id": "google-customer-sky-lines-website-contact",
+      "company": "Sky-Lines",
       "action": "develop",
       "platform": "website_form",
-      "targetUrl": "https://www.palisadetrading.com/",
+      "targetUrl": "https://sky-lines.ca/",
+      "ok": false,
+      "sendStatus": "website_contact_unreachable_skip",
+      "evidence": "website_page_unavailable_404: Not Found\n\nThe requested URL was not found on this server.\n\nAdditionally, a 404 Not Found error was encountered while trying to use an ErrorDocument to handle the request.;website_contact_all_targets_failed:6;contact_path_strategy_v2",
+      "timestamp": "2026-08-18T22:15:04.071Z",
+      "chromeOpen": {
+        "ok": false,
+        "engine": "codex-chrome-cdp",
+        "port": 9224,
+        "targetUrl": "https://sky-lines.ca/help/contact-us",
+        "tabId": "B666F2C9B146070C3CA14CB924BAFA63",
+        "title": "404 Not Found",
+        "status": "failed_open",
+        "error": "profile_unavailable_or_broken_link",
+        "evidence": "website_page_unavailable_404: Not Found\n\nThe requested URL was not found on this server.\n\nAdditionally, a 404 Not Found error was encountered while trying to use an ErrorDocument to handle the request."
+      },
+      "result": {
+        "ok": false,
+        "engine": "dedicated-chrome-cdp-website-contact",
+        "browserEngine": "codex-chrome-cdp",
+        "mode": "website_contact_unreachable_skip",
+        "targetUrl": "https://sky-lines.ca/help/contact-us",
+        "chromeOpen": {
+          "ok": false,
+          "engine": "codex-chrome-cdp",
+          "port": 9224,
+          "targetUrl": "https://sky-lines.ca/help/contact-us",
+          "tabId": "B666F2C9B146070C3CA14CB924BAFA63",
+          "title": "404 Not Found",
+          "status": "failed_open",
+          "error": "profile_unavailable_or_broken_link",
+          "evidence": "website_page_unavailable_404: Not Found\n\nThe requested URL was not found on this server.\n\nAdditionally, a 404 Not Found error was encountered while trying to use an ErrorDocument to handle the request."
+        },
+        "sendStatus": "website_contact_unreachable_skip",
+        "subject": "FLEXTAIL retail partnership | 2026 assortment",
+        "draft": "Dear Sky-Lines Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
+        "evidence": "website_page_unavailable_404: Not Found\n\nThe requested URL was not found on this server.\n\nAdditionally, a 404 Not Found error was encountered while trying to use an ErrorDocument to handle the request.;website_contact_all_targets_failed:6;contact_path_strategy_v2",
+        "output": "{\"verdict\":\"website_contact_unreachable_skip\",\"evidence\":\"website_page_unavailable_404: Not Found\\n\\nThe requested URL was not found on this server.\\n\\nAdditionally, a 404 Not Found error was encountered while trying to use an ErrorDocument to handle the request.;website_contact_all_targets_failed:6;contact_path_strategy_v2\",\"subject\":\"FLEXTAIL retail partnership | 2026 assortment\",\"draft\":\"Dear Sky-Lines Team,\\n\\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\\n\\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\\n\\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\\n\\nProduct overview: https://www.flextail.com/\\n\\nBest regards,\\nLeo Liu\\nSales & Operations Director\\nLeo@flextailgear.com\",\"sendStatus\":\"website_contact_unreachable_skip\",\"attempts\":[{\"targetUrl\":\"https://sky-lines.ca/\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control\"},{\"targetUrl\":\"https://sky-lines.ca/pages/contact-us\",\"sendStatus\":\"failed_open\",\"evidence\":\"website_page_unavailable_404: Not Found\\n\\nThe requested URL was not found on this server.\\n\\nAdditionally, a 404 Not Found error was encountered while trying to use an ErrorDocument to handle the request.\"},{\"targetUrl\":\"https://sky-lines.ca/pages/contact\",\"sendStatus\":\"failed_open\",\"evidence\":\"website_page_unavailable_404: Not Found\\n\\nThe requested URL was not found on this server.\\n\\nAdditionally, a 404 Not Found error was encountered while trying to use an ErrorDocument to handle the request.\"},{\"targetUrl\":\"https://sky-lines.ca/contact-us\",\"sendStatus\":\"failed_open\",\"evidence\":\"website_page_unavailable_404: Not Found\\n\\nThe requested URL was not found on this server.\\n\\nAdditionally, a 404 Not Found error was encountered while trying to use an ErrorDocument to handle the request.\"},{\"targetUrl\":\"https://sky-lines.ca/contact\",\"sendStatus\":\"failed_open\",\"evidence\":\"website_page_unavailable_404: Not Found\\n\\nThe requested URL was not found on this server.\\n\\nAdditionally, a 404 Not Found error was encountered while trying to use an ErrorDocument to handle the request.\"},{\"targetUrl\":\"https://sky-lines.ca/help/contact-us\",\"sendStatus\":\"failed_open\",\"evidence\":\"website_page_unavailable_404: Not Found\\n\\nThe requested URL was not found on this server.\\n\\nAdditionally, a 404 Not Found error was encountered while trying to use an ErrorDocument to handle the request.\"}],\"nextAction\":\"Official website contact was unreachable or not machine-verifiable. Skip this website route now, note it clearly, and continue with LinkedIn, Facebook, Instagram, or another verified official channel.\"}"
+      }
+    },
+    {
+      "id": "google-customer-next-adventure-website-contact",
+      "company": "Next Adventure",
+      "action": "develop",
+      "platform": "website_form",
+      "targetUrl": "https://nextadventure.net/",
       "ok": false,
       "sendStatus": "failed_open",
-      "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:linkedin;linkedin_draft_inserted_explicit_send_control_not_found;no_irreversible_action_performed;linkedin_draft_inserted_verified;contact_path_strategy_v2",
-      "timestamp": "2026-08-18T19:17:33.468Z",
+      "evidence": "website_contact_entry_not_verified;contact_entry_clicked:Contact Us;official_social_fallback:instagram;instagram_unavailable_profile_page: 很抱歉，无法访问此页面\n你点击的链接可能已损坏，或页面已被移除。返回 instagram。\nmeta\n关于\n博客\n工作\n帮助\napi\n隐私设置\n条款\n地点\n热门\ninstagram lite\nmeta ai\nthreads\n联系人上传和非用户\nmeta verified\n中文(简体)\nafrikaans\nالعربية\nčeština\ndansk\ndeutsch\nελληνικά\nenglish\nenglish (uk)\nespañol (españa)\nespañol\nفارسی\nsuomi\nfrançais\nעברית\nbahasa indonesia\nitaliano\n日本語\n한국어\nbahasa melayu\nnorsk\nnederlands\npolski\nportuguês (brasil)\nportuguês (portugal)\nрусский\nsvenska\nภาษาไทย\nfilipino\ntürkçe\n中文(简体)\n中文(台灣)\nবাংলা\nગુજરાતી\nहिन्दी\nhrvatski\nmagyar\nಕನ್ನಡ\nമലയാളം\nमराठी\nनेपाली\nਪੰਜਾਬੀ\nසිංහල\nslovenčina\nதமிழ்\nతెలుగు\nاردو\ntiếng việt\n中文(香港)\nбългарски\nfrançais (canada)\nromână\nсрпски\nукра;contact_path_strategy_v2",
+      "timestamp": "2026-08-18T22:15:30.481Z",
       "chromeOpen": {
         "ok": true,
         "engine": "codex-chrome-cdp",
         "port": 9224,
-        "targetUrl": "https://www.linkedin.com/company/palisade-trading/",
-        "tabId": "D194581275AD52763C040BE6D6679FB0",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/D194581275AD52763C040BE6D6679FB0",
-        "title": "LinkedIn"
+        "targetUrl": "https://www.instagram.com/nextadventurepdx/",
+        "tabId": "1CDB620EB97853968239BD0CF3234DBE",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/1CDB620EB97853968239BD0CF3234DBE",
+        "title": "Instagram"
       },
       "result": {
         "ok": false,
         "engine": "codex-chrome-cdp",
         "browserEngine": "codex-chrome-cdp",
         "mode": "codex_chrome_cdp",
-        "targetUrl": "https://www.linkedin.com/company/palisade-trading/",
+        "targetUrl": "https://www.instagram.com/nextadventurepdx/",
         "chromeOpen": {
           "ok": true,
           "engine": "codex-chrome-cdp",
           "port": 9224,
-          "targetUrl": "https://www.linkedin.com/company/palisade-trading/",
-          "tabId": "D194581275AD52763C040BE6D6679FB0",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/D194581275AD52763C040BE6D6679FB0",
-          "title": "LinkedIn"
+          "targetUrl": "https://www.instagram.com/nextadventurepdx/",
+          "tabId": "1CDB620EB97853968239BD0CF3234DBE",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/1CDB620EB97853968239BD0CF3234DBE",
+          "title": "Instagram"
         },
         "sendStatus": "failed_open",
-        "output": "{\"verdict\":\"major_bug_review_needed\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:linkedin;linkedin_draft_inserted_explicit_send_control_not_found;no_irreversible_action_performed;linkedin_draft_inserted_verified;contact_path_strategy_v2\",\"nextAction\":\"An explicit Send control was not detected and the verified Enter path was unavailable; record a technical failure and continue to another verified channel.\",\"draft\":\"Hi Palisade Trading team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a retail/category buyer, the strongest fit is assortment fit, new SKU pipeline, price-tier coverage, and proven consumer demand; your Midwestern United States outdoor, apparel and footwear sales agency focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the category buyer or vendor-review owner for a short intro video meeting?\",\"sendStatus\":\"failed_open\"}",
+        "output": "{\"verdict\":\"major_bug_review_needed\",\"evidence\":\"website_contact_entry_not_verified;contact_entry_clicked:Contact Us;official_social_fallback:instagram;instagram_unavailable_profile_page: 很抱歉，无法访问此页面\\n你点击的链接可能已损坏，或页面已被移除。返回 instagram。\\nmeta\\n关于\\n博客\\n工作\\n帮助\\napi\\n隐私设置\\n条款\\n地点\\n热门\\ninstagram lite\\nmeta ai\\nthreads\\n联系人上传和非用户\\nmeta verified\\n中文(简体)\\nafrikaans\\nالعربية\\nčeština\\ndansk\\ndeutsch\\nελληνικά\\nenglish\\nenglish (uk)\\nespañol (españa)\\nespañol\\nفارسی\\nsuomi\\nfrançais\\nעברית\\nbahasa indonesia\\nitaliano\\n日本語\\n한국어\\nbahasa melayu\\nnorsk\\nnederlands\\npolski\\nportuguês (brasil)\\nportuguês (portugal)\\nрусский\\nsvenska\\nภาษาไทย\\nfilipino\\ntürkçe\\n中文(简体)\\n中文(台灣)\\nবাংলা\\nગુજરાતી\\nहिन्दी\\nhrvatski\\nmagyar\\nಕನ್ನಡ\\nമലയാളം\\nमराठी\\nनेपाली\\nਪੰਜਾਬੀ\\nසිංහල\\nslovenčina\\nதமிழ்\\nతెలుగు\\nاردو\\ntiếng việt\\n中文(香港)\\nбългарски\\nfrançais (canada)\\nromână\\nсрпски\\nукра;contact_path_strategy_v2\",\"nextAction\":\"Do not retry this URL; switch to a verified alternate channel or official website contact.\",\"draft\":\"Hi Next Adventure team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a retail/category buyer, the strongest fit is assortment fit, new SKU pipeline, price-tier coverage, and proven consumer demand; your verified outdoor, camping, travel and consumer electronics retail channel focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the category buyer or vendor-review owner for a short intro video meeting?\",\"sendStatus\":\"failed_open\"}",
         "decision": {
           "verdict": "develop",
-          "fitScore": 96,
+          "fitScore": 88,
           "reason": "local_codex_extension_template",
-          "draft": "Hi Palisade Trading team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a retail/category buyer, the strongest fit is assortment fit, new SKU pipeline, price-tier coverage, and proven consumer demand; your Midwestern United States outdoor, apparel and footwear sales agency focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the category buyer or vendor-review owner for a short intro video meeting?"
+          "draft": "Hi Next Adventure team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a retail/category buyer, the strongest fit is assortment fit, new SKU pipeline, price-tier coverage, and proven consumer demand; your verified outdoor, camping, travel and consumer electronics retail channel focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the category buyer or vendor-review owner for a short intro video meeting?"
         },
         "executionLayer": "Chrome CDP fallback",
         "glmModel": "not_used",
         "followup": false,
-        "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:linkedin;linkedin_draft_inserted_explicit_send_control_not_found;no_irreversible_action_performed;linkedin_draft_inserted_verified;contact_path_strategy_v2",
-        "socialFallbackEvidence": "linkedin_draft_inserted_explicit_send_control_not_found;no_irreversible_action_performed;linkedin_draft_inserted_verified"
+        "evidence": "website_contact_entry_not_verified;contact_entry_clicked:Contact Us;official_social_fallback:instagram;instagram_unavailable_profile_page: 很抱歉，无法访问此页面\n你点击的链接可能已损坏，或页面已被移除。返回 instagram。\nmeta\n关于\n博客\n工作\n帮助\napi\n隐私设置\n条款\n地点\n热门\ninstagram lite\nmeta ai\nthreads\n联系人上传和非用户\nmeta verified\n中文(简体)\nafrikaans\nالعربية\nčeština\ndansk\ndeutsch\nελληνικά\nenglish\nenglish (uk)\nespañol (españa)\nespañol\nفارسی\nsuomi\nfrançais\nעברית\nbahasa indonesia\nitaliano\n日本語\n한국어\nbahasa melayu\nnorsk\nnederlands\npolski\nportuguês (brasil)\nportuguês (portugal)\nрусский\nsvenska\nภาษาไทย\nfilipino\ntürkçe\n中文(简体)\n中文(台灣)\nবাংলা\nગુજરાતી\nहिन्दी\nhrvatski\nmagyar\nಕನ್ನಡ\nമലയാളം\nमराठी\nनेपाली\nਪੰਜਾਬੀ\nසිංහල\nslovenčina\nதமிழ்\nతెలుగు\nاردو\ntiếng việt\n中文(香港)\nбългарски\nfrançais (canada)\nromână\nсрпски\nукра;contact_path_strategy_v2",
+        "socialFallbackEvidence": "instagram_unavailable_profile_page: 很抱歉，无法访问此页面\n你点击的链接可能已损坏，或页面已被移除。返回 instagram。\nmeta\n关于\n博客\n工作\n帮助\napi\n隐私设置\n条款\n地点\n热门\ninstagram lite\nmeta ai\nthreads\n联系人上传和非用户\nmeta verified\n中文(简体)\nafrikaans\nالعربية\nčeština\ndansk\ndeutsch\nελληνικά\nenglish\nenglish (uk)\nespañol (españa)\nespañol\nفارسی\nsuomi\nfrançais\nעברית\nbahasa indonesia\nitaliano\n日本語\n한국어\nbahasa melayu\nnorsk\nnederlands\npolski\nportuguês (brasil)\nportuguês (portugal)\nрусский\nsvenska\nภาษาไทย\nfilipino\ntürkçe\n中文(简体)\n中文(台灣)\nবাংলা\nગુજરાતી\nहिन्दी\nhrvatski\nmagyar\nಕನ್ನಡ\nമലയാളം\nमराठी\nनेपाली\nਪੰਜਾਬੀ\nසිංහල\nslovenčina\nதமிழ்\nతెలుగు\nاردو\ntiếng việt\n中文(香港)\nбългарски\nfrançais (canada)\nromână\nсрпски\nукра"
       }
     },
     {
-      "id": "google-customer-nomadic-supply-company-website-contact",
-      "company": "Nomadic Supply Company",
+      "id": "google-customer-outdoor-industry-group-website-contact",
+      "company": "Outdoor Industry Group",
       "action": "develop",
       "platform": "website_form",
-      "targetUrl": "https://nomadicsupply.com/sell-your-products-with-nomadic-supply-company/",
+      "targetUrl": "https://outdoorindustrygroup.com/contact-us/",
       "ok": false,
-      "sendStatus": "failed_open",
-      "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:instagram;instagram_message_button_clicked_composer_not_found;contact_path_strategy_v2",
-      "timestamp": "2026-08-18T19:18:42.878Z",
+      "sendStatus": "website_contact_unreachable_skip",
+      "evidence": "website_contact_entry_not_verified;contact_entry_clicked:facebook;website_contact_all_targets_failed:1;contact_path_strategy_v2",
+      "timestamp": "2026-08-18T22:15:47.192Z",
       "chromeOpen": {
         "ok": true,
         "engine": "codex-chrome-cdp",
         "port": 9224,
-        "targetUrl": "https://www.instagram.com/nomadic.supply/",
-        "tabId": "7D762BBCAA3A6EB485DDDA52C65E428F",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/7D762BBCAA3A6EB485DDDA52C65E428F",
-        "title": "Nomadic Supply Company® (@nomadic.supply) · Instagram 照片和视频"
+        "targetUrl": "https://outdoorindustrygroup.com/contact-us/",
+        "tabId": "8C63607F360EFF7A1968A80088590C7B",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/8C63607F360EFF7A1968A80088590C7B",
+        "title": "Contact Us - Outdoor Industry Group"
       },
       "result": {
         "ok": false,
-        "engine": "codex-chrome-cdp",
+        "engine": "dedicated-chrome-cdp-website-contact",
         "browserEngine": "codex-chrome-cdp",
-        "mode": "codex_chrome_cdp",
-        "targetUrl": "https://www.instagram.com/nomadic.supply/",
+        "mode": "website_contact_unreachable_skip",
+        "targetUrl": "https://outdoorindustrygroup.com/contact-us/",
         "chromeOpen": {
           "ok": true,
           "engine": "codex-chrome-cdp",
           "port": 9224,
-          "targetUrl": "https://www.instagram.com/nomadic.supply/",
-          "tabId": "7D762BBCAA3A6EB485DDDA52C65E428F",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/7D762BBCAA3A6EB485DDDA52C65E428F",
-          "title": "Nomadic Supply Company® (@nomadic.supply) · Instagram 照片和视频"
+          "targetUrl": "https://outdoorindustrygroup.com/contact-us/",
+          "tabId": "8C63607F360EFF7A1968A80088590C7B",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/8C63607F360EFF7A1968A80088590C7B",
+          "title": "Contact Us - Outdoor Industry Group"
         },
+        "sendStatus": "website_contact_unreachable_skip",
+        "subject": "FLEXTAIL retail partnership | 2026 assortment",
+        "draft": "Dear Outdoor Industry Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
+        "evidence": "website_contact_entry_not_verified;contact_entry_clicked:facebook;website_contact_all_targets_failed:1;contact_path_strategy_v2",
+        "output": "{\"verdict\":\"website_contact_unreachable_skip\",\"evidence\":\"website_contact_entry_not_verified;contact_entry_clicked:facebook;website_contact_all_targets_failed:1;contact_path_strategy_v2\",\"nextAction\":\"Contact page opened, but no verified form, mailto link, vendor/business route, or clickable Contact Us path was detected. Continue manually before marking the lead ready.\",\"subject\":\"FLEXTAIL retail partnership | 2026 assortment\",\"draft\":\"Dear Outdoor Industry Team,\\n\\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\\n\\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\\n\\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\\n\\nProduct overview: https://www.flextail.com/\\n\\nBest regards,\\nLeo Liu\\nSales & Operations Director\\nLeo@flextailgear.com\",\"sendStatus\":\"website_contact_unreachable_skip\",\"attempts\":[{\"targetUrl\":\"https://outdoorindustrygroup.com/contact-us/\",\"sendStatus\":\"approval_pending\",\"evidence\":\"website_contact_entry_not_verified;contact_entry_clicked:facebook\"}]}"
+      }
+    },
+    {
+      "id": "google-customer-perpetual-motion-nw-website-contact",
+      "company": "Perpetual Motion NW",
+      "action": "develop",
+      "platform": "website_form",
+      "targetUrl": "https://www.perpetualmotionnw.com/",
+      "ok": false,
+      "sendStatus": "failed_open",
+      "evidence": "customer_execution_timeout:90000;queue_continued_to_next_customer",
+      "timestamp": "2026-08-18T22:17:20.083Z",
+      "chromeOpen": null,
+      "result": {
+        "ok": false,
+        "timedOut": true,
         "sendStatus": "failed_open",
-        "output": "{\"verdict\":\"major_bug_review_needed\",\"evidence\":\"website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:instagram;instagram_message_button_clicked_composer_not_found;contact_path_strategy_v2\",\"nextAction\":\"Composer not detected; pause automation and notify operator only if retry would be unsafe.\",\"draft\":\"Hi Nomadic Supply Company team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a retail/category buyer, the strongest fit is assortment fit, new SKU pipeline, price-tier coverage, and proven consumer demand; your verified outdoor, camping, travel and consumer electronics retail channel focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the category buyer or vendor-review owner for a short intro video meeting?\",\"sendStatus\":\"failed_open\"}",
-        "decision": {
-          "verdict": "develop",
-          "fitScore": 95,
-          "reason": "local_codex_extension_template",
-          "draft": "Hi Nomadic Supply Company team, nice to e-meet you. I am Leo from FLEXTAIL, our core ultralight outdoor and travel electrics brand. For a retail/category buyer, the strongest fit is assortment fit, new SKU pipeline, price-tier coverage, and proven consumer demand; your verified outdoor, camping, travel and consumer electronics retail channel focus looks relevant to that direction. We are planning 36+ new SKUs for 2026 across several use cases and price tiers. Could you point me to the category buyer or vendor-review owner for a short intro video meeting?"
-        },
-        "executionLayer": "Chrome CDP fallback",
-        "glmModel": "not_used",
-        "followup": false,
-        "evidence": "website_contact_entry_not_verified;no_contact_entry_control;official_social_fallback:instagram;instagram_message_button_clicked_composer_not_found;contact_path_strategy_v2",
-        "socialFallbackEvidence": "instagram_message_button_clicked_composer_not_found"
+        "reason": "customer_execution_timeout",
+        "evidence": "customer_execution_timeout:90000;queue_continued_to_next_customer",
+        "chromeOpen": null,
+        "output": "{\"verdict\":\"failed_open\",\"sendStatus\":\"failed_open\",\"evidence\":\"customer_execution_timeout:90000;queue_continued_to_next_customer\",\"nextAction\":\"The customer exceeded its bounded execution window. Its automation tabs were closed and the queue continued without retrying or claiming a send.\",\"company\":\"Perpetual Motion NW\"}"
       }
     }
   ],
@@ -1390,6 +1290,13 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "reason": "official_public_business_email_verified"
     },
     {
+      "id": "google-customer-rabbit-mountain-mexico-website-contact",
+      "company": "Rabbit Mountain Mexico",
+      "action": "email_priority",
+      "platform": "email",
+      "reason": "official_public_business_email_verified"
+    },
+    {
       "id": "google-customer-rock-creek-website-contact",
       "company": "Rock/Creek",
       "action": "email_priority",
@@ -1425,16 +1332,16 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "reason": "official_public_business_email_verified"
     },
     {
+      "id": "google-customer-bivouac-outdoor-website-contact",
+      "company": "Bivouac Outdoor",
+      "action": "email_priority",
+      "platform": "email",
+      "reason": "official_public_business_email_verified"
+    },
+    {
       "id": "google-customer-waypoint-outdoor-website-contact",
       "company": "Waypoint Outdoor",
       "action": "develop",
-      "platform": "website_form",
-      "reason": "official_website_contact_channel"
-    },
-    {
-      "id": "google-customer-sanitas-sales-group-website-contact",
-      "company": "Sanitas Sales Group",
-      "action": "email_priority",
       "platform": "website_form",
       "reason": "official_website_contact_channel"
     },
@@ -1467,34 +1374,6 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "reason": "official_website_contact_channel"
     },
     {
-      "id": "google-customer-sportco-marketing-website-contact",
-      "company": "Sportco Marketing",
-      "action": "verify_target",
-      "platform": "website_form",
-      "reason": "homepage_only_contact_path_requires_verification"
-    },
-    {
-      "id": "google-customer-ascension-sales-group-website-contact",
-      "company": "Ascension Sales Group",
-      "action": "develop",
-      "platform": "website_form",
-      "reason": "official_website_contact_channel"
-    },
-    {
-      "id": "google-customer-granite-marketing-website-contact",
-      "company": "Granite Marketing",
-      "action": "verify_target",
-      "platform": "website_form",
-      "reason": "homepage_only_contact_path_requires_verification"
-    },
-    {
-      "id": "google-customer-skyline-sales-consulting-website-contact",
-      "company": "Skyline Sales & Consulting",
-      "action": "verify_target",
-      "platform": "website_form",
-      "reason": "homepage_only_contact_path_requires_verification"
-    },
-    {
       "id": "google-customer-brandywine-river-reps-website-contact",
       "company": "Brandywine River Reps",
       "action": "develop",
@@ -1509,81 +1388,11 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "reason": "official_website_contact_channel"
     },
     {
-      "id": "google-customer-salvation-sales-website-contact",
-      "company": "Salvation Sales",
-      "action": "develop",
-      "platform": "website_form",
-      "reason": "official_website_contact_channel"
-    },
-    {
-      "id": "google-customer-howe-sound-sales-website-contact",
-      "company": "Howe Sound Sales",
-      "action": "verify_target",
-      "platform": "website_form",
-      "reason": "homepage_only_contact_path_requires_verification"
-    },
-    {
-      "id": "google-customer-terra-outdoor-gear-distribution-website-contact",
-      "company": "Terra Outdoor Gear Distribution",
-      "action": "verify_target",
-      "platform": "website_form",
-      "reason": "homepage_only_contact_path_requires_verification"
-    },
-    {
-      "id": "google-customer-action-sports-agency-website-contact",
-      "company": "Action Sports Agency",
-      "action": "develop",
-      "platform": "website_form",
-      "reason": "official_website_contact_channel"
-    },
-    {
-      "id": "google-customer-sky-lines-website-contact",
-      "company": "Sky-Lines",
-      "action": "develop",
-      "platform": "website_form",
-      "reason": "official_website_contact_channel"
-    },
-    {
       "id": "google-customer-sturm-mil-tec-usa-website-contact",
       "company": "Sturm Mil-Tec USA",
       "action": "develop",
       "platform": "website_form",
       "reason": "official_website_contact_channel"
-    },
-    {
-      "id": "google-customer-suggs-nicholas-shea-website-contact",
-      "company": "Suggs-Nicholas-Shea",
-      "action": "verify_target",
-      "platform": "website_form",
-      "reason": "homepage_only_contact_path_requires_verification"
-    },
-    {
-      "id": "google-customer-1889-sales-website-contact",
-      "company": "1889 Sales",
-      "action": "verify_target",
-      "platform": "website_form",
-      "reason": "homepage_only_contact_path_requires_verification"
-    },
-    {
-      "id": "google-customer-c-g-distribution-website-contact",
-      "company": "C&G Distribution",
-      "action": "verify_target",
-      "platform": "website_form",
-      "reason": "homepage_only_contact_path_requires_verification"
-    },
-    {
-      "id": "google-customer-nordcore-group-website-contact",
-      "company": "NordCore Group",
-      "action": "verify_target",
-      "platform": "website_form",
-      "reason": "homepage_only_contact_path_requires_verification"
-    },
-    {
-      "id": "google-customer-tin-shack-ltd-website-contact",
-      "company": "Tin Shack Ltd",
-      "action": "verify_target",
-      "platform": "website_form",
-      "reason": "homepage_only_contact_path_requires_verification"
     },
     {
       "id": "google-customer-edgeline-collective-website-contact",
@@ -1621,18 +1430,151 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "reason": "official_website_contact_channel"
     },
     {
-      "id": "google-customer-outdoor-industry-group-website-contact",
-      "company": "Outdoor Industry Group",
+      "id": "google-customer-premium-living-products-website-contact",
+      "company": "Premium Living Products",
       "action": "develop",
       "platform": "website_form",
       "reason": "official_website_contact_channel"
     },
     {
-      "id": "google-customer-perpetual-motion-nw-website-contact",
-      "company": "Perpetual Motion NW",
+      "id": "google-customer-tractor-supply-company-website-contact",
+      "company": "Tractor Supply Company",
+      "action": "email_priority",
+      "platform": "website_form",
+      "reason": "official_website_contact_channel"
+    },
+    {
+      "id": "google-customer-rona-website-contact",
+      "company": "RONA",
       "action": "develop",
       "platform": "website_form",
       "reason": "official_website_contact_channel"
+    },
+    {
+      "id": "google-customer-front-point-sales-linkedin",
+      "company": "Front Point Sales",
+      "action": "verify_target",
+      "platform": "linkedin",
+      "reason": "linkedin_channel_requires_supported_executor"
+    },
+    {
+      "id": "google-customer-onwardup-facebook",
+      "company": "OnwardUP",
+      "action": "develop",
+      "platform": "facebook",
+      "reason": "official_website_social_channel_verified"
+    },
+    {
+      "id": "google-customer-nohrth-facebook",
+      "company": "NOHRTH",
+      "action": "develop",
+      "platform": "facebook",
+      "reason": "official_website_social_channel_verified"
+    },
+    {
+      "id": "google-customer-fjellsport-website-contact",
+      "company": "Fjellsport",
+      "action": "email_priority",
+      "platform": "email",
+      "reason": "official_public_business_email_verified"
+    },
+    {
+      "id": "google-customer-varuste-website-contact",
+      "company": "Varuste",
+      "action": "email_priority",
+      "platform": "email",
+      "reason": "official_public_business_email_verified"
+    },
+    {
+      "id": "google-customer-outdoors-ramsey-website-contact",
+      "company": "Outdoors Ramsey",
+      "action": "email_priority",
+      "platform": "email",
+      "reason": "official_public_business_email_verified"
+    },
+    {
+      "id": "google-customer-wildfire-sports-website-contact",
+      "company": "Wildfire Sports",
+      "action": "email_priority",
+      "platform": "email",
+      "reason": "official_public_business_email_verified"
+    },
+    {
+      "id": "google-customer-sportco-marketing-website-contact",
+      "company": "Sportco Marketing",
+      "action": "verify_target",
+      "platform": "website_form",
+      "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
+      "id": "google-customer-granite-marketing-website-contact",
+      "company": "Granite Marketing",
+      "action": "verify_target",
+      "platform": "website_form",
+      "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
+      "id": "google-customer-skyline-sales-consulting-website-contact",
+      "company": "Skyline Sales & Consulting",
+      "action": "verify_target",
+      "platform": "website_form",
+      "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
+      "id": "google-customer-howe-sound-sales-website-contact",
+      "company": "Howe Sound Sales",
+      "action": "verify_target",
+      "platform": "website_form",
+      "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
+      "id": "google-customer-terra-outdoor-gear-distribution-website-contact",
+      "company": "Terra Outdoor Gear Distribution",
+      "action": "verify_target",
+      "platform": "website_form",
+      "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
+      "id": "google-customer-suggs-nicholas-shea-website-contact",
+      "company": "Suggs-Nicholas-Shea",
+      "action": "verify_target",
+      "platform": "website_form",
+      "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
+      "id": "google-customer-1889-sales-website-contact",
+      "company": "1889 Sales",
+      "action": "verify_target",
+      "platform": "website_form",
+      "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
+      "id": "google-customer-c-g-distribution-website-contact",
+      "company": "C&G Distribution",
+      "action": "verify_target",
+      "platform": "website_form",
+      "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
+      "id": "google-customer-esprinet-group-website-contact",
+      "company": "Esprinet Group",
+      "action": "email_priority",
+      "platform": "website_form",
+      "reason": "official_website_contact_channel"
+    },
+    {
+      "id": "google-customer-nordcore-group-website-contact",
+      "company": "NordCore Group",
+      "action": "verify_target",
+      "platform": "website_form",
+      "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
+      "id": "google-customer-tin-shack-ltd-website-contact",
+      "company": "Tin Shack Ltd",
+      "action": "verify_target",
+      "platform": "website_form",
+      "reason": "homepage_only_contact_path_requires_verification"
     },
     {
       "id": "google-customer-d-m-a-distributing-website-contact",
@@ -1663,13 +1605,6 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "reason": "homepage_only_contact_path_requires_verification"
     },
     {
-      "id": "google-customer-premium-living-products-website-contact",
-      "company": "Premium Living Products",
-      "action": "develop",
-      "platform": "website_form",
-      "reason": "official_website_contact_channel"
-    },
-    {
       "id": "google-customer-green-drake-outdoors-website-contact",
       "company": "Green Drake Outdoors",
       "action": "verify_target",
@@ -1684,15 +1619,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "reason": "homepage_only_contact_path_requires_verification"
     },
     {
-      "id": "google-customer-next-adventure-website-contact",
-      "company": "Next Adventure",
-      "action": "develop",
-      "platform": "website_form",
-      "reason": "official_website_contact_channel"
-    },
-    {
-      "id": "google-customer-tractor-supply-company-website-contact",
-      "company": "Tractor Supply Company",
+      "id": "google-customer-left-point-distribution-website-contact",
+      "company": "Left Point Distribution",
       "action": "email_priority",
       "platform": "website_form",
       "reason": "official_website_contact_channel"
@@ -1712,32 +1640,109 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "reason": "homepage_only_contact_path_requires_verification"
     },
     {
-      "id": "google-customer-rona-website-contact",
-      "company": "RONA",
-      "action": "develop",
+      "id": "google-customer-bergfreunde-website-contact",
+      "company": "Bergfreunde",
+      "action": "verify_target",
+      "platform": "website_form",
+      "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
+      "id": "google-customer-obelink-website-contact",
+      "company": "Obelink",
+      "action": "email_priority",
       "platform": "website_form",
       "reason": "official_website_contact_channel"
     },
     {
-      "id": "google-customer-front-point-sales-linkedin",
-      "company": "Front Point Sales",
+      "id": "google-customer-au-vieux-campeur-website-contact",
+      "company": "Au Vieux Campeur",
       "action": "verify_target",
+      "platform": "website_form",
+      "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
+      "id": "google-customer-alpinetrek-website-contact",
+      "company": "Alpinetrek",
+      "action": "verify_target",
+      "platform": "website_form",
+      "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
+      "id": "google-customer-de-wit-schijndel-website-contact",
+      "company": "De Wit Schijndel",
+      "action": "verify_target",
+      "platform": "website_form",
+      "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
+      "id": "google-customer-ekosport-website-contact",
+      "company": "Ekosport",
+      "action": "verify_target",
+      "platform": "website_form",
+      "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
+      "id": "google-customer-above-and-beyond-website-contact",
+      "company": "Above and Beyond",
+      "action": "verify_target",
+      "platform": "website_form",
+      "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
+      "id": "google-customer-campz-website-contact",
+      "company": "Campz",
+      "action": "verify_target",
+      "platform": "website_form",
+      "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
+      "id": "google-customer-intersport-norway-website-contact",
+      "company": "Intersport Norway",
+      "action": "verify_target",
+      "platform": "website_form",
+      "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
+      "id": "google-customer-ld-mountain-centre-website-contact",
+      "company": "LD Mountain Centre",
+      "action": "verify_target",
+      "platform": "website_form",
+      "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
+      "id": "google-customer-outdoorxl-website-contact",
+      "company": "OutdoorXL",
+      "action": "verify_target",
+      "platform": "website_form",
+      "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
+      "id": "google-customer-taunton-leisure-website-contact",
+      "company": "Taunton Leisure",
+      "action": "verify_target",
+      "platform": "website_form",
+      "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
+      "id": "google-customer-outdoor-specialist-website-contact",
+      "company": "Outdoor Specialist",
+      "action": "verify_target",
+      "platform": "website_form",
+      "reason": "homepage_only_contact_path_requires_verification"
+    },
+    {
+      "id": "google-customer-outdoor-nature-website-contact",
+      "company": "Outdoor Nature",
+      "action": "email_priority",
+      "platform": "website_form",
+      "reason": "official_website_contact_channel"
+    },
+    {
+      "id": "google-customer-esprinet-group-linkedin",
+      "company": "Esprinet Group",
+      "action": "develop",
       "platform": "linkedin",
-      "reason": "linkedin_channel_requires_supported_executor"
-    },
-    {
-      "id": "google-customer-onwardup-facebook",
-      "company": "OnwardUP",
-      "action": "develop",
-      "platform": "facebook",
-      "reason": "official_website_social_channel_verified"
-    },
-    {
-      "id": "google-customer-nohrth-facebook",
-      "company": "NOHRTH",
-      "action": "develop",
-      "platform": "facebook",
-      "reason": "official_website_social_channel_verified"
+      "reason": "social_profile_not_first_party_verified"
     },
     {
       "id": "google-customer-front-point-sales-linkedin",
@@ -1915,13 +1920,6 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "reason": "official_website_contact_channel"
     },
     {
-      "id": "google-customer-sanitas-sales-group-website-contact",
-      "company": "Sanitas Sales Group",
-      "action": "email_priority",
-      "platform": "website_form",
-      "reason": "official_website_contact_channel"
-    },
-    {
       "id": "google-customer-sierra-outdoor-collective-website-contact",
       "company": "Sierra Outdoor Collective",
       "action": "develop",
@@ -1952,13 +1950,6 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     {
       "id": "google-customer-the-curtis-group-sales-website-contact",
       "company": "The Curtis Group Sales",
-      "action": "develop",
-      "platform": "website_form",
-      "reason": "official_website_contact_channel"
-    },
-    {
-      "id": "google-customer-ascension-sales-group-website-contact",
-      "company": "Ascension Sales Group",
       "action": "develop",
       "platform": "website_form",
       "reason": "official_website_contact_channel"
@@ -1999,32 +1990,11 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "reason": "website_contact_capability_not_verified"
     },
     {
-      "id": "google-customer-salvation-sales-website-contact",
-      "company": "Salvation Sales",
-      "action": "develop",
-      "platform": "website_form",
-      "reason": "official_website_contact_channel"
-    },
-    {
       "id": "google-customer-terra-outdoor-gear-distribution-website-contact",
       "company": "Terra Outdoor Gear Distribution",
       "action": "verify_target",
       "platform": "website_form",
       "reason": "website_contact_capability_not_verified"
-    },
-    {
-      "id": "google-customer-action-sports-agency-website-contact",
-      "company": "Action Sports Agency",
-      "action": "develop",
-      "platform": "website_form",
-      "reason": "official_website_contact_channel"
-    },
-    {
-      "id": "google-customer-sky-lines-website-contact",
-      "company": "Sky-Lines",
-      "action": "develop",
-      "platform": "website_form",
-      "reason": "official_website_contact_channel"
     },
     {
       "id": "google-customer-sturm-mil-tec-usa-website-contact",
@@ -2125,20 +2095,6 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "reason": "website_contact_capability_not_verified"
     },
     {
-      "id": "google-customer-outdoor-industry-group-website-contact",
-      "company": "Outdoor Industry Group",
-      "action": "develop",
-      "platform": "website_form",
-      "reason": "official_website_contact_channel"
-    },
-    {
-      "id": "google-customer-perpetual-motion-nw-website-contact",
-      "company": "Perpetual Motion NW",
-      "action": "develop",
-      "platform": "website_form",
-      "reason": "official_website_contact_channel"
-    },
-    {
       "id": "google-customer-brm-reps-website-contact",
       "company": "BRM Reps",
       "action": "verify_target",
@@ -2165,13 +2121,6 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "action": "verify_target",
       "platform": "website_form",
       "reason": "website_contact_capability_not_verified"
-    },
-    {
-      "id": "google-customer-next-adventure-website-contact",
-      "company": "Next Adventure",
-      "action": "develop",
-      "platform": "website_form",
-      "reason": "official_website_contact_channel"
     },
     {
       "id": "google-customer-tractor-supply-company-website-contact",
@@ -2205,30 +2154,29 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
   "summary": {
     "totalLeads": 16,
     "highIcp": 16,
-    "readyToDevelop": 34,
-    "dueNow": 77,
-    "visibleTodayQueue": 79,
-    "potentialPool": 79,
+    "readyToDevelop": 30,
+    "dueNow": 93,
+    "visibleTodayQueue": 71,
+    "potentialPool": 71,
     "potentialPoolTarget": 100,
     "customerTableHighIcp": 0,
-    "refillNeeded": 21,
-    "executableCompanies": 61,
+    "refillNeeded": 29,
+    "executableCompanies": 53,
     "executableReserveTarget": 130,
-    "executableReserveNeeded": 69,
+    "executableReserveNeeded": 77,
     "executableByChannel": {
-      "linkedin": 2,
-      "facebook": 8,
-      "instagram": 2,
+      "linkedin": 1,
+      "facebook": 7,
       "email": 21,
-      "website_form": 28
+      "website_form": 24
     },
-    "verifiedSocialCompanies": 12,
+    "verifiedSocialCompanies": 8,
     "verifiedSocialReserveTarget": 20,
-    "verifiedSocialReserveNeeded": 8,
+    "verifiedSocialReserveNeeded": 12,
     "enrichmentBacklogCount": 18,
-    "googleDiscovered": 77,
+    "googleDiscovered": 93,
     "facebookDiscovered": 7,
-    "websiteContactDiscovered": 20,
+    "websiteContactDiscovered": 26,
     "scheduledLater": 0,
     "cooldown": 30,
     "emailPriority": 0,
@@ -2239,19 +2187,19 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
   },
   "blockerSummary": [
     {
-      "reason": "official_website_contact_channel",
-      "status": "skipped",
-      "count": 48
-    },
-    {
       "reason": "official_public_business_email_verified",
       "status": "skipped",
-      "count": 41
+      "count": 47
+    },
+    {
+      "reason": "official_website_contact_channel",
+      "status": "skipped",
+      "count": 36
     },
     {
       "reason": "homepage_only_contact_path_requires_verification",
       "status": "skipped",
-      "count": 18
+      "count": 30
     },
     {
       "reason": "website_contact_capability_not_verified",
@@ -2259,14 +2207,14 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "count": 18
     },
     {
-      "reason": "failed_open",
-      "status": "failed_open",
-      "count": 7
-    },
-    {
       "reason": "official_website_social_channel_verified",
       "status": "skipped",
       "count": 4
+    },
+    {
+      "reason": "customer_execution_timeout",
+      "status": "failed_open",
+      "count": 2
     },
     {
       "reason": "linkedin_channel_requires_supported_executor",
@@ -2274,27 +2222,33 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "count": 2
     },
     {
-      "reason": "customer_execution_timeout",
+      "reason": "failed_open",
       "status": "failed_open",
+      "count": 1
+    },
+    {
+      "reason": "social_profile_not_first_party_verified",
+      "status": "skipped",
       "count": 1
     }
   ],
   "blockerCounts": {
-    "official_website_contact_channel": 48,
-    "official_public_business_email_verified": 41,
-    "homepage_only_contact_path_requires_verification": 18,
+    "official_public_business_email_verified": 47,
+    "official_website_contact_channel": 36,
+    "homepage_only_contact_path_requires_verification": 30,
     "website_contact_capability_not_verified": 18,
-    "failed_open": 7,
     "official_website_social_channel_verified": 4,
+    "customer_execution_timeout": 2,
     "linkedin_channel_requires_supported_executor": 2,
-    "customer_execution_timeout": 1
+    "failed_open": 1,
+    "social_profile_not_first_party_verified": 1
   },
   "queueGoalStatus": {
     "target": 100,
-    "potentialPool": 79,
-    "queueCount": 77,
-    "googleDiscovered": 77,
-    "refillNeeded": 21,
+    "potentialPool": 71,
+    "queueCount": 93,
+    "googleDiscovered": 93,
+    "refillNeeded": 29,
     "confirmedToday": 0,
     "reached": false,
     "action": "Add more verified high-ICP sources or unblock existing website/social leads."
@@ -2307,17 +2261,17 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     "rule": "completed checkpoints are ignored; only terminal results from an active interrupted checkpoint suppress their exact task id"
   },
   "platformCircuitState": {},
-  "userVisibleStatus": "Customer development was not performed. Blockers: official_website_contact_channel (48); official_public_business_email_verified (41); homepage_only_contact_path_requires_verification (18).",
-  "recoveryHint": "Refill the high-ICP pool with 21 verified leads or unblock existing website/social leads before the next run. Verify the official profile opens and exposes a safe message composer, or switch to another verified channel.",
+  "userVisibleStatus": "Customer development was not performed. Blockers: official_public_business_email_verified (47); official_website_contact_channel (36); homepage_only_contact_path_requires_verification (30).",
+  "recoveryHint": "Refill the high-ICP pool with 29 verified leads or unblock existing website/social leads before the next run. Verify the official profile opens and exposes a safe message composer, or switch to another verified channel.",
   "recoveryActions": [
     {
       "reason": "daily_queue_goal_not_reached",
       "action": "Refill high-ICP customer pool",
-      "description": "Add or unblock 21 verified high-ICP leads to reach the daily 100 target.",
-      "hint": "Refill the high-ICP pool with 21 verified leads or unblock existing website/social leads before the next run.",
+      "description": "Add or unblock 29 verified high-ICP leads to reach the daily 100 target.",
+      "hint": "Refill the high-ICP pool with 29 verified leads or unblock existing website/social leads before the next run.",
       "target": 100,
-      "potentialPool": 79,
-      "refillNeeded": 21
+      "potentialPool": 71,
+      "refillNeeded": 29
     },
     {
       "reason": "failed_open",
@@ -2328,20 +2282,20 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
   ],
   "systemRefresh": {
     "ok": true,
-    "stdout": "{\n  \"date\": \"2026-08-19\",\n  \"summary\": {\n    \"totalLeads\": 16,\n    \"highIcp\": 16,\n    \"readyToDevelop\": 28,\n    \"dueNow\": 69,\n    \"visibleTodayQueue\": 71,\n    \"potentialPool\": 71,\n    \"potentialPoolTarget\": 100,\n    \"customerTableHighIcp\": 0,\n    \"refillNeeded\": 29,\n    \"executableCompanies\": 53,\n    \"executableReserveTarget\": 130,\n    \"executableReserveNeeded\": 77,\n    \"executableByChannel\": {\n      \"linkedin\": 1,\n      \"facebook\": 7,\n      \"email\": 21,\n      \"website_form\": 24\n    },\n    \"verifiedSocialCompanies\": 8,\n    \"verifiedSocialReserveTarget\": 20,\n    \"verifiedSocialReserveNeeded\": 12,\n    \"enrichmentBacklogCount\": 18,\n    \"googleDiscovered\": 69,\n    \"facebookDiscovered\": 6,\n    \"websiteContactDiscovered\": 20,\n    \"scheduledLater\": 0,\n    \"cooldown\": 30,\n    \"emailPriority\": 0,\n    \"openAgencyMarket\": 15,\n    \"exclusiveAgencySkipped\": 1,\n    \"needsVerification\": 0,\n    \"retainedLowIcp\": 0\n  },\n  \"bugErrors\": 13,\n  \"queueFile\": \"E:\\\\New project\\\\outreach-dashboard\\\\daily-runs\\\\2026-08-19-daily-automation.json\",\n  \"csvFile\": \"E:\\\\New project\\\\outreach-dashboard\\\\daily-runs\\\\2026-08-19-daily-queue.csv\"\n}",
+    "stdout": "{\n  \"date\": \"2026-08-19\",\n  \"summary\": {\n    \"totalLeads\": 16,\n    \"highIcp\": 16,\n    \"readyToDevelop\": 27,\n    \"dueNow\": 90,\n    \"visibleTodayQueue\": 68,\n    \"potentialPool\": 68,\n    \"potentialPoolTarget\": 100,\n    \"customerTableHighIcp\": 0,\n    \"refillNeeded\": 32,\n    \"executableCompanies\": 50,\n    \"executableReserveTarget\": 130,\n    \"executableReserveNeeded\": 80,\n    \"executableByChannel\": {\n      \"linkedin\": 1,\n      \"facebook\": 7,\n      \"email\": 21,\n      \"website_form\": 21\n    },\n    \"verifiedSocialCompanies\": 8,\n    \"verifiedSocialReserveTarget\": 20,\n    \"verifiedSocialReserveNeeded\": 12,\n    \"enrichmentBacklogCount\": 18,\n    \"googleDiscovered\": 90,\n    \"facebookDiscovered\": 7,\n    \"websiteContactDiscovered\": 26,\n    \"scheduledLater\": 0,\n    \"cooldown\": 30,\n    \"emailPriority\": 0,\n    \"openAgencyMarket\": 15,\n    \"exclusiveAgencySkipped\": 1,\n    \"needsVerification\": 0,\n    \"retainedLowIcp\": 0\n  },\n  \"bugErrors\": 13,\n  \"queueFile\": \"E:\\\\New project\\\\outreach-dashboard\\\\daily-runs\\\\2026-08-19-daily-automation.json\",\n  \"csvFile\": \"E:\\\\New project\\\\outreach-dashboard\\\\daily-runs\\\\2026-08-19-daily-queue.csv\"\n}",
     "stderr": "",
     "error": "",
     "visibility": {
-      "updatedAt": "2026-08-18T19:18:46.150Z",
+      "updatedAt": "2026-08-18T22:17:23.303Z",
       "source": "main-refreshDailyAutomationArtifacts",
       "runDate": "2026-08-19",
-      "artifactGeneratedAt": "2026-08-18T19:18:43.207Z",
-      "executionGeneratedAt": "2026-08-18T16:20:21.842Z",
-      "githubSyncUpdatedAt": "2026-08-18T16:20:51.616Z",
+      "artifactGeneratedAt": "2026-08-18T22:17:20.382Z",
+      "executionGeneratedAt": "2026-08-18T19:18:47.117Z",
+      "githubSyncUpdatedAt": "2026-08-18T19:19:18.820Z",
       "counts": {
-        "dailyQueue": 69,
-        "googleDiscovered": 69,
-        "websiteContact": 62,
+        "dailyQueue": 90,
+        "googleDiscovered": 90,
+        "websiteContact": 81,
         "cooldownQueue": 30,
         "scheduledLater": 0
       },
@@ -2366,8 +2320,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       ],
       "dailyQueueGoal": {
         "target": 100,
-        "potentialPool": 71,
-        "refillNeeded": 29,
+        "potentialPool": 68,
+        "refillNeeded": 32,
         "reached": false
       },
       "contactEnrichment": {
@@ -2404,5 +2358,5 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
   },
   "ledgerReconciliationCount": 13,
   "externalEvidenceReconciliationCount": 0,
-  "completedAt": "2026-08-18T19:18:47.117Z"
+  "completedAt": "2026-08-18T22:17:24.579Z"
 };
