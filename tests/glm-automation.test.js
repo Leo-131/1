@@ -2580,6 +2580,20 @@ test('current United States agency refill uses fresh first-party routes', () => 
   assert.equal(trailCross.officialSocialProfileVerified, true);
 });
 
+test('latest net-new US agencies use exact president or founder emails from first-party sites', () => {
+  for (const [company, email, evidenceUrl] of [
+    ['BW Sales Group', 'nate.lov@gmail.com', 'https://www.bwsalesgroup.com/'],
+    ['PFP & Associates', 'tputnam.pfp@gmail.com', 'https://www.pfpandassociates.com/'],
+  ]) {
+    const row = verifiedExternalCandidates.find(item => item.company === company);
+    assert.ok(row, company);
+    assert.equal(row.contactEmail, email);
+    assert.equal(row.evidenceUrl, evidenceUrl);
+    assert.equal(row.customerType, 'sales_agency');
+    assert.equal(dailyRunner.channelExecutionReadiness({ ...row, platform: 'email' }).ready, true);
+  }
+});
+
 test('daily queue generator blocks same-day repeat development by company', () => {
   assert.ok(dailyRunnerSource.includes('SAME_DAY_DEVELOPMENT_STATUSES'));
   assert.ok(dailyRunnerSource.includes('function companyLeadKeys'));
