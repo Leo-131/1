@@ -56,3 +56,21 @@ test('cloud runner reuses the active npm CLI on Windows instead of relying on PA
   assert.match(source, /writeState\(releaseCloudTask\(buildCloudTaskState\(\), deviceId\)\)/);
   assert.ok(source.indexOf('releaseCloudTask(buildCloudTaskState(), deviceId)') < source.indexOf("runNpm('sync:github'"));
 });
+
+test('GitHub cloud control workflow supports serialized cross-computer handoff', () => {
+  const workflow = fs.readFileSync(path.join(
+    __dirname,
+    '..',
+    'outreach-dashboard',
+    '.github',
+    'workflows',
+    'cloud-outreach-control.yml',
+  ), 'utf8');
+  assert.match(workflow, /name: FLEXTAIL Cloud Outreach Control/);
+  assert.match(workflow, /group: flextail-cloud-outreach-control/);
+  assert.match(workflow, /cancel-in-progress: false/);
+  assert.match(workflow, /git pull --ff-only origin \"\$TASK_BRANCH\"/);
+  assert.match(workflow, /node cloud-task-controller\.js \"\$ACTION\" --device=\"\$DEVICE_ALIAS\"/);
+  assert.match(workflow, /git push origin \"HEAD:\$TASK_BRANCH\"/);
+  assert.match(workflow, /cron: '30 0 \* \* 1-5'/);
+});

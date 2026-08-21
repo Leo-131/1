@@ -1,0 +1,94 @@
+name: FLEXTAIL Cloud Outreach Control
+
+on:
+  workflow_dispatch:
+    inputs:
+      action:
+        description: Cloud task action
+        required: true
+        type: choice
+        options:
+          - status
+          - claim
+          - release
+          - refresh
+        default: status
+      device:
+        description: Non-secret device alias (required for claim/release)
+        required: false
+        type: string
+  schedule:
+    # 08:30 Asia/Shanghai, Monday-Friday.
+    - cron: '30 0 * * 1-5'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: flextail-cloud-outreach-control
+  cancel-in-progress: false
+
+jobs:
+  control:
+    runs-on: ubuntu-latest
+    env:
+      TASK_BRANCH: vercel-main-sync
+    steps:
+      - name: Checkout shared task branch
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ env.TASK_BRANCH }}
+          fetch-depth: 0
+
+      - name: Validate request
+        id: request
+        shell: bash
+        env:
+          EVENT_NAME: ${{ github.event_name }}
+          REQUESTED_ACTION: ${{ inputs.action }}
+          DEVICE_ALIAS: ${{ inputs.device }}
+        run: |
+          action="$REQUESTED_ACTION"
+          if [ "$EVENT_NAME" = "schedule" ]; then action="refresh"; fi
+          if { [ "$action" = "claim" ] || [ "$action" = "release" ]; } && [ -z "$DEVICE_ALIAS" ]; then
+            echo "A non-secret device alias is required for $action" >&2
+            exit 1
+          fi
+          echo "action=$action" >> "$GITHUB_OUTPUT"
+
+      - name: Refresh from remote before mutation
+        if: steps.request.outputs.action != 'status'
+        run: git pull --ff-only origin "$TASK_BRANCH"
+
+      - name: Read or update cloud task
+        shell: bash
+        env:
+          ACTION: ${{ steps.request.outputs.action }}
+          DEVICE_ALIAS: ${{ inputs.device }}
+        run: node cloud-task-controller.js "$ACTION" --device="$DEVICE_ALIAS"
+
+      - name: Publish task state
+        if: steps.request.outputs.action != 'status'
+        shell: bash
+        env:
+          ACTION: ${{ steps.request.outputs.action }}
+          DEVICE_ALIAS: ${{ inputs.device }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -- cloud-task-state.json public/cloud-task-state.json
+          if git diff --cached --quiet; then
+            echo "Cloud task state is already current."
+            exit 0
+          fi
+          suffix="$DEVICE_ALIAS"
+          if [ -z "$suffix" ]; then suffix="scheduler"; fi
+          git commit -m "chore(cloud-task): $ACTION by $suffix"
+          git push origin "HEAD:$TASK_BRANCH"
+
+      - name: Publish current task summary
+        run: |
+          echo '### FLEXTAIL cloud outreach task' >> "$GITHUB_STEP_SUMMARY"
+          echo '```json' >> "$GITHUB_STEP_SUMMARY"
+          cat cloud-task-state.json >> "$GITHUB_STEP_SUMMARY"
+          echo '```' >> "$GITHUB_STEP_SUMMARY"
