@@ -1,17 +1,17 @@
 window.DAILY_AUTOMATION_EXECUTION_LATEST = {
-  "ok": true,
+  "ok": false,
   "browserTransportRequested": "codex-extension-first",
-  "browserTransportUsed": "cdp",
-  "browserTransportFallbackReason": "extension_bridge_not_available_process_local_cdp",
+  "browserTransportUsed": "none",
+  "browserTransportFallbackReason": "",
   "extensionReceiptCount": 0,
-  "executionPhase": "browser_execution",
-  "chromeStage": "opened",
-  "chromeOpened": true,
-  "chromeOpenedCount": 2,
-  "customerDevelopmentPerformed": true,
-  "customerMessageSent": true,
-  "realDevelopmentCount": 2,
-  "reportingVerdict": "development_performed",
+  "executionPhase": "no_browser_execution",
+  "chromeStage": "not_started",
+  "chromeOpened": false,
+  "chromeOpenedCount": 0,
+  "customerDevelopmentPerformed": false,
+  "customerMessageSent": false,
+  "realDevelopmentCount": 0,
+  "reportingVerdict": "no_customer_development_performed",
   "engine": "Browser transport queue bridge",
   "mode": "serial-single-target",
   "batchMode": "parallel-batches",
@@ -29,7 +29,7 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "ok": false,
       "sendStatus": "skipped",
       "evidence": "email_domain_daily_limit_reached;domain:gmail.com;sentToday:3;limit:3",
-      "timestamp": "2026-08-21T11:16:41.627Z",
+      "timestamp": "2026-08-21T11:22:02.487Z",
       "chromeOpen": null,
       "result": {
         "ok": false,
@@ -39,72 +39,6 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
         "mode": "email_domain_safety_gate",
         "evidence": "email_domain_daily_limit_reached;domain:gmail.com;sentToday:3;limit:3",
         "nextAction": "Pause this domain until the next Asia/Shanghai business day; use another verified company or channel."
-      }
-    },
-    {
-      "id": "google-customer-drvforce-website-contact",
-      "company": "DRVFORCE",
-      "action": "email_priority",
-      "platform": "email",
-      "targetUrl": "https://www.drvforce.com/",
-      "ok": true,
-      "sendStatus": "sent_confirmed",
-      "evidence": "official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed",
-      "timestamp": "2026-08-21T11:17:20.681Z",
-      "chromeOpen": null,
-      "result": {
-        "ok": true,
-        "sendStatus": "sent_confirmed",
-        "reason": "sent_folder_message_confirmed",
-        "evidence": "official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed;official_social_channel_not_verified",
-        "recipientEmail": "john@drvforce.com",
-        "targetUrl": "mailto:john@drvforce.com",
-        "subject": "FLEXTAIL retail partnership | 2026 assortment",
-        "draft": "Dear DRVFORCE Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
-        "engine": "alibaba-enterprise-mail-web-session",
-        "mode": "alibaba_webmail_sent_folder_confirmed",
-        "manualApprovalRequired": false,
-        "autoSendAuthorized": true,
-        "contentValidation": {
-          "ok": true,
-          "errors": [],
-          "words": 108
-        },
-        "output": "{\"verdict\":\"sent_confirmed\",\"sendStatus\":\"sent_confirmed\",\"evidence\":\"official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed\",\"nextAction\":\"Alibaba Mail accepted the message and the matching record exists in Sent.\",\"recipientEmail\":\"john@drvforce.com\",\"messageId\":\"\"}",
-        "secondaryChannelStatus": "official_social_channel_not_verified"
-      }
-    },
-    {
-      "id": "google-customer-venture-sports-group-website-contact",
-      "company": "Venture Sports Group",
-      "action": "email_priority",
-      "platform": "email",
-      "targetUrl": "https://venturesportsgroup.wordpress.com/about/",
-      "ok": true,
-      "sendStatus": "sent_confirmed",
-      "evidence": "official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed",
-      "timestamp": "2026-08-21T11:17:55.282Z",
-      "chromeOpen": null,
-      "result": {
-        "ok": true,
-        "sendStatus": "sent_confirmed",
-        "reason": "sent_folder_message_confirmed",
-        "evidence": "official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed;official_social_channel_not_verified",
-        "recipientEmail": "al@venturesportsgroup.com",
-        "targetUrl": "mailto:al@venturesportsgroup.com",
-        "subject": "FLEXTAIL retail partnership | 2026 assortment",
-        "draft": "Dear Venture Sports Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
-        "engine": "alibaba-enterprise-mail-web-session",
-        "mode": "alibaba_webmail_sent_folder_confirmed",
-        "manualApprovalRequired": false,
-        "autoSendAuthorized": true,
-        "contentValidation": {
-          "ok": true,
-          "errors": [],
-          "words": 109
-        },
-        "output": "{\"verdict\":\"sent_confirmed\",\"sendStatus\":\"sent_confirmed\",\"evidence\":\"official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed\",\"nextAction\":\"Alibaba Mail accepted the message and the matching record exists in Sent.\",\"recipientEmail\":\"al@venturesportsgroup.com\",\"messageId\":\"\"}",
-        "secondaryChannelStatus": "official_social_channel_not_verified"
       }
     }
   ],
@@ -118,7 +52,7 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "ok": false,
       "sendStatus": "skipped",
       "evidence": "email_domain_daily_limit_reached;domain:gmail.com;sentToday:3;limit:3",
-      "timestamp": "2026-08-21T11:16:41.627Z",
+      "timestamp": "2026-08-21T11:22:02.487Z",
       "chromeOpen": null,
       "result": {
         "ok": false,
@@ -128,72 +62,6 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
         "mode": "email_domain_safety_gate",
         "evidence": "email_domain_daily_limit_reached;domain:gmail.com;sentToday:3;limit:3",
         "nextAction": "Pause this domain until the next Asia/Shanghai business day; use another verified company or channel."
-      }
-    },
-    {
-      "id": "google-customer-drvforce-website-contact",
-      "company": "DRVFORCE",
-      "action": "email_priority",
-      "platform": "email",
-      "targetUrl": "https://www.drvforce.com/",
-      "ok": true,
-      "sendStatus": "sent_confirmed",
-      "evidence": "official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed",
-      "timestamp": "2026-08-21T11:17:20.681Z",
-      "chromeOpen": null,
-      "result": {
-        "ok": true,
-        "sendStatus": "sent_confirmed",
-        "reason": "sent_folder_message_confirmed",
-        "evidence": "official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed;official_social_channel_not_verified",
-        "recipientEmail": "john@drvforce.com",
-        "targetUrl": "mailto:john@drvforce.com",
-        "subject": "FLEXTAIL retail partnership | 2026 assortment",
-        "draft": "Dear DRVFORCE Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
-        "engine": "alibaba-enterprise-mail-web-session",
-        "mode": "alibaba_webmail_sent_folder_confirmed",
-        "manualApprovalRequired": false,
-        "autoSendAuthorized": true,
-        "contentValidation": {
-          "ok": true,
-          "errors": [],
-          "words": 108
-        },
-        "output": "{\"verdict\":\"sent_confirmed\",\"sendStatus\":\"sent_confirmed\",\"evidence\":\"official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed\",\"nextAction\":\"Alibaba Mail accepted the message and the matching record exists in Sent.\",\"recipientEmail\":\"john@drvforce.com\",\"messageId\":\"\"}",
-        "secondaryChannelStatus": "official_social_channel_not_verified"
-      }
-    },
-    {
-      "id": "google-customer-venture-sports-group-website-contact",
-      "company": "Venture Sports Group",
-      "action": "email_priority",
-      "platform": "email",
-      "targetUrl": "https://venturesportsgroup.wordpress.com/about/",
-      "ok": true,
-      "sendStatus": "sent_confirmed",
-      "evidence": "official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed",
-      "timestamp": "2026-08-21T11:17:55.282Z",
-      "chromeOpen": null,
-      "result": {
-        "ok": true,
-        "sendStatus": "sent_confirmed",
-        "reason": "sent_folder_message_confirmed",
-        "evidence": "official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed;official_social_channel_not_verified",
-        "recipientEmail": "al@venturesportsgroup.com",
-        "targetUrl": "mailto:al@venturesportsgroup.com",
-        "subject": "FLEXTAIL retail partnership | 2026 assortment",
-        "draft": "Dear Venture Sports Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
-        "engine": "alibaba-enterprise-mail-web-session",
-        "mode": "alibaba_webmail_sent_folder_confirmed",
-        "manualApprovalRequired": false,
-        "autoSendAuthorized": true,
-        "contentValidation": {
-          "ok": true,
-          "errors": [],
-          "words": 109
-        },
-        "output": "{\"verdict\":\"sent_confirmed\",\"sendStatus\":\"sent_confirmed\",\"evidence\":\"official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed\",\"nextAction\":\"Alibaba Mail accepted the message and the matching record exists in Sent.\",\"recipientEmail\":\"al@venturesportsgroup.com\",\"messageId\":\"\"}",
-        "secondaryChannelStatus": "official_social_channel_not_verified"
       }
     }
   ],
@@ -1169,28 +1037,28 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     "totalLeads": 16,
     "highIcp": 16,
     "readyToDevelop": 22,
-    "dueNow": 90,
-    "visibleTodayQueue": 53,
-    "potentialPool": 54,
+    "dueNow": 88,
+    "visibleTodayQueue": 51,
+    "potentialPool": 52,
     "potentialPoolTarget": 100,
     "customerTableHighIcp": 0,
-    "refillNeeded": 46,
-    "executableCompanies": 36,
+    "refillNeeded": 48,
+    "executableCompanies": 34,
     "executableReserveTarget": 130,
-    "executableReserveNeeded": 94,
+    "executableReserveNeeded": 96,
     "executableByChannel": {
       "facebook": 3,
       "instagram": 1,
-      "email": 12,
+      "email": 10,
       "website_form": 20
     },
     "verifiedSocialCompanies": 4,
     "verifiedSocialReserveTarget": 20,
     "verifiedSocialReserveNeeded": 16,
     "enrichmentBacklogCount": 18,
-    "googleDiscovered": 90,
+    "googleDiscovered": 88,
     "facebookDiscovered": 3,
-    "websiteContactDiscovered": 28,
+    "websiteContactDiscovered": 26,
     "scheduledLater": 0,
     "cooldown": 30,
     "emailPriority": 0,
@@ -1231,11 +1099,6 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "count": 7
     },
     {
-      "reason": "sent_folder_message_confirmed",
-      "status": "sent_confirmed",
-      "count": 2
-    },
-    {
       "reason": "email_domain_daily_limit_reached",
       "status": "skipped",
       "count": 1
@@ -1253,17 +1116,16 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     "website_contact_capability_not_verified": 11,
     "official_website_social_channel_verified": 8,
     "personal_email_domain_not_allowed": 7,
-    "sent_folder_message_confirmed": 2,
     "email_domain_daily_limit_reached": 1,
     "social_profile_not_first_party_verified": 1
   },
   "queueGoalStatus": {
     "target": 100,
-    "potentialPool": 54,
-    "queueCount": 90,
-    "googleDiscovered": 90,
-    "refillNeeded": 46,
-    "confirmedToday": 49,
+    "potentialPool": 52,
+    "queueCount": 88,
+    "googleDiscovered": 88,
+    "refillNeeded": 48,
+    "confirmedToday": 51,
     "reached": false,
     "action": "Add more verified high-ICP sources or unblock existing website/social leads."
   },
@@ -1276,16 +1138,16 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
   },
   "platformCircuitState": {},
   "userVisibleStatus": "Customer development was not performed. Blockers: official_website_contact_channel (44); official_public_business_email_verified (34); homepage_only_contact_path_requires_verification (33).",
-  "recoveryHint": "Refill the high-ICP pool with 46 verified leads or unblock existing website/social leads before the next run.",
+  "recoveryHint": "Refill the high-ICP pool with 48 verified leads or unblock existing website/social leads before the next run.",
   "recoveryActions": [
     {
       "reason": "daily_queue_goal_not_reached",
       "action": "Refill high-ICP customer pool",
-      "description": "Add or unblock 46 verified high-ICP leads to reach the daily 100 target.",
-      "hint": "Refill the high-ICP pool with 46 verified leads or unblock existing website/social leads before the next run.",
+      "description": "Add or unblock 48 verified high-ICP leads to reach the daily 100 target.",
+      "hint": "Refill the high-ICP pool with 48 verified leads or unblock existing website/social leads before the next run.",
       "target": 100,
-      "potentialPool": 54,
-      "refillNeeded": 46
+      "potentialPool": 52,
+      "refillNeeded": 48
     }
   ],
   "systemRefresh": {
@@ -1294,12 +1156,12 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     "stderr": "",
     "error": "",
     "visibility": {
-      "updatedAt": "2026-08-21T11:17:59.182Z",
+      "updatedAt": "2026-08-21T11:22:09.582Z",
       "source": "main-refreshDailyAutomationArtifacts",
       "runDate": "2026-08-21",
-      "artifactGeneratedAt": "2026-08-21T11:17:56.601Z",
-      "executionGeneratedAt": "2026-08-21T11:13:23.902Z",
-      "githubSyncUpdatedAt": "2026-08-21T11:13:53.111Z",
+      "artifactGeneratedAt": "2026-08-21T11:22:04.685Z",
+      "executionGeneratedAt": "2026-08-21T11:17:59.716Z",
+      "githubSyncUpdatedAt": "2026-08-21T11:18:26.497Z",
       "counts": {
         "dailyQueue": 88,
         "googleDiscovered": 88,
@@ -1355,7 +1217,7 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     "ok": true,
     "evidence": "alibaba_webmail_authenticated_compose_visible",
     "url": "https://qiye.aliyun.com/alimail/entries/v5.1/mail/sentitems/all",
-    "title": "阿里邮箱"
+    "title": "(20封未读邮件)阿里邮箱"
   },
   "bounceReconciliation": {
     "ok": false,
@@ -1367,7 +1229,7 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "ALIBABA_SMTP_SECURITY_PASSWORD"
     ]
   },
-  "ledgerReconciliationCount": 3,
+  "ledgerReconciliationCount": 2,
   "externalEvidenceReconciliationCount": 0,
-  "completedAt": "2026-08-21T11:17:59.716Z"
+  "completedAt": "2026-08-21T11:22:10.746Z"
 };
