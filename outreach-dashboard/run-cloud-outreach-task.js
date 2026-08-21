@@ -1,6 +1,7 @@
 const http = require('http');
 const { spawnSync } = require('child_process');
 const {
+  assertLeaseOwner,
   claimCloudTask,
   buildCloudTaskState,
   releaseCloudTask,
@@ -46,8 +47,11 @@ function runNpm(script, env = {}) {
 
 async function main() {
   const deviceId = argument('device') || process.env.OUTREACH_DEVICE_ID || '';
+  const requireRemoteLease = process.env.OUTREACH_REQUIRE_REMOTE_LEASE !== '0';
+  const initialState = buildCloudTaskState();
+  if (requireRemoteLease) assertLeaseOwner(initialState, deviceId);
   await assertDedicatedChrome();
-  writeState(claimCloudTask(buildCloudTaskState(), deviceId));
+  writeState(claimCloudTask(initialState, deviceId));
   const sharedEnv = { OUTREACH_DEVICE_ID: deviceId, OUTREACH_RUN_LIMIT: '50' };
   runNpm('discover:daily', sharedEnv);
   runNpm('daily:execute', { ...sharedEnv, OUTREACH_EMAIL_UI_PROVIDER: 'alibaba_webmail' });

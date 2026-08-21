@@ -23,6 +23,7 @@
     "cloud:claim": "node cloud-task-controller.js claim",
     "cloud:release": "node cloud-task-controller.js release",
     "cloud:run": "node run-cloud-outreach-task.js",
+    "cloud:run:local": "node -e \"process.env.OUTREACH_REQUIRE_REMOTE_LEASE='0'; require('./run-cloud-outreach-task')\"",
     "sync:github:watch": "node sync-local-data-to-github.js --watch",
     "deploy:dry-run": "node smart-deploy.js --dry-run",
     "build": "electron-builder --win portable",

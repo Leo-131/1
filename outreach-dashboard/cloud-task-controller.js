@@ -120,6 +120,18 @@ function releaseCloudTask(state, deviceId, now = new Date()) {
   };
 }
 
+function assertLeaseOwner(state, deviceId, now = new Date()) {
+  const cleanDeviceId = String(deviceId || '').trim().replace(/[^a-zA-Z0-9._-]+/g, '-').slice(0, 64);
+  if (!cleanDeviceId) throw new Error('A non-secret device alias is required: --device=<alias>');
+  if (!isLeaseActive(state.lease, now)) {
+    throw new Error('No active cloud lease. Claim the task in GitHub before starting the browser executor.');
+  }
+  if (state.lease.deviceId !== cleanDeviceId) {
+    throw new Error(`Cloud task is leased by ${state.lease.deviceId} until ${state.lease.expiresAt}`);
+  }
+  return state;
+}
+
 function writeState(state) {
   writeJsonAtomic(STATE_PATH, state);
   writeJsonAtomic(PUBLIC_STATE_PATH, state);
@@ -150,6 +162,7 @@ if (require.main === module) {
 
 module.exports = {
   LEASE_MINUTES,
+  assertLeaseOwner,
   buildCloudTaskState,
   claimCloudTask,
   isLeaseActive,

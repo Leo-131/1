@@ -2,6 +2,7 @@ const test = require('node:test');
 const assert = require('node:assert/strict');
 const {
   LEASE_MINUTES,
+  assertLeaseOwner,
   claimCloudTask,
   isLeaseActive,
   releaseCloudTask,
@@ -38,11 +39,20 @@ test('cloud task can be handed off after owner release or lease expiry', () => {
   assert.equal(afterExpiry.lease.deviceId, 'home-desktop');
 });
 
+test('cloud browser executor requires a current lease owned by the same computer', () => {
+  const now = new Date('2026-08-21T12:00:00.000Z');
+  assert.throws(() => assertLeaseOwner(state(), 'office-laptop', now), /No active cloud lease/);
+  const claimed = claimCloudTask(state(), 'office-laptop', now);
+  assert.equal(assertLeaseOwner(claimed, 'office-laptop', now), claimed);
+  assert.throws(() => assertLeaseOwner(claimed, 'home-desktop', now), /leased by office-laptop/);
+});
+
 test('cloud runner reuses the active npm CLI on Windows instead of relying on PATH lookup', () => {
   const source = fs.readFileSync(path.join(__dirname, '..', 'outreach-dashboard', 'run-cloud-outreach-task.js'), 'utf8');
   assert.match(source, /const npmCli = process\.env\.npm_execpath/);
   assert.match(source, /npmCli \? process\.execPath/);
   assert.match(source, /if \(result\.error\) throw result\.error/);
+  assert.match(source, /assertLeaseOwner\(initialState, deviceId\)/);
   assert.match(source, /writeState\(releaseCloudTask\(buildCloudTaskState\(\), deviceId\)\)/);
   assert.ok(source.indexOf('releaseCloudTask(buildCloudTaskState(), deviceId)') < source.indexOf("runNpm('sync:github'"));
 });
