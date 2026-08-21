@@ -16,30 +16,30 @@
   "mode": "serial-single-target",
   "batchMode": "parallel-batches",
   "parallelLimit": 1,
-  "limit": 2,
+  "limit": 1,
   "queueDate": "2026-08-21",
   "queueSource": "dailyQueue",
   "executed": [
     {
-      "id": "google-customer-hl-outdoor-group-website-contact",
-      "company": "HL Outdoor Group",
+      "id": "google-customer-yukon-trading-company-website-contact",
+      "company": "Yukon Trading Company",
       "action": "email_priority",
       "platform": "email",
-      "targetUrl": "https://www.hloutdoorgroup.com/contact",
+      "targetUrl": "https://www.yukontradingcompany.com/contact",
       "ok": true,
       "sendStatus": "sent_confirmed",
       "evidence": "official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed",
-      "timestamp": "2026-08-21T13:34:01.016Z",
+      "timestamp": "2026-08-21T13:44:13.867Z",
       "chromeOpen": null,
       "result": {
         "ok": true,
         "sendStatus": "sent_confirmed",
         "reason": "sent_folder_message_confirmed",
         "evidence": "official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed;official_social_channel_not_verified",
-        "recipientEmail": "hans@hloutdoorgroup.com",
-        "targetUrl": "mailto:hans@hloutdoorgroup.com",
+        "recipientEmail": "office@yukontradingcompany.com",
+        "targetUrl": "mailto:office@yukontradingcompany.com",
         "subject": "FLEXTAIL retail partnership | 2026 assortment",
-        "draft": "Dear HL Outdoor Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
+        "draft": "Dear Yukon Trading Company Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
         "engine": "alibaba-enterprise-mail-web-session",
         "mode": "alibaba_webmail_sent_folder_confirmed",
         "manualApprovalRequired": false,
@@ -47,55 +47,34 @@
         "contentValidation": {
           "ok": true,
           "errors": [],
-          "words": 109
+          "words": 110
         },
-        "output": "{\"verdict\":\"sent_confirmed\",\"sendStatus\":\"sent_confirmed\",\"evidence\":\"official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed\",\"nextAction\":\"Alibaba Mail accepted the message and the matching record exists in Sent.\",\"recipientEmail\":\"hans@hloutdoorgroup.com\",\"messageId\":\"\"}",
+        "output": "{\"verdict\":\"sent_confirmed\",\"sendStatus\":\"sent_confirmed\",\"evidence\":\"official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed\",\"nextAction\":\"Alibaba Mail accepted the message and the matching record exists in Sent.\",\"recipientEmail\":\"office@yukontradingcompany.com\",\"messageId\":\"\"}",
         "secondaryChannelStatus": "official_social_channel_not_verified"
-      }
-    },
-    {
-      "id": "google-customer-trailcross-website-contact",
-      "company": "TrailCross",
-      "action": "email_priority",
-      "platform": "email",
-      "targetUrl": "https://www.trailcross.com/",
-      "ok": false,
-      "sendStatus": "skipped",
-      "evidence": "email_domain_daily_limit_reached;domain:gmail.com;sentToday:3;limit:3",
-      "timestamp": "2026-08-21T13:34:03.664Z",
-      "chromeOpen": null,
-      "result": {
-        "ok": false,
-        "skipped": true,
-        "sendStatus": "skipped",
-        "reason": "email_domain_daily_limit_reached",
-        "mode": "email_domain_safety_gate",
-        "evidence": "email_domain_daily_limit_reached;domain:gmail.com;sentToday:3;limit:3",
-        "nextAction": "Pause this domain until the next Asia/Shanghai business day; use another verified company or channel."
       }
     }
   ],
   "results": [
     {
-      "id": "google-customer-hl-outdoor-group-website-contact",
-      "company": "HL Outdoor Group",
+      "id": "google-customer-yukon-trading-company-website-contact",
+      "company": "Yukon Trading Company",
       "action": "email_priority",
       "platform": "email",
-      "targetUrl": "https://www.hloutdoorgroup.com/contact",
+      "targetUrl": "https://www.yukontradingcompany.com/contact",
       "ok": true,
       "sendStatus": "sent_confirmed",
       "evidence": "official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed",
-      "timestamp": "2026-08-21T13:34:01.016Z",
+      "timestamp": "2026-08-21T13:44:13.867Z",
       "chromeOpen": null,
       "result": {
         "ok": true,
         "sendStatus": "sent_confirmed",
         "reason": "sent_folder_message_confirmed",
         "evidence": "official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed;official_social_channel_not_verified",
-        "recipientEmail": "hans@hloutdoorgroup.com",
-        "targetUrl": "mailto:hans@hloutdoorgroup.com",
+        "recipientEmail": "office@yukontradingcompany.com",
+        "targetUrl": "mailto:office@yukontradingcompany.com",
         "subject": "FLEXTAIL retail partnership | 2026 assortment",
-        "draft": "Dear HL Outdoor Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
+        "draft": "Dear Yukon Trading Company Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
         "engine": "alibaba-enterprise-mail-web-session",
         "mode": "alibaba_webmail_sent_folder_confirmed",
         "manualApprovalRequired": false,
@@ -103,31 +82,10 @@
         "contentValidation": {
           "ok": true,
           "errors": [],
-          "words": 109
+          "words": 110
         },
-        "output": "{\"verdict\":\"sent_confirmed\",\"sendStatus\":\"sent_confirmed\",\"evidence\":\"official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed\",\"nextAction\":\"Alibaba Mail accepted the message and the matching record exists in Sent.\",\"recipientEmail\":\"hans@hloutdoorgroup.com\",\"messageId\":\"\"}",
+        "output": "{\"verdict\":\"sent_confirmed\",\"sendStatus\":\"sent_confirmed\",\"evidence\":\"official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed\",\"nextAction\":\"Alibaba Mail accepted the message and the matching record exists in Sent.\",\"recipientEmail\":\"office@yukontradingcompany.com\",\"messageId\":\"\"}",
         "secondaryChannelStatus": "official_social_channel_not_verified"
-      }
-    },
-    {
-      "id": "google-customer-trailcross-website-contact",
-      "company": "TrailCross",
-      "action": "email_priority",
-      "platform": "email",
-      "targetUrl": "https://www.trailcross.com/",
-      "ok": false,
-      "sendStatus": "skipped",
-      "evidence": "email_domain_daily_limit_reached;domain:gmail.com;sentToday:3;limit:3",
-      "timestamp": "2026-08-21T13:34:03.664Z",
-      "chromeOpen": null,
-      "result": {
-        "ok": false,
-        "skipped": true,
-        "sendStatus": "skipped",
-        "reason": "email_domain_daily_limit_reached",
-        "mode": "email_domain_safety_gate",
-        "evidence": "email_domain_daily_limit_reached;domain:gmail.com;sentToday:3;limit:3",
-        "nextAction": "Pause this domain until the next Asia/Shanghai business day; use another verified company or channel."
       }
     }
   ],
@@ -142,6 +100,13 @@
     {
       "id": "google-customer-13west-website-contact",
       "company": "13west",
+      "action": "email_priority",
+      "platform": "email",
+      "reason": "official_public_business_email_verified"
+    },
+    {
+      "id": "google-customer-trailcross-website-contact",
+      "company": "TrailCross",
       "action": "email_priority",
       "platform": "email",
       "reason": "official_public_business_email_verified"
@@ -742,6 +707,13 @@
       "reason": "official_public_business_email_verified"
     },
     {
+      "id": "google-customer-trailcross-website-contact",
+      "company": "TrailCross",
+      "action": "email_priority",
+      "platform": "email",
+      "reason": "official_public_business_email_verified"
+    },
+    {
       "id": "google-customer-g-b-stumpp-associates-website-contact",
       "company": "G.B. Stumpp & Associates",
       "action": "email_priority",
@@ -1184,7 +1156,7 @@
     {
       "reason": "official_public_business_email_verified",
       "status": "skipped",
-      "count": 31
+      "count": 33
     },
     {
       "reason": "homepage_only_contact_path_requires_verification",
@@ -1212,11 +1184,6 @@
       "count": 3
     },
     {
-      "reason": "email_domain_daily_limit_reached",
-      "status": "skipped",
-      "count": 1
-    },
-    {
       "reason": "sent_folder_message_confirmed",
       "status": "sent_confirmed",
       "count": 1
@@ -1224,13 +1191,12 @@
   ],
   "blockerCounts": {
     "official_website_contact_channel": 63,
-    "official_public_business_email_verified": 31,
+    "official_public_business_email_verified": 33,
     "homepage_only_contact_path_requires_verification": 24,
     "website_contact_capability_not_verified": 9,
     "official_website_social_channel_verified": 8,
     "personal_email_domain_not_allowed": 6,
     "social_profile_not_first_party_verified": 3,
-    "email_domain_daily_limit_reached": 1,
     "sent_folder_message_confirmed": 1
   },
   "queueGoalStatus": {
@@ -1239,7 +1205,7 @@
     "queueCount": 83,
     "googleDiscovered": 83,
     "refillNeeded": 35,
-    "confirmedToday": 98,
+    "confirmedToday": 99,
     "reached": false,
     "action": "Add more verified high-ICP sources or unblock existing website/social leads."
   },
@@ -1251,7 +1217,7 @@
     "rule": "completed checkpoints are ignored; only terminal results from an active interrupted checkpoint suppress their exact task id"
   },
   "platformCircuitState": {},
-  "userVisibleStatus": "Customer development was not performed. Blockers: official_website_contact_channel (63); official_public_business_email_verified (31); homepage_only_contact_path_requires_verification (24).",
+  "userVisibleStatus": "Customer development was not performed. Blockers: official_website_contact_channel (63); official_public_business_email_verified (33); homepage_only_contact_path_requires_verification (24).",
   "recoveryHint": "Refill the high-ICP pool with 35 verified leads or unblock existing website/social leads before the next run.",
   "recoveryActions": [
     {
@@ -1270,12 +1236,12 @@
     "stderr": "",
     "error": "",
     "visibility": {
-      "updatedAt": "2026-08-21T13:34:06.905Z",
+      "updatedAt": "2026-08-21T13:44:17.084Z",
       "source": "main-refreshDailyAutomationArtifacts",
       "runDate": "2026-08-21",
-      "artifactGeneratedAt": "2026-08-21T13:34:04.015Z",
-      "executionGeneratedAt": "2026-08-21T13:29:41.110Z",
-      "githubSyncUpdatedAt": "2026-08-21T13:30:14.211Z",
+      "artifactGeneratedAt": "2026-08-21T13:44:14.186Z",
+      "executionGeneratedAt": "2026-08-21T13:39:02.383Z",
+      "githubSyncUpdatedAt": "2026-08-21T13:34:38.454Z",
       "counts": {
         "dailyQueue": 82,
         "googleDiscovered": 82,
@@ -1343,7 +1309,7 @@
       "ALIBABA_SMTP_SECURITY_PASSWORD"
     ]
   },
-  "ledgerReconciliationCount": 11,
+  "ledgerReconciliationCount": 0,
   "externalEvidenceReconciliationCount": 0,
-  "completedAt": "2026-08-21T13:34:08.717Z"
+  "completedAt": "2026-08-21T13:44:17.911Z"
 }

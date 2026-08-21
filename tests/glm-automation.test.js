@@ -2938,6 +2938,7 @@ test('final daily replenishment keeps only first-party verified agency emails', 
     ['Fieldstone Marketing', 'info@fieldstonemarketing.com'],
     ['Blackwatch Agency', 'info@blackwatchagency.com'],
     ['HL Outdoor Group', 'hans@hloutdoorgroup.com'],
+    ['Yukon Trading Company', 'Office@yukontradingcompany.com'],
   ];
   for (const [company, email] of expected) {
     const row = verifiedExternalCandidates.find(item => item.company === company);
@@ -2947,4 +2948,13 @@ test('final daily replenishment keeps only first-party verified agency emails', 
     assert.equal(row.externalVerificationStatus, 'official_supplier_email_verified');
     assert.match(row.evidenceUrl, /^https:\/\//);
   }
+});
+
+test('an exhausted email domain is excluded before it consumes the remaining execution slot', () => {
+  assert.ok(mainSource.includes("domainSafety.reason === 'email_domain_daily_limit_reached'"));
+  assert.ok(mainSource.includes('Exclude an exhausted email domain before it consumes'));
+  const selectionStart = mainSource.indexOf('for (const item of candidatePool)');
+  const selectionEnd = mainSource.indexOf('if (!executable.length)', selectionStart);
+  const selectionSource = mainSource.slice(selectionStart, selectionEnd);
+  assert.ok(selectionSource.indexOf('emailDomainSafety(previousResults') < selectionSource.indexOf('executable.push(item)'));
 });

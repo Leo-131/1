@@ -4824,6 +4824,24 @@ async function runDailyAutomationQueue(payload = {}) {
       });
       continue;
     }
+    // Domain limits are deterministic from the same ledger snapshot used for
+    // selection. Exclude an exhausted email domain before it consumes the
+    // remaining daily execution slot, so the runner can continue to the next
+    // verified company-domain recipient instead of ending with a safe skip.
+    if (automationPlatformFor(item) === 'email' || verifiedBusinessEmailTarget(item).ok) {
+      const domainSafety = emailDomainSafety(previousResults, queueItemToLead(item));
+      if (!domainSafety.ok && domainSafety.reason === 'email_domain_daily_limit_reached') {
+        skipped.push({
+          id: item.id,
+          company: item.company,
+          action: item.action,
+          platform: 'email',
+          reason: domainSafety.reason,
+          evidence: `${domainSafety.reason};domain:${domainSafety.domain || 'unknown'};sentToday:${domainSafety.sentToday || 0};limit:${domainSafety.limit || 0}`,
+        });
+        continue;
+      }
+    }
     executable.push(item);
     automationCompanyKeys(item).forEach(key => selectedCompanyKeys.add(key));
   }
