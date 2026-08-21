@@ -268,9 +268,6 @@ function syncOnce() {
     'google-lead-discovery-latest.json',
     'system-visibility-latest.js',
     'cloud-task-state.json',
-    'public/cloud-task-state.json',
-    'cloud-task-controller.js',
-    'run-cloud-outreach-task.js',
     'system-visibility-latest.json',
   ].forEach((name) => {
     copyIfExists(path.join(ROOT, name), path.join(ROOT, 'public', name));
@@ -319,6 +316,10 @@ function syncOnce() {
     'customer-attachment-email-audit-latest.json',
     'system-visibility-latest.json',
     'system-visibility-latest.js',
+    'cloud-task-state.json',
+    'public/cloud-task-state.json',
+    'cloud-task-controller.js',
+    'run-cloud-outreach-task.js',
     'sync-local-data-to-github.js',
     'check-dashboard.js',
     'email-channel.js',

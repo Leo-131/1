@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "taskId": "daily-google-lead-outreach-automation",
+  "mode": "cloud_control_plane_local_browser_executor",
+  "shanghaiDate": "2026-08-21",
+  "status": "active",
+  "revision": 10,
+  "updatedAt": "2026-08-21T11:44:49.589Z",
+  "objective": {
+    "dailyTarget": 100,
+    "countries": [
+      "United States",
+      "United Kingdom",
+      "South Africa"
+    ],
+    "customerTypes": [
+      "sales_agency",
+      "key_account"
+    ],
+    "multiChannelSameCustomer": true
+  },
+  "progress": {
+    "confirmedToday": 53,
+    "remainingToday": 47,
+    "potentialPool": 53,
+    "executableCompanies": 35,
+    "latestExecutionPhase": "no_executable_tasks",
+    "latestRealDevelopmentCount": 0,
+    "latestReportingVerdict": "no_customer_development_performed"
+  },
+  "lease": null,
+  "handoff": {
+    "claimable": true,
+    "instructions": "Pull the shared branch on a clean checkout, claim with a device alias, then run npm run cloud:run -- --device=<alias>."
+  },
+  "executorContract": {
+    "browser": "local dedicated visible Chrome/CDP 9224 only",
+    "prohibitedBrowserPort": 9222,
+    "emailSurface": "Alibaba Mail web UI only",
+    "credentialsStoredInCloud": false,
+    "requiredOrder": [
+      "npm run discover:daily",
+      "npm run daily:execute",
+      "npm run sync:github"
+    ]
+  },
+  "policy": {
+    "status": "READY",
+    "activeBlocks": []
+  },
+  "git": {
+    "branch": "vercel-main-sync",
+    "localHead": "d87d8a5d1edaebd17a21b559cc8f6dc0cbe58b75",
+    "upstreamHead": "d87d8a5d1edaebd17a21b559cc8f6dc0cbe58b75",
+    "remoteHead": "d87d8a5d1edaebd17a21b559cc8f6dc0cbe58b75"
+  },
+  "latestExecution": {
+    "completedAt": "2026-08-21T11:43:04.775Z",
+    "browserTransportUsed": "none",
+    "chromeOpened": false,
+    "realDevelopmentCount": 0
+  }
+}

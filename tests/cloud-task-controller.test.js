@@ -43,4 +43,6 @@ test('cloud runner reuses the active npm CLI on Windows instead of relying on PA
   assert.match(source, /const npmCli = process\.env\.npm_execpath/);
   assert.match(source, /npmCli \? process\.execPath/);
   assert.match(source, /if \(result\.error\) throw result\.error/);
+  assert.match(source, /writeState\(releaseCloudTask\(buildCloudTaskState\(\), deviceId\)\)/);
+  assert.ok(source.indexOf('releaseCloudTask(buildCloudTaskState(), deviceId)') < source.indexOf("runNpm('sync:github'"));
 });
