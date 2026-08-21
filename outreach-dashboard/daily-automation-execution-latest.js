@@ -1,5 +1,5 @@
 window.DAILY_AUTOMATION_EXECUTION_LATEST = {
-  "ok": false,
+  "ok": true,
   "browserTransportRequested": "codex-extension-first",
   "browserTransportUsed": "cdp",
   "browserTransportFallbackReason": "extension_bridge_not_available_process_local_cdp",
@@ -7,11 +7,11 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
   "executionPhase": "browser_execution",
   "chromeStage": "opened",
   "chromeOpened": true,
-  "chromeOpenedCount": 1,
-  "customerDevelopmentPerformed": false,
-  "customerMessageSent": false,
-  "realDevelopmentCount": 0,
-  "reportingVerdict": "no_customer_development_performed",
+  "chromeOpenedCount": 3,
+  "customerDevelopmentPerformed": true,
+  "customerMessageSent": true,
+  "realDevelopmentCount": 2,
+  "reportingVerdict": "development_performed",
   "engine": "Browser transport queue bridge",
   "mode": "serial-single-target",
   "batchMode": "parallel-batches",
@@ -21,6 +21,72 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
   "queueSource": "dailyQueue",
   "executed": [
     {
+      "id": "google-customer-adventure-brands-south-africa-website-contact",
+      "company": "Adventure Brands South Africa",
+      "action": "email_priority",
+      "platform": "email",
+      "targetUrl": "https://adventurebrands.co.za/#contact",
+      "ok": true,
+      "sendStatus": "sent_confirmed",
+      "evidence": "official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed",
+      "timestamp": "2026-08-21T09:41:39.597Z",
+      "chromeOpen": null,
+      "result": {
+        "ok": true,
+        "sendStatus": "sent_confirmed",
+        "reason": "sent_folder_message_confirmed",
+        "evidence": "official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed;official_social_channel_not_verified",
+        "recipientEmail": "sales@adventurebrands.co.za",
+        "targetUrl": "mailto:sales@adventurebrands.co.za",
+        "subject": "FLEXTAIL retail partnership | 2026 assortment",
+        "draft": "Dear Adventure Brands South Africa Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
+        "engine": "alibaba-enterprise-mail-web-session",
+        "mode": "alibaba_webmail_sent_folder_confirmed",
+        "manualApprovalRequired": false,
+        "autoSendAuthorized": true,
+        "contentValidation": {
+          "ok": true,
+          "errors": [],
+          "words": 111
+        },
+        "output": "{\"verdict\":\"sent_confirmed\",\"sendStatus\":\"sent_confirmed\",\"evidence\":\"official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed\",\"nextAction\":\"Alibaba Mail accepted the message and the matching record exists in Sent.\",\"recipientEmail\":\"sales@adventurebrands.co.za\",\"messageId\":\"\"}",
+        "secondaryChannelStatus": "official_social_channel_not_verified"
+      }
+    },
+    {
+      "id": "google-customer-cooltraxx-international-website-contact",
+      "company": "Cooltraxx International",
+      "action": "email_priority",
+      "platform": "email",
+      "targetUrl": "https://www.cooltraxx.com/about-us/",
+      "ok": true,
+      "sendStatus": "sent_confirmed",
+      "evidence": "official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed",
+      "timestamp": "2026-08-21T09:42:07.250Z",
+      "chromeOpen": null,
+      "result": {
+        "ok": true,
+        "sendStatus": "sent_confirmed",
+        "reason": "sent_folder_message_confirmed",
+        "evidence": "official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed;official_social_channel_not_verified",
+        "recipientEmail": "tradedesk@cooltraxx.com",
+        "targetUrl": "mailto:tradedesk@cooltraxx.com",
+        "subject": "FLEXTAIL retail partnership | 2026 assortment",
+        "draft": "Dear Cooltraxx International Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
+        "engine": "alibaba-enterprise-mail-web-session",
+        "mode": "alibaba_webmail_sent_folder_confirmed",
+        "manualApprovalRequired": false,
+        "autoSendAuthorized": true,
+        "contentValidation": {
+          "ok": true,
+          "errors": [],
+          "words": 109
+        },
+        "output": "{\"verdict\":\"sent_confirmed\",\"sendStatus\":\"sent_confirmed\",\"evidence\":\"official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed\",\"nextAction\":\"Alibaba Mail accepted the message and the matching record exists in Sent.\",\"recipientEmail\":\"tradedesk@cooltraxx.com\",\"messageId\":\"\"}",
+        "secondaryChannelStatus": "official_social_channel_not_verified"
+      }
+    },
+    {
       "id": "google-customer-nickel-n-diamond-sales-facebook",
       "company": "Nickel N Diamond Sales",
       "action": "develop",
@@ -29,14 +95,14 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "ok": false,
       "sendStatus": "website_contact_unreachable_skip",
       "evidence": "website_contact_entry_not_verified;contact_entry_clicked:Proform Request Form;public_email_fallback_available:nickelndiamondsales@gmail.com;email_sender_not_configured;website_contact_all_targets_failed:1;contact_path_strategy_v2",
-      "timestamp": "2026-08-21T09:36:14.148Z",
+      "timestamp": "2026-08-21T09:42:33.718Z",
       "chromeOpen": {
         "ok": true,
         "engine": "codex-chrome-cdp",
         "port": 9224,
         "targetUrl": "https://www.beaverwax.com/pages/new-contact",
-        "tabId": "C745013FF2AA278DE07093BB1738D916",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/C745013FF2AA278DE07093BB1738D916",
+        "tabId": "426D36451405D124D0D05A6D9A593E64",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/426D36451405D124D0D05A6D9A593E64",
         "title": "New Contact – BeaverWax"
       },
       "result": {
@@ -50,8 +116,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
           "engine": "codex-chrome-cdp",
           "port": 9224,
           "targetUrl": "https://www.beaverwax.com/pages/new-contact",
-          "tabId": "C745013FF2AA278DE07093BB1738D916",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/C745013FF2AA278DE07093BB1738D916",
+          "tabId": "426D36451405D124D0D05A6D9A593E64",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/426D36451405D124D0D05A6D9A593E64",
           "title": "New Contact – BeaverWax"
         },
         "sendStatus": "website_contact_unreachable_skip",
@@ -75,6 +141,72 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
   ],
   "results": [
     {
+      "id": "google-customer-adventure-brands-south-africa-website-contact",
+      "company": "Adventure Brands South Africa",
+      "action": "email_priority",
+      "platform": "email",
+      "targetUrl": "https://adventurebrands.co.za/#contact",
+      "ok": true,
+      "sendStatus": "sent_confirmed",
+      "evidence": "official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed",
+      "timestamp": "2026-08-21T09:41:39.597Z",
+      "chromeOpen": null,
+      "result": {
+        "ok": true,
+        "sendStatus": "sent_confirmed",
+        "reason": "sent_folder_message_confirmed",
+        "evidence": "official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed;official_social_channel_not_verified",
+        "recipientEmail": "sales@adventurebrands.co.za",
+        "targetUrl": "mailto:sales@adventurebrands.co.za",
+        "subject": "FLEXTAIL retail partnership | 2026 assortment",
+        "draft": "Dear Adventure Brands South Africa Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
+        "engine": "alibaba-enterprise-mail-web-session",
+        "mode": "alibaba_webmail_sent_folder_confirmed",
+        "manualApprovalRequired": false,
+        "autoSendAuthorized": true,
+        "contentValidation": {
+          "ok": true,
+          "errors": [],
+          "words": 111
+        },
+        "output": "{\"verdict\":\"sent_confirmed\",\"sendStatus\":\"sent_confirmed\",\"evidence\":\"official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed\",\"nextAction\":\"Alibaba Mail accepted the message and the matching record exists in Sent.\",\"recipientEmail\":\"sales@adventurebrands.co.za\",\"messageId\":\"\"}",
+        "secondaryChannelStatus": "official_social_channel_not_verified"
+      }
+    },
+    {
+      "id": "google-customer-cooltraxx-international-website-contact",
+      "company": "Cooltraxx International",
+      "action": "email_priority",
+      "platform": "email",
+      "targetUrl": "https://www.cooltraxx.com/about-us/",
+      "ok": true,
+      "sendStatus": "sent_confirmed",
+      "evidence": "official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed",
+      "timestamp": "2026-08-21T09:42:07.250Z",
+      "chromeOpen": null,
+      "result": {
+        "ok": true,
+        "sendStatus": "sent_confirmed",
+        "reason": "sent_folder_message_confirmed",
+        "evidence": "official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed;official_social_channel_not_verified",
+        "recipientEmail": "tradedesk@cooltraxx.com",
+        "targetUrl": "mailto:tradedesk@cooltraxx.com",
+        "subject": "FLEXTAIL retail partnership | 2026 assortment",
+        "draft": "Dear Cooltraxx International Team,\n\nI’m Leo from FLEXTAIL. Your focus on outdoor, camping and travel retail looks highly relevant to our compact outdoor electrics, including portable pumps, camping lighting and lightweight power solutions.\n\nFLEXTAIL products are designed to add practical, high-rotation items to outdoor and travel assortments. We are preparing 36+ new SKUs for 2026 across multiple use cases and price tiers, giving retail partners more options for seasonal launches and category expansion.\n\nWould you be the right person to review a potential supplier partnership, or could you direct me to your category buyer or vendor-onboarding team?\n\nProduct overview: https://www.flextail.com/\n\nBest regards,\nLeo Liu\nSales & Operations Director\nLeo@flextailgear.com",
+        "engine": "alibaba-enterprise-mail-web-session",
+        "mode": "alibaba_webmail_sent_folder_confirmed",
+        "manualApprovalRequired": false,
+        "autoSendAuthorized": true,
+        "contentValidation": {
+          "ok": true,
+          "errors": [],
+          "words": 109
+        },
+        "output": "{\"verdict\":\"sent_confirmed\",\"sendStatus\":\"sent_confirmed\",\"evidence\":\"official_public_business_email;verified_email_auto_send_no_manual_review;alibaba_webmail_session_reused;alibaba_webmail_send_control_verified;alibaba_webmail_send_physical_click_dispatched;alibaba_webmail_composer_closed_after_physical_click;alibaba_mail_send_confirmation_waiting;sent_folder_record_confirmed\",\"nextAction\":\"Alibaba Mail accepted the message and the matching record exists in Sent.\",\"recipientEmail\":\"tradedesk@cooltraxx.com\",\"messageId\":\"\"}",
+        "secondaryChannelStatus": "official_social_channel_not_verified"
+      }
+    },
+    {
       "id": "google-customer-nickel-n-diamond-sales-facebook",
       "company": "Nickel N Diamond Sales",
       "action": "develop",
@@ -83,14 +215,14 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "ok": false,
       "sendStatus": "website_contact_unreachable_skip",
       "evidence": "website_contact_entry_not_verified;contact_entry_clicked:Proform Request Form;public_email_fallback_available:nickelndiamondsales@gmail.com;email_sender_not_configured;website_contact_all_targets_failed:1;contact_path_strategy_v2",
-      "timestamp": "2026-08-21T09:36:14.148Z",
+      "timestamp": "2026-08-21T09:42:33.718Z",
       "chromeOpen": {
         "ok": true,
         "engine": "codex-chrome-cdp",
         "port": 9224,
         "targetUrl": "https://www.beaverwax.com/pages/new-contact",
-        "tabId": "C745013FF2AA278DE07093BB1738D916",
-        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/C745013FF2AA278DE07093BB1738D916",
+        "tabId": "426D36451405D124D0D05A6D9A593E64",
+        "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/426D36451405D124D0D05A6D9A593E64",
         "title": "New Contact – BeaverWax"
       },
       "result": {
@@ -104,8 +236,8 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
           "engine": "codex-chrome-cdp",
           "port": 9224,
           "targetUrl": "https://www.beaverwax.com/pages/new-contact",
-          "tabId": "C745013FF2AA278DE07093BB1738D916",
-          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/C745013FF2AA278DE07093BB1738D916",
+          "tabId": "426D36451405D124D0D05A6D9A593E64",
+          "webSocketDebuggerUrl": "ws://127.0.0.1:9224/devtools/page/426D36451405D124D0D05A6D9A593E64",
           "title": "New Contact – BeaverWax"
         },
         "sendStatus": "website_contact_unreachable_skip",
@@ -169,13 +301,6 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "action": "email_priority",
       "platform": "email",
       "reason": "official_public_business_email_verified"
-    },
-    {
-      "id": "google-customer-cooltraxx-international-website-contact",
-      "company": "Cooltraxx International",
-      "action": "email_priority",
-      "platform": "email",
-      "reason": "official_website_contact_channel"
     },
     {
       "id": "google-customer-outdoors-ramsey-website-contact",
@@ -512,13 +637,6 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "action": "email_priority",
       "platform": "email",
       "reason": "official_public_business_email_verified"
-    },
-    {
-      "id": "google-customer-adventure-brands-south-africa-website-contact",
-      "company": "Adventure Brands South Africa",
-      "action": "email_priority",
-      "platform": "email",
-      "reason": "official_website_contact_channel"
     },
     {
       "id": "google-customer-canada-outdoors-website-contact",
@@ -1183,7 +1301,7 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     {
       "reason": "official_website_contact_channel",
       "status": "skipped",
-      "count": 45
+      "count": 43
     },
     {
       "reason": "official_public_business_email_verified",
@@ -1219,17 +1337,23 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
       "reason": "linkedin_channel_requires_supported_executor",
       "status": "skipped",
       "count": 2
+    },
+    {
+      "reason": "sent_folder_message_confirmed",
+      "status": "sent_confirmed",
+      "count": 2
     }
   ],
   "blockerCounts": {
-    "official_website_contact_channel": 45,
+    "official_website_contact_channel": 43,
     "official_public_business_email_verified": 36,
     "homepage_only_contact_path_requires_verification": 33,
     "website_contact_capability_not_verified": 12,
     "personal_email_domain_not_allowed": 7,
     "official_website_social_channel_verified": 6,
     "social_profile_not_first_party_verified": 4,
-    "linkedin_channel_requires_supported_executor": 2
+    "linkedin_channel_requires_supported_executor": 2,
+    "sent_folder_message_confirmed": 2
   },
   "queueGoalStatus": {
     "target": 100,
@@ -1249,7 +1373,7 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
     "rule": "completed checkpoints are ignored; only terminal results from an active interrupted checkpoint suppress their exact task id"
   },
   "platformCircuitState": {},
-  "userVisibleStatus": "Customer development was not performed. Blockers: official_website_contact_channel (45); official_public_business_email_verified (36); homepage_only_contact_path_requires_verification (33).",
+  "userVisibleStatus": "Customer development was not performed. Blockers: official_website_contact_channel (43); official_public_business_email_verified (36); homepage_only_contact_path_requires_verification (33).",
   "recoveryHint": "Refill the high-ICP pool with 46 verified leads or unblock existing website/social leads before the next run.",
   "recoveryActions": [
     {
@@ -1264,16 +1388,16 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
   ],
   "systemRefresh": {
     "ok": true,
-    "stdout": "{\n  \"date\": \"2026-08-21\",\n  \"summary\": {\n    \"totalLeads\": 16,\n    \"highIcp\": 16,\n    \"readyToDevelop\": 25,\n    \"dueNow\": 93,\n    \"visibleTodayQueue\": 54,\n    \"potentialPool\": 54,\n    \"potentialPoolTarget\": 100,\n    \"customerTableHighIcp\": 0,\n    \"refillNeeded\": 46,\n    \"executableCompanies\": 35,\n    \"executableReserveTarget\": 130,\n    \"executableReserveNeeded\": 95,\n    \"executableByChannel\": {\n      \"linkedin\": 1,\n      \"facebook\": 3,\n      \"instagram\": 1,\n      \"email\": 10,\n      \"website_form\": 20\n    },\n    \"verifiedSocialCompanies\": 5,\n    \"verifiedSocialReserveTarget\": 20,\n    \"verifiedSocialReserveNeeded\": 15,\n    \"enrichmentBacklogCount\": 19,\n    \"googleDiscovered\": 93,\n    \"facebookDiscovered\": 5,\n    \"websiteContactDiscovered\": 28,\n    \"scheduledLater\": 0,\n    \"cooldown\": 30,\n    \"emailPriority\": 0,\n    \"openAgencyMarket\": 15,\n    \"exclusiveAgencySkipped\": 1,\n    \"needsVerification\": 0,\n    \"retainedLowIcp\": 0\n  },\n  \"bugErrors\": 13,\n  \"queueFile\": \"E:\\\\New project\\\\outreach-dashboard\\\\daily-runs\\\\2026-08-21-daily-automation.json\",\n  \"csvFile\": \"E:\\\\New project\\\\outreach-dashboard\\\\daily-runs\\\\2026-08-21-daily-queue.csv\"\n}",
+    "stdout": "{\n  \"date\": \"2026-08-21\",\n  \"summary\": {\n    \"totalLeads\": 16,\n    \"highIcp\": 16,\n    \"readyToDevelop\": 25,\n    \"dueNow\": 93,\n    \"visibleTodayQueue\": 54,\n    \"potentialPool\": 54,\n    \"potentialPoolTarget\": 100,\n    \"customerTableHighIcp\": 0,\n    \"refillNeeded\": 46,\n    \"executableCompanies\": 35,\n    \"executableReserveTarget\": 130,\n    \"executableReserveNeeded\": 95,\n    \"executableByChannel\": {\n      \"linkedin\": 1,\n      \"facebook\": 3,\n      \"instagram\": 1,\n      \"email\": 10,\n      \"website_form\": 20\n    },\n    \"verifiedSocialCompanies\": 5,\n    \"verifiedSocialReserveTarget\": 20,\n    \"verifiedSocialReserveNeeded\": 15,\n    \"enrichmentBacklogCount\": 19,\n    \"googleDiscovered\": 93,\n    \"facebookDiscovered\": 5,\n    \"websiteContactDiscovered\": 26,\n    \"scheduledLater\": 0,\n    \"cooldown\": 30,\n    \"emailPriority\": 0,\n    \"openAgencyMarket\": 15,\n    \"exclusiveAgencySkipped\": 1,\n    \"needsVerification\": 0,\n    \"retainedLowIcp\": 0\n  },\n  \"bugErrors\": 13,\n  \"queueFile\": \"E:\\\\New project\\\\outreach-dashboard\\\\daily-runs\\\\2026-08-21-daily-automation.json\",\n  \"csvFile\": \"E:\\\\New project\\\\outreach-dashboard\\\\daily-runs\\\\2026-08-21-daily-queue.csv\"\n}",
     "stderr": "",
     "error": "",
     "visibility": {
-      "updatedAt": "2026-08-21T09:36:24.385Z",
+      "updatedAt": "2026-08-21T09:42:49.690Z",
       "source": "main-refreshDailyAutomationArtifacts",
       "runDate": "2026-08-21",
-      "artifactGeneratedAt": "2026-08-21T09:36:19.673Z",
-      "executionGeneratedAt": "2026-08-21T09:31:07.402Z",
-      "githubSyncUpdatedAt": "2026-08-21T09:31:57.387Z",
+      "artifactGeneratedAt": "2026-08-21T09:42:42.729Z",
+      "executionGeneratedAt": "2026-08-21T09:36:26.967Z",
+      "githubSyncUpdatedAt": "2026-08-21T09:37:27.789Z",
       "counts": {
         "dailyQueue": 93,
         "googleDiscovered": 93,
@@ -1343,5 +1467,5 @@ window.DAILY_AUTOMATION_EXECUTION_LATEST = {
   },
   "ledgerReconciliationCount": 1,
   "externalEvidenceReconciliationCount": 0,
-  "completedAt": "2026-08-21T09:36:26.967Z"
+  "completedAt": "2026-08-21T09:43:00.475Z"
 };

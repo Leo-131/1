@@ -4322,7 +4322,13 @@ function executableQueueCandidates(items = [], options = {}) {
   const allowWebsiteContact = options.allowWebsiteContact !== false;
   return (Array.isArray(items) ? items : [])
     .filter(item => executableActions.has(item.action))
-    .filter(item => item.executionReadiness && item.executionReadiness.ready === true)
+    // Newly enriched first-party email rows can reach the daily queue before
+    // the dashboard-only readiness annotation is materialized. Re-evaluate
+    // the authoritative email gate here so a missing annotation cannot starve
+    // a fully verified recipient; all history, identity and confirmation gates
+    // below still apply unchanged.
+    .filter(item => (item.executionReadiness && item.executionReadiness.ready === true)
+      || verifiedBusinessEmailTarget(item).ok)
     .filter(item => item.url || item.targetUrl || item.platformUrl || item.verifiedTargetUrl || item.contactUrl || item.website
       || verifiedBusinessEmailTarget(item).ok
       || (recipientEmail(item) && configuredProvider().id))

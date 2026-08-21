@@ -208,6 +208,11 @@ test('live first-party machine verification token passes the business email gate
   assert.equal(result.recipient, 'buyer@example-retailer.com');
 });
 
+test('verified first-party email remains executable before readiness annotation is materialized', () => {
+  assert.ok(mainSource.includes('|| verifiedBusinessEmailTarget(item).ok)'));
+  assert.ok(mainSource.includes('a missing annotation cannot starve'));
+});
+
 test('official brand representative directory token passes only for a company-domain email', () => {
   const { verifiedBusinessEmailTarget } = require('../outreach-dashboard/alibaba-email-delivery');
   assert.equal(verifiedBusinessEmailTarget({
