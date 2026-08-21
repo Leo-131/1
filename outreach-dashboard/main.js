@@ -4287,6 +4287,15 @@ function websiteCanReinspectForFirstPartySocial(item = {}) {
 function verifiedSocialCanBypassWebsitePreSendBlock(item = {}, block = null) {
   if (!isSocialQueueItem(item) || item.officialSocialProfileVerified !== true || !block) return false;
   if (!['website_contact_unreachable_skip', 'website_failure_circuit_open'].includes(String(block.status || ''))) return false;
+  // If a social task already fell back to an unreachable website, that result
+  // must not make the original social task executable again on every run. The
+  // bypass is only for a distinct verified social route discovered after a
+  // website-only attempt, never the same task or the same social platform.
+  const blockTaskId = String(block.task_id || block.taskId || block.id || '');
+  if (blockTaskId && blockTaskId === String(item.id || item.taskId || '')) return false;
+  const blockedPlatform = automationPlatformFor(block);
+  const itemPlatform = automationPlatformFor(item);
+  if (blockedPlatform && itemPlatform && blockedPlatform === itemPlatform) return false;
   const evidence = String(block.evidence || '');
   return !/send_unconfirmed|submit_unconfirmed|send_physical_click|submit_physical_click|send_clicked|customer_interaction|message_sent/i.test(evidence);
 }

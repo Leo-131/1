@@ -2267,6 +2267,14 @@ test('website pre-send failures continue to first-party verified social instead 
   assert.match(mainSource, /send_unconfirmed\|submit_unconfirmed[\s\S]*customer_interaction\|message_sent/);
 });
 
+test('a social task that already fell back to an unreachable website cannot reselect itself', () => {
+  const start = mainSource.indexOf('function verifiedSocialCanBypassWebsitePreSendBlock');
+  const end = mainSource.indexOf('function developmentPriorityCompare', start);
+  const block = mainSource.slice(start, end);
+  assert.ok(block.includes("blockTaskId === String(item.id || item.taskId || '')"));
+  assert.ok(block.includes('blockedPlatform === itemPlatform'));
+});
+
 test('daily queue generator blocks same-day repeat development by company', () => {
   assert.ok(dailyRunnerSource.includes('SAME_DAY_DEVELOPMENT_STATUSES'));
   assert.ok(dailyRunnerSource.includes('function companyLeadKeys'));
